@@ -1,0 +1,483 @@
+[
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Nahum the prophet was from where?",
+    "correctAnswer": [0],
+    "explanation": "Nahum 1:1 — 'An oracle concerning Nineveh. The book of the vision of Nahum of Elkosh.' Elkosh is likely a village in Judah.",
+    "language": "en",
+    "options": [
+      "Elkosh",
+      "Bethel",
+      "Tishbe",
+      "Gilgal"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Nahum of Elkosh",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "The book of Nahum is an oracle concerning which city?",
+    "correctAnswer": [1],
+    "explanation": "Nahum 1:1 — 'An oracle concerning Nineveh.' The entire book announces the LORD's judgment against Nineveh, the capital of Assyria.",
+    "language": "en",
+    "options": [
+      "Babylon",
+      "Nineveh",
+      "Samaria",
+      "Tyre"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Judgment on Nineveh",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Nahum 1:2, what kind of God is the LORD?",
+    "correctAnswer": [2],
+    "explanation": "Nahum 1:2 — 'The LORD is a jealous and avenging God; the LORD is avenging and wrathful...' His jealousy (qannâ') is a holy jealousy, guarding His holiness and His people.",
+    "language": "en",
+    "options": [
+      "A God who is only absolutely merciful",
+      "A distant and impassive God",
+      "A jealous and avenging God",
+      "A God who always overlooks all sin"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Jealous and avenging God",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Nahum 1:3, though slow to anger, what great attribute does the LORD have?",
+    "correctAnswer": [3],
+    "explanation": "Nahum 1:3 — 'The LORD is slow to anger and great in power, and the LORD will by no means clear the guilty.' Slow to anger does not mean indifferent to evil — He remains mighty in judgment.",
+    "language": "en",
+    "options": [
+      "Wisdom",
+      "Boundless mercy",
+      "Hidden judgment",
+      "Great power"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Slow to anger, great in power",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Nahum 1:3, where is the way of the LORD?",
+    "correctAnswer": [0],
+    "explanation": "Nahum 1:3 — '...His way is in whirlwind and storm, and the clouds are the dust of his feet.' A majestic theophany — storms mark the advent of God.",
+    "language": "en",
+    "options": [
+      "In whirlwind and storm",
+      "In magnificent palaces",
+      "In the depths of the sea",
+      "In quiet mountain forests"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Whirlwind and storm",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Nahum 1:7, in what day is the LORD a stronghold?",
+    "correctAnswer": [1],
+    "explanation": "Nahum 1:7 — 'The LORD is good, a stronghold in the day of trouble; he knows those who take refuge in him.' The same God who judges Nineveh is refuge for those who trust Him.",
+    "language": "en",
+    "options": [
+      "The day of Passover",
+      "The day of trouble",
+      "The Sabbath day",
+      "The first day of the month"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Stronghold in day of trouble",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Nahum 1:7, whom does the LORD know?",
+    "correctAnswer": [2],
+    "explanation": "Nahum 1:7 — '...he knows those who take refuge in him.' 'Knows' here means intimate relational care — the LORD tenderly attends to those who trust Him.",
+    "language": "en",
+    "options": [
+      "The wealthy of the land",
+      "The highly learned of the people",
+      "Those who take refuge in Him",
+      "Those who build the temple"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Knows those who take refuge",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Nahum 1:15, upon the mountains, what does the messenger bring that is celebrated?",
+    "correctAnswer": [3],
+    "explanation": "Nahum 1:15 — 'Behold, upon the mountains, the feet of him who brings good news, who publishes peace!' This echoes Isaiah 52:7 — joyful news of deliverance when Nineveh falls.",
+    "language": "en",
+    "options": [
+      "Food supplies",
+      "Weapons",
+      "A king's decree",
+      "Good news and publishes peace"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Feet bringing good news",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Nahum 2:1, who has come up against Nineveh?",
+    "correctAnswer": [0],
+    "explanation": "Nahum 2:1 — 'The scatterer has come up against you. Man the ramparts; watch the road...' The Scatterer foretells the Medo-Babylonian coalition that destroyed Nineveh in 612 BC.",
+    "language": "en",
+    "options": [
+      "The scatterer (destroyer)",
+      "A priest",
+      "A messenger of peace",
+      "A caravan of merchants"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "The scatterer comes",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Nahum 2:13 declares 'I am against you' — who speaks this?",
+    "correctAnswer": [1],
+    "explanation": "Nahum 2:13 — 'Behold, I am against you, declares the LORD of hosts, and I will burn your chariots in smoke...' 'LORD of hosts' emphasizes command over the heavenly armies.",
+    "language": "en",
+    "options": [
+      "The king of Judah",
+      "The LORD of hosts",
+      "The prophet Nahum",
+      "The king of the Medes"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "The LORD of hosts",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Nahum 3:1, how is Nineveh described?",
+    "correctAnswer": [2],
+    "explanation": "Nahum 3:1 — 'Woe to the bloody city, all full of lies and plunder — no end to the prey!' 'Bloody city' reflects Assyria's notorious cruelty.",
+    "language": "en",
+    "options": [
+      "A glorious city of kings",
+      "A righteous and prosperous city",
+      "The bloody city, full of lies and plunder",
+      "The city of true prophets"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Bloody city",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Nahum 3:7, when Nineveh falls, who will grieve for her?",
+    "correctAnswer": [3],
+    "explanation": "Nahum 3:7 — '...Nineveh is laid waste; who will grieve for her? Where shall I seek comforters for you?' None will mourn — her crimes were so great that her fall brings relief.",
+    "language": "en",
+    "options": [
+      "Allied nations",
+      "Neighboring kings",
+      "The royal family",
+      "No one — no comforters will be found"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "No one comforts Nineveh",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Nahum 3:8, Nineveh is compared to which previously fallen city?",
+    "correctAnswer": [0],
+    "explanation": "Nahum 3:8 — 'Are you better than Thebes that sat by the Nile, with water around her...' Thebes (No-Amon) of Egypt was sacked by Assyria itself in 663 BC.",
+    "language": "en",
+    "options": [
+      "Thebes (No-Amon of Egypt)",
+      "Babylon",
+      "Jerusalem",
+      "Sodom"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Thebes No-Amon",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Nahum 3:19 says all who hear news of Nineveh will do what?",
+    "correctAnswer": [1],
+    "explanation": "Nahum 3:19 — '...all who hear the news about you clap their hands over you. For upon whom has not come your unceasing evil?' Clapping signals relief and rejoicing that the wicked city has fallen.",
+    "language": "en",
+    "options": [
+      "Mourn and weep",
+      "Clap their hands in rejoicing",
+      "Offer thanksgiving sacrifices",
+      "Pray for her restoration"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Clap hands in joy",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Nahum 1:8, by what does the LORD make a complete end of His adversaries?",
+    "correctAnswer": [2],
+    "explanation": "Nahum 1:8 — 'But with an overflowing flood he will make a complete end of the adversaries, and will pursue his enemies into darkness.' This may have been fulfilled when the Tigris River overflowed and breached Nineveh's walls.",
+    "language": "en",
+    "options": [
+      "Fire from heaven",
+      "Earthquake",
+      "An overflowing flood",
+      "A spreading plague"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Overflowing flood",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Nahum 2:6, when the river gates are opened, what happens?",
+    "correctAnswer": [3],
+    "explanation": "Nahum 2:6 — 'The river gates are opened; the palace melts away.' When waters rush in, the royal palace of Nineveh collapses — fulfilled in the fall of 612 BC.",
+    "language": "en",
+    "options": [
+      "The markets close",
+      "Soldiers flee",
+      "The walls stand firm",
+      "The palace melts away"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "River gates, palace melts",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Nahum 2:11 asks, 'Where is the lions' den?' — this image refers to which nation?",
+    "correctAnswer": [0],
+    "explanation": "Nahum 2:11-12 — 'Where is the lions' den, the feeding place of the young lions... The lion tore enough for his cubs...' The lion was the royal symbol of Assyria; now its 'den' is abandoned as the empire falls.",
+    "language": "en",
+    "options": [
+      "Assyria (Nineveh)",
+      "Egypt",
+      "Babylon",
+      "Edom"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Lions' den Assyria",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Nahum 1:2-3, which attributes are ascribed to the LORD? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Nahum 1:2-3 — 'The LORD is a jealous and avenging God... The LORD is slow to anger and great in power, and the LORD will by no means clear the guilty.' Three clear attributes; 'forgets all sins' is contrary — He does not clear the guilty.",
+    "language": "en",
+    "options": [
+      "Jealous and avenging",
+      "Slow to anger",
+      "Great in power",
+      "Forgets all the sins of the wicked"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Attributes of the LORD",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Nahum 3:1, which traits describe Nineveh? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Nahum 3:1 — 'Woe to the bloody city, all full of lies and plunder — no end to the prey!' Three traits; 'beacon of righteousness' contradicts the whole indictment.",
+    "language": "en",
+    "options": [
+      "Bloody city",
+      "Full of lies",
+      "Full of plunder — no end to the prey",
+      "Beacon of righteousness to the nations"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "Traits of Nineveh",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Nahum 1:7 describes the LORD with which attributes? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Nahum 1:7 — 'The LORD is good, a stronghold in the day of trouble; he knows those who take refuge in him.' Three positive descriptions; 'never sees evil' contradicts the rest of the book.",
+    "language": "en",
+    "options": [
+      "Good",
+      "A stronghold in the day of trouble",
+      "He knows those who take refuge in Him",
+      "Never sees evil"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nahum",
+      "Prophets",
+      "LORD is refuge",
+      "Advanced"
+    ]
+  }
+]

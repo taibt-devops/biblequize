@@ -1,0 +1,483 @@
+[
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Tiên tri Na-hum là người ở đâu?",
+    "correctAnswer": [0],
+    "explanation": "Na-hum 1:1 — 'Gánh nặng về Ni-ni-ve. Sách về sự hiện thấy của Na-hum, người Ên-cốt.' Ên-cốt có thể là một làng ở Giu-đa.",
+    "language": "vi",
+    "options": [
+      "Ên-cốt",
+      "Bê-tên",
+      "Ti-sê-bê",
+      "Ghít-ga"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Na-hum người Ên-cốt",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sách Na-hum là gánh nặng (lời tiên tri) về thành nào?",
+    "correctAnswer": [1],
+    "explanation": "Na-hum 1:1 — 'Gánh nặng về Ni-ni-ve.' Toàn sách loan báo sự đoán phạt của Đức Giê-hô-va nghịch cùng Ni-ni-ve, thủ đô A-si-ri.",
+    "language": "vi",
+    "options": [
+      "Ba-by-lôn",
+      "Ni-ni-ve",
+      "Sa-ma-ri",
+      "Ty-rơ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Đoán phạt Ni-ni-ve",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Na-hum 1:2, Đức Giê-hô-va là Đức Chúa Trời như thế nào?",
+    "correctAnswer": [2],
+    "explanation": "Na-hum 1:2 — 'Giê-hô-va là Đức Chúa Trời ghen và báo thù; Đức Giê-hô-va báo thù và đầy sự thạnh nộ...' Sự ghen (qannâ') ở đây là lòng ghen thánh bảo vệ sự thánh khiết và dân Ngài.",
+    "language": "vi",
+    "options": [
+      "Đức Chúa Trời chỉ nhân từ tuyệt đối",
+      "Đức Chúa Trời xa cách và vô cảm",
+      "Đức Chúa Trời ghen và báo thù",
+      "Đức Chúa Trời luôn khoan dung mọi tội"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Chúa ghen và báo thù",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Na-hum 1:3, dù chậm giận, Đức Giê-hô-va có đặc tính gì lớn?",
+    "correctAnswer": [3],
+    "explanation": "Na-hum 1:3 — 'Đức Giê-hô-va chậm giận và có quyền lớn; nhưng Ngài chẳng cầm kẻ mắc tội là vô tội...' Chậm giận không có nghĩa là thờ ơ với tội ác — Ngài vẫn đầy quyền năng phán xét.",
+    "language": "vi",
+    "options": [
+      "Có sự khôn ngoan",
+      "Có lòng thương xót vô hạn",
+      "Có sự phán xét thầm kín",
+      "Có quyền năng lớn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Chậm giận có quyền lớn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Na-hum 1:3, đường lối của Đức Giê-hô-va ở trong đâu?",
+    "correctAnswer": [0],
+    "explanation": "Na-hum 1:3 — '...đường lối Ngài ở trong cơn gió lốc và bão tố, những đám mây là bụi dưới chân Ngài.' Hình ảnh thần hiển (theophany) oai nghiêm — bão gió là dấu hiệu sự ngự đến của Chúa.",
+    "language": "vi",
+    "options": [
+      "Trong cơn gió lốc và bão tố",
+      "Trong các cung điện nguy nga",
+      "Trong đáy biển sâu thẳm",
+      "Trong các rừng núi yên tịnh"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Gió lốc và bão tố",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Na-hum 1:7, Đức Giê-hô-va là đồn lũy trong ngày nào?",
+    "correctAnswer": [1],
+    "explanation": "Na-hum 1:7 — 'Đức Giê-hô-va là tốt lành, là đồn lũy trong ngày hoạn nạn, và biết những kẻ ẩn núp nơi Ngài.' Cùng một vị Chúa phán xét Ni-ni-ve là nơi nương náu cho người tin cậy.",
+    "language": "vi",
+    "options": [
+      "Ngày của lễ Vượt Qua",
+      "Ngày hoạn nạn",
+      "Ngày Sa-bát",
+      "Ngày đầu tháng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Đồn lũy ngày hoạn nạn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Na-hum 1:7, Đức Giê-hô-va biết những ai?",
+    "correctAnswer": [2],
+    "explanation": "Na-hum 1:7 — '...biết những kẻ ẩn núp nơi Ngài.' 'Biết' ở đây mang nghĩa mối tương giao thân mật — Chúa lưu tâm chăm sóc những ai nương dựa Ngài.",
+    "language": "vi",
+    "options": [
+      "Những kẻ giàu có của xứ",
+      "Những kẻ học cao của dân",
+      "Những kẻ ẩn núp nơi Ngài",
+      "Những kẻ xây cất đền thờ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Biết những kẻ nương náu",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Na-hum 1:15, trên các núi, chân của người đem điều gì được ca ngợi?",
+    "correctAnswer": [3],
+    "explanation": "Na-hum 1:15 — 'Kìa, trên các núi, chân của kẻ đem tin lành, đã rao sự bình an đến!' Câu này gần giống Ê-sai 52:7 — loan báo tin vui giải cứu khi Ni-ni-ve bị đánh bại.",
+    "language": "vi",
+    "options": [
+      "Đem lương thực",
+      "Đem binh khí",
+      "Đem lệnh vua",
+      "Đem tin lành và rao sự bình an"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Chân người đem tin lành",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Na-hum 2:1 báo tin kẻ nào đã lên nghịch cùng Ni-ni-ve?",
+    "correctAnswer": [0],
+    "explanation": "Na-hum 2:1 — 'Kẻ tàn phá đã lên nghịch cùng ngươi; hãy giữ đồn lũy, canh chừng đường sá...' Người tàn phá báo trước quân Mê-đi và Ba-by-lôn sẽ đánh hạ Ni-ni-ve năm 612 TC.",
+    "language": "vi",
+    "options": [
+      "Kẻ tàn phá",
+      "Một thầy tế lễ",
+      "Một vị sứ giả hòa bình",
+      "Một đoàn lái buôn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Kẻ tàn phá đến",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Na-hum 2:13 — 'Ta nghịch cùng ngươi' — ai tuyên bố như vậy?",
+    "correctAnswer": [1],
+    "explanation": "Na-hum 2:13 — 'Đức Giê-hô-va vạn quân phán rằng: Nầy, ta nghịch cùng ngươi, sẽ đốt xe cộ ngươi, và làm cho tan ra khói...' 'Giê-hô-va vạn quân' (LORD of hosts) nhấn mạnh quyền chỉ huy muôn vàn đạo binh trời.",
+    "language": "vi",
+    "options": [
+      "Vua Giu-đa",
+      "Đức Giê-hô-va vạn quân",
+      "Tiên tri Na-hum",
+      "Vua Mê-đi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Đức Giê-hô-va vạn quân",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Na-hum 3:1, Ni-ni-ve được gọi là thành gì?",
+    "correctAnswer": [2],
+    "explanation": "Na-hum 3:1 — 'Khốn thay cho thành đổ máu! Nó đầy dối trá và cướp bóc; sự cướp giật không thôi.' 'Thành đổ máu' phản ánh sự tàn bạo của A-si-ri trong lịch sử.",
+    "language": "vi",
+    "options": [
+      "Thành huy hoàng của các vua",
+      "Thành công bình và thịnh vượng",
+      "Thành đổ máu, đầy dối trá và cướp bóc",
+      "Thành của các tiên tri chân thật"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Thành đổ máu",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Na-hum 3:7, khi Ni-ni-ve sụp đổ, ai sẽ than khóc nó?",
+    "correctAnswer": [3],
+    "explanation": "Na-hum 3:7 — '...Ni-ni-ve đã hoang vu rồi! ai sẽ than khóc nó? Ta bởi đâu tìm được kẻ an ủi cho ngươi?' Không một ai tiếc thương — vì tội ác quá lớn khiến cả thế giới thoát được.",
+    "language": "vi",
+    "options": [
+      "Các nước đồng minh",
+      "Các vua láng giềng",
+      "Gia đình hoàng tộc",
+      "Không ai — chẳng tìm được kẻ an ủi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Không ai an ủi Ni-ni-ve",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Na-hum 3:8, Ni-ni-ve được so sánh với thành nào đã sụp đổ trước đó?",
+    "correctAnswer": [0],
+    "explanation": "Na-hum 3:8 — 'Ngươi lại hơn No-A-môn sao? Thành ấy ở giữa các sông, có nước bao quanh...' No-A-môn là Thê-bơ (Thebes) của Ai Cập, bị A-si-ri chiếm năm 663 TC.",
+    "language": "vi",
+    "options": [
+      "No-A-môn (Thê-bơ của Ai Cập)",
+      "Ba-by-lôn",
+      "Giê-ru-sa-lem",
+      "Sô-đôm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "No-A-môn Thê-bơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Na-hum 3:19 nói mọi người khi nghe tin về Ni-ni-ve sẽ làm gì?",
+    "correctAnswer": [1],
+    "explanation": "Na-hum 3:19 — '...hết thảy những kẻ nghe tin ngươi sẽ vỗ tay mừng, vì ai là kẻ đã chẳng từng chịu sự tàn bạo của ngươi?' Vỗ tay — biểu thị sự nhẹ nhõm và vui mừng vì kẻ ác đã bị đoán phạt.",
+    "language": "vi",
+    "options": [
+      "Thương xót và than khóc",
+      "Vỗ tay mừng rỡ",
+      "Dâng lễ tạ ơn",
+      "Cầu nguyện cho phục hồi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Vỗ tay mừng rỡ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Na-hum 1:8, Đức Giê-hô-va dùng gì để hoàn toàn tiêu diệt kẻ thù?",
+    "correctAnswer": [2],
+    "explanation": "Na-hum 1:8 — 'Nhưng Ngài dùng nước lụt hủy diệt chỗ nó, và đuổi kẻ thù nghịch mình vào sự tối tăm.' Nước lụt ở đây có thể ứng nghiệm khi sông Tigris tràn phá tường thành Ni-ni-ve.",
+    "language": "vi",
+    "options": [
+      "Lửa từ trời",
+      "Đất rung chuyển",
+      "Nước lụt tràn qua",
+      "Dịch bệnh lan tràn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Nước lụt hủy diệt",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Na-hum 2:6, khi các cửa sông mở ra thì điều gì xảy ra?",
+    "correctAnswer": [3],
+    "explanation": "Na-hum 2:6 — 'Các cửa sông mở ra, đền đài bị chảy tan đi.' Khi nước dồn vào, cung điện hoàng gia Ni-ni-ve bị phá tan — ứng nghiệm trong cuộc sụp đổ năm 612 TC.",
+    "language": "vi",
+    "options": [
+      "Chợ búa đóng cửa",
+      "Quân lính bỏ chạy",
+      "Tường thành đứng vững",
+      "Đền đài bị chảy tan đi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Cửa sông mở đền đài tan",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Na-hum 2:11 hỏi: 'Hang của sư tử' giờ ở đâu? Hình ảnh này ám chỉ nước nào?",
+    "correctAnswer": [0],
+    "explanation": "Na-hum 2:11-12 — 'Hang sư tử đực ở đâu? Chỗ nuôi sư tử con ấy ở đâu?... Sư tử đực xé đủ mồi cho con nó...' Sư tử là biểu tượng hoàng gia A-si-ri; nay 'hang' bị bỏ trống vì đế quốc sụp đổ.",
+    "language": "vi",
+    "options": [
+      "A-si-ri (Ni-ni-ve)",
+      "Ai Cập",
+      "Ba-by-lôn",
+      "Ê-đôm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Hang sư tử A-si-ri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Na-hum 1:2-3, những đức tính nào được gán cho Đức Giê-hô-va? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Na-hum 1:2-3 — 'Giê-hô-va là Đức Chúa Trời ghen và báo thù... Đức Giê-hô-va chậm giận và có quyền lớn; nhưng Ngài chẳng cầm kẻ mắc tội là vô tội.' Ba đức tính rõ ràng; 'quên tội lỗi' không đúng — Ngài không kể kẻ có tội là vô tội.",
+    "language": "vi",
+    "options": [
+      "Ghen và báo thù",
+      "Chậm giận",
+      "Có quyền lớn",
+      "Quên hết tội lỗi của kẻ dữ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Đức tính Đức Giê-hô-va",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Na-hum 3:1, Ni-ni-ve có những đặc trưng nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Na-hum 3:1 — 'Khốn thay cho thành đổ máu! Nó đầy dối trá và cướp bóc; sự cướp giật không thôi.' Ba đặc trưng nêu rõ; 'ngọn đèn công bình' mâu thuẫn với bản chất thành này.",
+    "language": "vi",
+    "options": [
+      "Thành đổ máu",
+      "Đầy dối trá",
+      "Đầy cướp bóc, sự cướp giật không thôi",
+      "Ngọn đèn công bình cho các dân"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Đặc điểm Ni-ni-ve",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Na-hum 1:7 mô tả Đức Giê-hô-va bằng những điều gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Na-hum 1:7 — 'Đức Giê-hô-va là tốt lành, là đồn lũy trong ngày hoạn nạn, và biết những kẻ ẩn núp nơi Ngài.' Ba mô tả tích cực; 'không thấy điều ác' mâu thuẫn với phần còn lại của sách.",
+    "language": "vi",
+    "options": [
+      "Tốt lành",
+      "Đồn lũy trong ngày hoạn nạn",
+      "Biết những kẻ ẩn núp nơi Ngài",
+      "Không bao giờ thấy điều ác"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Na-hum",
+      "Tiên tri",
+      "Chúa là nơi nương náu",
+      "Nâng cao"
+    ]
+  }
+]
