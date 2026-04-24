@@ -1,6 +1,6 @@
 # TODO
 
-## 2026-04-25 — Seed questions P1 Tier 1 (4 sách missing còn lại) [IN PROGRESS]
+## 2026-04-25 — Seed questions P1 Tier 1 (4 sách missing còn lại) [DONE]
 
 > Theo `book-todo.md` — 4 sách thuộc P1 Tier 1 còn thiếu sau khi Obadiah đã done. Mỗi sách 20 câu × 2 file (VI + EN, 1:1 mapping). Phân bổ: ~10 easy / 6 medium / 4 hard, ~17 single + 3 multi, correctAnswer index đều 0/1/2/3.
 
@@ -28,7 +28,7 @@
 - Commit: `feat(seed): 3 John question pair (VI + EN, 20 each)`
 
 ### Task SEED-P1T1-4: Jude (25 câu trong 1 chương)
-- Status: [ ] TODO
+- Status: [x] DONE — 20 câu VI + 20 câu EN, validation pass (10/7/3, 17 single + 3 multi, idx 5/4/4/4)
 - File(s): `jude_quiz.json` + `jude_quiz_en.json`
 - Nội dung: Cảnh báo chống giáo sư giả đổi ân điển ra buông tuồng. References: thiên sứ không giữ phận mình, Sô-đôm Gô-mô-rơ, Mi-chen tranh luận với ma quỷ, Ca-in/Ba-la-am/Cô-rê, lời tiên tri Hê-nóc, doxology cuối.
 - Commit: `feat(seed): Jude question pair (VI + EN, 20 each)`

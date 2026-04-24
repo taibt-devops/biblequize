@@ -1,0 +1,484 @@
+[
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong Giu-đe 1:1, tác giả tự xưng là gì?",
+    "correctAnswer": [0],
+    "explanation": "Giu-đe 1:1 — 'Giu-đe, tôi tớ của Đức Chúa Jêsus Christ, và em Gia-cơ, đạt cho những kẻ đã được kêu gọi, được Đức Chúa Trời, là Cha, yêu thương, và được Đức Chúa Jêsus Christ giữ gìn...' Giu-đe nhấn mạnh mối quan hệ với Chúa và với Gia-cơ (em trai) hơn là danh tiếng của chính mình.",
+    "language": "vi",
+    "options": [
+      "Tôi tớ của Đức Chúa Jêsus Christ và em Gia-cơ",
+      "Sứ đồ của các sứ đồ",
+      "Trưởng lão của Giê-ru-sa-lem",
+      "Con trai của Xa-cha-ri"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Tôi tớ của Christ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thư Giu-đe mô tả người nhận thư thế nào?",
+    "correctAnswer": [1],
+    "explanation": "Giu-đe 1:1 — '...đạt cho những kẻ đã được kêu gọi, được Đức Chúa Trời, là Cha, yêu thương, và được Đức Chúa Jêsus Christ giữ gìn.' Ba đặc điểm: được kêu gọi, được yêu thương, được giữ gìn.",
+    "language": "vi",
+    "options": [
+      "Những người Do Thái kiều bào",
+      "Những kẻ được kêu gọi, được Cha yêu thương, và được Đấng Christ giữ gìn",
+      "Các trưởng lão Hội Thánh tại Cô-rinh-tô",
+      "Những tân tín hữu vừa chịu báp-têm"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Được kêu gọi và gìn giữ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Giu-đe 1:3, tác giả khuyên tín hữu phải làm gì?",
+    "correctAnswer": [2],
+    "explanation": "Giu-đe 1:3 — '...vì phải khuyên anh em vì đạo mà tranh chiến, là đạo đã truyền cho các thánh một lần đủ rồi.' 'Tranh chiến' (epagōnizesthai) chỉ sự tranh đấu nghiêm túc bảo vệ đức tin khỏi lệch lạc.",
+    "language": "vi",
+    "options": [
+      "Im lặng khi có giáo sư giả",
+      "Rút lui khỏi thế gian",
+      "Tranh chiến cho đạo đã truyền cho các thánh một lần đủ rồi",
+      "Tập hợp tín hữu thành phe phái riêng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Tranh chiến cho đức tin",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Giu-đe 1:4, những kẻ len lỏi vào Hội Thánh đã làm gì với ân điển của Đức Chúa Trời?",
+    "correctAnswer": [3],
+    "explanation": "Giu-đe 1:4 — '...là những kẻ không tin kính đổi ơn Đức Chúa Trời chúng ta ra việc tà ác, chối Đấng Chủ tể và Chúa có một của chúng ta, là Đức Chúa Jêsus Christ.'",
+    "language": "vi",
+    "options": [
+      "Giữ nguyên và truyền cho đời sau",
+      "Hòa hợp với luật Môi-se",
+      "Dùng để lập các ngân quỹ từ thiện",
+      "Đổi ra việc tà ác và chối Đấng Chủ tể Jêsus Christ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Xuyên tạc ân điển",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Giu-đe 1:5, sau khi cứu dân ra khỏi Ai Cập, Chúa đã làm gì với những kẻ không tin?",
+    "correctAnswer": [0],
+    "explanation": "Giu-đe 1:5 — 'Dầu anh em đã học những điều nầy rồi, tôi cũng muốn nhắc lại cho anh em rằng, Chúa đã giải cứu dân mình ra khỏi xứ Ê-díp-tô, rồi sau lại tiêu diệt những kẻ không tin.' Gương lịch sử — được cứu không bảo đảm được an toàn nếu không tiếp tục tin.",
+    "language": "vi",
+    "options": [
+      "Tiêu diệt những kẻ không tin",
+      "Tha thứ mọi sự phàn nàn",
+      "Ban phước thêm bội phần",
+      "Đưa họ vào Đất Hứa ngay"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Đoán phạt sự không tin",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Giu-đe 1:6, các thiên sứ không giữ thứ bậc mình đã bị làm gì?",
+    "correctAnswer": [1],
+    "explanation": "Giu-đe 1:6 — '...còn các thiên sứ không giữ thứ bậc và bỏ chỗ riêng mình, thì Ngài đã dùng dây xích đời đời mà giam họ trong nơi tối tăm để chờ sự phán xét ngày lớn.'",
+    "language": "vi",
+    "options": [
+      "Bị đày xuống trái đất hầu việc loài người",
+      "Bị dùng dây xích đời đời giam trong nơi tối tăm đến ngày phán xét",
+      "Bị biến thành ma quỷ cám dỗ",
+      "Bị cho phép tiếp tục phụng sự với điều kiện"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Thiên sứ sa ngã",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Giu-đe 1:7, ví dụ thứ ba về sự phán xét là hai thành nào?",
+    "correctAnswer": [2],
+    "explanation": "Giu-đe 1:7 — '...Sô-đôm và Gô-mô-rơ cùng các thành lân cận cũng buông theo sự dâm dục, và sa vào tội trái tánh tự nhiên, thì đã chịu hình phạt bằng lửa đời đời, làm gương để trước mặt chúng ta.'",
+    "language": "vi",
+    "options": [
+      "Ni-ni-ve và Ty-rơ",
+      "Ba-bên và A-si-ri",
+      "Sô-đôm và Gô-mô-rơ",
+      "Giê-ri-cô và A-hi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Sô-đôm Gô-mô-rơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Giu-đe 1:9, ai đã tranh luận với ma quỷ về thi thể Môi-se?",
+    "correctAnswer": [3],
+    "explanation": "Giu-đe 1:9 — 'Vả, khi chính mình thiên sứ lớn Mi-chen chống với ma quỷ giành xác Môi-se, còn chẳng dám lấy lời nhiếc móc mà đoán phạt; người chỉ nói rằng: Cầu Chúa phạt ngươi!' Đây là chi tiết hiếm có trong Kinh Thánh cho thấy sự khiêm cung của thiên sứ cao cấp.",
+    "language": "vi",
+    "options": [
+      "Thiên sứ Gáp-ri-ên",
+      "Thiên sứ Ra-pha-en",
+      "Đức Chúa Jêsus trước khi giáng sinh",
+      "Thiên sứ lớn Mi-chen"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Mi-chen và ma quỷ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Mi-chen đã nói gì khi tranh luận với ma quỷ?",
+    "correctAnswer": [0],
+    "explanation": "Giu-đe 1:9 — '...người chỉ nói rằng: Cầu Chúa phạt ngươi!' Thiên sứ cao cấp không tự ý nhiếc móc — một bài học về sự khiêm nhường cho những kẻ 'nói phạm đến những uy thế' (1:8).",
+    "language": "vi",
+    "options": [
+      "Cầu Chúa phạt ngươi!",
+      "Ngươi sẽ bị ném vào lửa đời đời",
+      "Ta có quyền trên ngươi!",
+      "Ngươi là kẻ thù của ta"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Cầu Chúa phạt ngươi",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Giu-đe 1:11, các giáo sư giả đi theo đường của ba nhân vật Cựu Ước nào?",
+    "correctAnswer": [1],
+    "explanation": "Giu-đe 1:11 — 'Khốn nạn thay cho chúng nó, vì đã theo đường của Ca-in, lao mình vào sự sai lạc của Ba-la-am vì lợi lộc, và bị hư mất về sự phản nghịch của Cô-rê.'",
+    "language": "vi",
+    "options": [
+      "A-bên, Nô-ê, và Áp-ra-ham",
+      "Ca-in, Ba-la-am, và Cô-rê",
+      "Sa-un, Đa-vít, và Sa-lô-môn",
+      "Giu-đa, Bên-gia-min, và Ru-bên"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Ca-in Ba-la-am Cô-rê",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Giu-đe 1:14, tiên tri về sự phán xét được trích từ ai?",
+    "correctAnswer": [2],
+    "explanation": "Giu-đe 1:14 — 'Ấy cũng vì họ mà Hê-nóc, là tổ bảy đời kể từ A-đam, đã nói tiên tri rằng: Nầy, Chúa ngự đến với muôn vàn thánh.' Hê-nóc — người thứ bảy từ A-đam — là một mắt xích ngắn gọn nhấn mạnh tuổi đời của lời tiên tri.",
+    "language": "vi",
+    "options": [
+      "Nô-ê, tổ phụ của mọi dân",
+      "Mên-chi-xê-đéc, thầy tế lễ của Đức Chúa Trời Chí Cao",
+      "Hê-nóc, tổ bảy đời kể từ A-đam",
+      "A-đam, người đầu tiên"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Tiên tri của Hê-nóc",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo lời tiên tri Hê-nóc trong Giu-đe 1:14, Chúa sẽ ngự đến cùng với ai?",
+    "correctAnswer": [3],
+    "explanation": "Giu-đe 1:14 — '...Nầy, Chúa ngự đến với muôn vàn thánh.' 'Muôn vàn thánh' có thể chỉ các thiên sứ thánh cùng hiện diện trong ngày phán xét.",
+    "language": "vi",
+    "options": [
+      "Mười hai sứ đồ",
+      "Các tiên tri thời Cựu Ước",
+      "Bảy Hội Thánh tại Á Châu",
+      "Muôn vàn thánh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Muôn vàn thánh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Giu-đe 1:19 mô tả các giáo sư giả là những người như thế nào?",
+    "correctAnswer": [0],
+    "explanation": "Giu-đe 1:19 — 'Ấy chính chúng nó là kẻ gây nên phe đảng, thuộc về tánh xác thịt, không có Đức Thánh Linh.' Ba dấu hiệu: gây chia rẽ, sống theo xác thịt, không có Thánh Linh.",
+    "language": "vi",
+    "options": [
+      "Gây phe đảng, thuộc về xác thịt, không có Đức Thánh Linh",
+      "Đầy kiến thức Kinh Thánh nhưng thiếu lòng thương xót",
+      "Sống khắc khổ và cầu nguyện nhiều",
+      "Có lòng nhiệt thành nhưng sai địa chỉ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Đặc điểm giáo sư giả",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Giu-đe 1:20, tín hữu phải làm gì để xây dựng chính mình?",
+    "correctAnswer": [1],
+    "explanation": "Giu-đe 1:20 — 'Hỡi kẻ rất yêu dấu, về phần anh em, hãy tự lập lấy trên nền đức tin rất thánh của mình, và nhân Đức Thánh Linh mà cầu nguyện...'",
+    "language": "vi",
+    "options": [
+      "Học đủ các thứ học vấn đương thời",
+      "Lập mình trên nền đức tin rất thánh, cầu nguyện trong Đức Thánh Linh",
+      "Tìm kiếm sự mặc khải mới mỗi ngày",
+      "Tránh xa mọi cuộc tranh luận"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Xây dựng đức tin",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Giu-đe 1:21, tín hữu phải giữ mình trong điều gì?",
+    "correctAnswer": [2],
+    "explanation": "Giu-đe 1:21 — 'Hãy giữ mình trong sự yêu mến Đức Chúa Trời, và trông đợi sự thương xót của Đức Chúa Jêsus Christ chúng ta cho được sự sống đời đời.'",
+    "language": "vi",
+    "options": [
+      "Trong các truyền thống của cha ông",
+      "Trong các luật lệ nghiêm ngặt",
+      "Trong sự yêu mến Đức Chúa Trời, trông đợi sự thương xót của Đấng Christ cho sự sống đời đời",
+      "Trong các buổi nhóm hằng tuần"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Giữ mình trong tình yêu Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Giu-đe 1:24, Đấng nào có thể gìn giữ tín hữu khỏi vấp ngã?",
+    "correctAnswer": [3],
+    "explanation": "Giu-đe 1:24 — 'Vả, nguyền Đấng có thể gìn giữ anh em khỏi vấp phạm và khiến anh em đứng trước mặt vinh hiển mình cách rất vui mừng, không chỗ trách được...'",
+    "language": "vi",
+    "options": [
+      "Các thiên sứ canh giữ",
+      "Sức tự lực của tín hữu",
+      "Các trưởng lão trung tín",
+      "Đức Chúa Trời — Đấng có thể gìn giữ anh em khỏi vấp phạm"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Đấng gìn giữ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Bốn thuộc tính nào được quy cho Đức Chúa Trời trong lời ngợi khen kết thúc (Giu-đe 1:25)?",
+    "correctAnswer": [0],
+    "explanation": "Giu-đe 1:25 — '...là Đức Chúa Trời có một, là Cứu Chúa chúng ta, bởi Đức Chúa Jêsus Christ là Chúa chúng ta, được sự vinh hiển, tôn trọng, thế lực, quyền năng thuộc về Ngài từ trước vô cùng và hiện nay cho đến đời đời! A-men.'",
+    "language": "vi",
+    "options": [
+      "Sự vinh hiển, tôn trọng, thế lực, quyền năng",
+      "Công bình, thương xót, chân thật, bình an",
+      "Thánh khiết, nhân từ, khôn ngoan, công nghĩa",
+      "Sáng tạo, cứu chuộc, thánh hóa, vinh hiển"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Doxology",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Giu-đe 1:11, ba nhân vật Cựu Ước được liệt kê là ai? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Giu-đe 1:11 — '...đã theo đường của Ca-in, lao mình vào sự sai lạc của Ba-la-am vì lợi lộc, và bị hư mất về sự phản nghịch của Cô-rê.' Ba nhân vật; Ê-sau không được đề cập trong câu này.",
+    "language": "vi",
+    "options": [
+      "Ca-in",
+      "Ba-la-am",
+      "Cô-rê",
+      "Ê-sau"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Ba gương xấu",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 12,
+    "verseEnd": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Giu-đe 1:12-13 dùng những hình ảnh nào để mô tả giáo sư giả? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Giu-đe 1:12-13 — 'Đó là những vết chấm trong các tiệc yêu thương của anh em... là đám mây không nước... là cây đến mùa thu chẳng có trái gì, đã chết hai lần... sao đi lạc, dành sự tối tăm mờ mịt đời đời cho chúng nó.' Hình ảnh 'sư tử đồng nội' không có trong đoạn này.",
+    "language": "vi",
+    "options": [
+      "Vết chấm trong các tiệc yêu thương (đá ngầm)",
+      "Đám mây không nước, bị gió đưa đi",
+      "Sao đi lạc dành sự tối tăm đời đời",
+      "Sư tử đồng nội rình rập bầy chiên"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Hình ảnh giáo sư giả",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "verseStart": 22,
+    "verseEnd": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Giu-đe 1:22-23, tín hữu phải hành xử thế nào với ba nhóm người? (chọn tất cả đúng)",
+    "correctAnswer": [0, 2, 3],
+    "explanation": "Giu-đe 1:22-23 — 'Hãy trách phạt những kẻ nầy, là kẻ trù trừ, hãy cứu vớt những kẻ kia, rút họ ra khỏi lửa; còn đối với kẻ khác, hãy có lòng thương lẫn với sự sợ, ghét cả đến cái áo bị xác thịt làm ô uế.' Ba nhóm: kẻ trù trừ (nghi ngờ), kẻ phải kéo ra khỏi lửa, và kẻ cần tỏ lòng thương lẫn với sự sợ.",
+    "language": "vi",
+    "options": [
+      "Những người trù trừ (nghi ngờ) — thương xót",
+      "Những kẻ thờ thần tượng — trục xuất ngay",
+      "Những người cần kéo ra khỏi lửa",
+      "Những người cần thương xót với lòng kính sợ, ghét cả áo bị ô uế"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giu-đe",
+      "Thư tín",
+      "Ba cách đối xử",
+      "Nâng cao"
+    ]
+  }
+]
