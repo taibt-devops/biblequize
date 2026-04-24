@@ -1,0 +1,483 @@
+[
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does the author identify himself at the opening of 3 John?",
+    "correctAnswer": [0],
+    "explanation": "3 John 1:1 — 'The elder to the beloved Gaius, whom I love in truth.' As in 2 John, the author calls himself 'the elder' — humble yet carrying spiritual authority.",
+    "language": "en",
+    "options": [
+      "The elder",
+      "An apostle of Christ",
+      "A servant of God",
+      "A priest"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "The elder",
+      "Basic"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "To whom is 3 John addressed?",
+    "correctAnswer": [1],
+    "explanation": "3 John 1:1 — '...to the beloved Gaius, whom I love in truth.' Gaius is a believer commended for his hospitality to traveling preachers.",
+    "language": "en",
+    "options": [
+      "Diotrephes",
+      "Gaius",
+      "Demetrius",
+      "The whole church"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Gaius",
+      "Basic"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In 3 John 1:2, what does the elder pray for Gaius?",
+    "correctAnswer": [2],
+    "explanation": "3 John 1:2 — 'Beloved, I pray that all may go well with you and that you may be in good health, as it goes well with your soul.'",
+    "language": "en",
+    "options": [
+      "To receive a gift of church leadership",
+      "To become a great missionary",
+      "That all may go well and he be in good health, as his soul prospers",
+      "To have many spiritual descendants"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Prayer for prosperity",
+      "Basic"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 3 John 1:3, what made the elder greatly rejoice?",
+    "correctAnswer": [3],
+    "explanation": "3 John 1:3 — 'For I rejoiced greatly when the brothers came and testified to your truth, as indeed you are walking in the truth.'",
+    "language": "en",
+    "options": [
+      "That Gaius had become wealthy",
+      "That Gaius had held a great feast",
+      "That Gaius reconciled with Diotrephes",
+      "That the brothers testified Gaius was walking in the truth"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Walking in truth",
+      "Basic"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 3 John 1:4, what is the elder's greatest joy?",
+    "correctAnswer": [0],
+    "explanation": "3 John 1:4 — 'I have no greater joy than to hear that my children are walking in the truth.'",
+    "language": "en",
+    "options": [
+      "To hear that his children walk in the truth",
+      "To see the church growing in numbers",
+      "To be honored by the authorities",
+      "To have many faithful disciples"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Elder's joy",
+      "Basic"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 3 John 1:5, what faithful thing does Gaius do?",
+    "correctAnswer": [1],
+    "explanation": "3 John 1:5 — 'Beloved, it is a faithful thing you do in all your efforts for these brothers, strangers as they are.' He welcomes both familiar believers and traveling preachers alike.",
+    "language": "en",
+    "options": [
+      "Giving tithes fully",
+      "Caring for the brothers, even those who are strangers",
+      "Preaching in his city",
+      "Building a new meeting place"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Hospitality",
+      "Basic"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 3 John 1:6, how does the elder urge Gaius to send the brothers on their way?",
+    "correctAnswer": [2],
+    "explanation": "3 John 1:6 — '...You will do well to send them on their journey in a manner worthy of God.' 'Worthy of God' means providing provisions, prayer, and needed support.",
+    "language": "en",
+    "options": [
+      "Quietly, letting no one know",
+      "With only a blessing spoken",
+      "In a manner worthy of God",
+      "With a great public feast"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Worthy of God",
+      "Basic"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 3 John 1:7, for what have the brothers gone out?",
+    "correctAnswer": [3],
+    "explanation": "3 John 1:7 — 'For they have gone out for the sake of the name, accepting nothing from the Gentiles.'",
+    "language": "en",
+    "options": [
+      "Seeking a living in foreign lands",
+      "Spreading Jewish culture",
+      "Carrying out an exile sentence",
+      "For the sake of the Name"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "For the Name",
+      "Basic"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 3 John 1:7, from whom do the traveling preachers accept nothing?",
+    "correctAnswer": [0],
+    "explanation": "3 John 1:7 — '...accepting nothing from the Gentiles.' They do not rely on unbelievers' resources, avoiding any confusion about their motives and honoring the principle of being supported by the saints.",
+    "language": "en",
+    "options": [
+      "The Gentiles (unbelievers)",
+      "Wealthy believers",
+      "Local civil authorities",
+      "Elders of the church"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Taking nothing from Gentiles",
+      "Basic"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 3 John 1:8, why should believers support such preachers?",
+    "correctAnswer": [1],
+    "explanation": "3 John 1:8 — 'Therefore we ought to support people like these, that we may be fellow workers for the truth.' Supporting missionaries is how believers share in the work of the gospel.",
+    "language": "en",
+    "options": [
+      "To be praised in the church",
+      "That we may be fellow workers for the truth",
+      "To accumulate merit",
+      "To uphold family honor"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Fellow workers for truth",
+      "Basic"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who in the church 'likes to put himself first' according to 3 John 1:9?",
+    "correctAnswer": [2],
+    "explanation": "3 John 1:9 — 'I have written something to the church, but Diotrephes, who likes to put himself first, does not acknowledge our authority.' This desire to be first (philoprōteuōn) is the root of Diotrephes's many offenses.",
+    "language": "en",
+    "options": [
+      "Gaius",
+      "Demetrius",
+      "Diotrephes",
+      "Paul"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Diotrephes seeking first place",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 3 John 1:9, whom does Diotrephes refuse to welcome?",
+    "correctAnswer": [3],
+    "explanation": "3 John 1:9 — '...Diotrephes, who likes to put himself first, does not acknowledge our authority.' He rejects the elder himself — the one holding spiritual authority in the region.",
+    "language": "en",
+    "options": [
+      "Curious Gentile inquirers",
+      "Roman officials",
+      "Tax collectors",
+      "The elder and those with him"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Rejecting authority",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 3 John 1:10, which wicked deeds of Diotrephes will the elder bring up when he comes?",
+    "correctAnswer": [0],
+    "explanation": "3 John 1:10 — '...talking wicked nonsense against us. And not content with that, he refuses to welcome the brothers, and also stops those who want to and puts them out of the church.'",
+    "language": "en",
+    "options": [
+      "Talking wicked nonsense, refusing brothers, putting out those who welcome them",
+      "Greed for church possessions",
+      "Teaching false doctrine about the resurrection",
+      "Failing to tithe"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Diotrephes's evil deeds",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 3 John 1:11, whoever does good is from whom?",
+    "correctAnswer": [1],
+    "explanation": "3 John 1:11 — 'Beloved, do not imitate evil but imitate good. Whoever does good is from God; whoever does evil has not seen God.' Action reveals spiritual nature.",
+    "language": "en",
+    "options": [
+      "Is from the church",
+      "Is from God",
+      "Is from the angels",
+      "Is from human wisdom"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Doing good is from God",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 3 John 1:11, whoever does evil has not what?",
+    "correctAnswer": [2],
+    "explanation": "3 John 1:11 — '...whoever does evil has not seen God.' 'Seen' here means to know God intimately — evil deeds prove the absence of true fellowship with Him.",
+    "language": "en",
+    "options": [
+      "Will lose his earthly life",
+      "Will be expelled from the church",
+      "Has not seen God",
+      "Will lose his material possessions"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Not seeing God",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 3 John 1:12, who received a good testimony from everyone?",
+    "correctAnswer": [3],
+    "explanation": "3 John 1:12 — 'Demetrius has received a good testimony from everyone, and from the truth itself. We also add our testimony, and you know that our testimony is true.' Demetrius was likely the bearer of this letter.",
+    "language": "en",
+    "options": [
+      "Diotrephes",
+      "Philemon",
+      "Gaius",
+      "Demetrius"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Demetrius",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "At the close of 3 John, what does the elder express hope for?",
+    "correctAnswer": [0],
+    "explanation": "3 John 1:13-14 — 'I had much to write to you, but I would rather not write with pen and ink. I hope to see you soon, and we will talk face to face.'",
+    "language": "en",
+    "options": [
+      "To see Gaius soon and talk face to face",
+      "To send more letters",
+      "To go on mission to Asia",
+      "To gather all the apostles in one place"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Face to face conversation",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 3 John 1:10, which offenses does Diotrephes commit? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "3 John 1:10 — '...talking wicked nonsense against us... he refuses to welcome the brothers, and also stops those who want to and puts them out of the church.' Three clear offenses; the verse makes no mention of embezzlement.",
+    "language": "en",
+    "options": [
+      "Speaking wicked nonsense against the elder",
+      "Refusing to welcome the brothers",
+      "Stopping and putting out of the church those who welcome them",
+      "Embezzling the church's offerings"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Diotrephes's offenses",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 3 John 1:2, what things does the elder pray for concerning Gaius? (select all that apply)",
+    "correctAnswer": [1, 2, 3],
+    "explanation": "3 John 1:2 — 'I pray that all may go well with you and that you may be in good health, as it goes well with your soul.' Three items: all going well, good health, prospering soul. No mention of great wealth.",
+    "language": "en",
+    "options": [
+      "To have great and abundant possessions",
+      "That all may go well with him",
+      "That he be in good bodily health",
+      "That his soul may prosper"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Three-fold prayer",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 3 John 1:12, from which sources has Demetrius received a good testimony? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "3 John 1:12 — 'Demetrius has received a good testimony from everyone, and from the truth itself. We also add our testimony...' Three sources: everyone, the truth itself, and the elder together with those accompanying him.",
+    "language": "en",
+    "options": [
+      "From everyone",
+      "From the truth itself",
+      "From the elder and those with him",
+      "From the angels"
+    ],
+    "tags": [
+      "New Testament",
+      "3 John",
+      "Epistle",
+      "Good testimony for Demetrius",
+      "Advanced"
+    ]
+  }
+]

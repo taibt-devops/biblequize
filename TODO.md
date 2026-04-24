@@ -22,7 +22,7 @@
 - Commit: `feat(seed): 2 John question pair (VI + EN, 20 each)`
 
 ### Task SEED-P1T1-3: 3 John (14 câu trong 1 chương)
-- Status: [ ] TODO
+- Status: [x] DONE — 20 câu VI + 20 câu EN, validation pass (10/7/3, 17 single + 3 multi, idx 5/4/4/4)
 - File(s): `3john_quiz.json` + `3john_quiz_en.json`
 - Nội dung: Gửi Gai-út. Themes: đi trong lẽ thật, lòng hiếu khách với anh em giảng đạo, lên án Đi-ô-trép kiêu ngạo, khen ngợi Đê-mê-triu.
 - Commit: `feat(seed): 3 John question pair (VI + EN, 20 each)`

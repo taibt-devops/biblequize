@@ -91,7 +91,7 @@ Mỗi sách cần CẢ VI + EN. Bắt đầu từ size nhỏ nhất để dễ s
 - [x] obadiah (1 chương, 21 câu) — 20 VI + 20 EN, commit 825b680
 - [x] philemon (1 chương, 25 câu) — 21 VI + 21 EN
 - [x] 2john (1 chương, 13 câu) — 20 VI + 20 EN
-- [ ] 3john (1 chương, 14 câu)
+- [x] 3john (1 chương, 14 câu) — 20 VI + 20 EN
 - [ ] jude (1 chương, 25 câu)
 
 **Tier 2 — 20-30 câu (sách ngắn)**

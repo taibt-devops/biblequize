@@ -1,0 +1,483 @@
+[
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Tác giả tự xưng là gì khi mở đầu thư 3 Giăng?",
+    "correctAnswer": [0],
+    "explanation": "3 Giăng 1:1 — 'Trưởng lão đạt cho Gai-út là người yêu dấu, mà tôi thật yêu trong lẽ thật.' Giống 2 Giăng, tác giả tự xưng 'trưởng lão' — khiêm cung nhưng đầy thẩm quyền thuộc linh.",
+    "language": "vi",
+    "options": [
+      "Trưởng lão",
+      "Sứ đồ của Đấng Christ",
+      "Đầy tớ của Đức Chúa Trời",
+      "Thầy tế lễ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Trưởng lão",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thư 3 Giăng được gửi cho ai?",
+    "correctAnswer": [1],
+    "explanation": "3 Giăng 1:1 — '...đạt cho Gai-út là người yêu dấu, mà tôi thật yêu trong lẽ thật.' Gai-út là một tín hữu được khen vì lòng hiếu khách với các anh em giảng đạo.",
+    "language": "vi",
+    "options": [
+      "Đi-ô-trép",
+      "Gai-út",
+      "Đê-mê-triu",
+      "Cả Hội Thánh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Gai-út",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong 3 Giăng 1:2, trưởng lão cầu chúc cho Gai-út điều gì?",
+    "correctAnswer": [2],
+    "explanation": "3 Giăng 1:2 — 'Hỡi kẻ rất yêu dấu, tôi cầu nguyện cho anh được thạnh vượng trong mọi sự, và được khỏe mạnh phần xác anh cũng như đã được thạnh vượng về phần linh hồn anh vậy.'",
+    "language": "vi",
+    "options": [
+      "Nhận được ân tứ lãnh đạo Hội Thánh",
+      "Trở thành người truyền giáo lớn",
+      "Thạnh vượng mọi sự và khỏe mạnh phần xác như linh hồn đã thạnh vượng",
+      "Có đông con cháu thuộc linh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Cầu chúc thạnh vượng",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 3 Giăng 1:3, điều gì đã làm trưởng lão vui mừng lớn?",
+    "correctAnswer": [3],
+    "explanation": "3 Giăng 1:3 — 'Vì tôi rất lấy làm vui vẻ mà thấy mấy anh em đến đây, làm chứng về anh yêu mến lẽ thật, và về cách anh làm theo lẽ thật ấy là thể nào.'",
+    "language": "vi",
+    "options": [
+      "Gai-út đã giàu có",
+      "Gai-út đã tổ chức lễ lớn",
+      "Gai-út đã hòa giải với Đi-ô-trép",
+      "Các anh em làm chứng Gai-út làm theo lẽ thật"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Làm theo lẽ thật",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 3 Giăng 1:4, niềm vui lớn nhất của trưởng lão là gì?",
+    "correctAnswer": [0],
+    "explanation": "3 Giăng 1:4 — 'Tôi nghe con cái tôi làm theo lẽ thật, thì không còn có sự gì vui mừng hơn nữa.'",
+    "language": "vi",
+    "options": [
+      "Nghe con cái mình làm theo lẽ thật",
+      "Nhìn thấy Hội Thánh tăng trưởng số lượng",
+      "Được tôn trọng bởi giới cầm quyền",
+      "Có nhiều môn đồ trung tín"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Niềm vui trưởng lão",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 3 Giăng 1:5, điều trung tín Gai-út làm là gì?",
+    "correctAnswer": [1],
+    "explanation": "3 Giăng 1:5 — 'Hỡi kẻ rất yêu dấu, anh ăn ở trung tín trong mọi điều làm cho các anh em, và cũng cho các anh em ở trọ nữa.' Ông tiếp đón cả tín hữu quen biết lẫn khách lạ truyền đạo.",
+    "language": "vi",
+    "options": [
+      "Dâng phần mười đầy đủ",
+      "Tiếp đãi các anh em, cả những người ở trọ",
+      "Giảng đạo tại thành mình",
+      "Xây dựng nhà hội mới"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Hiếu khách",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 3 Giăng 1:6, trưởng lão khuyên Gai-út đưa tiễn các anh em đi như thế nào?",
+    "correctAnswer": [2],
+    "explanation": "3 Giăng 1:6 — '...anh sẽ làm nên việc lành, khi đưa tiễn họ cách xứng đáng với Đức Chúa Trời...' Tiễn đưa 'xứng đáng với Đức Chúa Trời' nghĩa là cung cấp lộ phí, lời cầu nguyện, và sự hỗ trợ cần thiết.",
+    "language": "vi",
+    "options": [
+      "Thật âm thầm, không cho ai biết",
+      "Chỉ với lời chúc phước",
+      "Cách xứng đáng với Đức Chúa Trời",
+      "Với lễ tiệc lớn trước cả thành"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Tiễn đưa xứng đáng",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 3 Giăng 1:7, các anh em đã đi ra vì cớ gì?",
+    "correctAnswer": [3],
+    "explanation": "3 Giăng 1:7 — 'Ấy vì danh Đức Chúa Jêsus Christ mà các anh em ra đi, và không nhận lãnh vật chi của người ngoại hết.'",
+    "language": "vi",
+    "options": [
+      "Kiếm sống nơi đất khách",
+      "Truyền bá văn hóa Do Thái",
+      "Thi hành án lưu đày",
+      "Vì danh Đấng Christ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Vì danh Chúa",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 3 Giăng 1:7, các anh em giảng đạo không nhận lãnh gì từ ai?",
+    "correctAnswer": [0],
+    "explanation": "3 Giăng 1:7 — '...không nhận lãnh vật chi của người ngoại hết.' Họ không dựa vào nguồn lực người chưa tin, tránh hiểu lầm về động cơ và giữ nguyên tắc được tín hữu nâng đỡ.",
+    "language": "vi",
+    "options": [
+      "Người ngoại (người chưa tin)",
+      "Các tín hữu giàu có",
+      "Chính quyền địa phương",
+      "Các trưởng lão trong Hội Thánh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Không nhận của người ngoại",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 3 Giăng 1:8, tại sao tín hữu nên tiếp đãi những người giảng đạo ấy?",
+    "correctAnswer": [1],
+    "explanation": "3 Giăng 1:8 — 'Chúng ta cũng nên tiếp đãi những người thể ấy, hầu cho chúng ta với họ đồng làm việc cho lẽ thật.' Hỗ trợ người truyền giáo là cách tín hữu dự phần trong công việc lẽ thật.",
+    "language": "vi",
+    "options": [
+      "Để được lời khen trong Hội Thánh",
+      "Hầu cho chúng ta đồng làm việc cho lẽ thật",
+      "Để tích lũy công đức",
+      "Để giữ uy tín gia đình"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Đồng công cho lẽ thật",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ai trong Hội Thánh ưa 'đứng đầu' theo 3 Giăng 1:9?",
+    "correctAnswer": [2],
+    "explanation": "3 Giăng 1:9 — 'Tôi đã viết mấy chữ cho Hội Thánh rồi, nhưng Đi-ô-trép là kẻ ưng đứng đầu Hội Thánh, không muốn tiếp rước chúng tôi.' Tính ưa đứng đầu (philoprōteuōn) là gốc rễ của nhiều vấn đề Đi-ô-trép gây ra.",
+    "language": "vi",
+    "options": [
+      "Gai-út",
+      "Đê-mê-triu",
+      "Đi-ô-trép",
+      "Phao-lô"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Đi-ô-trép ưa đứng đầu",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 3 Giăng 1:9, Đi-ô-trép không chịu tiếp rước ai?",
+    "correctAnswer": [3],
+    "explanation": "3 Giăng 1:9 — '...Đi-ô-trép là kẻ ưng đứng đầu Hội Thánh, không muốn tiếp rước chúng tôi.' Ông từ chối chính trưởng lão — người có thẩm quyền thuộc linh trong vùng.",
+    "language": "vi",
+    "options": [
+      "Các người ngoại tò mò về đạo",
+      "Quan chức La Mã",
+      "Những người đóng thuế",
+      "Trưởng lão và những người cùng ông (chúng tôi)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Từ chối thẩm quyền",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 3 Giăng 1:10, trưởng lão sẽ nhắc lại những việc xấu nào của Đi-ô-trép khi ông đến?",
+    "correctAnswer": [0],
+    "explanation": "3 Giăng 1:10 — '...người lấy lời luận độc ác mà nghịch cùng chúng tôi. Điều đó còn chưa đủ, người lại không tiếp rước anh em nữa, mà ai muốn tiếp rước, thì người ngăn trở và đuổi ra khỏi Hội Thánh.'",
+    "language": "vi",
+    "options": [
+      "Nói lời độc ác, không tiếp anh em, còn đuổi ai tiếp họ ra khỏi Hội Thánh",
+      "Tham lam của cải Hội Thánh",
+      "Giảng giáo lý sai về sự phục sinh",
+      "Không dâng phần mười"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Việc ác Đi-ô-trép",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 3 Giăng 1:11, người làm điều lành thuộc về ai?",
+    "correctAnswer": [1],
+    "explanation": "3 Giăng 1:11 — 'Hỡi kẻ rất yêu dấu, chớ bắt chước điều dữ, nhưng bắt chước điều lành. Ai làm điều lành là thuộc về Đức Chúa Trời; ai làm điều dữ, chẳng hề thấy Đức Chúa Trời.' Hành vi bộc lộ bản chất thuộc linh.",
+    "language": "vi",
+    "options": [
+      "Thuộc về Hội Thánh",
+      "Thuộc về Đức Chúa Trời",
+      "Thuộc về các thiên sứ",
+      "Thuộc về sự khôn ngoan loài người"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Làm lành thuộc về Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 3 Giăng 1:11, ai làm điều dữ thì điều gì?",
+    "correctAnswer": [2],
+    "explanation": "3 Giăng 1:11 — '...ai làm điều dữ, chẳng hề thấy Đức Chúa Trời.' 'Thấy' ở đây nghĩa là biết Chúa cách thân mật — hành động dữ chứng tỏ thiếu mối tương giao thật với Ngài.",
+    "language": "vi",
+    "options": [
+      "Sẽ mất sự sống đời này",
+      "Sẽ bị trục xuất khỏi Hội Thánh",
+      "Chẳng hề thấy Đức Chúa Trời",
+      "Sẽ mất tài sản vật chất"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Không thấy Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 3 Giăng 1:12, ai đã được mọi người làm chứng tốt?",
+    "correctAnswer": [3],
+    "explanation": "3 Giăng 1:12 — 'Mọi người đều làm chứng tốt về Đê-mê-triu, và chính lẽ thật cũng làm chứng cho người; chúng tôi cũng làm chứng riêng cho người, và anh biết rằng lời chứng của chúng tôi là thật.' Đê-mê-triu có lẽ là người mang thư này.",
+    "language": "vi",
+    "options": [
+      "Đi-ô-trép",
+      "Phi-lê-môn",
+      "Gai-út",
+      "Đê-mê-triu"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Đê-mê-triu",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Cuối thư 3 Giăng, trưởng lão bày tỏ ước mong gì?",
+    "correctAnswer": [0],
+    "explanation": "3 Giăng 1:13-14 — 'Tôi còn nhiều điều muốn viết cho anh, nhưng không muốn viết bằng mực và bút: tôi ước ao thấy anh kíp, chúng ta sẽ đối mặt nói chuyện cùng nhau...'",
+    "language": "vi",
+    "options": [
+      "Sớm được gặp Gai-út và đối mặt trò chuyện",
+      "Gửi nhiều thư hơn nữa",
+      "Đi truyền giáo sang Á Châu",
+      "Quy tụ tất cả các sứ đồ về một chỗ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Đối mặt trò chuyện",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 3 Giăng 1:10, Đi-ô-trép phạm những lỗi nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "3 Giăng 1:10 — '...người lấy lời luận độc ác mà nghịch cùng chúng tôi... không tiếp rước anh em... ai muốn tiếp rước, thì người ngăn trở và đuổi ra khỏi Hội Thánh.' Ba lỗi rõ ràng; câu không nhắc việc tham nhũng.",
+    "language": "vi",
+    "options": [
+      "Lấy lời độc ác chống lại trưởng lão",
+      "Không chịu tiếp rước các anh em",
+      "Ngăn trở và đuổi ra khỏi Hội Thánh những ai tiếp rước",
+      "Biển thủ tiền dâng của Hội Thánh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Lỗi của Đi-ô-trép",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 3 Giăng 1:2, trưởng lão cầu chúc những điều nào cho Gai-út? (chọn tất cả đúng)",
+    "correctAnswer": [1, 2, 3],
+    "explanation": "3 Giăng 1:2 — '...tôi cầu nguyện cho anh được thạnh vượng trong mọi sự, và được khỏe mạnh phần xác anh cũng như đã được thạnh vượng về phần linh hồn anh vậy.' Ba điều: thạnh vượng mọi sự, khỏe mạnh, linh hồn thạnh vượng. Không hề đề cập tài sản lớn.",
+    "language": "vi",
+    "options": [
+      "Có tài sản lớn và dư dật",
+      "Thạnh vượng trong mọi sự",
+      "Khỏe mạnh phần xác",
+      "Linh hồn thạnh vượng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Ba điều cầu chúc",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 3 Giăng 1:12, Đê-mê-triu nhận được lời chứng tốt từ những nguồn nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "3 Giăng 1:12 — 'Mọi người đều làm chứng tốt về Đê-mê-triu, và chính lẽ thật cũng làm chứng cho người; chúng tôi cũng làm chứng riêng cho người...' Ba nguồn: mọi người, chính lẽ thật, và trưởng lão cùng người đi với ông.",
+    "language": "vi",
+    "options": [
+      "Mọi người",
+      "Chính lẽ thật",
+      "Trưởng lão và những người đi với ông",
+      "Các thiên sứ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "3 Giăng",
+      "Thư tín",
+      "Lời chứng tốt cho Đê-mê-triu",
+      "Nâng cao"
+    ]
+  }
+]
