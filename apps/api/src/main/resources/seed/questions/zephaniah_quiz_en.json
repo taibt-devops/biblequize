@@ -1,0 +1,482 @@
+[
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whose son was Zephaniah?",
+    "correctAnswer": [0],
+    "explanation": "Zephaniah 1:1 — 'The word of the LORD that came to Zephaniah the son of Cushi, son of Gedaliah, son of Amariah, son of Hezekiah...' The four-generation genealogy back to King Hezekiah suggests a royal lineage.",
+    "language": "en",
+    "options": [
+      "Cushi",
+      "Gedaliah",
+      "Amariah",
+      "Hezekiah"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Father of Zephaniah",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "During which king of Judah did Zephaniah prophesy?",
+    "correctAnswer": [1],
+    "explanation": "Zephaniah 1:1 — '...in the days of Josiah the son of Amon, king of Judah.' Josiah was the reforming king (2 Kings 22-23); Zephaniah may have supported his reforms.",
+    "language": "en",
+    "options": [
+      "Ahaz",
+      "Josiah",
+      "Manasseh",
+      "Zedekiah"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Days of Josiah",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Zephaniah 1:7, what is the reason to be silent before the Lord GOD?",
+    "correctAnswer": [2],
+    "explanation": "Zephaniah 1:7 — 'Be silent before the Lord GOD! For the day of the LORD is near...'",
+    "language": "en",
+    "options": [
+      "Because Passover approaches",
+      "Because prophecy has ceased",
+      "Because the Day of the LORD is near",
+      "Because harvest is beginning"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Day of the LORD",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Zephaniah 1:12, what do the complacent say in their hearts?",
+    "correctAnswer": [3],
+    "explanation": "Zephaniah 1:12 — 'At that time I will search Jerusalem with lamps, and I will punish the men who are complacent... those who say in their hearts, \"The LORD will not do good, nor will he do ill.\"' Spiritual apathy — believing God neither cares nor acts.",
+    "language": "en",
+    "options": [
+      "God will bless us greatly",
+      "God will destroy everything",
+      "God is only merciful, never judging",
+      "The LORD will not do good, nor will He do ill"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Spiritual complacency",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Zephaniah 1:14, how is the great day of the LORD described?",
+    "correctAnswer": [0],
+    "explanation": "Zephaniah 1:14 — 'The great day of the LORD is near, near and hastening fast...' The repetition 'near, near' emphasizes urgency.",
+    "language": "en",
+    "options": [
+      "Near and hastening fast",
+      "Still far, unknown to any",
+      "Postponed to a later generation",
+      "Coming in secret darkness"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Great day is near",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Zephaniah 1:15 describe the Day of the LORD?",
+    "correctAnswer": [1],
+    "explanation": "Zephaniah 1:15 — 'A day of wrath is that day, a day of distress and anguish, a day of ruin and devastation, a day of darkness and gloom, a day of clouds and thick darkness.'",
+    "language": "en",
+    "options": [
+      "A day of peace and feasting",
+      "A day of wrath, distress, anguish, and darkness",
+      "A day of grace and universal deliverance",
+      "A day of quietness and forgiveness"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Marks of the great day",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Zephaniah 1:18, what cannot deliver them from God's wrath?",
+    "correctAnswer": [2],
+    "explanation": "Zephaniah 1:18 — 'Neither their silver nor their gold shall be able to deliver them on the day of the wrath of the LORD...'",
+    "language": "en",
+    "options": [
+      "Sharp weapons",
+      "Powerful alliances",
+      "Silver and gold",
+      "The king's promises"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Silver and gold cannot save",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 2,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Zephaniah 2:3, what three things must the humble seek?",
+    "correctAnswer": [3],
+    "explanation": "Zephaniah 2:3 — 'Seek the LORD, all you humble of the land, who do his just commands; seek righteousness; seek humility...' Three 'seek' commands in one verse — a classic prophetic pattern.",
+    "language": "en",
+    "options": [
+      "Wealth, power, honor",
+      "Temple, sacrifice, altar",
+      "Land, estate, children",
+      "The LORD, righteousness, and humility"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Three things to seek",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Zephaniah 2:13, which land will the LORD make desolate?",
+    "correctAnswer": [0],
+    "explanation": "Zephaniah 2:13 — 'And he will stretch out his hand against the north and destroy Assyria, and he will make Nineveh a desolation...'",
+    "language": "en",
+    "options": [
+      "Assyria and Nineveh",
+      "Egypt and Cush",
+      "Babylon and Ur",
+      "Philistia and Gaza"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Assyria Nineveh desolate",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Zephaniah 3:12, what kind of people will the LORD leave among His people?",
+    "correctAnswer": [1],
+    "explanation": "Zephaniah 3:12 — 'But I will leave in your midst a people humble and lowly. They shall seek refuge in the name of the LORD.' Humble and lowly — bowed down, relying wholly on the LORD.",
+    "language": "en",
+    "options": [
+      "Wealthy and powerful",
+      "Humble and lowly, seeking refuge in the name of the LORD",
+      "Populous and many-descended",
+      "Learned and honored"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Humble and lowly remnant",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Zephaniah 1:2, the LORD will utterly sweep away everything from where?",
+    "correctAnswer": [2],
+    "explanation": "Zephaniah 1:2 — 'I will utterly sweep away everything from the face of the earth, declares the LORD.' Language akin to the Flood — total judgment.",
+    "language": "en",
+    "options": [
+      "From the house of God",
+      "From Jerusalem",
+      "From the face of the earth",
+      "From southern Judah"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Sweep from the face of the earth",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Zephaniah 3:9, what will God give to the peoples?",
+    "correctAnswer": [3],
+    "explanation": "Zephaniah 3:9 — 'For at that time I will change the speech of the peoples to a pure speech, that all of them may call upon the name of the LORD and serve him with one accord.' A prophecy of the nations worshiping God — reversing Babel.",
+    "language": "en",
+    "options": [
+      "New weapons",
+      "Gold and treasures",
+      "A magnificent temple",
+      "A pure speech to call upon the name of the LORD"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Pure speech",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Zephaniah 3:13, what will the remnant of Israel NOT do?",
+    "correctAnswer": [0],
+    "explanation": "Zephaniah 3:13 — 'Those who are left in Israel; they shall do no injustice and speak no lies, nor shall there be found in their mouth a deceitful tongue...' Character transformed — no injustice, lies, or deceit.",
+    "language": "en",
+    "options": [
+      "Injustice, lies, and deceitful speech",
+      "Offer sacrifice and prayer",
+      "Seek the LORD and worship Him",
+      "Teach the law to their children"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Transformed remnant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whom does Zephaniah 3:14 call to sing for joy?",
+    "correctAnswer": [1],
+    "explanation": "Zephaniah 3:14 — 'Sing aloud, O daughter of Zion; shout, O Israel! Rejoice and exult with all your heart, O daughter of Jerusalem!'",
+    "language": "en",
+    "options": [
+      "The neighboring nations",
+      "Daughter of Zion, Israel, daughter of Jerusalem",
+      "The angels in the heavens",
+      "The patriarchal ancestors"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Daughter of Zion, sing",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Zephaniah 3:15, where is the King of Israel — the LORD?",
+    "correctAnswer": [2],
+    "explanation": "Zephaniah 3:15 — '...The King of Israel, the LORD, is in your midst; you shall never again fear evil.' God's presence is the security of His people.",
+    "language": "en",
+    "options": [
+      "Far in the highest heavens",
+      "In the house of the prophets",
+      "In your midst",
+      "Has departed far away"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "LORD in your midst",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Zephaniah 3:17, the LORD your God in your midst is what kind of One who 'will save'?",
+    "correctAnswer": [3],
+    "explanation": "Zephaniah 3:17 — 'The LORD your God is in your midst, a mighty one who will save; he will rejoice over you with gladness...'",
+    "language": "en",
+    "options": [
+      "The Creator",
+      "The Shepherd",
+      "The Judge",
+      "A mighty one"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Mighty one to save",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Zephaniah 3:17, what does God do 'over you with gladness'?",
+    "correctAnswer": [0],
+    "explanation": "Zephaniah 3:17 — '...he will rejoice over you with gladness; he will quiet you by his love; he will exult over you with loud singing.' A unique image — God sings over His people.",
+    "language": "en",
+    "options": [
+      "Rejoice over you with gladness",
+      "Hide His face from you",
+      "Judge strictly",
+      "Rest in righteousness"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "God rejoices greatly",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 2,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Zephaniah 2:3, what must the humble of the land seek? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Zephaniah 2:3 — 'Seek the LORD, all you humble of the land... seek righteousness; seek humility...' Three things to seek; 'seek wealth and power' contradicts the passage.",
+    "language": "en",
+    "options": [
+      "Seek the LORD",
+      "Seek righteousness",
+      "Seek humility",
+      "Seek wealth and power"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Three things to seek",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Zephaniah 1:15, the Day of the LORD is described by which pairs of images? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Zephaniah 1:15 — 'A day of wrath... a day of distress and anguish, a day of ruin and devastation, a day of darkness and gloom, a day of clouds and thick darkness.' Four bleak pairs; 'day of joy and wedding feast' contradicts.",
+    "language": "en",
+    "options": [
+      "Wrath, distress, and anguish",
+      "Ruin and devastation",
+      "Darkness and gloom, clouds and thick darkness",
+      "Joy and wedding feasting"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "Marks of the Day of LORD",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Zephaniah 3:17, what does God do for His people? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Zephaniah 3:17 — '...he will rejoice over you with gladness; he will quiet you by his love; he will exult over you with loud singing.' Three actions; 'rebuke without ceasing' contradicts the flow of love in this verse.",
+    "language": "en",
+    "options": [
+      "Rejoice over you with gladness",
+      "Quiet you by His love",
+      "Exult over you with loud singing",
+      "Rebuke you without ceasing for every fault"
+    ],
+    "tags": [
+      "Old Testament",
+      "Zephaniah",
+      "Prophets",
+      "God sings over His people",
+      "Advanced"
+    ]
+  }
+]

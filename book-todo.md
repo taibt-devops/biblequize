@@ -97,7 +97,7 @@ Mỗi sách cần CẢ VI + EN. Bắt đầu từ size nhỏ nhất để dễ s
 **Tier 2 — 20-30 câu (sách ngắn)**
 - [x] joel (3 chương) — 20 VI + 20 EN
 - [x] nahum (3 chương) — 20 VI + 20 EN
-- [ ] zephaniah (3 chương)
+- [x] zephaniah (3 chương) — 20 VI + 20 EN
 - [ ] haggai (2 chương)
 - [ ] 2thessalonians (3 chương)
 - [ ] titus (3 chương)
