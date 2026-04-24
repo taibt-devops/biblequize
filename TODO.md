@@ -16,7 +16,7 @@
   - [ ] Commit: `feat(seed): Philemon question pair (VI + EN, 20 each)`
 
 ### Task SEED-P1T1-2: 2 John (13 câu trong 1 chương)
-- Status: [ ] TODO
+- Status: [x] DONE — 20 câu VI + 20 câu EN, validation pass (10/7/3 easy/medium/hard, 17 single + 3 multi, idx 5/4/4/4)
 - File(s): `2john_quiz.json` + `2john_quiz_en.json`
 - Nội dung: Gửi "bà được chọn". Themes: đi trong lẽ thật, yêu thương nhau, cảnh báo chống kẻ địch lại Christ (antichrist), không tiếp đón giáo sư giả.
 - Commit: `feat(seed): 2 John question pair (VI + EN, 20 each)`
