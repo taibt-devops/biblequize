@@ -88,8 +88,8 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 Mỗi sách cần CẢ VI + EN. Bắt đầu từ size nhỏ nhất để dễ ship:
 
 **Tier 1 — Min 20 câu (sách 1 chương)**
-- [ ] obadiah (1 chương, 21 câu)
-- [ ] philemon (1 chương, 25 câu)
+- [x] obadiah (1 chương, 21 câu) — 20 VI + 20 EN, commit 825b680
+- [x] philemon (1 chương, 25 câu) — 21 VI + 21 EN
 - [ ] 2john (1 chương, 13 câu)
 - [ ] 3john (1 chương, 14 câu)
 - [ ] jude (1 chương, 25 câu)

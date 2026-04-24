@@ -1,0 +1,511 @@
+[
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô tự xưng là gì khi mở đầu thư gửi Phi-lê-môn?",
+    "correctAnswer": [2],
+    "explanation": "Phi-lê-môn 1:1 — 'Phao-lô, tù của Đức Chúa Jêsus Christ, và Ti-mô-thê, anh em chúng ta, gởi cho Phi-lê-môn...' Phao-lô nhấn mạnh thân phận tù nhân vì Tin Lành thay vì chức vụ sứ đồ để làm nền cho lời cầu xin.",
+    "language": "vi",
+    "options": [
+      "Sứ đồ của Đức Chúa Jêsus Christ",
+      "Tôi tớ của Hội Thánh",
+      "Tù của Đức Chúa Jêsus Christ",
+      "Trưởng lão của Rô-ma"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Phao-lô bị xiềng",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phi-lê-môn được Phao-lô gọi là gì trong câu chào đầu thư?",
+    "correctAnswer": [0],
+    "explanation": "Phi-lê-môn 1:1 — '...gởi cho Phi-lê-môn, là người rất yêu dấu và cùng làm việc với chúng tôi.' Phao-lô khẳng định tình bạn và sự đồng công trước khi cầu xin.",
+    "language": "vi",
+    "options": [
+      "Người rất yêu dấu và cùng làm việc với chúng tôi",
+      "Quan cai trị tại Cô-lô-se",
+      "Thầy tế lễ của Hội Thánh",
+      "Kẻ thù đã được làm hòa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Bạn cùng công tác",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Phi-lê-môn 1:2, Hội Thánh nhóm họp ở đâu?",
+    "correctAnswer": [1],
+    "explanation": "Phi-lê-môn 1:2 — '...cùng cho Hội Thánh nhóm lại trong nhà anh.' Thời kỳ đầu, Hội Thánh thường nhóm trong nhà tín hữu — một dấu chỉ lòng hiếu khách và tổ chức còn mộc mạc.",
+    "language": "vi",
+    "options": [
+      "Tại đền thờ Giê-ru-sa-lem",
+      "Trong nhà Phi-lê-môn",
+      "Tại nhà hội Do Thái",
+      "Ở công trường thành phố"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Hội Thánh tại gia",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô cầu xin Phi-lê-môn cho ai trong thư này?",
+    "correctAnswer": [3],
+    "explanation": "Phi-lê-môn 1:10 — 'Tôi vì con tôi đã sanh trong vòng xiềng xích, tức là Ô-nê-sim, mà nài xin anh.' Ô-nê-sim là nô lệ bỏ trốn của Phi-lê-môn, nay đã tin Chúa nhờ chức vụ của Phao-lô.",
+    "language": "vi",
+    "options": [
+      "Ti-mô-thê",
+      "Ạc-híp",
+      "Ê-pháp-ra",
+      "Ô-nê-sim"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Ô-nê-sim",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô mô tả mối quan hệ thuộc linh với Ô-nê-sim như thế nào?",
+    "correctAnswer": [2],
+    "explanation": "Phi-lê-môn 1:10 — '...con tôi đã sanh trong vòng xiềng xích.' Phao-lô đã dẫn Ô-nê-sim đến với Đấng Christ ngay trong lúc chính ông bị cầm tù.",
+    "language": "vi",
+    "options": [
+      "Bạn cùng lớp học giáo lý",
+      "Người giúp việc trả lương",
+      "Con thuộc linh được sinh ra trong vòng xiềng xích",
+      "Người đồng hương từ Tạt-sơ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Sinh lại trong Christ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô nói Ô-nê-sim trước đây như thế nào đối với Phi-lê-môn?",
+    "correctAnswer": [0],
+    "explanation": "Phi-lê-môn 1:11 — 'Ngày trước người không ích gì cho anh, nhưng bây giờ sẽ ích lắm, và cũng ích cho tôi nữa...' Phao-lô chơi chữ: tên 'Ô-nê-sim' nghĩa là 'có ích'; trước khi tin Chúa, anh lại 'vô ích'.",
+    "language": "vi",
+    "options": [
+      "Không ích gì (vô ích)",
+      "Người đầy tớ trung tín nhất",
+      "Quản gia tài ba",
+      "Bạn thân thiết từ thuở nhỏ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Biến đổi trong Christ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô xin Phi-lê-môn tiếp Ô-nê-sim như thế nào?",
+    "correctAnswer": [2],
+    "explanation": "Phi-lê-môn 1:16 — '...chẳng coi như tôi mọi nữa, nhưng coi hơn tôi mọi, coi như anh em yêu dấu...' Tin Lành biến đổi tương quan chủ-nô thành tương quan anh em trong Christ.",
+    "language": "vi",
+    "options": [
+      "Như một kẻ phản bội cần trừng phạt",
+      "Như đầy tớ bình thường trở lại làm việc",
+      "Không phải như tôi mọi, nhưng như anh em yêu dấu",
+      "Như khách lạ qua đường"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Anh em trong Christ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô chọn cách nào để đề cập vấn đề Ô-nê-sim với Phi-lê-môn?",
+    "correctAnswer": [1],
+    "explanation": "Phi-lê-môn 1:9 — '...song vì lòng yêu thương của anh, nên tôi nài xin thì hơn. Tôi, Phao-lô, đã già rồi, hiện nay lại vì Đức Chúa Jêsus Christ chịu tù nữa...' Ông không dùng uy quyền ra lệnh dù có thể (1:8), mà chọn lời cầu xin vì tình yêu thương.",
+    "language": "vi",
+    "options": [
+      "Ra lệnh dùng quyền sứ đồ",
+      "Vì lòng yêu thương mà nài xin",
+      "Dọa cắt đứt mối giao hảo",
+      "Gửi đại diện thay mặt mình"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Yêu thương thay vì uy quyền",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 4,
+    "verseEnd": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô cảm tạ Đức Chúa Trời khi nghe về điều gì nơi Phi-lê-môn?",
+    "correctAnswer": [3],
+    "explanation": "Phi-lê-môn 1:4-5 — 'Tôi cảm tạ Đức Chúa Trời tôi, hằng ghi nhớ anh trong lời cầu nguyện, vì nghe nói anh có lòng yêu thương và đức tin trong Đức Chúa Jêsus và cùng các thánh đồ.'",
+    "language": "vi",
+    "options": [
+      "Sự giàu có và địa vị của Phi-lê-môn",
+      "Kinh nghiệm đi tuyên giáo",
+      "Khả năng giảng dạy Kinh Thánh",
+      "Lòng yêu thương và đức tin của Phi-lê-môn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Yêu thương và đức tin",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Phi-lê-môn 1:7, lòng Phi-lê-môn đã làm gì cho các thánh đồ?",
+    "correctAnswer": [0],
+    "explanation": "Phi-lê-môn 1:7 — '...vì lòng của các thánh đồ được tươi tỉnh bởi anh, nên tôi được vui vẻ và yên ủi lắm.' Tình yêu của Phi-lê-môn làm mới sức anh chị em — tiền đề để Phao-lô xin ông tiếp tục bày tỏ lòng ấy với Ô-nê-sim.",
+    "language": "vi",
+    "options": [
+      "Làm cho lòng họ được tươi tỉnh",
+      "Ban tặng nhiều tài sản",
+      "Tổ chức các hội nghị lớn",
+      "Chữa lành các bệnh tật"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Tươi tỉnh lòng thánh đồ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô đề nghị thế nào nếu Ô-nê-sim có làm hại hoặc thiếu nợ Phi-lê-môn?",
+    "correctAnswer": [2],
+    "explanation": "Phi-lê-môn 1:18 — 'Nhược bằng người có làm hại anh hoặc mắc nợ anh điều chi, thì hãy cứ kể cho tôi.' Phao-lô đảm nhận khoản nợ thay — hình ảnh sống về sự cứu chuộc của Đấng Christ gánh nợ tội nhân.",
+    "language": "vi",
+    "options": [
+      "Tha thứ hoàn toàn không điều kiện",
+      "Bỏ qua và quên đi",
+      "Cứ kể trên tài khoản của Phao-lô",
+      "Trừ dần qua công việc của Ô-nê-sim"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Gánh nợ thay",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô nhắc Phi-lê-môn món nợ tinh thần nào của chính ông?",
+    "correctAnswer": [0],
+    "explanation": "Phi-lê-môn 1:19 — 'Tôi, Phao-lô, chính tay tôi viết điều nầy: sẽ trả cho anh, — còn anh mắc nợ tôi về chính mình anh thì không cần nói đến.' Phi-lê-môn đã được cứu qua chức vụ của Phao-lô — nợ ân điển lớn hơn mọi món nợ vật chất.",
+    "language": "vi",
+    "options": [
+      "Chính mình Phi-lê-môn anh cũng mắc nợ Phao-lô",
+      "Một số tiền lớn đã mượn",
+      "Lời hứa sẽ đi truyền giáo",
+      "Lòng trung thành với hội thánh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Nợ ân điển",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô gợi ý lý do Ô-nê-sim tạm lìa khỏi Phi-lê-môn một thời gian là để làm gì?",
+    "correctAnswer": [3],
+    "explanation": "Phi-lê-môn 1:15 — 'Có lẽ người đã tạm xa cách anh, cốt để anh nhận lấy người mãi mãi.' Sự quan phòng của Chúa biến cuộc chạy trốn thành cơ hội sum họp vĩnh cửu trong Christ.",
+    "language": "vi",
+    "options": [
+      "Để học nghề ở Rô-ma",
+      "Để tránh một cuộc bắt bớ",
+      "Để phục vụ Phao-lô tạm thời",
+      "Để Phi-lê-môn nhận lại người mãi mãi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Quan phòng của Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô không muốn Phi-lê-môn làm điều tốt theo cách nào?",
+    "correctAnswer": [1],
+    "explanation": "Phi-lê-môn 1:14 — '...hầu cho điều lành của anh làm ra, không phải như bị ép buộc, bèn là bởi ý muốn anh.' Phao-lô trân trọng sự tự nguyện — tình yêu thật không cưỡng ép.",
+    "language": "vi",
+    "options": [
+      "Làm âm thầm một mình",
+      "Bị ép buộc",
+      "Công khai trước hội thánh",
+      "Qua thư từ gián tiếp"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Tự nguyện, không ép buộc",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Gần cuối thư, Phao-lô xin Phi-lê-môn chuẩn bị điều gì?",
+    "correctAnswer": [2],
+    "explanation": "Phi-lê-môn 1:22 — 'Nhân thể hãy liệu sắm nhà trọ cho tôi, vì tôi mong rằng nhờ anh em cầu nguyện, sẽ được trở về cùng anh em.' Phao-lô hy vọng được thả ra và tin lời cầu nguyện của họ là phương tiện Chúa dùng.",
+    "language": "vi",
+    "options": [
+      "Một tài khoản quỹ cứu trợ",
+      "Bài giảng để ông thuyết giáo",
+      "Nhà trọ cho Phao-lô khi được thả",
+      "Một đội thuyền để đi truyền giáo"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Hy vọng được thả",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 23,
+    "verseEnd": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "content": "Trong Phi-lê-môn 1:23-24, ai cùng gửi lời chào Phi-lê-môn với Phao-lô? (chọn tất cả đúng)",
+    "correctAnswer": [0, 2, 3],
+    "explanation": "Phi-lê-môn 1:23-24 — 'Ê-pháp-ra, là bạn đồng tù trong Đức Chúa Jêsus Christ, có lời thăm anh, Mác, A-ri-tạc, Đê-ma và Lu-ca, cùng là bạn cùng công việc với tôi cũng vậy.' A-bô-lô không có mặt trong danh sách này.",
+    "language": "vi",
+    "options": [
+      "Ê-pháp-ra",
+      "A-bô-lô",
+      "Mác",
+      "Lu-ca"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Bạn đồng công",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "content": "Ngoài Phi-lê-môn, thư còn được gửi đến ai khác trong Phi-lê-môn 1:1-2? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Phi-lê-môn 1:1-2 — '...gởi cho Phi-lê-môn... cho Áp-bi, người chị em, cho A-chíp, bạn cùng đánh trận, và cho Hội Thánh nhóm lại trong nhà anh.' Ti-mô-thê là đồng tác giả, không phải người nhận.",
+    "language": "vi",
+    "options": [
+      "Áp-bi, người chị em",
+      "A-chíp, bạn cùng đánh trận",
+      "Hội Thánh nhóm lại trong nhà Phi-lê-môn",
+      "Ti-mô-thê"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Người nhận thư",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Tại sao Phao-lô không dùng quyền ra lệnh dù có đủ dạn dĩ trong Đấng Christ?",
+    "correctAnswer": [3],
+    "explanation": "Phi-lê-môn 1:8-9 — 'Vậy nên, dầu trong Đấng Christ, tôi có quyền truyền dạy anh việc nên làm, song vì lòng yêu thương của anh, nên tôi nài xin thì hơn. Tôi, Phao-lô, đã già rồi, hiện nay lại vì Đức Chúa Jêsus Christ chịu tù nữa...' Ông dùng nền tảng tình yêu và thân phận già yếu, bị xiềng — không dùng quyền uy.",
+    "language": "vi",
+    "options": [
+      "Vì sợ Phi-lê-môn không vâng lời",
+      "Vì ở xa không thể trực tiếp giám sát",
+      "Vì luật Rô-ma cấm can thiệp chuyện nô lệ",
+      "Vì lòng yêu thương, và ông đã già cùng đang bị xiềng vì Christ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Thuyết phục bằng yêu thương",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô ước điều gì nếu không phải vì tôn trọng ý Phi-lê-môn?",
+    "correctAnswer": [0],
+    "explanation": "Phi-lê-môn 1:13 — 'Tôi vốn muốn cầm người ở lại cùng ta, đặng thế cho anh mà giúp việc tôi trong cơn vì Tin Lành chịu xiềng xích.' Ô-nê-sim đã trở thành có ích đến mức Phao-lô muốn giữ lại, nhưng không làm mà không có sự ưng thuận của chủ hợp pháp.",
+    "language": "vi",
+    "options": [
+      "Giữ Ô-nê-sim lại để phục vụ ông trong vòng xiềng xích vì Tin Lành",
+      "Gửi Ô-nê-sim đi truyền giáo ngay lập tức",
+      "Mua Ô-nê-sim làm đầy tớ riêng",
+      "Đưa Ô-nê-sim về Giê-ru-sa-lem cho các sứ đồ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Tôn trọng ý người khác",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 19,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Câu nào trong thư cho thấy Phao-lô tự tay viết một phần nội dung thay vì nhờ người chép?",
+    "correctAnswer": [1],
+    "explanation": "Phi-lê-môn 1:19 — 'Tôi, Phao-lô, chính tay tôi viết điều nầy: sẽ trả cho anh.' Chi tiết này tăng trọng lượng pháp lý của lời cam kết trả nợ — Phao-lô ký tên trách nhiệm.",
+    "language": "vi",
+    "options": [
+      "Phi-lê-môn 1:1",
+      "Phi-lê-môn 1:19",
+      "Phi-lê-môn 1:11",
+      "Phi-lê-môn 1:25"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Chính tay Phao-lô viết",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "verseStart": 20,
+    "verseEnd": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Phao-lô bày tỏ sự tin tưởng gì về Phi-lê-môn trong câu 20-21? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 3],
+    "explanation": "Phi-lê-môn 1:20-21 — '...hãy làm cho tôi được vui lòng trong Đấng Christ. Tôi viết cho anh, đã tin chắc anh hay vâng lời, biết anh sẽ làm quá sự tôi nói đây.' Phao-lô tin Phi-lê-môn sẽ vâng lời, làm tươi tỉnh lòng ông trong Christ, và thậm chí làm hơn điều ông yêu cầu — nhưng không nói gì về tiền chuộc.",
+    "language": "vi",
+    "options": [
+      "Phi-lê-môn sẽ vâng lời",
+      "Phi-lê-môn sẽ làm tươi tỉnh lòng Phao-lô trong Đấng Christ",
+      "Phi-lê-môn sẽ gửi tiền chuộc Ô-nê-sim",
+      "Phi-lê-môn sẽ làm hơn điều Phao-lô yêu cầu"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-lê-môn",
+      "Thư tín",
+      "Tin cậy nơi anh em",
+      "Nâng cao"
+    ]
+  }
+]
