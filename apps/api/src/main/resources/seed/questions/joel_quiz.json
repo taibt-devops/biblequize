@@ -1,0 +1,483 @@
+[
+  {
+    "book": "Joel",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Giô-ên là con trai của ai?",
+    "correctAnswer": [0],
+    "explanation": "Giô-ên 1:1 — 'Lời của Đức Giê-hô-va phán cho Giô-ên, con trai Phê-thu-ên.' Đây là chi tiết duy nhất về thân thế tác giả trong cả sách.",
+    "language": "vi",
+    "options": [
+      "Phê-thu-ên",
+      "Bê-thu-ên",
+      "A-mốt",
+      "Ma-nát-se"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Tác giả sách Giô-ên",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 1,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Giô-ên 1:4, tai họa lớn giáng trên đất là gì?",
+    "correctAnswer": [1],
+    "explanation": "Giô-ên 1:4 — 'Cái gì sâu keo còn để lại, cào cào ăn; cái gì cào cào còn để lại, sâu lột vỏ ăn; cái gì sâu lột vỏ còn để lại, châu chấu ăn.' Đàn châu chấu nối tiếp nhau ăn sạch hoa màu — hình ảnh sự đoán phạt tàn khốc.",
+    "language": "vi",
+    "options": [
+      "Đại hồng thủy",
+      "Các loài châu chấu nối tiếp nhau ăn sạch",
+      "Hạn hán kéo dài nhiều năm",
+      "Quân thù xâm lược"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Tai họa châu chấu",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong Giô-ên 1:14, tiên tri kêu gọi dân sự làm gì?",
+    "correctAnswer": [2],
+    "explanation": "Giô-ên 1:14 — 'Khá định sự kiêng ăn, gọi một hội đồng trọng thể, nhóm các trưởng lão và hết thảy dân cư trong đất lại nơi nhà Giê-hô-va Đức Chúa Trời các ngươi; và hãy kêu cầu Đức Giê-hô-va!'",
+    "language": "vi",
+    "options": [
+      "Tập hợp quân đội chống lại châu chấu",
+      "Dâng lễ vật phong phú để cầu mưa",
+      "Định sự kiêng ăn và nhóm hội đồng trọng thể kêu cầu Chúa",
+      "Di cư sang xứ khác để tránh đói"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Kiêng ăn và hội đồng",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Giô-ên 1:15 báo trước điều gì đã gần kề?",
+    "correctAnswer": [3],
+    "explanation": "Giô-ên 1:15 — 'Ôi ngày ấy! vì ngày Đức Giê-hô-va đã gần! Nó đến như một tai vạ từ Đấng Toàn năng!'",
+    "language": "vi",
+    "options": [
+      "Mùa gặt bội thu",
+      "Sự xuất hiện của Đấng Mê-si-a",
+      "Một cuộc chiến tranh lớn",
+      "Ngày của Đức Giê-hô-va"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Ngày của Đức Giê-hô-va",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Giô-ên 2:1, việc thổi kèn ở Si-ôn báo tin gì?",
+    "correctAnswer": [0],
+    "explanation": "Giô-ên 2:1 — 'Hãy thổi kèn trong Si-ôn; hãy thổi vang ra trên núi thánh ta! Hết thảy dân cư trong đất khá đều run rẩy! Vì ngày của Đức Giê-hô-va đến, ngày ấy đã gần.'",
+    "language": "vi",
+    "options": [
+      "Ngày của Đức Giê-hô-va đến gần",
+      "Mùa lễ Vượt Qua sắp khởi",
+      "Quân đội Đa-vít ra trận",
+      "Đền thờ được khởi công"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Thổi kèn tại Si-ôn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong Giô-ên 2:12, Đức Giê-hô-va phán dân Ngài hãy trở lại với Ngài bằng cách nào?",
+    "correctAnswer": [1],
+    "explanation": "Giô-ên 2:12 — 'Bây giờ cũng hãy hết lòng trở về cùng ta, kiêng ăn, khóc lóc và buồn rầu.' Sự trở về thật phải từ tấm lòng, thể hiện qua kiêng ăn, khóc lóc, buồn rầu.",
+    "language": "vi",
+    "options": [
+      "Dâng nhiều của lễ thiêu",
+      "Hết lòng trở về, kiêng ăn, khóc lóc và buồn rầu",
+      "Tái xây dựng đền thờ",
+      "Tập hợp để chiến đấu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Hết lòng trở về",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Giô-ên 2:13, dân sự nên xé rách điều gì để bày tỏ sự ăn năn thật?",
+    "correctAnswer": [2],
+    "explanation": "Giô-ên 2:13 — 'Hãy xé lòng các ngươi, và đừng xé áo các ngươi. Khá trở lại cùng Giê-hô-va Đức Chúa Trời các ngươi...' Xé áo là biểu hiện ngoài; Chúa muốn sự tan vỡ thật của tấm lòng.",
+    "language": "vi",
+    "options": [
+      "Xé áo ngoài cho mọi người thấy",
+      "Xé cả áo lẫn tóc",
+      "Xé lòng, chứ đừng xé áo",
+      "Đốt hết của báu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Xé lòng không xé áo",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Giô-ên 2:13 mô tả Đức Giê-hô-va bằng những đức tính nào?",
+    "correctAnswer": [3],
+    "explanation": "Giô-ên 2:13 — '...vì Ngài là nhân từ và hay thương xót, chậm giận và giàu ơn, đổi ý về sự tai vạ.' Câu kinh điển về tính cách của Đức Chúa Trời, lặp lại từ Xuất 34:6.",
+    "language": "vi",
+    "options": [
+      "Cứng rắn và không đổi",
+      "Chậm lời nhưng mau trừng phạt",
+      "Đầy vinh quang và quyền năng tuyệt đối",
+      "Nhân từ, hay thương xót, chậm giận và giàu ơn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Đức tính của Chúa",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong Giô-ên 2:25, Đức Chúa Trời hứa sẽ phục hồi điều gì?",
+    "correctAnswer": [0],
+    "explanation": "Giô-ên 2:25 — 'Ta sẽ đền bù cho các ngươi những năm đã bị cắn phá bởi cào cào, bởi sâu lột vỏ, bởi sâu keo và châu chấu, là đạo binh lớn mà ta đã sai đến giữa các ngươi.' Lời hứa mang tính đảo ngược — chính đàn châu chấu đoán phạt nay được Chúa đền lại.",
+    "language": "vi",
+    "options": [
+      "Những năm đã bị cào cào cắn phá",
+      "Các vua trị vì đã chết",
+      "Các ngôi nhà đã bị san bằng",
+      "Các chiến sĩ đã ngã xuống"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Phục hồi các năm mất",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 28,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Giô-ên 2:28, Đức Chúa Trời hứa đổ Thần Ngài trên ai?",
+    "correctAnswer": [1],
+    "explanation": "Giô-ên 2:28 — 'Sau đó, ta sẽ đổ Thần ta trên cả loài xác thịt; con trai và con gái các ngươi sẽ nói tiên tri...' Sứ đồ Phi-e-rơ trích câu này tại Lễ Ngũ Tuần (Công Vụ 2:17).",
+    "language": "vi",
+    "options": [
+      "Chỉ các thầy tế lễ Lê-vi",
+      "Cả loài xác thịt",
+      "Chỉ người Y-sơ-ra-ên thuộc hoàng tộc",
+      "Chỉ các tiên tri được xức dầu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Đổ Thần trên mọi xác thịt",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Giô-ên 2:28, khi Thần Chúa đổ xuống, thanh niên sẽ làm gì và ông già sẽ làm gì?",
+    "correctAnswer": [2],
+    "explanation": "Giô-ên 2:28 — '...các người già cả sẽ thấy chiêm bao, những trai trẻ các ngươi sẽ xem sự hiện thấy.' Cả già lẫn trẻ đều được Thánh Linh bày tỏ.",
+    "language": "vi",
+    "options": [
+      "Thanh niên thấy chiêm bao, ông già xem hiện thấy",
+      "Thanh niên lao động, ông già cầu nguyện",
+      "Thanh niên xem sự hiện thấy, ông già thấy chiêm bao",
+      "Thanh niên viết sách, ông già giảng dạy"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Chiêm bao và hiện thấy",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 32,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Giô-ên 2:32, ai sẽ được cứu?",
+    "correctAnswer": [3],
+    "explanation": "Giô-ên 2:32 — 'Bấy giờ ai cầu khẩn danh Đức Giê-hô-va thì sẽ được cứu...' Câu này được Phao-lô trích trong Rô-ma 10:13 — cầu khẩn danh Chúa là con đường cứu rỗi.",
+    "language": "vi",
+    "options": [
+      "Ai dâng lễ trong đền thờ",
+      "Ai thuộc dòng dõi Lê-vi",
+      "Ai tuân giữ luật pháp trọn vẹn",
+      "Ai cầu khẩn danh Đức Giê-hô-va"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Cầu khẩn danh Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Giô-ên 3:10 truyền cho các dân kêu gọi chiến tranh làm gì với lưỡi cày và lưỡi hái?",
+    "correctAnswer": [0],
+    "explanation": "Giô-ên 3:10 — 'Hãy lấy lưỡi cày rèn gươm, lấy liềm rèn giáo...' Đây là sự đảo ngược của Ê-sai 2:4 — trong ngày phán xét các dân, khí cụ hòa bình thành vũ khí.",
+    "language": "vi",
+    "options": [
+      "Rèn thành gươm và giáo",
+      "Dâng lên bàn thờ Chúa",
+      "Chôn xuống đất làm kho báu",
+      "Đúc lại thành chuông đền thờ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Lưỡi cày thành gươm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Trong Giô-ên 3:14, 'đoàn đông, đoàn đông' nhóm lại tại trũng nào?",
+    "correctAnswer": [1],
+    "explanation": "Giô-ên 3:14 — 'Đoàn đông, đoàn đông tại trong trũng đoán định! Vì ngày Đức Giê-hô-va đã gần trong trũng đoán định.' Trũng đoán định là hình ảnh về nơi Chúa phán xét các dân.",
+    "language": "vi",
+    "options": [
+      "Trũng Giô-sa-phát của bình an",
+      "Trũng đoán định",
+      "Trũng Hi-nôm của lửa",
+      "Trũng A-cô của sự nhục"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Trũng đoán định",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Giô-ên 3:17, khi Đức Giê-hô-va ngự tại Si-ôn, Giê-ru-sa-lem sẽ ra làm sao?",
+    "correctAnswer": [2],
+    "explanation": "Giô-ên 3:17 — '...bấy giờ các ngươi sẽ biết ta là Giê-hô-va Đức Chúa Trời các ngươi, ở tại Si-ôn, là núi thánh ta. Giê-ru-sa-lem sẽ là thánh, và dân ngoại chẳng còn đi qua trong nó nữa.'",
+    "language": "vi",
+    "options": [
+      "Sẽ được mở rộng gấp đôi",
+      "Sẽ trở thành đô thị thương mại",
+      "Sẽ là thánh, không còn dân ngoại đi qua",
+      "Sẽ được cai trị bởi các dân ngoại"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Giê-ru-sa-lem thánh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Giô-ên 3:18, các núi sẽ nhỏ ra điều gì trong ngày phục hồi?",
+    "correctAnswer": [3],
+    "explanation": "Giô-ên 3:18 — 'Trong ngày đó, các núi nhỏ rượu ngọt ra, sữa chảy ra từ các đồi, hết thảy các khe Giu-đa sẽ có nước chảy...' Hình ảnh về sự sung mãn trong thời phục hồi.",
+    "language": "vi",
+    "options": [
+      "Dầu olive",
+      "Nước mặn",
+      "Mật ong",
+      "Rượu ngọt"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Núi nhỏ rượu ngọt",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Giô-ên 2:23, Đức Chúa Trời ban hai trận mưa nào?",
+    "correctAnswer": [0],
+    "explanation": "Giô-ên 2:23 — 'Ngài đã ban mưa phải thời cho các ngươi, mưa đầu mùa và mưa cuối mùa cho các ngươi như khi trước.' Mưa đầu mùa (tháng 10-11) gieo hạt, mưa cuối mùa (tháng 3-4) làm lúa chín.",
+    "language": "vi",
+    "options": [
+      "Mưa đầu mùa và mưa cuối mùa",
+      "Mưa xuân và mưa thu",
+      "Mưa nhẹ và mưa bão",
+      "Mưa ngày và mưa đêm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Mưa đầu mùa và cuối mùa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Giô-ên 2:13, những đức tính nào mô tả Đức Giê-hô-va? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Giô-ên 2:13 — '...vì Ngài là nhân từ và hay thương xót, chậm giận và giàu ơn, đổi ý về sự tai vạ.' 'Cứng lòng' không thuộc bản chất Chúa được mô tả trong câu này.",
+    "language": "vi",
+    "options": [
+      "Nhân từ và hay thương xót",
+      "Chậm giận",
+      "Giàu ơn, đổi ý về sự tai vạ",
+      "Cứng lòng không lay chuyển"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Bản chất Đức Giê-hô-va",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 28,
+    "verseEnd": 29,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Giô-ên 2:28-29, Thần Đức Chúa Trời sẽ được đổ trên những nhóm người nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Giô-ên 2:28-29 — '...con trai và con gái các ngươi sẽ nói tiên tri; các người già cả sẽ thấy chiêm bao, những trai trẻ các ngươi sẽ xem sự hiện thấy. Trong những ngày đó, dầu những tôi trai tớ gái ta cũng sẽ được đổ Thần ta.' Thiên sứ không phải đối tượng nhận Thánh Linh.",
+    "language": "vi",
+    "options": [
+      "Con trai và con gái",
+      "Người già và thanh niên",
+      "Tôi trai tớ gái",
+      "Các thiên sứ thánh"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Ai nhận Thánh Linh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Giô-ên 3:18, trong ngày phục hồi, điều gì sẽ chảy ra từ xứ? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Giô-ên 3:18 — 'Trong ngày đó, các núi nhỏ rượu ngọt ra, sữa chảy ra từ các đồi, hết thảy các khe Giu-đa sẽ có nước chảy...' Ba hình ảnh của sự sung mãn; 'mưa lửa' không có trong câu này.",
+    "language": "vi",
+    "options": [
+      "Rượu ngọt từ các núi",
+      "Sữa từ các đồi",
+      "Nước từ các khe Giu-đa",
+      "Mưa lửa từ các từng trời"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-ên",
+      "Tiên tri",
+      "Sung mãn phục hồi",
+      "Nâng cao"
+    ]
+  }
+]

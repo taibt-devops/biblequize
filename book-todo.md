@@ -95,7 +95,7 @@ Mỗi sách cần CẢ VI + EN. Bắt đầu từ size nhỏ nhất để dễ s
 - [x] jude (1 chương, 25 câu) — 20 VI + 20 EN
 
 **Tier 2 — 20-30 câu (sách ngắn)**
-- [ ] joel (3 chương)
+- [x] joel (3 chương) — 20 VI + 20 EN
 - [ ] nahum (3 chương)
 - [ ] zephaniah (3 chương)
 - [ ] haggai (2 chương)

@@ -1,0 +1,483 @@
+[
+  {
+    "book": "Joel",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whose son was Joel?",
+    "correctAnswer": [0],
+    "explanation": "Joel 1:1 — 'The word of the LORD that came to Joel, the son of Pethuel.' This is the only biographical detail about the author in the entire book.",
+    "language": "en",
+    "options": [
+      "Pethuel",
+      "Bethuel",
+      "Amoz",
+      "Manasseh"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Author of Joel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 1,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Joel 1:4, what great disaster fell on the land?",
+    "correctAnswer": [1],
+    "explanation": "Joel 1:4 — 'What the cutting locust left, the swarming locust has eaten. What the swarming locust left, the hopping locust has eaten, and what the hopping locust left, the destroying locust has eaten.' Successive swarms of locusts devour the crops — a picture of devastating judgment.",
+    "language": "en",
+    "options": [
+      "A great flood",
+      "Successive swarms of locusts that devoured everything",
+      "A multi-year drought",
+      "An invading army"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Locust plague",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Joel 1:14, what does the prophet call the people to do?",
+    "correctAnswer": [2],
+    "explanation": "Joel 1:14 — 'Consecrate a fast; call a solemn assembly. Gather the elders and all the inhabitants of the land to the house of the LORD your God, and cry out to the LORD.'",
+    "language": "en",
+    "options": [
+      "Raise an army against the locusts",
+      "Offer abundant sacrifices to bring rain",
+      "Consecrate a fast, call a solemn assembly, and cry to the LORD",
+      "Migrate to another land to escape famine"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Fast and solemn assembly",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Joel 1:15 declare is near?",
+    "correctAnswer": [3],
+    "explanation": "Joel 1:15 — 'Alas for the day! For the day of the LORD is near, and as destruction from the Almighty it comes.'",
+    "language": "en",
+    "options": [
+      "A bountiful harvest",
+      "The coming of the Messiah",
+      "A great war",
+      "The Day of the LORD"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Day of the LORD",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Joel 2:1, what does blowing the trumpet in Zion announce?",
+    "correctAnswer": [0],
+    "explanation": "Joel 2:1 — 'Blow a trumpet in Zion; sound an alarm on my holy mountain! Let all the inhabitants of the land tremble, for the day of the LORD is coming; it is near.'",
+    "language": "en",
+    "options": [
+      "The Day of the LORD is near",
+      "The Passover is about to begin",
+      "David's army is marching out",
+      "The temple is being founded"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Trumpet in Zion",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Joel 2:12, how does the LORD call His people to return to Him?",
+    "correctAnswer": [1],
+    "explanation": "Joel 2:12 — 'Yet even now, declares the LORD, return to me with all your heart, with fasting, with weeping, and with mourning.' True return must come from the heart, expressed in fasting, weeping, and mourning.",
+    "language": "en",
+    "options": [
+      "By offering many burnt sacrifices",
+      "With all the heart, with fasting, weeping, and mourning",
+      "By rebuilding the temple",
+      "By gathering to fight"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Return with all the heart",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Joel 2:13, what should the people rend to show true repentance?",
+    "correctAnswer": [2],
+    "explanation": "Joel 2:13 — 'Rend your hearts and not your garments. Return to the LORD your God...' Rending garments is an outward sign; God desires true brokenness of heart.",
+    "language": "en",
+    "options": [
+      "Outer garment for all to see",
+      "Both garments and hair",
+      "Hearts, not garments",
+      "Burn all their treasures"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Rend the heart, not garments",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Joel 2:13 describe the LORD's character?",
+    "correctAnswer": [3],
+    "explanation": "Joel 2:13 — '...for he is gracious and merciful, slow to anger, and abounding in steadfast love; and he relents over disaster.' A classic description of God's character, echoing Exodus 34:6.",
+    "language": "en",
+    "options": [
+      "Rigid and unyielding",
+      "Slow to speak but quick to punish",
+      "Full of glory and absolute power",
+      "Gracious and merciful, slow to anger, abounding in steadfast love"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Character of God",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Joel 2:25, what does God promise to restore?",
+    "correctAnswer": [0],
+    "explanation": "Joel 2:25 — 'I will restore to you the years that the swarming locust has eaten, the hopper, the destroyer, and the cutter, my great army, which I sent among you.' A promise of reversal — the very locusts that judged are repaid by God.",
+    "language": "en",
+    "options": [
+      "The years the locust has eaten",
+      "The kings who have died",
+      "Houses that have been leveled",
+      "Warriors who have fallen"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Restoring the lost years",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 28,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Joel 2:28, upon whom will God pour out His Spirit?",
+    "correctAnswer": [1],
+    "explanation": "Joel 2:28 — 'And it shall come to pass afterward, that I will pour out my Spirit on all flesh; your sons and your daughters shall prophesy...' Peter quotes this at Pentecost (Acts 2:17).",
+    "language": "en",
+    "options": [
+      "Only the Levitical priests",
+      "All flesh",
+      "Only Israelites of royal lineage",
+      "Only the anointed prophets"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Spirit poured on all flesh",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Joel 2:28, when the Spirit is poured out, what will young men do and old men do?",
+    "correctAnswer": [2],
+    "explanation": "Joel 2:28 — '...your old men shall dream dreams, and your young men shall see visions.' Both old and young receive revelation by the Spirit.",
+    "language": "en",
+    "options": [
+      "Young men dream dreams, old men see visions",
+      "Young men labor, old men pray",
+      "Young men see visions, old men dream dreams",
+      "Young men write books, old men teach"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Dreams and visions",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 32,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Joel 2:32, who shall be saved?",
+    "correctAnswer": [3],
+    "explanation": "Joel 2:32 — 'And it shall come to pass that everyone who calls on the name of the LORD shall be saved...' Paul quotes this in Romans 10:13 — calling on the name of the LORD is the path of salvation.",
+    "language": "en",
+    "options": [
+      "Whoever offers at the temple",
+      "Whoever is of Levitical descent",
+      "Whoever keeps the whole law",
+      "Everyone who calls on the name of the LORD"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Calling on the Name",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Joel 3:10 command the nations to do with their plowshares and pruning hooks?",
+    "correctAnswer": [0],
+    "explanation": "Joel 3:10 — 'Beat your plowshares into swords, and your pruning hooks into spears...' This reverses Isaiah 2:4 — in the day of judgment on the nations, peaceful tools are turned into weapons.",
+    "language": "en",
+    "options": [
+      "Beat them into swords and spears",
+      "Offer them upon the altar of the LORD",
+      "Bury them in the earth as treasure",
+      "Recast them as temple bells"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Plowshares into swords",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In Joel 3:14, 'multitudes, multitudes' are gathered in what valley?",
+    "correctAnswer": [1],
+    "explanation": "Joel 3:14 — 'Multitudes, multitudes, in the valley of decision! For the day of the LORD is near in the valley of decision.' The Valley of Decision is an image of the place where the LORD judges the nations.",
+    "language": "en",
+    "options": [
+      "The Valley of Jehoshaphat of peace",
+      "The Valley of Decision",
+      "The Valley of Hinnom of fire",
+      "The Valley of Achor of shame"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Valley of Decision",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Joel 3:17, when the LORD dwells in Zion, what will Jerusalem be?",
+    "correctAnswer": [2],
+    "explanation": "Joel 3:17 — '...So you shall know that I am the LORD your God, who dwells in Zion, my holy mountain. And Jerusalem shall be holy, and strangers shall never again pass through it.'",
+    "language": "en",
+    "options": [
+      "Expanded to double its size",
+      "Become a trading metropolis",
+      "Holy, and strangers shall never again pass through",
+      "Ruled by the nations"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Jerusalem holy",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Joel 3:18, what will drip from the mountains on the day of restoration?",
+    "correctAnswer": [3],
+    "explanation": "Joel 3:18 — 'And in that day the mountains shall drip sweet wine, and the hills shall flow with milk, and all the streambeds of Judah shall flow with water...' An image of lavish abundance in the time of restoration.",
+    "language": "en",
+    "options": [
+      "Olive oil",
+      "Salt water",
+      "Honey",
+      "Sweet wine"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Mountains drip sweet wine",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Joel 2:23, which two rains does God give?",
+    "correctAnswer": [0],
+    "explanation": "Joel 2:23 — '...he has given the early rain for your vindication; he has poured down for you abundant rain, the early and the latter rain, as before.' The early rain (Oct–Nov) enables sowing; the latter rain (Mar–Apr) ripens the harvest.",
+    "language": "en",
+    "options": [
+      "The early rain and the latter rain",
+      "Spring rain and autumn rain",
+      "Light rain and heavy storm",
+      "Day rain and night rain"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Early and latter rain",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Joel 2:13, which attributes describe the LORD? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Joel 2:13 — '...for he is gracious and merciful, slow to anger, and abounding in steadfast love; and he relents over disaster.' 'Hard-hearted and unyielding' is not part of God's nature as described.",
+    "language": "en",
+    "options": [
+      "Gracious and merciful",
+      "Slow to anger",
+      "Abounding in steadfast love, relenting over disaster",
+      "Hard-hearted and unyielding"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Nature of the LORD",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "verseStart": 28,
+    "verseEnd": 29,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Joel 2:28-29, upon which groups will God pour out His Spirit? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Joel 2:28-29 — 'Your sons and your daughters shall prophesy, your old men shall dream dreams, and your young men shall see visions. Even on the male and female servants in those days I will pour out my Spirit.' Angels are not the recipients of the Spirit.",
+    "language": "en",
+    "options": [
+      "Sons and daughters",
+      "Old men and young men",
+      "Male and female servants",
+      "The holy angels"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Recipients of the Spirit",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Joel 3:18, on the day of restoration, what will flow from the land? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Joel 3:18 — 'The mountains shall drip sweet wine, and the hills shall flow with milk, and all the streambeds of Judah shall flow with water...' Three images of abundance; 'rain of fire' does not appear in this verse.",
+    "language": "en",
+    "options": [
+      "Sweet wine from the mountains",
+      "Milk from the hills",
+      "Water from all the streambeds of Judah",
+      "Rain of fire from the heavens"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joel",
+      "Prophets",
+      "Abundance of restoration",
+      "Advanced"
+    ]
+  }
+]
