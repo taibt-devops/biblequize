@@ -1,0 +1,829 @@
+[
+  {
+    "book": "2 Corinthians",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Of what is God called the God in 2 Corinthians 1?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Corinthians 1:3-4 — He comforts us in all our affliction so that we may comfort others.",
+    "language": "en",
+    "verseEnd": 4,
+    "options": [
+      "All judgment",
+      "All comfort",
+      "All giving",
+      "All miracles"
+    ],
+    "tags": [
+      "New Testament",
+      "Comfort",
+      "Affliction",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where the Spirit of the Lord is, what is there?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Corinthians 3:17 — Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom.",
+    "language": "en",
+    "verseEnd": 18,
+    "options": [
+      "Wisdom",
+      "Freedom",
+      "Wealth",
+      "Judgment"
+    ],
+    "tags": [
+      "New Testament",
+      "Holy Spirit",
+      "Freedom",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "We carry this treasure in what kind of vessels, so the power belongs to God?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Corinthians 4:7 — Jars of clay, so that the surpassing power belongs to God and not to us.",
+    "language": "en",
+    "verseEnd": 10,
+    "options": [
+      "Golden cups",
+      "Stone vessels",
+      "Wooden chests",
+      "Jars of clay"
+    ],
+    "tags": [
+      "New Testament",
+      "Weakness",
+      "Power",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 5,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does anyone in Christ become?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Corinthians 5:17 — If anyone is in Christ, he is a new creation.",
+    "language": "en",
+    "options": [
+      "A wise person",
+      "A priest",
+      "A new creation",
+      "A heavenly citizen"
+    ],
+    "tags": [
+      "New Testament",
+      "Newness",
+      "Salvation",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Why are the Macedonian churches commended?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Corinthians 8:2 — In severe testing, abundant joy and deep poverty overflowed in generosity.",
+    "language": "en",
+    "verseEnd": 5,
+    "options": [
+      "Many spiritual gifts",
+      "Wealthy giving",
+      "Skilled administration",
+      "Generous in poverty"
+    ],
+    "tags": [
+      "New Testament",
+      "Giving",
+      "Generosity",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 9,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "To what does the principle 'sow little/reap little' apply in 2 Corinthians 9?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Corinthians 9:6 — Whoever sows sparingly will reap sparingly; whoever sows bountifully will reap bountifully.",
+    "language": "en",
+    "verseEnd": 8,
+    "options": [
+      "Prayer",
+      "Fasting",
+      "Preaching",
+      "Giving"
+    ],
+    "tags": [
+      "New Testament",
+      "Giving",
+      "Principle",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What experience does Paul recount from Asia?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Corinthians 1:8-9 — We were so utterly burdened beyond our strength, that we might rely not on ourselves but on God who raises the dead.",
+    "language": "en",
+    "verseEnd": 11,
+    "options": [
+      "A glorious victory",
+      "Beyond their strength, leading them to rely on God",
+      "Praise from the people",
+      "Financial success"
+    ],
+    "tags": [
+      "New Testament",
+      "Affliction",
+      "Reliance",
+      "2 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What fragrance are we to God in Christ?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Corinthians 2:15 — We are the aroma of Christ to God among those being saved and those who are perishing.",
+    "language": "en",
+    "verseEnd": 17,
+    "options": [
+      "The fragrance of sacrifice",
+      "The fragrance of the law",
+      "The fragrance of the world",
+      "The aroma of Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "Witness",
+      "Fragrance",
+      "2 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 4,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Why do we not lose heart in light momentary affliction?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Corinthians 4:17-18 — This light momentary affliction is preparing for us an eternal weight of glory beyond all comparison.",
+    "language": "en",
+    "verseEnd": 18,
+    "options": [
+      "It will end soon",
+      "Eternal glory is incomparably great",
+      "Praise will come",
+      "Reward is immediate"
+    ],
+    "tags": [
+      "New Testament",
+      "Hope",
+      "Glory",
+      "2 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 5,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What ministry have believers received in 2 Corinthians 5?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Corinthians 5:18-20 — God has given us the ministry of reconciliation.",
+    "language": "en",
+    "verseEnd": 20,
+    "options": [
+      "Ministry of teaching",
+      "Ministry of ruling",
+      "Ministry of reconciliation",
+      "Ministry of miracles"
+    ],
+    "tags": [
+      "New Testament",
+      "Reconciliation",
+      "Mission",
+      "2 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 6,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does the warning 'Do not be unequally yoked with unbelievers' protect?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Corinthians 6:14-18 — What partnership has righteousness with lawlessness, light with darkness?",
+    "language": "en",
+    "verseEnd": 18,
+    "options": [
+      "Business interest",
+      "Holiness and fellowship",
+      "Personal freedom",
+      "Financial security"
+    ],
+    "tags": [
+      "New Testament",
+      "Holiness",
+      "Relationships",
+      "2 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 7,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does godly grief produce?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Corinthians 7:10 — Godly grief produces a repentance that leads to salvation without regret.",
+    "language": "en",
+    "verseEnd": 11,
+    "options": [
+      "Bitterness",
+      "Repentance leading to salvation",
+      "Grumbling",
+      "Temporary regret"
+    ],
+    "tags": [
+      "New Testament",
+      "Repentance",
+      "Sanctification",
+      "2 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 8,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How is the grace of the Lord Jesus described in 2 Corinthians 8:9?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "2 Corinthians 8:9 — Though He was rich, yet for your sake He became poor, so that by His poverty you might become rich.",
+    "language": "en",
+    "options": [
+      "Though He was rich, He became poor for your sake",
+      "He was wise",
+      "He was poor and became rich",
+      "He was powerful"
+    ],
+    "tags": [
+      "New Testament",
+      "Grace",
+      "Sacrifice",
+      "2 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 10,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Our weapons are not of the flesh but have what divine power?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Corinthians 10:4-5 — To destroy strongholds and every proud thing raised up against the knowledge of God.",
+    "language": "en",
+    "verseEnd": 5,
+    "options": [
+      "To build reputation",
+      "To destroy strongholds",
+      "To gain social influence",
+      "To protect the body"
+    ],
+    "tags": [
+      "New Testament",
+      "Spiritual",
+      "Warfare",
+      "2 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 12,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the thorn in the flesh teach Paul?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Corinthians 12:9-10 — When I am weak, then I am strong.",
+    "language": "en",
+    "verseEnd": 10,
+    "options": [
+      "Rely on humans",
+      "Be stronger",
+      "My grace is sufficient; My power is made perfect in weakness",
+      "Pray less"
+    ],
+    "tags": [
+      "New Testament",
+      "Weakness",
+      "Grace",
+      "2 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Having received this ministry by mercy, what does Paul do?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Corinthians 4:1-2 — We do not lose heart; we have renounced disgraceful, underhanded ways.",
+    "language": "en",
+    "verseEnd": 6,
+    "options": [
+      "Validates with signs",
+      "Hides the gospel",
+      "Does not lose heart; refuses to act with cunning",
+      "Seeks clever speech"
+    ],
+    "tags": [
+      "New Testament",
+      "Ministry",
+      "Truth",
+      "2 Corinthians",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 5,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What is the purpose of the judgment seat of Christ?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Corinthians 5:10 — Each will receive what is due for what he has done in the body, whether good or evil.",
+    "language": "en",
+    "options": [
+      "To assign offices",
+      "To condemn to hell",
+      "To receive what was done in the body",
+      "To determine status"
+    ],
+    "tags": [
+      "New Testament",
+      "Judgment",
+      "Reward",
+      "2 Corinthians",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 11,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does Paul boast of in 2 Corinthians 11?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Corinthians 11:30 — If I must boast, I will boast of the things that show my weakness.",
+    "language": "en",
+    "verseEnd": 30,
+    "options": [
+      "His miracles",
+      "His weaknesses",
+      "His philosophies",
+      "His successes"
+    ],
+    "tags": [
+      "New Testament",
+      "Boasting",
+      "Weakness",
+      "2 Corinthians",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 13,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does the closing exhortation of 2 Corinthians call for?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "2 Corinthians 13:11 — Rejoice, aim for restoration, comfort one another, agree, live in peace.",
+    "language": "en",
+    "options": [
+      "Live in peace, of one mind, harmony",
+      "Keep the law",
+      "Avoid persecution",
+      "Live in seclusion"
+    ],
+    "tags": [
+      "New Testament",
+      "Conclusion",
+      "Peace",
+      "2 Corinthians",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 5,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does 2 Corinthians 5:17 say about anyone who is in Christ?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Corinthians 5:17 — If anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.",
+    "language": "en",
+    "options": [
+      "A saint",
+      "An angel",
+      "A better person",
+      "A new creation"
+    ],
+    "tags": [
+      "New Testament",
+      "Regeneration",
+      "Newness",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does 2 Corinthians 1:3 describe God?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "God comforts us so that we may comfort others with the comfort we have received.",
+    "language": "en",
+    "verseEnd": 4,
+    "options": [
+      "Father of mercies and God of all comfort",
+      "Judge",
+      "King",
+      "Warrior"
+    ],
+    "tags": [
+      "New Testament",
+      "Comfort",
+      "Mercy",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "2 Corinthians 3:17: 'The Lord is the Spirit; where the Spirit of the Lord is, there is ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "True freedom comes from the Holy Spirit, not from circumstances.",
+    "language": "en",
+    "options": [
+      "Joy",
+      "Peace",
+      "Freedom",
+      "Power"
+    ],
+    "tags": [
+      "New Testament",
+      "Holy Spirit",
+      "Freedom",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "2 Corinthians 4:7: We have this treasure (the gospel) in what?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "So that the surpassing power belongs to God, not to us. Weakness glorifies God.",
+    "language": "en",
+    "options": [
+      "Jars of clay (containing weakness)",
+      "Iron chests",
+      "Leather pouches",
+      "Golden vases"
+    ],
+    "tags": [
+      "New Testament",
+      "Weakness",
+      "Power",
+      "2 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 4,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "2 Corinthians 4:17: Light momentary affliction will bring what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Present difficulties cannot be compared with the glory to come.",
+    "language": "en",
+    "verseEnd": 18,
+    "options": [
+      "Wealth",
+      "Fame",
+      "Eternal glory beyond all comparison",
+      "Comfort"
+    ],
+    "tags": [
+      "New Testament",
+      "Hardship",
+      "Glory",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 5,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Paul say we are for God?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "We are God's ambassadors on earth, calling others to be reconciled to God.",
+    "language": "en",
+    "options": [
+      "Ambassadors for Christ",
+      "Spirits",
+      "Servants",
+      "Students"
+    ],
+    "tags": [
+      "New Testament",
+      "Witness",
+      "Ambassador",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 8,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "2 Corinthians 8:9: Christ was rich but became ___ for our sake",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Christ surrendered heavenly riches so we could become spiritually rich.",
+    "language": "en",
+    "options": [
+      "Weak",
+      "Common",
+      "Small",
+      "Poor"
+    ],
+    "tags": [
+      "New Testament",
+      "Grace",
+      "Sacrifice",
+      "2 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 9,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "2 Corinthians 9:7: How does God love a giver?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Not giving from compulsion or regret. God loves a cheerful giver.",
+    "language": "en",
+    "options": [
+      "Cheerfully",
+      "The most",
+      "Publicly",
+      "By compulsion"
+    ],
+    "tags": [
+      "New Testament",
+      "Giving",
+      "Cheerful",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 13,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "2 Corinthians 13:14 is the famous Trinitarian benediction. What are the three?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "The Trinitarian benediction is widely used in worship.",
+    "language": "en",
+    "options": [
+      "Faith, hope, love",
+      "Blessing, peace, joy",
+      "The grace of the Lord Jesus, the love of God, the fellowship of the Holy Spirit",
+      "Strength, wisdom, glory"
+    ],
+    "tags": [
+      "New Testament",
+      "Trinity",
+      "Benediction",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 6,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "2 Corinthians 6:14: 'Do not be unequally ___ with unbelievers'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Do not enter into close partnership with those of different faith — light and darkness do not mix.",
+    "language": "en",
+    "options": [
+      "Hatted",
+      "Shod",
+      "Yoked",
+      "Clothed"
+    ],
+    "tags": [
+      "New Testament",
+      "Separation",
+      "Relationships",
+      "2 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 12,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Paul says: 'For when I am weak, then I am ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "The Christian paradox: weakness is when God is most strong through us.",
+    "language": "en",
+    "options": [
+      "Afraid",
+      "Sad",
+      "Tired",
+      "Strong"
+    ],
+    "tags": [
+      "New Testament",
+      "Weakness",
+      "Strength",
+      "2 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  }
+]

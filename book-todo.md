@@ -58,7 +58,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | acts | Acts | Acts | 33 | 0 | 60-80 | ⚠️ + 🌐 |
 | romans | Romans | Epistle | 34 | 0 | 60-80 | ⚠️ + 🌐 |
 | 1corinthians | 1 Corinthians | Epistle | 34 | 0 | 50-60 | ⚠️ + 🌐 |
-| 2corinthians | 2 Corinthians | Epistle | 30 | 0 | 40-50 | ⚠️ + 🌐 |
+| 2corinthians | 2 Corinthians | Epistle | 30 | 30 | 40-50 | ⚠️ |
 | galatians | Galatians | Epistle | 12 | 12 | 30-40 | ⚠️ |
 | ephesians | Ephesians | Epistle | 14 | 14 | 30-40 | ⚠️ |
 | philippians | Philippians | Epistle | 11 | 11 | 30-40 | ⚠️ |
