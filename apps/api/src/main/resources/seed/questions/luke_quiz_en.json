@@ -1,0 +1,920 @@
+[
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 26,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "To whom did the angel announce the birth of Jesus?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 1:26-38 — The angel Gabriel announced the news to Mary.",
+    "language": "en",
+    "verseEnd": 38,
+    "options": [
+      "Mary",
+      "Elizabeth",
+      "Martha",
+      "Sarah"
+    ],
+    "tags": [
+      "New Testament",
+      "Nativity",
+      "Angel",
+      "Luke",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Who first received the angels' good news of the Nativity?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 2:8-14 — The shepherds heard the angel announce the good news.",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "Shepherds",
+      "Wise men",
+      "Priests",
+      "Romans"
+    ],
+    "tags": [
+      "New Testament",
+      "Nativity",
+      "Good news",
+      "Luke",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 3,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Jesus was baptized, the Holy Spirit descended in what form?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 3:22 — The Holy Spirit descended in bodily form like a dove.",
+    "language": "en",
+    "verseEnd": 22,
+    "options": [
+      "A mighty wind",
+      "A cloud",
+      "Tongues like fire",
+      "A dove"
+    ],
+    "tags": [
+      "New Testament",
+      "Baptism",
+      "Holy Spirit",
+      "Luke",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What miracle made Peter fall to his knees, saying 'Depart from me, Lord'?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 5:6-8 — The miraculous catch of fish made Peter tremble before holiness.",
+    "language": "en",
+    "verseEnd": 11,
+    "options": [
+      "Healing of mother-in-law",
+      "Calming the storm",
+      "Casting out demons",
+      "Miraculous catch of fish"
+    ],
+    "tags": [
+      "New Testament",
+      "Miracle",
+      "Disciple",
+      "Luke",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 6,
+    "verseStart": 27,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus teach about enemies?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 6:27 — 'Love your enemies, do good to those who hate you.'",
+    "language": "en",
+    "verseEnd": 36,
+    "options": [
+      "Accuse them",
+      "Avoid them",
+      "Punish them",
+      "Love your enemies"
+    ],
+    "tags": [
+      "New Testament",
+      "Morality",
+      "Love",
+      "Luke",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What is the model prayer Jesus taught called?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 11:2-4 — The prayer: 'Our Father in heaven...'",
+    "language": "en",
+    "verseEnd": 4,
+    "options": [
+      "Psalm of David",
+      "Confession of sins",
+      "The Lord's Prayer (Our Father)",
+      "Benediction"
+    ],
+    "tags": [
+      "New Testament",
+      "Prayer",
+      "Pattern",
+      "Luke",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 7,
+    "verseStart": 36,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the sinful woman do to Jesus' feet at Simon's house?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 7:38 — Wept on them, wiped with her hair, kissed, and anointed with perfume.",
+    "language": "en",
+    "verseEnd": 50,
+    "options": [
+      "Wet them with tears, wiped with her hair, anointed with oil",
+      "Removed His sandals",
+      "Bandaged them",
+      "Washed with perfumed water"
+    ],
+    "tags": [
+      "New Testament",
+      "Repentance",
+      "Forgiveness",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 8,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the sower, what happened to the seeds that fell on the path?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 8:5,12 — Birds devoured them; the evil one snatches the word from the heart.",
+    "language": "en",
+    "verseEnd": 15,
+    "options": [
+      "Scorched by the sun",
+      "Choked by thorns",
+      "Eaten by birds",
+      "Washed away by water"
+    ],
+    "tags": [
+      "New Testament",
+      "Parable",
+      "Heart",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 9,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who appeared at the Transfiguration in Luke?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 9:30 — The two men were Moses and Elijah.",
+    "language": "en",
+    "verseEnd": 36,
+    "options": [
+      "David and Solomon",
+      "Moses and Elijah",
+      "Isaiah and Jeremiah",
+      "Abraham and Moses"
+    ],
+    "tags": [
+      "New Testament",
+      "Glory",
+      "Prophet",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the Good Samaritan, who helped the man in need?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 10:33 — The Samaritan saw and had compassion.",
+    "language": "en",
+    "verseEnd": 37,
+    "options": [
+      "The Samaritan",
+      "The judge",
+      "The Levite",
+      "The priest"
+    ],
+    "tags": [
+      "New Testament",
+      "Parable",
+      "Neighbor",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 12,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How did Jesus teach about anxiety over food and clothing?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 12:29-31 — Seek first the kingdom of God.",
+    "language": "en",
+    "verseEnd": 34,
+    "options": [
+      "Stockpile sufficiently",
+      "Become wealthy first",
+      "Foresight is wisdom",
+      "Do not worry; first seek the kingdom of God"
+    ],
+    "tags": [
+      "New Testament",
+      "Faith",
+      "Priority",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 14,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the lesson about the seat at the feast, what does the Lord teach?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 14:10 — Take the lowest place, so the host may say 'Friend, move up higher.'",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "Take the highest seat",
+      "Invite the powerful",
+      "Humbly take the lowest place",
+      "Arrive early"
+    ],
+    "tags": [
+      "New Testament",
+      "Humility",
+      "Wedding feast",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the prodigal son, what does the father do when the son returns?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 15:20-24 — The father had compassion, ran out, embraced and kissed him, threw a feast.",
+    "language": "en",
+    "verseEnd": 32,
+    "options": [
+      "Ran out, embraced and kissed him, threw a feast",
+      "Refused to receive him",
+      "Rebuked harshly",
+      "Made him a servant"
+    ],
+    "tags": [
+      "New Testament",
+      "Parable",
+      "Grace",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 16,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the story of the rich man and Lazarus, where were they after death?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 16:22-23 — The rich man was in torment; Lazarus was at Abraham's side.",
+    "language": "en",
+    "verseEnd": 31,
+    "options": [
+      "They switched places",
+      "Both in heaven",
+      "The rich man in torment, Lazarus at Abraham's side",
+      "Both in Hades"
+    ],
+    "tags": [
+      "New Testament",
+      "Parable",
+      "Afterlife",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 18,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does the parable of the unjust judge teach about prayer?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 18:1 — He told them they ought always to pray and not lose heart.",
+    "language": "en",
+    "verseEnd": 8,
+    "options": [
+      "Persist in prayer",
+      "Pray at night",
+      "Pray briefly",
+      "Pray at the temple"
+    ],
+    "tags": [
+      "New Testament",
+      "Prayer",
+      "Persistence",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 19,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who was Zacchaeus and what did he do after meeting Jesus?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 19:2,8 — Zacchaeus promised to repay fourfold and give to the poor.",
+    "language": "en",
+    "verseEnd": 10,
+    "options": [
+      "A priest who offered sacrifices",
+      "A merchant who built a synagogue",
+      "Chief tax collector who restored fourfold and gave to the poor",
+      "A scribe copying the law"
+    ],
+    "tags": [
+      "New Testament",
+      "Repentance",
+      "Conversion",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 20,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How did Jesus answer about paying taxes to Caesar?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 20:25 — A double principle of civic and divine responsibility.",
+    "language": "en",
+    "verseEnd": 26,
+    "options": [
+      "Only Jews must pay",
+      "Give it all to the temple",
+      "Render to Caesar what is Caesar's, and to God what is God's",
+      "No need to pay taxes"
+    ],
+    "tags": [
+      "New Testament",
+      "Wisdom",
+      "Authority",
+      "Luke",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 22,
+    "verseStart": 39,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "At Gethsemane, what did Jesus teach His disciples?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 22:40 — Pray that you may not enter into temptation.",
+    "language": "en",
+    "verseEnd": 46,
+    "options": [
+      "Take up the sword",
+      "Sleep peacefully",
+      "Pray that you may not enter into temptation",
+      "Run away"
+    ],
+    "tags": [
+      "New Testament",
+      "Prayer",
+      "Temptation",
+      "Luke",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 23,
+    "verseStart": 39,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus say to the repentant thief on the cross?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 23:43 — A promise of paradise to the repentant.",
+    "language": "en",
+    "verseEnd": 43,
+    "options": [
+      "Your sins are forgiven",
+      "Come down from the cross",
+      "Today you will be with Me in Paradise",
+      "Go home to your house"
+    ],
+    "tags": [
+      "New Testament",
+      "Grace",
+      "Cross",
+      "Luke",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "When did the two disciples on the Emmaus road recognize Jesus?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 24:30-31 — Their eyes were opened when He broke the bread.",
+    "language": "en",
+    "verseEnd": 35,
+    "options": [
+      "When He explained the Scriptures",
+      "When He entered the house",
+      "When He greeted them",
+      "When He broke the bread"
+    ],
+    "tags": [
+      "New Testament",
+      "Resurrection",
+      "Eyes opened",
+      "Luke",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Luke 2:14, 'Glory to God in the highest.' What does the Greek word for 'glory' mean?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Doxa (δόξα) means 'glory, honor' — the splendor and majesty of God.",
+    "language": "en",
+    "options": [
+      "Doxa — glory, honor",
+      "Kleos — fame",
+      "Time — honor",
+      "Ainos — praise"
+    ],
+    "tags": [
+      "Luke",
+      "Nativity",
+      "Greek language",
+      "New Testament",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In Luke 15:20, 'The father ran and embraced him.' What does the Greek for 'ran' mean?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Dramo (δραμών) means 'running quickly,' showing the father's haste and love.",
+    "language": "en",
+    "options": [
+      "Peripateo — to walk about",
+      "Badizo — to walk",
+      "Dramo — to run quickly",
+      "Erechomai — to come"
+    ],
+    "tags": [
+      "Luke",
+      "Prodigal son",
+      "Greek language",
+      "New Testament",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where was Jesus born?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 2:7 — Mary gave birth to her firstborn son, wrapped Him in cloths, and laid Him in a manger because there was no room in the inn.",
+    "language": "en",
+    "options": [
+      "In a palace",
+      "In a synagogue",
+      "In a stable in Bethlehem",
+      "In an inn"
+    ],
+    "tags": [
+      "New Testament",
+      "Nativity",
+      "Humility",
+      "Luke",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 30,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the Good Samaritan, who helped the man who had been robbed?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 10:33-34 — The Samaritan (despised by the Jews) was the only one who showed compassion and helped.",
+    "language": "en",
+    "verseEnd": 37,
+    "options": [
+      "The priest",
+      "Roman soldiers",
+      "The Levite",
+      "The Samaritan"
+    ],
+    "tags": [
+      "New Testament",
+      "Parable",
+      "Love",
+      "Luke",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the lost sheep, how many sheep did the shepherd have before losing one?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 15:4 — The shepherd had 100, lost 1, left the 99 to go after the lost one. Illustrates God's love for the sinner.",
+    "language": "en",
+    "verseEnd": 7,
+    "options": [
+      "200",
+      "50",
+      "99",
+      "100"
+    ],
+    "tags": [
+      "New Testament",
+      "Parable",
+      "God's love",
+      "Luke",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the prodigal son, when the son returned, what did the father do?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 15:20-24 — The father ran out and embraced him, put on the best robe, the ring, and held a feast. A beautiful image of God welcoming the repentant sinner.",
+    "language": "en",
+    "verseEnd": 32,
+    "options": [
+      "Scolded first, then forgave",
+      "Made him a servant",
+      "Ran out, embraced him, and held a feast",
+      "Refused to see him"
+    ],
+    "tags": [
+      "New Testament",
+      "Parable",
+      "Forgiveness",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 23,
+    "verseStart": 43,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus promise the repentant thief on the cross?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 23:43 — Salvation requires only sincere faith, not works. The thief simply believed and was promised paradise.",
+    "language": "en",
+    "options": [
+      "Your sins have been forgiven",
+      "You will be resurrected",
+      "Today you will be with Me in Paradise",
+      "You will be remembered"
+    ],
+    "tags": [
+      "New Testament",
+      "Cross",
+      "Grace",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus read Isaiah 61 at Nazareth and declared He came to do what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 4:18-19 — Jesus declared His mission using Isaiah's words: total liberation and healing.",
+    "language": "en",
+    "verseEnd": 19,
+    "options": [
+      "Build the temple",
+      "Establish an army",
+      "Preach the gospel to the poor, heal the brokenhearted, free captives",
+      "Be a king"
+    ],
+    "tags": [
+      "New Testament",
+      "Mission",
+      "Liberation",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 6,
+    "verseStart": 38,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Luke 6:38: '___ and it will be given to you; good measure, pressed down, shaken together, running over, will be put into your lap'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "The principle of generosity: give and you will receive abundantly. God blesses generous hearts.",
+    "language": "en",
+    "options": [
+      "Seek",
+      "Knock",
+      "Give",
+      "Ask"
+    ],
+    "tags": [
+      "New Testament",
+      "Generosity",
+      "Giving",
+      "Luke",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 41,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Between Martha distracted with serving and Mary sitting and listening, whom did Jesus commend?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 10:42 — Mary chose the better part: sitting at the Lord's feet to hear His Word. Relationship is greater than service.",
+    "language": "en",
+    "verseEnd": 42,
+    "options": [
+      "Martha, for being diligent",
+      "Neither",
+      "Both",
+      "Mary, for choosing the better part"
+    ],
+    "tags": [
+      "New Testament",
+      "Mary",
+      "Priority",
+      "Luke",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 12,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus warned: 'Take care, and be on your guard against all ___'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 12:15 — True life does not consist in possessions. The lesson of the parable of the rich fool.",
+    "language": "en",
+    "options": [
+      "Covetousness, for one's life does not consist in the abundance of his possessions",
+      "Pride",
+      "Envy",
+      "Fear"
+    ],
+    "tags": [
+      "New Testament",
+      "Greed",
+      "Value",
+      "Luke",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 17,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Of the ten lepers healed, how many returned to give thanks?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 17:15-16 — Only one of ten was thankful. Jesus asked: where are the other nine? A lesson on gratitude.",
+    "language": "en",
+    "verseEnd": 16,
+    "options": [
+      "None",
+      "Five",
+      "Only one (and he was a Samaritan)",
+      "All ten"
+    ],
+    "tags": [
+      "New Testament",
+      "Gratitude",
+      "Miracle",
+      "Luke",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 18,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the Pharisee and the tax collector, who was justified?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 18:14 — The tax collector simply cried, 'God, be merciful to me, a sinner.' And was justified.",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "Neither",
+      "Both",
+      "The Pharisee, for doing many good works",
+      "The tax collector, for humble repentance"
+    ],
+    "tags": [
+      "New Testament",
+      "Humility",
+      "Righteousness",
+      "Luke",
+      "Gospels",
+      "Intermediate"
+    ]
+  }
+]
