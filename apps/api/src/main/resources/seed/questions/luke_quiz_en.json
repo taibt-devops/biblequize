@@ -916,5 +916,1775 @@
       "Gospels",
       "Intermediate"
     ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 13,
+    "verseEnd": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What name did the angel Gabriel command Zechariah to give his son?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 1:13 — 'Do not be afraid, Zechariah, for your prayer has been heard, and your wife Elizabeth will bear you a son, and you shall call his name John.'",
+    "language": "en",
+    "options": [
+      "Samuel",
+      "Aaron",
+      "John (the Baptist)",
+      "Daniel"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Naming John",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 31,
+    "verseEnd": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What name did the angel command Mary to give her child, and on whose throne would He sit?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 1:31-32 — 'You will conceive in your womb and bear a son, and you shall call his name Jesus... and the Lord God will give to him the throne of his father David.'",
+    "language": "en",
+    "options": [
+      "Name Immanuel, throne of Abraham",
+      "Name Joseph, throne of Solomon",
+      "Name Jesus, throne of David",
+      "Name Messiah, throne of Moses"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Annunciation to Mary",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 38,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How did Mary respond to the angel?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 1:38 — 'And Mary said, Behold, I am the servant of the Lord; let it be to me according to your word.'",
+    "language": "en",
+    "options": [
+      "I cannot",
+      "I am the servant of the Lord; let it be to me according to your word",
+      "Find someone else",
+      "I am very afraid"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Servant of the Lord",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 42,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When Mary visited Elizabeth, how did Elizabeth greet her?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 1:42 — 'Blessed are you among women, and blessed is the fruit of your womb!'",
+    "language": "en",
+    "options": [
+      "Blessed are you among women, and blessed is the fruit of your womb",
+      "Have you come from Nazareth?",
+      "Wait for Joseph to come",
+      "I have heard this already"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Elizabeth Blesses Mary",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 46,
+    "verseEnd": 48,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What song did Mary sing in praise of God (the Magnificat)?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 1:46-48 — 'My soul magnifies the Lord, and my spirit rejoices in God my Savior, for he has looked on the humble estate of his servant.'",
+    "language": "en",
+    "options": [
+      "Samuel's prayer",
+      "Hannah's song",
+      "Deborah's song",
+      "My soul magnifies the Lord..."
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Magnificat",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Which emperor issued the decree for a census that brought Joseph and Mary to Bethlehem?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 2:1 — 'In those days a decree went out from Caesar Augustus that all the world should be registered.'",
+    "language": "en",
+    "options": [
+      "Caesar Augustus",
+      "Tiberius",
+      "Nero",
+      "Herod the Great"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Caesar Augustus",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Why did Mary lay the infant Jesus in a manger?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 2:7 — 'And she gave birth to her firstborn son and wrapped him in swaddling cloths and laid him in a manger, because there was no place for them in the inn.'",
+    "language": "en",
+    "options": [
+      "Because of Jewish tradition",
+      "Because there was no place for them in the inn",
+      "Because Mary chose to",
+      "Because they feared Herod"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Infant in Manger",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What song did the heavenly host sing at Jesus' birth?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 2:14 — 'Glory to God in the highest, and on earth peace among those with whom he is pleased!'",
+    "language": "en",
+    "options": [
+      "Hallelujah, Amen",
+      "The Christ is Lord, He has come",
+      "Behold the child",
+      "Glory to God in the highest, and on earth peace"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Angels' Song",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 25,
+    "verseEnd": 32,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Which old man at the temple held the infant Jesus and sang 'Lord, now you are letting your servant depart in peace'?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 2:25-29 — 'Now there was a man in Jerusalem, whose name was Simeon... he took him up in his arms and blessed God.'",
+    "language": "en",
+    "options": [
+      "Zechariah",
+      "Berekiah",
+      "Simeon",
+      "Anna's husband"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Simeon's Song (Nunc Dimittis)",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 36,
+    "verseEnd": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Which prophetess, long widowed, fasted and prayed daily in the temple and met the infant Jesus?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 2:36-37 — 'And there was a prophetess, Anna, the daughter of Phanuel, of the tribe of Asher. She was advanced in years.'",
+    "language": "en",
+    "options": [
+      "Elizabeth",
+      "Mary Magdalene",
+      "Deborah",
+      "Anna, daughter of Phanuel"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Anna the Prophetess",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 46,
+    "verseEnd": 49,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "At age 12, where was Jesus found, and what did He say to His parents?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 2:46,49 — 'After three days they found him in the temple, sitting among the teachers... Why were you looking for me? Did you not know that I must be in my Father's house?'",
+    "language": "en",
+    "options": [
+      "At the harbor — fishing",
+      "In the temple — I must be in My Father's house",
+      "At a relative's house",
+      "In Samaria"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Jesus at 12 in the Temple",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 3,
+    "verseStart": 21,
+    "verseEnd": 22,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Jesus was baptized, in what form did the Holy Spirit descend on Him?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 3:22 — 'And the Holy Spirit descended on him in bodily form, like a dove.'",
+    "language": "en",
+    "options": [
+      "Fire",
+      "Wind",
+      "A dove",
+      "A cloud"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Jesus' Baptism",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 3,
+    "verseStart": 23,
+    "verseEnd": 38,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Luke's genealogy of Jesus traces back to which forefather?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 3:38 — '...the son of Adam, the son of God.' Luke traces back to Adam (Matthew traces only to Abraham).",
+    "language": "en",
+    "options": [
+      "Abraham",
+      "David",
+      "Moses",
+      "Adam"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Genealogy to Adam",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "verseStart": 18,
+    "verseEnd": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At the Nazareth synagogue, Jesus read Isaiah 61: 'The Spirit of the Lord is upon me, because He has ___'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 4:18 — 'The Spirit of the Lord is upon me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim liberty to the captives and recovering of sight to the blind.'",
+    "language": "en",
+    "options": [
+      "Anointed Me — to proclaim good news to the poor, heal broken-hearted, free captives, give sight to blind",
+      "Sent Me to build the temple",
+      "Sent Me to judge the world",
+      "Sent Me to teach the law"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Messianic Mission",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus say about a prophet in his hometown?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 4:24 — 'Truly, I say to you, no prophet is acceptable in his hometown.'",
+    "language": "en",
+    "options": [
+      "A prophet is most honored at home",
+      "A prophet is praised by the people",
+      "No prophet is acceptable in his hometown",
+      "A prophet should stay put"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Prophet Without Honor",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 5,
+    "verseStart": 5,
+    "verseEnd": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Jesus told Peter to let down the nets, how did Peter respond?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 5:5 — 'Master, we toiled all night and took nothing! But at your word I will let down the nets.'",
+    "language": "en",
+    "options": [
+      "I don't believe there are fish",
+      "We'll try another night",
+      "Let us rest",
+      "We toiled all night and took nothing; but at your word I will let down the nets"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "At Your Word",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 5,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "After the miraculous catch, how did Peter react?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 5:8 — 'But when Simon Peter saw it, he fell down at Jesus' knees, saying, Depart from me, for I am a sinful man, O Lord.'",
+    "language": "en",
+    "options": [
+      "Fell down praising",
+      "Fell down and said: Depart from me, for I am a sinful man, O Lord",
+      "Stood up and went to sell the fish",
+      "Asked Jesus about the miracle"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Peter Confesses Sinner",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 5,
+    "verseStart": 32,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whom did Jesus say He came to call to repentance?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 5:32 — 'I have not come to call the righteous but sinners to repentance.'",
+    "language": "en",
+    "options": [
+      "The righteous",
+      "The Pharisees",
+      "Sinners",
+      "The intellectuals"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Came to Call Sinners",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 6,
+    "verseStart": 20,
+    "verseEnd": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "The Sermon on the Plain (Luke) begins with blessings on whom?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 6:20-21 — 'Blessed are you who are poor, for yours is the kingdom of God. Blessed are you who are hungry now, for you shall be satisfied. Blessed are you who weep now, for you shall laugh.'",
+    "language": "en",
+    "options": [
+      "Blessed are the righteous, obedient, gentle",
+      "Blessed are the priests, prophets, kings",
+      "Blessed are Israel, Gentiles, fathers",
+      "Blessed are the poor, the hungry, those who weep"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Beatitudes on the Plain",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 6,
+    "verseStart": 31,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does the Golden Rule in Luke 6:31 teach?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 6:31 — 'And as you wish that others would do to you, do so to them.'",
+    "language": "en",
+    "options": [
+      "Treat others as they treat you",
+      "Do to others as you would have them do to you",
+      "Love your parents above all",
+      "Don't do harm to anyone"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Golden Rule",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 6,
+    "verseStart": 38,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Luke 6:38 — '___, and it will be given to you; with the measure you use, it will be measured to you.'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 6:38 — 'Give, and it will be given to you. Good measure, pressed down, shaken together, running over, will be put into your lap.'",
+    "language": "en",
+    "options": [
+      "Believe",
+      "Ask",
+      "Give",
+      "Obey"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Give and It Will Be Given",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 7,
+    "verseStart": 11,
+    "verseEnd": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In which town did Jesus raise the only son of a widow?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 7:11-15 — 'Soon afterward he went to a town called Nain... he came up and touched the bier... Young man, I say to you, arise. And the dead man sat up.'",
+    "language": "en",
+    "options": [
+      "Bethlehem",
+      "Capernaum",
+      "Bethany",
+      "Nain"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Widow's Son at Nain",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 7,
+    "verseStart": 36,
+    "verseEnd": 50,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the sinful woman do to Jesus' feet at Simon the Pharisee's house?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 7:38 — 'And standing behind him at his feet, weeping, she began to wet his feet with her tears and wiped them with the hair of her head and kissed his feet and anointed them with the ointment.'",
+    "language": "en",
+    "options": [
+      "Washed with perfume",
+      "Placed a crown",
+      "Wept, wet His feet with tears, wiped with hair, kissed and anointed with oil",
+      "Did nothing"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Sinful Woman Anoints",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Which women does Luke 8:1-3 mention as following and providing for Jesus from their means?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 8:2-3 — 'Mary, called Magdalene, from whom seven demons had gone out, and Joanna, the wife of Chuza, Herod's household manager, and Susanna, and many others.'",
+    "language": "en",
+    "options": [
+      "Martha and Mary (Lazarus's sisters)",
+      "Mary Magdalene, Joanna wife of Chuza, Susanna and many others",
+      "Mary mother of Jesus and Elizabeth",
+      "Anna and Deborah"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Women Supporting Jesus",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 8,
+    "verseStart": 54,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Jesus arrived at Jairus's house, what did He say to the dead daughter?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 8:54 — 'Taking her by the hand he called, saying, Child, arise.'",
+    "language": "en",
+    "options": [
+      "Wake up",
+      "Death, depart",
+      "Stand up and walk",
+      "Child, arise"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Jairus's Daughter",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 9,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus teach a follower must do 'daily'?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 9:23 — 'If anyone would come after me, let him deny himself and take up his cross daily and follow me.'",
+    "language": "en",
+    "options": [
+      "Deny self, take up cross daily, and follow Me",
+      "Pray and fast",
+      "Go to the temple",
+      "Study Scripture"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Take Up Cross Daily",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 9,
+    "verseStart": 58,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus said: 'Foxes have holes, birds of the air have nests, but the Son of Man has nowhere to ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 9:58 — 'Foxes have holes, and birds of the air have nests, but the Son of Man has nowhere to lay his head.'",
+    "language": "en",
+    "options": [
+      "Rest",
+      "Pray",
+      "Lay His head",
+      "Eat"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Nowhere to Lay His Head",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 9,
+    "verseStart": 62,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Luke 9:62 — What does Jesus say of those who put their hand to the plow and look back?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 9:62 — 'No one who puts his hand to the plow and looks back is fit for the kingdom of God.'",
+    "language": "en",
+    "options": [
+      "Will be praised",
+      "Will be loved by God",
+      "Will gain strength",
+      "Is not fit for the kingdom of God"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Plow and Look Back",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How many disciples did Jesus send out two by two to proclaim the gospel?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 10:1 — 'After this the Lord appointed seventy-two others and sent them on ahead of him, two by two, into every town and place where he himself was about to go.' (Some manuscripts: 70)",
+    "language": "en",
+    "options": [
+      "12",
+      "70",
+      "120",
+      "144"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Sending the 70",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 25,
+    "verseEnd": 37,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the Good Samaritan, which three people passed the wounded man?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 10:31-33 — 'Now by chance a priest was going down that road... So likewise a Levite... But a Samaritan, as he journeyed, came to where he was.'",
+    "language": "en",
+    "options": [
+      "A king, a noble, a farmer",
+      "A Pharisee, a scribe, a disciple",
+      "A priest, a Levite, a Samaritan (the Good)",
+      "Three Romans"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Good Samaritan",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 38,
+    "verseEnd": 42,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At Bethany, who chose 'the good portion' by sitting at Jesus' feet?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 10:42 — 'But one thing is necessary. Mary has chosen the good portion, which will not be taken away from her.'",
+    "language": "en",
+    "options": [
+      "Martha",
+      "Lazarus",
+      "Both sisters",
+      "Mary"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Mary and Martha",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 11,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the disciples asked Jesus to teach them to pray, how does the prayer begin?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 11:2 — 'Father, hallowed be your name. Your kingdom come.'",
+    "language": "en",
+    "options": [
+      "Almighty God",
+      "Lord of kings",
+      "Father, hallowed be your name; your kingdom come",
+      "O LORD"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Lord's Prayer",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 11,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Luke 11:9 — '___, and it will be given; ___, and you will find; ___, and it will be opened.'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 11:9 — 'Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you.'",
+    "language": "en",
+    "options": [
+      "Believe, obey, follow",
+      "Ask, seek, knock",
+      "Pray, give, wait",
+      "Love, sacrifice, serve"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Ask Seek Knock",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 12,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Luke 12:7 — What does Jesus say about the hairs on the disciples' heads?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 12:7 — 'Even the hairs of your head are all numbered. Fear not; you are of more value than many sparrows.'",
+    "language": "en",
+    "options": [
+      "The hairs will all fall out",
+      "The hairs are evidence of sin",
+      "The hairs are all numbered; you are worth more than many sparrows",
+      "The hairs will turn white from worry"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Hairs Numbered",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 12,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Luke 12:15 — A person's life does not consist in what?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 12:15 — 'Take care, and be on your guard against all covetousness, for one's life does not consist in the abundance of his possessions.'",
+    "language": "en",
+    "options": [
+      "In power",
+      "In learning",
+      "In friends",
+      "In the abundance of his possessions"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Life Not in Possessions",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 12,
+    "verseStart": 32,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus said to the little flock: 'Fear not, for ___'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 12:32 — 'Fear not, little flock, for it is your Father's good pleasure to give you the kingdom.'",
+    "language": "en",
+    "options": [
+      "It is your Father's good pleasure to give you the kingdom",
+      "I will give you the promised land",
+      "I will make you wealthy",
+      "I will punish your enemies"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Little Flock",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 12,
+    "verseStart": 48,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Luke 12:48 — Of one to whom much is given, what will be required?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 12:48 — 'Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more.'",
+    "language": "en",
+    "options": [
+      "He will be praised",
+      "He will rest",
+      "Much will be required, and the more demanded",
+      "Abundant peace"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Much Given Much Required",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 13,
+    "verseStart": 11,
+    "verseEnd": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus healed a woman who had been bent over by a spirit for how many years?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 13:11 — 'There was a woman who had had a disabling spirit for eighteen years. She was bent over and could not fully straighten herself.'",
+    "language": "en",
+    "options": [
+      "8 years",
+      "12 years",
+      "38 years",
+      "18 years"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Bent Over Woman",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 13,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Luke 13:24 — Jesus taught one must strive to do what to enter the kingdom of God?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 13:24 — 'Strive to enter through the narrow door. For many, I tell you, will seek to enter and will not be able.'",
+    "language": "en",
+    "options": [
+      "Go to the temple",
+      "Enter through the narrow door",
+      "Pray at length",
+      "Bring many sacrifices"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Narrow Door",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 14,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Luke 14:11 — What happens to the one who exalts himself, and to the one who humbles himself?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 14:11 — 'For everyone who exalts himself will be humbled, and he who humbles himself will be exalted.'",
+    "language": "en",
+    "options": [
+      "The one who exalts is praised / the humble is forgotten",
+      "The one who exalts is rich / the humble is poor",
+      "Everyone who exalts will be humbled, and he who humbles himself will be exalted",
+      "Both treated equally"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Humility Exalted",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 14,
+    "verseStart": 27,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Luke 14:27 — Whoever does not bear his cross and follow Jesus cannot be what?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 14:27 — 'Whoever does not bear his own cross and come after me cannot be my disciple.'",
+    "language": "en",
+    "options": [
+      "Forgiven",
+      "Israelite",
+      "An official apostle",
+      "A disciple of Jesus"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Bear Cross to Be Disciple",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Luke 15:7 — In heaven there is what kind of joy?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 15:7 — 'There will be more joy in heaven over one sinner who repents than over ninety-nine righteous persons who need no repentance.'",
+    "language": "en",
+    "options": [
+      "When an angel is honored",
+      "Over one sinner who repents — more than over 99 righteous who need no repentance",
+      "When a city is delivered",
+      "When a nation returns to God"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Joy Over One Sinner",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 8,
+    "verseEnd": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the lost coin, how many coins did the woman have, and how many were lost?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 15:8 — 'What woman, having ten silver coins, if she loses one coin, does not light a lamp and sweep the house and seek diligently until she finds it?'",
+    "language": "en",
+    "options": [
+      "100 coins, 50 lost",
+      "50 coins, 1 lost",
+      "A few coins, a few lost",
+      "10 silver coins, 1 lost"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Lost Coin",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 16,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Luke 16:13 — No one can serve two masters; you cannot serve God and ___",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 16:13 — 'You cannot serve God and money [Mammon].'",
+    "language": "en",
+    "options": [
+      "Satan",
+      "A king",
+      "Money (Mammon)",
+      "Religion"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "God and Mammon",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 16,
+    "verseStart": 19,
+    "verseEnd": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the rich man and Lazarus, what did the rich man ask Abraham to send Lazarus to do?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 16:24 — 'Father Abraham, have mercy on me, and send Lazarus to dip the end of his finger in water and cool my tongue, for I am in anguish in this flame.'",
+    "language": "en",
+    "options": [
+      "Bring him over to Abraham's side",
+      "Dip his finger in water and cool his tongue (because he was tormented in flame)",
+      "Tell his family",
+      "Bring him bread"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Rich Man and Lazarus",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 17,
+    "verseStart": 11,
+    "verseEnd": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Of the ten lepers cleansed, how many returned to give thanks, and what was the man's nationality?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 17:15-16 — 'Then one of them, when he saw that he was healed, turned back, praising God with a loud voice... Now he was a Samaritan.'",
+    "language": "en",
+    "options": [
+      "All 10, all Israelites",
+      "5 including Pharisees",
+      "3 mostly women",
+      "Only one — a Samaritan"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Ten Lepers",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 17,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Luke 17:21 — Where is the kingdom of God?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 17:21 — 'Nor will they say, Look, here it is! or There! For behold, the kingdom of God is in the midst of you.'",
+    "language": "en",
+    "options": [
+      "In your midst (within you)",
+      "In Jerusalem",
+      "On Mount Sinai",
+      "In the temple"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Kingdom Within",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 17,
+    "verseStart": 32,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What four short words did Jesus speak about looking back?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 17:32 — 'Remember Lot's wife.' (She looked back and was turned to a pillar of salt.)",
+    "language": "en",
+    "options": [
+      "Love your enemies",
+      "Follow Me now",
+      "Remember Lot's wife",
+      "Forsake everything"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Remember Lot's Wife",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 18,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Luke 18:1 — Jesus told the parable of the widow and judge to teach what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 18:1 — 'And he told them a parable to the effect that they ought always to pray and not lose heart.'",
+    "language": "en",
+    "options": [
+      "Take cases to court",
+      "Always pray and not lose heart",
+      "Trust the judges",
+      "Persevere in study"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Pray and Not Lose Heart",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 18,
+    "verseStart": 9,
+    "verseEnd": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the Pharisee and the tax collector praying in the temple, who went home 'justified'?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 18:14 — 'I tell you, this man (the tax collector) went down to his house justified, rather than the other (the Pharisee).'",
+    "language": "en",
+    "options": [
+      "The Pharisee — for praying eloquently",
+      "Both",
+      "The tax collector — for beating his breast in repentance",
+      "Neither"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Pharisee and Tax Collector",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 19,
+    "verseStart": 1,
+    "verseEnd": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Which tax collector climbed a tree to see Jesus and had Him visit his house?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 19:2-5 — 'There was a man named Zacchaeus. He was a chief tax collector and was rich. And he was seeking to see who Jesus was, but on account of the crowd he could not, because he was small in stature. So he ran on ahead and climbed up into a sycamore tree.'",
+    "language": "en",
+    "options": [
+      "Levi",
+      "Matthew",
+      "Simon",
+      "Zacchaeus"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Zacchaeus",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 19,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Luke 19:10 — Why did the Son of Man come?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 19:10 — 'For the Son of Man came to seek and to save the lost.'",
+    "language": "en",
+    "options": [
+      "To build a new temple",
+      "To seek and to save the lost",
+      "To judge the world",
+      "To teach the law of Moses"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Seek and Save Lost",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 20,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Luke 20:25 — Render to Caesar what is Caesar's, and render to whom what is whose?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 20:25 — 'Then render to Caesar the things that are Caesar's, and to God the things that are God's.'",
+    "language": "en",
+    "options": [
+      "To the priest things of God",
+      "To the people things of the king",
+      "To God the things that are God's",
+      "To family things of family"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Render to Caesar and God",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 21,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Luke 21:1-4 — What did the poor widow put into the offering box that Jesus praised?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 21:2-4 — 'And he saw a poor widow put in two small copper coins... For they all contributed out of their abundance, but she out of her poverty put in all she had to live on.'",
+    "language": "en",
+    "options": [
+      "A gold coin",
+      "Ten silver coins",
+      "A bouquet of flowers",
+      "Two small copper coins — all she had to live on"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Widow's Two Coins",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 21,
+    "verseStart": 33,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Luke 21:33 — Heaven and earth will pass away, but what will not pass away?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Luke 21:33 — 'Heaven and earth will pass away, but my words will not pass away.'",
+    "language": "en",
+    "options": [
+      "My words",
+      "The temple",
+      "Mount Zion",
+      "The sun"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Words Will Not Pass",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 22,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Luke 22:19 — Jesus took bread and said: 'This is my body... ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 22:19 — 'This is my body, which is given for you. Do this in remembrance of me.'",
+    "language": "en",
+    "options": [
+      "Eat carefully",
+      "Keep this secret",
+      "Do this in remembrance of Me",
+      "Give to the poor"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Lord's Supper",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 22,
+    "verseStart": 42,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At Gethsemane, Jesus prayed: 'Father, if you are willing, remove this cup from me. Nevertheless, not my will, but ___'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 22:42 — 'Father, if you are willing, remove this cup from me. Nevertheless, not my will, but yours, be done.'",
+    "language": "en",
+    "options": [
+      "Of the disciples",
+      "Yours, be done",
+      "Of the prophets",
+      "Of the angels"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Father's Will",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 22,
+    "verseStart": 44,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Luke 22:44 — In great anguish, what was Jesus' sweat like?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 22:44 — 'And being in an agony he prayed more earnestly; and his sweat became like great drops of blood falling down to the ground.'",
+    "language": "en",
+    "options": [
+      "Like ordinary water",
+      "Like morning dew",
+      "Like anointing oil",
+      "Like great drops of blood falling to the ground"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Sweat Like Blood",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 22,
+    "verseStart": 51,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When Peter cut off the servant's ear, what did Jesus do?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 22:51 — 'But Jesus said, No more of this! And he touched his ear and healed him.'",
+    "language": "en",
+    "options": [
+      "Rebuked Peter and walked away",
+      "Told Peter to heal",
+      "Touched the servant's ear and healed him",
+      "Said nothing"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Healing the Servant's Ear",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 22,
+    "verseStart": 61,
+    "verseEnd": 62,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "After Peter denied Jesus a third time, the Lord turned and looked at him; how did Peter react?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 22:61-62 — 'And the Lord turned and looked at Peter. And Peter remembered the saying of the Lord... And he went out and wept bitterly.'",
+    "language": "en",
+    "options": [
+      "Confessed at once",
+      "Continued denying",
+      "Fled elsewhere",
+      "Went out and wept bitterly"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Peter's Denial and Tears",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 23,
+    "verseStart": 34,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On the cross, what was Jesus' first saying according to Luke 23:34?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 23:34 — 'Father, forgive them, for they know not what they do.'",
+    "language": "en",
+    "options": [
+      "It is finished",
+      "Father, forgive them, for they know not what they do",
+      "I thirst",
+      "Father, into your hands I commit my spirit"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Father Forgive Them",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 23,
+    "verseStart": 43,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus said to the thief on the cross: '___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 23:43 — 'Truly, I say to you, today you will be with me in paradise.'",
+    "language": "en",
+    "options": [
+      "Wait for the last day",
+      "Your faith has saved you",
+      "Today you will be with Me in paradise",
+      "I forgive your sins"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Today in Paradise",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 23,
+    "verseStart": 46,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What were Jesus' final words according to Luke 23:46?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 23:46 — 'Then Jesus, calling out with a loud voice, said, Father, into your hands I commit my spirit! And having said this he breathed his last.'",
+    "language": "en",
+    "options": [
+      "It is finished",
+      "I thirst",
+      "Father, forgive them",
+      "Father, into your hands I commit my spirit"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Commit My Spirit",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "verseStart": 13,
+    "verseEnd": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "The risen Jesus appeared to two disciples on the road to where?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Luke 24:13 — 'That very day two of them were going to a village named Emmaus, about seven miles from Jerusalem.'",
+    "language": "en",
+    "options": [
+      "Bethany",
+      "Samaria",
+      "Emmaus",
+      "Jericho"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Road to Emmaus",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "On the road to Emmaus, from where did Jesus explain the Scriptures concerning Himself?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 24:27 — 'And beginning with Moses and all the Prophets, he interpreted to them in all the Scriptures the things concerning himself.'",
+    "language": "en",
+    "options": [
+      "From the Psalms",
+      "Beginning with Moses and all the Prophets — concerning Him in all the Scriptures",
+      "Only from Isaiah",
+      "From the new law"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Scripture About Him",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "verseStart": 36,
+    "verseEnd": 43,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "After His resurrection, how did Jesus prove He was not a ghost?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Luke 24:42-43 — 'They gave him a piece of broiled fish, and he took it and ate before them.'",
+    "language": "en",
+    "options": [
+      "Appeared in great glory",
+      "Spoke a powerful word",
+      "Flew on a cloud",
+      "Ate a piece of broiled fish before the disciples"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Jesus Eats Fish",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "verseStart": 50,
+    "verseEnd": 51,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where did Jesus ascend, according to Luke?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Luke 24:50-51 — 'Then he led them out as far as Bethany, and lifting up his hands he blessed them. While he blessed them, he parted from them and was carried up into heaven.'",
+    "language": "en",
+    "options": [
+      "Mount of Olives directly",
+      "At Bethany — while He was blessing them",
+      "At Jerusalem",
+      "At Galilee"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Ascension at Bethany",
+      "Gospels",
+      "Basic"
+    ]
   }
 ]

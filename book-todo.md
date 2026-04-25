@@ -53,7 +53,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | malachi | Malachi | Prophets | 20 | 20 | 20-30 | ✅ |
 | matthew | Matthew | Gospels | 104 | 104 | 100+ | ✅ |
 | mark | Mark | Gospels | 60 | 60 | 60-80 | ✅ |
-| luke | Luke | Gospels | 33 | 33 | 100+ | ⚠️ |
+| luke | Luke | Gospels | 100 | 100 | 100+ | ✅ |
 | john | John | Gospels | 101 | 101 | 100+ | ✅ |
 | acts | Acts | Acts | 61 | 61 | 60-80 | ✅ |
 | romans | Romans | Epistle | 60 | 60 | 60-80 | ✅ |
