@@ -51,7 +51,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | haggai | Haggai | Prophets | 0 | 0 | 20 | ❌ |
 | zechariah | Zechariah | Prophets | 0 | 0 | 30-40 | ❌ |
 | malachi | Malachi | Prophets | 20 | 20 | 20-30 | ✅ |
-| matthew | Matthew | Gospels | 34 | 34 | 100+ | ⚠️ |
+| matthew | Matthew | Gospels | 104 | 104 | 100+ | ✅ |
 | mark | Mark | Gospels | 60 | 60 | 60-80 | ✅ |
 | luke | Luke | Gospels | 33 | 33 | 100+ | ⚠️ |
 | john | John | Gospels | 34 | 34 | 100+ | ⚠️ |

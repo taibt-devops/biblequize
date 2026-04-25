@@ -922,5 +922,1850 @@
       "Gospels",
       "Intermediate"
     ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Matthew opens with a genealogy of Jesus as the son of which two patriarchs?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 1:1 — 'The book of the genealogy of Jesus Christ, the son of David, the son of Abraham.'",
+    "language": "en",
+    "options": [
+      "David and Abraham",
+      "Moses and David",
+      "Isaac and Jacob",
+      "Noah and Abraham"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Genealogy",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "verseStart": 18,
+    "verseEnd": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the dream, the angel explained Mary conceived by whom?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 1:20 — 'Joseph, son of David, do not fear to take Mary as your wife, for that which is conceived in her is from the Holy Spirit.'",
+    "language": "en",
+    "options": [
+      "By a man",
+      "By an angel",
+      "By the Holy Spirit",
+      "By natural fulfillment"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Conceived by Spirit",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "verseStart": 13,
+    "verseEnd": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "After the Magi left, Joseph was told to take the child to where?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 2:13 — 'Rise, take the child and his mother, and flee to Egypt, and remain there until I tell you.'",
+    "language": "en",
+    "options": [
+      "To Babylon",
+      "To Egypt",
+      "To Syria",
+      "To Greece"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Flight to Egypt",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "King Herod ordered the killing of children in Bethlehem of what age?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 2:16 — 'He sent and killed all the male children in Bethlehem and in all that region who were two years old or under.'",
+    "language": "en",
+    "options": [
+      "Newborn",
+      "Under one year",
+      "Two years old or under",
+      "Under five years"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Herod's Massacre",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Returning from Egypt, the family settled in which city, fulfilling 'He shall be called a Nazarene'?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 2:23 — 'And he went and lived in a city called Nazareth, so that what was spoken by the prophets might be fulfilled, that he would be called a Nazarene.'",
+    "language": "en",
+    "options": [
+      "Bethlehem",
+      "Bethel",
+      "Capernaum",
+      "Nazareth"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Nazarene",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where did John the Baptist preach, and what was his main message?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 3:1-2 — 'In those days John the Baptist came preaching in the wilderness of Judea, Repent, for the kingdom of heaven is at hand.'",
+    "language": "en",
+    "options": [
+      "In the wilderness of Judea: Repent, for the kingdom of heaven is at hand",
+      "In the temple: Keep the law",
+      "On the mountain: Follow the Messiah",
+      "In Jerusalem: Establish the kingdom"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "John the Baptist Preaches",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did John the Baptist wear and eat?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 3:4 — 'Now John wore a garment of camel's hair and a leather belt around his waist, and his food was locusts and wild honey.'",
+    "language": "en",
+    "options": [
+      "Long robes and unleavened bread",
+      "White robes and vegetables",
+      "Camel's hair garment, leather belt; locusts and wild honey",
+      "Leather and lamb"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "John's Attire",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "John said the One coming after him would baptize with what?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 3:11 — 'He who is coming after me... will baptize you with the Holy Spirit and fire.'",
+    "language": "en",
+    "options": [
+      "Only with water",
+      "With anointing oil",
+      "With blood",
+      "With the Holy Spirit and fire"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Baptism with Spirit and Fire",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus was tempted in the wilderness after fasting how many days and nights?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 4:2 — 'And after fasting forty days and forty nights, he was hungry.'",
+    "language": "en",
+    "options": [
+      "7 days and 7 nights",
+      "40 days and 40 nights",
+      "12 days and 12 nights",
+      "70 days and 70 nights"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Forty Days Fast",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Jesus answered the second temptation (jumping from the temple) with which Scripture?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 4:7 — 'Jesus said to him, Again it is written, You shall not put the Lord your God to the test.' (quoting Deuteronomy 6:16)",
+    "language": "en",
+    "options": [
+      "Man shall not live by bread alone",
+      "You shall fear the LORD your God",
+      "You shall not put the Lord your God to the test",
+      "You shall love the Lord with all your heart"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Second Temptation",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus traveled throughout Galilee doing what three main things?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 4:23 — 'And he went throughout all Galilee, teaching in their synagogues and proclaiming the gospel of the kingdom and healing every disease and every affliction among the people.'",
+    "language": "en",
+    "options": [
+      "Praying, fasting, sacrificing",
+      "Leading, judging, blessing",
+      "Preaching, baptizing, calling disciples",
+      "Teaching, proclaiming the gospel, healing"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Threefold Ministry",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the Sermon on the Mount, who shall inherit the earth?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 5:5 — 'Blessed are the meek, for they shall inherit the earth.'",
+    "language": "en",
+    "options": [
+      "The strong",
+      "The meek",
+      "The rich",
+      "The wise"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Blessed Are the Meek",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Blessed are the pure in heart — for they shall do what?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 5:8 — 'Blessed are the pure in heart, for they shall see God.'",
+    "language": "en",
+    "options": [
+      "See God",
+      "Be called sons",
+      "Be comforted",
+      "Inherit the kingdom"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Pure in Heart",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus called the disciples what 'of the earth'?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 5:13 — 'You are the salt of the earth, but if salt has lost its taste, how shall its saltiness be restored?'",
+    "language": "en",
+    "options": [
+      "The light",
+      "The seed",
+      "The living water",
+      "The salt"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Salt of the Earth",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 39,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When someone slaps you on the right cheek, what does Jesus teach?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 5:39 — 'But I say to you, Do not resist the one who is evil. But if anyone slaps you on the right cheek, turn to him the other also.'",
+    "language": "en",
+    "options": [
+      "Hit back at once",
+      "Run away",
+      "Turn the other cheek",
+      "Call the police"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Turn the Other Cheek",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where does Jesus teach believers should pray?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 6:6 — 'But when you pray, go into your room and shut the door and pray to your Father who is in secret.'",
+    "language": "en",
+    "options": [
+      "On the street for all to see",
+      "In your room, with the door shut, in secret",
+      "Only in the temple",
+      "On the street corners"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Pray in Secret",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Matthew 6:14-15, what is the condition for the Father to forgive us?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 6:14-15 — 'For if you forgive others their trespasses, your heavenly Father will also forgive you, but if you do not forgive others their trespasses, neither will your Father forgive your trespasses.'",
+    "language": "en",
+    "options": [
+      "Bring sacrifices",
+      "Go to the temple",
+      "Forgive others their trespasses",
+      "Repent many times"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Forgiveness",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus said you cannot serve God and what?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 6:24 — 'No one can serve two masters... You cannot serve God and money [Mammon].'",
+    "language": "en",
+    "options": [
+      "Satan",
+      "A king",
+      "Religion",
+      "Money (Mammon)"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "God and Mammon",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 33,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Matthew 6:33 — Seek first what?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 6:33 — 'But seek first the kingdom of God and his righteousness, and all these things will be added to you.'",
+    "language": "en",
+    "options": [
+      "The kingdom of God and His righteousness",
+      "Material wealth",
+      "Human wisdom",
+      "Power and fame"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Seek First the Kingdom",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Matthew 7:1 teaches us not to do what to others?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 7:1 — 'Judge not, that you be not judged.'",
+    "language": "en",
+    "options": [
+      "Don't help",
+      "Don't care",
+      "Judge not, that you be not judged",
+      "Don't teach"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Judge Not",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Matthew 7:7 — Three commands of Jesus: '___, ___, ___'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 7:7 — 'Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you.'",
+    "language": "en",
+    "options": [
+      "Believe, obey, follow",
+      "Ask, seek, knock",
+      "Pray, fast, give",
+      "Love, forgive, serve"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Ask Seek Knock",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "verseStart": 24,
+    "verseEnd": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the closing parable of the Sermon on the Mount, the wise man built his house on what?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 7:24-25 — 'Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock.'",
+    "language": "en",
+    "options": [
+      "On sand",
+      "On the plain",
+      "On a high mountain",
+      "On the rock"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "House on the Rock",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 8,
+    "verseStart": 5,
+    "verseEnd": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus said He had not found such great faith — even in Israel — in whom?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 8:10 — A Roman centurion at Capernaum. 'Truly, I tell you, with no one in Israel have I found such faith.'",
+    "language": "en",
+    "options": [
+      "A Roman centurion",
+      "Peter",
+      "Blind Bartimaeus",
+      "The Samaritan woman"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Centurion's Great Faith",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 8,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus said: 'The Son of Man has nowhere to ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 8:20 — 'Foxes have holes, and birds of the air have nests, but the Son of Man has nowhere to lay his head.'",
+    "language": "en",
+    "options": [
+      "Go and rest",
+      "Pray",
+      "Lay his head",
+      "Eat"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Nowhere to Lay His Head",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 9,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At the tax booth, whom did Jesus call to follow Him?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 9:9 — 'As Jesus passed on from there, he saw a man called Matthew sitting at the tax booth, and he said to him, Follow me. And he rose and followed him.'",
+    "language": "en",
+    "options": [
+      "John",
+      "Matthew",
+      "Peter",
+      "Andrew"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Calling of Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 9,
+    "verseStart": 36,
+    "verseEnd": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus saw the crowds as sheep without a shepherd; what did He tell the disciples to do?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 9:38 — 'Therefore pray earnestly to the Lord of the harvest to send out laborers into his harvest.'",
+    "language": "en",
+    "options": [
+      "Call the army",
+      "Disperse elsewhere",
+      "Find a quiet place to rest",
+      "Pray the Lord of the harvest to send laborers"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Pray for Laborers",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 10,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How many apostles did Jesus choose according to Matthew 10:1-4?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 10:1-4 — Twelve apostles listed: Simon (Peter), Andrew, James, John, Philip, Bartholomew, Thomas, Matthew, James son of Alphaeus, Thaddaeus, Simon the Zealot, Judas Iscariot.",
+    "language": "en",
+    "options": [
+      "12 apostles",
+      "10 apostles",
+      "70 apostles",
+      "7 apostles"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Twelve Apostles",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 10,
+    "verseStart": 34,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Jesus said He came not to bring what, but a sword?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 10:34 — 'Do not think that I have come to bring peace to the earth. I have not come to bring peace, but a sword.'",
+    "language": "en",
+    "options": [
+      "To bring joy",
+      "To bring the kingdom",
+      "To bring peace (to the earth)",
+      "To bring righteousness"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Not Peace but a Sword",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus answered John the Baptist's disciples by listing what miracles?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 11:5 — 'The blind receive their sight and the lame walk, lepers are cleansed and the deaf hear, and the dead are raised up, and the poor have good news preached to them.'",
+    "language": "en",
+    "options": [
+      "Only healing diseases",
+      "Casting out demons and preaching",
+      "Building temple and judging",
+      "Blind see, lame walk, lepers cleansed, deaf hear, dead raised, poor hear gospel"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Messianic Signs",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Jesus said no one born of woman is greater than John the Baptist; but in the kingdom of heaven what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 11:11 — 'Truly, I say to you, among those born of women there has arisen no one greater than John the Baptist. Yet the one who is least in the kingdom of heaven is greater than he.'",
+    "language": "en",
+    "options": [
+      "The same way",
+      "The least in the kingdom is greater than he",
+      "No one is equal to John",
+      "Peter is greater"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "John and the Kingdom",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When the disciples plucked grain on the Sabbath, what did Jesus claim to be Lord of?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 12:8 — 'For the Son of Man is lord of the Sabbath.'",
+    "language": "en",
+    "options": [
+      "The temple",
+      "The law",
+      "The Sabbath",
+      "The synagogue"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Lord of the Sabbath",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "verseStart": 31,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What sin will not be forgiven in this age or the age to come?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 12:31-32 — 'Therefore I tell you, every sin and blasphemy will be forgiven people, but the blasphemy against the Spirit will not be forgiven.'",
+    "language": "en",
+    "options": [
+      "Murder",
+      "Sexual immorality",
+      "Adultery",
+      "Blasphemy against the Holy Spirit"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Blasphemy of Spirit",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "verseStart": 34,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Matthew 12:34 — Out of what fullness of the heart does the mouth speak?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 12:34 — 'Out of the abundance of the heart the mouth speaks.'",
+    "language": "en",
+    "options": [
+      "Out of the abundance of the heart, the mouth speaks",
+      "From book knowledge",
+      "From the fathers' tradition",
+      "From momentary feelings"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Heart and Mouth",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "verseStart": 40,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus compared His three days in the heart of the earth with whom in the belly of the fish?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 12:40 — 'For just as Jonah was three days and three nights in the belly of the great fish, so will the Son of Man be three days and three nights in the heart of the earth.'",
+    "language": "en",
+    "options": [
+      "David",
+      "Jonah",
+      "Daniel",
+      "Samuel"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Sign of Jonah",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "verseStart": 3,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the sower, the seed fell on what four kinds of soil?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 13:4-8 — 'Some seeds fell along the path... other seeds fell on rocky ground... other seeds fell among thorns... other seeds fell on good soil.'",
+    "language": "en",
+    "options": [
+      "Dry, wet, rocky, sandy",
+      "Garden, field, wild, barren",
+      "Judea, Galilee, Samaria, Gentile",
+      "Along the path, rocky ground, among thorns, good soil"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Parable of the Sower",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "verseStart": 31,
+    "verseEnd": 32,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus compared the kingdom of heaven to which seed, smallest of all seeds?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 13:31-32 — 'The kingdom of heaven is like a grain of mustard seed that a man took and sowed in his field. It is the smallest of all seeds...'",
+    "language": "en",
+    "options": [
+      "Mustard seed",
+      "Wheat seed",
+      "Grape seed",
+      "Fig seed"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Mustard Seed",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "verseStart": 44,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In the parable, what did the man find hidden in a field that he sold all to buy the field for?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 13:44 — 'The kingdom of heaven is like treasure hidden in a field, which a man found and covered up. Then in his joy he goes and sells all that he has and buys that field.'",
+    "language": "en",
+    "options": [
+      "A great pearl",
+      "Treasure (hidden treasure)",
+      "A set of weapons",
+      "A gold mine"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Hidden Treasure",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 14,
+    "verseStart": 13,
+    "verseEnd": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How many loaves and fish did Jesus multiply to feed the 5,000?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 14:17-21 — 'They said to him, We have only five loaves here and two fish... And those who ate were about five thousand men, besides women and children.'",
+    "language": "en",
+    "options": [
+      "7 loaves and 2 fish",
+      "10 loaves and 3 fish",
+      "5 loaves and 2 fish",
+      "12 loaves and 5 fish"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Feeding 5,000",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 14,
+    "verseStart": 25,
+    "verseEnd": 31,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Why did Peter sink while walking on water?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 14:30-31 — 'When he saw the wind, he was afraid, and beginning to sink he cried out, Lord, save me. Jesus immediately reached out his hand and took hold of him, saying to him, O you of little faith, why did you doubt?'",
+    "language": "en",
+    "options": [
+      "Waves too big",
+      "Too tired",
+      "Weak legs",
+      "He was afraid and had little faith (doubted)"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Peter Walks on Water",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 15,
+    "verseStart": 21,
+    "verseEnd": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How did Jesus describe the Canaanite woman's faith?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 15:28 — 'Then Jesus answered her, O woman, great is your faith! Be it done for you as you desire. And her daughter was healed instantly.'",
+    "language": "en",
+    "options": [
+      "Small but enough",
+      "Average faith",
+      "Great faith",
+      "Insufficient faith"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Canaanite Woman",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 15,
+    "verseStart": 32,
+    "verseEnd": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the second feeding miracle, Jesus fed about how many people?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 15:38 — 'Those who ate were four thousand men, besides women and children.'",
+    "language": "en",
+    "options": [
+      "3,000 people",
+      "4,000 people",
+      "5,000 people",
+      "10,000 people"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Feeding 4,000",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus taught that whoever wants to follow Him must do three things: deny himself, take up what, and follow Him?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 16:24 — 'If anyone would come after me, let him deny himself and take up his cross and follow me.'",
+    "language": "en",
+    "options": [
+      "A heavy load",
+      "A staff",
+      "His cross",
+      "Good shoes"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Take Up Cross",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 17,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Which three disciples did Jesus take up the mountain for the Transfiguration?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 17:1 — 'And after six days Jesus took with him Peter and James, and John his brother, and led them up a high mountain by themselves.'",
+    "language": "en",
+    "options": [
+      "Peter, Andrew, John",
+      "James, Judas, Thomas",
+      "Peter, Andrew, James",
+      "Peter, James, John"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Transfiguration",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 17,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At the Transfiguration, what did the voice from the cloud say?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 17:5 — 'This is my beloved Son, with whom I am well pleased; listen to him.'",
+    "language": "en",
+    "options": [
+      "This is my beloved Son, with whom I am well pleased; listen to Him",
+      "You have been honored",
+      "Come to Me",
+      "I am the Creator"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Voice on the Mountain",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 17,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus said if you have faith like which seed, you can move mountains?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 17:20 — 'For truly, I say to you, if you have faith like a grain of mustard seed, you will say to this mountain, Move from here to there, and it will move.'",
+    "language": "en",
+    "options": [
+      "A grape seed",
+      "A mustard seed",
+      "A fig seed",
+      "A wheat grain"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Mustard Seed Faith",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus said unless you become like whom, you will never enter the kingdom of heaven?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 18:3 — 'Unless you turn and become like children, you will never enter the kingdom of heaven.'",
+    "language": "en",
+    "options": [
+      "Holy fathers",
+      "The angels",
+      "Children",
+      "The righteous"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Become Like Children",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus promised His presence among how many gathered in His name?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 18:20 — 'For where two or three are gathered in my name, there am I among them.'",
+    "language": "en",
+    "options": [
+      "100 people",
+      "12 people",
+      "10 people",
+      "Two or three people"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Two or Three Gathered",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "verseStart": 23,
+    "verseEnd": 35,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the unforgiving servant, how much debt did the king forgive?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 18:24 — 'When he began to settle, one was brought to him who owed him ten thousand talents.' This represents an enormous, billion-dollar-equivalent debt.",
+    "language": "en",
+    "options": [
+      "100 denarii",
+      "Ten thousand talents (a vast sum)",
+      "1,000 silver coins",
+      "A small amount"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Unforgiving Servant",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus said: 'Let the children come to me; do not hinder them, for to such belongs ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 19:14 — 'For to such belongs the kingdom of heaven.'",
+    "language": "en",
+    "options": [
+      "Wisdom",
+      "Blessing",
+      "The kingdom of heaven",
+      "Salvation"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Let Children Come",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus tell the rich young man to do to be perfect?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 19:21 — 'If you would be perfect, go, sell what you possess and give to the poor, and you will have treasure in heaven; and come, follow me.'",
+    "language": "en",
+    "options": [
+      "Sell all you have, give to the poor, then follow Me",
+      "Go to the temple and sacrifice",
+      "Memorize the law",
+      "Be baptized first"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Rich Young Man",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus said it is easier for what animal to go through the eye of a needle than for a rich person to enter the kingdom?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 19:24 — 'It is easier for a camel to go through the eye of a needle than for a rich person to enter the kingdom of God.'",
+    "language": "en",
+    "options": [
+      "An elephant",
+      "An ox",
+      "A horse",
+      "A camel"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Camel and Needle",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 20,
+    "verseStart": 1,
+    "verseEnd": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the laborers in the vineyard, who received equal pay despite working different hours?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 20:9-12 — 'The master paid each one a denarius, whether they worked from the first hour or the eleventh.' Lesson: in God's kingdom, the master gives by grace, not by merit.",
+    "language": "en",
+    "options": [
+      "Only those who came earliest",
+      "Only those who came last",
+      "All workers, each one a denarius",
+      "Divided according to hours"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Laborers in the Vineyard",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 20,
+    "verseStart": 28,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Matthew 20:28 — The Son of Man came not to be served, but to do what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 20:28 — 'Even as the Son of Man came not to be served but to serve, and to give his life as a ransom for many.'",
+    "language": "en",
+    "options": [
+      "To teach the law",
+      "To serve, and to give His life as a ransom for many",
+      "To establish an earthly kingdom",
+      "To judge the world"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Ransom",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 21,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus entered Jerusalem riding on what?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 21:7 — 'They brought the donkey and the colt and put on them their cloaks, and he sat on them.' Fulfilling Zechariah 9:9.",
+    "language": "en",
+    "options": [
+      "A white horse",
+      "A camel",
+      "Walking",
+      "A colt of a donkey"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Triumphal Entry",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 21,
+    "verseStart": 12,
+    "verseEnd": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Entering the temple, Jesus rebuked them for making the house of prayer into what?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 21:13 — 'It is written, My house shall be called a house of prayer, but you make it a den of robbers.'",
+    "language": "en",
+    "options": [
+      "A den of robbers",
+      "A marketplace",
+      "A prison",
+      "A courtroom"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Cleansing the Temple",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 21,
+    "verseStart": 42,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus quoted Psalm 118: 'The stone that the builders rejected has become ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 21:42 — 'The stone that the builders rejected has become the cornerstone; this was the Lord's doing, and it is marvelous in our eyes.'",
+    "language": "en",
+    "options": [
+      "A useless stone",
+      "A small stone",
+      "The cornerstone",
+      "A precious stone"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Cornerstone",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the Pharisees asked about paying taxes to Caesar, what did Jesus say?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 22:21 — 'Therefore render to Caesar the things that are Caesar's, and to God the things that are God's.'",
+    "language": "en",
+    "options": [
+      "Don't pay tax to Caesar",
+      "Run away",
+      "Pay only half",
+      "Render to Caesar the things of Caesar, and to God the things of God"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Things of Caesar and God",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 23,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Matthew 23:23 — Jesus rebuked the scribes for tithing mint, dill, and cumin, but neglecting what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 23:23 — 'Woe to you... For you tithe mint and dill and cumin, and have neglected the weightier matters of the law: justice and mercy and faithfulness.'",
+    "language": "en",
+    "options": [
+      "Almsgiving to the poor",
+      "Justice, mercy, and faithfulness",
+      "Prayer and fasting",
+      "Sabbath observance"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Woe to Scribes",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 24,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Matthew 24:14, what will be preached throughout the world before the end comes?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 24:14 — 'And this gospel of the kingdom will be proclaimed throughout the whole world as a testimony to all nations, and then the end will come.'",
+    "language": "en",
+    "options": [
+      "Human wisdom",
+      "The law of Moses",
+      "The gospel of the kingdom",
+      "Prayer"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospel to All Nations",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 24,
+    "verseStart": 35,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus said heaven and earth will pass away, but what will not pass away?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 24:35 — 'Heaven and earth will pass away, but my words will not pass away.'",
+    "language": "en",
+    "options": [
+      "My words",
+      "The temple",
+      "Mount Zion",
+      "The sun"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "My Words Will Not Pass",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "verseStart": 1,
+    "verseEnd": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the ten virgins, what did the five wise prepare that the five foolish did not?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 25:4 — 'But the wise took flasks of oil with their lamps.'",
+    "language": "en",
+    "options": [
+      "White robes",
+      "Bread and wine",
+      "Crowns",
+      "Oil (in flasks for their lamps)"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Ten Virgins",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "verseStart": 14,
+    "verseEnd": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the talents, how many talents did the master give to the three servants?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 25:15 — 'To one he gave five talents, to another two, to another one, to each according to his ability. Then he went away.'",
+    "language": "en",
+    "options": [
+      "One talent each",
+      "Five, two, and one talents",
+      "Three equal talents",
+      "Ten, five, one"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Parable of Talents",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "verseStart": 40,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "In the final judgment, the King says: 'As you did it to one of the ___ of these my brothers, you did it to me.'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 25:40 — 'Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me.'",
+    "language": "en",
+    "options": [
+      "Greatest",
+      "Average",
+      "Least of these of mine",
+      "Most distinguished"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Least of These",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "verseStart": 39,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Gethsemane, Jesus prayed: 'My Father, if it be possible, let this cup pass from me; nevertheless, not as I will, but as ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 26:39 — 'My Father, if it be possible, let this cup pass from me; nevertheless, not as I will, but as you will.'",
+    "language": "en",
+    "options": [
+      "The prophets will",
+      "The people will",
+      "The angels will",
+      "You will (the Father's will)"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gethsemane",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "verseStart": 14,
+    "verseEnd": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Judas Iscariot betrayed Jesus for how many pieces of silver?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 26:15 — 'And they paid him thirty pieces of silver.' Fulfilling Zechariah 11:12-13.",
+    "language": "en",
+    "options": [
+      "10 pieces",
+      "20 pieces",
+      "30 pieces of silver",
+      "100 pieces"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Judas's Betrayal",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "verseStart": 75,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "After the rooster crowed, what did Peter do?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 26:75 — 'And Peter remembered the saying of Jesus, Before the rooster crows, you will deny me three times. And he went out and wept bitterly.'",
+    "language": "en",
+    "options": [
+      "Laughed joyfully",
+      "Went out and wept bitterly",
+      "Killed himself",
+      "Went to find Jesus"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Peter's Denial",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "verseStart": 50,
+    "verseEnd": 51,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When Jesus yielded up His spirit, what happened to the temple curtain?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 27:51 — 'And behold, the curtain of the temple was torn in two, from top to bottom. And the earth shook, and the rocks were split.'",
+    "language": "en",
+    "options": [
+      "It was torn in two from top to bottom",
+      "It caught fire",
+      "It rolled up",
+      "It changed color"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Curtain Torn",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "verseStart": 54,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "After Jesus died, what did the Roman centurion confess?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 27:54 — 'When the centurion and those who were with him, keeping watch over Jesus, saw the earthquake and what took place, they were filled with awe and said, Truly this was the Son of God!'",
+    "language": "en",
+    "options": [
+      "This was a great prophet",
+      "This was the king of the Jews",
+      "Truly this was the Son of God",
+      "This was a holy man"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Centurion's Confession",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At the empty tomb, what did the angel say to the women about Jesus?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 28:6 — 'He is not here, for he has risen, as he said. Come, see the place where he lay.'",
+    "language": "en",
+    "options": [
+      "He is still asleep",
+      "He has been stolen",
+      "He is not here; He has risen, as He said",
+      "He awaits in Galilee"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Empty Tomb",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "After His resurrection, Jesus declared He has what 'in heaven and on earth'?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 28:18 — 'All authority in heaven and on earth has been given to me.'",
+    "language": "en",
+    "options": [
+      "Wisdom",
+      "Glory",
+      "Love",
+      "All authority"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "All Authority",
+      "Gospels",
+      "Intermediate"
+    ]
   }
 ]

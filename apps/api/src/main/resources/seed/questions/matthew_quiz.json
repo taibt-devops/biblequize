@@ -922,5 +922,1850 @@
       "Phúc Âm",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sách Ma-thi-ơ mở đầu bằng gia phả của Chúa Jêsus là con của hai tổ phụ nào?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-thi-ơ 1:1 — 'Gia phả của Đức Chúa Jêsus Christ, con cháu Đa-vít và con cháu Áp-ra-ham.'",
+    "language": "vi",
+    "options": [
+      "Đa-vít và Áp-ra-ham",
+      "Môi-se và Đa-vít",
+      "Y-sác và Gia-cốp",
+      "Nô-ê và Áp-ra-ham"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Gia phả",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "verseStart": 18,
+    "verseEnd": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Trong giấc mộng, thiên sứ giải thích Ma-ri thọ thai bởi ai?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 1:20 — 'Hỡi Giô-sép, con cháu Đa-vít, ngươi chớ ngại lấy Ma-ri làm vợ, vì con mà người chịu thai đó là bởi Đức Thánh Linh.'",
+    "language": "vi",
+    "options": [
+      "Bởi loài người",
+      "Bởi một thiên sứ",
+      "Bởi Đức Thánh Linh",
+      "Bởi sự ứng nghiệm tự nhiên"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Thọ thai bởi Thánh Linh",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "verseStart": 13,
+    "verseEnd": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sau khi các nhà thông thái về, Giô-sép được sai đem hài đồng đến đâu?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 2:13 — 'Hãy chỗi dậy, đem con trẻ và mẹ Ngài trốn qua nước Ai-cập, ở đó cho đến chừng nào ta dạy bảo ngươi.'",
+    "language": "vi",
+    "options": [
+      "Đến Ba-by-lôn",
+      "Đến Ai-cập",
+      "Đến Sy-ri",
+      "Đến Hy-lạp"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Trốn qua Ai-cập",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Vua Hê-rốt đã ra lệnh giết các con trẻ tại Bết-lê-hem ở độ tuổi nào?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 2:16 — 'Vua sai giết hết thảy con trai từ hai tuổi sấp xuống ở thành Bết-lê-hem và cả hạt chung quanh.'",
+    "language": "vi",
+    "options": [
+      "Mới sinh",
+      "Dưới một tuổi",
+      "Từ hai tuổi sấp xuống",
+      "Dưới năm tuổi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Hê-rốt giết hài đồng",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khi trở về từ Ai-cập, gia đình định cư tại thành nào, ứng nghiệm lời tiên tri 'Ngài sẽ được gọi là người Na-xa-rét'?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 2:23 — 'Đến ở trong một thành kia tên là Na-xa-rét. Vậy là ứng nghiệm lời các đấng tiên tri đã nói rằng: Người ta sẽ gọi Ngài là người Na-xa-rét.'",
+    "language": "vi",
+    "options": [
+      "Bết-lê-hem",
+      "Bê-tên",
+      "Ca-bê-na-um",
+      "Na-xa-rét"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Người Na-xa-rét",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Giăng Báp-tít rao giảng tại đâu và sứ điệp chính là gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-thi-ơ 3:1-2 — 'Trong những ngày ấy, Giăng Báp-tít đến giảng đạo trong đồng vắng xứ Giu-đê, rằng: Các ngươi phải ăn năn, vì nước thiên đàng đã đến gần!'",
+    "language": "vi",
+    "options": [
+      "Trong đồng vắng xứ Giu-đê: Hãy ăn năn vì nước thiên đàng đã đến gần",
+      "Trong đền thờ: Hãy giữ luật pháp",
+      "Trên núi: Hãy theo Mê-si-a",
+      "Tại Giê-ru-sa-lem: Hãy lập vương quốc"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Giăng Báp-tít rao giảng",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Giăng Báp-tít mặc gì và ăn gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 3:4 — 'Vả, Giăng mặc áo bằng lông lạc đà, buộc dây lưng bằng da; ăn châu chấu và mật ong rừng.'",
+    "language": "vi",
+    "options": [
+      "Áo dài và bánh không men",
+      "Áo trắng và rau cải",
+      "Áo lông lạc đà, dây lưng da; ăn châu chấu và mật ong rừng",
+      "Áo da và thịt cừu"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Trang phục Giăng",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Giăng nói Đấng đến sau ông sẽ làm phép báp-têm bằng gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 3:11 — 'Còn Đấng đến sau ta... Ngài sẽ làm phép báp-têm cho các ngươi bằng Đức Thánh Linh và bằng lửa.'",
+    "language": "vi",
+    "options": [
+      "Chỉ bằng nước",
+      "Bằng dầu xức",
+      "Bằng máu",
+      "Bằng Đức Thánh Linh và bằng lửa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Báp-têm bằng Thánh Linh và lửa",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus chịu cám dỗ trong đồng vắng sau khi kiêng ăn bao nhiêu ngày đêm?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 4:2 — 'Ngài đã kiêng ăn bốn mươi ngày bốn mươi đêm rồi, sau thì đói.'",
+    "language": "vi",
+    "options": [
+      "7 ngày 7 đêm",
+      "40 ngày 40 đêm",
+      "12 ngày 12 đêm",
+      "70 ngày 70 đêm"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "40 ngày kiêng ăn",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus đáp lời cám dỗ thứ hai (nhảy xuống từ nóc đền thờ) bằng câu Kinh Thánh nào?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 4:7 — 'Đức Chúa Jêsus phán: Cũng có lời chép: Ngươi đừng thử Chúa là Đức Chúa Trời ngươi.' (Trích Phục Truyền 6:16)",
+    "language": "vi",
+    "options": [
+      "Người ta sống chẳng phải chỉ nhờ bánh mà thôi",
+      "Phải kính sợ Chúa Đức Chúa Trời ngươi",
+      "Ngươi đừng thử Chúa là Đức Chúa Trời ngươi",
+      "Ngươi phải hết lòng yêu mến Chúa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Cám dỗ thứ hai",
+      "Phúc Âm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus đi khắp xứ Ga-li-lê làm ba việc gì chính?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 4:23 — 'Đức Chúa Jêsus đi khắp xứ Ga-li-lê, dạy dỗ trong các nhà hội, giảng Tin Lành của nước Đức Chúa Trời, và chữa lành mọi thứ tật bịnh trong dân.'",
+    "language": "vi",
+    "options": [
+      "Cầu nguyện, ăn chay, dâng tế lễ",
+      "Lãnh đạo, xét đoán, ban phước",
+      "Giảng đạo, làm phép báp-têm, chỉ định môn đồ",
+      "Dạy dỗ, giảng Tin Lành, chữa lành"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Chức vụ ba mặt",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Bài Giảng Trên Núi, ai sẽ hưởng được đất?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 5:5 — 'Phước cho những kẻ nhu mì, vì sẽ hưởng được đất.'",
+    "language": "vi",
+    "options": [
+      "Người mạnh mẽ",
+      "Người nhu mì",
+      "Người giàu có",
+      "Người khôn ngoan"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phước cho người nhu mì",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phước cho ai trong sạch trong lòng — vì họ sẽ làm gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-thi-ơ 5:8 — 'Phước cho những kẻ có lòng trong sạch, vì sẽ thấy Đức Chúa Trời!'",
+    "language": "vi",
+    "options": [
+      "Sẽ thấy Đức Chúa Trời",
+      "Sẽ làm con Chúa",
+      "Sẽ được an ủi",
+      "Sẽ hưởng nước thiên đàng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Người trong sạch",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus gọi các môn đồ là gì 'của đất'?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 5:13 — 'Các ngươi là muối của đất; song nếu mất mặn đi, thì sẽ lấy giống chi mà làm cho mặn lại?'",
+    "language": "vi",
+    "options": [
+      "Ánh sáng",
+      "Hạt giống",
+      "Nước sống",
+      "Muối"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Muối của đất",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 39,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khi ai vả má ngươi bên phải, Chúa Jêsus dạy phải làm gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 5:39 — 'Nếu ai vả má bên hữu ngươi, hãy đưa má bên kia cho họ luôn.'",
+    "language": "vi",
+    "options": [
+      "Đáp trả ngay",
+      "Bỏ chạy",
+      "Đưa má bên kia cho họ",
+      "Cầu cứu cảnh sát"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Đưa má kia",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus dạy các tín hữu nên cầu nguyện ở đâu?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 6:6 — 'Khi ngươi cầu nguyện, hãy vào phòng riêng, đóng cửa lại, rồi cầu nguyện Cha ngươi, ở nơi kín nhiệm đó.'",
+    "language": "vi",
+    "options": [
+      "Trên đường phố cho mọi người thấy",
+      "Trong phòng riêng đóng cửa lại, kín nhiệm",
+      "Chỉ trong đền thờ",
+      "Trên góc đường lớn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Cầu nguyện kín nhiệm",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Ma-thi-ơ 6:14-15, điều kiện để Cha trên trời tha tội cho mình là gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 6:14-15 — 'Vả, nếu các ngươi tha lỗi cho người ta, thì Cha các ngươi ở trên trời cũng sẽ tha thứ các ngươi. Song nếu không tha lỗi cho người ta, thì Cha các ngươi cũng sẽ không tha lỗi cho các ngươi.'",
+    "language": "vi",
+    "options": [
+      "Phải dâng tế lễ",
+      "Phải đi đền thờ",
+      "Phải tha lỗi cho người khác",
+      "Phải ăn năn nhiều lần"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Tha thứ",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus dạy không ai có thể làm tôi tớ cho hai chủ; không thể vừa hầu Đức Chúa Trời vừa hầu gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 6:24 — 'Chẳng ai được làm tôi hai chủ... Các ngươi không có thể làm tôi Đức Chúa Trời lại làm tôi Ma-môn nữa.'",
+    "language": "vi",
+    "options": [
+      "Sa-tan",
+      "Vua",
+      "Tôn giáo",
+      "Ma-môn (tiền của)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Đức Chúa Trời và Ma-môn",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 33,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ma-thi-ơ 6:33 — Trước hết phải tìm kiếm gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-thi-ơ 6:33 — 'Nhưng trước hết, hãy tìm kiếm nước Đức Chúa Trời và sự công bình của Ngài, thì Ngài sẽ cho thêm các ngươi mọi điều ấy nữa.'",
+    "language": "vi",
+    "options": [
+      "Nước Đức Chúa Trời và sự công bình của Ngài",
+      "Sự giàu có vật chất",
+      "Sự khôn ngoan loài người",
+      "Quyền lực và danh tiếng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Tìm kiếm Nước Trời",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ma-thi-ơ 7:1 dạy chúng ta đừng làm gì với người khác?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 7:1 — 'Các ngươi đừng đoán xét ai, để mình khỏi bị đoán xét.'",
+    "language": "vi",
+    "options": [
+      "Đừng giúp đỡ",
+      "Đừng quan tâm",
+      "Đừng đoán xét, để khỏi bị đoán xét",
+      "Đừng dạy dỗ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Đừng đoán xét",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ma-thi-ơ 7:7 — Ba lệnh của Chúa: 'Hãy ___, ___, ___'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 7:7 — 'Hãy xin, sẽ được; hãy tìm, sẽ gặp; hãy gõ cửa, sẽ mở cho.'",
+    "language": "vi",
+    "options": [
+      "Tin, vâng phục, theo",
+      "Xin, tìm, gõ cửa",
+      "Cầu nguyện, ăn chay, dâng hiến",
+      "Yêu, tha thứ, phục vụ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Xin tìm gõ cửa",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "verseStart": 24,
+    "verseEnd": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Người khôn ngoan trong dụ ngôn cuối Bài Giảng Trên Núi xây nhà mình trên gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 7:24-25 — 'Kẻ nào nghe và làm theo lời Ta phán đây, thì giống như một người khôn ngoan cất nhà mình trên hòn đá.'",
+    "language": "vi",
+    "options": [
+      "Trên cát",
+      "Trên đồng bằng",
+      "Trên núi cao",
+      "Trên hòn đá (vầng đá)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Xây nhà trên đá",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 8,
+    "verseStart": 5,
+    "verseEnd": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus đã khen đức tin của ai 'lớn dường ấy, ngay đến trong dân Y-sơ-ra-ên Ta cũng chưa thấy'?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-thi-ơ 8:10 — Người đội trưởng La-mã (đại đội trưởng) tại Ca-bê-na-um. 'Ta nói thật cùng các ngươi, ta chưa hề thấy ai trong dân Y-sơ-ra-ên có đức tin lớn dường ấy.'",
+    "language": "vi",
+    "options": [
+      "Một đội trưởng La-mã",
+      "Phi-e-rơ",
+      "Người mù Bạt-ti-mê",
+      "Người đàn bà Sa-ma-ri"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Đức tin lớn của đội trưởng",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 8,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus phán: 'Con người không có chỗ mà ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 8:20 — 'Con cáo có hang, chim trời có ổ; song Con người không có chỗ mà gối đầu.'",
+    "language": "vi",
+    "options": [
+      "Đi nghỉ",
+      "Cầu nguyện",
+      "Gối đầu",
+      "Ăn uống"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Không nơi gối đầu",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 9,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Tại sở thâu thuế, Chúa Jêsus đã kêu gọi ai theo Ngài?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 9:9 — 'Đức Chúa Jêsus đi khỏi nơi đó, thấy một người tên là Ma-thi-ơ đương ngồi tại sở thâu thuế. Ngài phán cùng người rằng: Hãy theo Ta. Người liền đứng dậy, mà theo Ngài.'",
+    "language": "vi",
+    "options": [
+      "Giăng",
+      "Ma-thi-ơ",
+      "Phi-e-rơ",
+      "Anh-rê"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Kêu gọi Ma-thi-ơ",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 9,
+    "verseStart": 36,
+    "verseEnd": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus thấy đoàn dân đông như chiên không người chăn; Ngài bảo các môn đồ làm gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 9:38 — 'Vậy, hãy cầu xin Chủ mùa gặt sai con gặt đến trong mùa mình.'",
+    "language": "vi",
+    "options": [
+      "Gọi quân đội",
+      "Tản đi nơi khác",
+      "Tìm chỗ vắng vẻ nghỉ ngơi",
+      "Cầu xin Chủ mùa gặt sai con gặt đến"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Cầu xin Chủ mùa gặt",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 10,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Có bao nhiêu sứ đồ được Chúa Jêsus chọn theo Ma-thi-ơ 10:1-4?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-thi-ơ 10:1-4 — Mười hai sứ đồ được liệt kê: Si-môn (Phi-e-rơ), Anh-rê, Gia-cơ, Giăng, Phi-líp, Ba-thê-lê-my, Thô-ma, Ma-thi-ơ, Gia-cơ con A-phê, Tha-đê, Si-môn người Ca-na-an, Giu-đa Ích-ca-ri-ốt.",
+    "language": "vi",
+    "options": [
+      "12 sứ đồ",
+      "10 sứ đồ",
+      "70 sứ đồ",
+      "7 sứ đồ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Mười hai sứ đồ",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 10,
+    "verseStart": 34,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus phán Ngài đến không đem điều gì, mà đem gươm?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 10:34 — 'Chớ tưởng rằng Ta đến để đem sự bình an cho thế gian; Ta đến, không phải đem sự bình an, mà là đem gươm dao.'",
+    "language": "vi",
+    "options": [
+      "Đem niềm vui",
+      "Đem nước thiên đàng",
+      "Đem sự bình an (cho thế gian)",
+      "Đem sự công bình"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Gươm dao chứ không bình an",
+      "Phúc Âm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus đáp lời các môn đồ Giăng Báp-tít, kể những dấu lạ Ngài làm — gồm những điều gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 11:5 — 'Kẻ mù được thấy, kẻ què được đi, kẻ phung được sạch, kẻ điếc được nghe, kẻ chết được sống lại, và kẻ khó khăn được nghe rao giảng Tin Lành.'",
+    "language": "vi",
+    "options": [
+      "Chỉ chữa lành các bệnh",
+      "Đuổi quỷ và rao giảng",
+      "Lập đền thờ và xét đoán",
+      "Mù thấy, què đi, phung sạch, điếc nghe, chết sống lại, khó khăn nghe Tin Lành"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Dấu lạ Mê-si-a",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus nói trong các kẻ do người nữ sinh ra, không ai lớn hơn Giăng Báp-tít; song trong nước thiên đàng thì sao?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 11:11 — 'Lại Ta nói thật cùng các ngươi, trong những người bởi đàn bà sanh ra, không có ai được tôn trọng hơn Giăng Báp-tít, nhưng mà kẻ rất nhỏ hèn trong nước thiên đàng còn được tôn trọng hơn người.'",
+    "language": "vi",
+    "options": [
+      "Cũng giống như vậy",
+      "Kẻ rất nhỏ hèn còn được tôn trọng hơn Giăng",
+      "Không ai bằng Giăng",
+      "Phi-e-rơ là lớn hơn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Giăng Báp-tít và nước thiên đàng",
+      "Phúc Âm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khi các môn đồ bứt bông lúa mì ngày Sa-bát, Chúa Jêsus tự xưng là Chủ của gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 12:8 — 'Vì Con người là Chúa ngày Sa-bát.'",
+    "language": "vi",
+    "options": [
+      "Đền thờ",
+      "Luật pháp",
+      "Ngày Sa-bát",
+      "Nhà hội"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Chủ ngày Sa-bát",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "verseStart": 31,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Tội nào không được tha cho loài người trong đời này hay đời sau?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 12:31-32 — 'Mọi tội lỗi và lời nói phạm thượng của loài người sẽ được tha; song lời phạm thượng đến Đức Thánh Linh thì sẽ chẳng được tha đâu.'",
+    "language": "vi",
+    "options": [
+      "Tội giết người",
+      "Tội tà dâm",
+      "Tội ngoại tình",
+      "Lời phạm thượng đến Đức Thánh Linh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Tội phạm thượng Thánh Linh",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "verseStart": 34,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ma-thi-ơ 12:34 — Lòng người đầy gì thì miệng nói ra điều ấy?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-thi-ơ 12:34 — 'Bởi vì do sự đầy dẫy trong lòng mà miệng mới nói ra.'",
+    "language": "vi",
+    "options": [
+      "Sự đầy dẫy trong lòng — miệng nói ra điều ấy",
+      "Kiến thức trong sách",
+      "Lời truyền của tổ phụ",
+      "Cảm xúc nhất thời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Lòng và miệng",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "verseStart": 40,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus so sánh ba ngày ba đêm Ngài ở trong lòng đất với ai trong bụng cá?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 12:40 — 'Vì Giô-na đã bị ở trong bụng cá lớn ba ngày ba đêm, cũng một thể ấy, Con người sẽ ở trong lòng đất ba ngày ba đêm.'",
+    "language": "vi",
+    "options": [
+      "Đa-vít",
+      "Giô-na",
+      "Đa-ni-ên",
+      "Sa-mu-ên"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Dấu của Giô-na",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "verseStart": 3,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ngụ ngôn người gieo giống — hạt giống rơi trên bốn loại đất nào?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 13:4-8 — 'Có hạt rơi dọc đường... có hạt rơi nhằm chỗ đá sỏi... có hạt rơi nhằm bụi gai... có hạt rơi nhằm chỗ đất tốt.'",
+    "language": "vi",
+    "options": [
+      "Đất khô, đất ướt, đất đá, đất cát",
+      "Đất vườn, đất ruộng, đất hoang, đất cằn",
+      "Đất Giu-đê, đất Ga-li-lê, đất Sa-ma-ri, đất ngoại bang",
+      "Dọc đường, đất đá sỏi, bụi gai, đất tốt"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Ngụ ngôn người gieo",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "verseStart": 31,
+    "verseEnd": 32,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus so sánh nước thiên đàng với hạt giống nào nhỏ hơn hết các loại giống?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-thi-ơ 13:31-32 — 'Nước thiên đàng giống như một hột cải mà người kia lấy gieo trong ruộng mình; hột ấy thật nhỏ hơn hết các giống...'",
+    "language": "vi",
+    "options": [
+      "Hột cải",
+      "Hột lúa mì",
+      "Hột nho",
+      "Hột vả"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Hột cải",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "verseStart": 44,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong ngụ ngôn, người tìm thấy gì giấu trong ruộng nên đi bán hết của cải để mua ruộng đó?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 13:44 — 'Nước thiên đàng giống như của báu chôn trong một đám ruộng kia. Một người kia tìm được, thì giấu đi, vui mừng mà trở về, bán hết gia tài mình, mua đám ruộng ấy.'",
+    "language": "vi",
+    "options": [
+      "Một viên ngọc trai lớn",
+      "Của báu (kho báu)",
+      "Một bộ vũ khí",
+      "Một mỏ vàng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Của báu trong ruộng",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 14,
+    "verseStart": 13,
+    "verseEnd": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus đã hóa bao nhiêu ổ bánh và mấy con cá để cho 5.000 người ăn?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 14:17-21 — 'Chúng thưa rằng: Chúng tôi có đây năm cái bánh và hai con cá... Số người ăn ước chừng năm ngàn, không kể đàn bà con nít.'",
+    "language": "vi",
+    "options": [
+      "Bảy bánh, hai cá",
+      "Mười bánh, ba cá",
+      "Năm bánh, hai cá",
+      "Mười hai bánh, năm cá"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Hóa bánh năm ngàn",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 14,
+    "verseStart": 25,
+    "verseEnd": 31,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khi Phi-e-rơ đi trên mặt nước, ông bị chìm vì điều gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 14:30-31 — 'Song khi thấy gió thổi, thì sợ hãi, hòng sút xuống, bèn la lên rằng: Chúa ơi, xin cứu lấy tôi! Đức Chúa Jêsus liền giơ tay ra nắm lấy người, mà nói rằng: Hỡi người ít đức tin, sao ngươi hồ nghi làm vậy?'",
+    "language": "vi",
+    "options": [
+      "Sóng quá lớn",
+      "Mệt quá",
+      "Chân yếu",
+      "Sợ hãi và ít đức tin (hồ nghi)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phi-e-rơ đi trên nước",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 15,
+    "verseStart": 21,
+    "verseEnd": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus khen đức tin của người đàn bà Ca-na-an như thế nào?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 15:28 — 'Đức Chúa Jêsus phán rằng: Hỡi đàn bà kia, ngươi có đức tin lớn; việc phải xảy ra theo ý ngươi muốn! Cũng một giờ đó, con gái người liền được lành.'",
+    "language": "vi",
+    "options": [
+      "Đức tin nhỏ nhưng đủ",
+      "Đức tin trung bình",
+      "Đức tin lớn",
+      "Không đủ đức tin"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Người đàn bà Ca-na-an",
+      "Phúc Âm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 15,
+    "verseStart": 32,
+    "verseEnd": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Trong phép lạ hóa bánh thứ hai, Chúa Jêsus cho khoảng bao nhiêu người ăn?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 15:38 — 'Số người ăn là bốn ngàn, không kể đàn bà con nít.'",
+    "language": "vi",
+    "options": [
+      "3.000 người",
+      "4.000 người",
+      "5.000 người",
+      "10.000 người"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Hóa bánh bốn ngàn",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus dạy người muốn theo Ngài phải làm ba điều: tự bỏ mình, vác gì, và theo Ngài?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 16:24 — 'Nếu ai muốn theo Ta, thì phải liều mình, vác thập tự giá mình mà theo Ta.'",
+    "language": "vi",
+    "options": [
+      "Vác gánh nặng",
+      "Vác cây gậy",
+      "Vác thập tự giá mình",
+      "Vác đôi giày tốt"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Vác thập tự giá",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 17,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus đem ba môn đồ nào lên núi để tỏ vinh hiển hóa hình?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 17:1 — 'Khỏi sáu ngày, Đức Chúa Jêsus đem Phi-e-rơ, Gia-cơ, và Giăng là em Gia-cơ, cùng Ngài đi tẽ lên núi cao.'",
+    "language": "vi",
+    "options": [
+      "Phi-e-rơ, Anh-rê, Giăng",
+      "Gia-cơ, Giu-đa, Thô-ma",
+      "Phi-e-rơ, Anh-rê, Gia-cơ",
+      "Phi-e-rơ, Gia-cơ, Giăng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Hóa hình trên núi",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 17,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Khi Chúa Jêsus hóa hình, có tiếng từ đám mây phán điều gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-thi-ơ 17:5 — 'Nầy là Con yêu dấu của Ta, đẹp lòng Ta mọi đường; hãy nghe lời Con đó!'",
+    "language": "vi",
+    "options": [
+      "Đây là Con yêu dấu của Ta, đẹp lòng Ta; hãy nghe lời Ngài",
+      "Ngươi đã được tôn vinh",
+      "Hãy đến cùng Ta",
+      "Ta là Đấng Tạo Hóa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Tiếng trên núi",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 17,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus nói nếu có đức tin bằng hột gì thì có thể bảo núi dời đi?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 17:20 — 'Nếu các ngươi có đức tin bằng một hột cải, sẽ khiến núi nầy rằng: Hãy dời đây qua đó, thì nó liền dời qua.'",
+    "language": "vi",
+    "options": [
+      "Hột nho",
+      "Hột cải",
+      "Hột vả",
+      "Hột lúa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Đức tin hột cải",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus phán nếu không trở nên giống ai thì chẳng được vào nước thiên đàng?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 18:3 — 'Nếu các ngươi không đổi lại và nên như đứa trẻ, thì chẳng được vào nước thiên đàng đâu.'",
+    "language": "vi",
+    "options": [
+      "Tổ phụ thánh",
+      "Các thiên sứ",
+      "Đứa trẻ (con trẻ)",
+      "Người công bình"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Trở nên như con trẻ",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus hứa Ngài hiện diện ở giữa khi có bao nhiêu người nhóm họp nhân danh Ngài?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 18:20 — 'Vì nơi nào có hai ba người nhóm nhau lại trong danh Ta, thì Ta ở giữa họ.'",
+    "language": "vi",
+    "options": [
+      "100 người",
+      "12 người",
+      "10 người",
+      "Hai hoặc ba người"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Hai ba người nhóm trong danh Ngài",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "verseStart": 23,
+    "verseEnd": 35,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Trong ngụ ngôn người đầy tớ chẳng tha thứ, vua tha cho người ấy bao nhiêu nợ?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 18:24 — 'Khi vua khởi soát sổ, thì có người đem nộp một tên kia mắc nợ vua một vạn ta-lâng (10.000 ta-lâng).' Đó là khoản nợ khổng lồ tương đương hàng tỷ.",
+    "language": "vi",
+    "options": [
+      "100 đơ-ni-ê",
+      "10.000 ta-lâng (số rất lớn)",
+      "1.000 đồng bạc",
+      "Một số tiền nhỏ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Người đầy tớ chẳng tha thứ",
+      "Phúc Âm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus phán: 'Hãy để con trẻ đến cùng Ta, đừng ngăn trở chúng nó; vì ___ thuộc về những kẻ giống như chúng.'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 19:14 — 'Vì nước thiên đàng thuộc về những kẻ giống như con trẻ ấy.'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan",
+      "Phước lành",
+      "Nước thiên đàng",
+      "Sự cứu rỗi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Để con trẻ đến",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus bảo người trai trẻ giàu có làm gì để được trọn vẹn?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-thi-ơ 19:21 — 'Nếu ngươi muốn được trọn vẹn, hãy đi bán hết gia tài mà bố thí cho kẻ nghèo nàn, thì ngươi sẽ có của quí ở trên trời; rồi hãy đến mà theo Ta.'",
+    "language": "vi",
+    "options": [
+      "Bán hết gia tài, bố thí cho kẻ nghèo, rồi theo Ta",
+      "Đi đến đền thờ và dâng tế lễ",
+      "Học thuộc luật pháp",
+      "Chịu báp-têm trước"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Người trai trẻ giàu có",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus phán dễ hơn cho con vật nào chui qua lỗ kim hơn là người giàu vào nước Đức Chúa Trời?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 19:24 — 'Lạc đà chui qua lỗ kim còn dễ hơn một người giàu vào nước Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Con voi",
+      "Con bò",
+      "Con ngựa",
+      "Lạc đà"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Lạc đà và lỗ kim",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 20,
+    "verseStart": 1,
+    "verseEnd": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Trong ngụ ngôn các con công nhật trong vườn nho, ai nhận tiền công bằng nhau dù làm khác giờ?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 20:9-12 — 'Người chủ trả mỗi người một đơ-ni-ê dù họ làm từ giờ thứ nhất hay giờ thứ mười một.' Bài học: Nước thiên đàng — chủ ban cho theo lòng nhân từ, không theo công sức.",
+    "language": "vi",
+    "options": [
+      "Chỉ những người vào sớm nhất",
+      "Chỉ những người làm cuối cùng",
+      "Tất cả công nhân, mỗi người một đơ-ni-ê",
+      "Chia theo giờ làm việc"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Công nhật trong vườn nho",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 20,
+    "verseStart": 28,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ma-thi-ơ 20:28 — Con người đến không phải để được phục dịch, song để gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 20:28 — 'Con người đã đến, không phải để người ta hầu việc mình, song để hầu việc người ta, và phó sự sống mình làm giá chuộc nhiều người.'",
+    "language": "vi",
+    "options": [
+      "Để dạy dỗ luật pháp",
+      "Để hầu việc người ta và phó sự sống làm giá chuộc nhiều người",
+      "Để lập vương quốc trên đất",
+      "Để đoán xét thế gian"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Giá chuộc",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 21,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus vào thành Giê-ru-sa-lem ngồi trên con vật nào?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 21:7 — 'Hai môn đồ dẫn lừa cái và lừa con về, trải áo mình trên lưng lừa, và nâng Ngài cỡi lên.' Ứng nghiệm Xa-cha-ri 9:9.",
+    "language": "vi",
+    "options": [
+      "Ngựa trắng",
+      "Lạc đà",
+      "Đi bộ",
+      "Con lừa con"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Vào thành Giê-ru-sa-lem",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 21,
+    "verseStart": 12,
+    "verseEnd": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Khi vào đền thờ, Chúa Jêsus quở trách người ta đã biến nhà cầu nguyện thành gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-thi-ơ 21:13 — 'Có lời chép: Nhà Ta sẽ gọi là nhà cầu nguyện; nhưng các ngươi thì làm cho nhà ấy thành ra ổ trộm cướp.'",
+    "language": "vi",
+    "options": [
+      "Ổ trộm cướp",
+      "Sàn bán hàng",
+      "Nhà tù",
+      "Tòa án"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Tẩy uế đền thờ",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 21,
+    "verseStart": 42,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus trích Thi Thiên 118: 'Hòn đá mà thợ xây nhà loại ra, đã trở nên ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 21:42 — 'Hòn đá đã bị người xây nhà bỏ ra, trở nên đá đầu góc nhà; ấy là một sự lạ trước mắt chúng ta.'",
+    "language": "vi",
+    "options": [
+      "Hòn đá vô dụng",
+      "Hòn đá nhỏ",
+      "Đá đầu góc nhà",
+      "Đá quý"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Đá đầu góc nhà",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Khi người Pha-ri-si hỏi về việc nộp thuế cho Sê-sa, Chúa Jêsus đáp gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 22:21 — 'Vậy, hãy trả cho Sê-sa vật gì của Sê-sa; và trả cho Đức Chúa Trời vật gì của Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Đừng nộp thuế cho Sê-sa",
+      "Hãy bỏ trốn",
+      "Chỉ nộp một nửa",
+      "Hãy trả cho Sê-sa vật của Sê-sa, và cho Đức Chúa Trời vật của Đức Chúa Trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Vật của Sê-sa và của Chúa",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 23,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Ma-thi-ơ 23:23 — Chúa Jêsus quở các thầy thông giáo nộp một phần mười về bạc hà, hồi hương, rau cần, mà bỏ qua điều gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 23:23 — 'Khốn cho các ngươi... vì các ngươi nộp một phần mười bạc hà, hồi hương, rau cần, mà bỏ điều hệ trọng hơn hết trong luật pháp, là sự công bình, sự thương xót và sự trung tín.'",
+    "language": "vi",
+    "options": [
+      "Bố thí cho kẻ nghèo",
+      "Sự công bình, sự thương xót và sự trung tín",
+      "Cầu nguyện và ăn chay",
+      "Giữ ngày Sa-bát"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Khốn cho thầy thông giáo",
+      "Phúc Âm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 24,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Ma-thi-ơ 24:14, điều gì sẽ được giảng ra khắp đất rồi sự cuối cùng sẽ đến?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 24:14 — 'Tin Lành nầy về nước Đức Chúa Trời sẽ được giảng ra khắp đất, để làm chứng cho muôn dân. Bấy giờ sự cuối cùng sẽ đến.'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan loài người",
+      "Luật pháp Môi-se",
+      "Tin Lành về nước Đức Chúa Trời",
+      "Lời cầu nguyện"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Tin Lành rao khắp đất",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 24,
+    "verseStart": 35,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jêsus phán trời đất sẽ qua đi nhưng gì sẽ không qua đi?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-thi-ơ 24:35 — 'Trời đất sẽ qua, nhưng lời Ta nói chẳng bao giờ qua đi.'",
+    "language": "vi",
+    "options": [
+      "Lời Ta",
+      "Đền thờ",
+      "Núi Si-ôn",
+      "Mặt trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Lời Ta không qua đi",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "verseStart": 1,
+    "verseEnd": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Trong ngụ ngôn mười người nữ đồng trinh, năm người khôn đã chuẩn bị gì mà năm người dại không có?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 25:4 — 'Người khôn khi cầm đèn đi thì đem dầu theo trong bình mình.'",
+    "language": "vi",
+    "options": [
+      "Áo trắng",
+      "Bánh và rượu",
+      "Vương miện",
+      "Dầu (đem theo trong bình)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Mười người nữ đồng trinh",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "verseStart": 14,
+    "verseEnd": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Trong ngụ ngôn các ta-lâng, người chủ giao bao nhiêu ta-lâng cho ba đầy tớ?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 25:15 — 'Chủ cho người nầy năm ta-lâng, người kia hai, người khác một, tùy theo tài mỗi người; đoạn người chủ lên đường đi.'",
+    "language": "vi",
+    "options": [
+      "Mỗi người một ta-lâng",
+      "Năm, hai và một ta-lâng",
+      "Ba ta-lâng đồng đều",
+      "Mười, năm, một"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Ngụ ngôn các ta-lâng",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "verseStart": 40,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Trong cảnh phán xét cuối cùng, Vua phán: 'Hễ các ngươi đã làm việc đó cho một người trong những anh em ___, ấy là đã làm cho chính mình Ta vậy.'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 25:40 — 'Quả thật, ta nói cùng các ngươi, hễ các ngươi đã làm việc đó cho một người trong những anh em rất nhỏ nầy của Ta, ấy là đã làm cho chính mình Ta vậy.'",
+    "language": "vi",
+    "options": [
+      "Lớn nhất nầy",
+      "Trung bình nầy",
+      "Rất nhỏ nầy của Ta",
+      "Sang trọng nhất nầy"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Anh em rất nhỏ",
+      "Phúc Âm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "verseStart": 39,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong vườn Ghết-sê-ma-nê, Chúa Jêsus cầu nguyện: 'Cha ơi, nếu có thể được, xin cho chén nầy lìa khỏi Con! Song không theo ý muốn Con, mà theo ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 26:39 — 'Cha ơi! nếu có thể được, xin cho Chén nầy lìa khỏi Con! Song không theo ý muốn Con, mà theo ý muốn Cha.'",
+    "language": "vi",
+    "options": [
+      "Theo ý của các tiên tri",
+      "Theo ý của dân",
+      "Theo ý các thiên sứ",
+      "Theo ý muốn Cha"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Ghết-sê-ma-nê",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "verseStart": 14,
+    "verseEnd": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Giu-đa Ích-ca-ri-ốt bán Chúa Jêsus với giá bao nhiêu miếng bạc?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 26:15 — 'Họ bèn cân ba mươi miếng bạc cho người.' Ứng nghiệm Xa-cha-ri 11:12-13.",
+    "language": "vi",
+    "options": [
+      "10 miếng bạc",
+      "20 miếng bạc",
+      "30 miếng bạc",
+      "100 miếng bạc"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Giu-đa bán Chúa",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "verseStart": 75,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sau khi gà gáy, Phi-e-rơ nhớ lời Chúa và làm gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-thi-ơ 26:75 — 'Phi-e-rơ liền nhớ lại lời Đức Chúa Jêsus đã phán rằng: Trước khi gà gáy, ngươi sẽ chối Ta ba lần. Đoạn, người đi ra và khóc lóc thảm thiết.'",
+    "language": "vi",
+    "options": [
+      "Cười vui",
+      "Đi ra và khóc lóc thảm thiết",
+      "Tự tử",
+      "Đến gặp Chúa Jêsus"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phi-e-rơ chối Chúa",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "verseStart": 50,
+    "verseEnd": 51,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khi Chúa Jêsus trút linh hồn, điều gì xảy ra với bức màn trong đền thờ?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-thi-ơ 27:51 — 'Bấy giờ, cái màn trong đền thờ, bị xé ra làm hai từ trên chí dưới, đất thì rúng động, đá lớn bể ra.'",
+    "language": "vi",
+    "options": [
+      "Bị xé ra làm hai từ trên xuống dưới",
+      "Bị cháy",
+      "Bị cuộn lại",
+      "Đổi màu"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Bức màn đền thờ xé",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "verseStart": 54,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Sau khi Chúa Jêsus chết, viên đội trưởng La-mã đã xưng nhận điều gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 27:54 — 'Khi đội trưởng và những lính cùng giữ Đức Chúa Jêsus, thấy đất rúng động và những điều xảy đến, thì sợ hãi lắm, mà nói rằng: Thật người nầy là Con Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Đây là tiên tri lớn",
+      "Đây là vua dân Do Thái",
+      "Thật người nầy là Con Đức Chúa Trời",
+      "Đây là một thánh nhân"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Đội trưởng xưng nhận",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Tại mộ trống, thiên sứ phán với các phụ nữ điều gì về Chúa Jêsus?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-thi-ơ 28:6 — 'Ngài không ở đây đâu; Ngài đã sống lại như Ngài đã phán. Hãy đến xem chỗ Ngài đã nằm.'",
+    "language": "vi",
+    "options": [
+      "Ngài còn đang ngủ",
+      "Ngài đã bị cướp đi",
+      "Ngài không ở đây; Ngài đã sống lại như Ngài đã phán",
+      "Ngài đang chờ ở Ga-li-lê"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Mộ trống",
+      "Phúc Âm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Sau khi sống lại, Chúa Jêsus tuyên bố mình có gì 'trên trời và dưới đất'?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-thi-ơ 28:18 — 'Hết cả quyền phép ở trên trời và dưới đất đã giao cho Ta.'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan",
+      "Vinh quang",
+      "Tình yêu",
+      "Hết cả quyền phép"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Hết cả quyền phép",
+      "Phúc Âm",
+      "Trung cấp"
+    ]
   }
 ]
