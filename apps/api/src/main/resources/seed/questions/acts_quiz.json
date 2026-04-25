@@ -911,5 +911,751 @@
       "Lịch sử",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "verseStart": 9,
+    "verseEnd": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Sau khi Chúa Jêsus được cất lên trời, ai hiện ra với các môn đồ?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Công Vụ 1:10-11 — 'Có hai người nam mặc áo trắng hiện đến trước mặt họ, và nói rằng: Hỡi người Ga-li-lê, sao các ngươi đứng ngóng lên trời làm chi?'",
+    "language": "vi",
+    "options": [
+      "Một thiên sứ",
+      "Tiên tri Ê-li",
+      "Hai người mặc áo trắng (hai thiên sứ)",
+      "Mô-se và Ê-li"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Chúa thăng thiên",
+      "Lịch sử Hội Thánh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "verseStart": 23,
+    "verseEnd": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ai được chọn thay thế Giu-đa Ích-ca-ri-ốt để đủ mười hai sứ đồ?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Công Vụ 1:26 — 'Họ bắt thăm, thăm trúng nhằm Ma-thia; người được kể là một trong mười một sứ đồ.'",
+    "language": "vi",
+    "options": [
+      "Bê-sa-ba",
+      "Ma-thia",
+      "Sau-lơ",
+      "Ti-mô-thê"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Chọn Ma-thia",
+      "Lịch sử Hội Thánh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 38,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phi-e-rơ trả lời đám đông sau bài giảng Lễ Ngũ Tuần: phải làm gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Công Vụ 2:38 — 'Hãy hối cải, ai nấy phải nhân danh Đức Chúa Jêsus chịu phép báp-têm, để được tha tội mình, rồi sẽ được lãnh sự ban cho Đức Thánh Linh.'",
+    "language": "vi",
+    "options": [
+      "Hãy giữ luật pháp",
+      "Hãy đi đến đền thờ",
+      "Hãy hối cải, chịu báp-têm trong danh Chúa Jêsus, để được tha tội và lãnh Thánh Linh",
+      "Hãy đợi ngày Chúa đến"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Hối cải báp-têm",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 42,
+    "verseEnd": 47,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Đặc trưng của hội thánh đầu tiên trong Công Vụ 2 là gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Công Vụ 2:42 — 'Vả, những kẻ ấy bền lòng giữ lời dạy của các sứ đồ, sự thông công của anh em, lễ bẻ bánh, và sự cầu nguyện.'",
+    "language": "vi",
+    "options": [
+      "Chỉ giữ luật pháp Môi-se",
+      "Tách riêng khỏi xã hội hoàn toàn",
+      "Lập đền thờ riêng",
+      "Bền lòng theo lời dạy sứ đồ, thông công, bẻ bánh, cầu nguyện"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Hội thánh đầu tiên",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phi-e-rơ nói gì với người què tại cửa Đẹp đền thờ?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Công Vụ 3:6 — 'Ta chẳng có vàng bạc chi hết, song điều ta có thì ta cho ngươi: Nhân danh Đức Chúa Jêsus Christ ở Na-xa-rét, hãy bước đi!'",
+    "language": "vi",
+    "options": [
+      "Ta chẳng có vàng bạc; nhân danh Chúa Jêsus, hãy bước đi",
+      "Tôi sẽ giúp bạn về tài chính",
+      "Hãy đợi đến ngày khác",
+      "Hãy đi gặp các thầy tế lễ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Người què cửa Đẹp",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Công Vụ 4:12 nói chỉ có một danh nào dưới trời mà loài người được cứu?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Công Vụ 4:12 — 'Chẳng có sự cứu rỗi trong đấng nào khác; vì ở dưới trời, chẳng có danh nào khác ban cho loài người, để chúng ta phải nhờ đó mà được cứu.'",
+    "language": "vi",
+    "options": [
+      "Danh Đức Giê-hô-va",
+      "Danh Đức Chúa Jêsus",
+      "Danh Áp-ra-ham",
+      "Danh Mê-si-a"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Chỉ một danh cứu",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "verseStart": 32,
+    "verseEnd": 37,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Hội thánh đầu tiên đối xử với của cải như thế nào?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Công Vụ 4:32 — 'Vả, người tin theo đông lắm, cứ một lòng một ý cùng nhau. Chẳng ai kể của mình là của riêng; nhưng kể mọi vật là của chung.'",
+    "language": "vi",
+    "options": [
+      "Mỗi người giữ riêng của mình",
+      "Bị bắt nộp toàn bộ tài sản",
+      "Coi mọi vật là của chung; ai có dư thì chia cho ai thiếu",
+      "Đem tất cả về Giê-ru-sa-lem"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Của chung",
+      "Lịch sử Hội Thánh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Cặp vợ chồng nào ngã chết khi nói dối về của dâng?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Công Vụ 5:1-10 — 'A-na-nia, đồng vợ là Sa-phi-ra, bán một sản nghiệp.' Cả hai bị Đức Thánh Linh phạt vì nói dối.",
+    "language": "vi",
+    "options": [
+      "A-qui-la và Bê-rít-sin-la",
+      "Phi-líp và A-cap",
+      "Si-môn và Tabitha",
+      "A-na-nia và Sa-phi-ra"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "A-na-nia và Sa-phi-ra",
+      "Lịch sử Hội Thánh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "verseStart": 29,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Khi tòa công luận cấm các sứ đồ giảng đạo, Phi-e-rơ trả lời thế nào?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Công Vụ 5:29 — 'Phi-e-rơ và các sứ đồ trả lời rằng: Thà phải vâng lời Đức Chúa Trời còn hơn là vâng lời người ta.'",
+    "language": "vi",
+    "options": [
+      "Vâng theo lệnh tòa công luận",
+      "Thà vâng lời Đức Chúa Trời còn hơn vâng lời người ta",
+      "Im lặng và đi nơi khác",
+      "Đợi ý chỉ Chúa thêm"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Vâng lời Chúa hơn người",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Hội thánh chọn bao nhiêu chấp sự để phụ trách phân phát thực phẩm cho các bà góa?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Công Vụ 6:3 — 'Hỡi anh em, hãy chọn trong vòng anh em bảy người có danh tốt, đầy dẫy Đức Thánh Linh và trí khôn.'",
+    "language": "vi",
+    "options": [
+      "Mười hai người",
+      "Năm người",
+      "Bảy người",
+      "Mười người"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Bảy chấp sự đầu tiên",
+      "Lịch sử Hội Thánh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "verseStart": 55,
+    "verseEnd": 60,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Trước khi tử đạo, Ê-tiên nhìn lên trời thấy điều gì lạ?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Công Vụ 7:55-56 — 'Ê-tiên... nhìn lên trời, thấy sự vinh hiển của Đức Chúa Trời, và Đức Chúa Jêsus đứng bên hữu Đức Chúa Trời.' Lưu ý: Chúa Jêsus đứng (chứ không ngồi).",
+    "language": "vi",
+    "options": [
+      "Một thiên sứ",
+      "Mặt trời tối sầm",
+      "Vinh hiển Đức Chúa Trời và Chúa Jêsus đứng bên hữu Cha",
+      "Mây đỏ rực"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Ê-tiên tử đạo",
+      "Lịch sử Hội Thánh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "verseStart": 26,
+    "verseEnd": 39,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phi-líp được Thánh Linh đưa đến gặp ai trên đường Ga-xa?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Công Vụ 8:27 — 'Có một hoạn quan Ê-thi-ô-bi, làm quan đại thần của Can-đác... đang ngồi trên xe đọc sách tiên tri Ê-sai.'",
+    "language": "vi",
+    "options": [
+      "Một thầy tế lễ Do Thái",
+      "Một người La Mã",
+      "Một người Sa-ma-ri",
+      "Hoạn quan Ê-thi-ô-bi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Hoạn quan Ê-thi-ô-bi",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "verseStart": 36,
+    "verseEnd": 43,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Phi-e-rơ tại Giốp-bê đã làm cho ai sống lại?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Công Vụ 9:40 — 'Phi-e-rơ phán rằng: Hỡi Ta-bi-tha, hãy chỗi dậy! Người mở mắt, thấy Phi-e-rơ, bèn ngồi dậy.'",
+    "language": "vi",
+    "options": [
+      "Ê-nê",
+      "Ta-bi-tha (Đô-ca)",
+      "Cọt-nây",
+      "Phi-líp"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Ta-bi-tha sống lại",
+      "Lịch sử Hội Thánh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "verseStart": 34,
+    "verseEnd": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Phi-e-rơ tại nhà Cọt-nây nhận biết điều gì về Đức Chúa Trời?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Công Vụ 10:34-35 — 'Phi-e-rơ bèn mở miệng nói rằng: Quả thật ta biết Đức Chúa Trời chẳng vị nể ai... bất luận trong dân nào.'",
+    "language": "vi",
+    "options": [
+      "Chỉ cứu dân Y-sơ-ra-ên",
+      "Chỉ cứu người tin trước",
+      "Chẳng vị nể ai; người nào sợ Ngài và làm điều công bình thì được tiếp nhận, bất luận trong dân nào",
+      "Chỉ chấp nhận người chịu cắt bì"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Tin Lành cho dân ngoại",
+      "Lịch sử Hội Thánh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 11,
+    "verseStart": 26,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Tại đâu các môn đồ lần đầu tiên được gọi là 'Cơ-đốc nhân' (Christian)?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Công Vụ 11:26 — 'Ấy là tại thành An-ti-ốt, người ta bắt đầu xưng môn đồ là Cơ-đốc nhân.'",
+    "language": "vi",
+    "options": [
+      "Giê-ru-sa-lem",
+      "An-ti-ốt",
+      "Rô-ma",
+      "Ê-phê-sô"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Cơ-đốc nhân",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 12,
+    "verseStart": 5,
+    "verseEnd": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phi-e-rơ thoát khỏi tù như thế nào trong Công Vụ 12?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Công Vụ 12:7 — 'Một thiên sứ của Chúa hiện ra, ánh sáng soi cả ngục; thiên sứ đập vào sườn Phi-e-rơ, đánh thức người, mà rằng: Hãy mau chỗi dậy.' Xiềng rớt khỏi tay Phi-e-rơ.",
+    "language": "vi",
+    "options": [
+      "Một thiên sứ đến giải cứu, xiềng rớt khỏi tay",
+      "Quân lính say ngủ",
+      "Một trận động đất",
+      "Vua tha"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Phi-e-rơ thoát ngục",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 12,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Vì sao vua Hê-rốt (A-gríp-ba I) chết theo Công Vụ 12:23?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Công Vụ 12:23 — 'Liền lúc đó, có thiên sứ của Chúa đánh vua Hê-rốt, bởi cớ chẳng nhường vinh hiển cho Đức Chúa Trời; và vua bị trùng đục mà chết.'",
+    "language": "vi",
+    "options": [
+      "Bị Sau-lơ giết",
+      "Trận chiến tử trận",
+      "Bệnh thường tự nhiên",
+      "Bị thiên sứ đánh vì không nhường vinh hiển cho Đức Chúa Trời, bị trùng đục"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Hê-rốt bị đánh chết",
+      "Lịch sử Hội Thánh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Đức Thánh Linh phán hội thánh An-ti-ốt biệt riêng ai cho công tác giáo sứ?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Công Vụ 13:2 — 'Hãy biệt Ba-na-ba và Sau-lơ riêng ra cho Ta, đặng làm công việc Ta đã gọi làm.'",
+    "language": "vi",
+    "options": [
+      "Phi-e-rơ và Giăng",
+      "Ba-na-ba và Sau-lơ (Phao-lô)",
+      "Si-la và Mác",
+      "Ti-mô-thê và Tít"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Sai phái giáo sứ",
+      "Lịch sử Hội Thánh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 14,
+    "verseStart": 11,
+    "verseEnd": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Tại Lít-trơ, người ta gọi Phao-lô và Ba-na-ba bằng tên hai vị thần Hy-lạp nào?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Công Vụ 14:12 — 'Họ gọi Ba-na-ba là Giu-bi-tê (Zeus), còn Phao-lô là Mẹt-cu-ya (Hermes), vì là người đứng đầu trong việc giảng.'",
+    "language": "vi",
+    "options": [
+      "A-pô-lô và Ar-tê-mit",
+      "Pô-sê-i-đôn và A-rê",
+      "Ba-na-ba = Giu-bi-tê (Zeus); Phao-lô = Mẹt-cu-ya (Hermes)",
+      "Ô-rê-ôn và Cu-pi-đô"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Lít-trơ",
+      "Lịch sử Hội Thánh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "verseStart": 25,
+    "verseEnd": 26,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô và Si-la làm gì vào nửa đêm trong nhà tù Phi-líp?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Công Vụ 16:25-26 — 'Lối nửa đêm, Phao-lô và Si-la đương cầu nguyện, hát ngợi khen Đức Chúa Trời... thình lình có động đất rất lớn.'",
+    "language": "vi",
+    "options": [
+      "Lập kế trốn",
+      "Khóc lóc cầu xin",
+      "Cầu nguyện và hát ngợi khen Đức Chúa Trời (động đất xảy đến)",
+      "Đợi sáng để bị xét xử"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Phi-líp tù ngục",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "verseStart": 30,
+    "verseEnd": 31,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Người đề lao Phi-líp hỏi 'Tôi phải làm gì để được cứu?' — Phao-lô trả lời thế nào?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Công Vụ 16:31 — 'Hãy tin Đức Chúa Jêsus, thì ngươi và cả nhà ngươi đều sẽ được cứu rỗi.'",
+    "language": "vi",
+    "options": [
+      "Hãy chịu báp-têm trước",
+      "Hãy tin Đức Chúa Jêsus, ngươi và cả nhà sẽ được cứu",
+      "Hãy giữ luật pháp Môi-se",
+      "Hãy đợi đến Lễ Ngũ Tuần"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Tin Chúa Jêsus",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Người Bê-rê được khen vì làm gì hằng ngày để xét lời Phao-lô giảng?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Công Vụ 17:11 — 'Người Bê-rê có ý hẳn hòi hơn người Tê-sa-lô-ni-ca, đã nhận lấy đạo cách sốt sắng, hằng ngày tra xem Kinh Thánh để biết lời giảng đó là phải hay chăng.'",
+    "language": "vi",
+    "options": [
+      "Tranh luận với Phao-lô",
+      "Đem báo cáo lên các quan",
+      "Nghe rồi đi hỏi triết gia",
+      "Tra xem Kinh Thánh hằng ngày để xét lời giảng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Người Bê-rê",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 18,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô gặp đôi vợ chồng nào tại Cô-rinh-tô, cùng nghề may trại?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Công Vụ 18:2-3 — 'Người gặp một người Giu-đa, tên là A-qui-la... với vợ là Bê-rít-sin-la... vì cùng một nghề, ở chung làm việc với nhau, vì họ làm nghề may trại.'",
+    "language": "vi",
+    "options": [
+      "Ti-mô-thê và Tít",
+      "Si-la và Lu-ca",
+      "A-qui-la và Bê-rít-sin-la (vợ)",
+      "Phi-líp và Đa-ma-rít"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "A-qui-la Bê-rít-sin-la",
+      "Lịch sử Hội Thánh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 19,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Tại Ê-phê-sô, Đức Chúa Trời làm phép lạ qua Phao-lô, thậm chí qua vật gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Công Vụ 19:12 — 'Đến nỗi người ta lấy khăn và áo đã bận vào mình người mà để trên các người đau yếu, thì họ được lành bịnh.'",
+    "language": "vi",
+    "options": [
+      "Khăn và áo của Phao-lô",
+      "Cây gậy của Phao-lô",
+      "Sách Phao-lô viết",
+      "Bóng của Phao-lô"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Phép lạ tại Ê-phê-sô",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 20,
+    "verseStart": 35,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô trích lời Chúa Jêsus về sự ban cho trong Công Vụ 20:35 là gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Công Vụ 20:35 — 'Ban cho thì có phước hơn là nhận lãnh.'",
+    "language": "vi",
+    "options": [
+      "Người vâng lời Chúa thì có phước",
+      "Ban cho thì có phước hơn là nhận lãnh",
+      "Phước cho người nghèo trong tâm linh",
+      "Yêu kẻ thù mình thì có phước"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Ban cho có phước",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 24,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Khi Phao-lô giảng cho quan Phê-lít về sự công bình, sự tiết độ và sự phán xét, Phê-lít đã làm gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Công Vụ 24:25 — 'Phê-lít run sợ, nói rằng: Bây giờ ngươi hãy lui; đợi khi nào ta thấy có dịp tiện, sẽ gọi lại.'",
+    "language": "vi",
+    "options": [
+      "Tin nhận Đấng Christ ngay",
+      "Phóng thích Phao-lô",
+      "Chuyển ông sang Sê-sa-rê",
+      "Run sợ và bảo lui ra; đợi dịp tiện sẽ gọi lại"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Phê-lít run sợ",
+      "Lịch sử Hội Thánh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 26,
+    "verseStart": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Vua A-gríp-ba II nói gì với Phao-lô sau lời chứng?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Công Vụ 26:28 — 'A-gríp-ba phán cùng Phao-lô rằng: Thiếu chút nữa ngươi khuyên ta trở nên tín đồ Đấng Christ!'",
+    "language": "vi",
+    "options": [
+      "Ta sẽ tin ngay",
+      "Ngươi nói thật điên rồ",
+      "Thiếu chút nữa ngươi khuyên ta trở nên tín đồ Đấng Christ",
+      "Ta sẽ giết ngươi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "A-gríp-ba gần được thuyết phục",
+      "Lịch sử Hội Thánh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 28,
+    "verseStart": 3,
+    "verseEnd": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trên đảo Mê-li-tê, Phao-lô bị con vật nào cắn vào tay nhưng không bị hại?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Công Vụ 28:3 — 'Một con rắn lục thừa khi nóng bò ra, quấn vào tay người.' Phao-lô giũ vào lửa và không bị hại.",
+    "language": "vi",
+    "options": [
+      "Một con rắn lục",
+      "Một con bò cạp",
+      "Một con chó dữ",
+      "Một con sư tử"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Công Vụ",
+      "Rắn lục Mê-li-tê",
+      "Lịch sử Hội Thánh",
+      "Cơ bản"
+    ]
   }
 ]

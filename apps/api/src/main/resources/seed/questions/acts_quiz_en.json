@@ -911,5 +911,751 @@
       "History",
       "Basic"
     ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "verseStart": 9,
+    "verseEnd": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "After Jesus was taken up to heaven, who appeared to the disciples?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 1:10-11 — 'Behold, two men stood by them in white robes, and said, Men of Galilee, why do you stand looking into heaven?'",
+    "language": "en",
+    "options": [
+      "A single angel",
+      "Elijah the prophet",
+      "Two men in white robes (two angels)",
+      "Moses and Elijah"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Ascension",
+      "Church History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "verseStart": 23,
+    "verseEnd": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who was chosen to replace Judas Iscariot to complete the twelve apostles?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 1:26 — 'They cast lots for them, and the lot fell on Matthias, and he was numbered with the eleven apostles.'",
+    "language": "en",
+    "options": [
+      "Barsabbas",
+      "Matthias",
+      "Saul",
+      "Timothy"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Choosing Matthias",
+      "Church History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 38,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Peter tell the crowd they must do after his Pentecost sermon?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 2:38 — 'Repent and be baptized every one of you in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit.'",
+    "language": "en",
+    "options": [
+      "Keep the law",
+      "Go to the temple",
+      "Repent and be baptized in the name of Jesus, for the forgiveness of sins, and receive the Holy Spirit",
+      "Wait for the Lord's coming"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Repent and Be Baptized",
+      "Church History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 42,
+    "verseEnd": 47,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What characterized the early church in Acts 2?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 2:42 — 'They devoted themselves to the apostles' teaching and the fellowship, to the breaking of bread and the prayers.'",
+    "language": "en",
+    "options": [
+      "Only kept the Mosaic law",
+      "Completely separated from society",
+      "Built their own temple",
+      "Devoted to apostles' teaching, fellowship, breaking of bread, and prayer"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Early Church",
+      "Church History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Peter say to the lame man at the Beautiful Gate?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Acts 3:6 — 'Silver and gold I have not, but what I have I give to you. In the name of Jesus Christ of Nazareth, rise up and walk!'",
+    "language": "en",
+    "options": [
+      "I have no silver or gold; in the name of Jesus, rise up and walk",
+      "I'll help you financially",
+      "Wait for another day",
+      "Go see the priests"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Lame Man at Beautiful Gate",
+      "Church History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Acts 4:12 says there is only one name under heaven by which men must be saved — what name?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 4:12 — 'And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.'",
+    "language": "en",
+    "options": [
+      "The name of YHWH",
+      "The name of Jesus",
+      "The name of Abraham",
+      "The name of Messiah"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Only One Name",
+      "Church History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "verseStart": 32,
+    "verseEnd": 37,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How did the early church treat their possessions?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 4:32 — 'Now the full number of those who believed were of one heart and soul, and no one said that any of the things that belonged to him was his own, but they had everything in common.'",
+    "language": "en",
+    "options": [
+      "Each kept his own",
+      "Forced to give all",
+      "Had everything in common; those with surplus gave to those in need",
+      "Brought all to Jerusalem"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "All Things in Common",
+      "Church History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "verseStart": 1,
+    "verseEnd": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What couple fell dead for lying about their offering?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 5:1-10 — 'A man named Ananias, with his wife Sapphira, sold a piece of property.' Both were struck dead by the Holy Spirit for lying.",
+    "language": "en",
+    "options": [
+      "Aquila and Priscilla",
+      "Philip and Agabus",
+      "Simon and Tabitha",
+      "Ananias and Sapphira"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Ananias and Sapphira",
+      "Church History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "verseStart": 29,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the Sanhedrin forbade the apostles to preach, how did Peter answer?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 5:29 — 'Peter and the apostles answered, We must obey God rather than men.'",
+    "language": "en",
+    "options": [
+      "Submit to the Sanhedrin's order",
+      "We must obey God rather than men",
+      "Be silent and go elsewhere",
+      "Wait for further direction"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Obey God Rather Than Men",
+      "Church History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How many deacons did the church choose to oversee distribution to the widows?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 6:3 — 'Therefore, brothers, pick out from among you seven men of good repute, full of the Spirit and of wisdom.'",
+    "language": "en",
+    "options": [
+      "Twelve men",
+      "Five men",
+      "Seven men",
+      "Ten men"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Seven Deacons",
+      "Church History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "verseStart": 55,
+    "verseEnd": 60,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Before being martyred, what did Stephen see when he looked into heaven?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 7:55-56 — 'But he, full of the Holy Spirit, gazed into heaven and saw the glory of God, and Jesus standing at the right hand of God.' Note: Jesus was standing (not seated).",
+    "language": "en",
+    "options": [
+      "A single angel",
+      "Sun darkening",
+      "The glory of God and Jesus standing at God's right hand",
+      "Bright red clouds"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Stephen's Martyrdom",
+      "Church History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "verseStart": 26,
+    "verseEnd": 39,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whom did the Spirit lead Philip to meet on the road to Gaza?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 8:27 — 'An Ethiopian, a eunuch, a court official of Candace, queen of the Ethiopians... was sitting in his chariot reading the prophet Isaiah.'",
+    "language": "en",
+    "options": [
+      "A Jewish priest",
+      "A Roman",
+      "A Samaritan",
+      "An Ethiopian eunuch"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Ethiopian Eunuch",
+      "Church History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "verseStart": 36,
+    "verseEnd": 43,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whom did Peter raise from the dead at Joppa?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 9:40 — 'Peter said, Tabitha, arise. And she opened her eyes, and when she saw Peter she sat up.'",
+    "language": "en",
+    "options": [
+      "Aeneas",
+      "Tabitha (Dorcas)",
+      "Cornelius",
+      "Philip"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Tabitha Raised",
+      "Church History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "verseStart": 34,
+    "verseEnd": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Peter realize about God at Cornelius's house?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 10:34-35 — 'So Peter opened his mouth and said: Truly I understand that God shows no partiality, but in every nation anyone who fears him and does what is right is acceptable to him.'",
+    "language": "en",
+    "options": [
+      "Saves only Israel",
+      "Saves only first believers",
+      "Shows no partiality; in every nation those who fear Him and do right are acceptable",
+      "Accepts only the circumcised"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Gospel for Gentiles",
+      "Church History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 11,
+    "verseStart": 26,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where were the disciples first called 'Christians'?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 11:26 — 'And in Antioch the disciples were first called Christians.'",
+    "language": "en",
+    "options": [
+      "Jerusalem",
+      "Antioch",
+      "Rome",
+      "Ephesus"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Christians",
+      "Church History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 12,
+    "verseStart": 5,
+    "verseEnd": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How did Peter escape from prison in Acts 12?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Acts 12:7 — 'And behold, an angel of the Lord stood next to him, and a light shone in the cell. He struck Peter on the side and woke him.' The chains fell off Peter's hands.",
+    "language": "en",
+    "options": [
+      "An angel rescued him; chains fell off his hands",
+      "The guards fell asleep",
+      "An earthquake",
+      "The king released him"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Peter Escapes Prison",
+      "Church History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 12,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Why did King Herod (Agrippa I) die in Acts 12:23?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 12:23 — 'Immediately an angel of the Lord struck him down, because he did not give God the glory, and he was eaten by worms and breathed his last.'",
+    "language": "en",
+    "options": [
+      "Killed by Saul",
+      "Battle casualty",
+      "Natural illness",
+      "Struck by an angel for not giving God the glory; eaten by worms"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Herod Struck Down",
+      "Church History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whom did the Holy Spirit tell the church at Antioch to set apart for missionary work?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 13:2 — 'Set apart for me Barnabas and Saul for the work to which I have called them.'",
+    "language": "en",
+    "options": [
+      "Peter and John",
+      "Barnabas and Saul (Paul)",
+      "Silas and Mark",
+      "Timothy and Titus"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Missionary Sending",
+      "Church History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 14,
+    "verseStart": 11,
+    "verseEnd": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "At Lystra, by what two Greek god names did the people call Paul and Barnabas?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 14:12 — 'Barnabas they called Zeus, and Paul, Hermes, because he was the chief speaker.'",
+    "language": "en",
+    "options": [
+      "Apollo and Artemis",
+      "Poseidon and Ares",
+      "Barnabas = Zeus; Paul = Hermes",
+      "Orion and Cupid"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Lystra",
+      "Church History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "verseStart": 25,
+    "verseEnd": 26,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Paul and Silas do at midnight in the Philippian jail?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 16:25-26 — 'About midnight Paul and Silas were praying and singing hymns to God... and suddenly there was a great earthquake.'",
+    "language": "en",
+    "options": [
+      "Plotted escape",
+      "Wept and pleaded",
+      "Prayed and sang hymns to God (an earthquake came)",
+      "Waited for trial in the morning"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Philippian Jail",
+      "Church History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "verseStart": 30,
+    "verseEnd": 31,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "The Philippian jailer asked, 'What must I do to be saved?' — what did Paul answer?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 16:31 — 'Believe in the Lord Jesus, and you will be saved, you and your household.'",
+    "language": "en",
+    "options": [
+      "First be baptized",
+      "Believe in the Lord Jesus, and you and your household will be saved",
+      "Keep the law of Moses",
+      "Wait for Pentecost"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Believe in the Lord Jesus",
+      "Church History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What were the Bereans commended for doing daily to test Paul's preaching?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 17:11 — 'Now these Jews were more noble than those in Thessalonica; they received the word with all eagerness, examining the Scriptures daily to see if these things were so.'",
+    "language": "en",
+    "options": [
+      "Debating with Paul",
+      "Reporting to officials",
+      "Asking philosophers",
+      "Examining the Scriptures daily to test the message"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Bereans",
+      "Church History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 18,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What couple did Paul meet at Corinth, who were tentmakers like him?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 18:2-3 — 'And he found a Jew named Aquila... with his wife Priscilla... and because he was of the same trade he stayed with them and worked, for they were tentmakers by trade.'",
+    "language": "en",
+    "options": [
+      "Timothy and Titus",
+      "Silas and Luke",
+      "Aquila and Priscilla",
+      "Philip and Damaris"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Aquila and Priscilla",
+      "Church History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 19,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At Ephesus, God did extraordinary miracles through Paul, even through what objects?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Acts 19:12 — 'So that even handkerchiefs or aprons that had touched his skin were carried away to the sick, and their diseases left them.'",
+    "language": "en",
+    "options": [
+      "Handkerchiefs and aprons that had touched Paul",
+      "Paul's staff",
+      "Paul's writings",
+      "Paul's shadow"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Miracles at Ephesus",
+      "Church History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 20,
+    "verseStart": 35,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What saying of Jesus did Paul quote in Acts 20:35 about giving?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 20:35 — 'It is more blessed to give than to receive.'",
+    "language": "en",
+    "options": [
+      "Blessed are those who obey",
+      "It is more blessed to give than to receive",
+      "Blessed are the poor in spirit",
+      "Blessed are those who love their enemies"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "More Blessed to Give",
+      "Church History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 24,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "When Paul preached to Felix about righteousness, self-control, and judgment, what did Felix do?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 24:25 — 'Felix was alarmed and said, Go away for the present. When I get an opportunity I will summon you.'",
+    "language": "en",
+    "options": [
+      "Believed in Christ at once",
+      "Released Paul",
+      "Sent him to Caesarea",
+      "Was alarmed and said: leave for now; when convenient, I'll call you"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Felix Alarmed",
+      "Church History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 26,
+    "verseStart": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What did King Agrippa II say to Paul after his testimony?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 26:28 — 'Agrippa said to Paul, In a short time would you persuade me to be a Christian?'",
+    "language": "en",
+    "options": [
+      "I will believe at once",
+      "You speak madness",
+      "In a short time would you persuade me to be a Christian?",
+      "I will kill you"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Agrippa Almost Persuaded",
+      "Church History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 28,
+    "verseStart": 3,
+    "verseEnd": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On the island of Malta, what creature bit Paul on the hand without harming him?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Acts 28:3 — 'A viper came out because of the heat and fastened on his hand.' Paul shook it into the fire and was unharmed.",
+    "language": "en",
+    "options": [
+      "A viper",
+      "A scorpion",
+      "A wild dog",
+      "A lion"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "Viper at Malta",
+      "Church History",
+      "Basic"
+    ]
   }
 ]
