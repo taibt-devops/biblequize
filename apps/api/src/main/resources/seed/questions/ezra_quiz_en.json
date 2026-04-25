@@ -1,0 +1,607 @@
+[
+  {
+    "book": "Ezra",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 1:1, of which kingdom is Cyrus king?",
+    "correctAnswer": [0],
+    "explanation": "Ezra 1:1 — 'In the first year of Cyrus king of Persia, that the word of the LORD by the mouth of Jeremiah might be fulfilled, the LORD stirred up the spirit of Cyrus king of Persia...'",
+    "language": "en",
+    "options": [
+      "Persia",
+      "Babylon",
+      "Media",
+      "Assyria"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Cyrus king of Persia",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 1:1, in which year of Cyrus's reign was the decree issued?",
+    "correctAnswer": [1],
+    "explanation": "Ezra 1:1 — 'In the first year of Cyrus king of Persia... the LORD stirred up the spirit of Cyrus king of Persia, so that he made a proclamation throughout all his kingdom...'",
+    "language": "en",
+    "options": [
+      "Third year",
+      "First year",
+      "Fifth year",
+      "Tenth year"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "First year of Cyrus",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 1:2, what did Cyrus declare God had charged him to build, and where?",
+    "correctAnswer": [2],
+    "explanation": "Ezra 1:2 — '...The LORD, the God of heaven, has given me all the kingdoms of the earth, and he has charged me to build him a house at Jerusalem, which is in Judah.'",
+    "language": "en",
+    "options": [
+      "A palace at Susa",
+      "A new city in Persia",
+      "A house (temple) at Jerusalem",
+      "A great road from Babylon"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Charge to build the temple",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 1:7, what did Cyrus restore to the people of Israel?",
+    "correctAnswer": [3],
+    "explanation": "Ezra 1:7 — 'Cyrus the king also brought out the vessels of the house of the LORD that Nebuchadnezzar had carried away from Jerusalem and placed in the house of his gods.'",
+    "language": "en",
+    "options": [
+      "Gold and silver wealth",
+      "Ancestral lands",
+      "Protective soldiers",
+      "Vessels of the house of the LORD that Nebuchadnezzar had carried away"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Temple vessels restored",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 1:8, to whom did Cyrus deliver the vessels for return to Judah?",
+    "correctAnswer": [0],
+    "explanation": "Ezra 1:8 — 'Cyrus king of Persia brought these out in the charge of Mithredath the treasurer, who counted them out to Sheshbazzar the prince of Judah.'",
+    "language": "en",
+    "options": [
+      "Sheshbazzar, the prince of Judah",
+      "Darius, king of the Medes",
+      "Artaxerxes who came later",
+      "Mordecai of Benjamin"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Sheshbazzar prince of Judah",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 2,
+    "verseStart": 64,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 2:64, what was the total number of the first returning assembly?",
+    "correctAnswer": [1],
+    "explanation": "Ezra 2:64 — 'The whole assembly together was 42,360, besides their male and female servants...'",
+    "language": "en",
+    "options": [
+      "Twelve thousand three hundred",
+      "Forty-two thousand three hundred sixty (42,360)",
+      "One hundred thousand",
+      "Ninety thousand"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Total of returning assembly",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 3,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 3:2, who was the priest and who was the governor leading the work of building the altar?",
+    "correctAnswer": [2],
+    "explanation": "Ezra 3:2 — 'Then arose Jeshua the son of Jozadak, with his fellow priests, and Zerubbabel the son of Shealtiel with his kinsmen, and they built the altar of the God of Israel...'",
+    "language": "en",
+    "options": [
+      "Aaron (priest) and Moses (governor)",
+      "Jehoiada (priest) and David (governor)",
+      "Jeshua son of Jozadak (priest) and Zerubbabel (governor)",
+      "Paul (priest) and Peter (governor)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Jeshua and Zerubbabel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 3,
+    "verseStart": 11,
+    "verseEnd": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 3:11-13, when the foundation of the temple was laid, how did the people respond?",
+    "correctAnswer": [3],
+    "explanation": "Ezra 3:12-13 — 'But many of the priests and Levites and heads of fathers' houses, old men who had seen the first house, wept with a loud voice when they saw the foundation of this house being laid... while many shouted aloud for joy...' Older men wept remembering Solomon's temple; younger men rejoiced over the new beginning.",
+    "language": "en",
+    "options": [
+      "All were silent",
+      "All wept",
+      "All rejoiced together",
+      "Old men wept loudly (remembering the first house), young men shouted for joy"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Weeping and joy at foundation",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 4,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 4:24, until what year and reign was the work on the temple halted?",
+    "correctAnswer": [0],
+    "explanation": "Ezra 4:24 — 'Then the work on the house of God that is in Jerusalem stopped, and it ceased until the second year of the reign of Darius king of Persia.'",
+    "language": "en",
+    "options": [
+      "Second year of Darius king of Persia",
+      "Fifth year of Cyrus",
+      "Tenth year of Artaxerxes",
+      "Fourth year of Solomon"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Halted until Darius year 2",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 5:1, which two prophets prophesied to encourage the people to continue building?",
+    "correctAnswer": [1],
+    "explanation": "Ezra 5:1 — 'Now the prophets, Haggai and Zechariah the son of Iddo, prophesied to the Jews who were in Judah and Jerusalem, in the name of the God of Israel who was over them.'",
+    "language": "en",
+    "options": [
+      "Jeremiah and Ezekiel",
+      "Haggai and Zechariah",
+      "Hosea and Amos",
+      "Isaiah and Micah"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Haggai and Zechariah encourage",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 6,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 6:15, in which year of Darius was the temple completed?",
+    "correctAnswer": [2],
+    "explanation": "Ezra 6:15 — 'And this house was finished on the third day of the month of Adar, in the sixth year of the reign of Darius the king.' The Second Temple was completed about 516 BC, after roughly seventy years of ruin.",
+    "language": "en",
+    "options": [
+      "Second year",
+      "Fourth year",
+      "Sixth year",
+      "Eighth year"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Second Temple completed",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 6,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 6:19, what feast did the returning exiles celebrate after the temple was completed?",
+    "correctAnswer": [3],
+    "explanation": "Ezra 6:19 — 'On the fourteenth day of the first month, the returned exiles kept the Passover.' The first feast in the new temple — commemorating the LORD's deliverance from Egypt, now applied to deliverance from Babylon.",
+    "language": "en",
+    "options": [
+      "Tabernacles",
+      "Pentecost",
+      "Day of Atonement",
+      "Passover"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Passover after return",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 7,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 7:6, how is Ezra described?",
+    "correctAnswer": [0],
+    "explanation": "Ezra 7:6 — '...this Ezra went up from Babylonia. He was a scribe skilled in the Law of Moses that the LORD, the God of Israel, had given, and the king granted him all that he asked, for the hand of the LORD his God was on him.'",
+    "language": "en",
+    "options": [
+      "A scribe skilled in the Law of Moses",
+      "A high priest",
+      "A military commander",
+      "A famous diviner"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Scribe skilled in Law of Moses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 7,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 7:9, why was Ezra's journey successful?",
+    "correctAnswer": [1],
+    "explanation": "Ezra 7:9 — '...for the good hand of his God was on him.' The phrase 'the good hand of God' is repeated several times in the book.",
+    "language": "en",
+    "options": [
+      "Because a large Persian army escorted him",
+      "Because the good hand of his God was on him",
+      "Because all neighboring nations were friendly",
+      "Because the weather was favorable"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Good hand of God",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 7,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 7:10, what three things had Ezra set his heart to do?",
+    "correctAnswer": [2],
+    "explanation": "Ezra 7:10 — 'For Ezra had set his heart to study the Law of the LORD, and to do it and to teach his statutes and rules in Israel.' Study, practice, then teach — the essential order.",
+    "language": "en",
+    "options": [
+      "Pray, fast, and offer sacrifices",
+      "Record, compile, and lecture",
+      "Study the Law of the LORD, do it, and teach in Israel",
+      "Resist enemies, build the city, appoint commanders"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Study, do, teach",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 8,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 8:21, where did Ezra proclaim a fast before setting out?",
+    "correctAnswer": [3],
+    "explanation": "Ezra 8:21 — 'Then I proclaimed a fast there, at the river Ahava, that we might humble ourselves before our God, to seek from him a safe journey for ourselves, our children, and all our goods.'",
+    "language": "en",
+    "options": [
+      "At Susa",
+      "At Babylon",
+      "At Jerusalem",
+      "At the river Ahava"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Fast at the Ahava",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 8,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 8:22, why was Ezra ashamed to ask the king for soldiers?",
+    "correctAnswer": [0],
+    "explanation": "Ezra 8:22 — '...for I was ashamed to ask the king for a band of soldiers and horsemen to protect us against the enemy on our way, since we had told the king, \"The hand of our God is for good on all who seek him, and the power of his wrath is against all who forsake him.\"'",
+    "language": "en",
+    "options": [
+      "Because he had told the king the hand of God is for good on all who seek Him",
+      "Because he feared the king might suspect his loyalty",
+      "Because he had no money to pay soldiers",
+      "Because he had no authority to ask"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Trust rather than soldiers",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 9,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 9:3, when Ezra heard about the foreign marriages, how did he react?",
+    "correctAnswer": [1],
+    "explanation": "Ezra 9:3 — 'As soon as I heard this, I tore my garment and my cloak and pulled hair from my head and beard and sat appalled.'",
+    "language": "en",
+    "options": [
+      "Ordered immediate expulsion",
+      "Tore his garment, pulled hair from his head and beard, sat appalled",
+      "Stayed silent without reaction",
+      "Held a feast with the elders"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Tearing garment, pulling hair",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 9,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 9:6, how did Ezra begin his prayer of intercession?",
+    "correctAnswer": [2],
+    "explanation": "Ezra 9:6 — '...O my God, I am ashamed and blush to lift my face to you, my God, for our iniquities have risen higher than our heads, and our guilt has mounted up to the heavens.'",
+    "language": "en",
+    "options": [
+      "O Lord, why have You let this happen?",
+      "O Lord, grant us victory",
+      "O my God, I am ashamed and blush to lift my face — our iniquities have risen above our heads",
+      "O Lord, hear my cry"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Ezra's ashamed prayer",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 10,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 10:1, who gathered to Ezra in great number while he was praying?",
+    "correctAnswer": [3],
+    "explanation": "Ezra 10:1 — 'While Ezra prayed and made confession, weeping and casting himself down before the house of God, a very great assembly of men, women, and children, gathered to him out of Israel...'",
+    "language": "en",
+    "options": [
+      "Only priests and Levites",
+      "Only the elders",
+      "Only the officials",
+      "Men, women, and children — a very great assembly"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Great assembly of men, women, children",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 10,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Ezra 10:11, what is the people called to do to set right their sin?",
+    "correctAnswer": [0],
+    "explanation": "Ezra 10:11 — '...make confession to the LORD, the God of your fathers, and do his will. Separate yourselves from the peoples of the land and from the foreign wives.'",
+    "language": "en",
+    "options": [
+      "Confess, do God's will, separate from the peoples of the land and foreign wives",
+      "Offer large compensatory sacrifices",
+      "Build a new temple",
+      "Travel to high places to pray"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Confession and separation",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 1,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Ezra 1:2-3, what does Cyrus's decree include? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Ezra 1:2-3 — '...The LORD, the God of heaven, has given me all the kingdoms of the earth, and he has charged me to build him a house at Jerusalem... Whoever is among you of all his people... let him go up to Jerusalem... and rebuild the house of the LORD...' Three core elements; 'abolishing the law of Moses' is not in the decree.",
+    "language": "en",
+    "options": [
+      "Declares that the LORD charged Cyrus with building the temple",
+      "Permits the people of Israel to return to Jerusalem",
+      "Encourages them to rebuild the house of the LORD",
+      "Abolishes the law of Moses"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Cyrus's decree contents",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 6,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Ezra 6:14-15, by what factors was the Second Temple completed? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Ezra 6:14-15 — '...the elders of the Jews built and prospered through the prophesying of Haggai the prophet and Zechariah the son of Iddo. They finished their building by decree of the God of Israel and by decree of Cyrus and Darius and Artaxerxes king of Persia...' 'Aid of the god Bel' is contrary.",
+    "language": "en",
+    "options": [
+      "Prophesying of Haggai and Zechariah",
+      "Decree of the God of Israel",
+      "Decree of Cyrus, Darius, and Artaxerxes",
+      "Aid of the Babylonian god Bel"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Factors completing the temple",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 7,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Ezra 7:10, what three things in order had Ezra set his heart to do? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Ezra 7:10 — 'For Ezra had set his heart to study the Law of the LORD, and to do it and to teach his statutes and rules in Israel.' Three steps in order: study, practice, teach. 'Punish offenders immediately' is not the goal here.",
+    "language": "en",
+    "options": [
+      "Study the Law of the LORD",
+      "Do (practice) the Law",
+      "Teach the Law to Israel",
+      "Punish all offenders immediately"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Three steps Ezra committed to",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Ezra 9:1-2, from which peoples had Israel failed to separate? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Ezra 9:1-2 — '...the people of Israel and the priests and the Levites have not separated themselves from the peoples of the lands with their abominations, from the Canaanites, the Hittites, the Perizzites, the Jebusites, the Ammonites, the Moabites, the Egyptians, and the Amorites.' 'The Pharisees' is a later Jewish sect, not in the list.",
+    "language": "en",
+    "options": [
+      "Canaanites, Hittites, Perizzites",
+      "Jebusites and Ammonites",
+      "Moabites, Egyptians, Amorites",
+      "The Pharisees"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "History",
+      "Foreign peoples not separated from",
+      "Advanced"
+    ]
+  }
+]

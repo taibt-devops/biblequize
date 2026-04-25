@@ -114,7 +114,7 @@ Mỗi sách cần CẢ VI + EN. Bắt đầu từ size nhỏ nhất để dễ s
 
 **Tier 4 — 30-50 câu (sách lớn missing)**
 - [x] songofsolomon (8 chương) — 25 VI + 25 EN
-- [ ] ezra (10 chương)
+- [x] ezra (10 chương) — 25 VI + 25 EN
 - [ ] 1chronicles (29 chương)
 - [ ] 2chronicles (36 chương)
 
