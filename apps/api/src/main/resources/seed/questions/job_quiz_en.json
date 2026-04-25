@@ -318,5 +318,213 @@
       "Wisdom",
       "Advanced"
     ]
+  },
+  {
+    "book": "Job",
+    "chapter": 1,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "After losing everything, what famous statement did Job make?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Job 1:21 — 'Naked I came from my mother's womb, and naked shall I return. The LORD gave, and the LORD has taken away; blessed be the name of the LORD.'",
+    "language": "en",
+    "options": [
+      "Curse God and die",
+      "I will sue God",
+      "The LORD gave and the LORD has taken away; blessed be the name of the LORD",
+      "Why did God do this to me?"
+    ],
+    "tags": [
+      "Old Testament",
+      "Job",
+      "Praise in Suffering",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Job 3:1, what did Job open his mouth to curse?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Job 3:1 — 'After this Job opened his mouth and cursed the day of his birth.'",
+    "language": "en",
+    "options": [
+      "His friends",
+      "The day of his birth",
+      "Satan",
+      "His wife"
+    ],
+    "tags": [
+      "Old Testament",
+      "Job",
+      "Lament",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Eliphaz in Job 4:7, does the innocent ever perish?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Job 4:7 — 'Remember: who that was innocent ever perished? Or where were the upright cut off?'",
+    "language": "en",
+    "options": [
+      "Eliphaz claims the innocent never perish",
+      "The innocent always die early",
+      "The innocent are always tormented",
+      "No one is innocent"
+    ],
+    "tags": [
+      "Old Testament",
+      "Job",
+      "Eliphaz's Argument",
+      "Wisdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 14,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Job 14:1 describe a man born of woman?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Job 14:1 — 'Man who is born of a woman is few of days and full of trouble.'",
+    "language": "en",
+    "options": [
+      "Full of blessing",
+      "Long-lived and at peace",
+      "Few of days and full of trouble",
+      "Strong and majestic"
+    ],
+    "tags": [
+      "Old Testament",
+      "Job",
+      "Human Life",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 23,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Job 23:10 say will be the result when God has tested Job?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Job 23:10 — 'But he knows the way that I take; when he has tried me, I shall come out as gold.'",
+    "language": "en",
+    "options": [
+      "Will vanish like smoke",
+      "Will die early",
+      "Will turn from his faith",
+      "Will come out as gold"
+    ],
+    "tags": [
+      "Old Testament",
+      "Job",
+      "Tried as Gold",
+      "Wisdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 31,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Job 31:1 says he made a covenant with what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Job 31:1 — 'I have made a covenant with my eyes; how then could I gaze at a virgin?'",
+    "language": "en",
+    "options": [
+      "With his mouth",
+      "With his eyes",
+      "With his feet",
+      "With his hands"
+    ],
+    "tags": [
+      "Old Testament",
+      "Job",
+      "Covenant with Eyes",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 38,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "When God laid the foundations of the earth, according to Job 38:7, who sang and shouted for joy?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Job 38:7 — 'When the morning stars sang together and all the sons of God shouted for joy.'",
+    "language": "en",
+    "options": [
+      "Mankind",
+      "The Assyrian army",
+      "The morning stars and sons of God",
+      "King David"
+    ],
+    "tags": [
+      "Old Testament",
+      "Job",
+      "Creation",
+      "Wisdom",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 41,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What giant creature does Job 41 describe that no one can catch with a fishhook?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Job 41:1 — 'Can you draw out Leviathan with a fishhook or press down his tongue with a cord?'",
+    "language": "en",
+    "options": [
+      "The elephant",
+      "The whale",
+      "An ordinary crocodile",
+      "Leviathan"
+    ],
+    "tags": [
+      "Old Testament",
+      "Job",
+      "Leviathan",
+      "Wisdom",
+      "Intermediate"
+    ]
   }
 ]

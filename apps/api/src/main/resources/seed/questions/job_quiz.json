@@ -318,5 +318,213 @@
       "Văn Thơ",
       "Nâng cao"
     ]
+  },
+  {
+    "book": "Job",
+    "chapter": 1,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sau khi mất hết, Gióp đã nói câu nổi tiếng nào?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Gióp 1:21 — 'Tôi trần truồng lọt khỏi lòng mẹ, và tôi cũng sẽ trần truồng mà về; Đức Giê-hô-va đã ban cho, Đức Giê-hô-va lại cất đi; đáng ngợi khen danh Đức Giê-hô-va!'",
+    "language": "vi",
+    "options": [
+      "Hãy rủa sả Đức Chúa Trời mà chết",
+      "Tôi sẽ kiện Đức Chúa Trời",
+      "Đức Giê-hô-va đã ban cho, Đức Giê-hô-va lại cất đi; đáng ngợi khen danh Đức Giê-hô-va",
+      "Tại sao Chúa làm vậy với tôi?"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Gióp",
+      "Ngợi khen trong khổ nạn",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong Gióp 3:1, Gióp mở miệng nguyền rủa điều gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Gióp 3:1 — 'Sau việc ấy, Gióp mở miệng rủa ngày sinh mình.'",
+    "language": "vi",
+    "options": [
+      "Bạn bè ông",
+      "Ngày sinh mình",
+      "Sa-tan",
+      "Vợ ông"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Gióp",
+      "Than vãn",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Ê-li-pha trong Gióp 4:7, người vô tội có bao giờ chết yểu không?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Gióp 4:7 — 'Ông hãy suy xét lại, ai là người vô tội bị hư mất? Đâu có người ngay thẳng lại bị trừ diệt?'",
+    "language": "vi",
+    "options": [
+      "Ê-li-pha cho rằng kẻ vô tội không hề bị diệt",
+      "Người vô tội luôn chết sớm",
+      "Người vô tội thường bị hành hạ",
+      "Không ai vô tội cả"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Gióp",
+      "Lập luận của Ê-li-pha",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 14,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Gióp 14:1 mô tả đời người sinh bởi đàn bà như thế nào?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Gióp 14:1 — 'Loài người bởi người nữ sanh ra, sống tạm ít ngày, bị đầy dẫy sự khốn khổ.'",
+    "language": "vi",
+    "options": [
+      "Đầy phước hạnh",
+      "Trường thọ và bình an",
+      "Sống tạm ít ngày, đầy dẫy sự khốn khổ",
+      "Mạnh mẽ và oai vệ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Gióp",
+      "Đời người",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 23,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Gióp 23:10 nói khi Đức Chúa Trời thử Gióp, ông sẽ thế nào?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Gióp 23:10 — 'Nhưng Chúa biết con đường tôi đi; khi Ngài đã thử rèn tôi, tôi sẽ ra như vàng.'",
+    "language": "vi",
+    "options": [
+      "Sẽ tan biến như khói",
+      "Sẽ chết yểu",
+      "Sẽ rút lui khỏi đức tin",
+      "Sẽ ra như vàng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Gióp",
+      "Thử rèn như vàng",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 31,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Gióp 31:1 nói ông đã lập giao ước với gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Gióp 31:1 — 'Tôi đã lập giao ước với mắt tôi: Vậy, làm sao tôi còn dám nhìn người nữ đồng trinh?'",
+    "language": "vi",
+    "options": [
+      "Với miệng mình",
+      "Với mắt mình",
+      "Với chân mình",
+      "Với tay mình"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Gióp",
+      "Giao ước với mắt",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 38,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Khi Đức Chúa Trời tạo dựng nền của đất, theo Gióp 38:7, ai đã ca hát và reo mừng?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Gióp 38:7 — 'Trong khi ấy, các sao mai đồng hát hòa nhau, và các con trai Đức Chúa Trời cất tiếng reo mừng.'",
+    "language": "vi",
+    "options": [
+      "Loài người",
+      "Đạo binh A-si-ri",
+      "Các sao mai và các con trai Đức Chúa Trời",
+      "Vua Đa-vít"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Gióp",
+      "Sáng tạo",
+      "Văn Thơ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Job",
+    "chapter": 41,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Gióp 41 mô tả con vật khổng lồ nào không ai bắt được bằng lưỡi câu?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Gióp 41:1 — 'Ngươi có thể câu sấu (Lê-vi-a-than) bằng lưỡi câu, hoặc dùng dây mà xỏ lưỡi nó chăng?'",
+    "language": "vi",
+    "options": [
+      "Con voi",
+      "Cá voi",
+      "Cá sấu thường",
+      "Lê-vi-a-than"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Gióp",
+      "Lê-vi-a-than",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
   }
 ]
