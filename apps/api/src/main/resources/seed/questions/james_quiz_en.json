@@ -327,5 +327,216 @@
       "Epistle",
       "Basic"
     ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does the author of James identify himself?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "James 1:1 — 'James, a servant of God and of the Lord Jesus Christ, To the twelve tribes in the Dispersion: Greetings.'",
+    "language": "en",
+    "options": [
+      "An apostle of Christ",
+      "An elder of the church",
+      "Brother of the Lord Jesus",
+      "A servant of God and of the Lord Jesus Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Greeting",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to James 1:13, who cannot be tempted with evil and tempts no one?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "James 1:13 — 'Let no one say when he is tempted, I am being tempted by God, for God cannot be tempted with evil, and he himself tempts no one.'",
+    "language": "en",
+    "options": [
+      "Mankind",
+      "The angels",
+      "God",
+      "Satan"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Temptation",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "From where does James 1:17 say every good gift and every perfect gift comes?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "James 1:17 — 'Every good gift and every perfect gift is from above, coming down from the Father of lights.'",
+    "language": "en",
+    "options": [
+      "From the apostles",
+      "From the law",
+      "From ancestral blessing",
+      "From above, from the Father of lights"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Grace",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How does James 1:27 describe pure and undefiled religion?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "James 1:27 — 'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.'",
+    "language": "en",
+    "options": [
+      "Bringing many sacrifices",
+      "Visiting orphans and widows in affliction, and keeping unstained from the world",
+      "Memorizing the law",
+      "Going on pilgrimage to Jerusalem"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Pure Religion",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "James 2:1-9 warns the believers not to do what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "James 2:9 — 'But if you show partiality, you are committing sin and are convicted by the law as transgressors.'",
+    "language": "en",
+    "options": [
+      "Bring pagan offerings",
+      "Speak false prophecy",
+      "Show partiality based on wealth in the church",
+      "Forsake the Sabbath"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Partiality",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to James 2:19, who else believes and shudders?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "James 2:19 — 'You believe that God is one; you do well. Even the demons believe — and shudder!'",
+    "language": "en",
+    "options": [
+      "The angels",
+      "The pagan kings",
+      "The animals",
+      "The demons"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Faith and Works",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "James 3:1 warns about what regarding becoming a teacher?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "James 3:1 — 'Not many of you should become teachers, my brothers, for you know that we who teach will be judged with greater strictness.'",
+    "language": "en",
+    "options": [
+      "Many blessings",
+      "Greater strictness in judgment",
+      "No need to study",
+      "Will be honored"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Teaching Responsibility",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "James 5:7-8 urges believers to be patient like whom?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "James 5:7 — 'Be patient, therefore, brothers, until the coming of the Lord. See how the farmer waits for the precious fruit of the earth, being patient about it, until it receives the early and the late rains.'",
+    "language": "en",
+    "options": [
+      "The blacksmith",
+      "The athlete",
+      "The farmer",
+      "The fisherman"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Patience",
+      "Epistle",
+      "Basic"
+    ]
   }
 ]

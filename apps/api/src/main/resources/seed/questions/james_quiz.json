@@ -327,5 +327,216 @@
       "Thư tín",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Tác giả thư Gia-cơ tự xưng là gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Gia-cơ 1:1 — 'Gia-cơ, tôi tớ Đức Chúa Trời và Đức Chúa Jêsus Christ, đạt cho mười hai chi phái ở tan lạc.'",
+    "language": "vi",
+    "options": [
+      "Sứ đồ của Đấng Christ",
+      "Trưởng lão hội thánh",
+      "Anh em của Chúa Jêsus",
+      "Tôi tớ Đức Chúa Trời và Đức Chúa Jêsus Christ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Mở đầu",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Gia-cơ 1:13, ai không thể bị cám dỗ và không cám dỗ ai?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Gia-cơ 1:13 — 'Chớ có ai đang bị cám dỗ mà nói rằng: Ấy là Đức Chúa Trời cám dỗ tôi; vì Đức Chúa Trời chẳng bị sự ác nào cám dỗ được, và chính Ngài cũng không cám dỗ ai.'",
+    "language": "vi",
+    "options": [
+      "Loài người",
+      "Các thiên sứ",
+      "Đức Chúa Trời",
+      "Sa-tan"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Cám dỗ",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Gia-cơ 1:17 nói mọi ơn lành và mọi sự ban cho trọn vẹn đến từ đâu?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Gia-cơ 1:17 — 'Mọi ân điển tốt lành cùng sự ban cho trọn vẹn đều đến từ nơi cao và bởi Cha sáng láng mà xuống.'",
+    "language": "vi",
+    "options": [
+      "Từ các sứ đồ",
+      "Từ luật pháp",
+      "Từ phước lành tổ phụ",
+      "Từ trên cao, bởi Cha sáng láng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Ân điển",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Gia-cơ 1:27 mô tả 'sự tin đạo thanh sạch' là làm gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Gia-cơ 1:27 — 'Sự tin đạo thanh sạch không vết, trước mặt Đức Chúa Trời, Cha chúng ta, là thăm viếng kẻ mồ côi, người góa bụa trong cơn khốn khó của họ, và giữ lấy mình cho khỏi sự ô uế của thế gian.'",
+    "language": "vi",
+    "options": [
+      "Dâng nhiều của lễ",
+      "Thăm viếng kẻ mồ côi, người góa bụa và giữ mình khỏi sự ô uế của thế gian",
+      "Học thuộc luật pháp",
+      "Đi hành hương đến Giê-ru-sa-lem"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Tin đạo thanh sạch",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Gia-cơ 2:1-9 cảnh báo các tín hữu chớ làm gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Gia-cơ 2:9 — 'Nếu anh em làm theo tư vị thì anh em phạm tội, luật pháp bắt phục anh em là kẻ phạm phép.'",
+    "language": "vi",
+    "options": [
+      "Dâng tế lễ ngoại",
+      "Nói tiên tri giả",
+      "Tư vị giàu nghèo trong hội thánh",
+      "Bỏ ngày Sa-bát"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Tư vị",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Gia-cơ 2:19, ngay cả ai cũng tin và run sợ?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Gia-cơ 2:19 — 'Ngươi tin rằng chỉ có một Đức Chúa Trời mà thôi; ngươi tin phải; ma quỉ cũng tin như vậy mà run sợ.'",
+    "language": "vi",
+    "options": [
+      "Các thiên sứ",
+      "Các vua dân ngoại",
+      "Loài thú",
+      "Ma quỉ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Đức tin và việc làm",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Gia-cơ 3:1 cảnh báo về điều gì khi muốn làm thầy?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Gia-cơ 3:1 — 'Hỡi anh em, trong vòng anh em chớ có nhiều người tự lập làm thầy, vì biết rằng chúng ta sẽ phải chịu sự phán xét nặng hơn.'",
+    "language": "vi",
+    "options": [
+      "Sẽ được nhiều phước",
+      "Sẽ chịu sự phán xét nặng hơn",
+      "Sẽ không cần học",
+      "Sẽ được tôn trọng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Trách nhiệm dạy dỗ",
+      "Thư tín",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Gia-cơ 5:7-8 khuyên các tín hữu phải nhịn nhục giống như ai?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Gia-cơ 5:7 — 'Hỡi anh em, vậy hãy nhịn nhục cho tới ngày Chúa đến. Hãy xem kẻ làm ruộng: họ chờ đợi sản vật quí báu dưới đất cho đến chừng nào đã được mưa đầu mùa và cuối mùa.'",
+    "language": "vi",
+    "options": [
+      "Thợ rèn",
+      "Vận động viên",
+      "Người làm ruộng (người trồng trọt)",
+      "Người đánh cá"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Nhịn nhục",
+      "Thư tín",
+      "Cơ bản"
+    ]
   }
 ]

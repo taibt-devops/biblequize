@@ -70,7 +70,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | titus | Titus | Epistle | 0 | 0 | 20 | ❌ |
 | philemon | Philemon | Epistle | 0 | 0 | 20 (min) | ❌ |
 | hebrews | Hebrews | Epistle | 12 | 12 | 50-60 | ⚠️ |
-| james | James | Epistle | 12 | 12 | 30-40 | ⚠️ |
+| james | James | Epistle | 20 | 20 | 30-40 | ⚠️ |
 | 1peter | 1 Peter | Epistle | 20 | 20 | 30-40 | ⚠️ |
 | 2peter | 2 Peter | Epistle | 0 | 0 | 25 | ❌ |
 | 1john | 1 John | Epistle | 12 | 12 | 30-40 | ⚠️ |
