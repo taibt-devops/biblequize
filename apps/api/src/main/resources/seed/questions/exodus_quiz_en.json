@@ -1,0 +1,1918 @@
+[
+  {
+    "book": "Exodus",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What happened to the people of Israel in Egypt?",
+    "options": [
+      "They were exterminated",
+      "They returned to Canaan",
+      "They were fruitful and multiplied greatly",
+      "They became kings of Egypt"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 1:7 — 'But the people of Israel were fruitful and increased greatly; they multiplied and grew exceedingly strong, so that the land was filled with them.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Joseph in Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 1,
+    "verseStart": 15,
+    "verseEnd": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What were the names of the two Hebrew midwives Pharaoh ordered?",
+    "options": [
+      "Rachel and Leah",
+      "Deborah and Rahab",
+      "Miriam and Jochebed",
+      "Shiphrah and Puah"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 1:15 — 'Then the king of Egypt said to the Hebrew midwives, one of whom was named Shiphrah and the other Puah.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 2,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Moses' mother place him in to set him afloat on the Nile?",
+    "options": [
+      "A wooden boat",
+      "A bronze chest",
+      "A large plank",
+      "A basket of bulrushes daubed with bitumen and pitch"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 2:3 — 'She took for him a basket made of bulrushes and daubed it with bitumen and pitch. She put the child in it and placed it among the reeds by the river bank.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 2,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Pharaoh's daughter named the child Moses because she had drawn him out of the water.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 2:10 — 'She named him Moses, because, she said, I drew him out of the water.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 2,
+    "verseStart": 21,
+    "verseEnd": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What was the name of Moses' wife?",
+    "options": [
+      "Miriam",
+      "Hagar",
+      "Zipporah",
+      "Rachel"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 2:21 — 'Moses agreed to stay with the man, and he gave Moses his daughter Zipporah.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In what form did God appear to Moses?",
+    "options": [
+      "A pillar of fire",
+      "A flame of fire in a bush",
+      "A great cloud",
+      "A rainbow in the sky"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Exodus 3:2 — 'The angel of the LORD appeared to him in a flame of fire out of the midst of a bush.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "On which mountain was the burning bush?",
+    "options": [
+      "Mount Horeb",
+      "Mount Moriah",
+      "Mount Sinai",
+      "Mount Nebo"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 3:1 — 'He led his flock to the west side of the wilderness and came to Horeb, the mountain of God.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "fill_in_blank",
+    "content": "God said to Moses: 'I AM ___'",
+    "options": [
+      "THE GOOD SHEPHERD",
+      "LORD OF LORDS",
+      "THE ALMIGHTY",
+      "WHO I AM"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 3:14 — 'God said to Moses, I AM WHO I AM.' This name reveals God's eternal, self-existent nature.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 4,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When God asked Moses what was in his hand, what did Moses answer?",
+    "options": [
+      "A sword",
+      "A staff",
+      "A book",
+      "A trumpet"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Exodus 4:2 — 'The LORD said to him, What is that in your hand? He said, A staff.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 4,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When Moses said he was not eloquent, whom did God send with him?",
+    "options": [
+      "Hoshea",
+      "Aaron",
+      "Caleb",
+      "Joshua"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Exodus 4:14 — 'The LORD's anger burned against Moses and said, Is there not Aaron, your brother, the Levite? I know that he can speak well.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Moses and Aaron say to Pharaoh?",
+    "options": [
+      "Give us gold",
+      "Release the prisoners",
+      "Give us land",
+      "Let my people go to worship the LORD"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 5:1 — 'Thus says the LORD, the God of Israel, Let my people go, that they may hold a feast to me in the wilderness.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 5,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "After Moses met Pharaoh, Pharaoh ordered that no more straw be supplied to the Israelites for making bricks.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 5:7 — 'You shall no longer give the people straw to make bricks, as in the past; let them go and gather straw for themselves.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 6,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "By what name did God say He had appeared to Abraham, Isaac, and Jacob?",
+    "options": [
+      "God Most High",
+      "the LORD",
+      "God Almighty",
+      "I AM WHO I AM"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 6:3 — 'I appeared to Abraham, to Isaac, and to Jacob, as God Almighty, but by my name the LORD I did not make myself known to them.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Abraham and Covenant",
+      "Jacob and Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 6,
+    "verseStart": 16,
+    "verseEnd": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What were the names of Moses' parents?",
+    "options": [
+      "Kohath and Miriam",
+      "Merari and Leah",
+      "Amram and Jochebed",
+      "Gershon and Zipporah"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 6:20 — 'Amram took as his wife Jochebed his father's sister, and she bore him Aaron and Moses.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 7,
+    "verseStart": 10,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Aaron threw down his staff before Pharaoh, what did it become?",
+    "options": [
+      "A stream of water",
+      "A great tree",
+      "A flame",
+      "A serpent"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 7:10 — 'Aaron cast down his staff before Pharaoh and his servants, and it became a serpent.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 7,
+    "verseStart": 20,
+    "verseEnd": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What was the first plague God brought on Egypt?",
+    "options": [
+      "Frogs",
+      "Sandstorm",
+      "Darkness",
+      "Hail",
+      "Water turned to blood"
+    ],
+    "correctAnswer": [
+      4
+    ],
+    "explanation": "Exodus 7:20 — 'He lifted up the staff and struck the water in the Nile, in the sight of Pharaoh and in the sight of his servants, and all the water in the Nile turned into blood.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Exodus from Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 8,
+    "verseStart": 2,
+    "verseEnd": 6,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "The second plague was frogs covering the whole land of Egypt.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 8:6 — 'So Aaron stretched out his hand over the waters of Egypt, and the frogs came up and covered the land of Egypt.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Exodus from Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 8,
+    "verseStart": 16,
+    "verseEnd": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What was the third plague brought upon Egypt?",
+    "options": [
+      "Frogs",
+      "Flies",
+      "Locusts",
+      "Gnats"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 8:16-17 — 'Then the LORD said to Moses, Say to Aaron, Stretch out your staff and strike the dust of the earth, so that it may become gnats in all the land of Egypt.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Exodus from Egypt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 9,
+    "verseStart": 3,
+    "verseEnd": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "On what kind of creatures did the plague of pestilence fall?",
+    "options": [
+      "Fish in the river",
+      "Livestock",
+      "Birds of the air",
+      "Insects"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Exodus 9:3 — 'The hand of the LORD will fall with a very severe plague upon your livestock that are in the field, the horses, the donkeys, the camels, the herds, and the flocks.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Exodus from Egypt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 9,
+    "verseStart": 23,
+    "verseEnd": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What accompanied the plague of hail?",
+    "options": [
+      "Tsunami",
+      "Earthquake",
+      "Whirlwind",
+      "Fire running on the earth"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 9:24 — 'There was hail and fire flashing continually in the midst of the hail, very heavy hail, such as had never been in all the land of Egypt since it became a nation.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Exodus from Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 10,
+    "verseStart": 4,
+    "verseEnd": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What was the eighth plague upon Egypt?",
+    "options": [
+      "Locusts",
+      "Hail",
+      "Darkness",
+      "Boils"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 10:4 — 'For if you refuse to let my people go, behold, tomorrow I will bring locusts into your country.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Exodus from Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 10,
+    "verseStart": 22,
+    "verseEnd": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How long did the plague of darkness last over Egypt?",
+    "options": [
+      "One day",
+      "Ten days",
+      "Seven days",
+      "Three days"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 10:22 — 'There was pitch darkness in all the land of Egypt three days.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Exodus from Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 11,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What was the final plague brought upon Egypt?",
+    "options": [
+      "Pestilence",
+      "Hail",
+      "Darkness",
+      "Death of the firstborn"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 11:5 — 'Every firstborn in the land of Egypt shall die, from the firstborn of Pharaoh who sits on his throne, even to the firstborn of the slave girl.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Exodus from Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "verseStart": 3,
+    "verseEnd": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At Passover, what animal was each family to slay?",
+    "options": [
+      "A donkey",
+      "A dove",
+      "An ox",
+      "A lamb or kid"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 12:3 — 'Every man shall take a lamb.' The Passover lamb is a type of Christ, the Lamb of God.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 29,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "At the priestly ordination, on whose head was the anointing oil poured?",
+    "options": [
+      "Moses",
+      "Bezalel",
+      "Joshua",
+      "Aaron"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 29:7 — 'You shall take the anointing oil and pour it on his head and anoint him.' Aaron was anointed and set apart for the high priesthood.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Sacrifice and Ritual",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "verseStart": 37,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "About how many men of Israel walked out of Egypt?",
+    "options": [
+      "About 400,000",
+      "About 200,000",
+      "About 800,000",
+      "About 600,000"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 12:37 — 'The people of Israel journeyed from Rameses to Succoth, about six hundred thousand men on foot, besides women and children.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Joseph in Egypt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "verseStart": 40,
+    "verseEnd": 41,
+    "difficulty": "hard",
+    "type": "fill_in_blank",
+    "content": "The people of Israel sojourned in Egypt for ___ years.",
+    "options": [
+      "430",
+      "400",
+      "350",
+      "470"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 12:40 — 'The time that the people of Israel lived in Egypt was 430 years.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Joseph in Egypt",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 13,
+    "verseStart": 21,
+    "verseEnd": 22,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "By what did the LORD lead Israel by day?",
+    "options": [
+      "An angel with a torch",
+      "A rainbow",
+      "A pillar of cloud",
+      "A bright star"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 13:21 — 'The LORD went before them by day in a pillar of cloud to lead them along the way, and by night in a pillar of fire to give them light.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 14,
+    "verseStart": 21,
+    "verseEnd": 22,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Which sea did God part for the Israelites to cross?",
+    "options": [
+      "The Dead Sea",
+      "The Sea of Galilee",
+      "The Red Sea",
+      "The Mediterranean Sea"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 14:21-22 — 'The LORD drove the sea back by a strong east wind all night and made the sea dry land, and the waters were divided. And the people of Israel went into the midst of the sea on dry ground.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 14,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "fill_in_blank",
+    "content": "The LORD used a ___ to drive back the sea all night.",
+    "options": [
+      "strong north wind",
+      "strong east wind",
+      "strong south wind",
+      "strong west wind"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Exodus 14:21 — 'The LORD drove the sea back by a strong east wind all night.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 15,
+    "verseStart": 20,
+    "verseEnd": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who took a tambourine and led the women in song after crossing the Red Sea?",
+    "options": [
+      "Zipporah",
+      "Miriam",
+      "Deborah",
+      "Jochebed"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Exodus 15:20 — 'Then Miriam the prophetess, the sister of Aaron, took a tambourine in her hand, and all the women went out after her with tambourines and dancing.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Exodus from Egypt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 15,
+    "verseStart": 23,
+    "verseEnd": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "At Marah, the bitter water became sweet when Moses did what?",
+    "options": [
+      "Struck the water with his staff",
+      "Prayed by the spring",
+      "Threw a log into the water",
+      "Threw salt into the water"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 15:25 — 'He cried to the LORD, and the LORD showed him a log, and he threw it into the water, and the water became sweet.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What food from heaven did God provide for Israel in the wilderness?",
+    "options": [
+      "Roasted meat",
+      "Fruit",
+      "Bread and fish",
+      "Manna"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 16:15 — 'Moses said to them, It is the bread that the LORD has given you to eat.' This food was called manna.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "Besides manna, God also provided quail for the Israelites to eat.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 16:13 — 'In the evening quail came up and covered the camp, and in the morning dew lay around the camp.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Exodus from Egypt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "verseStart": 35,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How long did the Israelites eat manna?",
+    "options": [
+      "Thirty years",
+      "Fifty years",
+      "Forty years",
+      "Twenty years"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 16:35 — 'The people of Israel ate the manna forty years, till they came to a habitable land.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Exodus from Egypt",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 17,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At Horeb, what did Moses strike to bring forth water for the people?",
+    "options": [
+      "The ground",
+      "The rock",
+      "A tree trunk",
+      "The riverbank"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Exodus 17:6 — 'I will stand before you there on the rock at Horeb, and you shall strike the rock, and water shall come out of it, and the people will drink.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 17,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the battle with Amalek, who held up Moses' hands?",
+    "options": [
+      "Caleb and Hur",
+      "Aaron and Hur",
+      "Aaron and Joshua",
+      "Joshua and Caleb"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Exodus 17:12 — 'Aaron and Hur held up his hands, one on one side and the other on the other side. So his hands were steady until the going down of the sun.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 18,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Jethro, Moses' father-in-law, was the priest of Midian.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 18:1 — 'Jethro, the priest of Midian, Moses' father-in-law, heard of all that God had done for Moses and for Israel.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Tabernacle and Worship",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 18,
+    "verseStart": 21,
+    "verseEnd": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Jethro advised Moses to appoint judges over how many people?",
+    "options": [
+      "Chiefs of ten thousands, thousands, hundreds",
+      "Chiefs of hundreds, fifties, tens",
+      "Chiefs of thousands, hundreds, fifties, and tens",
+      "Chiefs of thousands, hundreds, twenties"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 18:21 — 'Choose able men from all the people... and place such men over the people as chiefs of thousands, of hundreds, of fifties, and of tens.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 19,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "The Israelites came to Mount Sinai in the third month after leaving Egypt.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 19:1 — 'On the third new moon after the people of Israel had gone out of the land of Egypt, on that day they came into the wilderness of Sinai.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Joseph in Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 19,
+    "verseStart": 5,
+    "verseEnd": 6,
+    "difficulty": "hard",
+    "type": "fill_in_blank",
+    "content": "God said: 'You shall be to me a ___ and a holy nation.'",
+    "options": [
+      "chosen people",
+      "holy army",
+      "kingdom of priests",
+      "great church"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 19:6 — 'You shall be to me a kingdom of priests and a holy nation.' This concept is echoed in 1 Peter 2:9.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What is the first of the Ten Commandments?",
+    "options": [
+      "You shall have no other gods before God",
+      "You shall not murder",
+      "You shall not make idols",
+      "Keep the Sabbath day"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 20:3 — 'You shall have no other gods before me.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Law",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What promise accompanies the commandment 'Honor your father and mother'?",
+    "options": [
+      "You shall be wealthy",
+      "You shall enter heaven",
+      "Your days may be long in the land",
+      "You shall have many children"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 20:12 — 'Honor your father and your mother, that your days may be long in the land that the LORD your God is giving you.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Law",
+      "Covenant",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 38,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "From what material was the basin in the Tabernacle court made?",
+    "options": [
+      "Pure gold",
+      "Silver",
+      "Acacia wood overlaid with bronze",
+      "Bronze from the mirrors of the women"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 38:8 — 'He made the basin of bronze and its stand of bronze, from the mirrors of the ministering women who ministered in the entrance of the tent of meeting.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 21,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How long must a Hebrew slave serve before being set free?",
+    "options": [
+      "Six years",
+      "Three years",
+      "Seven years",
+      "Five years"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 21:2 — 'When you buy a Hebrew slave, he shall serve six years, and in the seventh he shall go out free.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 21,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "The law of Exodus included 'eye for eye, tooth for tooth.'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 21:24 — 'Eye for eye, tooth for tooth, hand for hand, foot for foot.' This is the principle of just retribution in the Mosaic law.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Exodus from Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 22,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "The Mosaic law permitted mistreatment of foreigners.",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Exodus 22:21 — 'You shall not wrong a sojourner or oppress him, for you were sojourners in the land of Egypt.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Law",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 23,
+    "verseStart": 14,
+    "verseEnd": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How many great feasts must Israel observe each year?",
+    "options": [
+      "Four feasts",
+      "Five feasts",
+      "Three feasts",
+      "Two feasts"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 23:14 — 'Three times in the year you shall keep a feast to me.' These are the Feast of Unleavened Bread, the Feast of Harvest, and the Feast of Ingathering.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 24,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On what material did God write the Ten Commandments?",
+    "options": [
+      "Tablets of stone",
+      "Tablets of wood",
+      "Parchment",
+      "Bronze tablets"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 24:12 — 'The LORD said to Moses, Come up to me on the mountain and wait there, that I may give you the tablets of stone, with the law and the commandment, which I have written for their instruction.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Law",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 24,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How long was Moses on Mount Sinai?",
+    "options": [
+      "Fifty days and fifty nights",
+      "Twenty days and twenty nights",
+      "Thirty days and thirty nights",
+      "Forty days and forty nights"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 24:18 — 'Moses was on the mountain forty days and forty nights.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "verseStart": 10,
+    "verseEnd": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Of what main material was the Ark of the Covenant made?",
+    "options": [
+      "Pure bronze",
+      "Acacia wood overlaid with pure gold",
+      "Cedar wood overlaid with gold",
+      "Olive wood overlaid with silver"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Exodus 25:10-11 — 'They shall make an ark of acacia wood... You shall overlay it with pure gold, inside and outside shall you overlay it.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Covenant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "verseStart": 18,
+    "verseEnd": 20,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "On the mercy seat were two cherubim of gold.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 25:18 — 'You shall make two cherubim of gold; of hammered work shall you make them, on the two ends of the mercy seat.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 26,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How many curtains of fine linen made up the Tabernacle?",
+    "options": [
+      "Five curtains",
+      "Twelve curtains",
+      "Ten curtains",
+      "Twenty curtains"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 26:1 — 'You shall make the tabernacle with ten curtains of fine twined linen and blue and purple and scarlet yarns; with cherubim skillfully worked into them.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 27,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "From what was the altar of burnt offering in the Tabernacle made?",
+    "options": [
+      "Pure gold",
+      "Cedar wood overlaid with silver",
+      "Acacia wood overlaid with bronze",
+      "Solid stone"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 27:1-2 — 'You shall make the altar of acacia wood... and you shall overlay it with bronze.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 28,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Who was chosen as the first priest of Israel?",
+    "options": [
+      "Caleb",
+      "Moses",
+      "Joshua",
+      "Aaron"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 28:1 — 'Bring near to you Aaron your brother, and his sons with him, from among the people of Israel, to serve me as priests.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Tabernacle and Worship",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 28,
+    "verseStart": 17,
+    "verseEnd": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How many precious stones were on the high priest's breastpiece?",
+    "options": [
+      "Seven stones",
+      "Twenty-four stones",
+      "Twelve stones",
+      "Ten stones"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 28:21 — 'There shall be twelve stones with their names according to the names of the sons of Israel.' The twelve stones represent the twelve tribes.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Sacrifice and Ritual",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 30,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "fill_in_blank",
+    "content": "Each Israelite, when numbered in the census, had to pay ___ shekel of silver.",
+    "options": [
+      "five",
+      "one",
+      "two",
+      "half"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 30:13 — 'Each one shall give half a shekel as an offering to the LORD.' This was a ransom for life.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 30,
+    "verseStart": 23,
+    "verseEnd": 25,
+    "difficulty": "hard",
+    "type": "true_false",
+    "content": "The holy anointing oil was compounded from five ingredients including myrrh, cinnamon, calamus, cassia, and olive oil.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 30:23-25 — The holy anointing oil contained myrrh, cinnamon, calamus, cassia, and olive oil. This mixture was reserved for sacred use only.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 31,
+    "verseStart": 2,
+    "verseEnd": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whom did God choose and gift with artistic ability to build the Tabernacle?",
+    "options": [
+      "Aaron",
+      "Hur",
+      "Joshua",
+      "Bezalel"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 31:2-3 — 'I have called by name Bezalel... and I have filled him with the Spirit of God, with ability and intelligence.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 31,
+    "verseStart": 18,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "The two tablets of the testimony were written by the finger of God.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 31:18 — 'When he had finished speaking with him on Mount Sinai, he gave to Moses the two tablets of the testimony, tablets of stone, written with the finger of God.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 32,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "While Moses was long on the mountain, what idol did Israel cast to worship?",
+    "options": [
+      "A golden calf",
+      "A bronze serpent",
+      "An eagle",
+      "A lion"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 32:4 — 'He received the gold from their hand and fashioned it with a graving tool and made a golden calf.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 32,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Moses saw Israel worshiping the golden calf, what did he do with the two tablets?",
+    "options": [
+      "Returned them to God",
+      "Gave them to Aaron",
+      "Broke them at the foot of the mountain",
+      "Hid them in the rock"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 32:19 — 'As soon as he came near the camp and saw the calf and the dancing, Moses' anger burned hot, and he threw the tablets out of his hands and broke them at the foot of the mountain.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 33,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "The LORD spoke to Moses face to face, as a man speaks to his friend.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 33:11 — 'Thus the LORD used to speak to Moses face to face, as a man speaks to his friend.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 33,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "When Moses asked to see God's glory, what did God say?",
+    "options": [
+      "No man shall see my face and live",
+      "Only angels see my face",
+      "I will appear in a cloud",
+      "Wait until the last day"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 33:20 — 'But, he said, you cannot see my face, for man shall not see me and live.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "After Moses broke the two tablets, God told him to cut two new tablets of stone.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 34:1 — 'The LORD said to Moses, Cut for yourself two tablets of stone like the first, and I will write on the tablets the words that were on the first tablets.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "verseStart": 29,
+    "verseEnd": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When Moses came down from Mount Sinai, what happened to his face?",
+    "options": [
+      "His face was covered with a veil",
+      "The skin of his face shone",
+      "His face became darkened",
+      "His face was wounded"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Exodus 34:29 — 'When Moses came down from Mount Sinai... Moses did not know that the skin of his face shone because he had been talking with God.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 35,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Moses commanded the people to do no work on the Sabbath day.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 35:2 — 'Six days work shall be done, but on the seventh day you shall have a Sabbath of solemn rest, holy to the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 35,
+    "verseStart": 30,
+    "verseEnd": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Besides Bezalel, who was the chief assistant in building the Tabernacle?",
+    "options": [
+      "Oholiab",
+      "Ithamar",
+      "Hur",
+      "Joshua"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 35:34 — 'And he has inspired him to teach, both him and Oholiab... He has filled them with skill to do every sort of work.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 36,
+    "verseStart": 5,
+    "verseEnd": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the Israelites brought too much material for the Tabernacle, what did Moses do?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 36:6-7 — 'So Moses gave command, and word was proclaimed throughout the camp, Let no man or woman do anything more for the contribution for the sanctuary. So the people were restrained from bringing.'",
+    "language": "en",
+    "options": [
+      "Told them to stop giving",
+      "Distributed it to the poor",
+      "Returned the gold and silver",
+      "Built another tabernacle"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 37,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "fill_in_blank",
+    "content": "___ made the Ark of the Covenant of acacia wood.",
+    "options": [
+      "Oholiab",
+      "Bezalel",
+      "Aaron",
+      "Moses"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Exodus 37:1 — 'Bezalel made the ark of acacia wood.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Covenant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 39,
+    "verseStart": 30,
+    "verseEnd": 31,
+    "difficulty": "hard",
+    "type": "fill_in_blank",
+    "content": "On the priestly turban was a plate of gold engraved: '___'",
+    "options": [
+      "HIGH PRIEST",
+      "GLORY FOREVER",
+      "GOD ALMIGHTY",
+      "HOLY TO THE LORD"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Exodus 39:30 — 'They made the plate of the holy crown of pure gold, and wrote on it an inscription, like the engraving of a signet, Holy to the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 39,
+    "verseStart": 32,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "The Israelites did all the work of the Tabernacle exactly as the LORD had commanded Moses.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exodus 39:32 — 'Thus all the work of the tabernacle of the tent of meeting was finished, and the people of Israel did according to all that the LORD had commanded Moses.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "On the first day of which month was the Tabernacle set up?",
+    "options": [
+      "Twelfth month",
+      "Seventh month",
+      "First month",
+      "Third month"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 40:2 — 'On the first day of the first month you shall erect the tabernacle of the tent of meeting.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "verseStart": 34,
+    "verseEnd": 35,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the Tabernacle was finished, what happened?",
+    "options": [
+      "An angel appeared",
+      "Fire came down from heaven",
+      "The cloud covered the tent of meeting and the glory of the LORD filled the Tabernacle",
+      "Thunder and lightning resounded"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 40:34 — 'Then the cloud covered the tent of meeting, and the glory of the LORD filled the tabernacle.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "verseStart": 36,
+    "verseEnd": 38,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How did Israel know when to set out on their journeys?",
+    "options": [
+      "When an angel appeared",
+      "By the sound of a trumpet",
+      "When the cloud was taken up from over the Tabernacle",
+      "When Moses commanded"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Exodus 40:36-37 — 'Throughout all their journeys, whenever the cloud was taken up from over the tabernacle, the people of Israel would set out. But if the cloud was not taken up, then they did not set out.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Advanced"
+    ]
+  }
+]
