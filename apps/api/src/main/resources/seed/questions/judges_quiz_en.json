@@ -1,0 +1,362 @@
+[
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where did the secret of Samson's strength lie?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Judges 16:17 — Samson's strength came from his Nazirite vow to God, symbolized in his uncut hair.",
+    "language": "en",
+    "options": [
+      "Armor",
+      "A special weapon",
+      "His uncut hair (the Nazirite vow)",
+      "His muscles"
+    ],
+    "tags": [
+      "Old Testament",
+      "Samson",
+      "Vow",
+      "Judges",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 2,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In the book of Judges, whom did the LORD raise up to deliver the people?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Judges 2:16 — The LORD raised up judges to deliver the people from their oppressors. Cycle: sin > oppression > cry out > deliverance.",
+    "language": "en",
+    "verseEnd": 18,
+    "options": [
+      "Priests",
+      "Prophets",
+      "Judges (deliverers)",
+      "Kings"
+    ],
+    "tags": [
+      "Old Testament",
+      "Judges",
+      "Cycle",
+      "Judges",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What is the recurring cycle in the book of Judges?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Judges 2:11-19 — This cycle is repeated many times, showing human nature and God's patience.",
+    "language": "en",
+    "verseEnd": 15,
+    "options": [
+      "War > peace",
+      "Building > destroying",
+      "Wealth > poverty",
+      "Sin > punishment > crying out > deliverance > peace > sin again"
+    ],
+    "tags": [
+      "Old Testament",
+      "Cycle",
+      "Human nature",
+      "Judges",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Who is the only female judge in the Bible?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Judges 4:4 — Deborah was both a prophetess and a judge who judged Israel.",
+    "language": "en",
+    "verseEnd": 5,
+    "options": [
+      "Deborah",
+      "Rahab",
+      "Ruth",
+      "Esther"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deborah",
+      "Leadership",
+      "Judges",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who killed the commander Sisera with a tent peg?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Judges 4:21 — Jael drove a tent peg through Sisera's temple while he slept. Victory comes from unexpected places.",
+    "language": "en",
+    "options": [
+      "Miriam",
+      "Jael",
+      "Deborah",
+      "Barak"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jael",
+      "Victory",
+      "Judges",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the angel called Gideon a 'mighty man of valor,' what was he doing?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Judges 6:11-12 — Gideon was hiding in fear, but God saw the potential in him.",
+    "language": "en",
+    "verseEnd": 15,
+    "options": [
+      "Fighting",
+      "Sleeping",
+      "Beating wheat in the winepress, hiding from the Midianites",
+      "Praying"
+    ],
+    "tags": [
+      "Old Testament",
+      "Gideon",
+      "Calling",
+      "Judges",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "verseStart": 36,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Gideon use to test God?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Judges 6:37-40 — Gideon tested God twice with a fleece of wool. God patiently bore his weakness.",
+    "language": "en",
+    "verseEnd": 40,
+    "options": [
+      "Stones and a staff",
+      "A fleece of wool (with dew, then dry)",
+      "Fire and water",
+      "Fruits and vegetables"
+    ],
+    "tags": [
+      "Old Testament",
+      "Gideon",
+      "Faith",
+      "Judges",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "From 32,000, to how many men did the LORD reduce Gideon's army?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Judges 7:7 — Just 300 men, so that God would receive the glory. Victory does not come by numbers but by God's power.",
+    "language": "en",
+    "options": [
+      "300 men",
+      "1,000 men",
+      "3,000 men",
+      "100 men"
+    ],
+    "tags": [
+      "Old Testament",
+      "Gideon",
+      "God's power",
+      "Judges",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "verseStart": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What did Jephthah vow to the LORD before the battle?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Judges 11:30-31 — Jephthah's hasty vow led to heartbreaking consequences when his own daughter came out to greet him.",
+    "language": "en",
+    "verseEnd": 35,
+    "options": [
+      "To fast 40 days",
+      "To build a temple",
+      "To offer as a burnt offering whatever first came out of his door to meet him",
+      "To give all the spoils"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jephthah",
+      "Vow",
+      "Judges",
+      "History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What was Samson set apart to be from the womb?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Judges 13:5 — Samson was a Nazirite from the womb, set apart to begin saving Israel.",
+    "language": "en",
+    "options": [
+      "A Nazirite to God",
+      "A priest",
+      "A prophet",
+      "A king"
+    ],
+    "tags": [
+      "Old Testament",
+      "Samson",
+      "Nazirite",
+      "Judges",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 14,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What animal did Samson tear apart with his bare hands by the Spirit of the LORD?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Judges 14:6 — The Spirit of the LORD rushed upon Samson, and he tore the lion as one tears a young goat.",
+    "language": "en",
+    "verseEnd": 6,
+    "options": [
+      "A lion",
+      "A wolf",
+      "A wild bull",
+      "A bear"
+    ],
+    "tags": [
+      "Old Testament",
+      "Samson",
+      "Strength",
+      "Judges",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What weapon did Samson use to strike down 1,000 Philistines?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Judges 15:15 — Samson struck down 1,000 men with the fresh jawbone of a donkey.",
+    "language": "en",
+    "verseEnd": 16,
+    "options": [
+      "A spear",
+      "The jawbone of a donkey",
+      "A sling",
+      "A sword"
+    ],
+    "tags": [
+      "Old Testament",
+      "Samson",
+      "Battle",
+      "Judges",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How did Samson die?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Judges 16:30 — Samson prayed one last time, was given strength, and pushed down the two pillars. He killed more in his death than in his life.",
+    "language": "en",
+    "verseEnd": 30,
+    "options": [
+      "By disease",
+      "Killed in his sleep",
+      "Thrown from a height",
+      "Pushed down the Philistine temple, dying with the enemies"
+    ],
+    "tags": [
+      "Old Testament",
+      "Samson",
+      "Sacrifice",
+      "Judges",
+      "History",
+      "Intermediate"
+    ]
+  }
+]
