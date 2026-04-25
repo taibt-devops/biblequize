@@ -508,5 +508,33 @@
       "Wisdom",
       "Basic"
     ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 121,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "From where does the psalmist's help come, according to Psalm 121:1-2?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Psalm 121:1-2 — 'I lift up my eyes to the hills. From where does my help come? My help comes from the LORD, who made heaven and earth.'",
+    "language": "en",
+    "options": [
+      "From the king",
+      "From the angels",
+      "From the LORD, who made heaven and earth",
+      "From his own strength"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Help",
+      "Psalms",
+      "Wisdom",
+      "Basic"
+    ]
   }
 ]

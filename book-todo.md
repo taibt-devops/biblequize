@@ -30,7 +30,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | nehemiah | Nehemiah | History | 13 | 13 | 30-40 | ⚠️ |
 | esther | Esther | History | 13 | 13 | 30-40 | ⚠️ |
 | job | Job | Wisdom | 12 | 12 | 40-60 | ⚠️ |
-| psalms | Psalms | Wisdom | 19 | 19 | 100+ | ⚠️ |
+| psalms | Psalms | Wisdom | 20 | 20 | 100+ | ⚠️ |
 | proverbs | Proverbs | Wisdom | 14 | 14 | 60-80 | ⚠️ |
 | ecclesiastes | Ecclesiastes | Wisdom | 12 | 12 | 30-40 | ⚠️ |
 | songofsolomon | Song of Solomon | Wisdom | 0 | 0 | 20-30 | ❌ |

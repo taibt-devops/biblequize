@@ -508,5 +508,33 @@
       "Văn Thơ",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 121,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi Thiên 121:1-2 dạy sự giúp đỡ của tác giả đến từ đâu?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 121:1-2 — 'Tôi ngước mắt lên trên núi: Sự tiếp trợ tôi đến từ đâu? Sự tiếp trợ tôi đến từ Đức Giê-hô-va, là Đấng đã dựng nên trời và đất.'",
+    "language": "vi",
+    "options": [
+      "Từ vua",
+      "Từ các thiên sứ",
+      "Từ Đức Giê-hô-va, Đấng dựng nên trời và đất",
+      "Từ chính sức mình"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Sự giúp đỡ",
+      "Thi Thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
   }
 ]
