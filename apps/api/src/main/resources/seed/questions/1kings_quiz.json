@@ -357,5 +357,192 @@
       "Lịch sử",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "verseStart": 39,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ai xức dầu cho Sa-lô-môn để làm vua trên Y-sơ-ra-ên?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Các Vua 1:39 — 'Thầy tế lễ Xa-đốc lấy sừng dầu trong trại, xức cho Sa-lô-môn. Người ta thổi kèn lên, cả dân sự đều la lên: Vua Sa-lô-môn vạn tuế!'",
+    "language": "vi",
+    "options": [
+      "Tiên tri Na-than một mình",
+      "Vua Đa-vít",
+      "Tổng tư lệnh Bê-na-gia",
+      "Thầy tế lễ Xa-đốc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Các Vua",
+      "Sa-lô-môn lên ngôi",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 4,
+    "verseStart": 29,
+    "verseEnd": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "1 Các Vua 4:29-30 nói sự khôn ngoan của Sa-lô-môn vượt hơn ai?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Các Vua 4:30 — 'Sự khôn ngoan của Sa-lô-môn trổi hơn sự khôn ngoan của mọi người Đông phương, và mọi người Ai Cập.'",
+    "language": "vi",
+    "options": [
+      "Hơn các tổ phụ",
+      "Hơn mọi người Đông phương và Ai Cập",
+      "Hơn các vua dân ngoại lân cận",
+      "Hơn các thiên sứ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Các Vua",
+      "Khôn ngoan Sa-lô-môn",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 9,
+    "verseStart": 3,
+    "verseEnd": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Sau khi Sa-lô-môn xây xong đền thờ, Đức Giê-hô-va hứa gì với điều kiện ông phải bước theo Ngài?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Các Vua 9:5 — 'Ta sẽ làm cho ngôi nước ngươi vững bền trên Y-sơ-ra-ên đời đời, y như Ta đã hứa với Đa-vít cha ngươi.'",
+    "language": "vi",
+    "options": [
+      "Sự giàu có dư dật",
+      "Đoàn quân hùng mạnh",
+      "Ngôi nước được vững bền đời đời",
+      "Tuổi thọ dài"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Các Vua",
+      "Giao ước với Sa-lô-môn",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 11,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Tiên tri A-hi-gia xé áo mình thành 12 mảnh và đưa cho Giê-rô-bô-am bao nhiêu mảnh?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Các Vua 11:31 — 'A-hi-gia phán cùng Giê-rô-bô-am: Hãy lấy mười miếng cho ngươi, vì Đức Giê-hô-va phán: Ta sẽ xé nước khỏi tay Sa-lô-môn mà cho ngươi mười chi phái.'",
+    "language": "vi",
+    "options": [
+      "Một miếng",
+      "Bảy miếng",
+      "Mười hai miếng",
+      "Mười miếng (10 chi phái)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Các Vua",
+      "10 chi phái",
+      "Lịch sử",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 13,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Người của Đức Chúa Trời từ Giu-đa nói tiên tri gì về bàn thờ Bê-tên?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Các Vua 13:2 — 'Hỡi bàn thờ, bàn thờ! Đức Giê-hô-va phán như vầy: Một con trai sẽ sinh ra cho nhà Đa-vít, tên là Giô-si-a.'",
+    "language": "vi",
+    "options": [
+      "Bàn thờ sẽ tồn tại đời đời",
+      "Bàn thờ sẽ thành nơi thờ phượng đúng",
+      "Một con cháu Đa-vít tên Giô-si-a sẽ giết các thầy tế lễ trên bàn thờ này",
+      "Bàn thờ sẽ bị bay đi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Các Vua",
+      "Tiên tri về Giô-si-a",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 14,
+    "verseStart": 21,
+    "verseEnd": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Rô-bô-am, con của Sa-lô-môn, làm vua tại đâu?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Các Vua 14:21 — 'Rô-bô-am, con trai của Sa-lô-môn, cai trị tại Giu-đa.' Ông đóng đô tại Giê-ru-sa-lem.",
+    "language": "vi",
+    "options": [
+      "Sa-ma-ri",
+      "Bê-tên",
+      "Si-chem",
+      "Giê-ru-sa-lem (làm vua trên Giu-đa)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Các Vua",
+      "Rô-bô-am",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "verseStart": 1,
+    "verseEnd": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Vua A-háp giết ai để chiếm vườn nho của người ấy?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Các Vua 21:13-14 — 'Họ ném đá Na-bốt; người chết.' Giê-sa-bên dàn xếp âm mưu để A-háp chiếm vườn nho.",
+    "language": "vi",
+    "options": [
+      "Mê-phi-bô-sết",
+      "Na-bốt người Gít-rê-ên",
+      "Ô-bết",
+      "Ô-vít"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Các Vua",
+      "Vườn nho Na-bốt",
+      "Lịch sử",
+      "Cơ bản"
+    ]
   }
 ]

@@ -357,5 +357,192 @@
       "History",
       "Basic"
     ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "verseStart": 39,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Who anointed Solomon king over Israel?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Kings 1:39 — 'There Zadok the priest took the horn of oil from the tent and anointed Solomon. Then they blew the trumpet, and all the people said, Long live King Solomon!'",
+    "language": "en",
+    "options": [
+      "Nathan the prophet alone",
+      "King David",
+      "Benaiah the commander",
+      "Zadok the priest"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Kings",
+      "Solomon Crowned",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 4,
+    "verseStart": 29,
+    "verseEnd": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whose wisdom did 1 Kings 4:29-30 say Solomon's wisdom surpassed?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Kings 4:30 — 'Solomon's wisdom surpassed the wisdom of all the people of the east and all the wisdom of Egypt.'",
+    "language": "en",
+    "options": [
+      "Greater than the patriarchs",
+      "All people of the east and Egypt",
+      "Surrounding pagan kings",
+      "The angels"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Kings",
+      "Solomon's Wisdom",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 9,
+    "verseStart": 3,
+    "verseEnd": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "After Solomon finished the temple, what did the LORD promise on condition that he walked with Him?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Kings 9:5 — 'I will establish your royal throne over Israel forever, as I promised David your father.'",
+    "language": "en",
+    "options": [
+      "Abundant wealth",
+      "Mighty army",
+      "An everlasting royal throne",
+      "Long life"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Kings",
+      "Covenant with Solomon",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 11,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "The prophet Ahijah tore his garment into 12 pieces and gave Jeroboam how many?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Kings 11:31 — 'Then he said to Jeroboam, Take for yourself ten pieces, for thus says the LORD, Behold, I am about to tear the kingdom from the hand of Solomon and will give you ten tribes.'",
+    "language": "en",
+    "options": [
+      "One piece",
+      "Seven pieces",
+      "Twelve pieces",
+      "Ten pieces (10 tribes)"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Kings",
+      "Ten Tribes",
+      "History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 13,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the man of God from Judah prophesy about the altar at Bethel?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Kings 13:2 — 'O altar, altar, thus says the LORD: Behold, a son shall be born to the house of David, Josiah by name, and he shall sacrifice on you the priests of the high places.'",
+    "language": "en",
+    "options": [
+      "The altar will stand forever",
+      "The altar would become a place of true worship",
+      "A descendant of David named Josiah will sacrifice the priests on it",
+      "The altar would fly away"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Kings",
+      "Prophecy of Josiah",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 14,
+    "verseStart": 21,
+    "verseEnd": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where did Rehoboam, son of Solomon, reign as king?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Kings 14:21 — 'Now Rehoboam the son of Solomon reigned in Judah.' He had his capital at Jerusalem.",
+    "language": "en",
+    "options": [
+      "Samaria",
+      "Bethel",
+      "Shechem",
+      "Jerusalem (over Judah)"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Kings",
+      "Rehoboam",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "verseStart": 1,
+    "verseEnd": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whom did King Ahab have killed to seize his vineyard?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Kings 21:13-14 — 'And they stoned him to death with stones.' Jezebel arranged a plot so Ahab could take Naboth's vineyard.",
+    "language": "en",
+    "options": [
+      "Mephibosheth",
+      "Naboth the Jezreelite",
+      "Obed",
+      "Obadiah"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Kings",
+      "Naboth's Vineyard",
+      "History",
+      "Basic"
+    ]
   }
 ]
