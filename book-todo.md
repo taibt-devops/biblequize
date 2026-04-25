@@ -46,7 +46,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | jonah | Jonah | Prophets | 20 | 20 | 30-40 | ⚠️ |
 | micah | Micah | Prophets | 20 | 20 | 20-30 | ✅ |
 | nahum | Nahum | Prophets | 0 | 0 | 20 | ❌ |
-| habakkuk | Habakkuk | Prophets | 12 | 12 | 20-30 | ✅ (gần đủ) |
+| habakkuk | Habakkuk | Prophets | 20 | 20 | 20-30 | ✅ |
 | zephaniah | Zephaniah | Prophets | 0 | 0 | 20 | ❌ |
 | haggai | Haggai | Prophets | 0 | 0 | 20 | ❌ |
 | zechariah | Zechariah | Prophets | 0 | 0 | 30-40 | ❌ |

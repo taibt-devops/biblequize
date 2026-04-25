@@ -303,5 +303,213 @@
       "Theology",
       "Advanced"
     ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does the book of Habakkuk open to describe its content?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Habakkuk 1:1 — 'The oracle that Habakkuk the prophet saw.' This is a prophetic vision.",
+    "language": "en",
+    "options": [
+      "The oracle that Habakkuk the prophet saw",
+      "The prayer of King Hezekiah",
+      "The lament of the priests",
+      "A song of thanksgiving"
+    ],
+    "tags": [
+      "Old Testament",
+      "Habakkuk",
+      "Vision",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whom does the LORD use to discipline Judah, according to Habakkuk 1:6?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Habakkuk 1:6 — 'For behold, I am raising up the Chaldeans, that bitter and hasty nation.'",
+    "language": "en",
+    "options": [
+      "Assyria",
+      "The Chaldeans (Babylonians)",
+      "Egypt",
+      "The Philistines"
+    ],
+    "tags": [
+      "Old Testament",
+      "Habakkuk",
+      "Discipline",
+      "Minor Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Habakkuk 1:13 says God's eyes are too pure to do what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Habakkuk 1:13 — 'You who are of purer eyes than to see evil and cannot look at wrong.'",
+    "language": "en",
+    "options": [
+      "Look at Israel",
+      "See the angels",
+      "See evil and look at wrong",
+      "See the stars"
+    ],
+    "tags": [
+      "Old Testament",
+      "Habakkuk",
+      "Holiness",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where does Habakkuk station himself to wait for the LORD's answer?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Habakkuk 2:1 — 'I will take my stand at my watchpost and station myself on the tower, and look out to see what he will say to me.'",
+    "language": "en",
+    "options": [
+      "At his watchpost and tower",
+      "In the temple",
+      "On Mount Zion",
+      "By the river"
+    ],
+    "tags": [
+      "Old Testament",
+      "Habakkuk",
+      "Waiting on God",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Habakkuk 2:14 promise will fill the earth?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Habakkuk 2:14 — 'For the earth will be filled with the knowledge of the glory of the LORD as the waters cover the sea.'",
+    "language": "en",
+    "options": [
+      "Peace",
+      "Righteousness",
+      "The knowledge of the glory of the LORD",
+      "Plentiful food"
+    ],
+    "tags": [
+      "Old Testament",
+      "Habakkuk",
+      "Glory of God",
+      "Minor Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Habakkuk 2:19 pronounces woe on those who say 'Awake!' to what?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Habakkuk 2:19 — 'Woe to him who says to a wooden thing, Awake; to a silent stone, Arise!'",
+    "language": "en",
+    "options": [
+      "The dead",
+      "The sun and moon",
+      "The sea",
+      "Wood and silent stone (idols)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Habakkuk",
+      "Idolatry",
+      "Minor Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 3,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "In Habakkuk 3:8, with what is the LORD said to ride out for salvation?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Habakkuk 3:8 — 'Was your wrath against the rivers, O LORD?... when you rode on your horses, on your chariot of salvation?'",
+    "language": "en",
+    "options": [
+      "With mountains",
+      "Against rivers and the sea",
+      "Against cities",
+      "Against humanity"
+    ],
+    "tags": [
+      "Old Testament",
+      "Habakkuk",
+      "Prayer",
+      "Minor Prophets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 3,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What animal's feet does Habakkuk 3:19 say the LORD makes the prophet's feet like?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Habakkuk 3:19 — 'GOD, the Lord, is my strength; he makes my feet like the deer's; he makes me tread on my high places.'",
+    "language": "en",
+    "options": [
+      "Camel feet",
+      "War-horse feet",
+      "Deer's (hind's) feet",
+      "Lion's feet"
+    ],
+    "tags": [
+      "Old Testament",
+      "Habakkuk",
+      "Strength",
+      "Minor Prophets",
+      "Basic"
+    ]
   }
 ]

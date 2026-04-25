@@ -303,5 +303,213 @@
       "Thần học",
       "Nâng cao"
     ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sách Ha-ba-cúc mở đầu bằng cụm từ nào mô tả nội dung?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ha-ba-cúc 1:1 — 'Gánh nặng mà tiên tri Ha-ba-cúc đã thấy.' Đây là khải tượng tiên tri.",
+    "language": "vi",
+    "options": [
+      "Gánh nặng mà tiên tri Ha-ba-cúc đã thấy",
+      "Lời cầu nguyện của vua Ê-xê-chia",
+      "Tiếng kêu khóc của các thầy tế lễ",
+      "Bài ca tạ ơn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ha-ba-cúc",
+      "Khải tượng",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Đức Giê-hô-va dùng dân nào để hình phạt Giu-đa, theo Ha-ba-cúc 1:6?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ha-ba-cúc 1:6 — 'Vì nầy, Ta khiến người Canh-đê nổi lên, là dân dữ tợn và lanh lẹn nầy.'",
+    "language": "vi",
+    "options": [
+      "A-si-ri",
+      "Người Canh-đê (Ba-by-lôn)",
+      "Ai Cập",
+      "Phi-li-tin"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ha-ba-cúc",
+      "Hình phạt",
+      "Tiểu tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ha-ba-cúc 1:13 nói mắt Đức Chúa Trời quá thanh sạch để làm gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ha-ba-cúc 1:13 — 'Mắt Chúa thánh sạch chẳng nhìn sự dữ, chẳng có thể nhìn được sự trái ngược.'",
+    "language": "vi",
+    "options": [
+      "Nhìn dân Y-sơ-ra-ên",
+      "Nhìn các thiên sứ",
+      "Nhìn sự dữ và sự trái ngược",
+      "Nhìn các vì sao"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ha-ba-cúc",
+      "Sự thánh khiết",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ha-ba-cúc đứng tại đâu để chờ Đức Giê-hô-va trả lời?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ha-ba-cúc 2:1 — 'Ta sẽ đứng nơi vọng canh, chôn chân nơi đồn lũy, rình xem Ngài bảo ta điều gì.'",
+    "language": "vi",
+    "options": [
+      "Trên vọng canh và đồn lũy",
+      "Trong đền thờ",
+      "Trên núi Si-ôn",
+      "Bên bờ sông"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ha-ba-cúc",
+      "Chờ đợi Chúa",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ha-ba-cúc 2:14 hứa rằng đất sẽ được đầy dẫy điều gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ha-ba-cúc 2:14 — 'Vì sự nhận biết vinh quang Đức Giê-hô-va sẽ đầy dẫy khắp đất, như nước đầy tràn biển.'",
+    "language": "vi",
+    "options": [
+      "Sự bình an",
+      "Sự công bình",
+      "Sự nhận biết vinh quang Đức Giê-hô-va",
+      "Lương thực dư dật"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ha-ba-cúc",
+      "Vinh quang Chúa",
+      "Tiểu tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ha-ba-cúc 2:19 lên án ai khi nói 'Hãy thức dậy!' với điều gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ha-ba-cúc 2:19 — 'Khốn thay cho kẻ nói với gỗ rằng: Hãy tỉnh thức! và với đá câm rằng: Hãy chỗi dậy!'",
+    "language": "vi",
+    "options": [
+      "Với người chết",
+      "Với mặt trời và mặt trăng",
+      "Với biển cả",
+      "Với gỗ và đá câm (thần tượng)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ha-ba-cúc",
+      "Thần tượng",
+      "Tiểu tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 3,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Ha-ba-cúc 3:8 hỏi Đức Giê-hô-va có thạnh nộ với gì khi cưỡi ngựa cứu rỗi?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ha-ba-cúc 3:8 — 'Có phải Đức Giê-hô-va nổi giận nghịch cùng các sông không?... Khi Ngài cưỡi ngựa và xe của sự cứu rỗi.'",
+    "language": "vi",
+    "options": [
+      "Với núi non",
+      "Với các sông và biển",
+      "Với các thành phố",
+      "Với loài người"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ha-ba-cúc",
+      "Lời cầu nguyện",
+      "Tiểu tiên tri",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 3,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ha-ba-cúc 3:19 nói Đức Giê-hô-va khiến chân Ngài giống chân con vật nào?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ha-ba-cúc 3:19 — 'Đức Giê-hô-va là Chúa, là sức mạnh của tôi, Ngài làm cho chân tôi giống như chân con hươu cái, khiến tôi đi trên các nơi cao của mình.'",
+    "language": "vi",
+    "options": [
+      "Chân lạc đà",
+      "Chân ngựa chiến",
+      "Chân con hươu cái",
+      "Chân sư tử"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ha-ba-cúc",
+      "Sức lực",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
   }
 ]
