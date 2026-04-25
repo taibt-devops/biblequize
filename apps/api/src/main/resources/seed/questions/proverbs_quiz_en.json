@@ -1,0 +1,383 @@
+[
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Proverbs 3:5-6, 'Trust in the LORD with all your heart, and do not lean on your own understanding.' What does the Hebrew word for 'trust' mean?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Batah (בטח) means 'to trust, to lean upon' — not just to believe but to rely fully.",
+    "language": "en",
+    "verseEnd": 6,
+    "options": [
+      "Batah — to trust, to lean upon",
+      "Aman — to believe",
+      "Yachal — to hope",
+      "Chasah — to take refuge"
+    ],
+    "tags": [
+      "Proverbs",
+      "Wisdom",
+      "Hebrew language",
+      "Old Testament",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 31,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In Proverbs 31:10, 'An excellent wife who can find?' What does the Hebrew word for 'excellent' mean?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Chayil (חיל) means 'strength, might' — not merely talent but inner strength.",
+    "language": "en",
+    "options": [
+      "Chakam — wise",
+      "Tov — good",
+      "Chayil — strength, might",
+      "Yashar — upright"
+    ],
+    "tags": [
+      "Proverbs",
+      "Excellent wife",
+      "Hebrew language",
+      "Old Testament",
+      "Wisdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Proverbs 1:7, where does wisdom begin?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Proverbs 1:7 — The fear of the LORD is the beginning of knowledge. All true wisdom flows from God.",
+    "language": "en",
+    "options": [
+      "Experience",
+      "Education",
+      "The fear of the LORD",
+      "Following the law"
+    ],
+    "tags": [
+      "Old Testament",
+      "Wisdom",
+      "Fear of the LORD",
+      "Proverbs",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Proverbs 3:5 teaches: 'Trust in the LORD with all your heart, and do not lean on ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Proverbs 3:5-6 — Trust in the LORD wholly; do not lean on your own understanding. In all your ways acknowledge Him.",
+    "language": "en",
+    "verseEnd": 6,
+    "options": [
+      "Other people",
+      "Your own strength",
+      "Wealth",
+      "Your own understanding"
+    ],
+    "tags": [
+      "Old Testament",
+      "Wisdom",
+      "Trust",
+      "Proverbs",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 22,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Proverbs 22:6 teach about raising children?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Proverbs 22:6 — The principle of training: instruct a child from youth in the way of the LORD.",
+    "language": "en",
+    "options": [
+      "Let children develop on their own",
+      "Be strict",
+      "Train up a child in the way he should go; even when he is old he will not depart from it",
+      "Give children full freedom"
+    ],
+    "tags": [
+      "Old Testament",
+      "Wisdom",
+      "Education",
+      "Proverbs",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 27,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Proverbs 27:17 says: 'Iron sharpens iron, and ___ sharpens his friend'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Proverbs 27:17 — Iron sharpens iron; good friends help one another mature through honest relationship.",
+    "language": "en",
+    "options": [
+      "Heart to heart",
+      "One man sharpens another",
+      "Word against word",
+      "Face to face"
+    ],
+    "tags": [
+      "Old Testament",
+      "Wisdom",
+      "Friendship",
+      "Proverbs",
+      "Wisdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 4,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Proverbs 4:23 teach we must guard above all?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Proverbs 4:23 — Keep your heart with all vigilance, for from it flow the springs of life.",
+    "language": "en",
+    "options": [
+      "Reputation",
+      "Health",
+      "The heart",
+      "Money"
+    ],
+    "tags": [
+      "Old Testament",
+      "Wisdom",
+      "Heart",
+      "Proverbs",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 6,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Proverbs urges the lazy to learn from which creature?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Proverbs 6:6 — 'Go to the ant, O sluggard.' It stores food without a commander.",
+    "language": "en",
+    "verseEnd": 8,
+    "options": [
+      "The bird",
+      "The squirrel",
+      "The bee",
+      "The ant"
+    ],
+    "tags": [
+      "Old Testament",
+      "Wisdom",
+      "Diligence",
+      "Proverbs",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 11,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Proverbs 11:2: 'When pride comes, then comes ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Proverbs 11:2 — Pride brings disgrace. Humility brings wisdom.",
+    "language": "en",
+    "options": [
+      "Success",
+      "Power",
+      "Disgrace",
+      "Wealth"
+    ],
+    "tags": [
+      "Old Testament",
+      "Wisdom",
+      "Humility",
+      "Proverbs",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whom does Proverbs 12:1 call stupid?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Proverbs 12:1 — Whoever loves discipline loves knowledge, but whoever hates reproof is stupid.",
+    "language": "en",
+    "options": [
+      "Whoever hates discipline",
+      "Whoever does not study",
+      "The young",
+      "The poor"
+    ],
+    "tags": [
+      "Old Testament",
+      "Wisdom",
+      "Discipline",
+      "Proverbs",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 15,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Proverbs 15:1 teaches: 'A soft answer ___'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Proverbs 15:1 — A soft answer turns away wrath, but a harsh word stirs up anger.",
+    "language": "en",
+    "options": [
+      "Wise",
+      "Turns away wrath",
+      "Calms",
+      "Brings joy"
+    ],
+    "tags": [
+      "Old Testament",
+      "Wisdom",
+      "Speech",
+      "Proverbs",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 16,
+    "verseStart": 18,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Proverbs 16:18: 'Pride goes before ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Proverbs 16:18 — Pride goes before destruction, and a haughty spirit before a fall.",
+    "language": "en",
+    "options": [
+      "Wisdom",
+      "Success",
+      "Destruction",
+      "Wealth"
+    ],
+    "tags": [
+      "Old Testament",
+      "Wisdom",
+      "Pride",
+      "Proverbs",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 18,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Proverbs 18:24 say about a friend?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Proverbs 18:24 — Quality over quantity. A true friend sticks closer than a brother.",
+    "language": "en",
+    "options": [
+      "Few friends are enough",
+      "No need for friends",
+      "Many friends are good",
+      "There is a friend who sticks closer than a brother"
+    ],
+    "tags": [
+      "Old Testament",
+      "Wisdom",
+      "Friendship",
+      "Proverbs",
+      "Wisdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 14,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Proverbs 14:12: 'There is a way that seems right to a man, but its end is the way of ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Proverbs 14:12 — Not every way that looks right truly is. We need the LORD's guidance.",
+    "language": "en",
+    "options": [
+      "Success",
+      "Peace",
+      "Wealth",
+      "Death"
+    ],
+    "tags": [
+      "Old Testament",
+      "Wisdom",
+      "Choice",
+      "Proverbs",
+      "Wisdom",
+      "Intermediate"
+    ]
+  }
+]
