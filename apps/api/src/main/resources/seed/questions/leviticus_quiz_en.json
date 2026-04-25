@@ -1,0 +1,1886 @@
+[
+  {
+    "book": "Leviticus",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Must the burnt offering use a male or female animal?",
+    "options": [
+      "Female",
+      "Firstborn",
+      "Male without blemish",
+      "Any animal"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Leviticus 1:3 — 'If his offering is a burnt offering from the herd, he shall offer a male without blemish.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "If a burnt offering of birds is offered, what kind of bird must be used?",
+    "options": [
+      "Eagle",
+      "Turtledove or pigeon",
+      "Sparrow",
+      "Quail"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 1:14 — 'If his offering to the LORD is a burnt offering of birds, then he shall bring his offering of turtledoves or pigeons.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What was the main ingredient of the grain offering?",
+    "options": [
+      "Fruit",
+      "Lamb meat",
+      "Fine flour",
+      "Wine"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Leviticus 2:1 — 'When anyone brings a grain offering as an offering to the LORD, his offering shall be of fine flour. He shall pour oil on it and put frankincense on it.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "A grain offering presented to the LORD was permitted to contain leaven.",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 2:11 — 'No grain offering that you bring to the LORD shall be made with leaven, for you shall burn no leaven nor any honey as a food offering to the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "fill_in_blank",
+    "content": "Every grain offering must be seasoned with ___.",
+    "options": [
+      "sugar",
+      "honey",
+      "salt",
+      "leaven"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Leviticus 2:13 — 'You shall season all your grain offerings with salt. You shall not let the salt of the covenant with your God be missing from your grain offering.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "In the peace offering, the animal offered may be male or female.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 3:1 — 'If his offering is a sacrifice of peace offering... whether male or female, he shall offer it without blemish before the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What two things were Israelites forbidden to eat from the peace offering?",
+    "options": [
+      "Fat and blood",
+      "Head and feet",
+      "Bone and skin",
+      "Liver and heart"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 3:17 — 'It shall be a statute forever throughout your generations, in all your dwelling places, that you eat neither fat nor blood.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sin and Fall",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 4,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When the anointed priest sins, what animal must he offer as a sin offering?",
+    "options": [
+      "A male goat",
+      "A dove",
+      "A ram",
+      "A young bull without blemish"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 4:3 — 'If it is the anointed priest who sins, thus bringing guilt on the people, then he shall offer for the sin that he has committed a bull from the herd without blemish to the LORD for a sin offering.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sin and Fall",
+      "Tabernacle and Worship",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 4,
+    "verseStart": 22,
+    "verseEnd": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "When a leader sins, what animal must he offer as a sin offering?",
+    "options": [
+      "A young pigeon",
+      "A female lamb",
+      "A young bull",
+      "A male goat without blemish"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 4:22-23 — 'When a leader sins... he shall bring as his offering a goat, a male without blemish.' Different sacrifices vary based on the offender's status.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sin and Fall",
+      "Sacrifice and Ritual",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 4,
+    "verseStart": 27,
+    "verseEnd": 28,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When a common person sins, what animal must he offer?",
+    "options": [
+      "A male dove",
+      "A female goat without blemish",
+      "A young bull",
+      "A male sheep"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 4:28 — 'He shall bring for his offering a goat, a female without blemish, for his sin which he has committed.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sin and Fall",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 5,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "If the sinner is too poor for birds, what may he offer as a sin offering?",
+    "options": [
+      "Water and wine",
+      "Incense",
+      "A tenth of an ephah of fine flour",
+      "Firstfruits"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Leviticus 5:11 — 'But if he cannot afford two turtledoves or two pigeons, then he shall bring as his offering for the sin that he has committed a tenth of an ephah of fine flour for a sin offering.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sin and Fall",
+      "Sacrifice and Ritual",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 5,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "When sinning against holy things, one must restitute an additional one-fifth of the value.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 5:16 — 'He shall make restitution for what he has done amiss in the holy thing and shall add a fifth to it.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sin and Fall",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "If someone defrauds his neighbor of property, besides the guilt offering, how much must he repay?",
+    "options": [
+      "Restore in full plus one-fifth",
+      "Restore fourfold",
+      "Restore the exact amount taken",
+      "Restore double"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 6:5 — 'He shall restore it in full and shall add a fifth to it, and give it to him to whom it belongs on the day he realizes his guilt.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 6,
+    "verseStart": 12,
+    "verseEnd": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How was the fire on the altar of burnt offering to be kept?",
+    "options": [
+      "Rekindled every morning",
+      "Continually burning, never to go out",
+      "Lit only on the Sabbath",
+      "Lit once a month"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 6:13 — 'Fire shall be kept burning on the altar continually; it shall not go out.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 6,
+    "verseStart": 26,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Who eats the meat of the sin offering?",
+    "options": [
+      "The priest who offers it",
+      "All Israel",
+      "The Levites and their families",
+      "Only the offerer"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 6:26 — 'The priest who offers it for sin shall eat it. In a holy place it shall be eaten, in the court of the tent of meeting.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sin and Fall",
+      "Sacrifice and Ritual",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 7,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How long must the meat of the thank offering be eaten?",
+    "options": [
+      "Within two days",
+      "Within three days",
+      "Within a week",
+      "On the day it is offered, leaving none until morning"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 7:15 — 'And the flesh of the sacrifice of his peace offerings for thanksgiving shall be eaten on the day of his offering. He shall not leave any of it until the morning.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 7,
+    "verseStart": 26,
+    "verseEnd": 27,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "The Israelites were absolutely forbidden to eat blood.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 7:26-27 — 'You shall eat no blood whatever, whether of fowl or of animal, in any of your dwelling places. Whoever eats any blood, that person shall be cut off from his people.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 8,
+    "verseStart": 6,
+    "verseEnd": 9,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Before being ordained, Aaron and his sons had to be washed with water.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 8:6 — 'And Moses brought Aaron and his sons and washed them with water.' This was the first step in the ordination ceremony.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 8,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Moses poured the anointing oil on whose head to consecrate him?",
+    "options": [
+      "Eleazar",
+      "Joshua",
+      "Nadab",
+      "Aaron"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 8:12 — 'And he poured some of the anointing oil on Aaron's head and anointed him to consecrate him.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 8,
+    "verseStart": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How many days did the ordination of Aaron and his sons last?",
+    "options": [
+      "Seven days",
+      "Forty days",
+      "Ten days",
+      "Three days"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 8:33 — 'You shall not go outside the entrance of the tent of meeting for seven days, until the days of your ordination are completed.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 9,
+    "verseStart": 23,
+    "verseEnd": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What happened when Aaron offered the first sacrifice after the ordination?",
+    "options": [
+      "Fire from the LORD consumed the offering on the altar",
+      "A cloud covered the tent of meeting",
+      "Water flowed from the altar",
+      "The earth shook"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 9:24 — 'And fire came out from before the LORD and consumed the burnt offering and the pieces of fat on the altar.' The people saw, shouted, and fell on their faces.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 9,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "When fire from the LORD came forth, all the people shouted and fell on their faces.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 9:24 — 'And when all the people saw it, they shouted and fell on their faces.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 10,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Which two sons of Aaron offered strange fire before the LORD?",
+    "options": [
+      "Gershon and Kohath",
+      "Eleazar and Ithamar",
+      "Nadab and Eleazar",
+      "Nadab and Abihu"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 10:1 — 'Now Nadab and Abihu, the sons of Aaron, each took his censer and put fire in it and laid incense on it and offered unauthorized fire before the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 10,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "fill_in_blank",
+    "content": "Nadab and Abihu were consumed by ___ from the LORD for offering strange fire.",
+    "options": [
+      "fire",
+      "lightning",
+      "plague",
+      "whirlwind"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 10:2 — 'And fire came out from before the LORD and consumed them, and they died before the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 11,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What kind of animals were considered clean to eat?",
+    "options": [
+      "Animals with sharp fangs",
+      "Animals with split hooves that chew the cud",
+      "Animals with long fur",
+      "Animals living in water"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 11:3 — 'Whatever parts the hoof and is cloven-footed and chews the cud, among the animals, you may eat.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 11,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "The pig was considered unclean because it does not chew the cud, even though it has split hooves.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 11:7 — 'And the pig, because it parts the hoof and is cloven-footed but does not chew the cud, is unclean to you.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 11,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What must water creatures have to be considered clean?",
+    "options": [
+      "Bright color",
+      "Legs and claws",
+      "Hard shell",
+      "Fins and scales"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 11:9 — 'Of all that are in the seas or in the rivers, all that have fins and scales... you may eat.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 12,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On what day after birth must a male child be circumcised?",
+    "options": [
+      "Seventh day",
+      "Fourteenth day",
+      "Third day",
+      "Eighth day"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 12:3 — 'And on the eighth day the flesh of his foreskin shall be circumcised.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 12,
+    "verseStart": 2,
+    "verseEnd": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How much longer is the time of purification when a mother bears a daughter compared to a son?",
+    "options": [
+      "Three times",
+      "Equal time",
+      "Four times",
+      "Double"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 12:2,5 — Bearing a son: 7 days unclean + 33 days purifying = 40 days. Bearing a daughter: 14 + 66 = 80 days. Double the time.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 13,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Who has authority to examine and pronounce someone leprous?",
+    "options": [
+      "Moses",
+      "A judge",
+      "An elder",
+      "The priest"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 13:2 — 'Then he shall be brought to Aaron the priest or to one of his sons the priests.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 13,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "If the priest is uncertain about leprosy, how long must the patient be quarantined?",
+    "options": [
+      "Thirty days",
+      "Three days",
+      "Fourteen days",
+      "Seven days"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 13:4 — 'The priest shall shut up the diseased person for seven days.' After that, a re-examination is made.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Sacrifice and Ritual",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 13,
+    "verseStart": 45,
+    "verseEnd": 46,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What must a leper cry out when meeting others?",
+    "options": [
+      "Stand back!",
+      "Unclean! Unclean!",
+      "Save me!",
+      "Have mercy!"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 13:45 — 'The leprous person who has the disease shall wear torn clothes and let the hair of his head hang loose, and he shall cover his upper lip and cry out, Unclean, unclean!'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 14,
+    "verseStart": 4,
+    "verseEnd": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "In the cleansing ritual for a leper, what materials are needed?",
+    "options": [
+      "A young bull, blood, and fire",
+      "Two birds, cedar wood, scarlet yarn, and hyssop",
+      "River water, salt, and frankincense",
+      "Two lambs, olive oil, and fine flour"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 14:4 — 'The priest shall command them to take for him who is to be cleansed two live clean birds and cedarwood and scarlet yarn and hyssop.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 14,
+    "verseStart": 34,
+    "verseEnd": 35,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "Leviticus prescribes how to handle leprosy only for people, not for houses.",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 14:34-35 — 'When you come into the land of Canaan... and I put a case of leprous disease in a house... then he who owns the house shall come and tell the priest.' Leprosy applied to houses too.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 15,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "After healing, how many days must one with a discharge wait before being cleansed?",
+    "options": [
+      "Seven days",
+      "Fourteen days",
+      "Thirty days",
+      "Three days"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 15:13 — 'When the one with a discharge is cleansed of his discharge, he shall count for himself seven days for his cleansing.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 15,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What is the main purpose of the cleanliness laws in Leviticus 15?",
+    "options": [
+      "To distinguish Israel from other nations",
+      "To give the priests power",
+      "To keep the Israelites separate from uncleanness, lest they die",
+      "To punish sin"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Leviticus 15:31 — 'Thus you shall keep the people of Israel separate from their uncleanness, lest they die in their uncleanness by defiling my tabernacle that is in their midst.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 16,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How many times a year did the high priest enter the Most Holy Place?",
+    "options": [
+      "Once a month",
+      "Only once, on the Day of Atonement",
+      "Whenever needed",
+      "Every Sabbath"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 16:2 — 'Tell Aaron your brother not to come at any time into the Holy Place inside the veil... so that he may not die.' Hebrews 9:7 confirms only once a year on the Day of Atonement.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Sacrifice and Ritual",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 16,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "On the Day of Atonement, what did the high priest wear when entering the Most Holy Place?",
+    "options": [
+      "A blue robe",
+      "Plain holy linen garments",
+      "Full vestments with ephod and breastpiece",
+      "White and golden robes"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 16:4 — 'He shall put on the holy linen coat and shall have the linen undergarment on his body, and he shall tie the linen sash around his waist, and wear the linen turban.' Not the full priestly vestments.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sin and Fall",
+      "Tabernacle and Worship",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 16,
+    "verseStart": 8,
+    "verseEnd": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On the Day of Atonement, Aaron cast lots on two goats: one for the LORD and one for whom?",
+    "options": [
+      "The Israelites",
+      "The priests",
+      "The Gentiles",
+      "Azazel"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 16:8 — 'And Aaron shall cast lots over the two goats, one lot for the LORD and the other lot for Azazel.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sin and Fall",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 16,
+    "verseStart": 21,
+    "verseEnd": 22,
+    "difficulty": "easy",
+    "type": "fill_in_blank",
+    "content": "Aaron laid both his hands on the head of the live goat and confessed all the ___ of the people of Israel over it.",
+    "options": [
+      "prayers",
+      "desires",
+      "sins",
+      "diseases"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Leviticus 16:21 — 'And Aaron shall lay both his hands on the head of the live goat, and confess over it all the iniquities of the people of Israel, and all their transgressions, all their sins.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 16,
+    "verseStart": 29,
+    "difficulty": "medium",
+    "type": "fill_in_blank",
+    "content": "The Day of Atonement is observed on the tenth day of the ___ month.",
+    "options": [
+      "seventh",
+      "third",
+      "first",
+      "twelfth"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 16:29 — 'It shall be a statute to you forever that in the seventh month, on the tenth day of the month, you shall afflict yourselves.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sin and Fall",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 17,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where is the life of the flesh?",
+    "options": [
+      "Water",
+      "Blood",
+      "Soul",
+      "Breath"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 17:11 — 'For the life of the flesh is in the blood, and I have given it for you on the altar to make atonement for your souls.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 17,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "true_false",
+    "content": "Leviticus 17:11 teaches that blood makes atonement because the life is in the blood — a principle echoed in Hebrews 9:22.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 17:11 — 'The life of the flesh is in the blood... blood makes atonement for the soul.' Hebrews 9:22 affirms: 'Without the shedding of blood there is no forgiveness of sins.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sin and Fall",
+      "Sacrifice and Ritual",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 18,
+    "verseStart": 3,
+    "verseEnd": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "God forbade Israel to follow the customs of which two lands?",
+    "options": [
+      "Babylon and Assyria",
+      "Philistia and Edom",
+      "Moab and Ammon",
+      "Egypt and Canaan"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 18:3 — 'You shall not do as they do in the land of Egypt, where you lived, and you shall not do as they do in the land of Canaan, to which I am bringing you.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 18,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Israel was forbidden to offer their children to which god?",
+    "options": [
+      "Asherah",
+      "Molech",
+      "Dagon",
+      "Baal"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 18:21 — 'You shall not give any of your children to offer them to Molech, and so profane the name of your God.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 19,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "fill_in_blank",
+    "content": "You shall be holy, for I the LORD your God am ___.",
+    "options": [
+      "righteous",
+      "holy",
+      "powerful",
+      "loving"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 19:2 — 'You shall be holy, for I the LORD your God am holy.' This is the central command of Leviticus, echoed in 1 Peter 1:16.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 19,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When harvesting, Israelites were to leave the corners of their fields and not glean — for whom?",
+    "options": [
+      "The priests",
+      "The king",
+      "The poor and the sojourner",
+      "The firstborn son"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Leviticus 19:9-10 — 'You shall leave them for the poor and for the sojourner: I am the LORD your God.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 19,
+    "verseStart": 18,
+    "difficulty": "easy",
+    "type": "fill_in_blank",
+    "content": "You shall love your ___ as yourself.",
+    "options": [
+      "father and mother",
+      "enemy",
+      "God",
+      "neighbor"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 19:18 — 'You shall love your neighbor as yourself: I am the LORD.' Jesus quoted this as the second great commandment (Matthew 22:39).",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 19,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "Leviticus 19 forbids tattooing of the body.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 19:28 — 'You shall not... tattoo yourselves: I am the LORD.' This prohibition relates to pagan rites.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 20,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What was the punishment for offering one's children to Molech?",
+    "options": [
+      "Banishment from the camp",
+      "Stoning",
+      "Must offer a sin offering",
+      "Beaten with rods"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 20:2 — 'Any one of the people of Israel or of the strangers who sojourn in Israel who gives any of his children to Molech shall surely be put to death. The people of the land shall stone him with stones.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 20,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "The LORD said: 'Consecrate yourselves, therefore, and be holy, for I am the LORD your God.'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 20:7 — 'Consecrate yourselves, therefore, and be holy, for I am the LORD your God.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 20,
+    "verseStart": 26,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What is the main reason God distinguished clean and unclean animals for Israel?",
+    "options": [
+      "Because of patriarchal tradition",
+      "For health and hygiene reasons",
+      "Because some animals are poisonous",
+      "Because Israel must be holy and set apart for the LORD"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 20:26 — 'You shall be holy to me, for I the LORD am holy and have separated you from the peoples, that you should be mine.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 21,
+    "verseStart": 16,
+    "verseEnd": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What were Aaron's descendants with physical defects allowed to do?",
+    "options": [
+      "Excluded entirely from the priestly line",
+      "Serve only outside the tent of meeting",
+      "Eat the holy food but not offer sacrifices",
+      "Still offer sacrifices on the altar"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Leviticus 21:22 — 'He may eat the bread of his God, both of the most holy and of the holy things, but he shall not go through the veil or approach the altar.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 22,
+    "verseStart": 27,
+    "verseEnd": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How many days old must a sacrificial animal be at minimum?",
+    "options": [
+      "Three days",
+      "Thirty days",
+      "Fourteen days",
+      "Seven days"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 22:27 — 'When an ox or sheep or goat is born, it shall remain seven days with its mother, and from the eighth day on it shall be acceptable as a food offering to the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 22,
+    "verseStart": 32,
+    "verseEnd": 33,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "The LORD said: 'You shall not profane my holy name; I must be sanctified among the people of Israel.'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 22:32 — 'You shall not profane my holy name, that I may be sanctified among the people of Israel. I am the LORD who sanctifies you.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 23,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On what day was the Passover celebrated?",
+    "options": [
+      "First day of the first month",
+      "Fifteenth day of the third month",
+      "Fourteenth day of the first month",
+      "Tenth day of the seventh month"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Leviticus 23:5 — 'In the first month, on the fourteenth day of the month at twilight, is the LORD's Passover.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 23,
+    "verseStart": 6,
+    "verseEnd": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "During the Feast of Unleavened Bread, what did Israel eat for seven days?",
+    "options": [
+      "Leavened bread",
+      "Unleavened bread",
+      "Only fruit",
+      "Roasted meat"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 23:6 — 'And on the fifteenth day of the same month is the Feast of Unleavened Bread to the LORD; for seven days you shall eat unleavened bread.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 23,
+    "verseStart": 15,
+    "verseEnd": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How many days after the Passover was the Feast of Weeks (Pentecost) celebrated?",
+    "options": [
+      "Thirty days",
+      "Seven days",
+      "Fifty days",
+      "Seventy days"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Leviticus 23:15-16 — 'You shall count seven full weeks... You shall count fifty days.' This is the origin of the name 'Pentecost' (50 days).",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 23,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "fill_in_blank",
+    "content": "The first day of the seventh month is a day of solemn rest, a memorial proclaimed with a blast of ___.",
+    "options": [
+      "shouting",
+      "drums",
+      "trumpets",
+      "singing"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Leviticus 23:24 — 'In the seventh month, on the first day of the month, you shall observe a day of solemn rest, a memorial proclaimed with blast of trumpets.' This is the Feast of Trumpets (Rosh Hashanah).",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 23,
+    "verseStart": 34,
+    "verseEnd": 36,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How many days does the Feast of Booths last?",
+    "options": [
+      "Three days",
+      "Seven days",
+      "Ten days",
+      "Fourteen days"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 23:34 — 'On the fifteenth day of this seventh month and for seven days is the Feast of Booths to the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 23,
+    "verseStart": 42,
+    "verseEnd": 43,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does the Feast of Booths remind Israel of?",
+    "options": [
+      "The creation of heaven and earth",
+      "The Sinai covenant",
+      "The time of dwelling in booths during the exodus from Egypt",
+      "The conquest of Canaan"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Leviticus 23:43 — 'That your generations may know that I made the people of Israel dwell in booths when I brought them out of the land of Egypt.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 24,
+    "verseStart": 5,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How many loaves of bread were placed on the table before the LORD?",
+    "options": [
+      "Ten loaves",
+      "Twelve loaves",
+      "Seven loaves",
+      "Twenty-four loaves"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 24:5-6 — 'You shall take fine flour and bake twelve loaves from it... You shall set them in two piles, six in a pile, on the table of pure gold before the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 24,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Whoever blasphemed the name of the LORD was to be put to death.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 24:16 — 'Whoever blasphemes the name of the LORD shall surely be put to death. All the congregation shall stone him.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 24,
+    "verseStart": 17,
+    "verseEnd": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where in Leviticus is the law of 'eye for eye, tooth for tooth' recorded?",
+    "options": [
+      "Chapter 24",
+      "Chapter 19",
+      "Chapter 20",
+      "Chapter 26"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 24:20 — 'Fracture for fracture, eye for eye, tooth for tooth; whatever injury he has given a person shall be given to him.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 25,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How often is the Sabbath year of rest for the land?",
+    "options": [
+      "Every five years",
+      "Every ten years",
+      "Every three years",
+      "Every seven years"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 25:4 — 'But in the seventh year there shall be a Sabbath of solemn rest for the land, a Sabbath to the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 25,
+    "verseStart": 10,
+    "verseEnd": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How often is the Year of Jubilee celebrated?",
+    "options": [
+      "Every hundred years",
+      "Every ten years",
+      "Every twenty-five years",
+      "Every fifty years"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 25:10-11 — 'You shall consecrate the fiftieth year... That fiftieth year shall be a jubilee for you.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 25,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What theological significance does the Year of Jubilee in Leviticus 25 have in relation to the New Testament?",
+    "options": [
+      "A type of the final judgment",
+      "A type of the resurrection",
+      "A type of baptism",
+      "A type of liberation and freedom in Jesus (Luke 4:18-19)"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 25:10 — 'Proclaim liberty throughout the land to all its inhabitants.' Jesus quoted Isaiah 61:1-2 (built on Jubilee) in Luke 4:18-19 to declare His mission of liberation.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 25,
+    "verseStart": 35,
+    "verseEnd": 37,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "Israelites were permitted to lend money to fellow Israelites at interest.",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 25:36-37 — 'Take no interest from him or profit, but fear your God... You shall not lend him your money at interest, nor give him your food for profit.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 26,
+    "verseStart": 3,
+    "verseEnd": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What blessing did God promise if Israel kept His commandments?",
+    "options": [
+      "Victory over all enemies",
+      "Rain in season and the land yielding produce",
+      "Abundant gold and silver",
+      "Eternal life"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 26:3-4 — 'If you walk in my statutes... then I will give you your rains in their season, and the land shall yield its increase, and the trees of the field shall yield their fruit.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Law",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 26,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "hard",
+    "type": "fill_in_blank",
+    "content": "I will make my dwelling among you... I will walk among you and will be your ___, and you shall be my people.",
+    "options": [
+      "king",
+      "shepherd",
+      "judge",
+      "God"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 26:12 — 'I will walk among you and will be your God, and you shall be my people.' This covenant promise is echoed in 2 Corinthians 6:16.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 26,
+    "verseStart": 27,
+    "verseEnd": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What is the final consequence if Israel refuses to obey God?",
+    "options": [
+      "Scattered among the nations",
+      "Attacked by wild beasts",
+      "Plagues running rampant",
+      "Continual crop failure"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Leviticus 26:33 — 'And I will scatter you among the nations, and I will unsheathe the sword after you, and your land shall be a desolation, and your cities shall be a waste.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 26,
+    "verseStart": 40,
+    "verseEnd": 42,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Despite punishment, what does God promise if Israel confesses their sins?",
+    "options": [
+      "He will send a prophet",
+      "He will give them a new land",
+      "He will give them a new king",
+      "He will remember His covenant with Abraham, Isaac, and Jacob"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 26:42 — 'Then I will remember my covenant with Jacob, and I will remember my covenant with Isaac and my covenant with Abraham, and I will remember the land.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Sin and Fall",
+      "Jacob and Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 27,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When someone vows to dedicate a person's value to the LORD, the highest valuation is for which group?",
+    "options": [
+      "Children aged 5-20",
+      "Elderly above 60",
+      "Males aged 20-60",
+      "Females aged 20-60"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Leviticus 27:3 — 'Then the valuation of a male from twenty years old up to sixty years old shall be fifty shekels of silver.' This is the highest valuation in the schedule.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 27,
+    "verseStart": 28,
+    "verseEnd": 29,
+    "difficulty": "hard",
+    "type": "true_false",
+    "content": "Anything devoted (cherem) to the LORD could be redeemed by money.",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Leviticus 27:28 — 'But no devoted thing that a man devotes to the LORD, of anything that he has... shall be sold or redeemed; every devoted thing is most holy to the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 27,
+    "verseStart": 30,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "To whom does the tithe of the land belong?",
+    "options": [
+      "The king",
+      "The high priest",
+      "The Levites",
+      "The LORD"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Leviticus 27:30 — 'Every tithe of the land, whether of the seed of the land or of the fruit of the trees, is the LORD's; it is holy to the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Leviticus",
+      "Pentateuch",
+      "Basic"
+    ]
+  }
+]

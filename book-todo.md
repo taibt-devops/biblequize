@@ -14,7 +14,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 |------|------|-------|----|----|--------|--------|
 | genesis | Genesis | Pentateuch | 75 | 75 | 100+ | ⚠️ |
 | exodus | Exodus | Pentateuch | 75 | 75 | 60-100 | ✅ |
-| leviticus | Leviticus | Pentateuch | 75 | 0 | 40-60 | 🌐 |
+| leviticus | Leviticus | Pentateuch | 75 | 75 | 40-60 | ✅ |
 | numbers | Numbers | Pentateuch | 75 | 0 | 40-60 | 🌐 |
 | deuteronomy | Deuteronomy | Pentateuch | 32 | 32 | 40-60 | ⚠️ |
 | joshua | Joshua | History | 12 | 12 | 40-60 | ⚠️ |
