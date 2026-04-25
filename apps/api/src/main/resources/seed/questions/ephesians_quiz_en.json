@@ -1,0 +1,385 @@
+[
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Ephesians 2:8, 'For by grace you have been saved.' What does the Greek word for 'grace' mean?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Charis (χάρις) means 'grace, favor' — God's undeserved gift.",
+    "language": "en",
+    "options": [
+      "Eleos — mercy",
+      "Charis — grace, favor",
+      "Agape — love",
+      "Dikaiosune — righteousness"
+    ],
+    "tags": [
+      "Ephesians",
+      "Grace",
+      "Greek language",
+      "New Testament",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In Ephesians 6:12, 'For we do not wrestle against flesh and blood.' What does the Greek word for 'wrestle' mean?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Pale (πάλη) means 'wrestling, struggle' — a personal and inner spiritual battle.",
+    "language": "en",
+    "options": [
+      "Polemos — war",
+      "Agon — contest",
+      "Machomai — to fight",
+      "Pale — wrestling, struggle"
+    ],
+    "tags": [
+      "Ephesians",
+      "Spiritual warfare",
+      "Greek language",
+      "New Testament",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Ephesians 2:8-9, by what are we saved?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ephesians 2:8-9 — For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works.",
+    "language": "en",
+    "verseEnd": 9,
+    "options": [
+      "By baptism",
+      "By good works",
+      "By grace, through faith — not by works",
+      "By keeping the law"
+    ],
+    "tags": [
+      "New Testament",
+      "Salvation",
+      "Grace",
+      "Ephesians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ephesians 6 speaks of the whole armor of God. Why must we put it on?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ephesians 6:11 — We battle not against flesh and blood, but against spiritual forces in the heavenly places.",
+    "language": "en",
+    "verseEnd": 13,
+    "options": [
+      "To protect family",
+      "To attack the enemy",
+      "To be strong",
+      "To stand firm against the schemes of the devil"
+    ],
+    "tags": [
+      "New Testament",
+      "Spiritual warfare",
+      "Armor",
+      "Ephesians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ephesians 1:3: With what kind of blessings has God blessed us?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "God's blessings are spiritual and eternal, not just material.",
+    "language": "en",
+    "options": [
+      "Financial blessings",
+      "Health blessings",
+      "Material blessings",
+      "Every spiritual blessing in the heavenly places"
+    ],
+    "tags": [
+      "New Testament",
+      "Blessing",
+      "Spiritual",
+      "Ephesians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ephesians 2:10: We are God's workmanship, created in Christ Jesus for what?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Saved not by works, but SAVED FOR good works.",
+    "language": "en",
+    "options": [
+      "Good works that God prepared beforehand",
+      "To be saved",
+      "To rest",
+      "To keep the law"
+    ],
+    "tags": [
+      "New Testament",
+      "Purpose",
+      "Good works",
+      "Ephesians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ephesians 4:2-3 urges us to live with one another in what way?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Maintain the unity of the Spirit in the bond of peace.",
+    "language": "en",
+    "verseEnd": 3,
+    "options": [
+      "Competing",
+      "Reasoning",
+      "Independently",
+      "With humility, gentleness, patience, bearing one another in love"
+    ],
+    "tags": [
+      "New Testament",
+      "Unity",
+      "Humility",
+      "Ephesians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verseStart": 26,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ephesians 4:26: 'Be angry and do not ___; do not let the sun go down on your anger'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "You may be angry, but do not let anger lead to sin. Settle it before the day ends.",
+    "language": "en",
+    "options": [
+      "Think",
+      "Sin",
+      "Speak",
+      "Act"
+    ],
+    "tags": [
+      "New Testament",
+      "Anger",
+      "Christian living",
+      "Ephesians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verseStart": 32,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ephesians 4:32: How are we to treat one another?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Forgive others because Christ has forgiven us. Forgiveness is grace lived out.",
+    "language": "en",
+    "options": [
+      "Cold and aloof",
+      "Justly",
+      "Kind, tenderhearted, forgiving as God in Christ has forgiven you",
+      "Harshly"
+    ],
+    "tags": [
+      "New Testament",
+      "Forgiveness",
+      "Kindness",
+      "Ephesians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ephesians 5:25: How should husbands love their wives?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Marital love modeled on Christ's sacrifice for the Church. Love means giving, not getting.",
+    "language": "en",
+    "options": [
+      "As Christ loved the church and gave Himself up for her",
+      "As they love their parents",
+      "As they love their children",
+      "As they love themselves"
+    ],
+    "tags": [
+      "New Testament",
+      "Marriage",
+      "Sacrifice",
+      "Ephesians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ephesians 6:12: We do not wrestle against flesh and blood, but against whom?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Our true battle is spiritual — against forces of darkness, not human beings.",
+    "language": "en",
+    "options": [
+      "Governments",
+      "Rulers, authorities, cosmic powers of darkness",
+      "Friends",
+      "People"
+    ],
+    "tags": [
+      "New Testament",
+      "Warfare",
+      "Powers of darkness",
+      "Ephesians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does the whole armor of God consist of?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Six pieces of spiritual armor — defensive and offensive. The Word of God is the only offensive weapon.",
+    "language": "en",
+    "verseEnd": 17,
+    "options": [
+      "Just a shield",
+      "Belt of truth, breastplate of righteousness, shoes of the gospel, shield of faith, helmet of salvation, sword of the Spirit",
+      "Just a helmet",
+      "Just a sword"
+    ],
+    "tags": [
+      "New Testament",
+      "Armor",
+      "Warfare",
+      "Ephesians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "verseStart": 18,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Ephesians 6:18 instruct us to pray?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Prayer is a spiritual weapon to be used continually, not only in times of need.",
+    "language": "en",
+    "options": [
+      "Only at church",
+      "At all times in the Spirit, with all prayer and supplication",
+      "Only in the morning",
+      "Only when in trouble"
+    ],
+    "tags": [
+      "New Testament",
+      "Prayer",
+      "Spirit",
+      "Ephesians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "verseStart": 18,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ephesians 5:18: Do not be drunk with wine, but be filled with what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Be filled with the Spirit instead of with wine. The Spirit brings joy, singing, and thanksgiving.",
+    "language": "en",
+    "verseEnd": 19,
+    "options": [
+      "Joy",
+      "The Holy Spirit",
+      "Knowledge",
+      "The Word"
+    ],
+    "tags": [
+      "New Testament",
+      "Holy Spirit",
+      "Filled",
+      "Ephesians",
+      "Epistle",
+      "Basic"
+    ]
+  }
+]
