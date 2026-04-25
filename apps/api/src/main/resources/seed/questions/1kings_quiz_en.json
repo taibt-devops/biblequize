@@ -1,0 +1,361 @@
+[
+  {
+    "book": "1 Kings",
+    "chapter": 3,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the LORD invited Solomon to ask anything, what did he ask for?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Kings 3:9 — Solomon asked for an understanding heart to discern between good and evil. The LORD was pleased and added riches and honor.",
+    "language": "en",
+    "options": [
+      "Wisdom to govern the people",
+      "Wealth",
+      "Long life",
+      "Victory over enemies"
+    ],
+    "tags": [
+      "Old Testament",
+      "Solomon",
+      "Wisdom",
+      "1 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "verseStart": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "On Mount Carmel, when Elijah challenged the prophets of Baal, what happened?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Kings 18:38 — Fire from the LORD fell from heaven and consumed the offering, the wood, the stones, the dust, and the water. The people fell on their faces saying: 'The LORD, He is God!'",
+    "language": "en",
+    "verseEnd": 39,
+    "options": [
+      "Fire fell from heaven and consumed the offering",
+      "A windstorm arose",
+      "An earthquake",
+      "Rain fell"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elijah",
+      "Miracle",
+      "1 Kings",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How long did it take Solomon to build the temple?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Kings 6:38 — The temple was built in seven years. A magnificent work.",
+    "language": "en",
+    "verseEnd": 2,
+    "options": [
+      "40 years",
+      "3 years",
+      "7 years",
+      "12 years"
+    ],
+    "tags": [
+      "Old Testament",
+      "Solomon",
+      "Temple",
+      "1 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 8,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "At the dedication of the temple, what did Solomon declare about God?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Kings 8:27 — Solomon understood that God is not confined to the temple. He is greater than any building.",
+    "language": "en",
+    "options": [
+      "God dwells only in the temple",
+      "God gladly receives the temple",
+      "Heaven and the highest heaven cannot contain You — much less this house",
+      "This house is God's home"
+    ],
+    "tags": [
+      "Old Testament",
+      "Temple",
+      "Theology",
+      "1 Kings",
+      "History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 10,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "From which land did the queen come to test Solomon's wisdom?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Kings 10:1 — The queen of Sheba came with hard questions. She was amazed at Solomon's wisdom and wealth.",
+    "language": "en",
+    "verseEnd": 9,
+    "options": [
+      "Queen of Sheba",
+      "Queen of Persia",
+      "Queen of Babylon",
+      "Queen of Egypt"
+    ],
+    "tags": [
+      "Old Testament",
+      "Solomon",
+      "Wisdom",
+      "1 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 11,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Why did Solomon fall in his later years?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Kings 11:4 — Solomon had 700 wives and 300 concubines, and they turned his heart toward foreign gods.",
+    "language": "en",
+    "options": [
+      "His foreign wives turned his heart away to other gods",
+      "Loss of memory",
+      "Betrayed",
+      "Disease"
+    ],
+    "tags": [
+      "Old Testament",
+      "Solomon",
+      "Falling away",
+      "1 Kings",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 12,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whose fault was it that the kingdom split?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Kings 12:16 — Rehoboam listened to the young men's counsel and increased the burden. Ten tribes seceded; only Judah and Benjamin remained.",
+    "language": "en",
+    "verseEnd": 19,
+    "options": [
+      "Rehoboam, for refusing to lighten the people's burden",
+      "Ahijah",
+      "Jeroboam",
+      "Solomon"
+    ],
+    "tags": [
+      "Old Testament",
+      "Division",
+      "Rehoboam",
+      "1 Kings",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did the LORD use to feed Elijah by the brook Cherith?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Kings 17:6 — Ravens brought Elijah bread and meat morning and evening. God provides in marvelous ways.",
+    "language": "en",
+    "verseEnd": 6,
+    "options": [
+      "Manna from heaven",
+      "Local people",
+      "Ravens bringing bread and meat",
+      "Wild fruit"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elijah",
+      "God's provision",
+      "1 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What miracle happened to the widow of Zarephath?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Kings 17:16 — The jar of flour did not run out, the jug of oil did not fail. God provides when we obey.",
+    "language": "en",
+    "verseEnd": 16,
+    "options": [
+      "Sea water turned into wine",
+      "Jar of flour and jug of oil did not run out throughout the famine",
+      "Her son rose from the dead",
+      "A new house was built"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elijah",
+      "Miracle",
+      "1 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "After his victory on Mount Carmel, how did Elijah react when Jezebel threatened him?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Kings 19:4 — Even the greatest prophet has weak moments. The LORD tenderly cared for Elijah.",
+    "language": "en",
+    "options": [
+      "Fled in fear into the wilderness, asking to die",
+      "Continued to fight",
+      "Rejoiced",
+      "Prayed more"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elijah",
+      "Weakness",
+      "1 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How did the LORD appear to Elijah at Mount Horeb?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Kings 19:12 — The LORD was not in the wind, the earthquake, or the fire — but in a low whisper. God speaks in stillness.",
+    "language": "en",
+    "verseEnd": 12,
+    "options": [
+      "Windstorm",
+      "A low whisper (still small voice)",
+      "Fire",
+      "Earthquake"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elijah",
+      "Voice of God",
+      "1 Kings",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "verseStart": 18,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How many had not bowed the knee to Baal, the LORD told Elijah?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Kings 19:18 — Seven thousand had not bowed to Baal. Elijah was not as alone as he had thought.",
+    "language": "en",
+    "options": [
+      "100",
+      "1,000",
+      "7,000",
+      "Only Elijah"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elijah",
+      "Remnant",
+      "1 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How did Elijah call Elisha to be his disciple?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Kings 19:19 — The prophet's cloak was a symbol of the transfer of office and power.",
+    "language": "en",
+    "verseEnd": 21,
+    "options": [
+      "Cast his cloak upon Elisha",
+      "Sent a messenger",
+      "Called him by name",
+      "Sent a letter"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elisha",
+      "Discipleship",
+      "1 Kings",
+      "History",
+      "Basic"
+    ]
+  }
+]
