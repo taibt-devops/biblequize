@@ -276,5 +276,242 @@
       "Công bình",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Tiên tri Mi-chê đến từ thành nào?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Mi-chê 1:1 — 'Lời của Đức Giê-hô-va đã đến với Mi-chê người Mô-rê-sết, trong đời các vua Giô-tham, A-cha, và Ê-xê-chia của Giu-đa.'",
+    "language": "vi",
+    "options": [
+      "Mô-rê-sết",
+      "Bê-tên",
+      "Sa-ma-ri",
+      "Giê-ru-sa-lem"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Mi-chê",
+      "Tiên tri",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Mi-chê 2:1-2 lên án những kẻ làm gì trên giường họ ban đêm?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Mi-chê 2:1 — 'Khốn thay cho những kẻ trên giường mưu toan điều ác, sáng dậy thì làm theo, vì có quyền trong tay.'",
+    "language": "vi",
+    "options": [
+      "Cầu nguyện",
+      "Mưu toan điều ác",
+      "Học luật pháp",
+      "Suy gẫm Lời Chúa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Mi-chê",
+      "Tội ác",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 2,
+    "verseStart": 12,
+    "verseEnd": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Mi-chê 2:12-13 hứa Đức Chúa Trời sẽ làm gì với dân Y-sơ-ra-ên còn sót?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mi-chê 2:12 — 'Ta chắc sẽ thâu nhóm cả Gia-cốp, ngươi; ta chắc sẽ nhóm hiệp dân sót lại của Y-sơ-ra-ên.'",
+    "language": "vi",
+    "options": [
+      "Tản lạc đến các dân",
+      "Tiêu diệt hoàn toàn",
+      "Thâu nhóm dân sót lại",
+      "Bỏ mặc lưu đày"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Mi-chê",
+      "Dân sót",
+      "Tiểu tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 3,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Mi-chê 3:11, các quan trưởng và thầy tế lễ Giê-ru-sa-lem làm gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mi-chê 3:11 — 'Các quan trưởng xét đoán vì của hối lộ, các thầy tế lễ dạy dỗ vì tiền công, các tiên tri nói tiên tri vì bạc.'",
+    "language": "vi",
+    "options": [
+      "Sống công bình",
+      "Dạy dỗ miễn phí",
+      "Xét đoán theo luật pháp",
+      "Xét đoán vì của hối lộ và dạy dỗ vì tiền"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Mi-chê",
+      "Tham nhũng",
+      "Tiểu tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Mi-chê 4:4 mô tả mỗi người sẽ ngồi dưới điều gì trong thời bình?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Mi-chê 4:4 — 'Mọi người sẽ ngồi dưới gốc nho và cây vả mình, không ai làm cho lo sợ.'",
+    "language": "vi",
+    "options": [
+      "Cây nho và cây vả",
+      "Cây bách hương",
+      "Cây ô-liu",
+      "Cây táo"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Mi-chê",
+      "Hòa bình",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 4,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Mi-chê 4:10 báo trước dân Si-ôn sẽ bị đem đi đâu trước khi được giải cứu?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Mi-chê 4:10 — 'Ngươi sẽ đến tận Ba-by-lôn; tại đó ngươi sẽ được cứu; tại đó Đức Giê-hô-va sẽ chuộc ngươi ra khỏi tay kẻ thù.'",
+    "language": "vi",
+    "options": [
+      "Ai Cập",
+      "Ba-by-lôn",
+      "A-si-ri",
+      "Mô-áp"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Mi-chê",
+      "Lưu đày",
+      "Tiểu tiên tri",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Mi-chê 5:5 nói về Đấng đến từ Bết-lê-hem là gì cho dân Ngài?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mi-chê 5:5 — 'Người sẽ là sự bình an của chúng ta. Khi A-si-ri đến trong xứ chúng ta...'",
+    "language": "vi",
+    "options": [
+      "Vua chiến tranh",
+      "Quan xét nghiêm khắc",
+      "Sự bình an",
+      "Thầy tế lễ thượng phẩm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Mi-chê",
+      "Mê-si-a",
+      "Tiểu tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 6,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Theo Mi-chê 6:14-15, hậu quả gì giáng trên dân vì tội lỗi?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mi-chê 6:14 — 'Ngươi sẽ ăn nhưng không no; ngươi sẽ gieo nhưng không gặt; sẽ đạp nho mà không uống rượu.'",
+    "language": "vi",
+    "options": [
+      "Được ăn no đầy",
+      "Gặt mùa dư dật",
+      "Sống bình an",
+      "Ăn nhưng không no, gieo nhưng không gặt"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Mi-chê",
+      "Hình phạt",
+      "Tiểu tiên tri",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 7,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Mi-chê 7:19 nói Đức Chúa Trời sẽ ném tội lỗi của dân sự vào đâu?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mi-chê 7:19 — 'Ngài sẽ thương xót chúng ta; sẽ giày đạp các tội lỗi chúng ta dưới chân; và ném mọi tội ác chúng ta xuống vực sâu của biển.'",
+    "language": "vi",
+    "options": [
+      "Vào lửa thiêu",
+      "Để xa khỏi mình",
+      "Vực sâu của biển",
+      "Bỏ qua không tính"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Mi-chê",
+      "Tha thứ",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
   }
 ]

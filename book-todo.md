@@ -44,7 +44,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | amos | Amos | Prophets | 0 | 0 | 30 | ❌ |
 | obadiah | Obadiah | Prophets | 0 | 0 | 20 (min) | ❌ |
 | jonah | Jonah | Prophets | 12 | 12 | 30-40 | ⚠️ |
-| micah | Micah | Prophets | 11 | 11 | 20-30 | ⚠️ |
+| micah | Micah | Prophets | 20 | 20 | 20-30 | ✅ |
 | nahum | Nahum | Prophets | 0 | 0 | 20 | ❌ |
 | habakkuk | Habakkuk | Prophets | 12 | 12 | 20-30 | ✅ (gần đủ) |
 | zephaniah | Zephaniah | Prophets | 0 | 0 | 20 | ❌ |

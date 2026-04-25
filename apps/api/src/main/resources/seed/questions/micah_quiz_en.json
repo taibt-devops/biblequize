@@ -276,5 +276,242 @@
       "Righteousness",
       "Basic"
     ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "From which town did the prophet Micah come?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Micah 1:1 — 'The word of the LORD that came to Micah of Moresheth in the days of Jotham, Ahaz, and Hezekiah, kings of Judah.'",
+    "language": "en",
+    "options": [
+      "Moresheth",
+      "Bethel",
+      "Samaria",
+      "Jerusalem"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Prophet",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Micah 2:1-2 condemn people for doing on their beds at night?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Micah 2:1 — 'Woe to those who devise wickedness and work evil on their beds! When the morning dawns, they perform it, because it is in the power of their hand.'",
+    "language": "en",
+    "options": [
+      "Praying",
+      "Devising wickedness",
+      "Studying the law",
+      "Meditating on God's Word"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Wickedness",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 2,
+    "verseStart": 12,
+    "verseEnd": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Micah 2:12-13 promise God will do with the remnant of Israel?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Micah 2:12 — 'I will surely assemble all of you, O Jacob; I will gather the remnant of Israel.'",
+    "language": "en",
+    "options": [
+      "Scatter them among the nations",
+      "Destroy them completely",
+      "Gather the remnant together",
+      "Leave them in exile"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Remnant",
+      "Minor Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 3,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Micah 3:11, what did Jerusalem's leaders and priests do?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Micah 3:11 — 'Its heads give judgment for a bribe; its priests teach for a price; its prophets practice divination for money.'",
+    "language": "en",
+    "options": [
+      "Lived righteously",
+      "Taught for free",
+      "Judged according to the law",
+      "Judged for a bribe and taught for a price"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Corruption",
+      "Minor Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Under what does Micah 4:4 say each person will sit in the time of peace?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Micah 4:4 — 'But they shall sit every man under his vine and under his fig tree, and no one shall make them afraid.'",
+    "language": "en",
+    "options": [
+      "Vine and fig tree",
+      "Cedar tree",
+      "Olive tree",
+      "Apple tree"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Peace",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 4,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Where does Micah 4:10 say Zion will go before being delivered?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Micah 4:10 — 'You shall go to Babylon; there you shall be rescued; there the LORD will redeem you from the hand of your enemies.'",
+    "language": "en",
+    "options": [
+      "Egypt",
+      "Babylon",
+      "Assyria",
+      "Moab"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Exile",
+      "Minor Prophets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Micah 5:5 say the One coming from Bethlehem will be for His people?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Micah 5:5 — 'And he shall be their peace. When the Assyrian comes into our land...'",
+    "language": "en",
+    "options": [
+      "A king of war",
+      "A stern judge",
+      "Their peace",
+      "A high priest"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Messiah",
+      "Minor Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 6,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "According to Micah 6:14-15, what consequence comes upon the people for their sin?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Micah 6:14 — 'You shall eat, but not be satisfied, and there shall be hunger within you... You shall sow, but not reap.'",
+    "language": "en",
+    "options": [
+      "They will eat to the full",
+      "Bountiful harvest",
+      "Live in peace",
+      "Eat but not be satisfied; sow but not reap"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Judgment",
+      "Minor Prophets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 7,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where does Micah 7:19 say God will cast the people's sins?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Micah 7:19 — 'He will again have compassion on us; he will tread our iniquities underfoot. You will cast all our sins into the depths of the sea.'",
+    "language": "en",
+    "options": [
+      "Into a fire",
+      "Far from himself",
+      "Into the depths of the sea",
+      "Overlooked entirely"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Forgiveness",
+      "Minor Prophets",
+      "Basic"
+    ]
   }
 ]
