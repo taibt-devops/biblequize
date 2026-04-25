@@ -353,5 +353,191 @@
       "Lịch sử",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "verseStart": 6,
+    "verseEnd": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Vì sao Na-ô-mi quyết định trở về xứ Giu-đa?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ru-tơ 1:6 — 'Na-ô-mi nghe nói tại Mô-áp rằng Đức Giê-hô-va đã đoái xem dân Ngài và ban lương thực cho họ.'",
+    "language": "vi",
+    "options": [
+      "Vì hết tiền",
+      "Vì có chiến tranh",
+      "Vì nghe Đức Giê-hô-va đoái xem dân và ban lương thực",
+      "Vì có lệnh vua"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ru-tơ",
+      "Trở về Giu-đa",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "verseStart": 22,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Na-ô-mi và Ru-tơ trở về Bết-lê-hem vào lúc nào?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ru-tơ 1:22 — 'Họ về Bết-lê-hem nhằm đầu mùa gặt lúa mạch.'",
+    "language": "vi",
+    "options": [
+      "Đầu mùa gặt lúa mạch",
+      "Lễ Vượt Qua",
+      "Mùa hè",
+      "Cuối mùa thu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ru-tơ",
+      "Mùa gặt",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Bô-ô bảo Ru-tơ ở gần ai khi mót lúa trong ruộng mình?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ru-tơ 2:8 — 'Hỡi con gái ta, hãy nghe; chớ đi mót trong ruộng khác và cũng đừng xa khỏi đây; phải ở gần các tớ gái ta.'",
+    "language": "vi",
+    "options": [
+      "Các đầy tớ trai",
+      "Các tớ gái",
+      "Bà con họ Bô-ô",
+      "Người cao tuổi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ru-tơ",
+      "Bô-ô tử tế",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Vào giờ ăn, Bô-ô mời Ru-tơ lại để làm gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ru-tơ 2:14 — 'Bô-ô bảo nàng: Hãy lại gần đây, ăn bánh và nhúng miếng nàng trong giấm.'",
+    "language": "vi",
+    "options": [
+      "Đi đến gặp các trưởng lão",
+      "Lấy nước uống",
+      "Trở về Mô-áp",
+      "Lại gần ăn bánh và nhúng trong giấm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ru-tơ",
+      "Bữa ăn chia sẻ",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Na-ô-mi bảo Ru-tơ đi đến đâu để gặp Bô-ô vào ban đêm?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ru-tơ 3:3-4 — 'Hãy tắm rửa, xức dầu, mặc quần áo, đi xuống sân đạp lúa... Khi người nằm ngủ, hãy để ý chỗ người nằm; rồi đi đến giở mền dưới chân người và nằm xuống.'",
+    "language": "vi",
+    "options": [
+      "Đến đền thờ",
+      "Đến cổng thành",
+      "Đến sân đạp lúa",
+      "Đến bờ giếng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ru-tơ",
+      "Sân đạp lúa",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Ru-tơ 4:7 mô tả ngày xưa người ta dùng gì để làm chứng cho việc mua lại?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ru-tơ 4:7 — 'Vả, lệ xưa trong Y-sơ-ra-ên, khi muốn xác nhận một việc... thì người này cởi giày mình mà trao cho người kia.'",
+    "language": "vi",
+    "options": [
+      "Một con dấu vàng",
+      "Một sợi dây thắt lưng",
+      "Một mảnh giấy ký",
+      "Một chiếc giày (cởi giày trao tay)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ru-tơ",
+      "Phong tục giày",
+      "Lịch sử",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "verseStart": 18,
+    "verseEnd": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Gia phả cuối sách Ru-tơ kết thúc với ai?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ru-tơ 4:22 — 'Ô-bết sinh Y-sai, và Y-sai sinh Đa-vít.' Sách Ru-tơ kết thúc với gia phả dẫn tới vua Đa-vít.",
+    "language": "vi",
+    "options": [
+      "Đa-vít",
+      "Sa-lô-môn",
+      "Sau-lơ",
+      "Sa-mu-ên"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ru-tơ",
+      "Gia phả Đa-vít",
+      "Lịch sử",
+      "Trung cấp"
+    ]
   }
 ]

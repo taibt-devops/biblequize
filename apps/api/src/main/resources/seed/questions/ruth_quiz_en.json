@@ -33,15 +33,15 @@
     "type": "multiple_choice_single",
     "content": "Ruth was the great-grandmother of which famous king in the Bible?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Ruth 4:17 - Ruth gave birth to Obed, Obed fathered Jesse, and Jesse fathered David. Ruth is also in the genealogy of Jesus (Matthew 1:5).",
     "language": "en",
     "verseEnd": 17,
     "options": [
+      "King Saul",
       "King David",
       "King Solomon",
-      "King Saul",
       "King Josiah"
     ],
     "tags": [
@@ -60,16 +60,16 @@
     "type": "multiple_choice_single",
     "content": "Why did Naomi's family leave Bethlehem for the land of Moab?",
     "correctAnswer": [
-      0
+      3
     ],
     "explanation": "Ruth 1:1 - A famine in Bethlehem (which means \"house of bread\") drove Elimelech's family to the land of Moab.",
     "language": "en",
     "verseEnd": 2,
     "options": [
-      "Famine",
-      "War",
       "Seeking work",
-      "They were invited"
+      "War",
+      "They were invited",
+      "Famine"
     ],
     "tags": [
       "Old Testament",
@@ -87,16 +87,16 @@
     "type": "multiple_choice_single",
     "content": "What were the names of Naomi's two Moabite daughters-in-law?",
     "correctAnswer": [
-      0
+      3
     ],
     "explanation": "Ruth 1:4 - Naomi's two sons married Ruth and Orpah in Moab.",
     "language": "en",
     "verseEnd": 5,
     "options": [
-      "Ruth and Orpah",
-      "Ruth and Rahab",
       "Orpah and Miriam",
-      "Ruth and Deborah"
+      "Ruth and Rahab",
+      "Ruth and Deborah",
+      "Ruth and Orpah"
     ],
     "tags": [
       "Old Testament",
@@ -114,16 +114,16 @@
     "type": "multiple_choice_single",
     "content": "How did Orpah and Ruth respond differently when Naomi told them to go back?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Ruth 1:14-16 - Orpah chose safety; Ruth chose faithfulness. Two choices led to two very different lives.",
     "language": "en",
     "verseEnd": 16,
     "options": [
-      "Orpah returned to Moab; Ruth stayed and followed Naomi",
+      "Ruth returned; Orpah stayed",
       "Both stayed",
-      "Both returned",
-      "Ruth returned; Orpah stayed"
+      "Orpah returned to Moab; Ruth stayed and followed Naomi",
+      "Both returned"
     ],
     "tags": [
       "Old Testament",
@@ -141,16 +141,16 @@
     "type": "multiple_choice_single",
     "content": "Naomi changed her name to Mara. What does Mara mean?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Ruth 1:20 - Naomi (meaning \"pleasant\") changed her name to Mara (meaning \"bitter\") after losing her husband and two sons.",
     "language": "en",
     "verseEnd": 21,
     "options": [
-      "Bitter",
       "Joyful",
-      "Peaceful",
-      "Hopeful"
+      "Bitter",
+      "Hopeful",
+      "Peaceful"
     ],
     "tags": [
       "Old Testament",
@@ -169,16 +169,16 @@
     "type": "multiple_choice_single",
     "content": "What did Ruth do to provide for Naomi?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Ruth 2:2 - Ruth gleaned grain under the law that allowed the poor to gather leftover grain in the fields (Leviticus 19:9).",
     "language": "en",
     "verseEnd": 3,
     "options": [
+      "Tended sheep",
       "Gleaned (gathered leftover grain) in the fields",
-      "Sold goods in the market",
       "Baked bread",
-      "Tended sheep"
+      "Sold goods in the market"
     ],
     "tags": [
       "Old Testament",
@@ -196,16 +196,16 @@
     "type": "multiple_choice_single",
     "content": "What did Boaz commend Ruth for?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Ruth 2:11-12 - Boaz recognized Ruth's faith and loyalty. The Lord cares for those who come to take refuge under His wings.",
     "language": "en",
     "verseEnd": 12,
     "options": [
-      "Leaving her homeland to follow her mother-in-law to a foreign land, taking refuge under the Lord's wings",
       "Her beauty",
-      "Her wisdom",
-      "Her wealth"
+      "Her wealth",
+      "Leaving her homeland to follow her mother-in-law to a foreign land, taking refuge under the Lord's wings",
+      "Her wisdom"
     ],
     "tags": [
       "Old Testament",
@@ -224,15 +224,15 @@
     "type": "multiple_choice_single",
     "content": "What did Ruth ask Boaz to do at the threshing floor?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Ruth 3:9 - \"Spread the corner of your garment over your servant, for you are a kinsman-redeemer (go'el).\" This is a picture of the Lord redeeming us.",
     "language": "en",
     "options": [
-      "Act as her kinsman-redeemer (go'el)",
       "Marry her",
-      "Feed her",
-      "Protect her"
+      "Protect her",
+      "Act as her kinsman-redeemer (go'el)",
+      "Feed her"
     ],
     "tags": [
       "Old Testament",
@@ -279,16 +279,16 @@
     "type": "multiple_choice_single",
     "content": "Why did the closer relative refuse the right of redemption?",
     "correctAnswer": [
-      0
+      3
     ],
     "explanation": "Ruth 4:6 - The closer kinsman-redeemer refused because he feared it would jeopardize his own inheritance. Boaz was willing to sacrifice.",
     "language": "en",
     "verseEnd": 6,
     "options": [
-      "He feared it would endanger his own inheritance",
       "He had no money",
+      "He was ill",
       "He did not like Ruth",
-      "He was ill"
+      "He feared it would endanger his own inheritance"
     ],
     "tags": [
       "Old Testament",
@@ -352,6 +352,192 @@
       "Ruth",
       "History",
       "Basic"
+    ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "verseStart": 6,
+    "verseEnd": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Why did Naomi decide to return to Judah?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ruth 1:6 — 'She had heard in the fields of Moab that the LORD had visited his people and given them food.'",
+    "language": "en",
+    "options": [
+      "She ran out of money",
+      "Because of war",
+      "She heard the LORD had visited His people and given food",
+      "Royal order"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ruth",
+      "Return to Judah",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "verseStart": 22,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When did Naomi and Ruth arrive back in Bethlehem?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ruth 1:22 — 'They came to Bethlehem at the beginning of barley harvest.'",
+    "language": "en",
+    "options": [
+      "At the beginning of barley harvest",
+      "At Passover",
+      "In summer",
+      "Late autumn"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ruth",
+      "Harvest",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Boaz told Ruth to stay near whom while gleaning in his field?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ruth 2:8 — 'Now, listen, my daughter, do not go to glean in another field or leave this one, but keep close to my young women.'",
+    "language": "en",
+    "options": [
+      "The young men",
+      "His young women",
+      "His relatives",
+      "The elders"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ruth",
+      "Boaz's Kindness",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At mealtime, what did Boaz invite Ruth to do?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ruth 2:14 — 'And at mealtime Boaz said to her, Come here and eat some bread and dip your morsel in the wine.'",
+    "language": "en",
+    "options": [
+      "Meet the elders",
+      "Get water to drink",
+      "Return to Moab",
+      "Come, eat bread and dip in wine vinegar"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ruth",
+      "Shared Meal",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Where did Naomi tell Ruth to go to meet Boaz at night?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ruth 3:3-4 — 'Wash and anoint yourself, and put on your cloak and go down to the threshing floor... When he lies down, observe the place where he lies. Then go and uncover his feet and lie down.'",
+    "language": "en",
+    "options": [
+      "The temple",
+      "The city gate",
+      "The threshing floor",
+      "The well"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ruth",
+      "Threshing Floor",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does Ruth 4:7 say was used in old times to confirm a redemption transaction?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ruth 4:7 — 'Now this was the custom in former times in Israel concerning redeeming and exchanging: to confirm a transaction, the one drew off his sandal and gave it to the other.'",
+    "language": "en",
+    "options": [
+      "A gold seal",
+      "A belt",
+      "A signed paper",
+      "A sandal (drawing off and giving)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ruth",
+      "Sandal Custom",
+      "History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "verseStart": 18,
+    "verseEnd": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "With whom does the genealogy at the end of Ruth conclude?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ruth 4:22 — 'Obed fathered Jesse, and Jesse fathered David.' Ruth concludes with the genealogy leading to King David.",
+    "language": "en",
+    "options": [
+      "David",
+      "Solomon",
+      "Saul",
+      "Samuel"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ruth",
+      "David's Genealogy",
+      "History",
+      "Intermediate"
     ]
   }
 ]
