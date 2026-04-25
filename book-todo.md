@@ -103,7 +103,7 @@ Mỗi sách cần CẢ VI + EN. Bắt đầu từ size nhỏ nhất để dễ s
 - [x] titus (3 chương) — 20 VI + 20 EN
 
 **Tier 3 — 25-30 câu**
-- [ ] amos (9 chương)
+- [x] amos (9 chương) — 25 VI + 25 EN
 - [ ] hosea (14 chương)
 - [x] 2timothy (4 chương) — 25 VI + 25 EN
 - [x] 2peter (3 chương) — 25 VI + 25 EN

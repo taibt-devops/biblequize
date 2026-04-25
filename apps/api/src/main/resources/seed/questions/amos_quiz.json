@@ -1,0 +1,607 @@
+[
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 1:1, A-mốt thuộc về nhóm người nào ở Thê-cô-a?",
+    "correctAnswer": [0],
+    "explanation": "A-mốt 1:1 — 'Lời của A-mốt, người trong những kẻ chăn ở Thê-cô-a, là lời đã được soi dẫn cho người về Y-sơ-ra-ên...' A-mốt là người chăn chiên, không phải tiên tri chuyên nghiệp.",
+    "language": "vi",
+    "options": [
+      "Những kẻ chăn chiên",
+      "Các thầy tế lễ",
+      "Các thầy thông giáo",
+      "Các quan tướng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Người chăn chiên Thê-cô-a",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 1:1, A-mốt nói tiên tri trong đời các vua nào và bao lâu trước cơn động đất?",
+    "correctAnswer": [1],
+    "explanation": "A-mốt 1:1 — '...trong đời Ô-xia, vua Giu-đa, và trong đời Giê-rô-bô-am, con trai Giô-ách, vua Y-sơ-ra-ên, hai năm trước cơn động đất.'",
+    "language": "vi",
+    "options": [
+      "Đời A-cha và Pê-ka, ba năm trước động đất",
+      "Đời Ô-xia (Giu-đa) và Giê-rô-bô-am (Y-sơ-ra-ên), hai năm trước động đất",
+      "Đời Đa-vít và Sa-lô-môn, mười năm sau động đất",
+      "Đời Ê-xê-chia và Hô-sê, năm năm trước động đất"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Bối cảnh thời đại",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "A-mốt mở các sấm ngôn nghịch các dân bằng công thức nào?",
+    "correctAnswer": [2],
+    "explanation": "A-mốt 1:3 — 'Đức Giê-hô-va phán như vầy: Bởi cớ tội ác của Đa-mách đến gấp ba gấp bốn lần, nên ta không xây bỏ án phạt khỏi nó...' Công thức 'ba lần và bốn lần' lặp đi lặp lại với từng dân.",
+    "language": "vi",
+    "options": [
+      "'Đức Giê-hô-va phán cùng Sa-mu-ên rằng...'",
+      "'Đức Giê-hô-va đã phán bằng những lời nầy...'",
+      "'Bởi cớ tội ác của X đến gấp ba gấp bốn lần, nên ta không xây bỏ án phạt khỏi nó'",
+      "'Khốn cho ngươi, hỡi X!'"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Công thức ba và bốn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 2,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 2:6, dân Y-sơ-ra-ên bán người công bình và kẻ thiếu thốn vì gì?",
+    "correctAnswer": [3],
+    "explanation": "A-mốt 2:6 — '...Bởi cớ tội ác của Y-sơ-ra-ên đến gấp ba gấp bốn lần... vì chúng nó bán người công bình lấy bạc, bán kẻ thiếu thốn lấy một đôi dép.' Hình ảnh trầm trọng về sự bất công xã hội.",
+    "language": "vi",
+    "options": [
+      "Một mảnh ruộng",
+      "Một con bò",
+      "Một viên ngọc",
+      "Lấy bạc và một đôi dép"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Bán người công bình lấy bạc",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 3,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 3:2, vì Đức Chúa Trời đã chỉ biết riêng dân Y-sơ-ra-ên trong các họ hàng trên đất, nên Ngài sẽ làm gì?",
+    "correctAnswer": [0],
+    "explanation": "A-mốt 3:2 — 'Ta đã biết chỉ một mình các ngươi trong mọi họ hàng trên đất; vậy nên ta sẽ thăm phạt các ngươi vì mọi sự gian ác các ngươi.' Đặc ân lớn đi kèm trách nhiệm lớn.",
+    "language": "vi",
+    "options": [
+      "Thăm phạt các ngươi vì mọi sự gian ác các ngươi",
+      "Tha thứ vì các ngươi là dân được chọn",
+      "Ban thưởng phước hạnh đặc biệt",
+      "Bỏ qua như chưa có gì"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Đặc ân và trách nhiệm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 3,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 3:7, Chúa Giê-hô-va không làm việc gì mà không tỏ cho ai biết trước?",
+    "correctAnswer": [1],
+    "explanation": "A-mốt 3:7 — 'Cũng vậy, Chúa Giê-hô-va chẳng có làm một việc gì mà Ngài chưa tỏ sự kín nhiệm Ngài ra trước cho tôi tớ Ngài, là các đấng tiên tri.'",
+    "language": "vi",
+    "options": [
+      "Các thầy tế lễ Lê-vi",
+      "Các tôi tớ là tiên tri",
+      "Các trưởng lão dân sự",
+      "Các vua dòng Đa-vít"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Tỏ kín nhiệm cho tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 4:1, 'những bò cái của Ba-san' chỉ về ai?",
+    "correctAnswer": [2],
+    "explanation": "A-mốt 4:1 — 'Hỡi những bò cái của Ba-san hiện ở trên núi của Sa-ma-ri, là những kẻ hà hiếp kẻ nghèo nàn, hành hạ kẻ thiếu thốn, nói cùng chủ mình rằng: Hãy đem đến, chúng ta cùng uống!' Hình ảnh ẩn dụ về phụ nữ giàu có vô tâm.",
+    "language": "vi",
+    "options": [
+      "Các con vật trong đền thờ",
+      "Các quân tướng A-si-ri",
+      "Phụ nữ giàu có hà hiếp kẻ nghèo",
+      "Các vua phương bắc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Bò cái của Ba-san",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 4,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "A-mốt 4:12 truyền lệnh nổi tiếng nào cho Y-sơ-ra-ên?",
+    "correctAnswer": [3],
+    "explanation": "A-mốt 4:12 — '...Hỡi Y-sơ-ra-ên, hãy sửa soạn mà gặp Đức Chúa Trời ngươi.'",
+    "language": "vi",
+    "options": [
+      "Hãy nghe lời Chúa, hỡi Y-sơ-ra-ên",
+      "Hãy bỏ tà thần và trở về Si-ôn",
+      "Hãy giữ ngày Sa-bát cách trọn vẹn",
+      "Hãy sửa soạn mà gặp Đức Chúa Trời ngươi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Sửa soạn gặp Đức Chúa Trời",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 5,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 5:4, Đức Giê-hô-va kêu gọi nhà Y-sơ-ra-ên làm gì để được sống?",
+    "correctAnswer": [0],
+    "explanation": "A-mốt 5:4 — 'Đức Giê-hô-va phán cùng nhà Y-sơ-ra-ên như vầy: Hãy tìm kiếm ta, thì các ngươi sẽ sống!'",
+    "language": "vi",
+    "options": [
+      "Hãy tìm kiếm Ta",
+      "Hãy dâng nhiều của lễ",
+      "Hãy đi đến Bê-tên",
+      "Hãy lập đền thờ mới"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Tìm kiếm Ta thì sẽ sống",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 5,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Câu nổi tiếng nào trong A-mốt 5:24 nói về sự công bình tuôn chảy?",
+    "correctAnswer": [1],
+    "explanation": "A-mốt 5:24 — 'Thà hãy làm cho sự xét đoán chảy xuống như nước, và sự công bình như sông lớn cuồn cuộn.'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan như suối nước trong",
+      "Sự xét đoán chảy xuống như nước, sự công bình như sông lớn cuồn cuộn",
+      "Lòng yêu thương như đại dương mênh mông",
+      "Sự bình an như dòng sông yên ả"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Công bình như sông lớn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 5,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 5:18, ngày của Đức Giê-hô-va đối với những kẻ ham nó là gì?",
+    "correctAnswer": [2],
+    "explanation": "A-mốt 5:18 — 'Khốn thay cho các ngươi là kẻ trông ngày của Đức Giê-hô-va! Các ngươi trông ngày đó làm gì? Ấy là ngày tối tăm, không phải ngày ánh sáng.'",
+    "language": "vi",
+    "options": [
+      "Ngày phước hạnh tột bậc",
+      "Ngày Y-sơ-ra-ên thắng các nước",
+      "Ngày tối tăm, không phải ngày ánh sáng",
+      "Ngày của lễ hội lớn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Ngày Chúa là tối tăm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 5,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 5:21, Đức Chúa Trời phản ứng thế nào với các kỳ lễ và hội nghiêm trọng của Y-sơ-ra-ên?",
+    "correctAnswer": [3],
+    "explanation": "A-mốt 5:21 — 'Ta ghét; ta khinh dể những kỳ lễ của các ngươi; ta không đẹp lòng về những hội nghiêm trọng của các ngươi đâu.' Sự thờ phượng không có công bình thì Chúa khước từ.",
+    "language": "vi",
+    "options": [
+      "Vui mừng và chấp nhận",
+      "Tăng phước hạnh thuộc thể",
+      "Để mặc không phán xét",
+      "Ghét, khinh dể, không đẹp lòng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Chúa ghét lễ giả hình",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 6:1, Khốn nạn cho ai?",
+    "correctAnswer": [0],
+    "explanation": "A-mốt 6:1 — 'Khốn cho những kẻ ăn ở nể trong Si-ôn, và cho những kẻ tưởng mình an ổn trên núi Sa-ma-ri!' Lời cảnh cáo đến cả Giu-đa lẫn Y-sơ-ra-ên.",
+    "language": "vi",
+    "options": [
+      "Những kẻ ăn ở nể trong Si-ôn và tưởng mình an ổn trên Sa-ma-ri",
+      "Những kẻ kiêng ăn cách thật lòng",
+      "Những kẻ giảng đạo nơi đường phố",
+      "Những kẻ chăn chiên ngoài đồng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Khốn kẻ an ở nể",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 7:14, A-mốt tự nhận mình trước đây là ai?",
+    "correctAnswer": [1],
+    "explanation": "A-mốt 7:14 — 'A-mốt trả lời cho A-ma-xia rằng: Tôi không phải là đấng tiên tri, cũng không phải con đấng tiên tri; nhưng tôi là một kẻ chăn, sửa soạn những cây vả rừng.'",
+    "language": "vi",
+    "options": [
+      "Một thầy tế lễ tại Bê-tên",
+      "Kẻ chăn chiên và sửa soạn cây vả rừng — không phải tiên tri hay con tiên tri",
+      "Một con trai vua tại Giu-đa",
+      "Một người Lê-vi tại Si-lô"
+    ],
+    "tags": [
+      "Tân Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Người chăn và sửa cây vả rừng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 7,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 7:8, dụng cụ nào trong khải tượng đo lường Y-sơ-ra-ên?",
+    "correctAnswer": [2],
+    "explanation": "A-mốt 7:8 — 'Đức Giê-hô-va phán cùng tôi rằng: A-mốt, ngươi thấy gì? Tôi thưa rằng: Một dây chuẩn mực. Chúa bèn phán: Nầy, ta sẽ đặt dây chuẩn mực giữa dân Y-sơ-ra-ên ta...' Chuẩn mực để biết tường vách thẳng hay nghiêng.",
+    "language": "vi",
+    "options": [
+      "Cái cân vàng",
+      "Cái thước đo gỗ",
+      "Dây chuẩn mực (dây dọi)",
+      "Cái cuốc đào đất"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Dây chuẩn mực",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 8,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 8:11, cơn đói trong tương lai sẽ là loại đói nào?",
+    "correctAnswer": [3],
+    "explanation": "A-mốt 8:11 — 'Chúa Giê-hô-va phán: Nầy, những ngày sẽ đến, là khi ta khiến sự đói kém đến trong đất, chẳng phải là đói về bánh, cũng chẳng phải khát về nước, bèn là về sự nghe lời của Đức Giê-hô-va.'",
+    "language": "vi",
+    "options": [
+      "Đói về thịt và cá",
+      "Đói về bánh và sữa",
+      "Đói về dầu và rượu",
+      "Đói về sự nghe lời của Đức Giê-hô-va"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Đói nghe Lời Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 9,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 9:11, Đức Giê-hô-va hứa sẽ dựng lại điều gì?",
+    "correctAnswer": [0],
+    "explanation": "A-mốt 9:11 — 'Trong ngày đó, ta sẽ dựng lại nhà tạm của Đa-vít, là nhà đã đổ, và tu bổ lại những chỗ rách nát của nó. Ta sẽ dựng lại những nơi đổ nát và xây nó lại như ngày xưa.' Câu này được Gia-cơ trích trong Công Vụ 15.",
+    "language": "vi",
+    "options": [
+      "Nhà tạm của Đa-vít đã đổ",
+      "Đền thờ Sa-lô-môn đã bị phá",
+      "Vương quốc Y-sơ-ra-ên thống nhất",
+      "Cung điện hoàng gia tại Sa-ma-ri"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Nhà tạm Đa-vít dựng lại",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 9,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 9:13, các núi sẽ nhỏ ra điều gì trong ngày phục hồi?",
+    "correctAnswer": [1],
+    "explanation": "A-mốt 9:13 — '...Đức Giê-hô-va phán... các núi sẽ nhỏ rượu ngọt ra, và mọi đồi sẽ tan chảy. Ta sẽ đem phu tù trở về cho dân Y-sơ-ra-ên ta...'",
+    "language": "vi",
+    "options": [
+      "Mật ong vàng óng",
+      "Rượu ngọt",
+      "Sữa tươi",
+      "Vàng tinh ròng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Núi nhỏ rượu ngọt",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 4:13, Đức Chúa Trời được mô tả là Đấng tạo nên gì?",
+    "correctAnswer": [2],
+    "explanation": "A-mốt 4:13 — 'Vì nầy, Ngài là Đấng đã làm nên các núi và dựng nên gió. Ngài tỏ ra cho loài người biết ý tưởng riêng của mình; đổi ban mai ra tối tăm, và bước đi trên những chỗ cao trên đất. Danh Ngài là Giê-hô-va Đức Chúa Trời vạn quân.'",
+    "language": "vi",
+    "options": [
+      "Ban đầu và cuối cùng của muôn vật",
+      "Mặt trời và mặt trăng",
+      "Các núi và dựng nên gió, đổi ban mai ra tối tăm",
+      "Biển cả và sông ngòi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Đấng làm nên núi và gió",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 5,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 5:14, dân sự phải tìm kiếm điều thiện và ghét điều ác để được gì?",
+    "correctAnswer": [3],
+    "explanation": "A-mốt 5:14-15 — 'Hãy tìm điều lành và đừng tìm điều dữ, hầu cho các ngươi được sống... Hãy ghét điều dữ mà ưa điều lành; hãy lập sự công bình nơi cửa thành. Của có lẽ Giê-hô-va Đức Chúa Trời vạn quân sẽ ra ơn cho những kẻ còn sót lại của Giô-sép.'",
+    "language": "vi",
+    "options": [
+      "Được sự khôn ngoan",
+      "Được sự giàu có vật chất",
+      "Được tuổi thọ cao",
+      "Để được sống và Chúa ra ơn cho dân sót Giô-sép"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Tìm điều lành để được sống",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 9,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-mốt 9:14-15, Đức Chúa Trời hứa làm gì với dân Y-sơ-ra-ên?",
+    "correctAnswer": [0],
+    "explanation": "A-mốt 9:14-15 — '...Ta sẽ đem phu tù trở về cho dân Y-sơ-ra-ên ta... Ta sẽ trồng chúng nó trên đất chúng nó, và chúng nó sẽ không hề bị nhổ khỏi đất mình, là đất ta đã ban cho, Đức Giê-hô-va Đức Chúa Trời ngươi phán vậy.'",
+    "language": "vi",
+    "options": [
+      "Trồng họ trên đất, không hề bị nhổ khỏi đất mình",
+      "Đưa họ đến đất hứa hoàn toàn mới",
+      "Để họ vẫn ở phu tù mãi mãi",
+      "Phân chia họ thành nhiều nước"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Trồng không hề bị nhổ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "verseStart": 3,
+    "verseEnd": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo A-mốt 1:3-13, các sấm ngôn nghịch dân ngoại nhắm vào những thành/dân nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "A-mốt 1:3-13 — Các sấm ngôn nghịch Đa-mách (Sy-ri), Ga-xa (Phi-li-tin), Ty-rơ, Ê-đôm, Am-môn... Người Cúc-sít không thuộc danh sách bảy dân ngoại bị xét đoán trong A-mốt 1-2.",
+    "language": "vi",
+    "options": [
+      "Đa-mách (Sy-ri)",
+      "Ga-xa (Phi-li-tin)",
+      "Ty-rơ và Ê-đôm",
+      "Người Cúc-sít từ Ai Cập"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Các dân bị Chúa xét đoán",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 4,
+    "verseStart": 6,
+    "verseEnd": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo A-mốt 4:6-11, những hình phạt Đức Chúa Trời gửi đến mà dân vẫn không trở lại là gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "A-mốt 4:6-10 — '...Ta cũng đã làm cho các ngươi đói kém... Ta cũng đã không cho các ngươi mưa... Ta đã dùng gió cháy và sâu lúa mà đánh các ngươi. Sâu cắn lá đã cắn nát những vườn nho, vườn vả... Ta đã sai dịch lệ tiến đánh các ngươi như đã đánh xứ Ê-díp-tô.' 'Ban phước thịnh vượng' không nằm trong loạt hình phạt.",
+    "language": "vi",
+    "options": [
+      "Đói kém và hạn hán",
+      "Sâu cắn và sâu lúa",
+      "Dịch lệ và gươm đao",
+      "Phước hạnh và thịnh vượng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Hình phạt mà dân không trở lại",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 5,
+    "verseStart": 21,
+    "verseEnd": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo A-mốt 5:21-23, Đức Chúa Trời từ chối những điều gì trong sự thờ phượng giả hình? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "A-mốt 5:21-23 — 'Ta ghét; ta khinh dể những kỳ lễ của các ngươi; ta không đẹp lòng về những hội nghiêm trọng của các ngươi đâu. Dầu các ngươi dâng cho ta những của lễ thiêu và của lễ chay, ta sẽ không nhận lấy... Hãy làm cho tiếng của các bài hát các ngươi xa khỏi ta!' Ngài không nhận của lễ hay tiếng hát; câu (d) trái nghịch.",
+    "language": "vi",
+    "options": [
+      "Ghét và khinh dể các kỳ lễ",
+      "Không nhận của lễ thiêu và của lễ chay",
+      "Cất tiếng các bài hát ra khỏi Ngài",
+      "Vui nhận của lễ thiêu trọn vẹn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Khước từ thờ phượng giả",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Amos",
+    "chapter": 8,
+    "verseStart": 4,
+    "verseEnd": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo A-mốt 8:4-6, các thương buôn gian ác bị lên án vì những việc gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "A-mốt 8:4-6 — '...các ngươi nuốt kẻ thiếu thốn... ngày trăng mới sẽ qua chừng nào, đặng chúng ta có thể bán lúa miến... đặng làm cho ê-pha nhỏ lại, làm cho siếc-lơ lớn lên, và lường non bằng cân giả dối... mua kẻ nghèo bằng tiền bạc, và kẻ thiếu thốn bằng một đôi dép.' 'Bố thí cho người nghèo' trái với toàn cảnh đoạn này.",
+    "language": "vi",
+    "options": [
+      "Nuốt kẻ thiếu thốn",
+      "Làm ê-pha nhỏ lại, siếc-lơ lớn lên",
+      "Mua kẻ nghèo bằng tiền và kẻ thiếu thốn bằng đôi dép",
+      "Bố thí rộng rãi cho người nghèo"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-mốt",
+      "Tiên tri",
+      "Thương buôn gian ác",
+      "Nâng cao"
+    ]
+  }
+]
