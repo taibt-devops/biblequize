@@ -61,7 +61,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | 2corinthians | 2 Corinthians | Epistle | 30 | 0 | 40-50 | ⚠️ + 🌐 |
 | galatians | Galatians | Epistle | 12 | 12 | 30-40 | ⚠️ |
 | ephesians | Ephesians | Epistle | 14 | 0 | 30-40 | ⚠️ + 🌐 |
-| philippians | Philippians | Epistle | 11 | 0 | 30-40 | ⚠️ + 🌐 |
+| philippians | Philippians | Epistle | 11 | 11 | 30-40 | ⚠️ |
 | colossians | Colossians | Epistle | 0 | 0 | 30 | ❌ |
 | 1thessalonians | 1 Thessalonians | Epistle | 0 | 0 | 30 | ❌ |
 | 2thessalonians | 2 Thessalonians | Epistle | 0 | 0 | 20 | ❌ |

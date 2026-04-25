@@ -1,0 +1,305 @@
+[
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Philippians 4:6 teach us to do instead of being anxious?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Philippians 4:6-7 — 'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.'",
+    "language": "en",
+    "verseEnd": 7,
+    "options": [
+      "Ask others for help",
+      "Pray and make supplication with thanksgiving",
+      "Try harder",
+      "Don't think about the problem"
+    ],
+    "tags": [
+      "New Testament",
+      "Prayer",
+      "Peace",
+      "Philippians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Philippians 1:6 — Who began a good work in you and will bring it to completion?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "God begins and will complete. Salvation is God's work from beginning to end.",
+    "language": "en",
+    "options": [
+      "God Himself",
+      "The pastor",
+      "Yourself",
+      "The church"
+    ],
+    "tags": [
+      "New Testament",
+      "Security",
+      "Faithfulness",
+      "Philippians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Paul said: 'For to me, to live is ___ and to die is gain'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Live = Christ (purpose); die = gain (going to be with the Lord). Both are good!",
+    "language": "en",
+    "options": [
+      "Striving",
+      "Learning",
+      "Christ",
+      "Serving"
+    ],
+    "tags": [
+      "New Testament",
+      "Paul",
+      "Purpose",
+      "Philippians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Philippians 2:3 — How are we to regard others?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Humility: count others more significant than yourselves; don't only look to your own interests.",
+    "language": "en",
+    "verseEnd": 4,
+    "options": [
+      "More significant than yourselves",
+      "With indifference",
+      "Less than yourselves",
+      "Equal to yourselves"
+    ],
+    "tags": [
+      "New Testament",
+      "Humility",
+      "Relationships",
+      "Philippians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Philippians 2:5-8 — What did Christ Jesus do, though He existed in the form of God?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Kenosis (self-emptying): Christ emptied Himself to serve and sacrifice. The pattern of humility.",
+    "language": "en",
+    "verseEnd": 8,
+    "options": [
+      "Emptied Himself, took the form of a servant, became obedient to death on a cross",
+      "Triumphed",
+      "Judged",
+      "Reigned as king"
+    ],
+    "tags": [
+      "New Testament",
+      "Incarnation",
+      "Humility",
+      "Philippians",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Because of His humility, God exalted Jesus and gave Him the name above every name. Every knee will ___",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Every creature will acknowledge Jesus as Lord, to the glory of God the Father.",
+    "language": "en",
+    "verseEnd": 11,
+    "options": [
+      "Bow and every tongue confess that Jesus Christ is Lord",
+      "Be silent",
+      "Stand up",
+      "Be afraid"
+    ],
+    "tags": [
+      "New Testament",
+      "Jesus",
+      "Exaltation",
+      "Philippians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Paul count all things as, compared with knowing Christ Jesus?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Philippians 3:8 — Nothing in this life can compare with the surpassing worth of knowing Christ Jesus.",
+    "language": "en",
+    "options": [
+      "As precious",
+      "As rubbish (loss)",
+      "As gold",
+      "As ordinary"
+    ],
+    "tags": [
+      "New Testament",
+      "Paul",
+      "Value",
+      "Philippians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Paul says he does one thing — forgetting what lies behind and straining forward to what lies ahead — for what?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Do not be stuck in the past; press forward toward the prize.",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "The prize of the upward call of God in Christ Jesus",
+      "A greater ministry",
+      "Human praise",
+      "Earthly glory"
+    ],
+    "tags": [
+      "New Testament",
+      "Pressing on",
+      "Goal",
+      "Philippians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Philippians 4:7 — The peace of God surpasses what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "God's peace cannot be explained by reason; it guards our hearts and minds.",
+    "language": "en",
+    "options": [
+      "All problems",
+      "All understanding",
+      "All difficulties",
+      "All emotions"
+    ],
+    "tags": [
+      "New Testament",
+      "Peace",
+      "Prayer",
+      "Philippians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Philippians 4:8 urges us to think about what kind of things?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Take control of thoughts by focusing on what is good and from God.",
+    "language": "en",
+    "options": [
+      "Only great things",
+      "Whatever is true, honorable, just, pure, lovely, and commendable",
+      "Only happy things",
+      "Anything"
+    ],
+    "tags": [
+      "New Testament",
+      "Thinking",
+      "Christian living",
+      "Philippians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Paul say he had learned?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Contentment does not depend on circumstances but on God.",
+    "language": "en",
+    "verseEnd": 12,
+    "options": [
+      "How to escape suffering",
+      "Contentment in every circumstance — in plenty and in want",
+      "How to grow rich",
+      "How to lead"
+    ],
+    "tags": [
+      "New Testament",
+      "Contentment",
+      "Paul",
+      "Philippians",
+      "Epistle",
+      "Intermediate"
+    ]
+  }
+]
