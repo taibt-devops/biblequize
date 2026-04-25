@@ -1,0 +1,610 @@
+[
+  {
+    "book": "1 Chronicles",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 1:1, with which genealogy does the book begin?",
+    "correctAnswer": [0],
+    "explanation": "1 Chronicles 1:1 — 'Adam, Seth, Enosh.' Chronicles opens with a genealogy from Adam — placing Israel's history within the frame of all humanity.",
+    "language": "en",
+    "options": [
+      "Adam, Seth, Enosh",
+      "Abraham, Isaac, Jacob",
+      "David, Solomon, Rehoboam",
+      "Noah, Shem, Abraham"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Genealogy from Adam",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 4,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 4:10, what did Jabez ask of God?",
+    "correctAnswer": [1],
+    "explanation": "1 Chronicles 4:10 — 'Jabez called upon the God of Israel, saying, \"Oh that you would bless me and enlarge my border, and that your hand might be with me, and that you would keep me from harm so that it might not bring me pain!\" And God granted what he asked.'",
+    "language": "en",
+    "options": [
+      "Asked for many descendants",
+      "Asked God to bless him, enlarge his border, His hand to be with him, keep him from harm",
+      "Asked for abundant food",
+      "Asked to be made king"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Prayer of Jabez",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 10,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 10:13-14, why did Saul die?",
+    "correctAnswer": [2],
+    "explanation": "1 Chronicles 10:13-14 — 'So Saul died for his breach of faith. He broke faith with the LORD in that he did not keep the command of the LORD, and also consulted a medium, seeking guidance. He did not seek guidance from the LORD. Therefore the LORD put him to death and turned the kingdom over to David the son of Jesse.'",
+    "language": "en",
+    "options": [
+      "Died of old age and natural illness",
+      "Was deceived and ambushed by enemies",
+      "For unfaithfulness — he did not keep the LORD's command and consulted a medium instead of the LORD",
+      "Was murdered by his own servant"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Saul died for unfaithfulness",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 11:3, where was David anointed king over Israel?",
+    "correctAnswer": [3],
+    "explanation": "1 Chronicles 11:3 — 'So all the elders of Israel came to the king at Hebron, and David made a covenant with them at Hebron before the LORD, and they anointed David king over Israel...'",
+    "language": "en",
+    "options": [
+      "At Bethlehem",
+      "At Shiloh",
+      "At Jerusalem",
+      "At Hebron"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "David anointed at Hebron",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "verseStart": 4,
+    "verseEnd": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 11:4-7, from whom did David capture the stronghold of Zion (Jerusalem)?",
+    "correctAnswer": [0],
+    "explanation": "1 Chronicles 11:4-5 — 'David and all Israel went to Jerusalem, that is, Jebus, where the Jebusites were, the inhabitants of the land. The inhabitants of Jebus said to David, \"You will not come in here.\" Nevertheless, David took the stronghold of Zion, that is, the city of David.'",
+    "language": "en",
+    "options": [
+      "The Jebusites",
+      "The Philistines",
+      "The Amorites",
+      "The Moabites"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "David takes Zion from Jebusites",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 11:9, why did David grow greater and greater?",
+    "correctAnswer": [1],
+    "explanation": "1 Chronicles 11:9 — 'And David became greater and greater, for the LORD of hosts was with him.'",
+    "language": "en",
+    "options": [
+      "Because of clever military strategy",
+      "Because the LORD of hosts was with him",
+      "Because of many foreign alliances",
+      "Because of abundant gold and silver"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "LORD of hosts with David",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 13,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 13:9-10, why did Uzzah die?",
+    "correctAnswer": [2],
+    "explanation": "1 Chronicles 13:9-10 — 'And when they came to the threshing floor of Chidon, Uzzah put out his hand to take hold of the ark, for the oxen stumbled. And the anger of the LORD was kindled against Uzzah, and he struck him down because he put out his hand to the ark, and he died there before God.'",
+    "language": "en",
+    "options": [
+      "For despising the offering",
+      "For not rallying the people",
+      "For putting out his hand to take hold of the ark of the LORD",
+      "For resisting David's command"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Uzzah took hold of ark",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 15,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 15:13, what reason does David give for the disaster on the first attempt?",
+    "correctAnswer": [3],
+    "explanation": "1 Chronicles 15:13 — '...the Levites did not carry it the first time, and the LORD our God broke out against us, because we did not seek him according to the rule.'",
+    "language": "en",
+    "options": [
+      "Because Uzzah was inexperienced",
+      "Because too few Levites were present",
+      "Because of bad weather",
+      "Because the Levites did not carry the ark according to the rule"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Carrying the ark by the rule",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 16,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 16:8, David calls the people to give thanks and to do what?",
+    "correctAnswer": [0],
+    "explanation": "1 Chronicles 16:8 — 'Oh give thanks to the LORD; call upon his name; make known his deeds among the peoples!'",
+    "language": "en",
+    "options": [
+      "Call upon His name and make known His deeds among the peoples",
+      "Build new sheepfolds and ox-stalls",
+      "Equip the army with weapons",
+      "Lay the foundation of a new palace"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Call upon His name",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 16,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 16:11, what does David urge the people to seek?",
+    "correctAnswer": [1],
+    "explanation": "1 Chronicles 16:11 — 'Seek the LORD and his strength; seek his presence continually!'",
+    "language": "en",
+    "options": [
+      "Seek human wisdom",
+      "Seek the LORD and His strength; seek His presence continually",
+      "Seek new lands",
+      "Seek wealth and labor"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Seek the LORD",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "verseStart": 11,
+    "verseEnd": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 17:11-14, what does God promise David about his offspring and throne?",
+    "correctAnswer": [2],
+    "explanation": "1 Chronicles 17:12-14 — '...He shall build a house for me, and I will establish his throne forever. I will be to him a father, and he shall be to me a son... but I will confirm him in my house and in my kingdom forever, and his throne shall be established forever.'",
+    "language": "en",
+    "options": [
+      "David himself will build the temple",
+      "David's line will rule only one generation",
+      "David's offspring will build the temple and the throne will be established forever",
+      "David will divide the kingdom into twelve parts"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Eternal Davidic covenant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 17:13, what does God say about His relationship with David's line?",
+    "correctAnswer": [3],
+    "explanation": "1 Chronicles 17:13 — 'I will be to him a father, and he shall be to me a son. I will not take my steadfast love from him, as I took it from him who was before you.'",
+    "language": "en",
+    "options": [
+      "I will be a friend to him",
+      "I will be a teacher to him",
+      "I will be an elder brother to him",
+      "I will be a father to him, and he shall be a son to Me"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Father and son in covenant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 21:1, who incited David to number Israel?",
+    "correctAnswer": [0],
+    "explanation": "1 Chronicles 21:1 — 'Then Satan stood against Israel and incited David to number Israel.'",
+    "language": "en",
+    "options": [
+      "Satan",
+      "Joab the commander",
+      "The prophet Nathan",
+      "Abiathar the priest"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Satan incites the census",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 21:13, when forced to choose, into whose hand does David choose to fall?",
+    "correctAnswer": [1],
+    "explanation": "1 Chronicles 21:13 — 'Then David said to Gad, \"I am in great distress. Let me fall into the hand of the LORD, for his mercy is very great, but do not let me fall into the hand of man.\"'",
+    "language": "en",
+    "options": [
+      "Into the hand of man",
+      "Into the hand of the LORD, for His mercy is very great",
+      "Into the hand of neighboring enemies",
+      "Into the hand of three years' famine"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Fall into the hand of the LORD",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "verseStart": 18,
+    "verseEnd": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 21:18-25, whose threshing floor did David buy to build an altar (later the temple site)?",
+    "correctAnswer": [2],
+    "explanation": "1 Chronicles 21:18-25 — '...the angel of the LORD commanded Gad to say to David that David should go up and raise an altar to the LORD on the threshing floor of Ornan the Jebusite.' This threshing floor later became the site of Solomon's temple.",
+    "language": "en",
+    "options": [
+      "Abner son of Ner",
+      "Uriah the Hittite",
+      "Ornan the Jebusite",
+      "Mephibosheth son of Jonathan"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Threshing floor of Ornan",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 22:8, why was David not allowed to build the temple for the LORD?",
+    "correctAnswer": [3],
+    "explanation": "1 Chronicles 22:8 — '...You have shed much blood and have waged great wars. You shall not build a house to my name, because you have shed so much blood before me on the earth.'",
+    "language": "en",
+    "options": [
+      "Because David was not yet wealthy enough",
+      "Because David was not yet wise enough",
+      "Because David had not yet been made king",
+      "Because David had shed much blood and waged great wars"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "David not to build for shed blood",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 22:9, what does God say about Solomon — the son who will build the temple?",
+    "correctAnswer": [0],
+    "explanation": "1 Chronicles 22:9 — '...Behold, a son shall be born to you who shall be a man of rest. I will give him rest from all his surrounding enemies. For his name shall be Solomon, and I will give peace and quiet to Israel in his days.' The name Solomon (Shelomoh) is from shalom — peace.",
+    "language": "en",
+    "options": [
+      "He shall be a man of rest; Solomon — God will give peace to Israel in his days",
+      "He shall be the greatest warrior",
+      "He shall reign twice as long as David",
+      "He shall conquer all neighboring nations"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Solomon man of rest",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 28:9, what crucial charge does David give Solomon?",
+    "correctAnswer": [1],
+    "explanation": "1 Chronicles 28:9 — 'And you, Solomon my son, know the God of your father and serve him with a whole heart and with a willing mind, for the LORD searches all hearts and understands every plan and thought. If you seek him, he will be found by you, but if you forsake him, he will cast you off forever.'",
+    "language": "en",
+    "options": [
+      "Build a great temple",
+      "Know the God of your father and serve Him with a whole heart and willing mind",
+      "Build a strong army",
+      "Expand the borders of the kingdom"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Know God and serve Him",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 28:20, how does David encourage Solomon about building the temple?",
+    "correctAnswer": [2],
+    "explanation": "1 Chronicles 28:20 — 'Then David said to Solomon his son, \"Be strong and courageous and do it. Do not be afraid and do not be dismayed, for the LORD God, even my God, is with you. He will not leave you or forsake you, until all the work for the service of the house of the LORD is finished.\"'",
+    "language": "en",
+    "options": [
+      "Hire skilled foreign craftsmen",
+      "Wait until you are rich enough to begin",
+      "Be strong and courageous and do it; do not be afraid — God will not leave you until it is finished",
+      "Let the commander do it for you"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Be strong and courageous",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 29:11, what does David ascribe to the LORD?",
+    "correctAnswer": [3],
+    "explanation": "1 Chronicles 29:11 — 'Yours, O LORD, is the greatness and the power and the glory and the victory and the majesty, for all that is in the heavens and in the earth is yours. Yours is the kingdom, O LORD, and you are exalted as head above all.'",
+    "language": "en",
+    "options": [
+      "Wisdom and creativity",
+      "Righteousness and love",
+      "Mercy and forgiveness",
+      "Greatness, power, glory, victory, majesty"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Greatness, power, glory",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Chronicles 29:14, what humble truth does David acknowledge about himself and the people in their offering?",
+    "correctAnswer": [0],
+    "explanation": "1 Chronicles 29:14 — 'But who am I, and what is my people, that we should be able thus to offer willingly? For all things come from you, and of your own have we given you.'",
+    "language": "en",
+    "options": [
+      "Who am I and what is my people? All things come from You; of Your own we have given You",
+      "David alone is worthy as king",
+      "The people have repaid an ancestral debt",
+      "The people offer from accumulated experience"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "All things come from You",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 16,
+    "verseStart": 8,
+    "verseEnd": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 1 Chronicles 16:8-12 (David's psalm through Asaph), what are believers called to do? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Chronicles 16:8-12 — 'Oh give thanks to the LORD; call upon his name; make known his deeds among the peoples! Sing to him, sing praises to him... Seek the LORD and his strength; seek his presence continually! Remember the wondrous works that he has done...' Many actions; 'worship foreign gods' contradicts.",
+    "language": "en",
+    "options": [
+      "Give thanks to the LORD, call upon His name, make known His deeds among the peoples",
+      "Sing to Him; seek the LORD and His strength",
+      "Remember the wondrous works He has done",
+      "Worship the gods of the nations"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "David's psalm of thanks",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 1 Chronicles 22:8-9, what reasons does God give for David not building the temple and Solomon doing so? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Chronicles 22:8-9 — '...You have shed much blood... You shall not build a house to my name. Behold, a son shall be born to you who shall be a man of rest. I will give him rest from all his surrounding enemies. For his name shall be Solomon, and I will give peace and quiet to Israel in his days.' Three reasons; 'David had not yet been anointed' is incorrect.",
+    "language": "en",
+    "options": [
+      "David has shed much blood and waged great wars",
+      "Solomon shall be a man of rest",
+      "In Solomon's days God will give peace to Israel",
+      "David has not yet been anointed king"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Why Solomon builds the temple",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 1 Chronicles 28:9, what does David charge Solomon to do? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Chronicles 28:9 — '...Know the God of your father and serve him with a whole heart and with a willing mind... If you seek him, he will be found by you...' Three things; 'enforce the law by force on everyone' is not in this verse.",
+    "language": "en",
+    "options": [
+      "Know the God of your father",
+      "Serve Him with a whole heart and willing mind",
+      "If you seek Him, He will be found by you",
+      "Enforce the law by force on everyone"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "Charge to Solomon",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 1 Chronicles 29:11-12, what does David's prayer ascribe to the LORD? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Chronicles 29:11-12 — 'Yours, O LORD, is the greatness and the power and the glory and the victory and the majesty, for all that is in the heavens and in the earth is yours... Both riches and honor come from you, and you rule over all...' Three parts; 'the LORD belongs to mankind' inverts the truth.",
+    "language": "en",
+    "options": [
+      "Greatness, power, glory, victory, majesty",
+      "All in the heavens and on earth belongs to Him",
+      "Riches and honor come from Him",
+      "The LORD belongs to mankind"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Chronicles",
+      "History",
+      "David's prayer",
+      "Advanced"
+    ]
+  }
+]

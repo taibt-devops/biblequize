@@ -1,0 +1,610 @@
+[
+  {
+    "book": "1 Chronicles",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 1:1, sách bắt đầu với gia phả từ ai?",
+    "correctAnswer": [0],
+    "explanation": "1 Sử Ký 1:1 — 'A-đam sanh Sết. Sết sanh Ê-nót.' Sách Sử Ký mở đầu bằng gia phả từ A-đam — đặt lịch sử Y-sơ-ra-ên trong khung cảnh toàn nhân loại.",
+    "language": "vi",
+    "options": [
+      "A-đam, Sết, Ê-nót",
+      "Áp-ra-ham, Y-sác, Gia-cốp",
+      "Đa-vít, Sa-lô-môn, Rô-bô-am",
+      "Nô-ê, Sem, Áp-ra-ham"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Gia phả từ A-đam",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 4,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 4:10, Gia-bê cầu nguyện xin Đức Chúa Trời điều gì?",
+    "correctAnswer": [1],
+    "explanation": "1 Sử Ký 4:10 — 'Gia-bê khấn nguyện với Đức Chúa Trời của Y-sơ-ra-ên rằng: Chớ chi Chúa ban phước cho tôi, mở bờ cõi tôi rộng lớn; nguyện tay Chúa phù giúp tôi, giữ tôi được khỏi sự dữ, hầu cho tôi chẳng buồn rầu! Đức Chúa Trời bèn ban cho y như sự người cầu nguyện.'",
+    "language": "vi",
+    "options": [
+      "Xin con cháu đông đúc",
+      "Xin Chúa ban phước, mở bờ cõi rộng lớn, tay Chúa phù giúp, giữ khỏi sự dữ",
+      "Xin lương thực dư dật",
+      "Xin được làm vua"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Lời cầu nguyện của Gia-bê",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 10,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 10:13-14, lý do Sau-lơ chết là gì?",
+    "correctAnswer": [2],
+    "explanation": "1 Sử Ký 10:13-14 — 'Ấy vậy, vua Sau-lơ chết, vì tội lỗi mình đã phạm cùng Đức Giê-hô-va, và vì chẳng có vâng theo mạng lịnh của Ngài; lại vì đã cầu hỏi đồng cốt, chẳng có cầu hỏi Đức Giê-hô-va; vậy nên Ngài đã giết người, dời nước người cho Đa-vít, con trai Y-sai.'",
+    "language": "vi",
+    "options": [
+      "Chết già và bệnh tự nhiên",
+      "Bị kẻ thù lừa đánh úp",
+      "Vì tội bất trung — không vâng mạng Chúa và cầu hỏi đồng cốt thay vì Đức Giê-hô-va",
+      "Vì bị giết bởi đầy tớ riêng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Sau-lơ chết vì bất trung",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 11:3, Đa-vít được xức dầu làm vua trên Y-sơ-ra-ên tại đâu?",
+    "correctAnswer": [3],
+    "explanation": "1 Sử Ký 11:3 — 'Vậy, hết thảy các trưởng lão Y-sơ-ra-ên đến cùng vua tại Hếp-rôn; Đa-vít bèn lập giao ước với chúng tại Hếp-rôn trước mặt Đức Giê-hô-va; đoạn họ xức dầu cho Đa-vít làm vua trên Y-sơ-ra-ên...'",
+    "language": "vi",
+    "options": [
+      "Tại Bết-lê-hem",
+      "Tại Si-lô",
+      "Tại Giê-ru-sa-lem",
+      "Tại Hếp-rôn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Đa-vít xức dầu tại Hếp-rôn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "verseStart": 4,
+    "verseEnd": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 11:4-7, Đa-vít chiếm đồn Si-ôn (Giê-ru-sa-lem) từ tay dân nào?",
+    "correctAnswer": [0],
+    "explanation": "1 Sử Ký 11:4-5 — 'Đa-vít và cả Y-sơ-ra-ên kéo đến Giê-ru-sa-lem, ấy là Giê-bu, ở đó có dân Giê-bu-sít, là người bổn xứ. Dân cư Giê-bu nói với Đa-vít rằng: Ngươi sẽ chẳng hề vào đây. Dầu vậy, Đa-vít chiếm lấy đồn Si-ôn, ấy là thành Đa-vít.'",
+    "language": "vi",
+    "options": [
+      "Dân Giê-bu-sít",
+      "Dân Phi-li-tin",
+      "Dân A-mô-rít",
+      "Dân Mô-áp"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Đa-vít chiếm Si-ôn từ Giê-bu-sít",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 11:9, Đa-vít càng thêm cường thịnh vì cớ ai?",
+    "correctAnswer": [1],
+    "explanation": "1 Sử Ký 11:9 — 'Đa-vít càng ngày càng cường thịnh; vì Đức Giê-hô-va vạn quân ở cùng người.'",
+    "language": "vi",
+    "options": [
+      "Vì kế hoạch quân sự khôn khéo",
+      "Vì Đức Giê-hô-va vạn quân ở cùng người",
+      "Vì có nhiều liên minh nước ngoài",
+      "Vì có vàng bạc dư dật"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Chúa vạn quân ở cùng Đa-vít",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 13,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 13:9-10, U-xa chết vì cớ gì?",
+    "correctAnswer": [2],
+    "explanation": "1 Sử Ký 13:9-10 — 'Khi đến sân đạp lúa của Ki-đôn, bò trợt bước, U-xa bèn giơ tay ra nắm lấy hòm. Cơn thạnh nộ của Đức Giê-hô-va nổi lên cùng U-xa, và Ngài đánh người, bởi vì người có giơ tay ra trên hòm; người bèn chết tại đó trước mặt Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Vì khinh dể của lễ",
+      "Vì không hô hào dân sự",
+      "Vì giơ tay ra nắm lấy hòm Đức Giê-hô-va",
+      "Vì chống cự lệnh Đa-vít"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "U-xa giơ tay nắm hòm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 15,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 15:13, Đa-vít nhìn nhận lý do tai họa của lần đầu khiêng hòm là gì?",
+    "correctAnswer": [3],
+    "explanation": "1 Sử Ký 15:13 — '...vì tại lần trước các ngươi không có khiêng hòm, và chúng ta không tìm cầu Đức Giê-hô-va theo phép tắc, nên Giê-hô-va Đức Chúa Trời chúng ta đã hành hạ chúng ta.'",
+    "language": "vi",
+    "options": [
+      "Vì U-xa thiếu kinh nghiệm",
+      "Vì người Lê-vi không đủ số",
+      "Vì thời tiết xấu",
+      "Vì người Lê-vi không khiêng hòm theo phép tắc Đức Giê-hô-va"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Khiêng hòm theo phép tắc",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 16,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 16:8, Đa-vít kêu gọi dân sự tạ ơn và làm gì?",
+    "correctAnswer": [0],
+    "explanation": "1 Sử Ký 16:8 — 'Đáng ngợi khen Đức Giê-hô-va, cầu khẩn danh Ngài, và đồn ra giữa các dân những công việc Ngài!'",
+    "language": "vi",
+    "options": [
+      "Cầu khẩn danh Chúa và đồn ra giữa các dân các công việc Ngài",
+      "Lập chuồng chiên và bò mới",
+      "Trang bị binh khí cho quân đội",
+      "Đặt nền cho cung điện mới"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Cầu khẩn danh Chúa",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 16,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 16:11, Đa-vít khuyên dân tìm kiếm gì?",
+    "correctAnswer": [1],
+    "explanation": "1 Sử Ký 16:11 — 'Phải tìm cầu Đức Giê-hô-va và sức mạnh Ngài, phải tìm mặt Ngài luôn luôn.'",
+    "language": "vi",
+    "options": [
+      "Tìm sự khôn ngoan loài người",
+      "Tìm cầu Đức Giê-hô-va và sức mạnh Ngài, tìm mặt Ngài luôn luôn",
+      "Tìm các đất đai mới",
+      "Tìm sự giàu có và lao động"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Tìm cầu Đức Giê-hô-va",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "verseStart": 11,
+    "verseEnd": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 17:11-14, Đức Chúa Trời hứa gì cho Đa-vít về dòng dõi và ngôi nước?",
+    "correctAnswer": [2],
+    "explanation": "1 Sử Ký 17:12-14 — '...Người sẽ cất cho ta một cái đền, và ta sẽ làm cho ngôi nước người vững bền đời đời. Ta sẽ làm cha người, và người sẽ làm con ta; sự nhân từ ta sẽ chẳng cất khỏi người... Ta sẽ lập người đời đời tại trong nhà ta và tại trong nước ta; còn ngôi nước người sẽ được vững chắc cho đến mãi mãi.'",
+    "language": "vi",
+    "options": [
+      "Đa-vít sẽ tự xây đền",
+      "Dòng dõi Đa-vít chỉ cai trị một thế hệ",
+      "Dòng dõi Đa-vít sẽ xây đền và ngôi nước được vững bền đời đời",
+      "Đa-vít sẽ chia nước thành mười hai phần"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Giao ước Đa-vít đời đời",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 17:13, Đức Chúa Trời nói gì về mối quan hệ với dòng dõi Đa-vít?",
+    "correctAnswer": [3],
+    "explanation": "1 Sử Ký 17:13 — 'Ta sẽ làm cha người, và người sẽ làm con ta; sự nhân từ ta sẽ chẳng cất khỏi người, như ta đã cất khỏi kẻ ở trước người.'",
+    "language": "vi",
+    "options": [
+      "Ta sẽ làm bạn của người",
+      "Ta sẽ làm thầy của người",
+      "Ta sẽ làm anh của người",
+      "Ta sẽ làm cha người, và người sẽ làm con ta"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Cha và con trong giao ước",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 21:1, ai dấy lên xui giục Đa-vít tu bộ Y-sơ-ra-ên?",
+    "correctAnswer": [0],
+    "explanation": "1 Sử Ký 21:1 — 'Sa-tan dấy lên muốn làm hại cho Y-sơ-ra-ên, bèn giục Đa-vít lấy số Y-sơ-ra-ên.'",
+    "language": "vi",
+    "options": [
+      "Sa-tan",
+      "Giô-áp tướng quân",
+      "Tiên tri Na-than",
+      "A-bi-tha thầy tế lễ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Sa-tan xui giục tu bộ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 21:13, khi phải chọn hình phạt, Đa-vít chọn rơi vào tay ai?",
+    "correctAnswer": [1],
+    "explanation": "1 Sử Ký 21:13 — 'Đa-vít nói với Gát rằng: Ta khốn khổ rất quá! Ta xin sa vào tay Đức Giê-hô-va, vì sự thương xót của Ngài rất lớn; nhưng ta chớ sa vào tay loài người.'",
+    "language": "vi",
+    "options": [
+      "Vào tay loài người",
+      "Vào tay Đức Giê-hô-va vì sự thương xót Ngài rất lớn",
+      "Vào tay quân thù láng giềng",
+      "Vào tay đói kém ba năm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Sa vào tay Đức Giê-hô-va",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "verseStart": 18,
+    "verseEnd": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 21:18-25, Đa-vít mua sân đạp lúa của ai để lập bàn thờ (về sau là vị trí đền thờ)?",
+    "correctAnswer": [2],
+    "explanation": "1 Sử Ký 21:18-25 — '...thiên sứ của Đức Giê-hô-va biểu Gát nói với Đa-vít phải đi lên dựng một bàn thờ cho Đức Giê-hô-va tại trong sân đạp lúa của Ọt-nan, người Giê-bu-sít.' Sân đạp lúa này về sau trở thành nơi xây đền thờ Sa-lô-môn.",
+    "language": "vi",
+    "options": [
+      "Áp-ne con Nê-rơ",
+      "U-ri người Hê-tít",
+      "Ọt-nan người Giê-bu-sít",
+      "Mê-phi-bô-sết con Giô-na-than"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Sân đạp lúa Ọt-nan",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 22:8, vì sao Đa-vít không được phép xây đền cho Đức Giê-hô-va?",
+    "correctAnswer": [3],
+    "explanation": "1 Sử Ký 22:8 — '...Ngươi đã đổ huyết ra nhiều, đánh những giặc lớn lao; ngươi sẽ chẳng cất đền cho danh ta, vì trước mặt ta ngươi đã đổ huyết ra nhiều trên đất.'",
+    "language": "vi",
+    "options": [
+      "Vì Đa-vít chưa đủ giàu",
+      "Vì Đa-vít chưa đủ khôn ngoan",
+      "Vì Đa-vít chưa được lập làm vua",
+      "Vì Đa-vít đã đổ huyết nhiều và đánh nhiều giặc lớn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Đa-vít không xây đền vì đổ huyết",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 22:9, Đức Chúa Trời nói gì về Sa-lô-môn — con trai sẽ xây đền?",
+    "correctAnswer": [0],
+    "explanation": "1 Sử Ký 22:9 — '...Kìa, ngươi sẽ sanh một con trai, làm người thái bình; ta sẽ ban bình an cho người khỏi các thù nghịch ở bốn phía; tên người sẽ là Sa-lô-môn; trong đời người, ta sẽ ban bình an và an tịnh cho Y-sơ-ra-ên.' Tên Sa-lô-môn (Shelomoh) gốc từ shalom — bình an.",
+    "language": "vi",
+    "options": [
+      "Sẽ là người thái bình; Sa-lô-môn — Chúa ban bình an cho Y-sơ-ra-ên đời người",
+      "Sẽ là chiến binh vĩ đại nhất",
+      "Sẽ trị vì lâu hơn Đa-vít gấp đôi",
+      "Sẽ chinh phục mọi nước láng giềng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Sa-lô-môn người thái bình",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 28:9, Đa-vít truyền cho Sa-lô-môn điều quan trọng gì?",
+    "correctAnswer": [1],
+    "explanation": "1 Sử Ký 28:9 — 'Còn ngươi, là Sa-lô-môn, con trai ta, hãy nhận biết Đức Chúa Trời của cha, hết lòng vui ý mà phục sự Ngài; vì Đức Giê-hô-va dò xét tấm lòng, và phân biệt các ý tưởng. Nếu con tìm kiếm Ngài, Ngài sẽ cho con gặp; nhưng nếu con lìa bỏ Ngài, Ngài sẽ từ bỏ con đời đời.'",
+    "language": "vi",
+    "options": [
+      "Phải xây đền thờ thật to",
+      "Hãy nhận biết Đức Chúa Trời của cha và hết lòng vui ý mà phục sự Ngài",
+      "Phải lập một quân đội mạnh",
+      "Phải mở rộng bờ cõi đất nước"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Nhận biết Chúa và phục sự Ngài",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 28:20, Đa-vít khuyến khích Sa-lô-môn thế nào về việc xây đền?",
+    "correctAnswer": [2],
+    "explanation": "1 Sử Ký 28:20 — 'Đa-vít lại nói với Sa-lô-môn, con trai mình rằng: Hãy vững lòng bền chí mà làm; chớ sợ sệt, chớ kinh hãi chi, vì Giê-hô-va Đức Chúa Trời, tức là Đức Chúa Trời của cha, ở cùng con; Ngài chẳng hề lìa bỏ con, cũng chẳng từ con, cho đến chừng các công việc cất đền của Đức Giê-hô-va được xong.'",
+    "language": "vi",
+    "options": [
+      "Hãy thuê thợ giỏi từ ngoại bang",
+      "Hãy chờ đến khi đủ giàu mới làm",
+      "Hãy vững lòng bền chí mà làm; chớ sợ sệt — Đức Chúa Trời sẽ ở cùng con đến khi xong",
+      "Hãy nhờ tướng quân làm thay"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Vững lòng bền chí mà làm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 29:11, Đa-vít ngợi khen Đức Giê-hô-va có những gì?",
+    "correctAnswer": [3],
+    "explanation": "1 Sử Ký 29:11 — 'Hỡi Đức Giê-hô-va, sự cao cả, quyền năng, vinh quang, toàn thắng, và oai nghi, đáng quy về Ngài; vì muôn vật trên các từng trời và dưới đất đều thuộc về Ngài. Hỡi Đức Giê-hô-va, nước thuộc về Ngài; Ngài được tôn cao trên muôn vật.'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan và sự sáng tạo",
+      "Sự công bình và sự yêu thương",
+      "Sự thương xót và sự tha thứ",
+      "Sự cao cả, quyền năng, vinh quang, toàn thắng, oai nghi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Cao cả quyền năng vinh quang",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Sử Ký 29:14, Đa-vít khiêm tốn nhìn nhận điều gì về dân và mình khi dâng hiến?",
+    "correctAnswer": [0],
+    "explanation": "1 Sử Ký 29:14 — 'Nhưng tôi là ai, và dân sự tôi là gì, mà chúng tôi có sức dâng cách vui lòng như vậy? Vì mọi vật đều do nơi Chúa mà đến; và những vật chúng tôi đã dâng cho Chúa chẳng qua là đã thuộc về Chúa.'",
+    "language": "vi",
+    "options": [
+      "Tôi là ai và dân sự tôi là gì? Mọi vật do nơi Chúa mà đến; những gì dâng đã thuộc về Chúa",
+      "Đa-vít là vua duy nhất xứng đáng",
+      "Dân sự đã bồi thường nợ tổ phụ",
+      "Dân sự dâng hiến nhờ kinh nghiệm tích lũy"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Mọi vật do nơi Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 16,
+    "verseStart": 8,
+    "verseEnd": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 1 Sử Ký 16:8-12 (bài thi của Đa-vít qua A-sáp), tín hữu được kêu gọi làm những việc gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Sử Ký 16:8-12 — 'Đáng ngợi khen Đức Giê-hô-va, cầu khẩn danh Ngài, và đồn ra giữa các dân những công việc Ngài! Hãy ca hát cho Ngài, hãy ngợi khen Ngài!... Phải tìm cầu Đức Giê-hô-va và sức mạnh Ngài, phải tìm mặt Ngài luôn luôn. Hỡi dòng dõi của Y-sơ-ra-ên, là đầy tớ Ngài, hỡi con cháu của Gia-cốp, là kẻ Ngài chọn, hãy nhớ lại công việc mầu của Ngài đã làm.' Nhiều việc; 'thờ thần ngoại bang' trái ngược.",
+    "language": "vi",
+    "options": [
+      "Ngợi khen Đức Giê-hô-va, cầu khẩn danh Ngài, đồn ra công việc Ngài",
+      "Ca hát và tìm cầu Đức Giê-hô-va và sức mạnh Ngài",
+      "Nhớ lại các công việc mầu Ngài đã làm",
+      "Thờ thần các nước ngoại bang"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Bài thi tạ ơn của Đa-vít",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 1 Sử Ký 22:8-9, Đức Chúa Trời nêu những lý do gì về việc Đa-vít không xây đền và Sa-lô-môn sẽ xây? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Sử Ký 22:8-9 — '...Ngươi đã đổ huyết ra nhiều... ngươi sẽ chẳng cất đền cho danh ta. Kìa, ngươi sẽ sanh một con trai, làm người thái bình; ta sẽ ban bình an cho người khỏi các thù nghịch ở bốn phía; tên người sẽ là Sa-lô-môn; trong đời người, ta sẽ ban bình an và an tịnh cho Y-sơ-ra-ên.' Ba lý do; 'Đa-vít chưa được xức dầu' không đúng.",
+    "language": "vi",
+    "options": [
+      "Đa-vít đã đổ huyết nhiều, đánh các giặc lớn",
+      "Sa-lô-môn sẽ là người thái bình",
+      "Trong đời Sa-lô-môn, Chúa ban bình an cho Y-sơ-ra-ên",
+      "Đa-vít chưa được xức dầu làm vua"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Vì sao Sa-lô-môn xây đền",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 1 Sử Ký 28:9, Đa-vít truyền Sa-lô-môn phải làm những gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Sử Ký 28:9 — '...hãy nhận biết Đức Chúa Trời của cha, hết lòng vui ý mà phục sự Ngài; vì Đức Giê-hô-va dò xét tấm lòng, và phân biệt các ý tưởng. Nếu con tìm kiếm Ngài, Ngài sẽ cho con gặp; nhưng nếu con lìa bỏ Ngài, Ngài sẽ từ bỏ con đời đời.' Ba điều; 'thi hành luật bằng vũ lực với mọi người' không phải nội dung câu này.",
+    "language": "vi",
+    "options": [
+      "Nhận biết Đức Chúa Trời của cha",
+      "Hết lòng vui ý mà phục sự Ngài",
+      "Tìm kiếm Ngài — Ngài sẽ cho con gặp",
+      "Thi hành luật bằng vũ lực với mọi người"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Lời truyền cho Sa-lô-môn",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 1 Sử Ký 29:11-12, lời cầu nguyện của Đa-vít quy về Đức Giê-hô-va những gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Sử Ký 29:11-12 — 'Hỡi Đức Giê-hô-va, sự cao cả, quyền năng, vinh quang, toàn thắng, và oai nghi, đáng quy về Ngài; vì muôn vật trên các từng trời và dưới đất đều thuộc về Ngài... Hoặc giàu có, hoặc vinh quang, đều do Chúa mà đến, và Chúa quản trị trên muôn vật...' Ba phần; 'Chúa thuộc về loài người' đảo ngược chân lý.",
+    "language": "vi",
+    "options": [
+      "Sự cao cả, quyền năng, vinh quang, toàn thắng, oai nghi",
+      "Muôn vật trên trời và dưới đất đều thuộc về Ngài",
+      "Giàu có và vinh quang đều do Chúa mà đến",
+      "Chúa thuộc về loài người"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sử Ký",
+      "Lịch sử",
+      "Lời cầu nguyện của Đa-vít",
+      "Nâng cao"
+    ]
+  }
+]
