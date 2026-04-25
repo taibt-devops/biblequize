@@ -54,7 +54,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | matthew | Matthew | Gospels | 34 | 34 | 100+ | ⚠️ |
 | mark | Mark | Gospels | 33 | 33 | 60-80 | ⚠️ |
 | luke | Luke | Gospels | 33 | 33 | 100+ | ⚠️ |
-| john | John | Gospels | 34 | 0 | 100+ | ⚠️ + 🌐 |
+| john | John | Gospels | 34 | 34 | 100+ | ⚠️ |
 | acts | Acts | Acts | 33 | 33 | 60-80 | ⚠️ |
 | romans | Romans | Epistle | 34 | 0 | 60-80 | ⚠️ + 🌐 |
 | 1corinthians | 1 Corinthians | Epistle | 34 | 0 | 50-60 | ⚠️ + 🌐 |
