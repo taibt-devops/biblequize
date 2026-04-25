@@ -1,0 +1,383 @@
+[
+  {
+    "book": "Isaiah",
+    "chapter": 9,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Isaiah 9:6, 'For to us a child is born.' What does the Hebrew word for 'child' mean?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Yeled (ילד) means 'child' — referring to Jesus born as an infant.",
+    "language": "en",
+    "options": [
+      "Bachur — young man",
+      "Zaken — old man",
+      "Yeled — child",
+      "Naar — youth"
+    ],
+    "tags": [
+      "Isaiah",
+      "Messianic prophecy",
+      "Hebrew language",
+      "Old Testament",
+      "Major Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "In Isaiah 53:5, 'He was wounded for our transgressions.' What does the Hebrew for 'wounded' mean?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Chalal (חלל) means 'pierced through, wounded' — pointing to the death of Christ on the cross.",
+    "language": "en",
+    "options": [
+      "Aven — sin",
+      "Ra — evil",
+      "Naga — to touch",
+      "Chalal — pierced through, wounded"
+    ],
+    "tags": [
+      "Isaiah",
+      "Messianic prophecy",
+      "Hebrew language",
+      "Old Testament",
+      "Major Prophets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Isaiah 1:18: 'Though your sins are like scarlet, they shall be ___'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "The LORD promises full forgiveness, transforming sins as red as blood into white as snow.",
+    "language": "en",
+    "options": [
+      "White as snow",
+      "Like new beginnings",
+      "Clean as water",
+      "Beautiful as flowers"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Forgiveness",
+      "Isaiah",
+      "Major Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the seraphim cry to one another in Isaiah's vision?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Isaiah 6:3 — 'Holy' (Kadosh) is repeated three times, emphasizing God's absolute holiness.",
+    "language": "en",
+    "verseEnd": 3,
+    "options": [
+      "Glory to God",
+      "Hallelujah",
+      "Amen",
+      "Holy, holy, holy is the LORD of hosts"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Holiness",
+      "Isaiah",
+      "Major Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 11,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Isaiah 11:6 describes the peaceful kingdom: 'The wolf shall dwell with ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Isaiah 11:6 — A vision of the peaceful age when Messiah reigns, all hostility is reconciled.",
+    "language": "en",
+    "verseEnd": 9,
+    "options": [
+      "The goat",
+      "The lion",
+      "The bear",
+      "The lamb"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophecy",
+      "Peace",
+      "Isaiah",
+      "Major Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Isaiah 40:8: 'The grass withers, the flower fades, but the ___ of our God will stand forever'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Everything on earth is temporary, but God's Word is eternal. 1 Peter 1:24-25 quotes this verse.",
+    "language": "en",
+    "options": [
+      "Temple",
+      "Word",
+      "Love",
+      "Covenant"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Word of God",
+      "Isaiah",
+      "Major Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 55,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How does Isaiah 55:8-9 compare God's thoughts and ways to man's?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "God's thoughts are higher than man's as the heavens are higher than the earth. We cannot fully comprehend Him.",
+    "language": "en",
+    "verseEnd": 9,
+    "options": [
+      "The same",
+      "Slightly different",
+      "Cannot be compared",
+      "As high above as the heavens are above the earth"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Sovereignty",
+      "Isaiah",
+      "Major Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 64,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Isaiah 64:8 compares God and us to what?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "God is the potter, we are the clay. He has the right to shape us as He wills.",
+    "language": "en",
+    "options": [
+      "Potter and clay",
+      "Father and son",
+      "Teacher and student",
+      "King and people"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Sovereignty",
+      "Isaiah",
+      "Major Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 6,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the LORD asked, 'Whom shall I send?' how did Isaiah reply?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Isaiah 6:8 — 'Here am I! Send me.' Isaiah was ready to obey after being cleansed.",
+    "language": "en",
+    "options": [
+      "I am unworthy",
+      "Here am I, send me",
+      "Send another",
+      "Let me think about it"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Obedience",
+      "Isaiah",
+      "Major Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Isaiah 7:14 prophesies: 'Behold, the virgin shall conceive and bear a son, and shall call his name ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Isaiah 7:14 — Immanuel (God with us). This prophecy is fulfilled in Jesus (Matt 1:23).",
+    "language": "en",
+    "options": [
+      "Jesus",
+      "Michael",
+      "Immanuel",
+      "Messiah"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophecy",
+      "Nativity",
+      "Isaiah",
+      "Major Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 9,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "By what names does Isaiah 9:6 call the coming Messiah?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Isaiah 9:6 — Four titles showing Jesus is both God and man, both King and Priest.",
+    "language": "en",
+    "options": [
+      "King of Kings",
+      "Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace",
+      "Son of Man",
+      "Lamb of God"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophecy",
+      "Names",
+      "Isaiah",
+      "Major Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verseStart": 31,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Isaiah 40:31 say will happen to those who wait for the LORD?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Isaiah 40:31 — Those who wait for the LORD shall renew their strength; they shall mount up with wings like eagles, run and not be weary, walk and not faint.",
+    "language": "en",
+    "options": [
+      "Power",
+      "Wealth",
+      "Renew strength, mount up with wings like eagles",
+      "Knowledge"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hope",
+      "Strength",
+      "Isaiah",
+      "Major Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "To what animal does Isaiah 53:6 compare humanity?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Isaiah 53:6 — All we like sheep have gone astray; we have turned every one to his own way. But the LORD has laid on Him (Christ) the iniquity of us all.",
+    "language": "en",
+    "options": [
+      "Birds flying away",
+      "Fish in a stream",
+      "Cattle wandering",
+      "Sheep gone astray"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophecy",
+      "Sin",
+      "Isaiah",
+      "Major Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Isaiah 53:7 describes the Suffering One 'like a lamb that is led to the slaughter.' To what event does this image point?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Isaiah 53:7 — Jesus stood silent before Pilate (Matt 27:12-14), like a lamb led to slaughter. Philip used this passage to preach the gospel to the eunuch (Acts 8:32-35).",
+    "language": "en",
+    "options": [
+      "Jesus silent before Pilate, then crucified",
+      "The captivity of Israel",
+      "The Passover",
+      "The daily sacrifice"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophecy",
+      "Cross",
+      "Isaiah",
+      "Major Prophets",
+      "Advanced"
+    ]
+  }
+]
