@@ -1,0 +1,280 @@
+[
+  {
+    "book": "Micah",
+    "chapter": 7,
+    "verseStart": 18,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Micah 7:18 — 'Who is a God like You, ___ iniquity?'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "The LORD pardons iniquity and does not retain His anger forever, because He delights in steadfast love.",
+    "language": "en",
+    "options": [
+      "Recording",
+      "Punishing",
+      "Remembering",
+      "Pardoning"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Forgiveness",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 4,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Micah 4:3 prophesies an age of peace: 'They shall beat their swords into ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Weapons turn into farming tools. They shall not learn war anymore.",
+    "language": "en",
+    "options": [
+      "Shields",
+      "Ornaments",
+      "Tools",
+      "Plowshares"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Peace",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 3,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Micah declares that he is filled with power because of what?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Micah 3:8 — Power for ministry comes from the Spirit of the LORD, not from the prophet himself.",
+    "language": "en",
+    "options": [
+      "The Spirit of the LORD, with justice and might",
+      "Education",
+      "Office",
+      "Experience"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Power",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 5,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "The Messiah from Bethlehem will shepherd His people in what?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Micah 5:4 — The great Shepherd shall stand and shepherd His flock in the strength of the LORD.",
+    "language": "en",
+    "options": [
+      "An army",
+      "Wisdom",
+      "A sword",
+      "The strength of the LORD"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "The Shepherd",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 6,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Micah 6:6-7 asks: Does the LORD want thousands of rams or rivers of oil?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "God does not want religious form but a life of justice and humility.",
+    "language": "en",
+    "verseEnd": 7,
+    "options": [
+      "Sometimes",
+      "No — God wants justice, kindness, and humility",
+      "Just a little",
+      "Yes, the more the better"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Righteousness",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Against which cities does Micah warn that the LORD's judgment will come?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Micah 1:5 — Both capitals had sinned and both would be judged. God is just toward all.",
+    "language": "en",
+    "verseEnd": 4,
+    "options": [
+      "Samaria and Jerusalem",
+      "Only Samaria",
+      "Only Jerusalem",
+      "Nineveh"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Judgment",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Micah prophesies: in the latter days, what will become of the mountain of the LORD's house?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Micah 4:1-2 — God's kingdom will be exalted and all peoples will come to learn His ways.",
+    "language": "en",
+    "verseEnd": 2,
+    "options": [
+      "Hidden",
+      "Forgotten",
+      "Destroyed",
+      "Established as the highest of the mountains, and peoples shall flow to it"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Latter days",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 7,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Micah declares: 'But as for me, I will look to ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Micah 7:7 — Whatever the circumstance, Micah chooses to wait for and trust the LORD.",
+    "language": "en",
+    "options": [
+      "The king",
+      "The army",
+      "The LORD",
+      "Friends"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Waiting on the LORD",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 7,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Micah 7:8 — 'When I fall, I shall ___; when I sit in darkness, the LORD will be a light to me.'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Though we fall, the believer will rise again, for the LORD is light in darkness.",
+    "language": "en",
+    "options": [
+      "Rise again",
+      "Cry out",
+      "Lie still forever",
+      "Give up"
+    ],
+    "tags": [
+      "Old Testament",
+      "Micah",
+      "Hope",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 5,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Micah 5:2 prophesies that the Messiah will be born in which city?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Micah 5:2 — 'But you, O Bethlehem Ephrathah... from you shall come forth for me one who is to be ruler in Israel.' Fulfilled in Matthew 2:1.",
+    "language": "en",
+    "options": [
+      "Hebron",
+      "Nazareth",
+      "Bethlehem",
+      "Jerusalem"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophecy",
+      "Nativity",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Micah",
+    "chapter": 6,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Micah 6:8 sums up what the LORD requires of man as what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Micah 6:8 — Three things the LORD requires: do justice, love kindness, walk humbly with God. Simple yet profound.",
+    "language": "en",
+    "options": [
+      "Conquer the nations",
+      "Do justice, love kindness, and walk humbly with your God",
+      "Build a temple",
+      "Offer sacrifices"
+    ],
+    "tags": [
+      "Old Testament",
+      "Christian living",
+      "Righteousness",
+      "Basic"
+    ]
+  }
+]
