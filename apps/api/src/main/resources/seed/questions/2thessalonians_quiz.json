@@ -1,0 +1,485 @@
+[
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 1:1, ai cùng Phao-lô đồng tác giả thư này?",
+    "correctAnswer": [0],
+    "explanation": "2 Tê-sa-lô-ni-ca 1:1 — 'Phao-lô, Sin-vanh và Ti-mô-thê gởi cho Hội Thánh Tê-sa-lô-ni-ca, là Hội Thánh ở trong Đức Chúa Trời, Cha chúng ta, và trong Đức Chúa Jêsus Christ, là Chúa.'",
+    "language": "vi",
+    "options": [
+      "Sin-vanh và Ti-mô-thê",
+      "Bạt-na-ba và Ma-ri",
+      "Tích và A-pô-lô",
+      "Lu-ca và Đê-ma"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Đồng tác giả",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thư 2 Tê-sa-lô-ni-ca được gửi cho Hội Thánh nào?",
+    "correctAnswer": [1],
+    "explanation": "2 Tê-sa-lô-ni-ca 1:1 — '...gởi cho Hội Thánh Tê-sa-lô-ni-ca, là Hội Thánh ở trong Đức Chúa Trời, Cha chúng ta...' Hội Thánh tại Tê-sa-lô-ni-ca, thủ phủ Ma-xê-đoan.",
+    "language": "vi",
+    "options": [
+      "Hội Thánh Cô-rinh-tô",
+      "Hội Thánh Tê-sa-lô-ni-ca",
+      "Hội Thánh Ê-phê-sô",
+      "Hội Thánh Phi-líp"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Người nhận thư",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 1:3, Phao-lô tạ ơn Chúa vì điều gì nơi tín hữu?",
+    "correctAnswer": [2],
+    "explanation": "2 Tê-sa-lô-ni-ca 1:3 — '...vì đức tin anh em rất tăng trưởng, và lòng yêu thương của mỗi người trong hết thảy anh em đối với nhau càng ngày càng thêm.'",
+    "language": "vi",
+    "options": [
+      "Sự giàu có vật chất",
+      "Khả năng giảng đạo lưu loát",
+      "Đức tin tăng trưởng và lòng yêu thương lẫn nhau càng thêm",
+      "Số đông tín hữu mới gia nhập"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Đức tin và yêu thương tăng trưởng",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 1:7, khi Đức Chúa Jêsus hiện đến từ trời, Ngài cùng với ai?",
+    "correctAnswer": [3],
+    "explanation": "2 Tê-sa-lô-ni-ca 1:7 — '...trong khi Đức Chúa Jêsus từ trời hiện đến với các thiên sứ của quyền phép Ngài, giữa ngọn lửa hừng...'",
+    "language": "vi",
+    "options": [
+      "Một mình từ trên cao",
+      "Các tiên tri Cựu Ước phục sinh",
+      "Hai mươi bốn trưởng lão",
+      "Các thiên sứ của quyền phép Ngài, giữa ngọn lửa hừng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Christ tái lâm với thiên sứ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 1:8, Đức Chúa Jêsus báo thù những kẻ chẳng làm gì?",
+    "correctAnswer": [0],
+    "explanation": "2 Tê-sa-lô-ni-ca 1:8 — '...báo thù những kẻ chẳng hề nhận biết Đức Chúa Trời, và không vâng phục Tin Lành của Đức Chúa Jêsus chúng ta.' Hai sự thiếu sót — không nhận biết Chúa và không vâng phục Tin Lành.",
+    "language": "vi",
+    "options": [
+      "Chẳng nhận biết Đức Chúa Trời và không vâng phục Tin Lành",
+      "Chẳng giữ ngày Sa-bát theo luật",
+      "Chẳng dâng phần mười",
+      "Chẳng học thuộc Kinh Thánh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Báo thù kẻ không vâng Tin Lành",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 1:9, hình phạt cho những kẻ ấy là gì?",
+    "correctAnswer": [1],
+    "explanation": "2 Tê-sa-lô-ni-ca 1:9 — 'Họ sẽ bị hình phạt hư mất đời đời, xa cách mặt Chúa và sự vinh hiển của quyền phép Ngài.'",
+    "language": "vi",
+    "options": [
+      "Bị giam một thời gian rồi tha",
+      "Hình phạt hư mất đời đời, xa cách mặt Chúa",
+      "Bị cải tạo và phục hồi sau ngàn năm",
+      "Trở về với hư vô"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Hư mất đời đời",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 2:1, Phao-lô đề cập đến sự kiện nào sắp đến?",
+    "correctAnswer": [2],
+    "explanation": "2 Tê-sa-lô-ni-ca 2:1 — 'Luận về sự đến của Đức Chúa Jêsus Christ chúng ta, và về sự chúng ta hội hiệp cùng Ngài...' Hai chủ đề: sự tái lâm và sự hội hiệp tín hữu.",
+    "language": "vi",
+    "options": [
+      "Cuộc bắt bớ lớn ở Rô-ma",
+      "Sự sụp đổ Giê-ru-sa-lem",
+      "Sự đến của Đức Chúa Jêsus và sự hội hiệp cùng Ngài",
+      "Lễ Ngũ Tuần thứ hai"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Tái lâm và hội hiệp",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 2:3, ngày Chúa sẽ chưa đến cho đến khi điều gì xảy ra?",
+    "correctAnswer": [3],
+    "explanation": "2 Tê-sa-lô-ni-ca 2:3 — '...vì phải có sự bỏ đạo đến trước, và có người tội ác, con của sự hư mất, hiện ra...' Hai dấu hiệu — sự bỏ đạo và sự xuất hiện của người tội ác.",
+    "language": "vi",
+    "options": [
+      "Tất cả các vương quốc bị tan rã",
+      "Đền thờ Giê-ru-sa-lem được xây lại",
+      "Mọi sự bắt bớ chấm dứt",
+      "Sự bỏ đạo đến trước, và người tội ác (con của sự hư mất) hiện ra"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Người tội ác hiện ra",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 2:4, người tội ác làm gì với chính mình?",
+    "correctAnswer": [0],
+    "explanation": "2 Tê-sa-lô-ni-ca 2:4 — 'Tức là kẻ đối địch, tôn mình lên trên mọi sự mà người ta xưng là Đức Chúa Trời hoặc người ta thờ lạy, rất đến nỗi nó ngồi trong đền Đức Chúa Trời, chính mình tự xưng là Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Tự xưng là Đức Chúa Trời, ngồi trong đền Chúa, tôn mình trên mọi thần",
+      "Trốn vào hoang mạc để cầu nguyện",
+      "Tổ chức lễ tạ ơn cho Chúa",
+      "Khuyên loài người tin Chúa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Người tội ác tự xưng Đức Chúa Trời",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô dạy quy tắc gì trong 2 Tê-sa-lô-ni-ca 3:10?",
+    "correctAnswer": [1],
+    "explanation": "2 Tê-sa-lô-ni-ca 3:10 — '...nếu ai không khứng làm việc, thì cũng không nên ăn nữa.' Quy tắc nhằm chấn chỉnh những kẻ lười biếng trong hội thánh.",
+    "language": "vi",
+    "options": [
+      "Mọi người phải dâng một phần mười",
+      "Nếu ai không khứng làm việc, thì cũng không nên ăn nữa",
+      "Mọi tín hữu phải đi truyền giáo",
+      "Phải nuôi nấng các đầy tớ Chúa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Không làm thì không ăn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 2:8, Đức Chúa Jêsus sẽ tiêu diệt người tội ác bằng gì?",
+    "correctAnswer": [2],
+    "explanation": "2 Tê-sa-lô-ni-ca 2:8 — '...Đức Chúa Jêsus sẽ dùng hơi miệng Ngài mà giết hắn, và lấy sự sáng láng lúc Ngài đến mà diệt hắn đi.'",
+    "language": "vi",
+    "options": [
+      "Bằng đoàn thiên binh đông đúc",
+      "Bằng dây xích đời đời",
+      "Bằng hơi miệng Ngài và sự sáng láng lúc Ngài đến",
+      "Bằng lửa từ trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Hơi miệng Chúa diệt kẻ ác",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 2:9, sự hiện ra của người tội ác là do quyền phép của ai và kèm theo gì?",
+    "correctAnswer": [3],
+    "explanation": "2 Tê-sa-lô-ni-ca 2:9 — 'Kẻ đó sẽ lấy quyền của quỉ Sa-tan mà hiện đến, làm đủ mọi thứ phép lạ, dấu dị và việc kỳ dối giả.'",
+    "language": "vi",
+    "options": [
+      "Quyền của Đức Chúa Trời, kèm theo sự công bình",
+      "Quyền của các thiên sứ, kèm theo lời cầu nguyện",
+      "Quyền của con người, kèm theo các trận chiến",
+      "Quyền của Sa-tan, kèm theo phép lạ và việc kỳ dối giả"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Quyền Sa-tan và việc kỳ dối giả",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 2:11, vì cớ tại sao Đức Chúa Trời sẽ sai sự lầm lạc lớn đến với họ?",
+    "correctAnswer": [0],
+    "explanation": "2 Tê-sa-lô-ni-ca 2:10-11 — '...vì họ không nhận lãnh sự yêu thương của lẽ thật để được cứu rỗi. Ấy vì thế mà Đức Chúa Trời cho chúng nó mắc phải sự lầm lạc...' Sự khước từ lẽ thật mở đường cho sự lầm lạc.",
+    "language": "vi",
+    "options": [
+      "Đức Chúa Trời cho mắc sự lầm lạc, để họ tin theo điều dối giả",
+      "Đức Chúa Trời ban thêm sự khôn ngoan",
+      "Đức Chúa Trời tha thứ mọi tội lỗi",
+      "Đức Chúa Trời ban phước thuộc thể"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Sự lầm lạc lớn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 2:13, Đức Chúa Trời chọn anh em từ ban đầu để làm gì?",
+    "correctAnswer": [1],
+    "explanation": "2 Tê-sa-lô-ni-ca 2:13 — '...Đức Chúa Trời từ lúc ban đầu đã chọn anh em bởi sự nên thánh của Thánh Linh, và bởi tin lẽ thật, đặng ban sự cứu rỗi cho anh em.'",
+    "language": "vi",
+    "options": [
+      "Để được giàu có",
+      "Để được sự cứu rỗi qua sự nên thánh của Thánh Linh và tin lẽ thật",
+      "Để cai trị các thiên sứ",
+      "Để học mọi sự hiểu biết"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Chọn để được cứu rỗi",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 2:15, Phao-lô khuyên anh em phải làm gì?",
+    "correctAnswer": [2],
+    "explanation": "2 Tê-sa-lô-ni-ca 2:15 — 'Hỡi anh em, vậy thì hãy đứng vững, hãy vâng giữ những điều dạy dỗ mà chúng tôi đã truyền cho anh em, hoặc bằng lời nói, hoặc bằng thơ từ của chúng tôi.'",
+    "language": "vi",
+    "options": [
+      "Tránh xa mọi cuộc thử thách",
+      "Đi rao giảng khắp đất",
+      "Đứng vững và vâng giữ những điều dạy dỗ đã truyền",
+      "Tự tổ chức nhóm riêng biệt"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Đứng vững giữ điều dạy dỗ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 3:1, Phao-lô xin tín hữu cầu nguyện cho điều gì?",
+    "correctAnswer": [3],
+    "explanation": "2 Tê-sa-lô-ni-ca 3:1 — 'Vả lại, hỡi anh em, hãy cầu nguyện cho chúng tôi, hầu cho đạo Chúa được đồn ra và được sáng danh, như thể ở trong anh em vậy.'",
+    "language": "vi",
+    "options": [
+      "Phao-lô được giàu có để giúp đỡ người nghèo",
+      "Phao-lô được tha khỏi tù",
+      "Phao-lô được làm sứ đồ chính thức",
+      "Đạo Chúa được đồn ra và được sáng danh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Đạo Chúa đồn ra",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 3:13, anh em chớ mệt mỏi trong việc gì?",
+    "correctAnswer": [0],
+    "explanation": "2 Tê-sa-lô-ni-ca 3:13 — 'Hỡi anh em, phần anh em chớ mệt nhọc làm sự lành.' Một câu khích lệ ngắn gọn — kiên trì làm điều lành dù gặp những kẻ lười biếng xung quanh.",
+    "language": "vi",
+    "options": [
+      "Làm sự lành",
+      "Kiêng ăn",
+      "Cầu xin Chúa",
+      "Khuyên dạy người khác"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Chớ mệt nhọc làm sự lành",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 1:8-9, số phận của những kẻ không vâng phục Tin Lành là gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Tê-sa-lô-ni-ca 1:8-9 — '...Họ sẽ bị hình phạt hư mất đời đời, xa cách mặt Chúa và sự vinh hiển của quyền phép Ngài.' Ba điều rõ ràng; 'tan biến lập tức' không khớp với 'hình phạt đời đời'.",
+    "language": "vi",
+    "options": [
+      "Bị hình phạt hư mất đời đời",
+      "Xa cách mặt Chúa",
+      "Xa cách sự vinh hiển của quyền phép Ngài",
+      "Bị tan biến lập tức không còn dấu vết"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Hình phạt đời đời",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 2:9-10, sự hiện ra của người tội ác có những đặc điểm nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Tê-sa-lô-ni-ca 2:9-10 — '...lấy quyền của quỉ Sa-tan mà hiện đến, làm đủ mọi thứ phép lạ, dấu dị và việc kỳ dối giả; dùng mọi cách phỉnh dỗ không công bình mà dỗ những kẻ hư mất...' Ba đặc điểm; 'hiện ra rõ ràng cho mọi người thấy' mâu thuẫn — sự lừa dối kín đáo.",
+    "language": "vi",
+    "options": [
+      "Bằng quyền của quỉ Sa-tan",
+      "Đủ mọi thứ phép lạ và dấu dị giả",
+      "Dùng mọi cách phỉnh dỗ không công bình",
+      "Hiện ra rõ ràng minh bạch cho mọi người"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Đặc điểm người tội ác",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "verseStart": 7,
+    "verseEnd": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 2 Tê-sa-lô-ni-ca 3:7-9, Phao-lô đã nêu gương gì khi ở giữa anh em Tê-sa-lô-ni-ca? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Tê-sa-lô-ni-ca 3:7-9 — '...chúng tôi không có ăn dưng của ai, nhưng đêm ngày làm lụng khó nhọc, để khỏi lụy đến một người nào trong anh em hết.' Ba điều; 'sống xa hoa' trái với toàn bộ tinh thần đoạn này.",
+    "language": "vi",
+    "options": [
+      "Không sống lười biếng",
+      "Không ăn dưng của ai",
+      "Đêm ngày làm lụng khó nhọc, không lụy đến ai",
+      "Sống xa hoa với của dâng hội thánh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "2 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Gương lao động của Phao-lô",
+      "Nâng cao"
+    ]
+  }
+]

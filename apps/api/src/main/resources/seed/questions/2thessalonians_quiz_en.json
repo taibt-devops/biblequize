@@ -1,0 +1,485 @@
+[
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 1:1, who joined Paul as co-authors of this letter?",
+    "correctAnswer": [0],
+    "explanation": "2 Thessalonians 1:1 — 'Paul, Silvanus, and Timothy, to the church of the Thessalonians in God our Father and the Lord Jesus Christ.'",
+    "language": "en",
+    "options": [
+      "Silvanus and Timothy",
+      "Barnabas and Mary",
+      "Titus and Apollos",
+      "Luke and Demas"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Co-authors",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "To which church is 2 Thessalonians addressed?",
+    "correctAnswer": [1],
+    "explanation": "2 Thessalonians 1:1 — '...to the church of the Thessalonians in God our Father and the Lord Jesus Christ.' The church at Thessalonica, capital of Macedonia.",
+    "language": "en",
+    "options": [
+      "The church at Corinth",
+      "The church at Thessalonica",
+      "The church at Ephesus",
+      "The church at Philippi"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Recipients of the letter",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 1:3, for what does Paul thank God concerning the believers?",
+    "correctAnswer": [2],
+    "explanation": "2 Thessalonians 1:3 — '...because your faith is growing abundantly, and the love of every one of you for one another is increasing.'",
+    "language": "en",
+    "options": [
+      "Their material wealth",
+      "Their eloquence in preaching",
+      "Their faith growing abundantly and love increasing for one another",
+      "Their large numbers of new converts"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Faith and love increasing",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 1:7, when the Lord Jesus is revealed from heaven, with whom does He come?",
+    "correctAnswer": [3],
+    "explanation": "2 Thessalonians 1:7 — '...when the Lord Jesus is revealed from heaven with his mighty angels in flaming fire...'",
+    "language": "en",
+    "options": [
+      "Alone from on high",
+      "With the resurrected Old Testament prophets",
+      "With the twenty-four elders",
+      "With His mighty angels in flaming fire"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Christ's return with angels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 1:8, the Lord inflicts vengeance on those who do what?",
+    "correctAnswer": [0],
+    "explanation": "2 Thessalonians 1:8 — '...inflicting vengeance on those who do not know God and on those who do not obey the gospel of our Lord Jesus.' Two omissions — not knowing God and not obeying the gospel.",
+    "language": "en",
+    "options": [
+      "Do not know God and do not obey the gospel",
+      "Do not keep the Sabbath strictly",
+      "Do not give tithes",
+      "Do not memorize Scripture"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Vengeance on disobedient",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 1:9, what is the punishment of those who do not obey?",
+    "correctAnswer": [1],
+    "explanation": "2 Thessalonians 1:9 — 'They will suffer the punishment of eternal destruction, away from the presence of the Lord and from the glory of his might.'",
+    "language": "en",
+    "options": [
+      "Imprisonment for a time, then release",
+      "Eternal destruction, away from the presence of the Lord",
+      "Reformation and restoration after a thousand years",
+      "Returning to nothingness"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Eternal destruction",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 2:1, what events does Paul address as approaching?",
+    "correctAnswer": [2],
+    "explanation": "2 Thessalonians 2:1 — '...concerning the coming of our Lord Jesus Christ and our being gathered together to him...' Two themes: His return and the gathering of the saints.",
+    "language": "en",
+    "options": [
+      "A great persecution at Rome",
+      "The fall of Jerusalem",
+      "The coming of the Lord Jesus and our being gathered to Him",
+      "A second Pentecost"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Coming and gathering",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 2:3, the day of the Lord will not come until what happens?",
+    "correctAnswer": [3],
+    "explanation": "2 Thessalonians 2:3 — '...for that day will not come, unless the rebellion comes first, and the man of lawlessness is revealed, the son of destruction.' Two signs — the rebellion and the revealing of the man of lawlessness.",
+    "language": "en",
+    "options": [
+      "All kingdoms collapse",
+      "The Jerusalem temple is rebuilt",
+      "All persecution ceases",
+      "The rebellion comes first, and the man of lawlessness (son of destruction) is revealed"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Man of lawlessness revealed",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 2:4, what does the man of lawlessness do regarding himself?",
+    "correctAnswer": [0],
+    "explanation": "2 Thessalonians 2:4 — '...who opposes and exalts himself against every so-called god or object of worship, so that he takes his seat in the temple of God, proclaiming himself to be God.'",
+    "language": "en",
+    "options": [
+      "Proclaims himself to be God, sits in the temple of God, exalts himself above every god",
+      "Hides in the wilderness to pray",
+      "Holds a thanksgiving feast for God",
+      "Persuades people to believe in God"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Man of lawlessness proclaims himself God",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What rule does Paul teach in 2 Thessalonians 3:10?",
+    "correctAnswer": [1],
+    "explanation": "2 Thessalonians 3:10 — '...If anyone is not willing to work, let him not eat.' This rule corrects those living in idleness within the church.",
+    "language": "en",
+    "options": [
+      "Everyone must give a tithe",
+      "If anyone is not willing to work, let him not eat",
+      "Every believer must go on a mission",
+      "Believers must support all the Lord's servants"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "If not willing to work, do not eat",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 2:8, by what will the Lord Jesus destroy the lawless one?",
+    "correctAnswer": [2],
+    "explanation": "2 Thessalonians 2:8 — '...the Lord Jesus will kill with the breath of his mouth and bring to nothing by the appearance of his coming.'",
+    "language": "en",
+    "options": [
+      "By a vast heavenly host",
+      "By eternal chains",
+      "By the breath of His mouth and the appearance of His coming",
+      "By fire from heaven"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Breath of mouth destroys lawless",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 2:9, by whose power does the lawless one come, and what accompanies him?",
+    "correctAnswer": [3],
+    "explanation": "2 Thessalonians 2:9 — 'The coming of the lawless one is by the activity of Satan with all power and false signs and wonders...'",
+    "language": "en",
+    "options": [
+      "By God's power, accompanied by righteousness",
+      "By angelic power, accompanied by prayer",
+      "By human power, accompanied by battles",
+      "By Satan's power, with all false signs and wonders"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Satan's power and false signs",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 2:11, why does God send a strong delusion?",
+    "correctAnswer": [0],
+    "explanation": "2 Thessalonians 2:10-11 — '...they refused to love the truth and so be saved. Therefore God sends them a strong delusion, so that they may believe what is false...' Refusal of truth opens the door to delusion.",
+    "language": "en",
+    "options": [
+      "God sends delusion so they believe what is false",
+      "God grants additional wisdom",
+      "God forgives all their sins",
+      "God grants material blessing"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Strong delusion",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 2:13, for what did God choose them from the beginning?",
+    "correctAnswer": [1],
+    "explanation": "2 Thessalonians 2:13 — '...God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth.'",
+    "language": "en",
+    "options": [
+      "To become wealthy",
+      "Salvation through sanctification by the Spirit and belief in the truth",
+      "To rule over angels",
+      "To gain all knowledge"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Chosen for salvation",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 2:15, what does Paul exhort the brothers to do?",
+    "correctAnswer": [2],
+    "explanation": "2 Thessalonians 2:15 — 'So then, brothers, stand firm and hold to the traditions that you were taught by us, either by our spoken word or by our letter.'",
+    "language": "en",
+    "options": [
+      "Avoid every trial",
+      "Go preach throughout the earth",
+      "Stand firm and hold to the traditions taught",
+      "Form a separate group"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Stand firm, hold the teaching",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 3:1, what does Paul ask the believers to pray for?",
+    "correctAnswer": [3],
+    "explanation": "2 Thessalonians 3:1 — 'Finally, brothers, pray for us, that the word of the Lord may speed ahead and be honored, as happened among you.'",
+    "language": "en",
+    "options": [
+      "That Paul may grow rich to help the poor",
+      "That Paul may be released from prison",
+      "That Paul may become an official apostle",
+      "That the word of the Lord may speed ahead and be honored"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Word of the Lord speeds ahead",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Thessalonians 3:13, in what should believers not grow weary?",
+    "correctAnswer": [0],
+    "explanation": "2 Thessalonians 3:13 — 'As for you, brothers, do not grow weary in doing good.' A short exhortation — keep doing good even when surrounded by idle people.",
+    "language": "en",
+    "options": [
+      "Doing good",
+      "Fasting",
+      "Praying to the Lord",
+      "Teaching others"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Do not grow weary in doing good",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 2 Thessalonians 1:8-9, what is the fate of those who do not obey the gospel? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Thessalonians 1:8-9 — 'They will suffer the punishment of eternal destruction, away from the presence of the Lord and from the glory of his might.' Three clear elements; 'instantly annihilated' contradicts 'eternal' punishment.",
+    "language": "en",
+    "options": [
+      "Suffer the punishment of eternal destruction",
+      "Away from the presence of the Lord",
+      "Away from the glory of His might",
+      "Instantly annihilated without trace"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Eternal punishment",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 2 Thessalonians 2:9-10, what marks the coming of the lawless one? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Thessalonians 2:9-10 — '...by the activity of Satan with all power and false signs and wonders, and with all wicked deception for those who are perishing...' Three marks; 'plainly seen by all' contradicts the deceptive nature.",
+    "language": "en",
+    "options": [
+      "By the activity of Satan",
+      "All power, false signs, and wonders",
+      "All wicked deception for those perishing",
+      "Plainly visible to everyone"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Marks of the lawless one",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "verseStart": 7,
+    "verseEnd": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 2 Thessalonians 3:7-9, what example did Paul set when he was with the Thessalonians? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Thessalonians 3:7-9 — '...we were not idle when we were with you, nor did we eat anyone's bread without paying for it, but with toil and labor we worked night and day...' Three things; 'living luxuriously' contradicts the entire passage.",
+    "language": "en",
+    "options": [
+      "Not living idly",
+      "Not eating anyone's bread without paying",
+      "Toiling night and day, not burdening anyone",
+      "Living luxuriously off church gifts"
+    ],
+    "tags": [
+      "New Testament",
+      "2 Thessalonians",
+      "Epistle",
+      "Paul's example of labor",
+      "Advanced"
+    ]
+  }
+]
