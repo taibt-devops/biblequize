@@ -933,5 +933,1753 @@
       "Gospels",
       "Basic"
     ]
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does John 1:11 say about how 'his own people' responded to the Word?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "John 1:11 — 'He came to his own, and his own people did not receive him.'",
+    "language": "en",
+    "options": [
+      "His own people did not receive him",
+      "His own welcomed him with joy",
+      "His own crowned him king",
+      "His own followed him to death"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "His Own Rejected",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "John 1:14 teaches the doctrine of incarnation: the Word became what and dwelt among us?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 1:14 — 'And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.'",
+    "language": "en",
+    "options": [
+      "Light",
+      "Flesh (a man)",
+      "Spirit",
+      "Angel"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Incarnation",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "verseStart": 29,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did John the Baptist call Jesus when he saw Him coming?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 1:29 — 'Behold, the Lamb of God, who takes away the sin of the world!'",
+    "language": "en",
+    "options": [
+      "King of kings",
+      "Son of Man",
+      "A great prophet",
+      "The Lamb of God, who takes away the sin of the world"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Lamb of God",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "verseStart": 42,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When Andrew brought his brother to Jesus, what new name did Jesus give Simon?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "John 1:42 — 'Jesus said, You are Simon the son of John. You shall be called Cephas (which means Peter).'",
+    "language": "en",
+    "options": [
+      "Cephas (Peter — meaning 'rock')",
+      "Bartholomew",
+      "Thomas",
+      "James"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Naming Peter",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "verseStart": 13,
+    "verseEnd": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "On His first temple visit in Jerusalem, what did Jesus use to drive out the merchants?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 2:15 — 'And making a whip of cords, he drove them all out of the temple, with the sheep and oxen. And he poured out the coins of the money-changers and overturned their tables.'",
+    "language": "en",
+    "options": [
+      "A sword",
+      "A word of rebuke",
+      "A whip of cords",
+      "A wooden staff"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "First Temple Cleansing",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "verseStart": 19,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Jesus said: 'Destroy this temple, and in ___ I will raise it up.' Which temple did He mean?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 2:19-21 — 'Destroy this temple, and in three days I will raise it up... But he was speaking about the temple of his body.'",
+    "language": "en",
+    "options": [
+      "Thirty days — Solomon's temple",
+      "Seven days — the tabernacle",
+      "Three days — the temple of His body (resurrection)",
+      "Forty days — the tabernacle"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Temple of His Body",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus told Nicodemus: 'Unless one is born of ___ and ___, he cannot enter the kingdom of God.'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 3:5 — 'Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God.'",
+    "language": "en",
+    "options": [
+      "Fire and Spirit",
+      "Faith and works",
+      "Law and grace",
+      "Water and Spirit"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Born of Spirit",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "John 3:8 likens those born of the Spirit to what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 3:8 — 'The wind blows where it wishes, and you hear its sound, but you do not know where it comes from or where it goes. So it is with everyone who is born of the Spirit.'",
+    "language": "en",
+    "options": [
+      "A river",
+      "Wind (blows where it wishes)",
+      "A flame",
+      "An olive tree"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Wind and Spirit",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "verseStart": 30,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What famous statement did John the Baptist make about Jesus and himself?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 3:30 — 'He must increase, but I must decrease.'",
+    "language": "en",
+    "options": [
+      "He and I are one",
+      "He must increase, but I must decrease",
+      "I am higher than He",
+      "I came before Him"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "He Must Increase",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "verseStart": 36,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "John 3:36 — what does it say happens to those who do not believe in the Son?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 3:36 — 'Whoever does not obey the Son shall not see life, but the wrath of God remains on him.'",
+    "language": "en",
+    "options": [
+      "Lose blessing",
+      "Sickness",
+      "Short life",
+      "The wrath of God remains on him"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Wrath",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus told the Samaritan woman that God is ___, and worshipers must worship Him in ___.",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 4:24 — 'God is spirit, and those who worship him must worship in spirit and truth.'",
+    "language": "en",
+    "options": [
+      "King / power",
+      "Father / obedience",
+      "Spirit / spirit and truth",
+      "Fire / praise"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Worship in Spirit and Truth",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "verseStart": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "John 4:35 — Jesus told the disciples to lift up their eyes and look at what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 4:35 — 'Look, I tell you, lift up your eyes, and see that the fields are white for harvest.'",
+    "language": "en",
+    "options": [
+      "The setting sun",
+      "The Jordan River",
+      "The fields white for harvest",
+      "The temple on the mountain"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Harvest Fields",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "verseStart": 46,
+    "verseEnd": 54,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At Cana, Jesus healed whose son with a word from afar?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 4:46-50 — 'There was an official whose son was ill at Capernaum... Jesus said, Go; your son will live.'",
+    "language": "en",
+    "options": [
+      "Peter's",
+      "A priest's",
+      "Potiphar's",
+      "An official's (royal officer)"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Healing the Official's Son",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At the pool of Bethesda, what did Jesus say to the man paralyzed for 38 years?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "John 5:8 — 'Jesus said to him, Get up, take up your bed, and walk.'",
+    "language": "en",
+    "options": [
+      "Get up, take up your bed, and walk",
+      "Your faith has healed you",
+      "Go and wash in Siloam",
+      "Your sins are forgiven"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Bethesda",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "John 5:24 — Whoever hears Jesus' word and believes the One who sent Him has what, and has passed from what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 5:24 — 'Whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life.'",
+    "language": "en",
+    "options": [
+      "Wisdom / folly",
+      "Eternal life / passed from death to life, no judgment",
+      "Power / fear",
+      "Wealth / poverty"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Eternal Life Now",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus said: 'I can do nothing on my own... I seek not my own will but the will of ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 5:30 — 'I can do nothing on my own. As I hear, I judge, and my judgment is just, because I seek not my own will but the will of him who sent me.'",
+    "language": "en",
+    "options": [
+      "Of the disciples",
+      "Of the people",
+      "Of the priests",
+      "Of him who sent me (the Father)"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Will of the Father",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "verseStart": 39,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "John 5:39 — Jesus rebuked the religious leaders for searching the Scriptures but missing what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 5:39 — 'You search the Scriptures because you think that in them you have eternal life; and it is they that bear witness about me.'",
+    "language": "en",
+    "options": [
+      "The prophets",
+      "The Holy Spirit",
+      "The Scriptures bear witness about Jesus",
+      "Tradition and the law"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Scriptures Witness Him",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "After the bread miracle, what did the people conclude about Jesus?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 6:14 — 'When the people saw the sign that he had done, they said, This is indeed the Prophet who is to come into the world!'",
+    "language": "en",
+    "options": [
+      "A great teacher",
+      "The Prophet who is to come into the world",
+      "A magician",
+      "A good judge"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "The Prophet to Come",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 51,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus said: 'I am the living bread that came down from heaven. If anyone eats of this bread, he will ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 6:51 — 'I am the living bread that came down from heaven. If anyone eats of this bread, he will live forever. And the bread that I will give for the life of the world is my flesh.'",
+    "language": "en",
+    "options": [
+      "Be wealthy",
+      "Be wise",
+      "Live forever",
+      "Be rulers"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Bread of Life",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 53,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "John 6:53 — Jesus used a hard image about partaking of His life. What was it?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 6:53 — 'Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink his blood, you have no life in you.'",
+    "language": "en",
+    "options": [
+      "Follow Him to the end",
+      "Pray continually",
+      "Eat the flesh and drink the blood of the Son of Man",
+      "Memorize His words"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Eat Flesh and Drink Blood",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 67,
+    "verseEnd": 69,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When many disciples turned away, Jesus asked the Twelve, 'Do you want to go away as well?' How did Peter answer?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 6:68 — 'Lord, to whom shall we go? You have the words of eternal life.'",
+    "language": "en",
+    "options": [
+      "We will follow other prophets",
+      "We need time to think",
+      "We will go home",
+      "Lord, to whom shall we go? You have the words of eternal life"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Words of Eternal Life",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 7,
+    "verseStart": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "John 7:38 — 'Whoever believes in me, ___ will flow from within him.'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 7:38 — 'Whoever believes in me, as the Scripture has said, Out of his heart will flow rivers of living water.'",
+    "language": "en",
+    "options": [
+      "Strength",
+      "Rivers of living water",
+      "Wisdom",
+      "Prophecy"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Rivers of Living Water",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 7,
+    "verseStart": 46,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the officers returned empty-handed, what did they say about Jesus?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 7:46 — 'The officers answered, No one ever spoke like this man!'",
+    "language": "en",
+    "options": [
+      "He is a great teacher",
+      "He deserves death",
+      "He has no authority",
+      "No one ever spoke like this man"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Words Beyond Compare",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the woman caught in adultery was brought, what did Jesus say to the accusers?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 8:7 — 'Let him who is without sin among you be the first to throw a stone at her.'",
+    "language": "en",
+    "options": [
+      "Let her go at once",
+      "Let him who is without sin throw the first stone",
+      "Bring her to the temple",
+      "Carry out the law"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Woman Caught in Adultery",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "verseStart": 32,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "John 8:32 — What will the truth do for you?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 8:32 — 'And you will know the truth, and the truth will set you free.'",
+    "language": "en",
+    "options": [
+      "Make you wealthy",
+      "Give you power",
+      "Give you wisdom",
+      "Set you free"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Truth Sets Free",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "verseStart": 36,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "John 8:36 — If the Son sets you free, what will you be?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 8:36 — 'So if the Son sets you free, you will be free indeed.'",
+    "language": "en",
+    "options": [
+      "Still slaves",
+      "Half free",
+      "Free indeed",
+      "Need more effort"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Free Indeed",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "verseStart": 44,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "John 8:44 — Jesus called the devil the father of whom, and a liar from the beginning?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 8:44 — 'You are of your father the devil... He was a murderer from the beginning, and does not stand in the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies.'",
+    "language": "en",
+    "options": [
+      "Father of the prophets",
+      "Father of pagan kings",
+      "Father of mankind",
+      "Father of evildoers and the father of lies"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Father of Lies",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "verseStart": 58,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "John 8:58 — How did Jesus declare His pre-existence before Abraham?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 8:58 — 'Truly, truly, I say to you, before Abraham was, I am.' This was a claim to be the LORD (I AM).",
+    "language": "en",
+    "options": [
+      "I have seen Abraham",
+      "Abraham gave birth to me",
+      "Before Abraham was, I am (I AM)",
+      "I am the patriarch Abraham"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Before Abraham I Am",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 9,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What testimony did the man born blind give the Pharisees?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 9:25 — 'He answered, Whether he is a sinner I do not know. One thing I do know, that though I was blind, now I see.'",
+    "language": "en",
+    "options": [
+      "This man is surely the Messiah",
+      "I will follow Him to the end",
+      "Though I was blind, now I see",
+      "I do not know who He is"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Was Blind Now See",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus call Himself in John 10:9?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 10:9 — 'I am the door. If anyone enters by me, he will be saved and will go in and out and find pasture.'",
+    "language": "en",
+    "options": [
+      "The shepherd",
+      "The door (for the sheep)",
+      "The ladder",
+      "The rock"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "I Am the Door",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "verseStart": 27,
+    "verseEnd": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "John 10:27-28 — What do His sheep do, and what does He promise them?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 10:27-28 — 'My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand.'",
+    "language": "en",
+    "options": [
+      "The sheep see Him — He gives blessing",
+      "Sheep hear His voice and follow — He gives eternal life; no one will snatch them",
+      "Sheep follow Him — He gives the promised land",
+      "Sheep eat with Him — He gives fame"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Eternal Security",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "verseStart": 30,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "John 10:30 — What does Jesus declare about His relationship with the Father?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 10:30 — 'I and the Father are one.' The Jews immediately picked up stones to stone Him for blasphemy.",
+    "language": "en",
+    "options": [
+      "I am the Father's servant",
+      "I was sent by the Father",
+      "I fully obey the Father",
+      "I and the Father are one"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "I and the Father Are One",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How did Jesus describe Lazarus's death?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "John 11:11 — 'Our friend Lazarus has fallen asleep, but I go to awaken him.'",
+    "language": "en",
+    "options": [
+      "Lazarus has fallen asleep; I go to awaken him",
+      "Lazarus has gone far away",
+      "Lazarus has been glorified",
+      "Lazarus has been lost"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Lazarus Asleep",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "verseStart": 35,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What is the shortest verse in the English Bible — also full of meaning?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "John 11:35 — 'Jesus wept.' The shortest verse, expressing deep love.",
+    "language": "en",
+    "options": [
+      "Jesus wept",
+      "God is love",
+      "Pray without ceasing",
+      "Love one another"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Jesus Wept",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "verseStart": 43,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At Lazarus's tomb, what did Jesus cry out with a loud voice?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 11:43 — 'When he had said these things, he cried out with a loud voice, Lazarus, come out!'",
+    "language": "en",
+    "options": [
+      "Behold the miracle!",
+      "Death, depart!",
+      "Lazarus, come out!",
+      "Open the tomb!"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Lazarus Come Out",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "At Bethany, who anointed Jesus with expensive perfume and wiped with her hair?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 12:3 — 'Mary therefore took a pound of expensive ointment made from pure nard, and anointed the feet of Jesus and wiped his feet with her hair.'",
+    "language": "en",
+    "options": [
+      "Martha",
+      "Mary (Lazarus's sister)",
+      "Mary Magdalene",
+      "The Samaritan woman"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Mary Anoints Jesus",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Jesus entered Jerusalem, what branches did the people take, crying 'Hosanna'?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 12:13 — 'They took branches of palm trees and went out to meet him, crying out, Hosanna! Blessed is he who comes in the name of the Lord!'",
+    "language": "en",
+    "options": [
+      "Olive branches",
+      "Fig branches",
+      "Vine branches",
+      "Palm branches"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Triumphal Entry",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "John 12:24 — What image did Jesus use about a grain of wheat?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 12:24 — 'Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit.'",
+    "language": "en",
+    "options": [
+      "Wheat falls and bears no fruit",
+      "Wheat yields a bumper harvest",
+      "A grain of wheat must die to bear much fruit",
+      "Wheat grows beyond reach"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Grain of Wheat Dies",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At the Last Supper, how did Jesus model service for His disciples?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 13:5 — 'Then he poured water into a basin and began to wash the disciples' feet and to wipe them with the towel that was wrapped around him.'",
+    "language": "en",
+    "options": [
+      "Broke and distributed bread",
+      "Laid hands on their heads",
+      "Washed the disciples' feet",
+      "Anointed their heads with oil"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Washing Feet",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "John refers to which disciple as the one reclining at Jesus' side at the Last Supper?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 13:23 — 'One of his disciples, whom Jesus loved, was reclining at table close to Jesus.' Traditionally identified as the Apostle John.",
+    "language": "en",
+    "options": [
+      "Peter",
+      "James",
+      "Andrew",
+      "The disciple whom Jesus loved (John)"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Beloved Disciple",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "John 14:1 — What is the first comforting word Jesus said to His disciples after Judas left?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "John 14:1 — 'Let not your hearts be troubled. Believe in God; believe also in me.'",
+    "language": "en",
+    "options": [
+      "Let not your hearts be troubled. Believe in God; believe also in Me",
+      "Follow Me to the end",
+      "Leave all and follow Me",
+      "Keep the law of Moses"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Heart Not Troubled",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "John 14:2 — In My Father's house there are what, and Jesus goes to do what?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 14:2 — 'In my Father's house are many rooms. If it were not so, would I have told you that I go to prepare a place for you?'",
+    "language": "en",
+    "options": [
+      "One single place / nothing more needed",
+      "A place only for Jews",
+      "A very limited place",
+      "Many rooms; I go to prepare a place for you"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Father's House Many Rooms",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who is the Helper, and what will He do for believers, per John 14:26?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 14:26 — 'But the Helper, the Holy Spirit, whom the Father will send in my name, he will teach you all things and bring to your remembrance all that I have said to you.'",
+    "language": "en",
+    "options": [
+      "An angel — to replace Jesus",
+      "The Holy Spirit — teach all things and remind of Jesus' words",
+      "A prophet — will come",
+      "A special apostle"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Helper Teaches",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 27,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "John 14:27 — Jesus left the disciples what, not as the world gives?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 14:27 — 'Peace I leave with you; my peace I give to you. Not as the world gives do I give to you.'",
+    "language": "en",
+    "options": [
+      "Wealth",
+      "Material goods",
+      "My peace — not as the world gives",
+      "Power"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Peace of Christ",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 15,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "John 15:13 — What is the greatest love?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 15:13 — 'Greater love has no one than this, that someone lay down his life for his friends.'",
+    "language": "en",
+    "options": [
+      "Lifelong love of parents",
+      "Forgiving enemies",
+      "Sacrificing wealth",
+      "Laying down one's life for one's friends"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Greatest Love",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 15,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "John 15:16 — Who chose whom first, according to Jesus?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 15:16 — 'You did not choose me, but I chose you and appointed you that you should go and bear fruit.'",
+    "language": "en",
+    "options": [
+      "The disciples chose Him",
+      "He chose and appointed the disciples",
+      "Both chose each other",
+      "The Father chose them from eternity"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "He Chose the Disciples",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 16,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "John 16:24 — In whose name did Jesus teach the disciples to ask, that their joy might be full?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 16:24 — 'Until now you have asked nothing in my name. Ask, and you will receive, that your joy may be full.'",
+    "language": "en",
+    "options": [
+      "In Abraham's name",
+      "In the prophets' name",
+      "In the Father's name",
+      "In My (Jesus') name"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Ask in My Name",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 16,
+    "verseStart": 33,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "John 16:33 — In the world you will have tribulation, but ___, for I have overcome the world.",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 16:33 — 'In the world you will have tribulation. But take heart; I have overcome the world.'",
+    "language": "en",
+    "options": [
+      "Weep",
+      "Wait",
+      "Take heart (good cheer)",
+      "Stay away"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "I Have Overcome the World",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 17,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "John 17:3 — How does Jesus define eternal life?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "John 17:3 — 'And this is eternal life, that they know you, the only true God, and Jesus Christ whom you have sent.'",
+    "language": "en",
+    "options": [
+      "Knowing the Father — the only true God — and Jesus Christ",
+      "Living as long as possible",
+      "Doing many good deeds",
+      "Avoiding all sins"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Definition of Eternal Life",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 17,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "John 17:11 — What did Jesus pray the Father would keep the disciples in?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 17:11 — 'Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one.'",
+    "language": "en",
+    "options": [
+      "In wisdom",
+      "In the Father's name — that they may be one as the Father and Son are one",
+      "In power",
+      "In wealth"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Kept in the Name",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "At Gethsemane, whose right ear did Peter cut off?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 18:10 — 'Then Simon Peter, having a sword, drew it and struck the high priest's servant and cut off his right ear. The servant's name was Malchus.'",
+    "language": "en",
+    "options": [
+      "A Roman soldier",
+      "Caiaphas",
+      "Pilate",
+      "Malchus, the high priest's servant"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Peter Cuts Malchus",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "verseStart": 36,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Before Pilate, Jesus said His kingdom is not what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 18:36 — 'My kingdom is not of this world. If my kingdom were of this world, my servants would have been fighting.'",
+    "language": "en",
+    "options": [
+      "Of Israel",
+      "Of Rome",
+      "Of this world",
+      "Of Athens"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Kingdom Not of This World",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "verseStart": 38,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What famous philosophical question did Pilate ask Jesus?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 18:38 — 'Pilate said to him, What is truth?'",
+    "language": "en",
+    "options": [
+      "Who are you?",
+      "What is truth?",
+      "What is sin?",
+      "What is salvation?"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "What Is Truth",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Pilate pointed at Jesus before the crowd and said: '___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 19:5 — 'So Jesus came out, wearing the crown of thorns and the purple robe. Pilate said to them, Behold the man!'",
+    "language": "en",
+    "options": [
+      "Behold the King of Kings",
+      "Behold God",
+      "Behold the Messiah",
+      "Behold the man! (Ecce Homo)"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Ecce Homo",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Pilate placed an inscription on the cross in three languages saying what about Jesus?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "John 19:19-20 — 'Pilate also wrote an inscription and put it on the cross. It read, Jesus of Nazareth, the King of the Jews. ... in Aramaic, in Latin, and in Greek.'",
+    "language": "en",
+    "options": [
+      "JESUS OF NAZARETH, KING OF THE JEWS (INRI)",
+      "JESUS, THE MESSIAH",
+      "JESUS, A SINNER",
+      "JESUS, A PROPHET"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "INRI Inscription",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "verseStart": 26,
+    "verseEnd": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "On the cross, to whom did Jesus entrust His mother's care?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 19:26-27 — 'When Jesus saw his mother and the disciple whom he loved standing nearby... he said to the disciple, Behold, your mother! And from that hour the disciple took her to his own home.' The disciple is John.",
+    "language": "en",
+    "options": [
+      "Peter",
+      "Andrew",
+      "The disciple whom He loved (John)",
+      "James son of Zebedee"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Behold Your Mother",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "verseStart": 34,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "After Jesus died, a soldier pierced His side with a spear; what flowed out?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 19:34 — 'But one of the soldiers pierced his side with a spear, and at once there came out blood and water.'",
+    "language": "en",
+    "options": [
+      "Only blood",
+      "Blood and water",
+      "Fire and smoke",
+      "Fragrance"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Blood and Water",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Which disciple entered the empty tomb and saw and believed?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 20:8 — 'Then the other disciple, who had reached the tomb first, also went in, and he saw and believed.' This is the disciple whom Jesus loved — John.",
+    "language": "en",
+    "options": [
+      "Peter",
+      "Mary Magdalene",
+      "The disciple whom Jesus loved (John)",
+      "Thomas"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Saw and Believed",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "After His resurrection, Jesus said to the disciples: 'As the Father has sent Me, so I ___'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 20:21 — 'Peace be with you. As the Father has sent me, even so I am sending you.'",
+    "language": "en",
+    "options": [
+      "Tell you to stay",
+      "Send you",
+      "Bring you to heaven",
+      "Forgive you"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Sending",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Thomas say when the disciples told him they had seen the risen Lord?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 20:25 — 'Unless I see in his hands the mark of the nails, and place my finger into the mark of the nails, and place my hand into his side, I will never believe.'",
+    "language": "en",
+    "options": [
+      "I believe at once",
+      "I will go look for Him",
+      "Unless I see the nail marks, place my finger in them, and put my hand in His side, I will not believe",
+      "You go and believe yourselves"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Doubting Thomas",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "On the Sea of Tiberias, on which side did Jesus tell the disciples to cast their net to catch fish?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "John 21:6 — 'He said to them, Cast the net on the right side of the boat, and you will find some. So they cast it, and now they were not able to haul it in, because of the quantity of fish.' They counted 153 fish.",
+    "language": "en",
+    "options": [
+      "The left side",
+      "The right side — 153 fish caught",
+      "The bottom of the lake",
+      "Near the shore"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "153 Fish",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "verseStart": 15,
+    "verseEnd": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus ask Peter three times after His resurrection?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 21:15-17 — 'Simon, son of John, do you love me more than these?... Feed my sheep.'",
+    "language": "en",
+    "options": [
+      "Will you follow Me?",
+      "Do you believe I am the Christ?",
+      "Do you love Me? — Feed My sheep",
+      "Have you repented?"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Peter's Restoration",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus prophesy about Peter's manner of death?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 21:18-19 — 'When you are old, you will stretch out your hands, and another will dress you and carry you where you do not want to go... He said this to show by what kind of death he was to glorify God.' Tradition: Peter was crucified upside down.",
+    "language": "en",
+    "options": [
+      "He would die peacefully in old age",
+      "He would drown",
+      "He would live until the Lord returned",
+      "When old, another will dress him and carry him where he does not want to go (martyrdom)"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Peter's Martyrdom",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "verseStart": 48,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In John 4:48, what did Jesus rebuke the official for?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 4:48 — 'Unless you see signs and wonders you will not believe.'",
+    "language": "en",
+    "options": [
+      "Greed",
+      "Pride",
+      "Neglecting the poor",
+      "Refusing to believe without signs and wonders"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Belief by Signs",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 9,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where did Jesus tell the man born blind to wash to receive sight?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "John 9:7 — 'Go, wash in the pool of Siloam (which means Sent). So he went and washed and came back seeing.'",
+    "language": "en",
+    "options": [
+      "The Jordan River",
+      "The pool of Bethesda",
+      "The pool of Siloam (which means Sent)",
+      "Jacob's well"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Pool of Siloam",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When Philip asked to see the Father, how did Jesus answer?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 14:9 — 'Have I been with you so long, and you still do not know me, Philip? Whoever has seen me has seen the Father. How can you say, Show us the Father?'",
+    "language": "en",
+    "options": [
+      "The Father will appear later",
+      "The Father in heaven cannot be seen",
+      "Ask the Holy Spirit",
+      "Whoever has seen Me has seen the Father"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Seen Me Seen Father",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 17,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In the High Priestly Prayer, what did Jesus pray believers might have so the world may believe?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "John 17:21 — 'That they may all be one, just as you, Father, are in me, and I in you, that they also may be in us, so that the world may believe that you have sent me.'",
+    "language": "en",
+    "options": [
+      "Strong faith",
+      "Memorize Scripture",
+      "Zealous mission",
+      "Be one (as the Father and Son are one)"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Unity",
+      "Gospels",
+      "Basic"
+    ]
   }
 ]
