@@ -12,7 +12,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 
 | Slug | book | Group | VI | EN | Target | Status |
 |------|------|-------|----|----|--------|--------|
-| genesis | Genesis | Pentateuch | 75 | 75 | 100+ | ⚠️ |
+| genesis | Genesis | Pentateuch | 100 | 100 | 100+ | ✅ |
 | exodus | Exodus | Pentateuch | 75 | 75 | 60-100 | ✅ |
 | leviticus | Leviticus | Pentateuch | 75 | 75 | 40-60 | ✅ |
 | numbers | Numbers | Pentateuch | 75 | 75 | 40-60 | ✅ |

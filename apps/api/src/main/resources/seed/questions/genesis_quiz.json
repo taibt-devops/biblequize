@@ -1893,5 +1893,659 @@
       "Giô-sép tại Ai Cập",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Vào ngày sáng tạo thứ nhất, Đức Chúa Trời phán điều gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Sáng Thế Ký 1:3 — 'Đức Chúa Trời phán: Phải có sự sáng. Thì có sự sáng.'",
+    "language": "vi",
+    "options": [
+      "Phải có biển và đất",
+      "Phải có cây cỏ",
+      "Phải có sự sáng",
+      "Phải có loài người"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Sáng tạo",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 14,
+    "verseEnd": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Đức Chúa Trời tạo dựng mặt trời, mặt trăng và các vì sao vào ngày thứ mấy?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Sáng Thế Ký 1:14-19 — Các vì sáng trên khoảng không trời được tạo dựng vào ngày thứ tư.",
+    "language": "vi",
+    "options": [
+      "Ngày thứ nhất",
+      "Ngày thứ hai",
+      "Ngày thứ ba",
+      "Ngày thứ tư"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Sáng tạo",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 28,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Đức Chúa Trời ban phước cho loài người và truyền cho họ điều gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Sáng Thế Ký 1:28 — 'Hãy sinh sản, thêm nhiều, làm cho đầy dẫy đất; hãy làm cho đất phục tùng.'",
+    "language": "vi",
+    "options": [
+      "Dâng tế lễ và xây bàn thờ",
+      "Sinh sản, thêm nhiều, làm cho đầy dẫy đất",
+      "Lập đền thờ ngay",
+      "Dạy dỗ thiên sứ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Quản trị đất",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Đức Giê-hô-va Đức Chúa Trời lập một khu vườn ở đâu?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Sáng Thế Ký 2:8 — 'Giê-hô-va Đức Chúa Trời lập một cảnh vườn tại Ê-đen, ở về hướng đông.'",
+    "language": "vi",
+    "options": [
+      "Phía nam",
+      "Phía bắc",
+      "Phía đông tại Ê-đen",
+      "Phía tây"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Vườn Ê-đen",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Đức Chúa Trời cấm A-đam ăn trái nào?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Sáng Thế Ký 2:17 — 'Nhưng về cây biết điều thiện và điều ác thì chớ hề ăn đến; vì một mai ngươi ăn, chắc sẽ chết.'",
+    "language": "vi",
+    "options": [
+      "Cây sự sống",
+      "Cây vả",
+      "Cây nho",
+      "Cây biết điều thiện và điều ác"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Cây cấm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sáng Thế Ký 2:24 dạy về hôn nhân — người nam phải làm gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Sáng Thế Ký 2:24 — 'Bởi vậy cho nên người nam sẽ lìa cha mẹ mà dính díu cùng vợ mình, và cả hai sẽ trở nên một thịt.'",
+    "language": "vi",
+    "options": [
+      "Ở với cha mẹ suốt đời",
+      "Lìa cha mẹ và dính díu cùng vợ, trở nên một thịt",
+      "Lập gia đình riêng nhưng giữ lề thói cũ",
+      "Cưới nhiều vợ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Hôn nhân",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Sau khi đuổi A-đam khỏi vườn, Đức Chúa Trời đặt gì để giữ cây sự sống?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Sáng Thế Ký 3:24 — 'Ngài đặt tại phía đông vườn Ê-đen các thần chê-ru-bim với gươm lưỡi chói lòa, để giữ con đường đi đến cây sự sống.'",
+    "language": "vi",
+    "options": [
+      "Một bức tường lửa",
+      "Hai con sư tử lớn",
+      "Các chê-ru-bim với gươm lưỡi chói lòa",
+      "Một thiên sứ canh giữ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Chê-ru-bim",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "A-đam sống được bao nhiêu tuổi?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Sáng Thế Ký 5:5 — 'Trọn đời A-đam sống là chín trăm ba mươi tuổi, rồi qua đời.'",
+    "language": "vi",
+    "options": [
+      "1.000 tuổi",
+      "800 tuổi",
+      "930 tuổi",
+      "120 tuổi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Tuổi A-đam",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 9,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Sau cơn hồng thủy, Đức Chúa Trời lập luật về việc đổ huyết người: kẻ làm đổ huyết loài người sẽ bị gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Sáng Thế Ký 9:6 — 'Hễ kẻ nào làm đổ máu người, thì sẽ bị người khác làm đổ máu lại; vì Đức Chúa Trời làm nên loài người như hình ảnh Ngài.'",
+    "language": "vi",
+    "options": [
+      "Bị bỏ tù",
+      "Bị làm đổ máu lại (xử tử)",
+      "Bị phạt tiền",
+      "Bị đuổi khỏi xứ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Luật về huyết",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 12,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Đức Giê-hô-va hứa với Áp-ram trong Sáng Thế Ký 12:3 rằng các họ hàng trên đất sẽ thế nào nhờ ông?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Sáng Thế Ký 12:3 — 'Các chi tộc nơi thế gian sẽ nhờ ngươi mà được phước.'",
+    "language": "vi",
+    "options": [
+      "Sẽ phục dịch ông",
+      "Sẽ tản lạc xa ông",
+      "Sẽ chiến đấu với ông",
+      "Sẽ được phước nhờ ông"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Phước cho muôn dân",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 14,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Khi Lót bị bắt, Áp-ram dẫn bao nhiêu người nhà tinh nhuệ đi giải cứu?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Sáng Thế Ký 14:14 — 'Khi Áp-ram hay được cháu mình bị quân giặc bắt, bèn chiêu tập 318 gia nhân được tập luyện sinh đẻ trong nhà mình, rồi đuổi theo các vua đó đến Đan.'",
+    "language": "vi",
+    "options": [
+      "318 người",
+      "1.000 người",
+      "70 người",
+      "144 người"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Áp-ram giải cứu Lót",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 17,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Khi Đức Chúa Trời hứa Sa-ra sẽ sinh con, Áp-ra-ham đã làm gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Sáng Thế Ký 17:17 — 'Áp-ra-ham bèn sấp mình xuống đất cười và nói trong lòng rằng: Hồ dễ người đã trăm tuổi rồi mà sinh con được sao?'",
+    "language": "vi",
+    "options": [
+      "Khóc lóc",
+      "Đi cầu xin Chúa",
+      "Sấp mặt xuống đất và cười trong lòng",
+      "Tổ chức tiệc ngay"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Áp-ra-ham cười",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 19,
+    "verseStart": 26,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Khi chạy khỏi Sô-đôm, vợ Lót đã làm gì khiến nàng bị biến hóa?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Sáng Thế Ký 19:26 — 'Vợ Lót quay ngó lại đằng sau và bị hóa thành một cây trụ muối.'",
+    "language": "vi",
+    "options": [
+      "Trở vào thành lấy của",
+      "Quay ngó lại sau và hóa thành trụ muối",
+      "Đứng yên giữa đường",
+      "Cười nhạo các thiên sứ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Vợ Lót",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 22,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Áp-ra-ham đặt tên nơi mình suýt dâng Y-sác là gì, có nghĩa 'Đức Giê-hô-va sẽ sắm sẵn'?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Sáng Thế Ký 22:14 — 'Áp-ra-ham gọi chỗ đó là Giê-hô-va Di-rê — nghĩa là: Đức Giê-hô-va sẽ sắm sẵn.'",
+    "language": "vi",
+    "options": [
+      "Bê-tên",
+      "Mô-ri-a",
+      "Giê-hô-va Di-rê (Jehovah-Jireh)",
+      "Bê-thê-sđa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Giê-hô-va Di-rê",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Đức Giê-hô-va phán cùng Rê-bê-ca rằng đứa lớn sẽ làm gì với đứa nhỏ?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Sáng Thế Ký 25:23 — 'Hai dân tộc đang ở trong bụng ngươi... đứa lớn phải phục đứa nhỏ.'",
+    "language": "vi",
+    "options": [
+      "Đứa lớn sẽ cai trị đứa nhỏ",
+      "Cả hai cùng làm vua",
+      "Đứa nhỏ sẽ chết yểu",
+      "Đứa lớn sẽ phục đứa nhỏ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Lời tiên tri Rê-bê-ca",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sau khi nằm mơ thấy chiếc thang, Gia-cốp đặt tên nơi đó là Bê-tên có nghĩa là gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Sáng Thế Ký 28:19 — 'Người gọi chỗ đó là Bê-tên,' tức là 'Nhà của Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Nhà của Đức Chúa Trời",
+      "Cổng trời",
+      "Đá tưởng niệm",
+      "Nơi sấm sét"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Bê-tên",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 29,
+    "verseStart": 25,
+    "verseEnd": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "La-ban đã lừa Gia-cốp như thế nào trong đêm tân hôn?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Sáng Thế Ký 29:25 — 'Đến sáng, Gia-cốp thấy đó là Lê-a, bèn nói cùng La-ban: Cậu đã làm gì cho tôi vậy?' Sau đó Gia-cốp phải làm thêm 7 năm để cưới Ra-chên.",
+    "language": "vi",
+    "options": [
+      "Cho ngựa thay vì người",
+      "Đem Lê-a thay cho Ra-chên",
+      "Đem một người hầu",
+      "Bắt Gia-cốp làm việc thêm 14 năm trước"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "La-ban lừa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 32,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Gia-cốp gọi nơi vật lộn với Đức Chúa Trời là Phê-ni-ên có nghĩa là gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Sáng Thế Ký 32:30 — 'Gia-cốp đặt tên chỗ đó là Phê-ni-ên — nghĩa là: Tôi đã thấy Đức Chúa Trời mặt đối mặt mà linh hồn tôi được giải cứu.'",
+    "language": "vi",
+    "options": [
+      "Đá đứng vững",
+      "Trận đấu lớn",
+      "Mặt của Đức Chúa Trời (đã thấy Ngài mặt đối mặt)",
+      "Sông mạnh"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Phê-ni-ên",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 35,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Khi sắp chết khi sinh con, Ra-chên đặt tên cho con trai cuối là Bên-Ô-ni; nhưng cha của đứa trẻ đặt tên gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Sáng Thế Ký 35:18 — 'Trong cơn hấp hối, nàng đặt tên đứa con trai là Bên-Ô-ni; còn cha nó lại đặt tên là Bên-gia-min.'",
+    "language": "vi",
+    "options": [
+      "Giô-sép",
+      "Bên-gia-min",
+      "Đan",
+      "Lê-vi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Sinh Bên-gia-min",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 38,
+    "verseStart": 8,
+    "verseEnd": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Ô-nan, con trai Giu-đa, làm gì đến nỗi Đức Giê-hô-va giết ông?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Sáng Thế Ký 38:9-10 — 'Ô-nan biết rằng dòng dõi nầy sẽ chẳng phải về mình, nên đương khi đến cùng vợ anh, bèn làm rơi rớt xuống đất, để không sinh dòng dõi cho anh. Điều người làm đó không đẹp lòng Đức Giê-hô-va, nên Ngài cũng giết người luôn.'",
+    "language": "vi",
+    "options": [
+      "Ăn cướp tài sản gia đình",
+      "Thờ thần tượng dân ngoại",
+      "Khước từ sinh dòng dõi cho anh đã chết theo luật anh-em-chồng",
+      "Giết em mình"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Tội Ô-nan",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 41,
+    "verseStart": 42,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Sau khi giải mộng, Pha-ra-ôn ban cho Giô-sép vật gì làm dấu chứng quyền cao trọng?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Sáng Thế Ký 41:42 — 'Pha-ra-ôn cởi chiếc nhẫn ra khỏi tay mình, đeo vào tay Giô-sép, mặc cho người áo lụa mịn, và đeo vòng vàng vào cổ.'",
+    "language": "vi",
+    "options": [
+      "Một thanh gươm vàng",
+      "Một mũ triều thiên",
+      "Một quyển sách luật",
+      "Chiếc nhẫn của vua, áo lụa, vòng vàng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Giô-sép tể tướng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 44,
+    "verseStart": 33,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Khi chiếc cốc bạc bị tìm thấy nơi Bên-gia-min, ai đề nghị ở lại làm tôi mọi thay cho em?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Sáng Thế Ký 44:33 — 'Vậy bây giờ, xin cho kẻ tôi tớ chúa ở tôi mọi thay cho đứa trẻ, đặng nó theo các anh trở lên.' Giu-đa đại diện đề nghị.",
+    "language": "vi",
+    "options": [
+      "Giu-đa",
+      "Ru-bên",
+      "Si-mê-ôn",
+      "Lê-vi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Giu-đa thay Bên-gia-min",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 47,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Khi Pha-ra-ôn hỏi tuổi Gia-cốp, ông trả lời mình bao nhiêu tuổi?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Sáng Thế Ký 47:9 — 'Gia-cốp tâu rằng: Những năm tôi sống ở đời nầy là một trăm ba mươi năm.'",
+    "language": "vi",
+    "options": [
+      "100 tuổi",
+      "130 tuổi",
+      "147 tuổi",
+      "175 tuổi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Tuổi Gia-cốp",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 49,
+    "verseStart": 24,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Trong lời chúc cho Giô-sép (Sáng Thế Ký 49:24), Gia-cốp nhắc đến Đức Chúa Trời với danh xưng nào?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Sáng Thế Ký 49:24 — 'Cánh tay nó đã được mạnh, bởi tay Đấng Toàn Năng của Gia-cốp. Cũng do nơi Đấng Chăn Chiên, là Đá của Y-sơ-ra-ên.'",
+    "language": "vi",
+    "options": [
+      "Đấng Tạo Hóa",
+      "Vua các vua",
+      "Cha trên trời",
+      "Đấng Toàn Năng của Gia-cốp / Đá của Y-sơ-ra-ên"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Danh xưng của Chúa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "verseStart": 25,
+    "verseEnd": 26,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trước khi qua đời, Giô-sép yêu cầu các anh em hứa điều gì về xương cốt mình?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Sáng Thế Ký 50:25 — 'Giô-sép biểu các con trai Y-sơ-ra-ên thề mà rằng: Quả thật, Đức Chúa Trời sẽ thăm viếng các anh em; xin các anh em hãy đem hài cốt tôi từ đây lên.'",
+    "language": "vi",
+    "options": [
+      "Chôn ngay tại Ai Cập",
+      "Xây kim tự tháp",
+      "Đem hài cốt mình lên xứ hứa khi Chúa giải cứu",
+      "Thiêu xác"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Hài cốt Giô-sép",
+      "Cơ bản"
+    ]
   }
 ]

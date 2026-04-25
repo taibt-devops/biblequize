@@ -1893,5 +1893,659 @@
       "Joseph in Egypt",
       "Basic"
     ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On the first day of creation, what did God say?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 1:3 — 'And God said, Let there be light, and there was light.'",
+    "language": "en",
+    "options": [
+      "Let there be sea and land",
+      "Let there be plants",
+      "Let there be light",
+      "Let there be mankind"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Creation",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 14,
+    "verseEnd": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "On which day did God create the sun, moon, and stars?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 1:14-19 — The lights in the expanse of the heavens were created on the fourth day.",
+    "language": "en",
+    "options": [
+      "Day one",
+      "Day two",
+      "Day three",
+      "Day four"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Creation",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 28,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did God bless mankind to do?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 1:28 — 'Be fruitful and multiply and fill the earth and subdue it.'",
+    "language": "en",
+    "options": [
+      "Offer sacrifices and build altars",
+      "Be fruitful and multiply and fill the earth",
+      "Build a temple immediately",
+      "Teach the angels"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Stewardship",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where did the LORD God plant a garden?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 2:8 — 'And the LORD God planted a garden in Eden, in the east.'",
+    "language": "en",
+    "options": [
+      "In the south",
+      "In the north",
+      "In Eden, in the east",
+      "In the west"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Garden of Eden",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What fruit did God forbid Adam to eat?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 2:17 — 'But of the tree of the knowledge of good and evil you shall not eat, for in the day that you eat of it you shall surely die.'",
+    "language": "en",
+    "options": [
+      "The tree of life",
+      "A fig",
+      "A grape",
+      "The tree of the knowledge of good and evil"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Forbidden Tree",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Genesis 2:24 teach about marriage?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 2:24 — 'Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh.'",
+    "language": "en",
+    "options": [
+      "Stay with parents always",
+      "Leave father and mother, hold fast to wife, become one flesh",
+      "Form a family but keep old patterns",
+      "Marry many wives"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Marriage",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "After driving Adam from the garden, what did God place to guard the way to the tree of life?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 3:24 — 'He placed at the east of the garden of Eden the cherubim and a flaming sword that turned every way to guard the way to the tree of life.'",
+    "language": "en",
+    "options": [
+      "A wall of fire",
+      "Two great lions",
+      "Cherubim with a flaming sword",
+      "An angelic guard"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Cherubim",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How many years did Adam live?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 5:5 — 'Thus all the days that Adam lived were 930 years, and he died.'",
+    "language": "en",
+    "options": [
+      "1,000 years",
+      "800 years",
+      "930 years",
+      "120 years"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Adam's Age",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 9,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "After the flood, God established a law: whoever sheds the blood of man, what is the punishment?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 9:6 — 'Whoever sheds the blood of man, by man shall his blood be shed, for God made man in his own image.'",
+    "language": "en",
+    "options": [
+      "Imprisonment",
+      "His blood shall also be shed (death penalty)",
+      "A fine",
+      "Banishment"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Law of Blood",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 12,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does the LORD promise to Abram in Genesis 12:3 about all the families of the earth?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 12:3 — 'And in you all the families of the earth shall be blessed.'",
+    "language": "en",
+    "options": [
+      "They will serve him",
+      "They will be scattered far from him",
+      "They will fight him",
+      "They will be blessed in him"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Blessing for All Nations",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 14,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "When Lot was captured, how many trained men of his household did Abram lead to rescue him?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 14:14 — 'When Abram heard that his kinsman had been taken captive, he led forth his trained men, born in his house, 318 of them, and went in pursuit as far as Dan.'",
+    "language": "en",
+    "options": [
+      "318 men",
+      "1,000 men",
+      "70 men",
+      "144 men"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abram Rescues Lot",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 17,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When God promised Sarah would bear a son, what did Abraham do?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 17:17 — 'Then Abraham fell on his face and laughed and said to himself, Shall a child be born to a man who is a hundred years old?'",
+    "language": "en",
+    "options": [
+      "Wept",
+      "Went to plead with God",
+      "Fell on his face and laughed inwardly",
+      "Held a feast at once"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abraham Laughs",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 19,
+    "verseStart": 26,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "While fleeing Sodom, what did Lot's wife do that caused her transformation?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 19:26 — 'But Lot's wife, behind him, looked back, and she became a pillar of salt.'",
+    "language": "en",
+    "options": [
+      "Returned to the city for her belongings",
+      "Looked back and became a pillar of salt",
+      "Stood still on the road",
+      "Mocked the angels"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Lot's Wife",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 22,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Abraham name the place where he nearly offered Isaac, meaning 'The LORD will provide'?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 22:14 — 'So Abraham called the name of that place, The LORD will provide [Jehovah-Jireh].'",
+    "language": "en",
+    "options": [
+      "Bethel",
+      "Moriah",
+      "The LORD Will Provide (Jehovah-Jireh)",
+      "Bethesda"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jehovah-Jireh",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the LORD tell Rebekah about the older and younger of her twins?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 25:23 — 'Two nations are in your womb... the older shall serve the younger.'",
+    "language": "en",
+    "options": [
+      "The older shall rule the younger",
+      "Both shall be kings",
+      "The younger shall die early",
+      "The older shall serve the younger"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Rebekah's Prophecy",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "After his ladder dream, Jacob named the place Bethel, which means what?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 28:19 — 'He called the name of that place Bethel,' meaning 'House of God.'",
+    "language": "en",
+    "options": [
+      "House of God",
+      "Gate of heaven",
+      "Memorial stone",
+      "Place of thunder"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Bethel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 29,
+    "verseStart": 25,
+    "verseEnd": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How did Laban deceive Jacob on his wedding night?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 29:25 — 'In the morning, behold, it was Leah! And Jacob said to Laban, What is this you have done to me?' Jacob then served seven more years to marry Rachel.",
+    "language": "en",
+    "options": [
+      "Sent a horse instead of a person",
+      "Gave Leah in place of Rachel",
+      "Sent a servant girl",
+      "Made Jacob serve 14 years first"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Laban's Deception",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 32,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does the place where Jacob wrestled God — called Peniel — mean?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 32:30 — 'So Jacob called the name of the place Peniel, saying, For I have seen God face to face, and yet my life has been delivered.'",
+    "language": "en",
+    "options": [
+      "Steadfast stone",
+      "Great battle",
+      "Face of God (I have seen God face to face)",
+      "Mighty river"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Peniel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 35,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "As Rachel died in childbirth, she named her last son Ben-oni; but what name did his father give him?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 35:18 — 'And as her soul was departing (for she was dying), she called his name Ben-oni; but his father called him Benjamin.'",
+    "language": "en",
+    "options": [
+      "Joseph",
+      "Benjamin",
+      "Dan",
+      "Levi"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Birth of Benjamin",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 38,
+    "verseStart": 8,
+    "verseEnd": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What did Onan, son of Judah, do that the LORD put him to death for?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 38:9-10 — 'But Onan knew that the offspring would not be his. So whenever he went in to his brother's wife he would waste the semen on the ground, so as not to give offspring to his brother. And what he did was wicked in the sight of the LORD, and he put him to death also.'",
+    "language": "en",
+    "options": [
+      "Stole the family's wealth",
+      "Worshiped pagan gods",
+      "Refused to raise up offspring for his dead brother (levirate duty)",
+      "Killed his brother"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Onan's Sin",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 41,
+    "verseStart": 42,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "After interpreting the dream, what did Pharaoh give Joseph as a sign of high authority?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 41:42 — 'Then Pharaoh took his signet ring from his hand and put it on Joseph's hand and clothed him in garments of fine linen and put a gold chain about his neck.'",
+    "language": "en",
+    "options": [
+      "A golden sword",
+      "A royal crown",
+      "A book of law",
+      "His signet ring, fine linen, and a gold chain"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph as Vizier",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 44,
+    "verseStart": 33,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the silver cup was found in Benjamin's sack, who offered to remain as a slave in his place?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 44:33 — 'Now therefore, please let your servant remain instead of the boy as a servant to my lord, and let the boy go back with his brothers.' Judah made the offer.",
+    "language": "en",
+    "options": [
+      "Judah",
+      "Reuben",
+      "Simeon",
+      "Levi"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Judah's Offer for Benjamin",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 47,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Pharaoh asked Jacob his age, what did he answer?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 47:9 — 'And Jacob said to Pharaoh, The days of the years of my sojourning are 130 years.'",
+    "language": "en",
+    "options": [
+      "100 years",
+      "130 years",
+      "147 years",
+      "175 years"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob's Age",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 49,
+    "verseStart": 24,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "In the blessing for Joseph (Gen 49:24), what name does Jacob use for God?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 49:24 — 'But his bow remained unmoved; his arms were made agile by the hands of the Mighty One of Jacob (from there is the Shepherd, the Stone of Israel).'",
+    "language": "en",
+    "options": [
+      "Creator",
+      "King of kings",
+      "Heavenly Father",
+      "Mighty One of Jacob / Stone of Israel"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Names of God",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "verseStart": 25,
+    "verseEnd": 26,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Before he died, what did Joseph make his brothers swear about his bones?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 50:25 — 'Then Joseph made the sons of Israel swear, saying, God will surely visit you, and you shall carry up my bones from here.'",
+    "language": "en",
+    "options": [
+      "Bury him in Egypt at once",
+      "Build a pyramid",
+      "Carry his bones to the promised land when God visits them",
+      "Cremate him"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph's Bones",
+      "Basic"
+    ]
   }
 ]
