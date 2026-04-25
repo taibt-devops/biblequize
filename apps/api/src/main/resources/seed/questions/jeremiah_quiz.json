@@ -318,5 +318,214 @@
       "Đại Tiên Tri",
       "Nâng cao"
     ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 6,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Giê-rê-mi 6:14 lên án các tiên tri giả vì họ nói gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Giê-rê-mi 6:14 — 'Họ rịt vết thương cho con gái dân Ta cách sơ sài, mà rằng: Bình an! bình an! Mà không bình an chi hết.'",
+    "language": "vi",
+    "options": [
+      "Hãy ăn năn ngay",
+      "Sẽ có chiến tranh lớn",
+      "Bình an, bình an mà không có bình an",
+      "Đền thờ sẽ bị phá hủy"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri giả",
+      "Tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 7,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Giê-rê-mi 7:11 cảnh báo dân làm cho nhà Đức Giê-hô-va trở nên cái gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Giê-rê-mi 7:11 — 'Vậy thì các ngươi xem nhà nầy, là nhà được xưng bằng danh Ta, như hang trộm cướp sao?' Chúa Giê-xu trích dẫn câu này (Mt 21:13).",
+    "language": "vi",
+    "options": [
+      "Nơi yên nghỉ",
+      "Tòa án công bình",
+      "Nơi đầy thiên sứ",
+      "Hang trộm cướp"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Đền thờ",
+      "Tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 9,
+    "verseStart": 23,
+    "verseEnd": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Giê-rê-mi 9:23-24, người ta nên khoe mình về điều gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Giê-rê-mi 9:24 — 'Người khoe phải khoe về trí khôn mình biết Ta là Đức Giê-hô-va, là Đấng làm ra sự thương xót, chánh trực, và công bình trên đất.'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan",
+      "Sức mạnh",
+      "Sự nhận biết Đức Giê-hô-va",
+      "Sự giàu có"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Khoe mình",
+      "Tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 15,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Giê-rê-mi 15:16 nói tiên tri đã làm gì với lời Đức Giê-hô-va?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Giê-rê-mi 15:16 — 'Tôi đã được lời Ngài, và đã ăn lấy. Lời Ngài là sự vui mừng và khoái lạc của lòng tôi.'",
+    "language": "vi",
+    "options": [
+      "Đã ăn lấy lời Ngài, là sự vui mừng và khoái lạc của lòng",
+      "Đã đốt lời Ngài",
+      "Đã giấu lời Ngài",
+      "Đã mang lời Ngài cho vua"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Lời của Chúa",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 20,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Giê-rê-mi 20:9 mô tả lời Đức Chúa Trời trong lòng tiên tri như thế nào?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Giê-rê-mi 20:9 — 'Lòng tôi như lửa đốt cháy, bọc kín trong xương tôi, và tôi mệt mỏi vì nín lặng, không chịu được nữa.'",
+    "language": "vi",
+    "options": [
+      "Như nước chảy",
+      "Như tiếng thì thầm",
+      "Như cơn gió mạnh",
+      "Như lửa đốt cháy bọc kín trong xương"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Lửa trong xương",
+      "Tiên tri",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 23,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Giê-rê-mi 23:5 hứa ai sẽ trỗi dậy từ dòng dõi Đa-vít?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Giê-rê-mi 23:5 — 'Ta sẽ gây cho Đa-vít một Nhánh công bình. Ngài sẽ cai trị làm vua, lấy cách khôn ngoan mà ăn ở.'",
+    "language": "vi",
+    "options": [
+      "Một Nhánh công bình (Mê-si-a)",
+      "Một thầy tế lễ",
+      "Một quan xét",
+      "Một nhà tiên tri"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Mê-si-a",
+      "Tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 33,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Giê-rê-mi 33:3 mời gọi điều gì với lời hứa của Đức Giê-hô-va?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Giê-rê-mi 33:3 — 'Hãy kêu cầu Ta, Ta sẽ trả lời cho ngươi, sẽ tỏ cho ngươi những việc lớn và khó, là những việc ngươi chưa từng biết.'",
+    "language": "vi",
+    "options": [
+      "Ăn năn",
+      "Dâng tế lễ",
+      "Kêu cầu Ta, Ta sẽ trả lời và tỏ những việc lớn",
+      "Đền thờ phục hồi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Cầu nguyện",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 36,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Vua Giê-hô-gia-kim đã làm gì với cuốn sách của Giê-rê-mi?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Giê-rê-mi 36:23 — 'Khi Giê-hu-đi đọc xong ba bốn cột rồi, vua dùng dao nhỏ của thầy thư ký mà cắt cuốn ấy ra, ném vào lửa trong lò.'",
+    "language": "vi",
+    "options": [
+      "Niêm phong",
+      "Truyền đọc trước dân",
+      "Đem cất giữ",
+      "Cắt và ném vào lửa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Vua đốt sách",
+      "Tiên tri",
+      "Cơ bản"
+    ]
   }
 ]

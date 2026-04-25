@@ -318,5 +318,214 @@
       "Major Prophet",
       "Advanced"
     ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 6,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Jeremiah 6:14 condemn the false prophets for saying?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Jeremiah 6:14 — 'They have healed the wound of my people lightly, saying, Peace, peace, when there is no peace.'",
+    "language": "en",
+    "options": [
+      "Repent at once",
+      "There will be a great war",
+      "Peace, peace, when there is no peace",
+      "The temple will be destroyed"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "False Prophets",
+      "Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 7,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Jeremiah 7:11 say the people have made the LORD's house become?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Jeremiah 7:11 — 'Has this house, which is called by my name, become a den of robbers in your eyes?' Jesus quotes this in Matthew 21:13.",
+    "language": "en",
+    "options": [
+      "A place of rest",
+      "A righteous court",
+      "A place full of angels",
+      "A den of robbers"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "The Temple",
+      "Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 9,
+    "verseStart": 23,
+    "verseEnd": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Jeremiah 9:23-24, what alone should a person boast in?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Jeremiah 9:24 — 'But let him who boasts boast in this, that he understands and knows me, that I am the LORD who practices steadfast love, justice, and righteousness in the earth.'",
+    "language": "en",
+    "options": [
+      "Wisdom",
+      "Strength",
+      "Knowing the LORD",
+      "Riches"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Boasting",
+      "Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 15,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Jeremiah 15:16 say the prophet did with the LORD's words?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Jeremiah 15:16 — 'Your words were found, and I ate them, and your words became to me a joy and the delight of my heart.'",
+    "language": "en",
+    "options": [
+      "Ate them; they became a joy and delight of his heart",
+      "Burned them",
+      "Hid them",
+      "Took them to the king"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Word of God",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 20,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How does Jeremiah 20:9 describe the LORD's word in the prophet's heart?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Jeremiah 20:9 — 'There is in my heart as it were a burning fire shut up in my bones, and I am weary with holding it in, and I cannot.'",
+    "language": "en",
+    "options": [
+      "Like flowing water",
+      "Like a whisper",
+      "Like a strong wind",
+      "Like a burning fire shut up in his bones"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Fire in Bones",
+      "Prophets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 23,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whom does Jeremiah 23:5 promise will arise from David's line?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Jeremiah 23:5 — 'I will raise up for David a righteous Branch, and he shall reign as king and deal wisely.'",
+    "language": "en",
+    "options": [
+      "A righteous Branch (the Messiah)",
+      "A priest",
+      "A judge",
+      "A prophet"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Messiah",
+      "Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 33,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Jeremiah 33:3 invite, with the LORD's promise?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Jeremiah 33:3 — 'Call to me and I will answer you, and will tell you great and hidden things that you have not known.'",
+    "language": "en",
+    "options": [
+      "Repentance",
+      "Sacrifice",
+      "Call to me, and I will answer and tell great things",
+      "Temple restoration"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Prayer",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 36,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did King Jehoiakim do with Jeremiah's scroll?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Jeremiah 36:23 — 'As Jehudi read three or four columns, the king would cut them off with a knife and throw them into the fire in the fire pot, until the entire scroll was consumed in the fire.'",
+    "language": "en",
+    "options": [
+      "Sealed it",
+      "Read it before the people",
+      "Stored it",
+      "Cut it and threw it into the fire"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "King Burns Scroll",
+      "Prophets",
+      "Basic"
+    ]
   }
 ]

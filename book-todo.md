@@ -35,7 +35,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | ecclesiastes | Ecclesiastes | Wisdom | 20 | 20 | 30-40 | ⚠️ |
 | songofsolomon | Song of Solomon | Wisdom | 0 | 0 | 20-30 | ❌ |
 | isaiah | Isaiah | Prophets | 14 | 14 | 60-80 | ⚠️ |
-| jeremiah | Jeremiah | Prophets | 12 | 12 | 60-80 | ⚠️ |
+| jeremiah | Jeremiah | Prophets | 20 | 20 | 60-80 | ⚠️ |
 | lamentations | Lamentations | Prophets | 20 | 20 | 20-30 | ✅ |
 | ezekiel | Ezekiel | Prophets | 12 | 12 | 40-60 | ⚠️ |
 | daniel | Daniel | Prophets | 13 | 13 | 40-60 | ⚠️ |
