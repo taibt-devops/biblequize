@@ -379,5 +379,162 @@
       "Major Prophets",
       "Advanced"
     ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 14,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whom does Isaiah 14:12 describe as fallen from heaven like the morning star?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Isaiah 14:12 — 'How you are fallen from heaven, O Day Star, son of Dawn! How you are cut down to the ground, you who laid the nations low!' Traditionally understood as Lucifer/Satan.",
+    "language": "en",
+    "options": [
+      "A good angel",
+      "King David",
+      "The Day Star (Lucifer) — applied to Satan",
+      "King Solomon"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Day Star Fallen",
+      "Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 26,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whom does Isaiah 26:3 say God keeps in perfect peace?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Isaiah 26:3 — 'You keep him in perfect peace whose mind is stayed on you, because he trusts in you.'",
+    "language": "en",
+    "options": [
+      "The one whose mind is stayed on Him",
+      "The wealthy",
+      "Those bringing many sacrifices",
+      "The most righteous"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Perfect Peace",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 41,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Isaiah 41:10 promise to God's people?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Isaiah 41:10 — 'Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you.'",
+    "language": "en",
+    "options": [
+      "Will grant wealth",
+      "Fear not — I am with you and will strengthen you",
+      "Will give many descendants",
+      "Will destroy all enemies"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Fear Not",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 43,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does the LORD do with His people's sins, according to Isaiah 43:25?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Isaiah 43:25 — 'I, I am he who blots out your transgressions for my own sake, and I will not remember your sins.'",
+    "language": "en",
+    "options": [
+      "Remember them forever",
+      "Punish severely",
+      "Blot them out and remember them no more",
+      "Pass them on to the descendants"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Forgiveness of Sins",
+      "Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 61,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Whom does Isaiah 61:1-2 describe as anointed to bring good news to the poor?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Isaiah 61:1-2 — 'The Spirit of the Lord GOD is upon me, because the LORD has anointed me to bring good news to the poor.' Jesus applied this to Himself (Luke 4:18-19).",
+    "language": "en",
+    "options": [
+      "The prophet Elijah",
+      "King David",
+      "Samuel",
+      "The Messiah (Jesus quoted it of Himself)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Anointed Messiah",
+      "Prophets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 65,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Isaiah 65:17 promise God will create?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Isaiah 65:17 — 'For behold, I create new heavens and a new earth, and the former things shall not be remembered or come into mind.'",
+    "language": "en",
+    "options": [
+      "A new temple",
+      "A new king",
+      "A new army",
+      "New heavens and a new earth"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "New Heavens and Earth",
+      "Prophets",
+      "Basic"
+    ]
   }
 ]

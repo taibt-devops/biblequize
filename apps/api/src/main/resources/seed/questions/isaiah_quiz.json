@@ -379,5 +379,162 @@
       "Đại Tiên Tri",
       "Nâng cao"
     ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 14,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ê-sai 14:12 mô tả ai đã sa từ trời như sao mai?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ê-sai 14:12 — 'Hỡi sao mai, con trai của sáng sớm kia, sao ngươi từ trời sa xuống! Hỡi kẻ giày đạp các nước kia, ngươi bị chặt xuống đất là thể nào!' Truyền thống hiểu là Lu-ci-phe.",
+    "language": "vi",
+    "options": [
+      "Một thiên sứ tốt",
+      "Vua Đa-vít",
+      "Sao mai (Lu-ci-phe) — bị giải thích chỉ về Sa-tan",
+      "Vua Sa-lô-môn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-sai",
+      "Sao mai sa xuống",
+      "Tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 26,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ê-sai 26:3 nói Đức Chúa Trời gìn giữ ai trong sự bình an trọn vẹn?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ê-sai 26:3 — 'Người nào để trí mình nương dựa nơi Ngài, thì Ngài sẽ gìn giữ người trong sự bình an trọn vẹn, vì người nhờ cậy Ngài.'",
+    "language": "vi",
+    "options": [
+      "Người để trí mình nương dựa nơi Ngài",
+      "Người giàu có",
+      "Người dâng nhiều của lễ",
+      "Người công chính nhất"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-sai",
+      "Bình an trọn vẹn",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 41,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ê-sai 41:10 hứa điều gì với dân Đức Chúa Trời?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ê-sai 41:10 — 'Đừng sợ, vì Ta ở với ngươi; chớ kinh khiếp, vì Ta là Đức Chúa Trời ngươi! Ta sẽ bổ sức cho ngươi.'",
+    "language": "vi",
+    "options": [
+      "Sẽ ban giàu có",
+      "Đừng sợ — Ta ở với ngươi và bổ sức cho ngươi",
+      "Sẽ ban con cháu đông",
+      "Sẽ tiêu diệt mọi kẻ thù"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-sai",
+      "Đừng sợ",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 43,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ê-sai 43:25 nói Đức Giê-hô-va làm gì với tội lỗi của dân Ngài?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ê-sai 43:25 — 'Ấy chính Ta, là Đấng vì mình ta xóa sự phạm tội ngươi; Ta sẽ không nhớ đến tội lỗi ngươi nữa.'",
+    "language": "vi",
+    "options": [
+      "Ghi nhớ mãi",
+      "Trừng phạt nghiêm khắc",
+      "Xóa và không nhớ đến nữa",
+      "Truyền lại cho con cháu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-sai",
+      "Tha thứ tội lỗi",
+      "Tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 61,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Ê-sai 61:1-2 mô tả ai được xức dầu để rao truyền tin lành cho người nghèo?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ê-sai 61:1-2 — 'Thần của Chúa Giê-hô-va ngự trên ta; vì Đức Giê-hô-va đã xức dầu cho ta, đặng giảng tin lành cho kẻ khiêm nhường.' Chúa Jêsus áp dụng cho chính mình (Lu 4:18-19).",
+    "language": "vi",
+    "options": [
+      "Tiên tri Ê-li",
+      "Vua Đa-vít",
+      "Sa-mu-ên",
+      "Đấng Mê-si-a (Chúa Jêsus đã trích dẫn)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-sai",
+      "Mê-si-a được xức dầu",
+      "Tiên tri",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 65,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ê-sai 65:17 hứa Đức Chúa Trời sẽ dựng nên gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ê-sai 65:17 — 'Ta sẽ dựng trời mới đất mới; những việc trước sẽ chẳng nhớ nữa, chẳng còn nhắc đến nữa.'",
+    "language": "vi",
+    "options": [
+      "Đền thờ mới",
+      "Vua mới",
+      "Quân đội mới",
+      "Trời mới và đất mới"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-sai",
+      "Trời mới đất mới",
+      "Tiên tri",
+      "Cơ bản"
+    ]
   }
 ]
