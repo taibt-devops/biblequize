@@ -1,0 +1,332 @@
+[
+  {
+    "book": "Esther",
+    "chapter": 4,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Mordecai said to Esther: 'Who knows whether you have come to the kingdom for ___?'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Esther 4:14 — Mordecai believed God placed Esther on the throne at the very moment the Jewish people needed deliverance.",
+    "language": "en",
+    "options": [
+      "Your wisdom",
+      "Your lineage",
+      "Your beauty",
+      "Such a time as this"
+    ],
+    "tags": [
+      "Old Testament",
+      "Esther",
+      "God's sovereignty",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Why was Queen Vashti deposed?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Esther 1:12 — Queen Vashti refused to come before the king. This opened the way for Esther to become queen.",
+    "language": "en",
+    "verseEnd": 12,
+    "options": [
+      "Illness",
+      "Wanted a different queen role",
+      "Betrayed the king",
+      "Refused to come when summoned at the wine feast"
+    ],
+    "tags": [
+      "Old Testament",
+      "Esther",
+      "Sovereignty",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Of what people was Esther?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Esther 2:5-7 — Her Jewish name was Hadassah; Esther is her Persian name. Orphaned, raised by Mordecai.",
+    "language": "en",
+    "options": [
+      "Egyptian",
+      "Babylonian",
+      "Persian",
+      "Jewish (of the tribe of Benjamin)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Esther",
+      "Heritage",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 2,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Esther was chosen as queen in place of whom?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Esther 2:17 — The king loved Esther more than all the others and set the royal crown on her head.",
+    "language": "en",
+    "options": [
+      "No one",
+      "Zeresh",
+      "Vashti",
+      "Miriam"
+    ],
+    "tags": [
+      "Old Testament",
+      "Esther",
+      "Queen",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Why did Haman want to destroy the Jewish people?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Esther 3:5-6 — Mordecai refused to bow to Haman. Haman's pride drove him to seek the destruction of an entire people.",
+    "language": "en",
+    "verseEnd": 6,
+    "options": [
+      "Because Mordecai refused to bow to him",
+      "Because they worshiped another god",
+      "Because the Jews paid no taxes",
+      "Because they were stronger"
+    ],
+    "tags": [
+      "Old Testament",
+      "Haman",
+      "Pride",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 3,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "By casting Pur (the lot), what day did Haman choose to destroy the Jews?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Esther 3:7,13 — The word 'Purim' (lots) became the name of the festival commemorating the deliverance.",
+    "language": "en",
+    "options": [
+      "1st day of the 1st month",
+      "14th day of the 1st month",
+      "13th day of the 12th month (Adar)",
+      "10th day of the 7th month"
+    ],
+    "tags": [
+      "Old Testament",
+      "Purim",
+      "Festival",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 4,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Esther ask the people to do before she went to the king uninvited?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Esther 4:16 — Esther was ready to die: 'If I perish, I perish.' Courage from faith.",
+    "language": "en",
+    "options": [
+      "Offer sacrifices",
+      "Pray for seven days",
+      "Flee",
+      "Fast for three days and nights"
+    ],
+    "tags": [
+      "Old Testament",
+      "Esther",
+      "Courage",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Esther approached the king uninvited, what did the king do?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Esther 5:2 — The king extended the golden scepter = acceptance and grace. God protected Esther.",
+    "language": "en",
+    "verseEnd": 3,
+    "options": [
+      "Was angry",
+      "Held out the golden scepter for her to touch (acceptance)",
+      "Drove her out",
+      "Ignored her"
+    ],
+    "tags": [
+      "Old Testament",
+      "Esther",
+      "Protection",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "On the night before Haman planned to hang Mordecai, what 'coincidence' occurred?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Esther 6:1-2 — God orchestrated 'coincidental' events to protect His people. The word 'God' is absent in the book, yet His providence is everywhere.",
+    "language": "en",
+    "verseEnd": 3,
+    "options": [
+      "The king had a dream",
+      "News came from afar",
+      "The king couldn't sleep and read the book of records, finding Mordecai had not been rewarded",
+      "An angel announced it"
+    ],
+    "tags": [
+      "Old Testament",
+      "Sovereignty",
+      "Esther",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At the banquet, what did Esther ask of the king?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Esther 7:3-4 — Esther revealed her Jewish identity and accused Haman. Her courage saved a whole people.",
+    "language": "en",
+    "verseEnd": 4,
+    "options": [
+      "To save her life and her people",
+      "Gold and silver",
+      "Power",
+      "Land"
+    ],
+    "tags": [
+      "Old Testament",
+      "Esther",
+      "Courage",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On what was Haman hanged?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Esther 7:10 — Poetic justice: Haman was hanged on the very gallows he had prepared for Mordecai. Whoever digs a pit will fall into it.",
+    "language": "en",
+    "options": [
+      "The very gallows he had prepared for Mordecai",
+      "A great tree",
+      "The city wall",
+      "Gallows in the prison"
+    ],
+    "tags": [
+      "Old Testament",
+      "Haman",
+      "Justice",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 8,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Unable to revoke Haman's edict, what did the king allow the Jews to do?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Esther 8:11 — Persian law could not be revoked, but the king issued a new decree allowing the Jews to defend themselves.",
+    "language": "en",
+    "options": [
+      "Hide",
+      "Defend themselves and resist any who attacked them",
+      "Beg for favor",
+      "Flee"
+    ],
+    "tags": [
+      "Old Testament",
+      "Esther",
+      "Deliverance",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 10,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "By the end of the book, what did Mordecai become?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Esther 10:3 — From a man threatened with hanging to second in rank to the king. God reverses the fortunes of His people.",
+    "language": "en",
+    "options": [
+      "King",
+      "Priest",
+      "Commander",
+      "Second only to the king (prime minister)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Mordecai",
+      "Exaltation",
+      "Basic"
+    ]
+  }
+]
