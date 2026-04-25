@@ -1,0 +1,351 @@
+[
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Daniel resolve in his heart not to do at Babylon?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Daniel 1:8 — Daniel kept his principles even in a foreign land. God blesses faithfulness.",
+    "language": "en",
+    "options": [
+      "Not learn the Babylonian language",
+      "Not defile himself with the king's food and wine",
+      "Not work",
+      "Not speak"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Faithfulness",
+      "Major Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verseStart": 44,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does Nebuchadnezzar's dream of the statue prophesy?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Daniel 2:44 — The stone cut without hands = God's kingdom that will crush all kingdoms and stand forever.",
+    "language": "en",
+    "verseEnd": 45,
+    "options": [
+      "World empires and the eternal kingdom of God",
+      "About the near future",
+      "Only about Babylon",
+      "About war"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Prophecy",
+      "Major Prophets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Looking into the furnace, how many men did the king see instead of three?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Daniel 3:25 — The fourth person may be an angel or a manifestation of God. He is with His children in the fire.",
+    "language": "en",
+    "options": [
+      "5 people",
+      "3 people",
+      "2 people",
+      "4 people, the fourth like a son of the gods"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Protection",
+      "Major Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How was Nebuchadnezzar punished for his pride?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Daniel 4:33 — Seven periods living like a beast. When restored, the king praised God. A lesson in humility.",
+    "language": "en",
+    "verseEnd": 33,
+    "options": [
+      "Lost his throne",
+      "Lived as a beast eating grass for seven periods until he acknowledged God's rule",
+      "Was exiled",
+      "Was killed"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Pride",
+      "Major Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At King Belshazzar's feast, what appeared on the wall?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Daniel 5:5 — A hand writing: Mene, Mene, Tekel, Parsin. The kingdom has been weighed and found wanting.",
+    "language": "en",
+    "options": [
+      "A face",
+      "Fire",
+      "A hand writing on the wall",
+      "Light"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Judgment",
+      "Major Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Daniel learned of the law forbidding prayer, what did he do?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Daniel 6:10 — Daniel did not change his prayer habit despite threats. Faith is not intimidated.",
+    "language": "en",
+    "options": [
+      "Prayed less",
+      "Prayed in secret",
+      "Continued to pray three times a day as before",
+      "Stopped praying"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Prayer",
+      "Major Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Daniel 7:13 sees 'one like a son of man' coming on the clouds of heaven. Who is this?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Jesus calls Himself the Son of Man (Matt 26:64) and quotes Daniel 7:13 about His return.",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "The angel Michael",
+      "Jesus Christ",
+      "Moses",
+      "Elijah"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophecy",
+      "Son of Man",
+      "Daniel",
+      "Major Prophets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What event does Daniel's prophecy of seventy weeks (490 years) foretell?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Daniel 9:25-26 — 69 weeks (483 years) from the decree to rebuild until the Anointed One is cut off. Precisely fulfilled.",
+    "language": "en",
+    "verseEnd": 26,
+    "options": [
+      "The restoration of the temple",
+      "The time of the Messiah's coming and being cut off",
+      "The end of the world",
+      "Pentecost"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophecy",
+      "Timing",
+      "Daniel",
+      "Major Prophets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Daniel 12:2 prophesy?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Daniel 12:2 — One of the clearest prophecies of resurrection in the Old Testament.",
+    "language": "en",
+    "verseEnd": 3,
+    "options": [
+      "There is no resurrection",
+      "Resurrection: many will rise — some to everlasting life, some to shame and everlasting contempt",
+      "Only spiritual resurrection",
+      "Only resurrection of the righteous"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Resurrection",
+      "Major Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 10,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Why was the angel coming to Daniel delayed for 21 days?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Daniel 10:13 — There is a spiritual battle behind everything. Prayer affects the unseen world.",
+    "language": "en",
+    "verseEnd": 13,
+    "options": [
+      "God assigned other work",
+      "He lost his way",
+      "Hindered by the prince of Persia (a spiritual power)",
+      "Unknown"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Spiritual warfare",
+      "Major Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What was the LORD's final word to Daniel?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Daniel 12:13 — A promise of resurrection and reward for the faithful. Hope for every believer.",
+    "language": "en",
+    "options": [
+      "Tell others",
+      "Go your way until the end. You shall rest, and shall stand in your allotted place",
+      "Wait",
+      "Write more"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Hope",
+      "Major Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "The three Hebrew young men refused to worship the king's golden image. What did they say when threatened with the fiery furnace?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Daniel 3:17-18 — Unconditional faith: trusting God can deliver, but remaining faithful no matter the outcome.",
+    "language": "en",
+    "verseEnd": 18,
+    "options": [
+      "Spare us",
+      "Our God is able to deliver us, but if not, we will not worship the image",
+      "We will pray",
+      "God will deliver us"
+    ],
+    "tags": [
+      "Old Testament",
+      "Faith",
+      "Courage",
+      "Daniel",
+      "Major Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Into what was Daniel cast for refusing to stop praying?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Daniel 6:16 — Daniel was cast into the lions' den, but God sent His angel to shut the lions' mouths. Faithful to God whatever the cost.",
+    "language": "en",
+    "verseEnd": 22,
+    "options": [
+      "A dungeon",
+      "A furnace",
+      "A pit",
+      "The lions' den"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Faith",
+      "Major Prophets",
+      "Basic"
+    ]
+  }
+]
