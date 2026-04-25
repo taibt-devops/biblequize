@@ -1,0 +1,485 @@
+[
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Paul identify himself in the opening of Titus?",
+    "correctAnswer": [0],
+    "explanation": "Titus 1:1 — 'Paul, a servant of God and an apostle of Jesus Christ, for the sake of the faith of God's elect...'",
+    "language": "en",
+    "options": [
+      "A servant of God and an apostle of Jesus Christ",
+      "An elder of the church at Crete",
+      "An emissary of Caesar",
+      "A brother of Titus"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Servant and apostle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 1:2, when did God promise eternal life?",
+    "correctAnswer": [1],
+    "explanation": "Titus 1:2 — '...in hope of eternal life, which God, who never lies, promised before the ages began...' The promise belongs to God's eternal plan.",
+    "language": "en",
+    "options": [
+      "After Adam sinned",
+      "Before the ages began",
+      "When establishing covenant with Abraham",
+      "When giving the Ten Commandments"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Promised before the ages",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Titus 1:4 describe Titus?",
+    "correctAnswer": [2],
+    "explanation": "Titus 1:4 — 'To Titus, my true child in a common faith.' Titus was Paul's spiritual mentee — like Timothy.",
+    "language": "en",
+    "options": [
+      "A friend from his hometown",
+      "A faithful servant",
+      "His true child in a common faith",
+      "A fellow prisoner"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "True child in faith",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 1:5, why did Paul leave Titus in Crete?",
+    "correctAnswer": [3],
+    "explanation": "Titus 1:5 — 'This is why I left you in Crete, so that you might put what remained into order, and appoint elders in every town as I directed you.'",
+    "language": "en",
+    "options": [
+      "To learn doctrine from local teachers",
+      "To build a new temple",
+      "To preach to the Gentiles",
+      "To set things in order and appoint elders in every town"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Appoint elders in Crete",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 1:6, what kind of family must an elder have?",
+    "correctAnswer": [0],
+    "explanation": "Titus 1:6 — '...if anyone is above reproach, the husband of one wife, and his children are believers and not open to the charge of debauchery or insubordination.'",
+    "language": "en",
+    "options": [
+      "Husband of one wife, believing children, not accused of debauchery or insubordination",
+      "At least seven children to display God's blessing",
+      "Must be celibate to be wholly devoted",
+      "Parents must be believers"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Elder husband of one wife",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 1:7, what must an overseer NOT be?",
+    "correctAnswer": [1],
+    "explanation": "Titus 1:7 — '...not arrogant or quick-tempered or a drunkard or violent or greedy for gain.'",
+    "language": "en",
+    "options": [
+      "Speaking in tongues, not poor, not laboring",
+      "Arrogant, quick-tempered, drunkard, violent, greedy for gain",
+      "With family, with a trade, with possessions",
+      "Highly educated, physically strong"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Overseer disqualifications",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 1:9, to what must an overseer hold firm in order to teach?",
+    "correctAnswer": [2],
+    "explanation": "Titus 1:9 — '...He must hold firm to the trustworthy word as taught, so that he may be able to give instruction in sound doctrine and also to rebuke those who contradict it.'",
+    "language": "en",
+    "options": [
+      "Eloquence and human wisdom",
+      "Support of the powerful",
+      "The trustworthy word as taught",
+      "Diligent study of ancient languages"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Hold to the trustworthy word",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 2:1, what must Titus teach?",
+    "correctAnswer": [3],
+    "explanation": "Titus 2:1 — 'But as for you, teach what accords with sound doctrine.' Sound doctrine — wholesome, healthy teaching.",
+    "language": "en",
+    "options": [
+      "Wonderful miracles",
+      "Ancestral traditions",
+      "New songs of the church",
+      "What accords with sound doctrine"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Sound doctrine",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 2:11, what has the grace of God appeared to do?",
+    "correctAnswer": [0],
+    "explanation": "Titus 2:11 — 'For the grace of God has appeared, bringing salvation for all people.' Grace is offered to all without distinction.",
+    "language": "en",
+    "options": [
+      "To bring salvation for all people",
+      "To punish the wicked",
+      "To save only Israel",
+      "To reward according to merit"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Grace saves all",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 2:13, for what do believers wait?",
+    "correctAnswer": [1],
+    "explanation": "Titus 2:13 — '...waiting for our blessed hope, the appearing of the glory of our great God and Savior Jesus Christ...'",
+    "language": "en",
+    "options": [
+      "Material wealth",
+      "The blessed hope and the appearing of our Savior Jesus Christ",
+      "A new prophet",
+      "The fall of Rome"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Blessed hope",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 2:14, why did Christ give Himself for us?",
+    "correctAnswer": [2],
+    "explanation": "Titus 2:14 — '...who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works.'",
+    "language": "en",
+    "options": [
+      "To teach us new doctrine",
+      "To grant only spiritual wealth",
+      "To redeem from all lawlessness, purify a people for His own possession, zealous for good works",
+      "Merely to set a moral example"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Christ redeems and purifies",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 3:1, what must believers remember about their attitude toward authorities?",
+    "correctAnswer": [3],
+    "explanation": "Titus 3:1 — 'Remind them to be submissive to rulers and authorities, to be obedient, to be ready for every good work...'",
+    "language": "en",
+    "options": [
+      "Resist ungodly authorities",
+      "Separate from all worldly law",
+      "Pay taxes but disobey",
+      "Be submissive to rulers and ready for every good work"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Submissive to authorities",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 3:5, on what basis does God save us?",
+    "correctAnswer": [0],
+    "explanation": "Titus 3:5 — '...he saved us, not because of works done by us in righteousness, but according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit...'",
+    "language": "en",
+    "options": [
+      "His own mercy, by the washing of regeneration and renewal of the Holy Spirit",
+      "Our works of righteousness",
+      "Faithful ancestral lineage",
+      "Sacrifices and fasting"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Saved by mercy",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 3:7, justified by grace, we become heirs of what?",
+    "correctAnswer": [1],
+    "explanation": "Titus 3:7 — '...so that being justified by his grace we might become heirs according to the hope of eternal life.'",
+    "language": "en",
+    "options": [
+      "The Promised Land of Canaan",
+      "The hope of eternal life",
+      "An earthly kingdom",
+      "Church leadership"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Heirs of eternal life",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 3:9, what must Titus avoid?",
+    "correctAnswer": [2],
+    "explanation": "Titus 3:9 — 'But avoid foolish controversies, genealogies, dissensions, and quarrels about the law, for they are unprofitable and worthless.'",
+    "language": "en",
+    "options": [
+      "Prayer and Scripture reading",
+      "Hospitality and good works",
+      "Foolish controversies, genealogies, dissensions, quarrels about the law",
+      "Teaching children and women"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Avoid useless controversies",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 3:10, how should one treat a divisive person?",
+    "correctAnswer": [3],
+    "explanation": "Titus 3:10 — 'As for a person who stirs up division, after warning him once and twice, have nothing more to do with him...'",
+    "language": "en",
+    "options": [
+      "Forgive immediately without condition",
+      "Punish severely before the assembly",
+      "Bring before a Roman court",
+      "After warning once and twice, have nothing more to do with him"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Avoid the divisive person",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Titus 1:16, how do some who profess to know God deny Him?",
+    "correctAnswer": [0],
+    "explanation": "Titus 1:16 — 'They profess to know God, but they deny him by their works. They are detestable, disobedient, unfit for any good work.'",
+    "language": "en",
+    "options": [
+      "By their works",
+      "By boastful speech",
+      "By worshiping other gods",
+      "By offering false sacrifices"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Works deny God",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Titus 1:7-8, which positive qualities must an overseer possess? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Titus 1:7-8 — '...an overseer, as God's steward, must be above reproach... but hospitable, a lover of good, self-controlled, upright, holy, and disciplined.' Several positive traits; 'greedy for gain' is forbidden in v.7.",
+    "language": "en",
+    "options": [
+      "Above reproach",
+      "Hospitable, a lover of good",
+      "Self-controlled, upright, holy, disciplined",
+      "Greedy for gain"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Positive overseer qualities",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 2,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Titus 2:11-12, what does the grace of God train us to do? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Titus 2:11-12 — '...training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age...' Three things; 'accumulate wealth' is not what grace teaches.",
+    "language": "en",
+    "options": [
+      "Renounce ungodliness",
+      "Renounce worldly passions",
+      "Live self-controlled, upright, and godly lives",
+      "Accumulate wealth in this life"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Grace trains the life",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Titus 3:1-2, what should believers remember about life in society? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Titus 3:1-2 — '...be submissive to rulers and authorities... ready for every good work, to speak evil of no one, to avoid quarreling, to be gentle, and to show perfect courtesy toward all people.' Multiple traits; 'taking secret revenge on enemies' contradicts the spirit of this passage.",
+    "language": "en",
+    "options": [
+      "Submissive to rulers and ready for every good work",
+      "Speak evil of no one, avoid quarreling",
+      "Gentle and courteous to all",
+      "Take secret revenge on enemies"
+    ],
+    "tags": [
+      "New Testament",
+      "Titus",
+      "Epistle",
+      "Life in society",
+      "Advanced"
+    ]
+  }
+]

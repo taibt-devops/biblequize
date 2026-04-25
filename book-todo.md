@@ -100,7 +100,7 @@ Mỗi sách cần CẢ VI + EN. Bắt đầu từ size nhỏ nhất để dễ s
 - [x] zephaniah (3 chương) — 20 VI + 20 EN
 - [x] haggai (2 chương) — 20 VI + 20 EN
 - [x] 2thessalonians (3 chương) — 20 VI + 20 EN
-- [ ] titus (3 chương)
+- [x] titus (3 chương) — 20 VI + 20 EN
 
 **Tier 3 — 25-30 câu**
 - [ ] amos (9 chương)
