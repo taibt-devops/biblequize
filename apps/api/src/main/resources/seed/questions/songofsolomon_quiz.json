@@ -1,0 +1,605 @@
+[
+  {
+    "book": "Song of Solomon",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 1:1, sách Nhã Ca thuộc về ai?",
+    "correctAnswer": [0],
+    "explanation": "Nhã Ca 1:1 — 'Nhã ca trong các bài ca, mà Sa-lô-môn đã làm.' Tên truyền thống 'Bài Ca Của Các Bài Ca' — bài ca tuyệt đỉnh.",
+    "language": "vi",
+    "options": [
+      "Sa-lô-môn",
+      "Đa-vít",
+      "A-sáp",
+      "Hê-man"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Tác giả Sa-lô-môn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 1:5, người nữ tự mô tả mình thế nào?",
+    "correctAnswer": [1],
+    "explanation": "Nhã Ca 1:5 — 'Hỡi các con gái Giê-ru-sa-lem, tôi đen, song xinh đẹp, như các trại Kê-đa, như màn cháng của Sa-lô-môn.' Sự đen là dấu hiệu lao động ngoài đồng — không phải sự xấu xa.",
+    "language": "vi",
+    "options": [
+      "Tôi xinh đẹp như mặt trời",
+      "Tôi đen, song xinh đẹp",
+      "Tôi yếu đuối nhưng dịu dàng",
+      "Tôi giàu có và quý phái"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Đen song xinh đẹp",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong Nhã Ca 2:1, người nữ tự ví mình là gì?",
+    "correctAnswer": [2],
+    "explanation": "Nhã Ca 2:1 — 'Ta là hoa tường vi của Sa-rôn, bông huệ của trũng.' Hai loài hoa giản dị nhưng đẹp tinh khôi của vùng Sa-rôn — bình nguyên ven biển Y-sơ-ra-ên.",
+    "language": "vi",
+    "options": [
+      "Cây bá hương Li-ban",
+      "Cây nho trên núi",
+      "Hoa tường vi của Sa-rôn, bông huệ của trũng",
+      "Cây cọ trên sa mạc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Hoa tường vi của Sa-rôn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 2,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 2:2, chàng ví bạn tình mình giữa các thiếu nữ như bông huệ giữa gì?",
+    "correctAnswer": [3],
+    "explanation": "Nhã Ca 2:2 — 'Bạn tình ta ở giữa đám con gái như bông huệ ở giữa gai gốc.' Sự tinh khôi nổi bật giữa môi trường tầm thường.",
+    "language": "vi",
+    "options": [
+      "Giữa các sông",
+      "Giữa các vườn",
+      "Giữa các núi",
+      "Giữa gai gốc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Bông huệ giữa gai gốc",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 2:4, ngọn cờ của chàng phất trên người nữ là gì?",
+    "correctAnswer": [0],
+    "explanation": "Nhã Ca 2:4 — 'Người đưa tôi vào phòng yến tiệc, ngọn cờ người phất trên tôi ấy là ái tình.'",
+    "language": "vi",
+    "options": [
+      "Ái tình (tình yêu)",
+      "Sự công bình",
+      "Sự khôn ngoan",
+      "Sự bình an"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Ngọn cờ ái tình",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 2:7, các con gái Giê-ru-sa-lem được dặn không nên làm gì với ái tình?",
+    "correctAnswer": [1],
+    "explanation": "Nhã Ca 2:7 — 'Hỡi các con gái Giê-ru-sa-lem, ta ép nài các ngươi bởi những con hoàng dương hoặc con nai đồng nội, chớ kinh động, chớ làm tỉnh thức ái tình ta cho đến khi nó muốn.' Lời cảnh báo về việc đánh thức tình yêu trước thời điểm thích hợp.",
+    "language": "vi",
+    "options": [
+      "Đừng nói về nó nơi công cộng",
+      "Chớ kinh động, chớ làm tỉnh thức ái tình cho đến khi nó muốn",
+      "Đừng học từ kinh nghiệm người xưa",
+      "Đừng bao giờ thử nó"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Chớ làm tỉnh thức ái tình",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 2,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 2:15, cần bắt 'những con cáo nhỏ' phá hại điều gì?",
+    "correctAnswer": [2],
+    "explanation": "Nhã Ca 2:15 — 'Hãy bắt cho chúng tôi những con chồn, những con chồn nhỏ phá hại vườn nho; vì vườn nho chúng tôi đương trổ bông.' Hình ảnh các 'việc nhỏ' phá hủy mối quan hệ.",
+    "language": "vi",
+    "options": [
+      "Phá hại đàn chiên",
+      "Phá hại lúa mì",
+      "Phá hại các vườn nho",
+      "Phá hại các vườn dâu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Chồn nhỏ phá vườn nho",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 2,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Câu nổi tiếng nào diễn tả mối tình thuộc nhau trong Nhã Ca 2:16?",
+    "correctAnswer": [3],
+    "explanation": "Nhã Ca 2:16 — 'Lương nhân tôi thuộc về tôi, và tôi thuộc về người; người chăn bầy mình giữa đám bông huệ.'",
+    "language": "vi",
+    "options": [
+      "Hai chúng ta cùng một thân thể",
+      "Tình yêu là tất cả của tôi",
+      "Tôi sẽ theo người đến cùng đất",
+      "Lương nhân tôi thuộc về tôi, và tôi thuộc về người"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Lương nhân tôi thuộc về tôi",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 3:1, người nữ đã tìm chàng yêu dấu mình ở đâu vào ban đêm?",
+    "correctAnswer": [0],
+    "explanation": "Nhã Ca 3:1 — 'Ban đêm tại trên giường, tôi tìm người mà lòng tôi yêu dấu, tôi tìm kiếm người mà không gặp.'",
+    "language": "vi",
+    "options": [
+      "Trên giường mình",
+      "Trong vườn nho",
+      "Tại đền thờ",
+      "Ngoài đồng vắng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Tìm chàng trên giường",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 4:7, chàng nói gì về vẻ đẹp của bạn tình mình?",
+    "correctAnswer": [1],
+    "explanation": "Nhã Ca 4:7 — 'Hỡi bạn tình ta, mình vốn xinh đẹp mọi bề, nơi mình chẳng có tì vít gì cả.'",
+    "language": "vi",
+    "options": [
+      "Mình đẹp như mặt trời",
+      "Mình vốn xinh đẹp mọi bề, không có tì vít gì cả",
+      "Mình quí giá như vàng ròng",
+      "Mình rạng rỡ như ánh sao"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Xinh đẹp không tì vít",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 1:9, chàng so sánh bạn tình mình với gì?",
+    "correctAnswer": [2],
+    "explanation": "Nhã Ca 1:9 — 'Hỡi bạn tình ta, ta sánh mình như ngựa cái của xe Pha-ra-ôn.' Một sự so sánh đầy danh dự — ngựa cái của xe vua Pha-ra-ôn là thượng phẩm.",
+    "language": "vi",
+    "options": [
+      "Cây nho trên núi cao",
+      "Bồ câu trắng nơi hốc đá",
+      "Ngựa cái của xe Pha-ra-ôn",
+      "Mặt trăng giữa các vì sao"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Ngựa cái xe Pha-ra-ôn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 4,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 4:9, chàng gọi bạn tình mình là gì?",
+    "correctAnswer": [3],
+    "explanation": "Nhã Ca 4:9 — 'Hỡi em gái ta, tân phụ ta ơi, mình đã cướp lấy lòng ta, vì một cái liếc mắt, vì một vòng trân châu nơi cổ mình, mình đã cướp lấy lòng ta.'",
+    "language": "vi",
+    "options": [
+      "Bạn cùng đường",
+      "Người yêu dấu một thời",
+      "Đầy tớ trung tín",
+      "Em gái ta, tân phụ ta"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Em gái ta tân phụ ta",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 4,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 4:12, chàng ví bạn tình mình như gì?",
+    "correctAnswer": [0],
+    "explanation": "Nhã Ca 4:12 — 'Em gái ta, tân phụ ta là vườn đóng kín, là nguồn nước khóa lại, là suối niêm phong.' Hình ảnh sự trinh tiết và sự dành riêng cho chồng.",
+    "language": "vi",
+    "options": [
+      "Vườn đóng kín, nguồn nước khóa lại, suối niêm phong",
+      "Cây nho trổ trái sum sê",
+      "Đồng cỏ xanh mơn mởn",
+      "Bồ câu giữa thung lũng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Vườn đóng kín suối niêm phong",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 5,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 5:2, người nữ nói: 'Tôi ngủ' nhưng điều gì còn 'thức'?",
+    "correctAnswer": [1],
+    "explanation": "Nhã Ca 5:2 — 'Tôi ngủ, nhưng lòng tôi tỉnh thức. Ấy là tiếng của lương nhân tôi gõ cửa...' Hình ảnh tâm trí luôn hướng về người yêu dấu.",
+    "language": "vi",
+    "options": [
+      "Mắt tôi",
+      "Lòng tôi",
+      "Tay tôi",
+      "Tiếng tôi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Tôi ngủ nhưng lòng tỉnh thức",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 5,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 5:16, người nữ nói gì về lương nhân mình?",
+    "correctAnswer": [2],
+    "explanation": "Nhã Ca 5:16 — 'Miệng người rất ngọt; thật, người sánh mọi bề đáng yêu mến. Hỡi các con gái Giê-ru-sa-lem, lương nhân tôi như vậy, bạn tình tôi như vậy.'",
+    "language": "vi",
+    "options": [
+      "Người là vua hơn các vua",
+      "Người mạnh mẽ và oai phong",
+      "Miệng người rất ngọt; người sánh mọi bề đáng yêu mến",
+      "Người giàu có nhất xứ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Miệng người rất ngọt",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 6,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Câu thuộc nhau được lặp lại trong Nhã Ca 6:3 là gì?",
+    "correctAnswer": [3],
+    "explanation": "Nhã Ca 6:3 — 'Tôi thuộc về lương nhân tôi, và lương nhân tôi thuộc về tôi; người chăn bầy mình giữa đám bông huệ.'",
+    "language": "vi",
+    "options": [
+      "Tôi nhận biết người, và người nhận biết tôi",
+      "Tôi giúp người, và người giúp tôi",
+      "Tôi cầu nguyện cho người, và người cầu nguyện cho tôi",
+      "Tôi thuộc về lương nhân tôi, và lương nhân tôi thuộc về tôi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Tôi thuộc về lương nhân tôi",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 7,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 7:10, người nữ nói gì về sự thuộc về và lòng yêu thương của lương nhân?",
+    "correctAnswer": [0],
+    "explanation": "Nhã Ca 7:10 — 'Tôi thuộc về lương nhân tôi, sự ước ao người hướng về tôi.'",
+    "language": "vi",
+    "options": [
+      "Tôi thuộc về lương nhân tôi, sự ước ao người hướng về tôi",
+      "Tôi đợi lương nhân ngoài cổng vườn",
+      "Lương nhân tôi đã đi xa rồi",
+      "Tôi sẽ tìm gặp lương nhân tôi vào sáng mai"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Sự ước ao người hướng về tôi",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 8,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 8:6, người nữ xin chàng đặt mình như cái ấn ở đâu?",
+    "correctAnswer": [1],
+    "explanation": "Nhã Ca 8:6 — 'Hãy để tôi như một cái ấn nơi lòng chàng, như một cái ấn trên cánh tay chàng; vì ái tình mạnh như sự chết...' Cái ấn — biểu tượng sở hữu vĩnh viễn.",
+    "language": "vi",
+    "options": [
+      "Trên trán và trên môi",
+      "Trên lòng và trên cánh tay",
+      "Trên đầu và trên chân",
+      "Trên ngực và trên vai"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Cái ấn trên lòng và cánh tay",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 8,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 8:6, ái tình mạnh như gì?",
+    "correctAnswer": [2],
+    "explanation": "Nhã Ca 8:6 — '...vì ái tình mạnh như sự chết, lòng ghen hung dữ như âm phủ; sự nóng nó là sự nóng của lửa, thật một ngọn lửa của Đức Giê-hô-va.'",
+    "language": "vi",
+    "options": [
+      "Như mặt trời chiếu sáng",
+      "Như đại dương mênh mông",
+      "Như sự chết",
+      "Như đá hoa cương"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Ái tình mạnh như sự chết",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 8,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 8:7, điều gì nhiều mà cũng không thể dập tắt được ái tình?",
+    "correctAnswer": [3],
+    "explanation": "Nhã Ca 8:7 — 'Nước nhiều không tưới tắt được ái tình, các sông chẳng nhận chìm nó được. Nếu người nào đem hết tài sản nhà mình đặng mua lấy ái tình, ắt người ta sẽ khinh dể nó đến điều.'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan",
+      "Sự giàu có",
+      "Quyền lực",
+      "Nước nhiều và các sông"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Nhiều nước không tắt ái tình",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 3,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Nhã Ca 3:7-8, kiệu của Sa-lô-môn được hộ tống bởi bao nhiêu dõng sĩ?",
+    "correctAnswer": [0],
+    "explanation": "Nhã Ca 3:7-8 — 'Kìa, kiệu của Sa-lô-môn, có sáu mươi dõng sĩ trong bọn dõng sĩ Y-sơ-ra-ên vây chung quanh nó; thảy đều cầm gươm, có tài chiến trận; ai nấy đều có gươm ở nơi đùi mình, vì sợ kinh khiếp ban đêm.'",
+    "language": "vi",
+    "options": [
+      "Sáu mươi dõng sĩ Y-sơ-ra-ên",
+      "Mười hai sứ giả",
+      "Bốn mươi tướng quân",
+      "Một trăm thầy tế lễ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Sáu mươi dõng sĩ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Nhã Ca 1:5, người nữ ví mình giống những gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Nhã Ca 1:5-6 — 'Tôi đen, song xinh đẹp, như các trại Kê-đa, như màn cháng của Sa-lô-môn. Chớ dòm xem tôi, bởi vì tôi đen, mặt trời đã giọi nám tôi.' Ba hình ảnh: trại Kê-đa, màn của Sa-lô-môn, mặt trời nám. 'Núi Li-ban' không phải mô tả của câu này.",
+    "language": "vi",
+    "options": [
+      "Như các trại Kê-đa",
+      "Như màn cháng của Sa-lô-môn",
+      "Như người bị mặt trời giọi nám",
+      "Như núi Li-ban hùng vĩ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Hình ảnh người nữ tự ví",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 2,
+    "verseStart": 10,
+    "verseEnd": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Nhã Ca 2:10-13, lương nhân kêu bạn tình dậy đi với chàng vì những dấu hiệu nào của mùa xuân? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Nhã Ca 2:11-13 — 'Vì kìa, mùa đông đã qua, mưa đã dứt hết rồi; bông hoa nở ra trên đất; mùa hát xướng đã đến, và tiếng chim cu nghe trong xứ; cây vả đương chín trái xanh tươi của nó, và nho trổ hoa nức mùi hương.' Nhiều dấu hiệu xuân; 'tuyết phủ trắng đỉnh núi' trái nghịch.",
+    "language": "vi",
+    "options": [
+      "Mùa đông đã qua, mưa đã dứt; bông hoa nở trên đất",
+      "Tiếng chim cu nghe trong xứ",
+      "Cây vả chín trái xanh, vườn nho trổ hoa nức mùi",
+      "Tuyết phủ trắng đỉnh núi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Dấu hiệu mùa xuân",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Nhã Ca 4:1, chàng mô tả vẻ đẹp bạn tình bằng những hình ảnh nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Nhã Ca 4:1 — 'Hỡi bạn tình ta, mình thanh lịch thay, thanh lịch thay! Con mắt mình trong khăn mạng giống như cu nhân; tóc mình khác nào bầy dê nằm nơi triền núi Ga-la-át.' Ba hình ảnh; 'thân mình như cây nho mênh mông' không có trong câu này.",
+    "language": "vi",
+    "options": [
+      "Mình thanh lịch thay, thanh lịch thay",
+      "Con mắt mình trong khăn mạng giống như cu nhân (bồ câu)",
+      "Tóc mình khác nào bầy dê nằm nơi triền núi Ga-la-át",
+      "Thân mình như cây nho mênh mông"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Mô tả vẻ đẹp bạn tình",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 8,
+    "verseStart": 6,
+    "verseEnd": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Nhã Ca 8:6-7, đặc tính nào được gán cho ái tình thật? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Nhã Ca 8:6-7 — '...ái tình mạnh như sự chết, lòng ghen hung dữ như âm phủ; sự nóng nó là sự nóng của lửa, thật một ngọn lửa của Đức Giê-hô-va. Nước nhiều không tưới tắt được ái tình, các sông chẳng nhận chìm nó được.' Ba đặc tính; 'có thể mua bằng tiền' chính là điều câu này nói KHÔNG.",
+    "language": "vi",
+    "options": [
+      "Mạnh như sự chết, lòng ghen như âm phủ",
+      "Sự nóng là sự nóng của lửa — ngọn lửa của Đức Giê-hô-va",
+      "Nước nhiều không tưới tắt được, các sông không nhận chìm được",
+      "Có thể mua bằng hết tài sản nhà mình"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nhã Ca",
+      "Thi ca",
+      "Đặc tính của ái tình",
+      "Nâng cao"
+    ]
+  }
+]

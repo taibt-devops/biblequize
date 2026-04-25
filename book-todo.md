@@ -113,7 +113,7 @@ Mỗi sách cần CẢ VI + EN. Bắt đầu từ size nhỏ nhất để dễ s
 - [x] zechariah (14 chương) — 25 VI + 25 EN
 
 **Tier 4 — 30-50 câu (sách lớn missing)**
-- [ ] songofsolomon (8 chương)
+- [x] songofsolomon (8 chương) — 25 VI + 25 EN
 - [ ] ezra (10 chương)
 - [ ] 1chronicles (29 chương)
 - [ ] 2chronicles (36 chương)
