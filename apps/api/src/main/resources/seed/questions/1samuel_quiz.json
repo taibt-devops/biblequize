@@ -329,5 +329,218 @@
       "Lịch sử",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 4,
+    "verseStart": 10,
+    "verseEnd": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong trận đánh với Phi-li-tin tại A-phéc, Y-sơ-ra-ên mất gì cùng với hai con trai của Hê-li?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Sa-mu-ên 4:11 — 'Hòm của Đức Chúa Trời bị cướp lấy, hai con trai Hê-li, Hóp-ni và Phi-nê-a, cũng đều chết.'",
+    "language": "vi",
+    "options": [
+      "Đền thờ",
+      "Hòm Giao Ước",
+      "Vua",
+      "Đất hứa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sa-mu-ên",
+      "Hòm bị cướp",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 5,
+    "verseStart": 3,
+    "verseEnd": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khi người Phi-li-tin đặt Hòm bên cạnh thần Đa-gôn, điều gì xảy ra?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Sa-mu-ên 5:4 — 'Sáng ngày sau, Đa-gôn ngã sấp mặt xuống đất trước Hòm Đức Giê-hô-va; đầu và hai bàn tay Đa-gôn bị chặt đứt rời ở trên ngạch cửa.'",
+    "language": "vi",
+    "options": [
+      "Đa-gôn cười",
+      "Đa-gôn đứng vững",
+      "Đa-gôn ngã sấp; đầu và hai tay bị chặt",
+      "Đa-gôn biến mất"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sa-mu-ên",
+      "Đa-gôn",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 7,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sa-mu-ên dựng tảng đá Ê-bên-Ê-xe có nghĩa là gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Sa-mu-ên 7:12 — 'Sa-mu-ên lấy một hòn đá... đặt tên là Ê-bên-Ê-xe, mà nói rằng: Đức Giê-hô-va đã giúp đỡ chúng tôi đến bây giờ.'",
+    "language": "vi",
+    "options": [
+      "Đá giúp đỡ (Đức Giê-hô-va đã giúp)",
+      "Đá vinh quang",
+      "Đá kỷ niệm",
+      "Đá biên giới"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sa-mu-ên",
+      "Ê-bên-Ê-xe",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sa-mu-ên xức dầu cho ai làm vua đầu tiên của Y-sơ-ra-ên?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Sa-mu-ên 10:1 — 'Sa-mu-ên lấy ve dầu, đổ trên đầu Sau-lơ, hôn người mà nói: Đức Giê-hô-va há chẳng đã xức dầu cho ngươi đặng làm vua quản trị cơ nghiệp Ngài sao?'",
+    "language": "vi",
+    "options": [
+      "Đa-vít",
+      "Giô-na-than",
+      "Sa-lô-môn",
+      "Sau-lơ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sa-mu-ên",
+      "Sau-lơ",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sa-mu-ên xức dầu cho Đa-vít, và điều gì đến trên Đa-vít từ ngày đó?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Sa-mu-ên 16:13 — 'Sa-mu-ên lấy sừng dầu, xức cho người ở giữa các anh người. Từ ngày đó về sau, Thần của Đức Giê-hô-va cảm động Đa-vít.'",
+    "language": "vi",
+    "options": [
+      "Sự giàu có",
+      "Sự khôn ngoan",
+      "Thần của Đức Giê-hô-va",
+      "Sức mạnh đặc biệt"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sa-mu-ên",
+      "Xức dầu Đa-vít",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "verseStart": 49,
+    "verseEnd": 50,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Đa-vít dùng vũ khí nào để đánh bại Gô-li-át?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Sa-mu-ên 17:50 — 'Như vậy, Đa-vít thắng người Phi-li-tin bằng cái trành ném đá và một cục đá; đánh chết người Phi-li-tin, dẫu rằng nơi tay Đa-vít chẳng có gươm.'",
+    "language": "vi",
+    "options": [
+      "Cung tên",
+      "Trành ném đá và cục đá",
+      "Cây giáo",
+      "Lưỡi rìu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sa-mu-ên",
+      "Đa-vít và Gô-li-át",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "verseStart": 32,
+    "verseEnd": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Đa-vít chúc phước A-bi-ga-in vì nàng đã ngăn ông làm gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Sa-mu-ên 25:32-33 — 'Đáng ngợi khen Đức Giê-hô-va... cám ơn sự khôn ngoan của ngươi; ngươi đã giữ ta khỏi đổ huyết và làm chính tay mình báo thù.'",
+    "language": "vi",
+    "options": [
+      "Đổ huyết và báo thù chính tay mình",
+      "Bỏ đường công bình",
+      "Làm vua quá sớm",
+      "Trở về với Sau-lơ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sa-mu-ên",
+      "A-bi-ga-in",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Đêm trước trận chiến cuối cùng, Sau-lơ tìm đến ai để cầu hỏi?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Sa-mu-ên 28:7-8 — 'Sau-lơ phán cùng tôi tớ rằng: Hãy kiếm cho ta một người đàn bà biết cầu vong... Họ đáp: Tại Ên-đô-rơ có một người đàn bà cầu vong.'",
+    "language": "vi",
+    "options": [
+      "Một thầy tế lễ thượng phẩm",
+      "Tiên tri Sa-mu-ên còn sống",
+      "Vua Đa-vít",
+      "Bà bóng (cầu vong) tại Ên-đô-rơ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "1 Sa-mu-ên",
+      "Bà bóng Ên-đô-rơ",
+      "Lịch sử",
+      "Nâng cao"
+    ]
   }
 ]

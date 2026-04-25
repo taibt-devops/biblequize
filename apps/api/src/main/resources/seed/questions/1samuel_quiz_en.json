@@ -329,5 +329,218 @@
       "History",
       "Intermediate"
     ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 4,
+    "verseStart": 10,
+    "verseEnd": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In the battle with the Philistines at Aphek, what did Israel lose along with Eli's two sons?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Samuel 4:11 — 'And the ark of God was captured, and the two sons of Eli, Hophni and Phinehas, died.'",
+    "language": "en",
+    "options": [
+      "The temple",
+      "The Ark of the Covenant",
+      "The king",
+      "The promised land"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Samuel",
+      "Ark Captured",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 5,
+    "verseStart": 3,
+    "verseEnd": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When the Philistines placed the Ark beside Dagon, what happened?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Samuel 5:4 — 'Behold, Dagon had fallen face downward on the ground before the ark of the LORD, and the head of Dagon and both his hands were lying cut off on the threshold.'",
+    "language": "en",
+    "options": [
+      "Dagon laughed",
+      "Dagon stood firm",
+      "Dagon fell face down; his head and hands were cut off",
+      "Dagon vanished"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Samuel",
+      "Dagon",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 7,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does the stone Ebenezer set up by Samuel mean?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Samuel 7:12 — 'Then Samuel took a stone... and called its name Ebenezer; for he said, Till now the LORD has helped us.'",
+    "language": "en",
+    "options": [
+      "Stone of help (Till now the LORD has helped us)",
+      "Stone of glory",
+      "Stone of memorial",
+      "Stone of boundary"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Samuel",
+      "Ebenezer",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whom did Samuel anoint as the first king of Israel?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Samuel 10:1 — 'Then Samuel took a flask of oil and poured it on his head and kissed him and said, Has not the LORD anointed you to be prince over his people Israel?'",
+    "language": "en",
+    "options": [
+      "David",
+      "Jonathan",
+      "Solomon",
+      "Saul"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Samuel",
+      "Saul",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Samuel anointed David, what came upon David from that day forward?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Samuel 16:13 — 'Then Samuel took the horn of oil and anointed him in the midst of his brothers. And the Spirit of the LORD rushed upon David from that day forward.'",
+    "language": "en",
+    "options": [
+      "Wealth",
+      "Wisdom",
+      "The Spirit of the LORD",
+      "Special strength"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Samuel",
+      "David Anointed",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "verseStart": 49,
+    "verseEnd": 50,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What weapon did David use to defeat Goliath?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Samuel 17:50 — 'So David prevailed over the Philistine with a sling and with a stone, and struck the Philistine and killed him. There was no sword in the hand of David.'",
+    "language": "en",
+    "options": [
+      "Bow and arrow",
+      "A sling and a stone",
+      "A spear",
+      "An axe"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Samuel",
+      "David and Goliath",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "verseStart": 32,
+    "verseEnd": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "David blessed Abigail because she kept him from doing what?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Samuel 25:32-33 — 'Blessed be the LORD... blessed be your discretion, and blessed be you, who have kept me this day from bloodguilt and from working salvation with my own hand.'",
+    "language": "en",
+    "options": [
+      "Bloodguilt and avenging by his own hand",
+      "Forsaking the right path",
+      "Becoming king too early",
+      "Returning to Saul"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Samuel",
+      "Abigail",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "On the night before his last battle, whom did Saul seek out to inquire?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Samuel 28:7-8 — 'Then Saul said to his servants, Seek out for me a woman who is a medium... And his servants said, Behold, there is a medium at En-dor.'",
+    "language": "en",
+    "options": [
+      "A high priest",
+      "Samuel still alive",
+      "King David",
+      "The medium (witch) at En-dor"
+    ],
+    "tags": [
+      "Old Testament",
+      "1 Samuel",
+      "Witch of En-dor",
+      "History",
+      "Advanced"
+    ]
   }
 ]
