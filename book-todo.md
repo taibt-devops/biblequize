@@ -37,7 +37,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | isaiah | Isaiah | Prophets | 14 | 14 | 60-80 | ⚠️ |
 | jeremiah | Jeremiah | Prophets | 20 | 20 | 60-80 | ⚠️ |
 | lamentations | Lamentations | Prophets | 20 | 20 | 20-30 | ✅ |
-| ezekiel | Ezekiel | Prophets | 12 | 12 | 40-60 | ⚠️ |
+| ezekiel | Ezekiel | Prophets | 20 | 20 | 40-60 | ⚠️ |
 | daniel | Daniel | Prophets | 13 | 13 | 40-60 | ⚠️ |
 | hosea | Hosea | Prophets | 0 | 0 | 30-40 | ❌ |
 | joel | Joel | Prophets | 0 | 0 | 20 | ❌ |

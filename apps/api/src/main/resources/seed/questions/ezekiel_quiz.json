@@ -329,5 +329,217 @@
       "Đại Tiên Tri",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Đức Giê-hô-va bảo Ê-xê-chi-ên ăn gì, và nó có vị như thế nào trong miệng?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ê-xê-chi-ên 3:3 — 'Hỡi con người, hãy ăn cuộn sách này... Vậy ta ăn nó, và trong miệng ta nó ngọt như mật.'",
+    "language": "vi",
+    "options": [
+      "Ăn bánh không men, đắng",
+      "Ăn rễ cây, không vị",
+      "Ăn cuộn sách, ngọt như mật",
+      "Ăn trái cây, chua như giấm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Cuộn sách",
+      "Tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Đức Giê-hô-va lập Ê-xê-chi-ên làm gì cho nhà Y-sơ-ra-ên?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ê-xê-chi-ên 3:17 — 'Hỡi con người, Ta đã lập ngươi làm kẻ canh giữ cho nhà Y-sơ-ra-ên.'",
+    "language": "vi",
+    "options": [
+      "Vua",
+      "Kẻ canh giữ (lính canh)",
+      "Thầy tế lễ",
+      "Quan xét"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Lính canh",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Đức Giê-hô-va bảo Ê-xê-chi-ên vẽ gì trên một tấm gạch?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ê-xê-chi-ên 4:1 — 'Hỡi con người, hãy lấy một tấm ngói, đặt trước mặt ngươi và vẽ thành Giê-ru-sa-lem trên đó.'",
+    "language": "vi",
+    "options": [
+      "Một con thuyền",
+      "Một bàn thờ",
+      "Cả mặt trời và mặt trăng",
+      "Thành Giê-ru-sa-lem (để minh họa cuộc vây hãm)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Giê-ru-sa-lem bị vây",
+      "Tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Trong khải tượng ở Ê-xê-chi-ên 8, Đức Giê-hô-va tỏ cho tiên tri thấy điều gì trong đền thờ?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ê-xê-chi-ên 8:6 — 'Hãy ngước mắt nhìn về phía bắc, và thấy mọi sự gớm ghiếc lớn mà nhà Y-sơ-ra-ên phạm.' Cảnh thờ thần tượng và gớm ghiếc bí mật.",
+    "language": "vi",
+    "options": [
+      "Sự gớm ghiếc và thờ thần tượng trong đền thờ",
+      "Vinh quang Đức Chúa Trời ngự xuống",
+      "Các thiên sứ ca hát",
+      "Đoàn dân Lê-vi đang cầu nguyện"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Khải tượng đền thờ",
+      "Tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 14,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Ê-xê-chi-ên 14:14 nêu tên ba người công bình nào, dù họ cũng chỉ cứu được mình bằng sự công bình của họ?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ê-xê-chi-ên 14:14 — 'Dầu trong đất ấy có ba người nầy là Nô-ê, Đa-ni-ên và Gióp, thì cũng chỉ cứu được linh hồn mình bởi sự công bình mình.'",
+    "language": "vi",
+    "options": [
+      "Áp-ra-ham, Y-sác, Gia-cốp",
+      "Môi-se, A-rôn, Mi-ri-am",
+      "Đa-vít, Sa-lô-môn, Ê-li",
+      "Nô-ê, Đa-ni-ên, Gióp"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Ba người công bình",
+      "Tiên tri",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 28,
+    "verseStart": 12,
+    "verseEnd": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Ê-xê-chi-ên 28:12-14 mô tả vua Ty-rơ ở đâu trước khi phạm tội?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ê-xê-chi-ên 28:13-14 — 'Ngươi đã ở trong Ê-đen, vườn của Đức Chúa Trời... Ngươi là chê-ru-bim được xức dầu đặng che phủ.'",
+    "language": "vi",
+    "options": [
+      "Trên chiến thuyền lớn",
+      "Trên núi A-ra-rát",
+      "Trong Ê-đen, vườn của Đức Chúa Trời",
+      "Trong đền thờ Sa-lô-môn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Vua Ty-rơ",
+      "Tiên tri",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 38,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ê-xê-chi-ên 38 nói tiên tri nghịch lại ai, vua của Ma-gốc?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ê-xê-chi-ên 38:2 — 'Hỡi con người, hãy xây mặt lại nghịch cùng Gót ở đất Ma-gốc, là vua của Rô-sơ, Mê-siếc và Tu-banh.'",
+    "language": "vi",
+    "options": [
+      "A-mốt",
+      "Ba-rúc",
+      "Si-mê-i",
+      "Gót"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Gót và Ma-gốc",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 43,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ê-xê-chi-ên 43:2 mô tả vinh quang Đức Chúa Trời từ hướng nào trở về đền thờ?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ê-xê-chi-ên 43:2 — 'Nầy, vinh quang Đức Chúa Trời của Y-sơ-ra-ên đến từ hướng đông; tiếng Ngài như tiếng nước lớn.'",
+    "language": "vi",
+    "options": [
+      "Hướng đông",
+      "Hướng tây",
+      "Hướng bắc",
+      "Hướng nam"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Vinh quang trở về",
+      "Tiên tri",
+      "Cơ bản"
+    ]
   }
 ]

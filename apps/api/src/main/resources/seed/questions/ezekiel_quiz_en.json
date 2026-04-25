@@ -329,5 +329,217 @@
       "Major Prophet",
       "Intermediate"
     ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the LORD tell Ezekiel to eat, and how did it taste in his mouth?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ezekiel 3:3 — 'Son of man, eat this scroll... Then I ate it, and it was in my mouth as sweet as honey.'",
+    "language": "en",
+    "options": [
+      "Unleavened bread, bitter",
+      "Tree roots, tasteless",
+      "A scroll, sweet as honey",
+      "Fruit, sour as vinegar"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "The Scroll",
+      "Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did the LORD make Ezekiel for the house of Israel?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ezekiel 3:17 — 'Son of man, I have made you a watchman for the house of Israel.'",
+    "language": "en",
+    "options": [
+      "A king",
+      "A watchman",
+      "A priest",
+      "A judge"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Watchman",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the LORD command Ezekiel to draw on a brick?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ezekiel 4:1 — 'And you, son of man, take a brick and lay it before you, and engrave on it a city, even Jerusalem.'",
+    "language": "en",
+    "options": [
+      "A boat",
+      "An altar",
+      "Both sun and moon",
+      "The city of Jerusalem (for the siege)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Siege of Jerusalem",
+      "Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 8,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In Ezekiel 8's vision, what did the LORD show the prophet inside the temple?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ezekiel 8:6 — 'Son of man, do you see what they are doing, the great abominations that the house of Israel are committing here.' Secret idolatry and abominations.",
+    "language": "en",
+    "options": [
+      "Abominations and idol worship in the temple",
+      "God's glory descending",
+      "Angels singing",
+      "Levites praying"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Temple Vision",
+      "Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 14,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Which three righteous men does Ezekiel 14:14 name as those who would only deliver themselves by their righteousness?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ezekiel 14:14 — 'Even if these three men, Noah, Daniel, and Job, were in it, they would deliver but their own lives by their righteousness.'",
+    "language": "en",
+    "options": [
+      "Abraham, Isaac, Jacob",
+      "Moses, Aaron, Miriam",
+      "David, Solomon, Elijah",
+      "Noah, Daniel, Job"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Three Righteous Men",
+      "Prophets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 28,
+    "verseStart": 12,
+    "verseEnd": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Ezekiel 28:12-14 describes the king of Tyre as having been where before he sinned?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ezekiel 28:13-14 — 'You were in Eden, the garden of God... You were an anointed guardian cherub.'",
+    "language": "en",
+    "options": [
+      "On a great warship",
+      "On Mount Ararat",
+      "In Eden, the garden of God",
+      "In Solomon's temple"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "King of Tyre",
+      "Prophets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 38,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Ezekiel 38, against whom does the prophet speak as the prince of Magog?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ezekiel 38:2 — 'Son of man, set your face toward Gog, of the land of Magog, the chief prince of Meshech and Tubal.'",
+    "language": "en",
+    "options": [
+      "Amos",
+      "Baruch",
+      "Shimei",
+      "Gog"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Gog and Magog",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 43,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "From which direction does Ezekiel 43:2 say the glory of God returns to the temple?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ezekiel 43:2 — 'Behold, the glory of the God of Israel was coming from the east; and the sound of his coming was like the sound of many waters.'",
+    "language": "en",
+    "options": [
+      "From the east",
+      "From the west",
+      "From the north",
+      "From the south"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Glory Returning",
+      "Prophets",
+      "Basic"
+    ]
   }
 ]
