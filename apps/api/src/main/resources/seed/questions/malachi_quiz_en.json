@@ -1,0 +1,305 @@
+[
+  {
+    "book": "Malachi",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Malachi begin with the LORD's words?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Malachi 1:2 — Even when the people are unfaithful, the LORD declares His love. The people respond, 'How have You loved us?'",
+    "language": "en",
+    "options": [
+      "I am angry with you",
+      "Obey",
+      "I have loved you",
+      "Repent"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Love",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "For what does the LORD rebuke the priests?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Malachi 1:8 — They were offering blind, lame, and sick animals to the LORD. Try offering it to your governor!",
+    "language": "en",
+    "options": [
+      "Not praying",
+      "Not reading the Scriptures",
+      "Offering blemished animals to the LORD (despising His name)",
+      "Stealing"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Sacrifice",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 2,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How does Malachi 2:16 express the LORD's view of divorce?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "The LORD honors marriage and guards covenant. Divorce was not God's original will.",
+    "language": "en",
+    "options": [
+      "Allows it freely",
+      "I hate divorce, for it covers one's garment with violence",
+      "Forbids only the poor",
+      "Does not care"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Marriage",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who does Malachi 3:1 prophesy will come before the Lord?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Mark 1:2 applies this verse to John the Baptist, who prepares the way for Jesus.",
+    "language": "en",
+    "options": [
+      "A messenger (John the Baptist) to prepare the way",
+      "Elijah",
+      "An angel",
+      "Moses"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophecy",
+      "John the Baptist",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "The LORD asks the people: 'Will man ___ God? Yet you are robbing Me'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Malachi 3:8 — The people robbed God by withholding tithes and offerings.",
+    "language": "en",
+    "options": [
+      "Rob",
+      "Grieve",
+      "Oppose",
+      "Lie to"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Tithes",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What kind of book does Malachi 3:16 say the LORD has, recording those who fear Him?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "The LORD remembers those who fear Him and esteem His name. They are His treasured possession.",
+    "language": "en",
+    "verseEnd": 17,
+    "options": [
+      "A book of prophecy",
+      "A book of history",
+      "A book of the law",
+      "A book of remembrance"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Remembrance",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 4,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Malachi 4:2 prophesies that the 'sun of righteousness' will rise with what in its wings?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "The Sun of Righteousness = Christ. He brings healing to those who fear the LORD.",
+    "language": "en",
+    "options": [
+      "Fire",
+      "Light",
+      "Healing",
+      "Glory"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophecy",
+      "Healing",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 4,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "The final verses of the Old Testament prophesy who will come before the great day of the LORD?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Malachi 4:5 — Jesus confirms John the Baptist fulfills the role of Elijah (Matt 11:14).",
+    "language": "en",
+    "verseEnd": 6,
+    "options": [
+      "David",
+      "The prophet Elijah (John the Baptist)",
+      "Moses",
+      "Elisha"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophecy",
+      "Elijah",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "The LORD comes as a refiner of silver and gold to do what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Sanctification is not destruction but purification, like refining metal.",
+    "language": "en",
+    "verseEnd": 3,
+    "options": [
+      "Test",
+      "Purify the sons of Levi so they may bring offerings in righteousness",
+      "Destroy",
+      "Judge"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Purification",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 2,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Malachi 2:10 asks: 'Have we not all one ___? Has not one God created us?'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "All people share one Father (the Creator). Therefore we must treat one another well.",
+    "language": "en",
+    "options": [
+      "King",
+      "Lord",
+      "House",
+      "Father"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Unity",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the people bring the full tithe, what does the LORD promise to do?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Malachi 3:11 — The LORD protects the harvest from being destroyed when the people obey in giving.",
+    "language": "en",
+    "options": [
+      "Give more gold",
+      "Increase the army",
+      "Rebuke the devourer for them (protect the harvest)",
+      "Give more land"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Protection",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Malachi 3:10 is the only Bible verse where the LORD challenges humans to do what?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Malachi 3:10 — 'Bring the full tithe into the storehouse... and thereby put me to the test.' The LORD promises to open the windows of heaven and pour down blessing.",
+    "language": "en",
+    "options": [
+      "Test the LORD by bringing the full tithe",
+      "Pray more",
+      "Fast",
+      "Preach"
+    ],
+    "tags": [
+      "Old Testament",
+      "Giving",
+      "Tithes",
+      "Intermediate"
+    ]
+  }
+]
