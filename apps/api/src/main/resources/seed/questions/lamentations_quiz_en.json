@@ -276,5 +276,240 @@
       "Prayer",
       "Intermediate"
     ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 1,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Lamentations 1:12, what does Jerusalem call out to those who pass by?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Lamentations 1:12 — 'Is it nothing to you, all you who pass by? Look and see if there is any sorrow like my sorrow.'",
+    "language": "en",
+    "options": [
+      "Pass by quickly",
+      "Look at my sorrow",
+      "Have mercy on the Gentiles",
+      "Flee to Egypt"
+    ],
+    "tags": [
+      "Old Testament",
+      "Lamentations",
+      "Suffering",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the LORD cast down from heaven to earth, according to Lamentations 2:1?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Lamentations 2:1 — 'In his wrath he has cast down from heaven to earth the splendor of Israel.'",
+    "language": "en",
+    "options": [
+      "The splendor of Israel",
+      "The army",
+      "Solomon's temple",
+      "The Ark of the Covenant"
+    ],
+    "tags": [
+      "Old Testament",
+      "Lamentations",
+      "Wrath",
+      "Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Lamentations 3:1 opens with: 'I am the man who has seen ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Lamentations 3:1 — 'I am the man who has seen affliction under the rod of his wrath.'",
+    "language": "en",
+    "options": [
+      "Glory",
+      "Victory",
+      "Affliction",
+      "The desert"
+    ],
+    "tags": [
+      "Old Testament",
+      "Lamentations",
+      "Affliction",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 3,
+    "verseStart": 55,
+    "verseEnd": 58,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In Lamentations 3:55-58, from where does the writer call on the LORD's name?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Lamentations 3:55-57 — 'I called on your name, O LORD, from the depths of the pit; you heard my plea... you came near when I called on you.'",
+    "language": "en",
+    "options": [
+      "From the mountain",
+      "From the temple",
+      "From the wilderness",
+      "From the depths of the pit"
+    ],
+    "tags": [
+      "Old Testament",
+      "Lamentations",
+      "Prayer",
+      "Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Lamentations 4:1 say has lost its luster?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Lamentations 4:1 — 'How the gold has grown dim, how the pure gold is changed! The holy stones lie scattered at the head of every street.'",
+    "language": "en",
+    "options": [
+      "Gold",
+      "Silver",
+      "Bronze",
+      "Iron"
+    ],
+    "tags": [
+      "Old Testament",
+      "Lamentations",
+      "Imagery",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Lamentations 4:6 says Jerusalem's iniquity is greater than the sin of which city?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Lamentations 4:6 — 'For the chastisement of the daughter of my people has been greater than the punishment of Sodom, which was overthrown in a moment.'",
+    "language": "en",
+    "options": [
+      "Babylon",
+      "Sodom",
+      "Nineveh",
+      "Egypt"
+    ],
+    "tags": [
+      "Old Testament",
+      "Lamentations",
+      "Comparison",
+      "Prophets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Lamentations 5:1 begin its plea to the LORD?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Lamentations 5:1 — 'Remember, O LORD, what has befallen us; look, and see our disgrace!'",
+    "language": "en",
+    "options": [
+      "Judge the enemies",
+      "Restore the temple",
+      "Remember what has befallen your people",
+      "Send a prophet"
+    ],
+    "tags": [
+      "Old Testament",
+      "Lamentations",
+      "Prayer",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 5,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does the closing prayer in Lamentations 5:21 ask the LORD to do?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Lamentations 5:21 — 'Restore us to yourself, O LORD, that we may be restored! Renew our days as of old.'",
+    "language": "en",
+    "options": [
+      "Send a new king",
+      "Destroy the enemies",
+      "Give food",
+      "Restore us and renew our days"
+    ],
+    "tags": [
+      "Old Testament",
+      "Lamentations",
+      "Restoration",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 5,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Lamentations 5:7 lament about the fathers?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Lamentations 5:7 — 'Our fathers sinned, and are no more; and we bear their iniquities.'",
+    "language": "en",
+    "options": [
+      "The fathers sinned and the children bear it",
+      "The fathers forgot the covenant",
+      "The fathers worshiped strange gods",
+      "The fathers left the promised land"
+    ],
+    "tags": [
+      "Old Testament",
+      "Lamentations",
+      "Inherited Sin",
+      "Prophets",
+      "Intermediate"
+    ]
   }
 ]

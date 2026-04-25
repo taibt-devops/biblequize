@@ -276,5 +276,240 @@
       "Cầu nguyện",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 1,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong Ca Thương 1:12, Giê-ru-sa-lem kêu gọi điều gì với những người qua đường?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ca Thương 1:12 — 'Hỡi mọi người đi qua, hãy nhìn xem có sự đau khổ nào giống như sự đau khổ giáng trên ta chăng?'",
+    "language": "vi",
+    "options": [
+      "Hãy đi nhanh qua",
+      "Hãy nhìn xem nỗi đau của ta",
+      "Hãy thương xót dân ngoại",
+      "Hãy chạy về Ai Cập"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ca Thương",
+      "Đau khổ",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ca Thương 2:1 mô tả Đức Giê-hô-va đã ném xuống đất điều gì của Y-sơ-ra-ên?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ca Thương 2:1 — 'Trong cơn thạnh nộ, Chúa đã ném vẻ đẹp của Y-sơ-ra-ên từ trời xuống đất.'",
+    "language": "vi",
+    "options": [
+      "Vẻ đẹp của Y-sơ-ra-ên",
+      "Quân đội",
+      "Đền thờ Sa-lô-môn",
+      "Hòm giao ước"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ca Thương",
+      "Cơn thạnh nộ",
+      "Tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ca Thương 3:1 mở đầu với lời than: 'Ta là người đã thấy ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ca Thương 3:1 — 'Ta là người đã thấy hoạn nạn dưới cây gậy thạnh nộ của Ngài.'",
+    "language": "vi",
+    "options": [
+      "Vinh quang",
+      "Chiến thắng",
+      "Hoạn nạn",
+      "Sa mạc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ca Thương",
+      "Hoạn nạn",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 3,
+    "verseStart": 55,
+    "verseEnd": 58,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Trong Ca Thương 3:55-58, tác giả kêu cầu danh Đức Giê-hô-va từ đâu?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ca Thương 3:55-57 — 'Hỡi Đức Giê-hô-va, từ nơi vực sâu, tôi đã kêu cầu danh Ngài. Ngài đã đến gần ngày tôi cầu khẩn Ngài.'",
+    "language": "vi",
+    "options": [
+      "Từ trên núi",
+      "Từ đền thờ",
+      "Từ vùng đồng vắng",
+      "Từ vực sâu của hầm hố"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ca Thương",
+      "Cầu khẩn",
+      "Tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ca Thương 4:1 mô tả điều gì đã mất đi vẻ sáng của nó?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ca Thương 4:1 — 'Sao vàng đã trở nên lu mờ, vàng ròng tốt nhất đã thay đổi thế nào! Đá thánh đổ ra ở đầu mỗi đường phố.'",
+    "language": "vi",
+    "options": [
+      "Vàng",
+      "Bạc",
+      "Đồng",
+      "Sắt"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ca Thương",
+      "Hình ảnh",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Ca Thương 4:6 so sánh tội lỗi của Giê-ru-sa-lem nặng hơn tội của thành nào?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ca Thương 4:6 — 'Hình phạt cho con gái dân ta lớn hơn hình phạt của Sô-đôm — thành đã bị đổ trong khoảnh khắc.'",
+    "language": "vi",
+    "options": [
+      "Ba-by-lôn",
+      "Sô-đôm",
+      "Ni-ni-ve",
+      "Ai Cập"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ca Thương",
+      "So sánh",
+      "Tiên tri",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ca Thương 5:1 bắt đầu bằng lời cầu xin gì với Đức Giê-hô-va?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ca Thương 5:1 — 'Hỡi Đức Giê-hô-va, xin nhớ lại điều đã giáng trên chúng tôi; xin đoái xem sự sỉ nhục của chúng tôi!'",
+    "language": "vi",
+    "options": [
+      "Đoán xét kẻ thù",
+      "Phục hồi đền thờ",
+      "Nhớ lại điều đã giáng trên dân Ngài",
+      "Sai tiên tri đến"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ca Thương",
+      "Cầu nguyện",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 5,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Lời cầu nguyện cuối cùng trong Ca Thương 5:21 xin Đức Giê-hô-va điều gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ca Thương 5:21 — 'Hỡi Đức Giê-hô-va, hãy đem chúng tôi về với Ngài, để chúng tôi sẽ trở về; hãy đổi mới ngày của chúng tôi như thuở xưa.'",
+    "language": "vi",
+    "options": [
+      "Sai vua mới",
+      "Tiêu diệt kẻ thù",
+      "Ban thức ăn",
+      "Đem trở về và đổi mới ngày tháng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ca Thương",
+      "Phục hồi",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 5,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ca Thương 5:7 than thở về điều gì liên quan đến tổ phụ?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ca Thương 5:7 — 'Tổ phụ chúng tôi đã phạm tội, nhưng không còn nữa; còn chúng tôi phải chịu tội ác của họ.'",
+    "language": "vi",
+    "options": [
+      "Tổ phụ phạm tội mà con cháu phải chịu",
+      "Tổ phụ không nhớ giao ước",
+      "Tổ phụ thờ thần lạ",
+      "Tổ phụ rời bỏ đất hứa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ca Thương",
+      "Tội tổ phụ",
+      "Tiên tri",
+      "Trung cấp"
+    ]
   }
 ]
