@@ -1,0 +1,335 @@
+[
+  {
+    "book": "Nehemiah",
+    "chapter": 2,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Why did Nehemiah return to Jerusalem?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Nehemiah 2:17 — Nehemiah called the people to rebuild the broken-down walls of Jerusalem.",
+    "language": "en",
+    "verseEnd": 18,
+    "options": [
+      "To rebuild the walls",
+      "To rebuild the temple",
+      "To serve as governor",
+      "To teach the law"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Restoration",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Nehemiah heard the news that the walls of Jerusalem were broken, what did he do?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Nehemiah 1:4 — Nehemiah grieved and prayed before acting. Pray first, then act.",
+    "language": "en",
+    "verseEnd": 4,
+    "options": [
+      "Did nothing",
+      "Wept, fasted, and prayed for many days",
+      "Set out at once",
+      "Was angry"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Prayer",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What office did Nehemiah hold for the Persian king?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Nehemiah 1:11 — The cupbearer was a highly trusted role, ensuring the king's wine was not poisoned.",
+    "language": "en",
+    "options": [
+      "Scribe",
+      "General",
+      "Counselor",
+      "Cupbearer (one who served the king's wine)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Office",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Before asking King Artaxerxes for permission, what did Nehemiah do?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Nehemiah 2:4 — Nehemiah prayed silently in the very moment of speaking with the king. Pray any time.",
+    "language": "en",
+    "verseEnd": 5,
+    "options": [
+      "Silently prayed to God",
+      "Prepared a speech",
+      "Consulted advisors",
+      "Wrote a letter"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Prayer",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 4,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When threatened by enemies, what did Nehemiah do?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Nehemiah 4:9 — He both prayed and acted practically. Trust God yet do your part.",
+    "language": "en",
+    "options": [
+      "Only prayed",
+      "Only set guards",
+      "Stopped building",
+      "Prayed and set a guard"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Faith",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 6,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When enemies invited Nehemiah down to stop the building, how did he reply?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Nehemiah 6:3 — Nehemiah refused to be distracted by enemies. Focus on the mission God has given.",
+    "language": "en",
+    "options": [
+      "I am doing a great work and cannot come down",
+      "Sent a substitute",
+      "I will come at once",
+      "Let me think about it"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Focus",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 6,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How long did the rebuilding of Jerusalem's walls take?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Nehemiah 6:15 — Fifty-two days! The enemies recognized this as God's work, for no one accomplishes such a feat by his own strength.",
+    "language": "en",
+    "verseEnd": 16,
+    "options": [
+      "6 months",
+      "1 year",
+      "7 years",
+      "52 days"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Miracle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 8,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Nehemiah said: 'The joy of the LORD is your ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Nehemiah 8:10 — Joy from the LORD gives strength to face every circumstance.",
+    "language": "en",
+    "options": [
+      "Purpose",
+      "Hope",
+      "Strength",
+      "Blessing"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Joy",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who read the Book of the Law to the people from morning until midday?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Nehemiah 8:1-3 — Ezra read the Torah and the Levites explained it. The people stood listening from morning until midday.",
+    "language": "en",
+    "verseEnd": 3,
+    "options": [
+      "Nehemiah",
+      "Ezra the scribe",
+      "The priests",
+      "The people themselves"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezra",
+      "Word of God",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 5,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Nehemiah rebuke the nobles for?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Nehemiah 5:7 — Nehemiah protected the poor from being exploited by their own countrymen.",
+    "language": "en",
+    "verseEnd": 11,
+    "options": [
+      "Not building the wall",
+      "Idolatry",
+      "Not praying",
+      "Charging interest unjustly upon the poor"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Justice",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Nehemiah forbid on the Sabbath?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Nehemiah 13:15-19 — Nehemiah shut the city gates before the Sabbath to prevent merchants from trading.",
+    "language": "en",
+    "verseEnd": 18,
+    "options": [
+      "Cooking",
+      "Buying, selling, and bringing in goods",
+      "Speaking",
+      "Walking"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Sabbath",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Nehemiah do at night before announcing his plan to rebuild the wall?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Nehemiah 2:13 — Nehemiah secretly inspected the walls at night to grasp the situation before acting.",
+    "language": "en",
+    "verseEnd": 16,
+    "options": [
+      "Secretly inspected the condition of the walls",
+      "Met with the nobles",
+      "Slept and rested",
+      "Prayed"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Preparation",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 12,
+    "verseStart": 43,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the wall was completed, what did the people do?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Nehemiah 12:43 — That day they offered great sacrifices and rejoiced because God had given them great joy. The sound was heard from afar.",
+    "language": "en",
+    "options": [
+      "Fasted",
+      "Wept with emotion",
+      "Silently gave thanks",
+      "Offered great sacrifices and rejoiced — the joy was heard from afar"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Joy",
+      "Basic"
+    ]
+  }
+]

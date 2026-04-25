@@ -27,7 +27,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | 1chronicles | 1 Chronicles | History | 0 | 0 | 30-50 | ❌ |
 | 2chronicles | 2 Chronicles | History | 0 | 0 | 30-50 | ❌ |
 | ezra | Ezra | History | 0 | 0 | 20-30 | ❌ |
-| nehemiah | Nehemiah | History | 13 | 0 | 30-40 | ⚠️ + 🌐 |
+| nehemiah | Nehemiah | History | 13 | 13 | 30-40 | ⚠️ |
 | esther | Esther | History | 13 | 13 | 30-40 | ⚠️ |
 | job | Job | Wisdom | 12 | 12 | 40-60 | ⚠️ |
 | psalms | Psalms | Wisdom | 19 | 0 | 100+ | ⚠️ + 🌐 |
