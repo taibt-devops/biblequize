@@ -325,5 +325,217 @@
       "Epistle",
       "Basic"
     ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Through whom does Hebrews 1:1-2 say God has spoken in these last days?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Hebrews 1:1-2 — 'Long ago, at many times and in many ways, God spoke to our fathers by the prophets, but in these last days he has spoken to us by his Son.'",
+    "language": "en",
+    "options": [
+      "By Moses",
+      "By the prophets",
+      "By His Son (Jesus)",
+      "By the angels"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Final Revelation",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Hebrews 2:14-15, whom did Jesus destroy through His death?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Hebrews 2:14 — 'Through death he might destroy the one who has the power of death, that is, the devil.'",
+    "language": "en",
+    "options": [
+      "The Roman Empire",
+      "The devil, who has the power of death",
+      "The Pharisees",
+      "Satan and false prophets"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Victory Over Death",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Hebrews 3:7-8 warn when hearing God's voice?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Hebrews 3:7-8 — 'Today, if you hear his voice, do not harden your hearts as in the rebellion.'",
+    "language": "en",
+    "options": [
+      "Ignore the voice",
+      "Wait until another day",
+      "Argue back",
+      "Do not harden your hearts"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Hardness of Heart",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 5,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Hebrews 5:7-8 say Jesus learned through suffering?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Hebrews 5:8 — 'Although he was a son, he learned obedience through what he suffered.'",
+    "language": "en",
+    "options": [
+      "Wisdom",
+      "Courage",
+      "Obedience",
+      "Patience"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Christ's Obedience",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Hebrews 7:25 say Christ does for those who draw near to God through Him?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Hebrews 7:25 — 'Consequently, he is able to save to the uttermost those who draw near to God through him, since he always lives to make intercession for them.'",
+    "language": "en",
+    "options": [
+      "Only forgive past sins",
+      "Only guide them",
+      "Saves to the uttermost and ever lives to intercede",
+      "Only calls them"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Intercession",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "verseStart": 27,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Hebrews 9:27 say is appointed for man after death?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Hebrews 9:27 — 'It is appointed for man to die once, and after that comes judgment.'",
+    "language": "en",
+    "options": [
+      "Multiple reincarnations",
+      "Eternal sleep",
+      "Becoming an angel",
+      "Judgment"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Judgment",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Hebrews 10:25 urge believers not to do?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Hebrews 10:25 — 'Not neglecting to meet together, as is the habit of some, but encouraging one another.'",
+    "language": "en",
+    "options": [
+      "Quarrel",
+      "Neglect meeting together",
+      "Work on the Sabbath",
+      "Eat sacrifices"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Assembly",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does Hebrews 13:15 say is the sacrifice of praise we offer to God?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Hebrews 13:15 — 'Through him then let us continually offer up a sacrifice of praise to God, that is, the fruit of lips that acknowledge his name.'",
+    "language": "en",
+    "options": [
+      "A burnt offering",
+      "Money offering",
+      "The fruit of lips that acknowledge His name",
+      "A sin offering"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Sacrifice of Praise",
+      "Epistle",
+      "Advanced"
+    ]
   }
 ]

@@ -325,5 +325,217 @@
       "Thư tín",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Hê-bơ-rơ 1:1-2 nói trong những ngày sau rốt Đức Chúa Trời phán dạy qua ai?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Hê-bơ-rơ 1:1-2 — 'Đức Chúa Trời, đời xưa đã phán dạy tổ phụ chúng ta nhiều cách... thì trong những ngày sau rốt nầy, Ngài phán dạy chúng ta bởi Con Ngài.'",
+    "language": "vi",
+    "options": [
+      "Bởi Môi-se",
+      "Bởi các tiên tri",
+      "Bởi Con Ngài (Đức Chúa Jêsus)",
+      "Bởi các thiên sứ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Mặc khải tột đỉnh",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Hê-bơ-rơ 2:14-15, Chúa Jêsus chịu chết để hủy diệt ai?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Hê-bơ-rơ 2:14 — 'Hầu cho Ngài bởi sự chết mình mà phá diệt kẻ cầm quyền sự chết, là ma quỉ.'",
+    "language": "vi",
+    "options": [
+      "Đế quốc Rô-ma",
+      "Ma quỉ, kẻ cầm quyền sự chết",
+      "Pha-ri-si",
+      "Sa-tan và các tiên tri giả"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Chiến thắng sự chết",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Hê-bơ-rơ 3:7-8 cảnh báo điều gì khi nghe tiếng Đức Chúa Trời?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Hê-bơ-rơ 3:7-8 — 'Ngày nay, nếu các ngươi nghe tiếng Ngài, thì chớ cứng lòng, như lúc nổi loạn.'",
+    "language": "vi",
+    "options": [
+      "Hãy bỏ qua tiếng đó",
+      "Hãy chờ đến ngày khác",
+      "Hãy cãi lại",
+      "Chớ cứng lòng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Cứng lòng",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 5,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Hê-bơ-rơ 5:7-8 nói Đức Chúa Jêsus học điều gì qua sự khốn khổ?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Hê-bơ-rơ 5:8 — 'Dầu Ngài là Con, cũng đã học tập vâng lời bởi những sự khốn khổ mình đã chịu.'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan",
+      "Sự can đảm",
+      "Sự vâng lời",
+      "Sự kiên nhẫn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Đấng Christ vâng phục",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Hê-bơ-rơ 7:25 nói Đấng Christ làm gì cho những kẻ đến gần Đức Chúa Trời qua Ngài?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Hê-bơ-rơ 7:25 — 'Bởi đó Ngài có thể cứu toàn vẹn những kẻ nhờ Ngài mà đến gần Đức Chúa Trời, vì Ngài hằng sống để cầu thay cho những kẻ ấy.'",
+    "language": "vi",
+    "options": [
+      "Chỉ tha thứ tội cũ",
+      "Chỉ chỉ dẫn họ",
+      "Cứu toàn vẹn và hằng sống cầu thay",
+      "Chỉ kêu gọi họ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Cầu thay",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "verseStart": 27,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Hê-bơ-rơ 9:27 nói loài người được định cho điều gì sau sự chết?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Hê-bơ-rơ 9:27 — 'Theo như đã định cho loài người phải chết một lần, rồi chịu phán xét.'",
+    "language": "vi",
+    "options": [
+      "Tái sinh nhiều lần",
+      "Ngủ đời đời",
+      "Trở thành thiên sứ",
+      "Sự phán xét"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Phán xét",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Hê-bơ-rơ 10:25 khuyên các tín hữu chớ làm gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Hê-bơ-rơ 10:25 — 'Chớ bỏ sự nhóm lại như mấy kẻ quen làm, nhưng phải khuyên bảo nhau.'",
+    "language": "vi",
+    "options": [
+      "Chớ cãi lẫy",
+      "Chớ bỏ sự nhóm lại",
+      "Chớ làm việc ngày Sa-bát",
+      "Chớ ăn của lễ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Nhóm lại",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Hê-bơ-rơ 13:15 nói tế lễ ngợi khen mà chúng ta dâng cho Chúa là gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Hê-bơ-rơ 13:15 — 'Vậy, hãy cậy Đức Chúa Jêsus mà hằng dâng tế lễ bằng lời ngợi khen cho Đức Chúa Trời, nghĩa là bông trái của môi miệng xưng danh Ngài ra.'",
+    "language": "vi",
+    "options": [
+      "Của lễ thiêu",
+      "Tiền dâng",
+      "Bông trái của môi miệng xưng danh Ngài",
+      "Của lễ chuộc tội"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Tế lễ ngợi khen",
+      "Thư tín",
+      "Nâng cao"
+    ]
   }
 ]
