@@ -328,5 +328,190 @@
       "Cất nhắc",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Vua A-suê-ru cai trị bao nhiêu tỉnh, theo Ê-xơ-tê 1:1?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ê-xơ-tê 1:1 — 'Trong đời A-suê-ru, tức A-suê-ru kia mà cai trị 127 tỉnh, từ Ấn Độ cho đến Ê-thi-ô-bi.'",
+    "language": "vi",
+    "options": [
+      "12 tỉnh",
+      "127 tỉnh",
+      "70 tỉnh",
+      "Cả thế giới"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xơ-tê",
+      "Vương quốc Ba Tư",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 2,
+    "verseStart": 5,
+    "verseEnd": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Mạc-đô-chê thuộc dân tộc nào và đến từ đâu?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ê-xơ-tê 2:5-6 — 'Tại Su-sơ, kinh đô có một người Giu-đa, tên là Mạc-đô-chê... bị bắt làm phu tù từ Giê-ru-sa-lem cùng với Giê-cô-nia, vua Giu-đa.'",
+    "language": "vi",
+    "options": [
+      "Người Ai-cập từ A-lê-xan-đri",
+      "Người La-mã từ Rô-ma",
+      "Người Giu-đa, bị bắt từ Giê-ru-sa-lem",
+      "Người Hy Lạp từ A-thên"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xơ-tê",
+      "Mạc-đô-chê",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 2,
+    "verseStart": 21,
+    "verseEnd": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Mạc-đô-chê khám phá âm mưu giết vua được làm bởi ai?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ê-xơ-tê 2:21 — 'Bích-than và Thê-rết, hai hoạn quan của vua... oán giận vua A-suê-ru, định lập tay hại vua.'",
+    "language": "vi",
+    "options": [
+      "Ha-man và bạn bè",
+      "Va-ti-tê hoàng hậu",
+      "Các tướng quân",
+      "Bích-than và Thê-rết, hai hoạn quan"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xơ-tê",
+      "Âm mưu hại vua",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 3,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Ha-man hứa nộp bao nhiêu ta-lâng bạc cho vua nếu được tiêu diệt dân Giu-đa?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ê-xơ-tê 3:9 — 'Tôi sẽ cân vào tay những kẻ thừa hành chức vụ mười ngàn ta-lâng bạc.'",
+    "language": "vi",
+    "options": [
+      "100 ta-lâng",
+      "10.000 ta-lâng",
+      "1.000 ta-lâng",
+      "1 triệu ta-lâng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xơ-tê",
+      "Tiền của Ha-man",
+      "Lịch sử",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Vợ Ha-man và bạn ông khuyên ông xây cây mộc hình cao bao nhiêu để treo Mạc-đô-chê?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ê-xơ-tê 5:14 — 'Hãy biểu dựng một mộc hình, cao năm mươi thước.'",
+    "language": "vi",
+    "options": [
+      "10 thước",
+      "20 thước",
+      "30 thước",
+      "50 thước"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xơ-tê",
+      "Mộc hình của Ha-man",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 9,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ngày 13 tháng 12 (A-đa) — ngày Ha-man định để hủy diệt — kết quả ra sao cho dân Giu-đa?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ê-xơ-tê 9:1 — 'Trong ngày kẻ thù dân Giu-đa mong làm áp đảo dân nầy, thì việc đó đã đảo ngược: dân Giu-đa lại chế ngự kẻ ghét mình.'",
+    "language": "vi",
+    "options": [
+      "Dân Giu-đa chiến thắng kẻ thù",
+      "Dân Giu-đa bị tiêu diệt",
+      "Dân Giu-đa chạy trốn",
+      "Vua hủy bỏ chiếu chỉ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xơ-tê",
+      "Đảo ngược",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Esther",
+    "chapter": 9,
+    "verseStart": 20,
+    "verseEnd": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Mạc-đô-chê viết thư truyền cho dân Giu-đa giữ ngày lễ nào hằng năm để kỷ niệm sự giải cứu?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ê-xơ-tê 9:26 — 'Bởi cớ ấy, người ta gọi những ngày đó là Phu-rim, do chữ Phu-rơ.'",
+    "language": "vi",
+    "options": [
+      "Lễ Bánh Không Men",
+      "Lễ Vượt Qua",
+      "Lễ Phu-rim",
+      "Lễ Lều Tạm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xơ-tê",
+      "Lễ Phu-rim",
+      "Lịch sử",
+      "Trung cấp"
+    ]
   }
 ]
