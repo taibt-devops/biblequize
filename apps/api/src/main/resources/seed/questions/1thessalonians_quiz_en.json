@@ -1,0 +1,606 @@
+[
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 1:1, who joined Paul as co-authors of this letter?",
+    "correctAnswer": [0],
+    "explanation": "1 Thessalonians 1:1 — 'Paul, Silvanus, and Timothy, to the church of the Thessalonians in God the Father and the Lord Jesus Christ: Grace to you and peace.'",
+    "language": "en",
+    "options": [
+      "Silvanus and Timothy",
+      "Barnabas and Mark",
+      "Luke and Titus",
+      "Apollos and Peter"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Co-authors",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 1:3, what three things does Paul remember about the Thessalonians?",
+    "correctAnswer": [1],
+    "explanation": "1 Thessalonians 1:3 — '...remembering before our God and Father your work of faith and labor of love and steadfastness of hope in our Lord Jesus Christ.'",
+    "language": "en",
+    "options": [
+      "Wisdom, eloquence, and authority",
+      "Work of faith, labor of love, steadfastness of hope",
+      "Wealth, influence, and fame",
+      "Sacrifice, abstinence, and toil"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Faith, love, hope",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 1:5, the gospel came not only in word but also in what?",
+    "correctAnswer": [2],
+    "explanation": "1 Thessalonians 1:5 — '...our gospel came to you not only in word, but also in power and in the Holy Spirit and with full conviction.'",
+    "language": "en",
+    "options": [
+      "In solemn ritual",
+      "In wonderful miracles",
+      "In power, the Holy Spirit, and full conviction",
+      "In precious gifts"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Gospel in power",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 1:9, from what did the Thessalonians turn, and to what?",
+    "correctAnswer": [3],
+    "explanation": "1 Thessalonians 1:9 — '...how you turned to God from idols to serve the living and true God...'",
+    "language": "en",
+    "options": [
+      "From the law to the gospel",
+      "From poverty to wealth",
+      "From dissolute life to moral living",
+      "From idols to serve the living and true God"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Turn from idols",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 1:10, for whom do believers wait from heaven?",
+    "correctAnswer": [0],
+    "explanation": "1 Thessalonians 1:10 — '...to wait for his Son from heaven, whom he raised from the dead, Jesus who delivers us from the wrath to come.'",
+    "language": "en",
+    "options": [
+      "His Son from heaven, Jesus who delivers from the wrath to come",
+      "An archangel",
+      "The prophet Elijah returning",
+      "A messenger of God"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Wait for His Son",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 2:7, like whom did Paul and his companions act among the Thessalonians?",
+    "correctAnswer": [1],
+    "explanation": "1 Thessalonians 2:7 — '...we were gentle among you, like a nursing mother taking care of her own children.'",
+    "language": "en",
+    "options": [
+      "Like a master with servants",
+      "Like a nursing mother caring for her own children",
+      "Like a teacher with students",
+      "Like a general with soldiers"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Nursing mother",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In 1 Thessalonians 2:11, to whom else does Paul compare himself?",
+    "correctAnswer": [2],
+    "explanation": "1 Thessalonians 2:11 — '...we exhorted each one of you as a father with his children.'",
+    "language": "en",
+    "options": [
+      "Like an elder brother to a younger",
+      "Like a master to a servant",
+      "Like a father with his children",
+      "Like a fellow traveler"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Father with children",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 4:3, what is the will of God?",
+    "correctAnswer": [3],
+    "explanation": "1 Thessalonians 4:3 — 'For this is the will of God, your sanctification: that you abstain from sexual immorality.'",
+    "language": "en",
+    "options": [
+      "That you go on a mission",
+      "That you marry",
+      "That you fast forty days",
+      "Your sanctification — abstain from sexual immorality"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Sanctification, abstain from immorality",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 4:11, what aspiration must believers have?",
+    "correctAnswer": [0],
+    "explanation": "1 Thessalonians 4:11 — '...aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you.'",
+    "language": "en",
+    "options": [
+      "Live quietly, mind your own affairs, work with your hands",
+      "Become famous and influential",
+      "Accumulate much property",
+      "Travel everywhere preaching"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Quiet life, work with hands",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 4:16, when the Lord descends from heaven, what accompanies Him?",
+    "correctAnswer": [1],
+    "explanation": "1 Thessalonians 4:16 — 'For the Lord himself will descend from heaven with a cry of command, with the voice of an archangel, and with the sound of the trumpet of God.'",
+    "language": "en",
+    "options": [
+      "A cosmic shaking",
+      "A cry of command, voice of an archangel, trumpet of God",
+      "Fire from a high mountain",
+      "Darkness covering the earth"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Trumpet of God",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 4:17, what will the living who remain do?",
+    "correctAnswer": [2],
+    "explanation": "1 Thessalonians 4:17 — '...we who are alive, who are left, will be caught up together with them in the clouds to meet the Lord in the air, and so we will always be with the Lord.'",
+    "language": "en",
+    "options": [
+      "Stand still on earth awaiting His return",
+      "Enter into fortified cities",
+      "Be caught up together in the clouds to meet the Lord in the air",
+      "Withdraw to the wilderness to pray"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Caught up to meet the Lord",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 5:2, how does the day of the Lord come?",
+    "correctAnswer": [3],
+    "explanation": "1 Thessalonians 5:2 — 'For you yourselves are fully aware that the day of the Lord will come like a thief in the night.'",
+    "language": "en",
+    "options": [
+      "Clearly announced to all",
+      "By a predetermined calendar",
+      "After clear cosmic signs",
+      "Like a thief in the night"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Day of Lord like a thief",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 5:5, what are believers?",
+    "correctAnswer": [0],
+    "explanation": "1 Thessalonians 5:5 — 'For you are all children of light, children of the day. We are not of the night or of the darkness.'",
+    "language": "en",
+    "options": [
+      "Children of light and children of the day",
+      "Sojourners on earth",
+      "Servants who must obey",
+      "Objects of wrath"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Children of light",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 5:8, what breastplate and helmet must believers wear?",
+    "correctAnswer": [1],
+    "explanation": "1 Thessalonians 5:8 — '...having put on the breastplate of faith and love, and for a helmet the hope of salvation.'",
+    "language": "en",
+    "options": [
+      "Breastplate of righteousness, helmet of victory",
+      "Breastplate of faith and love; helmet of the hope of salvation",
+      "Breastplate of the Word, helmet of the Spirit",
+      "Breastplate of wisdom, helmet of grace"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Breastplate of faith and love",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 5:9, for what has God destined believers?",
+    "correctAnswer": [2],
+    "explanation": "1 Thessalonians 5:9 — 'For God has not destined us for wrath, but to obtain salvation through our Lord Jesus Christ.'",
+    "language": "en",
+    "options": [
+      "For wrath",
+      "For unending persecution",
+      "To obtain salvation through our Lord Jesus Christ",
+      "For unending trial"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Destined for salvation",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 16,
+    "verseEnd": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 5:16-18, what is the will of God in Christ Jesus for you?",
+    "correctAnswer": [3],
+    "explanation": "1 Thessalonians 5:16-18 — 'Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.'",
+    "language": "en",
+    "options": [
+      "Many days of fasting",
+      "Hard physical labor",
+      "Solitude and silence",
+      "Rejoice always, pray without ceasing, give thanks in all circumstances"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Rejoice, pray, give thanks",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 5:23, what does God preserve blameless?",
+    "correctAnswer": [0],
+    "explanation": "1 Thessalonians 5:23 — 'Now may the God of peace himself sanctify you completely, and may your whole spirit and soul and body be kept blameless at the coming of our Lord Jesus Christ.'",
+    "language": "en",
+    "options": [
+      "Whole spirit and soul and body, blameless",
+      "Property and family",
+      "Reputation and influence",
+      "Labor and harvest"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Spirit, soul, and body",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 4:14, what about those who have fallen asleep in Christ?",
+    "correctAnswer": [1],
+    "explanation": "1 Thessalonians 4:14 — 'For since we believe that Jesus died and rose again, even so, through Jesus, God will bring with him those who have fallen asleep.'",
+    "language": "en",
+    "options": [
+      "They will remain in their tombs",
+      "God will bring them with Jesus",
+      "They will dissolve into nothingness",
+      "They will be revived in their old land"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Bringing the asleep with Christ",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 4:13, believers do not grieve like whom?",
+    "correctAnswer": [2],
+    "explanation": "1 Thessalonians 4:13 — '...that you may not grieve as others do who have no hope.'",
+    "language": "en",
+    "options": [
+      "Like the prophets of old",
+      "Like the greedy of this world",
+      "Like others who have no hope",
+      "Like those who oppose the faith"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Not grieving like the hopeless",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 3,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 3:12, what does Paul pray that the Lord increase and abound in believers?",
+    "correctAnswer": [3],
+    "explanation": "1 Thessalonians 3:12 — 'and may the Lord make you increase and abound in love for one another and for all, as we do for you.'",
+    "language": "en",
+    "options": [
+      "Wisdom and knowledge",
+      "Possessions and inheritance",
+      "Power and miracles",
+      "Love for one another and for all"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Love for all",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 21,
+    "verseEnd": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Thessalonians 5:21-22, after testing everything and holding to what is good, what must believers abstain from?",
+    "correctAnswer": [0],
+    "explanation": "1 Thessalonians 5:21-22 — 'Test everything; hold fast what is good. Abstain from every form of evil.'",
+    "language": "en",
+    "options": [
+      "Every form of evil",
+      "All disputes",
+      "All meetings with outsiders",
+      "All hard labor"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Abstain from every form of evil",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 1 Thessalonians 1:9-10, what did the Thessalonians do? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Thessalonians 1:9-10 — '...you turned to God from idols to serve the living and true God, and to wait for his Son from heaven...' Three actions; 'returned to old practices' contradicts.",
+    "language": "en",
+    "options": [
+      "Turned to God from idols",
+      "Serve the living and true God",
+      "Wait for His Son from heaven",
+      "Returned to old practices"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Turning from idols",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 1 Thessalonians 4:16, what accompanies the Lord's coming? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Thessalonians 4:16 — '...the Lord himself will descend from heaven with a cry of command, with the voice of an archangel, and with the sound of the trumpet of God.' Three sounds; 'silently unnoticed' is the opposite.",
+    "language": "en",
+    "options": [
+      "A cry of command",
+      "The voice of an archangel",
+      "The sound of the trumpet of God",
+      "Silently with no sound"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "The Lord's coming",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 1 Thessalonians 5:14, how must believers treat various groups of people? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Thessalonians 5:14 — '...admonish the idle, encourage the fainthearted, help the weak, be patient with them all.' Three specific groups; 'cursing the apostate' contradicts the spirit of the passage.",
+    "language": "en",
+    "options": [
+      "Admonish the idle",
+      "Encourage the fainthearted",
+      "Help the weak",
+      "Curse those who fall away"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Treating three groups",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 16,
+    "verseEnd": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 1 Thessalonians 5:16-18, what three things make up God's will for believers? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Thessalonians 5:16-18 — 'Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.' Three commands; 'sleep early' is not in the text.",
+    "language": "en",
+    "options": [
+      "Rejoice always",
+      "Pray without ceasing",
+      "Give thanks in all circumstances",
+      "Sleep early to rise early"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Thessalonians",
+      "Epistle",
+      "Three commands of God's will",
+      "Advanced"
+    ]
+  }
+]

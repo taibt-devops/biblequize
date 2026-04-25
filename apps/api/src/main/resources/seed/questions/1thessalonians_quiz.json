@@ -1,0 +1,606 @@
+[
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 1:1, ai cùng Phao-lô đồng tác giả thư này?",
+    "correctAnswer": [0],
+    "explanation": "1 Tê-sa-lô-ni-ca 1:1 — 'Phao-lô, Sin-vanh và Ti-mô-thê gởi cho Hội Thánh ở Tê-sa-lô-ni-ca, Hội Thánh ở trong Đức Chúa Trời, là Cha, và trong Đức Chúa Jêsus Christ, là Chúa: Nguyền xin ân điển và sự bình an ban cho anh em!'",
+    "language": "vi",
+    "options": [
+      "Sin-vanh và Ti-mô-thê",
+      "Bạt-na-ba và Mác",
+      "Lu-ca và Tít",
+      "A-bô-lô và Phi-e-rơ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Đồng tác giả",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 1:3, Phao-lô nhớ ba điều gì nơi tín hữu Tê-sa-lô-ni-ca?",
+    "correctAnswer": [1],
+    "explanation": "1 Tê-sa-lô-ni-ca 1:3 — '...vì chúng tôi nhớ mãi không thôi công việc của đức tin anh em, công lao của lòng yêu thương anh em, và sự bền đỗ về sự trông cậy nơi Đức Chúa Jêsus Christ chúng ta...'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan, hùng biện và quyền uy",
+      "Công việc của đức tin, công lao của lòng yêu thương, sự bền đỗ của trông cậy",
+      "Sự giàu có, ảnh hưởng và danh tiếng",
+      "Sự hi sinh, kiêng nhịn và lao khổ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Đức tin yêu thương trông cậy",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 1:5, Tin Lành đến với họ chẳng phải bằng lời mà còn bằng gì?",
+    "correctAnswer": [2],
+    "explanation": "1 Tê-sa-lô-ni-ca 1:5 — 'Vả, đạo Tin Lành chúng tôi đã rao truyền cho anh em, không những bằng lời nói thôi, lại cũng bằng quyền phép, Đức Thánh Linh và sức mạnh của sự tin quyết nữa.'",
+    "language": "vi",
+    "options": [
+      "Bằng nghi lễ trang trọng",
+      "Bằng các phép lạ kỳ diệu",
+      "Bằng quyền phép, Đức Thánh Linh và sức mạnh của sự tin quyết",
+      "Bằng quà tặng quý giá"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Tin Lành trong quyền phép",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 1:9, tín hữu Tê-sa-lô-ni-ca đã quay khỏi điều gì để làm gì?",
+    "correctAnswer": [3],
+    "explanation": "1 Tê-sa-lô-ni-ca 1:9 — '...làm sao anh em đã trở lại cùng Đức Chúa Trời, bỏ hình tượng đặng thờ Đức Chúa Trời hằng sống và chân thật...'",
+    "language": "vi",
+    "options": [
+      "Khỏi luật pháp đến Tin Lành",
+      "Khỏi nghèo đến giàu",
+      "Khỏi sự sa đọa đến đời sống đạo đức",
+      "Khỏi hình tượng để thờ Đức Chúa Trời hằng sống và chân thật"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Bỏ hình tượng",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 1:10, tín hữu chờ đợi ai từ trên trời?",
+    "correctAnswer": [0],
+    "explanation": "1 Tê-sa-lô-ni-ca 1:10 — '...đặng chờ đợi Con Ngài từ trên trời, là Đức Chúa Jêsus mà Ngài đã khiến từ kẻ chết sống lại, tức là Đấng giải cứu chúng ta khỏi cơn thạnh nộ ngày sau.'",
+    "language": "vi",
+    "options": [
+      "Con Ngài từ trên trời, Đức Chúa Jêsus, Đấng giải cứu khỏi cơn thạnh nộ",
+      "Một thiên sứ trưởng",
+      "Tiên tri Ê-li tái xuất",
+      "Một sứ giả của Đức Chúa Trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Chờ đợi Con Ngài",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 2:7, Phao-lô và bạn đã đối đãi tín hữu Tê-sa-lô-ni-ca như ai?",
+    "correctAnswer": [1],
+    "explanation": "1 Tê-sa-lô-ni-ca 2:7 — '...nhưng chúng tôi đã ăn ở nhu mì giữa anh em, như một người vú săn sóc chính con mình.'",
+    "language": "vi",
+    "options": [
+      "Như chủ với đầy tớ",
+      "Như người vú săn sóc chính con mình",
+      "Như thầy với học trò",
+      "Như tướng với binh lính"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Người vú săn sóc",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 2:11, Phao-lô cũng so sánh chính mình với ai?",
+    "correctAnswer": [2],
+    "explanation": "1 Tê-sa-lô-ni-ca 2:11 — '...anh em cũng biết rằng chúng tôi đối đãi với mỗi người trong anh em, như cha đối với con vậy.'",
+    "language": "vi",
+    "options": [
+      "Như anh với em",
+      "Như chủ với đầy tớ",
+      "Như cha đối với con",
+      "Như bạn cùng đường"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Cha đối với con",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 4:3, ý muốn của Đức Chúa Trời là gì?",
+    "correctAnswer": [3],
+    "explanation": "1 Tê-sa-lô-ni-ca 4:3 — 'Vì ý muốn Đức Chúa Trời, ấy là khiến anh em nên thánh: tức là phải lánh sự ô uế.'",
+    "language": "vi",
+    "options": [
+      "Anh em phải đi truyền giáo",
+      "Anh em phải lập gia đình",
+      "Anh em phải kiêng ăn bốn mươi ngày",
+      "Anh em nên thánh — phải lánh sự ô uế (tà dâm)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Nên thánh, lánh tà dâm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 4:11, tín hữu phải có nguyện vọng gì?",
+    "correctAnswer": [0],
+    "explanation": "1 Tê-sa-lô-ni-ca 4:11 — '...ráng tập ăn ở cho yên lặng, săn sóc việc riêng mình, lấy chính tay mình làm lụng, như chúng tôi đã dặn bảo anh em.'",
+    "language": "vi",
+    "options": [
+      "Yên lặng, săn sóc việc riêng mình, lấy chính tay mình làm lụng",
+      "Nổi tiếng và có ảnh hưởng lớn",
+      "Tích lũy tài sản nhiều",
+      "Đi khắp xứ rao giảng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Ăn ở yên lặng, làm lụng",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 4:16, khi Chúa từ trời giáng xuống, sẽ có những điều gì kèm theo?",
+    "correctAnswer": [1],
+    "explanation": "1 Tê-sa-lô-ni-ca 4:16 — 'Vì sẽ có tiếng kêu lớn và tiếng của thiên sứ lớn cùng tiếng kèn của Đức Chúa Trời, thì chính mình Chúa ở trên trời giáng xuống...'",
+    "language": "vi",
+    "options": [
+      "Tiếng vũ trụ rúng động",
+      "Tiếng kêu lớn, tiếng thiên sứ lớn, tiếng kèn của Đức Chúa Trời",
+      "Lửa từ ngọn núi cao",
+      "Bóng tối bao trùm khắp đất"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Tiếng kèn của Chúa",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 4:17, những người còn sống và đang ở lại sẽ được làm gì?",
+    "correctAnswer": [2],
+    "explanation": "1 Tê-sa-lô-ni-ca 4:17 — '...Kế đến chúng ta là kẻ sống, mà còn ở lại, sẽ cùng nhau đều được cất lên với những người ấy giữa đám mây, tại nơi không trung mà gặp Chúa, như vậy chúng ta sẽ ở cùng Chúa luôn luôn.'",
+    "language": "vi",
+    "options": [
+      "Đứng yên trên đất chờ Chúa đến",
+      "Vào trong các thành kiên cố",
+      "Cùng được cất lên giữa đám mây tại nơi không trung gặp Chúa",
+      "Lui về đồng vắng để cầu nguyện"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Cất lên gặp Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 5:2, ngày của Chúa đến như thế nào?",
+    "correctAnswer": [3],
+    "explanation": "1 Tê-sa-lô-ni-ca 5:2 — 'Vì chính anh em biết rõ lắm rằng ngày của Chúa sẽ đến như kẻ trộm trong ban đêm vậy.'",
+    "language": "vi",
+    "options": [
+      "Báo trước rõ ràng cho mọi người",
+      "Theo lịch định sẵn từ trước",
+      "Sau các dấu hiệu vũ trụ rõ rệt",
+      "Như kẻ trộm trong ban đêm"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Ngày Chúa như kẻ trộm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 5:5, tín hữu là gì?",
+    "correctAnswer": [0],
+    "explanation": "1 Tê-sa-lô-ni-ca 5:5 — 'Anh em đều là con của sự sáng và con của ban ngày. Chúng ta không phải thuộc về ban đêm, cũng không phải thuộc về sự mờ tối.'",
+    "language": "vi",
+    "options": [
+      "Con của sự sáng và con của ban ngày",
+      "Khách bộ hành trên đất",
+      "Đầy tớ phải vâng lời",
+      "Đối tượng của cơn thạnh nộ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Con của sự sáng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 5:8, tín hữu phải mặc áo giáp gì và đội mão gì?",
+    "correctAnswer": [1],
+    "explanation": "1 Tê-sa-lô-ni-ca 5:8 — '...phải mặc áo giáp bằng đức tin và lòng yêu thương, lấy sự trông cậy về cứu chuộc làm mão trụ.'",
+    "language": "vi",
+    "options": [
+      "Áo giáp công bình, mão trụ chiến thắng",
+      "Áo giáp đức tin và lòng yêu thương; mão trụ là sự trông cậy về cứu chuộc",
+      "Áo giáp Lời Chúa, mão trụ Thánh Linh",
+      "Áo giáp khôn ngoan, mão trụ ân điển"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Áo giáp đức tin yêu thương",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 5:9, Đức Chúa Trời định cho tín hữu điều gì?",
+    "correctAnswer": [2],
+    "explanation": "1 Tê-sa-lô-ni-ca 5:9 — 'Vì Đức Chúa Trời chẳng định sẵn cho chúng ta bị cơn thạnh nộ, nhưng cho được sự giải cứu bởi Đức Chúa Jêsus Christ chúng ta.'",
+    "language": "vi",
+    "options": [
+      "Cho cơn thạnh nộ",
+      "Cho sự bị bắt bớ đến cùng",
+      "Cho sự giải cứu bởi Đức Chúa Jêsus Christ",
+      "Cho sự thử thách không dứt"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Định cho sự giải cứu",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 16,
+    "verseEnd": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 5:16-18, ý muốn của Đức Chúa Trời trong Đấng Christ về anh em là gì?",
+    "correctAnswer": [3],
+    "explanation": "1 Tê-sa-lô-ni-ca 5:16-18 — 'Hãy vui mừng mãi mãi, cầu nguyện không thôi, phàm việc gì cũng phải tạ ơn Chúa; vì ý muốn của Đức Chúa Trời trong Đức Chúa Jêsus Christ đối với anh em là như vậy.'",
+    "language": "vi",
+    "options": [
+      "Sự kiêng ăn nhiều ngày",
+      "Sự lao động vất vả",
+      "Sự cô tịch và yên lặng",
+      "Vui mừng mãi mãi, cầu nguyện không thôi, phàm việc gì cũng tạ ơn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Vui mừng cầu nguyện tạ ơn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 5:23, Đức Chúa Trời gìn giữ điều gì cho không trách được?",
+    "correctAnswer": [0],
+    "explanation": "1 Tê-sa-lô-ni-ca 5:23 — 'Nguyền xin chính Đức Chúa Trời bình an khiến anh em nên thánh trọn vẹn, và nguyền xin tâm thần, linh hồn, và thân thể của anh em đều được giữ vẹn, không chỗ trách được, khi Đức Chúa Jêsus Christ chúng ta đến!'",
+    "language": "vi",
+    "options": [
+      "Tâm thần, linh hồn, và thân thể không chỗ trách được",
+      "Tài sản và gia đình",
+      "Danh tiếng và ảnh hưởng",
+      "Lao động và mùa màng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Tâm thần linh hồn thân thể",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 4:14, những kẻ ngủ trong Christ sẽ thế nào?",
+    "correctAnswer": [1],
+    "explanation": "1 Tê-sa-lô-ni-ca 4:14 — 'Vì nếu chúng ta tin Đức Chúa Jêsus đã chết và sống lại, thì cũng vậy, Đức Chúa Trời sẽ đem những kẻ ngủ trong Đức Chúa Jêsus cùng đến với Ngài.'",
+    "language": "vi",
+    "options": [
+      "Sẽ ở nguyên trong mộ",
+      "Đức Chúa Trời sẽ đem cùng đến với Đức Chúa Jêsus",
+      "Sẽ tan biến không còn dấu vết",
+      "Sẽ hồi sinh tại đất xưa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Đem kẻ ngủ với Christ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 4:13, tín hữu không buồn rầu như ai?",
+    "correctAnswer": [2],
+    "explanation": "1 Tê-sa-lô-ni-ca 4:13 — '...hầu cho anh em chớ buồn rầu như người khác không có sự trông cậy.'",
+    "language": "vi",
+    "options": [
+      "Như các tiên tri xưa",
+      "Như những kẻ tham lam đời này",
+      "Như người khác không có sự trông cậy",
+      "Như những kẻ chống đạo"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Không buồn như kẻ không trông cậy",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 3,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 3:12, Phao-lô cầu xin Chúa cho tín hữu thêm và đầy dẫy điều gì?",
+    "correctAnswer": [3],
+    "explanation": "1 Tê-sa-lô-ni-ca 3:12 — 'Lại nguyền xin Chúa làm cho anh em thêm và đầy dẫy lòng yêu thương đối với nhau cùng đối với mọi người, cũng như lòng yêu thương của chúng tôi đối với anh em vậy.'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan và hiểu biết",
+      "Của cải và sản nghiệp",
+      "Quyền năng và phép lạ",
+      "Lòng yêu thương đối với nhau và đối với mọi người"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Yêu thương đối với mọi người",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 21,
+    "verseEnd": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 5:21-22, sau khi 'thử mọi sự giữ điều thiện', tín hữu phải tránh điều gì?",
+    "correctAnswer": [0],
+    "explanation": "1 Tê-sa-lô-ni-ca 5:21-22 — 'Hãy thử mọi sự, điều chi lành thì giữ lấy. Bất cứ việc gì tựa như điều ác, thì phải tránh đi.'",
+    "language": "vi",
+    "options": [
+      "Bất cứ việc gì tựa như điều ác",
+      "Mọi cuộc tranh luận",
+      "Mọi cuộc gặp gỡ với người ngoại",
+      "Mọi sự lao động khó nhọc"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Tránh tựa điều ác",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 1:9-10, tín hữu Tê-sa-lô-ni-ca đã làm những điều nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Tê-sa-lô-ni-ca 1:9-10 — '...trở lại cùng Đức Chúa Trời, bỏ hình tượng đặng thờ Đức Chúa Trời hằng sống và chân thật, đặng chờ đợi Con Ngài từ trên trời.' Ba việc; 'trở lại các tập tục cũ' trái nghịch.",
+    "language": "vi",
+    "options": [
+      "Trở lại cùng Đức Chúa Trời, bỏ hình tượng",
+      "Thờ Đức Chúa Trời hằng sống và chân thật",
+      "Chờ đợi Con Ngài từ trên trời",
+      "Trở lại các tập tục cũ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Quay khỏi hình tượng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 4:16, sự hiện đến của Chúa kèm theo những điều gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Tê-sa-lô-ni-ca 4:16 — '...sẽ có tiếng kêu lớn và tiếng của thiên sứ lớn cùng tiếng kèn của Đức Chúa Trời, thì chính mình Chúa ở trên trời giáng xuống...' Ba âm thanh; 'lén lút không ai biết' trái nghịch.",
+    "language": "vi",
+    "options": [
+      "Tiếng kêu lớn",
+      "Tiếng của thiên sứ lớn",
+      "Tiếng kèn của Đức Chúa Trời",
+      "Lén lút không một âm thanh nào"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Sự đến của Chúa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 5:14, tín hữu phải đối xử với các nhóm người nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Tê-sa-lô-ni-ca 5:14 — '...hãy răn bảo những kẻ ăn ở bậy bạ, yên ủi những kẻ ngã lòng, nâng đỡ những kẻ yếu đuối, phải nhịn nhục đối với mọi người.' Ba nhóm cụ thể; 'rủa sả kẻ lìa đạo' trái với tinh thần đoạn này.",
+    "language": "vi",
+    "options": [
+      "Răn bảo những kẻ ăn ở bậy bạ",
+      "Yên ủi những kẻ ngã lòng",
+      "Nâng đỡ những kẻ yếu đuối",
+      "Rủa sả những kẻ lìa đạo"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Đối xử ba nhóm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verseStart": 16,
+    "verseEnd": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 1 Tê-sa-lô-ni-ca 5:16-18, ba điều thuộc ý muốn Đức Chúa Trời cho tín hữu là gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Tê-sa-lô-ni-ca 5:16-18 — 'Hãy vui mừng mãi mãi, cầu nguyện không thôi, phàm việc gì cũng phải tạ ơn Chúa; vì ý muốn của Đức Chúa Trời trong Đức Chúa Jêsus Christ đối với anh em là như vậy.' Ba mệnh lệnh; 'ngủ sớm' không có trong văn bản.",
+    "language": "vi",
+    "options": [
+      "Vui mừng mãi mãi",
+      "Cầu nguyện không thôi",
+      "Phàm việc gì cũng tạ ơn Chúa",
+      "Ngủ sớm để dậy sớm"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Tê-sa-lô-ni-ca",
+      "Thư tín",
+      "Ba mệnh lệnh ý muốn Chúa",
+      "Nâng cao"
+    ]
+  }
+]
