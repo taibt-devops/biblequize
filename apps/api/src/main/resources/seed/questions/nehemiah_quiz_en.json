@@ -331,5 +331,191 @@
       "Joy",
       "Basic"
     ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In rebuilding Jerusalem's wall, who built the Sheep Gate together with the priests?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Nehemiah 3:1 — 'Then Eliashib the high priest rose up with his brothers the priests, and they built the Sheep Gate.'",
+    "language": "en",
+    "options": [
+      "Ezra",
+      "Nehemiah",
+      "Eliashib the high priest",
+      "Zerubbabel"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Sheep Gate",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 4,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "While building the wall, what did the Israelites hold while one hand worked?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Nehemiah 4:17 — 'Each of the builders had his sword strapped at his side while he built.' One hand worked while a weapon stood ready.",
+    "language": "en",
+    "options": [
+      "A torch",
+      "A censer",
+      "A weapon (sword/spear)",
+      "The Book of the Law"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Built with Weapon",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "After the wall was finished, to whom did Nehemiah entrust Jerusalem along with the commander of the fortress?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Nehemiah 7:2 — 'I gave my brother Hanani and Hananiah the governor of the castle charge over Jerusalem, for he was a more faithful and God-fearing man than many.'",
+    "language": "en",
+    "options": [
+      "Ezra and Zerubbabel",
+      "Hanani (Nehemiah's brother) and Hananiah",
+      "Sanballat and Tobiah",
+      "Eliashib alone"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Delegating Authority",
+      "History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How does Nehemiah 9 describe Israel's confession?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Nehemiah 9:1-2 — 'On the twenty-fourth day of this month the people of Israel were assembled with fasting and in sackcloth, and with earth on their heads. And they stood and confessed their sins.'",
+    "language": "en",
+    "options": [
+      "Singing psalms all day",
+      "Bringing many sacrifices",
+      "Going on pilgrimage",
+      "Fasting in sackcloth, with earth on their heads, confessing sin"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Confession of Sin",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 10,
+    "verseStart": 28,
+    "verseEnd": 29,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Nehemiah 10:28-29, what did the people do together regarding God's law?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Nehemiah 10:29 — 'They join with their brothers... and enter into a curse and an oath to walk in God's Law that was given by Moses the servant of God.'",
+    "language": "en",
+    "options": [
+      "Burned the old book of law",
+      "Composed new laws",
+      "Solemnly swore to walk in the law of Moses",
+      "Abandoned the law for pagan customs"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Covenant Renewal",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How did the people decide who would live in Jerusalem?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Nehemiah 11:1 — 'Now the leaders of the people lived in Jerusalem. And the rest of the people cast lots to bring one of ten to live in Jerusalem the holy city, while nine out of ten remained in the other towns.'",
+    "language": "en",
+    "options": [
+      "Each person volunteered",
+      "The king mandated it",
+      "Priests and Levites had priority",
+      "Cast lots: 1 in 10 to live in Jerusalem"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Living in Jerusalem",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verseStart": 23,
+    "verseEnd": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What sin does Nehemiah 13:23-27 rebuke the people for?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Nehemiah 13:23 — 'In those days also I saw the Jews who had married women of Ashdod, Ammon, and Moab.' Nehemiah rebuked them for foreign marriages.",
+    "language": "en",
+    "options": [
+      "Stealing from the temple",
+      "Marrying foreign women of Ashdod, Ammon, Moab",
+      "Dishonest trade",
+      "Breaking the Sabbath only once"
+    ],
+    "tags": [
+      "Old Testament",
+      "Nehemiah",
+      "Foreign Marriages",
+      "History",
+      "Intermediate"
+    ]
   }
 ]

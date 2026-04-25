@@ -331,5 +331,191 @@
       "Vui mừng",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong việc xây lại tường thành Giê-ru-sa-lem, ai cùng với các thầy tế lễ xây cửa Chiên?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Nê-hê-mi 3:1 — 'Ê-li-a-síp, thầy tế lễ thượng phẩm, chỗi dậy với các anh em là thầy tế lễ, mà xây cất cửa Chiên.'",
+    "language": "vi",
+    "options": [
+      "E-xơ-ra",
+      "Nê-hê-mi",
+      "Ê-li-a-síp, thầy tế lễ thượng phẩm",
+      "Xô-rô-ba-bên"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nê-hê-mi",
+      "Cửa Chiên",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 4,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Khi xây tường, dân Y-sơ-ra-ên cầm gì trong khi tay kia làm việc?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Nê-hê-mi 4:17 — 'Những kẻ xây cất, ai nấy đều có gươm đeo bên hông trong khi xây cất.' Một tay làm việc, tay khác cầm khí giới.",
+    "language": "vi",
+    "options": [
+      "Ngọn đuốc",
+      "Lư hương",
+      "Khí giới (gươm/giáo)",
+      "Sách Luật"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nê-hê-mi",
+      "Xây với khí giới",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Sau khi tường hoàn tất, Nê-hê-mi giao Giê-ru-sa-lem cho ai cai quản cùng với người chỉ huy đồn?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Nê-hê-mi 7:2 — 'Tôi giao phó việc cai trị Giê-ru-sa-lem cho Ha-na-ni, em tôi, và cho Ha-na-nia, quan tể của đồn, vì là người trung tín và kính sợ Đức Chúa Trời hơn nhiều người khác.'",
+    "language": "vi",
+    "options": [
+      "E-xơ-ra và Xô-rô-ba-bên",
+      "Ha-na-ni (em Nê-hê-mi) và Ha-na-nia",
+      "Sa-na-ba-lát và Tô-bi-gia",
+      "Ê-li-a-síp một mình"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nê-hê-mi",
+      "Giao quyền cai quản",
+      "Lịch sử",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Nê-hê-mi 9 mô tả dân Y-sơ-ra-ên làm gì để xưng tội?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Nê-hê-mi 9:1-2 — 'Ngày hai mươi bốn tháng ấy, dân Y-sơ-ra-ên nhóm hiệp lại, cữ ăn, mặc bao và phủ bụi đất trên mình. Họ đứng dậy tại chỗ mình mà xưng tội mình.'",
+    "language": "vi",
+    "options": [
+      "Hát thi thiên cả ngày",
+      "Dâng tế lễ rất nhiều",
+      "Đi hành hương",
+      "Cữ ăn, mặc bao gai, phủ bụi và xưng tội"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nê-hê-mi",
+      "Ăn năn xưng tội",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 10,
+    "verseStart": 28,
+    "verseEnd": 29,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Nê-hê-mi 10:28-29, dân sự cùng nhau làm gì với luật pháp Đức Chúa Trời?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Nê-hê-mi 10:29 — 'Họ thề theo lời nguyền sẽ vâng theo luật pháp Đức Chúa Trời, đã ban bởi Môi-se, tôi tớ Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Đốt sách luật cũ",
+      "Soạn thêm luật mới",
+      "Long trọng cam kết vâng theo luật pháp Môi-se",
+      "Bỏ luật để theo phong tục dân ngoại"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nê-hê-mi",
+      "Tái lập giao ước",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Để có người ở thành Giê-ru-sa-lem, dân sự đã làm gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Nê-hê-mi 11:1 — 'Dân sự bắt thăm để bắt một trong mười người ở trong Giê-ru-sa-lem, là thành thánh, còn chín người kia thì ở trong các thành khác.'",
+    "language": "vi",
+    "options": [
+      "Mỗi người tự nguyện đến",
+      "Vua chỉ định bắt buộc",
+      "Ưu tiên thầy tế lễ và Lê-vi",
+      "Bắt thăm: 1 trong 10 người ở Giê-ru-sa-lem"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nê-hê-mi",
+      "Dân ở Giê-ru-sa-lem",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 13,
+    "verseStart": 23,
+    "verseEnd": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Nê-hê-mi 13:23-27 nói tiên tri quở trách dân về việc gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Nê-hê-mi 13:23 — 'Cùng trong những ngày ấy, tôi thấy nhiều người Giu-đa cưới đàn bà Ách-đốt, Am-môn, và Mô-áp.' Nê-hê-mi quở vì việc kết hôn ngoại.",
+    "language": "vi",
+    "options": [
+      "Trộm cắp đền thờ",
+      "Cưới đàn bà ngoại bang Ách-đốt, Am-môn, Mô-áp",
+      "Buôn bán bất chính",
+      "Bỏ ngày Sa-bát chỉ một lần"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Nê-hê-mi",
+      "Hôn nhân ngoại bang",
+      "Lịch sử",
+      "Trung cấp"
+    ]
   }
 ]
