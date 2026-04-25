@@ -358,5 +358,192 @@
       "Lịch sử",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sau khi Giô-suê qua đời, Đức Giê-hô-va phán chi phái nào sẽ đi lên trước đánh dân Ca-na-an?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Các Quan Xét 1:1-2 — 'Sau khi Giô-suê qua đời, dân Y-sơ-ra-ên cầu hỏi Đức Giê-hô-va... Đức Giê-hô-va phán: Giu-đa sẽ đi lên.'",
+    "language": "vi",
+    "options": [
+      "Bên-gia-min",
+      "Ép-ra-im",
+      "Giu-đa",
+      "Ru-bên"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Các Quan Xét",
+      "Giu-đa",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 3,
+    "verseStart": 15,
+    "verseEnd": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ê-hút, người thuận tay trái, đã giết vua nào của Mô-áp?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Các Quan Xét 3:21-22 — 'Ê-hút giơ tay tả ra rút gươm... đâm vào bụng Éc-lôn... lưỡi gươm cắm vào sâu cả cán.'",
+    "language": "vi",
+    "options": [
+      "Ba-lác",
+      "Éc-lôn",
+      "Si-hôn",
+      "Sí-sê-ra"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Các Quan Xét",
+      "Ê-hút",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Bài ca chiến thắng trong Các Quan Xét 5 do ai và ai cùng hát?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Các Quan Xét 5:1 — 'Trong ngày ấy, Đê-bô-ra hát bài ca nầy với Ba-rác, con trai A-bi-nô-am.'",
+    "language": "vi",
+    "options": [
+      "Sam-sôn và Đa-li-la",
+      "Ghê-đê-ôn và 300 người",
+      "Giép-thê và con gái",
+      "Đê-bô-ra và Ba-rác"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Các Quan Xét",
+      "Bài ca Đê-bô-ra",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "verseStart": 53,
+    "verseEnd": 54,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "A-bi-mê-léc bị giết bởi vật gì do một phụ nữ ném từ trên tháp?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Các Quan Xét 9:53 — 'Một người đàn bà ném thớt cối trên đầu A-bi-mê-léc, làm vỡ sọ người.'",
+    "language": "vi",
+    "options": [
+      "Một mũi tên",
+      "Một cây giáo",
+      "Thớt cối (đá xay)",
+      "Một con dao"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Các Quan Xét",
+      "A-bi-mê-léc",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 12,
+    "verseStart": 5,
+    "verseEnd": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Người Ép-ra-im bị nhận diện và giết tại bến Giô-đanh khi không phát âm đúng từ nào?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Các Quan Xét 12:6 — 'Họ bảo: Hãy nói: Si-bô-lết. Người Ép-ra-im nói: Si-bô-lết, vì không thể phát âm cho đúng được. Bấy giờ chúng bắt người, giết đi.'",
+    "language": "vi",
+    "options": [
+      "Sí-sê-ra",
+      "Si-lô",
+      "Sa-lem",
+      "Si-bô-lết (Shibboleth)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Các Quan Xét",
+      "Si-bô-lết",
+      "Lịch sử",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 17,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Câu nổi tiếng tổng kết thời các quan xét trong Các Quan Xét 17:6 là gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Các Quan Xét 17:6 — 'Trong lúc đó, không có vua trong Y-sơ-ra-ên, mọi người cứ làm theo ý mình lấy làm phải.'",
+    "language": "vi",
+    "options": [
+      "Y-sơ-ra-ên có vua bình an",
+      "Có vị vua công bình",
+      "Không có vua, mọi người làm theo ý mình lấy làm phải",
+      "Đức Chúa Trời ngự giữa dân"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Các Quan Xét",
+      "Không có vua",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "verseStart": 22,
+    "verseEnd": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Câu chuyện tàn ác trong Các Quan Xét 19 liên quan đến vợ lẽ của ai bị hại tại Ghi-bê-a?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Các Quan Xét 19:1,25-30 — Vợ lẽ của một người Lê-vi bị dân thành Ghi-bê-a hãm hiếp đến chết, dẫn đến nội chiến với Bên-gia-min.",
+    "language": "vi",
+    "options": [
+      "Một người Lê-vi",
+      "Vua Sau-lơ",
+      "Một thầy tế lễ",
+      "Quan xét Sam-gia"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Các Quan Xét",
+      "Bi kịch Ghi-bê-a",
+      "Lịch sử",
+      "Trung cấp"
+    ]
   }
 ]

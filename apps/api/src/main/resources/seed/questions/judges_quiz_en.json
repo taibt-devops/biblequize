@@ -358,5 +358,192 @@
       "History",
       "Intermediate"
     ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "After Joshua died, which tribe did the LORD say should go up first against the Canaanites?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Judges 1:1-2 — 'After the death of Joshua, the people of Israel inquired of the LORD... The LORD said, Judah shall go up.'",
+    "language": "en",
+    "options": [
+      "Benjamin",
+      "Ephraim",
+      "Judah",
+      "Reuben"
+    ],
+    "tags": [
+      "Old Testament",
+      "Judges",
+      "Judah",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 3,
+    "verseStart": 15,
+    "verseEnd": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ehud, the left-handed judge, killed which king of Moab?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Judges 3:21-22 — 'Ehud reached with his left hand, took the sword... and thrust it into his belly. And the hilt also went in after the blade.'",
+    "language": "en",
+    "options": [
+      "Balak",
+      "Eglon",
+      "Sihon",
+      "Sisera"
+    ],
+    "tags": [
+      "Old Testament",
+      "Judges",
+      "Ehud",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Who sang the victory song in Judges 5?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Judges 5:1 — 'Then sang Deborah and Barak the son of Abinoam on that day.'",
+    "language": "en",
+    "options": [
+      "Samson and Delilah",
+      "Gideon and the 300",
+      "Jephthah and his daughter",
+      "Deborah and Barak"
+    ],
+    "tags": [
+      "Old Testament",
+      "Judges",
+      "Song of Deborah",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "verseStart": 53,
+    "verseEnd": 54,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Abimelech was killed by what object thrown by a woman from the tower?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Judges 9:53 — 'And a certain woman threw an upper millstone on Abimelech's head and crushed his skull.'",
+    "language": "en",
+    "options": [
+      "An arrow",
+      "A spear",
+      "An upper millstone",
+      "A knife"
+    ],
+    "tags": [
+      "Old Testament",
+      "Judges",
+      "Abimelech",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 12,
+    "verseStart": 5,
+    "verseEnd": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "The Ephraimites were detected and killed at the fords of the Jordan when they could not pronounce what word?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Judges 12:6 — 'They said to him, Then say Shibboleth, and he said, Sibboleth, for he could not pronounce it right. Then they seized him and slaughtered him at the fords of the Jordan.'",
+    "language": "en",
+    "options": [
+      "Sisera",
+      "Shiloh",
+      "Salem",
+      "Shibboleth"
+    ],
+    "tags": [
+      "Old Testament",
+      "Judges",
+      "Shibboleth",
+      "History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 17,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What is the famous summary of the time of the judges in Judges 17:6?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Judges 17:6 — 'In those days there was no king in Israel. Everyone did what was right in his own eyes.'",
+    "language": "en",
+    "options": [
+      "Israel had a peaceful king",
+      "There was a righteous king",
+      "There was no king; everyone did what was right in his own eyes",
+      "God dwelt in the midst of the people"
+    ],
+    "tags": [
+      "Old Testament",
+      "Judges",
+      "No King",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "verseStart": 22,
+    "verseEnd": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "The brutal account in Judges 19 involves the concubine of which man being violated at Gibeah?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Judges 19:1,25-30 — A Levite's concubine was abused to death by men of Gibeah, leading to civil war with Benjamin.",
+    "language": "en",
+    "options": [
+      "A Levite",
+      "King Saul",
+      "A priest",
+      "Judge Shamgar"
+    ],
+    "tags": [
+      "Old Testament",
+      "Judges",
+      "Tragedy at Gibeah",
+      "History",
+      "Intermediate"
+    ]
   }
 ]
