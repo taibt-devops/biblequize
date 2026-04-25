@@ -1,0 +1,483 @@
+[
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Lời Đức Giê-hô-va đến qua tiên tri nào trong sách A-ghê?",
+    "correctAnswer": [0],
+    "explanation": "A-ghê 1:1 — 'Năm thứ hai đời vua Đa-ri-út, ngày mồng một tháng sáu, có lời của Đức Giê-hô-va cậy đấng tiên tri A-ghê phán cho Xô-rô-ba-bên...'",
+    "language": "vi",
+    "options": [
+      "A-ghê",
+      "Xa-cha-ri",
+      "Ma-la-chi",
+      "E-xơ-ra"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Tiên tri A-ghê",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo A-ghê 1:1, Xô-rô-ba-bên giữ chức vụ gì tại Giu-đa?",
+    "correctAnswer": [1],
+    "explanation": "A-ghê 1:1 — '...phán cho Xô-rô-ba-bên, con trai Sa-anh-thi-ên, quan trấn thủ xứ Giu-đa, và cho Giê-hô-sua, con trai Giô-xa-đác, thầy tế lễ cả.'",
+    "language": "vi",
+    "options": [
+      "Thầy tế lễ cả",
+      "Quan trấn thủ xứ Giu-đa",
+      "Vua của Giu-đa",
+      "Tiên tri kế vị A-ghê"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Xô-rô-ba-bên quan trấn thủ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo A-ghê 1:1, Giê-hô-sua là ai?",
+    "correctAnswer": [2],
+    "explanation": "A-ghê 1:1 — '...và cho Giê-hô-sua, con trai Giô-xa-đác, thầy tế lễ cả.' Xô-rô-ba-bên và Giê-hô-sua là cặp lãnh đạo cộng đồng hồi hương — vai trò chính trị và tôn giáo.",
+    "language": "vi",
+    "options": [
+      "Con trai Ê-li-a-kim, người dạy luật",
+      "Quân trưởng đoàn hồi hương",
+      "Con trai Giô-xa-đác, thầy tế lễ cả",
+      "Sứ giả của vua Đa-ri-út"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Giê-hô-sua thầy tế lễ cả",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo A-ghê 1:2, dân sự viện lý do gì để trì hoãn xây lại đền thờ?",
+    "correctAnswer": [3],
+    "explanation": "A-ghê 1:2 — 'Dân nầy nói rằng: Thì giờ chưa đến, tức là thì giờ xây lại nhà Đức Giê-hô-va.'",
+    "language": "vi",
+    "options": [
+      "Thiếu thợ lành nghề",
+      "Kẻ thù ngăn cản công việc",
+      "Chờ đợi khải tượng mới",
+      "Thì giờ chưa đến để xây lại nhà Đức Giê-hô-va"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Thì giờ chưa đến",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo A-ghê 1:4, Đức Giê-hô-va khiển trách dân sự vì điều gì?",
+    "correctAnswer": [0],
+    "explanation": "A-ghê 1:4 — 'Nay có phải là thì giờ các ngươi ở trong nhà có trần ván, khi nhà nầy còn đổ nát sao?' Dân xây nhà mình đẹp đẽ trong khi đền thờ Chúa bỏ hoang — đảo ngược ưu tiên.",
+    "language": "vi",
+    "options": [
+      "Họ ở nhà có trần ván khi đền thờ còn đổ nát",
+      "Họ không đóng thuế đủ",
+      "Họ không học luật pháp",
+      "Họ quên giữ ngày Sa-bát"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Nhà trần ván đền thờ đổ nát",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Lệnh truyền lặp lại hai lần trong A-ghê 1:5,7 là gì?",
+    "correctAnswer": [1],
+    "explanation": "A-ghê 1:5,7 — 'Vậy bây giờ Đức Giê-hô-va vạn quân phán như vầy: Các ngươi khá xem xét đường lối mình.' Lặp lại hai lần — Chúa muốn dân tự tra xét hậu quả của ưu tiên sai.",
+    "language": "vi",
+    "options": [
+      "Hãy kiêng ăn ba ngày",
+      "Hãy xem xét đường lối mình",
+      "Hãy gọi các trưởng lão",
+      "Hãy dâng thêm lễ vật"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Xem xét đường lối",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "A-ghê 1:6 dùng hình ảnh gì để minh họa sự phí công của dân sự?",
+    "correctAnswer": [2],
+    "explanation": "A-ghê 1:6 — '...ai làm thuê, nhận tiền công mình, thì để vào túi lủng.' Túi lủng — dù làm bao nhiêu, của cải cũng thoát đi; cuộc sống thiếu hụt vì Chúa không ban phước.",
+    "language": "vi",
+    "options": [
+      "Đổ nước vào bình vỡ",
+      "Gieo giống trên đá",
+      "Tiền công đặt vào túi lủng",
+      "Xây nhà trên cát"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Tiền vào túi lủng",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo A-ghê 1:8, dân sự phải đi đâu và làm gì?",
+    "correctAnswer": [3],
+    "explanation": "A-ghê 1:8 — 'Hãy lên núi, đem gỗ về, và xây nhà nầy, thì ta sẽ lấy nó làm vui lòng, và ta sẽ được sáng danh, Đức Giê-hô-va phán vậy.'",
+    "language": "vi",
+    "options": [
+      "Xuống biển bắt cá nuôi dân",
+      "Đến các nước ngoại mua lúa",
+      "Xuống sa mạc tìm kho báu",
+      "Lên núi, đem gỗ về, và xây nhà Đức Giê-hô-va"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Lên núi đem gỗ về xây nhà",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sau khi dân sự nghe lời tiên tri, A-ghê 1:13 chép Đức Giê-hô-va phán gì?",
+    "correctAnswer": [0],
+    "explanation": "A-ghê 1:13 — 'A-ghê, sứ giả của Đức Giê-hô-va, đem lời của Đức Giê-hô-va truyền lại cho dân sự rằng: Ta ở cùng các ngươi, Đức Giê-hô-va phán vậy.' Đây là lời khích lệ cốt lõi — sự hiện diện của Chúa.",
+    "language": "vi",
+    "options": [
+      "Ta ở cùng các ngươi",
+      "Ta sẽ phạt các ngươi nặng nề",
+      "Ta sẽ rời xa các ngươi",
+      "Ta sẽ gọi kẻ thù đến"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Ta ở cùng các ngươi",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "A-ghê 2:3 đặt câu hỏi gì cho những ai đã thấy đền thờ trước kia?",
+    "correctAnswer": [1],
+    "explanation": "A-ghê 2:3 — 'Trong các ngươi có ai đã thấy nhà nầy trong vinh quang thuở trước chăng? Nay nó ra thể nào, trong mắt các ngươi há chẳng phải như không có gì sao?'",
+    "language": "vi",
+    "options": [
+      "Các ngươi có nhớ những phép lạ cũ chăng?",
+      "Có ai đã thấy đền thờ này trong vinh quang thuở trước chăng?",
+      "Các ngươi có còn sức làm việc không?",
+      "Có ai còn nhớ các vua trước chăng?"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Vinh quang thuở trước",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "A-ghê 2:4 lặp lại ba lần lời khuyên nào cho các lãnh đạo và dân sự?",
+    "correctAnswer": [2],
+    "explanation": "A-ghê 2:4 — 'Vậy bây giờ, Đức Giê-hô-va phán: Hỡi Xô-rô-ba-bên, ngươi khá can đảm; hỡi Giê-hô-sua, con trai Giô-xa-đác, thầy tế lễ cả, ngươi cũng khá can đảm, và khá làm việc; vì ta ở cùng các ngươi...'",
+    "language": "vi",
+    "options": [
+      "Hãy kiêng ăn",
+      "Hãy cầu nguyện",
+      "Hãy can đảm (mạnh mẽ)",
+      "Hãy đi lưu lạc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Khá can đảm ba lần",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-ghê 2:6, Đức Giê-hô-va hứa sẽ làm rúng động điều gì?",
+    "correctAnswer": [3],
+    "explanation": "A-ghê 2:6 — 'Vì Đức Giê-hô-va vạn quân phán như vầy: Còn một lần, khỏi ít lâu nữa, ta sẽ làm rúng động các từng trời và đất, biển và đất khô.' Hê-bơ-rơ 12:26-27 trích câu này để nói về sự đổi mới cánh chung.",
+    "language": "vi",
+    "options": [
+      "Các thành kiên cố",
+      "Các vương triều loài người",
+      "Các đạo binh ngoại bang",
+      "Các từng trời và đất, biển và đất khô"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Rúng động trời đất",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-ghê 2:7, Đức Giê-hô-va sẽ làm cho nhà này đầy dẫy điều gì?",
+    "correctAnswer": [0],
+    "explanation": "A-ghê 2:7 — '...và sự ao ước của các nước hầu đến; rồi ta sẽ làm cho vinh quang đầy dẫy nhà nầy, Đức Giê-hô-va vạn quân phán vậy.'",
+    "language": "vi",
+    "options": [
+      "Vinh quang",
+      "Lương thực",
+      "Khách bộ hành",
+      "Của lễ bình thường"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Vinh quang đầy nhà",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-ghê 2:9, vinh quang sau cùng của đền thờ sẽ hơn vinh quang nào?",
+    "correctAnswer": [1],
+    "explanation": "A-ghê 2:9 — 'Vinh quang sau-rốt của nhà nầy sẽ lớn hơn vinh quang trước, Đức Giê-hô-va vạn quân phán vậy.' Ứng nghiệm trọn vẹn khi Đấng Christ — 'sự ao ước của các nước' — bước vào đền thờ này.",
+    "language": "vi",
+    "options": [
+      "Vinh quang của các vương quốc",
+      "Vinh quang trước (đền thờ Sa-lô-môn)",
+      "Vinh quang của các thiên sứ",
+      "Vinh quang của các tiên tri"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Vinh quang sau lớn hơn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-ghê 2:9, trong chỗ này Đức Giê-hô-va sẽ ban gì?",
+    "correctAnswer": [2],
+    "explanation": "A-ghê 2:9 — '...và ta sẽ ban sự bình an trong chỗ nầy, Đức Giê-hô-va vạn quân phán vậy.'",
+    "language": "vi",
+    "options": [
+      "Sự giàu có",
+      "Chiến thắng quân sự",
+      "Sự bình an",
+      "Con cháu đông đúc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Bình an trong chỗ này",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-ghê 2:19, từ ngày khởi công xây đền, Đức Giê-hô-va hứa sẽ làm gì?",
+    "correctAnswer": [3],
+    "explanation": "A-ghê 2:19 — 'Những giống có còn trong kho chăng? Chính như cây nho, cây vả, cây lựu, cây ô-li-ve, đều không ra trái. Nhưng từ ngày nầy, ta sẽ ban phước cho các ngươi.' Sự vâng phục mở ra cánh cửa phước hạnh.",
+    "language": "vi",
+    "options": [
+      "Phạt các ngươi nặng hơn",
+      "Cho mưa gió điều hòa như xưa",
+      "Gửi thiên sứ canh giữ",
+      "Ban phước cho các ngươi từ ngày nầy"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Từ ngày nầy Chúa ban phước",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo A-ghê 2:23, Đức Giê-hô-va sẽ lấy Xô-rô-ba-bên làm gì?",
+    "correctAnswer": [0],
+    "explanation": "A-ghê 2:23 — '...ta sẽ đặt ngươi như cái ấn; vì ta đã chọn ngươi, Đức Giê-hô-va vạn quân phán vậy.' Ấn ký là dấu uy quyền — Xô-rô-ba-bên mang lời hứa Mê-si-a qua dòng Đa-vít.",
+    "language": "vi",
+    "options": [
+      "Như cái ấn (ấn ký)",
+      "Như người chăn chiên",
+      "Như thầy tế lễ",
+      "Như sứ giả"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Xô-rô-ba-bên như cái ấn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo A-ghê 1:6, những dấu hiệu nào cho thấy sự phí công của dân sự? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "A-ghê 1:6 — 'Các ngươi gieo nhiều mà gặt ít; ăn mà không no; uống mà không đủ; mặc mà không ấm; ai làm thuê, nhận tiền công mình, thì để vào túi lủng.' Nhiều dấu hiệu; 'xây trong một ngày' không có trong câu này.",
+    "language": "vi",
+    "options": [
+      "Gieo nhiều mà gặt ít",
+      "Ăn mà không no, uống mà không đủ",
+      "Tiền công để vào túi lủng",
+      "Xây nhà xong trong một ngày"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Dấu hiệu phí công",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo A-ghê 2:4, Đức Giê-hô-va phán 'khá can đảm' với những ai? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "A-ghê 2:4 — 'Hỡi Xô-rô-ba-bên, ngươi khá can đảm; hỡi Giê-hô-sua... thầy tế lễ cả, ngươi cũng khá can đảm, và hỡi cả dân sự trong đất, hãy can đảm...' Ba đối tượng; Nê-hê-mi sống cùng thời Malachi, không xuất hiện trong sách A-ghê.",
+    "language": "vi",
+    "options": [
+      "Xô-rô-ba-bên, quan trấn thủ",
+      "Giê-hô-sua, thầy tế lễ cả",
+      "Cả dân sự trong đất",
+      "Nê-hê-mi, quan tửu chánh"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Ba đối tượng can đảm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "verseStart": 10,
+    "verseEnd": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo A-ghê 1:10-11, hậu quả của sự trì hoãn xây lại đền thờ là gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "A-ghê 1:10-11 — '...các từng trời giữ móc lại, và đất giữ hoa lợi lại. Ta đã gọi cơn hạn-hán đến trên đất, trên các núi, trên lúa mì, trên rượu mới, trên dầu...' Ba hậu quả rõ ràng; 'cào cào phá vườn nho' không có trong câu này.",
+    "language": "vi",
+    "options": [
+      "Trời giữ móc (sương) lại",
+      "Đất giữ hoa lợi lại",
+      "Hạn hán giáng trên lúa mì, rượu mới, dầu",
+      "Cào cào phá các vườn nho"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "A-ghê",
+      "Tiên tri",
+      "Hậu quả trì hoãn",
+      "Nâng cao"
+    ]
+  }
+]
