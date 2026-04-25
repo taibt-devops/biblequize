@@ -107,7 +107,7 @@ Mỗi sách cần CẢ VI + EN. Bắt đầu từ size nhỏ nhất để dễ s
 - [ ] hosea (14 chương)
 - [ ] 2timothy (4 chương)
 - [x] 2peter (3 chương) — 25 VI + 25 EN
-- [ ] colossians (4 chương)
+- [x] colossians (4 chương) — 25 VI + 25 EN
 - [ ] 1thessalonians (5 chương)
 - [ ] 1timothy (6 chương)
 - [ ] zechariah (14 chương)

@@ -1,0 +1,605 @@
+[
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "To whom is the letter to Colossians addressed?",
+    "correctAnswer": [0],
+    "explanation": "Colossians 1:2 — 'To the saints and faithful brothers in Christ at Colossae: Grace to you and peace from God our Father.'",
+    "language": "en",
+    "options": [
+      "The saints and faithful brothers at Colossae",
+      "The church at Philippi",
+      "The church at Ephesus",
+      "The elders at Jerusalem"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Recipients of the letter",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 1:13, from where has God delivered us, and into what has He brought us?",
+    "correctAnswer": [1],
+    "explanation": "Colossians 1:13 — 'He has delivered us from the domain of darkness and transferred us to the kingdom of his beloved Son.'",
+    "language": "en",
+    "options": [
+      "From the law of Moses to the gospel",
+      "From the domain of darkness to the kingdom of His beloved Son",
+      "From the old age into the Sabbath day",
+      "From Pharaoh into the Promised Land"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Delivered from darkness",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 1:14, what do we have in Christ?",
+    "correctAnswer": [2],
+    "explanation": "Colossians 1:14 — '...in whom we have redemption, the forgiveness of sins.'",
+    "language": "en",
+    "options": [
+      "Supreme wisdom",
+      "Authority to rule angels",
+      "Redemption — the forgiveness of sins",
+      "The ability to perform miracles"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Redemption and forgiveness",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 1:15, what is Christ in relation to God and creation?",
+    "correctAnswer": [3],
+    "explanation": "Colossians 1:15 — 'He is the image of the invisible God, the firstborn of all creation.'",
+    "language": "en",
+    "options": [
+      "An archangel",
+      "A great prophet",
+      "A devoted servant of the Father",
+      "The image of the invisible God, the firstborn of all creation"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Image of the invisible God",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 1:16, how were all things created?",
+    "correctAnswer": [0],
+    "explanation": "Colossians 1:16 — 'For by him all things were created, in heaven and on earth, visible and invisible... all things were created through him and for him.'",
+    "language": "en",
+    "options": [
+      "By Him — in heaven and on earth, visible and invisible — through Him and for Him",
+      "By the angels with permission",
+      "Naturally formed by laws",
+      "By many different deities"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Christ the Creator",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 1:17, what holds all things together in Christ?",
+    "correctAnswer": [1],
+    "explanation": "Colossians 1:17 — 'And he is before all things, and in him all things hold together.'",
+    "language": "en",
+    "options": [
+      "Natural laws",
+      "All things hold together in Him",
+      "Guardian angels",
+      "Human stewardship"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "All things hold together in Christ",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 1:18, of whom or what is Christ the head?",
+    "correctAnswer": [2],
+    "explanation": "Colossians 1:18 — 'And he is the head of the body, the church. He is the beginning, the firstborn from the dead, that in everything he might be preeminent.'",
+    "language": "en",
+    "options": [
+      "Head of the nations",
+      "Head of the heavenly hosts",
+      "Head of the body, the church",
+      "Head of the priests"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Christ head of the church",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "verseStart": 27,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 1:27, what is the mystery revealed to the Gentiles?",
+    "correctAnswer": [3],
+    "explanation": "Colossians 1:27 — '...the riches of the glory of this mystery, which is Christ in you, the hope of glory.'",
+    "language": "en",
+    "options": [
+      "Astonishing wisdom",
+      "The secret of worldly success",
+      "A formula for healing",
+      "Christ in you, the hope of glory"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Christ in you",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 2,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 2:9, what dwells bodily in Christ?",
+    "correctAnswer": [0],
+    "explanation": "Colossians 2:9 — 'For in him the whole fullness of deity dwells bodily.'",
+    "language": "en",
+    "options": [
+      "The whole fullness of deity",
+      "Authority over the heavenly host",
+      "The wisdom of mankind",
+      "The wealth of the nations"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Fullness of deity bodily",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 3:1, since believers have been raised with Christ, what should they do?",
+    "correctAnswer": [1],
+    "explanation": "Colossians 3:1 — 'If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God.'",
+    "language": "en",
+    "options": [
+      "Strive to grow rich in this life",
+      "Seek the things above, where Christ is seated at God's right hand",
+      "Hoard up many treasures",
+      "Avoid all social interaction"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Seek things above",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 2,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 2:8, against what kind of teaching must believers be on guard?",
+    "correctAnswer": [2],
+    "explanation": "Colossians 2:8 — 'See to it that no one takes you captive by philosophy and empty deceit, according to human tradition, according to the elemental spirits of the world, and not according to Christ.'",
+    "language": "en",
+    "options": [
+      "True Old Testament prophecy",
+      "Prayer and offerings",
+      "Philosophy and empty deceit, according to human tradition",
+      "The encouragement of the saints"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Beware empty philosophy",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 2:14, what was done with the record of debt against us?",
+    "correctAnswer": [3],
+    "explanation": "Colossians 2:14 — '...by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross.'",
+    "language": "en",
+    "options": [
+      "Hidden in the temple",
+      "Given to angels to keep",
+      "Revised under a new law",
+      "Canceled and nailed to the cross"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Record of debt nailed to the cross",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 2,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 2:15, what did Christ do to the rulers and authorities?",
+    "correctAnswer": [0],
+    "explanation": "Colossians 2:15 — 'He disarmed the rulers and authorities and put them to open shame, by triumphing over them in him.'",
+    "language": "en",
+    "options": [
+      "Disarmed and triumphed over them by the cross, putting them to open shame",
+      "Cooperated with them to rule",
+      "Allowed them to operate freely",
+      "Negotiated for them to yield power"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Disarmed rulers and authorities",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 3:5, what earthly things must believers put to death?",
+    "correctAnswer": [1],
+    "explanation": "Colossians 3:5 — 'Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry.'",
+    "language": "en",
+    "options": [
+      "Faith and love",
+      "Sexual immorality, impurity, passion, evil desire, covetousness (idolatry)",
+      "Labor and rest",
+      "Teaching and preaching"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Put to death the flesh",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 3:11, in Christ what distinctions no longer matter?",
+    "correctAnswer": [2],
+    "explanation": "Colossians 3:11 — 'Here there is not Greek and Jew, circumcised and uncircumcised, barbarian, Scythian, slave, free; but Christ is all, and in all.'",
+    "language": "en",
+    "options": [
+      "Between church and temple",
+      "Between Passover and Pentecost",
+      "Between Greek and Jew, slave and free — Christ is all",
+      "Between male and female in family"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Christ is all and in all",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 3:14, above all virtues, what must believers put on?",
+    "correctAnswer": [3],
+    "explanation": "Colossians 3:14 — 'And above all these put on love, which binds everything together in perfect harmony.'",
+    "language": "en",
+    "options": [
+      "Absolute reverence",
+      "Extreme self-abasement",
+      "Endless patience",
+      "Love — which binds everything in perfect harmony"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Love above all",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 3:16, how should the word of Christ dwell in believers?",
+    "correctAnswer": [0],
+    "explanation": "Colossians 3:16 — 'Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs...'",
+    "language": "en",
+    "options": [
+      "Richly — teaching and admonishing one another in psalms, hymns, spiritual songs",
+      "Only during formal worship hours",
+      "Only at official festival rites",
+      "Only memorized by the elders"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Word of Christ dwell richly",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 3:17, how should believers do everything in word or deed?",
+    "correctAnswer": [1],
+    "explanation": "Colossians 3:17 — 'And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him.'",
+    "language": "en",
+    "options": [
+      "First offering at the temple",
+      "In the name of the Lord Jesus, giving thanks through Him",
+      "First consulting the elders",
+      "First fasting for three days"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "In the name of Jesus",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 4,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 4:2, in what does Paul urge believers to persevere?",
+    "correctAnswer": [2],
+    "explanation": "Colossians 4:2 — 'Continue steadfastly in prayer, being watchful in it with thanksgiving.'",
+    "language": "en",
+    "options": [
+      "In many days of fasting",
+      "In going on missions",
+      "Steadfastly in prayer, watchful with thanksgiving",
+      "In hard physical labor"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Steadfast in prayer",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 4:6, what should believers' speech be like?",
+    "correctAnswer": [3],
+    "explanation": "Colossians 4:6 — 'Let your speech always be gracious, seasoned with salt, so that you may know how you ought to answer each person.'",
+    "language": "en",
+    "options": [
+      "Sharp as a sword",
+      "Impressive to all",
+      "Effective and persuasive",
+      "Gracious, seasoned with salt"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Speech seasoned with salt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Colossians 1:23, on what condition is reconciliation valid for believers?",
+    "correctAnswer": [0],
+    "explanation": "Colossians 1:23 — '...if indeed you continue in the faith, stable and steadfast, not shifting from the hope of the gospel that you heard...'",
+    "language": "en",
+    "options": [
+      "Continuing steadfast in the faith, not shifting from the hope of the gospel",
+      "Receiving circumcision and keeping the law of Moses",
+      "Memorizing the entire Scripture",
+      "Holding annual prayer assemblies"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Continue steadfast in faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "verseStart": 15,
+    "verseEnd": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Colossians 1:15-17, which descriptions are given of Christ? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Colossians 1:15-17 — 'He is the image of the invisible God, the firstborn of all creation... in him all things hold together.' Three descriptions; 'created from nothing' contradicts His being the Creator.",
+    "language": "en",
+    "options": [
+      "Image of the invisible God",
+      "Firstborn of all creation",
+      "All things hold together in Him",
+      "Created from nothing like other things"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Descriptions of Christ",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "verseStart": 5,
+    "verseEnd": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Colossians 3:5,8, what must believers put off? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Colossians 3:5,8 — '...sexual immorality, impurity, passion, evil desire, covetousness... anger, wrath, malice, slander, obscene talk.' Many things to put off; 'kindness' is what must be put on (3:12).",
+    "language": "en",
+    "options": [
+      "Sexual immorality and impurity",
+      "Anger, wrath, malice",
+      "Covetousness, which is idolatry",
+      "Kindness"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Putting off the old self",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Colossians 3:12, which virtues must believers put on? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Colossians 3:12 — '...as God's chosen ones, holy and beloved, put on compassionate hearts, kindness, humility, meekness, and patience.' Holy virtues; 'self-righteousness' is the opposite of humility.",
+    "language": "en",
+    "options": [
+      "Compassion and kindness",
+      "Humility and meekness",
+      "Patience",
+      "Self-righteousness"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Virtues of the new self",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "verseStart": 18,
+    "verseEnd": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Colossians 3:18-22, what are the Christian household and social duties? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Colossians 3:18-22 — 'Wives, submit to your husbands... Husbands, love your wives, and do not be harsh with them. Children, obey your parents... Bondservants, obey...' Three duties; 'parents serve children as masters' is reversed.",
+    "language": "en",
+    "options": [
+      "Wives submit to husbands",
+      "Husbands love wives, not harsh with them",
+      "Children obey their parents",
+      "Parents serve their children as masters"
+    ],
+    "tags": [
+      "New Testament",
+      "Colossians",
+      "Epistle",
+      "Christian household relations",
+      "Advanced"
+    ]
+  }
+]
