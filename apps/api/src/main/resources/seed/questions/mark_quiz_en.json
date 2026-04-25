@@ -911,5 +911,716 @@
       "Gospels",
       "Basic"
     ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Jesus was baptized, what did the voice from heaven say?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 1:11 — 'And a voice came from heaven, You are my beloved Son; with you I am well pleased.'",
+    "language": "en",
+    "options": [
+      "O mankind, hear Him",
+      "This is the Messiah",
+      "Come and receive",
+      "You are my beloved Son; with you I am well pleased"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Jesus' Baptism",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Early in the morning while still dark, what did Jesus often do?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Mark 1:35 — 'And rising very early in the morning, while it was still dark, he departed and went out to a desolate place, and there he prayed.'",
+    "language": "en",
+    "options": [
+      "Go to the synagogue",
+      "Depart to a desolate place and pray",
+      "Eat breakfast with the disciples",
+      "Teach the crowds"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Early Prayer",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 40,
+    "verseEnd": 45,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the leper came pleading, what did Jesus do?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 1:41 — 'Moved with pity, he stretched out his hand and touched him and said to him, I will; be clean.'",
+    "language": "en",
+    "options": [
+      "Drove the man away",
+      "Sent him to the priest first",
+      "Was moved with pity, stretched out His hand, and made him clean",
+      "Spoke a word from afar"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Cleansing the Leper",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 2,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When four men lowered the paralytic through the roof, what did Jesus, seeing their faith, say to him?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Mark 2:5 — 'And when Jesus saw their faith, he said to the paralytic, Son, your sins are forgiven.'",
+    "language": "en",
+    "options": [
+      "Stand up and walk",
+      "Son, your sins are forgiven",
+      "Your faith has healed you",
+      "Go and sin no more"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Healing the Paralytic",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Which tax collector did Jesus call from the tax booth to follow Him?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Mark 2:14 — 'He saw Levi the son of Alphaeus sitting at the tax booth, and he said to him, Follow me. And he rose and followed him.'",
+    "language": "en",
+    "options": [
+      "Levi (Matthew), son of Alphaeus",
+      "Zacchaeus",
+      "Peter",
+      "Simon of Cyrene"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Calling of Levi",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 2,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Mark 2:27 records Jesus' saying: 'The Sabbath was made for man, not...'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 2:27 — 'The Sabbath was made for man, not man for the Sabbath.'",
+    "language": "en",
+    "options": [
+      "For the law was man made",
+      "For angels was man made",
+      "Man for the Sabbath",
+      "For the patriarchs was the Sabbath made"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Sabbath for Man",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 3,
+    "verseStart": 28,
+    "verseEnd": 29,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What sin does Mark 3:28-29 say can never be forgiven?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Mark 3:29 — 'But whoever blasphemes against the Holy Spirit never has forgiveness, but is guilty of an eternal sin.'",
+    "language": "en",
+    "options": [
+      "Murder",
+      "Blasphemy against the Holy Spirit",
+      "Adultery",
+      "Apostasy"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Blasphemy of the Spirit",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 4,
+    "verseStart": 39,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the storm arose on the sea, what two words did Jesus speak to calm it?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 4:39 — 'And he awoke and rebuked the wind and said to the sea, Peace! Be still! And the wind ceased, and there was a great calm.'",
+    "language": "en",
+    "options": [
+      "Fly away!",
+      "Begone!",
+      "Peace! Be still!",
+      "Disappear!"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Calming the Storm",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 5,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What name did the demon in the Gerasene man give when Jesus asked?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 5:9 — 'And Jesus asked him, What is your name? He replied, My name is Legion, for we are many.'",
+    "language": "en",
+    "options": [
+      "Beelzebul",
+      "Abaddon",
+      "Apollyon",
+      "Legion"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Demon Legion",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 5,
+    "verseStart": 34,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus say to the woman with the discharge of blood after she was healed?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Mark 5:34 — 'And he said to her, Daughter, your faith has made you well; go in peace, and be healed of your disease.'",
+    "language": "en",
+    "options": [
+      "Daughter, your faith has made you well; go in peace",
+      "Keep the law",
+      "Tell no one",
+      "Follow me"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Woman with Bleeding",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 6,
+    "verseStart": 14,
+    "verseEnd": 29,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Which king ordered John the Baptist beheaded because of an oath at his birthday feast?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 6:21-27 — King Herod (Antipas) had sworn to Herodias's daughter and was forced to send to behead John.",
+    "language": "en",
+    "options": [
+      "Herod the Great",
+      "Pilate",
+      "Agrippa",
+      "Herod (Antipas)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Death of John the Baptist",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 6,
+    "verseStart": 48,
+    "verseEnd": 50,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the disciples were rowing in the middle of the sea in the fourth watch of the night, how did Jesus come to them?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Mark 6:48 — 'He saw that they were making headway painfully... He came to them, walking on the sea.'",
+    "language": "en",
+    "options": [
+      "On a small boat",
+      "Walking on the sea",
+      "Appearing in light",
+      "Flying on a cloud"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Walking on Water",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 7,
+    "verseStart": 24,
+    "verseEnd": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What woman in Mark 7 told Jesus, 'Even the dogs under the table eat the children's crumbs'?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 7:26,28 — 'Now the woman was a Gentile, a Syrophoenician by birth.' She spoke with great faith to ask healing for her demon-possessed daughter.",
+    "language": "en",
+    "options": [
+      "The Samaritan woman",
+      "Martha",
+      "Deborah",
+      "The Syrophoenician woman"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Syrophoenician Woman",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 29,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Jesus asked, 'Who do you say that I am?', what did Peter answer?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 8:29 — 'Peter answered him, You are the Christ.'",
+    "language": "en",
+    "options": [
+      "A great prophet",
+      "Elijah reborn",
+      "Son of David",
+      "You are the Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Peter's Confession",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 34,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Mark 8:34 — Jesus teaches that whoever wants to come after Him must do what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 8:34 — 'If anyone would come after me, let him deny himself and take up his cross and follow me.'",
+    "language": "en",
+    "options": [
+      "Sell all possessions",
+      "Leave family",
+      "Deny himself, take up his cross, and follow Him",
+      "Memorize the law"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Take Up the Cross",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 36,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Mark 8:36 — What does it profit a man to gain the whole world but lose his soul?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Mark 8:36 — 'For what does it profit a man to gain the whole world and forfeit his soul?'",
+    "language": "en",
+    "options": [
+      "Great profit",
+      "Nothing at all",
+      "He can exchange his soul later",
+      "It is a blessing"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Soul vs the World",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 9,
+    "verseStart": 35,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus taught: if anyone wants to be first, what must he do?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Mark 9:35 — 'If anyone would be first, he must be last of all and servant of all.'",
+    "language": "en",
+    "options": [
+      "Be a king in God's kingdom",
+      "Be last of all and servant of all",
+      "Stand at the head of disciples",
+      "Rule cities"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Servant of All",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the disciples kept children from coming to Jesus, what did He say?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 10:14 — 'Let the children come to me; do not hinder them, for to such belongs the kingdom of God.'",
+    "language": "en",
+    "options": [
+      "Take them away",
+      "Wait until they grow up",
+      "Let the children come to me; for to such belongs the kingdom of God",
+      "Teach them the law first"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Children Come to Jesus",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 45,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Mark 10:45 — The Son of Man came not to be served, but to do what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 10:45 — 'For even the Son of Man came not to be served but to serve, and to give his life as a ransom for many.'",
+    "language": "en",
+    "options": [
+      "Teach the law",
+      "Establish an earthly kingdom",
+      "To serve and to give His life as a ransom for many",
+      "Heal the people"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Ransom",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 46,
+    "verseEnd": 52,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Which blind beggar at Jericho was healed by Jesus?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 10:46 — 'Bartimaeus, a blind beggar, the son of Timaeus, was sitting by the roadside.' Jesus said: 'Your faith has made you well.'",
+    "language": "en",
+    "options": [
+      "Simeon",
+      "Levi",
+      "Zacchaeus",
+      "Bartimaeus, son of Timaeus"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Bartimaeus",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 12,
+    "verseStart": 30,
+    "verseEnd": 31,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What are the two greatest commandments according to Jesus?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 12:30-31 — '(1) Love the Lord your God with all your heart, soul, mind, and strength. (2) Love your neighbor as yourself.'",
+    "language": "en",
+    "options": [
+      "Keep the Sabbath and offer sacrifices",
+      "Honor parents and do not murder",
+      "Go to church and read the Bible",
+      "Love God with all heart/soul/mind/strength + love neighbor as self"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Two Greatest Commandments",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 12,
+    "verseStart": 42,
+    "verseEnd": 44,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How much did the poor widow put into the offering box that Jesus praised as more than all others?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Mark 12:42 — 'And a poor widow came and put in two small copper coins, which make a penny.'",
+    "language": "en",
+    "options": [
+      "A gold coin",
+      "Two small copper coins (lepta) — making a penny",
+      "Ten silver coins",
+      "A loaf of bread"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Widow's Two Coins",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 13,
+    "verseStart": 32,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Mark 13:32 — Who knows the day and hour of Christ's return?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 13:32 — 'But concerning that day or that hour, no one knows, not even the angels in heaven, nor the Son, but only the Father.'",
+    "language": "en",
+    "options": [
+      "The angels",
+      "The Son (Jesus)",
+      "Only the Father",
+      "The prophets"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Day and Hour",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 22,
+    "verseEnd": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "At the Last Supper, Jesus took bread and said, 'This is...' what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 14:22 — 'Jesus took bread, and after blessing it broke it and gave it to them, and said, Take; this is my body.'",
+    "language": "en",
+    "options": [
+      "This is the Living Word",
+      "This is the sign of the covenant",
+      "This is my body",
+      "This is the light of the world"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Last Supper",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 36,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Gethsemane, what Aramaic word did Jesus use to address God?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Mark 14:36 — 'And he said, Abba, Father, all things are possible for you. Remove this cup from me.'",
+    "language": "en",
+    "options": [
+      "Adonai",
+      "Abba",
+      "Elohim",
+      "Yahweh"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Abba Father",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "According to Mark 15:25, at what hour was Jesus crucified?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 15:25 — 'And it was the third hour when they crucified him' (Jewish reckoning — about 9 AM).",
+    "language": "en",
+    "options": [
+      "The first hour",
+      "The second hour",
+      "The third hour (about 9 AM)",
+      "The sixth hour (about noon)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Hour of Crucifixion",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 16,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What is the Great Commission in Mark 16:15?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Mark 16:15 — 'Go into all the world and proclaim the gospel to the whole creation.'",
+    "language": "en",
+    "options": [
+      "Keep the law of Moses",
+      "Go into all the world and proclaim the gospel to the whole creation",
+      "Stay at Jerusalem",
+      "Build a new temple"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Great Commission",
+      "Gospels",
+      "Basic"
+    ]
   }
 ]
