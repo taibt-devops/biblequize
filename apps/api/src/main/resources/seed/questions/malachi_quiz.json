@@ -301,5 +301,213 @@
       "Phần mười",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sách Ma-la-chi mở đầu bằng cụm từ nào?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-la-chi 1:1 — 'Gánh nặng lời Đức Giê-hô-va cho Y-sơ-ra-ên bởi Ma-la-chi.'",
+    "language": "vi",
+    "options": [
+      "Sấm ngôn của Đa-vít",
+      "Gánh nặng lời Đức Giê-hô-va cho Y-sơ-ra-ên",
+      "Lời cầu nguyện của thầy tế lễ",
+      "Sự khải thị về tận thế"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ma-la-chi",
+      "Mở đầu",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ma-la-chi 1:8 hỏi nếu dâng thú mù, què, bệnh thì quan trấn thủ có nhậm không?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-la-chi 1:8 — 'Hãy đem dâng nó cho quan trấn thủ ngươi! Người có vui lòng nhận ngươi không?'",
+    "language": "vi",
+    "options": [
+      "Quan trấn thủ chẳng vui lòng nhận",
+      "Quan trấn thủ vui mừng nhận",
+      "Quan trấn thủ phải bồi thường",
+      "Quan trấn thủ không quan tâm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ma-la-chi",
+      "Tế lễ ô uế",
+      "Tiểu tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Ma-la-chi 1:11, danh Đức Giê-hô-va sẽ trở nên thế nào giữa các dân?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-la-chi 1:11 — 'Vì từ nơi mặt trời mọc cho đến nơi mặt trời lặn, danh Ta sẽ là lớn giữa các dân ngoại.'",
+    "language": "vi",
+    "options": [
+      "Bị quên lãng",
+      "Bị nhạo báng",
+      "Lớn giữa các dân ngoại",
+      "Chỉ giữ riêng cho Y-sơ-ra-ên"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ma-la-chi",
+      "Danh Chúa",
+      "Tiểu tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ma-la-chi 2:7 nói môi miệng thầy tế lễ phải gìn giữ điều gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-la-chi 2:7 — 'Vì môi miệng thầy tế lễ nên giữ sự thông biết, người ta tìm luật pháp nơi miệng người, vì người là sứ giả của Đức Giê-hô-va vạn quân.'",
+    "language": "vi",
+    "options": [
+      "Sự ngợi khen",
+      "Lời cầu nguyện",
+      "Sự yên lặng",
+      "Sự thông biết (luật pháp)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ma-la-chi",
+      "Thầy tế lễ",
+      "Tiểu tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 2,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ma-la-chi 2:17 nói dân sự đã làm gì khiến Đức Giê-hô-va mệt nhọc?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ma-la-chi 2:17 — 'Các ngươi đã làm phiền Đức Giê-hô-va bằng lời nói các ngươi.'",
+    "language": "vi",
+    "options": [
+      "Bằng việc dâng tế lễ",
+      "Bằng lời nói của họ",
+      "Bằng việc xây đền thờ chậm",
+      "Bằng việc kết hôn ngoại"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ma-la-chi",
+      "Lời nói",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ma-la-chi 3:6 tuyên bố Đức Giê-hô-va là Đấng như thế nào?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ma-la-chi 3:6 — 'Vì Ta là Đức Giê-hô-va, Ta không hề thay đổi; bởi cớ đó các ngươi là con trai Gia-cốp, chẳng bị diệt vong.'",
+    "language": "vi",
+    "options": [
+      "Không hề thay đổi",
+      "Hay thay đổi",
+      "Lúc nguôi lúc giận",
+      "Tùy lòng dân"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ma-la-chi",
+      "Bất biến",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ma-la-chi 3:7 mời gọi dân sự làm gì, và Đức Chúa Trời sẽ làm gì đáp lại?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ma-la-chi 3:7 — 'Hãy trở lại cùng Ta, thì Ta sẽ trở lại cùng các ngươi, Đức Giê-hô-va vạn quân phán vậy.'",
+    "language": "vi",
+    "options": [
+      "Hãy dâng nhiều của lễ, Chúa sẽ ban phước",
+      "Hãy đến Giê-ru-sa-lem, Chúa sẽ chữa lành",
+      "Hãy trở lại cùng Ta, thì Ta sẽ trở lại cùng các ngươi",
+      "Hãy ăn năn, Chúa sẽ phá bỏ luật pháp"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ma-la-chi",
+      "Trở lại",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Ma-la-chi 4:1 mô tả ngày Đức Giê-hô-va đến giống như cái gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ma-la-chi 4:1 — 'Vì kìa, ngày đến cháy như lò lửa. Mọi kẻ kiêu ngạo và mọi kẻ làm sự gian ác sẽ là rơm rạ.'",
+    "language": "vi",
+    "options": [
+      "Cơn mưa nhẹ",
+      "Tiếng hát mừng",
+      "Đêm tối lạnh",
+      "Lò lửa cháy"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ma-la-chi",
+      "Ngày của Chúa",
+      "Tiểu tiên tri",
+      "Nâng cao"
+    ]
   }
 ]

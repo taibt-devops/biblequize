@@ -301,5 +301,213 @@
       "Tithes",
       "Intermediate"
     ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does the book of Malachi open?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Malachi 1:1 — 'The oracle of the word of the LORD to Israel by Malachi.'",
+    "language": "en",
+    "options": [
+      "The oracle of David",
+      "The oracle of the word of the LORD to Israel by Malachi",
+      "The prayer of the priest",
+      "An apocalyptic vision"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Opening",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Malachi 1:8 asks: if you offer blind, lame, or sick animals, would your governor accept them?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Malachi 1:8 — 'Present that to your governor; will he accept you or show you favor?'",
+    "language": "en",
+    "options": [
+      "The governor would not accept",
+      "The governor would gladly accept",
+      "The governor would compensate",
+      "The governor would not care"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Defective Sacrifice",
+      "Minor Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Malachi 1:11, what will become of the LORD's name among the nations?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Malachi 1:11 — 'For from the rising of the sun to its setting my name will be great among the nations.'",
+    "language": "en",
+    "options": [
+      "Forgotten",
+      "Mocked",
+      "Great among the nations",
+      "Reserved only for Israel"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "God's Name",
+      "Minor Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What should the lips of a priest guard, according to Malachi 2:7?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Malachi 2:7 — 'For the lips of a priest should guard knowledge, and people should seek instruction from his mouth, for he is the messenger of the LORD of hosts.'",
+    "language": "en",
+    "options": [
+      "Praise",
+      "Prayer",
+      "Silence",
+      "Knowledge (instruction in the law)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Priesthood",
+      "Minor Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 2,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "By what does Malachi 2:17 say the people have wearied the LORD?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Malachi 2:17 — 'You have wearied the LORD with your words.'",
+    "language": "en",
+    "options": [
+      "By offering sacrifices",
+      "By their words",
+      "By delaying the temple work",
+      "By foreign marriages"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Speech",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Malachi 3:6 declare about the LORD?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Malachi 3:6 — 'For I the LORD do not change; therefore you, O children of Jacob, are not consumed.'",
+    "language": "en",
+    "options": [
+      "He does not change",
+      "He changes often",
+      "Sometimes calm, sometimes angry",
+      "Depending on people's hearts"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Immutability",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Malachi 3:7 invite the people to do, and what will God do in response?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Malachi 3:7 — 'Return to me, and I will return to you, says the LORD of hosts.'",
+    "language": "en",
+    "options": [
+      "Bring more offerings, the LORD will bless",
+      "Come to Jerusalem, the LORD will heal",
+      "Return to me, and I will return to you",
+      "Repent, the LORD will abolish the law"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Return",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How does Malachi 4:1 describe the coming day of the LORD?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Malachi 4:1 — 'For behold, the day is coming, burning like an oven, when all the arrogant and all evildoers will be stubble.'",
+    "language": "en",
+    "options": [
+      "A gentle rain",
+      "Songs of joy",
+      "A cold dark night",
+      "Burning like an oven"
+    ],
+    "tags": [
+      "Old Testament",
+      "Malachi",
+      "Day of the LORD",
+      "Minor Prophets",
+      "Advanced"
+    ]
   }
 ]
