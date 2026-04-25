@@ -302,5 +302,217 @@
       "Hình bóng",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Giô-na là con trai của ai?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Giô-na 1:1 — 'Có lời Đức Giê-hô-va phán cho Giô-na, con trai A-mi-tai.'",
+    "language": "vi",
+    "options": [
+      "A-mi-tai",
+      "Hô-sê",
+      "A-mốt",
+      "Mi-chê"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-na",
+      "Tiên tri",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "verseStart": 5,
+    "verseEnd": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Trong cơn bão, các thủy thủ làm gì khi Giô-na đang ngủ trong khoang tàu?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Giô-na 1:5-6 — 'Các thủy thủ đều sợ hãi, ai nấy kêu cầu thần mình... Người trưởng phái nói với Giô-na: Hỡi người ngủ kia, làm sao vậy? Khá chỗi dậy, hãy kêu cầu Đức Chúa Trời ngươi!'",
+    "language": "vi",
+    "options": [
+      "Cầu nguyện cùng Đức Giê-hô-va",
+      "Đánh thức Giô-na không cần đến thần",
+      "Mỗi người kêu cầu thần mình",
+      "Bỏ chạy ra khỏi tàu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-na",
+      "Cơn bão",
+      "Tiểu tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Các thủy thủ bắt thăm để biết ai là nguyên nhân cơn bão; thăm rơi vào ai?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Giô-na 1:7 — 'Họ bắt thăm... thăm trúng nhằm Giô-na.'",
+    "language": "vi",
+    "options": [
+      "Người trưởng phái",
+      "Một thủy thủ ngoại đạo",
+      "Không một ai cả",
+      "Giô-na"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-na",
+      "Bốc thăm",
+      "Tiểu tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Giô-na cầu nguyện với Đức Giê-hô-va từ đâu?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Giô-na 2:1-2 — 'Giô-na từ trong bụng cá cầu nguyện cùng Giê-hô-va Đức Chúa Trời mình... Tôi gặp hoạn nạn, kêu cầu Đức Giê-hô-va, thì Ngài đã trả lời tôi.'",
+    "language": "vi",
+    "options": [
+      "Trong bụng cá lớn",
+      "Trên đỉnh núi",
+      "Trong đền thờ",
+      "Trên thuyền"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-na",
+      "Cầu nguyện",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 2,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sau khi Giô-na cầu nguyện, Đức Giê-hô-va phán cùng cá làm gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Giô-na 2:10 — 'Đức Giê-hô-va phán cùng con cá, và con cá nhả Giô-na ra trên đất khô.'",
+    "language": "vi",
+    "options": [
+      "Bơi ra biển sâu",
+      "Nhả Giô-na ra trên đất khô",
+      "Đem Giô-na lên thuyền",
+      "Nuốt Giô-na lần nữa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-na",
+      "Giải cứu",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 3,
+    "verseStart": 5,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khi Giô-na rao giảng, vua Ni-ni-ve làm gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Giô-na 3:6 — 'Vua Ni-ni-ve cũng đứng dậy khỏi ngai, lột áo bào, mặc bao gai và ngồi trong tro.'",
+    "language": "vi",
+    "options": [
+      "Đuổi Giô-na đi",
+      "Tăng quân đội",
+      "Đứng dậy khỏi ngai, mặc bao gai và ngồi trong tro",
+      "Sai sứ giả đến A-si-ri"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-na",
+      "Ăn năn",
+      "Tiểu tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Đức Giê-hô-va sắm sẵn loại cây nào để che bóng cho Giô-na?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Giô-na 4:6 — 'Giê-hô-va Đức Chúa Trời sắm sẵn một dây dưa, làm cho mọc lên ở trên Giô-na, đặng phủ bóng trên đầu người, và cứu cho người khỏi sự khổ cực.'",
+    "language": "vi",
+    "options": [
+      "Cây vả",
+      "Cây nho",
+      "Cây ô-liu",
+      "Một dây dưa (cây dầu thầu dầu)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-na",
+      "Dây dưa",
+      "Tiểu tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Đức Chúa Trời sắm sẵn điều gì để hủy diệt cây và làm Giô-na khổ?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Giô-na 4:7-8 — 'Đức Chúa Trời sắm sẵn một con sâu khi rạng đông ngày sau, sâu chích dây dưa thì nó héo... Đức Chúa Trời sắm sẵn một trận gió đông cháy.'",
+    "language": "vi",
+    "options": [
+      "Một con sư tử",
+      "Một cơn động đất",
+      "Một con sâu và gió đông cháy",
+      "Một trận mưa đá"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-na",
+      "Bài học của Chúa",
+      "Tiểu tiên tri",
+      "Nâng cao"
+    ]
   }
 ]

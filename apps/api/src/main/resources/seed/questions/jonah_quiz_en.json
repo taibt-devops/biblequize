@@ -302,5 +302,217 @@
       "Typology",
       "Basic"
     ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whose son was Jonah?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Jonah 1:1 — 'Now the word of the LORD came to Jonah the son of Amittai.'",
+    "language": "en",
+    "options": [
+      "Amittai",
+      "Hosea",
+      "Amos",
+      "Micah"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jonah",
+      "Prophet",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "verseStart": 5,
+    "verseEnd": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "During the storm, what did the sailors do while Jonah slept in the hold?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Jonah 1:5-6 — 'The mariners were afraid, and each cried out to his god... So the captain came and said to him, What do you mean, you sleeper? Arise, call out to your god!'",
+    "language": "en",
+    "options": [
+      "Prayed to the LORD",
+      "Woke Jonah without praying",
+      "Each cried to his own god",
+      "Jumped overboard"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jonah",
+      "Storm",
+      "Minor Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "The sailors cast lots to learn the cause of the storm; on whom did the lot fall?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Jonah 1:7 — 'They cast lots, and the lot fell on Jonah.'",
+    "language": "en",
+    "options": [
+      "The captain",
+      "A pagan sailor",
+      "No one at all",
+      "Jonah"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jonah",
+      "Casting Lots",
+      "Minor Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "From where did Jonah pray to the LORD?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Jonah 2:1-2 — 'Then Jonah prayed to the LORD his God from the belly of the fish... I called out to the LORD, out of my distress, and he answered me.'",
+    "language": "en",
+    "options": [
+      "From the belly of the great fish",
+      "From a mountaintop",
+      "From the temple",
+      "From the ship"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jonah",
+      "Prayer",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 2,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "After Jonah's prayer, what did the LORD command the fish to do?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Jonah 2:10 — 'And the LORD spoke to the fish, and it vomited Jonah out upon the dry land.'",
+    "language": "en",
+    "options": [
+      "Swim out to sea",
+      "Vomit Jonah out upon dry land",
+      "Take Jonah onto a ship",
+      "Swallow Jonah again"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jonah",
+      "Deliverance",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 3,
+    "verseStart": 5,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When Jonah preached, what did the king of Nineveh do?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Jonah 3:6 — 'The word reached the king of Nineveh, and he arose from his throne, removed his robe, covered himself with sackcloth, and sat in ashes.'",
+    "language": "en",
+    "options": [
+      "Drove Jonah out",
+      "Increased the army",
+      "Arose from his throne, put on sackcloth, and sat in ashes",
+      "Sent envoys to Assyria"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jonah",
+      "Repentance",
+      "Minor Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What kind of plant did the LORD appoint to give shade for Jonah?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Jonah 4:6 — 'Now the LORD God appointed a plant and made it come up over Jonah, that it might be a shade over his head, to save him from his discomfort.'",
+    "language": "en",
+    "options": [
+      "A fig tree",
+      "A vine",
+      "An olive tree",
+      "A plant (the LORD appointed it)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jonah",
+      "Plant",
+      "Minor Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What did God appoint to destroy the plant and afflict Jonah?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Jonah 4:7-8 — 'But when dawn came up the next day, God appointed a worm that attacked the plant, so that it withered... God appointed a scorching east wind.'",
+    "language": "en",
+    "options": [
+      "A lion",
+      "An earthquake",
+      "A worm and a scorching east wind",
+      "A hailstorm"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jonah",
+      "God's Object Lesson",
+      "Minor Prophets",
+      "Advanced"
+    ]
   }
 ]
