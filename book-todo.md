@@ -116,7 +116,7 @@ Mỗi sách cần CẢ VI + EN. Bắt đầu từ size nhỏ nhất để dễ s
 - [x] songofsolomon (8 chương) — 25 VI + 25 EN
 - [x] ezra (10 chương) — 25 VI + 25 EN
 - [x] 1chronicles (29 chương) — 25 VI + 25 EN
-- [ ] 2chronicles (36 chương)
+- [x] 2chronicles (36 chương) — 25 VI + 25 EN
 
 ### P2 — Sách có VI nhưng thiếu EN (🌐, 28 sách)
 

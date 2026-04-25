@@ -1,0 +1,611 @@
+[
+  {
+    "book": "2 Chronicles",
+    "chapter": 1,
+    "verseStart": 7,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 1:7-10, Sa-lô-môn cầu xin Đức Chúa Trời điều gì?",
+    "correctAnswer": [0],
+    "explanation": "2 Sử Ký 1:10 — 'Vậy, xin Chúa ban cho tôi sự khôn ngoan và sự thông sáng, để tôi đối đáp dân nầy; vì ai có thể đoán xét dân của Chúa lớn nầy?'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan và sự thông sáng để đoán xét dân Chúa",
+      "Sự giàu có vô tận",
+      "Sự sống trường thọ",
+      "Sức lực để đánh bại kẻ thù"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Sa-lô-môn xin khôn ngoan",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 1,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 1:11-12, Đức Chúa Trời ban cho Sa-lô-môn những gì ngoài sự khôn ngoan?",
+    "correctAnswer": [1],
+    "explanation": "2 Sử Ký 1:12 — '...nên ta sẽ ban sự khôn ngoan và thông sáng cho ngươi; ta lại sẽ ban cho ngươi sự giàu có, của cải, tôn vinh, đến đỗi các vua trước ngươi không có như vậy, và sau ngươi cũng sẽ chẳng có ai được như thế.'",
+    "language": "vi",
+    "options": [
+      "Quyền cai trị mọi nước",
+      "Sự giàu có, của cải, và tôn vinh không vua nào sánh bằng",
+      "Đoàn quân lớn nhất xứ",
+      "Khả năng làm phép lạ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Khôn ngoan kèm giàu có và tôn vinh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 3:1, Sa-lô-môn cất đền của Đức Giê-hô-va trên núi nào?",
+    "correctAnswer": [2],
+    "explanation": "2 Sử Ký 3:1 — 'Sa-lô-môn khởi cất đền của Đức Giê-hô-va tại Giê-ru-sa-lem, trên núi Mô-ri-a, là nơi Đức Giê-hô-va đã hiện ra cùng Đa-vít, cha mình, tại trên chỗ mà Đa-vít đã dọn, tức là trong sân đạp lúa của Ọt-nan, người Giê-bu-sít.'",
+    "language": "vi",
+    "options": [
+      "Núi Si-ôn",
+      "Núi Hô-rếp",
+      "Núi Mô-ri-a — sân đạp lúa Ọt-nan người Giê-bu-sít",
+      "Núi Sê-i-rơ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Đền thờ trên núi Mô-ri-a",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 5,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 5:13-14, khi đền thờ được khánh thành, điều gì đầy nhà của Đức Giê-hô-va?",
+    "correctAnswer": [3],
+    "explanation": "2 Sử Ký 5:13-14 — '...bấy giờ đền của Đức Giê-hô-va bị mây lấp đầy; đến đỗi những thầy tế lễ vì có mây ấy không thể đứng đó hầu việc được, vì sự vinh hiển của Đức Giê-hô-va đầy lấp đền của Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Một âm thanh kỳ diệu",
+      "Lửa từ bàn thờ",
+      "Hương thơm ngào ngạt",
+      "Mây — sự vinh hiển của Đức Giê-hô-va"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Vinh hiển Chúa đầy đền thờ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 6,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 6:14, Sa-lô-môn mở đầu lời cầu nguyện cung hiến đền thờ thế nào?",
+    "correctAnswer": [0],
+    "explanation": "2 Sử Ký 6:14 — '...Lạy Giê-hô-va Đức Chúa Trời của Y-sơ-ra-ên! chẳng có thần nào giống như Chúa ở trên trời và ở dưới đất, là Đấng giữ giao ước và sự thương xót đối với các tôi tớ Chúa, hết lòng đi trước mặt Chúa.'",
+    "language": "vi",
+    "options": [
+      "Chẳng có thần nào giống như Chúa ở trên trời và dưới đất",
+      "Hỡi Chúa, chúng tôi cảm tạ vì sự khôn ngoan",
+      "Hỡi Chúa, hãy ngó đến đền nầy",
+      "Hỡi Chúa, hãy ban phước trên muôn dân"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Chẳng có thần nào giống như Chúa",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 7:1, sau khi Sa-lô-môn cầu nguyện xong, điều gì từ trời giáng xuống?",
+    "correctAnswer": [1],
+    "explanation": "2 Sử Ký 7:1 — 'Khi Sa-lô-môn cầu nguyện xong, lửa từ trời giáng xuống đốt của lễ thiêu và các hi sinh, sự vinh hiển của Đức Giê-hô-va đầy dẫy trong đền.'",
+    "language": "vi",
+    "options": [
+      "Sương móc tươi mát",
+      "Lửa từ trời giáng xuống đốt của lễ",
+      "Mưa từ trời rơi xuống",
+      "Tiếng kèn vang vọng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Lửa từ trời thiêu của lễ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Câu nổi tiếng nào về sự ăn năn của dân Chúa được chép trong 2 Sử Ký 7:14?",
+    "correctAnswer": [2],
+    "explanation": "2 Sử Ký 7:14 — '...nếu dân sự ta, là dân gọi bằng danh ta, hạ mình xuống, cầu nguyện, tìm kiếm mặt ta, và trở lại, bỏ con đường tà, thì ta ở trên trời sẽ nghe, tha thứ tội chúng nó, và cứu xứ họ khỏi tai vạ.'",
+    "language": "vi",
+    "options": [
+      "Phải dâng lễ tạ ơn nhiều",
+      "Phải kiêng ăn ba ngày trọn",
+      "Hạ mình, cầu nguyện, tìm kiếm mặt Ta, trở lại bỏ con đường tà — Ta sẽ nghe, tha thứ, và cứu xứ",
+      "Phải xây thêm đền thờ mới"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Hạ mình cầu nguyện tìm kiếm mặt Chúa",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 9,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 9:1, nữ vương từ đâu đến gặp Sa-lô-môn để thử ông bằng câu đố?",
+    "correctAnswer": [3],
+    "explanation": "2 Sử Ký 9:1 — 'Khi nữ vương Sê-ba nghe đồn danh tiếng của Sa-lô-môn, bèn đi đến Giê-ru-sa-lem, lấy những câu đố mà thử người, dẫn theo một đoàn tùy tùng rất đông, có những lạc đà chở thuốc thơm, nhiều vàng, và đá quí.'",
+    "language": "vi",
+    "options": [
+      "Ai Cập",
+      "Ba-by-lôn",
+      "Phe-rơ-sơ",
+      "Sê-ba"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Nữ vương Sê-ba",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 10,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 10:11, Rô-bô-am theo lời các trai trẻ đáp dân thế nào?",
+    "correctAnswer": [0],
+    "explanation": "2 Sử Ký 10:11 — '...Vậy bây giờ, cha ta đã gác một cái ách nặng cho các ngươi, ta sẽ làm cái ách các ngươi nặng hơn nữa; cha ta sửa phạt các ngươi bằng roi da, ta sẽ sửa phạt các ngươi bằng roi bò cạp.'",
+    "language": "vi",
+    "options": [
+      "Cha ta sửa phạt bằng roi da, ta sẽ sửa phạt bằng roi bò cạp",
+      "Ta sẽ giảm thuế cho các ngươi",
+      "Ta sẽ chia nước cho các ngươi",
+      "Ta sẽ học theo Đa-vít làm vua"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Sửa phạt bằng roi bò cạp",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 10,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 10:16, khi nghe Rô-bô-am cứng rắn, dân Y-sơ-ra-ên phản ứng thế nào?",
+    "correctAnswer": [1],
+    "explanation": "2 Sử Ký 10:16 — '...dân Y-sơ-ra-ên đáp với vua rằng: Chúng ta có phần gì cùng Đa-vít? Chúng ta chẳng có cơ nghiệp chi với con trai Y-sai. Hỡi Y-sơ-ra-ên! mỗi người hãy trở về trại mình đi; còn ngươi, hỡi Đa-vít, khá coi chừng nhà của ngươi.'",
+    "language": "vi",
+    "options": [
+      "Đồng tâm phục Rô-bô-am",
+      "Cao tiếng: 'Chúng ta có phần gì cùng Đa-vít?' — mỗi người trở về trại mình",
+      "Nổi loạn ngay tại cung điện",
+      "Im lặng chấp nhận tăng thuế"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Phần gì cùng Đa-vít",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 14,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 14:11, A-sa cầu nguyện thế nào trước khi lâm trận với quân Cúc-sít?",
+    "correctAnswer": [2],
+    "explanation": "2 Sử Ký 14:11 — '...Lạy Đức Giê-hô-va! trừ ra Chúa chẳng có ai giúp đỡ người yếu thắng được người mạnh; Giê-hô-va Đức Chúa Trời chúng tôi ôi! xin hãy giúp đỡ chúng tôi, vì chúng tôi nương cậy nơi Chúa...'",
+    "language": "vi",
+    "options": [
+      "Lạy Chúa, ban cho con kế quân tài tình",
+      "Lạy Chúa, hãy đưa con vào hầm trú ẩn",
+      "Lạy Đức Giê-hô-va! trừ ra Chúa chẳng có ai giúp người yếu thắng người mạnh — chúng tôi nương cậy nơi Chúa",
+      "Lạy Chúa, hãy giấu mặt khỏi chúng tôi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Lời cầu nguyện của A-sa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 16,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 16:9, mắt của Đức Giê-hô-va chạy đi khắp đất để làm gì?",
+    "correctAnswer": [3],
+    "explanation": "2 Sử Ký 16:9 — 'Vì con mắt của Đức Giê-hô-va soi xét khắp thế gian, đặng giúp sức cho kẻ nào có lòng trọn thành đối với Ngài. Trong việc nầy vua có cư xử cách dại dột, nên từ nay về sau vua sẽ có giặc giã.'",
+    "language": "vi",
+    "options": [
+      "Để dò xét tội lỗi loài người",
+      "Để chọn các nhà tiên tri",
+      "Để khám phá các kho báu giấu kín",
+      "Để giúp sức cho kẻ có lòng trọn thành đối với Ngài"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Mắt Chúa giúp người trọn thành",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 20,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 20:15, Đức Chúa Trời phán điều gì về cuộc chiến của Giô-sa-phát?",
+    "correctAnswer": [0],
+    "explanation": "2 Sử Ký 20:15 — '...Hỡi cả Giu-đa, dân cư thành Giê-ru-sa-lem, và vua Giô-sa-phát, hãy nghe! Đức Giê-hô-va phán cho các ngươi như vầy: Chớ sợ, chớ kinh hãi bởi cớ đám quân đông đảo nầy: vì trận giặc nầy chẳng phải của các ngươi đâu, bèn là của Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Chớ sợ — vì trận giặc nầy chẳng phải của các ngươi, bèn là của Đức Chúa Trời",
+      "Hãy thuê quân đội ngoại bang",
+      "Hãy lui binh và thương lượng",
+      "Hãy chia quân ra ba mặt mà tấn công"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Trận giặc của Đức Chúa Trời",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 20,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 20:20, Giô-sa-phát truyền cho dân điều gì?",
+    "correctAnswer": [1],
+    "explanation": "2 Sử Ký 20:20 — '...Hỡi người Giu-đa và dân cư thành Giê-ru-sa-lem! hãy nghe ta: Khá tin cậy Giê-hô-va Đức Chúa Trời các ngươi, thì các ngươi sẽ vững chắc; hãy tin các đấng tiên tri Ngài, thì các ngươi sẽ được may mắn.'",
+    "language": "vi",
+    "options": [
+      "Khá rút lui khỏi đồng bằng",
+      "Khá tin cậy Đức Giê-hô-va — sẽ vững chắc; tin các tiên tri Ngài — sẽ được may mắn",
+      "Khá lập đồn trú trong rừng",
+      "Khá gửi sứ giả xin hòa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Tin cậy Đức Giê-hô-va",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 26,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 26:16, sau khi cường thịnh, Ô-xia kiêu ngạo và đã làm gì?",
+    "correctAnswer": [2],
+    "explanation": "2 Sử Ký 26:16 — 'Song khi người được trở nên cường thạnh, lòng người bèn kiêu ngạo, đến đỗi làm ác, phạm tội cùng Giê-hô-va Đức Chúa Trời của người; vì người vào trong đền thờ Đức Giê-hô-va, xông hương trên bàn thờ xông hương.'",
+    "language": "vi",
+    "options": [
+      "Lập đền thờ thần ngoại",
+      "Liên minh với Ai Cập",
+      "Vào đền thờ xông hương trên bàn thờ — việc chỉ thầy tế lễ được làm",
+      "Bán đất tổ phụ cho dân ngoại"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Ô-xia kiêu ngạo xông hương",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 26,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 26:19, vì sự kiêu ngạo, Ô-xia bị Đức Chúa Trời đánh phạt bằng gì?",
+    "correctAnswer": [3],
+    "explanation": "2 Sử Ký 26:19-20 — 'Ô-xia bèn nổi giận; người cầm nơi tay một cái lư hương toan xông hương; và đang khi người nổi giận cùng những thầy tế lễ, phung bèn nổi lên trên trán người trước mặt những thầy tế lễ.'",
+    "language": "vi",
+    "options": [
+      "Cơn động đất rúng động",
+      "Quân thù bao vây",
+      "Hạn hán mất mùa",
+      "Bệnh phung nổi lên trên trán"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Ô-xia bị phung",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 32,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 32:21, Đức Giê-hô-va đã làm gì để cứu Ê-xê-chia khỏi tay San-chê-ríp?",
+    "correctAnswer": [0],
+    "explanation": "2 Sử Ký 32:21 — 'Đức Giê-hô-va sai một thiên sứ diệt hết thảy người mạnh dạn, các quan trưởng và các quan tướng ở trong trại quân của vua A-si-ri. Người trở về trong xứ mình, mặt hổ thẹn; và khi người vào trong miễu thần mình, có những kẻ bởi lòng người sanh ra đánh giết người tại đó bằng gươm.'",
+    "language": "vi",
+    "options": [
+      "Sai một thiên sứ diệt các người mạnh dạn, quan trưởng và quan tướng trong trại A-si-ri",
+      "Đem hỏa hoạn lớn lan khắp trại",
+      "Cho cơn dịch lệ tấn công ngay tức khắc",
+      "Cho nước lụt cuốn trại quân đi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Thiên sứ diệt quân A-si-ri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 33,
+    "verseStart": 12,
+    "verseEnd": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 33:12-13, Ma-na-se gian ác đã làm gì khi bị bắt sang Ba-by-lôn, và Chúa đáp thế nào?",
+    "correctAnswer": [1],
+    "explanation": "2 Sử Ký 33:12-13 — 'Khi người bị hoạn nạn, bèn cầu khẩn Giê-hô-va Đức Chúa Trời của người và hạ mình xuống lắm trước mặt Đức Chúa Trời của tổ phụ người. Người cầu nguyện cùng Đức Chúa Trời; Đức Chúa Trời nhậm lời người, dẫn người về Giê-ru-sa-lem trong nước người; khi ấy Ma-na-se nhìn biết Giê-hô-va là Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Phản nghịch tột cùng — Chúa hủy diệt ông",
+      "Hạ mình cầu nguyện — Chúa nhậm lời, dẫn về Giê-ru-sa-lem; ông nhận biết Giê-hô-va là Đức Chúa Trời",
+      "Tìm kiếm các thầy đồng bóng — Chúa làm ngơ",
+      "Chết ngay tại Ba-by-lôn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Ma-na-se hạ mình ăn năn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 34,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 34:14-15, Hinh-kia thầy tế lễ thượng phẩm tìm thấy gì trong đền thờ trong đời Giô-si-a?",
+    "correctAnswer": [2],
+    "explanation": "2 Sử Ký 34:14-15 — '...Hinh-kia, thầy tế lễ, tìm được cuốn sách luật pháp của Đức Giê-hô-va đã truyền lại bởi Môi-se. Hinh-kia cất tiếng lên nói với Sa-phan, thư ký, rằng: Tôi đã tìm được cuốn sách luật pháp ở trong đền của Đức Giê-hô-va.'",
+    "language": "vi",
+    "options": [
+      "Hòm giao ước đã thất lạc",
+      "Áo lễ của thầy tế lễ thượng phẩm",
+      "Cuốn sách luật pháp Đức Giê-hô-va đã truyền bởi Môi-se",
+      "Thanh kiếm thánh của Đa-vít"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Tìm thấy sách luật pháp",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 35,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 35:1, Giô-si-a giữ lễ nào tại Giê-ru-sa-lem cho Đức Giê-hô-va?",
+    "correctAnswer": [3],
+    "explanation": "2 Sử Ký 35:1 — 'Giô-si-a giữ lễ Vượt qua cho Đức Giê-hô-va tại Giê-ru-sa-lem; ngày mười bốn tháng giêng, người ta giết con sinh về lễ Vượt qua.'",
+    "language": "vi",
+    "options": [
+      "Lễ Lều Tạm",
+      "Lễ Ngũ Tuần",
+      "Lễ Chuộc Tội",
+      "Lễ Vượt Qua"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Lễ Vượt Qua của Giô-si-a",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 36,
+    "verseStart": 22,
+    "verseEnd": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 2 Sử Ký 36:22-23, sách kết thúc với chiếu chỉ của vua nào?",
+    "correctAnswer": [0],
+    "explanation": "2 Sử Ký 36:22-23 — 'Năm thứ nhứt đời Si-ru, vua Phe-rơ-sơ trị vì... Si-ru vua Phe-rơ-sơ nói như vầy: Giê-hô-va Đức Chúa Trời đã ban cho ta các nước thế gian, và biểu ta xây cất cho Ngài một đền thờ tại Giê-ru-sa-lem trong xứ Giu-đa...' Câu này trùng với mở đầu sách E-xơ-ra.",
+    "language": "vi",
+    "options": [
+      "Si-ru, vua Phe-rơ-sơ — chiếu chỉ xây đền thờ tại Giê-ru-sa-lem",
+      "Nê-bu-cát-nết-sa, vua Ba-by-lôn",
+      "San-chê-ríp, vua A-si-ri",
+      "Pha-ra-ôn, vua Ai Cập"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Chiếu chỉ Si-ru",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 2 Sử Ký 7:14, dân Chúa phải làm những điều gì để được Chúa nghe và chữa lành xứ? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Sử Ký 7:14 — '...nếu dân sự ta, là dân gọi bằng danh ta, hạ mình xuống, cầu nguyện, tìm kiếm mặt ta, và trở lại, bỏ con đường tà, thì ta ở trên trời sẽ nghe, tha thứ tội chúng nó, và cứu xứ họ khỏi tai vạ.' Bốn điều kiện; 'dâng lễ thiêu nhiều' không phải điều kiện chính trong câu này.",
+    "language": "vi",
+    "options": [
+      "Hạ mình xuống và cầu nguyện",
+      "Tìm kiếm mặt Đức Giê-hô-va",
+      "Trở lại, bỏ con đường tà",
+      "Dâng lễ thiêu thật nhiều"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Điều kiện được chữa lành xứ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 20,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 2 Sử Ký 20:1-30, Giô-sa-phát đã làm những việc gì khi quân thù đông đảo đến tấn công? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Sử Ký 20:3-4, 18-22 — 'Giô-sa-phát sợ hãi, và định ý tìm cầu Đức Giê-hô-va; người rao khắp xứ Giu-đa phải kiêng ăn một ngày... Giô-sa-phát bèn cúi sấp mặt xuống đất; và cả Giu-đa và dân cư thành Giê-ru-sa-lem đều sấp mình xuống trước mặt Đức Giê-hô-va... lập những người ca xướng cho Đức Giê-hô-va... Đang lúc chúng khởi ca hát và ngợi khen, thì Đức Giê-hô-va đặt phục binh xông vào...' Ba việc; 'thuê quân ngoại bang' không có trong câu này.",
+    "language": "vi",
+    "options": [
+      "Tìm cầu Đức Giê-hô-va và rao kiêng ăn",
+      "Sấp mình xuống cầu nguyện cùng cả dân",
+      "Lập người ca xướng đi trước quân khi tấn công",
+      "Thuê quân ngoại bang về tăng cường"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Giô-sa-phát thắng nhờ thờ phượng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 26,
+    "verseStart": 16,
+    "verseEnd": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 2 Sử Ký 26:16-21, sự kiêu ngạo của Ô-xia dẫn đến những hậu quả nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Sử Ký 26:18-21 — 'Các thầy tế lễ ngăn cản... Ô-xia bèn nổi giận... phung bèn nổi lên trên trán người... vua Ô-xia bị bịnh phung cho đến ngày băng hà; và vì bị phung phải ở riêng ra trong một nhà khác, chẳng còn được vào đền của Đức Giê-hô-va nữa.' Ba hậu quả; 'được ban thêm ngai vàng' trái ngược.",
+    "language": "vi",
+    "options": [
+      "Phung nổi lên trên trán",
+      "Bị bệnh phung cho đến ngày băng hà",
+      "Phải ở riêng và không được vào đền Đức Giê-hô-va",
+      "Được Chúa ban thêm ngai vàng và bờ cõi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Hậu quả kiêu ngạo của Ô-xia",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 36,
+    "verseStart": 14,
+    "verseEnd": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 2 Sử Ký 36:14-21, Giê-ru-sa-lem sụp đổ vì những lý do nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Sử Ký 36:14-16 — '...các người trưởng tế và dân sự đều phạm tội rất trọng... lại làm ô uế đền của Đức Giê-hô-va... Giê-hô-va Đức Chúa Trời của tổ phụ chúng, vì có lòng thương xót dân sự và đền của Ngài; nên hằng sai sứ giả Ngài đến cùng chúng; nhưng chúng nhạo báng sứ giả của Đức Chúa Trời, khinh bỉ các lời phán Ngài, cười nhạo những tiên tri của Ngài...' Ba lý do; 'chúng giữ kỹ luật pháp Môi-se' trái nghịch.",
+    "language": "vi",
+    "options": [
+      "Các trưởng tế và dân phạm tội trọng và làm ô uế đền",
+      "Nhạo báng các sứ giả Đức Chúa Trời",
+      "Khinh bỉ lời phán và cười nhạo các tiên tri",
+      "Chúng giữ kỹ luật pháp Môi-se"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sử Ký",
+      "Lịch sử",
+      "Lý do Giê-ru-sa-lem sụp đổ",
+      "Nâng cao"
+    ]
+  }
+]

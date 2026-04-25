@@ -1,0 +1,611 @@
+[
+  {
+    "book": "2 Chronicles",
+    "chapter": 1,
+    "verseStart": 7,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 1:7-10, what did Solomon ask of God?",
+    "correctAnswer": [0],
+    "explanation": "2 Chronicles 1:10 — 'Give me now wisdom and knowledge to go out and come in before this people, for who can govern this people of yours, which is so great?'",
+    "language": "en",
+    "options": [
+      "Wisdom and knowledge to govern God's people",
+      "Boundless wealth",
+      "Long life",
+      "Strength to defeat enemies"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Solomon asks for wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 1,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 1:11-12, what did God grant Solomon besides wisdom?",
+    "correctAnswer": [1],
+    "explanation": "2 Chronicles 1:12 — '...wisdom and knowledge are granted to you. I will also give you riches, possessions, and honor, such as none of the kings had who were before you, and none after you shall have the like.'",
+    "language": "en",
+    "options": [
+      "Authority over all nations",
+      "Riches, possessions, and honor unmatched by any king before or after",
+      "The largest army in the land",
+      "The power to perform miracles"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Wisdom plus riches and honor",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 3:1, on which mountain did Solomon build the house of the LORD?",
+    "correctAnswer": [2],
+    "explanation": "2 Chronicles 3:1 — 'Then Solomon began to build the house of the LORD in Jerusalem on Mount Moriah, where the LORD had appeared to David his father, at the place that David had appointed, on the threshing floor of Ornan the Jebusite.'",
+    "language": "en",
+    "options": [
+      "Mount Zion",
+      "Mount Horeb",
+      "Mount Moriah — the threshing floor of Ornan the Jebusite",
+      "Mount Seir"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Temple on Mount Moriah",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 5,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 5:13-14, when the temple was dedicated, what filled the house of the LORD?",
+    "correctAnswer": [3],
+    "explanation": "2 Chronicles 5:13-14 — '...the house, the house of the LORD, was filled with a cloud, so that the priests could not stand to minister because of the cloud, for the glory of the LORD filled the house of God.'",
+    "language": "en",
+    "options": [
+      "A wondrous sound",
+      "Fire from the altar",
+      "Fragrant incense",
+      "A cloud — the glory of the LORD"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Glory of the LORD fills the temple",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 6,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 6:14, how did Solomon begin his prayer of dedication?",
+    "correctAnswer": [0],
+    "explanation": "2 Chronicles 6:14 — '...O LORD, God of Israel, there is no God like you, in heaven or on earth, keeping covenant and showing steadfast love to your servants who walk before you with all their heart...'",
+    "language": "en",
+    "options": [
+      "There is no God like You, in heaven or on earth",
+      "O Lord, we thank You for wisdom",
+      "O Lord, look upon this house",
+      "O Lord, bless all the nations"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "No God like You",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 7:1, after Solomon's prayer, what came down from heaven?",
+    "correctAnswer": [1],
+    "explanation": "2 Chronicles 7:1 — 'As soon as Solomon finished his prayer, fire came down from heaven and consumed the burnt offering and the sacrifices, and the glory of the LORD filled the temple.'",
+    "language": "en",
+    "options": [
+      "Cool dew",
+      "Fire from heaven that consumed the offerings",
+      "Rain from heaven",
+      "A trumpet blast"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Fire from heaven consumes offerings",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What famous verse about repentance is in 2 Chronicles 7:14?",
+    "correctAnswer": [2],
+    "explanation": "2 Chronicles 7:14 — '...if my people who are called by my name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land.'",
+    "language": "en",
+    "options": [
+      "Offer many sacrifices of thanksgiving",
+      "Fast for three full days",
+      "Humble themselves, pray, seek My face, turn from wicked ways — I will hear, forgive, and heal their land",
+      "Build another temple"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Humble, pray, seek, turn",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 9,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 9:1, from where did the queen come to test Solomon with hard questions?",
+    "correctAnswer": [3],
+    "explanation": "2 Chronicles 9:1 — 'Now when the queen of Sheba heard of the fame of Solomon, she came to Jerusalem to test him with hard questions, having a very great retinue and camels bearing spices and very much gold and precious stones...'",
+    "language": "en",
+    "options": [
+      "Egypt",
+      "Babylon",
+      "Persia",
+      "Sheba"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Queen of Sheba",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 10,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 10:11, how did Rehoboam, following the young men's counsel, answer the people?",
+    "correctAnswer": [0],
+    "explanation": "2 Chronicles 10:11 — '...whereas my father laid on you a heavy yoke, I will add to your yoke. My father disciplined you with whips, but I will discipline you with scorpions.'",
+    "language": "en",
+    "options": [
+      "My father disciplined you with whips, but I will discipline you with scorpions",
+      "I will lower your taxes",
+      "I will divide the kingdom among you",
+      "I will model my reign on David"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Discipline with scorpions",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 10,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 10:16, when Rehoboam answered harshly, how did Israel respond?",
+    "correctAnswer": [1],
+    "explanation": "2 Chronicles 10:16 — '...the people answered the king, \"What portion have we in David? We have no inheritance in the son of Jesse. Each of you to your tents, O Israel! Look now to your own house, David.\"'",
+    "language": "en",
+    "options": [
+      "Submitted unanimously to Rehoboam",
+      "Cried out: 'What portion have we in David?' — each to his own tent",
+      "Revolted at the palace",
+      "Silently accepted higher taxes"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "What portion in David",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 14,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 14:11, how did Asa pray before the battle with the Cushites?",
+    "correctAnswer": [2],
+    "explanation": "2 Chronicles 14:11 — '...O LORD, there is none like you to help, between the mighty and the weak. Help us, O LORD our God, for we rely on you...'",
+    "language": "en",
+    "options": [
+      "O Lord, give me skillful battle plans",
+      "O Lord, hide me in a shelter",
+      "O LORD, there is none like You to help — we rely on You",
+      "O Lord, hide Your face from us"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Asa's prayer",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 16,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 16:9, the eyes of the LORD run throughout the earth to do what?",
+    "correctAnswer": [3],
+    "explanation": "2 Chronicles 16:9 — 'For the eyes of the LORD run to and fro throughout the whole earth, to give strong support to those whose heart is blameless toward him. You have done foolishly in this, for from now on you will have wars.'",
+    "language": "en",
+    "options": [
+      "To search out human sin",
+      "To choose the prophets",
+      "To find hidden treasures",
+      "To give strong support to those whose heart is blameless toward Him"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Eyes of LORD support the blameless",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 20,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 20:15, what does God declare about the battle of Jehoshaphat?",
+    "correctAnswer": [0],
+    "explanation": "2 Chronicles 20:15 — '...Listen, all Judah and inhabitants of Jerusalem and King Jehoshaphat: Thus says the LORD to you, Do not be afraid and do not be dismayed at this great horde, for the battle is not yours but God's.'",
+    "language": "en",
+    "options": [
+      "Do not be afraid — the battle is not yours but God's",
+      "Hire foreign troops",
+      "Retreat and negotiate",
+      "Divide your army into three to attack"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Battle is God's",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 20,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 20:20, what does Jehoshaphat command the people?",
+    "correctAnswer": [1],
+    "explanation": "2 Chronicles 20:20 — '...Hear me, Judah and inhabitants of Jerusalem! Believe in the LORD your God, and you will be established; believe his prophets, and you will succeed.'",
+    "language": "en",
+    "options": [
+      "Withdraw from the plain",
+      "Believe in the LORD your God — you will be established; believe His prophets — you will succeed",
+      "Set up a fortress in the forest",
+      "Send messengers to seek peace"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Believe in the LORD",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 26,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 26:16, after he grew strong, what did Uzziah do in his pride?",
+    "correctAnswer": [2],
+    "explanation": "2 Chronicles 26:16 — 'But when he was strong, he grew proud, to his destruction. For he was unfaithful to the LORD his God and entered the temple of the LORD to burn incense on the altar of incense.'",
+    "language": "en",
+    "options": [
+      "Built a temple to a foreign god",
+      "Allied with Egypt",
+      "Entered the temple to burn incense — a task only for priests",
+      "Sold ancestral land to foreigners"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Uzziah proudly burns incense",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 26,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 26:19, with what did God strike Uzziah for his pride?",
+    "correctAnswer": [3],
+    "explanation": "2 Chronicles 26:19-20 — 'Then Uzziah was angry. Now he had a censer in his hand to burn incense, and when he became angry with the priests, leprosy broke out on his forehead in the presence of the priests in the house of the LORD...'",
+    "language": "en",
+    "options": [
+      "A great earthquake",
+      "An enemy siege",
+      "Drought and famine",
+      "Leprosy that broke out on his forehead"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Uzziah struck with leprosy",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 32,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 32:21, how did the LORD save Hezekiah from Sennacherib?",
+    "correctAnswer": [0],
+    "explanation": "2 Chronicles 32:21 — 'And the LORD sent an angel, who cut off all the mighty warriors and commanders and officers in the camp of the king of Assyria. So he returned with shame of face to his own land. And when he came into the house of his god, some of his own sons struck him down there with the sword.'",
+    "language": "en",
+    "options": [
+      "Sent an angel who cut off the mighty warriors, commanders, and officers in Assyria's camp",
+      "Brought a great fire that swept through the camp",
+      "Sent a plague to attack instantly",
+      "Sent a flood that swept the camp away"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Angel destroys Assyrian army",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 33,
+    "verseStart": 12,
+    "verseEnd": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 33:12-13, what did wicked Manasseh do when carried to Babylon, and how did God respond?",
+    "correctAnswer": [1],
+    "explanation": "2 Chronicles 33:12-13 — 'And when he was in distress, he entreated the favor of the LORD his God and humbled himself greatly before the God of his fathers. He prayed to him, and God was moved by his entreaty and heard his plea and brought him again to Jerusalem into his kingdom. Then Manasseh knew that the LORD was God.'",
+    "language": "en",
+    "options": [
+      "Rebelled to the end — God destroyed him",
+      "Humbled himself and prayed — God heard him, brought him back to Jerusalem; he knew the LORD is God",
+      "Sought mediums — God was unmoved",
+      "Died at Babylon"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Manasseh humbles himself",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 34,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 34:14-15, what did Hilkiah the high priest find in the temple in Josiah's day?",
+    "correctAnswer": [2],
+    "explanation": "2 Chronicles 34:14-15 — '...Hilkiah the priest found the Book of the Law of the LORD given through Moses. Then Hilkiah answered and said to Shaphan the secretary, \"I have found the Book of the Law in the house of the LORD.\"'",
+    "language": "en",
+    "options": [
+      "The lost ark of the covenant",
+      "The high priest's vestments",
+      "The Book of the Law of the LORD given through Moses",
+      "David's holy sword"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Finding the Book of the Law",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 35,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 35:1, what feast did Josiah keep at Jerusalem to the LORD?",
+    "correctAnswer": [3],
+    "explanation": "2 Chronicles 35:1 — 'Josiah kept a Passover to the LORD in Jerusalem. And they slaughtered the Passover lamb on the fourteenth day of the first month.'",
+    "language": "en",
+    "options": [
+      "Tabernacles",
+      "Pentecost",
+      "Day of Atonement",
+      "Passover"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Josiah's Passover",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 36,
+    "verseStart": 22,
+    "verseEnd": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 2 Chronicles 36:22-23, with whose decree does the book end?",
+    "correctAnswer": [0],
+    "explanation": "2 Chronicles 36:22-23 — 'Now in the first year of Cyrus king of Persia... Thus says Cyrus king of Persia, \"The LORD, the God of heaven, has given me all the kingdoms of the earth, and he has charged me to build him a house at Jerusalem, which is in Judah...\"' This verse parallels the opening of Ezra.",
+    "language": "en",
+    "options": [
+      "Cyrus king of Persia — decree to build the temple at Jerusalem",
+      "Nebuchadnezzar king of Babylon",
+      "Sennacherib king of Assyria",
+      "Pharaoh king of Egypt"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Decree of Cyrus",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 2 Chronicles 7:14, what must God's people do to be heard and have their land healed? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Chronicles 7:14 — '...if my people who are called by my name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land.' Four conditions; 'offering many burnt offerings' is not the central condition.",
+    "language": "en",
+    "options": [
+      "Humble themselves and pray",
+      "Seek the face of the LORD",
+      "Turn from their wicked ways",
+      "Offer many burnt offerings"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Conditions for healing the land",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 20,
+    "verseStart": 1,
+    "verseEnd": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 2 Chronicles 20:1-30, what did Jehoshaphat do when a great army came to attack? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Chronicles 20:3-4, 18-22 — 'Jehoshaphat was afraid and set his face to seek the LORD, and proclaimed a fast throughout all Judah... Jehoshaphat bowed his head with his face to the ground, and all Judah and the inhabitants of Jerusalem fell down before the LORD... appointed those who were to sing to the LORD... when they began to sing and praise, the LORD set an ambush...' Three actions; 'hiring foreign troops' is not in this passage.",
+    "language": "en",
+    "options": [
+      "Sought the LORD and proclaimed a fast",
+      "Bowed face down with all the people in prayer",
+      "Appointed singers to go before the army",
+      "Hired foreign troops to reinforce"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Jehoshaphat triumphs through worship",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 26,
+    "verseStart": 16,
+    "verseEnd": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 2 Chronicles 26:16-21, what consequences followed Uzziah's pride? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Chronicles 26:18-21 — 'They withstood King Uzziah... Uzziah was angry... leprosy broke out on his forehead... King Uzziah was a leper to the day of his death, and being a leper lived in a separate house, for he was excluded from the house of the LORD.' Three consequences; 'gaining a greater throne' is the opposite.",
+    "language": "en",
+    "options": [
+      "Leprosy broke out on his forehead",
+      "He was a leper to the day of his death",
+      "He lived in a separate house, excluded from the house of the LORD",
+      "God granted him a greater throne and territory"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Consequences of Uzziah's pride",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 36,
+    "verseStart": 14,
+    "verseEnd": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 2 Chronicles 36:14-21, why did Jerusalem fall? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "2 Chronicles 36:14-16 — '...all the officers of the priests and the people likewise were exceedingly unfaithful... they polluted the house of the LORD... The LORD, the God of their fathers, sent persistently to them by his messengers, because he had compassion on his people and on his dwelling place. But they kept mocking the messengers of God, despising his words and scoffing at his prophets...' Three reasons; 'they kept the law of Moses carefully' is the opposite.",
+    "language": "en",
+    "options": [
+      "Priests and people exceedingly unfaithful, polluting the temple",
+      "Mocking the messengers of God",
+      "Despising His words and scoffing at His prophets",
+      "They kept the law of Moses carefully"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Chronicles",
+      "History",
+      "Reasons Jerusalem fell",
+      "Advanced"
+    ]
+  }
+]
