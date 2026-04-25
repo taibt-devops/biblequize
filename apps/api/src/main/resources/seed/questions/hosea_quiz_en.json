@@ -1,0 +1,605 @@
+[
+  {
+    "book": "Hosea",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 1:1, whose son was Hosea?",
+    "correctAnswer": [0],
+    "explanation": "Hosea 1:1 — 'The word of the LORD that came to Hosea, the son of Beeri, in the days of Uzziah, Jotham, Ahaz, and Hezekiah, kings of Judah, and in the days of Jeroboam the son of Joash, king of Israel.'",
+    "language": "en",
+    "options": [
+      "Beeri",
+      "Amoz",
+      "Cushi",
+      "Pethuel"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Father of Hosea",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 1:2, what does the LORD command Hosea to do?",
+    "correctAnswer": [1],
+    "explanation": "Hosea 1:2 — '...The LORD said to Hosea, \"Go, take to yourself a wife of whoredom and have children of whoredom, for the land commits great whoredom by forsaking the LORD.\"' Hosea's marriage is a living symbol of Israel's unfaithfulness.",
+    "language": "en",
+    "options": [
+      "Go preach to Nineveh",
+      "Take a wife of whoredom and have children of whoredom",
+      "Live alone in the wilderness",
+      "Go to the king of Judah's court"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Symbolic marriage",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 1:6, what is Hosea's daughter named?",
+    "correctAnswer": [2],
+    "explanation": "Hosea 1:6 — '...Call her name No Mercy (Lo-Ruhamah), for I will no more have mercy on the house of Israel.' Lo-Ruhamah means 'No Mercy.'",
+    "language": "en",
+    "options": [
+      "Abigail",
+      "Deborah",
+      "Lo-Ruhamah (No Mercy)",
+      "Huldah"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Lo-Ruhamah",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 1:9, what is Hosea's third child named?",
+    "correctAnswer": [3],
+    "explanation": "Hosea 1:9 — 'And the LORD said, \"Call his name Not My People (Lo-Ammi), for you are not my people, and I am not your God.\"' Lo-Ammi means 'Not My People.'",
+    "language": "en",
+    "options": [
+      "Jonathan",
+      "Samuel",
+      "Menahem",
+      "Lo-Ammi (Not My People)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Lo-Ammi",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 2,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 2:19, what does the LORD promise to do for Israel?",
+    "correctAnswer": [0],
+    "explanation": "Hosea 2:19 — 'And I will betroth you to me forever. I will betroth you to me in righteousness and in justice, in steadfast love and in mercy.'",
+    "language": "en",
+    "options": [
+      "Betroth her to Himself forever — in righteousness, justice, steadfast love, mercy",
+      "Lead her into the wilderness forever",
+      "Judge her without mercy",
+      "Abandon her to her enemies"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Betroth forever",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 4:6, why is God's people destroyed?",
+    "correctAnswer": [1],
+    "explanation": "Hosea 4:6 — 'My people are destroyed for lack of knowledge; because you have rejected knowledge, I reject you from being a priest to me.'",
+    "language": "en",
+    "options": [
+      "Lack of food",
+      "Lack of knowledge",
+      "Lack of provisions",
+      "Lack of strength"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Destroyed for lack of knowledge",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What famous summons begins Hosea 6:1?",
+    "correctAnswer": [2],
+    "explanation": "Hosea 6:1 — 'Come, let us return to the LORD; for he has torn us, that he may heal us; he has struck us down, and he will bind us up.'",
+    "language": "en",
+    "options": [
+      "Come, let us go up to Zion",
+      "Come, let us burn other gods",
+      "Come, let us return to the LORD",
+      "Come, let us divide into factions"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Return to the LORD",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 6,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 6:6, what does God desire more than sacrifice?",
+    "correctAnswer": [3],
+    "explanation": "Hosea 6:6 — 'For I desire steadfast love and not sacrifice, the knowledge of God rather than burnt offerings.' Quoted by Jesus in Matthew 9:13 and 12:7.",
+    "language": "en",
+    "options": [
+      "Ritual worship",
+      "Hard labor",
+      "Human wisdom",
+      "Steadfast love and the knowledge of God"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Steadfast love over sacrifice",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 8,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 8:7, what will Israel sow and what will they reap?",
+    "correctAnswer": [0],
+    "explanation": "Hosea 8:7 — 'For they sow the wind, and they shall reap the whirlwind...' The consequence of apostasy is intensified destruction.",
+    "language": "en",
+    "options": [
+      "Sow the wind, reap the whirlwind",
+      "Sow water, reap drought",
+      "Sow wheat, reap weeds",
+      "Sow earth, reap stones"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Sow wind, reap whirlwind",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 11:1, whom does God call out of Egypt?",
+    "correctAnswer": [1],
+    "explanation": "Hosea 11:1 — 'When Israel was a child, I loved him, and out of Egypt I called my son.' Quoted in Matthew 2:15 as fulfilled in Christ.",
+    "language": "en",
+    "options": [
+      "Abraham",
+      "My son",
+      "Moses",
+      "Joshua"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Out of Egypt I called my son",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 11,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 11:8, what does God say grows warm within Him concerning Israel?",
+    "correctAnswer": [2],
+    "explanation": "Hosea 11:8 — 'How can I give you up, O Ephraim? How can I hand you over, O Israel?... My heart recoils within me; my compassion grows warm and tender.'",
+    "language": "en",
+    "options": [
+      "Wrath that consumes",
+      "Strict judgment",
+      "His heart recoils, His compassion grows warm and tender",
+      "Total indifference"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Compassion grows warm",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 14,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What is the opening summons of Hosea 14:1?",
+    "correctAnswer": [3],
+    "explanation": "Hosea 14:1 — 'Return, O Israel, to the LORD your God, for you have stumbled because of your iniquity.'",
+    "language": "en",
+    "options": [
+      "Hear, O Israel, the word of the LORD",
+      "Fight, O Israel, against your enemies",
+      "Keep, O Israel, the Sabbath",
+      "Return, O Israel, to the LORD your God"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Return, O Israel, to the LORD",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 14,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 14:4, what does God promise to heal?",
+    "correctAnswer": [0],
+    "explanation": "Hosea 14:4 — 'I will heal their apostasy; I will love them freely, for my anger has turned from them.'",
+    "language": "en",
+    "options": [
+      "Their apostasy — love them freely as His anger has turned away",
+      "All bodily diseases",
+      "All poverty",
+      "All battle wounds"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Heal their apostasy",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 13,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 13:14, what does God challenge?",
+    "correctAnswer": [1],
+    "explanation": "Hosea 13:14 — 'I shall ransom them from the power of Sheol; I shall redeem them from Death. O Death, where are your plagues? O Sheol, where is your sting?' Paul quotes in 1 Corinthians 15:55.",
+    "language": "en",
+    "options": [
+      "O earth, why are you silent?",
+      "O Death, where are your plagues? O Sheol, where is your sting?",
+      "O sea, why do you rage?",
+      "O mountains, why do you tremble?"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "O Death where are your plagues",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 12,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 12:6, what must the people do?",
+    "correctAnswer": [2],
+    "explanation": "Hosea 12:6 — 'So you, by the help of your God, return, hold fast to love and justice, and wait continually for your God.'",
+    "language": "en",
+    "options": [
+      "Wander to another nation",
+      "Build a new temple",
+      "Return to your God, hold fast to love and justice, wait continually for Him",
+      "Build a strong army"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Return, hold love and justice",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 10,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 10:12, what should the people sow and what should they reap?",
+    "correctAnswer": [3],
+    "explanation": "Hosea 10:12 — 'Sow for yourselves righteousness; reap steadfast love; break up your fallow ground, for it is the time to seek the LORD, that he may come and rain righteousness upon you.'",
+    "language": "en",
+    "options": [
+      "Sow wheat, reap bread",
+      "Sow grapes, reap wine",
+      "Sow oil, reap light",
+      "Sow righteousness, reap steadfast love"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Sow righteousness, reap love",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 4:1, what three things are absent from the land?",
+    "correctAnswer": [0],
+    "explanation": "Hosea 4:1 — '...for the LORD has a controversy with the inhabitants of the land. There is no faithfulness or steadfast love, and no knowledge of God in the land.'",
+    "language": "en",
+    "options": [
+      "Faithfulness, steadfast love, knowledge of God",
+      "Food, water, clothing",
+      "Army, commanders, allies",
+      "Property, courage, fame"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Three things absent",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 3,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 3:2, what did Hosea pay to redeem Gomer?",
+    "correctAnswer": [1],
+    "explanation": "Hosea 3:2 — 'So I bought her for fifteen shekels of silver and a homer and a lethech of barley.'",
+    "language": "en",
+    "options": [
+      "Ten gold pieces",
+      "Fifteen shekels of silver and a homer and a lethech of barley",
+      "An ox and a sheep",
+      "Two fields and a vineyard"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Redeeming Gomer",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 5,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 5:15, what will God do until His people acknowledge their guilt?",
+    "correctAnswer": [2],
+    "explanation": "Hosea 5:15 — 'I will return again to my place, until they acknowledge their guilt and seek my face, and in their distress earnestly seek me.'",
+    "language": "en",
+    "options": [
+      "Add more blessings",
+      "Send more prophets",
+      "Return to His place until they acknowledge guilt and seek His face",
+      "Destroy them at once"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "God withdraws till repentance",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 13,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 13:4, since when has the LORD been Israel's God?",
+    "correctAnswer": [3],
+    "explanation": "Hosea 13:4 — 'But I am the LORD your God from the land of Egypt; you know no God but me, and besides me there is no savior.'",
+    "language": "en",
+    "options": [
+      "From the time of the patriarchs",
+      "From the time of David",
+      "From the time of the judges",
+      "From the land of Egypt"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "From Egypt their God",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 2,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Hosea 2:23, what will God say to 'Lo-Ammi'?",
+    "correctAnswer": [0],
+    "explanation": "Hosea 2:23 — '...I will have mercy on No Mercy, and I will say to Not My People, \"You are my people\"; and he shall say, \"You are my God.\"' Quoted by Paul in Romans 9:25.",
+    "language": "en",
+    "options": [
+      "'You are My people'",
+      "'You are still not My people'",
+      "'You will be destroyed'",
+      "'You will return to Egypt'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Lo-Ammi becomes My people",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 1,
+    "verseStart": 4,
+    "verseEnd": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Hosea 1:4-9, what are the three names of Hosea's children? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Hosea 1:4-9 — 'Call his name Jezreel... Call her name No Mercy (Lo-Ruhamah)... Call his name Not My People (Lo-Ammi).' Three symbolic names. 'Immanuel' is not a child of Hosea.",
+    "language": "en",
+    "options": [
+      "Jezreel",
+      "Lo-Ruhamah (No Mercy)",
+      "Lo-Ammi (Not My People)",
+      "Immanuel"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Three symbolic children",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 4,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Hosea 4:1-2, what does God charge Israel with? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Hosea 4:1-2 — '...there is no faithfulness or steadfast love, and no knowledge of God in the land; there is swearing, lying, murder, stealing, and committing adultery; they break all bounds, and bloodshed follows bloodshed.' Many sins listed; 'pure worship' contradicts.",
+    "language": "en",
+    "options": [
+      "No faithfulness, no steadfast love, no knowledge of God",
+      "Swearing, lying, murder, stealing",
+      "Adultery and bloodshed",
+      "Pure worship"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "God's controversy",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 6,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Hosea 6:6, what does God desire and what does He not desire? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Hosea 6:6 — 'For I desire steadfast love and not sacrifice, the knowledge of God rather than burnt offerings.' Four points; 'great burnt offerings' is precisely what God says He does not desire.",
+    "language": "en",
+    "options": [
+      "Desires steadfast love",
+      "Does not desire sacrifice",
+      "Desires the knowledge of God",
+      "Desires great burnt offerings"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Steadfast love over sacrifice",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 14,
+    "verseStart": 4,
+    "verseEnd": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Hosea 14:4-7, what restoration does God promise Israel? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Hosea 14:4-7 — 'I will heal their apostasy... I will be like the dew to Israel... they shall blossom like the vine; their fame shall be like the wine of Lebanon.' Many blessings; 'scattering them among the nations' is the opposite.",
+    "language": "en",
+    "options": [
+      "Healing their apostasy",
+      "Being like the dew to Israel — they shall blossom like the lily",
+      "They shall return to dwell beneath His shadow — flourishing like wheat",
+      "Scattering them among the nations"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hosea",
+      "Prophets",
+      "Restoration of Israel",
+      "Advanced"
+    ]
+  }
+]
