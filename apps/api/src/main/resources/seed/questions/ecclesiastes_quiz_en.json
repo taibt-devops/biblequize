@@ -323,5 +323,213 @@
       "Poetry",
       "Intermediate"
     ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Ecclesiastes 1:9 say about anything new under the sun?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ecclesiastes 1:9 — 'What has been is what will be, and what has been done is what will be done, and there is nothing new under the sun.'",
+    "language": "en",
+    "options": [
+      "Everything is new",
+      "Only a few things are new",
+      "There is nothing new under the sun",
+      "Everything has completely changed"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ecclesiastes",
+      "Vanity",
+      "Wisdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Ecclesiastes 2:11 describe all human toil under the sun?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ecclesiastes 2:11 — 'Then I considered all that my hands had done... behold, all was vanity and a striving after wind, and there was nothing to be gained under the sun.'",
+    "language": "en",
+    "options": [
+      "Eternal blessing",
+      "Vanity and striving after wind",
+      "True wisdom",
+      "An everlasting treasure"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ecclesiastes",
+      "Vanity",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 3,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Ecclesiastes 3:14 say about what God does?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ecclesiastes 3:14 — 'I perceived that whatever God does endures forever; nothing can be added to it, nor anything taken from it.'",
+    "language": "en",
+    "options": [
+      "Can be added to by humans",
+      "Can be modified",
+      "Endures forever; nothing added or taken",
+      "Lasts only for a time"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ecclesiastes",
+      "Works of God",
+      "Wisdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 5,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How does Ecclesiastes 5:2 teach we should speak before God?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ecclesiastes 5:2 — 'God is in heaven and you are on earth. Therefore let your words be few.'",
+    "language": "en",
+    "options": [
+      "Speak many words for emphasis",
+      "Eloquent like a preacher",
+      "Shout loud so God hears",
+      "Let your words be few, for God is in heaven"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ecclesiastes",
+      "Prayer",
+      "Wisdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 7,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Ecclesiastes 7:20 declare about the righteous?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ecclesiastes 7:20 — 'Surely there is not a righteous man on earth who does good and never sins.'",
+    "language": "en",
+    "options": [
+      "Many are entirely sinless",
+      "There is no righteous man on earth who never sins",
+      "Only Solomon never sinned",
+      "The Jews never sinned"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ecclesiastes",
+      "Sin",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 8,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "According to Ecclesiastes 8:11, why is the heart of man fully set to do evil?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ecclesiastes 8:11 — 'Because the sentence against an evil deed is not executed speedily, the heart of the children of man is fully set to do evil.'",
+    "language": "en",
+    "options": [
+      "Because no one is watching",
+      "Because law is too weak",
+      "Because sentence is not executed speedily",
+      "Because they don't believe in God"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ecclesiastes",
+      "Human Heart",
+      "Wisdom",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 9,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "To whom does Ecclesiastes 9:11 say time and chance happen?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ecclesiastes 9:11 — 'The race is not to the swift, nor the battle to the strong... but time and chance happen to them all.'",
+    "language": "en",
+    "options": [
+      "Only to the wicked",
+      "Only to the poor",
+      "Only to the weak",
+      "To them all (swift, strong, wise, skilled)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ecclesiastes",
+      "Time",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Ecclesiastes 11:1 advise to do with one's bread?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ecclesiastes 11:1 — 'Cast your bread upon the waters, for you will find it after many days.'",
+    "language": "en",
+    "options": [
+      "Cast it upon the waters",
+      "Hide it in a jar",
+      "Eat it all alone",
+      "Sell it in the market"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ecclesiastes",
+      "Generous Investment",
+      "Wisdom",
+      "Basic"
+    ]
   }
 ]

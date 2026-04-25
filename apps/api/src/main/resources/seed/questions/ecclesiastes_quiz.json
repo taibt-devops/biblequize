@@ -323,5 +323,213 @@
       "Văn Thơ",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Truyền Đạo 1:9 nói gì về điều mới dưới mặt trời?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Truyền Đạo 1:9 — 'Điều chi đã có, ấy là điều sẽ có; điều gì đã làm, ấy là điều sẽ làm nữa: chẳng có điều gì mới ở dưới mặt trời.'",
+    "language": "vi",
+    "options": [
+      "Mọi điều đều mới mẻ",
+      "Chỉ có vài điều mới",
+      "Chẳng có điều gì mới ở dưới mặt trời",
+      "Tất cả đã hoàn toàn thay đổi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Truyền Đạo",
+      "Hư không",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Truyền Đạo 2:11 mô tả mọi công việc dưới mặt trời như thế nào?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Truyền Đạo 2:11 — 'Đoạn ta xem xét các công việc tay mình đã làm... kìa, mọi điều đó là sự hư không, theo luồng gió thổi, và chẳng có ích lợi gì hết dưới mặt trời.'",
+    "language": "vi",
+    "options": [
+      "Là phước hạnh đời đời",
+      "Là sự hư không và theo luồng gió thổi",
+      "Là sự khôn ngoan thật",
+      "Là kho báu vĩnh cửu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Truyền Đạo",
+      "Hư không",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 3,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Truyền Đạo 3:14 nói điều gì về việc Đức Chúa Trời làm?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Truyền Đạo 3:14 — 'Ta biết rằng mọi việc Đức Chúa Trời làm nên còn có đời đời: người ta chẳng thêm gì được, cũng không bớt chi đặng.'",
+    "language": "vi",
+    "options": [
+      "Có thể được con người thêm vào",
+      "Có thể được sửa đổi",
+      "Còn có đời đời, không thêm bớt được",
+      "Chỉ kéo dài tạm thời"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Truyền Đạo",
+      "Việc của Đức Chúa Trời",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 5,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Truyền Đạo 5:2 dạy về cách nói trước mặt Đức Chúa Trời như thế nào?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Truyền Đạo 5:2 — 'Đức Chúa Trời ở trên trời, còn ngươi ở dưới đất; vậy nên ngươi khá ít lời.'",
+    "language": "vi",
+    "options": [
+      "Nói thật nhiều cho hùng hồn",
+      "Nói lưu loát như nhà giảng",
+      "Hét to để Chúa nghe",
+      "Khá ít lời, vì Đức Chúa Trời ở trên trời"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Truyền Đạo",
+      "Lời cầu nguyện",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 7,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Truyền Đạo 7:20 tuyên bố điều gì về người công bình?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Truyền Đạo 7:20 — 'Thật, chẳng có người công bình ở trên đất làm điều thiện, mà không hề phạm tội.'",
+    "language": "vi",
+    "options": [
+      "Nhiều người hoàn toàn không phạm tội",
+      "Chẳng có người công bình nào không phạm tội",
+      "Chỉ vua Sa-lô-môn không phạm tội",
+      "Người Do Thái không phạm tội"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Truyền Đạo",
+      "Tội lỗi",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 8,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Theo Truyền Đạo 8:11, vì sao lòng con người dạn dĩ làm điều ác?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Truyền Đạo 8:11 — 'Bởi vì án phạt việc ác không thi hành tức khắc, lòng con loài người chuyên làm điều ác.'",
+    "language": "vi",
+    "options": [
+      "Vì không có ai chứng kiến",
+      "Vì luật pháp quá yếu",
+      "Vì án phạt không thi hành tức khắc",
+      "Vì không tin Chúa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Truyền Đạo",
+      "Tội lỗi của lòng người",
+      "Văn Thơ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 9,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Truyền Đạo 9:11 nói thời gian và việc rủi xảy đến cho ai?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Truyền Đạo 9:11 — 'Cuộc chạy đua chẳng phải dành cho kẻ lẹ chân; trận đấu chẳng phải dành cho kẻ mạnh... vì thời gian và sự bất trắc xảy đến cho mọi người.'",
+    "language": "vi",
+    "options": [
+      "Chỉ kẻ ác",
+      "Chỉ kẻ nghèo",
+      "Chỉ kẻ yếu",
+      "Mọi người (lẹ chân, mạnh, khôn ngoan, có tài)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Truyền Đạo",
+      "Thời gian",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Truyền Đạo 11:1 khuyên nên làm gì với bánh mình?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Truyền Đạo 11:1 — 'Hãy quăng bánh ngươi nơi mặt nước, vì khỏi lâu ngày ngươi sẽ tìm nó lại.'",
+    "language": "vi",
+    "options": [
+      "Quăng bánh nơi mặt nước",
+      "Giấu bánh trong vò",
+      "Ăn hết một mình",
+      "Đem ra chợ bán"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Truyền Đạo",
+      "Đầu tư rộng rãi",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
   }
 ]
