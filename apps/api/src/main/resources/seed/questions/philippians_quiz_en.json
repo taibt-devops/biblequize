@@ -301,5 +301,243 @@
       "Epistle",
       "Intermediate"
     ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How do Paul and Timothy describe themselves at the opening of Philippians?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Philippians 1:1 — 'Paul and Timothy, servants of Christ Jesus, to all the saints in Christ Jesus who are at Philippi.'",
+    "language": "en",
+    "options": [
+      "Apostles and disciples",
+      "Elders and deacons",
+      "Servants of Christ Jesus",
+      "Beloved brothers"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Greeting",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "In Philippians 1:9-10, Paul prays that the church's love would abound together with what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Philippians 1:9-10 — 'It is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent.'",
+    "language": "en",
+    "options": [
+      "With financial means",
+      "With courage",
+      "With knowledge and all discernment",
+      "With the number of believers"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Love",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 12,
+    "verseEnd": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Paul say his imprisonment had served to do?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Philippians 1:12 — 'I want you to know, brothers, that what has happened to me has really served to advance the gospel.'",
+    "language": "en",
+    "options": [
+      "Made the church afraid",
+      "Caused Paul to abandon ministry",
+      "Silenced the gospel",
+      "Advanced the gospel"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Gospel",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How does Philippians 1:27 urge believers to live?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Philippians 1:27 — 'Only let your manner of life be worthy of the gospel of Christ.'",
+    "language": "en",
+    "options": [
+      "According to Jewish customs",
+      "In seclusion",
+      "Worthy of the gospel of Christ",
+      "Avoiding public places"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Living",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "verseStart": 14,
+    "verseEnd": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Philippians 2:14, believers should do everything without what?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Philippians 2:14 — 'Do all things without grumbling or disputing.'",
+    "language": "en",
+    "options": [
+      "Without caution",
+      "Without wisdom",
+      "Without witnesses",
+      "Without grumbling or disputing"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Obedience",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 20,
+    "verseEnd": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where does Philippians 3:20 say the believers' citizenship is?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Philippians 3:20 — 'But our citizenship is in heaven, and from it we await a Savior, the Lord Jesus Christ.'",
+    "language": "en",
+    "options": [
+      "In Jerusalem",
+      "In Philippi",
+      "In Rome",
+      "In heaven"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Heavenly Citizenship",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Philippians 4:4 command believers?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Philippians 4:4 — 'Rejoice in the Lord always; again I will say, rejoice.'",
+    "language": "en",
+    "options": [
+      "Mourn for sin",
+      "Fast continually",
+      "Rejoice in the Lord always",
+      "Flee from the world"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Joy",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Through whom does Philippians 4:13 say Paul can do all things?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Philippians 4:13 — 'I can do all things through him who strengthens me.'",
+    "language": "en",
+    "options": [
+      "Through his own strength",
+      "Through the church's help",
+      "Through him who strengthens me",
+      "Through Caesar"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Strength in Christ",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Philippians 4:19 promise God will do for the Philippian believers?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Philippians 4:19 — 'And my God will supply every need of yours according to his riches in glory in Christ Jesus.'",
+    "language": "en",
+    "options": [
+      "Make them worldly rich",
+      "Give social status",
+      "Give them talents",
+      "Supply every need according to His riches in glory in Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Provision",
+      "Epistle",
+      "Basic"
+    ]
   }
 ]

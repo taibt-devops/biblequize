@@ -301,5 +301,243 @@
       "Thư tín",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô tự xưng mình và Ti-mô-thê là gì khi mở đầu thư Phi-líp?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Phi-líp 1:1 — 'Phao-lô và Ti-mô-thê, đầy tớ của Đức Chúa Jêsus Christ, gửi cho hết thảy các thánh đồ trong Đức Chúa Jêsus Christ ở thành Phi-líp.'",
+    "language": "vi",
+    "options": [
+      "Sứ đồ và môn đồ",
+      "Trưởng lão và chấp sự",
+      "Đầy tớ của Đức Chúa Jêsus Christ",
+      "Anh em yêu dấu"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-líp",
+      "Mở đầu thư",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Trong Phi-líp 1:9-10, Phao-lô cầu xin sự yêu thương của hội thánh tăng trưởng cùng với điều gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Phi-líp 1:9-10 — 'Tôi cầu xin Ngài làm cho lòng yêu thương của anh em càng ngày càng dư dật trong sự thông biết và mọi sự suy hiểu, để thẩm định những điều tốt nhất.'",
+    "language": "vi",
+    "options": [
+      "Cùng tài chánh",
+      "Cùng sự can đảm",
+      "Cùng sự thông biết và mọi sự suy hiểu",
+      "Cùng số người tin"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-líp",
+      "Yêu thương",
+      "Thư tín",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 12,
+    "verseEnd": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô nói sự bị tù đày của ông đem lại kết quả gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Phi-líp 1:12 — 'Hỡi anh em, tôi muốn anh em biết rằng những điều đã xảy đến cho tôi lại đã đem lại sự tấn tới cho Tin Lành.'",
+    "language": "vi",
+    "options": [
+      "Làm hội thánh sợ hãi",
+      "Khiến Phao-lô từ bỏ chức vụ",
+      "Dập tắt Tin Lành",
+      "Đem lại sự tấn tới cho Tin Lành"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-líp",
+      "Tin Lành",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Phi-líp 1:27 khuyên các tín hữu phải sống như thế nào?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Phi-líp 1:27 — 'Duy anh em phải ăn ở một cách xứng đáng với đạo Tin Lành của Đấng Christ.'",
+    "language": "vi",
+    "options": [
+      "Ăn ở theo phong tục Do Thái",
+      "Sống ẩn dật",
+      "Ăn ở xứng đáng với đạo Tin Lành của Đấng Christ",
+      "Tránh xa nơi công cộng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-líp",
+      "Đời sống",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "verseStart": 14,
+    "verseEnd": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Phi-líp 2:14, các tín hữu phải làm mọi việc mà không có điều gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Phi-líp 2:14 — 'Phàm làm việc gì chớ nên lằm bằm và lưỡng lự.'",
+    "language": "vi",
+    "options": [
+      "Không có sự cẩn thận",
+      "Không có sự khôn ngoan",
+      "Không có người chứng kiến",
+      "Không lằm bằm và lưỡng lự"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-líp",
+      "Vâng phục",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 20,
+    "verseEnd": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phi-líp 3:20 nói quê hương của các tín hữu ở đâu?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Phi-líp 3:20 — 'Nhưng quê hương chúng ta ở trên trời; ấy là từ nơi đó mà chúng ta trông đợi Cứu Chúa mình là Đức Chúa Jêsus Christ.'",
+    "language": "vi",
+    "options": [
+      "Tại Giê-ru-sa-lem",
+      "Tại Phi-líp",
+      "Tại Rô-ma",
+      "Ở trên trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-líp",
+      "Quê hương trên trời",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phi-líp 4:4 truyền lệnh gì cho các tín hữu?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Phi-líp 4:4 — 'Hãy vui mừng trong Chúa luôn luôn. Tôi lại còn nói nữa: hãy vui mừng đi!'",
+    "language": "vi",
+    "options": [
+      "Hãy buồn rầu vì tội",
+      "Hãy ăn chay liên tục",
+      "Hãy vui mừng trong Chúa luôn luôn",
+      "Hãy lánh xa thế gian"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-líp",
+      "Vui mừng",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phi-líp 4:13 tuyên bố Phao-lô làm được mọi sự nhờ ai?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Phi-líp 4:13 — 'Tôi làm được mọi sự nhờ Đấng ban thêm sức cho tôi.'",
+    "language": "vi",
+    "options": [
+      "Nhờ chính sức mình",
+      "Nhờ hội thánh giúp đỡ",
+      "Nhờ Đấng ban thêm sức cho",
+      "Nhờ vua Sê-sa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-líp",
+      "Sức mạnh trong Christ",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Phi-líp 4:19, Đức Chúa Trời sẽ làm gì cho tín hữu Phi-líp?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Phi-líp 4:19 — 'Đức Chúa Trời tôi sẽ làm cho đầy đủ mọi sự cần dùng của anh em y theo sự giàu có của Ngài ở nơi vinh hiển trong Đức Chúa Jêsus Christ.'",
+    "language": "vi",
+    "options": [
+      "Cho họ giàu có thế gian",
+      "Cho họ địa vị xã hội",
+      "Cho họ tài năng",
+      "Cung cấp đầy đủ mọi nhu cầu của họ theo sự giàu có vinh hiển trong Christ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Phi-líp",
+      "Cung cấp",
+      "Thư tín",
+      "Cơ bản"
+    ]
   }
 ]
