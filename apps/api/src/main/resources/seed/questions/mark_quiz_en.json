@@ -1,0 +1,915 @@
+[
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does the book of Mark begin its declaration about Jesus?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Mark 1:1 opens: 'The beginning of the gospel of Jesus Christ, the Son of God.'",
+    "language": "en",
+    "options": [
+      "The Son of God",
+      "A prophet like Isaiah",
+      "King of the Jews",
+      "Son of Man"
+    ],
+    "tags": [
+      "New Testament",
+      "Opening",
+      "Theology",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus call Simon and Andrew to become?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Mark 1:17 — 'Follow me, and I will make you become fishers of men.'",
+    "language": "en",
+    "verseEnd": 18,
+    "options": [
+      "Teachers of the law",
+      "Fishers of men",
+      "Prophets",
+      "Priests"
+    ],
+    "tags": [
+      "New Testament",
+      "Calling disciples",
+      "Command",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 2,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus say to the paralytic before healing his body?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 2:5 — Before healing his body, Jesus said: 'Son, your sins are forgiven.'",
+    "language": "en",
+    "verseEnd": 12,
+    "options": [
+      "Your faith has saved you",
+      "Go wash in the pool of Siloam",
+      "Rise and walk",
+      "Son, your sins are forgiven"
+    ],
+    "tags": [
+      "New Testament",
+      "Miracle",
+      "Forgiveness",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 4,
+    "verseStart": 35,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the storm arose on the sea, what did Jesus do?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 4:39 — He rebuked the wind and said to the sea: 'Peace! Be still!'",
+    "language": "en",
+    "verseEnd": 41,
+    "options": [
+      "Called the disciples to draw the nets",
+      "Jumped from the boat",
+      "Rebuked the wind and said: Peace, be still!",
+      "Prayed for rain"
+    ],
+    "tags": [
+      "New Testament",
+      "Miracle",
+      "Nature",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 5,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How was the woman with the issue of blood healed?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Mark 5:27-29 — She touched Jesus' garment and was healed.",
+    "language": "en",
+    "verseEnd": 34,
+    "options": [
+      "Touched Jesus' garment",
+      "Offered a sacrifice",
+      "Cried aloud",
+      "Fasted and prayed"
+    ],
+    "tags": [
+      "New Testament",
+      "Faith",
+      "Miracle",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus teach about little children when they were brought to Him?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 10:14 — 'Let the children come to me... for to such belongs the kingdom of God.'",
+    "language": "en",
+    "verseEnd": 16,
+    "options": [
+      "Children don't understand; wait until older",
+      "Bless only a few",
+      "The kingdom of God belongs to those who are like little children",
+      "Send them away"
+    ],
+    "tags": [
+      "New Testament",
+      "Teaching",
+      "Kingdom",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What amazed the people about Jesus' teaching at Capernaum?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Mark 1:22 — He taught as one who had authority, not as the scribes.",
+    "language": "en",
+    "verseEnd": 28,
+    "options": [
+      "He taught with authority",
+      "He quoted many books",
+      "He spoke very softly",
+      "He used difficult parables"
+    ],
+    "tags": [
+      "New Testament",
+      "Teaching",
+      "Authority",
+      "Mark",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 2,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How did Jesus teach about the Sabbath?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 2:27 — 'The Sabbath was made for man, not man for the Sabbath.'",
+    "language": "en",
+    "verseEnd": 28,
+    "options": [
+      "Everything is forbidden",
+      "Man was made for the Sabbath",
+      "Only priests must keep it",
+      "The Sabbath was made for man"
+    ],
+    "tags": [
+      "New Testament",
+      "Law",
+      "Sabbath",
+      "Mark",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 3,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What was the chief purpose Jesus appointed the twelve apostles for?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Mark 3:14 — That they might be with Him and that He might send them out to preach, having authority to cast out demons.",
+    "language": "en",
+    "verseEnd": 19,
+    "options": [
+      "To be with Him and be sent out to preach",
+      "To rule in His place",
+      "To handle finances",
+      "To keep the law of Moses"
+    ],
+    "tags": [
+      "New Testament",
+      "Disciples",
+      "Mission",
+      "Mark",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 4,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the parable of the sower, what does the good soil represent?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 4:20 — Good soil are those who hear the word, accept it, and bear fruit.",
+    "language": "en",
+    "verseEnd": 20,
+    "options": [
+      "Hear and forget",
+      "Choked by thorns",
+      "Eaten by birds",
+      "Hear the word, accept it, bear fruit"
+    ],
+    "tags": [
+      "New Testament",
+      "Parable",
+      "Heart",
+      "Mark",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the demon-possessed man at Gerasa give as the demons' name?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Mark 5:9 — 'My name is Legion, for we are many.'",
+    "language": "en",
+    "verseEnd": 20,
+    "options": [
+      "Legion",
+      "Beelzebul",
+      "Asherah",
+      "Abaddon"
+    ],
+    "tags": [
+      "New Testament",
+      "Miracle",
+      "Deliverance",
+      "Mark",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 6,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When feeding the five thousand, how many loaves and how many fish were there?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Mark 6:41 — Five loaves and two fish.",
+    "language": "en",
+    "verseEnd": 44,
+    "options": [
+      "5 loaves, 2 fish",
+      "7 loaves, 7 fish",
+      "5 loaves, 5 fish",
+      "7 loaves, 2 fish"
+    ],
+    "tags": [
+      "New Testament",
+      "Miracle",
+      "Feeding the multitude",
+      "Mark",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Jesus, what defiles a person?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 7:20-23 — What comes out of the heart defiles a person.",
+    "language": "en",
+    "verseEnd": 23,
+    "options": [
+      "Not washing hands",
+      "Eating forbidden food",
+      "Unwashed food",
+      "What comes out of the heart"
+    ],
+    "tags": [
+      "New Testament",
+      "Morality",
+      "Heart",
+      "Mark",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 34,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What is the condition for following Jesus according to Mark 8:34?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Mark 8:34 — Deny yourself, take up your cross daily, and follow Him.",
+    "language": "en",
+    "verseEnd": 38,
+    "options": [
+      "Understand all the law",
+      "Deny self, take up the cross, follow Him",
+      "Give a tithe",
+      "Keep all feasts"
+    ],
+    "tags": [
+      "New Testament",
+      "Discipleship",
+      "Disciple",
+      "Mark",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 9,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What event occurred on the mountain with Peter, James, and John?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 9:2-8 — Jesus was transfigured; Moses and Elijah appeared.",
+    "language": "en",
+    "verseEnd": 8,
+    "options": [
+      "The Last Supper",
+      "Casting out demons",
+      "The Transfiguration",
+      "The Ascension"
+    ],
+    "tags": [
+      "New Testament",
+      "Glory",
+      "Vision",
+      "Mark",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus tell the rich young man to do for eternal life?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 10:21 — Sell all you have and give to the poor; then come, follow Me.",
+    "language": "en",
+    "verseEnd": 27,
+    "options": [
+      "Add more rituals",
+      "Learn more law",
+      "Increase offerings",
+      "Sell all his possessions for the poor and follow Him"
+    ],
+    "tags": [
+      "New Testament",
+      "Discipleship",
+      "Wealth",
+      "Mark",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 11,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Why did Jesus curse the fig tree?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Mark 11:13-14 — He found no fruit on it; so He pronounced a curse.",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "It had no fruit",
+      "It had pests",
+      "It was near the temple",
+      "It was untended"
+    ],
+    "tags": [
+      "New Testament",
+      "Symbol",
+      "Judgment",
+      "Mark",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 12,
+    "verseStart": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What is the greatest commandment according to Jesus in Mark 12?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 12:29-31 — Love the LORD your God with all your heart... and love your neighbor as yourself.",
+    "language": "en",
+    "verseEnd": 34,
+    "options": [
+      "Fast and pray",
+      "Pay tithes",
+      "Keep the Sabbath",
+      "Love the LORD and love your neighbor"
+    ],
+    "tags": [
+      "New Testament",
+      "Greatest commandment",
+      "Morality",
+      "Mark",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 13,
+    "verseStart": 32,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "About the day and hour of His return, what did Jesus teach?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 13:32-37 — No one knows; stay awake and pray.",
+    "language": "en",
+    "verseEnd": 37,
+    "options": [
+      "The righteous will know",
+      "It will be known by signs in the sky",
+      "No one knows; stay awake",
+      "Angels will announce ahead of time"
+    ],
+    "tags": [
+      "New Testament",
+      "Eschatology",
+      "Watchfulness",
+      "Mark",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "verseStart": 33,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What did the Roman centurion say when he saw Jesus die?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 15:39 — The centurion confessed Him as the Son of God.",
+    "language": "en",
+    "verseEnd": 39,
+    "options": [
+      "This man is the king of the Jews",
+      "This man was a prophet",
+      "Truly this man was the Son of God!",
+      "Surely this man was innocent"
+    ],
+    "tags": [
+      "New Testament",
+      "Witness",
+      "Cross",
+      "Mark",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 2,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus said: 'Those who are well have no need of a physician, but those who are ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 2:17 — Jesus came not to call the righteous, but sinners to repentance.",
+    "language": "en",
+    "options": [
+      "Poor",
+      "Weak",
+      "Lonely",
+      "Sick"
+    ],
+    "tags": [
+      "New Testament",
+      "Jesus' mission",
+      "Grace",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 45,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus said the Son of Man came not to be ___, but to ___",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 10:45 — A summary of Jesus' mission: to serve and give His life as a ransom for many.",
+    "language": "en",
+    "options": [
+      "Worshiped / to worship",
+      "Made king / to be king",
+      "Served / to serve and give His life as a ransom",
+      "Judging / to forgive"
+    ],
+    "tags": [
+      "New Testament",
+      "Service",
+      "Redemption",
+      "Mark",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 12,
+    "verseStart": 41,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Why did Jesus commend the widow who put in two small coins?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 12:44 — The rich gave out of their abundance, but the widow gave all she had to live on. God looks at the heart and sacrifice.",
+    "language": "en",
+    "verseEnd": 44,
+    "options": [
+      "Because she did it publicly",
+      "Because she was poor",
+      "Because she had faith",
+      "She put in everything she had to live on"
+    ],
+    "tags": [
+      "New Testament",
+      "Giving",
+      "Heart",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What was Jesus' first message at the start of His ministry?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 1:15 — A summary of Jesus' entire message in one verse.",
+    "language": "en",
+    "options": [
+      "Build the temple",
+      "Follow me",
+      "Keep the law",
+      "The time is fulfilled, the kingdom of God is at hand; repent and believe the gospel"
+    ],
+    "tags": [
+      "New Testament",
+      "Gospel",
+      "Repentance",
+      "Mark",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 4,
+    "verseStart": 39,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus say to calm the sea?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Mark 4:39 — Jesus has authority over nature. Wind and sea obey Him.",
+    "language": "en",
+    "options": [
+      "Peace! Be still!",
+      "Have peace",
+      "Do not fear",
+      "Be quiet"
+    ],
+    "tags": [
+      "New Testament",
+      "Miracle",
+      "Power",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 6,
+    "verseStart": 41,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "With how many loaves and fish did Jesus feed the 5,000?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 6:41 — From five loaves and two fish, 5,000 ate to the full and twelve baskets remained.",
+    "language": "en",
+    "verseEnd": 44,
+    "options": [
+      "10 loaves",
+      "3 loaves and 5 fish",
+      "7 loaves and 3 fish",
+      "5 loaves and 2 fish"
+    ],
+    "tags": [
+      "New Testament",
+      "Miracle",
+      "Provision",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 34,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Jesus say is the condition of following Him?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 8:34 — Following Jesus requires giving up self-will and being willing to suffer for Him.",
+    "language": "en",
+    "options": [
+      "Talent",
+      "Knowledge",
+      "Deny yourself, take up your cross, and follow Me",
+      "Wealth"
+    ],
+    "tags": [
+      "New Testament",
+      "Disciple",
+      "Cross",
+      "Mark",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 9,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "The father seeking healing for his demon-possessed son said: 'I believe; help my ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 9:24 — The most honest prayer: admit weak faith and ask God to help.",
+    "language": "en",
+    "verseEnd": 24,
+    "options": [
+      "Fear",
+      "Weakness",
+      "Unbelief",
+      "Ignorance"
+    ],
+    "tags": [
+      "New Testament",
+      "Faith",
+      "Honesty",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus said we must receive the kingdom of God like whom?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 10:15 — Children believe simply, without doubt. Faith requires simplicity and trust.",
+    "language": "en",
+    "verseEnd": 15,
+    "options": [
+      "A warrior",
+      "A king",
+      "A scholar",
+      "A child"
+    ],
+    "tags": [
+      "New Testament",
+      "Kingdom",
+      "Humility",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 11,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Mark 11:24: When you pray, believe that you have ___ and you will receive it",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Praying with faith means believing God has heard and answered before seeing the result.",
+    "language": "en",
+    "options": [
+      "Seen",
+      "Understood",
+      "Received it",
+      "Heard"
+    ],
+    "tags": [
+      "New Testament",
+      "Prayer",
+      "Faith",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 36,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In Gethsemane, Jesus prayed: 'Abba, Father, take this cup from Me, yet not ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 14:36 — Jesus submitted to the Father's will despite knowing the suffering ahead. A model prayer.",
+    "language": "en",
+    "options": [
+      "What the disciples will",
+      "What the priests will",
+      "My will, but Your will",
+      "What the world wills"
+    ],
+    "tags": [
+      "New Testament",
+      "Gethsemane",
+      "Submission",
+      "Mark",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "verseStart": 34,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Jesus cried on the cross: 'Eloi, Eloi, lema sabachthani?' What language is this?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Mark 15:34 — A quote of Psalm 22:1. Jesus bore the sin of humanity and was forsaken by the Father.",
+    "language": "en",
+    "options": [
+      "Hebrew",
+      "Greek",
+      "Latin",
+      "Aramaic, meaning: My God, my God, why have You forsaken Me?"
+    ],
+    "tags": [
+      "New Testament",
+      "Cross",
+      "Redemption",
+      "Mark",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 16,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus sent the disciples: 'Go into all the ___ and proclaim the gospel to every creature'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Mark 16:15 — The gospel is for all people, all places, all nations — not only the Jews.",
+    "language": "en",
+    "options": [
+      "Judea",
+      "Jerusalem",
+      "World",
+      "Israel"
+    ],
+    "tags": [
+      "New Testament",
+      "Great Commission",
+      "Missions",
+      "Mark",
+      "Gospels",
+      "Basic"
+    ]
+  }
+]
