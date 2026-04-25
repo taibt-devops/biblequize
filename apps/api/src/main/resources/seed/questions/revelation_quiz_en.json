@@ -1,0 +1,357 @@
+[
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Revelation 1:8, the Lord declares 'I am the Alpha and the Omega.' What does this mean?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Alpha and Omega are the first and last letters of the Greek alphabet, meaning 'first and last,' 'beginning and end.'",
+    "language": "en",
+    "options": [
+      "Beginning and end",
+      "First and last",
+      "All of the above",
+      "A and Z"
+    ],
+    "tags": [
+      "Revelation",
+      "Alpha and Omega",
+      "Jesus Christ",
+      "New Testament",
+      "Apocalyptic",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In Revelation 21:4, 'He will wipe away every tear from their eyes.' What does the Greek for 'wipe away' mean?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Exaleipho (ἐξαλείφω) means to 'utterly blot out' — not just to wipe but to erase permanently.",
+    "language": "en",
+    "options": [
+      "Exaleipho — utterly blot out",
+      "Kathairo — to cleanse",
+      "Hagnizo — to purify",
+      "Apomasso — to wipe clean"
+    ],
+    "tags": [
+      "Revelation",
+      "Heaven",
+      "Greek language",
+      "New Testament",
+      "Apocalyptic",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Revelation 3:20 says: 'Behold, I stand at the door and knock. If anyone hears My voice and ___, I will come in.'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Revelation 3:20 — Jesus stands at the door of every heart and knocks. He does not force; He lets us open.",
+    "language": "en",
+    "options": [
+      "Opens the door",
+      "Runs to Me",
+      "Calls My name",
+      "Prays"
+    ],
+    "tags": [
+      "New Testament",
+      "Invitation",
+      "Free will",
+      "Revelation",
+      "Apocalyptic",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Revelation 21:4 describe heaven?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Revelation 21:4 — God will wipe away every tear; no more death, mourning, crying, or pain. The former things have passed away.",
+    "language": "en",
+    "options": [
+      "Streets of gold",
+      "No more tears, death, mourning, or pain",
+      "Singing angels",
+      "Endless music"
+    ],
+    "tags": [
+      "New Testament",
+      "Heaven",
+      "Hope",
+      "Revelation",
+      "Apocalyptic",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Revelation 1:8: What does the Lord declare Himself to be?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "The Lord is the beginning and the end, who is, who was, and who is to come. He governs history.",
+    "language": "en",
+    "options": [
+      "The Alpha and the Omega — who is, who was, and who is to come",
+      "King",
+      "Prophet",
+      "Judge"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Deity",
+      "Revelation",
+      "Apocalyptic",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus said: 'I am the Living One; I died, but now I ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Jesus has conquered death and holds authority over death and Hades.",
+    "language": "en",
+    "verseEnd": 18,
+    "options": [
+      "Am in heaven",
+      "Am waiting",
+      "Am resting",
+      "Am alive forever, holding the keys of Death and Hades"
+    ],
+    "tags": [
+      "New Testament",
+      "Resurrection",
+      "Authority",
+      "Revelation",
+      "Apocalyptic",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "The four living creatures before the throne cry day and night: '___! Holy! Holy is the Lord...'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "As in Isaiah 6:3, God's holiness is the central theme of heaven's praise.",
+    "language": "en",
+    "options": [
+      "Holy",
+      "Hallelujah",
+      "Glory",
+      "Power"
+    ],
+    "tags": [
+      "New Testament",
+      "Praise",
+      "Heaven",
+      "Revelation",
+      "Apocalyptic",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who is worthy to open the scroll with seven seals?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Only Jesus is worthy because He has conquered through His death and resurrection.",
+    "language": "en",
+    "options": [
+      "The Lion of the tribe of Judah, the Root of David (Jesus)",
+      "Moses",
+      "The angel Michael",
+      "David"
+    ],
+    "tags": [
+      "New Testament",
+      "Lamb",
+      "Worthy",
+      "Revelation",
+      "Apocalyptic",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Revelation 7:9 describes a great multitude that no one could number, from where?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Heaven is multicultural and multi-ethnic. The gospel is for all people.",
+    "language": "en",
+    "verseEnd": 10,
+    "options": [
+      "Only Israel",
+      "Only martyrs",
+      "Every nation, tribe, people, and language",
+      "Only angels"
+    ],
+    "tags": [
+      "New Testament",
+      "Heaven",
+      "Every nation",
+      "Revelation",
+      "Apocalyptic",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Revelation 12:11: How do the saints conquer the devil?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Weapons of victory: the blood of Christ + the word of testimony + readiness to die for the Lord.",
+    "language": "en",
+    "options": [
+      "An army",
+      "The blood of the Lamb and the word of their testimony",
+      "A sword",
+      "Knowledge"
+    ],
+    "tags": [
+      "New Testament",
+      "Victory",
+      "Witness",
+      "Revelation",
+      "Apocalyptic",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On what color horse does Christ ride at His return?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Revelation 19:11 — He is Faithful and True, riding a white horse, robed in a garment dipped in blood.",
+    "language": "en",
+    "verseEnd": 16,
+    "options": [
+      "Gold",
+      "Black",
+      "White",
+      "Red"
+    ],
+    "tags": [
+      "New Testament",
+      "Second coming",
+      "Victory",
+      "Revelation",
+      "Apocalyptic",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Revelation 21:1: After the final judgment, what does God create?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "All things are made new. The first heaven and the first earth have passed away.",
+    "language": "en",
+    "verseEnd": 2,
+    "options": [
+      "A new Garden of Eden",
+      "A new city",
+      "A new temple",
+      "A new heaven and a new earth"
+    ],
+    "tags": [
+      "New Testament",
+      "New heaven",
+      "Eternity",
+      "Revelation",
+      "Apocalyptic",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Revelation 22:17: What do the Spirit and the Bride (the Church) say?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "The final invitation of Scripture: Come and receive the free gift of life from God.",
+    "language": "en",
+    "options": [
+      "Fight",
+      "Wait",
+      "Come! Let the one who is thirsty come and take the water of life freely",
+      "Pray"
+    ],
+    "tags": [
+      "New Testament",
+      "Invitation",
+      "Water of life",
+      "Revelation",
+      "Apocalyptic",
+      "Basic"
+    ]
+  }
+]
