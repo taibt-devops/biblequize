@@ -1,0 +1,926 @@
+[
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did the angel tell Joseph to name the child?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Scripture says: 'You shall call his name Jesus' (Matthew 1:21).",
+    "language": "en",
+    "options": [
+      "Jesus",
+      "Immanuel",
+      "Messiah",
+      "Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "Jesus",
+      "Name",
+      "Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where was Jesus born?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Scripture says: 'Jesus was born in Bethlehem' (Matthew 2:1).",
+    "language": "en",
+    "options": [
+      "Nazareth",
+      "Bethlehem",
+      "Galilee",
+      "Jerusalem"
+    ],
+    "tags": [
+      "New Testament",
+      "Jesus",
+      "Birth",
+      "Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When Jesus was baptized, in what form did the Spirit descend?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Scripture says: 'The Spirit of God descended on Him like a dove' (Matthew 3:16).",
+    "language": "en",
+    "options": [
+      "A cloud",
+      "A dove",
+      "A flame",
+      "A mighty wind"
+    ],
+    "tags": [
+      "New Testament",
+      "Baptism",
+      "Holy Spirit",
+      "Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus answered Satan, 'Man shall not live by bread alone, but by every word that comes from the mouth of God,' when tempted to do what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Scripture says: 'If you are the Son of God, command these stones to become loaves of bread' (Matthew 4:3).",
+    "language": "en",
+    "options": [
+      "Perform a miracle",
+      "Turn stones into bread",
+      "Worship Satan",
+      "Throw himself from the temple pinnacle"
+    ],
+    "tags": [
+      "New Testament",
+      "Temptation",
+      "Bread",
+      "Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What is the first beatitude in the Sermon on the Mount?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Scripture says: 'Blessed are the poor in spirit, for theirs is the kingdom of heaven' (Matthew 5:3).",
+    "language": "en",
+    "options": [
+      "Blessed are those who hunger and thirst for righteousness",
+      "Blessed are the poor in spirit",
+      "Blessed are the meek",
+      "Blessed are those who mourn"
+    ],
+    "tags": [
+      "New Testament",
+      "Beatitudes",
+      "Poor in spirit",
+      "Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does the Lord's Prayer 'Our Father in heaven' continue?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Scripture says: 'Our Father in heaven, hallowed be your name. Your kingdom come, your will be done' (Matthew 6:9-10).",
+    "language": "en",
+    "options": [
+      "Your will be done",
+      "Your kingdom come",
+      "All of the above",
+      "Hallowed be your name"
+    ],
+    "tags": [
+      "New Testament",
+      "Prayer",
+      "Lord's Prayer",
+      "Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does the name 'Immanuel' mean?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Scripture says: 'Immanuel, which means, God with us' (Matthew 1:23).",
+    "language": "en",
+    "options": [
+      "God saves us",
+      "God forgives us",
+      "God loves us",
+      "God with us"
+    ],
+    "tags": [
+      "New Testament",
+      "Immanuel",
+      "Meaning",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the wise men offer to Jesus?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Scripture says: 'They opened their treasures and offered him gifts: gold, frankincense, and myrrh' (Matthew 2:11).",
+    "language": "en",
+    "options": [
+      "Gold, frankincense, and myrrh",
+      "Silver, gold, and precious stones",
+      "Wheat, oil, and wine",
+      "Clothing, sandals, and food"
+    ],
+    "tags": [
+      "New Testament",
+      "Wise men",
+      "Gifts",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When Jesus was baptized, what did the voice from heaven say?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Scripture says: 'A voice from heaven said: This is my beloved Son, with whom I am well pleased' (Matthew 3:17).",
+    "language": "en",
+    "options": [
+      "This is my King",
+      "This is my chosen one",
+      "This is my beloved Son",
+      "This is the Savior"
+    ],
+    "tags": [
+      "New Testament",
+      "Baptism",
+      "Voice from heaven",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus said to Simon and Andrew, 'Follow me, and I will make you become ___'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Scripture says: 'Follow me, and I will make you fishers of men' (Matthew 4:19).",
+    "language": "en",
+    "options": [
+      "Fishers of men",
+      "Disciples",
+      "Priests",
+      "Apostles"
+    ],
+    "tags": [
+      "New Testament",
+      "Calling disciples",
+      "Fishers",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus says the disciples are what to the world?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Scripture says: 'You are the salt of the earth... You are the light of the world' (Matthew 5:13-14).",
+    "language": "en",
+    "options": [
+      "The light of the world",
+      "The leaven in the dough",
+      "The salt of the earth",
+      "All of the above"
+    ],
+    "tags": [
+      "New Testament",
+      "Salt",
+      "Light",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus said the birds of the air do not sow, reap, or store in barns, but who feeds them?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Scripture says: 'Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them' (Matthew 6:26).",
+    "language": "en",
+    "options": [
+      "God",
+      "All of the above",
+      "Your heavenly Father",
+      "Nature"
+    ],
+    "tags": [
+      "New Testament",
+      "Birds",
+      "Father",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus said, 'Whatever you wish that others would do to you, do also to them.' What is this called?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Scripture says: 'Whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets' (Matthew 7:12).",
+    "language": "en",
+    "options": [
+      "The Great Commandment",
+      "An important saying",
+      "The Golden Rule",
+      "The Law and the Prophets"
+    ],
+    "tags": [
+      "New Testament",
+      "Golden Rule",
+      "Do unto others",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 8,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When the storm rose on the sea, whom did Jesus rebuke?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Scripture says: 'Then he rose and rebuked the winds and the sea, and there was a great calm' (Matthew 8:26).",
+    "language": "en",
+    "options": [
+      "The waves",
+      "The wind",
+      "Both of the above",
+      "The disciples"
+    ],
+    "tags": [
+      "New Testament",
+      "Miracle",
+      "Storm at sea",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 9,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus said the Son of Man has what authority on earth?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Scripture says: 'That you may know that the Son of Man has authority on earth to forgive sins' (Matthew 9:6).",
+    "language": "en",
+    "options": [
+      "To forgive sins",
+      "Both of the above",
+      "No authority at all",
+      "To heal disease"
+    ],
+    "tags": [
+      "New Testament",
+      "Authority",
+      "Forgive sins",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 10,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus said do not fear those who can kill the body but cannot kill the soul. Whom did He warn against?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Scripture says: 'Do not fear those who kill the body but cannot kill the soul' (Matthew 10:28).",
+    "language": "en",
+    "options": [
+      "Persecutors",
+      "Enemies",
+      "The wicked",
+      "All of the above"
+    ],
+    "tags": [
+      "New Testament",
+      "Fear",
+      "Soul",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Jesus said He came to do what concerning the Law?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Scripture says: 'I have not come to abolish the Law, but to fulfill it' (Matthew 5:17).",
+    "language": "en",
+    "options": [
+      "Abolish",
+      "Fulfill",
+      "Supplement",
+      "Change"
+    ],
+    "tags": [
+      "New Testament",
+      "Law",
+      "Fulfillment",
+      "Matthew",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "verseStart": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Whom does Jesus invite to come to Him?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Scripture says: 'Come to me, all who labor and are heavy laden, and I will give you rest' (Matthew 11:28).",
+    "language": "en",
+    "options": [
+      "Those who obey",
+      "Those who pray",
+      "Those who believe",
+      "All who labor and are heavy laden"
+    ],
+    "tags": [
+      "New Testament",
+      "Invitation",
+      "Weariness",
+      "Matthew",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "On what did Jesus say He would build His church?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Scripture says: 'On this rock I will build my church' — referring to Peter's confession (Matthew 16:18).",
+    "language": "en",
+    "options": [
+      "The Word of God",
+      "All of the above",
+      "Faith",
+      "The rock"
+    ],
+    "tags": [
+      "New Testament",
+      "Church",
+      "Rock",
+      "Matthew",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 19,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "In whose name did Jesus command His disciples to baptize?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Scripture says: 'Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit' (Matthew 28:19).",
+    "language": "en",
+    "options": [
+      "The Father, the Son, and the Holy Spirit",
+      "Jesus Christ",
+      "All of the above",
+      "God"
+    ],
+    "tags": [
+      "New Testament",
+      "Baptism",
+      "Trinity",
+      "Matthew",
+      "Gospels",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "The angel told Joseph to name the child Jesus (Matthew 1:21). What does the Hebrew name 'Jesus' mean?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Yeshua (ישוע) means 'the LORD saves' — the name reflects Jesus' mission.",
+    "language": "en",
+    "options": [
+      "Yeshua — the LORD saves",
+      "Messiah — the Anointed One",
+      "Adonai — Lord",
+      "Immanuel — God with us"
+    ],
+    "tags": [
+      "Matthew",
+      "Name of Jesus",
+      "Hebrew language",
+      "New Testament",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the Sermon on the Mount, Jesus said 'Blessed are the poor in spirit' (Matthew 5:3). What does the Greek word for 'poor' mean?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ptochos (πτωχός) means 'poor in spirit' — recognizing one's need before God.",
+    "language": "en",
+    "options": [
+      "Elaion — needing help",
+      "Penichros — materially deficient",
+      "Ptochos — poor in spirit",
+      "Apenes — having nothing"
+    ],
+    "tags": [
+      "Matthew",
+      "Sermon on the Mount",
+      "Greek language",
+      "New Testament",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does the name 'Jesus' (Yeshua) mean?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 1:21 — Jesus (Yeshua) means 'the LORD saves.' His name reveals His purpose for coming.",
+    "language": "en",
+    "options": [
+      "The Anointed One",
+      "The LORD saves",
+      "God with us",
+      "King of kings"
+    ],
+    "tags": [
+      "New Testament",
+      "Nativity",
+      "Name of the Lord",
+      "Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "At Jesus' baptism, how were all three Persons of the Trinity present?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 3:16-17 — Jesus (the Son) was baptized, the Holy Spirit descended like a dove, and the Father said: 'This is my beloved Son.'",
+    "language": "en",
+    "verseEnd": 17,
+    "options": [
+      "Not clearly",
+      "Only the Son and the Father",
+      "The Son was baptized, the Spirit descended like a dove, the Father spoke from heaven",
+      "Only the Holy Spirit"
+    ],
+    "tags": [
+      "New Testament",
+      "Baptism",
+      "Trinity",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When tempted by Satan to turn stones into bread, what did Jesus answer?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 4:4 — Jesus used the Word of God (Deuteronomy 8:3) to defeat every temptation of Satan.",
+    "language": "en",
+    "options": [
+      "I am not hungry",
+      "Begone, Satan",
+      "You shall not tempt the Lord",
+      "Man shall not live by bread alone, but by every word that comes from the mouth of God"
+    ],
+    "tags": [
+      "New Testament",
+      "Temptation",
+      "Word of God",
+      "Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "The Beatitudes begin: 'Blessed are those who are ___'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 5:3 — Blessed are those who recognize their spiritual poverty, for theirs is the kingdom of heaven.",
+    "language": "en",
+    "options": [
+      "Wealthy",
+      "Poor in spirit (spiritually destitute)",
+      "Wise",
+      "Successful"
+    ],
+    "tags": [
+      "New Testament",
+      "Sermon on the Mount",
+      "Beatitudes",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 44,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Jesus teach about enemies?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 5:44 — This is one of Jesus' most exalted teachings, transcending ordinary morality.",
+    "language": "en",
+    "options": [
+      "Forgive but do not love",
+      "Love your enemies and pray for those who persecute you",
+      "Take just revenge",
+      "Stay away from enemies"
+    ],
+    "tags": [
+      "New Testament",
+      "Sermon on the Mount",
+      "Love",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Jesus' model prayer begin?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 6:9 — Jesus teaches us to address God as Father, expressing intimacy with Him.",
+    "language": "en",
+    "verseEnd": 13,
+    "options": [
+      "O Almighty",
+      "O Lord",
+      "Our Father in heaven",
+      "O God"
+    ],
+    "tags": [
+      "New Testament",
+      "Prayer",
+      "Lord's Prayer",
+      "Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Jesus speaks of two ways. To what does the narrow gate lead?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 7:14 — The narrow gate and hard way lead to life, and few find it. The wide gate and easy way lead to destruction.",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "Peace",
+      "Wisdom",
+      "Heaven",
+      "Life"
+    ],
+    "tags": [
+      "New Testament",
+      "Sermon on the Mount",
+      "Choice",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Peter declared about Jesus: 'You are ___'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 16:16 — This is Peter's most important confession of faith, commended by Jesus.",
+    "language": "en",
+    "options": [
+      "King of Israel",
+      "The Christ, the Son of the living God",
+      "A great teacher",
+      "A prophet"
+    ],
+    "tags": [
+      "New Testament",
+      "Peter",
+      "Faith",
+      "Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "verseStart": 37,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Which commandment did Jesus say was the greatest?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Matthew 22:37-38 — Loving God with all one's being is the greatest, and loving one's neighbor as oneself is the second.",
+    "language": "en",
+    "verseEnd": 39,
+    "options": [
+      "Do not murder",
+      "Love the Lord with all your heart, soul, and mind",
+      "Keep the Sabbath",
+      "Do not worship idols"
+    ],
+    "tags": [
+      "New Testament",
+      "Commandment",
+      "Love",
+      "Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What is Jesus' Great Commission?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 28:19 — Go and make disciples of all nations, baptizing them in the name of the Father, the Son, and the Holy Spirit.",
+    "language": "en",
+    "verseEnd": 20,
+    "options": [
+      "Pray without ceasing",
+      "Build a church",
+      "Go and make disciples of all nations",
+      "Keep the law"
+    ],
+    "tags": [
+      "New Testament",
+      "Great Commission",
+      "Disciples",
+      "Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "verseStart": 28,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jesus invites: 'Come to me, all who labor and are heavy laden, and I will give you ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Matthew 11:28 — Jesus invites everyone weighed down to come to Him for true rest.",
+    "language": "en",
+    "options": [
+      "Wisdom",
+      "Strength",
+      "Wealth",
+      "Rest"
+    ],
+    "tags": [
+      "New Testament",
+      "Invitation",
+      "Rest",
+      "Matthew",
+      "Gospels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Peter asked how many times to forgive. What did Jesus answer?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Matthew 18:22 — Forgiveness has no limit. Seventy times seven means always forgive.",
+    "language": "en",
+    "verseEnd": 22,
+    "options": [
+      "Seventy times seven (no limit)",
+      "100 times",
+      "7 times",
+      "3 times"
+    ],
+    "tags": [
+      "New Testament",
+      "Forgiveness",
+      "Discipleship",
+      "Matthew",
+      "Gospels",
+      "Intermediate"
+    ]
+  }
+]
