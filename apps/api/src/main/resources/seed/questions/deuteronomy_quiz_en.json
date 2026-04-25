@@ -1,0 +1,889 @@
+[
+  {
+    "book": "Deuteronomy",
+    "chapter": 6,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What is the central confession of faith in Deuteronomy 6 called?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Deuteronomy 6:4-5 — 'Hear, O Israel: The LORD our God, the LORD is one.'",
+    "language": "en",
+    "verseEnd": 9,
+    "options": [
+      "Kaddish",
+      "Shema",
+      "Haggadah",
+      "Halakha"
+    ],
+    "tags": [
+      "Old Testament",
+      "Shema",
+      "Faithfulness",
+      "Deuteronomy",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 8,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What was the purpose of the 40 years in the wilderness according to Deuteronomy 8?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Deuteronomy 8:2 — To humble and test you, to know what was in your heart.",
+    "language": "en",
+    "verseEnd": 5,
+    "options": [
+      "To humble, test, and know what was in their heart",
+      "Punishment",
+      "Training for war",
+      "Accumulating wealth"
+    ],
+    "tags": [
+      "Old Testament",
+      "Wilderness",
+      "Testing",
+      "Deuteronomy",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 10,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does God require of Israel according to Deuteronomy 10:12?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Deuteronomy 10:12-13 — A summary of what the LORD requires.",
+    "language": "en",
+    "verseEnd": 13,
+    "options": [
+      "Choose a king",
+      "Build a temple",
+      "Fear, walk in His ways, love, serve, and keep His commandments",
+      "Give possessions"
+    ],
+    "tags": [
+      "Old Testament",
+      "Love",
+      "Obedience",
+      "Deuteronomy",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 30,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Deuteronomy 30 call for choosing?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Deuteronomy 30:19 — I have set before you life and death, blessing and curse; therefore choose life.",
+    "language": "en",
+    "verseEnd": 20,
+    "options": [
+      "Wealth",
+      "Life and blessing",
+      "Strength",
+      "Power"
+    ],
+    "tags": [
+      "Old Testament",
+      "Covenant",
+      "Choice",
+      "Deuteronomy",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 4,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Deuteronomy 4 emphasize would make other nations praise Israel as wise?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Deuteronomy 4:7-8 — What nation has its God so near, and statutes so righteous?",
+    "language": "en",
+    "verseEnd": 8,
+    "options": [
+      "Fertile land",
+      "Strong army",
+      "Wise king",
+      "The righteous law and the nearness of God"
+    ],
+    "tags": [
+      "Old Testament",
+      "Law",
+      "Name of God",
+      "Deuteronomy",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Why must the high places be destroyed and worship only happen at the place God chooses?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Deuteronomy 12:2-14 — Tear down the high places; seek the place the LORD chooses to put His Name.",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "To prevent idolatry and unite worship",
+      "To collect taxes",
+      "For convenience",
+      "To control the people"
+    ],
+    "tags": [
+      "Old Testament",
+      "Worship",
+      "Chosen place",
+      "Deuteronomy",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Why are signs alone insufficient to accept a prophet?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Deuteronomy 13:1-3 — Even if a sign occurs, if it leads to other gods, do not listen.",
+    "language": "en",
+    "verseEnd": 5,
+    "options": [
+      "Because we must obey the king",
+      "Because the sign is fake",
+      "If it leads to other gods, it must be rejected",
+      "Because a council must judge"
+    ],
+    "tags": [
+      "Old Testament",
+      "False prophet",
+      "Faithfulness",
+      "Deuteronomy",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 15,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does the year of debt release (Shemitah) teach?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Deuteronomy 15:1-11 — Every seven years cancel debts; have no evil heart.",
+    "language": "en",
+    "verseEnd": 11,
+    "options": [
+      "Political fairness",
+      "Mercy and trust in God",
+      "Economic efficiency",
+      "Land reform"
+    ],
+    "tags": [
+      "Old Testament",
+      "Covenant economics",
+      "Mercy",
+      "Deuteronomy",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 17,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What limits does the law of the king in Deuteronomy 17 set?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Deuteronomy 17:16-17 — Limits on power so the king fears the LORD.",
+    "language": "en",
+    "verseEnd": 20,
+    "options": [
+      "No fighting",
+      "No multiplying horses, wives, silver, or gold",
+      "No building temples",
+      "No collecting taxes"
+    ],
+    "tags": [
+      "Old Testament",
+      "Law of the king",
+      "Humility",
+      "Deuteronomy",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 18,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In context, to whom does 'a Prophet like Moses' first refer?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Deuteronomy 18:15 — God will raise up for you a prophet like me.",
+    "language": "en",
+    "verseEnd": 19,
+    "options": [
+      "Elijah",
+      "Joshua",
+      "Isaiah",
+      "The line of later prophets, ultimately fulfilled in Christ"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophet",
+      "Messiah",
+      "Deuteronomy",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 21,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How is one hanged on a tree regarded according to Deuteronomy 21:23?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Deuteronomy 21:23 — A hanged man is cursed by God (Paul applies this in Galatians 3:13).",
+    "language": "en",
+    "verseEnd": 23,
+    "options": [
+      "Loses inheritance",
+      "Excluded from assembly",
+      "Cursed by God",
+      "Temporarily unclean"
+    ],
+    "tags": [
+      "Old Testament",
+      "Curse",
+      "Crucifixion",
+      "Deuteronomy",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 24,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does the gleaning law reveal about God's heart?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Deuteronomy 24:19-22 — Leave the gleanings for the poor and the sojourner.",
+    "language": "en",
+    "verseEnd": 22,
+    "options": [
+      "Mere law-keeping",
+      "Fair competition",
+      "Productivity",
+      "Concern for the poor, sojourner, fatherless, widow"
+    ],
+    "tags": [
+      "Old Testament",
+      "Social justice",
+      "Mercy",
+      "Deuteronomy",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 29,
+    "verseStart": 29,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does 'The secret things belong to the LORD... but the things revealed belong to us' teach?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Deuteronomy 29:29 — We are responsible for what has been revealed.",
+    "language": "en",
+    "options": [
+      "Esoteric secrecy",
+      "No need to study",
+      "Permission to divine",
+      "Limits of revelation and the duty of obedience"
+    ],
+    "tags": [
+      "Old Testament",
+      "Revelation",
+      "Obedience",
+      "Deuteronomy",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 4,
+    "verseStart": 32,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "On what foundation does Deuteronomy 4:32-40 ground the uniqueness of God?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Deuteronomy 4 — History and revelation experience confirm that God is one.",
+    "language": "en",
+    "verseEnd": 40,
+    "options": [
+      "Salvation history and revelation at Sinai",
+      "Greek philosophy",
+      "Many serving deities",
+      "Astronomy"
+    ],
+    "tags": [
+      "Old Testament",
+      "Monotheism",
+      "History",
+      "Deuteronomy",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 10,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does 'Circumcise the foreskin of your heart' mean?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Deuteronomy 10:16 — Be no longer stubborn; an image of inner transformation.",
+    "language": "en",
+    "options": [
+      "Set the heart apart for God; cease being stiff-necked",
+      "Take a vow",
+      "Fast",
+      "Physical circumcision"
+    ],
+    "tags": [
+      "Old Testament",
+      "Heart",
+      "Set apart",
+      "Deuteronomy",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 18,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What test distinguishes a true from a false prophet according to Deuteronomy 18?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Deuteronomy 18:22 and 13:1-3 — Two criteria: fulfillment and faithfulness to the LORD.",
+    "language": "en",
+    "verseEnd": 22,
+    "options": [
+      "The word comes to pass and does not lead to other gods",
+      "Approval of the king",
+      "Performing miracles",
+      "Popularity with the people"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophet",
+      "Discernment",
+      "Deuteronomy",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 23,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What do the restrictions on entering the assembly of the LORD in Deuteronomy 23 reflect?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Deuteronomy 23:1-8 — Boundaries shaped by holiness theology and history with Ammon and Moab.",
+    "language": "en",
+    "verseEnd": 8,
+    "options": [
+      "Economic concerns",
+      "The holiness of the assembly and a hostile history",
+      "Class distinctions",
+      "Custom"
+    ],
+    "tags": [
+      "Old Testament",
+      "Holiness",
+      "OT congregation",
+      "Deuteronomy",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 27,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does the curse ceremony at Mount Ebal and Gerizim emphasize?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Deuteronomy 27:11-26 — The curses pronounced for those who do not obey.",
+    "language": "en",
+    "verseEnd": 26,
+    "options": [
+      "The seriousness of covenant obedience/disobedience",
+      "Tribal tradition",
+      "Religious tourism",
+      "The agricultural calendar"
+    ],
+    "tags": [
+      "Old Testament",
+      "Curse",
+      "Covenant",
+      "Deuteronomy",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 32,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What is the chief purpose of the Song of Moses (Deuteronomy 32)?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Deuteronomy 32 — A song to bear witness to Israel about her sinful path and God's grace.",
+    "language": "en",
+    "verseEnd": 43,
+    "options": [
+      "Recount genealogy",
+      "Witness covenant indictment, warn of unfaithfulness, promise restoration",
+      "Praise victory",
+      "Guide ritual"
+    ],
+    "tags": [
+      "Old Testament",
+      "Song",
+      "Covenant",
+      "Deuteronomy",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 34,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How does Deuteronomy 34 conclude regarding Moses?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Deuteronomy 34:10-12 — There has not arisen a prophet since like Moses, whom the LORD knew face to face.",
+    "language": "en",
+    "verseEnd": 12,
+    "options": [
+      "Moses built the temple",
+      "Moses returned to Egypt",
+      "Moses became king",
+      "No prophet like Moses, whom the LORD knew face to face"
+    ],
+    "tags": [
+      "Old Testament",
+      "Moses",
+      "Conclusion",
+      "Deuteronomy",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 6,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does the Shema — Judaism's central declaration of faith — begin?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Deuteronomy 6:4 — The Shema is the central creed: 'The LORD our God, the LORD is one.'",
+    "language": "en",
+    "verseEnd": 5,
+    "options": [
+      "Be holy",
+      "Hear, O Israel: The LORD our God, the LORD is one",
+      "In the beginning, God",
+      "Believe the LORD"
+    ],
+    "tags": [
+      "Old Testament",
+      "Law",
+      "Faith",
+      "Deuteronomy",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 6,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Deuteronomy 6:5, with how many things must we love the LORD?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Deuteronomy 6:5 — You shall love the LORD your God with all your heart and with all your soul and with all your might. Jesus called this the greatest commandment.",
+    "language": "en",
+    "options": [
+      "Just with all the heart",
+      "With all the heart, strength, and mind",
+      "With all the heart and soul",
+      "With all the heart, soul, and might"
+    ],
+    "tags": [
+      "Old Testament",
+      "Commandment",
+      "Love God",
+      "Deuteronomy",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 18,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "When Moses said, 'The LORD will raise up for you a prophet like me from among your brothers,' of whom did he prophesy?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 3:22-23 — Peter affirms this prophecy is fulfilled in Jesus, the greatest Prophet.",
+    "language": "en",
+    "options": [
+      "Samuel",
+      "Elijah",
+      "Joshua",
+      "Jesus Christ"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophecy",
+      "Jesus",
+      "Deuteronomy",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 8,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Why did God feed the people manna in the wilderness?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Deuteronomy 8:3 — Jesus quoted this verse when tempted by Satan (Matthew 4:4).",
+    "language": "en",
+    "options": [
+      "Because the people asked",
+      "There was no other food",
+      "To test their faith",
+      "To teach that man does not live by bread alone but by every word from God"
+    ],
+    "tags": [
+      "Old Testament",
+      "Word of God",
+      "Lesson",
+      "Deuteronomy",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 7,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Why did God choose the people of Israel?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Deuteronomy 7:7-8 — God chose Israel not because they were many or great, but because of His love and the covenant with the patriarchs.",
+    "language": "en",
+    "options": [
+      "Because they were strongest",
+      "Because they were best",
+      "Because they were most numerous",
+      "Because of His love and promise to the fathers, not because of size"
+    ],
+    "tags": [
+      "Old Testament",
+      "Chosen",
+      "Love",
+      "Deuteronomy",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 10,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Deuteronomy 10:12 say the LORD requires of His people?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Deuteronomy 10:12 — A summary of the entire law in one verse: fear, love, and serve the LORD.",
+    "language": "en",
+    "verseEnd": 13,
+    "options": [
+      "Build a temple",
+      "Fear the LORD, walk in His ways, love and serve Him with all your heart",
+      "Conquer the nations",
+      "Bring many sacrifices"
+    ],
+    "tags": [
+      "Old Testament",
+      "Commandment",
+      "Service",
+      "Deuteronomy",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 11,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Moses teach the people to do with the Word of God?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Deuteronomy 11:18-20 — God's Word should saturate every aspect of life: personal, family, society.",
+    "language": "en",
+    "verseEnd": 19,
+    "options": [
+      "Only priests learn it",
+      "Only read it on Sabbath",
+      "Keep it locked in the Ark of the Covenant",
+      "Bind on hand, on forehead, teach children, write on doors"
+    ],
+    "tags": [
+      "Old Testament",
+      "Word of God",
+      "Education",
+      "Deuteronomy",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 28,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whom does Deuteronomy 28 promise blessings to?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Deuteronomy 28:1-2 — If you obey the voice of the LORD, all blessings will come upon you and overtake you.",
+    "language": "en",
+    "verseEnd": 6,
+    "options": [
+      "The one who obeys the voice of the LORD",
+      "Priests",
+      "Kings",
+      "The wealthy"
+    ],
+    "tags": [
+      "Old Testament",
+      "Blessing",
+      "Obedience",
+      "Deuteronomy",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 29,
+    "verseStart": 29,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does Deuteronomy 29:29 distinguish?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Deuteronomy 29:29 — Some things God keeps hidden, and others He reveals. We are responsible for what is revealed.",
+    "language": "en",
+    "options": [
+      "Old Testament and New Testament",
+      "Heaven and earth",
+      "Secret things belong to the LORD; things revealed belong to us",
+      "Law and grace"
+    ],
+    "tags": [
+      "Old Testament",
+      "Theology",
+      "Knowledge",
+      "Deuteronomy",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 30,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Moses call the people to choose?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Deuteronomy 30:19 — Moses sets before the people two paths: life and death, blessing and curse. Choose life!",
+    "language": "en",
+    "options": [
+      "Life and blessing (rather than death and curse)",
+      "The Promised Land",
+      "War",
+      "A king"
+    ],
+    "tags": [
+      "Old Testament",
+      "Choice",
+      "Life",
+      "Deuteronomy",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 33,
+    "verseStart": 27,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Deuteronomy 33:27 describe God?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Deuteronomy 33:27 — The eternal God is your dwelling place, and underneath are the everlasting arms.",
+    "language": "en",
+    "options": [
+      "Warrior",
+      "King on a throne",
+      "Judge",
+      "Eternal dwelling place; underneath the everlasting arms"
+    ],
+    "tags": [
+      "Old Testament",
+      "Refuge",
+      "Protection",
+      "Deuteronomy",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 34,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "At what age did Moses die?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Deuteronomy 34:7 — Moses lived to 120. His eye was undimmed and his vigor unabated.",
+    "language": "en",
+    "verseEnd": 7,
+    "options": [
+      "100 years",
+      "150 years",
+      "120 years",
+      "80 years"
+    ],
+    "tags": [
+      "Old Testament",
+      "Moses",
+      "Life",
+      "Deuteronomy",
+      "Pentateuch",
+      "Basic"
+    ]
+  }
+]

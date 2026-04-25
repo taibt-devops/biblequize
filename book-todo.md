@@ -16,7 +16,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | exodus | Exodus | Pentateuch | 75 | 0 | 60-100 | 🌐 |
 | leviticus | Leviticus | Pentateuch | 75 | 0 | 40-60 | 🌐 |
 | numbers | Numbers | Pentateuch | 75 | 0 | 40-60 | 🌐 |
-| deuteronomy | Deuteronomy | Pentateuch | 32 | 0 | 40-60 | ⚠️ + 🌐 |
+| deuteronomy | Deuteronomy | Pentateuch | 32 | 32 | 40-60 | ⚠️ |
 | joshua | Joshua | History | 12 | 12 | 40-60 | ⚠️ |
 | judges | Judges | History | 13 | 13 | 40-60 | ⚠️ |
 | ruth | Ruth | History | 13 | 13 | 40-60 | ⚠️ |
