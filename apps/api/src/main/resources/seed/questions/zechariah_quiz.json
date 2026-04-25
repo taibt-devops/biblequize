@@ -1,0 +1,606 @@
+[
+  {
+    "book": "Zechariah",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 1:1, Xa-cha-ri là con trai của ai và cháu của ai?",
+    "correctAnswer": [0],
+    "explanation": "Xa-cha-ri 1:1 — 'Tháng tám năm thứ hai Đa-ri-út, có lời Đức Giê-hô-va phán cùng đấng tiên tri Xa-cha-ri, con trai Bê-rê-kia, cháu Y-đô...'",
+    "language": "vi",
+    "options": [
+      "Con trai Bê-rê-kia, cháu Y-đô",
+      "Con trai A-mốt, cháu Bê-ê-ri",
+      "Con trai Hinh-kia, cháu A-sa",
+      "Con trai Cu-si, cháu Ghê-đa-lia"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Tác giả Xa-cha-ri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 1:3, lời kêu gọi nào được Đức Giê-hô-va phán?",
+    "correctAnswer": [1],
+    "explanation": "Xa-cha-ri 1:3 — '...Hãy trở lại cùng ta, Đức Giê-hô-va vạn quân phán, thì ta sẽ trở lại cùng các ngươi, Đức Giê-hô-va vạn quân phán vậy.' Mối quan hệ hai chiều — sự trở về của con người mở đường cho sự trở lại của Chúa.",
+    "language": "vi",
+    "options": [
+      "Hãy nín lặng trước mặt Chúa",
+      "Hãy trở lại cùng Ta — Ta sẽ trở lại cùng các ngươi",
+      "Hãy lập đền thờ ngay tức khắc",
+      "Hãy đi ra khỏi xứ này"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Trở lại cùng Ta",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 2,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 2:5, Đức Chúa Trời hứa làm gì cho Giê-ru-sa-lem?",
+    "correctAnswer": [2],
+    "explanation": "Xa-cha-ri 2:5 — 'Vì chính ta sẽ làm tường bằng lửa cho nó ở chung quanh, và sẽ làm sự vinh hiển ở giữa nó.'",
+    "language": "vi",
+    "options": [
+      "Lập một đền tạm bằng đá",
+      "Cho mưa thuận gió hòa",
+      "Làm tường bằng lửa chung quanh và sự vinh hiển ở giữa",
+      "Đặt một thành lũy đá kiên cố"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Tường lửa quanh Giê-ru-sa-lem",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 3:1, ai đứng bên hữu Giê-hô-sua thầy tế lễ cả để chống đối?",
+    "correctAnswer": [3],
+    "explanation": "Xa-cha-ri 3:1 — 'Đoạn người chỉ Giê-hô-sua, thầy tế lễ thượng phẩm, cho ta xem. Người đứng trước mặt thiên sứ Đức Giê-hô-va, và Sa-tan đứng bên hữu người đặng đối địch người.'",
+    "language": "vi",
+    "options": [
+      "Một thiên sứ ác",
+      "Vua dân Sa-mê-tê",
+      "Tiên tri giả",
+      "Sa-tan"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Sa-tan đối địch Giê-hô-sua",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Câu nổi tiếng nào được phán cho Xô-rô-ba-bên trong Xa-cha-ri 4:6?",
+    "correctAnswer": [0],
+    "explanation": "Xa-cha-ri 4:6 — '...Ấy chẳng phải bởi quyền thế, cũng chẳng phải bởi năng lực, bèn là bởi Thần ta, Đức Giê-hô-va vạn quân phán vậy.'",
+    "language": "vi",
+    "options": [
+      "Chẳng phải bởi quyền thế, cũng chẳng phải bởi năng lực, bèn là bởi Thần Ta",
+      "Bởi sức mạnh quân đội của ngươi",
+      "Bởi sự khôn ngoan loài người",
+      "Bởi hợp tác với các nước láng giềng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Bởi Thần Ta",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 4,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 4:14, hai cây ô-li-ve hai bên chân đèn tượng trưng điều gì?",
+    "correctAnswer": [1],
+    "explanation": "Xa-cha-ri 4:14 — 'Người nói rằng: Ấy là hai người chịu xức dầu, đứng bên Chúa của cả đất.' Truyền thống hiểu là Xô-rô-ba-bên (vua) và Giê-hô-sua (thầy tế lễ).",
+    "language": "vi",
+    "options": [
+      "Hai sứ đồ nổi tiếng",
+      "Hai người chịu xức dầu đứng bên Chúa của cả đất",
+      "Hai cây cao của vườn Ê-đen",
+      "Hai dòng dõi của Áp-ra-ham"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Hai người chịu xức dầu",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 6,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 6:12, ai được gọi là 'Chồi mống' (Cành)?",
+    "correctAnswer": [2],
+    "explanation": "Xa-cha-ri 6:12 — '...Nầy, có một người tên là Chồi mống, sẽ nứt ra từ chỗ ngươi, và người ấy sẽ xây đền thờ Đức Giê-hô-va.' Hình ảnh tiên tri về Đấng Christ.",
+    "language": "vi",
+    "options": [
+      "Đa-vít trẻ",
+      "Một thầy tế lễ vô danh",
+      "Người có tên 'Chồi mống' (Cành) sẽ xây đền thờ Đức Giê-hô-va",
+      "Một thiên sứ trưởng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Người tên Chồi mống",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 8,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 8:23, dân ngoại sẽ nói gì khi nắm chéo áo người Giu-đa?",
+    "correctAnswer": [3],
+    "explanation": "Xa-cha-ri 8:23 — '...trong những ngày đó, sẽ có mười người từ mọi thứ tiếng trong các nước ra, nắm chặt vạt áo của một người Giu-đa, mà nói rằng: Chúng ta sẽ đi cùng các ngươi, vì chúng ta có nghe rằng Đức Giê-hô-va ở cùng các ngươi.'",
+    "language": "vi",
+    "options": [
+      "Hãy giúp chúng tôi đánh kẻ thù",
+      "Hãy ban cho chúng tôi của cải",
+      "Hãy dạy chúng tôi luật pháp",
+      "Chúng tôi sẽ đi cùng các ngươi vì Đức Giê-hô-va ở cùng các ngươi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Mười người nắm vạt áo Giu-đa",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 9,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 9:9, vua đến với Giê-ru-sa-lem cưỡi gì?",
+    "correctAnswer": [0],
+    "explanation": "Xa-cha-ri 9:9 — '...nầy, Vua ngươi đến cùng ngươi, Ngài là công bình và ban sự cứu rỗi, nhu mì và cỡi lừa, tức là con của lừa cái.' Câu này ứng nghiệm trong Ma-thi-ơ 21:5 khi Chúa Jêsus vào Giê-ru-sa-lem.",
+    "language": "vi",
+    "options": [
+      "Lừa, tức là con của lừa cái",
+      "Ngựa chiến oai phong",
+      "Xe tứ mã",
+      "Lạc đà ngạo nghễ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Vua cưỡi lừa con",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 9,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 9:9, vua đến cùng Si-ôn được mô tả như thế nào?",
+    "correctAnswer": [1],
+    "explanation": "Xa-cha-ri 9:9 — '...Vua ngươi đến cùng ngươi, Ngài là công bình và ban sự cứu rỗi, nhu mì và cỡi lừa...'",
+    "language": "vi",
+    "options": [
+      "Hung dữ và vinh hiển",
+      "Công bình, ban sự cứu rỗi, nhu mì",
+      "Đầy giận dữ với muôn binh",
+      "Khôn ngoan và giàu có"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Vua công bình nhu mì",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 11,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 11:12, người chăn được trả công bao nhiêu?",
+    "correctAnswer": [2],
+    "explanation": "Xa-cha-ri 11:12 — 'Ta nói cùng chúng nó rằng: Nếu các ngươi lấy làm tốt, thì hãy cho tiền công ta; bằng không thì đừng cho. Chúng nó bèn cân tiền công cho ta, là ba chục miếng bạc.' Số tiền chính xác Giu-đa đã nhận để phản Chúa Jêsus (Ma-thi-ơ 26:15).",
+    "language": "vi",
+    "options": [
+      "Mười lăm miếng bạc",
+      "Hai mươi miếng bạc",
+      "Ba mươi miếng bạc",
+      "Năm mươi miếng bạc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Ba mươi miếng bạc",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 12,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 12:10, dân Giu-đa sẽ nhìn xem ai và buồn rầu vì người ấy?",
+    "correctAnswer": [3],
+    "explanation": "Xa-cha-ri 12:10 — 'Ta sẽ đổ thần của ơn phước và của sự nài xin ra trên nhà Đa-vít, và trên dân cư Giê-ru-sa-lem; chúng nó sẽ nhìn xem ta là Đấng chúng nó đã đâm; và chúng nó sẽ thương khóc...' Trích trong Giăng 19:37.",
+    "language": "vi",
+    "options": [
+      "Một tiên tri đã chết",
+      "Đấng tiên tri Ê-li xa xưa",
+      "Tổ phụ Áp-ra-ham",
+      "Đấng chính họ đã đâm — họ sẽ thương khóc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Nhìn xem Đấng họ đã đâm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 13:1, sẽ có một suối mở ra để rửa sạch điều gì?",
+    "correctAnswer": [0],
+    "explanation": "Xa-cha-ri 13:1 — 'Trong ngày đó sẽ có một suối mở ra cho nhà Đa-vít và dân cư Giê-ru-sa-lem, vì tội lỗi và sự ô uế.'",
+    "language": "vi",
+    "options": [
+      "Tội lỗi và sự ô uế",
+      "Đói khát và bệnh tật",
+      "Mồ hôi và bụi bặm",
+      "Thù hận và chia rẽ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Suối rửa tội lỗi",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 13,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 13:7, khi đánh người chăn thì điều gì xảy ra với bầy chiên?",
+    "correctAnswer": [1],
+    "explanation": "Xa-cha-ri 13:7 — '...Hỡi gươm, hãy thức dậy, đánh kẻ chăn của ta, và đánh người làm bạn hữu ta, Đức Giê-hô-va vạn quân phán vậy. Hãy đánh kẻ chăn, sẽ tan tác những con chiên...' Chúa Jêsus trích trong Ma-thi-ơ 26:31.",
+    "language": "vi",
+    "options": [
+      "Bầy chiên được an toàn",
+      "Bầy chiên sẽ tan tác",
+      "Bầy chiên tự lập một chăn mới",
+      "Bầy chiên trở nên giàu có"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Đánh chăn chiên tan",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 14,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 14:9, trong ngày đó Đức Giê-hô-va sẽ là gì?",
+    "correctAnswer": [2],
+    "explanation": "Xa-cha-ri 14:9 — 'Đức Giê-hô-va sẽ làm vua khắp đất; trong ngày đó, Đức Giê-hô-va sẽ là có một, và danh Ngài cũng sẽ là có một.'",
+    "language": "vi",
+    "options": [
+      "Chỉ Vua trên Y-sơ-ra-ên",
+      "Vua trên dân Giu-đa duy nhất",
+      "Vua khắp đất, là có một, danh Ngài là có một",
+      "Vị thẩm phán bí mật của các dân"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Đức Giê-hô-va Vua khắp đất",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 14,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 14:4, chân Đức Giê-hô-va sẽ đứng trên núi nào trong ngày đó?",
+    "correctAnswer": [3],
+    "explanation": "Xa-cha-ri 14:4 — 'Trong ngày đó, chân Ngài sẽ đứng trên núi Ô-li-ve, là núi đối ngang Giê-ru-sa-lem về phía đông; và núi Ô-li-ve sẽ bị xé ra chính giữa về phía đông và phía tây...'",
+    "language": "vi",
+    "options": [
+      "Núi Si-ôn",
+      "Núi Mô-ri-a",
+      "Núi Hô-rếp",
+      "Núi Ô-li-ve, sẽ bị xé chính giữa về đông và tây"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Núi Ô-li-ve bị xé",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 14,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 14:8, điều gì sẽ ra từ Giê-ru-sa-lem trong ngày đó?",
+    "correctAnswer": [0],
+    "explanation": "Xa-cha-ri 14:8 — 'Xảy ra trong ngày đó, nước uống sẽ ra từ Giê-ru-sa-lem, phân nửa chảy về biển đông, phân nửa chảy về biển tây, trong mùa hạ và mùa đông đều có.'",
+    "language": "vi",
+    "options": [
+      "Nước uống chảy về biển đông và biển tây, mùa hạ và mùa đông",
+      "Lửa đoán phạt thiêu các dân",
+      "Sương mù bao phủ các thành",
+      "Lương thực vô tận từ kho lẫm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Nước sống từ Giê-ru-sa-lem",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 7,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 7:9-10, Đức Giê-hô-va vạn quân truyền cho dân điều gì?",
+    "correctAnswer": [1],
+    "explanation": "Xa-cha-ri 7:9-10 — 'Đức Giê-hô-va vạn quân phán như vầy: Hãy làm điều chánh trực thật sự, lấy sự nhân từ và thương xót đối với anh em mình; chớ ức hiếp đàn bà góa, hoặc kẻ mồ côi, hoặc người trú ngụ, hay là kẻ nghèo khó...'",
+    "language": "vi",
+    "options": [
+      "Hãy dâng nhiều của lễ",
+      "Hãy làm điều chánh trực, nhân từ, thương xót, không ức hiếp người yếu thế",
+      "Hãy giữ ngày Sa-bát nghiêm ngặt",
+      "Hãy lập đại hội cầu nguyện"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Chánh trực, nhân từ, thương xót",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 8,
+    "verseStart": 16,
+    "verseEnd": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 8:16-17, dân Chúa phải làm gì trong giao tiếp xã hội?",
+    "correctAnswer": [2],
+    "explanation": "Xa-cha-ri 8:16-17 — '...Mỗi người trong các ngươi khá lấy lẽ thật nói cùng kẻ lân cận mình; hãy làm sự chân thật và sự phán xét bình an trong cửa thành các ngươi. Chớ toan sự dữ trong lòng nghịch cùng kẻ lân cận; và chớ ưa sự thề dối, vì ấy đó là những điều mà ta ghét, Đức Giê-hô-va phán vậy.'",
+    "language": "vi",
+    "options": [
+      "Tránh xa người lân cận",
+      "Chỉ giao tiếp với tín hữu",
+      "Lấy lẽ thật nói cùng kẻ lân cận, làm sự chân thật và phán xét bình an, không toan dữ và ghét thề dối",
+      "Tích lũy đồ vật để bán đắt"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Lẽ thật và bình an",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 1:14, Đức Giê-hô-va vạn quân phán Ngài có lòng thế nào đối với Giê-ru-sa-lem và Si-ôn?",
+    "correctAnswer": [3],
+    "explanation": "Xa-cha-ri 1:14 — '...Đức Giê-hô-va vạn quân có phán như vầy: Ta vì Giê-ru-sa-lem và Si-ôn động lòng ghen lớn lắm.'",
+    "language": "vi",
+    "options": [
+      "Hờ hững",
+      "Quên lãng",
+      "Phán xét nghiêm khắc",
+      "Động lòng ghen lớn (yêu nồng cháy bảo vệ)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Lòng ghen vì Si-ôn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 2,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Xa-cha-ri 2:8, ai đụng đến dân Chúa thì như đụng đến điều gì?",
+    "correctAnswer": [0],
+    "explanation": "Xa-cha-ri 2:8 — '...vì ai đụng đến các ngươi tức là đụng đến con ngươi mắt Ngài.' Hình ảnh thân thiết tột cùng — sự bảo vệ của Đức Chúa Trời cho dân Ngài.",
+    "language": "vi",
+    "options": [
+      "Đụng đến con ngươi mắt Ngài",
+      "Đụng đến lưỡi gươm sắc",
+      "Đụng đến lò lửa nóng",
+      "Đụng đến vực sâu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Con ngươi mắt Ngài",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Xa-cha-ri 4:6, công việc của Xô-rô-ba-bên không thực hiện bởi điều gì, mà bởi điều gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Xa-cha-ri 4:6 — '...Ấy chẳng phải bởi quyền thế, cũng chẳng phải bởi năng lực, bèn là bởi Thần ta, Đức Giê-hô-va vạn quân phán vậy.' Ba phần rõ ràng; 'bởi tiền bạc loài người' không thuộc nội dung câu này.",
+    "language": "vi",
+    "options": [
+      "Không bởi quyền thế",
+      "Không bởi năng lực",
+      "Bèn bởi Thần Đức Giê-hô-va vạn quân",
+      "Bởi tiền bạc loài người dồi dào"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Ba phần của 4:6",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 7,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Xa-cha-ri 7:9-10, Đức Giê-hô-va đòi hỏi dân Chúa làm những điều gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Xa-cha-ri 7:9-10 — '...làm điều chánh trực thật sự, lấy sự nhân từ và thương xót đối với anh em mình; chớ ức hiếp đàn bà góa, hoặc kẻ mồ côi, hoặc người trú ngụ, hay là kẻ nghèo khó; và ai nấy chớ mưu sự xấu trong lòng mình nghịch cùng anh em.' Nhiều điều đòi hỏi; 'tích lũy của cải' trái với tinh thần đoạn này.",
+    "language": "vi",
+    "options": [
+      "Làm điều chánh trực thật sự",
+      "Lấy nhân từ và thương xót đối với anh em",
+      "Không ức hiếp đàn bà góa, mồ côi, người trú ngụ, kẻ nghèo",
+      "Tích lũy của cải để dâng cho đền thờ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Đòi hỏi đạo đức xã hội",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 9,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Xa-cha-ri 9:9, vị Vua đến cùng Si-ôn có những đặc điểm nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Xa-cha-ri 9:9 — '...Vua ngươi đến cùng ngươi, Ngài là công bình và ban sự cứu rỗi, nhu mì và cỡi lừa, tức là con của lừa cái.' Bốn nét; 'cưỡi ngựa chiến oai phong' trái với hình ảnh nhu mì cưỡi lừa.",
+    "language": "vi",
+    "options": [
+      "Là công bình",
+      "Ban sự cứu rỗi",
+      "Nhu mì, cưỡi lừa con",
+      "Cưỡi ngựa chiến oai phong"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Đặc điểm Vua nhu mì",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 14,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Xa-cha-ri 14:8-9, trong ngày Chúa đến sẽ có những điều gì? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "Xa-cha-ri 14:8-9 — 'Nước uống sẽ ra từ Giê-ru-sa-lem, phân nửa chảy về biển đông, phân nửa chảy về biển tây... Đức Giê-hô-va sẽ làm vua khắp đất; trong ngày đó, Đức Giê-hô-va sẽ là có một, và danh Ngài cũng sẽ là có một.' Ba điều rõ ràng; 'trở lại đời sống nông dân' trái với cảnh hoàn vũ trị vì.",
+    "language": "vi",
+    "options": [
+      "Nước uống chảy từ Giê-ru-sa-lem, mùa hạ và mùa đông",
+      "Đức Giê-hô-va làm vua khắp đất",
+      "Đức Giê-hô-va là có một, danh Ngài là có một",
+      "Mọi người trở lại đời sống nông dân giản đơn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Xa-cha-ri",
+      "Tiên tri",
+      "Ngày Chúa làm Vua khắp đất",
+      "Nâng cao"
+    ]
+  }
+]
