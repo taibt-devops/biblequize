@@ -353,5 +353,189 @@
       "Apocalyptic",
       "Basic"
     ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whose revelation does the book of Revelation 1:1 say it is?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Revelation 1:1 — 'The revelation of Jesus Christ, which God gave him to show to his servants the things that must soon take place.'",
+    "language": "en",
+    "options": [
+      "The apostle John",
+      "Jesus Christ",
+      "The Holy Spirit",
+      "An angel"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Revelation",
+      "Apocalyptic",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Jesus rebuke the church at Ephesus for?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Revelation 2:4 — 'But I have this against you, that you have abandoned the love you had at first.'",
+    "language": "en",
+    "options": [
+      "Forsaking the law",
+      "Falling into materialism",
+      "Idolatry",
+      "Abandoning their first love"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Church at Ephesus",
+      "Apocalyptic",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When the first seal was opened, what kind of horse and rider appeared?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Revelation 6:2 — 'I looked, and behold, a white horse! And its rider had a bow, and a crown was given to him.'",
+    "language": "en",
+    "options": [
+      "A red horse",
+      "A black horse",
+      "A white horse (rider with bow and crown)",
+      "A pale horse"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Seven Seals",
+      "Apocalyptic",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How many days will the two witnesses prophesy in Revelation 11?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Revelation 11:3 — 'And I will grant authority to my two witnesses, and they will prophesy for 1,260 days, clothed in sackcloth.'",
+    "language": "en",
+    "options": [
+      "360 days",
+      "1,260 days (3.5 years)",
+      "70 days",
+      "30 days"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Two Witnesses",
+      "Apocalyptic",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What is the number of the beast in Revelation 13:18?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Revelation 13:18 — 'This calls for wisdom: let the one who has understanding calculate the number of the beast, for it is the number of a man, and his number is 666.'",
+    "language": "en",
+    "options": [
+      "7",
+      "12",
+      "777",
+      "666"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Number of the Beast",
+      "Apocalyptic",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 20,
+    "verseStart": 11,
+    "verseEnd": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Revelation 20:11-15 say the final judgment takes place before?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Revelation 20:11 — 'Then I saw a great white throne and him who was seated on it.'",
+    "language": "en",
+    "options": [
+      "The golden altar",
+      "A great white throne",
+      "The heavenly tabernacle",
+      "The lake of fire"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Great White Throne",
+      "Apocalyptic",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Christ declare Himself to be in Revelation 22:13?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Revelation 22:13 — 'I am the Alpha and the Omega, the first and the last, the beginning and the end.'",
+    "language": "en",
+    "options": [
+      "Creator and Judge",
+      "King of kings",
+      "The Alpha and Omega, the first and the last",
+      "Father and Son"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Alpha and Omega",
+      "Apocalyptic",
+      "Basic"
+    ]
   }
 ]

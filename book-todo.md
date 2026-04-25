@@ -77,7 +77,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | 2john | 2 John | Epistle | 0 | 0 | 20 (min) | ❌ |
 | 3john | 3 John | Epistle | 0 | 0 | 20 (min) | ❌ |
 | jude | Jude | Epistle | 0 | 0 | 20 (min) | ❌ |
-| revelation | Revelation | Apocalyptic | 13 | 13 | 50-60 | ⚠️ |
+| revelation | Revelation | Apocalyptic | 20 | 20 | 50-60 | ⚠️ |
 
 ---
 

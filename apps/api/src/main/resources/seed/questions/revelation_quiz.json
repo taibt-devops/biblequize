@@ -353,5 +353,189 @@
       "Khải thị",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sách Khải Huyền 1:1 nói cuốn sách là sự mặc khải của ai?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Khải Huyền 1:1 — 'Sự mặc khải của Đức Chúa Jêsus Christ mà Đức Chúa Trời đã ban cho Ngài đặng đem tỏ ra cho tôi tớ Ngài những điều kíp phải xảy đến.'",
+    "language": "vi",
+    "options": [
+      "Sứ đồ Giăng",
+      "Đức Chúa Jêsus Christ",
+      "Đức Thánh Linh",
+      "Một thiên sứ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Khải Huyền",
+      "Mặc khải",
+      "Khải tượng",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Trong thư gởi cho hội thánh Ê-phê-sô, Chúa Jêsus quở trách họ về điều gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Khải Huyền 2:4 — 'Nhưng Ta có điều quở trách ngươi: ngươi đã bỏ lòng yêu mến ban đầu.'",
+    "language": "vi",
+    "options": [
+      "Bỏ luật pháp",
+      "Sa vào chủ nghĩa duy vật",
+      "Thờ thần tượng",
+      "Đã bỏ lòng yêu mến ban đầu"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Khải Huyền",
+      "Hội thánh Ê-phê-sô",
+      "Khải tượng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khi mở ấn thứ nhất, người cưỡi ngựa nào hiện ra?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Khải Huyền 6:2 — 'Tôi nhìn xem, thấy một con ngựa trắng. Người cưỡi ngựa có một cái cung; có kẻ ban cho người một cái mão triều thiên.'",
+    "language": "vi",
+    "options": [
+      "Ngựa đỏ",
+      "Ngựa đen",
+      "Ngựa trắng (kẻ cưỡi cầm cung và đội mão triều thiên)",
+      "Ngựa xám"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Khải Huyền",
+      "Bảy ấn",
+      "Khải tượng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Hai chứng nhân trong Khải Huyền 11 sẽ nói tiên tri trong bao nhiêu ngày?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Khải Huyền 11:3 — 'Ta sẽ ban cho hai chứng nhân Ta quyền nói tiên tri một ngàn hai trăm sáu mươi ngày, mặc bao gai.'",
+    "language": "vi",
+    "options": [
+      "360 ngày",
+      "1.260 ngày (3.5 năm)",
+      "70 ngày",
+      "30 ngày"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Khải Huyền",
+      "Hai chứng nhân",
+      "Khải tượng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Số của con thú trong Khải Huyền 13:18 là bao nhiêu?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Khải Huyền 13:18 — 'Đây cần có sự khôn ngoan. Kẻ nào thông minh, hãy tính số con thú, vì là số của một loài người. Số nó là sáu trăm sáu mươi sáu.'",
+    "language": "vi",
+    "options": [
+      "7",
+      "12",
+      "777",
+      "666"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Khải Huyền",
+      "Số con thú",
+      "Khải tượng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 20,
+    "verseStart": 11,
+    "verseEnd": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khải Huyền 20:11-15 mô tả sự phán xét cuối cùng diễn ra trước cái gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Khải Huyền 20:11 — 'Bấy giờ tôi thấy một tòa lớn và trắng cùng Đấng đang ngồi ở trên.'",
+    "language": "vi",
+    "options": [
+      "Bàn thờ vàng",
+      "Tòa lớn và trắng (the great white throne)",
+      "Đền tạm trên trời",
+      "Hồ lửa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Khải Huyền",
+      "Tòa phán xét lớn trắng",
+      "Khải tượng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Khải Huyền 22:13 nói Đấng Christ tự xưng là gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Khải Huyền 22:13 — 'Ta là An-pha và Ô-mê-ga, là thứ nhất và sau cùng, là khởi đầu và cuối cùng.'",
+    "language": "vi",
+    "options": [
+      "Đấng Tạo Hóa và Quan Xét",
+      "Vua các vua",
+      "An-pha và Ô-mê-ga, thứ nhất và sau cùng",
+      "Cha và Con"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Khải Huyền",
+      "An-pha và Ô-mê-ga",
+      "Khải tượng",
+      "Cơ bản"
+    ]
   }
 ]
