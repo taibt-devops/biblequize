@@ -1,0 +1,942 @@
+[
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Paul exhort the Corinthian church about division?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Corinthians 1:10: Be united, no divisions, of the same mind and the same judgment.",
+    "language": "en",
+    "options": [
+      "Avoid meeting one another",
+      "Be united in the same mind",
+      "Each group follow a different teacher",
+      "Form your own group"
+    ],
+    "tags": [
+      "New Testament",
+      "Unity",
+      "Church",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 3,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Who gives the growth in the work of the Lord?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Cor 3:6-7: Paul planted, Apollos watered, but God gave the growth.",
+    "language": "en",
+    "verseEnd": 7,
+    "options": [
+      "God",
+      "Peter",
+      "Paul",
+      "Apollos"
+    ],
+    "tags": [
+      "New Testament",
+      "Church",
+      "Humility",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 6,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What is the believer's body called?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Cor 6:19: Your body is a temple of the Holy Spirit.",
+    "language": "en",
+    "verseEnd": 20,
+    "options": [
+      "A temple of the Holy Spirit",
+      "An unclean thing",
+      "A tabernacle",
+      "Solomon's temple"
+    ],
+    "tags": [
+      "New Testament",
+      "Holy Spirit",
+      "Holiness",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 10,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does God do when believers are tempted?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Cor 10:13: He is faithful and will not let you be tempted beyond your ability, but provides a way of escape.",
+    "language": "en",
+    "options": [
+      "Abandons them",
+      "Punishes them immediately",
+      "Increases the temptation",
+      "Provides a way of escape"
+    ],
+    "tags": [
+      "New Testament",
+      "Temptation",
+      "Faithfulness",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Cor 13, which of the following is a quality of love?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Cor 13:4-7 describes love.",
+    "language": "en",
+    "verseEnd": 7,
+    "options": [
+      "Patient and kind",
+      "Arrogant",
+      "Envious",
+      "Boastful"
+    ],
+    "tags": [
+      "New Testament",
+      "Love",
+      "Virtue",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What is the core of the gospel according to 1 Cor 15?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Cor 15:3-4 presents the core of the gospel.",
+    "language": "en",
+    "verseEnd": 4,
+    "options": [
+      "Building the temple",
+      "Fasting and prayer",
+      "Christ died, was buried, and rose on the third day",
+      "Keeping the Law"
+    ],
+    "tags": [
+      "New Testament",
+      "Gospel",
+      "Resurrection",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Why is the message of the cross seen as folly to those who are perishing?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Cor 1:18: The cross is the power of God to those who are being saved.",
+    "language": "en",
+    "verseEnd": 25,
+    "options": [
+      "They do not perceive God's power",
+      "Lack of evidence",
+      "Contrary to tradition",
+      "Lack of philosophy"
+    ],
+    "tags": [
+      "New Testament",
+      "Cross",
+      "Wisdom",
+      "1 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 2,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "By whom are spiritual things understood?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Cor 2:14: The natural person does not accept the things of the Spirit; they must be understood through the Spirit.",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "Those who have the Holy Spirit",
+      "Intellectuals",
+      "The experienced",
+      "The morally upright"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Holy Spirit",
+      "1 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 5,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What lesson does \"a little leaven leavens the whole lump\" teach the church?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Cor 5:6-8: Cleanse out the old leaven, that you may be a new lump.",
+    "language": "en",
+    "verseEnd": 8,
+    "options": [
+      "Maintain outward form",
+      "Tolerate sin",
+      "Absolute freedom",
+      "Purity and discipline"
+    ],
+    "tags": [
+      "New Testament",
+      "Discipline",
+      "Holiness",
+      "1 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How does Paul advise about marriage and singleness?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Cor 7:7: Each has his own gift from God.",
+    "language": "en",
+    "verseEnd": 7,
+    "options": [
+      "Each according to his own gift",
+      "Everyone should marry",
+      "Everyone should remain single",
+      "Based on financial circumstances"
+    ],
+    "tags": [
+      "New Testament",
+      "Marriage",
+      "Gifts",
+      "1 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 8,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Regarding food offered to idols, what principle is set forth?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Cor 8:1-13: Knowledge puffs up, but love builds up; do not become a stumbling block.",
+    "language": "en",
+    "verseEnd": 13,
+    "options": [
+      "Love builds up; do not cause a stumbling block",
+      "Freedom is supreme",
+      "Just pray before eating",
+      "Knowledge is more important"
+    ],
+    "tags": [
+      "New Testament",
+      "Freedom",
+      "Love",
+      "1 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 9,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Why does Paul become all things to all people?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Cor 9:22-23: That by all means I might save some.",
+    "language": "en",
+    "verseEnd": 23,
+    "options": [
+      "To receive a tithe",
+      "To save some",
+      "To gain honor",
+      "To receive praise"
+    ],
+    "tags": [
+      "New Testament",
+      "Missions",
+      "Adaptation",
+      "1 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 11,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What is the purpose of the Lord's Supper according to 1 Cor 11?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Cor 11:24-26: Do this in remembrance of me... proclaim the Lord's death until He comes.",
+    "language": "en",
+    "verseEnd": 26,
+    "options": [
+      "To practice Judaism",
+      "To remember the Lord and proclaim His death",
+      "To share food",
+      "Social bonding"
+    ],
+    "tags": [
+      "New Testament",
+      "Ordinance",
+      "Lord's Supper",
+      "1 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 12,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who distributes spiritual gifts to each person?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Cor 12:11: One and the same Spirit works all things, distributing to each as He wills.",
+    "language": "en",
+    "verseEnd": 11,
+    "options": [
+      "The apostles",
+      "The pastors",
+      "The Holy Spirit, as He wills",
+      "The congregation"
+    ],
+    "tags": [
+      "New Testament",
+      "Gifts",
+      "Holy Spirit",
+      "1 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 14,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What is the principle for governing corporate worship?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Cor 14:26-33: God is not a God of confusion, but of peace.",
+    "language": "en",
+    "verseEnd": 33,
+    "options": [
+      "No need for interpretation",
+      "The more tongues, the better",
+      "All things should be done for edification, in order",
+      "Whoever wants to speak speaks"
+    ],
+    "tags": [
+      "New Testament",
+      "Worship",
+      "Order",
+      "1 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 9,
+    "verseStart": 24,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does the running-the-race image teach the disciple?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Cor 9:24-27: I discipline my body and keep it under control.",
+    "language": "en",
+    "verseEnd": 27,
+    "options": [
+      "Boast about the prize",
+      "Must defeat others",
+      "Self-control and discipline to win an imperishable crown",
+      "Need physical strength"
+    ],
+    "tags": [
+      "New Testament",
+      "Discipline",
+      "Reward",
+      "1 Corinthians",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Why is love greater than faith and hope?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Cor 13:13: Now faith, hope, and love abide; but the greatest of these is love.",
+    "language": "en",
+    "verseEnd": 13,
+    "options": [
+      "Because it is easy to practice",
+      "Because it is praised more",
+      "Because love endures forever",
+      "Because it is less difficult"
+    ],
+    "tags": [
+      "New Testament",
+      "Love",
+      "Supremacy",
+      "1 Corinthians",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What are the consequences if Christ has not been raised?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Cor 15:14-19: Your faith is futile, you are still in your sins.",
+    "language": "en",
+    "verseEnd": 19,
+    "options": [
+      "The Law is futile",
+      "Prayer is futile",
+      "Missions is futile",
+      "Faith is futile and we are still in our sins"
+    ],
+    "tags": [
+      "New Testament",
+      "Resurrection",
+      "Centrality",
+      "1 Corinthians",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 16,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What is the central concluding exhortation of 1 Corinthians?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Cor 16:13-14: Be watchful, stand firm in the faith, be strong, and let all you do be done in love.",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "Avoid persecution",
+      "Seek the greater gifts",
+      "Meet together regularly",
+      "Stand firm, be strong; do all in love"
+    ],
+    "tags": [
+      "New Testament",
+      "Encouragement",
+      "Conclusion",
+      "1 Corinthians",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In 1 Corinthians 13:4, \"Love is patient.\" What does the Greek word for \"patient\" mean?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Makrothumeo (μακροθυμέω) means \"long-suffering,\" not merely enduring but patient over time.",
+    "language": "en",
+    "options": [
+      "Hupomeno - To endure",
+      "Makrothumeo - Long-suffering",
+      "Anechomai - To bear with",
+      "Kartereo - To persevere"
+    ],
+    "tags": [
+      "1 Corinthians",
+      "Love",
+      "Greek Language",
+      "New Testament",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verseStart": 55,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "In 1 Corinthians 15:55, \"O death, where is your victory?\" What does the Greek word for \"victory\" mean?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Nikos (νῖκος) means \"victory\" — death has been defeated by Jesus's resurrection.",
+    "language": "en",
+    "options": [
+      "Trophe - Food",
+      "Nikos - Victory",
+      "Broma - Food",
+      "Stinger - Sting"
+    ],
+    "tags": [
+      "1 Corinthians",
+      "Resurrection",
+      "Greek Language",
+      "New Testament",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Corinthians 13, what does love begin with?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Cor 13:4 - Love is patient, love is kind. Patience and kindness are the foundation of true love.",
+    "language": "en",
+    "verseEnd": 7,
+    "options": [
+      "Giving",
+      "Forgiveness",
+      "Sacrifice",
+      "Patience and kindness"
+    ],
+    "tags": [
+      "New Testament",
+      "Love",
+      "Living",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Among faith, hope, and love that abide, which is the greatest?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Cor 13:13 - Love is greatest because it is the very nature of God (1 John 4:8).",
+    "language": "en",
+    "options": [
+      "Faith",
+      "Love",
+      "Hope",
+      "All three are equal"
+    ],
+    "tags": [
+      "New Testament",
+      "Love",
+      "Theology",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Cor 15:3-4, the gospel can be summarized in how many essentials?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Cor 15:3-4 - The gospel: Christ died for our sins (1), was buried (2), and rose on the third day (3) according to the Scriptures.",
+    "language": "en",
+    "verseEnd": 4,
+    "options": [
+      "7 sacraments",
+      "5 binding rules",
+      "3 truths: Christ died for sins, was buried, and rose on the third day",
+      "1 thing: believe in God"
+    ],
+    "tags": [
+      "New Testament",
+      "Gospel",
+      "Core",
+      "1 Corinthians",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "The message of the cross is folly to those perishing, but to us it is what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Cor 1:18 - The cross is folly to the world but the power of salvation to those who believe.",
+    "language": "en",
+    "options": [
+      "Tradition",
+      "Mystery",
+      "The power of God",
+      "Knowledge"
+    ],
+    "tags": [
+      "New Testament",
+      "Cross",
+      "Power",
+      "1 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 2,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "1 Cor 2:9: \"What no eye has seen, nor ear heard, nor the heart of man imagined\" — refers to what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "What God has prepared surpasses human imagination.",
+    "language": "en",
+    "options": [
+      "Miracles",
+      "The gospel",
+      "What God has prepared for those who love Him",
+      "Heaven"
+    ],
+    "tags": [
+      "New Testament",
+      "Hope",
+      "Blessing",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "1 Cor 3:16: What are our bodies?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "The body is the temple where the Holy Spirit dwells. We must keep it holy.",
+    "language": "en",
+    "options": [
+      "An offering",
+      "An instrument of God",
+      "A temple of the Holy Spirit",
+      "A jar of clay"
+    ],
+    "tags": [
+      "New Testament",
+      "Temple",
+      "Holy Spirit",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 9,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Paul compare the believer's life to?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Cor 9:24 - The life of faith is like a race: it requires discipline and effort to reach the goal.",
+    "language": "en",
+    "options": [
+      "A race; run to obtain the prize",
+      "Trade",
+      "Farming",
+      "Battle"
+    ],
+    "tags": [
+      "New Testament",
+      "Discipline",
+      "Race",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 10,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does 1 Cor 10:13 promise about temptation?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "God is faithful: He will not let you be tempted beyond your ability and always provides a way of escape.",
+    "language": "en",
+    "options": [
+      "Temptation will end",
+      "God will not let us be tempted beyond our ability and always provides a way of escape",
+      "There will be no temptation",
+      "We must endure on our own"
+    ],
+    "tags": [
+      "New Testament",
+      "Temptation",
+      "Faithfulness",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 12,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Paul compare the church to?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Cor 12:12-14 - Each has different gifts but all are essential, like members of one body.",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "A building",
+      "A body with many members, each member needed",
+      "A vineyard",
+      "An army"
+    ],
+    "tags": [
+      "New Testament",
+      "Church",
+      "Gifts",
+      "1 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "If one has gifts but lacks love, what does Paul say he is like?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Cor 13:1 - All gifts are worthless without love.",
+    "language": "en",
+    "verseEnd": 3,
+    "options": [
+      "A strong person",
+      "A scholar",
+      "A noisy gong or a clanging cymbal",
+      "An angel"
+    ],
+    "tags": [
+      "New Testament",
+      "Love",
+      "Gifts",
+      "1 Corinthians",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verseStart": 58,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "1 Cor 15:58 concludes: Be steadfast, abounding in the work of the Lord, knowing that your labor in the Lord is not ___",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Every labor done for the Lord has eternal value and is never wasted.",
+    "language": "en",
+    "options": [
+      "In vain",
+      "Late",
+      "Forgotten",
+      "Lost"
+    ],
+    "tags": [
+      "New Testament",
+      "Work",
+      "Hope",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 10,
+    "verseStart": 31,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "1 Cor 10:31: Whether you eat or drink, or whatever you do, do all for the ___ of God",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Every act, however small, can be an act that glorifies God.",
+    "language": "en",
+    "options": [
+      "Profit",
+      "Reputation",
+      "Joy",
+      "Glory"
+    ],
+    "tags": [
+      "New Testament",
+      "Glory",
+      "Living",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 16,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "1 Cor 16:13-14 calls believers to do everything in what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Be watchful, stand firm, be courageous, be strong — but do everything in love.",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "Hope",
+      "Fear",
+      "Love",
+      "Righteousness"
+    ],
+    "tags": [
+      "New Testament",
+      "Love",
+      "Living",
+      "1 Corinthians",
+      "Epistle",
+      "Basic"
+    ]
+  }
+]
