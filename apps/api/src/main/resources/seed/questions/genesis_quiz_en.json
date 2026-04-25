@@ -1,0 +1,1897 @@
+[
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Who created the heavens and the earth?",
+    "options": [
+      "Moses",
+      "David",
+      "God",
+      "Abraham"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 1:1 — 'In the beginning, God created the heavens and the earth.' This is the opening verse of the entire Bible.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Creation",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 27,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "God created mankind in His own image.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 1:27 — 'So God created man in his own image, in the image of God he created him.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Creation",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did God use to form the first man?",
+    "options": [
+      "Water",
+      "Stone",
+      "Wood",
+      "Dust of the ground"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 2:7 — 'The LORD God formed the man of dust from the ground and breathed into his nostrils the breath of life, and the man became a living creature.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Creation",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "verseStart": 21,
+    "verseEnd": 22,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What part of Adam did God use to create Eve?",
+    "options": [
+      "Dust of the ground",
+      "A rib",
+      "An arm bone",
+      "A leg bone"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 2:21-22 — 'The LORD God took one of his ribs... and made into a woman.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Creation",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "verseStart": 1,
+    "verseEnd": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Which animal tempted Eve to eat the forbidden fruit?",
+    "options": [
+      "A lion",
+      "The serpent",
+      "A goat",
+      "A bird"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 3:1 — 'Now the serpent was more crafty than any other beast of the field that the LORD God had made.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Sin and Fall",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "Only Eve ate the forbidden fruit; Adam did not.",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 3:6 — 'She took of its fruit and ate, and she also gave some to her husband who was with her, and he ate.' Both ate the fruit.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Where in Genesis is the first promise of the Messiah (Protoevangelium) found?",
+    "options": [
+      "22:18 — when God promises Abraham",
+      "3:15 — when God speaks to the serpent",
+      "12:3 — when God calls Abram",
+      "1:26 — when God creates man"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 3:15 — 'I will put enmity between you and the woman, and between your offspring and her offspring; he shall bruise your head.' This is regarded as the first prophecy of Jesus.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Covenant",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 4,
+    "verseStart": 3,
+    "verseEnd": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Cain offer to God?",
+    "options": [
+      "A firstborn lamb",
+      "Incense",
+      "Gold and silver",
+      "Fruit of the ground"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 4:3 — 'Cain brought to the LORD an offering of the fruit of the ground.' Abel brought firstborn of the flock.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 4,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whom did Cain kill?",
+    "options": [
+      "Enoch",
+      "Seth",
+      "Adam",
+      "Abel"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 4:8 — 'Cain rose up against his brother Abel and killed him.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 5,
+    "verseStart": 24,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Which figure in Genesis did not experience death but was taken by God?",
+    "options": [
+      "Noah",
+      "Methuselah",
+      "Lamech",
+      "Enoch"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 5:24 — 'Enoch walked with God, and he was not, for God took him.' Hebrews 11:5 confirms Enoch did not see death.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 5,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How old was Methuselah when he died?",
+    "options": [
+      "777 years",
+      "930 years",
+      "895 years",
+      "969 years"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 5:27 — 'Thus all the days of Methuselah were 969 years, and he died.' He is the longest-lived person in the Bible.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 6,
+    "verseStart": 14,
+    "verseEnd": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What kind of wood did God tell Noah to build the ark with?",
+    "options": [
+      "Gopher wood",
+      "Olive wood",
+      "Cedar wood",
+      "Pine wood"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 6:14 — 'Make yourself an ark of gopher wood.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Noah and the Flood",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 7,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How many pairs of clean animals did Noah take into the ark?",
+    "options": [
+      "One pair",
+      "Three pairs",
+      "Seven pairs",
+      "Five pairs"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 7:2 — 'Take with you seven pairs of all clean animals, the male and his mate.' Unclean animals: only one pair.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Noah and the Flood",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 7,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "The flood rained for 40 days and 40 nights.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 7:12 — 'And rain fell upon the earth forty days and forty nights.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Noah and the Flood",
+      "Wilderness Journey",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 8,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "fill_in_blank",
+    "content": "Noah's ark came to rest on the mountains of ___.",
+    "options": [
+      "Moriah",
+      "Ararat",
+      "Hermon",
+      "Sinai"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 8:4 — 'In the seventh month, on the seventeenth day of the month, the ark came to rest on the mountains of Ararat.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Noah and the Flood",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 8,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did the dove bring back to Noah after the flood?",
+    "options": [
+      "A grain of wheat",
+      "Nothing",
+      "A flower branch",
+      "An olive leaf"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 8:11 — 'The dove came back to him in the evening, and behold, in her mouth was a freshly plucked olive leaf.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Noah and the Flood",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 9,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What sign did God use as a covenant with Noah that He would never again destroy the earth by flood?",
+    "options": [
+      "Light",
+      "A star",
+      "A rainbow",
+      "A cloud"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 9:13 — 'I have set my bow in the cloud, and it shall be a sign of the covenant between me and the earth.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Noah and the Flood",
+      "Covenant",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 9,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Whose descendants did Noah curse for the incident after the flood?",
+    "options": [
+      "Japheth",
+      "Shem",
+      "Canaan (son of Ham)",
+      "Ham"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 9:25 — 'Cursed be Canaan; a servant of servants shall he be to his brothers.' Noah cursed Canaan, son of Ham.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Noah and the Flood",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 10,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How is Nimrod described in the earth?",
+    "options": [
+      "A mighty hunter",
+      "A righteous king",
+      "A skilled shepherd",
+      "The first priest"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 10:9 — 'He was a mighty hunter before the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 11,
+    "verseStart": 4,
+    "verseEnd": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Why did people build the Tower of Babel?",
+    "options": [
+      "To worship God",
+      "As a residence for the king",
+      "To make a name for themselves and not be scattered",
+      "To resist enemies"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 11:4 — 'Come, let us build ourselves a city and a tower with its top in the heavens, and let us make a name for ourselves, lest we be dispersed over the face of the whole earth.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 11,
+    "verseStart": 31,
+    "difficulty": "medium",
+    "type": "fill_in_blank",
+    "content": "Abram's family set out from the city of ___ of the Chaldeans.",
+    "options": [
+      "Nineveh",
+      "Haran",
+      "Sidon",
+      "Ur"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 11:31 — 'Terah took Abram his son... and they went forth together from Ur of the Chaldeans to go into the land of Canaan.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 12,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "To what land did God call Abram to leave his country?",
+    "options": [
+      "Babylon",
+      "Egypt",
+      "Assyria",
+      "Canaan"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 12:1,5 — God called Abram to leave his homeland for Canaan, the land He would show him.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 12,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "Abram was 75 years old when he left Haran.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 12:4 — 'Abram was seventy-five years old when he departed from Haran.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 13,
+    "verseStart": 10,
+    "verseEnd": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What land did Lot choose when separating from Abram?",
+    "options": [
+      "The Negev desert",
+      "The land of Egypt",
+      "The Jordan plain",
+      "The Canaanite hill country"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 13:11 — 'Lot chose for himself all the Jordan Valley.' This land was as well watered as the garden of the LORD.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 14,
+    "verseStart": 18,
+    "verseEnd": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What did Melchizedek, king of Salem, bring out to meet Abram after the battle?",
+    "options": [
+      "Bread and wine",
+      "Gold and silver",
+      "Sheep and oxen",
+      "A robe and sword"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 14:18 — 'Melchizedek king of Salem brought out bread and wine. He was priest of God Most High.' A type of Christ in Hebrews 7.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 15,
+    "verseStart": 5,
+    "verseEnd": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "God promised Abram's offspring would be as numerous as what?",
+    "options": [
+      "The sand of the sea",
+      "The stars of heaven",
+      "The fish of the sea",
+      "The leaves on the trees"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 15:5 — 'Look toward heaven, and number the stars... So shall your offspring be.' The promise of stars appears here; sand of the sea is mentioned in 22:17.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 15,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How long did God say Abram's offspring would be sojourners and slaves?",
+    "options": [
+      "400 years",
+      "200 years",
+      "500 years",
+      "100 years"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 15:13 — 'Your offspring will be sojourners in a land that is not theirs and will be servants there, and they will be afflicted for four hundred years.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 16,
+    "verseStart": 15,
+    "verseEnd": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Hagar bore Abram a son named what?",
+    "options": [
+      "Esau",
+      "Ishmael",
+      "Isaac",
+      "Jacob"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 16:15 — 'Hagar bore Abram a son, and Abram called the name of his son, whom Hagar bore, Ishmael.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 17,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "fill_in_blank",
+    "content": "God changed Abram's name to ___.",
+    "options": [
+      "Jacob",
+      "Joshua",
+      "Abraham",
+      "Israel"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 17:5 — 'No longer shall your name be called Abram, but your name shall be Abraham, for I have made you the father of a multitude of nations.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 17,
+    "verseStart": 10,
+    "verseEnd": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What was the sign of the covenant between God and Abraham?",
+    "options": [
+      "Circumcision",
+      "Keeping the Sabbath",
+      "Building an altar",
+      "Offering a sacrifice"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 17:11 — 'You shall be circumcised in the flesh of your foreskins, and it shall be a sign of the covenant between me and you.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abraham and Covenant",
+      "Covenant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 18,
+    "verseStart": 10,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Sarah laughed when she heard the promise that she would bear a son.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 18:12 — 'Sarah laughed to herself, saying, After I am worn out, and my lord is old, shall I have pleasure?'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abraham and Covenant",
+      "Covenant",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 18,
+    "verseStart": 32,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How many righteous persons did Abraham ask God to spare Sodom for?",
+    "options": [
+      "Fifty",
+      "Five",
+      "Twenty",
+      "Ten"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 18:32 — Abraham asked from 50 down to 10 righteous people. The final number he asked was ten.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abraham and Covenant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 19,
+    "verseStart": 24,
+    "verseEnd": 25,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "God destroyed Sodom and Gomorrah with fire and sulfur.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 19:24 — 'Then the LORD rained on Sodom and Gomorrah sulfur and fire from the LORD out of heaven.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 20,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Abraham say Sarah was while in Gerar?",
+    "options": [
+      "His servant",
+      "His sister",
+      "His wife",
+      "A distant relative"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 20:2 — 'Abraham said of Sarah his wife, She is my sister.' King Abimelech sent and took Sarah.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abraham and Covenant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 21,
+    "verseStart": 3,
+    "verseEnd": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What was the name of Abraham and Sarah's son?",
+    "options": [
+      "Jacob",
+      "Ishmael",
+      "Esau",
+      "Isaac"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 21:3 — 'Abraham called the name of his son who was born to him, whom Sarah bore him, Isaac.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abraham and Covenant",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 22,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whom did God test Abraham by telling him to offer as a sacrifice?",
+    "options": [
+      "A lamb",
+      "Sarah",
+      "Ishmael",
+      "Isaac"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 22:2 — 'Take your son, your only son Isaac, whom you love, and go to the land of Moriah, and offer him there as a burnt offering.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abraham and Covenant",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 22,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "fill_in_blank",
+    "content": "When Abraham was about to offer Isaac, God provided a ___ instead.",
+    "options": [
+      "dove",
+      "male goat",
+      "bull",
+      "ram"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 22:13 — 'Abraham lifted up his eyes and looked, and behold, behind him was a ram, caught in a thicket by his horns. And Abraham went and took the ram and offered it up as a burnt offering instead of his son.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abraham and Covenant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 23,
+    "verseStart": 19,
+    "verseEnd": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In which cave did Abraham bury Sarah?",
+    "options": [
+      "The cave of Machpelah",
+      "The cave of En-gedi",
+      "The cave of Adullam",
+      "The cave of Siloam"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 23:19 — 'Abraham buried Sarah his wife in the cave of the field of Machpelah.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abraham and Covenant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 24,
+    "verseStart": 10,
+    "verseEnd": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where did Abraham's servant meet Rebekah?",
+    "options": [
+      "In a field",
+      "By a well",
+      "At the temple",
+      "In the city"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 24:13 — 'Behold, I am standing by the spring of water, and the daughters of the men of the city are coming out to draw water.' The servant prayed and met Rebekah at the well.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abraham and Covenant",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 24,
+    "verseStart": 15,
+    "verseEnd": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Who became Isaac's wife?",
+    "options": [
+      "Leah",
+      "Dinah",
+      "Rachel",
+      "Rebekah"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 24:15,67 — Abraham's servant met Rebekah at the well, and she became Isaac's wife.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "verseStart": 7,
+    "verseEnd": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How old was Abraham when he died?",
+    "options": [
+      "200 years",
+      "175 years",
+      "150 years",
+      "180 years"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 25:7 — 'These are the days of the years of Abraham's life, 175 years.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abraham and Covenant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "verseStart": 25,
+    "verseEnd": 26,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Esau was born before Jacob.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 25:25-26 — 'The first came out red... so they called his name Esau. Afterward his brother came out... and his name was called Jacob.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "verseStart": 33,
+    "verseEnd": 34,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Esau sell his birthright to Jacob for?",
+    "options": [
+      "Gold and silver",
+      "A robe",
+      "A bowl of red lentil stew",
+      "A flock of sheep"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 25:34 — 'Then Jacob gave Esau bread and lentil stew, and he ate and drank and rose and went his way. Thus Esau despised his birthright.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 26,
+    "verseStart": 18,
+    "verseEnd": 22,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whose wells did Isaac re-dig that the Philistines had stopped up?",
+    "options": [
+      "Abraham's",
+      "Lot's",
+      "Jacob's",
+      "Noah's"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 26:18 — 'Isaac dug again the wells of water that had been dug in the days of Abraham his father, which the Philistines had stopped after the death of Abraham.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 27,
+    "verseStart": 1,
+    "verseEnd": 29,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who helped Jacob deceive Isaac to receive the blessing meant for Esau?",
+    "options": [
+      "Hagar",
+      "Rebekah",
+      "Rachel",
+      "Dinah"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 27:6-17 — Rebekah devised the plan for Jacob to wear Esau's clothes and goat skins on his hands to deceive Isaac into giving him the blessing.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "verseStart": 12,
+    "verseEnd": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Jacob dream of at Bethel?",
+    "options": [
+      "A river flowing from heaven",
+      "A pillar of fire",
+      "A rainbow",
+      "A ladder reaching to heaven"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 28:12 — 'And he dreamed, and behold, there was a ladder set up on the earth, and the top of it reached to heaven. And behold, the angels of God were ascending and descending on it!'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 29,
+    "verseStart": 18,
+    "verseEnd": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How many years did Jacob have to work to marry Rachel?",
+    "options": [
+      "3 years",
+      "7 years",
+      "5 years",
+      "10 years"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 29:18,20 — 'Jacob loved Rachel. And he said, I will serve you seven years for your younger daughter Rachel.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 30,
+    "verseStart": 22,
+    "verseEnd": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What is the name of Rachel's firstborn son?",
+    "options": [
+      "Benjamin",
+      "Reuben",
+      "Judah",
+      "Joseph"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 30:23-24 — 'She conceived and bore a son... and she called his name Joseph.' Benjamin was Rachel's second son.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 31,
+    "verseStart": 19,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What did Rachel steal from Laban when Jacob left?",
+    "options": [
+      "Flocks",
+      "Gold and silver",
+      "A written covenant",
+      "The household idols"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 31:19 — 'Rachel stole her father's household gods.' These were the teraphim, household idols.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 32,
+    "verseStart": 24,
+    "verseEnd": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Jacob wrestled with the angel through the night by which river?",
+    "options": [
+      "The Euphrates",
+      "The Jordan",
+      "The Jabbok",
+      "The Nile"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 32:22-24 — Jacob took his family across the ford of the Jabbok, then was left alone and wrestled a man until daybreak.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 32,
+    "verseStart": 28,
+    "difficulty": "easy",
+    "type": "fill_in_blank",
+    "content": "After wrestling with the angel, Jacob's name was changed to ___.",
+    "options": [
+      "Israel",
+      "Joshua",
+      "Daniel",
+      "Abraham"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 32:28 — 'Your name shall no longer be called Jacob, but Israel, for you have striven with God and with men, and have prevailed.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 33,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "When they met again, Esau embraced Jacob and wept.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 33:4 — 'But Esau ran to meet him and embraced him and fell on his neck and kissed him, and they wept.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 34,
+    "verseStart": 25,
+    "verseEnd": 26,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Which two sons of Jacob slaughtered the men of Shechem to avenge Dinah?",
+    "options": [
+      "Gad and Asher",
+      "Dan and Naphtali",
+      "Reuben and Judah",
+      "Simeon and Levi"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 34:25 — 'Two of the sons of Jacob, Simeon and Levi, Dinah's brothers, took their swords and came against the city while it felt secure and killed all the males.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 35,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "God also confirmed the change of Jacob's name to Israel at Bethel.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 35:10 — 'Your name is Jacob; no longer shall your name be called Jacob, but Israel shall be your name.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 36,
+    "verseStart": 1,
+    "verseEnd": 8,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "Esau is the ancestor of the Edomites.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 36:1 — 'These are the generations of Esau (that is, Edom).' Esau settled in the hill country of Seir and became the ancestor of the Edomites.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 37,
+    "verseStart": 3,
+    "verseEnd": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What gift did Israel (Jacob) give Joseph that made his brothers jealous?",
+    "options": [
+      "A gold ring",
+      "A silver sword",
+      "A robe of many colors",
+      "His own flock"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 37:3 — 'Israel loved Joseph more than any other of his sons... And he made him a robe of many colors.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Joseph in Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 37,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In Joseph's second dream, what bowed down to him?",
+    "options": [
+      "The trees in the garden",
+      "Seven cows and seven ears of grain",
+      "Eleven sheaves",
+      "The sun, the moon, and eleven stars"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 37:9 — 'Behold, the sun, the moon, and eleven stars were bowing down to me.' The sun and moon represent his parents.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 37,
+    "verseStart": 28,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "To whom did Joseph's brothers sell him?",
+    "options": [
+      "Canaanites",
+      "Philistines",
+      "Egyptians",
+      "Midianite/Ishmaelite traders"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 37:28 — 'They drew Joseph up and lifted him out of the pit, and sold him to the Ishmaelites for twenty shekels of silver.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 38,
+    "verseStart": 27,
+    "verseEnd": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Of the twin sons of Judah and Tamar, who reached out his hand first but was born second?",
+    "options": [
+      "Onan",
+      "Perez",
+      "Zerah",
+      "Er"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 38:28-30 — Zerah's hand came out first, the midwife tied a scarlet thread, but Perez was born first. Perez is in the lineage of Jesus (Matthew 1:3).",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 39,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whom did Joseph serve as steward when he came to Egypt?",
+    "options": [
+      "Pharaoh",
+      "The army commander",
+      "Potiphar",
+      "The prison warden"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 39:1 — 'Potiphar, an officer of Pharaoh, the captain of the guard, an Egyptian, had bought him.' Joseph was entrusted to manage Potiphar's house.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 39,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Joseph was imprisoned because Potiphar's wife falsely accused him.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 39:17-20 — Potiphar's wife falsely accused Joseph of trying to violate her, so Potiphar put Joseph in prison.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 40,
+    "verseStart": 1,
+    "verseEnd": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In prison, for whom of Pharaoh's officials did Joseph interpret dreams?",
+    "options": [
+      "The captain and the bodyguard",
+      "Two generals",
+      "The cupbearer and the baker",
+      "The priest and the storehouse keeper"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 40:1-2 — 'The cupbearer of the king of Egypt and his baker committed an offense.' Joseph interpreted dreams for both in prison.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 41,
+    "verseStart": 29,
+    "verseEnd": 30,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "Pharaoh's dream foretold seven years of plenty followed by seven years of famine.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 41:29-30 — 'There will come seven years of great plenty throughout all the land of Egypt, but after them there will arise seven years of famine.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 41,
+    "verseStart": 46,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How old was Joseph when he stood before Pharaoh to interpret the dream?",
+    "options": [
+      "25 years old",
+      "30 years old",
+      "28 years old",
+      "33 years old"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 41:46 — 'Joseph was thirty years old when he entered the service of Pharaoh king of Egypt.' David also began his reign at age 30 (2 Samuel 5:4).",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 42,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "Joseph kept Reuben as a hostage when his brothers returned to Canaan.",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 42:24 — 'He took Simeon from them and bound him before their eyes.' Joseph kept Simeon, not Reuben.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Promised Land Canaan",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 43,
+    "verseStart": 33,
+    "verseEnd": 34,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "At Joseph's feast for his brothers, how much greater was Benjamin's portion than the others'?",
+    "options": [
+      "Tenfold",
+      "Fivefold",
+      "Twofold",
+      "Threefold"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 43:34 — 'Portions were taken to them from Joseph's table, but Benjamin's portion was five times as much as any of theirs.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 44,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "fill_in_blank",
+    "content": "Joseph had his silver ___ hidden in Benjamin's sack of grain.",
+    "options": [
+      "cup",
+      "sword",
+      "plate",
+      "ring"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 44:2 — 'Put my cup, the silver cup, in the mouth of the sack of the youngest.' This was a plan to test his brothers.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 45,
+    "verseStart": 4,
+    "verseEnd": 5,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Joseph rebuked his brothers when he revealed his identity.",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 45:5 — 'Do not be distressed or angry with yourselves because you sold me here, for God sent me before you to preserve life.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 45,
+    "verseStart": 10,
+    "verseEnd": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "To what region of Egypt did Joseph invite his family to live?",
+    "options": [
+      "Thebes",
+      "Goshen",
+      "Memphis",
+      "Pithom"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 45:10 — 'You shall dwell in the land of Goshen, and you shall be near me, you and your children and your children's children, and your flocks, your herds, and all that you have.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 46,
+    "verseStart": 26,
+    "verseEnd": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How many people of Jacob's family in total went down to Egypt?",
+    "options": [
+      "70 people",
+      "60 people",
+      "50 people",
+      "80 people"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Genesis 46:27 — 'All the persons of the house of Jacob who came into Egypt were seventy.' This number 70 is also mentioned in Exodus 1:5.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 47,
+    "verseStart": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How many years did Jacob live in Egypt?",
+    "options": [
+      "20 years",
+      "10 years",
+      "30 years",
+      "17 years"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 47:28 — 'And Jacob lived in the land of Egypt seventeen years. So the days of Jacob, the years of his life, were 147 years.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 48,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "When blessing Joseph's two sons, on whose head did Jacob place his right hand?",
+    "options": [
+      "On no one",
+      "Both with the right hand",
+      "Manasseh (the firstborn)",
+      "Ephraim (the younger)"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 48:14 — 'Israel stretched out his right hand and laid it on the head of Ephraim, who was the younger, and his left hand on the head of Manasseh.' Jacob deliberately favored the younger.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Joseph in Egypt",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 49,
+    "verseStart": 3,
+    "verseEnd": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Why did Reuben lose his birthright privilege?",
+    "options": [
+      "Selling Joseph",
+      "Killing innocents",
+      "Lying with his father's concubine",
+      "Idolatry"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Genesis 49:3-4 — 'You went up to your father's bed; then you defiled it.' This refers to 35:22 when Reuben lay with Bilhah, Jacob's concubine.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 49,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Of which tribe did Jacob prophesy: 'The scepter shall not depart from... until Shiloh comes'?",
+    "options": [
+      "Benjamin",
+      "Judah",
+      "Reuben",
+      "Joseph"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Genesis 49:10 — 'The scepter shall not depart from Judah... until Shiloh comes.' A prophecy of the Messiah coming from the tribe of Judah.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Census",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "fill_in_blank",
+    "content": "Joseph said to his brothers: 'You meant evil against me, but ___ meant it for good.'",
+    "options": [
+      "Pharaoh",
+      "fate",
+      "Our father",
+      "God"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Genesis 50:20 — 'As for you, you meant evil against me, but God meant it for good, to bring it about that many people should be kept alive, as they are today.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph in Egypt",
+      "Basic"
+    ]
+  }
+]
