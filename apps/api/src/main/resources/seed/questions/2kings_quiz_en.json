@@ -1,0 +1,359 @@
+[
+  {
+    "book": "2 Kings",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "By what means was Elijah taken up to heaven?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Kings 2:11 — Chariots of fire and horses of fire separated the two, and Elijah went up by a whirlwind into heaven.",
+    "language": "en",
+    "options": [
+      "A pillar of fire",
+      "Chariots of fire and horses of fire in a whirlwind",
+      "A cloud",
+      "An angel"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elijah",
+      "Miracle",
+      "2 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 2,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Elisha ask for before Elijah was taken away?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Kings 2:9 — A double portion (the inheritance of the firstborn) shows Elisha desired to fully continue the ministry.",
+    "language": "en",
+    "options": [
+      "Wealth",
+      "A double portion of Elijah's spirit",
+      "Long life",
+      "Power"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elisha",
+      "Spirit",
+      "2 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "By what miracle did Elisha help the indebted widow?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Kings 4:6 — Oil flowed and filled every jar she brought. God multiplies what little there is to be enough.",
+    "language": "en",
+    "verseEnd": 7,
+    "options": [
+      "A son to settle the debt",
+      "Gold from heaven",
+      "Olive oil flowed without ceasing into other jars",
+      "An altar that produced money"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elisha",
+      "Miracle",
+      "2 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 4,
+    "verseStart": 32,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Elisha do to raise the Shunammite woman's son to life?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Kings 4:34 — Elisha lay upon him, mouth to mouth, eyes to eyes. The boy sneezed seven times and revived.",
+    "language": "en",
+    "verseEnd": 35,
+    "options": [
+      "Called another prophet",
+      "Read the law aloud",
+      "Offered a sacrifice",
+      "Lay upon the child and prayed"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elisha",
+      "Resurrection",
+      "2 Kings",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "By what means was Naaman the commander healed of leprosy?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "2 Kings 5:14 — Naaman bathed seven times at Elisha's word. He was at first angry, thinking the method too simple.",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "Bathed seven times in the Jordan",
+      "Drank medicine",
+      "Offered a sacrifice",
+      "Prayed"
+    ],
+    "tags": [
+      "Old Testament",
+      "Naaman",
+      "Obedience",
+      "2 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 6,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Elisha said to his servant: 'Do not fear, for those with us are more than those with them.' When his eyes were opened, what did he see?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Kings 6:17 — There is a spiritual realm where the LORD's army protects. What the natural eye cannot see.",
+    "language": "en",
+    "verseEnd": 17,
+    "options": [
+      "A great army",
+      "Angels",
+      "The mountain full of horses and chariots of fire surrounding them",
+      "A bright cloud"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elisha",
+      "Protection",
+      "2 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 17,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Which empire destroyed the Northern Kingdom (Israel) in 722 BC?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Kings 17:6 — Assyria carried Israel into captivity. The ten tribes were scattered and never recovered.",
+    "language": "en",
+    "options": [
+      "Babylon",
+      "Persia",
+      "Egypt",
+      "Assyria"
+    ],
+    "tags": [
+      "Old Testament",
+      "History",
+      "Exile",
+      "2 Kings",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 22,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did King Josiah find in the temple that had been forgotten?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "2 Kings 22:8 — The rediscovery of the Book of the Law led to the greatest reform in Judah's history.",
+    "language": "en",
+    "verseEnd": 11,
+    "options": [
+      "The Book of the Law (Torah)",
+      "Gold and silver",
+      "The Ark of the Covenant",
+      "Priestly garments"
+    ],
+    "tags": [
+      "Old Testament",
+      "Josiah",
+      "Reform",
+      "2 Kings",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 23,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Which king is praised as turning to the LORD with all his heart, soul, and might more than any other king?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Kings 23:25 — Before or after Josiah, no king turned to the LORD with his whole heart as he did.",
+    "language": "en",
+    "options": [
+      "Hezekiah",
+      "David",
+      "Josiah",
+      "Solomon"
+    ],
+    "tags": [
+      "Old Testament",
+      "Josiah",
+      "Wholehearted",
+      "2 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 20,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How many years did the LORD add to King Hezekiah's life after his prayer?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "2 Kings 20:6 — The LORD heard Hezekiah's prayer and added fifteen years to his life.",
+    "language": "en",
+    "verseEnd": 6,
+    "options": [
+      "15 years",
+      "40 years",
+      "10 years",
+      "7 years"
+    ],
+    "tags": [
+      "Old Testament",
+      "Hezekiah",
+      "Prayer",
+      "2 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 25,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Which empire destroyed the kingdom of Judah and burned the temple in 586 BC?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Kings 25:8-9 — Nebuchadnezzar burned the temple, broke down the walls, and carried the people into Babylonian exile.",
+    "language": "en",
+    "verseEnd": 11,
+    "options": [
+      "Assyria",
+      "Egypt",
+      "Babylon (Nebuchadnezzar)",
+      "Persia"
+    ],
+    "tags": [
+      "Old Testament",
+      "History",
+      "Exile",
+      "2 Kings",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 4,
+    "verseStart": 42,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How many people did Elisha feed with 20 loaves of barley bread?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "2 Kings 4:44 — One hundred ate and there was leftover. A foreshadowing of Jesus' miracle of feeding 5,000.",
+    "language": "en",
+    "verseEnd": 44,
+    "options": [
+      "100 men with leftovers",
+      "1,000 men",
+      "50 men",
+      "200 men"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elisha",
+      "Miracle",
+      "2 Kings",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 13,
+    "verseStart": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What happened when a corpse touched the bones of Elisha in his grave?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Kings 13:21 — Even after death, Elisha's bones still bore the power of resurrection. A demonstration of God's power.",
+    "language": "en",
+    "options": [
+      "A loud sound",
+      "The grave glowed",
+      "The dead man came to life",
+      "The earth shook"
+    ],
+    "tags": [
+      "Old Testament",
+      "Elisha",
+      "Resurrection",
+      "2 Kings",
+      "History",
+      "Advanced"
+    ]
+  }
+]
