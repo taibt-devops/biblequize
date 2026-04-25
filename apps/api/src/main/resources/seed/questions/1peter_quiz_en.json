@@ -299,5 +299,243 @@
       "Epistle",
       "Basic"
     ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "1 Peter 1:8 says believers love Christ even though they have never done what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Peter 1:8 — 'Though you have not seen him, you love him. Though you do not now see him, you believe in him and rejoice with joy that is inexpressible and filled with glory.'",
+    "language": "en",
+    "options": [
+      "Heard His name",
+      "Seen Him",
+      "Read about Him",
+      "Prayed to Him"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Peter",
+      "Faith Without Sight",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 15,
+    "verseEnd": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What command of God does 1 Peter 1:15-16 quote?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Peter 1:16 — 'Since it is written, You shall be holy, for I am holy.' This quotes Leviticus 11:44-45.",
+    "language": "en",
+    "options": [
+      "Be holy, for I am holy",
+      "Love your neighbor",
+      "Keep the Sabbath",
+      "Go and make disciples"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Peter",
+      "Holiness",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 18,
+    "verseEnd": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Peter 1:18-19, with what were the believers ransomed?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Peter 1:18-19 — 'You were ransomed... not with perishable things such as silver or gold... but with the precious blood of Christ, like that of a lamb without blemish or spot.'",
+    "language": "en",
+    "options": [
+      "With gold and silver",
+      "By works of the fathers",
+      "With the precious blood of Christ",
+      "By Old Testament sacrifices"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Peter",
+      "Redemption",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 24,
+    "verseEnd": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "1 Peter 1:24-25 says grass withers and flowers fall, but what remains forever?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Peter 1:25 — 'But the word of the Lord remains forever. And this word is the good news that was preached to you.'",
+    "language": "en",
+    "options": [
+      "The word of the Lord",
+      "Solomon's temple",
+      "The kingdoms of the kings",
+      "The capital Jerusalem"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Peter",
+      "Word of God",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does 1 Peter 2:5 describe believers as?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Peter 2:5 — 'You yourselves like living stones are being built up as a spiritual house, to be a holy priesthood, to offer spiritual sacrifices acceptable to God.'",
+    "language": "en",
+    "options": [
+      "Lost sheep",
+      "Living stones being built into a spiritual house",
+      "Newly sown seed",
+      "Freed prisoners"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Peter",
+      "Living Stones",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Christ leave for us, according to 1 Peter 2:21?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Peter 2:21 — 'For to this you have been called, because Christ also suffered for you, leaving you an example, so that you might follow in his steps.'",
+    "language": "en",
+    "options": [
+      "A book of laws",
+      "An example to follow",
+      "An inheritance",
+      "A spiritual army"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Peter",
+      "Example of Christ",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 3,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How many times does 1 Peter 3:18 say Christ suffered for sins?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Peter 3:18 — 'For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God.'",
+    "language": "en",
+    "options": [
+      "Yearly like Old Testament sacrifices",
+      "Each time the people sinned",
+      "Once for all",
+      "Seven times as a perfect number"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Peter",
+      "Once-for-All Sacrifice",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 5,
+    "verseStart": 5,
+    "verseEnd": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Under what does 1 Peter 5:5-6 urge believers to humble themselves?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Peter 5:6 — 'Humble yourselves, therefore, under the mighty hand of God so that at the proper time he may exalt you.'",
+    "language": "en",
+    "options": [
+      "The mighty hand of God",
+      "The Mosaic law",
+      "The church elders",
+      "The power of the king"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Peter",
+      "Humility",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 5,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does 1 Peter 5:7 urge believers to cast on God?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Peter 5:7 — 'Casting all your anxieties on him, because he cares for you.'",
+    "language": "en",
+    "options": [
+      "All possessions",
+      "All anxieties",
+      "All plans",
+      "All successes"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Peter",
+      "Anxiety",
+      "Epistle",
+      "Basic"
+    ]
   }
 ]

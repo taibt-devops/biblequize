@@ -299,5 +299,243 @@
       "Thư tín",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "1 Phi-e-rơ 1:8 nói các tín hữu yêu mến Đấng Christ dù họ chưa bao giờ gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Phi-e-rơ 1:8 — 'Ngài là Đấng anh em không thấy mà yêu mến; dầu nay anh em không thấy Ngài, nhưng tin Ngài, và vui mừng lắm một cách không xiết kể và vinh hiển.'",
+    "language": "vi",
+    "options": [
+      "Nghe đến danh Ngài",
+      "Thấy Ngài",
+      "Đọc về Ngài",
+      "Cầu nguyện với Ngài"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Đức tin không thấy",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 15,
+    "verseEnd": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "1 Phi-e-rơ 1:15-16 trích lệnh truyền nào của Đức Chúa Trời?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Phi-e-rơ 1:16 — 'Vì có chép rằng: Hãy nên thánh, vì ta là thánh.' Lời này được trích từ Lê-vi Ký 11:44-45.",
+    "language": "vi",
+    "options": [
+      "Hãy nên thánh, vì Ta là thánh",
+      "Hãy yêu kẻ lân cận",
+      "Hãy giữ ngày Sa-bát",
+      "Hãy đi và làm môn đồ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thánh khiết",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 18,
+    "verseEnd": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Phi-e-rơ 1:18-19, các tín hữu được chuộc bằng gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Phi-e-rơ 1:18-19 — 'Anh em đã biết rằng chẳng phải bởi vật hay hư nát như bạc hoặc vàng mà anh em được chuộc... bèn là bởi huyết quí báu của Đấng Christ, dường như huyết của chiên con không lỗi không vít.'",
+    "language": "vi",
+    "options": [
+      "Bởi vàng và bạc",
+      "Bởi việc lành của tổ phụ",
+      "Bởi huyết quí báu của Đấng Christ",
+      "Bởi của lễ chuộc tội Cựu Ước"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Cứu chuộc",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 24,
+    "verseEnd": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "1 Phi-e-rơ 1:24-25 nói cỏ khô và hoa rụng, nhưng điều gì còn lại đời đời?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Phi-e-rơ 1:25 — 'Nhưng lời Chúa còn lại đời đời. Và lời đó là đạo Tin Lành đã giảng ra cho anh em.'",
+    "language": "vi",
+    "options": [
+      "Lời của Chúa",
+      "Đền thờ Sa-lô-môn",
+      "Vương quốc các vua",
+      "Kinh đô Giê-ru-sa-lem"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Lời Chúa",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "1 Phi-e-rơ 2:5 mô tả các tín hữu là gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Phi-e-rơ 2:5 — 'Anh em cũng như đá sống, được xây nên nhà thiêng liêng, làm chức tế lễ thánh, đặng dâng của tế lễ thiêng liêng.'",
+    "language": "vi",
+    "options": [
+      "Cừu lạc đàn",
+      "Đá sống được xây nên nhà thiêng liêng",
+      "Hạt giống mới gieo",
+      "Tù nhân được giải phóng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Đá sống",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "1 Phi-e-rơ 2:21 nói Đấng Christ để lại điều gì cho chúng ta?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Phi-e-rơ 2:21 — 'Đấng Christ cũng vì anh em mà chịu khổ, để lại cho anh em một gương, hầu cho anh em noi dấu chân Ngài.'",
+    "language": "vi",
+    "options": [
+      "Một quyển sách luật",
+      "Một gương để noi theo",
+      "Một tài sản thừa kế",
+      "Một đoàn quân thiêng liêng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Gương Đấng Christ",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 3,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "1 Phi-e-rơ 3:18 nói Đấng Christ chịu chết vì tội bao nhiêu lần?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Phi-e-rơ 3:18 — 'Vả, Đấng Christ cũng vì tội lỗi chịu chết một lần, là Đấng công bình thay cho kẻ không công bình, để dẫn chúng ta đến cùng Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Hằng năm như tế lễ Cựu Ước",
+      "Mỗi khi dân phạm tội",
+      "Một lần đủ cả",
+      "Bảy lần như con số trọn vẹn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Hy sinh duy nhất",
+      "Thư tín",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 5,
+    "verseStart": 5,
+    "verseEnd": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "1 Phi-e-rơ 5:5-6 khuyên các tín hữu phải hạ mình xuống dưới gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Phi-e-rơ 5:6 — 'Vậy, hãy hạ mình xuống dưới tay quyền phép của Đức Chúa Trời, hầu cho đến kỳ thuận hiệp Ngài nhắc anh em lên.'",
+    "language": "vi",
+    "options": [
+      "Tay quyền phép của Đức Chúa Trời",
+      "Luật pháp Môi-se",
+      "Trưởng lão hội thánh",
+      "Quyền lực của vua"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Khiêm nhường",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 5,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "1 Phi-e-rơ 5:7 khuyên các tín hữu trao điều gì cho Đức Chúa Trời?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Phi-e-rơ 5:7 — 'Lại hãy trao mọi điều lo lắng mình cho Ngài, vì Ngài hay săn sóc anh em.'",
+    "language": "vi",
+    "options": [
+      "Mọi tài sản",
+      "Mọi điều lo lắng",
+      "Mọi kế hoạch",
+      "Mọi thành công"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Lo lắng",
+      "Thư tín",
+      "Cơ bản"
+    ]
   }
 ]
