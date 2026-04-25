@@ -30,10 +30,10 @@
     "chapter": 1,
     "verseStart": 27,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Đức Chúa Trời tạo dựng loài người theo hình ảnh của Ngài.",
+    "type": "multiple_choice_single",
+    "content": "Theo Sáng Thế Ký 1:27, Đức Chúa Trời tạo dựng loài người theo gì?",
     "correctAnswer": [
-      0
+      3
     ],
     "explanation": "Sáng thế ký 1:27 — 'Đức Chúa Trời sáng tạo loài người theo hình ảnh Ngài. Ngài sáng tạo loài người theo hình ảnh Đức Chúa Trời.'",
     "language": "vi",
@@ -43,6 +43,12 @@
       "Ngũ Kinh",
       "Sáng tạo",
       "Cơ bản"
+    ],
+    "options": [
+      "Hình ảnh các thiên sứ",
+      "Hình ảnh loài thú",
+      "Hình ảnh đất đai",
+      "Hình ảnh của Ngài"
     ]
   },
   {
@@ -130,10 +136,10 @@
     "chapter": 3,
     "verseStart": 6,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Chỉ có Ê-va ăn trái cấm, A-đam không ăn.",
+    "type": "multiple_choice_single",
+    "content": "Theo Sáng Thế Ký 3:6, ai đã ăn trái cấm?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Sáng thế ký 3:6 — 'Người nữ... hái trái mà ăn, rồi trao cho chồng đang ở với mình, và chồng cũng ăn.' Cả hai đều ăn trái cấm.",
     "language": "vi",
@@ -142,6 +148,12 @@
       "Sáng Thế Ký",
       "Ngũ Kinh",
       "Trung cấp"
+    ],
+    "options": [
+      "Chỉ Ê-va",
+      "Chỉ A-đam",
+      "Cả A-đam và Ê-va",
+      "Không ai cả"
     ]
   },
   {
@@ -330,10 +342,10 @@
     "chapter": 7,
     "verseStart": 12,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Trận đại hồng thủy có mưa suốt 40 ngày 40 đêm.",
+    "type": "multiple_choice_single",
+    "content": "Mưa của trận đại hồng thủy kéo dài bao lâu?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Sáng thế ký 7:12 — 'Mưa xuống mặt đất suốt bốn mươi ngày bốn mươi đêm.'",
     "language": "vi",
@@ -344,6 +356,12 @@
       "Nô-ê và Đại Hồng Thủy",
       "Hành trình đồng vắng",
       "Cơ bản"
+    ],
+    "options": [
+      "7 ngày 7 đêm",
+      "30 ngày 30 đêm",
+      "40 ngày 40 đêm",
+      "70 ngày 70 đêm"
     ]
   },
   {
@@ -351,7 +369,7 @@
     "chapter": 8,
     "verseStart": 4,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Tàu Nô-ê tựa trên núi ___.",
     "options": [
       "Mô-ri-a",
@@ -508,7 +526,7 @@
     "chapter": 11,
     "verseStart": 31,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Gia đình Áp-ram ra đi từ thành ___ xứ Canh-đê.",
     "options": [
       "Ni-ni-ve",
@@ -559,10 +577,10 @@
     "chapter": 12,
     "verseStart": 4,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Áp-ram rời Ha-ran khi ông 75 tuổi.",
+    "type": "multiple_choice_single",
+    "content": "Áp-ram bao nhiêu tuổi khi ông rời Ha-ran?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Sáng thế ký 12:4 — 'Áp-ram được bảy mươi lăm tuổi khi ông rời Ha-ran.'",
     "language": "vi",
@@ -571,6 +589,12 @@
       "Sáng Thế Ký",
       "Ngũ Kinh",
       "Trung cấp"
+    ],
+    "options": [
+      "60 tuổi",
+      "75 tuổi",
+      "85 tuổi",
+      "100 tuổi"
     ]
   },
   {
@@ -708,7 +732,7 @@
     "chapter": 17,
     "verseStart": 5,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Đức Chúa Trời đổi tên Áp-ram thành ___.",
     "options": [
       "Gia-cốp",
@@ -762,10 +786,10 @@
     "verseStart": 10,
     "verseEnd": 12,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Sa-ra cười khi nghe lời hứa rằng bà sẽ sinh con trai.",
+    "type": "multiple_choice_single",
+    "content": "Sa-ra phản ứng thế nào khi nghe lời hứa rằng bà sẽ sinh con trai?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Sáng thế ký 18:12 — 'Sa-ra cười thầm, nói rằng: Tôi đã già rồi, lại còn hưởng được điều sung sướng nầy sao?'",
     "language": "vi",
@@ -776,6 +800,12 @@
       "Áp-ra-ham và Giao ước",
       "Giao ước",
       "Cơ bản"
+    ],
+    "options": [
+      "Khóc lóc",
+      "Cười thầm trong lòng",
+      "Hét lên ca tụng",
+      "Đứng im không nói"
     ]
   },
   {
@@ -810,8 +840,8 @@
     "verseStart": 24,
     "verseEnd": 25,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Đức Chúa Trời hủy diệt Sô-đôm và Gô-mô-rơ bằng lửa và diêm sinh.",
+    "type": "multiple_choice_single",
+    "content": "Đức Chúa Trời hủy diệt Sô-đôm và Gô-mô-rơ bằng gì?",
     "correctAnswer": [
       0
     ],
@@ -822,6 +852,12 @@
       "Sáng Thế Ký",
       "Ngũ Kinh",
       "Cơ bản"
+    ],
+    "options": [
+      "Lửa và diêm sinh",
+      "Trận động đất",
+      "Bão tố và sét",
+      "Nạn châu chấu"
     ]
   },
   {
@@ -908,7 +944,7 @@
     "chapter": 22,
     "verseStart": 13,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Khi Áp-ra-ham sắp dâng Y-sác, Đức Chúa Trời cung cấp một con ___ thay thế.",
     "options": [
       "chim bồ câu",
@@ -1042,10 +1078,10 @@
     "verseStart": 25,
     "verseEnd": 26,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Ê-sau sinh ra trước Gia-cốp.",
+    "type": "multiple_choice_single",
+    "content": "Trong cặp song sinh của Y-sác, ai sinh ra trước?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Sáng thế ký 25:25-26 — 'Đứa ra trước đỏ hồng... người ta đặt tên là Ê-sau. Sau đó, em nó sinh ra... người ta đặt tên là Gia-cốp.'",
     "language": "vi",
@@ -1055,6 +1091,12 @@
       "Ngũ Kinh",
       "Gia-cốp và Y-sơ-ra-ên",
       "Cơ bản"
+    ],
+    "options": [
+      "Gia-cốp",
+      "Ê-sau",
+      "Cả hai cùng lúc",
+      "Không xác định"
     ]
   },
   {
@@ -1275,7 +1317,7 @@
     "chapter": 32,
     "verseStart": 28,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Sau khi vật lộn với thiên sứ, Gia-cốp được đổi tên thành ___.",
     "options": [
       "Y-sơ-ra-ên",
@@ -1301,10 +1343,10 @@
     "chapter": 33,
     "verseStart": 4,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Khi gặp lại Gia-cốp, Ê-sau đã ôm ông và khóc.",
+    "type": "multiple_choice_single",
+    "content": "Khi gặp lại Gia-cốp sau nhiều năm, Ê-sau đã làm gì?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Sáng thế ký 33:4 — 'Ê-sau chạy đến đón Gia-cốp, ôm choàng lấy cổ ông và hôn; rồi cả hai đều khóc.'",
     "language": "vi",
@@ -1314,6 +1356,12 @@
       "Ngũ Kinh",
       "Gia-cốp và Y-sơ-ra-ên",
       "Cơ bản"
+    ],
+    "options": [
+      "Tránh mặt và đi nơi khác",
+      "Tấn công Gia-cốp",
+      "Ôm và hôn cổ Gia-cốp; cả hai cùng khóc",
+      "Đòi tiền chuộc"
     ]
   },
   {
@@ -1348,10 +1396,10 @@
     "chapter": 35,
     "verseStart": 10,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Đức Chúa Trời cũng xác nhận đổi tên Gia-cốp thành Y-sơ-ra-ên tại Bê-tên.",
+    "type": "multiple_choice_single",
+    "content": "Tại Bê-tên, Đức Chúa Trời xác nhận đổi tên Gia-cốp thành tên gì?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Sáng thế ký 35:10 — 'Tên ngươi là Gia-cốp, nhưng ngươi sẽ không còn mang tên Gia-cốp nữa; tên ngươi sẽ là Y-sơ-ra-ên.'",
     "language": "vi",
@@ -1361,6 +1409,12 @@
       "Ngũ Kinh",
       "Gia-cốp và Y-sơ-ra-ên",
       "Cơ bản"
+    ],
+    "options": [
+      "Áp-ra-ham",
+      "Y-sơ-ra-ên",
+      "Đa-vít",
+      "Giô-suê"
     ]
   },
   {
@@ -1369,10 +1423,10 @@
     "verseStart": 1,
     "verseEnd": 8,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Ê-sau là tổ phụ của dân Ê-đôm.",
+    "type": "multiple_choice_single",
+    "content": "Ê-sau là tổ phụ của dân tộc nào?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Sáng thế ký 36:1 — 'Đây là dòng dõi Ê-sau, tức là Ê-đôm.' Ê-sau định cư tại vùng núi Sê-i-rơ, trở thành tổ phụ dân Ê-đôm.",
     "language": "vi",
@@ -1382,6 +1436,12 @@
       "Ngũ Kinh",
       "Gia-cốp và Y-sơ-ra-ên",
       "Trung cấp"
+    ],
+    "options": [
+      "Mô-áp",
+      "Am-môn",
+      "Ê-đôm",
+      "Phi-li-tin"
     ]
   },
   {
@@ -1523,10 +1583,10 @@
     "chapter": 39,
     "verseStart": 20,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Giô-sép bị bỏ tù vì bị vu cáo bởi vợ Phô-ti-pha.",
+    "type": "multiple_choice_single",
+    "content": "Vì lý do gì Giô-sép bị bỏ tù tại Ai-cập?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Sáng thế ký 39:17-20 — Vợ Phô-ti-pha vu cáo Giô-sép xúc phạm nàng, nên Phô-ti-pha bỏ Giô-sép vào ngục.",
     "language": "vi",
@@ -1536,6 +1596,12 @@
       "Ngũ Kinh",
       "Giô-sép tại Ai Cập",
       "Cơ bản"
+    ],
+    "options": [
+      "Trộm cắp đồ vua",
+      "Bị vu cáo bởi vợ Phô-ti-pha",
+      "Lập âm mưu phản loạn",
+      "Giải mộng sai cho vua"
     ]
   },
   {
@@ -1571,10 +1637,10 @@
     "verseStart": 29,
     "verseEnd": 30,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Giấc mơ của Pha-ra-ôn báo trước bảy năm được mùa rồi bảy năm đói kém.",
+    "type": "multiple_choice_single",
+    "content": "Giấc mơ của Pha-ra-ôn báo trước điều gì sẽ xảy ra ở Ai-cập?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Sáng thế ký 41:29-30 — 'Sẽ có bảy năm được mùa lớn trong toàn cõi Ai-cập. Nhưng sau đó sẽ có bảy năm đói kém.'",
     "language": "vi",
@@ -1584,6 +1650,12 @@
       "Ngũ Kinh",
       "Giô-sép tại Ai Cập",
       "Trung cấp"
+    ],
+    "options": [
+      "Bảy năm chiến tranh liên tiếp",
+      "Bảy năm được mùa rồi bảy năm đói kém",
+      "Mười năm phước lành",
+      "Hai năm hạn hán"
     ]
   },
   {
@@ -1617,8 +1689,8 @@
     "chapter": 42,
     "verseStart": 24,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Giô-sép giữ Ru-bên lại làm con tin khi các anh em trở về Ca-na-an.",
+    "type": "multiple_choice_single",
+    "content": "Khi các anh em Giô-sép trở về Ca-na-an, Giô-sép giữ ai lại làm con tin?",
     "correctAnswer": [
       1
     ],
@@ -1631,6 +1703,12 @@
       "Giô-sép tại Ai Cập",
       "Đất hứa Ca-na-an",
       "Trung cấp"
+    ],
+    "options": [
+      "Ru-bên",
+      "Si-mê-ôn",
+      "Lê-vi",
+      "Giu-đa"
     ]
   },
   {
@@ -1665,7 +1743,7 @@
     "chapter": 44,
     "verseStart": 2,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Giô-sép sai giấu chiếc ___ bạc trong bao lương thực của Bên-gia-min.",
     "options": [
       "cốc",
@@ -1692,10 +1770,10 @@
     "verseStart": 4,
     "verseEnd": 5,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Giô-sép trách móc các anh khi tiết lộ mình là ai.",
+    "type": "multiple_choice_single",
+    "content": "Khi tiết lộ thân phận với các anh, Giô-sép phản ứng thế nào?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Sáng thế ký 45:5 — 'Bây giờ, đừng buồn rầu và cũng đừng tự trách mình vì đã bán tôi. Đức Chúa Trời đã sai tôi đến đây trước các anh để giữ gìn sự sống.'",
     "language": "vi",
@@ -1705,6 +1783,12 @@
       "Ngũ Kinh",
       "Giô-sép tại Ai Cập",
       "Cơ bản"
+    ],
+    "options": [
+      "Trách móc gay gắt",
+      "Đuổi họ về tay không",
+      "Bảo họ đừng buồn vì Đức Chúa Trời đã sai ông đến để giữ gìn sự sống",
+      "Đòi giết họ để báo thù"
     ]
   },
   {
@@ -1873,7 +1957,7 @@
     "chapter": 50,
     "verseStart": 20,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Giô-sép nói với các anh: 'Các anh toan hại tôi, nhưng ___ lại toan làm điều ích lợi.'",
     "options": [
       "Pha-ra-ôn",

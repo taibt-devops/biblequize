@@ -83,8 +83,8 @@
     "chapter": 2,
     "verseStart": 11,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "A grain offering presented to the LORD was permitted to contain leaven.",
+    "type": "multiple_choice_single",
+    "content": "Could a grain offering presented to the LORD contain leaven?",
     "correctAnswer": [
       1
     ],
@@ -96,6 +96,12 @@
       "Pentateuch",
       "Sacrifice and Ritual",
       "Intermediate"
+    ],
+    "options": [
+      "Yes, on special occasions",
+      "Never — no leaven or honey allowed",
+      "At the priest's discretion",
+      "Only a little"
     ]
   },
   {
@@ -103,7 +109,7 @@
     "chapter": 2,
     "verseStart": 13,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Every grain offering must be seasoned with ___.",
     "options": [
       "sugar",
@@ -128,10 +134,10 @@
     "chapter": 3,
     "verseStart": 1,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "In the peace offering, the animal offered may be male or female.",
+    "type": "multiple_choice_single",
+    "content": "In the peace offering, what kind of animal may be offered?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Leviticus 3:1 — 'If his offering is a sacrifice of peace offering... whether male or female, he shall offer it without blemish before the LORD.'",
     "language": "en",
@@ -141,6 +147,12 @@
       "Pentateuch",
       "Sacrifice and Ritual",
       "Basic"
+    ],
+    "options": [
+      "Only male",
+      "Only female",
+      "Male or female — without blemish",
+      "Must be the firstborn"
     ]
   },
   {
@@ -285,10 +297,10 @@
     "chapter": 5,
     "verseStart": 16,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "When sinning against holy things, one must restitute an additional one-fifth of the value.",
+    "type": "multiple_choice_single",
+    "content": "When sinning against holy things, what additional restitution was required?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Leviticus 5:16 — 'He shall make restitution for what he has done amiss in the holy thing and shall add a fifth to it.'",
     "language": "en",
@@ -298,6 +310,12 @@
       "Pentateuch",
       "Sin and Fall",
       "Intermediate"
+    ],
+    "options": [
+      "A tenth",
+      "A fifth",
+      "A third",
+      "Double the value"
     ]
   },
   {
@@ -414,10 +432,10 @@
     "verseStart": 26,
     "verseEnd": 27,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "The Israelites were absolutely forbidden to eat blood.",
+    "type": "multiple_choice_single",
+    "content": "According to Leviticus 7:26-27, what was Israel's rule about eating blood?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Leviticus 7:26-27 — 'You shall eat no blood whatever, whether of fowl or of animal, in any of your dwelling places. Whoever eats any blood, that person shall be cut off from his people.'",
     "language": "en",
@@ -428,6 +446,12 @@
       "Jacob and Israel",
       "Sacrifice and Ritual",
       "Basic"
+    ],
+    "options": [
+      "Could eat blood of any creature",
+      "Only bird blood was forbidden",
+      "Absolutely forbidden — whoever ate would be cut off",
+      "Forbidden only on the Sabbath"
     ]
   },
   {
@@ -436,10 +460,10 @@
     "verseStart": 6,
     "verseEnd": 9,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Before being ordained, Aaron and his sons had to be washed with water.",
+    "type": "multiple_choice_single",
+    "content": "What was the first step in the ordination of Aaron and his sons?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Leviticus 8:6 — 'And Moses brought Aaron and his sons and washed them with water.' This was the first step in the ordination ceremony.",
     "language": "en",
@@ -449,6 +473,12 @@
       "Pentateuch",
       "Sacrifice and Ritual",
       "Basic"
+    ],
+    "options": [
+      "Anointing with oil",
+      "Washing with water",
+      "Putting on priestly garments",
+      "Offering a burnt sacrifice"
     ]
   },
   {
@@ -535,10 +565,10 @@
     "chapter": 9,
     "verseStart": 24,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "When fire from the LORD came forth, all the people shouted and fell on their faces.",
+    "type": "multiple_choice_single",
+    "content": "When the fire from the LORD consumed the offering, what did all the people do?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Leviticus 9:24 — 'And when all the people saw it, they shouted and fell on their faces.'",
     "language": "en",
@@ -547,6 +577,12 @@
       "Leviticus",
       "Pentateuch",
       "Basic"
+    ],
+    "options": [
+      "Fled in fear",
+      "Stood frozen in fear",
+      "Shouted and fell on their faces",
+      "Sang continuous praise"
     ]
   },
   {
@@ -581,7 +617,7 @@
     "chapter": 10,
     "verseStart": 2,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Nadab and Abihu were consumed by ___ from the LORD for offering strange fire.",
     "options": [
       "fire",
@@ -632,10 +668,10 @@
     "verseStart": 7,
     "verseEnd": 8,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "The pig was considered unclean because it does not chew the cud, even though it has split hooves.",
+    "type": "multiple_choice_single",
+    "content": "Why was the pig considered unclean under Levitical law?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Leviticus 11:7 — 'And the pig, because it parts the hoof and is cloven-footed but does not chew the cud, is unclean to you.'",
     "language": "en",
@@ -644,6 +680,12 @@
       "Leviticus",
       "Pentateuch",
       "Basic"
+    ],
+    "options": [
+      "Because it lives in mud",
+      "Because it has split hooves but does not chew the cud",
+      "Because of its bristly black hair",
+      "Because it is loud"
     ]
   },
   {
@@ -834,10 +876,10 @@
     "verseStart": 34,
     "verseEnd": 35,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Leviticus prescribes how to handle leprosy only for people, not for houses.",
+    "type": "multiple_choice_single",
+    "content": "To what does the Levitical leprosy law apply?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Leviticus 14:34-35 — 'When you come into the land of Canaan... and I put a case of leprous disease in a house... then he who owns the house shall come and tell the priest.' Leprosy applied to houses too.",
     "language": "en",
@@ -846,6 +888,12 @@
       "Leviticus",
       "Pentateuch",
       "Intermediate"
+    ],
+    "options": [
+      "Only to people",
+      "Only to animals",
+      "Both to people and to houses",
+      "Only to clothing"
     ]
   },
   {
@@ -987,7 +1035,7 @@
     "verseStart": 21,
     "verseEnd": 22,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Aaron laid both his hands on the head of the live goat and confessed all the ___ of the people of Israel over it.",
     "options": [
       "prayers",
@@ -1014,7 +1062,7 @@
     "chapter": 16,
     "verseStart": 29,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "The Day of Atonement is observed on the tenth day of the ___ month.",
     "options": [
       "seventh",
@@ -1065,10 +1113,10 @@
     "chapter": 17,
     "verseStart": 11,
     "difficulty": "hard",
-    "type": "true_false",
-    "content": "Leviticus 17:11 teaches that blood makes atonement because the life is in the blood — a principle echoed in Hebrews 9:22.",
+    "type": "multiple_choice_single",
+    "content": "According to Leviticus 17:11, where is the life of the flesh, and what is the blood used for?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Leviticus 17:11 — 'The life of the flesh is in the blood... blood makes atonement for the soul.' Hebrews 9:22 affirms: 'Without the shedding of blood there is no forgiveness of sins.'",
     "language": "en",
@@ -1079,6 +1127,12 @@
       "Sin and Fall",
       "Sacrifice and Ritual",
       "Advanced"
+    ],
+    "options": [
+      "In the bones / for animal sacrifices",
+      "In the blood / to make atonement for the soul on the altar",
+      "In the mind / for thanksgiving",
+      "In the breath / for praise"
     ]
   },
   {
@@ -1139,7 +1193,7 @@
     "chapter": 19,
     "verseStart": 2,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "You shall be holy, for I the LORD your God am ___.",
     "options": [
       "righteous",
@@ -1191,7 +1245,7 @@
     "chapter": 19,
     "verseStart": 18,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "You shall love your ___ as yourself.",
     "options": [
       "father and mother",
@@ -1216,10 +1270,10 @@
     "chapter": 19,
     "verseStart": 28,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Leviticus 19 forbids tattooing of the body.",
+    "type": "multiple_choice_single",
+    "content": "What does Leviticus 19:28 forbid Israel from doing to their bodies?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Leviticus 19:28 — 'You shall not... tattoo yourselves: I am the LORD.' This prohibition relates to pagan rites.",
     "language": "en",
@@ -1228,6 +1282,12 @@
       "Leviticus",
       "Pentateuch",
       "Intermediate"
+    ],
+    "options": [
+      "Cutting hair",
+      "Tattooing themselves",
+      "Bathing in the river",
+      "Wearing rings"
     ]
   },
   {
@@ -1262,10 +1322,10 @@
     "verseStart": 7,
     "verseEnd": 8,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "The LORD said: 'Consecrate yourselves, therefore, and be holy, for I am the LORD your God.'",
+    "type": "multiple_choice_single",
+    "content": "What command does Leviticus 20:7 give to Israel?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Leviticus 20:7 — 'Consecrate yourselves, therefore, and be holy, for I am the LORD your God.'",
     "language": "en",
@@ -1274,6 +1334,12 @@
       "Leviticus",
       "Pentateuch",
       "Basic"
+    ],
+    "options": [
+      "Come to the temple every week",
+      "Consecrate yourselves and be holy, for I am the LORD your God",
+      "Bring many sacrifices",
+      "Go evangelize the Gentiles"
     ]
   },
   {
@@ -1362,10 +1428,10 @@
     "verseStart": 32,
     "verseEnd": 33,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "The LORD said: 'You shall not profane my holy name; I must be sanctified among the people of Israel.'",
+    "type": "multiple_choice_single",
+    "content": "What does the LORD command about His holy name in Leviticus 22:32?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Leviticus 22:32 — 'You shall not profane my holy name, that I may be sanctified among the people of Israel. I am the LORD who sanctifies you.'",
     "language": "en",
@@ -1375,6 +1441,12 @@
       "Pentateuch",
       "Jacob and Israel",
       "Basic"
+    ],
+    "options": [
+      "Use only in the temple",
+      "Do not pronounce the name",
+      "Do not profane My holy name; I must be sanctified among the people of Israel",
+      "It must be carved in stone"
     ]
   },
   {
@@ -1460,7 +1532,7 @@
     "chapter": 23,
     "verseStart": 24,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "The first day of the seventh month is a day of solemn rest, a memorial proclaimed with a blast of ___.",
     "options": [
       "shouting",
@@ -1565,10 +1637,10 @@
     "chapter": 24,
     "verseStart": 16,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Whoever blasphemed the name of the LORD was to be put to death.",
+    "type": "multiple_choice_single",
+    "content": "What was the penalty for blaspheming the name of the LORD?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Leviticus 24:16 — 'Whoever blasphemes the name of the LORD shall surely be put to death. All the congregation shall stone him.'",
     "language": "en",
@@ -1577,6 +1649,12 @@
       "Leviticus",
       "Pentateuch",
       "Basic"
+    ],
+    "options": [
+      "Banished from the camp for seven days",
+      "Bring a sin offering",
+      "Put to death — the whole congregation must stone him",
+      "A fine"
     ]
   },
   {
@@ -1687,10 +1765,10 @@
     "verseStart": 35,
     "verseEnd": 37,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Israelites were permitted to lend money to fellow Israelites at interest.",
+    "type": "multiple_choice_single",
+    "content": "According to Leviticus 25:36-37, could an Israelite lend money to a fellow Israelite at interest?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Leviticus 25:36-37 — 'Take no interest from him or profit, but fear your God... You shall not lend him your money at interest, nor give him your food for profit.'",
     "language": "en",
@@ -1700,6 +1778,12 @@
       "Pentateuch",
       "Jacob and Israel",
       "Intermediate"
+    ],
+    "options": [
+      "Yes, if the interest was small",
+      "Yes, with written contract",
+      "No interest or profit may be taken from a brother",
+      "Only during years of drought"
     ]
   },
   {
@@ -1736,7 +1820,7 @@
     "verseStart": 11,
     "verseEnd": 12,
     "difficulty": "hard",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "I will make my dwelling among you... I will walk among you and will be your ___, and you shall be my people.",
     "options": [
       "king",
@@ -1844,10 +1928,10 @@
     "verseStart": 28,
     "verseEnd": 29,
     "difficulty": "hard",
-    "type": "true_false",
-    "content": "Anything devoted (cherem) to the LORD could be redeemed by money.",
+    "type": "multiple_choice_single",
+    "content": "Could a thing devoted (cherem) to the LORD be redeemed?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Leviticus 27:28 — 'But no devoted thing that a man devotes to the LORD, of anything that he has... shall be sold or redeemed; every devoted thing is most holy to the LORD.'",
     "language": "en",
@@ -1856,6 +1940,12 @@
       "Leviticus",
       "Pentateuch",
       "Advanced"
+    ],
+    "options": [
+      "Yes, with double its value in money",
+      "Yes, by offering another item",
+      "No — it cannot be sold or redeemed; it is most holy to the LORD",
+      "At the high priest's discretion"
     ]
   },
   {

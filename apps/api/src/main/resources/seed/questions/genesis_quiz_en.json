@@ -30,10 +30,10 @@
     "chapter": 1,
     "verseStart": 27,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "God created mankind in His own image.",
+    "type": "multiple_choice_single",
+    "content": "According to Genesis 1:27, in whose image did God create mankind?",
     "correctAnswer": [
-      0
+      3
     ],
     "explanation": "Genesis 1:27 — 'So God created man in his own image, in the image of God he created him.'",
     "language": "en",
@@ -43,6 +43,12 @@
       "Pentateuch",
       "Creation",
       "Basic"
+    ],
+    "options": [
+      "The image of angels",
+      "The image of beasts",
+      "The image of the earth",
+      "His own image"
     ]
   },
   {
@@ -130,10 +136,10 @@
     "chapter": 3,
     "verseStart": 6,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Only Eve ate the forbidden fruit; Adam did not.",
+    "type": "multiple_choice_single",
+    "content": "According to Genesis 3:6, who ate the forbidden fruit?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Genesis 3:6 — 'She took of its fruit and ate, and she also gave some to her husband who was with her, and he ate.' Both ate the fruit.",
     "language": "en",
@@ -142,6 +148,12 @@
       "Genesis",
       "Pentateuch",
       "Intermediate"
+    ],
+    "options": [
+      "Only Eve",
+      "Only Adam",
+      "Both Adam and Eve",
+      "Neither of them"
     ]
   },
   {
@@ -330,10 +342,10 @@
     "chapter": 7,
     "verseStart": 12,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "The flood rained for 40 days and 40 nights.",
+    "type": "multiple_choice_single",
+    "content": "How long did the rain of the great flood last?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Genesis 7:12 — 'And rain fell upon the earth forty days and forty nights.'",
     "language": "en",
@@ -344,6 +356,12 @@
       "Noah and the Flood",
       "Wilderness Journey",
       "Basic"
+    ],
+    "options": [
+      "7 days and 7 nights",
+      "30 days and 30 nights",
+      "40 days and 40 nights",
+      "70 days and 70 nights"
     ]
   },
   {
@@ -351,7 +369,7 @@
     "chapter": 8,
     "verseStart": 4,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Noah's ark came to rest on the mountains of ___.",
     "options": [
       "Moriah",
@@ -508,7 +526,7 @@
     "chapter": 11,
     "verseStart": 31,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Abram's family set out from the city of ___ of the Chaldeans.",
     "options": [
       "Nineveh",
@@ -559,10 +577,10 @@
     "chapter": 12,
     "verseStart": 4,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Abram was 75 years old when he left Haran.",
+    "type": "multiple_choice_single",
+    "content": "How old was Abram when he left Haran?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Genesis 12:4 — 'Abram was seventy-five years old when he departed from Haran.'",
     "language": "en",
@@ -571,6 +589,12 @@
       "Genesis",
       "Pentateuch",
       "Intermediate"
+    ],
+    "options": [
+      "60 years old",
+      "75 years old",
+      "85 years old",
+      "100 years old"
     ]
   },
   {
@@ -708,7 +732,7 @@
     "chapter": 17,
     "verseStart": 5,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "God changed Abram's name to ___.",
     "options": [
       "Jacob",
@@ -762,10 +786,10 @@
     "verseStart": 10,
     "verseEnd": 12,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Sarah laughed when she heard the promise that she would bear a son.",
+    "type": "multiple_choice_single",
+    "content": "How did Sarah react when she heard the promise that she would bear a son?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Genesis 18:12 — 'Sarah laughed to herself, saying, After I am worn out, and my lord is old, shall I have pleasure?'",
     "language": "en",
@@ -776,6 +800,12 @@
       "Abraham and Covenant",
       "Covenant",
       "Basic"
+    ],
+    "options": [
+      "She wept",
+      "She laughed to herself",
+      "She shouted in praise",
+      "She stood silent"
     ]
   },
   {
@@ -810,8 +840,8 @@
     "verseStart": 24,
     "verseEnd": 25,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "God destroyed Sodom and Gomorrah with fire and sulfur.",
+    "type": "multiple_choice_single",
+    "content": "How did God destroy Sodom and Gomorrah?",
     "correctAnswer": [
       0
     ],
@@ -822,6 +852,12 @@
       "Genesis",
       "Pentateuch",
       "Basic"
+    ],
+    "options": [
+      "With fire and sulfur",
+      "With an earthquake",
+      "With storm and lightning",
+      "With a plague of locusts"
     ]
   },
   {
@@ -908,7 +944,7 @@
     "chapter": 22,
     "verseStart": 13,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "When Abraham was about to offer Isaac, God provided a ___ instead.",
     "options": [
       "dove",
@@ -1042,10 +1078,10 @@
     "verseStart": 25,
     "verseEnd": 26,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Esau was born before Jacob.",
+    "type": "multiple_choice_single",
+    "content": "Of Isaac's twin sons, who was born first?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Genesis 25:25-26 — 'The first came out red... so they called his name Esau. Afterward his brother came out... and his name was called Jacob.'",
     "language": "en",
@@ -1055,6 +1091,12 @@
       "Pentateuch",
       "Jacob and Israel",
       "Basic"
+    ],
+    "options": [
+      "Jacob",
+      "Esau",
+      "Both at the same moment",
+      "Not specified"
     ]
   },
   {
@@ -1275,7 +1317,7 @@
     "chapter": 32,
     "verseStart": 28,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "After wrestling with the angel, Jacob's name was changed to ___.",
     "options": [
       "Israel",
@@ -1301,10 +1343,10 @@
     "chapter": 33,
     "verseStart": 4,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "When they met again, Esau embraced Jacob and wept.",
+    "type": "multiple_choice_single",
+    "content": "When Esau met Jacob again after many years, what did he do?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Genesis 33:4 — 'But Esau ran to meet him and embraced him and fell on his neck and kissed him, and they wept.'",
     "language": "en",
@@ -1314,6 +1356,12 @@
       "Pentateuch",
       "Jacob and Israel",
       "Basic"
+    ],
+    "options": [
+      "Turned away and went elsewhere",
+      "Attacked Jacob",
+      "Embraced and kissed Jacob's neck; both wept",
+      "Demanded a ransom"
     ]
   },
   {
@@ -1348,10 +1396,10 @@
     "chapter": 35,
     "verseStart": 10,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "God also confirmed the change of Jacob's name to Israel at Bethel.",
+    "type": "multiple_choice_single",
+    "content": "At Bethel, God confirmed Jacob's new name as what?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Genesis 35:10 — 'Your name is Jacob; no longer shall your name be called Jacob, but Israel shall be your name.'",
     "language": "en",
@@ -1361,6 +1409,12 @@
       "Pentateuch",
       "Jacob and Israel",
       "Basic"
+    ],
+    "options": [
+      "Abraham",
+      "Israel",
+      "David",
+      "Joshua"
     ]
   },
   {
@@ -1369,10 +1423,10 @@
     "verseStart": 1,
     "verseEnd": 8,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Esau is the ancestor of the Edomites.",
+    "type": "multiple_choice_single",
+    "content": "Of which nation is Esau the ancestor?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Genesis 36:1 — 'These are the generations of Esau (that is, Edom).' Esau settled in the hill country of Seir and became the ancestor of the Edomites.",
     "language": "en",
@@ -1382,6 +1436,12 @@
       "Pentateuch",
       "Jacob and Israel",
       "Intermediate"
+    ],
+    "options": [
+      "Moab",
+      "Ammon",
+      "Edom",
+      "Philistia"
     ]
   },
   {
@@ -1523,10 +1583,10 @@
     "chapter": 39,
     "verseStart": 20,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Joseph was imprisoned because Potiphar's wife falsely accused him.",
+    "type": "multiple_choice_single",
+    "content": "Why was Joseph thrown into prison in Egypt?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Genesis 39:17-20 — Potiphar's wife falsely accused Joseph of trying to violate her, so Potiphar put Joseph in prison.",
     "language": "en",
@@ -1536,6 +1596,12 @@
       "Pentateuch",
       "Joseph in Egypt",
       "Basic"
+    ],
+    "options": [
+      "He stole from the king",
+      "He was falsely accused by Potiphar's wife",
+      "He plotted rebellion",
+      "He misinterpreted the king's dream"
     ]
   },
   {
@@ -1571,10 +1637,10 @@
     "verseStart": 29,
     "verseEnd": 30,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Pharaoh's dream foretold seven years of plenty followed by seven years of famine.",
+    "type": "multiple_choice_single",
+    "content": "What did Pharaoh's dream foretell would happen in Egypt?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Genesis 41:29-30 — 'There will come seven years of great plenty throughout all the land of Egypt, but after them there will arise seven years of famine.'",
     "language": "en",
@@ -1584,6 +1650,12 @@
       "Pentateuch",
       "Joseph in Egypt",
       "Intermediate"
+    ],
+    "options": [
+      "Seven straight years of war",
+      "Seven years of plenty followed by seven years of famine",
+      "Ten years of blessing",
+      "Two years of drought"
     ]
   },
   {
@@ -1617,8 +1689,8 @@
     "chapter": 42,
     "verseStart": 24,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Joseph kept Reuben as a hostage when his brothers returned to Canaan.",
+    "type": "multiple_choice_single",
+    "content": "When Joseph's brothers returned to Canaan, whom did Joseph keep as hostage?",
     "correctAnswer": [
       1
     ],
@@ -1631,6 +1703,12 @@
       "Joseph in Egypt",
       "Promised Land Canaan",
       "Intermediate"
+    ],
+    "options": [
+      "Reuben",
+      "Simeon",
+      "Levi",
+      "Judah"
     ]
   },
   {
@@ -1665,7 +1743,7 @@
     "chapter": 44,
     "verseStart": 2,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Joseph had his silver ___ hidden in Benjamin's sack of grain.",
     "options": [
       "cup",
@@ -1692,10 +1770,10 @@
     "verseStart": 4,
     "verseEnd": 5,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Joseph rebuked his brothers when he revealed his identity.",
+    "type": "multiple_choice_single",
+    "content": "When Joseph revealed his identity to his brothers, how did he respond?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Genesis 45:5 — 'Do not be distressed or angry with yourselves because you sold me here, for God sent me before you to preserve life.'",
     "language": "en",
@@ -1705,6 +1783,12 @@
       "Pentateuch",
       "Joseph in Egypt",
       "Basic"
+    ],
+    "options": [
+      "Rebuked them harshly",
+      "Sent them away empty-handed",
+      "Told them not to grieve, for God had sent him to preserve life",
+      "Demanded their lives in revenge"
     ]
   },
   {
@@ -1873,7 +1957,7 @@
     "chapter": 50,
     "verseStart": 20,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Joseph said to his brothers: 'You meant evil against me, but ___ meant it for good.'",
     "options": [
       "Pharaoh",

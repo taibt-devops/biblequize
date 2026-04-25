@@ -136,10 +136,10 @@
     "verseStart": 2,
     "verseEnd": 3,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Những người bị bệnh phong hủi phải được đưa ra ngoài trại.",
+    "type": "multiple_choice_single",
+    "content": "Theo Dân Số Ký 5:2-3, người mắc bệnh phong hủi phải được đối xử như thế nào?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Dân Số Ký 5:2-3 — 'Hãy truyền cho dân Y-sơ-ra-ên đuổi ra ngoài trại mọi người bị phong hủi, mọi người bị bệnh lậu, và mọi người bị ô uế vì xác chết.'",
     "language": "vi",
@@ -148,6 +148,12 @@
       "Dân Số Ký",
       "Ngũ Kinh",
       "Cơ bản"
+    ],
+    "options": [
+      "Cách ly trong nhà",
+      "Đưa đến đền thờ",
+      "Đuổi ra ngoài trại",
+      "Chữa lành bằng dầu"
     ]
   },
   {
@@ -395,10 +401,10 @@
     "chapter": 12,
     "verseStart": 10,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Mi-ri-am bị phạt bệnh phong hủi vì nói nghịch Môi-se.",
+    "type": "multiple_choice_single",
+    "content": "Mi-ri-am bị Đức Chúa Trời phạt bằng bệnh gì khi nói nghịch Môi-se?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Dân Số Ký 12:10 — 'Khi đám mây rời khỏi Lều, Mi-ri-am bị phong hủi, trắng như tuyết.'",
     "language": "vi",
@@ -408,6 +414,12 @@
       "Ngũ Kinh",
       "Môi-se",
       "Cơ bản"
+    ],
+    "options": [
+      "Bệnh dịch",
+      "Bệnh phong hủi (trắng như tuyết)",
+      "Bệnh mù",
+      "Bệnh điếc"
     ]
   },
   {
@@ -609,10 +621,10 @@
     "verseStart": 31,
     "verseEnd": 33,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Đất nứt ra nuốt Cô-ra và những người theo hắn.",
+    "type": "multiple_choice_single",
+    "content": "Cô-ra và những người theo hắn bị Đức Chúa Trời phán xét như thế nào?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Dân Số Ký 16:32 — 'Đất hả miệng ra nuốt họ với gia đình, mọi người theo Cô-ra, cùng tất cả tài sản của họ.'",
     "language": "vi",
@@ -621,6 +633,12 @@
       "Dân Số Ký",
       "Ngũ Kinh",
       "Cơ bản"
+    ],
+    "options": [
+      "Bị thiêu chết bằng lửa",
+      "Đất nứt ra nuốt họ với gia đình và tài sản",
+      "Bị bệnh phong",
+      "Bị đuổi khỏi trại"
     ]
   },
   {
@@ -654,7 +672,7 @@
     "chapter": 17,
     "verseStart": 8,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Gậy của A-rôn nảy mầm và ra quả ___.",
     "options": [
       "vả",
@@ -732,10 +750,10 @@
     "chapter": 20,
     "verseStart": 1,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Mi-ri-am qua đời tại Ca-đe.",
+    "type": "multiple_choice_single",
+    "content": "Mi-ri-am qua đời và được chôn tại đâu?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Dân Số Ký 20:1 — 'Toàn thể hội chúng Y-sơ-ra-ên đến hoang mạc Xin vào tháng giêng, và dân chúng ở tại Ca-đe. Mi-ri-am qua đời và được chôn tại đó.'",
     "language": "vi",
@@ -744,6 +762,12 @@
       "Dân Số Ký",
       "Ngũ Kinh",
       "Cơ bản"
+    ],
+    "options": [
+      "Núi Si-na-i",
+      "Bê-tên",
+      "Ca-đe (trong hoang mạc Xin)",
+      "Hếp-rôn"
     ]
   },
   {
@@ -886,10 +910,10 @@
     "chapter": 22,
     "verseStart": 28,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Con lừa của Ba-la-am đã nói tiếng người.",
+    "type": "multiple_choice_single",
+    "content": "Trong Dân Số Ký 22:28, điều lạ lùng gì đã xảy ra với con lừa của Ba-la-am?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Dân Số Ký 22:28 — 'Đức Giê-hô-va mở miệng con lừa và nó nói với Ba-la-am: Tôi đã làm gì cho ông mà ông đánh tôi ba lần?'",
     "language": "vi",
@@ -898,6 +922,12 @@
       "Dân Số Ký",
       "Ngũ Kinh",
       "Cơ bản"
+    ],
+    "options": [
+      "Nó biến thành ngựa",
+      "Nó bay được",
+      "Đức Giê-hô-va mở miệng nó và nó nói tiếng người",
+      "Nó tàng hình"
     ]
   },
   {
@@ -931,7 +961,7 @@
     "chapter": 23,
     "verseStart": 19,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "'Đức Chúa Trời không phải là ___ để nói dối, cũng không phải là con người để hối tiếc.'",
     "options": [
       "thần tượng",
@@ -957,10 +987,10 @@
     "verseStart": 7,
     "verseEnd": 12,
     "difficulty": "hard",
-    "type": "true_false",
-    "content": "Ba-la-am có thể rủa sả dân Y-sơ-ra-ên theo ý muốn của Ba-lác.",
+    "type": "multiple_choice_single",
+    "content": "Ba-la-am có thể rủa sả dân Y-sơ-ra-ên theo ý muốn của vua Ba-lác không?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Dân Số Ký 23:8 — 'Làm sao tôi rủa sả kẻ mà Đức Chúa Trời không rủa sả? Làm sao tôi nguyền rủa kẻ mà Đức Giê-hô-va không nguyền rủa?' Ba-la-am chỉ có thể nói điều Đức Chúa Trời đặt trong miệng ông.",
     "language": "vi",
@@ -970,6 +1000,12 @@
       "Ngũ Kinh",
       "Gia-cốp và Y-sơ-ra-ên",
       "Nâng cao"
+    ],
+    "options": [
+      "Có, dễ dàng",
+      "Có, sau khi dâng nhiều của lễ",
+      "Không — chỉ có thể nói điều Đức Chúa Trời đặt vào miệng ông",
+      "Có, nhưng chỉ một phần"
     ]
   },
   {
@@ -1083,10 +1119,10 @@
     "verseStart": 64,
     "verseEnd": 65,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Trong cuộc kiểm tra lần hai, không còn ai sống từ cuộc kiểm tra lần đầu ngoại trừ Ca-lép và Giô-suê.",
+    "type": "multiple_choice_single",
+    "content": "Trong cuộc kiểm tra dân số lần thứ hai (Dân Số Ký 26), ai trong số những người đã được kiểm tra lần đầu vẫn còn sống?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Dân Số Ký 26:64-65 — 'Trong số những người nầy không có ai trong những người mà Môi-se và A-rôn đã kiểm tra... ngoại trừ Ca-lép con Giê-phu-nê, và Giô-suê con Nun.'",
     "language": "vi",
@@ -1095,6 +1131,12 @@
       "Dân Số Ký",
       "Ngũ Kinh",
       "Trung cấp"
+    ],
+    "options": [
+      "Chỉ Môi-se và A-rôn",
+      "Chỉ các trưởng lão",
+      "Chỉ Ca-lép và Giô-suê",
+      "Khoảng một nửa thế hệ"
     ]
   },
   {
@@ -1185,10 +1227,10 @@
     "verseStart": 16,
     "verseEnd": 17,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Lễ Vượt Qua được giữ vào ngày mười bốn tháng giêng.",
+    "type": "multiple_choice_single",
+    "content": "Lễ Vượt Qua được giữ vào ngày nào theo Dân Số Ký 28?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Dân Số Ký 28:16 — 'Ngày mười bốn tháng giêng là Lễ Vượt Qua của Đức Giê-hô-va.'",
     "language": "vi",
@@ -1197,6 +1239,12 @@
       "Dân Số Ký",
       "Ngũ Kinh",
       "Cơ bản"
+    ],
+    "options": [
+      "Ngày 1 tháng giêng",
+      "Ngày 14 tháng giêng",
+      "Ngày 15 tháng giêng",
+      "Ngày 14 tháng bảy"
     ]
   },
   {
@@ -1229,10 +1277,10 @@
     "chapter": 30,
     "verseStart": 2,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Khi một người nam hứa nguyện với Đức Giê-hô-va, người ấy không được thất hứa.",
+    "type": "multiple_choice_single",
+    "content": "Theo Dân Số Ký 30:2, khi một người nam hứa nguyện với Đức Giê-hô-va, người ấy phải làm gì?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Dân Số Ký 30:2 — 'Khi một người hứa nguyện với Đức Giê-hô-va, hoặc thề buộc mình bằng một lời thề, người ấy không được thất hứa, phải làm theo mọi điều đã nói.'",
     "language": "vi",
@@ -1241,6 +1289,12 @@
       "Dân Số Ký",
       "Ngũ Kinh",
       "Cơ bản"
+    ],
+    "options": [
+      "Có thể thay đổi nếu khó",
+      "Có thể xin tha",
+      "Không được thất hứa — phải làm theo mọi điều đã nói",
+      "Phải hứa lại sau bảy ngày"
     ]
   },
   {
@@ -1302,10 +1356,10 @@
     "chapter": 31,
     "verseStart": 8,
     "difficulty": "hard",
-    "type": "true_false",
-    "content": "Ba-la-am bị giết trong trận chiến với dân Ma-đi-an.",
+    "type": "multiple_choice_single",
+    "content": "Trong trận chiến với dân Ma-đi-an, Ba-la-am đã chịu kết cục gì?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Dân Số Ký 31:8 — 'Họ cũng giết Ba-la-am, con trai Bê-ô, bằng gươm.' Ba-la-am chết cùng với năm vua Ma-đi-an.",
     "language": "vi",
@@ -1314,6 +1368,12 @@
       "Dân Số Ký",
       "Ngũ Kinh",
       "Nâng cao"
+    ],
+    "options": [
+      "Trốn thoát an toàn",
+      "Trở về với vua Ba-lác",
+      "Bị giết bằng gươm cùng năm vua Ma-đi-an",
+      "Được Y-sơ-ra-ên tha cho"
     ]
   },
   {
@@ -1375,10 +1435,10 @@
     "verseStart": 1,
     "verseEnd": 2,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Dân Số Ký chương 33 ghi lại các chặng hành trình của dân Y-sơ-ra-ên từ Ai Cập.",
+    "type": "multiple_choice_single",
+    "content": "Dân Số Ký chương 33 ghi lại nội dung gì?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Dân Số Ký 33:1-2 — 'Đây là các chặng hành trình của dân Y-sơ-ra-ên khi họ ra khỏi Ai Cập... Theo lệnh Đức Giê-hô-va, Môi-se ghi chép các điểm xuất phát theo từng chặng đường.'",
     "language": "vi",
@@ -1389,6 +1449,12 @@
       "Gia-cốp và Y-sơ-ra-ên",
       "Giô-sép tại Ai Cập",
       "Cơ bản"
+    ],
+    "options": [
+      "Luật lệ thờ phượng",
+      "Các chặng hành trình của dân Y-sơ-ra-ên từ Ai Cập",
+      "Gia phả các chi phái",
+      "Tế lễ hằng ngày"
     ]
   },
   {
@@ -1397,7 +1463,7 @@
     "verseStart": 52,
     "verseEnd": 53,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Đức Giê-hô-va bảo dân Y-sơ-ra-ên phải ___ tất cả dân cư trong xứ Ca-na-an khi vào chiếm đất.",
     "options": [
       "kết giao ước với",
@@ -1452,7 +1518,7 @@
     "verseStart": 17,
     "verseEnd": 18,
     "difficulty": "hard",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Hai người được giao nhiệm vụ chia đất Ca-na-an cho các chi phái là thầy tế lễ Ê-lê-a-sa và ___.",
     "options": [
       "Môi-se con Am-ram",
@@ -1530,7 +1596,7 @@
     "chapter": 35,
     "verseStart": 33,
     "difficulty": "hard",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "'Không có gì chuộc được tội ___ cho đất, ngoại trừ huyết của kẻ đã làm đổ máu.'",
     "options": [
       "gian ác",
@@ -1584,10 +1650,10 @@
     "verseStart": 10,
     "verseEnd": 12,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Các con gái của Xê-lô-phát đã vâng lời và lấy chồng trong chi phái Ma-na-se.",
+    "type": "multiple_choice_single",
+    "content": "Các con gái của Xê-lô-phát đã lấy chồng trong chi phái nào, theo Đức Giê-hô-va truyền dạy?",
     "correctAnswer": [
-      0
+      3
     ],
     "explanation": "Dân Số Ký 36:10-12 — 'Các con gái Xê-lô-phát đã làm theo điều Đức Giê-hô-va phán... Họ lấy chồng trong các thị tộc của con cháu Ma-na-se.'",
     "language": "vi",
@@ -1598,6 +1664,12 @@
       "Xuất hành khỏi Ai Cập",
       "Kiểm tra dân số",
       "Cơ bản"
+    ],
+    "options": [
+      "Bên-gia-min",
+      "Giu-đa",
+      "Lê-vi",
+      "Ma-na-se (chi phái cha mình)"
     ]
   },
   {
@@ -1605,10 +1677,10 @@
     "chapter": 6,
     "verseStart": 5,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Người Na-xi-rê được phép cắt tóc trong thời gian hứa nguyện.",
+    "type": "multiple_choice_single",
+    "content": "Người Na-xi-rê có được cắt tóc trong thời gian hứa nguyện không?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Dân Số Ký 6:5 — 'Suốt thời gian hứa nguyện, không dao cạo nào được đụng đến đầu người ấy. Cho đến khi mãn kỳ biệt riêng cho Đức Giê-hô-va, người ấy là thánh và phải để tóc mọc dài.'",
     "language": "vi",
@@ -1617,6 +1689,12 @@
       "Dân Số Ký",
       "Ngũ Kinh",
       "Trung cấp"
+    ],
+    "options": [
+      "Có, mỗi tháng một lần",
+      "Có, vào ngày Sa-bát",
+      "Không — không dao cạo nào được đụng đến đầu, phải để tóc mọc dài",
+      "Chỉ cắt khi có lệnh thầy tế lễ"
     ]
   },
   {
@@ -1624,7 +1702,7 @@
     "chapter": 12,
     "verseStart": 3,
     "difficulty": "hard",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Kinh Thánh mô tả Môi-se là người ___ hơn mọi người trên mặt đất.",
     "options": [
       "công chính",
@@ -1730,10 +1808,10 @@
     "verseStart": 14,
     "verseEnd": 21,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Vua Ê-đôm cho phép dân Y-sơ-ra-ên đi qua lãnh thổ mình.",
+    "type": "multiple_choice_single",
+    "content": "Vua Ê-đôm phản ứng thế nào khi Y-sơ-ra-ên xin đi qua lãnh thổ?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Dân Số Ký 20:21 — 'Ê-đôm từ chối cho Y-sơ-ra-ên đi qua lãnh thổ mình. Vì vậy, Y-sơ-ra-ên phải đi vòng.' Dù Ê-đôm là hậu duệ của Ê-sau, anh của Gia-cốp.",
     "language": "vi",
@@ -1743,6 +1821,12 @@
       "Ngũ Kinh",
       "Gia-cốp và Y-sơ-ra-ên",
       "Trung cấp"
+    ],
+    "options": [
+      "Cho phép và cung cấp lương thực",
+      "Cho phép có điều kiện",
+      "Từ chối, buộc Y-sơ-ra-ên phải đi vòng",
+      "Liên minh với Y-sơ-ra-ên"
     ]
   },
   {
@@ -1777,7 +1861,7 @@
     "chapter": 24,
     "verseStart": 5,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Ba-la-am thốt lên: 'Hỡi Gia-cốp, ___ ngươi đẹp đẽ thay! Hỡi Y-sơ-ra-ên, nơi ở ngươi xinh tốt biết bao!'",
     "options": [
       "các thành",
@@ -1804,10 +1888,10 @@
     "verseStart": 84,
     "verseEnd": 86,
     "difficulty": "hard",
-    "type": "true_false",
-    "content": "Lễ cung hiến bàn thờ kéo dài mười hai ngày, mỗi ngày một nhà lãnh đạo dâng lễ vật.",
+    "type": "multiple_choice_single",
+    "content": "Lễ cung hiến bàn thờ trong Dân Số Ký 7 kéo dài bao nhiêu ngày?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Dân Số Ký 7:84 — 'Đây là lễ vật cung hiến bàn thờ trong ngày nó được xức dầu, do các nhà lãnh đạo Y-sơ-ra-ên dâng.' Mười hai nhà lãnh đạo dâng trong mười hai ngày.",
     "language": "vi",
@@ -1817,6 +1901,12 @@
       "Ngũ Kinh",
       "Đền tạm và thờ phượng",
       "Nâng cao"
+    ],
+    "options": [
+      "Bảy ngày",
+      "Mười hai ngày — mỗi ngày một nhà lãnh đạo dâng lễ vật",
+      "Bốn mươi ngày",
+      "Một ngày"
     ]
   },
   {

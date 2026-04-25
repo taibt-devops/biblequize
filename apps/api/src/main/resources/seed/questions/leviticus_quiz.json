@@ -83,8 +83,8 @@
     "chapter": 2,
     "verseStart": 11,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Tế lễ chay dâng cho Đức Giê-hô-va được phép có men.",
+    "type": "multiple_choice_single",
+    "content": "Tế lễ chay dâng cho Đức Giê-hô-va có được pha men không?",
     "correctAnswer": [
       1
     ],
@@ -96,6 +96,12 @@
       "Ngũ Kinh",
       "Tế lễ và nghi lễ",
       "Trung cấp"
+    ],
+    "options": [
+      "Có, nếu là dịp đặc biệt",
+      "Không bao giờ — không được pha men hay mật ong",
+      "Tùy thầy tế lễ quyết định",
+      "Chỉ pha một ít"
     ]
   },
   {
@@ -103,7 +109,7 @@
     "chapter": 2,
     "verseStart": 13,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Mọi lễ vật chay đều phải nêm ___ vào.",
     "options": [
       "đường",
@@ -128,10 +134,10 @@
     "chapter": 3,
     "verseStart": 1,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Trong tế lễ bình an, con vật dâng có thể là đực hoặc cái.",
+    "type": "multiple_choice_single",
+    "content": "Trong tế lễ bình an, con vật dâng có thể là loại nào?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Lê-vi Ký 3:1 — 'Nếu lễ vật là tế lễ bình an... dù đực hay cái, phải dâng con vật không tì vết trước mặt Đức Giê-hô-va.'",
     "language": "vi",
@@ -141,6 +147,12 @@
       "Ngũ Kinh",
       "Tế lễ và nghi lễ",
       "Cơ bản"
+    ],
+    "options": [
+      "Chỉ con đực",
+      "Chỉ con cái",
+      "Đực hoặc cái, miễn là không tì vết",
+      "Phải là con đầu lòng"
     ]
   },
   {
@@ -285,10 +297,10 @@
     "chapter": 5,
     "verseStart": 16,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Khi phạm tội với vật thánh, phải bồi thường thêm một phần năm giá trị.",
+    "type": "multiple_choice_single",
+    "content": "Khi phạm tội với vật thánh, người ấy phải bồi thường thêm bao nhiêu giá trị?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Lê-vi Ký 5:16 — 'Người ấy phải bồi thường những gì đã thiếu sót đối với vật thánh, cộng thêm một phần năm giá trị của nó.'",
     "language": "vi",
@@ -298,6 +310,12 @@
       "Ngũ Kinh",
       "Tội lỗi và Sa ngã",
       "Trung cấp"
+    ],
+    "options": [
+      "Một phần mười",
+      "Một phần năm",
+      "Một phần ba",
+      "Gấp đôi giá trị"
     ]
   },
   {
@@ -414,10 +432,10 @@
     "verseStart": 26,
     "verseEnd": 27,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Dân Y-sơ-ra-ên bị cấm tuyệt đối không được ăn huyết.",
+    "type": "multiple_choice_single",
+    "content": "Theo Lê-vi Ký 7:26-27, dân Y-sơ-ra-ên có quy định gì về việc ăn huyết?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Lê-vi Ký 7:26-27 — 'Dù ở đâu, các ngươi cũng không được ăn huyết của bất cứ loài chim hay loài thú nào. Ai ăn bất cứ thứ huyết nào sẽ bị khai trừ khỏi dân mình.'",
     "language": "vi",
@@ -428,6 +446,12 @@
       "Gia-cốp và Y-sơ-ra-ên",
       "Tế lễ và nghi lễ",
       "Cơ bản"
+    ],
+    "options": [
+      "Được ăn huyết của mọi loài",
+      "Chỉ cấm huyết loài chim",
+      "Bị cấm tuyệt đối — ai ăn sẽ bị khai trừ",
+      "Chỉ cấm trong ngày Sa-bát"
     ]
   },
   {
@@ -436,10 +460,10 @@
     "verseStart": 6,
     "verseEnd": 9,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Trước khi được phong chức, A-rôn và các con trai phải tắm rửa bằng nước.",
+    "type": "multiple_choice_single",
+    "content": "Bước đầu tiên trong lễ phong chức A-rôn và các con trai là gì?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Lê-vi Ký 8:6 — 'Môi-se đem A-rôn và các con trai người đến gần, rồi tắm rửa họ bằng nước.' Đây là bước đầu tiên trong lễ phong chức.",
     "language": "vi",
@@ -449,6 +473,12 @@
       "Ngũ Kinh",
       "Tế lễ và nghi lễ",
       "Cơ bản"
+    ],
+    "options": [
+      "Xức dầu",
+      "Tắm rửa bằng nước",
+      "Mặc áo lễ",
+      "Dâng tế lễ thiêu"
     ]
   },
   {
@@ -535,10 +565,10 @@
     "chapter": 9,
     "verseStart": 24,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Khi thấy lửa từ Đức Giê-hô-va loè ra, toàn dân reo hò và sấp mặt xuống đất.",
+    "type": "multiple_choice_single",
+    "content": "Khi lửa từ Đức Giê-hô-va loè ra thiêu đốt tế lễ, toàn dân làm gì?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Lê-vi Ký 9:24 — 'Toàn dân thấy vậy thì reo hò và sấp mặt xuống đất.'",
     "language": "vi",
@@ -547,6 +577,12 @@
       "Lê-vi Ký",
       "Ngũ Kinh",
       "Cơ bản"
+    ],
+    "options": [
+      "Chạy trốn",
+      "Đứng im sợ hãi",
+      "Reo hò và sấp mặt xuống đất",
+      "Hát ngợi khen luôn"
     ]
   },
   {
@@ -581,7 +617,7 @@
     "chapter": 10,
     "verseStart": 2,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Na-đáp và A-bi-hu bị ___ từ Đức Giê-hô-va thiêu chết vì dâng lửa lạ.",
     "options": [
       "lửa",
@@ -632,10 +668,10 @@
     "verseStart": 7,
     "verseEnd": 8,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Con heo bị xem là ô uế vì nó không nhai lại dù có móng chẻ.",
+    "type": "multiple_choice_single",
+    "content": "Vì sao con heo bị xem là ô uế dưới luật Lê-vi Ký?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Lê-vi Ký 11:7 — 'Con heo vì nó có móng chẻ ra làm hai nhưng không nhai lại, nên là vật ô uế đối với các ngươi.'",
     "language": "vi",
@@ -644,6 +680,12 @@
       "Lê-vi Ký",
       "Ngũ Kinh",
       "Cơ bản"
+    ],
+    "options": [
+      "Vì sống trong bùn",
+      "Vì có móng chẻ nhưng không nhai lại",
+      "Vì lông cứng và đen",
+      "Vì kêu to"
     ]
   },
   {
@@ -834,10 +876,10 @@
     "verseStart": 34,
     "verseEnd": 35,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Lê-vi Ký quy định cách xử lý bệnh phong chỉ cho người, không cho nhà cửa.",
+    "type": "multiple_choice_single",
+    "content": "Lê-vi Ký quy định luật về bệnh phong áp dụng cho gì?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Lê-vi Ký 14:34-35 — 'Khi các ngươi vào xứ Ca-na-an... nếu Ta giáng bệnh phong cho một căn nhà... chủ nhà phải đến báo cho thầy tế lễ.' Bệnh phong cũng áp dụng cho nhà cửa.",
     "language": "vi",
@@ -846,6 +888,12 @@
       "Lê-vi Ký",
       "Ngũ Kinh",
       "Trung cấp"
+    ],
+    "options": [
+      "Chỉ con người",
+      "Chỉ thú vật",
+      "Cả con người lẫn nhà cửa",
+      "Chỉ y phục"
     ]
   },
   {
@@ -987,7 +1035,7 @@
     "verseStart": 21,
     "verseEnd": 22,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "A-rôn đặt hai tay trên đầu con dê sống và xưng mọi ___ của dân Y-sơ-ra-ên lên đầu nó.",
     "options": [
       "lời cầu nguyện",
@@ -1014,7 +1062,7 @@
     "chapter": 16,
     "verseStart": 29,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Ngày Lễ Chuộc Tội được tổ chức vào ngày mười tháng ___.",
     "options": [
       "bảy",
@@ -1065,10 +1113,10 @@
     "chapter": 17,
     "verseStart": 11,
     "difficulty": "hard",
-    "type": "true_false",
-    "content": "Lê-vi Ký 17:11 dạy rằng huyết dùng để chuộc tội vì sự sống ở trong huyết — nguyên tắc này được Hê-bơ-rơ 9:22 nhắc lại.",
+    "type": "multiple_choice_single",
+    "content": "Theo Lê-vi Ký 17:11, sự sống của xác thịt ở đâu, và huyết được dùng làm gì?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Lê-vi Ký 17:11 — 'Sự sống của xác thịt ở trong huyết... huyết chuộc tội cho linh hồn.' Hê-bơ-rơ 9:22 xác nhận: 'Không đổ huyết thì không có sự tha tội.'",
     "language": "vi",
@@ -1079,6 +1127,12 @@
       "Tội lỗi và Sa ngã",
       "Tế lễ và nghi lễ",
       "Nâng cao"
+    ],
+    "options": [
+      "Trong xương / để hiến tế động vật",
+      "Trong huyết / để chuộc tội cho linh hồn trên bàn thờ",
+      "Trong tâm trí / để dâng cảm tạ",
+      "Trong hơi thở / để ngợi khen"
     ]
   },
   {
@@ -1139,7 +1193,7 @@
     "chapter": 19,
     "verseStart": 2,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Hãy nên thánh, vì Ta, Giê-hô-va Đức Chúa Trời các ngươi, là ___.",
     "options": [
       "công bình",
@@ -1191,7 +1245,7 @@
     "chapter": 19,
     "verseStart": 18,
     "difficulty": "easy",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Hãy yêu ___ như chính mình.",
     "options": [
       "cha mẹ",
@@ -1216,10 +1270,10 @@
     "chapter": 19,
     "verseStart": 28,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Lê-vi Ký 19 cấm xăm hình trên thân thể.",
+    "type": "multiple_choice_single",
+    "content": "Lê-vi Ký 19:28 cấm dân Y-sơ-ra-ên làm gì trên thân thể?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Lê-vi Ký 19:28 — 'Không được xăm vết gì trên mình. Ta là Đức Giê-hô-va.' Lệnh cấm này liên quan đến các nghi thức ngoại giáo.",
     "language": "vi",
@@ -1228,6 +1282,12 @@
       "Lê-vi Ký",
       "Ngũ Kinh",
       "Trung cấp"
+    ],
+    "options": [
+      "Cắt tóc",
+      "Xăm vết / xăm hình",
+      "Tắm trong sông",
+      "Đeo nhẫn"
     ]
   },
   {
@@ -1262,10 +1322,10 @@
     "verseStart": 7,
     "verseEnd": 8,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Đức Giê-hô-va phán: 'Hãy tự biệt riêng ra thánh, vì Ta là Giê-hô-va Đức Chúa Trời các ngươi.'",
+    "type": "multiple_choice_single",
+    "content": "Lê-vi Ký 20:7 truyền lệnh nào cho dân Y-sơ-ra-ên?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Lê-vi Ký 20:7 — 'Vậy hãy tự biệt riêng ra thánh, vì Ta là Giê-hô-va Đức Chúa Trời các ngươi.'",
     "language": "vi",
@@ -1274,6 +1334,12 @@
       "Lê-vi Ký",
       "Ngũ Kinh",
       "Cơ bản"
+    ],
+    "options": [
+      "Hãy đến đền thờ mỗi tuần",
+      "Hãy tự biệt riêng ra thánh, vì Ta là Đức Chúa Trời các ngươi",
+      "Hãy dâng nhiều của lễ",
+      "Hãy đi truyền giáo cho dân ngoại"
     ]
   },
   {
@@ -1362,10 +1428,10 @@
     "verseStart": 32,
     "verseEnd": 33,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Đức Giê-hô-va phán: 'Đừng làm ô danh thánh Ta; Ta phải được tôn thánh giữa dân Y-sơ-ra-ên.'",
+    "type": "multiple_choice_single",
+    "content": "Đức Giê-hô-va dạy điều gì về danh thánh của Ngài trong Lê-vi Ký 22:32?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Lê-vi Ký 22:32 — 'Đừng làm ô danh thánh Ta; Ta phải được tôn thánh giữa dân Y-sơ-ra-ên. Ta là Đức Giê-hô-va, Đấng thánh hoá các ngươi.'",
     "language": "vi",
@@ -1375,6 +1441,12 @@
       "Ngũ Kinh",
       "Gia-cốp và Y-sơ-ra-ên",
       "Cơ bản"
+    ],
+    "options": [
+      "Chỉ dùng trong đền thờ",
+      "Cấm gọi danh",
+      "Đừng làm ô danh thánh; Ta phải được tôn thánh giữa dân Y-sơ-ra-ên",
+      "Phải khắc lên đá"
     ]
   },
   {
@@ -1460,7 +1532,7 @@
     "chapter": 23,
     "verseStart": 24,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Ngày mồng một tháng bảy là ngày nghỉ, ngày kỷ niệm, được báo bằng tiếng ___.",
     "options": [
       "reo hò",
@@ -1565,10 +1637,10 @@
     "chapter": 24,
     "verseStart": 16,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Ai phạm thượng danh Đức Giê-hô-va phải bị xử tử.",
+    "type": "multiple_choice_single",
+    "content": "Hình phạt cho ai phạm thượng danh Đức Giê-hô-va là gì?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Lê-vi Ký 24:16 — 'Kẻ nào phạm thượng danh Đức Giê-hô-va phải bị xử tử; cả hội chúng phải ném đá người ấy.'",
     "language": "vi",
@@ -1577,6 +1649,12 @@
       "Lê-vi Ký",
       "Ngũ Kinh",
       "Cơ bản"
+    ],
+    "options": [
+      "Đuổi khỏi trại bảy ngày",
+      "Phải dâng tế lễ chuộc tội",
+      "Bị xử tử — cả hội chúng phải ném đá",
+      "Phạt tiền"
     ]
   },
   {
@@ -1687,10 +1765,10 @@
     "verseStart": 35,
     "verseEnd": 37,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "Người Y-sơ-ra-ên được phép cho anh em mình vay tiền lấy lãi.",
+    "type": "multiple_choice_single",
+    "content": "Theo Lê-vi Ký 25:36-37, người Y-sơ-ra-ên có được cho anh em mình vay tiền lấy lãi không?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Lê-vi Ký 25:36-37 — 'Không được lấy lời hay lãi từ người ấy... Không được cho người ấy vay tiền lấy lời, cũng không được bán thức ăn cho người ấy để lấy lãi.'",
     "language": "vi",
@@ -1700,6 +1778,12 @@
       "Ngũ Kinh",
       "Gia-cốp và Y-sơ-ra-ên",
       "Trung cấp"
+    ],
+    "options": [
+      "Có, miễn là lãi nhỏ",
+      "Có, nếu bằng văn tự",
+      "Không được lấy lời hay lãi từ anh em mình",
+      "Chỉ được trong năm hạn hán"
     ]
   },
   {
@@ -1736,7 +1820,7 @@
     "verseStart": 11,
     "verseEnd": 12,
     "difficulty": "hard",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Ta sẽ đặt Đền Tạm giữa các ngươi... Ta sẽ đi giữa các ngươi, làm ___ các ngươi, và các ngươi sẽ làm dân Ta.",
     "options": [
       "vua",
@@ -1844,10 +1928,10 @@
     "verseStart": 28,
     "verseEnd": 29,
     "difficulty": "hard",
-    "type": "true_false",
-    "content": "Vật gì đã hiến dâng cho Đức Giê-hô-va (chê-rem) thì có thể chuộc lại bằng tiền.",
+    "type": "multiple_choice_single",
+    "content": "Vật được hiến dâng trọn cho Đức Giê-hô-va (chê-rem) có thể chuộc lại không?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Lê-vi Ký 27:28 — 'Tuy nhiên, bất cứ vật gì một người đã hiến dâng trọn cho Đức Giê-hô-va... thì không được bán cũng không được chuộc; mọi vật hiến dâng trọn đều rất thánh cho Đức Giê-hô-va.'",
     "language": "vi",
@@ -1856,6 +1940,12 @@
       "Lê-vi Ký",
       "Ngũ Kinh",
       "Nâng cao"
+    ],
+    "options": [
+      "Có, bằng tiền bạc gấp đôi",
+      "Có, bằng dâng vật khác",
+      "Không — không được bán hoặc chuộc; rất thánh cho Đức Giê-hô-va",
+      "Tùy thầy tế lễ thượng phẩm quyết định"
     ]
   },
   {

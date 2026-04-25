@@ -136,10 +136,10 @@
     "verseStart": 2,
     "verseEnd": 3,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Lepers were to be sent outside the camp.",
+    "type": "multiple_choice_single",
+    "content": "According to Numbers 5:2-3, how were lepers to be treated?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Numbers 5:2-3 — 'Command the people of Israel that they put out of the camp everyone who is leprous or has a discharge, and everyone who is unclean through contact with the dead.'",
     "language": "en",
@@ -148,6 +148,12 @@
       "Numbers",
       "Pentateuch",
       "Basic"
+    ],
+    "options": [
+      "Quarantined at home",
+      "Brought to the temple",
+      "Sent outside the camp",
+      "Healed with oil"
     ]
   },
   {
@@ -395,10 +401,10 @@
     "chapter": 12,
     "verseStart": 10,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Miriam was struck with leprosy for speaking against Moses.",
+    "type": "multiple_choice_single",
+    "content": "What disease did God strike Miriam with when she spoke against Moses?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Numbers 12:10 — 'When the cloud removed from over the tent, behold, Miriam was leprous, like snow.'",
     "language": "en",
@@ -408,6 +414,12 @@
       "Pentateuch",
       "Moses",
       "Basic"
+    ],
+    "options": [
+      "A plague",
+      "Leprosy (white as snow)",
+      "Blindness",
+      "Deafness"
     ]
   },
   {
@@ -609,10 +621,10 @@
     "verseStart": 31,
     "verseEnd": 33,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "The earth opened and swallowed Korah and his followers.",
+    "type": "multiple_choice_single",
+    "content": "How did God judge Korah and his followers?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Numbers 16:32 — 'And the earth opened its mouth and swallowed them up, with their households and all the people who belonged to Korah and all their goods.'",
     "language": "en",
@@ -621,6 +633,12 @@
       "Numbers",
       "Pentateuch",
       "Basic"
+    ],
+    "options": [
+      "They were burned by fire",
+      "The earth opened and swallowed them with their households and goods",
+      "They became leprous",
+      "They were driven from camp"
     ]
   },
   {
@@ -654,7 +672,7 @@
     "chapter": 17,
     "verseStart": 8,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Aaron's staff budded and bore ___.",
     "options": [
       "figs",
@@ -732,10 +750,10 @@
     "chapter": 20,
     "verseStart": 1,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Miriam died at Kadesh.",
+    "type": "multiple_choice_single",
+    "content": "Where did Miriam die and where was she buried?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Numbers 20:1 — 'And the people of Israel, the whole congregation, came into the wilderness of Zin in the first month, and the people stayed in Kadesh. And Miriam died there and was buried there.'",
     "language": "en",
@@ -744,6 +762,12 @@
       "Numbers",
       "Pentateuch",
       "Basic"
+    ],
+    "options": [
+      "Mount Sinai",
+      "Bethel",
+      "Kadesh (in the wilderness of Zin)",
+      "Hebron"
     ]
   },
   {
@@ -886,10 +910,10 @@
     "chapter": 22,
     "verseStart": 28,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Balaam's donkey spoke with a human voice.",
+    "type": "multiple_choice_single",
+    "content": "In Numbers 22:28, what miraculous thing happened to Balaam's donkey?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Numbers 22:28 — 'Then the LORD opened the mouth of the donkey, and she said to Balaam, What have I done to you, that you have struck me these three times?'",
     "language": "en",
@@ -898,6 +922,12 @@
       "Numbers",
       "Pentateuch",
       "Basic"
+    ],
+    "options": [
+      "It turned into a horse",
+      "It could fly",
+      "The LORD opened its mouth and it spoke human words",
+      "It became invisible"
     ]
   },
   {
@@ -931,7 +961,7 @@
     "chapter": 23,
     "verseStart": 19,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "'God is not ___ that he should lie, or a son of man, that he should change his mind.'",
     "options": [
       "an idol",
@@ -957,10 +987,10 @@
     "verseStart": 7,
     "verseEnd": 12,
     "difficulty": "hard",
-    "type": "true_false",
-    "content": "Balaam was able to curse Israel as Balak wished.",
+    "type": "multiple_choice_single",
+    "content": "Could Balaam curse Israel as King Balak wished?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Numbers 23:8 — 'How can I curse whom God has not cursed? How can I denounce whom the LORD has not denounced?' Balaam could only speak what God put in his mouth.",
     "language": "en",
@@ -970,6 +1000,12 @@
       "Pentateuch",
       "Jacob and Israel",
       "Advanced"
+    ],
+    "options": [
+      "Yes, easily",
+      "Yes, after many sacrifices",
+      "No — he could only speak what God put in his mouth",
+      "Partially"
     ]
   },
   {
@@ -1083,10 +1119,10 @@
     "verseStart": 64,
     "verseEnd": 65,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "In the second census, no one survived from the first census except Caleb and Joshua.",
+    "type": "multiple_choice_single",
+    "content": "In the second census (Numbers 26), who from the first census were still alive?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Numbers 26:64-65 — 'But among these there was not one of those listed by Moses and Aaron the priest... Not one of them was left, except Caleb the son of Jephunneh and Joshua the son of Nun.'",
     "language": "en",
@@ -1095,6 +1131,12 @@
       "Numbers",
       "Pentateuch",
       "Intermediate"
+    ],
+    "options": [
+      "Only Moses and Aaron",
+      "Only the elders",
+      "Only Caleb and Joshua",
+      "About half the generation"
     ]
   },
   {
@@ -1185,10 +1227,10 @@
     "verseStart": 16,
     "verseEnd": 17,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "The Passover is kept on the fourteenth day of the first month.",
+    "type": "multiple_choice_single",
+    "content": "On what day was the Passover kept according to Numbers 28?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Numbers 28:16 — 'On the fourteenth day of the first month is the LORD's Passover.'",
     "language": "en",
@@ -1197,6 +1239,12 @@
       "Numbers",
       "Pentateuch",
       "Basic"
+    ],
+    "options": [
+      "The 1st of the first month",
+      "The 14th of the first month",
+      "The 15th of the first month",
+      "The 14th of the seventh month"
     ]
   },
   {
@@ -1229,10 +1277,10 @@
     "chapter": 30,
     "verseStart": 2,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "When a man vows a vow to the LORD, he must not break his word.",
+    "type": "multiple_choice_single",
+    "content": "According to Numbers 30:2, when a man vows a vow to the LORD, what must he do?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Numbers 30:2 — 'If a man vows a vow to the LORD, or swears an oath to bind himself by a pledge, he shall not break his word. He shall do according to all that proceeds out of his mouth.'",
     "language": "en",
@@ -1241,6 +1289,12 @@
       "Numbers",
       "Pentateuch",
       "Basic"
+    ],
+    "options": [
+      "He may change it if hard",
+      "He may seek release",
+      "He must not break his word — he must do all he has said",
+      "He must renew after seven days"
     ]
   },
   {
@@ -1302,10 +1356,10 @@
     "chapter": 31,
     "verseStart": 8,
     "difficulty": "hard",
-    "type": "true_false",
-    "content": "Balaam was killed in the battle with the Midianites.",
+    "type": "multiple_choice_single",
+    "content": "In the battle with Midian, what was Balaam's fate?",
     "correctAnswer": [
-      0
+      2
     ],
     "explanation": "Numbers 31:8 — 'They also killed Balaam the son of Beor with the sword.' Balaam died with the five kings of Midian.",
     "language": "en",
@@ -1314,6 +1368,12 @@
       "Numbers",
       "Pentateuch",
       "Advanced"
+    ],
+    "options": [
+      "He escaped safely",
+      "He returned to King Balak",
+      "He was killed by the sword along with the five kings of Midian",
+      "Israel spared him"
     ]
   },
   {
@@ -1375,10 +1435,10 @@
     "verseStart": 1,
     "verseEnd": 2,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "Numbers chapter 33 records the stages of Israel's journey from Egypt.",
+    "type": "multiple_choice_single",
+    "content": "What does Numbers chapter 33 record?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Numbers 33:1-2 — 'These are the stages of the people of Israel, when they went out of the land of Egypt... Moses wrote down their starting places, stage by stage, by command of the LORD.'",
     "language": "en",
@@ -1389,6 +1449,12 @@
       "Jacob and Israel",
       "Joseph in Egypt",
       "Basic"
+    ],
+    "options": [
+      "Worship laws",
+      "The stages of Israel's journey from Egypt",
+      "Tribal genealogies",
+      "Daily sacrifices"
     ]
   },
   {
@@ -1397,7 +1463,7 @@
     "verseStart": 52,
     "verseEnd": 53,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "The LORD told Israel to ___ all the inhabitants of Canaan when they entered the land.",
     "options": [
       "make a covenant with",
@@ -1452,7 +1518,7 @@
     "verseStart": 17,
     "verseEnd": 18,
     "difficulty": "hard",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "The two men assigned to divide Canaan among the tribes are the priest Eleazar and ___.",
     "options": [
       "Moses son of Amram",
@@ -1530,7 +1596,7 @@
     "chapter": 35,
     "verseStart": 33,
     "difficulty": "hard",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "'No atonement can be made for the land for the ___ that is shed in it, except by the blood of the one who shed it.'",
     "options": [
       "evil",
@@ -1584,10 +1650,10 @@
     "verseStart": 10,
     "verseEnd": 12,
     "difficulty": "easy",
-    "type": "true_false",
-    "content": "The daughters of Zelophehad obeyed and married within the tribe of Manasseh.",
+    "type": "multiple_choice_single",
+    "content": "Into which tribe did the daughters of Zelophehad marry, as the LORD commanded?",
     "correctAnswer": [
-      0
+      3
     ],
     "explanation": "Numbers 36:10-12 — 'The daughters of Zelophehad did as the LORD commanded Moses... They were married into the clans of the people of Manasseh.'",
     "language": "en",
@@ -1598,6 +1664,12 @@
       "Exodus from Egypt",
       "Census",
       "Basic"
+    ],
+    "options": [
+      "Benjamin",
+      "Judah",
+      "Levi",
+      "Manasseh (their father's tribe)"
     ]
   },
   {
@@ -1605,10 +1677,10 @@
     "chapter": 6,
     "verseStart": 5,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "A Nazirite was permitted to cut his hair during his vow.",
+    "type": "multiple_choice_single",
+    "content": "Could a Nazirite cut his hair during the period of his vow?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Numbers 6:5 — 'All the days of his vow of separation, no razor shall touch his head. Until the time is completed for which he separates himself to the LORD, he shall be holy. He shall let the locks of hair of his head grow long.'",
     "language": "en",
@@ -1617,6 +1689,12 @@
       "Numbers",
       "Pentateuch",
       "Intermediate"
+    ],
+    "options": [
+      "Yes, once a month",
+      "Yes, on the Sabbath",
+      "No — no razor to touch the head; the hair must grow long",
+      "Only at the priest's command"
     ]
   },
   {
@@ -1624,7 +1702,7 @@
     "chapter": 12,
     "verseStart": 3,
     "difficulty": "hard",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Scripture describes Moses as more ___ than any man on the face of the earth.",
     "options": [
       "righteous",
@@ -1730,10 +1808,10 @@
     "verseStart": 14,
     "verseEnd": 21,
     "difficulty": "medium",
-    "type": "true_false",
-    "content": "The king of Edom allowed Israel to pass through his territory.",
+    "type": "multiple_choice_single",
+    "content": "How did the king of Edom respond when Israel asked to pass through?",
     "correctAnswer": [
-      1
+      2
     ],
     "explanation": "Numbers 20:21 — 'Thus Edom refused to give Israel passage through his territory, so Israel turned away from him.' Although Edom descends from Esau, Jacob's brother.",
     "language": "en",
@@ -1743,6 +1821,12 @@
       "Pentateuch",
       "Jacob and Israel",
       "Intermediate"
+    ],
+    "options": [
+      "Permitted them and provided food",
+      "Permitted with conditions",
+      "Refused, forcing Israel to go around",
+      "Allied with Israel"
     ]
   },
   {
@@ -1777,7 +1861,7 @@
     "chapter": 24,
     "verseStart": 5,
     "difficulty": "medium",
-    "type": "fill_in_blank",
+    "type": "multiple_choice_single",
     "content": "Balaam exclaimed: 'How lovely are your ___, O Jacob, your dwelling places, O Israel!'",
     "options": [
       "cities",
@@ -1804,10 +1888,10 @@
     "verseStart": 84,
     "verseEnd": 86,
     "difficulty": "hard",
-    "type": "true_false",
-    "content": "The dedication of the altar lasted twelve days, with one leader bringing offerings each day.",
+    "type": "multiple_choice_single",
+    "content": "How many days did the dedication of the altar in Numbers 7 last?",
     "correctAnswer": [
-      0
+      1
     ],
     "explanation": "Numbers 7:84 — 'This was the dedication offering for the altar on the day when it was anointed, from the chiefs of Israel.' Twelve leaders offered over twelve days.",
     "language": "en",
@@ -1817,6 +1901,12 @@
       "Pentateuch",
       "Tabernacle and Worship",
       "Advanced"
+    ],
+    "options": [
+      "Seven days",
+      "Twelve days — one chief offering each day",
+      "Forty days",
+      "One day"
     ]
   },
   {
