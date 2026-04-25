@@ -381,5 +381,165 @@
       "Thư tín",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Ê-phê-sô 1:13-14, các tín hữu được đóng ấn bởi gì như sự bảo đảm?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ê-phê-sô 1:13-14 — 'Anh em đã được đóng ấn bằng Đức Thánh Linh là Đấng Chúa đã hứa, là sự bảo đảm cho cơ nghiệp của chúng ta.'",
+    "language": "vi",
+    "options": [
+      "Bằng phép báp-têm",
+      "Bằng dấu cắt bì",
+      "Bằng Đức Thánh Linh hứa",
+      "Bằng việc làm tốt"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ê-phê-sô",
+      "Đóng ấn Thánh Linh",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ê-phê-sô 2:8-9 nói chúng ta được cứu bởi gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ê-phê-sô 2:8-9 — 'Vì nhờ ân điển, bởi đức tin, mà anh em được cứu, điều đó không phải đến từ anh em, bèn là sự ban cho của Đức Chúa Trời. Ấy chẳng phải bởi việc làm.'",
+    "language": "vi",
+    "options": [
+      "Bởi việc làm",
+      "Bởi ân điển, qua đức tin — chẳng phải bởi việc làm",
+      "Bởi xuất thân",
+      "Bởi sự ăn năn liên tục"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ê-phê-sô",
+      "Cứu rỗi bởi ân điển",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 3,
+    "verseStart": 14,
+    "verseEnd": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô cầu xin các tín hữu Ê-phê-sô có thể nhận biết điều gì vượt quá sự hiểu biết?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ê-phê-sô 3:18-19 — 'Hầu cho... hiểu thấu bề rộng, bề dài, bề cao, bề sâu, và biết sự yêu thương của Đấng Christ là sự trổi hơn mọi sự thông biết.'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan của thế gian",
+      "Bí mật của vũ trụ",
+      "Lai lịch của các thiên sứ",
+      "Sự yêu thương của Đấng Christ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ê-phê-sô",
+      "Tình yêu Christ",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ê-phê-sô 4:11 liệt kê các ân tứ nào Đấng Christ ban cho hội thánh?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ê-phê-sô 4:11 — 'Ấy chính Ngài đã cho người này làm sứ đồ, kẻ kia làm tiên tri, người khác làm thầy giảng Tin Lành, kẻ khác nữa làm mục sư và giáo sư.'",
+    "language": "vi",
+    "options": [
+      "Sứ đồ, tiên tri, thầy giảng Tin Lành, mục sư và giáo sư",
+      "Vua, thầy tế lễ, tiên tri",
+      "Quan xét, vua, người chăn chiên",
+      "Trưởng lão, chấp sự, mục sư"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ê-phê-sô",
+      "Ân tứ chức vụ",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ê-phê-sô 5:25 dạy chồng phải yêu vợ như thế nào?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ê-phê-sô 5:25 — 'Hỡi người làm chồng, hãy yêu vợ mình, như Đấng Christ đã yêu Hội thánh, phó chính mình vì Hội thánh.'",
+    "language": "vi",
+    "options": [
+      "Như chính cha của mình",
+      "Như anh em ruột thịt",
+      "Như Đấng Christ đã yêu Hội thánh và phó chính mình",
+      "Như bạn bè thân thiết"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ê-phê-sô",
+      "Hôn nhân Cơ-đốc",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Theo Ê-phê-sô 6:12, các tín hữu chiến đấu chống lại ai?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ê-phê-sô 6:12 — 'Chúng ta đánh trận, chẳng phải cùng thịt và huyết, bèn là cùng các quan trưởng, các quyền năng, các vua chúa của thế gian mờ tối nầy, cùng các thần dữ ở các miền trên trời.'",
+    "language": "vi",
+    "options": [
+      "Cùng thịt và huyết loài người",
+      "Cùng các vua dân ngoại",
+      "Cùng các tà giáo",
+      "Cùng các quan trưởng, quyền năng, vua chúa thế gian mờ tối, thần dữ trên trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ê-phê-sô",
+      "Chiến trận thuộc linh",
+      "Thư tín",
+      "Nâng cao"
+    ]
   }
 ]

@@ -381,5 +381,165 @@
       "Epistle",
       "Basic"
     ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "verseStart": 13,
+    "verseEnd": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Ephesians 1:13-14, with what are believers sealed as a guarantee?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ephesians 1:13-14 — 'You... were sealed with the promised Holy Spirit, who is the guarantee of our inheritance.'",
+    "language": "en",
+    "options": [
+      "By baptism",
+      "By circumcision",
+      "By the promised Holy Spirit",
+      "By good works"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Sealed by Spirit",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "By what does Ephesians 2:8-9 say we are saved?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ephesians 2:8-9 — 'For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works.'",
+    "language": "en",
+    "options": [
+      "By works",
+      "By grace, through faith — not by works",
+      "By heritage",
+      "By continual repentance"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Saved by Grace",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 3,
+    "verseStart": 14,
+    "verseEnd": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Paul pray the Ephesians might know that surpasses knowledge?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ephesians 3:18-19 — 'May have strength to comprehend... what is the breadth and length and height and depth, and to know the love of Christ that surpasses knowledge.'",
+    "language": "en",
+    "options": [
+      "Worldly wisdom",
+      "The secrets of the universe",
+      "The origin of angels",
+      "The love of Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Love of Christ",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What ministry gifts does Ephesians 4:11 list as Christ's gifts to the church?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ephesians 4:11 — 'And he gave the apostles, the prophets, the evangelists, the shepherds and teachers.'",
+    "language": "en",
+    "options": [
+      "Apostles, prophets, evangelists, shepherds, and teachers",
+      "Kings, priests, prophets",
+      "Judges, kings, shepherds",
+      "Elders, deacons, pastors"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Ministry Gifts",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Ephesians 5:25 say husbands should love their wives?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Ephesians 5:25 — 'Husbands, love your wives, as Christ loved the church and gave himself up for her.'",
+    "language": "en",
+    "options": [
+      "As their own father",
+      "As blood brothers",
+      "As Christ loved the church and gave Himself for her",
+      "As close friends"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Christian Marriage",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "According to Ephesians 6:12, against whom do believers wrestle?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ephesians 6:12 — 'For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places.'",
+    "language": "en",
+    "options": [
+      "Against flesh and blood (humans)",
+      "Against pagan kings",
+      "Against heretics",
+      "Against rulers, authorities, cosmic powers of darkness, spiritual forces of evil"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Spiritual Warfare",
+      "Epistle",
+      "Advanced"
+    ]
   }
 ]
