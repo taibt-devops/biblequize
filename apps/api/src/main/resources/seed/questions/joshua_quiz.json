@@ -330,5 +330,216 @@
       "Lịch sử",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Sách Giô-suê mở đầu sau cái chết của ai?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Giô-suê 1:1-2 — 'Sau khi Môi-se, tôi tớ của Đức Giê-hô-va, qua đời, Đức Giê-hô-va phán cùng Giô-suê con trai Nun.'",
+    "language": "vi",
+    "options": [
+      "Áp-ra-ham",
+      "Môi-se",
+      "Giô-sép",
+      "A-rôn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-suê",
+      "Tiếp nối",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Đức Giê-hô-va truyền cho Giô-suê phải làm gì để thành công?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Giô-suê 1:7 — 'Chỉ ngươi hãy vững lòng bền chí, và cẩn thận làm theo hết thảy luật pháp mà Môi-se, tôi tớ Ta, đã truyền cho ngươi.'",
+    "language": "vi",
+    "options": [
+      "Tăng quân đội",
+      "Lập các thành kiên cố",
+      "Vững lòng bền chí và làm theo luật pháp",
+      "Tìm liên minh với các vua"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-suê",
+      "Vững lòng bền chí",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 6,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Khi tiếng kèn thổi và dân sự la lớn, điều gì xảy ra với tường thành Giê-ri-cô?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Giô-suê 6:20 — 'Khi tiếng kèn thổi vang, dân sự la lớn... thì vách thành sập đổ; dân sự lên thành, mỗi người ngay trước mặt mình, và họ chiếm lấy thành.'",
+    "language": "vi",
+    "options": [
+      "Vách thành sập đổ",
+      "Cổng thành mở ra",
+      "Tường thành bốc cháy",
+      "Tường thành biến mất"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-suê",
+      "Giê-ri-cô",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 8,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Trong trận đánh thành A-hi, Đức Giê-hô-va bảo Giô-suê làm gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Giô-suê 8:18 — 'Đức Giê-hô-va phán cùng Giô-suê: Hãy giơ ngọn giáo trong tay ngươi ra hướng về A-hi, vì Ta sẽ phó thành ấy vào tay ngươi.'",
+    "language": "vi",
+    "options": [
+      "Đốt thành A-hi",
+      "Bao vây bảy vòng",
+      "Cầu nguyện trên núi",
+      "Giơ ngọn giáo hướng về A-hi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-suê",
+      "Trận A-hi",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 9,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khi người Ga-ba-ôn lừa Giô-suê, Y-sơ-ra-ên đã không làm gì trước khi lập giao ước?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Giô-suê 9:14 — 'Người Y-sơ-ra-ên lấy lương thực của họ, không cầu hỏi Đức Giê-hô-va.'",
+    "language": "vi",
+    "options": [
+      "Không hỏi các trưởng lão",
+      "Không xem xét hành lý",
+      "Không cầu hỏi Đức Giê-hô-va",
+      "Không xác minh nguồn gốc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-suê",
+      "Người Ga-ba-ôn",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 10,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Đức Giê-hô-va sai gì từ trời xuống giết quân thù của Y-sơ-ra-ên trong trận tại Bết-Hô-rôn?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Giô-suê 10:11 — 'Đức Giê-hô-va từ trên trời ném đá lớn xuống trên chúng nó... có lắm người chết bởi đá mưa hơn là bởi gươm dân Y-sơ-ra-ên giết.'",
+    "language": "vi",
+    "options": [
+      "Lửa từ trời",
+      "Đá mưa lớn (mưa đá)",
+      "Sấm sét dữ dội",
+      "Đoàn thiên sứ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-suê",
+      "Phép lạ trong trận",
+      "Lịch sử",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 22,
+    "verseStart": 10,
+    "verseEnd": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Hai chi phái Ru-bên, Gát và nửa Ma-na-se xây gì bên bờ sông Giô-đanh khiến các chi phái khác hiểu lầm?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Giô-suê 22:10 — 'Họ xây tại đó một bàn thờ, ở gần sông Giô-đanh, một bàn thờ rất lớn, đáng để mắt mà xem.' Sau giải thích là bàn thờ chứng kiến.",
+    "language": "vi",
+    "options": [
+      "Một bàn thờ lớn",
+      "Một thành kiên cố",
+      "Một đền thờ giả",
+      "Một tượng đài chiến thắng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-suê",
+      "Bàn thờ chứng",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 24,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Giô-suê 24:15 nói câu nổi tiếng nào về sự lựa chọn?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Giô-suê 24:15 — 'Hãy chọn ngày nay mình muốn phục sự ai... Còn ta và nhà ta, chúng ta sẽ phục sự Đức Giê-hô-va.'",
+    "language": "vi",
+    "options": [
+      "Hãy đi và lập đền thờ",
+      "Hãy theo các thần Ai Cập",
+      "Hãy giữ luật Môi-se",
+      "Còn ta và nhà ta, chúng ta sẽ phục sự Đức Giê-hô-va"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giô-suê",
+      "Lựa chọn theo Chúa",
+      "Lịch sử",
+      "Cơ bản"
+    ]
   }
 ]

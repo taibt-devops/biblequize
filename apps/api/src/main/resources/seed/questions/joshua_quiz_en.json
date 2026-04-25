@@ -330,5 +330,216 @@
       "History",
       "Intermediate"
     ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 1,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "The book of Joshua opens after whose death?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Joshua 1:1-2 — 'After the death of Moses the servant of the LORD, the LORD said to Joshua the son of Nun, Moses' assistant.'",
+    "language": "en",
+    "options": [
+      "Abraham",
+      "Moses",
+      "Joseph",
+      "Aaron"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joshua",
+      "Succession",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did the LORD command Joshua to do for success?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Joshua 1:7 — 'Only be strong and very courageous, being careful to do according to all the law that Moses my servant commanded you.'",
+    "language": "en",
+    "options": [
+      "Increase the army",
+      "Build fortified cities",
+      "Be strong and courageous and obey the law",
+      "Form alliances with kings"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joshua",
+      "Strong and Courageous",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 6,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the trumpets sounded and the people shouted, what happened to the wall of Jericho?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Joshua 6:20 — 'The people shouted a great shout, and the wall fell down flat, so that the people went up into the city, every man straight before him, and they captured the city.'",
+    "language": "en",
+    "options": [
+      "The wall fell down flat",
+      "The gate opened",
+      "The wall caught fire",
+      "The wall vanished"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joshua",
+      "Jericho",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 8,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the battle of Ai, what did the LORD tell Joshua to do?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Joshua 8:18 — 'Then the LORD said to Joshua, Stretch out the javelin that is in your hand toward Ai, for I will give it into your hand.'",
+    "language": "en",
+    "options": [
+      "Burn the city of Ai",
+      "March around it seven times",
+      "Pray on the mountain",
+      "Stretch out the javelin toward Ai"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joshua",
+      "Battle of Ai",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 9,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When the Gibeonites deceived Joshua, what did Israel fail to do before making the covenant?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Joshua 9:14 — 'So the men took some of their provisions, but did not ask counsel from the LORD.'",
+    "language": "en",
+    "options": [
+      "Did not consult the elders",
+      "Did not examine the supplies",
+      "Did not ask counsel from the LORD",
+      "Did not verify their origin"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joshua",
+      "Gibeonites",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 10,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What did the LORD send from heaven to slay Israel's enemies in the battle at Beth-horon?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Joshua 10:11 — 'The LORD threw down large stones from heaven on them... There were more who died because of the hailstones than the sons of Israel killed with the sword.'",
+    "language": "en",
+    "options": [
+      "Fire from heaven",
+      "Large hailstones",
+      "Violent thunderbolts",
+      "An army of angels"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joshua",
+      "Miracle in Battle",
+      "History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 22,
+    "verseStart": 10,
+    "verseEnd": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Reuben, Gad, and half of Manasseh build by the Jordan that the other tribes misunderstood?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Joshua 22:10 — 'They built there an altar by the Jordan, an altar of imposing size.' Later explained as a witness altar.",
+    "language": "en",
+    "options": [
+      "A great altar",
+      "A fortified city",
+      "A false temple",
+      "A victory monument"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joshua",
+      "Witness Altar",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 24,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What famous statement does Joshua 24:15 make about choosing whom to serve?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Joshua 24:15 — 'Choose this day whom you will serve... But as for me and my house, we will serve the LORD.'",
+    "language": "en",
+    "options": [
+      "Go and build the temple",
+      "Follow the gods of Egypt",
+      "Keep the law of Moses",
+      "As for me and my house, we will serve the LORD"
+    ],
+    "tags": [
+      "Old Testament",
+      "Joshua",
+      "Choosing the LORD",
+      "History",
+      "Basic"
+    ]
   }
 ]
