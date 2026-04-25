@@ -330,5 +330,218 @@
       "Lịch sử",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "verseStart": 17,
+    "verseEnd": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Sau khi nghe tin Sau-lơ và Giô-na-than chết, Đa-vít làm gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Sa-mu-ên 1:17 — 'Đa-vít làm bài ai ca nầy về Sau-lơ và Giô-na-than, con trai Sau-lơ.'",
+    "language": "vi",
+    "options": [
+      "Vui mừng vì làm vua",
+      "Soạn bài ai ca than khóc cho Sau-lơ và Giô-na-than",
+      "Lập tức tấn công Phi-li-tin",
+      "Lên ngôi tại Hếp-rôn ngay"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sa-mu-ên",
+      "Ai ca",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Đa-vít được xức dầu làm vua trên nhà Giu-đa tại đâu?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "2 Sa-mu-ên 2:4 — 'Người Giu-đa đến, xức dầu cho Đa-vít làm vua nhà Giu-đa.' Tại Hếp-rôn.",
+    "language": "vi",
+    "options": [
+      "Hếp-rôn",
+      "Bết-lê-hem",
+      "Giê-ru-sa-lem",
+      "Si-lô"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sa-mu-ên",
+      "Xức dầu Đa-vít",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Đa-vít chiếm thành nào để đặt làm thủ đô?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Sa-mu-ên 5:7 — 'Đa-vít chiếm lấy đồn lũy Si-ôn, ấy là thành Đa-vít.'",
+    "language": "vi",
+    "options": [
+      "Hếp-rôn",
+      "Bê-tên",
+      "Sa-ma-ri",
+      "Đồn lũy Si-ôn (Giê-ru-sa-lem)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sa-mu-ên",
+      "Thành Đa-vít",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 6,
+    "verseStart": 6,
+    "verseEnd": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khi đem Hòm Giao Ước về Giê-ru-sa-lem, ai chết vì giơ tay đỡ Hòm?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Sa-mu-ên 6:6-7 — 'U-xa giơ tay nắm Hòm Đức Chúa Trời... Cơn thạnh nộ Đức Giê-hô-va nổi phừng cùng U-xa, Đức Chúa Trời hành hại người vì cớ làm như vậy; người chết tại đó.'",
+    "language": "vi",
+    "options": [
+      "A-hi-ô",
+      "U-xa",
+      "Giô-áp",
+      "A-bi-na-đáp"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sa-mu-ên",
+      "U-xa",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Bi kịch trong gia đình Đa-vít ở 2 Sa-mu-ên 13 liên quan đến ai?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Sa-mu-ên 13:14 — Am-nôn, con cả Đa-vít, đã hãm hiếp Ta-ma, em gái cùng cha của mình. Sự kiện dẫn đến Áp-sa-lôm trả thù Am-nôn.",
+    "language": "vi",
+    "options": [
+      "Áp-sa-lôm và Sa-lô-môn",
+      "Mê-phi-bô-sết và Mi-canh",
+      "A-bi-sai và Giô-áp",
+      "Am-nôn và Ta-ma"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sa-mu-ên",
+      "Bi kịch nhà Đa-vít",
+      "Lịch sử",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Giô-áp dùng ai để thuyết phục Đa-vít gọi Áp-sa-lôm về?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "2 Sa-mu-ên 14:2 — 'Giô-áp sai đến Thê-cô-a tìm một người đàn bà khôn khéo, nói với nàng rằng: Hãy giả đò có tang.'",
+    "language": "vi",
+    "options": [
+      "Một người đàn bà khôn khéo ở Thê-cô-a",
+      "Tiên tri Na-than",
+      "Bà Bát-Sê-ba",
+      "Thầy tế lễ Sa-đốc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sa-mu-ên",
+      "Người đàn bà Thê-cô-a",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "verseStart": 5,
+    "verseEnd": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khi Đa-vít chạy trốn Áp-sa-lôm, ai theo dọc đường rủa sả ông?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Sa-mu-ên 16:5-7 — 'Si-mê-i, con trai Ghê-ra... vừa đi vừa rủa sả Đa-vít.'",
+    "language": "vi",
+    "options": [
+      "A-hi-tô-phen",
+      "Si-mê-i, con trai Ghê-ra",
+      "Hu-sai",
+      "Mê-phi-bô-sết"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sa-mu-ên",
+      "Si-mê-i rủa sả",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 22,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong bài ca tạ ơn 2 Sa-mu-ên 22, Đa-vít gọi Đức Giê-hô-va là gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Sa-mu-ên 22:2-3 — 'Đức Giê-hô-va là vầng đá tôi, là đồn lũy tôi, là Đấng giải cứu tôi... là cái khiên, là sừng cứu rỗi tôi, là tháp cao tôi.'",
+    "language": "vi",
+    "options": [
+      "Người tạo dựng và quan xét",
+      "Vua các vua, Chúa các chúa",
+      "Vầng đá, đồn lũy, Đấng giải cứu, khiên, tháp cao",
+      "Cha và Mẹ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Sa-mu-ên",
+      "Bài ca Đa-vít",
+      "Lịch sử",
+      "Cơ bản"
+    ]
   }
 ]

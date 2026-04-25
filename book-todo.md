@@ -21,7 +21,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | judges | Judges | History | 13 | 13 | 40-60 | ⚠️ |
 | ruth | Ruth | History | 13 | 13 | 40-60 | ⚠️ |
 | 1samuel | 1 Samuel | History | 20 | 20 | 40-60 | ⚠️ |
-| 2samuel | 2 Samuel | History | 12 | 12 | 40-60 | ⚠️ |
+| 2samuel | 2 Samuel | History | 20 | 20 | 40-60 | ⚠️ |
 | 1kings | 1 Kings | History | 13 | 13 | 40-60 | ⚠️ |
 | 2kings | 2 Kings | History | 13 | 13 | 40-60 | ⚠️ |
 | 1chronicles | 1 Chronicles | History | 0 | 0 | 30-50 | ❌ |

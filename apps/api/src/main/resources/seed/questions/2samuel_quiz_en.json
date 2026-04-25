@@ -330,5 +330,218 @@
       "History",
       "Intermediate"
     ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "verseStart": 17,
+    "verseEnd": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "After hearing of Saul and Jonathan's death, what did David do?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Samuel 1:17 — 'And David lamented with this lamentation over Saul and Jonathan his son.'",
+    "language": "en",
+    "options": [
+      "Rejoiced at becoming king",
+      "Composed a lament for Saul and Jonathan",
+      "Immediately attacked the Philistines",
+      "Took the throne at Hebron at once"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Samuel",
+      "Lament",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Where was David anointed king over the house of Judah?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "2 Samuel 2:4 — 'And the men of Judah came, and there they anointed David king over the house of Judah.' At Hebron.",
+    "language": "en",
+    "options": [
+      "Hebron",
+      "Bethlehem",
+      "Jerusalem",
+      "Shiloh"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Samuel",
+      "David Anointed",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What stronghold did David capture to make his capital?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Samuel 5:7 — 'Nevertheless, David took the stronghold of Zion, that is, the city of David.'",
+    "language": "en",
+    "options": [
+      "Hebron",
+      "Bethel",
+      "Samaria",
+      "The stronghold of Zion (Jerusalem)"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Samuel",
+      "City of David",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 6,
+    "verseStart": 6,
+    "verseEnd": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who died for putting his hand on the Ark when bringing it to Jerusalem?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Samuel 6:6-7 — 'Uzzah put out his hand to the ark of God and took hold of it... And the anger of the LORD was kindled against Uzzah, and God struck him down there.'",
+    "language": "en",
+    "options": [
+      "Ahio",
+      "Uzzah",
+      "Joab",
+      "Abinadab"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Samuel",
+      "Uzzah",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "The tragedy in David's family in 2 Samuel 13 involves whom?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Samuel 13:14 — Amnon, David's firstborn, violated his half-sister Tamar. The event led to Absalom's revenge against Amnon.",
+    "language": "en",
+    "options": [
+      "Absalom and Solomon",
+      "Mephibosheth and Michal",
+      "Abishai and Joab",
+      "Amnon and Tamar"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Samuel",
+      "Tragedy in David's House",
+      "History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whom did Joab use to persuade David to bring Absalom back?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "2 Samuel 14:2 — 'Joab sent to Tekoa and brought from there a wise woman and said to her, Pretend to be a mourner.'",
+    "language": "en",
+    "options": [
+      "A wise woman of Tekoa",
+      "The prophet Nathan",
+      "Bathsheba",
+      "Zadok the priest"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Samuel",
+      "Wise Woman of Tekoa",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "verseStart": 5,
+    "verseEnd": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When David fled from Absalom, who followed him along the way and cursed him?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Samuel 16:5-7 — 'Shimei, the son of Gera... came out, cursing continually as he came.'",
+    "language": "en",
+    "options": [
+      "Ahithophel",
+      "Shimei son of Gera",
+      "Hushai",
+      "Mephibosheth"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Samuel",
+      "Shimei's Curse",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 22,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In the song of thanksgiving in 2 Samuel 22, what does David call the LORD?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Samuel 22:2-3 — 'The LORD is my rock and my fortress and my deliverer... my shield, and the horn of my salvation, my stronghold.'",
+    "language": "en",
+    "options": [
+      "Creator and judge",
+      "King of kings, Lord of lords",
+      "Rock, fortress, deliverer, shield, stronghold",
+      "Father and Mother"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Samuel",
+      "David's Song",
+      "History",
+      "Basic"
+    ]
   }
 ]
