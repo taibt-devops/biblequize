@@ -326,5 +326,217 @@
       "Thư tín",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô khẳng định mình là sứ đồ bởi nguồn nào trong Ga-la-ti 1:1?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ga-la-ti 1:1 — 'Phao-lô, làm sứ đồ, chẳng phải bởi loài người, cũng không nhờ một người nào, bèn là bởi Đức Chúa Jêsus Christ và Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Bởi hội thánh An-ti-ốt",
+      "Bởi Đức Chúa Jêsus Christ và Đức Chúa Trời",
+      "Bởi mười hai sứ đồ",
+      "Bởi vua Sê-sa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ga-la-ti",
+      "Sứ đồ",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ga-la-ti 1:8-9 nói ai rao giảng Tin Lành khác sẽ bị gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ga-la-ti 1:8 — 'Nhưng nếu có ai, hoặc chính chúng tôi, hoặc thiên sứ trên trời, truyền cho anh em một tin lành nào khác... thì người ấy đáng bị a-na-them.'",
+    "language": "vi",
+    "options": [
+      "Bị tù",
+      "Bị đánh đòn",
+      "Bị khiển trách nhẹ",
+      "Đáng bị a-na-them (rủa sả)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ga-la-ti",
+      "Tin Lành thật",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô nhận Tin Lành mình giảng từ đâu, theo Ga-la-ti 1:11-12?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ga-la-ti 1:12 — 'Tôi cũng không nhận và cũng không học Tin Lành ấy với một người nào, nhưng đã nhận lấy bởi sự tỏ ra của Đức Chúa Jêsus Christ.'",
+    "language": "vi",
+    "options": [
+      "Từ các sứ đồ tại Giê-ru-sa-lem",
+      "Bởi sự tỏ ra của Đức Chúa Jêsus Christ",
+      "Từ Ga-ma-li-ên",
+      "Từ A-na-nia tại Đa-mách"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ga-la-ti",
+      "Mặc khải",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "verseStart": 11,
+    "verseEnd": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Tại An-ti-ốt, Phao-lô đã quở trách ai vì sự giả hình?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ga-la-ti 2:11 — 'Nhưng khi Sê-pha đến thành An-ti-ốt, tôi đối mặt với người, vì người đáng quở trách.' Sê-pha là Phi-e-rơ.",
+    "language": "vi",
+    "options": [
+      "Ba-na-ba",
+      "Tít",
+      "Gia-cơ",
+      "Sê-pha (Phi-e-rơ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ga-la-ti",
+      "Đối đầu",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 6,
+    "verseEnd": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo Ga-la-ti 3:6-7, ai là con cháu thật của Áp-ra-ham?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ga-la-ti 3:7 — 'Vậy, anh em hãy nhận biết rằng những kẻ có đức tin là con cháu thật của Áp-ra-ham.'",
+    "language": "vi",
+    "options": [
+      "Những kẻ có đức tin",
+      "Chỉ người Do Thái về xác thịt",
+      "Những kẻ giữ luật pháp Môi-se",
+      "Những kẻ chịu cắt bì"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ga-la-ti",
+      "Con cháu Áp-ra-ham",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Ga-la-ti 3:24 nói luật pháp đã làm gì cho chúng ta?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Ga-la-ti 3:24 — 'Ấy vậy, luật pháp đã trở nên thầy giáo của chúng ta đặng dẫn chúng ta đến Đấng Christ, để chúng ta được xưng công bình bởi đức tin.'",
+    "language": "vi",
+    "options": [
+      "Cứu chúng ta khỏi tội",
+      "Trở nên thầy giáo dẫn đến Đấng Christ",
+      "Ban sự sống đời đời",
+      "Thay thế đức tin"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ga-la-ti",
+      "Luật pháp",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Ga-la-ti 4:6 nói Đức Thánh Linh trong lòng tín hữu kêu lên gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Ga-la-ti 4:6 — 'Lại vì anh em là con, nên Đức Chúa Trời đã sai Thánh Linh của Con Ngài vào lòng chúng ta, kêu rằng: A-ba! Cha!'",
+    "language": "vi",
+    "options": [
+      "Halleluia!",
+      "Maranatha!",
+      "Hosanna!",
+      "A-ba! Cha!"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ga-la-ti",
+      "Thánh Linh",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 6,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Ga-la-ti 6:14 nói Phao-lô chỉ khoe mình về điều gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Ga-la-ti 6:14 — 'Còn về phần tôi, tôi hẳn chẳng khoe mình, trừ ra khoe về thập tự giá của Đức Chúa Jêsus Christ chúng ta.'",
+    "language": "vi",
+    "options": [
+      "Thập tự giá của Đức Chúa Jêsus Christ",
+      "Sự học rộng của mình",
+      "Hội thánh ông lập",
+      "Các phép lạ Chúa làm qua ông"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ga-la-ti",
+      "Thập tự giá",
+      "Thư tín",
+      "Nâng cao"
+    ]
   }
 ]

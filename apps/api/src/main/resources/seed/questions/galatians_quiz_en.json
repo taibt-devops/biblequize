@@ -326,5 +326,217 @@
       "Epistle",
       "Basic"
     ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "From what source does Paul affirm his apostleship in Galatians 1:1?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Galatians 1:1 — 'Paul, an apostle — not from men nor through man, but through Jesus Christ and God the Father.'",
+    "language": "en",
+    "options": [
+      "From the church at Antioch",
+      "Through Jesus Christ and God the Father",
+      "From the Twelve apostles",
+      "From Caesar"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Apostleship",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Galatians 1:8-9 say will happen to anyone preaching a different gospel?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Galatians 1:8 — 'Even if we or an angel from heaven should preach to you a gospel contrary to the one we preached to you, let him be accursed.'",
+    "language": "en",
+    "options": [
+      "Imprisoned",
+      "Beaten",
+      "Lightly rebuked",
+      "Let him be accursed (anathema)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "True Gospel",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "From where did Paul receive the gospel he preached, per Galatians 1:11-12?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Galatians 1:12 — 'For I did not receive it from any man, nor was I taught it, but I received it through a revelation of Jesus Christ.'",
+    "language": "en",
+    "options": [
+      "From the apostles at Jerusalem",
+      "Through a revelation of Jesus Christ",
+      "From Gamaliel",
+      "From Ananias at Damascus"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Revelation",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "verseStart": 11,
+    "verseEnd": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whom did Paul rebuke at Antioch for hypocrisy?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Galatians 2:11 — 'But when Cephas came to Antioch, I opposed him to his face, because he stood condemned.' Cephas is Peter.",
+    "language": "en",
+    "options": [
+      "Barnabas",
+      "Titus",
+      "James",
+      "Cephas (Peter)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Confrontation",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 6,
+    "verseEnd": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Galatians 3:6-7, who are the true sons of Abraham?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Galatians 3:7 — 'Know then that it is those of faith who are the sons of Abraham.'",
+    "language": "en",
+    "options": [
+      "Those of faith",
+      "Only Jews by physical descent",
+      "Keepers of the Mosaic law",
+      "The circumcised"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Sons of Abraham",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Galatians 3:24 say the law has been for us?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Galatians 3:24 — 'So then, the law was our guardian until Christ came, in order that we might be justified by faith.'",
+    "language": "en",
+    "options": [
+      "Saved us from sin",
+      "A guardian leading us to Christ",
+      "Gave eternal life",
+      "Replaced faith"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "The Law",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Galatians 4:6 say the Spirit cries from the heart of believers?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Galatians 4:6 — 'And because you are sons, God has sent the Spirit of his Son into our hearts, crying, Abba! Father!'",
+    "language": "en",
+    "options": [
+      "Hallelujah!",
+      "Maranatha!",
+      "Hosanna!",
+      "Abba! Father!"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Holy Spirit",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 6,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does Paul say he boasts in alone, in Galatians 6:14?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Galatians 6:14 — 'But far be it from me to boast except in the cross of our Lord Jesus Christ.'",
+    "language": "en",
+    "options": [
+      "The cross of our Lord Jesus Christ",
+      "His own learning",
+      "The churches he planted",
+      "The miracles God did through him"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Cross",
+      "Epistle",
+      "Advanced"
+    ]
   }
 ]
