@@ -1,0 +1,915 @@
+[
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Acts 1:8, when the Holy Spirit comes upon the disciples, what happens?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Acts 1:8 — They receive power and become witnesses in Jerusalem, Judea, Samaria, and to the ends of the earth.",
+    "language": "en",
+    "options": [
+      "They receive power and become witnesses everywhere",
+      "They return to their old jobs",
+      "They speak the tongues of angels",
+      "They build a new temple"
+    ],
+    "tags": [
+      "New Testament",
+      "Holy Spirit",
+      "Mission",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On the day of Pentecost, the disciples were filled with the Holy Spirit and began to speak what?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Acts 2:4 — They began to speak in other tongues as the Spirit gave them utterance.",
+    "language": "en",
+    "verseEnd": 4,
+    "options": [
+      "Other tongues",
+      "Poetry",
+      "Long prophecies",
+      "The language of angels"
+    ],
+    "tags": [
+      "New Testament",
+      "Holy Spirit",
+      "Pentecost",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "By what name was the lame man at the Beautiful Gate healed?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 3:6 — 'In the name of Jesus Christ of Nazareth, rise up and walk!'",
+    "language": "en",
+    "verseEnd": 10,
+    "options": [
+      "The name of Peter",
+      "The name of John",
+      "The name of Paul",
+      "The name of Jesus Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "Miracle",
+      "Name of the Lord",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Acts 4:12, in whom is salvation?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 4:12 — There is no other name under heaven given among men by which we must be saved.",
+    "language": "en",
+    "options": [
+      "In good works",
+      "In the law",
+      "In offerings",
+      "Only in Jesus"
+    ],
+    "tags": [
+      "New Testament",
+      "Salvation",
+      "Name of the Lord",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What was the chief purpose of the seven chosen in Acts 6?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 6:2-4 — So the apostles could devote themselves to prayer and the ministry of the word.",
+    "language": "en",
+    "verseEnd": 7,
+    "options": [
+      "Full-time preaching",
+      "Serving tables (caring for practical needs)",
+      "Writing letters",
+      "Teaching the law"
+    ],
+    "tags": [
+      "New Testament",
+      "Ministry",
+      "Administration",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On what road did Saul (Paul) meet the Lord?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 9:3-6 — On the road to Damascus, the Lord appeared and called Saul.",
+    "language": "en",
+    "verseEnd": 19,
+    "options": [
+      "Philippi",
+      "Corinth",
+      "Ephesus",
+      "Damascus"
+    ],
+    "tags": [
+      "New Testament",
+      "Conversion",
+      "Calling",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What Scripture did Philip explain to the Ethiopian eunuch?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 8:32-35 — Beginning with this Scripture, he told him the good news about Jesus.",
+    "language": "en",
+    "verseEnd": 40,
+    "options": [
+      "Psalm 23",
+      "Isaiah 53",
+      "Jeremiah 31",
+      "Genesis 12"
+    ],
+    "tags": [
+      "New Testament",
+      "Evangelism",
+      "Prophecy",
+      "Acts",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Peter's vision of the sheet from heaven teach?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Acts 10:15 — What God has made clean, do not call common.",
+    "language": "en",
+    "verseEnd": 48,
+    "options": [
+      "Do not call common what God has made clean",
+      "Eat only clean food",
+      "Abandon the law of Moses",
+      "Do not enter Gentile homes"
+    ],
+    "tags": [
+      "New Testament",
+      "Gentiles",
+      "Vision",
+      "Acts",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How was Peter rescued from prison?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 12:7-10 — An angel of the Lord appeared, and the chains fell from his hands.",
+    "language": "en",
+    "verseEnd": 17,
+    "options": [
+      "Earthquake",
+      "An angel rescued him",
+      "The doors opened on their own",
+      "The guards fell asleep"
+    ],
+    "tags": [
+      "New Testament",
+      "Miracle",
+      "Angel",
+      "Acts",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "At Antioch, who did the Holy Spirit set apart for the work?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 13:2 — Set apart for me Barnabas and Saul for the work to which I have called them.",
+    "language": "en",
+    "verseEnd": 3,
+    "options": [
+      "Peter and John",
+      "Barnabas and Saul",
+      "Timothy and Titus",
+      "James and Philip"
+    ],
+    "tags": [
+      "New Testament",
+      "Missions",
+      "Calling",
+      "Acts",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the Jerusalem Council decide for Gentile believers?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 15:28-29 — They decided to lay no greater burden on Gentile brothers.",
+    "language": "en",
+    "verseEnd": 21,
+    "options": [
+      "Keep all the feasts",
+      "Not require all the law of Moses; abstain from food sacrificed to idols, blood, things strangled, and sexual immorality",
+      "Learn Hebrew",
+      "Be circumcised"
+    ],
+    "tags": [
+      "New Testament",
+      "Church",
+      "Decree",
+      "Acts",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "After what event did the Philippian jailer believe?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Acts 16:26-34 — An earthquake opened the prison doors; he believed and his whole household was baptized.",
+    "language": "en",
+    "verseEnd": 34,
+    "options": [
+      "An earthquake opened the prison",
+      "Peter preached",
+      "A dream of an angel",
+      "A healing"
+    ],
+    "tags": [
+      "New Testament",
+      "Salvation",
+      "Sign",
+      "Acts",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "At the Areopagus, what did Paul preach to the Greeks?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 17:24-31 — God the Creator, a call to repent, the day of judgment, and the resurrection.",
+    "language": "en",
+    "verseEnd": 34,
+    "options": [
+      "The law of Moses",
+      "Stoic philosophy",
+      "God does not dwell in temples made by hands, and the resurrection",
+      "Local deities"
+    ],
+    "tags": [
+      "New Testament",
+      "Evangelism",
+      "Athens",
+      "Acts",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 18,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What was Apollos lacking, that Priscilla and Aquila explained more accurately?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 18:25-26 — He knew only the baptism of John; they explained the way of God more accurately.",
+    "language": "en",
+    "verseEnd": 28,
+    "options": [
+      "Knowledge of Israel's history",
+      "Knew only the baptism of John",
+      "Greek language",
+      "The Old Testament"
+    ],
+    "tags": [
+      "New Testament",
+      "Discipleship",
+      "Teaching",
+      "Acts",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 19,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "At Ephesus, what caused many people to burn their books of magic?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 19:11-19 — God did extraordinary miracles by the hands of Paul.",
+    "language": "en",
+    "verseEnd": 20,
+    "options": [
+      "Prophecy",
+      "Extraordinary miracles by Paul",
+      "An earthquake",
+      "Lightning"
+    ],
+    "tags": [
+      "New Testament",
+      "Repentance",
+      "Magic",
+      "Acts",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 20,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What happened to Eutychus during Paul's long sermon?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 20:9-12 — Eutychus fell asleep and fell down; Paul embraced him and he came back to life.",
+    "language": "en",
+    "verseEnd": 12,
+    "options": [
+      "Spoke in tongues",
+      "His hand was healed",
+      "Fell asleep, fell from the third floor, and was raised back to life",
+      "Saw a vision"
+    ],
+    "tags": [
+      "New Testament",
+      "Miracle",
+      "Accident",
+      "Acts",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 21,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Why was Paul arrested in Jerusalem according to Acts 21?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 21:28-29 — The Jews accused him of bringing a Greek into the temple and defiling the holy place.",
+    "language": "en",
+    "verseEnd": 36,
+    "options": [
+      "Accused of resisting taxation",
+      "Accused of stirring up riots",
+      "Accused of blasphemy",
+      "Accused of bringing Gentiles into the temple"
+    ],
+    "tags": [
+      "New Testament",
+      "Persecution",
+      "Temple",
+      "Acts",
+      "History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 23,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What did Paul say that divided the Pharisees and Sadducees?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Acts 23:6-8 — Pharisees believed in resurrection, angels, spirits; Sadducees did not.",
+    "language": "en",
+    "verseEnd": 10,
+    "options": [
+      "About the resurrection",
+      "About baptism",
+      "About the law",
+      "About the temple"
+    ],
+    "tags": [
+      "New Testament",
+      "Defense",
+      "Resurrection",
+      "Acts",
+      "History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 26,
+    "verseStart": 19,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Before King Agrippa, what did Paul say he had not opposed?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 26:19 — I was not disobedient to the heavenly vision.",
+    "language": "en",
+    "verseEnd": 23,
+    "options": [
+      "Authorities",
+      "The heavenly vision",
+      "The law",
+      "The nation"
+    ],
+    "tags": [
+      "New Testament",
+      "Witness",
+      "Calling",
+      "Acts",
+      "History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 28,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "On the island of Malta, what happened to Paul after the viper bit him?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 28:3-6 — Paul was unharmed, and the islanders changed their minds and called him a god.",
+    "language": "en",
+    "verseEnd": 6,
+    "options": [
+      "His hand swelled",
+      "He fainted",
+      "Was unharmed; the people thought him a god",
+      "Died within hours"
+    ],
+    "tags": [
+      "New Testament",
+      "Miracle",
+      "Protection",
+      "Acts",
+      "History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Acts 2:4, 'They were all filled with the Holy Spirit.' What does the Greek for 'filled' mean?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Pimplemi (πίμπλημι) means 'filled to overflowing' — not just full but spilling over.",
+    "language": "en",
+    "options": [
+      "Pimplemi — filled to overflowing",
+      "Chortazo — to be satisfied",
+      "Pleroo — to fill up",
+      "Gemizo — to load full"
+    ],
+    "tags": [
+      "Acts",
+      "Holy Spirit",
+      "Greek language",
+      "New Testament",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In Acts 9:15, the Lord said of Paul: 'He is a chosen instrument of mine.' What does the Greek for 'instrument' mean?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Skeuos (σκεῦος) means 'vessel, instrument' — referring to Paul as God's tool.",
+    "language": "en",
+    "options": [
+      "Organon — tool",
+      "Ergon — work",
+      "Skeuos — vessel, instrument",
+      "Douleia — service"
+    ],
+    "tags": [
+      "Acts",
+      "Paul",
+      "Greek language",
+      "New Testament",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Before His ascension, what did Jesus promise the disciples would receive?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Acts 1:8 — When the Holy Spirit comes upon you, you will receive power and be My witnesses to the ends of the earth.",
+    "language": "en",
+    "options": [
+      "Power when the Holy Spirit comes upon them",
+      "Wisdom",
+      "Silver and gold",
+      "Political power"
+    ],
+    "tags": [
+      "New Testament",
+      "Holy Spirit",
+      "Witness",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On the day of Pentecost, what were the signs of the Holy Spirit's coming?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 2:2-4 — A wind from heaven, tongues like fire on each one's head, and they spoke in other tongues by the power of the Spirit.",
+    "language": "en",
+    "verseEnd": 4,
+    "options": [
+      "Earthquake",
+      "Dove",
+      "Mighty wind, tongues of fire, speaking in tongues",
+      "Bright cloud"
+    ],
+    "tags": [
+      "New Testament",
+      "Pentecost",
+      "Holy Spirit",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "On Pentecost, what did Peter call the people to do?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 2:38 — Peter called for repentance (turning), baptism in the name of the Lord, and receiving the Holy Spirit.",
+    "language": "en",
+    "options": [
+      "Bring offerings",
+      "Keep the law of Moses",
+      "Leave Jerusalem",
+      "Repent and be baptized in the name of Jesus"
+    ],
+    "tags": [
+      "New Testament",
+      "Doctrine",
+      "Repentance",
+      "Acts",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On the way to where did Saul (later Paul) meet Jesus?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 9:3 — On the road to Damascus, light shone from heaven and Jesus spoke to Saul.",
+    "language": "en",
+    "verseEnd": 6,
+    "options": [
+      "Rome",
+      "Jerusalem",
+      "Antioch",
+      "Damascus"
+    ],
+    "tags": [
+      "New Testament",
+      "Paul",
+      "Transformation",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 42,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What four things did the early church devote themselves to?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 2:42 — Four pillars of the church: teaching, fellowship, breaking of bread, prayer.",
+    "language": "en",
+    "options": [
+      "Only eating",
+      "Only prayer",
+      "The apostles' teaching, fellowship, the breaking of bread, and prayer",
+      "Only sermons"
+    ],
+    "tags": [
+      "New Testament",
+      "Church",
+      "Foundation",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Peter said to the lame man at the temple gate: 'Silver and gold I do not have, but what I do have I give you: in the name of ___, rise up and walk'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 3:6 — Healing power comes from the name of Jesus, not from money.",
+    "language": "en",
+    "options": [
+      "Elijah",
+      "Jesus Christ",
+      "Moses",
+      "God"
+    ],
+    "tags": [
+      "New Testament",
+      "Miracle",
+      "Name of the Lord",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "verseStart": 29,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When forbidden to preach, the apostles answered: 'We must obey ___ rather than men'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 5:29 — When human law contradicts God's law, we must choose to obey God.",
+    "language": "en",
+    "options": [
+      "Conscience",
+      "God",
+      "The law",
+      "Tradition"
+    ],
+    "tags": [
+      "New Testament",
+      "Courage",
+      "Obedience",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "verseStart": 59,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Stephen, the first martyr, pray as he was being stoned?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 7:60 — Like Jesus, Stephen forgave those who killed him. The highest standard of forgiveness.",
+    "language": "en",
+    "verseEnd": 60,
+    "options": [
+      "Punish them",
+      "Save me",
+      "Take vengeance",
+      "Lord, do not hold this sin against them"
+    ],
+    "tags": [
+      "New Testament",
+      "Stephen",
+      "Forgiveness",
+      "Acts",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "verseStart": 30,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Philip asked the Ethiopian eunuch: 'Do you understand what you are reading?' How did he answer?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Acts 8:31 — A teacher of Scripture is needed. The important role of a guide.",
+    "language": "en",
+    "verseEnd": 31,
+    "options": [
+      "I don't need help",
+      "How can I, unless someone guides me?",
+      "I am studying",
+      "I understand"
+    ],
+    "tags": [
+      "New Testament",
+      "Gospel",
+      "Interpretation",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Why were the Bereans commended when they heard Paul preach?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Acts 17:11 — The model: hear the message and check it against Scripture. Not blind belief.",
+    "language": "en",
+    "options": [
+      "Silence",
+      "Refusal",
+      "Believing immediately",
+      "Examined the Scriptures daily to see whether what Paul said was so"
+    ],
+    "tags": [
+      "New Testament",
+      "Berea",
+      "Scripture",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 20,
+    "verseStart": 35,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Paul quoted Jesus: 'It is more blessed to give than to ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Acts 20:35 — A saying of Jesus not in the Gospels, preserved by Paul.",
+    "language": "en",
+    "options": [
+      "Demand",
+      "Keep",
+      "Receive",
+      "Ask"
+    ],
+    "tags": [
+      "New Testament",
+      "Generosity",
+      "Blessing",
+      "Acts",
+      "History",
+      "Basic"
+    ]
+  }
+]
