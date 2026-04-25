@@ -379,5 +379,162 @@
       "Wisdom",
       "Intermediate"
     ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 9,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Proverbs 9:10 say is the beginning of wisdom?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Proverbs 9:10 — 'The fear of the LORD is the beginning of wisdom, and the knowledge of the Holy One is insight.'",
+    "language": "en",
+    "options": [
+      "Reading many books",
+      "Accumulated experience",
+      "The fear of the LORD",
+      "Avoiding fools"
+    ],
+    "tags": [
+      "Old Testament",
+      "Proverbs",
+      "Fear of the LORD",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 13,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Proverbs 13:24 say loving parents do for their children?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Proverbs 13:24 — 'Whoever spares the rod hates his son, but he who loves him is diligent to discipline him.'",
+    "language": "en",
+    "options": [
+      "Allow complete freedom",
+      "Give them everything they want",
+      "Only teach by words",
+      "Discipline them diligently (use the rod)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Proverbs",
+      "Discipline",
+      "Wisdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 17,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When does a friend love, according to Proverbs 17:17?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Proverbs 17:17 — 'A friend loves at all times, and a brother is born for adversity.'",
+    "language": "en",
+    "options": [
+      "At all times",
+      "Only when help is needed",
+      "Only when cheerful",
+      "Only at church"
+    ],
+    "tags": [
+      "Old Testament",
+      "Proverbs",
+      "Friendship",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 20,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Proverbs 20:1 say wine is?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Proverbs 20:1 — 'Wine is a mocker, strong drink a brawler, and whoever is led astray by it is not wise.'",
+    "language": "en",
+    "options": [
+      "A comfort",
+      "A mocker",
+      "A joy",
+      "A blessing"
+    ],
+    "tags": [
+      "Old Testament",
+      "Proverbs",
+      "Wine",
+      "Wisdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 25,
+    "verseStart": 21,
+    "verseEnd": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does Proverbs 25:21-22 teach about an enemy when hungry?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Proverbs 25:21-22 — 'If your enemy is hungry, give him bread to eat, and if he is thirsty, give him water to drink, for you will heap burning coals on his head.'",
+    "language": "en",
+    "options": [
+      "Drive him away",
+      "Ignore him",
+      "Give him food and drink",
+      "Punish him"
+    ],
+    "tags": [
+      "Old Testament",
+      "Proverbs",
+      "Loving Enemies",
+      "Wisdom",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 30,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Proverbs 30:5 say about every word of God?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Proverbs 30:5 — 'Every word of God proves true; he is a shield to those who take refuge in him.'",
+    "language": "en",
+    "options": [
+      "Sometimes wrong",
+      "Depends on circumstance",
+      "Only for the Jews",
+      "Proves true; He is a shield to refuge-seekers"
+    ],
+    "tags": [
+      "Old Testament",
+      "Proverbs",
+      "Word of God",
+      "Wisdom",
+      "Basic"
+    ]
   }
 ]

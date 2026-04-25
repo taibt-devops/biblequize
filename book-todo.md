@@ -31,7 +31,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | esther | Esther | History | 20 | 20 | 30-40 | ⚠️ |
 | job | Job | Wisdom | 20 | 20 | 40-60 | ⚠️ |
 | psalms | Psalms | Wisdom | 20 | 20 | 100+ | ⚠️ |
-| proverbs | Proverbs | Wisdom | 14 | 14 | 60-80 | ⚠️ |
+| proverbs | Proverbs | Wisdom | 20 | 20 | 60-80 | ⚠️ |
 | ecclesiastes | Ecclesiastes | Wisdom | 20 | 20 | 30-40 | ⚠️ |
 | songofsolomon | Song of Solomon | Wisdom | 0 | 0 | 20-30 | ❌ |
 | isaiah | Isaiah | Prophets | 14 | 14 | 60-80 | ⚠️ |

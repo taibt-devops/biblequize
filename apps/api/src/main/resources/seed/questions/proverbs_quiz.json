@@ -379,5 +379,162 @@
       "Văn Thơ",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 9,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Châm ngôn 9:10 nói khởi đầu của sự khôn ngoan là gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Châm Ngôn 9:10 — 'Sự kính sợ Đức Giê-hô-va là khởi đầu sự khôn ngoan; sự nhận biết Đấng Thánh, ấy là sự thông sáng.'",
+    "language": "vi",
+    "options": [
+      "Học rộng nhiều sách",
+      "Tích lũy kinh nghiệm",
+      "Sự kính sợ Đức Giê-hô-va",
+      "Tránh xa kẻ ngu dại"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Kính sợ Chúa",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 13,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Châm ngôn 13:24 nói cha mẹ yêu thương con thì làm gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Châm Ngôn 13:24 — 'Người nào kiêng roi vọt ghét con trai mình; song ai thương con ắt cần lo sửa trị nó.'",
+    "language": "vi",
+    "options": [
+      "Để con tự do hoàn toàn",
+      "Cho con mọi điều con muốn",
+      "Chỉ dạy bằng lời",
+      "Sửa trị con bằng kỷ luật (roi vọt)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Sửa trị con",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 17,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Châm ngôn 17:17 nói bạn hữu yêu thương khi nào?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Châm Ngôn 17:17 — 'Bạn hữu thương mến nhau trong mọi lúc; và anh em sinh ra để giúp đỡ trong lúc hoạn nạn.'",
+    "language": "vi",
+    "options": [
+      "Yêu thương trong mọi lúc",
+      "Chỉ khi cần giúp đỡ",
+      "Chỉ khi vui vẻ",
+      "Chỉ trong nhà thờ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Bạn hữu",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 20,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Châm ngôn 20:1 mô tả rượu là gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Châm Ngôn 20:1 — 'Rượu khiến người ta nhạo báng, đồ uống say làm cho hỗn hào; phàm ai dùng nó quá độ chẳng phải khôn ngoan.'",
+    "language": "vi",
+    "options": [
+      "Sự an ủi",
+      "Kẻ nhạo báng",
+      "Sự vui mừng",
+      "Phước lành"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Rượu",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 25,
+    "verseStart": 21,
+    "verseEnd": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Châm ngôn 25:21-22 dạy phải làm gì với kẻ thù khi đói?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Châm Ngôn 25:21-22 — 'Nếu kẻ thù nghịch ngươi có đói, hãy cho nó ăn; nếu có khát, hãy cho nó uống... vì như vậy ngươi đã chất than lửa đỏ trên đầu nó.'",
+    "language": "vi",
+    "options": [
+      "Đuổi nó đi",
+      "Bỏ mặc",
+      "Cho nó ăn và uống",
+      "Trừng phạt nó"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Yêu kẻ thù",
+      "Văn Thơ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 30,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Châm ngôn 30:5 nói gì về mỗi lời của Đức Chúa Trời?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Châm Ngôn 30:5 — 'Các lời của Đức Chúa Trời đều đã thử nghiệm; Ngài là cái khiên cho những người nương cậy nơi Ngài.'",
+    "language": "vi",
+    "options": [
+      "Đôi khi sai lầm",
+      "Tùy hoàn cảnh",
+      "Chỉ dành cho người Do Thái",
+      "Đã được thử nghiệm; Ngài là cái khiên"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Lời Chúa",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
   }
 ]
