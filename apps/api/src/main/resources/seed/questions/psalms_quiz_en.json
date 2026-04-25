@@ -1,0 +1,512 @@
+[
+  {
+    "book": "Psalms",
+    "chapter": 23,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Psalm 23 begin?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Scripture says: 'The LORD is my shepherd' (Psalm 23:1).",
+    "language": "en",
+    "options": [
+      "The LORD is my shepherd",
+      "The LORD is my refuge",
+      "The LORD is my light",
+      "The LORD is my strength"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Shepherd",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 23,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Psalm 23, when walking through the valley of the shadow of death, why does the author not fear?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Scripture says: 'Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me' (Psalm 23:4).",
+    "language": "en",
+    "options": [
+      "Because His rod and staff comfort me",
+      "Because there is light",
+      "Because friends are with me",
+      "Because God is with me"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Fearless",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In the first Psalm, who is described as blessed?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Scripture says: 'Blessed is the man who walks not in the counsel of the wicked, nor stands in the way of sinners, nor sits in the seat of scoffers' (Psalm 1:1).",
+    "language": "en",
+    "options": [
+      "The one who does not walk in the counsel of the wicked",
+      "The one who does not stand in the way of sinners",
+      "All three of the above",
+      "The one who does not sit in the seat of scoffers"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Blessing",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 100,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Psalm 100 call us to do?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Scripture says: 'Make a joyful noise to the LORD, all the earth!' (Psalm 100:1).",
+    "language": "en",
+    "options": [
+      "Pray",
+      "Make a joyful noise to the LORD",
+      "Worship",
+      "Sing hymns"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Joyful noise",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 91,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whom does Psalm 91 say is protected?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Scripture says: 'He who dwells in the shelter of the Most High will abide in the shadow of the Almighty' (Psalm 91:1).",
+    "language": "en",
+    "options": [
+      "Those who love the LORD",
+      "Those who trust God",
+      "Those who obey",
+      "He who dwells in the shelter of the Most High"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Protection",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 46,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Psalm 46 say God is?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Scripture says: 'God is our refuge and strength' (Psalm 46:1).",
+    "language": "en",
+    "options": [
+      "Love and mercy",
+      "Light and life",
+      "Truth and justice",
+      "Refuge and strength"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Refuge",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 23,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Psalm 23 begins 'The LORD is my shepherd.' What does the Hebrew word for 'shepherd' mean?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Raah (רעה) means 'to shepherd, to lead' — not just to protect but to guide and care.",
+    "language": "en",
+    "options": [
+      "Raah — to shepherd, to lead",
+      "Nahal — to lead",
+      "Shamar — to guard",
+      "Yada — to know"
+    ],
+    "tags": [
+      "Psalms",
+      "Shepherd",
+      "Hebrew language",
+      "Old Testament",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 46,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In Psalm 46:10, 'Be still and know that I am God.' What does the Hebrew word for 'be still' mean?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Rapha (רפה) means 'to let go, to release' — not just be silent but release anxiety.",
+    "language": "en",
+    "options": [
+      "Chashah — to cease",
+      "Rapha — to let go, to release",
+      "Dumah — to be silent",
+      "Shabbat — to rest"
+    ],
+    "tags": [
+      "Psalms",
+      "Stillness",
+      "Hebrew language",
+      "Old Testament",
+      "Wisdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 23,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Psalm 23 begin?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Psalm 23:1 — 'The LORD is my shepherd; I shall not want.' One of the most beloved psalms.",
+    "language": "en",
+    "options": [
+      "The LORD is my refuge",
+      "Praise the LORD",
+      "The LORD is my shepherd",
+      "The heavens declare the glory of God"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Shepherd",
+      "Psalms",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "To what does Psalm 1 compare the righteous?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Psalm 1:3 — 'He is like a tree planted by streams of water that yields its fruit in its season, and its leaf does not wither.' All he does prospers.",
+    "language": "en",
+    "verseEnd": 3,
+    "options": [
+      "A bright star",
+      "The strength of a lion",
+      "A tree planted by streams of water yielding fruit in its season",
+      "A solid mountain"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Righteousness",
+      "Psalms",
+      "Wisdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 46,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Psalm 46:10 says: 'Be still and know that I am ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Psalm 46:10 — A call to be still in God's presence, trusting that He is in control.",
+    "language": "en",
+    "options": [
+      "Almighty",
+      "Lord",
+      "Creator",
+      "God"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Trust",
+      "Psalms",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 119,
+    "verseStart": 105,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "To what does Psalm 119:105 compare God's Word?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Psalm 119:105 — 'Your word is a lamp to my feet and a light to my path.' Illuminating direction for life.",
+    "language": "en",
+    "options": [
+      "Burning fire",
+      "A two-edged sword",
+      "River waters",
+      "A lamp to the feet and a light to the path"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Word of God",
+      "Psalms",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 139,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Psalm 139:14 say we are made?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Psalm 139:14 — 'I praise You, for I am fearfully and wonderfully made.' God's work is marvelous.",
+    "language": "en",
+    "verseEnd": 14,
+    "options": [
+      "By chance",
+      "Naturally",
+      "Simply",
+      "Fearfully and wonderfully"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Human worth",
+      "Psalms",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 22,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Psalm 22 begins: 'My God, my God, why have you forsaken me?' Who quoted this verse from the cross?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Matthew 27:46 — Jesus quoted Psalm 22:1 while crucified. Psalm 22 is a prophetic psalm with detailed depictions of the crucifixion.",
+    "language": "en",
+    "options": [
+      "Paul",
+      "David",
+      "Jesus",
+      "Peter"
+    ],
+    "tags": [
+      "Old Testament",
+      "Prophecy",
+      "Cross",
+      "Psalms",
+      "Wisdom",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 103,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How far does Psalm 103:12 say God removes our sins?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "East and west never meet — sin is utterly removed.",
+    "language": "en",
+    "options": [
+      "As far as the east is from the west",
+      "Forever",
+      "Seventy times seven",
+      "To the ends of the earth"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Forgiveness",
+      "Psalms",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 19,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What do the heavens declare in Psalm 19:1?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Psalm 19:1 — 'The heavens declare the glory of God, and the sky above proclaims his handiwork.' Nature is evidence of the Creator.",
+    "language": "en",
+    "options": [
+      "Riches",
+      "Wisdom",
+      "Judgment",
+      "The glory of God"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Creation",
+      "Psalms",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 34,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Psalm 34:8: '___ and see that the LORD is good!'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Psalm 34:8 — Taste (experience) the goodness of the Lord. Faith requires personal experience.",
+    "language": "en",
+    "options": [
+      "Taste",
+      "Look",
+      "Think",
+      "Listen"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Experience",
+      "Psalms",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 37,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Psalm 37:4: '___ yourself in the LORD,' and He will give you the desires of your heart",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Psalm 37:4 — When we delight in the Lord, He shapes our desires to align with His will.",
+    "language": "en",
+    "options": [
+      "First",
+      "Only",
+      "Delight",
+      "Importantly"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Delight",
+      "Psalms",
+      "Wisdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 91,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Psalm 91 describes the one who shelters in the LORD as protected from what?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Psalm 91:3-10 — A psalm about God's all-encompassing protection for those who trust Him.",
+    "language": "en",
+    "verseEnd": 2,
+    "options": [
+      "Only war",
+      "Only sickness",
+      "Only enemies",
+      "All: pestilence, the arrow, terror, plague"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Protection",
+      "Psalms",
+      "Wisdom",
+      "Basic"
+    ]
+  }
+]
