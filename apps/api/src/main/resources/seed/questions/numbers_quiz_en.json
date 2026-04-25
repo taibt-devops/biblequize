@@ -1,0 +1,1900 @@
+[
+  {
+    "book": "Numbers",
+    "chapter": 1,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did the LORD command Moses to do in the wilderness of Sinai?",
+    "options": [
+      "Divide the land of Canaan",
+      "Build a temple",
+      "Take a census of Israel",
+      "Set up an altar"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 1:2-3 — 'Take a census of all the congregation of the people of Israel, by clans, by fathers' houses, according to the number of names, every male, head by head.' This is why the book is called Numbers.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 1,
+    "verseStart": 46,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What was the total of males 20 years old and upward able to go to war in the first census?",
+    "options": [
+      "503,550",
+      "601,730",
+      "625,000",
+      "603,550"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 1:46 — 'All those listed were 603,550.' This is the total of males 20 years and older able to go to war.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 2,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Which tribe camped on the east side of the Tabernacle, toward the sunrise?",
+    "options": [
+      "Reuben",
+      "Judah",
+      "Ephraim",
+      "Dan"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 2:3 — 'Those to camp on the east side toward the sunrise shall be of the standard of the camp of Judah by their companies.' Judah led on the east.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Census",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 3,
+    "verseStart": 12,
+    "verseEnd": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "The LORD chose the Levites in place of whom in Israel?",
+    "options": [
+      "The elders",
+      "The priests",
+      "The soldiers",
+      "All the firstborn"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 3:12-13 — 'I have taken the Levites from among the people of Israel instead of every firstborn.' The Levites belong to God in place of the firstborn.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 4,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What ages of Levites served at the tent of meeting?",
+    "options": [
+      "20 to 50",
+      "25 to 50",
+      "30 to 50",
+      "25 to 60"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 4:3 — 'From thirty years old up to fifty years old, all who can come on duty, to do the work in the tent of meeting.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 5,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Lepers were to be sent outside the camp.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 5:2-3 — 'Command the people of Israel that they put out of the camp everyone who is leprous or has a discharge, and everyone who is unclean through contact with the dead.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What must a Nazirite abstain from?",
+    "options": [
+      "Wearing wool",
+      "Going outside the camp",
+      "Wine and grape products",
+      "Eating meat"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 6:3-4 — 'He shall separate himself from wine and strong drink... He shall eat nothing that is produced by the grapevine, not even the seeds or the skins.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 7,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the leaders of Israel offer when the Tabernacle was set up?",
+    "options": [
+      "Thirty bushels of wheat flour",
+      "Ten lambs and five goats",
+      "Six covered wagons and twelve oxen",
+      "Gold and silver"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 7:3 — 'They brought their offerings before the LORD: six wagons and twelve oxen.' Two leaders together brought one wagon.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Tabernacle and Worship",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 9,
+    "verseStart": 15,
+    "verseEnd": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What covered the Tabernacle by day and night?",
+    "options": [
+      "A cloud day and night",
+      "A cloud by day, fire by night",
+      "An angelic guard",
+      "Light day and night"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 9:15-16 — 'The cloud covered the tabernacle... and at evening it was over the tabernacle like the appearance of fire until morning.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 9,
+    "verseStart": 10,
+    "verseEnd": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When does someone unclean from a corpse or on a journey keep the Passover?",
+    "options": [
+      "They cannot keep it",
+      "Third month, day fourteen",
+      "Second month, day fourteen",
+      "First month, day fourteen"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 9:10-11 — 'He shall keep the Passover... in the second month on the fourteenth day at twilight.' This is a special provision.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 10,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Of what material did the LORD command Moses to make two trumpets?",
+    "options": [
+      "Gold",
+      "Ram's horn",
+      "Bronze",
+      "Silver"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 10:2 — 'Make two silver trumpets. Of hammered work you shall make them, and you shall use them for summoning the congregation and for breaking camp.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What food did Israel long for from Egypt?",
+    "options": [
+      "Bread and butter",
+      "Beef and lamb",
+      "Fish, cucumbers, melons",
+      "Grapes and figs"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 11:5 — 'We remember the fish we ate in Egypt that cost nothing, the cucumbers, the melons, the leeks, the onions, and the garlic.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Joseph in Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "verseStart": 31,
+    "verseEnd": 33,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What kind of bird did the LORD send for the people to eat when they demanded meat?",
+    "options": [
+      "Doves",
+      "Quail",
+      "Eagles",
+      "Sparrows"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 11:31 — 'Then a wind from the LORD sprang up, and it brought quail from the sea.' But a plague struck because of their craving.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "verseStart": 16,
+    "verseEnd": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How many elders did the LORD tell Moses to choose to share the burden of leadership?",
+    "options": [
+      "Seventy-two",
+      "One hundred",
+      "Seventy",
+      "Twelve"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 11:16 — 'Gather for me seventy men of the elders of Israel.' Some of the Spirit on Moses was given to them.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Moses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 12,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Who spoke against Moses because of his Cushite wife?",
+    "options": [
+      "Nadab and Abihu",
+      "Korah and Dathan",
+      "Joshua and Caleb",
+      "Miriam and Aaron"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 12:1 — 'Miriam and Aaron spoke against Moses because of the Cushite woman whom he had married.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 12,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Miriam was struck with leprosy for speaking against Moses.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 12:10 — 'When the cloud removed from over the tent, behold, Miriam was leprous, like snow.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 13,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How many men did Moses send to spy out the land of Canaan?",
+    "options": [
+      "40 men",
+      "12 men",
+      "70 men",
+      "10 men"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 13:2 — 'Send men to spy out the land of Canaan.' One man from each tribe, twelve in all.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Moses",
+      "Promised Land Canaan",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 13,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What kind of fruit did the spies bring back from the Valley of Eshcol?",
+    "options": [
+      "A large cluster of grapes",
+      "Cluster of grapes, pomegranates, and figs",
+      "Olives and dates",
+      "Figs and pomegranates"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 13:23 — 'They cut down from there a branch with a single cluster of grapes... They also brought some pomegranates and figs.' The cluster was so big it had to be carried on a pole between two men.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Promised Land Canaan",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 13,
+    "verseStart": 30,
+    "verseEnd": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Besides Joshua, who was the other spy who believed Israel could conquer Canaan?",
+    "options": [
+      "Phinehas",
+      "Eleazar",
+      "Caleb",
+      "Aaron"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 13:30 — 'But Caleb quieted the people before Moses and said, Let us go up at once and occupy it, for we are well able to overcome it.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Promised Land Canaan",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "verseStart": 33,
+    "verseEnd": 34,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How many years did Israel wander in the wilderness because of unbelief?",
+    "options": [
+      "20 years",
+      "10 years",
+      "30 years",
+      "40 years"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 14:33-34 — 'Your children shall be shepherds in the wilderness forty years... a year for each day, forty days, forty years.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Wilderness Journey",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "verseStart": 6,
+    "verseEnd": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What argument did Joshua and Caleb make to persuade the people to enter Canaan?",
+    "options": [
+      "The walls of Canaan are old and weak",
+      "Israel's army outnumbers the Canaanites",
+      "If the LORD delights in us, He will bring us in, for the protection has departed from the Canaanites",
+      "Israel's weapons are better"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 14:8-9 — 'If the LORD delights in us, he will bring us into this land... Do not fear the people of the land, for they are bread for us. Their protection is removed from them.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Promised Land Canaan",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 15,
+    "verseStart": 38,
+    "verseEnd": 39,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What color cord did the LORD command Israel to put on the tassels of their garments?",
+    "options": [
+      "Scarlet",
+      "Blue",
+      "Purple",
+      "White"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 15:38 — 'Speak to the people of Israel, and tell them to make tassels on the corners of their garments throughout their generations, and to put a cord of blue on the tassel of each corner.' To remember to keep the commandments.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Joseph in Egypt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Who led the rebellion against Moses and Aaron?",
+    "options": [
+      "On",
+      "Korah",
+      "Dathan",
+      "Abiram"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 16:1-3 — 'Now Korah... and Dathan and Abiram... rose up before Moses.' Korah was the principal figure in this rebellion.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Moses",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "verseStart": 31,
+    "verseEnd": 33,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "The earth opened and swallowed Korah and his followers.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 16:32 — 'And the earth opened its mouth and swallowed them up, with their households and all the people who belonged to Korah and all their goods.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 17,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whose staff budded, blossomed, and bore fruit to confirm the priesthood?",
+    "options": [
+      "Joshua",
+      "Caleb",
+      "Aaron",
+      "Moses"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 17:8 — 'The staff of Aaron for the house of Levi had sprouted and put forth buds and produced blossoms, and it bore ripe almonds.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 17,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "fill_in_blank",
+    "content": "Aaron's staff budded and bore ___.",
+    "options": [
+      "figs",
+      "almonds",
+      "grapes",
+      "olives"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 17:8 — 'The staff of Aaron for the house of Levi had sprouted and put forth buds and produced blossoms, and it bore ripe almonds.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 18,
+    "verseStart": 26,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "The Levites received tithes from the people, but how much must they offer back to the priests?",
+    "options": [
+      "One half",
+      "One fifth",
+      "One third",
+      "A tithe of the tithe"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 18:26 — 'When you take from the people of Israel the tithe... then you shall present a contribution from it to the LORD, a tithe of the tithe.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 19,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What kind of heifer was used in the cleansing ritual?",
+    "options": [
+      "Red, without blemish, never yoked",
+      "Any color, under three years old",
+      "White, without blemish",
+      "Black, one year old"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 19:2 — 'Tell the people of Israel to bring you a red heifer without defect, in which there is no blemish, and on which a yoke has never come.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Miriam died at Kadesh.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 20:1 — 'And the people of Israel, the whole congregation, came into the wilderness of Zin in the first month, and the people stayed in Kadesh. And Miriam died there and was buried there.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What sin kept Moses from entering Canaan?",
+    "options": [
+      "Striking the rock instead of speaking to it",
+      "Fleeing the camp",
+      "Idolatry",
+      "Refusing to lead the people"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 20:11-12 — 'Moses lifted up his hand and struck the rock with his staff twice... And the LORD said, Because you did not believe in me, to uphold me as holy in the eyes of the people of Israel, therefore you shall not bring this assembly into the land.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Sin and Fall",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "verseStart": 25,
+    "verseEnd": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "On what mountain did Aaron die?",
+    "options": [
+      "Mount Sinai",
+      "Mount Seir",
+      "Mount Nebo",
+      "Mount Hor"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 20:27-28 — 'Moses did as the LORD commanded. And they went up Mount Hor... And Aaron died there on the top of the mountain.' Eleazar succeeded to the priesthood.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did the LORD tell Moses to do to save those bitten by snakes?",
+    "options": [
+      "Lift up a bronze serpent on a pole",
+      "Sprinkle blood on the people",
+      "Pray all night",
+      "Offer a sin sacrifice"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 21:8-9 — 'Make a fiery serpent and set it on a pole, and everyone who is bitten, when he sees it, shall live.' Jesus alluded to this in John 3:14.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does Jesus connect the bronze serpent of Numbers 21 with in John 3:14?",
+    "options": [
+      "His Second Coming",
+      "His baptism",
+      "The Son of Man being lifted up (the cross)",
+      "His resurrection"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 21:8-9 and John 3:14 — 'As Moses lifted up the serpent in the wilderness, so must the Son of Man be lifted up.' This is a type of salvation through the cross.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Sin and Fall",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "verseStart": 5,
+    "verseEnd": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whom did King Balak invite to curse Israel?",
+    "options": [
+      "Jethro",
+      "Balaam",
+      "Korah",
+      "Melchizedek"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 22:5-6 — 'Balak sent messengers to Balaam... Come now, curse this people for me, since they are too mighty for me.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "verseStart": 28,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Balaam's donkey spoke with a human voice.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 22:28 — 'Then the LORD opened the mouth of the donkey, and she said to Balaam, What have I done to you, that you have struck me these three times?'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "verseStart": 22,
+    "verseEnd": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Balaam's donkey see on the road that Balaam did not?",
+    "options": [
+      "The LORD in a cloud",
+      "A wall of fire",
+      "An angel with a drawn sword",
+      "A lion"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 22:23 — 'And the donkey saw the angel of the LORD standing in the road, with a drawn sword in his hand.' The donkey turned aside but Balaam did not see.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "fill_in_blank",
+    "content": "'God is not ___ that he should lie, or a son of man, that he should change his mind.'",
+    "options": [
+      "an idol",
+      "man",
+      "wicked",
+      "an angel"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 23:19 — 'God is not man, that he should lie, or a son of man, that he should change his mind.' Balaam blesses instead of cursing.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "verseStart": 7,
+    "verseEnd": 12,
+    "difficulty": "hard",
+    "type": "true_false",
+    "content": "Balaam was able to curse Israel as Balak wished.",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 23:8 — 'How can I curse whom God has not cursed? How can I denounce whom the LORD has not denounced?' Balaam could only speak what God put in his mouth.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 24,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Balaam's prophecy 'A star shall come out of Jacob' is understood to refer to whom?",
+    "options": [
+      "The Messiah (Christ)",
+      "Samuel",
+      "King David",
+      "Joshua"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 24:17 — 'A star shall come out of Jacob, and a scepter shall rise out of Israel.' This is a Messianic prophecy, though near-term it can refer to David.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 25,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What idol did Israel worship at Shittim?",
+    "options": [
+      "Baal of Peor",
+      "Dagon",
+      "Molech",
+      "Chemosh"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 25:3 — 'So Israel yoked himself to Baal of Peor. And the anger of the LORD was kindled against Israel.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Sin and Fall",
+      "Jacob and Israel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 25,
+    "verseStart": 7,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who acted decisively to stop the plague at Shittim, after 24,000 had died?",
+    "options": [
+      "Joshua",
+      "Moses",
+      "Eleazar",
+      "Phinehas"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 25:7-8 — 'When Phinehas... saw it, he rose and left the congregation and took a spear in his hand and went after the man of Israel into the chamber.' His action stopped the plague.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 26,
+    "verseStart": 51,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What was the total of males in the second census?",
+    "options": [
+      "625,000",
+      "603,550",
+      "601,730",
+      "600,000"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 26:51 — 'This was the list of the people of Israel, 601,730.' Slightly less than the first census (603,550).",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 26,
+    "verseStart": 64,
+    "verseEnd": 65,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "In the second census, no one survived from the first census except Caleb and Joshua.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 26:64-65 — 'But among these there was not one of those listed by Moses and Aaron the priest... Not one of them was left, except Caleb the son of Jephunneh and Joshua the son of Nun.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 27,
+    "verseStart": 1,
+    "verseEnd": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did the daughters of Zelophehad ask Moses?",
+    "options": [
+      "Tax exemption",
+      "To marry outside their tribe",
+      "To inherit their father's land",
+      "To serve at the Tabernacle"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 27:4 — 'Why should the name of our father be taken away from his clan because he had no son? Give to us a possession among our father's brothers.' The LORD granted it.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Moses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 27,
+    "verseStart": 18,
+    "verseEnd": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Who was chosen as Moses' successor to lead Israel?",
+    "options": [
+      "Eleazar",
+      "Phinehas",
+      "Joshua",
+      "Caleb"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 27:18 — 'So the LORD said to Moses, Take Joshua the son of Nun, a man in whom is the Spirit, and lay your hand on him.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Moses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 28,
+    "verseStart": 3,
+    "verseEnd": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How many year-old lambs were in the daily burnt offering?",
+    "options": [
+      "Four",
+      "Three",
+      "One",
+      "Two"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 28:3 — 'This is the food offering that you shall offer to the LORD: two male lambs a year old without blemish, day by day, as a regular offering.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 28,
+    "verseStart": 16,
+    "verseEnd": 17,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "The Passover is kept on the fourteenth day of the first month.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 28:16 — 'On the fourteenth day of the first month is the LORD's Passover.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 29,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What is the special meaning of the first day of the seventh month (Feast of Trumpets)?",
+    "options": [
+      "Day to free slaves",
+      "Day to divide the land",
+      "Day of fasting",
+      "Holy convocation, no laborious work"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 29:1 — 'On the first day of the seventh month you shall have a holy convocation. You shall not do any ordinary work. It is a day for you to blow the trumpets.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 30,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "When a man vows a vow to the LORD, he must not break his word.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 30:2 — 'If a man vows a vow to the LORD, or swears an oath to bind himself by a pledge, he shall not break his word. He shall do according to all that proceeds out of his mouth.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 30,
+    "verseStart": 3,
+    "verseEnd": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Under the law of vows, who has authority to annul the vow of a young woman?",
+    "options": [
+      "Only she herself can annul it",
+      "The high priest",
+      "The elders of the city",
+      "Her father"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 30:5 — 'But if her father opposes her on the day that he hears of it, no vow of hers, no pledge by which she has bound herself, shall stand.' The father has authority on the day he hears.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Covenant",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 31,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whom did the LORD tell Moses to wage war against before he died?",
+    "options": [
+      "The Edomites",
+      "The Midianites",
+      "The Amorites",
+      "The Amalekites"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 31:1-2 — 'The LORD said to Moses, Avenge the people of Israel on the Midianites. Afterward you shall be gathered to your people.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Moses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 31,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "true_false",
+    "content": "Balaam was killed in the battle with the Midianites.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 31:8 — 'They also killed Balaam the son of Beor with the sword.' Balaam died with the five kings of Midian.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 32,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Which tribes asked to settle east of the Jordan because they had many livestock?",
+    "options": [
+      "Reuben and Gad",
+      "Ephraim and Manasseh",
+      "Judah and Benjamin",
+      "Simeon and Levi"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 32:1-5 — 'Now the people of Reuben and the people of Gad had a very great number of livestock... If we have found favor in your sight, let this land be given to your servants for a possession. Do not take us across the Jordan.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Census",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 32,
+    "verseStart": 20,
+    "verseEnd": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What was the condition for Reuben and Gad to settle east of the Jordan?",
+    "options": [
+      "Build fortresses for all Israel",
+      "Go armed before the LORD to fight with the other tribes to conquer Canaan first",
+      "Send men to guard the Tabernacle",
+      "Pay double tithes"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 32:20-22 — 'If you will arm yourselves before the LORD for the war... until he has driven out his enemies from before him... then you shall be free of obligation to the LORD and to Israel.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 33,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "Numbers chapter 33 records the stages of Israel's journey from Egypt.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 33:1-2 — 'These are the stages of the people of Israel, when they went out of the land of Egypt... Moses wrote down their starting places, stage by stage, by command of the LORD.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Joseph in Egypt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 33,
+    "verseStart": 52,
+    "verseEnd": 53,
+    "difficulty": "medium",
+    "type": "fill_in_blank",
+    "content": "The LORD told Israel to ___ all the inhabitants of Canaan when they entered the land.",
+    "options": [
+      "make a covenant with",
+      "tax",
+      "enslave",
+      "drive out"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 33:52 — 'Then you shall drive out all the inhabitants of the land from before you and destroy all their figured stones and destroy all their metal images and demolish all their high places.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Promised Land Canaan",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 34,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How far does the southern boundary of the land of Canaan extend?",
+    "options": [
+      "Wilderness of Zin along Edom",
+      "The Red Sea",
+      "The Jordan River",
+      "The Brook of Egypt"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 34:3 — 'Your south side shall be from the wilderness of Zin alongside Edom.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Promised Land Canaan",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 34,
+    "verseStart": 17,
+    "verseEnd": 18,
+    "difficulty": "hard",
+    "type": "fill_in_blank",
+    "content": "The two men assigned to divide Canaan among the tribes are the priest Eleazar and ___.",
+    "options": [
+      "Moses son of Amram",
+      "Phinehas son of Eleazar",
+      "Caleb son of Jephunneh",
+      "Joshua son of Nun"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 34:17 — 'These are the names of the men who shall divide the land to you for inheritance: Eleazar the priest and Joshua the son of Nun.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Sacrifice and Ritual",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 35,
+    "verseStart": 6,
+    "verseEnd": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How many cities of refuge were appointed for the unintentional manslayer?",
+    "options": [
+      "6 cities",
+      "10 cities",
+      "3 cities",
+      "12 cities"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 35:6 — 'The cities that you give to the Levites shall be the six cities of refuge.' Three on each side of the Jordan.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 35,
+    "verseStart": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "According to Numbers 35, how many witnesses are required to convict a murderer?",
+    "options": [
+      "Three witnesses",
+      "One witness",
+      "Four witnesses",
+      "At least two witnesses"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 35:30 — 'If anyone kills a person, the murderer shall be put to death on the evidence of witnesses. But no person shall be put to death on the testimony of one witness.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 35,
+    "verseStart": 33,
+    "difficulty": "hard",
+    "type": "fill_in_blank",
+    "content": "'No atonement can be made for the land for the ___ that is shed in it, except by the blood of the one who shed it.'",
+    "options": [
+      "evil",
+      "unfaithfulness",
+      "transgression",
+      "blood"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 35:33 — 'No atonement can be made for the land for the blood that is shed in it, except by the blood of the one who shed it.' A key principle of justice in Mosaic law.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Sin and Fall",
+      "Sacrifice and Ritual",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 36,
+    "verseStart": 6,
+    "verseEnd": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Within what limit must the daughters of Zelophehad marry?",
+    "options": [
+      "Only within the priestly line",
+      "Only within their father's tribe",
+      "Only Levites",
+      "Any tribe"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 36:6 — 'Let them marry whom they think best, only they shall marry within the clan of the tribe of their father.' So inheritance does not move to another tribe.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 36,
+    "verseStart": 10,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "true_false",
+    "content": "The daughters of Zelophehad obeyed and married within the tribe of Manasseh.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 36:10-12 — 'The daughters of Zelophehad did as the LORD commanded Moses... They were married into the clans of the people of Manasseh.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Exodus from Egypt",
+      "Census",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 6,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "A Nazirite was permitted to cut his hair during his vow.",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 6:5 — 'All the days of his vow of separation, no razor shall touch his head. Until the time is completed for which he separates himself to the LORD, he shall be holy. He shall let the locks of hair of his head grow long.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 12,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "fill_in_blank",
+    "content": "Scripture describes Moses as more ___ than any man on the face of the earth.",
+    "options": [
+      "righteous",
+      "humble",
+      "wise",
+      "courageous"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 12:3 — 'Now the man Moses was very meek, more than all people who were on the face of the earth.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Moses",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "When Moses prayed for God to forgive the people, what attribute of the LORD did he cite?",
+    "options": [
+      "Creator of all",
+      "Just judge",
+      "Slow to anger, abounding in steadfast love, forgiving iniquity",
+      "Almighty and wise"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 14:18 — 'The LORD is slow to anger and abounding in steadfast love, forgiving iniquity and transgression.' Moses cited God's own self-revelation in Exodus 34:6-7.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Moses",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 15,
+    "verseStart": 32,
+    "verseEnd": 36,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How was the man who gathered sticks on the Sabbath punished?",
+    "options": [
+      "Banished from the camp seven days",
+      "Stoned to death",
+      "Made a slave",
+      "Fined money"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 15:35-36 — 'And the LORD said to Moses, The man shall be put to death; all the congregation shall stone him with stones outside the camp.' Showing the seriousness of breaking the Sabbath.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "verseStart": 46,
+    "verseEnd": 48,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What did Aaron use to stop the plague among the people after Korah's rebellion?",
+    "options": [
+      "The blood of a sacrifice",
+      "Holy water",
+      "A censer with fire and incense",
+      "His staff"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 16:46-48 — 'Take your censer, and put fire on it from off the altar, and lay incense on it... And he stood between the dead and the living, and the plague was stopped.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "verseStart": 14,
+    "verseEnd": 21,
+    "difficulty": "medium",
+    "type": "true_false",
+    "content": "The king of Edom allowed Israel to pass through his territory.",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 20:21 — 'Thus Edom refused to give Israel passage through his territory, so Israel turned away from him.' Although Edom descends from Esau, Jacob's brother.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "verseStart": 21,
+    "verseEnd": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Israel defeated King Sihon of which people?",
+    "options": [
+      "The Moabites",
+      "The Philistines",
+      "The Amorites",
+      "The Midianites"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 21:21-25 — 'Then Israel sent messengers to Sihon king of the Amorites... Israel defeated him with the edge of the sword and took possession of his land.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 24,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "fill_in_blank",
+    "content": "Balaam exclaimed: 'How lovely are your ___, O Jacob, your dwelling places, O Israel!'",
+    "options": [
+      "cities",
+      "temples",
+      "lands",
+      "tents"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Numbers 24:5 — 'How lovely are your tents, O Jacob, your encampments, O Israel!' Balaam blesses instead of cursing.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Jacob and Israel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 7,
+    "verseStart": 84,
+    "verseEnd": 86,
+    "difficulty": "hard",
+    "type": "true_false",
+    "content": "The dedication of the altar lasted twelve days, with one leader bringing offerings each day.",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 7:84 — 'This was the dedication offering for the altar on the day when it was anointed, from the chiefs of Israel.' Twelve leaders offered over twelve days.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Tabernacle and Worship",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 8,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "On what object must Aaron light the seven lamps?",
+    "options": [
+      "The lampstand",
+      "The table of showbread",
+      "The Ark of the Covenant",
+      "The altar of incense"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Numbers 8:2 — 'When you set up the lamps, the seven lamps shall give light in front of the lampstand.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Sacrifice and Ritual",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "When the people complained, what did the LORD send down?",
+    "options": [
+      "Plague",
+      "Fire",
+      "Storm",
+      "Earthquake"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Numbers 11:1 — 'And the people complained in the hearing of the LORD about their misfortunes, and when the LORD heard it, his anger was kindled, and the fire of the LORD burned among them and consumed some outlying parts of the camp.'",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Wilderness Journey",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "verseStart": 32,
+    "verseEnd": 33,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How many times did Balaam's donkey turn aside before speaking?",
+    "options": [
+      "Twice",
+      "Once",
+      "Three times",
+      "Four times"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Numbers 22:32-33 — 'Why have you struck your donkey these three times?' The donkey saw the angel three times and turned aside three times before the LORD opened her mouth.",
+    "language": "en",
+    "tags": [
+      "Old Testament",
+      "Numbers",
+      "Pentateuch",
+      "Basic"
+    ]
+  }
+]
