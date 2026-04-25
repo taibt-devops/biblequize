@@ -1,0 +1,943 @@
+[
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 28,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In Romans 8:28, \"all things work together for good to those who love God.\" What does the Greek word for \"work together\" mean?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Sunergeo (συνεργέω) means \"to work together,\" all things working together for our good.",
+    "language": "en",
+    "options": [
+      "Sunergeo - To work together",
+      "Ergon - Work",
+      "Sunergeo - To cooperate",
+      "Sun - Together"
+    ],
+    "tags": [
+      "Romans",
+      "Working Together",
+      "Greek Language",
+      "New Testament",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In Romans 12:2, \"do not be conformed to this world, but be transformed by the renewal of your mind.\" What does the Greek word for \"transformed\" mean?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Metamorphoo (μεταμορφόω) means \"to transform from within,\" like a butterfly transforming from a caterpillar.",
+    "language": "en",
+    "options": [
+      "Metamorphoo - Transform from within",
+      "Metatithemi - Transfer",
+      "Metastrepho - Reverse",
+      "Allasso - Change outward"
+    ],
+    "tags": [
+      "Romans",
+      "Transformation",
+      "Greek Language",
+      "New Testament",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Romans 3:23 says who has sinned?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 3:23 - For all have sinned and fall short of the glory of God. No exceptions.",
+    "language": "en",
+    "options": [
+      "All have sinned",
+      "Only Adam and Eve",
+      "Only the wicked",
+      "Only the Gentiles"
+    ],
+    "tags": [
+      "New Testament",
+      "Salvation",
+      "Sin",
+      "Romans",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Romans 5:8, when did God show His love for us?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 5:8 - While we were still sinners, Christ died for us. Unconditional love.",
+    "language": "en",
+    "options": [
+      "While we were still sinners",
+      "When we repented",
+      "When we prayed",
+      "When we did good"
+    ],
+    "tags": [
+      "New Testament",
+      "Grace",
+      "Love",
+      "Romans",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Romans 6:23 says: \"The wages of sin is death, but the free gift of God is ___\"",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 6:23 - Sin leads to death, but God's free gift is eternal life through Jesus.",
+    "language": "en",
+    "options": [
+      "Eternal life in Christ Jesus",
+      "Wisdom",
+      "Peace",
+      "Forgiveness"
+    ],
+    "tags": [
+      "New Testament",
+      "Salvation",
+      "Grace",
+      "Romans",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Romans 8:38-39, what can separate us from the love of God?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Romans 8:38-39 - Nothing can separate us from the love of God in Christ Jesus.",
+    "language": "en",
+    "verseEnd": 39,
+    "options": [
+      "Apostasy",
+      "Nothing - neither death, nor life, nor anything",
+      "Betrayal",
+      "Serious sin"
+    ],
+    "tags": [
+      "New Testament",
+      "Grace",
+      "Love",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Romans 10:9 names what two conditions for salvation?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 10:9 - If you confess with your mouth that Jesus is Lord and believe in your heart that God raised Him from the dead, you will be saved.",
+    "language": "en",
+    "verseEnd": 10,
+    "options": [
+      "Baptism and keeping the Law",
+      "Praying and fasting",
+      "Repenting and offering sacrifices",
+      "Confessing Jesus as Lord with the mouth and believing He rose"
+    ],
+    "tags": [
+      "New Testament",
+      "Salvation",
+      "Confession",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Romans 12:2 urges us not to conform to this world but to be renewed how?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 12:2 - Transformation begins with the mind. When the mind is renewed by God's Word, behavior changes.",
+    "language": "en",
+    "options": [
+      "Renewal of appearance",
+      "Renewal of environment",
+      "Renewal of behavior",
+      "Renewal of the mind"
+    ],
+    "tags": [
+      "New Testament",
+      "Transformation",
+      "Mind",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Paul declared: \"I am not ashamed of the gospel, for it is the ___ of God for the salvation of everyone who believes\"",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Romans 1:16 - The gospel is the power (dunamis) of God for salvation.",
+    "language": "en",
+    "options": [
+      "Word",
+      "Knowledge",
+      "Power",
+      "Plan"
+    ],
+    "tags": [
+      "New Testament",
+      "Gospel",
+      "Power",
+      "Romans",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Having been justified by faith, we have ___ with God",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 5:1 - Justification by faith brings peace with God. Sin is wiped away.",
+    "language": "en",
+    "options": [
+      "Peace",
+      "Debt",
+      "War",
+      "Distance"
+    ],
+    "tags": [
+      "New Testament",
+      "Justification",
+      "Peace",
+      "Romans",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Romans 5:3-4: Suffering produces endurance, endurance produces ___, and that produces hope",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Hardship is the process that builds character and steadfast hope.",
+    "language": "en",
+    "verseEnd": 4,
+    "options": [
+      "Strength",
+      "Joy",
+      "Character",
+      "Wealth"
+    ],
+    "tags": [
+      "New Testament",
+      "Trials",
+      "Character",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Paul asks: Should we go on sinning so that grace may abound?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Romans 6:2 - Grace is no excuse to sin. The true believer has died to sin.",
+    "language": "en",
+    "verseEnd": 2,
+    "options": [
+      "Unclear",
+      "Yes, grace abounds",
+      "By no means! We have died to sin",
+      "It depends"
+    ],
+    "tags": [
+      "New Testament",
+      "Grace",
+      "Holiness",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 31,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Romans 8:31: \"If God is for us, who can be ___ us?\"",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "If God stands with us, no one can successfully oppose us.",
+    "language": "en",
+    "options": [
+      "Knowing",
+      "Helping",
+      "Understanding",
+      "Against"
+    ],
+    "tags": [
+      "New Testament",
+      "Security",
+      "Victory",
+      "Romans",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Paul exhorts believers to present their bodies as what?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 12:1 - True worship is offering one's whole life to God, not just at church.",
+    "language": "en",
+    "options": [
+      "Weapons",
+      "Burnt offerings",
+      "Instruments",
+      "A living and holy sacrifice, pleasing to God (spiritual worship)"
+    ],
+    "tags": [
+      "New Testament",
+      "Worship",
+      "Consecration",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Paul say he is not ashamed of?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Romans 1:16: The gospel is the power of God for salvation to everyone who believes.",
+    "language": "en",
+    "verseEnd": 17,
+    "options": [
+      "His nationality",
+      "The gospel",
+      "The Law",
+      "Philosophy"
+    ],
+    "tags": [
+      "New Testament",
+      "Gospel",
+      "Salvation",
+      "Romans",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to Romans 3:23, what is true of all people?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Romans 3:23: All have sinned and fall short of the glory of God.",
+    "language": "en",
+    "verseEnd": 24,
+    "options": [
+      "They can keep the Law",
+      "All have sinned and fall short of the glory of God",
+      "They are self-righteous",
+      "They are within the covenant"
+    ],
+    "tags": [
+      "New Testament",
+      "Sin",
+      "Justification",
+      "Romans",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "By what are we justified?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 5:1: Having been justified by faith, we have peace with God.",
+    "language": "en",
+    "verseEnd": 2,
+    "options": [
+      "By works",
+      "By rituals",
+      "By baptism",
+      "By faith"
+    ],
+    "tags": [
+      "New Testament",
+      "Justification",
+      "Faith",
+      "Romans",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What are the wages of sin?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 6:23: The wages of sin is death, but the gift of God is eternal life.",
+    "language": "en",
+    "options": [
+      "Death",
+      "Sickness",
+      "Exile",
+      "Poverty"
+    ],
+    "tags": [
+      "New Testament",
+      "Sin",
+      "Life",
+      "Romans",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What is true of those who are in Christ Jesus?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Romans 8:1: There is therefore now no condemnation for those who are in Christ Jesus.",
+    "language": "en",
+    "verseEnd": 2,
+    "options": [
+      "No more trials",
+      "No condemnation",
+      "No more bodily death",
+      "No more suffering"
+    ],
+    "tags": [
+      "New Testament",
+      "Salvation",
+      "Grace",
+      "Romans",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Paul calls believers to present their bodies as what?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 12:1: Present your bodies as a living and holy sacrifice, pleasing to God.",
+    "language": "en",
+    "verseEnd": 2,
+    "options": [
+      "A living and holy sacrifice",
+      "A burnt offering",
+      "A sin offering",
+      "A thank offering"
+    ],
+    "tags": [
+      "New Testament",
+      "Consecration",
+      "Worship",
+      "Romans",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Why is the wrath of God revealed from heaven against all ungodliness?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 1:18: Because they suppress the truth by their unrighteousness.",
+    "language": "en",
+    "verseEnd": 25,
+    "options": [
+      "They suppress the truth",
+      "They are unfaithful to their countrymen",
+      "They despise the poor",
+      "They destroy the temple"
+    ],
+    "tags": [
+      "New Testament",
+      "Wrath",
+      "Truth",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How was Abraham justified according to Romans 4?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 4:3-5: Abraham believed God, and it was counted to him as righteousness.",
+    "language": "en",
+    "verseEnd": 5,
+    "options": [
+      "By faith before circumcision",
+      "By baptism",
+      "By offerings",
+      "By works of the Law"
+    ],
+    "tags": [
+      "New Testament",
+      "Example of Faith",
+      "Justification",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Adam and Christ are compared to show what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Romans 5:18-19: Through the obedience of one man (Christ), many are made righteous.",
+    "language": "en",
+    "verseEnd": 21,
+    "options": [
+      "The Law is better than grace",
+      "Sin came through one man; righteousness through one man",
+      "The Jewish lineage is superior",
+      "Sacrifice is more important"
+    ],
+    "tags": [
+      "New Testament",
+      "Contrast",
+      "Grace",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What inner conflict does Romans 7 describe?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Romans 7:22-25: I delight in the law of God in my inner being, but I see another law in my members.",
+    "language": "en",
+    "verseEnd": 25,
+    "options": [
+      "Spirit vs. intellect",
+      "New self vs. old self",
+      "The flesh vs. the law of the mind",
+      "Spirit vs. demons"
+    ],
+    "tags": [
+      "New Testament",
+      "Theology",
+      "Justification",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How does the Spirit help our weakness in prayer?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Romans 8:26: The Spirit intercedes for us with groanings too deep for words.",
+    "language": "en",
+    "verseEnd": 27,
+    "options": [
+      "By recalling Bible verses",
+      "By teaching the right words",
+      "By interceding with groanings too deep for words",
+      "By sending angels"
+    ],
+    "tags": [
+      "New Testament",
+      "Prayer",
+      "Holy Spirit",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does God's election (Jacob/Esau) emphasize?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 9:11-16: Not because of works, but because of Him who calls — to display God's purpose.",
+    "language": "en",
+    "verseEnd": 16,
+    "options": [
+      "His sovereign grace",
+      "Educational merit",
+      "Lineage of the flesh",
+      "Human merit"
+    ],
+    "tags": [
+      "New Testament",
+      "Grace",
+      "Sovereignty",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What is the condition for salvation according to Romans 10:9-10?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 10:9-10: If you confess with your mouth and believe in your heart, you will be saved.",
+    "language": "en",
+    "verseEnd": 13,
+    "options": [
+      "Pilgrimage",
+      "Generous giving",
+      "Keeping all rituals",
+      "Confess with the mouth, believe with the heart"
+    ],
+    "tags": [
+      "New Testament",
+      "Salvation",
+      "Faith",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does the image of grafting in the olive tree teach?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 11:17-24: Wild branches are grafted into the cultivated root — Gentiles share by faith.",
+    "language": "en",
+    "verseEnd": 24,
+    "options": [
+      "Gentiles are grafted in",
+      "The Jewish people are cut off",
+      "A new tree replaces the old",
+      "More trees must be planted"
+    ],
+    "tags": [
+      "New Testament",
+      "Imagery",
+      "Gentiles",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How does Romans 13 teach about our relationship with governing authorities?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 13:1-7: Authority comes from God; pay taxes and show honor.",
+    "language": "en",
+    "verseEnd": 7,
+    "options": [
+      "Submit, for they are God's servants",
+      "Ignore taxes",
+      "Resist when unjust",
+      "Submit only when convenient"
+    ],
+    "tags": [
+      "New Testament",
+      "Citizenship",
+      "Authority",
+      "Romans",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does the \"golden chain\" of salvation (foreknew, predestined...) teach?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 8:29-30: Those whom He foreknew He also predestined... called, justified, and glorified.",
+    "language": "en",
+    "verseEnd": 30,
+    "options": [
+      "The Law produces righteousness",
+      "Grace is for one nation only",
+      "Humans are entirely self-determining",
+      "God's eternal purpose in Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "Predestination",
+      "Glory",
+      "Romans",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What do the \"vessels of wrath\" and \"vessels of mercy\" highlight?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 9:22-24: God displays His glory upon vessels of mercy, which He prepared beforehand for glory.",
+    "language": "en",
+    "verseEnd": 24,
+    "options": [
+      "The wisdom of the Law",
+      "Human righteousness",
+      "The strength of the Jewish people",
+      "God's patience and glory"
+    ],
+    "tags": [
+      "New Testament",
+      "Sovereignty",
+      "Glory",
+      "Romans",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "verseStart": 33,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does the doxology at the end of chapter 11 highlight about God?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 11:33-36: From Him and through Him and to Him are all things; to Him be glory forever.",
+    "language": "en",
+    "verseEnd": 36,
+    "options": [
+      "His infinite wisdom, judgment, and glory",
+      "Material provision",
+      "Strict judgment",
+      "Visible presence"
+    ],
+    "tags": [
+      "New Testament",
+      "Doxology",
+      "Glory",
+      "Romans",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 14,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What does Paul teach about the one weak in faith?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Romans 14:1-4: Do not pass judgment on the weak in faith; each stands or falls before the Lord.",
+    "language": "en",
+    "verseEnd": 4,
+    "options": [
+      "Discipline strictly",
+      "Avoid contact",
+      "Do not pass judgment; God can make him stand",
+      "Remove him from the church"
+    ],
+    "tags": [
+      "New Testament",
+      "Love",
+      "Christian Liberty",
+      "Romans",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What is Paul's missionary motto in Romans 15?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Romans 15:20-21: Not to build on another's foundation, but to go where Christ has not been named.",
+    "language": "en",
+    "verseEnd": 21,
+    "options": [
+      "Concentrate in one place",
+      "Preach the gospel where no one has preached it",
+      "Teach old disciples",
+      "Maintain the old foundation"
+    ],
+    "tags": [
+      "New Testament",
+      "Missions",
+      "Mission",
+      "Romans",
+      "Epistle",
+      "Advanced"
+    ]
+  }
+]
