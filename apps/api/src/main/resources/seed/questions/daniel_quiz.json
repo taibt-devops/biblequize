@@ -347,5 +347,191 @@
       "Đại Tiên Tri",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Nê-bu-cát-nết-sa nằm chiêm bao và yêu cầu các nhà thông thái làm gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Đa-ni-ên 2:5-6 — 'Vua phán: Nếu các ngươi không tỏ điềm chiêm bao và lời giải nó cho ta, các ngươi sẽ bị xé thân ra từng mảnh.' Vua đòi cả điềm chiêm bao lẫn lời giải.",
+    "language": "vi",
+    "options": [
+      "Chỉ giải nghĩa giấc mơ",
+      "Phỏng đoán giấc mơ",
+      "Cầu khẩn các thần",
+      "Vừa kể lại giấc mơ vừa giải nghĩa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Giấc mơ Nê-bu-cát-nết-sa",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verseStart": 31,
+    "verseEnd": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Trong giấc mơ pho tượng lớn, đầu pho tượng làm bằng gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Đa-ni-ên 2:32 — 'Đầu của pho tượng nầy bằng vàng ròng; ngực và cánh tay bằng bạc; bụng và vế bằng đồng.'",
+    "language": "vi",
+    "options": [
+      "Đồng",
+      "Bạc",
+      "Vàng ròng",
+      "Sắt"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Pho tượng",
+      "Tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Vua Nê-bu-cát-nết-sa lập tượng vàng cao bao nhiêu thước?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Đa-ni-ên 3:1 — 'Vua Nê-bu-cát-nết-sa làm một pho tượng vàng, cao sáu mươi thước, ngang sáu thước.'",
+    "language": "vi",
+    "options": [
+      "Mười thước",
+      "Hai mươi thước",
+      "Ba mươi thước",
+      "Sáu mươi thước"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tượng vàng",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "verseStart": 25,
+    "verseEnd": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Bốn chữ viết trên tường trong tiệc Bên-xát-sa là gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Đa-ni-ên 5:25 — 'Lời ấy đã chép như sau: Mê-nê, Mê-nê, Tê-ken, U-phác-sin (Mene, Mene, Tekel, Parsin).'",
+    "language": "vi",
+    "options": [
+      "Vinh quang, vinh quang, vinh quang",
+      "Sống, sống, sống, đời đời",
+      "Mê-nê, Mê-nê, Tê-ken, U-phác-sin",
+      "Khôn ngoan, công bình, thánh khiết"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Chữ trên tường",
+      "Tiên tri",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Vua Đa-ri-út lập bao nhiêu trấn thủ và bao nhiêu tổng đốc trên cả nước?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Đa-ni-ên 6:1-2 — 'Đa-ri-út... thấy nên lập 120 trấn thủ trên cả nước, 3 quan thượng thư trên các trấn thủ; mà Đa-ni-ên là một.'",
+    "language": "vi",
+    "options": [
+      "120 trấn thủ và 3 quan thượng thư (Đa-ni-ên là một)",
+      "70 trấn thủ và 7 quan thượng thư",
+      "12 trấn thủ và 12 quan thượng thư",
+      "100 trấn thủ và 10 quan thượng thư"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Cấp bậc của Đa-ni-ên",
+      "Tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 8,
+    "verseStart": 20,
+    "verseEnd": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Trong khải tượng Đa-ni-ên 8, con chiên đực và con dê đực tượng trưng cho hai vương quốc nào?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Đa-ni-ên 8:20-21 — 'Con chiên đực... là vua của Mê-đi và Phe-rơ-sơ. Con dê đực có lông là vua nước Hy-lạp.'",
+    "language": "vi",
+    "options": [
+      "Ai-cập và A-si-ri",
+      "Ba-by-lôn và Ba Tư",
+      "La-mã và Ba Tư",
+      "Mê-đi-Ba Tư và Hy-lạp"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Khải tượng vương quốc",
+      "Tiên tri",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 11,
+    "verseStart": 31,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Đa-ni-ên 11:31 nói tiên tri về cái gì sẽ được dựng tại nơi thánh?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Đa-ni-ên 11:31 — 'Họ sẽ dấy lên... bỏ tế lễ thiêu hằng dâng, và lập nên sự gớm ghiếc làm cho hoang vu.'",
+    "language": "vi",
+    "options": [
+      "Bàn thờ vàng mới",
+      "Hòm Giao Ước",
+      "Sự gớm ghiếc làm cho hoang vu",
+      "Đèn vàng bảy ngọn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Sự gớm ghiếc hoang vu",
+      "Tiên tri",
+      "Trung cấp"
+    ]
   }
 ]

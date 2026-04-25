@@ -347,5 +347,191 @@
       "Major Prophets",
       "Basic"
     ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What did Nebuchadnezzar require of the wise men regarding his dream?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Daniel 2:5-6 — 'The king said, If you do not make known to me the dream and its interpretation, you shall be torn limb from limb.' He demanded both the dream itself and the interpretation.",
+    "language": "en",
+    "options": [
+      "Only interpret the dream",
+      "Guess the dream",
+      "Pray to the gods",
+      "Both tell the dream and interpret it"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Nebuchadnezzar's Dream",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verseStart": 31,
+    "verseEnd": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "In the dream of the great statue, what was the head made of?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Daniel 2:32 — 'The head of this image was of fine gold, its chest and arms of silver, its middle and thighs of bronze.'",
+    "language": "en",
+    "options": [
+      "Bronze",
+      "Silver",
+      "Fine gold",
+      "Iron"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "The Statue",
+      "Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How tall was the gold image King Nebuchadnezzar set up?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Daniel 3:1 — 'King Nebuchadnezzar made an image of gold, whose height was sixty cubits and its breadth six cubits.'",
+    "language": "en",
+    "options": [
+      "Ten cubits",
+      "Twenty cubits",
+      "Thirty cubits",
+      "Sixty cubits"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Gold Image",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "verseStart": 25,
+    "verseEnd": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What were the four words written on the wall at Belshazzar's feast?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Daniel 5:25 — 'And this is the writing that was inscribed: MENE, MENE, TEKEL, and PARSIN.'",
+    "language": "en",
+    "options": [
+      "Glory, glory, glory",
+      "Life, life, life, eternal",
+      "Mene, Mene, Tekel, Parsin",
+      "Wisdom, righteousness, holiness"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Writing on Wall",
+      "Prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How many satraps and how many high officials did King Darius set over the kingdom?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Daniel 6:1-2 — 'It pleased Darius to set over the kingdom 120 satraps... over them three high officials, of whom Daniel was one.'",
+    "language": "en",
+    "options": [
+      "120 satraps and 3 high officials (Daniel was one)",
+      "70 satraps and 7 officials",
+      "12 satraps and 12 officials",
+      "100 satraps and 10 officials"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Daniel's Rank",
+      "Prophets",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 8,
+    "verseStart": 20,
+    "verseEnd": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "In Daniel 8's vision, which two kingdoms do the ram and the goat represent?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Daniel 8:20-21 — 'As for the ram... it is the kings of Media and Persia. And the goat is the king of Greece.'",
+    "language": "en",
+    "options": [
+      "Egypt and Assyria",
+      "Babylon and Persia",
+      "Rome and Persia",
+      "Medo-Persia and Greece"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Kingdom Vision",
+      "Prophets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 11,
+    "verseStart": 31,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Daniel 11:31 prophesies what will be set up in the holy place?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Daniel 11:31 — 'They shall... take away the regular burnt offering. And they shall set up the abomination that makes desolate.'",
+    "language": "en",
+    "options": [
+      "A new gold altar",
+      "The Ark of the Covenant",
+      "The abomination that makes desolate",
+      "A new seven-branched lampstand"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Abomination of Desolation",
+      "Prophets",
+      "Intermediate"
+    ]
   }
 ]
