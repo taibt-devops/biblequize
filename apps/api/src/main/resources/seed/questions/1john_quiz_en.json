@@ -325,5 +325,215 @@
       "Epistles",
       "Intermediate"
     ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What senses does 1 John 1:1 say the apostles used to bear witness to the Word of life?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 John 1:1 — 'That which was from the beginning, which we have heard, which we have seen with our eyes, which we looked upon and have touched with our hands, concerning the word of life.'",
+    "language": "en",
+    "options": [
+      "Heard only",
+      "Saw only in vision",
+      "Heard, seen, looked upon, and touched",
+      "Read only in Scripture"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Incarnation",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 John 1:5, what is the message Christ brought about God?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 John 1:5 — 'God is light, and in him is no darkness at all.'",
+    "language": "en",
+    "options": [
+      "Light, with no darkness in Him",
+      "A stern judge",
+      "Creator of all",
+      "Invisible One"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "God Is Light",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does 1 John 1:8 say about claiming to have no sin?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 John 1:8 — 'If we say we have no sin, we deceive ourselves, and the truth is not in us.'",
+    "language": "en",
+    "options": [
+      "Will be blessed",
+      "We deceive ourselves and the truth is not in us",
+      "Will avoid punishment",
+      "Will become holy"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Sin",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "verseStart": 3,
+    "verseEnd": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How does 1 John 2:3-4 say we know we have come to know Him?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 John 2:3 — 'And by this we know that we have come to know him, if we keep his commandments.'",
+    "language": "en",
+    "options": [
+      "By spiritual feelings",
+      "By miracles",
+      "If we keep His commandments",
+      "By Bible knowledge"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Knowing God",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How does 1 John 2:22 define the antichrist?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 John 2:22 — 'Who is the liar but he who denies that Jesus is the Christ? This is the antichrist, he who denies the Father and the Son.'",
+    "language": "en",
+    "options": [
+      "The adulterer",
+      "The murderer",
+      "The one who leaves the church",
+      "The one who denies that Jesus is the Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Antichrist",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does 1 John 3:1 say we are called by the Father's love?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 John 3:1 — 'See what kind of love the Father has given to us, that we should be called children of God.'",
+    "language": "en",
+    "options": [
+      "Servants of God",
+      "Children of God",
+      "Friends of God",
+      "Messengers of God"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Children of God",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does 1 John 3:9 say about the one born of God?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 John 3:9 — 'No one born of God makes a practice of sinning, for God's seed abides in him; and he cannot keep on sinning, because he has been born of God.'",
+    "language": "en",
+    "options": [
+      "Still sins as before",
+      "Only sins minor sins",
+      "Is never sad",
+      "Does not make a practice of sinning"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Born of God",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 5,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does 1 John 5:11-12 say whoever has the Son has?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 John 5:12 — 'Whoever has the Son has life; whoever does not have the Son of God does not have life.'",
+    "language": "en",
+    "options": [
+      "Has life",
+      "Has power",
+      "Has wealth",
+      "Has wisdom"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Eternal Life",
+      "Epistle",
+      "Basic"
+    ]
   }
 ]

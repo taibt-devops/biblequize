@@ -325,5 +325,215 @@
       "Thư tín",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "1 Giăng 1:1 nói các sứ đồ làm chứng về Lời sự sống bằng những giác quan nào?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Giăng 1:1 — 'Điều có từ trước hết, là điều chúng tôi đã nghe, điều mắt chúng tôi đã thấy, điều chúng tôi đã ngắm và tay chúng tôi đã rờ.'",
+    "language": "vi",
+    "options": [
+      "Chỉ nghe",
+      "Chỉ thấy trong khải tượng",
+      "Đã nghe, thấy, ngắm và rờ",
+      "Chỉ đọc trong Kinh Thánh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Giăng",
+      "Nhập thể",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Giăng 1:5, sứ điệp của Đấng Christ là Đức Chúa Trời là gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Giăng 1:5 — 'Đức Chúa Trời là sự sáng, trong Ngài chẳng có sự tối tăm đâu.'",
+    "language": "vi",
+    "options": [
+      "Sự sáng, không có sự tối tăm trong Ngài",
+      "Đấng phán xét nghiêm khắc",
+      "Đấng tạo dựng vạn vật",
+      "Đấng vô hình"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Giăng",
+      "Đức Chúa Trời là sự sáng",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "1 Giăng 1:8 nói nếu tự xưng mình không có tội thì sao?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Giăng 1:8 — 'Ví bằng chúng ta nói mình không có tội chi hết, ấy là chính chúng ta lừa dối mình, và lẽ thật không ở trong chúng ta.'",
+    "language": "vi",
+    "options": [
+      "Sẽ được phước hạnh",
+      "Tự lừa dối mình và lẽ thật không ở trong mình",
+      "Sẽ tránh được hình phạt",
+      "Sẽ được trở nên thánh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Giăng",
+      "Tội lỗi",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "verseStart": 3,
+    "verseEnd": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "1 Giăng 2:3-4 nói chúng ta biết mình đã nhận biết Ngài bằng cách nào?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "1 Giăng 2:3 — 'Nầy tại sao chúng ta biết mình đã biết Ngài, ấy là tại chúng ta giữ các điều răn của Ngài.'",
+    "language": "vi",
+    "options": [
+      "Bằng cảm xúc thuộc linh",
+      "Bằng các phép lạ",
+      "Bằng giữ các điều răn của Ngài",
+      "Bằng kiến thức Kinh Thánh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Giăng",
+      "Nhận biết Chúa",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "1 Giăng 2:22 định nghĩa kẻ chống Christ là ai?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Giăng 2:22 — 'Ai là kẻ nói dối, há chẳng phải kẻ chối Đức Chúa Jêsus là Đấng Christ sao? Ấy đó là Kẻ địch lại Đấng Christ, tức là kẻ chối Đức Chúa Cha và Đức Chúa Con.'",
+    "language": "vi",
+    "options": [
+      "Kẻ phạm tội ngoại tình",
+      "Kẻ giết người",
+      "Kẻ bỏ hội thánh",
+      "Kẻ chối Đức Chúa Jêsus là Đấng Christ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Giăng",
+      "Kẻ địch lại Christ",
+      "Thư tín",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "1 Giăng 3:1 nói chúng ta được gọi là gì bởi tình yêu của Đức Chúa Cha?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "1 Giăng 3:1 — 'Hãy xem Đức Chúa Cha đã tỏ cho chúng ta sự yêu thương dường nào, mà cho chúng ta được xưng là con cái Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Tôi tớ của Đức Chúa Trời",
+      "Con cái Đức Chúa Trời",
+      "Bạn hữu của Đức Chúa Trời",
+      "Sứ giả của Đức Chúa Trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Giăng",
+      "Con cái Chúa",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "1 Giăng 3:9 nói người được sinh bởi Đức Chúa Trời thì sao?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "1 Giăng 3:9 — 'Ai sinh bởi Đức Chúa Trời thì chẳng cứ phạm tội, vì hột giống của Đức Chúa Trời ở trong người, và người không thể phạm tội được, vì đã sinh bởi Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Vẫn phạm tội như trước",
+      "Chỉ phạm tội nhỏ",
+      "Không bao giờ buồn",
+      "Chẳng cứ phạm tội (không tiếp tục trong tội)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Giăng",
+      "Sinh ra bởi Chúa",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 5,
+    "verseStart": 11,
+    "verseEnd": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "1 Giăng 5:11-12 nói ai có Con thì có gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "1 Giăng 5:12 — 'Ai có Đức Chúa Con thì có sự sống; ai không có Con Đức Chúa Trời thì không có sự sống.'",
+    "language": "vi",
+    "options": [
+      "Có sự sống",
+      "Có quyền lực",
+      "Có giàu sang",
+      "Có khôn ngoan"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Giăng",
+      "Sự sống đời đời",
+      "Thư tín",
+      "Cơ bản"
+    ]
   }
 ]

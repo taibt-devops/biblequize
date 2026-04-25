@@ -73,7 +73,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | james | James | Epistle | 20 | 20 | 30-40 | ⚠️ |
 | 1peter | 1 Peter | Epistle | 20 | 20 | 30-40 | ⚠️ |
 | 2peter | 2 Peter | Epistle | 0 | 0 | 25 | ❌ |
-| 1john | 1 John | Epistle | 12 | 12 | 30-40 | ⚠️ |
+| 1john | 1 John | Epistle | 20 | 20 | 30-40 | ⚠️ |
 | 2john | 2 John | Epistle | 0 | 0 | 20 (min) | ❌ |
 | 3john | 3 John | Epistle | 0 | 0 | 20 (min) | ❌ |
 | jude | Jude | Epistle | 0 | 0 | 20 (min) | ❌ |
