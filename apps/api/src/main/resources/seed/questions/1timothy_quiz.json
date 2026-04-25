@@ -1,0 +1,604 @@
+[
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô gọi Ti-mô-thê là gì khi mở đầu thư 1 Ti-mô-thê?",
+    "correctAnswer": [0],
+    "explanation": "1 Ti-mô-thê 1:2 — 'gởi cho Ti-mô-thê, là con thật của ta trong đức tin: Nguyền con được ân điển, sự thương xót, và sự bình an ban cho bởi Đức Chúa Trời, Cha chúng ta, và bởi Đức Chúa Jêsus Christ, Chúa chúng ta!'",
+    "language": "vi",
+    "options": [
+      "Con thật của ta trong đức tin",
+      "Đầy tớ trung thành",
+      "Bạn cùng quê",
+      "Học trò xuất sắc"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Con thật trong đức tin",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 1:5, mục đích của lời răn bảo là gì?",
+    "correctAnswer": [1],
+    "explanation": "1 Ti-mô-thê 1:5 — 'Mục đích của sự răn bảo, ấy là sự yêu thương, bởi lòng tinh sạch, lương tâm tốt và đức tin thật mà sanh ra.'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan trong việc đời",
+      "Sự yêu thương — bởi lòng tinh sạch, lương tâm tốt và đức tin thật",
+      "Sự kỷ luật ngặt nghèo",
+      "Sự nhớ thuộc lòng các luật"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Mục đích là yêu thương",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 1:15, lời chắc chắn đáng tin dùng là gì?",
+    "correctAnswer": [2],
+    "explanation": "1 Ti-mô-thê 1:15 — 'Đức Chúa Jêsus Christ đã đến trong thế gian để cứu vớt kẻ có tội, ấy là lời chắc chắn, đáng đem lòng tin trọn vẹn mà nhận lấy; trong những kẻ có tội đó ta là đầu.'",
+    "language": "vi",
+    "options": [
+      "Đức Chúa Trời tạo dựng muôn vật từ hư không",
+      "Mô-se đã ban luật pháp cho dân",
+      "Đức Chúa Jêsus Christ đã đến trong thế gian để cứu kẻ có tội",
+      "Đa-vít là vua tốt nhất của Y-sơ-ra-ên"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Christ đến cứu kẻ có tội",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Trong 1 Ti-mô-thê 1:15, Phao-lô tự xưng mình là gì giữa những kẻ có tội?",
+    "correctAnswer": [3],
+    "explanation": "1 Ti-mô-thê 1:15 — '...trong những kẻ có tội đó ta là đầu.' Sự khiêm hạ thật sâu sắc của một sứ đồ.",
+    "language": "vi",
+    "options": [
+      "Người đứng đắn nhất",
+      "Người đã được tha thứ tuyệt đối",
+      "Đầy tớ ngoan ngoãn",
+      "Đầu (chiếm vị thứ nhất)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Phao-lô đầu kẻ có tội",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 2:1, Phao-lô khuyên cầu nguyện cho ai?",
+    "correctAnswer": [0],
+    "explanation": "1 Ti-mô-thê 2:1 — 'Vậy, trước hết mọi sự ta dặn rằng, phải khẩn nguyện, cầu xin, kêu van, tạ ơn cho mọi người...'",
+    "language": "vi",
+    "options": [
+      "Mọi người",
+      "Chỉ tín hữu",
+      "Chỉ các sứ đồ",
+      "Chỉ thân nhân ruột thịt"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Cầu nguyện cho mọi người",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 2,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 2:5, ai là đấng trung bảo duy nhất giữa Đức Chúa Trời và loài người?",
+    "correctAnswer": [1],
+    "explanation": "1 Ti-mô-thê 2:5 — 'Vì chỉ có một Đức Chúa Trời, và chỉ có một Đấng Trung bảo ở giữa Đức Chúa Trời và loài người, tức là Đức Chúa Jêsus Christ, là người.'",
+    "language": "vi",
+    "options": [
+      "Thầy tế lễ thượng phẩm Lê-vi",
+      "Đức Chúa Jêsus Christ — người",
+      "Tiên tri Môi-se",
+      "Thiên sứ trưởng Mi-chen"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Một Đấng trung bảo",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 2,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 2:6, Đấng Christ đã phó mình làm gì cho mọi người?",
+    "correctAnswer": [2],
+    "explanation": "1 Ti-mô-thê 2:6 — 'Ngài đã phó chính mình Ngài làm giá chuộc mọi người. Ấy là lời chứng đã làm đúng kỳ.'",
+    "language": "vi",
+    "options": [
+      "Làm tấm gương đạo đức",
+      "Làm giáo sư dạy lẽ thật",
+      "Làm giá chuộc mọi người",
+      "Làm thầy tế lễ tạm thời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Giá chuộc mọi người",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 3:2, người giám mục phải có những đặc điểm gì?",
+    "correctAnswer": [3],
+    "explanation": "1 Ti-mô-thê 3:2 — 'Vậy, người giám mục cần phải không chỗ trách được, là chồng chỉ một vợ, có tiết độ, có tài trí, xứng đáng, hay tiếp khách và khéo dạy dỗ.'",
+    "language": "vi",
+    "options": [
+      "Phải giàu có và quyền thế",
+      "Phải có học vị cao trong xã hội",
+      "Phải sống độc thân tận hiến",
+      "Không chỗ trách được, chồng chỉ một vợ, có tiết độ, hay tiếp khách, khéo dạy dỗ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Phẩm chất giám mục",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 3:15, Hội Thánh được mô tả là gì?",
+    "correctAnswer": [0],
+    "explanation": "1 Ti-mô-thê 3:15 — '...Hội Thánh của Đức Chúa Trời hằng sống, trụ và nền của lẽ thật vậy.'",
+    "language": "vi",
+    "options": [
+      "Trụ và nền của lẽ thật",
+      "Quân đội của thiên sứ",
+      "Đền thờ duy nhất",
+      "Đoàn thể chính trị"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Trụ và nền của lẽ thật",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 3:16, sự mầu nhiệm của sự tin kính bắt đầu bằng điều gì?",
+    "correctAnswer": [1],
+    "explanation": "1 Ti-mô-thê 3:16 — 'Mầu nhiệm của sự tin kính là lớn lắm: Đấng đã được tỏ ra trong xác thịt, thì đã được Đức Thánh Linh xưng là công bình, được thiên sứ trông thấy, được giảng ra cho dân ngoại, được thiên hạ tin cậy, được cất lên trong sự vinh hiển.'",
+    "language": "vi",
+    "options": [
+      "Đã được sinh ra bởi nữ đồng trinh",
+      "Đã được tỏ ra trong xác thịt",
+      "Đã được Giăng Báp-tít làm phép báp-têm",
+      "Đã chịu khổ trên thập tự"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Mầu nhiệm tin kính",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 4:1, trong những thời kỳ cuối, một số người sẽ bỏ đức tin để theo điều gì?",
+    "correctAnswer": [2],
+    "explanation": "1 Ti-mô-thê 4:1 — 'Vả, Đức Thánh Linh phán tỏ tường rằng, trong đời sau rốt, có mấy kẻ sẽ bội đạo mà theo các thần lừa dối, và đạo lý của quỉ dữ.'",
+    "language": "vi",
+    "options": [
+      "Nho học và triết Đông",
+      "Các phong tục tổ phụ",
+      "Các thần lừa dối và đạo lý của quỉ dữ",
+      "Các tín ngưỡng cổ truyền"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Bội đạo theo thần lừa dối",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 4:8, sự tin kính có ích cho điều gì?",
+    "correctAnswer": [3],
+    "explanation": "1 Ti-mô-thê 4:8 — 'Vì sự tập tành thân thể ích lợi chẳng bao lăm, còn như sự tin kính là ích cho mọi việc, vì có lời hứa về đời nầy và đời sau nữa.'",
+    "language": "vi",
+    "options": [
+      "Chỉ ích cho đời nầy",
+      "Chỉ ích cho đời sau",
+      "Chỉ ích cho thân thể",
+      "Ích cho mọi việc — đời nầy và đời sau"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Tin kính ích đời này và đời sau",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 4:12, Ti-mô-thê phải làm gương cho tín hữu trong những lĩnh vực nào?",
+    "correctAnswer": [0],
+    "explanation": "1 Ti-mô-thê 4:12 — 'Chớ để người ta khinh con vì trẻ tuổi; nhưng phải lấy lời nói, nết làm, sự yêu thương, đức tin và sự tinh sạch mà làm gương cho các tín đồ.'",
+    "language": "vi",
+    "options": [
+      "Lời nói, nết làm, sự yêu thương, đức tin, sự tinh sạch",
+      "Quyền uy chính trị, sự khôn ngoan, học vấn",
+      "Sự giàu có, danh tiếng, ảnh hưởng",
+      "Khả năng làm phép lạ và tiên tri"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Năm lĩnh vực làm gương",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 4:13, Ti-mô-thê phải chuyên chú vào những điều nào?",
+    "correctAnswer": [1],
+    "explanation": "1 Ti-mô-thê 4:13 — 'Hãy chăm chỉ đọc sách, khuyên bảo, dạy dỗ, cho đến chừng ta đến.'",
+    "language": "vi",
+    "options": [
+      "Cầu nguyện, kiêng ăn, suy niệm",
+      "Đọc sách (Kinh Thánh) công khai, khuyên bảo, dạy dỗ",
+      "Giảng đạo, tiên tri, làm phép lạ",
+      "Cai quản, phán xét, thâu thuế"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Đọc Kinh Thánh khuyên dạy",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 5,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 5:8, ai không cấp dưỡng cho gia quyến mình thì sao?",
+    "correctAnswer": [2],
+    "explanation": "1 Ti-mô-thê 5:8 — 'Ví bằng có ai không săn sóc đến bà con mình, nhứt là không săn sóc đến người nhà mình, ấy là người chối bỏ đức tin, lại xấu hơn người không tin nữa.'",
+    "language": "vi",
+    "options": [
+      "Sẽ được tha thứ nếu đi nhà thờ đều đặn",
+      "Sẽ được lãnh đạo Hội Thánh giúp đỡ",
+      "Là người chối bỏ đức tin, xấu hơn người không tin",
+      "Sẽ chịu trách nhiệm trước tòa án"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Cấp dưỡng cho người nhà",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 6:6, sự tin kính cùng với điều gì là một lợi lớn?",
+    "correctAnswer": [3],
+    "explanation": "1 Ti-mô-thê 6:6 — 'Vả, sự tin kính cùng sự thỏa lòng ấy là một lợi lớn.'",
+    "language": "vi",
+    "options": [
+      "Cùng quyền lực",
+      "Cùng học vấn",
+      "Cùng giàu có",
+      "Cùng sự thỏa lòng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Tin kính và thỏa lòng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 6:10, điều gì là cội rễ mọi sự ác?",
+    "correctAnswer": [0],
+    "explanation": "1 Ti-mô-thê 6:10 — 'Bởi chưng sự tham tiền bạc là cội rễ mọi điều ác, có kẻ vì đeo đuổi nó mà bội đạo, chuốc lấy nhiều điều đau đớn.'",
+    "language": "vi",
+    "options": [
+      "Sự tham tiền bạc",
+      "Sự tham ăn",
+      "Sự kiêu ngạo",
+      "Sự lười biếng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Tham tiền bạc cội rễ điều ác",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 6:11, người của Đức Chúa Trời phải đeo đuổi những gì?",
+    "correctAnswer": [1],
+    "explanation": "1 Ti-mô-thê 6:11 — '...nhưng con, là người của Đức Chúa Trời, hãy tránh những sự đó đi, mà tìm điều công bình, tin kính, đức tin, yêu thương, nhịn nhục, mềm mại.'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan loài người và quyền lực",
+      "Công bình, tin kính, đức tin, yêu thương, nhịn nhục, mềm mại",
+      "Của cải, danh vọng, học vấn",
+      "Tài lãnh đạo, hùng biện, sáng tạo"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Sáu đức tính người của Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 6:12, Ti-mô-thê phải đánh trận tốt lành nào?",
+    "correctAnswer": [2],
+    "explanation": "1 Ti-mô-thê 6:12 — 'Hãy vì đức tin mà đánh trận tốt lành, bắt lấy sự sống đời đời, là sự mà con đã được gọi đến, và vì đó mà con đã làm chứng tốt lành trước mặt nhiều người chứng kiến.'",
+    "language": "vi",
+    "options": [
+      "Trận chống lại Rô-ma",
+      "Trận chống tội lỗi cá nhân",
+      "Trận tốt lành của đức tin",
+      "Trận chống lại các tà giáo"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Trận tốt lành của đức tin",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 6:15, Đức Chúa Trời được tôn vinh là gì?",
+    "correctAnswer": [3],
+    "explanation": "1 Ti-mô-thê 6:15 — '...Đấng có phước và có một, là Vua của mọi vua, Chúa của mọi chúa.'",
+    "language": "vi",
+    "options": [
+      "Đấng tối cao và bí mật",
+      "Đấng phán xét loài người",
+      "Đấng cứu chuộc thế gian",
+      "Vua của mọi vua, Chúa của mọi chúa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Vua của mọi vua",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo 1 Ti-mô-thê 1:17, Đức Chúa Trời được mô tả là gì?",
+    "correctAnswer": [0],
+    "explanation": "1 Ti-mô-thê 1:17 — 'Nguyền xin sự tôn quí, vinh hiển đời đời vô cùng về nơi Vua muôn đời, không hề hư nát, không thấy được, tức là Đức Chúa Trời có một mà thôi! A-men.'",
+    "language": "vi",
+    "options": [
+      "Vua muôn đời, không hề hư nát, không thấy được, có một mà thôi",
+      "Đấng dạy dỗ vô tận",
+      "Đấng phán xét nhân từ",
+      "Đấng ngự trên ngai chiến trận"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Vua muôn đời",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 1 Ti-mô-thê 3:2-3, người giám mục phải có những phẩm chất nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Ti-mô-thê 3:2-3 — '...không chỗ trách được, là chồng chỉ một vợ, có tiết độ, có tài trí, xứng đáng, hay tiếp khách và khéo dạy dỗ. Đừng mê rượu, cũng đừng hung bạo, nhưng phải mềm mại, hòa nhã; lại đừng ham tiền bạc.' 'Hăm hở quyền lực chính trị' không thuộc danh sách.",
+    "language": "vi",
+    "options": [
+      "Không chỗ trách được, chồng chỉ một vợ",
+      "Có tiết độ, tài trí, xứng đáng, hay tiếp khách, khéo dạy dỗ",
+      "Mềm mại, hòa nhã, không ham tiền bạc",
+      "Hăm hở giành quyền lực chính trị"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Phẩm chất giám mục",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 1 Ti-mô-thê 3:16, mầu nhiệm của sự tin kính được mô tả qua những điều nào về Đấng Christ? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Ti-mô-thê 3:16 — '...Đấng đã được tỏ ra trong xác thịt, được Đức Thánh Linh xưng công bình, được thiên sứ trông thấy, được giảng ra cho dân ngoại, được thiên hạ tin cậy, được cất lên trong sự vinh hiển.' Sáu điều; 'được loài người bầu chọn' trái với việc Christ là Đấng được tỏ ra từ Đức Chúa Trời.",
+    "language": "vi",
+    "options": [
+      "Tỏ ra trong xác thịt, được Đức Thánh Linh xưng công bình",
+      "Được thiên sứ trông thấy, giảng ra cho dân ngoại",
+      "Được thiên hạ tin cậy, cất lên trong sự vinh hiển",
+      "Được loài người bầu chọn làm Đấng Christ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Sáu nét mầu nhiệm tin kính",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 1 Ti-mô-thê 6:9-10, sự tham muốn giàu có dẫn đến những hậu quả nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Ti-mô-thê 6:9-10 — '...những kẻ muốn nên giàu có, ắt sa vào sự cám dỗ, mắc bẫy dò, ngã trong nhiều sự tham muốn vô lý thiệt hại kia, là sự làm đắm người ta vào sự hủy diệt hư mất... có kẻ vì đeo đuổi nó mà bội đạo, chuốc lấy nhiều điều đau đớn.' Ba hậu quả; 'được Chúa ban phước thuộc thể bội phần' trái với toàn cảnh đoạn này.",
+    "language": "vi",
+    "options": [
+      "Sa vào sự cám dỗ, mắc bẫy dò",
+      "Đắm vào sự hủy diệt hư mất",
+      "Bội đạo và chuốc lấy nhiều đau đớn",
+      "Được Chúa ban phước thuộc thể bội phần"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Hậu quả tham giàu",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo 1 Ti-mô-thê 6:11, người của Đức Chúa Trời phải đeo đuổi những đức tính nào? (chọn tất cả đúng)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Ti-mô-thê 6:11 — '...tìm điều công bình, tin kính, đức tin, yêu thương, nhịn nhục, mềm mại.' Sáu đức tính thánh; 'của cải và vinh dự' chính là điều phải tránh trong câu này.",
+    "language": "vi",
+    "options": [
+      "Công bình và tin kính",
+      "Đức tin và yêu thương",
+      "Nhịn nhục và mềm mại",
+      "Của cải và vinh dự đời này"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Ti-mô-thê",
+      "Thư tín",
+      "Sáu đức tính người của Chúa",
+      "Nâng cao"
+    ]
+  }
+]

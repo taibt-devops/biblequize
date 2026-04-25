@@ -1,0 +1,604 @@
+[
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Paul address Timothy in the opening of 1 Timothy?",
+    "correctAnswer": [0],
+    "explanation": "1 Timothy 1:2 — 'To Timothy, my true child in the faith: Grace, mercy, and peace from God the Father and Christ Jesus our Lord.'",
+    "language": "en",
+    "options": [
+      "My true child in the faith",
+      "Faithful servant",
+      "Hometown friend",
+      "Outstanding student"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "True child in faith",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 1:5, what is the aim of the charge?",
+    "correctAnswer": [1],
+    "explanation": "1 Timothy 1:5 — 'The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith.'",
+    "language": "en",
+    "options": [
+      "Worldly wisdom",
+      "Love — from a pure heart, good conscience, sincere faith",
+      "Strict discipline",
+      "Memorizing all the laws"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Aim is love",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 1:15, what is the trustworthy saying deserving full acceptance?",
+    "correctAnswer": [2],
+    "explanation": "1 Timothy 1:15 — 'The saying is trustworthy and deserving of full acceptance, that Christ Jesus came into the world to save sinners, of whom I am the foremost.'",
+    "language": "en",
+    "options": [
+      "God created all things from nothing",
+      "Moses gave the law to the people",
+      "Christ Jesus came into the world to save sinners",
+      "David was Israel's greatest king"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Christ came to save sinners",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "In 1 Timothy 1:15, how does Paul describe himself among sinners?",
+    "correctAnswer": [3],
+    "explanation": "1 Timothy 1:15 — '...of whom I am the foremost.' A profound humility from an apostle.",
+    "language": "en",
+    "options": [
+      "The most upright",
+      "The one absolutely forgiven",
+      "An obedient servant",
+      "The foremost (chief)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Paul foremost of sinners",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 2:1, for whom does Paul urge prayers?",
+    "correctAnswer": [0],
+    "explanation": "1 Timothy 2:1 — 'First of all, then, I urge that supplications, prayers, intercessions, and thanksgivings be made for all people.'",
+    "language": "en",
+    "options": [
+      "All people",
+      "Only believers",
+      "Only the apostles",
+      "Only blood relatives"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Pray for all people",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 2,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 2:5, who is the one mediator between God and men?",
+    "correctAnswer": [1],
+    "explanation": "1 Timothy 2:5 — 'For there is one God, and there is one mediator between God and men, the man Christ Jesus.'",
+    "language": "en",
+    "options": [
+      "The Levitical high priest",
+      "The man Christ Jesus",
+      "The prophet Moses",
+      "The archangel Michael"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "One mediator",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 2,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 2:6, what did Christ give Himself as for all?",
+    "correctAnswer": [2],
+    "explanation": "1 Timothy 2:6 — '...who gave himself as a ransom for all, which is the testimony given at the proper time.'",
+    "language": "en",
+    "options": [
+      "A moral example",
+      "A teacher of truth",
+      "A ransom for all",
+      "A temporary priest"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Ransom for all",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 3:2, what qualities must an overseer have?",
+    "correctAnswer": [3],
+    "explanation": "1 Timothy 3:2 — 'Therefore an overseer must be above reproach, the husband of one wife, sober-minded, self-controlled, respectable, hospitable, able to teach.'",
+    "language": "en",
+    "options": [
+      "Wealthy and powerful",
+      "Highly educated socially",
+      "Celibate and devoted",
+      "Above reproach, husband of one wife, sober-minded, hospitable, able to teach"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Qualifications of overseer",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 3:15, how is the church described?",
+    "correctAnswer": [0],
+    "explanation": "1 Timothy 3:15 — '...the church of the living God, a pillar and buttress of the truth.'",
+    "language": "en",
+    "options": [
+      "A pillar and buttress of the truth",
+      "An army of angels",
+      "The one and only temple",
+      "A political body"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Pillar and buttress of truth",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 3:16, how does the mystery of godliness begin?",
+    "correctAnswer": [1],
+    "explanation": "1 Timothy 3:16 — 'Great indeed, we confess, is the mystery of godliness: He was manifested in the flesh, vindicated by the Spirit, seen by angels, proclaimed among the nations, believed on in the world, taken up in glory.'",
+    "language": "en",
+    "options": [
+      "Born of a virgin",
+      "Manifested in the flesh",
+      "Baptized by John the Baptist",
+      "Suffered on the cross"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Mystery of godliness",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 4:1, what will some depart from the faith to follow in later times?",
+    "correctAnswer": [2],
+    "explanation": "1 Timothy 4:1 — 'Now the Spirit expressly says that in later times some will depart from the faith by devoting themselves to deceitful spirits and teachings of demons.'",
+    "language": "en",
+    "options": [
+      "Eastern philosophy",
+      "Ancestral customs",
+      "Deceitful spirits and teachings of demons",
+      "Ancient mystical religions"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Departure to demonic teaching",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 4:8, for what is godliness profitable?",
+    "correctAnswer": [3],
+    "explanation": "1 Timothy 4:8 — '...for while bodily training is of some value, godliness is of value in every way, as it holds promise for the present life and also for the life to come.'",
+    "language": "en",
+    "options": [
+      "Profitable only for this life",
+      "Profitable only for the life to come",
+      "Profitable only for the body",
+      "Profitable in every way — for this life and the life to come"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Godliness for both lives",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 4:12, in what areas must Timothy set an example for believers?",
+    "correctAnswer": [0],
+    "explanation": "1 Timothy 4:12 — 'Let no one despise you for your youth, but set the believers an example in speech, in conduct, in love, in faith, in purity.'",
+    "language": "en",
+    "options": [
+      "Speech, conduct, love, faith, purity",
+      "Political authority, wisdom, education",
+      "Wealth, fame, influence",
+      "Ability to perform miracles and prophecy"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Five areas of example",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 4:13, to what must Timothy devote himself?",
+    "correctAnswer": [1],
+    "explanation": "1 Timothy 4:13 — 'Until I come, devote yourself to the public reading of Scripture, to exhortation, to teaching.'",
+    "language": "en",
+    "options": [
+      "Prayer, fasting, meditation",
+      "Public reading of Scripture, exhortation, teaching",
+      "Preaching, prophecy, miracles",
+      "Governance, judgment, taxation"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Public reading, exhortation, teaching",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 5,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 5:8, what about the one who does not provide for his household?",
+    "correctAnswer": [2],
+    "explanation": "1 Timothy 5:8 — 'But if anyone does not provide for his relatives, and especially for members of his household, he has denied the faith and is worse than an unbeliever.'",
+    "language": "en",
+    "options": [
+      "Forgiven if attending church regularly",
+      "Will be helped by church leaders",
+      "Has denied the faith and is worse than an unbeliever",
+      "Will be held accountable in court"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Provide for household",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 6:6, godliness with what is great gain?",
+    "correctAnswer": [3],
+    "explanation": "1 Timothy 6:6 — 'But godliness with contentment is great gain.'",
+    "language": "en",
+    "options": [
+      "With power",
+      "With learning",
+      "With wealth",
+      "With contentment"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Godliness with contentment",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 6:10, what is the root of all kinds of evils?",
+    "correctAnswer": [0],
+    "explanation": "1 Timothy 6:10 — 'For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs.'",
+    "language": "en",
+    "options": [
+      "The love of money",
+      "Gluttony",
+      "Pride",
+      "Laziness"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Love of money root of evils",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 6:11, what must the man of God pursue?",
+    "correctAnswer": [1],
+    "explanation": "1 Timothy 6:11 — 'But as for you, O man of God, flee these things. Pursue righteousness, godliness, faith, love, steadfastness, gentleness.'",
+    "language": "en",
+    "options": [
+      "Human wisdom and power",
+      "Righteousness, godliness, faith, love, steadfastness, gentleness",
+      "Wealth, fame, education",
+      "Leadership, eloquence, creativity"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Six virtues of man of God",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 6:12, what good fight must Timothy fight?",
+    "correctAnswer": [2],
+    "explanation": "1 Timothy 6:12 — 'Fight the good fight of the faith. Take hold of the eternal life to which you were called and about which you made the good confession in the presence of many witnesses.'",
+    "language": "en",
+    "options": [
+      "Battle against Rome",
+      "Battle against personal sin",
+      "The good fight of the faith",
+      "Battle against heretics"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Good fight of the faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 6:15, how is God exalted?",
+    "correctAnswer": [3],
+    "explanation": "1 Timothy 6:15 — '...he who is the blessed and only Sovereign, the King of kings and Lord of lords.'",
+    "language": "en",
+    "options": [
+      "The Most High and Hidden",
+      "The Judge of mankind",
+      "The Redeemer of the world",
+      "King of kings and Lord of lords"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "King of kings",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to 1 Timothy 1:17, how is God described?",
+    "correctAnswer": [0],
+    "explanation": "1 Timothy 1:17 — 'To the King of the ages, immortal, invisible, the only God, be honor and glory forever and ever. Amen.'",
+    "language": "en",
+    "options": [
+      "King of the ages, immortal, invisible, the only God",
+      "Endless teacher",
+      "Merciful judge",
+      "Enthroned commander"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "King of the ages",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "verseStart": 2,
+    "verseEnd": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 1 Timothy 3:2-3, which qualities must an overseer have? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Timothy 3:2-3 — '...above reproach, the husband of one wife, sober-minded, self-controlled, respectable, hospitable, able to teach, not a drunkard, not violent but gentle, not quarrelsome, not a lover of money.' 'Eager for political power' is not in the list.",
+    "language": "en",
+    "options": [
+      "Above reproach, husband of one wife",
+      "Sober-minded, self-controlled, respectable, hospitable, able to teach",
+      "Gentle, not quarrelsome, not a lover of money",
+      "Eager for political power"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Overseer qualifications",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 1 Timothy 3:16, by what does the mystery of godliness describe Christ? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Timothy 3:16 — '...He was manifested in the flesh, vindicated by the Spirit, seen by angels, proclaimed among the nations, believed on in the world, taken up in glory.' Six elements; 'elected by men as Christ' contradicts His being revealed by God.",
+    "language": "en",
+    "options": [
+      "Manifested in flesh, vindicated by Spirit",
+      "Seen by angels, proclaimed among the nations",
+      "Believed on in the world, taken up in glory",
+      "Elected by men as the Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Six features of mystery of godliness",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 1 Timothy 6:9-10, what consequences flow from the desire for riches? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Timothy 6:9-10 — '...those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction... some have wandered away from the faith and pierced themselves with many pangs.' Three consequences; 'multiplied material blessings' contradicts the passage.",
+    "language": "en",
+    "options": [
+      "Fall into temptation and a snare",
+      "Plunge into ruin and destruction",
+      "Wander from faith, pierce themselves with pangs",
+      "Receive multiplied material blessings from God"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Consequences of greed",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to 1 Timothy 6:11, what virtues must the man of God pursue? (select all that apply)",
+    "correctAnswer": [0, 1, 2],
+    "explanation": "1 Timothy 6:11 — '...Pursue righteousness, godliness, faith, love, steadfastness, gentleness.' Six holy virtues; 'wealth and earthly honor' is precisely what must be fled.",
+    "language": "en",
+    "options": [
+      "Righteousness and godliness",
+      "Faith and love",
+      "Steadfastness and gentleness",
+      "Wealth and earthly honor"
+    ],
+    "tags": [
+      "New Testament",
+      "1 Timothy",
+      "Epistle",
+      "Six virtues of man of God",
+      "Advanced"
+    ]
+  }
+]

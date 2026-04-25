@@ -109,7 +109,7 @@ Mỗi sách cần CẢ VI + EN. Bắt đầu từ size nhỏ nhất để dễ s
 - [x] 2peter (3 chương) — 25 VI + 25 EN
 - [x] colossians (4 chương) — 25 VI + 25 EN
 - [ ] 1thessalonians (5 chương)
-- [ ] 1timothy (6 chương)
+- [x] 1timothy (6 chương) — 25 VI + 25 EN
 - [ ] zechariah (14 chương)
 
 **Tier 4 — 30-50 câu (sách lớn missing)**
