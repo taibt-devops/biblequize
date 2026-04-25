@@ -536,5 +536,2155 @@
       "Văn Thơ",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 2:7 — Đức Giê-hô-va phán cùng Đấng được xức dầu rằng: 'Ngươi là ___ Ta; ngày nay Ta đã sanh ngươi.'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 2:7 — 'Ta sẽ giảng ra mạng lệnh: Đức Giê-hô-va phán cùng Ta rằng: Ngươi là Con Ta; ngày nay Ta đã sanh ngươi.'",
+    "language": "vi",
+    "options": [
+      "Đầy tớ",
+      "Tiên tri",
+      "Con",
+      "Vua"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 8,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 8:4 hỏi: 'Loài người là gì mà Chúa nhớ đến?'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 8:4 — 'Loài người là gì mà Chúa nhớ đến? Con loài người là chi mà Chúa thăm viếng nó?'",
+    "language": "vi",
+    "options": [
+      "Như cây cỏ",
+      "Loài người là gì mà Chúa nhớ đến",
+      "Như con sâu trong đất",
+      "Như tro bụi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 14,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 14:1 — Người ngu dại nói gì trong lòng?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Thi Thiên 14:1 — 'Kẻ ngu dại nói trong lòng rằng: chẳng có Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Ta là vua",
+      "Ta sẽ thắng",
+      "Hãy ăn, hãy uống",
+      "Chẳng có Đức Chúa Trời"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 16,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 16:11 — 'Chúa sẽ chỉ cho tôi biết ___; trước mặt Chúa có trọn sự khoái lạc.'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 16:11 — 'Chúa sẽ chỉ cho tôi biết con đường sự sống; trước mặt Chúa có trọn sự khoái lạc, tại bên hữu Chúa có điều vui sướng vô cùng.'",
+    "language": "vi",
+    "options": [
+      "Con đường sự sống",
+      "Cách trở nên giàu",
+      "Sự khôn ngoan loài người",
+      "Lời tiên tri tương lai"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 18,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 18:2 mô tả Đức Giê-hô-va là gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 18:2 — 'Đức Giê-hô-va là hòn đá tôi, đồn lũy tôi, Đấng giải cứu tôi; Đức Chúa Trời là hòn đá tôi, nơi tôi sẽ nương náu mình.'",
+    "language": "vi",
+    "options": [
+      "Vua chiến trận",
+      "Hòn đá, đồn lũy, Đấng giải cứu, nơi nương náu",
+      "Cha thương xót",
+      "Người chăn chiên hiền lành"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 19,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 19:1 — 'Các từng trời rao truyền ___ của Đức Chúa Trời, bầu trời giãi tỏ ___ Ngài.'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 19:1 — 'Các từng trời rao truyền sự vinh hiển của Đức Chúa Trời, bầu trời giãi tỏ công việc tay Ngài làm.'",
+    "language": "vi",
+    "options": [
+      "Quyền phép / sự công bình",
+      "Công bình / sự thương xót",
+      "Sự vinh hiển / công việc tay Ngài",
+      "Tình yêu / chân lý"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 23,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 23:1 mở đầu bằng câu nào nổi tiếng?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 23:1 — 'Đức Giê-hô-va là Đấng chăn giữ tôi: tôi sẽ chẳng thiếu thốn gì.'",
+    "language": "vi",
+    "options": [
+      "Đức Giê-hô-va là Đấng chăn giữ tôi; tôi sẽ chẳng thiếu thốn gì",
+      "Đức Giê-hô-va là sự sáng tôi",
+      "Đức Giê-hô-va là vầng đá tôi",
+      "Tôi sẽ ngợi khen Đức Giê-hô-va"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 24,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 24:7 kêu gọi điều gì để Vua vinh hiển ngự vào?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 24:7 — 'Hỡi cửa, hãy cất đầu lên! Hỡi cửa đời đời, hãy mở cao lên! Thì Vua vinh hiển sẽ vào.'",
+    "language": "vi",
+    "options": [
+      "Mặt trời",
+      "Các cửa (cất đầu lên)",
+      "Núi non",
+      "Tâm linh"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 27,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 27:1 — 'Đức Giê-hô-va là ___ và là sự cứu rỗi tôi: tôi sẽ sợ ai?'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 27:1 — 'Đức Giê-hô-va là ánh sáng và là sự cứu rỗi tôi: tôi sẽ sợ ai?'",
+    "language": "vi",
+    "options": [
+      "Đồn lũy",
+      "Vầng đá",
+      "Ánh sáng",
+      "Cha"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 30,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 30:5 — 'Sự khóc lóc đến trọ ban đêm, nhưng ___ vào buổi sáng.'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 30:5 — 'Sự khóc lóc đến trọ ban đêm, nhưng buổi sáng bèn có sự vui mừng.'",
+    "language": "vi",
+    "options": [
+      "Sự vui mừng",
+      "Mưa nhẹ",
+      "Hơi sương",
+      "Tia nắng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 32,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 32:1 nói phước cho ai?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 32:1 — 'Phước thay cho người nào được tha sự vi phạm mình, được khỏa lấp tội lỗi mình!'",
+    "language": "vi",
+    "options": [
+      "Người công bình",
+      "Người được tha sự vi phạm, được khỏa lấp tội lỗi",
+      "Người tích lũy của cải",
+      "Người dâng nhiều tế lễ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 34,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 34:8 mời gọi điều gì về Đức Giê-hô-va?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Thi Thiên 34:8 — 'Khá nếm thử xem Đức Giê-hô-va tốt lành dường bao! Phước cho người nào nương náu mình nơi Ngài!'",
+    "language": "vi",
+    "options": [
+      "Học biết về Ngài",
+      "Tìm kiếm Ngài hằng ngày",
+      "Hát ngợi khen Ngài",
+      "Nếm thử xem Ngài tốt lành dường bao"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 37,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 37:4 — 'Cũng hãy khoái lạc nơi Đức Giê-hô-va, thì Ngài sẽ ban cho ngươi ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 37:4 — 'Cũng hãy khoái lạc nơi Đức Giê-hô-va, thì Ngài sẽ ban cho ngươi điều lòng mình ao ước.'",
+    "language": "vi",
+    "options": [
+      "Sự giàu có",
+      "Quyền lực",
+      "Điều lòng mình ao ước",
+      "Sự khôn ngoan"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 40,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 40:1 — Tác giả đã làm gì rồi mới được nhậm lời?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 40:1 — 'Tôi nhịn nhục trông đợi Đức Giê-hô-va, Ngài nghiêng qua nghe tiếng kêu cầu của tôi.'",
+    "language": "vi",
+    "options": [
+      "Nhịn nhục trông đợi Đức Giê-hô-va",
+      "Hét lớn không ngừng",
+      "Dâng nhiều tế lễ",
+      "Đến đền thờ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 42,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 42:1 — 'Đức Chúa Trời ơi, linh hồn tôi mơ ước Chúa, như con nai cái ___'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 42:1 — 'Đức Chúa Trời ôi! linh hồn tôi mơ ước Chúa, như con nai cái thèm khát khe nước.'",
+    "language": "vi",
+    "options": [
+      "Tìm cỏ xanh",
+      "Khe nước (panting for streams)",
+      "Đêm tối",
+      "Bầy đàn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 46,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 46:1 — 'Đức Chúa Trời là ___ và sức lực của chúng tôi.'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 46:1 — 'Đức Chúa Trời là nơi nương náu và sức lực của chúng tôi, Ngài sẵn giúp đỡ trong cơn gian truân.'",
+    "language": "vi",
+    "options": [
+      "Vua trên các vua",
+      "Cha trên trời",
+      "Nơi nương náu",
+      "Người chăn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 46,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 46:10 — 'Hãy ___ và biết rằng Ta là Đức Chúa Trời.'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 46:10 — 'Hãy yên lặng và biết rằng Ta là Đức Chúa Trời; Ta sẽ được tôn cao trong các nước, cũng sẽ được tôn cao trên đất.'",
+    "language": "vi",
+    "options": [
+      "Hãy yên lặng (be still)",
+      "Hãy ca tụng",
+      "Hãy chiến đấu",
+      "Hãy đến đền thờ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 51,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 51:10 — Đa-vít cầu xin Đức Chúa Trời 'dựng nên trong tôi một ___'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 51:10 — 'Đức Chúa Trời ôi! xin hãy dựng nên trong tôi một lòng trong sạch, và làm cho mới lại trong tôi một thần linh ngay thẳng.'",
+    "language": "vi",
+    "options": [
+      "Sức lực mới",
+      "Lòng trong sạch và thần linh ngay thẳng",
+      "Ngôi vua đời đời",
+      "Bài ca mới"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 51,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 51:17 — Tế lễ Đức Chúa Trời nhậm là gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 51:17 — 'Của lễ đẹp lòng Đức Chúa Trời, ấy là tâm thần đau thương; Đức Chúa Trời ôi! lòng đau thương thống hối Chúa không khinh dể đâu.'",
+    "language": "vi",
+    "options": [
+      "Của lễ thiêu lớn",
+      "Bộ áo dầu xức",
+      "Tâm thần đau thương; lòng đau thương thống hối",
+      "Của lễ chuộc tội"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 55,
+    "verseStart": 22,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 55:22 khuyên làm gì với gánh nặng?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 55:22 — 'Hãy trao gánh nặng ngươi cho Đức Giê-hô-va, Ngài sẽ nâng đỡ ngươi; Ngài sẽ chẳng hề cho người công bình bị rúng động.'",
+    "language": "vi",
+    "options": [
+      "Bỏ đi",
+      "Trao gánh nặng cho Đức Giê-hô-va — Ngài sẽ nâng đỡ",
+      "Tự gánh đến cùng",
+      "Chia với bạn bè"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 62,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 62:5 — Linh hồn tôi nương dựa nơi ai mà thôi?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 62:5 — 'Hỡi linh hồn ta, hãy nghỉ an nơi Đức Chúa Trời mà thôi; vì sự trông cậy ta ở nơi Ngài.'",
+    "language": "vi",
+    "options": [
+      "Nơi Đức Chúa Trời mà thôi (sự trông cậy ở nơi Ngài)",
+      "Nơi vua công bình",
+      "Nơi đền thờ",
+      "Nơi các thiên sứ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 63,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 63:1 — Đa-vít than 'Linh hồn tôi ___ Chúa, thân thể tôi mỏi mòn về Chúa, trong đất khô đáng và mệt mỏi.'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 63:1 — 'Hỡi Đức Chúa Trời, Chúa là Đức Chúa Trời tôi, vừa sáng tôi tìm cầu Chúa; trong một đất khô khan, cực nhọc, và chẳng có nước, linh hồn tôi khát khao Chúa, thân thể tôi mong mỏi về Chúa.'",
+    "language": "vi",
+    "options": [
+      "Khao khát ăn uống",
+      "Mơ thấy ngợi khen",
+      "Khát khao (thirsts)",
+      "Đợi vinh quang"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 73,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Thi 73:25 — 'Ở trên trời tôi có ai trừ ra Chúa? Còn dưới đất tôi chẳng ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Thi Thiên 73:25 — 'Ở trên trời tôi có ai trừ ra Chúa? Còn dưới đất tôi chẳng ước ao người nào khác hơn Chúa.'",
+    "language": "vi",
+    "options": [
+      "Sợ hãi",
+      "Mơ ước",
+      "Tin nơi",
+      "Ước ao người nào khác hơn Chúa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 84,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 84:10 — Một ngày trong hành lang Chúa quý hơn ngày nào ở đâu khác?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 84:10 — 'Vì một ngày trong hành lang Chúa đáng hơn một ngàn ngày khác. Thà tôi làm kẻ giữ cửa trong nhà Đức Chúa Trời tôi, hơn là ở trong trại kẻ dữ.'",
+    "language": "vi",
+    "options": [
+      "10 ngày",
+      "1.000 ngày khác",
+      "100 ngày",
+      "70 ngày"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 86,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 86:5 mô tả Đức Chúa Trời như thế nào?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 86:5 — 'Chúa ôi! Chúa là thiện, sẵn tha thứ cho, ban sự nhân từ dư dật cho những người kêu cầu cùng Chúa.'",
+    "language": "vi",
+    "options": [
+      "Thiện, sẵn tha thứ, đầy nhân từ",
+      "Vua nghiêm khắc",
+      "Đấng phán xét xa cách",
+      "Cha không đoái xem"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 90,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 90 (của Môi-se) cầu xin Chúa dạy chúng ta đếm gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 90:12 — 'Cầu xin Chúa dạy chúng tôi biết đếm các ngày chúng tôi, hầu cho chúng tôi được lòng khôn ngoan.'",
+    "language": "vi",
+    "options": [
+      "Của cải",
+      "Bạn bè",
+      "Các ngày — để được lòng khôn ngoan",
+      "Các kẻ thù"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 91,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 91:1 — Người ở nơi kín đáo của Đấng Chí Cao sẽ ___?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 91:1 — 'Người nào ở nơi kín đáo của Đấng Chí Cao, sẽ được hằng ở dưới bóng của Đấng Toàn Năng.'",
+    "language": "vi",
+    "options": [
+      "Sống đời đời",
+      "Ở dưới bóng của Đấng Toàn Năng",
+      "Mãi giàu có",
+      "Có nhiều con"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 95,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 95:6 mời gọi làm gì trước Đấng Tạo Hóa?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 95:6 — 'Hãy đến, cúi xuống mà thờ lạy; Khá quì gối xuống trước mặt Đức Giê-hô-va, là Đấng Tạo Hóa chúng tôi!'",
+    "language": "vi",
+    "options": [
+      "Đứng lên cao tiếng",
+      "Im lặng tuyệt đối",
+      "Đến, cúi xuống thờ lạy, quỳ gối",
+      "Đem nhiều của lễ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 96,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 96:1 — 'Hãy hát ___ cho Đức Giê-hô-va.'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 96:1 — 'Hãy hát một bài ca mới cho Đức Giê-hô-va; Hỡi cả trái đất, khá hát xướng cho Đức Giê-hô-va.'",
+    "language": "vi",
+    "options": [
+      "Một bài ca mới",
+      "Một bài ca cũ",
+      "Một bài ai ca",
+      "Một bài thơ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 100,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 100:3 — Hãy biết Giê-hô-va là Đức Chúa Trời, và chính Ngài đã ___",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 100:3 — 'Phải biết rằng Giê-hô-va là Đức Chúa Trời. Chính Ngài đã dựng nên chúng tôi, chúng tôi thuộc về Ngài; chúng tôi là dân sự Ngài, là bầy chiên của đồng cỏ Ngài.'",
+    "language": "vi",
+    "options": [
+      "Phán xét chúng tôi",
+      "Dựng nên chúng tôi — chúng tôi thuộc về Ngài, là bầy chiên của đồng cỏ Ngài",
+      "Chuộc lấy bằng vàng",
+      "Ban cho luật pháp"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 103,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 103:12 — Đức Chúa Trời đã đem tội lỗi chúng ta xa khỏi mình bao xa?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Thi Thiên 103:12 — 'Phương đông xa cách phương tây bao nhiêu, thì Ngài đã đem sự vi phạm chúng tôi khỏi xa chúng tôi bấy nhiêu.'",
+    "language": "vi",
+    "options": [
+      "Một dặm",
+      "Trăm dặm",
+      "Đến tận trời",
+      "Như đông xa cách tây"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 103,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 103:13 — Đức Giê-hô-va thương xót những kẻ kính sợ Ngài như ai?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 103:13 — 'Đức Giê-hô-va thương xót kẻ kính sợ Ngài, khác nào cha thương xót con cái mình.'",
+    "language": "vi",
+    "options": [
+      "Cha thương xót con cái mình",
+      "Vua thương xót thần dân",
+      "Mục tử thương xót chiên",
+      "Mẹ thương xót con"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 110,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Thi 110:1 (Mê-si-a) — 'Đức Giê-hô-va phán cùng Chúa tôi rằng: Hãy ___ cho đến chừng Ta đặt kẻ thù nghịch ngươi làm bệ chân ngươi.'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 110:1 — 'Đức Giê-hô-va phán cùng Chúa tôi rằng: Hãy ngồi bên hữu Ta, cho đến chừng Ta đặt kẻ thù nghịch ngươi làm bệ chân ngươi.' Câu này được Tân Ước trích dẫn nhiều lần về Đấng Christ.",
+    "language": "vi",
+    "options": [
+      "Phán xét các nước",
+      "Ngồi bên hữu Ta",
+      "Đoán xét loài người",
+      "Lập đền thờ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 111,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 111:10 — 'Sự kính sợ Đức Giê-hô-va là khởi đầu ___'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 111:10 — 'Sự kính sợ Đức Giê-hô-va là khởi đầu sự khôn ngoan; phàm ai vâng theo điều răn Ngài có sự thông sáng tốt.'",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan",
+      "Sự sống",
+      "Đức tin",
+      "Tình yêu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 115,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 115:3 — Đức Chúa Trời ngự ở đâu, và Ngài làm gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 115:3 — 'Đức Chúa Trời chúng tôi ở trên các từng trời; phàm điều gì vừa ý Ngài, thì Ngài đã làm.'",
+    "language": "vi",
+    "options": [
+      "Trên núi cao và phán xét nghiêm khắc",
+      "Ở trên đất và an ủi mọi người",
+      "Ở trên các từng trời và làm phàm điều gì vừa ý Ngài",
+      "Ở trong đền thờ và ban phước"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 116,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 116:15 — 'Sự chết của các thánh đồ Ngài là ___ trước mặt Đức Giê-hô-va.'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Thi Thiên 116:15 — 'Sự chết của các thánh đồ Ngài là quí báu trước mặt Đức Giê-hô-va.'",
+    "language": "vi",
+    "options": [
+      "Sự cầu nguyện",
+      "Sự dâng tế lễ",
+      "Sự sống",
+      "Sự chết — quí báu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 117,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Thi Thiên ngắn nhất là chương nào?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 117 chỉ có hai câu — đây là chương ngắn nhất trong Kinh Thánh và cũng là chương giữa Kinh Thánh.",
+    "language": "vi",
+    "options": [
+      "Thi Thiên 100",
+      "Thi Thiên 117",
+      "Thi Thiên 23",
+      "Thi Thiên 1"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 118,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 118:22 — 'Hòn đá mà thợ xây loại ra, đã trở nên ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 118:22 — 'Hòn đá mà thợ xây loại ra, đã trở nên đá đầu góc nhà.' Tân Ước trích dẫn về Đấng Christ.",
+    "language": "vi",
+    "options": [
+      "Hòn đá vô dụng",
+      "Hòn đá ven đường",
+      "Đá đầu góc nhà (cornerstone)",
+      "Đá đường tu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 118,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 118:24 — 'Nầy là ngày mà Đức Giê-hô-va đã làm nên: ___'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 118:24 — 'Nầy là ngày Đức Giê-hô-va làm nên, chúng tôi sẽ mừng rỡ và vui vẻ trong ngày ấy.'",
+    "language": "vi",
+    "options": [
+      "Hãy nghỉ ngơi",
+      "Chúng tôi sẽ mừng rỡ và vui vẻ",
+      "Hãy đến đền thờ",
+      "Hãy ăn chay"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 119,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 119:11 — 'Tôi đã giấu lời Chúa trong lòng tôi, để ___'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 119:11 — 'Tôi đã giấu lời Chúa trong lòng tôi, để tôi không phạm tội cùng Chúa.'",
+    "language": "vi",
+    "options": [
+      "Tôi không phạm tội cùng Chúa",
+      "Tôi nhớ luật pháp",
+      "Tôi dạy dỗ con cái",
+      "Tôi vinh hiển hơn người khác"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 119,
+    "verseStart": 105,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 119:105 — 'Lời Chúa là ___ cho chân tôi, ánh sáng cho đường lối tôi.'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 119:105 — 'Lời Chúa là ngọn đèn cho chân tôi, ánh sáng cho đường lối tôi.'",
+    "language": "vi",
+    "options": [
+      "Cây gậy",
+      "Bài ca",
+      "Ngọn đèn",
+      "Lương thực"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 121,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 121:1-2 — Sự tiếp trợ của tác giả đến từ đâu?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 121:1-2 — 'Tôi ngước mắt lên trên núi: Sự tiếp trợ tôi đến từ đâu? Sự tiếp trợ tôi đến từ Đức Giê-hô-va, là Đấng đã dựng nên trời và đất.'",
+    "language": "vi",
+    "options": [
+      "Từ những núi cao",
+      "Từ Đức Giê-hô-va, Đấng dựng nên trời và đất",
+      "Từ vua công bình",
+      "Từ thầy tế lễ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 122,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 122:1 — Tác giả vui mừng vì điều gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Thi Thiên 122:1 — 'Tôi vui mừng khi người ta nói với tôi rằng: Ta hãy đi đến nhà Đức Giê-hô-va.'",
+    "language": "vi",
+    "options": [
+      "Mưa đến đúng mùa",
+      "Quân thù chạy trốn",
+      "Vua mới lên ngôi",
+      "Đi đến nhà Đức Giê-hô-va"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 126,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 126:5 — 'Kẻ nào gieo giống mà ___ sẽ gặt hái cách vui mừng.'",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 126:5 — 'Kẻ nào gieo giống mà giọt lệ, sẽ gặt hái cách vui mừng.'",
+    "language": "vi",
+    "options": [
+      "Giọt lệ (tears)",
+      "Hột giống nhỏ",
+      "Tay run rẩy",
+      "Đợi mưa lâu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 127,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 127:1 — Nếu Đức Giê-hô-va không xây dựng nhà, thì ___",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 127:1 — 'Nếu Đức Giê-hô-va không cất nhà, thì những thợ xây cất làm uổng công. Nếu Đức Giê-hô-va không giữ thành, thì người canh thức canh luống công.'",
+    "language": "vi",
+    "options": [
+      "Sẽ thành công",
+      "Những thợ xây cất làm uổng công",
+      "Sẽ tan rã sớm",
+      "Sẽ bền vững"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 130,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 130:1 — Tác giả kêu cầu Đức Giê-hô-va từ đâu?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 130:1 — 'Đức Giê-hô-va ôi! từ nơi sâu thẳm tôi cầu khẩn Ngài.'",
+    "language": "vi",
+    "options": [
+      "Từ nơi sâu thẳm (out of the depths)",
+      "Từ trên núi cao",
+      "Từ trong đền thờ",
+      "Từ chiến trường"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 133,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 133:1 — 'Kìa, anh em ăn ở hòa thuận nhau, thật tốt đẹp ___'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 133:1 — 'Kìa, anh em ăn ở hòa thuận nhau, là điều tốt đẹp dường bao!'",
+    "language": "vi",
+    "options": [
+      "Khi vua công bình lên ngôi",
+      "Khi mưa thuận gió hòa",
+      "Khi anh em ăn ở hòa thuận",
+      "Khi đền thờ được xây xong"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 136,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 136 — Câu lặp đi lặp lại trong mỗi câu là gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 136:1 — 'Hãy cảm tạ Đức Giê-hô-va, vì Ngài là thiện; sự nhân từ Ngài còn đến đời đời.' Cụm 'sự nhân từ Ngài còn đến đời đời' lặp lại 26 lần.",
+    "language": "vi",
+    "options": [
+      "Halleluia, A-men",
+      "Sự nhân từ Ngài còn đến đời đời (His steadfast love endures forever)",
+      "Vinh hiển thuộc về Đức Chúa Trời",
+      "Chúa là thánh"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 137,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 137:1 — Dân Do Thái ngồi khóc bên các sông nào, nhớ Si-ôn?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Thi Thiên 137:1 — 'Chúng tôi đang ngồi trên mé sông Ba-by-lôn, bèn nhớ lại Si-ôn, và khóc.'",
+    "language": "vi",
+    "options": [
+      "Sông Giô-đanh",
+      "Sông Ơ-phơ-rát một mình",
+      "Sông Ai Cập",
+      "Các sông Ba-by-lôn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 139,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 139:13 — Đức Chúa Trời tạo nên các bộ phận của tác giả khi nào?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 139:13 — 'Vì chính Chúa nắn nên tâm thần tôi, dệt thành tôi trong lòng mẹ tôi.'",
+    "language": "vi",
+    "options": [
+      "Khi sinh ra",
+      "Khi tuổi thơ",
+      "Trong lòng mẹ — Chúa dệt thành",
+      "Khi đến tuổi trưởng thành"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 139,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 139:23-24 — Đa-vít cầu xin Chúa làm gì với lòng mình?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 139:23-24 — 'Đức Chúa Trời ơi, xin hãy tra xét tôi, và biết lòng tôi; hãy thử thách tôi, và biết tư tưởng tôi; xin xem có lối ác nào trong tôi chăng, xin dắt tôi vào con đường đời đời.'",
+    "language": "vi",
+    "options": [
+      "Bỏ qua tất cả",
+      "Tra xét, biết lòng — xem có lối ác nào, dắt vào con đường đời đời",
+      "Phán xét nghiêm khắc",
+      "Cho phước hạnh"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 143,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 143:10 — Đa-vít cầu xin Chúa dạy mình điều gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 143:10 — 'Xin dạy tôi làm theo ý muốn Chúa, vì Chúa là Đức Chúa Trời tôi; nguyện Thánh Linh tốt lành Chúa dắt tôi vào đất bằng thẳng.'",
+    "language": "vi",
+    "options": [
+      "Làm theo ý muốn Chúa",
+      "Cách thắng kẻ thù",
+      "Cách trở nên giàu có",
+      "Lời tiên tri tương lai"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 145,
+    "verseStart": 18,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 145:18 — Đức Giê-hô-va ở gần ai?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 145:18 — 'Đức Giê-hô-va ở gần mọi người cầu khẩn Ngài, tức ở gần mọi người có lòng thành thực cầu khẩn Ngài.'",
+    "language": "vi",
+    "options": [
+      "Mọi người sống công bình",
+      "Chỉ tổ phụ",
+      "Mọi người cầu khẩn Ngài có lòng thành thực",
+      "Chỉ thầy tế lễ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 146,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 146:3 — Chớ nhờ cậy nơi ai?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Thi Thiên 146:3 — 'Chớ nhờ cậy nơi các vua chúa, cũng đừng nhờ cậy nơi con loài người, là nơi không có sự tiếp trợ.'",
+    "language": "vi",
+    "options": [
+      "Nơi của cải",
+      "Nơi vũ khí",
+      "Nơi tổ phụ",
+      "Nơi vua chúa và con loài người"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 147,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 147:3 — Đức Giê-hô-va chữa lành ai?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 147:3 — 'Ngài chữa lành người có lòng đau thương, và bó vít các vết thương của họ.'",
+    "language": "vi",
+    "options": [
+      "Người khôn ngoan",
+      "Người giàu có",
+      "Người có lòng đau thương — bó vít vết thương",
+      "Vua công bình"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 150,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 150:6 — Câu kết của toàn sách Thi Thiên là gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 150:6 — 'Phàm vật chi thở, hãy ngợi khen Đức Giê-hô-va! Halleluia!'",
+    "language": "vi",
+    "options": [
+      "Hỡi Si-ôn, hãy hát",
+      "Phàm vật chi thở, hãy ngợi khen Đức Giê-hô-va! Halleluia!",
+      "Cảm tạ Đức Giê-hô-va",
+      "Vinh hiển thuộc về Ngài đời đời"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 4,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 4:8 — Tác giả nằm ngủ bình an vì lý do gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 4:8 — 'Hỡi Đức Giê-hô-va, tôi sẽ nằm và ngủ bình an, vì chỉ một mình Ngài làm cho tôi được ở yên ổn.'",
+    "language": "vi",
+    "options": [
+      "Chỉ một mình Đức Giê-hô-va làm cho ở yên ổn",
+      "Vì có lính canh giữ",
+      "Vì có thành kiên cố",
+      "Vì kẻ thù đã chết"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 13:1 — Đa-vít kêu than gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 13:1 — 'Đức Giê-hô-va ôi! Ngài sẽ hằng quên tôi cho đến chừng nào? Ngài giấu mặt cùng tôi cho đến bao giờ?'",
+    "language": "vi",
+    "options": [
+      "Tại sao kẻ ác hưng thịnh",
+      "Hằng quên tôi cho đến chừng nào, giấu mặt đến bao giờ",
+      "Đức Giê-hô-va có công bình không",
+      "Đến khi nào Mê-si-a đến"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 25,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 25:4-5 — Đa-vít cầu xin gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 25:4-5 — 'Hỡi Đức Giê-hô-va, xin cho tôi biết các đường lối Ngài, dạy tôi các nẻo đàng Ngài. Xin hãy dẫn tôi trong lẽ thật của Ngài, và dạy dỗ tôi.'",
+    "language": "vi",
+    "options": [
+      "Chiến thắng kẻ thù",
+      "Của cải dư dật",
+      "Biết các đường lối Chúa, dạy tôi nẻo đàng và dẫn trong lẽ thật",
+      "Tuổi thọ dài"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 33,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 33:9 — Đức Chúa Trời tạo dựng vũ trụ bằng gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 33:9 — 'Vì Ngài phán, thì việc liền có; Ngài biểu, thì vật bèn đứng vững bền.'",
+    "language": "vi",
+    "options": [
+      "Bằng lời phán",
+      "Bằng tay làm việc nhiều ngày",
+      "Bằng các thiên sứ",
+      "Bằng nguyên liệu sẵn có"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 50,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 50:15 — Đức Chúa Trời mời gọi điều gì trong cơn gian truân?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 50:15 — 'Trong ngày gian truân hãy kêu cầu cùng Ta: Ta sẽ giải cứu ngươi, và ngươi sẽ ngợi khen Ta.'",
+    "language": "vi",
+    "options": [
+      "Đến đền thờ",
+      "Kêu cầu cùng Ta, Ta sẽ giải cứu",
+      "Dâng tế lễ thiêu",
+      "Đợi đến ngày cuối cùng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 56,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Thi 56:8 — Đức Chúa Trời để nước mắt tôi vào đâu?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 56:8 — 'Chúa đếm các bước đi qua đi lại của tôi: Xin Chúa để nước mắt tôi trong ve của Chúa, nước mắt tôi há chẳng được ghi vào sổ Chúa sao?'",
+    "language": "vi",
+    "options": [
+      "Trong sông",
+      "Trong đại dương",
+      "Trong ve của Chúa (bottle)",
+      "Trong sa mạc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 67,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 67:1 — Tác giả cầu xin Đức Chúa Trời làm gì để đường lối Ngài được biết khắp đất?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 67:1-2 — 'Nguyện Đức Chúa Trời thương xót chúng tôi, và ban phước cho chúng tôi, soi sáng mặt Ngài trên chúng tôi, để đường lối Chúa được biết trên đất, và sự cứu rỗi của Chúa được biết giữa các dân.'",
+    "language": "vi",
+    "options": [
+      "Thương xót, ban phước, và soi sáng mặt Ngài trên chúng tôi",
+      "Trừng phạt các dân",
+      "Lập đền thờ mới",
+      "Ban quyền lực cho vua"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 68,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 68:5 — Đức Chúa Trời là cha của ai và quan xét binh vực ai?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Thi Thiên 68:5 — 'Đức Chúa Trời ở nơi thánh Ngài là cha kẻ mồ côi, và quan xét binh vực đàn bà góa.'",
+    "language": "vi",
+    "options": [
+      "Cha vua công bình, binh vực kẻ giàu",
+      "Cha tổ phụ, binh vực dân Y-sơ-ra-ên",
+      "Cha thầy tế lễ, binh vực Lê-vi",
+      "Cha kẻ mồ côi, binh vực đàn bà góa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 85,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Thi 85:10 — Bốn đức tính nào gặp nhau và hôn nhau?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 85:10 — 'Sự thương xót và sự chân thật đã gặp nhau; Sự công bình và sự bình an đã hôn nhau.'",
+    "language": "vi",
+    "options": [
+      "Đức tin, hy vọng, tình yêu, sự kiên nhẫn",
+      "Sự thương xót, chân thật, công bình, bình an",
+      "Sự khôn ngoan, hiểu biết, kính sợ, tin",
+      "Quyền năng, vinh hiển, công lý, sự sáng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 89,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 89:1 — Tác giả sẽ hát ca tụng gì 'đời đời'?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 89:1 — 'Tôi sẽ hát xướng về sự thương xót của Đức Giê-hô-va luôn luôn; Từ đời nầy sang đời kia miệng tôi sẽ truyền ra sự thành tín của Ngài.'",
+    "language": "vi",
+    "options": [
+      "Quyền phép Chúa",
+      "Vinh hiển Chúa",
+      "Sự thương xót và sự thành tín của Đức Giê-hô-va",
+      "Lề luật Chúa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 92,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 92:1 — 'Hỡi Đấng Chí Cao, lấy thi ___ để ngợi khen Chúa, ấy là một việc tốt lành.'",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 92:1 — 'Hỡi Đấng Chí Cao, lấy thi ca và ngợi khen Chúa cùng tôn cao danh Ngài là một việc tốt lành.'",
+    "language": "vi",
+    "options": [
+      "Lời tiên tri",
+      "Sự cảm tạ và ngợi khen",
+      "Của lễ thiêu",
+      "Bài thơ ai ca"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 93,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 93:1 — Đức Giê-hô-va ngự trị mặc gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 93:1 — 'Đức Giê-hô-va cai trị; Ngài mặc sự oai nghi; Đức Giê-hô-va mặc mình bằng sức lực, và thắt lưng mình bằng năng lực.'",
+    "language": "vi",
+    "options": [
+      "Sự oai nghi và sức lực",
+      "Áo trắng tinh khôi",
+      "Vương miện vàng",
+      "Áo bào của vua"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 98,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 98:1 — 'Hãy hát ___ cho Đức Giê-hô-va, vì Ngài đã làm việc lạ lùng.'",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 98:1 — 'Hãy hát một bài ca mới cho Đức Giê-hô-va; vì Ngài đã làm việc lạ lùng. Tay hữu và cánh tay thánh của Ngài đã giải cứu Ngài.'",
+    "language": "vi",
+    "options": [
+      "Tiếng kèn",
+      "Bài ai ca",
+      "Một bài ca mới",
+      "Cùng nhau hòa giọng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 103,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 103:8 — Đức Giê-hô-va có lòng nào?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 103:8 — 'Đức Giê-hô-va có lòng thương xót, hay làm ơn, chậm nóng giận, và đầy sự nhân từ.'",
+    "language": "vi",
+    "options": [
+      "Lòng thương xót, hay làm ơn, chậm nóng giận, đầy sự nhân từ",
+      "Lòng nghiêm khắc và công bình",
+      "Lòng phán xét tội nhân",
+      "Lòng thiên vị tổ phụ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 104,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 104:24 — Trái đất đầy gì của Chúa?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Thi Thiên 104:24 — 'Hỡi Đức Giê-hô-va, công việc Ngài nhiều biết bao! Ngài đã làm hết thảy cách khôn ngoan; Trái đất đầy dẫy tài sản Ngài.'",
+    "language": "vi",
+    "options": [
+      "Sự phán xét",
+      "Quyền năng",
+      "Lòng yêu thương",
+      "Tài sản (creatures) Ngài"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 107,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 107:1 — Lý do để cảm tạ Đức Giê-hô-va là gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 107:1 — 'Hãy ngợi khen Đức Giê-hô-va, vì Ngài là thiện; sự nhân từ Ngài còn đến đời đời.'",
+    "language": "vi",
+    "options": [
+      "Vì Ngài giàu lòng nghiêm khắc",
+      "Vì Ngài là thiện; sự nhân từ Ngài còn đến đời đời",
+      "Vì Ngài đáng sợ",
+      "Vì Ngài chỉ giúp một số ít"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 112,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 112:1 — Phước cho ai?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 112:1 — 'Phước thay cho người nào kính sợ Đức Giê-hô-va, hết sức ưa thích các điều răn của Ngài!'",
+    "language": "vi",
+    "options": [
+      "Người kính sợ Đức Giê-hô-va, ưa thích điều răn Ngài",
+      "Người giàu có và mạnh mẽ",
+      "Người được nhiều bạn bè",
+      "Người sống lâu năm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 113,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 113:3 — Danh Đức Giê-hô-va đáng ngợi khen từ đâu đến đâu?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 113:3 — 'Từ nơi mặt trời mọc đến nơi mặt trời lặn, danh Đức Giê-hô-va đáng được ngợi khen.'",
+    "language": "vi",
+    "options": [
+      "Trong đền thờ và nhà hội",
+      "Từ Đan đến Bê-e-Sê-ba",
+      "Từ nơi mặt trời mọc đến nơi mặt trời lặn",
+      "Trong khắp Y-sơ-ra-ên"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 119,
+    "verseStart": 97,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 119:97 — Tác giả yêu mến điều gì 'biết bao'?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Thi Thiên 119:97 — 'Tôi yêu mến luật pháp Chúa biết bao! Trọn ngày tôi suy gẫm luật pháp ấy.'",
+    "language": "vi",
+    "options": [
+      "Cha mẹ tôi",
+      "Anh em tôi",
+      "Bạn hữu tôi",
+      "Luật pháp Chúa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 119,
+    "verseStart": 130,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 119:130 — Sự bày giải lời Chúa làm gì cho người ngu dại?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 119:130 — 'Sự bày giải lời Chúa, soi sáng cho, ban sự thông hiểu cho người thật thà.'",
+    "language": "vi",
+    "options": [
+      "Soi sáng và ban sự thông hiểu",
+      "Làm họ giàu có",
+      "Tạo nên các tiên tri",
+      "Làm họ trở nên thầy"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 119,
+    "verseStart": 165,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 119:165 — Người yêu mến luật pháp Chúa có gì lớn?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 119:165 — 'Phàm kẻ nào yêu mến luật pháp Chúa được bình yên lớn; chẳng có sự gì gây cho họ sa ngã.'",
+    "language": "vi",
+    "options": [
+      "Quyền lực lớn",
+      "Sự bình yên lớn — chẳng có sự gì gây họ sa ngã",
+      "Của cải lớn",
+      "Sự khôn ngoan lớn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 131,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Thi 131:2 — Đa-vít so sánh linh hồn ông với gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 131:2 — 'Tôi đã làm cho linh hồn tôi êm dịu, an tịnh, như đứa trẻ thôi bú đang ngồi với mẹ mình.'",
+    "language": "vi",
+    "options": [
+      "Một sông yên lặng",
+      "Cánh chim bay cao",
+      "Đứa trẻ thôi bú đang ngồi với mẹ mình",
+      "Đám mây trên trời"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 138,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 138:8 — Đa-vít xác tín điều gì về Đức Giê-hô-va?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 138:8 — 'Đức Giê-hô-va sẽ hoàn thành công việc Ngài cho tôi: Hỡi Đức Giê-hô-va, sự nhân từ Ngài còn đến đời đời; xin chớ bỏ công việc của tay Ngài.'",
+    "language": "vi",
+    "options": [
+      "Ngài sẽ phá hủy công việc tôi",
+      "Ngài sẽ hoàn thành công việc Ngài cho tôi — sự nhân từ còn đời đời",
+      "Ngài sẽ thử thách tôi đến cùng",
+      "Ngài sẽ ban con trai trưởng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 141,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 141:3 — Đa-vít cầu xin Chúa đặt cái gì giữ miệng mình?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 141:3 — 'Hỡi Đức Giê-hô-va, xin hãy giữ miệng tôi, và canh cửa môi tôi.'",
+    "language": "vi",
+    "options": [
+      "Người canh giữ — canh cửa môi",
+      "Bột mịn",
+      "Lưỡi gươm",
+      "Sự khôn ngoan"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 145,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 145:3 — Đức Giê-hô-va lớn thay, đáng được ngợi khen lắm; sự cao cả Ngài ___",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Thi Thiên 145:3 — 'Đức Giê-hô-va là lớn, đáng được ngợi khen lắm; sự cao cả Ngài không thể dò được.'",
+    "language": "vi",
+    "options": [
+      "Trên núi cao",
+      "Nơi các từng trời",
+      "Trong đền thờ",
+      "Không thể dò được (unsearchable)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 148,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 148:1-3 — Ai và những gì được kêu gọi ngợi khen Đức Giê-hô-va?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 148:2-3 — 'Hỡi hết thảy các thiên sứ Ngài, hãy ngợi khen Ngài! Hỡi cả cơ binh Ngài, hãy ngợi khen Ngài! Hỡi mặt trời, mặt trăng, hãy ngợi khen Ngài! Hỡi hết thảy ngôi sao sáng, hãy ngợi khen Ngài!'",
+    "language": "vi",
+    "options": [
+      "Chỉ loài người",
+      "Chỉ thiên sứ",
+      "Cả thiên sứ, cơ binh, mặt trời, mặt trăng, các ngôi sao",
+      "Chỉ các vua"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 149,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Thi 149:1 — Hãy hát gì cho Đức Giê-hô-va?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 149:1 — 'Hãy ngợi khen Đức Giê-hô-va! Hãy hát một bài ca mới cho Đức Giê-hô-va, hãy ngợi khen Ngài trong hội các thánh!'",
+    "language": "vi",
+    "options": [
+      "Bài ca cũ",
+      "Một bài ca mới — trong hội các thánh",
+      "Bài thơ ai ca",
+      "Bài ca dân gian"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 150,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Thi 150:3-5 — Hãy ngợi khen Đức Giê-hô-va bằng nhạc cụ nào?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Thi Thiên 150:3-5 — 'Hãy thổi kèn ngợi khen Ngài, gảy đàn cầm và đàn lia mà ngợi khen Ngài! Hãy đánh trống cơm và nhảy múa... hãy đánh chập chỏa.'",
+    "language": "vi",
+    "options": [
+      "Chỉ giọng hát",
+      "Kèn, đàn cầm, đàn lia, trống cơm, nhảy múa, đàn dây, kèn, chập chỏa",
+      "Chỉ kèn lễ",
+      "Chỉ đàn cầm và đàn lia"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 22,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Thi 22:1 — Lời mở đầu của thi thiên này được Chúa Jêsus thốt ra trên thập tự?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Thi Thiên 22:1 — 'Đức Chúa Trời tôi ơi! Đức Chúa Trời tôi ơi! sao Ngài lìa bỏ tôi?' Chúa Jêsus đã trích dẫn câu này trên thập tự (Ma-thi-ơ 27:46).",
+    "language": "vi",
+    "options": [
+      "Đức Chúa Trời tôi ơi! Đức Chúa Trời tôi ơi! sao Ngài lìa bỏ tôi?",
+      "Lạy Cha, xin tha cho họ",
+      "Đã xong rồi",
+      "Vào tay Cha, tôi giao linh hồn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 22,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Thi 22:18 — Tiên tri lời nào về việc đóng đinh Chúa Jêsus?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Thi Thiên 22:18 — 'Chúng nó chia nhau áo xống tôi, Bắt thăm về áo dài tôi.' Ứng nghiệm khi quân lính bắt thăm áo Chúa Jêsus (Giăng 19:23-24).",
+    "language": "vi",
+    "options": [
+      "Bị xiên qua tay và chân",
+      "Người ta sẽ nhạo báng",
+      "Chia nhau áo xống và bắt thăm áo dài",
+      "Nhịn ăn ba ngày"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Thi thiên",
+      "Văn Thơ",
+      "Nâng cao"
+    ]
   }
 ]
