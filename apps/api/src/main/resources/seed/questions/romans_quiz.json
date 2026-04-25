@@ -939,5 +939,687 @@
       "Thư tín",
       "Nâng cao"
     ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô gọi các tín hữu La-mã là gì trong Rô-ma 1:7?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Rô-ma 1:7 — 'Gửi cho hết thảy những người yêu dấu của Đức Chúa Trời tại La Mã, được gọi làm thánh đồ.'",
+    "language": "vi",
+    "options": [
+      "Đầy tớ Đức Chúa Trời",
+      "Anh em của tôi",
+      "Yêu dấu của Đức Chúa Trời, được gọi làm thánh đồ",
+      "Con dân Đức Chúa Trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Mở đầu thư",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 1:20 nói các thuộc tính vô hình của Đức Chúa Trời được nhận biết qua đâu?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Rô-ma 1:20 — 'Bởi những sự trọn lành của Ngài mắt không thấy được, tức là quyền phép đời đời và bổn tánh Ngài, thì từ buổi sáng thế vẫn sờ sờ như mắt xem thấy, khi người ta xem xét công việc của Ngài.'",
+    "language": "vi",
+    "options": [
+      "Qua các tiên tri",
+      "Qua công việc tạo dựng",
+      "Qua các vua hiền",
+      "Qua cảm xúc nội tâm"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Mặc khải tự nhiên",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 2:1 cảnh báo người đoán xét người khác về điều gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Rô-ma 2:1 — 'Vậy hỡi người kia, ngươi không có thể chữa mình được; vì trong khi đoán xét người khác, ngươi cũng tự lên án mình; bởi ngươi đoán xét họ, mà cũng làm các việc như họ.'",
+    "language": "vi",
+    "options": [
+      "Sẽ được tha thứ",
+      "Sẽ trở nên thánh",
+      "Sẽ được khen",
+      "Tự lên án chính mình; vì cũng làm như họ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Đoán xét người khác",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 2:11 nói Đức Chúa Trời như thế nào với loài người?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Rô-ma 2:11 — 'Vì trước mặt Đức Chúa Trời, chẳng vị nể ai đâu.'",
+    "language": "vi",
+    "options": [
+      "Chẳng vị nể ai (không thiên vị)",
+      "Chỉ yêu người Do Thái",
+      "Yêu kẻ giàu",
+      "Tỏ thiên vị với tổ phụ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Không thiên vị",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 10,
+    "verseEnd": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 3:10-12 trích Kinh Thánh nói về tình trạng loài người: 'Chẳng có một người ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Rô-ma 3:10-12 — 'Chẳng có một người công bình nào hết, dẫu một người cũng không... Chẳng có một người nào làm điều lành, dẫu một người cũng không.'",
+    "language": "vi",
+    "options": [
+      "Có thể giữ luật pháp trọn vẹn",
+      "Có quyền tự cứu mình",
+      "Có thể đắc thắng tội lỗi một mình",
+      "Công bình nào hết, dẫu một người cũng không"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Tình trạng loài người",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Rô-ma 4:16, lời hứa được ban cho dòng dõi Áp-ra-ham là bởi gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Rô-ma 4:16 — 'Vậy nên, bởi đức tin mà người ta trở nên kẻ ăn gia tài, hầu cho sự ấy được bởi ân điển, và cho lời hứa được chắc chắn cho cả dòng dõi Áp-ra-ham.'",
+    "language": "vi",
+    "options": [
+      "Bởi việc làm",
+      "Bởi đức tin và ân điển",
+      "Bởi cắt bì",
+      "Bởi luật pháp Môi-se"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Lời hứa qua đức tin",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 5:5 nói tình yêu của Đức Chúa Trời đã được rải khắp lòng chúng ta bởi ai?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Rô-ma 5:5 — 'Vì sự yêu thương của Đức Chúa Trời rải khắp trong lòng chúng ta bởi Đức Thánh Linh đã được ban cho chúng ta.'",
+    "language": "vi",
+    "options": [
+      "Bởi các sứ đồ",
+      "Bởi Lời Chúa duy nhất",
+      "Bởi Đức Thánh Linh được ban cho",
+      "Bởi sự ăn năn liên tục"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Tình yêu Chúa qua Thánh Linh",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 6:4 nói báp-têm tượng trưng cho điều gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Rô-ma 6:4 — 'Vậy chúng ta đã bị chôn với Ngài bởi phép báp-têm trong sự chết Ngài, hầu cho Đấng Christ nhờ vinh hiển của Cha được từ kẻ chết sống lại thể nào, thì chúng ta cũng sống trong đời mới thể ấy.'",
+    "language": "vi",
+    "options": [
+      "Cắt bì cũ",
+      "Lễ tạ ơn",
+      "Sự gia nhập đoàn thể",
+      "Chôn với Đấng Christ trong sự chết và sống lại trong đời mới"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Ý nghĩa báp-têm",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 7,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 7:7 hỏi: 'Vậy chúng ta sẽ nói làm sao? Luật pháp là tội lỗi sao?' — Phao-lô trả lời ra sao?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Rô-ma 7:7 — 'Chẳng hề như vậy! Nhưng tôi chỉ bởi luật pháp mà biết tội lỗi; tôi không biết tham lam là gì nếu luật pháp không nói: Ngươi chớ tham lam.'",
+    "language": "vi",
+    "options": [
+      "Chẳng hề như vậy! Nhờ luật pháp tôi biết tội lỗi",
+      "Đúng, luật pháp là tội",
+      "Luật pháp đã bị bãi bỏ",
+      "Luật pháp đem lại sự sống"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Luật pháp và tội",
+      "Thư tín",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 14,
+    "verseEnd": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Theo Rô-ma 8:14-17, ai được dẫn dắt bởi Thánh Linh thì là gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Rô-ma 8:14 — 'Vì hết thảy kẻ nào được Thánh Linh của Đức Chúa Trời dắt dẫn, đều là con của Đức Chúa Trời.'",
+    "language": "vi",
+    "options": [
+      "Tôi tớ của Chúa",
+      "Bạn hữu của Chúa",
+      "Con của Đức Chúa Trời, đồng kế tự với Đấng Christ",
+      "Vương quốc của Chúa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Con cái Đức Chúa Trời",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 18,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 8:18 so sánh sự khốn khổ hiện tại với điều gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Rô-ma 8:18 — 'Tôi tưởng rằng những sự đau đớn bây giờ chẳng đáng so sánh với sự vinh hiển hầu đến, là sự sẽ được bày ra trong chúng ta.'",
+    "language": "vi",
+    "options": [
+      "Sự đau đớn quá khứ",
+      "Sự khôn ngoan thế gian",
+      "Sự giàu có loài người",
+      "Sự vinh hiển hầu đến (chẳng đáng so sánh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Vinh hiển hầu đến",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô bày tỏ tình yêu sâu sắc nào với dân Y-sơ-ra-ên trong Rô-ma 9:3?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Rô-ma 9:3 — 'Bởi tôi ước ao có thể chính mình bị dứt bỏ, lìa khỏi Đấng Christ, vì anh em bà con tôi theo phần xác.'",
+    "language": "vi",
+    "options": [
+      "Chỉ cầu nguyện cho họ",
+      "Quên đi các anh em ngoại bang",
+      "Mừng vì họ bị bỏ",
+      "Ước ao bị dứt bỏ khỏi Đấng Christ thay cho họ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Lòng vì dân Y-sơ-ra-ên",
+      "Thư tín",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 10:17 nói đức tin đến bởi đâu?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Rô-ma 10:17 — 'Như vậy, đức tin đến bởi sự người ta nghe, mà người ta nghe, là khi lời của Đấng Christ được rao giảng.'",
+    "language": "vi",
+    "options": [
+      "Bởi nỗ lực bản thân",
+      "Bởi giáo dục tốt",
+      "Bởi nghe — sự nghe đến bởi lời Đấng Christ",
+      "Bởi cảm xúc thuộc linh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Đức tin đến bởi nghe",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 11:6 nói nếu cứu rỗi bởi ân điển thì không còn bởi gì nữa?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Rô-ma 11:6 — 'Nhưng nếu bởi ơn thì chẳng phải bởi việc làm nữa; bằng chẳng, thì ơn không còn phải là ơn.'",
+    "language": "vi",
+    "options": [
+      "Bởi tổ phụ",
+      "Bởi việc làm",
+      "Bởi đức tin",
+      "Bởi luật pháp"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Ân điển vs việc làm",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 12:9-10 dạy về tình yêu thương giữa anh em phải như thế nào?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Rô-ma 12:9-10 — 'Lòng yêu thương phải cho thành thật. Hãy gớm sự dữ mà mến sự lành. Hãy lấy lòng yêu thương mềm mại mà yêu nhau như anh em; hãy lấy lễ phép mà kính nhau.'",
+    "language": "vi",
+    "options": [
+      "Chỉ tôn trọng người trưởng lão",
+      "Chỉ yêu người tốt",
+      "Yêu thương theo điều kiện",
+      "Thành thật, gớm sự dữ, mến sự lành, yêu mềm mại, kính lẫn nhau"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Tình yêu anh em",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 12:19 dạy phải nhường gì cho ai khi gặp kẻ thù?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Rô-ma 12:19 — 'Hỡi kẻ rất yêu dấu của tôi ơi, chính mình chớ trả thù ai, nhưng hãy nhường cho cơn thạnh nộ của Đức Chúa Trời; vì có chép lời Chúa phán rằng: Sự trả thù thuộc về Ta.'",
+    "language": "vi",
+    "options": [
+      "Nhường lại nhà cửa",
+      "Nhường vinh dự",
+      "Chớ trả thù; hãy nhường cho cơn thạnh nộ của Đức Chúa Trời",
+      "Nhường công lao"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Chớ trả thù",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 12:21 dạy phải lấy gì thắng điều ác?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Rô-ma 12:21 — 'Đừng để điều ác thắng mình, nhưng hãy lấy điều thiện thắng điều ác.'",
+    "language": "vi",
+    "options": [
+      "Lấy quyền lực",
+      "Lấy điều thiện",
+      "Lấy luật pháp",
+      "Lấy của cải"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thiện thắng ác",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 13:8 nói nợ duy nhất nào còn lại với mọi người?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Rô-ma 13:8 — 'Đừng mắc nợ ai chi hết, chỉ mắc nợ về sự yêu thương nhau mà thôi.'",
+    "language": "vi",
+    "options": [
+      "Nợ tài chánh",
+      "Nợ phục vụ",
+      "Nợ học hỏi",
+      "Nợ về sự yêu thương nhau"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Nợ yêu thương",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 14,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 14:13 khuyên các tín hữu chớ làm gì với nhau về việc ăn uống?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Rô-ma 14:13 — 'Vậy chúng ta chớ xét đoán nhau; nhưng thà nhứt định đừng để hòn đá vấp chân trước mặt anh em mình.'",
+    "language": "vi",
+    "options": [
+      "Chớ xét đoán nhau hoặc đặt cớ vấp phạm",
+      "Hãy phê bình thẳng thắn",
+      "Hãy báo cáo lên trưởng lão",
+      "Hãy bỏ qua không quan tâm"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Đừng làm cớ vấp phạm",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 15:1-2 dạy người mạnh trong đức tin phải làm gì với người yếu?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Rô-ma 15:1 — 'Vậy chúng ta là kẻ mạnh, phải gánh vác sự yếu đuối cho những kẻ kém sức, chớ làm cho đẹp lòng mình.'",
+    "language": "vi",
+    "options": [
+      "Tách khỏi người yếu",
+      "Khinh thường họ",
+      "Gánh vác sự yếu đuối cho họ và làm vừa lòng họ vì sự gây dựng",
+      "Đợi người yếu mạnh dần"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Người mạnh giúp người yếu",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 15:13 cầu chúc Đức Chúa Trời ban cho tín hữu sự gì 'càng dư dật nhờ quyền phép Đức Thánh Linh'?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Rô-ma 15:13 — 'Vậy xin Đức Chúa Trời của sự trông cậy, làm cho anh em đầy dẫy mọi điều vui vẻ và mọi điều bình an trong đức tin, hầu cho anh em nhờ quyền phép Đức Thánh Linh được dư dật sự trông cậy!'",
+    "language": "vi",
+    "options": [
+      "Của cải",
+      "Sự trông cậy (hy vọng)",
+      "Lời nói khôn ngoan",
+      "Quyền lực"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Đức Chúa Trời của hy vọng",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Phao-lô giới thiệu nữ nào trong Rô-ma 16:1-2 là 'nữ chấp sự' của hội thánh Sen-cơ-rê?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Rô-ma 16:1 — 'Tôi gởi gắm Phê-bê, người chị em chúng ta cho anh em, người làm nữ chấp sự của hội thánh Sen-cơ-rê.'",
+    "language": "vi",
+    "options": [
+      "Bê-rít-sin-la",
+      "Mai-ra",
+      "Đa-mát",
+      "Phê-bê"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Phê-bê",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 16:17 cảnh báo về ai trong hội thánh?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Rô-ma 16:17 — 'Hỡi anh em, tôi khuyên anh em coi chừng những kẻ gây nên bè đảng và làm gương xấu, nghịch cùng sự dạy dỗ mà anh em đã nhận. Phải tránh xa họ đi.'",
+    "language": "vi",
+    "options": [
+      "Người nghèo",
+      "Người yếu đức tin",
+      "Những kẻ gây bè đảng và dạy nghịch lại lời sứ đồ",
+      "Người ngoại đạo"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Cảnh báo bè đảng",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 8:9 nói ai không có Thánh Linh của Đấng Christ thì là gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Rô-ma 8:9 — 'Song nếu ai không có Thánh Linh của Đấng Christ, thì người ấy chẳng thuộc về Ngài.'",
+    "language": "vi",
+    "options": [
+      "Chẳng thuộc về Đấng Christ",
+      "Vẫn còn cơ hội",
+      "Là người trung tín",
+      "Là tín hữu mới"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thánh Linh dấu hiệu thuộc về Christ",
+      "Thư tín",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 4:25 nói Chúa Jêsus được giao nộp vì gì và sống lại vì gì?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Rô-ma 4:25 — 'Ngài đã bị nộp vì tội lỗi chúng ta, và sống lại vì sự xưng công bình của chúng ta.'",
+    "language": "vi",
+    "options": [
+      "Vì luật pháp; vì các tổ phụ",
+      "Vì tội lỗi chúng ta; vì sự xưng công bình của chúng ta",
+      "Vì Y-sơ-ra-ên; vì dân ngoại",
+      "Vì giáo lý; vì truyền thống"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Chết và sống lại",
+      "Thư tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Rô-ma 13:14 khuyên các tín hữu phải mặc lấy ai và đừng tiếp dưỡng gì?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Rô-ma 13:14 — 'Hãy mặc lấy Đức Chúa Jêsus Christ, chớ chăm nom về xác thịt mà làm cho phỉ lòng dục nó.'",
+    "language": "vi",
+    "options": [
+      "Mặc lấy luật pháp; đừng chăm tài sản",
+      "Mặc lấy thầy tế lễ; đừng nói nhiều",
+      "Mặc lấy tình thương; đừng nóng giận",
+      "Mặc lấy Đức Chúa Jêsus Christ; chớ chăm nom xác thịt làm phỉ dục"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Mặc lấy Christ",
+      "Thư tín",
+      "Trung cấp"
+    ]
   }
 ]

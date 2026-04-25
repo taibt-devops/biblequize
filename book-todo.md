@@ -56,7 +56,7 @@ Cột "Status": ✅ đủ | ⚠️ dưới min | ❌ thiếu | 🌐 thiếu EN
 | luke | Luke | Gospels | 33 | 33 | 100+ | ⚠️ |
 | john | John | Gospels | 34 | 34 | 100+ | ⚠️ |
 | acts | Acts | Acts | 61 | 61 | 60-80 | ✅ |
-| romans | Romans | Epistle | 34 | 34 | 60-80 | ⚠️ |
+| romans | Romans | Epistle | 60 | 60 | 60-80 | ✅ |
 | 1corinthians | 1 Corinthians | Epistle | 34 | 34 | 50-60 | ⚠️ |
 | 2corinthians | 2 Corinthians | Epistle | 30 | 30 | 40-50 | ⚠️ |
 | galatians | Galatians | Epistle | 20 | 20 | 30-40 | ⚠️ |

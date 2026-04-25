@@ -939,5 +939,687 @@
       "Epistle",
       "Advanced"
     ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Paul address the Roman believers in Romans 1:7?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Romans 1:7 — 'To all those in Rome who are loved by God and called to be saints.'",
+    "language": "en",
+    "options": [
+      "Servants of God",
+      "My brothers",
+      "Loved by God and called to be saints",
+      "Children of God"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Greeting",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Romans 1:20, through what are God's invisible attributes perceived?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Romans 1:20 — 'For his invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made.'",
+    "language": "en",
+    "options": [
+      "Through the prophets",
+      "Through the things created",
+      "Through wise kings",
+      "Through inner feelings"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Natural Revelation",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Romans 2:1 warn about those who judge others?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 2:1 — 'Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things.'",
+    "language": "en",
+    "options": [
+      "Will be forgiven",
+      "Will become holy",
+      "Will be praised",
+      "Condemn themselves; for they do the same things"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Judging Others",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Romans 2:11 say about God in relation to people?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 2:11 — 'For God shows no partiality.'",
+    "language": "en",
+    "options": [
+      "Shows no partiality (no favoritism)",
+      "Loves only Jews",
+      "Loves the rich",
+      "Favors the patriarchs"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "No Partiality",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 10,
+    "verseEnd": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Romans 3:10-12 quotes Scripture about humanity: 'None ___'",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 3:10-12 — 'None is righteous, no, not one... no one does good, not even one.'",
+    "language": "en",
+    "options": [
+      "Can keep the whole law",
+      "Can self-save",
+      "Can defeat sin alone",
+      "Is righteous, no, not one"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Human Condition",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Romans 4:16, by what is the promise to Abraham's offspring given?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Romans 4:16 — 'That is why it depends on faith, in order that the promise may rest on grace and be guaranteed to all his offspring.'",
+    "language": "en",
+    "options": [
+      "By works",
+      "By faith and by grace",
+      "By circumcision",
+      "By the law of Moses"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Promise by Faith",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Through whom does Romans 5:5 say God's love is poured out into our hearts?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Romans 5:5 — 'God's love has been poured into our hearts through the Holy Spirit who has been given to us.'",
+    "language": "en",
+    "options": [
+      "Through the apostles",
+      "Through the Word alone",
+      "Through the Holy Spirit who has been given",
+      "Through continual repentance"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Love through the Spirit",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Romans 6:4 say baptism symbolizes?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 6:4 — 'We were buried therefore with him by baptism into death, in order that, just as Christ was raised from the dead by the glory of the Father, we too might walk in newness of life.'",
+    "language": "en",
+    "options": [
+      "Old circumcision",
+      "Thanksgiving rite",
+      "Joining a community",
+      "Buried with Christ in death and walking in newness of life"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Meaning of Baptism",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 7,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Romans 7:7 asks: 'Is the law sin?' — How does Paul answer?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 7:7 — 'By no means! Yet if it had not been for the law, I would not have known sin. For I would not have known what it is to covet if the law had not said, You shall not covet.'",
+    "language": "en",
+    "options": [
+      "By no means! Through the law I came to know sin",
+      "Yes, the law is sin",
+      "The law has been abolished",
+      "The law gives life"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Law and Sin",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 14,
+    "verseEnd": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "According to Romans 8:14-17, those led by the Spirit are what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Romans 8:14 — 'For all who are led by the Spirit of God are sons of God.'",
+    "language": "en",
+    "options": [
+      "Servants of the Lord",
+      "Friends of the Lord",
+      "Sons of God, fellow heirs with Christ",
+      "The kingdom of the Lord"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Children of God",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 18,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Romans 8:18 compares present sufferings with what?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 8:18 — 'For I consider that the sufferings of this present time are not worth comparing with the glory that is to be revealed to us.'",
+    "language": "en",
+    "options": [
+      "Past sufferings",
+      "Worldly wisdom",
+      "Human wealth",
+      "The glory that is to be revealed (not worth comparing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Glory to Come",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "What deep love for Israel does Paul express in Romans 9:3?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 9:3 — 'For I could wish that I myself were accursed and cut off from Christ for the sake of my brothers, my kinsmen according to the flesh.'",
+    "language": "en",
+    "options": [
+      "Just prayer for them",
+      "Forgetting Gentile brothers",
+      "Glad they were rejected",
+      "Wishing he himself were accursed and cut off from Christ for their sake"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Heart for Israel",
+      "Epistle",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Romans 10:17 says faith comes through what?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Romans 10:17 — 'So faith comes from hearing, and hearing through the word of Christ.'",
+    "language": "en",
+    "options": [
+      "Through self-effort",
+      "Through good education",
+      "Through hearing — and hearing through the word of Christ",
+      "Through spiritual feelings"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Faith from Hearing",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Romans 11:6 says if salvation is by grace, then it is no longer by what?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Romans 11:6 — 'But if it is by grace, it is no longer on the basis of works; otherwise grace would no longer be grace.'",
+    "language": "en",
+    "options": [
+      "By patriarchs",
+      "By works",
+      "By faith",
+      "By the law"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Grace vs Works",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 9,
+    "verseEnd": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How does Romans 12:9-10 say brotherly love should be?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 12:9-10 — 'Let love be genuine. Abhor what is evil; hold fast to what is good. Love one another with brotherly affection. Outdo one another in showing honor.'",
+    "language": "en",
+    "options": [
+      "Honor only the elders",
+      "Love only the good",
+      "Love only conditionally",
+      "Genuine, abhorring evil, holding to good, with brotherly affection, outdoing in honor"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Brotherly Love",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Romans 12:19 teach about an enemy?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Romans 12:19 — 'Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, Vengeance is mine, I will repay, says the Lord.'",
+    "language": "en",
+    "options": [
+      "Yield your house",
+      "Yield your honor",
+      "Never avenge yourselves; leave it to the wrath of God",
+      "Yield your achievements"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Never Avenge",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Romans 12:21 teach must overcome evil?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Romans 12:21 — 'Do not be overcome by evil, but overcome evil with good.'",
+    "language": "en",
+    "options": [
+      "By power",
+      "By good",
+      "By the law",
+      "By wealth"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Good Overcomes Evil",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What is the only debt Romans 13:8 says remains?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 13:8 — 'Owe no one anything, except to love each other.'",
+    "language": "en",
+    "options": [
+      "Financial debt",
+      "Service debt",
+      "Debt of learning",
+      "The debt to love one another"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Debt of Love",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 14,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Romans 14:13 urge believers not to do regarding food matters?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 14:13 — 'Therefore let us not pass judgment on one another any longer, but rather decide never to put a stumbling block or hindrance in the way of a brother.'",
+    "language": "en",
+    "options": [
+      "Not pass judgment on each other or place a stumbling block",
+      "Critique frankly",
+      "Report to elders",
+      "Ignore them"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "No Stumbling Block",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Romans 15:1-2 — what should the strong do for the weak?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Romans 15:1 — 'We who are strong have an obligation to bear with the failings of the weak, and not to please ourselves.'",
+    "language": "en",
+    "options": [
+      "Separate from the weak",
+      "Despise them",
+      "Bear with their failings and please them for their building up",
+      "Wait for them to grow"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Strong Help Weak",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Romans 15:13 prays God of hope to fill believers with what 'abounding by the power of the Holy Spirit'?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Romans 15:13 — 'May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.'",
+    "language": "en",
+    "options": [
+      "Wealth",
+      "Hope",
+      "Wise speech",
+      "Power"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "God of Hope",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "verseStart": 1,
+    "verseEnd": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whom does Paul commend in Romans 16:1-2 as 'a servant of the church at Cenchreae'?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 16:1 — 'I commend to you our sister Phoebe, a servant of the church at Cenchreae.'",
+    "language": "en",
+    "options": [
+      "Priscilla",
+      "Mary",
+      "Damaris",
+      "Phoebe"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Phoebe",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whom does Romans 16:17 warn about in the church?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Romans 16:17 — 'I appeal to you, brothers, to watch out for those who cause divisions and create obstacles contrary to the doctrine that you have been taught; avoid them.'",
+    "language": "en",
+    "options": [
+      "The poor",
+      "The weak in faith",
+      "Those who cause divisions and teach contrary to apostolic doctrine",
+      "Outsiders"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Warning Against Divisions",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does Romans 8:9 say about anyone who does not have the Spirit of Christ?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Romans 8:9 — 'Anyone who does not have the Spirit of Christ does not belong to him.'",
+    "language": "en",
+    "options": [
+      "Does not belong to Christ",
+      "Still has another chance",
+      "Is faithful",
+      "Is a new believer"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Spirit Marks Belonging to Christ",
+      "Epistle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What does Romans 4:25 say Jesus was delivered up for, and raised for?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Romans 4:25 — 'Who was delivered up for our trespasses and raised for our justification.'",
+    "language": "en",
+    "options": [
+      "For the law; for the patriarchs",
+      "For our trespasses; for our justification",
+      "For Israel; for the Gentiles",
+      "For doctrine; for tradition"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Death and Resurrection",
+      "Epistle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Whom does Romans 13:14 urge believers to put on, and what to make no provision for?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Romans 13:14 — 'Put on the Lord Jesus Christ, and make no provision for the flesh, to gratify its desires.'",
+    "language": "en",
+    "options": [
+      "Put on the law; not on possessions",
+      "Put on the priesthood; not many words",
+      "Put on love; no anger",
+      "Put on the Lord Jesus Christ; make no provision for the flesh"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Put on Christ",
+      "Epistle",
+      "Intermediate"
+    ]
   }
 ]
