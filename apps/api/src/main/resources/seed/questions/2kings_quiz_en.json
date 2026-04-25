@@ -355,5 +355,192 @@
       "History",
       "Advanced"
     ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When King Ahaziah sent fifty soldiers to seize Elijah, what happened to them?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Kings 1:10 — 'Elijah said, If I am a man of God, let fire come down from heaven and consume you and your fifty. Then fire came down from heaven and consumed him and his fifty.'",
+    "language": "en",
+    "options": [
+      "They captured Elijah",
+      "They spared Elijah",
+      "They returned to the king",
+      "Fire came down from heaven and consumed them"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Kings",
+      "Fire from Heaven",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 9,
+    "verseStart": 30,
+    "verseEnd": 37,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How did Jezebel die according to 2 Kings 9:33?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Kings 9:33 — 'He (Jehu) said, Throw her down. So they threw her down. And some of her blood splattered on the wall and on the horses, and they trampled on her.'",
+    "language": "en",
+    "options": [
+      "Poisoned",
+      "Thrown down from the window and trampled by horses",
+      "Burned",
+      "Died of old age"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Kings",
+      "Death of Jezebel",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 11,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "When Athaliah killed all the royal seed, who hid Joash in the temple for six years?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Kings 11:2-3 — 'Jehosheba, the daughter of King Joram, sister of Ahaziah, took Joash... and stole him from among the king's sons... And he remained with her six years, hidden in the house of the LORD.'",
+    "language": "en",
+    "options": [
+      "Joash's nurse",
+      "Elisha the prophet",
+      "Jehosheba, Joash's aunt",
+      "Jehoiada the priest alone"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Kings",
+      "Joash Hidden",
+      "History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 18,
+    "verseStart": 5,
+    "verseEnd": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What does 2 Kings 18:5-6 say was unique about Hezekiah among Judah's kings?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Kings 18:5 — 'He trusted in the LORD, the God of Israel, so that there was none like him among all the kings of Judah after him, nor among those who were before him.'",
+    "language": "en",
+    "options": [
+      "Most handsome",
+      "Trusted in the LORD — no king was like him",
+      "Wealthiest",
+      "Longest-lived"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Kings",
+      "Hezekiah's Trust",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 19,
+    "verseStart": 35,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "How many men did the angel of the LORD strike down in the Assyrian camp that night?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Kings 19:35 — 'And that night the angel of the LORD went out and struck down 185,000 in the camp of the Assyrians.'",
+    "language": "en",
+    "options": [
+      "10,000",
+      "50,000",
+      "100,000",
+      "185,000"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Kings",
+      "Angelic Deliverance",
+      "History",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 21,
+    "verseStart": 1,
+    "verseEnd": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Which king of Judah did more evil than the others and set up an Asherah image in the temple?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Kings 21:7 — 'And the carved image of Asherah that he had made he set in the house.' Manasseh reigned 55 years and did evil.",
+    "language": "en",
+    "options": [
+      "Ahaz",
+      "Josiah",
+      "Zedekiah",
+      "Manasseh"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Kings",
+      "Manasseh's Evil",
+      "History",
+      "Basic"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 24,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Whom and how many of Jerusalem did Nebuchadnezzar carry into exile in the first deportation?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "2 Kings 24:14-15 — 'He carried away all Jerusalem... about 10,000... And he carried away Jehoiachin to Babylon.'",
+    "language": "en",
+    "options": [
+      "King Jehoiachin and about 10,000 people",
+      "Only the priests",
+      "All the people of Jerusalem",
+      "Only the youth"
+    ],
+    "tags": [
+      "Old Testament",
+      "2 Kings",
+      "Jehoiachin's Exile",
+      "History",
+      "Basic"
+    ]
   }
 ]

@@ -355,5 +355,192 @@
       "Lịch sử",
       "Nâng cao"
     ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khi vua A-cha-xia sai năm mươi quân đến bắt Ê-li, điều gì xảy ra với họ?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Các Vua 1:10 — 'Ê-li nói: Nếu ta là người của Đức Chúa Trời, nguyện lửa từ trời giáng xuống thiêu tiêu ngươi và năm mươi lính của ngươi! Lửa từ trời liền giáng xuống thiêu tiêu họ.'",
+    "language": "vi",
+    "options": [
+      "Họ bắt được Ê-li",
+      "Họ tha cho Ê-li",
+      "Họ trở về cho vua",
+      "Lửa từ trời giáng xuống thiêu tiêu họ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Các Vua",
+      "Lửa từ trời",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 9,
+    "verseStart": 30,
+    "verseEnd": 37,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Giê-sa-bên chết như thế nào theo 2 Các Vua 9:33?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Các Vua 9:33 — 'Người (Giê-hu) bảo: Hãy ném nó xuống đất! Họ ném nàng xuống đất, và huyết nàng vọt lên tường và lên ngựa.'",
+    "language": "vi",
+    "options": [
+      "Bị thuốc độc giết",
+      "Bị ném xuống từ cửa sổ và bị giẫm bởi ngựa",
+      "Bị thiêu",
+      "Chết già"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Các Vua",
+      "Giê-sa-bên chết",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 11,
+    "verseStart": 1,
+    "verseEnd": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Khi A-tha-li giết hết dòng dõi vua, ai đã giấu Giô-ách trong đền thờ sáu năm?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "2 Các Vua 11:2-3 — 'Giô-sê-ba, con gái vua Giô-ram và là cô của Giô-ách... đem giấu khỏi A-tha-li... Giô-ách ở với cô mình ẩn náu trong đền thờ Đức Giê-hô-va sáu năm.'",
+    "language": "vi",
+    "options": [
+      "Mẹ nuôi của Giô-ách",
+      "Tiên tri Ê-li-sê",
+      "Giô-sê-ba, cô của Giô-ách",
+      "Thầy tế lễ Giê-hô-gia-đa một mình"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Các Vua",
+      "Giô-ách được giấu",
+      "Lịch sử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 18,
+    "verseStart": 5,
+    "verseEnd": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "2 Các Vua 18:5-6 nói Ê-xê-chia có điều gì đặc biệt so với các vua khác của Giu-đa?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "2 Các Vua 18:5 — 'Ê-xê-chia nhờ cậy Giê-hô-va Đức Chúa Trời của Y-sơ-ra-ên; nên trong các vua sau người, hoặc trong các vua trước người, chẳng có ai giống như người.'",
+    "language": "vi",
+    "options": [
+      "Đẹp trai nhất",
+      "Nhờ cậy Đức Giê-hô-va — không vua nào giống như ông",
+      "Giàu có nhất",
+      "Sống lâu nhất"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Các Vua",
+      "Ê-xê-chia tin cậy Chúa",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 19,
+    "verseStart": 35,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Trong đêm, thiên sứ của Đức Giê-hô-va giết bao nhiêu người trong trại quân A-si-ri?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Các Vua 19:35 — 'Trong đêm ấy, có thiên sứ của Đức Giê-hô-va đi đến trong dinh A-si-ri, giết một trăm tám mươi lăm ngàn người.'",
+    "language": "vi",
+    "options": [
+      "10.000 người",
+      "50.000 người",
+      "100.000 người",
+      "185.000 người"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Các Vua",
+      "Thiên sứ giải cứu",
+      "Lịch sử",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 21,
+    "verseStart": 1,
+    "verseEnd": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Vua nào của Giu-đa làm điều ác hơn các vua khác và lập tượng A-sê-ra trong đền thờ?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "2 Các Vua 21:7 — 'Người (Ma-na-se) đặt tượng chạm về A-sê-ra mà ông đã làm ở trong đền.' Ma-na-se cai trị 55 năm và làm điều ác.",
+    "language": "vi",
+    "options": [
+      "A-cha",
+      "Giô-si-a",
+      "Sê-đê-kia",
+      "Ma-na-se"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Các Vua",
+      "Ma-na-se ác",
+      "Lịch sử",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 24,
+    "verseStart": 14,
+    "verseEnd": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Nê-bu-cát-nết-sa đem ai và bao nhiêu người Giê-ru-sa-lem đi lưu đày trong đợt đầu?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "2 Các Vua 24:14-15 — 'Người (Nê-bu-cát-nết-sa) đem hết Giê-ru-sa-lem qua Ba-by-lôn... Người đem vua Giê-hô-gia-kin sang Ba-by-lôn.' Khoảng 10.000 người.",
+    "language": "vi",
+    "options": [
+      "Vua Giê-hô-gia-kin và khoảng 10.000 người",
+      "Chỉ các thầy tế lễ",
+      "Toàn bộ dân Giê-ru-sa-lem",
+      "Chỉ các thiếu niên"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "2 Các Vua",
+      "Lưu đày Giê-hô-gia-kin",
+      "Lịch sử",
+      "Cơ bản"
+    ]
   }
 ]
