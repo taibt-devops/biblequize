@@ -3499,5 +3499,792 @@
       "Purpose of John",
       "Advanced"
     ]
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 11,
+    "content": "According to John 2:1-11, what was Jesus' first sign at the wedding in Cana?",
+    "explanation": "John 2:1-11 — at the wedding in Cana, Jesus turned water in six jars into good wine. This is the 'first of his signs' (2:11) — the first of seven signs in John.",
+    "language": "en",
+    "options": [
+      "Turning water into wine",
+      "Feeding the five thousand",
+      "Walking on the Sea of Galilee",
+      "Withering the fig tree"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "First Sign at Cana",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 9,
+    "content": "According to John 6:9, how many loaves and how many fish did the boy have in the feeding of 5,000?",
+    "explanation": "John 6:9 — 'There is a boy here who has five barley loaves and two fish, but what are they for so many?' This miracle is one of John's seven signs.",
+    "language": "en",
+    "options": [
+      "Seven loaves and two fish",
+      "Five barley loaves and two fish",
+      "Twelve loaves and four small fish",
+      "Three unleavened loaves and one large fish"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Five Loaves Two Fish",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "verseStart": 35,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 35,
+    "content": "The shortest verse in the New Testament is 'Jesus wept' (John 11:35). In what context did he weep?",
+    "explanation": "John 11:33-35 — 'When Jesus saw her weeping, and the Jews who had come with her also weeping, he was deeply moved... Jesus wept'. He came to Lazarus' tomb and showed deep love.",
+    "language": "en",
+    "options": [
+      "When seeing the Jerusalem temple about to be destroyed",
+      "When praying in Gethsemane on the night of his betrayal",
+      "When he came to Lazarus' tomb and saw Mary and Martha weeping",
+      "When he was crucified on the cross at Golgotha"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Jesus Wept",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "verseStart": 35,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 36,
+    "content": "According to John 1:35-36, who pointed to Jesus passing by and declared: 'Behold, the Lamb of God'?",
+    "explanation": "John 1:36 — 'When he [John the Baptist] saw Jesus walking by, he said, Behold, the Lamb of God!' This continues from 1:29 — a title pointing to the Atoning One who replaces the Passover lamb.",
+    "language": "en",
+    "options": [
+      "The apostle Peter on the shore of Galilee when he first met Jesus",
+      "The prophet Isaiah in his vision at the Jerusalem temple",
+      "Mary Magdalene in the garden on resurrection morning",
+      "John the Baptist when Jesus walked by where he stood"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Lamb of God",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 9,
+    "content": "According to John 4:6-7, when Jesus, weary, sat by the well in Samaria, what did he ask the Samaritan woman?",
+    "explanation": "John 4:7 — 'A woman from Samaria came to draw water. Jesus said to her, Give me a drink'. The dialogue that follows leads to teaching about 'living water' (4:10-14) and worship in 'spirit and truth' (4:24).",
+    "language": "en",
+    "options": [
+      "Give me a drink",
+      "Go and call your husband to come here",
+      "Go and tell the people of the city",
+      "Let me lodge at your house tonight"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Samaritan Well",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "According to John 18:10, when the soldiers came to arrest Jesus at Gethsemane, what did Simon Peter do?",
+    "explanation": "John 18:10 — 'Then Simon Peter, having a sword, drew it and struck the high priest's servant and cut off his right ear. The servant's name was Malchus'. Jesus rebuked: 'Put your sword into its sheath' (18:11).",
+    "language": "en",
+    "options": [
+      "He fled the garden immediately with the other disciples",
+      "He denied Jesus right there in the garden before the soldiers",
+      "He drew his sword and cut off the right ear of Malchus, the high priest's servant",
+      "He wept and prayed for Jesus to be delivered"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Peter Cuts Malchus",
+      "Basic"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "verseStart": 29,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 29,
+    "content": "According to John 1:29 (ESV), what is the full statement John the Baptist made when pointing to Jesus?",
+    "explanation": "John 1:29 — 'The next day John saw Jesus coming toward him, and said, Behold, the Lamb of God, who takes away the sin of the world!' The title joins the Passover Lamb (Exod 12) and the Suffering Servant (Isa 53).",
+    "language": "en",
+    "options": [
+      "'Behold, the Messiah Israel has awaited from the patriarchs'",
+      "'Behold, the Lamb of God, who takes away the sin of the world!'",
+      "'Behold, the King of the Jews come to free you from Rome'",
+      "'Behold, the greatest prophet of all the prophets of God'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Takes Away Sin",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 17,
+    "content": "According to John 2:13-17, when Jesus cleansed the temple in Jerusalem (early Passover), what specifically did he do?",
+    "explanation": "John 2:15-16 — 'Making a whip of cords, he drove them all out of the temple, with the sheep and oxen. And he poured out the coins of the money-changers and overturned their tables. And he told those who sold the pigeons, Take these things away; do not make my Father's house a house of trade'.",
+    "language": "en",
+    "options": [
+      "Burned down the merchants' tables in the temple court",
+      "Only stood and rebuked them with a stern verbal warning",
+      "Made a whip of cords, drove out sheep and oxen, scattered coins, overturned tables",
+      "Negotiated with merchants together with the disciples to relocate"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Cleansing Temple",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "verseStart": 46,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 54,
+    "content": "According to John 4:46-54, how did Jesus heal the royal official's son at Capernaum?",
+    "explanation": "John 4:50-53 — 'Jesus said, Go; your son will live. The man believed the word that Jesus spoke to him and went on his way... The father knew that was the hour when Jesus had said to him, Your son will live'. This is the second sign (4:54).",
+    "language": "en",
+    "options": [
+      "By going to the official's house and laying hands on the child",
+      "By giving the child medicinal water from the pool of Siloam",
+      "By sending disciples with the official to pray over the child",
+      "By speaking from a DISTANCE: 'Go, your son lives' — the child healed at that very hour"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Official's Son",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 9,
+    "content": "According to John 5:1-9, how many years had the lame man at Bethesda been sick when Jesus healed him?",
+    "explanation": "John 5:5 — 'One man was there who had been an invalid for thirty-eight years'. Jesus asked 'Do you want to be healed?' and said 'Get up, take up your bed, and walk'. The man was healed instantly.",
+    "language": "en",
+    "options": [
+      "Thirty-eight years of incapacitating illness",
+      "Twelve years like the woman with the issue of blood",
+      "Forty years like Israel in the wilderness wandering",
+      "Eighteen years bent over by a binding spirit"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Bethesda 38 Years",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 51,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 51,
+    "content": "According to John 6:51 (ESV), Jesus declared he is the 'living bread', and that bread is what?",
+    "explanation": "John 6:51 — 'I am the living bread that came down from heaven. If anyone eats of this bread, he will live forever. And the bread that I will give for the life of the world is my flesh'. This continues from 6:35 'I am the bread of life' and leads to the great dispute (6:52-66).",
+    "language": "en",
+    "options": [
+      "An unblemished lamb offered at the Jerusalem temple",
+      "My flesh — for the life of the world",
+      "Manna falling daily in the wilderness in Moses' day",
+      "The unleavened bread of Israel's traditional Passover"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Living Bread",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 7,
+    "verseStart": 37,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 39,
+    "content": "According to John 7:37-39, on the last day of the Feast of Tabernacles, Jesus stood and cried out that if anyone thirsts, let him come to him. What is the specific promise?",
+    "explanation": "John 7:38-39 — 'Whoever believes in me, as the Scripture has said, Out of his heart will flow rivers of living water. Now this he said about the Spirit, whom those who believed in him were to receive'. This anticipates Pentecost.",
+    "language": "en",
+    "options": [
+      "'They shall enter my Father's house in heaven'",
+      "'They shall see rain fill their cisterns'",
+      "'Out of their heart will flow RIVERS OF LIVING WATER' (referring to the Holy Spirit)",
+      "'They shall drink from the pool of Siloam all their days'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Rivers of Living Water",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "verseStart": 31,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 32,
+    "content": "According to John 8:31-32, Jesus said to the Jews who had believed in him: 'If you ___ in my word, you are truly my disciples. You will know the TRUTH, and the TRUTH will ___'.",
+    "explanation": "John 8:31-32 — 'So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, and you will know the truth, and the truth will set you free'. The 'truth' = Christ himself (14:6).",
+    "language": "en",
+    "options": [
+      "abide / set you free",
+      "pray / bless you abundantly",
+      "fast / heal your bodies",
+      "obey / save you from death"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Truth Sets Free",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "verseStart": 36,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 36,
+    "content": "According to John 8:36, Jesus continues the argument about true freedom. What follows?",
+    "explanation": "John 8:36 — 'So if the Son sets you free, you will be free indeed'. This follows 8:34 ('everyone who commits sin is a slave to sin') and 8:35 ('the slave does not remain in the house forever; the son remains forever').",
+    "language": "en",
+    "options": [
+      "'Whoever keeps the Law of Moses shall have true freedom'",
+      "'Whoever is baptized shall be free from sin'",
+      "'Whoever offers a sacrifice at the temple shall be free from judgment'",
+      "'If the SON sets you free, you will be free indeed'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Son Sets Free",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 9,
+    "verseStart": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 38,
+    "content": "According to John 9:35-38, after the healed blind man was cast out by the Pharisees, Jesus sought him out and asked what?",
+    "explanation": "John 9:35-38 — 'Jesus heard that they had cast him out... he said, Do you believe in the Son of Man?... He said, Lord, I believe, and he worshiped him'. One of John's most significant worship scenes.",
+    "language": "en",
+    "options": [
+      "'Do you BELIEVE IN THE SON OF MAN?' — and he said, 'Lord, I believe' and worshiped him",
+      "'Do you wish to be wealthy and powerful?'",
+      "'Do you wish to become my disciple and go preach with us?'",
+      "'Do you wish to take revenge on the Pharisees who cast you out?'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Blind Man Believes",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 30,
+    "content": "According to John 10:27-28, Jesus declared three things about 'my sheep' and himself. What three?",
+    "explanation": "John 10:27-28 — 'My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand'. This is the 'assurance' of salvation that cannot be lost.",
+    "language": "en",
+    "options": [
+      "My sheep graze on mountains / they rest in folds / they drink at springs",
+      "My sheep HEAR my voice / I KNOW THEM and they follow me / I give them ETERNAL LIFE",
+      "My sheep multiply / the shepherd grows wealthy / the fold expands",
+      "My sheep are clean / their wool clothes me / their milk feeds me"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "My Sheep",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "verseStart": 43,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 44,
+    "content": "According to John 11:43-44, when Jesus stood at Lazarus' tomb and finished praying, what did he cry out with a loud voice?",
+    "explanation": "John 11:43-44 — 'When he had said these things, he cried out with a loud voice, Lazarus, come out! The man who had died came out, his hands and feet bound with linen strips, and his face wrapped with a cloth'. The seventh sign of John's Gospel.",
+    "language": "en",
+    "options": [
+      "'O God, let Lazarus live again'",
+      "'Lazarus is my friend, return to me'",
+      "'Lazarus, come out!'",
+      "'Lazarus, you are not dead'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Lazarus Come Out",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 25,
+    "content": "According to John 12:24, what metaphor does Jesus use to teach about death producing much fruit?",
+    "explanation": "John 12:24 — 'Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit'. Jesus speaks of his own death bringing many children to God.",
+    "language": "en",
+    "options": [
+      "A grain of sand falling into the sea dissolves without fruit",
+      "A bird leaving the nest will find a better nest elsewhere",
+      "A lamp lit should not be hidden under a basket",
+      "A GRAIN OF WHEAT, unless it falls and dies, remains alone; if it dies, it bears much fruit"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Grain of Wheat",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 1,
+    "content": "The opening of the 'Upper Room' section (John 13-17) is John 13:1 (ESV). What does it say about Jesus' love for his disciples?",
+    "explanation": "John 13:1 — 'Now before the Feast of the Passover, when Jesus knew that his hour had come to depart out of this world to the Father, having loved his own who were in the world, he loved them to the end'. This frames the love of the Upper Room and the cross.",
+    "language": "en",
+    "options": [
+      "'Having LOVED his own who were in the world, he LOVED THEM TO THE END'",
+      "'He loved only the legitimate heirs of the Abrahamic covenant'",
+      "'He loved the Israelites more than the Gentile disciples'",
+      "'He publicly loved the apostle John more than the other disciples'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Loved to the End",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 14,
+    "content": "According to John 14:13-14, what does Jesus promise about praying 'in my name'?",
+    "explanation": "John 14:13-14 — 'Whatever you ask in my name, this I will do, that the Father may be glorified in the Son. If you ask me anything in my name, I will do it'. The promise is paired with purpose: the Father's glory.",
+    "language": "en",
+    "options": [
+      "'If you ask in my name, I will grant much wealth'",
+      "'Whatever you ask IN MY NAME, this I WILL DO, that the Father may be glorified in the Son'",
+      "'Asking in my name escapes all physical suffering'",
+      "'Asking in my name makes you a great prophet among the people'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Ask in My Name",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 26,
+    "content": "According to John 14:26, what specific role does the 'Helper' (Holy Spirit) have when the Father sends him in Jesus' name?",
+    "explanation": "John 14:26 — 'But the Helper, the Holy Spirit, whom the Father will send in my name, he will teach you all things and bring to your remembrance all that I have said to you'. Role: teach + remind.",
+    "language": "en",
+    "options": [
+      "He will lead disciples on missionary journeys to all nations",
+      "He will heal believers' physical ailments for life immediately",
+      "He will TEACH you all things AND BRING TO REMEMBRANCE all that I have said",
+      "He will give each person a new name in God's kingdom"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Spirit Teaches",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 27,
+    "content": "According to John 14:27 (ESV), Jesus gives peace to his disciples with what specific DIFFERENCE from the world?",
+    "explanation": "John 14:27 — 'Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid'. Christ's peace differs from the world's — not contingent on circumstances.",
+    "language": "en",
+    "options": [
+      "'Peace I leave with you; my peace I give to you. Not as the world gives DO I GIVE TO YOU'",
+      "'My peace is material wealth secured on earth'",
+      "'My peace is victory over enemies on the battlefield'",
+      "'My peace is given only to those with the greatest faith'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "My Peace",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 15,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 15,
+    "content": "According to John 15:14-15, Jesus distinguishes 'servants' from 'friends'. What is the distinction?",
+    "explanation": "John 15:14-15 — 'You are my friends if you do what I command you. No longer do I call you servants, for the servant does not know what his master is doing; but I have called you friends, for all that I have heard from my Father I have made known to you'.",
+    "language": "en",
+    "options": [
+      "Servants obey while friends do not obey but only sit and feast",
+      "Servants do heavy work while friends only do light, easy tasks",
+      "Servants have no authority while friends have authority to preach",
+      "The servant does not know what his master does; I call you FRIENDS because I have MADE KNOWN to you all I heard from my Father"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Friends Not Servants",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 16,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 14,
+    "content": "According to John 16:8-14, what works will the Holy Spirit do when he comes — both in the world and with the disciples? (select all correct)",
+    "explanation": "John 16:8 (3 convictions), 16:13 (guidance into truth), 16:14 (glorifies Christ). Personal exorcism is not the specific role enumerated here.",
+    "language": "en",
+    "options": [
+      "Convict the world concerning sin, righteousness, and judgment",
+      "Guide the disciples into ALL TRUTH (not speaking on his own, but what he hears)",
+      "Glorify Christ — for he takes what is Christ's and declares it",
+      "Automatically exorcise the disciples' relatives' demons"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Spirit's Work",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 16,
+    "verseStart": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 33,
+    "content": "According to John 16:33, what is Jesus' final word to his disciples in the Upper Room Discourse before the Passion?",
+    "explanation": "John 16:33 — 'I have said these things to you, that in me you may have peace. In the world you will have tribulation. But take heart; I have overcome the world'. Structure: tribulation is real; victory is also real.",
+    "language": "en",
+    "options": [
+      "'In the world you must rely only on your own strength'",
+      "'In the world you will have TRIBULATION; but TAKE HEART, I have OVERCOME the world'",
+      "'In the world you will never face any difficulty whatsoever'",
+      "'In the world you must take up the sword and fight for me'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Overcome World",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 17,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 3,
+    "content": "According to John 17:3, how does Jesus precisely define 'eternal life'?",
+    "explanation": "John 17:3 — 'And this is eternal life, that they know you, the only true God, and Jesus Christ whom you have sent'. 'Eternal life' = a KNOWING relationship with the true God, not merely endless duration.",
+    "language": "en",
+    "options": [
+      "'It is entry into God's kingdom to live forever with the saints'",
+      "'It is material wealth and earthly peace throughout life'",
+      "'It is to KNOW the only true God and Jesus Christ whom you have sent'",
+      "'It is never to die physically but to live forever with one's family'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Eternal Life Defined",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 17,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 11,
+    "content": "In the High Priestly Prayer (John 17:11), what does Jesus pray to the Father for his disciples?",
+    "explanation": "John 17:11 — 'And I am no longer in the world, but they are in the world, and I am coming to you. Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one'.",
+    "language": "en",
+    "options": [
+      "Keep them from all earthly illnesses",
+      "Make them materially wealthy in this present life",
+      "Grant them a new temple in Jerusalem",
+      "KEEP them in your NAME which you have given me, that THEY MAY BE ONE, even as we are one"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Unity Prayer",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 5,
+    "content": "According to John 19:5, after Jesus had been scourged, crowned with thorns, and clothed in purple, Pilate brought him out and said what?",
+    "explanation": "John 19:5 — 'So Jesus came out, wearing the crown of thorns and the purple robe. Pilate said to them, Behold the man!' The Latin 'Ecce Homo' is famous in Western art.",
+    "language": "en",
+    "options": [
+      "'Behold, the MAN!' (Ecce Homo)",
+      "'Crucify him at once'",
+      "'I find no fault in this man'",
+      "'He is truly the King of the Jews'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Behold the Man",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 17,
+    "content": "According to John 21:15-17, after the resurrection Jesus restored Peter through the question 'do you love me?' repeated three times. Which responses/charges ARE in the text? (select all correct)",
+    "explanation": "John 21:15-17 — Jesus asks 'do you love me?' three times. (1) 'Feed my lambs', (2) 'Tend my sheep', (3) 'Feed my sheep'. The third time Peter 'was grieved' because asked thrice — paralleling his triple denial.",
+    "language": "en",
+    "options": [
+      "First time: 'Feed my LAMBS' to Peter the disciple",
+      "Second time: 'Tend my sheep' to Peter the disciple",
+      "Third time: 'Feed my sheep' — Peter grieved at threefold ask",
+      "Fourth time: 'Go and baptize the whole world entirely'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Peter Restored",
+      "Intermediate"
+    ]
   }
 ]

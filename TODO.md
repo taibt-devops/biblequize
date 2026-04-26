@@ -21,12 +21,12 @@
 - File(s): `matthew_quiz.json` + `matthew_quiz_en.json` + `scripts/append_matthew_medium_v2.py`
 - Cover 3 chapters trước đó 0 Medium (16, 22, 23) + 12 sparse chapters
 
-### Task V2M-3: John +29 (6E + 23M)
-- Status: [ ] TODO
-- Current: 131 (E42 M48 H41) → Target: 160 (E48 M72 H40)
-- Plan: +6 Easy + 23 Medium
-- File(s): `john_quiz.json` + `john_quiz_en.json`
-- Commit: `feat(seed): John +29 Easy/Medium for V2 Phase 2 (131→160)`
+### Task V2M-3: John +29 (6E + 23M) [x] DONE
+- 131→160 (E48 M71 H41, ratio 30.0/44.4/25.6% — khớp V2 target)
+- Seeder log `inserted=29` each file, total 4620→4678, invalid=0
+- 27 single + 2 multi (93/7); idx 8/6/7/6
+- File(s): `john_quiz.json` + `john_quiz_en.json` + `scripts/append_john_em_v2.py`
+- Coverage: Ch 16 (0 Medium trước đó) + sparse 8/9/11/21
 
 ### Task V2M-4: Romans +45 (15E + 30M)
 - Status: [ ] TODO

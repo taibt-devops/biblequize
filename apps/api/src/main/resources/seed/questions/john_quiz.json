@@ -3499,5 +3499,792 @@
       "Mục đích sách Giăng",
       "Nâng cao"
     ]
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 11,
+    "content": "Theo Giăng 2:1-11, dấu lạ đầu tiên Chúa Jêsus làm tại tiệc cưới Ca-na là gì?",
+    "explanation": "Giăng 2:1-11 — tại tiệc cưới Ca-na, Chúa Jêsus hóa nước trong sáu cái chum thành rượu ngon. Đây là 'dấu lạ thứ nhứt' (2:11) — dấu lạ đầu trong bảy dấu của Phúc âm Giăng.",
+    "language": "vi",
+    "options": [
+      "Hóa nước thành rượu nho",
+      "Cho năm ngàn người ăn no",
+      "Đi trên mặt biển Ga-li-lê",
+      "Khiến cây vả khô héo"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Dấu lạ Ca-na",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 9,
+    "content": "Theo Giăng 6:9, đứa trẻ trong câu chuyện cho 5,000 người ăn có bao nhiêu bánh và bao nhiêu cá?",
+    "explanation": "Giăng 6:9 — 'Đây có một đứa con trai, có năm cái bánh mạch nha và hai con cá; nhưng đông người dường nầy, thì ngần ấy có thấm vào đâu?' Phép lạ này là một trong bảy dấu lạ trong Giăng.",
+    "language": "vi",
+    "options": [
+      "Bảy bánh và hai con cá",
+      "Năm cái bánh lúa mạch và hai con cá",
+      "Mười hai bánh và bốn cá nhỏ",
+      "Ba bánh không men và một cá lớn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Năm bánh hai cá",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "verseStart": 35,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 35,
+    "content": "Câu Kinh Thánh ngắn nhất trong Tân Ước là 'Đức Chúa Jêsus khóc' (Giăng 11:35). Ngài khóc trong hoàn cảnh nào?",
+    "explanation": "Giăng 11:33-35 — 'Đức Chúa Jêsus thấy người khóc, và những người Giu-đa đến với người cũng khóc, bèn đau lòng cảm động mà phán... Đức Chúa Jêsus khóc'. Ngài đến mộ La-xa-rơ và bày tỏ tình thương sâu xa.",
+    "language": "vi",
+    "options": [
+      "Khi nhìn thấy đền thờ Giê-ru-sa-lem sắp bị phá hủy",
+      "Khi cầu nguyện trong vườn Ghết-sê-ma-nê đêm bị phản",
+      "Khi đến mộ La-xa-rơ và thấy chị em Ma-ri, Ma-thê khóc",
+      "Khi bị đóng đinh trên thập tự giá tại Gô-gô-tha"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Đức Chúa Jêsus khóc",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "verseStart": 35,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 36,
+    "content": "Theo Giăng 1:35-36, ai đã chỉ Chúa Jêsus đi qua và tuyên bố: 'Kìa, Chiên con của Đức Chúa Trời'?",
+    "explanation": "Giăng 1:36 — 'Nhìn Đức Chúa Jêsus đi ngang qua, người [Giăng Báp-tít] nói rằng: Kìa, Chiên con của Đức Chúa Trời!' Lời này tiếp tục từ 1:29 — danh hiệu chỉ về Đấng chuộc tội thay cho con chiên Vượt Qua.",
+    "language": "vi",
+    "options": [
+      "Sứ đồ Phi-e-rơ trên bờ biển Ga-li-lê khi mới gặp Chúa",
+      "Tiên tri Ê-sai trong khải tượng tại đền thờ Giê-ru-sa-lem",
+      "Bà Ma-ri Ma-đơ-len trong vườn vào sáng phục sinh đầu tuần",
+      "Giăng Báp-tít khi Chúa Jêsus đi qua nơi ông đang đứng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Chiên con Đức Chúa Trời",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 9,
+    "content": "Theo Giăng 4:6-7, khi Chúa Jêsus mỏi mệt ngồi bên giếng tại Sa-ma-ri, Ngài đã xin người đàn bà Sa-ma-ri điều gì?",
+    "explanation": "Giăng 4:7 — 'Một người đàn bà Sa-ma-ri đến múc nước. Đức Chúa Jêsus phán rằng: Hãy cho ta uống'. Cuộc đối thoại sau đó dẫn đến lời dạy về 'nước hằng sống' (4:10-14) và sự thờ phượng 'thần và lẽ thật' (4:24).",
+    "language": "vi",
+    "options": [
+      "Cho ta uống nước",
+      "Hãy gọi chồng ngươi đến đây",
+      "Hãy đi báo tin cho dân thành",
+      "Cho ta nghỉ qua đêm tại nhà ngươi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Bên giếng Sa-ma-ri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "Theo Giăng 18:10, khi quân đến bắt Chúa Jêsus tại vườn Ghết-sê-ma-nê, Si-môn Phi-e-rơ làm gì?",
+    "explanation": "Giăng 18:10 — 'Bấy giờ, Si-môn Phi-e-rơ có một thanh gươm, bèn rút ra, đánh đầy tớ của thầy cả thượng phẩm, chém đứt tai bên hữu. Đầy tớ đó tên là Man-chu'. Chúa quở: 'hãy nạp gươm ngươi vào vỏ' (18:11).",
+    "language": "vi",
+    "options": [
+      "Chạy trốn khỏi vườn ngay lập tức cùng các môn đồ khác",
+      "Chối Chúa ngay tại vườn trước mặt các quân lính",
+      "Rút gươm chém đứt tai phải của Man-chu, đầy tớ thầy tế lễ",
+      "Khóc lóc và cầu nguyện cho Chúa được giải cứu"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Phi-e-rơ chém Man-chu",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "verseStart": 29,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 29,
+    "content": "Theo Giăng 1:29 (RVV11), Giăng Báp-tít chỉ Chúa Jêsus và phán câu trọn vẹn nào?",
+    "explanation": "Giăng 1:29 — 'Qua ngày sau, Giăng thấy Đức Chúa Jêsus đến cùng mình, thì nói rằng: Kìa, Chiên con của Đức Chúa Trời, là Đấng cất tội lỗi thế gian đi'. Danh hiệu này gắn với Chiên Vượt Qua (Xuất 12) và Tôi tớ chịu khổ (Ê-sai 53).",
+    "language": "vi",
+    "options": [
+      "'Kìa, Đấng Mê-si-a Y-sơ-ra-ên đã trông đợi từ thời các tổ phụ'",
+      "'Kìa, Chiên con của Đức Chúa Trời, là Đấng cất tội lỗi thế gian đi'",
+      "'Kìa, vua dân Giu-đa đến để giải phóng các ngươi khỏi La-mã'",
+      "'Kìa, tiên tri lớn nhất trong các tiên tri của Đức Chúa Trời'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Cất tội lỗi thế gian",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 17,
+    "content": "Theo Giăng 2:13-17, khi Chúa Jêsus dọn sạch đền thờ tại Giê-ru-sa-lem (lễ Vượt Qua đầu chức vụ), Ngài làm gì cụ thể?",
+    "explanation": "Giăng 2:15-16 — 'Ngài bện một cái roi bằng dây, bèn đuổi hết thảy khỏi đền thờ, chiên và bò nữa; vãi tiền người đổi bạc và lật đổ bàn của họ. Ngài phán cùng kẻ bán bồ câu rằng: Hãy cất bỏ đồ đó khỏi đây, đừng làm cho nhà Cha ta thành nhà buôn bán'.",
+    "language": "vi",
+    "options": [
+      "Đốt cháy hết bàn buôn bán giữa sân đền thờ",
+      "Chỉ đứng nhìn và quở trách bằng lời cảnh cáo nghiêm khắc",
+      "Lấy dây làm roi, đuổi chiên bò ra, đổ tiền và lật bàn người đổi bạc",
+      "Cùng các môn đồ thương lượng với người buôn dời chỗ kinh doanh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Dọn sạch đền thờ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "verseStart": 46,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 54,
+    "content": "Theo Giăng 4:46-54, Chúa Jêsus chữa lành con trai quan thị vệ tại Ca-bê-na-um bằng cách nào?",
+    "explanation": "Giăng 4:50-53 — 'Đức Chúa Jêsus phán rằng: Hãy đi, con của ngươi sống. Người tin lời Đức Chúa Jêsus đã phán cho mình, bèn đi... Người cha biết rằng ấy là chính giờ đó Đức Chúa Jêsus đã phán cùng mình rằng: Con của ngươi sống'. Đây là dấu lạ thứ hai (4:54).",
+    "language": "vi",
+    "options": [
+      "Đến tận nhà quan và đặt tay trên đầu đứa trẻ",
+      "Cho đứa trẻ uống nước thuốc chữa từ giếng Si-lô-ê",
+      "Sai các môn đồ đi với quan để cầu nguyện cho đứa trẻ",
+      "Phán từ XA: 'Hãy đi, con của ngươi sống' — đứa trẻ lành ngay giờ đó"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Chữa con quan",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 9,
+    "content": "Theo Giăng 5:1-9, người liệt tại ao Bê-tết-đa đã đau bao nhiêu năm khi Chúa Jêsus chữa lành?",
+    "explanation": "Giăng 5:5 — 'Tại đó có một người bị bệnh đã ba mươi tám năm'. Chúa hỏi 'ngươi có muốn lành chăng?' và phán 'hãy đứng dậy, vác giường ngươi và đi'. Người đó liền lành.",
+    "language": "vi",
+    "options": [
+      "Ba mươi tám năm bị bệnh tật không thể đi lại",
+      "Mười hai năm như người đàn bà chảy huyết kia",
+      "Bốn mươi năm như dân Y-sơ-ra-ên trong sa mạc",
+      "Mười tám năm bị một quỷ trói buộc làm gù lưng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Bê-tết-đa 38 năm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 51,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 51,
+    "content": "Theo Giăng 6:51 (RVV11), Chúa Jêsus tuyên bố Ngài là 'bánh hằng sống' và bánh ấy là gì?",
+    "explanation": "Giăng 6:51 — 'Ta là bánh hằng sống từ trên trời xuống; nếu ai ăn bánh ấy, thì sẽ sống vô cùng; và bánh mà ta sẽ ban cho vì sự sống của thế gian tức là thịt ta'. Lời này tiếp diễn từ 6:35 'Ta là bánh của sự sống' và dẫn đến tranh luận lớn (6:52-66).",
+    "language": "vi",
+    "options": [
+      "Chiên con không tì vết được dâng tại đền thờ Giê-ru-sa-lem",
+      "Thịt Ta — vì sự sống của thế gian",
+      "Manh-na rơi xuống mỗi ngày trong sa mạc thời Mô-se xưa",
+      "Bánh không men của lễ Vượt Qua truyền thống Y-sơ-ra-ên"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Bánh hằng sống",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 7,
+    "verseStart": 37,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 39,
+    "content": "Theo Giăng 7:37-39, vào ngày sau hết của Lễ Lều Tạm, Chúa Jêsus đứng kêu lớn rằng nếu ai khát, hãy đến với Ngài. Lời hứa cụ thể là gì?",
+    "explanation": "Giăng 7:38-39 — 'Như Kinh thánh đã chép rằng: Kẻ nào tin ta thì sông nước hằng sống sẽ chảy từ trong lòng mình, y như Kinh thánh đã chép vậy. Ngài phán điều đó chỉ về Đức Thánh Linh mà người nào tin Ngài sẽ nhận lấy'. Lời tiên báo Lễ Ngũ Tuần.",
+    "language": "vi",
+    "options": [
+      "'Người ấy sẽ được vào nhà Cha ta trên trời'",
+      "'Người ấy sẽ thấy nước mưa đầy bể chứa của mình'",
+      "'Từ trong lòng người ấy sẽ chảy ra những SÔNG NƯỚC HẰNG SỐNG' (chỉ về Đức Thánh Linh)",
+      "'Người ấy sẽ được uống nước từ giếng Si-lô-ê suốt đời'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Sông nước hằng sống",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "verseStart": 31,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 32,
+    "content": "Theo Giăng 8:31-32, Chúa Jêsus phán cùng những người Giu-đa đã tin Ngài: 'Nếu các ngươi hằng ___ trong lời ta, thì thật là môn đồ ta. Các ngươi sẽ biết LẼ THẬT, và LẼ THẬT sẽ ___'.",
+    "explanation": "Giăng 8:31-32 — 'Bấy giờ Đức Chúa Jêsus phán cùng những người Giu-đa đã tin Ngài, rằng: Nếu các ngươi hằng ở trong lời ta, thì thật là môn đồ ta; các ngươi sẽ biết lẽ thật, và lẽ thật sẽ buông tha các ngươi'. 'Lẽ thật' = chính Đấng Christ (14:6).",
+    "language": "vi",
+    "options": [
+      "ở / buông tha các ngươi",
+      "cầu nguyện / ban phước cho các ngươi",
+      "kiêng ăn / chữa lành các ngươi",
+      "vâng lời / cứu các ngươi khỏi chết"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Lẽ thật buông tha",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "verseStart": 36,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 36,
+    "content": "Theo Giăng 8:36, Chúa Jêsus tiếp tục lập luận về sự tự do thật sự. Lời nào sau đó?",
+    "explanation": "Giăng 8:36 — 'Vậy nếu Con buông tha các ngươi, các ngươi sẽ thật được tự do'. Câu này tiếp 8:34 ('ai phạm tội là tôi mọi của tội lỗi') và 8:35 ('tôi mọi không ở luôn trong nhà; còn Con thì ở luôn').",
+    "language": "vi",
+    "options": [
+      "'Ai vâng giữ luật pháp Môi-se sẽ được tự do thật'",
+      "'Ai làm phép báp-têm sẽ được tự do khỏi tội lỗi'",
+      "'Ai dâng tế lễ tại đền thờ sẽ được tự do khỏi án phạt'",
+      "'Nếu CON BUÔNG THA các ngươi, các ngươi sẽ thật được tự do'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Con buông tha",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 9,
+    "verseStart": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 38,
+    "content": "Theo Giăng 9:35-38, sau khi người mù được chữa lành bị Pha-ri-si đuổi ra khỏi nhà hội, Chúa Jêsus đi tìm và hỏi anh điều gì?",
+    "explanation": "Giăng 9:35-38 — 'Đức Chúa Jêsus nghe họ đã đuổi người ra... bèn phán rằng: Ngươi có tin đến Con Đức Chúa Trời chăng?... Người thưa rằng: Lạy Chúa, tôi tin; bèn sấp mình xuống trước mặt Ngài'. Đây là một trong những cảnh thờ lạy đầy ý nghĩa.",
+    "language": "vi",
+    "options": [
+      "'Ngươi có TIN ĐẾN CON ĐỨC CHÚA TRỜI chăng?' — và anh thưa: 'Lạy Chúa, tôi tin' rồi sấp mình thờ lạy",
+      "'Ngươi có muốn được giàu có và quyền thế chăng?'",
+      "'Ngươi có muốn trở thành môn đồ của ta cùng đi truyền giáo chăng?'",
+      "'Ngươi có muốn báo thù Pha-ri-si đã đuổi ngươi ra chăng?'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Người mù xưng nhận",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 30,
+    "content": "Theo Giăng 10:27-28, Chúa Jêsus tuyên bố ba điều về 'chiên ta' và Ngài. Ba điều đó là gì?",
+    "explanation": "Giăng 10:27-28 — 'Chiên ta nghe tiếng ta, ta quen nó, và nó theo ta. Ta ban cho nó sự sống đời đời; nó chẳng chết mất bao giờ, và chẳng ai cướp nó khỏi tay ta'. Đây là 'sự bảo đảm' về sự cứu rỗi không mất.",
+    "language": "vi",
+    "options": [
+      "Chiên ta gặm cỏ trên núi / nó nghỉ trong chuồng / nó uống nước nơi suối",
+      "Chiên ta NGHE TIẾNG ta / ta BIẾT NÓ và nó theo ta / ta ban cho nó SỰ SỐNG ĐỜI ĐỜI",
+      "Chiên ta sinh sản nhiều / chăn chiên giàu có / chuồng chiên rộng lớn",
+      "Chiên ta sạch sẽ / lông chiên dùng làm áo / sữa chiên là thức ăn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Chiên ta nghe tiếng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "verseStart": 43,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 44,
+    "content": "Theo Giăng 11:43-44, khi Chúa Jêsus đứng tại mộ La-xa-rơ và cầu nguyện xong, Ngài kêu lớn tiếng điều gì?",
+    "explanation": "Giăng 11:43-44 — 'Khi Ngài nói xong, bèn kêu lên một tiếng lớn rằng: Hỡi La-xa-rơ, hãy ra! Người chết đi ra, chân tay buộc bằng vải liệm và mặt thì phủ khăn'. Phép lạ thứ bảy của Phúc âm Giăng.",
+    "language": "vi",
+    "options": [
+      "'Hỡi Đức Chúa Trời, xin cho La-xa-rơ sống lại'",
+      "'La-xa-rơ là bạn ta, hãy quay về với ta'",
+      "'Hỡi La-xa-rơ, hãy ra!'",
+      "'La-xa-rơ ơi, ngươi không chết đâu'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "La-xa-rơ ra",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 25,
+    "content": "Theo Giăng 12:24, Chúa Jêsus dùng ẩn dụ nào để dạy về sự chết và sự sống nhiều?",
+    "explanation": "Giăng 12:24 — 'Quả thật, quả thật, ta nói cùng các ngươi, nếu hột giống lúa mì kia, chẳng chết sau khi gieo xuống đất, thì cứ ở một mình; nhưng nếu chết đi, thì kết quả được nhiều'. Chúa nói về sự chết của Ngài đem đến nhiều con cái Đức Chúa Trời.",
+    "language": "vi",
+    "options": [
+      "Một hột cát rơi xuống biển sẽ tan ra mà không kết quả",
+      "Một con chim bay khỏi tổ sẽ tìm được tổ mới hơn",
+      "Một ngọn đèn được thắp lên không nên giấu dưới thùng",
+      "Một HỘT GIỐNG LÚA MÌ chẳng chết đi thì cứ một mình; nếu chết đi, sẽ kết quả nhiều"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Hột giống lúa mì",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 1,
+    "content": "Câu mở đầu phần 'Phòng Cao' (Giăng 13-17) là Giăng 13:1 (RVV11). Câu này nói gì về tình yêu của Chúa Jêsus với môn đồ?",
+    "explanation": "Giăng 13:1 — 'Trước ngày lễ Vượt Qua, Đức Chúa Jêsus biết giờ mình phải lìa thế gian đặng trở về cùng Đức Chúa Cha đến rồi; Ngài đã yêu kẻ thuộc về mình trong thế gian, thì cứ yêu cho đến cuối cùng'. Câu này định khung tình yêu của Phòng Cao và thập tự.",
+    "language": "vi",
+    "options": [
+      "'Ngài YÊU THƯƠNG kẻ thuộc về mình trong thế gian, thì cứ yêu thương cho ĐẾN CUỐI CÙNG'",
+      "'Ngài chỉ yêu các môn đồ kế thừa hợp pháp của giao ước Áp-ra-ham'",
+      "'Ngài yêu thương dân Y-sơ-ra-ên hơn các môn đồ ngoại giáo'",
+      "'Ngài yêu thương sứ đồ Giăng nhiều hơn các môn đồ khác bằng cách công khai'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Yêu cho đến cuối",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 14,
+    "content": "Theo Giăng 14:13-14, Chúa Jêsus hứa điều gì về cầu nguyện 'nhân danh ta'?",
+    "explanation": "Giăng 14:13-14 — 'Các ngươi nhân danh ta mà cầu xin điều chi mặc dầu, ta sẽ làm cho, để Cha được sáng danh nơi Con. Nếu các ngươi nhân danh ta xin điều chi, ta sẽ làm cho'. Lời hứa kết hợp với mục đích: Cha được sáng danh.",
+    "language": "vi",
+    "options": [
+      "'Nếu các ngươi nhân danh ta cầu xin, ta sẽ ban tài sản nhiều'",
+      "'Các ngươi NHÂN DANH TA mà cầu xin điều chi, TA SẼ LÀM CHO, để Cha được sáng danh nơi Con'",
+      "'Cầu xin nhân danh ta sẽ thoát khỏi mọi đau khổ thể chất'",
+      "'Nhân danh ta cầu xin sẽ trở thành tiên tri lớn trong dân'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Nhân danh ta cầu xin",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 26,
+    "content": "Theo Giăng 14:26, vai trò cụ thể của 'Đấng Yên ủi' (Đức Thánh Linh) khi Cha sai đến nhân danh Chúa Jêsus là gì?",
+    "explanation": "Giăng 14:26 — 'Nhưng Đấng Yên ủi, tức là Đức Thánh Linh mà Cha sẽ nhân danh ta sai xuống, Đấng ấy sẽ dạy dỗ các ngươi mọi sự, nhắc lại cho các ngươi nhớ mọi điều ta đã phán cùng các ngươi'. Vai trò: dạy + nhắc lại.",
+    "language": "vi",
+    "options": [
+      "Sẽ đem các môn đồ đi truyền giáo khắp các nước trên đất",
+      "Sẽ chữa bệnh thể chất cho mọi tín hữu suốt đời họ ngay bây giờ",
+      "Sẽ DẠY các ngươi mọi sự VÀ NHẮC LẠI cho các ngươi mọi điều ta đã phán",
+      "Sẽ ban cho mỗi người một danh hiệu mới trong nước Đức Chúa Trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Thánh Linh dạy",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 27,
+    "content": "Theo Giăng 14:27 (RVV11), Chúa Jêsus ban sự bình an cho môn đồ với SỰ KHÁC BIỆT cụ thể nào so với thế gian?",
+    "explanation": "Giăng 14:27 — 'Ta để sự bình an lại cho các ngươi; ta ban sự bình an ta cho các ngươi; ta cho các ngươi sự bình an chẳng phải như thế gian cho. Lòng các ngươi chớ bối rối và đừng sợ hãi'. Bình an của Chúa khác bình an thế gian — không phụ thuộc hoàn cảnh.",
+    "language": "vi",
+    "options": [
+      "'Ta để sự bình an lại cho các ngươi; ta ban sự bình an ta cho các ngươi; TA CHO CÁC NGƯƠI SỰ BÌNH AN CHẲNG PHẢI NHƯ THẾ GIAN cho'",
+      "'Sự bình an của ta là sự giàu có vật chất bảo đảm trên đất'",
+      "'Sự bình an của ta là chiến thắng quân địch trên chiến trường'",
+      "'Sự bình an của ta chỉ ban cho người có đức tin lớn nhất'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Bình an Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 15,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 15,
+    "content": "Theo Giăng 15:14-15, Chúa Jêsus phân biệt 'đầy tớ' và 'bạn hữu'. Sự phân biệt là gì?",
+    "explanation": "Giăng 15:14-15 — 'Các ngươi là bạn hữu ta, nếu các ngươi làm theo điều ta dạy. Ta chẳng còn gọi các ngươi là đầy tớ nữa, vì đầy tớ chẳng biết điều chủ mình làm; nhưng ta đã gọi các ngươi là bạn hữu ta, vì ta từng tỏ cho các ngươi biết mọi điều ta đã nghe nơi Cha ta'.",
+    "language": "vi",
+    "options": [
+      "Đầy tớ vâng lời còn bạn hữu thì không vâng lời mà chỉ ngồi ăn cùng",
+      "Đầy tớ làm việc nặng còn bạn hữu chỉ làm việc nhẹ và nhàn hạ",
+      "Đầy tớ không có thẩm quyền còn bạn hữu có thẩm quyền giảng đạo",
+      "Đầy tớ chẳng biết điều chủ làm; còn ta gọi BẠN HỮU vì ta đã TỎ ra cho các ngươi mọi điều ta đã nghe nơi Cha"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Bạn hữu",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 16,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 14,
+    "content": "Theo Giăng 16:8-14, Đức Thánh Linh khi đến sẽ làm những công việc nào trong thế gian và với môn đồ? (chọn tất cả đúng)",
+    "explanation": "Giăng 16:8 (cáo trách 3 việc), 16:13 (dẫn vào lẽ thật), 16:14 (làm vinh hiển Đấng Christ). Trừ tà cá nhân không phải vai trò chuyên biệt được liệt kê ở đây.",
+    "language": "vi",
+    "options": [
+      "Cáo trách thế gian về tội lỗi, sự công bình, và sự phán xét",
+      "Dẫn các môn đồ vào MỌI LẼ THẬT (không tự mình nói, mà nói điều nghe được)",
+      "Tỏ vinh hiển Chúa Jêsus, vì Ngài lấy điều thuộc về Chúa Jêsus mà tỏ ra",
+      "Trừ tà ma cho người thân các môn đồ một cách tự động"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Công việc Thánh Linh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 16,
+    "verseStart": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 33,
+    "content": "Theo Giăng 16:33, lời cuối cùng Chúa Jêsus ban cho môn đồ trong Bài Giảng Phòng Cao trước Khổ Nạn là gì?",
+    "explanation": "Giăng 16:33 — 'Ta đã bảo các ngươi những điều đó, hầu cho các ngươi có lòng bình yên trong ta. Các ngươi sẽ có sự hoạn nạn trong thế gian, nhưng hãy cứ vững lòng, ta đã thắng thế gian rồi'. Cấu trúc: hoạn nạn là thực; nhưng đắc thắng cũng là thực.",
+    "language": "vi",
+    "options": [
+      "'Trong thế gian các ngươi chỉ nên trông cậy vào sức mình'",
+      "'Trong thế gian, các ngươi sẽ có sự HOẠN NẠN; nhưng hãy CỨ VỮNG LÒNG, ta đã THẮNG thế gian rồi'",
+      "'Trong thế gian các ngươi sẽ không bao giờ gặp khó khăn nào'",
+      "'Trong thế gian các ngươi phải lấy gươm mà chiến đấu cho ta'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Đã thắng thế gian",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 17,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 3,
+    "content": "Theo Giăng 17:3, Chúa Jêsus định nghĩa 'sự sống đời đời' với cụm từ chính xác nào?",
+    "explanation": "Giăng 17:3 — 'Vả, sự sống đời đời là nhìn biết Cha, tức là Đức Chúa Trời có một và thật, cùng Đức Chúa Jêsus Christ, là Đấng Cha đã sai đến'. 'Sự sống đời đời' = mối quan hệ TRI NHẬN với Đức Chúa Trời chân thật, không phải chỉ thời lượng vô tận.",
+    "language": "vi",
+    "options": [
+      "'Là được vào nước Đức Chúa Trời mà sống mãi với các thánh đồ'",
+      "'Là được giàu có vật chất và bình an trên đất suốt một đời'",
+      "'Là NHẬN BIẾT CHA, tức là Đức Chúa Trời có một và thật, cùng Đức Chúa Jêsus Christ, là Đấng Cha đã sai đến'",
+      "'Là không bao giờ chết về thể xác mà sống mãi với gia đình mình'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Sự sống đời đời",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 17,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 11,
+    "content": "Trong Lời Cầu Nguyện Thầy Tế Lễ Thượng Phẩm (Giăng 17:11), Chúa Jêsus cầu xin Cha điều gì cho các môn đồ?",
+    "explanation": "Giăng 17:11 — 'Con không ở thế gian nữa, nhưng họ còn ở thế gian, và Con về cùng Cha. Lạy Cha thánh, xin gìn giữ họ trong danh Cha, là danh Cha đã ban cho Con, để họ cũng hiệp làm một như chúng ta vậy'.",
+    "language": "vi",
+    "options": [
+      "Xin gìn giữ họ tránh khỏi mọi bệnh tật trên đất",
+      "Xin cho họ trở nên giàu có vật chất ngay đời này",
+      "Xin ban cho họ một đền thờ mới tại Giê-ru-sa-lem",
+      "Xin GÌN GIỮ họ trong DANH Cha mà Cha đã ban cho Con, hầu cho HỌ HIỆP LÀM MỘT cũng như Cha và Con"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Hiệp một",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 5,
+    "content": "Theo Giăng 19:5, sau khi Chúa Jêsus bị đánh đập, đội mão gai và mặc áo điều, Phi-lát đem Ngài ra và nói câu gì?",
+    "explanation": "Giăng 19:5 — 'Vậy, Đức Chúa Jêsus đi ra, đầu đội mão triều gai, mình mặc áo điều; và Phi-lát nói cùng chúng rằng: Kìa, người nầy!' Câu La-tinh 'Ecce Homo' nổi tiếng trong nghệ thuật Tây phương.",
+    "language": "vi",
+    "options": [
+      "'Kìa, NGƯỜI nầy!' (Ecce Homo)",
+      "'Hãy đóng đinh ông ấy ngay'",
+      "'Tôi không tìm thấy lỗi gì nơi ông ấy'",
+      "'Ông ấy là vua dân Giu-đa thật'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Kìa người này",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 17,
+    "content": "Theo Giăng 21:15-17, sau khi sống lại Chúa Jêsus phục hồi Phi-e-rơ qua câu hỏi 'ngươi yêu ta chăng?' lặp lại ba lần. Lời đáp/ủy nhiệm nào CÓ trong text? (chọn tất cả đúng)",
+    "explanation": "Giăng 21:15-17 — Chúa hỏi 'ngươi yêu ta chăng' ba lần. (1) 'Hãy chăn những chiên con ta', (2) 'Hãy chăn chiên ta', (3) 'Hãy chăn chiên ta'. Lần thứ ba làm Phi-e-rơ 'buồn rầu' vì lặp lại ba lần — tương ứng với ba lần chối Chúa.",
+    "language": "vi",
+    "options": [
+      "Lần 1: 'Hãy chăn những chiên CON ta'",
+      "Lần 2: 'Hãy chăn chiên ta'",
+      "Lần 3: 'Hãy chăn chiên ta' (Phi-e-rơ buồn vì ba lần)",
+      "Lần 4: 'Hãy đi báp-têm cho cả thế gian'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Phi-e-rơ phục hồi",
+      "Trung cấp"
+    ]
   }
 ]
