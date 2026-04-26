@@ -34,12 +34,12 @@
 - 42 single + 3 multi (93/7); idx 10/12/11/9
 - File(s): `romans_quiz.json` + `romans_quiz_en.json` + `scripts/append_romans_em_v2.py`
 
-### Task V2M-5: Psalms +39 (0E + 39M)
-- Status: [ ] TODO
-- Current: 141 (E59 M38 H44) → Target: 180 (E54 M81 H45)
-- Plan: +39 Medium (Easy đã dư)
-- File(s): `psalms_quiz.json` + `psalms_quiz_en.json`
-- Commit: `feat(seed): Psalms +39 Medium for V2 Phase 2 (141→180)`
+### Task V2M-5: Psalms +39 Medium [x] DONE
+- 141→180 (E59 M77 H44, ratio 32.8/42.8/24.4% — gần V2 target)
+- Seeder log `inserted=39` each file, total 4768→4846, invalid=0
+- 35 single + 4 multi (90/10); idx 8/9/9/9
+- File(s): `psalms_quiz.json` + `psalms_quiz_en.json` + `scripts/append_psalms_medium_v2.py`
+- Coverage: 39 previously-uncovered psalms (6, 7, 9, 10, 11, 15, 17, 20, 26, 29, 31, 36, 38, 41, 45, 47, 48, 49, 52, 57, 60, 61, 65, 69, 71, 78, 81, 88, 94, 99, 101, 102, 105, 106, 124, 125, 132, 144, 96/98/100)
 
 ### Task V2M-6: Verify final Phase 2 audit
 - Status: [ ] TODO

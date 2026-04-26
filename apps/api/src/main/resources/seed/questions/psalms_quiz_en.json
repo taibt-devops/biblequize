@@ -3643,5 +3643,1066 @@
       "Lift My Eyes",
       "Advanced"
     ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 4,
+    "content": "According to Psalm 6:1, what does David ask the Lord when feeling chastised?",
+    "explanation": "Ps 6:1 — 'O LORD, rebuke me not in your anger, nor discipline me in your wrath'. One of the seven penitential psalms.",
+    "language": "en",
+    "options": [
+      "More physical strength in battles with enemies of his kingdom",
+      "To reunite with close friends in the city of Jerusalem",
+      "Do not rebuke in anger; do not discipline in burning wrath",
+      "To give him many descendants in his lineage forever"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Ps 6 Penitential",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 7,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 11,
+    "content": "According to Psalm 7:10-11, what does David call God when asking for protection?",
+    "explanation": "Ps 7:10-11 — 'My shield is with God, who saves the upright in heart. God is a righteous judge, and a God who feels indignation every day'.",
+    "language": "en",
+    "options": [
+      "'My SHIELD'; he is a RIGHTEOUS judge searching heart and mind",
+      "'My guide through the narrow gate' who never stumbles in life",
+      "'My provider' who grants much material wealth on earth",
+      "'My Father in heaven' as later New Testament language"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Ps 7 Shield",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 9,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 2,
+    "content": "Psalm 9:1-2 opens with what structure, characteristic of a praise psalm?",
+    "explanation": "Ps 9:1-2 — 'I will give thanks to the LORD with my whole heart; I will recount all of your wonderful deeds. I will be glad and exult in you; I will sing praise to your name, O Most High'.",
+    "language": "en",
+    "options": [
+      "'Woe is me' — common in lament psalms throughout the Psalter",
+      "'I will GIVE THANKS WITH MY WHOLE HEART, rejoice and SING TO YOUR NAME'",
+      "'Be still before the LORD' and wait patiently for him",
+      "'The LORD is my shepherd' similar to the famous Psalm 23"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Wholehearted Praise",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 10,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 1,
+    "content": "Psalm 10:1 opens with what lament question to the LORD?",
+    "explanation": "Ps 10:1 — 'Why, O LORD, do you stand far away? Why do you hide yourself in times of trouble?' This opens a lament about the prosperity of the wicked.",
+    "language": "en",
+    "options": [
+      "'Why do you bless the wicked on the earth?'",
+      "'O Lord, why have you not given me children?'",
+      "'O Lord, why do you not send rain to the earth?'",
+      "'Why, O LORD, do you stand FAR AWAY? Why do you HIDE YOURSELF in times of trouble?'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Why Stand Far",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 11,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 4,
+    "content": "According to Psalm 11:4, where does David declare the LORD is when the foundations are destroyed?",
+    "explanation": "Ps 11:4 — 'The LORD is in his holy temple; the LORD's throne is in heaven; his eyes see, his eyelids test the children of man'.",
+    "language": "en",
+    "options": [
+      "He has left the earth, the Ark of the Covenant in heaven",
+      "He is sleeping on the high peak of Mount Zion in Israel",
+      "He is in his HOLY TEMPLE; his throne in HEAVEN; his eyes BEHOLD man",
+      "He is walking with the prophets on the way into the wilderness"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Holy Temple Throne",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 15,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 5,
+    "content": "Psalm 15:1 asks 'WHO shall sojourn in your tent? Who shall dwell on your holy hill?' David answers with what list of moral qualities?",
+    "explanation": "Ps 15:2-5 — 'He who walks blamelessly and does what is right and speaks truth in his heart; who does not slander with his tongue... who does not take a bribe against the innocent'.",
+    "language": "en",
+    "options": [
+      "The one who offers many sacrifices and goes to temple regularly",
+      "The one who 'WALKS BLAMELESSLY, does what is RIGHT, SPEAKS TRUTH in his heart', no slander...",
+      "The one born in the priestly line of Aaron honorably",
+      "The one victorious in the holy battles for the LORD"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Who Dwells",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 17,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "According to Psalm 17:8, what does David ask the LORD to keep him as?",
+    "explanation": "Ps 17:8 — 'Keep me as the apple of your eye; hide me in the shadow of your wings'. Two images: pupil (most precious, needing protection) and wing (mother bird sheltering young).",
+    "language": "en",
+    "options": [
+      "As a precious firstborn in his father's and mother's home",
+      "As a bird set free across the wide expanse of the heavens",
+      "As the 'APPLE of your eye' and 'hidden under the SHADOW of YOUR WINGS'",
+      "As a precious jewel in the crown of the king of Israel"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Apple of Eye",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 20,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 7,
+    "content": "According to Psalm 20:7, what is the contrast in what the righteous trust?",
+    "explanation": "Ps 20:7 — 'Some trust in chariots and some in horses, but we trust in the name of the LORD our God'. The contrast: military reliance vs. the Lord's name.",
+    "language": "en",
+    "options": [
+      "Gold or silver versus weapons — not the Lord",
+      "Human strength versus foreign gods — not the Lord",
+      "Prophets versus the law — not the Lord",
+      "'Some trust in CHARIOTS and HORSES, but we trust in the NAME of the LORD our God'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Chariots and Horses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 38,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 22,
+    "content": "Among the seven traditional 'Penitential Psalms', besides Pss 51 and 130 already known, which of these ALSO belong? (select all correct)",
+    "explanation": "The seven Penitential Psalms: 6, 32, 38, 51, 102, 130, 143. Psalm 47 is a praise psalm, not a penitential.",
+    "language": "en",
+    "options": [
+      "Psalm 6 — 'O LORD, rebuke me not in your anger'",
+      "Psalm 38 — 'O LORD, rebuke me not in your anger' (matches Ps 6's opening)",
+      "Psalm 102 — 'Hear my prayer, O LORD; let my cry come to you'",
+      "Psalm 47 — 'Clap your hands, all peoples!' (a praise psalm)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Penitential Set",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 26,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 3,
+    "content": "Psalm 26:1-3 opens with David's prayer — distinctive of a 'protest of innocence' psalm. What is the content?",
+    "explanation": "Ps 26:1-2 — 'Vindicate me, O LORD, for I have walked in my integrity, and I have trusted in the LORD without wavering. Prove me, O LORD, and try me; test my heart and my mind'.",
+    "language": "en",
+    "options": [
+      "'Lord, forgive my sin' similar to Psalm 51 penitential",
+      "'VINDICATE me, O LORD, for I have walked in INTEGRITY... PROVE me and TRY me'",
+      "'Lord, give me wisdom' similar to Psalm 19",
+      "'Lord, do not curse my enemies' similar to Psalm 137"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Vindicate Me",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 29,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 9,
+    "content": "In Psalm 29:3-9, the phrase 'VOICE OF THE LORD' repeats how many times and describes what?",
+    "explanation": "Ps 29:3-9 repeats 'voice of the LORD' seven times, describing his voice in thunder over the seas, breaking cedars, drying the wilderness, shaking the deer... Whole: God's creative power.",
+    "language": "en",
+    "options": [
+      "3 times — linked with sun, moon, stars in the heavens",
+      "5 times — linked with the 5 ancient Israel feasts in a year",
+      "9 times — linked with the 9 gifts of the Holy Spirit later",
+      "SEVEN TIMES — linked with THUNDER, CEDARS, FIRE, WILDERNESS, FORESTS (CREATIVE POWER)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Seven Voices",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 31,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 5,
+    "content": "According to Psalm 31:5, what did David pray — a verse Christ quoted when breathing his last on the cross?",
+    "explanation": "Ps 31:5 — 'Into your hand I commit my spirit; you have redeemed me, O LORD, faithful God'. Luke 23:46 records Christ uttering this opening phrase as he breathed his last.",
+    "language": "en",
+    "options": [
+      "'Into your HAND I COMMIT my SPIRIT; you have redeemed me, O LORD, faithful God'",
+      "'Lord, why have you forsaken me?' (similar to Psalm 22)",
+      "'My God, my God, why have you forsaken me?'",
+      "'Father, forgive them, for they know not what they do' (Luke 23)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Commit My Spirit",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 36,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 9,
+    "content": "According to Psalm 36:7-9, how does David describe God's steadfast love?",
+    "explanation": "Ps 36:7-9 — 'How precious is your steadfast love, O God! The children of mankind take refuge in the shadow of your wings... For with you is the FOUNTAIN of life; in your light do we see light'.",
+    "language": "en",
+    "options": [
+      "A great solid rock amid the changing storms of the sea",
+      "A fortified city wall amid the enemy nations surrounding",
+      "'Shadow of WINGS' for refuge; 'FOUNTAIN of life' with God; 'in your LIGHT we SEE LIGHT'",
+      "Heavy rain watering long-dry land in the Negev desert"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Fountain of Life",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 41,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 3,
+    "content": "Psalm 41:1 opens with a blessing on whom?",
+    "explanation": "Ps 41:1-3 — 'Blessed is the one who considers the poor! In the day of trouble the LORD delivers him; the LORD protects him and keeps him alive; he is called blessed in the land'.",
+    "language": "en",
+    "options": [
+      "The one who never sinned throughout their entire life",
+      "'BLESSED is the one who CONSIDERS THE POOR! In the day of trouble the LORD delivers him'",
+      "The one victorious in the holy wars of Israel and Judah",
+      "The one offering many sacrifices in the Jerusalem temple"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Considers Poor",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 45,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 7,
+    "content": "Psalm 45 is a 'love song' about the king at his wedding. Hebrews 1:8-9 cites Psalm 45:6-7 to prove what about Christ?",
+    "explanation": "Heb 1:8-9 cites Ps 45:6-7 — 'Your throne, O God, is forever and ever, the scepter of uprightness is the scepter of your kingdom'. The author of Hebrews applies this to Christ — proving his deity.",
+    "language": "en",
+    "options": [
+      "Christ is just a prophet in the line of prophets",
+      "Christ is an earthly king and will soon conquer Rome",
+      "Christ is a very high angel among the heavenly angels",
+      "Christ is 'GOD' with an 'ETERNAL THRONE' and 'scepter of righteousness'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Royal Psalm",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 47,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 2,
+    "content": "Psalm 47:1-2 calls 'ALL PEOPLES' (every nation) to do what?",
+    "explanation": "Ps 47:1-2 — 'Clap your hands, all peoples! Shout to God with loud songs of joy! For the LORD, the Most High, is to be feared, a great king over all the earth'.",
+    "language": "en",
+    "options": [
+      "'CLAP YOUR HANDS' and 'shout to GOD with loud songs of joy'",
+      "'Bring offerings of gold and silver to the Jerusalem temple'",
+      "'Pray for the people of Israel on the night of Passover'",
+      "'Study the Law of Moses according to the order of the temple'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Clap Hands",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 48,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 3,
+    "content": "According to Psalm 48:1-2, what city is honored as 'city of our God'?",
+    "explanation": "Ps 48:1-2 — 'Great is the LORD and greatly to be praised in the city of our God! His holy mountain, beautiful in elevation, is the joy of all the earth, Mount Zion... the city of the great King'.",
+    "language": "en",
+    "options": [
+      "Bethlehem where David was born in the line of Judah",
+      "Hebron where Abraham lived for many years with Sarah",
+      "Mount ZION... the city of the great King — JERUSALEM",
+      "Sodom before God destroyed it for wickedness"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Mount Zion",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 49,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 20,
+    "content": "According to Psalm 49:16-20, why should the wise NOT worry about the rich?",
+    "explanation": "Ps 49:17 — 'For when he dies he will carry nothing away; his glory will not go down after him'. Wisdom: money is only temporary.",
+    "language": "en",
+    "options": [
+      "Their wealth grants you material benefit",
+      "Their wealth — for when they die, they CARRY NOTHING; their glory does not follow them down",
+      "Their worldly wisdom they have acquired",
+      "Their political power they hold in society"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Riches Don't Follow",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 52,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 7,
+    "content": "Psalm 52 has David rebuking the 'mighty man' boasting. According to Psalm 52:1-7, what is his end?",
+    "explanation": "Ps 52:5 — 'But God will break you down forever; he will snatch and tear you from your tent; he will uproot you from the land of the living'. The title: 'when Doeg the Edomite told Saul, David has come to the house of Ahimelech'.",
+    "language": "en",
+    "options": [
+      "He will grow even richer than ever before in his life",
+      "He will be exalted by God to be king over the people",
+      "He will be victorious in the holy battles of Israel",
+      "God will DESTROY him FOREVER; uproot him from the land of the living"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Mighty Man's End",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 57,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 3,
+    "content": "According to Psalm 57:1, where does David 'take refuge' until the storm passes?",
+    "explanation": "Ps 57:1 — 'Be merciful to me, O God, be merciful to me, for in you my soul takes refuge; in the shadow of your wings I will take refuge, till the storms of destruction pass by'. Title: 'when David fled from Saul in the cave'.",
+    "language": "en",
+    "options": [
+      "Under the 'SHADOW OF YOUR WINGS' until the storms of destruction pass",
+      "Among the lush green trees in the high cedar forests of Lebanon",
+      "In the home of close friends within the city of Jerusalem",
+      "In the vast wilderness where no human footprint can be found"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Shadow of Wings",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 60,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 12,
+    "content": "According to Psalm 60:11-12, after asking God's help in battle, what does David conclude?",
+    "explanation": "Ps 60:11-12 — 'Oh, grant us help against the foe, for vain is the salvation of man! With God we shall do valiantly; it is he who will tread down our foes'.",
+    "language": "en",
+    "options": [
+      "'We must rely on ourselves; we no longer need God'",
+      "'The LORD will fight for us; we will just sit still'",
+      "'WITH GOD we shall do VALIANTLY; he will tread down our enemies'",
+      "'We must surrender to the enemy to avoid bloodshed'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "With God Valiantly",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 61,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 3,
+    "content": "According to Psalm 61:1-2, when David's heart faints, what does he ask God to do?",
+    "explanation": "Ps 61:1-2 — 'Hear my cry, O God, listen to my prayer; from the end of the earth I call to you when my heart is faint. Lead me to the rock that is higher than I'.",
+    "language": "en",
+    "options": [
+      "Give him more strength to fight enemies",
+      "Lead him to 'the ROCK that is HIGHER than I'",
+      "Bring him back to the palace in Jerusalem",
+      "Let him meet the prophet Samuel one more time"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Rock Higher",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 65,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "According to Psalm 65:9-13, when God 'visits the earth', what does he do?",
+    "explanation": "Ps 65:9-11 — 'You visit the earth and water it; you greatly enrich it; the river of God is full of water; you provide their grain... You crown the year with your bounty; your wagon tracks overflow with abundance'.",
+    "language": "en",
+    "options": [
+      "Sends thunder to destroy plants on the earth",
+      "Sends drought to teach the people to repent of their sins",
+      "Migrates nations from one land to another forcibly",
+      "SENDS RAIN / enriches the EARTH; furrows drip with abundance, fields shout"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Earth's Bounty",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 69,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 9,
+    "content": "Psalm 69:9 speaks about 'zeal' for what? Where is this verse cited in the New Testament?",
+    "explanation": "Ps 69:9 — 'For zeal for your house has consumed me'. John 2:17 applies this to Jesus when he cleansed the temple.",
+    "language": "en",
+    "options": [
+      "'ZEAL for your HOUSE has CONSUMED ME' — cited in John 2:17 when Jesus cleansed the temple",
+      "'Zeal for the homeland Israel' — cited in Luke",
+      "'Zeal for the Law of Moses' — cited in Matthew",
+      "'Zeal for glory' — cited in Revelation"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Zeal for House",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 71,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 18,
+    "content": "According to Psalm 71:9, what is the psalmist's plea in old age?",
+    "explanation": "Ps 71:9 — 'Do not cast me off in the time of old age; forsake me not when my strength is spent'. 71:18 repeats the plea — that he may proclaim to the next generation.",
+    "language": "en",
+    "options": [
+      "'Let me live to a hundred like ancient Methuselah'",
+      "'Grant me material wealth in old age for my children's inheritance'",
+      "'Do not CAST ME OFF in OLD AGE; when my strength fails, do not FORSAKE me'",
+      "'Let me meet old friends from the days of my youth'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Old Age",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 78,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 8,
+    "content": "According to Psalm 78:1-8 (the opening of the longest historical psalm), what does Asaph call to pass on to the next generation? (select all correct)",
+    "explanation": "Ps 78:1-7 — 'Give ear, O my people, to my teaching... I will utter dark sayings from of old, things that we have heard and known, that our fathers have told us... that the next generation might know them, the children yet unborn... so that they should set their hope in God'.",
+    "language": "en",
+    "options": [
+      "The 'PARABLES' and 'mysteries from of old' from the fathers",
+      "The 'GLORIOUS DEEDS' of the LORD and his might",
+      "So the next generation may 'SET THEIR HOPE in God, not forget his works, keep his commandments'",
+      "The songs of the world and the foreign dances of pagan peoples"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "History Psalm",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 81,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 16,
+    "content": "According to Psalm 81:13-16, what is the LORD's lament to his people?",
+    "explanation": "Ps 81:13-14 — 'Oh, that my people would listen to me, that Israel would walk in my ways! I would soon subdue their enemies and turn my hand against their foes'.",
+    "language": "en",
+    "options": [
+      "'Why do you trust the foreign gods of the surrounding nations?'",
+      "'Oh, that my people would LISTEN! I would SUBDUE their enemies very soon'",
+      "'Why do you come to my temple only on the major feast days?'",
+      "'Why do you love material wealth more than me, the LORD your God?'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "If My People Listened",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 88,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 18,
+    "content": "Psalm 88 is famous as the 'DARKEST psalm' in the Psalter. What distinctive feature makes it unique?",
+    "explanation": "Ps 88:18 (final verse): 'You have caused my beloved and my friend to shun me; my companions have become darkness'. Most lament psalms turn to praise at the end — but Psalm 88 does not. The only psalm in the Psalter that ends in darkness.",
+    "language": "en",
+    "options": [
+      "It ends with a glorious final shout of praise",
+      "It is the shortest psalm with only 3 verses total",
+      "It is dedicated to ancient foreign nations afar",
+      "It ENDS in DARKNESS WITHOUT praise — final verse: 'my acquaintance is in DARKNESS'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Darkest Psalm",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 94,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 13,
+    "content": "According to Psalm 94:12, how is God's discipline described?",
+    "explanation": "Ps 94:12-13 — 'Blessed is the man whom you discipline, O LORD, and whom you teach out of your law, to give him rest from days of trouble'. Discipline is a sign of grace.",
+    "language": "en",
+    "options": [
+      "'BLESSED is the man WHOM YOU DISCIPLINE, O LORD, and whom you teach out of your law, to give him rest from days of trouble'",
+      "'Cursed is anyone who receives the LORD's discipline'",
+      "'God only shows mercy; he never disciplines anyone'",
+      "'Discipline is evidence that the LORD has forgotten'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Discipline Blessing",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 99,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 9,
+    "content": "Psalm 99 thrice repeats the call to exalt God as 'HOLY'. Which is correct?",
+    "explanation": "Ps 99:5,9 repeat 'Exalt the LORD our God; worship at his footstool! Holy is he!'. Verse 99:3 also has 'holy'. Three affirmations of holiness — echoing Isa 6:3 'Holy, holy, holy'.",
+    "language": "en",
+    "options": [
+      "'The LORD is my shepherd' (a repeat phrase from earlier Psalm 23)",
+      "'The LORD is king of the nations' (a generic statement, not repeated)",
+      "'EXALT the LORD; worship at his footstool: HE IS HOLY!'",
+      "'The LORD is a God merciful and gracious' (a general phrase)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Holy Is He",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 101,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 8,
+    "content": "Psalm 101 is David's self-set 'life mission' as king. What is that mission?",
+    "explanation": "Ps 101:2,4-5 — 'I will ponder the way that is blameless... I will walk with integrity of heart within my house. I will not set before my eyes anything that is worthless... whoever slanders his neighbor secretly I will destroy'.",
+    "language": "en",
+    "options": [
+      "Ambition to defeat all the foreign nations completely",
+      "Accumulating great wealth in the royal palace stores",
+      "Having many descendants to inherit his throne after him",
+      "'WALK with INTEGRITY in my house, with a BLAMELESS HEART'; tolerate no slanderer"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Integrity Mission",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 102,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 27,
+    "content": "Psalm 102:25-27 describes God with what image — also cited in Hebrews 1:10-12 to prove Christ's deity?",
+    "explanation": "Ps 102:25-27 — 'Of old you laid the foundation of the earth, and the heavens are the work of your hands. They will perish, but you will remain; they will all wear out like a garment... but you are the same'. Heb 1:10-12 cites this for Christ.",
+    "language": "en",
+    "options": [
+      "Eternal king of Israel ruling forever from Mount Zion in heaven",
+      "'Of OLD you LAID the FOUNDATION; they perish, but YOU REMAIN'",
+      "God who led the people through the desert by the white cloud daily",
+      "God who gave manna in the wilderness for Israel to eat for forty years"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "You Remain",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 105,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 15,
+    "content": "According to Psalm 105:7-15, the psalmist calls the people to remember God's deeds with the patriarchs. Which events ARE in the text? (select all correct)",
+    "explanation": "Ps 105:8-15 — 'He remembers his covenant forever, the word that he commanded, for a thousand generations, the covenant that he made with Abraham, his sworn promise to Isaac, which he confirmed to Jacob... Saying, To you I will give the land of Canaan as your portion. He allowed no one to oppress them; he rebuked kings on their account, saying, Touch not my anointed ones'. Moses appears later, not in vv 7-15.",
+    "language": "en",
+    "options": [
+      "Covenant with Abraham — oath to Isaac — statute to Jacob",
+      "Promise: 'To you I will give the land of Canaan as your portion'",
+      "God warned the kings, saying 'TOUCH NOT my anointed ones'",
+      "God sent Moses out of Egypt in the pillar of cloud and fire"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Patriarchal History",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 106,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 8,
+    "content": "According to Psalm 106:6-7, how does the psalmist confess on behalf of the people?",
+    "explanation": "Ps 106:6-7 — 'Both we and our fathers have sinned; we have committed iniquity; we have done wickedness. Our fathers, when they were in Egypt, did not consider your wondrous works'.",
+    "language": "en",
+    "options": [
+      "'We have SINNED with our fathers and have committed iniquity'",
+      "'We are better than our fathers because we truly trust in the LORD God'",
+      "'We have no sin at all; only our fathers were the real sinners'",
+      "'We pray for forgiveness for foreign nations in other countries'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Communal Confession",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 124,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "Psalm 124 opens with a famous hypothetical structure. What is the opening line?",
+    "explanation": "Ps 124:1-3 — 'If it had not been the LORD who was on our side—let Israel now say—if it had not been the LORD who was on our side when people rose up against us, then they would have swallowed us up alive'. A Song of Ascents.",
+    "language": "en",
+    "options": [
+      "'The LORD is my shepherd' (a phrase from Psalm 23 written before this)",
+      "'Blessed is the one who walks not in counsel of wicked' (Ps 1)",
+      "'IF NOT the LORD who was on our SIDE, the enemies would have SWALLOWED us'",
+      "'Praise the LORD for he is good' (similar to Psalm 100 opening)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "If Not the LORD",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 125,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 2,
+    "content": "According to Psalm 125:1-2, the one who trusts the LORD is compared to what, and the LORD to what?",
+    "explanation": "Ps 125:1-2 — 'Those who trust in the LORD are like Mount Zion, which cannot be moved, but abides forever. As the mountains surround Jerusalem, so the LORD surrounds his people, from this time forth and forevermore'.",
+    "language": "en",
+    "options": [
+      "Like a lush tree; the LORD like a stream in the Negev desert",
+      "Like MOUNT ZION which cannot be moved; the LORD like the MOUNTAINS surrounding JERUSALEM",
+      "Like an eagle soaring; the LORD like the sun above shining everywhere",
+      "Like a beloved child of parents; the LORD like a kind heavenly father"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Mountains Around",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 132,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 12,
+    "content": "Psalm 132:11-12 speaks of the LORD's oath to David about whose line shall sit on the throne?",
+    "explanation": "Ps 132:11-12 — 'The LORD swore to David a sure oath from which he will not turn back: One of the sons of your body I will set on your throne. If your sons keep my covenant and my testimonies that I shall teach them, their sons also forever shall sit on your throne'.",
+    "language": "en",
+    "options": [
+      "The line of Aaron — only for the priests serving in the temple",
+      "The line of Levi — only for serving in the temple of Jerusalem forever",
+      "The line of Saul — the first king of Israel in the book of Samuel",
+      "The line of DAVID — 'YOUR SON shall SIT on your THRONE' if they keep covenant"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "David's Covenant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 144,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 2,
+    "content": "According to Psalm 144:1-2, what series of military titles does David give to the LORD?",
+    "explanation": "Ps 144:1-2 — 'Blessed be the LORD, my rock, who trains my hands for war, and my fingers for battle; he is my steadfast love and my fortress, my stronghold and my deliverer, my shield and he in whom I take refuge'.",
+    "language": "en",
+    "options": [
+      "'My ROCK... trains hands for war... STEADFAST LOVE, FORTRESS, SHIELD'",
+      "'King of Israel forever, my shepherd, my ever-present help every day'",
+      "'Father in heaven, who loves me as a father loves his own children'",
+      "'My shepherd as Psalm 23 says clearly to all the people of God'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Rock for War",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 96,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 13,
+    "content": "Among psalms calling 'ALL THE EARTH' to praise God, which opening lines ARE in those psalms? (select all correct)",
+    "explanation": "Pss 96, 98, 100 are all universal praise psalms calling 'all the earth' to praise the LORD. Psalm 137 is a Babylonian exile lament, marked by suffering.",
+    "language": "en",
+    "options": [
+      "Ps 96:1 — 'SING to the LORD a NEW SONG; sing to the LORD, ALL the earth'",
+      "Ps 98:1 — 'SING to the LORD a new song, for he has done marvelous things'",
+      "Ps 100:1 — 'MAKE a JOYFUL NOISE to the LORD, ALL the earth!'",
+      "Ps 137:1 — 'By the waters of Babylon, there we sat down and wept' (an exile lament)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Universal Praise",
+      "Intermediate"
+    ]
   }
 ]
