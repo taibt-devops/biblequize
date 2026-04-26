@@ -1,6 +1,6 @@
 # TODO
 
-## 2026-04-26 — V2 Go-Live Phase 2: Easy/Medium expansion (5 sách core) [IN PROGRESS]
+## 2026-04-26 — V2 Go-Live Phase 2: Easy/Medium expansion (5 sách core) [DONE]
 
 > Theo `PROMPT_GENERATE_QUESTIONS_V2_GO_LIVE.md` section 10.1 Priority 2.
 > Mục tiêu: nâng pool 5 sách core đạt target tổng (150-180 câu/sách) với ratio 30/45/25.
@@ -41,13 +41,17 @@
 - File(s): `psalms_quiz.json` + `psalms_quiz_en.json` + `scripts/append_psalms_medium_v2.py`
 - Coverage: 39 previously-uncovered psalms (6, 7, 9, 10, 11, 15, 17, 20, 26, 29, 31, 36, 38, 41, 45, 47, 48, 49, 52, 57, 60, 61, 65, 69, 71, 78, 81, 88, 94, 99, 101, 102, 105, 106, 124, 125, 132, 144, 96/98/100)
 
-### Task V2M-6: Verify final Phase 2 audit
-- Status: [ ] TODO
-- Checklist:
-  - [ ] Recount E/M/H per file → kiểm ratio gần 30/45/25 (±3%)
-  - [ ] Total Phase 2: 169 VI + 169 EN = 338 questions
-  - [ ] Backend log all 5 files seed clean (idempotent)
-  - [ ] Combined V2 (P1 + P2): 449 questions added (140 Hard + 169 E/M = 309 VI + 309 EN... wait recheck)
+### Task V2M-6: Verify final Phase 2 audit [x] DONE
+- **Final per-file distribution** (VI + EN identical):
+  - Genesis: 150 (47/64/39, 31.3/42.7/26.0%)
+  - Matthew: 160 (48/71/41, 30.0/44.4/25.6%)
+  - John: 160 (48/71/41, 30.0/44.4/25.6%)
+  - Romans: 130 (39/59/32, 30.0/45.4/24.6%)
+  - Psalms: 180 (59/77/44, 32.8/42.8/24.4%)
+- **Aggregate (10 files)**: 1,560 questions — E482 / M684 / H394 → **30.9% / 43.8% / 25.3%** (khớp V2 target 30/45/25 trong ±3%)
+- **Total pool**: 4768 → 4846 (+78 từ V2M-5; combined V2 P1+P2: 4228 → 4846 = +618 questions = 309 VI + 309 EN)
+- **Idempotency verified**: 2nd restart `inserted=0` all files, total 4846, invalid=0
+- **All commits**: V2M-1 dbf87eb, V2M-2 d0f5bce, V2M-3 a757405, V2M-4 a883c74, V2M-5 092cd97
 
 ---
 
