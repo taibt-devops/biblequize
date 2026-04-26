@@ -1,6 +1,6 @@
 # TODO
 
-## 2026-04-26 — V2 Go-Live: Hard-only priority (5 sách core) [IN PROGRESS]
+## 2026-04-26 — V2 Go-Live: Hard-only priority (5 sách core) [DONE]
 
 > Theo `PROMPT_GENERATE_QUESTIONS_V2_GO_LIVE.md` section 10.1 Priority 1.
 > Mục tiêu: nâng pool Hard từ 13% → 25% cho 5 sách core (Genesis, Matthew, John, Romans, Psalms).
@@ -38,13 +38,18 @@
 - Strategy: 4 kiểu Hard 8/9/9/9; 29 single + 6 multi (83/17); single idx 7/8/7/7
 - Psalms covered: 1, 2, 13, 16, 19, 23, 24, 27, 32, 46, 51, 72, 73, 80, 90, 95, 103, 104, 110, 119, 120, 121, 137, 139, 146
 
-### Task V2H-6: Verify total + audit
-- Status: [ ] TODO
-- Checklist:
-  - [ ] Recount E/M/H per file → log final distribution
-  - [ ] Total Hard added: 140 VI + 140 EN = 280 questions
-  - [ ] Backend log all 5 files seed clean (idempotent restart)
-  - [ ] Optional: admin `/admin/question-quality` review distribution
+### Task V2H-6: Verify total + audit [x] DONE
+- **Final per-file distribution** (VI + EN identical):
+  - Genesis: 120 (E47 M34 H39, Hard 32.5%, 117 single + 3 multi)
+  - Matthew: 134 (E47 M46 H41, Hard 30.6%, 129 single + 5 multi)
+  - John: 131 (E42 M48 H41, Hard 31.3%, 127 single + 4 multi)
+  - Romans: 85 (E24 M29 H32, Hard 37.6%, 81 single + 4 multi)
+  - Psalms: 141 (E59 M38 H44, Hard 31.2%, 135 single + 6 multi)
+- **Aggregate (5 books × 2 lang)**: 1,222 questions; E438/M390/H394 (32.2% Hard); 1,178 single + 44 multi
+- **Total pool**: 4228 → 4508 (+280 = 140 VI + 140 EN)
+- **Idempotency verified**: 2nd restart shows `inserted=0` all 5 files, total 4508, invalid=0
+- **Index distribution per batch (single only)**: Genesis 4/4/5/4, Matthew 7/7/6/5, John 7/7/7/5, Romans 5/6/5/5, Psalms 7/8/7/7 — all balanced 20-30% per index
+- **Spec compliance**: each batch ratio E/M/H slightly above 25% Hard target (because adding only Hard); will rebalance when Phase 2 (Easy/Medium) runs
 
 ---
 
