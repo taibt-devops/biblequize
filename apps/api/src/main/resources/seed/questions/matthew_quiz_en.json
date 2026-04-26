@@ -3583,5 +3583,711 @@
       "Centurion's Confession",
       "Advanced"
     ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "verseStart": 32,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 32,
+    "content": "According to Matthew 27:32, who was forced by the soldiers to carry Jesus' cross on the way to Golgotha?",
+    "explanation": "Matt 27:32 — 'As they went out, they found a man of Cyrene, Simon by name. They compelled this man to carry his cross'. Simon was from Cyrene (North Africa) and was forced to carry the cross.",
+    "language": "en",
+    "options": [
+      "Simon of Cyrene",
+      "Peter the close disciple",
+      "Joseph of Arimathea",
+      "The centurion in charge"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Simon of Cyrene",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 11,
+    "content": "In Matthew 4:1-11, Satan tempted Jesus three times in the wilderness. Which temptations ARE in the text? (select all correct)",
+    "explanation": "Matt 4:3-10 — three temptations: (1) stones to bread, (2) jump from temple, (3) worship Satan for kingdoms. Water to wine is Christ's miracle at Cana (John 2), unrelated to temptation.",
+    "language": "en",
+    "options": [
+      "Turn stones into bread to satisfy hunger after 40-day fast",
+      "Jump from the temple pinnacle so angels would catch him",
+      "Bow down to Satan to receive all the kingdoms of the world",
+      "Turn water into wine to prove his divine power"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Three Temptations",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 6,
+    "content": "According to Matthew 11:2-3, what did John the Baptist send his disciples from prison to ask Jesus?",
+    "explanation": "Matt 11:3 — 'Are you the one who is to come, or shall we look for another?' Jesus replied by listing his miracles (11:5) — alluding to Isaiah 35:5-6, 61:1.",
+    "language": "en",
+    "options": [
+      "'When will you release me from the prison of Herod?'",
+      "'Are you THE ONE WHO IS TO COME, or shall we look for another?'",
+      "'Tell me where God is in this captivity I face?'",
+      "'Will you come and save us from the impending execution?'"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "John's Question",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "verseStart": 53,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 58,
+    "content": "According to Matthew 13:53-58, how did the people of Nazareth react to Jesus teaching in their synagogue?",
+    "explanation": "Matt 13:55-58 — 'Is not this the carpenter's son?... And they took offense at him. But Jesus said to them, A prophet is not without honor except in his hometown and in his own household'. He did few miracles there because of unbelief.",
+    "language": "en",
+    "options": [
+      "They believed in him fully and crowned him king of Israel at once",
+      "They invited him to go with them to the Jerusalem temple to teach",
+      "They took offense because they knew him as 'the carpenter's son'",
+      "They brought all the sick for him to heal at the synagogue"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Rejected at Nazareth",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "verseStart": 36,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 43,
+    "content": "In Jesus' interpretation of the parable of weeds (Matthew 13:36-43), who is the one who sowed the weeds?",
+    "explanation": "Matt 13:38-39 — 'The field is the world, and the good seed is the sons of the kingdom. The weeds are the sons of the evil one, and the enemy who sowed them is the DEVIL. The harvest is the end of the age, and the reapers are angels'.",
+    "language": "en",
+    "options": [
+      "The devil (the enemy), sowing weeds among wheat = sons of the kingdom",
+      "The Pharisees opposing Jesus at the Jerusalem temple",
+      "Pharaoh of Egypt who oppressed Israel long ago",
+      "Herod king of Judea who beheaded John the Baptist"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Weeds Parable",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 14,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 12,
+    "content": "According to Matthew 14:1-12, why was John the Baptist beheaded?",
+    "explanation": "Matt 14:3-4 — 'For Herod had seized John and bound him and put him in prison for the sake of Herodias, his brother Philip's wife, because John had been saying to him, It is not lawful for you to have her'.",
+    "language": "en",
+    "options": [
+      "Rome convicted him of sedition because he preached in public",
+      "He refused to baptize Herod when the king came to him",
+      "He declared himself to be the Christ before Herod's court",
+      "He rebuked Herod for marrying Herodias, his brother Philip's wife"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "John's Beheading",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 14,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 21,
+    "content": "According to Matthew 14:13-21, when Jesus fed the 5,000, with how many loaves and how many fish did he begin?",
+    "explanation": "Matt 14:17 — 'They said to him, We have only five loaves here and two fish'. This is the feeding of the 5,000 (men, not counting women and children). The feeding of the 4,000 used 7 loaves + a few fish (15:34).",
+    "language": "en",
+    "options": [
+      "7 loaves and 2 small fish that were found",
+      "5 loaves and 2 fish from a young boy",
+      "12 loaves and 4 fish for the 12 tribes",
+      "3 loaves and 1 large fish at supper"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Five Loaves Two Fish",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 15,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 9,
+    "content": "According to Matthew 15:1-9, what did the Pharisees rebuke Jesus' disciples for, and how did Jesus reply?",
+    "explanation": "Matt 15:2-9 — Pharisees rebuked 'why do your disciples break the tradition of the elders? They do not wash their hands when they eat'. Jesus reversed: 'why do you break the commandment of God for the sake of your tradition?' He quoted Isa 29:13 on hypocritical worship.",
+    "language": "en",
+    "options": [
+      "Charge: eating bread on Sabbath; reply: David ate the consecrated bread",
+      "Charge: not fasting like them; reply: the bridegroom is still with friends",
+      "Charge: NOT WASHING HANDS before eating; reply: rebuked them for SETTING ASIDE God's commandment for human tradition",
+      "Charge: healing on Sabbath; reply: the Son of Man is Lord of the Sabbath"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Tradition vs Commandment",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 14,
+    "content": "According to Matthew 16:13-14, when Jesus asked 'who do people say the Son of Man is?', what did the disciples report the people thought?",
+    "explanation": "Matt 16:14 — 'They said, Some say John the Baptist, others say Elijah, and others Jeremiah or one of the prophets'. Jesus then asked the twelve and Peter gave the right confession.",
+    "language": "en",
+    "options": [
+      "John the Baptist / Elijah / Jeremiah / one of the prophets",
+      "King Messiah / the Savior / King of the Jews / Son of David",
+      "Abraham / Moses / David / Solomon",
+      "Herod risen / a famous Pharisee / a Sadducee / a Qumran monk"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Who People Say",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 17,
+    "content": "According to Matthew 16:15-17, what did Peter confess Jesus to be when asked 'but who do you say I am?'",
+    "explanation": "Matt 16:16 — 'Simon Peter replied, You are the Christ, the Son of the living God'. Jesus answered: 'Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven'.",
+    "language": "en",
+    "options": [
+      "'You are the greatest prophet among all the prophets of God'",
+      "'You are the king of the Jews, come to save Israel from Rome'",
+      "'You are the Messiah promised since the days of Abraham'",
+      "'You are the CHRIST, the Son of the living God'"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Peter's Confession",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 23,
+    "content": "According to Matthew 16:22-23, after the Passion prediction, when Peter took Jesus aside to rebuke him, how did Jesus respond?",
+    "explanation": "Matt 16:23 — 'But he turned and said to Peter, Get behind me, Satan! You are a hindrance to me. For you are not setting your mind on the things of God, but on the things of man'.",
+    "language": "en",
+    "options": [
+      "'Peter, you are right; I will avoid this suffering'",
+      "'Get behind me, Satan! You are a hindrance to me. For you are not setting your mind on the things of God'",
+      "'You shall be forgiven because you love me; but say no more'",
+      "'Go back to your father and forget what I have said'"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Get Behind Me Satan",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 14,
+    "content": "In the 'lost sheep' parable (Matthew 18:10-14), a shepherd has 100 sheep and one goes astray. What does he do?",
+    "explanation": "Matt 18:12-13 — 'Will he not leave the ninety-nine on the mountains and go in search of the one that went astray? And if he finds it, truly, I say to you, he rejoices over it more than over the ninety-nine that never went astray'. (Luke 15 has a longer version).",
+    "language": "en",
+    "options": [
+      "Abandons the lost sheep because 99 others are enough already",
+      "Sends a servant to search while he stays with the 99",
+      "LEAVES the 99 on the mountain and GOES to SEARCH for the one until he finds it",
+      "Prays the lost sheep will find its own way back alone"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Lost Sheep",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 15,
+    "content": "According to Matthew 19:13-15, when people brought children for Jesus to lay hands and pray, how did the disciples react and what did Jesus say?",
+    "explanation": "Matt 19:13-14 — 'Then children were brought to him that he might lay his hands on them and pray. The disciples rebuked the people, but Jesus said, Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven'.",
+    "language": "en",
+    "options": [
+      "Disciples rebuked them; Jesus said: 'Let the little children come to me; for to such belongs the KINGDOM OF HEAVEN'",
+      "Disciples welcomed them warmly; Jesus preached to adults about valuing children",
+      "Disciples divided the children into groups; Jesus taught them catechism step by step",
+      "Disciples ignored them; Jesus prayed alone for the children"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Children Come",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 26,
+    "content": "According to Matthew 19:24, what does Jesus say about a rich person entering the kingdom of God?",
+    "explanation": "Matt 19:24 — 'It is easier for a camel to go through the eye of a needle than for a rich person to enter the kingdom of God'. Disciples wondered 'who can be saved?' Jesus answered: 'With man this is impossible, but with God all things are possible' (19:26).",
+    "language": "en",
+    "options": [
+      "'The rich enter the kingdom before the poor because they study Scripture more'",
+      "'The rich must sell all their property before considering the kingdom of heaven'",
+      "'The rich need only pay tithes to enter the kingdom of heaven'",
+      "'It is easier for a camel to go through the eye of a needle than for a rich person to enter God's kingdom'"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Rich and Kingdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 20,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 28,
+    "content": "In Matthew 20:20-28, the mother of Zebedee's sons asked Jesus what for her two sons (James and John)?",
+    "explanation": "Matt 20:21 — 'Say that these two sons of mine are to sit, one at your right hand and one at your left, in your kingdom'. Jesus answered teaching about service: 'Whoever would be great among you must be your servant' (20:26-28). The other disciples were indignant (20:24).",
+    "language": "en",
+    "options": [
+      "That her two sons become scribes in the Jerusalem temple",
+      "That her two sons SIT ONE AT YOUR RIGHT and one at your left in your kingdom",
+      "That her two sons accompany Jesus to the Mount of Transfiguration again",
+      "That her two sons perform miracles like the other apostles among the people"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Zebedee's Sons",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 21,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "According to Matthew 21:1-11, when Jesus made his triumphal entry into Jerusalem, what animal did he ride to fulfill Zechariah 9:9?",
+    "explanation": "Matt 21:5,7 — 'Say to the daughter of Zion, Behold, your king is coming to you, humble, and mounted on a DONKEY, on a COLT, the foal of a beast of burden'. This quotes Zech 9:9 — a humble king, not a conquering one on a war horse.",
+    "language": "en",
+    "options": [
+      "A majestic white war horse amid an armored army",
+      "A bull adorned with purple cloth for a king",
+      "A DONKEY and her COLT alongside",
+      "A golden chariot drawn by four horses by royal order"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Triumphal Entry",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 14,
+    "content": "In the 'wedding feast' parable (Matthew 22:1-14), when the originally invited guests refused, what did the king do?",
+    "explanation": "Matt 22:9-10 — 'Go therefore to the main roads and invite to the wedding feast as many as you find. So those servants went out into the roads and gathered all whom they found, both bad and good. So the wedding hall was filled with guests'. This anticipates the gospel going out to the Gentiles.",
+    "language": "en",
+    "options": [
+      "Sent servants to the highways to invite everyone, good and bad, to the wedding feast",
+      "Canceled the wedding and declared his son would not marry",
+      "Forgave the invitees and invited them a second time that week",
+      "Sent priests to pray that the guests would return to the feast"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Wedding Feast",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 32,
+    "content": "According to Matthew 22:30, what does Jesus teach about marriage in the resurrection?",
+    "explanation": "Matt 22:30 — 'For in the resurrection they neither marry nor are given in marriage, but are like angels in heaven'. Jesus answered the Sadducees (who denied resurrection) who posed a hypothetical about 7 brothers and one wife.",
+    "language": "en",
+    "options": [
+      "In the resurrection, each person returns to their first spouse",
+      "In the resurrection, people NEITHER MARRY nor are GIVEN IN MARRIAGE, but are LIKE ANGELS in heaven",
+      "In the resurrection, the righteous will have many wives like the patriarchs",
+      "In the resurrection, marriage continues as in this life but without sin"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Marriage in Resurrection",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "verseStart": 31,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 33,
+    "content": "According to Matthew 22:31-32, which OT verse did Jesus use to prove the resurrection of the dead?",
+    "explanation": "Matt 22:31-32 — 'Have you not read what was said to you by God: I am the God of Abraham, and the God of Isaac, and the God of Jacob? He is not God of the dead, but of the living'. Jesus quoted Exod 3:6.",
+    "language": "en",
+    "options": [
+      "'The LORD is my shepherd; I shall not want anything' (Ps 23:1)",
+      "'Love the Lord your God with all heart, soul, might' (Deut 6:5)",
+      "'I am the God of Abraham, Isaac, Jacob' — God of the LIVING, not dead",
+      "'Hear, O Israel; the LORD our God, the LORD is one' (Deut 6:4)"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "God of Living",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 23,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 12,
+    "content": "According to Matthew 23:8-12, in his rebuke of Pharisees about title-flaunting, what does Jesus teach his disciples?",
+    "explanation": "Matt 23:8-10 — 'But you are not to be called rabbi, for you have one teacher, and you are all brothers. And call no man your father on earth, for you have one Father, who is in heaven. Neither be called instructors, for you have one instructor, the Christ'.",
+    "language": "en",
+    "options": [
+      "Honor scribes and naturally call them 'teacher'",
+      "Call spiritual fathers 'patriarch' to show respect",
+      "Use 'Messiah' when addressing each other in the church",
+      "Do not let anyone call you 'rabbi' / 'father' / 'instructor' — for there is ONE TEACHER and ONE FATHER"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "No Title Flaunting",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 23,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 36,
+    "content": "In the 'seven woes' against the Pharisees and scribes (Matthew 23:13-36), which woes ARE in the text? (select all correct)",
+    "explanation": "Matt 23 contains 7 woes: 23:13 (shutting kingdom), 23:14 (devouring widows' houses), 23:15 (making proselytes), 23:16 (blind guides on oaths), 23:23 (tithing while neglecting), 23:25 (outwardly clean), 23:27 (whitewashed tombs), 23:29 (building prophets' tombs). Option D is a blessing, not a woe.",
+    "language": "en",
+    "options": [
+      "'Woe to you, scribes and Pharisees, HYPOCRITES! For you shut the kingdom of heaven in people's faces'",
+      "'Woe to you! For you devour widows' houses and for a pretense make long prayers'",
+      "'Woe to you, BLIND GUIDES! You tithe mint and dill and cumin... and have neglected the weightier matters'",
+      "'Blessed are you, scribes, for the wisdom you have handed down'"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Seven Woes",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 23,
+    "verseStart": 37,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 39,
+    "content": "According to Matthew 23:37, what image does Jesus use as he laments over Jerusalem?",
+    "explanation": "Matt 23:37 — 'O Jerusalem, Jerusalem... How often would I have gathered your children together as a hen gathers her brood under her wings, and you were not willing!' This is the cry of the rejected Messiah.",
+    "language": "en",
+    "options": [
+      "'As a hen gathers her brood under her wings' but you were not willing",
+      "'As a lion roaring over cities' to warn the nations",
+      "'As an eagle flying over the wilderness' to protect its young",
+      "'As a vine carefully pruned' awaiting greater fruit"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Jerusalem Lament",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 24,
+    "verseStart": 36,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 36,
+    "content": "According to Matthew 24:36, who knows 'the day or the hour' of the Son of Man's coming?",
+    "explanation": "Matt 24:36 — 'But concerning that day and hour no one knows, not even the angels of heaven, nor the Son, but the Father only'. This decisively rules out all date-setting.",
+    "language": "en",
+    "options": [
+      "The high priests in the Jerusalem temple know",
+      "NO ONE knows: not the angels, nor the Son, but only the FATHER",
+      "Close disciples like Peter and John are privately told",
+      "The Pharisees can calculate from Daniel's weeks"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "No One Knows Day",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "verseStart": 36,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 39,
+    "content": "According to Matthew 26:39, what was Jesus' prayer at the garden of Gethsemane?",
+    "explanation": "Matt 26:39 — 'And going a little farther he fell on his face and prayed, saying, My Father, if it be possible, let this cup pass from me; nevertheless, not as I will, but as you will'. This is his first prayer; he prayed three times (26:42, 44).",
+    "language": "en",
+    "options": [
+      "'Father, forgive them, for they know not what they do'",
+      "'My God, why have you forsaken me? Why do you forget me in distress?'",
+      "'My Father, if it be possible, let this cup pass from me! Nevertheless, not as I will, but as YOU WILL'",
+      "'Father, judge my enemies who surround me here'"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Gethsemane Prayer",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "verseStart": 69,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 75,
+    "content": "According to Matthew 26:69-75, Peter denied Jesus three times in the high priest's courtyard. What sound made Peter remember Jesus' word and weep bitterly?",
+    "explanation": "Matt 26:74-75 — 'And immediately the rooster crowed. And Peter remembered the saying of Jesus, Before the rooster crows, you will deny me three times. And he went out and wept bitterly'. Earlier (26:34) Jesus had predicted this.",
+    "language": "en",
+    "options": [
+      "Soldiers shouting loudly 'Crucify him!' from the trial",
+      "Other disciples arguing among themselves outside in the courtyard",
+      "Jesus being interrogated and beaten inside the high priest's house",
+      "The ROOSTER CROWING — per Jesus' word: 'before the rooster crows, you will deny me three times'"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Peter Denies",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 7,
+    "content": "According to Matthew 28:5-7, what did the angel say to the women at the empty tomb?",
+    "explanation": "Matt 28:5-7 — 'The angel said to the women, Do not be afraid, for I know that you seek Jesus who was crucified. He is not here, for he has risen, as he said. Come, see the place where he lay. Then go quickly and tell his disciples that he has risen from the dead'.",
+    "language": "en",
+    "options": [
+      "'Do not be afraid, for I know that you seek Jesus who was crucified. HE IS NOT HERE, for HE HAS RISEN, as he said'",
+      "'Run quickly to tell Pilate Jesus has risen so he may repent of his deed'",
+      "'Search for the Lord's body in the garden, for someone has hidden it elsewhere'",
+      "'Tell no one of this; keep it secret so that you are not arrested'"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "He Has Risen",
+      "Intermediate"
+    ]
   }
 ]

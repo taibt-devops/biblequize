@@ -14,12 +14,12 @@
 - File(s): `genesis_quiz.json` + `genesis_quiz_en.json` + `scripts/append_genesis_medium_v2.py`
 - 4 types 8/8/7/7 covering 20 previously-uncovered Medium chapters (14, 15, 16, 19, 21, 24, 26, 28, 31, 33, 34, 35, 38, 43, 45, 46, 47, 48, 49, 50)
 
-### Task V2M-2: Matthew +26 (1E + 25M)
-- Status: [ ] TODO
-- Current: 134 (E47 M46 H41) → Target: 160 (E48 M72 H40)
-- Plan: +1 Easy + 25 Medium
-- File(s): `matthew_quiz.json` + `matthew_quiz_en.json`
-- Commit: `feat(seed): Matthew +26 Easy/Medium for V2 Phase 2 (134→160)`
+### Task V2M-2: Matthew +26 (1E + 25M) [x] DONE
+- 134→160 (E48 M71 H41, ratio 30.0/44.4/25.6% — gần như khớp 30/45/25)
+- Seeder log `inserted=26` each file, total 4568→4620, invalid=0
+- 24 single + 2 multi (92/8); idx 7/6/6/5
+- File(s): `matthew_quiz.json` + `matthew_quiz_en.json` + `scripts/append_matthew_medium_v2.py`
+- Cover 3 chapters trước đó 0 Medium (16, 22, 23) + 12 sparse chapters
 
 ### Task V2M-3: John +29 (6E + 23M)
 - Status: [ ] TODO
