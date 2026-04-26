@@ -33,20 +33,10 @@
 - Chapters covered: 1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 15
 
 ### Task V2H-5: Psalms +35 Hard
-- Status: [ ] TODO
-- Current: 106 (E59 M38 H9) → Target: 141 (E59 M38 H44)
-- File(s): `psalms_quiz.json` + `psalms_quiz_en.json`
-- Strategy: thi thiên cụ thể (1, 19, 22, 23, 51, 73, 90, 103, 119, 139, 150) + thể loại (lament/praise/wisdom/royal/imprecatory)
-- ⚠️ Psalms khó vì không có "narrative" — Hard thường là verse precision + theme distinguish giữa các Psalms
-- Checklist:
-  - [ ] Đọc passage RVV11 + ESV cho psalms target
-  - [ ] 35 câu Hard VI mix 4 kiểu (focus verse precision + distinguish similar psalms)
-  - [ ] Self-doubt + near-miss + length tolerance
-  - [ ] correctAnswer index đều (mỗi index 8-9 câu)
-  - [ ] Check duplicate
-  - [ ] 35 câu EN 1:1
-  - [ ] Restart api verify
-  - [ ] Commit: `feat(seed): Psalms +35 Hard for V2 go-live (9→44 Hard)`
+- Status: [x] DONE — 106→141 (E59 M38 H44, Hard 31.2%); seeder log `inserted=35` each file, total 4438→4508
+- File(s): `psalms_quiz.json` + `psalms_quiz_en.json` + `scripts/append_psalms_hard_v2.py`
+- Strategy: 4 kiểu Hard 8/9/9/9; 29 single + 6 multi (83/17); single idx 7/8/7/7
+- Psalms covered: 1, 2, 13, 16, 19, 23, 24, 27, 32, 46, 51, 72, 73, 80, 90, 95, 103, 104, 110, 119, 120, 121, 137, 139, 146
 
 ### Task V2H-6: Verify total + audit
 - Status: [ ] TODO

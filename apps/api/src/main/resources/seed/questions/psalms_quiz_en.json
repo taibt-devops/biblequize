@@ -2686,5 +2686,962 @@
       "Wisdom",
       "Advanced"
     ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 7,
+    "content": "The New Testament frequently quotes Psalms to confirm Christ's ministry. Which Psalms ARE clearly quoted in the NT? (select all correct)",
+    "explanation": "Psalm 2 quoted in Heb 1:5; Psalm 22 (especially 22:1, 22:18) quoted in the gospels at the crucifixion; Psalm 110 is the most-quoted in NT (Matt 22:44, Heb 1:13, 5:6, 7:17). Psalm 200 does not exist — Psalter has 150 chapters.",
+    "language": "en",
+    "options": [
+      "Psalm 2 — 'You are my Son, today I have begotten you' (Heb 1:5)",
+      "Psalm 22 — Messianic lament (quoted in Matt 27 from the cross)",
+      "Psalm 110 — 'Sit at my right hand' (Matt 22, Heb 1)",
+      "Psalm 200 — Prophecy of the second coming (Psalms has only 150 chapters)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "NT Quotations",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 73,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 19,
+    "content": "Psalm 1 and Psalm 73 both consider 'the wicked' and 'the righteous'. What is the core difference of Psalm 73 from Psalm 1?",
+    "explanation": "Ps 73:2-12 — Asaph nearly stumbles seeing the wicked prosper. 73:16-17 — 'But when I thought how to understand this, it seemed to me a wearisome task, until I went into THE SANCTUARY of God; then I discerned their end'. The faith crisis is resolved through worship.",
+    "language": "en",
+    "options": [
+      "Psalm 73 denies Psalm 1's view and says the wicked will never be judged at all",
+      "Psalm 73 describes a CRISIS of faith over the wicked's prosperity, resolved when entering THE SANCTUARY",
+      "Psalm 73 is only about David personally, with no application to Israel as a people",
+      "Psalm 73 is identical to Psalm 1, just written in Hebrew instead of Aramaic"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Crisis of Faith",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 7,
+    "content": "Psalm 2:7 — 'You are my Son, today I have begotten you'. In the NT, this verse is quoted to demonstrate what about Christ?",
+    "explanation": "Heb 1:5 — 'For to which of the angels did God ever say, You are my Son, today I have begotten you?' (quoting Ps 2:7). Heb 1:1-14 uses Ps 2:7 to prove the Son's superiority over the angels.",
+    "language": "en",
+    "options": [
+      "Christ is merely the most exalted angel created by the Father",
+      "Christ came as a prophet in the line of the OT prophets",
+      "Christ is the UNIQUE SON of God, far superior to the angels (Heb 1:5)",
+      "Christ is just an ordinary king like David on the earthly throne"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Son of God",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 16,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 10,
+    "content": "Peter at Pentecost (Acts 2:25-31) quotes Psalm 16:10 'You will not abandon my soul to Sheol, or let your holy one see corruption'. To whom does Peter apply this verse?",
+    "explanation": "Acts 2:29-31 — 'David... both died and was buried, and his tomb is with us to this day. Being therefore a prophet... he foresaw and spoke of the resurrection of the Christ, that he was not abandoned to Hades, nor did his flesh see corruption'.",
+    "language": "en",
+    "options": [
+      "To David, because David lives forever and never dies bodily",
+      "To every believer, because they will never die physically in this life",
+      "To the angels, because they are beings that cannot be corrupted at all",
+      "To Christ, because David died and his body decayed, but Christ rose again"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Christ's Resurrection",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 19,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 14,
+    "content": "Psalm 19 has a TWO-PART structure on God's revelation. What is that structure?",
+    "explanation": "Ps 19:1-6 — 'The heavens declare the glory of God'. Ps 19:7-14 — 'The law of the LORD is perfect'. C.S. Lewis called Psalm 19 'the greatest poem in the Psalter' for its balanced structure: general revelation (creation) and special (Word).",
+    "language": "en",
+    "options": [
+      "Part 1 (19:1-6): Revelation through creation (heavens, sun) — Part 2 (19:7-14): Revelation through the Word (law of the LORD)",
+      "Part 1 (19:1-6): The history of Israel — Part 2 (19:7-14): The future Messiah's coming",
+      "Part 1 (19:1-6): David's sin — Part 2 (19:7-14): His repentance and restoration",
+      "Part 1 (19:1-6): The Zion temple — Part 2 (19:7-14): The sacrifices in the temple"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Dual Revelation",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 24,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 2,
+    "content": "Psalm 24:1 — 'The earth is the LORD's and the fullness thereof, the world and those who dwell therein'. Paul quotes this verse in 1 Corinthians to address what practical issue?",
+    "explanation": "1 Cor 10:25-26 — 'Eat whatever is sold in the meat market without raising any question on the ground of conscience. For the earth is the Lord's, and the fullness thereof' (citing Ps 24:1). Since all is the Lord's, no food is intrinsically unclean.",
+    "language": "en",
+    "options": [
+      "Divisions in the church between Paul's followers and Apollos's followers",
+      "Eating meat sacrificed to idols (1 Cor 10:25-26) — 'everything on earth belongs to the Lord'",
+      "Believers marrying unbelievers within the Corinthian church",
+      "Believers taking each other to court before pagan Roman judges"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Earth Is Lord's",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 95,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "Psalm 95:7-11 warns: 'Today, if you hear his voice, do not harden your hearts as at Meribah'. The author of Hebrews applies this multiple times (Heb 3:7-11; 4:1-11) to teach what?",
+    "explanation": "Heb 3:7-15 and 4:1-11 expand Psalm 95's 'today': the moment to obey is NOW, not future. The true rest is the spiritual rest in Christ, not merely Joshua's promised land.",
+    "language": "en",
+    "options": [
+      "Keep the Sabbath day with all the OT rituals each week strictly",
+      "Fast at least one day per week to enter into rest",
+      "Obey TODAY — because a Sabbath rest still remains for the people of God",
+      "Travel to the Jerusalem temple at least three times a year by the Law"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Today Hear Voice",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 51,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 19,
+    "content": "Christian tradition identifies SEVEN specific psalms as the 'Penitential Psalms'. Which psalms ARE in this set of seven? (select all correct)",
+    "explanation": "The seven traditional Penitential Psalms: 6, 32, 38, 51, 102, 130, 143. Marked by confession + plea for mercy. Psalm 100 is a joyful praise psalm, not penitential.",
+    "language": "en",
+    "options": [
+      "Psalm 32 — 'Blessed is the one whose transgression is forgiven' (David after repentance)",
+      "Psalm 51 — 'Have mercy on me, O God, according to your steadfast love' (after Bathsheba)",
+      "Psalm 130 — 'Out of the depths I cry to you, O LORD' (De Profundis)",
+      "Psalm 100 — 'Make a joyful noise to the LORD' (a praise psalm, not penitential)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Penitential Psalms",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 72,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 1,
+    "content": "Psalms has multiple authors, identified in their titles. Which author-psalm pairs ARE in the book? (select all correct)",
+    "explanation": "Psalm authors: David (~73 psalms, incl. Ps 51), sons of Korah (Pss 42-49, 84-85, 87-88), Asaph (Pss 50, 73-83), Solomon (Pss 72, 127), Moses (Ps 90), Heman (Ps 88), Ethan (Ps 89). Paul is a NT apostle, not an OT author.",
+    "language": "en",
+    "options": [
+      "David — author of Psalm 51 and many other psalms",
+      "Sons of Korah — authors of Psalms 42-49 and others",
+      "Solomon — author of Psalms 72 and 127",
+      "Paul — author of Psalms 23 and 119 (incorrect)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Psalm Authors",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 51,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 4,
+    "content": "Psalms 32 and 51 are both Davidic penitential psalms following what event in David's life?",
+    "explanation": "Psalm 51's superscription — 'When Nathan the prophet came to him, after he had gone in to Bathsheba'. 2 Sam 11-12 records adultery with Bathsheba + killing Uriah + Nathan's rebuke. Psalm 32 reflects the corresponding 'confession' experience.",
+    "language": "en",
+    "options": [
+      "After defeating Goliath in the Valley of Elah with just one stone",
+      "After the Bathsheba affair and the killing of Uriah (2 Sam 11-12) — Nathan's rebuke",
+      "After Absalom's rebellion and David's flight from Jerusalem",
+      "After numbering Israel, which brought a plague on the people (2 Sam 24)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Setting of Ps 51",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 80,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 3,
+    "content": "Two distinct 'shepherd psalms' in the Psalter: Psalm 23 and Psalm 80. What is the core difference?",
+    "explanation": "Ps 23:1 — 'The LORD is my shepherd' (individual). Ps 80:1 — 'O Shepherd of Israel, you who lead Joseph like a flock' (national/corporate). Ps 80 is a national lament during distress.",
+    "language": "en",
+    "options": [
+      "Psalm 23 — the LORD is shepherd of the INDIVIDUAL ('David as a sheep'); Psalm 80 — the LORD is shepherd of CORPORATE ISRAEL",
+      "Psalm 23 is in Hebrew while Psalm 80 is in Aramaic from the exile period",
+      "Psalm 23 is by David while Psalm 80 is by a Gentile, added later to the canon",
+      "Psalm 23 is a praise psalm while Psalm 80 is a cursing psalm against enemies"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Two Shepherd Psalms",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 110,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 7,
+    "content": "Among the 'Royal Psalms' (2, 45, 72, 110), which is the MOST quoted in the NT to prove Christ's deity?",
+    "explanation": "Psalm 110 is the most-quoted OT psalm in the NT: Matt 22:44, Mark 12:36, Luke 20:42, Acts 2:34-35, Heb 1:13, 5:6, 7:17, 7:21. Verse 110:1 proves Christ as David's Lord; verse 110:4 proves his Melchizedekian priesthood.",
+    "language": "en",
+    "options": [
+      "Psalm 2 — about the king set on Zion",
+      "Psalm 45 — the king's wedding",
+      "Psalm 72 — Solomon's righteous reign",
+      "Psalm 110 — 'Sit at my right hand' / Melchizedek"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Psalm 110",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 104,
+    "verseStart": 24,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 30,
+    "content": "Among the 'creation psalms' (Pss 8, 19, 104), what makes Psalm 104 DISTINCT from the other two?",
+    "explanation": "Psalm 104 has 35 verses depicting God as cosmic ruler in detail: he is 'wrapped in light' (104:2), 'rides on the wings of the wind' (104:3), 'makes grass grow' (104:14), feeds 'young lions roaring for prey' (104:21). While Ps 8 highlights humanity's role and Ps 19 highlights revelation, Ps 104 praises God's ongoing providence in detail.",
+    "language": "en",
+    "options": [
+      "Psalm 104 is just three brief verses about cosmic creation in six days only",
+      "Psalm 104 denies creation and says the natural world appeared by random chance",
+      "Psalm 104 praises DETAILED PROVIDENCE (winds, rain, mountains, sea, beasts, moon)",
+      "Psalm 104 focuses only on mankind and ignores all the other creatures of nature"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Ps 104 Providence",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 120,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 1,
+    "content": "The Psalter contains a set of 15 psalms called 'Songs of Ascent' (pilgrimage songs). Which section of Psalms is this?",
+    "explanation": "Psalms 120-134 (15 psalms) all carry the heading 'A Song of Ascents' (Hebrew: shir hammaaloth). Traditionally, Israelites sang these as they 'went up' to Jerusalem for the three pilgrimage feasts: Passover, Pentecost (Weeks), and Tabernacles.",
+    "language": "en",
+    "options": [
+      "Psalms 120-134 — used by pilgrims going up to Jerusalem for the three annual feasts",
+      "Psalms 1-15 — the opening section for new students of the faith",
+      "Psalms 90-104 — the section praising God as eternal",
+      "Psalms 145-150 — the closing section with five Hallelujah psalms"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Songs of Ascent",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 146,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 1,
+    "content": "The five closing psalms (146-150) all open and close with 'Hallelujah' (Praise the LORD). Which psalms belong to this set? (select all correct)",
+    "explanation": "Psalms 146-150 form the 'Final Hallel': each begins and ends with 'Hallelujah'. Psalm 137 is a Babylonian exile psalm (a lament of suffering), not part of the Hallelujah set.",
+    "language": "en",
+    "options": [
+      "Psalm 146 — 'Praise the LORD, O my soul!'",
+      "Psalm 148 — All creation, heaven to earth, praises the LORD",
+      "Psalm 150 — 'Praise God with every kind of musical instrument'",
+      "Psalm 137 — 'By the rivers of Babylon' (an exile lament, no Hallelujah)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Final Hallel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 6,
+    "content": "Lament psalms typically have a characteristic structure. Psalm 13 is a brief example. What is the typical structure of a lament psalm?",
+    "explanation": "Ps 13 (the shortest lament): vv. 1-2 cry ('How long, O LORD? Will you forget me forever?'), vv. 3-4 petition ('Consider and answer me, O LORD my God; light up my eyes'), v. 5 trust ('But I have trusted in your steadfast love'), v. 6 praise ('I will sing to the LORD'). Classic structure: turn from lament to trust.",
+    "language": "en",
+    "options": [
+      "Praise → Thanks → Praise continued forever without any changes",
+      "Sacrifice → Atonement → Fierce judgment of enemies very severely",
+      "Creation → Fall → Redemption → Glory — four clear stages",
+      "Cry / complaint → Petition → TURN TO TRUST → Praise / vow of praise"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Lament Structure",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 137,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 9,
+    "content": "'Imprecatory psalms' call for God's judgment on enemies. Psalm 137 is famous for which imprecation (137:8-9)?",
+    "explanation": "Ps 137:8-9 — 'O daughter of Babylon, doomed to be destroyed, blessed shall he be who repays you with what you have done to us! Blessed shall he be who takes your little ones and dashes them against the rock!' This is the anguished response of the exiles after Jerusalem's destruction by Babylon (586 BC).",
+    "language": "en",
+    "options": [
+      "Asking God to kill the pagan kings dwelling with Israel in the promised land",
+      "Asking God to REPAY Babylon — 'Blessed shall he be who takes your little ones and dashes them against the rock'",
+      "Asking God to slay all Assyrian kings for shedding the prophets' blood in the OT",
+      "Asking God to destroy Sodom and Gomorrah for their wickedness ages ago"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Imprecation Ps 137",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 3,
+    "content": "Psalm 1:3 describes the righteous as 'a tree planted by streams of water, that yields its fruit in season'. In context (1:1-3), what is the source of this 'vitality'?",
+    "explanation": "Ps 1:1-3 — 'Blessed is the man who walks not in the counsel of the wicked... but his delight is in the law of the LORD, and on his law he meditates day and night. He is like a tree planted by streams of water that yields its fruit in its season'. Meditation on the Word is the 'stream' nourishing the righteous.",
+    "language": "en",
+    "options": [
+      "He is physically strong because he works hard and exercises regularly each day",
+      "He happens to be born into a wealthy family within Israel by good fortune",
+      "He 'delights in the LAW of the LORD; on his law he meditates day and night'",
+      "He has leadership talent so he rises quickly in social rank"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Tree by Streams",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 19,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 9,
+    "content": "Psalm 19:7-9 uses SIX titles for God's Word, each with an attribute and result. Which name-attribute pairs ARE in the text? (select all correct)",
+    "explanation": "Ps 19:7-9 lists 6 name-attribute pairs: (1) law/perfect, (2) testimony/sure, (3) precepts/right, (4) commandment/pure, (5) fear of the LORD/clean, (6) rules/true. Option D ('revelation is hidden, only angels') is not in this text.",
+    "language": "en",
+    "options": [
+      "'The LAW of the LORD is PERFECT, reviving the soul'",
+      "'The TESTIMONY of the LORD is SURE, making wise the simple'",
+      "'The PRECEPTS of the LORD are RIGHT, rejoicing the heart'",
+      "'The REVELATION of the LORD is HIDDEN, only angels understand'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Six Names of Word",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 23,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 4,
+    "content": "Psalm 23:4 — 'Even though I walk through the valley of the shadow of death, I will fear no evil'. In the structure of Psalm 23, this confidence rests on what basis?",
+    "explanation": "Ps 23:4 — 'Even though I walk through the valley of the shadow of death, I will fear no evil, for YOU ARE WITH ME; your rod and your staff, they comfort me'. The basis is not personal strength but God's PRESENCE and his protective shepherd's tools.",
+    "language": "en",
+    "options": [
+      "David has powerful weapons to fight off all enemies around him in every direction",
+      "David is promised by God that he will never die a bodily death",
+      "The prophets foretold David would be delivered from every danger in his life",
+      "'For YOU ARE WITH ME; your rod and your staff, they COMFORT me'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Valley of Shadow",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 32,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 2,
+    "content": "Psalm 32:1-2 — 'Blessed is the one whose transgression is forgiven, whose sin is covered!' Paul quotes this in Romans 4 to demonstrate what?",
+    "explanation": "Rom 4:6-8 — 'Just as David also speaks of the blessing of the one to whom God counts righteousness apart from works: Blessed are those whose lawless deeds are forgiven' (citing Ps 32:1-2). Paul uses this to prove justification by faith.",
+    "language": "en",
+    "options": [
+      "Justification by faith (not works) — including forgiveness of sins by grace",
+      "The necessity of circumcision for forgiveness under the Abrahamic covenant",
+      "The necessity of yearly sin offerings at the Jerusalem temple",
+      "The necessity of repentance before God forgives sins permanently"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Blessing of Forgiveness",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 51,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 5,
+    "content": "Psalm 51:5 — 'Behold, I was brought forth in iniquity, and in sin did my mother conceive me'. What does this verse teach about the human condition?",
+    "explanation": "Ps 51:5 teaches the doctrine of 'original sin': sin is not just isolated acts but a human CONDITION from conception. David is not accusing his mother; he confesses that man is born in sin (cf. Rom 5:12-19).",
+    "language": "en",
+    "options": [
+      "David accuses his mother of sinning while she was conceiving him in the womb",
+      "Sin is not merely an action but a CONDITION present from conception (the root of sin)",
+      "Every child must be punished for the parents' sins — unfair across generations",
+      "David was born out of wedlock so he laments his mother's sinful conception"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Original Sin",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 90,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 12,
+    "content": "Psalm 90:10-12 (of Moses) — 'The years of our life are seventy'. What is the prayer at the close of this passage (90:12)?",
+    "explanation": "Ps 90:12 — 'So teach us to number our days that we may get a heart of wisdom'. Moses uses life's brevity (70-80 years) as the basis for praying for spiritual wisdom — to value each day.",
+    "language": "en",
+    "options": [
+      "'Grant that we may live to eighty as our ancestor Abraham lived in his days'",
+      "'Grant us wealth and health in our remaining years on this earth'",
+      "'TEACH us to NUMBER OUR DAYS that we may get a heart of wisdom'",
+      "'Grant us many children and grandchildren to perpetuate our names'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Number Our Days",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 103,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 13,
+    "content": "Psalm 103:11-13 uses several similes to describe God's mercy. Which images ARE in the text? (select all correct)",
+    "explanation": "Ps 103:11-13 has three images: (a) heavens above earth (103:11), (b) east from west (103:12), (c) father's compassion (103:13). All describe God's immeasurable mercy. The 'sun after storm' image is fabricated and absent from the text.",
+    "language": "en",
+    "options": [
+      "'As far as the east is from the west, so far does he remove our transgressions from us'",
+      "'As a FATHER shows compassion to his children, so the LORD shows compassion to those who fear him'",
+      "'For as high as the HEAVENS are above the EARTH, so great is his steadfast love toward those who fear him'",
+      "'His mercy is like the sun rising after a fierce storm' (not in the text)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Three Images of Mercy",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 119,
+    "verseStart": 105,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 105,
+    "content": "Psalm 119:105 — 'Your word is a lamp to my feet and a light to my path'. How do the two images 'lamp' and 'light' differ in the verse?",
+    "explanation": "Psalm 119:105 uses progressive parallelism: 'lamp to my FEET' = illuminating the immediate next step; 'light to my PATH' = illuminating the broader way ahead (the long-term future). The Word guides both present and future.",
+    "language": "en",
+    "options": [
+      "The two images are entirely the same, just a poetic repetition of one idea",
+      "The lamp is for Pharisees, the light is for ordinary people in Israel",
+      "The lamp is only for the Sabbath, the light is for other workdays of the week",
+      "LAMP refers to immediate footstep (my feet); LIGHT refers to the broader path (the way)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Lamp and Light",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 139,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 16,
+    "content": "Psalm 139:13-16 — 'For you formed my inward parts; you knitted me together in my mother's womb'. What wonder of God is celebrated in this passage?",
+    "explanation": "Ps 139:13-16 — 'I praise you, for I am fearfully and wonderfully made... Your eyes saw my unformed substance; in your book were written, every one of them, the days that were formed for me, when as yet there was none of them'. Truth: God personally knows and cares for each individual from the womb.",
+    "language": "en",
+    "options": [
+      "God's PERSONAL knowledge from conception — he 'sees' and 'writes' all my days before any",
+      "God's ability to heal every illness immediately for any individual upon a single prayer",
+      "God's power to judge the wicked over the whole world fairly according to his perfect law",
+      "God's wisdom in creating all the stars across the heights of heaven from the beginning"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Knit in Womb",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 1,
+    "content": "According to Psalm 1:1 (ESV), 'Blessed is the man' has three negative clauses in a distinctive structure. What is that structure?",
+    "explanation": "Ps 1:1 — 'Blessed is the man who walks not in the counsel of the wicked, nor stands in the way of sinners, nor sits in the seat of scoffers'. The verbs progress: walks (light pass) → stands (pause) → sits (settle in), paired with three subjects: wicked → sinners → scoffers.",
+    "language": "en",
+    "options": [
+      "'Does not eat, drink, or sleep' — total abstinence from food and rest entirely",
+      "'Walks not in COUNSEL of wicked / stands not in WAY of sinners / sits not in SEAT of scoffers'",
+      "'Enters not the temple, offers no sacrifice, attends no festival of the LORD ever'",
+      "'Speaks no evil at all, hears no evil at all, thinks no evil at all in any way'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Blessed Is",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 19,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 14,
+    "content": "According to Psalm 19:14 (ESV), what is the closing prayer? The two blanks: 'Let the ___ of my mouth and the ___ of my heart be acceptable in your sight'.",
+    "explanation": "Ps 19:14 (ESV) — 'Let the WORDS of my mouth and the MEDITATION of my heart be acceptable in your sight, O LORD, my rock and my redeemer'. The blanks: 'words' and 'meditation' — combining outward speech and inward reflection.",
+    "language": "en",
+    "options": [
+      "Words / thoughts",
+      "Songs / hymns",
+      "Words / meditation",
+      "Voice / decisions"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Closing Prayer",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 23,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 1,
+    "content": "According to Psalm 23:1 (ESV), what is the precise opening statement?",
+    "explanation": "Ps 23:1 (ESV) — 'The LORD is my shepherd; I shall not want'. The verse emphasizes God's full provision — not necessarily material wealth, but lack of any essential need.",
+    "language": "en",
+    "options": [
+      "'The LORD is my shepherd; my food shall always be plentiful'",
+      "'The LORD is my shepherd; I shall be wealthy all my life'",
+      "'The LORD is my shepherd; I shall never die'",
+      "'The LORD is my shepherd; I shall not want'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Lord My Shepherd",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 27,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 1,
+    "content": "According to Psalm 27:1 (ESV), David declares three titles of the LORD. What are the three?",
+    "explanation": "Ps 27:1 — 'The LORD is my light and my salvation; whom shall I fear? The LORD is the stronghold of my life; of whom shall I be afraid?' Three titles: light (illumination), salvation (deliverance), stronghold (refuge/strength).",
+    "language": "en",
+    "options": [
+      "'The LORD is my LIGHT / SALVATION / STRONGHOLD'",
+      "'The LORD is my KING / PROPHET / PRIEST'",
+      "'The LORD is my FATHER / SON / HOLY SPIRIT'",
+      "'The LORD is my BLESSING / GRACE / GLORY'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Three Titles",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 46,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 1,
+    "content": "According to Psalm 46:1 (ESV), what is the opening verse? (This psalm inspired Martin Luther's hymn 'A Mighty Fortress'.)",
+    "explanation": "Ps 46:1 (ESV) — 'God is our refuge and strength, a very present help in trouble'. This verse undergirds the entire psalm and inspired Luther's hymn 'Ein feste Burg' (A Mighty Fortress).",
+    "language": "en",
+    "options": [
+      "'God is eternal love and the life of all living creatures'",
+      "'God is our REFUGE and strength, a very present help in trouble'",
+      "'God is the maker of the heavens and the earth from the beginning of creation'",
+      "'God is the eternal king ruling over every nation on earth'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Mighty Fortress",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 51,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 12,
+    "content": "According to Psalm 51:10-12 (ESV), what does David pray for after his repentance?",
+    "explanation": "Ps 51:10-12 — 'Create in me a clean heart, O God, and renew a right spirit within me. Cast me not away from your presence, and take not your Holy Spirit from me. Restore to me the joy of your salvation'. The verb 'create' is bara — used only of God's act of new creation.",
+    "language": "en",
+    "options": [
+      "'Grant me wealth to compensate Uriah's family for my wrong against them'",
+      "'Let me defeat my enemies to prove I am still the chosen king of Israel'",
+      "'CREATE IN ME a CLEAN HEART, O God, and renew a right spirit within me'",
+      "'Let me live to a hundred years so I have time to amend my life fully'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Clean Heart",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 90,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 4,
+    "content": "According to Psalm 90:4 (ESV), Moses speaks of the difference between God's time and man's time. What is the precise verse?",
+    "explanation": "Ps 90:4 — 'For a thousand years in your sight are but as yesterday when it is past, or as a watch in the night'. Peter inverts this in 2 Pet 3:8 ('one day as a thousand years') to explain God's delay in judgment.",
+    "language": "en",
+    "options": [
+      "'A day of the Lord equals a year for man on the earth'",
+      "'An hour of the Lord equals the lifetime of man on the earth'",
+      "'A minute of the Lord equals all human history since Adam'",
+      "'A THOUSAND YEARS in your sight are but as YESTERDAY when it is past, or AS A WATCH IN THE NIGHT'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Thousand Years",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 103,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 2,
+    "content": "According to Psalm 103:1-2 (ESV), how does David open the psalm with self-exhortation?",
+    "explanation": "Ps 103:1-2 — 'Bless the LORD, O my soul, and all that is within me, bless his holy name! Bless the LORD, O my soul, and forget not all his benefits'. David addresses his own soul — a spiritual self-exhortation.",
+    "language": "en",
+    "options": [
+      "'BLESS THE LORD, O MY SOUL, and all that is within me, bless his holy name!'",
+      "'Come everyone, bring offerings to the LORD in the temple of Zion'",
+      "'O kings of the earth, know that the LORD is king forever'",
+      "'O angels in heaven, sing praises to your Creator above the heights'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Bless My Soul",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 121,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 2,
+    "content": "According to Psalm 121:1-2 (ESV), what is the opening of this 'Song of Ascents'?",
+    "explanation": "Ps 121:1-2 — 'I lift up my eyes to the hills. From where does my help come? My help comes from the LORD, who made heaven and earth'. A pilgrim's 'Song of Ascents' going up to Jerusalem — trusting not in hills (sites of false worship) but in the Maker of the hills.",
+    "language": "en",
+    "options": [
+      "'I lift my eyes to the temples in Zion; my help comes from the high priest there'",
+      "'I lift up my eyes to the hills: From where does my help come? My help comes from the LORD, who made heaven and earth'",
+      "'I lift my eyes to David's palace; the king will deliver me from all my enemies'",
+      "'I lift my eyes to my parents and the ancestors of Abraham's line for my comfort'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Psalms",
+      "Wisdom",
+      "Lift My Eyes",
+      "Advanced"
+    ]
   }
 ]
