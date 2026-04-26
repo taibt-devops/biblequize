@@ -1,5 +1,92 @@
 # TODO
 
+## 2026-04-26 — V2 Go-Live: Hard-only priority (5 sách core) [IN PROGRESS]
+
+> Theo `PROMPT_GENERATE_QUESTIONS_V2_GO_LIVE.md` section 10.1 Priority 1.
+> Mục tiêu: nâng pool Hard từ 13% → 25% cho 5 sách core (Genesis, Matthew, John, Romans, Psalms).
+> Chỉ sinh **Hard** trong phase này — ratio E/M/H tổng sách sẽ tự kéo về gần 25% Hard.
+> Mỗi câu PHẢI thuộc 1 trong 4 kiểu Hard hợp lệ (section 3): cross-ref / distinguish / hiểu sâu / verse precision.
+> Distractor phải near-miss (section 4), length tolerance Hard ≤ 2×.
+
+### Task V2H-1: Genesis +20 Hard
+- Status: [x] DONE — 100→120 (E47 M34 H39, Hard 32.5%); seeder log `inserted=20` each file, total 4228→4268
+- File(s): `apps/api/src/main/resources/seed/questions/genesis_quiz.json` + `genesis_quiz_en.json` + `scripts/append_genesis_hard_v2.py`
+- Strategy: 4 kiểu Hard mix đều 5 câu/kiểu; 17 single + 3 multi (85/15); single idx 4/4/5/4
+- Chapters covered: 1, 3, 4, 6, 7, 9, 11, 15, 17, 18, 22, 25, 29, 32, 35, 37, 50
+
+### Task V2H-2: Matthew +30 Hard
+- Status: [ ] TODO
+- Current: 104 (E47 M46 H11) → Target: 134 (E47 M46 H41)
+- File(s): `matthew_quiz.json` + `matthew_quiz_en.json`
+- Strategy: cover Sermon on Mount (5-7), parables (13), Olivet (24-25), Passion (26-28); cross-ref Synoptic
+- Checklist:
+  - [ ] Đọc passage RVV11 + ESV
+  - [ ] 30 câu Hard VI mix 4 kiểu
+  - [ ] Self-doubt test pass mỗi câu
+  - [ ] Distractor near-miss + length tolerance ≤ 2×
+  - [ ] correctAnswer index đều 0/1/2/3 (mỗi index 7-8 câu)
+  - [ ] Check duplicate
+  - [ ] 30 câu EN 1:1
+  - [ ] Restart api verify
+  - [ ] Commit: `feat(seed): Matthew +30 Hard for V2 go-live (11→41 Hard)`
+
+### Task V2H-3: John +30 Hard
+- Status: [ ] TODO
+- Current: 101 (E42 M48 H11) → Target: 131 (E42 M48 H41)
+- File(s): `john_quiz.json` + `john_quiz_en.json`
+- Strategy: 7 dấu lạ, 7 "I AM", Bread of Life (6), Good Shepherd (10), Upper Room (13-17), Passion (18-20)
+- Checklist:
+  - [ ] Đọc passage RVV11 + ESV
+  - [ ] 30 câu Hard VI mix 4 kiểu (đặc biệt verse precision cho "I AM" sayings)
+  - [ ] Self-doubt + near-miss + length tolerance
+  - [ ] correctAnswer index đều
+  - [ ] Check duplicate
+  - [ ] 30 câu EN 1:1
+  - [ ] Restart api verify
+  - [ ] Commit: `feat(seed): John +30 Hard for V2 go-live (11→41 Hard)`
+
+### Task V2H-4: Romans +25 Hard
+- Status: [ ] TODO
+- Current: 60 (E24 M29 H7) → Target: 85 (E24 M29 H32)
+- File(s): `romans_quiz.json` + `romans_quiz_en.json`
+- Strategy: lập luận thần học chương 1-8 (tội lỗi, xưng công bình, ân điển, thánh hóa), Israel 9-11, ứng dụng 12-15
+- ⚠️ Tránh guardrails: predestination chương 9, baptism form chương 6 — focus narrative + lập luận trần thuật
+- Checklist:
+  - [ ] Đọc passage RVV11 + ESV
+  - [ ] 25 câu Hard VI mix 4 kiểu (đặc biệt "hiểu sâu" cho lập luận Phao-lô)
+  - [ ] Self-doubt + near-miss + length tolerance
+  - [ ] correctAnswer index đều (mỗi index 6 câu, 1 index 7 câu)
+  - [ ] Check duplicate
+  - [ ] 25 câu EN 1:1
+  - [ ] Restart api verify
+  - [ ] Commit: `feat(seed): Romans +25 Hard for V2 go-live (7→32 Hard)`
+
+### Task V2H-5: Psalms +35 Hard
+- Status: [ ] TODO
+- Current: 106 (E59 M38 H9) → Target: 141 (E59 M38 H44)
+- File(s): `psalms_quiz.json` + `psalms_quiz_en.json`
+- Strategy: thi thiên cụ thể (1, 19, 22, 23, 51, 73, 90, 103, 119, 139, 150) + thể loại (lament/praise/wisdom/royal/imprecatory)
+- ⚠️ Psalms khó vì không có "narrative" — Hard thường là verse precision + theme distinguish giữa các Psalms
+- Checklist:
+  - [ ] Đọc passage RVV11 + ESV cho psalms target
+  - [ ] 35 câu Hard VI mix 4 kiểu (focus verse precision + distinguish similar psalms)
+  - [ ] Self-doubt + near-miss + length tolerance
+  - [ ] correctAnswer index đều (mỗi index 8-9 câu)
+  - [ ] Check duplicate
+  - [ ] 35 câu EN 1:1
+  - [ ] Restart api verify
+  - [ ] Commit: `feat(seed): Psalms +35 Hard for V2 go-live (9→44 Hard)`
+
+### Task V2H-6: Verify total + audit
+- Status: [ ] TODO
+- Checklist:
+  - [ ] Recount E/M/H per file → log final distribution
+  - [ ] Total Hard added: 140 VI + 140 EN = 280 questions
+  - [ ] Backend log all 5 files seed clean (idempotent restart)
+  - [ ] Optional: admin `/admin/question-quality` review distribution
+
+---
+
 ## 2026-04-25 — Seed questions P1 Tier 1 (4 sách missing còn lại) [DONE]
 
 > Theo `book-todo.md` — 4 sách thuộc P1 Tier 1 còn thiếu sau khi Obadiah đã done. Mỗi sách 20 câu × 2 file (VI + EN, 1:1 mapping). Phân bổ: ~10 easy / 6 medium / 4 hard, ~17 single + 3 multi, correctAnswer index đều 0/1/2/3.

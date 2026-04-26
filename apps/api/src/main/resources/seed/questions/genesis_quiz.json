@@ -2631,5 +2631,569 @@
       "Hài cốt Giô-sép",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 17,
+    "verseStart": 17,
+    "verseEnd": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Theo Sáng Thế Ký, Sa-ra sống thêm bao nhiêu năm sau khi sinh Y-sác (đối chiếu Sáng 17:17 và 23:1)?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Sáng 17:17 — Sa-ra 90 tuổi khi nghe lời hứa, sinh Y-sác lúc 91. Sáng 23:1 — Sa-ra hưởng thọ 127 tuổi. Vậy bà sống thêm 36-37 năm sau khi sinh con.",
+    "language": "vi",
+    "options": [
+      "20 năm",
+      "27 năm",
+      "37 năm",
+      "47 năm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Sa-ra",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 15,
+    "verseStart": 18,
+    "verseEnd": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Trước khi Đức Chúa Trời lập giao ước cắt bì với Áp-ra-ham (Sáng 17), Ngài đã hứa ban đất Ca-na-an cho ông và dòng dõi mấy lần?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Sáng 12:7 (lần 1, tại Si-chem), 13:14-17 (lần 2, sau khi tách Lót), 15:18 (lần 3, giao ước giữa hai phần thịt) — tổng 3 lần trước Sáng 17.",
+    "language": "vi",
+    "options": [
+      "2 lần",
+      "3 lần",
+      "4 lần",
+      "5 lần"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Giao ước Áp-ra-ham",
+      "Lời hứa đất",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 35,
+    "verseStart": 1,
+    "verseEnd": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Gia-cốp đến Bê-tên hai lần. Lần thứ hai (Sáng 35), ông đến đó vì lý do nào theo chính lời text ghi lại?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Sáng 35:1-7 — Đức Chúa Trời phán bảo Gia-cốp lên Bê-tên lập bàn thờ; ông cũng bảo gia đình bỏ các thần ngoại bang. Lần đầu (28:19) là khi chạy trốn Ê-sau và mộng thấy cây thang.",
+    "language": "vi",
+    "options": [
+      "Theo lệnh Chúa, để lập bàn thờ và bỏ thần ngoại bang",
+      "Để chạy trốn sau cuộc tàn sát tại thành Si-chem",
+      "Để gặp lại anh trai mình là Ê-sau sau hai mươi năm",
+      "Để chôn cất Ra-chên người vợ yêu dấu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Gia-cốp",
+      "Bê-tên",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 37,
+    "verseStart": 3,
+    "verseEnd": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Trong các 'áo' sau, áo nào CÓ được nhắc trực tiếp trong câu chuyện Giô-sép (Sáng 37-50)? (chọn tất cả đúng)",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Sáng 37:3 — áo nhiều màu cha may; 39:12 — áo bị vợ Pô-ti-pha giật khi ông chạy; 41:42 — áo vải gai mịn Pha-ra-ôn ban khi tôn ông làm tể tướng. Chi tiết 'áo gấm thêu vàng dâng cha già' không có trong text.",
+    "language": "vi",
+    "options": [
+      "Áo nhiều màu cha may cho Giô-sép",
+      "Áo bị vợ Pô-ti-pha giật khi ông chạy ra ngoài",
+      "Áo vải gai mịn Pha-ra-ôn ban khi tôn làm tể tướng",
+      "Áo gấm thêu vàng Giô-sép dâng cha già Gia-cốp"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Giô-sép",
+      "Hành trình Giô-sép",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "verseStart": 23,
+    "verseEnd": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Lời tiên tri của Đức Giê-hô-va với Rê-bê-ca khi mang thai (Sáng 25:23) ứng nghiệm trực tiếp trong lời chúc của Y-sác cho Gia-cốp (Sáng 27:29) ở chi tiết cụ thể nào?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Sáng 25:23 — 'đứa lớn sẽ phục đứa nhỏ'. Sáng 27:29 — 'các anh em mình sẽ quỳ xuống trước mặt mình'. Hai câu khớp ở việc anh phục em.",
+    "language": "vi",
+    "options": [
+      "Đất hứa Ca-na-an thuộc về Gia-cốp",
+      "Dòng dõi Gia-cốp đông như sao trời",
+      "Gia-cốp được Đức Giê-hô-va chúc phước trực tiếp",
+      "Anh em sẽ quỳ xuống và phục dịch Gia-cốp"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Rê-bê-ca",
+      "Lời tiên tri",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "verseStart": 21,
+    "verseEnd": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Trong các bà mẹ son sẻ của các tổ phụ, Kinh Thánh ghi rõ ai là người mà chính chồng đã 'cầu khẩn Đức Giê-hô-va' và Ngài đáp lời?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Sáng 25:21 — 'Y-sác khẩn cầu Đức Giê-hô-va cho vợ mình son sẻ; Đức Giê-hô-va nhậm lời'. Với Sa-ra (16-21), Áp-ra-ham không được ghi cầu trực tiếp. Với Ra-chên (30:22), text nói 'Đức Chúa Trời nhớ đến Ra-chên', không nói Gia-cốp cầu.",
+    "language": "vi",
+    "options": [
+      "Sa-ra",
+      "Rê-bê-ca",
+      "Ra-chên",
+      "Lê-a"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Tổ phụ",
+      "Cầu nguyện",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 26,
+    "verseStart": 7,
+    "verseEnd": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Trong Sáng Thế Ký, các tổ phụ có lúc giới thiệu vợ mình là 'em gái'. Trường hợp nào CÓ trong text? (chọn tất cả đúng)",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Sáng 12:10-20 — Áp-ram nói Sa-rai là em với Pha-ra-ôn; Sáng 20:1-18 — Áp-ra-ham nói với A-bi-mê-léc Ghê-ra; Sáng 26:6-11 — Y-sác nói với A-bi-mê-léc Ghê-ra. Gia-cốp không có trường hợp này; ông ở với La-ban là cậu ruột của Ra-chên.",
+    "language": "vi",
+    "options": [
+      "Áp-ram nói Sa-rai là em với Pha-ra-ôn (Sáng 12)",
+      "Áp-ra-ham nói Sa-ra là em với A-bi-mê-léc (Sáng 20)",
+      "Y-sác nói Rê-bê-ca là em với A-bi-mê-léc (Sáng 26)",
+      "Gia-cốp nói Ra-chên là em với La-ban tại Pha-đan A-ram"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Tổ phụ",
+      "Sự lừa dối",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 29,
+    "verseStart": 32,
+    "verseEnd": 35,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Theo Sáng Thế Ký 29-30, các con sau đây của Gia-cốp do CHÍNH Lê-a sinh, không phải do nữ tỳ. Trường hợp nào đúng? (chọn tất cả đúng)",
+    "correctAnswer": [
+      0,
+      2
+    ],
+    "explanation": "Sáng 29:32-35 — Lê-a sinh Ru-bên (cả), Si-mê-ôn, Lê-vi, Giu-đa (sau lại Y-sa-ca, Sa-bu-lôn). Đan và Nép-ta-li là con của nữ tỳ Bi-la (30:5-8), không phải của Lê-a.",
+    "language": "vi",
+    "options": [
+      "Ru-bên là con trưởng do chính Lê-a sinh",
+      "Đan là con do chính Lê-a sinh trực tiếp",
+      "Si-mê-ôn là con thứ hai do Lê-a sinh ra",
+      "Nép-ta-li là con do chính Lê-a sinh trực tiếp"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Mười hai chi phái",
+      "Gia đình Gia-cốp",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 37,
+    "verseStart": 9,
+    "verseEnd": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Trong các giấc mộng được kể trong Sáng Thế Ký, giấc mộng nào có 'mười một ngôi sao cùng mặt trời và mặt trăng' sấp mình xuống?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Sáng 37:9 — giấc mộng thứ hai của Giô-sép thiếu thời. Pha-ra-ôn mộng 7 bò 7 bông lúa (41); quan dâng rượu mộng 3 nhành nho (40); quan dâng bánh mộng 3 giỏ bánh (40).",
+    "language": "vi",
+    "options": [
+      "Giấc mộng của Pha-ra-ôn về 7 bò gầy",
+      "Giấc mộng của quan dâng rượu trong ngục",
+      "Giấc mộng của Giô-sép thuở thiếu thời",
+      "Giấc mộng của quan dâng bánh trong ngục"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Giấc mộng",
+      "Giô-sép",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 9,
+    "verseStart": 13,
+    "verseEnd": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Dấu giao ước nào sau đây KHÔNG được Đức Chúa Trời lập trong Sáng Thế Ký?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Cầu vồng (Sáng 9:13) — giao ước với Nô-ê. Cắt bì (Sáng 17:11) — giao ước với Áp-ra-ham. Sa-bát là dấu giao ước trong Xuất 31:13, không phải Sáng. Cột đá Bê-tên (28:18) là cột thờ kỷ niệm, không phải dấu giao ước phổ quát.",
+    "language": "vi",
+    "options": [
+      "Cầu vồng trên mây",
+      "Phép cắt bì",
+      "Ngày Sa-bát",
+      "Cột đá tại Bê-tên"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Giao ước",
+      "Dấu giao ước",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 7,
+    "verseStart": 16,
+    "verseEnd": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Sáng 7:16 ghi rõ 'Đức Giê-hô-va đóng cửa lại cho Nô-ê'. Chi tiết này nhấn mạnh chân lý thần học nào trong câu chuyện hồng thủy?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Sáng 7:16 — chính Đức Giê-hô-va đóng cửa, không phải Nô-ê. Hành động này khẳng định cả sự cứu rỗi (đóng để bảo vệ những người trong tàu) lẫn sự phán xét (đóng để dứt khoát ngăn người ngoài vào) đều thuộc thẩm quyền tối thượng của Đức Chúa Trời.",
+    "language": "vi",
+    "options": [
+      "Nô-ê quá yếu sức để tự đóng cửa tàu",
+      "Cửa tàu quá lớn cần Đức Chúa Trời giúp đóng",
+      "Đó là tín hiệu báo cơn mưa hồng thủy bắt đầu",
+      "Sự cứu rỗi và phán xét đều đến từ Đức Giê-hô-va, không phải con người"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Hồng thủy",
+      "Quyền tể trị",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 22,
+    "verseStart": 12,
+    "verseEnd": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Theo lời chính của thiên sứ Đức Giê-hô-va sau khi Áp-ra-ham vâng phục dâng Y-sác (Sáng 22:12), mục đích chính của sự thử thách là gì?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Sáng 22:12 — 'Bây giờ ta biết rằng ngươi thật kính sợ Đức Chúa Trời, bởi cớ ngươi không tiếc với ta con ngươi, tức con một ngươi.' Sự thử là để tỏ ra (cho người và cho các thế hệ thấy) lòng kính sợ Chúa của Áp-ra-ham.",
+    "language": "vi",
+    "options": [
+      "Để tỏ ra Áp-ra-ham thật kính sợ Đức Chúa Trời",
+      "Để Áp-ra-ham học bài học khiêm nhường",
+      "Để chứng minh con người không thể tin Chúa hoàn toàn",
+      "Để Y-sác trưởng thành về đức tin cá nhân"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Áp-ra-ham",
+      "Đức tin thử nghiệm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "verseStart": 20,
+    "verseEnd": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Trong Sáng 50:20, Giô-sép nói với các anh: 'Các anh toan hại tôi, nhưng Đức Chúa Trời lại tính làm điều ích để cứu sự sống cho nhiều người'. Câu này thể hiện chân lý thần học nào?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Sáng 50:20 — đây là phát biểu kinh điển về quan phòng (providence): Đức Chúa Trời tể trị trên mọi sự, biến những âm mưu xấu của con người thành phương tiện cứu rỗi cho dân Ngài, mà không miễn trừ trách nhiệm của kẻ làm ác.",
+    "language": "vi",
+    "options": [
+      "Đức Chúa Trời chỉ có thể dùng những người tốt",
+      "Tội lỗi của con người không đáng bị phán xét",
+      "Mọi hành động của con người đều là ý muốn trực tiếp của Chúa",
+      "Đức Chúa Trời tể trị, biến ác thành phước cho dân Ngài"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Quan phòng",
+      "Giô-sép",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 32,
+    "verseStart": 28,
+    "verseEnd": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Sáng 32:28 giải thích tên 'Y-sơ-ra-ên' với ý nghĩa cụ thể nào theo lời người vật lộn cùng Gia-cốp?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Sáng 32:28 — 'Tên ngươi sẽ chẳng làm Gia-cốp nữa, nhưng tên là Y-sơ-ra-ên, vì ngươi có vật lộn cùng Đức Chúa Trời và cùng người ta, ngươi đều được thắng.' Các tên còn lại: 'cha của muôn dân' = Áp-ra-ham (17:5); 'Đức Chúa Trời cười' = Y-sác.",
+    "language": "vi",
+    "options": [
+      "Người vật lộn cùng Đức Chúa Trời và loài người mà được thắng",
+      "Cha của muôn dân tộc trên khắp đất theo lời hứa giao ước",
+      "Người được Đức Chúa Trời nhớ đến trong cảnh khốn cùng nhất",
+      "Đức Chúa Trời cười khi đặt tên cho ông lúc mới sinh ra"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Gia-cốp",
+      "Tên Y-sơ-ra-ên",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 18,
+    "verseStart": 23,
+    "verseEnd": 33,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Cuộc đối thoại của Áp-ra-ham mặc cả với Đức Giê-hô-va về Sô-đôm (Sáng 18:23-33) bộc lộ chân lý nào về tính chất của Đức Chúa Trời?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Sáng 18:25 — 'Đấng đoán xét toàn thế gian há lại không làm sự công bình sao?' Đoạn này khẳng định Đức Chúa Trời vừa công bình tuyệt đối, vừa kiên nhẫn lắng nghe và sẵn lòng tha cho thành vì người công bình. Áp-ra-ham giảm số từ 50 xuống 10.",
+    "language": "vi",
+    "options": [
+      "Đức Chúa Trời do dự, dễ bị con người thuyết phục đổi ý",
+      "Đức Chúa Trời công bình tuyệt đối và sẵn lòng tha vì người công bình",
+      "Đức Chúa Trời phán xét hoàn toàn ngẫu nhiên không có nguyên tắc",
+      "Đức Chúa Trời không quan tâm đến số người công bình trong thành"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Áp-ra-ham",
+      "Sự cầu thay",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 2,
+    "verseEnd": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Theo bản RVV11, Sáng 1:2 ghi: 'Đất là vô hình và trống không, sự mờ tối ở trên mặt vực; Thần Đức Chúa Trời ___ trên mặt nước.' Từ đúng ở chỗ trống là?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Sáng 1:2 (RVV11) — 'Thần Đức Chúa Trời vận hành trên mặt nước.' Từ Hê-bơ-rơ là 'merachepheth' (lượn / ấp ủ), được dịch là 'vận hành' trong RVV11.",
+    "language": "vi",
+    "options": [
+      "vận hành",
+      "ngự xuống",
+      "bay lượn",
+      "phán dạy"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Sáng tạo",
+      "Đức Thánh Linh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "verseStart": 14,
+    "verseEnd": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Sáng 3:14 (RVV11) ghi lời rủa con rắn: 'Mầy sẽ bò bằng ___ và ăn ___ trọn cả đời.' Hai chỗ trống điền lần lượt là?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Sáng 3:14 (RVV11) — 'mầy sẽ bò bằng bụng và ăn bụi đất trọn cả đời mầy.' Hình ảnh nhấn mạnh sự hạ thấp và hổ thẹn của con rắn sau khi cám dỗ Ê-va.",
+    "language": "vi",
+    "options": [
+      "bốn chân / cỏ xanh",
+      "bụng / bụi đất",
+      "lưng / lá cây",
+      "đuôi / hạt giống"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Sa Ngã",
+      "Lời rủa con rắn",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 6,
+    "verseStart": 3,
+    "verseEnd": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Theo Sáng 6:3 (RVV11), Đức Giê-hô-va phán giới hạn ngày của loài người sẽ là bao nhiêu năm?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Sáng 6:3 — 'Thần ta sẽ chẳng hằng ở trong loài người luôn; trong điều lầm lạc, loài người chỉ là xác thịt; đời người sẽ là một trăm hai mươi năm.' Đây là lời báo trước phán xét hồng thủy.",
+    "language": "vi",
+    "options": [
+      "70 năm",
+      "100 năm",
+      "120 năm",
+      "150 năm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Trước hồng thủy",
+      "Tuổi thọ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 4,
+    "verseStart": 15,
+    "verseEnd": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Sáng 4:15 (RVV11) — Đức Giê-hô-va đặt một dấu trên Ca-in. Theo chính lời text, mục đích của dấu là để 'ai gặp Ca-in thì sẽ KHÔNG ___'.",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Sáng 4:15 — 'Đức Giê-hô-va bèn đánh dấu trên Ca-in, hầu cho ai gặp Ca-in thì chẳng giết.' Dấu là phương tiện bảo vệ, cho thấy lòng nhân từ của Chúa ngay cả với kẻ giết em mình.",
+    "language": "vi",
+    "options": [
+      "nhận biết được tội của ông trên gương mặt",
+      "tỏ ý thương xót và nói chuyện với ông",
+      "cho ông tị nạn nơi đất của mình ở",
+      "đánh giết ông để báo thù cho A-bên"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Ca-in",
+      "Lòng nhân từ Chúa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 11,
+    "verseStart": 4,
+    "verseEnd": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Theo lời chính của dân Si-nê-a trong Sáng 11:4, mục đích cụ thể của việc xây tháp 'đỉnh cao đến trời' là gì?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Sáng 11:4 — 'Nào! chúng ta hãy xây một cái thành và dựng lên một cái tháp, chót cao đến tận trời; ta hãy lo làm cho rạng danh, e khi phải tản lạc khắp trên mặt đất chăng.' Đáp án nằm trong chính câu nói của họ.",
+    "language": "vi",
+    "options": [
+      "Để tránh một cơn hồng thủy lần thứ hai",
+      "Để có thể đến gần và thờ phượng Đức Chúa Trời",
+      "Để 'làm rạng danh' cho mình, kẻo bị tản lạc khắp đất",
+      "Để dâng tế lễ cho các vì sao trên trời"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Tháp Ba-bên",
+      "Kiêu ngạo",
+      "Nâng cao"
+    ]
   }
 ]

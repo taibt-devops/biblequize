@@ -2631,5 +2631,569 @@
       "Joseph's Bones",
       "Basic"
     ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 17,
+    "verseStart": 17,
+    "verseEnd": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "According to Genesis, how many years did Sarah live after giving birth to Isaac (compare Gen 17:17 and 23:1)?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Gen 17:17 — Sarah was 90 when she heard the promise and bore Isaac at 91. Gen 23:1 — Sarah lived 127 years. Therefore she lived about 36-37 years after Isaac's birth.",
+    "language": "en",
+    "options": [
+      "20 years",
+      "27 years",
+      "37 years",
+      "47 years"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Sarah",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 15,
+    "verseStart": 18,
+    "verseEnd": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Before God established the covenant of circumcision with Abraham (Gen 17), how many times had He promised the land of Canaan to him and his descendants?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Gen 12:7 (first, at Shechem), 13:14-17 (second, after Lot's separation), 15:18 (third, the covenant between the pieces) — three times before Gen 17.",
+    "language": "en",
+    "options": [
+      "2 times",
+      "3 times",
+      "4 times",
+      "5 times"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abrahamic Covenant",
+      "Land Promise",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 35,
+    "verseStart": 1,
+    "verseEnd": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Jacob came to Bethel twice. According to the text, why did he go there the second time (Gen 35)?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Gen 35:1-7 — God commanded Jacob to go up to Bethel and build an altar; he also told his household to put away foreign gods. The first visit (28:19) was while fleeing Esau and dreaming of the ladder.",
+    "language": "en",
+    "options": [
+      "By God's command, to build an altar and remove foreign gods",
+      "To flee from the massacre at Shechem",
+      "To meet his brother Esau again",
+      "To bury his beloved wife Rachel"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob",
+      "Bethel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 37,
+    "verseStart": 3,
+    "verseEnd": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "Which of the following 'robes/garments' are explicitly mentioned in Joseph's story (Gen 37-50)? (select all correct)",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Gen 37:3 — the robe of many colors made by his father; 39:12 — the garment Potiphar's wife seized as he fled; 41:42 — the fine linen robe given by Pharaoh when he was made governor. The 'gold-embroidered brocade for aged Jacob' is not in the text.",
+    "language": "en",
+    "options": [
+      "The robe of many colors made by his father",
+      "The garment Potiphar's wife seized as he fled outside",
+      "The fine linen robe Pharaoh gave when making him governor",
+      "A gold-embroidered brocade Joseph offered to aged Jacob"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph",
+      "Joseph Narrative",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "verseStart": 23,
+    "verseEnd": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "The LORD's prophecy to Rebekah while pregnant (Gen 25:23) is directly fulfilled in Isaac's blessing on Jacob (Gen 27:29) in which specific detail?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Gen 25:23 — 'the older shall serve the younger'. Gen 27:29 — 'your brothers shall bow down to you'. Both texts converge on the older serving/bowing to the younger.",
+    "language": "en",
+    "options": [
+      "The promised land of Canaan belongs to Jacob",
+      "Jacob's descendants will be as numerous as stars",
+      "Jacob is directly blessed by the LORD",
+      "Brothers will bow down and serve Jacob"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Rebekah",
+      "Prophecy",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "verseStart": 21,
+    "verseEnd": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Among the barren matriarchs, which one is the one whose husband is explicitly recorded as 'prayed to the LORD' on her behalf, and the LORD answered?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Gen 25:21 — 'Isaac prayed to the LORD for his wife, because she was barren. And the LORD granted his prayer.' With Sarah (16-21), Abraham is not recorded as praying directly. With Rachel (30:22), the text says 'God remembered Rachel', not that Jacob prayed.",
+    "language": "en",
+    "options": [
+      "Sarah",
+      "Rebekah",
+      "Rachel",
+      "Leah"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Patriarchs",
+      "Prayer",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 26,
+    "verseStart": 7,
+    "verseEnd": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "In Genesis, patriarchs sometimes presented their wives as 'sister'. Which of these cases ARE in the text? (select all correct)",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Gen 12:10-20 — Abram told Pharaoh Sarai was his sister; Gen 20:1-18 — Abraham told Abimelech of Gerar; Gen 26:6-11 — Isaac told Abimelech of Gerar. Jacob never did this; he stayed with Laban, Rachel's uncle.",
+    "language": "en",
+    "options": [
+      "Abram told Pharaoh that Sarai was his sister (Gen 12)",
+      "Abraham told Abimelech that Sarah was his sister (Gen 20)",
+      "Isaac told Abimelech that Rebekah was his sister (Gen 26)",
+      "Jacob told Laban that Rachel was his sister at Paddan-aram"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Patriarchs",
+      "Deception",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 29,
+    "verseStart": 32,
+    "verseEnd": 35,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "content": "According to Genesis 29-30, the following sons of Jacob were borne by Leah herself, not by her maidservant. Which cases are correct? (select all correct)",
+    "correctAnswer": [
+      0,
+      2
+    ],
+    "explanation": "Gen 29:32-35 — Leah bore Reuben (firstborn), Simeon, Levi, Judah (later Issachar, Zebulun). Dan and Naphtali were the sons of Bilhah, her maidservant (30:5-8), not Leah.",
+    "language": "en",
+    "options": [
+      "Reuben was the firstborn borne by Leah herself",
+      "Dan was a son borne directly by Leah herself",
+      "Simeon was the second son borne by Leah herself",
+      "Naphtali was a son borne directly by Leah herself"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Twelve Tribes",
+      "Jacob's Family",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 37,
+    "verseStart": 9,
+    "verseEnd": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Among the dreams recounted in Genesis, which one features 'eleven stars, the sun and the moon' bowing down?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Gen 37:9 — Joseph's second dream as a youth. Pharaoh dreamed of 7 cows and 7 ears of grain (41); the cupbearer dreamed of 3 vine branches (40); the baker dreamed of 3 baskets of bread (40).",
+    "language": "en",
+    "options": [
+      "Pharaoh's dream of seven lean cows",
+      "The cupbearer's dream in prison",
+      "Joseph's dream as a youth",
+      "The baker's dream in prison"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Dreams",
+      "Joseph",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 9,
+    "verseStart": 13,
+    "verseEnd": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Which of the following covenant signs is NOT established by God in Genesis?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "The rainbow (Gen 9:13) — covenant with Noah. Circumcision (Gen 17:11) — covenant with Abraham. The Sabbath is a covenant sign in Exod 31:13, not in Genesis. The pillar at Bethel (28:18) is a memorial pillar, not a universal covenant sign.",
+    "language": "en",
+    "options": [
+      "The rainbow set in the clouds",
+      "The covenant of circumcision",
+      "The Sabbath day of rest",
+      "The memorial pillar at Bethel"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Covenant",
+      "Covenant Signs",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 7,
+    "verseStart": 16,
+    "verseEnd": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Genesis 7:16 explicitly states that 'the LORD shut him in'. Which theological truth does this detail emphasize in the flood narrative?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Gen 7:16 — the LORD himself shut the door, not Noah. This action affirms that both salvation (sealing those inside for protection) and judgment (decisively shutting out those outside) belong to God's sovereign authority.",
+    "language": "en",
+    "options": [
+      "Noah was too weak to close the ark door himself",
+      "The door was too large; God had to help close it",
+      "It was a signal that the flood rains were beginning",
+      "Both salvation and judgment come from the LORD, not man"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Flood",
+      "Sovereignty",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 22,
+    "verseStart": 12,
+    "verseEnd": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "According to the angel of the LORD's own words after Abraham obeyed in offering Isaac (Gen 22:12), what is the chief purpose of the test?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Gen 22:12 — 'Now I know that you fear God, seeing you have not withheld your son, your only son, from me.' The test was to demonstrate (to all generations) Abraham's fear of God.",
+    "language": "en",
+    "options": [
+      "To demonstrate that Abraham truly fears God",
+      "To teach Abraham a lesson in humility",
+      "To prove humans cannot fully trust God",
+      "To mature Isaac's personal faith"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abraham",
+      "Tested Faith",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "verseStart": 20,
+    "verseEnd": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "In Genesis 50:20, Joseph tells his brothers: 'You meant evil against me, but God meant it for good, to bring about that many people should be kept alive.' Which theological truth does this express?",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Gen 50:20 — a classic statement of providence: God reigns over all events, turning human evil schemes into the means of saving His people, without excusing the wickedness of those who plotted evil.",
+    "language": "en",
+    "options": [
+      "God can only use good people",
+      "Human sin does not deserve judgment",
+      "Every human action is God's direct will",
+      "God sovereignly turns evil into good for His people"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Providence",
+      "Joseph",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 32,
+    "verseStart": 28,
+    "verseEnd": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Genesis 32:28 explains the name 'Israel' with what specific meaning according to the one wrestling with Jacob?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Gen 32:28 — 'Your name shall no longer be called Jacob, but Israel, for you have striven with God and with men, and have prevailed.' The other names: 'father of many nations' = Abraham (17:5); 'God laughs/he laughs' = Isaac.",
+    "language": "en",
+    "options": [
+      "He who has striven with God and with men and has prevailed",
+      "Father of many nations across the whole earth by promise",
+      "One whom God has remembered in his deepest hour of need",
+      "God laughed when giving him his name at his birth"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob",
+      "Name Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 18,
+    "verseStart": 23,
+    "verseEnd": 33,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Abraham's dialogue bargaining with the LORD over Sodom (Gen 18:23-33) reveals which truth about God's character?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Gen 18:25 — 'Shall not the Judge of all the earth do what is just?' This passage affirms that God is both perfectly just and patient enough to listen, willing to spare the city for the sake of the righteous. Abraham reduced the number from 50 to 10.",
+    "language": "en",
+    "options": [
+      "God is hesitant and easily persuaded by men to change His mind",
+      "God is perfectly just and willing to spare for the righteous' sake",
+      "God judges entirely at random without principle",
+      "God is indifferent to how many righteous live in the city"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abraham",
+      "Intercession",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 2,
+    "verseEnd": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "According to the ESV, Genesis 1:2 reads: 'The earth was without form and void, and darkness was over the face of the deep. And the Spirit of God was ___ over the face of the waters.' Which word fills the blank?",
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Gen 1:2 (ESV) — 'And the Spirit of God was hovering over the face of the waters.' The Hebrew 'merachepheth' (hovering/brooding) is translated 'hovering' in ESV.",
+    "language": "en",
+    "options": [
+      "hovering",
+      "descending",
+      "fluttering down",
+      "speaking"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Creation",
+      "Holy Spirit",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "verseStart": 14,
+    "verseEnd": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Genesis 3:14 (ESV) records the curse on the serpent: 'On your ___ you shall go, and ___ you shall eat all the days of your life.' How are the blanks filled in order?",
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Gen 3:14 (ESV) — 'on your belly you shall go, and dust you shall eat all the days of your life.' The image emphasizes the serpent's humiliation and shame after tempting Eve.",
+    "language": "en",
+    "options": [
+      "four legs / green grass",
+      "belly / dust",
+      "back / leaves",
+      "tail / seeds"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Fall",
+      "Curse on Serpent",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 6,
+    "verseStart": 3,
+    "verseEnd": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "According to Genesis 6:3 (ESV), the LORD declared that man's days shall be how many years?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Gen 6:3 — 'My Spirit shall not abide in man forever, for he is flesh; his days shall be 120 years.' This is the warning that precedes the flood judgment.",
+    "language": "en",
+    "options": [
+      "70 years",
+      "100 years",
+      "120 years",
+      "150 years"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Pre-flood",
+      "Lifespan",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 4,
+    "verseStart": 15,
+    "verseEnd": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "Genesis 4:15 (ESV) — the LORD put a mark on Cain. According to the text itself, the purpose of the mark was that anyone finding Cain should NOT ___.",
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Gen 4:15 — 'And the LORD put a mark on Cain, lest any who found him should attack him.' The mark was a means of protection, showing the LORD's mercy even to the one who killed his brother.",
+    "language": "en",
+    "options": [
+      "recognize the guilt visible on his face",
+      "speak with him in pity or compassion",
+      "grant him asylum in their own land",
+      "attack and kill him in revenge for Abel"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Cain",
+      "God's Mercy",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 11,
+    "verseStart": 4,
+    "verseEnd": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "content": "According to the words of the people of Shinar themselves in Genesis 11:4, what is the specific purpose of building a tower 'with its top in the heavens'?",
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Gen 11:4 — 'Come, let us build ourselves a city and a tower with its top in the heavens, and let us make a name for ourselves, lest we be dispersed over the face of the whole earth.' The answer is in their own words.",
+    "language": "en",
+    "options": [
+      "To escape another flood judgment",
+      "To draw near and worship God in heaven",
+      "To 'make a name' for themselves, lest they be dispersed",
+      "To offer sacrifices to the stars above"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Tower of Babel",
+      "Pride",
+      "Advanced"
+    ]
   }
 ]
