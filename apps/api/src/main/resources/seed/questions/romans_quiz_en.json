@@ -2304,5 +2304,1226 @@
       "Renewal of Mind",
       "Advanced"
     ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 1,
+    "content": "According to Romans 1:1, how does Paul introduce himself?",
+    "explanation": "Rom 1:1 — 'Paul, a servant of Christ Jesus, called to be an apostle, set apart for the gospel of God'.",
+    "language": "en",
+    "options": [
+      "A servant of Christ Jesus, called to be an apostle",
+      "King of Israel chosen by God",
+      "A priest in the line of Aaron",
+      "A zealous Pharisee under the Law"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Paul's Self-Introduction",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 3,
+    "content": "According to Romans 4:3, by what was Abraham counted righteous?",
+    "explanation": "Rom 4:3 (citing Gen 15:6) — 'Abraham believed God, and it was counted to him as righteousness'. The heart of 'justification by faith'.",
+    "language": "en",
+    "options": [
+      "By his act of circumcision",
+      "By BELIEVING God",
+      "By the many sacrifices he offered",
+      "By keeping the Law of Moses"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Abraham Believed",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "According to Romans 5:8, how does God show his love for us?",
+    "explanation": "Rom 5:8 — 'But God shows his love for us in that while we were still sinners, Christ died for us'.",
+    "language": "en",
+    "options": [
+      "By giving us material wealth",
+      "By freeing Israel from Roman oppression",
+      "Christ DIED for us WHILE WE WERE STILL SINNERS",
+      "By sending prophets to every nation"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Christ Died for Sinners",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 11,
+    "content": "According to Romans 6:11, how should believers 'consider' themselves with respect to sin and to God?",
+    "explanation": "Rom 6:11 — 'So you also must consider yourselves dead to sin and alive to God in Christ Jesus'.",
+    "language": "en",
+    "options": [
+      "Alive to sin but dead to God",
+      "Alive to both sin and God at once",
+      "Strong over sin but weak toward God",
+      "DEAD to sin but ALIVE to God in Christ Jesus"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Dead to Sin",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 7,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 25,
+    "content": "According to Romans 7:24, after describing his struggle with sin, what does Paul cry out?",
+    "explanation": "Rom 7:24 — 'Wretched man that I am! Who will deliver me from this body of death? Thanks be to God through Jesus Christ our Lord!' (7:25).",
+    "language": "en",
+    "options": [
+      "'Wretched man that I am! Who will deliver me from this body of death?'",
+      "'I have conquered sin forever now'",
+      "'I will never sin again'",
+      "'I no longer need God at all'"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Wretched Man",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 37,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 37,
+    "content": "According to Romans 8:37, what are believers in all hardships?",
+    "explanation": "Rom 8:37 — 'No, in all these things we are more than conquerors through him who loved us'.",
+    "language": "en",
+    "options": [
+      "Conquerors of Satan in their own strength",
+      "Self-made conquerors without help",
+      "MORE THAN CONQUERORS through him who loved us",
+      "People who avoid all suffering"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "More Than Conquerors",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 3,
+    "content": "According to Romans 9:1-3, what does Paul's heart express about Israel?",
+    "explanation": "Rom 9:2-3 — 'I have great sorrow and unceasing anguish in my heart. For I could wish that I myself were accursed and cut off from Christ for the sake of my brothers, my kinsmen according to the flesh'.",
+    "language": "en",
+    "options": [
+      "Joy that they have all believed",
+      "GREAT SORROW and willingness to be cut off from Christ for his kinsmen",
+      "Anger that they oppose him",
+      "Indifference to their fate"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Paul's Sorrow",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "According to Romans 10:13, who shall be saved?",
+    "explanation": "Rom 10:13 (citing Joel 2:32) — 'For everyone who calls on the name of the Lord will be saved'. Universal to all: Jews and Gentiles alike.",
+    "language": "en",
+    "options": [
+      "Only Israelites who keep the Law",
+      "Only the circumcised",
+      "Only priests in the Jerusalem temple",
+      "Whoever CALLS ON THE NAME of the Lord shall be saved"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Call on the Name",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 2,
+    "content": "According to Romans 11:1, what is the rhetorical question about Israel and the answer?",
+    "explanation": "Rom 11:1 — 'I ask, then, has God rejected his people? By no means! For I myself am an Israelite, a descendant of Abraham, a member of the tribe of Benjamin'.",
+    "language": "en",
+    "options": [
+      "'Has God REJECTED his people? BY NO MEANS!' Paul is himself an Israelite",
+      "'God has rejected his people' — Paul confirms it",
+      "'Israel killed the Messiah' — unforgivable",
+      "'Israel has never had any fault' per Paul"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "God Has Not Rejected",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 5,
+    "content": "According to Romans 12:4-5, what does Paul compare the church to?",
+    "explanation": "Rom 12:4-5 — 'For as in one body we have many members, and the members do not all have the same function, so we, though many, are one body in Christ, and individually members one of another'.",
+    "language": "en",
+    "options": [
+      "An army with many ranks",
+      "A material temple with many rooms",
+      "ONE BODY with many members, each having its own function",
+      "A family with many generations"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "One Body Many Members",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 12,
+    "content": "According to Romans 13:11-12, what does Paul urge believers to do because 'salvation is nearer to us now'?",
+    "explanation": "Rom 13:11-12 — 'Besides this you know the time, that the hour has come for you to wake from sleep... the night is far gone; the day is at hand. So then let us cast off the works of darkness and put on the armor of light'.",
+    "language": "en",
+    "options": [
+      "Sleep early to stay healthy",
+      "WAKE UP from sleep; put on the armor of light",
+      "Fast continually until the end of the age",
+      "Hide in the wilderness from the world"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Wake from Sleep",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 14,
+    "verseStart": 17,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 17,
+    "content": "According to Romans 14:17, what is the kingdom of God NOT, and what is it?",
+    "explanation": "Rom 14:17 — 'For the kingdom of God is not a matter of eating and drinking but of righteousness and peace and joy in the Holy Spirit'. Paul counsels the strong not to cause the weak to stumble over food.",
+    "language": "en",
+    "options": [
+      "Glory and power, not righteousness",
+      "Possessions and houses, not the soul",
+      "Victory over enemies, not forgiveness",
+      "Not eating and drinking, BUT RIGHTEOUSNESS, PEACE, JOY in the Holy Spirit"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Kingdom Not Food",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 13,
+    "content": "According to Romans 15:13, by what title does Paul call God in his benediction?",
+    "explanation": "Rom 15:13 — 'May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope'.",
+    "language": "en",
+    "options": [
+      "'God of HOPE'",
+      "'God of material wealth'",
+      "'God of the angels'",
+      "'God of the Jews'"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "God of Hope",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 2,
+    "content": "According to Romans 16:1-2, who does Paul commend as a 'deaconess' of the church at Cenchreae?",
+    "explanation": "Rom 16:1-2 — 'I commend to you our sister Phoebe, a servant of the church at Cenchreae, that you may welcome her in the Lord in a way worthy of the saints'.",
+    "language": "en",
+    "options": [
+      "Priscilla, wife of Aquila",
+      "Mary Magdalene from Galilee",
+      "Phoebe, deaconess of the church at Cenchreae",
+      "Lydia the seller of purple cloth"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Phoebe",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 21,
+    "content": "According to Romans 12:21, what is Paul's final counsel on dealing with evil?",
+    "explanation": "Rom 12:21 — 'Do not be overcome by evil, but overcome evil with good'. The closing line of 12:9-21 — a catalog of marks of genuine love.",
+    "language": "en",
+    "options": [
+      "Repay evil with evil for fairness",
+      "Do not be OVERCOME by evil, but OVERCOME evil with GOOD",
+      "Avoid evil entirely and have nothing to do with it",
+      "Ignore evil and focus on good things only"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Overcome Evil",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 7,
+    "content": "According to Romans 1:5, what did Paul receive from Christ, and for what purpose?",
+    "explanation": "Rom 1:5 — 'Through whom we have received grace and apostleship to bring about the obedience of faith for the sake of his name among all the nations'. The phrase 'obedience of faith' brackets Romans (cf. 16:26).",
+    "language": "en",
+    "options": [
+      "Abundant wealth to distribute widely among the poor churches",
+      "Authority to rule the nations of earth like a Roman emperor",
+      "GRACE and APOSTLESHIP to bring GENTILES to OBEDIENCE OF FAITH",
+      "Ability to heal every illness for any person at any time"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Obedience of Faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 16,
+    "content": "According to Romans 1:16, why is Paul 'not ashamed of the gospel'?",
+    "explanation": "Rom 1:16 — 'For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek'.",
+    "language": "en",
+    "options": [
+      "Because the gospel circulates only among Roman elites",
+      "Because the gospel is the POWER of God for SALVATION TO EVERYONE WHO BELIEVES",
+      "Because the gospel teaches many new laws",
+      "Because the gospel brings material wealth to believers"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Power of Gospel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 4,
+    "content": "According to Romans 2:4, what does Paul ask about despising the riches of God's kindness?",
+    "explanation": "Rom 2:4 — 'Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance?'",
+    "language": "en",
+    "options": [
+      "Don't you know God's kindness brings life's blessings",
+      "Don't you know God's kindness provides daily bread",
+      "Don't you know God's kindness protects from calamities",
+      "Don't you know that God's KINDNESS LEADS to REPENTANCE?"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Kindness to Repentance",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 12,
+    "content": "According to Romans 3:10-12 (citing Pss 14, 53), how does Paul describe humanity's state before God?",
+    "explanation": "Rom 3:10-12 — 'None is righteous, no, not one; no one understands; no one seeks for God. All have turned aside; together they have become worthless; no one does good, not even one'. With 3:23 → the Gospel's foundation.",
+    "language": "en",
+    "options": [
+      "'NONE is RIGHTEOUS, not even ONE; no one seeks God at all'",
+      "'There are some righteous people whom God knows by name personally'",
+      "'Israelites are a righteous lineage according to ancestral promise'",
+      "'The Pharisees and scribes are truly righteous people of God'"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "None Righteous",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 21,
+    "content": "According to Romans 4:18-21, how is Abraham's faith described despite his contrary bodily state (nearly 100 years old)?",
+    "explanation": "Rom 4:20-21 — 'No unbelief made him waver concerning the promise of God, but he grew strong in his faith as he gave glory to God, fully convinced that God was able to do what he had promised'.",
+    "language": "en",
+    "options": [
+      "He despaired and gave up but God gave him a son anyway",
+      "He 'did NOT WAVER' over the promise but GREW STRONG in faith",
+      "He compelled God to follow his will by persuasive arguments",
+      "He used secret magic to overcome the limits of his old age"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Abraham's Faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 5,
+    "content": "According to Romans 5:3-5, the chain of 'producing' from affliction leads to what?",
+    "explanation": "Rom 5:3-5 — 'Suffering produces endurance, and endurance produces character, and character produces hope, and hope does not put us to shame, because God's love has been poured into our hearts through the Holy Spirit'.",
+    "language": "en",
+    "options": [
+      "Affliction → wealth → power → glory",
+      "Affliction → joy → salvation → miracles",
+      "Affliction → ENDURANCE → CHARACTER → HOPE (does not put to shame)",
+      "Affliction → fatigue → sadness → despair"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Suffering Produces",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 4,
+    "content": "According to Romans 6:3-4, what is the purpose of 'being united' with Christ's death?",
+    "explanation": "Rom 6:4 — 'We were buried therefore with him by baptism into death, in order that, just as Christ was raised from the dead by the glory of the Father, we too might walk in newness of life'. Union with death → union with resurrection.",
+    "language": "en",
+    "options": [
+      "Just an external church ritual for form's sake",
+      "To receive forgiveness without need of faith",
+      "To be acknowledged as a believer in the community",
+      "So that we might WALK in NEWNESS of LIFE, just as Christ was raised"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Newness of Life",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 20,
+    "content": "According to Romans 7:14-20, what paradox does Paul describe in the believer's battle with sin?",
+    "explanation": "Rom 7:15,19 — 'For I do not understand my own actions. For I do not do what I want, but I do the very thing I hate... For I do not do the good I want, but the evil I do not want is what I keep on doing'. Resolved in 8:1-4.",
+    "language": "en",
+    "options": [
+      "'I do not do what I WANT; the very thing I HATE I do' (flesh is weak)",
+      "Believers no longer feel any kind of sinful inclination at all",
+      "Believers become sinless the moment they first believe in Christ",
+      "Believers live on earth exactly like the holy angels live in heaven"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Paradox of Struggle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 17,
+    "content": "According to Romans 8:14-17, what is the consequence of being led by the Spirit?",
+    "explanation": "Rom 8:14-17 — 'For all who are led by the Spirit of God are sons of God... you have received the Spirit of adoption as sons, by whom we cry, Abba! Father!... and if children, then heirs—heirs of God and fellow heirs with Christ'.",
+    "language": "en",
+    "options": [
+      "Becoming materially wealthy immediately in this present life",
+      "Being SONS of God who cry 'ABBA, FATHER', FELLOW HEIRS with Christ",
+      "Becoming angels in heaven who minister to the saints below",
+      "Having authority over other believers in the local church gathering"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Sons and Heirs",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 39,
+    "content": "According to Romans 8:35-39, Paul lists things that CANNOT separate us from Christ's love. What is the climactic conclusion?",
+    "explanation": "Rom 8:38-39 — 'For I am sure that neither death nor life, nor angels nor rulers... will be able to separate us from the love of God in Christ Jesus our Lord'.",
+    "language": "en",
+    "options": [
+      "'In every circumstance, our faith will never fade away forever'",
+      "'When needed, we will conquer all enemies on earth gloriously'",
+      "'I AM SURE that NOTHING can SEPARATE us from God's LOVE in Christ'",
+      "'All true believers shall escape physical death in this present age'"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Nothing Separates",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 16,
+    "content": "According to Romans 9:14-16, Paul quotes Exodus 33:19 to affirm what truth about God?",
+    "explanation": "Rom 9:15-16 — 'For he says to Moses, I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion. So then it depends not on human will or exertion, but on God, who has mercy'.",
+    "language": "en",
+    "options": [
+      "God shows mercy only to ethnic Israelites by birth descent",
+      "God shows mercy only to those offering many costly sacrifices",
+      "God shows mercy only to those keeping every law fully",
+      "'I have MERCY on whom I have mercy' — depends not on man, but God"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Mercy",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 15,
+    "content": "In Romans 10:14-15, Paul builds a rhetorical chain about the necessity of preaching. Which questions ARE in the chain? (select all correct)",
+    "explanation": "Rom 10:14-15 — 'How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching? And how are they to preach unless they are sent?' Four steps. Option D not present.",
+    "language": "en",
+    "options": [
+      "How shall they CALL ON him in whom they have not BELIEVED?",
+      "How shall they BELIEVE in him of whom they have not HEARD?",
+      "How shall they HEAR without someone PREACHING?",
+      "How shall God HIMSELF save them in heaven without humans?"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Preaching Chain",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "verseStart": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 36,
+    "content": "The doxology closing Romans 9-11 (11:33-36) opens with what phrase?",
+    "explanation": "Rom 11:33-36 — 'Oh, the depth of the riches and wisdom and knowledge of God! How unsearchable are his judgments and how inscrutable his ways!' This doxology closes the discussion of Israel.",
+    "language": "en",
+    "options": [
+      "'Oh, the DEPTH of the RICHES, WISDOM and KNOWLEDGE of God!'",
+      "'Praise the LORD, the maker of heaven and earth'",
+      "'Blessed is the one who blesses; cursed the one who curses'",
+      "'The Lord is to be glorified among the nations'"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Depth of Riches",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 8,
+    "content": "According to Romans 12:6-8, what spiritual gifts does Paul list (with their use)?",
+    "explanation": "Rom 12:6-8 — 'Having gifts that differ according to the grace given to us, let us use them: if prophecy, in proportion to our faith; if service, in our serving; the one who teaches, in his teaching; the one who exhorts... the one who contributes... the one who leads... the one who does acts of mercy'.",
+    "language": "en",
+    "options": [
+      "Tongues / healing / miracles / discernment of spirits",
+      "Prophecy / service / teaching / exhortation / giving / leading / mercy",
+      "Wisdom / knowledge / faith / obedience / patience / hope",
+      "Love / joy / peace / patience / kindness"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Spiritual Gifts",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 19,
+    "content": "According to Romans 12:17-19, how does Paul teach believers to treat enemies?",
+    "explanation": "Rom 12:17-19 — 'Repay no one evil for evil... If possible, so far as it depends on you, live peaceably with all. Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, Vengeance is mine, I will repay'.",
+    "language": "en",
+    "options": [
+      "Avoid enemies entirely; do not speak to them or contact them at all",
+      "Respond to them with the firmest words and hardest actions possible",
+      "Do NOT REPAY EVIL for evil; LIVE PEACEABLY; never AVENGE yourselves",
+      "Curse your enemies so that God will judge them right away on earth"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Treating Enemies",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 4,
+    "content": "According to Romans 13:3-4, what is the main role of governing authorities per Paul?",
+    "explanation": "Rom 13:3-4 — 'Rulers are not a terror to good conduct, but to bad... for he is God's servant for your good. But if you do wrong, be afraid, for he does not bear the sword in vain. For he is the servant of God, an avenger who carries out God's wrath on the wrongdoer'.",
+    "language": "en",
+    "options": [
+      "Collect taxes for Caesar yearly",
+      "Persecute the church when necessary",
+      "Build temples and altars on earth",
+      "Be 'GOD'S SERVANT': commending good and PUNISHING evil (bears the sword)"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Authority's Role",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 14,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 9,
+    "content": "According to Romans 14:7-8, what is the theological reason a believer should not judge a weaker brother?",
+    "explanation": "Rom 14:7-8 — 'For none of us lives to himself, and none of us dies to himself. For if we live, we live to the Lord, and if we die, we die to the Lord. So then, whether we live or whether we die, we are the Lord's'.",
+    "language": "en",
+    "options": [
+      "Because 'NONE of us LIVES or DIES to himself' — we LIVE/DIE for the LORD",
+      "Because judging fellow believers is the greatest sin of all human sins",
+      "Because no person on this earth can truly know another person's heart",
+      "Because judging harms the church's reputation in the eyes of outsiders"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Live and Die to Lord",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 3,
+    "content": "According to Romans 15:1-3, what does Paul urge those 'strong' in faith to do for the 'weak'?",
+    "explanation": "Rom 15:1-3 — 'We who are strong have an obligation to bear with the failings of the weak, and not to please ourselves. Let each of us please his neighbor for his good, to build him up. For Christ did not please himself'.",
+    "language": "en",
+    "options": [
+      "Teach the weak every deep doctrine of salvation in Christ Jesus our Lord",
+      "BEAR the failings of the weak; not pleasing YOURSELVES, but pleasing your NEIGHBOR",
+      "Leave the weak alone to fend for themselves in their walk of faith",
+      "Prove the weak wrong in their faith and force them to change their convictions"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Strong Bear Weak",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 16,
+    "content": "In Paul's list of greetings (Romans 16:3-16), which named persons ARE explicitly mentioned? (select all correct)",
+    "explanation": "Rom 16:3-13 names: Prisca & Aquila (16:3), Epaenetus (16:5), Mary (16:6), Andronicus & Junia (16:7), Ampliatus, Urbanus (16:9), Apelles (16:10), Herodion (16:11), Tryphaena & Tryphosa (16:12), Rufus & mother (16:13), etc. Emperor Phaeros is fictional.",
+    "language": "en",
+    "options": [
+      "Prisca and Aquila — fellow workers of Paul in Christ",
+      "Andronicus and Junia — 'well known to the apostles'",
+      "Rufus — 'chosen in the Lord' and his mother",
+      "Emperor Phaeros of Rome — Paul's personal close friend"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Greetings",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 18,
+    "content": "According to Romans 1:18, what is 'revealed from heaven' alongside the gospel?",
+    "explanation": "Rom 1:18 — 'For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who by their unrighteousness suppress the truth'. Counterpoint to 1:17 (righteousness of God revealed).",
+    "language": "en",
+    "options": [
+      "The gift of wisdom to all believers throughout every walk of their lives",
+      "Peace to all people across the whole earth regardless of their faith",
+      "GOD'S WRATH against ALL ungodliness of men who SUPPRESS the truth",
+      "Automatic salvation for all people on earth without need of any faith"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Wrath Revealed",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 15,
+    "content": "According to Romans 2:14-15, what do even Gentiles without the Mosaic Law prove?",
+    "explanation": "Rom 2:14-15 — 'For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves... They show that the work of the law is written on their hearts, while their conscience also bears witness'.",
+    "language": "en",
+    "options": [
+      "They are entirely innocent before God because they have no Mosaic Law",
+      "They have 'the WORK of the LAW written on their HEARTS' — conscience witnesses",
+      "They can never judge rightly between good and evil deeds in any matter",
+      "They are God's specially chosen people just like the Israelite nation"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Law on Hearts",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 28,
+    "content": "According to Romans 3:28, what is Paul's conclusion about how a person is justified?",
+    "explanation": "Rom 3:28 — 'For we hold that one is justified by faith apart from works of the law'. The verse undergirds the Reformation watchword (Sola Fide).",
+    "language": "en",
+    "options": [
+      "By costly offerings brought year after year to the Jerusalem temple",
+      "By fully keeping all the law of Moses without missing any commandment",
+      "By personal moral effort and good deeds shown publicly in society",
+      "'JUSTIFIED by FAITH apart from works of the LAW'"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Justified by Faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 25,
+    "content": "According to Romans 4:25, what are the two purposes of Christ's death and resurrection?",
+    "explanation": "Rom 4:25 — 'Who was delivered up for our trespasses and raised for our justification'. The dual purpose: death dealt with sin + resurrection vindicated.",
+    "language": "en",
+    "options": [
+      "'DELIVERED UP for our TRESPASSES and RAISED for our JUSTIFICATION'",
+      "Arrested for breaking the Law of Moses; raised for the angels' rejoicing in heaven",
+      "Betrayed by Judas Iscariot; raised because Peter wept tears of repentance",
+      "Killed by the Roman soldiers; raised in order to rule over the Roman Empire entirely"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Raised for Justification",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 21,
+    "content": "According to Romans 5:20, when the law came in, sin 'increased' — but what 'ABOUNDED ALL THE MORE'?",
+    "explanation": "Rom 5:20 — 'Now the law came in to increase the trespass, but where sin increased, grace abounded all the more'. The verse highlights grace's triumph.",
+    "language": "en",
+    "options": [
+      "Israel's own righteousness alone according to the law of Moses",
+      "God's strict judgment against the sins of all mankind on earth",
+      "GRACE ('where sin increased, GRACE ABOUNDED MORE')",
+      "Atoning sacrifices the priests offered yearly in the Jerusalem temple"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Grace Abounded",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 14,
+    "content": "According to Romans 6:14, why does SIN have 'no dominion' over the believer?",
+    "explanation": "Rom 6:14 — 'For sin will have no dominion over you, since you are not under law but under grace'. Grace is not a license to sin (cf. 6:15-23) but the power to escape sin.",
+    "language": "en",
+    "options": [
+      "Because the believer strictly keeps the Mosaic Law",
+      "Because the believer is NOT UNDER LAW, but UNDER GRACE",
+      "Because the believer is stronger than sin",
+      "Because the believer is no longer tempted"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Under Grace",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 11,
+    "content": "According to Romans 8:11, what is the promise to believers (because God's Spirit dwells in them)?",
+    "explanation": "Rom 8:11 — 'If the Spirit of him who raised Jesus from the dead dwells in you, he who raised Christ Jesus from the dead will also give life to your mortal bodies through his Spirit who dwells in you'. The basis for hope of bodily resurrection.",
+    "language": "en",
+    "options": [
+      "Material wealth right away in this present life on the earth below",
+      "Never again being sick in body or in mind throughout your life on earth",
+      "Becoming angels in heaven after passing from this body of flesh",
+      "He who RAISED CHRIST will GIVE LIFE to your MORTAL BODIES by Spirit"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Bodies Raised",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 27,
+    "content": "According to Romans 8:26-27, what is the Spirit's role when the believer is weak in prayer?",
+    "explanation": "Rom 8:26-27 — 'Likewise the Spirit helps us in our weakness. For we do not know what to pray for as we ought, but the Spirit himself intercedes for us with groanings too deep for words'.",
+    "language": "en",
+    "options": [
+      "The Spirit HELPS our weakness — INTERCEDES for us with GROANINGS too deep for words",
+      "The Spirit teaches us the language of heaven",
+      "The Spirit prays for our bodies in our place",
+      "The Spirit does not interfere with prayer"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Spirit Intercedes",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 13,
+    "content": "In Romans 12:9-13, which marks of genuine love does Paul list? (select all correct)",
+    "explanation": "Rom 12:9 (genuine love, abhor evil), 12:11 (fervent serving), 12:12 (hope, tribulation), 12:13 (saints' needs + hospitality). Option D contradicts 12:13's 'show hospitality'.",
+    "language": "en",
+    "options": [
+      "Let love be genuine; abhor what is evil; hold fast to what is good",
+      "Be fervent in spirit; serve the Lord; rejoice in hope; be patient in tribulation",
+      "Contribute to the needs of saints; show hospitality",
+      "Only welcome those who speak your dialect (wrong)"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Marks of Love",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 14,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 12,
+    "content": "According to Romans 14:10-12, what is the reason a believer should not judge a brother about secondary matters?",
+    "explanation": "Rom 14:10-12 — 'For we will all stand before the judgment seat of God... So then each of us will give an account of himself to God'. The theological reason: each believer is directly accountable to God.",
+    "language": "en",
+    "options": [
+      "Judging will break long-standing precious friendships in the local church",
+      "'We will ALL STAND before the JUDGMENT SEAT of God; each gives an ACCOUNT'",
+      "Judging wastes valuable time and distracts from the work of God's kingdom",
+      "Judging brothers brings no benefit to the work of God's kingdom on earth"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Judgment Seat",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 7,
+    "content": "According to Romans 15:5-7, what is the ultimate purpose of unity between strong and weak believers in the church?",
+    "explanation": "Rom 15:5-6 — 'May the God of endurance and encouragement grant you to live in such harmony with one another, in accord with Christ Jesus, that together you may with one voice glorify the God and Father of our Lord Jesus Christ'.",
+    "language": "en",
+    "options": [
+      "To prove that the church has no internal issues at all in pastoral life",
+      "So that the Roman authorities will not persecute the churches in the empire",
+      "'With ONE VOICE you may GLORIFY the God and Father of our Lord Jesus Christ'",
+      "So that we can grow the number of believers in the church in every city"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "One Voice Praise",
+      "Intermediate"
+    ]
   }
 ]

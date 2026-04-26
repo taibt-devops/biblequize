@@ -28,13 +28,11 @@
 - File(s): `john_quiz.json` + `john_quiz_en.json` + `scripts/append_john_em_v2.py`
 - Coverage: Ch 16 (0 Medium trước đó) + sparse 8/9/11/21
 
-### Task V2M-4: Romans +45 (15E + 30M)
-- Status: [ ] TODO
-- Current: 85 (E24 M29 H32) → Target: 130 (E39 M59 H33)
-- Plan: +15 Easy + 30 Medium (largest gap)
-- File(s): `romans_quiz.json` + `romans_quiz_en.json`
-- ⚠️ Tránh guardrails (predestination, baptism mode, eschatology) như Phase 1
-- Commit: `feat(seed): Romans +45 Easy/Medium for V2 Phase 2 (85→130)`
+### Task V2M-4: Romans +45 (15E + 30M) [x] DONE
+- 85→130 (E39 M59 H32, ratio 30.0/45.4/24.6% — khớp V2 target)
+- Seeder log `inserted=45` each file, total 4678→4768, invalid=0
+- 42 single + 3 multi (93/7); idx 10/12/11/9
+- File(s): `romans_quiz.json` + `romans_quiz_en.json` + `scripts/append_romans_em_v2.py`
 
 ### Task V2M-5: Psalms +39 (0E + 39M)
 - Status: [ ] TODO
