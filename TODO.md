@@ -15,20 +15,10 @@
 - Chapters covered: 1, 3, 4, 6, 7, 9, 11, 15, 17, 18, 22, 25, 29, 32, 35, 37, 50
 
 ### Task V2H-2: Matthew +30 Hard
-- Status: [ ] TODO
-- Current: 104 (E47 M46 H11) → Target: 134 (E47 M46 H41)
-- File(s): `matthew_quiz.json` + `matthew_quiz_en.json`
-- Strategy: cover Sermon on Mount (5-7), parables (13), Olivet (24-25), Passion (26-28); cross-ref Synoptic
-- Checklist:
-  - [ ] Đọc passage RVV11 + ESV
-  - [ ] 30 câu Hard VI mix 4 kiểu
-  - [ ] Self-doubt test pass mỗi câu
-  - [ ] Distractor near-miss + length tolerance ≤ 2×
-  - [ ] correctAnswer index đều 0/1/2/3 (mỗi index 7-8 câu)
-  - [ ] Check duplicate
-  - [ ] 30 câu EN 1:1
-  - [ ] Restart api verify
-  - [ ] Commit: `feat(seed): Matthew +30 Hard for V2 go-live (11→41 Hard)`
+- Status: [x] DONE — 104→134 (E47 M46 H41, Hard 30.6%); seeder log `inserted=30` each file, total 4268→4328
+- File(s): `matthew_quiz.json` + `matthew_quiz_en.json` + `scripts/append_matthew_hard_v2.py`
+- Strategy: 4 kiểu Hard mix 7-8 câu/kiểu; 25 single + 5 multi (83/17); single idx 7/7/6/5
+- Chapters covered: 1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 15, 16, 18, 22, 25, 26, 27, 28
 
 ### Task V2H-3: John +30 Hard
 - Status: [ ] TODO

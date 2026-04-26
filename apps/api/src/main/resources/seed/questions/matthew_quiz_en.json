@@ -2767,5 +2767,821 @@
       "Gospels",
       "Intermediate"
     ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Matthew opens with 'Immanuel' meaning 'God with us' (1:23). Which closing word (28:20) directly echoes this theme of 'God with us'?",
+    "explanation": "Matt 1:23 and 28:20 form an 'inclusio': the book opens with 'Immanuel' (God with us) and closes with the promise 'I am with you always, to the end of the age'.",
+    "language": "en",
+    "options": [
+      "'Behold, I am with you always, to the end of the age'",
+      "'All authority in heaven and on earth has been given to me'",
+      "'Go therefore and make disciples of all nations, baptizing them'",
+      "'You will receive the Holy Spirit not many days from now'"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Immanuel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 22,
+    "content": "In Matthew 1-2, how many times in total does Joseph (Mary's husband) receive divine guidance through a dream?",
+    "explanation": "Matthew records 4 dreams: 1:20 (take Mary), 2:13 (flee to Egypt), 2:19 (return to Israel), 2:22 (withdraw to Galilee).",
+    "language": "en",
+    "options": [
+      "3 times",
+      "4 times",
+      "5 times",
+      "2 times"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Joseph & Dreams",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "verseStart": 40,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 40,
+    "content": "In Matthew, the phrase 'If you are the Son of God, ___' is hurled at Jesus at least twice to test him. What are those two occasions?",
+    "explanation": "Matt 4:3,6 — Satan tempts in the wilderness; 27:40 — passersby mock at the cross. Both use the same phrase 'If you are the Son of God'.",
+    "language": "en",
+    "options": [
+      "When he was arrested and when he stood before Pilate",
+      "During his dialogue with Nicodemus and in Gethsemane",
+      "In the wilderness temptation by Satan and on the cross by mockers",
+      "At the Last Supper and at the triumphal entry into Jerusalem"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Tempting Christ",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "verseStart": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "content": "According to Matthew, Jesus predicted his Passion and resurrection to the disciples three distinct times. Which passages are among those three primary predictions? (select all correct)",
+    "explanation": "The three Passion predictions: 16:21 (Caesarea Philippi), 17:22-23 (post-Transfiguration in Galilee), 20:17-19 (en route to Jerusalem). Matt 24:30 speaks of the Second Coming, not the Passion.",
+    "language": "en",
+    "options": [
+      "Matthew 16:21 — after Peter's confession at Caesarea Philippi",
+      "Matthew 17:22-23 — while traveling in Galilee after the Transfiguration",
+      "Matthew 20:17-19 — on the way up to Jerusalem",
+      "Matthew 24:30 — Olivet Discourse about the Son of Man's return"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Passion Predictions",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 20,
+    "content": "In Matthew 26:32 (Last Supper night), Jesus said, 'After I am raised up, I will go before you to Galilee.' Which passage records its fulfillment?",
+    "explanation": "Matt 28:16-20 — 'the eleven disciples went to Galilee, to the mountain to which Jesus had directed them.' This is the Great Commission, fulfilling 26:32.",
+    "language": "en",
+    "options": [
+      "When he appeared to Mary Magdalene right at the empty tomb",
+      "When he walked with two disciples on the road to Emmaus",
+      "When he appeared among the disciples in a locked room in Jerusalem",
+      "When the eleven disciples came to Galilee, to the mountain he had appointed"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Galilee Appearance",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 16,
+    "content": "In Matthew 5:13-16, the metaphors 'salt of the earth' and 'light of the world' share which structural parallel?",
+    "explanation": "Matt 5:13 — salt that loses saltiness 'is no longer good for anything'. 5:14-16 — light must 'shine before others'. Both share: warning of lost function + call to public visibility.",
+    "language": "en",
+    "options": [
+      "Both warn of becoming useless if function is lost and place disciples in public roles",
+      "Both draw imagery from offering laws in the book of Leviticus",
+      "Both are tied directly to baptism and the Lord's Supper in the New Testament",
+      "Both apply only to the twelve apostles, not to the broader crowd of disciples"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Salt and Light",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "verseStart": 51,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 51,
+    "content": "Jesus prophesied about the 'abomination of desolation' standing in the holy place (24:15). What specific event happened to the temple at the moment of his death on the cross (Matthew 27:51)?",
+    "explanation": "Matt 27:51 — 'the curtain of the temple was torn in two, from top to bottom.' The direction 'top to bottom' marks it as God's act, opening the way into the Most Holy Place.",
+    "language": "en",
+    "options": [
+      "The temple was completely destroyed by Roman troops at that very moment",
+      "The curtain of the temple was torn in two, from top to bottom",
+      "The Pharisees seized the temple and shut its doors",
+      "A fire from heaven descended and burned up the altar inside the temple"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Temple Curtain",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1
+    ],
+    "verseEnd": 33,
+    "content": "Among the Kingdom parables in Matthew 13, which ones TEACH about the Kingdom's growth/spread from small to large? (select all correct)",
+    "explanation": "13:31-32 (mustard) and 13:33 (leaven) parallel each other in teaching the Kingdom's growth from small to vast. The wheat-and-weeds (13:24-30) teaches coexistence till harvest; the net (13:47-50) teaches final separation.",
+    "language": "en",
+    "options": [
+      "The mustard seed becoming a great tree (13:31-32)",
+      "The leaven making three measures of flour rise (13:33)",
+      "The wheat and the weeds growing together until harvest (13:24-30)",
+      "The net cast into the sea catching all kinds of fish (13:47-50)"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Kingdom Parables",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 15,
+    "verseStart": 37,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 38,
+    "content": "After Jesus fed the 5,000 (Matthew 14) then the 4,000 (Matthew 15), how many baskets of leftovers were taken up, respectively?",
+    "explanation": "Matt 14:20 — '12 baskets' (kophinos) after the 5,000. Matt 15:37 — '7 baskets' (spuridas, larger baskets) after the 4,000. Two different Greek words for two basket types.",
+    "language": "en",
+    "options": [
+      "7 baskets and 12 baskets",
+      "12 baskets and 7 baskets",
+      "5 baskets and 4 baskets",
+      "12 baskets and 5 baskets"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Two Feeding Miracles",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 5,
+    "content": "Which blessing in the Sermon on the Mount (Matthew 5:3-12) promises that 'they shall inherit the earth'?",
+    "explanation": "Matt 5:5 — 'Blessed are the meek, for they shall inherit the earth.' This echoes Psalm 37:11. Other Beatitudes: poor in spirit — Kingdom of Heaven; mourners — comfort; hunger for righteousness — they shall be filled.",
+    "language": "en",
+    "options": [
+      "Blessed are the meek of heart in this life",
+      "Blessed are the poor in spirit before God",
+      "Blessed are those who mourn over their sins",
+      "Blessed are those who hunger for righteousness"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Beatitudes",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 33,
+    "content": "Matthew 22 records two religious groups trying to trap Jesus with two different questions. What did the Sadducees ask?",
+    "explanation": "Matt 22:23-28 — Sadducees (denying the resurrection) posed the hypothetical 'woman with seven husbands' to refute resurrection. Pharisees asked about Caesar's tax (22:15-22) and the greatest commandment (22:34-40).",
+    "language": "en",
+    "options": [
+      "Whether or not it was lawful to pay taxes to Caesar",
+      "By what authority he was doing his works in the temple",
+      "About a woman married to seven brothers — whose wife at the resurrection",
+      "Which is the greatest commandment in all the Law of Moses"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Pharisees vs Sadducees",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 10,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      2,
+      3
+    ],
+    "verseEnd": 4,
+    "content": "In the list of the twelve apostles in Matthew 10:2-4, which person is given a specific alternative descriptor? (select all correct)",
+    "explanation": "Matt 10:3-4 — 'Matthew the tax collector', 'Thaddaeus' (some MSS Lebbaeus), 'Simon the Cananaean' (Hebrew qana — zealous). Peter has 'who is called Peter' replacing Simon's name (10:2) — not an additional alias.",
+    "language": "en",
+    "options": [
+      "Matthew — explicitly described as 'the tax collector'",
+      "Peter — listed as brother of Andrew (no extra alias attached)",
+      "Simon — called 'the Cananaean' meaning the Zealot",
+      "Thaddaeus — also known as Lebbaeus in some manuscripts"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Apostles List",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 18,
+    "content": "Matthew 1-2 quotes Old Testament prophecies fulfilled in Jesus' birth. Which of these is one of those quotations? (select all correct)",
+    "explanation": "Matt 1:23 quotes Isa 7:14, 2:6 quotes Mic 5:2, 2:15 quotes Hos 11:1, 2:18 quotes Jer 31:15. Samuel anointing David is not a Nativity-related prophecy.",
+    "language": "en",
+    "options": [
+      "A virgin shall conceive and bear a son (Isaiah 7:14)",
+      "A ruler shall come forth from Bethlehem (Micah 5:2)",
+      "Out of Egypt I called my son (Hosea 11:1)",
+      "Samuel anointing David as king (1 Samuel 16)"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "OT Prophecies",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 46,
+    "content": "Both judgment scenes in Matthew 7:21-23 and 25:31-46 contain 'Depart from me'. What is the core difference between them?",
+    "explanation": "Matt 7:21-23 — Christ rejects those who say 'Lord, Lord', who prophesy and cast out demons, for 'not doing the Father's will'. 25:31-46 — judges all nations by their treatment of 'the least of these' (hungry, thirsty, stranger, naked, sick, prisoner).",
+    "language": "en",
+    "options": [
+      "Scene 7 targets Gentiles while scene 25 targets Israel alone",
+      "Scene 7 takes place in heaven while scene 25 takes place on earth among men",
+      "Scene 7 condemns self-proclaimed disciples doing miracles; scene 25 condemns indifference to the needy",
+      "Scene 7 applies only to Pharisees, scene 25 only to Sadducees"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Two Judgments",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 43,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 48,
+    "content": "Matthew 5:48 — 'You therefore must be perfect, as your heavenly Father is perfect'. According to its immediate context (5:43-47), Jesus illustrates this 'perfection' specifically by what?",
+    "explanation": "Matt 5:43-48 — Father-like 'perfection' is illustrated by loving enemies: 'he makes his sun rise on the evil and on the good'. This caps the six antitheses of 5:21-48.",
+    "language": "en",
+    "options": [
+      "Keeping all the ritual purity laws of Moses",
+      "Fasting forty days as he did in the wilderness",
+      "Withdrawing from public life for continual prayer",
+      "Loving one's enemies and praying for those who persecute"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Love Enemies",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 33,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 33,
+    "content": "Matthew 6:33 — 'But seek first the kingdom of God and his righteousness'. In context (6:25-34), what theological priority does this teach?",
+    "explanation": "Matt 6:25-34 contrasts material anxiety with trust in the Father. 6:33 sets the priority: seek the Kingdom first, and 'all these things' will be added.",
+    "language": "en",
+    "options": [
+      "Place the Kingdom and righteousness above all material concerns, trusting the Father's provision",
+      "Forsake all property and live as a hermit like later monastic communities",
+      "First pay taxes in full to Caesar before any offering to God",
+      "Attend every temple festival before any other activity in life"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Kingdom Priority",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 14,
+    "content": "In Matthew 7:13-14, Jesus teaches about the 'narrow gate' and the 'wide gate'. According to the text itself, what is the core theological reason for choosing the narrow gate?",
+    "explanation": "Matt 7:13-14 — 'wide is the gate and broad is the way that leads to destruction, and many enter; narrow is the gate and hard is the way that leads to life, and few find it.' Choice rests on eternal destiny, not present advantage.",
+    "language": "en",
+    "options": [
+      "Because the narrow gate leads to material prosperity in this present life",
+      "Because the narrow gate leads to life, while the wide gate leads to destruction",
+      "Because the narrow gate is easier to find, and many find their way through it",
+      "Because the narrow gate avoids the persecution of the Pharisees of that time"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Narrow Gate",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 9,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "Matthew 9:13 — Jesus quotes Hosea 6:6 'I desire mercy, not sacrifice' to defend which action of his?",
+    "explanation": "Matt 9:9-13 — Pharisees rebuke Jesus for eating with tax collectors (Matthew and his friends). Jesus answers with Hos 6:6, teaching that compassion for sinners outweighs ritual.",
+    "language": "en",
+    "options": [
+      "Healing a blind man on the Sabbath in front of a crowd",
+      "Eating bread without washing hands according to elders' tradition",
+      "Driving out the merchants from the temple in Jerusalem",
+      "Sitting at table eating with tax collectors and sinners"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Mercy over Sacrifice",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 8,
+    "content": "Matthew 12:8 — Jesus declares: 'The Son of Man is Lord of the Sabbath'. What does this claim about his authority imply?",
+    "explanation": "Matt 12:1-8 — Pharisees rebuke disciples for plucking grain on the Sabbath. Jesus answers with David eating consecrated bread and priests' Sabbath labor in the temple. 'Lord of the Sabbath' = supreme interpretive authority, not abolition.",
+    "language": "en",
+    "options": [
+      "He has supreme authority to rightly interpret and apply the Sabbath law",
+      "He has completely abolished the Sabbath; disciples need not keep it any longer",
+      "He only has authority to heal on the Sabbath day, nothing else",
+      "He has instituted a wholly new Sabbath day distinct from the old one"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Lord of Sabbath",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "verseStart": 24,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 25,
+    "content": "Matthew 16:24 — 'If anyone would come after me, let him deny himself and take up his cross and follow me'. According to the text, in what order do these three steps occur?",
+    "explanation": "Matt 16:24 sets the order clearly: (1) deny self — foundational disposition, (2) take up the cross — accept death to self, (3) follow me — lifelong walk. 16:25 gives the reason: 'lose your life to save it'.",
+    "language": "en",
+    "options": [
+      "Take up the cross → deny self → follow Christ (outward action first)",
+      "Deny self → take up the cross → follow Christ (inner attitude, then action, then walk)",
+      "Follow Christ → deny self → take up the cross (following precedes the call to sacrifice)",
+      "All three happen simultaneously without any specific order in the text"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Cost of Discipleship",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "verseStart": 36,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 40,
+    "content": "When asked 'which is the greatest commandment' (Matthew 22:36), what unique answer-structure did Jesus give?",
+    "explanation": "Matt 22:37-40 — Jesus states the greatest commandment (love God with all heart, soul, mind — Deut 6:5) AND adds 'a second is like it: love your neighbor as yourself' (Lev 19:18). 'On these two commandments depend all the Law and the Prophets.'",
+    "language": "en",
+    "options": [
+      "A single commandment only: love God with all your soul",
+      "He summarized the Ten Commandments into one single golden rule",
+      "The FIRST commandment (love God) AND a second 'like the first' (love neighbor)",
+      "A list of four commandments ranked in descending order of importance"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Greatest Commandment",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "verseStart": 46,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1
+    ],
+    "verseEnd": 46,
+    "content": "Matthew 27:46 — Jesus cried out from the cross: 'Eli, Eli, lema sabachthani?' What theological and literary significance does this carry? (select all correct)",
+    "explanation": "Matt 27:46 quotes Ps 22:1 (A) — a psalm beginning in agony but ending in triumph (22:22-31). Doctrinally (B), Christ bore sin's penalty and was forsaken by the Father in his people's stead. The crowd MISUNDERSTANDS (C, D) thinking he calls for Elijah (27:47), but he does not literally plead for rescue.",
+    "language": "en",
+    "options": [
+      "It is a direct quotation of Psalm 22:1, a psalm of suffering ending in vindication",
+      "It expresses the truth that Christ bore sin and was forsaken by the Father in his people's place",
+      "It is a plea for the disciples to come and rescue him from the cross in that moment",
+      "It is an allusion that the prophet Elijah will descend and save him from death"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Cry from the Cross",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 20,
+    "content": "Matthew 18:20 — 'For where two or three are gathered in my name, there am I among them'. According to its immediate context (18:15-19), this promise specifically applies to what situation?",
+    "explanation": "Matt 18:15-20 addresses church discipline: a brother sins → confront privately → bring 1-2 witnesses → tell the church. 'Two or three' (18:20) primarily references the witnesses and church judgment, secondarily extending to united prayer (18:19).",
+    "language": "en",
+    "options": [
+      "Every religious worship service across all the great world religions",
+      "Two or three friends gathered at a coffee shop discussing spiritual things in general",
+      "Any spontaneous home group with no connection to any organized church",
+      "The process of church discipline and the unified prayer of the church body"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Church Discipline",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 17,
+    "content": "According to Matthew 3:17 (ESV), what was the voice from heaven at Jesus' baptism?",
+    "explanation": "Matt 3:17 — 'This is my beloved Son, with whom I am well pleased.' 'Listen to him' is the voice at the Transfiguration (17:5), DISTINCT from the baptism. 'Today I have begotten you' is Ps 2:7 (Luke has variant, not Matthew). Peter's confession 16:16 is also distinct.",
+    "language": "en",
+    "options": [
+      "'This is my beloved Son, with whom I am well pleased'",
+      "'Today I have begotten you; ask of me, and I will give you the nations'",
+      "'Listen to him, this is my beloved Son'",
+      "'You are the Messiah, the Son of the living God'"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Baptism of Jesus",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 10,
+    "content": "In the Lord's Prayer of Matthew 6:9-13 (ESV), what is the order of the FIRST THREE petitions (after the address 'Our Father in heaven')?",
+    "explanation": "Matt 6:9-10 — '1) Hallowed be your name. 2) Your kingdom come. 3) Your will be done, on earth as it is in heaven.' These three God-ward petitions precede the four man-ward petitions (6:11-13).",
+    "language": "en",
+    "options": [
+      "Give us this day our daily bread → forgive our debts → lead us not into temptation",
+      "Hallowed be your name → your kingdom come → your will be done on earth as in heaven",
+      "Forgive us our debts → as we forgive our debtors → deliver us from evil",
+      "For yours is the kingdom and power and glory → hallowed be your name → kingdom come"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Lord's Prayer",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "verseStart": 29,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 30,
+    "content": "Matthew 11:29-30 (ESV) — Jesus invites: 'Take my yoke upon you and learn from me...' According to the text itself, what reason does he give for this invitation?",
+    "explanation": "Matt 11:29-30 — '...for I am gentle and lowly in heart, and you will find rest for your souls. For my yoke is easy, and my burden is light.' Gentleness + humility ground the invitation, contrasted with the scribes' burdensome yoke.",
+    "language": "en",
+    "options": [
+      "Because I will grant you authority over demonic powers throughout the earth",
+      "Because I am the strictest teacher among all the rabbis and Pharisees in the land",
+      "Because I am gentle and lowly in heart; my yoke is easy and my burden is light",
+      "Because you have witnessed many of my miracles recently in Capernaum"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Christ's Yoke",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 21,
+    "content": "Matthew 22:21 — Jesus answers about Caesar's tax: 'Therefore render to ___ the things that are ___'s, and to ___ the things that are ___'s'. What two name-pairs fill the blanks in order?",
+    "explanation": "Matt 22:21 — 'Render to Caesar the things that are Caesar's, and to God the things that are God's.' The reply balances civic duty with duty to God.",
+    "language": "en",
+    "options": [
+      "Temple / temple's; high priest / high priest's",
+      "King / king's; prophet / prophet's",
+      "Pharisees / Pharisees'; Sadducees / Sadducees'",
+      "Caesar / Caesar's; God / God's"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Caesar and God",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "verseStart": 26,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 28,
+    "content": "According to Matthew 26:26-28, when instituting the Lord's Supper, what did Jesus say over the CUP after giving thanks?",
+    "explanation": "Matt 26:27-28 — 'Drink of it, all of you, for this is my blood of the covenant, which is poured out for many for the forgiveness of sins.' The text stresses the NEW COVENANT and forgiveness for 'many'.",
+    "language": "en",
+    "options": [
+      "'Drink of it; this is my blood of the covenant, poured out for many for forgiveness of sins'",
+      "'This is the cup of the first covenant which Moses sprinkled on the people with bulls' blood'",
+      "'This is the blood of the Passover lamb; drink it as a perpetual memorial of Israel's Exodus'",
+      "'Keep this sacred cup safely until you enter the Kingdom of God's everlasting people'"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Lord's Supper",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 18,
+    "content": "Matthew 28:18 — before the Great Commission, what does Jesus declare as the basis for the command to go and disciple the nations?",
+    "explanation": "Matt 28:18 — 'All authority in heaven and on earth has been given to me.' The claim of FULL authority is the BASIS for the command to go (28:19) and the promise of presence (28:20).",
+    "language": "en",
+    "options": [
+      "'The Father has given me a measure of authority in heaven, enough for your preaching'",
+      "'All authority in heaven and on earth has been given to me'",
+      "'The Holy Spirit will grant you authority not many days from now'",
+      "'Authority comes from your unified prayers gathered together'"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Great Commission",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "verseStart": 54,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 54,
+    "content": "After Jesus breathed his last and the earth shook (Matthew 27:54), what did the centurion and the soldiers guarding him say?",
+    "explanation": "Matt 27:54 — 'When the centurion and those who were with him, keeping watch over Jesus, saw the earthquake and what took place, they were filled with awe and said, Truly this was the Son of God!' This is a Gentile's confession.",
+    "language": "en",
+    "options": [
+      "'Truly this man was the King of the Jews as written on the cross'",
+      "'We have killed a righteous man; we ourselves have erred'",
+      "'Truly this man indeed was the Son of God'",
+      "'This was a great prophet sent by God to Israel today'"
+    ],
+    "tags": [
+      "New Testament",
+      "Matthew",
+      "Gospels",
+      "Centurion's Confession",
+      "Advanced"
+    ]
   }
 ]

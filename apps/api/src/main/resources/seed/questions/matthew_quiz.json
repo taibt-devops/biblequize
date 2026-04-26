@@ -2767,5 +2767,821 @@
       "Phúc Âm",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Ma-thi-ơ mở đầu sách bằng tên 'Em-ma-nu-ên' nghĩa là 'Đức Chúa Trời ở cùng chúng ta' (1:23). Lời nào ở cuối sách (28:20) ứng với chủ đề 'Đức Chúa Trời ở cùng' này?",
+    "explanation": "Ma-thi-ơ 1:23 và 28:20 tạo thành cặp 'inclusio': sách bắt đầu với 'Em-ma-nu-ên' (Đức Chúa Trời ở cùng) và kết thúc với lời hứa 'ta thường ở cùng các ngươi luôn cho đến tận thế'.",
+    "language": "vi",
+    "options": [
+      "'Nầy, ta thường ở cùng các ngươi luôn cho đến tận thế'",
+      "'Mọi quyền phép trên trời và dưới đất đã giao cho ta'",
+      "'Hãy đi, dạy dỗ muôn dân, hãy nhân danh Cha, Con, Thánh Linh'",
+      "'Đức Thánh Linh sẽ giáng trên các ngươi sau ít ngày nữa'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Em-ma-nu-ên",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 22,
+    "content": "Trong Ma-thi-ơ 1-2, Giô-sép (chồng Ma-ri) nhận sự hướng dẫn của Đức Chúa Trời qua giấc mộng tổng cộng bao nhiêu lần?",
+    "explanation": "Ma-thi-ơ ghi 4 lần Giô-sép được hướng dẫn qua mộng: 1:20 (lấy Ma-ri), 2:13 (trốn sang Ai-cập), 2:19 (trở về Y-sơ-ra-ên), 2:22 (lui về Ga-li-lê).",
+    "language": "vi",
+    "options": [
+      "3 lần",
+      "4 lần",
+      "5 lần",
+      "2 lần"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Giô-sép & Giấc mộng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "verseStart": 40,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 40,
+    "content": "Trong Ma-thi-ơ, cụm 'Nếu ngươi là Con Đức Chúa Trời, hãy ___' được thốt ra ít nhất hai lần để thử thách Chúa Jêsus. Hai dịp đó là gì?",
+    "explanation": "Ma-thi-ơ 4:3,6 — Sa-tan cám dỗ trong sa mạc; 27:40 — kẻ qua đường chế nhạo trên thập tự giá. Cả hai dùng cùng cụm 'Nếu ngươi là Con Đức Chúa Trời'.",
+    "language": "vi",
+    "options": [
+      "Khi Ngài bị bắt và khi đứng trước Phi-lát",
+      "Lúc đối thoại với Ni-cô-đem và lúc ở vườn Ghết-sê-ma-nê",
+      "Trong sa mạc bị Sa-tan cám dỗ và trên thập tự giá khi bị chế nhạo",
+      "Tại bữa Tiệc Ly và khi đi vào Giê-ru-sa-lem khải hoàn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Cám dỗ Đấng Christ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "verseStart": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "content": "Theo Ma-thi-ơ, Chúa Jêsus tiên báo cuộc thương khó và phục sinh trước môn đồ ba lần riêng biệt. Phân đoạn nào là một trong ba lời tiên báo CHÍNH đó? (chọn tất cả đúng)",
+    "explanation": "Ba lời tiên báo Khổ Nạn chính: 16:21 (Sê-sa-rê Phi-líp), 17:22-23 (Ga-li-lê sau Hóa Hình), 20:17-19 (đường lên Giê-ru-sa-lem). Ma-thi-ơ 24:30 nói về Tái Lâm, không phải Khổ Nạn.",
+    "language": "vi",
+    "options": [
+      "Ma-thi-ơ 16:21 — sau khi Phi-e-rơ xưng nhận tại Sê-sa-rê Phi-líp",
+      "Ma-thi-ơ 17:22-23 — khi đang đi trong xứ Ga-li-lê sau Sự Hóa Hình",
+      "Ma-thi-ơ 20:17-19 — trên đường lên Giê-ru-sa-lem",
+      "Ma-thi-ơ 24:30 — Bài Giảng Trên Núi Ô-li-ve về Con Người tái lâm"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Tiên báo Khổ Nạn",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 20,
+    "content": "Trong Ma-thi-ơ 26:32 (đêm Tiệc Ly), Chúa Jêsus phán: 'Sau khi ta sống lại rồi, ta sẽ đi đến xứ Ga-li-lê trước các ngươi'. Lời này ứng nghiệm ở phân đoạn nào?",
+    "explanation": "Ma-thi-ơ 28:16-20 — '11 môn đồ đi qua xứ Ga-li-lê, lên hòn núi mà Đức Chúa Jêsus đã chỉ định'. Đây là Đại Mạng Lệnh, ứng nghiệm lời hứa 26:32.",
+    "language": "vi",
+    "options": [
+      "Khi Ngài hiện ra cho Ma-ri Ma-đơ-len ngay tại ngôi mộ trống",
+      "Khi Ngài đi cùng hai môn đồ trên đường đến làng Ê-ma-út",
+      "Khi Ngài hiện ra giữa các môn đồ trong phòng đóng kín tại Giê-ru-sa-lem",
+      "Khi 11 môn đồ đến Ga-li-lê gặp Ngài trên núi Ngài đã chỉ định"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Hiện ra tại Ga-li-lê",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 16,
+    "content": "Trong Ma-thi-ơ 5:13-16, hai ẩn dụ 'muối của đất' và 'ánh sáng của thế gian' chia sẻ cấu trúc tương đồng nào?",
+    "explanation": "Ma-thi-ơ 5:13 — muối mất mặn thì 'không dùng chi được nữa, chỉ phải quăng ra ngoài'. 5:14-16 — ánh sáng phải 'soi trước mặt người ta'. Cả hai song song: cảnh báo mất chức năng + kêu gọi công khai.",
+    "language": "vi",
+    "options": [
+      "Cả hai cảnh báo về sự vô dụng nếu mất chức năng và đặt môn đồ vào vai trò công khai",
+      "Cả hai dùng hình ảnh từ luật lệ về của lễ trong sách Lê-vi Ký",
+      "Cả hai liên kết trực tiếp với phép báp-têm và lễ Tiệc Thánh trong tân ước",
+      "Cả hai chỉ áp dụng riêng cho mười hai sứ đồ, không cho dân chúng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Muối và ánh sáng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "verseStart": 51,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 51,
+    "content": "Chúa Jêsus tiên báo về 'sự gớm ghiếc tàn nát' đứng trong nơi thánh (24:15). Sự kiện cụ thể nào xảy ra với đền thờ ngay thời điểm Ngài chết trên thập tự (Ma-thi-ơ 27:51)?",
+    "explanation": "Ma-thi-ơ 27:51 — 'bức màn của đền thờ bị xé ra làm hai từ trên chí dưới'. Hành động 'từ trên xuống' khẳng định đây là việc của Đức Chúa Trời, mở lối vào nơi chí thánh.",
+    "language": "vi",
+    "options": [
+      "Đền thờ bị quân La-mã đến phá hủy hoàn toàn ngay lập tức",
+      "Bức màn trong đền thờ bị xé ra làm hai từ trên xuống dưới",
+      "Người Pha-ri-si đến chiếm giữ đền thờ và đóng cửa lại",
+      "Một ngọn lửa từ trời giáng xuống thiêu rụi bàn thờ trong đền"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Bức màn đền thờ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1
+    ],
+    "verseEnd": 33,
+    "content": "Trong các ngụ ngôn Vương Quốc của Ma-thi-ơ 13, ngụ ngôn nào DẠY về sự phát triển/lan tỏa của Vương Quốc từ nhỏ đến lớn? (chọn tất cả đúng)",
+    "explanation": "13:31-32 (hột cải) và 13:33 (men) song song dạy về sự phát triển từ nhỏ thành lớn của Vương Quốc. Lúa-cỏ lùng (13:24-30) dạy về sự cùng tồn tại đến mùa gặt; lưới (13:47-50) dạy về phân chia cuối cùng.",
+    "language": "vi",
+    "options": [
+      "Hột cải nhỏ trở thành cây lớn (13:31-32)",
+      "Men nhỏ làm dậy cả ba đấu bột (13:33)",
+      "Lúa mì và cỏ lùng mọc cùng nhau đến mùa gặt (13:24-30)",
+      "Lưới quăng xuống biển bắt đủ thứ cá (13:47-50)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Ngụ ngôn Vương Quốc",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 15,
+    "verseStart": 37,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 38,
+    "content": "Sau khi Chúa Jêsus nuôi 5,000 người (Ma-thi-ơ 14) rồi 4,000 người (Ma-thi-ơ 15), số giỏ thức ăn dư còn lại lần lượt là bao nhiêu?",
+    "explanation": "Ma-thi-ơ 14:20 — '12 giỏ' (kophinos) sau phép lạ 5,000. Ma-thi-ơ 15:37 — '7 giỏ' (spuridas, giỏ lớn hơn) sau phép lạ 4,000. Hai từ Hy-lạp khác nhau cho hai loại giỏ.",
+    "language": "vi",
+    "options": [
+      "7 giỏ và 12 giỏ",
+      "12 giỏ và 7 giỏ",
+      "5 giỏ và 4 giỏ",
+      "12 giỏ và 5 giỏ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Hai phép lạ nuôi đám đông",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 5,
+    "content": "Lời chúc phước nào trong Bài Giảng Trên Núi (Ma-thi-ơ 5:3-12) hứa rằng 'họ sẽ được hưởng đất'?",
+    "explanation": "Ma-thi-ơ 5:5 — 'Phước cho những kẻ nhu mì, vì sẽ hưởng được đất!' Lời chúc này phản ánh Thi 37:11. Các Beatitude khác có lời hứa khác: nghèo tâm linh — Nước Trời; than khóc — sự an ủi; đói khát công bình — sẽ được no đủ.",
+    "language": "vi",
+    "options": [
+      "Phước cho những kẻ có lòng nhu mì khiêm tốn",
+      "Phước cho những kẻ có lòng khó khăn về tâm linh",
+      "Phước cho những kẻ than khóc trong cuộc đời",
+      "Phước cho những kẻ đói khát sự công bình"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Bát Phúc",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 33,
+    "content": "Ma-thi-ơ 22 ghi hai nhóm tôn giáo gài bẫy Chúa Jêsus với hai câu hỏi khác nhau. Người Sa-đu-sê hỏi điều gì?",
+    "explanation": "Ma-thi-ơ 22:23-28 — Sa-đu-sê (không tin sự sống lại) hỏi câu hỏi giả thiết về 'người đàn bà 7 lần chồng' để bài bác sự sống lại. Pha-ri-si hỏi về thuế Sê-sa (22:15-22) và điều răn lớn nhất (22:34-40).",
+    "language": "vi",
+    "options": [
+      "Có nên nộp thuế cho Sê-sa hay không nộp",
+      "Quyền phép nào cho phép Ngài làm các việc trong đền thờ",
+      "Người đàn bà bảy lần chồng, khi sống lại sẽ là vợ ai",
+      "Điều răn lớn nhất trong cả luật pháp Môi-se là điều nào"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Pha-ri-si vs Sa-đu-sê",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 10,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      2,
+      3
+    ],
+    "verseEnd": 4,
+    "content": "Theo danh sách 12 sứ đồ trong Ma-thi-ơ 10:2-4, người nào được liệt kê tên bằng một danh thay thế (alias) cụ thể? (chọn tất cả đúng)",
+    "explanation": "Ma-thi-ơ 10:3-4 — 'Ma-thi-ơ là người thâu thuế', 'Tha-đê' (một số bản chép Lê-bê), 'Si-môn người Ca-na-an' (Hê-bơ-rơ qana — nhiệt thành). Phi-e-rơ chỉ có 'gọi là Phi-e-rơ' thay tên Si-môn (10:2) — không phải alias bổ sung.",
+    "language": "vi",
+    "options": [
+      "Ma-thi-ơ — được mô tả rõ là 'người thâu thuế'",
+      "Phi-e-rơ — anh của Anh-rê (không có alias bổ sung)",
+      "Si-môn — người Ca-na-an (zēlōtēs nghĩa nhiệt thành)",
+      "Tha-đê — cũng được gọi là Lê-bê trong một số bản chép"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Danh sách sứ đồ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 18,
+    "content": "Ma-thi-ơ 1-2 trích dẫn các lời tiên tri Cựu Ước được ứng nghiệm trong sự ra đời của Chúa Jêsus. Câu nào là một trong những trích dẫn ĐÓ? (chọn tất cả đúng)",
+    "explanation": "Ma-thi-ơ 1:23 trích Ê-sai 7:14, 2:6 trích Mi-chê 5:2, 2:15 trích Ô-sê 11:1, 2:18 trích Giê-rê-mi 31:15. Sa-mu-ên xức dầu Đa-vít không phải lời tiên tri sinh nhật Chúa Jêsus.",
+    "language": "vi",
+    "options": [
+      "Một nữ đồng trinh sẽ sinh con (Ê-sai 7:14)",
+      "Đấng cai trị sẽ ra từ Bết-lê-hem (Mi-chê 5:2)",
+      "Ta đã gọi Con ta ra khỏi Ai-cập (Ô-sê 11:1)",
+      "Sa-mu-ên xức dầu cho Đa-vít làm vua (1 Sa-mu-ên 16)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Tiên tri Cựu Ước",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 46,
+    "content": "Hai cảnh phán xét trong Ma-thi-ơ 7:21-23 và 25:31-46 đều có lời 'Hãy lui ra khỏi ta'. Điểm KHÁC nhau cốt lõi giữa hai cảnh là gì?",
+    "explanation": "Ma-thi-ơ 7:21-23 — Chúa loại bỏ kẻ tự xưng 'Lạy Chúa, lạy Chúa', làm tiên tri, đuổi quỷ, vì 'không làm theo ý muốn Cha'. 25:31-46 — phán xét toàn dân các nước về cách đối đãi với 'một trong những người rất hèn mọn' (đói, khát, lạ, trần truồng, đau, tù).",
+    "language": "vi",
+    "options": [
+      "Cảnh 7 nhắm vào dân ngoại, cảnh 25 nhắm vào riêng dân Y-sơ-ra-ên",
+      "Cảnh 7 ở thiên đàng trong khi cảnh 25 xảy ra dưới đất giữa loài người",
+      "Cảnh 7 lên án người tự xưng môn đồ làm phép lạ; cảnh 25 lên án sự thờ ơ với người túng thiếu",
+      "Cảnh 7 chỉ áp dụng cho Pha-ri-si, còn cảnh 25 chỉ cho Sa-đu-sê"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Hai cảnh phán xét",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "verseStart": 43,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 48,
+    "content": "Ma-thi-ơ 5:48 — 'Vậy các ngươi hãy nên trọn vẹn, như Cha các ngươi ở trên trời là trọn vẹn'. Theo bối cảnh trực tiếp 5:43-47, 'sự trọn vẹn' này được Chúa Jêsus minh họa cụ thể bằng điều gì?",
+    "explanation": "Ma-thi-ơ 5:43-48 — 'sự trọn vẹn' giống Cha trên trời được minh họa qua việc yêu kẻ thù: 'Cha khiến mặt trời mọc lên soi kẻ dữ cùng kẻ lành'. Đây là điểm cao nhất của 6 phản đề (antitheses) trong 5:21-48.",
+    "language": "vi",
+    "options": [
+      "Bằng việc giữ trọn các nghi lễ thanh tẩy của luật Môi-se",
+      "Bằng việc kiêng ăn bốn mươi ngày như Ngài đã làm trong sa mạc",
+      "Bằng việc rút lui khỏi đời sống công cộng để cầu nguyện liên tục",
+      "Bằng việc yêu thương kẻ thù và cầu nguyện cho kẻ bắt bớ mình"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Yêu kẻ thù",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 33,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 33,
+    "content": "Ma-thi-ơ 6:33 — 'Nhưng trước hết, hãy tìm kiếm nước Đức Chúa Trời và sự công bình của Ngài'. Theo bối cảnh 6:25-34, lời này dạy ưu tiên thần học nào của môn đồ?",
+    "explanation": "Ma-thi-ơ 6:25-34 đối lập sự lo lắng vật chất với lòng tin cậy nơi Cha. 6:33 đặt ưu tiên: tìm Vương Quốc trước, mọi điều khác ('các điều ấy') sẽ được thêm cho.",
+    "language": "vi",
+    "options": [
+      "Đặt Vương Quốc và sự công bình lên trên mọi nhu cầu vật chất, tin Cha sẽ chu cấp",
+      "Bỏ hết tài sản và sống đời ẩn dật giống cộng đồng tu viện thời sau",
+      "Trước hết phải đóng thuế đầy đủ cho Sê-sa rồi mới được dâng cho Chúa",
+      "Phải tham gia hết các lễ hội của đền thờ trước khi làm điều gì khác"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Ưu tiên Vương Quốc",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 14,
+    "content": "Trong Ma-thi-ơ 7:13-14, Chúa Jêsus dạy về 'cửa hẹp' và 'cửa rộng'. Lý do thần học cốt yếu để chọn cửa hẹp là gì theo chính lời text?",
+    "explanation": "Ma-thi-ơ 7:13-14 — 'Cửa rộng và đường khoảng khoát dẫn đến sự hư mất; nhiều người đi vào đó. Còn cửa hẹp và đường chật dẫn đến sự sống; kẻ kiếm được thì ít'. Chọn cửa hẹp vì vận mệnh đời đời, không vì lợi ích trước mắt.",
+    "language": "vi",
+    "options": [
+      "Vì cửa hẹp dẫn đến sự sung túc về vật chất ngay trong đời này",
+      "Vì cửa hẹp dẫn vào sự sống, còn cửa rộng dẫn đến sự hư mất",
+      "Vì cửa hẹp dễ tìm hơn, ai đi cũng tìm được lối vào",
+      "Vì cửa hẹp tránh được sự bắt bớ của người Pha-ri-si lúc đó"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Cửa hẹp",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 9,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "Ma-thi-ơ 9:13 — Chúa Jêsus trích Ô-sê 6:6 'Ta muốn sự thương xót, không muốn của lễ' để biện minh cho việc nào của Ngài?",
+    "explanation": "Ma-thi-ơ 9:9-13 — Pha-ri-si trách Chúa ăn cùng người thâu thuế (Ma-thi-ơ và bạn ông). Chúa đáp bằng Ô-sê 6:6, dạy rằng tấm lòng thương xót cho tội nhân quan trọng hơn nghi lễ.",
+    "language": "vi",
+    "options": [
+      "Ngài chữa lành người mù vào ngày Sa-bát giữa đám đông",
+      "Ngài bẻ bánh không rửa tay theo truyền thống của trưởng lão",
+      "Ngài đuổi những người buôn bán ra khỏi đền thờ Giê-ru-sa-lem",
+      "Ngài ngồi ăn chung bàn với người thâu thuế và kẻ tội lỗi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Thương xót hơn của lễ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 8,
+    "content": "Ma-thi-ơ 12:8 — Chúa Jêsus tuyên bố: 'Con người là Chúa của ngày Sa-bát'. Tuyên bố này hàm ý điều gì về thẩm quyền của Ngài?",
+    "explanation": "Ma-thi-ơ 12:1-8 — Pha-ri-si trách môn đồ bứt bông lúa ngày Sa-bát. Chúa đáp bằng tiền lệ Đa-vít ăn bánh trần thiết và lao động của thầy tế lễ trong đền thờ. 'Lord of the Sabbath' = thẩm quyền tối thượng giải nghĩa, không phải hủy bỏ.",
+    "language": "vi",
+    "options": [
+      "Ngài có thẩm quyền tối thượng giải thích đúng và áp dụng luật ngày Sa-bát",
+      "Ngài đã hủy bỏ hoàn toàn ngày Sa-bát; môn đồ không cần giữ nữa",
+      "Ngài chỉ có thẩm quyền chữa bệnh trong ngày Sa-bát mà thôi",
+      "Ngài đặt một ngày Sa-bát mới hoàn toàn khác ngày Sa-bát cũ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Chúa của Sa-bát",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "verseStart": 24,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 25,
+    "content": "Ma-thi-ơ 16:24 — 'Ai muốn theo ta, phải tự bỏ mình đi, vác thập tự giá mình mà theo ta'. Theo cấu trúc lời text, ba bước này phải xảy ra theo thứ tự nào?",
+    "explanation": "Ma-thi-ơ 16:24 nêu thứ tự rõ ràng: (1) tự bỏ mình — thái độ căn bản, (2) vác thập tự giá — chấp nhận sự chết với chính mình, (3) theo ta — hành trình cả đời. Câu 16:25 giải thích lý do: 'mất sự sống để cứu sự sống'.",
+    "language": "vi",
+    "options": [
+      "Vác thập tự → tự bỏ mình → theo Chúa (đầu tiên là hành động bên ngoài)",
+      "Tự bỏ mình → vác thập tự → theo Chúa (từ thái độ bên trong đến hành động và bước đi)",
+      "Theo Chúa → tự bỏ mình → vác thập tự (theo trước rồi mới được kêu gọi hy sinh)",
+      "Cả ba xảy ra đồng thời, không có thứ tự cụ thể trong câu"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Theo Chúa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "verseStart": 36,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 40,
+    "content": "Khi được hỏi 'điều răn lớn hơn hết là điều nào' (Ma-thi-ơ 22:36), Chúa Jêsus đưa ra cấu trúc đáp án độc đáo nào?",
+    "explanation": "Ma-thi-ơ 22:37-40 — Chúa nêu điều răn lớn nhất (yêu Chúa hết lòng, hết linh hồn, hết ý — Phục 6:5) RỒI thêm 'thứ hai cũng như vậy: yêu người lân cận như mình' (Lê-vi 19:18). Cả luật pháp và lời tiên tri 'đều tóm vào hai điều răn đó'.",
+    "language": "vi",
+    "options": [
+      "Chỉ một điều răn duy nhất: kính mến Đức Chúa Trời hết linh hồn",
+      "Mười điều răn của Môi-se được Ngài tóm gọn thành luật vàng duy nhất",
+      "Điều răn THỨ NHẤT (yêu Đức Chúa Trời) và điều thứ HAI giống điều thứ nhất (yêu người lân cận)",
+      "Một danh sách bốn điều răn xếp theo thứ tự quan trọng giảm dần"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Điều răn lớn nhất",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "verseStart": 46,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1
+    ],
+    "verseEnd": 46,
+    "content": "Ma-thi-ơ 27:46 — Chúa Jêsus kêu lớn trên thập tự: 'Ê-li, Ê-li, lam-ma-sa-bác-tha-ni?' Câu này có ý nghĩa thần học và văn học nào? (chọn tất cả đúng)",
+    "explanation": "Ma-thi-ơ 27:46 trích Thi 22:1 (A) — thi thiên bắt đầu trong khổ đau nhưng kết bằng đắc thắng (Thi 22:22-31). Theo lý thuyết chuộc tội (B), Chúa gánh hình phạt thay dân Ngài và bị Cha bỏ. Đám đông HIỂU SAI (C) tưởng Ngài gọi Ê-li (27:47), nhưng Chúa không thật sự xin các môn đồ giải cứu (D không đúng).",
+    "language": "vi",
+    "options": [
+      "Là sự trích dẫn Thi Thiên 22:1, một thi thiên về sự khổ đau và đắc thắng cuối cùng",
+      "Bày tỏ sự thật rằng Chúa Jêsus mang gánh tội lỗi và bị Cha bỏ thay cho dân Ngài",
+      "Là lời cầu xin các môn đồ đến cứu Ngài khỏi thập tự ngay trong giờ phút đó",
+      "Là lời ám chỉ tiên tri Ê-li sẽ giáng lâm để giải cứu khỏi cái chết"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Tiếng kêu trên thập tự",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 20,
+    "content": "Ma-thi-ơ 18:20 — 'Vì nơi nào có hai ba người nhân danh ta nhóm họp, ta ở giữa'. Theo bối cảnh trực tiếp 18:15-19, lời hứa này áp dụng cụ thể cho hoàn cảnh nào?",
+    "explanation": "Ma-thi-ơ 18:15-20 nói về kỷ luật hội thánh: nếu anh em phạm tội → khuyên riêng → đem 1-2 chứng nhân → trình hội thánh. 'Hai ba người' (18:20) ban đầu chỉ các nhân chứng và quyết định hội thánh, sau mới mở rộng cho cầu nguyện hiệp ý (18:19).",
+    "language": "vi",
+    "options": [
+      "Cho mọi cuộc thờ phượng tôn giáo của các tôn giáo lớn trên thế giới",
+      "Cho hai ba bạn tụ tập ngoài quán cà phê nói chuyện về thuộc linh chung",
+      "Cho mọi nhóm gia đình tự phát không có liên hệ với hội thánh nào cả",
+      "Cho tiến trình kỷ luật hội thánh và lời cầu nguyện hiệp ý của hội thánh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Kỷ luật hội thánh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 17,
+    "content": "Theo Ma-thi-ơ 3:17 (RVV11), tiếng từ trời phán khi Chúa Jêsus chịu báp-têm là gì?",
+    "explanation": "Ma-thi-ơ 3:17 — 'Nầy là Con yêu dấu của ta, đẹp lòng ta mọi đường'. Phương án 'Hãy nghe lời người' là tiếng phán tại Sự Hóa Hình (17:5), KHÁC với báp-têm. 'Hôm nay ta đã sanh ra ngươi' là Thi Thiên 2:7 (Lu-ca có dị bản, không phải Ma-thi-ơ).",
+    "language": "vi",
+    "options": [
+      "'Nầy là Con yêu dấu của ta, đẹp lòng ta mọi đường'",
+      "'Hôm nay ta đã sanh ra ngươi; hãy xin ta, ta sẽ ban các nước'",
+      "'Hãy nghe lời người, đây là Con yêu dấu của ta'",
+      "'Ngươi là Đấng Mê-si-a, Con của Đức Chúa Trời hằng sống'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Báp-têm Chúa Jêsus",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 10,
+    "content": "Trong Lời Cầu Nguyện Chung của Ma-thi-ơ 6:9-13 (RVV11), thứ tự BA lời cầu xin đầu tiên (sau lời xưng 'Lạy Cha chúng tôi ở trên trời') là gì?",
+    "explanation": "Ma-thi-ơ 6:9-10 — '1) Danh Cha được thánh. 2) Nước Cha được đến. 3) Ý Cha được nên ở đất như trời'. Đây là 3 lời cầu hướng VỀ Đức Chúa Trời trước khi đến 4 lời cầu cho con người (6:11-13).",
+    "language": "vi",
+    "options": [
+      "Xin cho chúng tôi ngày nay đồ ăn → Tha tội → Đừng dẫn vào sự cám dỗ",
+      "Danh Cha được thánh → Nước Cha được đến → Ý Cha được nên ở đất như trời",
+      "Tha tội cho chúng tôi → Chúng tôi tha kẻ phạm tội với mình → Cứu khỏi điều ác",
+      "Vì nước, quyền, vinh hiển → Danh Cha được thánh → Nước Cha được đến"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Lời Cầu Nguyện Chung",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "verseStart": 29,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 30,
+    "content": "Ma-thi-ơ 11:29-30 (RVV11) — Chúa Jêsus mời: 'Hãy gánh lấy ách của ta, và học theo ta...' Theo chính lời text, lý do Ngài đưa ra cho lời mời gọi này là gì?",
+    "explanation": "Ma-thi-ơ 11:29-30 — '...vì ta có lòng nhu mì, khiêm nhường; thì linh hồn các ngươi sẽ được yên nghỉ. Vì ách ta dễ chịu và gánh ta nhẹ nhàng'. Nhu mì + khiêm nhường là cơ sở của lời mời, đối lập với ách của các thầy thông giáo.",
+    "language": "vi",
+    "options": [
+      "Vì ta sẽ ban cho các ngươi quyền phép trên các thế lực ma quỷ ở trên đất",
+      "Vì ta là một vị thầy nghiêm khắc nhất so với mọi giáo sĩ Pha-ri-si trong xứ",
+      "Vì ta có lòng nhu mì khiêm nhường; ách ta dễ chịu và gánh ta nhẹ nhàng",
+      "Vì các ngươi đã chứng kiến nhiều phép lạ ta làm tại Ca-bê-na-um vừa qua"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Ách của Chúa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 21,
+    "content": "Ma-thi-ơ 22:21 — Chúa Jêsus đáp về thuế Sê-sa: 'Vậy, hãy trả cho ___ vật gì của ___, và trả cho ___ vật gì của ___'. Hai cặp tên đúng theo thứ tự là?",
+    "explanation": "Ma-thi-ơ 22:21 — 'Vậy, hãy trả cho Sê-sa vật gì của Sê-sa, và trả cho Đức Chúa Trời vật gì của Đức Chúa Trời'. Câu trả lời cân bằng giữa nghĩa vụ công dân và nghĩa vụ với Chúa.",
+    "language": "vi",
+    "options": [
+      "Đền thờ / đền thờ; thầy tế lễ thượng phẩm / chính mình",
+      "Quân vương / quân vương; nhà tiên tri / nhà tiên tri",
+      "Pha-ri-si / Pha-ri-si; Sa-đu-sê / Sa-đu-sê",
+      "Sê-sa / Sê-sa; Đức Chúa Trời / Đức Chúa Trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Sê-sa và Đức Chúa Trời",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "verseStart": 26,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 28,
+    "content": "Theo Ma-thi-ơ 26:26-28, khi lập Tiệc Thánh Chúa Jêsus nói gì về CHÉN sau khi tạ ơn?",
+    "explanation": "Ma-thi-ơ 26:27-28 — 'Hết thảy hãy uống đi; vì nầy là huyết ta, huyết của sự giao ước đã đổ ra cho nhiều người được tha tội'. Câu nhấn mạnh GIAO ƯỚC MỚI và sự tha tội cho 'nhiều người'.",
+    "language": "vi",
+    "options": [
+      "'Hết thảy hãy uống đi; vì nầy là huyết ta, huyết của giao ước đổ ra cho nhiều người được tha tội'",
+      "'Nầy là chén của giao ước thứ nhứt được Môi-se rảy huyết bò trên dân chúng'",
+      "'Nầy là máu của con chiên Pa-ca, hãy uống để đời đời ghi nhớ ngày ra Ai-cập'",
+      "'Hãy giữ chén nầy cho đến khi ngươi vào Nước Đức Chúa Trời'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Tiệc Thánh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 18,
+    "content": "Ma-thi-ơ 28:18 — trước Đại Mạng Lệnh, Chúa Jêsus tuyên bố điều gì làm cơ sở cho lời truyền ra đi dạy dỗ muôn dân?",
+    "explanation": "Ma-thi-ơ 28:18 — 'Hết cả quyền phép ở trên trời và dưới đất đã giao cho ta'. Tuyên bố quyền phép TRỌN VẸN của Chúa Jêsus là CƠ SỞ cho lệnh đi (28:19) và lời hứa hiện diện (28:20).",
+    "language": "vi",
+    "options": [
+      "'Cha đã ban cho ta một số quyền phép trên trời, đủ để các ngươi đi rao giảng'",
+      "'Hết cả quyền phép ở trên trời và dưới đất đã giao cho ta'",
+      "'Đức Thánh Linh sẽ ban quyền phép cho các ngươi sau ít ngày nữa'",
+      "'Quyền phép đến từ sự đồng tâm cầu nguyện của các ngươi cùng nhau'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Đại Mạng Lệnh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "verseStart": 54,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 54,
+    "content": "Sau khi Chúa Jêsus tắt hơi và đất rúng động (Ma-thi-ơ 27:54), thầy đội cùng quân lính canh gác đã nói gì?",
+    "explanation": "Ma-thi-ơ 27:54 — 'Thầy đội và những lính cùng ở đó giữ Đức Chúa Jêsus, thấy đất rúng động và những điều xảy đến, thì sợ hãi lắm, mà nói rằng: Thật người nầy là Con Đức Chúa Trời'. Đây là lời xưng nhận của một người ngoại Quốc.",
+    "language": "vi",
+    "options": [
+      "'Người này là vua dân Giu-đa thật như bảng trên thập tự ghi'",
+      "'Chúng ta đã giết một người công bình, chính chúng ta đã sai lầm'",
+      "'Thật người này là Con Đức Chúa Trời'",
+      "'Đây là một tiên tri cao trọng được Đức Chúa Trời sai đến với Y-sơ-ra-ên'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Ma-thi-ơ",
+      "Phúc âm",
+      "Lời xưng nhận của thầy đội",
+      "Nâng cao"
+    ]
   }
 ]
