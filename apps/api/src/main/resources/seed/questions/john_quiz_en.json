@@ -2681,5 +2681,823 @@
       "Gospels",
       "Basic"
     ]
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 11,
+    "content": "John's Gospel is structured around 'seven signs' of Jesus. Which of these miracles belong to those seven signs? (select all correct)",
+    "explanation": "John's seven signs: (1) water to wine 2:1-11, (2) official's son 4:46-54, (3) lame man 5:1-9, (4) 5000 fed 6:1-14, (5) walking on water 6:16-21, (6) man born blind 9:1-7, (7) raising Lazarus 11:1-44. Withered fig tree appears only in the Synoptics, not in John.",
+    "language": "en",
+    "options": [
+      "Turning water into wine at the wedding at Cana (John 2:1-11)",
+      "Healing the royal official's son in Capernaum (4:46-54)",
+      "Feeding 5,000 with five loaves and two fish (6:1-14)",
+      "Cursing the fig tree that withered along the road (Matthew 21)"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Seven Signs",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "verseStart": 32,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 34,
+    "content": "In John, the phrase 'lifted up' is used three times by Jesus to refer to his death. According to 12:32-34, what do the crowd's reactions NOT align with?",
+    "explanation": "John 3:14 (Moses' bronze serpent), 8:28, 12:32-34 — three 'lifted up' sayings refer to the cross. In 12:34, the crowd protests: 'we have heard from the Law that the Christ REMAINS forever'. They cannot reconcile a dying Messiah.",
+    "language": "en",
+    "options": [
+      "They accept it as a prophecy of crucifixion on the cross",
+      "They thought the Christ MUST REMAIN forever according to the Law",
+      "They do not understand why the Son of Man must be lifted up so high",
+      "They link it to the bronze serpent Moses lifted up in the wilderness"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Lifted Up",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "verseStart": 55,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 55,
+    "content": "John's Gospel uniquely records multiple Passovers. How many distinct Passovers are explicitly mentioned in John?",
+    "explanation": "Three Passovers in John: (1) 2:13 — early ministry, temple cleansing; (2) 6:4 — feeding the 5,000; (3) 11:55-12:1 — his Passion. This is the main basis for the traditional ~3-year ministry estimate.",
+    "language": "en",
+    "options": [
+      "Only one, the Passover of his death",
+      "Two Passovers, at the start and end of ministry",
+      "Three distinct Passovers throughout his ministry",
+      "Four Passovers across three and a half years"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Three Passovers",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 12,
+    "content": "John's Gospel opens with 'In him was life, and the life was the light of men' (1:4-5). Which subsequent claim of Jesus directly echoes this light theme?",
+    "explanation": "John 1:4-5 introduces the Light theme. John 8:12 — 'I am the light of the world; whoever follows me will not walk in darkness, but will have the light of life'. The two passages form a thematic inclusio.",
+    "language": "en",
+    "options": [
+      "In my Father's house are many rooms; I go to prepare a place for you",
+      "Baptize them in the name of the Father, the Son, and the Holy Spirit",
+      "Whoever drinks the water I give will never thirst again forever",
+      "I am the light of the world; whoever follows me will not walk in darkness"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Light of World",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 25,
+    "content": "In John, the 'disciple whom Jesus loved' appears unnamed multiple times. Which passages record his appearance? (select all correct)",
+    "explanation": "John 13:23-25 (Last Supper), 19:26-27 (cross), 20:2-8 (empty tomb), 21:7,20 (Tiberias fishing) all reference the 'disciple whom Jesus loved'. Pentecost in Acts 2 is not in John and does not use this designation.",
+    "language": "en",
+    "options": [
+      "Reclining on Jesus' chest at the Last Supper, asking who would betray (13:23-25)",
+      "Standing at the foot of the cross with Jesus' mother, entrusted to care for her (19:26-27)",
+      "Running with Peter to the empty tomb and being the first to believe (20:2-8)",
+      "Seated at Pentecost preaching to three thousand listeners (Acts 2)"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Beloved Disciple",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 27,
+    "content": "In John, Jesus repeatedly says 'my hour has NOT yet come' (2:4, 7:30, 8:20). Which verse marks the TURNING POINT to 'the hour has come'?",
+    "explanation": "John 12:23 — 'The hour has come for the Son of Man to be glorified.' This reverses the recurring 'hour has not yet come' (2:4, 7:30, 8:20). Jesus then speaks of the seed dying to bear much fruit (12:24).",
+    "language": "en",
+    "options": [
+      "12:23 — 'The hour has come for the Son of Man to be glorified' (after the Greeks seek him)",
+      "11:43 — 'Lazarus, come out!' (at calling Lazarus from the tomb)",
+      "6:35 — 'I am the bread of life' (the Capernaum discourse)",
+      "4:26 — 'I who speak to you am he' (to the Samaritan woman at the well)"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "The Hour",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 67,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 69,
+    "content": "In John, Simon Peter progresses in his confessions of faith. What is his confession in 6:68-69 (after many disciples turn back)?",
+    "explanation": "John 6:68-69 — 'Lord, to whom shall we go? You have the words of eternal life; and we have believed, and have come to know, that you are the Holy One of God.' The other quotes are Luke 5:8 and John 21:17.",
+    "language": "en",
+    "options": [
+      "'Depart from me, Lord, for I am a sinful man!'",
+      "'Lord, to whom shall we go? You have the words of eternal life'",
+      "'You are the Christ, the Son of the living God'",
+      "'Lord, you know everything; you know that I love you'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Peter's Confession",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "In John 20:3-8, when Peter and the 'disciple whom Jesus loved' ran to the empty tomb, what detail about their order and reactions is recorded?",
+    "explanation": "John 20:4-8 — 'the other disciple outran Peter and reached the tomb first' but stooped to look in without entering. Peter came after and went straight in. Then the other disciple entered, 'saw and believed'.",
+    "language": "en",
+    "options": [
+      "Peter ran faster, arrived first, entered first, and immediately believed Christ had risen",
+      "Both disciples reached the tomb at the same time and entered together",
+      "The other disciple ran faster and arrived first but did not enter; Peter came after and entered first",
+      "The other disciple stood outside weeping while Peter entered and was afraid to touch anything"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Race to the Tomb",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 35,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 35,
+    "content": "John's Gospel contains seven distinctive 'I AM' sayings. Which of these belong among those seven? (select all correct)",
+    "explanation": "The seven 'I AM' sayings in John: 6:35 bread, 8:12 light, 10:7 door, 10:11 good shepherd, 11:25 resurrection and life, 14:6 way truth life, 15:1 true vine. 'The rock' is not among these seven.",
+    "language": "en",
+    "options": [
+      "'I am the bread of life' (6:35)",
+      "'I am the good shepherd' (10:11)",
+      "'I am the resurrection and the life' (11:25)",
+      "'I am the rock of salvation' (not in John)"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Seven I AM",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "verseStart": 39,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 40,
+    "content": "Nicodemus appears three times in John. In sequence, what is his FINAL appearance?",
+    "explanation": "Three appearances of Nicodemus in John: (1) 3:1-21 at night, asking about new birth; (2) 7:50-52 defending him in the Sanhedrin; (3) 19:39-40 bringing 100 pounds of myrrh and aloes to anoint Jesus with Joseph of Arimathea.",
+    "language": "en",
+    "options": [
+      "Coming to Jesus at night and being taught about being born again",
+      "Defending Jesus in the Sanhedrin when they discuss arresting him",
+      "Standing in the crowd at Passover when Jesus cleansed the temple",
+      "Bringing about a hundred pounds of spices to anoint Jesus' body after death"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Nicodemus",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 9,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 7,
+    "content": "According to John 9:6-7, by what specific method did Jesus heal the man born blind?",
+    "explanation": "John 9:6-7 — 'He spat on the ground and made mud with the saliva. Then he anointed the man's eyes with the mud and said to him, Go, wash in the pool of Siloam.' The man obeyed, washed, and came back seeing.",
+    "language": "en",
+    "options": [
+      "Spat on the ground, made mud, anointed his eyes, and told him to wash in the pool of Siloam",
+      "Laid his hand on his eyes and said 'Be opened', the blind man immediately saw everything",
+      "Spoke from afar 'Go home, your eyes are opened', without ever touching the man",
+      "Told the blind man to bathe seven times in the Jordan like Naaman the leper"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Healing the Blind Man",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 8,
+    "content": "John records two prominent women named Mary. According to John 12:1-8, what did Mary of Bethany do for Jesus?",
+    "explanation": "John 12:3 — 'Mary therefore took a pound of expensive ointment made from pure nard, and anointed the feet of Jesus and wiped his feet with her hair'. This is Mary of Bethany (Lazarus' sister), NOT Mary Magdalene (who appears in 20:1-18).",
+    "language": "en",
+    "options": [
+      "Wept at the foot of the cross while he was crucified at Golgotha",
+      "Took a pound of pure nard, anointed his feet, and wiped them with her hair",
+      "Ran to the tomb while it was still dark and saw the stone rolled away",
+      "Stood by the Samaritan well and asked Jesus for living water"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "The Two Marys",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 9,
+    "content": "John records two miracles of Jesus on the Sabbath that caused controversy with the Jews. Which two are they?",
+    "explanation": "John 5:1-18 — healed the man lame for 38 years at Bethesda on the Sabbath (controversial). John 9:1-16 — healed the man born blind, making mud on the Sabbath (controversial). Both led to debates about Jesus' authority over the Sabbath.",
+    "language": "en",
+    "options": [
+      "Healing the royal official's son at Capernaum and feeding the 5,000",
+      "Turning water into wine at Cana and raising Lazarus at Bethany",
+      "Healing the lame man of 38 years at Bethesda (John 5) and the man born blind (John 9)",
+      "Walking on the Sea of Galilee and healing Malchus' ear in the garden"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Sabbath Miracles",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "verseStart": 33,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      3
+    ],
+    "verseEnd": 38,
+    "content": "According to John 18:33-19:11, what questions did Pilate ask Jesus during the trial? (select all correct)",
+    "explanation": "John 18:33-19:11 records Pilate asking: 18:33 'Are you the king...?', 18:38 'What is truth?', 19:9 'Where are you from?', 19:10 'Will you not speak to me? Do you not know I have authority...?'. The Passover question is not in the text.",
+    "language": "en",
+    "options": [
+      "'Are you the King of the Jews?' (18:33)",
+      "'What is truth?' (18:38) after hearing Jesus speak of truth",
+      "'Have you eaten the Passover meal yet?' (Pilate does not ask this)",
+      "'Where are you from?' (19:9) when hearing Jesus claim to be Son of God"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Pilate's Trial",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "verseStart": 26,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 30,
+    "content": "According to John 13:21-30, by what specific sign did Jesus reveal who would betray him at the Last Supper?",
+    "explanation": "John 13:26-27 — 'Jesus answered, It is he to whom I will give this morsel of bread when I have dipped it. So when he had dipped the morsel, he gave it to Judas... Then after he had taken the morsel, Satan entered into him.'",
+    "language": "en",
+    "options": [
+      "He dipped a piece of bread and gave it to Judas Iscariot; Satan entered Judas",
+      "He looked straight into Judas' eyes and called his name in front of the disciples",
+      "He wrote the name of the betrayer on the ground and all the disciples saw it",
+      "He told Peter to draw his sword and point at the betrayer but Peter did not listen"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Revealing the Betrayer",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "verseStart": 36,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 37,
+    "content": "When Pilate asks 'So you are a king?' (John 18:36-37), what unique phrasing does Jesus use about the nature of his kingdom?",
+    "explanation": "John 18:36-37 — 'My kingdom is NOT of this world. If my kingdom were of this world, my servants would have been fighting'. And 'For this purpose I was born, and for this purpose I have come into the world — to bear witness to the truth'.",
+    "language": "en",
+    "options": [
+      "'My kingdom is on earth; I will defeat Rome and rule over this world'",
+      "'My kingdom is NOT of this world' and 'I have come to bear witness to truth'",
+      "'My kingdom will come in glory this very day if you believe in me'",
+      "'My kingdom is invisible and cannot be seen, and I am not a king'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Kingdom Not of World",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 24,
+    "content": "In John 4:23-24, Jesus tells the Samaritan woman: 'God is spirit, and those who worship him must worship in ___ and ___'. What two words and theological meaning?",
+    "explanation": "John 4:24 — 'God is spirit, and those who worship him must worship in spirit and truth.' 'Spirit' refers to a heart renewed by the Holy Spirit; 'truth' refers to God's truth (especially revealed in Christ — 14:6 'I am the truth').",
+    "language": "en",
+    "options": [
+      "'Sacrifice / obedience' — worship must include offerings and obedience to law",
+      "'Soul / strength' — worship must be wholehearted and never lazy",
+      "'Spirit / truth' — worship must come from a Spirit-renewed heart and conform to revealed truth",
+      "'Temple / book of law' — worship must have a sacred place and a guidebook"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Worship in Spirit and Truth",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 35,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 35,
+    "content": "When Jesus declares 'I am the bread of life' (John 6:35), what specific promise accompanies it for those who come to him?",
+    "explanation": "John 6:35 — 'I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst'. The parallel 'hunger/thirst' structure refers to spiritual life, not physical immortality (cf. 11:25-26 on bodily death).",
+    "language": "en",
+    "options": [
+      "'Whoever comes to me shall not hunger; whoever believes in me shall not thirst'",
+      "'Whoever comes to me shall have abundant material wealth in this present life'",
+      "'Whoever comes to me shall never die physically, but will live forever bodily'",
+      "'Whoever comes to me shall reign as king over Israel together with me'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Bread of Life",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "In John 10:11-13, Jesus distinguishes the 'good shepherd' from the 'hired hand' by what core sign?",
+    "explanation": "John 10:11-13 — 'I am the good shepherd. The good shepherd lays down his life for the sheep. He who is a hired hand... sees the wolf coming and leaves the sheep and flees'. The contrast: voluntary sacrifice vs. flight in danger.",
+    "language": "en",
+    "options": [
+      "The good shepherd wears white robes, the hired hand wears gray",
+      "The good shepherd owns more sheep, the hired hand has fewer sheep",
+      "The good shepherd is from the tribe of Levi, the hired hand from Judah",
+      "The good shepherd lays down his life for the sheep; the hired hand flees when he sees a wolf"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Good Shepherd",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 26,
+    "content": "When Jesus tells Martha 'I am the resurrection and the life' (John 11:25-26), the accompanying promise has which two parallel parts?",
+    "explanation": "John 11:25-26 — 'I am the resurrection and the life. Whoever believes in me, though he die, yet shall he live, and everyone who lives and believes in me shall never die'. Two parts: (1) one who has died → will live, (2) one who lives → will never die spiritually/eternally.",
+    "language": "en",
+    "options": [
+      "'The believer will perform greater miracles than me; will be wealthy in this life'",
+      "'Whoever believes in me, though he die, yet shall he live; and everyone who lives and believes in me shall never die'",
+      "'Whoever believes will enter the Jerusalem temple; will see the Father appear'",
+      "'Whoever believes in me will never die physically and will never be sick'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Resurrection and Life",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "verseStart": 34,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 35,
+    "content": "Jesus declares 'A new commandment I give to you, that you love one another' (John 13:34). What makes this commandment 'NEW'?",
+    "explanation": "John 13:34 — 'A new commandment I give to you, that you love one another; as I have loved you, that you also love one another'. Lev 19:18 already commanded 'love your neighbor as yourself'. What is NEW is the standard: 'as I have loved you' — Christ laying down his life for his friends (15:13).",
+    "language": "en",
+    "options": [
+      "It is the first command to love ever, never seen in any Old Testament passage before",
+      "The commandment requires loving enemies, not just neighbors as in earlier Law",
+      "The standard of love is raised: 'as I have loved you' (loving to the point of laying down life)",
+      "The commandment applies only to the New Testament era and is not binding on Old Testament believers"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "New Commandment",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 6,
+    "content": "In John 14:6, Jesus declares 'I am the way, the truth, and the life'. What does the next clause in the same verse affirm as the core of salvation?",
+    "explanation": "John 14:6 — 'Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me'. This is the New Testament's most direct statement of EXCLUSIVE salvation in Christ (cf. Acts 4:12; 1 Tim 2:5).",
+    "language": "en",
+    "options": [
+      "'No one comes to the Father except through me' — salvation EXCLUSIVELY through Christ",
+      "'Anyone can come to the Father by various ways depending on their goodness'",
+      "'Only Israelites may come to the Father through me; Gentiles by other means'",
+      "'The Father will come to you on his own without going through me'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Way Truth Life",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 15,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 5,
+    "content": "According to John 15:4-5, the metaphor of 'vine and branches' teaches what core truth about the Christian life?",
+    "explanation": "John 15:4-5 — 'Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me... Apart from me you can do nothing'. The core: continuous union with Christ.",
+    "language": "en",
+    "options": [
+      "Every believer must work very hard to bear fruit worthy of Christ",
+      "The Father will prune fruit-bearing branches and give Israel rule over the world",
+      "Some believers are the true vine while others are a false vine not belonging to God",
+      "The believer must 'abide' in Christ, because 'apart from me you can do nothing'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Vine and Branches",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 1,
+    "content": "According to John 1:1 (ESV), the opening verse has a three-clause structure. What is the correct order of those clauses?",
+    "explanation": "John 1:1 (ESV) — 'In the beginning was the Word, and the Word was with God, and the Word was God'. The three clauses: (1) pre-existence, (2) relation to the Father, (3) full deity.",
+    "language": "en",
+    "options": [
+      "The Word was with God / the Word was God / In the beginning was the Word",
+      "In the beginning was the Word / the Word was with God / the Word was God",
+      "The Word was God / In the beginning was the Word / the Word was with God",
+      "In the beginning was the Word / the Word was God / the Word was with God"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Prologue",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 16,
+    "content": "John 3:16 (ESV) has the structure 'For God ___ the world, that he ___ his only Son, that whoever ___ in him should not ___, but have eternal life'. What four words fill the blanks in order?",
+    "explanation": "John 3:16 (ESV) — 'For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life'. The four key words: so loved / gave / believes / perish.",
+    "language": "en",
+    "options": [
+      "saw / sent / receives / be cast out",
+      "loved / sent / follows / die",
+      "remembered / gave / honors / lose his land",
+      "so loved / gave / believes / perish"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "The Key Verse",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "verseStart": 39,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 40,
+    "content": "In John 5:39-40 (ESV), Jesus says: 'You search the Scriptures because you think that in them you have eternal life...' What does the next verse (5:40) rebuke them for?",
+    "explanation": "John 5:39-40 — 'You search the Scriptures because you think that in them you have eternal life; and it is they that bear witness about me. Yet you refuse to come to me that you may have life'. The issue is not the volume of study but refusing to come to the One Scripture points to.",
+    "language": "en",
+    "options": [
+      "'You misunderstand the law of Moses and so misinterpret the Sabbath'",
+      "'You do not study Scripture diligently enough each day of the week'",
+      "'Yet you REFUSE to come to me that you may have life' (though Scripture testifies of me)",
+      "'You do not understand the original Hebrew of the ancient manuscripts'"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Searching Scripture",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 10,
+    "content": "According to John 10:10 (ESV), Jesus contrasts the thief with himself. How is that contrast precisely stated?",
+    "explanation": "John 10:10 — 'The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly'. A perfect parallel: three destructive actions vs. abundant life.",
+    "language": "en",
+    "options": [
+      "The thief comes only to steal and kill and destroy; I came that they may have life and have it abundantly",
+      "The thief comes by night while I come by day when the sun shines on the land of Israel",
+      "The thief will be judged severely by God while I will be exalted by the Father in heaven",
+      "The thief comes only to the Pharisees while I come to the Sadducees and to Gentiles"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Abundant Life",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 3,
+    "content": "In John 14:2-3 (ESV), Jesus comforts his disciples before his death with what specific promise about his departure?",
+    "explanation": "John 14:2-3 — 'In my Father's house are many rooms. If it were not so, would I have told you that I go to prepare a place for you? And if I go and prepare a place for you, I will come again and will take you to myself'.",
+    "language": "en",
+    "options": [
+      "He goes to test whether the disciples will truly love him in the future",
+      "He goes 'to prepare a place for you' and 'will come again and take you to myself'",
+      "He goes to leave this world and will never return to humanity again",
+      "He goes to Pharaoh in Egypt first, then returns to the people of Israel"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Many Rooms",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 15,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 13,
+    "content": "According to John 15:13 (ESV), 'Greater love has no one than this, that someone ___ for his ___'. What two words fill the blanks?",
+    "explanation": "John 15:13 — 'Greater love has no one than this, that someone lay down his life for his friends'. Spoken in the Upper Room Discourse, this defines the love Christ shows on the cross — and he calls the disciples 'friends' (15:14-15).",
+    "language": "en",
+    "options": [
+      "lays down his life / enemies who oppose him",
+      "shares his life / spouse and married partner",
+      "lays down his life / friends",
+      "gives his property / blood-related siblings"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Greater Love",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "verseStart": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 31,
+    "content": "John 20:30-31 (ESV) is the purpose statement of the entire book. According to John's own words, why did he write these signs?",
+    "explanation": "John 20:31 — 'But these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name'. This is the mission statement of John's Gospel.",
+    "language": "en",
+    "options": [
+      "So that you may 'believe that Jesus is the Christ, the Son of God' and 'have life in his name'",
+      "So that you may memorize the miracles and pass them down to future generations",
+      "So that you may know an accurate biography of Jesus' childhood in Nazareth",
+      "So that you may have legal evidence against the Roman authorities in court"
+    ],
+    "tags": [
+      "New Testament",
+      "John",
+      "Gospels",
+      "Purpose of John",
+      "Advanced"
+    ]
   }
 ]

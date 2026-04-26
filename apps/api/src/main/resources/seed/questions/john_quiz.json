@@ -2681,5 +2681,823 @@
       "Phúc Âm",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 11,
+    "content": "Phúc âm Giăng cấu trúc quanh 'bảy dấu lạ' (signs) của Chúa Jêsus. Phép lạ nào sau đây thuộc trong bảy dấu lạ ĐÓ? (chọn tất cả đúng)",
+    "explanation": "Bảy dấu lạ trong Giăng: (1) hóa nước thành rượu 2:1-11, (2) chữa con quan 4:46-54, (3) chữa người liệt 5:1-9, (4) cho 5,000 ăn 6:1-14, (5) đi trên mặt biển 6:16-21, (6) chữa người mù bẩm sinh 9:1-7, (7) khiến La-xa-rơ sống lại 11:1-44. Cây vả khô héo chỉ có ở Synoptic, không phải Giăng.",
+    "language": "vi",
+    "options": [
+      "Hóa nước thành rượu tại tiệc cưới Ca-na (Giăng 2:1-11)",
+      "Chữa lành con trai quan thị vệ của vua tại Ca-bê-na-um (4:46-54)",
+      "Cho năm ngàn người ăn no với năm bánh hai cá (6:1-14)",
+      "Khiến cây vả không sinh trái khô héo trên đường (Ma-thi-ơ 21)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Bảy dấu lạ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "verseStart": 32,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 34,
+    "content": "Trong Giăng, cụm từ 'được treo lên' (lifted up) được Chúa Jêsus dùng ba lần để ám chỉ sự chết của Ngài. Theo 12:32-34, dân chúng hiểu cụm này KHÔNG khớp với điều gì?",
+    "explanation": "Giăng 3:14 (Môi-se treo rắn đồng), 8:28, 12:32-34 — ba lần Chúa nói 'được treo lên' chỉ thập tự. Trong 12:34, dân ngạc nhiên: 'chúng tôi nghe trong luật pháp rằng Đấng Christ còn LẠI đời đời'. Họ không hiểu vì sao Đấng Christ lại phải chết.",
+    "language": "vi",
+    "options": [
+      "Họ chấp nhận đó là tiên báo về sự đóng đinh trên thập tự giá",
+      "Họ nghĩ Đấng Christ phải còn LẠI đời đời theo như luật pháp",
+      "Họ không hiểu vì sao Con Người phải bị treo lên cao như vậy",
+      "Họ liên hệ đến hình ảnh con rắn đồng được Môi-se treo lên"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Được treo lên",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "verseStart": 55,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 55,
+    "content": "Sách Giăng đặc biệt ghi lại nhiều lễ Vượt Qua. Tổng cộng có bao nhiêu lễ Vượt Qua được nhắc trực tiếp trong sách Giăng?",
+    "explanation": "Ba lễ Vượt Qua trong Giăng: (1) 2:13 — đầu chức vụ, dọn sạch đền thờ; (2) 6:4 — Ngài cho 5,000 người ăn; (3) 11:55-12:1 — lễ Ngài chịu chết. Đây là cơ sở chính cho khái niệm chức vụ Chúa Jêsus dài khoảng 3 năm.",
+    "language": "vi",
+    "options": [
+      "Chỉ một lễ duy nhất, là lễ Ngài chịu chết",
+      "Hai lễ, đầu chức vụ và cuối chức vụ",
+      "Ba lễ riêng biệt trong suốt chức vụ Ngài",
+      "Bốn lễ trong cả ba năm rưỡi chức vụ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Ba lễ Vượt Qua",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 12,
+    "content": "Sách Giăng mở đầu bằng 'Sự sống ở trong Ngài, sự sống là sự sáng của loài người' (1:4-5). Tuyên bố nào sau đó của Chúa Jêsus đối ứng trực tiếp với chủ đề ánh sáng này?",
+    "explanation": "Giăng 1:4-5 giới thiệu chủ đề Sự Sáng. Giăng 8:12 — 'Ta là sự sáng của thế gian; người nào theo ta sẽ chẳng đi trong nơi tối tăm, nhưng có ánh sáng của sự sống'. Hai phân đoạn tạo cặp inclusio chủ đề.",
+    "language": "vi",
+    "options": [
+      "Trong Cha có nhiều chỗ ở; ta đi sắm sẵn cho các ngươi một chỗ",
+      "Hãy nhân danh Cha, Con và Thánh Linh làm phép báp-têm",
+      "Ai uống nước ta cho, sẽ chẳng hề khát mãi mãi cho đến đời đời",
+      "Ta là sự sáng của thế gian; người nào theo ta sẽ chẳng đi trong nơi tối tăm"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Sự sáng thế gian",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 25,
+    "content": "Trong Giăng, 'môn đồ Chúa Jêsus yêu dấu' xuất hiện nhiều lần mà không gọi tên. Phân đoạn nào CÓ ghi sự xuất hiện của ông? (chọn tất cả đúng)",
+    "explanation": "Giăng 13:23-25 (Tiệc Ly), 19:26-27 (thập tự), 20:2-8 (mộ trống), 21:7,20 (đánh cá Ti-bê-ri-át) — đều đề cập 'môn đồ Chúa Jêsus yêu dấu'. Lễ Ngũ Tuần ở Công Vụ 2 không thuộc Giăng và không dùng cụm này.",
+    "language": "vi",
+    "options": [
+      "Tựa vào ngực Chúa tại bữa Tiệc Ly và hỏi ai là kẻ phản (13:23-25)",
+      "Đứng dưới chân thập tự với mẹ Ngài và được giao chăm sóc bà (19:26-27)",
+      "Chạy đến mộ trống với Phi-e-rơ và là người tin trước (20:2-8)",
+      "Ngồi tại Lễ Ngũ Tuần và giảng cho ba ngàn người nghe (Công Vụ 2)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Môn đồ yêu dấu",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 27,
+    "content": "Trong Giăng, Chúa Jêsus nhiều lần nói 'giờ ta CHƯA đến' (2:4, 7:30, 8:20). Câu nào đánh dấu BƯỚC NGOẶT chuyển sang 'giờ đã đến'?",
+    "explanation": "Giăng 12:23 — 'Giờ đã đến, khi Con người được vinh hiển'. Câu này đảo ngược 'giờ chưa đến' lặp đi lặp lại trước đó (2:4, 7:30, 8:20). Tiếp theo Chúa nói về hạt giống chết để sinh nhiều bông trái (12:24).",
+    "language": "vi",
+    "options": [
+      "12:23 — 'Giờ đã đến, khi Con người được vinh hiển' (sau khi người Hy-lạp tìm gặp Ngài)",
+      "11:43 — 'Hỡi La-xa-rơ, hãy ra' (lúc kêu La-xa-rơ ra khỏi mộ)",
+      "6:35 — 'Ta là bánh của sự sống' (bài giảng tại Ca-bê-na-um)",
+      "4:26 — 'Ta đây, là Đấng nói chuyện với ngươi' (với người đàn bà Sa-ma-ri)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Giờ đã đến",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 67,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 69,
+    "content": "Trong Giăng, Si-môn Phi-e-rơ tiến triển trong sự xưng nhận đức tin. Lời xưng nhận trong 6:68-69 (sau khi nhiều môn đồ rời bỏ Chúa) là gì?",
+    "explanation": "Giăng 6:68-69 — 'Lạy Chúa, chúng tôi đi theo ai? Chúa có những lời của sự sống đời đời. Chúng tôi đã tin và nhận biết rằng Chúa là Đấng thánh của Đức Chúa Trời'. Hai lời xưng kia thuộc Lu-ca 5:8 và Giăng 21:17.",
+    "language": "vi",
+    "options": [
+      "'Lạy Chúa, hãy lui ra khỏi tôi vì tôi là người có tội nhiều!'",
+      "'Lạy Chúa, chúng tôi đi theo ai? Chúa có những lời của sự sống đời đời'",
+      "'Lạy Chúa, Ngài là Đấng Christ, Con Đức Chúa Trời hằng sống'",
+      "'Lạy Chúa, Ngài thấu hết mọi sự, Ngài biết tôi yêu Ngài'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Phi-e-rơ xưng nhận",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "Trong Giăng 20:3-8, khi Phi-e-rơ và 'môn đồ Chúa Jêsus yêu dấu' chạy ra mộ trống, chi tiết nào về thứ tự và phản ứng của hai người được ghi rõ?",
+    "explanation": "Giăng 20:4-8 — 'môn đồ kia chạy mau hơn Phi-e-rơ, và đến mộ trước nhất' nhưng cúi xuống nhìn mà không vào. Phi-e-rơ đến sau, đi thẳng vào mộ. Sau đó môn đồ kia mới vào, 'thấy và tin'.",
+    "language": "vi",
+    "options": [
+      "Phi-e-rơ chạy nhanh hơn, đến mộ trước, vào trước và lập tức tin Chúa đã sống lại",
+      "Cả hai môn đồ đến mộ cùng lúc và bước vào trong cùng một lúc với nhau",
+      "Môn đồ kia chạy nhanh hơn, đến mộ trước nhưng không vào; Phi-e-rơ đến sau, vào trước",
+      "Môn đồ kia đứng ngoài khóc còn Phi-e-rơ vào trong và sợ hãi không dám động"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Cuộc chạy đến mộ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 35,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 35,
+    "content": "Phúc âm Giăng có bảy lời 'Ta là...' (I AM) đặc trưng. Lời nào sau đây CÓ trong bảy lời 'Ta là...' đó? (chọn tất cả đúng)",
+    "explanation": "Bảy lời 'Ta là' trong Giăng: 6:35 bánh, 8:12 sự sáng, 10:7 cửa, 10:11 người chăn hiền, 11:25 sống lại và sự sống, 14:6 đường lẽ thật sự sống, 15:1 cây nho thật. 'Tảng đá' không phải là 1 trong 7 lời này.",
+    "language": "vi",
+    "options": [
+      "'Ta là bánh của sự sống' (6:35)",
+      "'Ta là người chăn hiền lành' (10:11)",
+      "'Ta là sự sống lại và sự sống' (11:25)",
+      "'Ta là tảng đá cứu rỗi' (không có trong Giăng)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Bảy lời Ta là",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "verseStart": 39,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 40,
+    "content": "Ni-cô-đem xuất hiện ba lần trong Giăng. Theo trình tự, lần xuất hiện CUỐI CÙNG của ông là gì?",
+    "explanation": "Ba lần Ni-cô-đem trong Giăng: (1) 3:1-21 ban đêm hỏi về tái sinh; (2) 7:50-52 bênh vực trong Tòa Công luận; (3) 19:39-40 đem 100 cân mộc dược + lư hội xức xác Chúa Jêsus cùng Giô-sép ở A-ri-ma-thê.",
+    "language": "vi",
+    "options": [
+      "Đến gặp Chúa Jêsus ban đêm và được dạy về sự tái sinh",
+      "Bênh vực Chúa Jêsus trong Tòa Công luận khi họ bàn việc bắt Ngài",
+      "Đứng giữa đám đông tại lễ Vượt Qua khi Ngài dọn đền thờ",
+      "Đem một trăm cân thuốc thơm để xức xác Chúa Jêsus sau khi Ngài chết"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Ni-cô-đem",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 9,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 7,
+    "content": "Theo Giăng 9:6-7, Chúa Jêsus chữa lành người mù bẩm sinh bằng phương pháp cụ thể nào?",
+    "explanation": "Giăng 9:6-7 — 'Ngài nhổ xuống đất, lấy nước miếng trộn thành bùn, và đem xức trên mắt người mù. Đoạn Ngài phán cùng người: Hãy đi, rửa nơi ao Si-lô-ê'. Người mù vâng lời, đi rửa và 'được sáng mắt mà về'.",
+    "language": "vi",
+    "options": [
+      "Nhổ nước bọt xuống đất, hòa thành bùn, xức trên mắt và bảo đi rửa nơi ao Si-lô-ê",
+      "Đặt tay trên mắt và phán 'Hãy được sáng', người mù lập tức thấy được mọi vật",
+      "Phán từ xa 'Hãy về nhà ngươi, mắt ngươi đã được sáng' không cần đụng vào ông",
+      "Bảo người mù tự đi tắm bảy lần dưới sông Giô-đanh giống Na-a-man phong cùi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Chữa người mù bẩm sinh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 8,
+    "content": "Trong Giăng có hai người tên Ma-ri nổi bật. Theo Giăng 12:1-8, Ma-ri ở Bê-tha-ni làm gì cho Chúa Jêsus?",
+    "explanation": "Giăng 12:3 — 'Ma-ri lấy một cân dầu thơm cam tùng nguyên chất, đáng giá lớn, đem xức chân Đức Chúa Jêsus, và lấy tóc mình mà lau'. Đây là Ma-ri ở Bê-tha-ni (em La-xa-rơ), KHÔNG phải Ma-ri Ma-đơ-len (xuất hiện ở 20:1-18).",
+    "language": "vi",
+    "options": [
+      "Khóc bên chân thập tự khi Ngài bị đóng đinh tại đồi Gô-gô-tha",
+      "Lấy một cân dầu cam tùng nguyên chất xức chân Chúa và lấy tóc lau",
+      "Chạy ra mộ Chúa khi trời còn tối và thấy hòn đá đã lăn ra rồi",
+      "Đứng cạnh giếng Sa-ma-ri và xin Chúa nước hằng sống cho mình"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Hai Ma-ri",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 9,
+    "content": "Giăng ghi hai phép lạ Chúa Jêsus chữa lành trong ngày Sa-bát gây tranh cãi với người Giu-đa. Hai phép lạ đó là gì?",
+    "explanation": "Giăng 5:1-18 — chữa người liệt 38 năm tại ao Bê-tết-đa ngày Sa-bát (gây tranh cãi). Giăng 9:1-16 — chữa người mù bẩm sinh, làm bùn ngày Sa-bát (gây tranh cãi). Cả 2 đều dẫn đến lý luận về thẩm quyền Sa-bát của Chúa.",
+    "language": "vi",
+    "options": [
+      "Chữa con trai quan thị vệ tại Ca-bê-na-um và cho 5,000 người ăn no",
+      "Hóa nước thành rượu Ca-na và làm cho La-xa-rơ sống lại tại Bê-tha-ni",
+      "Chữa người liệt 38 năm tại ao Bê-tết-đa (Giăng 5) và chữa người mù bẩm sinh (Giăng 9)",
+      "Đi trên mặt biển Ga-li-lê và chữa lành tai của Man-chu trong vườn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Hai phép lạ ngày Sa-bát",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "verseStart": 33,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      3
+    ],
+    "verseEnd": 38,
+    "content": "Theo Giăng 18:33-19:11, trong cuộc thẩm vấn Phi-lát hỏi Chúa Jêsus những câu hỏi nào? (chọn tất cả đúng)",
+    "explanation": "Giăng 18:33-19:11 ghi câu hỏi Phi-lát: 18:33 'Ngươi có phải là vua...?', 18:38 'Lẽ thật là gì?', 19:9 'Ngươi từ đâu đến?', và 19:10 'Ngươi không nói với ta sao? Ngươi không biết ta có quyền...?'. Câu về 'lễ Vượt Qua' không có trong text.",
+    "language": "vi",
+    "options": [
+      "'Ngươi có phải là vua dân Giu-đa không?' (18:33)",
+      "'Lẽ thật là gì?' (18:38) sau khi nghe Chúa nói về lẽ thật",
+      "'Ngươi đã ăn lễ Vượt Qua chưa?' (Phi-lát không hỏi câu này)",
+      "'Ngươi từ đâu đến?' (19:9) khi nghe Chúa Jêsus xưng mình là Con Đức Chúa Trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Phi-lát thẩm vấn",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "verseStart": 26,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 30,
+    "content": "Theo Giăng 13:21-30, Chúa Jêsus tỏ ra ai sẽ phản Ngài tại Tiệc Ly bằng dấu hiệu cụ thể nào?",
+    "explanation": "Giăng 13:26-27 — 'Đức Chúa Jêsus đáp rằng: Ấy là kẻ mà ta sẽ trao cho miếng bánh ta sau khi nhúng đây. Đoạn Ngài nhúng miếng bánh, trao cho Giu-đa... Liền khi Giu-đa đã nhận lấy miếng bánh, thì quỷ Sa-tan vào lòng người'.",
+    "language": "vi",
+    "options": [
+      "Ngài nhúng miếng bánh và đưa cho Giu-đa Ích-ca-ri-ốt; Sa-tan vào lòng Giu-đa",
+      "Ngài nhìn thẳng vào mắt Giu-đa và gọi tên ông giữa các môn đồ",
+      "Ngài viết tên kẻ phản trên đất và tất cả các môn đồ đều thấy được",
+      "Ngài bảo Phi-e-rơ tuốt gươm chỉ vào kẻ phản nhưng Phi-e-rơ không nghe"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Tỏ kẻ phản",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "verseStart": 36,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 37,
+    "content": "Khi Phi-lát hỏi 'Vậy thì ngươi là vua sao?' (Giăng 18:36-37), Chúa Jêsus đáp lại với cụm từ độc đáo nào về tính chất Nước Ngài?",
+    "explanation": "Giăng 18:36-37 — 'Nước của ta CHẲNG PHẢI thuộc về thế gian nầy. Ví bằng nước ta thuộc về thế gian nầy, thì tôi tớ của ta sẽ đánh trận'. Và 'Ta vì sự nầy mà sanh ra, vì sự nầy mà ta đã giáng thế: ấy là để làm chứng cho lẽ thật'.",
+    "language": "vi",
+    "options": [
+      "'Nước ta là nước ở dưới đất; ta sẽ đánh bại La-mã rồi cai trị cả thế giới này'",
+      "'Nước ta CHẲNG PHẢI thuộc về thế gian nầy' và 'ta đến vì cớ sự thật'",
+      "'Nước ta sẽ đến trong vinh hiển ngay hôm nay nếu các ngươi tin'",
+      "'Nước ta là vô hình và không thể thấy được, ta không phải là vua'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Nước không thuộc thế gian",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 24,
+    "content": "Trong Giăng 4:23-24, Chúa Jêsus nói với người đàn bà Sa-ma-ri: 'Đức Chúa Trời là Thần, nên ai thờ lạy Ngài thì phải lấy ___ và ___ mà thờ lạy'. Hai từ điền vào và ý nghĩa thần học là gì?",
+    "explanation": "Giăng 4:24 — 'Đức Chúa Trời là Thần, nên ai thờ lạy Ngài thì phải lấy thần và lẽ thật mà thờ lạy'. 'Thần' (spirit) chỉ tấm lòng được Thánh Linh đổi mới; 'lẽ thật' chỉ chân lý của Đức Chúa Trời (đặc biệt được mặc khải trong Đấng Christ — 14:6 'Ta là lẽ thật').",
+    "language": "vi",
+    "options": [
+      "'Lễ vật / vâng phục' — sự thờ phượng phải đi kèm dâng lễ và làm theo luật",
+      "'Tâm hồn / sức lực' — sự thờ phượng phải toàn tâm toàn ý không lười biếng",
+      "'Thần / lẽ thật' — sự thờ phượng phải đến từ tấm lòng được Thánh Linh tái tạo và phù hợp với chân lý mặc khải",
+      "'Đền thờ / sách luật' — sự thờ phượng phải có địa điểm thiêng và sách hướng dẫn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Thờ phượng thần và lẽ thật",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "verseStart": 35,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 35,
+    "content": "Khi Chúa Jêsus phán 'Ta là bánh của sự sống' (Giăng 6:35), lời hứa cụ thể đi kèm cho người đến cùng Ngài là gì?",
+    "explanation": "Giăng 6:35 — 'Ta là bánh của sự sống; ai đến cùng ta chẳng hề đói, và ai tin ta chẳng hề khát'. Cấu trúc song song 'đói/khát' về tâm linh, không hứa thoát chết thể xác (xem 11:25-26 về sự chết thể xác).",
+    "language": "vi",
+    "options": [
+      "'Người đến cùng ta chẳng hề đói; người tin ta chẳng hề khát'",
+      "'Người đến cùng ta sẽ được giàu có dư dật vật chất ngay đời này'",
+      "'Người đến cùng ta sẽ không bao giờ chết về thể xác, sống đời đời'",
+      "'Người đến cùng ta sẽ được làm vua trên dân Y-sơ-ra-ên cùng ta'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Bánh sự sống",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "Trong Giăng 10:11-13, Chúa Jêsus phân biệt 'người chăn hiền lành' với 'người chăn thuê' bằng dấu hiệu cốt lõi nào?",
+    "explanation": "Giăng 10:11-13 — 'Ta là người chăn hiền lành; người chăn hiền lành vì chiên mình phó sự sống mình. Kẻ chăn thuê chẳng phải là người chăn... thấy muông sói đến thì nó bỏ chiên chạy trốn'. Sự khác biệt: hy sinh tự nguyện vs trốn tránh khi nguy hiểm.",
+    "language": "vi",
+    "options": [
+      "Người chăn hiền lành mặc áo trắng, người chăn thuê mặc áo xám",
+      "Người chăn hiền lành có nhiều chiên hơn, người chăn thuê có ít chiên",
+      "Người chăn hiền lành thuộc dòng dõi Lê-vi, người chăn thuê thuộc dòng dõi Giu-đa",
+      "Người chăn hiền lành phó sự sống mình vì chiên; người chăn thuê thấy muông sói thì bỏ chạy"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Người chăn hiền lành",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 26,
+    "content": "Khi Chúa Jêsus phán với Ma-thê 'Ta là sự sống lại và sự sống' (Giăng 11:25-26), lời hứa kèm theo có hai phần đối ứng nào?",
+    "explanation": "Giăng 11:25-26 — 'Ta là sự sống lại và sự sống; kẻ nào tin ta thì sẽ sống, mặc dầu đã chết rồi. Còn ai sống mà tin ta thì không hề chết'. Hai vế: (1) đã chết → sẽ sống lại, (2) đang sống → không hề chết về tâm linh/đời đời.",
+    "language": "vi",
+    "options": [
+      "'Người tin sẽ làm phép lạ lớn hơn ta; sẽ được giàu có trong đời này'",
+      "'Kẻ nào tin ta thì sẽ sống, mặc dầu đã chết rồi; còn ai sống mà tin ta thì không hề chết'",
+      "'Người tin ta sẽ được vào đền thờ Giê-ru-sa-lem; sẽ thấy Đức Cha hiện ra'",
+      "'Kẻ tin ta sẽ chẳng bao giờ chết về thể xác và sẽ không bao giờ bệnh tật'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Sự sống lại và sự sống",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "verseStart": 34,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 35,
+    "content": "Chúa Jêsus phán 'Ta ban cho các ngươi một điều răn mới: hãy yêu nhau' (Giăng 13:34). Điều gì làm cho điều răn này 'MỚI'?",
+    "explanation": "Giăng 13:34 — 'Ta ban cho các ngươi một điều răn mới, là các ngươi phải yêu nhau; như ta đã yêu các ngươi, thì các ngươi cũng hãy yêu nhau'. Lê-vi 19:18 đã có 'yêu người lân cận như mình'. Cái MỚI là tiêu chuẩn: 'như TA đã yêu' — Chúa Jêsus phó mạng sống vì bạn hữu (15:13).",
+    "language": "vi",
+    "options": [
+      "Đây là điều răn yêu lần đầu tiên xuất hiện, chưa từng có trong Cựu Ước nào trước",
+      "Điều răn này yêu cầu yêu cả kẻ thù chứ không chỉ người lân cận như xưa",
+      "Tiêu chuẩn yêu thương được nâng lên: 'như TA đã yêu các ngươi' (yêu đến phó mạng sống)",
+      "Điều răn này chỉ áp dụng cho thời Tân Ước và không bắt buộc người đời cũ phải giữ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Điều răn mới",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 6,
+    "content": "Trong Giăng 14:6, Chúa Jêsus phán 'Ta là đường đi, lẽ thật, và sự sống'. Lời tuyên bố tiếp theo trong cùng câu khẳng định điều gì cốt lõi về sự cứu rỗi?",
+    "explanation": "Giăng 14:6 — 'Vậy Đức Chúa Jêsus đáp rằng: Ta là đường đi, lẽ thật, và sự sống; chẳng bởi ta thì không ai được đến cùng Cha'. Đây là tuyên bố mạnh nhất trong Tân Ước về sự cứu rỗi DUY NHẤT trong Đấng Christ (so với Công Vụ 4:12; 1 Ti 2:5).",
+    "language": "vi",
+    "options": [
+      "'Chẳng bởi ta thì không ai được đến cùng Cha' — sự cứu rỗi DUY NHẤT qua Đấng Christ",
+      "'Bất cứ ai cũng có thể đến cùng Cha qua nhiều cách khác nhau tùy lòng tốt'",
+      "'Chỉ có người Y-sơ-ra-ên mới được đến cùng Cha qua ta mà thôi'",
+      "'Cha ngươi sẽ tự đến cùng các ngươi mà không cần qua ta'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Đường đi lẽ thật sự sống",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 15,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 5,
+    "content": "Theo Giăng 15:4-5, Chúa Jêsus dùng ẩn dụ 'cây nho và nhánh' để dạy chân lý cốt yếu nào về đời sống Cơ-đốc?",
+    "explanation": "Giăng 15:4-5 — 'Hãy cứ ở trong ta, thì ta sẽ ở trong các ngươi. Như nhánh nho, nếu không dính vào gốc nho, thì không tự mình kết quả được... Vì ngoài ta, các ngươi chẳng làm chi được'. Trung tâm: sự kết hiệp liên tục với Đấng Christ.",
+    "language": "vi",
+    "options": [
+      "Mỗi tín hữu phải làm việc thật nhiều mới có thể sinh trái xứng đáng cho Chúa",
+      "Cha sẽ tỉa các nhánh sinh trái rồi cho người Y-sơ-ra-ên cai trị thế giới",
+      "Một số tín hữu là cây nho thật, số khác là cây nho giả không thuộc về Đức Chúa Trời",
+      "Tín hữu phải 'cứ ở' (abide) trong Đấng Christ, vì 'ngoài ta, các ngươi chẳng làm chi được'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Cây nho và nhánh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 1,
+    "content": "Theo Giăng 1:1 (RVV11), câu mở đầu Phúc âm Giăng có cấu trúc ba mệnh đề. Thứ tự đúng của ba mệnh đề là gì?",
+    "explanation": "Giăng 1:1 (RVV11) — 'Ban đầu có Ngôi Lời, Ngôi Lời ở cùng Đức Chúa Trời, và Ngôi Lời là Đức Chúa Trời'. Thứ tự ba mệnh đề là: (1) tồn tại tiền hữu, (2) quan hệ với Cha, (3) thần tính trọn vẹn.",
+    "language": "vi",
+    "options": [
+      "Ngôi Lời ở cùng Đức Chúa Trời / Ngôi Lời là Đức Chúa Trời / Ban đầu có Ngôi Lời",
+      "Ban đầu có Ngôi Lời / Ngôi Lời ở cùng Đức Chúa Trời / Ngôi Lời là Đức Chúa Trời",
+      "Ngôi Lời là Đức Chúa Trời / Ban đầu có Ngôi Lời / Ngôi Lời ở cùng Đức Chúa Trời",
+      "Ban đầu có Ngôi Lời / Ngôi Lời là Đức Chúa Trời / Ngôi Lời ở cùng Đức Chúa Trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Mở đầu Giăng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 16,
+    "content": "Câu Giăng 3:16 (RVV11) có cấu trúc 'Vì Đức Chúa Trời ___ thế gian, đến nỗi đã ___ Con một của Ngài, hầu cho hễ ai ___ Con ấy không bị ___, mà được sự sống đời đời'. Bốn chỗ trống lần lượt là?",
+    "explanation": "Giăng 3:16 (RVV11) — 'Vì Đức Chúa Trời yêu thương thế gian, đến nỗi đã ban Con một của Ngài, hầu cho hễ ai tin Con ấy không bị hư mất, mà được sự sống đời đời'. Bốn từ khóa: yêu thương / ban / tin / hư mất.",
+    "language": "vi",
+    "options": [
+      "thấy / sai / nhận / loại bỏ",
+      "thương / cho / theo / chết",
+      "nhớ / ban / kính / mất nước",
+      "yêu thương / ban / tin / hư mất"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Câu chìa khóa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "verseStart": 39,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 40,
+    "content": "Trong Giăng 5:39-40 (RVV11), Chúa Jêsus phán: 'Các ngươi dò xem Kinh Thánh, vì tưởng bởi đó được sự sống đời đời...' Lời tiếp theo (5:40) Ngài quở trách họ điều gì?",
+    "explanation": "Giăng 5:39-40 — 'Các ngươi dò xem Kinh Thánh, vì tưởng bởi đó được sự sống đời đời: ấy là Kinh Thánh làm chứng về ta vậy. Các ngươi không muốn đến cùng ta để được sự sống!' Vấn đề không phải đọc nhiều ít, mà từ chối đến với Đấng Kinh Thánh chỉ đến.",
+    "language": "vi",
+    "options": [
+      "'Các ngươi tin sai về luật Môi-se nên không hiểu được lễ Sa-bát đúng nghĩa'",
+      "'Các ngươi không siêng năng học Kinh Thánh đủ nhiều mỗi ngày trong tuần'",
+      "'Các ngươi không CHỊU ĐẾN cùng ta để được sự sống' (dù Kinh Thánh làm chứng về ta)",
+      "'Các ngươi không hiểu được tiếng Hê-bơ-rơ trong các bản gốc cổ xưa'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Dò xem Kinh Thánh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 10,
+    "content": "Theo Giăng 10:10 (RVV11), Chúa Jêsus đặt sự đối lập giữa kẻ trộm và Ngài. Đối lập đó được trình bày chính xác như thế nào?",
+    "explanation": "Giăng 10:10 — 'Kẻ trộm chỉ đến để cướp giết và hủy diệt; còn ta đã đến, hầu cho chiên được sự sống và được sự sống dư dật'. Cấu trúc đối song tuyệt đối: 3 hành động phá hủy vs sự sống dư dật.",
+    "language": "vi",
+    "options": [
+      "Kẻ trộm chỉ đến để cướp giết và hủy diệt; ta đã đến để chiên được sự sống và sự sống dư dật",
+      "Kẻ trộm đến ban đêm còn ta đến ban ngày khi mặt trời sáng tỏ trên xứ Y-sơ-ra-ên",
+      "Kẻ trộm sẽ bị Đức Chúa Trời phán xét nặng nề và còn ta sẽ được Cha tôn cao trên trời",
+      "Kẻ trộm chỉ đến với người Pha-ri-si còn ta đến với người Sa-đu-sê và dân ngoại"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Sự sống dư dật",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 3,
+    "content": "Trong Giăng 14:2-3 (RVV11), Chúa Jêsus an ủi môn đồ trước khi chịu chết với lời hứa cụ thể nào về sự ra đi của Ngài?",
+    "explanation": "Giăng 14:2-3 — 'Trong nhà Cha ta có nhiều chỗ ở; bằng chẳng vậy, ta đã nói cho các ngươi rồi. Ta đi sắm sẵn cho các ngươi một chỗ. Khi ta đã đi, và sắm sẵn cho các ngươi một chỗ rồi, ta sẽ trở lại đem các ngươi đi với ta'.",
+    "language": "vi",
+    "options": [
+      "Ngài đi để tìm tòi xem các môn đồ có thật sự yêu mến Ngài hay không trong tương lai",
+      "Ngài đi 'sắm sẵn cho các ngươi một chỗ' và 'sẽ trở lại đem các ngươi đi với ta'",
+      "Ngài đi để rời khỏi thế gian này và sẽ không bao giờ trở lại với loài người nữa",
+      "Ngài đi đến Pha-ra-ôn Ai-cập trước rồi sau mới quay lại với dân Y-sơ-ra-ên"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Sắm sẵn chỗ ở",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 15,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 13,
+    "content": "Theo Giăng 15:13 (RVV11), 'Chẳng có sự yêu thương nào lớn hơn là vì ___ mà ___'. Hai chỗ trống điền lần lượt là?",
+    "explanation": "Giăng 15:13 — 'Chẳng có sự yêu thương nào lớn hơn là vì bạn hữu mà phó sự sống mình'. Câu này được nói trong Bài Giảng Phòng Cao, định nghĩa tình yêu của Đấng Christ trên thập tự — Ngài gọi môn đồ là 'bạn hữu' (15:14-15).",
+    "language": "vi",
+    "options": [
+      "kẻ thù nghịch / phó mạng sống",
+      "vợ chồng / sống hết mình",
+      "bạn hữu / phó sự sống",
+      "anh em ruột / dâng tài sản"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Yêu thương lớn nhất",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "verseStart": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 31,
+    "content": "Giăng 20:30-31 (RVV11) là tuyên bố mục đích của cả sách. Theo lời chính của Giăng, ông viết các dấu lạ này để người đọc làm gì?",
+    "explanation": "Giăng 20:31 — 'Nhưng các việc nầy đã chép, để cho các ngươi tin rằng Đức Chúa Jêsus là Đấng Christ, tức là Con Đức Chúa Trời, và để khi các ngươi tin, thì nhờ danh Ngài mà được sự sống'. Đây là 'mission statement' của sách Phúc âm Giăng.",
+    "language": "vi",
+    "options": [
+      "Để 'tin Đức Chúa Jêsus là Đấng Christ, Con Đức Chúa Trời' và 'nhân danh Ngài mà được sự sống'",
+      "Để học thuộc lòng các phép lạ và truyền lại cho con cháu các đời sau",
+      "Để biết được tiểu sử chính xác về thời thơ ấu của Đức Chúa Jêsus tại Na-xa-rét",
+      "Để có bằng chứng pháp lý chống lại nhà cầm quyền La-mã trước tòa án"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Giăng",
+      "Phúc âm",
+      "Mục đích sách Giăng",
+      "Nâng cao"
+    ]
   }
 ]

@@ -21,19 +21,10 @@
 - Chapters covered: 1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 15, 16, 18, 22, 25, 26, 27, 28
 
 ### Task V2H-3: John +30 Hard
-- Status: [ ] TODO
-- Current: 101 (E42 M48 H11) → Target: 131 (E42 M48 H41)
-- File(s): `john_quiz.json` + `john_quiz_en.json`
-- Strategy: 7 dấu lạ, 7 "I AM", Bread of Life (6), Good Shepherd (10), Upper Room (13-17), Passion (18-20)
-- Checklist:
-  - [ ] Đọc passage RVV11 + ESV
-  - [ ] 30 câu Hard VI mix 4 kiểu (đặc biệt verse precision cho "I AM" sayings)
-  - [ ] Self-doubt + near-miss + length tolerance
-  - [ ] correctAnswer index đều
-  - [ ] Check duplicate
-  - [ ] 30 câu EN 1:1
-  - [ ] Restart api verify
-  - [ ] Commit: `feat(seed): John +30 Hard for V2 go-live (11→41 Hard)`
+- Status: [x] DONE — 101→131 (E42 M48 H41, Hard 31.3%); seeder log `inserted=30` each file, total 4328→4388
+- File(s): `john_quiz.json` + `john_quiz_en.json` + `scripts/append_john_hard_v2.py`
+- Strategy: 4 kiểu Hard 8/8/7/7; 26 single + 4 multi (87/13); single idx 7/7/7/5
+- Chapters covered: 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 20
 
 ### Task V2H-4: Romans +25 Hard
 - Status: [ ] TODO
