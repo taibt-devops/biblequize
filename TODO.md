@@ -27,20 +27,10 @@
 - Chapters covered: 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 20
 
 ### Task V2H-4: Romans +25 Hard
-- Status: [ ] TODO
-- Current: 60 (E24 M29 H7) → Target: 85 (E24 M29 H32)
-- File(s): `romans_quiz.json` + `romans_quiz_en.json`
-- Strategy: lập luận thần học chương 1-8 (tội lỗi, xưng công bình, ân điển, thánh hóa), Israel 9-11, ứng dụng 12-15
-- ⚠️ Tránh guardrails: predestination chương 9, baptism form chương 6 — focus narrative + lập luận trần thuật
-- Checklist:
-  - [ ] Đọc passage RVV11 + ESV
-  - [ ] 25 câu Hard VI mix 4 kiểu (đặc biệt "hiểu sâu" cho lập luận Phao-lô)
-  - [ ] Self-doubt + near-miss + length tolerance
-  - [ ] correctAnswer index đều (mỗi index 6 câu, 1 index 7 câu)
-  - [ ] Check duplicate
-  - [ ] 25 câu EN 1:1
-  - [ ] Restart api verify
-  - [ ] Commit: `feat(seed): Romans +25 Hard for V2 go-live (7→32 Hard)`
+- Status: [x] DONE — 60→85 (E24 M29 H32, Hard 37.6%); seeder log `inserted=25` each file, total 4388→4438
+- File(s): `romans_quiz.json` + `romans_quiz_en.json` + `scripts/append_romans_hard_v2.py`
+- Strategy: 4 kiểu Hard 6/6/7/6; 21 single + 4 multi (84/16); single idx 5/6/5/5
+- Chapters covered: 1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 15
 
 ### Task V2H-5: Psalms +35 Hard
 - Status: [ ] TODO

@@ -1621,5 +1621,688 @@
       "Epistle",
       "Intermediate"
     ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 22,
+    "content": "In Romans 1:17 Paul writes 'the righteousness of God is revealed' in the Gospel. Which corresponding phrase echoes this at 3:21 after he has proven all are sinners?",
+    "explanation": "Rom 1:17 and 3:21-22 both use 'the righteousness of God revealed/manifested'. This is the main argumentative arch of Rom 1-3: indictment (1:18-3:20) → solution announced (3:21 'But now').",
+    "language": "en",
+    "options": [
+      "'But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it'",
+      "'Whoever boasts must boast in Christ Jesus our Lord and in nothing else'",
+      "'I am not ashamed of the Gospel, for it is the power of God for salvation'",
+      "'For all have sinned and fall short of the glory of God forever'"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Righteousness of God",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 19,
+    "content": "According to Romans 5:18-19, Paul sets Adam in counterpart to Christ in the 'one man... many' structure. What is the core counterpart?",
+    "explanation": "Rom 5:18-19 — 'as ONE trespass led to condemnation for all men, so ONE act of righteousness leads to justification and life for all men'. The one-to-many parallel grounds the doctrine of representational headship.",
+    "language": "en",
+    "options": [
+      "Adam brought physical suffering; Christ brings physical health and wealth to his people",
+      "One trespass of Adam led to condemnation for all; one act of righteousness of Christ leads to justification",
+      "Adam was ancestor of Israel; Christ is ancestor of the Gentile peoples specifically",
+      "Adam taught the law; Christ taught the gospel and abolished the law completely"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Adam and Christ",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 23,
+    "content": "Two famous verses in Romans — 3:23 and 6:23 — pair to form the heart of the Gospel appeal. Which two truths do they connect, in order?",
+    "explanation": "Rom 3:23 — 'all have sinned and fall short of the glory of God' (diagnosis). Rom 6:23 — 'the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord' (remedy). The two link sin-judgment to gospel-salvation.",
+    "language": "en",
+    "options": [
+      "Anyone can believe in God on their own / Every believer will receive eternal life",
+      "Jews have a religious advantage by birth / Gentiles have a moral advantage by nature",
+      "All have sinned and fall short of God's glory / Wages of sin is death, but free gift is eternal life in Christ",
+      "The Law of Moses has fully expired / The Gospel has replaced it for all people"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Two Key Verses",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 12,
+    "content": "In Romans 4:9-12, Paul argues from the timing of Abraham being counted righteous (Gen 15:6) relative to circumcision (Gen 17). What is Paul's conclusion?",
+    "explanation": "Rom 4:10-11 — 'How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before... so that he might be the father of all who believe'. Conclusion: Gentile believers need not be circumcised.",
+    "language": "en",
+    "options": [
+      "Abraham was justified at the moment of circumcision, since circumcision is the covenant sign",
+      "Abraham was justified some years after circumcision, when his faith had matured",
+      "Justification and circumcision happened simultaneously, with no order between them",
+      "Abraham was justified BEFORE circumcision, so he is father of uncircumcised believers too"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Abraham Justified",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 1,
+    "content": "Paul uses 'But now' / 'Now' at key argumentative pivots in Romans 1-8. Which passages contain such a major pivot? (select all correct)",
+    "explanation": "Rom 3:21, 5:11, 8:1 mark three argumentative pivots: from sin to solution, from justification to reconciliation, from gift to assurance. 16:25 is the closing doxology, not an argumentative pivot.",
+    "language": "en",
+    "options": [
+      "3:21 — 'But now the righteousness of God has been manifested' (after the indictment)",
+      "5:11 — 'Now we have received reconciliation through him' (after justification)",
+      "8:1 — 'There is therefore now no condemnation for those in Christ Jesus'",
+      "16:25 — 'Now to him who is able to strengthen you' (closing doxology)"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "But Now Pivots",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 2,
+    "content": "Romans 12:1 opens the practical section (12-15) with 'present your bodies as a living sacrifice, holy and acceptable'. Paul echoes the 'offering' imagery at 15:16 with what intent?",
+    "explanation": "Rom 15:16 — 'Because of the grace given me by God to be a minister of Christ Jesus to the Gentiles in the priestly service of the gospel of God, so that the offering of the Gentiles may be acceptable, sanctified by the Holy Spirit'. The worship-priestly imagery brackets the practical section (12:1 → 15:16).",
+    "language": "en",
+    "options": [
+      "Paul claims to be the supreme high priest of the new covenant",
+      "Paul's ministry is a 'priest of the Gospel' so that the Gentiles become an 'offering' acceptable to God",
+      "The church must offer animal sacrifices on a physical altar at the temple in Jerusalem",
+      "Every believer must give money as an 'offering' to the church in Rome above all"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Offering Frame",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 5,
+    "content": "According to Romans 5:1-5, immediately upon being justified by faith, the believer receives THREE specific benefits. What are they?",
+    "explanation": "Rom 5:1-2 — 'Therefore, since we have been justified by faith, we have peace with God through our Lord Jesus Christ. Through him we have also obtained access by faith into this grace in which we stand, and we rejoice in hope of the glory of God'.",
+    "language": "en",
+    "options": [
+      "Material wealth / physical health / high social status in society",
+      "Abolition of Mosaic law / transfer to Gentile community / a new temple",
+      "Peace with God / access into this grace / rejoicing in the hope of glory",
+      "Avoiding bodily death / never being sick / never being tempted at all"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Benefits of Justification",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 9,
+    "content": "In Romans 8:5-9, Paul distinguishes 'those who live according to the flesh' from 'those who live according to the Spirit'. According to the text itself, what practical mark distinguishes them?",
+    "explanation": "Rom 8:5-6 — 'Those who live according to the flesh set their minds on the things of the flesh, but those who live according to the Spirit set their minds on the things of the Spirit'. The mindset is the practical mark of distinction.",
+    "language": "en",
+    "options": [
+      "The flesh-walker SETS THEIR MIND on the flesh; the Spirit-walker SETS THEIR MIND on the Spirit — a different mindset orientation",
+      "The flesh-walker wears white robes; the Spirit-walker wears red robes in the church gathering",
+      "The flesh-walker is a Pharisee; the Spirit-walker is a Sadducee in the old society",
+      "The flesh-walker speaks Hebrew; the Spirit-walker speaks Greek in worship services"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Flesh vs Spirit",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 29,
+    "content": "In Romans 15:23-29, Paul outlines his missionary travel plan. Which items ARE part of that plan? (select all correct)",
+    "explanation": "Rom 15:23-29 — Paul's plan: (1) Jerusalem first with the Macedonia/Achaia collection (15:25-27), (2) then Rome (15:28-29), (3) then on to Spain (15:24, 28). Paul had no wife or children (1 Cor 7:7-8).",
+    "language": "en",
+    "options": [
+      "Going to Spain (Hispania) after passing through Rome on the way",
+      "Going to Jerusalem first to deliver a collection for poor saints",
+      "Visiting the Roman church on his way to Spain",
+      "Going to Israel to visit his wife and children before reaching Spain"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Mission Plan",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 4,
+    "content": "Paul uses 'law' (nomos) in Romans with several distinct senses. Which senses are explicitly present in the book? (select all correct)",
+    "explanation": "Paul uses nomos in multiple senses: (1) Mosaic law 7:7-12, (2) 'law of sin and death' 7:23-25, 8:2b, (3) 'law of the Spirit of life' 8:2a, sometimes 'law' = operating principle. 'Law of Babylon' is not in Romans.",
+    "language": "en",
+    "options": [
+      "The Law of Moses / law given at Sinai (Romans 7:7, 7:12)",
+      "The law of sin and death (Romans 7:23, 8:2)",
+      "The law of the Spirit of life in Christ Jesus (Romans 8:2)",
+      "The law of the kingdom of Babylon (not present in Romans)"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Senses of Law",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 8,
+    "content": "According to Romans 9:6-8, Paul distinguishes two senses of 'Israel'. What is the distinction?",
+    "explanation": "Rom 9:6-8 — 'For not all who are descended from Israel belong to Israel... it is not the children of the flesh who are the children of God, but the children of the promise are counted as offspring'.",
+    "language": "en",
+    "options": [
+      "Ancient Israel and modern Israel after the post-exile restoration of statehood",
+      "'Israel according to the flesh' (Abraham's biological descendants) ≠ 'Israel of promise' (children of promise, heirs by faith)",
+      "Israel as the ten northern tribes versus Judah as the two southern tribes during the kings",
+      "Old Testament Israel and the New Testament Church are two unrelated concepts entirely"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "True Israel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 24,
+    "content": "In Romans 11:17-24, Paul uses the 'olive tree' metaphor to warn the Gentiles. What is the specific warning?",
+    "explanation": "Rom 11:18-21 — 'Do not be arrogant toward the branches... it is not you who support the root, but the root that supports you... Branches were broken off so that I might be grafted in. That is true. They were broken off because of their unbelief, but you stand fast through faith. Do not be arrogant, but fear'.",
+    "language": "en",
+    "options": [
+      "Eat plenty of olive fruit so that your faith may grow strong and bear much fruit",
+      "Marry only within the Jewish people to keep Abraham's line pure and undefiled",
+      "Begin keeping the Passover feast as the Jews do, although you are not required",
+      "Do not boast over the broken branches (Israel) — God can prune you off as well"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Warning to Gentiles",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 20,
+    "content": "According to Romans 1:18-20, why does Paul affirm that humanity is 'without excuse' before God's wrath?",
+    "explanation": "Rom 1:19-20 — 'For what can be known about God is plain to them, because God has shown it to them. For his invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made. So they are without excuse'.",
+    "language": "en",
+    "options": [
+      "Because God's invisible attributes (eternal power and divine nature) HAVE BEEN CLEARLY SEEN through creation, perceivable by all",
+      "Because all have read the Law of Moses in the synagogues over many past centuries",
+      "Because Christ has come into the world, and everyone has had opportunity to meet him in person",
+      "Because God has sent prophets to every nation on earth to preach a full message"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "General Revelation",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 26,
+    "content": "In Romans 3:25-26, God 'put forward' Christ Jesus as a 'propitiation' (hilastērion). What is the dual purpose of this act?",
+    "explanation": "Rom 3:25-26 — '...whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness... so that he might be JUST and the JUSTIFIER of the one who has faith in Jesus'. Dual purpose: God's justice upheld + sinner justified.",
+    "language": "en",
+    "options": [
+      "So God might gain more glory in the eyes of angels and so men might admire him more",
+      "To DEMONSTRATE that God is JUST (rightly punishes sin) AND that he JUSTIFIES the one who has faith in Jesus",
+      "To end the Old Covenant era and begin a new temple worship system entirely",
+      "So Christ might experience death as a man and understand human existence better"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Propitiation",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 4,
+    "content": "Romans 8:1 — 'There is therefore now no condemnation for those who are in Christ Jesus'. According to 8:2-4, what is the BASIS for this freedom from condemnation?",
+    "explanation": "Rom 8:3-4 — 'For God has done what the law, weakened by the flesh, could not do. By sending his own Son in the likeness of sinful flesh and for sin, he CONDEMNED SIN in the flesh, in order that the righteous requirement of the law might be FULFILLED in us'.",
+    "language": "en",
+    "options": [
+      "Because the believer has personally kept the law fully to the end of life",
+      "Because the law has been entirely abolished by God and is no longer in force",
+      "Because God CONDEMNED SIN in the flesh of Christ — the law's righteous requirement is fulfilled IN him, given TO us",
+      "Because the angels protect the believer from any punishment that God might bring"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "No Condemnation",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 25,
+    "content": "In Romans 8:18-25, Paul writes that 'the whole creation has been groaning together in the pains of childbirth until now'. Specifically, what is creation's groaning anticipating?",
+    "explanation": "Rom 8:19-21 — 'For the creation waits with eager longing for the revealing of the sons of God... the creation itself will be set free from its bondage to corruption and obtain the freedom of the glory of the children of God'.",
+    "language": "en",
+    "options": [
+      "The final cosmic collapse into total fiery destruction with nothing left",
+      "The spread of the Gospel to all plants and animals on earth today",
+      "The return of Jewish believers to the promised land of Canaan as prophesied",
+      "The revealing of God's children (the resurrection in glory) — creation will be freed from corruption together with them"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Creation Groans",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 21,
+    "content": "In Romans 12:9-21, Paul lists marks of genuine love. Which marks ARE in his list? (select all correct)",
+    "explanation": "Rom 12:9-21 contains a long list of marks of genuine love: 12:9 abhor evil, 12:10 brotherly affection, 12:13 contribute to saints' needs, 12:15 weep/rejoice together, 12:17 do not repay evil, 12:20 feed the enemy... 'Only your own party' is NOT there and contradicts 12:13-14.",
+    "language": "en",
+    "options": [
+      "Abhor what is evil; hold fast to what is good (12:9)",
+      "Love one another with brotherly affection (12:10)",
+      "Rejoice with those who rejoice, weep with those who weep (12:15)",
+      "Only show hospitality to fellow members of your own party (not present)"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Marks of Love",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 5,
+    "content": "According to Romans 13:1-5, Paul teaches the believer must submit to governing authorities for what core theological reason?",
+    "explanation": "Rom 13:1-2 — 'Let every person be subject to the governing authorities. For there is no authority except from God, and those that exist have been instituted by God. Therefore whoever resists the authorities resists what God has appointed'.",
+    "language": "en",
+    "options": [
+      "Because 'there is no authority except from God' — governing authority is established by God",
+      "Because the Romans had the right to punish severely those who rebelled",
+      "Because the Roman officials were all believers who loved the church in Rome at that time",
+      "Because the Mosaic Law requires submission to every official on earth"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Governing Authorities",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 10,
+    "content": "According to Romans 13:8-10, Paul summarizes 'the law' (commandments about human relationships) by what core principle?",
+    "explanation": "Rom 13:8-10 — 'For the commandments, You shall not commit adultery, You shall not murder, You shall not steal, You shall not covet... are summed up in this word: You shall love your neighbor as yourself... Therefore love is the fulfilling of the law'.",
+    "language": "en",
+    "options": [
+      "The Ten Commandments of Moses must be kept word-for-word with no omission allowed",
+      "One must give a tithe to God and another tithe to the church to receive blessing",
+      "'Love your neighbor as yourself' — for love is the fulfillment of the law",
+      "One must fast at least three days every week to keep the body pure from sin"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Love Fulfills Law",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 17,
+    "content": "In Romans 1:16 (ESV), Paul declares: 'I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes'. What is the order-of-priority phrase that follows?",
+    "explanation": "Rom 1:16 — 'For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, TO THE JEW FIRST AND ALSO TO THE GREEK'. This reflects salvation history: the gospel came to Israel first, then opened to the Gentiles.",
+    "language": "en",
+    "options": [
+      "'To the Greek first and also to the Jew' (reversing the older order)",
+      "'To the Jew first and also to the Greek'",
+      "'To the free first, and then to the slave' in ancient society",
+      "'To the rich first, and then to the poor' in the Roman community"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Gospel Order",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 23,
+    "content": "According to Romans 3:23 (ESV), what is the precise wording?",
+    "explanation": "Rom 3:23 (ESV) — 'For all have sinned and fall short of the glory of God'. This (with 3:10 'None is righteous, no, not one') concludes the argument of 1:18-3:20.",
+    "language": "en",
+    "options": [
+      "'All Israelites have sinned and forfeited their place as the chosen people of God'",
+      "'All of us are utterly lost; none of us can ever be redeemed any longer'",
+      "'Everyone has sinned at least once at some point during their life on earth'",
+      "'For all have sinned and fall short of the glory of God'"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "All Have Sinned",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 23,
+    "content": "According to Romans 6:23 (ESV), what is the complete precise wording?",
+    "explanation": "Rom 6:23 (ESV) — 'For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord'. The contrast structure: 'wages' (deserved) vs. 'free gift' (grace).",
+    "language": "en",
+    "options": [
+      "'For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord'",
+      "'For the Law was given through Moses; grace and truth came through Jesus Christ'",
+      "'For everyone who calls on the name of the Lord will be saved from the wrath to come'",
+      "'For God so loved us that he sent his Son to die for us'"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Wages of Sin",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 32,
+    "content": "According to Romans 8:31-32 (ESV), what rhetorical question and a-fortiori argument does Paul make to assure believers?",
+    "explanation": "Rom 8:31-32 — 'What then shall we say to these things? If God is for us, who can be against us? He who did not spare his own Son but gave him up for us all, how will he not also with him graciously give us all things?' An a-fortiori argument (greater to lesser).",
+    "language": "en",
+    "options": [
+      "'If God stands on our side then the angels will protect us from every danger on earth'",
+      "'Since God already gave us the Law of Moses, why do we still fear anything at all?'",
+      "'If God is for us, who can be against us? He did not spare his own Son but gave him for us — will he not also graciously give us all things?'",
+      "'If God truly loves us, he will surely make us materially wealthy in this present life'"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "If God Is For Us",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 10,
+    "content": "According to Romans 10:9-10 (ESV), Paul gives a brief two-part formula for salvation. What are the two parts?",
+    "explanation": "Rom 10:9-10 — 'If you CONFESS with your MOUTH that Jesus is Lord and BELIEVE in your HEART that God raised him from the dead, you will be saved. For with the heart one believes and is justified, and with the mouth one confesses and is saved'.",
+    "language": "en",
+    "options": [
+      "Be baptized in water first, then offer money so that you may be saved forever",
+      "CONFESS with your MOUTH that Jesus is Lord, and BELIEVE in your HEART that God raised him from the dead",
+      "Memorize the Law of Moses and keep the Sabbath day all your life perfectly",
+      "Travel to the Jerusalem temple and offer a sacrifice at least once in your lifetime"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Mouth and Heart",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 2,
+    "content": "According to Romans 12:2 (ESV), Paul gives two paired commands (negative + positive) for the Christian life. What are they?",
+    "explanation": "Rom 12:2 — 'Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect'. Structure: negative (don't conform) + positive (be transformed) + purpose (test God's will).",
+    "language": "en",
+    "options": [
+      "Do not go to Israel's temple / Do go to the Roman temple of Caesar",
+      "Do not keep the Law of Moses / Do follow the local customs of the Gentiles",
+      "Do not befriend sinners / Do befriend only the priests of the temple",
+      "Do not be conformed to this world / Be transformed by the RENEWAL of your MIND"
+    ],
+    "tags": [
+      "New Testament",
+      "Romans",
+      "Epistle",
+      "Renewal of Mind",
+      "Advanced"
+    ]
   }
 ]

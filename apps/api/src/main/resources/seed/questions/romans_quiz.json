@@ -1621,5 +1621,688 @@
       "Thư tín",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 22,
+    "content": "Trong Rô-ma 1:17 Phao-lô viết 'sự công bình của Đức Chúa Trời được tỏ ra' trong Tin Lành. Cụm từ tương ứng nào lặp lại ý này tại 3:21 sau khi ông đã chứng minh tất cả đều là tội nhân?",
+    "explanation": "Rô-ma 1:17 và 3:21-22 đều dùng cụm 'sự công bình của Đức Chúa Trời được tỏ ra/bày tỏ ra'. Đây là khung lý luận chính của Rô-ma 1-3: luận tội (1:18-3:20) → công bố giải pháp (3:21 'Hiện bây giờ').",
+    "language": "vi",
+    "options": [
+      "'Hiện bây giờ, sự công bình của Đức Chúa Trời, mà luật pháp và các lời tiên tri đều làm chứng cho, đã bày tỏ ra ngoài luật pháp'",
+      "'Vậy ai khoe mình thì hãy khoe mình trong Đấng Christ Jêsus, Chúa chúng ta'",
+      "'Tôi không hổ thẹn về Tin Lành đâu, vì là quyền phép của Đức Chúa Trời'",
+      "'Hết thảy đều phạm tội, thiếu mất sự vinh hiển của Đức Chúa Trời'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Sự công bình của Đức Chúa Trời",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 19,
+    "content": "Theo Rô-ma 5:18-19, Phao-lô đặt Adam đối ứng với Đấng Christ trong cấu trúc 'một người... nhiều người' (one man... many). Đối ứng cốt lõi là gì?",
+    "explanation": "Rô-ma 5:18-19 — 'như bởi chỉ MỘT tội mà sự đoán phạt rải khắp hết thảy mọi người thế nào, thì cũng MỘT việc công bình mà sự xưng công bình, là sự ban sự sống, cũng rải khắp cho mọi người thế ấy'. Cấu trúc song song một-nhiều khẳng định đại diện liên đới.",
+    "language": "vi",
+    "options": [
+      "Adam mang lại đau khổ vật chất; Đấng Christ mang lại sức khỏe và giàu có cho dân Ngài",
+      "Một việc làm của Adam khiến mọi người bị định tội; một việc làm của Đấng Christ đem lại sự xưng công bình",
+      "Adam là tổ tiên của dân Y-sơ-ra-ên; Đấng Christ là tổ tiên của dân ngoại bang",
+      "Adam dạy luật pháp; Đấng Christ dạy phúc âm và bãi bỏ luật pháp hoàn toàn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Adam và Christ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 23,
+    "content": "Hai câu nổi tiếng của Rô-ma — 3:23 và 6:23 — tạo cặp lập luận trong 'cầu cứu' Tin Lành. Cặp đó kết nối hai chân lý nào theo thứ tự?",
+    "explanation": "Rô-ma 3:23 — 'Hết thảy đều phạm tội, thiếu mất sự vinh hiển của Đức Chúa Trời' (chẩn đoán). Rô-ma 6:23 — 'tiền công của tội lỗi là sự chết; nhưng sự ban cho của Đức Chúa Trời là sự sống đời đời trong Đức Chúa Jêsus Christ' (giải pháp). Hai câu kết nối tội-án và Tin Lành-cứu rỗi.",
+    "language": "vi",
+    "options": [
+      "Ai cũng có thể tin Đức Chúa Trời / Người tin sẽ tự nhiên được sự sống đời đời",
+      "Người Do-thái có lợi thế tôn giáo lớn / Người ngoại có lợi thế đạo đức tự nhiên",
+      "Hết thảy phạm tội thiếu vinh hiển Chúa / Tiền công tội là chết, ban cho là sự sống đời đời",
+      "Luật pháp Môi-se đã hết hiệu lực / Tin Lành đã thay thế nó cho mọi người"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Hai câu chìa khóa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 12,
+    "content": "Trong Rô-ma 4:9-12, Phao-lô lập luận thời điểm Áp-ra-ham được kể là công bình (Sáng 15:6) đối với phép cắt bì (Sáng 17). Kết luận của Phao-lô là gì?",
+    "explanation": "Rô-ma 4:10-11 — 'Bởi cách nào mà người được kể là công bình? Lúc đã chịu cắt bì, hay là lúc chưa chịu cắt bì? Chẳng phải khi đã chịu cắt bì, mà là lúc chưa chịu cắt bì đâu... ấy vậy, đặng cho người làm cha hết thảy những kẻ tin'. Kết luận: tín hữu dân ngoại không cần cắt bì.",
+    "language": "vi",
+    "options": [
+      "Áp-ra-ham được xưng công bình ngay khi chịu cắt bì, vì cắt bì là dấu giao ước",
+      "Áp-ra-ham được xưng công bình vài năm sau khi cắt bì khi đã trưởng thành đức tin",
+      "Sự xưng công bình và phép cắt bì xảy ra cùng một lúc, không có thời điểm nào trước",
+      "Áp-ra-ham được xưng công bình KHI CHƯA cắt bì, nên ông là cha của cả tín hữu chưa cắt bì"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Áp-ra-ham xưng công bình",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 1,
+    "content": "Phao-lô dùng từ 'Hiện bây giờ' / 'Vậy bây giờ' (now) ở các chỗ chuyển ý quan trọng trong Rô-ma 1-8. Chỗ nào CÓ chuyển ý lớn này? (chọn tất cả đúng)",
+    "explanation": "Rô-ma 3:21, 5:11, 8:1 đánh dấu ba bước chuyển trong lập luận: từ tội ra giải pháp, từ xưng công bình ra hòa thuận, từ ban xưng công bình ra bảo đảm cứu rỗi. 16:25 là doxology kết thư, không phải chuyển ý lập luận.",
+    "language": "vi",
+    "options": [
+      "3:21 — 'Hiện bây giờ, sự công bình của Đức Chúa Trời đã bày tỏ ra' (sau khi luận tội)",
+      "5:11 — 'Bây giờ chúng ta lại bởi Ngài mà được sự hòa thuận' (sau khi nói về sự xưng công bình)",
+      "8:1 — 'Cho nên hiện nay chẳng còn có sự đoán phạt nào cho những kẻ ở trong Đấng Christ Jêsus'",
+      "16:25 — 'Ngợi khen Đấng có quyền làm vững các ngươi' (lời chúc tụng cuối thư)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Bước chuyển",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 2,
+    "content": "Rô-ma 12:1 mở phần ứng dụng (12-15) với hình ảnh 'dâng thân thể mình làm của lễ sống và thánh'. Phao-lô lặp lại hình ảnh 'của lễ' tại 15:16 với ý gì?",
+    "explanation": "Rô-ma 15:16 — 'Nhờ ơn Đức Chúa Trời ban cho tôi, được làm chức việc của Đức Chúa Jêsus Christ giữa dân ngoại; tôi làm chức tế lễ của Tin Lành Đức Chúa Trời, hầu cho dân ngoại được làm của lễ vừa ý Chúa'. Hình ảnh thờ phượng-tế lễ kéo dài từ 12:1 đến 15:16 thành khung của phần ứng dụng.",
+    "language": "vi",
+    "options": [
+      "Phao-lô tự nhận mình là tế lễ thượng phẩm cao trọng nhất của giao ước mới",
+      "Chức vụ của Phao-lô là 'thầy tế lễ Tin Lành' để dân ngoại trở thành 'của lễ' đẹp lòng Đức Chúa Trời",
+      "Hội thánh phải dâng các con thú trên bàn thờ vật chất tại đền thờ Giê-ru-sa-lem",
+      "Mọi tín hữu phải dâng tiền bạc làm 'của lễ' cho hội thánh tại La-mã trước hết"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Của lễ và thờ phượng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 5,
+    "content": "Theo Rô-ma 5:1-5, ngay khi được xưng công bình bởi đức tin, tín hữu nhận BA điều ích lợi cụ thể. Ba điều đó là gì?",
+    "explanation": "Rô-ma 5:1-2 — 'được xưng công bình bởi đức tin, thì được hòa thuận với Đức Chúa Trời, bởi Đức Chúa Jêsus Christ chúng ta, là Đấng đã làm cho chúng ta cậy đức tin vào trong ơn này là ơn chúng ta hiện đang đứng vững; và chúng ta khoe mình trong sự trông cậy về vinh hiển Đức Chúa Trời'.",
+    "language": "vi",
+    "options": [
+      "Của cải vật chất / sức khỏe thân thể / địa vị xã hội cao trọng",
+      "Bãi bỏ luật pháp Môi-se / chuyển sang dân ngoại / nhận đền thờ mới",
+      "Hòa thuận với Đức Chúa Trời / được vào ơn này / khoe trong sự trông cậy",
+      "Tránh được sự chết thân xác / không bị bệnh tật / không bao giờ thử thách"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Ích lợi xưng công bình",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 9,
+    "content": "Trong Rô-ma 8:5-9, Phao-lô phân biệt 'kẻ sống theo xác thịt' và 'kẻ sống theo Thánh Linh'. Theo chính lời text, dấu hiệu nào phân biệt hai loại người này về mặt thực tiễn?",
+    "explanation": "Rô-ma 8:5-6 — 'Thật thế, kẻ sống theo xác thịt thì chăm những sự thuộc về xác thịt; còn kẻ sống theo Thánh Linh thì chăm những sự thuộc về Thánh Linh'. Định hướng của tâm trí (mindset) là dấu hiệu phân biệt thực tiễn.",
+    "language": "vi",
+    "options": [
+      "Người theo xác thịt CHĂM về xác thịt; người theo Thánh Linh CHĂM về Thánh Linh — định hướng tâm trí khác nhau",
+      "Người theo xác thịt mặc áo trắng; người theo Thánh Linh mặc áo đỏ trong hội thánh",
+      "Người theo xác thịt là Pha-ri-si; người theo Thánh Linh là Sa-đu-sê trong xã hội cũ",
+      "Người theo xác thịt nói tiếng Hê-bơ-rơ; người theo Thánh Linh nói tiếng Hy-lạp"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Xác thịt vs Thánh Linh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 29,
+    "content": "Trong Rô-ma 15:23-29, Phao-lô nêu kế hoạch hành trình truyền giáo. Điểm nào CÓ trong kế hoạch ấy? (chọn tất cả đúng)",
+    "explanation": "Rô-ma 15:23-29 — Phao-lô có kế hoạch: (1) Đi Giê-ru-sa-lem trước với quyên góp từ Ma-xê-đoan và A-chai (15:25-27), (2) sau đó đến La-mã (15:28-29), (3) rồi tiếp tục đến Tây Ban Nha (15:24,28). Phao-lô không có vợ con (1 Cô 7:7-8).",
+    "language": "vi",
+    "options": [
+      "Đi đến Tây Ban Nha (Spain) sau khi ghé La-mã trên đường",
+      "Đi Giê-ru-sa-lem trước để giao quyên góp cho thánh đồ nghèo",
+      "Ghé thăm hội thánh La-mã trên đường đi Tây Ban Nha",
+      "Đi đến Y-sơ-ra-ên thăm vợ con mình trước khi đi Tây Ban Nha"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Kế hoạch truyền giáo",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 4,
+    "content": "Phao-lô dùng từ 'luật' (law) trong Rô-ma theo nhiều nghĩa khác nhau. Nghĩa nào CÓ xuất hiện rõ trong sách? (chọn tất cả đúng)",
+    "explanation": "Phao-lô dùng nomos đa nghĩa: (1) luật Môi-se 7:7-12, (2) 'luật của tội và sự chết' 7:23-25, 8:2b, (3) 'luật của Thánh Linh sự sống' 8:2a, đôi khi 'luật' = nguyên tắc vận hành. 'Luật của Ba-by-lôn' không có trong Rô-ma.",
+    "language": "vi",
+    "options": [
+      "Luật Môi-se / luật pháp ban tại Si-na-i (Rô-ma 7:7,12)",
+      "Luật của tội và sự chết (Rô-ma 7:23, 8:2)",
+      "Luật của Thánh Linh sự sống trong Đấng Christ (Rô-ma 8:2)",
+      "Luật của vương quốc Ba-by-lôn (không có trong sách Rô-ma)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Đa nghĩa của 'luật'",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 8,
+    "content": "Theo Rô-ma 9:6-8, Phao-lô phân biệt hai nghĩa 'Y-sơ-ra-ên'. Phân biệt đó là gì?",
+    "explanation": "Rô-ma 9:6-8 — 'vì những kẻ bởi Y-sơ-ra-ên sanh hạ, chẳng phải vì đó mà hết thảy đều là người Y-sơ-ra-ên... những con cái thuộc về xác thịt, chẳng phải là con cái Đức Chúa Trời, nhưng con cái thuộc về lời hứa thì được kể là dòng dõi Áp-ra-ham vậy'.",
+    "language": "vi",
+    "options": [
+      "Y-sơ-ra-ên cổ và Y-sơ-ra-ên hiện đại sau khi quốc gia tái lập sau lưu đày",
+      "'Y-sơ-ra-ên thuộc xác thịt' (con cháu Áp-ra-ham theo huyết thống) ≠ 'Y-sơ-ra-ên thuộc lời hứa' (con cái lời hứa, kế tự đức tin)",
+      "Y-sơ-ra-ên mười chi phía bắc và Giu-đa hai chi phía nam vào thời các vua",
+      "Y-sơ-ra-ên trong Cựu Ước và Hội Thánh Tân Ước là hai khái niệm hoàn toàn không liên quan"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Y-sơ-ra-ên thật",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 24,
+    "content": "Trong Rô-ma 11:17-24, Phao-lô dùng ẩn dụ 'cây ô-liu' để cảnh báo dân ngoại. Cảnh báo cụ thể gì?",
+    "explanation": "Rô-ma 11:18-21 — 'Chớ khoe mình hơn các nhánh đó. Nhưng nếu ngươi khoe mình, thì hãy biết rằng ấy chẳng phải là ngươi chịu đựng cái rễ, bèn là cái rễ chịu đựng ngươi... Vậy ngươi sẽ nói rằng: Các nhánh đã bị cắt đi, để ta được tháp vào... Vì Đức Chúa Trời đã chẳng tiếc các nhánh nguyên, thì Ngài cũng chẳng tiếc ngươi nữa'.",
+    "language": "vi",
+    "options": [
+      "Hãy ăn nhiều trái ô-liu để đức tin được mạnh mẽ và sinh hoa kết trái nhiều",
+      "Hãy chỉ kết hôn trong dân Do-thái để giữ dòng dõi của Áp-ra-ham được tinh khiết",
+      "Hãy bắt đầu giữ lễ Vượt Qua như người Do-thái dù không bắt buộc phải làm",
+      "Đừng tự cao đối với các nhánh bị bẻ đi (Y-sơ-ra-ên) vì Đức Chúa Trời cũng có thể bẻ ngươi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Cảnh báo dân ngoại",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 20,
+    "content": "Theo Rô-ma 1:18-20, vì sao Phao-lô khẳng định nhân loại 'không thể chữa mình được' (không có lý do bào chữa) trước cơn thạnh nộ của Đức Chúa Trời?",
+    "explanation": "Rô-ma 1:19-20 — 'sự gì có thể biết được về Đức Chúa Trời thì đã trình bày ra cho họ rồi: Đức Chúa Trời đã tỏ điều đó cho họ. Bởi những sự trọn lành của Ngài mắt không thấy được, tức là quyền phép đời đời và bổn tánh Ngài, thì từ buổi sáng thế vẫn sờ sờ như mắt xem thấy, khi người ta xem xét công việc của Ngài. Cho nên họ không thể chữa mình được'.",
+    "language": "vi",
+    "options": [
+      "Vì các thuộc tính của Đức Chúa Trời (quyền phép đời đời và bản tính thần) ĐÃ TỎ TƯỜNG qua công trình tạo dựng, ai cũng có thể nhận biết",
+      "Vì hết thảy đều đã đọc luật pháp Môi-se trong các hội đường suốt nhiều thế kỷ qua",
+      "Vì Đấng Christ đã đến thế gian và mọi người đều đã có cơ hội gặp Ngài trực tiếp",
+      "Vì Đức Chúa Trời đã sai các tiên tri đến mỗi quốc gia trên đất để rao giảng đầy đủ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Mặc khải tổng quát",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 26,
+    "content": "Trong Rô-ma 3:25-26, Đức Chúa Trời 'đã lập' Đức Chúa Jêsus Christ là 'của lễ chuộc tội' (hilastērion / propitiation). Mục đích kép của hành động này là gì?",
+    "explanation": "Rô-ma 3:25-26 — '...Đức Chúa Trời đã lập làm của lễ chuộc tội bởi đức tin trong huyết Đấng ấy, để TỎ ra sự công bình mình... hầu cho TỎ sự công bình mình trong buổi nay, để cho thấy chính mình Ngài là CÔNG BÌNH và XƯNG CÔNG BÌNH cho kẻ nào tin đến Đức Chúa Jêsus'. Mục đích kép: Chúa giữ công bình + xưng công bình tội nhân.",
+    "language": "vi",
+    "options": [
+      "Để Đức Chúa Trời có thêm vinh quang trong mắt thiên sứ và để con người ngưỡng mộ Ngài",
+      "Để TỎ RA Đức Chúa Trời CÔNG BÌNH (xử tội đúng đắn) VÀ XƯNG CÔNG BÌNH cho người tin Đức Chúa Jêsus",
+      "Để chấm dứt thời đại Cựu Ước và bắt đầu hệ thống thờ phượng đền thờ mới hoàn toàn",
+      "Để Đấng Christ trải qua kinh nghiệm chết như con người và hiểu rõ phận làm người hơn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Của lễ chuộc tội",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 4,
+    "content": "Rô-ma 8:1 — 'Cho nên hiện nay chẳng còn có sự đoán phạt nào cho những kẻ ở trong Đức Chúa Jêsus Christ'. Theo bối cảnh 8:2-4, CƠ SỞ của sự không bị đoán phạt là gì?",
+    "explanation": "Rô-ma 8:3-4 — 'Vì điều chi luật pháp không làm nổi, tại xác thịt làm cho luật pháp ra yếu đuối, thì Đức Chúa Trời đã làm rồi: Ngài đã vì cớ tội lỗi sai chính Con mình lấy xác thịt giống như xác thịt tội lỗi chúng ta, và đã ĐOÁN PHẠT TỘI trong xác thịt, hầu cho sự công bình mà luật pháp buộc phải làm được TRỌN trong chúng ta'.",
+    "language": "vi",
+    "options": [
+      "Vì tín hữu đã tự cố gắng giữ luật pháp đầy đủ cho đến cuối đời mình",
+      "Vì luật pháp đã bị Đức Chúa Trời bãi bỏ hoàn toàn không còn hiệu lực nữa",
+      "Vì Đức Chúa Trời ĐÃ ĐOÁN PHẠT TỘI ngay trên xác thịt của Đấng Christ — luật được làm trọn TRONG Ngài, ban CHO ta",
+      "Vì các thiên sứ bảo vệ tín hữu khỏi mọi hình phạt mà Đức Chúa Trời có thể giáng xuống"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Không đoán phạt",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 25,
+    "content": "Trong Rô-ma 8:18-25, Phao-lô viết về 'cả thiên nhiên đều than thở và chịu đau đớn cho đến ngày nay'. Cụ thể, sự than thở của thiên nhiên hướng đến điều gì?",
+    "explanation": "Rô-ma 8:19-21 — 'Thật thế, muôn vật ước ao nóng nảy mà trông đợi con cái Đức Chúa Trời được tỏ ra... muôn vật mong rằng mình cũng sẽ được giải cứu khỏi làm tôi sự hư nát, đặng dự phần trong sự tự do vinh hiển của con cái Đức Chúa Trời'.",
+    "language": "vi",
+    "options": [
+      "Sự sụp đổ chung cuộc của vũ trụ vào lửa thiêu hủy hoàn toàn không còn lại gì",
+      "Sự lan truyền của Tin Lành đến mọi loài cây cỏ và muông thú trên đất hôm nay",
+      "Sự trở về của các tín hữu Do-thái đến vùng đất hứa Ca-na-an theo lời tiên tri",
+      "Sự mặc khải các con cái Đức Chúa Trời (sự sống lại trong vinh hiển) — thiên nhiên cũng được giải thoát khỏi hư nát cùng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Thiên nhiên than thở",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 21,
+    "content": "Trong Rô-ma 12:9-21, Phao-lô liệt kê các dấu hiệu của tình yêu chân thật. Dấu hiệu nào CÓ trong danh sách của ông? (chọn tất cả đúng)",
+    "explanation": "Rô-ma 12:9-21 chứa danh sách dài các đặc điểm của tình yêu chân thật: 12:9 ghét điều dữ, 12:10 yêu mềm mại, 12:13 cung cấp cho thánh đồ, 12:15 khóc/vui chung, 12:17 không lấy ác trả ác, 12:20 cho kẻ thù ăn... 'Chỉ tiếp đãi đồng giáo phái' KHÔNG có và mâu thuẫn với 12:13-14.",
+    "language": "vi",
+    "options": [
+      "Ghê tởm điều dữ và mến giữ điều thiện (12:9)",
+      "Lấy lòng yêu thương mềm mại mà yêu nhau như anh em (12:10)",
+      "Khóc với kẻ khóc, vui với kẻ vui (12:15)",
+      "Chỉ tiếp đãi anh em đồng giáo phái với mình mà thôi (không có)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Dấu của tình yêu",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 5,
+    "content": "Theo Rô-ma 13:1-5, Phao-lô dạy tín hữu phải vâng phục bậc cầm quyền vì lý do thần học cốt yếu nào?",
+    "explanation": "Rô-ma 13:1-2 — 'Mọi người phải vâng phục các đấng cầm quyền trên mình; vì chẳng có quyền nào mà không đến bởi Đức Chúa Trời, các quyền đều bởi Đức Chúa Trời chỉ định. Cho nên ai chống cự quyền phép, tức là đối địch với mạng lệnh Đức Chúa Trời đã lập'.",
+    "language": "vi",
+    "options": [
+      "Vì 'chẳng có quyền nào mà không đến bởi Đức Chúa Trời' — quyền cầm quyền do Đức Chúa Trời lập",
+      "Vì người La-mã có quyền trừng phạt nặng nề đối với những ai phản loạn",
+      "Vì các quan La-mã đều là tín hữu yêu mến Hội thánh tại La-mã thời đó",
+      "Vì luật pháp Môi-se đòi hỏi phải vâng phục mọi quan chức trên đất"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Bậc cầm quyền",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 10,
+    "content": "Theo Rô-ma 13:8-10, Phao-lô tóm tắt 'luật pháp' (các điều răn về quan hệ con người) bằng nguyên tắc cốt lõi nào?",
+    "explanation": "Rô-ma 13:8-10 — 'Vì những điều răn nầy: Ngươi chớ phạm tội tà dâm, chớ giết người, chớ trộm cắp, chớ tham lam... đều tóm lại trong một lời nầy: Ngươi phải yêu kẻ lân cận mình như mình... vậy yêu thương là sự làm trọn luật pháp'.",
+    "language": "vi",
+    "options": [
+      "Mười điều răn của Môi-se phải được giữ trọn từng chữ một, không được thiếu sót gì cả",
+      "Phải dâng phần mười cho Đức Chúa Trời và phần mười cho hội thánh để được phước",
+      "'Yêu kẻ lân cận như mình' — vì sự yêu thương là làm trọn luật pháp",
+      "Phải kiêng ăn ít nhất ba ngày mỗi tuần để giữ thân thể trong sạch khỏi tội lỗi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Yêu thương làm trọn luật",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 17,
+    "content": "Trong Rô-ma 1:16 (RVV11), Phao-lô tuyên bố: 'Tôi không hổ thẹn về Tin Lành đâu, vì là quyền phép của Đức Chúa Trời để cứu mọi kẻ tin'. Câu nói tiếp theo về thứ tự ưu tiên là gì?",
+    "explanation": "Rô-ma 1:16 — 'Thật vậy, tôi không hổ thẹn về Tin Lành đâu, vì là quyền phép của Đức Chúa Trời để cứu mọi kẻ tin, TRƯỚC LÀ NGƯỜI GIU-ĐA, LẠI NGƯỜI HI-LẠP'. Trật tự này phản ánh lịch sử cứu rỗi: Tin Lành đến Y-sơ-ra-ên trước, rồi mở ra cho dân ngoại.",
+    "language": "vi",
+    "options": [
+      "'Trước cho người Hi-lạp, sau cho người Giu-đa' (đảo thứ tự cũ)",
+      "'Trước là cho người Giu-đa, lại cho người Hi-lạp'",
+      "'Trước cho người tự do, sau cho người nô lệ trong xã hội cổ'",
+      "'Trước cho người giàu, sau cho người nghèo trong cộng đồng La-mã'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Trật tự Tin Lành",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 23,
+    "content": "Theo Rô-ma 3:23 (RVV11), câu chính xác là gì?",
+    "explanation": "Rô-ma 3:23 (RVV11) — 'vì mọi người đều đã phạm tội, thiếu mất sự vinh hiển của Đức Chúa Trời'. Câu này (cùng 3:10 'chẳng có một người công bình nào hết, dẫu một người cũng không') là kết luận của lập luận 1:18-3:20.",
+    "language": "vi",
+    "options": [
+      "'Mọi người Y-sơ-ra-ên đều phạm tội và mất quyền làm tuyển dân của Chúa'",
+      "'Hết thảy chúng ta đều bị hư mất, không ai có thể được cứu chuộc nữa'",
+      "'Mọi người đã từng phạm tội ít nhất một lần trong đời mình rồi'",
+      "'Vì mọi người đều đã phạm tội, thiếu mất sự vinh hiển của Đức Chúa Trời'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Mọi người phạm tội",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 23,
+    "content": "Theo Rô-ma 6:23 (RVV11), câu chính xác đầy đủ là gì?",
+    "explanation": "Rô-ma 6:23 (RVV11) — 'Vì tiền công của tội lỗi là sự chết; nhưng sự ban cho của Đức Chúa Trời là sự sống đời đời trong Đức Chúa Jêsus Christ, Chúa chúng ta'. Cấu trúc đối: 'tiền công' (xứng đáng) vs 'sự ban cho' (ơn).",
+    "language": "vi",
+    "options": [
+      "'Vì tiền công của tội lỗi là sự chết; nhưng sự ban cho của Đức Chúa Trời là sự sống đời đời trong Đức Chúa Jêsus Christ, Chúa chúng ta'",
+      "'Vì luật pháp ra bởi Môi-se, sự ban cho và sự thật ra bởi Đức Chúa Jêsus Christ'",
+      "'Vì kẻ nào kêu cầu danh Chúa thì sẽ được cứu khỏi cơn thạnh nộ ngày sau'",
+      "'Vì cớ Đức Chúa Trời thương xót chúng ta, Ngài đã sai Con mình đến chết vì chúng ta'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Tiền công của tội",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 32,
+    "content": "Theo Rô-ma 8:31-32 (RVV11), Phao-lô đặt ra câu hỏi tu từ và lập luận lớn nhỏ nào để trấn an tín hữu?",
+    "explanation": "Rô-ma 8:31-32 — 'Đã vậy thì chúng ta sẽ nói làm sao? Nếu Đức Chúa Trời vùa giúp chúng ta, thì còn ai nghịch với chúng ta? Ngài đã không tiếc chính Con mình, nhưng vì chúng ta hết thảy mà phó Con ấy cho, thì Ngài há chẳng cũng sẽ ban mọi sự luôn với Con ấy cho chúng ta sao?' Lập luận từ lớn xuống nhỏ (a fortiori).",
+    "language": "vi",
+    "options": [
+      "'Nếu Đức Chúa Trời ở phía chúng ta thì các thiên sứ sẽ bảo vệ khỏi mọi nguy hiểm trên đất'",
+      "'Vì Đức Chúa Trời đã cho chúng ta luật pháp Môi-se rồi thì cớ sao vẫn còn lo sợ điều gì?'",
+      "'Nếu Đức Chúa Trời vùa giúp ta thì còn ai nghịch với ta? Ngài không tiếc chính Con mình, há chẳng cũng ban mọi sự cho ta?'",
+      "'Nếu Đức Chúa Trời thương yêu ta thì Ngài chắc chắn sẽ làm ta giàu có vật chất nhanh chóng'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Lập luận lớn-nhỏ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 10,
+    "content": "Theo Rô-ma 10:9-10 (RVV11), Phao-lô đưa ra một công thức ngắn gọn cho sự cứu rỗi gồm hai phần. Hai phần đó là gì?",
+    "explanation": "Rô-ma 10:9-10 — 'Vậy nếu MIỆNG ngươi xưng Đức Chúa Jêsus là Chúa và LÒNG ngươi tin rằng Đức Chúa Trời đã khiến Ngài từ kẻ chết sống lại, thì ngươi sẽ được cứu; vì tin bởi trong lòng mà được sự công bình, còn bởi miệng làm chứng mà được sự cứu rỗi'.",
+    "language": "vi",
+    "options": [
+      "Chịu phép báp-têm bằng nước trước rồi sau đó dâng tiền để được cứu rỗi mãi",
+      "Lấy MIỆNG thừa nhận Đức Chúa Jêsus là Chúa, và lấy LÒNG tin Đức Chúa Trời đã khiến Ngài từ kẻ chết sống lại",
+      "Học thuộc luật pháp Môi-se và giữ ngày Sa-bát suốt cả đời mình thật trọn vẹn",
+      "Đến đền thờ Giê-ru-sa-lem dâng của lễ ít nhất một lần trong đời mình"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Miệng và lòng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 2,
+    "content": "Theo Rô-ma 12:2 (RVV11), Phao-lô đặt ra hai mệnh lệnh đối ứng (tiêu cực + tích cực) cho đời sống Cơ-đốc. Hai mệnh lệnh đó là gì?",
+    "explanation": "Rô-ma 12:2 — 'Đừng làm theo đời nầy, nhưng hãy biến hóa bởi sự đổi mới của tâm thần mình, để thử cho biết ý muốn tốt lành, đẹp lòng và trọn vẹn của Đức Chúa Trời là thể nào'. Cấu trúc: tiêu cực (đừng làm theo) + tích cực (hãy biến hóa) + mục đích (thử biết ý Chúa).",
+    "language": "vi",
+    "options": [
+      "Đừng đi đến đền thờ Y-sơ-ra-ên / Hãy đi đến đền thờ La-mã của Sê-sa",
+      "Đừng giữ luật pháp Môi-se / Hãy đi theo phong tục địa phương của dân ngoại",
+      "Đừng kết bạn với người tội lỗi / Hãy chỉ kết bạn với những thầy tế lễ trong đền",
+      "Đừng làm theo đời nầy / Hãy biến hóa bởi sự ĐỔI MỚI của TÂM TRÍ mình"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Rô-ma",
+      "Thư tín",
+      "Đổi mới tâm trí",
+      "Nâng cao"
+    ]
   }
 ]
