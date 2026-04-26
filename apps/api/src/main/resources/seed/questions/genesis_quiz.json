@@ -3195,5 +3195,820 @@
       "Kiêu ngạo",
       "Nâng cao"
     ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 14,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 16,
+    "content": "Theo Sáng 14, sự kiện gì xảy ra khiến Áp-ram phải dẫn 318 người nhà tinh nhuệ ra trận?",
+    "explanation": "Sáng 14:11-14 — bốn vua phương Đông (do Kết-rô-Lao-me dẫn đầu) bắt Lót và lấy hết của cải. Áp-ram dẫn 318 người nhà tinh nhuệ rượt theo đến tận Đan và giải cứu.",
+    "language": "vi",
+    "options": [
+      "Pha-ra-ôn Ai-cập tấn công vùng đất Áp-ram đang sống cùng vợ con",
+      "A-bi-mê-léc vua Ghê-ra cướp bò chiên của Áp-ram tại Bê-e-Sê-ba",
+      "Bốn vua Ê-lam liên minh bắt Lót và tài sản đem đi khỏi Sô-đôm",
+      "Người Hê-tít tấn công đoàn của Sa-rai khi bà đi lấy nước"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Áp-ram giải cứu Lót",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 15,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 5,
+    "content": "Đức Chúa Trời lặp lại lời hứa về dòng dõi Áp-ra-ham 'đông như ___' trong Sáng 15:5 và sau này thêm 'như cát bờ biển' trong Sáng 22:17. Hình ảnh đầu tiên là gì?",
+    "explanation": "Sáng 15:5 — 'Hãy ngó lên trời, và nếu ngươi đếm được các ngôi sao thì hãy đếm đi... Dòng dõi ngươi cũng sẽ như vậy'. Sáng 22:17 thêm 'như cát bờ biển' sau khi Áp-ra-ham vâng phục dâng Y-sác.",
+    "language": "vi",
+    "options": [
+      "Như cây cối trong rừng",
+      "Như sao trên trời",
+      "Như muối của biển",
+      "Như châu chấu trên cánh đồng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Lời hứa dòng dõi",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 21,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 7,
+    "content": "Theo Sáng 21:5, Áp-ra-ham bao nhiêu tuổi khi Y-sác con trai lời hứa được sinh ra?",
+    "explanation": "Sáng 21:5 — 'Vả, khi Y-sác sanh ra thì Áp-ra-ham đã được một trăm tuổi'. Sa-ra 90 tuổi (17:17). Áp-ra-ham đã chờ 25 năm kể từ khi rời Ha-ran (12:4 — 75 tuổi).",
+    "language": "vi",
+    "options": [
+      "100 tuổi",
+      "75 tuổi",
+      "86 tuổi",
+      "120 tuổi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Y-sác sinh ra",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 24,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 27,
+    "content": "Trong Sáng 24, Áp-ra-ham sai đầy tớ đi tìm vợ cho Y-sác. Đầy tớ đặt dấu hiệu nào để Đức Chúa Trời chỉ ra đúng cô gái?",
+    "explanation": "Sáng 24:14 — 'Tôi sẽ nói cùng người gái trẻ rằng: Xin nàng hãy nghiêng bình, đặng cho tôi uống. Nếu nàng đáp: Hãy uống đi, tôi cũng sẽ cho các lạc đà ngươi uống nữa, thì ấy là người mà Chúa đã định cho Y-sác'. Rê-bê-ca thực hiện đúng (24:18-20).",
+    "language": "vi",
+    "options": [
+      "Cô gái nào dâng nước trước cho đầy tớ trước khi cho lạc đà",
+      "Cô gái nào tự giới thiệu là họ hàng của Áp-ra-ham trước",
+      "Cô gái nào cho đầy tớ uống nước VÀ tự nguyện múc nước cho lạc đà uống",
+      "Cô gái nào hát một bài tôn vinh Đức Chúa Trời tại bờ giếng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Tìm vợ Y-sác",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 19,
+    "content": "Khi Gia-cốp chạy trốn Ê-sau và ngủ trên đường (Sáng 28:10-22), ông thấy giấc mộng nào tại Lu-xơ?",
+    "explanation": "Sáng 28:12-13 — 'người chiêm bao thấy một cái thang bắc từ dưới đất, đầu đến tận trời, các thiên sứ của Đức Chúa Trời đi lên xuống trên thang đó. Nầy, Đức Giê-hô-va ngự trên đầu thang'. Gia-cốp đặt tên nơi ấy là Bê-tên (Nhà Đức Chúa Trời).",
+    "language": "vi",
+    "options": [
+      "Một thiên sứ với gươm lửa cản đường ông trên núi",
+      "Một con chim ưng lớn bay xuống tha bánh cho ông ăn",
+      "Một con đường vàng dẫn thẳng đến đền thờ Si-ôn tương lai",
+      "Một cái thang dựng lên trời, với các thiên sứ Đức Chúa Trời lên xuống"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Mộng cây thang",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 49,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 28,
+    "content": "Trong Sáng 49, Gia-cốp chúc phước cho 12 con trước khi qua đời. Lời chúc nào CÓ thật trong text? (chọn tất cả đúng)",
+    "explanation": "Sáng 49:3-4 (Ru-bên 'sôi nổi như nước'), 49:9-10 (Giu-đa 'sư tử tơ' và 'phủ việt'), 49:22 (Giô-sép 'cây sai trái'). Bên-gia-min trong 49:27 được mô tả là 'chó sói hay cấu xé', KHÔNG phải bồ câu.",
+    "language": "vi",
+    "options": [
+      "Ru-bên — sôi nổi như nước, mất đặc quyền trưởng nam",
+      "Giu-đa — sư tử tơ, cây phủ việt sẽ chẳng rời khỏi",
+      "Giô-sép — như cây sai trái gần suối nước, nhánh vượt trên tường",
+      "Bên-gia-min — như con bồ câu hiền hòa giữa các chim trên đồng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Lời chúc 12 con",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 26,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 25,
+    "content": "Theo Sáng 26:18, Y-sác làm gì với các giếng nước mà cha ông Áp-ra-ham đã đào trước đó?",
+    "explanation": "Sáng 26:18 — 'Y-sác bèn đào lại các giếng người ta đã đào trong đời Áp-ra-ham, cha mình, mà bị dân Phi-li-tin lấp đất lại khi Áp-ra-ham qua đời, và đặt tên các giếng y theo tên cha mình đã đặt'.",
+    "language": "vi",
+    "options": [
+      "Ông phá hủy chúng và đào giếng mới ở vị trí khác hoàn toàn",
+      "Ông ĐÀO LẠI những giếng mà người Phi-li-tin đã lấp lại sau khi Áp-ra-ham chết",
+      "Ông bán chúng cho A-bi-mê-léc và chuyển hết lên xứ Ca-na-an",
+      "Ông để mặc chúng và sống bằng nước mưa qua các vùng khô hạn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Y-sác đào giếng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 35,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 20,
+    "content": "Theo Sáng 35:16-20, Ra-chên qua đời ở đâu khi đang sinh con trai cuối cùng (Bên-gia-min)?",
+    "explanation": "Sáng 35:19-20 — 'Vậy, Ra-chên qua đời, được chôn bên con đường đi về Ê-phơ-rát, tức là Bết-lê-hem. Gia-cốp dựng một cây trụ nơi mộ người: ấy là cây trụ mộ của Ra-chên đến ngày nay'.",
+    "language": "vi",
+    "options": [
+      "Trên đường đi đến Ép-ra-ta (cũng là Bết-lê-hem)",
+      "Tại nhà cha mình là La-ban tại Cha-ran",
+      "Tại Hếp-rôn nơi cha chồng Y-sác đang sống",
+      "Tại đồng vắng giữa Ai-cập và xứ Ca-na-an"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Ra-chên qua đời",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 19,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 28,
+    "content": "Theo Sáng 19:24-28, Đức Chúa Trời phá hủy Sô-đôm và Gô-mô-rơ bằng phương tiện cụ thể nào?",
+    "explanation": "Sáng 19:24 — 'Đoạn, Đức Giê-hô-va từ trên trời giáng mưa lưu hoàng và lửa xuống thành Sô-đôm và Gô-mô-rơ. Ngài hủy diệt hai thành nầy, cả đồng bằng, hết thảy dân sự các thành ấy, cùng cây cối ngoài đồng'.",
+    "language": "vi",
+    "options": [
+      "Một cơn động đất lớn nuốt cả hai thành xuống đất",
+      "Một trận lụt lớn từ Biển Chết tràn lên ngập cả hai thành",
+      "Lưu hoàng và lửa từ trời do Đức Giê-hô-va giáng xuống",
+      "Một đoàn quân thiên sứ với gươm tiêu diệt từng nhà"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Sô-đôm phá hủy",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1
+    ],
+    "verseEnd": 16,
+    "content": "A-ga (mẹ Ích-ma-ên) bị đuổi khỏi nhà Áp-ra-ham hai lần khác nhau trong Sáng Thế Ký. Tình huống nào CÓ trong text? (chọn tất cả đúng)",
+    "explanation": "Sáng 16:6-9 — A-ga lần đầu chạy trốn vì Sa-rai hành hạ; thiên sứ bảo bà trở lại. Sáng 21:9-21 — sau khi Y-sác sinh, Sa-ra đòi đuổi A-ga và Ích-ma-ên; Đức Chúa Trời gặp họ trong sa mạc. Lần 3 và 4 không có trong text.",
+    "language": "vi",
+    "options": [
+      "Lần 1 (Sáng 16) — Khi Sa-rai ghen tỵ vì A-ga có thai và khinh dể bà chủ",
+      "Lần 2 (Sáng 21) — Sau khi Y-sác cai sữa, Sa-ra thấy Ích-ma-ên cười cợt",
+      "Lần 3 (Sáng 25) — A-ga bị Áp-ra-ham đuổi cùng các con thứ khác sau khi cưới Kê-tu-ra",
+      "Lần khác (Sáng 19) — A-ga chạy trốn cùng Lót khỏi thành Sô-đôm"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "A-ga bị đuổi",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 31,
+    "verseStart": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 35,
+    "content": "Khi La-ban đuổi theo Gia-cốp và lục soát đồ đạc tìm thần tượng (Sáng 31:33-35), Ra-chên giấu thần tượng ở đâu?",
+    "explanation": "Sáng 31:34-35 — 'Vả, Ra-chên có lấy mấy pho tượng đó, để vào trong cái yên ngồi đặt trên lưng lạc đà, rồi ngồi lên trên... La-ban lục soát khắp lều mà tìm chẳng được'.",
+    "language": "vi",
+    "options": [
+      "Trong cái lều của các đầy tớ gái",
+      "Dưới yên lạc đà mà bà ngồi lên",
+      "Dưới đáy rương đựng đồ đạc của Gia-cốp",
+      "Trong giếng sâu cạnh trại Ma-ha-na-im"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Ra-chên giấu thần",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 33,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 11,
+    "content": "Theo Sáng 33:1-11, khi Gia-cốp gặp lại Ê-sau sau 20 năm, hành vi của Ê-sau với em mình là gì?",
+    "explanation": "Sáng 33:4 — 'Ê-sau chạy đến trước mặt người, ôm choàng cổ mà hôn, rồi hai anh em đều khóc'. Cuộc tái ngộ vượt xa nỗi sợ của Gia-cốp đã chuẩn bị quà tặng để xoa dịu Ê-sau.",
+    "language": "vi",
+    "options": [
+      "Ê-sau rút gươm tấn công Gia-cốp ngay lập tức để báo thù",
+      "Ê-sau đòi Gia-cốp trả lại quyền trưởng nam và phước lành đã lừa",
+      "Ê-sau giả vờ tha thứ rồi sai người giết Gia-cốp ngầm vào ban đêm",
+      "Ê-sau chạy đến ôm cổ Gia-cốp, hôn người và cả hai khóc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Tái ngộ Ê-sau",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 34,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 4,
+    "content": "Theo Sáng 34, ai đã làm nhục Đi-na (con gái Lê-a) khiến Si-mê-ôn và Lê-vi tàn sát thành Si-chem để trả thù?",
+    "explanation": "Sáng 34:2 — 'Si-chem, con trai Hê-mô, người Hê-vít, hoàng tử của xứ đó, thấy nàng [Đi-na], thì bắt đem đi, nằm với nàng và làm điếm nhục cho nàng'. Si-mê-ôn và Lê-vi sau đó tàn sát thành (34:25-26).",
+    "language": "vi",
+    "options": [
+      "Si-chem, con trai Hê-mô người Hê-vít, là vua xứ đó",
+      "A-bi-mê-léc, vua dân Phi-li-tin tại Ghê-ra",
+      "Một thầy tế lễ ngoại bang tại đền thờ trên núi Ga-ri-xim",
+      "Một quan trưởng quân đội Pha-ra-ôn từ Ai-cập đến"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Đi-na bị làm nhục",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 38,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 26,
+    "content": "Khi Giu-đa đến với Ta-ma (giả làm kỹ nữ) trong Sáng 38, ông để lại 3 vật làm bằng chứng. Ba vật đó là gì?",
+    "explanation": "Sáng 38:18 — 'Người [Ta-ma] đáp: Cái dấu, dây và cây gậy mà chàng cầm tay'. Ba vật này khi Ta-ma trình ra đã chứng minh cha của thai nhi là Giu-đa (38:25-26).",
+    "language": "vi",
+    "options": [
+      "Áo choàng vương giả, đôi giày da và cây gậy chăn chiên",
+      "Túi tiền vàng, chiếc khăn lụa và con dao găm",
+      "Con dấu, dây và cây gậy mà ông đang cầm trong tay",
+      "Bình dầu xức, lưỡi cày và đôi dép da"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Bằng chứng của Ta-ma",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 45,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 8,
+    "content": "Khi Giô-sép tỏ chính mình cho các anh em (Sáng 45:4-8), ông nhấn mạnh điều gì về việc bị bán làm nô lệ?",
+    "explanation": "Sáng 45:5,8 — 'Bây giờ, đừng sầu não, và cũng đừng tiếc chi về điều các anh đã bán tôi đặng bị dẫn đến xứ nầy; vì để giữ gìn sự sống các anh, nên Đức Chúa Trời đã sai tôi đến đây trước các anh... Aáy chẳng phải các anh sai tôi đến đây đâu, bèn là Đức Chúa Trời'.",
+    "language": "vi",
+    "options": [
+      "Ông oán giận các anh và đòi phải đền bù thiệt hại nặng nề",
+      "Ông giải thích đó là Đức Chúa Trời sai mình đến trước để giữ sự sống nhiều người",
+      "Ông yêu cầu các anh phải tự ký giấy nhận tội rõ ràng cho Pha-ra-ôn",
+      "Ông cảnh báo các anh không được kể với cha là Gia-cốp về việc làm xấu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Giô-sép tỏ ra",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 47,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 12,
+    "content": "Theo Sáng 47:11, Pha-ra-ôn ban cho Gia-cốp và gia đình định cư ở vùng đất nào của Ai-cập?",
+    "explanation": "Sáng 47:11 — 'Vậy, Giô-sép vâng mạng Pha-ra-ôn, để cha và anh em mình ở chỗ tốt nhứt trong xứ Ê-díp-tô, tức là xứ Ram-se, mà lập nghiệp cho họ'. Đất Gô-sen (cũng gọi Ram-se) ở phía đông đồng bằng sông Nin, đất tốt cho chăn nuôi.",
+    "language": "vi",
+    "options": [
+      "Vùng Mem-phít gần thủ đô của Pha-ra-ôn",
+      "Vùng Tê-ba phía nam dòng sông Nin",
+      "Vùng A-lê-xan-ri gần biển Địa Trung Hải",
+      "Vùng Gô-sen, là phần đất tốt nhất của xứ Ai-cập"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Định cư Gô-sen",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 19,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 38,
+    "content": "Theo Sáng 19:30-38, hai con gái Lót sinh hai đứa con là tổ tiên của hai dân tộc nào?",
+    "explanation": "Sáng 19:37-38 — 'Cô lớn sanh được một con trai, đặt tên là Mô-áp; ấy là tổ phụ của dân Mô-áp đến bây giờ. Người em cũng sanh đặng một con trai, đặt tên là Bên-Am-mi; ấy là tổ phụ của dân Am-môn đến bây giờ'.",
+    "language": "vi",
+    "options": [
+      "Mô-áp và Am-môn — sau này là kẻ thù của dân Y-sơ-ra-ên",
+      "Ê-đôm và Ích-ma-ên — sau này là kẻ thù của dân Y-sơ-ra-ên",
+      "Phi-li-tin và Hê-tít — kẻ thù chính của Y-sơ-ra-ên",
+      "Mi-đi-an và A-ma-léc — dân tộc đánh nhau với Mô-se"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Mô-áp và Am-môn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 15,
+    "content": "Tại Bê-tên (Sáng 28:13-15), Đức Chúa Trời lặp lại lời hứa với Gia-cốp gồm các yếu tố nào CHÍNH?",
+    "explanation": "Sáng 28:13-15 — 'Đất nầy ta sẽ cho ngươi và dòng dõi ngươi. Dòng dõi ngươi sẽ đông như cát bụi trên mặt đất... bởi ngươi và dòng dõi ngươi, các chi họ thế gian sẽ được phước. Nầy, ta ở cùng ngươi'. Bốn yếu tố: đất + dòng dõi + phước phổ quát + sự hiện diện.",
+    "language": "vi",
+    "options": [
+      "Vua dân Y-sơ-ra-ên / lúa mì dồi dào / chiến thắng Pha-ra-ôn",
+      "Sự khôn ngoan / sức khỏe thân thể / nhiều con cháu trên đất",
+      "Đất / dòng dõi / phước cho mọi gia đình trên đất / Ngài ở cùng",
+      "Chiến thắng kẻ thù / đền thờ trên núi / Mê-si-a sẽ đến"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Lời hứa cho Gia-cốp",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 32,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 30,
+    "content": "Theo Sáng 32:30, sau khi vật lộn với Đức Chúa Trời, Gia-cốp đặt tên nơi đó là Phê-ni-ên với ý nghĩa gì?",
+    "explanation": "Sáng 32:30 — 'Gia-cốp đặt tên chỗ đó là Phê-ni-ên, và nói rằng: Tôi đã thấy Đức Chúa Trời đối mặt cùng tôi và linh hồn tôi được giải cứu'. Phê-ni-ên trong tiếng Hê-bơ-rơ nghĩa là 'mặt của Đức Chúa Trời' (peniel).",
+    "language": "vi",
+    "options": [
+      "'Đức Chúa Trời chiến thắng' — kỷ niệm sự thua cuộc của Gia-cốp",
+      "'Mặt Đức Chúa Trời' — vì 'tôi đã thấy Đức Chúa Trời mặt đối mặt mà mạng sống tôi được giữ'",
+      "'Đức Chúa Trời ở cùng' — kỷ niệm Đức Chúa Trời đi với Gia-cốp",
+      "'Sự gặp gỡ' — kỷ niệm cuộc gặp giữa hai anh em sau đó"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Phê-ni-ên",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 41,
+    "verseStart": 51,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 52,
+    "content": "Giô-sép đặt tên cho hai con trai sinh ra ở Ai-cập với hai ý nghĩa đối ứng (Sáng 41:51-52). Hai tên đó là gì?",
+    "explanation": "Sáng 41:51-52 — 'Giô-sép đặt tên đứa đầu lòng là Ma-na-se, vì người nói rằng: Đức Chúa Trời đã làm cho ta quên điều cực nhọc, và cả nhà cha ta. Người đặt tên đứa thứ nhì là Ép-ra-im, vì nói rằng: Đức Chúa Trời làm cho ta được hưng vượng trong xứ mà ta bị khốn khổ'.",
+    "language": "vi",
+    "options": [
+      "Ép-ra-im ('khốn khó') và Ma-na-se ('thịnh vượng')",
+      "Phi-nê-a ('lửa') và Ru-ben ('thấy con trai')",
+      "Lê-vi ('liên kết') và Ép-ra-im ('khóc lóc')",
+      "Ma-na-se ('làm cho quên') và Ép-ra-im ('làm cho sai trái')"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Ma-na-se và Ép-ra-im",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 26,
+    "content": "Theo Sáng 50:24-26, lời trối cuối cùng của Giô-sép gồm các yếu tố nào? (chọn tất cả đúng)",
+    "explanation": "Sáng 50:24-26 — Giô-sép tuyên bố Đức Chúa Trời sẽ viếng dân, yêu cầu thề đem hài cốt mình về đất hứa (sau Xuất 13:19 + Giô-suê 24:32 ứng nghiệm), qua đời 110 tuổi tại Ai-cập. Yêu cầu chôn tại đền Ai-cập sai — ông muốn về đất hứa.",
+    "language": "vi",
+    "options": [
+      "'Đức Chúa Trời sẽ đến viếng các anh em, đem lên khỏi xứ này đến xứ Ngài đã thề ban cho Áp-ra-ham, Y-sác và Gia-cốp'",
+      "Yêu cầu các anh em thề: 'Đức Chúa Trời sẽ thật viếng đến anh em, anh em hãy dời hài cốt tôi khỏi xứ này'",
+      "Giô-sép qua đời lúc 110 tuổi và được ướp xác bỏ vào quan tài tại Ai-cập",
+      "Giô-sép yêu cầu chôn xác mình tại đền thờ Ai-cập như các Pha-ra-ôn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Lời trối Giô-sép",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 21,
+    "verseStart": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 33,
+    "content": "Theo Sáng 21:33, sau khi lập giao ước với A-bi-mê-léc tại Bê-e-Sê-ba, Áp-ra-ham làm hành động gì?",
+    "explanation": "Sáng 21:33 — 'Áp-ra-ham trồng một cây me tại Bê-e-Sê-ba, và ở đó người cầu khẩn danh Đức Giê-hô-va, là Đức Chúa Trời hằng-hữu'. Cây me (eshel) là biểu tượng dài lâu, kết hợp với danh 'Đức Chúa Trời hằng-hữu' (El Olam) bày tỏ sự bền vững.",
+    "language": "vi",
+    "options": [
+      "Trồng một cây me tại Bê-e-Sê-ba và kêu cầu danh Đức Giê-hô-va, Đức Chúa Trời hằng có",
+      "Xây một bàn thờ lớn bằng đá để tế lễ thường xuyên cho dân các nước",
+      "Đào một giếng rất sâu ở giữa thành Ghê-ra để dân thành dùng chung",
+      "Gửi một phái đoàn đến Pha-ra-ôn Ai-cập để báo tin việc lập giao ước"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Cây me Bê-e-Sê-ba",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 26,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 25,
+    "content": "Theo Sáng 26:24, lời Đức Giê-hô-va phán cùng Y-sác tại Bê-e-Sê-ba mở đầu bằng cụm từ nào?",
+    "explanation": "Sáng 26:24 — 'Đức Giê-hô-va hiện đến cùng người trong đêm đó, mà phán rằng: Ta là Đức Chúa Trời của Áp-ra-ham, cha ngươi; chớ sợ chi, ta ở cùng ngươi, sẽ ban phước cho và thêm dòng dõi ngươi'. Đây là lời tái xác nhận giao ước với thế hệ thứ hai.",
+    "language": "vi",
+    "options": [
+      "'Hãy đi khỏi xứ này, đến xứ ta sẽ chỉ cho ngươi'",
+      "'Ta là Đức Chúa Trời của Áp-ra-ham, cha ngươi; chớ sợ chi'",
+      "'Ngươi là con yêu dấu của ta; hãy nghe lời ta dạy'",
+      "'Hãy đem con trai ngươi mà dâng làm của lễ thiêu'"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Đức Chúa Trời với Y-sác",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 27,
+    "content": "Theo Sáng 1:26 (RVV11), Đức Chúa Trời phán điều gì về việc tạo dựng loài người?",
+    "explanation": "Sáng 1:26 — 'Đức Chúa Trời phán rằng: Chúng ta hãy làm nên loài người như hình ta và theo tượng ta, đặng quản trị loài cá biển, loài chim trời, loài súc vật, loài côn trùng bò trên mặt đất'. Đại từ ngôi 1 số nhiều ('chúng ta') đặc biệt chỉ ra sự đa-vị-cách trong Đức Chúa Trời.",
+    "language": "vi",
+    "options": [
+      "'Hãy có loài người trong xứ Ê-đen vì ta đã tạo dựng cảnh đẹp'",
+      "'Loài người sẽ là tôi tớ trên đất, hầu việc các thiên sứ trên trời'",
+      "'CHÚNG TA hãy làm nên loài người NHƯ HÌNH ẢNH chúng ta, theo TƯỢNG chúng ta'",
+      "'Loài người là vật thấp hèn nhất trong các vật ta đã tạo'"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Tạo dựng loài người",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 18,
+    "content": "Theo Sáng 2:18 (RVV11), Đức Chúa Trời phán: 'Loài người ở một mình thì không tốt; ta sẽ làm nên một ___ cho người'.",
+    "explanation": "Sáng 2:18 — 'Loài người ở một mình thì không tốt; ta sẽ làm nên một kẻ giúp đỡ giống như nó'. 'Kẻ giúp đỡ' (ezer) là từ Kinh Thánh dùng cả cho Đức Chúa Trời (Thi 33:20) — không hàm ý kém cấp.",
+    "language": "vi",
+    "options": [
+      "kẻ giúp đỡ giống như nó",
+      "tôi tớ trung thành phục vụ",
+      "đầy tớ làm việc đồng áng",
+      "bạn thân để chuyện trò"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Tạo Ê-va",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 12,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 3,
+    "content": "Theo Sáng 12:3 (RVV11), Đức Chúa Trời phán cùng Áp-ram lời hứa nào về sự ban phước phổ quát?",
+    "explanation": "Sáng 12:3 — 'Ta sẽ ban phước cho người nào chúc phước ngươi, rủa sả kẻ nào rủa sả ngươi; và các chi họ nơi thế gian sẽ nhờ ngươi mà được phước'. Phao-lô trích dẫn câu này trong Ga 3:8 như 'tin lành sớm' về Đấng Christ.",
+    "language": "vi",
+    "options": [
+      "'Ngươi sẽ là vua trên các nước; mọi nước sẽ phục dưới chân ngươi'",
+      "'Dòng dõi ngươi sẽ chinh phục cả thế gian bằng gươm và quyền phép'",
+      "'Mọi nước sẽ đến học luật pháp tại đền thờ Si-ôn ngươi sẽ xây'",
+      "'Các CHI HỌ thế gian sẽ NHỜ NGƯƠI mà ĐƯỢC PHƯỚC'"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Phước cho muôn dân",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 18,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 14,
+    "content": "Theo Sáng 18:14 (RVV11), khi Sa-ra cười vì lời hứa sinh con ở tuổi già, Đức Giê-hô-va đáp lại bằng câu hỏi tu từ nào?",
+    "explanation": "Sáng 18:14 — 'Há có điều chi Đức Giê-hô-va làm không được chăng? Đến kỳ đã định, trong một năm nữa, ta sẽ trở lại cùng ngươi, và Sa-ra sẽ có một con trai'. Câu hỏi tu từ này khẳng định toàn năng của Đức Chúa Trời.",
+    "language": "vi",
+    "options": [
+      "'Ai có thể đếm các vì sao trên trời cao?'",
+      "'Há có sự chi Đức Giê-hô-va làm không được chăng?'",
+      "'Ngươi có thấy đất rộng lớn dưới chân ngươi không?'",
+      "'Ngươi không tin lời ta vì sao trông cậy vào sức ngươi?'"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Sự không thể có",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 15,
+    "content": "Theo Sáng 28:15 (RVV11), Đức Giê-hô-va hứa cùng Gia-cốp tại Bê-tên với LỜI BẢO ĐẢM cụ thể nào?",
+    "explanation": "Sáng 28:15 — 'Nầy, ta ở cùng ngươi, ngươi đi đâu, sẽ theo gìn giữ đó, và đem ngươi về xứ nầy; vì ta không bao giờ bỏ ngươi cho đến khi ta làm xong những điều ta đã hứa cùng ngươi'. Lời bảo đảm cá nhân: hiện diện + bảo vệ + đem trở lại.",
+    "language": "vi",
+    "options": [
+      "'Ta sẽ cho ngươi nhiều của cải hơn cha và ông ngươi'",
+      "'Ta sẽ cho ngươi cai trị các nước trên đất rộng lớn'",
+      "'Nầy, TA Ở CÙNG NGƯƠI, ngươi đi đâu, sẽ theo gìn giữ đó, và đem ngươi VỀ XỨ NẦY'",
+      "'Ngươi sẽ giết được anh ngươi là Ê-sau và lấy lại quyền trưởng nam'"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Lời hứa Bê-tên",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 39,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 9,
+    "content": "Theo Sáng 39:9 (RVV11), khi vợ Pô-ti-pha cám dỗ Giô-sép, ông từ chối với lý do thần học cốt lõi nào?",
+    "explanation": "Sáng 39:9 — 'Trong nhà nầy chẳng ai lớn hơn tôi, và chủ cũng không cấm chi tôi, trừ ra một mình ngươi, vì ngươi là vợ của chủ tôi. Thế nào tôi dám làm điều đại ác dường ấy, mà phạm tội cùng Đức Chúa Trời sao?' Giô-sép xem tội tà dâm trước hết là phạm tội với Đức Chúa Trời.",
+    "language": "vi",
+    "options": [
+      "'Tôi sợ chồng bà sẽ giết tôi nếu phát hiện ra việc này'",
+      "'Tôi không yêu bà; xin tha cho tôi mà về phòng tôi'",
+      "'Tôi đã được hứa hôn với một người con gái khác ở quê hương'",
+      "'Thế nào tôi dám làm điều đại ác dường ấy mà PHẠM TỘI cùng ĐỨC CHÚA TRỜI?'"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Phạm tội với Đức Chúa Trời",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 24,
+    "content": "Theo Sáng 50:24 (RVV11), lời cuối cùng của Giô-sép trước khi qua đời là lời hứa nào về tương lai?",
+    "explanation": "Sáng 50:24 — 'Em sẽ chết, nhưng Đức Chúa Trời sẽ đến viếng các anh em thật; Ngài sẽ đem các anh em về xứ mà Ngài đã thề hứa cùng Áp-ra-ham, Y-sác và Gia-cốp'. Lời tiên tri này ứng nghiệm sau đó trong sách Xuất hành.",
+    "language": "vi",
+    "options": [
+      "'Đức Chúa Trời sẽ đến viếng các anh em, đem lên khỏi xứ nầy đến xứ Ngài đã thề ban cho các tổ phụ'",
+      "'Tôi để lại cho các anh em một phần đất rất tốt tại Gô-sen, đừng dời đi đâu hết'",
+      "'Hãy giữ tôi tớ tôi vì Pha-ra-ôn rất quý mến chúng tôi tại Ai-cập đã lâu'",
+      "'Hãy lập một bàn thờ ngay tại Ai-cập để dâng lễ vật cho thần Ai-cập trong đời'"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Sáng Thế Ký",
+      "Ngũ Kinh",
+      "Lời cuối Giô-sép",
+      "Trung cấp"
+    ]
   }
 ]

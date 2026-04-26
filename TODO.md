@@ -1,5 +1,58 @@
 # TODO
 
+## 2026-04-26 — V2 Go-Live Phase 2: Easy/Medium expansion (5 sách core) [IN PROGRESS]
+
+> Theo `PROMPT_GENERATE_QUESTIONS_V2_GO_LIVE.md` section 10.1 Priority 2.
+> Mục tiêu: nâng pool 5 sách core đạt target tổng (150-180 câu/sách) với ratio 30/45/25.
+> Phase 1 đã thêm 140 Hard. Phase 2 thêm Easy/Medium để cân bằng ratio + đạt target.
+> Tổng cộng 169 VI + 169 EN = 338 câu output.
+
+### Task V2M-1: Genesis +30 Medium [x] DONE
+- 120→150 (E47 M64 H39, ratio 31.3/42.7/26.0% — gần 30/45/25 ±3%)
+- Seeder log `inserted=30` each file, total 4508→4568, invalid=0
+- 27 single + 3 multi (90/10); idx 7/7/7/6
+- File(s): `genesis_quiz.json` + `genesis_quiz_en.json` + `scripts/append_genesis_medium_v2.py`
+- 4 types 8/8/7/7 covering 20 previously-uncovered Medium chapters (14, 15, 16, 19, 21, 24, 26, 28, 31, 33, 34, 35, 38, 43, 45, 46, 47, 48, 49, 50)
+
+### Task V2M-2: Matthew +26 (1E + 25M)
+- Status: [ ] TODO
+- Current: 134 (E47 M46 H41) → Target: 160 (E48 M72 H40)
+- Plan: +1 Easy + 25 Medium
+- File(s): `matthew_quiz.json` + `matthew_quiz_en.json`
+- Commit: `feat(seed): Matthew +26 Easy/Medium for V2 Phase 2 (134→160)`
+
+### Task V2M-3: John +29 (6E + 23M)
+- Status: [ ] TODO
+- Current: 131 (E42 M48 H41) → Target: 160 (E48 M72 H40)
+- Plan: +6 Easy + 23 Medium
+- File(s): `john_quiz.json` + `john_quiz_en.json`
+- Commit: `feat(seed): John +29 Easy/Medium for V2 Phase 2 (131→160)`
+
+### Task V2M-4: Romans +45 (15E + 30M)
+- Status: [ ] TODO
+- Current: 85 (E24 M29 H32) → Target: 130 (E39 M59 H33)
+- Plan: +15 Easy + 30 Medium (largest gap)
+- File(s): `romans_quiz.json` + `romans_quiz_en.json`
+- ⚠️ Tránh guardrails (predestination, baptism mode, eschatology) như Phase 1
+- Commit: `feat(seed): Romans +45 Easy/Medium for V2 Phase 2 (85→130)`
+
+### Task V2M-5: Psalms +39 (0E + 39M)
+- Status: [ ] TODO
+- Current: 141 (E59 M38 H44) → Target: 180 (E54 M81 H45)
+- Plan: +39 Medium (Easy đã dư)
+- File(s): `psalms_quiz.json` + `psalms_quiz_en.json`
+- Commit: `feat(seed): Psalms +39 Medium for V2 Phase 2 (141→180)`
+
+### Task V2M-6: Verify final Phase 2 audit
+- Status: [ ] TODO
+- Checklist:
+  - [ ] Recount E/M/H per file → kiểm ratio gần 30/45/25 (±3%)
+  - [ ] Total Phase 2: 169 VI + 169 EN = 338 questions
+  - [ ] Backend log all 5 files seed clean (idempotent)
+  - [ ] Combined V2 (P1 + P2): 449 questions added (140 Hard + 169 E/M = 309 VI + 309 EN... wait recheck)
+
+---
+
 ## 2026-04-26 — V2 Go-Live: Hard-only priority (5 sách core) [DONE]
 
 > Theo `PROMPT_GENERATE_QUESTIONS_V2_GO_LIVE.md` section 10.1 Priority 1.

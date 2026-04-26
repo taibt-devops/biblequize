@@ -3195,5 +3195,820 @@
       "Pride",
       "Advanced"
     ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 14,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 16,
+    "content": "According to Genesis 14, what event caused Abram to lead 318 trained men into battle?",
+    "explanation": "Gen 14:11-14 — four eastern kings (led by Chedorlaomer) captured Lot and seized his possessions. Abram led 318 trained servants in pursuit to Dan and rescued him.",
+    "language": "en",
+    "options": [
+      "Pharaoh of Egypt attacked the region where Abram lived with his wife",
+      "Abimelech king of Gerar stole Abram's livestock at Beersheba",
+      "Four Elamite-allied kings captured Lot and his goods from Sodom",
+      "The Hittites attacked Sarai's company while she went to draw water"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Abram Rescues Lot",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 15,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 5,
+    "content": "God repeated the promise about Abraham's offspring 'as numerous as ___' in Genesis 15:5 and later added 'as the sand on the seashore' in 22:17. What is the first image?",
+    "explanation": "Gen 15:5 — 'Look toward heaven, and number the stars, if you are able to number them. So shall your offspring be'. Gen 22:17 adds 'as the sand on the seashore' after Abraham obeyed in offering Isaac.",
+    "language": "en",
+    "options": [
+      "As trees in the forest",
+      "As stars in the sky",
+      "As salt of the sea",
+      "As locusts on the field"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Offspring Promise",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 21,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 7,
+    "content": "According to Genesis 21:5, how old was Abraham when Isaac the son of promise was born?",
+    "explanation": "Gen 21:5 — 'Abraham was a hundred years old when his son Isaac was born to him'. Sarah was 90 (17:17). Abraham had waited 25 years from leaving Haran (12:4 — at age 75).",
+    "language": "en",
+    "options": [
+      "100 years old",
+      "75 years old",
+      "86 years old",
+      "120 years old"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Birth of Isaac",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 24,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 27,
+    "content": "In Genesis 24, Abraham sent his servant to find a wife for Isaac. What sign did the servant set for God to point out the right woman?",
+    "explanation": "Gen 24:14 — 'Let the young woman to whom I shall say, Please let down your jar that I may drink, and who shall say, Drink, and I will water your camels — let her be the one whom you have appointed for your servant Isaac'. Rebekah did exactly so (24:18-20).",
+    "language": "en",
+    "options": [
+      "The woman who gave the servant water first, before watering the camels",
+      "The woman who introduced herself as a relative of Abraham first",
+      "The woman who gave the servant water AND volunteered to draw water for the camels",
+      "The woman who sang a song praising God by the well"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Finding Isaac's Wife",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 19,
+    "content": "When Jacob fled from Esau and slept on his way (Genesis 28:10-22), what dream did he see at Luz?",
+    "explanation": "Gen 28:12-13 — 'He dreamed, and behold, there was a ladder set up on the earth, and the top of it reached to heaven. And behold, the angels of God were ascending and descending on it! And behold, the LORD stood above it'. Jacob named the place Bethel (House of God).",
+    "language": "en",
+    "options": [
+      "An angel with a flaming sword blocking his path on the mountain",
+      "A great eagle flying down with bread to feed him in the wilderness",
+      "A golden road leading straight to the future temple in Zion",
+      "A ladder set up to heaven, with angels of God ascending and descending"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Jacob's Ladder",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 49,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 28,
+    "content": "In Genesis 49, Jacob blessed his 12 sons before dying. Which blessings ARE in the text? (select all correct)",
+    "explanation": "Gen 49:3-4 (Reuben 'unstable as water'), 49:9-10 (Judah 'lion's cub' and 'scepter'), 49:22 (Joseph 'fruitful bough'). Benjamin in 49:27 is 'a ravenous wolf', NOT a dove.",
+    "language": "en",
+    "options": [
+      "Reuben — unstable as water, loses firstborn privilege",
+      "Judah — a young lion, the scepter shall not depart",
+      "Joseph — a fruitful bough by a spring, branches running over the wall",
+      "Benjamin — a peaceful dove among birds in the field"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Twelve Blessings",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 26,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 25,
+    "content": "According to Genesis 26:18, what did Isaac do with the wells that his father Abraham had dug?",
+    "explanation": "Gen 26:18 — 'Isaac dug again the wells of water that had been dug in the days of Abraham his father, which the Philistines had stopped after the death of Abraham. And he gave them the names that his father had given them'.",
+    "language": "en",
+    "options": [
+      "He destroyed them and dug new wells in completely different locations",
+      "He DUG AGAIN the wells the Philistines had stopped up after Abraham's death",
+      "He sold them to Abimelech and moved everything up to the land of Canaan",
+      "He left them alone and lived on rainwater through dry regions"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Isaac Redigs Wells",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 35,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 20,
+    "content": "According to Genesis 35:16-20, where did Rachel die while giving birth to her last son (Benjamin)?",
+    "explanation": "Gen 35:19-20 — 'So Rachel died, and she was buried on the way to Ephrath (that is, Bethlehem), and Jacob set up a pillar over her tomb. It is the pillar of Rachel's tomb, which is there to this day'.",
+    "language": "en",
+    "options": [
+      "On the way to Ephrath (also called Bethlehem)",
+      "At the house of her father Laban in Haran",
+      "At Hebron where her father-in-law Isaac was living",
+      "In the wilderness between Egypt and the land of Canaan"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Rachel's Death",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 19,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 28,
+    "content": "According to Genesis 19:24-28, by what means did God destroy Sodom and Gomorrah?",
+    "explanation": "Gen 19:24 — 'Then the LORD rained on Sodom and Gomorrah sulfur and fire from the LORD out of heaven. And he overthrew those cities, and all the valley, and all the inhabitants of the cities, and what grew on the ground'.",
+    "language": "en",
+    "options": [
+      "A great earthquake that swallowed both cities into the ground",
+      "A great flood from the Dead Sea that overflowed both cities",
+      "Sulfur and fire from heaven rained down by the LORD",
+      "A host of angels with swords destroying house by house"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Destruction of Sodom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1
+    ],
+    "verseEnd": 16,
+    "content": "Hagar (mother of Ishmael) was sent away from Abraham's household twice in Genesis. Which situations ARE in the text? (select all correct)",
+    "explanation": "Gen 16:6-9 — Hagar first fled because Sarai mistreated her; the angel told her to return. Gen 21:9-21 — after Isaac's birth, Sarah demanded Hagar and Ishmael be sent away; God met them in the wilderness. The other two cases are not in the text.",
+    "language": "en",
+    "options": [
+      "First (Gen 16) — When Sarai grew jealous of pregnant Hagar's contempt",
+      "Second (Gen 21) — After Isaac was weaned, Sarah saw Ishmael mocking",
+      "Third (Gen 25) — Abraham sent Hagar away with other concubines after Keturah",
+      "Other (Gen 19) — Hagar fled with Lot from the city of Sodom"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Hagar's Expulsions",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 31,
+    "verseStart": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 35,
+    "content": "When Laban pursued Jacob and searched for his household gods (Genesis 31:33-35), where did Rachel hide them?",
+    "explanation": "Gen 31:34-35 — 'Now Rachel had taken the household gods and put them in the camel's saddle and sat on them. Laban felt all about the tent, but did not find them'.",
+    "language": "en",
+    "options": [
+      "In the maidservants' tent",
+      "Under the camel's saddle that she sat on",
+      "Beneath the chest of Jacob's belongings",
+      "In a deep well near the Mahanaim camp"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Rachel Hides Idols",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 33,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 11,
+    "content": "According to Genesis 33:1-11, when Jacob met Esau again after 20 years, how did Esau treat his brother?",
+    "explanation": "Gen 33:4 — 'Esau ran to meet him and embraced him and fell on his neck and kissed him, and they wept'. The reunion far exceeded Jacob's fearful expectation, despite his careful gift preparations.",
+    "language": "en",
+    "options": [
+      "Esau drew his sword and attacked Jacob immediately for revenge",
+      "Esau demanded Jacob return the birthright and the stolen blessing",
+      "Esau pretended to forgive then secretly sent men to kill Jacob at night",
+      "Esau ran to meet Jacob, embraced and kissed him, and both wept"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Esau Reunion",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 34,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 4,
+    "content": "According to Genesis 34, who violated Dinah (Leah's daughter), causing Simeon and Levi to massacre the city of Shechem in revenge?",
+    "explanation": "Gen 34:2 — 'Shechem the son of Hamor the Hivite, the prince of the land, saw her [Dinah], he seized her and lay with her and humiliated her'. Simeon and Levi later massacred the city (34:25-26).",
+    "language": "en",
+    "options": [
+      "Shechem, son of Hamor the Hivite, prince of that land",
+      "Abimelech, king of the Philistines at Gerar",
+      "A pagan priest at the temple on Mount Gerizim",
+      "A captain of Pharaoh's army who came from Egypt"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Dinah Violated",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 38,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 26,
+    "content": "When Judah went in to Tamar (disguised as a prostitute) in Genesis 38, he left 3 items as a pledge. What three items?",
+    "explanation": "Gen 38:18 — 'He said, What pledge shall I give you? She replied, Your signet and your cord and your staff that is in your hand'. When Tamar presented these, they proved Judah was the father of her child (38:25-26).",
+    "language": "en",
+    "options": [
+      "A royal robe, leather sandals, and a shepherd's staff",
+      "A bag of gold coins, a silk handkerchief, and a dagger",
+      "His signet, his cord, and his staff that he carried in his hand",
+      "An anointing flask, a plowshare, and a pair of leather sandals"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Tamar's Pledge",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 45,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 8,
+    "content": "When Joseph revealed himself to his brothers (Genesis 45:4-8), what did he emphasize about being sold into slavery?",
+    "explanation": "Gen 45:5,8 — 'Do not be distressed or angry with yourselves because you sold me here, for God sent me before you to preserve life... So it was not you who sent me here, but God'.",
+    "language": "en",
+    "options": [
+      "He resented his brothers and demanded heavy compensation for damages",
+      "He explained it was God who sent him ahead to preserve life for many",
+      "He demanded his brothers sign a written confession to Pharaoh clearly",
+      "He warned his brothers not to tell their father Jacob about the bad deed"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph Reveals",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 47,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 12,
+    "content": "According to Genesis 47:11, in what region of Egypt did Pharaoh allow Jacob and his family to settle?",
+    "explanation": "Gen 47:11 — 'Then Joseph settled his father and his brothers and gave them a possession in the land of Egypt, in the best of the land, in the land of Rameses'. The land of Goshen (also called Rameses) was in the eastern Nile delta, good pasture land.",
+    "language": "en",
+    "options": [
+      "The region of Memphis near Pharaoh's capital city",
+      "The region of Thebes south along the Nile River",
+      "The region of Alexandria near the Mediterranean Sea",
+      "The land of Goshen, the best part of the land of Egypt"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Settlement in Goshen",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 19,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 38,
+    "content": "According to Genesis 19:30-38, the two daughters of Lot bore two children who became ancestors of which two peoples?",
+    "explanation": "Gen 19:37-38 — 'The firstborn bore a son and called his name Moab. He is the father of the Moabites to this day. The younger also bore a son and called his name Ben-ammi. He is the father of the Ammonites to this day'.",
+    "language": "en",
+    "options": [
+      "Moab and Ammon — later enemies of Israel",
+      "Edom and Ishmael — later enemies of Israel",
+      "Philistines and Hittites — chief enemies of Israel",
+      "Midian and Amalek — peoples who fought Moses"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Moab and Ammon",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 15,
+    "content": "At Bethel (Genesis 28:13-15), God renewed the promise to Jacob with which CORE elements?",
+    "explanation": "Gen 28:13-15 — 'The land on which you lie I will give to you and to your offspring. Your offspring shall be like the dust of the earth... in you and your offspring shall all the families of the earth be blessed. Behold, I am with you'. Four elements: land + offspring + universal blessing + divine presence.",
+    "language": "en",
+    "options": [
+      "King of Israel / abundant wheat / victory over Pharaoh",
+      "Wisdom / bodily health / many descendants on earth",
+      "Land / offspring / blessing on all families of earth / I am with you",
+      "Victory over enemies / temple on the mountain / Messiah's coming"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Promise to Jacob",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 32,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 30,
+    "content": "According to Genesis 32:30, after wrestling with God, Jacob named the place Peniel with what meaning?",
+    "explanation": "Gen 32:30 — 'So Jacob called the name of the place Peniel, saying, For I have seen God face to face, and yet my life has been delivered'. Peniel in Hebrew means 'face of God' (peniel).",
+    "language": "en",
+    "options": [
+      "'God conquers' — commemorating Jacob's defeat",
+      "'Face of God' — for 'I have seen God face to face, and yet my life has been delivered'",
+      "'God with us' — commemorating God's accompaniment of Jacob",
+      "'The meeting' — commemorating the brothers' upcoming reunion"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Peniel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 41,
+    "verseStart": 51,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 52,
+    "content": "Joseph named his two sons born in Egypt with two contrasting meanings (Genesis 41:51-52). What are the names?",
+    "explanation": "Gen 41:51-52 — 'Joseph called the name of the firstborn Manasseh. For, he said, God has made me forget all my hardship and all my father's house. The name of the second he called Ephraim, For God has made me fruitful in the land of my affliction'.",
+    "language": "en",
+    "options": [
+      "Ephraim ('affliction') and Manasseh ('prosperity')",
+      "Phinehas ('fire') and Reuben ('see, a son')",
+      "Levi ('joined') and Ephraim ('weeping')",
+      "Manasseh ('made to forget') and Ephraim ('made fruitful')"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Manasseh and Ephraim",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 26,
+    "content": "According to Genesis 50:24-26, what elements were in Joseph's final words? (select all correct)",
+    "explanation": "Gen 50:24-26 — Joseph declared God would visit Israel, made them swear to carry his bones to the promised land (later fulfilled in Exod 13:19 + Josh 24:32), died at 110 in Egypt. The Egyptian temple burial is wrong — he wanted to return to the promised land.",
+    "language": "en",
+    "options": [
+      "'God will visit you and bring you up out of this land to the land he swore to Abraham, Isaac, and Jacob'",
+      "He made his brothers swear: 'When God visits you, you must carry up my bones from here'",
+      "Joseph died at 110 years old and was embalmed and placed in a coffin in Egypt",
+      "Joseph requested to be buried in an Egyptian temple like the Pharaohs"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph's Last Words",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 21,
+    "verseStart": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 33,
+    "content": "According to Genesis 21:33, what did Abraham do after making a covenant with Abimelech at Beersheba?",
+    "explanation": "Gen 21:33 — 'Abraham planted a tamarisk tree in Beersheba and called there on the name of the LORD, the Everlasting God'. The tamarisk (eshel) is a long-lived symbol, combined with the divine name 'El Olam' to express enduring covenant.",
+    "language": "en",
+    "options": [
+      "Planted a tamarisk tree at Beersheba and called on the name of the LORD, the Everlasting God",
+      "Built a great stone altar for regular sacrifices for the surrounding nations",
+      "Dug a very deep well in the middle of Gerar for shared use of the city",
+      "Sent a delegation to Pharaoh of Egypt to announce the covenant agreement"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Tamarisk at Beersheba",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 26,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 25,
+    "content": "According to Genesis 26:24, the LORD's word to Isaac at Beersheba opens with what phrase?",
+    "explanation": "Gen 26:24 — 'And the LORD appeared to him the same night and said, I am the God of Abraham your father. Fear not, for I am with you and will bless you and multiply your offspring'. This reaffirms the covenant with the second generation.",
+    "language": "en",
+    "options": [
+      "'Go from your country to the land that I will show you'",
+      "'I am the God of Abraham your father; do not be afraid'",
+      "'You are my beloved son; listen to my teaching'",
+      "'Take your son, whom you love, and offer him as a burnt offering'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "God to Isaac",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 27,
+    "content": "According to Genesis 1:26 (ESV), what did God say about creating humanity?",
+    "explanation": "Gen 1:26 — 'Then God said, Let us make man in our image, after our likeness. And let them have dominion over the fish of the sea and over the birds of the heavens and over the livestock and over all the earth'. The plural pronoun ('us') hints at the divine multi-personal nature.",
+    "language": "en",
+    "options": [
+      "'Let there be humans in Eden, for I have created beauty'",
+      "'Mankind shall be servants on earth, ministering to angels above'",
+      "'LET US make man IN OUR IMAGE, AFTER OUR LIKENESS'",
+      "'Mankind is the lowest of all things I have created'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Creation of Humanity",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 18,
+    "content": "According to Genesis 2:18 (ESV), God said: 'It is not good that the man should be alone; I will make him a ___'.",
+    "explanation": "Gen 2:18 — 'It is not good that the man should be alone; I will make him a helper fit for him'. The Hebrew 'ezer' (helper) is also used of God himself (Ps 33:20) — implying no inferiority.",
+    "language": "en",
+    "options": [
+      "helper fit for him",
+      "loyal servant to obey him",
+      "field worker for the labor",
+      "close friend to converse"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Creation of Eve",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 12,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 3,
+    "content": "According to Genesis 12:3 (ESV), what universal blessing does God promise Abram?",
+    "explanation": "Gen 12:3 — 'I will bless those who bless you, and him who dishonors you I will curse, and in you all the families of the earth shall be blessed'. Paul cites this in Gal 3:8 as the 'gospel beforehand' about Christ.",
+    "language": "en",
+    "options": [
+      "'You will be king over all nations; every nation will bow at your feet'",
+      "'Your descendants will conquer the world by sword and might'",
+      "'All nations will come to learn the law at your Zion temple'",
+      "'In you all the FAMILIES of the earth shall be BLESSED'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Blessing to All Nations",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 18,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 14,
+    "content": "According to Genesis 18:14 (ESV), when Sarah laughed at the promise of a son in old age, how did the LORD reply with a rhetorical question?",
+    "explanation": "Gen 18:14 — 'Is anything too hard for the LORD? At the appointed time I will return to you, about this time next year, and Sarah shall have a son'. The rhetorical question asserts God's omnipotence.",
+    "language": "en",
+    "options": [
+      "'Who can count the stars in the high heavens?'",
+      "'Is anything too hard for the LORD?'",
+      "'Do you see the wide earth beneath your feet?'",
+      "'Why don't you trust me but rely on your own strength?'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Nothing Too Hard",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 15,
+    "content": "According to Genesis 28:15 (ESV), the LORD promised Jacob at Bethel with what specific ASSURANCE?",
+    "explanation": "Gen 28:15 — 'Behold, I am with you and will keep you wherever you go, and will bring you back to this land. For I will not leave you until I have done what I have promised you'. Personal assurance: presence + protection + return.",
+    "language": "en",
+    "options": [
+      "'I will give you more wealth than your father and grandfather had'",
+      "'I will give you rule over the nations of the wide earth'",
+      "'Behold, I AM WITH YOU and will keep you wherever you go, and will BRING YOU BACK to this land'",
+      "'You will slay your brother Esau and reclaim your firstborn rights'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Bethel Promise",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 39,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 9,
+    "content": "According to Genesis 39:9 (ESV), when Potiphar's wife tempted Joseph, what theological reason did he give for refusing?",
+    "explanation": "Gen 39:9 — 'There is no one greater in this house than I am, nor has he kept back anything from me except yourself, because you are his wife. How then can I do this great wickedness and sin against God?' Joseph viewed sexual sin as primarily a sin against God.",
+    "language": "en",
+    "options": [
+      "'I fear your husband will kill me if he finds out about this'",
+      "'I do not love you; please leave me and let me go to my chamber'",
+      "'I am betrothed to another woman back in my homeland'",
+      "'How then can I do this great wickedness and SIN AGAINST GOD?'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Sin Against God",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 24,
+    "content": "According to Genesis 50:24 (ESV), what was Joseph's final word before dying — a promise about the future?",
+    "explanation": "Gen 50:24 — 'I am about to die, but God will visit you and bring you up out of this land to the land that he swore to Abraham, to Isaac, and to Jacob'. This prophecy was fulfilled later in the Exodus.",
+    "language": "en",
+    "options": [
+      "'God will visit you and bring you up out of this land to the land he swore to your fathers'",
+      "'I leave you a very good portion of land in Goshen; do not move from there'",
+      "'Keep my servants because Pharaoh has honored us in Egypt for a long time'",
+      "'Build an altar here in Egypt to offer sacrifices to the gods of Egypt for life'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Genesis",
+      "Pentateuch",
+      "Joseph's Final Word",
+      "Intermediate"
+    ]
   }
 ]
