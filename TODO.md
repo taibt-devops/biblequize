@@ -275,12 +275,12 @@
 - DECISIONS.md: "Target audience expanded: Tin Lành toàn cầu"
 - Supersedes implicit "VN-only" scope
 
-### Task GA-5: EN translation workflow [ ] TODO
-- Document AI-assisted translation process
-- Template prompt for Gemini/Claude
-- Script to batch translate `{book}_quiz.json` → `{book}_quiz_en.json`
-- Priority books for EN v1: Genesis, Matthew, John, Psalms, Romans
-- User must run locally (sandbox không gọi AI được)
+### Task GA-5: EN translation workflow [x] DONE 2026-04-27
+- Script: [scripts/translate_to_en.py](scripts/translate_to_en.py) — Gemini 2.0 Flash, batch 5/call, idempotent skip-if-exists, rate-limit retry
+- Doc: [docs/EN_TRANSLATION_WORKFLOW.md](docs/EN_TRANSLATION_WORKFLOW.md) — full workflow (setup, usage, terminology, verification, troubleshooting, cost)
+- Brief mention: CLAUDE.md L220 "Question Seeding" section
+- Priority V1 books: Genesis 150, Matthew 160, John 160, Psalms 180, Romans 130 — all have EN pair ✓
+- **Coverage**: 66/66 books có EN pair (verified `ls *_quiz_en.json \| wc -l = 66`)
 
 ### Task GA-8: Update PROMPT_GENERATE_QUESTIONS.md [x] DONE
 - Fix: `text` → `content` field name (schema updated)
