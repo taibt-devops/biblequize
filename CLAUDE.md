@@ -199,7 +199,7 @@ LÀM ĐÚNG: chia thành TODO rồi làm từng task:
 - DB: MySQL 8.0 (Docker, port 3307)
 - Cache: Redis 7 (Docker, port 6379)
 - Unit Test: Vitest 4.1 (happy-dom) + @testing-library/react
-- E2E Test: Playwright (CHƯA SETUP — xem PLAYWRIGHT_CODE_CONVENTIONS.md section 0 để bootstrap)
+- E2E Test: Playwright (đã setup: `apps/web/playwright.config.ts` + `tests/e2e/{smoke,happy-path,fixtures,helpers,pages}` + npm scripts `test:e2e`)
 - Design: Stitch MCP (project ID `5341030797678838526`)
 
 ## Product context
@@ -395,7 +395,7 @@ apps/web/src/
 ├── styles/                 # global.css (Tailwind + Stitch tokens)
 └── test/                   # setup.ts (Vitest global setup)
 
-apps/web/tests/e2e/         # Playwright e2e tests (CHƯA SETUP — xem PLAYWRIGHT_CODE_CONVENTIONS.md)
+apps/web/tests/e2e/         # Playwright e2e tests (đã setup — xem PLAYWRIGHT_CODE_CONVENTIONS.md)
 ```
 
 ### Quy ước đặt file mới
@@ -496,12 +496,7 @@ apps/web/tests/e2e/         # Playwright e2e tests (CHƯA SETUP — xem PLAYWRIG
   - WebSocket → mock useStomp/useWebSocket hooks
   - KHÔNG mock implementation details — test behavior, not internals
 
-### E2E Test (Playwright) — CHƯA SETUP
-> Playwright chưa cài trong project. Khi cần viết e2e test:
-> 1. Đọc `PLAYWRIGHT_CODE_CONVENTIONS.md` section 0 (Bootstrap) để setup
-> 2. Follow conventions trong file đó để viết test
->
-> Sau khi setup xong:
+### E2E Test (Playwright) — đã setup
 - **Config**: `apps/web/playwright.config.ts` (Chromium, serial, baseURL localhost:5173)
 - **testDir**: `./tests/e2e`
 - **Đặt file**: `tests/e2e/{smoke|happy-path}/web-user/<screen-name>.spec.ts`
@@ -532,12 +527,11 @@ cd apps/web && npm test                     # Vitest watch mode
 cd apps/web && npx vitest run               # Vitest single run (CI)
 cd apps/web && npx vitest run src/pages/    # Vitest chỉ pages
 
-# E2E (CHƯA SETUP — cần bootstrap trước, xem PLAYWRIGHT_CODE_CONVENTIONS.md section 0)
-# Sau khi setup:
-# cd apps/web && npx playwright test                            # All e2e
-# cd apps/web && npx playwright test tests/e2e/smoke/           # Chỉ smoke
-# cd apps/web && npx playwright test --headed                   # Có browser UI
-# cd apps/web && npx playwright show-report                     # Xem HTML report
+# E2E (đã setup: apps/web/playwright.config.ts + tests/e2e/{smoke,happy-path,fixtures,helpers,pages})
+cd apps/web && npm run test:e2e                                # All e2e
+cd apps/web && npx playwright test tests/e2e/smoke/            # Chỉ smoke
+cd apps/web && npm run test:e2e:headed                         # Có browser UI
+cd apps/web && npm run test:e2e:report                         # Xem HTML report
 ```
 
 ---
@@ -809,7 +803,7 @@ BƯỚC 4: Hành động:
 
 ---
 
-## Known Issues & Tech Debt (cập nhật: 2026-04-19)
+## Known Issues & Tech Debt (cập nhật: 2026-04-27)
 
 > **Claude Code PHẢI đọc section này trước khi code.** Nếu chạm vào file có known issue → fix luôn, KHÔNG để lại.
 
@@ -819,12 +813,12 @@ BƯỚC 4: Hành động:
 | 1 | `api/client.ts` | ~~Duplicate auth interceptor~~ — FIXED: only `addAuthInterceptor(api)` + `addAuthInterceptor(aiApi)` now | — |
 | 2 | `api/client.ts` | ~~Error messages hardcoded tiếng Việt~~ — FIXED in i18n Phase 4: routes through `i18n.t('errors.*')` | — |
 | 3 | `api/client.ts` | ~~`window.location.href = '/login'`~~ — FIXED: dispatches `auth:session-expired` event | — |
-| 4 | `vite.config.ts` | CSP có `unsafe-inline` + `unsafe-eval` trong script-src | Xóa cả hai khỏi script-src, giữ `unsafe-inline` chỉ cho style-src |
-| 5 | `.env.production` | API URL vẫn là `localhost:8080` | Đổi thành empty string (dùng same-origin proxy) |
-| 6 | `hooks/useWebSocket.ts` | Không gửi JWT token (useStomp có, useWebSocket không) | Thêm token vào URL query param `?token=xxx` |
-| 7 | `hooks/useWebSocket.ts` | useEffect dependency `[]` — không re-run khi url thay đổi | Thêm `[url]` vào dependency array |
-| 8 | `utils/localStorageClearDetector.ts` | Monkeypatch `localStorage.clear()` + `.removeItem()` + polling 2s không cleanup | Viết lại: dùng native `storage` event + explicit function calls |
-| 9 | `contexts/RequireAdmin.tsx` | Check role cả uppercase lẫn lowercase (`CONTENT_MOD` / `content_mod`) | Normalize role `.toUpperCase()` khi nhận từ backend |
+| 4 | `infra/docker/nginx.conf` | ~~CSP có `unsafe-eval` trong script-src~~ — FIXED 2026-04-27: removed `'unsafe-eval'`; kept `'unsafe-inline'` only (line 41). Original entry incorrectly pointed at `vite.config.ts` — actual prod CSP is served by nginx. | — |
+| 5 | `.env.production` | ~~API URL vẫn là `localhost:8080`~~ — FIXED: `VITE_API_BASE_URL=` và `VITE_WS_URL=` để trống (same-origin qua reverse proxy) | — |
+| 6 | `hooks/useWebSocket.ts` | ~~Không gửi JWT token~~ — FIXED: line 142-145 appends `?token=...` query param using `getAccessToken()` | — |
+| 7 | `hooks/useWebSocket.ts` | ~~useEffect dependency `[]`~~ — FIXED: line 275 now has `[url]` | — |
+| 8 | `utils/localStorageClearDetector.ts` | ~~Monkeypatch `localStorage.clear()` + polling 2s~~ — FIXED: rewritten to use native `storage` event + explicit `notifyRankedDataCleared()` (24-line file, no monkeypatch, no polling) | — |
+| 9 | `contexts/RequireAdmin.tsx` | ~~Role check cả uppercase + lowercase~~ — FIXED: only checks `'CONTENT_MOD'` (uppercase) on line 7; backend now consistent | — |
 
 ### Medium — fix khi có thời gian
 | # | File | Issue |
