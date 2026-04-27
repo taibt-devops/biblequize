@@ -537,5 +537,1565 @@
       "Thư tín",
       "Nâng cao"
     ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 1:3, Đức Chúa Con là gì so với Đức Chúa Trời?",
+    "explanation": "Hê-bơ-rơ 1:3 — 'Con là sự chói sáng của vinh quang Đức Chúa Trời và là hình bóng của bản thể Ngài, lấy lời quyền năng Ngài nâng đỡ muôn vật.' Đây là một trong những câu Christology cao nhất trong Tân Ước — Christ KHÔNG phải tạo vật, Ngài là chính bản thể Đức Chúa Trời.",
+    "language": "vi",
+    "options": [
+      "Là tạo vật cao quý nhất (theo cách trình bày của text)",
+      "Là một thiên sứ đặc biệt (như được mô tả trong sách)",
+      "Là sự chói sáng của vinh quang Đức Chúa Trời và là hình bóng của bản thể Ngài",
+      "Là một tiên tri vĩ đại (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Christ là hình bóng bản thể",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 1:4, Đấng Christ trở nên cao trọng hơn ai?",
+    "explanation": "Hê-bơ-rơ 1:4 — 'Vậy nên Ngài cao hơn các thiên sứ, vì đã được hưởng danh hiệu trổi hơn danh các thiên sứ.' Đây là lần đầu trong sách dùng từ 'TỐT HƠN' — chủ đề xuyên suốt: Christ TỐT HƠN thiên sứ (1-2), TỐT HƠN Môi-se (3), TỐT HƠN A-rôn (4-7), giao ước TỐT HƠN (8-10).",
+    "language": "vi",
+    "options": [
+      "Hơn các vua đời này",
+      "Hơn các thiên sứ",
+      "Hơn các tiên tri Cựu Ước",
+      "Hơn Môi-se"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Christ tốt hơn thiên sứ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 2:3, sự cứu rỗi lớn lao đến với chúng ta qua ai trước tiên?",
+    "explanation": "Hê-bơ-rơ 2:3 — 'Mà nếu ta còn trễ nải sự cứu rỗi lớn dường ấy, thì làm sao tránh cho khỏi được? — là sự cứu rỗi Chúa truyền ra trước hết, rồi có những kẻ nghe chứng nghiệm nó cho chúng ta.' Đây là một trong 5 cảnh báo (warning passage) — đừng coi nhẹ sự cứu rỗi.",
+    "language": "vi",
+    "options": [
+      "Qua Môi-se rồi đến chúng ta",
+      "Qua các tiên tri (xét trong văn cảnh)",
+      "Qua các thiên sứ (theo cách trình bày của text)",
+      "Qua chính Chúa và được những người nghe truyền lại cho chúng ta"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Trễ nải sự cứu rỗi",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Hê-bơ-rơ 3:1, các tín hữu được gọi là gì và phải xem xét ai là Sứ Đồ và Thầy Tế Lễ Thượng Phẩm?",
+    "explanation": "Hê-bơ-rơ 3:1 — 'Hỡi anh em thánh, là kẻ dự phần ơn trên trời gọi, hãy suy kĩ đến sứ giả và thầy tế lễ thượng phẩm mà chúng ta tin theo, tức là Đức Chúa Jêsus.' 'Sứ giả' (apostolos) = sai đi → Christ là Đấng Cha sai. So với Môi-se trong câu kế tiếp.",
+    "language": "vi",
+    "options": [
+      "Anh em thánh, người dự phần ơn gọi từ trên trời — xem xét Đức Chúa Jêsus",
+      "Tôi tớ — xem xét Môi-se (xét trong văn cảnh)",
+      "Dân Y-sơ-ra-ên — xem xét A-rôn",
+      "Người ngoại — xem xét các tiên tri"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Anh em thánh xem xét Christ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 4:9, còn lại điều gì cho dân của Đức Chúa Trời?",
+    "explanation": "Hê-bơ-rơ 4:9 — 'Vậy thì còn lại một sự yên nghỉ cho dân Đức Chúa Trời.' 'Sa-bát yên nghỉ' (sabbatismos) — không chỉ ngày thứ bảy hay đất Ca-na-an mà là sự yên nghỉ thuộc linh trong Christ, hoàn tất trong cõi đời đời.",
+    "language": "vi",
+    "options": [
+      "Một xứ hứa",
+      "Một đền thờ",
+      "Một sự yên nghỉ (Sa-bát)",
+      "Một vương quốc"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Sự yên nghỉ Sa-bát",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 5,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 5:6, Christ là Thầy Tế Lễ đời đời theo ban của ai?",
+    "explanation": "Hê-bơ-rơ 5:6 — 'Như đoạn khác cũng có phán cùng Ngài: Ngươi làm thầy tế lễ đời đời theo ban Mên-chi-xê-đéc.' Trích từ Thi Thiên 110:4 — Mên-chi-xê-đéc (Sáng 14) là vua-tế-lễ Sa-lem, không có gia phả; Christ là Thầy Tế Lễ TỐT HƠN A-rôn vì theo ban này.",
+    "language": "vi",
+    "options": [
+      "Theo ban A-rôn",
+      "Theo ban Mên-chi-xê-đéc",
+      "Theo ban Lê-vi",
+      "Theo ban Áp-ra-ham"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Tế lễ ban Mên-chi-xê-đéc",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 6,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 6:19, sự trông cậy của chúng ta được ví như gì cho linh hồn?",
+    "explanation": "Hê-bơ-rơ 6:19 — 'Chúng ta giữ điều trông cậy nầy như cái neo của linh hồn, vững vàng bền chặt, thấu vào phía trong màn.' Hình ảnh cái neo (anchor) bền vững — neo không thấy được nhưng giữ tàu khỏi trôi dạt; sự trông cậy chúng ta neo vào nơi Christ đã vào (sau bức màn = nơi chí thánh trên trời).",
+    "language": "vi",
+    "options": [
+      "Như ngọn lửa",
+      "Như cánh chim",
+      "Như cánh buồm",
+      "Như cái neo bền vững và chắc chắn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Neo của linh hồn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 8,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 8:6, Đấng Christ là Đấng Trung Bảo của giao ước như thế nào?",
+    "explanation": "Hê-bơ-rơ 8:6 — 'Nhưng thầy tế lễ thượng phẩm chúng ta đã được một chức vụ rất tôn trọng hơn... vì Ngài là Đấng trung bảo của giao ước tốt hơn, mà giao ước ấy lập lên trên lời hứa tốt hơn.' 'TỐT HƠN' lần thứ 5 trong sách — chức vụ tốt hơn, giao ước tốt hơn, lời hứa tốt hơn.",
+    "language": "vi",
+    "options": [
+      "Của giao ước cũ (xét trong văn cảnh)",
+      "Của giao ước với Môi-se",
+      "Của giao ước TỐT HƠN, lập trên những lời hứa tốt hơn",
+      "Của giao ước với Áp-ra-ham"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Trung bảo giao ước tốt hơn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 9:12, Christ vào nơi rất thánh MỘT LẦN ĐỦ CẢ bằng huyết của ai?",
+    "explanation": "Hê-bơ-rơ 9:12 — 'Ngài đã vào nơi rất thánh một lần thì đủ hết, không dùng huyết dê đực và bò con, nhưng dùng chính huyết mình, mà được sự chuộc tội đời đời.' Khác Đại Lễ Chuộc Tội cũ (mỗi năm 1 lần với huyết thú) — Christ chỉ MỘT LẦN với CHÍNH huyết Ngài, hiệu quả ĐỜI ĐỜI.",
+    "language": "vi",
+    "options": [
+      "Bằng huyết bò đực và dê",
+      "Bằng chính huyết Ngài, được sự chuộc tội đời đời",
+      "Bằng huyết chiên con vô tì vít",
+      "Bằng nước và Thánh Linh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Christ một lần đủ cả",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Hê-bơ-rơ 10:19, vì cớ huyết Đức Chúa Jêsus, các tín hữu có gì để vào nơi rất thánh?",
+    "explanation": "Hê-bơ-rơ 10:19 — 'Hỡi anh em, vì chúng ta nhờ huyết Đức Chúa Jêsus được dạn dĩ vào nơi rất thánh.' Bức màn đền thờ rách (Mat 27:51) — bây giờ ai tin Christ đều có thể đến TRỰC TIẾP trước Đức Chúa Trời, không cần thầy tế lễ trung gian.",
+    "language": "vi",
+    "options": [
+      "Sự dạn dĩ (lòng tin chắc) để vào nơi rất thánh",
+      "Cần một thầy tế lễ trung gian",
+      "Phải dâng tế lễ trước",
+      "Cần phải tịnh hóa nhiều ngày"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Dạn dĩ vào nơi rất thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 12:1, các tín hữu được vây quanh bởi đám mây gì và phải làm gì?",
+    "explanation": "Hê-bơ-rơ 12:1 — 'Thế thì, vì chúng ta được nhiều người chứng kiến vây lấy như đám mây rất lớn, chúng ta cũng nên quăng hết gánh nặng và tội lỗi dễ vấn vương ta, lấy lòng nhịn nhục theo đòi cuộc chạy đua đã bày ra cho ta.' 'Đám mây làm chứng' = các anh hùng đức tin chương 11 — họ chứng minh đức tin có thể chiến thắng.",
+    "language": "vi",
+    "options": [
+      "Đám mây thiên sứ — phải thờ phượng",
+      "Đám mây tối tăm — phải sợ hãi (xét trong văn cảnh)",
+      "Đám mây đông đảo những người làm chứng — phải quăng hết gánh nặng và tội lỗi, bền lòng chạy đua",
+      "Đám mây vinh hiển — phải chờ đợi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Đám mây người làm chứng",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 13:2, chớ quên đãi khách lạ vì có người làm vậy đã tiếp đón ai mà không biết?",
+    "explanation": "Hê-bơ-rơ 13:2 — 'Chớ quên sự thương yêu khách lạ, vì có người đã tiếp đãi thiên sứ mà không biết.' Ám chỉ Áp-ra-ham (Sáng 18) tiếp đón 3 người tại cây sồi Mam-rê — họ là Đức Giê-hô-va và 2 thiên sứ; cũng có thể chỉ Lót (Sáng 19) tiếp đón 2 thiên sứ tại Sô-đôm.",
+    "language": "vi",
+    "options": [
+      "Đã tiếp đón vua",
+      "Đã tiếp đón thiên sứ",
+      "Đã tiếp đón thầy tế lễ",
+      "Đã tiếp đón tiên tri"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Tiếp đãi thiên sứ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 13:12, Đức Chúa Jêsus chịu khổ ngoài cửa thành để làm gì?",
+    "explanation": "Hê-bơ-rơ 13:12 — 'Ấy vì đó mà chính mình Đức Chúa Jêsus đã chịu khổ tại ngoài cửa thành, để lấy huyết mình làm cho dân nên thánh.' Hình ảnh từ luật cũ: con vật hi sinh trong Đại Lễ Chuộc Tội bị đốt NGOÀI trại quân (Lê 16:27); Christ chịu chết NGOÀI Giê-ru-sa-lem ứng nghiệm — kêu gọi tín hữu 'ra khỏi trại' (13:13).",
+    "language": "vi",
+    "options": [
+      "Để chứng tỏ vô tội",
+      "Để hoàn thành luật Môi-se",
+      "Để được vinh hiển",
+      "Để khiến dân nên thánh bằng chính huyết Ngài"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Christ chịu khổ ngoài thành",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 1:8 (trích Thi Thiên 45:6), Đức Chúa Trời gọi Đức Chúa Con là gì?",
+    "explanation": "Hê-bơ-rơ 1:8 — 'Nhưng nói về Con thì lại phán rằng: Hỡi Đức Chúa Trời, ngôi Chúa còn mãi đời đời, Quyền bính của nước Chúa là quyền bính ngay thẳng.' Trích Thi Thiên 45:6 — Cha gọi Con LÀ Đức Chúa Trời. Đây là một trong những bằng chứng mạnh mẽ nhất về Thần tính trọn vẹn của Christ trong Tân Ước.",
+    "language": "vi",
+    "options": [
+      "Là tôi tớ trung thành",
+      "Là tiên tri tối thượng",
+      "Là Con yêu dấu (xét trong văn cảnh)",
+      "Là Đức Chúa Trời, ngôi Ngài còn mãi đời đời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Cha gọi Con là Đức Chúa Trời",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 1:14, các thiên sứ là gì?",
+    "explanation": "Hê-bơ-rơ 1:14 — 'Các thiên sứ há chẳng phải đều là thần hầu việc Đức Chúa Trời, đã được sai xuống để giúp việc những người sẽ hưởng cơ nghiệp cứu rỗi hay sao?' Vai trò THIÊN SỨ = đầy tớ, vai trò CHRIST = Con. Dù thiên sứ cao trọng nhưng vẫn là tôi tớ — Christ là chủ.",
+    "language": "vi",
+    "options": [
+      "Là tạo vật cao cả nhất (xét trong văn cảnh)",
+      "Là những đấng đáng được thờ phượng",
+      "Là các thần hầu việc, được sai đi giúp đỡ những kẻ sẽ hưởng cơ nghiệp cứu rỗi",
+      "Là những đấng cai trị các quốc gia"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Thiên sứ là thần hầu việc",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Hê-bơ-rơ 2:1 (cảnh báo thứ nhất), tín hữu phải làm gì để khỏi trôi giạt?",
+    "explanation": "Hê-bơ-rơ 2:1 — 'Vậy nên chúng ta phải càng giữ vững lấy điều mình đã nghe, e kẻo bị trôi lạc chăng.' Đây là CẢNH BÁO THỨ NHẤT trong 5 cảnh báo của sách Hê-bơ-rơ. Hình ảnh 'trôi lạc' (pararuō) — như con thuyền không neo trôi xa bến. Phải BÁM CHẶT vào sự thật đã nghe.",
+    "language": "vi",
+    "options": [
+      "Phải càng giữ vững lấy điều mình đã nghe (chăm chú nghe Lời)",
+      "Phải tuân giữ luật Môi-se nghiêm ngặt",
+      "Phải dâng nhiều của lễ (theo cách trình bày của text)",
+      "Phải tách khỏi xã hội (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Cảnh báo trôi lạc",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 2:17, vì sao Đấng Christ phải trở nên giống như anh em mình mọi đường?",
+    "explanation": "Hê-bơ-rơ 2:17 — 'Nhân đó, Ngài phải chịu làm giống như anh em mình trong mọi sự, hầu cho đối với Đức Chúa Trời, trở nên thầy tế lễ thượng phẩm hay thương xót và trung tín, đặng đền tội cho chúng dân.' Christ THẬT SỰ trở nên người để làm thầy tế lễ THƯƠNG XÓT (cho dân) và TRUNG TÍN (cho Đức Chúa Trời) — khái niệm nền tảng cho phần còn lại của sách.",
+    "language": "vi",
+    "options": [
+      "Để chứng tỏ mình là loài người (theo cách trình bày của text)",
+      "Để Ngài có thể trở nên thầy tế lễ thượng phẩm thương xót và trung tín, đặng đền tội lỗi cho dân",
+      "Để học hỏi Cựu Ước (xét trong văn cảnh)",
+      "Để được Đức Chúa Trời chấp nhận (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Christ thầy tế lễ thương xót",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 3:3, Christ được kể là đáng vinh hiển hơn ai? Vì sao?",
+    "explanation": "Hê-bơ-rơ 3:3 — 'Vì Ngài đã được xưng là đáng vinh hiển cao trọng hơn Môi-se, chẳng khác nào thợ cất nhà được tôn trọng hơn chính cái nhà.' Lập luận: Môi-se trung tín TRONG nhà của Đức Chúa Trời (3:5), Christ trung tín NHƯ CON quản trị nhà mình (3:6). Christ TỐT HƠN Môi-se.",
+    "language": "vi",
+    "options": [
+      "Hơn các tiên tri — vì rao báo lời Chúa",
+      "Hơn các thiên sứ — vì là Con",
+      "Hơn Môi-se — như Đấng dựng nhà tôn trọng hơn nhà",
+      "Hơn A-rôn — vì làm tế lễ tốt hơn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Christ tốt hơn Môi-se",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 3:12, các tín hữu phải coi chừng có ai trong họ mang lòng gì?",
+    "explanation": "Hê-bơ-rơ 3:12 — 'Hỡi anh em, hãy giữ lấy, kẻo ai trong anh em có lòng dữ và chẳng tin mà trái bỏ Đức Chúa Trời hằng sống chăng.' Cảnh báo này dùng dân Y-sơ-ra-ên không vào được Ca-na-an vì chẳng tin (Dân số 14) làm bài học — đừng bắt chước họ.",
+    "language": "vi",
+    "options": [
+      "Lòng kiêu căng (như được mô tả trong sách)",
+      "Lòng tham lam (theo cách trình bày của text)",
+      "Lòng dối trá (xét trong văn cảnh)",
+      "Lòng dữ và chẳng tin, để mình lìa bỏ Đức Chúa Trời hằng sống"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Coi chừng lòng chẳng tin",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 4:14, vì chúng ta có Thầy Tế Lễ Thượng Phẩm lớn đã trải qua các tầng trời, chúng ta phải làm gì?",
+    "explanation": "Hê-bơ-rơ 4:14 — 'Ấy vậy, vì chúng ta có thầy tế lễ thượng phẩm lớn đã trải qua các từng trời, tức là Đức Chúa Jêsus, Con Đức Chúa Trời, thì hãy bền giữ đạo chúng ta đã nhận tin.' Christ TỐT HƠN thầy tế lễ thượng phẩm cũ vì: (1) là CON Đức Chúa Trời; (2) đã trải qua các tầng trời (vào nơi rất thánh trên trời thực); (3) hằng sống mãi.",
+    "language": "vi",
+    "options": [
+      "Phải nhịn ăn (xét trong văn cảnh)",
+      "Phải tách biệt",
+      "Phải bền giữ lời tuyên xưng đức tin",
+      "Phải dâng tế lễ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Bền giữ đức tin",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 4:16, vì có Thầy Tế Lễ Thượng Phẩm cảm thông, tín hữu được khích lệ làm gì?",
+    "explanation": "Hê-bơ-rơ 4:16 — 'Vậy, chúng ta hãy vững lòng đến gần ngôi ơn phước, hầu cho được thương xót và tìm được ơn để giúp chúng ta trong thì giờ có cần dùng.' Câu nổi tiếng — 'NGÔI ƠN PHƯỚC' không phải ngôi xét đoán; cầu nguyện tự do, dạn dĩ vì Christ đã mở đường vào.",
+    "language": "vi",
+    "options": [
+      "Đến gần nơi rất thánh với run rẩy (như được mô tả trong sách)",
+      "Vững lòng đến gần ngôi ơn phước, để được lòng thương xót và tìm thấy ơn giúp đỡ kịp thời",
+      "Phải dâng của lễ trước (xét trong văn cảnh)",
+      "Phải xét mình kỹ trước (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Vững lòng đến ngôi ơn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 5,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 5:12, các tín hữu đáng lẽ đã làm thầy dạy nhưng lại cần ai dạy lại điều gì?",
+    "explanation": "Hê-bơ-rơ 5:12 — 'Đáng lẽ anh em đã làm thầy từ lâu rồi, nay còn cần người ta lấy những điều sơ học của lời Đức Chúa Trời mà dạy anh em; anh em cần ăn sữa thay vì đồ ăn đặc.' Lời quở trách — họ ĐÌNH TRỆ trong tăng trưởng thuộc linh; cần đi từ sữa (cơ bản) sang đồ ăn cứng (sâu nhiệm).",
+    "language": "vi",
+    "options": [
+      "Cần ai dạy luật Môi-se cho (xét trong văn cảnh)",
+      "Cần ai dạy bí ẩn Khải Huyền (theo cách trình bày của text)",
+      "Cần ai dạy thần học cao siêu (như được mô tả trong sách)",
+      "Cần ai dạy lại các sơ học của lời Đức Chúa Trời — chỉ cần sữa, chưa nhận được đồ ăn cứng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Vẫn còn cần sữa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Hê-bơ-rơ 6:1, các tín hữu phải bỏ qua các điều sơ học và đi tới đâu?",
+    "explanation": "Hê-bơ-rơ 6:1 — 'Ấy vậy, chúng ta phải bỏ qua các điều sơ học về Tin Lành của Đấng Christ, mà tấn tới sự trọn lành.' 'Trọn lành' (teleios) = trưởng thành. Tiếp nối lời quở trách 5:12 — phải tăng trưởng từ sữa sang đồ ăn cứng. Liệt kê các 'sơ học' ở 6:1-2: ăn năn, đức tin, báp-têm, đặt tay, sống lại, phán xét.",
+    "language": "vi",
+    "options": [
+      "Đi đến sự hoàn toàn (trưởng thành)",
+      "Đi đến đất hứa",
+      "Đi đến đền thờ",
+      "Đi đến giáo lễ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Tấn tới sự trọn lành",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 7:22, vì Christ là Thầy Tế Lễ với lời thề, Ngài trở nên Đấng Bảo Lãnh của giao ước nào?",
+    "explanation": "Hê-bơ-rơ 7:22 — 'Vì thế, Đức Chúa Jêsus đã trở nên Đấng bảo lãnh cho một giao ước tốt hơn.' Đây là lần ĐẦU TIÊN trong sách dùng cụm 'GIAO ƯỚC TỐT HƠN' — sẽ được khai triển toàn diện chương 8-10. Christ là Đấng BẢO LÃNH (engyos) — đứng ra bảo đảm giao ước hiệu lực.",
+    "language": "vi",
+    "options": [
+      "Của giao ước cũ",
+      "Của giao ước Áp-ra-ham",
+      "Của giao ước TỐT HƠN",
+      "Của giao ước Sinai"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Đấng bảo lãnh giao ước tốt hơn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 7:25, Christ có thể cứu toàn vẹn (đến cuối cùng) những kẻ đến gần Đức Chúa Trời qua Ngài vì Ngài làm gì?",
+    "explanation": "Hê-bơ-rơ 7:25 — 'Bởi đó Ngài có thể cứu toàn vẹn những kẻ nhờ Ngài mà đến gần Đức Chúa Trời, vì Ngài hằng sống để cầu thay cho những kẻ ấy.' Christ KHÔNG chỉ chết một lần rồi xong — Ngài SỐNG MÃI mà cầu thay (hai mục vụ: hi sinh hoàn tất + cầu thay vĩnh viễn). Khác A-rôn (chết, kế tiếp người khác).",
+    "language": "vi",
+    "options": [
+      "Vì Ngài đã chết một lần",
+      "Vì Ngài hằng sống để cầu thay cho họ",
+      "Vì Ngài là Con Đức Chúa Trời",
+      "Vì Ngài có quyền tha tội"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Christ hằng sống cầu thay",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 9:7, ai và bao lâu một lần được vào nơi rất thánh của đền tạm cũ?",
+    "explanation": "Hê-bơ-rơ 9:7 — 'Nhưng vào nơi thứ nhì, thì mỗi năm một lần chỉ một mình thầy tế lễ thượng phẩm vào, chẳng bao giờ mà không đem huyết dâng vì chính mình và vì sự lầm lỗi dân chúng.' Đây là Ngày Đại Lễ Chuộc Tội (Yom Kippur — Lê-vi 16). Christ vượt xa: vào MỘT LẦN ĐỦ CẢ với CHÍNH huyết Ngài (9:12).",
+    "language": "vi",
+    "options": [
+      "Tất cả thầy tế lễ — mỗi tuần (như được mô tả trong sách)",
+      "Thầy Lê-vi — mỗi tháng (theo cách trình bày của text)",
+      "Thầy tế lễ — mỗi ngày (xét trong văn cảnh)",
+      "Chỉ thầy tế lễ thượng phẩm — mỗi năm một lần, không phải không có huyết"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Đại lễ chuộc tội cũ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 9:14, huyết Đấng Christ rửa sạch lương tâm chúng ta khỏi các công việc gì để hầu việc Đức Chúa Trời hằng sống?",
+    "explanation": "Hê-bơ-rơ 9:14 — 'Huống chi huyết của Đấng Christ, là Đấng nhờ Đức Thánh Linh đời đời, dâng chính mình không tì tích cho Đức Chúa Trời, thì sẽ làm sạch lương tâm anh em khỏi công việc chết, đặng hầu việc Đức Chúa Trời hằng sống là dường nào!' 'Công việc chết' = nghi lễ không sống động, hoặc tội lỗi gây sự chết.",
+    "language": "vi",
+    "options": [
+      "Khỏi sự ô uế của thân thể",
+      "Khỏi tội lỗi của tổ phụ",
+      "Khỏi công việc chết, để hầu việc Đức Chúa Trời hằng sống",
+      "Khỏi sự yếu đuối của xác thịt"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Rửa sạch lương tâm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Hê-bơ-rơ 10:4, vì sao huyết của bò đực và dê đực không thể cất tội lỗi đi?",
+    "explanation": "Hê-bơ-rơ 10:4 — 'Vì huyết của bò đực và dê đực không thể cất tội lỗi đi được.' Lý do: hệ thống cũ là 'BÓNG' (10:1) của thực thể; chỉ Christ — Người Trọn Vẹn vô tội — mới thật sự xóa tội. Ý: nếu hệ thống cũ đủ, đã không cần Christ chết.",
+    "language": "vi",
+    "options": [
+      "Vì chỉ là bóng của Christ — không thể thật sự xóa tội",
+      "Vì người dâng chưa đủ thánh",
+      "Vì luật cũ đã hết hiệu lực",
+      "Vì dâng không đúng cách"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Huyết thú vật không xóa tội",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 10:14, bởi MỘT của lễ Christ đã làm gì cho những kẻ được nên thánh?",
+    "explanation": "Hê-bơ-rơ 10:14 — 'Vì nhờ dâng chỉ một của lễ, Ngài làm cho những kẻ nên thánh được trọn vẹn đời đời.' Trái ngược với hệ thống cũ (lặp đi lặp lại không bao giờ trọn vẹn — 10:1, 10:11) — Christ MỘT LẦN làm cho HOÀN HẢO ĐỜI ĐỜI. Vị thế của tín hữu trước Đức Chúa Trời là HOÀN HẢO trong Christ.",
+    "language": "vi",
+    "options": [
+      "Khiến họ trở nên ngang hàng thiên sứ",
+      "Đã làm cho họ ĐƯỢC TRỌN VẸN ĐỜI ĐỜI",
+      "Đã ban cho họ phép lạ",
+      "Đã cứu họ khỏi sự chết thể xác"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Một của lễ trọn vẹn đời đời",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 10:22, các tín hữu hãy đến gần Đức Chúa Trời với điều gì?",
+    "explanation": "Hê-bơ-rơ 10:22 — 'Nên chúng ta hãy lấy lòng thật thà với đức tin đầy dẫy trọn vẹn, lòng được tưới sạch khỏi lương tâm xấu, thân thể rửa bằng nước trong, mà đến gần Chúa.' 'Lòng được rưới sạch' = huyết Christ (Lê 14 luật phong cùi); 'tắm thân thể' = báp-têm (hoặc sự tái sanh).",
+    "language": "vi",
+    "options": [
+      "Với run rẩy và sợ hãi (xét trong văn cảnh)",
+      "Với của lễ và đèn dầu (theo cách trình bày của text)",
+      "Với lòng thật và đức tin đầy dẫy trọn vẹn, lòng được rưới sạch và thân thể tắm bằng nước trong sạch",
+      "Với sự nghiêm khắc và tu khổ (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Lòng thật đức tin đầy dẫy",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 11:4, A-bên dâng tế lễ tốt hơn Ca-in vì điều gì?",
+    "explanation": "Hê-bơ-rơ 11:4 — 'Bởi đức tin, A-bên đã dâng cho Đức Chúa Trời một tế lễ tốt hơn của Ca-in, và được xưng công bình, vì Đức Chúa Trời làm chứng về người rằng Ngài nhậm lễ vật ấy; lại cũng nhờ đó dầu người chết rồi, hãy còn nói.' A-bên là người ĐẦU TIÊN trong danh sách anh hùng đức tin chương 11.",
+    "language": "vi",
+    "options": [
+      "Vì lễ vật quý hơn (xét trong văn cảnh)",
+      "Vì A-bên là con thứ (theo cách trình bày của text)",
+      "Vì A-bên cầu nguyện trước",
+      "Bởi đức tin — và bởi đức tin đó người vẫn còn nói dầu đã chết"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "A-bên đức tin",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Hê-bơ-rơ 11:5, Hê-nóc được cất lên (không thấy sự chết) vì cớ gì?",
+    "explanation": "Hê-bơ-rơ 11:5 — 'Bởi đức tin, Hê-nóc được cất lên và không hề thấy sự chết; người ta không thấy người nữa, vì Đức Chúa Trời đã tiếp người lên. Bởi chưng trước khi được tiếp lên, người đã được chứng rằng mình ở vừa lòng Đức Chúa Trời rồi.' Câu kế tiếp 11:6 — không có đức tin thì KHÔNG THỂ làm đẹp lòng Ngài.",
+    "language": "vi",
+    "options": [
+      "Bởi đức tin — vì trước khi cất lên, người đã được chứng làm đẹp lòng Đức Chúa Trời",
+      "Vì người là tổ tiên của Nô-ê (như được mô tả trong sách)",
+      "Vì người sống thọ (xét trong văn cảnh)",
+      "Vì người làm tiên tri (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Hê-nóc được cất lên",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 11:7, Nô-ê đóng tàu là kết quả của điều gì?",
+    "explanation": "Hê-bơ-rơ 11:7 — 'Bởi đức tin, Nô-ê được Chúa mách bảo cho về những việc chưa thấy, và người thành tâm kính sợ, đóng một chiếc tàu để cứu nhà mình.' Nô-ê tin lời Chúa về CHƯA THẤY (lụt, mưa lần đầu) — đức tin = vâng lời ngay cả khi chưa có bằng chứng vật lý.",
+    "language": "vi",
+    "options": [
+      "Là vâng theo lệnh vua (xét trong văn cảnh)",
+      "Bởi đức tin — được Đức Chúa Trời cảnh báo về điều chưa thấy, ông kính sợ mà đóng tàu cứu cả nhà mình",
+      "Là một dự án thương mại (theo cách trình bày của text)",
+      "Là theo gương các tổ phụ (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Nô-ê đức tin tin lời Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 11:13, các tổ phụ chết trong đức tin, chưa nhận được điều đã hứa, nhưng tự xưng mình là gì trên đất?",
+    "explanation": "Hê-bơ-rơ 11:13 — 'Hết thảy những người đó đều chết trong đức tin, chưa nhận lãnh những điều hứa cho mình; chỉ trông thấy và chào mừng những điều đó từ đằng xa, xưng mình là kẻ khách và bộ hành trên đất.' Họ tin Đức Chúa Trời sẽ giữ lời hứa — Áp-ra-ham, Y-sác, Gia-cốp đã không nhận được đất Ca-na-an khi sống nhưng vẫn tin.",
+    "language": "vi",
+    "options": [
+      "Là vua chúa",
+      "Là người chinh phục",
+      "Là khách lạ và lữ khách",
+      "Là người được tuyển chọn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Khách lạ trên đất",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 11:24-26, Môi-se bởi đức tin đã chọn điều gì hơn các kho tàng Ai-cập?",
+    "explanation": "Hê-bơ-rơ 11:24-26 — 'Bởi đức tin, Môi-se lúc đã khôn lớn, bỏ danh hiệu mình là con trai của công chúa Pha-ra-ôn, đành cùng dân Đức Chúa Trời chịu hà hiếp hơn là tạm hưởng sự vui sướng của tội lỗi: người coi sự sỉ nhục về Đấng Christ là quý hơn của châu báu xứ Ê-díp-tô.' Môi-se 40 tuổi (Công 7:23) đã chọn từ bỏ.",
+    "language": "vi",
+    "options": [
+      "Chọn một đời sống ẩn dật (xét trong văn cảnh)",
+      "Chọn lãnh đạo Y-sơ-ra-ên (theo cách trình bày của text)",
+      "Chọn theo nghề chăn chiên (như được mô tả trong sách)",
+      "Chọn cùng dân Đức Chúa Trời chịu hà hiếp — coi sự sỉ nhục về Đấng Christ là quý hơn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Môi-se chọn cùng dân Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 31,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Hê-bơ-rơ 11:31, Ra-háp kỹ nữ không bị hư mất với những kẻ chẳng tin vì cớ gì?",
+    "explanation": "Hê-bơ-rơ 11:31 — 'Bởi đức tin, kỵ nữ Ra-háp không chết với kẻ chẳng tin, vì nàng đã lấy ý tốt tiếp rước các kẻ do thám.' Ra-háp (Giô-suê 2) — người ngoại bang, kỹ nữ — được liệt kê trong gia phả Đấng Christ (Mat 1:5). Đức tin ưu tiên hơn quá khứ. Cũng nhắc đến trong Gia-cơ 2:25.",
+    "language": "vi",
+    "options": [
+      "Bởi đức tin — vì người tiếp đãi các thám tử cách hòa bình",
+      "Vì sự khôn ngoan của người",
+      "Vì gia đình người (xét trong văn cảnh)",
+      "Vì sắc đẹp của người (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Ra-háp đức tin",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 12:5-6, sự sửa phạt của Chúa cho thấy điều gì?",
+    "explanation": "Hê-bơ-rơ 12:6 — 'Vì Chúa sửa phạt kẻ Ngài yêu, hễ ai mà Ngài nhận làm con, thì cho roi cho vọt.' Trích Châm Ngôn 3:11-12. Sửa phạt KHÔNG phải dấu Chúa giận — mà là DẤU CHÚA YÊU như Cha với con. Người không bị sửa phạt thì 'là con ngoại, không phải con thật' (12:8).",
+    "language": "vi",
+    "options": [
+      "Cho thấy Chúa giận dữ (xét trong văn cảnh)",
+      "Cho thấy tín hữu lạc mất ơn",
+      "Cho thấy Chúa nhận họ là con — Chúa sửa phạt người Ngài yêu",
+      "Cho thấy phải đền tội (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Sửa phạt là dấu yêu",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 12:14, không có điều gì thì không ai được thấy Đức Chúa Trời?",
+    "explanation": "Hê-bơ-rơ 12:14 — 'Hãy cầu sự bình an với mọi người, cùng tìm theo sự nên thánh, vì nếu không nên thánh thì chẳng ai được thấy Đức Chúa Trời.' Sự nên thánh (hagiasmos) — không phải tự lực, là kết quả công việc Christ áp dụng (10:14). Nhưng tín hữu phải THEO ĐUỔI, không lười biếng.",
+    "language": "vi",
+    "options": [
+      "Không có lòng yêu thương",
+      "Không có sự thánh khiết",
+      "Không có sự khôn ngoan",
+      "Không có sự công bình"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Không thánh không thấy Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 12:22-24, các tín hữu Tân Ước đã đến với núi nào (đối lập với Si-na-i)?",
+    "explanation": "Hê-bơ-rơ 12:22-24 — 'Nhưng anh em đã tới gần núi Si-ôn, gần thành của Đức Chúa Trời hằng sống, tức là Giê-ru-sa-lem trên trời... gần Đức Chúa Jêsus, là Đấng trung bảo của giao ước mới.' Đối lập với Si-na-i (núi run sợ, lửa, sấm sét — 12:18-21). Tín hữu Tân Ước đến với THỰC THỂ TRÊN TRỜI.",
+    "language": "vi",
+    "options": [
+      "Núi Hô-rếp (xét trong văn cảnh) (như được mô tả trong sách) (đối chiếu với các phần đoạn liên quan)",
+      "Núi Si-ôn dưới đất ở Y-sơ-ra-ên (theo trình tự câu chuyện) (xét theo nội dung gốc)",
+      "Núi Cát Minh (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Núi Si-ôn — thành Đức Chúa Trời hằng sống, Giê-ru-sa-lem trên trời, các thiên sứ vô số, Hội Thánh các con đầu lòng, và Đức Chúa Jêsus Đấng trung bảo"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Núi Si-ôn trên trời",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 13:7, các tín hữu phải nhớ những người dắt dẫn mình và làm gì?",
+    "explanation": "Hê-bơ-rơ 13:7 — 'Hãy nhớ những người dắt dẫn mình, đã giảng đạo Đức Chúa Trời cho mình; hãy nghĩ xem sự cuối cùng đời họ là thể nào, và học đòi đức tin họ.' Bắt chước ĐỨC TIN của thầy giáo — không phải nhân cách hoặc phong cách. Câu kế là 13:8 (Christ bất biến) — vì Christ không đổi nên đức tin truyền dạy cũng không đổi.",
+    "language": "vi",
+    "options": [
+      "Phải vâng phục họ tuyệt đối",
+      "Phải khen ngợi họ (xét trong văn cảnh)",
+      "Phải xét xem cuối cùng đời sống họ ra sao mà bắt chước đức tin",
+      "Phải dâng hiến cho họ (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Nhớ và bắt chước đức tin",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Hê-bơ-rơ 13:17, các tín hữu phải vâng phục các người dắt dẫn mình vì cớ gì?",
+    "explanation": "Hê-bơ-rơ 13:17 — 'Hãy vâng lời những kẻ dắt dẫn anh em và chịu phục các người ấy, — bởi các người ấy tỉnh thức về linh hồn anh em, dường như phải khai trình.' Lý do vâng phục KHÔNG phải vì uy quyền cá nhân — mà vì TRÁCH NHIỆM tinh thần (mục sư phải KHAI TRÌNH với Chúa).",
+    "language": "vi",
+    "options": [
+      "Vì họ thay mặt thức canh giữ linh hồn anh em — như kẻ phải khai trình",
+      "Vì họ là chủ (xét trong văn cảnh)",
+      "Vì họ giàu có (theo cách trình bày của text)",
+      "Vì họ già hơn (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Vâng phục các người dắt dẫn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 13:20, Đức Chúa Trời được gọi là Đức Chúa Trời của gì, và đã đem Đức Chúa Jêsus là Đấng nào ra khỏi sự chết?",
+    "explanation": "Hê-bơ-rơ 13:20 — 'Đức Chúa Trời bình an, là Đấng bởi huyết giao ước đời đời mà đem Đấng chăn chiên lớn là Đức Chúa Jêsus, Chúa chúng ta, từ trong kẻ chết trở lại.' Hai tước hiệu: 'Đức Chúa Trời BÌNH AN' (10 lần TÂN ƯỚC) + 'Đấng Chăn Chiên LỚN' (cùng Giăng 10 'Đấng Chăn TỐT', 1 Phi 5 'Đấng Chăn TRƯỞNG').",
+    "language": "vi",
+    "options": [
+      "Đức Chúa Trời của vinh hiển — Christ là Vua",
+      "Đức Chúa Trời bình an — Christ là Đấng Chăn lớn của bầy chiên, qua huyết của giao ước đời đời",
+      "Đức Chúa Trời các đạo binh — Christ là Tướng",
+      "Đức Chúa Trời Áp-ra-ham — Christ là Đấng Mê-si-a"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Đức Chúa Trời bình an",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 4:13, không vật nào giấu được khỏi mắt Đấng nào, mà chúng ta phải làm gì với Ngài?",
+    "explanation": "Hê-bơ-rơ 4:13 — 'Chẳng có vật nào được giấu kín trước mặt Chúa, nhưng thảy đều trần trụi và lộ ra trước mắt Đấng mà chúng ta phải thưa lại.' 'Trần trụi' (gymnos) + 'lộ ra' (trachēlizō) = thuật ngữ vật tế lễ bị mở phơi cổ ra. Lời Đức Chúa Trời (4:12) đi cùng — Lời sống động VÀ Đấng phán Lời nhìn thấu lòng. KHÁC với Adam giấu mình trong vườn.",
+    "language": "vi",
+    "options": [
+      "Khỏi mắt các thiên sứ — chúng ta thưa lại (như được mô tả trong sách)",
+      "Khỏi mắt Môi-se — chúng ta nghe theo (xét trong văn cảnh)",
+      "Khỏi mắt Đấng mà chúng ta phải khai trình — không vật nào giấu được, thảy đều trần trụi và trần trụi trước Ngài",
+      "Khỏi mắt loài người — chúng ta xưng tội (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Trần trụi trước Đấng khai trình",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 6,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 6:20, Đấng Christ đã vào nơi sau bức màn với tư cách gì cho chúng ta?",
+    "explanation": "Hê-bơ-rơ 6:20 — 'Trong nơi đó Đức Chúa Jêsus đã vào như Đấng đi trước của chúng ta, vì đã trở nên thầy tế lễ thượng phẩm đời đời, theo ban Mên-chi-xê-đéc.' 'ĐẤNG ĐI TRƯỚC' (prodromos) — chỉ dùng 1 LẦN trong NT tại đây. Hình ảnh: thuyền vào cảng — thuyền nhỏ đi trước neo, kéo thuyền lớn vào. Christ vào nơi chí thánh TRƯỚC để mở đường cho ta theo (kết hợp với 6:19 hình neo).",
+    "language": "vi",
+    "options": [
+      "Như tiên tri vĩ đại nhất (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Như vua dòng Đa-vít (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Như Đấng Trung Bảo (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Như ĐẤNG ĐI TRƯỚC (forerunner / prodromos) — đã vào trước vì chúng ta, làm thầy tế lễ đời đời theo ban Mên-chi-xê-đéc"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Đấng đi trước",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Hê-bơ-rơ 7:3, Mên-chi-xê-đéc được mô tả là gì khiến ông là hình bóng Christ?",
+    "explanation": "Hê-bơ-rơ 7:3 — 'Người không cha, không mẹ, không gia phả; không có ngày đầu, cũng không có ngày cuối đời, nhưng giống như Con Đức Chúa Trời, — Mên-chi-xê-đéc nầy làm thầy tế lễ đời đời vô cùng.' Cách viết Cựu Ước (Sáng 14:18-20) IM LẶNG về cha mẹ + gia phả Mên-chi-xê-đéc — đó là điểm tác giả tận dụng. Khác A-rôn (gia phả Lê-vi nghiêm ngặt).",
+    "language": "vi",
+    "options": [
+      "KHÔNG cha, KHÔNG mẹ, KHÔNG có gia phả, KHÔNG có ngày sinh ngày chết — giống Con Đức Chúa Trời, làm thầy tế lễ đời đời",
+      "Có cha là tổ phụ Sem (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Là người Do Thái (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Là vua Sa-lem được công nhận (như được mô tả trong sách) (xét theo nội dung gốc)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Mên-chi-xê-đéc không có gia phả",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 7:4-7, Áp-ra-ham đã dâng 1/10 cho Mên-chi-xê-đéc chứng tỏ điều gì?",
+    "explanation": "Hê-bơ-rơ 7:7 — 'Vả, không cãi được rằng người bậc cao chúc phước cho kẻ bậc thấp.' Lập luận: Áp-ra-ham > Lê-vi (cháu chắt) > Lê-vi-tế → tế lễ Lê-vi nhỏ hơn Áp-ra-ham → Áp-ra-ham nhỏ hơn Mên-chi-xê-đéc → tế lễ Mên-chi-xê-đéc (Christ) lớn hơn tế lễ Lê-vi. Đây là cốt lõi lập luận chương 7.",
+    "language": "vi",
+    "options": [
+      "Chứng tỏ Áp-ra-ham giàu có (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Chứng tỏ Mên-chi-xê-đéc lớn hơn Áp-ra-ham — vì kẻ nhỏ hơn nhận phước từ kẻ lớn hơn (và do đó lớn hơn cả con cháu Áp-ra-ham là dòng Lê-vi)",
+      "Chứng tỏ Áp-ra-ham giữ luật pháp (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Chứng tỏ Mên-chi-xê-đéc cần lễ vật (như được mô tả trong sách) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Mên-chi-xê-đéc lớn hơn Áp-ra-ham",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 7:9-10, dòng Lê-vi nhận một phần mười, nhưng cũng được nói là đã làm gì khi Áp-ra-ham dâng cho Mên-chi-xê-đéc?",
+    "explanation": "Hê-bơ-rơ 7:9-10 — 'Có thể nói rằng Lê-vi là kẻ thâu lấy một phần mười đó, chính mình người cũng đã đóng một phần mười cho Áp-ra-ham, vì lúc Mên-chi-xê-đéc đi đón tiên tổ, thì Lê-vi còn ở trong lòng tổ phụ.' Lập luận tinh tế: trẻ em chưa sinh ra được kể là 'ở trong lòng' tổ phụ. Vậy Lê-vi (qua Áp-ra-ham) đã CÔNG NHẬN tế lễ Mên-chi-xê-đéc TỐT HƠN. Christology vững chắc.",
+    "language": "vi",
+    "options": [
+      "Cũng đã hiện diện ở đó (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Cũng đã ban phước cho dân (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Cũng đã DÂNG MỘT PHẦN MƯỜI qua Áp-ra-ham — vì Lê-vi còn ở trong cha tổ Áp-ra-ham khi Mên-chi-xê-đéc gặp ông",
+      "Cũng đã tế lễ ngày đó (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Lê-vi dâng qua Áp-ra-ham",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 7:23-24, sự khác biệt cốt yếu giữa các thầy tế lễ A-rôn và Christ là gì?",
+    "explanation": "Hê-bơ-rơ 7:23-24 — 'Vả lại, số thầy tế lễ rất nhiều, vì sự chết nên không giữ chức được lâu dài. Nhưng Ngài, vì hằng có đời đời, nên giữ lấy chức tế lễ không hề đổi.' 'Không thể đổi' (aparabatos) = bất khả chuyển. Ý: A-rôn cần kế tục vì chết; Christ KHÔNG CHẾT NỮA → tế lễ KHÔNG đổi → cứu rỗi VỮNG VÀNG ĐỜI ĐỜI.",
+    "language": "vi",
+    "options": [
+      "A-rôn dâng huyết bò, Christ dâng huyết dê (xét trong văn cảnh)",
+      "A-rôn người Do Thái, Christ người Do Thái + dân ngoại (như được mô tả trong sách)",
+      "A-rôn dâng mỗi tuần, Christ dâng mỗi ngày (theo cách trình bày của text)",
+      "A-rôn nhiều người vì sự chết ngăn cản — Christ một mình hằng sống đời đời, nên giữ chức tế lễ KHÔNG ĐỔI ĐƯỢC"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Christ tế lễ không đổi",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 26,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Hê-bơ-rơ 7:26, Thầy Tế Lễ Thượng Phẩm phù hợp với chúng ta phải có 5 đặc tính nào?",
+    "explanation": "Hê-bơ-rơ 7:26 — 'Vì chúng ta cần thầy tế lễ thượng phẩm thể ấy: thánh khiết, không tội lỗi, không ô uế, biệt khỏi kẻ có tội, được cao hơn các từng trời.' 5 ĐẶC TÍNH siêu việt — A-rôn không thể có (phải dâng cho chính mình trước, 7:27); chỉ Christ mới có. Khác với 'tế lễ thượng phẩm thương xót và trung tín' (2:17) là phẩm chất QUAN HỆ.",
+    "language": "vi",
+    "options": [
+      "Thánh khiết, KHÔNG có ác, KHÔNG ô uế, biệt khỏi tội nhân, được cất lên cao hơn các tầng trời",
+      "Mạnh mẽ, khôn ngoan, đẹp trai, giàu có, được tôn kính",
+      "Học rộng, Do Thái, gia phả Lê-vi, dòng Áp-ra-ham, người Giu-đa",
+      "Sinh tại Bết-lê-hem, học tại Giê-ru-sa-lem, lớn tại Na-xa-rét, chết tại Gô-gô-tha, sống lại"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "5 đặc tính tế lễ thượng phẩm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 8,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 8:5, đền tạm Môi-se cất là gì so với thực thể trên trời?",
+    "explanation": "Hê-bơ-rơ 8:5 — 'Các thầy đó hầu việc trong nơi giống và bóng các sự trên trời, chính như khi Môi-se sắp cất đền tạm thì được phán bảo: Hãy cẩn thận, làm mọi việc theo như kiểu mẫu đã chỉ cho ngươi tại trên núi.' Trích Xuất 25:40. Đền tạm cũ là 'BÓNG' (skia) + 'KIỂU MẪU' (hypodeigma) của thực thể trên trời. Christ vào ĐỀN TRÊN TRỜI thật (9:24).",
+    "language": "vi",
+    "options": [
+      "Là đền thờ thật của Đức Chúa Trời (như được mô tả trong sách)",
+      "Là đền lớn hơn (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Là HÌNH BÓNG VÀ KIỂU MẪU của các sự ở trên trời — Môi-se được dặn 'làm theo kiểu mẫu trên núi'",
+      "Là sản phẩm của loài người (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Bóng và kiểu mẫu",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 8,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 8:8-12, sách trích đoạn dài Cựu Ước nào để thiết lập giao ước mới?",
+    "explanation": "Hê-bơ-rơ 8:8-12 — trích GIÊ-RÊ-MI 31:31-34 NGUYÊN VẸN (đoạn trích Cựu Ước DÀI NHẤT trong Tân Ước). Bốn lời hứa giao ước mới: (1) Luật ghi vào lòng và trí; (2) Đức Chúa Trời là Đức Chúa Trời của họ; (3) Mọi người đều biết Chúa; (4) Tha tội + KHÔNG nhớ nữa. 8:13 — 'giao ước mới' khiến cũ trở nên CŨ + GẦN BIẾN MẤT.",
+    "language": "vi",
+    "options": [
+      "Phục Truyền 28 — phước và rủa (xét trong văn cảnh)",
+      "Giê-rê-mi 31:31-34 — giao ước mới: luật trong lòng, biết Chúa từ nhỏ chí lớn, tha tội KHÔNG nhớ nữa",
+      "Ê-xê-chi-ên 36 — tâm mới, linh mới (theo cách trình bày của text)",
+      "Thi Thiên 110 — Mê-si-a là vua + tế lễ (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Trích Giê-rê-mi 31",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "verseStart": 24,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 9:24, Christ KHÔNG vào nơi rất thánh do tay làm nên ở đây, nhưng vào đâu?",
+    "explanation": "Hê-bơ-rơ 9:24 — 'Vì Đấng Christ chẳng phải vào nơi thánh bởi tay người làm ra, theo kiểu mẫu nơi thánh thật, bèn là vào chính trong trời, để bây giờ vì chúng ta hiện ra trước mặt Đức Chúa Trời.' Đền thờ Giê-ru-sa-lem chỉ là 'kiểu mẫu' (antitypa) của ĐỀN THỰC TRÊN TRỜI. Christ vào THẬT — và HIỆN RA trước Cha cho ta. Mạnh hơn 'cầu thay' (7:25) — Christ THÂN SỰ trình diện.",
+    "language": "vi",
+    "options": [
+      "Vào tu viện (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Vào đền thờ Sa-lô-môn (như được mô tả trong sách)",
+      "Vào hội đường (theo cách trình bày của text)",
+      "Vào CHÍNH TRỜI — bây giờ hiện ra trước mặt Đức Chúa Trời cho chúng ta"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Christ vào chính trời",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "verseStart": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Hê-bơ-rơ 9:28, Christ sẽ HIỆN RA LẦN THỨ HAI để làm gì cho những kẻ trông đợi Ngài?",
+    "explanation": "Hê-bơ-rơ 9:28 — 'Cũng vậy, Đấng Christ đã dâng mình chỉ một lần đặng cất tội lỗi của nhiều người, Ngài lại sẽ hiện ra lần thứ hai, không phải để cất tội đi nữa, nhưng để ban sự cứu rỗi cho kẻ chờ đợi Ngài.' Lần 1: hi sinh chuộc tội. Lần 2: KHÔNG phải chết nữa — đến để HOÀN TẤT cứu rỗi (sự sống lại thân thể, vinh hiển). Câu nền tảng cho parousia.",
+    "language": "vi",
+    "options": [
+      "Hiện ra KHÔNG vì cớ tội lỗi nữa, nhưng để BAN SỰ CỨU RỖI cho những kẻ trông đợi Ngài",
+      "Hiện ra để xét đoán mọi người (xét trong văn cảnh)",
+      "Hiện ra để khôi phục Y-sơ-ra-ên (theo cách trình bày của text)",
+      "Hiện ra để dâng tế lễ một lần nữa (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Christ hiện ra lần hai",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 10:1, luật pháp là gì so với hình của các sự lành sắp tới?",
+    "explanation": "Hê-bơ-rơ 10:1 — 'Vả, luật pháp chỉ là bóng của sự tốt lành ngày sau, không có hình thật của các vật, nên không bao giờ cậy tế lễ mỗi năm hằng dâng như vậy, mà khiến kẻ đến gần Đức Chúa Trời trở nên trọn lành được.' 2 từ then chốt: 'BÓNG' (skia) vs 'HÌNH' (eikōn). Bóng → có tồn tại nhưng KHÔNG phải bản thân; Christ là HÌNH/BẢN THÂN thật. Lập luận: nếu hệ cũ đủ — đã không cần lặp đi lặp lại.",
+    "language": "vi",
+    "options": [
+      "Là chính hình của các sự lành (theo cách trình bày của text)",
+      "Là kế hoạch của Đức Chúa Trời (như được mô tả trong sách)",
+      "Chỉ là BÓNG (skia) của các sự lành sắp đến — KHÔNG phải hình thật, nên không thể làm cho kẻ đến gần được trọn vẹn",
+      "Là tiên tri trực tiếp (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Luật là bóng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 26,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 10:26 (cảnh báo thứ 4), nếu cố ý phạm tội sau khi đã nhận biết lẽ thật, thì điều gì xảy ra?",
+    "explanation": "Hê-bơ-rơ 10:26-27 — 'Vì nếu chúng ta đã nhận biết lẽ thật rồi, mà lại cố ý phạm tội, thì không còn có tế lễ chuộc tội nữa, nhưng chỉ có sự đợi chờ kinh khiếp về sự phán xét, và lửa hừng sẽ đốt cháy kẻ bội nghịch.' 'Cố ý' (hekousiōs) — phạm có chủ ý, biết rõ. Đây là CẢNH BÁO 4. Hiểu đúng: KHÔNG dạy mất cứu rỗi mà cảnh báo về việc TỪ BỎ Christ — không có hi sinh nào khác.",
+    "language": "vi",
+    "options": [
+      "Sẽ được tha thứ qua việc dâng nhiều của lễ (như được mô tả trong sách)",
+      "KHÔNG còn của lễ chuộc tội nữa — chỉ còn sự đợi xét đoán + lửa hừng thiêu nuốt kẻ thù",
+      "Phải dâng huyết bò đực (xét trong văn cảnh)",
+      "Sẽ bị các thiên sứ trừng phạt (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Cố ý phạm tội",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 29,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 10:29, ai khinh bỉ giao ước mới đáng chịu hình phạt nặng hơn người vi phạm luật Môi-se vì họ đã làm gì với 3 điều?",
+    "explanation": "Hê-bơ-rơ 10:29 — '...kẻ giày đạp Con Đức Chúa Trời, coi huyết của giao ước, tức là huyết mà mình nhờ đó được nên thánh, là ô uế, lại khinh lờn Đức Thánh Linh của ân điển?' 3 trọng tội: (1) GIẪM ĐẠP (katapateō) Con; (2) Coi HUYẾT GIAO ƯỚC là ô uế (koinos); (3) LĂNG MẠ (enybrizō) Thánh Linh. Mức độ tội phản ánh mức độ vinh hiển bị khinh lờn.",
+    "language": "vi",
+    "options": [
+      "Vi phạm Sa-bát, không cắt bì, ăn của ô uế (xét trong văn cảnh)",
+      "Bỏ thờ phượng, không dâng phần mười, lấy danh Chúa",
+      "Khước từ lời tiên tri, đụng đến hòm giao ước, ăn bánh tế",
+      "Đã GIẪM ĐẠP Con Đức Chúa Trời, coi HUYẾT GIAO ƯỚC là ô uế, và LĂNG MẠ Đức Thánh Linh ơn phước"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "3 tội cảnh báo",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 39,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Hê-bơ-rơ 11:39-40, các anh hùng đức tin Cựu Ước CHƯA được trọn vẹn vì cớ gì?",
+    "explanation": "Hê-bơ-rơ 11:39-40 — 'Hết thảy những người đó dầu nhân đức tin đã được chứng tốt, song chưa hề nhận lãnh điều đã được hứa cho mình. Vì Đức Chúa Trời có sắm sẵn điều tốt hơn cho chúng ta, hầu cho ngoại chúng ta ra họ không đạt đến sự trọn vẹn được.' Lần thứ 13 dùng 'TỐT HƠN' — kết thúc chương 11. Cứu rỗi là TẬP THỂ trong Christ — anh hùng cũ + tín hữu mới = ONE PEOPLE.",
+    "language": "vi",
+    "options": [
+      "Vì Đức Chúa Trời đã DÀNH cho chúng ta điều TỐT HƠN — họ chỉ trọn vẹn cùng với chúng ta, không phải tách rời",
+      "Vì họ chưa giữ luật trọn vẹn (theo cách trình bày của text)",
+      "Vì họ chưa qua Đại Lễ Chuộc Tội (như được mô tả trong sách)",
+      "Vì sống trước Christ (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Trọn vẹn cùng nhau",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Hê-bơ-rơ 12:18-21, núi Si-na-i được mô tả thế nào để đối chiếu với núi Si-ôn trên trời?",
+    "explanation": "Hê-bơ-rơ 12:18-21 — 'Anh em chẳng tới gần một hòn núi mà người ta có thể đụng đến được, cũng chẳng đến gần lửa hừng, hoặc tối tăm, hoặc âm u, hoặc gió dữ... Lại quang cảnh đó hãi hùng, đến nỗi Môi-se nói rằng: Ta rất sợ sệt và run rẩy.' Si-na-i = nỗi sợ + sự xa cách. 12:22-24 = Si-ôn trên trời = vui vẻ + đến gần được. Tin Lành lớn hơn LUẬT.",
+    "language": "vi",
+    "options": [
+      "Là núi đẹp đẽ và yên bình (theo cách trình bày của text)",
+      "Là núi của ơn phước (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Là núi RUN sờ được, lửa cháy, mây tối, sấm sét, tiếng kèn — Môi-se nói 'tôi rất kinh khiếp run rẩy'",
+      "Là núi cao nhất Y-sơ-ra-ên (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Si-na-i đáng sợ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Hê-bơ-rơ 12:25-26 (cảnh báo thứ 5), Đấng đã rúng động đất tại Si-na-i hứa sẽ rúng động gì nữa lần này?",
+    "explanation": "Hê-bơ-rơ 12:26-27 — 'Tiếng Đấng nói lúc đó làm rúng động đất; còn rày thì Ngài có lời hứa nầy: Lần nầy nữa, ta sẽ chẳng những làm rúng động đất, mà cả trời nữa... Hầu cho những điều có thể rúng động được mất đi, và những điều chẳng có thể rúng động được sẽ còn lại.' Trích Ag-gai 2:6. CẢNH BÁO 5: chớ khước từ Đấng phán từ trời. Vương quốc Đức Chúa Trời = không thể rúng động (12:28).",
+    "language": "vi",
+    "options": [
+      "Sẽ rúng động chỉ Y-sơ-ra-ên (như được mô tả trong sách)",
+      "Sẽ rúng động KHÔNG NHỮNG đất NHƯNG CẢ TRỜI — chỉ điều không bị rúng động (vương quốc) còn lại",
+      "Sẽ rúng động Sa-tan (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Sẽ rúng động hết loài thú (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Rúng động đất và trời",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 29,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Hê-bơ-rơ 12:29, lý do tín hữu phải thờ phượng Đức Chúa Trời với lòng kính sợ là gì?",
+    "explanation": "Hê-bơ-rơ 12:29 — 'Vì Đức Chúa Trời chúng ta là đám lửa hay thiêu đốt.' Trích Phục Truyền 4:24. Mặc dù tín hữu đã đến với Si-ôn ơn phước, nhưng Đức Chúa Trời CỦA giao ước mới VẪN LÀ Đức Chúa Trời thiêu đốt. Ơn phước KHÔNG hủy bỏ thánh khiết. Câu KẾT của 5 cảnh báo — kêu gọi 'kính sợ và run rẩy' (12:28).",
+    "language": "vi",
+    "options": [
+      "Vì Ngài là vua quyền năng (như được mô tả trong sách)",
+      "Vì Ngài là Đấng phán xét (theo cách trình bày của text)",
+      "Vì Ngài là Đấng tạo hóa (xét trong văn cảnh)",
+      "Vì ĐỨC CHÚA TRỜI CHÚNG TA LÀ ĐÁM LỬA HAY THIÊU NUỐT"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Hê-bơ-rơ",
+      "Thư tín",
+      "Đức Chúa Trời lửa thiêu",
+      "Nâng cao"
+    ]
   }
 ]

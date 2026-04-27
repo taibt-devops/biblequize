@@ -15,13 +15,13 @@
 - 79 single + 0 multi; idx 19/17/22/21
 - Topics: 4 Servant Songs (42, 49, 50, 53 toàn chương); Mê-si-a prophecies (7:14 Em-ma-nu-ên, 9:6 5 names, 11:1-10 Branch); Isaiah call vision 6; Hezekiah 36-39; Cyrus 44-45; new heaven new earth 65; trishagion deep dive; Branch (netzer) → Nazarene (Mat 2:23); 4 cross-ref (Mat 1:23, Mat 2:23, Phil 2:10-11, Rom 15:12); Servant Song 4 chiastic structure
 
-#### Task B1-2: Hebrews +60 (20→80)
-- Status: [ ] TODO
-- Current: 20 (E11 M7 H2) → Target: 80 (E24 M36 H20)
-- Plan: +13 Easy + 29 Medium + 18 Hard
-- File(s): `hebrews_quiz.json` + `hebrews_quiz_en.json` + `scripts/append_hebrews_v3b.py`
-- Strategy: Christ Tế Lễ Thượng Phẩm theo Mên-chi-xê-đéc; "TỐT HƠN" 13 lần (1:4, 7:22, 8:6, 11:40); 5 cảnh báo (2:1-4, 3:7-4:13, 5:11-6:12, 10:26-31, 12:25-29); chương 11 (anh hùng đức tin); 4:14-16 ngôi ơn; Ngày Đại Lễ Chuộc Tội
-- Commit: `feat(seed): Hebrews +60 V3 B1 quality expansion (20→80)`
+#### Task B1-2: Hebrews +60 (20→80) [x] DONE 2026-04-27
+- 20→**80** (E24 M36 H20, ratio **30.0/45.0/25.0%** — khớp 30/45/25 chính xác)
+- Pool +60 (đúng plan): 13 Easy + 29 Medium + 18 Hard VI + 60 EN 1:1
+- Single idx: 0:12, 1:15, 2:18, 3:15 (well distributed)
+- 60 single + 0 multi
+- Topics: 5 cảnh báo (2:1, 3:12, 5:12-6:1, 10:26-29, 12:25-29); "TỐT HƠN" theme (1:4, 7:22, 8:6, 11:39-40); Mên-chi-xê-đéc deep (7:3 không gia phả, 7:4 Áp-ra-ham dâng 1/10, 7:9 Lê-vi qua Áp-ra-ham, 7:23-24 unchangeable); ngôi ơn (4:14-16); Đại Lễ Chuộc Tội (9:7, 9:12, 9:14, 9:24-28); chương 11 anh hùng đức tin (Abel, Hê-nóc, Nô-ê, tổ phụ khách lạ, Môi-se, Ra-háp); luật là bóng (8:5, 10:1); trích Giê-rê-mi 31 dài nhất (8:8-12); Si-na-i vs Si-ôn (12:18-24); ngoài trại (13:12); đám lửa thiêu (12:29)
+- VI/EN parity 100%, 0 duplicates, 0 length warnings
 
 #### Task B1-3: 1 Corinthians +46 (34→80)
 - Status: [ ] TODO

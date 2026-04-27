@@ -537,5 +537,1565 @@
       "Epistle",
       "Advanced"
     ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 1:3, the Son is what in relation to God?",
+    "explanation": "Hebrews 1:3 — 'He is the radiance of the glory of God and the exact imprint of his nature, and he upholds the universe by the word of his power.' One of the highest Christological verses in the NT — Christ is NOT a creature; He shares God's very being.",
+    "language": "en",
+    "options": [
+      "The highest of all creatures",
+      "A special angel (per the textual narrative)",
+      "The radiance of God's glory and the exact imprint of His nature",
+      "A great prophet (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Christ exact imprint of nature",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 1:4, Christ became greater than whom?",
+    "explanation": "Hebrews 1:4 — 'having become as much superior to angels as the name he has inherited is more excellent than theirs.' This is the FIRST use of the 'BETTER' theme woven throughout the book — Christ is BETTER than angels (1-2), BETTER than Moses (3), BETTER than Aaron (4-7), with a BETTER covenant (8-10).",
+    "language": "en",
+    "options": [
+      "The kings of this age",
+      "The angels (according to the text's framing)",
+      "The Old Testament prophets",
+      "Moses (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Christ better than angels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 2:3, the great salvation came first through whom?",
+    "explanation": "Hebrews 2:3 — 'how shall we escape if we neglect such a great salvation? It was declared at first by the Lord, and it was attested to us by those who heard.' This is the FIRST of the 5 warning passages — do not neglect salvation.",
+    "language": "en",
+    "options": [
+      "Through Moses, then to us",
+      "Through the prophets (according to the text's framing)",
+      "Through angels (per the textual narrative)",
+      "Through the Lord himself, and was attested to us by those who heard"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Neglect great salvation",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Hebrews 3:1, believers are called what, and must consider Jesus as Apostle and High Priest?",
+    "explanation": "Hebrews 3:1 — 'Therefore, holy brothers, you who share in a heavenly calling, consider Jesus, the apostle and high priest of our confession.' 'Apostle' (apostolos) = one sent → Christ as the One sent by the Father. Comparison with Moses follows in next verses.",
+    "language": "en",
+    "options": [
+      "Holy brothers, partakers of a heavenly calling — consider Jesus",
+      "Servants — consider Moses",
+      "Israelites — consider Aaron",
+      "Gentiles — consider the prophets"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Holy brothers consider Jesus",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 4:9, what remains for the people of God?",
+    "explanation": "Hebrews 4:9 — 'So then, there remains a Sabbath rest for the people of God.' 'Sabbath rest' (sabbatismos) — not just the seventh day or Canaan land, but spiritual rest in Christ, consummated in eternity.",
+    "language": "en",
+    "options": [
+      "A promised land",
+      "A temple",
+      "A Sabbath rest",
+      "A kingdom"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Sabbath rest remains",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 5,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 5:6, Christ is a priest forever after whose order?",
+    "explanation": "Hebrews 5:6 — 'as he says also in another place, \"You are a priest forever, after the order of Melchizedek.\"' Quoting Psalm 110:4 — Melchizedek (Gen 14) was the priest-king of Salem, no genealogy; Christ is a BETTER priest than Aaron because of this order.",
+    "language": "en",
+    "options": [
+      "The order of Aaron",
+      "The order of Melchizedek",
+      "The order of Levi",
+      "The order of Abraham"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Priest order of Melchizedek",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 6,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 6:19, our hope is likened to what for the soul?",
+    "explanation": "Hebrews 6:19 — 'We have this as a sure and steadfast anchor of the soul, a hope that enters into the inner place behind the curtain.' The image of an anchor — unseen but holding the ship from drifting; our hope is anchored where Christ entered (behind the veil = the heavenly Most Holy Place).",
+    "language": "en",
+    "options": [
+      "Like a flame",
+      "Like a bird's wings",
+      "Like a sail",
+      "Like a sure and steadfast anchor"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Anchor of the soul",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 8,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 8:6, how is Christ the Mediator of the covenant?",
+    "explanation": "Hebrews 8:6 — 'But as it is, Christ has obtained a ministry that is as much more excellent than the old as the covenant he mediates is better, since it is enacted on better promises.' The 5th use of 'BETTER' in the book — better ministry, better covenant, better promises.",
+    "language": "en",
+    "options": [
+      "Of the old covenant",
+      "Of the covenant with Moses",
+      "Of a BETTER covenant, enacted on better promises",
+      "Of the covenant with Abraham"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Mediator of better covenant",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 9:12, Christ entered the holy places ONCE FOR ALL by what blood?",
+    "explanation": "Hebrews 9:12 — 'he entered once for all into the holy places, not by means of the blood of goats and calves but by means of his own blood, thus securing an eternal redemption.' Unlike the old Day of Atonement (yearly with animal blood) — Christ ONCE FOR ALL with HIS OWN blood, effective ETERNALLY.",
+    "language": "en",
+    "options": [
+      "By the blood of bulls and goats",
+      "By his own blood, securing eternal redemption",
+      "By the blood of an unblemished lamb",
+      "By water and the Spirit"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Christ entered once for all",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Hebrews 10:19, because of the blood of Jesus, believers have what to enter the holy places?",
+    "explanation": "Hebrews 10:19 — 'Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus.' The temple veil torn (Mt 27:51) — now anyone who trusts Christ can come DIRECTLY before God, no mediating priest needed.",
+    "language": "en",
+    "options": [
+      "Confidence to enter the holy places",
+      "The need of a mediating priest",
+      "Must offer sacrifice first",
+      "Need many days of purification"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Confidence to enter",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 12:1, believers are surrounded by what cloud, and what should they do?",
+    "explanation": "Hebrews 12:1 — 'Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us.' The 'cloud of witnesses' = the heroes of faith in chapter 11 — they prove faith can prevail.",
+    "language": "en",
+    "options": [
+      "A cloud of angels — must worship",
+      "A dark cloud — must fear (per the textual narrative)",
+      "A great cloud of witnesses — must lay aside every weight and sin, and run with endurance",
+      "A glory cloud — must wait (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Great cloud of witnesses",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 13:2, do not neglect to show hospitality to strangers, for some have done so and entertained whom unknowingly?",
+    "explanation": "Hebrews 13:2 — 'Do not neglect to show hospitality to strangers, for thereby some have entertained angels unawares.' An allusion to Abraham (Gen 18) hosting three men at the oaks of Mamre — they were the LORD and two angels; possibly also Lot (Gen 19) receiving two angels in Sodom.",
+    "language": "en",
+    "options": [
+      "Entertained kings",
+      "Entertained angels",
+      "Entertained priests",
+      "Entertained prophets"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Entertained angels",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 13:12, Jesus suffered outside the gate to do what?",
+    "explanation": "Hebrews 13:12 — 'So Jesus also suffered outside the gate in order to sanctify the people through his own blood.' Image from the old law: the Day of Atonement sin-offering animal was burned OUTSIDE the camp (Lev 16:27); Christ died OUTSIDE Jerusalem in fulfillment — calling believers to 'go to him outside the camp' (13:13).",
+    "language": "en",
+    "options": [
+      "To prove innocence",
+      "To fulfill the Mosaic law",
+      "To gain glory (per the textual narrative)",
+      "To sanctify the people through his own blood"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Suffered outside the gate",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 1:8 (citing Psalm 45:6), what does God call the Son?",
+    "explanation": "Hebrews 1:8 — 'But of the Son he says, \"Your throne, O God, is forever and ever, the scepter of uprightness is the scepter of your kingdom.\"' Quoting Psalm 45:6 — the Father addresses the Son AS God. One of the strongest NT proofs of Christ's full deity.",
+    "language": "en",
+    "options": [
+      "A faithful servant (as described in the passage)",
+      "Supreme prophet (according to the text's framing)",
+      "Beloved Son (per the textual narrative)",
+      "God, whose throne is forever and ever"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Father calls Son God",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 1:14, what are angels?",
+    "explanation": "Hebrews 1:14 — 'Are they not all ministering spirits sent out to serve for the sake of those who are to inherit salvation?' Angels' role = servants; Christ's role = Son. Though angels are high beings, they still serve — Christ is master.",
+    "language": "en",
+    "options": [
+      "The highest of creatures (according to the text's framing)",
+      "Beings worthy of worship (as described in the passage)",
+      "Ministering spirits sent out to serve those who will inherit salvation",
+      "Rulers over nations (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Angels ministering spirits",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Hebrews 2:1 (the first warning), what must believers do to avoid drifting?",
+    "explanation": "Hebrews 2:1 — 'Therefore we must pay much closer attention to what we have heard, lest we drift away from it.' This is the FIRST of the 5 warning passages in Hebrews. The image of 'drifting' (pararuō) — like an unanchored boat drifting from harbor. Must HOLD FAST to the truth heard.",
+    "language": "en",
+    "options": [
+      "Pay much closer attention to what we have heard",
+      "Strictly keep the law of Moses",
+      "Offer many sacrifices",
+      "Separate from society"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Warning against drifting",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 2:17, why did Christ have to be made like his brothers in every way?",
+    "explanation": "Hebrews 2:17 — 'Therefore he had to be made like his brothers in every respect, so that he might become a merciful and faithful high priest in the service of God, to make propitiation for the sins of the people.' Christ TRULY became human to be a MERCIFUL (toward people) and FAITHFUL (toward God) high priest — the foundational concept for the rest of the book.",
+    "language": "en",
+    "options": [
+      "To prove he was human (per the textual narrative)",
+      "So that he might become a merciful and faithful high priest, to make propitiation for the sins of the people",
+      "To learn the Old Testament (as described in the passage)",
+      "To be accepted by God (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Merciful faithful high priest",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 3:3, Christ is counted worthy of more glory than whom? Why?",
+    "explanation": "Hebrews 3:3 — 'For Jesus has been counted worthy of more glory than Moses—as much more glory as the builder of a house has more honor than the house itself.' Argument: Moses was faithful IN God's house (3:5), Christ is faithful AS A SON over his house (3:6). Christ is BETTER than Moses.",
+    "language": "en",
+    "options": [
+      "More than prophets — for proclaiming God's word",
+      "More than angels — for being the Son",
+      "More than Moses — as the builder of a house has more honor than the house",
+      "More than Aaron — for offering better sacrifices"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Christ better than Moses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 3:12, what kind of heart must believers watch out for in themselves?",
+    "explanation": "Hebrews 3:12 — 'Take care, brothers, lest there be in any of you an evil, unbelieving heart, leading you to fall away from the living God.' This warning uses Israel's failure to enter Canaan due to unbelief (Numbers 14) as a lesson — don't imitate them.",
+    "language": "en",
+    "options": [
+      "A proud heart (per the textual narrative)",
+      "A greedy heart (according to the text's framing)",
+      "A deceitful heart (as described in the passage)",
+      "An evil, unbelieving heart that turns away from the living God"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Evil unbelieving heart",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 4:14, since we have a great High Priest who has passed through the heavens, what should we do?",
+    "explanation": "Hebrews 4:14 — 'Since then we have a great high priest who has passed through the heavens, Jesus, the Son of God, let us hold fast our confession.' Christ is BETTER than the old high priest because: (1) he is the SON of God; (2) he has passed through the heavens (entered the true heavenly Most Holy Place); (3) he lives forever.",
+    "language": "en",
+    "options": [
+      "Fast (per the textual narrative)",
+      "Separate ourselves",
+      "Hold fast our confession",
+      "Offer sacrifices"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Hold fast confession",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 4:16, since we have a sympathetic High Priest, what are believers encouraged to do?",
+    "explanation": "Hebrews 4:16 — 'Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need.' A famous verse — the 'THRONE OF GRACE' is not a throne of judgment; prayer is free and bold because Christ opened the way.",
+    "language": "en",
+    "options": [
+      "Approach the Most Holy Place with trembling",
+      "Draw near with confidence to the throne of grace, to receive mercy and find grace to help in time of need",
+      "Must offer sacrifice first (per the textual narrative)",
+      "Must examine ourselves carefully first (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Throne of grace",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 5,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 5:12, believers who should have been teachers needed someone to teach them what?",
+    "explanation": "Hebrews 5:12 — 'For though by this time you ought to be teachers, you need someone to teach you again the basic principles of the oracles of God. You need milk, not solid food.' A rebuke — they have STAGNATED in spiritual growth; must move from milk (basics) to solid food (deeper truths).",
+    "language": "en",
+    "options": [
+      "Someone to teach the Mosaic law (according to the text's framing)",
+      "Someone to teach the mysteries of Revelation",
+      "Someone to teach high theology (per the textual narrative)",
+      "Someone to teach again the basic principles of God's word — they need milk, not solid food"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Need milk again",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Hebrews 6:1, what should believers leave the elementary doctrine and go on to?",
+    "explanation": "Hebrews 6:1 — 'Therefore let us leave the elementary doctrine of Christ and go on to maturity.' 'Maturity' (teleios) = perfection/completeness. Continuation of the rebuke in 5:12 — must grow from milk to solid food. The 'elementary' items listed in 6:1-2: repentance, faith, baptisms, laying on of hands, resurrection, judgment.",
+    "language": "en",
+    "options": [
+      "Go on to maturity (perfection)",
+      "Go to the promised land",
+      "Go to the temple",
+      "Go to the rituals"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Go on to maturity",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 7:22, because Christ is High Priest with an oath, he becomes the Guarantor of what covenant?",
+    "explanation": "Hebrews 7:22 — 'This makes Jesus the guarantor of a better covenant.' This is the FIRST use of the phrase 'BETTER COVENANT' in the book — it will be developed fully in chapters 8-10. Christ is the GUARANTOR (engyos) — he stands surety that the covenant will hold.",
+    "language": "en",
+    "options": [
+      "Of the old covenant",
+      "Of the Abrahamic covenant",
+      "Of a BETTER covenant",
+      "Of the Sinai covenant"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Guarantor of better covenant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 7:25, Christ can save to the uttermost those who draw near to God through him because he does what?",
+    "explanation": "Hebrews 7:25 — 'Consequently, he is able to save to the uttermost those who draw near to God through him, since he always lives to make intercession for them.' Christ does NOT just die once and finish — he LIVES FOREVER to intercede (two ministries: completed sacrifice + perpetual intercession). Unlike Aaron (died, replaced).",
+    "language": "en",
+    "options": [
+      "Because he died once (per the textual narrative)",
+      "Because he always lives to make intercession for them",
+      "Because he is the Son of God",
+      "Because he has authority to forgive"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Always lives to intercede",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 9:7, who and how often entered the Most Holy Place of the old tabernacle?",
+    "explanation": "Hebrews 9:7 — 'but into the second only the high priest goes, and he but once a year, and not without taking blood, which he offers for himself and for the unintentional sins of the people.' This is the Day of Atonement (Yom Kippur — Lev 16). Christ surpasses: he entered ONCE FOR ALL with HIS OWN blood (9:12).",
+    "language": "en",
+    "options": [
+      "All priests — weekly (according to the text's framing)",
+      "The Levites — monthly (as described in the passage)",
+      "The priests — daily (per the textual narrative)",
+      "Only the high priest — once a year, and not without blood"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Old Day of Atonement",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 9:14, the blood of Christ purifies our conscience from what works to serve the living God?",
+    "explanation": "Hebrews 9:14 — 'how much more will the blood of Christ, who through the eternal Spirit offered himself without blemish to God, purify our conscience from dead works to serve the living God.' 'Dead works' = lifeless rituals, or sins that produce death.",
+    "language": "en",
+    "options": [
+      "From bodily uncleanness",
+      "From the sins of the fathers",
+      "From dead works, to serve the living God",
+      "From weaknesses of the flesh"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Purify from dead works",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Hebrews 10:4, why can the blood of bulls and goats not take away sins?",
+    "explanation": "Hebrews 10:4 — 'For it is impossible for the blood of bulls and goats to take away sins.' The reason: the old system is a 'SHADOW' (10:1) of the reality; only Christ — the sinless Perfect Man — truly removes sin. Implication: if the old system sufficed, Christ's death would be unnecessary.",
+    "language": "en",
+    "options": [
+      "Because they are only a shadow of Christ — they cannot truly remove sin",
+      "Because the offerers were not holy enough",
+      "Because the old law had expired",
+      "Because they were not offered correctly"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Animal blood cannot remove sin",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 10:14, by ONE offering Christ has done what for those being sanctified?",
+    "explanation": "Hebrews 10:14 — 'For by a single offering he has perfected for all time those who are being sanctified.' In contrast to the old system (repeated yet never perfected — 10:1, 10:11) — Christ ONCE made them PERFECT FOREVER. The believer's standing before God is PERFECT in Christ.",
+    "language": "en",
+    "options": [
+      "Made them equal to angels",
+      "Has perfected them FOREVER",
+      "Given them miraculous powers",
+      "Saved them from physical death"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "One offering perfected forever",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 10:22, with what should believers draw near to God?",
+    "explanation": "Hebrews 10:22 — 'let us draw near with a true heart in full assurance of faith, with our hearts sprinkled clean from an evil conscience and our bodies washed with pure water.' 'Hearts sprinkled' = the blood of Christ (Lev 14 leprosy law); 'bodies washed' = baptism (or regeneration).",
+    "language": "en",
+    "options": [
+      "With trembling and fear (per the textual narrative)",
+      "With sacrifices and oil lamps (according to the text's framing)",
+      "With a true heart in full assurance of faith, with hearts sprinkled clean and bodies washed with pure water",
+      "With strictness and asceticism (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "True heart full assurance",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 11:4, why was Abel's offering better than Cain's?",
+    "explanation": "Hebrews 11:4 — 'By faith Abel offered to God a more acceptable sacrifice than Cain, through which he was commended as righteous, God commending him by accepting his gifts. And through his faith, though he died, he still speaks.' Abel is FIRST in the chapter 11 hall of faith.",
+    "language": "en",
+    "options": [
+      "Because the offering was more valuable",
+      "Because Abel was the second son",
+      "Because Abel prayed first",
+      "By faith — and through that faith he still speaks though dead"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Abel by faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Hebrews 11:5, why was Enoch taken up (not seeing death)?",
+    "explanation": "Hebrews 11:5 — 'By faith Enoch was taken up so that he should not see death, and he was not found, because God had taken him. Now before he was taken he was commended as having pleased God.' The next verse 11:6 — without faith it is IMPOSSIBLE to please God.",
+    "language": "en",
+    "options": [
+      "By faith — for before he was taken he was commended as having pleased God",
+      "Because he was an ancestor of Noah",
+      "Because he lived a long life (according to the text's framing)",
+      "Because he was a prophet (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Enoch taken up",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 11:7, why did Noah build the ark?",
+    "explanation": "Hebrews 11:7 — 'By faith Noah, being warned by God concerning events as yet unseen, in reverent fear constructed an ark for the saving of his household.' Noah believed God about THE UNSEEN (the flood, rain for the first time) — faith = obedience even without physical evidence.",
+    "language": "en",
+    "options": [
+      "He was following the king's order (according to the text's framing)",
+      "By faith — being warned by God of what was not yet seen, in reverent fear he constructed an ark to save his household",
+      "It was a business project (per the textual narrative)",
+      "He was following the example of the patriarchs (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Noah by faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 11:13, the patriarchs died in faith without receiving what was promised, but called themselves what on earth?",
+    "explanation": "Hebrews 11:13 — 'These all died in faith, not having received the things promised, but having seen them and greeted them from afar, and having acknowledged that they were strangers and exiles on the earth.' They trusted God to keep his promise — Abraham, Isaac, Jacob did not receive Canaan in their lifetime but still trusted.",
+    "language": "en",
+    "options": [
+      "Kings and rulers",
+      "Conquerors",
+      "Strangers and exiles",
+      "The chosen people"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Strangers and exiles",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 11:24-26, Moses by faith chose what over the treasures of Egypt?",
+    "explanation": "Hebrews 11:24-26 — 'By faith Moses, when he was grown up, refused to be called the son of Pharaoh's daughter, choosing rather to be mistreated with the people of God than to enjoy the fleeting pleasures of sin. He considered the reproach of Christ greater wealth than the treasures of Egypt.' Moses at 40 (Acts 7:23) chose to forsake.",
+    "language": "en",
+    "options": [
+      "Chose a hidden life (per the textual narrative)",
+      "Chose to lead Israel (according to the text's framing)",
+      "Chose the shepherd's career (as described in the passage)",
+      "Chose to be mistreated with God's people — considering the reproach of Christ greater wealth"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Moses chose God's people",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 31,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Hebrews 11:31, why did Rahab the prostitute not perish with those who were disobedient?",
+    "explanation": "Hebrews 11:31 — 'By faith Rahab the prostitute did not perish with those who were disobedient, because she had given a friendly welcome to the spies.' Rahab (Joshua 2) — a Gentile, a prostitute — listed in Christ's genealogy (Mt 1:5). Faith trumps the past. Also mentioned in James 2:25.",
+    "language": "en",
+    "options": [
+      "By faith — for she received the spies in peace",
+      "Because of her wisdom",
+      "Because of her family",
+      "Because of her beauty"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Rahab by faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 12:5-6, what does the Lord's discipline show?",
+    "explanation": "Hebrews 12:6 — 'For the Lord disciplines the one he loves, and chastises every son whom he receives.' Quoting Proverbs 3:11-12. Discipline is NOT a sign of God's anger — it is a SIGN OF GOD'S LOVE as a Father with a son. One not disciplined is 'illegitimate, not a son' (12:8).",
+    "language": "en",
+    "options": [
+      "Shows God is angry (per the textual narrative)",
+      "Shows the believer has lost grace",
+      "Shows God acknowledges them as sons — the Lord disciplines the one he loves",
+      "Shows the need to atone (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Discipline is love",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 12:14, without what shall no one see the Lord?",
+    "explanation": "Hebrews 12:14 — 'Strive for peace with everyone, and for the holiness without which no one will see the Lord.' Sanctification (hagiasmos) — not self-effort, but the result of Christ's work applied (10:14). Yet believers must PURSUE it, not be passive.",
+    "language": "en",
+    "options": [
+      "Without love",
+      "Without holiness",
+      "Without wisdom",
+      "Without righteousness"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Without holiness no one sees Lord",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 12:22-24, NT believers have come to which mountain (in contrast to Sinai)?",
+    "explanation": "Hebrews 12:22-24 — 'But you have come to Mount Zion and to the city of the living God, the heavenly Jerusalem... and to Jesus, the mediator of a new covenant.' In contrast to Sinai (the mountain of fear, fire, lightning — 12:18-21). NT believers have come to the HEAVENLY REALITY.",
+    "language": "en",
+    "options": [
+      "Mount Horeb (per the textual narrative) (in the story's sequence)",
+      "The earthly Mount Zion in Israel (as described in the passage)",
+      "Mount Carmel (according to the text's framing) (as the text indicates)",
+      "Mount Zion — the city of the living God, the heavenly Jerusalem, innumerable angels, the assembly of the firstborn, and Jesus the mediator"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Heavenly Mount Zion",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 13:7, what should believers do regarding their leaders?",
+    "explanation": "Hebrews 13:7 — 'Remember your leaders, those who spoke to you the word of God. Consider the outcome of their way of life, and imitate their faith.' Imitate the FAITH of teachers — not their personality or style. The next verse 13:8 (Christ unchanging) — because Christ doesn't change, the faith taught doesn't either.",
+    "language": "en",
+    "options": [
+      "Obey them absolutely (according to the text's framing)",
+      "Praise them (per the textual narrative)",
+      "Consider the outcome of their way of life and imitate their faith",
+      "Make offerings to them (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Imitate faith of leaders",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Hebrews 13:17, why should believers obey their leaders?",
+    "explanation": "Hebrews 13:17 — 'Obey your leaders and submit to them, for they are keeping watch over your souls, as those who will have to give an account.' The reason for obedience is NOT personal authority — but the SPIRITUAL RESPONSIBILITY (pastors must GIVE AN ACCOUNT to God).",
+    "language": "en",
+    "options": [
+      "Because they keep watch over your souls — as those who must give an account",
+      "Because they are masters (according to the text's framing)",
+      "Because they are wealthy (as described in the passage)",
+      "Because they are older (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Leaders watch over souls",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 13:20, God is called the God of what, and brought up Jesus as what?",
+    "explanation": "Hebrews 13:20 — 'Now may the God of peace who brought again from the dead our Lord Jesus, the great shepherd of the sheep, by the blood of the eternal covenant.' Two titles: 'God of PEACE' (10x in NT) + 'GREAT Shepherd' (cf. John 10 'GOOD Shepherd', 1 Pet 5 'CHIEF Shepherd').",
+    "language": "en",
+    "options": [
+      "God of glory — Christ as King (per the textual narrative)",
+      "God of peace — Christ as the great Shepherd of the sheep, by the blood of the eternal covenant",
+      "God of hosts — Christ as Captain (according to the text's framing)",
+      "God of Abraham — Christ as Messiah (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "God of peace great Shepherd",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 4:13, nothing is hidden from the eyes of whom, and we must do what before him?",
+    "explanation": "Hebrews 4:13 — 'And no creature is hidden from his sight, but all are naked and exposed to the eyes of him to whom we must give account.' 'Naked' (gymnos) + 'exposed' (trachēlizō) = sacrificial term for an animal whose throat is laid bare. Paired with God's living word (4:12) — the Word is alive AND the One who speaks it sees through hearts. UNLIKE Adam hiding in the garden.",
+    "language": "en",
+    "options": [
+      "From the eyes of angels — we report to them (as described in the passage)",
+      "From the eyes of Moses — we follow him (according to the text's framing)",
+      "From the eyes of him to whom we must give account — no creature is hidden, but all are naked and exposed",
+      "From the eyes of men — we confess sin (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Naked before the One",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 6,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 6:20, Christ entered behind the veil as what for us?",
+    "explanation": "Hebrews 6:20 — 'where Jesus has gone as a forerunner on our behalf, having become a high priest forever after the order of Melchizedek.' 'FORERUNNER' (prodromos) — used ONLY ONCE in the NT, here. The image: a ship entering harbor — a smaller boat with the anchor goes ahead, pulling the larger ship in. Christ entered the Most Holy Place FIRST to open the way for us (paired with 6:19's anchor imagery).",
+    "language": "en",
+    "options": [
+      "As the greatest prophet (according to the text's framing)",
+      "As King in David's line (as described in the passage) (as the text indicates)",
+      "As Mediator (per the textual narrative) (in the story's sequence)",
+      "As a FORERUNNER (prodromos) — entered first for us, becoming a priest forever after the order of Melchizedek"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Forerunner",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Hebrews 7:3, what is Melchizedek described as that makes him a type of Christ?",
+    "explanation": "Hebrews 7:3 — 'He is without father or mother or genealogy, having neither beginning of days nor end of life, but resembling the Son of God he continues a priest forever.' The OT account (Gen 14:18-20) is SILENT about Melchizedek's parents and genealogy — the author leverages this silence. Unlike Aaron (strict Levitical genealogy required).",
+    "language": "en",
+    "options": [
+      "WITHOUT father, mother, genealogy, beginning of days, or end of life — resembling the Son of God, a priest forever",
+      "His father was the patriarch Shem (according to the text's framing)",
+      "He was a Jew (per the textual narrative) (in the story's sequence)",
+      "He was a recognized king of Salem (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Melchizedek no genealogy",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 7:4-7, Abraham giving a tenth to Melchizedek demonstrates what?",
+    "explanation": "Hebrews 7:7 — 'It is beyond dispute that the inferior is blessed by the superior.' The argument: Abraham > Levi (great-grandson) > Levitical priest → Levitical priesthood is lesser than Abraham → Abraham is lesser than Melchizedek → Melchizedek's priesthood (Christ's) is greater than Levi's. This is the core of chapter 7's argument.",
+    "language": "en",
+    "options": [
+      "That Abraham was wealthy (per the textual narrative) (in the story's sequence)",
+      "That Melchizedek was greater than Abraham — for the lesser is blessed by the greater (and thus greater than Abraham's descendants the Levites)",
+      "That Abraham kept the law (according to the text's framing) (as the text indicates)",
+      "That Melchizedek needed offerings (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Melchizedek greater than Abraham",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 7:9-10, the line of Levi received tithes, but is said to have done what when Abraham gave to Melchizedek?",
+    "explanation": "Hebrews 7:9-10 — 'One might even say that Levi himself, who receives tithes, paid tithes through Abraham, for he was still in the loins of his ancestor when Melchizedek met him.' Subtle argument: an unborn descendant is reckoned to be 'in the loins' of the ancestor. So Levi (through Abraham) ACKNOWLEDGED Melchizedek's BETTER priesthood. Solid Christology.",
+    "language": "en",
+    "options": [
+      "Also been present there (per the textual narrative) (in the story's sequence)",
+      "Also blessed the people (according to the text's framing)",
+      "Also PAID A TENTH through Abraham — for Levi was still in his ancestor's loins when Melchizedek met him",
+      "Also offered sacrifices that day (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Levi paid through Abraham",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 7:23-24, the key difference between Aaronic priests and Christ is what?",
+    "explanation": "Hebrews 7:23-24 — 'The former priests were many in number, because they were prevented by death from continuing in office, but he holds his priesthood permanently, because he continues forever.' 'Permanent' (aparabatos) = unchangeable. The point: Aaron needed succession because of death; Christ DIES NO MORE → his priesthood is UNCHANGEABLE → salvation is ETERNALLY SECURE.",
+    "language": "en",
+    "options": [
+      "Aaron offered bull blood, Christ goat blood (according to the text's framing)",
+      "Aaron was Jewish, Christ was Jewish + Gentile (as described in the passage)",
+      "Aaron offered weekly, Christ daily (per the textual narrative) (in the story's sequence)",
+      "Aaron's priests were many because death prevented continuance — Christ alone lives forever and holds his priesthood UNCHANGEABLE"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Christ unchangeable priesthood",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "verseStart": 26,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Hebrews 7:26, the High Priest fitting for us must have what 5 characteristics?",
+    "explanation": "Hebrews 7:26 — 'For it was indeed fitting that we should have such a high priest, holy, innocent, unstained, separated from sinners, and exalted above the heavens.' 5 SUPERIOR characteristics — Aaron could not possess them (he had to offer for himself first, 7:27); only Christ has them. Contrast with 'merciful and faithful high priest' (2:17) — a RELATIONAL quality.",
+    "language": "en",
+    "options": [
+      "Holy, INNOCENT, UNSTAINED, separated from sinners, exalted above the heavens",
+      "Strong, wise, handsome, rich, honored (per the textual narrative)",
+      "Learned, Jewish, Levitical, Abrahamic, of Judah",
+      "Born in Bethlehem, taught in Jerusalem, raised in Nazareth, died at Golgotha, risen"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "5 high priest qualities",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 8,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 8:5, what is Moses' tabernacle compared to the heavenly reality?",
+    "explanation": "Hebrews 8:5 — 'They serve a copy and shadow of the heavenly things. For when Moses was about to erect the tent, he was instructed by God, saying, \"See that you make everything according to the pattern that was shown you on the mountain.\"' Quoting Ex 25:40. The old tabernacle is a 'SHADOW' (skia) + 'COPY' (hypodeigma) of the heavenly reality. Christ entered the TRUE heavenly temple (9:24).",
+    "language": "en",
+    "options": [
+      "The true temple of God (as described in the passage) (as the text indicates)",
+      "A greater temple (per the textual narrative) (in the story's sequence)",
+      "A COPY AND SHADOW of the heavenly things — Moses was told 'make it according to the pattern shown on the mountain'",
+      "A man-made invention (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Copy and shadow",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 8,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 8:8-12, the book quotes which long OT passage to establish the new covenant?",
+    "explanation": "Hebrews 8:8-12 quotes JEREMIAH 31:31-34 IN FULL (the LONGEST OT quote in the NT). Four promises of the new covenant: (1) Law written on hearts and minds; (2) God is their God; (3) All shall know the Lord; (4) Sins forgiven + REMEMBERED NO MORE. 8:13 — the 'new covenant' makes the first OBSOLETE + ready to vanish.",
+    "language": "en",
+    "options": [
+      "Deuteronomy 28 — blessings and curses (as described in the passage)",
+      "Jeremiah 31:31-34 — new covenant: law in heart, know God from least to greatest, sins remembered NO MORE",
+      "Ezekiel 36 — new heart, new spirit (per the textual narrative)",
+      "Psalm 110 — Messiah king and priest (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Quote of Jeremiah 31",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "verseStart": 24,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 9:24, Christ did NOT enter holy places made with hands here, but where?",
+    "explanation": "Hebrews 9:24 — 'For Christ has entered, not into holy places made with hands, which are copies of the true things, but into heaven itself, now to appear in the presence of God on our behalf.' The Jerusalem temple was only a 'copy' (antitypa) of the TRUE heavenly TEMPLE. Christ entered the REAL one — and APPEARS before the Father for us. Stronger than 'intercession' (7:25) — Christ PERSONALLY presents himself.",
+    "language": "en",
+    "options": [
+      "Into a monastery (per the textual narrative)",
+      "Into Solomon's temple (as described in the passage)",
+      "Into a synagogue (according to the text's framing)",
+      "Into HEAVEN ITSELF — now to appear in the presence of God for us"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Heaven itself",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "verseStart": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Hebrews 9:28, Christ will APPEAR A SECOND TIME to do what for those who eagerly wait for him?",
+    "explanation": "Hebrews 9:28 — 'so Christ, having been offered once to bear the sins of many, will appear a second time, not to deal with sin but to save those who are eagerly waiting for him.' First coming: sacrificial atonement. Second coming: NOT to die again — to CONSUMMATE salvation (bodily resurrection, glorification). Foundational verse for the parousia.",
+    "language": "en",
+    "options": [
+      "Appear NOT to deal with sin again, but to BRING SALVATION to those eagerly waiting for him",
+      "Appear to judge all (per the textual narrative)",
+      "Appear to restore Israel (according to the text's framing)",
+      "Appear to offer sacrifice again (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Second appearing",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 10:1, what is the law in relation to the form of the good things to come?",
+    "explanation": "Hebrews 10:1 — 'For since the law has but a shadow of the good things to come instead of the true form of these realities, it can never, by the same sacrifices that are continually offered every year, make perfect those who draw near.' 2 key terms: 'SHADOW' (skia) vs 'FORM/IMAGE' (eikōn). A shadow → exists but is NOT the substance; Christ is the IMAGE/SUBSTANCE itself. The argument: if the old system sufficed, there would be no need for repetition.",
+    "language": "en",
+    "options": [
+      "The very form of good things (as described in the passage)",
+      "God's plan (per the textual narrative) (in the story's sequence)",
+      "Only a SHADOW (skia) of the good things to come — NOT the true form, so it cannot make those who draw near perfect",
+      "Direct prophecy (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Law is shadow",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 26,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 10:26 (the 4th warning), if one deliberately keeps on sinning after receiving the knowledge of the truth, what happens?",
+    "explanation": "Hebrews 10:26-27 — 'For if we go on sinning deliberately after receiving the knowledge of the truth, there no longer remains a sacrifice for sins, but a fearful expectation of judgment, and a fury of fire that will consume the adversaries.' 'Deliberately' (hekousiōs) — willful, fully knowing. This is WARNING 4. Properly understood: NOT teaching loss of salvation, but warning against ABANDONING Christ — no other sacrifice exists.",
+    "language": "en",
+    "options": [
+      "Forgiveness comes through more sacrifices (as described in the passage)",
+      "NO sacrifice for sins remains — only a fearful expectation of judgment + raging fire that will consume adversaries",
+      "Must offer bull blood (per the textual narrative) (in the story's sequence)",
+      "Will be punished by angels (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Deliberate sin warning",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "verseStart": 29,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 10:29, those who spurn the new covenant deserve worse punishment than violators of Moses' law because they did what 3 things?",
+    "explanation": "Hebrews 10:29 — 'How much worse punishment, do you think, will be deserved by the one who has trampled underfoot the Son of God, and has profaned the blood of the covenant by which he was sanctified, and has outraged the Spirit of grace?' 3 grave sins: (1) TRAMPLED (katapateō) the Son; (2) Profaned the BLOOD of COVENANT (koinos); (3) OUTRAGED (enybrizō) the Spirit. The severity of sin reflects the glory despised.",
+    "language": "en",
+    "options": [
+      "Violated Sabbath, didn't circumcise, ate unclean food",
+      "Forsook worship, withheld tithes, took God's name (per the textual narrative)",
+      "Rejected prophecy, touched the ark, ate showbread (according to the text's framing)",
+      "Have TRAMPLED on the Son of God, profaned the BLOOD of the COVENANT, and OUTRAGED the Spirit of grace"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "3 sins of warning",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "verseStart": 39,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Hebrews 11:39-40, why were the OT heroes of faith NOT yet made perfect?",
+    "explanation": "Hebrews 11:39-40 — 'And all these, though commended through their faith, did not receive what was promised, since God had provided something better for us, that apart from us they should not be made perfect.' The 13th use of 'BETTER' — climaxing chapter 11. Salvation is CORPORATE in Christ — OT heroes + NT believers = ONE PEOPLE.",
+    "language": "en",
+    "options": [
+      "Because God had PROVIDED something BETTER for us — they would not be made perfect apart from us",
+      "Because they didn't keep the law perfectly (according to the text's framing)",
+      "Because they did not undergo the Day of Atonement",
+      "Because they lived before Christ (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Made perfect together",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Hebrews 12:18-21, how is Sinai described to contrast with the heavenly Zion?",
+    "explanation": "Hebrews 12:18-21 — 'For you have not come to what may be touched, a blazing fire and darkness and gloom and a tempest, and the sound of a trumpet... Indeed, so terrifying was the sight that Moses said, \"I tremble with fear.\"' Sinai = fear + distance. 12:22-24 = the heavenly Zion = joy + nearness. Gospel is greater than LAW.",
+    "language": "en",
+    "options": [
+      "A beautiful peaceful mountain (according to the text's framing)",
+      "A mountain of blessing (per the textual narrative) (in the story's sequence)",
+      "A mountain that may be TOUCHED with blazing fire, darkness, gloom, tempest, trumpet blast — Moses said 'I tremble with fear'",
+      "The highest mountain in Israel (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Sinai of terror",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Hebrews 12:25-26 (the 5th warning), the One who shook the earth at Sinai promises this time to shake what?",
+    "explanation": "Hebrews 12:26-27 — 'At that time his voice shook the earth, but now he has promised, \"Yet once more I will shake not only the earth but also the heavens.\" This phrase, \"Yet once more,\" indicates the removal of things that are shaken... in order that the things that cannot be shaken may remain.' Quoting Haggai 2:6. WARNING 5: do not refuse him who speaks from heaven. The kingdom of God = unshakable (12:28).",
+    "language": "en",
+    "options": [
+      "Will shake only Israel (as described in the passage)",
+      "Will shake NOT ONLY the earth BUT ALSO the heavens — only what cannot be shaken (the kingdom) remains",
+      "Will shake Satan (per the textual narrative) (in the story's sequence)",
+      "Will shake all beasts (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "Shake earth and heaven",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "verseStart": 29,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Hebrews 12:29, the reason believers must worship God with reverence is what?",
+    "explanation": "Hebrews 12:29 — 'For our God is a consuming fire.' Quoting Deuteronomy 4:24. Although believers have come to the gracious Zion, the God OF the new covenant is STILL the consuming fire God. Grace does NOT cancel holiness. The CONCLUSION of the 5 warnings — calling for 'reverence and awe' (12:28).",
+    "language": "en",
+    "options": [
+      "Because he is a powerful king",
+      "Because he is judge",
+      "Because he is creator",
+      "Because OUR GOD IS A CONSUMING FIRE"
+    ],
+    "tags": [
+      "New Testament",
+      "Hebrews",
+      "Epistle",
+      "God consuming fire",
+      "Advanced"
+    ]
   }
 ]
