@@ -41,13 +41,13 @@
 - Topics: bức tường ngăn cách + một người mới (2:14-15); cứu chuộc bởi huyết (1:7); chọn trước sáng thế (1:4); con nuôi (1:5); qui tụ mọi sự trong Christ (1:10); của tin Thánh Linh (1:14); mắt của lòng + quyền năng phục sinh (1:18-20); chết trong tội + giàu lòng thương xót (2:1-7); đồng ngồi trong Christ (2:6); đồng công dân + người nhà (2:19); Christ là đá góc (2:20); mầu nhiệm dân ngoại đồng kế tự (3:6); khôn ngoan muôn màu (3:10); 4 chiều tình yêu (3:18-19); trỗi hơn vô cùng (3:20); ăn ở xứng đáng (4:1); 7 ÔNES (4:5); ân tứ + Christ ascended (4:7-13); lẽ thật trong yêu thương (4:15); lột người cũ (4:22-24); đừng làm buồn Thánh Linh (4:30); bắt chước Đức Chúa Trời (5:1); tối tăm thành sáng (5:8); thức dậy hỡi kẻ ngủ (5:14); lợi dụng thì giờ (5:15-16); phục tùng nhau (5:21); hôn nhân = Christ-Hội Thánh (5:31-32); cha không chọc giận con (6:4); đứng vững trước mưu Sa-tan (6:11); sứ giả trong xiềng (6:19-20); lời chúc cuối peace+love+faith+grace (6:23-24)
 - VI/EN parity 100%, 0 length warnings, 2 duplicate keys (pre-existing in original 20, NOT introduced by new entries)
 
-#### Task B2-2: Philippians +30 (20→50)
-- Status: [ ] TODO
-- Current: 20 (E13 M5 H2) → Target: 50 (E15 M23 H12)
-- Plan: +2 Easy + 18 Medium + 10 Hard
-- File(s): `philippians_quiz.json` + `philippians_quiz_en.json` + `scripts/append_philippians_v3b.py`
-- Strategy: Christ-hymn 2:5-11 (kenosis); "vui mừng" 16 lần — niềm vui trong khổ đau (Phao-lô tù tại Rô-ma); 4:13 "tôi làm được mọi sự"; 4:6-7 không lo về điều gì; 3:7-14 "kể như rơm rác"
-- Commit: `feat(seed): Philippians +30 V3 B2 quality expansion (20→50)`
+#### Task B2-2: Philippians +30 (20→50) [x] DONE 2026-04-27
+- 20→**50** (E15 M23 H12, ratio **30.0/46.0/24.0%** — gần khớp 30/45/25)
+- Pool +30: 2 Easy + 18 Medium + 10 Hard VI + 30 EN 1:1
+- Single idx: 0:6, 1:7, 2:9, 3:8 (well distributed)
+- 30 single + 0 multi
+- Topics: dự phần ân điển (1:7); rao Christ dù động cơ xấu (1:15-18); Christ tôn cao (1:20); tốt hơn ở với Christ (1:23); chiến đấu cùng Phao-lô (1:30); chịu khổ là ân điển (1:29); 4 nếu có hiệp một (2:1-2); làm trọn cứu rỗi (2:12); Chúa cảm động muốn + làm (2:13); rượu đổ trên tế lễ (2:17); Ti-mô-thê cùng tâm trí (2:19-22); Ép-ba-phô-đích (2:25-30); hãy vui mừng (3:1); coi chừng chó cắt bì giả (3:2); thật cắt bì (3:3); 7 vinh dự Pha-ri-si (3:5-6); coi như sự lỗ (3:7); biết Ngài + quyền năng + thống khổ (3:10); sống lại từ kẻ chết (3:11); chưa trọn vẹn cứ tiến (3:12); thù nghịch thập tự (3:18-19); đứng vững (4:1); nhu mì cho mọi người (4:5); Đức Chúa Trời bình an (4:9); vui lớn vì lòng nghĩ đâm chồi (4:10); Phi-líp gửi đồ cứu trợ (4:14-16); tế lễ thơm tho (4:18); công bình bởi đức tin (3:9); Ê-vô-đi + Sin-ty-cơ + sách sự sống (4:2-3); người nhà Sê-sa (4:22)
+- VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
 #### Task B2-3: Galatians +30 (20→50)
 - Status: [ ] TODO

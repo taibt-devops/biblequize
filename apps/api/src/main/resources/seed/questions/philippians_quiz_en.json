@@ -539,5 +539,785 @@
       "Epistle",
       "Basic"
     ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Philippians 4:5, to whom should believers' gentleness be evident? Why?",
+    "explanation": "Philippians 4:5 — 'Let your reasonableness be known to everyone. The Lord is at hand.' 'Reasonableness' (epieikēs) = calm, forbearing, not harsh. Reason = 'the Lord is NEAR' — possibly the parousia or continuous presence. Both compel calm living.",
+    "language": "en",
+    "options": [
+      "To family — because they believe",
+      "To Jews — because they are chosen",
+      "To everyone — because the Lord is near",
+      "To the poor — because they need"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Gentleness to everyone",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Philippians 4:9, believers must practice what they learned, received, heard, and saw in Paul — and what God will be with them?",
+    "explanation": "Philippians 4:9 — 'What you have learned and received and heard and seen in me — practice these things, and the God of peace will be with you.' Paul sets himself as a LIVING EXAMPLE. Note: 4:7 (peace of God guards heart) + 4:9 (God OF PEACE is with you) — two sides of peace.",
+    "language": "en",
+    "options": [
+      "The God of power",
+      "The God of mercy",
+      "The God of righteousness",
+      "The God of peace"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "God of peace with you",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Philippians 1:7, why does Paul love the Philippians?",
+    "explanation": "Philippians 1:7 — 'It is right for me to feel this way about you all, because I hold you in my heart, for you are all partakers with me of grace, both in my imprisonment and in the defense and confirmation of the gospel.' 'PARTAKERS OF GRACE' (synkoinōnos) = partners in grace. They supported Paul during imprisonment.",
+    "language": "en",
+    "options": [
+      "Because they are wealthy (as described in the passage)",
+      "Because they are PARTAKERS OF GRACE with him — in his chains, defense, and confirmation of the gospel",
+      "Because they are smart (according to the text's framing)",
+      "Because they are many (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Partakers of grace",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Philippians 1:15-18, how does Paul react when some preach Christ from BAD motives?",
+    "explanation": "Philippians 1:18 — 'What then? Only that in every way, whether in pretense or in truth, Christ is proclaimed, and in that I rejoice. Yes, and I will rejoice.' Paul does NOT care about personal reputation — only about the gospel spreading. The point: even with envious motives, the CONTENT (Christ) still saves.",
+    "language": "en",
+    "options": [
+      "Paul vehemently opposes (as described in the passage)",
+      "Paul resigns (per the textual narrative)",
+      "Paul rejoices — as long as Christ is preached, whatever the motive, he rejoices",
+      "Paul demands they stop (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Rejoice despite bad motives",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Philippians 1:20, what is Paul's earnest hope?",
+    "explanation": "Philippians 1:20 — 'as it is my eager expectation and hope that I will not be at all ashamed, but that with full courage now as always Christ will be honored in my body, whether by life or by death.' 'HONORED' (megalynō) = magnified, made to appear LARGE. Paul's body = a MAGNIFYING GLASS for Christ.",
+    "language": "en",
+    "options": [
+      "That Christ will be honored in his body — by life or by death — with full courage",
+      "Release from prison (per the textual narrative)",
+      "Writing many letters (according to the text's framing)",
+      "Reuniting with believers (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Christ honored in body",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Philippians 1:28-29, who should believers NOT fear? And they have been GRANTED what 2 things for Christ's sake?",
+    "explanation": "Philippians 1:29 — 'For it has been granted to you that for the sake of Christ you should not only believe in him but also suffer for his sake.' 'GRANTED' (echaristhē) — root in 'grace' (charis). Astonishing point: SUFFERING is a GIFT OF GRACE, on par with faith. Contrary to 'prosperity theology'.",
+    "language": "en",
+    "options": [
+      "Not fear God — granted life and grace",
+      "Not fear ancestors — granted wisdom and strength",
+      "Not fear angels — granted miracles and power",
+      "Not fear opponents — granted not only to BELIEVE in him but also to SUFFER for his sake"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Suffering granted as grace",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Philippians 2:1-2, Paul lists 4 'IF THERE IS' to urge unity — what are they?",
+    "explanation": "Philippians 2:1-2 — 'So if there is any encouragement in Christ, any comfort from love, any participation in the Spirit, any affection and sympathy, complete my joy by being of the same mind.' The 4 IFs = 4 marks of NT life. All must produce UNITY.",
+    "language": "en",
+    "options": [
+      "Wealth, fame, health, family (according to the text's framing)",
+      "Miracles, tongues, signs, prophecy (as described in the passage)",
+      "Encouragement in Christ, comfort from love, fellowship in the Spirit, affection + sympathy",
+      "Faith, hope, grace, peace (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "4 ifs of unity",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Philippians 2:12, with FEAR and TREMBLING believers must work out what?",
+    "explanation": "Philippians 2:12 — 'work out your own salvation with fear and trembling.' NOT 'work FOR' salvation — but 'WORK OUT' (katergazomai) = bring it to outward expression. Salvation is a GIFT (Eph 2:8) — but its consequences must be LIVED OUT. 'Fear and trembling' = spiritual seriousness, no carelessness.",
+    "language": "en",
+    "options": [
+      "Work out the law",
+      "Work out their salvation",
+      "Work out church duties",
+      "Work out ancestral oaths"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Work out salvation",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Philippians 2:13, why can believers work out salvation with fear?",
+    "explanation": "Philippians 2:13 — 'for it is God who works in you, both to will and to work for his good pleasure.' 2:12 + 2:13 = wonderful paradox: I work out — GOD works in. Both true. God grants both the WILL (desire) and the ABILITY (action). Not self-effort, not passivity — COOPERATION.",
+    "language": "en",
+    "options": [
+      "Because the church supports (according to the text's framing)",
+      "Because of ancestral examples (as described in the passage)",
+      "Because the Spirit advises (per the textual narrative)",
+      "Because GOD is at work in you, both to WILL and to WORK for his good pleasure"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "God works in you",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Philippians 2:25-30, who is Epaphroditus and what did he experience?",
+    "explanation": "Philippians 2:25-30 — Epaphroditus is the 'apostle' (messenger) of the Philippian church sent with financial aid to Paul. On his mission, he fell sick nearly to death. Paul calls him 'brother + fellow worker + fellow soldier' (3 endearing titles). 2:30 — 'risking his life for Christ'.",
+    "language": "en",
+    "options": [
+      "Messenger of the Philippian church bringing aid to Paul — fell sick nearly to death for Christ's work",
+      "A young disciple Paul trained (as described in the passage)",
+      "A temple priest (per the textual narrative)",
+      "A Jewish exile community (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Epaphroditus messenger",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Philippians 3:1, what does Paul urge believers to do in the Lord?",
+    "explanation": "Philippians 3:1 — 'Finally, my brothers, rejoice in the Lord. To write the same things to you is no trouble to me and is safe for you.' 'REJOICE' (chairete) — the theme of the letter (16 times). Unlike 'optimism' — rejoice IN THE LORD even in prison.",
+    "language": "en",
+    "options": [
+      "Continually repent (according to the text's framing)",
+      "Carefully keep the law (as described in the passage)",
+      "Rejoice in the Lord — writing these things again is not troublesome to Paul, and is safe for them",
+      "Fast frequently (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Rejoice in the Lord",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Philippians 3:2, Paul warns believers to look out for 3 groups (all referring to the same kind)?",
+    "explanation": "Philippians 3:2 — 'Look out for the dogs, look out for the evildoers, look out for those who mutilate the flesh.' 3 phrases referring to one group = Judaizing teachers demanding Gentile believers be circumcised. 'DOGS' = mockery — Jews often called Gentiles dogs; Paul reverses it.",
+    "language": "en",
+    "options": [
+      "Romans, Greeks, Jews (per the textual narrative)",
+      "Look out for the DOGS, evil workers, those who mutilate the flesh (false circumcision)",
+      "False prophets, evil kings, Gentiles",
+      "The rich, the proud, the evil (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Beware false circumcision",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Philippians 3:3, who are the TRUE circumcision?",
+    "explanation": "Philippians 3:3 — 'For we are the circumcision, who worship by the Spirit of God and glory in Christ Jesus and put no confidence in the flesh.' 'TRUE CIRCUMCISION' = of the heart (Deut 30:6, Rom 2:29). 3 marks: worship by Spirit + glory in Christ + no confidence in flesh.",
+    "language": "en",
+    "options": [
+      "We — who worship by the Spirit, GLORY in Christ Jesus, and put no confidence in the flesh",
+      "Physical Israelites (per the textual narrative)",
+      "Those circumcised at 8 days (as described in the passage)",
+      "Abraham + descendants (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "True circumcision",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Philippians 3:7, what does Paul count his former GAINS (Pharisaic pedigree, learning) as for Christ's sake?",
+    "explanation": "Philippians 3:7 — 'But whatever gain I had, I counted as loss for the sake of Christ.' 'LOSS' (zēmia) = financial damage. Account ledger: previously GAIN (kerdos) — pedigree honor, learning — Paul re-classified as LOSS. Reason: in Christ's presence, all other glory is WORTHLESS.",
+    "language": "en",
+    "options": [
+      "Things to keep",
+      "Things lost",
+      "Things to boast in",
+      "LOSS — for Christ's sake"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Counted as loss",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Philippians 3:10, what 3 aspects does Paul long to know Christ in?",
+    "explanation": "Philippians 3:10 — 'that I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death.' NOT just info — EXPERIENCE. 3 dimensions: KNOW HIM + POWER (resurrection) + PARTICIPATE (sufferings). Reverse order: 'resurrection' before 'death' — because resurrection is what Paul already has; suffering + 'becoming like death' is ONGOING.",
+    "language": "en",
+    "options": [
+      "Miracles + signs + prophecy (according to the text's framing)",
+      "Church + tradition + ritual (as described in the passage)",
+      "Knowing him + the power of his resurrection + sharing in his sufferings, becoming like him in his death",
+      "Patriarchs + law + kingdom (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Know him + power + suffering",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Philippians 3:12, has Paul achieved perfection? Why does he press on?",
+    "explanation": "Philippians 3:12 — 'Not that I have already obtained this or am already perfect, but I press on to make it my own, because Christ Jesus has made me his own.' RACE imagery (3:14). Humility + drive: not yet attained — yet still running. Christ GRASPED Paul — Paul runs to GRASP what Christ provides.",
+    "language": "en",
+    "options": [
+      "Yes — for victory in many (according to the text's framing)",
+      "NO — not yet perfect, but presses on to make it his own, because Christ Jesus has made him his own",
+      "Yes — through divine vision (as described in the passage)",
+      "No opinion on this (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Not yet perfect, press on",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Philippians 4:1, what does Paul call the Philippians and urge them to do?",
+    "explanation": "Philippians 4:1 — 'Therefore, my brothers, whom I love and long for, my joy and crown, stand firm thus in the Lord, my beloved.' 'CROWN' (stephanos) = victor's wreath (not royal crown). The Philippians = Paul's reward. 'STAND FIRM' (stēkete) = hold the battle line.",
+    "language": "en",
+    "options": [
+      "Prisoners — must prepare (according to the text's framing)",
+      "Greedy ones — must give (per the textual narrative)",
+      "'My beloved brothers, whom I love and long for, my joy and crown' — STAND FIRM in the Lord",
+      "Foolish — must learn wisdom (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Stand firm in the Lord",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Philippians 4:10, why does Paul rejoice GREATLY in the Lord?",
+    "explanation": "Philippians 4:10 — 'I rejoiced in the Lord greatly that now at length you have revived your concern for me. You were indeed concerned for me, but you had no opportunity.' 'BLOSSOMED' (anethalete) = bloomed again after a dry season — like spring flowers. Paul tactful: NOT blaming their lapse — just rejoicing when they had the chance.",
+    "language": "en",
+    "options": [
+      "Because their concern for Paul has now BLOSSOMED again — they had thought of him but lacked opportunity",
+      "Because of release (per the textual narrative)",
+      "Because many believe (according to the text's framing)",
+      "Because he can write letters (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Rejoice for revived concern",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Philippians 2:19-22, whom does Paul send to Philippi, and how does he describe him?",
+    "explanation": "Philippians 2:19-22 — 'I hope in the Lord Jesus to send Timothy to you soon... For I have no one like him, who will be genuinely concerned for your welfare... But you know Timothy's proven worth, how as a son with a father he has served with me in the gospel.' Timothy = Paul's closest disciple. 'Like-minded' (isopsychos) = SOUL-EQUAL.",
+    "language": "en",
+    "options": [
+      "Sends Titus — courageous Greek (according to the text's framing)",
+      "Sends TIMOTHY — no one of LIKE MIND with Paul; one PROVEN of worth + like a son with a father in serving the gospel",
+      "Sends Epaphroditus — only delivers letters (as described in the passage)",
+      "Sends Clement — a new student (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Timothy like-minded",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Philippians 4:14-16, what did the Philippian church do for Paul at Thessalonica?",
+    "explanation": "Philippians 4:15-16 — 'And you Philippians yourselves know that in the beginning of the gospel, when I left Macedonia, no church entered into partnership with me in giving and receiving, except you only. Even in Thessalonica you sent me help for my needs once and again.' Philippi UNIQUE in financial sharing.",
+    "language": "en",
+    "options": [
+      "Visited him (per the textual narrative) (in the story's sequence)",
+      "Sent representatives to help (as described in the passage)",
+      "Got him out of prison (according to the text's framing)",
+      "SENT AID once and twice to Thessalonica — no church PARTNERED with Paul in giving + receiving except Philippi"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Philippi sent aid",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Philippians 1:23, Paul is torn between 2 desires — which does he say is 'FAR BETTER'?",
+    "explanation": "Philippians 1:23 — 'My desire is to depart and be with Christ, for that is far better.' 'FAR BETTER' (pollō mallon kreisson) = double comparative — Greek doubly better. Paul does NOT fear death. Philippians 1:21 — 'to live is Christ, to die is GAIN'. Martyrdom = victory, not loss.",
+    "language": "en",
+    "options": [
+      "Live long to preach",
+      "Serve the Philippians",
+      "Depart and be WITH Christ — FAR BETTER",
+      "Become a famous teacher"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Better to depart with Christ",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "verseStart": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Philippians 1:30, in what are the Philippians sharing with Paul?",
+    "explanation": "Philippians 1:30 — 'engaged in the same conflict that you saw I had and now hear that I still have.' 'CONFLICT' (agōn) = athletic contest + spiritual war. Philippians SAW Paul beaten + jailed in Philippi (Acts 16); now they HEAR he's imprisoned in Rome. SUFFERING is a mark of true discipleship.",
+    "language": "en",
+    "options": [
+      "In wealth (according to the text's framing)",
+      "In glory (per the textual narrative)",
+      "In temple building (as described in the passage)",
+      "In the SAME CONFLICT they saw in Paul and now hear he is in"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Same conflict",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Philippians 2:17, how does Paul liken his life if martyred?",
+    "explanation": "Philippians 2:17 — 'Even if I am to be poured out as a drink offering upon the sacrificial offering of your faith, I am glad and rejoice with you all.' OT image (Num 28:7, Lev 23:13): WINE poured on sacrifice. The Philippians' faith = the main SACRIFICE; Paul's blood = an accompanying DRINK OFFERING. Only auxiliary — yet rejoicing.",
+    "language": "en",
+    "options": [
+      "Like a burnt offering (according to the text's framing)",
+      "Like a DRINK OFFERING poured out on the SACRIFICE + service of their faith — Paul rejoices",
+      "Like a sin sacrifice (per the textual narrative)",
+      "Like a grain offering (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Drink offering poured out",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Philippians 3:5-6, Paul lists 7 grounds for boasting before Christ — what are they?",
+    "explanation": "Philippians 3:5-6 — 'circumcised on the eighth day, of the people of Israel, of the tribe of Benjamin, a Hebrew of Hebrews; as to the law, a Pharisee; as to zeal, a persecutor of the church; as to righteousness under the law, blameless.' 4 by lineage + 3 by his own choice. In Jewish culture, Paul had EVERY ground to boast — yet he counted it LOSS.",
+    "language": "en",
+    "options": [
+      "Circumcised on day 8, of Israel's stock, tribe of Benjamin, Hebrew of Hebrews, a Pharisee, zealous in persecuting the church, BLAMELESS regarding law",
+      "King, prophet, priest, rich, learned, brave, righteous (according to the text's framing)",
+      "12 tribes, 70 elders, 50 soldiers, 30 warriors, 13 shepherds, 7 kings, 1 Christ",
+      "Abraham, Isaac, Jacob, Moses, David, Solomon, Elijah (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "7 grounds for boasting",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Philippians 3:9, what righteousness does Paul long for?",
+    "explanation": "Philippians 3:9 — 'and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith.' Two OPPOSING righteousness: (1) MINE by LAW (= unattainable); (2) GOD'S by FAITH. The great exchange: our sin for Christ — Christ's righteousness for us.",
+    "language": "en",
+    "options": [
+      "Righteousness by perfect law-keeping (per the textual narrative)",
+      "Righteousness inherited from ancestors (as described in the passage)",
+      "NOT my own righteousness from the law — but righteousness THROUGH faith in Christ + FROM God, based on faith",
+      "Righteousness through many sacrifices (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Righteousness by faith",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Philippians 3:11, what is Paul's ultimate goal?",
+    "explanation": "Philippians 3:11 — 'that by any means possible I may attain the resurrection from the dead.' The uncertain phrasing ('by some means') = NOT doubt about salvation — but uncertainty about the path: martyrdom? living to the parousia? The goal is NOT reached by works — but through PERSEVERING with Christ. 'Resurrection from the dead' = exanastasis (unique phrase, only here in NT).",
+    "language": "en",
+    "options": [
+      "To be a great apostle (according to the text's framing)",
+      "To have many disciples (as described in the passage)",
+      "To have peak visions (per the textual narrative)",
+      "By any means to ATTAIN the RESURRECTION from the dead"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Attain resurrection",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Philippians 3:18-19, Paul weeps about many who walk how?",
+    "explanation": "Philippians 3:18-19 — 'For many, of whom I have often told you and now tell you even with tears, walk as enemies of the cross of Christ. Their end is destruction, their god is their belly, and they glory in their shame, with minds set on earthly things.' 4 marks: (1) BELLY as god; (2) SHAME as glory; (3) only EARTHLY thoughts; (4) DESTRUCTION as end.",
+    "language": "en",
+    "options": [
+      "As ENEMIES of the cross — their god is their belly, glory in shame, minds set on earthly things, end is DESTRUCTION",
+      "Too strict in Mosaic law (per the textual narrative) (in the story's sequence)",
+      "After ancestral tradition (as described in the passage) (as the text indicates)",
+      "After apostolic teaching (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Enemies of the cross",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Philippians 4:2-3, which 2 women does Paul exhort, and what BOOK does he mention regarding co-workers?",
+    "explanation": "Philippians 4:2-3 — 'I entreat Euodia and I entreat Syntyche to agree in the Lord. Yes, I ask you also, true companion, help these women, who have labored side by side with me in the gospel together with Clement and the rest of my fellow workers, whose names are in the book of life.' 'BOOK OF LIFE' (biblos zōēs) — 6 times in NT.",
+    "language": "en",
+    "options": [
+      "Dorcas and Tabitha — book of works (per the textual narrative)",
+      "Euodia and Syntyche — agree IN THE LORD; their fellow workers' names are in the BOOK OF LIFE",
+      "Mary and Martha — book of genealogy (as described in the passage)",
+      "Sarah and Hannah — book of numbers (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Euodia and Syntyche",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Philippians 4:18, how does Paul describe the gift from Philippi via Epaphroditus?",
+    "explanation": "Philippians 4:18 — 'I have received full payment, and more. I am well supplied, having received from Epaphroditus the gifts you sent, a fragrant offering, a sacrifice acceptable and pleasing to God.' OT imagery: 'pleasing aroma' (Gen 8:21, Lev 1:9) — God accepts the sacrifice. Giving to ministers = SPIRITUAL SACRIFICE to God, not just material reward.",
+    "language": "en",
+    "options": [
+      "Accumulated wealth (as described in the passage)",
+      "Reward for works (per the textual narrative)",
+      "A FRAGRANT OFFERING — a SACRIFICE acceptable, pleasing to God",
+      "Just compensation (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Fragrant offering",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Philippians 4:22, who sends greetings in the closing, especially from whom?",
+    "explanation": "Philippians 4:22 — 'All the saints greet you, especially those of Caesar's household.' 'CAESAR'S HOUSEHOLD' = slaves + servants in the Roman Emperor's house. Surprising: even WITHIN the court of the believers' persecutor, there are DISCIPLES! The gospel penetrated to the EMPEROR'S house. One reason this is the 'epistle of joy'.",
+    "language": "en",
+    "options": [
+      "All brothers — especially from Paul",
+      "The Roman church — especially from Peter",
+      "The apostles — especially from Luke",
+      "ALL THE SAINTS — especially those of CAESAR'S HOUSEHOLD"
+    ],
+    "tags": [
+      "New Testament",
+      "Philippians",
+      "Epistle",
+      "Caesar's household",
+      "Advanced"
+    ]
   }
 ]
