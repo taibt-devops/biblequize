@@ -1,5 +1,140 @@
 # TODO
 
+## 2026-04-27 — V3 Tier B/C Quality Expansion: 14 books [IN PROGRESS]
+
+> Sau V2 Tier A complete (1,440 câu, 30/45/25), nâng cấp 14 sách giá trị cao tiếp theo lên ratio gần 30/45/25.
+> Target: +574 câu VI + 574 EN = 1,148 câu output. Pool 5,534 → ~6,682.
+> Chiến lược: 3 priority tiers — B1 (3 sách giá trị cao nhất) → B2 (6 sách Pauline+General Epistles) → B3 (5 sách OT major).
+
+### Priority B1 (3 sách giá trị cao nhất)
+
+#### Task B1-1: Isaiah +80 (20→100)
+- Status: [ ] TODO
+- Current: 20 (E11 M6 H3) → Target: 100 (E30 M45 H25)
+- Plan: +19 Easy + 39 Medium + 22 Hard
+- File(s): `isaiah_quiz.json` + `isaiah_quiz_en.json` + `scripts/append_isaiah_v3b.py`
+- Strategy: Sứ điệp Mê-si-a (7:14, 9:6, 11:1-10, **53 toàn chương Servant Song**, 61); Bài ca tôi tớ 4 cái (42, 49, 50, 53); xét đoán + cứu rỗi; Holy One of Israel; Babylon exile + return; new heaven new earth (65-66)
+- Commit: `feat(seed): Isaiah +80 V3 B1 quality expansion (20→100)`
+
+#### Task B1-2: Hebrews +60 (20→80)
+- Status: [ ] TODO
+- Current: 20 (E11 M7 H2) → Target: 80 (E24 M36 H20)
+- Plan: +13 Easy + 29 Medium + 18 Hard
+- File(s): `hebrews_quiz.json` + `hebrews_quiz_en.json` + `scripts/append_hebrews_v3b.py`
+- Strategy: Christ Tế Lễ Thượng Phẩm theo Mên-chi-xê-đéc; "TỐT HƠN" 13 lần (1:4, 7:22, 8:6, 11:40); 5 cảnh báo (2:1-4, 3:7-4:13, 5:11-6:12, 10:26-31, 12:25-29); chương 11 (anh hùng đức tin); 4:14-16 ngôi ơn; Ngày Đại Lễ Chuộc Tội
+- Commit: `feat(seed): Hebrews +60 V3 B1 quality expansion (20→80)`
+
+#### Task B1-3: 1 Corinthians +46 (34→80)
+- Status: [ ] TODO
+- Current: 34 (E16 M12 H6) → Target: 80 (E24 M36 H20)
+- Plan: +8 Easy + 24 Medium + 14 Hard
+- File(s): `1corinthians_quiz.json` + `1corinthians_quiz_en.json` + `scripts/append_1corinthians_v3b.py`
+- Strategy: Chương 13 tình yêu (agape, definition + duration); chương 15 sống lại (resurrection foundation); chương 12-14 ân tứ Thánh Linh; Tiệc Thánh 11:23-26; "thân thể là đền Thánh Linh"; sự khôn ngoan Đức Chúa Trời vs khôn ngoan thế gian (1-3); kỷ luật hội thánh (5)
+- Commit: `feat(seed): 1 Corinthians +46 V3 B1 quality expansion (34→80)`
+
+### Priority B2 (6 sách Pauline + General Epistles)
+
+#### Task B2-1: Ephesians +40 (20→60)
+- Status: [ ] TODO
+- Current: 20 (E12 M7 H1) → Target: 60 (E18 M27 H15)
+- Plan: +6 Easy + 20 Medium + 14 Hard
+- File(s): `ephesians_quiz.json` + `ephesians_quiz_en.json` + `scripts/append_ephesians_v3b.py`
+- Strategy: Ân điển bởi đức tin 2:8-9; Vũ khí Đức Chúa Trời 6:10-18; unity Do Thái + dân ngoại 2:11-22 ("bức tường ngăn cách"); Christ làm đầu hội thánh; "trong Đấng Christ" 36 lần
+- Commit: `feat(seed): Ephesians +40 V3 B2 quality expansion (20→60)`
+
+#### Task B2-2: Philippians +30 (20→50)
+- Status: [ ] TODO
+- Current: 20 (E13 M5 H2) → Target: 50 (E15 M23 H12)
+- Plan: +2 Easy + 18 Medium + 10 Hard
+- File(s): `philippians_quiz.json` + `philippians_quiz_en.json` + `scripts/append_philippians_v3b.py`
+- Strategy: Christ-hymn 2:5-11 (kenosis); "vui mừng" 16 lần — niềm vui trong khổ đau (Phao-lô tù tại Rô-ma); 4:13 "tôi làm được mọi sự"; 4:6-7 không lo về điều gì; 3:7-14 "kể như rơm rác"
+- Commit: `feat(seed): Philippians +30 V3 B2 quality expansion (20→50)`
+
+#### Task B2-3: Galatians +30 (20→50)
+- Status: [ ] TODO
+- Current: 20 (E11 M7 H2) → Target: 50 (E15 M23 H12)
+- Plan: +4 Easy + 16 Medium + 10 Hard
+- File(s): `galatians_quiz.json` + `galatians_quiz_en.json` + `scripts/append_galatians_v3b.py`
+- Strategy: Justification bởi đức tin (KHÔNG bởi việc làm Luật Pháp) — chủ đề chính; trái Thánh Linh 5:22-23; tự do trong Christ 5:1; "Christ sống trong tôi" 2:20; vụ Phi-e-rơ tại An-ti-ốt 2:11-14
+- Commit: `feat(seed): Galatians +30 V3 B2 quality expansion (20→50)`
+
+#### Task B2-4: James +30 (20→50)
+- Status: [ ] TODO
+- Current: 20 (E13 M6 H1) → Target: 50 (E15 M23 H12)
+- Plan: +2 Easy + 17 Medium + 11 Hard
+- File(s): `james_quiz.json` + `james_quiz_en.json` + `scripts/append_james_v3b.py`
+- Strategy: Đức tin + việc làm 2:14-26; miệng lưỡi 3 (cây vả + suối nước + chữ); kiên nhẫn (Gióp + tiên tri); kẻ giàu + kẻ nghèo; cầu nguyện đức tin 5:13-18 (Ê-li); thử thách + cám dỗ 1
+- Commit: `feat(seed): James +30 V3 B2 quality expansion (20→50)`
+
+#### Task B2-5: 1 Peter +30 (20→50)
+- Status: [ ] TODO
+- Current: 20 (E14 M5 H1) → Target: 50 (E15 M23 H12)
+- Plan: +1 Easy + 18 Medium + 11 Hard
+- File(s): `1peter_quiz.json` + `1peter_quiz_en.json` + `scripts/append_1peter_v3b.py`
+- Strategy: Thần học chịu khổ (Christ + tín hữu); "đá sống" 2:4-10 (chức tế lễ thuộc linh); vợ chồng 3:1-7; phục tùng quyền cai trị 2:13-17; Christ giảng cho linh hồn trong tù 3:18-22; ngày của Chúa
+- Commit: `feat(seed): 1 Peter +30 V3 B2 quality expansion (20→50)`
+
+#### Task B2-6: 1 John +30 (20→50)
+- Status: [ ] TODO
+- Current: 20 (E14 M5 H1) → Target: 50 (E15 M23 H12)
+- Plan: +1 Easy + 18 Medium + 11 Hard
+- File(s): `1john_quiz.json` + `1john_quiz_en.json` + `scripts/append_1john_v3b.py`
+- Strategy: "Đức Chúa Trời là tình yêu" 4:8, 16; "Đức Chúa Trời là sự sáng" 1:5; 3 tests of faith (vâng lời + yêu thương + tin); cảnh báo Antichrist; assurance of salvation 5:13; bụng + huyết Christ 5:6-8
+- Commit: `feat(seed): 1 John +30 V3 B2 quality expansion (20→50)`
+
+### Priority B3 (5 sách OT major)
+
+#### Task B3-1: Daniel +40 (20→60)
+- Status: [ ] TODO
+- Current: 20 (E9 M7 H4) → Target: 60 (E18 M27 H15)
+- Plan: +9 Easy + 20 Medium + 11 Hard
+- File(s): `daniel_quiz.json` + `daniel_quiz_en.json` + `scripts/append_daniel_v3b.py`
+- Strategy: 6 narratives (Đa-ni-ên + 3 bạn không ăn của vua, lò lửa, hang sư tử, viết trên tường, Nê-bu-cát-nết-sa hóa thú, sấm sét); 4 khải tượng apocalyptic (chương 2, 7, 8, 9, 11-12); 70 tuần (9:24-27); KHÔNG quá sâu về interpretation
+- Commit: `feat(seed): Daniel +40 V3 B3 quality expansion (20→60)`
+
+#### Task B3-2: Jeremiah +30 (20→50)
+- Status: [ ] TODO
+- Current: 20 (E11 M7 H2) → Target: 50 (E15 M23 H12)
+- Plan: +4 Easy + 16 Medium + 10 Hard
+- File(s): `jeremiah_quiz.json` + `jeremiah_quiz_en.json` + `scripts/append_jeremiah_v3b.py`
+- Strategy: "Prophet nước mắt"; giao ước MỚI 31:31-34 (Tân Ước trích Hê-bơ-rơ 8); 70 năm lưu đày 25:11-12, 29:10; thầy gốm + bình gốm 18-19; nồi sôi 1:13; ách 27-28; bị bỏ tù trong giếng bùn 38
+- Commit: `feat(seed): Jeremiah +30 V3 B3 quality expansion (20→50)`
+
+#### Task B3-3: Proverbs +60 (20→80)
+- Status: [ ] TODO
+- Current: 20 (E13 M6 H1) → Target: 80 (E24 M36 H20)
+- Plan: +11 Easy + 30 Medium + 19 Hard
+- File(s): `proverbs_quiz.json` + `proverbs_quiz_en.json` + `scripts/append_proverbs_v3b.py`
+- Strategy: 31 chương — kính sợ Chúa = đầu mối (1:7, 9:10); khôn ngoan vs điên dại; 7 điều Chúa ghét 6:16-19; người vợ tài đức 31; lưỡi + miệng + lời nói; kiêu ngạo + khiêm nhường; sự lười biếng; gia đình + giáo dục con; Người công bình + kẻ ác
+- Commit: `feat(seed): Proverbs +60 V3 B3 quality expansion (20→80)`
+
+#### Task B3-4: Deuteronomy +38 (32→70)
+- Status: [ ] TODO
+- Current: 32 (E11 M12 H9) → Target: 70 (E21 M32 H17)
+- Plan: +10 Easy + 20 Medium + 8 Hard
+- File(s): `deuteronomy_quiz.json` + `deuteronomy_quiz_en.json` + `scripts/append_deuteronomy_v3b.py`
+- Strategy: Shema 6:4-9 (Câu trung tâm Do Thái giáo); 10 Điều Răn 5 (vs Xuất 20); chọn sự sống / sự chết 30:15-20; phước + rủa 28; bài ca Môi-se 32; chúc phước 33; mộ Môi-se 34
+- Commit: `feat(seed): Deuteronomy +38 V3 B3 quality expansion (32→70)`
+
+#### Task B3-5: Ezekiel +30 (20→50)
+- Status: [ ] TODO
+- Current: 20 (E8 M8 H4) → Target: 50 (E15 M23 H12)
+- Plan: +7 Easy + 15 Medium + 8 Hard
+- File(s): `ezekiel_quiz.json` + `ezekiel_quiz_en.json` + `scripts/append_ezekiel_v3b.py`
+- Strategy: Khải tượng xương khô 37; tâm mới 36:26 (linh mới); 4 sinh vật ngai 1; người chăn giả + Người Chăn Đa-vít 34; Gô-ghê + Ma-gô-ghê 38-39; đền thờ tương lai 40-48; "ngươi sẽ biết ta là Yhwh" 70 lần
+- Commit: `feat(seed): Ezekiel +30 V3 B3 quality expansion (20→50)`
+
+### Task B-Final: Verify final V3 Tier B audit
+- Status: [ ] TODO
+- Checklist:
+  - [ ] All 14 books at target (Isaiah 100, Hebrews 80, 1Cor 80, Eph 60, Phil 50, Gal 50, James 50, 1Pet 50, 1John 50, Daniel 60, Jer 50, Prov 80, Deut 70, Ezk 50)
+  - [ ] Aggregate ratio E/M/H gần 30/45/25 (±3%)
+  - [ ] Backend log all 14 files seed clean (idempotent)
+  - [ ] Total pool: 5534 + 1148 = 6682
+  - [ ] VI ↔ EN parity 100%
+
+---
+
 ## 2026-04-27 — V2 Go-Live Tier A leftover: 5 core books to target [DONE]
 
 > Sau V2 Phase 1+2 (Genesis/Matthew/John/Romans/Psalms hoàn tất), Tier A còn 5 sách core chưa đạt target spec section 2.2.
