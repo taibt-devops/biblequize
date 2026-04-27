@@ -2686,5 +2686,1602 @@
       "Gospels",
       "Basic"
     ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 4,
+    "content": "According to Luke 1:1-4, to whom did Luke address this Gospel?",
+    "explanation": "Luke 1:3-4 — 'It seemed good to me also, having followed all things closely for some time past, to write an orderly account for you, most excellent Theophilus, that you may have certainty concerning the things you have been taught'. Same recipient as Acts 1:1.",
+    "language": "en",
+    "options": [
+      "Pilate the Roman governor (as described in the passage)",
+      "The Jerusalem church (according to the text's framing)",
+      "MOST EXCELLENT THEOPHILUS — 'that you may have CERTAINTY concerning what you have been taught'",
+      "The 12 apostles (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Theophilus",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 38,
+    "content": "According to Luke 1:26-38, the angel Gabriel announced to Mary she would bear a son. What name and qualities were foretold?",
+    "explanation": "Luke 1:31-33 — 'You will conceive in your womb and bear a son, and you shall call his name Jesus. He will be great and will be called the Son of the Most High. And the Lord God will give to him the throne of his father David, and he will reign over the house of Jacob forever, and of his kingdom there will be no end'.",
+    "language": "en",
+    "options": [
+      "Immanuel / a prophet (according to the text's framing)",
+      "John / will baptize the people (as described in the passage)",
+      "Simon / an apostle (per the textual narrative) (in the story's sequence)",
+      "JESUS / 'great, called the SON of the MOST HIGH; the Lord will give him the throne of DAVID; he will reign over JACOB's house forever'"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Annunciation",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 7,
+    "content": "According to Luke 2:1-7, why did Joseph and Mary travel from Nazareth to Bethlehem before Jesus' birth?",
+    "explanation": "Luke 2:1-4 — 'In those days a decree went out from Caesar Augustus that all the world should be registered. This was the first registration when Quirinius was governor of Syria. And all went to be registered, each to his own town'.",
+    "language": "en",
+    "options": [
+      "To offer sacrifice at the Jerusalem temple",
+      "By Caesar Augustus' DECREE for a CENSUS — Joseph being of David's line had to go to Bethlehem",
+      "To flee from Herod (per the textual narrative)",
+      "To celebrate the annual Passover (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Census Decree",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 38,
+    "content": "According to Luke 2:25-38, which two elderly people in the temple RECOGNIZED Jesus as the Messiah when his parents brought him?",
+    "explanation": "Luke 2:25-38 — Simeon (2:25-35) took Jesus and said 'Lord, now you are letting your servant depart in peace, according to your word; for my eyes have seen your salvation'. Anna (2:36-38), an 84-year-old prophetess, 'gave thanks to God and spoke of him to all who were waiting for the redemption of Jerusalem'.",
+    "language": "en",
+    "options": [
+      "SIMEON ('the Holy Spirit said he would not see death before seeing the Christ') and ANNA (84-year-old prophetess)",
+      "Abraham and Sarah (according to the text's framing)",
+      "Aaron and Miriam (per the textual narrative) (in the story's sequence)",
+      "John the Baptist and his mother Elizabeth (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Simeon and Anna",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "According to Luke 4:1-13 (vs Matthew 4), what is the ORDER of Satan's THREE temptations of Jesus per Luke?",
+    "explanation": "Luke 4:3-12 order: (1) stones to bread — because Jesus was hungry (4:3); (2) worship Satan for kingdoms (4:5-7); (3) jump from temple to test God (4:9-11). Matthew 4 reverses #2 and #3 — Luke ends at the Jerusalem temple (Luke is Jerusalem-oriented).",
+    "language": "en",
+    "options": [
+      "Temple → Wilderness → High mountain (per the textual narrative)",
+      "High mountain → Temple → Wilderness (according to the text's framing)",
+      "Temple → High mountain → Wilderness (as described in the passage)",
+      "Wilderness STONES TO BREAD → High mountain WORSHIP SATAN FOR KINGDOMS → Temple JUMP DOWN"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Three Temptations",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 30,
+    "content": "According to Luke 4:16-30, when Jesus read Isaiah 61 in the Nazareth synagogue and declared 'TODAY this Scripture is fulfilled', how did the townspeople react?",
+    "explanation": "Luke 4:28-29 — 'When they heard these things, all in the synagogue were filled with wrath. And they rose up and drove him out of the town and brought him to the brow of the hill on which their town was built, so that they could throw him down the cliff'. The reason: Jesus declared God's preference for GENTILES over unbelieving Israel (Elijah to Sidonian widow 4:25-26, Elisha healing Naaman 4:27).",
+    "language": "en",
+    "options": [
+      "Believed and repented immediately (according to the text's framing)",
+      "Invited him to remain as a teacher (as described in the passage)",
+      "First MARVELED, then on hearing about Elijah going to a Sidonian widow and Naaman the Syrian — became FURIOUS, drove him out, tried to THROW him off a cliff",
+      "Asked many academic questions (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Nazareth Rejection",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 11,
+    "content": "According to Luke 5:1-11, when Peter caught a great catch following Jesus' word, how did he react?",
+    "explanation": "Luke 5:8-9 — 'But when Simon Peter saw it, he fell down at Jesus' knees, saying, Depart from me, for I am a sinful man, O Lord. For he and all who were with him were astonished at the catch of fish that they had taken'. Jesus then called him: 'From now on you will be CATCHING MEN'.",
+    "language": "en",
+    "options": [
+      "Joyfully counted the fish on the shore",
+      "FELL DOWN at Jesus' knees and said 'DEPART FROM ME, LORD, for I am a SINFUL MAN!'",
+      "Asked Jesus to lend him money for new nets",
+      "Hid at home to avoid sharing fish"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Great Catch",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 10,
+    "content": "According to Luke 7:1-10, for whom did the Roman centurion at Capernaum ask Jesus to heal? What did Jesus commend about him?",
+    "explanation": "Luke 7:9 — 'When Jesus heard these things, he marveled at him, and turning to the crowd that followed him, said, I tell you, not even in Israel have I found such faith'. The centurion said: 'I am not worthy to have you come under my roof... but say the word, and let my servant be healed' (7:6-7).",
+    "language": "en",
+    "options": [
+      "His wife / commended his love for wife",
+      "His mother / commended his filial piety",
+      "His son / commended his parenting (per the textual narrative)",
+      "His servant / Jesus commended 'I tell you, NOT EVEN IN ISRAEL have I found such GREAT FAITH'"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Centurion's Faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 7,
+    "verseStart": 36,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 50,
+    "content": "According to Luke 7:36-50, what woman came to Simon the Pharisee's house, WASHED Jesus' feet with TEARS, WIPED them with her HAIR, and POURED PERFUME?",
+    "explanation": "Luke 7:37-38 — 'And behold, a woman of the city, who was a sinner, when she learned that he was reclining at table in the Pharisee's house, brought an alabaster flask of ointment, and standing behind him at his feet, weeping, she began to wet his feet with her tears and wiped them with the hair of her head and kissed his feet and anointed them with the ointment'. Note: this is NOT Mary of Bethany (Mark 14, John 12) nor Mary Magdalene.",
+    "language": "en",
+    "options": [
+      "Mary Magdalene",
+      "Martha sister of Lazarus",
+      "A SINFUL WOMAN — unnamed",
+      "Mary mother of Jesus"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Sinful Woman",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 3,
+    "content": "According to Luke 8:1-3, who were the NAMED women accompanying Jesus and the 12 in his ministry?",
+    "explanation": "Luke 8:2-3 — 'And also some women who had been healed of evil spirits and infirmities: Mary, called Magdalene, from whom seven demons had gone out, and Joanna, the wife of Chuza, Herod's household manager, and Susanna, and many others, who provided for them out of their means'. This is the FIRST NT mention naming women as 'financial disciples'.",
+    "language": "en",
+    "options": [
+      "MARY MAGDALENE (from whom 7 demons cast out), JOANNA (wife of Chuza, Herod's steward), SUSANNA — and many others — provided FROM THEIR OWN MEANS",
+      "Martha and Mary of Bethany (as described in the passage) (as the text indicates)",
+      "Elizabeth, Salome, Anna (according to the text's framing) (per the original content)",
+      "Ruth and Naomi (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Women Disciples",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 9,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 36,
+    "content": "According to Luke 9:28-36 (Transfiguration), when Moses and Elijah appeared, what did they SPEAK with Jesus about? (unique to Luke)",
+    "explanation": "Luke 9:30-31 — 'And behold, two men were talking with him, Moses and Elijah, who appeared in glory and spoke of his DEPARTURE (Greek 'EXODOS'), which he was about to accomplish at Jerusalem'. Greek 'EXODOS' (ἔξοδος) — Luke INTENTIONALLY uses this word linking Christ's death to Israel's EXODUS — Christ as a 'new Moses' leading people from sin's slavery.",
+    "language": "en",
+    "options": [
+      "About glory in the eternal kingdom (according to the text's framing)",
+      "About his 'DEPARTURE' (exodus) which he was about to ACCOMPLISH AT JERUSALEM (= his death and resurrection)",
+      "About how to teach the law correctly (as described in the passage)",
+      "About how to avoid the Pharisees (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Exodus at Jerusalem",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 9,
+    "verseStart": 51,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 56,
+    "content": "According to Luke 9:51, this is the TURNING POINT of the book. What does this verse say about Jesus' resolve?",
+    "explanation": "Luke 9:51 — 'When the days drew near for him to be taken up, he set his face to go to Jerusalem'. Hebraism 'set his face' = firm resolve. This is the TURNING POINT — all of Luke 9:51-19:48 is the 'Journey to Jerusalem' — taking up 1/3 of the book. This section contains many parables UNIQUE to Luke: Good Samaritan, Prodigal, Rich Man and Lazarus, Persistent Widow...",
+    "language": "en",
+    "options": [
+      "He decided to rest for a few months (per the textual narrative)",
+      "He decided to return peacefully to Galilee (according to the text's framing)",
+      "He decided to go preach to Gentile nations (as described in the passage)",
+      "'When the days drew near for him to be TAKEN UP, he SET HIS FACE to GO TO JERUSALEM' — beginning a 10-chapter journey to the cross"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Set Face to Jerusalem",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 37,
+    "content": "According to Luke 10:25-37 (Good Samaritan — unique to Luke), the lawyer asked 'WHO is my NEIGHBOR?'. After the parable, how did Jesus REVERSE the question?",
+    "explanation": "Luke 10:36-37 — 'Which of these three, do you think, proved to be a neighbor to the man who fell among the robbers? He said, The one who showed him mercy. And Jesus said to him, You go, and do likewise'. Jesus REVERSED the question: instead of 'WHO is my neighbor?' (defining boundaries) → 'WHO ACTS AS A NEIGHBOR?' (calling to action).",
+    "language": "en",
+    "options": [
+      "'Who is the strongest in the story?' (as described in the passage)",
+      "'Who has the greatest merit?' (according to the text's framing)",
+      "'Which of THESE THREE, do you think, PROVED to be a NEIGHBOR to the man who fell among robbers?' — REVERSING into 'WHO ACTED AS A NEIGHBOR'",
+      "'Who is a good Pharisee?' (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Good Samaritan",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 42,
+    "content": "According to Luke 10:38-42, Jesus visited Martha and Mary's home. Whom did he commend and why?",
+    "explanation": "Luke 10:41-42 — 'But the Lord answered her, Martha, Martha, you are anxious and troubled about many things, but one thing is necessary. Mary has chosen the good portion, which will not be taken away from her'. Often understood: prioritizing LISTENING to Jesus over acts of service — the 'good portion' = Christ himself.",
+    "language": "en",
+    "options": [
+      "Commended Martha / for diligent cooking (as described in the passage)",
+      "Commended MARY / for 'SITTING at the Lord's feet listening to his word', she 'chose the GOOD PORTION, which will not be TAKEN AWAY from her'",
+      "Commended both equally (according to the text's framing)",
+      "Commended neither (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Mary and Martha",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 4,
+    "content": "According to Luke 11:1-4, the disciples asked Jesus to teach them to PRAY. He taught the 'Lord's Prayer'. How does Luke's version DIFFER from Matthew 6?",
+    "explanation": "Luke 11:2-4 is shorter than Matt 6:9-13: 'Father, hallowed be your name. Your kingdom come. Give us each day our daily bread, and forgive us our sins, for we ourselves forgive everyone who is indebted to us. And lead us not into temptation'. Missing: 'your will be done on earth as it is in heaven' (Matt 6:10b), 'deliver us from evil' (Matt 6:13b). Luke may preserve 'an earlier shorter version' (per many scholars).",
+    "language": "en",
+    "options": [
+      "SHORTER — NO 'your will be done on earth as in heaven', NO 'deliver us from evil', NO closing doxology — only 5 core petitions",
+      "Longer than Matthew (per the textual narrative) (in the story's sequence)",
+      "Entirely different — no 'Our Father' (as described in the passage)",
+      "In Greek instead of Aramaic (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Shorter Lord's Prayer",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 12,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 21,
+    "content": "According to Luke 12:13-21 (Rich Fool — unique to Luke), what did the rich man say when the harvest was plentiful?",
+    "explanation": "Luke 12:19-20 — '...And I will say to my soul, Soul, you have ample goods laid up for many years; relax, eat, drink, be merry. But God said to him, Fool! This night your soul is required of you, and the things you have prepared, whose will they be?' Lesson: 'So is the one who lays up treasure for himself and is not rich toward God' (12:21).",
+    "language": "en",
+    "options": [
+      "'Distribute wealth to the poor' (as described in the passage)",
+      "'Tithe to the temple' (per the textual narrative) (in the story's sequence)",
+      "'Rest a year before deciding' (according to the text's framing)",
+      "'Soul, you have ample goods laid up for MANY YEARS; relax, eat, drink, be merry' / God called him 'FOOL', that night his soul required of him"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Rich Fool",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 13,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 17,
+    "content": "According to Luke 13:10-17, Jesus healed a woman bent over for 18 years in the synagogue. How did the synagogue ruler react?",
+    "explanation": "Luke 13:14-16 — 'But the ruler of the synagogue, indignant because Jesus had healed on the Sabbath, said to the people, There are six days in which work ought to be done. Come on those days and be healed, and not on the Sabbath day. Then the Lord answered him, You hypocrites! Does not each of you on the Sabbath untie his ox or his donkey from the manger and lead it away to water it? And ought not this woman, a daughter of Abraham whom Satan bound for eighteen years, be loosed from this bond on the Sabbath day?'",
+    "language": "en",
+    "options": [
+      "Joyfully asked Jesus to heal more (according to the text's framing) (as the text indicates)",
+      "Praised Jesus for showing mercy (per the textual narrative) (in the story's sequence)",
+      "ANGRY because Jesus healed on the SABBATH — Jesus replied: 'You hypocrites! Does not each of you on the Sabbath untie his OX or DONKEY from the manger and lead it away to water it?'",
+      "Invited Jesus to teach in the synagogue (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "18-Year Bondage",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 14,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 24,
+    "content": "According to Luke 14:15-24 (Great Banquet), the host invited guests but they all MADE EXCUSES. Whom did the host order to invite instead?",
+    "explanation": "Luke 14:21-23 — 'Go out quickly to the streets and lanes of the city, and bring in the poor and crippled and blind and lame... yet there is room. And the master said to the servant, Go out to the highways and hedges and compel people to come in, that my house may be filled'. Lesson: The invitation extends FROM the obvious recipients (elite Israel) TO the overlooked (POOR, DISABLED, GENTILES). Theme: God's kingdom is open to all.",
+    "language": "en",
+    "options": [
+      "The Pharisees and scribes (according to the text's framing)",
+      "First 'POOR, CRIPPLED, BLIND, LAME' in the CITY; then go out to 'HIGHWAYS and HEDGES' (= Gentiles) compelling them to fill the house",
+      "The kings of the nations (per the textual narrative) (in the story's sequence)",
+      "The 12 disciples and 70 disciples (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Great Banquet",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 32,
+    "content": "According to Luke 15:11-32 (Prodigal Son / Generous Father — unique to Luke), when the wayward son returned, what did the father do?",
+    "explanation": "Luke 15:20-24 — 'But while he was still a long way off, his father saw him and felt compassion, and ran and embraced him and kissed him... Quick! Bring out the best robe, and put it on him, and put a ring on his hand, and shoes on his feet. And bring the fattened calf and kill it, and let us eat and celebrate. For this my son was dead, and is alive again; he was lost, and is found'. The most powerful NT picture of God's GRACE.",
+    "language": "en",
+    "options": [
+      "Waited for him to come closer to scold (as described in the passage)",
+      "Forced him to work off his debt (according to the text's framing)",
+      "Drove him away in shame (per the textual narrative) (in the story's sequence)",
+      "The father RAN to him, EMBRACED, KISSED; great FEAST with 'FATTENED CALF', BEST ROBE, RING, SANDALS — 'this my son was DEAD and is ALIVE again'"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Prodigal Son",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 17,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 19,
+    "content": "According to Luke 17:11-19, when 10 LEPERS were healed by Jesus, how many returned to thank? What ethnicity?",
+    "explanation": "Luke 17:15-18 — 'Then one of them, when he saw that he was healed, turned back, praising God with a loud voice; and he fell on his face at Jesus' feet, giving him thanks. Now he was a Samaritan. Then Jesus answered, Were not ten cleansed? Where are the nine? Was no one found to return and give praise to God except this foreigner?'",
+    "language": "en",
+    "options": [
+      "All 10 returned (according to the text's framing)",
+      "5 Israelites returned",
+      "Only ONE returned — and he was a SAMARITAN (Gentile)",
+      "None returned (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Ten Lepers",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 18,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 8,
+    "content": "According to Luke 18:1-8 (Persistent Widow — unique to Luke), what is the main lesson?",
+    "explanation": "Luke 18:1 (Jesus' opening): 'And he told them a parable to the effect that they ought always to pray and not lose heart'. After the parable (18:6-8): 'And will not God give justice to his elect, who cry to him day and night... I tell you, he will give justice to them speedily'. Lesson: A FORTIORI — if the UNJUST judge listened to the persistent widow, the JUST God surely will hear his people.",
+    "language": "en",
+    "options": [
+      "GOD'S PEOPLE 'ought always to PRAY and not lose heart' — for God 'will give justice SPEEDILY' to them",
+      "Need to be cunning in court (according to the text's framing)",
+      "Women should not pester judges (as described in the passage)",
+      "Judges should be more fair (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Persistent Widow",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 18,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 14,
+    "content": "According to Luke 18:9-14 (Pharisee and Tax Collector — unique to Luke), WHO went home 'JUSTIFIED'?",
+    "explanation": "Luke 18:13-14 — 'But the tax collector, standing far off, would not even lift up his eyes to heaven, but beat his breast, saying, God, be merciful to me, a sinner! I tell you, this man went down to his house justified, rather than the other. For everyone who exalts himself will be humbled, but the one who humbles himself will be exalted'.",
+    "language": "en",
+    "options": [
+      "The Pharisee for keeping many laws (as described in the passage)",
+      "Both for coming to the temple (according to the text's framing)",
+      "Neither because both had sin (per the textual narrative)",
+      "The TAX COLLECTOR — who didn't dare lift his eyes, beat his breast, saying: 'GOD, be MERCIFUL to me, a SINNER!'"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Tax Collector Justified",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 19,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 10,
+    "content": "According to Luke 19:1-10 (Zacchaeus — unique to Luke), what did Zacchaeus do when Jesus passed through Jericho? What did Jesus say at his house?",
+    "explanation": "Luke 19:5-10 — 'And when Jesus came to the place, he looked up and said to him, Zacchaeus, hurry and come down, for I must stay at your house today. So he hurried and came down and received him joyfully... And Jesus said to him, Today salvation has come to this house, since he also is a son of Abraham. For the Son of Man came to seek and to save the lost'.",
+    "language": "en",
+    "options": [
+      "Zacchaeus sat at the dock / 'Come fish with me' (as described in the passage) (per the original content)",
+      "Zacchaeus was 'CHIEF TAX COLLECTOR' and RICH; being SHORT, he CLIMBED a SYCAMORE TREE to SEE Jesus / Jesus: 'TODAY I must STAY at your house'; later: 'TODAY salvation has COME to this house... the SON OF MAN came to SEEK and to SAVE the LOST'",
+      "Zacchaeus knelt / Jesus cursed him (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Zacchaeus fled / Jesus called him back (according to the text's framing) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Zacchaeus",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 21,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 4,
+    "content": "According to Luke 21:1-4 (Widow's Two Mites), why did Jesus commend the POOR WIDOW who put in TWO small coins?",
+    "explanation": "Luke 21:3-4 — 'Truly, I tell you, this poor widow has put in more than all of them. For they all contributed out of their abundance, but she out of her poverty put in all she had to live on'.",
+    "language": "en",
+    "options": [
+      "Because she was the oldest giver (per the textual narrative)",
+      "Because she gave the most GOLD COINS (according to the text's framing)",
+      "Because 'all these have contributed out of their ABUNDANCE; but she out of her POVERTY has put in all SHE HAD TO LIVE ON'",
+      "Because she was from a priestly family (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Widow's Mites",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 22,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 20,
+    "content": "According to Luke 22:14-20 (Luke's Last Supper), what unique phrasing does Jesus use over the bread and cup?",
+    "explanation": "Luke 22:19-20 — 'And he took bread, and when he had given thanks, he broke it and gave it to them, saying, This is my body, which is given for you. Do this in remembrance of me. And likewise the cup after they had eaten, saying, This cup that is poured out for you is the new covenant in my blood'. The phrase 'do this in remembrance of me' is unique to Luke + 1 Cor 11:24-25.",
+    "language": "en",
+    "options": [
+      "Luke has the longest Last Supper discourse (as described in the passage)",
+      "LUKE'S VERSION emphasizes 'NEW COVENANT in MY BLOOD' (22:20) — and 'This is my body GIVEN FOR YOU' (22:19); only Luke adds 'DO THIS in REMEMBRANCE of ME'",
+      "Luke has no Last Supper (per the textual narrative) (in the story's sequence)",
+      "Luke has 5 cups instead of 1 (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Luke's Last Supper",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 23,
+    "verseStart": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 38,
+    "content": "According to Luke 23:34, what did Jesus say at his CRUCIFIXION (unique to Luke)?",
+    "explanation": "Luke 23:34 — 'And Jesus said, Father, forgive them, for they know not what they do'. This verse appears only in Luke (in many early manuscripts). It expresses Luke's COMPLETE THEME OF FORGIVENESS from beginning to end: from the Magnificat (1:50 'his mercy is for those who fear him from generation to generation') to Christ's final words from the cross.",
+    "language": "en",
+    "options": [
+      "'This is the King of the Jews' (per the textual narrative)",
+      "'My God, my God, why have you forsaken me?'",
+      "'Today you will be with me in paradise'",
+      "'FATHER, FORGIVE THEM, for they KNOW NOT what they DO' — forgiveness for those crucifying him"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Father Forgive Them",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "verseStart": 44,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 49,
+    "content": "According to Luke 24:44-49, after the resurrection, what did Jesus teach about OT fulfillment? What did he promise was coming?",
+    "explanation": "Luke 24:44-49 — 'These are my words that I spoke to you while I was still with you, that everything written about me in the Law of Moses and the Prophets and the Psalms must be fulfilled... And behold, I am sending the promise of my Father upon you. But stay in the city until you are clothed with power from on high'. This is the BRIDGE between Luke and Acts — Acts begins with Pentecost (Acts 2).",
+    "language": "en",
+    "options": [
+      "'Everything written about me in the LAW OF MOSES, the PROPHETS, and the PSALMS MUST BE FULFILLED' / Promise of 'BEING CLOTHED WITH POWER FROM ON HIGH' (= Holy Spirit, fulfilled at Pentecost in Acts 2)",
+      "Everything ends in a few weeks (according to the text's framing) (per the original content)",
+      "He goes far away and won't return (as described in the passage) (as the text indicates)",
+      "He appoints 100 new disciples (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Power from on High",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 46,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 55,
+    "content": "TYPE 1 cross-ref Mary's Magnificat (Luke 1:46-55) closely echoes which OT song?",
+    "explanation": "The Magnificat (Luke 1:46-55) densely echoes Hannah's song (1 Sam 2:1-10): 'Lord exalted' / 'the proud are humbled' / 'the lowly are lifted up'. Both are barren/poor women dedicating sons for God's work (Hannah → Samuel; Mary → Christ). Phrase 'his arm of strength' (1 Sam 2:9) ↔ 'he has shown strength with his arm' (Luke 1:51). Theme: God's REVERSAL.",
+    "language": "en",
+    "options": [
+      "David's song (2 Sam 22) (according to the text's framing)",
+      "Moses' song (Deut 32) (per the textual narrative)",
+      "HANNAH'S SONG (1 Samuel 2:1-10) — same motif: 'God lifts up the LOWLY, brings down the PROUD'",
+      "Deborah's song (Judges 5) (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Magnificat-Hannah Echo",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 11,
+    "content": "TYPE 1 cross-ref Luke has a 'TODAY' (sēmeron) theme at salvation transition moments. Which verses HAVE this theme? (select all correct)",
+    "explanation": "Luke uses 'sēmeron' (TODAY) at salvation pivot points: 2:11 (Christmas), 4:21 (Nazareth sermon), 19:9 (Zacchaeus), 23:43 (the thief on the cross). Also 'this very night' 22:34 (Peter's denial). All emphasize SALVATION made PRESENT in Jesus, not merely future.",
+    "language": "en",
+    "options": [
+      "Luke 2:11 — 'TODAY in the city of David a Savior is born FOR YOU'",
+      "Luke 4:21 — 'TODAY this Scripture HAS BEEN FULFILLED in your hearing' (Isa 61)",
+      "Luke 19:9 — 'TODAY salvation has come to this house' (about Zacchaeus)",
+      "Luke 7:1 — 'When he had finished... he entered Capernaum' (no 'today')"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Today Theme",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 19,
+    "content": "TYPE 1 cross-ref At Nazareth synagogue (Luke 4:18-19), Jesus read which OT?",
+    "explanation": "Luke 4:18-19 — Jesus reads Isa 61:1-2a + inserts Isa 58:6 ('set free the oppressed'), but STOPS at 'proclaim the year of the Lord's favor' and DOES NOT READ on 'and the day of vengeance of our God' (61:2b). Reason: Christ's FIRST coming is GRACE — vengeance is for the SECOND coming. This is Luke's deep theological signal of the Messiah's two comings.",
+    "language": "en",
+    "options": [
+      "Psalm 22 — 'My God, my God' (as described in the passage) (per the original content) (per the textual narrative)",
+      "Genesis 1 — creation (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Deuteronomy 6 — Shema (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "ISAIAH 61:1-2a + 58:6 — 'Spirit of the Lord IS UPON me... preach GOOD NEWS to the POOR... proclaim YEAR OF FAVOR' — Jesus STOPPED MID-SENTENCE, OMITTING 'DAY OF VENGEANCE'"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Nazareth Manifesto",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 11,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 13,
+    "content": "TYPE 1 cross-ref Luke has the densest HOLY SPIRIT theme of all the Gospels. Which verse specifically teaches the Father gives the Spirit to those who ask?",
+    "explanation": "Luke 11:13 — 'If you then, who are evil, know how to give good gifts to your children, how much more will the heavenly Father give the Holy Spirit to those who ask him!'. Matthew's version (7:11) says 'GOOD THINGS to those who ask'. Luke REPLACES 'good things' with 'Holy Spirit' — the Spirit is the FATHER'S BEST GIFT. This fits Luke-Acts' Holy Spirit theme.",
+    "language": "en",
+    "options": [
+      "Luke 12:10 — 'Blasphemy against the Spirit' (as described in the passage) (as the text indicates)",
+      "Luke 11:13 — 'How much more will the Father in HEAVEN give the HOLY SPIRIT to those who ASK him' (UNIQUE TO LUKE — Matt 7:11 says 'GOOD GIFTS', Luke replaces with 'HOLY SPIRIT')",
+      "Luke 4:1 — 'Jesus full of the Holy Spirit' (according to the text's framing) (per the original content)",
+      "Luke 24:49 — 'Clothed with power' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Father Gives Spirit",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 32,
+    "content": "TYPE 1 cross-ref Luke 15 contains THREE consecutive parables with the SAME THEME. What are they? Common theme?",
+    "explanation": "Luke 15 contains a connected 'TRILOGY': lost sheep (15:3-7), lost coin (15:8-10), prodigal son (15:11-32). Each parable ENDS with REJOICING and a CELEBRATION. Lesson: God's joy over 1 repentant sinner (15:7,10) — not over 99 righteous. The 'most gospel' chapter in Luke.",
+    "language": "en",
+    "options": [
+      "LOST SHEEP (1 in 100), LOST COIN (1 in 10), PRODIGAL SON (1 in 2) — theme: 'God SEEKS the LOST' and REJOICES when found",
+      "Sower / Wheat & Tares / Mustard seed (per the textual narrative)",
+      "Ten virgins / Talents / Final judgment (according to the text's framing)",
+      "Good Samaritan / Rich man / Persistent widow (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Luke 15 Trilogy",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 19,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 10,
+    "content": "TYPE 1 cross-ref Luke 19:10 'Son of Man came to SEEK and to SAVE the LOST' summarizes Jesus' MISSION. Which OT verse does this ECHO?",
+    "explanation": "Ezek 34 is the 'JUDGMENT ON BAD SHEPHERDS' chapter of Israel. 34:11 — 'For thus says the Lord GOD: Behold, I, I myself will SEARCH for my SHEEP and will SEEK them out'. 34:16 — 'I will SEEK the LOST, and I will BRING BACK the strayed, and I will BIND UP the INJURED, and I will STRENGTHEN the WEAK'. Luke 19:10 deliberately uses 'SEEK... SAVE LOST' to assert JESUS as GOD 'THE SHEPHERD' come in person. Cf. Luke 15 (3 lost parables) + John 10 ('I am the good shepherd').",
+    "language": "en",
+    "options": [
+      "Gen 1:1 — 'In the beginning God' (according to the text's framing)",
+      "Ps 23:1 — 'The Lord is my shepherd' (as described in the passage)",
+      "Deut 6:4 — 'The Lord is ONE' (per the textual narrative) (in the story's sequence)",
+      "EZEKIEL 34:11-16 — 'I MYSELF WILL SEARCH for my SHEEP, RESCUE them' — only God is the 'SHEPHERD', seeking the lost sheep"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Seek Save Lost",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "verseStart": 49,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 49,
+    "content": "TYPE 1 cross-ref Luke 24:49 'CLOTHED with POWER from on HIGH'. Which Acts verse fulfills this?",
+    "explanation": "Luke 24:49 'clothed with power from on high' (with 24:46-48 'witness of these things') is fulfilled EXACTLY at Acts 2:1-4 (Pentecost). The Greek 'enduō' (clothed) + 'dunamis' (power) becomes Acts' main theme. This is the LITERARY BRIDGE of Luke-Acts — Luke designed Volume 1's ending = Volume 2's beginning. Acts 1:1 'In the first book' (Luke's Gospel) — same author, same recipient (Theophilus).",
+    "language": "en",
+    "options": [
+      "ACTS 2:1-4 — 'Filled with the Holy Spirit' at PENTECOST; 'tongues as of fire rested on each one'",
+      "Acts 1:11 — Christ ascends (per the textual narrative)",
+      "Acts 7:60 — Stephen martyred (according to the text's framing)",
+      "Acts 16:30 — Philippian jailer believes (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Pentecost Power",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 3,
+    "content": "TYPE 1 cross-ref Women in Luke's Gospel — Luke records MORE women than the other Gospels. Which passages ARE in Luke? (select all correct)",
+    "explanation": "Luke records more named women + active roles than the other Gospels: Elizabeth (1), Mary (1-2), Anna the prophetess (2), widow of Nain (7), sinful woman (7), Mary Magdalene + Joanna + Susanna (8), Martha + Mary (10), bent-over woman (13), woman who lost a coin (15), persistent widow (18), widow's two mites (21), women at the cross + resurrection (23-24). Option D has no women.",
+    "language": "en",
+    "options": [
+      "Luke 8:1-3 — Women MARY MAGDALENE, JOANNA, SUSANNA supported Jesus' ministry from THEIR OWN MEANS",
+      "Luke 10:38-42 — MARY sat at Jesus' feet LISTENING; MARTHA served",
+      "Luke 24:1-12 — Women were the FIRST to learn of the resurrection and tell the 11",
+      "Luke 18:9-14 — Pharisee and tax collector (only 2 MEN, no women)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Women in Luke",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 6,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 26,
+    "content": "TYPE 2 distinguish Luke 6:20-26 vs Matthew 5 — what's the CORE difference between 'Sermon on the PLAIN' (Luke) and 'Sermon on the MOUNT' (Matthew)?",
+    "explanation": "Luke 6:20-26 has 4 BLESSINGS (poor, hungry, weeping, persecuted) + 4 corresponding WOES (rich, full, laughing, well spoken of). Matthew 5:3-12 has 9 Beatitudes, NO Woes. Luke: 'Blessed are the POOR'; Matthew: 'Blessed are the POOR IN SPIRIT'. Luke: 'Blessed are you who HUNGER NOW'; Matthew: 'hunger and thirst for RIGHTEOUSNESS'. Luke emphasizes SOCIO-ECONOMIC reversal; Matthew emphasizes SPIRITUAL reversal. The two complement each other.",
+    "language": "en",
+    "options": [
+      "Luke has 9 Beatitudes, Matthew has 7 (according to the text's framing) (as the text indicates)",
+      "Both are identical (per the textual narrative) (as described in the passage) (cross-referenced with related passages)",
+      "Luke adds 'hunger and thirst for righteousness' (in the story's sequence) (per the original content)",
+      "Luke has 4 BLESSINGS + 4 WOES; Matthew has only BLESSINGS; Luke is MATERIAL ('POOR' / 'HUNGRY'), Matthew is SPIRITUAL ('POOR IN SPIRIT' / 'HUNGER for righteousness')"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Plain vs Mount",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 3,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 38,
+    "content": "TYPE 2 distinguish Luke 3:23-38 vs Matthew 1:1-17 genealogies — core distinction?",
+    "explanation": "Luke 3:23-38: REVERSE order, Jesus → Adam → God (77 generations); through NATHAN, David's third son. Matthew 1:1-17: FORWARD, Abraham → Christ (3 sets of 14); through SOLOMON. Different theories: (1) Matthew = JOSEPH'S line, Luke = MARY'S line; (2) Matthew = royal line (Solomon), Luke = blood line (Nathan). Luke is UNIVERSAL (to Adam) reflecting GENTILE audience; Matthew is JEWISH (to Abraham) reflecting Israelite audience.",
+    "language": "en",
+    "options": [
+      "Luke has NO genealogy of Jesus (according to the text's framing) (as the text indicates)",
+      "Luke: traces Jesus → DAVID (via NATHAN) → ABRAHAM → ADAM → GOD (UNIVERSAL); Matthew: ABRAHAM → DAVID (via SOLOMON) → Christ (JEWISH FOCUS)",
+      "Both are identical (per the textual narrative) (in the story's sequence)",
+      "Matthew has 100 generations, Luke 50 (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Two Genealogies",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 11,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 4,
+    "content": "TYPE 2 distinguish Lord's Prayer Luke 11:2-4 vs Matthew 6:9-13 — specific difference?",
+    "explanation": "Luke 11:2-4 (~50 Greek words) vs Matthew 6:9-13 (~70 words + later doxology). LUKE LACKS: 'your will be done on earth as in heaven', 'deliver us from evil'. Luke: 'forgive us our sins, for we ourselves forgive everyone who is indebted to us' / Matthew: 'forgive us our DEBTS, as we also have forgiven our DEBTORS'. Christian tradition uses Matthew's version LITURGICALLY. Scholars believe Luke may be CLOSER to original (Q source).",
+    "language": "en",
+    "options": [
+      "Luke is longer (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Luke has 7 petitions, Matthew has 5 (as described in the passage) (per the original content)",
+      "Matthew is LONGER: adds 'your will be done on earth AS IN HEAVEN' (6:10b) + 'deliver us from evil' (6:13b); Luke OMITS both — Luke's SHORTER version may be CLOSER TO ORIGINAL",
+      "Completely different (according to the text's framing) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Two Lord's Prayers",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 7,
+    "content": "TYPE 2 distinguish Lost Sheep Luke 15:3-7 vs Matthew 18:12-14 — different contexts?",
+    "explanation": "Luke 15:1-3 opens: 'Now the tax collectors and sinners were all drawing near to hear him. And the Pharisees and the scribes grumbled, saying, This man receives sinners and eats with them. So he told them this parable'. → THEME: SEEKING the LOST (repentant sinners). Matthew 18:1-10 opens: 'At that time the disciples came to Jesus, saying, Who is the GREATEST in the kingdom of heaven?' → THEME: NOT CAUSING 'these little ones' (weak believers/children) to stumble. SAME parable, DIFFERENT applications.",
+    "language": "en",
+    "options": [
+      "LUKE: Jesus to PHARISEES and TAX COLLECTORS — lesson about FINDING REPENTANT SINNERS. MATTHEW: Jesus to DISCIPLES — lesson about NOT CAUSING 'these LITTLE ONES' (= weak believers) to STUMBLE",
+      "Identical (per the textual narrative) (in the story's sequence) (per the original content) (per the textual narrative)",
+      "Luke has 200 sheep, Matthew has 100 (as described in the passage) (cross-referenced with related passages)",
+      "Both about heaven (according to the text's framing) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Sheep Different Contexts",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 37,
+    "content": "TYPE 2 distinguish The Good Samaritan is UNIQUE TO LUKE. Why is this SIGNIFICANT for Luke's audience?",
+    "explanation": "Luke gives many signs of writing for GENTILE audiences: Greek names (Luke, Peter originally Simon), genealogy back to Adam (NOT just Abraham), Nazareth sermon emphasizing Gentiles (Sidon + Syria 4:25-27), 70 disciples sent (Gentile-symbolic number), 10 lepers ONLY a SAMARITAN gave thanks (17:11-19), Zacchaeus a SON of Abraham (19:9), the Good Samaritan (10:25-37). Luke's Gentile readers feel WELCOMED by these REVERSAL stories.",
+    "language": "en",
+    "options": [
+      "Because Samaritans were friendly to Luke (as described in the passage) (per the original content) (per the textual narrative)",
+      "Because Luke disliked Pharisees (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Because Luke focused only on Israel (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "Luke wrote for a GENTILE audience (Theophilus); Samaritans (HALF-GENTILE between Israel + Gentiles) are an IMAGE of OUTSIDERS made INSIDERS by love — fitting Luke's theme: GRACE FOR ALL PEOPLES, reversal of UNWORTHY → WORTHY"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Samaritan Significance",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "TYPE 2 distinguish temptation order — WHY does Luke reverse temptations 2 and 3 vs Matthew?",
+    "explanation": "Luke 4:5-13: temptation 2 = high mountain (kingdoms), temptation 3 = temple (jump). Matthew 4:5-10: temptation 2 = temple, temptation 3 = high mountain. Theory: Luke INTENTIONALLY places the TEMPLE temptation LAST — because his book is JERUSALEM-ORIENTED (Luke 9:51 'Set his face to Jerusalem'). The temple is the journey's climax. The journey from baptism (Jordan) → Jerusalem also parallels his FINAL JOURNEY.",
+    "language": "en",
+    "options": [
+      "Luke didn't remember accurately (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Temptations 2 and 3 didn't matter (according to the text's framing) (per the original content) (per the textual narrative)",
+      "Luke ENDS at the TEMPLE TEMPTATION — because Luke's Gospel has a JOURNEY-TO-JERUSALEM theme (9:51 onward). The Jerusalem temple is the FINAL DESTINATION — the temptation IMPLICITLY foreshadows the Passion journey",
+      "Because Luke has more information (as described in the passage) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Order Reversal",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 22,
+    "verseStart": 19,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 20,
+    "content": "TYPE 2 distinguish Last Supper Luke vs Matthew 26 / Mark 14 — core difference?",
+    "explanation": "Luke 22:19-20 unique features: (1) The phrase 'DO THIS IN REMEMBRANCE OF ME' — only in Luke + 1 Cor 11:24-25. This is the THEOLOGICAL BASIS for the CONTINUING Lord's Supper in the church. (2) Luke has TWO cups: 22:17-18 traditional Jewish Passover cup + 22:20 NEW covenant in Christ's blood. Matthew 26:26-29 + Mark 14:22-25 have only 1 cup. Luke clarifies the transition from OT Passover → NT Lord's Supper.",
+    "language": "en",
+    "options": [
+      "Luke has no Last Supper (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Luke ADDS 'DO THIS in REMEMBRANCE of ME' (22:19) — implying CONTINUOUS Lord's Supper; also has TWO cups (22:17 + 22:20) — cup 1 = Passover, cup 2 = NEW covenant",
+      "Luke has 5 cups instead of 1 (according to the text's framing) (per the original content)",
+      "Luke has no bread, only cups (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Last Supper Unique",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 35,
+    "content": "TYPE 2 distinguish Emmaus (Luke 24:13-35) — unique to Luke. Theological significance?",
+    "explanation": "Luke 24:13-35 uniquely contains 2 deep theological themes: (1) THE OT IS ABOUT CHRIST — 24:27 'And beginning with Moses and all the Prophets, he interpreted to them in all the Scriptures the things concerning himself'; also 24:44-46. This is the foundation for 'CHRIST-CENTRIC HERMENEUTICS' of Christianity. (2) Recognizing Christ IN THE BREAKING OF BREAD (24:30-31) — suggesting the Lord's Supper as where the Church recognizes Christ's presence. Emmaus establishes the PATTERN of church life: hear the Word + break bread + recognize the Lord.",
+    "language": "en",
+    "options": [
+      "Jesus taught two disciples 'BEGINNING with MOSES and the PROPHETS, EXPOUNDED to them in ALL THE SCRIPTURES the things concerning HIMSELF' — proving the OT speaks of Christ — they recognized him IN THE BREAKING OF BREAD (suggesting the Lord's Supper)",
+      "Just a simple story (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (as described in the passage)",
+      "Luke added it to lengthen the book (as described in the passage) (per the original content) (per the textual narrative) (in the story's sequence)",
+      "Emmaus was an enemy (according to the text's framing) (as the text indicates) (in the context of the passage) (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Emmaus Theology",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 51,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 53,
+    "content": "TYPE 3 deep meaning Magnificat Luke 1:51-53 — God's 'MIGHTY ARM' does what? Theological significance?",
+    "explanation": "Luke 1:51-53 (Magnificat) — 5 REVERSALS: (1) scatter the proud, (2) bring down the mighty, (3) exalt the humble, (4) fill the hungry, (5) send the rich away empty. This is Luke's 'MAGNIFICAT THEOLOGY': God REVERSES UNJUST SOCIAL ORDER. Same theme in Beatitudes/Woes (6:20-26), Rich Man and Lazarus (16:19-31), Pharisee and Tax Collector (18:9-14), etc. Luke beats this single drumbeat throughout.",
+    "language": "en",
+    "options": [
+      "Punishes Israelites (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (in the story's sequence)",
+      "Saves Gentile nations (as described in the passage) (as the text indicates) (in the context of the passage) (according to the text's framing)",
+      "Promotes King Herod (according to the text's framing) (per the original content) (per the textual narrative) (as described in the passage)",
+      "REVERSES WORLD ORDER: 'He has shown STRENGTH with his ARM; SCATTERED THE PROUD in the imagination of their hearts; BROUGHT DOWN the MIGHTY from their THRONES; EXALTED the HUMBLE; FILLED THE HUNGRY with good things; SENT THE RICH AWAY EMPTY'"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Great Reversal",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 32,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 32,
+    "content": "TYPE 3 deep meaning Simeon (Luke 2:32) calls Jesus 'LIGHT for ___ and GLORY for ___'. How do these phrases expand THE KINGDOM?",
+    "explanation": "Luke 2:32 — 'a light for revelation to the Gentiles, and for glory to your people Israel'. REVERSES traditional Jewish order (usually Israel first): Luke places GENTILES FIRST. The verse cites Isa 42:6, 49:6 — the Servant of the LORD is 'a LIGHT for the nations'. Significance: from the very TEMPLE PRESENTATION, Luke proclaims GRACE FOR THE WHOLE WORLD. Sums everything: Christ is UNIVERSAL SALVATION.",
+    "language": "en",
+    "options": [
+      "For Israel / for the Gentiles (as described in the passage) (per the original content)",
+      "For the GENTILES / for ISRAEL — Jesus is 'LIGHT for REVELATION to the GENTILES' (= Isa 42:6, 49:6) AND 'GLORY of your people ISRAEL'",
+      "For rich / for poor (per the textual narrative) (in the story's sequence)",
+      "For Romans / for Greeks (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Simeon Light",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 7,
+    "verseStart": 47,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 50,
+    "content": "TYPE 3 deep meaning Luke 7:47 — 'Her sins, which are many, are forgiven, FOR she LOVED MUCH; but he who is FORGIVEN LITTLE LOVES LITTLE'. Deep theological meaning?",
+    "explanation": "Luke 7:47 — The sinful woman wept at Jesus' feet, anointed him. Simon the Pharisee scorned her. Jesus said: 'Her sins, which are many, are forgiven — for she loved much'. CAREFUL: 'for' (Greek 'hoti') can be CAUSAL or CONSEQUENTIAL. Many scholars argue 'consequential': She HAS BEEN FORGIVEN MUCH and so EXPRESSES GREAT LOVE — NOT she loves much SO AS TO be forgiven. The structure supports: '7:42-43 which of the 2 debtors will love more? — The one forgiven MORE' → 'much love' is the RESULT of prior forgiveness. Theological principle: GRACE produces LOVE; LOVE does not earn GRACE.",
+    "language": "en",
+    "options": [
+      "Need many sins to receive God's love (as described in the passage)",
+      "God only forgives women (per the textual narrative) (in the story's sequence)",
+      "GREAT LOVE FROM EXPERIENCING MUCH FORGIVENESS; one who receives much GRACE LOVES MUCH — not the cause, but the RESULT",
+      "God forgives only minor sins (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Forgiven Much",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 9,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 25,
+    "content": "TYPE 3 deep meaning Luke 9:23 'DENY YOURSELF, take up your CROSS DAILY, follow me'. The word 'DAILY' is unique to Luke. Theological significance?",
+    "explanation": "Luke 9:23 — 'If anyone would come after me, let him deny himself and take up his cross daily and follow me'. Mark 8:34 + Matthew 16:24 LACK 'daily'. Luke deliberately adds 'kath' hēmeran' (DAILY): Discipleship is a CONTINUOUS journey — not a one-time DECISION. Pattern: Paul 1 Cor 15:31 — 'I die daily'. This is Luke's theme of PROGRESSIVE SANCTIFICATION through ongoing suffering + surrender.",
+    "language": "en",
+    "options": [
+      "Calls DISCIPLESHIP a DAILY (continuous) commitment, NOT one-time — Christian experience is a continuous JOURNEY, not a single EVENT",
+      "Must carry an actual cross every day (as described in the passage)",
+      "Must fast every day (per the textual narrative) (in the story's sequence)",
+      "Must go to temple every day (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Daily Cross",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 37,
+    "content": "TYPE 3 deep meaning Good Samaritan — NOT JUST a moral lesson — it's ALSO a SELF-PORTRAIT of Jesus. Why?",
+    "explanation": "Deep reading: the Good Samaritan is Christ's self-portrait: (1) In John 8:48 the Jews disdained Jesus: 'You are a SAMARITAN and have a demon'. Samaritan = OUTSIDER like Christ. (2) The Samaritan came at the PERFECT moment for the dying — Christ came when we were DEAD in sin (Rom 5:8). (3) The Samaritan PAID — Christ paid in BLOOD. (4) The Samaritan PROMISED to return — Christ promised the SECOND COMING. (5) The Samaritan is the 'TRUE NEIGHBOR' = Christ is the TRUE neighbor of fallen humanity.",
+    "language": "en",
+    "options": [
+      "Because Jesus was a Samaritan (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Because Jesus traveled the Jericho road (as described in the passage) (per the original content) (per the textual narrative)",
+      "Because the Samaritan was rich (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "JESUS IS the Good Samaritan: Jesus 'WAS DESPISED AS A SAMARITAN' (John 8:48); Jesus PROACTIVELY SEEKS the wounded; pays 'TWO COINS' = GRACE; PROMISES TO RETURN; Jesus is the 'TRUE NEIGHBOR' of humanity"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Christ as Samaritan",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 32,
+    "content": "TYPE 3 deep meaning Prodigal Son (Luke 15:11-32) has THREE main characters. Who is the THEOLOGICAL 'MAIN CHARACTER'?",
+    "explanation": "The title 'PRODIGAL SON' is misleading — the main character is the FATHER. The Father represents GOD: (1) RAN to embrace son (15:20) — in ancient culture, an elder did NOT run; this gesture is HUMBLING; (2) BEST ROBE, RING, SANDALS = restoration of the SON'S status, not servant; (3) FATTENED CALF = CELEBRATION; (4) The Father also WENT OUT to the ELDER SON (15:28) — GOD LOVES both 'self-righteous' and 'sinners'. Better name: 'PRODIGAL SON AND GENEROUS FATHER'.",
+    "language": "en",
+    "options": [
+      "The younger son — most prodigal (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "THE FATHER — because 'GENEROUS FATHER' is the PRIMARY theological theme; the father RAN (a humbling gesture for an elder), gave the BEST ROBE, RING, SANDALS = RESTORING the SON'S STATUS — DISPLAYING GOD'S GRACE",
+      "The elder son — because angry (according to the text's framing) (per the original content) (per the textual narrative)",
+      "The household servant (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Generous Father",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 18,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 14,
+    "content": "TYPE 3 deep meaning Pharisee and Tax Collector (Luke 18:9-14) — THE TAX COLLECTOR'S CRY 'GOD, HAVE MERCY on me, A SINNER!' (18:13) — WHY DOES THIS LEAD TO JUSTIFICATION?",
+    "explanation": "Luke 18:13 — 'But the tax collector, standing FAR OFF, would not even LIFT UP HIS EYES to heaven, but BEAT HIS BREAST, saying, God, be merciful to me, a sinner!' Greek 'tō hamartōlō' (have mercy on THE [definite] sinner = me). Three elements: (1) ADMITS SIN — no denial, no excuses; (2) RECOGNIZES UNWORTHINESS — stands far, won't lift eyes; (3) RELIES ENTIRELY ON GOD'S MERCY, not own merit. Contrast: the Pharisee LISTS merits (fasting, tithing) + COMPARES ('not like other men'). JUSTIFICATION comes only through ACKNOWLEDGING UNWORTHINESS + relying on GRACE.",
+    "language": "en",
+    "options": [
+      "Because the words are long (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "Because there are 7 words (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Because the tax collector (1) ADMITS his sin; (2) DOES NOT COMPARE himself to others; (3) APPEALS to GOD'S MERCY rather than his own merits. This is 'SOLA GRATIA' (grace alone) — not by works, not by comparison",
+      "Because the tax collector was an Israelite (as described in the passage) (per the original content) (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Mercy Cry",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 23,
+    "verseStart": 39,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 43,
+    "content": "TYPE 3 deep meaning Repentant Thief (Luke 23:39-43) unique to Luke. The words 'TODAY you will be with me in PARADISE' contain what THEOLOGICAL meaning?",
+    "explanation": "Luke 23:42-43 — 'And he said, Jesus, remember me when you come into your kingdom. And he said to him, Truly, I say to you, today you will be with me in paradise'. Analysis: (1) The thief was NOT BAPTIZED; (2) NO chance to do good works (being crucified); (3) NEVER attended the Lord's Supper; (4) Only FAITH in Christ as King → SALVATION. This is the CLASSIC proof for 'sola fide' (faith alone). 'TODAY' = no purgatory, no delay — IMMEDIATE entrance with Christ. This moment is the strongest THEOLOGICAL ARROW in NT for instant salvation by GRACE.",
+    "language": "en",
+    "options": [
+      "Salvation requires baptism before heaven (as described in the passage) (as the text indicates)",
+      "Need to perform miracles to be saved (according to the text's framing) (per the original content)",
+      "Need post-death purification time (per the textual narrative) (in the story's sequence)",
+      "SALVATION IS BY FAITH ALONE — no time, no ritual, no merits; SIMPLE FAITH ('Lord, when you come into your KINGDOM, REMEMBER me') is ENOUGH; 'TODAY' (Luke's theme) — no delay"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Today in Paradise",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 38,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 38,
+    "content": "TYPE 4 verse precision Luke 1:38 (ESV) — Mary's precise reply to the annunciation?",
+    "explanation": "Luke 1:38 — 'And Mary said, Behold, I am the servant of the Lord; let it be to me according to your word. And the angel departed from her'. This is the classic 'fiat' (let it be done) — Mary's TOTAL surrender, unconditional. In Latin Vulgate: 'Ecce ancilla Domini, fiat mihi secundum verbum tuum'. Contrasts with Eve's refusal of God's will (Gen 3) — Mary is the 'NEW EVE'. Her surrender enables the INCARNATION.",
+    "language": "en",
+    "options": [
+      "'Behold, I am the SERVANT of the Lord; let it BE TO ME according to your WORD'",
+      "'I don't understand; please explain more'",
+      "'I'm afraid and want to refuse' (according to the text's framing)",
+      "'I will find Joseph first' (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Mary's Fiat",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 14,
+    "content": "TYPE 4 verse precision Luke 2:14 — angels' song on Christmas night — precise wording?",
+    "explanation": "Luke 2:14 (ESV) — 'Glory to God in the highest, and on earth peace among those with whom he is pleased!'. Older translations had 'goodwill toward MEN', but the BEST GREEK manuscripts (Sinaiticus, Vaticanus) have 'eudokias' (genitive) = 'PEOPLE OF [HIS] FAVOR'. The verse frames the Gospel: CHRISTMAS brings PEACE — not unconditionally to all, but to THOSE FAVORED BY GOD.",
+    "language": "en",
+    "options": [
+      "'Glory in heaven, peace on earth' (very abridged)",
+      "'Amen, hallelujah, rejoice' (wrong) (per the textual narrative)",
+      "'GLORY TO GOD in the HIGHEST, and on EARTH PEACE among those with WHOM HE IS PLEASED!'",
+      "'A single angel sang a simple song' (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Glory and Peace",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 19,
+    "content": "TYPE 4 verse precision Luke 4:18-19 — sermon at the Nazareth synagogue. Precise wording with 5 phrases.",
+    "explanation": "Luke 4:18-19 — 'The Spirit of the Lord is upon me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim liberty to the captives and recovering of sight to the blind, to set at liberty those who are oppressed, to proclaim the year of the Lord's favor'. Quoting Isaiah 61:1-2a + Isaiah 58:6 ('set free the oppressed'). Contains 5 phrases: (1) Spirit upon, (2) anointed to PREACH GOOD NEWS to POOR, (3) proclaim LIBERTY to CAPTIVES, (4) RECOVERY of SIGHT to BLIND, (5) free those OPPRESSED. This is the 'NAZARETH MANIFESTO' framing all of Jesus' ministry.",
+    "language": "en",
+    "options": [
+      "'God sent me to heal disease' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "'THE SPIRIT OF THE LORD is upon me, because he has ANOINTED me to PROCLAIM GOOD NEWS to the POOR; sent me to PROCLAIM LIBERTY to CAPTIVES, RECOVERY of SIGHT to BLIND, set at LIBERTY those OPPRESSED; to PROCLAIM the YEAR of the LORD'S FAVOR'",
+      "'Repent, for the Kingdom is at hand' (as described in the passage) (per the original content) (per the textual narrative)",
+      "'Father sent me into the world' (according to the text's framing) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Nazareth Manifesto",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 6,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 31,
+    "content": "TYPE 4 verse precision Luke 6:31 — the GOLDEN RULE in Luke, precise wording?",
+    "explanation": "Luke 6:31 — 'And as you wish that others would do to you, do so to them'. Greek 'kathōs thelete... kai humeis poieite homoiōs'. This is the POSITIVE version. The Golden Rule had 2 ancient forms: (1) NEGATIVE — 'don't do what you don't want' (Hillel, Luke 31 story). Jesus used the POSITIVE — demanding more (ACTION, not just avoidance). Same verse in Matthew 7:12 adds 'for this is the Law and the Prophets'.",
+    "language": "en",
+    "options": [
+      "'Love your enemy as yourself' (per the textual narrative)",
+      "'Forgive others unconditionally' (according to the text's framing)",
+      "'Do not do to others what you don't want done to you' (NEGATIVE)",
+      "'AS YOU WISH that others would DO TO YOU, DO SO TO THEM' (POSITIVE form)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Golden Rule",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 11,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 10,
+    "content": "TYPE 4 verse precision Luke 11:9-10 — Jesus teaches disciples about prayer after the Lord's Prayer. Precise wording?",
+    "explanation": "Luke 11:9-10 — 'And I tell you, ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you. For everyone who asks receives, and the one who seeks finds, and to the one who knocks it will be opened'. Greek uses PRESENT IMPERATIVE 'aiteite, zēteite, krouete' — denoting CONTINUOUS action ('keep asking, keep seeking, keep knocking'). Same verse in Matthew 7:7-8.",
+    "language": "en",
+    "options": [
+      "'ASK, and it WILL BE GIVEN; SEEK, and you WILL FIND; KNOCK, and it WILL BE OPENED — for EVERYONE WHO ASKS receives, who SEEKS finds, who KNOCKS the door WILL be OPENED'",
+      "'Pray 7 times for God to hear' (according to the text's framing) (per the original content)",
+      "'Only prophets are heard by God' (as described in the passage) (as the text indicates)",
+      "'Must fast 40 days' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Ask Seek Knock",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 12,
+    "verseStart": 48,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 48,
+    "content": "TYPE 4 verse precision Luke 12:48 — principle on RESPONSIBILITY. Precise wording?",
+    "explanation": "Luke 12:48 — 'Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more'. UNIQUE to Luke. Principle: RESPONSIBILITY proportional to GIFTS. Application: Christian leadership — those with more blessings, gifts, knowledge bear HIGHER ACCOUNTABILITY before God. Also life principle: RECEIVE MUCH = RETURN MUCH. Often quoted for business/leadership.",
+    "language": "en",
+    "options": [
+      "'Everyone is equal before God' (per the textual narrative) (in the story's sequence)",
+      "'Many will be saved but few chosen' (according to the text's framing)",
+      "'Everyone to whom MUCH WAS GIVEN, of him MUCH WILL BE REQUIRED; and from him to whom they ENTRUSTED MUCH, they will demand MORE'",
+      "'Each is responsible only for own deeds' (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Much Given Much Required",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 19,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 10,
+    "content": "TYPE 4 verse precision Luke 19:10 — Jesus' MISSION STATEMENT in Luke. Precise wording?",
+    "explanation": "Luke 19:10 — 'For the Son of Man came to seek and to save the lost'. Greek phrase 'zētēsai kai sōsai to apolōlos'. This SUMMARIZES Jesus' mission per Luke: SEEK (repentance) + SAVE (deliverance from sin). Set in Zacchaeus context (19:1-9) — Zacchaeus exemplifies 'the lost' (rich materially but poor spiritually). The verse PARALLELS Ezekiel 34 (shepherd seeks lost sheep) and Luke 15 (3 lost parables).",
+    "language": "en",
+    "options": [
+      "'I came to teach the Law of Moses'",
+      "'THE SON OF MAN CAME TO SEEK and to SAVE THE LOST'",
+      "'I came to fight Satan' (per the textual narrative)",
+      "'I came only for Israelites'"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Mission Statement",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "verseStart": 46,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 47,
+    "content": "TYPE 4 verse precision Luke 24:46-47 — Jesus summarizes the PURPOSE of the PASSION + first Great Commission. Precise wording?",
+    "explanation": "Luke 24:46-47 — 'Thus it is written, that the Christ should suffer and on the third day rise from the dead, and that repentance for the forgiveness of sins should be proclaimed in his name to all nations, beginning from Jerusalem'. This is 'Luke's Great Commission' — summary: (1) Passion was according to God's plan, (2) Resurrection on day 3, (3) Repentance + forgiveness preached to 'ALL NATIONS' (universal), (4) BEGINNING from Jerusalem (= Acts 1:8 'Jerusalem... to the end of the earth'). The BRIDGE Luke → Acts.",
+    "language": "en",
+    "options": [
+      "'I will return in glory' (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "'Go into all the world' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "'The Kingdom of God is near' (as described in the passage) (per the original content) (per the textual narrative)",
+      "'Thus it is written, that THE CHRIST SHOULD SUFFER and on the THIRD DAY RISE from the DEAD, and that REPENTANCE for the FORGIVENESS of SINS should be PROCLAIMED in his NAME to ALL NATIONS, BEGINNING from JERUSALEM'"
+    ],
+    "tags": [
+      "New Testament",
+      "Luke",
+      "Gospels",
+      "Luke's Great Commission",
+      "Advanced"
+    ]
   }
 ]

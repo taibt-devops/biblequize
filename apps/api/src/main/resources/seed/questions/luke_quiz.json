@@ -2686,5 +2686,1602 @@
       "Phúc Âm",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 4,
+    "content": "Theo Lu-ca 1:1-4, Lu-ca viết Phúc âm này gửi đến ai?",
+    "explanation": "Lu-ca 1:3-4 — 'thì tôi cũng vậy, sau khi xét kỹ càng từ ban đầu mọi sự ấy, nhân thấy nên theo thứ tự viết mà tỏ ra cho ông, là Thê-ô-phi-lơ quí nhân, để ông biết những điều mình đã học là chắc chắn'. Cùng người được gửi Công Vụ 1:1.",
+    "language": "vi",
+    "options": [
+      "Phi-lát quan trấn La-mã (theo cách trình bày của text)",
+      "Hội thánh Giê-ru-sa-lem (như được mô tả trong sách)",
+      "Quan THÊ-Ô-PHI-LƠ — 'để cho ngươi BIẾT chắc chắn về sự đã dạy dỗ'",
+      "12 sứ đồ (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Thê-ô-phi-lơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 38,
+    "content": "Theo Lu-ca 1:26-38, thiên sứ Gáp-ri-ên báo tin Ma-ri sẽ sinh con trai. Tên đứa trẻ và đặc tính nào được tiên báo?",
+    "explanation": "Lu-ca 1:31-33 — 'Nầy, ngươi sẽ chịu thai và sanh một con trai mà đặt tên là Jêsus. Con trai ấy sẽ nên tôn trọng, được xưng là Con của Đấng Rất Cao; và Chúa, là Đức Chúa Trời, sẽ ban cho Ngài ngôi Đa-vít là tổ phụ Ngài. Ngài sẽ trị vì đời đời nhà Gia-cốp, nước Ngài vô cùng'.",
+    "language": "vi",
+    "options": [
+      "Tên Ê-ma-nu-ên / là tiên tri (theo cách trình bày của text)",
+      "Tên Giăng / sẽ làm phép báp-têm cho dân (như được mô tả trong sách)",
+      "Tên Si-môn / là sứ đồ (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Tên JÊSUS / 'lớn, được xưng là CON Đấng RẤT CAO; Chúa sẽ ban cho ngôi ĐA-VÍT, làm vua nhà GIA-CỐP đời đời'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Truyền tin",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 7,
+    "content": "Theo Lu-ca 2:1-7, vì sao Giô-sép và Ma-ri phải đi từ Na-xa-rét đến Bết-lê-hem trước khi sinh Chúa?",
+    "explanation": "Lu-ca 2:1-4 — 'Lúc ấy, Sê-sa Au-gút-tơ ra chiếu chỉ phải lập sổ dân trong cả thiên hạ. Việc lập sổ dân nầy là trước hết, và nhằm khi Qui-ri-niu làm quan tổng đốc xứ Sy-ri. Ai nấy đều đến thành mình mà khai tên'.",
+    "language": "vi",
+    "options": [
+      "Để dâng tế lễ tại đền thờ Giê-ru-sa-lem (như được mô tả trong sách)",
+      "Theo lệnh Sê-sa Au-gút-tơ KÊ KHAI dân toàn cõi đế quốc — Giô-sép thuộc dòng dõi Đa-vít, phải về Bết-lê-hem",
+      "Để chạy trốn Hê-rốt (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Để dự lễ Vượt Qua hằng năm (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Kê khai dân",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 38,
+    "content": "Theo Lu-ca 2:25-38, hai người cao tuổi nào ở đền thờ đã NHẬN BIẾT Chúa Jêsus là Đấng Mê-si-a khi cha mẹ Ngài đem dâng?",
+    "explanation": "Lu-ca 2:25-38 — Si-mê-ôn (2:25-35) ẵm Chúa và nói 'Lạy Chúa, bây giờ xin Chúa cho tôi tớ Chúa được qua đời bình an, theo như lời Ngài; vì con mắt tôi đã thấy sự cứu vớt của Ngài'. Bà An-ne (2:36-38) nữ tiên tri 84 tuổi 'tạ ơn Đức Chúa Trời, và nói về con trẻ ấy với mọi người trông đợi sự giải cứu của thành Giê-ru-sa-lem'.",
+    "language": "vi",
+    "options": [
+      "SI-MÊ-ÔN ('được Đức Thánh Linh phán không thấy chết trước khi thấy Đấng Christ') và bà ANE (nữ tiên tri 84 tuổi)",
+      "Áp-ra-ham và Sa-ra (theo cách trình bày của text)",
+      "A-rôn và Mi-ri-am (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Giăng Báp-tít và mẹ Ê-li-sa-bét (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Si-mê-ôn và An-ne",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "Theo Lu-ca 4:1-13 (vs Ma-thi-ơ 4), thứ tự BA cám dỗ Sa-tan đối với Chúa Jêsus trong sa mạc theo Lu-ca là gì?",
+    "explanation": "Lu-ca 4:3-12 thứ tự: (1) hóa đá thành bánh — vì Chúa đói (4:3); (2) thờ Sa-tan để được các nước (4:5-7); (3) nhảy từ nóc đền thờ thử Đức Chúa Trời (4:9-11). Ma-thi-ơ 4 đảo cám dỗ 2 và 3 — Lu-ca kết thúc tại đền thờ Giê-ru-sa-lem (Lu-ca thường hướng tới Jerusalem).",
+    "language": "vi",
+    "options": [
+      "Đền thờ → Sa mạc → Núi cao (xét trong văn cảnh)",
+      "Núi cao → Đền thờ → Sa mạc (theo cách trình bày của text)",
+      "Đền thờ → Núi cao → Sa mạc (như được mô tả trong sách)",
+      "Sa mạc HÓA ĐÁ THÀNH BÁNH → Núi cao THỜ SA-TAN ĐƯỢC NƯỚC THẾ GIAN → Đền thờ NHẢY XUỐNG"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Ba cám dỗ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 30,
+    "content": "Theo Lu-ca 4:16-30, khi Chúa Jêsus đọc Ê-sai 61 trong nhà hội Na-xa-rét rồi nói 'HÔM NAY đã được ứng nghiệm', dân thành phản ứng ra sao?",
+    "explanation": "Lu-ca 4:28-29 — 'Ai nấy ở trong nhà hội nghe những điều đó, thì tức giận lắm. Họ đứng dậy đuổi Ngài ra khỏi thành, đưa Ngài lên đỉnh núi, là nơi họ xây thành ở trên, để xô Ngài xuống vực sâu'. Lý do: Chúa nói Đức Chúa Trời ưu đãi DÂN NGOẠI hơn dân Y-sơ-ra-ên không tin (Ê-li đến với góa phụ Si-đôn 4:25-26, Ê-li-sê chữa Na-a-man 4:27).",
+    "language": "vi",
+    "options": [
+      "Họ tin và ăn năn ngay lập tức (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Họ mời Ngài ở lại làm thầy giảng đạo (như được mô tả trong sách)",
+      "Ban đầu KHEN ngợi, sau khi nghe Ngài nói về Ê-li đến với góa phụ Si-đôn và Na-a-man người Sy-ri — họ TỨC GIẬN, ĐUỔI Ngài ra khỏi thành, ĐỊNH XÔ Ngài xuống vực",
+      "Họ hỏi nhiều câu hỏi nghiên cứu (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Bị từ chối Na-xa-rét",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 11,
+    "content": "Theo Lu-ca 5:1-11, khi Phi-e-rơ kéo lưới đầy cá theo lời Chúa, ông phản ứng thế nào?",
+    "explanation": "Lu-ca 5:8-9 — 'Si-môn Phi-e-rơ thấy vậy, liền sấp mình xuống nơi đầu gối Đức Chúa Jêsus, mà thưa rằng: Lạy Chúa, xin ra khỏi tôi, vì tôi là người có tội. Số là vì đánh được nhiều cá dường ấy, nên người và mọi kẻ ở với mình đều thất kinh'. Sau đó Chúa gọi ông 'từ rày về sau, ngươi sẽ nên TAY ĐÁNH LƯỚI NGƯỜI'.",
+    "language": "vi",
+    "options": [
+      "Ông vui mừng đếm cá ngay tại bãi biển (theo cách trình bày của text)",
+      "Ông SẤP MÌNH dưới chân Chúa Jêsus và nói 'LẠY CHÚA, hãy lui ra khỏi tôi, vì tôi là NGƯỜI CÓ TỘI!'",
+      "Ông yêu cầu Chúa cho mượn tiền để mua lưới mới",
+      "Ông trốn về nhà vì sợ chia cá (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Mẻ cá lớn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 10,
+    "content": "Theo Lu-ca 7:1-10, thầy đội La-mã tại Ca-bê-na-um xin Chúa chữa cho ai? Chúa khen điều gì về ông?",
+    "explanation": "Lu-ca 7:9 — 'Đức Chúa Jêsus nghe những lời ấy, lấy làm lạ cho thầy đội, bèn xây lại cùng đoàn dân theo mình, mà phán rằng: Ta nói cùng các ngươi, dầu trong dân Y-sơ-ra-ên, ta cũng chưa thấy đức tin lớn dường ấy'. Thầy đội nói: 'Tôi không đáng rước Chúa vào nhà tôi... xin Chúa chỉ phán một lời, đầy tớ tôi sẽ được lành' (7:6-7).",
+    "language": "vi",
+    "options": [
+      "Vợ ông / khen ông yêu vợ (xét trong văn cảnh)",
+      "Mẹ ông / khen ông hiếu thảo (theo cách trình bày của text)",
+      "Con trai ông / khen ông nuôi con tốt (như được mô tả trong sách)",
+      "Đầy tớ ông / Chúa khen 'Ta nói cùng các ngươi, dầu trong dân Y-SƠ-RA-ÊN, ta cũng CHƯA THẤY ĐỨC TIN LỚN dường ấy'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Đức tin thầy đội",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 7,
+    "verseStart": 36,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 50,
+    "content": "Theo Lu-ca 7:36-50, người phụ nữ nào đã đến nhà Si-môn người Pha-ri-si, RỬA chân Chúa Jêsus bằng NƯỚC MẮT và LAU bằng TÓC, RÓT DẦU THƠM?",
+    "explanation": "Lu-ca 7:37-38 — 'Vả, có một người đàn bà xấu nết ở thành đó, biết Đức Chúa Jêsus đang ngồi bàn tại nhà người Pha-ri-si, bèn đem đến một bình bằng ngọc đựng đầy dầu thơm. Người đứng đằng sau, nơi chân Đức Chúa Jêsus, khóc, sa nước mắt trên chân Ngài; rồi lấy tóc mình mà chùi, hôn chân Ngài, và xức dầu thơm cho'. Chú ý đây KHÔNG phải Ma-ri ở Bê-tha-ni (Mác 14, Giăng 12) cũng KHÔNG phải Ma-ri Ma-đơ-len.",
+    "language": "vi",
+    "options": [
+      "Ma-ri Ma-đơ-len (xét trong văn cảnh)",
+      "Ma-thê em La-xa-rơ (theo cách trình bày của text)",
+      "MỘT NGƯỜI ĐÀN BÀ XẤU NẾT (sinner) — không ghi tên",
+      "Ma-ri mẹ Chúa Jêsus (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Người đàn bà xấu nết",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 3,
+    "content": "Theo Lu-ca 8:1-3, ai là những phụ nữ TÊN ĐƯỢC NÊU đi cùng Chúa Jêsus và 12 sứ đồ trong chức vụ?",
+    "explanation": "Lu-ca 8:2-3 — 'Cũng có mấy người đàn bà đã được cứu khỏi quỉ dữ và bịnh tật theo Ngài, là: Ma-ri ở Ma-đa-len, đã được khỏi mắc 7 quỷ; Gio-an-na, vợ Chu-xa, là người làm đầu trong nhà Hê-rốt; Su-dan và nhiều người khác đem của cải của họ mà giúp đỡ Ngài cùng các môn đồ'. Đây là LẦN ĐẦU trong Tân Ước có ghi TÊN nhiều phụ nữ là 'môn đồ tài chính'.",
+    "language": "vi",
+    "options": [
+      "MA-RI MA-ĐƠ-LEN (đã được đuổi 7 quỷ), GIO-AN-NA (vợ Chu-xa quan của Hê-rốt), SU-DAN — và nhiều người khác — DÙNG CỦA CẢI MÌNH giúp đỡ",
+      "Ma-thê và Ma-ri ở Bê-tha-ni (theo cách trình bày của text)",
+      "Ê-li-sa-bét, Sa-lô-mê, An-ne (như được mô tả trong sách)",
+      "Ru-tơ và Na-ô-mi (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Phụ nữ trong chức vụ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 9,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 36,
+    "content": "Theo Lu-ca 9:28-36 (Hóa Hình), khi Môi-se và Ê-li hiện ra, họ NÓI VỚI Chúa Jêsus về điều gì? (chỉ Lu-ca có chi tiết này)",
+    "explanation": "Lu-ca 9:30-31 — 'Có hai người nói chuyện cùng Ngài, ấy là Môi-se và Ê-li, hiện ra trong sự vinh hiển, và nói về SỰ RA ĐI (RVV11) của Ngài, mà Ngài sắp làm cho ứng nghiệm tại thành Giê-ru-sa-lem'. Hi-lạp 'EXODOS' (ἔξοδος) — Lu-ca CỐ Ý dùng từ này gắn cái chết Chúa với XUẤT HÀNH Y-sơ-ra-ên — Chúa Jêsus là 'Môi-se mới' dẫn dân khỏi nô lệ tội lỗi.",
+    "language": "vi",
+    "options": [
+      "Về vinh hiển trong vương quốc đời đời",
+      "Về 'SỰ RA ĐI' (exodus) Chúa SẮP HOÀN TẤT TẠI GIÊ-RU-SA-LEM (= cái chết và sống lại)",
+      "Về cách dạy luật pháp đúng đắn (theo cách trình bày của text)",
+      "Về cách tránh người Pha-ri-si (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Exodus tại Giê-ru-sa-lem",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 9,
+    "verseStart": 51,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 56,
+    "content": "Theo Lu-ca 9:51, đây là KHÚC NGOẶT của sách. Câu này nói gì về quyết tâm của Chúa Jêsus?",
+    "explanation": "Lu-ca 9:51 — 'Khi gần đến kỳ Đức Chúa Jêsus được cất lên, Ngài quyết định đi thẳng đến thành Giê-ru-sa-lem'. Hê-bơ-rơ kiểu 'sấp mặt mình về Giê-ru-sa-lem'. Đây là KHÚC NGOẶT — toàn bộ Lu-ca 9:51-19:48 là 'Hành trình đi Giê-ru-sa-lem' — chiếm 1/3 sách. Phần này có nhiều dụ ngôn độc đáo Lu-ca: Người Sa-ma-ri nhân lành, Ngừoi cha quảng đại, Người giàu và La-xa-rơ, người nữ ngoan cố...",
+    "language": "vi",
+    "options": [
+      "Ngài quyết định nghỉ ngơi vài tháng (xét trong văn cảnh)",
+      "Ngài quyết định trở về Ga-li-lê yên bình (theo cách trình bày của text)",
+      "Ngài quyết định đi truyền giáo các nước ngoại bang (như được mô tả trong sách)",
+      "'KHI GẦN ĐẾN KỲ Đức Chúa Jêsus được CẤT LÊN, Ngài QUYẾT ĐỊNH ĐI THẲNG ĐẾN GIÊ-RU-SA-LEM' — bắt đầu hành trình 10 chương đến thập tự"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Sấp mặt về Giê-ru-sa-lem",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 37,
+    "content": "Theo Lu-ca 10:25-37 (Người Sa-ma-ri Nhân Lành — chỉ Lu-ca có), thầy thông giáo hỏi 'AI là kẻ LÂN CẬN tôi?'. Sau khi kể dụ ngôn, Chúa hỏi LẠI thế nào?",
+    "explanation": "Lu-ca 10:36-37 — 'Trong ba người đó, ngươi tưởng người nào là lân cận với kẻ bị cướp? Thầy dạy luật thưa rằng: Aáy là người đã lấy lòng thương xót đãi người. Đức Chúa Jêsus phán rằng: Hãy đi, làm theo như vậy'. Chúa ĐẢO câu hỏi: thay vì 'AI là lân cận tôi?' (định nghĩa giới hạn) → 'AI HÀNH XỬ NHƯ LÂN CẬN?' (kêu gọi hành động).",
+    "language": "vi",
+    "options": [
+      "'Ai là người mạnh nhất trong câu chuyện?' (như được mô tả trong sách)",
+      "'Ai có công đức lớn nhất?' (xét trong văn cảnh)",
+      "'Trong BA NGƯỜI ĐÓ, ngươi tưởng AI LÀ LÂN CẬN với kẻ bị cướp?' — đảo CÂU HỎI thành 'AI HÀNH ĐỘNG NHƯ LÂN CẬN'",
+      "'Ai là người Pha-ri-si tốt?' (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Người Sa-ma-ri Nhân Lành",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 42,
+    "content": "Theo Lu-ca 10:38-42, Chúa Jêsus thăm nhà Ma-thê và Ma-ri. Chúa khen ai và vì sao?",
+    "explanation": "Lu-ca 10:41-42 — 'Chúa đáp rằng: Hỡi Ma-thê, Ma-thê, ngươi chịu khó và bối rối về nhiều việc; nhưng có một việc cần mà thôi. Ma-ri đã lựa phần tốt, là phần không có ai cất lấy được'. Câu này thường được hiểu: ưu tiên LẮNG NGHE Chúa hơn việc làm phục vụ — 'phần tốt nhất' = chính Chúa.",
+    "language": "vi",
+    "options": [
+      "Khen Ma-thê / vì siêng năng nấu ăn (như được mô tả trong sách)",
+      "Khen MA-RI / vì 'NGỒI dưới chân Chúa nghe lời', đã 'lựa PHẦN TỐT, là phần KHÔNG ai cất đi được'",
+      "Khen cả hai như nhau (theo cách trình bày của text)",
+      "Không khen ai cả (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Ma-ri và Ma-thê",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 4,
+    "content": "Theo Lu-ca 11:1-4, môn đồ xin Chúa Jêsus dạy CẦU NGUYỆN. Chúa dạy 'Lời Cầu Nguyện Chung'. Phiên bản Lu-ca KHÁC Ma-thi-ơ 6 thế nào?",
+    "explanation": "Lu-ca 11:2-4 ngắn hơn Ma-thi-ơ 6:9-13: 'Lạy Cha! danh Cha được thánh; nước Cha được đến; xin cho chúng tôi ngày nào đủ bánh ngày ấy; xin tha tội chúng tôi, vì chúng tôi cũng tha kẻ mích lòng mình; và xin chớ đem chúng tôi vào sự cám dỗ'. Thiếu: 'ý Cha được nên ở đất như trời' (Ma-thi-ơ 6:10b), 'cứu chúng tôi khỏi điều ác' (Ma-thi-ơ 6:13b). Lu-ca có thể giữ 'phiên bản gốc ngắn hơn' (theo nhiều học giả).",
+    "language": "vi",
+    "options": [
+      "NGẮN HƠN — KHÔNG có 'ý Cha được nên ở đất như trời', KHÔNG có 'cứu khỏi điều ác', KHÔNG có doxology cuối — chỉ 5 lời cầu xin chính yếu",
+      "Dài hơn Ma-thi-ơ (xét trong văn cảnh) (như được mô tả trong sách)",
+      "Hoàn toàn khác — không có 'lạy Cha chúng tôi' (theo trình tự câu chuyện)",
+      "Bằng tiếng Hi-lạp thay vì A-ra-mít (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Lời cầu nguyện ngắn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 12,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 21,
+    "content": "Theo Lu-ca 12:13-21 (Người Giàu Dại — chỉ Lu-ca có), người giàu nói gì khi mùa thu hoạch dồi dào?",
+    "explanation": "Lu-ca 12:19-20 — '...rồi sẽ nói với linh hồn ta rằng: Linh hồn ơi, mầy có nhiều của để dành dùng lâu năm; thôi, hãy nghỉ, ăn uống, và vui vẻ. Song Đức Chúa Trời phán cùng người rằng: Hỡi kẻ dại! Chính đêm nay linh hồn ngươi sẽ bị đòi lại; vậy những của cải ngươi đã sắm sẵn sẽ thuộc về ai?' Bài học: 'Hễ ai THU TÍCH của cho mình mà KHÔNG GIÀU CÓ nơi Đức Chúa Trời thì cũng như vậy' (12:21).",
+    "language": "vi",
+    "options": [
+      "'Hãy chia của cải cho người nghèo' (theo cách trình bày của text)",
+      "'Hãy dâng phần mười cho đền thờ' (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "'Hãy nghỉ ngơi 1 năm trước khi quyết định' (như được mô tả trong sách)",
+      "'Linh hồn ơi, ngươi có nhiều của để dành cho NHIỀU NĂM; hãy NGHỈ ngơi, ăn uống, vui mừng' / Đức Chúa Trời gọi ông là 'KẺ DẠI', đêm đó ngươi CHẾT"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Người giàu dại",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 13,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 17,
+    "content": "Theo Lu-ca 13:10-17, Chúa Jêsus chữa người phụ nữ bị BỆNH 18 năm trong nhà hội. Người cai nhà hội phản ứng thế nào?",
+    "explanation": "Lu-ca 13:14-16 — 'Bấy giờ người cai nhà hội nhân Đức Chúa Jêsus đã chữa bệnh trong ngày Sa-bát, thì giận mà cất tiếng nói cùng đoàn dân rằng: Có sáu ngày phải làm việc, vậy hãy đến trong những ngày ấy đặng chữa cho. Nhưng Chúa đáp rằng: Hỡi kẻ giả-hình, mỗi một người trong các ngươi, đang ngày Sa-bát, há chẳng mở bò hoặc lừa mình ra khỏi chuồng và dắt đi uống nước sao? Còn người đàn bà nầy, vốn là con cháu Áp-ra-ham, bị quỉ Sa-tan cầm buộc đã mười tám năm, há chẳng nên mở trói cho nó trong ngày Sa-bát sao?'",
+    "language": "vi",
+    "options": [
+      "Vui mừng và xin Chúa chữa thêm người khác (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Khen ngợi Chúa đã thương xót (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "TỨC GIẬN vì Chúa chữa NGÀY SA-BÁT — Chúa đáp: 'Đồ giả-hình! Mỗi người trong các ngươi, chẳng cởi BÒ hoặc LỪA mình ra khỏi máng cỏ trong ngày Sa-bát mà dắt đi uống nước hay sao?'",
+      "Mời Chúa giảng đạo trong hội đường (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Bệnh 18 năm Sa-bát",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 14,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 24,
+    "content": "Theo Lu-ca 14:15-24 (Tiệc Lớn — Great Banquet), người chủ nhà mời người ta đến tiệc, nhưng họ ĐỀU XIN LỖI và TỪ CHỐI. Chủ ra lệnh GỌI AI thay?",
+    "explanation": "Lu-ca 14:21-23 — 'Hãy đi mau ra các đường lối phố trong thành, đem những kẻ nghèo, tàn tật, đui, què vào đây... còn dư chỗ. Chủ nhà lại biểu rằng: Hãy ra ngoài đường và dọc hàng rào, gặp ai thì ép mời vào, cho đầy nhà ta'. Bài học: Lời mời được chuyển TỪ những người được hiển nhiên (Y-sơ-ra-ên ưu tú) ĐẾN người bị bỏ qua (NGHÈO, TÀN TẬT, DÂN NGOẠI). Tiêu đề ngụ ngôn: Vương quốc Đức Chúa Trời mở rộng cho mọi người.",
+    "language": "vi",
+    "options": [
+      "Người Pha-ri-si và thầy thông giáo (như được mô tả trong sách)",
+      "Đầu tiên 'NGƯỜI NGHÈO, TÀN TẬT, MÙ LÒA, QUE QUẶT' trong THÀNH; rồi đi ra 'ĐƯỜNG CÁI và CÁC RÀO' (= dân ngoại) ép vào CHO ĐẦY NHÀ",
+      "Các vua chúa của các nước (theo cách trình bày của text)",
+      "12 môn đồ và 70 môn đồ (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Tiệc lớn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 32,
+    "content": "Theo Lu-ca 15:11-32 (Đứa Con Hoang Đàng / Người Cha Quảng Đại — chỉ Lu-ca có), khi đứa con HOANG ĐÀNG quay về, người cha làm gì?",
+    "explanation": "Lu-ca 15:20-24 — 'Khi còn ở đàng xa, cha nó thấy thì động lòng thương xót, chạy ra ôm lấy cổ mà hôn... Hãy mau mau lấy áo tốt nhứt mặc cho nó; đeo nhẫn vào ngón tay, mang giày vào chân. Hãy bắt bò con mập làm thịt đi. Chúng ta hãy ăn mừng, vì con ta đây đã chết mà bây giờ lại sống, đã mất mà bây giờ lại thấy được'. Đây là bức tranh ÂN ĐIỂN ĐỨC CHÚA TRỜI mạnh mẽ nhất Tân Ước.",
+    "language": "vi",
+    "options": [
+      "Đợi đứa con đến gần rồi mắng nhiếc (như được mô tả trong sách)",
+      "Bắt đứa con phải lao động trả nợ (xét trong văn cảnh)",
+      "Đuổi đứa con đi vì đã làm xấu hổ (theo cách trình bày của text)",
+      "CHÍNH cha CHẠY ra ÔM CỔ, HÔN; TIỆC LỚN với 'BÒ CON MẬP', ÁO ĐẸP NHẤT, NHẪN, GIÀY — 'con TA chết mà bây giờ lại SỐNG'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Đứa con hoang đàng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 17,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 19,
+    "content": "Theo Lu-ca 17:11-19, khi 10 người PHUNG được Chúa chữa lành, có mấy người trở lại tạ ơn? Người đó thuộc dân nào?",
+    "explanation": "Lu-ca 17:15-18 — 'Có một người trong bọn họ thấy mình đã được sạch, bèn trở lại, lớn tiếng khen ngợi Đức Chúa Trời; lại đến sấp mặt xuống đất, nơi chân Đức Chúa Jêsus, mà tạ ơn Ngài. Vả, người đó là người Sa-ma-ri. Đức Chúa Jêsus bèn cất tiếng phán rằng: Không phải mười người đều được sạch cả sao? Còn chín người kia ở đâu? Chỉ có người ngoại quốc nầy trở lại ngợi khen Đức Chúa Trời ư?'",
+    "language": "vi",
+    "options": [
+      "Tất cả 10 người trở lại",
+      "5 người Y-sơ-ra-ên trở lại",
+      "CHỈ MỘT người trở lại — và là NGƯỜI SA-MA-RI (dân ngoại)",
+      "Không ai trở lại (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Mười người phung",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 18,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 8,
+    "content": "Theo Lu-ca 18:1-8 (Người Đàn Bà Góa Ngoan Cố — chỉ Lu-ca có), bài học chính của ngụ ngôn là gì?",
+    "explanation": "Lu-ca 18:1 (lời mở đầu Chúa Jêsus): 'Đức Chúa Jêsus phán cùng môn đồ một thí dụ, để tỏ ra rằng phải cầu nguyện luôn, chẳng hề mỏi mệt'. Sau dụ ngôn (18:6-8): 'Vậy, có lẽ nào Đức Chúa Trời chẳng xét lẽ công bình cho những người đã được chọn, là kẻ đêm ngày kêu xin Ngài... Ta nói cùng các ngươi, Ngài sẽ vội vàng xét lẽ công bình cho họ'. Bài học: A FORTIORI — nếu quan tòa BẤT CÔNG còn nghe lời người đàn bà ngoan cố, thì Đức Chúa Trời CÔNG BÌNH chắc chắn sẽ nghe.",
+    "language": "vi",
+    "options": [
+      "DÂN ĐỨC CHÚA TRỜI 'phải CẦU NGUYỆN luôn, KHÔNG MỎI MỆT' — vì Đức Chúa Trời 'sẽ chóng vánh BÁO TRẢ' cho dân Ngài",
+      "Cần phải lươn lẹo trong tòa án (theo cách trình bày của text)",
+      "Phụ nữ không nên làm phiền quan tòa (như được mô tả trong sách)",
+      "Quan tòa nên công bằng hơn (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Bà góa ngoan cố",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 18,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 14,
+    "content": "Theo Lu-ca 18:9-14 (Pha-ri-si và Người Thâu Thuế — chỉ Lu-ca có), AI ra về 'XƯNG CÔNG BÌNH'?",
+    "explanation": "Lu-ca 18:13-14 — 'Người thâu thuế đứng xa xa, không dám ngước mắt lên trời, đấm ngực mà rằng: Lạy Đức Chúa Trời, xin thương xót lấy tôi, vì tôi là kẻ có tội! Ta nói cùng các ngươi, người nầy trở về nhà mình, được xưng công bình hơn người kia; vì ai tự nhắc mình lên sẽ phải hạ xuống, ai tự hạ mình xuống sẽ được nhắc lên'.",
+    "language": "vi",
+    "options": [
+      "Người Pha-ri-si vì giữ nhiều luật (như được mô tả trong sách)",
+      "Cả hai vì đều đến đền thờ (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Không ai cả vì đều có tội (theo cách trình bày của text)",
+      "Người THÂU THUẾ — đã không dám ngẩng mắt, đập ngực thưa: 'LẠY ĐỨC CHÚA TRỜI, xin THƯƠNG XÓT tôi vì tôi là KẺ CÓ TỘI'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Pha-ri-si và thâu thuế",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 19,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 10,
+    "content": "Theo Lu-ca 19:1-10 (Xa-chê — chỉ Lu-ca có), Xa-chê làm gì khi Chúa Jêsus đi qua Giê-ri-cô? Chúa nói gì khi đến nhà ông?",
+    "explanation": "Lu-ca 19:5-10 — 'Đức Chúa Jêsus đến chỗ ấy, ngước mắt lên mà phán rằng: Hỡi Xa-chê, hãy xuống cho mau, vì hôm nay ta phải ở nhà ngươi. Người liền xuống mau và rước Ngài cách vui mừng... Đức Chúa Jêsus bèn phán rằng: Hôm nay sự cứu đã vào nhà nầy, vì người nầy cũng là con cháu Áp-ra-ham. Bởi Con người đã đến tìm và cứu kẻ bị mất'.",
+    "language": "vi",
+    "options": [
+      "Xa-chê ngồi tại bến tàu / 'Hãy đi đánh cá với ta' (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Xa-chê là 'TRƯỞNG LẠI THUẾ' và GIÀU CÓ; vì THẤP, ông LEO LÊN CÂY SUNG để THẤY Chúa / Chúa: 'HÔM NAY ta phải Ở LẠI nhà ngươi'; sau đó: 'HÔM NAY sự CỨU RỖI đã ĐẾN nhà nầy... CON NGƯỜI đến để TÌM và CỨU kẻ bị HƯ MẤT'",
+      "Xa-chê quỳ lạy / Chúa rủa ông (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)",
+      "Xa-chê chạy trốn / Chúa kêu ông quay lại (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Xa-chê",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 21,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 4,
+    "content": "Theo Lu-ca 21:1-4 (Hai Đồng Tiền Bà Góa), Chúa Jêsus khen bà GÓA NGHÈO bỏ HAI đồng tiền nhỏ vì sao?",
+    "explanation": "Lu-ca 21:3-4 — 'Quả thật, ta nói cùng các ngươi, mụ góa nghèo nầy đã bỏ vào nhiều hơn hết mọi người khác. Vì mọi người kia lấy của dư mình mà làm của dâng; nhưng mụ nầy thiếu thốn, mà đã dâng hết của mình có để nuôi mình'.",
+    "language": "vi",
+    "options": [
+      "Vì bà già nhất trong người dâng lễ (như được mô tả trong sách)",
+      "Vì bà bỏ TIỀN VÀNG nhiều nhất (theo cách trình bày của text)",
+      "Vì 'mọi người ấy đã lấy CỦA DƯ MÌNH mà LÀM của dâng; nhưng MỤ NÀY THIẾU THỐN, mà đã DÂNG HẾT CỦA MÌNH HẰNG DÙNG'",
+      "Vì bà thuộc gia đình tế lễ (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Hai đồng bà góa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 22,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 20,
+    "content": "Theo Lu-ca 22:14-20 (Tiệc Ly Lu-ca), Chúa Jêsus nói gì độc đáo trong phiên bản Lu-ca khi chia bánh và chén?",
+    "explanation": "Lu-ca 22:19-20 — 'Đoạn, Ngài cầm bánh, tạ ơn xong, bẻ ra phân phát cho môn đồ, mà phán rằng: Nầy là thân thể ta, đã vì các ngươi mà phó cho; hãy làm sự nầy để nhớ đến ta. Khi ăn xong, Ngài cũng làm như vậy, lấy chén đưa cho môn đồ, mà phán rằng: Chén nầy là giao ước mới trong huyết ta vì các ngươi mà đổ ra'. Cụm 'Hãy làm sự nầy để nhớ đến ta' chỉ Lu-ca + 1 Cô 11:24-25 có.",
+    "language": "vi",
+    "options": [
+      "Lu-ca có bài giảng dài nhất về Tiệc Ly (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Phiên bản LU-CA NHẤN MẠNH 'GIAO ƯỚC MỚI trong HUYẾT TA' (22:20) — và 'NẦY là thân thể ta đã VÌ CÁC NGƯƠI mà PHÓ' (22:19); chỉ Lu-ca thêm 'HÃY LÀM SỰ NẦY ĐỂ NHỚ ĐẾN TA'",
+      "Lu-ca không có Tiệc Ly (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Lu-ca có 5 chén thay vì 1 (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Tiệc Ly Lu-ca",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 23,
+    "verseStart": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 38,
+    "content": "Theo Lu-ca 23:34, Chúa Jêsus thốt ra điều gì khi BỊ ĐÓNG ĐINH (chỉ Lu-ca ghi)?",
+    "explanation": "Lu-ca 23:34 — 'Song Đức Chúa Jêsus cầu rằng: Lạy Cha, xin tha cho họ, vì họ không biết mình làm điều gì'. Câu này chỉ có ở Lu-ca (nhiều bản chép tay sớm). Nó tỏ TRỌN VẸN CHỦ ĐỀ THA THỨ của Lu-ca từ đầu đến cuối: từ Magnificat (1:50 'lòng thương xót Ngài đến đời đời') đến lời cuối Christ trên thập tự.",
+    "language": "vi",
+    "options": [
+      "'Đây là Vua dân Giu-đa' (xét trong văn cảnh)",
+      "'Ê-li, Ê-li, lam-ma sa-bác-ta-ni?' (theo cách trình bày của text)",
+      "'Bữa nay ngươi sẽ ở thiên đàng với ta' (như được mô tả trong sách)",
+      "'LẠY CHA, xin THA cho HỌ, vì HỌ KHÔNG BIẾT mình LÀM ĐIỀU GÌ' — lời tha thứ cho kẻ đóng đinh Ngài"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Lời tha thứ trên thập tự",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "verseStart": 44,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 49,
+    "content": "Theo Lu-ca 24:44-49, sau khi sống lại, Chúa Jêsus dạy gì về sự ứng nghiệm Cựu Ước? Và Ngài hứa gì sắp đến?",
+    "explanation": "Lu-ca 24:44-49 — 'Phải có lẽ ấy, Ngài phán cùng môn đồ rằng: Aáy đó là điều mà khi ta còn ở với các ngươi, ta bảo các ngươi rằng mọi sự đã chép về ta trong luật pháp Môi-se, các sách tiên tri, cùng các Thi Thiên phải được ứng nghiệm... và nầy, ta sẽ ban cho các ngươi điều Cha ta đã hứa, còn về phần các ngươi, hãy đợi trong thành cho đến khi được mặc lấy quyền phép từ trên cao'. Đây là CẦU NỐI giữa Lu-ca và Công Vụ — Lu-ca bắt đầu với Lễ Ngũ Tuần (Acts 2).",
+    "language": "vi",
+    "options": [
+      "'Mọi sự đã chép về ta trong LUẬT PHÁP MÔI-SE, các SÁCH TIÊN TRI, và THI THIÊN PHẢI ĐƯỢC ỨNG NGHIỆM' / Hứa 'SỰ MẶC LẤY QUYỀN PHÉP TỪ TRÊN CAO' (= Đức Thánh Linh, ứng nghiệm Lễ Ngũ Tuần Công Vụ 2)",
+      "Mọi sự sẽ kết thúc trong vài tuần (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Ngài đi xa và không trở lại (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Ngài lập 100 môn đồ mới (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Mọi sự ứng nghiệm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 46,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 55,
+    "content": "KIỂU 1 cross-ref Bài Magnificat của Ma-ri (Lu-ca 1:46-55) gần giống bài ca CỰU ƯỚC nào?",
+    "explanation": "Bài Magnificat (Lu-ca 1:46-55) đậm đặc echoes Bài ca An-ne (1 Sa-mu-ên 2:1-10): 'Đức Chúa Trời cao' / 'kẻ kiêu ngạo bị hạ' / 'kẻ hèn được nhấc'. Cả hai là phụ nữ son sẻ/nghèo dâng con cho công việc Chúa (An-ne → Sa-mu-ên; Ma-ri → Christ). Cụm 'sức cánh tay ta' (1 Sa 2:9) ↔ 'tay Ngài đầy sức mạnh' (Lu 1:51). Đề cao TÍNH ĐẢO ngược của Đức Chúa Trời.",
+    "language": "vi",
+    "options": [
+      "Bài ca Đa-vít (2 Sa-mu-ên 22) (như được mô tả trong sách)",
+      "Bài ca Mô-se (Phục 32) (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "BÀI CA AN-NE (1 Sa-mu-ên 2:1-10) — cùng motif: 'Đức Chúa Trời nhấc người HÈN MỌN, hạ KẺ KIÊU NGẠO'",
+      "Bài ca Đê-bô-ra (Quan Xét 5) (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Magnificat - Bài ca An-ne",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 11,
+    "content": "KIỂU 1 cross-ref Lu-ca có chủ đề 'HÔM NAY' (sēmeron) đặc biệt ở các thời điểm chuyển tiếp cứu rỗi. Câu nào CÓ chủ đề này? (chọn tất cả đúng)",
+    "explanation": "Lu-ca dùng 'sēmeron' (HÔM NAY) ở các bước ngoặt cứu rỗi: 2:11 (Giáng sinh), 4:21 (Bài giảng Na-xa-rét), 19:9 (Xa-chê), 23:43 (kẻ trộm). Cũng 'hôm nay đêm nay' 22:34 (Phi-e-rơ chối). Tất cả nhấn mạnh CỨU RỖI HIỆN TẠI HOÁ TRONG CHÚA JÊSUS, không phải chỉ tương lai.",
+    "language": "vi",
+    "options": [
+      "Lu 2:11 — 'HÔM NAY tại thành Đa-vít, đã sanh CHO CÁC NGƯƠI một Đấng Cứu Thế'",
+      "Lu 4:21 — 'HÔM NAY ĐÃ ỨNG NGHIỆM lời Kinh Thánh nầy mà tai các ngươi vừa nghe' (Ê-sai 61)",
+      "Lu 19:9 — 'HÔM NAY sự CỨU đã vào nhà nầy' (về Xa-chê)",
+      "Lu 7:1 — 'Khi vào thành Ca-bê-na-um' (không có 'hôm nay')"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Chủ đề HÔM NAY",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 19,
+    "content": "KIỂU 1 cross-ref Bài giảng tại Na-xa-rét (Lu-ca 4:18-19), Chúa Jêsus đọc CỰU ƯỚC nào?",
+    "explanation": "Lu-ca 4:18-19 — Chúa Jêsus đọc Ê-sai 61:1-2a + chèn Ê-sai 58:6 ('giải phóng kẻ bị bắt'), nhưng DỪNG TẠI 'rao năm ân của Chúa' và KHÔNG ĐỌC tiếp 'ngày báo thù của Đức Chúa Trời chúng ta' (61:2b). Lý do: lần ĐẾN ĐẦU TIÊN của Chúa Jêsus là ÂN ĐIỂN — ngày báo thù dành cho lần TÁI LÂM. Đây là dấu hiệu thần học sâu sắc của Lu-ca về 2 lần đến của Đấng Mê-si-a.",
+    "language": "vi",
+    "options": [
+      "Thi Thiên 22 — 'Đức Chúa Trời tôi ơi' (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Sáng Thế Ký 1 — sự sáng tạo (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Phục Truyền 6 — Shema (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)",
+      "Ê-SAI 61:1-2a + 58:6 — 'Thần của Chúa NGỰ TRÊN ta... rao TIN LÀNH cho người NGHÈO... rao NĂM ÂN' — Chúa Jêsus dừng giữa câu, KHÔNG ĐỌC 'NGÀY BÁO THÙ'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Bài giảng Na-xa-rét",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 11,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 13,
+    "content": "KIỂU 1 cross-ref Lu-ca CHỦ ĐỀ ĐỨC THÁNH LINH đậm đặc nhất trong các Phúc âm. Câu nào dạy đặc biệt về Cha BAN Thánh Linh cho ai cầu xin?",
+    "explanation": "Lu-ca 11:13 — 'Vậy nếu các ngươi vốn là xấu, còn biết cho con cái mình vật tốt thay, huống chi Cha các ngươi ở trên trời lại sẽ ban Đức Thánh Linh cho người xin Ngài!'. Phiên bản Ma-thi-ơ 7:11 nói 'BAN VẬT TỐT cho người xin Ngài'. Lu-ca THAY 'vật tốt' bằng 'Đức Thánh Linh' — ĐỨC THÁNH LINH là 'điều tốt nhất' Cha ban. Đây phù hợp chủ đề Lu-ca-Công Vụ về Đức Thánh Linh.",
+    "language": "vi",
+    "options": [
+      "Lu-ca 12:10 — 'Phạm thượng Thánh Linh không tha' (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Lu-ca 11:13 — 'Cha trên TRỜI lại sẽ BAN ĐỨC THÁNH LINH cho NGƯỜI XIN Ngài' (CHỈ LU-CA — Ma-thi-ơ 7:11 nói 'điều TỐT LÀNH', Lu-ca thay thành 'ĐỨC THÁNH LINH')",
+      "Lu-ca 4:1 — 'Chúa đầy Đức Thánh Linh' (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Lu-ca 24:49 — 'Mặc lấy quyền phép' (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Cha ban Thánh Linh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 32,
+    "content": "KIỂU 1 cross-ref Lu-ca 15 chứa BA dụ ngôn liên tiếp với CÙNG CHỦ ĐỀ. Ba dụ ngôn đó là gì? Chủ đề chung?",
+    "explanation": "Lu-ca 15 chứa 'BỘ BA' liên kết: chiên lạc (15:3-7), đồng tiền mất (15:8-10), con hoang đàng (15:11-32). Mỗi dụ ngôn KẾT THÚC bằng VUI MỪNG và TIỆC ĂN MỪNG. Bài học: niềm vui Đức Chúa Trời khi 1 tội nhân ăn năn (15:7,10) — KHÔNG phải 99 người công bình. Đây là chương 'TIN LÀNH NHẤT' Lu-ca.",
+    "language": "vi",
+    "options": [
+      "CHIÊN LẠC (1 trong 100), ĐỒNG TIỀN MẤT (1 trong 10), CON HOANG ĐÀNG (1 trong 2) — chủ đề: 'Đức Chúa Trời TÌM KIẾM kẻ MẤT' và VUI MỪNG khi tìm thấy",
+      "Người gieo / Cỏ lùng / Hột cải (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Mười cô gái / Tài chính / Phán xét cuối cùng (theo cách trình bày của text)",
+      "Người Sa-ma-ri / Người giàu / Người ngoan cố (như được mô tả trong sách) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Bộ ba lạc",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 19,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 10,
+    "content": "KIỂU 1 cross-ref Câu Lu-ca 19:10 'Con người đến TÌM và CỨU kẻ HƯ MẤT' tóm tắt MỤC ĐÍCH chức vụ Chúa Jêsus. Câu Cựu Ước nào ECHO bởi câu này?",
+    "explanation": "Ê-xê 34 là chương 'PHÁN XÉT NHỮNG MỤC TỬ XẤU' của Y-sơ-ra-ên. 34:11 — 'Vì Chúa GIÊ-HÔ-VA phán: Nầy, chính ta sẽ ĐI TÌM CHIÊN ta, và sẽ THĂM CHĂM CHIÊN'. 34:16 — 'TA sẽ TÌM kiếm CON CHIÊN BỊ MẤT, đem TRỞ VỀ con đã bị xua đi, băng bó con BỊ GÃY, làm cho mạnh con BỊ ĐAU'. Lu-ca 19:10 cố ý dùng cụm 'TÌM... CỨU MẤT' để khẳng định CHÚA JÊSUS là Đức Chúa Trời 'ĐẤNG CHĂN' đến chính mình. Cũng so Lu-ca 15 (3 dụ ngôn lạc) + Giăng 10 ('Ta là người chăn hiền lành').",
+    "language": "vi",
+    "options": [
+      "Sáng 1:1 — 'Ban đầu Đức Chúa Trời' (như được mô tả trong sách)",
+      "Thi 23:1 — 'Đấng chăn giữ tôi' (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Phục 6:4 — 'Đức Chúa Trời CÓ MỘT' (theo cách trình bày của text)",
+      "Ê-XÊ-CHI-ÊN 34:11-16 — 'TA SẼ TÌM CHIÊN ta, GIẢI CỨU chúng' — chỉ Đức Chúa Trời là 'ĐẤNG CHĂN', tìm chiên lạc"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Tìm và cứu kẻ mất",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "verseStart": 49,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 49,
+    "content": "KIỂU 1 cross-ref Lu-ca 24:49 'sẽ MẶC lấy QUYỀN PHÉP từ trên CAO'. Câu nào trong Công Vụ ứng nghiệm lời này?",
+    "explanation": "Lu-ca 24:49 'mặc lấy quyền phép từ trên cao' (cùng 24:46-48 'làm chứng về sự nầy') ứng nghiệm CHÍNH XÁC tại Công Vụ 2:1-4 (Lễ Ngũ Tuần). Cụm Hi-lạp 'enduō' (mặc) + 'dunamis' (quyền phép) trở thành đề tài chính của Công Vụ. Đây là CẦU NỐI văn học LU-CA-CÔNG VỤ — Lu-ca đã thiết kế kết của Phúc âm 1 = mở đầu Phúc âm 2. Công Vụ 1:1 'Sách trước' (Phúc âm Lu-ca) — cùng tác giả, cùng người nhận (Thê-ô-phi-lơ).",
+    "language": "vi",
+    "options": [
+      "CÔNG VỤ 2:1-4 — 'Đầy dẫy Đức Thánh Linh' tại Lễ NGŨ TUẦN; 'lưỡi như lửa rời rạc đậu trên mỗi người'",
+      "Công Vụ 1:11 — Chúa thăng thiên (theo cách trình bày của text)",
+      "Công Vụ 7:60 — Stê-phen tử đạo (xét trong văn cảnh)",
+      "Công Vụ 16:30 — viên cai ngục Phi-líp tin Chúa (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Mặc quyền phép — Pentecost",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 3,
+    "content": "KIỂU 1 cross-ref Phụ nữ trong Phúc âm Lu-ca — Lu-ca có nhiều ghi chép về phụ nữ hơn các Phúc âm khác. Phân đoạn nào CÓ trong Lu-ca? (chọn tất cả đúng)",
+    "explanation": "Lu-ca có nhiều phụ nữ được nêu tên + vai trò chủ động hơn các Phúc âm khác: Ê-li-sa-bét (1), Ma-ri (1-2), bà tiên tri An-ne (2), bà góa Na-in (7), người đàn bà xấu nết (7), Ma-ri Ma-đơ-len + Gio-an-na + Su-dan (8), Ma-thê + Ma-ri (10), bà bệnh 18 năm (13), bà mất đồng tiền (15), bà góa ngoan cố (18), bà góa hai đồng (21), phụ nữ tại thập tự + sống lại (23-24). Phương án D không có phụ nữ.",
+    "language": "vi",
+    "options": [
+      "Lu 8:1-3 — Phụ nữ MA-RI MA-ĐƠ-LEN, GIO-AN-NA, SU-DAN dùng CỦA CẢI MÌNH ủng hộ chức vụ Chúa Jêsus",
+      "Lu 10:38-42 — MA-RI ngồi dưới chân Chúa NGHE LỜI; MA-THÊ phục dịch",
+      "Lu 24:1-12 — Phụ nữ là NGƯỜI ĐẦU TIÊN biết Chúa SỐNG LẠI và báo cho 11 sứ đồ",
+      "Lu 18:9-14 — Pha-ri-si và thâu thuế (chỉ về 2 người NAM, không có phụ nữ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Phụ nữ trong Lu-ca",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 6,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 26,
+    "content": "KIỂU 2 distinguish Lu-ca 6:20-26 vs Ma-thi-ơ 5 — KHÁC BIỆT cốt lõi giữa 'Bài Giảng trên ĐỒNG BẰNG' (Lu-ca) và 'Bài Giảng trên NÚI' (Ma-thi-ơ)?",
+    "explanation": "Lu-ca 6:20-26 có 4 PHƯỚC (nghèo, đói, khóc, bị bắt bớ) + 4 KHỐN đối ứng (giàu, no, cười, được khen). Ma-thi-ơ 5:3-12 có 9 Phước, KHÔNG có Khốn. Lu-ca: 'Phước cho NGƯỜI NGHÈO' (vật chất); Ma-thi-ơ: 'Phước cho người NGHÈO TRONG TÂM LINH'. Lu-ca: 'Phước cho ai BÂY GIỜ ĐÓI'; Ma-thi-ơ: 'đói khát SỰ CÔNG BÌNH'. Lu-ca nhấn mạnh đảo ngược KINH TẾ-XÃ HỘI; Ma-thi-ơ nhấn mạnh ĐẢO NGƯỢC TÂM LINH. Cả hai bổ sung nhau.",
+    "language": "vi",
+    "options": [
+      "Lu-ca có 9 Beatitudes, Ma-thi-ơ có 7 (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Cả hai hoàn toàn giống nhau (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)",
+      "Lu-ca có thêm 'Đói khát sự công bình' (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Lu-ca có 4 PHƯỚC + 4 KHỐN; Ma-thi-ơ chỉ có PHƯỚC; Lu-ca thiên về VẬT CHẤT ('NGHÈO' / 'ĐÓI'), Ma-thi-ơ thiên về TÂM LINH ('NGHÈO TÂM LINH' / 'ĐÓI sự công bình')"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Beatitudes Lu-ca vs Ma-thi-ơ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 3,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 38,
+    "content": "KIỂU 2 distinguish gia phả Lu-ca 3:23-38 vs Ma-thi-ơ 1:1-17 — phân biệt cốt lõi?",
+    "explanation": "Lu-ca 3:23-38: NGƯỢC chiều, từ Chúa Jêsus → A-đam → Đức Chúa Trời (77 thế hệ); dẫn qua NA-THAN con thứ 3 của Đa-vít. Ma-thi-ơ 1:1-17: XUÔI chiều, từ Áp-ra-ham → Christ (3 nhóm 14 thế hệ); dẫn qua SA-LÔ-MÔN. Khác lý thuyết: (1) Ma-thi-ơ = HUYẾT THỐNG GIÔ-SÉP, Lu-ca = HUYẾT THỐNG MA-RI; (2) Ma-thi-ơ = QUYỀN VỊ vua (Sa-lô-môn), Lu-ca = QUYỀN HUYẾT THỐNG (Na-than). Lu-ca PHỔ QUÁT (đến A-đam) phản ánh khán giả NGOẠI BANG; Ma-thi-ơ DO-THÁI (Áp-ra-ham) phản ánh khán giả Y-sơ-ra-ên.",
+    "language": "vi",
+    "options": [
+      "Lu-ca KHÔNG có gia phả Chúa Jêsus (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Lu-ca: dẫn từ Chúa Jêsus → ĐA-VÍT (qua Na-than) → ÁP-RA-HAM → A-ĐAM → ĐỨC CHÚA TRỜI (PHỔ QUÁT); Ma-thi-ơ: từ ÁP-RA-HAM → ĐA-VÍT (qua Sa-lô-môn) → Christ (TẬP TRUNG DO-THÁI)",
+      "Cả hai hoàn toàn giống nhau (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)",
+      "Ma-thi-ơ có 100 đời, Lu-ca có 50 đời (như được mô tả trong sách) (xét theo nội dung gốc)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Hai gia phả",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 11,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 4,
+    "content": "KIỂU 2 distinguish Lời Cầu Nguyện Chung Lu-ca 11:2-4 vs Ma-thi-ơ 6:9-13 — KHÁC BIỆT cụ thể?",
+    "explanation": "Lu-ca 11:2-4 (50 từ Hi-lạp) vs Ma-thi-ơ 6:9-13 (~70 từ + doxology không có trong văn bản gốc). LU-CA THIẾU: 'ý Cha được nên ở đất như trời', 'cứu chúng tôi khỏi điều ác'. Lu-ca: 'tha tội chúng tôi vì chúng tôi cũng tha kẻ mích lòng mình' / Ma-thi-ơ: 'tha NỢ chúng tôi như chúng tôi tha kẻ mắc NỢ chúng tôi'. Tradition Cơ-đốc dùng phiên bản Ma-thi-ơ trong PHỤNG VỤ. Học giả tin Lu-ca có thể GẦN BẢN GỐC hơn (Q source).",
+    "language": "vi",
+    "options": [
+      "Lu-ca dài hơn (xét trong văn cảnh) (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Lu-ca có 7 lời cầu xin, Ma-thi-ơ có 5 (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)",
+      "Ma-thi-ơ DÀI HƠN: thêm 'ý Cha được nên ở đất NHƯ TRỜI' (6:10b) + 'cứu chúng tôi khỏi điều ác' (6:13b); Lu-ca không có hai cụm này — phiên bản LU-CA NGẮN HƠN có thể GẦN GỐC hơn",
+      "Hoàn toàn khác nhau (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Lord's Prayer khác biệt",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 7,
+    "content": "KIỂU 2 distinguish Chiên Lạc Lu-ca 15:3-7 vs Ma-thi-ơ 18:12-14 — bối cảnh khác nhau?",
+    "explanation": "Lu-ca 15:1-3 mở đầu: 'Hết thảy các thâu thuế và phường tội lỗi đến gần Đức Chúa Jêsus đặng nghe Ngài giảng. Các người Pha-ri-si và các thầy thông giáo lằm bằm rằng: Người nầy tiếp những kẻ tội lỗi, và cùng ăn với họ. Ngài bèn phán cho họ lời thí dụ nầy'. → CHỦ ĐỀ: TÌM kẻ MẤT (tội nhân ăn năn). Ma-thi-ơ 18:1-10 mở đầu: 'Lúc đó, môn đồ lại gần Đức Chúa Jêsus, mà hỏi rằng: Ai là LỚN HƠN HẾT trong nước thiên đàng?' → CHỦ ĐỀ: ĐỪNG GÂY VẤP cho 'kẻ nhỏ này' (tín hữu non/trẻ con). CÙNG ngụ ngôn, KHÁC ứng dụng.",
+    "language": "vi",
+    "options": [
+      "LU-CA: Chúa kể với người PHA-RI-SI và THÂU THUẾ — bài học VỀ TÌM TỘI NHÂN ĂN NĂN. MA-THI-Ơ: Chúa kể với MÔN ĐỒ — bài học VỀ KHÔNG XÚC PHẠM 'kẻ NHỎ' này (= tín hữu non yếu)",
+      "Hoàn toàn giống nhau (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)",
+      "Lu-ca có 200 chiên, Ma-thi-ơ có 100 (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Cả hai chỉ về thiên đàng (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Chiên lạc — bối cảnh khác",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 37,
+    "content": "KIỂU 2 distinguish Người Sa-ma-ri Nhân Lành CHỈ có ở Lu-ca. Tại sao điều này có Ý NGHĨA cho khán giả Lu-ca?",
+    "explanation": "Lu-ca có nhiều bằng chứng VIẾT CHO KHÁN GIẢ NGOẠI BANG: dùng tên Hi-lạp (Lu-ca, Phê-rô tên ban đầu Si-môn), gia phả đến A-đam (KHÔNG CHỈ Áp-ra-ham), bài giảng Na-xa-rét nhấn mạnh dân ngoại (Si-đôn + Sy-ri 4:25-27), 70 môn đồ sai (con số dân ngoại), 10 người phung CHỈ NGƯỜI SA-MA-RI tạ ơn (17:11-19), Sa-chê DÒNG GIA-CỐP (19:9), Người Sa-ma-ri Nhân Lành (10:25-37). Khán giả ngoại bang Lu-ca cảm nhận ĐƯỢC CHẤP NHẬN qua những câu chuyện ĐẢO NGƯỢC này.",
+    "language": "vi",
+    "options": [
+      "Vì người Sa-ma-ri thân thiện với Lu-ca (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này) (theo cách trình bày của text)",
+      "Vì Lu-ca không thích người Pha-ri-si (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)",
+      "Vì Lu-ca chỉ tập trung vào Y-sơ-ra-ên thôi (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh) (như được mô tả trong sách)",
+      "Vì Lu-ca viết cho khán giả NGOẠI BANG (Thê-ô-phi-lơ); người Sa-ma-ri (DÂN BÁN-NGOẠI giữa Y-sơ-ra-ên + Ngoại bang) là HÌNH ẢNH 'BÊN NGOÀI' được làm 'BÊN TRONG' bởi tình yêu — gắn với chủ đề Lu-ca: ÂN ĐIỂN CHO MỌI DÂN, đảo ngược KHÔNG ĐÁNG → ĐÁNG"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Sa-ma-ri vs ngoại bang",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "KIỂU 2 distinguish thứ tự cám dỗ — TẠI SAO Lu-ca đảo cám dỗ thứ 2 và 3 so với Ma-thi-ơ?",
+    "explanation": "Lu-ca 4:5-13: cám dỗ 2 = núi cao (kingdoms), cám dỗ 3 = đền thờ (jump). Ma-thi-ơ 4:5-10: cám dỗ 2 = đền thờ, cám dỗ 3 = núi cao. Lý thuyết: Lu-ca CỐ Ý đặt cám dỗ ĐỀN THỜ CUỐI cùng — vì sách của ông HƯỚNG VỀ GIÊ-RU-SA-LEM (Lu 9:51 'Sấp mặt về Giê-ru-sa-lem'). Đền thờ là điểm đỉnh hành trình. Hành trình từ A-na-tan (Giê-ri-cô) → Giê-ru-sa-lem cũng song song với ĐƯỜNG ĐI BÌNH AN của Ngài.",
+    "language": "vi",
+    "options": [
+      "Vì Lu-ca không nhớ chính xác (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)",
+      "Vì cám dỗ thứ 2 và 3 không quan trọng (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Lu-ca KẾT THÚC tại CÁM DỖ ĐỀN THỜ — vì sách Lu-ca CÓ CHỦ ĐỀ HÀNH TRÌNH ĐẾN GIÊ-RU-SA-LEM (9:51 trở đi). Đền thờ Giê-ru-sa-lem là ĐIỂM ĐẾN cuối cùng — bài Cám Dỗ NGẦM tiên báo Hành Trình Khổ Nạn",
+      "Vì Lu-ca có nhiều thông tin hơn (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Tại sao Lu-ca đảo thứ tự",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 22,
+    "verseStart": 19,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 20,
+    "content": "KIỂU 2 distinguish Tiệc Ly Lu-ca vs Ma-thi-ơ 26 / Mác 14 — sự KHÁC BIỆT cốt lõi?",
+    "explanation": "Lu-ca 22:19-20 độc đáo: (1) Cụm 'HÃY LÀM SỰ NẦY ĐỂ NHỚ ĐẾN TA' — chỉ Lu-ca + 1 Cô 11:24-25 có. Cụm này là CƠ SỞ THẦN HỌC cho Tiệc Thánh LIÊN TỤC trong hội thánh. (2) Lu-ca có HAI chén: 22:17-18 chén Lễ Vượt Qua truyền thống Do-thái + 22:20 chén GIAO ƯỚC MỚI HUYẾT CHRIST. Ma-thi-ơ 26:26-29 + Mác 14:22-25 chỉ có 1 chén. Lu-ca làm rõ chuyển tiếp Lễ Vượt Qua Cựu Ước → Tiệc Thánh Tân Ước.",
+    "language": "vi",
+    "options": [
+      "Lu-ca không có Tiệc Ly (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)",
+      "Lu-ca THÊM 'HÃY LÀM SỰ NẦY ĐỂ NHỚ ĐẾN TA' (22:19) — ngụ ý LIÊN TỤC TIỆC THÁNH; cũng có hai chén (22:17 + 22:20) — chén 1 = Lễ Vượt Qua, chén 2 = giao ước MỚI",
+      "Lu-ca có 5 chén thay vì 1 chén (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Lu-ca không có bánh, chỉ có chén (như được mô tả trong sách) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Tiệc Ly Lu-ca khác",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 35,
+    "content": "KIỂU 2 distinguish Em-ma-út (Lu-ca 24:13-35) — chỉ Lu-ca có. Ý nghĩa thần học?",
+    "explanation": "Lu-ca 24:13-35 ĐỘC ĐÁO Lu-ca có 2 chủ đề thần học sâu sắc: (1) Cựu Ước CỰU ƯỚC LÀ VỀ CHRIST — 24:27 'Ngài giải thích cho hai người ấy mọi sự đã chép về mình trong Kinh thánh'; cũng 24:44-46. Đây là cơ sở 'CHRIST-CENTRIC HERMENEUTICS' của Cơ-đốc giáo. (2) Nhận ra Chúa KHI BẺ BÁNH (24:30-31) — gợi ý Tiệc Thánh là nơi Cộng Đồng Chúa nhận biết hiện diện CHRIST. Em-ma-út thiết lập KHUÔN MẪU đời sống hội thánh: nghe Lời + bẻ bánh + nhận biết Chúa.",
+    "language": "vi",
+    "options": [
+      "Chúa Jêsus dạy hai môn đồ 'BẮT ĐẦU TỪ MÔI-SE và CÁC TIÊN TRI, GIẢNG GIẢI cho họ những lời chỉ về Ngài trong CẢ KINH THÁNH' — chứng minh CỰU ƯỚC nói về Christ — sau đó nhận ra Ngài KHI BẺ BÁNH (gợi ý Tiệc Thánh)",
+      "Chỉ là câu chuyện đơn giản (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này) (theo cách trình bày của text)",
+      "Lu-ca thêm vào để làm sách dài hơn (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Em-ma-út là kẻ thù (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Em-ma-út thần học",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 51,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 53,
+    "content": "KIỂU 3 deep meaning Magnificat Lu-ca 1:51-53 — Đức Chúa Trời 'CÁNH TAY MẠNH MẼ' làm gì? Ý nghĩa thần học?",
+    "explanation": "Lu-ca 1:51-53 (Magnificat) — 5 lần ĐẢO NGƯỢC: (1) tan lạc kẻ kiêu ngạo, (2) hạ kẻ có quyền, (3) nhắc kẻ khiêm nhường, (4) cho kẻ đói no, (5) đuổi kẻ giàu đi tay không. Đây là chủ đề 'MAGNIFICAT THEOLOGY' của Lu-ca: Đức Chúa Trời ĐẢO NGƯỢC TRẬT TỰ XÃ HỘI BẤT CÔNG. Cùng chủ đề trong Beatitudes/Woes (6:20-26), Người Giàu và La-xa-rơ (16:19-31), Pha-ri-si và Thâu thuế (18:9-14), v.v. Lu-ca lặp lại nhịp DUY NHẤT này trong toàn sách.",
+    "language": "vi",
+    "options": [
+      "Trừng phạt người Y-sơ-ra-ên (theo cách trình bày của text) (xét theo nội dung gốc) (xét trong văn cảnh) (như được mô tả trong sách)",
+      "Cứu các quốc gia ngoại bang (như được mô tả trong sách) (như văn bản ghi rõ) (theo bối cảnh đoạn này) (theo cách trình bày của text)",
+      "Thăng tiến vua Hê-rốt (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan) (theo trình tự câu chuyện)",
+      "ĐẢO NGƯỢC TRẬT TỰ THẾ GIAN: 'Ngài đã DÙNG CÁNH TAY mình LÀM CÁC VIỆC LỚN. Ngài đã làm CHO NHỮNG KẺ KIÊU NGẠO trong tâm tưởng của lòng họ TAN LẠC; HẠ KẺ CÓ QUYỀN khỏi NGÔI họ; nhắc CÁC KẺ KHIÊM NHƯỜNG LÊN; làm CHO KẺ ĐÓI ĐƯỢC NO; đuổi KẺ GIÀU đi tay không'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Đảo ngược Magnificat",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 32,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 32,
+    "content": "KIỂU 3 deep meaning Si-mê-ôn (Lu 2:32) gọi Chúa Jêsus là 'ÁNH SÁNG CHO ___ và VINH HIỂN CHO ___'. Hai cụm từ này mở rộng VƯƠNG QUỐC ĐỨC CHÚA TRỜI thế nào?",
+    "explanation": "Lu-ca 2:32 — 'ấy là sự sáng để soi sáng các dân ngoại, và là sự vinh hiển của dân ngươi Y-sơ-ra-ên'. ĐẢO TRẬT TỰ truyền thống Do-thái (thường nói Y-sơ-ra-ên trước): Lu-ca đặt DÂN NGOẠI TRƯỚC. Câu này trích Ê-sai 42:6, 49:6 — Tôi tớ Đức Giê-hô-va là 'ÁNH SÁNG cho các dân ngoại'. Ý nghĩa: từ ngay LỄ DÂNG CON ở đền thờ, Lu-ca đã bày tỏ ÂN ĐIỂN CHO TOÀN THẾ GIAN. Tóm tắt mọi điều: Christ là CỨU RỖI PHỔ QUÁT.",
+    "language": "vi",
+    "options": [
+      "Cho Y-sơ-ra-ên / cho dân ngoại (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Cho DÂN NGOẠI / cho dân YSƠ-RA-EN — Chúa Jêsus là 'ÁNH SÁNG SOI ĐƯỜNG cho dân NGOẠI' (= Ê-sai 42:6, 49:6) VÀ 'VINH HIỂN của dân Y-SƠ-RA-EN'",
+      "Cho người giàu / cho người nghèo (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Cho La-mã / cho Hi-lạp (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Si-mê-ôn — ánh sáng dân ngoại",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 7,
+    "verseStart": 47,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 50,
+    "content": "KIỂU 3 deep meaning Lu 7:47 — 'Tội của ngươi đã được tha cho NHIỀU, vì NGƯƠI THƯƠNG NHIỀU; còn AI ĐƯỢC THA ÍT thì THƯƠNG ÍT'. Ý nghĩa thần học sâu sắc của câu này?",
+    "explanation": "Lu-ca 7:47 — Người đàn bà xấu nết khóc dưới chân Chúa rồi xức dầu thơm. Si-môn Pha-ri-si khinh dể bà. Chúa nói: 'Tội của ngươi đã được tha cho nhiều, vì ngươi thương nhiều'. CẨN THẬN: 'vì' (Hi-lạp 'hoti') ở đây có thể CĂNG (causal) hoặc HỆ QUẢ (resultative). Nhiều học giả cho 'hệ quả': Bà ĐÃ ĐƯỢC THA NHIỀU rồi nên BIỂU LỘ TÌNH YÊU NHIỀU — KHÔNG phải bà yêu nhiều TRƯỚC để được tha. Cấu trúc câu hỗ trợ: '7:42-43 ai trong 2 con nợ sẽ THƯƠNG hơn? — Người được tha NHIỀU' → 'tình yêu nhiều' là HỆ QUẢ của tha thứ trước. Đây là nguyên tắc thần học: ÂN ĐIỂN sản sinh TÌNH YÊU; KHÔNG phải tình yêu kiếm ÂN ĐIỂN.",
+    "language": "vi",
+    "options": [
+      "Phải nhiều tội mới được Chúa thương (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Chúa chỉ tha tội cho phụ nữ (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "TÌNH YÊU LỚN TỪ KINH NGHIỆM được tha THỨ NHIỀU; người nhận ÂN ĐIỂN nhiều thì YÊU MẾN nhiều — không phải nguyên nhân, mà là HỆ QUẢ",
+      "Đức Chúa Trời chỉ tha tội nhỏ (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Tha nhiều — yêu nhiều",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 9,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 25,
+    "content": "KIỂU 3 deep meaning Lu 9:23 'TỰ BỎ MÌNH, vác THẬP TỰ MÌNH HẰNG NGÀY, theo ta'. Cụm 'HẰNG NGÀY' chỉ Lu-ca có. Ý nghĩa thần học?",
+    "explanation": "Lu 9:23 — 'Nếu ai muốn theo ta, phải tự bỏ mình đi, mỗi ngày vác thập tự giá mình mà theo ta'. Mác 8:34 + Ma-thi-ơ 16:24 KHÔNG có 'mỗi ngày'. Lu-ca cố ý thêm 'kath' hēmeran' (HÀNG NGÀY): Sống đời môn đồ là HÀNH TRÌNH liên tục — không chỉ MỘT QUYẾT ĐỊNH MỘT LẦN. Theo gương: Phao-lô 1 Cô 15:31 — 'tôi chết hằng ngày'. Đây là chủ đề Lu-ca về SỰ TRƯỞNG THÀNH PHẦN dần dần qua đau khổ + đầu phục Chúa.",
+    "language": "vi",
+    "options": [
+      "Mời gọi MÔN ĐỆ là HÀNG NGÀY (continuous), KHÔNG chỉ MỘT LẦN — kinh nghiệm Cơ-đốc là HÀNH TRÌNH liên tục, không phải SỰ KIỆN một lần",
+      "Phải vác thập tự thật mỗi ngày (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Phải kiêng ăn mỗi ngày (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Phải đến đền thờ mỗi ngày (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Hằng ngày — Lu-ca",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 37,
+    "content": "KIỂU 3 deep meaning Người Sa-ma-ri Nhân Lành — KHÔNG CHỈ là bài học đạo đức — đây CŨNG là TỰ HỌA của Chúa Jêsus. Tại sao?",
+    "explanation": "Đọc khoa học sâu Người Sa-ma-ri là tự họa của Chúa Jêsus: (1) Trong Giăng 8:48 người Do-thái khinh Chúa Jêsus 'Người LÀ NGƯỜI SA-MA-RI và bị quỷ ám'. Người Sa-ma-ri = NGOÀI LỀ giống Christ. (2) Người Sa-ma-ri đến KỊP THỜI cho người sắp chết — Christ đến với chúng ta khi chúng ta CHẾT TRONG TỘI (Rô 5:8). (3) Người Sa-ma-ri TRẢ TIỀN — Christ trả TIỀN MÁU cho ta. (4) Người Sa-ma-ri HỨA TRỞ LẠI — Christ HỨA TÁI LÂM. (5) Người Sa-ma-ri là 'LÂN CẬN' = Christ là LÂN CẬN của loài người trong nỗi đau.",
+    "language": "vi",
+    "options": [
+      "Vì Chúa Jêsus là người Sa-ma-ri (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)",
+      "Vì Chúa Jêsus đã đi đường Giê-ri-cô (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh) (theo cách trình bày của text)",
+      "Vì người Sa-ma-ri có nhiều tiền (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này) (như được mô tả trong sách)",
+      "CHÚA JÊSUS LÀ Người Sa-ma-ri Nhân Lành: Chúa Jêsus 'BỊ NGOẠI BANG XEM LÀ DÂN BÁN-NGOẠI/DỊ GIÁO' (Giăng 8:48 'Sa-ma-ri'); Chúa CHỦ ĐỘNG TÌM kẻ thương TÍCH; trả 'HAI ĐỒNG' = ÂN ĐIỂN; HỨA TRỞ LẠI; Chúa là 'TÔI TỚ' của con NGƯỜI"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Người Sa-ma-ri = Christ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 32,
+    "content": "KIỂU 3 deep meaning Đứa Con Hoang Đàng (Lu 15:11-32) có BA NHÂN VẬT chính. Ai là 'NHÂN VẬT CHÍNH' THẦN HỌC?",
+    "explanation": "Tiêu đề 'PRODIGAL SON' (Đứa Con Hoang Đàng) thật ra HƯỚNG SAI — nhân vật chính là NGƯỜI CHA. Người Cha đại diện ĐỨC CHÚA TRỜI: (1) CHẠY ra ôm con (15:20) — trong văn hóa cổ điển, ông trưởng KHÔNG chạy; cử chỉ này HẠ MÌNH; (2) ÁO TỐT NHẤT, NHẪN, GIÀY = phục hồi địa vị NGƯỜI CON, không tôi tớ; (3) BÒ CON MẬP = ĂN MỪNG; (4) Cha cũng RA NGOÀI VỚI ĐỨA CON CẢ (15:28) — ĐỨC CHÚA TRỜI THƯƠNG cả 'người công chính tự xưng' và 'tội nhân'. Tên nên là 'ĐỨA CON HOANG ĐÀNG VÀ NGƯỜI CHA QUẢNG ĐẠI'.",
+    "language": "vi",
+    "options": [
+      "Đứa con thứ — vì hoang đàng nhất (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "NGƯỜI CHA — vì 'GENEROUS FATHER' là TIÊU ĐỀ thần học HÀNG ĐẦU; Cha CHẠY ra (cử chỉ HẠ MÌNH thấp hèn của ông trưởng), cho ÁO TỐT NHẤT, NHẪN, GIÀY = PHỤC HỒI CON CÁI ĐỊA VỊ — TỎ ÂN ĐIỂN của ĐỨC CHÚA TRỜI",
+      "Đứa con cả — vì giận (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này) (theo cách trình bày của text)",
+      "Đầy tớ trong nhà (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Người cha trung tâm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 18,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 14,
+    "content": "KIỂU 3 deep meaning Pha-ri-si và Người Thâu Thuế (Lu 18:9-14) — KÊU CỦA NGƯỜI THÂU THUẾ 'LẠY ĐỨC CHÚA TRỜI, xin THƯƠNG XÓT tôi vì tôi LÀ KẺ CÓ TỘI' (18:13) — TẠI SAO LỜI NÀY DẪN ĐẾN XƯNG CÔNG BÌNH?",
+    "explanation": "Lu-ca 18:13 — 'Người thâu thuế đứng XA XA, KHÔNG dám NGẨNG MẮT lên trời, ĐẬP NGỰC mà rằng: Lạy Đức Chúa Trời, xin thương xót lấy tôi, vì tôi là kẻ có tội!' Cụm Hi-lạp 'tō hamartōlō' (xin Chúa thương xót THE [duy nhất] sinner = tôi). 3 yếu tố: (1) NHẬN TỘI — không từ chối, không lý lẽ; (2) NHẬN BẢN THÂN không xứng — đứng xa, không ngẩng mắt; (3) DỰA HOÀN TOÀN vào ÂN ĐIỂN Chúa, không công đức của mình. Đối lập: Pha-ri-si LIỆT KÊ công đức (kiêng ăn, dâng phần mười) + so sánh ('không như những người khác'). XƯNG CÔNG BÌNH chỉ qua THỪA NHẬN BẢN THÂN không xứng + dựa vào ÂN ĐIỂN.",
+    "language": "vi",
+    "options": [
+      "Vì lời này dài (xét trong văn cảnh) (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Vì lời này có 7 chữ (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này) (theo cách trình bày của text)",
+      "Vì người thâu thuế (1) NHẬN TỘI mình; (2) KHÔNG so sánh với người khác; (3) KÊU CẦU LÒNG NHÂN TỪ Chúa thay vì công đức của mình. Đây là 'SOLA GRATIA' (chỉ ân điển) — không bởi việc làm, không nhờ so sánh",
+      "Vì người thâu thuế là dân Y-sơ-ra-ên (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Lạy Chúa thương xót tôi",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 23,
+    "verseStart": 39,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 43,
+    "content": "KIỂU 3 deep meaning Kẻ Trộm Ăn Năn (Lu 23:39-43) chỉ Lu-ca có. Lời 'HÔM NAY ngươi sẽ ở thiên đàng VỚI TA' chứa Ý NGHĨA THẦN HỌC nào?",
+    "explanation": "Lu-ca 23:42-43 — 'Bèn nói rằng: Hỡi Jêsus, khi Ngài đến trong nước mình rồi, xin nhớ lấy tôi! Đức Chúa Jêsus đáp rằng: Quả thật, ta nói cùng ngươi, hôm nay ngươi sẽ được ở với ta trong nơi Ba-ra-đi'. Phân tích: (1) Kẻ trộm KHÔNG được phép báp-têm; (2) KHÔNG có cơ hội làm việc lành (đang đóng đinh); (3) KHÔNG dự lễ Tiệc Thánh; (4) Chỉ có ĐỨC TIN trong Christ là Vua → CỨU RỖI. Đây là chứng cứ KINH ĐIỂN cho 'sola fide' (chỉ đức tin). 'HÔM NAY' = không lò luyện, không trì hoãn — TỨC THÌ vào với Christ. Khoảnh khắc này là MŨI TÊN THẦN HỌC mạnh nhất Tân Ước về cứu rỗi tức thì qua ÂN ĐIỂN.",
+    "language": "vi",
+    "options": [
+      "Cứu rỗi cần báp-têm trước khi vào thiên đàng (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Phải làm phép lạ mới được cứu (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)",
+      "Cần thời gian thanh tẩy sau khi chết (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "CỨU RỖI CHỈ qua ĐỨC TIN — không thời gian, không nghi lễ, không công đức; ĐỨC TIN ĐƠN GIẢN ('Lạy Chúa khi nào về NƯỚC mình HÃY NHỚ ĐẾN tôi') ĐỦ; 'HÔM NAY' (Lu chủ đề) — không trì hoãn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Cứu rỗi tức thì",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "verseStart": 38,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 38,
+    "content": "KIỂU 4 verse precision Lu-ca 1:38 (RVV11) — câu chính xác trong lời đáp của Ma-ri sau truyền tin?",
+    "explanation": "Lu-ca 1:38 — 'Ma-ri thưa rằng: Tôi đây là tôi tớ Chúa; xin sự ấy xảy ra cho tôi như lời người truyền! Đoạn thiên sứ kìa khỏi Ma-ri'. Đây là 'fiat' (xin chấp nhận) cổ điển — Ma-ri đầu phục TUYỆT ĐỐI, không điều kiện. Trong Vulgate La-tinh: 'Ecce ancilla Domini, fiat mihi secundum verbum tuum'. Đối lập với Ê-va đã từ chối ý Chúa (Sáng 3) — Ma-ri là 'Ê-VA MỚI'. Đầu phục của bà cho phép NHẬP THỂ.",
+    "language": "vi",
+    "options": [
+      "'Tôi ĐÂY là TÔI TỚ Chúa; xin sự ấy XẢY RA cho tôi NHƯ LỜI người truyền'",
+      "'Tôi không hiểu điều này, xin giải thích thêm'",
+      "'Tôi sợ hãi và muốn từ chối' (xét trong văn cảnh)",
+      "'Tôi sẽ đi tìm Giô-sép trước' (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Ma-ri đầu phục",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 14,
+    "content": "KIỂU 4 verse precision Lu 2:14 — bài hát thiên sứ vào đêm Chúa Giáng Sinh — câu chính xác?",
+    "explanation": "Lu-ca 2:14 (RVV11) — 'Sáng danh Chúa trên các từng trời rất cao, Bình an dưới đất, ân trạch cho loài người'. Bản RVV11 cũ có 'cho LOÀI NGƯỜI', nhưng các bản chép tay HI-LẠP TỐT NHẤT (Sinaiticus, Vaticanus) có 'eudokias' (genitive) = 'NGƯỜI HÀI LÒNG VỚI Chúa' = 'MEN OF GOOD WILL' / 'NGƯỜI ÂN BAN'. Bản ESV: 'and on earth peace among those with whom he is pleased!'. Câu này định khung TIN LÀNH: GIÁNG SINH mang BÌNH AN — không cho mọi người vô điều kiện, mà cho NHỮNG NGƯỜI ĐƯỢC ƠN.",
+    "language": "vi",
+    "options": [
+      "'Vinh hiển trên trời, bình an dưới đất' (rất rút gọn)",
+      "'A-MEN, A-LÊ-LU-IA, MỪNG CHÚA' (sai) (xét trong văn cảnh)",
+      "'SÁNG DANH ĐỨC CHÚA TRỜI trên TỪNG TRỜI CAO; BÌNH AN dưới ĐẤT cho NGƯỜI ƠN BAN'",
+      "'Một thiên sứ duy nhất hát một bài đơn giản'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Vinh hiển bình an",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 19,
+    "content": "KIỂU 4 verse precision Lu 4:18-19 — bài giảng tại nhà hội Na-xa-rét. Câu chính xác có 5 cụm từ.",
+    "explanation": "Lu-ca 4:18-19 — 'Thần của Chúa ngự trên ta; vì Ngài đã xức dầu cho ta đặng truyền Tin Lành cho kẻ nghèo; Ngài đã sai ta để rao cho kẻ bị cầm được tha, kẻ mù được sáng, kẻ bị hà hiếp được tự do; và để đồn ra năm lành của Chúa'. Trích Ê-sai 61:1-2a + Ê-sai 58:6 ('giải phóng kẻ bị áp bức'). Bao gồm 5 cụm: (1) Thần Chúa ngự, (2) xức dầu RAO TIN LÀNH cho NGHÈO, (3) công bố KẺ BỊ CẦM ĐƯỢC THA, (4) MÙ ĐƯỢC SÁNG, (5) HÀ HIẾP ĐƯỢC TỰ DO. Đây là 'NAZARETH MANIFESTO' định khung TOÀN BỘ chức vụ Chúa Jêsus.",
+    "language": "vi",
+    "options": [
+      "'Đức Chúa Trời sai ta đến chữa bệnh' (như được mô tả trong sách) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "'THẦN của CHÚA ngự TRÊN ta; vì NGÀI XỨC DẦU cho ta đặng RAO TIN LÀNH cho kẻ NGHÈO; sai ta CÔNG BỐ KẺ BỊ CẦM ĐƯỢC THA, người MÙ ĐƯỢC SÁNG, kẻ BỊ HÀ HIẾP ĐƯỢC TỰ DO; rao NĂM ÂN CỦA CHÚA'",
+      "'Hãy ăn năn vì Vương quốc gần đến' (theo cách trình bày của text) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "'Chúa Cha sai ta xuống thế' (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Bài giảng Na-xa-rét",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 6,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 31,
+    "content": "KIỂU 4 verse precision Lu 6:31 — 'GOLDEN RULE' (Quy Luật Vàng) trong Lu-ca chính xác?",
+    "explanation": "Lu-ca 6:31 — 'Các ngươi muốn người ta làm cho mình thể nào, hãy làm cho họ thể ấy'. Hi-lạp 'kathōs thelete... kai humeis poieite homoiōs'. Đây là PHIÊN BẢN TÍCH CỰC (positive). Quy Luật Vàng có 2 dạng trong văn học cổ: (1) NEGATIVE - 'đừng làm cái mà ngươi không muốn' (Hill-lel, Lu-ca 31 truyện). Chúa Jêsus dùng PHIÊN BẢN TÍCH CỰC — đòi nhiều hơn (HÀNH ĐỘNG, không chỉ tránh). Cùng câu Ma-thi-ơ 7:12 thêm 'vì ấy là luật pháp và lời các tiên tri'.",
+    "language": "vi",
+    "options": [
+      "'Yêu kẻ thù như chính mình' (xét trong văn cảnh)",
+      "'Tha thứ vô điều kiện cho người khác' (theo cách trình bày của text)",
+      "'Chớ làm gì với ai mà ngươi không muốn người ta làm với ngươi' (NEGATIVE)",
+      "'CÁC NGƯƠI MUỐN người ta làm cho mình thể nào, hãy LÀM CHO HỌ thể ấy' (POSITIVE form)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Quy luật vàng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 11,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 10,
+    "content": "KIỂU 4 verse precision Lu 11:9-10 — Chúa dạy môn đồ về cầu nguyện sau Lời Cầu Nguyện Chung. Câu chính xác?",
+    "explanation": "Lu-ca 11:9-10 — 'Ta lại nói cùng các ngươi: Hãy xin, sẽ ban cho; hãy tìm, sẽ gặp; hãy gõ cửa, sẽ mở cho. Vì hễ ai xin thì được, ai tìm thì gặp, và sẽ mở cửa cho ai gõ'. Hi-lạp dùng MỆNH LỆNH HIỆN TẠI 'aiteite, zēteite, krouete' — chỉ HÀNH ĐỘNG LIÊN TỤC ('keep asking, keep seeking, keep knocking'). Cùng câu Ma-thi-ơ 7:7-8.",
+    "language": "vi",
+    "options": [
+      "'HÃY XIN, sẽ được; HÃY TÌM, sẽ gặp; HÃY GÕ CỬA, sẽ MỞ cho — vì AI XIN thì được, ai TÌM thì gặp, ai GÕ thì cửa SẼ MỞ'",
+      "'Cầu nguyện 7 lần thì Chúa nghe' (như được mô tả trong sách)",
+      "'Chỉ tiên tri được Chúa nghe' (theo cách trình bày của text)",
+      "'Phải kiêng ăn 40 ngày' (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Hãy xin tìm gõ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 12,
+    "verseStart": 48,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 48,
+    "content": "KIỂU 4 verse precision Lu 12:48 — câu nguyên tắc về TRÁCH NHIỆM. Câu chính xác?",
+    "explanation": "Lu-ca 12:48 — 'Vì ai đã được ban cho nhiều, thì sẽ bị đòi lại nhiều; và ai đã được giao cho nhiều, thì sẽ bị đòi lại nhiều hơn'. Câu này CHỈ Lu-ca có. Nguyên tắc: TRÁCH NHIỆM tỉ lệ với ÂN TỨ. Áp dụng: leadership Cơ-đốc — ai có nhiều phước, ơn, kiến thức, trách nhiệm CAO HƠN trước Chúa. Cũng nguyên tắc đời sống: NHẬN NHIỀU = TRẢ NHIỀU. Quan-trị giả dụng câu này nhiều cho doanh nghiệp/lãnh đạo.",
+    "language": "vi",
+    "options": [
+      "'Mỗi người đều bình đẳng trước Chúa' (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "'Nhiều người sẽ được cứu nhưng ít người được chọn' (theo cách trình bày của text)",
+      "'Phàm người NÀO đã được BAN CHO NHIỀU, thì sẽ bị ĐÒI LẠI nhiều; và NGƯỜI NÀO đã được GIAO PHÓ NHIỀU, thì sẽ bị ĐÒI lại nhiều hơn'",
+      "'Mỗi người chỉ chịu trách nhiệm về việc làm của mình' (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Ban nhiều — đòi nhiều",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 19,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 10,
+    "content": "KIỂU 4 verse precision Lu 19:10 — TUYÊN NGÔN MỤC ĐÍCH chức vụ Chúa Jêsus theo Lu-ca. Câu chính xác?",
+    "explanation": "Lu-ca 19:10 — 'Bởi Con người đã đến tìm và cứu kẻ bị mất'. Cụm Hi-lạp 'zētēsai kai sōsai to apolōlos'. Câu này TÓM TẮT MỤC ĐÍCH chức vụ Chúa Jêsus theo Lu-ca: TÌM (ăn năn) + CỨU (giải thoát khỏi tội). Đặt trong bối cảnh Xa-chê (19:1-9) — Xa-chê đại diện 'kẻ mất' tiêu biểu (giàu có nhưng tâm linh nghèo). Câu này SONG SONG với Ê-xê 34 (mục tử tìm chiên lạc) và Lu-ca 15 (3 dụ ngôn lạc).",
+    "language": "vi",
+    "options": [
+      "'Ta đến để dạy luật pháp Môi-se'",
+      "'CON NGƯỜI ĐÃ ĐẾN ĐỂ TÌM và CỨU KẺ BỊ HƯ MẤT'",
+      "'Ta đến để chiến đấu với Sa-tan'",
+      "'Ta đến chỉ cho dân Y-sơ-ra-ên'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Tuyên ngôn mục đích",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "verseStart": 46,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 47,
+    "content": "KIỂU 4 verse precision Lu 24:46-47 — Chúa Jêsus tóm tắt MỤC ĐÍCH KHỔ NẠN + Đại Mạng Lệnh đầu tiên. Câu chính xác?",
+    "explanation": "Lu-ca 24:46-47 — 'Có lời chép rằng Đấng Christ phải chịu đau đớn dường ấy, ngày thứ ba sẽ từ kẻ chết sống lại, và người ta sẽ nhân danh Ngài mà rao giảng cho dân các nước sự ăn năn để được tha tội, bắt đầu từ thành Giê-ru-sa-lem'. Đây là 'Đại Mạng Lệnh Lu-ca' — tóm tắt: (1) Khổ nạn ĐÚNG kế hoạch Chúa, (2) Sống Lại sau 3 ngày, (3) Sự ăn năn + tha tội rao giảng cho 'CÁC NƯỚC' (universal), (4) BẮT ĐẦU từ Giê-ru-sa-lem (= Acts 1:8 'Giê-ru-sa-lem... cho đến tận cùng đất'). CẦU NỐI Lu-ca → Công Vụ.",
+    "language": "vi",
+    "options": [
+      "'Ta sẽ trở lại trong vinh hiển' (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "'Hãy đi khắp thế gian' (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phân đoạn liên quan)",
+      "'Vương quốc Đức Chúa Trời gần đến' (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "'Có lời chép: ĐẤNG CHRIST PHẢI CHỊU THƯƠNG KHÓ thế ấy, và NGÀY THỨ BA TỪ KẺ CHẾT SỐNG LẠI; và NHÂN DANH NGÀI mà giảng cho DÂN CÁC NƯỚC sự ĂN NĂN ĐỂ ĐƯỢC THA TỘI, BẮT ĐẦU TỪ thành GIÊ-RU-SA-LEM'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Lu-ca",
+      "Phúc âm",
+      "Đại Mạng Lệnh Lu-ca",
+      "Nâng cao"
+    ]
   }
 ]

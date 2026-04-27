@@ -22,13 +22,13 @@
 - Topics covered: Mark immediacy theme, 3 Passion predictions (multi), 5000+4000 feeding cross-ref, Galilee promise, abrupt 16:8 ending; Sadducees vs others, Bartimaeus naming, Aramaic phrases (multi), Messianic Secret, 2-stage healing 8:22-26; Son of Man authority, sower parable persecution, Mark theme verse 10:45, all foods clean 7:14-23, torn temple curtain; 1:1 prologue, 1:11 baptism voice (2nd person), 12:29-30 Shema, 14:36 Abba, 15:34 Eloi
 - Auto-pad helper added to balance option lengths within tolerance (universal pad incl. correct option with semantically neutral suffixes)
 
-### Task V2A-3: Luke +60 (0E + 27M + 33H)
-- Status: [ ] TODO
-- Current: 100 (E48 M45 H7) → Target: 160 (E48 M72 H40)
-- Plan: 0 Easy + 27 Medium + 33 Hard (Easy đã đủ; Hard cần boost mạnh — current chỉ 7%)
-- File(s): `luke_quiz.json` + `luke_quiz_en.json`
-- Strategy: unique parables (Good Samaritan 10, Prodigal Son 15, Rich Fool 12, Dives & Lazarus 16), birth narrative (1-2), Mary/Martha (10), Zacchaeus (19), Emmaus road (24); women + outcasts emphasis
-- Commit: `feat(seed): Luke +60 to V2 Tier A target (100→160)`
+### Task V2A-3: Luke +59 (0E + 27M + 32H) [x] DONE 2026-04-27
+- 100→**159** (E48 M72 H39, ratio **30.2/45.3/24.5%** — gần khớp 30/45/25; Hard tăng từ 7% → 24.5%)
+- Pool +59 (1 short of plan 60): 0 Easy + 27 Medium + 32 Hard VI + 59 EN 1:1
+- Seeder log `inserted=59` each file, total 5118→5236, invalid=0
+- 57 single + 2 multi (97/3); idx 12/14/14/17
+- File(s): `luke_quiz.json` + `luke_quiz_en.json` + `scripts/append_luke_v2a.py`
+- Topics: Theophilus, Magnificat (echo Hannah), Simeon's Light to Gentiles, Nazareth Manifesto (Isa 61), Sermon on the Plain (Beatitudes + Woes), Lord's Prayer Luke version, 3 lost parables (sheep/coin/prodigal), Good Samaritan as Christ self-portrait, Mary/Martha, Persistent Widow, Pharisee + Tax Collector justification, Zacchaeus, Last Supper "do this in remembrance", Father Forgive Them, Emmaus, Pentecost bridge to Acts; Luke's themes: Holy Spirit, prayer, women, "today" salvation, reversal, Gentile inclusion
 
 ### Task V2A-4: Acts +69 (9E + 36M + 24H)
 - Status: [ ] TODO
