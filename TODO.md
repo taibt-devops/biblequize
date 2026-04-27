@@ -33,13 +33,13 @@
 
 ### Priority B2 (6 sách Pauline + General Epistles)
 
-#### Task B2-1: Ephesians +40 (20→60)
-- Status: [ ] TODO
-- Current: 20 (E12 M7 H1) → Target: 60 (E18 M27 H15)
-- Plan: +6 Easy + 20 Medium + 14 Hard
-- File(s): `ephesians_quiz.json` + `ephesians_quiz_en.json` + `scripts/append_ephesians_v3b.py`
-- Strategy: Ân điển bởi đức tin 2:8-9; Vũ khí Đức Chúa Trời 6:10-18; unity Do Thái + dân ngoại 2:11-22 ("bức tường ngăn cách"); Christ làm đầu hội thánh; "trong Đấng Christ" 36 lần
-- Commit: `feat(seed): Ephesians +40 V3 B2 quality expansion (20→60)`
+#### Task B2-1: Ephesians +40 (20→60) [x] DONE 2026-04-27
+- 20→**60** (E18 M27 H15, ratio **30.0/45.0/25.0%** — exact)
+- Pool +40: 6 Easy + 20 Medium + 14 Hard VI + 40 EN 1:1
+- Single idx: 0:8, 1:10, 2:12, 3:10 (well distributed)
+- 40 single + 0 multi
+- Topics: bức tường ngăn cách + một người mới (2:14-15); cứu chuộc bởi huyết (1:7); chọn trước sáng thế (1:4); con nuôi (1:5); qui tụ mọi sự trong Christ (1:10); của tin Thánh Linh (1:14); mắt của lòng + quyền năng phục sinh (1:18-20); chết trong tội + giàu lòng thương xót (2:1-7); đồng ngồi trong Christ (2:6); đồng công dân + người nhà (2:19); Christ là đá góc (2:20); mầu nhiệm dân ngoại đồng kế tự (3:6); khôn ngoan muôn màu (3:10); 4 chiều tình yêu (3:18-19); trỗi hơn vô cùng (3:20); ăn ở xứng đáng (4:1); 7 ÔNES (4:5); ân tứ + Christ ascended (4:7-13); lẽ thật trong yêu thương (4:15); lột người cũ (4:22-24); đừng làm buồn Thánh Linh (4:30); bắt chước Đức Chúa Trời (5:1); tối tăm thành sáng (5:8); thức dậy hỡi kẻ ngủ (5:14); lợi dụng thì giờ (5:15-16); phục tùng nhau (5:21); hôn nhân = Christ-Hội Thánh (5:31-32); cha không chọc giận con (6:4); đứng vững trước mưu Sa-tan (6:11); sứ giả trong xiềng (6:19-20); lời chúc cuối peace+love+faith+grace (6:23-24)
+- VI/EN parity 100%, 0 length warnings, 2 duplicate keys (pre-existing in original 20, NOT introduced by new entries)
 
 #### Task B2-2: Philippians +30 (20→50)
 - Status: [ ] TODO

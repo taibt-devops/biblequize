@@ -541,5 +541,1045 @@
       "Epistle",
       "Advanced"
     ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ephesians 1:7, through what are we redeemed?",
+    "explanation": "Ephesians 1:7 — 'In him we have redemption through his blood, the forgiveness of our trespasses, according to the riches of his grace.' 'Redemption' (apolytrōsis) = buying back at a price; BLOOD = the price. 3 elements: in Christ + by blood + according to grace.",
+    "language": "en",
+    "options": [
+      "Through good works (per the textual narrative)",
+      "Through keeping the law (according to the text's framing)",
+      "Through his blood — the forgiveness of sins according to the riches of his grace",
+      "Through long repentance (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Redemption through blood",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ephesians 2:13, the Gentile believers who once were far off have now become what?",
+    "explanation": "Ephesians 2:13 — 'But now in Christ Jesus you who once were far off have been brought near by the blood of Christ.' Contrast with 2:12 'separated from Christ, alienated from the commonwealth of Israel'. The BLOOD = the key to reconciliation of Gentiles to God and to the Jewish people.",
+    "language": "en",
+    "options": [
+      "Become Jews (per the textual narrative)",
+      "Brought near by the blood of Christ",
+      "Kept the law of Moses",
+      "Were circumcised"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Brought near by blood",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ephesians 4:1, what does Paul (the prisoner of the Lord) urge believers to do?",
+    "explanation": "Ephesians 4:1 — 'I therefore, a prisoner for the Lord, urge you to walk in a manner worthy of the calling to which you have been called.' This is the PIVOT verse of the book: chapters 1-3 = doctrine (who you ARE in Christ); chapters 4-6 = walk (what you must DO).",
+    "language": "en",
+    "options": [
+      "Offer many sacrifices",
+      "Separate from society",
+      "Memorize the law (per the textual narrative)",
+      "Walk worthy of the calling to which you have been called"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Walk worthy of calling",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ephesians 4:5, there is one LORD, one FAITH, and one what?",
+    "explanation": "Ephesians 4:5 — 'one Lord, one faith, one baptism.' Paul's seven 'ONES' (4:4-6): 1 body, 1 Spirit, 1 hope, 1 Lord, 1 faith, 1 baptism, 1 God. The unity of the Church is based on the TRIUNE GOD — not external uniformity.",
+    "language": "en",
+    "options": [
+      "One baptism",
+      "One temple",
+      "One nation",
+      "One promised land"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "One baptism",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ephesians 5:1, whom must believers imitate as beloved children?",
+    "explanation": "Ephesians 5:1 — 'Therefore be imitators of God, as beloved children.' The next verse 5:2 — 'and walk in love, as Christ loved us.' Imitate God THROUGH Christ. The only NT verse explicitly commanding 'imitate God'.",
+    "language": "en",
+    "options": [
+      "Imitate Paul",
+      "Imitate the patriarchs",
+      "Imitate God",
+      "Imitate the angels"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Imitators of God",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ephesians 5:8, what were believers before, and what are they now in the Lord?",
+    "explanation": "Ephesians 5:8 — 'For at one time you were darkness, but now you are light in the Lord. Walk as children of light.' Note: NOT 'were in darkness' but 'WERE darkness' and 'ARE light' — the fundamental nature has changed through Christ. The evidence = fruit of light (5:9).",
+    "language": "en",
+    "options": [
+      "Once sinners, now righteous",
+      "Once darkness, now light — walk as children of light",
+      "Once dead, now alive",
+      "Once Gentiles, now Israel"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Darkness to light",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ephesians 1:4, when did God choose us in Christ, and for what purpose?",
+    "explanation": "Ephesians 1:4 — 'Even as he chose us in him before the foundation of the world, that we should be holy and blameless before him.' Election has a PURPOSE = to be HOLY (hagios) + BLAMELESS (amōmos). Grace is not a license for careless living.",
+    "language": "en",
+    "options": [
+      "Before birth — to be wealthy (per the textual narrative)",
+      "Before baptism — to be healed",
+      "Before hearing the gospel — to be forgiven",
+      "Before the foundation of the world — to be holy and blameless before him"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Chosen before foundation",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ephesians 1:5, what did God predestine for us through Christ?",
+    "explanation": "Ephesians 1:5 — 'He predestined us for adoption to himself as sons through Jesus Christ, according to the purpose of his will.' 'Adoption' (huiothesia) = Roman legal term — a child taken in as heir. In the OT, Israel was 'firstborn son' (Ex 4:22); in the NT, every believer is a SON.",
+    "language": "en",
+    "options": [
+      "Material wealth (as described in the passage)",
+      "Long life (per the textual narrative)",
+      "Adoption as sons through Jesus Christ — according to the purpose of his will",
+      "Worldly peace (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Predestined to adoption",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ephesians 1:10, what is the mystery of God's will in the fullness of time?",
+    "explanation": "Ephesians 1:10 — 'as a plan for the fullness of time, to unite all things in him, things in heaven and things on earth.' 'Unite' (anakephalaiōsasthai) — gathering everything under ONE head = Christ. The ultimate goal of redemptive history: COMPLETE in Christ. Revelation 21-22 unveils this reality.",
+    "language": "en",
+    "options": [
+      "Take believers to heaven (as described in the passage)",
+      "Destroy the world (per the textual narrative)",
+      "Restore Israel's land (according to the text's framing)",
+      "UNITE ALL THINGS in Christ — things in heaven and things on earth"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Unite all things",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ephesians 1:18, what does Paul pray would be opened in believers?",
+    "explanation": "Ephesians 1:18 — 'having the eyes of your hearts enlightened, that you may know what is the hope to which he has called you, what are the riches of his glorious inheritance in the saints.' Paul prays not that believers would learn more — they already have Christ — but that they might KNOW (epignōsis) more deeply what they already POSSESS.",
+    "language": "en",
+    "options": [
+      "The eyes of the heart — to know the hope of calling, riches of glorious inheritance, and great power",
+      "Physical eyes — to see miracles (according to the text's framing)",
+      "Mind's eye — to interpret Scripture (as described in the passage)",
+      "Spiritual eyes — to see angels (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Eyes of the heart",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ephesians 1:19-20, the power of God in believers is compared to what?",
+    "explanation": "Ephesians 1:19-20 — 'and what is the immeasurable greatness of his power toward us who believe, according to the working of his great might that he worked in Christ when he raised him from the dead and seated him at his right hand in the heavenly places.' RESURRECTION power is at work IN believers.",
+    "language": "en",
+    "options": [
+      "The power that created the universe",
+      "The power that brought Israel out of Egypt",
+      "The power that raised Christ from the dead and seated him at God's right hand",
+      "The power that brought down Jericho"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Resurrection power",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ephesians 2:1, what was the believers' previous state?",
+    "explanation": "Ephesians 2:1 — 'And you were dead in the trespasses and sins.' NOT 'sick' or 'weak' — but DEAD (nekros). The dead cannot save themselves — only God makes alive (2:5). This is the foundation of free grace: NO inherent capacity to respond.",
+    "language": "en",
+    "options": [
+      "Alive but weak",
+      "Dead in trespasses and sins",
+      "Awake but lost",
+      "Healthy but useless"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Dead in trespasses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ephesians 2:4-5, how is God described in saving us?",
+    "explanation": "Ephesians 2:4-5 — 'But God, being rich in mercy, because of the great love with which he loved us, even when we were dead in our trespasses, made us alive together with Christ — by grace you have been saved.' 2 KEY phrases: RICH in mercy + GREAT love.",
+    "language": "en",
+    "options": [
+      "Stern — punishing us (per the textual narrative)",
+      "Judging — condemning us (according to the text's framing)",
+      "RICH IN MERCY — because of his great love for us, he made us alive with Christ",
+      "Patient — waiting for us (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Rich in mercy",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ephesians 2:6, what has God done for believers with Christ?",
+    "explanation": "Ephesians 2:6 — 'and raised us up with him and seated us with him in the heavenly places in Christ Jesus.' 'With' (syn-) = WITH Christ. Believers are ALREADY seated with Christ — a PRESENT spiritual position, not future. 3 'withs': made alive with, raised with, seated with.",
+    "language": "en",
+    "options": [
+      "Seated us in Jerusalem (according to the text's framing)",
+      "Seated us beside Paul (per the textual narrative)",
+      "Brought us to heaven after death",
+      "Raised us up AND seated us with him in the heavenly places in Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Seated with Christ",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ephesians 2:14, what is Christ for Jew and Gentile?",
+    "explanation": "Ephesians 2:14 — 'For he himself is our peace, who has made us both one and has broken down in his flesh the dividing wall of hostility.' The 'wall' (mesotoichon) — alludes to the partition separating the 'Court of Israel' from the 'Court of Gentiles' in Herod's temple; crossing meant death. Christ DEMOLISHED the wall = direct access opened.",
+    "language": "en",
+    "options": [
+      "Our PEACE — he made the two one, breaking down the dividing wall",
+      "Conquering King — he rules over both",
+      "Atoning Sacrifice — he redeems both",
+      "A Prophet — he teaches both"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Christ is our peace",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ephesians 2:19, the Gentile believers are no longer strangers and aliens, but what?",
+    "explanation": "Ephesians 2:19 — 'So then you are no longer strangers and aliens, but you are fellow citizens with the saints and members of the household of God.' Two key words: FELLOW CITIZENS (sympolitēs) + MEMBERS of the household (oikeios). NOT guests at a feast — but FAMILY members of God's house.",
+    "language": "en",
+    "options": [
+      "Converts to Judaism (per the textual narrative)",
+      "FELLOW CITIZENS with the saints and MEMBERS of the household of God",
+      "Temporarily heavenly citizens",
+      "Partakers only after death (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Fellow citizens, household",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 3,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ephesians 3:6, what mystery, hidden in past ages, is now revealed about the Gentiles?",
+    "explanation": "Ephesians 3:6 — 'This mystery is that the Gentiles are fellow heirs, members of the same body, and partakers of the promise in Christ Jesus through the gospel.' 3 'FELLOWS' (syn-): fellow heirs + fellow body + fellow partakers. NO second class.",
+    "language": "en",
+    "options": [
+      "They must become Jews to be saved (according to the text's framing)",
+      "They must keep the Mosaic law (per the textual narrative)",
+      "They are FELLOW HEIRS, FELLOW MEMBERS of the body, and FELLOW PARTAKERS of the promise in Christ",
+      "They are only permitted partial participation"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Gentiles fellow heirs",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 3,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ephesians 3:20-21, what can God do compared to what we ask or think?",
+    "explanation": "Ephesians 3:20-21 — 'Now to him who is able to do far more abundantly than all that we ask or think, according to the power at work within us, to him be glory in the church and in Christ Jesus.' 'Far more abundantly' (hyperekperissou) = SUPER ABUNDANT BEYOND. Prayer is never 'too much' with God.",
+    "language": "en",
+    "options": [
+      "A little less (per the textual narrative)",
+      "Exactly what we ask (as described in the passage)",
+      "What we imagine (according to the text's framing)",
+      "FAR MORE ABUNDANTLY beyond all — according to the power at work within us"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Far more abundantly",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ephesians 4:7-8, grace has been given to each of us according to what? Given by whom?",
+    "explanation": "Ephesians 4:7-8 — 'But grace was given to each one of us according to the measure of Christ's gift. Therefore it says, \"When he ascended on high he led a host of captives, and he gave gifts to men.\"' Quoting Psalm 68:18 — Christ is the conquering King + gives the SPOILS (spiritual gifts) to his people.",
+    "language": "en",
+    "options": [
+      "According to our merit — given by God (per the textual narrative)",
+      "According to the measure of Christ's gift — when he ascended on high he led captives and gave gifts to men",
+      "According to piety — given by the Holy Spirit",
+      "According to rank — given by the Church (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Grace from Christ",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ephesians 4:13, what is the goal of the spiritual gifts?",
+    "explanation": "Ephesians 4:13 — 'until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ.' Goal: MATURITY (teleios) + UNITY of faith. Unlike 'apparent spirituality' — must DEEPLY know.",
+    "language": "en",
+    "options": [
+      "To attain unity of faith and knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ",
+      "To have many miracles (according to the text's framing)",
+      "To plant many churches (as described in the passage) (as the text indicates)",
+      "To increase numbers (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Mature in Christ",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ephesians 4:15, why must believers speak the TRUTH in love?",
+    "explanation": "Ephesians 4:15 — 'Rather, speaking the truth in love, we are to grow up in every way into him who is the head, into Christ.' 'TRUTH in LOVE' (alētheuontes en agapē) = balanced formula. Truth alone → rigid; love alone → blind.",
+    "language": "en",
+    "options": [
+      "To win arguments (per the textual narrative)",
+      "To separate from the wrong",
+      "To GROW UP in all things into him who is the head, Christ",
+      "To protect the organization"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Truth in love",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ephesians 4:22-24, what must believers PUT OFF and PUT ON?",
+    "explanation": "Ephesians 4:22-24 — 'to put off your old self, which belongs to your former manner of life and is corrupt through deceitful desires, and to be renewed in the spirit of your minds, and to put on the new self, created after the likeness of God in true righteousness and holiness.' Image of CHANGING CLOTHES (apothesthai/endysasthai). Renewal (anakainosis) starts in the MIND.",
+    "language": "en",
+    "options": [
+      "Off the old garment, on the new (as described in the passage)",
+      "Off poverty, on wealth (per the textual narrative) (in the story's sequence)",
+      "Off tradition, on innovation (according to the text's framing)",
+      "Off the OLD SELF (corrupt according to deceitful desires) — put on the NEW SELF (created after the likeness of God in true righteousness + holiness)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Off old self, on new self",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ephesians 4:30, what must believers avoid doing to the Holy Spirit?",
+    "explanation": "Ephesians 4:30 — 'And do not grieve the Holy Spirit of God, by whom you were sealed for the day of redemption.' 'Grieve' (lypeō) = cause sorrow. Shows the Holy Spirit is NOT an impersonal force — but a PERSON with emotions. 'Sealed' (sphragizō) = stamp of ownership — cannot be lost.",
+    "language": "en",
+    "options": [
+      "Avoid boasting in him (as described in the passage)",
+      "Avoid GRIEVING the Holy Spirit — by whom you were sealed for the day of redemption",
+      "Avoid asking him (per the textual narrative)",
+      "Avoid not listening (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Don't grieve the Spirit",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ephesians 5:15-16, why must believers walk carefully and redeem the time?",
+    "explanation": "Ephesians 5:15-16 — 'Look carefully then how you walk, not as unwise but as wise, making the best use of the time, because the days are evil.' 'Making the best use of the time' (exagorazomenoi ton kairon) = BUYING UP the time — wise investment. 'EVIL days' = the corrupt age full of temptation.",
+    "language": "en",
+    "options": [
+      "Because enemies are near",
+      "Because rewards are running out",
+      "Because the days are EVIL",
+      "Because angels are watching"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Days are evil",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ephesians 5:21, why must believers submit to ONE ANOTHER?",
+    "explanation": "Ephesians 5:21 — 'submitting to one another out of reverence for Christ.' The TRANSITION verse to 5:22-6:9 (wives/husbands, parents/children, masters/servants). Submission does NOT mean inferiority — Christ himself voluntarily submitted to the Father. Every relationship in the Church has a SERVANT element.",
+    "language": "en",
+    "options": [
+      "Because Paul teaches it",
+      "Because the law demands it",
+      "Because of church tradition",
+      "Out of reverence for Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Submit to one another",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ephesians 6:4, what must fathers NOT do to children, and what must they do?",
+    "explanation": "Ephesians 6:4 — 'Fathers, do not provoke your children to anger, but bring them up in the discipline and instruction of the Lord.' 'Provoke' (parorgizō) = stir to rebellion. Bring up = paideia (whole-life education) + nouthesia (admonition). Fathers have RESPONSIBILITY for spiritual education — not just mothers.",
+    "language": "en",
+    "options": [
+      "Do not provoke your children to anger — bring them up in the discipline and instruction of the Lord",
+      "Do not punish — teach Mosaic law (according to the text's framing)",
+      "Do not forbid — let them be free (as described in the passage)",
+      "Do not reward — only discipline (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Don't provoke children",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ephesians 1:14, what is the Holy Spirit for believers until the redemption of the inheritance?",
+    "explanation": "Ephesians 1:14 — 'who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.' 'GUARANTEE' (arrabōn) = down payment. The implication: if God has paid down — he WILL CERTAINLY pay in full. Synonymous with 'sealed' in 1:13.",
+    "language": "en",
+    "options": [
+      "A great sign (per the textual narrative) (in the story's sequence)",
+      "A random gift (according to the text's framing) (as the text indicates)",
+      "The DOWN PAYMENT (guarantee) — securing the inheritance until the redemption of God's possession",
+      "A temporary strength (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Spirit as down payment",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ephesians 1:22-23, God placed all under Christ's feet and gave him as Head over what? What is the Church to Christ?",
+    "explanation": "Ephesians 1:22-23 — 'And he put all things under his feet and gave him as head over all things to the church, which is his body, the fullness of him who fills all in all.' 'PLĒRŌMA' (fullness) — the Church is where Christ EXPRESSES his fullness; Christ and Church are ONE spiritual unit.",
+    "language": "en",
+    "options": [
+      "Head over Israel — the Church is Christ's servant",
+      "Head over angels — the Church is Christ's branch",
+      "Head over prophets — the Church is Christ's disciple",
+      "Head OVER ALL THINGS to the Church — which is his BODY, the fullness of him who fills all in all"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Christ Head over the Church",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ephesians 2:2, whom and what rule did believers formerly follow?",
+    "explanation": "Ephesians 2:2 — 'in which you once walked, following the course of this world, following the prince of the power of the air, the spirit that is now at work in the sons of disobedience.' 'Prince of the power of the air' (archon tēs exousias tou aeros) = Satan; the air domain (between earth and heaven) = where demonic forces operate. 'Sons of disobedience' = the unsaved.",
+    "language": "en",
+    "options": [
+      "Following the course of this world, obeying the PRINCE OF THE POWER OF THE AIR (Satan), the spirit now at work in the sons of disobedience",
+      "Only natural inclination (as described in the passage) (per the original content)",
+      "Worldly kings (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "False prophets (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Prince of power of air",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ephesians 2:15-16, what did Christ abolish to create what new thing?",
+    "explanation": "Ephesians 2:15-16 — 'by abolishing the law of commandments expressed in ordinances, that he might create in himself one new man in place of the two, so making peace, and might reconcile us both to God in one body.' 'ONE NEW MAN' (kainos anthrōpos) = NEW humanity — NOT Jews + Gentiles side by side, but a totally NEW unified body.",
+    "language": "en",
+    "options": [
+      "Abolished the old Gospel — created a new Gospel (according to the text's framing)",
+      "Abolished the law of commandments and ordinances, to create in himself ONE NEW MAN out of two (Jew + Gentile) — reconciling both to God in one body",
+      "Abolished the OT temple — created a new synagogue (as described in the passage)",
+      "Abolished Abraham's covenant — created Sinai's (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "One new man",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ephesians 2:20, on what foundation is the Church built, and who is the CORNERSTONE?",
+    "explanation": "Ephesians 2:20 — 'built on the foundation of the apostles and prophets, Christ Jesus himself being the cornerstone.' The cornerstone (akrogōniaios) = ORIENTS every other stone. Apostles + prophets = foundational revelation (NT + OT); Christ = the CENTER. Quoting Isaiah 28:16.",
+    "language": "en",
+    "options": [
+      "On Paul's foundation — Peter is cornerstone",
+      "On Moses' foundation — David is cornerstone",
+      "On the foundation of the apostles and prophets — Christ is the CORNERSTONE",
+      "On the 12 tribes — Aaron is cornerstone"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Christ cornerstone",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 3,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ephesians 3:8, what does Paul call himself, and what task is he given?",
+    "explanation": "Ephesians 3:8 — 'To me, though I am the very least of all the saints, this grace was given, to preach to the Gentiles the unsearchable riches of Christ.' 'VERY LEAST' (elachistoteros — superlative of 'least') = a coined word, stronger than 'least'. Paul is most humble when entrusted with the greatest task. 'UNSEARCHABLE' (anexichniastos) = cannot be traced.",
+    "language": "en",
+    "options": [
+      "Greatest among apostles — teach high doctrine (as described in the passage)",
+      "Pure Jew — defend Mosaic law (per the textual narrative)",
+      "Highly educated — teach philosophy (according to the text's framing)",
+      "The very LEAST of all the saints — given to preach the UNSEARCHABLE RICHES of Christ to the Gentiles"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Paul least, unsearchable riches",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 3,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ephesians 3:10, to whom does God reveal his MANIFOLD WISDOM through the Church?",
+    "explanation": "Ephesians 3:10 — 'so that through the church the manifold wisdom of God might now be made known to the rulers and authorities in the heavenly places.' 'MANIFOLD' (polypoikilos) = many-colored. The Church is God's 'stage' DISPLAYING his wisdom to angels — including evil ones (1 Pet 1:12 angels long to look).",
+    "language": "en",
+    "options": [
+      "To the world (according to the text's framing)",
+      "To the rulers and authorities in the heavenly places (spiritual principalities and powers)",
+      "To the Jews (per the textual narrative) (in the story's sequence)",
+      "To later prophets (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Manifold wisdom to powers",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 3,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ephesians 3:18-19, Paul prays for believers to grasp what 4 dimensions of Christ's love?",
+    "explanation": "Ephesians 3:18-19 — 'may have strength to comprehend with all the saints what is the breadth and length and height and depth, and to know the love of Christ that surpasses knowledge, that you may be filled with all the fullness of God.' 4 DIMENSIONS = TOTALITY (implying infinity). Love transcends KNOWLEDGE — only spiritually grasped.",
+    "language": "en",
+    "options": [
+      "BREADTH, LENGTH, HEIGHT, DEPTH — to know Christ's love that surpasses knowledge, that you may be filled with all the fullness of God",
+      "East, West, North, South — the whole universe (according to the text's framing)",
+      "Beginning, present, future, eternal — all time (as described in the passage)",
+      "Earth, sea, sky, fire — all elements (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "4 dimensions of love",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ephesians 4:9-10, what did Christ do before ascending on high?",
+    "explanation": "Ephesians 4:9-10 — 'In saying, \"He ascended,\" what does it mean but that he had also descended into the lower regions, the earth? He who descended is the one who also ascended far above all the heavens, that he might fill all things.' Ascending requires HAVING DESCENDED. 'Lower regions' interpretations: (a) earth; (b) Hades. Paul EMPHASIZES: Christ went to the LOWEST so as to surpass ALL.",
+    "language": "en",
+    "options": [
+      "He only descended to Jerusalem (according to the text's framing) (per the original content)",
+      "He only descended to the temple (as described in the passage) (as the text indicates)",
+      "He DESCENDED into the lower regions, the earth — the one who descended is the one who also ascended above all the heavens, that he might fill all things",
+      "He only was born at Bethlehem (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Descended before ascended",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ephesians 5:14, possibly an early hymn — what is quoted?",
+    "explanation": "Ephesians 5:14 — 'Therefore it says, \"Awake, O sleeper, and arise from the dead, and Christ will shine on you.\"' Likely quoted from an early BAPTISMAL HYMN — calling new believers out of the 'night' of sin (5:8). Similar to Colossians 3:1 (raised with Christ → seek things above).",
+    "language": "en",
+    "options": [
+      "'Repent, for the kingdom is near' (per the textual narrative)",
+      "'Awake, O sleeper, and arise from the dead, and Christ will shine on you!'",
+      "'Believe in the Lord Jesus, and you will be saved'",
+      "'Love the Lord with all your heart and soul'"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Awake O sleeper",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "verseStart": 32,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ephesians 5:31-32, marriage (one flesh) is a MYSTERY about what?",
+    "explanation": "Ephesians 5:31-32 — '\"Therefore a man shall leave his father and mother and hold fast to his wife, and the two shall become one flesh.\" This mystery is profound, and I am saying that it refers to Christ and the church.' Quoting Gen 2:24. Paul reveals: God designed marriage from the BEGINNING as a SHADOW of Christ-Church relationship — not the other way. That's why marriage is sacred.",
+    "language": "en",
+    "options": [
+      "Mystery of creation (per the textual narrative)",
+      "Mystery of Israel + God (as described in the passage)",
+      "Mystery of Adam + Eve (according to the text's framing)",
+      "A great MYSTERY — about Christ and the Church"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Marriage mystery: Christ Church",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ephesians 6:11, why must believers put on the whole armor of God?",
+    "explanation": "Ephesians 6:11 — 'Put on the whole armor of God, that you may be able to stand against the schemes of the devil.' 'SCHEMES' (methodeia) = sophisticated, systematic strategy — Satan is NOT disorganized. The goal: STAND (4 times in 6:11-14) — not attack but HOLD GROUND already taken.",
+    "language": "en",
+    "options": [
+      "So they may stand against the schemes of the devil",
+      "To fight Muslims (according to the text's framing)",
+      "To gain glory (per the textual narrative)",
+      "To learn warfare strategy"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Stand against Satan",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "verseStart": 19,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ephesians 6:19-20, Paul asks for anointing to preach the Gospel even though he is what?",
+    "explanation": "Ephesians 6:19-20 — 'and also for me, that words may be given to me in opening my mouth boldly to proclaim the mystery of the gospel, for which I am an ambassador in chains, that I may declare it boldly, as I ought to speak.' 'AMBASSADOR IN CHAINS' (presbeuō en halysei) = paradox = a ROYAL ambassador in fetters — Paul represents Christ's kingdom; Roman chains do NOT stop the mission.",
+    "language": "en",
+    "options": [
+      "In the midst of wealth (as described in the passage)",
+      "Being honored (per the textual narrative) (in the story's sequence)",
+      "An ambassador in CHAINS (the imperial ambassador in fetters) — still asking for boldness to preach",
+      "A king in his realm (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Ambassador in chains",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ephesians 6:23-24, what is the closing benediction?",
+    "explanation": "Ephesians 6:23-24 — 'Peace be to the brothers, and love with faith, from God the Father and the Lord Jesus Christ. Grace be with all who love our Lord Jesus Christ with love incorruptible.' 'INCORRUPTIBLE' (aphtharsia) = imperishable, eternal. The closing combines: PEACE + LOVE + FAITH + GRACE — 4 core gospel words.",
+    "language": "en",
+    "options": [
+      "Peace + grace from Abraham (per the textual narrative) (in the story's sequence)",
+      "PEACE + LOVE WITH FAITH from the Father and Christ — GRACE be with all who love Jesus Christ with love incorruptible",
+      "Health + wealth from the king (according to the text's framing)",
+      "Wisdom + fame from the teacher (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Ephesians",
+      "Epistle",
+      "Peace love faith grace",
+      "Advanced"
+    ]
   }
 ]
