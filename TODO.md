@@ -8,13 +8,12 @@
 
 ### Priority B1 (3 sách giá trị cao nhất)
 
-#### Task B1-1: Isaiah +80 (20→100)
-- Status: [ ] TODO
-- Current: 20 (E11 M6 H3) → Target: 100 (E30 M45 H25)
-- Plan: +19 Easy + 39 Medium + 22 Hard
-- File(s): `isaiah_quiz.json` + `isaiah_quiz_en.json` + `scripts/append_isaiah_v3b.py`
-- Strategy: Sứ điệp Mê-si-a (7:14, 9:6, 11:1-10, **53 toàn chương Servant Song**, 61); Bài ca tôi tớ 4 cái (42, 49, 50, 53); xét đoán + cứu rỗi; Holy One of Israel; Babylon exile + return; new heaven new earth (65-66)
-- Commit: `feat(seed): Isaiah +80 V3 B1 quality expansion (20→100)`
+#### Task B1-1: Isaiah +79 (20→99) [x] DONE 2026-04-27
+- 20→**99** (E30 M44 H25, ratio **30.3/44.4/25.3%** — gần khớp 30/45/25)
+- Pool +79 (1 short of plan 80): 19 Easy + 38 Medium + 22 Hard VI + 79 EN 1:1
+- Seeder log `inserted=79` each file, total 5534→5692, invalid=0
+- 79 single + 0 multi; idx 19/17/22/21
+- Topics: 4 Servant Songs (42, 49, 50, 53 toàn chương); Mê-si-a prophecies (7:14 Em-ma-nu-ên, 9:6 5 names, 11:1-10 Branch); Isaiah call vision 6; Hezekiah 36-39; Cyrus 44-45; new heaven new earth 65; trishagion deep dive; Branch (netzer) → Nazarene (Mat 2:23); 4 cross-ref (Mat 1:23, Mat 2:23, Phil 2:10-11, Rom 15:12); Servant Song 4 chiastic structure
 
 #### Task B1-2: Hebrews +60 (20→80)
 - Status: [ ] TODO

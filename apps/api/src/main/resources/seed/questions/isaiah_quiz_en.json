@@ -536,5 +536,2079 @@
       "Prophets",
       "Basic"
     ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Isaiah 1:1, Isaiah son of whom received this vision, during which kings of Judah?",
+    "explanation": "Isaiah 1:1 — 'The vision of Isaiah son of Amoz, which he saw concerning Judah and Jerusalem in the days of Uzziah, Jotham, Ahaz, and Hezekiah, kings of Judah'. Isaiah ministered through 4 kings (~740-686 BC), about 60 years. NOT Amos the prophet (a different book).",
+    "language": "en",
+    "options": [
+      "Son of Amos — during Solomon",
+      "Son of Jesse — during David",
+      "Son of AMOZ — during UZZIAH, JOTHAM, AHAZ, and HEZEKIAH kings of Judah",
+      "Son of Samuel — during Saul"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Isaiah son of Amoz",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Isaiah 2:4, in the latter days, the nations will RECAST weapons into what?",
+    "explanation": "Isaiah 2:4 — 'They shall beat their swords into plowshares, and their spears into pruning hooks; nation shall not lift up sword against nation, neither shall they learn war anymore'. The famous verse — inscribed on the UN building in New York; describing absolute peace in the Messianic kingdom (cf. Mic 4:3 same verse).",
+    "language": "en",
+    "options": [
+      "Recast into swords + spears (as described in the passage)",
+      "RECAST SWORDS into PLOWSHARES, SPEARS into PRUNING HOOKS — no nation will lift sword against another, nor train for WAR anymore",
+      "Recast into gold coins (according to the text's framing)",
+      "Recast into idols (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Swords into plowshares",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Isaiah 6:1, Isaiah's calling vision occurred in what year?",
+    "explanation": "Isaiah 6:1 — 'In the year that King Uzziah died, I saw the Lord seated on a throne, high and exalted, and the train of his robe filled the temple'. King Uzziah (Azariah) died ~740 BC of leprosy for offering incense unlawfully (2 Chr 26:16-21). Isaiah ch 6 = his TRUE call narrative (chapters 1-5 prefigure the content).",
+    "language": "en",
+    "options": [
+      "The year Ahab died (per the textual narrative)",
+      "The year David ascended (according to the text's framing)",
+      "The year Solomon built the temple",
+      "THE YEAR KING UZZIAH DIED — Isaiah saw the Lord sitting on a throne, high + lofty"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Year Uzziah died",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Isaiah 11:1, the Messiah is pictured as what emerging from the stump of Jesse (David's father)?",
+    "explanation": "Isaiah 11:1 — 'A shoot will come up from the stump of Jesse; from his roots a Branch will bear fruit'. 'Branch' (netzer) became the basis for 'Nazarene' = Christ (Mt 2:23). Meaning: though David's line appears 'cut down' (Babylonian exile), a SHOOT will spring up = Messiah. Rev 22:16 quotes 'I am the Root and Descendant of David'.",
+    "language": "en",
+    "options": [
+      "A SHOOT — 'a SHOOT will COME UP from the STUMP of JESSE; from his roots a Branch will bear fruit'",
+      "A newborn child (as described in the passage)",
+      "An angel (according to the text's framing)",
+      "A lamb (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Shoot from Jesse",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 11,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Isaiah 11:2, the Spirit of the Lord rests on the Messiah with 7 characteristics. Besides 'the Spirit of the Lord', 6 more: 'Spirit of wisdom + understanding, Spirit of counsel + might, Spirit of knowledge + ___'?",
+    "explanation": "Isaiah 11:2 — 'The Spirit of the Lord shall rest upon him, the Spirit of wisdom and understanding, the Spirit of counsel and might, the Spirit of knowledge and the fear of the Lord'. 6 attributes + the Spirit of the Lord himself = 7 (= the 7 Spirits in Rev 1:4, 4:5). Structure 3 pairs: (1) wisdom + understanding; (2) counsel + might; (3) knowledge + fear of the Lord.",
+    "language": "en",
+    "options": [
+      "Spirit of miracles",
+      "Spirit of FEAR of the LORD",
+      "Spirit of courage",
+      "Spirit of creation"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "7 Spirits on Messiah",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 25,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Isaiah 25:8, what will God do on the MOUNTAIN of salvation (= Mt Zion)?",
+    "explanation": "Isaiah 25:8 — 'He will swallow up death forever. The Sovereign Lord will wipe away the tears from all faces; he will remove his people's disgrace from all the earth'. This verse is QUOTED in Rev 21:4 (the new creation) + 1 Cor 15:54 (resurrection). 'SWALLOW UP DEATH' = total reversal.",
+    "language": "en",
+    "options": [
+      "Provide abundant food (as described in the passage)",
+      "Wage war (per the textual narrative)",
+      "SWALLOW UP DEATH FOREVER + WIPE TEARS from all faces + remove his people's disgrace from all the earth",
+      "Build a wall (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Swallow up death",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Isaiah 40:3, a voice calls in the wilderness: '___ the way of the LORD; MAKE STRAIGHT in the desert a highway for our God'?",
+    "explanation": "Isaiah 40:3 — 'A voice cries: In the wilderness prepare the way of the Lord; make straight in the desert a highway for our God'. All 4 Gospels apply this to John the Baptist — the messenger preparing Christ's way. Opens part 2 of Isaiah (40-66) characterized by the 'comfort message'.",
+    "language": "en",
+    "options": [
+      "Avoid (according to the text's framing)",
+      "Burn (per the textual narrative) (in the story's sequence)",
+      "Destroy (as described in the passage)",
+      "PREPARE — this verse is QUOTED in all 4 Gospels for John the Baptist (Mt 3:3, Mk 1:3, Lk 3:4, Jn 1:23)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Prepare the way",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 2,
+    "content": "According to Isaiah 40:1-2, what is the opening of Isaiah's second part?",
+    "explanation": "Isaiah 40:1-2 — 'Comfort, comfort my people, says your God. Speak tenderly to Jerusalem, and proclaim to her that her warfare is ended, that her iniquity is pardoned, that she has received from the Lord's hand double for all her sins'. Part 1 (1-39) = JUDGMENT theme; Part 2 (40-66) = COMFORT + REDEMPTION theme. 40:1 = the famous transition (also the inspiration for Handel's 'Messiah').",
+    "language": "en",
+    "options": [
+      "'COMFORT, COMFORT my PEOPLE, says your God. Speak tenderly to JERUSALEM, and proclaim her HARDSHIP is OVER'",
+      "'Repent' (per the textual narrative)",
+      "'God hates sin' (according to the text's framing)",
+      "'Keep the Sabbath' (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Comfort comfort",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 42,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Isaiah 42:1, how does the FIRST SERVANT SONG open?",
+    "explanation": "Isaiah 42:1 — 'Behold my servant, whom I uphold, my chosen, in whom my soul delights; I have put my Spirit upon him; he will bring forth justice to the nations'. THIS is the FIRST of 4 SERVANT SONGS (42:1-4, 49:1-6, 50:4-9, 52:13-53:12). The Father QUOTES this at Christ's baptism (Mt 3:17 'This is my beloved Son, with whom I am well pleased').",
+    "language": "en",
+    "options": [
+      "'Hear my words' (per the textual narrative)",
+      "'The LORD has chosen Israel' (as described in the passage)",
+      "'BEHOLD MY SERVANT, whom I UPHOLD; my CHOSEN, in whom my SOUL DELIGHTS. I have put my SPIRIT upon him'",
+      "'Satan has fallen' (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Servant Song 1",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 45,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Isaiah 45:1, which foreign king does the LORD call his 'ANOINTED' (messiah) — who would conquer Babylon + free the Jews?",
+    "explanation": "Isaiah 45:1 — 'Thus says the Lord to his anointed, to Cyrus, whose right hand I have grasped, to subdue nations before him'. Isaiah PROPHESIES king CYRUS by NAME ~150 years before Cyrus was born. Fulfillment: Cyrus conquered Babylon ~539 BC, issued the decree freeing the Jews (Ezra 1).",
+    "language": "en",
+    "options": [
+      "Darius (per the textual narrative)",
+      "CYRUS — king of Persia",
+      "Nebuchadnezzar (as described in the passage)",
+      "Artaxerxes (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Cyrus the anointed",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Isaiah 53:3, how is the suffering Servant described?",
+    "explanation": "Isaiah 53:3 — 'He was despised and rejected by men, a man of sorrows and acquainted with grief; and as one from whom men hide their faces he was despised, and we esteemed him not'. Prophesied ~700 BC describing Christ's suffering. 'Despised' appears twice — ABSOLUTE rejection.",
+    "language": "en",
+    "options": [
+      "A mighty king (according to the text's framing) (per the original content)",
+      "A righteous man (as described in the passage) (as the text indicates)",
+      "A child (per the textual narrative) (in the story's sequence)",
+      "A man DESPISED + REJECTED by men; a man of SORROWS, acquainted with GRIEF; one from whom men hide their FACES, despised, and we esteemed him NOT"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Man of sorrows",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Isaiah 53:11, what is the outcome of the suffering Servant?",
+    "explanation": "Isaiah 53:11 — 'Out of the anguish of his soul he shall see and be satisfied; by his knowledge shall the righteous one, my servant, make many to be accounted righteous, and he shall bear their iniquities'. JUSTIFICATION OF MANY = the reason for the suffering. A core Protestant verse (Paul cites it in Rom 5:18-19).",
+    "language": "en",
+    "options": [
+      "'He will SEE the FRUIT of his SUFFERING and be SATISFIED. By his KNOWLEDGE my righteous SERVANT will JUSTIFY MANY'",
+      "'He will die and vanish' (according to the text's framing)",
+      "'He will sleep in the grave' (as described in the passage)",
+      "'He will fight' (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Justify many",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 55,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Isaiah 55:1, what is the invitation to the THIRSTY?",
+    "explanation": "Isaiah 55:1 — 'Come, all you who are thirsty, come to the waters; and you who have no money, come, buy and eat! Come, buy wine and milk without money and without cost'. The FREE invitation — incompatible with 'salvation by works'. Source of inspiration for Rev 22:17 ('Whoever is thirsty, come...without price').",
+    "language": "en",
+    "options": [
+      "'Go seek gold' (according to the text's framing) (per the original content)",
+      "'Buy much food' (as described in the passage) (as the text indicates)",
+      "'COME, ALL WHO are THIRSTY, COME to the WATERS! And you who have NO MONEY, come, BUY and EAT! Come, BUY WINE + MILK WITHOUT MONEY, WITHOUT PRICE'",
+      "'Be rich' (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "All who thirst",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 55,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Isaiah 55:11, how is God's word described?",
+    "explanation": "Isaiah 55:10-11 — 'As the rain and the snow come down from heaven, and do not return there but water the earth, making it bring forth and sprout, giving seed to the sower and bread to the eater, so shall my word be that goes out from my mouth; it shall not return to me empty, but it shall accomplish that which I purpose, and shall succeed in the thing for which I sent it'. God's word SELF-FULFILLING (effective) — theological basis for Sola Scriptura.",
+    "language": "en",
+    "options": [
+      "A temporary word (per the textual narrative) (in the story's sequence)",
+      "The word that GOES OUT from his mouth WILL NOT RETURN to him EMPTY; it will ACCOMPLISH what he desires + ACHIEVE the purpose for which he SENT it",
+      "A word only for angels (according to the text's framing)",
+      "A word only about Israel (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Word effective",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 58,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 7,
+    "content": "According to Isaiah 58:6-7, what is the FASTING God really wants?",
+    "explanation": "Isaiah 58:6-7 — 'Is not this the fast that I choose: to loose the bonds of wickedness, to undo the straps of the yoke, to let the oppressed go free, and to break every yoke? Is it not to share your bread with the hungry and bring the homeless poor into your house; when you see the naked, to cover him?' God prioritizes SOCIAL JUSTICE over religious ritual (cf. Amos 5).",
+    "language": "en",
+    "options": [
+      "40-day fast (per the textual narrative) (in the story's sequence)",
+      "Wearing sackcloth (as described in the passage) (as the text indicates)",
+      "Bowing the knee (according to the text's framing) (per the original content)",
+      "LOOSE the chains of injustice, BREAK the YOKE of oppression, set the OPPRESSED FREE; SHARE bread with the HUNGRY, bring the HOMELESS POOR into your house, CLOTHE the NAKED"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "True fast",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 60,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Isaiah 60:1, what is the call to Zion (Jerusalem)?",
+    "explanation": "Isaiah 60:1 — 'Arise, shine, for your light has come, and the glory of the Lord has risen upon you'. Chapters 60-62 = the high point of 'salvation to Zion'. This verse = source of many hymns + Rev 21:23 ('the glory of God gives it light').",
+    "language": "en",
+    "options": [
+      "'ARISE, SHINE; for your LIGHT has come, and the GLORY of the LORD has RISEN upon you'",
+      "'Mourn' (according to the text's framing)",
+      "'Flee' (per the textual narrative)",
+      "'Surrender' (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Arise + shine",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Isaiah 53:4, what does the suffering Servant BEAR for us?",
+    "explanation": "Isaiah 53:4 — 'Surely he has borne our griefs and carried our sorrows; yet we esteemed him stricken, smitten by God, and afflicted'. Mt 8:17 quotes this applied to Christ's healing ministry. The FIRST role of REPLACEMENT (substitution) in the Servant Song of ch 53.",
+    "language": "en",
+    "options": [
+      "Only small sins (according to the text's framing)",
+      "BORE our INFIRMITIES + CARRIED our SORROWS — yet we esteemed him STRICKEN, SMITTEN by God, and AFFLICTED",
+      "Only shame (per the textual narrative)",
+      "Only difficulties (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Bore infirmities",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 66,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 2,
+    "content": "According to Isaiah 66:1-2, what does the Lord say about his HOUSE and place of REST?",
+    "explanation": "Isaiah 66:1-2 — 'This is what the Lord says: Heaven is my throne, and the earth is my footstool. Where is the house you will build for me? Where will my resting place be? Has not my hand made all these things?' Stephen QUOTES this in Acts 7:49-50 before the Sanhedrin.",
+    "language": "en",
+    "options": [
+      "'Build me a great temple' (according to the text's framing)",
+      "'Solomon's temple is the only one' (as described in the passage)",
+      "'HEAVEN is my THRONE + EARTH is my FOOTSTOOL — what kind of HOUSE will you build for me? Has not my HAND made all these things?'",
+      "'Build city walls' (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Heaven = my throne",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Isaiah 53:12, what is the climactic outcome of the Servant?",
+    "explanation": "Isaiah 53:12 — 'Therefore I will divide him a portion with the many, and he shall divide the spoil with the strong, because he poured out his soul to death and was numbered with the transgressors; yet he bore the sin of many, and makes intercession for the transgressors'. Final verse of the Song. Lk 22:37 quotes 'numbered with transgressors' applied to Christ crucified between 2 robbers.",
+    "language": "en",
+    "options": [
+      "He will be king on earth (as described in the passage)",
+      "He will teach (according to the text's framing)",
+      "He will heal (per the textual narrative) (in the story's sequence)",
+      "He POURED OUT his SOUL TO DEATH, was NUMBERED with the TRANSGRESSORS; he BORE the SIN of MANY + INTERCEDES for the transgressors"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Intercedes for transgressors",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Isaiah 1:18 (already in Easy), the Lord INVITES the people to REASON. What follows shows about FORGIVENESS?",
+    "explanation": "Isaiah 1:18 — 'Come now, let us reason together, says the Lord: though your sins are like scarlet, they shall be as white as snow; though they are red like crimson, they shall become like wool'. The FORMULA of forgiveness: from deep red → pure white = by GRACE, NOT works. Scarlet + crimson = colors of blood / heavy sin.",
+    "language": "en",
+    "options": [
+      "Cannot forgive (per the textual narrative) (in the story's sequence)",
+      "Forgive only the doers of good (according to the text's framing)",
+      "'Though your sins are like SCARLET, they shall be as WHITE AS SNOW; though they are RED LIKE CRIMSON, they shall become like WOOL'",
+      "Forgive only those who sacrifice (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Scarlet to white",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 7,
+    "content": "According to Isaiah 5:1-7 (Song of the Vineyard), the VINEYARD = who? What did the owner expect?",
+    "explanation": "Isaiah 5:7 — 'For the vineyard of the LORD of hosts is the house of Israel, and the men of Judah are his pleasant planting; and he looked for justice, but behold, bloodshed; for righteousness, but behold, an outcry!' Hebrew wordplay: mishpat (justice) vs mispach (bloodshed); tsedaqah (righteousness) vs tse'aqah (cry). Christ BUILDS on this parable in Mt 21:33-44.",
+    "language": "en",
+    "options": [
+      "= Cyrus / glory (per the textual narrative) (in the story's sequence)",
+      "= the HOUSE of ISRAEL, men of Judah = the cherished planting; the owner EXPECTED sweet GRAPES (= justice + righteousness) but got WILD grapes",
+      "= Philistia / victory (according to the text's framing) (per the original content)",
+      "= Egypt / milk + honey (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Vineyard = Israel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 6,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Isaiah 6:5, when seeing the vision of the Lord on the throne + seraphim crying 'Holy 3 times', what was Isaiah's FIRST reaction?",
+    "explanation": "Isaiah 6:5 — 'And I said: Woe is me! For I am lost; for I am a man of unclean lips, and I dwell in the midst of a people of unclean lips; for my eyes have seen the King, the LORD of hosts!' The right reaction to ENCOUNTERING the holy God = recognition of one's SIN. Then a seraph touches a coal to his lips → 'your guilt is taken away' (6:7). Pattern: see → confess → cleansed → sent.",
+    "language": "en",
+    "options": [
+      "'I will proclaim' (as described in the passage) (as the text indicates)",
+      "'I am willing' (according to the text's framing) (per the original content)",
+      "'I rejoice' (per the textual narrative) (in the story's sequence)",
+      "'WOE IS ME! For I am LOST! For I am a man of UNCLEAN LIPS, dwelling among a people of UNCLEAN LIPS; for my eyes have seen the KING, the LORD of hosts!'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Woe is me",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 6,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 10,
+    "content": "According to Isaiah 6:9-10, what is the PARADOXICAL message in Isaiah's specific call?",
+    "explanation": "Isaiah 6:9-10 — 'And he said, Go, and say to this people: Keep on hearing, but do not understand; keep on seeing, but do not perceive. Make the heart of this people dull, and their ears heavy, and blind their eyes; lest they see with their eyes, and hear with their ears, and understand with their hearts, and turn and be healed'. This is the FAMOUS prophecy of HARDENING — the people miss their CHANCE to repent. QUOTED 6 times in the NT (Mt 13:14, Mk 4:12, Lk 8:10, Jn 12:40, Acts 28:26-27, Rom 11:8) — always applied to the Jews' rejection of Christ.",
+    "language": "en",
+    "options": [
+      "The people will repent immediately (as described in the passage) (per the original content)",
+      "'Go and tell this people: You will be ever HEARING, but never UNDERSTANDING; ever SEEING, but never PERCEIVING — make the HEART of this people CALLOUSED' (= judgment of hardening)",
+      "They will rejoice (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "They will rise to battle (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Hardening message",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Isaiah 7:14, what sign did the Lord give Ahaz in the THREAT of Syria + Israel?",
+    "explanation": "Isaiah 7:14 — 'Therefore the Lord himself will give you a sign: The virgin will conceive and give birth to a son, and will call him Immanuel'. Mt 1:22-23 QUOTES this applied to Christ. Two-level fulfillment: (1) short-term = Isaiah/Ahaz's son; (2) ultimate = Christ via MARY. Immanuel = God WITH US = Christ is God incarnate.",
+    "language": "en",
+    "options": [
+      "Fire from heaven (according to the text's framing)",
+      "A new star (per the textual narrative) (in the story's sequence)",
+      "A VIRGIN (almah) will CONCEIVE + give BIRTH to a SON, and will call him IMMANUEL ('God with us')",
+      "An angel rescuer (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Immanuel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 9,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Isaiah 9:6, what FOUR names of the Messiah are foretold?",
+    "explanation": "Isaiah 9:6 — 'For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace'. The famous verse — source of inspiration for Handel's 'Messiah' + many Christmas hymns.",
+    "language": "en",
+    "options": [
+      "'WONDERFUL COUNSELOR, MIGHTY GOD, EVERLASTING FATHER, PRINCE OF PEACE'",
+      "'King, Priest, Prophet, Judge'",
+      "'Redeemer, Forgiver, Comforter, Peace'",
+      "'Life, Way, Truth, Glory' (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Messiah's 4 names",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 11,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 9,
+    "content": "According to Isaiah 11:6-9, in the Messianic kingdom, how do ANIMALS coexist?",
+    "explanation": "Isaiah 11:6-9 — 'The wolf shall dwell with the lamb, and the leopard shall lie down with the young goat, and the calf and the lion and the fattened calf together; and a little child shall lead them... The nursing child shall play over the hole of the cobra, and the weaned child shall put his hand on the adder's den. They shall not hurt or destroy in all my holy mountain'. Imagery = REVERSING the curse of Genesis 3 — cosmic harmony in the Messianic kingdom.",
+    "language": "en",
+    "options": [
+      "Still carnivorous (as described in the passage) (per the original content) (per the textual narrative)",
+      "Extinct (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Only sleep (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "WOLVES with LAMBS; LEOPARDS with KIDS; CALVES + lions + fattened cattle EAT TOGETHER, a LITTLE CHILD leads them; cows + bears graze; infants play with snakes — NONE will harm on the holy mountain"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Wolf + lamb",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 14,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 15,
+    "content": "According to Isaiah 14:12-15, how is the king of Babylon's PRIDE described — applied to SATAN's fall?",
+    "explanation": "Isaiah 14:12-14 — 'How you are fallen from heaven, O Day Star, son of Dawn! How you are cut down to the ground, you who laid the nations low! You said in your heart, I will ascend to heaven; above the stars of God I will set my throne on high; I will sit on the mount of assembly in the far reaches of the north; I will ascend above the heights of the clouds; I will make myself like the Most High'. 'Day Star' (Lucifer in the Latin Vulgate) → became the name 'Satan' in tradition. 5 'I WILLs' = 5 ambitions.",
+    "language": "en",
+    "options": [
+      "'How you have FALLEN from heaven, MORNING STAR, son of the dawn!... You said in your heart, I will ASCEND to heaven; I will RAISE my throne ABOVE the stars of God'",
+      "'I am the king of Israel' (as described in the passage) (per the original content)",
+      "'I am righteous' (according to the text's framing) (as the text indicates)",
+      "'I love God' (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Day Star fallen",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 26,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Isaiah 26:19, what is the EARLIEST OT prophecy of bodily RESURRECTION?",
+    "explanation": "Isaiah 26:19 — 'Your dead shall live; their bodies shall rise. You who dwell in the dust, awake and sing for joy! For your dew is a dew of light, and the earth will give birth to the dead'. This + Daniel 12:2 = the 2 clearest OT passages on BODILY resurrection (most of the OT is vague about Sheol/Hades). The Protestant doctrine of BODILY RESURRECTION is core teaching.",
+    "language": "en",
+    "options": [
+      "'Souls return to God' (according to the text's framing) (per the original content)",
+      "'The dead are gone' (per the textual narrative) (in the story's sequence)",
+      "'YOUR DEAD will LIVE; their BODIES will RISE. You who dwell in the dust, AWAKE and shout for joy! Your DEW is like the dew of MORNING; the earth will give birth to her dead'",
+      "'God saves only souls' (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Dead will live",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 35,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 6,
+    "content": "According to Isaiah 35:5-6, what are the signs of the Messianic kingdom? (QUOTED by Christ + John the Baptist)",
+    "explanation": "Isaiah 35:5-6 — 'Then the eyes of the blind shall be opened, and the ears of the deaf unstopped; then shall the lame man leap like a deer, and the tongue of the mute sing for joy. For waters break forth in the wilderness, and streams in the desert'. Christ QUOTES this when John the Baptist (in prison) asks, 'Are you the one who is to come?' (Mt 11:5, Lk 7:22). Christ replies by LISTING the miracles he had done = exactly the content of Isaiah 35.",
+    "language": "en",
+    "options": [
+      "The sun shines brightly (as described in the passage)",
+      "Stars fall (according to the text's framing) (as the text indicates)",
+      "Much rain (per the textual narrative) (in the story's sequence)",
+      "EYES of the BLIND will be OPENED, EARS of the DEAF unstopped; the LAME will LEAP like a deer, TONGUES of the MUTE will sing for JOY"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Signs of Messianic kingdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Isaiah 40:11, how does God care for his people — a tender image?",
+    "explanation": "Isaiah 40:11 — 'He will tend his flock like a shepherd; he will gather the lambs in his arms; he will carry them in his bosom, and gently lead those that are with young'. SHEPHERD imagery — Ezk 34, Jn 10, 1 Pet 5:4 all use it. Christ calls himself the 'Good Shepherd'. This verse is GENTLER than Isaiah 40:10 'The Lord comes with might + his arm rules' — strength + tenderness coexisting.",
+    "language": "en",
+    "options": [
+      "'Like a SHEPHERD he will TEND his flock; he gathers the LAMBS in his ARMS and CARRIES them close to his HEART; he gently leads those that have YOUNG'",
+      "'Like a king fighting' (as described in the passage) (as the text indicates)",
+      "'Like a blacksmith' (according to the text's framing) (per the original content)",
+      "'Like a fisherman' (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Shepherd carries lambs",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 31,
+    "content": "According to Isaiah 40:28-31, who receives new strength + soars like an eagle?",
+    "explanation": "Isaiah 40:28-31 — 'The Lord is the everlasting God, the Creator of the ends of the earth. He will not grow tired or weary, and his understanding no one can fathom. He gives strength to the weary and increases the power of the weak. Even youths grow tired and weary, and young men stumble and fall; but those who HOPE in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint'.",
+    "language": "en",
+    "options": [
+      "The strong (as described in the passage) (as the text indicates)",
+      "THOSE WHO HOPE in the Lord will RENEW their STRENGTH; they will SOAR on WINGS like EAGLES; they will run + NOT GROW WEARY, walk + NOT BE FAINT",
+      "The rich (per the textual narrative) (in the story's sequence)",
+      "The young (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Hope in the Lord",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 44,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "According to Isaiah 44:6-8, how does the Lord IDENTIFY himself — in contrast to idols?",
+    "explanation": "Isaiah 44:6-8 — 'Thus says the Lord, the King of Israel and his Redeemer, the LORD of hosts: I am the first and I am the last; besides me there is no god... Fear not, nor be afraid; have I not told you from of old and declared it?... Is there a God besides me? There is no Rock; I know not any'. ABSOLUTE MONOTHEISM — Rev 1:17, 22:13 APPLY this to Christ ('I am the First + Last').",
+    "language": "en",
+    "options": [
+      "'I am one of many gods' (according to the text's framing)",
+      "'I am the greatest god' (as described in the passage)",
+      "'I am the FIRST + LAST; APART from me there is NO GOD... I am the ROCK; I know NOT ONE'",
+      "'I need worship' (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "First + Last + Rock",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 45,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 23,
+    "content": "According to Isaiah 45:22-23, what is God's UNIVERSAL salvation invitation?",
+    "explanation": "Isaiah 45:22-23 — 'Turn to me and be saved, all the ends of the earth! For I am God, and there is no other. By myself I have sworn; from my mouth has gone out in righteousness a word that shall not return: To me every knee shall bow, every tongue shall swear allegiance'. Paul QUOTES this in Philippians 2:10-11 applied to Christ ('every knee shall bow before Jesus'). The salvation invitation EXTENDS to all nations.",
+    "language": "en",
+    "options": [
+      "'TURN to me and BE SAVED, all the ENDS of the EARTH... Before ME EVERY KNEE will BOW; every TONGUE will SWEAR allegiance'",
+      "'Only Israel' (per the textual narrative) (in the story's sequence)",
+      "'Only the righteous' (as described in the passage)",
+      "'Only priests' (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Every knee bow",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 49,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Isaiah 49:6 (2nd SERVANT SONG), what mission does the Servant receive — beyond Israel?",
+    "explanation": "Isaiah 49:6 — 'He says: It is too small a thing for you to be my servant to restore the tribes of Jacob and bring back those of Israel I have kept. I will also make you a light for the Gentiles, that my salvation may reach to the ends of the earth'. Paul + Barnabas QUOTE this in Acts 13:47 — justifying the Gentile mission; Simeon also alludes 'a light for the Gentiles' in Lk 2:32.",
+    "language": "en",
+    "options": [
+      "Only restore the tribes (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "Only be king of Israel (according to the text's framing) (per the original content) (per the textual narrative)",
+      "Only preach to Judah (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "'It is TOO LIGHT a thing that you should be MY SERVANT to RAISE UP the TRIBES of Jacob + RESTORE the PRESERVED of ISRAEL; I will MAKE you a LIGHT for the GENTILES, that my SALVATION may reach to the END of the EARTH'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Light for Gentiles",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 50,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 6,
+    "content": "According to Isaiah 50:4-6 (3rd SERVANT SONG), how does the Servant SUFFER?",
+    "explanation": "Isaiah 50:4-6 — 'The Sovereign Lord has given me a well-instructed tongue, to know the word that sustains the weary... I offered my back to those who beat me, my cheeks to those who pulled out my beard; I did not hide my face from mocking and spitting'. Foretells Christ before the Sanhedrin + Pilate: SPAT upon (Mt 27:30), STRUCK (Lk 22:63), beard PULLED.",
+    "language": "en",
+    "options": [
+      "Imprisonment (according to the text's framing) (per the original content)",
+      "'I OFFERED my BACK to those who BEAT me, my CHEEKS to those who PULLED out my BEARD; I did NOT HIDE my face from MOCKING and SPITTING'",
+      "Hunger + thirst (as described in the passage) (as the text indicates)",
+      "Separation (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Back to beaters",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Isaiah 53:5 (in Hard already), what is the SUBSTITUTIONARY ATONEMENT formula?",
+    "explanation": "Isaiah 53:5 — 'But he was pierced for our transgressions, he was crushed for our iniquities; the punishment that brought us peace was on him, and by his wounds we are healed'. SUBSTITUTIONARY FORMULA: 'he in our place' — 4 parallel clauses. 1 Pet 2:24 QUOTES this applied to Christ.",
+    "language": "en",
+    "options": [
+      "He suffered alone (according to the text's framing) (per the original content)",
+      "As an example (per the textual narrative) (in the story's sequence)",
+      "'He was PIERCED for OUR transgressions, he was CRUSHED for OUR iniquities; the PUNISHMENT that brought us PEACE was upon him, and by his WOUNDS we are HEALED'",
+      "Because he was bold (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Pierced for our sins",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Isaiah 53:7 (in Hard already), how does the suffering Servant respond to oppressors?",
+    "explanation": "Isaiah 53:7 — 'He was oppressed and afflicted, yet he did not open his mouth; he was led like a lamb to the slaughter, and as a sheep before its shearers is silent, so he did not open his mouth'. Mt 26:62-63, Mk 14:60-61, Mt 27:12-14 — Christ DID NOT RESPOND when questioned before the Sanhedrin + Pilate. ABSOLUTE fulfillment.",
+    "language": "en",
+    "options": [
+      "Speaks boldly (as described in the passage) (per the original content) (per the textual narrative)",
+      "Begs (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Resists (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "He was OPPRESSED + AFFLICTED, yet he did NOT OPEN HIS MOUTH; he was led like a LAMB to the SLAUGHTER, and as a SHEEP before her SHEARERS is silent, so he did NOT OPEN HIS MOUTH"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Sheep before shearers",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Isaiah 53:9, where is the suffering Servant's TOMB?",
+    "explanation": "Isaiah 53:9 — 'And they made his grave with the wicked and with a rich man in his death, although he had done no violence, and there was no deceit in his mouth'. FULFILLMENT: Christ died between 2 thieves ('with the wicked') BUT was buried in Joseph of Arimathea's tomb — A RICH MAN (Mt 27:57-60).",
+    "language": "en",
+    "options": [
+      "'They MADE his GRAVE with the WICKED, but with the RICH in his death' — although he had done NO VIOLENCE and there was NO DECEIT in his mouth",
+      "Common priestly tomb (per the textual narrative) (in the story's sequence)",
+      "Tomb in his parents' home (as described in the passage) (as the text indicates)",
+      "Tomb in the wilderness (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Buried with the rich",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Isaiah 53:10, who AFFLICTS the suffering Servant — and why?",
+    "explanation": "Isaiah 53:10 — 'Yet it was the LORD's will to crush him and cause him to suffer, and though the LORD makes his life an offering for sin, he will see his offspring and prolong his days, and the will of the LORD will prosper in his hand'. KEY THEOLOGICAL point: Christ's SUFFERING is NOT an accident — but God's ACTIVE PLAN (cf. Acts 2:23 + 4:28).",
+    "language": "en",
+    "options": [
+      "Enemies (per the textual narrative) (in the story's sequence)",
+      "Pharisees (according to the text's framing) (as the text indicates)",
+      "It WAS the LORD's WILL to CRUSH him + cause him to SUFFER. After he has set his life as a GUILT OFFERING, he will see his OFFSPRING",
+      "Roman officials (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Lord's will to crush",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 55,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 9,
+    "content": "According to Isaiah 55:8-9 (in Easy already), what's the principle about THOUGHTS + ways of God vs man?",
+    "explanation": "Isaiah 55:8-9 — 'For my thoughts are not your thoughts, neither are your ways my ways, declares the LORD. As the heavens are higher than the earth, so are my ways higher than your ways and my thoughts than your thoughts'. Warning against JUDGING God's plan by human perspective (cf. Rom 11:33-36 same spirit).",
+    "language": "en",
+    "options": [
+      "My ways match God's (according to the text's framing) (as the text indicates)",
+      "'My THOUGHTS are NOT your thoughts, your WAYS are NOT my ways. As the HEAVENS are HIGHER than the EARTH, so are my WAYS higher than your ways, my THOUGHTS than your thoughts'",
+      "I don't need to know God (as described in the passage) (per the original content)",
+      "My ways are better (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "My ways higher",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 57,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Isaiah 57:15, where is God's THRONE + where else does he dwell?",
+    "explanation": "Isaiah 57:15 — 'For thus says the One who is high and lifted up, who inhabits eternity, whose name is Holy: I dwell in the high and holy place, and also with him who is of a contrite and lowly spirit, to revive the spirit of the lowly, and to revive the heart of the contrite'. God dwells 2 PLACES simultaneously: high HEAVEN + the HUMBLE HEART. Cf. Isaiah 66:1-2.",
+    "language": "en",
+    "options": [
+      "GOD's THRONE is in the HIGH + HOLY place; yet he also DWELLS with the CONTRITE + LOWLY in spirit, to REVIVE the spirit of the lowly + the heart of the contrite",
+      "Only in heaven (per the textual narrative) (in the story's sequence)",
+      "Only in the temple (according to the text's framing) (per the original content)",
+      "Only in good hearts (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Dwells with humble",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 59,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 2,
+    "content": "According to Isaiah 59:1-2, why does God SEEM TO NOT HEAR prayers?",
+    "explanation": "Isaiah 59:1-2 — 'Surely the arm of the LORD is not too short to save, nor his ear too dull to hear. But your iniquities have separated you from your God; your sins have hidden his face from you, so that he will not hear'. ANSWER to 'Why are prayers unanswered?' — the problem is on the HUMAN side, NOT God.",
+    "language": "en",
+    "options": [
+      "God doesn't care (as described in the passage) (as the text indicates)",
+      "God is too far (per the textual narrative) (in the story's sequence)",
+      "God lacks power (according to the text's framing) (per the original content)",
+      "The LORD's HAND is NOT TOO SHORT to save, his EAR not too dull to hear; but YOUR INIQUITIES have SEPARATED you from your God; your SINS have HIDDEN his face"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Sin hides God's face",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 61,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 2,
+    "content": "According to Isaiah 61:1-2 (in Hard already), where did Christ QUOTE this and STOP mid-verse — WHY?",
+    "explanation": "Luke 4:18-19 — Christ QUOTED Isaiah 61:1-2: 'The Spirit of the Lord is upon me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim liberty to the captives and recovering of sight to the blind, to set at liberty those who are oppressed, to proclaim the year of the Lord's favor'. NOTE: Isaiah 61:2 actually continues 'and the DAY of VENGEANCE of our God' — Christ STOPPED before this, since the 1st coming = the 'YEAR of GRACE' (salvation); the 2nd = DAY of VENGEANCE (judgment). A KEY theological distinction.",
+    "language": "en",
+    "options": [
+      "At the Temple; to ask a question (as described in the passage) (per the original content)",
+      "At Samaria; out of anger (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "Christ QUOTED at the NAZARETH SYNAGOGUE (Lk 4:18-19); STOPPED at 'YEAR of the Lord's favor' — did NOT read 'DAY of vengeance' because that's the SECOND COMING part. 1st coming = YEAR of GRACE; 2nd = DAY of VENGEANCE",
+      "At Jerusalem; forgot (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Christ stops mid-verse",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 64,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Isaiah 64:6, how is human RIGHTEOUSNESS described (vs God)?",
+    "explanation": "Isaiah 64:6 — 'All of us have become like one who is unclean, and all our righteous acts are like filthy rags; we all shrivel up like a leaf, and like the wind our sins sweep us away'. The KEY Calvinist + Protestant verse on 'TOTAL DEPRAVITY' — even man's good works are NOT PURE before God. The BASIS for 'salvation BY GRACE, NOT by works' (Eph 2:8-9).",
+    "language": "en",
+    "options": [
+      "Glorious + pure (per the textual narrative) (in the story's sequence)",
+      "'WE all have BECOME like ONE who is UNCLEAN, and all our RIGHTEOUS ACTS are like FILTHY RAGS; we all SHRIVEL up like a LEAF, and like the WIND our SINS sweep us away'",
+      "Better than all things (according to the text's framing) (per the original content)",
+      "Beautiful like the temple (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Righteous acts like filthy rags",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 65,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 25,
+    "content": "According to Isaiah 65:17-25, what are the characteristics of the NEW HEAVENS + NEW EARTH?",
+    "explanation": "Isaiah 65:17-25 — 'Behold, I create new heavens and a new earth, and the former things shall not be remembered or come into mind... No more shall be heard in it the sound of weeping and the cry of distress. No more shall there be in it an infant who lives but a few days, or an old man who does not fill out his days... The wolf and the lamb shall graze together; the lion shall eat straw like the ox. They shall not hurt or destroy in all my holy mountain'. The FOUNDATION for Rev 21-22.",
+    "language": "en",
+    "options": [
+      "NO MORE WEEPING + crying; NO MORE infant DEATHS; long LIVES; whoever builds a HOUSE will LIVE in it; whoever plants a vineyard will EAT its fruit; WOLF + lamb FEED TOGETHER; NO MORE evil on the holy mountain",
+      "Everyone is poor (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Only Israel dwells (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "Only David lives (according to the text's framing) (per the original content) (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "New heavens + new earth",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Isaiah 40:12, how is God's GREATNESS described — through what images?",
+    "explanation": "Isaiah 40:12 — 'Who has measured the waters in the hollow of his hand, or with the breadth of his hand marked off the heavens? Who has held the dust of the earth in a basket, or weighed the mountains on the scales and the hills in a balance?' Rhetorical questions point to the Lord alone. The BASIS for 4 comparisons (40:13-25): Who taught the Lord? Nations = a drop in a bucket; idols are nothing; stars are named; NONE compares to the Lord.",
+    "language": "en",
+    "options": [
+      "High mountains (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "Deep rivers (according to the text's framing) (per the original content) (per the textual narrative)",
+      "Who has MEASURED the waters in the HOLLOW of his HAND, or with the BREADTH of his hand MARKED off the heavens? Who has held the DUST of the earth in a BASKET, or weighed the MOUNTAINS on the SCALES?",
+      "Many stars (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Hand measuring sea",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Isaiah 40:22, where is God described as DWELLING?",
+    "explanation": "Isaiah 40:22 — 'He sits enthroned above the circle of the earth, and its people are like grasshoppers. He stretches out the heavens like a canopy, and spreads them out like a tent to live in'. 'Circle of the earth' (chug ha'arets) = one of the few OT verses indicating a ROUND earth; 'stretching the heavens like a curtain' = elegant cosmology. Image = the IMMENSE One above the universe.",
+    "language": "en",
+    "options": [
+      "'He sits enthroned ABOVE the CIRCLE of the EARTH, and its people are like grasshoppers. He STRETCHES out the HEAVENS like a CANOPY, and SPREADS them out like a TENT to live in'",
+      "In Solomon's temple (as described in the passage) (as the text indicates)",
+      "On Mount Sinai (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "In David's city (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Sits above the circle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 43,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Isaiah 43:2, what does the Lord promise his people in trials?",
+    "explanation": "Isaiah 43:2 — 'When you pass through the waters, I will be with you; and when you pass through the rivers, they will not sweep over you. When you walk through the fire, you will not be burned; the flames will not set you ablaze'. The famous PROMISE — does NOT promise to AVOID trials, but promises GOD's PRESENCE THROUGH trials. Water + fire imagery from the Exodus (through the Red Sea + pillar of fire).",
+    "language": "en",
+    "options": [
+      "No trials (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Always rich (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "Never sick (according to the text's framing) (per the original content) (per the textual narrative)",
+      "'When you PASS through the WATERS, I will BE with YOU; when you pass through RIVERS, they will not SWEEP over you. When you walk through FIRE, you will not be BURNED; the FLAMES will NOT set you ablaze'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Through water + fire",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 46,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 10,
+    "content": "According to Isaiah 46:9-10, what does God DECLARE that affirms his MAIN ATTRIBUTE?",
+    "explanation": "Isaiah 46:9-10 — 'Remember the former things, those of long ago; I am God, and there is no other; I am God, and there is none like me. I make known the end from the beginning, from ancient times, what is still to come. I say, My purpose will stand, and I will do all that I please'. The verse AFFIRMING DIVINE FOREKNOWLEDGE + ABSOLUTE SOVEREIGNTY.",
+    "language": "en",
+    "options": [
+      "'I am God, and there is NO OTHER; I am God, and there is NONE LIKE me. I MAKE KNOWN the END from the BEGINNING, from ANCIENT TIMES what is still to come... My PURPOSE will STAND, and I will do all that I PLEASE'",
+      "I need worship (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "I fear Satan (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "I am weaker than the universe (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "My purpose stands",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 48,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Isaiah 48:22 (echoed in 57:21), what verse repeats twice ending sections?",
+    "explanation": "Isaiah 48:22 + 57:21 — 'There is no peace, says the LORD, for the wicked'. The repeated verse ENDING two sections — 48:22 ends PART 40-48 (= 9 BABYLON chapters); 57:21 ends PART 49-57 (= 9 SERVANT chapters). Isaiah 40-66 structure divides into 3 parts × 9 chapters; each part ends with the no-peace declaration.",
+    "language": "en",
+    "options": [
+      "'Blessed are the righteous'",
+      "'There is NO PEACE for the WICKED' — says the Lord",
+      "'Blessed are the faithful'",
+      "'God is everywhere' (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "No peace for wicked",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 52,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Isaiah 52:7, what's the prophecy about the GOSPEL MESSENGER?",
+    "explanation": "Isaiah 52:7 — 'How beautiful on the mountains are the feet of those who bring good news, who proclaim peace, who bring good tidings, who proclaim salvation, who say to Zion, Your God reigns!' Paul QUOTES this in Rom 10:15 applied to gospel preachers. Background: a messenger RUNNING over the mountains with news of victory = the Gospel image.",
+    "language": "en",
+    "options": [
+      "'Glorious messenger' (according to the text's framing) (per the original content)",
+      "'Bold messenger' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "'How BEAUTIFUL on the MOUNTAINS are the FEET of those who BRING GOOD NEWS, who PROCLAIM PEACE, who BRING GOOD TIDINGS, who PROCLAIM SALVATION, who say to Zion: Your God REIGNS!'",
+      "'Messenger of justice' (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Beautiful feet",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Per Isaiah 7-9 context (with the Immanuel sign), how do the 3 prophetic 'NAMES' for the Messianic child escalate?",
+    "explanation": "Isaiah 7-9 structure: 3 successive prophetic children → 3 increasingly GLORIOUS names: (1) 7:14 Immanuel = announces the future Savior; (2) 8:1-3 Maher-Shalal-Hash-Baz = announces Samaria + Damascus' destruction; (3) 9:6 = the most glorious OT name for the Messiah. Escalation: near (Immanuel) → middle (judgment) → far (glorious Messiah).",
+    "language": "en",
+    "options": [
+      "Only 1 name (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "2 names: A + B (according to the text's framing) (per the original content) (per the textual narrative)",
+      "Immanuel (short) (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "IMMANUEL (God with us, 7:14) → MAHER-SHALAL-HASH-BAZ (swift to plunder, 8:1-3) → WONDERFUL COUNSELOR, MIGHTY GOD, EVERLASTING FATHER, PRINCE OF PEACE (9:6) — names ESCALATE in revealing Christ"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "3 escalating names",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 28,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Isaiah 28:16, what does God lay in Zion — quoted multiple times in the NT?",
+    "explanation": "Isaiah 28:16 — 'So this is what the Sovereign LORD says: See, I lay a stone in Zion, a tested stone, a precious cornerstone for a sure foundation; the one who relies on it will never be stricken with panic'. Paul QUOTES it twice in Rom 9:33 + 10:11; Peter in 1 Pet 2:6 — ALL applied to Christ = the FOUNDATION STONE of the church.",
+    "language": "en",
+    "options": [
+      "An altar (as described in the passage) (as the text indicates)",
+      "A STONE for a FOUNDATION, a TESTED stone, a precious CORNERSTONE, a SURE foundation; WHOEVER TRUSTS will not be DISMAYED",
+      "A sword (per the textual narrative) (in the story's sequence)",
+      "A crown (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Foundation stone in Zion",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 44,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Isaiah 44:28, what does God specifically PROPHESY king CYRUS will do for Jerusalem + temple?",
+    "explanation": "Isaiah 44:28 — 'Who says of Cyrus, He is my shepherd, and he shall fulfill all my purpose; saying of Jerusalem, She shall be built, and of the temple, Your foundation shall be laid'. Prophesied ~150 YEARS BEFORE it happened. Fulfillment: Cyrus issued the DECREE in 538 BC (Ezra 1:1-4) allowing the Jews to rebuild the temple.",
+    "language": "en",
+    "options": [
+      "Free only half the people (according to the text's framing) (per the original content)",
+      "Destroy the temple (per the textual narrative) (in the story's sequence)",
+      "Cyrus = MY SHEPHERD; he will FULFILL ALL my PURPOSE. He will SAY of Jerusalem: 'Let it be REBUILT'; and of the temple: 'Let its FOUNDATIONS be LAID'",
+      "Take Israel back to Babylon (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Cyrus to rebuild",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Isaiah 53:6 (in Easy already), what is the CENTRAL atonement formula of the Servant Song 53?",
+    "explanation": "Isaiah 53:6 — 'We all, like sheep, have gone astray, each of us has turned to our own way; and the LORD has laid on him the iniquity of us all'. The PERFECT SUBSTITUTION formula: 'We' (SIN) → 'Him' (BORE the SIN). 'Him' = the suffering Servant (= Christ). The MOST QUOTED verse from the Servant Songs.",
+    "language": "en",
+    "options": [
+      "We save ourselves (according to the text's framing)",
+      "We go different ways (as described in the passage)",
+      "We are good (per the textual narrative) (in the story's sequence)",
+      "'WE ALL like SHEEP have GONE ASTRAY, EACH to his own WAY; and the LORD has LAID on him the INIQUITY of US ALL'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Iniquity laid on him",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 58,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 14,
+    "content": "According to Isaiah 58:13-14, what's the promise to those who HONOR the Sabbath?",
+    "explanation": "Isaiah 58:13-14 — 'If you keep your feet from breaking the Sabbath and from doing as you please on my holy day, if you call the Sabbath a delight and the LORD's holy day honorable... then you will find your joy in the LORD, and I will cause you to ride in triumph on the heights of the land and to feast on the inheritance of your father Jacob'. Sabbath = a DELIGHT — not a burden.",
+    "language": "en",
+    "options": [
+      "You will DELIGHT in the Lord; he will make you RIDE on the HEIGHTS of the earth + feast on the inheritance of your father JACOB",
+      "Quick wealth (as described in the passage) (as the text indicates)",
+      "Long life (according to the text's framing) (per the original content)",
+      "Wisdom (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Sabbath delight",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 63,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 6,
+    "content": "According to Isaiah 63:1-6, who comes from Bozrah with RED garments, described as God's 'WINEPRESS'?",
+    "explanation": "Isaiah 63:1-3 — 'Who is this coming from Edom, from Bozrah, with his garments stained crimson? Who is this, robed in splendor, striding forward in the greatness of his strength? It is I, proclaiming victory, mighty to save. Why are your garments red, like those of one treading the winepress? I have trodden the winepress alone; from the nations no one was with me'. Rev 19:13, 15 APPLIES to Christ's Second Coming: 'clothed in a robe dipped in blood... He treads the winepress of the fury of God's wrath'.",
+    "language": "en",
+    "options": [
+      "An angel (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "David (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "ONE who comes CRUSHING the NATIONS in WRATH — TRAMPLING the WINEPRESS of God's wrath, garments STAINED with BLOOD (= Christ's Second Coming in Rev 19:13, 15)",
+      "Samuel (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Winepress trampler",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "TYPE 1 cross-ref Isaiah 7:14 — Where does the NT quote this applied to Christ? What's the 'almah' vs 'parthenos' translation issue?",
+    "explanation": "Mt 1:22-23 — 'All this took place to fulfill what the Lord had said through the prophet: The virgin will conceive and give birth to a son, and they will call him Immanuel'. TRANSLATION NOTE: Hebrew 'ALMAH' (Isa 7:14) = young woman (not specifically virgin); the LXX (Greek ~250 BC) translates as 'PARTHENOS' = specifically VIRGIN; Matthew quotes the LXX. Theological debate: but CONTEXT ('special sign') + LXX + Matthew agree on VIRGIN.",
+    "language": "en",
+    "options": [
+      "Mark 1:1 (young woman) (as described in the passage) (per the original content) (per the textual narrative)",
+      "MATTHEW 1:22-23 — quotes the LXX (Greek): 'parthenos' = VIRGIN precisely; the Hebrew 'almah' = young unmarried woman (usually implying virginity in context). Matthew affirms Mary = VIRGIN fulfilling Isa 7:14",
+      "Luke 1:1 (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (as described in the passage)",
+      "John 1:1 (according to the text's framing) (as the text indicates) (in the context of the passage) (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Matthew quotes Isa 7:14",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 1 cross-ref Isaiah 40:3 — The prophecy 'PREPARE the WAY for the LORD' is quoted in ALL 4 Gospels for whom?",
+    "explanation": "Isa 40:3 quoted in Mt 3:3, Mk 1:3, Lk 3:4, Jn 1:23 — ALL applied to John the Baptist. This is a RARE prophecy QUOTED in ALL 4 Gospels — pointing to historicity + importance. Why quoted: John = the VOICE crying in the wilderness (about his work at the Jordan) sets the stage for Christ. Mk 1:1-3 opens its Gospel with this verse.",
+    "language": "en",
+    "options": [
+      "Paul (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (in the story's sequence)",
+      "Jesus (according to the text's framing) (per the original content) (per the textual narrative) (as described in the passage)",
+      "Moses (as described in the passage) (as the text indicates) (in the context of the passage) (according to the text's framing)",
+      "JOHN the BAPTIST — Mt 3:3, Mk 1:3, Lk 3:4, Jn 1:23 — ALL apply this verse to John = the messenger PREPARING THE WAY for Christ. This is the ONLY PROPHECY about John quoted in all 4 Gospels — historical evidence"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "John = voice crying",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "TYPE 1 cross-ref — Isaiah 53 is QUOTED MANY TIMES in the NT. List the major quotes for Christ?",
+    "explanation": "Isaiah 53 = the OT passage MOST QUOTED in the NT for Christ. Major quotes: (1) Mt 8:17 quotes 53:4 applied to healing ministry; (2) Acts 8:32-35 — Ethiopian eunuch reads 53:7-8 'like a sheep led to slaughter'; Philip preaches the Gospel; (3) 1 Pet 2:21-25 densely cites 53:4-12 about substitution; (4) Lk 22:37 quotes 53:12 'numbered with transgressors'; (5) Rom 10:16 quotes 53:1; (6) Jn 12:38 quotes 53:1 about disbelief. NO OT PASSAGE is more applied to suffering Christ.",
+    "language": "en",
+    "options": [
+      "Mt 8:17 (53:4 'bore infirmities'), Acts 8:32-35 (Philip preaches Isa 53 to the Ethiopian eunuch), 1 Pet 2:24 (53:5 'wounds'), Lk 22:37 (53:12 'numbered with transgressors'), Rom 10:16 (53:1 'who has believed our message')",
+      "Only in Matthew (according to the text's framing) (per the original content) (per the textual narrative) (as described in the passage)",
+      "Only in John (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (in the story's sequence)",
+      "Only in Hebrews (as described in the passage) (as the text indicates) (in the context of the passage) (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Isaiah 53 in NT",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 45,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 1 cross-ref Isaiah 45:23 — 'every knee bow + every tongue confess' is quoted by Paul WHERE and applied to whom?",
+    "explanation": "Phil 2:10-11 — 'so that at the name of Jesus every knee should bow, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father'. Paul QUOTES Isa 45:22-23 — originally YHWH's self-claim — applied to CHRIST. This is one of the STRONGEST verses asserting Christ's DEITY in the NT.",
+    "language": "en",
+    "options": [
+      "Col 1; Father (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "1 Tim 3; Church (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "PHILIPPIANS 2:10-11 — 'at the NAME of JESUS every KNEE should bow, in heaven + on earth + under the earth, and every TONGUE confess that Jesus Christ is LORD' — applied to CHRIST",
+      "Heb 1; angels (according to the text's framing) (per the original content) (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Phil 2 application",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 11,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 1 cross-ref Isaiah 11:10 — the 'ROOT of JESSE' as a SIGN to Gentiles — Paul quotes WHERE?",
+    "explanation": "Rom 15:8-12 — Paul argues: 'Salvation is from the Jews... BUT also for Gentiles'. Cites 4 OT verses: (1) Ps 18:49; (2) Deut 32:43; (3) Ps 117:1; (4) ISAIAH 11:10 'The root of Jesse will spring up, one who will arise to rule over the nations; in him the Gentiles will hope'. Rev 22:16 also quotes 'I am the Root and Descendant of David'. Paul RIGOROUSLY proves the Gentile mission = the ORIGINAL plan, not Plan B.",
+    "language": "en",
+    "options": [
+      "Galatians 3 (as described in the passage) (as the text indicates) (in the context of the passage) (according to the text's framing)",
+      "1 Cor 15 (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Hebrews 7 (according to the text's framing) (per the original content) (per the textual narrative) (as described in the passage)",
+      "ROMANS 15:12 — Paul cites 4 OT verses justifying the Gentile mission; the 4th = Isa 11:10 'There shall come the root of Jesse, even he who arises to rule the Gentiles; in him will the Gentiles hope'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Root of Jesse = Gentiles",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 2 distinguish — Isaiah is divided into 2 DISTINCT PARTS. The KEY difference?",
+    "explanation": "Isaiah's structure: (1) PART 1 = chapters 1-39 (= 39 OT books); JUDGMENT theme; Assyrian threat context; main kings = Ahaz + Hezekiah; content: 6 'WOES' (5:8-30), the call vision (6), Immanuel (7-12), nations' judgments (13-23), little apocalypse (24-27), woes on Ephraim (28-33), Hezekiah + Sennacherib (36-39). (2) PART 2 = chapters 40-66 (= 27 NT books); COMFORT + REDEMPTION theme; Babylonian exile context; content: comfort (40-48), Servant (49-57), Zion's glory (58-66). The structure intentionally mirrors OT/NT.",
+    "language": "en",
+    "options": [
+      "Same content (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (as described in the passage)",
+      "Part 1 longer (according to the text's framing) (as the text indicates) (in the context of the passage) (according to the text's framing)",
+      "PART 1 (CH 1-39, '39 OT books') = JUDGMENT theme, Israel + Judah in the ASSYRIAN era (~700 BC); PART 2 (CH 40-66, '27 NT books') = COMFORT + REDEMPTION theme, Israel in the BABYLONIAN exile (~550 BC). 39+27 = MIRRORS the OT/NT structure",
+      "Same author different chapter (as described in the passage) (per the original content) (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "2 parts of Isaiah",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 42,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "TYPE 2 distinguish — The FOUR SERVANT SONGS of the LORD in Isaiah 40-66. List the 4 passages?",
+    "explanation": "FOUR SERVANT SONGS in Isaiah 42-53: (1) 42:1-4 — 'Behold my servant, whom I uphold; my chosen, in whom my soul delights' (Mt 12:18-21 quotes); (2) 49:1-6 — 'Listen to me, you islands!' (Acts 13:47 quotes for the Gentiles); (3) 50:4-9 — 'I offered my back to those who struck me' (foretelling Christ being struck); (4) 52:13-53:12 — 'Behold, my servant shall act wisely' — the LONGEST (15 verses), about SUFFERING + atonement (most quoted by NT). The 4 escalate in SUFFERING with the climax at 53.",
+    "language": "en",
+    "options": [
+      "Chapters 1, 2, 3, 4 (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "SONG 1: 42:1-4 ('uphold + give my Spirit'); SONG 2: 49:1-6 ('formed in the womb + light to Gentiles'); SONG 3: 50:4-9 ('back to those who beat me'); SONG 4: 52:13-53:12 (suffering + atonement — LONGEST + most CLASSIC)",
+      "Chapters 7, 8, 9, 10 (according to the text's framing) (per the original content) (per the textual narrative)",
+      "Chapters 60, 61, 62, 63 (as described in the passage) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "4 Servant Songs",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 36,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "TYPE 2 distinguish Isaiah 36-39 — KING HEZEKIAH faces TWO Assyrian crises. Difference between them?",
+    "explanation": "Isaiah 36-39 parallels 2 Kings 18-20 + 2 Chr 32. Two distinct crises: (1) AGAINST ASSYRIAN ARMY (36-37): Sennacherib sends the Rabshakeh to mock; Hezekiah prays in the temple; the angel of the LORD slays 185,000 Assyrians in one night; Sennacherib returns to Nineveh, killed by his sons. (2) DEATHLY ILLNESS (38-39): Hezekiah ill unto death → weeps in prayer → God grants 15 more years + sign = the sundial's shadow goes back 10 steps; Then Merodach-Baladan of Babylon's envoys come — Hezekiah shows ALL his treasures → Isaiah PROPHESIES Babylon will seize EVERYTHING + take Hezekiah's descendants (= fulfilled 100 years later).",
+    "language": "en",
+    "options": [
+      "Crisis 1 (36-37) = Sennacherib's ASSYRIAN ARMY threatens Jerusalem → Hezekiah prays → ANGEL slays 185,000 Assyrian troops (37:36); Crisis 2 (38) = Hezekiah is DEATHLY ILL → prays → granted 15 more years + 'shadow MOVES BACKWARD 10 STEPS'; (39) BABYLONIAN envoys come — Hezekiah shows the treasures = error",
+      "Both same event (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (in the story's sequence) (as the text indicates)",
+      "First win, second lose (as described in the passage) (per the original content) (per the textual narrative) (as described in the passage) (per the original content)",
+      "Nothing happens (according to the text's framing) (as the text indicates) (in the context of the passage) (according to the text's framing) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Hezekiah 2 crises",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 46,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 2,
+    "content": "TYPE 2 distinguish — Isaiah 46:1-2 + ch 47 contrast BABYLONIAN IDOLS (Bel + Nebo) vs the LORD?",
+    "explanation": "Isaiah 46-47 contrasts: (1) BEL + NEBO = the great Babylonian gods (Bel = Marduk, Nebo = the divine scribe). When Babylon falls, the idols of these gods must be CARRIED on beasts of burden = a 'load' (46:1-2). (2) OPPOSITE the LORD 46:3-4: 'Even to your old age and gray hairs I am he, I am he who will sustain you. I have made you and I will carry you' = God CARRIES his people, not the other way around. (3) Isaiah 47 is a SONG about Babylon's fall — 'queen of nations', reduced to slavery. Contrast: DEAD idols vs the LIVING God.",
+    "language": "en",
+    "options": [
+      "Both are equal (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (as described in the passage)",
+      "Only Bel is stronger (according to the text's framing) (per the original content) (per the textual narrative) (in the story's sequence)",
+      "Different forms only (as described in the passage) (as the text indicates) (in the context of the passage) (according to the text's framing)",
+      "BEL + NEBO = BABYLONIAN gods: must be CARRIED on BEASTS of burden; need RESCUE but cannot SAVE THEMSELVES. OPPOSITE the LORD: he CARRIES his people 'from your mother's womb' (46:3-4); RESCUES + SAVES. Ch 47 adds: 'Babylon the BROKEN daughter' is judged"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Bel/Nebo vs YHWH",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "TYPE 2 distinguish — Isaiah 53 APPLIES to whom? Historically 4 views — the CORRECT answer?",
+    "explanation": "Four historical views of the 'Suffering Servant' of Isaiah 53: (1) ISRAEL = Servant — modern JEWISH reading from medieval times. But DIFFICULT since the 'servant' suffers FOR the people (53:6 'iniquity of US ALL'); (2) AN ANONYMOUS PROPHET in the exile — modern critical view; (3) CYRUS — NO; (4) CHRIST = the NT consensus. Evidence: Mt 8:17, Lk 22:37, Acts 8:32-35 (Philip preaches to the eunuch), 1 Pet 2:24, Rom 10:16, Jn 12:38 — ALL apply to Christ. KEY: ch 53 = the OT passage MOST QUOTED for the suffering Christ.",
+    "language": "en",
+    "options": [
+      "Christ — the entire NT (Mt 8:17, Acts 8:32-35, 1 Pet 2:24, etc) applies it to Christ; Christ HIMSELF quoted it for himself in Lk 22:37; Philip preaches it to the Ethiopian eunuch (Acts 8) = the Gospel of Christ",
+      "Israel as the Servant (modern Jewish reading) (in the story's sequence) (per the original content) (per the textual narrative)",
+      "An anonymous prophet of the exile (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "Cyrus the Great (per the textual narrative) (as described in the passage) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Who = Servant of Isa 53?",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 6,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "TYPE 3 deep — Isaiah 6:3 'Holy, holy, holy' (TRISHAGION) is unique in the OT how? What's the meaning of 3-fold repetition?",
+    "explanation": "Isaiah 6:3 'Holy, holy, holy is the LORD of hosts!' (Hebrew: qadosh, qadosh, qadosh) = TRISHAGION (Greek: 'thrice-holy'). Hebrew feature: NO comparative/superlative → REPETITION elevates. 1 repeat = holy; 2 = very holy; 3 = ABSOLUTELY HOLY (super-superlative). This is the ONLY OT instance where a divine attribute is tripled. Rev 4:8 echoes this — the 4 living creatures also cry 'Holy 3x'. SOURCE of inspiration for the 'Sanctus' in church liturgy. Some theologians see a hint at the TRINITY but this is secondary.",
+    "language": "en",
+    "options": [
+      "3-fold is Hebrew custom (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "TRISHAGION = the ONLY 3-fold repetition in the OT raises to 'ABSOLUTELY HOLY'. Hebrew has NO comparative/superlative; 1 repeat = holy; 2 = very holy; 3 = ABSOLUTELY HOLY (most holy possible). Also quoted in Rev 4:8",
+      "Symbolizes 3 persons (according to the text's framing) (per the original content) (per the textual narrative)",
+      "Coincidence (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Unique Trishagion",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 3 deep — 'BRANCH' (netzer) in Isa 11:1 + 'BRANCH' (tsemach) in Isa 4:2, Jer 23:5, Zec 3:8 = how do they tie to Christ's title 'NAZARENE'?",
+    "explanation": "Mt 2:23 — 'He went and lived in a town called Nazareth. So was fulfilled what was said through the prophets: He will be called a Nazarene'. Issue: NO OT verse says 'Nazarene'. Matthew uses 'PROPHETS' (plural) — implying COMPOSITE quotation. Common explanation: the place name 'Natzeret' DERIVES from Hebrew 'netzer' (= branch). Isa 11:1 'a SHOOT will spring up from the stump of Jesse' — netzer of Jesse's stump = Messiah. Jer 23:5 + Zec 3:8, 6:12 use 'TSEMACH' (Branch) similarly. So 'Man of Nazareth' = wordplay = 'Man of the BRANCH' = MESSIAH. CLEVERNESS of Matthew: 1 word alluding to MULTIPLE prophecies.",
+    "language": "en",
+    "options": [
+      "Coincidental name (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (as described in the passage) (cross-referenced with related passages)",
+      "Only Matthew quotes loosely (as described in the passage) (per the original content) (per the textual narrative) (in the story's sequence) (as the text indicates) (in the context of the passage)",
+      "Small detail only (according to the text's framing) (as the text indicates) (in the context of the passage) (according to the text's framing) (per the original content) (per the textual narrative)",
+      "Mt 2:23 — 'He shall be called a NAZARENE' = Matthew did NOT quote a specific verse (because 'Nazareth' is NOT in the OT); instead COMBINES multiple 'Branch' prophecies (netzer/tsemach) — the place name 'Nazareth' (Hebrew Natzeret) DERIVES from 'netzer'; therefore 'Man of Nazareth' = 'Man of the BRANCH' = the MESSIAH per Isa 11:1, Jer 23:5, Zec 3:8, 6:12"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Nazarene = Netzer",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 3 deep — Why do many modern scholars call Isaiah 40-66 'DEUTERO-ISAIAH' / 'TRITO-ISAIAH'? The CONSERVATIVE Protestant view?",
+    "explanation": "Scholarly debate: (1) MODERN VIEW (since Duhm 1892): Isaiah divided into 3 — Proto-Isaiah (1-39, 8th BC), Deutero-Isaiah (40-55, ~550 BC, Babylonian exile), Trito-Isaiah (56-66, post-return). Reason: part 2 mentions Babylon + Cyrus by SPECIFIC NAME; different style. Premise: humans CANNOT know specific futures → must be multiple authors at different times. (2) TRADITIONAL PROTESTANT VIEW: Isaiah 1 wrote ALL ~8th BC; God knows the future + reveals it through the prophet; Mt 12:17-18 quotes Isa 42 + Acts 8:32-35 quotes Isa 53 — the NT calls the AUTHOR 'Isaiah' (not multiple). Christ + the early church accepted 1 author. NO ancient evidence for multiple authors; the Deutero theory is SPECULATION based on philosophical presupposition (anti-supernatural).",
+    "language": "en",
+    "options": [
+      "Isaiah had 3 sons (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (as described in the passage) (per the original content) (per the textual narrative) (in the story's sequence)",
+      "3 different chapters (according to the text's framing) (as the text indicates) (in the context of the passage) (according to the text's framing) (cross-referenced with related passages) (according to the text's framing)",
+      "MODERN SCHOLARLY VIEW: because PART 2 (40-66) mentions Babylon + Cyrus BY NAME — for them prophecy CANNOT know the future → claims a 'second' Isaiah (550 BC) wrote this part AFTER Babylon fell. TRADITIONAL PROTESTANT VIEW: Isaiah 1 (8th century BC) wrote ALL; prophecy NATURALLY knows the future because GOD KNOWS BEFORE; both Christ + the NT (Mt 12:17-18 quoting Isa 42, Acts 8:32-35 quoting Isa 53) call the AUTHOR 'ISAIAH'",
+      "Minor stylistic differences (as described in the passage) (per the original content) (per the textual narrative) (in the story's sequence) (as the text indicates) (in the context of the passage) (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Deutero-Isaiah debate",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "TYPE 3 deep — Servant Song 4 (Isa 52:13-53:12) has what SPECIAL POETIC structure?",
+    "explanation": "Isaiah 52:13-53:12 structure: 5 strophes × 3 verses = 15 verses. CHIASTIC structure (symmetrical): - A (52:13-15) God's voice: 'Behold, MY servant' — Servant exalted; - B (53:1-3) Community's voice 'WE' did not believe; describes Servant's suffering; - C CENTER (53:4-6) Community recognizes SUBSTITUTION — 'He bore in our place'; - B' (53:7-9) More on suffering + burial; - A' (53:10-12) God's voice: 'My servant will see his offspring'. The CENTRAL pillar = 53:4-6 'he bore in our place' = the MAIN message. Symmetrical structure = the most refined Hebrew poetic technique. This is one of the OT's most highly-crafted poems.",
+    "language": "en",
+    "options": [
+      "FIVE STROPHES x 3 verses = 15 verses; opening (52:13-15) + closing (53:11b-12) = God's voice ('MY Servant'); 3 middle strophes (53:1-3, 4-6, 7-9, 10-11a) = COMMUNITY's voice ('WE'); CHIASM = pattern A-B-C-B'-A' with the central verse being SUBSTITUTION (53:4-6)",
+      "Simple 1-strophe structure (according to the text's framing) (per the original content) (per the textual narrative) (in the story's sequence)",
+      "Dialogue between 2 figures (as described in the passage) (as the text indicates) (in the context of the passage) (as described in the passage)",
+      "Free verse (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Chiastic structure Isa 53",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 11,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 3 deep — How does Isaiah 11:6-9 REVERSE Genesis 3's curse POINT-BY-POINT?",
+    "explanation": "Isaiah 11:6-9 vs Genesis 3 — point-by-point reversal: (1) Gen 3:14-15 SERPENT cursed, 'enmity' between snake + woman's offspring → Isa 11:8 a child plays at the COBRA's DEN unharmed; (2) Gen 3:17-18 ground sprouts THORNS + thistles → Isa 11:6-7 WOLF + lamb together, lion eats STRAW like ox = NO MORE carnivory; (3) Gen 3:23-24 MAN expelled from the garden → Isa 11:9 'NONE shall HURT or DESTROY in all my HOLY MOUNTAIN' (= the garden restored); (4) Gen 3 = SIN entering the world → Isa 11:9 'the EARTH shall be FILLED with the KNOWLEDGE of the LORD as the WATERS COVER the SEA' (= COMPLETE redemption). This = the foundation for Rev 21-22 'no more curse'.",
+    "language": "en",
+    "options": [
+      "Both describe good (according to the text's framing) (per the original content) (per the textual narrative) (in the story's sequence) (as the text indicates) (in the context of the passage)",
+      "Unrelated (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (according to the text's framing) (cross-referenced with related passages)",
+      "GEN 3 = the curse: animals + ground cursed, conflict between species; man EXPELLED from the garden. Isaiah 11 = REVERSAL: wolves eat straw like ox (NO MORE meat), children play with snakes (snake NO LONGER threatens), NONE harm on the holy mountain (conflict resolved); 'the EARTH shall be FILLED with the KNOWLEDGE of the LORD as WATERS COVER the SEA'",
+      "Completely different (as described in the passage) (as the text indicates) (in the context of the passage) (as described in the passage) (per the original content) (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Reverses Gen 3",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 65,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 3 deep — Isaiah 65:17 'NEW HEAVENS + NEW EARTH' compared to Rev 21:1 — what reverses Gen 1?",
+    "explanation": "Isaiah 65:17 + 66:22 (OT) → Rev 21:1 (NT) parallel: 'NEW HEAVENS + NEW EARTH'. Revelation EXPANDS: (1) 'the SEA also WAS NO MORE' — Gen 1:2 the Spirit hovered over the 'WATERS' (ancient chaos) → Rev 21:1 NO MORE sea = chaos is ELIMINATED; (2) 'NO need of SUN / MOON' (Rev 21:23) — reversing Gen 1:14-19 sun/moon/stars = old cosmic light; (3) 'NO MORE NIGHT' (Rev 21:25) — reversing Gen 1:5 'called the darkness night'; (4) 'NO MORE DEATH' (Rev 21:4) = reversing Gen 3 entry of death. PERFECT RE-CREATION — Isaiah's first sketch; Revelation's final completion.",
+    "language": "en",
+    "options": [
+      "Together / unrelated (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (in the story's sequence) (as the text indicates) (in the context of the passage)",
+      "Completely different (according to the text's framing) (as the text indicates) (in the context of the passage) (according to the text's framing) (cross-referenced with related passages)",
+      "Only Rev mentions new heaven (as described in the passage) (per the original content) (per the textual narrative) (as described in the passage) (per the original content) (per the textual narrative)",
+      "Isaiah 65:17 + 66:22 = the FIRST OT mention of 'I will CREATE NEW HEAVENS AND NEW EARTH'. Rev 21:1 ECHOES + adds 'the SEA also WAS NO MORE' (reversing Gen 1:2 'God's Spirit hovered over the WATERS' = old creation chaos). Also reverses 'DARKNESS over the deep' Gen 1:2 → Rev 21:23 'NO need for SUN, for the GLORY of GOD'. NEW creation = PERFECT, no CHAOS"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "Perfect new creation",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 4 verse precision Isaiah 1:18 — exact verse?",
+    "explanation": "Isaiah 1:18 (ESV) — 'Come now, let us reason together, says the LORD: though your sins are like scarlet, they shall be as white as snow; though they are red like crimson, they shall become like wool'. The famous FORGIVENESS verse — 'reason' = legal dialogue → God INVITES the people to REASON WITH HIM. Scarlet + crimson = the colors of BLOOD + the gravest sin; snow + wool = PURE WHITE.",
+    "language": "en",
+    "options": [
+      "'Your sin will be white as honey' (as described in the passage) (per the original content)",
+      "'God will forgive you' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "'COME NOW, let us REASON TOGETHER, says the LORD. Though your SINS are like SCARLET, they shall be as WHITE as SNOW; though they are RED like CRIMSON, they shall become like WOOL'",
+      "'All shall be blessed' (according to the text's framing) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "1:18 full",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 4 verse precision Isaiah 40:31 — exact verse?",
+    "explanation": "Isaiah 40:31 (ESV) — 'But they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint'. The famous PROMISE — only on condition of 'HOPE/WAIT' (qavah). 3 levels: SOAR (eagles) > RUN > WALK — counterintuitive (walking is hardest to sustain). Lesson: lifelong service to the Lord = the most exhausting walk, but renewed strength.",
+    "language": "en",
+    "options": [
+      "'The righteous will conquer' (as described in the passage) (per the original content)",
+      "'God gives strength' (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "'Be strong' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "'But those who HOPE in the LORD will RENEW their STRENGTH; they will SOAR on WINGS like EAGLES; they will RUN and not GROW WEARY, they will WALK and not be FAINT'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "40:31 full",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "TYPE 4 verse precision Isaiah 53:5 — exact verse?",
+    "explanation": "Isaiah 53:5 (ESV) — 'But he was pierced for our transgressions; he was crushed for our iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed'. PERFECT SUBSTITUTION FORMULA: 4 parallel clauses: (1) PIERCED (transgressions); (2) CRUSHED (iniquities); (3) PEACE (punishment); (4) HEALED (wounds). 1 Pet 2:24 quotes COMBINED with 53:11 applied to Christ.",
+    "language": "en",
+    "options": [
+      "'BUT HE was PIERCED for OUR transgressions, he was CRUSHED for OUR iniquities; the PUNISHMENT that brought us PEACE was upon HIM, and by his WOUNDS we are HEALED'",
+      "'He loves us' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "'He suffered alone' (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "'God blessed him' (according to the text's framing) (per the original content) (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "53:5 full",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 55,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "TYPE 4 verse precision Isaiah 55:6-7 — exact verse?",
+    "explanation": "Isaiah 55:6-7 (ESV) — 'Seek the LORD while he may be found; call upon him while he is near; let the wicked forsake his way, and the unrighteous man his thoughts; let him return to the LORD, that he may have compassion on him, and to our God, for he will abundantly pardon'. WARNING + INVITATION: time is limited — seek the Lord NOW; repentance = TURN + forsake evil thoughts. 'ABUNDANTLY pardon' = multiplied / extravagant grace.",
+    "language": "en",
+    "options": [
+      "'Go seek God' (as described in the passage) (as the text indicates) (in the context of the passage) (according to the text's framing)",
+      "'SEEK the LORD while he MAY BE FOUND; CALL on him while he is NEAR. Let the WICKED forsake his way, the UNRIGHTEOUS man his thoughts; let him RETURN to the LORD, that he may have COMPASSION, and to our God, for he will ABUNDANTLY PARDON'",
+      "'Run away' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (in the story's sequence)",
+      "'Stand firm' (according to the text's framing) (per the original content) (per the textual narrative) (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "55:6-7 full",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 43,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 4 verse precision Isaiah 43:1 — exact verse?",
+    "explanation": "Isaiah 43:1 (ESV) — 'But now thus says the LORD, he who created you, O Jacob, he who formed you, O Israel: Fear not, for I have redeemed you; I have called you by name, you are mine'. The most MEMORIZED comfort verse: (1) FEAR NOT (facing crisis); (2) I HAVE REDEEMED YOU (salvation already complete); (3) I CALLED YOU BY NAME (personal, known); (4) YOU ARE MINE (eternal security).",
+    "language": "en",
+    "options": [
+      "'God loves Israel' (according to the text's framing)",
+      "'Keep the Law' (per the textual narrative)",
+      "'FEAR NOT, for I HAVE REDEEMED you. I have CALLED you BY NAME; YOU ARE MINE'",
+      "'Come close to me' (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "43:1 full",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 26,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 4 verse precision Isaiah 26:3 — exact verse?",
+    "explanation": "Isaiah 26:3 (ESV) — 'You keep him in perfect peace whose mind is stayed on you, because he trusts in you'. Hebrew 'shalom shalom' = repeated = 'PEACE PEACE' = PERFECT peace. Condition: 'MIND STAYED' (yetzer samuk) = 'STEADFAST MIND' that trusts. KEY verse for meditation + prayer in modern times — the way to escape stress = FOCUS the MIND on God.",
+    "language": "en",
+    "options": [
+      "'Blessed is the man' (as described in the passage)",
+      "'God blesses' (according to the text's framing)",
+      "'Be patient' (per the textual narrative) (in the story's sequence)",
+      "'YOU keep him in PERFECT PEACE whose MIND is STAYED on YOU, because he TRUSTS in YOU'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Isaiah",
+      "Major Prophet",
+      "26:3 full",
+      "Advanced"
+    ]
   }
 ]
