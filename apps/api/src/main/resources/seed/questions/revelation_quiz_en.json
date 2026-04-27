@@ -537,5 +537,2129 @@
       "Apocalyptic",
       "Basic"
     ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Revelation 1:3, who is BLESSED according to the book's opening?",
+    "explanation": "Revelation 1:3 — 'Blessed is the one who reads aloud the words of this prophecy, and blessed are those who hear, and who keep what is written in it, for the time is near'. This is the FIRST of the 7 blessings in Revelation (1:3, 14:13, 16:15, 19:9, 20:6, 22:7, 22:14).",
+    "language": "en",
+    "options": [
+      "The writer of Revelation (John)",
+      "Those in Jerusalem (per the textual narrative)",
+      "Those who READ, HEAR, and KEEP the words of this prophecy",
+      "Those who do miracles"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "First blessing",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Revelation 1:9, on which island did the apostle John receive his vision?",
+    "explanation": "Revelation 1:9 — 'I, John, your brother and partner in the tribulation and the kingdom and the patient endurance that are in Jesus, was on the island called Patmos on account of the word of God and the testimony of Jesus'. Patmos = a small island in the Aegean Sea, where Rome exiled prisoners.",
+    "language": "en",
+    "options": [
+      "Cyprus (as described in the passage)",
+      "Crete (per the textual narrative)",
+      "Malta (according to the text's framing)",
+      "PATMOS — on account of the word of God and testimony of Jesus"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Island of Patmos",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Revelation 1:10, on what day was John in the Spirit?",
+    "explanation": "Revelation 1:10 — 'I was in the Spirit on the Lord's day, and I heard behind me a loud voice like a trumpet'. 'Lord's Day' (kyriakē hēmera) = EARLIEST NT mention of Sunday as the Christian day of worship.",
+    "language": "en",
+    "options": [
+      "The Sabbath",
+      "The LORD'S DAY — Sunday",
+      "Passover",
+      "Pentecost"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Lord's Day",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Revelation 1:11, what was John told to write, and to HOW MANY churches?",
+    "explanation": "Revelation 1:11 — 'Write what you see in a book and send it to the seven churches, to Ephesus and to Smyrna and to Pergamum and to Thyatira and to Sardis and to Philadelphia and to Laodicea'. 7 historic churches arranged in a postal-route circle.",
+    "language": "en",
+    "options": [
+      "3 churches in Asia Minor (according to the text's framing)",
+      "12 churches across the empire (as described in the passage)",
+      "SEVEN churches in Asia: Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, Laodicea",
+      "70 churches (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "7 churches",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 16,
+    "content": "According to Revelation 1:13-16, what did John see — the Son of Man among 7 lampstands?",
+    "explanation": "Revelation 1:13-16 — 'The hairs of his head were white, like white wool, like snow. His eyes were like a flame of fire, his feet were like burnished bronze, his voice was like the roar of many waters. In his right hand he held seven stars, from his mouth came a sharp two-edged sword, and his face was like the sun shining in full strength'. Imagery condensed from OT (Daniel 7 + 10).",
+    "language": "en",
+    "options": [
+      "WHITE HAIR like wool + snow, eyes like a FLAME of fire, feet like BRONZE, mouth with a SHARP TWO-EDGED SWORD, face like the sun",
+      "Wearing armor and a crown of thorns (as described in the passage)",
+      "Small and humble in appearance (according to the text's framing)",
+      "Dressed in commoner's clothes (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Son of Man description",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 11,
+    "content": "According to Revelation 2:8-11, why did the Lord PRAISE the Smyrna church?",
+    "explanation": "Revelation 2:9-10 — 'I know your tribulation and your poverty (but you are rich)... Do not fear what you are about to suffer. Behold, the devil is about to throw some of you into prison, that you may be tested, and for ten days you will have tribulation. Be faithful unto death, and I will give you the crown of life'. Smyrna (with Philadelphia) = the 2 churches with NO REBUKE, only praise.",
+    "language": "en",
+    "options": [
+      "For elders' faith and wisdom (as described in the passage)",
+      "For many miracles (per the textual narrative)",
+      "For building a great temple (according to the text's framing)",
+      "For their TRIBULATION, POVERTY (yet rich in Christ), and being about to face TEN DAYS in prison; the Lord promises the CROWN of life"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Smyrna faithful",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 17,
+    "content": "According to Revelation 2:17, what did the Lord promise the overcomer at Pergamum?",
+    "explanation": "Revelation 2:17 — 'To the one who conquers I will give some of the hidden manna, and I will give him a white stone, with a new name written on the stone that no one knows except the one who receives it'. White stones in ancient Rome = acquittal tokens or admission tickets to feasts; new name = new identity in Christ.",
+    "language": "en",
+    "options": [
+      "A golden sword (according to the text's framing)",
+      "Hidden MANNA and a WHITE STONE with a NEW NAME written on it (known only to the one who receives it)",
+      "A golden crown (as described in the passage)",
+      "A purple robe (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "White stone new name",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 6,
+    "content": "According to Revelation 3:1-6, what did the Lord say about the Sardis church's condition?",
+    "explanation": "Revelation 3:1-2 — 'I know your works. You have the reputation of being alive, but you are dead. Wake up, and strengthen what remains and is about to die'. Sardis = a once-famously-rich city in decline. Sardis + Laodicea = the 2 churches with NO PRAISE, only rebuke.",
+    "language": "en",
+    "options": [
+      "'You love the truth' (per the textual narrative)",
+      "'You are truly rich in the Lord' (as described in the passage)",
+      "'You have a name of being ALIVE, but you are DEAD' — only a few in Sardis have not soiled their garments",
+      "'You are pure as gold' (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Sardis alive but dead",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "According to Revelation 3:7-13, the Lord said to Philadelphia: 'I have set before you a DOOR' — what kind of door?",
+    "explanation": "Revelation 3:7-8 — 'The words of the holy one, the true one, who has the key of David, who opens and no one will shut, who shuts and no one opens: I know your works. Behold, I have set before you an open door, which no one is able to shut. I know that you have but little power, and yet you have kept my word and have not denied my name'. Philadelphia = 1 of 2 churches with ONLY PRAISE.",
+    "language": "en",
+    "options": [
+      "A closed door needing breakthrough (as described in the passage)",
+      "A narrow hard-to-enter door (according to the text's framing)",
+      "A door for outsiders (per the textual narrative)",
+      "An OPEN DOOR which no one can shut — because the church has LITTLE POWER but has KEPT his word and not DENIED his name"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Philadelphia open door",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 22,
+    "content": "According to Revelation 3:14-22, why did the Lord rebuke the Laodicean church?",
+    "explanation": "Revelation 3:15-17 — 'I know your works: you are neither cold nor hot. Would that you were either cold or hot! So, because you are lukewarm, and neither hot nor cold, I will spit you out of my mouth. For you say, I am rich, I have prospered, and I need nothing, not realizing that you are wretched, pitiable, poor, blind, and naked'. Laodicea = a banking + medical + textile city; the Lord urged them to buy GOLD + WHITE GARMENTS + EYE SALVE (the opposite of what the city prided itself on).",
+    "language": "en",
+    "options": [
+      "For being LUKEWARM — neither hot nor cold; the Lord will SPIT them out. Laodicea claimed to be rich but was actually WRETCHED, PITIABLE, POOR, BLIND, and NAKED",
+      "For having many false teachers (as described in the passage)",
+      "For idolatry (per the textual narrative) (in the story's sequence)",
+      "For skipping meetings (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Laodicea lukewarm",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "According to Revelation 4:6-8, what did the FOUR living creatures around the throne look like?",
+    "explanation": "Revelation 4:6-8 — 'The first living creature like a lion, the second living creature like an ox, the third living creature with the face of a man, and the fourth living creature like an eagle in flight. And the four living creatures, each of them with six wings, are full of eyes all around and within'. Parallel to Ezekiel 1; traditional symbols of the 4 Gospels: Mark (lion), Luke (ox), Matthew (man), John (eagle).",
+    "language": "en",
+    "options": [
+      "All had angel wings (per the textual narrative)",
+      "A bird, a fish, a beast, and a man (as described in the passage)",
+      "Creature 1 = LION, creature 2 = OX, creature 3 = a face like a MAN, creature 4 = an EAGLE in flight — each with 6 wings, full of eyes",
+      "Four oxen with horns (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "4 living creatures",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 7,
+    "content": "According to Revelation 5:1-7, who was the ONLY ONE WORTHY to open the scroll sealed with 7 seals?",
+    "explanation": "Revelation 5:5-7 — 'And one of the elders said to me, Weep no more; behold, the Lion of the tribe of Judah, the Root of David, has conquered, so that he can open the scroll and its seven seals. And I saw, in the midst of the throne, a Lamb standing, as though it had been slain'. The Lion of Judah = the slain Lamb = Christ.",
+    "language": "en",
+    "options": [
+      "A great angel (according to the text's framing)",
+      "The LAMB standing as though slain in the midst of the throne — having 7 horns + 7 eyes",
+      "Abraham (per the textual narrative)",
+      "The 24 elders (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Lamb worthy",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Revelation 7:4, HOW MANY were sealed from the tribes of Israel?",
+    "explanation": "Revelation 7:4 — 'And I heard the number of the sealed, 144,000, sealed from every tribe of the sons of Israel'. 7:5-8 lists: 12,000 per tribe × 12 tribes = 144,000 (Judah, Reuben, Gad, Asher, Naphtali, Manasseh, Simeon, Levi, Issachar, Zebulun, Joseph, Benjamin — DAN omitted, Joseph substituted).",
+    "language": "en",
+    "options": [
+      "12,000 people (per the textual narrative)",
+      "70,000 people (according to the text's framing)",
+      "1,000,000 people (as described in the passage)",
+      "144,000 — 12,000 from EACH of the 12 tribes of Israel"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "144,000 sealed",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 5,
+    "content": "According to Revelation 12:1-5, the great sign in heaven was a WOMAN — described how?",
+    "explanation": "Revelation 12:1-2 — 'A great sign appeared in heaven: a woman clothed with the sun, with the moon under her feet, and on her head a crown of twelve stars'. Imagery = Israel or Zion (Gen 37:9-11 Joseph's dream); the son = Christ (12:5 'will rule the nations with a rod of iron').",
+    "language": "en",
+    "options": [
+      "CLOTHED with the SUN, with the MOON under her feet, on her head a CROWN of 12 STARS; about to give birth to a SON who will rule the nations with an 'iron rod'",
+      "Wearing simple white (according to the text's framing)",
+      "Dressed in gold-woven cloth (as described in the passage)",
+      "Wearing velvet (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Woman clothed sun",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 17,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Revelation 17:5, what SECRET NAME was written on the forehead of the woman riding the scarlet beast?",
+    "explanation": "Revelation 17:3-5 — 'And I saw a woman sitting on a scarlet beast... And on her forehead was written a name of mystery: BABYLON THE GREAT, MOTHER OF PROSTITUTES AND OF EARTH'S ABOMINATIONS'. Babylon the great = represents the empire + world system hostile to God (= Rome of John's day, according to many interpretations).",
+    "language": "en",
+    "options": [
+      "'Zion of David' (per the textual narrative)",
+      "'Faithful Israel' (as described in the passage)",
+      "'BABYLON THE GREAT, MOTHER of PROSTITUTES and of EARTH'S ABOMINATIONS'",
+      "'Wife of Satan' (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Babylon the Great",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 9,
+    "content": "According to Revelation 19:7-9, what great event was announced in heaven?",
+    "explanation": "Revelation 19:7-9 — 'Let us rejoice and exult and give him the glory, for the marriage of the Lamb has come, and his Bride has made herself ready... And the angel said to me, Write this: Blessed are those who are invited to the marriage supper of the Lamb. And he said to me, These are the true words of God'. This = the 4th of Revelation's 7 blessings.",
+    "language": "en",
+    "options": [
+      "Satan's defeat (per the textual narrative) (in the story's sequence)",
+      "The MARRIAGE SUPPER of the LAMB — the Bride has made herself ready (= the Church); 'Blessed are those who are invited to the marriage supper of the Lamb'",
+      "The resurrection of the saints (as described in the passage)",
+      "The burning of the earth (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Marriage supper of Lamb",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Revelation 22:20, what are Jesus' FINAL words in the book (and the whole Bible)? The reply?",
+    "explanation": "Revelation 22:20 — 'He who testifies to these things says, Surely I am coming soon. Amen. Come, Lord Jesus! The grace of the Lord Jesus be with all. Amen'. The NT's final words = 'Maranatha' (1 Cor 16:22 'Our Lord, come') — ending with a prayer for the Second Coming.",
+    "language": "en",
+    "options": [
+      "'Keep the Law' / 'Amen'",
+      "'Love each other' / 'Yes'",
+      "'I am the Self-Existent' / 'Amen'",
+      "'SURELY I AM COMING SOON' — reply: 'AMEN, come, Lord Jesus!'"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "I am coming soon",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Revelation 19:16, what NAME is written on the ROBE + on the THIGH of the Rider on the WHITE HORSE?",
+    "explanation": "Revelation 19:16 — 'On his robe and on his thigh he has a name written, KING OF KINGS AND LORD OF LORDS'. 'King of kings + Lord of lords' = Christ's distinctive TITLE (also 1 Tim 6:15, Rev 17:14, 19:16). The HIGHEST RANK = absolute supreme authority — no king or lord NOT under Him.",
+    "language": "en",
+    "options": [
+      "'God the Father'",
+      "'Immanuel' (per the textual narrative)",
+      "'KING OF KINGS + LORD OF LORDS'",
+      "'Lion of Judah'"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "King of kings",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Revelation 1:20, how does Christ EXPLAIN the MYSTERY of the 7 stars + 7 golden lampstands?",
+    "explanation": "Revelation 1:20 — 'As for the mystery of the seven stars that you saw in my right hand, and the seven golden lampstands, the seven stars are the angels of the seven churches, and the seven lampstands are the seven churches'. This is one of the few decoding KEYS Christ provides — most of the rest of the book has no direct interpretation.",
+    "language": "en",
+    "options": [
+      "7 stars = 7 angels of Satan; 7 lampstands = 7 schemes",
+      "7 stars = astronomical stars; 7 lampstands = true light",
+      "7 STARS = ANGELS (or messengers) of the 7 churches; 7 LAMPSTANDS = the 7 CHURCHES",
+      "7 stars = 7 planets; 7 lampstands = 7 creation days"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "7 stars + 7 lampstands",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 7,
+    "content": "According to Revelation 2:1-7, what was Ephesus PRAISED for, and rebuked for?",
+    "explanation": "Revelation 2:2-4 — 'I know your works, your toil and your patient endurance, and how you cannot bear with those who are evil, but have tested those who call themselves apostles and are not, and found them to be false. I know you are enduring patiently and bearing up for my name's sake, and you have not grown weary. But I have this against you, that you have abandoned the love you had at first'. The remedy: remember + repent + do the first works (2:5).",
+    "language": "en",
+    "options": [
+      "Praise: many miracles / Rebuke: lacked righteousness (as described in the passage)",
+      "Praise: toil + endurance + hating the WORKS of the NICOLAITANS + testing self-claimed apostles; Rebuke: ABANDONED the LOVE you had at FIRST",
+      "Praise: wealth / Rebuke: pride (per the textual narrative)",
+      "Praise: brotherly love / Rebuke: laziness (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Ephesus left first love",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Revelation 2:13, where is Pergamum located — described as 'WHERE'?",
+    "explanation": "Revelation 2:13 — 'I know where you dwell, where Satan's throne is. Yet you hold fast my name, and you did not deny my faith even in the days of Antipas my faithful witness, who was killed among you, where Satan dwells'. Pergamum = the Roman provincial capital of Asia; site of the Augustus temple + the Asclepius temple (the serpent = symbol).",
+    "language": "en",
+    "options": [
+      "Where Abraham lived (per the textual narrative)",
+      "Where the true temple of God is (as described in the passage)",
+      "Where Jews first preached (according to the text's framing)",
+      "Where SATAN's THRONE is — yet the church holds FAST his name, not denying the FAITH — though Antipas was MARTYRED"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Pergamum Satan's throne",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 23,
+    "content": "According to Revelation 2:18-23, the Thyatira church was rebuked for TOLERATING what woman — who SEDUCED the Lord's servants into sexual immorality + idol-food?",
+    "explanation": "Revelation 2:20 — 'But I have this against you, that you tolerate that woman Jezebel, who calls herself a prophetess and is teaching and seducing my servants to practice sexual immorality and to eat food sacrificed to idols'. The name 'Jezebel' = echoes Ahab's wife who introduced Baal worship to Israel (1 Kings 16:31).",
+    "language": "en",
+    "options": [
+      "JEZEBEL — calling herself a prophet (echoing Jezebel wife of Ahab in 1 Kings 16-21); the Lord promises to throw her on a sickbed + kill her children",
+      "Bathsheba (as described in the passage) (as the text indicates)",
+      "Delilah (per the textual narrative) (in the story's sequence)",
+      "Athaliah (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Thyatira Jezebel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Revelation 3:12, what is the promise to the OVERCOMER at Philadelphia?",
+    "explanation": "Revelation 3:12 — 'The one who conquers, I will make him a pillar in the temple of my God. Never shall he go out of it, and I will write on him the name of my God, and the name of the city of my God, the new Jerusalem, which comes down from my God out of heaven, and my own new name'. Philadelphia (= 'brotherly love') was earthquake-prone → the Lord promises a STABLE PILLAR.",
+    "language": "en",
+    "options": [
+      "A sword (per the textual narrative) (in the story's sequence)",
+      "A golden crown (according to the text's framing) (as the text indicates)",
+      "Made a PILLAR in the temple of my God — never to leave; I will WRITE on him the NAME of my God + the NAME of the new Jerusalem + my NEW NAME",
+      "An earthly kingdom (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Pillar + 3 names",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Revelation 3:18, what does the Lord counsel Laodicea to BUY from him?",
+    "explanation": "Revelation 3:18 — 'I counsel you to buy from me gold refined by fire, so that you may be rich, and white garments so that you may clothe yourself and the shame of your nakedness may not be seen, and salve to anoint your eyes, so that you may see'. Laodicea was famous for 3 industries: banking (gold), black-wool textiles (garments), medicine (Phrygian eye salve) — the Lord says 'you must BUY FROM ME'.",
+    "language": "en",
+    "options": [
+      "Cattle to keep (as described in the passage) (per the original content)",
+      "Wisdom (per the textual narrative) (in the story's sequence)",
+      "A nation (according to the text's framing) (as the text indicates)",
+      "Buy GOLD refined by fire, WHITE GARMENTS to cover nakedness, EYE SALVE to see — the opposite of what Laodicea boasted in (banking, textiles, medicine)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Laodicea 3 to buy",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Revelation 4:4, HOW MANY elders are around God's throne? Wearing + having what?",
+    "explanation": "Revelation 4:4 — 'Around the throne were twenty-four thrones, and seated on the thrones were twenty-four elders, clothed in white garments, with golden crowns on their heads'. 24 = 12 tribes of Israel + 12 apostles (many interpret) or the 24 Levitical priestly courses (1 Chr 24).",
+    "language": "en",
+    "options": [
+      "12 elders / blue robes + silver crowns",
+      "24 ELDERS / wearing WHITE GARMENTS, with GOLDEN CROWNS on their heads, seated on 24 thrones",
+      "70 elders / red robes (per the textual narrative)",
+      "144 elders / brocade robes (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "24 elders",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Revelation 4:5, before God's throne are SEVEN burning torches — what are they?",
+    "explanation": "Revelation 4:5 — 'From the throne came flashes of lightning, and rumblings and peals of thunder, and before the throne were burning seven torches of fire, which are the seven spirits of God'. The '7 spirits' appear 4 times (1:4, 3:1, 4:5, 5:6); interpreted = the Holy Spirit in his FULLNESS — Isaiah 11:2 lists 7 attributes of the Spirit.",
+    "language": "en",
+    "options": [
+      "7 archangels (according to the text's framing)",
+      "7 prophets (per the textual narrative)",
+      "The SEVEN SPIRITS of GOD (= the Holy Spirit in fullness)",
+      "7 astronomical stars (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "7 Spirits of God",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 11,
+    "content": "According to Revelation 4:10-11, what do the 24 elders do before the throne and what's their praise?",
+    "explanation": "Revelation 4:10-11 — 'The twenty-four elders fall down before him who is seated on the throne and worship him who lives forever and ever. They cast their crowns before the throne, saying, Worthy are you, our Lord and God, to receive glory and honor and power, for you created all things, and by your will they existed and were created'. The CREATION song = praising the Father.",
+    "language": "en",
+    "options": [
+      "FALL DOWN before the One on the throne + CAST their CROWNS BEFORE THE THRONE; cry: 'Worthy are you, our LORD AND GOD, to receive glory + honor + power, for you CREATED ALL THINGS'",
+      "Stand at attention and salute (as described in the passage) (per the original content)",
+      "Sing an old hymn (according to the text's framing) (as the text indicates)",
+      "Lift up a sword (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Elders cast crowns",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Revelation 5:6, what features does the slain Lamb have?",
+    "explanation": "Revelation 5:6 — 'And between the throne and the four living creatures and among the elders I saw a Lamb standing, as though it had been slain, with seven horns and with seven eyes, which are the seven spirits of God sent out into all the earth'. Horns = power (7 = full); eyes = sight (7 = omniscient). Both 7s = COMPLETE power + knowledge.",
+    "language": "en",
+    "options": [
+      "3 horns + 3 eyes (according to the text's framing)",
+      "1 horn + 1 eye (per the textual narrative)",
+      "12 horns + 12 eyes (as described in the passage)",
+      "SEVEN HORNS + SEVEN EYES — the 7 eyes = 'the 7 Spirits of God sent out into all the earth'"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Lamb 7 horns 7 eyes",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Revelation 5:8, what do the GOLDEN BOWLS of incense the 24 elders offer represent?",
+    "explanation": "Revelation 5:8 — 'And when he had taken the scroll, the four living creatures and the twenty-four elders fell down before the Lamb, each holding a harp, and golden bowls full of incense, which are the prayers of the saints'. Imagery: temple incense + the saints' prayers BROUGHT before the Lamb — no prayer is lost.",
+    "language": "en",
+    "options": [
+      "Garden fragrances (according to the text's framing)",
+      "The PRAYERS of the saints — each elder holds a harp + golden bowl",
+      "Burnt offerings (per the textual narrative)",
+      "Pure frankincense (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Golden bowls = prayers",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 10,
+    "content": "According to Revelation 5:9-10, what UNIVERSAL salvation does the NEW SONG sung by the 4 living creatures + 24 elders summarize?",
+    "explanation": "Revelation 5:9-10 — 'And they sang a new song, saying, Worthy are you to take the scroll and to open its seals, for you were slain, and by your blood you ransomed people for God from every tribe and language and people and nation, and you have made them a kingdom and priests to our God, and they shall reign on the earth'. The Gentile mission = COMPLETED in heaven.",
+    "language": "en",
+    "options": [
+      "'Christ is King of Israel' (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "'Christ gave a new Law' (according to the text's framing) (per the original content)",
+      "'Worthy are you to take the scroll + open its seals; for you were SLAIN, by your BLOOD you RANSOMED people for God from EVERY TRIBE, LANGUAGE, PEOPLE, and NATION; you have made them a KINGDOM + PRIESTS'",
+      "'You set Israel free' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "New song of Lamb",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 8,
+    "content": "According to Revelation 6:3-8, what COLORS are the horses of the first 4 seals and what do they symbolize?",
+    "explanation": "Revelation 6:1-8 — Seal 1: WHITE horse + rider with bow goes 'conquering and to conquer' (6:2); Seal 2: BRIGHT RED horse + great sword 'to take peace from the earth' (6:4); Seal 3: BLACK horse + scales 'a quart of wheat for a denarius' (6:5-6); Seal 4: PALE/ASHEN horse + rider named 'Death' (6:8). The famous '4 Horsemen of the Apocalypse' — signs of judgment on earth.",
+    "language": "en",
+    "options": [
+      "WHITE (conquest), RED (war), BLACK (famine), PALE/ASHEN (death) — the 4 horsemen of the Apocalypse",
+      "Gold, silver, bronze, iron (according to the text's framing)",
+      "Blue, pink, purple, orange (as described in the passage)",
+      "All white (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "4 horsemen",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 11,
+    "content": "According to Revelation 6:9-11, what does the FIFTH SEAL reveal — who is UNDER the ALTAR and what do they cry?",
+    "explanation": "Revelation 6:9-11 — 'When he opened the fifth seal, I saw under the altar the souls of those who had been slain for the word of God and for the witness they had borne. They cried out with a loud voice, O Sovereign Lord, holy and true, how long before you will judge and avenge our blood on those who dwell on the earth? Then they were each given a white robe and told to rest a little longer, until the number of their fellow servants and their brothers should be complete'. The cry for vengeance = the voice of martyrs in heaven.",
+    "language": "en",
+    "options": [
+      "The first disciples crying for resurrection (as described in the passage) (per the original content)",
+      "Angels crying for battle (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "The patriarchs crying for remembrance (according to the text's framing) (as the text indicates)",
+      "The souls of MARTYRS slain 'for the word of God + the testimony they bore' — cry loudly: 'O Sovereign Lord, holy + true, HOW LONG before you judge + avenge our blood?' — given white robes + told to REST"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "5th seal martyrs",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 17,
+    "content": "According to Revelation 6:12-17, the SIXTH SEAL opens: heaven + earth shake violently. What do kings + generals + the rich CRY OUT?",
+    "explanation": "Revelation 6:15-17 — 'Then the kings of the earth and the great ones and the generals and the rich and the powerful, and everyone, slave and free, hid themselves in the caves and among the rocks of the mountains, calling to the mountains and rocks, Fall on us and hide us from the face of him who is seated on the throne, and from the wrath of the Lamb, for the great day of their wrath has come, and who can stand?' The final question = rhetorical, answered by WHO has faith (7:9 the great multitude).",
+    "language": "en",
+    "options": [
+      "'Repent' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "They HIDE in caves + mountains and BEG mountains to fall: 'HIDE US from the face of him on the throne + the WRATH of the LAMB; for the GREAT DAY of his wrath has come — WHO CAN STAND?'",
+      "'Worship us' (according to the text's framing) (per the original content) (per the textual narrative)",
+      "'Let us fight' (as described in the passage) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "6th seal day of wrath",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Revelation 7:14, the great multitude in white robes = who? (per the elder)",
+    "explanation": "Revelation 7:13-14 — 'Then one of the elders addressed me, saying, Who are these, clothed in white robes, and from where have they come? I said to him, Sir, you know. And he said to me, These are the ones coming out of the great tribulation. They have washed their robes and made them white in the blood of the Lamb'. The paradox: WASHING WHITE in BLOOD (= worship reversing logic, symbolizing redemption by Christ's death).",
+    "language": "en",
+    "options": [
+      "Angels (per the textual narrative) (in the story's sequence)",
+      "The 12 tribes of Israel (as described in the passage)",
+      "Those who came OUT of the GREAT TRIBULATION, having WASHED their ROBES and made them WHITE in the BLOOD of the LAMB",
+      "The 12 apostles (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "White robes Lamb's blood",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 5,
+    "content": "According to Revelation 8:1-5, when the SEVENTH seal is opened, what happens in heaven?",
+    "explanation": "Revelation 8:1-5 — 'When the Lamb opened the seventh seal, there was silence in heaven for about half an hour. Then I saw the seven angels who stand before God, and seven trumpets were given to them... And another angel came and stood at the altar with a golden censer, and he was given much incense to offer with the prayers of all the saints on the golden altar before the throne'. The silence = preparation for judgment.",
+    "language": "en",
+    "options": [
+      "SILENCE in heaven for about HALF AN HOUR. Then 7 angels receive 7 TRUMPETS; another angel offers INCENSE + the saints' PRAYERS at the altar, then throws FIRE down to earth",
+      "A loud song of praise (as described in the passage) (as the text indicates)",
+      "A mild earthquake (according to the text's framing) (per the original content)",
+      "A flash of light (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "7th seal silence",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 8,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 12,
+    "content": "According to Revelation 8:7-12, the first FOUR trumpets strike WHAT FRACTION of nature?",
+    "explanation": "Revelation 8:7-12 — Trumpet 1: hail + fire mixed with blood → 1/3 of earth + trees burned. Trumpet 2: a burning mountain falls into the sea → 1/3 of sea becomes blood, 1/3 of sea creatures + ships destroyed. Trumpet 3: the star 'Wormwood' → 1/3 of rivers + springs turn bitter. Trumpet 4: 1/3 of sun + moon + stars struck → darkness. Imagery = reversing the 7 creation days (Genesis 1).",
+    "language": "en",
+    "options": [
+      "The whole (according to the text's framing)",
+      "Half (per the textual narrative) (in the story's sequence)",
+      "A quarter (as described in the passage) (as the text indicates)",
+      "A THIRD — 1/3 of the earth + trees + sea + rivers + waters; 1/3 of the sun + moon + stars darkened"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "1/3 of nature",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 9,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 11,
+    "content": "According to Revelation 9:1-11, the FIFTH trumpet releases LOCUSTS from the abyss — what is their king's name?",
+    "explanation": "Revelation 9:11 — 'They have as king over them the angel of the bottomless pit. His name in Hebrew is Abaddon, and in Greek he is called Apollyon'. Abaddon (Hebrew) + Apollyon (Greek) both mean 'destruction' / 'destroyer'. The locusts torment those WITHOUT the seal for 5 months.",
+    "language": "en",
+    "options": [
+      "Leviathan (as described in the passage)",
+      "ABADDON (Hebrew) = APOLLYON (Greek) — meaning 'DESTROYER'",
+      "Behemoth (according to the text's framing)",
+      "Lucifer (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Abaddon / Apollyon",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 10,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 10,
+    "content": "According to Revelation 10:9-10, when John ate the little scroll, how did it taste in mouth + stomach?",
+    "explanation": "Revelation 10:9-10 — 'So I went to the angel and told him to give me the little scroll. And he said to me, Take and eat it; it will make your stomach bitter, but in your mouth it will be sweet as honey. And I took the little scroll from the hand of the angel and ate it. It was sweet as honey in my mouth, but when I had eaten it my stomach was made bitter'. Parallel to Ezekiel 3:1-3 (eating a scroll → sweet); Jeremiah 15:16 (eating the word = joy). Revelation ADDS the 'BITTER stomach' aspect = the prophecy of judgment.",
+    "language": "en",
+    "options": [
+      "Bitter in both (as described in the passage)",
+      "Sweet in both (according to the text's framing)",
+      "SWEET as HONEY in the mouth, but BITTER in the stomach",
+      "Tasteless (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Sweet-bitter scroll",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 12,
+    "content": "According to Revelation 11:7-12, after the 2 witnesses prophesy 1260 days they are killed by the BEAST. After HOW LONG do they rise + ascend?",
+    "explanation": "Revelation 11:11-12 — 'But after the three and a half days a breath of life from God entered them, and they stood up on their feet, and great fear fell on those who saw them. Then they heard a loud voice from heaven saying to them, Come up here! And they went up to heaven in a cloud, and their enemies watched them'. The 3.5-day motif = half of 7 (fullness) — echoing Christ's time in the tomb.",
+    "language": "en",
+    "options": [
+      "THREE AND A HALF DAYS — after their bodies lay in the 'great city' (= Sodom + Egypt); they rise + ascend in a CLOUD as enemies watch",
+      "1 day (per the textual narrative) (in the story's sequence)",
+      "7 days (according to the text's framing) (per the original content)",
+      "1 month (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "2 witnesses rise",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Revelation 11:15, when the SEVENTH trumpet sounds, what do loud voices in heaven declare?",
+    "explanation": "Revelation 11:15 — 'Then the seventh angel blew his trumpet, and there were loud voices in heaven, saying, The kingdom of the world has become the kingdom of our Lord and of his Christ, and he shall reign forever and ever'. This verse = source of Handel's famous 'HALLELUJAH CHORUS' (Messiah, 1741) — the climax of the oratorio.",
+    "language": "en",
+    "options": [
+      "'Heaven is about to fall' (according to the text's framing)",
+      "'Satan has won' (per the textual narrative) (in the story's sequence)",
+      "'Prepare for the wedding' (as described in the passage) (as the text indicates)",
+      "'The kingdom of the world has BECOME the kingdom of our Lord + his Christ; he shall REIGN FOREVER and EVER' — Handel's famous 'Hallelujah Chorus'"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "7th trumpet kingdom",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 4,
+    "content": "According to Revelation 12:3-4, the SECOND sign in heaven is a RED DRAGON — described how?",
+    "explanation": "Revelation 12:3-4 — 'And another sign appeared in heaven: behold, a great red dragon, with seven heads and ten horns, and on his heads seven diadems. His tail swept down a third of the stars of heaven and cast them to the earth'. 12:9 explains: 'the great dragon was thrown down... called the devil and Satan'.",
+    "language": "en",
+    "options": [
+      "3 heads + 6 horns (as described in the passage)",
+      "SEVEN HEADS + TEN HORNS + SEVEN CROWNS on its heads; its TAIL swept a THIRD of the STARS down to earth",
+      "1 head + 1 horn (according to the text's framing)",
+      "12 heads (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Red dragon 7 heads 10 horns",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 9,
+    "content": "According to Revelation 12:7-9, who battles the Dragon + his angels in heaven, and how is the dragon identified?",
+    "explanation": "Revelation 12:7-9 — 'Now war arose in heaven, Michael and his angels fighting against the dragon. And the dragon and his angels fought back, but he was defeated, and there was no longer any place for them in heaven. And the great dragon was thrown down, that ancient serpent, who is called the devil and Satan, the deceiver of the whole world — he was thrown down to the earth, and his angels were thrown down with him'. Michael = the archangel (Daniel 10, 12; Jude 9).",
+    "language": "en",
+    "options": [
+      "Abraham (per the textual narrative) (in the story's sequence)",
+      "Jesus directly (as described in the passage) (as the text indicates)",
+      "MICHAEL + his angels battle — the Dragon = Satan + Devil + Ancient Serpent + 'DECEIVER of the WHOLE WORLD'; thrown down to EARTH",
+      "Peter battles (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Michael vs Dragon",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 10,
+    "content": "According to Revelation 13:1-10, the BEAST from the SEA combines features of WHICH 3 animals?",
+    "explanation": "Revelation 13:1-2 — 'And I saw a beast rising out of the sea, with ten horns and seven heads, with ten diadems on its horns... And the beast that I saw was like a leopard; its feet were like a bear's, and its mouth was like a lion's mouth. And to it the dragon gave his power and his throne and great authority'. SUMMARIZES the 4 beasts of Daniel 7 (lion + bear + leopard + terrifying beast) — each = an empire; the sum = the final empire opposing God.",
+    "language": "en",
+    "options": [
+      "Lion + ox + eagle (per the textual narrative) (in the story's sequence)",
+      "Horse + donkey + camel (according to the text's framing)",
+      "Elephant + rhinoceros + crocodile (as described in the passage)",
+      "Like a LEOPARD + feet like a BEAR's + mouth like a LION's mouth — 7 heads + 10 horns (like the Dragon); combining the 4 beasts of Daniel 7"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Beast from sea",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 17,
+    "content": "According to Revelation 13:11-17, the SECOND BEAST (from the EARTH) = 'False Prophet' — forces people to wear what mark + where?",
+    "explanation": "Revelation 13:16-17 — 'Also it causes all, both small and great, both rich and poor, both free and slave, to be marked on the right hand or the forehead, so that no one can buy or sell unless he has the mark, that is, the name of the beast or the number of its name'. Right hand + forehead = where Jewish TEFILLIN are bound (Deut 6:8) — symbols of OWNERSHIP; opposite of 7:3 the seal of God on the forehead.",
+    "language": "en",
+    "options": [
+      "MARK of the beast on the RIGHT HAND + the FOREHEAD; no mark = cannot BUY or SELL",
+      "Mark on the neck (per the textual narrative)",
+      "Mark on the chest (as described in the passage)",
+      "Mark on the feet (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Beast mark hand + forehead",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 14,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 5,
+    "content": "According to Revelation 14:1-5, where do the 144,000 stand WITH the LAMB? What's written on their FOREHEADS?",
+    "explanation": "Revelation 14:1 — 'Then I looked, and behold, on Mount Zion stood the Lamb, and with him 144,000 who had his name and his Father's name written on their foreheads'. OPPOSITE to 13:16 the beast's mark on hand/forehead — the 144,000 bear the LORD's NAME instead of the beast's name.",
+    "language": "en",
+    "options": [
+      "In the desert / the devil's NAME",
+      "On MOUNT ZION / the LAMB's NAME + the FATHER's NAME written on their foreheads",
+      "By the sea / a bell mark (per the textual narrative)",
+      "In the wilderness / nothing (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "144,000 on Mt Zion",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 14,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "According to Revelation 14:6-11, THREE ANGELS fly mid-heaven proclaiming 3 different messages. What are they?",
+    "explanation": "Revelation 14:6-11 — Angel 1 (14:6-7): 'eternal gospel to proclaim to those who dwell on earth, to every nation and tribe and language and people... Fear God and give him glory'. Angel 2 (14:8): 'Fallen, fallen is Babylon the great'. Angel 3 (14:9-11): 'If anyone worships the beast... he also will drink the wine of God's wrath, poured full strength'. The 3 messages = final invitation + final warning.",
+    "language": "en",
+    "options": [
+      "1=blessing / 2=protection / 3=praise (according to the text's framing)",
+      "1=salvation x3 (per the textual narrative) (in the story's sequence) (as the text indicates)",
+      "1 = ETERNAL GOSPEL to all peoples + fear + worship God; 2 = 'BABYLON the GREAT has FALLEN'; 3 = whoever takes the BEAST's MARK + worships will drink the WINE of GOD's WRATH",
+      "1=forgiveness / 2=blessing / 3=salvation (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "3 angels 3 messages",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 15,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 4,
+    "content": "According to Revelation 15:3-4, the OVERCOMERS of the beast stand on a SEA OF GLASS + sing WHAT SONG?",
+    "explanation": "Revelation 15:3-4 — 'And they sing the song of Moses, the servant of God, and the song of the Lamb, saying, Great and amazing are your deeds, O Lord God the Almighty! Just and true are your ways, O King of the nations! Who will not fear, O Lord, and glorify your name? For you alone are holy. All nations will come and worship you, for your righteous acts have been revealed'. The Song of Moses = Exodus 15 (after the Red Sea); combination = MOSES delivered Israel + LAMB delivers all nations.",
+    "language": "en",
+    "options": [
+      "'The Exodus song' (per the textual narrative) (in the story's sequence)",
+      "'The Martyr's song' (according to the text's framing) (per the original content)",
+      "'The Song of David' (as described in the passage) (as the text indicates)",
+      "'The SONG of MOSES + the SONG of the LAMB' — combining OT + NT; praising God for 'great + amazing' deeds, 'JUST + true', 'all NATIONS will COME to worship'"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Song of Moses + Lamb",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 21,
+    "content": "According to Revelation 16:1-21, what do the FIRST bowl on earth + FIFTH bowl cause?",
+    "explanation": "Revelation 16:2 (bowl 1): 'The first angel went and poured out his bowl on the earth, and harmful and painful sores came upon the people who bore the mark of the beast and worshiped its image' (= the Egyptian plague, Ex 9:8-12). 16:10-11 (bowl 5): 'The fifth angel poured out his bowl on the throne of the beast, and its kingdom was plunged into darkness. People gnawed their tongues in anguish'. The 7 bowls = parallel the Egyptian plagues.",
+    "language": "en",
+    "options": [
+      "Bowl 1 = HARMFUL + PAINFUL SORES on those with the beast's mark; Bowl 5 = the beast's throne in DARKNESS, people GNAW their tongues in pain",
+      "Bowl 1 = thunder; Bowl 5 = storm (as described in the passage)",
+      "Bowl 1 = fire; Bowl 5 = flood (according to the text's framing)",
+      "Bowl 1 = hail; Bowl 5 = wind (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Bowl 1 + Bowl 5",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 16,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 16,
+    "content": "According to Revelation 16:13-16, from the MOUTHS of the Dragon + Beast + False Prophet come 3 of WHAT? Where do the kings gather?",
+    "explanation": "Revelation 16:13-16 — 'And I saw, coming out of the mouth of the dragon and out of the mouth of the beast and out of the mouth of the false prophet, three unclean spirits like frogs. For they are demonic spirits, performing signs, who go abroad to the kings of the whole world, to assemble them for the battle on the great day of God the Almighty... And they assembled them at the place that in Hebrew is called Armageddon'. Ar-Mageddon = Mount Megiddo (Israel) — site of decisive OT battles.",
+    "language": "en",
+    "options": [
+      "3 serpents / Babylon (as described in the passage)",
+      "3 SPIRITS LIKE FROGS — they go to the kings of the world to gather them at a place called in HEBREW ARMAGEDDON",
+      "3 angels / Mt Zion (per the textual narrative)",
+      "3 doves / Jerusalem (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Armageddon",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 17,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 14,
+    "content": "According to Revelation 17:9-14, what are the 7 HEADS of the scarlet beast (whom the woman rides) + the 10 HORNS?",
+    "explanation": "Revelation 17:9-14 — 'This calls for a mind with wisdom: the seven heads are seven mountains on which the woman is seated; they are also seven kings, five of whom have fallen, one is, the other has not yet come... And the ten horns that you saw are ten kings who have not yet received royal power, but they are to receive authority as kings for one hour, together with the beast. These are of one mind, and they hand over their power and authority to the beast. They will make war on the Lamb, and the Lamb will conquer them'. 7 mountains → alluding to Rome (city built on 7 hills).",
+    "language": "en",
+    "options": [
+      "7 heads = 7 monsters; 10 horns = 10 angels (as described in the passage) (as the text indicates)",
+      "7 heads = 7 seals; 10 horns = 10 trumpets (according to the text's framing) (per the original content)",
+      "7 HEADS = 7 MOUNTAINS on which the woman sits (+ 7 kings); 10 HORNS = 10 KINGS who have not yet received a kingdom but will GIVE POWER to the beast + war against the LAMB but the LAMB WILL CONQUER",
+      "7 heads = 7 stars; 10 horns = 10 thrones (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "7 heads = 7 mountains",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 21,
+    "content": "According to Revelation 19:17-21, after the battle, where are the BEAST + FALSE PROPHET cast? Their armies?",
+    "explanation": "Revelation 19:20-21 — 'And the beast was captured, and with it the false prophet who in its presence had done the signs... These two were thrown alive into the lake of fire that burns with sulfur. And the rest were slain by the sword that came from the mouth of him who was sitting on the horse, and all the birds were gorged with their flesh'. THIS = the final battle of Armageddon (16:16); BEFORE the 1000-year event + Satan's binding (20:1-3).",
+    "language": "en",
+    "options": [
+      "Returned to Babylon / forgiven (as described in the passage)",
+      "Both thrown ALIVE into the LAKE of FIRE + SULFUR; their armies SLAIN by the SWORD from the rider's mouth + birds gorge on their FLESH",
+      "Imprisoned 1000 years / freed (according to the text's framing)",
+      "Tried / imprisoned (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Beast + false prophet in lake",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 20,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 6,
+    "content": "According to Revelation 20:1-6, an angel comes down from heaven with the KEY of the ABYSS + a great CHAIN — what does he do with the DRAGON (Satan)?",
+    "explanation": "Revelation 20:1-3 — 'Then I saw an angel coming down from heaven, holding in his hand the key to the bottomless pit and a great chain. And he seized the dragon, that ancient serpent, who is the devil and Satan, and bound him for a thousand years, and threw him into the pit, and shut it and sealed it over him, so that he might not deceive the nations any longer, until the thousand years were ended'. KEY MARKER: 1000 years of Satan's binding.",
+    "language": "en",
+    "options": [
+      "Kills with a sword (according to the text's framing) (per the original content)",
+      "Cares for + teaches (as described in the passage) (as the text indicates)",
+      "BINDS the dragon for 1000 YEARS, throws him into the ABYSS, shuts + seals it so he can no longer DECEIVE the nations until 1000 years are ended",
+      "Forgives (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Satan bound 1000 years",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Revelation 21:3, what does a voice from the throne announce when the new Jerusalem descends?",
+    "explanation": "Revelation 21:3 — 'And I heard a loud voice from the throne saying, Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people, and God himself will be with them as their God'. The OT promise (Lev 26:11-12, Ezk 37:27) FULLY FULFILLED — 'Immanuel' = God WITH US forever.",
+    "language": "en",
+    "options": [
+      "'Judgment is complete' (as described in the passage) (as the text indicates)",
+      "'Salvation has come' (according to the text's framing) (per the original content)",
+      "'The abyss is shut' (per the textual narrative) (in the story's sequence)",
+      "'BEHOLD, the DWELLING PLACE of GOD is with MAN. He will DWELL WITH them, and they will be his PEOPLE, and God HIMSELF will be with them as their GOD'"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "God's dwelling with man",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 14,
+    "content": "According to Revelation 21:12-14, HOW MANY gates + foundations does the NEW JERUSALEM have, and what NAMES?",
+    "explanation": "Revelation 21:12-14 — 'It had a great, high wall, with twelve gates, and at the gates twelve angels, and on the gates the names of the twelve tribes of the sons of Israel were inscribed — on the east three gates, on the north three gates, on the south three gates, and on the west three gates. And the wall of the city had twelve foundations, and on them were the twelve names of the twelve apostles of the Lamb'. GATES = OT (12 tribes); FOUNDATIONS = NT (12 apostles) — the church built on both (Eph 2:20).",
+    "language": "en",
+    "options": [
+      "12 GATES (3 each on east/north/south/west) — NAMES of the 12 TRIBES of Israel; 12 FOUNDATIONS — NAMES of the 12 APOSTLES of the Lamb",
+      "7 gates, 7 foundations - 7 lamps (according to the text's framing)",
+      "10 gates, 10 foundations - angel names (as described in the passage)",
+      "144 gates, 144 foundations (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "12 gates + 12 foundations",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Revelation 21:16, what are the dimensions of the NEW JERUSALEM?",
+    "explanation": "Revelation 21:16 — 'The city lies foursquare; its length the same as its width. And he measured the city with his rod, 12,000 stadia. Its length and width and height are equal'. 12,000 stadia ≈ 1380 mi / 2200 km per side = a CUBE. The OT temple's HOLY OF HOLIES was a CUBE (1 Kings 6:20). The whole new Jerusalem = the HOLY OF HOLIES EXPANDED — God dwells with his people EVERYWHERE.",
+    "language": "en",
+    "options": [
+      "100 square miles (as described in the passage)",
+      "LENGTH = WIDTH = HEIGHT = 12,000 STADIA (≈ 1380 mi / 2200 km) — a perfect CUBE (like the Holy of Holies)",
+      "1000 km (according to the text's framing) (as the text indicates)",
+      "100 m (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Jerusalem 12,000 stadia",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 25,
+    "content": "According to Revelation 21:23-25, what STRANGE features does the NEW JERUSALEM have regarding light + night?",
+    "explanation": "Revelation 21:23-25 — 'And the city has no need of sun or moon to shine on it, for the glory of God gives it light, and its lamp is the Lamb. By its light will the nations walk, and the kings of the earth will bring their glory into it, and its gates will never be shut by day — and there will be no night there'. OPPOSITE of Genesis 1 (the old creation with sun + night) — the NEW creation has light from GOD HIMSELF.",
+    "language": "en",
+    "options": [
+      "Has a brighter sun (as described in the passage)",
+      "Has 12 torches (per the textual narrative)",
+      "NO need for SUN or MOON because GOD's GLORY shines + the LAMB is its LAMP; GATES never SHUT; NO NIGHT",
+      "Has 7 oil lamps (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "No sun needed",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 2,
+    "content": "According to Revelation 22:1-2, what flows from the throne of God + Lamb? What grows on either side?",
+    "explanation": "Revelation 22:1-2 — 'Then the angel showed me the river of the water of life, bright as crystal, flowing from the throne of God and of the Lamb through the middle of the street of the city; also, on either side of the river, the tree of life with its twelve kinds of fruit, yielding its fruit each month. The leaves of the tree were for the healing of the nations'. The TREE OF LIFE = reversing Genesis 3 (forbidden after Adam's sin, now permitted). 'HEALING of the NATIONS' = restoration of all historical wounds — cosmic renewal.",
+    "language": "en",
+    "options": [
+      "Milk river / olive trees (according to the text's framing)",
+      "Wine river / grape vines (as described in the passage) (as the text indicates)",
+      "Oil river / cedar trees (per the textual narrative) (in the story's sequence)",
+      "RIVER of WATER OF LIFE bright as crystal; the TREE OF LIFE bears 12 KINDS of fruit each month — its LEAVES for the HEALING of the NATIONS"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "River + Tree of life",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 1 cross-ref Revelation 1:7 — 'Behold, he is coming with the CLOUDS' — this verse BLENDS which TWO OT prophecies?",
+    "explanation": "Revelation 1:7 — 'Behold, he is coming with the clouds, and every eye will see him, even those who pierced him, and all tribes of the earth will wail on account of him. Even so. Amen'. This verse COMBINES: (1) Daniel 7:13 'one like a son of man, coming with the clouds of heaven, came to the Ancient of Days' (= Son of Man); (2) Zechariah 12:10 'they shall look on me, on him whom they have pierced... they shall mourn for him'. Mt 24:30 uses the same combination — the key NT verse on the SECOND COMING.",
+    "language": "en",
+    "options": [
+      "Isa 53 + Ps 22 (suffering) (as described in the passage) (per the original content)",
+      "Dan 2 + Hos 1 (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Mal 4 + Zep 3 (according to the text's framing) (as the text indicates)",
+      "DANIEL 7:13 (Son of Man comes with clouds) + ZECHARIAH 12:10 (they will look on him whom they have PIERCED, all tribes of earth will MOURN)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "1:7 = Daniel + Zechariah",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "TYPE 1 cross-ref Revelation 4:8 — The 4 living creatures sing day + night without ceasing: 'HOLY, HOLY, HOLY, Lord God Almighty' = QUOTING what OT passage?",
+    "explanation": "Revelation 4:8 — 'And the four living creatures, each of them with six wings, are full of eyes all around and within, and day and night they never cease to say: Holy, holy, holy, is the Lord God Almighty, who was and is and is to come!' QUOTES Isaiah 6:1-3 — Isaiah saw the Lord on the throne, the seraphim with 6 wings crying TRISHAGION 'Holy, holy, holy'. Revelation ADDS: 'who was and is and is to come' (= 'I AM' Ex 3:14). This song = source of the church's 'Sanctus'.",
+    "language": "en",
+    "options": [
+      "Ps 23 (Shepherd) (as described in the passage) (per the original content)",
+      "ISAIAH 6:3 — the Trishagion ('holy' 3x) when Isaiah saw the Lord on the high throne + seraphim cried 'Holy, holy, holy'",
+      "Ex 3:14 (according to the text's framing) (as the text indicates)",
+      "Ps 91 (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Trishagion = Isaiah 6",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 17,
+    "content": "TYPE 1 cross-ref Revelation 7:16-17 — Comfort for the multitude after the great tribulation: 'the LAMB will SHEPHERD + GUIDE them to SPRINGS of water' — quotes what OT?",
+    "explanation": "Revelation 7:16-17 — 'They shall hunger no more, neither thirst anymore; the sun shall not strike them, nor any scorching heat. For the Lamb in the midst of the throne will be their shepherd, and he will guide them to springs of living water, and God will wipe away every tear from their eyes'. QUOTES Isa 49:10 (about RESTORATION after exile) + Isa 25:8 ('he will wipe away tears from all faces') + Ps 23 (the Shepherd). Imagery: the SLAIN Lamb is now the SHEPHERD — a profound spiritual paradox.",
+    "language": "en",
+    "options": [
+      "Ps 110 (King-Priest) (per the textual narrative) (in the story's sequence)",
+      "Ezk 34 (the Shepherd) (according to the text's framing) (as the text indicates)",
+      "ISAIAH 49:10 — 'They shall NOT HUNGER, NOR THIRST, the SUN shall NOT STRIKE THEM; he who has mercy shall LEAD THEM, BY SPRINGS of water'",
+      "Gen 12 (Abraham's promise) (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Isa 49 no hunger thirst",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "TYPE 1 cross-ref — Revelation uses 'kingdom of Christ' (11:15) borrowed from the OT. Also 'he will rule the nations with an IRON ROD' (12:5, 19:15) quotes which Psalm?",
+    "explanation": "Revelation 12:5 + 19:15 — 'He will rule the nations with an iron rod'. This is 1 of 5 times Revelation cites Psalm 2:9. Psalm 2 = the 'Messianic Coronation Psalm' (David/Christ): 'You shall conquer the nations + iron rod'. Revelation APPLIES this to Christ = the conquering King over the nations. Cf. Acts 13:33 + Heb 1:5 (both citing Ps 2:7).",
+    "language": "en",
+    "options": [
+      "PSALM 2:9 — 'You shall break them with a rod of iron and dash them in pieces like a potter's vessel' (the Messianic enthronement psalm)",
+      "Ps 22:1 (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Ps 110:1 (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "Ps 51:1 (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Iron rod = Ps 2:9",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 4,
+    "content": "TYPE 1 cross-ref Revelation 21:1-4 — 'NEW HEAVEN + NEW EARTH', 'NO more TEARS' — quotes what 2 OT passages?",
+    "explanation": "Revelation 21:1, 4 — 'Then I saw a new heaven and a new earth, for the first heaven and the first earth had passed away, and the sea was no more... He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore'. COMBINES: (1) Isa 65:17 + 66:22 ('I will create new heavens + new earth') = NEW creation; (2) Isa 25:8 ('he will wipe away tears') = end of suffering. Revelation CLOSES the loop: Gen 1 (creation) → Rev 22 (PERFECT new creation).",
+    "language": "en",
+    "options": [
+      "Gen 1 + Gen 2 (creation) (per the textual narrative) (in the story's sequence)",
+      "Ps 23 + Ps 1 (Shepherd + righteous) (as described in the passage) (per the original content)",
+      "ISAIAH 65:17 ('I will CREATE NEW HEAVENS + NEW EARTH') + ISAIAH 25:8 ('he will SWALLOW UP DEATH forever; the Lord GOD will WIPE TEARS from all faces')",
+      "Gen 8 (post-flood) + Ex 3 (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "New heaven new earth + tears",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 16,
+    "content": "TYPE 1 cross-ref Revelation 22:13, 16 — Jesus calls himself 4 NAMES at the end. The 'ROOT and DESCENDANT of DAVID' comes from where?",
+    "explanation": "Revelation 22:16 — 'I, Jesus, have sent my angel to testify to you about these things for the churches. I am the root and the descendant of David, the bright morning star'. 'Branch (netzer) of David' = Isaiah 11:1 ('There shall come forth a shoot from the stump of Jesse'); 'Root' = Isaiah 11:10 ('root of Jesse'). Jeremiah 23:5 + 33:15 also have 'BRANCH'. Self-identification = Christ FULFILLS every prophecy of the Messianic King.",
+    "language": "en",
+    "options": [
+      "Isaiah 11:1, 10 + Jeremiah 23:5 + 33:15 — prophecy of 'Branch of David' = the future righteous wise king",
+      "Genesis 12 (Abraham's promise) (as described in the passage)",
+      "Daniel 2 (the king's statue) (according to the text's framing)",
+      "Zechariah 4 (7-lamp) (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Branch of David = Isa 11",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 2 distinguish — The 7 LETTERS in Revelation 2-3 follow a 7-part FORMULA. What ALWAYS appears at the END of each letter?",
+    "explanation": "The 7 letters' structure (Rev 2-3) — 7 repeating parts: (1) ADDRESS ('To the angel of the church in _ write'); (2) CHRIST'S CHARACTERISTIC (drawn from Rev 1, different in each letter); (3) 'I KNOW your works'; (4) PRAISE (except Laodicea); (5) REBUKE (except Smyrna + Philadelphia); (6) EXHORTATION; (7) 'He who has an ear, hear...' + PROMISE to the OVERCOMER. Part (7) is IDENTICAL in all 7 — creating a liturgical rhythm.",
+    "language": "en",
+    "options": [
+      "A peace blessing (according to the text's framing) (per the original content)",
+      "A prayer (per the textual narrative) (in the story's sequence)",
+      "Author's greeting (as described in the passage) (as the text indicates)",
+      "'He who has an EAR, let him HEAR what the SPIRIT says to the CHURCHES' + a PROMISE to the OVERCOMER (= ho nikōn)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "7 letters structure",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      2
+    ],
+    "content": "TYPE 2 distinguish — Among the 7 churches, ONLY 2 receive NO REBUKE (only praise). Select both — which 2 churches?",
+    "explanation": "Among the 7 churches: (1) Ephesus — PRAISE + REBUKE; (2) SMYRNA — PRAISE only, no rebuke; (3) Pergamum — PRAISE + REBUKE; (4) Thyatira — PRAISE + REBUKE; (5) Sardis — REBUKE only, no praise; (6) PHILADELPHIA — PRAISE only, no rebuke; (7) Laodicea — REBUKE only, no praise. Smyrna + Philadelphia are the ONLY 2 with PRAISE ALONE — common trait: POOR + LITTLE POWER but FAITHFUL.",
+    "language": "en",
+    "options": [
+      "SMYRNA (poverty + tribulation)",
+      "Ephesus (left first love)",
+      "PHILADELPHIA (kept the word + little power)",
+      "Laodicea (lukewarm) (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "2 churches no rebuke",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "TYPE 2 distinguish — Revelation has 3 chains of 7 judgments (7 seals 6-8, 7 trumpets 8-11, 7 bowls 15-16). What's the difference in DEGREE?",
+    "explanation": "ESCALATING SCALE: (1) 7 SEALS — '1/4 of the earth' (6:8 the Pale horse 'over a fourth of the earth'); (2) 7 TRUMPETS — '1/3' (8:7-12: 1/3 of earth, 1/3 of sea, 1/3 of rivers, 1/3 of sun). 1/3 = double 1/4 + greater severity; (3) 7 BOWLS — NO more '1/3', affecting the WHOLE + 'with the wrath of God FINISHED' (15:1). This is Revelation's signature ESCALATION — the final judgments leave NO room for repentance.",
+    "language": "en",
+    "options": [
+      "7 seals = mild; 7 trumpets = mild; 7 bowls = mild (as the text indicates) (cross-referenced with related passages)",
+      "7 SEALS affect a QUARTER of the earth (6:8); 7 TRUMPETS affect a THIRD (8:7-12); 7 BOWLS affect the WHOLE (16:1-21) — ESCALATING with no mixed mercy",
+      "All affect 1/2 (according to the text's framing) (in the story's sequence)",
+      "No difference (per the textual narrative) (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "3 chains of 7 escalate",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 2 distinguish — There are 2 BEASTS in Revelation (ch 13). What's the DIFFERENCE between them?",
+    "explanation": "Revelation 13 — Two distinct beasts: (1) BEAST FROM THE SEA (13:1-10) — 7 heads + 10 horns + 10 diadems; has authority for 42 months; the world worships it. Represents POLITICAL + MILITARY power opposing God (= ancient Rome + the final empire). (2) BEAST FROM THE EARTH (13:11-18) — 2 horns like a lamb BUT speaking like a dragon; performs signs (fire from heaven); forces worship of beast 1; brands the mark. Represents RELIGIOUS + DECEPTIVE power. Rev 19:20 + 20:10 CALL beast 2 = 'FALSE PROPHET'. The trio: DRAGON + BEAST 1 + FALSE PROPHET = 'unholy trinity' counterfeiting Father + Son + Spirit.",
+    "language": "en",
+    "options": [
+      "The same beast (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Same authority + same role (as described in the passage) (per the original content) (per the textual narrative)",
+      "BEAST 1 (SEA) = political + military power (= the hostile empire); BEAST 2 (EARTH) = religious + deceptive power (= 'False Prophet' Rev 19:20) — forces all to WORSHIP beast 1 + the MARK + FIRE from heaven",
+      "Both = Satan himself (according to the text's framing) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "2 beasts differ",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 17,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      3
+    ],
+    "content": "TYPE 2 distinguish — Revelation 17 + 21 present TWO contrasting WOMEN as a theological pattern. SELECT THREE correct contrasts.",
+    "explanation": "Revelation 17 vs 21 — Literary CONTRAST: (1) WHORE of Babylon (17:1-6) — wears purple + scarlet + adorned with gold + jewels; 'mother of prostitutes'; sits on a 7-headed beast; on 'MANY WATERS' (17:15 = nations); drunk with the saints' blood. (2) BRIDE of the Lamb (21:2, 9-10) — clothed in 'FINE LINEN, bright + pure' (19:8 = the saints' righteous deeds); New Jerusalem coming down from heaven; pure + prepared. THEOLOGICAL PATTERN: world vs church; immorality vs marriage; old Babylon vs new Jerusalem; DESTRUCTION vs GLORY.",
+    "language": "en",
+    "options": [
+      "Woman 1 = WHORE of Babylon (17); Woman 2 = BRIDE of the Lamb (21)",
+      "Woman 1 wears purple, scarlet, gold, jewels; Woman 2 wears FINE LINEN, bright + pure (= righteous deeds of saints 19:8)",
+      "Woman 1 on 7-headed mountain, Woman 2 on a throne (per the textual narrative)",
+      "Woman 1 sits on MANY WATERS (= peoples, 17:15); Woman 2 DESCENDS from heaven = New Jerusalem"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Whore vs Bride",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 20,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 6,
+    "content": "TYPE 2 distinguish — Revelation 20:4-6 mentions the 'FIRST RESURRECTION'. How does it differ from the 'eternal resurrection' (final resurrection)?",
+    "explanation": "Revelation 20:4-6 — 'Then I saw thrones, and seated on them were those to whom the authority to judge was committed. Also I saw the souls of those who had been beheaded for the testimony of Jesus and for the word of God... They came to life and reigned with Christ for a thousand years. This is the first resurrection. Blessed and holy is the one who shares in the first resurrection!' Rev 20:11-15 — 'Then I saw a great white throne and him who was seated on it... if anyone's name was not found written in the book of life, he was thrown into the lake of fire'. NOTE: TEXT clearly distinguishes 2 resurrections — WITHOUT entering pre/post-mil debate; we just NARRATE what the TEXT says.",
+    "language": "en",
+    "options": [
+      "Both are the same event (per the textual narrative) (in the story's sequence) (per the original content) (per the textual narrative) (in the story's sequence)",
+      "First res = for angels; eternal res = for humans (as described in the passage) (cross-referenced with related passages) (according to the text's framing)",
+      "First res is only spiritual, not bodily (according to the text's framing) (as the text indicates) (in the context of the passage) (as described in the passage)",
+      "FIRST RESURRECTION (20:4-6) = the martyrs + faithful raised + REIGNING with Christ 1000 years; SECOND RESURRECTION (20:11-15, after 1000 years) = raised for JUDGMENT before the Great White Throne — those whose NAMES are NOT in the BOOK OF LIFE thrown into the LAKE OF FIRE"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "2 resurrections",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "TYPE 3 deep — In Revelation, Christ is called 'LAMB' (arnion) HOW MANY times? What's the theological significance?",
+    "explanation": "Revelation uses 'arnion' (Lamb) ~28-29 times (5:6, 5:8, 5:12, 5:13, 6:1, 6:16, 7:9, 7:10, 7:14, 7:17, 12:11, 13:8, 14:1, 14:4, 14:10, 15:3, 17:14, 19:7, 19:9, 21:9, 21:14, 21:22, 21:23, 21:27, 22:1, 22:3...). NO other Christ-title is more common. Meaning: (1) the PASSOVER Lamb slain (Ex 12, Jn 1:29 'the Lamb of God'); (2) the Lamb STANDING (resurrection); (3) victory NOT by force but through SACRIFICE. The book's CENTRAL THEOLOGICAL IMAGE: Christ conquers THROUGH DEATH.",
+    "language": "en",
+    "options": [
+      "1 time — purification (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "28-29 TIMES — the MOST COMMON title for Christ in the book. Meaning: Christ was SLAIN (=Passover Lamb, Col 1:20) YET now STANDS (=resurrection) + REIGNS with 7 horns + 7 eyes; victory THROUGH SACRIFICE",
+      "100 times — glory (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "5 times — atonement (according to the text's framing) (per the original content) (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Lamb 28 times",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 3 deep — What's the theological significance of the number 7 in Revelation? Which sevens appear?",
+    "explanation": "Number 7 in Revelation = PERFECTION + COMPLETENESS (God's plan). The sevens: (1) 7 churches (1:11); (2) 7 Spirits of God (1:4 = the full Holy Spirit); (3) 7 lampstands (1:12); (4) 7 stars (1:16); (5) 7 seals (5:1); (6) 7 trumpets (8:2); (7) 7 thunders (10:3-4); (8) 7 angels with 7 plagues + 7 bowls (15:1, 16:1); (9) 7 heads of dragon + beast (12:3, 13:1); (10) 7 horns + 7 eyes of the Lamb (5:6); (11) 7 blessings; (12) 7 praises in 5:12 ('power, wealth, wisdom, might, honor, glory, blessing'). The book also uses '3.5' (half of 7 = INCOMPLETE) and '666' (= '777 minus one' = never perfect).",
+    "language": "en",
+    "options": [
+      "7 = number of sin (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "7 = number of angels (according to the text's framing) (per the original content) (per the textual narrative)",
+      "7 = number of PERFECTION + COMPLETENESS in God's plan. Major sevens: 7 churches, 7 Spirits, 7 lampstands, 7 seals, 7 trumpets, 7 bowls, 7 thunders, 7 angels, 7 heads of beast, 7 crowns, 7 blessings, 7 praises",
+      "7 = number of rest days (as described in the passage) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Number 7 perfection",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 3 deep — Revelation has 5+ great PRAISE SONGS (4:8, 4:11, 5:9-10, 5:12, 5:13, 7:10, 11:17-18, 15:3-4, 19:1-8). What's the theological pattern?",
+    "explanation": "Revelation's hymn structure: (1) CREATION song 4:11 — 'You are worthy to receive glory because you CREATED ALL THINGS'; (2) REDEMPTION song 5:9-10 — 'You are worthy because you were SLAIN, and by your blood you RANSOMED'; (3) 7-WORD song 5:12 — 'power, wealth, wisdom...'; (4) ALL CREATION song 5:13 — 'in heaven, on earth, under the earth, in the sea, all praise'; (5) SALVATION song 7:10; (6) DOMINION song 11:17-18; (7) MOSES + LAMB song 15:3-4; (8) 4 Hallelujahs 19:1-6. SCOPE EXPANDS from a few → all creation → all nations → the WHOLE NEW universe. Theme: CREATION → REDEMPTION → VICTORY → NEW CREATION.",
+    "language": "en",
+    "options": [
+      "All praise the Father (according to the text's framing) (per the original content) (per the textual narrative) (as described in the passage) (as the text indicates)",
+      "All praise the Lamb (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (in the story's sequence) (per the original content)",
+      "All praise the Spirit (as described in the passage) (as the text indicates) (in the context of the passage) (according to the text's framing) (cross-referenced with related passages)",
+      "EXPANDING SCOPE: starting INTERNAL (4 living creatures, 24 elders) → 'every creature in heaven + earth + sea' (5:13) → 'every nation, tribe, people, language' (7:9-10) → all humanity + the NEW creation; THEMES: from CREATION (4) → REDEMPTION (5) → final VICTORY (19) → NEW CREATION (21-22)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Hymn pattern",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "TYPE 3 deep — 'BOOK OF LIFE' appears 7 times in Revelation (3:5, 13:8, 17:8, 20:12, 20:15, 21:27, 22:19). What does the TEXT NARRATE about this book?",
+    "explanation": "Revelation's 7 'book of life' references: (1) 3:5 promises Sardis overcomer 'I will NEVER BLOT his name out of the book of life'; (2) 13:8 'all who dwell on earth will worship it, everyone whose name has not been WRITTEN before the foundation of the world in the book of life of the LAMB who was SLAIN'; (3) 17:8 same; (4) 20:12 the book is opened at judgment; (5) 20:15 'if anyone's name was NOT FOUND written in the book of life, he was thrown into the lake of fire'; (6) 21:27 'only those WRITTEN in the Lamb's book of life' enter the new Jerusalem; (7) 22:19 a warning that adding/taking from the book causes 'God will take away his share in the tree of life'. CENTRAL TRUTH: the book of the SLAIN LAMB — names registered FROM BEFORE CREATION — only those NAMED enter eternal blessing.",
+    "language": "en",
+    "options": [
+      "The LAMB SLAIN's book — NAMES are WRITTEN BEFORE the foundation of the world (13:8, 17:8); WHOEVER's name is NOT in it is thrown into the LAKE of FIRE (20:15); ONLY those with names ENTER the new Jerusalem (21:27); 3:5 promises 'I will NOT BLOT OUT' the overcomer's name",
+      "Angel's book (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (in the story's sequence) (per the original content)",
+      "Apostles' book (as described in the passage) (as the text indicates) (in the context of the passage) (according to the text's framing) (cross-referenced with related passages)",
+      "David's book (according to the text's framing) (per the original content) (per the textual narrative) (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Book of life",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 3 deep — In Revelation 7:9, the 'COUNTLESS' multitude before the throne — what's its meaning vs the 144,000 in 7:4?",
+    "explanation": "Revelation 7 gives 2 successive scenes: (1) 7:1-8 — 144,000 SEALED from 'the 12 tribes of Israel' (Israel's perfect number: 12 × 12,000); (2) 7:9-10 — 'a great multitude that NO ONE could number, from EVERY nation, EVERY tribe, EVERY people, EVERY language, standing before the throne and before the Lamb, clothed in white robes + with palm branches'. Revelation's rule: John HEARS 'X' then SEES 'Y' (cf. 5:5 hears 'Lion of Judah' then sees 'Lamb slain'). 144,000 + the countless multitude = TWO ASPECTS of the SAME REALITY = the COMPLETE CHURCH (Israel + Gentiles) including ALL the SAVED.",
+    "language": "en",
+    "options": [
+      "Two opposing groups (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (as described in the passage)",
+      "144,000 on earth, multitude in heaven (as described in the passage) (per the original content) (per the textual narrative) (in the story's sequence)",
+      "BOTH the SAME group described 2 ways: 144,000 = the PERFECT number of Israel (12 tribes × 12,000); the COUNTLESS multitude = 'every NATION + TRIBE + PEOPLE + LANGUAGE' = the GENTILE MISSION COMPLETED; both = the FULL CHURCH of Christ (Israel + Gentiles)",
+      "144,000 is only a few (according to the text's framing) (as the text indicates) (in the context of the passage) (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "144,000 vs multitude",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "TYPE 3 deep — Each LETTER in Revelation 2-3 ends with PROMISES to the OVERCOMER. How many promises total? Their meaning?",
+    "explanation": "7 PROMISES to OVERCOMERS ending the 7 letters: (1) Ephesus 2:7 — 'eat from the TREE OF LIFE in PARADISE' = 22:2; (2) Smyrna 2:11 — 'NOT hurt by the SECOND DEATH' = 20:14, 21:8; (3) Pergamum 2:17 — 'hidden MANNA + WHITE STONE with new name' = 22:4 'his name on their foreheads'; (4) Thyatira 2:26-27 — 'authority to RULE the nations + morning star' = 20:4-6 'reign together'; (5) Sardis 3:5 — 'CLOTHED IN WHITE + I will NEVER BLOT his name from the book of life' = 19:8 'fine linen'; (6) Philadelphia 3:12 — 'PILLAR in the temple + 3 names' = 21:22 'no temple, for the Lord is the temple'; (7) Laodicea 3:21 — 'sit WITH me on MY THRONE' = 22:3-5 'they will reign forever'. CONCLUSION: every promise POINTS to the new Jerusalem — the final reward.",
+    "language": "en",
+    "options": [
+      "3 promises (according to the text's framing) (per the original content) (per the textual narrative) (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "SEVEN PROMISES — one per letter; ALL FULFILLED in Revelation 21-22 (= the NEW JERUSALEM): tree of life (2:7=22:2), not hurt by second death (2:11=20:14), white stone with new name (2:17=22:4 'his name on their foreheads'), authority to rule (2:26-27=20:6), white garments (3:5=19:8), pillar in temple (3:12=21:22), seated with Christ on throne (3:21=22:3-5)",
+      "1 promise (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (in the story's sequence) (per the original content) (per the textual narrative)",
+      "12 promises (as described in the passage) (as the text indicates) (in the context of the passage) (according to the text's framing) (cross-referenced with related passages) (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "7 overcomer promises",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 4 verse precision Revelation 1:8 — God/Christ's SELF-introduction at the book's start. The exact verse?",
+    "explanation": "Revelation 1:8 — 'I am the Alpha and the Omega, says the Lord God, who is and who was and who is to come, the Almighty'. Alpha (Α) + Omega (Ω) = the FIRST + LAST letters of the Greek alphabet = BEGINNING + END of all things. 'Who is, who was, who is to come' = echoing 'YHWH' of Ex 3:14 ('I AM WHO I AM'). This phrase APPEARS 4 TIMES in Revelation (1:8, 21:6, 22:13) — opening + closing the book.",
+    "language": "en",
+    "options": [
+      "'I am the Way' (per the textual narrative)",
+      "'I am the Life' (according to the text's framing)",
+      "'I am the Father' (as described in the passage)",
+      "'I am the ALPHA and the OMEGA, who IS and WHO WAS and WHO IS TO COME, the ALMIGHTY'"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Alpha + Omega",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "TYPE 4 verse precision Revelation 3:20 — Invitation sent to the LAODICEAN church (LUKEWARM). The exact verse?",
+    "explanation": "Revelation 3:20 — 'Behold, I stand at the door and knock. If anyone hears my voice and opens the door, I will come in to him and eat with him, and he with me'. This verse is ADDRESSED to the LAODICEAN CHURCH (NOT a personal evangelistic invitation — though widely used as such). Eating = FELLOWSHIP MEAL (Lord's Supper imagery) — Christ wants INTIMATE COMMUNION with the church that has shut Him out. 'Stand outside + knock' = a profoundly humble posture of the King of kings.",
+    "language": "en",
+    "options": [
+      "'I am the door' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "'BEHOLD, I STAND at the DOOR and KNOCK. If anyone HEARS my VOICE and OPENS the door, I will COME IN to him and EAT with him, and he with me'",
+      "'I am coming soon' (according to the text's framing) (as the text indicates)",
+      "'Whoever is thirsty, come' (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "3:20 stand at door",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 4 verse precision Revelation 5:12 — The 7-WORD song of praise to the Lamb. The exact 7 words?",
+    "explanation": "Revelation 5:12 — 'Saying with a loud voice, Worthy is the Lamb who was slain, to receive power and wealth and wisdom and might and honor and glory and blessing!' SEVEN WORDS: (1) power (dynamis), (2) wealth (ploutos), (3) wisdom (sophia), (4) might (ischys), (5) honor (timē), (6) glory (doxa), (7) blessing (eulogia). The number 7 = total COMPLETENESS. Compare: 4:11 has only 3 words ('glory, honor, power') for the Father; 5:12 has 7 for the Lamb — the Lamb RECEIVES the same worship as the Father (= Christ's deity).",
+    "language": "en",
+    "options": [
+      "'Blessing, glory, grace, life, honor, faith, beauty' (according to the text's framing)",
+      "'Love, joy, peace, patience, kindness, goodness, faith'",
+      "'WORTHY is the LAMB who was slain to receive POWER, WEALTH, WISDOM, MIGHT, HONOR, GLORY, BLESSING' (7 words)",
+      "'Father, Son, Spirit, King, Priest, Prophet, Lamb' (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "7-word praise",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "TYPE 4 verse precision Revelation 21:5 — The MAJESTIC declaration of the One on the throne in the NEW creation. The exact verse?",
+    "explanation": "Revelation 21:5 — 'And he who was seated on the throne said, Behold, I am making all things new. Also he said, Write this down, for these words are trustworthy and true'. This is the SECOND DIRECT speech of God on the throne in the book (after 1:8). 'MAKING ALL THINGS NEW' = sums up the entire plan of redemption: NOT creating a different world, but RENEWING this one. Echoes Isaiah 43:19 ('I am doing a new thing').",
+    "language": "en",
+    "options": [
+      "'I love you' (according to the text's framing) (per the original content)",
+      "'BEHOLD, I am MAKING ALL THINGS NEW' — Then he said, 'WRITE THIS DOWN, for these WORDS are TRUSTWORTHY and TRUE'",
+      "'I forgive you' (as described in the passage) (as the text indicates)",
+      "'Follow me' (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "All things new",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 4 verse precision Revelation 22:17 — The INVITATION near the end of Scripture. The EXACT verse?",
+    "explanation": "Revelation 22:17 — 'The Spirit and the Bride say, Come. And let the one who hears say, Come. And let the one who is thirsty come; let the one who desires take the water of life without price'. The Bible's FINAL invitation — combining 2 levels: (1) the Holy Spirit + the church (Bride) SAY 'come' to CHRIST (longing for the Second Coming); (2) AT the same time inviting SINNERS to 'come receive the water of life freely'. The OPEN + FREE INVITATION — the Gospel to the LAST MOMENT.",
+    "language": "en",
+    "options": [
+      "'Repent' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "'Love one another' (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "'Keep the Law' (according to the text's framing) (per the original content) (per the textual narrative)",
+      "'The SPIRIT and the BRIDE say, COME! And let the one who HEARS say, COME! And let the one who is THIRSTY come; let the one who DESIRES take the WATER of LIFE without PRICE'"
+    ],
+    "tags": [
+      "New Testament",
+      "Revelation",
+      "Prophecy",
+      "Come, take freely",
+      "Advanced"
+    ]
   }
 ]

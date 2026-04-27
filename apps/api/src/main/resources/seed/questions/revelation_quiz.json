@@ -537,5 +537,2129 @@
       "Khải tượng",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Khải Huyền 1:3, ai được PHƯỚC theo lời mở đầu sách?",
+    "explanation": "Khải Huyền 1:3 — 'Phước cho kẻ đọc cùng những kẻ nghe lời tiên tri này, và giữ theo điều đã viết ra đây. Vì thì giờ đã gần rồi'. Đây là PHƯỚC ĐẦU TIÊN trong 7 phước của Khải Huyền (1:3, 14:13, 16:15, 19:9, 20:6, 22:7, 22:14).",
+    "language": "vi",
+    "options": [
+      "Người viết sách Khải Huyền (Giăng)",
+      "Người ở thành Giê-ru-sa-lem",
+      "Người ĐỌC, NGHE và GIỮ những lời tiên tri trong sách này",
+      "Người làm phép lạ (xet trong van canh)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Phước đầu sách",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Khải Huyền 1:9, sứ đồ Giăng nhận khải tượng tại đảo nào?",
+    "explanation": "Khải Huyền 1:9 — 'Tôi là Giăng, là anh em và bạn hữu cùng anh em về sự hoạn nạn, về nước, về sự nhịn nhục trong Đức Chúa Jêsus, tôi đã ở trong đảo gọi là Bát-mô, vì cớ lời Đức Chúa Trời và chứng cớ của Đức Chúa Jêsus'. Pát-mô = đảo nhỏ ở biển Ê-giê, nơi La Mã đày những người bị xét xử.",
+    "language": "vi",
+    "options": [
+      "Đảo Síp-rơ (xet trong van canh)",
+      "Đảo Cờ-rết (theo cach trinh bay cua text)",
+      "Đảo Man-ta (nhu duoc mo ta trong sach)",
+      "Đảo PÁT-MÔ — vì lời Đức Chúa Trời và chứng cớ Đức Chúa Jêsus"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Đảo Pát-mô",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Khải Huyền 1:10, Giăng được Đức Thánh Linh cảm hóa vào ngày nào?",
+    "explanation": "Khải Huyền 1:10 — 'Nhằm ngày của Chúa, tôi được Đức Thánh Linh cảm hóa, nghe đằng sau có tiếng kêu vang như tiếng loa'. 'Ngày của Chúa' (Lord's Day, kyriakē hēmera) = đề cập SỚM NHẤT trong Tân Ước về Chúa Nhật như ngày thờ phượng Cơ-đốc.",
+    "language": "vi",
+    "options": [
+      "Ngày Sa-bát (xet trong van canh)",
+      "NGÀY CỦA CHÚA (Lord's Day) — ngày Chúa Nhật",
+      "Ngày Lễ Vượt Qua",
+      "Ngày Lễ Ngũ Tuần"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Ngày của Chúa",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Khải Huyền 1:11, Chúa truyền Giăng viết gì và gửi đến BAO NHIÊU hội thánh?",
+    "explanation": "Khải Huyền 1:11 — 'Hãy viết những điều ngươi thấy ra trong một quyển sách, mà gởi cho bảy Hội thánh tại Ê-phê-sô, Si-miệc-nơ, Bẹt-găm, Thi-a-ti-rơ, Sạt-đe, Phi-la-đen-phi và Lao-đi-xê'. 7 hội thánh = lịch sử có thật, theo hình tròn đường thư tín.",
+    "language": "vi",
+    "options": [
+      "3 hội thánh tại Tiểu Á (theo cach trinh bay cua text)",
+      "12 hội thánh trên khắp đế quốc (nhu duoc mo ta trong sach)",
+      "BẢY hội thánh tại châu A-si: Ê-phê-sô, Si-miệc-nơ, Bẹt-găm, Thi-a-ti-rơ, Sạt-đe, Phi-la-đen-phi, Lao-đi-xê",
+      "70 hội thánh (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "7 hội thánh",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 16,
+    "content": "Theo Khải Huyền 1:13-16, Giăng thấy CON NGƯỜI ở giữa 7 chân đèn, đặc điểm ngoại hình thế nào?",
+    "explanation": "Khải Huyền 1:13-16 — 'Đầu và tóc người trắng như lông chiên trắng, như tuyết; mắt như ngọn lửa; chân như đồng sáng đã luyện trong lò; tiếng như tiếng nước lớn; tay hữu cầm bảy ngôi sao; miệng thò ra thanh gươm nhọn hai lưỡi; mặt như mặt trời khi soi sáng hết sức'. Hình ảnh dồn nén Cựu Ước (Đa-ni-ên 7 + 10).",
+    "language": "vi",
+    "options": [
+      "TÓC TRẮNG như lông chiên + như tuyết, mắt như NGỌN LỬA, chân giống ĐỒNG, miệng có GƯƠM HAI LƯỠI bén, mặt như mặt trời",
+      "Mặc giáp sắt và đội mão gai (nhu duoc mo ta trong sach)",
+      "Dáng nhỏ bé khiêm nhường (theo cach trinh bay cua text)",
+      "Mặc áo dân thường (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Con Người 1:13-16",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 11,
+    "content": "Theo Khải Huyền 2:8-11, hội thánh Si-miệc-nơ được Chúa khen vì điều gì?",
+    "explanation": "Khải Huyền 2:9-10 — 'Ta biết sự khốn khó nghèo khổ của ngươi (dầu ngươi giàu)... Đừng ngại điều mình sẽ chịu khổ. Nầy, ma quỉ sẽ quăng nhiều kẻ trong các ngươi vào ngục, hầu cho các ngươi bị thử thách; các ngươi sẽ bị hoạn nạn trong mười ngày. Khá giữ trung tín cho đến chết, rồi ta sẽ ban cho ngươi mão triều thiên của sự sống'. Si-miệc-nơ (cùng với Phi-la-đen-phi) = 2 hội thánh CHỈ ĐƯỢC KHEN, không bị quở.",
+    "language": "vi",
+    "options": [
+      "Vì đức tin và sự khôn ngoan của các trưởng lão",
+      "Vì có nhiều phép lạ (xet trong van canh)",
+      "Vì xây dựng đền lớn (theo cach trinh bay cua text)",
+      "Vì chịu HOẠN NẠN, NGHÈO KHỔ (nhưng giàu trong Chúa) và SẮP CHỊU MƯỜI NGÀY tù; Chúa hứa MÃO TRIỀU sự sống"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Si-miệc-nơ trung tín",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 17,
+    "content": "Theo Khải Huyền 2:17, Chúa hứa ban gì cho người đắc thắng tại Bẹt-găm?",
+    "explanation": "Khải Huyền 2:17 — 'Kẻ nào thắng, ta sẽ ban cho ma-na đương giấu kín; và ta sẽ cho nó hòn sỏi trắng, trên đó có viết một tên mới, ngoài kẻ nhận lấy không ai biết đến'. Đá trắng cổ La Mã = thẻ vô tội (xét xử) hoặc thẻ vào yến tiệc; tên mới = bản sắc mới trong Christ.",
+    "language": "vi",
+    "options": [
+      "Một thanh gươm vàng (theo cach trinh bay cua text)",
+      "MA-NA giấu kín và MỘT VIÊN ĐÁ TRẮNG có TÊN MỚI viết trên đó (chỉ người nhận biết)",
+      "Một mão triều thiên bằng vàng",
+      "Một áo choàng tím (xet trong van canh)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Đá trắng tên mới",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 6,
+    "content": "Theo Khải Huyền 3:1-6, Chúa nói gì về tình trạng hội thánh Sạt-đe?",
+    "explanation": "Khải Huyền 3:1-2 — 'Ta biết công việc ngươi; ngươi có tiếng là sống, nhưng mà là chết. Hãy tỉnh thức, và làm cho vững sự còn lại, là sự hầu chết'. Sạt-đe = thành nổi tiếng giàu nhưng đã suy giảm. Sạt-đe + Lao-đi-xê = 2 hội thánh CHỈ BỊ QUỞ, không được khen.",
+    "language": "vi",
+    "options": [
+      "'Ngươi yêu mến lẽ thật' (xet trong van canh)",
+      "'Ngươi giàu có thật trong Chúa'",
+      "'Ngươi có tiếng là SỐNG, nhưng mà là CHẾT' — chỉ vài người Sạt-đe chưa làm dơ áo mình",
+      "'Ngươi tinh ròng như vàng' (theo cach trinh bay cua text)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Sạt-đe sống nhưng chết",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "Theo Khải Huyền 3:7-13, hội thánh Phi-la-đen-phi được Chúa nói: 'Ta đã đặt trước mặt ngươi MỘT CÁI CỬA' — cửa đó như thế nào?",
+    "explanation": "Khải Huyền 3:7-8 — 'Nầy là lời phán của Đấng thánh, chân thật, là Đấng có chìa khóa của Đa-vít, mở thì không ai đóng được, đóng thì không ai mở được: Ta biết công việc ngươi; nầy, ta đã mở trước mặt ngươi một cái cửa không ai đóng được; vì ngươi có ít năng lực, mà đã giữ đạo ta, và chẳng chối danh ta'. Phi-la-đen-phi = 1 trong 2 hội thánh CHỈ ĐƯỢC KHEN.",
+    "language": "vi",
+    "options": [
+      "Cửa đóng cần phá (theo cach trinh bay cua text)",
+      "Cửa hẹp khó vào (xet trong van canh)",
+      "Cửa cho người ngoài (nhu duoc mo ta trong sach)",
+      "MỘT CÁI CỬA MỞ — không ai đóng được — vì hội thánh có sức ÍT, mà đã GIỮ đạo Chúa, không CHỐI danh Chúa"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Phi-la-đen-phi cửa mở",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 22,
+    "content": "Theo Khải Huyền 3:14-22, Chúa quở hội thánh Lao-đi-xê vì điều gì?",
+    "explanation": "Khải Huyền 3:15-17 — 'Ta biết công việc của ngươi; ngươi không lạnh cũng không nóng. Ước gì ngươi lạnh hoặc nóng thì hay! Vậy, vì ngươi hâm hẩm, không nóng cũng không lạnh, nên ta sẽ nhả ngươi ra khỏi miệng ta. Vả, ngươi nói: Ta giàu, ta nên giàu có rồi, không cần chi nữa; song ngươi không biết rằng mình khổ sở, khốn khó, nghèo ngặt, đui mù, và lõa lồ'. Lao-đi-xê = thành phố ngân hàng + dược phẩm + dệt; Chúa khuyên mua VÀNG + ÁO TRẮNG + THUỐC XỨC MẮT (ngược với điều thành tự hào).",
+    "language": "vi",
+    "options": [
+      "Vì HÂM HẨM (lukewarm) — không nóng cũng không lạnh; Chúa sẽ MỬA ra khỏi miệng. Lao-đi-xê tự xưng giàu nhưng thực CHẤT là KHỐN KHỔ, KHỐN NẠN, NGHÈO NGÔ, ĐUI MÙ, LÕA LỒ",
+      "Vì có nhiều giáo sư giả (nhu duoc mo ta trong sach) (xet theo noi dung goc)",
+      "Vì thờ thần tượng (theo cach trinh bay cua text) (nhu van ban ghi ro)",
+      "Vì bỏ buổi nhóm (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Lao-đi-xê hâm hẩm",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "Theo Khải Huyền 4:6-8, BỐN sinh vật quanh ngai có hình dạng gì?",
+    "explanation": "Khải Huyền 4:6-8 — 'Vật thứ nhứt giống như sư tử, vật thứ nhì như bò đực, vật thứ ba mặt như mặt người, vật thứ tư như chim phụng hoàng đang bay. Bốn con sanh vật ấy mỗi con có sáu cánh, chung quanh mình và trong mình đều có mắt'. Tương đồng Ê-xê-chi-ên 1; biểu tượng truyền thống của 4 Phúc âm: Mác (sư tử), Lu-ca (bò), Ma-thi-ơ (người), Giăng (chim ưng).",
+    "language": "vi",
+    "options": [
+      "Tất cả đều có cánh thiên thần (theo cach trinh bay cua text)",
+      "Một con chim, một con cá, một con thú, một con người",
+      "Sinh vật 1 = SƯ TỬ, sinh vật 2 = BÒ TƠ, sinh vật 3 = MẶT NGƯỜI, sinh vật 4 = CHIM ƯNG ĐANG BAY — mỗi con có 6 cánh, đầy mắt",
+      "Bốn con bò có sừng (xet trong van canh) (nhu duoc mo ta trong sach)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "4 sinh vật quanh ngai",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 7,
+    "content": "Theo Khải Huyền 5:1-7, ai là người DUY NHẤT XỨNG ĐÁNG mở quyển sách niêm 7 ấn?",
+    "explanation": "Khải Huyền 5:5-7 — 'Một trong các trưởng lão nói với tôi rằng: Chớ khóc, kìa, sư tử của chi phái Giu-đa, tức là Chồi của vua Đa-vít, đã thắng, thì có thể mở quyển sách ấy và tháo bảy cái ấn ra. Tôi lại thấy ở giữa ngôi và bốn con sanh vật, cùng ở giữa các trưởng lão, có một Chiên Con ở đó như đã bị giết'. Sư tử Giu-đa = Chiên Con bị giết = Christ.",
+    "language": "vi",
+    "options": [
+      "Một thiên sứ lớn (nhu duoc mo ta trong sach)",
+      "CHIÊN CON đứng giữa ngai như đã bị giết — Đấng có 7 sừng + 7 mắt",
+      "Áp-ra-ham (xet trong van canh)",
+      "24 trưởng lão (theo cach trinh bay cua text)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Chiên Con xứng đáng",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Khải Huyền 7:4, có BAO NHIÊU người được niêm ấn từ các chi phái Y-sơ-ra-ên?",
+    "explanation": "Khải Huyền 7:4 — 'Tôi lại nghe số người được đóng ấn là: Có mười bốn vạn bốn ngàn người được đóng ấn từ trong các chi phái dân Y-sơ-ra-ên'. 7:5-8 liệt kê: 12,000 mỗi chi phái × 12 chi phái = 144,000 (Giu-đa, Ru-bên, Gát, A-se, Nép-ta-li, Ma-na-se, Si-mê-ôn, Lê-vi, Y-sa-ca, Sa-bu-lôn, Giô-sép, Bên-gia-min — DAN bị bỏ, Giô-sép thay).",
+    "language": "vi",
+    "options": [
+      "12,000 người (xet trong van canh)",
+      "70,000 người (theo cach trinh bay cua text)",
+      "1,000,000 người (nhu duoc mo ta trong sach)",
+      "144,000 người — 12,000 từ MỖI trong 12 chi phái Y-sơ-ra-ên"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "144,000 niêm ấn",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 5,
+    "content": "Theo Khải Huyền 12:1-5, dấu lớn ở trên trời mà Giăng thấy là một NGƯỜI ĐÀN BÀ — đặc điểm gì?",
+    "explanation": "Khải Huyền 12:1-2 — 'Có một dấu lớn hiện ra trên trời: một người đờn bà có mặt trời bao bọc, dưới chân có mặt trăng, và trên đầu có mão triều thiên bằng mười hai ngôi sao'. Hình ảnh = dân Y-sơ-ra-ên hoặc Si-ôn (Sáng-thế 37:9-11 giấc mơ Giô-sép); con trai = Christ (12:5 'sẽ chăn các dân bằng gậy sắt').",
+    "language": "vi",
+    "options": [
+      "MẶC MẶT TRỜI, dưới chân có MẶT TRĂNG, đầu đội MÃO 12 NGÔI SAO; đang sinh ra một CON TRAI sẽ chăn các dân bằng 'gậy sắt'",
+      "Mặc áo trắng đơn giản (nhu duoc mo ta trong sach)",
+      "Mặc áo dệt vàng (theo cach trinh bay cua text)",
+      "Mặc nhung (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Người đàn bà mặt trời",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 17,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Khải Huyền 17:5, người đàn bà cưỡi con thú đỏ tía có TÊN BÍ MẬT viết trên trán là gì?",
+    "explanation": "Khải Huyền 17:3-5 — 'Tôi thấy một người đờn bà ngồi trên lưng một con thú sắc đỏ sậm... Trên trán nó có ghi một tên, là: SỰ MẦU NHIỆM, BA-BY-LÔN LỚN, LÀ MẸ KẺ TÀ DÂM VÀ SỰ ĐÁNG GỚM GHÊ TRONG THẾ GIAN'. Ba-by-lôn lớn = đại diện đế quốc + hệ thống thế gian thù nghịch Chúa (= Rô-ma đương thời, theo nhiều người diễn giải).",
+    "language": "vi",
+    "options": [
+      "'Si-ôn của Đa-vít'",
+      "'Y-sơ-ra-ên trung tín'",
+      "'BA-BY-LÔN LỚN, MẸ KẺ TÀ DÂM và sự GỚM GHIẾC TRÊN ĐẤT'",
+      "'Người vợ của Sa-tan'"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Ba-by-lôn lớn",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 9,
+    "content": "Theo Khải Huyền 19:7-9, sự kiện vĩ đại được loan báo trên trời là gì?",
+    "explanation": "Khải Huyền 19:7-9 — 'Chúng ta hãy hớn hở vui mừng, tôn vinh Ngài; vì lễ cưới Chiên Con đã tới, và vợ Ngài đã sửa soạn... Có lời phán cùng tôi rằng: Hãy chép: Phước thay cho những kẻ được mời đến dự tiệc cưới Chiên Con! Người lại tiếp rằng: Đó là những lời chân thật của Đức Chúa Trời'. Đây = phước thứ 4 trong 7 phước Khải Huyền.",
+    "language": "vi",
+    "options": [
+      "Sự đánh bại Sa-tan (theo cach trinh bay cua text)",
+      "TIỆC CƯỚI CHIÊN CON — Vợ của Chiên Con đã sửa soạn (= Hội thánh); 'Phước cho những kẻ được mời đến dự tiệc cưới Chiên Con'",
+      "Sự sống lại của các thánh (nhu duoc mo ta trong sach)",
+      "Sự thiêu hủy đất (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Tiệc cưới Chiên Con",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Khải Huyền 22:20, lời CUỐI cùng của Chúa Jêsus trong sách (và cả Kinh Thánh) là gì? Câu đáp lại?",
+    "explanation": "Khải Huyền 22:20 — 'Đấng làm chứng cho những điều ấy, phán rằng: Phải, ta đến mau chóng. A-men, lạy Đức Chúa Jêsus, xin hãy đến! Nguyền xin ân điển của Đức Chúa Jêsus ở với mọi người!' Lời cuối Tân Ước = 'Maranatha' (1 Cô 16:22 'Lạy Chúa, xin hãy đến') — kết thúc bằng lời cầu mong sự tái lâm.",
+    "language": "vi",
+    "options": [
+      "'Hãy giữ Luật pháp' / 'A-men'",
+      "'Hãy yêu nhau' / 'Vâng' (xet trong van canh)",
+      "'Ta là Đấng Tự Hữu' / 'A-men'",
+      "'PHẢI, TA ĐẾN MAU CHÓNG' — đáp: 'A-MEN, lạy Đức Chúa Jêsus, xin hãy ĐẾN!'"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Ta đến mau chóng",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Khải Huyền 19:16, trên ÁO + TRÊN ĐÙI Đấng cưỡi NGỰA TRẮNG có DANH gì viết?",
+    "explanation": "Khải Huyền 19:16 — 'Trên áo tơi và trên đùi Ngài, có đề một danh là VUA CỦA CÁC VUA VÀ CHÚA CỦA CÁC CHÚA'. 'Vua các vua + Chúa các chúa' = TÊN ĐẶC TRƯNG của Christ (xuất hiện 1 Ti-mô-thê 6:15, Khải Huyền 17:14, 19:16). CỘT ĐẦU = quyền tối cao tuyệt đối — không có vua hay chúa nào KHÔNG ở dưới Ngài.",
+    "language": "vi",
+    "options": [
+      "'Đức Chúa Cha' (theo cach trinh bay cua text)",
+      "'Em-ma-nu-ên' (xet trong van canh)",
+      "'VUA của các VUA + CHÚA của các CHÚA' (King of kings and Lord of lords)",
+      "'Sư tử Giu-đa' (nhu duoc mo ta trong sach)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Vua các vua",
+      "Co ban"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Khải Huyền 1:20, BÍ MẬT của 7 ngôi sao + 7 chân đèn vàng được Chúa GIẢI THÍCH thế nào?",
+    "explanation": "Khải Huyền 1:20 — 'Sự mầu nhiệm của bảy ngôi sao mà ngươi thấy trong tay hữu ta, và của bảy chân đèn vàng là nầy: Bảy ngôi sao là các thiên sứ của bảy Hội thánh, còn bảy chân đèn là bảy Hội thánh vậy'. Đây là QUY TẮC giải mã hiếm hoi Chúa cho — toàn bộ phần còn lại của sách KHÔNG có giải mã trực tiếp.",
+    "language": "vi",
+    "options": [
+      "7 ngôi sao = 7 thiên sứ Sa-tan; 7 chân đèn = 7 mưu kế",
+      "7 ngôi sao = các ngôi sao thiên văn; 7 chân đèn = ánh sáng thật",
+      "7 NGÔI SAO = THIÊN SỨ (hoặc sứ giả) của 7 hội thánh; 7 CHÂN ĐÈN = 7 HỘI THÁNH",
+      "7 ngôi sao = 7 hành tinh; 7 chân đèn = 7 ngày sáng thế"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "7 ngôi sao + 7 chân đèn",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 7,
+    "content": "Theo Khải Huyền 2:1-7, hội thánh Ê-phê-sô được KHEN vì điều gì, và bị quở vì điều gì?",
+    "explanation": "Khải Huyền 2:2-4 — 'Ta biết công việc ngươi, sự khó nhọc ngươi, sự nhịn nhục ngươi; ta biết ngươi không thể dung được những kẻ ác, lại đã thử những kẻ tự xưng là sứ đồ mà không phải là sứ đồ, ngươi đã rõ rằng chúng nó giả dối. Ngươi hay nhịn nhục và chịu khó vì danh ta, không mệt nhọc chút nào. Nhưng điều ta trách ngươi, là ngươi đã bỏ lòng kính mến ban đầu'. Lời khuyên: nhớ + ăn năn + làm công việc đầu tiên (2:5).",
+    "language": "vi",
+    "options": [
+      "Khen: nhiều phép lạ / Quở: thiếu công bình (nhu duoc mo ta trong sach)",
+      "Khen: chịu khó + chịu khổ + ghét VIỆC LÀM của NI-CÔ-LA + thử người tự xưng sứ đồ; Quở: BỎ LÒNG KÍNH MẾN BAN ĐẦU",
+      "Khen: giàu có / Quở: kiêu ngạo (xet trong van canh)",
+      "Khen: yêu nhau / Quở: lười biếng (theo cach trinh bay cua text)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Ê-phê-sô bỏ lòng kính mến",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Khải Huyền 2:13, hội thánh Bẹt-găm ở tại nơi nào — được Chúa mô tả là 'NƠI NÀO'?",
+    "explanation": "Khải Huyền 2:13 — 'Ta biết nơi ngươi ở; đó là ngôi của quỉ Sa-tan; ngươi đã vững lòng tôn danh ta, không chối đạo ta, dầu trong những ngày đó An-ti-ba, kẻ làm chứng trung thành của ta, đã bị giết nơi các ngươi, là nơi quỉ Sa-tan ở'. Bẹt-găm = thủ phủ tỉnh A-si La Mã; có đền thờ Au-gút-tơ + đền thờ thần Asclepius (con rắn = symbol).",
+    "language": "vi",
+    "options": [
+      "Nơi tổ phụ Áp-ra-ham đã ở (xet trong van canh)",
+      "Nơi đền thờ thật của Đức Chúa Trời (nhu duoc mo ta trong sach)",
+      "Nơi người Do Thái rao giảng đầu (theo cach trinh bay cua text)",
+      "Nơi NGAI của QUỈ SA-TAN — vẫn giữ vững DANH Chúa, không CHỐI ĐỨC TIN — dù An-ti-ba TỬ ĐẠO"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Bẹt-găm ngai Sa-tan",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 23,
+    "content": "Theo Khải Huyền 2:18-23, hội thánh Thi-a-ti-rơ bị quở vì DUNG TÚNG người nữ tên gì — đã DỤ DỖ tôi tớ Chúa phạm tà dâm + ăn của cúng?",
+    "explanation": "Khải Huyền 2:20 — 'Nhưng điều ta trách ngươi, ấy là ngươi còn dung cho Giê-sa-bên, người nữ ấy xưng mình là tiên tri, dạy dỗ và phỉnh phờ tôi tớ ta, đặng rủ chúng nó phạm tà dâm, và ăn thịt cúng thần tượng'. Tên 'Giê-sa-bên' = ám chỉ vợ A-háp đưa thờ Ba-anh vào Y-sơ-ra-ên (1 Các vua 16:31).",
+    "language": "vi",
+    "options": [
+      "GIÊ-SA-BÊN — tự xưng tiên tri (gợi nhớ Giê-sa-bên vợ A-háp 1 Vua 16-21); Chúa hứa quăng vào giường + giết con cái nàng",
+      "Bê-tha-bê (nhu duoc mo ta trong sach) (nhu van ban ghi ro)",
+      "Đa-li-la (xet trong van canh) (theo trinh tu cau chuyen)",
+      "A-tha-li (theo cach trinh bay cua text) (xet theo noi dung goc)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Thi-a-ti-rơ Giê-sa-bên",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Khải Huyền 3:12, lời hứa cho người ĐẮC THẮNG tại Phi-la-đen-phi là gì?",
+    "explanation": "Khải Huyền 3:12 — 'Kẻ nào thắng, ta sẽ cho làm trụ trong đền Đức Chúa Trời ta, và người sẽ không ra khỏi đó nữa; ta lại sẽ lấy danh Đức Chúa Trời ta, danh của thành Đức Chúa Trời ta, là Giê-ru-sa-lem mới từ trên trời, bởi Đức Chúa Trời ta mà xuống, cùng danh mới ta, mà viết trên người'. Phi-la-đen-phi (= 'tình anh em') hay bị động đất → Chúa hứa CỘT TRỤ vững chắc.",
+    "language": "vi",
+    "options": [
+      "Một thanh gươm (xet trong van canh) (theo trinh tu cau chuyen)",
+      "Một mão triều thiên bằng vàng (nhu duoc mo ta trong sach) (xet theo noi dung goc)",
+      "LẤY làm CỘT TRỤ trong đền thờ Đức Chúa Trời ta — không ra khỏi đó nữa; ta sẽ VIẾT trên người TÊN Đức Chúa Trời ta + TÊN Giê-ru-sa-lem mới + TÊN MỚI của ta",
+      "Vương quốc trên đất (theo cach trinh bay cua text) (nhu van ban ghi ro)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Cột trụ + 3 tên",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Khải Huyền 3:18, Chúa khuyên hội thánh Lao-đi-xê MUA gì từ Ngài?",
+    "explanation": "Khải Huyền 3:18 — 'Ta khuyên ngươi hãy mua vàng thử lửa của ta, hầu cho ngươi trở nên giàu có; mua những áo trắng, hầu cho ngươi được mặc vào, và điều xấu hổ về sự lõa lồ ngươi không lộ ra; lại mua thuốc xức mắt đặng thoa mắt ngươi, hầu cho ngươi thấy được'. Lao-đi-xê có 3 ngành nổi tiếng: ngân hàng (vàng), dệt cừu đen (áo), dược (thuốc xức mắt Phrygian) — Chúa nói 'ngươi cần MUA TỪ TA'.",
+    "language": "vi",
+    "options": [
+      "Mua trâu bò chăn (theo cach trinh bay cua text) (xet theo noi dung goc)",
+      "Mua sự khôn ngoan (nhu duoc mo ta trong sach) (nhu van ban ghi ro)",
+      "Mua đất nước (xet trong van canh) (theo trinh tu cau chuyen)",
+      "Mua VÀNG thử lửa, ÁO TRẮNG che lõa lồ, THUỐC XỨC MẮT để sáng mắt — ngược với những gì thành Lao-đi-xê tự hào (ngân hàng, dệt, dược)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Lao-đi-xê 3 thứ mua",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Khải Huyền 4:4, quanh ngai Đức Chúa Trời có BAO NHIÊU trưởng lão? Mặc + đội gì?",
+    "explanation": "Khải Huyền 4:4 — 'Chung quanh ngôi lại có hai mươi bốn ngôi; trên những ngôi ấy tôi thấy hai mươi bốn trưởng lão ngồi, mặc áo trắng và đầu đội mão triều thiên vàng'. 24 = 12 chi phái Y-sơ-ra-ên + 12 sứ đồ (theo nhiều người giải) hoặc 24 phiên thầy tế lễ Lê-vi (1 Sử 24).",
+    "language": "vi",
+    "options": [
+      "12 trưởng lão / áo xanh + mão bạc",
+      "24 TRƯỞNG LÃO / mặc ÁO TRẮNG, đầu đội MÃO TRIỀU THIÊN BẰNG VÀNG, ngồi trên 24 ngai",
+      "70 trưởng lão / áo đỏ (xet trong van canh)",
+      "144 trưởng lão / áo gấm (theo cach trinh bay cua text)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "24 trưởng lão",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Khải Huyền 4:5, trước ngai Đức Chúa Trời có BẢY ngọn đèn cháy — đó là gì?",
+    "explanation": "Khải Huyền 4:5 — 'Từ ngôi ra những chớp nhoáng, những tiếng cùng sấm; và bảy ngọn đèn sáng rực thắp trước ngôi: đó là bảy vì Thần của Đức Chúa Trời'. '7 vì Thần' xuất hiện 4 lần (1:4, 3:1, 4:5, 5:6); diễn giải = Đức Thánh Linh trong sự ĐẦY ĐỦ — Ê-sai 11:2 cho 7 đặc tính của Thần.",
+    "language": "vi",
+    "options": [
+      "7 thiên sứ trưởng (theo cach trinh bay cua text)",
+      "7 vị tiên tri (xet trong van canh)",
+      "BẢY THẦN của ĐỨC CHÚA TRỜI (= 7 Spirits = Đức Thánh Linh trong sự đầy đủ)",
+      "7 ngôi sao thiên văn (nhu duoc mo ta trong sach)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "7 vị Thần",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 11,
+    "content": "Theo Khải Huyền 4:10-11, hành động của 24 trưởng lão trước ngai và lời ngợi khen của họ là gì?",
+    "explanation": "Khải Huyền 4:10-11 — 'Hai mươi bốn trưởng lão sấp mình xuống trước mặt Đấng ngự trên ngôi, và thờ lạy Đấng hằng sống đời đời; rồi quăng mão triều thiên mình trước ngôi mà rằng: Lạy Đức Chúa Trời là Chúa chúng tôi, Chúa đáng được vinh hiển, tôn quí và quyền lực; vì Chúa đã dựng nên muôn vật, và ấy là vì ý muốn Chúa mà muôn vật mới có và đã được dựng nên'. Bài SÁNG TẠO = ngợi khen Cha.",
+    "language": "vi",
+    "options": [
+      "NGÃ XUỐNG trước Đấng ngự trên ngai + lấy MÃO TRIỀU mình QUĂNG TRƯỚC NGAI; hô: 'Lạy Chúa là Đức Chúa Trời chúng tôi, Chúa ĐÁNG được vinh hiển + tôn quý + quyền lực; vì Chúa đã DỰNG NÊN MUÔN VẬT'",
+      "Đứng nghiêm và chào (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)",
+      "Hát một bài thánh ca cũ (theo cach trinh bay cua text) (xet theo noi dung goc)",
+      "Cầm thanh gươm dâng lên (nhu duoc mo ta trong sach) (nhu van ban ghi ro) (theo boi canh doan nay)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Trưởng lão quăng mão",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Khải Huyền 5:6, Chiên Con như đã bị giết có ĐẶC ĐIỂM gì?",
+    "explanation": "Khải Huyền 5:6 — 'Tôi lại thấy ở giữa ngôi và bốn con sanh vật, cùng ở giữa các trưởng lão, có một Chiên Con ở đó như đã bị giết; Chiên Con có bảy sừng và bảy mắt, là bảy vì Thần của Đức Chúa Trời sai xuống khắp thế gian'. Sừng = quyền phép (7 = đầy đủ); mắt = hiểu biết (7 = toàn tri). Số 7 cả 2 = quyền phép + tri thức ĐẦY ĐỦ.",
+    "language": "vi",
+    "options": [
+      "3 sừng + 3 mắt (xet trong van canh)",
+      "1 sừng + 1 mắt (theo cach trinh bay cua text)",
+      "12 sừng + 12 mắt (nhu duoc mo ta trong sach)",
+      "BẢY SỪNG + BẢY MẮT — 7 mắt = '7 vì Thần Đức Chúa Trời sai đi khắp đất'"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Chiên Con 7 sừng 7 mắt",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Khải Huyền 5:8, BÁT VÀNG đầy hương mà 24 trưởng lão dâng = gì?",
+    "explanation": "Khải Huyền 5:8 — 'Khi lấy sách, bốn con sanh vật và hai mươi bốn trưởng lão bèn sấp mình xuống trước mặt Chiên Con, mỗi kẻ cầm một cây đờn và những hình vàng đầy hương; đó là những lời cầu nguyện của các thánh'. Hình ảnh: hương dâng tại đền thờ + lời cầu nguyện thánh đồ ĐƯỢC TRÌNH lên trước Chiên Con — mọi lời cầu KHÔNG BỊ MẤT.",
+    "language": "vi",
+    "options": [
+      "Hương thơm các vườn (theo cach trinh bay cua text)",
+      "LỜI CẦU NGUYỆN của các thánh đồ — Mỗi trưởng lão cầm đờn cầm + bát vàng",
+      "Tế lễ thiêu (xet trong van canh)",
+      "Hương trầm nguyên chất (nhu duoc mo ta trong sach)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Bát vàng = lời cầu",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 10,
+    "content": "Theo Khải Huyền 5:9-10, BÀI HÁT MỚI mà 4 sinh vật + 24 trưởng lão hát cho Chiên Con tóm tắt sự cứu rỗi UNIVERSAL nào?",
+    "explanation": "Khải Huyền 5:9-10 — 'Chúng hát một bài ca mới rằng: Ngài đáng lấy quyển sách mà mở những ấn ra; vì Ngài đã chịu giết, lấy huyết mình mà chuộc cho Đức Chúa Trời những người thuộc về mọi chi phái, mọi tiếng, mọi dân tộc, mọi nước, và Ngài đã làm cho những người ấy nên nước Ngài, và thầy tế lễ cho Đức Chúa Trời chúng ta; những người ấy sẽ trị vì trên mặt đất'. Sứ mạng dân ngoại = ĐÃ HOÀN THÀNH trên trời.",
+    "language": "vi",
+    "options": [
+      "'Christ là Vua của Y-sơ-ra-ên' (theo cach trinh bay cua text) (xet theo noi dung goc)",
+      "'Christ ban Luật Pháp mới' (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)",
+      "'Ngài ĐÁNG mở sách + tháo ấn; vì Ngài đã BỊ GIẾT, lấy HUYẾT mình MUA cho Đức Chúa Trời những người thuộc về MỌI CHI PHÁI, MỌI TIẾNG, MỌI DÂN TỘC, MỌI NƯỚC; làm cho họ NÊN NƯỚC + THẦY TẾ LỄ'",
+      "'Ngài giải phóng dân Y-sơ-ra-ên' (nhu duoc mo ta trong sach) (nhu van ban ghi ro)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Bài ca mới Chiên Con",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 8,
+    "content": "Theo Khải Huyền 6:3-8, BỐN kỵ sĩ của 4 ấn đầu tiên cưỡi ngựa MÀU GÌ và biểu trưng gì?",
+    "explanation": "Khải Huyền 6:1-8 — Ấn 1: ngựa TRẮNG + người cầm cung đi 'thắng + được thắng' (6:2); Ấn 2: ngựa SẮC ĐỎ NHƯ LỬA + cầm gươm lớn 'cất hòa bình khỏi đất' (6:4); Ấn 3: ngựa Ô (đen) + cầm cân 'một đấu lúa mạch một quan tiền' (6:5-6); Ấn 4: ngựa VÀNG VÀNG (xám tro) + người cưỡi tên 'Sự Chết' (6:8). Đây = '4 kỵ sĩ Khải Huyền' nổi tiếng — dấu hiệu phán xét trên đất.",
+    "language": "vi",
+    "options": [
+      "Trắng (chinh phục), ĐỎ (chiến tranh), ĐEN (đói), VÀNG XÁM (chết) — 4 kỵ sĩ Khải Huyền",
+      "Vàng, bạc, đồng, sắt (theo cach trinh bay cua text)",
+      "Xanh, hồng, tím, cam (nhu duoc mo ta trong sach)",
+      "Tất cả màu trắng (xet trong van canh)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "4 kỵ sĩ",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 11,
+    "content": "Theo Khải Huyền 6:9-11, ấn THỨ NĂM cho thấy ai DƯỚI BÀN THỜ và họ kêu gì?",
+    "explanation": "Khải Huyền 6:9-11 — 'Khi Chiên Con mở ấn thứ năm, tôi thấy dưới bàn thờ có những linh hồn của kẻ đã chịu giết vì đạo Đức Chúa Trời và vì lời chứng họ đã làm. Chúng đều kêu lên lớn tiếng rằng: Lạy Chúa là Đấng thánh và chân thật, Chúa trì hoãn xét đoán và chẳng vì huyết chúng tôi báo thù những kẻ ở trên đất cho đến chừng nào? Có kẻ bèn cho họ mỗi người một cái áo trắng dài; và có lời phán rằng phải ở yên ít lâu nữa, cho đến khi được đủ số những tôi tớ cùng anh em mình phải bị giết như mình vậy'. Kêu báo thù = tiếng kêu của các thánh tử đạo trên trời.",
+    "language": "vi",
+    "options": [
+      "Các môn đồ đầu tiên kêu xin sống lại (nhu duoc mo ta trong sach) (xet theo noi dung goc)",
+      "Các thiên sứ kêu xin chiến đấu (theo cach trinh bay cua text) (nhu van ban ghi ro) (theo boi canh doan nay)",
+      "Các tổ phụ kêu xin nhớ lại (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)",
+      "Linh hồn các thánh đồ ĐÃ TỬ ĐẠO 'vì Đạo Đức Chúa Trời + chứng cớ Chúa Jêsus' — kêu lớn: 'Lạy Chúa là Đấng Thánh + Chân Thật, Chúa ĐỢI BAO LÂU không xét đoán + báo thù huyết chúng tôi?' — được áo trắng + bảo HÃY YÊN NGHỈ"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Ấn 5 thánh tử đạo",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 17,
+    "content": "Theo Khải Huyền 6:12-17, ấn THỨ SÁU mở ra: trời + đất rúng động dữ dội. CÂU CUỐI của các vua + tướng + người giàu là gì?",
+    "explanation": "Khải Huyền 6:15-17 — 'Các vua trên đất, các quan lớn, các tướng quân, các kẻ giàu, kẻ mạnh, các tôi mọi và những người tự chủ đều ẩn mình trong hang hố cùng hòn đá lớn trên núi mà nói với núi và đá lớn rằng: Hãy đè chúng ta xuống và giấu chúng ta cho khỏi mặt của Đấng ngự trên ngôi, và khỏi cơn giận của Chiên Con; vì ngày thạnh nộ lớn của Ngài đã đến, còn ai đứng nổi?' Câu cuối = câu hỏi rhetorical, đáp = AI có đức tin (7:9 đám đông không tính).",
+    "language": "vi",
+    "options": [
+      "'Hãy ăn năn' (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)",
+      "Họ TRỐN trong hang đá + núi và CẦU XIN núi đè lên: 'Hãy CHE CHÚNG TA khỏi mặt Đấng ngự trên ngôi + cơn GIẬN của CHIÊN CON; vì NGÀY THẠNH NỘ LỚN của Ngài đã đến — AI ĐỨNG NỔI?'",
+      "'Hãy thờ lạy chúng ta' (nhu duoc mo ta trong sach) (xet theo noi dung goc)",
+      "'Hãy chiến đấu' (theo cach trinh bay cua text) (nhu van ban ghi ro) (theo boi canh doan nay)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Ấn 6 ngày thạnh nộ",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Khải Huyền 7:14, đám đông không ai đếm được mặc áo trắng = ai? (theo lời trưởng lão)",
+    "explanation": "Khải Huyền 7:13-14 — 'Có một trưởng lão hỏi tôi rằng: Những kẻ mặc áo trắng đó là ai, và bởi đâu mà đến? Tôi thưa rằng: Lạy chúa, chúa biết điều đó. Người lại phán cùng tôi rằng: Đó là những kẻ ra khỏi cơn đại nạn, đã giặt và phiếu trắng áo mình trong huyết Chiên Con'. Hình ảnh nghịch lý: GIẶT TRẮNG bằng HUYẾT (= thờ phượng đối nghịch logic, biểu trưng cho cứu chuộc bởi sự chết Christ).",
+    "language": "vi",
+    "options": [
+      "Các thiên sứ (theo cach trinh bay cua text)",
+      "12 chi phái Y-sơ-ra-ên (nhu duoc mo ta trong sach)",
+      "Những người đã RA KHỎI HOẠN NẠN LỚN, GIẶT ÁO MÌNH cho TRẮNG trong HUYẾT CHIÊN CON",
+      "12 sứ đồ (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Áo trắng huyết Chiên",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 5,
+    "content": "Theo Khải Huyền 8:1-5, khi ấn THỨ BẢY được mở ra, điều gì xảy ra trên trời?",
+    "explanation": "Khải Huyền 8:1-5 — 'Khi Chiên Con mở ấn thứ bảy, trên trời yên lặng chừng nửa giờ. Tôi thấy bảy vị thiên sứ đứng trước mặt Đức Chúa Trời, và có người trao cho bảy ống loa... Một vị thiên sứ khác đến, đứng bên bàn thờ, người cầm bình hương vàng, có nhiều hương được ban thêm cho người đặng hiệp với những lời cầu nguyện của mọi thánh đồ trên bàn thờ vàng'. Yên lặng = chuẩn bị cho phán xét.",
+    "language": "vi",
+    "options": [
+      "YÊN LẶNG TRÊN TRỜI khoảng MỘT GIỜ. Sau đó 7 thiên sứ nhận 7 LOA; một thiên sứ khác dâng HƯƠNG + lời CẦU của thánh đồ tại bàn thờ, rồi đổ LỬA xuống đất",
+      "Bài hát ngợi khen vang (nhu duoc mo ta trong sach) (xet theo noi dung goc)",
+      "Trận động đất nhẹ (theo cach trinh bay cua text) (nhu van ban ghi ro)",
+      "Một làn ánh sáng (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Ấn 7 yên lặng",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 8,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 12,
+    "content": "Theo Khải Huyền 8:7-12, BỐN tiếng loa đầu tiên đánh BAO NHIÊU phần của thiên nhiên?",
+    "explanation": "Khải Huyền 8:7-12 — Loa 1: mưa đá + lửa pha huyết → 1/3 đất + 1/3 cây cối cháy. Loa 2: núi cháy đổ vào biển → 1/3 biển hóa huyết, 1/3 sinh vật biển + tàu thuyền chết. Loa 3: ngôi sao 'Ngải Cứu' → 1/3 sông + suối hóa đắng. Loa 4: đập 1/3 mặt trời + 1/3 mặt trăng + 1/3 sao → tối. Hình ảnh = đảo ngược 7 ngày sáng tạo (Sáng-thế 1).",
+    "language": "vi",
+    "options": [
+      "Toàn bộ (xet trong van canh) (theo trinh tu cau chuyen)",
+      "Một nửa (theo cach trinh bay cua text)",
+      "Một phần tư (nhu duoc mo ta trong sach)",
+      "Một PHẦN BA — 1/3 đất + cây cối + biển + sông + nước; 1/3 mặt trời + mặt trăng + sao tối"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "1/3 thiên nhiên",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 9,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 11,
+    "content": "Theo Khải Huyền 9:1-11, loa THỨ NĂM cho ra cảnh CHÂU CHẤU từ vực sâu — vua của chúng tên gì?",
+    "explanation": "Khải Huyền 9:11 — 'Có vua đứng đầu chúng nó, ấy là thiên sứ của vực sâu, tiếng Hê-bơ-rơ gọi là A-ba-đôn, tiếng Hy Lạp là A-bô-ly-ôn'. A-ba-đôn (Hê-bơ-rơ Abaddon) + A-pôl-ly-ôn (Hy Lạp Apollyon) cùng nghĩa 'sự hủy diệt' / 'kẻ hủy diệt'. Châu chấu hành hình 5 tháng người KHÔNG có ấn.",
+    "language": "vi",
+    "options": [
+      "Lê-vi-a-than (nhu duoc mo ta trong sach)",
+      "A-BA-ĐÔN (tiếng Hê-bơ-rơ) = A-PÔ-LY-ÔN (tiếng Hy-lạp) — nghĩa 'KẺ HỦY DIỆT'",
+      "Bê-hê-mốt (xet trong van canh)",
+      "Lu-xi-phơ (theo cach trinh bay cua text)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "A-ba-đôn / A-pôl-ly-ôn",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 10,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 10,
+    "content": "Theo Khải Huyền 10:9-10, Giăng được ban quyển sách nhỏ — khi ăn vào miệng + dạ dày, vị thế nào?",
+    "explanation": "Khải Huyền 10:9-10 — 'Tôi đi tới chỗ thiên sứ và xin người cuốn sách nhỏ ấy. Người phán: Người hãy lấy và nuốt đi; nó sẽ đắng trong bụng ngươi, nhưng trong miệng ngươi nó sẽ ngọt như mật. Tôi lấy quyển sách nhỏ khỏi tay vị thiên sứ và nuốt đi; trong miệng tôi nó ngọt như mật, nhưng khi tôi nuốt rồi, thì đắng ở trong bụng'. Tương đồng Ê-xê-chi-ên 3:1-3 ăn cuộn sách → ngọt; Giê-rê-mi 15:16 ăn lời = vui. Khải Huyền THÊM khía cạnh 'ĐẮNG dạ dày' = lời tiên tri về phán xét.",
+    "language": "vi",
+    "options": [
+      "Đắng cả miệng + dạ dày",
+      "Ngọt cả miệng + dạ dày",
+      "MIỆNG NGỌT NHƯ MẬT, nhưng XUỐNG BỤNG thì ĐẮNG",
+      "Vô vị (xet trong van canh)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Sách nhỏ ngọt-đắng",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 12,
+    "content": "Theo Khải Huyền 11:7-12, sau khi 2 nhân chứng giảng 1260 ngày, họ bị giết bởi CON THÚ. Nhưng sau bao lâu họ sống lại + lên trời?",
+    "explanation": "Khải Huyền 11:11-12 — 'Nhưng sau ba ngày rưỡi ấy, có sanh khí từ Đức Chúa Trời đến nhập vào trong hai người: hai người bèn đứng thẳng dậy, và những kẻ đứng xem đều kinh hãi cả thể... Có tiếng lớn từ trời phán cùng hai người rằng: Hãy lên đây! Hai người bèn lên trời trong đám mây, và những kẻ thù nghịch đều trông thấy'. Mô-tip 3.5 ngày rưỡi = 1/2 của 7 (đầy đủ) — phản ánh thời gian Christ trong mộ.",
+    "language": "vi",
+    "options": [
+      "BA NGÀY RƯỠI — sau khi xác bị nằm ở 'thành lớn' (= Sô-đôm + Ai-cập); họ sống lại + ÂY MÂY rước lên giữa kẻ thù chứng kiến",
+      "1 ngày (xet trong van canh) (theo trinh tu cau chuyen)",
+      "7 ngày (theo cach trinh bay cua text) (xet theo noi dung goc)",
+      "1 tháng (nhu duoc mo ta trong sach) (nhu van ban ghi ro)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "2 nhân chứng sống lại",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Khải Huyền 11:15, khi loa THỨ BẢY thổi, tiếng lớn trên trời tuyên bố gì?",
+    "explanation": "Khải Huyền 11:15 — 'Vị thiên sứ thứ bảy thổi loa, có những tiếng lớn vang ra trên trời rằng: Từ nay nước của thế gian thuộc về Chúa chúng ta và Đấng Christ của Ngài, Ngài sẽ trị vì đời đời'. Câu này = nguồn LỜI CA NỔI TIẾNG 'Hallelujah Chorus' của Handel (Messiah, 1741) — đỉnh cao bài Oratorio.",
+    "language": "vi",
+    "options": [
+      "'Trời sắp đổ' (xet trong van canh) (theo trinh tu cau chuyen)",
+      "'Sa-tan đã thắng' (theo cach trinh bay cua text) (nhu van ban ghi ro)",
+      "'Hãy chuẩn bị tiệc cưới' (nhu duoc mo ta trong sach) (xet theo noi dung goc)",
+      "'TỪ NAY các nước ĐÃ THUỘC VỀ Chúa chúng ta + Đấng Christ của Ngài; Ngài sẽ TRỊ VÌ ĐỜI ĐỜI vô cùng' — gọi 'Hallelujah Chorus' của Handel"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Loa 7 nước thuộc Chúa",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 4,
+    "content": "Theo Khải Huyền 12:3-4, dấu thứ HAI ở trên trời là một CON RỒNG ĐỎ — đặc điểm gì?",
+    "explanation": "Khải Huyền 12:3-4 — 'Trên trời cũng hiện ra một dấu khác: một con rồng lớn sắc đỏ, có bảy đầu, mười sừng, và trên đầu có bảy mão triều thiên. Đuôi kéo một phần ba các ngôi sao trên trời, đem quăng xuống đất'. 12:9 giải thích: 'con rồng lớn đó bị quăng xuống... gọi là ma quỉ + Sa-tan'.",
+    "language": "vi",
+    "options": [
+      "3 đầu + 6 sừng (theo cach trinh bay cua text)",
+      "BẢY ĐẦU + MƯỜI SỪNG + BẢY MÃO TRIỀU trên đầu; ĐUÔI quét MỘT PHẦN BA NGÔI SAO trên trời ném xuống đất",
+      "1 đầu + 1 sừng (nhu duoc mo ta trong sach)",
+      "12 đầu (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Rồng đỏ 7 đầu 10 sừng",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 9,
+    "content": "Theo Khải Huyền 12:7-9, ai chiến đấu với Rồng + thiên sứ của nó trên trời, và rồng được nhận diện là ai?",
+    "explanation": "Khải Huyền 12:7-9 — 'Bấy giờ có một cuộc chiến đấu trên trời: Mi-chen và các sứ người tranh chiến cùng con rồng, rồng cũng cùng các sứ mình tranh chiến lại; song chúng nó không thắng, và chẳng còn thấy nơi chúng nó ở trên trời nữa. Con rồng lớn đó bị quăng xuống, tức là con rắn xưa, gọi là ma quỉ và Sa-tan, dỗ dành cả thiên hạ; nó đã bị quăng xuống đất, các sứ nó cũng bị quăng xuống với nó'. Mi-chen = thiên sứ trưởng (Đa-ni-ên 10, 12; Giu-đe 9).",
+    "language": "vi",
+    "options": [
+      "Áp-ra-ham đánh (theo cach trinh bay cua text) (nhu van ban ghi ro)",
+      "Giê-su trực tiếp đánh (nhu duoc mo ta trong sach)",
+      "MI-CHEN + thiên sứ của Ngài đánh — Rồng = Sa-tan + Ma quỉ + Con Rắn xưa + 'kẻ DỖ DÀNH cả thiên hạ'; bị quăng xuống ĐẤT",
+      "Phi-e-rơ đánh (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Mi-chen đánh rồng",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 10,
+    "content": "Theo Khải Huyền 13:1-10, CON THÚ ra từ BIỂN có hình dạng kết hợp 3 con thú nào?",
+    "explanation": "Khải Huyền 13:1-2 — 'Đoạn, tôi thấy ở dưới biển lên một con thú có mười sừng và bảy đầu, trên những sừng có mười cái mão triều thiên... Con thú tôi thấy đó giống như con beo; chân nó như chân gấu, miệng như miệng sư tử, và con rồng đã lấy sức mạnh, ngôi và quyền phép lớn mà cho nó'. CỐT MỚI tổng hợp 4 thú Đa-ni-ên 7 (sư tử + gấu + beo + thú khủng) — mỗi thú = đế quốc; tổng = đế quốc cuối thù nghịch Chúa.",
+    "language": "vi",
+    "options": [
+      "Sư tử + bò + chim ưng (theo cach trinh bay cua text)",
+      "Ngựa + lừa + lạc đà (xet trong van canh) (theo trinh tu cau chuyen)",
+      "Voi + tê giác + cá sấu (nhu duoc mo ta trong sach)",
+      "Giống beo (báo) + chân như chân gấu + miệng như miệng SƯ TỬ — 7 đầu + 10 sừng (giống Rồng); kết hợp 4 con thú Đa-ni-ên 7"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Thú từ biển",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 17,
+    "content": "Theo Khải Huyền 13:11-17, CON THÚ thứ HAI (từ ĐẤT) = 'Tiên tri giả' — ép loài người MANG dấu gì + ở đâu?",
+    "explanation": "Khải Huyền 13:16-17 — 'Nó cũng khiến mọi người, nhỏ và lớn, giàu và nghèo, tự chủ và tôi mọi, đều chịu ghi dấu hoặc trên tay hữu, hoặc trên trán, hầu cho người nào không có dấu ấy, không thể mua hoặc bán được, đó là dấu của thú, hoặc tên thú, hoặc số của tên nó'. Tay phải + trán = nơi gắn TÊ-PHI-LIN của Do Thái (Phục Truyền 6:8) — biểu tượng SỞ HỮU; trái ngược với 7:3 niêm ấn của Đức Chúa Trời trên trán.",
+    "language": "vi",
+    "options": [
+      "MARK của thú trên TAY HỮU + TRÁN; KHÔNG có dấu = KHÔNG MUA + BÁN được",
+      "Mark trên cổ (xet trong van canh)",
+      "Mark trên ngực (theo cach trinh bay cua text)",
+      "Mark trên chân (nhu duoc mo ta trong sach)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Dấu thú tay + trán",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 14,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 5,
+    "content": "Theo Khải Huyền 14:1-5, 144,000 đứng cùng Chiên Con tại nơi nào? Họ có gì viết trên TRÁN?",
+    "explanation": "Khải Huyền 14:1 — 'Tôi nhìn xem, thấy Chiên Con đứng trên núi Si-ôn, và với Ngài có mười bốn vạn bốn ngàn người đều có danh Chiên Con và danh Cha Chiên Con ghi trên trán mình'. NGƯỢC với 13:16 dấu thú trên tay/trán — 144,000 mang DANH Chúa thay vì DANH thú.",
+    "language": "vi",
+    "options": [
+      "Tại đồng vắng / TÊN ma quỉ",
+      "Tại NÚI SI-ÔN / có DANH Chiên Con + DANH Cha viết trên trán",
+      "Tại biển / dấu hiệu chuông",
+      "Tại sa mạc / không có gì"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "144,000 trên núi Si-ôn",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 14,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "Theo Khải Huyền 14:6-11, BA THIÊN SỨ bay giữa trời rao báo 3 sứ điệp khác nhau. Sứ điệp lần lượt là gì?",
+    "explanation": "Khải Huyền 14:6-11 — Thiên sứ 1 (14:6-7): 'Tin Lành đời đời, đặng rao truyền cho dân cư trên đất, cho mọi nước, mọi chi phái, mọi tiếng, và mọi dân tộc... hãy kính sợ Đức Chúa Trời, và tôn vinh Ngài'. Thiên sứ 2 (14:8): 'Ba-by-lôn lớn kia đã đổ rồi'. Thiên sứ 3 (14:9-11): 'Nếu ai thờ lạy con thú... cũng vậy sẽ uống rượu thạnh nộ không pha của Đức Chúa Trời'. 3 sứ điệp = lời mời cuối + cảnh báo cuối.",
+    "language": "vi",
+    "options": [
+      "1=phước / 2=hộ / 3=khen (nhu duoc mo ta trong sach) (nhu van ban ghi ro)",
+      "1=cứu / 2=cứu / 3=cứu (xet trong van canh) (theo trinh tu cau chuyen)",
+      "1 = TIN LÀNH ĐỜI ĐỜI cho mọi dân + sợ + thờ Chúa; 2 = 'BA-BY-LÔN LỚN ĐÃ ĐỔ'; 3 = ai mang DẤU THÚ + thờ thú sẽ uống RƯỢU THỊNH NỘ Chúa",
+      "1=tha / 2=ban / 3=cứu (theo cach trinh bay cua text) (xet theo noi dung goc)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "3 thiên sứ 3 sứ điệp",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 15,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 4,
+    "content": "Theo Khải Huyền 15:3-4, các kẻ ĐẮC THẮNG con thú đứng trên BIỂN PHA LÊ + hát BÀI HÁT NÀO?",
+    "explanation": "Khải Huyền 15:3-4 — 'Chúng hát bài ca Môi-se, là tôi tớ Đức Chúa Trời, và bài ca Chiên Con, mà rằng: Hỡi Chúa là Đức Chúa Trời Toàn năng, công việc Chúa lớn lao và lạ lùng thay! Hỡi Vua của muôn đời, đường lối Chúa là công bình và chân thật! Lạy Chúa, ai là kẻ không kính sợ và không ngợi khen danh Ngài? Vì một mình Chúa là thánh, mọi dân tộc sẽ đến thờ lạy trước mặt Chúa, vì các sự đoán xét Ngài đã được tỏ ra'. Bài ca Môi-se = Xuất 15 (sau Biển Đỏ); kết hợp = MÔ-SE giải Y-sơ-ra-ên + CHIÊN CON giải mọi dân.",
+    "language": "vi",
+    "options": [
+      "'Bài ca xuất hành' (nhu duoc mo ta trong sach) (nhu van ban ghi ro)",
+      "'Bài ca tử đạo' (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)",
+      "'Bài ca Đa-vít' (theo cach trinh bay cua text) (xet theo noi dung goc)",
+      "'Bài CA của MÔI-SE + Bài CA CHIÊN CON' — kết hợp Cựu Ước + Tân Ước; ngợi khen Chúa làm 'việc lớn + lạ lùng', 'CÔNG BÌNH + chân thật', 'mọi DÂN TỘC sẽ ĐẾN thờ lạy'"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Bài ca Môi-se + Chiên Con",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 21,
+    "content": "Theo Khải Huyền 16:1-21, BÀI bát thứ NHẤT trên đất + bát thứ NĂM gây ra điều gì?",
+    "explanation": "Khải Huyền 16:2 (bát 1): 'Vị thiên sứ thứ nhứt đi trút bát mình xuống đất, thì trở nên ghẻ chốc dữ và đau trên những người có dấu con thú và thờ lạy hình tượng nó' (= bệnh dịch xứ Ai-cập, Xuất 9:8-12). 16:10-11 (bát 5): 'Vị thiên sứ thứ năm trút bát mình trên ngôi con thú, nước của nó bèn trở nên tối tăm. Người ta đều cắn lưỡi mình vì đau đớn. Chúng nó nói phạm đến Đức Chúa Trời'. 7 bát = song hành các tai vạ Ai-cập.",
+    "language": "vi",
+    "options": [
+      "Bát 1 = MỤN ĐỘC + ĐAU NHỨC trên người mang dấu thú; Bát 5 = ngai con thú TỐI TĂM, người ta CẮN LƯỠI vì đau",
+      "Bát 1 = sấm sét; Bát 5 = bão (theo cach trinh bay cua text)",
+      "Bát 1 = lửa; Bát 5 = nước lụt (nhu duoc mo ta trong sach)",
+      "Bát 1 = mưa đá; Bát 5 = gió (xet trong van canh)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Bát 1 + Bát 5",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 16,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 16,
+    "content": "Theo Khải Huyền 16:13-16, từ MIỆNG Rồng + thú + tiên tri giả ra ba CON gì? Vua các nước tụ về nơi nào?",
+    "explanation": "Khải Huyền 16:13-16 — 'Tôi thấy từ miệng rồng, miệng thú, miệng tiên tri giả có ba tà thần ra, giống như ếch nhái. Đó là những thần của ma quỉ, làm phép lạ và đi đến các vua trên khắp thế gian, để nhóm hiệp về sự chiến tranh trong ngày lớn của Đức Chúa Trời toàn năng... Chúng nhóm các vua lại một chỗ, theo tiếng Hê-bơ-rơ gọi là Hạt-ma-ghê-đôn'. Ar-Mageddon = núi Mê-ghi-đô (Israel) — nơi nhiều trận đánh quyết định Cựu Ước.",
+    "language": "vi",
+    "options": [
+      "3 con rắn / Ba-by-lôn (xet trong van canh) (theo trinh tu cau chuyen)",
+      "3 thần GIỐNG ẾCH NHÁI (= ếch) — đi đến các vua thiên hạ chiêu tập về một chỗ tên HÊ-BƠ-RƠ là HẠT-MA-GHÊ-ĐÔN (Armageddon)",
+      "3 thiên sứ / núi Si-ôn (theo cach trinh bay cua text)",
+      "3 con bồ câu / Giê-ru-sa-lem (nhu duoc mo ta trong sach)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Hạt-ma-ghê-đôn",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 17,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 14,
+    "content": "Theo Khải Huyền 17:9-14, 7 ĐẦU của con thú đỏ tía mà người đàn bà cưỡi = gì? + 10 SỪNG = gì?",
+    "explanation": "Khải Huyền 17:9-14 — 'Đây cần phải có khôn ngoan: bảy đầu tức là bảy hòn núi, mà người đờn bà ngồi lên... Các đầu đó cũng là bảy vua; năm vị trước đã đổ, một vị hiện có, còn một vị nữa chưa đến; khi vị ấy sẽ đến, cũng chẳng còn được bao lâu... Mười cái sừng mà ngươi đã thấy, là mười vị vua chưa nhận được nước mình; nhưng họ nhận quyền vua với con thú trong một giờ. Chúng cùng một lòng, dâng quyền của mình cho con thú. Chúng sẽ chiến tranh cùng Chiên Con, Chiên Con sẽ được thắng'. 7 núi → ám chỉ Rô-ma (thành xây trên 7 đồi).",
+    "language": "vi",
+    "options": [
+      "7 đầu = 7 quái vật; 10 sừng = 10 thiên sứ (nhu duoc mo ta trong sach)",
+      "7 đầu = 7 ấn; 10 sừng = 10 loa (xet trong van canh) (theo trinh tu cau chuyen)",
+      "7 ĐẦU = 7 NÚI nơi người đàn bà ngồi (+ 7 vua); 10 SỪNG = 10 VUA chưa nhận ngôi nhưng sẽ TRAO QUYỀN cho thú + đánh CHIÊN CON nhưng Chiên Con SẼ THẮNG",
+      "7 đầu = 7 ngôi sao; 10 sừng = 10 ngôi (theo cach trinh bay cua text)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "7 đầu = 7 núi",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 21,
+    "content": "Theo Khải Huyền 19:17-21, sau trận đánh, CON THÚ + tiên tri giả bị quăng vào đâu? Còn dân quân của họ?",
+    "explanation": "Khải Huyền 19:20-21 — 'Nhưng con thú bị bắt; và tiên tri giả là kẻ đã làm phép lạ trước mặt thú... Cả hai đều đương sống bị quăng xuống ao lửa có diêm cháy bừng bừng. Những kẻ khác đều bị giết bởi lưỡi gươm ra từ miệng Đấng cưỡi ngựa, và hết thảy chim chóc đều được ăn thịt chúng nó no nê'. ĐÂY = trận Hạt-ma-ghê-đôn cuối cùng (16:16); TRƯỚC sự kiện 1000 năm + Sa-tan bị quăng xuống vực sâu (20:1-3).",
+    "language": "vi",
+    "options": [
+      "Trở về Ba-by-lôn / được tha (theo cach trinh bay cua text)",
+      "Cả hai bị quăng SỐNG vào HỒ LỬA + LƯU HUỲNH; còn dân quân bị GIẾT bởi GƯƠM của Đấng cưỡi ngựa trắng + chim trời ăn THỊT họ no nê",
+      "Bị giam 1000 năm / được tha (nhu duoc mo ta trong sach)",
+      "Bị xét xử / được giam (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Thú + tiên tri giả vào hồ lửa",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 20,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 6,
+    "content": "Theo Khải Huyền 20:1-6, một thiên sứ xuống trời cầm CHÌA KHÓA VỰC SÂU + một cái XÍCH lớn — làm gì với CON RỒNG (Sa-tan)?",
+    "explanation": "Khải Huyền 20:1-3 — 'Đoạn, tôi thấy một vị thiên sứ trên trời xuống, tay cầm chìa khóa vực sâu và một cái xích lớn. Người bắt con rồng, tức là con rắn đời xưa, là ma quỉ, là Sa-tan, mà xích nó lại đến ngàn năm. Người quăng nó xuống vực, đóng cửa vực và niêm phong lại trên nó, hầu cho nó không đi lừa dối các dân được nữa, cho đến chừng nào hạn ngàn năm đã mãn'. CỘT MỐC: 1000 năm Sa-tan bị xích.",
+    "language": "vi",
+    "options": [
+      "Giết bằng gươm (theo cach trinh bay cua text) (nhu van ban ghi ro)",
+      "Chăm sóc + dạy dỗ (nhu duoc mo ta trong sach) (xet theo noi dung goc)",
+      "BẮT con rồng + xích lại 1000 NĂM, quăng xuống VỰC SÂU, đóng + đóng ấn để KHÔNG còn DỖ DÀNH các nước cho ĐẾN khi 1000 năm hết",
+      "Tha thứ (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Sa-tan xích 1000 năm",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Khải Huyền 21:3, tiếng từ ngai báo điều gì khi Giê-ru-sa-lem mới xuống?",
+    "explanation": "Khải Huyền 21:3 — 'Tôi nghe một tiếng lớn từ nơi ngai mà đến, nói rằng: Nầy, đền tạm của Đức Chúa Trời ở giữa loài người! Ngài sẽ ở với họ và họ sẽ làm dân Ngài; chính Đức Chúa Trời sẽ ở với họ'. Câu hứa Cựu Ước (Lê-vi-ký 26:11-12, Ê-xê-chi-ên 37:27) ỨNG NGHIỆM trọn vẹn — 'Em-ma-nu-ên' = Đức Chúa Trời ở với CHÚNG TA mãi mãi.",
+    "language": "vi",
+    "options": [
+      "'Xét xử đã hoàn tất' (nhu duoc mo ta trong sach) (nhu van ban ghi ro)",
+      "'Sự cứu rỗi đã đến' (theo cach trinh bay cua text) (xet theo noi dung goc)",
+      "'Vực sâu đã đóng' (xet trong van canh) (theo trinh tu cau chuyen)",
+      "'Nầy, ĐỀN-TẠM của ĐỨC CHÚA TRỜI ở GIỮA loài người, NGÀI sẽ Ở VỚI họ; họ SẼ làm DÂN NGÀI; chính ĐỨC CHÚA TRỜI sẽ ở với họ — làm ĐỨC CHÚA TRỜI họ'"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Đền tạm Đức Chúa Trời",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 14,
+    "content": "Theo Khải Huyền 21:12-14, GIÊ-RU-SA-LEM MỚI có BAO NHIÊU cửa, nền — và mỗi cái có TÊN gì?",
+    "explanation": "Khải Huyền 21:12-14 — 'Thành có một bức tường cao lớn, có mười hai cửa, trên những cửa có mười hai vị thiên sứ; cùng những danh đề, là danh mười hai chi phái của con cháu Y-sơ-ra-ên: phía đông có ba cửa; phía bắc có ba cửa; phía nam có ba cửa; phía tây có ba cửa. Còn tường của thành có mười hai cái nền, tại trên có đề mười hai danh, là danh mười hai sứ đồ của Chiên Con'. CỬA = Cựu Ước (12 chi phái); NỀN = Tân Ước (12 sứ đồ) — hội thánh xây trên cả hai (Ê-phê-sô 2:20).",
+    "language": "vi",
+    "options": [
+      "12 CỬA (3 cửa mỗi hướng đông/bắc/nam/tây) — TÊN 12 CHI PHÁI Y-sơ-ra-ên; 12 NỀN — TÊN 12 SỨ ĐỒ Chiên Con",
+      "7 cửa, 7 nền - tên 7 đèn (theo cach trinh bay cua text)",
+      "10 cửa, 10 nền - tên thiên sứ (nhu duoc mo ta trong sach)",
+      "144 cửa, 144 nền (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "12 cửa + 12 nền",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Khải Huyền 21:16, kích thước của Giê-ru-sa-lem MỚI là gì?",
+    "explanation": "Khải Huyền 21:16 — 'Thành làm theo hình vuông và bề dài cũng như bề ngang. Người dùng cây sậy đo thành: được một vạn hai ngàn ếch-ta-đơ, bề dài, bề ngang, và bề cao đều bằng nhau'. 12,000 stadia ≈ 2200 km mỗi cạnh = HÌNH LẬP PHƯƠNG. Đền thờ cổ NƠI CHÍ THÁNH (Hô-ly Thy-Hô-ly) là LẬP PHƯƠNG (1 Vua 6:20). Toàn bộ Giê-ru-sa-lem mới = NƠI CHÍ THÁNH MỞ RỘNG — Đức Chúa Trời ngự CÙNG dân Ngài MỌI NƠI.",
+    "language": "vi",
+    "options": [
+      "100 dặm vuông (theo cach trinh bay cua text)",
+      "DÀI = RỘNG = CAO = 12,000 STA-ĐI (≈ 2200km) — hình LẬP PHƯƠNG hoàn hảo (giống Nơi Chí Thánh trong đền)",
+      "1000 ki-lô-mét (nhu duoc mo ta trong sach)",
+      "100 mét (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Giê-ru-sa-lem 12,000 stadia",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 25,
+    "content": "Theo Khải Huyền 21:23-25, Giê-ru-sa-lem MỚI có những đặc điểm KỲ LẠ nào liên quan đến ánh sáng + ban đêm?",
+    "explanation": "Khải Huyền 21:23-25 — 'Thành cũng không cần mặt trời, mặt trăng để soi sáng; vì vinh hiển của Đức Chúa Trời chói lói cho, và Chiên Con là ngọn đèn của thành. Các dân sẽ đi giữa sự sáng thành đó và các vua trên đất sẽ đem vinh hiển mình vào đó. Những cửa thành ban ngày không đóng vì ở đó không có ban đêm'. NGƯỢC với Sáng-thế 1 (vũ trụ cũ với mặt trời + đêm) — vũ trụ MỚI có ánh sáng từ chính ĐỨC CHÚA TRỜI.",
+    "language": "vi",
+    "options": [
+      "Có mặt trời lớn hơn (nhu duoc mo ta trong sach) (xet theo noi dung goc)",
+      "Có 12 ngọn đuốc (theo cach trinh bay cua text) (nhu van ban ghi ro)",
+      "KHÔNG cần MẶT TRỜI + MẶT TRĂNG vì VINH HIỂN ĐỨC CHÚA TRỜI chiếu sáng + CHIÊN CON là ĐÈN; CỬA không bao giờ ĐÓNG, KHÔNG có ĐÊM",
+      "Có 7 đèn dầu (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Không cần mặt trời",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 2,
+    "content": "Theo Khải Huyền 22:1-2, từ ngai Đức Chúa Trời + Chiên Con phát ra gì? Trên hai bên có cây gì?",
+    "explanation": "Khải Huyền 22:1-2 — 'Thiên sứ chỉ cho tôi xem sông nước sự sống, trong như lưu ly, từ ngôi Đức Chúa Trời và Chiên Con chảy ra. Ở giữa phố thành và trên hai bờ sông có cây sự sống trổ mười hai mùa, mỗi tháng một lần ra trái; và những lá cây đó dùng để chữa lành cho các dân'. CÂY SỰ SỐNG = đảo ngược Sáng-thế 3 (bị cấm sau A-đam phạm tội, nay được phép ăn). 'CHỮA LÀNH CÁC DÂN' = phục hồi mọi tổn thương lịch sử — vũ trụ tái thiết.",
+    "language": "vi",
+    "options": [
+      "Sông sữa / cây ô-liu (theo cach trinh bay cua text)",
+      "Sông rượu / cây nho (xet trong van canh) (theo trinh tu cau chuyen)",
+      "Sông dầu / cây tuyết tùng (nhu duoc mo ta trong sach)",
+      "SÔNG NƯỚC SỰ SỐNG TRONG NHƯ THỦY TINH; CÂY SỰ SỐNG sinh 12 thứ TRÁI mỗi tháng — LÁ cây để CHỮA LÀNH CÁC DÂN"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Sông + Cây sự sống",
+      "Trung cap"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "KIỂU 1 cross-ref Khải Huyền 1:7 — 'Kìa, Ngài đến với MÂY' — câu này TRỘN HAI lời tiên tri Cựu Ước nào?",
+    "explanation": "Khải Huyền 1:7 — 'Kìa, Ngài đến giữa những đám mây, mọi mắt sẽ trông thấy, cả đến những kẻ đã đâm Ngài cùng trông thấy; hết thảy các chi họ trong thế gian sẽ than khóc vì cớ Ngài'. Câu này KẾT HỢP: (1) Đa-ni-ên 7:13 'Có một người đến với mây trên trời, đến gần Đấng già ngày' (= Con Người); (2) Xa-cha-ri 12:10 'Chúng nó sẽ nhìn xem ta là Đấng chúng nó đã đâm; rồi sẽ than khóc về Ngài'. Cả Mat 24:30 cũng dùng cùng combo này — câu chìa khóa Tân Ước về SỰ TÁI LÂM.",
+    "language": "vi",
+    "options": [
+      "Ê-sai 53 + Thi 22 (sự khổ) (nhu duoc mo ta trong sach)",
+      "Đa-ni-ên 2 + Ô-sê 1 (xet trong van canh) (theo trinh tu cau chuyen)",
+      "Ma-la-chi 4 + Sô-phô-ni 3 (theo cach trinh bay cua text)",
+      "ĐA-NI-ÊN 7:13 (Con Người đến với mây) + XA-CHA-RI 12:10 (sẽ thấy Đấng đã BỊ ĐÂM, mọi tộc trên đất sẽ KHÓC)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "1:7 = Đa-ni-ên + Xa-cha-ri",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "KIỂU 1 cross-ref Khải Huyền 4:8 — Bài hát của 4 sinh vật ngày đêm KHÔNG dứt: 'THÁNH THAY, THÁNH THAY, THÁNH THAY, Chúa là Đức Chúa Trời, Đấng Toàn Năng' = TRÍCH lời Cựu Ước nào?",
+    "explanation": "Khải Huyền 4:8 — 'Bốn con sanh vật, mỗi con có sáu cánh, chung quanh và bên trong đầy mắt; ngày đêm lúc nào cũng nói không thôi rằng: Thánh thay, thánh thay, thánh thay là Chúa, là Đức Chúa Trời, Đấng Toàn năng, trước đã có, nay hiện có, sau còn đến!' TRÍCH Ê-sai 6:1-3 — Ê-sai thấy Chúa trên ngai, sê-ra-phim 6 cánh hô TRISHAGION 'Thánh thay, thánh thay, thánh thay'. Khải Huyền THÊM: 'trước đã có, nay hiện có, sau còn đến' (= 'Đấng tự có / Yhwh' Xuất 3:14). Bài này = nguồn gốc 'Sanctus' của thánh ca.",
+    "language": "vi",
+    "options": [
+      "Thi 23 (Đấng chăn chiên) (nhu duoc mo ta trong sach) (xet theo noi dung goc)",
+      "Ê-SAI 6:3 — Trishagion ('thánh' 3 lần) khi Ê-sai thấy Chúa trên ngai cao + sê-ra-phim hô 'Thánh thay, thánh thay, thánh thay'",
+      "Xuất 3:14 (theo cach trinh bay cua text) (nhu van ban ghi ro) (theo boi canh doan nay)",
+      "Thi 91 (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Trishagion = Ê-sai 6",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 17,
+    "content": "KIỂU 1 cross-ref Khải Huyền 7:16-17 — Lời an ủi cho đám đông sau hoạn nạn lớn: 'CHIÊN CON sẽ chăn giữ + dẫn đến NGUỒN nước' — TRÍCH lời Cựu Ước nào?",
+    "explanation": "Khải Huyền 7:16-17 — 'Chúng sẽ không đói, không khát nữa; cũng không có mặt trời, hoặc cơn nắng gắt nào hại đến mình. Vì Chiên Con ở giữa ngôi sẽ chăn giữ và đưa chúng đến những suối nước sống; Đức Chúa Trời sẽ lau hết nước mắt nơi mắt chúng'. TRÍCH Ê-sai 49:10 (về SỰ HỒI HƯƠNG sau lưu đày) + Ê-sai 25:8 ('Chúa lau ráo nước mắt khỏi mọi mặt') + Thi 23 (Người chăn). Hình ảnh: Chiên Con ĐƯỢC GIẾT giờ là NGƯỜI CHĂN — NGHỊCH LÝ TINH THẦN.",
+    "language": "vi",
+    "options": [
+      "Thi 110 (Vua-Tế Lễ) (xet trong van canh) (theo trinh tu cau chuyen)",
+      "Ê-xê-chi-ên 34 (Người chăn) (theo cach trinh bay cua text)",
+      "Ê-SAI 49:10 — 'Họ sẽ KHÔNG đói NỮA, KHÔNG khát NỮA, NẮNG sẽ KHÔNG hại HỌ; Đấng thương xót sẽ DẪN HỌ ĐẾN NGUỒN nước'",
+      "Sáng-thế 12 (lời hứa Áp-ra-ham) (nhu duoc mo ta trong sach)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Ê-sai 49 không đói khát",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "KIỂU 1 cross-ref — Khải Huyền dùng tên 'NƯỚC THUỘC VỀ Đấng Christ' (11:15) lấy ý từ Cựu Ước. Cũng câu 'Ngài sẽ chăn các nước bằng GẬY SẮT' (12:5, 19:15) trích Thi-thiên nào?",
+    "explanation": "Khải Huyền 12:5 + 19:15 — 'Sẽ chăn dắt các dân bằng gậy sắt'. Đây là 1 trong 5 LẦN Khải Huyền trích Thi-thiên 2:9. Thi 2 là 'Bài Đăng Quang Vua Mê-si-a' (Đa-vít/Christ): 'Con đã thắng dân ngoại + cây gậy sắt'. Khải Huyền ÁP DỤNG cho Christ = Vua chiến thắng các nước. Liên hệ Acts 13:33 + Hê-bơ-rơ 1:5 (cùng trích Thi 2:7).",
+    "language": "vi",
+    "options": [
+      "THI 2:9 — 'Con sẽ dùng cây gậy sắt mà đập bể chúng nó; Con sẽ làm vỡ nát chúng nó khác nào bình gốm' (bài đăng quang Vua Mê-si-a)",
+      "Thi 22:1 (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)",
+      "Thi 110:1 (nhu duoc mo ta trong sach) (nhu van ban ghi ro) (theo boi canh doan nay)",
+      "Thi 51:1 (theo cach trinh bay cua text) (xet theo noi dung goc) (xet trong van canh)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Gậy sắt = Thi 2:9",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 4,
+    "content": "KIỂU 1 cross-ref Khải Huyền 21:1-4 — 'TRỜI MỚI + ĐẤT MỚI', 'KHÔNG có NƯỚC MẮT' — trích 2 chỗ Cựu Ước nào?",
+    "explanation": "Khải Huyền 21:1, 4 — 'Tôi thấy trời mới đất mới; vì trời thứ nhứt và đất thứ nhứt đã biến đi mất, và biển cũng không còn nữa... Ngài sẽ lau ráo hết nước mắt khỏi mắt chúng, sẽ không có sự chết, cũng không có than khóc, kêu ca, hay là đau đớn nữa'. KẾT HỢP: (1) Ê-sai 65:17 + 66:22 ('Ta sẽ dựng trời mới + đất mới') = sáng tạo MỚI; (2) Ê-sai 25:8 ('lau ráo nước mắt') = sự thoát khổ. Khải Huyền KẾT THÚC như 1 vòng hoàn chỉnh: Sáng-thế 1 (sáng tạo) → 22 (sáng tạo MỚI hoàn hảo).",
+    "language": "vi",
+    "options": [
+      "Sáng 1 + Sáng 2 (sáng tạo) (xet trong van canh) (theo trinh tu cau chuyen)",
+      "Thi 23 + Thi 1 (chăn chiên + người ngay thẳng) (nhu duoc mo ta trong sach)",
+      "Ê-SAI 65:17 ('Ta sẽ DỰNG TRỜI MỚI + ĐẤT MỚI') + Ê-SAI 25:8 ('Ngài sẽ NUỐT sự CHẾT đến mãi mãi; Chúa Giê-hô-va sẽ LAU NƯỚC MẮT khỏi mọi mặt')",
+      "Sáng 8 (sau hồng thủy) + Xuất 3 (theo cach trinh bay cua text) (nhu van ban ghi ro)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Trời mới đất mới + lau lệ",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 16,
+    "content": "KIỂU 1 cross-ref Khải Huyền 22:13, 16 — Chúa Jêsus tự xưng 4 TÊN ở phần kết. Tên 'CHỒI và DÒNG DÕI ĐA-VÍT' lấy từ đâu?",
+    "explanation": "Khải Huyền 22:16 — 'Ta là Jêsus, đã sai thiên sứ ta đến làm chứng về những sự đó cho các ngươi trước mặt các Hội thánh. Ta là Chồi và Hậu tự của Đa-vít, là sao mai sáng chói'. 'Chồi (netzer) của Đa-vít' = Ê-sai 11:1 ('có một chồi sẽ nứt lên từ gốc Y-sai'); 'Hậu tự' = Ê-sai 11:10 ('rễ của Y-sai'). Cả Giê-rê-mi 23:5 + 33:15 cũng có 'CHỒI'. Tự xưng = tuyên bố Christ ƯNG NGHIỆM mọi lời tiên tri về Vua Mê-si-a.",
+    "language": "vi",
+    "options": [
+      "Ê-sai 11:1, 10 + Giê-rê-mi 23:5 + 33:15 — tiên tri 'Chồi của Đa-vít' = vua công bình tương lai trị vì khôn ngoan",
+      "Sáng-thế 12 (lời hứa Áp-ra-ham) (nhu duoc mo ta trong sach)",
+      "Đa-ni-ên 2 (tượng vua) (xet trong van canh) (theo trinh tu cau chuyen)",
+      "Xa-cha-ri 4 (đèn 7 ngọn) (theo cach trinh bay cua text) (nhu van ban ghi ro)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Chồi Đa-vít = Ê-sai 11",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "KIỂU 2 distinguish — Cấu trúc 7 LÁ THƯ trong Khải Huyền 2-3 đều theo CÔNG THỨC 7 phần giống nhau. Phần CUỐI (luôn xuất hiện ở cả 7 thư) là gì?",
+    "explanation": "Cấu trúc 7 lá thư (Khải 2-3) — 7 phần lặp lại: (1) ĐỊA CHỈ ('Hãy viết cho thiên sứ Hội thánh _'); (2) ĐẶC TRƯNG CHRIST (lấy từ Khải 1, mỗi thư khác nhau); (3) 'Ta BIẾT công việc ngươi'; (4) KHEN (trừ Lao-đi-xê); (5) QUỞ (trừ Si-miệc-nơ + Phi-la-đen-phi); (6) LỜI KHUYÊN; (7) 'Ai có tai hãy nghe...' + LỜI HỨA NGƯỜI ĐẮC THẮNG. Phần (7) GIỐNG TRONG 7 THƯ — tạo nhịp điệu phụng vụ.",
+    "language": "vi",
+    "options": [
+      "Lời chúc bình an (theo cach trinh bay cua text) (nhu van ban ghi ro)",
+      "Lời cầu nguyện (xet trong van canh) (theo trinh tu cau chuyen)",
+      "Lời chào của tác giả (nhu duoc mo ta trong sach) (xet theo noi dung goc)",
+      "'Ai có TAI hãy NGHE điều ĐỨC THÁNH LINH phán cùng các HỘI THÁNH' + lời HỨA cho NGƯỜI ĐẮC THẮNG (= ho nikōn)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Cấu trúc 7 lá thư",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      2
+    ],
+    "content": "KIỂU 2 distinguish — Trong 7 hội thánh, CHỈ CÓ 2 hội thánh KHÔNG bị Chúa quở (chỉ có khen). Chọn cả 2 — đây là 2 hội thánh nào?",
+    "explanation": "Trong 7 hội thánh: (1) Ê-phê-sô — KHEN + QUỞ; (2) SI-MIỆC-NƠ — chỉ KHEN, không quở; (3) Bẹt-găm — KHEN + QUỞ; (4) Thi-a-ti-rơ — KHEN + QUỞ; (5) Sạt-đe — chỉ QUỞ, không khen; (6) PHI-LA-ĐEN-PHI — chỉ KHEN, không quở; (7) Lao-đi-xê — chỉ QUỞ, không khen. Si-miệc-nơ + Phi-la-đen-phi là 2 hội thánh DUY NHẤT chỉ ĐƯỢC KHEN — đặc điểm chung: NGHÈO + ÍT SỨC nhưng TRUNG TÍN.",
+    "language": "vi",
+    "options": [
+      "SI-MIỆC-NƠ (chịu hoạn nạn + nghèo)",
+      "Ê-phê-sô (bỏ lòng kính mến đầu)",
+      "PHI-LA-ĐEN-PHI (giữ đạo + ít sức)",
+      "Lao-đi-xê (hâm hẩm)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "2 hội thánh chỉ khen",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "KIỂU 2 distinguish — Khải Huyền có 3 chuỗi 7 phán xét (7 ấn 6-8, 7 loa 8-11, 7 bát 15-16). Sự khác biệt VỀ MỨC ĐỘ?",
+    "explanation": "MỨC ĐỘ TĂNG DẦN: (1) 7 ẤN — tỉ lệ '1/4 đất' (6:8 ngựa Vàng nhạt 'cho ăn 1/4 đất'); (2) 7 LOA — tỉ lệ '1/3' (8:7-12: 1/3 đất, 1/3 biển, 1/3 sông, 1/3 mặt trời). 1/3 = nhân đôi 1/4 + sự nghiêm trọng tăng; (3) 7 BÁT — KHÔNG còn '1/3' nữa, ảnh hưởng TOÀN BỘ + KHÔNG còn 'pha với lòng thương xót' (15:1 'thạnh nộ Đức Chúa Trời TRỌN VẸN'). Đây là cấu trúc TĂNG DẦN (escalation) đặc biệt của Khải Huyền — phán xét cuối hoàn toàn KHÔNG còn cơ hội ăn năn.",
+    "language": "vi",
+    "options": [
+      "7 ấn = nhẹ; 7 loa = nhẹ; 7 bát = nhẹ (nhu duoc mo ta trong sach) (xet theo noi dung goc)",
+      "7 ẤN ảnh hưởng PHẦN TƯ đất (6:8); 7 LOA ảnh hưởng PHẦN BA (8:7-12); 7 BÁT ảnh hưởng TOÀN BỘ (16:1-21) — TĂNG DẦN không pha trộn lòng thương xót",
+      "Tất cả ảnh hưởng 1/2 (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)",
+      "Không có sự khác biệt (theo cach trinh bay cua text) (nhu van ban ghi ro)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "3 chuỗi 7 leo thang",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "KIỂU 2 distinguish — Có 2 CON THÚ trong Khải Huyền (chương 13). Sự KHÁC BIỆT giữa 2 con?",
+    "explanation": "Khải Huyền 13 — Hai thú khác nhau: (1) THÚ TỪ BIỂN (13:1-10) — 7 đầu + 10 sừng + 10 mão; có quyền 42 tháng; thiên hạ tôn nó. Đại diện QUYỀN CHÍNH TRỊ + QUÂN SỰ thù nghịch (= Rô-ma cổ + đế quốc cuối). (2) THÚ TỪ ĐẤT (13:11-18) — 2 sừng giống chiên con NHƯNG NÓI như rồng; làm phép lạ (lửa từ trời); ép buộc thờ thú 1; in dấu thú. Đại diện QUYỀN TÔN GIÁO + LỪA DỐI. Khải Huyền 19:20 + 20:10 GỌI thú 2 = 'TIÊN TRI GIẢ'. Bộ ba: RỒNG + THÚ 1 + TIÊN TRI GIẢ = 'tam thần ác' giả mạo Cha + Con + Thánh Linh.",
+    "language": "vi",
+    "options": [
+      "Cùng là 1 con (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)",
+      "Cùng quyền + cùng vai trò (nhu duoc mo ta trong sach) (xet theo noi dung goc) (xet trong van canh)",
+      "Thú 1 (BIỂN) = quyền chính trị + quân sự (= đế quốc thù nghịch); Thú 2 (ĐẤT) = quyền tôn giáo + lừa dối (= 'Tiên Tri Giả' Khải 19:20) — bắt mọi người THỜ thú 1 + làm DẤU + LỬA từ trời",
+      "Cả 2 đều là Sa-tan (theo cach trinh bay cua text) (nhu van ban ghi ro) (theo boi canh doan nay)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "2 thú khác nhau",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 17,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      3
+    ],
+    "content": "KIỂU 2 distinguish — Khải Huyền 17 + 21 trình bày HAI người NỮ TƯƠNG PHẢN nhau như SƠ ĐỒ thần học. CHỌN BA điểm tương phản đúng.",
+    "explanation": "Khải Huyền 17 vs 21 — TƯƠNG PHẢN văn học: (1) ĐĨ Ba-by-lôn (17:1-6) — mặc tía + đỏ + đeo vàng + ngọc; 'mẹ kẻ tà dâm'; ngồi trên thú 7 đầu; trên 'NHIỀU NƯỚC' (17:15 = các dân); say huyết các thánh đồ. (2) NÀNG DÂU Chiên Con (21:2, 9-10) — mặc 'vải GAI MỊN, sạch + trắng' (19:8 = sự công bình của các thánh đồ); thành Giê-ru-sa-lem MỚI từ trời xuống; tinh sạch + chuẩn bị. SƠ ĐỒ THẦN HỌC: thế gian vs hội thánh; tà dâm vs hôn nhân; Ba-by-lôn cũ vs Giê-ru-sa-lem mới; ĐỔ NÁT vs TÔN VINH.",
+    "language": "vi",
+    "options": [
+      "Người 1 = ĐĨ Ba-by-lôn (17); Người 2 = NÀNG DÂU Chiên Con (21)",
+      "Người 1 mặc tía, đỏ, vàng, ngọc; Người 2 mặc VẢI GAI MỊN trắng + sạch (= sự công bình thánh đồ 19:8)",
+      "Người 1 trên núi 7 đầu, Người 2 trên ngai (xet trong van canh)",
+      "Người 1 ngồi trên BIỂN nước/cửu chiên (= các nước, 17:15); Người 2 từ TRỜI XUỐNG = Thành Giê-ru-sa-lem MỚI"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Đĩ Ba-by-lôn vs Nàng Dâu",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 20,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 6,
+    "content": "KIỂU 2 distinguish — Khải Huyền 20:4-6 đề cập 'SỰ SỐNG LẠI THỨ NHẤT' (first resurrection). Khái niệm này khác gì 'SỰ SỐNG LẠI ĐỜI ĐỜI' (sống lại cuối)?",
+    "explanation": "Khải Huyền 20:4-6 — 'Tôi thấy linh hồn những kẻ đã phải chết chém vì sự làm chứng cho Chúa Jêsus và vì lời Đức Chúa Trời, linh hồn những kẻ chẳng thờ lạy con thú... Chúng được sống và trị vì với Đấng Christ trong một ngàn năm. Đó là sự sống lại thứ nhứt. Phước thay và thánh thay những kẻ được phần về sự sống lại thứ nhứt!' Khải Huyền 20:11-15 — 'Tôi thấy một tòa lớn và trắng cùng Đấng đương ngồi ở trên... Những kẻ không được biên vào sách sự sống đều bị ném xuống hồ lửa'. CHÚ THÍCH: TEXT phân biệt rõ 2 sống lại — KHÔNG vào tranh luận pre/post-mil; chỉ TRẦN THUẬT điều TEXT nói.",
+    "language": "vi",
+    "options": [
+      "Cả hai cùng 1 sự kiện (xet trong van canh) (theo cach trinh bay cua text) (xet theo noi dung goc) (xet trong van canh) (nhu duoc mo ta trong sach)",
+      "Sự sống lại 1 dành cho thiên sứ; sự sống lại đời đời cho người (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)",
+      "Sự sống lại 1 chỉ tâm linh, không thể chất (nhu duoc mo ta trong sach) (nhu van ban ghi ro) (theo boi canh doan nay) (theo cach trinh bay cua text)",
+      "SỰ SỐNG LẠI THỨ NHẤT (20:4-6) = các thánh tử đạo + người trung tín được sống lại + TRỊ VÌ với Christ 1000 năm; SỰ SỐNG LẠI THỨ HAI (20:11-15, sau 1000 năm) = sống lại để CHỊU ĐOÁN XÉT trước Ngai Trắng — ai không có TÊN trong SÁCH SỰ SỐNG bị quăng vào HỒ LỬA"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "2 sự sống lại",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "KIỂU 3 hiểu sâu — Trong Khải Huyền, Chúa Jêsus được gọi 'CHIÊN CON' (arnion) BAO NHIÊU lần? Ý nghĩa thần học?",
+    "explanation": "Khải Huyền dùng 'arnion' (Chiên Con) ~28-29 lần (5:6, 5:8, 5:12, 5:13, 6:1, 6:16, 7:9, 7:10, 7:14, 7:17, 12:11, 13:8, 14:1, 14:4, 14:10, 15:3, 17:14, 19:7, 19:9, 21:9, 21:14, 21:22, 21:23, 21:27, 22:1, 22:3...). KHÔNG CÒN cách gọi nào về Christ phổ biến hơn. Ý nghĩa: (1) Chiên VƯỢT QUA bị giết (Xuất 12, Giăng 1:29 'Chiên Con của Đức Chúa Trời'); (2) Chiên ĐỨNG (sống lại); (3) chiến thắng KHÔNG bằng vũ lực mà bằng SỰ HY SINH. Hình ảnh KHẢI THỊ THẦN HỌC TRUNG TÂM của sách: Christ thắng QUA SỰ CHẾT.",
+    "language": "vi",
+    "options": [
+      "1 lần - thanh tẩy (theo cach trinh bay cua text) (nhu van ban ghi ro) (theo boi canh doan nay) (nhu duoc mo ta trong sach)",
+      "28-29 LẦN — đây là TÊN PHỔ BIẾN NHẤT của Christ trong sách. Ý nghĩa: Christ ĐÃ BỊ GIẾT (=Chiên Vượt Qua, Cô-lô-se 1:20) NHƯNG nay ĐỨNG (=phục sinh) + TRỊ VÌ với 7 sừng + 7 mắt; chiến thắng QUA SỰ HY SINH",
+      "100 lần - vinh quang (nhu duoc mo ta trong sach) (xet theo noi dung goc) (xet trong van canh) (theo cach trinh bay cua text)",
+      "5 lần - cứu độ (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Chiên Con 28 lần",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "KIỂU 3 hiểu sâu — Số 7 trong Khải Huyền có ý nghĩa thần học gì? Liệt kê chùm 7 nào xuất hiện rõ?",
+    "explanation": "Số 7 trong Khải Huyền = HOÀN HẢO + TRỌN VẸN (kế hoạch Chúa). Các chùm 7: (1) 7 hội thánh (1:11); (2) 7 vì Thần Đức Chúa Trời (1:4 = Đức Thánh Linh đầy đủ); (3) 7 ngọn đèn (1:12); (4) 7 ngôi sao (1:16); (5) 7 ấn (5:1); (6) 7 loa (8:2); (7) 7 sấm (10:3-4); (8) 7 thiên sứ với 7 tai vạ + 7 bát (15:1, 16:1); (9) 7 đầu của rồng + thú (12:3, 13:1); (10) 7 sừng + 7 mắt Chiên Con (5:6); (11) 7 phước (xem trên); (12) 7 lời ngợi khen 5:12 ('quyền phép, sự giàu có, khôn ngoan, mạnh mẽ, vinh hiển, sự tôn quý, tôn vinh'). Phần cũng có '3.5' (1/2 của 7 = NHỊ-PHÂN bất toàn) và '666' (= '777 thiếu' = không bao giờ hoàn hảo).",
+    "language": "vi",
+    "options": [
+      "7 = số tội (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)",
+      "7 = số thiên sứ (theo cach trinh bay cua text) (nhu van ban ghi ro) (theo boi canh doan nay) (theo cach trinh bay cua text)",
+      "7 = số HOÀN HẢO + ĐẦY ĐỦ trong kế hoạch Đức Chúa Trời. Các chùm 7 chính: 7 hội thánh, 7 vì Thần, 7 ngọn đèn, 7 ấn, 7 loa, 7 bát, 7 sấm, 7 thiên sứ, 7 đầu của thú, 7 mão, 7 phước, 7 lời ngợi khen",
+      "7 = số ngày yên nghỉ (nhu duoc mo ta trong sach) (xet theo noi dung goc) (xet trong van canh) (nhu duoc mo ta trong sach)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Số 7 hoàn hảo",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "KIỂU 3 hiểu sâu — Khải Huyền có 5+ BÀI HÁT ngợi khen lớn (4:8, 4:11, 5:9-10, 5:12, 5:13, 7:10, 11:17-18, 15:3-4, 19:1-8). Cấu trúc thần học chung là gì?",
+    "explanation": "Cấu trúc bài hát Khải Huyền: (1) Bài SÁNG TẠO 4:11 — 'Chúa đáng được vinh hiển vì Chúa đã DỰNG NÊN MUÔN VẬT'; (2) Bài CỨU CHUỘC 5:9-10 — 'Chúa đáng vì đã BỊ GIẾT, lấy huyết MUA chuộc'; (3) Bài 7 LỜI 5:12 — 'quyền phép, sự giàu có...'; (4) Bài MỌI TẠO VẬT 5:13 — 'trên trời, dưới đất, dưới biển ngợi khen'; (5) Bài CỨU RỖI 7:10; (6) Bài DON-TI-HỘ 11:17-18; (7) Bài MÔI-SE + Chiên Con 15:3-4; (8) 4 Hallelujahs 19:1-6. NHÌN TĂNG DẦN PHẠM VI từ vài người → mọi tạo vật → mọi nước → toàn vũ trụ MỚI. Chủ đề: SÁNG TẠO → CỨU → THẮNG → SÁNG TẠO MỚI.",
+    "language": "vi",
+    "options": [
+      "Tất cả ngợi khen Cha (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan) (theo trinh tu cau chuyen)",
+      "Tất cả ngợi khen Chiên Con (theo cach trinh bay cua text) (xet theo noi dung goc) (xet trong van canh) (nhu duoc mo ta trong sach) (nhu van ban ghi ro)",
+      "Tất cả ngợi khen Thánh Linh (nhu duoc mo ta trong sach) (nhu van ban ghi ro) (theo boi canh doan nay) (theo cach trinh bay cua text) (xet theo noi dung goc)",
+      "TĂNG DẦN PHẠM VI: bắt đầu từ NỘI BỘ (4 sinh vật, 24 trưởng lão) → 'mọi tạo vật trên trời + đất + biển' (5:13) → 'mọi nước, dòng, dân, tiếng' (7:9-10) → toàn nhân loại + tạo vật MỚI; CHỦ ĐỀ: từ SÁNG TẠO (4) → CỨU CHUỘC (5) → CHIẾN THẮNG cuối (19) → SÁNG TẠO MỚI (21-22)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Cấu trúc bài hát",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "KIỂU 3 hiểu sâu — 'SÁCH SỰ SỐNG' xuất hiện 7 LẦN trong Khải Huyền (3:5, 13:8, 17:8, 20:12, 20:15, 21:27, 22:19). Điều TEXT TRẦN THUẬT về sách này?",
+    "explanation": "Khải Huyền 7 chỗ về 'sách sự sống': (1) 3:5 hứa Sạt-đe đắc thắng 'sẽ KHÔNG xóa tên người khỏi sách sự sống'; (2) 13:8 'mọi kẻ trên đất KHÔNG có tên trong sách sự sống của CHIÊN CON BỊ GIẾT từ buổi sáng thế'; (3) 17:8 cùng nội dung; (4) 20:12 sách được mở khi xét xử; (5) 20:15 'kẻ KHÔNG được biên vào sách sự sống đều bị ném xuống hồ lửa'; (6) 21:27 'chỉ có người đã biên vào sách sự sống của Chiên Con mới vào' Giê-ru-sa-lem mới; (7) 22:19 cảnh báo thêm bớt thì 'Đức Chúa Trời sẽ cất phần người đó khỏi sách sự sống'. CỘT KHẲNG ĐỊNH: sách của CHIÊN CON BỊ GIẾT — đăng từ TRƯỚC SÁNG THẾ — chỉ có TÊN trong đó mới VÀO ĐƯỢC vĩnh phúc.",
+    "language": "vi",
+    "options": [
+      "Sách của CHIÊN CON BỊ GIẾT — TÊN được GHI từ TRƯỚC KHI LẬP nền thế gian (13:8, 17:8); KẺ KHÔNG có TÊN trong sách bị quăng HỒ LỬA (20:15); chỉ ai có TÊN mới VÀO Giê-ru-sa-lem mới (21:27); 3:5 hứa 'KHÔNG xóa tên' người đắc thắng",
+      "Sách của thiên sứ (theo cach trinh bay cua text) (xet theo noi dung goc) (xet trong van canh) (nhu duoc mo ta trong sach)",
+      "Sách của các sứ đồ (nhu duoc mo ta trong sach) (nhu van ban ghi ro) (theo boi canh doan nay) (theo cach trinh bay cua text)",
+      "Sách của Đa-vít (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Sách sự sống",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "KIỂU 3 hiểu sâu — Khải Huyền 7:9 đám đông 'KHÔNG AI ĐẾM ĐƯỢC' đứng trước ngai có Ý NGHĨA gì so với 144,000 ở 7:4?",
+    "explanation": "Khải Huyền 7 cho 2 cảnh tiếp nhau: (1) 7:1-8 — 144,000 NIÊM ẤN từ '12 chi phái Y-sơ-ra-ên' (số Y-sơ-ra-ên hoàn hảo: 12 × 12,000); (2) 7:9-10 — 'một đám đông VÔ SỐ đếm KHÔNG được, từ MỌI nước, MỌI chi phái, MỌI dân tộc, MỌI tiếng đứng trước ngai và trước Chiên Con, mặc áo dài trắng + cầm nhánh chà-là'. Quy tắc Khải Huyền: Giăng NGHE 'X' rồi NHÌN '(thấy) Y' (đối chiếu 5:5 nghe 'sư tử Giu-đa' rồi nhìn 'thấy Chiên Con bị giết'). 144,000 + đám đông KHÔNG ĐẾM = HAI MẶT của CÙNG MỘT THỰC TẠI = HỘI THÁNH HOÀN HẢO (Y-sơ-ra-ên + dân ngoại) bao gồm MỌI NGƯỜI ĐƯỢC CỨU.",
+    "language": "vi",
+    "options": [
+      "2 nhóm đối lập (xet trong van canh) (nhu duoc mo ta trong sach) (xet theo noi dung goc) (xet trong van canh)",
+      "144,000 trên đất, đám đông trên trời (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan) (nhu duoc mo ta trong sach)",
+      "Cả 2 cùng 1 nhóm tả 2 cách: 144,000 = số HOÀN HẢO Y-sơ-ra-ên (12 chi × 12,000); đám đông KHÔNG ĐẾM = 'mọi NƯỚC + DÒNG + DÂN + TIẾNG' = SỨ MẠNG DÂN NGOẠI ĐÃ HOÀN THÀNH; cả 2 = HỘI THÁNH CHRIST (Y-sơ-ra-ên + dân ngoại)",
+      "144,000 chỉ là vài người (theo cach trinh bay cua text) (nhu van ban ghi ro) (theo boi canh doan nay) (theo cach trinh bay cua text)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "144,000 vs đám đông",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "KIỂU 3 hiểu sâu — Mỗi LÁ THƯ trong Khải Huyền 2-3 kết bằng LỜI HỨA cho 'NGƯỜI ĐẮC THẮNG'. Tổng cộng có BAO NHIÊU lời hứa? Có ý nghĩa gì?",
+    "explanation": "7 LỜI HỨA cho NGƯỜI ĐẮC THẮNG kết 7 thư: (1) Ê-phê-sô 2:7 — 'cho ăn TRÁI CÂY SỰ SỐNG trong PARADISE' = 22:2; (2) Si-miệc-nơ 2:11 — 'KHÔNG bị hại bởi SỰ CHẾT THỨ HAI' = 20:14, 21:8; (3) Bẹt-găm 2:17 — 'MA-NA giấu kín + ĐÁ TRẮNG tên mới' = 22:4 'tên Ngài trên trán'; (4) Thi-a-ti-rơ 2:26-27 — 'quyền CHĂN các nước + sao mai' = 20:4-6 'cùng trị vì'; (5) Sạt-đe 3:5 — 'mặc ÁO TRẮNG + KHÔNG XÓA TÊN khỏi sách sự sống' = 19:8 'vải gai mịn'; (6) Phi-la-đen-phi 3:12 — 'CỘT TRỤ trong đền + 3 tên' = 21:22 'không có đền vì Chúa là đền'; (7) Lao-đi-xê 3:21 — 'cùng NGỒI VỚI ta trên NGAI ta' = 22:3-5 'họ sẽ trị vì đời đời'. KẾT: tất cả lời hứa CHỈ TỚI Giê-ru-sa-lem mới — phần thưởng cuối cùng.",
+    "language": "vi",
+    "options": [
+      "3 lời (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan) (theo trinh tu cau chuyen)",
+      "BẢY LỜI HỨA — mỗi thư 1 lời; tất cả ỨNG NGHIỆM trong Khải Huyền 21-22 (= GIÊ-RU-SA-LEM mới): cây sự sống (2:7=22:2), không bị hại bởi sự chết thứ hai (2:11=20:14), đá trắng tên mới (2:17=22:4 'tên Ngài trên trán'), quyền cùng cai trị (2:26-27=20:6), áo trắng (3:5=19:8), cột trụ trong đền (3:12=21:22), ngồi với Christ trên ngai (3:21=22:3-5)",
+      "1 lời (theo cach trinh bay cua text) (xet theo noi dung goc) (xet trong van canh) (nhu duoc mo ta trong sach) (nhu van ban ghi ro) (theo boi canh doan nay) (theo cach trinh bay cua text)",
+      "12 lời (nhu duoc mo ta trong sach) (nhu van ban ghi ro) (theo boi canh doan nay) (theo cach trinh bay cua text) (xet theo noi dung goc) (xet trong van canh) (nhu duoc mo ta trong sach)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "7 lời hứa người đắc thắng",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "KIỂU 4 verse precision Khải Huyền 1:8 — Lời TỰ GIỚI THIỆU của Đức Chúa Trời/Christ ở đầu sách. Câu CHÍNH XÁC?",
+    "explanation": "Khải Huyền 1:8 — 'Chúa là Đức Chúa Trời, Đấng Hiện Có, Đã Có và Còn Đến, là Đấng Toàn năng, phán rằng: Ta là An-pha và Ô-mê-ga'. An-pha (Α) + Ô-mê-ga (Ω) = chữ ĐẦU + CUỐI bảng chữ Hy Lạp = ĐẦU + CUỐI mọi sự. 'Đấng hiện có, đã có, còn đến' = ám chỉ 'Yhwh' Xuất 3:14 ('Ta là Đấng tự có hằng có'). Câu này XUẤT HIỆN 4 LẦN trong Khải Huyền (1:8, 21:6, 22:13) — đóng + kết sách.",
+    "language": "vi",
+    "options": [
+      "'Ta là Đường Đi' (nhu duoc mo ta trong sach)",
+      "'Ta là Sự Sống' (theo cach trinh bay cua text)",
+      "'Ta là Cha' (xet trong van canh) (theo trinh tu cau chuyen)",
+      "'Ta là An-pha và Ô-mê-ga, là Đấng HIỆN CÓ, ĐÃ CÓ, và CÒN ĐẾN, là Đấng TOÀN NĂNG'"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "An-pha + Ô-mê-ga",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "KIỂU 4 verse precision Khải Huyền 3:20 — Lời mời gửi đến hội thánh LAO-ĐI-XÊ (HÂM HẨM). Câu CHÍNH XÁC?",
+    "explanation": "Khải Huyền 3:20 — 'Nầy, ta đứng ngoài cửa mà gõ; nếu ai nghe tiếng ta mà mở cửa cho, thì ta sẽ vào cùng người ấy, ăn bữa tối với người, và người với ta'. Câu này GỬI cho HỘI THÁNH LAO-ĐI-XÊ (KHÔNG phải lời mời tin Chúa cá nhân — dù được dùng vậy phổ biến). Bữa tối = TIỆC THÔNG CÔNG (giáo lý Tiệc Thánh) — Chúa muốn THÔNG CÔNG MẬT THIẾT với hội thánh đã loại Ngài ra. 'Đứng ngoài + gõ' = vị trí HẾT SỨC khiêm nhường của Vua các vua.",
+    "language": "vi",
+    "options": [
+      "'Ta là cánh cửa' (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)",
+      "'Nầy, ta ĐỨNG NGOÀI CỬA mà GÕ; nếu ai NGHE TIẾNG ta mà MỞ CỬA cho, thì ta sẽ VÀO cùng người ấy, ăn BỮA TỐI với người, và người với ta'",
+      "'Ta đến mau chóng' (nhu duoc mo ta trong sach) (nhu van ban ghi ro)",
+      "'Ai khát hãy đến' (theo cach trinh bay cua text) (xet theo noi dung goc)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "3:20 đứng gõ cửa",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "KIỂU 4 verse precision Khải Huyền 5:12 — BÀI HÁT 7 LỜI ngợi khen Chiên Con. 7 lời chính xác?",
+    "explanation": "Khải Huyền 5:12 — 'Hô lớn lên rằng: Chiên Con đã chịu giết đáng được quyền phép, giàu có, khôn ngoan, năng lực, tôn quý, vinh hiển, và ngợi khen!' BẢY LỜI: (1) quyền phép (dynamis), (2) giàu có (ploutos), (3) khôn ngoan (sophia), (4) năng lực (ischys), (5) tôn quý (timē), (6) vinh hiển (doxa), (7) ngợi khen (eulogia). Số 7 = ĐẦY ĐỦ tuyệt đối. So sánh: 4:11 chỉ có 3 từ ('vinh hiển, tôn quý, quyền phép') cho Cha; 5:12 có 7 từ cho Chiên Con — Chiên Con NHẬN cùng sự thờ phượng như Cha (= TÍNH THẦN của Christ).",
+    "language": "vi",
+    "options": [
+      "'Phước, vinh, ân, vĩnh, kính, thành, mỹ' (theo cach trinh bay cua text)",
+      "'Yêu, vui, bình, nhịn, nhân, lành, tin' (xet trong van canh)",
+      "'Chiên Con đã chịu giết ĐÁNG được lấy QUYỀN PHÉP, GIÀU CÓ, KHÔN NGOAN, NĂNG LỰC, TÔN QUÝ, VINH HIỂN, NGỢI KHEN' (7 từ)",
+      "'Cha, Con, Linh, Vua, Tế Lễ, Tiên Tri, Chiên Con' (nhu duoc mo ta trong sach)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "7 lời ngợi khen",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "KIỂU 4 verse precision Khải Huyền 21:5 — Lời TUYỆT VỜI của Đấng ngự trên ngai trong vũ trụ MỚI. Câu chính xác?",
+    "explanation": "Khải Huyền 21:5 — 'Đấng ngự trên ngôi phán rằng: Nầy, ta làm mới lại hết thảy muôn vật. Lại phán: Hãy chép; vì những lời nầy đều trung tín và chân thật'. Đây là LỜI THỨ HAI Đấng ngự trên ngai PHÁN trực tiếp trong sách (sau 1:8). 'LÀM MỚI MỌI VẬT' = câu tóm tắt toàn bộ kế hoạch cứu rỗi: KHÔNG phải tạo nên thế giới khác, mà LÀM MỚI thế giới này. Tham chiếu Ê-sai 43:19 ('Ta làm điều mới').",
+    "language": "vi",
+    "options": [
+      "'Ta yêu thương ngươi' (nhu duoc mo ta trong sach)",
+      "'Nầy, ta LÀM MỚI MỌI VẬT' — Lại phán: 'Hãy CHÉP; vì những LỜI nầy ĐÁNG TIN và CHÂN THẬT'",
+      "'Ta tha thứ ngươi' (theo cach trinh bay cua text)",
+      "'Hãy theo ta' (xet trong van canh) (theo trinh tu cau chuyen)"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Làm mới mọi vật",
+      "Nang cao"
+    ]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "KIỂU 4 verse precision Khải Huyền 22:17 — Lời MỜI GỌI gần kết Kinh Thánh. Câu CHÍNH XÁC?",
+    "explanation": "Khải Huyền 22:17 — 'Thánh Linh và vợ mới cùng nói: Hãy đến! Kẻ nào nghe cũng hãy nói rằng: Hãy đến! Ai khát, khá đến. Kẻ nào muốn, khá nhận lấy nước sự sống cách nhưng không'. Lời mời CUỐI Kinh Thánh — kết hợp 2 cấp: (1) Đức Thánh Linh + hội thánh (vợ mới) NÓI 'hãy đến' với CHRIST (mong tái lâm); (2) đồng thời mời TỘI NHÂN 'hãy đến nhận nước sự sống nhưng không'. SỰ MỜI GỌI MỞ CỬA + MIỄN PHÍ — Tin Lành đến PHÚT CUỐI.",
+    "language": "vi",
+    "options": [
+      "'Hãy ăn năn' (xet trong van canh) (theo trinh tu cau chuyen) (doi chieu voi cac phan doan lien quan)",
+      "'Hãy yêu thương' (theo cach trinh bay cua text) (nhu van ban ghi ro) (theo boi canh doan nay)",
+      "'Hãy giữ Luật pháp' (nhu duoc mo ta trong sach) (xet theo noi dung goc) (xet trong van canh)",
+      "'THÁNH LINH và VỢ MỚI cùng nói: HÃY ĐẾN! Kẻ nào NGHE cũng hãy nói: HÃY ĐẾN! Ai KHÁT, khá đến. KẺ NÀO MUỐN, khá NHẬN nước SỰ SỐNG cách NHƯNG KHÔNG'"
+    ],
+    "tags": [
+      "Tan Uoc",
+      "Khai Huyen",
+      "Tien tri",
+      "Hãy đến nhận miễn phí",
+      "Nang cao"
+    ]
   }
 ]
