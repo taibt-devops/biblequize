@@ -2004,5 +2004,2063 @@
       "Jacob and Israel",
       "Advanced"
     ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 10,
+    "content": "According to Exodus 2:1-10, who saved baby Moses in the basket on the Nile?",
+    "explanation": "Exodus 2:5-6 — 'Now the daughter of Pharaoh came down to bathe at the river... She saw the basket among the reeds and sent her servant... she took pity on him'. She raised Moses as her own son.",
+    "language": "en",
+    "options": [
+      "Moses' biological mother",
+      "Joseph the prime minister of Egypt",
+      "Pharaoh's daughter",
+      "An angel from heaven"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses Saved",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 6,
+    "content": "According to Exodus 3:1-6, in what form did God appear to Moses while he was tending sheep?",
+    "explanation": "Exodus 3:2-3 — 'And the angel of the LORD appeared to him in a flame of fire out of the midst of a bush. He looked, and behold, the bush was burning, yet it was not consumed'.",
+    "language": "en",
+    "options": [
+      "A bright cloud",
+      "A BURNING BUSH that was NOT CONSUMED",
+      "A great pillar of fire",
+      "A loud thunder over the mountain"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Burning Bush",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 5,
+    "content": "According to Exodus 4:2-4, God told Moses to throw his staff down; what did the staff become?",
+    "explanation": "Exodus 4:3 — 'And he said, Throw it on the ground. So he threw it on the ground, and it became a serpent, and Moses ran from it'. When he caught its tail, it became a staff again (4:4).",
+    "language": "en",
+    "options": [
+      "A lion",
+      "An eagle",
+      "A calf",
+      "A serpent"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Staff to Serpent",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 13,
+    "content": "According to Exodus 7:1, what did God appoint Aaron to do for Moses?",
+    "explanation": "Exodus 7:1 — 'And the LORD said to Moses, See, I have made you like God to Pharaoh, and your brother Aaron shall be your prophet'. Aaron spoke for Moses because Moses had 'slow tongue' (4:10).",
+    "language": "en",
+    "options": [
+      "Be Moses' spokesman (prophet)",
+      "Be king replacing Pharaoh",
+      "Be a war commander for Israel",
+      "Be a scribe teaching law"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Aaron Spokesman",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 28,
+    "content": "According to Exodus 12:21-23, what did the Israelites apply to doorposts and lintels for the destroyer to pass over?",
+    "explanation": "Exodus 12:22-23 — 'Take a bunch of hyssop and dip it in the blood... and touch the lintel and the two doorposts with the blood... For the LORD will pass through to strike the Egyptians, and when he sees the blood on the lintel and on the two doorposts, the LORD will pass over the door'.",
+    "language": "en",
+    "options": [
+      "Pure olive oil",
+      "Honey and water",
+      "BLOOD of the Passover lamb",
+      "Ash of the burning bush"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Passover Blood",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 13,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 22,
+    "content": "According to Exodus 13:21-22, by what sign did God lead Israel through the wilderness?",
+    "explanation": "Exodus 13:21-22 — 'And the LORD went before them by day in a pillar of cloud to lead them along the way, and by night in a pillar of fire to give them light, that they might travel by day and by night'.",
+    "language": "en",
+    "options": [
+      "A white angel leading the way",
+      "A PILLAR OF CLOUD by day, PILLAR OF FIRE by night",
+      "A loud trumpet from heaven",
+      "A specially shining star"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Cloud and Fire",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 18,
+    "content": "According to Exodus 16:14-15, what did Israel call the strange food God provided in the wilderness?",
+    "explanation": "Exodus 16:15 — 'When the people of Israel saw it, they said to one another, What is it? For they did not know what it was. And Moses said to them, It is the bread that the LORD has given you to eat'. The Hebrew 'man' (מָן) literally means 'what is it?'",
+    "language": "en",
+    "options": [
+      "Angelic Bread (as described in the passage)",
+      "Heavenly Dew (according to the text's framing)",
+      "Snow Seed (per the textual narrative)",
+      "MANNA (meaning 'what is it?')"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Manna",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 17,
+    "content": "According to Exodus 20:1-17, how many commandments did God give Moses on Mount Sinai?",
+    "explanation": "Exodus 20:1-17 contains the Ten Commandments (Decalogue): 4 about God (1-4), 6 about humanity (5-10). Deuteronomy 5:6-21 repeats with minor variation.",
+    "language": "en",
+    "options": [
+      "TEN Commandments",
+      "Seven Commandments",
+      "Twelve Commandments",
+      "Fifty Commandments"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Ten Commandments",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 32,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "According to Exodus 32:1-8, what did Israel do while Moses tarried on the mountain with God?",
+    "explanation": "Exodus 32:1,4 — 'When the people saw that Moses delayed to come down, they gathered around Aaron and said, Up, make us gods who shall go before us... He received the gold from their hand and fashioned it with a graving tool and made a golden calf'.",
+    "language": "en",
+    "options": [
+      "They waited patiently and prayed",
+      "They split into 12 tribes to search for Moses",
+      "They forced Aaron to make a GOLDEN CALF to worship",
+      "They returned to Egypt seeking Pharaoh"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Golden Calf",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "verseStart": 34,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 35,
+    "content": "According to Exodus 40:34-35, what happened after the tabernacle was completed?",
+    "explanation": "Exodus 40:34-35 — 'Then the cloud covered the tent of meeting, and the glory of the LORD filled the tabernacle. And Moses was not able to enter the tent of meeting because the cloud settled on it, and the glory of the LORD filled the tabernacle'.",
+    "language": "en",
+    "options": [
+      "Pharaoh came to visit in awe",
+      "The GLORY of the LORD FILLED the tabernacle — even Moses could not enter",
+      "All the people danced around the tabernacle for 7 days",
+      "Hail fell from heaven destroying all Egyptian gods"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Glory Fills Tabernacle",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 14,
+    "content": "According to Exodus 1:8-14, why did the new Pharaoh begin oppressing Israel?",
+    "explanation": "Exodus 1:9-10 — 'And he said to his people, Behold, the people of Israel are too many and too mighty for us. Come, let us deal shrewdly with them, lest they multiply'. Fear of Israel joining enemies in war (1:10).",
+    "language": "en",
+    "options": [
+      "Because they did not worship Egyptian gods",
+      "Because they did not pay royal taxes",
+      "Because he FEARED Israel was MULTIPLYING too much and might join enemies",
+      "Because they claimed Joseph as their own king"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Pharaoh Fears Israel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 22,
+    "content": "According to Exodus 1:15-21, what did Hebrew midwives Shiphrah and Puah do when ordered to kill male infants?",
+    "explanation": "Exodus 1:17 — 'But the midwives feared God and did not do as the king of Egypt commanded them, but let the male children live'. When questioned: 'Hebrew women are not like the Egyptian women, for they are vigorous and give birth before the midwife comes to them' (1:19).",
+    "language": "en",
+    "options": [
+      "They obeyed Pharaoh immediately (according to the text's framing)",
+      "They warned mothers to flee to the desert",
+      "They secretly killed the boys (per the textual narrative)",
+      "They FEARED God and did NOT KILL the boys; told Pharaoh Hebrew women gave birth too quickly"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Shiphrah and Puah",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 22,
+    "content": "According to Exodus 2:11-22, why did Moses flee Egypt after killing an Egyptian?",
+    "explanation": "Exodus 2:14-15 — 'Then Moses was afraid, and thought, Surely the thing is known. When Pharaoh heard of it, he sought to kill Moses, but Moses fled from Pharaoh and stayed in the land of Midian'. There he married Zipporah (Jethro's daughter).",
+    "language": "en",
+    "options": [
+      "His family wanted him to study abroad",
+      "Because Pharaoh learned of it and SOUGHT TO KILL him",
+      "Because God sent him out",
+      "Because he loved a Midianite girl"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses Flees",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 15,
+    "content": "According to Exodus 3:13-15, Moses asked God's name. What did God answer? (Distinct from Hard 3:14 'I AM WHO I AM')",
+    "explanation": "Exodus 3:15 — 'God also said to Moses, Say this to the people of Israel: The LORD, the God of your fathers, the God of Abraham, the God of Isaac, and the God of Jacob, has sent me to you. This is my name forever, and thus I am to be remembered throughout all generations'.",
+    "language": "en",
+    "options": [
+      "'I am the Father of Abraham' (according to the text's framing)",
+      "'I am the Shepherd' (per the textual narrative)",
+      "'I am the God of your fathers: Abraham, Isaac, Jacob — this is MY NAME FOREVER'",
+      "'I am the Maker of all things' (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "God's Name Forever",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 4,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 17,
+    "content": "According to Exodus 4:10-17, why did Moses resist God's call? Whom did God provide?",
+    "explanation": "Exodus 4:10-14 — 'But Moses said to the LORD, Oh, my Lord, I am not eloquent, either in the past or since you have spoken to your servant, but I am slow of speech and of tongue. Then the LORD said... Is there not Aaron, your brother, the Levite? I know that he can speak well... Behold, he is coming out to meet you'.",
+    "language": "en",
+    "options": [
+      "'I am slow of speech' / God gave AARON his brother as spokesman",
+      "I don't know Egyptian / God taught new language",
+      "I have no authority / God made me king",
+      "I fear lions / God sent angels"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses Reluctant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 21,
+    "content": "According to Exodus 5:1-21, how did Pharaoh react when Moses demanded Israel's release?",
+    "explanation": "Exodus 5:7-8 — 'You shall no longer give the people straw to make bricks, as in the past; let them go and gather straw for themselves. But the number of bricks that they made in the past you shall impose on them, you shall by no means reduce it'.",
+    "language": "en",
+    "options": [
+      "He agreed immediately (per the textual narrative)",
+      "He asked Moses to perform a miracle first",
+      "He gave Moses time to reconsider (according to the text's framing)",
+      "He INTENSIFIED the labor — required brick quotas WITHOUT supplying STRAW; same brick count as before"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Heavier Burden",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 25,
+    "content": "According to Exodus 7:14-25, what was the FIRST of the 10 plagues on Egypt?",
+    "explanation": "Exodus 7:20-21 — 'Moses and Aaron... lifted up the staff and struck the water in the Nile, and all the water in the Nile turned into blood. And the fish in the Nile died, and the Nile stank, so that the Egyptians could not drink water'.",
+    "language": "en",
+    "options": [
+      "Fish dying in the Red Sea (per the textual narrative)",
+      "The Nile RIVER turned to BLOOD — fish died, water stank, undrinkable",
+      "Hail falling and crushing crops",
+      "Great locusts devouring all vegetation"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Plague 1 — River to Blood",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 15,
+    "content": "According to Exodus 8:1-15, what was the SECOND plague?",
+    "explanation": "Exodus 8:6 — 'So Aaron stretched out his hand over the waters of Egypt, and the frogs came up and covered the land of Egypt'. 8:3 — 'The Nile shall swarm with frogs... into your house, your bedroom, on your bed'.",
+    "language": "en",
+    "options": [
+      "Great hail across the land",
+      "Thick darkness for 3 days",
+      "FROGS overflowing — into houses, ovens, beds",
+      "Locusts devouring all vegetation"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Plague 2 — Frogs",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 9,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 35,
+    "content": "In the 10 plagues, what were plagues 5, 6, 7 (Exodus 9)?",
+    "explanation": "Exodus 9 contains 3 plagues: 9:1-7 livestock plague (only Egypt, not Israel); 9:8-12 boils breaking out on man and beast; 9:13-35 great hail (with fire) destroying crops.",
+    "language": "en",
+    "options": [
+      "Locusts / Darkness / Death of firstborn",
+      "Frogs / Gnats / Flies",
+      "Blood / Frogs / Gnats",
+      "Livestock plague (5) / Boils (6) / Hail (7)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Plagues 5-6-7",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 10,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 29,
+    "content": "According to Exodus 10, what were plagues 8 and 9?",
+    "explanation": "Exodus 10:13-15 — locusts covered the land, eating all vegetation hail left. 10:21-23 — thick darkness 'that may be felt' for 3 days in Egypt, while Israel had light in Goshen.",
+    "language": "en",
+    "options": [
+      "Blood (8) / Frogs (9) (according to the text's framing)",
+      "Locusts (8) — devouring what hail left / Thick darkness (9) — 3 days, palpable",
+      "Boils (8) / Hail (9) (per the textual narrative)",
+      "Gnats (8) / Flies (9) (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Plagues 8-9",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 11,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 7,
+    "content": "According to Exodus 11:4-7, what was the 10th (final) plague? When?",
+    "explanation": "Exodus 11:4-5 — 'About midnight I will go out in the midst of Egypt, and every firstborn in the land of Egypt shall die, from the firstborn of Pharaoh who sits on his throne, even to the firstborn of the slave girl who is behind the handmill, and all the firstborn of the cattle'.",
+    "language": "en",
+    "options": [
+      "Blood at dawn (per the textual narrative)",
+      "Boils during Egyptian festival",
+      "Locusts during harvest (according to the text's framing)",
+      "All FIRSTBORN of Egypt (men and beasts) DIE / at midnight"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Plague 10 — Firstborn",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 14,
+    "content": "According to Exodus 12:1-14, when was Passover celebrated?",
+    "explanation": "Exodus 12:2-6 — 'This month shall be for you the beginning of months. It shall be the first month of the year for you... On the tenth day of this month every man shall take a lamb... You shall keep it until the fourteenth day of this month, when the whole assembly of the congregation of Israel shall kill their lambs at twilight'.",
+    "language": "en",
+    "options": [
+      "Month NISAN (1st month), DAY 14 — lamb slain at twilight",
+      "Month 7, day 1 (per the textual narrative)",
+      "Month 12, day 25 (as described in the passage)",
+      "Month 5, day 15 (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Passover Calendar",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "According to Exodus 12:5,11 — what kind of lamb? How to eat it?",
+    "explanation": "Exodus 12:5,11 — 'Your lamb shall be without blemish, a male a year old. You may take it from the sheep or from the goats... They shall eat the flesh that night, roasted on the fire... In this manner you shall eat it: with your belt fastened, your sandals on your feet, and your staff in your hand. And you shall eat it in haste. It is the LORD's Passover'.",
+    "language": "en",
+    "options": [
+      "2-year-old calf, blemished, roasted / sitting (according to the text's framing)",
+      "5-year-old ram, long-horned, boiled / reclining",
+      "1-year LAMB/GOAT, WITHOUT BLEMISH, MALE, ROASTED with fire / eaten standing, ready to depart (sandals, staff, belt)",
+      "3-year-old red bull, steamed / kneeling (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Passover Lamb",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 13,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 22,
+    "content": "According to Exodus 13:17-18, why did God NOT lead Israel through the nearer Philistine country?",
+    "explanation": "Exodus 13:17 — 'When Pharaoh let the people go, God did not lead them by way of the land of the Philistines, although that was near. For God said, Lest the people change their minds when they see war and return to Egypt'.",
+    "language": "en",
+    "options": [
+      "The road had thick forests hard to cross",
+      "Lest the people SEE WAR and CHANGE THEIR MIND, returning to Egypt",
+      "Because Pharaoh blocked that route",
+      "Because it was Moabite territory"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Avoiding Philistia",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 14,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 31,
+    "content": "According to Exodus 14:21-22, how did Israel cross the Red Sea?",
+    "explanation": "Exodus 14:21-22 — 'Moses stretched out his hand over the sea, and the LORD drove the sea back by a strong east wind all night and made the sea dry land, and the waters were divided. And the people of Israel went into the midst of the sea on dry ground, the waters being a wall to them on their right hand and on their left'.",
+    "language": "en",
+    "options": [
+      "Walked around the sea for 7 days (as described in the passage)",
+      "Flew over by angel (per the textual narrative) (in the story's sequence)",
+      "The LORD used a strong EAST WIND all night to divide the sea; people walked through on DRY GROUND with walls of water on both sides",
+      "Swam through deep water (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Crossing the Red Sea",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 15,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 21,
+    "content": "According to Exodus 15, who led the women in singing thanksgiving with tambourines and dance after the Red Sea crossing?",
+    "explanation": "Exodus 15:20-21 — 'Then Miriam the prophetess, the sister of Aaron, took a tambourine in her hand, and all the women went out after her with tambourines and dancing. And Miriam sang to them: Sing to the LORD, for he has triumphed gloriously; the horse and his rider he has thrown into the sea'.",
+    "language": "en",
+    "options": [
+      "MIRIAM — Aaron's sister — called 'PROPHETESS'",
+      "Zipporah — Moses' wife",
+      "Deborah — judge (per the textual narrative)",
+      "Ruth — the Moabitess"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Miriam's Song",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "According to Exodus 16:1-13, besides manna, what did God provide in the EVENING for meat?",
+    "explanation": "Exodus 16:13 — 'In the evening quail came up and covered the camp, and in the morning dew lay around the camp'. Quail evening, manna morning — daily provision.",
+    "language": "en",
+    "options": [
+      "Wild bulls from the mountain",
+      "Large fish from the Red Sea",
+      "Calves from heaven",
+      "QUAIL from the sea — covering the camp"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Quail and Manna",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 17,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 7,
+    "content": "According to Exodus 17:1-7, when the people thirsted at Rephidim, what did Moses do? What does the place name mean?",
+    "explanation": "Exodus 17:6-7 — 'Behold, I will stand before you there on the rock at Horeb, and you shall strike the rock, and water shall come out of it, and the people will drink. And he called the name of the place Massah and Meribah, because of the quarreling of the people of Israel, and because they tested the LORD'.",
+    "language": "en",
+    "options": [
+      "Dug a deep well / called 'Beer' (well)",
+      "STRUCK the ROCK at Horeb with his staff / named 'MASSAH and MERIBAH' (TEST and QUARREL)",
+      "Prayed for rain / 'Siloam' (sent) (per the textual narrative)",
+      "Channeled small streams / 'Bethel' (house of God)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Strike the Rock",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 17,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 16,
+    "content": "According to Exodus 17:8-16, who fought Amalek while Moses lifted his staff? When his arms tired, who held them up?",
+    "explanation": "Exodus 17:9-12 — 'So Moses said to Joshua, Choose for us men, and go out and fight with Amalek... But Moses' hands grew weary, so they took a stone and put it under him, and he sat on it, while Aaron and Hur held up his hands, one on one side, and the other on the other side'.",
+    "language": "en",
+    "options": [
+      "Phinehas / father Moses helped",
+      "Joshua / only Aaron held (according to the text's framing)",
+      "JOSHUA led the army / AARON and HUR held Moses' arms on both sides",
+      "Caleb / 12 elders held (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Battle vs Amalek",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 18,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 12,
+    "content": "According to Exodus 18:1-12, who was Moses' father-in-law who visited after hearing the miracles?",
+    "explanation": "Exodus 18:1-2 — 'Jethro, the priest of Midian, Moses' father-in-law, heard of all that God had done for Moses and for Israel his people... and brought Zipporah, Moses' wife, to him'. Jethro (Reuel) also named Hobab (Num 10:29).",
+    "language": "en",
+    "options": [
+      "Abraham — common patriarch",
+      "Phinehas — Aaron's uncle",
+      "Laban — Zipporah's uncle",
+      "JETHRO — priest of Midian, Zipporah's father"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Jethro Visits",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 19,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 25,
+    "content": "According to Exodus 19:16-19, what did the people see/hear when God descended on Mount Sinai?",
+    "explanation": "Exodus 19:16-18 — 'On the morning of the third day there were thunders and lightnings and a thick cloud on the mountain and a very loud trumpet blast, so that all the people in the camp trembled... the whole mountain trembled greatly'. 19:19 — 'And as the sound of the trumpet grew louder and louder, Moses spoke, and God answered him in thunder'.",
+    "language": "en",
+    "options": [
+      "THUNDERS, LIGHTNING, THICK CLOUD, LOUD TRUMPET, mountain QUAKED, SMOKE rose like a furnace",
+      "Clear sky, soft starlight (per the textual narrative)",
+      "Bright sunrise, nothing unusual (according to the text's framing)",
+      "Beautiful spring, flowers across slopes"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Sinai Theophany",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 21,
+    "content": "According to Exodus 20:18-21, the people feared at Sinai's thunders. What did they say to Moses?",
+    "explanation": "Exodus 20:18-19 — 'Now when all the people saw the thunder and the flashes of lightning and the sound of the trumpet and the mountain smoking, the people were afraid and trembled, and they stood far off and said to Moses, You speak to us, and we will listen; but do not let God speak to us, lest we die'.",
+    "language": "en",
+    "options": [
+      "They fled back to Egypt (per the textual narrative)",
+      "Stood at a DISTANCE and begged Moses 'You speak to us and we will listen, but DO NOT let GOD speak to us, lest we die'",
+      "Crowded around Moses to thank him (according to the text's framing)",
+      "Climbed the mountain to meet God themselves (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "People Fear Sinai",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 21,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "According to Exodus 21:1-6, how many years must a Hebrew slave serve? What if he chooses to stay?",
+    "explanation": "Exodus 21:2,5-6 — 'When you buy a Hebrew slave, he shall serve six years, and in the seventh he shall go out free... But if the slave plainly says, I love my master, my wife, and my children; I will not go out free, then his master shall bring him to God, and he shall bring him to the door or the doorpost. And his master shall bore his ear through with an awl, and he shall be his slave forever'.",
+    "language": "en",
+    "options": [
+      "3 years / master pays ransom (according to the text's framing)",
+      "10 years / master chains the slave (as described in the passage)",
+      "6 YEARS then 7th year FREE; if he chooses to stay — slave's EAR PIERCED at the doorpost, serves master FOREVER",
+      "1 year / no option to stay (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Hebrew Slave Law",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 22,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 27,
+    "content": "According to Exodus 22:21-24, who must Israel not oppress?",
+    "explanation": "Exodus 22:21-22 — 'You shall not wrong a sojourner or oppress him, for you were sojourners in the land of Egypt. You shall not mistreat any widow or fatherless child'.",
+    "language": "en",
+    "options": [
+      "Don't oppress the rich (per the textual narrative)",
+      "Don't oppress Pharisees (according to the text's framing)",
+      "Don't oppress Levitical priests",
+      "STRANGERS, WIDOWS, ORPHANS — 'for you were strangers in the land of Egypt'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Protect Vulnerable",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 24,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 11,
+    "content": "According to Exodus 24:3-8, after reading the 'Book of the Covenant', how did Moses ratify the covenant with Israel?",
+    "explanation": "Exodus 24:7-8 — 'Then he took the Book of the Covenant and read it in the hearing of the people. And they said, All that the LORD has spoken we will do, and we will be obedient. And Moses took the blood and threw it on the people and said, Behold the blood of the covenant that the LORD has made with you in accordance with all these words'.",
+    "language": "en",
+    "options": [
+      "Took bull's BLOOD and SPRINKLED it on the people — called 'blood of the covenant'; people declared 'we will DO and OBEY all the words'",
+      "Lit a great candle atop the mountain (per the textual narrative)",
+      "Gave the people water from a covenant well (as described in the passage)",
+      "Required everyone to kiss Moses' feet (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Blood of Covenant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 9,
+    "content": "According to Exodus 25:8-9, what did God command Israel to build so He might 'DWELL among them'?",
+    "explanation": "Exodus 25:8-9 — 'And let them make me a sanctuary, that I may dwell in their midst. Exactly as I show you concerning the pattern of the tabernacle, and of all its furniture, so you shall make it'. Tabernacle (mishkan) is a mobile dwelling, not a fixed temple.",
+    "language": "en",
+    "options": [
+      "A great stone temple (per the textual narrative)",
+      "TABERNACLE (Tent of Meeting) — Moses must follow the PATTERN God showed on the mountain",
+      "A golden altar for sacrifices (as described in the passage)",
+      "A single Ark of the Covenant (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Build Tabernacle",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 22,
+    "content": "According to Exodus 25:10-22, what are the dimensions of the ARK OF THE COVENANT? What is in/on it?",
+    "explanation": "Exodus 25:10,17-22 — 'They shall make an ark of acacia wood. Two and a half cubits shall be its length, a cubit and a half its breadth, and a cubit and a half its height... You shall make a mercy seat of pure gold... two cherubim of gold... There I will meet with you'. Hebrew cubit ~18 inches, so ark ~44x26x26 inches.",
+    "language": "en",
+    "options": [
+      "3x1x1 cubits / Torah inside (as described in the passage) (per the original content)",
+      "5x2x2 / sacrifices (according to the text's framing) (as the text indicates)",
+      "1x1x1 / offerings (per the textual narrative) (in the story's sequence)",
+      "2.5x1.5x1.5 CUBITS / golden MERCY SEAT with 2 CHERUBIM; contained the Two TABLETS of Ten Commandments (later jar of manna + Aaron's rod — Heb 9:4)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Ark Dimensions",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 27,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 8,
+    "content": "According to Exodus 27:1-8, what was the construction and dimensions of the BURNT-OFFERING ALTAR in the OUTER COURT of the Tabernacle?",
+    "explanation": "Exodus 27:1-2 — 'You shall make the altar of acacia wood, five cubits long and five cubits broad. The altar shall be square, and its height shall be three cubits. And you shall make horns for it on its four corners; its horns shall be of one piece with it, and you shall overlay it with bronze'. Four horns important — fugitives could grasp them for sanctuary (1 Kings 1:50).",
+    "language": "en",
+    "options": [
+      "SQUARE 5x5 cubits, HEIGHT 3 cubits; acacia wood OVERLAID WITH BRONZE; 4 horns on the corners",
+      "Round 10 cubits, raw forest wood (as described in the passage)",
+      "Octagonal 7 cubits, limestone (per the textual narrative)",
+      "Rectangular 3x2x1, olive wood (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Bronze Altar",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 28,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 5,
+    "content": "According to Exodus 28:1, who and whose sons did God appoint as PRIESTS?",
+    "explanation": "Exodus 28:1 — 'Then bring near to you Aaron your brother, and his sons with him, from among the people of Israel, to serve me as priests — Aaron and Aaron's sons, Nadab and Abihu, Eleazar and Ithamar'. Later Nadab + Abihu died for 'strange fire' (Lev 10).",
+    "language": "en",
+    "options": [
+      "Moses and his sons (per the textual narrative)",
+      "AARON and 4 sons: NADAB, ABIHU, ELEAZAR, ITHAMAR",
+      "Joshua and his commanders",
+      "Caleb and the elders"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Aaron Priest",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 29,
+    "verseStart": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 46,
+    "content": "According to Exodus 29:38-42, how often did Israel offer the daily burnt offering?",
+    "explanation": "Exodus 29:38-39 — 'Now this is what you shall offer on the altar: two lambs a year old day by day regularly. One lamb you shall offer in the morning, and the other lamb you shall offer at twilight'. The daily burnt offering (tamid) — symbol of continuous communion with God.",
+    "language": "en",
+    "options": [
+      "Once in the morning / only on Sabbath",
+      "Every hour during working day",
+      "TWICE — one LAMB in MORNING, one in EVENING / DAILY forever",
+      "Four times — dawn, noon, evening, night"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Daily Offering",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 31,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 11,
+    "content": "According to Exodus 31:1-11, who did God CHOOSE and fill with the SPIRIT to build the Tabernacle?",
+    "explanation": "Exodus 31:2-6 — 'See, I have called by name Bezalel... and I have filled him with the Spirit of God, with ability and intelligence, with knowledge and all craftsmanship... And behold, I have appointed with him Oholiab, the son of Ahisamach, of the tribe of Dan'. This is the FIRST mention in Scripture of someone 'filled with the Spirit of God'.",
+    "language": "en",
+    "options": [
+      "Phinehas, son of Aaron",
+      "Joshua, son of Nun (per the textual narrative)",
+      "Aaron, son of Amram (according to the text's framing)",
+      "BEZALEL (tribe of Judah) and OHOLIAB (tribe of Dan)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Bezalel Spirit-Filled",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 32,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 35,
+    "content": "According to Exodus 32:19-35, what did Moses do when he came down and saw the golden calf?",
+    "explanation": "Exodus 32:19-20,26-28 — 'As soon as he came near the camp and saw the calf and the dancing, Moses' anger burned hot, and he threw the tablets out of his hands and broke them at the foot of the mountain. He took the calf that they had made and burned it with fire and ground it to powder and scattered it on the water and made the people of Israel drink it... Whoever is for the LORD, come to me! And all the sons of Levi gathered around him... that day about three thousand men of the people fell'.",
+    "language": "en",
+    "options": [
+      "BROKE the TWO TABLETS; BURNED the calf, GROUND it to POWDER, scattered on water, made the people DRINK; called 'who is for the LORD' — 3,000 died at Levite hands",
+      "Forgave the people and Aaron immediately (according to the text's framing)",
+      "Held a celebration with the people (per the textual narrative) (in the story's sequence)",
+      "Went back up the mountain saying nothing (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Calf Judgment",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 33,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "According to Exodus 33:7-11, when Moses entered the 'TENT OF MEETING' outside the camp, what did God do?",
+    "explanation": "Exodus 33:9,11 — 'When Moses entered the tent, the pillar of cloud would descend and stand at the entrance of the tent, and the LORD would speak with Moses. Thus the LORD used to speak to Moses face to face, as a man speaks to his friend'. Moses' unique relationship with God in OT (cf. Deut 34:10).",
+    "language": "en",
+    "options": [
+      "Rained fire from heaven (per the textual narrative)",
+      "Sent angels as witnesses (according to the text's framing)",
+      "PILLAR OF CLOUD descended at the entrance — the LORD spoke to Moses FACE TO FACE 'as a man speaks to his friend'",
+      "Caused brilliant light to shine (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Face to Face",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 9,
+    "content": "According to Exodus 34:1-9, after breaking the first two tablets, what did God instruct Moses? And how did He SELF-DECLARE as He passed by?",
+    "explanation": "Exodus 34:1,6-7 — 'The LORD said to Moses, Cut for yourself two tablets of stone like the first... The LORD passed before him and proclaimed, The LORD, the LORD, a God merciful and gracious, slow to anger, and abounding in steadfast love and faithfulness, keeping steadfast love for thousands, forgiving iniquity and transgression and sin'. This is God's central self-revelation — quoted multiple times in OT (Ps 86:15, Jonah 4:2, etc.).",
+    "language": "en",
+    "options": [
+      "God gave 5 new tablets / 'I am the Judge' (as described in the passage)",
+      "Cut 2 NEW STONE TABLETS like the first / God proclaimed 'THE LORD, GOD MERCIFUL and GRACIOUS, slow to anger, abounding in steadfast LOVE and FAITHFULNESS'",
+      "Use paper / 'I am the Almighty' (per the textual narrative) (in the story's sequence)",
+      "No new tablets / forbidden to look (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Self-Revelation",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "verseStart": 29,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 35,
+    "content": "According to Exodus 34:29-35, what was unusual about Moses' face when he descended from the mountain the second time?",
+    "explanation": "Exodus 34:29-30 — 'When Moses came down from Mount Sinai, with the two tablets of the testimony in his hand as he came down from the mountain, Moses did not know that the skin of his face shone because he had been talking with God. Aaron and all the people of Israel saw Moses, and behold, the skin of his face shone, and they were afraid to come near him'. Paul comments in 2 Cor 3:7-18 — OT glory FADED, but Christ's glory is REVEALED.",
+    "language": "en",
+    "options": [
+      "His face became 40 years younger (per the textual narrative)",
+      "His face transformed like an angel (according to the text's framing)",
+      "His face was tattooed with sacred letters",
+      "His face SHONE (from meeting God) — Aaron and people FEARED, he wore a VEIL when speaking to them"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses' Shining Face",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 35,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 29,
+    "content": "According to Exodus 35:4-29, Moses called Israel to bring materials for the Tabernacle. How did the people respond?",
+    "explanation": "Exodus 36:5-7 — 'And said to Moses, The people bring much more than enough for doing the work that the LORD has commanded us to do. So Moses gave command, and word was proclaimed throughout the camp, Let no man or woman do anything more for the contribution for the sanctuary'. The only place in Scripture where giving had to be STOPPED!",
+    "language": "en",
+    "options": [
+      "The PEOPLE GAVE SO ABUNDANTLY that Moses had to ORDER them to STOP giving more",
+      "Only gave a tithe as required (per the textual narrative)",
+      "Refused due to lack of materials",
+      "Pharaoh forbade them from giving to God"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Too Much Given",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 36,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 38,
+    "content": "According to Exodus 36:8-13, of what were the CURTAINS surrounding the Tabernacle made?",
+    "explanation": "Exodus 36:8 — 'And all the craftsmen among the workmen made the tabernacle with ten curtains. They were made of fine twined linen and blue and purple and scarlet yarns, with cherubim skillfully worked into them'. Fine linen (shesh) — Egypt's finest, hand-woven.",
+    "language": "en",
+    "options": [
+      "Plain white wool (per the textual narrative)",
+      "Thick red bull skin (according to the text's framing)",
+      "FINE LINEN with BLUE, PURPLE, SCARLET threads, embroidered with CHERUBIM by skilled craftsmen",
+      "Palm leaves and thick reeds (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Tabernacle Curtains",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 38,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 31,
+    "content": "According to Exodus 38:21-31, what was the total GOLD, SILVER, BRONZE used for the Tabernacle?",
+    "explanation": "Exodus 38:24-29 — 'All the gold that was used for the work, in all the construction of the sanctuary, the gold from the offering, was twenty-nine talents and 730 shekels... The silver... was a hundred talents and 1,775 shekels... The bronze that was offered was seventy talents and 2,400 shekels'. 1 talent ~75 lbs, 1 shekel ~0.4 oz. Total ~1 ton gold + 3.4 tons silver + 2.4 tons bronze.",
+    "language": "en",
+    "options": [
+      "Gold 10 / silver 50 / bronze 100 talents (according to the text's framing)",
+      "GOLD 29 talents + 730 shekels / SILVER 100 talents + 1,775 shekels / BRONZE 70 talents + 2,400 shekels",
+      "Gold 5 / silver 200 / bronze 500 talents (as described in the passage)",
+      "Gold 1 / silver 1 / bronze 1 talent (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Metal Totals",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 39,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 31,
+    "content": "According to Exodus 39:1-31, what was distinctive about the high priest's EPHOD?",
+    "explanation": "Exodus 39:2-21 (with 28:6-30) — Ephod woven of gold + blue/purple/scarlet + fine linen. Breastpiece set with 12 precious stones — each engraved with one tribe's name. Inside the breastpiece: URIM and THUMMIM (28:30) — used to 'inquire' God's will in major decisions (Num 27:21, 1 Sam 14:41).",
+    "language": "en",
+    "options": [
+      "Just a plain red robe (according to the text's framing)",
+      "Simple white wool (per the textual narrative) (in the story's sequence)",
+      "Plain linen with round shape (as described in the passage)",
+      "GOLD, BLUE/PURPLE/SCARLET threads; 12 PRECIOUS STONES on BREASTPIECE for 12 tribes; URIM and THUMMIM for inquiring of the Lord"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Priestly Ephod",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 11,
+    "content": "According to Exodus 20:8-11, what is the core theological reason for the FOURTH COMMANDMENT about the SABBATH?",
+    "explanation": "Exodus 20:11 — 'For in six days the LORD made heaven and earth, the sea, and all that is in them, and rested on the seventh day. Therefore the LORD blessed the Sabbath day and made it holy'. Deut 5:15 adds a 2nd reason: commemoration of Exodus — combining creation + redemption.",
+    "language": "en",
+    "options": [
+      "Because it was the day Adam was created (according to the text's framing)",
+      "Because IN 6 DAYS the LORD CREATED heaven and earth, RESTED on the 7th — He BLESSED the Sabbath and made it HOLY",
+      "Because it was the day Israel left Egypt (as described in the passage)",
+      "Because it was Moses' birthday (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Sabbath Creation",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 17,
+    "content": "According to Exodus 20:12-17, with which commandment do the LAST 6 (about HUMANS) begin? What promise is attached?",
+    "explanation": "Exodus 20:12 — 'Honor your father and your mother, that your days may be long in the land that the LORD your God is giving you'. Paul in Eph 6:2-3 emphasizes: 'the FIRST commandment WITH A PROMISE' — long life on the land.",
+    "language": "en",
+    "options": [
+      "'HONOR your FATHER and MOTHER, that you may LIVE LONG in the land' — the ONLY commandment with a promise",
+      "'Do not steal' — no promise (per the textual narrative)",
+      "'Do not murder' — no promise (as described in the passage)",
+      "'Do not covet' — no promise (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Honor Parents",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 30,
+    "content": "According to Exodus 25:23-30, what was the function of the TABLE OF SHOWBREAD in the Tabernacle?",
+    "explanation": "Exodus 25:30 — 'And you shall set the bread of the Presence on the table before me regularly'. Lev 24:5-9 details: 12 loaves, replaced every Sabbath, priests ate the old loaves. The 12 loaves represent the 12 tribes — always before God's PRESENCE.",
+    "language": "en",
+    "options": [
+      "Table for daily lamb offerings (as described in the passage)",
+      "Table for incense burning (per the textual narrative)",
+      "Table holding 12 LOAVES of SHOWBREAD — REPRESENTING the 12 tribes of Israel CONTINUOUSLY before God",
+      "Table for the book of the law (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Showbread",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 30,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 10,
+    "content": "According to Exodus 30:1-10, what was the INCENSE ALTAR in the HOLY PLACE used for?",
+    "explanation": "Exodus 30:7-8 — 'And Aaron shall burn fragrant incense on it. Every morning when he dresses the lamps he shall burn it, and when Aaron sets up the lamps at twilight, he shall burn it, a regular incense offering before the LORD throughout your generations'. Rev 5:8 — 'golden bowls full of incense, which are the prayers of the saints'.",
+    "language": "en",
+    "options": [
+      "Burning daily lamb offerings (per the textual narrative)",
+      "Holding the 12 showbread loaves (according to the text's framing)",
+      "Storing the Ark of the Covenant (as described in the passage)",
+      "BURNING INCENSE morning and evening — symbolic of the saints' PRAYERS rising to God"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Incense Altar",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 31,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 18,
+    "content": "According to Exodus 31:12-17, what is the SABBATH as a SIGN between God and Israel?",
+    "explanation": "Exodus 31:13,16-17 — 'Above all you shall keep my Sabbaths, for this is a sign between me and you throughout your generations, that you may know that I, the LORD, sanctify you... It is a sign forever between me and the people of Israel that in six days the LORD made heaven and earth, and on the seventh day he rested and was refreshed'.",
+    "language": "en",
+    "options": [
+      "Sign that they are wealthy (as described in the passage)",
+      "ETERNAL SIGN between God and his people — because 'the LORD MADE heaven and earth in 6 days and rested the 7th'",
+      "Sign of Abraham's lineage (according to the text's framing)",
+      "Sign of light eating (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Sabbath Sign",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 7,
+    "content": "TYPE 1 cross-ref Ex 7:7 + Ex 2:23 — How old was Moses before Pharaoh? Compare with age when he fled Egypt?",
+    "explanation": "Exodus 7:7 — 'Now Moses was eighty years old, and Aaron eighty-three years old, when they spoke to Pharaoh'. Acts 7:23 — 'When he was forty years old, it came into his heart to visit his brothers'. Deut 34:7 — Moses died at 120. Moses' life divides into three 40-year stages: Egypt (40) + Midian (40) + wilderness (40).",
+    "language": "en",
+    "options": [
+      "40 / 80 — same (according to the text's framing) (as the text indicates)",
+      "70 / 40 — different (as described in the passage) (per the original content)",
+      "80 (Ex 7:7 'eighty') before Pharaoh / 40 fleeing (Acts 7:23 'fully 40') — Moses spent 40 YEARS in MIDIAN before God called him",
+      "100 / 50 (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Moses' Ages",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "TYPE 1 cross-ref Ex 12:13 — judgment and 'Passover blood' — which NT verse applies this to Christ?",
+    "explanation": "1 Cor 5:7 — 'Cleanse out the old leaven that you may be a new lump, as you really are unleavened. For Christ, our Passover lamb, has been sacrificed'. Paul directly applies the OT Passover to Christ. Also see John 1:29 'Lamb of God' and Rev 5:6 'Lamb who was slain'. Christ's death at Passover fulfills the type completely.",
+    "language": "en",
+    "options": [
+      "Mark 1:1 — 'beginning of the gospel of Jesus Christ'",
+      "Luke 24:46 — 'Christ should suffer'",
+      "John 1:14 — 'Word became flesh' (per the textual narrative)",
+      "1 Corinthians 5:7 — 'Christ, our PASSOVER LAMB, has been SACRIFICED'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Christ Passover Lamb",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 17,
+    "content": "TYPE 1 cross-ref How does Jesus summarize the OT Ten Commandments in the NT? (select all correct)",
+    "explanation": "All 3 Synoptic Gospels summarize the Ten Commandments as 'love God + love neighbor'. Option D is a warning about adding/removing from Revelation — not a summary of the 10 Commandments.",
+    "language": "en",
+    "options": [
+      "Matthew 22:37-40 — 'Love God with all your heart' (first 4 commandments) + 'love neighbor' (last 6)",
+      "Mark 12:29-31 — Shema 'The LORD our God, the LORD is ONE' + 'love God with all your heart' + 'love neighbor'",
+      "Luke 10:27 — lawyer's reply matches Mark — Jesus commends: 'do this and you WILL LIVE'",
+      "Revelation 22:18 — 'whoever ADDS to the words of this book' (unrelated to 10 commandments summary)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "10 Commandments NT",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 33,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 23,
+    "content": "TYPE 1 cross-ref Ex 33:18-23 — Moses asked to see God's glory; was shown 'back' not 'face'. How does John 1:18 continue this idea?",
+    "explanation": "Exodus 33:20 — 'You cannot see my face, for man shall not see me and live'. John 1:18 directly echoes this OT verse: 'NO ONE HAS EVER SEEN GOD; the only Son, who is at the Father's side, he has made him known'. Christ is the EXEGESIS (exegēsato) of the Father — the only direct way to 'see' God.",
+    "language": "en",
+    "options": [
+      "'God allowed Moses to see his face fully across all time'",
+      "'No one has SEEN GOD; the only-begotten Son has MADE HIM KNOWN'",
+      "'God can only be seen in the Zion temple'",
+      "'After Moses died, all could see God'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "No One Has Seen God",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "verseStart": 34,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 38,
+    "content": "TYPE 1 cross-ref Ex 40:34-38 (glory filling the Tabernacle) — which NT verse fulfills this typology about Christ and the Church?",
+    "explanation": "John 1:14 — Greek 'eskēnōsen' (pitched tent / tabernacled) — SAME ROOT as Hebrew 'mishkan' (Tabernacle). John deliberately uses this word to identify Christ as the new 'Tabernacle' among humanity. The glory in the OT Tabernacle becomes Christ in the NT. Rev 21:3 completes: 'God will dwell among the peoples'.",
+    "language": "en",
+    "options": [
+      "Mark 16:20 — 'And they went out and preached' (according to the text's framing)",
+      "Acts 1:11 — 'Jesus ascended' (per the textual narrative) (in the story's sequence)",
+      "JOHN 1:14 — 'The Word BECAME FLESH and DWELT (tabernacled) AMONG US, full of grace and TRUTH — we beheld his GLORY'",
+      "Matthew 18:20 — 'Where two or three are gathered' (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Tabernacle Christ Church",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 25,
+    "content": "TYPE 1 cross-ref The 10 plagues — what gods of Egypt did God judge? (see Ex 12:12)",
+    "explanation": "Exodus 12:12 — 'For I will pass through the land of Egypt that night, and I will strike all the firstborn in the land of Egypt, both man and beast; and on all the gods of Egypt I will execute judgments: I am the LORD'. Each plague targeted a specific Egyptian god: Plague 1 (blood) → Hapi/Khnum Nile god. 2 (frogs) → Heqet frog goddess. 7 (hail) → Nut sky goddess. 9 (darkness) → Ra sun god. 10 (firstborn) → Pharaoh (regarded as a living god). The plagues = WAR on Egyptian gods.",
+    "language": "en",
+    "options": [
+      "Exodus 12:12 — 'I will execute JUDGMENTS on ALL THE GODS of Egypt' — 10 plagues targeted Egyptian gods (Hapi the Nile god, Heqet frog god, Khepri fly god, Hathor cow goddess, Ra sun god...)",
+      "Only judged the Pharaohs (per the textual narrative) (in the story's sequence) (per the original content)",
+      "Judged the magicians via miracles (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "Did not judge anything — only delivered the people (as described in the passage) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Plagues Judge Gods",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 35,
+    "content": "TYPE 2 distinguish Ex 16 — manna details (how it fell, taste, name) — which detail is UNIQUE to Exodus 16 vs. Numbers 11?",
+    "explanation": "Exodus 16:14-15,31,35 — DETAILED manna: fine flake-like thing white (16:14), name 'man' (16:15), tasted 'like WAFERS made with HONEY' (16:31), people ate it 40 years until Canaan border (16:35). Numbers 11:7-9 adds different details: 'like CORIANDER seed' colored 'like BDELLIUM', tasted 'like CAKES baked with oil'. Two books have COMPLEMENTARY details.",
+    "language": "en",
+    "options": [
+      "Manna tasted 'like sweet honey' (according to the text's framing) (as the text indicates)",
+      "Manna fell 6 days but not on Sabbath (as described in the passage) (per the original content)",
+      "Manna white like snow (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "ALL of the above — Exodus 16:14 'like DEW' and 'fine flake-like thing'; tasted 'like WAFERS made with HONEY' (16:31); NAME 'man' meaning 'what is it?' (16:15)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Manna Details",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 28,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 21,
+    "content": "TYPE 2 distinguish Ex 28:17-21 vs Revelation 21:19-20 — high priest's breastpiece 12 stones vs. New Jerusalem's 12 foundation stones — what's COMMON? (select all correct)",
+    "explanation": "Exodus 28:17-21 (12 stones — breastpiece, each engraved with a tribal name) and Revelation 21:19-20 (12 foundation stones — New Jerusalem, foundations bearing the names of the 12 apostles) both LINK 12 with God's people. Some stone names overlap (sapphire, beryl, jasper, etc.) but not identical. Option D is wrong — Rev 21 is the city's foundations, not a breastpiece.",
+    "language": "en",
+    "options": [
+      "Both have 12 precious stones (per the textual narrative)",
+      "Both symbolize 12 tribes of Israel (Ex 28) / 12 apostles (Rev 21)",
+      "Both have some overlap in stone names (carbuncle, sapphire, beryl, etc.)",
+      "Both used for the Israelite high priest (Rev 21 is not)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "12 Precious Stones",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 32,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "TYPE 2 distinguish Ex 32 golden calf vs. golden calves at Dan and Bethel (1 Kings 12) — what is the core difference?",
+    "explanation": "Ex 32 calf: people pressured Aaron to make 1 while Moses was on the mountain 40 days — Aaron reluctantly. 1 Kings 12:26-30: Jeroboam (king of split Northern Israel) deliberately made 2 golden calves at Dan + Bethel — INTENTIONAL SIN to prevent people going to Jerusalem (southern Judah's temple). 1 Kings 12:28 deliberately echoes Ex 32:4 'Behold your gods, O Israel, who brought you out of the land of Egypt' — affirming theological link via REPEATED OLD SIN.",
+    "language": "en",
+    "options": [
+      "Both made by Aaron — only locations differ (per the textual narrative) (in the story's sequence)",
+      "Both warned by Moses but ignored by the people (according to the text's framing) (as the text indicates)",
+      "Ex 32 calf made by AARON under pressure when Moses was absent / 1 Kings 12 calves made INTENTIONALLY by JEROBOAM (2 calves: Dan + Bethel) to keep the people from going to Jerusalem",
+      "Both were merely ritual symbols, not actual worship (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Two Golden Calves",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 7,
+    "content": "TYPE 2 distinguish Ex 34:6-7 — God's self-revelation. This formula is QUOTED MANY times in the OT. Which passages QUOTE 'merciful and gracious, slow to anger, abounding in steadfast love'? (select all correct)",
+    "explanation": "Ex 34:6-7 is Israel's 'creed' on God's character — quoted at least 9 times in OT. Each time in different contexts: Moses pleading (Num 14:18), David in repentance (Ps 86:15), thanksgiving summary (Ps 103:8), Jonah disappointed (Jonah 4:2), Joel calling repentance (Joel 2:13), Nahum warning (Nah 1:3), etc.",
+    "language": "en",
+    "options": [
+      "Psalm 86:15 — 'But you, O Lord, are a God merciful and gracious, slow to anger'",
+      "Psalm 103:8 — 'The LORD is merciful and gracious, slow to anger'",
+      "Jonah 4:2 — 'For I knew... you are a God merciful and gracious, slow to anger' (Jonah angry that God spared Nineveh)",
+      "Revelation 4:8 — 'Holy, holy, holy' (about holiness, not mercy)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Israel's Creed",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 15,
+    "content": "TYPE 3 deep meaning Ex 3:14 'I AM WHO I AM' (Ehyeh asher Ehyeh) — what is the core theological significance of this name?",
+    "explanation": "Ex 3:14 'Ehyeh' (אהיה) is a Hebrew verb '1st person present/future = I will/am BEING'. The Tetragrammaton YHWH (יהוה) is a 3rd person variant 'He IS' — the sacred unspoken name. Meaning: God is SELF-EXISTENT + ETERNAL + INDEPENDENT. Unlike Egyptian gods who had beginnings and fathers. This is the foundation of Christian doctrine of God's aseity (self-existence).",
+    "language": "en",
+    "options": [
+      "Just a proper name without meaning (according to the text's framing)",
+      "God SELF-EXISTS, INDEPENDENT of any other; He has no 'FATHER' or 'BEGINNING'; He IS pure — the very ESSENCE of EXISTENCE",
+      "God exists only in human minds (per the textual narrative) (in the story's sequence)",
+      "It's a political title from antiquity (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "I AM Meaning",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 14,
+    "content": "TYPE 3 deep meaning Ex 12 Passover — what is the core THEOLOGICAL meaning of 'blood on doorposts'?",
+    "explanation": "Ex 12:13 — 'The blood shall be a sign for you, on the houses where you are. And when I see the blood, I will pass over you'. Principle: (1) The PRICE of SIN is DEATH (Gen 2:17), (2) An INNOCENT LAMB dies INSTEAD (substitutionary atonement), (3) BLOOD is the COVENANT TOKEN — NO ONE in a home with blood is killed. He 'pasakh' (passes over) in mercy. NT: Christ is 'our Passover Lamb' (1 Cor 5:7), his blood shields from wrath (Rom 5:9).",
+    "language": "en",
+    "options": [
+      "Just a simple sign to mark Israelite homes (according to the text's framing) (per the original content)",
+      "A magical charm against evil spirits (per the textual narrative) (in the story's sequence)",
+      "Ancient pastoral tradition without theology (as described in the passage) (as the text indicates)",
+      "BLOOD (life) as COVENANT MARKER + SUBSTITUTION — innocent (lamb) dies INSTEAD of the guilty; God 'PASSES OVER' homes with blood — foreshadowing Christ's cross"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Passover Atonement",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 15,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 21,
+    "content": "TYPE 3 deep meaning Ex 15 Song of Moses — opening 'I WILL SING to the LORD, for he has triumphed gloriously' is the FIRST SONG in Scripture. Theological significance?",
+    "explanation": "Ex 15:1-21 'Song of Moses' is the FIRST WORSHIP SONG in Scripture — pattern for all later psalms. Revelation 15:3 quotes it in heaven: 'they sang the SONG of MOSES, the servant of God, and the SONG of the LAMB' — connecting OT salvation (Passover + Red Sea) with NT salvation (Christ). 15:18 — 'The LORD will reign forever and ever' — the first declaration of God's eternal kingship.",
+    "language": "en",
+    "options": [
+      "The first time Israel SUNG WORSHIP for God's salvation as a PEOPLE — pattern for all future worship (tabernacle/temple/psalms/Rev 15:3 'Song of Moses and the Lamb')",
+      "Just an entertainment song, no significance (as described in the passage) (per the original content)",
+      "A political anthem against Pharaoh (according to the text's framing) (as the text indicates)",
+      "A romantic love poem (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Song of Moses",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 3,
+    "content": "TYPE 3 deep meaning Ex 20:2-3 — BEFORE giving the 10 Commandments, God SELF-IDENTIFIES. What's the core theological significance of this opener?",
+    "explanation": "Ex 20:2 opens the 10 Commandments NOT with a COMMAND but with a REMINDER of REDEMPTION. Order: (1) GRACE — God already saved you; (2) LAW — because you ARE MY PEOPLE, live this way. This is a MAJOR THEOLOGICAL principle: OT Israel did NOT keep the law to be saved — they kept the law BECAUSE they were already saved. NT same: Paul (Eph 2:8-10) emphasizes 'saved by grace... CREATED in Christ Jesus for GOOD WORKS'.",
+    "language": "en",
+    "options": [
+      "Just a ceremonial prologue (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "Aimed to warn the scribes (according to the text's framing) (per the original content) (per the textual narrative)",
+      "'I AM the LORD your God, who BROUGHT you OUT of EGYPT, the HOUSE of SLAVERY' — GRACE PRECEDES LAW; people were ALREADY SAVED before commandments — NOT keeping law to BE saved",
+      "It's ancient politics (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Grace Before Law",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 22,
+    "content": "TYPE 3 deep meaning Ex 25:22 — 'I WILL MEET WITH YOU at the MERCY SEAT, BETWEEN the TWO CHERUBIM'. What's the theological significance of the 'mercy seat'?",
+    "explanation": "Ex 25:22 — 'There I will meet with you, and from above the mercy seat, from between the two cherubim'. Hebrew 'kapporeth' (כַּפֹּרֶת) = 'covering' / 'propitiation'. Lev 16 (Day of Atonement Yom Kippur): high priest sprinkled SACRIFICIAL BLOOD on the mercy seat — symbol of FORGIVENESS. NT IMPLICATIONS: Romans 3:25 — God set Christ as HILASTĒRION (same Greek word as 'mercy seat' in LXX) — Christ is the LIVING 'mercy seat', the meeting point between God and sinners. Heb 9:11-12 develops further: Christ entered 'Holy of Holies' with HIS OWN BLOOD instead of animals'.",
+    "language": "en",
+    "options": [
+      "Just a decoration (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (according to the text's framing)",
+      "Throne of the king of Israel (according to the text's framing) (per the original content) (per the textual narrative) (in the story's sequence)",
+      "Hiding place for sacred items (as described in the passage) (as the text indicates) (in the context of the passage) (as described in the passage)",
+      "The place where ATONEMENT BLOOD was SPRINKLED (Lev 16) on the DAY of ATONEMENT; the meeting point between HOLY God and SINFUL people; NT Hebrews 9:5 + Romans 3:25 — Christ is the 'PROPITIATION' (hilastērion = same word as 'mercy seat' in LXX) — the TRUE mercy seat"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Mercy Seat",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 33,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 16,
+    "content": "TYPE 3 deep meaning Ex 33:14-16 — Moses asks God to GO WITH them into the Promised Land. The reply 'MY PRESENCE will go with you, and I will give you REST' (33:14) — what's the theological meaning?",
+    "explanation": "Ex 33:15-16 — Moses replies: 'IF YOUR PRESENCE WILL NOT GO WITH ME, do not bring US UP from here... HOW SHALL IT BE KNOWN that I have found favor in your sight, I and your people? Is it not in your going with us?' God's PRESENCE (Panim) = mobile 'GLORY' + the GREATEST DISTINGUISHING MARK separating Israel from all other peoples. Hebrews 4:3-11 develops 'REST' (33:14): not earthly rest entering Canaan — but 'TRUE REST' in Christ (4:9 'a Sabbath rest remains for the people of God').",
+    "language": "en",
+    "options": [
+      "God grants rest in the wilderness journey (according to the text's framing)",
+      "GOD'S 'PRESENCE' (Panim — face) = the CORE DIFFERENCE between God's people and all other peoples; Heb 4:3-11 develops 'REST' as the TRUE Christ",
+      "God promises material wealth (per the textual narrative) (in the story's sequence)",
+      "God promises Moses he'll see God's face on Sinai again (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Divine Presence",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 38,
+    "content": "TYPE 3 deep meaning Ex 40 — book ends with GLORY FILLING THE TABERNACLE. How does the theological structure of Exodus close?",
+    "explanation": "Exodus' core structure: Chapter 1 — Israel SLAVED making BRICKS for Pharaoh; Chapter 40 — Israel VOLUNTARILY GIVING gold-silver-cloth-labor to make the TABERNACLE for the true God. False king → true King. Forced labor → voluntary worship. Pharaoh's glory → the LORD's glory. This is the Old Testament's largest 'dual structure' transformation arc. Exodus does NOT end with Israel settled in the Promised Land (that's Joshua) — it ends when the PEOPLE HAVE LEARNED TO WORSHIP THE TRUE KING.",
+    "language": "en",
+    "options": [
+      "Just a natural ending without structure (per the textual narrative) (as described in the passage)",
+      "Opens with Israel FLEEING Pharaoh / closes with Israel SETTLING in the Promised Land",
+      "OPENS with people in Pharaoh's HOUSE OF SLAVERY (1:11) / CLOSES with people in GOD'S PRESENCE as the true KING (40:34-38) — exodus FROM slavery TO worship",
+      "Opens with 1 king / closes with 12 kings (according to the text's framing) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Exodus Structure",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 2,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 25,
+    "content": "TYPE 4 verse precision Ex 2:23-25 (ESV) — what PRECISE PHRASE GUARANTEES God WILL ACT for Israel?",
+    "explanation": "Ex 2:23-25 (ESV) — 'During those many days the king of Egypt died, and the people of Israel groaned because of their slavery and cried out for help. Their cry for rescue from slavery came up to God. And God HEARD their groaning, and God REMEMBERED his covenant with Abraham, with Isaac, and with Jacob. God SAW the people of Israel — and God KNEW'. The 4 CONSECUTIVE VERBS (HEARD → REMEMBERED → SAW → KNEW) are the CORE PROMISE that deliverance is COMING — a theological transition from 'Israel cried' to 'God acted'.",
+    "language": "en",
+    "options": [
+      "'God HEARD their groaning / REMEMBERED his covenant with Abraham, Isaac, and Jacob / SAW the people of Israel / KNEW (their plight)'",
+      "'God forgave the sins of Israel' (per the textual narrative) (in the story's sequence)",
+      "'God decided to kill Pharaoh immediately' (as described in the passage)",
+      "'God sent 100 angels to attack Egypt' (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Four Verbs",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 15,
+    "verseStart": 26,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 26,
+    "content": "TYPE 4 verse precision Ex 15:26 (ESV) — what title did God give Himself at Marah (bitter water sweetened)?",
+    "explanation": "Exodus 15:26 — 'For I am the LORD, your HEALER'. Hebrew: 'YHWH-Rapha' (יהוה רפא). This is ONE OF 7 COMPOUND NAMES of Yahweh in the OT (Yahweh-Jireh provider / Yahweh-Nissi banner / Yahweh-Shalom peace / Yahweh-Tsidkenu righteousness / Yahweh-Shammah presence / Yahweh-Sabaoth of Hosts). Each name reveals ONE ASPECT of God's character displayed in a specific situation.",
+    "language": "en",
+    "options": [
+      "'I am the Creator' (per the textual narrative)",
+      "'I am the Life-Giver' (as described in the passage)",
+      "'I am the Deliverer' (according to the text's framing)",
+      "'I AM THE LORD, your HEALER' (Yahweh-Rapha)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Yahweh Rapha",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 11,
+    "content": "TYPE 4 verse precision Ex 20:8 (ESV) — what is the precise opening of the FOURTH COMMANDMENT?",
+    "explanation": "Ex 20:8 (ESV) — 'REMEMBER the Sabbath day, to keep it holy'. Deut 5:12 repeats with variation: 'OBSERVE the Sabbath day, to keep it holy'. The difference 'REMEMBER' (Ex) vs 'OBSERVE' (Deut) — Ex emphasizes the CREATION foundation (20:11), Deut emphasizes the EXODUS foundation (5:15 'REMEMBER you were a slave in Egypt'). Both reasons complement each other.",
+    "language": "en",
+    "options": [
+      "'Keep the Sabbath day'",
+      "'REMEMBER the SABBATH day, to keep it HOLY'",
+      "'Do nothing on the Sabbath'",
+      "'Fear the Sabbath day'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Remember Sabbath",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 7,
+    "content": "TYPE 4 verse precision Ex 34:6-7 (ESV) — what is the precise verse balancing God's MERCY with JUSTICE?",
+    "explanation": "Ex 34:6-7 — 'The LORD, the LORD, a God merciful and gracious, slow to anger, and abounding in steadfast love and faithfulness, keeping steadfast love for thousands, forgiving iniquity and transgression and sin, but who will by no means clear the guilty, visiting the iniquity of the fathers on the children and the children's children, to the third and the fourth generation'. ASYMMETRY: MERCY 'thousands' generations vs PUNISHMENT '3-4' generations — showing mercy vastly outweighs, BUT JUSTICE is NOT skipped. Ezekiel 18 refines: each individual bears own sin, not children — further development.",
+    "language": "en",
+    "options": [
+      "'God is infinitely merciful, never judges sin' (as described in the passage) (per the original content) (per the textual narrative)",
+      "'God is merciful only to Israelites' (according to the text's framing) (as the text indicates) (in the context of the passage) (as described in the passage)",
+      "'The LORD... slow to anger, abounding in steadfast love and faithfulness, keeping steadfast love to THOUSANDS, forgiving iniquity... BUT WHO will by no means CLEAR the GUILTY, visiting the iniquity of fathers on children to the THIRD and FOURTH generation'",
+      "'God only judges Egyptians' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Mercy and Justice",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "verseStart": 38,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 38,
+    "content": "TYPE 4 verse precision Ex 40:38 (ESV) — what's the CLOSING verse of Exodus summarizing God's PRESENCE?",
+    "explanation": "Ex 40:38 — 'For the cloud of the LORD was on the tabernacle by day, and fire was in it by night, in the sight of all the house of Israel throughout all their journeys'. The CLOSING verse of Exodus emphasizes: (1) PUBLIC presence (all Israel sees), (2) CONTINUOUS presence (day + night), (3) ACCOMPANYING presence (throughout their journeys). This is the book's DRIVING theme: from Pharaoh (false king) to the LORD (true King) WHO GOES WITH his people.",
+    "language": "en",
+    "options": [
+      "'For the CLOUD of the LORD was on the tabernacle BY DAY, and FIRE was in it BY NIGHT, in the SIGHT of all the HOUSE of Israel THROUGHOUT all their JOURNEYS'",
+      "'Then the people set out and entered the Promised Land' (as described in the passage)",
+      "'Moses died and Aaron took his place' (according to the text's framing) (as the text indicates)",
+      "'God gave 10 more commandments' (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Exodus",
+      "Pentateuch",
+      "Closing Verse",
+      "Advanced"
+    ]
   }
 ]

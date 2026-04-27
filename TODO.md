@@ -6,13 +6,13 @@
 > Spec ratio: 30% Easy / 45% Medium / 25% Hard (±3%).
 > Tổng: +344 câu VI + 344 EN = 688 câu output.
 
-### Task V2A-1: Exodus +75 (10E + 43M + 22H)
-- Status: [ ] TODO
-- Current: 75 (E35 M25 H15) → Target: 150 (E45 M68 H37)
-- Plan: +10 Easy + 43 Medium + 22 Hard
-- File(s): `exodus_quiz.json` + `exodus_quiz_en.json`
-- Strategy: 10 plagues (chapters 7-12), Passover (12), Red Sea (14), manna/quail (16), Sinai/Ten Commandments (19-20), tabernacle construction (25-31, 35-40), golden calf (32)
-- Commit: `feat(seed): Exodus +75 to V2 Tier A target (75→150)`
+### Task V2A-1: Exodus +75 (10E + 43M + 22H) [x] DONE 2026-04-27
+- 75→**151** (E45 M69 H37, ratio **29.8/45.7/24.5%** — gần khớp V2 target 30/45/25)
+- Pool +76 (1 extra Medium): 10 Easy + 44 Medium + 22 Hard VI + 76 EN 1:1
+- Seeder log `inserted=76` each file, total 4966→5118, invalid=0
+- 73 single + 3 multi (96/4); idx 15/19/20/19
+- File(s): `exodus_quiz.json` + `exodus_quiz_en.json` + `scripts/append_exodus_v2a.py`
+- Topics: Moses' birth/flight/40+40+40 years; 10 plagues (each judging Egyptian gods), Passover blood + lamb spec, Red Sea east wind crossing, manna+quail, Massah/Meribah, Amalek battle Aaron+Hur, Jethro counsel, Sinai theophany, 10 Commandments grace-before-law structure, golden calf judgment, face-to-face speaking with Moses, divine self-revelation 34:6-7 (Israel's creed), tabernacle construction with Bezalel Spirit-filled, Ark dimensions + mercy seat, ephod + Urim/Thummim, "Yahweh-Rapha" healer name 15:26, glory filling tabernacle as inclusio
 
 ### Task V2A-2: Mark +60 (7E + 33M + 20H) [x] DONE 2026-04-27
 - 60→120 (E36 M54 H30, ratio **30.0/45.0/25.0%** — perfect V2 target match)
