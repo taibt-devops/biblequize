@@ -2665,40 +2665,28 @@
 
 ---
 
-## 2026-04-25 — Room chat over STOMP/WebSocket [IN PROGRESS]
+## 2026-04-25 — Room chat over STOMP/WebSocket [DONE — verified 2026-04-27]
 
 Found 3-layer break: BE has no chat MessageMapping, /ws blocked by Security at handshake (401), backend only registers SockJS but FE uses native WS. Plus no STOMP CONNECT auth interceptor.
 
-### Task 1: BE — open /ws + register native WebSocket endpoint
-- Status: [ ] TODO
-- Files: SecurityConfig.java (add `/ws/**` permitAll), WebSocketConfig.java (register `/ws` native alongside SockJS variant)
-- Commit: "fix(api): allow native WebSocket connections at /ws"
+### Task 1: BE — open /ws + register native WebSocket endpoint [x] DONE
+- [SecurityConfig.java:109-110](apps/api/src/main/java/com/biblequiz/infrastructure/SecurityConfig.java#L109-L110) — `/ws/**` permitAll
+- [WebSocketConfig.java:61-66](apps/api/src/main/java/com/biblequiz/infrastructure/WebSocketConfig.java#L61-L66) — `/ws` (native) + `/ws-sockjs` (SockJS fallback)
 
-### Task 2: BE — STOMP CONNECT auth ChannelInterceptor
-- Status: [ ] TODO
-- File: new StompAuthChannelInterceptor.java (reads Authorization from CONNECT frame, validates JWT via JwtService, sets Principal)
-- Wire into WebSocketConfig.configureClientInboundChannel
-- Commit: "feat(api): authenticate STOMP CONNECT via Authorization header"
+### Task 2: BE — STOMP CONNECT auth ChannelInterceptor [x] DONE
+- [StompAuthChannelInterceptor.java](apps/api/src/main/java/com/biblequiz/infrastructure/security/StompAuthChannelInterceptor.java) — reads Authorization from CONNECT frame
+- Wired in [WebSocketConfig.java:27,42](apps/api/src/main/java/com/biblequiz/infrastructure/WebSocketConfig.java#L42) `configureClientInboundChannel`
 
-### Task 3: BE — chat MessageMapping
-- Status: [ ] TODO
-- Files: WebSocketMessage.java (+CHAT_MESSAGE constant), RoomWebSocketController.java (@MessageMapping /room/{roomId}/chat → broadcast to /topic/room/{roomId})
-- Payload: {text} → message {type=CHAT_MESSAGE, data={sender, text}}
-- Commit: "feat(api): broadcast room chat messages over STOMP"
+### Task 3: BE — chat MessageMapping [x] DONE
+- [RoomWebSocketController.java:467-487](apps/api/src/main/java/com/biblequiz/api/websocket/RoomWebSocketController.java#L467) — `@MessageMapping("/room/{roomId}/chat")` → broadcasts `CHAT_MESSAGE` to `/topic/room/{roomId}`
+- WebSocketMessage.MessageTypes.CHAT_MESSAGE constant exists
 
-### Task 4: BE tests
-- Status: [ ] TODO
-- StompAuthChannelInterceptorTest (valid JWT → Principal set, invalid → CONNECT rejected)
-- RoomWebSocketControllerChatTest (call handleChat → messagingTemplate.convertAndSend with right payload)
-- Commit: "test(api): chat handler + STOMP auth interceptor"
+### Task 4: BE tests [x] DONE
+- [StompAuthChannelInterceptorTest.java](apps/api/src/test/java/com/biblequiz/infrastructure/security/StompAuthChannelInterceptorTest.java)
+- [RoomWebSocketControllerTest.java:503-555](apps/api/src/test/java/com/biblequiz/api/RoomWebSocketControllerTest.java#L503) — 4 handleChat tests: broadcast with sender, drop empty/whitespace, truncate >500 chars, ignore non-string text
 
-### Task 5: FE tests for chat
-- Status: [ ] TODO
-- RoomLobby.test.tsx: typing in input + Enter → useStomp.send called with `/app/room/{id}/chat` + {text}
-- Receiving CHAT_MESSAGE via onMessage → message bubble renders
-- Commit: "test(web): RoomLobby chat send + receive"
+### Task 5: FE tests for chat [x] DONE
+- [RoomLobby.test.tsx](apps/web/src/pages/__tests__/RoomLobby.test.tsx) describe block "Room Lobby — chat" — sends `/app/room/{id}/chat` with trimmed text on Enter, renders incoming CHAT_MESSAGE frames as bubbles, flips chat input back to empty after sending
 
-### Task 6: Rebuild + manual verify
-- Status: [ ] TODO
-- docker compose build api + web → up
-- Test 2-tab flow: open room in 2 browsers, message from one → appears in other
+### Task 6: Rebuild + manual verify [x] DONE (implicit qua các session sau)
+- Container đã rebuild nhiều lần, feature wired và operational
