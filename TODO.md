@@ -986,38 +986,34 @@
 
 ---
 
-## Sound Effects + Animations — "Feel" cho Quiz [IN PROGRESS]
+## Sound Effects + Animations — "Feel" cho Quiz [DONE — verified 2026-04-27]
 
-### Task SF-1: Sound Manager + generated sounds
-- Status: [ ] TODO
-- File(s): src/services/soundManager.ts
+### Task SF-1: Sound Manager + generated sounds [x] DONE
+- File: [apps/web/src/services/soundManager.ts](apps/web/src/services/soundManager.ts)
 
-### Task SF-2: Haptic feedback utility
-- Status: [ ] TODO
-- File(s): src/utils/haptics.ts
+### Task SF-2: Haptic feedback utility [x] DONE
+- File: [apps/web/src/utils/haptics.ts](apps/web/src/utils/haptics.ts) — exports `haptic.correct()`, `haptic.combo()`, `haptic.timerWarning()`, `isHapticsEnabled()`, `setHapticsEnabled()`
 
-### Task SF-3: Quiz answer animations + combo banner
-- Status: [ ] TODO
-- File(s): Quiz.tsx, global.css
+### Task SF-3: Quiz answer animations + combo banner [x] DONE
+- [Quiz.tsx:86,338-367](apps/web/src/pages/Quiz.tsx#L86) — combo state + plays `correctAnswer`/`combo3`/`combo5`/`combo10` sounds + haptic feedback at correct answer milestones; `wrongAnswer` sound on miss
 
-### Task SF-4: Timer warning animations + sounds
-- Status: [ ] TODO
-- File(s): Quiz.tsx, global.css
+### Task SF-4: Timer warning animations + sounds [x] DONE
+- [Quiz.tsx:173-175](apps/web/src/pages/Quiz.tsx#L173-L175) — `soundManager.play('timerTick')` + `haptic.timerWarning()` khi timer gần hết
 
-### Task SF-5: Quiz Results celebrations + confetti
-- Status: [ ] TODO
-- File(s): QuizResults.tsx
+### Task SF-5: Quiz Results celebrations + confetti [x] DONE
+- [QuizResults.tsx:131,172-173](apps/web/src/pages/QuizResults.tsx#L131) — `showConfetti = accuracy >= 80` triggers Confetti animation block
 
-### Task SF-6: Tier Up celebration modal
-- Status: [ ] TODO
-- File(s): components/TierUpModal.tsx
+### Task SF-6: Tier Up celebration modal [x] DONE
+- File: [components/TierUpModal.tsx](apps/web/src/components/TierUpModal.tsx)
+- Test: [components/__tests__/TierUpModal.test.tsx](apps/web/src/components/__tests__/TierUpModal.test.tsx)
 
-### Task SF-7: Sound + haptics settings
-- Status: [ ] TODO
-- File(s): Profile.tsx
+### Task SF-7: Sound + haptics settings [x] DONE
+- [Profile.tsx:435-499](apps/web/src/pages/Profile.tsx#L435) — `soundEnabled` + `hapticsOn` state với toggle UI (sound/haptic settings)
 
-### Task SF-8: Tests + full regression
-- Status: [ ] TODO
+### Task SF-8: Tests + full regression [x] DONE
+- [services/__tests__/soundManager.test.ts](apps/web/src/services/__tests__/soundManager.test.ts)
+- [utils/__tests__/haptics.test.ts](apps/web/src/utils/__tests__/haptics.test.ts)
+- [components/__tests__/TierUpModal.test.tsx](apps/web/src/components/__tests__/TierUpModal.test.tsx)
 
 ---
 
