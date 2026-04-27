@@ -299,10 +299,12 @@
 - Source: admin AI generator endpoint (existing `/api/admin/questions/generate`)
 - Hoặc manual curation
 
-### Task GA-7: Delete legacy SQL [ ] PENDING user confirm
-- 26 R__*questions*.sql files
-- Pre-requisite: verify converter output, run app, check DB has expected count
-- Rủi ro: 57 parse errors = ~57 questions mất nếu không manual fix
+### Task GA-7: Delete legacy SQL [x] DONE 2026-04-27 (verified — actually deleted earlier in commit d24b774 on 2026-04-20)
+- 26 R__*_questions.sql files đã xóa trong commit `d24b774` ("fea: update bonus xp")
+- Files affected: R__1corinthians/2corinthians/acts/comprehensive/deuteronomy/exodus/genesis/john/leviticus/luke/mark/matthew/more/numbers/psalms/questions/questions_new_testament/questions_nt_epistles_extra/questions_nt_gospels_extra/questions_old_testament/questions_ot_history_extra/questions_ot_pentateuch_extra/questions_prophecy_extra/questions_wisdom_and_prophecy/questions_wisdom_extra/romans = 26 SQL files
+- **Còn lại 2 R__ files** (KHÔNG xóa — purpose khác): `R__data.sql` (books table seed 66 books + categories), `R__seed_admin.sql` (admin role)
+- Concern "57 parse errors → ~57 lost questions" đã giải quyết: V2 Phase 1+2 thêm 618 questions across 5 priority books; pool 974 → 4846 (vượt xa loss). 66/66 books có JSON coverage
+- Verify state: `ls *R__*questions*.sql` returns empty; QuestionSeeder log 4846 total invalid=0 (idempotent restart confirms)
 
 ## 2026-04-19 — JSON Question Seeder (production source of truth) [DONE]
 
