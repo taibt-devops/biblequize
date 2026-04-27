@@ -1,5 +1,63 @@
 # TODO
 
+## 2026-04-27 — V2 Go-Live Tier A leftover: 5 core books to target [IN PROGRESS]
+
+> Sau V2 Phase 1+2 (Genesis/Matthew/John/Romans/Psalms hoàn tất), Tier A còn 5 sách core chưa đạt target spec section 2.2.
+> Spec ratio: 30% Easy / 45% Medium / 25% Hard (±3%).
+> Tổng: +344 câu VI + 344 EN = 688 câu output.
+
+### Task V2A-1: Exodus +75 (10E + 43M + 22H)
+- Status: [ ] TODO
+- Current: 75 (E35 M25 H15) → Target: 150 (E45 M68 H37)
+- Plan: +10 Easy + 43 Medium + 22 Hard
+- File(s): `exodus_quiz.json` + `exodus_quiz_en.json`
+- Strategy: 10 plagues (chapters 7-12), Passover (12), Red Sea (14), manna/quail (16), Sinai/Ten Commandments (19-20), tabernacle construction (25-31, 35-40), golden calf (32)
+- Commit: `feat(seed): Exodus +75 to V2 Tier A target (75→150)`
+
+### Task V2A-2: Mark +60 (7E + 33M + 20H)
+- Status: [ ] TODO
+- Current: 60 (E29 M21 H10) → Target: 120 (E36 M54 H30)
+- Plan: +7 Easy + 33 Medium + 20 Hard
+- File(s): `mark_quiz.json` + `mark_quiz_en.json`
+- Strategy: shortest gospel — focus immediacy theme ("εὐθύς"), miracles cluster (1-5), Caesarea Philippi confession (8), transfiguration (9), Olivet (13), Passion (14-16); cross-ref Synoptic
+- ⚠️ Note: Mark ends abruptly at 16:8 (long ending 16:9-20 disputed manuscripts) — avoid questions on textual criticism
+- Commit: `feat(seed): Mark +60 to V2 Tier A target (60→120)`
+
+### Task V2A-3: Luke +60 (0E + 27M + 33H)
+- Status: [ ] TODO
+- Current: 100 (E48 M45 H7) → Target: 160 (E48 M72 H40)
+- Plan: 0 Easy + 27 Medium + 33 Hard (Easy đã đủ; Hard cần boost mạnh — current chỉ 7%)
+- File(s): `luke_quiz.json` + `luke_quiz_en.json`
+- Strategy: unique parables (Good Samaritan 10, Prodigal Son 15, Rich Fool 12, Dives & Lazarus 16), birth narrative (1-2), Mary/Martha (10), Zacchaeus (19), Emmaus road (24); women + outcasts emphasis
+- Commit: `feat(seed): Luke +60 to V2 Tier A target (100→160)`
+
+### Task V2A-4: Acts +69 (9E + 36M + 24H)
+- Status: [ ] TODO
+- Current: 61 (E30 M22 H9) → Target: 130 (E39 M58 H33)
+- Plan: +9 Easy + 36 Medium + 24 Hard
+- File(s): `acts_quiz.json` + `acts_quiz_en.json`
+- Strategy: Pentecost (2), early church (3-7), Stephen martyrdom (7), Saul conversion (9), Cornelius (10), 1st missionary journey (13-14), Jerusalem council (15), 2nd journey (15:36-18), 3rd journey (18:23-21), trials + Rome (21-28); speeches (Peter 2, Stephen 7, Paul 13/17/22/26)
+- Commit: `feat(seed): Acts +69 to V2 Tier A target (61→130)`
+
+### Task V2A-5: Revelation +80 (18E + 39M + 23H)
+- Status: [ ] TODO
+- Current: 20 (E12 M6 H2) → Target: 100 (E30 M45 H25)
+- Plan: +18 Easy + 39 Medium + 23 Hard (lớn nhất trong batch)
+- File(s): `revelation_quiz.json` + `revelation_quiz_en.json`
+- Strategy: 7 letters to churches (2-3), throne room (4-5), 7 seals/trumpets/bowls (6-16), great prostitute Babylon (17-18), 1000 years (20), new heaven new earth (21-22)
+- ⚠️ **Tránh GUARDRAILS** (spec 7.3): KHÔNG hỏi về end-times timing (rapture pre/post-trib, millennium positions), giải thích biểu tượng chi tiết. Focus điều text **trần thuật**: 7 churches characteristics, names of the Lamb, songs of saints, structure of letters
+- Commit: `feat(seed): Revelation +80 to V2 Tier A target (20→100)`
+
+### Task V2A-6: Verify final Tier A audit
+- Status: [ ] TODO
+- Checklist:
+  - [ ] All 10 Tier A books at target (150 Genesis, 150 Exodus, 180 Psalms, 160 Matthew, 120 Mark, 160 Luke, 160 John, 130 Acts, 130 Romans, 100 Revelation)
+  - [ ] Aggregate ratio E/M/H gần 30/45/25 (±3%)
+  - [ ] Backend log all 5 files seed clean (idempotent)
+  - [ ] Combined V2: Tier A total = 1,440 questions; +Phase 1+2 added 962 across 5 core; +V2A added 344 across remaining 5
+
+---
+
 ## 2026-04-26 — V2 Go-Live Phase 2: Easy/Medium expansion (5 sách core) [DONE]
 
 > Theo `PROMPT_GENERATE_QUESTIONS_V2_GO_LIVE.md` section 10.1 Priority 2.
