@@ -30,13 +30,13 @@
 - File(s): `luke_quiz.json` + `luke_quiz_en.json` + `scripts/append_luke_v2a.py`
 - Topics: Theophilus, Magnificat (echo Hannah), Simeon's Light to Gentiles, Nazareth Manifesto (Isa 61), Sermon on the Plain (Beatitudes + Woes), Lord's Prayer Luke version, 3 lost parables (sheep/coin/prodigal), Good Samaritan as Christ self-portrait, Mary/Martha, Persistent Widow, Pharisee + Tax Collector justification, Zacchaeus, Last Supper "do this in remembrance", Father Forgive Them, Emmaus, Pentecost bridge to Acts; Luke's themes: Holy Spirit, prayer, women, "today" salvation, reversal, Gentile inclusion
 
-### Task V2A-4: Acts +69 (9E + 36M + 24H)
-- Status: [ ] TODO
-- Current: 61 (E30 M22 H9) → Target: 130 (E39 M58 H33)
-- Plan: +9 Easy + 36 Medium + 24 Hard
-- File(s): `acts_quiz.json` + `acts_quiz_en.json`
-- Strategy: Pentecost (2), early church (3-7), Stephen martyrdom (7), Saul conversion (9), Cornelius (10), 1st missionary journey (13-14), Jerusalem council (15), 2nd journey (15:36-18), 3rd journey (18:23-21), trials + Rome (21-28); speeches (Peter 2, Stephen 7, Paul 13/17/22/26)
-- Commit: `feat(seed): Acts +69 to V2 Tier A target (61→130)`
+### Task V2A-4: Acts +69 (9E + 36M + 24H) [x] DONE 2026-04-27
+- 61→**130** (E39 M58 H33, ratio **30.0/44.6/25.4%** — gần khớp V2 target 30/45/25)
+- Pool +69: 9 Easy + 36 Medium + 24 Hard VI + 69 EN 1:1
+- Seeder log `inserted=69` each file, total 5236→5374, invalid=0
+- 66 single + 3 multi (96/4); idx 12/14/23/17 (slight skew toward index 2)
+- File(s): `acts_quiz.json` + `acts_quiz_en.json` + `scripts/append_acts_v2a.py`
+- Topics: Barnabas naming + Saul at Stephen's stoning + Damascus road + Christians at Antioch + Saul=Paul + Lydia + Demetrius + ready-for-martyrdom + house arrest 2 years (Easy); Pentecost sermons (Peter quotes Joel + Ps 16/118), 4 marks of early church, Beautiful Gate, no other name, been-with-Jesus, Gamaliel, Stephen's 4-figures speech, Simon Magus, Ananias of Damascus, basket escape, Barnabas vouches, sheet vision, Gentile Pentecost, Antioch 'Christians', Agabus famine, Peter's prison angel, turn-to-Gentiles, Lystra Hermes/stoning, Council Peter+James+letter, split with Mark, Macedonian vision, slave girl divination, world upside down, Bereans, Miletus farewell + 'more blessed to give', Roman citizen, testify in Rome, appeal Caesar, Euraquilo (Medium); 6 cross-ref OT (Joel/Ps118/Isa66/Ps2/Isa49/Amos9), 6 distinguish (3 Saul accounts/Sadducee deny 3/3 Ananiases/2 Philips/Felix-Festus-Agrippa/3 Spirit terms), 6 deep (Acts structure 1:8/Babel reversed/4 prohibitions=Lev17-18/'we sections'/Stephen outside-temple/3 journeys from Antioch), 6 verse precision (1:8/16:31/17:30-31/20:24/26:18/28:28) (Hard)
 
 ### Task V2A-5: Revelation +80 (18E + 39M + 23H)
 - Status: [ ] TODO

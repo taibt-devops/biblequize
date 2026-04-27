@@ -1657,5 +1657,1849 @@
       "Church History",
       "Basic"
     ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "verseStart": 36,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 37,
+    "content": "According to Acts 4:36, what name did the apostles give to Joseph the Levite from Cyprus?",
+    "explanation": "Acts 4:36 — 'Thus Joseph, who was also called by the apostles Barnabas (which means son of encouragement), a Levite, a native of Cyprus'. He sold a field and laid the proceeds at the apostles' feet — the first named example of voluntary sharing in the church.",
+    "language": "en",
+    "options": [
+      "Peter, meaning 'rock'",
+      "Boanerges, meaning 'sons of thunder'",
+      "BARNABAS, which means 'son of encouragement'",
+      "Cephas, meaning 'stone'"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Barnabas",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "verseStart": 58,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Acts 7:58, who was the young man at whose feet the witnesses laid their cloaks while stoning Stephen?",
+    "explanation": "Acts 7:58 — 'Then they cast him out of the city and stoned him. And the witnesses laid down their garments at the feet of a young man named Saul'. This is Saul's (Paul's) first appearance in Acts — guarding the cloaks of Stephen's killers.",
+    "language": "en",
+    "options": [
+      "Timothy (according to the text's framing)",
+      "Titus (per the textual narrative)",
+      "Barsabbas (as described in the passage)",
+      "SAUL — who later became the apostle Paul"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Saul at Stephen's stoning",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 5,
+    "content": "According to Acts 9:3-5, what caused Saul to fall to the ground on the road to Damascus?",
+    "explanation": "Acts 9:3-5 — 'Now as he went on his way, he approached Damascus, and suddenly a light from heaven flashed around him. And falling to the ground he heard a voice saying to him, Saul, Saul, why are you persecuting me? And he said, Who are you, Lord? And he said, I am Jesus, whom you are persecuting'.",
+    "language": "en",
+    "options": [
+      "An angel appeared (as described in the passage)",
+      "A LIGHT from heaven flashed around him; then a voice said: 'Saul, Saul, why are you persecuting me?'",
+      "A dove descended (according to the text's framing)",
+      "A dark cloud (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Saul's conversion",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 11,
+    "verseStart": 26,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Acts 11:26, in which city were disciples first called 'Christians'?",
+    "explanation": "Acts 11:26 — 'And when he had found him, he brought him to Antioch. For a whole year they met with the church and taught a great many people. And in Antioch the disciples were first called Christians'. Antioch became the missionary base for Paul's 3 journeys.",
+    "language": "en",
+    "options": [
+      "Jerusalem (as described in the passage)",
+      "Rome (per the textual narrative)",
+      "ANTIOCH in Syria — where Barnabas and Saul taught for a whole year",
+      "Athens (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Christians at Antioch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Acts 13:9, what is the second name of the apostle Saul — used from this point onward in Acts?",
+    "explanation": "Acts 13:9 — 'But Saul, who was also called Paul, filled with the Holy Spirit, looked intently at him'. Saul is Hebrew (after King Saul of Benjamin); Paul is Latin (paulus = 'small'). From Acts 13 onward, Luke uses 'Paul' (for the Gentile mission).",
+    "language": "en",
+    "options": [
+      "PAUL — 'But Saul, who was also called Paul, filled with the Holy Spirit'",
+      "Barsabbas (according to the text's framing)",
+      "Peter (per the textual narrative)",
+      "Boanerges (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Saul = Paul",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "verseStart": 14,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Acts 16:14, who was the first European convert (at Philippi) and what was her trade?",
+    "explanation": "Acts 16:14 — 'One who heard us was a woman named Lydia, from the city of Thyatira, a seller of purple goods, who was a worshiper of God. The Lord opened her heart to pay attention to what was said by Paul'. Lydia was the first Christian convert in Europe.",
+    "language": "en",
+    "options": [
+      "Mary of Bethany — oil seller",
+      "Tabitha — cloth seller",
+      "Phoebe — priestess (per the textual narrative)",
+      "LYDIA from Thyatira — a SELLER OF PURPLE GOODS, a worshiper of God"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Lydia at Philippi",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 19,
+    "verseStart": 24,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Acts 19:24, who started the riot against Paul in Ephesus because his silversmiths were losing business?",
+    "explanation": "Acts 19:24-27 — 'For a man named Demetrius, a silversmith, who made silver shrines of Artemis, brought no little business to the craftsmen... Men, you know that from this business we have our wealth'. The temple of Artemis at Ephesus was one of the 7 ancient wonders.",
+    "language": "en",
+    "options": [
+      "Alexander the coppersmith (as described in the passage)",
+      "DEMETRIUS — a silversmith making shrines of Artemis (Diana), fearing loss of trade",
+      "Hymenaeus (according to the text's framing)",
+      "Philetus (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Demetrius at Ephesus",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 21,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Acts 21:13, when the disciples urged Paul not to go to Jerusalem (he would be arrested), how did Paul respond?",
+    "explanation": "Acts 21:13 — 'Then Paul answered, What are you doing, weeping and breaking my heart? For I am ready not only to be imprisoned but even to die in Jerusalem for the name of the Lord Jesus'. The martyr's readiness — foreshadowing Paul's death in Rome for Christ's name.",
+    "language": "en",
+    "options": [
+      "'What are you doing, WEEPING and BREAKING my HEART? For I am ready NOT ONLY to be IMPRISONED but even to DIE in JERUSALEM for the NAME of the Lord Jesus'",
+      "'I will not go' (per the textual narrative) (in the story's sequence)",
+      "'Let me pray first' (according to the text's framing)",
+      "'Let us wait for the Spirit's guidance' (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Ready for martyrdom",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 28,
+    "verseStart": 30,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 31,
+    "content": "According to Acts 28:30-31 (the closing verses), in what condition was Paul in Rome and what did he do?",
+    "explanation": "Acts 28:30-31 (book's ending) — 'He lived there two whole years at his own expense, and welcomed all who came to him, proclaiming the kingdom of God and teaching about the Lord Jesus Christ with all boldness and without hindrance'. The open ending — the Gospel 'unhindered' reaches the imperial capital.",
+    "language": "en",
+    "options": [
+      "He was tried and martyred immediately (as described in the passage)",
+      "He was locked in a dungeon (according to the text's framing)",
+      "In his RENTED HOUSE for TWO WHOLE YEARS, welcoming all who came, PROCLAIMING the kingdom of God and teaching about Jesus 'WITH ALL BOLDNESS and WITHOUT HINDRANCE'",
+      "He returned to Antioch (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Paul in Rome",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 21,
+    "content": "According to Acts 2:14-21, in his Pentecost sermon, what prophecy did Peter quote to explain the Holy Spirit's coming?",
+    "explanation": "Acts 2:16-17 — 'But this is what was uttered through the prophet Joel: And in the last days it shall be, God declares, that I will pour out my Spirit on all flesh, and your sons and your daughters shall prophesy'. Peter connects Pentecost with Joel 2:28-32 — 'the last days' have begun.",
+    "language": "en",
+    "options": [
+      "Isaiah 53 — the suffering Servant (according to the text's framing)",
+      "Daniel 7 — the Son of Man (per the textual narrative)",
+      "JOEL 2:28-32 — 'I will pour out my Spirit on ALL FLESH, your sons and daughters shall PROPHESY'",
+      "Malachi 3 — Elijah will come first (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Peter quotes Joel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 36,
+    "content": "According to Acts 2:22-36, what is Peter's main argument in his Pentecost sermon proving Jesus is the Messiah?",
+    "explanation": "Acts 2:25-32 — Peter quotes Ps 16:8-11 ('You will not abandon my soul to Hades'). Argument: David died + was buried (his tomb is still in Jerusalem), so it wasn't fulfilled in him. Therefore David PROPHESIED about his descendant — Jesus' resurrection is the proof. 2:36 concludes: 'God has made him both Lord and Christ, this Jesus whom you crucified'.",
+    "language": "en",
+    "options": [
+      "The miracles Jesus did in life (as described in the passage)",
+      "The 12 apostles' testimony (according to the text's framing)",
+      "The Sermon on the Mount (per the textual narrative) (in the story's sequence)",
+      "David PROPHESIED the Messiah would NOT be abandoned to Hades; David DIED and was BURIED, but Jesus ROSE — fulfilling Psalm 16:8-11"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Pentecost argument",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 42,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "verseEnd": 47,
+    "content": "According to Acts 2:42, what did the early church DEVOTE THEMSELVES to? (Select ALL correct answers)",
+    "explanation": "Acts 2:42 — 'And they devoted themselves to the apostles' teaching and the fellowship, to the breaking of bread and the prayers'. FOUR marks of the true church: (1) didache = apostolic teaching, (2) koinonia = fellowship, (3) klasis tou artou = breaking of bread / Communion, (4) proseuchais = corporate prayer.",
+    "language": "en",
+    "options": [
+      "The apostles' TEACHING",
+      "FELLOWSHIP (koinonia)",
+      "BREAKING OF BREAD (Communion)",
+      "PRAYER (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "4 marks of early church",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 10,
+    "content": "According to Acts 3:1-10, where did Peter and John heal the lame man, and what was Peter's distinctive action?",
+    "explanation": "Acts 3:2-7 — 'And a man lame from birth was being carried, whom they laid daily at the gate of the temple that is called the Beautiful Gate... But Peter said, I have no silver and gold, but what I do have I give to you. In the name of Jesus Christ of Nazareth, rise up and walk! And he took him by the right hand and raised him up'.",
+    "language": "en",
+    "options": [
+      "At Cornelius' house — laid hands (as described in the passage)",
+      "At the BEAUTIFUL GATE of the temple — Peter TOOK him by the RIGHT HAND, raised him: 'In the name of Jesus Christ of Nazareth, walk'",
+      "At Berea — anointed with oil (according to the text's framing)",
+      "At Miletus — prayed (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Lame man at Beautiful Gate",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Acts 3:6, what is Peter's famous saying to the lame man at the Beautiful Gate?",
+    "explanation": "Acts 3:6 — 'But Peter said, I have no silver and gold, but what I do have I give to you. In the name of Jesus Christ of Nazareth, rise up and walk'. Christianity's famous declaration of spiritual wealth — the power in Christ's Name surpasses material riches.",
+    "language": "en",
+    "options": [
+      "'Ask whatever you wish' (according to the text's framing)",
+      "'Stand up and walk' (per the textual narrative)",
+      "'I have NO SILVER and GOLD, but WHAT I HAVE I GIVE you: in the name of Jesus Christ of Nazareth, rise up and walk'",
+      "'Your faith has healed you' (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Peter at Beautiful Gate",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 12,
+    "content": "According to Acts 4:8-12, what absolute claim did Peter make before the Sanhedrin about salvation?",
+    "explanation": "Acts 4:12 — 'And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved'. Christianity's EXCLUSIVE claim about salvation — only in the NAME of the Lord Jesus Christ.",
+    "language": "en",
+    "options": [
+      "'All roads lead to God' (according to the text's framing)",
+      "'Those who do good will be saved' (as described in the passage)",
+      "'Keep the Law' (per the textual narrative) (in the story's sequence)",
+      "'There is salvation in no one else, for there is NO OTHER NAME UNDER HEAVEN given among men by which we must be saved'"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "No other name",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Acts 4:13, when the Sanhedrin heard Peter and John speak boldly, what did they RECOGNIZE about them though they were 'uneducated common men'?",
+    "explanation": "Acts 4:13 — 'Now when they saw the boldness of Peter and John, and perceived that they were uneducated, common men, they were astonished. And they recognized that they had been with Jesus'. Boldness + authority don't come from education — but from 'being with Jesus'. A lesson for every disciple.",
+    "language": "en",
+    "options": [
+      "They were of Levitical descent",
+      "They HAD BEEN WITH Jesus",
+      "They were John the Baptist's disciples",
+      "They were of David's line"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Had been with Jesus",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "verseStart": 29,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Acts 5:29, when the Sanhedrin forbade the apostles to preach about Jesus, what principle did Peter and the apostles state?",
+    "explanation": "Acts 5:29 — 'But Peter and the apostles answered, We must obey God rather than men'. The Christian conscience principle — when human law contradicts God's command, God comes first. The Biblical basis for righteous civil disobedience.",
+    "language": "en",
+    "options": [
+      "'Submit to all governing authorities'",
+      "'All authority comes from God'",
+      "'WE MUST OBEY GOD rather than men'",
+      "'Be silent and wait'"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Obey God over men",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "verseStart": 34,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 39,
+    "content": "According to Acts 5:34-39, who was the famous Pharisee who advised the Sanhedrin to RELEASE the apostles, arguing 'if this is from God, you cannot overthrow it'?",
+    "explanation": "Acts 5:34-39 — 'But a Pharisee in the council named Gamaliel, a teacher of the law held in honor by all the people, stood up... For if this plan or this undertaking is of man, it will fail; but if it is of God, you will not be able to overthrow them'. Gamaliel was Paul's teacher (Acts 22:3) — grandson of Hillel.",
+    "language": "en",
+    "options": [
+      "GAMALIEL — Paul's teacher (Acts 22:3); he compared this with the failed Theudas and Judas the Galilean",
+      "Hillel (per the textual narrative) (in the story's sequence)",
+      "Nicodemus (as described in the passage) (as the text indicates)",
+      "Shammai (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Gamaliel's counsel",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 50,
+    "content": "According to Acts 7:2-50, Stephen's long speech before the Sanhedrin reviews which FOUR main figures in Israel's history?",
+    "explanation": "Acts 7 — The longest speech in Acts. 4-part structure: (1) Abraham (called from Mesopotamia), (2) Joseph (sold by brothers but exalted in Egypt), (3) Moses (raised in Egypt, rejected, sent back by God), (4) David/Solomon (the Temple — but the Most High does not dwell in houses made by hands). Theme: God acts outside the Promised Land + outside the temple.",
+    "language": "en",
+    "options": [
+      "Noah, Abraham, Elijah, David (per the textual narrative)",
+      "Abraham, Isaac, Jacob, the 12 tribes",
+      "ABRAHAM (7:2-8), JOSEPH (7:9-16), MOSES (7:17-44), DAVID/SOLOMON (7:45-50)",
+      "Samuel, Saul, David, Solomon (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Stephen's 4 figures",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "verseStart": 51,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 53,
+    "content": "According to Acts 7:51-53, how did Stephen end his speech with a strong INDICTMENT of the Sanhedrin?",
+    "explanation": "Acts 7:51-53 — 'You stiff-necked people, uncircumcised in heart and ears, you always resist the Holy Spirit. As your fathers did, so do you. Which of the prophets did your fathers not persecute? And they killed those who announced beforehand the coming of the Righteous One, whom you have now betrayed and murdered'. The direct accusation = the trigger for Stephen's stoning.",
+    "language": "en",
+    "options": [
+      "'Repent' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "'You STIFF-NECKED people, UNCIRCUMCISED in heart and EARS! You always RESIST the Holy Spirit; your fathers KILLED the prophets who announced the Righteous One; you BETRAYED and MURDERED him'",
+      "'God will deliver' (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "'Abandon the Law' (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Stephen's indictment",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 3,
+    "content": "According to Acts 8:1-3, after Stephen's martyrdom, what happened to the Jerusalem church and what did Saul do?",
+    "explanation": "Acts 8:1-3 — 'And there arose on that day a great persecution against the church in Jerusalem, and they were all scattered throughout the regions of Judea and Samaria, except the apostles... But Saul was ravaging the church, and entering house after house, he dragged off men and women and committed them to prison'. Persecution = God's means to SPREAD the Gospel (1:8).",
+    "language": "en",
+    "options": [
+      "The church had peace; Saul preached in Jerusalem (as described in the passage)",
+      "All apostles fled; Saul denied Christ (according to the text's framing)",
+      "GREAT PERSECUTION arose; believers (except apostles) scattered through Judea + Samaria; SAUL was RAVAGING the church, entering houses to DRAG off men + women to prison",
+      "The church split into 12 groups (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Persecution scatters",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 24,
+    "content": "According to Acts 8:9-24, who at Samaria tried to BUY the power to give the Holy Spirit — and was cursed by Peter: 'May your silver perish with you'?",
+    "explanation": "Acts 8:18-20 — 'Now when Simon saw that the Spirit was given through the laying on of the apostles' hands, he offered them money, saying, Give me this power also, that anyone on whom I lay my hands may receive the Holy Spirit. But Peter said to him, May your silver perish with you, because you thought you could obtain the gift of God with money'. This Simon's name is the source of 'simony' = the sin of buying sacred office.",
+    "language": "en",
+    "options": [
+      "Ananias (per the textual narrative)",
+      "Hymenaeus (according to the text's framing)",
+      "Alexander (as described in the passage)",
+      "SIMON — the famous Samaritan magician (origin of 'simony' = selling sacred offices)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Simon Magus",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 19,
+    "content": "According to Acts 9:10-19, which disciple in Damascus did the Lord send to lay hands on Saul to restore his sight + give the Spirit + baptize?",
+    "explanation": "Acts 9:10-17 — 'Now there was a disciple at Damascus named Ananias. The Lord said to him in a vision, Ananias. And he said, Here I am, Lord... And the Lord said to him, Rise and go to the street called Straight, and at the house of Judas look for a man of Tarsus named Saul... For he is a chosen instrument of mine to carry my name before the Gentiles and kings and the children of Israel'. The Gentile mission commission given from the START.",
+    "language": "en",
+    "options": [
+      "Philip (per the textual narrative) (in the story's sequence)",
+      "ANANIAS of Damascus (NOT Ananias husband of Sapphira) — the Lord explained Saul was 'a chosen instrument to carry my name before the Gentiles'",
+      "Barnabas (according to the text's framing) (as the text indicates)",
+      "Saul went to the synagogue alone (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Ananias + Saul",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 25,
+    "content": "According to Acts 9:23-25, after Saul's bold preaching in Damascus made the Jews plot to kill him, how did he escape the city?",
+    "explanation": "Acts 9:23-25 — 'When many days had passed, the Jews plotted to kill him, but their plot became known to Saul. They were watching the gates day and night in order to kill him, but his disciples took him by night and let him down through an opening in the wall, lowering him in a basket'. Paul later adds in 2 Cor 11:32-33: under King Aretas.",
+    "language": "en",
+    "options": [
+      "Disguised as a traveler (according to the text's framing)",
+      "Slipped out at night with a merchant caravan",
+      "His disciples LOWERED him in a BASKET through an opening in the WALL by night",
+      "On a priest's horse (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Escape in basket",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 30,
+    "content": "According to Acts 9:26-30, when Saul came to Jerusalem, who BROUGHT him to the apostles + vouched for his conversion (since the apostles feared Saul)?",
+    "explanation": "Acts 9:26-27 — 'And when he had come to Jerusalem, he attempted to join the disciples. And they were all afraid of him, for they did not believe that he was a disciple. But Barnabas took him and brought him to the apostles and declared to them how on the road he had seen the Lord, who spoke to him'. Barnabas 'bridged' Saul to the church — a lesson on welcoming newcomers.",
+    "language": "en",
+    "options": [
+      "BARNABAS — true to his name 'son of encouragement'; he would be Saul's companion on the 1st missionary journey",
+      "Philip (per the textual narrative) (in the story's sequence)",
+      "Cornelius (as described in the passage) (as the text indicates)",
+      "Crispus (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Barnabas vouches",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 16,
+    "content": "According to Acts 10:9-16, on the roof of Simon the tanner's house in Joppa, what vision did Peter see? Repeated how many times?",
+    "explanation": "Acts 10:9-16 — 'He saw the heavens opened and something like a great sheet descending, being let down by its four corners upon the earth. In it were all kinds of animals and reptiles and birds of the air. And there came a voice to him: Rise, Peter; kill and eat. But Peter said, By no means, Lord; for I have never eaten anything that is common or unclean. And the voice came to him again a second time, What God has made clean, do not call common. This happened three times'. Double meaning: Gentile food + the Gentiles themselves God has 'made clean'.",
+    "language": "en",
+    "options": [
+      "An angel — once (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "A dove — 7 times (according to the text's framing) (per the original content) (per the textual narrative)",
+      "A cross — 12 times (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "A LARGE SHEET from heaven containing ALL KINDS of ANIMALS + reptiles + birds — Voice said: 'KILL AND EAT'; Peter refused, voice said: 'What God has made clean, do not call common.' Repeated THREE times"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Sheet vision",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "verseStart": 44,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 48,
+    "content": "According to Acts 10:44-48 (at Cornelius' house), what EXTRAORDINARY thing happened while Peter was still speaking — astonishing the Jewish believers?",
+    "explanation": "Acts 10:44-46 — 'While Peter was still saying these things, the Holy Spirit fell on all who heard the word. And the believers from among the circumcised who had come with Peter were amazed, because the gift of the Holy Spirit was poured out even on the Gentiles. For they were hearing them speaking in tongues and extolling God'. This event = OBJECTIVE evidence Gentiles are admitted to the church EQUALLY (Peter recounts 11:15-17).",
+    "language": "en",
+    "options": [
+      "Cornelius asked for circumcision (as described in the passage)",
+      "Peter saw a second angel (according to the text's framing) (as the text indicates)",
+      "The HOLY SPIRIT FELL on ALL who heard the word (GENTILES) — they SPOKE in TONGUES and praised God, JUST LIKE Pentecost (called 'Gentile Pentecost')",
+      "Peter fainted (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Gentile Pentecost",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 11,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 26,
+    "content": "According to Acts 11:19-26, whom did the Jerusalem church SEND to Antioch when many Gentiles converted, and whom did he go fetch as co-worker?",
+    "explanation": "Acts 11:22-26 — 'The report of this came to the ears of the church in Jerusalem, and they sent Barnabas to Antioch... So Barnabas went to Tarsus to look for Saul, and when he had found him, he brought him to Antioch. For a whole year they met with the church and taught a great many people. And in Antioch the disciples were first called Christians'. Barnabas 'drew' Saul into the spotlight — preparing for the 1st missionary journey (13:1-3).",
+    "language": "en",
+    "options": [
+      "Timothy and Titus (as described in the passage)",
+      "BARNABAS was sent; Barnabas went to TARSUS to find SAUL, and they taught together for 1 year at Antioch",
+      "Peter and John (per the textual narrative)",
+      "Silas and Mark (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Barnabas seeks Saul",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 11,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 30,
+    "content": "According to Acts 11:27-30, which prophet from Jerusalem foretold a great FAMINE 'over all the world' (fulfilled under Claudius)?",
+    "explanation": "Acts 11:27-28 — 'Now in these days prophets came down from Jerusalem to Antioch. And one of them named Agabus stood up and foretold by the Spirit that there would be a great famine over all the world (this took place in the days of Claudius)'. Agabus reappears in Acts 21:10-11 — using Paul's belt to bind his own hands and feet to foretell the arrest.",
+    "language": "en",
+    "options": [
+      "AGABUS — this prophet will reappear in Acts 21:10-11 (foretelling Paul's binding)",
+      "Silas (per the textual narrative)",
+      "Judas Barsabbas (as described in the passage)",
+      "Manaen (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Prophet Agabus",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 12,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "According to Acts 12:5-11, the night before Herod planned to try Peter, what event delivered Peter from prison?",
+    "explanation": "Acts 12:7-10 — 'And behold, an angel of the Lord stood next to him, and a light shone in the cell. He struck Peter on the side and woke him, saying, Get up quickly. And the chains fell off his hands. And the angel said to him, Dress yourself and put on your sandals... When they had passed the first and the second guard, they came to the iron gate leading into the city. It opened for them of its own accord'. The church was praying all night — Peter knocked at the door, Rhoda was so glad she forgot to open (12:12-16).",
+    "language": "en",
+    "options": [
+      "An earthquake opened the cell (according to the text's framing) (per the original content)",
+      "The guards fell asleep (per the textual narrative) (in the story's sequence)",
+      "An ANGEL entered the cell, struck Peter awake, his CHAINS FELL off; Peter followed the angel through doors, the IRON gate opened by ITSELF; at first Peter thought it was a vision",
+      "The church broke the door open (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Peter escapes prison",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 52,
+    "content": "According to Acts 13:13-52, after preaching at the Pisidian Antioch synagogue and being rejected by the Jews, what TURNING POINT did Paul + Barnabas declare?",
+    "explanation": "Acts 13:46-47 — 'And Paul and Barnabas spoke out boldly, saying, It was necessary that the word of God be spoken first to you. Since you thrust it aside and judge yourselves unworthy of eternal life, behold, we are turning to the Gentiles. For so the Lord has commanded us, saying, I have made you a light for the Gentiles (Isa 49:6)'. The turning point 'FIRST for the Jew, but ALSO for the Greek' (Rom 1:16).",
+    "language": "en",
+    "options": [
+      "'We will return to Jerusalem' (according to the text's framing) (per the original content)",
+      "'We will preach only to Jews' (as described in the passage) (as the text indicates)",
+      "'We resign' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "'It was necessary that the word of God be spoken FIRST to you. Since you THRUST it aside and JUDGE yourselves UNWORTHY of eternal life, BEHOLD, we are TURNING TO THE GENTILES'"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Turn to Gentiles",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 14,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 20,
+    "content": "According to Acts 14:8-20, at Lystra, after Paul healed a man lame from birth, the crowd called Barnabas Zeus and Paul whom? At the end, what did the Jews from Antioch + Iconium come to do?",
+    "explanation": "Acts 14:11-12, 19 — 'And when the crowds saw what Paul had done, they lifted up their voices, saying in Lycaonian, The gods have come down to us in the likeness of men! Barnabas they called Zeus, and Paul, Hermes, because he was the chief speaker... But Jews came from Antioch and Iconium, and having persuaded the crowds, they stoned Paul and dragged him out of the city, supposing that he was dead. But when the disciples gathered about him, he rose up and entered the city'. The same crowd from worship to stoning.",
+    "language": "en",
+    "options": [
+      "Paul = HERMES (Mercury — because he was the chief SPEAKER); the Jews incited the crowd to STONE Paul — they dragged him out thinking him dead, but disciples gathered + Paul rose and walked",
+      "Paul = the Sun god (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "Paul = Lightning (according to the text's framing) (per the original content)",
+      "Paul = the King (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Lystra stoning",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "According to Acts 15:7-11, at the Jerusalem Council, what was Peter's argument against requiring Gentiles to be CIRCUMCISED?",
+    "explanation": "Acts 15:8-11 — 'And God, who knows the heart, bore witness to them, by giving them the Holy Spirit just as he did to us, and he made no distinction between us and them, having cleansed their hearts by faith... Now, therefore, why are you putting God to the test by placing a yoke on the neck of the disciples that neither our fathers nor we have been able to bear? But we believe that we will be saved through the grace of the Lord Jesus, just as they will'.",
+    "language": "en",
+    "options": [
+      "'Christ abolished the Law' (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "'Circumcision is an ancient custom' (as described in the passage) (per the original content) (per the textual narrative)",
+      "'God testified to the Gentiles by GIVING them the Holy Spirit just like us (= Cornelius 10:44-48); NO distinction; saved by GRACE through Christ, JUST AS they are' — do NOT place a YOKE (circumcision + Law) which our fathers + we COULD NOT BEAR",
+      "'Ask Moses' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Peter at Council",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 21,
+    "content": "According to Acts 15:13-21, who PRESIDED at the Jerusalem Council and gave the final DECISION — citing Amos 9:11-12 'so that the Gentiles may seek the Lord'?",
+    "explanation": "Acts 15:13-19 — 'After they finished speaking, James replied, Brothers, listen to me. Simeon has related how God first visited the Gentiles, to take from them a people for his name. And with this the words of the prophets agree, just as it is written: After this I will return, and I will rebuild the tent of David that has fallen... Therefore my judgment is that we should not trouble those of the Gentiles who turn to God'. James = Jesus' brother (Mt 13:55, Gal 1:19) — leader of the Jerusalem church.",
+    "language": "en",
+    "options": [
+      "Peter (according to the text's framing) (per the original content)",
+      "Paul (per the textual narrative) (in the story's sequence)",
+      "Barnabas (as described in the passage) (as the text indicates)",
+      "JAMES — the brother of Jesus, leader of the Jerusalem church (NOT James son of Zebedee, who was killed in Acts 12:2)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "James presides",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 29,
+    "content": "According to Acts 15:22-29, the LETTER from the Jerusalem Council asked Gentiles to ABSTAIN from FOUR things — accommodating Jewish believers' conscience. Select THREE that appear on the list.",
+    "explanation": "Acts 15:28-29 — 'For it has seemed good to the Holy Spirit and to us to lay on you no greater burden than these requirements: that you abstain from what has been sacrificed to idols, and from blood, and from what has been strangled, and from sexual immorality. If you keep yourselves from these, you will do well'. FOUR items: (1) idol food, (2) blood, (3) strangled animals, (4) sexual immorality. CIRCUMCISION was NOT required — that was the Council's main decision.",
+    "language": "en",
+    "options": [
+      "Food SACRIFICED to idols",
+      "BLOOD (per the textual narrative)",
+      "Animals STRANGLED (blood not drained)",
+      "Circumcision (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "4 abstentions",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "verseStart": 36,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 41,
+    "content": "According to Acts 15:36-41, BEFORE the 2nd missionary journey, why did Paul + Barnabas SPLIT? Where did each go?",
+    "explanation": "Acts 15:37-40 — 'Now Barnabas wanted to take with them John called Mark. But Paul thought best not to take with them one who had withdrawn from them in Pamphylia and had not gone with them to the work. And there arose a sharp disagreement, so that they separated from each other. Barnabas took Mark with him and sailed away to Cyprus, but Paul chose Silas and departed, having been commended by the brothers to the grace of the Lord'. A reconciliation lesson: Paul later WELCOMED Mark back (Col 4:10; 2 Tim 4:11 'he is very useful to me').",
+    "language": "en",
+    "options": [
+      "Over doctrine — Paul went to Syria (as described in the passage)",
+      "DISAGREEMENT over taking JOHN MARK (who had abandoned them in Pamphylia 13:13). Barnabas took MARK to CYPRUS; Paul chose SILAS to Syria-Cilicia",
+      "Over finances (according to the text's framing) (as the text indicates)",
+      "Over health (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Paul + Barnabas split",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 10,
+    "content": "According to Acts 16:6-10, on the 2nd missionary journey, where did the Holy Spirit FORBID Paul to go, and what vision LED him to Europe?",
+    "explanation": "Acts 16:6-10 — 'And they went through the region of Phrygia and Galatia, having been forbidden by the Holy Spirit to speak the word in Asia... they attempted to go into Bithynia, but the Spirit of Jesus did not allow them. So, passing by Mysia, they went down to Troas. And a vision appeared to Paul in the night: a man of Macedonia was standing there, urging him and saying, Come over to Macedonia and help us'. Beginning of the 'we sections' (Luke joins 16:10).",
+    "language": "en",
+    "options": [
+      "Forbidden Athens; vision led back to Israel (as described in the passage)",
+      "Forbidden Syria; vision led to Egypt (per the textual narrative) (in the story's sequence)",
+      "Forbidden ASIA + BITHYNIA; a VISION of a MAN of MACEDONIA standing and pleading: 'Come over to MACEDONIA and help us' — Paul crossed to EUROPE for the first time",
+      "Forbidden Rome; vision led to Ephesus (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Macedonian vision",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 24,
+    "content": "According to Acts 16:16-24 (Philippi), Paul cast out a spirit from which slave girl, leading to his ARREST?",
+    "explanation": "Acts 16:16-23 — 'As we were going to the place of prayer, we were met by a slave girl who had a spirit of divination and brought her owners much gain by fortune-telling... Paul, having become greatly annoyed, turned and said to the spirit, I command you in the name of Jesus Christ to come out of her. And it came out that very hour. But when her owners saw that their hope of gain was gone... The crowd joined in attacking them, and the magistrates tore the garments off them and gave orders to beat them with rods'. The prison → earthquake → jailer believes (16:25-34).",
+    "language": "en",
+    "options": [
+      "A wealthy ship-owner (as described in the passage) (as the text indicates)",
+      "A magistrate's wife (per the textual narrative) (in the story's sequence)",
+      "A priest's daughter (according to the text's framing) (per the original content)",
+      "A SLAVE GIRL with a SPIRIT of DIVINATION — bringing much profit to her owners; the owners had Paul + Silas arrested, BEATEN with rods, then thrown into prison"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Slave girl divination",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 9,
+    "content": "According to Acts 17:1-9, at Thessalonica, what FAMOUS accusation did the Jewish mob make against Paul + Silas?",
+    "explanation": "Acts 17:6-7 — 'And when they could not find them, they dragged Jason and some of the brothers before the city authorities, shouting, These men who have turned the world upside down have come here also, and Jason has received them, and they are all acting against the decrees of Caesar, saying that there is another king, Jesus'. The accusation accidentally hit the truth — the Gospel really is 'turning the world upside down' by proclaiming King Jesus.",
+    "language": "en",
+    "options": [
+      "'These men who have TURNED THE WORLD UPSIDE DOWN have come here also — acting CONTRARY to Caesar's decrees, saying there is ANOTHER KING, JESUS'",
+      "'They destroyed the temple' (according to the text's framing)",
+      "'They are John the Baptist's disciples' (as described in the passage)",
+      "'They stole the offering' (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Turn world upside down",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 12,
+    "content": "According to Acts 17:10-12, why were the Bereans praised as 'more noble than those in Thessalonica'?",
+    "explanation": "Acts 17:11 — 'Now these Jews were more noble than those in Thessalonica; they received the word with all eagerness, examining the Scriptures daily to see if these things were so. Many of them therefore believed, with not a few Greek women of high standing as well as men'. 'Berean' became the symbol of the PROPER disciple — receiving the word AND testing it by Scripture.",
+    "language": "en",
+    "options": [
+      "They were wealthier (per the textual narrative) (in the story's sequence)",
+      "They had more priests (as described in the passage) (as the text indicates)",
+      "They RECEIVED the word with EAGERNESS, EXAMINING the SCRIPTURES DAILY to see if Paul's words were so — NOT BLIND faith, NOT rejection; result: MANY believed",
+      "They had more Greeks (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Bereans examined Scripture",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 20,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 38,
+    "content": "According to Acts 20:17-38 (Miletus), Paul called the Ephesian elders to give his FAREWELL. What FINAL quote did he cite — words of Jesus NOT found in the 4 Gospels?",
+    "explanation": "Acts 20:35 — 'In all things I have shown you that by working hard in this way we must help the weak and remember the words of the Lord Jesus, how he himself said, It is more blessed to give than to receive'. This is the ONLY saying of Jesus in the NT NOT found in the 4 Gospels — the most famous agraphon. Paul's final farewell: he knew he would NOT see these elders again.",
+    "language": "en",
+    "options": [
+      "'Love your enemies' (according to the text's framing)",
+      "'Blessed are the poor' (as described in the passage)",
+      "'Repent' (per the textual narrative) (in the story's sequence)",
+      "'Remembering the words of the Lord Jesus, how he himself said, IT IS MORE BLESSED to GIVE than to RECEIVE' (20:35)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Jesus' word outside Gospels",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 22,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 29,
+    "content": "According to Acts 22:25-29, when about to be flogged by the tribune, what right did Paul declare that MADE the tribune fear + release him immediately?",
+    "explanation": "Acts 22:25-29 — 'But when they had stretched him out for the whips, Paul said to the centurion who was standing by, Is it lawful for you to flog a man who is a Roman citizen and uncondemned?... So the tribune came and said to him, Tell me, are you a Roman citizen? And he said, Yes. The tribune answered, I bought this citizenship for a large sum. Paul said, But I am a citizen by birth'. Roman rights SAVED Paul MULTIPLE TIMES (16:37-39, 22:25-29, 25:11).",
+    "language": "en",
+    "options": [
+      "ROMAN CITIZENSHIP — Paul was BORN with this right (his father had it); the tribune had PURCHASED his at great cost — flogging an unconvicted Roman was illegal",
+      "Levitical priesthood (as described in the passage) (as the text indicates)",
+      "Pharisaic right (per the textual narrative) (in the story's sequence)",
+      "Missionary right (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Roman citizen",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 23,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Acts 23:11, the night after Paul's disruption at the Sanhedrin (23:6-10), what did the Lord say to him?",
+    "explanation": "Acts 23:11 — 'The following night the Lord stood by him and said, Take courage, for as you have testified to the facts about me in Jerusalem, so you must also testify also in Rome'. The Lord's promise GUARANTEED Paul WOULD reach Rome — through many trials (assassination plot 23:12-22, 2-year imprisonment 24:27, shipwreck 27, viper bite 28). Every reversal → an open road to the goal.",
+    "language": "en",
+    "options": [
+      "'Return to Jerusalem' (as described in the passage)",
+      "'Go to Egypt' (per the textual narrative) (in the story's sequence)",
+      "'TAKE COURAGE, for as you have TESTIFIED to the facts about me in JERUSALEM, so you must also TESTIFY in ROME'",
+      "'Return to Antioch' (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Lord promises Rome",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 25,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 12,
+    "content": "According to Acts 25:8-12, before Festus, what legal MOVE did Paul make to ESCAPE being sent back to Jerusalem (where he would be killed on the way)?",
+    "explanation": "Acts 25:10-12 — 'But Paul said, I am standing before Caesar's tribunal, where I ought to be tried. To the Jews I have done no wrong... I appeal to Caesar. Then Festus, when he had conferred with his council, answered, To Caesar you have appealed; to Caesar you shall go'. The right of APPEAL to the Emperor = only Roman citizens had it. This move → opened the road TO ROME (keeping the Lord's promise 23:11).",
+    "language": "en",
+    "options": [
+      "Asked to meet the high priest (as described in the passage) (as the text indicates)",
+      "Paul APPEALED to CAESAR — supreme right of ROMAN CITIZENSHIP. After consulting his council Festus declared: 'You have APPEALED to Caesar; to Caesar you shall GO'",
+      "Asked for trial at Antioch (according to the text's framing) (per the original content)",
+      "Asked to be freed (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Appeal to Caesar",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 27,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 26,
+    "content": "According to Acts 27:14-26, on the voyage to Rome, what wind STORM struck the ship? In the storm, what assurance did Paul receive from an angel?",
+    "explanation": "Acts 27:14, 23-24 — 'But soon a tempestuous wind, called the northeaster, struck down from the land. The ship was caught and could not face the wind... For this very night there stood before me an angel of the God to whom I belong and whom I worship, and he said, Do not be afraid, Paul; you must stand before Caesar. And behold, God has granted you all those who sail with you'. The 14-day storm → the ship wrecked at Malta, 276 lives spared (27:37-44).",
+    "language": "en",
+    "options": [
+      "Honah wind — no one died, ship intact (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "Boaz wind — only Paul lived (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Martha wind — had to abandon ship (according to the text's framing) (per the original content) (per the textual narrative)",
+      "EURAQUILO (Euroclydon) wind — battered them for 14 days; an angel stood by Paul: 'DO NOT be AFRAID, Paul; you MUST stand before Caesar, and behold, God has GRANTED you ALL those who sail with you' — no lives lost, but the ship would be destroyed"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Euraquilo wind",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 21,
+    "content": "TYPE 1 cross-ref Acts 2:17-21 — From which OLD TESTAMENT book did Peter quote in his Pentecost sermon? The exact passage?",
+    "explanation": "Acts 2:16-21 — Peter QUOTES VERBATIM from Joel 2:28-32. Joel (~835 BC) prophesied the 'DAY of YHWH' when the Spirit would BE POURED OUT ON ALL FLESH (regardless of gender, age, status). Peter declares 'the last days' have BEGUN at Pentecost. Note 4 groups (sons, daughters, young, old) → reversing Old Israel's social barriers. Peter also cites 2:32 'everyone who calls on the name of the Lord shall be saved' → basis for 'Repent + be baptized' (2:38).",
+    "language": "en",
+    "options": [
+      "Isa 44:3 — 'I will pour my Spirit on your offspring' (as described in the passage) (per the original content)",
+      "JOEL 2:28-32 — 'In the last days, God declares, I will POUR OUT my Spirit on ALL FLESH; your sons and daughters shall PROPHESY; your young men shall see VISIONS; your old men shall DREAM dreams'",
+      "Ezk 36:26 — 'I will put my Spirit within you' (per the textual narrative) (in the story's sequence)",
+      "Zec 12:10 — 'I will pour out a spirit of grace' (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Peter quotes Joel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 1 cross-ref Acts 4:11 — Before the Sanhedrin, Peter quoted which Psalm applied to Jesus = the STONE REJECTED by the BUILDERS?",
+    "explanation": "Acts 4:11 — 'This Jesus is the stone that was rejected by you, the builders, which has become the cornerstone'. Peter quotes PS 118:22 — the same verse Jesus cited about Himself in the vineyard parable (Mt 21:42, Mk 12:10, Lk 20:17). This is the MOST QUOTED OT verse in the NT about Christ (5 times): Mt 21:42, Mk 12:10, Lk 20:17, Acts 4:11, 1 Pet 2:7. Rejected stone = the crucifixion; cornerstone = resurrection + church built on Him.",
+    "language": "en",
+    "options": [
+      "Ps 22 — the suffering Messiah (per the textual narrative) (in the story's sequence)",
+      "Ps 110 — 'Sit at my right hand' (as described in the passage) (as the text indicates)",
+      "PSALM 118:22 — 'The stone that the builders REJECTED has become the CORNERSTONE' — Jesus himself quoted this about HIMSELF in Mt 21:42 (parable of the vineyard)",
+      "Ps 16 — not abandoned to Hades (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Cornerstone",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "verseStart": 48,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 50,
+    "content": "TYPE 1 cross-ref Acts 7:48-50 — Stephen ended his speech (about the Most High NOT dwelling in houses made by hands) by quoting which Isaiah passage?",
+    "explanation": "Acts 7:48-50 — 'Yet the Most High does not dwell in houses made by hands, as the prophet says: Heaven is my throne, and the earth is my footstool. What kind of house will you build for me, says the Lord, or what is the place of my rest? Did not my hand make all these things?' (Quoting Isa 66:1-2). Stephen's argument: the Temple is NOT the SOLE place of God's presence — God acted in MESOPOTAMIA (Abraham), EGYPT (Joseph), SINAI (Moses). The crucifixion + Pentecost confirm God isn't confined to the Jerusalem temple.",
+    "language": "en",
+    "options": [
+      "ISAIAH 66:1-2 — 'HEAVEN is my throne, EARTH is my footstool; what kind of house WILL you build for me? Did not my hand MAKE all these things?'",
+      "Isa 7:14 — 'A virgin shall conceive' (as described in the passage) (per the original content)",
+      "Isa 53:5 — 'He was wounded' (per the textual narrative) (in the story's sequence)",
+      "Isa 40:3 — 'Prepare the way' (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Stephen quotes Isaiah 66",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "verseStart": 33,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 1 cross-ref Acts 13:33 — Paul at Pisidian Antioch preaching JESUS' RESURRECTION quotes which Psalm with the words 'YOU are my SON, TODAY I have BEGOTTEN you'?",
+    "explanation": "Acts 13:32-33 — 'And we bring you the good news that what God promised to the fathers, this he has fulfilled to us their children by raising Jesus, as also it is written in the second Psalm: You are my Son, today I have begotten you'. Quotes PS 2:7 — originally an enthronement psalm for King David, but prophetic of the Messiah King. Paul interprets: 'begotten' = the day of Resurrection = Christ's CORONATION DAY. Heb 1:5, 5:5 quote the same verse.",
+    "language": "en",
+    "options": [
+      "Ps 16:10 — 'You will not let your Holy One see corruption' (as described in the passage)",
+      "Ps 22:1 — 'My God, why have you forsaken me' (according to the text's framing)",
+      "Ps 110:1 — 'Sit at my right hand' (per the textual narrative) (in the story's sequence)",
+      "PSALM 2:7 — 'You are my Son, today I have begotten you' — Paul applies to the RESURRECTION (= 'begotten' meaning royal enthronement)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Paul quotes Ps 2:7",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "verseStart": 47,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 1 cross-ref Acts 13:47 — Paul + Barnabas 'turning to the Gentiles' (13:46) cite which prophecy JUSTIFYING the Gentile mission?",
+    "explanation": "Acts 13:47 — 'For so the Lord has commanded us, saying, I have made you a light for the Gentiles, that you may bring salvation to the ends of the earth' (quoting Isa 49:6). Isa 49:6 originally describes the Servant's MISSION ROUTE — to the ENDS of the earth. Paul applies it to HIMSELF (= the Gentile apostle). Luke also cited this through Simeon (Lk 2:32 'a light for revelation to the Gentiles'). Same verse, two-level fulfillment: Christ (Simeon) + Christ's apostle (Paul).",
+    "language": "en",
+    "options": [
+      "Ezk 37 — dry bones come alive (per the textual narrative)",
+      "Hos 11:1 — 'Out of Egypt I called my son' (according to the text's framing)",
+      "ISAIAH 49:6 — 'I have MADE you a LIGHT for the GENTILES, that you may bring SALVATION to the ENDS of the EARTH'",
+      "Mal 1:11 — 'My name will be great among the nations' (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Light for Gentiles",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 17,
+    "content": "TYPE 1 cross-ref Acts 15:16-17 — At the Jerusalem Council, James cites which OT prophet to justify ACCEPTING Gentiles without circumcision?",
+    "explanation": "Acts 15:16-17 — 'After this I will return, and I will rebuild the tent of David that has fallen; I will rebuild its ruins, and I will restore it, that the remnant of mankind may seek the Lord, and all the Gentiles who are called by my name, says the Lord' (Quoting Amos 9:11-12 LXX). James explains: the Gentiles' conversion = FULFILLMENT of God's LONG-STANDING plan (already in Amos 8 centuries earlier). NOT a Plan B because Israel rejected — but the ORIGINAL Plan A.",
+    "language": "en",
+    "options": [
+      "Mic 4:1-2 — 'all nations shall flow to the mountain' (as described in the passage)",
+      "AMOS 9:11-12 — 'I will REBUILD David's tent which has FALLEN; THAT the REMNANT of MANKIND and ALL the GENTILES called by my NAME may seek the Lord'",
+      "Zec 8:23 — 'ten Gentiles grasp the Jew's garment' (according to the text's framing)",
+      "Zep 3:9 — 'I will give pure lips to the peoples' (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "James quotes Amos",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 19,
+    "content": "TYPE 2 distinguish — Saul's conversion is told THREE times in Acts (9:1-19, 22:1-21, 26:12-18). What's the KEY DIFFERENCE between accounts (esp. 26 vs 9, 22)?",
+    "explanation": "Comparison of 3 accounts: (1) Acts 9 — Luke narrates with Ananias receiving a vision + laying hands; the Gentile mission was given to ANANIAS in 9:15-16. (2) Acts 22 — Paul tells the Jerusalem crowd; Ananias still appears 22:12-16, but with 'God of our fathers' framing (= 'Jewish-friendly' tone). (3) Acts 26 — Paul before King Agrippa; OMITS Ananias entirely; Jesus DIRECTLY commissions in 26:16-18 'I have appeared to you to appoint you as a servant and witness... to OPEN their eyes... from DARKNESS to LIGHT' (echoing Isa 42:7, 16). Rhetorical strategy: before a king, claiming DIRECT divine commission (not via mediator). NOT a contradiction — abridged for context.",
+    "language": "en",
+    "options": [
+      "In Acts 22 Saul saw Jesus, in 9 and 26 he only heard a voice (according to the text's framing)",
+      "In Acts 26 only Paul fell, his companions didn't; 9 and 22 don't mention this (in the story's sequence)",
+      "Acts 9 has no Ananias, but 22 and 26 do (per the textual narrative) (as described in the passage)",
+      "In ACTS 26 (before King Agrippa), the Lord SPEAKS DIRECTLY to Paul about the Gentile mission 26:16-18 (NOT through Ananias); in 9 and 22, the mission was given to Ananias and passed on"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "3 different accounts",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 23,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "content": "TYPE 2 distinguish Acts 23:8 — Paul splits the Sanhedrin by shouting 'I am on trial for the HOPE of the RESURRECTION'. The Sadducees DENY THREE things — select ALL.",
+    "explanation": "Acts 23:8 — 'For the Sadducees say that there is NO RESURRECTION, nor ANGEL, nor SPIRIT, but the Pharisees acknowledge them all'. THREE things the Sadducees deny: (1) bodily resurrection, (2) angels, (3) spirits/souls. Sadducees accepted only the 5 books of Moses (Torah); Pharisees added Prophets + Writings + oral tradition. Paul deliberately DIVIDED the council: confessing the resurrection = the Pharisee position (the majority) sided with Paul. Clever tactic → avoided the death sentence.",
+    "language": "en",
+    "options": [
+      "The RESURRECTION (according to the text's framing)",
+      "The existence of ANGELS (as described in the passage)",
+      "The existence of SPIRITS (souls of the dead)",
+      "The Passover (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Sadducees deny 3",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 2 distinguish — Acts has THREE different people named ANANIAS. Which one had the BEST role — sent by the Lord as a good disciple to Saul?",
+    "explanation": "THREE different ANANIASES in Acts: (1) Acts 5:1-11 — Ananias husband of Sapphira; died for lying to the Spirit (negative). (2) Acts 9:10-19, 22:12 — Ananias of Damascus; 'a devout man according to the law, well spoken of by all the Jews'; SENT by the Lord to lay hands on Saul + baptize; key to Saul's conversion. (3) Acts 23:2, 24:1 — Ananias the high priest; ordered Paul struck; Paul called him 'whitewashed wall' (negative). Answer: Ananias of Damascus = the BEST role.",
+    "language": "en",
+    "options": [
+      "Ananias husband of Sapphira (5:1-11) — died for lying to the Spirit about land-sale money",
+      "Ananias the high priest (23:2) — ordered Paul struck on the mouth; Paul called him 'whitewashed wall'",
+      "ANANIAS of DAMASCUS (9:10-19) — a devout disciple who in a vision laid hands on Saul + baptized him; he called Saul 'brother'",
+      "All are the same person (per the textual narrative) (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "3 Ananiases",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "TYPE 2 distinguish — The NT has TWO different people named PHILIP. Who is the PHILIP who did miracles in SAMARIA and preached to the Ethiopian eunuch (Acts 8)?",
+    "explanation": "TWO different Philips: (1) PHILIP the APOSTLE — in the 12 (Mt 10:3, Jn 1:43-46, 6:5-7, 14:8-9, Acts 1:13). (2) PHILIP the EVANGELIST — one of the 7 deacons (Acts 6:5); preached in Samaria (8:5-13); evangelized the Ethiopian eunuch (8:26-40); had 4 virgin daughters who prophesied at Caesarea (21:8-9). Even in the early 2nd century, Church Father Papias confused the two. Acts 8 = Philip the EVANGELIST.",
+    "language": "en",
+    "options": [
+      "Philip = the apostle in the 12 (called from Bethsaida, Jn 1:43-46, asked Jesus 'show us the Father' Jn 14:8)",
+      "PHILIP = one of the SEVEN deacons chosen in Acts 6:1-6 — 'a man of good repute, full of the Spirit and of wisdom'; also called 'PHILIP the EVANGELIST' Acts 21:8 (with 4 prophesying daughters)",
+      "They are the same person (per the textual narrative) (as described in the passage) (as the text indicates)",
+      "Philip the brother of Herod (according to the text's framing) (in the story's sequence) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "2 Philips",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 24,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 2 distinguish — Paul was held at Caesarea 2 years (Acts 24-26) and stood before THREE different governors/king. What's the difference?",
+    "explanation": "Paul stood before THREE officials: (1) FELIX (Acts 24, governor of Judea 52-59 AD) — married Drusilla (Agrippa II's sister); 'alarmed' by Paul (24:25) but kept Paul hoping for a BRIBE (24:26); left office to Festus. (2) FESTUS (Acts 25, succeeded Felix 59-62 AD); ignorant of Christianity; found Paul not guilty but to please Jews → proposed transfer to Jerusalem; → Paul APPEALED to Caesar (25:11) → opened the road to Rome. (3) AGRIPPA II (Acts 26, last Herod-line puppet king) — incestuously paired with Bernice; heard Paul's defense; famous line 'in a short time you would persuade me to be a Christian' (26:28).",
+    "language": "en",
+    "options": [
+      "All 3 had the same case (according to the text's framing) (as the text indicates) (in the context of the passage) (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "All 3 condemned Paul (per the textual narrative) (as described in the passage) (cross-referenced with related passages) (as described in the passage) (per the original content) (per the textual narrative)",
+      "FELIX (24, governor of Judea 52-59 AD) — WIFE Drusilla (Jewish) — Felix trembled at 'righteousness, self-control, future judgment' but KEPT Paul hoping for a BRIBE; FESTUS (25, Felix's SUCCESSOR, 59-62) — didn't understand Christianity; Paul APPEALED to Caesar before Festus; AGRIPPA II (26, puppet king of Herod's line) — 'in a short time you would persuade me to be a Christian'",
+      "Felix is king, Festus a priest, Agrippa a general (in the story's sequence) (per the original content) (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "3 officials Felix-Festus-Agrippa",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 2 distinguish — Acts uses several DIFFERENT PHRASES about the Spirit: 'baptized with the Spirit', 'filled with the Spirit', 'received the Spirit', 'Spirit fell on'. What's the basic difference?",
+    "explanation": "Distinction of Spirit terms in Acts: (1) BAPTIZED with the Spirit (1:5, 11:16) — once-for-all event at conversion, incorporates the believer into Christ's body (= 1 Cor 12:13). (2) FILLED with the Spirit (2:4, 4:8, 4:31, 9:17, 13:9) — REPEATED experience, empowerment for specific service; Peter filled 2:4 → filled AGAIN 4:8 before the Sanhedrin → filled AGAIN 4:31. (3) Spirit FELL ON (10:44, 11:15) — symbolizing the RECEPTION of Gentiles into the church, with Pentecost-like signs (tongues). All 3 terms refer to the Spirit's PRESENCE — but with different NUANCES.",
+    "language": "en",
+    "options": [
+      "All are the same thing (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (according to the text's framing)",
+      "Spirit baptism is only for the 12 apostles (as described in the passage) (per the original content) (per the textual narrative) (in the story's sequence)",
+      "Filling = one-time only in life (according to the text's framing) (as the text indicates) (in the context of the passage) (as described in the passage)",
+      "BAPTISM with the Spirit = the INITIAL event at conversion (linked to salvation, once-for-all, Acts 1:5, 11:16); FILLING = REPEATED experience, empowerment for specific service (Peter filled 4:8 after being filled 2:4); FELL ON used for Gentiles (10:44, 11:15) like Pentecost"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "3 Spirit terms",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 3 deep understanding Acts 1:8 — This is NOT just a missions verse but the OUTLINE of WHOLE BOOK of Acts. How is the book divided into 3 geographic parts based on it?",
+    "explanation": "Acts 1:8 'You will receive power when the Holy Spirit has come upon you, and you will be my witnesses in JERUSALEM and in all JUDEA and SAMARIA, and to the END of the EARTH' = PROMISE + COMMAND + OUTLINE. Acts structure: (1) 1-7 in JERUSALEM; (2) 8-12 SPREAD to JUDEA + SAMARIA (driven by persecution 8:1, 11:19); (3) 13-28 to the ENDS of the EARTH (Paul's 3 journeys → Rome 28). The book ends OPEN at Rome because the mission is INCOMPLETE — the story continues to this day.",
+    "language": "en",
+    "options": [
+      "1-7 Peter, 8-15 Paul + Peter, 16-28 Paul (according to the text's framing) (per the original content) (per the textual narrative)",
+      "1-12 Jerusalem, 13-19 Samaria, 20-28 Rome (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "Part 1 (Acts 1-7) = JERUSALEM (Peter + 12 apostles); Part 2 (Acts 8-12) = JUDEA + SAMARIA (Philip in Samaria 8, Peter at Cornelius 10, Antioch church 11); Part 3 (Acts 13-28) = ENDS of the EARTH (Paul's 3 journeys + reaches ROME = imperial capital)",
+      "1-14 Peter, 15-28 Paul (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Acts structure per 1:8",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 11,
+    "content": "TYPE 3 deep understanding Acts 2:5-11 — The Pentecost tongues miracle is a REVERSAL of which OT event?",
+    "explanation": "Acts 2:5-11 — 'Now there were dwelling in Jerusalem Jews, devout men from every nation under heaven... each one was hearing them speak in his own language'. Genesis 11:1-9 (Tower of Babel) — 'the whole earth had one language... Let us confuse their language so that they may not understand'. Pentecost REVERSES: instead of confusing languages → the Spirit enables comprehension across languages. Luke lists 15+ regions (Parthians, Medes, Elamites, Mesopotamia, Judea, Cappadocia, Pontus, Asia, Phrygia, Pamphylia, Egypt, Libya, Rome, Crete, Arabia) → implying ALL nations. Babel scattered → Pentecost reunites in Christ. Forward to Rev 7:9 'every nation, tribe, people'.",
+    "language": "en",
+    "options": [
+      "The Exodus from Egypt (Ex 12) (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "The giving of the Law at Sinai (Ex 19) (as described in the passage) (per the original content)",
+      "The Flood (Gen 6-9) (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "BABEL (Gen 11:1-9) — at Babel God CONFUSED language CAUSING humanity to scatter; at Pentecost the Spirit enabled apostles to SPEAK every language UNDERSTOOD — REUNITING humanity in Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Pentecost reverses Babel",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "verseStart": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 29,
+    "content": "TYPE 3 deep understanding Acts 15:28-29 — The 4 prohibitions in the Council letter (idol food, blood, strangled animals, sexual immorality) reflect which OT law?",
+    "explanation": "Leviticus 17-18 — The unique OT section applying to BOTH Israelites AND foreigners ('gēr' = resident aliens dwelling among Israel). Four items: (1) eating idol food (Lev 17:8-9), (2) blood (Lev 17:10-14, 'life is in the blood'), (3) animals strangled without blood drained (Lev 17:13-15), (4) sexual immorality/incest (Lev 18:6-23). The Jerusalem Council did NOT require Jewish + Gentile believers to keep the WHOLE Mosaic Law; but asked GENTILES to keep '4 alien-resident items' so TABLE FELLOWSHIP could happen (in which both could be taught together). Application: freedom in Christ + mutual deference in community.",
+    "language": "en",
+    "options": [
+      "The 10 Commandments (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (as described in the passage) (per the original content)",
+      "The ALIEN RESIDENT (gēr) laws of LEVITICUS 17-18 — laws for foreigners DWELLING AMONG Israel: avoid blood (Lev 17:10-14), naturally dead animals (Lev 17:13-15), sexual immorality + incest (Lev 18). The council applied: Gentile believers = 'resident aliens' in the Jewish church → keep alien-resident laws so FELLOWSHIP could happen",
+      "The Sabbath law in Ex 20 (according to the text's framing) (as the text indicates) (in the context of the passage) (in the story's sequence) (as the text indicates) (in the context of the passage)",
+      "The purity law of Numbers 19 (as described in the passage) (per the original content) (per the textual narrative) (according to the text's framing) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "4 = alien-resident law",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "TYPE 3 deep understanding — Acts has passages where Luke uses the pronoun 'WE' instead of 'they'. Where do these 'we sections' appear and what's their SIGNIFICANCE?",
+    "explanation": "The 'we sections' phenomenon in Acts — Luke shifts from 'they' to 'WE' at these passages: (1) Acts 16:10-17 — Troas → Philippi (Luke joins); (2) Acts 20:5-21:18 — Troas → Jerusalem (via Miletus, Caesarea); (3) Acts 27:1-28:16 — the prisoner journey to Rome. Traditional interpretation: Luke was WITH Paul in these stretches = direct 'eyewitness'. Col 4:14 + 2 Tim 4:11 + Phlm 24 confirm Luke was Paul's companion. This is the BASIS for Acts' HISTORICITY: not a late legend but the direct testimony of a co-worker.",
+    "language": "en",
+    "options": [
+      "'We sections' = 16:10-17 (Troas-Philippi), 20:5-21:18 (Troas-Jerusalem), 27:1-28:16 (to Rome) — Luke ACCOMPANIED Paul in these = EYEWITNESS testimony; the basis of Acts' historical reliability",
+      "'We sections' = only 27:1-28:16 (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "'We sections' is just Luke's writing style, no meaning (as described in the passage) (per the original content)",
+      "'We' refers only to the 12 apostles (according to the text's framing) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "We sections",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 44,
+    "content": "TYPE 3 deep understanding — Stephen's speech (Acts 7) emphasizes 4 figures at 4 DIFFERENT LOCATIONS. What DEEP THEOLOGICAL theme is hidden in this structure?",
+    "explanation": "Stephen's speech 7:2-50 theological structure: (1) ABRAHAM called in MESOPOTAMIA (Chaldea) 7:2-3 — BEFORE entering the Promised Land; (2) JOSEPH exalted + God-with-him in EGYPT 7:9-10; (3) MOSES met God at the BURNING BUSH in MIDIAN 7:30, received Law at SINAI 7:38 — ALL outside the Land and Temple; (4) DAVID/SOLOMON built the temple — but the conclusion: 'the Most High does not dwell in houses made by hands' (Isa 66:1-2). Theme: the TEMPLE does NOT = God's exclusive presence. Christianity (Gospel to the ENDS of the EARTH) CONTINUES the tradition of God's presence EVERYWHERE, not abolishing the temple. The speech = a sophisticated answer to the accusation 'Stephen blasphemes the temple' (Acts 6:13-14).",
+    "language": "en",
+    "options": [
+      "God dwells only in the Jerusalem temple (as described in the passage) (as the text indicates) (in the context of the passage) (as described in the passage) (cross-referenced with related passages)",
+      "Israel is the best people (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (according to the text's framing) (per the original content)",
+      "God ACTS in many PLACES outside Jerusalem: Abraham was called in MESOPOTAMIA (7:2-3), Joseph exalted in EGYPT (7:9-16), Moses met God at the BURNING BUSH in MIDIAN's wilderness (7:30) → the TEMPLE does NOT monopolize God's presence; Stephen DEFENDS that Christianity does NOT reject the temple — but continues the tradition of God dwelling EVERYWHERE",
+      "Israel needs to build 4 more temples (according to the text's framing) (per the original content) (per the textual narrative) (in the story's sequence) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "God acts everywhere",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "TYPE 3 deep understanding — Paul has THREE missionary journeys. All 3 set out from which city, and what's the main theological theme of that structure?",
+    "explanation": "Acts 13-21 — Paul's three missionary journeys all set out from ANTIOCH in Syria (NOT Jerusalem). (1) JOURNEY 1 (13:1-14:28, ~46-48 AD) — Antioch → Cyprus → Pisidian Antioch → Lystra → return to ANTIOCH; with Barnabas + Mark. (2) JOURNEY 2 (15:36-18:22, ~49-52) — Antioch → Asia Minor → Macedonia → Athens → Corinth (18 months) → return; with Silas + Timothy + Luke. (3) JOURNEY 3 (18:23-21:14, ~53-57) — Antioch → Ephesus (3 years) → Macedonia → Greece → Miletus → Jerusalem. Then: PRISONER → Caesarea → ROME. Theological theme: the GOSPEL SHIFTS from the OT center (Jerusalem) to the NT GENTILE center (Antioch) → on to ROME (imperial capital).",
+    "language": "en",
+    "options": [
+      "ANTIOCH in Syria (Acts 13:1, 15:35-41, 18:22-23) — NOT Jerusalem; theme: the GOSPEL spreads from the Jerusalem TEMPLE (representing the Old Covenant) to ANTIOCH (representing the new GENTILE church); EACH journey reaches further: 1 = Asia Minor, 2 = into EUROPE, 3 = consolidation + Jerusalem then ROME",
+      "Jerusalem (as described in the passage) (as the text indicates) (in the context of the passage) (according to the text's framing) (cross-referenced with related passages)",
+      "Tarsus (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (in the story's sequence) (as the text indicates)",
+      "Damascus (according to the text's framing) (per the original content) (per the textual narrative) (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "3 journeys from Antioch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 4 verse precision Acts 1:8 — Acts' 'mission theology' verse. The exact 4 PLACES in correct ORDER?",
+    "explanation": "Acts 1:8 (ESV) — 'But you will receive power when the Holy Spirit has come upon you, and you will be my witnesses in Jerusalem and in all Judea and Samaria, and to the end of the earth'. The exact ORDER: (1) Jerusalem (city), (2) Judea (region), (3) Samaria (region of traditional enemies), (4) end of the earth (whole world). This = OUTLINE of Acts (1-7, 8-12, 13-28). 'Everywhere' = applies to the church in every age.",
+    "language": "en",
+    "options": [
+      "'In Jerusalem, Samaria, Asia, and Rome' (according to the text's framing)",
+      "'In Judea, Samaria, Egypt, and the ends of the earth'",
+      "'In Jerusalem, Asia, Europe, and Rome' (per the textual narrative)",
+      "'You will be my witnesses in JERUSALEM and in all JUDEA and SAMARIA, and to the END of the EARTH'"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Acts 1:8 full",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 4 verse precision Acts 16:31 — Answering the Philippian jailer's 'what must I do to be saved?', what was Paul + Silas' EXACT reply?",
+    "explanation": "Acts 16:30-31 — 'Then he brought them out and said, Sirs, what must I do to be saved? And they said, Believe in the Lord Jesus, and you will be saved, you and your household'. The shortest GOSPEL FORMULA: FAITH in the Lord Jesus = ENOUGH. NO works conditions attached. 'Your household' = the promise EXTENDS to the family (same night: the jailer's family believed → baptized 16:33). The most-quoted verse for simple Gospel evangelism.",
+    "language": "en",
+    "options": [
+      "'Keep the Ten Commandments' (per the textual narrative)",
+      "'Be baptized and attend church' (according to the text's framing)",
+      "'BELIEVE in the LORD JESUS, and YOU will be SAVED, you and YOUR HOUSEHOLD'",
+      "'Sell your possessions and give alms'"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Acts 16:31 salvation",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "verseStart": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 31,
+    "content": "TYPE 4 verse precision Acts 17:30-31 — At the Areopagus, Paul declares the JUDGMENT. The EXACT verse?",
+    "explanation": "Acts 17:30-31 — 'The times of ignorance God overlooked, but now he commands all people everywhere to repent, because he has fixed a day on which he will judge the world in righteousness by a man whom he has appointed; and of this he has given assurance to all by raising him from the dead'. The Areopagus sermon CONCLUSION with THREE points: (1) repent because it's 'everywhere', (2) the judgment day is FIXED (= certain), (3) the proof = the RESURRECTION (the reason to trust Christ = Judge + Savior).",
+    "language": "en",
+    "options": [
+      "'God will judge by fire' (according to the text's framing) (as the text indicates) (in the context of the passage) (according to the text's framing)",
+      "'The times of ignorance God OVERLOOKED, but now he COMMANDS all PEOPLE everywhere to REPENT, because he has FIXED a DAY on which he will JUDGE THE WORLD in righteousness BY a MAN whom he has APPOINTED; and of this he has given ASSURANCE to all by RAISING HIM from the DEAD'",
+      "'Believe and you will be saved' (as described in the passage) (per the original content) (per the textual narrative) (in the story's sequence)",
+      "'God is everywhere' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Judgment + resurrection",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 20,
+    "verseStart": 24,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "TYPE 4 verse precision Acts 20:24 — In his farewell to the Ephesian elders, Paul declares his life 'philosophy'. The EXACT verse?",
+    "explanation": "Acts 20:24 — 'But I do not account my life of any value nor as precious to myself, if only I may finish my course and the ministry that I received from the Lord Jesus, to testify to the gospel of the grace of God'. The famous verse on Paul's 'life ethic' — life is NOT the goal; FINISHING the course + ministry = the goal. Phil 1:21 'to live is Christ, to die is gain' parallels. A discipleship lesson: PRIORITIZE the theological mission over self-preservation.",
+    "language": "en",
+    "options": [
+      "'But I do NOT account my LIFE of any VALUE nor as PRECIOUS to myself, if only I may FINISH my COURSE and the MINISTRY that I RECEIVED from the Lord Jesus, to TESTIFY to the gospel of the GRACE of God'",
+      "'I love life but am ready to die' (according to the text's framing) (per the original content) (per the textual narrative)",
+      "'To live is Christ, to die is gain' (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "'I have run well' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Acts 20:24 race",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 26,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "TYPE 4 verse precision Acts 26:18 — Before King Agrippa, Paul recounts the very words JESUS used to COMMISSION him. The exact verse?",
+    "explanation": "Acts 26:18 — 'To open their eyes, so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are sanctified by faith in me'. SIX mission objectives to the Gentiles: (1) open eyes, (2) darkness → light, (3) Satan → God, (4) forgiveness of sins, (5) place among the sanctified, (6) by FAITH. Echoes Isa 42:7, 16 'Servant' language — Paul applies it to himself = the APOSTLE continuing Christ's mission.",
+    "language": "en",
+    "options": [
+      "'Go and baptize all nations' (as described in the passage) (per the original content) (per the textual narrative)",
+      "'Love everyone' (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "'To OPEN their EYES, so that they may TURN from DARKNESS to LIGHT and from the power of SATAN to GOD, that they may receive FORGIVENESS of SINS and a PLACE among those who are SANCTIFIED by FAITH in me'",
+      "'Keep the Law' (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Paul's commission",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Acts",
+    "chapter": 28,
+    "verseStart": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "TYPE 4 verse precision Acts 28:28 — At Rome after many Jews refused, Paul makes a key FINAL declaration. The exact verse?",
+    "explanation": "Acts 28:28 — 'Therefore let it be known to you that this salvation of God has been sent to the Gentiles; they will listen'. The NEAR-FINAL verse of Acts. Just before, Paul had cited Isa 6:9-10 (28:26-27) — 'they will see and not perceive' — judgment on the unbelieving Jews. After v.28: 'Paul lived there 2 whole years at his own expense... proclaiming the kingdom of God WITH ALL BOLDNESS and WITHOUT HINDRANCE' (28:30-31). The OPEN ending: the Gospel has reached all peoples — the book ends but the MISSION CONTINUES.",
+    "language": "en",
+    "options": [
+      "'I will return to the Jewish people' (as described in the passage)",
+      "'God will forgive them' (per the textual narrative) (in the story's sequence)",
+      "'The Gospel is only for Gentiles' (according to the text's framing)",
+      "'Therefore let it be known to you that this SALVATION of GOD has been sent to the GENTILES; THEY will LISTEN'"
+    ],
+    "tags": [
+      "New Testament",
+      "Acts",
+      "History",
+      "Acts 28:28 saved Gentiles",
+      "Advanced"
+    ]
   }
 ]
