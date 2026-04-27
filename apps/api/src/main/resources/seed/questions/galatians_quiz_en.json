@@ -538,5 +538,785 @@
       "Epistle",
       "Advanced"
     ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Galatians 1:10, whom is Paul seeking to please?",
+    "explanation": "Galatians 1:10 — 'For am I now seeking the approval of man, or of God? Or am I trying to please man? If I were still trying to please man, I would not be a servant of Christ.' Paul was accused of 'preaching an easy gospel'. Counter: if he feared men, he wouldn't have condemned the Judaizers.",
+    "language": "en",
+    "options": [
+      "Other apostles (according to the text's framing)",
+      "The Jews (per the textual narrative)",
+      "If still trying to please MEN he would not be a servant of Christ — now seeks to please God",
+      "Wife and children (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Please God not man",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 5,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Galatians 5:13, believers were called to FREEDOM — but do not use freedom for what?",
+    "explanation": "Galatians 5:13 — 'For you were called to freedom, brothers. Only do not use your freedom as an opportunity for the flesh, but through love serve one another.' Freedom in Christ is NOT freedom to sin — it's freedom to SERVE. Love = the spiritual practice of freedom.",
+    "language": "en",
+    "options": [
+      "Not for circumcision (as described in the passage)",
+      "Not for keeping law (according to the text's framing)",
+      "Not for debate (per the textual narrative)",
+      "Not as opportunity for the FLESH — but through LOVE serve one another"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Freedom to serve",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 6,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Galatians 6:2, what must believers do regarding each other's burdens?",
+    "explanation": "Galatians 6:2 — 'Bear one another's burdens, and so fulfill the law of Christ.' 'LAW OF CHRIST' = the law of love (5:14). Irony: Paul just attacked the LAW (of Moses), now establishes the 'law of Christ'. Difference: old law was external; Christ's law is in the heart (Hebrews 8:10).",
+    "language": "en",
+    "options": [
+      "BEAR ONE ANOTHER'S BURDENS — and so fulfill the LAW of Christ",
+      "Leave each other alone",
+      "Compete with each other",
+      "Judge each other (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Bear one another's burdens",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 6,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Galatians 6:10, to whom must believers do GOOD, especially to whom?",
+    "explanation": "Galatians 6:10 — 'So then, as we have opportunity, let us do good to everyone, and especially to those who are of the household of faith.' 'HOUSEHOLD OF FAITH' (oikeioi tēs pisteōs) = those of the spiritual family. WIDE scope (everyone) — PRIORITY for closest (brethren). NOT exclusive: love everyone, but more concretely those in Christ.",
+    "language": "en",
+    "options": [
+      "Only family — especially parents",
+      "Everyone — especially fellow believers (household of faith)",
+      "Only believers — especially pastors",
+      "Only the poor — especially widows"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Good to all especially family",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Galatians 1:13-14, what was Paul's life in Judaism before his call?",
+    "explanation": "Galatians 1:13-14 — 'For you have heard of my former life in Judaism, how I persecuted the church of God violently and tried to destroy it. And I was advancing in Judaism beyond many of my own age among my people, so extremely zealous was I for the traditions of my fathers.' Same story in Acts 9, 22, 26. Paul does not hide his past.",
+    "language": "en",
+    "options": [
+      "A humble student of Gamaliel — clean life (according to the text's framing)",
+      "A cloth merchant at Tarsus — not religious (as described in the passage)",
+      "PERSECUTED the Church VIOLENTLY trying to destroy it — ADVANCED beyond many peers — zealous for ANCESTRAL TRADITIONS",
+      "A prisoner imprisoned for crime (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Paul persecuted the Church",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Galatians 1:15-17, where did Paul NOT go first, and where did he go?",
+    "explanation": "Galatians 1:15-17 — 'But when he who had set me apart before I was born... was pleased to reveal his Son to me, in order that I might preach him among the Gentiles, I did not immediately consult with anyone; nor did I go up to Jerusalem to those who were apostles before me, but I went away into Arabia, and returned again to Damascus.' Argument: Paul's gospel was NOT learned from anyone = INDEPENDENT of the 12.",
+    "language": "en",
+    "options": [
+      "To meet the 12 apostles at Jerusalem immediately (as the text indicates)",
+      "To Samaria (per the textual narrative) (as described in the passage)",
+      "To Damascus (according to the text's framing) (in the story's sequence)",
+      "Did NOT consult flesh + blood, NOT go up to Jerusalem to meet the apostles first — went to ARABIA then returned to Damascus"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Went to Arabia first",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Galatians 1:23, what did the churches of Judea say of Paul when they heard he believed?",
+    "explanation": "Galatians 1:23 — 'They only were hearing it said, \"He who used to persecute us is now preaching the faith he once tried to destroy.\"' A deeply MOVING line — an enemy becomes a herald. 1:24 — they glorified God BECAUSE of Paul. Evidence of grace's miraculous change.",
+    "language": "en",
+    "options": [
+      "'He who used to PERSECUTE us is now preaching the FAITH he once tried to destroy'",
+      "'He always belonged to Christ' (according to the text's framing)",
+      "'He hasn't really changed' (per the textual narrative)",
+      "'He was nurtured by our church' (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Persecutor preaches faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Galatians 2:1-2, how many years later did Paul go to Jerusalem the second time, and with whom?",
+    "explanation": "Galatians 2:1-2 — 'Then after fourteen years I went up again to Jerusalem with Barnabas, taking Titus along with me. I went up because of a revelation and set before them the gospel that I proclaim among the Gentiles.' This is the Jerusalem Council (Acts 15) or before. Titus = LIVING evidence: Gentiles saved WITHOUT circumcision.",
+    "language": "en",
+    "options": [
+      "After 7 years — with Luke (per the textual narrative)",
+      "After 14 years — with Barnabas and Titus — by REVELATION, to set before them the gospel he preached",
+      "After 20 years — with Philip (according to the text's framing)",
+      "After 5 years — with Timothy (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "14 years + Barnabas + Titus",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Galatians 2:9, what did the 3 'PILLARS' of the Jerusalem church do with Paul and Barnabas?",
+    "explanation": "Galatians 2:9 — 'and when James and Cephas and John, who seemed to be pillars, perceived the grace that was given to me, they gave the right hand of fellowship to Barnabas and me, that we should go to the Gentiles and they to the circumcised.' 3 pillars = James (the Lord's brother), Cephas (Peter), John. OFFICIALLY endorsed Paul.",
+    "language": "en",
+    "options": [
+      "Sent them away (per the textual narrative) (in the story's sequence)",
+      "Forced them to be circumcised (as described in the passage)",
+      "Gave the RIGHT HAND OF FELLOWSHIP to Paul + Barnabas — recognized Paul going to GENTILES, they to the circumcised",
+      "Demanded their baptism (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Pillars give right hand",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Galatians 2:16, a person is NOT justified by what, but by what?",
+    "explanation": "Galatians 2:16 — 'we know that a person is not justified by works of the law but through faith in Jesus Christ, so we also have believed in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified.' THE FOUNDATIONAL VERSE of the Reformation — sola fide.",
+    "language": "en",
+    "options": [
+      "By law — by perfect law-keeping (as described in the passage)",
+      "By good works — by piety (per the textual narrative)",
+      "By lineage — by tradition (according to the text's framing)",
+      "NOT by works of the law — but by faith in Jesus Christ — for by works of the law NO flesh shall be justified"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Justified by faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Galatians 3:1, what does Paul call the Galatians?",
+    "explanation": "Galatians 3:1 — 'O foolish Galatians! Who has bewitched you? It was before your eyes that Jesus Christ was publicly portrayed as crucified.' 'FOOLISH' (anoetoi) = unthinking. 'BEWITCHED' (ebaskanen) = enchanted by sorcery. Paul does NOT shy from sharp rebuke. Opens chapter 3 = the theological argument.",
+    "language": "en",
+    "options": [
+      "'O FOOLISH Galatians! Who has BEWITCHED you? Before your eyes Jesus Christ was publicly portrayed as crucified!'",
+      "'My beloved brothers' (per the textual narrative)",
+      "'Holy ones at Galatia' (as described in the passage)",
+      "'Children of Abraham' (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Foolish Galatians bewitched",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Galatians 3:2-3, Paul asks Galatians — how did you RECEIVE the Spirit, and now seek PERFECTION how?",
+    "explanation": "Galatians 3:2-3 — 'Let me ask you only this: Did you receive the Spirit by works of the law or by hearing with faith? Are you so foolish? Having begun by the Spirit, are you now being perfected by the flesh?' Argument: IF you began by the Spirit — do NOT return to the flesh.",
+    "language": "en",
+    "options": [
+      "By works — now seek perfection by faith",
+      "Received Spirit by HEARING WITH FAITH — but now foolish, seeking perfection by FLESH (works)",
+      "By circumcision — now perfection by circumcision",
+      "By baptism — now perfection by baptism"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Received Spirit by hearing faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Galatians 3:8, to whom did Scripture preach the GOSPEL BEFORE? What promise?",
+    "explanation": "Galatians 3:8 — 'And the Scripture, foreseeing that God would justify the Gentiles by faith, preached the gospel beforehand to Abraham, saying, \"In you shall all the nations be blessed.\"' Quoting Gen 12:3. Paul reverses: the GOSPEL is NOT new — it existed since Abraham. The Law came LATER 430 years (3:17). Faith BEFORE law.",
+    "language": "en",
+    "options": [
+      "To Moses — 'You will free Israel'",
+      "To David — 'An eternal king will sit on the throne'",
+      "To Abraham — 'In you all the NATIONS will be blessed' (Gen 12:3)",
+      "To Adam — 'Your seed will crush the serpent's head'"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Gospel preached to Abraham",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Galatians 3:14, what is the purpose of Christ redeeming us from the curse of the law?",
+    "explanation": "Galatians 3:14 — 'so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might receive the promised Spirit through faith.' Two goals: (1) ABRAHAM'S BLESSING reaches Gentiles; (2) the SPIRIT received by FAITH. Christ = the channel for both.",
+    "language": "en",
+    "options": [
+      "So believers can keep the law (according to the text's framing)",
+      "So Israel returns to power (per the textual narrative)",
+      "So Gentiles convert to Judaism (as described in the passage)",
+      "So that the BLESSING of ABRAHAM might come on the Gentiles in Christ — that we might RECEIVE the PROMISED Spirit by faith"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Abraham's blessing + Spirit",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Galatians 3:26, what are believers in Christ Jesus?",
+    "explanation": "Galatians 3:26 — 'for in Christ Jesus you are all sons of God, through faith.' 'SON' (huios) = inheriting status (vs 'teknon' = child). In ancient religion, Gentiles had no right to Abraham's line — now ANYONE who believes = a full HEIR.",
+    "language": "en",
+    "options": [
+      "SONS OF GOD by faith",
+      "Servants",
+      "Strangers",
+      "Disciples"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Sons by faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Galatians 3:27, what have those baptized into Christ done?",
+    "explanation": "Galatians 3:27 — 'For as many of you as were baptized into Christ have put on Christ.' 'PUT ON' (enedysasthe) = from 'wear clothes'. In Roman culture, a son at maturity 'put on the white toga' (toga virilis) replacing childhood garb. Baptism = MARKS the new inheriting status in Christ.",
+    "language": "en",
+    "options": [
+      "Become angels",
+      "PUT ON Christ",
+      "Joined Abraham",
+      "Been glorified immediately"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Put on Christ",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 29,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Galatians 3:29, those belonging to Christ are also what?",
+    "explanation": "Galatians 3:29 — 'And if you are Christ's, then you are Abraham's offspring, heirs according to promise.' Closed argument: belong to Christ → Abraham's seed → HEIRS to the promise. NO need to pass through Judaism (circumcision, law) to enter the line — only Christ.",
+    "language": "en",
+    "options": [
+      "Christ's servants (as described in the passage)",
+      "Jews (per the textual narrative)",
+      "ABRAHAM'S OFFSPRING, heirs according to promise",
+      "Soldiers (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Abraham's offspring through Christ",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Galatians 4:1-3, Paul likens an HEIR while a child to whom?",
+    "explanation": "Galatians 4:1-3 — 'I mean that the heir, as long as he is a child, is no different from a slave, though he is the owner of everything, but he is under guardians and managers until the date set by his father. In the same way we also, when we were children, were enslaved to the elementary principles of the world.' 'ELEMENTARY PRINCIPLES' (stoicheia) = basic principles of the world (law + pagan religion).",
+    "language": "en",
+    "options": [
+      "A young king already reigning (as described in the passage)",
+      "Fully free person (according to the text's framing)",
+      "Heavenly angel (per the textual narrative) (in the story's sequence)",
+      "No different from a SLAVE though owner of all — under guardians + managers until the father's appointed time"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Heir as child like slave",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 4,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Galatians 4:9, after knowing God (or being KNOWN by God), how can believers turn back to what?",
+    "explanation": "Galatians 4:9-10 — 'But now that you have come to know God, or rather to be known by God, how can you turn back again to the weak and worthless elementary principles of the world, whose slaves you want to be once more? You observe days and months and seasons and years!' 'OBSERVING DAYS' = OT rituals (Sabbath, Passover, Sabbath year) imposed back on Gentiles. Paul sees this as RETURNING to slavery.",
+    "language": "en",
+    "options": [
+      "Back to old culture — acceptable (according to the text's framing)",
+      "Back to WEAK + WORTHLESS ELEMENTARY PRINCIPLES — wanting to be enslaved again — observing days and months",
+      "Back to Mosaic law — commendable (as described in the passage)",
+      "Back to old church — normal (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Back to weak principles",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 5,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Galatians 5:14, the whole law is fulfilled in ONE word — what?",
+    "explanation": "Galatians 5:14 — 'For the whole law is fulfilled in one word: \"You shall love your neighbor as yourself.\"' Quoting Lev 19:18. The same verse Jesus called the SECOND great commandment (Mt 22:39). Paul does not reject the law as PRINCIPLE — only as a means of SALVATION. Love = the law's FULFILLMENT.",
+    "language": "en",
+    "options": [
+      "'Keep the Sabbath' (as described in the passage)",
+      "'Do no harm' (according to the text's framing)",
+      "'LOVE YOUR NEIGHBOR as yourself'",
+      "'Fear God' (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Love neighbor fulfills law",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Galatians 1:18-19, after 3 years Paul went up to Jerusalem the first time and met whom for 15 days?",
+    "explanation": "Galatians 1:18-19 — 'Then after three years I went up to Jerusalem to visit Cephas and remained with him fifteen days. But I saw none of the other apostles except James the Lord's brother.' Argument: only 15 days + only 2 men = NOT enough for Paul to 'learn' the gospel from them. He received it DIRECTLY from Christ.",
+    "language": "en",
+    "options": [
+      "Met Pilate + Herod (per the textual narrative)",
+      "Met 12 apostles + 70 disciples (as described in the passage)",
+      "Met Luke + Timothy (according to the text's framing)",
+      "Met CEPHAS (Peter) 15 DAYS — saw no apostle else, only JAMES the Lord's brother"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "15 days with Cephas",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Galatians 2:3-5, despite 'false brothers' pressing, who was NOT compelled to be circumcised at Jerusalem?",
+    "explanation": "Galatians 2:3-5 — 'But even Titus, who was with me, was not forced to be circumcised, though he was a Greek. Yet because of false brothers... we did not yield in submission even for a moment, so that the truth of the gospel might be preserved for you.' Titus = direct evidence: Gentiles accepted INTO the church WITHOUT circumcision. Compare: Paul CIRCUMCISED Timothy (Acts 16:3) — for missionary reasons, not salvation.",
+    "language": "en",
+    "options": [
+      "Titus — a Greek with Paul — not compelled; Paul resisted to keep gospel truth for Gentiles",
+      "Timothy — Paul circumcised him later (as described in the passage)",
+      "Mark — only because Jewish (per the textual narrative)",
+      "Luke — a Gentile representative (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Titus not compelled",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "verseStart": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Galatians 2:21, IF righteousness came through the law, what would happen?",
+    "explanation": "Galatians 2:21 — 'I do not nullify the grace of God, for if righteousness were through the law, then Christ died for no purpose.' Reductio ad absurdum: Christ DIED for righteousness → if LAW sufficed, Christ would NOT need to die → the cross is REDUNDANT. Core of the Reformation: 'sola gratia' protects the value of the cross.",
+    "language": "en",
+    "options": [
+      "Israel would be saved",
+      "Christ died IN VAIN",
+      "Abraham would not be needed",
+      "Gospel would have no reason"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Christ died for nothing",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Galatians 3:10 (citing Deut 27:26), those relying on works of the law are under what?",
+    "explanation": "Galatians 3:10 — 'For all who rely on works of the law are under a curse; for it is written, \"Cursed be everyone who does not abide by all things written in the Book of the Law, and do them.\"' Quoting Deut 27:26. 'ALL THINGS' (pasin) = TOTALITY, 100%. Because no one keeps it ALL, all who rely on LAW are CURSED. NO partial law-keeping.",
+    "language": "en",
+    "options": [
+      "Blessing (according to the text's framing) (as the text indicates)",
+      "Peace (per the textual narrative) (in the story's sequence)",
+      "A CURSE — for it is written: 'Cursed be everyone who does NOT abide by ALL THINGS written in the Book of the Law'",
+      "Righteousness (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Law-relier cursed",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Galatians 3:15-17, how many years before the Mosaic law was the Abrahamic covenant established? Can the law nullify the covenant?",
+    "explanation": "Galatians 3:17 — 'This is what I mean: the law, which came 430 years afterward, does not annul a covenant previously ratified by God, so as to make the promise void.' Argument: if covenant A came FIRST, contract B cannot VOID it. The law does NOT cancel the promise to Abraham. Abraham's offspring (= believing Gentiles) inherit through FAITH.",
+    "language": "en",
+    "options": [
+      "100 years — can be nullified (as described in the passage)",
+      "200 years — just replaced (according to the text's framing)",
+      "300 years — supplemental (per the textual narrative)",
+      "430 years before law — the law CANNOT nullify a covenant ratified by God"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "430 years; law cannot nullify",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "verseStart": 19,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Galatians 3:19, why then was the LAW given? Until when?",
+    "explanation": "Galatians 3:19 — 'Why then the law? It was added because of transgressions, until the offspring should come to whom the promise had been made, and it was put in place through angels by an intermediary.' 3 points: (1) ADDED, not original; (2) for TRANSGRESSIONS (to make sin clear); (3) temporary — until the offspring (Christ) came.",
+    "language": "en",
+    "options": [
+      "Added because of TRANSGRESSIONS — until the OFFSPRING (Christ) came (to whom the promise was made) — given through angels by an intermediary (Moses)",
+      "To save people (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "To teach angels (according to the text's framing) (per the original content)",
+      "To test Abraham (as described in the passage) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Law for transgressions",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 4,
+    "verseStart": 24,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Galatians 4:22-26, Paul uses an ALLEGORY about whom to illustrate two covenants?",
+    "explanation": "Galatians 4:24-26 — 'Now this may be interpreted allegorically: these women are two covenants. One is from Mount Sinai, bearing children for slavery; she is Hagar... But the Jerusalem above is free, and she is our mother.' An allegory. Hagar = LAW (Sinai + slavery); Sarah = PROMISE (free + heavenly). Application is SHOCKING: Israel under LAW = like Hagar (slave).",
+    "language": "en",
+    "options": [
+      "Abraham + Isaac (according to the text's framing) (per the original content)",
+      "David + Solomon (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "HAGAR + SARAH — Hagar (slave, child of flesh) = Sinai covenant, present Jerusalem; Sarah (free, child of promise) = Jerusalem above, our mother",
+      "Eve + Mary (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Hagar and Sarah allegory",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 5,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Galatians 5:2-4, what STRONG WARNING does Paul give those circumcised for justification?",
+    "explanation": "Galatians 5:2-4 — 'Look: I, Paul, say to you that if you accept circumcision, Christ will be of no advantage to you. I testify again to every man who accepts circumcision that he is obligated to keep the whole law. You are severed from Christ, you who would be justified by the law; you have fallen away from grace.' Circumcision + Christ are MUTUALLY EXCLUSIVE. Choose one.",
+    "language": "en",
+    "options": [
+      "You will be a true Jew (per the textual narrative) (in the story's sequence)",
+      "CHRIST AVAILS NOTHING — must keep the WHOLE law — you are SEVERED from Christ + FALLEN AWAY from grace",
+      "Will receive Abraham's blessing (as described in the passage)",
+      "Will enter the synagogue (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Circumcision: Christ avails nothing",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 6,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Galatians 6:15, what counts in Christ Jesus instead of circumcision or uncircumcision?",
+    "explanation": "Galatians 6:15 — 'For neither circumcision counts for anything, nor uncircumcision, but a new creation.' 'NEW CREATION' (kainē ktisis) = a NEW creation. 2 Cor 5:17 same phrase: 'if anyone is in Christ, he is a new creation.' NOT ritual — but BIRTH. The closing verse summarizes the book: Christ + faith → new creation, NOT Christ + law.",
+    "language": "en",
+    "options": [
+      "Mission ritual (as described in the passage)",
+      "Worship (per the textual narrative)",
+      "Good works (according to the text's framing)",
+      "A NEW CREATION — not circumcision, not uncircumcision"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "New creation",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 6,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Galatians 6:17, Paul asks no one trouble him from now on because he bears what on his body?",
+    "explanation": "Galatians 6:17 — 'From now on let no one cause me trouble, for I bear on my body the marks of Jesus.' 'MARKS' (stigmata) = BRANDED MARKS. In ancient culture, slaves were branded with the master's mark; Paul bears CHRIST'S MARKS = beatings, stoning (Acts 14:19), 39 lashes 5 times (2 Cor 11:24). Paul does NOT need circumcision — he has CHRIST'S marks.",
+    "language": "en",
+    "options": [
+      "Bears the MARKS (stigmata) of the Lord Jesus — like a slave bearing the master's brand",
+      "Bears battle wounds (per the textual narrative)",
+      "Bears circumcision marks (according to the text's framing)",
+      "Bears traces from Pharisaic life (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Galatians",
+      "Epistle",
+      "Marks of Christ",
+      "Advanced"
+    ]
   }
 ]

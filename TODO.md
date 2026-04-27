@@ -49,13 +49,13 @@
 - Topics: dự phần ân điển (1:7); rao Christ dù động cơ xấu (1:15-18); Christ tôn cao (1:20); tốt hơn ở với Christ (1:23); chiến đấu cùng Phao-lô (1:30); chịu khổ là ân điển (1:29); 4 nếu có hiệp một (2:1-2); làm trọn cứu rỗi (2:12); Chúa cảm động muốn + làm (2:13); rượu đổ trên tế lễ (2:17); Ti-mô-thê cùng tâm trí (2:19-22); Ép-ba-phô-đích (2:25-30); hãy vui mừng (3:1); coi chừng chó cắt bì giả (3:2); thật cắt bì (3:3); 7 vinh dự Pha-ri-si (3:5-6); coi như sự lỗ (3:7); biết Ngài + quyền năng + thống khổ (3:10); sống lại từ kẻ chết (3:11); chưa trọn vẹn cứ tiến (3:12); thù nghịch thập tự (3:18-19); đứng vững (4:1); nhu mì cho mọi người (4:5); Đức Chúa Trời bình an (4:9); vui lớn vì lòng nghĩ đâm chồi (4:10); Phi-líp gửi đồ cứu trợ (4:14-16); tế lễ thơm tho (4:18); công bình bởi đức tin (3:9); Ê-vô-đi + Sin-ty-cơ + sách sự sống (4:2-3); người nhà Sê-sa (4:22)
 - VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
-#### Task B2-3: Galatians +30 (20→50)
-- Status: [ ] TODO
-- Current: 20 (E11 M7 H2) → Target: 50 (E15 M23 H12)
-- Plan: +4 Easy + 16 Medium + 10 Hard
-- File(s): `galatians_quiz.json` + `galatians_quiz_en.json` + `scripts/append_galatians_v3b.py`
-- Strategy: Justification bởi đức tin (KHÔNG bởi việc làm Luật Pháp) — chủ đề chính; trái Thánh Linh 5:22-23; tự do trong Christ 5:1; "Christ sống trong tôi" 2:20; vụ Phi-e-rơ tại An-ti-ốt 2:11-14
-- Commit: `feat(seed): Galatians +30 V3 B2 quality expansion (20→50)`
+#### Task B2-3: Galatians +30 (20→50) [x] DONE 2026-04-27
+- 20→**50** (E15 M23 H12, ratio **30.0/46.0/24.0%** — gần khớp 30/45/25)
+- Pool +30: 4 Easy + 16 Medium + 10 Hard VI + 30 EN 1:1
+- Single idx: 0:7, 1:7, 2:8, 3:8 (well distributed)
+- 30 single + 0 multi
+- Topics: vui lòng Chúa hay người (1:10); Phao-lô bắt bớ Hội Thánh trước khi tin (1:13-14); A-ra-bi sau khi kêu gọi (1:15-17); 15 ngày với Sê-pha (1:18-19); kẻ bắt bớ rao đức tin (1:23); 14 năm + Ba-na-ba + Tít (2:1-2); 3 trụ cột Gia-cơ Phi-e-rơ Giăng bắt tay hữu giao tình (2:9); Tít không bị ép cắt bì (2:3-5); xưng công bình bởi đức tin KHÔNG bởi luật (2:16); Christ chết vô ích nếu công bình bởi luật (2:21); Ga-la-ti dại dột bị mê hoặc (3:1); nhận Thánh Linh bởi nghe đức tin (3:2-3); cậy luật bị rủa (3:10); Tin Lành rao trước cho Áp-ra-ham (3:8); phước Áp-ra-ham + Thánh Linh (3:14); 430 năm trước luật + luật KHÔNG bãi bỏ giao ước (3:15-17); luật vì cớ tội phạm tạm thời (3:19); con cái bởi đức tin (3:26); mặc lấy Christ qua báp-têm (3:27); dòng dõi Áp-ra-ham qua Christ (3:29); kẻ kế tự nhỏ như tôi mọi (4:1-3); trở lại lề thói hèn mạt (4:9-10); A-ga + Sa-ra alegoria (4:24-26); cắt bì → Christ vô ích (5:2-4); tự do để phục vụ (5:13); yêu láng giềng tóm luật (5:14); mang gánh nặng cho nhau = luật Christ (6:2); làm điều lành cho mọi người (6:10); tân tạo trong Christ (6:15); dấu vết Christ trên thân (6:17)
+- VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
 #### Task B2-4: James +30 (20→50)
 - Status: [ ] TODO
