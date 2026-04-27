@@ -1622,5 +1622,1629 @@
       "Phúc Âm",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 3,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 19,
+    "content": "Theo Mác 3:13-14, Chúa Jêsus chọn bao nhiêu người để 'ở cùng Ngài và sai đi giảng đạo'?",
+    "explanation": "Mác 3:14 — 'Ngài bèn lập mười hai người, gọi là sứ đồ, để ở cùng Ngài và sai đi giảng đạo'.",
+    "language": "vi",
+    "options": [
+      "Bảy người",
+      "Mười người",
+      "Mười hai người",
+      "Bảy mươi người"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Mười hai sứ đồ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 9,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 8,
+    "content": "Theo Mác 9:4, ai đã xuất hiện cùng Chúa Jêsus trên núi Hóa Hình?",
+    "explanation": "Mác 9:4 — 'Ê-li và Môi-se hiện ra với hai người đó (Phi-e-rơ, Gia-cơ, Giăng), nói chuyện cùng Đức Chúa Jêsus'.",
+    "language": "vi",
+    "options": [
+      "Áp-ra-ham và Đa-vít",
+      "A-rôn và Sa-mu-ên",
+      "Giăng Báp-tít và E-li",
+      "Ê-li và Môi-se"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Hóa Hình",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 10,
+    "content": "Theo Mác 11:1-7, khi vào Giê-ru-sa-lem khải hoàn, Chúa Jêsus cưỡi con vật gì?",
+    "explanation": "Mác 11:7 — 'Hai người dắt lừa con đến cho Đức Chúa Jêsus, lấy áo mình trải trên nó; thì Ngài cỡi'. Câu 11:2 chỉ rõ 'một con lừa con đang cột tại đó, chưa có ai cưỡi'.",
+    "language": "vi",
+    "options": [
+      "Một con ngựa trắng",
+      "Một con lừa con chưa ai cưỡi",
+      "Một con bò mộng",
+      "Một xe ngựa của vua"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Khải hoàn vào thành",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 22,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 25,
+    "content": "Theo Mác 14:22, khi lập Tiệc Thánh, Chúa Jêsus nói gì khi cầm bánh?",
+    "explanation": "Mác 14:22 — 'Khi đang ăn, Đức Chúa Jêsus lấy bánh, tạ ơn, đoạn bẻ ra trao cho các môn đồ, mà phán rằng: Hãy lấy, nầy là thân thể ta'.",
+    "language": "vi",
+    "options": [
+      "'Hãy lấy đi: nầy là thân thể ta'",
+      "'Bánh nầy đến từ Pha-ra-ôn Ai-cập'",
+      "'Đây là bánh không men của lễ Vượt Qua'",
+      "'Bánh là sự sống đời đời cho mọi người'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Tiệc Thánh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 15,
+    "content": "Theo Mác 15:6-15, ai được Phi-lát thả ra theo phong tục lễ Vượt Qua thay cho Chúa Jêsus?",
+    "explanation": "Mác 15:15 — 'Phi-lát muốn cho đẹp lòng dân, bèn tha tên Ba-ra-ba; và sai đánh đòn Đức Chúa Jêsus, đoạn giao Ngài cho chúng đặng đóng đinh trên cây thập tự'.",
+    "language": "vi",
+    "options": [
+      "Giu-đa Ích-ca-ri-ốt",
+      "Si-môn người Sy-ren",
+      "Ba-ra-ba",
+      "Phi-e-rơ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Ba-ra-ba",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 8,
+    "content": "Theo Mác 16:5-6, ai đang ngồi trong mộ trống vào sáng phục sinh, mặc áo dài trắng?",
+    "explanation": "Mác 16:5-6 — 'Vừa khi vào mộ, các bà thấy một người trẻ tuổi, mặc áo dài trắng, đương ngồi bên hữu, thì rất sợ hãi. Người trẻ tuổi đó nói rằng: Đừng sợ chi, các ngươi tìm Đức Chúa Jêsus Na-xa-rét, là Đấng đã chịu đóng đinh; Ngài sống lại rồi'.",
+    "language": "vi",
+    "options": [
+      "Chúa Jêsus",
+      "Phi-e-rơ và Giăng",
+      "Hai thầy tế lễ Lê-vi",
+      "Một thanh niên (thiên sứ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Mộ trống",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "Theo Mác 1:9-11, ai làm phép báp-têm cho Chúa Jêsus tại sông Giô-đanh?",
+    "explanation": "Mác 1:9 — 'Vả, trong những ngày đó, Đức Chúa Jêsus đến từ Na-xa-rét là thành xứ Ga-li-lê, và chịu Giăng làm phép báp-têm dưới sông Giô-đanh'.",
+    "language": "vi",
+    "options": [
+      "Phi-e-rơ tại Ga-li-lê",
+      "Phao-lô tại Đa-mách",
+      "Giăng Báp-tít tại sông Giô-đanh",
+      "Một thầy tế lễ tại đền thờ Giê-ru-sa-lem"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Báp-têm Chúa Jêsus",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 13,
+    "content": "Theo Mác 1:12-13, Chúa Jêsus đã ở trong sa mạc bao lâu để chịu cám dỗ?",
+    "explanation": "Mác 1:13 — 'Ngài ở nơi đồng vắng chịu quỉ Sa-tan cám dỗ bốn mươi ngày, ở chung với thú rừng, và có thiên sứ hầu việc Ngài'.",
+    "language": "vi",
+    "options": [
+      "Bốn mươi đêm liền không nghỉ",
+      "Bốn mươi ngày (xét trong văn cảnh)",
+      "Bảy ngày bảy đêm",
+      "Một tháng tròn theo lịch người Giu-đa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Cám dỗ trong sa mạc",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 20,
+    "content": "Theo Mác 1:16-20, hai cặp anh em đầu tiên Chúa Jêsus gọi đi theo Ngài là ai?",
+    "explanation": "Mác 1:16-20 — Si-môn (Phi-e-rơ) và em An-rê đang quăng lưới (1:16-18); Gia-cơ và Giăng con Xê-bê-đê đang vá lưới trong thuyền (1:19-20). Cả 4 đều là ngư phủ.",
+    "language": "vi",
+    "options": [
+      "Phi-e-rơ và Phao-lô; Gia-cơ và Giăng",
+      "Ma-thi-ơ và Ba-na-ba; Gia-cơ và Giu-đe",
+      "An-rê và Phi-líp; Bạt-tê-lê-mai và Tô-ma",
+      "Si-môn (Phi-e-rơ) và An-rê; Gia-cơ và Giăng (con Xê-bê-đê)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Bốn ngư phủ đầu tiên",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 12,
+    "content": "Theo Mác 2:1-12, bốn người mang một người bại liệt đến với Chúa Jêsus đã làm gì khi không thể vào nhà vì đông người?",
+    "explanation": "Mác 2:4 — 'Nhưng, vì đông người, không lại gần Ngài được, nên dở mái nhà ngay chỗ Ngài ngồi, rồi do lỗ đó dòng giường người bại xuống'.",
+    "language": "vi",
+    "options": [
+      "Họ DỠ MÁI NHÀ và thòng người bệnh xuống trước mặt Chúa Jêsus",
+      "Họ chờ đến tối khi đám đông đi rồi mới đem vào nhà",
+      "Họ kêu lớn tiếng cho đến khi đám đông giải tán đi nơi khác",
+      "Họ nhờ một người nhà gọi Chúa Jêsus ra cửa sổ phía sau"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Bốn người và mái nhà",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 17,
+    "content": "Theo Mác 2:13-17, Chúa Jêsus gọi Lê-vi (Ma-thi-ơ) khi ông đang làm gì? Người Pha-ri-si phản ứng thế nào?",
+    "explanation": "Mác 2:14-17 — 'Ngài đi ngang qua, thấy Lê-vi, con A-phê, đương ngồi tại sở thâu thuế. Ngài phán cùng người rằng: Hãy theo ta'. 2:16 — Pha-ri-si trách 'Người ăn cùng những kẻ thâu thuế và phường tội lỗi sao?' Chúa đáp 'không phải kẻ mạnh khoẻ cần thầy thuốc, mà là kẻ đau yếu' (2:17).",
+    "language": "vi",
+    "options": [
+      "Đang đánh cá tại biển Ga-li-lê / Họ tha bổng vì là ngư phủ",
+      "Đang dạy luật pháp cho học trò / Họ chấp nhận vì là người uy tín",
+      "Đang ngồi tại 'sở thâu thuế' / Họ trách Ngài 'ăn với người thâu thuế và kẻ tội lỗi'",
+      "Đang đi đến đền thờ dâng tế lễ / Họ vui mừng vì người tốt được Chúa gọi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Lê-vi sở thâu thuế",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 4,
+    "verseStart": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 41,
+    "content": "Theo Mác 4:35-41, khi cơn bão lớn nổi lên trên biển, Chúa Jêsus đang làm gì và phản ứng của môn đồ là gì?",
+    "explanation": "Mác 4:38 — 'Nhưng Ngài đương ở đằng sau lái, dựa gối mà ngủ. Môn đồ thức Ngài dậy mà thưa rằng: Thầy ôi, thầy không lo chúng ta chết sao?' Chúa đứng dậy quở gió, biển: 'Hãy êm đi, lặng đi!' (4:39).",
+    "language": "vi",
+    "options": [
+      "Đang đứng cầu nguyện trên mũi thuyền / Môn đồ vui mừng vì có Chúa",
+      "Đang NGỦ ở phía sau thuyền / Môn đồ HOẢNG SỢ và đánh thức Ngài kêu cứu",
+      "Đang chèo thuyền cùng môn đồ / Họ cùng nhau cầu nguyện",
+      "Đang đi trên mặt nước đến với họ / Họ tưởng là ma"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Chúa dẹp yên cơn bão",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 5,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 43,
+    "content": "Theo Mác 5:21-43, Giai-ru là người như thế nào, và đến gặp Chúa Jêsus với mục đích gì?",
+    "explanation": "Mác 5:22-23 — 'Bấy giờ, có một người trong những người cai nhà hội, tên là Giai-ru, đến, thấy Đức Chúa Jêsus, bèn gieo mình nơi chân Ngài; nài xin mà rằng: Con gái nhỏ tôi gần chết; xin Chúa đến đặt tay trên nó'.",
+    "language": "vi",
+    "options": [
+      "Quan trưởng La-mã / xin Chúa chữa cho đầy tớ ông sắp chết",
+      "Thầy thông giáo / hỏi điều răn lớn nhất là gì",
+      "MỘT TRONG CÁC TRƯỞNG NHÀ HỘI / xin Chúa chữa cho con gái nhỏ đang hấp hối",
+      "Một thầy tế lễ Lê-vi / xin Chúa giải thích luật Sa-bát"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Giai-ru xin chữa con gái",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 6,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "Theo Mác 6:7-9, khi sai 12 sứ đồ đi giảng đạo, Chúa Jêsus dặn họ KHÔNG đem theo gì?",
+    "explanation": "Mác 6:8-9 — 'Ngài truyền cho sứ đồ đi đường đừng đem chi theo hết, hoặc bánh, hoặc bao, hoặc tiền bạc trong dây lưng, chỉ một cây gậy mà thôi; nhưng phải mang dép, chớ mặc hai áo'.",
+    "language": "vi",
+    "options": [
+      "Bánh, áo choàng, đôi giày",
+      "Tiền vàng và bạc, sách luật",
+      "Vũ khí và lương thực dự trữ",
+      "BÁNH, BAO BÌ, TIỀN trong túi (chỉ được mang gậy + dép)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Sai 12 sứ đồ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 6,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 44,
+    "content": "Theo Mác 6:39-40, khi Chúa Jêsus cho 5,000 người ăn, Ngài bảo dân chúng ngồi xuống thế nào?",
+    "explanation": "Mác 6:39-40 — 'Ngài truyền cho môn đồ biểu chúng ngồi xuống hết thảy từng chòm trên cỏ xanh. Chúng ngồi xuống từng hàng, hoặc một trăm, hoặc năm chục'. Chi tiết 'cỏ xanh' chỉ có Mác — gợi ý mùa xuân (lễ Vượt Qua).",
+    "language": "vi",
+    "options": [
+      "Tất cả ngồi rải rác trên đồng cỏ tự do mỗi nhóm tự chọn chỗ",
+      "Tất cả ngồi quay mặt về Ngài thành một vòng tròn lớn",
+      "Họ ngồi 'từng đoàn' trên cỏ XANH, từng nhóm 100 và 50 người",
+      "Họ phải đứng cho đến khi ăn no rồi mới ngồi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "5000 ngồi cỏ xanh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 6,
+    "verseStart": 45,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 52,
+    "content": "Theo Mác 6:45-52, khi Chúa Jêsus đi bộ trên mặt biển đến với môn đồ vào canh tư đêm, phản ứng của họ là gì?",
+    "explanation": "Mác 6:49-50 — 'Môn đồ thấy Ngài đi bộ trên mặt biển, ngỡ là ma, kêu lên; vì ai nấy đều thấy Ngài và sợ hãi. Tức thì, Ngài nói chuyện cùng môn đồ và phán rằng: Hãy yên lòng, ta đây, đừng sợ chi'.",
+    "language": "vi",
+    "options": [
+      "Họ TƯỞNG là MA và kêu la sợ hãi",
+      "Họ vui mừng và mời Ngài lên thuyền ngay lập tức",
+      "Họ tin ngay đó là Đức Chúa Trời",
+      "Họ không thấy Ngài vì sương mù dày đặc"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Đi bộ trên biển",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 30,
+    "content": "Tại Sê-sa-rê Phi-líp (Mác 8:27-30), khi Chúa Jêsus hỏi 'còn các ngươi xưng ta là ai?', ai trả lời và nói gì?",
+    "explanation": "Mác 8:29 — 'Phi-e-rơ thưa rằng: Thầy là Đấng Christ'. Sau đó Chúa cấm họ đừng nói cùng ai về Ngài (8:30) — 'Messianic secret' đặc trưng Phúc âm Mác.",
+    "language": "vi",
+    "options": [
+      "Giăng đáp: 'Chúa là Đấng dạy dỗ chúng tôi'",
+      "Phi-e-rơ thưa: 'Thầy là ĐẤNG CHRIST'",
+      "Tô-ma thưa: 'Lạy Chúa của con, lạy Đức Chúa Trời của con!'",
+      "Tất cả 12 môn đồ đồng thanh: 'Thầy là Con Đức Chúa Trời'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Phi-e-rơ xưng Christ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 34,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 38,
+    "content": "Theo Mác 8:34, ai theo Chúa Jêsus phải làm 3 việc nào?",
+    "explanation": "Mác 8:34 — 'Đoạn, Ngài kêu dân chúng và môn đồ, mà phán rằng: Nếu ai muốn theo ta, phải liều mình, vác thập tự giá mình mà theo ta'.",
+    "language": "vi",
+    "options": [
+      "Phải dâng phần mười, kiêng ăn, học luật pháp",
+      "Phải bán hết tài sản, sống ẩn dật, không kết hôn",
+      "Phải làm phép báp-têm, nhận Thánh Linh, rao giảng Tin Lành",
+      "Phải TỰ BỎ MÌNH, VÁC THẬP TỰ GIÁ mình, và THEO Ngài"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Theo Chúa Jêsus",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 9,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 29,
+    "content": "Theo Mác 9:23-24, khi cha của đứa trẻ bị quỷ ám thưa 'Nếu Thầy có thể', Chúa Jêsus đáp gì? Cha kêu lên điều gì?",
+    "explanation": "Mác 9:23-24 — 'Đức Chúa Jêsus đáp rằng: Sao ngươi nói: Nếu thầy làm được? Kẻ nào tin thì mọi việc đều được cả. Tức thì cha đứa trẻ la lên rằng: Tôi tin; xin Chúa giúp đỡ trong sự không tin của tôi'.",
+    "language": "vi",
+    "options": [
+      "Chúa nói: 'Phải có 7 người làm chứng' / Cha gọi 6 người làm chứng nữa",
+      "Chúa nói: 'Phải dâng tế lễ trước' / Cha hứa sẽ dâng cừu",
+      "Chúa: 'Sao nói NẾU TA CÓ THỂ? Mọi sự đều được CHO KẺ TIN'; Cha: 'TÔI TIN; xin Chúa GIÚP đỡ sự không tin của tôi'",
+      "Chúa nói: 'Nhịn ăn 40 ngày' / Cha than: 'Tôi không thể'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Tôi tin xin giúp không tin",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 9,
+    "verseStart": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 37,
+    "content": "Theo Mác 9:33-37, khi môn đồ tranh cãi 'ai là lớn hơn hết', Chúa Jêsus dạy họ điều gì?",
+    "explanation": "Mác 9:35-37 — 'Đức Chúa Jêsus ngồi, gọi mười hai sứ đồ mà phán rằng: Nếu ai muốn làm đầu, thì phải làm rốt hết và làm tôi tớ mọi người. Đoạn, Ngài bắt một đứa trẻ để ở giữa môn đồ; rồi ẵm nó trong tay, mà phán rằng: Hễ ai vì danh ta tiếp một đứa trong những đứa trẻ nầy, tức là tiếp ta'.",
+    "language": "vi",
+    "options": [
+      "'Ai có nhiều quyền phép thì là lớn hơn hết'",
+      "'Nếu ai muốn LÀM ĐẦU, thì phải LÀM RỐT HẾT và làm TÔI TỚ mọi người' — và đặt MỘT CON TRẺ ở giữa làm ví dụ",
+      "'Hãy bỏ phiếu xem ai sẽ làm thủ lãnh trong 12'",
+      "'Ta sẽ cho người nào tin nhất là người lớn hơn hết'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Lớn hơn hết",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 16,
+    "content": "Theo Mác 10:14-15, khi môn đồ rầy la người ta đem trẻ con đến với Chúa Jêsus, Ngài đáp lại thế nào?",
+    "explanation": "Mác 10:14-15 — 'Hãy để con trẻ đến cùng ta, đừng cấm chúng nó; vì nước Đức Chúa Trời thuộc về những kẻ giống như con trẻ ấy. Quả thật, ta nói cùng các ngươi, ai chẳng nhận lấy nước Đức Chúa Trời như một đứa trẻ, thì chẳng được vào đó bao giờ'.",
+    "language": "vi",
+    "options": [
+      "'Hãy ĐỂ con trẻ ĐẾN cùng ta; vì NƯỚC ĐỨC CHÚA TRỜI THUỘC VỀ những kẻ giống NHƯ con trẻ'",
+      "'Đừng làm phiền Ta; trẻ con không hiểu giáo lý'",
+      "'Hãy chờ chúng nó lớn lên đã, rồi mới đem đến học đạo'",
+      "'Trẻ con phải ăn năn trước khi đến với ta được'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Trẻ con đến cùng Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 22,
+    "content": "Theo Mác 10:21-22, sau khi người trai trẻ giàu nói đã giữ các điều răn từ thuở nhỏ, Chúa Jêsus bảo ông làm gì? Phản ứng của ông là gì?",
+    "explanation": "Mác 10:21-22 — 'Đức Chúa Jêsus ngó người mà yêu, nên phán rằng: Ngươi còn thiếu một điều: hãy đi, bán hết gia tài mình, đem cho kẻ nghèo khổ, ngươi sẽ có của báu trên trời; rồi hãy đến mà theo ta. Song nét mặt người nầy rầu rĩ về lời đó, đi ra rất buồn bã; vì có nhiều của lắm'.",
+    "language": "vi",
+    "options": [
+      "Chúa: 'Hãy đến đền thờ dâng tế lễ' / Ông sấp mình thờ lạy",
+      "Chúa: 'Hãy đi rửa tội' / Ông vui mừng vâng lời (theo cách trình bày của text)",
+      "Chúa: '1 điều ngươi còn THIẾU: HÃY ĐI BÁN MỌI VẬT, đem cho người NGHÈO, rồi hãy theo ta' / Ông BUỒN BÃ đi mất vì có nhiều của",
+      "Chúa: 'Hãy lập gia đình' / Ông từ chối (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Trai trẻ giàu",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 46,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 52,
+    "content": "Theo Mác 10:46-52, người mù nào ngồi xin ăn ở Giê-ri-cô đã được Chúa Jêsus chữa lành?",
+    "explanation": "Mác 10:46 — 'Đến thành Giê-ri-cô; trong khi Đức Chúa Jêsus với các môn đồ và đoàn dân đông đi ra khỏi thành, thì có một người ăn mày tên là Ba-ti-mê, con trai của Ti-mê, đương ngồi bên đường'. Tên kép Ba-ti-mê = bar (con của) + Ti-mê.",
+    "language": "vi",
+    "options": [
+      "A-bra-ham con của Y-sác",
+      "Ba-ti-mê con của Ti-mê",
+      "Si-môn con của Giô-na",
+      "Lê-vi con của A-phê"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Ba-ti-mê người mù",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 11,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 19,
+    "content": "Theo Mác 11:17, khi đuổi người buôn bán khỏi đền thờ, Chúa Jêsus trích dẫn cụm từ tiên tri nào?",
+    "explanation": "Mác 11:17 — 'Rồi Ngài dạy họ rằng: há chẳng có lời chép: Nhà ta sẽ gọi là nhà cầu nguyện của muôn dân hay sao? Nhưng các ngươi đã làm thành cái hang trộm cướp'. Trích Ê-sai 56:7 + Giê-rê-mi 7:11.",
+    "language": "vi",
+    "options": [
+      "'Đền thờ là nhà của các tiên tri' (xét trong văn cảnh)",
+      "'Đền thờ thuộc về thầy tế lễ thượng phẩm'",
+      "'Đền thờ chỉ dành cho dân Y-sơ-ra-ên thôi'",
+      "'Nhà ta sẽ gọi là NHÀ CẦU NGUYỆN của muôn dân — các ngươi đã làm thành hang trộm cướp'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Hang trộm cướp",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 12,
+    "content": "Trong ngụ ngôn 'những người làm vườn nho' (Mác 12:1-12), khi chủ vườn cuối cùng sai con trai một mình đến, các tá điền làm gì?",
+    "explanation": "Mác 12:6-8 — 'Chủ vườn còn lại một con trai một, là con yêu dấu mà cũng sai đi cuối cùng... Nhưng những kẻ làm vườn nho đó nói với nhau rằng: Thằng nầy là con kế tự; hè! ta hãy giết nó, thì cơ nghiệp nó sẽ về chúng ta. Họ bắt con trai ấy giết đi, ném ra ngoài vườn nho'.",
+    "language": "vi",
+    "options": [
+      "Họ trả lại vườn nho cho chủ và xin tha tội",
+      "Họ tiếp đón con trai và dâng phần thuê cho chủ",
+      "Họ GIẾT con trai và quăng xác ra ngoài vườn",
+      "Họ trốn khỏi vườn và bỏ luôn không trở lại"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Ngụ ngôn vườn nho",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 12,
+    "verseStart": 41,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 44,
+    "content": "Theo Mác 12:41-44, khi Chúa Jêsus quan sát người ta dâng tiền vào kho đền thờ, Ngài khen ai và vì sao?",
+    "explanation": "Mác 12:42-44 — 'Có một mụ góa nghèo kia đến bỏ hai đồng tiền ăn một phần tư xu... Quả thật, ta nói cùng các ngươi, mụ góa nghèo nầy đã bỏ tiền vào rương nhiều hơn hết thảy những người đã bỏ vào. Vì mọi kẻ khác lấy của dư mình bỏ vào, còn mụ nầy nghèo cùng cực, đã bỏ hết của mình có, là hết của có để nuôi mình'.",
+    "language": "vi",
+    "options": [
+      "Một người Pha-ri-si dâng nhiều / vì là người chăm chỉ giữ luật",
+      "MỘT BÀ GÓA NGHÈO bỏ HAI ĐỒNG TIỀN nhỏ / vì bà 'BỎ HẾT của có' (sinh kế) trong khi người giàu chỉ bỏ phần dư",
+      "Một thầy tế lễ thượng phẩm / vì là gương mẫu cho dân",
+      "Một người trẻ giàu / vì dâng nhiều vàng bạc"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Hai đồng tiền của bà góa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 2,
+    "content": "Theo Mác 13:2, khi môn đồ chỉ những đá lớn của đền thờ Giê-ru-sa-lem, Chúa Jêsus tiên báo gì về ngôi đền?",
+    "explanation": "Mác 13:2 — 'Đức Chúa Jêsus đáp rằng: Ngươi thấy các nhà lớn nầy ư? Rồi ra sẽ không còn một hòn đá sót lại trên một hòn khác nữa; cả thảy đều đổ xuống'. Lời tiên tri ứng nghiệm năm 70 SCN khi La-mã phá Giê-ru-sa-lem.",
+    "language": "vi",
+    "options": [
+      "'Đền thờ sẽ tồn tại đời đời cho đến khi Đấng Mê-si-a đến'",
+      "'Đền thờ sẽ trở thành ngôi nhà cầu nguyện cho mọi dân tộc'",
+      "'Các ngươi sẽ thấy Đức Chúa Trời ngự trong đền nầy mãi mãi'",
+      "'Sẽ chẳng còn MỘT HÒN ĐÁ nào CHỒNG TRÊN HÒN khác mà KHÔNG bị đổ xuống'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Đền thờ sẽ bị phá",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 9,
+    "content": "Theo Mác 14:3-9, người phụ nữ ở Bê-tha-ni đập bình ngọc tuyết hoa và đổ dầu thơm trên đầu Chúa Jêsus. Ngài nói gì về việc đó?",
+    "explanation": "Mác 14:8-9 — 'Người đã làm điều mình có thể làm được, đã xức xác cho ta trước để chôn. Quả thật, ta nói cùng các ngươi, trong khắp cả thế gian, hễ nơi nào Tin Lành nầy được giảng ra, việc người đã làm cũng sẽ được nhắc lại để nhớ đến người'.",
+    "language": "vi",
+    "options": [
+      "'Việc nầy sẽ được kể lại trong khắp THẾ GIAN làm KỶ NIỆM cho NÀNG — NÀNG đã xức xác Ngài trước cho việc CHÔN'",
+      "Bà phải bị quở trách vì lãng phí dầu quý (xét trong văn cảnh)",
+      "Bà cần phải bán dầu để chia cho người nghèo (theo cách trình bày của text)",
+      "Bà nên giữ lại để dùng cho lễ Vượt Qua sắp đến"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Xức dầu tại Bê-tha-ni",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 32,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 42,
+    "content": "Theo Mác 14:32-42, tại vườn Ghết-sê-ma-nê, Chúa Jêsus đem theo 3 môn đồ nào và họ đã làm gì?",
+    "explanation": "Mác 14:33-37 — 'Ngài bèn đem Phi-e-rơ, Gia-cơ và Giăng đi... Đoạn, Ngài trở lại, thấy ba người ngủ; bèn phán cùng Phi-e-rơ rằng: Si-môn, ngủ ư! Ngươi không thức được một giờ sao?'",
+    "language": "vi",
+    "options": [
+      "Phi-líp, Ma-thi-ơ, Tô-ma / 3 người tỉnh thức cầu nguyện",
+      "PHI-E-RƠ, GIA-CƠ, GIĂNG / 3 người NGỦ — Chúa quở 'Si-môn, ngươi NGỦ ư? Không tỉnh thức 1 GIỜ?'",
+      "An-rê, Tô-ma, Bạt-tê-lê-mai / 3 người canh thức bên ngoài",
+      "Tất cả 12 môn đồ / cùng nhau cầu nguyện thâu đêm"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Ghết-sê-ma-nê",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 53,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 65,
+    "content": "Theo Mác 14:61-62, khi thầy tế lễ thượng phẩm hỏi 'Ngươi có phải là Đấng Christ, Con Đức Chúa Trời?', Chúa Jêsus đáp gì?",
+    "explanation": "Mác 14:61-62 — 'Thầy tế lễ thượng phẩm lại hỏi: Aáy chính ngươi là Đấng Christ, Con Đức Chúa Trời đáng ngợi khen phải không? Đức Chúa Jêsus phán rằng: Ta chính phải đó; các ngươi sẽ thấy Con người ngồi bên hữu quyền phép Đức Chúa Trời, và ngự giữa đám mây trên trời mà đến'.",
+    "language": "vi",
+    "options": [
+      "'Không, ta chỉ là một tiên tri' (xét trong văn cảnh)",
+      "'Sao ngươi hỏi điều đó? Ngươi đã biết'",
+      "'CHÍNH TA. Các ngươi sẽ thấy Con người ngồi BÊN HỮU Đấng QUYỀN PHÉP và đến trên MÂY của trời'",
+      "'Ta sẽ trả lời sau khi được Phi-lát thẩm vấn'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Trước Tòa Công luận",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 66,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 72,
+    "content": "Theo Mác 14:66-72, Phi-e-rơ chối Chúa ba lần. Khi nào ông nhớ lại lời Chúa và khóc?",
+    "explanation": "Mác 14:72 — 'Tức thì gà gáy lần thứ hai; Phi-e-rơ bèn nhớ lại lời Đức Chúa Jêsus đã phán rằng: Trước khi gà gáy hai lượt, ngươi sẽ chối ta ba lần. Người tưởng đến thì khóc'. Mác (vs các Phúc âm khác) ghi 'gà gáy 2 lần' chi tiết duy nhất.",
+    "language": "vi",
+    "options": [
+      "Khi nghe đám đông kêu 'Đóng đinh nó đi!'",
+      "Khi thấy Chúa Jêsus bị đánh (xét trong văn cảnh)",
+      "Khi sao mai mọc lên trên trời (theo cách trình bày của text)",
+      "Khi GÀ GÁY LẦN THỨ HAI — đúng như lời Chúa: 'Trước khi gà gáy 2 lần, ngươi sẽ chối ta 3 lần'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Phi-e-rơ chối Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 22,
+    "content": "Theo Mác 15:21, Si-môn người Sy-ren — kẻ vác thập tự cho Chúa Jêsus — được Mác mô tả thêm chi tiết nào (chỉ Mác có)?",
+    "explanation": "Mác 15:21 — 'Có một tên Si-môn kia, người Sy-ren, là cha A-léc-xan-đơ và Ru-phu, ở ngoài ruộng về, đi ngang qua đó; họ bắt phải vác cây thập tự'. Chỉ Mác đề cập tên 2 con — gợi ý Mác viết cho hội thánh La-mã (Rô-ma 16:13 mentions Rufus + mẹ).",
+    "language": "vi",
+    "options": [
+      "Là CHA của A-LẾCH-XAN-ĐƠ và RU-PHU",
+      "Là cháu của An-ne thầy tế lễ thượng phẩm",
+      "Là người Hi-lạp đầu tiên tin Chúa",
+      "Là môn đồ thân tín của Chúa Jêsus từ lâu"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Si-môn người Sy-ren",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "verseStart": 42,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 47,
+    "content": "Theo Mác 15:42-47, ai đã xin xác Chúa Jêsus từ Phi-lát và mai táng Ngài?",
+    "explanation": "Mác 15:42-43 — 'Đến chiều... có một người tên là Giô-sép, ở thành A-ri-ma-thê, là nghị viên tòa công luận có danh vọng, cũng trông đợi nước Đức Chúa Trời. Người bạo gan đến Phi-lát mà xin xác Đức Chúa Jêsus'.",
+    "language": "vi",
+    "options": [
+      "Phi-e-rơ và Giăng (xét trong văn cảnh)",
+      "Giô-sép người A-ri-ma-thê — một thành viên KÍNH NỂ của TÒA CÔNG LUẬN",
+      "Ni-cô-đem cùng các thầy thông giáo",
+      "Si-môn người Sy-ren cùng Cyrenian Lucius"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Giô-sép A-ri-ma-thê",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 2,
+    "content": "Theo Mác 16:1-2, ba người nữ nào đem thuốc thơm đến mộ Chúa vào sáng phục sinh?",
+    "explanation": "Mác 16:1 — 'Ngày Sa-bát qua rồi, Ma-ri Ma-đơ-len, Ma-ri mẹ Gia-cơ, cùng Sa-lô-mê mua thuốc thơm đặng đi xức xác Đức Chúa Jêsus'.",
+    "language": "vi",
+    "options": [
+      "Ma-ri Ma-đơ-len và mẹ Chúa Jêsus và bà nội Chúa Jêsus",
+      "Sa-lô-mê và Ma-thê và Ma-ri ở Bê-tha-ni",
+      "Ma-ri Ma-đơ-len, Ma-ri MẸ Gia-cơ và Sa-lô-mê",
+      "Vợ Phi-e-rơ và vợ Giăng và vợ Gia-cơ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Ba người nữ tại mộ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "Theo Mác 7:9-13, Chúa Jêsus quở Pha-ri-si về truyền thống 'Cô-ban' — họ làm trái điều răn nào?",
+    "explanation": "Mác 7:10-13 — 'Vì Môi-se đã nói: Hãy hiếu kính cha mẹ ngươi... Nhưng các ngươi nói rằng: Nếu ai nói với cha hoặc mẹ mình rằng: Mọi điều tôi sẽ giúp cha mẹ được, đã dâng cho Chúa rồi (CÔ-BAN, nghĩa là dâng cho Đức Chúa Trời) — thì các ngươi không cho người ấy được phép làm điều gì cho cha mẹ nữa. Vậy các ngươi lấy lời truyền khẩu mình mà bỏ lời Đức Chúa Trời'.",
+    "language": "vi",
+    "options": [
+      "Điều răn 'chớ giết người' qua hệ thống tế lễ",
+      "Điều răn 'chớ trộm cắp' qua việc đổi tiền trong đền thờ",
+      "Điều răn 'chớ phạm tà dâm' qua hôn nhân với dân ngoại",
+      "Điều răn THỨ NĂM 'HIẾU KÍNH CHA MẸ' — bằng cách nói 'CÔ-BAN' (tài sản dâng cho Chúa) để KHÔNG PHẢI giúp cha mẹ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Truyền thống Cô-ban",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 21,
+    "content": "Theo Mác 8:15, Chúa Jêsus cảnh báo môn đồ về 'men' của những ai?",
+    "explanation": "Mác 8:15 — 'Ngài răn các môn đồ rằng: Hãy giữ mình cẩn thận về men người Pha-ri-si, và men đãng Hê-rốt'. Ma-thi-ơ 16:6 nói men Pha-ri-si + Sa-đu-sê; Mác đặc trưng nói Hê-rốt vì context Hê-rốt giết Giăng Báp-tít (Mác 6).",
+    "language": "vi",
+    "options": [
+      "Của các thầy tế lễ Lê-vi và Đa-ni-ên",
+      "CỦA NGƯỜI PHA-RI-SI và CỦA HÊ-RỐT",
+      "Của người Sa-ma-ri và người La-mã",
+      "Của các tiên tri giả ở Giê-ru-sa-lem"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Men của Pha-ri-si và Hê-rốt",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 9,
+    "verseStart": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 41,
+    "content": "Theo Mác 9:38-41, khi Giăng nói có người KHÔNG theo nhóm 12 nhưng đuổi quỷ NHÂN DANH Chúa Jêsus, Chúa đáp gì?",
+    "explanation": "Mác 9:39-40 — 'Đức Chúa Jêsus phán rằng: Đừng ngăn cấm làm chi; vì chẳng ai cùng trong một lúc, vừa nhân danh ta làm phép lạ, vừa nói xấu ta được. Hễ ai chẳng nghịch cùng ta là thuộc về ta'.",
+    "language": "vi",
+    "options": [
+      "'Hãy ngăn cản người đó vì không có thẩm quyền chính thức'",
+      "'Cấm người đó tuyệt đối vì làm sai trái'",
+      "'ĐỪNG NGĂN CẢN; ai CHẲNG NGHỊCH cùng ta là VỀ PHE ta'",
+      "'Đem người đó đến gặp ta để xét xử kỹ'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Ai chẳng nghịch ta",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 11,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 25,
+    "content": "Theo Mác 11:22-25, sau khi cây vả khô héo theo lời rủa của Ngài, Chúa Jêsus dạy môn đồ điều gì về đức tin và cầu nguyện?",
+    "explanation": "Mác 11:22-25 — 3 chân lý: (1) đức tin nơi Chúa di dời được núi, (2) tin chắc khi cầu nguyện sẽ được, (3) tha thứ là điều kiện được Cha tha. Đây là kết hợp 'faith + forgiveness' đặc trưng dạy của Mác.",
+    "language": "vi",
+    "options": [
+      "'HÃY có ĐỨC TIN nơi Chúa; NẾU nói với núi nầy hãy NHẤC lên — KHÔNG NGHI NGỜ — sẽ được; cầu nguyện hãy THA, để Cha cũng tha cho ngươi'",
+      "'Hãy ăn năn 40 ngày trước khi cầu nguyện' (xét trong văn cảnh)",
+      "'Phải có 7 chứng cớ trước khi cầu nguyện' (theo cách trình bày của text)",
+      "'Cầu nguyện chỉ ở đền thờ Giê-ru-sa-lem mới được' (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Đức tin di núi",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 13,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 27,
+    "content": "Theo Mác 13:26-27, theo Chúa Jêsus, sự kiện gì sẽ xảy ra sau những đau khổ lớn?",
+    "explanation": "Mác 13:26-27 — 'Bấy giờ thiên hạ sẽ thấy Con người lấy đại quyền đại vinh ngự đến trên đám mây; Ngài sẽ sai các thiên sứ đặng nhóm những kẻ chịu chọn của Ngài ở từ bốn phương, từ đầu cùng đất cho đến đầu cùng trời'.",
+    "language": "vi",
+    "options": [
+      "Đền thờ Giê-ru-sa-lem sẽ được xây dựng lại huy hoàng hơn xưa",
+      "Đức Chúa Trời sẽ đến cá nhân và phán xét từng người",
+      "Y-sơ-ra-ên sẽ được phục hưng và đánh bại La-mã hoàn toàn",
+      "Người ta sẽ thấy CON NGƯỜI lấy đại quyền, đại vinh ngự đến trên đám MÂY; Ngài sai THIÊN SỨ NHÓM kẻ chọn từ 4 PHƯƠNG"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Con người ngự đến",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 16,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 7,
+    "content": "Theo Mác 16:7, lời thiên sứ căn dặn các bà phải nói riêng với ai về sự sống lại của Chúa?",
+    "explanation": "Mác 16:7 — 'Nhưng hãy đi nói cho các môn đồ Ngài và cho Phi-e-rơ rằng: Ngài đi đến xứ Ga-li-lê trước các ngươi; các ngươi sẽ thấy Ngài tại đó, như Ngài đã phán cùng các ngươi vậy'. Việc đặc biệt nhắc Phi-e-rơ — sau cú chối Chúa — là dấu hiệu phục hồi.",
+    "language": "vi",
+    "options": [
+      "Riêng với Phi-lát thượng quan La-mã trước hết",
+      "'HÃY ĐI nói cho các môn đồ Ngài và CHO PHI-E-RƠ rằng: Ngài đi đến xứ Ga-li-lê trước các ngươi'",
+      "Riêng với mẹ Chúa là Ma-ri trước nhất (xét trong văn cảnh)",
+      "Riêng với 70 môn đồ trước, sau mới đến 12 sứ đồ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Hãy đi báo cho Phi-e-rơ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 12,
+    "content": "Đặc trưng văn phong Phúc âm Mác là từ Hi-lạp 'euthys' (TỨC THÌ / NGAY LẬP TỨC), xuất hiện ~40 lần. Câu nào sau đây thể hiện rõ chủ đề 'TỨC THÌ' này?",
+    "explanation": "Mác 1:10,12 (RVV11 Hi-lạp 'euthys') — chủ đề 'tức thì' đậm nhất ở đầu Mác. Chỉ trong 1:10-12, hai câu liên tiếp dùng 'tức thì'/'liền'. Mác dùng từ này để truyền cảm giác KHẨN TRƯƠNG và năng động của chức vụ Chúa Jêsus.",
+    "language": "vi",
+    "options": [
+      "1:1 — 'Khởi đầu Tin Lành của Đức Chúa Jêsus Christ' (theo trình tự câu chuyện)",
+      "10:46 — 'Đến thành Giê-ri-cô' (xét trong văn cảnh) (như được mô tả trong sách)",
+      "1:10-12 — 'Vừa khi chịu phép báp-têm, Ngài liền lên khỏi nước; tức thì các từng trời mở ra... Liền sau đó Thánh Linh DỤC Ngài đến đồng vắng'",
+      "16:8 — 'Run sợ và bỡ ngỡ, các bà chạy ra' (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Chủ đề 'tức thì'",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 31,
+    "content": "Trong Phúc âm Mác có BA lần Chúa Jêsus tiên báo cuộc khổ nạn. Phân đoạn nào CÓ trong ba lần đó? (chọn tất cả đúng)",
+    "explanation": "Ba lời tiên báo Khổ Nạn trong Mác: 8:31, 9:31, 10:33-34. Mỗi lần Chúa nhấn mạnh: bị nộp + bị giết + ngày thứ ba sống lại. Mỗi lời tiên báo theo sau một sự kiện môn đồ HIỂU SAI (đường thập tự vs vinh hiển): 8:32 Phi-e-rơ trách, 9:32 môn đồ tranh ai lớn nhất, 10:35 Gia-cơ + Giăng xin chỗ vinh.",
+    "language": "vi",
+    "options": [
+      "Mác 8:31 — sau Phi-e-rơ xưng nhận tại Sê-sa-rê Phi-líp",
+      "Mác 9:31 — khi đang đi qua Ga-li-lê sau Hóa Hình",
+      "Mác 10:33-34 — trên đường lên Giê-ru-sa-lem",
+      "Mác 13:26 — sự tái lâm của Con người (không phải tiên báo Khổ Nạn)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Ba lời tiên báo",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 19,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 21,
+    "content": "Cả hai phép lạ nuôi 5,000 (Mác 6:30-44) và 4,000 (Mác 8:1-9) đều có trong Phúc âm Mác. Theo Mác 8:19-20, sau hai phép lạ, BA con số được Chúa nhắc lại để TEST môn đồ là gì?",
+    "explanation": "Mác 8:19-20 — 'Khi ta bẻ năm cái bánh cho năm ngàn người, các ngươi thâu được mấy giỏ đầy bánh vụn? — Mười hai. Còn khi ta bẻ bảy cái bánh cho bốn ngàn người, các ngươi thâu được mấy giỏ đầy bánh vụn? — Bảy giỏ'. Mác dùng 2 từ Hi-lạp khác nhau cho 'giỏ': kophinos (12) và spuridas (7) — giỏ lớn hơn.",
+    "language": "vi",
+    "options": [
+      "5/2/12 và 4/3/8 (theo cách trình bày của text)",
+      "5,000 với 12 GIỎ dư + 4,000 với 7 GIỎ dư",
+      "5/2/7 và 4/2/8 (xét trong văn cảnh)",
+      "Số bánh ban đầu / số cá / số người ăn no"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Hai phép lạ — số giỏ dư",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 28,
+    "content": "Tại Tiệc Ly (Mác 14:27-28), Chúa Jêsus tiên báo môn đồ sẽ vấp phạm trong đêm đó, RỒI hứa điều gì?",
+    "explanation": "Mác 14:28 — 'Nhưng khi ta sống lại rồi, ta sẽ đi đến xứ Ga-li-lê trước các ngươi'. Lời hứa này được thiên sứ lặp lại tại 16:7 — 'Ngài đi đến xứ Ga-li-lê trước các ngươi' — chứng minh Mác cố ý kết cấu inclusio Tiệc Ly + mộ trống.",
+    "language": "vi",
+    "options": [
+      "'Sau khi sống lại, ta sẽ ở lại Giê-ru-sa-lem chờ các ngươi'",
+      "'Ta sẽ đi A-ra-bi 3 năm trước khi gặp các ngươi' (theo cách trình bày của text)",
+      "'Ta sẽ về cùng Cha và sai Đức Thánh Linh đến' (xét trong văn cảnh)",
+      "'Sau khi ta sống lại, ta sẽ ĐI ĐẾN XỨ GA-LI-LÊ TRƯỚC các ngươi' — ứng nghiệm tại 16:7 thiên sứ căn dặn cùng địa danh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Hứa hẹn Ga-li-lê",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 16,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "Phúc âm Mác kết thúc đột ngột ở 16:8 — 'Run sợ và bỡ ngỡ, các bà chạy ra; chẳng nói cùng ai hết, vì sợ hãi'. Tại sao kết thúc này trong văn học gốc Hi-lạp được coi là KỲ LẠ?",
+    "explanation": "Mác 16:8 trong tiếng Hi-lạp gốc kết bằng từ 'ephobounto gar' — 'họ sợ vì'. 'Gar' (γάρ) là giới từ luôn xuất hiện ở GIỮA câu, không bao giờ ở cuối — nên kết thúc này được coi rất bất thường về mặt ngữ pháp. Đây là lý do nhiều bản chép tay sau thêm 'long ending' 16:9-20. Kết thúc bất thường này được nhiều học giả coi là intentional — Mác để câu chuyện 'mở' để độc giả TIẾP TỤC hành trình.",
+    "language": "vi",
+    "options": [
+      "Vì kết thúc 'chẳng nói cùng ai' mâu thuẫn với 16:7 nói 'hãy đi nói' (theo trình tự câu chuyện)",
+      "Vì câu cuối kết bằng GIỚI TỪ Hi-lạp 'gar' (vì) — RẤT HIẾM khi sách kết thúc bằng giới từ này; giống như tiếng Việt một câu kết thúc bằng từ 'vì' rồi để dở dang",
+      "Vì có 2 phụ nữ thay vì 3 như đầu chương 16 (xét trong văn cảnh) (như được mô tả trong sách)",
+      "Vì không có lời 'A-men' hay 'kết thúc' truyền thống (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Kết thúc đột ngột Mác 16:8",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 12,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 27,
+    "content": "Mác 12 chứa 4 cuộc chất vấn của các nhóm tôn giáo. Phân biệt nhóm SA-ĐU-SÊ — nhóm này tin/không tin gì? Họ chất vấn Chúa câu hỏi gì?",
+    "explanation": "Mác 12:18 — 'Có mấy người Sa-đu-sê, là những kẻ vẫn nói RẰNG KHÔNG CÓ SỰ SỐNG LẠI, đến gần Ngài'. Câu hỏi của họ ở 12:23 'Lúc sống lại, người ấy sẽ là vợ ai?' — câu hỏi giả thiết để phá lý luận sống lại. Chúa đáp 12:24-27: dẫn Xuất 3:6 'Ta là Đức Chúa Trời của Áp-ra-ham, Y-sác, Gia-cốp' — Chúa của kẻ SỐNG.",
+    "language": "vi",
+    "options": [
+      "Tin sự sống lại / Hỏi: 'Điều răn lớn nhất là gì?'",
+      "KHÔNG TIN SỰ SỐNG LẠI (12:18) / Hỏi: 'Bà 7 đời chồng — khi sống lại bà sẽ là vợ ai?'",
+      "Tin tà thần / Hỏi: 'Có nên nộp thuế cho Sê-sa không?'",
+      "Tin Mê-si-a chính trị / Hỏi: 'Ngươi có quyền phép gì để làm các việc đó?'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Sa-đu-sê — không tin sống lại",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 46,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 52,
+    "content": "Câu chuyện chữa lành người mù tại Giê-ri-cô được kể trong cả 3 Phúc âm Synoptic, nhưng Mác có CHI TIẾT độc đáo nào về danh tính người mù?",
+    "explanation": "Mác 10:46 — đặc trưng: chỉ Mác cho biết tên kép Ba-ti-mê = bar (con của) + Ti-mê. Ma-thi-ơ 20:30 nói 'hai người mù' không tên; Lu-ca 18:35 nói 'một người mù' không tên. Việc Mác đặt tên gợi ý người này được biết đến trong cộng đồng môn đồ tiên khởi — gần với người chứng kiến.",
+    "language": "vi",
+    "options": [
+      "Mác cho biết tên cha + nghề nghiệp (xét trong văn cảnh)",
+      "Mác cho biết người mù theo Chúa 12 năm",
+      "Mác cho biết người mù là môn đồ thân tín thuộc nhóm 70",
+      "Mác CHO BIẾT TÊN người mù — 'Ba-ti-mê' — và TÊN CHA — 'Ti-mê' (Mác 10:46)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Ba-ti-mê — chỉ Mác có tên",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 5,
+    "verseStart": 41,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      3
+    ],
+    "verseEnd": 41,
+    "content": "Phúc âm Mác đặc trưng PHIÊN ÂM nhiều lời A-ra-mít gốc của Chúa Jêsus rồi GIẢI THÍCH sang tiếng Hi-lạp. Cụm A-ra-mít nào CÓ trong Mác? (chọn tất cả đúng)",
+    "explanation": "Mác (như Phúc âm gần với người La-mã không biết A-ra-mít) đặc trưng phiên âm + giải thích lời gốc của Chúa: 5:41 (Talitha cumi), 7:34 (Ephphatha), 15:34 (Eloi Eloi). 'Maranatha' chỉ có ở 1 Cô 16:22 — không phải lời Chúa Jêsus.",
+    "language": "vi",
+    "options": [
+      "'TA-LI-THA CU-MI' (Mác 5:41) — nghĩa 'Hỡi con gái nhỏ, ta truyền cho ngươi: hãy chờ dậy'",
+      "'ÉP-PHA-THA' (Mác 7:34) — nghĩa 'Hãy mở ra' (xét trong văn cảnh)",
+      "'MA-RA-NA-THA' (chỉ có trong 1 Cô-rinh-tô 16:22, không phải Mác)",
+      "'ÊN-LI, ÊN-LI, LA-MA SA-BÁC-TA-NI?' (Mác 15:34) — nghĩa 'Đức Chúa Trời tôi ơi, sao Ngài lìa bỏ tôi?'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Lời A-ra-mít trong Mác",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 30,
+    "content": "'Bí mật Mê-si-a' (Messianic Secret) là chủ đề khoa học gọi tên đặc trưng độc đáo của Phúc âm Mác. Câu nào sau đây minh họa rõ nhất chủ đề này?",
+    "explanation": "Mác 8:30 (sau Phi-e-rơ xưng 'Thầy là Đấng Christ') — 'Đức Chúa Jêsus bèn cấm ngặt môn đồ chớ nói sự mình cùng ai hết'. Tương tự 1:34 (cấm tà ma nói tên Ngài), 1:43-45, 5:43, 7:36, 9:9 — 'Chớ thuật lại sự mình đã thấy cho ai hay cho đến khi Con người sống lại'. William Wrede (1901) đặt tên 'Messianic Secret' — Mác cấu trúc câu chuyện: chỉ sau thập tự + sống lại, danh tính Mê-si-a mới được công khai.",
+    "language": "vi",
+    "options": [
+      "Chúa khoe khoang phép lạ với đám đông để thu hút môn đồ",
+      "Chúa giảng đạo công khai cho mọi người mà không giấu danh tính",
+      "Sau Phi-e-rơ xưng nhận tại Sê-sa-rê Phi-líp (8:29-30), Chúa CẤM môn đồ NÓI VỚI AI về Ngài",
+      "Chúa luôn tự xưng mình là Mê-si-a tại tất cả các thành"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Bí mật Mê-si-a",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 26,
+    "content": "Phúc âm Mác chứa MỘT phép lạ ĐẶC BIỆT — Chúa Jêsus chữa lành người mù tại Bết-sai-đa qua HAI giai đoạn. Phép lạ nào?",
+    "explanation": "Mác 8:22-26 — phép lạ chỉ có ở Mác. 'Đức Chúa Jêsus nhổ nước miếng trên mắt người, đặt tay trên người, hỏi rằng: Ngươi thấy chi không? Người mù ngó lên, đáp rằng: Tôi thấy người ta đi như cây. Đức Chúa Jêsus lại đặt tay trên mắt người; người nhìn xem, được sáng mắt, và thấy rõ ràng mọi vật'. Chữa 2 giai đoạn này NGƯỢC với pattern Mác (thường tức thì) — gợi ý song song với SỰ HIỂU CỦA MÔN ĐỒ trước/sau Phi-e-rơ xưng nhận (8:27-30 ngay sau).",
+    "language": "vi",
+    "options": [
+      "Người mù bẩm sinh tại Si-lô-ê (chỉ có trong Giăng) (như được mô tả trong sách)",
+      "MÁC 8:22-26 — Chúa NHỔ NƯỚC BỌT vào mắt người mù; lần 1 anh thấy 'người ta như cây đi'; lần 2 (đặt tay lần 2) anh thấy MỌI VẬT RÕ RÀNG",
+      "Người mù tại Giê-ri-cô (Ba-ti-mê) (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Người liệt 38 năm tại Bê-tết-đa (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Chữa 2 giai đoạn",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 2,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 12,
+    "content": "Trong Phúc âm Mác, danh hiệu Chúa Jêsus tự xưng nhiều nhất là 'Con NGƯỜI' (Son of Man). Theo Mác 2:10, ý nghĩa cốt lõi của danh hiệu này là gì?",
+    "explanation": "Mác 2:10 (chữa người bại): 'Vả, để cho các ngươi BIẾT Con người ở thế gian có QUYỀN THA TỘI, thì Ngài phán cùng kẻ bại rằng: Ta biểu ngươi, hãy đứng dậy'. Danh hiệu 'Con Người' (Hi-lạp huios tou anthropou) gốc từ Đa-ni-ên 7:13 — 'Con Người đến trên đám mây trên trời' — chỉ về Đấng có thẩm quyền tận thế. Chúa Jêsus dùng danh này để vừa giấu (cho người chưa hiểu) vừa tỏ (cho ai có tai để nghe) thẩm quyền thần linh.",
+    "language": "vi",
+    "options": [
+      "Khẳng định THẨM QUYỀN dưới đất tha tội — Mác 2:10 — 'Con người ở thế gian có quyền tha tội'",
+      "Khẳng định Chúa chỉ là một con người bình thường",
+      "Khẳng định Chúa thuộc dòng dõi A-đam tự nhiên (theo cách trình bày của text)",
+      "Khẳng định Chúa được dân chúng yêu mến (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Con Người có quyền tha tội",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 20,
+    "content": "Trong Mác 4:13-20, Chúa Jêsus giải thích ngụ ngôn người gieo. Câu nào trong giải thích là ĐẶC BIỆT NHẤT vì gắn vào kinh nghiệm bắt bớ?",
+    "explanation": "Mác 4:16-17 — 'Đất đá... khi nghe đạo bèn vui mừng nhận lấy. Song trong lòng họ chẳng có rễ; họ chỉ tạm thời mà thôi. Vậy nên khi gặp khốn nạn hoặc bắt bớ vì cớ đạo, họ liền vấp phạm'. Cụm 'KHỐN NẠN hay BẮT BỚ vì cớ đạo' đặc biệt phù hợp với độc giả của Mác — tín hữu La-mã đối mặt với bắt bớ Nê-rô (~64-67 SCN). Mác Phúc âm (truyền thống là viết bởi Mác môn đồ Phi-e-rơ tại La-mã) khuyến khích sự bền đỗ trong gian truân.",
+    "language": "vi",
+    "options": [
+      "Hột giống bên đường — Sa-tan đến cướp (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Hột giống đất đá — không có rễ, héo dưới mặt trời (theo cách trình bày của text)",
+      "Hột giống chỗ gai — nỗi đời lo lắng và sự mê tham (như được mô tả trong sách)",
+      "TẤT CẢ 4 ĐIỀU KIỆN — đặc biệt 'đất đá' = 'KHỔ NẠN hay BẮT BỚ vì đạo' khiến vấp phạm — phản ánh hội thánh sơ kỳ La-mã (Mác viết cho)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Khổ nạn vì đạo",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 42,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 45,
+    "content": "Mác 10:45 chứa lời tóm tắt SỨ MẠNG của Chúa Jêsus, nổi tiếng là 'CÂU CHỦ ĐỀ' của Phúc âm Mác. Câu đó là gì?",
+    "explanation": "Mác 10:45 — 'Vì Con người đã đến không phải để người ta hầu việc mình, song để hầu việc người ta, và phó sự sống mình làm giá chuộc cho nhiều người'. Câu này trả lời câu hỏi 'tại sao Chúa Jêsus đến?' với 2 phần: (1) PHỤC VỤ thay vì được phục vụ, (2) PHÓ SỰ SỐNG làm GIÁ CHUỘC. Cụm 'GIÁ CHUỘC' (Hi-lạp lutron) gợi ý chuộc nô lệ — Chúa chuộc nhân loại khỏi nô lệ tội lỗi qua sự chết của Ngài. Đây là KEY VERSE của thuyết chuộc tội.",
+    "language": "vi",
+    "options": [
+      "'Chúng ta sẽ đến nơi Đức Cha sai chúng ta' (theo cách trình bày của text)",
+      "'Hãy gánh lấy ách của ta — vì ách ta dễ chịu' (như được mô tả trong sách)",
+      "'CON NGƯỜI đã đến KHÔNG PHẢI để được người ta phục vụ, mà LÀ để PHỤC VỤ và phó SỰ SỐNG mình làm GIÁ CHUỘC NHIỀU NGƯỜI'",
+      "'Ta là sự sống lại và sự sống' (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Câu chủ đề Mác",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 23,
+    "content": "Mác 7:14-23 — Chúa Jêsus dạy về 'điều gì làm ô uế người ta'. Theo bối cảnh + lời chú thích trong văn bản, lời dạy này CÓ Ý NGHĨA THẦN HỌC SÂU SẮC nào?",
+    "explanation": "Mác 7:18-19 — '...vì chẳng vào lòng người, song vào bụng, rồi đi ra nơi xí, [Aáy là Ngài tuyên bố mọi đồ ăn đều sạch]'. Cụm trong ngoặc vuông là CHÚ THÍCH của tác giả Mác — không phải lời Chúa nói trực tiếp — giải thích ý nghĩa thần học: Chúa BÃI BỎ luật ăn uống Lê-vi (Lev 11). Câu này LỚN LAO vì: (1) mở đường cho dân ngoại không cần Do-thái hóa, (2) chuyển trọng tâm 'sạch' từ NGOÀI vào TRONG (7:21-23 'điều ác từ trong lòng'). Phao-lô dùng nguyên tắc này trong Rô-ma 14:14, 1 Cô 8.",
+    "language": "vi",
+    "options": [
+      "Chúa khuyến khích ăn chay nhiều hơn để thanh sạch tâm linh (như được mô tả trong sách)",
+      "Chúa TUYÊN BỐ MỌI ĐỒ ĂN ĐỀU SẠCH (7:19 chú thích) — bãi bỏ luật ăn uống Cựu Ước, mở đường cho dân ngoại bang vào Hội thánh",
+      "Chúa dạy phải rửa tay 7 lần trước khi ăn (xét trong văn cảnh)",
+      "Chúa quy định mỗi tín hữu phải dâng phần mười thực phẩm (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Mọi đồ ăn đều sạch",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "verseStart": 37,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 39,
+    "content": "Mác 15:38 — 'Cái màn của đền thờ bị xé ra làm hai từ trên xuống dưới'. Tại sao chi tiết 'TỪ TRÊN XUỐNG DƯỚI' và 'TẠI THỜI ĐIỂM Chúa CHẾT' (15:37) là CỐT LÕI THẦN HỌC?",
+    "explanation": "Mác 15:38-39 — chuỗi: Chúa kêu lớn tiếng + tắt hơi (15:37) → MÀN xé từ trên (15:38) → thầy đội xưng (15:39). Hê 10:19-20 giải thích: 'chúng ta được dạn dĩ vào nơi rất thánh bởi huyết Đức Chúa Jêsus, qua màn — tức là qua xác Ngài'. Hành động xé từ trên xuống = chính Chúa làm, mở đường tiếp cận. Việc thầy đội ngoại Quốc xưng nhận ngay sau là sự ứng nghiệm: dân ngoại bang được vào nhờ thập tự.",
+    "language": "vi",
+    "options": [
+      "Chỉ là chi tiết kiến trúc, không có ý nghĩa thần học (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Cho thấy động đất tự nhiên xảy ra ngẫu nhiên (xét trong văn cảnh) (theo trình tự câu chuyện) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Cho thấy quân La-mã đã phá hủy đền thờ trước thời điểm Chúa chết (như được mô tả trong sách) (đối chiếu với các phân đoạn liên quan)",
+      "(1) 'TỪ TRÊN XUỐNG' = HÀNH ĐỘNG của ĐỨC CHÚA TRỜI (không phải con người); (2) MÀN ngăn Nơi Chí Thánh — dấu hiệu MỞ ĐƯỜNG VÀO Cha qua sự chết Chúa Jêsus; (3) thầy đội ngoại Quốc xưng nhận 'thật người này là Con Đức Chúa Trời' (15:39) ngay sau"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Màn đền thờ xé",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 1,
+    "content": "Câu mở đầu Phúc âm Mác (1:1) tuyên bố cấu trúc tổng thể của sách. Câu chính xác là gì?",
+    "explanation": "Mác 1:1 — 'Khởi đầu Tin Lành của Đức Chúa Jêsus Christ, là Con Đức Chúa Trời'. Đây là TIÊU ĐỀ — không phải câu thường — của cả sách. Cụm 'Tin Lành' (euangelion) là chìa khóa Mác. Cụm 'Con Đức Chúa Trời' đóng khung INCLUSIO với 15:39 (thầy đội tuyên bố). Lưu ý: bản chép tay sớm có 1 số bỏ 'Con Đức Chúa Trời' khỏi 1:1 — nhưng phần lớn bản chép có giữ.",
+    "language": "vi",
+    "options": [
+      "'Sau những điều này, có lời Chúa đến với Mác'",
+      "'Mác, môn đồ của Phi-e-rơ, gửi cho hội thánh La-mã'",
+      "'KHỞI ĐẦU TIN LÀNH (euangelion) của ĐỨC CHÚA JÊSUS CHRIST, là CON ĐỨC CHÚA TRỜI'",
+      "'Có nhiều người tay đã sắp đặt việc lập thuật'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Mở đầu Mác",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 11,
+    "content": "Theo Mác 1:11, tiếng từ trời phán khi Chúa Jêsus chịu báp-têm là gì? (Lưu ý: KHÁC chút với Ma-thi-ơ + Lu-ca)",
+    "explanation": "Mác 1:11 — 'NGƯƠI là Con yêu dấu của ta, đẹp lòng ta'. Lưu ý NGÔI 2 — Chúa nói TRỰC TIẾP với Chúa Jêsus. Ma-thi-ơ 3:17 dùng NGÔI 3 — 'Nầy là Con yêu dấu' (như Chúa nói cho người chứng kiến). Lu-ca 3:22 cũng ngôi 2 (giống Mác). Sự khác biệt nhỏ này phù hợp với mục đích Phúc âm: Mác/Lu-ca nhấn mạnh kinh nghiệm cá nhân của Chúa Jêsus, Ma-thi-ơ nhấn mạnh dấu hiệu công khai cho dân.",
+    "language": "vi",
+    "options": [
+      "'NGƯƠI là Con yêu dấu CỦA TA, đẹp lòng ta mọi đường' (NGÔI 2 — phán TRỰC TIẾP cho Chúa Jêsus)",
+      "'NÀY là Con yêu dấu của ta, đẹp lòng ta mọi đường' (ngôi 3 — như Ma-thi-ơ)",
+      "'Hôm nay ta đã sanh ngươi' (như Thi 2:7) (theo cách trình bày của text)",
+      "'Đây là Mê-si-a được hứa từ Áp-ra-ham' (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Tiếng tại báp-têm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 12,
+    "verseStart": 29,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 30,
+    "content": "Theo Mác 12:29-30 — Chúa Jêsus đáp về điều răn lớn nhất, KHÁC với Ma-thi-ơ 22:37 ở chi tiết nào?",
+    "explanation": "Mác 12:29-30 — 'Đức Chúa Jêsus đáp rằng: Nầy là điều đầu nhứt: Hỡi Y-sơ-ra-ên, hãy nghe, Chúa, Đức Chúa Trời chúng ta, là Chúa có một. Ngươi phải hết lòng, hết linh hồn, hết trí khôn, hết sức mà kính mến Chúa là Đức Chúa Trời ngươi'. Câu mở đầu Shema (Phục 6:4) chỉ Mác có. Ma-thi-ơ 22:37 và Lu-ca 10:27 không có cụm Shema — chỉ trích Phục 6:5. Mác giữ Shema vì độc giả Mác (La-mã) cần biết bối cảnh độc thần Do-thái.",
+    "language": "vi",
+    "options": [
+      "Mác bỏ 'Hãy yêu kẻ lân cận' — chỉ nói 'yêu Chúa' (xét trong văn cảnh)",
+      "Mác thêm 'Hãy yêu kẻ thù' vào danh sách điều răn lớn (theo cách trình bày của text)",
+      "Mác chỉ trích Phục Truyền 6:5 chứ không trích Lê-vi 19:18 (như được mô tả trong sách)",
+      "Mác MỞ ĐẦU bằng SHEMA — 'Hỡi Y-SƠ-RA-ÊN, hãy NGHE: Chúa, Đức Chúa Trời chúng ta, là Chúa CÓ MỘT' — Ma-thi-ơ KHÔNG có"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Shema trong Mác",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 36,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 36,
+    "content": "Mác 14:36 — tại Ghết-sê-ma-nê, Chúa Jêsus cầu nguyện với một danh hiệu A-RA-MÍT đặc biệt cho Đức Chúa Cha. Danh hiệu đó là gì và ý nghĩa?",
+    "explanation": "Mác 14:36 — 'Ngài rằng: A-ba lạy Cha, mọi việc Cha làm được cả; xin Cha cất chén nầy khỏi Con; nhưng KHÔNG theo điều Con muốn, song theo ý CHA'. 'A-BA' là TỪ A-RA-MÍT con cái dùng gọi CHA RUỘT thân mật — gần như 'BỐ' / 'PAPA' trong tiếng Việt. Sự kết hợp 'A-ba lạy Cha' (A-ra-mít + Hi-lạp 'pater') trong sách Mác cho thấy đời sống cầu nguyện của Chúa Jêsus DUY NHẤT trong lịch sử. Phao-lô dùng từ này 2 lần (Rô-ma 8:15, Ga-la-ti 4:6) để mô tả mối quan hệ Cha-con của tín hữu.",
+    "language": "vi",
+    "options": [
+      "'Adonai' (Chúa) — đặc trưng dùng trong cầu nguyện Do-thái chính thức",
+      "'A-BA' — A-ra-mít = 'CHA THÂN MẬT' (như con gọi cha); KHÁC với 'Pater' chính thức Hi-lạp; chỉ Mác giữ A-ra-mít gốc",
+      "'Yahweh' (Đức Giê-hô-va) — danh hiệu nghi lễ trong đền thờ",
+      "'El Shaddai' (Đấng Toàn Năng) — danh hiệu cổ trong Cựu Ước"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "A-ba Cha",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "verseStart": 33,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 34,
+    "content": "Mác 15:34 — Chúa Jêsus kêu lớn từ thập tự bằng A-ra-mít, trích Thi Thiên nào?",
+    "explanation": "Mác 15:34 — 'Đến giờ thứ chín, Đức Chúa Jêsus kêu lớn tiếng rằng: Ê-LÔI, Ê-LÔI, LA-MA SA-BÁC-TA-NI? nghĩa là: Đức Chúa Trời tôi ơi, Đức Chúa Trời tôi ơi, sao Ngài lìa bỏ tôi?' — trích Thi 22:1. Thi 22 là 'Thi Thiên Mê-si-a': bắt đầu với than thở (22:1) nhưng kết bằng đắc thắng (22:22-31). Chú ý: Mác dùng 'Ê-LÔI' (gần A-ra-mít hơn), Ma-thi-ơ 27:46 dùng 'Ê-LI' (gần Hê-bơ-rơ hơn) — phản ánh Mác viết cho khán giả không Do-thái cần phiên âm.",
+    "language": "vi",
+    "options": [
+      "Thi Thiên 51 — 'Đức Chúa Trời ôi! xin hãy thương xót tôi'",
+      "Thi Thiên 23 — 'Đức Giê-hô-va là Đấng chăn giữ tôi'",
+      "THI THIÊN 22:1 — 'Đức Chúa Trời tôi ôi, Đức Chúa Trời tôi ôi! Sao Ngài LÌA BỎ TÔI?'",
+      "Thi Thiên 110 — 'Đức Giê-hô-va phán cùng Chúa tôi'"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Mác",
+      "Phúc âm",
+      "Tiếng kêu thập tự",
+      "Nâng cao"
+    ]
   }
 ]

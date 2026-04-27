@@ -1622,5 +1622,1629 @@
       "Gospels",
       "Basic"
     ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 3,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 19,
+    "content": "According to Mark 3:13-14, how many men did Jesus appoint to 'be with him and to be sent out to preach'?",
+    "explanation": "Mark 3:14 — 'And he appointed twelve (whom he also named apostles) so that they might be with him and he might send them out to preach'.",
+    "language": "en",
+    "options": [
+      "Seven men",
+      "Ten men",
+      "Twelve men",
+      "Seventy men"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Twelve Apostles",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 9,
+    "verseStart": 2,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 8,
+    "content": "According to Mark 9:4, who appeared with Jesus on the Mount of Transfiguration?",
+    "explanation": "Mark 9:4 — 'And there appeared to them Elijah with Moses, and they were talking with Jesus'.",
+    "language": "en",
+    "options": [
+      "Abraham and David",
+      "Aaron and Samuel",
+      "John the Baptist and Elijah",
+      "Elijah and Moses"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Transfiguration",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 10,
+    "content": "According to Mark 11:1-7, what did Jesus ride into Jerusalem on his triumphal entry?",
+    "explanation": "Mark 11:7 — 'And they brought the colt to Jesus and threw their cloaks on it, and he sat on it'. Verse 11:2 specifies 'a colt tied, on which no one has ever sat'.",
+    "language": "en",
+    "options": [
+      "A white horse",
+      "A colt that no one had ridden",
+      "A bull (per the textual narrative)",
+      "A king's chariot"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Triumphal Entry",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 22,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 25,
+    "content": "According to Mark 14:22, what did Jesus say when taking bread at the Last Supper?",
+    "explanation": "Mark 14:22 — 'And as they were eating, he took bread, and after blessing it broke it and gave it to them, and said, Take; this is my body'.",
+    "language": "en",
+    "options": [
+      "'Take; this is my body'",
+      "'This bread comes from Pharaoh of Egypt'",
+      "'This is the unleavened bread of the Passover'",
+      "'Bread is eternal life for all'"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Last Supper",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 15,
+    "content": "According to Mark 15:6-15, who was released by Pilate according to the Passover custom in place of Jesus?",
+    "explanation": "Mark 15:15 — 'So Pilate, wishing to satisfy the crowd, released for them Barabbas, and having scourged Jesus, he delivered him to be crucified'.",
+    "language": "en",
+    "options": [
+      "Judas Iscariot",
+      "Simon of Cyrene",
+      "Barabbas",
+      "Peter"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Barabbas",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 8,
+    "content": "According to Mark 16:5-6, who was sitting in the empty tomb on resurrection morning, dressed in white?",
+    "explanation": "Mark 16:5-6 — 'And entering the tomb, they saw a young man sitting on the right side, dressed in a white robe, and they were alarmed. And he said, Do not be alarmed. You seek Jesus of Nazareth, who was crucified. He has risen'.",
+    "language": "en",
+    "options": [
+      "Jesus himself",
+      "Peter and John",
+      "Two Levitical priests",
+      "A young man (an angel)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Empty Tomb",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "According to Mark 1:9-11, who baptized Jesus at the Jordan River?",
+    "explanation": "Mark 1:9 — 'In those days Jesus came from Nazareth of Galilee and was baptized by John in the Jordan'.",
+    "language": "en",
+    "options": [
+      "Peter in Galilee",
+      "Paul at Damascus",
+      "John the Baptist at the Jordan River",
+      "A priest at the Jerusalem temple"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Baptism of Jesus",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 13,
+    "content": "According to Mark 1:12-13, how long was Jesus in the wilderness being tempted?",
+    "explanation": "Mark 1:13 — 'And he was in the wilderness forty days, being tempted by Satan. And he was with the wild animals, and the angels were ministering to him'.",
+    "language": "en",
+    "options": [
+      "Forty consecutive nights without rest",
+      "Forty days (per the textual narrative)",
+      "Seven days and seven nights",
+      "A full month by the Jewish calendar"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Wilderness Temptation",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 20,
+    "content": "According to Mark 1:16-20, who were the first two pairs of brothers Jesus called?",
+    "explanation": "Mark 1:16-20 — Simon (Peter) and his brother Andrew casting nets (1:16-18); James and John, sons of Zebedee, mending nets in the boat (1:19-20). All four were fishermen.",
+    "language": "en",
+    "options": [
+      "Peter and Paul; James and John",
+      "Matthew and Barnabas; James and Jude",
+      "Andrew and Philip; Bartholomew and Thomas",
+      "Simon (Peter) and Andrew; James and John (sons of Zebedee)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "First Four Fishermen",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 12,
+    "content": "According to Mark 2:1-12, what did four men do when carrying a paralytic to Jesus and unable to enter due to crowds?",
+    "explanation": "Mark 2:4 — 'And when they could not get near him because of the crowd, they removed the roof above him, and when they had made an opening, they let down the bed on which the paralytic lay'.",
+    "language": "en",
+    "options": [
+      "They REMOVED THE ROOF and lowered the man down before Jesus",
+      "They waited until evening for the crowd to leave then brought him in",
+      "They shouted until the crowd dispersed elsewhere",
+      "They asked someone in the house to call Jesus to the back window"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Four Men, Roof",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 17,
+    "content": "According to Mark 2:13-17, what was Levi (Matthew) doing when Jesus called him? How did the Pharisees react?",
+    "explanation": "Mark 2:14-17 — 'And as he passed by, he saw Levi the son of Alphaeus sitting at the tax booth, and he said to him, Follow me'. 2:16 — Pharisees rebuked: 'Why does he eat with tax collectors and sinners?' Jesus replied: 'Those who are well have no need of a physician, but those who are sick' (2:17).",
+    "language": "en",
+    "options": [
+      "Fishing at the Sea of Galilee / They acquitted him as a fisherman",
+      "Teaching law to students / They accepted as he was reputable",
+      "Sitting at the 'tax booth' / They rebuked Jesus for 'eating with tax collectors and sinners'",
+      "Going to the temple to offer sacrifice / They rejoiced a good man was called"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Levi at Tax Booth",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 4,
+    "verseStart": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 41,
+    "content": "According to Mark 4:35-41, what was Jesus doing during the great storm at sea, and how did the disciples react?",
+    "explanation": "Mark 4:38 — 'But he was in the stern, asleep on the cushion. And they woke him and said to him, Teacher, do you not care that we are perishing?' Jesus rose and rebuked wind and sea: 'Peace! Be still!' (4:39).",
+    "language": "en",
+    "options": [
+      "Standing praying on the bow / Disciples rejoiced at having Jesus",
+      "SLEEPING in the stern / Disciples PANICKED and woke him crying for help",
+      "Rowing with the disciples / They prayed together",
+      "Walking on water toward them / They thought it was a ghost"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Calming the Storm",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 5,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 43,
+    "content": "According to Mark 5:21-43, who was Jairus, and why did he come to Jesus?",
+    "explanation": "Mark 5:22-23 — 'Then came one of the rulers of the synagogue, Jairus by name, and seeing him, he fell at his feet and implored him earnestly, saying, My little daughter is at the point of death. Come and lay your hands on her'.",
+    "language": "en",
+    "options": [
+      "A Roman officer / asking Jesus to heal his dying servant",
+      "A scribe / asking what the greatest commandment is",
+      "ONE OF THE RULERS OF THE SYNAGOGUE / pleading for Jesus to heal his dying daughter",
+      "A Levitical priest / asking Jesus to interpret the Sabbath law"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Jairus Pleads",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 6,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "According to Mark 6:7-9, when sending the Twelve to preach, what did Jesus tell them NOT to take?",
+    "explanation": "Mark 6:8-9 — 'He charged them to take nothing for their journey except a staff—no bread, no bag, no money in their belts—but to wear sandals and not put on two tunics'.",
+    "language": "en",
+    "options": [
+      "Bread, cloak, sandals (per the textual narrative)",
+      "Gold and silver, scroll of the Law",
+      "Weapons and stored provisions",
+      "BREAD, BAG, MONEY in belts (only staff + sandals allowed)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Sending the Twelve",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 6,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 44,
+    "content": "According to Mark 6:39-40, how did Jesus arrange the 5,000 to sit down before feeding them?",
+    "explanation": "Mark 6:39-40 — 'Then he commanded them all to sit down in groups on the green grass. So they sat down in groups, by hundreds and by fifties'. The 'green grass' detail unique to Mark suggests springtime (Passover).",
+    "language": "en",
+    "options": [
+      "All seated scattered on the grass freely, each group choosing its spot",
+      "All sat facing him in one large circle",
+      "They sat 'in groups' on GREEN grass, in companies of hundreds and fifties",
+      "They had to stand until full, then sit down"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Five Thousand Sit",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 6,
+    "verseStart": 45,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 52,
+    "content": "According to Mark 6:45-52, how did the disciples react when Jesus walked on the sea to them in the fourth watch?",
+    "explanation": "Mark 6:49-50 — 'But when they saw him walking on the sea they thought it was a ghost, and cried out, for they all saw him and were terrified. But immediately he spoke to them and said, Take heart; it is I. Do not be afraid'.",
+    "language": "en",
+    "options": [
+      "They THOUGHT he was a GHOST and cried out in terror",
+      "They rejoiced and invited him into the boat at once",
+      "They immediately believed it was God himself",
+      "They could not see him through the heavy mist"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Walking on Water",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 30,
+    "content": "At Caesarea Philippi (Mark 8:27-30), when Jesus asked 'who do you say I am?', who answered and what did they say?",
+    "explanation": "Mark 8:29 — 'Peter answered him, You are the Christ'. Jesus then strictly charged them not to tell anyone about him (8:30) — the 'Messianic secret' distinctive to Mark's Gospel.",
+    "language": "en",
+    "options": [
+      "John said: 'You are our teacher'",
+      "Peter answered: 'You are the CHRIST'",
+      "Thomas said: 'My Lord and my God!'",
+      "All twelve disciples in unison: 'You are the Son of God'"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Peter's Confession",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 34,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 38,
+    "content": "According to Mark 8:34, anyone following Jesus must do which three things?",
+    "explanation": "Mark 8:34 — 'And calling the crowd to him with his disciples, he said to them, If anyone would come after me, let him deny himself and take up his cross and follow me'.",
+    "language": "en",
+    "options": [
+      "Tithe, fast, study the law",
+      "Sell all property, live in seclusion, never marry",
+      "Be baptized, receive the Spirit, preach the gospel",
+      "DENY HIMSELF, TAKE UP his CROSS, and FOLLOW him"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Cost of Discipleship",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 9,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 29,
+    "content": "According to Mark 9:23-24, when the demoniac boy's father said 'if you can', what did Jesus reply? What did the father cry out?",
+    "explanation": "Mark 9:23-24 — 'And Jesus said to him, If you can! All things are possible for one who believes. Immediately the father of the child cried out and said, I believe; help my unbelief!'",
+    "language": "en",
+    "options": [
+      "Jesus: 'Need 7 witnesses' / Father called 6 more witnesses",
+      "Jesus: 'First offer a sacrifice' / Father promised a lamb",
+      "Jesus: 'IF YOU CAN? All things possible to ONE WHO BELIEVES'; Father: 'I BELIEVE; HELP my unbelief!'",
+      "Jesus: 'Fast 40 days' / Father lamented: 'I cannot'"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Help My Unbelief",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 9,
+    "verseStart": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 37,
+    "content": "According to Mark 9:33-37, when the disciples argued 'who is greatest', what did Jesus teach?",
+    "explanation": "Mark 9:35-37 — 'And he sat down and called the twelve. And he said to them, If anyone would be first, he must be last of all and servant of all. And he took a child and put him in the midst of them, and taking him in his arms, he said to them, Whoever receives one such child in my name receives me'.",
+    "language": "en",
+    "options": [
+      "'The one with most miraculous power is greatest' (as described in the passage)",
+      "'If anyone would BE FIRST, he must be LAST OF ALL and SERVANT OF ALL' — and placed a CHILD in their midst as illustration",
+      "'Vote on who shall lead the twelve' (per the textual narrative)",
+      "'I will give to him who believes most' (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Greatest Is Servant",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 16,
+    "content": "According to Mark 10:14-15, when the disciples rebuked those bringing children to Jesus, how did he respond?",
+    "explanation": "Mark 10:14-15 — 'Let the children come to me; do not hinder them, for to such belongs the kingdom of God. Truly, I say to you, whoever does not receive the kingdom of God like a child shall not enter it'.",
+    "language": "en",
+    "options": [
+      "'LET the children COME to me; for the KINGDOM OF GOD BELONGS to such as these'",
+      "'Do not bother me; children cannot understand doctrine'",
+      "'Wait until they are grown, then bring them for teaching'",
+      "'Children must repent before they can come to me'"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Let Children Come",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 22,
+    "content": "According to Mark 10:21-22, after the rich young man said he had kept the commandments from youth, what did Jesus tell him? How did he react?",
+    "explanation": "Mark 10:21-22 — 'And Jesus, looking at him, loved him, and said to him, You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me. Disheartened by the saying, he went away sorrowful, for he had great possessions'.",
+    "language": "en",
+    "options": [
+      "Jesus: 'Go to the temple and offer sacrifice' / He fell down and worshiped",
+      "Jesus: 'Go and be baptized' / He rejoiced and obeyed (according to the text's framing)",
+      "Jesus: 'You LACK one thing: GO, SELL all you have, give to the POOR, then follow me' / He went away SORROWFUL because he had great possessions",
+      "Jesus: 'Marry and have a family' / He refused (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Rich Young Man",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 46,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 52,
+    "content": "According to Mark 10:46-52, what blind beggar at Jericho was healed by Jesus?",
+    "explanation": "Mark 10:46 — 'And they came to Jericho. And as he was leaving Jericho with his disciples and a great crowd, Bartimaeus, a blind beggar, the son of Timaeus, was sitting by the roadside'. The compound name = Bar (son of) + Timaeus.",
+    "language": "en",
+    "options": [
+      "Abraham son of Isaac",
+      "Bartimaeus, son of Timaeus",
+      "Simon son of Jonah",
+      "Levi son of Alphaeus"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Bartimaeus",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 11,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 19,
+    "content": "According to Mark 11:17, when driving out merchants from the temple, what prophetic phrase did Jesus quote?",
+    "explanation": "Mark 11:17 — 'And he was teaching them and saying to them, Is it not written, My house shall be called a house of prayer for all the nations? But you have made it a den of robbers'. Quoting Isa 56:7 + Jer 7:11.",
+    "language": "en",
+    "options": [
+      "'The temple is the house of prophets' (per the textual narrative)",
+      "'The temple belongs to the high priest' (as described in the passage)",
+      "'The temple is only for Israel alone' (according to the text's framing)",
+      "'My house shall be called a HOUSE OF PRAYER for all nations — but you have made it a DEN OF ROBBERS'"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Den of Robbers",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 12,
+    "content": "In the parable of the wicked tenants (Mark 12:1-12), when the owner finally sent his only son alone, what did the tenants do?",
+    "explanation": "Mark 12:6-8 — 'He had still one other, a beloved son. Finally he sent him to them, saying, They will respect my son. But those tenants said to one another, This is the heir. Come, let us kill him, and the inheritance will be ours. And they took him and killed him and threw him out of the vineyard'.",
+    "language": "en",
+    "options": [
+      "They returned the vineyard and asked forgiveness",
+      "They welcomed the son and gave the rent due",
+      "They KILLED the son and threw him out of the vineyard",
+      "They fled the vineyard and never returned"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Wicked Tenants",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 12,
+    "verseStart": 41,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 44,
+    "content": "According to Mark 12:41-44, who did Jesus commend as he watched people give to the temple treasury, and why?",
+    "explanation": "Mark 12:42-44 — 'And a poor widow came and put in two small copper coins... Truly, I say to you, this poor widow has put in more than all those who are contributing to the offering box. For they all contributed out of their abundance, but she out of her poverty has put in everything she had, all she had to live on'.",
+    "language": "en",
+    "options": [
+      "A Pharisee giving much / for diligent law-keeping",
+      "A POOR WIDOW dropping TWO SMALL COINS / because she gave 'ALL she had' (her livelihood), while the rich gave from surplus",
+      "A high priest / as a model for the people (according to the text's framing)",
+      "A rich young man / for giving much gold (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Widow's Mite",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 2,
+    "content": "According to Mark 13:2, when the disciples pointed to the great stones of Jerusalem's temple, what did Jesus prophesy?",
+    "explanation": "Mark 13:2 — 'And Jesus said to him, Do you see these great buildings? There will not be left here one stone upon another that will not be thrown down'. The prophecy fulfilled in AD 70 when Rome destroyed Jerusalem.",
+    "language": "en",
+    "options": [
+      "'The temple will stand forever until the Messiah comes'",
+      "'The temple will become a house of prayer for all peoples'",
+      "'You will see God dwell in this temple forever'",
+      "'NOT ONE STONE will be LEFT upon ANOTHER that will not be thrown down'"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Temple Destruction",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 9,
+    "content": "According to Mark 14:3-9, the woman at Bethany broke an alabaster flask and poured ointment on Jesus' head. What did he say about it?",
+    "explanation": "Mark 14:8-9 — 'She has done what she could; she has anointed my body beforehand for burial. And truly, I say to you, wherever the gospel is proclaimed in the whole world, what she has done will be told in memory of her'.",
+    "language": "en",
+    "options": [
+      "'What she has done will be told throughout the WHOLE WORLD in MEMORY OF HER' — she anointed his body BEFOREHAND for BURIAL",
+      "She should be rebuked for wasting precious oil (as described in the passage)",
+      "She should sell the oil and give to the poor (per the textual narrative)",
+      "She should save it for the upcoming Passover (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Anointing at Bethany",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 32,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 42,
+    "content": "According to Mark 14:32-42, at Gethsemane, which 3 disciples did Jesus take, and what did they do?",
+    "explanation": "Mark 14:33-37 — 'And he took with him Peter and James and John... And he came and found them sleeping, and he said to Peter, Simon, are you asleep? Could you not watch one hour?'",
+    "language": "en",
+    "options": [
+      "Philip, Matthew, Thomas / they kept watch and prayed",
+      "PETER, JAMES, JOHN / they SLEPT — Jesus rebuked: 'Simon, are you ASLEEP? Could you not watch ONE HOUR?'",
+      "Andrew, Thomas, Bartholomew / they kept watch outside",
+      "All twelve disciples / they prayed through the night together"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Gethsemane",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 53,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 65,
+    "content": "According to Mark 14:61-62, when the high priest asked 'Are you the Christ, the Son of the Blessed?', what did Jesus reply?",
+    "explanation": "Mark 14:61-62 — 'Again the high priest asked him, Are you the Christ, the Son of the Blessed? And Jesus said, I am, and you will see the Son of Man seated at the right hand of Power, and coming with the clouds of heaven'.",
+    "language": "en",
+    "options": [
+      "'No, I am only a prophet' (per the textual narrative)",
+      "'Why do you ask? You already know' (according to the text's framing)",
+      "'I AM. You will see the Son of Man seated at the RIGHT HAND of POWER, and coming with the CLOUDS of heaven'",
+      "'I will answer after Pilate questions me' (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Before Sanhedrin",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 66,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 72,
+    "content": "According to Mark 14:66-72, Peter denied Jesus three times. When did he remember Jesus' word and weep?",
+    "explanation": "Mark 14:72 — 'And immediately the rooster crowed a second time. And Peter remembered how Jesus had said to him, Before the rooster crows twice, you will deny me three times. And he broke down and wept'. Mark uniquely records 'crows twice'.",
+    "language": "en",
+    "options": [
+      "When the crowd shouted 'Crucify him!' (according to the text's framing)",
+      "When he saw Jesus being beaten (per the textual narrative)",
+      "When the morning star rose in the sky (as described in the passage)",
+      "When the ROOSTER CROWED a SECOND TIME — exactly as Jesus said: 'Before the rooster crows twice, you will deny me three times'"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Peter Denies",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 22,
+    "content": "According to Mark 15:21, what additional detail about Simon of Cyrene — who carried Jesus' cross — does Mark uniquely include?",
+    "explanation": "Mark 15:21 — 'And they compelled a passerby, Simon of Cyrene, who was coming in from the country, the father of Alexander and Rufus, to carry his cross'. Only Mark names the two sons — suggesting Mark wrote for the Roman church (Rom 16:13 mentions Rufus + mother).",
+    "language": "en",
+    "options": [
+      "He was the FATHER of ALEXANDER and RUFUS",
+      "He was nephew of Annas the high priest",
+      "He was the first Greek to believe in Jesus",
+      "He was a long-time close disciple of Jesus"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Simon's Sons",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "verseStart": 42,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 47,
+    "content": "According to Mark 15:42-47, who asked Pilate for Jesus' body and buried him?",
+    "explanation": "Mark 15:42-43 — 'When evening had come... Joseph of Arimathea, a respected member of the council, who was also himself looking for the kingdom of God, took courage and went to Pilate and asked for the body of Jesus'.",
+    "language": "en",
+    "options": [
+      "Peter and John (per the textual narrative)",
+      "Joseph of Arimathea — a RESPECTED member of the COUNCIL",
+      "Nicodemus and the scribes",
+      "Simon of Cyrene with Cyrenian Lucius"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Joseph of Arimathea",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 2,
+    "content": "According to Mark 16:1-2, which three women came with spices to Jesus' tomb on resurrection morning?",
+    "explanation": "Mark 16:1 — 'When the Sabbath was past, Mary Magdalene, Mary the mother of James, and Salome bought spices, so that they might go and anoint him'.",
+    "language": "en",
+    "options": [
+      "Mary Magdalene and Jesus' mother and grandmother",
+      "Salome and Martha and Mary of Bethany",
+      "Mary Magdalene, Mary the MOTHER of James, and Salome",
+      "The wives of Peter, John, and James"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Three Women at Tomb",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "According to Mark 7:9-13, Jesus rebuked the Pharisees about the 'Corban' tradition — which commandment were they breaking?",
+    "explanation": "Mark 7:10-13 — 'For Moses said, Honor your father and your mother... But you say, If a man tells his father or his mother, Whatever you would have gained from me is Corban (that is, given to God) — then you no longer permit him to do anything for his father or mother, thus making void the word of God by your tradition'.",
+    "language": "en",
+    "options": [
+      "'Do not murder' via the sacrificial system (according to the text's framing)",
+      "'Do not steal' via temple money-changers (per the textual narrative)",
+      "'Do not commit adultery' via foreign marriages (as described in the passage)",
+      "The FIFTH commandment 'HONOR your FATHER and MOTHER' — by declaring 'CORBAN' (devoted to God) so they did NOT have to help parents"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Corban Tradition",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 21,
+    "content": "According to Mark 8:15, against whose 'leaven' did Jesus warn his disciples?",
+    "explanation": "Mark 8:15 — 'And he cautioned them, saying, Watch out; beware of the leaven of the Pharisees and the leaven of Herod'. Matt 16:6 mentions Pharisees + Sadducees; Mark uniquely mentions Herod (context: Herod beheaded John the Baptist in Mark 6).",
+    "language": "en",
+    "options": [
+      "Of Levitical priests and of Daniel",
+      "Of the PHARISEES and of HEROD",
+      "Of Samaritans and Romans",
+      "Of false prophets in Jerusalem"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Leaven Warning",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 9,
+    "verseStart": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 41,
+    "content": "According to Mark 9:38-41, when John reported someone NOT in the 12 was casting out demons IN JESUS' NAME, what did Jesus reply?",
+    "explanation": "Mark 9:39-40 — 'But Jesus said, Do not stop him, for no one who does a mighty work in my name will be able soon afterward to speak evil of me. For the one who is not against us is for us'.",
+    "language": "en",
+    "options": [
+      "'Stop him because he lacks formal authority'",
+      "'Forbid him absolutely because he is wrong'",
+      "'DO NOT STOP HIM; the one who is NOT AGAINST us is FOR us'",
+      "'Bring him to me for careful judgment'"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Not Against Us",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 11,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 25,
+    "content": "According to Mark 11:22-25, after the fig tree withered following his curse, what did Jesus teach about faith and prayer?",
+    "explanation": "Mark 11:22-25 — 3 truths: (1) faith in God moves mountains, (2) confident prayer receives, (3) forgiveness conditions the Father's forgiveness. This is Mark's signature 'faith + forgiveness' combo.",
+    "language": "en",
+    "options": [
+      "'Have FAITH in God; WHOEVER says to this mountain, Be cast — WITHOUT DOUBT in heart — it will happen. When you stand praying, FORGIVE if you have anything against anyone, that your Father may forgive you'",
+      "'Repent 40 days before praying' (per the textual narrative) (in the story's sequence)",
+      "'Have 7 witnesses before praying' (according to the text's framing) (per the original content)",
+      "'Pray only at the Jerusalem temple' (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Mountain-Moving Faith",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 13,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 27,
+    "content": "According to Mark 13:26-27, what will happen after the great tribulation, per Jesus?",
+    "explanation": "Mark 13:26-27 — 'And then they will see the Son of Man coming in clouds with great power and glory. And then he will send out the angels and gather his elect from the four winds, from the ends of the earth to the ends of heaven'.",
+    "language": "en",
+    "options": [
+      "The Jerusalem temple will be rebuilt more glorious than before",
+      "God will come personally and judge each person (per the textual narrative)",
+      "Israel will be restored and defeat Rome completely (according to the text's framing)",
+      "They will see the SON OF MAN coming in CLOUDS with great power and glory; he will send ANGELS to GATHER his elect from the FOUR WINDS"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Son of Man Comes",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 16,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 7,
+    "content": "According to Mark 16:7, the angel told the women to deliver the resurrection message specifically to whom?",
+    "explanation": "Mark 16:7 — 'But go, tell his disciples and Peter that he is going before you to Galilee. There you will see him, just as he told you'. The special mention of Peter — after his denial — is a sign of restoration.",
+    "language": "en",
+    "options": [
+      "Specifically to Pilate the Roman governor first",
+      "'GO, tell his disciples and PETER that he is going before you to Galilee'",
+      "Specifically to Mary the mother of Jesus first",
+      "Specifically to the 70 disciples first, then the 12"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "And Peter",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 12,
+    "content": "Mark's Gospel is characterized by the Greek word 'euthys' (IMMEDIATELY / AT ONCE), appearing ~40 times. Which verse most clearly displays this 'IMMEDIATELY' theme?",
+    "explanation": "Mark 1:10,12 (Greek 'euthys') — Mark's 'immediacy' theme is densest at the opening. In just 1:10-12, two consecutive verses use 'immediately'. Mark uses this word to convey the URGENCY and dynamism of Jesus' ministry.",
+    "language": "en",
+    "options": [
+      "1:1 — 'The beginning of the gospel of Jesus Christ' (as described in the passage)",
+      "10:46 — 'And they came to Jericho' (per the textual narrative) (in the story's sequence)",
+      "1:10-12 — 'And when he came up out of the water, IMMEDIATELY he saw the heavens being torn open... The Spirit IMMEDIATELY drove him out into the wilderness'",
+      "16:8 — 'And they went out and fled from the tomb' (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Immediacy Theme",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      2
+    ],
+    "verseEnd": 31,
+    "content": "Mark records THREE Passion predictions by Jesus. Which passages ARE among those three? (select all correct)",
+    "explanation": "Three Passion predictions in Mark: 8:31, 9:31, 10:33-34. Each emphasizes: handed over + killed + raised the third day. Each follows disciples MISUNDERSTANDING (cross vs glory): 8:32 Peter rebukes, 9:32 disciples argue who's greatest, 10:35 James + John request glory seats.",
+    "language": "en",
+    "options": [
+      "Mark 8:31 — after Peter's confession at Caesarea Philippi",
+      "Mark 9:31 — while passing through Galilee after the Transfiguration",
+      "Mark 10:33-34 — on the road up to Jerusalem",
+      "Mark 13:26 — the Son of Man's coming (not a Passion prediction)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Three Passion Predictions",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 19,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 21,
+    "content": "Mark records both feedings — 5,000 (Mark 6:30-44) and 4,000 (Mark 8:1-9). According to Mark 8:19-20, what THREE numbers does Jesus rehearse to TEST the disciples after the two miracles?",
+    "explanation": "Mark 8:19-20 — 'When I broke the five loaves for the five thousand, how many baskets full of broken pieces did you take up? They said to him, Twelve. And the seven for the four thousand, how many baskets full of broken pieces did you take up? And they said to him, Seven'. Mark uses two distinct Greek words for 'basket': kophinos (12) vs. spuridas (7, larger baskets).",
+    "language": "en",
+    "options": [
+      "5/2/12 and 4/3/8 (according to the text's framing)",
+      "5,000 with 12 BASKETS leftover + 4,000 with 7 BASKETS leftover",
+      "5/2/7 and 4/2/8 (per the textual narrative)",
+      "Original loaves / fish / people fed"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Two Feedings, Different Baskets",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 28,
+    "content": "At the Last Supper (Mark 14:27-28), Jesus predicted the disciples would fall away that very night, THEN promised what?",
+    "explanation": "Mark 14:28 — 'But after I am raised up, I will go before you to Galilee'. This promise is repeated by the angel at 16:7 — 'He is going before you to Galilee' — proving Mark intentionally bracketed Last Supper + empty tomb in inclusio.",
+    "language": "en",
+    "options": [
+      "'After I rise, I will stay in Jerusalem to wait for you'",
+      "'I will go to Arabia 3 years before meeting you' (per the textual narrative)",
+      "'I will return to the Father and send the Holy Spirit'",
+      "'After I rise, I will GO BEFORE you TO GALILEE' — fulfilled at 16:7 by the angel using the same location"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Galilee Promise",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 16,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "Mark's Gospel ends abruptly at 16:8 — 'And they went out and fled from the tomb, for trembling and astonishment had seized them, and they said nothing to anyone, for they were afraid'. Why is this ending considered STRANGE in Greek literature?",
+    "explanation": "Mark 16:8 in Greek ends with 'ephobounto gar' — 'they were afraid for'. 'Gar' (γάρ) is a particle that always appears mid-sentence, never at the end — making this ending extraordinarily unusual grammatically. This is why many manuscripts later added the 'long ending' 16:9-20. Many scholars see the abrupt ending as intentional — Mark left the story 'open' so readers might CONTINUE the journey.",
+    "language": "en",
+    "options": [
+      "Because 'said nothing to anyone' contradicts 16:7's command to 'go and tell' (as described in the passage)",
+      "Because the final word in Greek is the CONJUNCTION 'gar' (for/because) — VERY UNUSUAL for a book to end with this particle; like a Vietnamese sentence ending with 'vì' left dangling",
+      "Because there are 2 women instead of 3 as in Mark 16:1 (according to the text's framing) (as the text indicates)",
+      "Because there is no traditional 'Amen' or 'The End' (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Abrupt Ending",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 12,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 27,
+    "content": "Mark 12 contains 4 challenges from religious groups. Distinguish the SADDUCEES — what do they believe/not believe? What do they ask Jesus?",
+    "explanation": "Mark 12:18 — 'And Sadducees came to him, who say that there is no resurrection'. Their question at 12:23 — 'In the resurrection, when they rise again, whose wife will she be?' — a hypothetical to discredit resurrection. Jesus answers 12:24-27 quoting Exod 3:6 'I am the God of Abraham, Isaac, and Jacob' — God of the LIVING.",
+    "language": "en",
+    "options": [
+      "Believe in resurrection / Ask: 'What is the greatest commandment?'",
+      "DENY THE RESURRECTION (12:18) / Ask: 'Woman with 7 husbands — whose wife in resurrection?'",
+      "Believe in pagan spirits / Ask: 'Should we pay taxes to Caesar?'",
+      "Believe in political Messiah / Ask: 'By what authority do you do these things?'"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Sadducees Deny Resurrection",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 46,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 52,
+    "content": "The healing of the blind man at Jericho appears in all 3 Synoptic Gospels, but Mark uniquely provides what DETAIL about the blind man?",
+    "explanation": "Mark 10:46 — distinctively, only Mark gives the compound name Bartimaeus = bar (son of) + Timaeus. Matthew 20:30 mentions 'two blind men' unnamed; Luke 18:35 mentions 'a blind man' unnamed. Mark's naming suggests this man was known in the early disciple community — close to eyewitness testimony.",
+    "language": "en",
+    "options": [
+      "Mark gives father's name + occupation (per the textual narrative)",
+      "Mark says the blind man followed Jesus for 12 years",
+      "Mark says the blind man was a close disciple in the 70",
+      "Mark NAMES the blind man — 'Bartimaeus' — and his FATHER'S NAME — 'Timaeus' (Mark 10:46)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Bartimaeus — Named Only in Mark",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 5,
+    "verseStart": 41,
+    "difficulty": "hard",
+    "type": "multiple_choice_multi",
+    "correctAnswer": [
+      0,
+      1,
+      3
+    ],
+    "verseEnd": 41,
+    "content": "Mark uniquely TRANSLITERATES many of Jesus' original Aramaic words then EXPLAINS them in Greek. Which Aramaic phrases ARE in Mark? (select all correct)",
+    "explanation": "Mark (as a Gospel close to Roman readers unfamiliar with Aramaic) distinctively transliterates + explains Jesus' original words: 5:41 (Talitha cumi), 7:34 (Ephphatha), 15:34 (Eloi Eloi). 'Maranatha' appears only in 1 Cor 16:22 — not from Jesus.",
+    "language": "en",
+    "options": [
+      "'TALITHA CUMI' (Mark 5:41) — meaning 'Little girl, I say to you, arise'",
+      "'EPHPHATHA' (Mark 7:34) — meaning 'Be opened' (per the textual narrative)",
+      "'MARANATHA' (only in 1 Corinthians 16:22, not Mark)",
+      "'ELOI, ELOI, LEMA SABACHTHANI?' (Mark 15:34) — meaning 'My God, my God, why have you forsaken me?'"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Aramaic in Mark",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 30,
+    "content": "The 'Messianic Secret' is a scholarly term for a distinctive theme in Mark's Gospel. Which verse best illustrates this theme?",
+    "explanation": "Mark 8:30 (after Peter says 'You are the Christ') — 'And he strictly charged them to tell no one about him'. Similarly 1:34 (silencing demons who name him), 1:43-45, 5:43, 7:36, 9:9 — 'Tell no one what they had seen, until the Son of Man had risen from the dead'. William Wrede (1901) coined 'Messianic Secret' — Mark structures the narrative so that Messianic identity is fully disclosed only after cross + resurrection.",
+    "language": "en",
+    "options": [
+      "Jesus boasts of miracles to crowds to attract disciples",
+      "Jesus preaches openly without hiding his identity (according to the text's framing)",
+      "After Peter's confession at Caesarea Philippi (8:29-30), Jesus FORBIDS disciples from TELLING ANYONE about him",
+      "Jesus always claims to be Messiah at every city (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Messianic Secret",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 26,
+    "content": "Mark contains a UNIQUE miracle — Jesus heals a blind man at Bethsaida in TWO STAGES. Which one?",
+    "explanation": "Mark 8:22-26 — miracle unique to Mark. 'And he spit on his eyes and laid his hands on him; he asked him, Do you see anything? And he looked up and said, I see people, but they look like trees, walking. Then Jesus laid his hands on his eyes again; and he opened his eyes, his sight was restored, and he saw everything clearly'. The 2-stage healing reverses Mark's typical immediacy — paralleling the disciples' GRADUAL UNDERSTANDING culminating in Peter's confession (8:27-30 immediately follows).",
+    "language": "en",
+    "options": [
+      "The man born blind at Siloam (only in John) (as described in the passage)",
+      "MARK 8:22-26 — Jesus SPITS on the blind man's eyes; first he sees 'people like trees walking'; second laying-on-hands he sees CLEARLY",
+      "The blind man at Jericho (Bartimaeus) (per the textual narrative) (in the story's sequence)",
+      "The man lame for 38 years at Bethesda (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Two-Stage Healing",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 2,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 12,
+    "content": "In Mark's Gospel, Jesus' most-used self-title is 'Son of Man'. According to Mark 2:10, what is the core meaning of this title?",
+    "explanation": "Mark 2:10 (healing the paralytic): 'But that you may KNOW that the Son of Man has AUTHORITY on earth to FORGIVE SINS — he said to the paralytic, I say to you, rise'. The title 'Son of Man' (Greek huios tou anthropou) draws from Daniel 7:13 — 'one like a Son of Man coming with the clouds of heaven' — referring to one with eschatological authority. Jesus uses it both veiling (to those without understanding) and revealing (to those with ears to hear) divine authority.",
+    "language": "en",
+    "options": [
+      "Asserts AUTHORITY on earth to forgive sins — Mark 2:10 — 'The Son of Man has authority on earth to forgive sins'",
+      "Asserts that Jesus is merely an ordinary human being (as described in the passage)",
+      "Asserts that Jesus is naturally descended from Adam (according to the text's framing)",
+      "Asserts that Jesus is loved by the people (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Son of Man Authority",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 20,
+    "content": "In Mark 4:13-20, Jesus interprets the parable of the sower. Which detail in the explanation is MOST DISTINCTIVE because it ties to persecution experience?",
+    "explanation": "Mark 4:16-17 — 'Rocky ground... when they hear the word, immediately receive it with joy. They have no root in themselves, but endure for a while. Then, when TRIBULATION or PERSECUTION arises ON ACCOUNT OF THE WORD, immediately they fall away'. The phrase 'TRIBULATION or PERSECUTION on account of the word' especially fits Mark's readers — Roman believers facing Nero's persecution (~AD 64-67). Mark's Gospel (traditionally written by Mark, Peter's disciple, in Rome) encourages perseverance under suffering.",
+    "language": "en",
+    "options": [
+      "Path seed — Satan steals (per the textual narrative) (in the story's sequence) (per the original content)",
+      "Rocky seed — no root, withers in sun (according to the text's framing) (as the text indicates)",
+      "Thorny seed — anxieties of life and lure of riches (as described in the passage) (cross-referenced with related passages)",
+      "ALL 4 CONDITIONS — especially 'rocky soil' = 'TRIBULATION or PERSECUTION because of the word' causes them to fall away — reflecting early Roman church (Mark's audience)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Persecution Soil",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 42,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 45,
+    "content": "Mark 10:45 contains Jesus' MISSION STATEMENT, famously called the 'theme verse' of Mark's Gospel. What is it?",
+    "explanation": "Mark 10:45 — 'For even the Son of Man came not to be served but to serve, and to give his life as a ransom for many'. This verse answers 'why did Jesus come?' in 2 parts: (1) to SERVE rather than be served, (2) to GIVE his LIFE as RANSOM. The word 'ransom' (Greek lutron) evokes slave redemption — Christ redeemed humanity from sin's bondage through his death. This is a key verse for atonement theology.",
+    "language": "en",
+    "options": [
+      "'We are going to where the Father has sent us' (as described in the passage)",
+      "'Take up my yoke — for my yoke is easy' (according to the text's framing)",
+      "'The SON OF MAN came NOT to be served BUT to SERVE, and to GIVE his LIFE as a RANSOM for MANY'",
+      "'I am the resurrection and the life' (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Mark's Theme Verse",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 7,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 23,
+    "content": "Mark 7:14-23 — Jesus teaches about 'what defiles a person'. According to context + the editorial comment in the text, what is the DEEP THEOLOGICAL SIGNIFICANCE of this teaching?",
+    "explanation": "Mark 7:18-19 — '...since it enters not his heart but his stomach, and is expelled? [Thus he declared all foods clean]'. The bracketed phrase is Mark's EDITORIAL COMMENT — not Jesus' direct words — explaining theological significance: Jesus ABROGATES the Levitical food laws (Lev 11). This verse is monumental because: (1) opens the way for Gentiles without becoming Jewish, (2) shifts 'cleanness' from EXTERIOR to INTERIOR (7:21-23 'evil from within'). Paul applies this principle in Rom 14:14, 1 Cor 8.",
+    "language": "en",
+    "options": [
+      "Jesus encourages more fasting for spiritual purity (according to the text's framing)",
+      "Jesus DECLARES ALL FOODS CLEAN (7:19 editorial note) — abolishing OT food laws, opening the way for Gentiles to enter the Church",
+      "Jesus teaches washing hands 7 times before eating (per the textual narrative)",
+      "Jesus requires every believer to tithe a portion of food (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "All Foods Clean",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "verseStart": 37,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 39,
+    "content": "Mark 15:38 — 'And the curtain of the temple was torn in two, from top to bottom'. Why are the details 'FROM TOP TO BOTTOM' and 'AT THE MOMENT of Christ's DEATH' (15:37) THEOLOGICALLY CORE?",
+    "explanation": "Mark 15:38-39 — sequence: Jesus cries out + breathes last (15:37) → CURTAIN torn from top (15:38) → centurion confesses (15:39). Heb 10:19-20 explains: 'we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain, that is, through his flesh'. Tearing from top = God's act, opening access. The Gentile centurion's confession immediately following is the fulfillment: Gentiles enter through the cross.",
+    "language": "en",
+    "options": [
+      "Just an architectural detail with no theological significance (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "Indicates a natural earthquake happened by chance (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Indicates Roman troops destroyed the temple before Christ's death (as described in the passage) (per the original content) (per the textual narrative)",
+      "(1) 'FROM TOP TO BOTTOM' = an act of GOD (not man); (2) the curtain shielded the Most Holy Place — signaling OPENING ACCESS to the Father through Christ's death; (3) immediately followed by the Gentile centurion's confession 'truly this man was the Son of God' (15:39)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Curtain Torn",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 1,
+    "content": "Mark's opening verse (1:1) declares the structural overview of the book. What is the precise wording?",
+    "explanation": "Mark 1:1 — 'The beginning of the gospel of Jesus Christ, the Son of God'. This is a TITLE — not a sentence — for the entire book. The word 'gospel' (euangelion) is Mark's keyword. The phrase 'Son of God' brackets an INCLUSIO with 15:39 (the centurion's confession). Note: a few early manuscripts omit 'Son of God' at 1:1 — but most retain it.",
+    "language": "en",
+    "options": [
+      "'After these things, the word of the Lord came to Mark'",
+      "'Mark, disciple of Peter, to the Roman church'",
+      "'The BEGINNING of the GOSPEL (euangelion) of JESUS CHRIST, the SON OF GOD'",
+      "'Inasmuch as many have undertaken to compile a narrative'"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Mark's Prologue",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 11,
+    "content": "According to Mark 1:11, what voice from heaven spoke at Jesus' baptism? (Note: SLIGHTLY different from Matthew + Luke)",
+    "explanation": "Mark 1:11 — 'YOU are my beloved Son; with YOU I am well pleased'. Note 2ND PERSON — God speaks DIRECTLY to Jesus. Matthew 3:17 uses 3RD PERSON — 'This is my beloved Son' (as if announcing to bystanders). Luke 3:22 also 2nd person (like Mark). The subtle difference matches each Gospel's purpose: Mark/Luke emphasize Jesus' personal experience, Matthew emphasizes public announcement to the people.",
+    "language": "en",
+    "options": [
+      "'YOU are my beloved Son; with YOU I am well pleased' (2nd PERSON — addressed DIRECTLY to Jesus)",
+      "'THIS is my beloved Son, with whom I am well pleased' (3rd person — like Matthew)",
+      "'Today I have begotten you' (like Ps 2:7) (per the textual narrative)",
+      "'This is the Messiah promised since Abraham' (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Voice at Baptism",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 12,
+    "verseStart": 29,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 30,
+    "content": "According to Mark 12:29-30 — Jesus' answer about the greatest commandment, what DIFFERS from Matthew 22:37?",
+    "explanation": "Mark 12:29-30 — 'Jesus answered, The most important is, Hear, O Israel: The Lord our God, the Lord is one. And you shall love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength'. The opening Shema (Deut 6:4) is unique to Mark. Matthew 22:37 and Luke 10:27 omit the Shema — only quoting Deut 6:5. Mark keeps the Shema because his Roman readers needed Jewish monotheistic context.",
+    "language": "en",
+    "options": [
+      "Mark omits 'love your neighbor' — only says 'love God' (according to the text's framing)",
+      "Mark adds 'love your enemy' to the list of greatest (per the textual narrative)",
+      "Mark cites Deuteronomy 6:5 only and not Leviticus 19:18 (as described in the passage)",
+      "Mark OPENS WITH THE SHEMA — 'Hear, O ISRAEL: The Lord our God, the Lord is ONE' — Matthew DOES NOT include this"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Mark's Shema",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "verseStart": 36,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 36,
+    "content": "Mark 14:36 — at Gethsemane, Jesus prayed with a distinctive ARAMAIC title for the Father. What is it and its meaning?",
+    "explanation": "Mark 14:36 — 'And he said, Abba, Father, all things are possible for you. Remove this cup from me. Yet not what I will, but what you will'. 'ABBA' is the ARAMAIC term children used for their EARTHLY FATHER intimately — close to 'DADDY' in English. The combination 'Abba, Father' (Aramaic + Greek pater) in Mark reveals Jesus' UNIQUE prayer life. Paul uses this term twice (Rom 8:15, Gal 4:6) to describe believers' Father-child relationship.",
+    "language": "en",
+    "options": [
+      "'Adonai' (Lord) — used in formal Jewish prayer (as described in the passage)",
+      "'ABBA' — Aramaic = 'INTIMATE FATHER' (like a child to dad); DIFFERENT from formal Greek 'Pater'; only Mark retains the original Aramaic",
+      "'Yahweh' (the LORD) — ceremonial temple title (according to the text's framing)",
+      "'El Shaddai' (Almighty) — ancient OT title (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Abba Father",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "verseStart": 33,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 34,
+    "content": "Mark 15:34 — Jesus cried out from the cross in Aramaic, quoting which Psalm?",
+    "explanation": "Mark 15:34 — 'And at the ninth hour Jesus cried with a loud voice, ELOI, ELOI, LEMA SABACHTHANI? which means, My God, my God, why have you forsaken me?' — quoting Psalm 22:1. Psalm 22 is the 'Messianic Psalm': begins with lament (22:1) but ends in triumph (22:22-31). Note: Mark uses 'ELOI' (closer to Aramaic), Matthew 27:46 uses 'ELI' (closer to Hebrew) — reflecting Mark writing for non-Jewish audiences needing transliteration.",
+    "language": "en",
+    "options": [
+      "Psalm 51 — 'Have mercy on me, O God'",
+      "Psalm 23 — 'The LORD is my shepherd'",
+      "PSALM 22:1 — 'My God, my God, why have you FORSAKEN ME?'",
+      "Psalm 110 — 'The LORD said to my Lord'"
+    ],
+    "tags": [
+      "New Testament",
+      "Mark",
+      "Gospels",
+      "Cry from Cross",
+      "Advanced"
+    ]
   }
 ]

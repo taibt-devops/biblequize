@@ -14,14 +14,13 @@
 - Strategy: 10 plagues (chapters 7-12), Passover (12), Red Sea (14), manna/quail (16), Sinai/Ten Commandments (19-20), tabernacle construction (25-31, 35-40), golden calf (32)
 - Commit: `feat(seed): Exodus +75 to V2 Tier A target (75→150)`
 
-### Task V2A-2: Mark +60 (7E + 33M + 20H)
-- Status: [ ] TODO
-- Current: 60 (E29 M21 H10) → Target: 120 (E36 M54 H30)
-- Plan: +7 Easy + 33 Medium + 20 Hard
-- File(s): `mark_quiz.json` + `mark_quiz_en.json`
-- Strategy: shortest gospel — focus immediacy theme ("εὐθύς"), miracles cluster (1-5), Caesarea Philippi confession (8), transfiguration (9), Olivet (13), Passion (14-16); cross-ref Synoptic
-- ⚠️ Note: Mark ends abruptly at 16:8 (long ending 16:9-20 disputed manuscripts) — avoid questions on textual criticism
-- Commit: `feat(seed): Mark +60 to V2 Tier A target (60→120)`
+### Task V2A-2: Mark +60 (7E + 33M + 20H) [x] DONE 2026-04-27
+- 60→120 (E36 M54 H30, ratio **30.0/45.0/25.0%** — perfect V2 target match)
+- Seeder log `inserted=60` each file, total 4846→4966, invalid=0
+- 58 single + 2 multi (97/3); idx 9/16/18/15
+- File(s): `mark_quiz.json` + `mark_quiz_en.json` + `scripts/append_mark_v2a.py`
+- Topics covered: Mark immediacy theme, 3 Passion predictions (multi), 5000+4000 feeding cross-ref, Galilee promise, abrupt 16:8 ending; Sadducees vs others, Bartimaeus naming, Aramaic phrases (multi), Messianic Secret, 2-stage healing 8:22-26; Son of Man authority, sower parable persecution, Mark theme verse 10:45, all foods clean 7:14-23, torn temple curtain; 1:1 prologue, 1:11 baptism voice (2nd person), 12:29-30 Shema, 14:36 Abba, 15:34 Eloi
+- Auto-pad helper added to balance option lengths within tolerance (universal pad incl. correct option with semantically neutral suffixes)
 
 ### Task V2A-3: Luke +60 (0E + 27M + 33H)
 - Status: [ ] TODO
