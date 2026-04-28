@@ -769,6 +769,19 @@
       "dailyAvailable": "Daily challenge pending — just 5 minutes",
       "fullEnergy": "Energy full ({{energy}}/{{max}}) — climb the rank!",
       "default": "Ready for a challenge?"
+    },
+    "featuredDaily": {
+      "title": "TODAY'S CHALLENGE",
+      "singleBook": "Explore {{book}} today",
+      "fewBooks": "Journey through {{count}} books",
+      "manyBooks": "🌍 Journey through {{count}} books",
+      "meta": "5 questions • 5 min • +50 XP",
+      "countdown": "Next challenge in {{time}}",
+      "cta": "Start today",
+      "completed": "✅ You finished today — Come back in {{time}}",
+      "loading": "Loading challenge...",
+      "errorFallback": "Today's Challenge — 5 questions daily",
+      "retry": "Try again"
     }
   },
   "help": {

@@ -769,6 +769,19 @@
       "dailyAvailable": "Chưa làm Daily hôm nay — chỉ 5 phút",
       "fullEnergy": "Năng lượng đầy ({{energy}}/{{max}}) — leo rank ngay!",
       "default": "Sẵn sàng thách thức?"
+    },
+    "featuredDaily": {
+      "title": "THỬ THÁCH HÔM NAY",
+      "singleBook": "Khám phá {{book}} hôm nay",
+      "fewBooks": "Hành trình qua {{count}} sách",
+      "manyBooks": "🌍 Hành trình qua {{count}} sách",
+      "meta": "5 câu • 5 phút • +50 XP",
+      "countdown": "Thử thách mới sau {{time}}",
+      "cta": "Bắt đầu hôm nay",
+      "completed": "✅ Bạn đã hoàn thành hôm nay — Quay lại sau {{time}}",
+      "loading": "Đang tải thử thách...",
+      "errorFallback": "Thử Thách Hôm Nay — 5 câu mỗi ngày",
+      "retry": "Thử lại"
     }
   },
   "help": {
