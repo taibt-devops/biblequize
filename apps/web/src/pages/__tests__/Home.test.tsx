@@ -305,14 +305,32 @@ describe('Home Dashboard', () => {
   })
 
   describe('Daily Verse', () => {
-    it('displays a scripture verse with reference', async () => {
+    it('displays a scripture verse banner with reference', async () => {
       renderHome()
       await waitFor(() => {
-        // Verse rotates daily — just verify a verse element exists
-        const verseSection = document.querySelector('.glass-panel')
+        const verseSection = screen.getByTestId('home-daily-verse')
         expect(verseSection).toBeInTheDocument()
-        expect(verseSection?.textContent).toMatch(/\w+/) // has text content
+        // Verse rotates daily — just verify a verse element has content
+        expect(verseSection.textContent).toMatch(/\w+/)
       })
+    })
+
+    /**
+     * Verse moved out of the right sidebar (where it was an afterthought
+     * under Activity Feed) to a full-width banner directly under the
+     * hero section — see docs/prompts/PROMPT_HOME_REFACTOR_FIXES.md
+     * Fix 3 ("brand soul" positioning).
+     */
+    it('renders the verse banner above the game modes section', async () => {
+      renderHome()
+      await waitFor(() => {
+        expect(screen.getByTestId('home-daily-verse')).toBeInTheDocument()
+      })
+      const verse = screen.getByTestId('home-daily-verse')
+      const gameModes = screen.getByTestId('game-mode-grid')
+      const cmp = verse.compareDocumentPosition(gameModes)
+      // DOCUMENT_POSITION_FOLLOWING = 4 — verse comes BEFORE game modes
+      expect(cmp & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
     })
   })
 

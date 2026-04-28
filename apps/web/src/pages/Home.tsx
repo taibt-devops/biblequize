@@ -204,6 +204,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Daily Verse banner ── */}
+      {(() => { const verse = getDailyVerse(); return (
+      <section
+        data-testid="home-daily-verse"
+        className="rounded-2xl bg-surface-container border-l-4 border-secondary p-6 md:p-8"
+      >
+        <p className="text-base md:text-lg italic text-on-surface leading-relaxed mb-3">
+          "{verse.text}"
+        </p>
+        <p className="text-[10px] md:text-xs font-black text-secondary uppercase tracking-widest">{verse.ref}</p>
+      </section>
+      ) })()}
+
       {/* ── Game Modes ── */}
       <section className="space-y-4">
         <div className="flex justify-between items-center">
@@ -338,20 +351,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* Daily Scripture */}
-          {(() => { const verse = getDailyVerse(); return (
-          <div className="glass-panel rounded-2xl p-6 border border-white/5 relative overflow-hidden">
-            <div className="absolute -top-10 -left-10 w-24 h-24 bg-secondary/10 blur-2xl" />
-            <div className="flex flex-col gap-4 relative z-10">
-              <div className="h-1 w-8 bg-secondary rounded-full" />
-              <p className="text-sm font-medium italic text-on-surface leading-relaxed">
-                "{verse.text}"
-              </p>
-              <p className="text-[10px] font-black text-secondary uppercase tracking-widest">{verse.ref}</p>
-            </div>
-          </div>
-          ) })()}
         </div>
       </section>
     </div>
