@@ -885,5 +885,993 @@
       "Pentateuch",
       "Basic"
     ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Deuteronomy 1:1, where did Moses speak these words?",
+    "explanation": "Deuteronomy 1:1 — 'These are the words that Moses spoke to all Israel beyond the Jordan in the wilderness, in the Arabah opposite Suph, between Paran and Tophel, Laban, Hazeroth, and Dizahab.' Deuteronomy = Moses's FAREWELL words before death. Israel was on the plains of Moab, about to enter Canaan. The JORDAN divides: Israel on the EAST side; Canaan on the WEST.",
+    "language": "en",
+    "options": [
+      "On Mt. Sinai (as described in the passage)",
+      "In Egypt (per the textual narrative)",
+      "BEYOND the JORDAN, in the wilderness ARABAH, opposite Suph",
+      "In Canaan (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Beyond the Jordan",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Deuteronomy 5:1-5, what does Moses call when about to repeat 10 COMMANDMENTS?",
+    "explanation": "Deuteronomy 5:1 — 'And Moses summoned all Israel and said to them, \"Hear, O Israel, the statutes and the rules that I speak in your hearing today, and you shall learn them and be careful to do them.\"' 3 VERBS: HEAR + LEARN + DO. Hearing alone is NOT enough — must learn CAREFULLY + apply. The next verses (5:2-3) — this covenant is NOT just with the fathers, but with the GENERATION standing there.",
+    "language": "en",
+    "options": [
+      "O priests (as described in the passage)",
+      "O elders (according to the text's framing)",
+      "O kings (per the textual narrative)",
+      "Hear, O ISRAEL, the statutes + rules — LEARN + KEEP + DO them"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Hear O Israel",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 5,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Deuteronomy 5:6 (opening of 10 Commandments), how does God identify himself?",
+    "explanation": "Deuteronomy 5:6 — 'I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery.' EXTREMELY IMPORTANT preface: God identifies himself BY his REDEMPTIVE ACT. Principle: GOSPEL (redemption) comes BEFORE law. Israel does NOT keep law to be saved — already saved, then lives accordingly. Same as Exodus 20:2.",
+    "language": "en",
+    "options": [
+      "I am the LORD your God, who BROUGHT you OUT of Egypt, out of the HOUSE of SLAVERY",
+      "I am Creator (per the textual narrative)",
+      "I am unnamed (according to the text's framing)",
+      "I am King of kings (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Brought out of slavery",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 6,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Deuteronomy 6:6, where must the words Moses commands today be placed?",
+    "explanation": "Deuteronomy 6:6 — 'And these words that I command you today shall be on your heart.' Part of the Shema (6:4-9). 'ON HEART' (Hebrew: ʿal-lebab) — the center of being. NOT just memorize — but UNDERSTAND + LOVE. Deuteronomy 6:7 verbs: 'teach diligently to children' = speak of law when SITTING, WALKING, LYING DOWN, RISING UP.",
+    "language": "en",
+    "options": [
+      "In the book",
+      "On your HEART",
+      "In hand",
+      "In house"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Words on heart",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Deuteronomy 7:1-2, on entering Canaan, how many nations will God DRIVE OUT? What must Israel do?",
+    "explanation": "Deuteronomy 7:1-2 — 'When the LORD your God brings you into the land that you are entering to take possession of it, and clears away many nations before you... seven nations more numerous and mightier than you, and when the LORD your God gives them over to you, and you defeat them, then you must devote them to complete destruction. You shall make no covenant with them and show no mercy to them.' Strict commands: NO alliances + NO marriages. Reason: 7:4 — keep descendants from idolatry.",
+    "language": "en",
+    "options": [
+      "3 — ally with (according to the text's framing)",
+      "5 — teach (per the textual narrative) (in the story's sequence)",
+      "7 NATIONS (Hittites, Girgashites, Amorites, Canaanites, Perizzites, Hivites, Jebusites) — DEVOTE them to destruction + NO COVENANT + NO MERCY",
+      "10 — intermarry (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "7 Canaanite nations - destroy",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 7,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Deuteronomy 7:9, by what attributes is God described?",
+    "explanation": "Deuteronomy 7:9 — 'Know therefore that the LORD your God is God, the faithful God who keeps covenant and steadfast love with those who love him and keep his commandments, to a thousand generations.' '1000 GENERATIONS' (eleph dor) = forever, no limit. Contrast: a few generations for the WICKED (5:9), 1000 for those who LOVE. God's love GREATLY exceeds his judgment.",
+    "language": "en",
+    "options": [
+      "God of strength (according to the text's framing)",
+      "God of wisdom (per the textual narrative)",
+      "God of righteousness (as described in the passage)",
+      "FAITHFUL God — keeps covenant + steadfast love with those who love him + keep his commandments — to a THOUSAND GENERATIONS"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Faithful to thousand generations",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 8,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Deuteronomy 8:7-9, how is CANAAN described?",
+    "explanation": "Deuteronomy 8:7-9 — 'For the LORD your God is bringing you into a good land, a land of brooks of water, of fountains and springs, flowing out in the valleys and hills, a land of wheat and barley, of vines and fig trees and pomegranates, a land of olive trees and honey, a land in which you will eat bread without scarcity, in which you will lack nothing, a land whose stones are iron, and out of whose hills you can dig copper.' The promised land = a RICH LAND. The '7 species' (wheat + barley + grape + fig + pomegranate + olive + honey) = SHIVAT HAMINIM in Jewish tradition.",
+    "language": "en",
+    "options": [
+      "A GOOD land — brooks + fountains + springs flowing in valleys + hills; wheat + barley + vines + figs + pomegranates + olive trees + honey; land of NO scarcity; stones are iron + copper from hills",
+      "Dry + rocky + waterless (as described in the passage) (as the text indicates)",
+      "Flat + mountainless (according to the text's framing) (per the original content)",
+      "Distant + cold (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Good land with 7 species",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 14,
+    "verseStart": 22,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Deuteronomy 14:22, how much of the field's produce must be tithed yearly?",
+    "explanation": "Deuteronomy 14:22 — 'You shall tithe all the yield of your seed that comes from the field year by year.' THE TITHE (ma'aser) — already given by Abraham (Gen 14:20) to Melchizedek, by Jacob (Gen 28:22). Mosaic law formalized: 1/10 to the LEVITES (Num 18:21). Also a 'feast tithe' (14:22-26) + 'poor tithe' every 3 years (14:28-29). Mal 3:10 reminds.",
+    "language": "en",
+    "options": [
+      "A fifth (per the textual narrative)",
+      "A TENTH (of all your seed-yield from the field)",
+      "A third (according to the text's framing)",
+      "A first (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "A tenth of yield",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 24,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Deuteronomy 24:1-4, the LAW of WRITING a CERTIFICATE of DIVORCE — after divorce + remarriage, if 2nd husband DIES or DIVORCES — can the FIRST husband take her back?",
+    "explanation": "Deuteronomy 24:1-4 — 'When a man takes a wife and marries her, if then she finds no favor in his eyes because he has found some indecency in her, and he writes her a certificate of divorce... then her former husband, who sent her away, may not take her again to be his wife, after she has been defiled, for that is an abomination before the LORD.' Jesus cites this in Mt 19:7-8.",
+    "language": "en",
+    "options": [
+      "Yes if she agrees",
+      "Wait 1 year then back",
+      "NO — that is an ABOMINATION before the LORD",
+      "Ask priest (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "No remarriage to first husband",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 31,
+    "verseStart": 6,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Deuteronomy 31:6, what should believers be when entering battle? What does God promise?",
+    "explanation": "Deuteronomy 31:6 — 'Be strong and courageous. Do not fear or be in dread of them, for it is the LORD your God who goes with you. He will not leave you or forsake you.' An encouragement to Israel before entering Canaan. ALSO QUOTED in Heb 13:5 ('I will never leave you nor forsake you') applied to NT BELIEVERS. Repeated 31:8 to Joshua.",
+    "language": "en",
+    "options": [
+      "Afraid — strong enemy (as described in the passage)",
+      "Praying — God hears (per the textual narrative)",
+      "Prepared — God helps (according to the text's framing)",
+      "BE STRONG + COURAGEOUS; do NOT FEAR + DO NOT BE in DREAD — for the LORD your God GOES with you; he will NOT LEAVE + NOT FORSAKE you"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "God will not forsake",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Deuteronomy 1:6-8, what did God say to Israel at Mt. HOREB?",
+    "explanation": "Deuteronomy 1:6-8 — 'The LORD our God said to us in Horeb, \"You have stayed long enough at this mountain. Turn and take your journey, and go to the hill country of the Amorites...\" See, I have set the land before you. Go in and take possession of the land that the LORD swore to your fathers.' Command to MOVE — time doesn't stand still. Result: Israel DIDN'T BELIEVE, wandered 40 years. Deuteronomy teaches the NEW generation lessons from the OLD.",
+    "language": "en",
+    "options": [
+      "You have STAYED LONG ENOUGH at this MOUNTAIN! TURN + GO to the AMORITE + Canaan + the LAND PROMISED to FATHERS",
+      "Stay 40 more years (as described in the passage)",
+      "Return to Egypt (per the textual narrative) (in the story's sequence)",
+      "Ascend to heaven (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Stayed long enough - go",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 1,
+    "verseStart": 35,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Deuteronomy 1:35-38, due to UNBELIEF, who from that generation entered the PROMISED LAND?",
+    "explanation": "Deuteronomy 1:35-38 — 'Not one of these men of this evil generation shall see the good land that I swore to give to your fathers, except Caleb the son of Jephunneh. He shall see it, and to him and to his children I will give the land on which he has trodden, because he has wholly followed the LORD!... Joshua the son of Nun, who stands before you, he shall enter.' 12 spies (Numbers 13) — only the 2 faithful entered.",
+    "language": "en",
+    "options": [
+      "All 12 spies (as described in the passage)",
+      "CALEB (wholly followed) + JOSHUA (son of Nun) — none else of the wicked generation",
+      "Only Moses (per the textual narrative)",
+      "Only Aaron (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Caleb + Joshua",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 2,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Deuteronomy 2:30, why did SIHON king of HESHBON refuse Israel passage?",
+    "explanation": "Deuteronomy 2:30 — 'But Sihon the king of Heshbon would not let us pass by him, for the LORD your God hardened his spirit and made his heart obstinate, that he might give him into your hand, as he is this day.' Same principle as Pharaoh (Ex 7:3 'I will harden Pharaoh's heart'). God SOVEREIGNLY rules even pagan kings' MINDS. Same teaching Prov 21:1.",
+    "language": "en",
+    "options": [
+      "Feared Israel's number (according to the text's framing)",
+      "Moab asked him to block (as described in the passage)",
+      "The LORD your God HARDENED his SPIRIT + made his HEART OBSTINATE — to give him into your hand (as has come)",
+      "Ancestral prophecy (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "LORD hardened Sihon's heart",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 3,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Deuteronomy 3:11, King OG of Bashan was the last of REPHAIM (gigantic). How is his bed described?",
+    "explanation": "Deuteronomy 3:11 — 'For only Og the king of Bashan was left of the remnant of the Rephaim. Behold, his bed was a bed of iron. Is it not in Rabbah of the Ammonites? Nine cubits was its length, and four cubits its breadth, according to the common cubit.' 'Cubit' ~ 45cm. Og's bed ~ 4m × 1.8m. REPHAIM = giant race (same ancestors as Anak in Gen 6:4). Goliath also from Rephaim.",
+    "language": "en",
+    "options": [
+      "Gold - 3 cubits (per the textual narrative)",
+      "Stone - 5 cubits (as described in the passage)",
+      "Wood - 7 cubits (according to the text's framing)",
+      "IRON - 9 cubits LONG (~4m) + 4 cubits WIDE (~1.8m); still in Rabbah of Ammon"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Og - iron bed 9 cubits",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 4,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Deuteronomy 4:9, what must believers do with what their EYES have seen? Especially with whom?",
+    "explanation": "Deuteronomy 4:9 — 'Only take care, and keep your soul diligently, lest you forget the things that your eyes have seen, and lest they depart from your heart all the days of your life. Make them known to your children and your children's children.' LESSON: MEMORY + INHERITANCE OF FAITH. Deuteronomy continuously stresses: teach CHILDREN about the COVENANT. Same teaching 6:7, 11:19. Faith DIES when not transmitted.",
+    "language": "en",
+    "options": [
+      "KEEP CAREFULLY + GUARD your SOUL — do NOT FORGET; TEACH your children + grandchildren",
+      "Forget - start fresh (as described in the passage)",
+      "Just keep in book (per the textual narrative)",
+      "Tell only outsiders (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Teach children + grandchildren",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 5,
+    "verseStart": 32,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Deuteronomy 5:32, what must believers do after receiving the law?",
+    "explanation": "Deuteronomy 5:32 — 'You shall be careful therefore to do as the LORD your God has commanded you. You shall not turn aside to the right hand or to the left. You shall walk in all the way that the LORD your God has commanded you.' NOT RIGHT, NOT LEFT = no adding/subtracting from the law. Same teaching 4:2 ('You shall not add to the word that I command you, nor take from it'), Rev 22:18-19.",
+    "language": "en",
+    "options": [
+      "Self-change law (as described in the passage)",
+      "DO as the LORD has COMMANDED — DO NOT TURN aside to the right hand or to the left",
+      "Drop part (per the textual narrative)",
+      "Translate (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Not right or left",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 6,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Deuteronomy 6:13, whom only must believers SWEAR by + FEAR + SERVE?",
+    "explanation": "Deuteronomy 6:13 — 'It is the LORD your God you shall fear. Him you shall serve and by his name you shall swear.' Jesus QUOTED THIS at the SECOND temptation in the wilderness (Mt 4:10) — 'You shall worship the Lord your God and HIM ONLY shall you serve.' NO polytheism — the LORD ALONE.",
+    "language": "en",
+    "options": [
+      "Only ancestors (as described in the passage)",
+      "Only king (per the textual narrative)",
+      "Only the LORD your God — and SWEAR only by HIS NAME",
+      "Only priest (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Fear + serve LORD only",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 6,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Deuteronomy 6:16, what must believers NOT do to the LORD? How did they do it where?",
+    "explanation": "Deuteronomy 6:16 — 'You shall not put the LORD your God to the test, as you tested him at Massah.' MASSAH = where Israel QUARRELED with Moses for water + tested God: 'Is the LORD among us or not?' (Ex 17:7). Jesus QUOTED this when Satan tempted him to jump from the temple (Mt 4:7).",
+    "language": "en",
+    "options": [
+      "Don't CRY — as at Sinai (per the textual narrative)",
+      "Don't HEAR — as in wilderness",
+      "Don't PRAY — as in Egypt",
+      "Don't TEMPT/TEST the LORD your God as you tested at MASSAH"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Don't test LORD as Massah",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 7,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Deuteronomy 7:7-8, WHY did God CHOOSE Israel?",
+    "explanation": "Deuteronomy 7:7-8 — 'It was not because you were more in number than any other people that the LORD set his love on you and chose you, for you were the fewest of all peoples, but it is because the LORD loves you and is keeping the oath that he swore to your fathers, that the LORD has brought you out with a mighty hand and redeemed you from the house of slavery.' NO MERIT — only ELECTING GRACE. Romans 9 elaborates.",
+    "language": "en",
+    "options": [
+      "NOT because more than nations — Israel was the FEWEST — but because the LORD LOVES + KEEPS his OATH to fathers — brought you out by mighty hand",
+      "Richer (according to the text's framing) (as the text indicates)",
+      "Wiser (per the textual narrative) (in the story's sequence)",
+      "More beautiful (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Chosen by love not size",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 8,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Deuteronomy 8:17-18, what must Israel NOT SAY about their wealth? What to REMEMBER?",
+    "explanation": "Deuteronomy 8:17-18 — 'Beware lest you say in your heart, \"My power and the might of my hand have gotten me this wealth.\" You shall remember the LORD your God, for it is he who gives you power to get wealth, that he may confirm his covenant that he swore to your fathers, as it is this day.' NO wealth FOR YOURSELF — God gives POWER to fulfill the COVENANT. Warning against PRIDE.",
+    "language": "en",
+    "options": [
+      "Not 'my father's wealth' — remember (as described in the passage)",
+      "Not 'king helped me' — remember (according to the text's framing)",
+      "Not 'MY POWER AND HAND made me wealthy' — REMEMBER the LORD your God who GIVES you POWER to GET WEALTH — to confirm his COVENANT sworn to fathers",
+      "Not 'angel helped' — remember (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "God gives power to get wealth",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 9,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Deuteronomy 9:5, why does Israel enter Canaan NOT? Why YES?",
+    "explanation": "Deuteronomy 9:5 — 'Not because of your righteousness or the uprightness of your heart are you going in to possess their land, but because of the wickedness of these nations the LORD your God is driving them out from before you, and that he may confirm the word that the LORD swore to your fathers, to Abraham, to Isaac, and to Jacob.' NO personal merit — God does this for HIS NAME. Humbling principle.",
+    "language": "en",
+    "options": [
+      "For ancestors + kings (as described in the passage) (as the text indicates)",
+      "NOT because of YOUR RIGHTEOUSNESS or UPRIGHTNESS — but because of WICKEDNESS of these NATIONS + to FULFILL God's OATH to fathers",
+      "For army (per the textual narrative) (in the story's sequence)",
+      "For leaders' wisdom (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Not righteousness - their wickedness",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 11,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Deuteronomy 11:13-14, IF Israel LOVES God wholeheartedly — God promises what?",
+    "explanation": "Deuteronomy 11:13-14 — 'And if you will indeed obey my commandments that I command you today, to love the LORD your God, and to serve him with all your heart and with all your soul, he will give the rain for your land in its season, the early rain and the later rain, that you may gather in your grain and your wine and your oil.' RAIN = the greatest blessing in Canaan (a dry land). 2 rains: EARLY (yoreh, Oct-Nov) + LATTER (malqosh, Mar-Apr). James 5:7 cites this.",
+    "language": "en",
+    "options": [
+      "Much gold + silver (as described in the passage)",
+      "Strong army (according to the text's framing)",
+      "Wise king (per the textual narrative)",
+      "RAIN in season — EARLY rain + LATER rain for land — gather GRAIN + new WINE + OIL"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Early + latter rain",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 14,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Deuteronomy 14:21, what must Israel NOT eat? Why?",
+    "explanation": "Deuteronomy 14:21 — 'You shall not eat anything that has died naturally. You may give it to the sojourner who is within your towns, that he may eat it, or you may sell it to a foreigner. For you are a people holy to the LORD your God. You shall not boil a young goat in its mother's milk.' KOSHER law. NATURALLY DEAD ANIMAL = blood not drained ritually. The 'NOT BOIL KID IN MOTHER'S MILK' is repeated 3x (Ex 23:19, 34:26, Deut 14:21) = basis for KOSHER prohibition of mixing meat + milk.",
+    "language": "en",
+    "options": [
+      "NOT what dies NATURALLY — for you are HOLY PEOPLE for the LORD; nor BOIL a kid in its MOTHER's MILK",
+      "Not seaweed (according to the text's framing)",
+      "Not big fish (as described in the passage)",
+      "Not birds (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "No carrion - kid in milk",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 16,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Deuteronomy 16:18-20, what must Israel APPOINT in their towns? Requirements?",
+    "explanation": "Deuteronomy 16:18-20 — 'You shall appoint judges and officers in all your towns that the LORD your God is giving you, according to your tribes, and they shall judge the people with righteous judgment. You shall not pervert justice. You shall not show partiality, and you shall not accept a bribe, for a bribe blinds the eyes of the wise and subverts the cause of the righteous. Justice, and only justice, you shall follow, that you may live and inherit the land that the LORD your God is giving you.' JUSTICE! repeated 2x = strongest emphasis.",
+    "language": "en",
+    "options": [
+      "Markets — fair price (as described in the passage) (as the text indicates)",
+      "Schools — teach law (according to the text's framing) (per the original content)",
+      "JUDGES + officers in every town — JUDGE the people with RIGHTEOUS judgment; NOT PARTIAL, NOT take BRIBE — bribe BLINDS the wise; JUSTICE! JUSTICE! you shall pursue",
+      "Temple — worship (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Judges - pursue justice",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 19,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Deuteronomy 19:15, how many WITNESSES needed to convict any CRIME?",
+    "explanation": "Deuteronomy 19:15 — 'A single witness shall not suffice against a person for any crime or for any wrong in connection with any offense that he has committed. Only on the evidence of two witnesses or of three witnesses shall a charge be established.' Basic OT legal principle. Same teaching 17:6, Num 35:30. NT also applies to the Church: Mt 18:16 (dispute resolution), 2 Cor 13:1, 1 Tim 5:19. Protects against FALSE ACCUSATION.",
+    "language": "en",
+    "options": [
+      "1 witness suffices (as described in the passage)",
+      "On the EVIDENCE of 2 or 3 WITNESSES — a charge will be ESTABLISHED",
+      "5 witnesses (per the textual narrative)",
+      "10 witnesses (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "2 or 3 witnesses",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 20,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Deuteronomy 20:1, when Israel goes to BATTLE against an enemy with MORE CHARIOTS + LARGER ARMY — what to do?",
+    "explanation": "Deuteronomy 20:1 — 'When you go out to war against your enemies, and see horses and chariots and an army larger than your own, you shall not be afraid of them, for the LORD your God is with you, who brought you up out of the land of Egypt.' Same principle as 31:6 (LORD goes with). Remember the EXODUS — evidence God FIGHTS for his people. Then (20:5-9): who may go home (new house, new betrothal, new vineyard, fearful).",
+    "language": "en",
+    "options": [
+      "Be afraid - inferior (as described in the passage)",
+      "Retreat - weaker (per the textual narrative)",
+      "Call allies - help (according to the text's framing)",
+      "Do NOT be AFRAID — for the LORD your God (who BROUGHT you OUT of Egypt) is WITH you"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Don't fear - LORD is with",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 22,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Deuteronomy 22:5, women NOT wear what? Men NOT wear what?",
+    "explanation": "Deuteronomy 22:5 — 'A woman shall not wear a man's garment, nor shall a man put on a woman's cloak, for whoever does these things is an abomination to the LORD your God.' DESIGN DISTINCTION between male + female (Gen 1:27). 'Abomination' (toebah) = strongest OT word for what God HATES. May relate to pagan worship that also reversed sex distinctions. Applies the principle of protecting creation order.",
+    "language": "en",
+    "options": [
+      "Women NOT wear MEN'S CLOTHING — Men NOT wear WOMEN'S CLOTHING — whoever does is an ABOMINATION to the LORD",
+      "Women not red (per the textual narrative) (in the story's sequence)",
+      "Men not white (according to the text's framing)",
+      "Both not black (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "No cross-dressing",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 23,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Deuteronomy 23:21-23, if you VOW to the LORD — what?",
+    "explanation": "Deuteronomy 23:21-23 — 'If you make a vow to the LORD your God, you shall not delay fulfilling it, for the LORD your God will surely require it of you, and you will be guilty of sin. But if you refrain from vowing, you will not be guilty of sin. You shall be careful to do what has passed your lips, for you have voluntarily vowed to the LORD your God what you have promised with your mouth.' NOT VOWING = NO SIN. Vowing = must FULFILL. Same teaching Eccl 5:4-5.",
+    "language": "en",
+    "options": [
+      "Can forget (per the textual narrative)",
+      "Must vow again to atone (as described in the passage)",
+      "FULFILL it without DELAY — for the LORD will require it of you; if you do NOT vow, NO sin",
+      "Vow with priest (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Fulfill vows",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 24,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Deuteronomy 24:14-15, regarding the POOR DAY-LABORER, the EMPLOYER must do what?",
+    "explanation": "Deuteronomy 24:14-15 — 'You shall not oppress a hired worker who is poor and needy, whether he is one of your brothers or one of the sojourners who are in your land within your towns. You shall give him his wages on the same day, before the sun sets (for he is poor and counts on it), lest he cry against you to the LORD, and you be guilty of sin.' PROTECTING the POOR. They have NO savings — live DAY BY DAY. James 5:4 echoes this threat to wicked employers.",
+    "language": "en",
+    "options": [
+      "Pay end of month (according to the text's framing)",
+      "PAY WAGES the SAME DAY — do NOT let sun set on WAGES; the POOR depends on WAGES; if not, he CRIES to the LORD, you SIN",
+      "Pay end of year (per the textual narrative) (in the story's sequence)",
+      "May not pay if little (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Pay wages same day",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 26,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Deuteronomy 26:1-11, on entering the land, each brings FIRSTFRUITS — to where? Recites what?",
+    "explanation": "Deuteronomy 26:5-9 — 'And you shall make response before the LORD your God, \"A wandering Aramean was my father. And he went down into Egypt and sojourned there... And the Egyptians treated us harshly and humiliated us... Then we cried to the LORD... and the LORD heard our voice... And the LORD brought us out of Egypt with a mighty hand and an outstretched arm... And now, behold, I bring the first of the fruit of the ground.\"' ISRAEL'S CONFESSION at tithing = remembering redemption.",
+    "language": "en",
+    "options": [
+      "To Sinai — read law (per the textual narrative) (in the story's sequence)",
+      "Home — private thanks (as described in the passage) (as the text indicates)",
+      "Border — thank king (according to the text's framing)",
+      "Bring to PLACE God CHOSE — recite 'My father was a wandering ARAMEAN... led out of Egypt...' (summary creed of Israel's redemption)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Firstfruits - Aramean confession",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 4,
+    "verseStart": 24,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Deuteronomy 4:24, what is the LORD your God? + GOD of what?",
+    "explanation": "Deuteronomy 4:24 — 'For the LORD your God is a consuming fire, a jealous God.' 'JEALOUS' (qanna) = will not share his throne with any other god. 'CONSUMING FIRE' = trait of ABSOLUTE HOLINESS — does not tolerate sin. CITED in Hebrews 12:29 to warn NT believers. The God OF the new covenant is still the CONSUMING FIRE God.",
+    "language": "en",
+    "options": [
+      "A CONSUMING FIRE — a JEALOUS God",
+      "Tall trees (per the textual narrative)",
+      "Tall mountain (as described in the passage)",
+      "Deep river (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Consuming fire + jealous",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 7,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Deuteronomy 7:25-26, what must Israel do with Canaanite IDOLS? May they take the silver + gold?",
+    "explanation": "Deuteronomy 7:25-26 — 'The carved images of their gods you shall burn with fire. You shall not covet the silver or the gold that is on them or take it for yourselves, lest you be ensnared by it, for it is an abomination to the LORD your God. And you shall not bring an abominable thing into your house and become devoted to destruction like it. You shall utterly detest and abhor it, for it is devoted to destruction.' The story of ACHAN (Joshua 7) — VIOLATED this principle.",
+    "language": "en",
+    "options": [
+      "Keep gold + silver — destroy figure (as described in the passage)",
+      "Sell to foreigners — profit (according to the text's framing)",
+      "MUST BURN — do NOT covet silver + gold on them — do NOT bring into house (lest you BE SNARED) — must UTTERLY DETEST",
+      "Mix with food (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Burn - don't covet idol gold",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 13,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Deuteronomy 13:6-11, IF a CLOSE one (brother + child + wife + dear friend) SECRETLY ENTICES to other gods — what?",
+    "explanation": "Deuteronomy 13:6-11 — 'If your brother... or your son or your daughter or the wife you embrace or your friend who is as your own soul entices you secretly, saying, \"Let us go and serve other gods\"... you shall not yield to him or listen to him, nor shall your eye pity him, nor shall you spare him, nor shall you conceal him. But you shall kill him. Your hand shall be first against him to put him to death, and afterward the hand of all the people. So all Israel shall hear and fear and never again do any such wickedness as this among you.' STRICT to protect COVENANT PURITY.",
+    "language": "en",
+    "options": [
+      "Persuade — with love (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Overlook — they're family (according to the text's framing) (per the original content)",
+      "Take to court — normal trial (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "Do NOT consent + DO NOT listen + DO NOT pity + DO NOT spare; you must KILL them — your HAND first, then ALL the people stone; for they tried to LURE you from the LORD"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Close one entices - must kill",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 15,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Deuteronomy 15:7-11, regarding the POOR among Israel, what must the wealthy DO?",
+    "explanation": "Deuteronomy 15:7-11 — 'If among you, one of your brothers should become poor... you shall not harden your heart or shut your hand against your poor brother, but you shall open your hand to him and lend him sufficient for his need... Take care lest there be an unworthy thought in your heart and you say, \"The seventh year, the year of release is near,\" and your eye look grudgingly on your poor brother, and you give him nothing, and he cry to the LORD against you, and you be guilty of sin.' PRINCIPLE: do NOT exploit the POOR through financial planning.",
+    "language": "en",
+    "options": [
+      "Stay away (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "DO NOT HARDEN HEART + DO NOT SHUT HAND — OPEN your hand + lend ENOUGH for what they NEED; do NOT think 'year 7 is NEAR' (debt cancellation) and refuse — the POOR will CRY to LORD, you'll BE GUILTY",
+      "Judge each person (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "Sell to them immediately (as described in the passage) (per the original content) (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Open hand to poor",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 17,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Deuteronomy 17:8-13, DIFFICULT JUDGMENTS (disputes, manslaughter, lawsuits) — bring where? Final RULING by whom?",
+    "explanation": "Deuteronomy 17:8-13 — 'If any case arises requiring decision between one kind of homicide and another, one kind of legal right and another, or one kind of assault and another, any case within your towns that is too difficult for you, then you shall arise and go up to the place that the LORD your God will choose. And you shall come to the Levitical priests and to the judge who is in office in those days, and you shall consult them, and they shall declare to you the decision.' Highest court = place of worship. Anti-rebellion (17:12-13).",
+    "language": "en",
+    "options": [
+      "Market — majority decides (according to the text's framing)",
+      "Field — king decides (per the textual narrative) (in the story's sequence)",
+      "To the PLACE God CHOSE — Levitical PRIESTS + JUDGE — they DECIDE the verdict; disobedience = DEATH",
+      "Patriarch's house — patriarch decides (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Difficult cases to chosen place",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 22,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Deuteronomy 22:6-7, if you find a NEST with mother bird sitting — what may you do + NOT do?",
+    "explanation": "Deuteronomy 22:6-7 — 'If you come across a bird's nest in any tree or on the ground, with young ones or eggs and the mother sitting on the young or on the eggs, you shall not take the mother with the young. You shall let the mother go, but the young you may take for yourself, that it may go well with you, and that you may live long.' NATURE PROTECTION LAW. Conservation: release mother → more offspring. BLESSING for not being greedy. Same spirit as Lev 22:28 (NOT slaughter mother + young same day), Ex 23:19 (NOT boil kid in mother's milk).",
+    "language": "en",
+    "options": [
+      "May take the YOUNG + eggs — but NOT take the MOTHER + young — must LET the MOTHER GO for BLESSING + long life",
+      "Take both mother + young (as described in the passage) (per the original content)",
+      "Leave all (per the textual narrative) (in the story's sequence)",
+      "Take only mother (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Release mother bird",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 25,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Deuteronomy 25:5-10, the LEVIRATE LAW — if a husband DIES without sons — the brother-in-law must do what?",
+    "explanation": "Deuteronomy 25:5-10 — 'If brothers dwell together, and one of them dies and has no son, the wife of the dead man shall not be married outside the family to a stranger. Her husband's brother shall go in to her and take her as his wife and perform the duty of a husband's brother to her. And the first son whom she bears shall succeed to the name of his dead brother... And if the man does not wish to take his brother's wife, then his brother's wife shall go up to the gate to the elders... Then his brother's wife shall go up to him in the presence of the elders and pull his sandal off his foot and spit in his face. And she shall answer and say, \"So shall it be done to the man who does not build up his brother's house.\" And the name of his house shall be called in Israel, \"The house of him who had his sandal pulled off.\"' RUTH + Boaz (Ruth 4) applies this. TAMAR's story (Gen 38) before the Mosaic law.",
+    "language": "en",
+    "options": [
+      "Leave widow alone (per the textual narrative) (in the story's sequence) (per the original content)",
+      "Sell to another family (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "Make new marriage — for practical reasons (as described in the passage) (cross-referenced with related passages)",
+      "MARRY BROTHER'S WIDOW — first SON named after DECEASED BROTHER — preserve name; if REFUSE: widow REMOVES SHOE, SPITS in face, family becomes 'HOUSE of the UNSANDALED'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "Brother marries widow",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 33,
+    "verseStart": 26,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Deuteronomy 33:26-29, MOSES blessed Israel — NO one (NATION) is LIKE whom?",
+    "explanation": "Deuteronomy 33:26-29 — 'There is none like God, O Jeshurun, who rides through the heavens to your help... Happy are you, O Israel! Who is like you, a people saved by the LORD, the shield of your help, and the sword of your triumph! Your enemies shall come fawning to you, and you shall tread upon their backs.' Conclusion of Moses's BLESSING for the 12 tribes (33:1-25). Before Moses dies.",
+    "language": "en",
+    "options": [
+      "No one like Abraham (as described in the passage) (as the text indicates)",
+      "NO NATION like ISRAEL — saved by God — the LORD is your SHIELD + the SWORD of GLORY; HAPPY are you, ISRAEL!",
+      "No one like Moses (per the textual narrative) (in the story's sequence)",
+      "No one like David (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Deuteronomy",
+      "Pentateuch",
+      "No nation like Israel",
+      "Advanced"
+    ]
   }
 ]
