@@ -537,5 +537,785 @@
       "Thư tín",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Phi-e-rơ 1:13, các tín hữu phải tiết chế và đặt trọn niềm trông cậy vào điều gì?",
+    "explanation": "1 Phi-e-rơ 1:13 — 'Vậy, anh em hãy bền chí như thể thắt lưng, hãy tiết độ, lấy sự trông cậy trọn vẹn đợi chờ ơn sẽ ban cho mình trong khi Đức Chúa Jêsus Christ hiện ra.' 'THẮT LƯNG TÂM TRÍ' (anazōsamenoi tas osphyas) = chuẩn bị tâm trí cho việc trọng đại — như người Do Thái xưa thắt áo dài lại để chạy. Mục tiêu = ÂN ĐIỂN tương lai trong ngày Christ hiện ra.",
+    "language": "vi",
+    "options": [
+      "Vào sức mình (như được mô tả trong sách)",
+      "Vào tài sản (theo cách trình bày của text)",
+      "Vào ÂN ĐIỂN sẽ ban cho khi Đức Chúa Jêsus Christ HIỆN RA",
+      "Vào tổ phụ (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Trông cậy ơn khi Christ hiện ra",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Phi-e-rơ 1:9, kết quả của đức tin các tín hữu là gì?",
+    "explanation": "1 Phi-e-rơ 1:9 — 'Nhận được phần thưởng về đức tin anh em, là sự cứu rỗi linh hồn mình.' 'TELOS' (kết quả/cuối cùng) = đích đến của đức tin. KHÔNG phải lời hứa thuộc thể — mà CỨU LINH HỒN. Khác với 'phúc âm thịnh vượng' — sự cứu rỗi đời đời, không phải lợi ích vật chất.",
+    "language": "vi",
+    "options": [
+      "Là sự giàu có vĩnh cửu",
+      "Là sự CỨU RỖI LINH HỒN mình",
+      "Là phép lạ thấy được",
+      "Là sự sống lâu trên đất"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Cứu rỗi linh hồn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo 1 Phi-e-rơ 1:10-12, các tiên tri Cựu Ước đã làm gì về sự cứu rỗi này, và ai chiếu sáng cho họ?",
+    "explanation": "1 Phi-e-rơ 1:10-12 — 'Về sự cứu rỗi đó, các đấng tiên tri đã tìm tòi tra xét, các đấng đó đã nói tiên tri về ân điển định sẵn cho anh em; nghĩa là tìm cho biết thời kỳ nào và thời kỳ cách nào mà Thánh Linh Đấng Christ ở trong lòng các đấng ấy đã chỉ cho, là khi làm chứng trước về sự đau đớn của Đấng Christ và về sự vinh hiển sẽ theo sau... Ấy là những sự mà các thiên sứ cũng ước ao xem thấu.' 3 nhóm liên quan: TIÊN TRI cũ + TÍN HỮU mới + THIÊN SỨ.",
+    "language": "vi",
+    "options": [
+      "Họ tin và truyền lại — bởi giáo hội (như được mô tả trong sách)",
+      "Họ chép xuống — bởi vua (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Họ giảng dạy — bởi Phao-lô (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Họ TÌM TÒI và TRA XÉT — Đức Thánh Linh CỦA CHRIST trong họ ĐÃ CHỈ TRƯỚC về sự thống khổ + sự vinh hiển sau đó của Christ — đến nỗi THIÊN SỨ ƯỚC AO XEM"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Tiên tri tìm tòi + thiên sứ ước ao",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo 1 Phi-e-rơ 1:14, các tín hữu là 'CON CÁI VÂNG PHỤC' — KHÔNG được làm theo điều gì?",
+    "explanation": "1 Phi-e-rơ 1:14 — 'Anh em đã làm con cái vâng phục, thì chớ có làm theo sự dâm dục, là sự cai trị trong anh em ngày trước, về lúc anh em còn mê muội.' 'TƯ DỤC HƯ KHÔNG' (epithymiais) trước Christ. Tín hữu = CON CÁI MỚI — không thể sống theo BỐ CŨ (xác thịt). Câu kế (1:15) — 'phải nên thánh' đáp lại không vâng theo dục vọng.",
+    "language": "vi",
+    "options": [
+      "Theo những TƯ DỤC HƯ KHÔNG mình lúc còn ngu muội (chưa biết Chúa)",
+      "Theo người học rộng (theo cách trình bày của text)",
+      "Theo gương các tổ phụ (như được mô tả trong sách)",
+      "Theo phong tục (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Chớ theo tư dục cũ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Phi-e-rơ 1:17, vì các tín hữu kêu cầu Đức Chúa Trời là Cha — Đấng XÉT ĐOÁN không thiên vị — họ phải làm gì trong thời gian ở trọ trên đất?",
+    "explanation": "1 Phi-e-rơ 1:17 — 'Nếu anh em xưng Đấng không tây vị, xét đoán từng người theo việc họ làm, là Cha, thì hãy lấy lòng kính sợ mà ăn ở trong thời kỳ ở trọ đời nầy.' Hai mặt: CHA (gần gũi) + ĐẤNG XÉT ĐOÁN (kính sợ). 'Ở TRỌ' (paroikias) = ngoại kiều — tín hữu là khách lạ trên đất, công dân thiên đàng.",
+    "language": "vi",
+    "options": [
+      "Nghỉ ngơi tận hưởng cuộc sống",
+      "Tích lũy của cải",
+      "Sống TRONG SỰ KÍNH SỢ",
+      "Tham gia chính trị"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Sống trong kính sợ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo 1 Phi-e-rơ 1:23, các tín hữu được SINH LẠI bởi giống nào?",
+    "explanation": "1 Phi-e-rơ 1:23 — 'Anh em đã được lại sanh, chẳng phải bởi giống hay hư nát, nhưng bởi giống chẳng hư nát, là bởi lời hằng sống và bền vững của Đức Chúa Trời.' 'GIỐNG' (sporas) = hạt giống. Sự sống mới = qua hạt KHÔNG HƯ NÁT (Lời) — không phải qua di truyền học. Khác Adam (giống hư nát) vs Christ (giống đời đời).",
+    "language": "vi",
+    "options": [
+      "Bởi giống loài người (theo cách trình bày của text)",
+      "Bởi giống Y-sơ-ra-ên (như được mô tả trong sách)",
+      "Bởi giống đức tin (xét trong văn cảnh)",
+      "Bởi giống KHÔNG hư nát — bởi LỜI hằng SỐNG và còn lại đời đời của Đức Chúa Trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Sinh lại bởi lời hằng sống",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Phi-e-rơ 2:1, các tín hữu phải LỘT BỎ những gì để giống như trẻ con tìm SỮA THUẦN của Lời?",
+    "explanation": "1 Phi-e-rơ 2:1 — 'Vậy anh em đã từ bỏ mọi điều độc ác, mọi điều gian giảo, mọi thứ giả trá, lòng ghen ghét và sự nói hành.' 5 thứ phải LỘT (apothemenoi): điều dữ (kakian) + dối (dolon) + giả hình (hypokriseis) + ghen tị (phthonous) + nói hành (katalalias). Đặc biệt liên quan QUAN HỆ — vì cản trở SỰ TĂNG TRƯỞNG (2:2 sữa Lời).",
+    "language": "vi",
+    "options": [
+      "Mọi tội nói chung (như được mô tả trong sách)",
+      "Mọi điều DỮ + mọi điều DỐI TRÁ + sự GIẢ HÌNH + sự GHEN TỴ + mọi sự NÓI HÀNH",
+      "Mọi sự suy nghĩ (xét trong văn cảnh)",
+      "Mọi sự yếu đuối (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Lột 5 tội xã hội",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo 1 Phi-e-rơ 2:6 (trích Ê-sai 28:16), Đức Chúa Trời đã đặt tại Si-ôn cái gì?",
+    "explanation": "1 Phi-e-rơ 2:6 — 'Vì trong Kinh thánh có chép rằng: Nầy, ta đặt tại Si-ôn hòn đá góc nhà đã chọn lựa và quí báu; ai tin đến đá ấy sẽ không bị xấu hổ.' Trích Ê-sai 28:16. Phi-e-rơ liên kết Christ = HÒN ĐÁ GÓC. Câu kế (2:7) — đối với kẻ tin = quý báu; đối với kẻ chẳng tin = đá vấp ngã (trích Thi Thiên 118:22 + Ê-sai 8:14).",
+    "language": "vi",
+    "options": [
+      "Một HÒN ĐÁ GÓC quý báu, đã được chọn — kẻ nào TIN cậy hòn đá ấy KHÔNG bị xấu hổ",
+      "Một đền thờ vĩ đại (như được mô tả trong sách)",
+      "Một thầy tế lễ (theo cách trình bày của text)",
+      "Một vua (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Christ hòn đá góc Si-ôn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Phi-e-rơ 2:7-8, hòn đá BỊ THỢ XÂY BỎ ĐI đã trở nên gì?",
+    "explanation": "1 Phi-e-rơ 2:7-8 — 'Vậy nên, cho anh em là kẻ đã tin, thì là đá quí; nhưng cho những kẻ không tin, thì Hòn đá mà bị thợ xây nhà loại ra, bèn trở nên đá góc nhà, là Đá gây cho vấp váp, là đá lớn làm cho sa ngã.' Trích Thi Thiên 118:22 + Ê-sai 8:14. Christ KHÔNG trung lập — TÍNH 2 CHIỀU: đá QUÝ (tin) hay đá VẤP (không tin).",
+    "language": "vi",
+    "options": [
+      "Đã bị mất tích (theo cách trình bày của text)",
+      "Đã bị nghiền nát (như được mô tả trong sách)",
+      "Đã trở nên ĐÁ ĐẦU GÓC NHÀ — nhưng đối với kẻ chẳng tin là ĐÁ VẤP CHÂN, hòn ĐÁ LÀM CHO SA NGÃ",
+      "Đã được chôn (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Đá bị bỏ trở nên đá góc",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Phi-e-rơ 2:10 (trích Ô-sê), trước kia các tín hữu (dân ngoại) là gì? Nay là gì?",
+    "explanation": "1 Phi-e-rơ 2:10 — 'Anh em ngày trước không phải là một dân, mà bây giờ là dân Đức Chúa Trời, trước không được thương xót, mà bây giờ được thương xót.' Trích Ô-sê 1:9-10, 2:23. Lời tiên tri về Y-sơ-ra-ên bị BỎ + KHÔI PHỤC nay áp dụng cho HỘI THÁNH dân ngoại được TIẾP NHẬN. Câu này được Phao-lô cũng dùng (Rô 9:25-26).",
+    "language": "vi",
+    "options": [
+      "Trước là người tốt — Nay là người xấu (theo cách trình bày của text)",
+      "Trước CHẲNG PHẢI một dân — Nay là DÂN của Đức Chúa Trời; trước CHẲNG ĐƯỢC THƯƠNG XÓT — Nay đã được THƯƠNG XÓT",
+      "Trước là người Do Thái — Nay là dân ngoại (như được mô tả trong sách)",
+      "Trước là tự do — Nay là tôi mọi (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Trước không phải dân — nay là dân Chúa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo 1 Phi-e-rơ 2:12, các tín hữu phải có cách ăn ở thế nào giữa DÂN NGOẠI? Mục đích là gì?",
+    "explanation": "1 Phi-e-rơ 2:12 — 'Phải ăn ở ngay lành giữa dân ngoại, hầu cho họ là kẻ vẫn gièm chê anh em như người gian ác, đã thấy việc lành anh em, thì đến ngày Chúa thăm viếng, họ ngợi khen Đức Chúa Trời.' Cùng dạy Mat 5:16 (sự sáng các ngươi). 'NGÀY THĂM VIẾNG' = ngày Đức Chúa Trời ban ơn (epskeptomai) — kẻ chống đối có thể được cứu qua chứng từ tín hữu.",
+    "language": "vi",
+    "options": [
+      "Sống ẩn dật — không cần phô bày (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Tranh luận thường xuyên — để chứng tỏ lẽ thật (như được mô tả trong sách)",
+      "Lảng tránh người ngoại — tránh ô uế (theo cách trình bày của text)",
+      "Cách ăn ở TỐT giữa dân ngoại — hầu cho khi họ NÓI XẤU như người LÀM ÁC, họ sẽ thấy VIỆC TỐT của anh em mà NGỢI KHEN Đức Chúa Trời trong NGÀY THĂM VIẾNG"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Cách ăn ở tốt giữa dân ngoại",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo 1 Phi-e-rơ 2:17, có 4 mệnh lệnh gì cho các tín hữu?",
+    "explanation": "1 Phi-e-rơ 2:17 — 'Hãy kính mọi người; yêu anh em; kính sợ Đức Chúa Trời; tôn trọng vua.' 4 mệnh lệnh xếp 2 cặp: MỌI NGƯỜI (chung) - ANH EM (đặc biệt); ĐỨC CHÚA TRỜI (kính sợ — phobos) - VUA (tôn kính — timate). Ý: kính sợ Chúa CAO HƠN tôn kính vua. Trong môi trường La Mã, kêu phục Hoàng Đế.",
+    "language": "vi",
+    "options": [
+      "TÔN KÍNH mọi người — YÊU thương anh em — KÍNH SỢ Đức Chúa Trời — TÔN KÍNH vua",
+      "Sợ vua — Sợ thầy tế — Sợ tổ phụ — Sợ người",
+      "Yêu kẻ thù — Yêu vợ — Yêu con — Yêu mình",
+      "Ngợi Chúa — Ngợi vua — Ngợi mình — Ngợi anh em"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "4 mệnh lệnh tôn kính",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Phi-e-rơ 2:24, Christ đã làm gì với tội của chúng ta trên CÂY GỖ (thập tự)? Mục đích là gì? Bởi LẰN ROI Ngài, chúng ta được gì?",
+    "explanation": "1 Phi-e-rơ 2:24 — 'Ngài gánh tội lỗi chúng ta trong thân thể Ngài trên cây gỗ, hầu cho chúng ta là kẻ đã chết về tội lỗi, được sống cho sự công bình; lại nhân những lằn đòn của Ngài mà anh em đã được lành bệnh.' Trích Ê-sai 53:5. 'CÂY GỖ' (xylon) = thập tự (cf. Phục Truyền 21:23 'rủa sả'). 'CHỮA LÀNH' chính là ý thuộc linh = tha tội — không phải chữa bệnh thân thể (dù có thể).",
+    "language": "vi",
+    "options": [
+      "Ngài quên đi tội — để chúng ta nhớ (theo cách trình bày của text)",
+      "Ngài giấu tội — để chúng ta che (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Ngài MANG TỘI chúng ta trên thân thể trên CÂY GỖ — để chúng ta CHẾT đối với tội + SỐNG cho sự công bình; bởi LẰN ROI Ngài, chúng ta được CHỮA LÀNH",
+      "Ngài tha tội đơn giản — để chúng ta vui (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Christ mang tội + chữa lành",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Phi-e-rơ 2:25, các tín hữu trước kia LẠC giống ai? Nay đã trở về với ai?",
+    "explanation": "1 Phi-e-rơ 2:25 — 'Vì anh em vốn giống như con chiên lạc, mà bây giờ đã trở về cùng Đấng chăn chiên và Giám mục của linh hồn mình.' Trích Ê-sai 53:6 ('Chúng ta thảy đều như chiên đi lạc'). Hai danh hiệu Christ: 'Đấng Chăn Chiên' (poimēn) + 'Giám Mục' (episkopos = giám sát). Câu mở thư = Phi-e-rơ tự xưng SỨ ĐỒ = giám sát; nay nói Christ MỚI là giám sát thật.",
+    "language": "vi",
+    "options": [
+      "Lạc như du khách — về với hướng dẫn",
+      "Lạc như CHIÊN — đã trở về cùng Đấng CHĂN CHIÊN + ĐẤNG GIÁM MỤC linh hồn anh em",
+      "Lạc như đứa trẻ — về với mẹ (xét trong văn cảnh)",
+      "Lạc như người mù — về với người sáng"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Chiên lạc về với Đấng Chăn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo 1 Phi-e-rơ 3:1-2, các nữ tín hữu có chồng KHÔNG TIN ĐẠO phải làm gì để THUYẾT PHỤC chồng không bằng LỜI?",
+    "explanation": "1 Phi-e-rơ 3:1-2 — 'Hỡi người làm vợ, hãy phục chồng mình, hầu cho nếu có người chồng nào không vâng theo Đạo, dẫu chẳng lấy lời khuyên bảo, chỉ bởi cách ăn ở của vợ, cũng đủ hóa theo, vì thấy cách ăn ở của chị em là tinh sạch và cung kính.' Phi-e-rơ KHÔNG ép chia tay — yêu cầu kiên nhẫn + sống lành chứng kiến. CÁCH ĂN Ở mạnh hơn LỜI.",
+    "language": "vi",
+    "options": [
+      "Phục tùng chồng — chồng có thể được CHIẾM ĐOẠT (cảm hóa) bởi CÁCH ĂN Ở TRONG SẠCH + TÔN KÍNH của vợ — KHÔNG cần nói lời",
+      "Phải giảng đạo cho chồng hằng ngày (như được mô tả trong sách)",
+      "Phải bỏ chồng để giữ đức tin (theo cách trình bày của text)",
+      "Phải ép chồng đi nhà thờ (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Phục chồng không tin đạo",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 3,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo 1 Phi-e-rơ 3:7, người chồng phải đối xử với vợ thế nào? Vì cớ gì?",
+    "explanation": "1 Phi-e-rơ 3:7 — 'Hỡi người làm chồng, hãy tỏ điều khôn ngoan ra trong sự ăn ở với vợ mình, như là với giống yếu hơn; vì họ sẽ cùng anh em hưởng phước sự sống, nên phải kính nể họ, hầu cho không điều gì làm rối loạn sự cầu nguyện của anh em.' 'GIỐNG YẾU HƠN' (asthenesterō) = thuộc thể (không thuộc linh). 'ĐỒNG KẾ TỰ' = thuộc linh ngang hàng. Đối xử ác với vợ → cầu nguyện bị NGĂN TRỞ.",
+    "language": "vi",
+    "options": [
+      "Coi vợ như đầy tớ — để giữ kỷ luật (như được mô tả trong sách)",
+      "Coi vợ ngang hàng — để hoà bình (theo cách trình bày của text)",
+      "Coi vợ thấp hơn — như văn hóa (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Tỏ ra HIỂU BIẾT (sống cùng) — đối với vợ là GIỐNG YẾU hơn — TÔN KÍNH (như đồng kế tự ơn sự sống) — kẻo SỰ CẦU NGUYỆN bị NGĂN TRỞ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Chồng tôn kính vợ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 3,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Phi-e-rơ 3:9, các tín hữu CHỚ làm gì khi bị làm ác? Phải làm gì thay?",
+    "explanation": "1 Phi-e-rơ 3:9 — 'Đừng lấy ác trả ác, cũng đừng lấy rủa sả trả rủa sả; trái lại phải chúc phước, ấy vì điều đó mà anh em được gọi để hưởng phước lành.' Cùng dạy Chúa Jêsus (Mat 5:44, Lu 6:28). Tín hữu KHÔNG có quyền 'mắt đền mắt' — VỊ THẾ là CHÚC PHƯỚC. Vì sao? VÌ MÌNH ĐÃ NHẬN PHƯỚC từ Chúa.",
+    "language": "vi",
+    "options": [
+      "Báo thù — bằng cách công bằng (như được mô tả trong sách)",
+      "Im lặng — không phản ứng (theo cách trình bày của text)",
+      "Chớ LẤY ÁC TRẢ ÁC, lấy RỦA SẢ trả RỦA SẢ — trái lại, phải CHÚC PHƯỚC, vì các tín hữu đã được kêu gọi để ấy mà HƯỞNG phước",
+      "Tránh xa — ẩn náu (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Lấy phước trả ác",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 3,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Phi-e-rơ 3:13-14, ai sẽ HẠI tín hữu khi họ là kẻ TỐT LÀNH? Nếu chịu khổ vì sự công bình thì ra sao?",
+    "explanation": "1 Phi-e-rơ 3:13-14 — 'Vả lại, nếu anh em làm điều lành, thì nào ai làm dữ lại cho anh em? Nếu anh em phải vì sự công bình mà chịu khổ, ấy thật là có phước. Chớ sợ điều họ sợ và đừng rối trí.' Trích Ê-sai 8:12-13. Ý: TỐT LÀNH thường được người khen — NHƯNG nếu vẫn bị hại, là CỘNG TÁC với CHRIST trong khổ + được PHƯỚC LỚN.",
+    "language": "vi",
+    "options": [
+      "Mọi người — bị ghét tự nhiên (như được mô tả trong sách)",
+      "Ai có thể hại — nếu chịu khổ vì SỰ CÔNG BÌNH thì có PHƯỚC; chớ sợ điều họ sợ, đừng kinh hãi",
+      "Chỉ kẻ thù — phải đề phòng (xét trong văn cảnh)",
+      "Không ai — bảo đảm an toàn (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Phước cho người chịu khổ vì công bình",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo 1 Phi-e-rơ 4:7, sự kết cuộc của muôn vật ĐÃ GẦN — vậy các tín hữu phải làm gì?",
+    "explanation": "1 Phi-e-rơ 4:7 — 'Sự cuối cùng của muôn vật đã gần; vậy hãy khôn ngoan, tỉnh thức mà cầu nguyện.' 'KẾT CUỘC' (telos) đã gần — không phải ngày tháng cụ thể mà NGUYÊN TẮC: tín hữu sống TRONG ĐỢI Christ tái lâm. 2 mệnh lệnh: KHÔN NGOAN (sōphroneō, sober-minded) + TỈNH THỨC (nēphō, watchful) — vì cầu nguyện.",
+    "language": "vi",
+    "options": [
+      "Phải kêu la cảnh báo (xét trong văn cảnh)",
+      "Phải tích trữ thực phẩm (như được mô tả trong sách)",
+      "Phải tách khỏi xã hội (theo cách trình bày của text)",
+      "Phải KHÔN NGOAN tự kiềm chế (TIẾT ĐỘ) và TỈNH THỨC để CẦU NGUYỆN"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Tận thế gần — khôn + tỉnh + cầu",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo 1 Phi-e-rơ 1:20, Christ đã được CHỌN trước khi nào, và được TỎ RA khi nào?",
+    "explanation": "1 Phi-e-rơ 1:20 — 'Đã định sẵn trước buổi sáng thế, và hiện ra trong cuối các thời kỳ vì cớ anh em.' 2 chữ KEY: 'ĐỊNH TRƯỚC' (proegnōsmenou — foreknown) trước SÁNG THẾ + 'HIỆN RA' (phanerōthentos) trong THỜI CUỐI. Christ KHÔNG phải kế hoạch B sau khi A-đam ngã — mà là KẾ HOẠCH CHÍNH từ trước. Cùng tư tưởng Khải 13:8.",
+    "language": "vi",
+    "options": [
+      "Đã được CHỌN từ TRƯỚC KHI sáng thế — và đã được TỎ RA trong NHỮNG THỜI ĐẠI CUỐI CÙNG vì cớ chúng ta",
+      "Đã được chọn khi sáng thế — và đã được tỏ ra ngay sau Adam",
+      "Đã được chọn khi gọi Áp-ra-ham — và đã được tỏ ra qua Môi-se",
+      "Đã được chọn khi Đa-vít — và đã được tỏ ra ở Bết-lê-hem"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Christ định trước sáng thế",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Phi-e-rơ 2:4-5, Christ là HÒN ĐÁ SỐNG bị loài người loại ra — các tín hữu được dựng lên thành gì?",
+    "explanation": "1 Phi-e-rơ 2:4-5 — 'Hãy đến gần Ngài, là hòn đá sống, bị người ta loại ra, song được chọn và quí trước mặt Đức Chúa Trời, và anh em cũng như đá sống, được xây nên nhà thiêng liêng, làm chức tế lễ thánh, đặng dâng của tế lễ thiêng liêng, nhờ Đức Chúa Jêsus Christ mà đẹp ý Đức Chúa Trời.' MỖI tín hữu = ĐÁ SỐNG; cộng đoàn = ĐỀN THỜ; tất cả = THẦY TẾ LỄ. Khác Cựu Ước (chỉ Lê-vi). Khái niệm 'thầy tế lễ chung' (priesthood of all believers).",
+    "language": "vi",
+    "options": [
+      "Một dân tộc tự do (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Một NHÀ THUỘC LINH — một CHỨC TẾ LỄ THÁNH — để dâng các CỦA TẾ LỄ THUỘC LINH (đẹp lòng) Đức Chúa Trời nhờ Đấng Christ",
+      "Một quân đội thiêng liêng (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Một hội đồng tôn giáo (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Đền thờ + thầy tế lễ chung",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Phi-e-rơ 2:13-14, các tín hữu phải PHỤC TÙNG ai? Vì cớ gì?",
+    "explanation": "1 Phi-e-rơ 2:13-15 — 'Vì cớ Chúa, hãy phục theo mọi phép tắc loài người lập lên: hoặc vua, như đấng rất cao... vì anh em làm điều lành để ngăn miệng những kẻ ngu muội dại dột.' Phi-e-rơ viết DƯỚI thời Nê-rô — vẫn dạy phục tùng. Lý do KHÔNG phải vua xứng đáng — VÌ CỚ CHÚA. Cùng tư tưởng Rô-ma 13. Có giới hạn (Công 5:29 'phải vâng lời Đức Chúa Trời hơn loài người').",
+    "language": "vi",
+    "options": [
+      "Chỉ phục tùng Đức Chúa Trời — bỏ qua chính quyền (như được mô tả trong sách)",
+      "Phục tùng vua nếu vua tốt — chống nếu xấu (theo cách trình bày của text)",
+      "Phục tùng MỌI THẨM QUYỀN của loài người (vua tối cao + quan trấn thủ) VÌ CỚ CHÚA — vì đó là Ý ĐỨC CHÚA TRỜI: bịt miệng kẻ ngu",
+      "Chỉ phục tùng người Do Thái (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Phục tùng vì cớ Chúa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 3,
+    "verseStart": 19,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo 1 Phi-e-rơ 3:19-20, Đức Chúa Jêsus đã GIẢNG cho ai sau khi chịu chết? Liên kết với thời nào?",
+    "explanation": "1 Phi-e-rơ 3:19-20 — 'Ấy bởi đồng một linh đó, Ngài đi giảng cho các linh hồn bị tù, tức là kẻ bội nghịch thuở trước, về thời kỳ Nô-ê, khi Đức Chúa Trời nhịn nhục chờ đợi, chiếc tàu đóng nên, trong đó có ít người được cứu bởi nước, là chỉ có tám người.' CÂU KHÓ — nhiều giải thích: (a) Christ giảng QUA Nô-ê cho thế hệ ấy; (b) Christ tuyên bố chiến thắng trên các linh ác sau Phục Sinh. KHÔNG nói rõ. Phi-e-rơ liên kết NƯỚC LỤT + BÁP-TÊM (3:21).",
+    "language": "vi",
+    "options": [
+      "Cho dân Y-sơ-ra-ên — thời các tổ phụ (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Cho thiên sứ — thời sáng thế (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Cho dân ngoại — thời Áp-ra-ham (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Bởi Linh, Ngài đã đi GIẢNG cho các LINH HỒN BỊ TÙ — những kẻ KHÔNG VÂNG PHỤC trong thời NÔ-Ê khi tàu được đóng (8 người được cứu qua nước)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Christ giảng cho linh hồn bị tù",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo 1 Phi-e-rơ 4:1, vì Christ đã chịu khổ trong xác thịt, các tín hữu cũng phải lấy gì làm khí giới? Ai chịu khổ trong xác thịt thì sao?",
+    "explanation": "1 Phi-e-rơ 4:1 — 'Vậy, vì Đấng Christ đã chịu khổ trong xác thịt, thì anh em cũng phải lấy sự đó làm giáp trụ, vì người nào đã chịu khổ trong xác thịt, thì đã dứt khỏi tội lỗi.' 'KHÍ GIỚI' (hoplisasthe) = vũ trang. Ý: chịu khổ vì đức tin = QUYẾT ĐỊNH KHÔNG TÁI NHIỄM tội lỗi cũ. Người đã chịu khổ KHÔNG còn coi tội lỗi là quyến rũ.",
+    "language": "vi",
+    "options": [
+      "LẤY CÙNG MỘT TƯ TƯỞNG (đó) làm khí giới — vì kẻ đã chịu khổ trong xác thịt thì ĐÃ TỪ BỎ TỘI LỖI",
+      "Lấy của tế lễ — để được tha thứ (như được mô tả trong sách)",
+      "Lấy quyền năng — để chiến đấu (theo cách trình bày của text)",
+      "Lấy luật pháp — để hướng dẫn (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Tư tưởng Christ làm khí giới",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 4,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Phi-e-rơ 4:6, Tin Lành đã được giảng cho AI? Mục đích là gì?",
+    "explanation": "1 Phi-e-rơ 4:6 — 'Vì ấy bởi điều đó mà Tin Lành cũng đã giảng ra cho kẻ chết, hầu cho sau khi chịu xét đoán theo loài người về phần xác, thì họ được sống theo Đức Chúa Trời về phần hồn.' KHÓ HIỂU — có 2 giải thích chính: (a) tín hữu đã chết = nghe Tin Lành khi còn sống; (b) Christ giảng Tin Lành cho linh hồn người chết. KHÔNG nói rõ. Liên kết với 3:19. Trọng tâm: kết quả = SỐNG theo Linh.",
+    "language": "vi",
+    "options": [
+      "Cho người Do Thái — để họ trở lại (như được mô tả trong sách)",
+      "Cho người ngoại — để họ tin (theo cách trình bày của text)",
+      "Cho cả KẺ CHẾT — hầu cho họ bị xét đoán theo loài người trong xác thịt, nhưng SỐNG theo Đức Chúa Trời trong tâm linh",
+      "Cho thiên sứ — để học (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Tin Lành cho kẻ chết",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 4,
+    "verseStart": 10,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo 1 Phi-e-rơ 4:10-11, mỗi tín hữu nhận ÂN TỨ phải làm gì với nó? Ai nói thì phải nói thế nào?",
+    "explanation": "1 Phi-e-rơ 4:10-11 — 'Mỗi người trong anh em hãy lấy ơn mình đã được mà giúp lẫn nhau, khác nào người quản lý trung tín giữ các thứ ơn của Đức Chúa Trời. Ví bằng có người giảng luận, thì hãy giảng như rao lời sấm truyền của Đức Chúa Trời; nếu có kẻ làm chức gì, thì hãy làm như nhờ sức Đức Chúa Trời ban.' 'NGƯỜI QUẢN LÝ' (oikonomoi) = stewards. 'LỜI SẤM' (logia theou) = oracle of God.",
+    "language": "vi",
+    "options": [
+      "Giữ ân tứ cho mình — để bồi dưỡng (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Khoe ân tứ — để được tôn vinh (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Bán ân tứ — để có lợi nhuận (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "PHẢI HẦU VIỆC LẪN NHAU như NGƯỜI QUẢN LÝ TỐT về ân điển muôn màu — Ai NÓI thì hãy nói NHƯ LỜI CỦA ĐỨC CHÚA TRỜI; ai PHỤC VỤ thì hãy phục vụ bởi sức ĐỨC CHÚA TRỜI BAN"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Ân tứ phục vụ như quản lý",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 4,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Phi-e-rơ 4:14, ai bị MẮNG NHIẾC vì danh Christ thì có gì?",
+    "explanation": "1 Phi-e-rơ 4:14 — 'Ví bằng anh em vì cớ danh Đấng Christ chịu sỉ nhục, thì anh em có phước; vì sự vinh hiển và Thánh Linh của Đức Chúa Trời đậu trên anh em.' 'THẦN VINH HIỂN' (to tēs doxēs Pneuma) = Đức Thánh Linh. Hình ảnh: như Linh Đức Chúa Trời ĐẬU trên đền tạm Cựu Ước (Xuất 40:34) → nay Linh ĐẬU trên tín hữu chịu khổ. Cùng dạy Mat 5:11-12.",
+    "language": "vi",
+    "options": [
+      "Nỗi xấu hổ — phải kín đáo (theo cách trình bày của text)",
+      "Là PHƯỚC — vì THẦN VINH HIỂN, là Thần Đức Chúa Trời, đậu trên các tín hữu",
+      "Sự an bình — không phản ứng (như được mô tả trong sách)",
+      "Lý do từ chức (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Bị mắng vì Christ — Thần Vinh đậu",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 4,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo 1 Phi-e-rơ 4:17, sự xét đoán BẮT ĐẦU từ đâu? Vậy kết cuộc của những kẻ KHÔNG VÂNG PHỤC Tin Lành sẽ ra sao?",
+    "explanation": "1 Phi-e-rơ 4:17 — 'Vì thời kỳ đã đến, là khi sự phán xét sẽ khởi từ nhà Đức Chúa Trời; vả, nếu khởi từ chúng ta, thì sự cuối cùng của những kẻ chẳng vâng theo Tin Lành Đức Chúa Trời sẽ ra thế nào?' 'NHÀ ĐỨC CHÚA TRỜI' = Hội Thánh. Lập luận từ trên xuống: nếu CON Cha bị thử lửa, kẻ KHÔNG con phải sao? Cùng tư tưởng Ê-xê-chi-ên 9:6 (xét đoán bắt đầu từ đền thánh).",
+    "language": "vi",
+    "options": [
+      "Từ NHÀ ĐỨC CHÚA TRỜI — vậy kẻ không vâng theo Tin Lành Đức Chúa Trời sẽ ra thế nào?",
+      "Từ Y-sơ-ra-ên — kẻ ngoại sẽ được tha thứ (như được mô tả trong sách)",
+      "Từ La Mã — Hội Thánh sẽ tránh được (xét trong văn cảnh)",
+      "Từ ngày tháng định — không thể đoán (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Xét đoán từ nhà Chúa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 4,
+    "verseStart": 19,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Phi-e-rơ 4:19, ai chịu khổ theo Ý ĐỨC CHÚA TRỜI thì phải làm gì với linh hồn mình?",
+    "explanation": "1 Phi-e-rơ 4:19 — 'Vậy những kẻ chịu khổ theo ý muốn Đức Chúa Trời, thì hãy cứ làm lành mà phó linh hồn mình cho Đấng Tạo Hóa thành tín.' 'PHÓ' (paratithesthōsan) = giao gửi cho ai bảo quản. Cùng từ Lu 23:46 'Cha ơi, tôi giao linh hồn tôi trong tay Cha'. 'ĐẤNG TẠO HÓA THÀNH TÍN' (pistos ktistēs) = nhãn hiệu DUY NHẤT này trong Tân Ước. Đức Chúa Trời tạo bạn — biết cách giữ bạn.",
+    "language": "vi",
+    "options": [
+      "Cầu xin sự giải thoát — bằng mọi cách",
+      "Đối phó với hoàn cảnh — bằng kế hoạch",
+      "GIAO LINH HỒN mình cho ĐẤNG TẠO HÓA THÀNH TÍN — và làm điều LÀNH",
+      "Phàn nàn với Hội Thánh (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Giao linh hồn cho Đấng Tạo Hóa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo 1 Phi-e-rơ 5:1-4, Phi-e-rơ khuyên các TRƯỞNG LÃO phải CHĂN dân Đức Chúa Trời thế nào, và phần thưởng của họ là gì khi ĐẤNG CHĂN TRƯỞNG hiện ra?",
+    "explanation": "1 Phi-e-rơ 5:2-4 — 'Hãy chăn bầy của Đức Chúa Trời đã giao phó cho anh em; làm việc đó chẳng phải bởi ép tình, bèn là bởi vui lòng, chẳng phải vì lợi dơ bẩn, bèn là hết lòng mà làm, chẳng phải quản trị phần trách nhậm chia cho anh em, song để làm gương tốt cho cả bầy. Khi Đấng làm đầu các kẻ chăn chiên hiện ra, anh em sẽ được mão triều thiên vinh hiển, chẳng hề tàn héo.' 'ĐẤNG CHĂN TRƯỞNG' (archipoimēn) — DUY NHẤT trong Tân Ước. Khác Hê 13:20 (Đấng Chăn LỚN), Giăng 10 (Đấng Chăn TỐT).",
+    "language": "vi",
+    "options": [
+      "Chăn vì lòng vinh hiển — nhận tiền nhiều (như được mô tả trong sách) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Chăn vì uy quyền — nhận chức cao (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Chăn vì truyền thống — nhận sự kính nể (theo cách trình bày của text) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Chăn KHÔNG MIỄN CƯỠNG nhưng vui lòng — KHÔNG vì lợi BẨN THỈU mà sốt sắng — KHÔNG quản trị HÁCH DỊCH mà LÀM GƯƠNG; khi ĐẤNG CHĂN TRƯỞNG hiện ra sẽ ban MÃO TRIỀU THIÊN VINH HIỂN không phai tàn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Phi-e-rơ",
+      "Thư tín",
+      "Chăn 3 KHÔNG + mão triều",
+      "Nâng cao"
+    ]
   }
 ]

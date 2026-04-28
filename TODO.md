@@ -65,13 +65,13 @@
 - Topics: mão triều thiên sự sống (1:12); cầu xin đức tin chớ nghi (1:6); nghèo khoe cao trọng (1:9-10); sinh bởi lời lẽ thật (1:18); nhận lời đã trồng (1:21); nghe + làm như soi gương (1:23-25); phạm 1 = phạm cả luật (2:10-11); thương xót thắng xét đoán (2:13); đức tin không việc làm vô ích (2:14, 26); Áp-ra-ham bạn của Đức Chúa Trời (2:21-23); Ra-háp việc tiếp rước thám tử (2:25); không lỡ lời = trọn vẹn (3:2); lưỡi không ai thuần hóa (3:7-8); khen Chúa + rủa loài người (3:9-10); khôn ngoan thế tục thuộc đất + xác thịt + ma quỉ (3:13-15); bông trái công bình gieo trong hòa bình (3:18); tranh cạnh từ tham dục (4:1-2); bạn thế gian = thù Chúa (4:4); Linh ghen tương + ơn cho khiêm (4:5-6); nói xấu = đoán xét luật (4:11-12); nếu Chúa muốn (4:13-15); rich weep + sét vàng bạc (5:1-3); tiếng kêu thợ gặt thấu Chúa các đạo binh (5:4); đừng oán trách (5:9); tiên tri + Gióp gương nhịn nhục (5:10-11); chớ thề (5:12); cầu nguyện đức tin cứu bệnh (5:15); Ê-li như chúng ta cầu mưa (5:17-18)
 - VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
-#### Task B2-5: 1 Peter +30 (20→50)
-- Status: [ ] TODO
-- Current: 20 (E14 M5 H1) → Target: 50 (E15 M23 H12)
-- Plan: +1 Easy + 18 Medium + 11 Hard
-- File(s): `1peter_quiz.json` + `1peter_quiz_en.json` + `scripts/append_1peter_v3b.py`
-- Strategy: Thần học chịu khổ (Christ + tín hữu); "đá sống" 2:4-10 (chức tế lễ thuộc linh); vợ chồng 3:1-7; phục tùng quyền cai trị 2:13-17; Christ giảng cho linh hồn trong tù 3:18-22; ngày của Chúa
-- Commit: `feat(seed): 1 Peter +30 V3 B2 quality expansion (20→50)`
+#### Task B2-5: 1 Peter +30 (20→50) [x] DONE 2026-04-28
+- 20→**50** (E15 M23 H12, ratio **30.0/46.0/24.0%** — gần khớp 30/45/25)
+- Pool +30: 1 Easy + 18 Medium + 11 Hard VI + 30 EN 1:1
+- Single idx: 0:7, 1:7, 2:8, 3:8 (well distributed)
+- 30 single + 0 multi
+- Topics: trông cậy ơn khi Christ hiện ra (1:13); cứu rỗi linh hồn (1:9); tiên tri tìm tòi + thiên sứ ước ao (1:10-12); chớ theo tư dục cũ (1:14); sống trong kính sợ (1:17); sinh lại bởi lời hằng sống (1:23); Christ định trước sáng thế (1:20); lột 5 tội xã hội (2:1); đền thờ thuộc linh + thầy tế lễ chung (2:4-5); Christ hòn đá góc Si-ôn (2:6-8) — đá bị bỏ trở nên đá góc; trước không phải dân nay là dân Chúa (2:10); cách ăn ở tốt giữa dân ngoại (2:12); phục tùng vì cớ Chúa (2:13-14); 4 mệnh lệnh tôn kính (2:17); Christ mang tội + chữa lành lằn roi (2:24); chiên lạc về với Đấng Chăn (2:25); vợ chinh phục chồng không đạo (3:1-2); chồng tôn kính vợ là kế tự ơn sự sống (3:7); lấy phước trả ác (3:9); phước cho người chịu khổ vì công bình (3:13-14); Christ giảng cho linh hồn bị tù (3:19-20); tư tưởng Christ làm khí giới (4:1); Tin Lành cho kẻ chết (4:6); tận thế gần — khôn + tỉnh + cầu (4:7); ân tứ phục vụ như quản lý (4:10-11); bị mắng vì Christ — Thần Vinh đậu (4:14); xét đoán từ nhà Chúa (4:17); giao linh hồn cho Đấng Tạo Hóa (4:19); chăn 3 KHÔNG + Đấng Chăn Trưởng + mão triều thiên không phai (5:1-4)
+- VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
 #### Task B2-6: 1 John +30 (20→50)
 - Status: [ ] TODO
