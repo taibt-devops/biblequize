@@ -541,5 +541,785 @@
       "Tiên tri",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Ê-xê-chi-ên 1:1, Ê-xê-chi-ên ở đâu khi nhận khải tượng đầu tiên?",
+    "explanation": "Ê-xê-chi-ên 1:1 — 'Năm thứ ba mươi, ngày mồng năm tháng tư, khi ta đương ở giữa phu tù, tại bên sông Kê-ba, các từng trời mở ra, và ta xem những sự hiện thấy của Đức Chúa Trời.' Ê-xê-chi-ên BỊ LƯU ĐÀY (lần 2 của Babylon ~ 597 TCN). Sông KÊ-BA = một con kênh tại Babylon. KHẢI TƯỢNG GẶP NGƯỜI BỊ ĐÀY = Chúa KHÔNG BỎ dân lưu đày. Cùng tư tưởng cho Đa-ni-ên (cùng thời).",
+    "language": "vi",
+    "options": [
+      "Tại đền Giê-ru-sa-lem (như được mô tả trong sách)",
+      "Tại đồng vắng (theo cách trình bày của text)",
+      "GIỮA NHỮNG KẺ BỊ ĐÀY ở bên sông KÊ-BA — các từng trời mở ra + thấy KHẢI TƯỢNG của Đức Chúa Trời",
+      "Tại Ai-cập (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Sông Kê-ba với phu tù",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Ê-xê-chi-ên 2:1, sau khi thấy khải tượng vinh quang, Đức Chúa Trời gọi Ê-xê-chi-ên là gì? + truyền gì?",
+    "explanation": "Ê-xê-chi-ên 2:1 — 'Ngài phán cùng ta rằng: Hỡi con người, chân ngươi hãy đứng, ta sẽ phán cùng ngươi.' 'CON NGƯỜI' (ben adam) = danh hiệu Đức Chúa Trời gọi Ê-xê-chi-ên ~93 lần trong sách. NHẤN MẠNH ÊD = LOÀI NGƯỜI yếu ớt — vs vinh quang Chúa. Chúa Jêsus tự xưng 'CON NGƯỜI' (Mat 9:6, etc.) — kết hợp danh hiệu này với danh hiệu MÊ-SI-A trong Đa-ni-ên 7:13.",
+    "language": "vi",
+    "options": [
+      "HỠI CON NGƯỜI! Hãy đứng dậy — TA SẼ PHÁN với ngươi",
+      "Hỡi người công bình",
+      "Hỡi tiên tri (xét trong văn cảnh)",
+      "Hỡi thầy tế lễ (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Hỡi con người đứng dậy",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 11,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Ê-xê-chi-ên 11:19-20, Đức Chúa Trời hứa cho dân Y-sơ-ra-ên TÂM gì THAY cho TÂM gì?",
+    "explanation": "Ê-xê-chi-ên 11:19-20 — 'Ta sẽ ban cho chúng nó một lòng đồng nhau, phú thần mới trong các ngươi; bỏ lòng đá khỏi xác thịt chúng nó, và sẽ cho chúng nó lòng thịt; để chúng nó noi theo lề luật ta, giữ và làm theo mạng lịnh ta.' Lời hứa GIAO ƯỚC MỚI — lặp lại tại 36:26. Cùng tư tưởng Giê-rê-mi 31:31-34. ĐÁ = không cảm xúc; THỊT = sống động, đáp lại. Chỉ có thể thay LÒNG bằng PHÉP LẠ Đức Chúa Trời.",
+    "language": "vi",
+    "options": [
+      "Tâm Lê-vi thay tâm dân ngoại (theo cách trình bày của text)",
+      "Tâm tổ phụ thay tâm con cháu (như được mô tả trong sách)",
+      "Tâm vua thay tâm dân (xét trong văn cảnh)",
+      "MỘT LÒNG MỘT (đồng lòng) + LINH MỚI; CẤT LÒNG ĐÁ khỏi xác thịt + cho LÒNG THỊT — để bước theo điều răn Chúa"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Lòng thịt thay lòng đá",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 18,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Ê-xê-chi-ên 18:21-22, NẾU kẻ ác BỎ tội + làm theo công bình + giữ luật pháp — thì sẽ ra sao?",
+    "explanation": "Ê-xê-chi-ên 18:21-22 — 'Song nếu kẻ dữ xây bỏ hết thảy tội mình đã phạm, nếu nó giữ mọi luật lệ ta, và nếu nó làm theo luật pháp và hiệp với lẽ thật, chắc thật nó sẽ sống và không chết đâu. Người ta sẽ không còn nhớ lại nững sự phạm pháp nó đã làm; nó sẽ sống vì cớ sự công bình nó đã làm.' Đức Chúa Trời QUÊN TỘI CŨ khi tội nhân ăn năn. Cùng tư tưởng Ê-sai 43:25, Hê-bơ-rơ 8:12.",
+    "language": "vi",
+    "options": [
+      "Tội cũ vẫn nhớ (xét trong văn cảnh)",
+      "Sẽ SỐNG, KHÔNG chết — KHÔNG có tội cũ nào sẽ được nhớ; nhờ sự CÔNG BÌNH ĐÃ LÀM, người ấy sẽ SỐNG",
+      "Phải dâng tế lễ (như được mô tả trong sách)",
+      "Phải đợi 7 năm (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Bỏ tội sẽ sống",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 24,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Ê-xê-chi-ên 24:15-18, Đức Chúa Trời báo Ê-xê-chi-ên: ai sẽ chết bằng tai họa? Ê-xê-chi-ên có được KHÓC không?",
+    "explanation": "Ê-xê-chi-ên 24:16-18 — 'Hỡi con người, nầy, ta sẽ một cái đánh bợt sự ưa thích của mắt ngươi khỏi ngươi; nhưng ngươi chớ than thở, chớ khóc lóc, và chớ để nước mắt chảy ra. Hãy thở dài làm thinh, và chớ làm tang chế cho kẻ chết... Vậy, sớm mai ta nói cùng dân sự, và đến chiều vợ ta chết.' Vợ Ê-xê-chi-ên = DẤU CHO Y-sơ-ra-ên. KHÔNG khóc = ý nghĩa: khi đền thờ + Giê-ru-sa-lem rơi, Y-sơ-ra-ên sẽ KHÔNG CÓ THỜI GIAN khóc.",
+    "language": "vi",
+    "options": [
+      "Anh em — được khóc (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Cha — phải để tang dài (như được mô tả trong sách)",
+      "VỢ Ê-xê-chi-ên (sự ưa thích của mắt) sẽ CHẾT BẰNG MỘT TAI HỌA — Ê-xê-chi-ên KHÔNG được khóc + KHÔNG để tang theo phong tục",
+      "Con — phải tang ngắn (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Vợ Ê-xê-chi-ên chết - không khóc",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 33,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Ê-xê-chi-ên 33:7-9, Ê-xê-chi-ên được giao chức gì? Phải làm gì với LỜI từ Chúa?",
+    "explanation": "Ê-xê-chi-ên 33:7 — 'Hỡi con người, ta đã lập ngươi đặng làm kẻ canh giữ cho nhà Y-sơ-ra-ên; nên hãy nghe lời từ miệng ta, và thay ta răn bảo trước cho chúng nó.' 'NGƯỜI CANH' (tsopheh) = canh tháp đứng + cảnh báo nguy hiểm. Trách nhiệm: NÓI LỜI Chúa. Hậu quả KHÔNG nói: máu người trên tay (responsibility shift). Cùng dạy 3:17 (đã có Easy).",
+    "language": "vi",
+    "options": [
+      "NGƯỜI CANH cho NHÀ Y-SƠ-RA-ÊN — phải NGHE lời + GIẢI tỏ KẺ ÁC; nếu KHÔNG cảnh báo → kẻ ác chết, MÁU người TRÊN tay Ê-xê-chi-ên",
+      "Vua nước (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Tế lễ chung (theo cách trình bày của text)",
+      "Quan tòa cao (như được mô tả trong sách) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Người canh - phải cảnh báo",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 39,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Ê-xê-chi-ên 39:25-29, sau khi xét đoán Gô-ghê + phục hồi Y-sơ-ra-ên, Đức Chúa Trời sẽ TỎ gì giữa các nước?",
+    "explanation": "Ê-xê-chi-ên 39:25-29 — 'Vậy nên Chúa Giê-hô-va phán như vầy: Nay ta sẽ đem tù dân Gia-cốp trở về; ta sẽ thương xót cả nhà Y-sơ-ra-ên, và vì danh thánh ta mà ghen tị... Khi ta thâu chúng nó về từ giữa các dân, ta sẽ tỏ ra thánh ra trong chúng nó trước mắt nhiều nước. Bấy giờ chúng nó sẽ biết rằng ta là Giê-hô-va Đức Chúa Trời chúng nó, ấy là khi ta đã làm cho chúng nó bị bắt làm phu tù trong các nước, rồi lại nhóm chúng nó lại trong đất riêng của chúng nó, không bỏ sót một kẻ nào ở đó. Ta sẽ không che mặt khỏi chúng nó nữa, vì ta sẽ đổ Thần ta trên nhà Y-sơ-ra-ên, Chúa Giê-hô-va phán vậy.' MỤC TIÊU CUỐI: TỎ DANH THÁNH.",
+    "language": "vi",
+    "options": [
+      "Tỏ quyền lực — bằng dấu lạ (theo cách trình bày của text)",
+      "Tỏ trí khôn — bằng tiên tri (như được mô tả trong sách)",
+      "Tỏ giàu có — bằng tài sản (xét trong văn cảnh)",
+      "TỎ DANH THÁNH NGÀI giữa các DÂN — KHÔNG còn giấu mặt khỏi nhà Y-SƠ-RA-ÊN; sẽ ĐỔ LINH NGÀI trên nhà Y-SƠ-RA-ÊN"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Tỏ danh thánh + đổ Linh",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 1,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Ê-xê-chi-ên 1:26-28, TRÊN ĐẦU các sinh vật + bánh xe có gì?",
+    "explanation": "Ê-xê-chi-ên 1:26-28 — 'Phía trên vòng khung giải ra trên đầu các vật sống, có hình như bến cao xanh giống như bích ngọc; trên hình bến cao đó có hình như ngôi nhà người. Trong ngôi và mọi nơi chung quanh, ta cũng thấy như đồng bóng láng, giống lửa, từ trạng như ngang lưng người ấy trở lên; và từ trạng như ngang lưng trở xuống, ta thấy như lửa sáng hừng chung quanh. Ánh sáng chung quanh ngươi giống như cái mống lúc trời mưa hiện ra trong mây, ấy là tỏ ra hình trạng của sự vinh hiển Đức Giê-hô-va.' KHẢI TƯỢNG ngai trời = ÂN LẶNG cho người lưu đày. Khải Huyền 4 cùng hình ảnh.",
+    "language": "vi",
+    "options": [
+      "Một thanh gươm cháy (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Một đám mây vàng (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "MỘT NGAI giống bích NGỌC LAM — TRÊN NGAI có HÌNH GIỐNG NGƯỜI — RỰC RỠ CHIẾU SÁNG (cầu vồng) — vinh quang ĐỨC GIÊ-HÔ-VA",
+      "Một quả cầu lửa (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Ngai bích ngọc với hình người",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 3,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Ê-xê-chi-ên 3:4-9, Đức Chúa Trời báo Ê-xê-chi-ên dân Y-sơ-ra-ên thế nào — và làm gì với MẶT + TRÁN ông?",
+    "explanation": "Ê-xê-chi-ên 3:7-9 — 'Nhưng nhà Y-sơ-ra-ên sẽ chẳng nghe ngươi, vì chúng nó không muốn nghe ta; vả, cả nhà Y-sơ-ra-ên đều cứng trán cứng lòng. Nầy, ta làm cho mặt ngươi cứng nghịch cùng mặt chúng nó, trán ngươi cứng nghịch cùng trán chúng nó. Ta làm cho trán ngươi cứng như kim cương, cứng hơn đá lửa.' Đức Chúa Trời TRANG BỊ tiên tri để chống lại sự CỨNG ĐẦU dân. Sứ điệp KHÔNG được nghe — nhưng phải NÓI.",
+    "language": "vi",
+    "options": [
+      "Dân Y-sơ-ra-ên dễ nghe — Chúa làm trán mềm (như được mô tả trong sách)",
+      "Dân hỗn loạn — Chúa làm trán nhỏ (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Dân tốt nhưng bận — Chúa làm trán bình (theo cách trình bày của text)",
+      "DÂN CỨNG MẶT + CỨNG LÒNG — Chúa LÀM mặt Ê-xê-chi-ên CỨNG HƠN mặt họ + làm TRÁN ông NHƯ KIM CƯƠNG cứng hơn ĐÁ — chớ sợ + chớ kinh khủng"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Trán cứng hơn dân",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Ê-xê-chi-ên 4:4-8, Ê-xê-chi-ên nằm bên HÔNG TRÁI bao nhiêu ngày? Bên hông PHẢI bao nhiêu ngày?",
+    "explanation": "Ê-xê-chi-ên 4:4-6 — 'Đoạn, ngươi cũng hãy nằm nghiêng nương theo hông tả, và để tội lỗi nhà Y-sơ-ra-ên tại đó. Ngươi nằm như vậy bao nhiêu ngày, thì mang lấy tội lỗi chúng nó cũng bấy nhiêu. Vì ta đã định cho ngươi một số ngày bằng với số năm của tội lỗi chúng nó, là ba trăm chín mươi ngày, ngươi sẽ mang lấy tội lỗi nhà Y-sơ-ra-ên như vậy. Vả lại, khi những ngày ấy đã mãn, ngươi khá nằm nghiêng nương hông hữu, và mang lấy tội lỗi của nhà Giu-đa, trải bốn mươi ngày, ta định cho ngươi mỗi một ngày thay vì một năm.' Cách ước lượng: nguyên tắc 'NGÀY CHO NĂM' (cf. Dân số 14:34).",
+    "language": "vi",
+    "options": [
+      "390 ngày bên TRÁI (mỗi ngày = 1 năm tội Y-sơ-ra-ên = 390 năm) + 40 ngày bên PHẢI (= 40 năm tội Giu-đa)",
+      "100 ngày + 100 ngày (như được mô tả trong sách)",
+      "70 ngày + 70 ngày (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "50 ngày + 50 ngày (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "390 ngày + 40 ngày nguyên tắc",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 9,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Ê-xê-chi-ên 9:4, vinh quang Đức Chúa Trời lệnh người mặc vải gai (cầm bình mực bên hông) làm gì?",
+    "explanation": "Ê-xê-chi-ên 9:4 — 'Đức Giê-hô-va phán cùng người rằng: Hãy trải qua giữa thành, tức giữa Giê-ru-sa-lem, ghi dấu trên trán những người nào than thở khóc lóc về mọi sự gớm ghiếc đã phạm giữa thành này.' 'DẤU' (Hi-bơ-rơ: tav) = chữ cuối cùng bảng chữ Hê-bơ-rơ — hình DẤU + (giống thập tự). DẤU bảo vệ — kẻ KHÔNG có dấu sẽ bị giết (9:5-6). Cùng tư tưởng Khải Huyền 7:3 (DẤU 144,000), 9:4 (KHÔNG hại ai có dấu), 13:16-17 (dấu CON THÚ).",
+    "language": "vi",
+    "options": [
+      "Đem cuộn sách (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "ĐI QUA giữa GIÊ-RU-SA-LEM + DẤU một DẤU trên TRÁN của những kẻ THAN KHÓC + RÊN SIẾT vì gớm ghiếc trong thành",
+      "Dâng tế lễ (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Đo đền (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Dấu trên trán kẻ rên siết",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 10,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Ê-xê-chi-ên 10:18-19 + 11:22-23, vinh quang Đức Chúa Trời ĐI ĐÂU sau khi rời ngưỡng cửa đền?",
+    "explanation": "Ê-xê-chi-ên 10:18-19, 11:22-23 — 'Sự vinh hiển Đức Giê-hô-va lên khỏi ngưỡng cửa đền thờ, và đứng trên các chê-ru-bin... Bấy giờ các chê-ru-bin cất cánh lên... Sự vinh hiển Đức Giê-hô-va dâng lên từ giữa thành, và đứng trên núi ở phía đông thành.' VINH QUANG RỜI ĐỀN dần dần (4 GIAI ĐOẠN: 9:3 → 10:4 → 10:18-19 → 11:22-23). Núi PHÍA ĐÔNG = Núi Ô-li-ve. Vinh quang chờ đó. Cùng nơi Christ THĂNG THIÊN (Công 1:11-12) + sẽ TRỞ LẠI (Xa 14:4).",
+    "language": "vi",
+    "options": [
+      "Lên trời ngay (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Vào nơi rất thánh trở lại (như được mô tả trong sách)",
+      "RỜI ngưỡng CỬA đền — đứng trên các CHÊ-RU-BIN — sau đó lên trên NÚI ĐÔNG GIÊ-RU-SA-LEM (núi Ô-li-ve) + ĐỨNG đó",
+      "Vào sông Giô-đanh (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Vinh quang lên núi Ô-li-ve",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Ê-xê-chi-ên 12:1-7, Đức Chúa Trời truyền Ê-xê-chi-ên LÀM gì như DẤU LƯU ĐÀY sắp đến?",
+    "explanation": "Ê-xê-chi-ên 12:3-6 — 'Vậy, hỡi con người, ngươi khá sửa soạn đồ vật dời đi, và ban ngày, dời đi nơi khác trước mắt chúng nó. Trước mắt chúng nó hãy dời từ nơi nầy đến nơi khác... Trước mắt chúng nó, ngươi khá vác đồ vật mình trên vai, và đem đi tan tác trong đêm tối; ngươi khá che mặt đặng không thấy đất.' DẤU CHO VUA SÊ-ĐÊ-KIA — sẽ BỊ BẮT ban đêm + bị MÙ MẮT (2 Vua 25:7). Câu 12:11 — 'TA LÀ ĐIỀM CHO CÁC NGƯƠI'.",
+    "language": "vi",
+    "options": [
+      "Đập vỡ tượng (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Cất hành lý đi vào đền (như được mô tả trong sách)",
+      "Ăn ít bánh mỗi ngày (theo cách trình bày của text)",
+      "BAN NGÀY chuẩn bị HÀNH LÝ phu tù — BAN ĐÊM đi RA như người LƯU ĐÀY — đào tường đem hành lý ra + che mặt KHÔNG nhìn đất"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Hành lý lưu đày đào tường",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Ê-xê-chi-ên 13:1-9, Đức Chúa Trời quở các TIÊN TRI giả của Y-sơ-ra-ên thế nào?",
+    "explanation": "Ê-xê-chi-ên 13:3-5 — 'Chúa Giê-hô-va phán như vầy: Khốn cho những tiên tri dại dột, theo thần riêng mình, mà chưa từng thấy sự gì cả. Hỡi Y-sơ-ra-ên, những tiên tri ngươi cũng như những con chồn trong nơi tan hoang. Các ngươi chưa lên nơi phá tan; chưa xây tường cho nhà Y-sơ-ra-ên, đặng đứng vững trong cơn chiến trận trong ngày Đức Giê-hô-va.' Ê-XÊ-CHI-ÊN ĐỨNG TRONG khe (= 22:30 'CHẲNG TÌM ĐƯỢC NGƯỜI NÀO'). Tiên tri giả KHÔNG bảo vệ — chỉ nói ĐIỀU DÂN MUỐN NGHE.",
+    "language": "vi",
+    "options": [
+      "KHỐN THAY các tiên tri NGU DẠI theo THẦN MÌNH mà chưa thấy gì! NHƯ chồn ở giữa nơi đổ nát; KHÔNG đứng trong CHỖ KHE THỦNG để bênh vực nhà Y-sơ-ra-ên — TRÔNG THẤY HƯ KHÔNG + bói SỰ DỐI",
+      "Khen các tiên tri trung tín (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Lập tiên tri mới (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Trừng phạt người tin (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Khốn các tiên tri dại dột",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Ê-xê-chi-ên 16:1-14, Giê-ru-sa-lem được nhân hóa như BÉ GÁI bị bỏ — Đức Chúa Trời làm gì?",
+    "explanation": "Ê-xê-chi-ên 16:6-13 — 'Khi ta đi ngang qua mầy, thấy mầy lăn lóc trong huyết... ta phán cùng mầy rằng: Hãy sống trong huyết mình! Phải, ta phán cùng mầy: Hãy sống trong huyết mầy!... Khi ta đi ngang qua mầy, thấy mầy đã đến tuổi yêu, ta phủ áo ta trên mầy, che sự lõa lồ; ta thề cùng mầy, lập giao ước với mầy, thì mầy thuộc về ta. Chúa Giê-hô-va phán vậy.' Hình ảnh CHÚA = ÔNG CHỒNG CỨU. Phần SAU (16:15-43) — Giê-ru-sa-lem TRỞ NÊN DÂM PHỤ — bài học sốc về sự trung tín của Đức Chúa Trời.",
+    "language": "vi",
+    "options": [
+      "Chúa bỏ qua (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Chúa ĐI QUA + thấy bé sống trong huyết — phán 'HÃY SỐNG'; lớn lên thành người NỮ; LẤY làm vợ + lập GIAO ƯỚC + cho mặc đẹp + chuỗi vàng — thành người CỰC ĐẸP — danh đồn các nước",
+      "Chúa nuôi rồi bỏ (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Chúa quên đi (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Bé Giê-ru-sa-lem - Chúa cứu",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 17,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Ê-xê-chi-ên 17:1-10, ẨN DỤ về 2 ĐẠI BÀNG + cây nho — thật ý nghĩa là gì?",
+    "explanation": "Ê-xê-chi-ên 17:1-10 — Ẩn dụ. ĐẠI BÀNG #1 = Nê-bu-cát-nết-sa (Babylon) — bắt vua Giê-hô-gia-kin (chồi cao) đem về Babylon (~597 TCN); trồng vua mới Sê-đê-kia là CÂY NHO. ĐẠI BÀNG #2 = Pha-ra-ôn Hốp-ra (Ai-cập) — Sê-đê-kia phản bội Babylon liên minh với Ai-cập (~588 TCN). KẾT QUẢ: cây nho bị NHỔ, Babylon TRỪNG TRỊ Giê-ru-sa-lem (586 TCN). 17:11-21 giải nghĩa rõ.",
+    "language": "vi",
+    "options": [
+      "Thiên sứ + Sa-tan tranh chiến (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Cha + Con tranh chiến (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "VUA NÊ-BU-CÁT-NẾT-SA (đại bàng đầu) đem CHỒI CAO vua Y-sơ-ra-ên đến Babylon; cây NHO (Sê-đê-kia) hướng về ĐẠI BÀNG khác (Ai-cập) để được giúp — bị nhổ tung",
+      "Vua phương Bắc + Nam tranh chiến (như được mô tả trong sách) (xét theo nội dung gốc)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "2 đại bàng = Babylon + Ai-cập",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 18,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Ê-xê-chi-ên 18:23 + 32, ĐỨC CHÚA TRỜI có VUI THÍCH gì?",
+    "explanation": "Ê-xê-chi-ên 18:23, 32 — 'Chúa Giê-hô-va phán: Ta há có vui chút nào về sự chết của kẻ dữ sao? Há chẳng thà vui về sự nó xây bỏ đường lối mình và nó sống sao?... Vì ta không vui về sự chết của kẻ phải chết, vậy các ngươi hãy xây lại, mà được sống!' MỘT trong những lời CỨU RỖI mạnh nhất CỰU ƯỚC. Cùng dạy 33:11. Đức Chúa Trời KHÔNG ham xét đoán — ham CỨU. Cũng dạy 1 Ti-mô-thê 2:4.",
+    "language": "vi",
+    "options": [
+      "Vui thích về sự chết kẻ ác (như được mô tả trong sách)",
+      "Vui thích về sự xét đoán (theo cách trình bày của text)",
+      "Vui thích về tế lễ (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Đức Chúa Trời CHẲNG VUI thích về sự CHẾT của KẺ ÁC; mong họ TRỞ LẠI khỏi đường lối XẤU + SỐNG; 'TẠI SAO các ngươi MUỐN CHẾT'?"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Chúa không vui sự chết kẻ ác",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 28,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Ê-xê-chi-ên 28:1-10, vua TY-RƠ kiêu ngạo nói gì về MÌNH?",
+    "explanation": "Ê-xê-chi-ên 28:2 — 'Hỡi con người, hãy nói cùng vua Ty-rơ rằng: Chúa Giê-hô-va phán như vầy: Vì lòng ngươi đã tự cao, và ngươi nói rằng: Ta là một vị thần, ta ngồi trên ngai Đức Chúa Trời, ở giữa các biển; dầu lòng ngươi tự cao lên bằng lòng Đức Chúa Trời, ngươi còn là loài người, không phải là Đức Chúa Trời.' KIÊU NGẠO TỘT BẬC = tự xưng THẦN. Khải 13 vẽ con thú chống Christ cùng kiểu. Câu 9: 'NGƯƠI có còn nói LẠI là Đức Chúa Trời chăng KHI bị giết bởi tay kẻ giết NGƯƠI'?",
+    "language": "vi",
+    "options": [
+      "VUA TY-RƠ nói: 'TA LÀ THẦN — TA NGỒI TRÊN NGÔI ĐỨC CHÚA TRỜI giữa biển' — nhưng vua chỉ là LOÀI NGƯỜI, KHÔNG phải Đức Chúa Trời",
+      "Tôi là vua khôn ngoan (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Tôi là kẻ phục vụ (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Tôi là môn đệ (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Vua Ty-rơ tự xưng thần",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 33,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Ê-xê-chi-ên 33:30-33, dân sự nói gì với Ê-xê-chi-ên + thật sự TIN gì?",
+    "explanation": "Ê-xê-chi-ên 33:30-33 — 'Hỡi con người, có những con cái dân sự ngươi ở dọc tường thành và cửa nhà mà nói chuyện về ngươi; chúng nó nói cùng nhau, mỗi người cùng anh em mình rằng: Hãy đến nghe lời ra từ Đức Giê-hô-va là thể nào! Đoạn chúng nó kéo đến cùng ngươi như dân sự thường đến, ngồi trước mặt ngươi như là dân ta, và nghe lời ngươi; song không làm theo. Miệng chúng nó tỏ ra nhiều sự yêu mến, mà lòng chỉ chăm về sự tham lam... Vì vậy nầy, sự ấy đến, và bấy giờ chúng nó sẽ biết rằng đã có một tiên tri ở giữa mình.' BÀI HỌC: NGHE đẹp KHÔNG đủ — phải LÀM (Mat 7:24-27, Gia-cơ 1:22).",
+    "language": "vi",
+    "options": [
+      "Họ thật lòng nghe (như được mô tả trong sách) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Họ NGỒI TRƯỚC ngươi NHƯ DÂN ta + NGHE LỜI ngươi NHƯ NGHE NHẠC HAY — nhưng KHÔNG LÀM theo; LÒNG họ THEO THAM LỢI; khi LỜI ỨNG NGHIỆM (ngươi sẽ thấy) — họ SẼ BIẾT có TIÊN TRI giữa họ",
+      "Họ làm theo ngay (theo cách trình bày của text) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Họ ghét bỏ (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Dân nghe đẹp không làm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 37,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Ê-xê-chi-ên 37:15-28, Đức Chúa Trời truyền Ê-xê-chi-ên LÀM gì với 2 cây gậy? Ý nghĩa?",
+    "explanation": "Ê-xê-chi-ên 37:16-17, 19, 24 — 'Hỡi con người, hãy lấy một cây gậy và viết ở trên rằng: Cho Giu-đa, và cho con cái Y-sơ-ra-ên là bạn người. Hãy lấy một cây gậy khác và viết ở trên rằng: Cho Giô-sép, ấy là cây gậy của Ép-ra-im, và cả nhà Y-sơ-ra-ên là bạn nó. Rồi hãy để gậy nầy với gậy kia hiệp làm một... Khi ấy ta sẽ phán cùng chúng nó rằng: Nầy, ta sẽ lấy gậy của Giô-sép và của các chi phái Y-sơ-ra-ên là bạn người, mà ta đã giữ trong tay Ép-ra-im, sẽ hiệp lại với gậy Giu-đa, và làm thành một gậy mà thôi, và chúng nó sẽ chỉ là một trong tay ta... Tôi tớ ta là Đa-vít sẽ làm vua trên chúng nó.' Y-sơ-ra-ên + Giu-đa hợp dưới Mê-si-a.",
+    "language": "vi",
+    "options": [
+      "Đập 2 gậy — chia chiến (theo cách trình bày của text)",
+      "Trồng 2 gậy — phát triển (như được mô tả trong sách)",
+      "GHÉP 2 GẬY thành 1 trong tay ngươi — gậy GIU-ĐA + gậy Y-SƠ-RA-ÊN = 2 nước CHIA SẼ HỢP một dưới 1 VUA (Đa-vít / MÊ-SI-A)",
+      "Đốt 2 gậy — sạch tội (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "2 gậy hợp một - Mê-si-a",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 43,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Ê-xê-chi-ên 43:1-5, vinh quang Đức Chúa Trời TRỞ LẠI đền MỚI từ phương nào?",
+    "explanation": "Ê-xê-chi-ên 43:1-5 — 'Đoạn, người dẫn ta đến cửa thành đông. Nầy, vinh hiển của Đức Chúa Trời Y-sơ-ra-ên từ phía đông mà đến. Tiếng Ngài như tiếng nhiều nước, và đất sáng rực vì vinh hiển Ngài. Sự hiện thấy mà ta thấy bấy giờ, giống như sự hiện thấy đã hiện ra cho ta khi ta đến đặng hủy phá thành; ấy là những sự hiện thấy giống như sự hiện thấy ta đã thấy trên bờ sông Kê-ba, và ta sấp mặt xuống. Vinh hiển của Đức Giê-hô-va vào trong nhà do hiên cửa hướng đông.' VINH QUANG TRỞ LẠI đền tương lai. Khúc đẹp đẽ: từ ĐÔNG (cùng nơi RỜI). Cùng tinh thần Mat 24:27 ('chớp lóe từ ĐÔNG').",
+    "language": "vi",
+    "options": [
+      "Từ phía TÂY (mặt trời lặn) (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Từ phía BẮC (Babylon) (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Từ phía NAM (Ai-cập) (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Từ phía ĐÔNG (cùng phía vinh quang RỜI ĐI tại 11:23) — TIẾNG như NHIỀU NƯỚC + đất CHIẾU SÁNG VINH QUANG; vinh quang ĐI VÀO đền qua CỬA ĐÔNG"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Vinh quang trở từ phía đông",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 47,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Ê-xê-chi-ên 47:21-23, trong đất phân chia tương lai, người NGOẠI BANG cư ngụ + sinh CON tại đó được ĐỐI XỬ thế nào?",
+    "explanation": "Ê-xê-chi-ên 47:21-23 — 'Các ngươi sẽ chia đất nầy cho nhau, theo những chi phái Y-sơ-ra-ên; khá bắt thăm mà chia cho các ngươi và cho các người ngoại tự ngụ giữa các ngươi và sanh con cái giữa các ngươi. Các ngươi sẽ coi chúng nó như những người bổn xứ giữa con cái Y-sơ-ra-ên. Chúng nó sẽ được sản nghiệp với các ngươi ở giữa các chi phái Y-sơ-ra-ên. Người ngoại sẽ được phần sản nghiệp ở giữa chi phái nào mà nó đến ở.' QUYỀN NGOẠI BANG = bằng quyền dân Y-sơ-ra-ên. Cùng nguyên tắc Tân Ước (Ê-phê-sô 2:11-22 — 1 thân thể).",
+    "language": "vi",
+    "options": [
+      "Đối xử như NGƯỜI BẢN ĐỊA — chia đất với chi phái mình ngụ trong nó (cùng cơ nghiệp với DÂN của Y-SƠ-RA-ÊN)",
+      "Phải bị đuổi (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Phải đóng thuế gấp đôi (như được mô tả trong sách)",
+      "Phải làm tôi tớ (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Người ngoại như người bản địa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 16,
+    "verseStart": 46,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Ê-xê-chi-ên 16:46-50, Đức Chúa Trời SO SÁNH Giê-ru-sa-lem với hai chị em nào?",
+    "explanation": "Ê-xê-chi-ên 16:46-50 — 'Chị mầy là Sa-ma-ri ở giữa các con gái nó tại bên tả mầy; em mầy là Sô-đôm ở giữa các con gái nó tại bên hữu mầy... Mầy không bước theo đường chúng nó, không phạm những sự gớm ghiếc giống như chúng nó; mầy còn cho lệ ấy là chẳng đáng kể, mầy đã trở nên nhăn nhúm hơn chúng nó về mọi đường lối mầy.' QUÁ SỐC: Giê-ru-sa-lem = TỆ HƠN Sô-đôm! 16:49-50 liệt kê tội Sô-đôm: KIÊU NGẠO + ĂN UỐNG NO ĐÊÊU + Ổ ÊM + KHÔNG GIÚP NGHÈO + KHÔNG sửa kẻ thiếu. Tội KHÔNG giới hạn ở dâm.",
+    "language": "vi",
+    "options": [
+      "Sô-đôm + Ai-cập (theo cách trình bày của text)",
+      "CHỊ Sa-MA-RI ở phía BẮC + EM SÔ-ĐÔM ở phía NAM — Giê-ru-sa-lem ĐÃ TỆ HƠN cả 2",
+      "Bê-tên + Đan (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Ai-cập + Babylon (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Chị Sa-ma-ri + em Sô-đôm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 18,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Ê-xê-chi-ên 18:25-32, dân Y-sơ-ra-ên nói gì về đường lối Đức Chúa Trời? Đức Chúa Trời đáp gì?",
+    "explanation": "Ê-xê-chi-ên 18:25, 29, 31-32 — 'Các ngươi lại nói rằng: Đường lối của Chúa là không công bằng! Vậy, hỡi nhà Y-sơ-ra-ên, hãy nghe: Đường lối của ta há không công bằng sao? Há chẳng phải đường lối của các ngươi là không công bằng sao?... Hãy liệng xa các ngươi mọi sự phạm pháp mà các ngươi đã làm. Hãy làm cho mình một lòng mới và một thần mới. Vì, hỡi nhà Y-sơ-ra-ên, làm sao mà các ngươi muốn chết? Chúa Giê-hô-va phán: Ta không vui chút nào về sự chết của kẻ phải chết, vậy các ngươi hãy xây lại, mà được sống!' Sốc: dân TỐ ĐỨC CHÚA TRỜI KHÔNG công bình.",
+    "language": "vi",
+    "options": [
+      "Họ nói 'đường Chúa thẳng' — Chúa khen (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Họ nói 'đường Chúa khôn' — Chúa khích lệ (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Họ nói 'ĐƯỜNG CHÚA KHÔNG CÔNG BÌNH'! Đức Chúa Trời đáp: 'KHÔNG! ĐƯỜNG CÁC NGƯƠI mới KHÔNG công bình; HÃY ĂN NĂN — TẠI SAO CÁC NGƯƠI MUỐN CHẾT?'",
+      "Họ nói 'đường Chúa lạ' — Chúa giải thích (như được mô tả trong sách) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Đường Chúa không công bình - không!",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 20,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Ê-xê-chi-ên 20:25-26, Đức Chúa Trời nói GÌ KỲ LẠ về luật pháp Ngài đã ban cho Y-sơ-ra-ên?",
+    "explanation": "Ê-xê-chi-ên 20:25-26 — 'Ta cũng đã ban cho chúng nó những luật lệ chẳng lành, và những mạng lịnh mà bởi đó chúng nó không được sống. Ta làm cho chúng nó bị ô uế bởi của cúng chúng nó, khi chúng nó khiến mọi con đầu lòng qua trên lửa, hầu cho ta làm cho chúng nó ra hoang vu, đến nỗi chúng nó biết rằng ta là Đức Giê-hô-va.' CÂU KHÓ HIỂU NHẤT trong Ê-xê-chi-ên. Giải thích chính: Y-SƠ-RA-ÊN BỎ luật THẬT (Mô-sê) — Chúa CHO HỌ TIN luật ÁC ngoại bang (dâng con) như HÌNH THỨC XÉT ĐOÁN. Cùng tư tưởng Rô 1:24-26 (giao họ).",
+    "language": "vi",
+    "options": [
+      "Luật quá hoàn hảo (theo cách trình bày của text) (xét theo nội dung gốc) (xét trong văn cảnh) (như được mô tả trong sách)",
+      "Luật là tâm linh (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Luật mới hoàn hảo (như được mô tả trong sách) (như văn bản ghi rõ) (theo bối cảnh đoạn này) (theo cách trình bày của text)",
+      "TA cũng đã CHO chúng nó NHỮNG LUẬT pháp KHÔNG TỐT + những MẠNG LỊNH chúng KHÔNG thể được sống — vì cớ HỌ DÂNG con cái TRONG LỬA, để ta LÀM cho KHỬNG SỜ; chúng nó SẼ BIẾT ta là Đức Giê-hô-va"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Chúa cho luật không tốt - xét đoán",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 23,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Ê-xê-chi-ên 23:1-4, ai là Ô-HÔ-LA + Ô-HÔ-LI-BA?",
+    "explanation": "Ê-xê-chi-ên 23:4 — 'Tên hai chị em đó là Ô-hô-la, chị, và Ô-hô-li-ba, em nó. Chúng nó đã thuộc về ta, và chúng nó đẻ ra con trai con gái. Còn về tên chúng nó: Ô-hô-la, ấy là Sa-ma-ri; Ô-hô-li-ba, ấy là Giê-ru-sa-lem.' Ô-HÔ-LA = 'TRẠI CỦA NÀNG' (riêng nàng); Ô-HÔ-LI-BA = 'TRẠI CỦA TA TRONG NÀNG' = đền thờ THẬT đặt tại Giê-ru-sa-lem. Cả 2 'NGOẠI TÌNH' với A-si-ri + Babylon = liên minh chính trị + thờ thần ngoại bang.",
+    "language": "vi",
+    "options": [
+      "Ô-HÔ-LA = SA-MA-RI (Y-sơ-ra-ên phương BẮC) + Ô-HÔ-LI-BA = GIÊ-RU-SA-LEM (Giu-đa) — 2 chị em DÂM ĐÃNG (ngầm chỉ thờ thần ngoại)",
+      "Hai vợ Sa-lô-môn (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Hai con gái Áp-ra-ham (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Hai chị Ru-tơ (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Ô-hô-la = Sa-ma-ri, Ô-hô-li-ba = Giê-ru-sa-lem",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 26,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Ê-xê-chi-ên 26:7-14, lời tiên tri về SỰ RƠI của TY-RƠ — chính xác chi tiết nào?",
+    "explanation": "Ê-xê-chi-ên 26:7-14 — 'Vì Chúa Giê-hô-va phán như vầy: Nầy, ta sẽ đem Nê-bu-cát-nết-sa, vua Ba-by-lôn... đến nghịch cùng Ty-rơ, từ phương bắc... Ta sẽ làm cho ngươi nên một vầng đá sạch láng; ngươi sẽ nên một chỗ người ta phơi lưới chài. Ngươi sẽ không được dựng lại nữa, vì ta là Đức Giê-hô-va có phán như vậy.' Lịch sử ứng nghiệm 100%: (1) Nê-bu-cát-nết-sa vây Ty-rơ 13 năm (~585-572 TCN); (2) A-LÉC-XAN-ĐƠ ĐẠI ĐẾ phá đảo Ty-rơ 332 TCN bằng cách XÂY ĐÊ — ném ĐÁ + GỖ + BỤI thành phố cũ vào BIỂN. Ngày nay = đảo cát nhỏ.",
+    "language": "vi",
+    "options": [
+      "Một vua nhỏ chinh phục (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Nê-bu-cát-nết-sa (Babylon) + sau đó NHIỀU DÂN KHÁC sẽ ném ĐÁ + GỖ + BỤI vào BIỂN — thành sẽ thành nơi đánh CÁ + CHỖ PHƠI LƯỚI; SẼ KHÔNG được xây lại nữa",
+      "Tự thành sẽ tan (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Một dã thú phá (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Ty-rơ - đá ném xuống biển - Alexander",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 28,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Ê-xê-chi-ên 28:11-19, bài THAN VÃN cho VUA TY-RƠ có những hình ảnh KHÔNG THỂ ÁP DỤNG cho người LOÀI NGƯỜI — ngụ ý ai sau lưng?",
+    "explanation": "Ê-xê-chi-ên 28:13-15 — 'Ngươi ở trong Ê-đen, là vườn của Đức Chúa Trời. Ngươi đã có đầy mình mọi thứ ngọc báu... Ngươi là một chê-ru-bin được xức dầu đương che phủ; ta đã lập ngươi lên trên hòn núi thánh của Đức Chúa Trời; ngươi đã đi dạo giữa các hòn đá lửa. Đường lối ngươi trọn vẹn từ ngày ngươi được dựng nên, cho đến lúc thấy sự gian ác trong ngươi.' Hình ảnh KHÔNG vương quốc Ty-rơ — chê-ru-bin trong Ê-đen. Nhiều giải kinh: bài viết về VUA TY-RƠ trên BỀ MẶT, nhưng ám chỉ SA-TAN ở chiều sâu (cùng dạng Ê-sai 14 vua Babylon).",
+    "language": "vi",
+    "options": [
+      "Vua Ty-rơ thật (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan) (theo trình tự câu chuyện)",
+      "Một thiên sứ thường (như được mô tả trong sách) (như văn bản ghi rõ) (theo bối cảnh đoạn này) (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "VUA TY-RƠ trong vai trò KHÔNG GIAN + thời gian nguyên thủy: 'NGƯƠI Ở TRONG Ê-ĐEN, vườn Đức Chúa Trời'; 'NGƯƠI là CHÊ-RU-BIN ĐƯỢC XỨC DẦU bao phủ ngai'; 'TRỌN VẸN TỪ NGÀY ĐƯỢC TẠO RA — cho đến khi ĐƯỢC TÌM GIAN ÁC'; nhiều người tin = SA-TAN sau lưng vua",
+      "Một con người mạnh (theo cách trình bày của text) (xét theo nội dung gốc) (xét trong văn cảnh) (như được mô tả trong sách) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Vua Ty-rơ - chê-ru-bin Ê-đen",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 39,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Ê-xê-chi-ên 38-39, GÔ-GHÊ ở MA-GÔ-GHÊ là ai? Sẽ tấn công ai? Sự kết thúc?",
+    "explanation": "Ê-xê-chi-ên 38:2-3, 39:9-12 — 'Hỡi con người, hãy xây mặt lại cùng Gô-ghê, đất Ma-gô-ghê là vua của Rô-sơ, Mê-séc, và Tu-banh, mà nói tiên tri nghịch cùng người. Ngươi khá nói rằng: Chúa Giê-hô-va phán như vầy: Hỡi Gô-ghê, vua của Rô-sơ, Mê-séc, và Tu-banh, nầy, ta nghịch cùng ngươi... Bấy giờ những dân cư các thành của Y-sơ-ra-ên sẽ đi ra... đốt thiêu các khí giới. Họ phải thiêu đốt nó trong bảy năm... Trong bảy tháng, nhà Y-sơ-ra-ên sẽ chôn chúng nó.' GÔ-GHÊ + MA-GÔ-GHÊ tái xuất hiện trong Khải Huyền 20:8 — sau 1000 năm trị vì. Có nhiều giải thích về dân tộc cụ thể.",
+    "language": "vi",
+    "options": [
+      "Một vua nhỏ tấn công Babylon (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Một quỷ tấn công nước Ai-cập (theo cách trình bày của text) (xét theo nội dung gốc) (xét trong văn cảnh) (như được mô tả trong sách)",
+      "Một vua đông tấn công Hi Lạp (như được mô tả trong sách) (như văn bản ghi rõ) (theo bối cảnh đoạn này) (theo cách trình bày của text)",
+      "GÔ-GHÊ (vua chính của Mê-séc + Tu-banh ở phương BẮC) sẽ tấn công Y-SƠ-RA-ÊN trong những ngày SAU CÙNG; Đức Chúa Trời sẽ TỰ MÌNH đánh bại — DÙNG 7 THÁNG để CHÔN xác + 7 NĂM ĐỐT vũ khí; CÁC DÂN SẼ BIẾT ĐỨC GIÊ-HÔ-VA"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Gô-ghê tấn công Y-sơ-ra-ên - Chúa thắng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 44,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Ê-xê-chi-ên 44:1-3, CỔNG ĐÔNG của đền tương lai sẽ ra sao? Ai có thể vào?",
+    "explanation": "Ê-xê-chi-ên 44:1-3 — 'Đoạn người đem ta đến hiên cửa ngoài của nơi thánh, ngó về phía đông; cửa đóng. Đức Giê-hô-va bèn phán cùng ta rằng: Hiên cửa nầy sẽ đóng luôn, không mở nữa. Chẳng ai được vào bởi hiên cửa nầy, vì Giê-hô-va Đức Chúa Trời của Y-sơ-ra-ên đã vào bởi đó; vậy cửa ấy sẽ đóng lại. Chỉ vua kia, vì vua, được ngồi tại đó đặng ăn bánh trước mặt Đức Giê-hô-va. Vua sẽ vào bởi nhà ngoài của hiên cửa, và cũng ra bởi đường ấy.' CỬA ĐÔNG nơi vinh quang TRỞ LẠI (43:1-5) — ĐÓNG đời đời. Hôm nay tại Giê-ru-sa-lem: cửa đông cổ thật bị tấm BỊT bởi vua Hồi giáo Suleiman 1541. Chờ Mê-si-a.",
+    "language": "vi",
+    "options": [
+      "CỔNG ĐÔNG sẽ bị ĐÓNG + KHÔNG ai được mở vì ĐỨC GIÊ-HÔ-VA Đức Chúa Trời đã VÀO + nó phải đóng đời đời; chỉ VƯƠNG (vua Mê-si-a) sẽ ngồi đó để ĂN BÁNH trước Đức Giê-hô-va — vào + ra qua hành lang",
+      "Mọi người được ra vào tự do (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Chỉ thầy tế lễ (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Chỉ người Lê-vi (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này) (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Ê-xê-chi-ên",
+      "Tiên tri lớn",
+      "Cửa đông đóng - chỉ vương ngồi",
+      "Nâng cao"
+    ]
   }
 ]

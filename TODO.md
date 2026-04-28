@@ -113,13 +113,12 @@
 - Topics: bên kia sông Giô-đanh (1:1); hỡi Y-sơ-ra-ên hãy nghe (5:1); đem ra khỏi nhà nô lệ (5:6); lời ở trong lòng (6:6); 7 dân Ca-na-an phải diệt (7:1-2); thành tín ngàn đời (7:9); đất tốt 7 đặc sản (8:7-9); phần mười hoa lợi (14:22); không lấy lại sau ly dị (24:1-4); Chúa không lìa không bỏ (31:6); đã ở núi này lâu (1:6-8); Ca-lép + Giô-suê (1:35-38); Chúa làm cứng lòng Si-hôn (2:30); Óc giường sắt 9 thước (3:11); dạy con cháu (4:9); không bên phải bên trái (5:32); chỉ kính sợ + thờ Chúa (6:13); chớ thử Chúa như Ma-sa (6:16); Chúa chọn vì yêu (7:7-8); Chúa ban sức làm giàu (8:18); không vì công bình - vì gian ác dân ấy (9:5); mưa đầu mùa cuối mùa (11:13-14); chớ ăn xác chết - dê con sữa mẹ (14:21); quan trưởng - công bình tột đỉnh (16:18-20); 2-3 nhân chứng (19:15); chớ sợ - Chúa đi với (20:1); nam nữ không đổi y phục (22:5); khấn phải làm trọn (23:21-23); trả công ngày (24:14-15); đầu mùa - chứng từ A-ram (26:1-11); lửa thiêu nuốt + kỵ tà (4:24); đốt - chớ tham vàng tà thần (7:25-26); người thân quyến rũ thờ thần - phải giết (13:6-11); mở tay cho người nghèo (15:7-11); vụ khó - đến nơi Chúa chọn (17:8-13); thả chim mẹ - bảo tồn (22:6-7); em chồng cưới chị dâu - levirate (25:5-10); không có dân nào giống Y-sơ-ra-ên (33:26-29)
 - VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
-#### Task B3-5: Ezekiel +30 (20→50)
-- Status: [ ] TODO
-- Current: 20 (E8 M8 H4) → Target: 50 (E15 M23 H12)
-- Plan: +7 Easy + 15 Medium + 8 Hard
-- File(s): `ezekiel_quiz.json` + `ezekiel_quiz_en.json` + `scripts/append_ezekiel_v3b.py`
-- Strategy: Khải tượng xương khô 37; tâm mới 36:26 (linh mới); 4 sinh vật ngai 1; người chăn giả + Người Chăn Đa-vít 34; Gô-ghê + Ma-gô-ghê 38-39; đền thờ tương lai 40-48; "ngươi sẽ biết ta là Yhwh" 70 lần
-- Commit: `feat(seed): Ezekiel +30 V3 B3 quality expansion (20→50)`
+#### Task B3-5: Ezekiel +30 (20→50) [x] DONE 2026-04-28
+- 20→**50** (E15 M23 H12, ratio **30.0/46.0/24.0%** — gần khớp 30/45/25)
+- Pool +30: 7 Easy + 15 Medium + 8 Hard VI + 30 EN 1:1
+- Single idx: 0:8, 1:6, 2:8, 3:8 (well distributed)
+- Topics: sông Kê-ba với phu tù (1:1); ngai bích ngọc với hình người (1:26-28); hỡi con người đứng dậy (2:1); trán cứng hơn dân (3:4-9); 390+40 ngày nguyên tắc (4:4-8); dấu trên trán kẻ rên siết (9:4); vinh quang lên núi Ô-li-ve (10:18-19, 11:23); lòng thịt thay lòng đá (11:19-20); hành lý lưu đày đào tường (12:1-7); khốn các tiên tri dại dột (13:1-9); bé Giê-ru-sa-lem - Chúa cứu (16:1-14); chị Sa-ma-ri + em Sô-đôm (16:46-50); 2 đại bàng = Babylon + Ai-cập (17:1-10); bỏ tội sẽ sống (18:21-22); Chúa không vui sự chết kẻ ác (18:23, 32); đường Chúa không công bình - không! (18:25-32); Chúa cho luật không tốt - xét đoán (20:25-26); Ô-hô-la = Sa-ma-ri, Ô-hô-li-ba = Giê-ru-sa-lem (23:1-4); vợ Ê-xê-chi-ên chết - không khóc (24:15-18); Ty-rơ - đá ném xuống biển - Alexander (26:7-14); vua Ty-rơ tự xưng thần (28:1-10); vua Ty-rơ - chê-ru-bin Ê-đen (28:11-19); người canh - phải cảnh báo (33:7-9); dân nghe đẹp không làm (33:30-33); 2 gậy hợp một - Mê-si-a (37:15-28); Gô-ghê tấn công Y-sơ-ra-ên - Chúa thắng (38-39); tỏ danh thánh + đổ Linh (39:25-29); vinh quang trở từ phía đông (43:1-5); cửa đông đóng - chỉ vương ngồi (44:1-3); người ngoại như người bản địa (47:21-23)
+- VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
 ### Task B-Final: Verify final V3 Tier B audit
 - Status: [ ] TODO

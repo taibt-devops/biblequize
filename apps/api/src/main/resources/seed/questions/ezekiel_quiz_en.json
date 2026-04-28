@@ -541,5 +541,785 @@
       "Prophets",
       "Basic"
     ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ezekiel 1:1, where was Ezekiel when he received his first vision?",
+    "explanation": "Ezekiel 1:1 — 'In the thirtieth year, in the fourth month, on the fifth day of the month, as I was among the exiles by the Chebar canal, the heavens were opened, and I saw visions of God.' Ezekiel was IN EXILE (Babylon's 2nd deportation ~ 597 BC). The CHEBAR = a canal in Babylon. THE VISION REACHES the EXILES = God does NOT abandon them. Same idea for Daniel (contemporary).",
+    "language": "en",
+    "options": [
+      "At Jerusalem temple (as described in the passage)",
+      "In wilderness (according to the text's framing)",
+      "AMONG the EXILES by the river CHEBAR — heavens opened + saw VISIONS of God",
+      "In Egypt (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Chebar river with exiles",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ezekiel 2:1, after the glory vision, what does God call Ezekiel? + command?",
+    "explanation": "Ezekiel 2:1 — 'And he said to me, \"Son of man, stand on your feet, and I will speak with you.\"' 'SON OF MAN' (ben adam) = God's address to Ezekiel ~93 times. EMPHASIZES MORTAL HUMANITY — vs God's glory. Jesus self-identifies as 'SON OF MAN' (Mt 9:6, etc.) — combining this title with the MESSIANIC figure of Daniel 7:13.",
+    "language": "en",
+    "options": [
+      "SON OF MAN! Stand on your feet — I will SPEAK with you",
+      "O righteous (as described in the passage)",
+      "O prophet (according to the text's framing)",
+      "O priest (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Son of man stand up",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 11,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ezekiel 11:19-20, God promises Israel what HEART INSTEAD of what?",
+    "explanation": "Ezekiel 11:19-20 — 'And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them.' NEW COVENANT promise — repeated at 36:26. Same idea Jeremiah 31:31-34. STONE = unfeeling; FLESH = alive, responsive. Only the MIRACLE of God can REPLACE the HEART.",
+    "language": "en",
+    "options": [
+      "Levitical heart instead of Gentile",
+      "Father's heart instead of children's",
+      "King's heart instead of people's (per the textual narrative)",
+      "ONE HEART + NEW SPIRIT; REMOVE the HEART of STONE + give HEART of FLESH — to walk in God's statutes"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Heart of flesh, not stone",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 18,
+    "verseStart": 21,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ezekiel 18:21-22, IF the wicked TURNS from sin + does righteousness — what?",
+    "explanation": "Ezekiel 18:21-22 — 'But if a wicked person turns away from all his sins that he has committed and keeps all my statutes and does what is just and right, he shall surely live; he shall not die. None of the transgressions that he has committed shall be remembered against him; for the righteousness that he has done he shall live.' God FORGETS PAST SINS when the sinner repents. Same idea Isaiah 43:25, Hebrews 8:12.",
+    "language": "en",
+    "options": [
+      "Old sins remembered (according to the text's framing)",
+      "Shall LIVE, not die — NONE of past transgressions will be remembered; for the RIGHTEOUSNESS done, he will LIVE",
+      "Must offer sacrifice (as described in the passage)",
+      "Wait 7 years (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Turn from sin - live",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 24,
+    "verseStart": 15,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ezekiel 24:15-18, God told Ezekiel: who would die suddenly? Could Ezekiel MOURN?",
+    "explanation": "Ezekiel 24:16-18 — 'Son of man, behold, I am about to take the delight of your eyes away from you at a stroke; yet you shall not mourn or weep, nor shall your tears run down. Sigh, but not aloud; make no mourning for the dead... So I spoke to the people in the morning, and at evening my wife died.' Ezekiel's wife = a SIGN to Israel. NOT mourning = meaning: when the temple + Jerusalem fall, Israel will have NO TIME to mourn.",
+    "language": "en",
+    "options": [
+      "Brother — can mourn (per the textual narrative)",
+      "Father — long mourning (according to the text's framing)",
+      "Ezekiel's WIFE (the delight of his eyes) will DIE BY A STROKE — Ezekiel may NOT mourn + NOT observe customs",
+      "Child — short mourning (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Wife dies - no mourning",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 33,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ezekiel 33:7-9, what role was Ezekiel appointed to? What to do with God's WORD?",
+    "explanation": "Ezekiel 33:7 — 'So you, son of man, I have made a watchman for the house of Israel. Whenever you hear a word from my mouth, you shall give them warning from me.' 'WATCHMAN' (tsopheh) = sentry on the wall + warning of danger. Responsibility: SPEAK God's word. Consequence of NOT speaking: blood on hands (responsibility shifts). Same teaching 3:17.",
+    "language": "en",
+    "options": [
+      "WATCHMAN for the HOUSE of Israel — must HEAR the word + WARN the WICKED; if NOT warned → wicked dies, BLOOD on Ezekiel's hand",
+      "Nation's king (according to the text's framing)",
+      "General priest (as described in the passage)",
+      "High judge (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Watchman - must warn",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 39,
+    "verseStart": 25,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ezekiel 39:25-29, after judging Gog + restoring Israel, God will SHOW what among nations?",
+    "explanation": "Ezekiel 39:25-29 — 'Therefore thus says the Lord GOD: Now I will restore the fortunes of Jacob and have mercy on the whole house of Israel, and I will be jealous for my holy name... When I bring them back from the peoples and gather them from their enemies' lands, then I will manifest my holiness in them in the sight of many nations. Then they shall know that I am the LORD their God, because I sent them into exile among the nations and then assembled them into their own land. I will leave none of them remaining among the nations anymore. And I will not hide my face anymore from them, when I pour out my Spirit upon the house of Israel, declares the Lord GOD.' ULTIMATE GOAL: REVEAL THE HOLY NAME.",
+    "language": "en",
+    "options": [
+      "Power — by signs (per the textual narrative)",
+      "Wisdom — by prophecy (according to the text's framing)",
+      "Wealth — by treasure (as described in the passage)",
+      "MANIFEST his HOLY NAME among the nations — no longer HIDE his face from Israel; will POUR his SPIRIT on Israel"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Manifest holy name + pour Spirit",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 1,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ezekiel 1:26-28, ABOVE the living creatures + wheels — what?",
+    "explanation": "Ezekiel 1:26-28 — 'And above the expanse over their heads there was the likeness of a throne, in appearance like sapphire; and seated above the likeness of a throne was a likeness with a human appearance. And upward from what had the appearance of his waist I saw as it were gleaming metal, like the appearance of fire enclosed all around. And downward from what had the appearance of his waist I saw as it were the appearance of fire, and there was brightness around him. Like the appearance of the bow that is in the cloud on the day of rain, so was the appearance of the brightness all around. Such was the appearance of the likeness of the glory of the LORD.' THRONE VISION = COMFORT for exiles. Rev 4 same imagery.",
+    "language": "en",
+    "options": [
+      "Burning sword (as described in the passage) (as the text indicates)",
+      "Gold cloud (according to the text's framing) (per the original content)",
+      "A THRONE like SAPPHIRE — on the throne the LIKENESS of a HUMAN form — RADIANT (rainbow) — the GLORY of the LORD",
+      "Fireball (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Sapphire throne with human form",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 3,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ezekiel 3:4-9, how does God describe Israel — and what does he do with Ezekiel's FACE + FOREHEAD?",
+    "explanation": "Ezekiel 3:7-9 — 'But the house of Israel will not be willing to listen to you, for they are not willing to listen to me: because all the house of Israel have a hard forehead and a stubborn heart. Behold, I have made your face as hard as their faces, and your forehead as hard as their foreheads. Like emery harder than flint have I made your forehead. Fear them not, nor be dismayed at their looks.' God EQUIPS the prophet for stubborn audience. Message NOT received — but must be SPOKEN.",
+    "language": "en",
+    "options": [
+      "Israel listens — soft forehead (as described in the passage)",
+      "Confused — small forehead (according to the text's framing)",
+      "Good but busy — gentle (per the textual narrative) (in the story's sequence)",
+      "STIFF FACE + HARD HEART — God makes Ezekiel's face HARDER + forehead LIKE A DIAMOND harder than FLINT — do not fear or be dismayed"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Forehead harder than people",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ezekiel 4:4-8, Ezekiel lay on his LEFT side how many days? RIGHT?",
+    "explanation": "Ezekiel 4:4-6 — 'Then lie down on your left side, and place the punishment of the house of Israel upon it. For the number of the days that you lie on it, you shall bear their punishment. For I assign to you a number of days, 390 days, equal to the number of the years of their punishment. So long shall you bear the punishment of the house of Israel. And when you have completed these, you shall lie down a second time, but on your right side, and bear the punishment of the house of Judah. Forty days I assign you, a day for each year.' The DAY-FOR-YEAR principle (cf. Num 14:34).",
+    "language": "en",
+    "options": [
+      "390 days LEFT (each day = 1 year of Israel's sin = 390 years) + 40 days RIGHT (= 40 years of Judah's sin)",
+      "100 + 100 (as described in the passage) (as the text indicates)",
+      "70 + 70 (per the textual narrative) (in the story's sequence)",
+      "50 + 50 (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "390 + 40 days, day for year",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 9,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ezekiel 9:4, the glory of God commands the man in linen (with writing case) to do what?",
+    "explanation": "Ezekiel 9:4 — 'And the LORD said to him, \"Pass through the city, through Jerusalem, and put a mark on the foreheads of the men who sigh and groan over all the abominations that are committed in it.\"' 'MARK' (Hebrew: tav) = the last letter of Hebrew alphabet — shaped like + (cross). The MARK protects — those WITHOUT will be slain (9:5-6). Same idea as Rev 7:3 (144,000 sealed), 9:4 (don't harm those marked), 13:16-17 (BEAST mark).",
+    "language": "en",
+    "options": [
+      "Bring scroll (per the textual narrative)",
+      "GO through JERUSALEM + put a MARK on FOREHEADS of those who SIGH + GROAN over abominations in city",
+      "Offer sacrifice (as described in the passage)",
+      "Measure temple (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Mark on forehead of mourners",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 10,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ezekiel 10:18-19 + 11:22-23, where does God's GLORY GO after leaving the threshold?",
+    "explanation": "Ezekiel 10:18-19, 11:22-23 — 'Then the glory of the LORD went out from the threshold of the house, and stood over the cherubim... Then the cherubim lifted up their wings... And the glory of the LORD went up from the midst of the city and stood on the mountain that is on the east side of the city.' GLORY DEPARTED gradually (4 STAGES: 9:3 → 10:4 → 10:18-19 → 11:22-23). EAST mountain = Mt of Olives. Glory waits there. Same place Christ ASCENDED (Acts 1:11-12) + will RETURN (Zech 14:4).",
+    "language": "en",
+    "options": [
+      "To heaven directly (as described in the passage)",
+      "Back to Most Holy (according to the text's framing)",
+      "DEPARTS the THRESHOLD — stands above CHERUBIM — then goes up to MOUNTAIN EAST of Jerusalem (Mt of Olives) + STANDS there",
+      "To Jordan (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Glory to Mt of Olives",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ezekiel 12:1-7, what did God command Ezekiel as a SIGN of imminent EXILE?",
+    "explanation": "Ezekiel 12:3-6 — 'As for you, son of man, prepare for yourself an exile's baggage, and go into exile by day in their sight. You shall go like an exile from your place to another place in their sight... In their sight you shall lift the baggage upon your shoulder and carry it out at dusk. You shall cover your face that you may not see the land.' SIGN to KING ZEDEKIAH — would be CAPTURED at night + BLINDED (2 Kgs 25:7). Verse 12:11 — 'I AM A SIGN to YOU'.",
+    "language": "en",
+    "options": [
+      "Smash idol (per the textual narrative) (in the story's sequence)",
+      "Carry baggage to temple (as described in the passage)",
+      "Eat little daily (according to the text's framing)",
+      "BY DAY prepare EXILE BAGGAGE — BY NIGHT go OUT as an EXILE — DIG through wall + carry baggage + COVER FACE not seeing land"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Exile baggage through wall",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 13,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ezekiel 13:1-9, how does God rebuke FALSE prophets of Israel?",
+    "explanation": "Ezekiel 13:3-5 — 'Thus says the Lord GOD, Woe to the foolish prophets who follow their own spirit, and have seen nothing! Your prophets have been like jackals among ruins, O Israel. You have not gone up into the breaches, or built up a wall for the house of Israel, that it might stand in battle in the day of the LORD.' EZEKIEL STANDS in the breach (= 22:30 'I sought a man... but I found NONE'). False prophets do NOT defend — only say what the PEOPLE want to HEAR.",
+    "language": "en",
+    "options": [
+      "WOE to FOOLISH prophets following their OWN SPIRIT having SEEN nothing! Like FOXES in ruins; have NOT gone up into the BREACHES to defend Israel — see false VISIONS + DIVINE LIES",
+      "Praise faithful (according to the text's framing) (per the original content)",
+      "Set up new (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Punish faithful (as described in the passage) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Woe to foolish prophets",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ezekiel 16:1-14, Jerusalem personified as ABANDONED BABY — what does God do?",
+    "explanation": "Ezekiel 16:6-13 — 'When I passed by you and saw you wallowing in your blood, I said to you in your blood, \"Live!\"... When I passed by you again and saw you, behold, you were at the age for love, and I spread the corner of my garment over you and covered your nakedness; I made my vow to you and entered into a covenant with you, declares the Lord GOD, and you became mine.' Image: GOD = the RESCUING HUSBAND. Later (16:15-43) — Jerusalem BECAME a HARLOT — a SHOCKING lesson on God's faithfulness.",
+    "language": "en",
+    "options": [
+      "God abandoned (according to the text's framing) (per the original content)",
+      "God PASSED BY + saw baby in blood — said 'LIVE'; she grew to womanhood; MARRIED + made COVENANT + clothed + adorned with gold — became EXCEEDINGLY BEAUTIFUL — fame among nations",
+      "Raised then left (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "Forgot (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Baby Jerusalem - God rescued",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 17,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ezekiel 17:1-10, the PARABLE of 2 EAGLES + vine — meaning?",
+    "explanation": "Ezekiel 17:1-10 — A parable. EAGLE #1 = Nebuchadnezzar (Babylon) — took King Jehoiachin (top cedar) to Babylon (~597 BC); planted new king Zedekiah as a VINE. EAGLE #2 = Pharaoh Hophra (Egypt) — Zedekiah betrayed Babylon by allying with Egypt (~588 BC). RESULT: vine UPROOTED, Babylon CRUSHED Jerusalem (586 BC). 17:11-21 explains plainly.",
+    "language": "en",
+    "options": [
+      "Angel + Satan war (according to the text's framing) (as the text indicates)",
+      "Father + Son war (per the textual narrative) (in the story's sequence)",
+      "KING NEBUCHADNEZZAR (1st eagle) takes TOP CEDAR shoot of Israel's king to Babylon; VINE (Zedekiah) turns to OTHER eagle (Egypt) for help — gets uprooted",
+      "Northern + Southern kings (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "2 eagles = Babylon + Egypt",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 18,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ezekiel 18:23 + 32, what does GOD NOT DELIGHT in?",
+    "explanation": "Ezekiel 18:23, 32 — 'Have I any pleasure in the death of the wicked, declares the Lord GOD, and not rather that he should turn from his way and live?... For I have no pleasure in the death of anyone, declares the Lord GOD; so turn, and live.' One of the strongest SOTERIOLOGICAL statements in the OT. Same teaching 33:11. God does NOT delight in judgment — DELIGHTS in saving. Also taught in 1 Tim 2:4.",
+    "language": "en",
+    "options": [
+      "Death of wicked (as described in the passage) (per the original content)",
+      "Judgment (per the textual narrative) (in the story's sequence)",
+      "Sacrifices (according to the text's framing) (as the text indicates)",
+      "God has NO PLEASURE in the DEATH of the WICKED; rather wants them to TURN from EVIL ways + LIVE; 'WHY will you DIE'?"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "No delight in wicked's death",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 28,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ezekiel 28:1-10, what did the prince of TYRE proudly say?",
+    "explanation": "Ezekiel 28:2 — 'Son of man, say to the prince of Tyre, Thus says the Lord GOD: \"Because your heart is proud, and you have said, 'I am a god, I sit in the seat of the gods, in the heart of the seas,' yet you are but a man, and no god, though you make your heart like the heart of a god.\"' SUPREME PRIDE = self-deification. Rev 13 portrays the antichrist beast similarly. v9: 'Will you still say, \"I am a god,\" in the presence of those who kill you?'",
+    "language": "en",
+    "options": [
+      "The PRINCE of TYRE: 'I AM a GOD — I sit in the seat of the GODS in the heart of the seas' — but he is only a MAN, NOT God",
+      "I am wise king (as described in the passage) (as the text indicates)",
+      "I am servant (per the textual narrative) (in the story's sequence)",
+      "I am disciple (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Prince of Tyre claims god",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 33,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ezekiel 33:30-33, what do the people SAY to Ezekiel + actually BELIEVE?",
+    "explanation": "Ezekiel 33:30-33 — 'And they come to you as people come, and they sit before you as my people, and they hear what you say but they will not do it; for with lustful talk in their mouths they act; their heart is set on their gain. And behold, you are to them like one who sings lustful songs with a beautiful voice and plays well on an instrument, for they hear what you say, but they will not do it. When this comes — and come it will! — then they will know that a prophet has been among them.' LESSON: BEAUTIFUL HEARING is not enough — must DO (Mt 7:24-27, James 1:22).",
+    "language": "en",
+    "options": [
+      "They listen sincerely (according to the text's framing) (per the original content)",
+      "They SIT before you AS my people + LISTEN as if to BEAUTIFUL MUSIC — but DO NOT obey; HEART after GAIN; when WORD COMES TRUE — they WILL KNOW a PROPHET is among them",
+      "They obey immediately (as described in the passage) (as the text indicates)",
+      "They reject totally (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Listen sweet but don't do",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 37,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ezekiel 37:15-28, what did God command Ezekiel to do with 2 STICKS? Meaning?",
+    "explanation": "Ezekiel 37:16-19, 24 — 'Son of man, take a stick and write on it, \"For Judah, and the people of Israel associated with him\"; then take another stick and write on it, \"For Joseph (the stick of Ephraim) and all the house of Israel associated with him.\" And join them one to another into one stick, that they may become one in your hand... Behold, I will take the stick of Joseph that is in the hand of Ephraim and the tribes of Israel associated with him. And I will join with it the stick of Judah, and make them one stick, that they may be one in my hand... My servant David shall be king over them.' Israel + Judah united under Messiah.",
+    "language": "en",
+    "options": [
+      "Break 2 sticks — division (as described in the passage)",
+      "Plant 2 — growth (per the textual narrative) (in the story's sequence)",
+      "JOIN 2 STICKS into 1 in your hand — Judah's stick + ISRAEL's stick = 2 split nations REUNITED under 1 KING (David / MESSIAH)",
+      "Burn 2 — cleansing (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "2 sticks united - Messiah",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 43,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ezekiel 43:1-5, the LORD's GLORY RETURNS to the new temple from where?",
+    "explanation": "Ezekiel 43:1-5 — 'Then he led me to the gate, the gate facing east. And behold, the glory of the God of Israel was coming from the east. And the sound of his coming was like the sound of many waters, and the earth shone with his glory. And the vision I saw was just like the vision that I had seen when he came to destroy the city, and just like the vision that I had seen by the Chebar canal. And I fell on my face. As the glory of the LORD entered the temple by the gate facing east.' THE GLORY RETURNS to the future temple. BEAUTIFUL: from the EAST (same way it LEFT). Same idea Mt 24:27 ('lightning from EAST').",
+    "language": "en",
+    "options": [
+      "WEST (sunset) (per the textual narrative) (in the story's sequence)",
+      "NORTH (Babylon) (as described in the passage) (as the text indicates)",
+      "SOUTH (Egypt) (according to the text's framing) (per the original content)",
+      "EAST (same way the glory DEPARTED at 11:23) — VOICE like many WATERS + earth shone with GLORY; glory ENTERS temple through EAST GATE"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Glory returns from east",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 47,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ezekiel 47:21-23, in the future land division, how should sojourning FOREIGNERS who BEAR CHILDREN be treated?",
+    "explanation": "Ezekiel 47:21-23 — 'So you shall divide this land among you according to the tribes of Israel. You shall allot it as an inheritance for yourselves and for the sojourners who reside among you and have had children among you. They shall be to you as native-born children of Israel. With you they shall be allotted an inheritance among the tribes of Israel. In whatever tribe the sojourner resides, there you shall assign him his inheritance, declares the Lord GOD.' FOREIGNER's RIGHTS = equal to Israelites. Same NT principle (Eph 2:11-22 — one body).",
+    "language": "en",
+    "options": [
+      "Treat as NATIVE-BORN — share inheritance with the tribe they reside in (equal inheritance with Israelites)",
+      "Be expelled (per the textual narrative) (in the story's sequence)",
+      "Pay double tax (as described in the passage)",
+      "Be servants (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Foreigners as native-born",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 16,
+    "verseStart": 46,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ezekiel 16:46-50, with what 2 sisters does God COMPARE Jerusalem?",
+    "explanation": "Ezekiel 16:46-50 — 'Your elder sister is Samaria, who lived with her daughters to the north of you; and your younger sister, who lived to the south of you, is Sodom with her daughters. Not only did you walk in their ways and do according to their abominations; within a very little time you were more corrupt than they in all your ways.' SHOCKING: Jerusalem = WORSE than Sodom! 16:49-50 lists Sodom's sins: PRIDE + EXCESS FOOD + EASE + did NOT help the POOR + did not aid the needy. Sin is NOT limited to sexual.",
+    "language": "en",
+    "options": [
+      "Sodom + Egypt (according to the text's framing) (per the original content)",
+      "ELDER SISTER SAMARIA in the NORTH + YOUNGER SISTER SODOM in the SOUTH — Jerusalem WORSE than both",
+      "Bethel + Dan (per the textual narrative) (in the story's sequence)",
+      "Egypt + Babylon (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Elder Samaria + younger Sodom",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 18,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ezekiel 18:25-32, what did Israel SAY of God's WAY? God's reply?",
+    "explanation": "Ezekiel 18:25, 29, 31-32 — '\"Yet you say, 'The way of the Lord is not just.' Hear now, O house of Israel: Is my way not just? Is it not your ways that are not just?... Cast away from you all the transgressions that you have committed, and make yourselves a new heart and a new spirit! Why will you die, O house of Israel? For I have no pleasure in the death of anyone, declares the Lord GOD; so turn, and live.\"' SHOCK: the people ACCUSED God of injustice.",
+    "language": "en",
+    "options": [
+      "'God's way is straight' — praise (per the textual narrative)",
+      "'God's way is wise' — encouragement (according to the text's framing)",
+      "They say 'THE WAY of the LORD is NOT JUST'! God replies: 'NO! YOUR WAY is unjust; REPENT — WHY WILL YOU DIE?'",
+      "'God's way is strange' — explanation (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "'Way unjust' - no!",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 20,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ezekiel 20:25-26, what STRANGE thing does God say about the laws he gave Israel?",
+    "explanation": "Ezekiel 20:25-26 — 'Moreover, I gave them statutes that were not good and rules by which they could not have life, and I defiled them through their very gifts in their offering up all their firstborn, that I might devastate them. I did it that they might know that I am the LORD.' THE MOST DIFFICULT VERSE in Ezekiel. Main interpretation: Israel ABANDONED the TRUE law (Moses) — God let them follow EVIL pagan laws (child sacrifice) as a form of JUDGMENT. Same idea Rom 1:24-26 ('gave them up').",
+    "language": "en",
+    "options": [
+      "Law too perfect (according to the text's framing) (per the original content) (per the textual narrative)",
+      "Law spiritual (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "New law perfect (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "I gave them STATUTES that were NOT GOOD + RULES by which they could NOT have life — because of their CHILD SACRIFICE in fire, that I might MAKE THEM DESOLATE; they WILL KNOW I am the LORD"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "God gave bad statutes - judgment",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 23,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ezekiel 23:1-4, who are OHOLAH + OHOLIBAH?",
+    "explanation": "Ezekiel 23:4 — 'Oholah was the name of the elder and Oholibah the name of her sister. They became mine, and they bore sons and daughters. As for their names, Oholah is Samaria, and Oholibah is Jerusalem.' OHOLAH = 'her own tent' (her own); OHOLIBAH = 'my tent in her' = the TRUE temple was in Jerusalem. Both 'COMMITTED ADULTERY' with Assyria + Babylon = political alliances + pagan worship.",
+    "language": "en",
+    "options": [
+      "OHOLAH = SAMARIA (NORTHERN Israel) + OHOLIBAH = JERUSALEM (Judah) — 2 sisters portrayed as PROSTITUTES (idolatry symbol)",
+      "Solomon's 2 wives (according to the text's framing) (as the text indicates)",
+      "Abraham's 2 daughters (as described in the passage) (per the original content)",
+      "Ruth's sisters (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Oholah = Samaria, Oholibah = Jerusalem",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 26,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Ezekiel 26:7-14, prophecy about TYRE's FALL — what specifics?",
+    "explanation": "Ezekiel 26:7-14 — 'For thus says the Lord GOD: Behold, I will bring against Tyre from the north Nebuchadnezzar king of Babylon... I will make you a bare rock. You shall be a place for the spreading of nets. You shall never be rebuilt, for I am the LORD; I have spoken, declares the Lord GOD.' History 100% fulfilled: (1) Nebuchadnezzar besieged Tyre 13 years (~585-572 BC); (2) ALEXANDER THE GREAT destroyed island Tyre in 332 BC by BUILDING a CAUSEWAY — throwing STONES + WOOD + DUST of the old city into the SEA. Today = a small sandbar.",
+    "language": "en",
+    "options": [
+      "Small king conquers (as described in the passage) (per the original content) (per the textual narrative)",
+      "Nebuchadnezzar (Babylon) + LATER MANY NATIONS will throw STONES + WOOD + DUST into the SEA — city becomes a place for SPREADING NETS + FISHING; NEVER rebuilt",
+      "Self-destructs (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "Wild beast (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Tyre - stones cast in sea - Alexander",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 28,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Ezekiel 28:11-19, the LAMENT for the KING OF TYRE has imagery that CANNOT apply to a HUMAN — implying whom behind?",
+    "explanation": "Ezekiel 28:13-15 — 'You were in Eden, the garden of God; every precious stone was your covering... You were an anointed guardian cherub. I placed you; you were on the holy mountain of God; in the midst of the stones of fire you walked. You were blameless in your ways from the day you were created, till unrighteousness was found in you.' Imagery NOT a human kingdom — a cherub in Eden. Many interpreters: text about KING OF TYRE on the SURFACE, but alludes to SATAN at deeper level (similar to Isa 14 king of Babylon).",
+    "language": "en",
+    "options": [
+      "Real king of Tyre (as described in the passage) (per the original content) (per the textual narrative) (according to the text's framing)",
+      "Common angel (per the textual narrative) (in the story's sequence) (cross-referenced with related passages) (in the story's sequence)",
+      "KING OF TYRE in PRIMORDIAL space + time: 'You were in EDEN, garden of God'; 'You were the ANOINTED CHERUB who covers'; 'PERFECT from your CREATION — until UNRIGHTEOUSNESS WAS FOUND in you'; many believe = SATAN behind the king",
+      "Mighty human (according to the text's framing) (as the text indicates) (in the context of the passage) (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "King of Tyre - cherub in Eden",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 39,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Ezekiel 38-39, who is GOG of MAGOG? Whom will he attack? Outcome?",
+    "explanation": "Ezekiel 38:2-3, 39:9-12 — 'Son of man, set your face toward Gog, of the land of Magog, the chief prince of Meshech and Tubal, and prophesy against him and say, Thus says the Lord GOD: Behold, I am against you, O Gog, chief prince of Meshech and Tubal... Then those who dwell in the cities of Israel will go out and make fires of the weapons and burn them, shields and bucklers, bow and arrows, clubs and spears; and they will make fires of them for seven years... For seven months the house of Israel will be burying them.' GOG + MAGOG reappear in Rev 20:8 — after the 1000-year reign. Various interpretations about specific nations.",
+    "language": "en",
+    "options": [
+      "Small king attacks Babylon (according to the text's framing) (per the original content) (per the textual narrative)",
+      "Demon attacks Egypt (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Eastern king attacks Greece (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "GOG (chief prince of Meshech + Tubal in the FAR NORTH) will attack ISRAEL in the LAST DAYS; God HIMSELF defeats him — uses 7 MONTHS to BURY corpses + 7 YEARS to BURN weapons; NATIONS will KNOW the LORD"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "Gog attacks Israel - God wins",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 44,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Ezekiel 44:1-3, what about the EAST GATE of the future temple? Who can enter?",
+    "explanation": "Ezekiel 44:1-3 — 'Then he brought me back to the outer gate of the sanctuary, which faces east. And it was shut. And the LORD said to me, \"This gate shall remain shut; it shall not be opened, and no one shall enter by it, for the LORD, the God of Israel, has entered by it. Therefore it shall remain shut. Only the prince may sit in it to eat bread before the LORD. He shall enter by way of the vestibule of the gate, and shall go out by the same way.\"' EAST GATE where the glory RETURNED (43:1-5) — shut forever. Today in Jerusalem: the historic east gate (Golden Gate) was sealed by Suleiman the Magnificent in 1541. Awaiting the Messiah.",
+    "language": "en",
+    "options": [
+      "EAST GATE shall be SHUT + NEVER opened because the LORD has ENTERED + it must remain shut forever; only the PRINCE (Messianic king) shall sit there to EAT BREAD before the LORD — enter + exit by the vestibule",
+      "Free for all (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Only priests (according to the text's framing) (per the original content) (per the textual narrative) (as described in the passage)",
+      "Only Levites (as described in the passage) (as the text indicates) (in the context of the passage) (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Ezekiel",
+      "Major Prophet",
+      "East gate shut - only Prince",
+      "Advanced"
+    ]
   }
 ]
