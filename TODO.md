@@ -98,13 +98,13 @@
 - Topics: Giê-rê-mi con Hin-kia thầy tế lễ (1:1); cấm cưới vợ làm dấu (16:1-2); chép cuộn sách qua Ba-rúc (36:1-4); năm 11 tháng 4 ngày 9 thành phá (39:1-2); cây hạnh - Chúa tỉnh thức (1:11-12); nồi sôi từ phía bắc (1:13-14); đền thờ Đức Giê-hô-va dối (7:4-7); thầy gốm có thể nắn lại (18:7-10); đập bình gốm không sửa được (19:10-11); lửa cháy trong xương (20:7-9); khốn cho mục tử ác (23:1-4); 70 năm hầu việc Babylon (25:11-12); đeo ách phục vụ Babylon (27:1-7); Ha-na-nia chết trong năm (28:15-17); cầu bình an cho thành Ba-by-lôn (29:4-7); 70 năm tìm hết lòng (29:10-14); Ra-chên khóc con cái (31:15); mua đất A-na-tốt làm dấu hi vọng (32:6-15); Rê-cáp-bít từ chối rượu (35:5-19); Ba-rúc - mạng sống làm của cướp (45:1-5); đảo ngược sáng tạo - tohu wa-bohu (4:23-26); 1 người công bình tha thành (5:1); vì sao kẻ ác thịnh vượng (12:1); tiên tri giả 4 nguồn (14:14); Giê-hô-gia-kim chôn như lừa (22:13-19); tiên tri giả nói bình an dối (23:16-22); chén rượu thạnh nộ cho các nước (25:15-29); người nữ bao quanh người nam (31:22); chồi công bình - YHWH sự công bình (33:14-16); Y-sơ-ra-ên Giu-đa cùng đi tìm Chúa (50:4-5)
 - VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
-#### Task B3-3: Proverbs +60 (20→80)
-- Status: [ ] TODO
-- Current: 20 (E13 M6 H1) → Target: 80 (E24 M36 H20)
-- Plan: +11 Easy + 30 Medium + 19 Hard
-- File(s): `proverbs_quiz.json` + `proverbs_quiz_en.json` + `scripts/append_proverbs_v3b.py`
-- Strategy: 31 chương — kính sợ Chúa = đầu mối (1:7, 9:10); khôn ngoan vs điên dại; 7 điều Chúa ghét 6:16-19; người vợ tài đức 31; lưỡi + miệng + lời nói; kiêu ngạo + khiêm nhường; sự lười biếng; gia đình + giáo dục con; Người công bình + kẻ ác
-- Commit: `feat(seed): Proverbs +60 V3 B3 quality expansion (20→80)`
+#### Task B3-3: Proverbs +60 (20→80) [x] DONE 2026-04-28
+- 20→**80** (E24 M36 H20, ratio **30.0/45.0/25.0%** — exact)
+- Pool +60: 11 Easy + 30 Medium + 19 Hard VI + 60 EN 1:1
+- Single idx: 0:14, 1:14, 2:16, 3:16 (well distributed)
+- 60 single + 0 multi
+- Topics: nghe lời cha + mẹ (1:8); chớ đồng ý kẻ tội (1:10); tôn vinh bằng đầu mùa (3:9); 6/7 điều Chúa ghét (6:16-19); con khôn cha vui (10:1); công bình cao quốc (14:34); người tính - Chúa định (16:9); danh Chúa tháp kiên cố (18:10); giữ miệng giữ linh hồn (21:23); danh tốt hơn tiền của (22:1); giấu tội bại - xưng + lìa được thương (28:13); khôn ngoan kêu lớn ngoài đường (1:20); Chúa ban khôn ngoan (2:6); khôn ngoan quý hơn châu ngọc (3:13); chớ từ chối điều lành (3:27); khôn ngoan là điều đầu (4:7); đường công bình tăng sáng (4:18); vui với vợ thuở thanh xuân (5:18); răn = đèn luật = sáng (6:23); lòng đừng tham sắc đẹp (6:25); giữ điều răn tránh dâm phụ (7:1); khôn ngoan xây 7 trụ (9:1); yêu thương che các tội (10:12); nói nhiều = nhiều tội (10:19); dân sa ngã không cố vấn (11:14); rải ra mà thêm (11:24-25); lời tốt khích lệ lòng buồn (12:25); của bất chính hao (13:11); đi với khôn được khôn (13:20); chậm giận có thông sáng (14:29); khiêm nhường đi trước vinh hiển (15:33); cai trị lòng hơn chiếm thành (16:32); lòng vui = thuốc hay (17:22); cho người nghèo = cho Chúa vay (19:17); người công bình - phước cho con (20:7); lòng vua như dòng nước (21:1); giàu cai trị nghèo - mượn = tôi tớ (22:7); của giàu mọc cánh bay đi (23:4); chớ + hãy đáp ngu (26:4-5); công bình dạn dĩ như sư tử (28:1); vào nhà dâm phụ - không trở lại (2:16-19); Chúa sửa trị vì yêu (3:11-12); môi dâm phụ - mật rồi gươm (5:3-6); trộm bồi 7 lần - ngoại tình không tha (6:30-35); khôn ngoan ở với Chúa từ khởi đầu (8:22-31); tìm khôn ngoan = tìm sự sống (8:35-36); áp bức nghèo = sỉ Đấng tạo (14:31); tế lễ kẻ ác = gớm ghiếc (15:8); nhân từ + chân thật chuộc tội (16:6); chế nhạo nghèo - sỉ Đấng tạo (17:5); người tính - ý Chúa thành (19:21); không ai làm sạch lòng (20:9); bịt tai - sẽ không được nghe (21:13); không khôn ngoan chống Chúa (21:30-31); chớ dời mốc giới cũ (22:28); cứu kẻ bị dẫn đến chết (24:11-12); bạn thương tích thành tín (27:6); A-gu-rơ chớ giàu chớ nghèo (30:7-9); sắc đẹp dối - kính sợ Chúa được khen (31:30)
+- VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
 #### Task B3-4: Deuteronomy +38 (32→70)
 - Status: [ ] TODO

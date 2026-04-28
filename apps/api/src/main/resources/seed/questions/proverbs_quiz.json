@@ -536,5 +536,1565 @@
       "Văn Thơ",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 1,
+    "verseStart": 8,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 1:8-9, con phải nghe lời ai? Lời cha + mẹ là gì cho con?",
+    "explanation": "Châm Ngôn 1:8-9 — 'Hỡi con, hãy nghe lời khuyên dạy của cha, chớ bỏ phép tắc của mẹ con; vì ấy sẽ như một dây hoa trên đầu con, giống một vòng đeo nơi cổ con.' Cha + mẹ DAY DỖ = vinh dự cho con (mão + chuỗi). Sách Châm Ngôn được viết phần lớn từ vai trò CHA dạy CON.",
+    "language": "vi",
+    "options": [
+      "Nghe lời thầy giáo — là kiến thức",
+      "Nghe lời vua — là quyền lực (theo cách trình bày của text)",
+      "Nghe lời CHA RĂN BẢO + KHÔNG bỏ phép tắc của MẸ — là MÃO HOA TRÊN ĐẦU + DÂY CHUYỀN trên cổ",
+      "Nghe lời bạn — là vui (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Nghe lời cha + phép tắc mẹ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 1:10, nếu kẻ tội lôi kéo con vào việc ác, con phải làm gì?",
+    "explanation": "Châm Ngôn 1:10 — 'Hỡi con, nếu kẻ tội nhân kiếm thế quyến dụ con, chớ khứng theo.' Lời rất ngắn nhưng cốt lõi: ÁP LỰC ĐỒNG TRANG LỨA. Lời quyến rũ thường ngọt ngào (1:11-14) — phải QUYẾT TÂM TỪ CHỐI ngay từ đầu. Lý do: 1:18-19 — họ ĐANG GĂNG BÁY CHÍNH MÌNH.",
+    "language": "vi",
+    "options": [
+      "Nghe theo họ",
+      "Lý luận với họ",
+      "Im lặng quan sát",
+      "CHỚ KHỨNG THUẬN (chớ đồng ý)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Chớ đồng ý với kẻ tội",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 3:9-10, hãy lấy gì để tôn vinh Đức Giê-hô-va? Kết quả là gì?",
+    "explanation": "Châm Ngôn 3:9-10 — 'Hãy lấy tài vật và huê lợi đầu mùa của con, mà tôn vinh Đức Giê-hô-va; vậy các vựa lẫm con sẽ đầy dư dật, và những thùng của con sẽ tràn rượu mới.' Trái đầu mùa (Lê-vi 23:10) = dấu tin Chúa cung cấp tiếp. Nguyên tắc: dâng TRƯỚC TIÊN — Chúa SẼ ĐẦY DẪY. Cùng tư tưởng Ma-la-chi 3:10.",
+    "language": "vi",
+    "options": [
+      "Tâm hồn — sẽ được Chúa thương (theo cách trình bày của text)",
+      "TÀI VẬT + CỦA ĐẦU MÙA của hoa lợi — vựa lẫm được ĐẦY DẪY tột bậc + bồn ép NỨT vì RƯỢU MỚI",
+      "Lời cầu nguyện — sẽ được lắng nghe",
+      "Việc làm — sẽ được thưởng (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Tôn vinh bằng đầu mùa",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 6,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 6:16-19, có 6 (thực ra 7) điều Đức Giê-hô-va GHÉT — ý GỚM GHIẾC. Câu này dùng cấu trúc gì?",
+    "explanation": "Châm Ngôn 6:16 — 'Có sáu điều Đức Giê-hô-va ghét, và bảy điều Ngài lấy làm gớm ghiếc.' DẠNG 'X / X+1' = thường gặp tại Châm Ngôn (cf. 30:15, 18, 21, 29). Đáp án (6:17-19): mắt KIÊU NGẠO + lưỡi DỐI TRÁ + tay đổ HUYẾT VÔ TỘI + lòng MƯU ĐỘC + chân CHẠY về điều ác + người làm CHỨNG GIAN nói DỐI + kẻ GIEO sự TRANH CẠNH giữa anh em.",
+    "language": "vi",
+    "options": [
+      "'CÓ SÁU ĐIỀU Đức Chúa Trời GHÉT, có BẢY ĐIỀU Ngài LẤY LÀM GỚM GHÉT'",
+      "'10 điều Chúa ghét' (xét trong văn cảnh)",
+      "'Tất cả mọi điều Chúa thích'",
+      "'Không gì Chúa ghét' (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Sáu điều Chúa ghét, bảy điều gớm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 10,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 10:1, con khôn ngoan làm cho ai vui? Con NGU dại làm cho ai BUỒN?",
+    "explanation": "Châm Ngôn 10:1 — 'Con trai khôn ngoan làm vui cha mình; nhưng đứa ngu muội gây buồn cho mẹ nó.' Câu mở chương 10 = bộ sưu tập 'tục ngữ Sa-lô-môn' (10:1-22:16). Đảo ngược nhau giữa CHA + MẸ — hai vế đối song song. Cùng tư tưởng được lặp 17:21, 17:25.",
+    "language": "vi",
+    "options": [
+      "Bạn vui — kẻ thù buồn",
+      "Cha vui — không ai buồn",
+      "Con khôn làm CHA vui mừng — con NGU dại là sự BUỒN RẦU cho MẸ",
+      "Cộng đồng vui — gia đình buồn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Con khôn cha vui, ngu mẹ buồn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 14,
+    "verseStart": 34,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 14:34, điều gì làm CAO QUỐC GIA? Điều gì là SỰ HỔ THẸN cho dân?",
+    "explanation": "Châm Ngôn 14:34 — 'Sự công bình làm cho nước cao trọng; song tội lỗi là sự hổ thẹn cho các dân tộc.' Nguyên tắc rõ rệt: CAO QUỐC = công bình; HỔ THẸN = tội. KHÔNG phải sức mạnh quân sự, kinh tế, hay học rộng. Đây là LỜI cảnh báo cho mọi dân tộc — không chỉ Y-sơ-ra-ên.",
+    "language": "vi",
+    "options": [
+      "Quân đội mạnh — sự yếu đuối là hổ thẹn",
+      "Học rộng — ngu dốt là hổ thẹn",
+      "Sản xuất nhiều — nghèo đói là hổ thẹn",
+      "SỰ CÔNG BÌNH làm cho nước CAO TRỌNG; song TỘI LỖI là sự HỔ THẸN cho các dân tộc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Công bình cao quốc - tội hổ thẹn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 16,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 16:9, lòng người làm gì với ĐƯỜNG? Đức Giê-hô-va làm gì với BƯỚC?",
+    "explanation": "Châm Ngôn 16:9 — 'Lòng người toan định đường lối mình; song Đức Giê-hô-va chỉ dẫn các bước của người.' Nghịch lý: NGƯỜI lập kế hoạch — CHÚA hướng dẫn từng bước. KHÔNG nói người không có ý chí — nói cuối cùng CHÚA TỂ TRỊ. Cùng dạy 19:21 (nhiều ý tưởng trong lòng nhưng ý chỉ Chúa lập), 21:1 (lòng vua trong tay Chúa).",
+    "language": "vi",
+    "options": [
+      "Cả hai do người định (như được mô tả trong sách)",
+      "Lòng người TÍNH TOÁN ĐƯỜNG mình — nhưng ĐỨC GIÊ-HÔ-VA CHỈ DẪN BƯỚC người",
+      "Cả hai do Chúa định (xét trong văn cảnh)",
+      "Cả hai do hoàn cảnh (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Người tính - Chúa định bước",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 18,
+    "verseStart": 10,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 18:10, danh Chúa là gì? Người công bình làm gì?",
+    "explanation": "Châm Ngôn 18:10 — 'Danh Đức Giê-hô-va vốn một ngọn tháp kiên cố; kẻ công bình chạy đến đó, gặp được nơi ẩn trú cao.' DANH (shem) = bản tính Đức Chúa Trời. THÁP (migdal) = pháo đài bảo vệ. Người công bình CHẠY VÀO — không đứng ngoài. Khác câu KẾ tiếp (18:11): kẻ giàu cậy của cải là 'TƯỜNG CAO' trong tưởng tượng — KHÔNG vững.",
+    "language": "vi",
+    "options": [
+      "Là sức mạnh — chạy đi đánh",
+      "Là vinh quang — đứng nhìn (theo cách trình bày của text)",
+      "DANH Đức Giê-hô-va là 1 THÁP KIÊN CỐ — kẻ công bình CHẠY VÀO ĐÓ thì được an ổn",
+      "Là âm thanh — kêu lớn (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Danh Chúa - tháp kiên cố",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 21,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 21:23, ai giữ MIỆNG + LƯỠI thì được giữ điều gì?",
+    "explanation": "Châm Ngôn 21:23 — 'Ai giữ lấy miệng và lưỡi mình giữ linh hồn mình khỏi hoạn nạn.' Nguyên tắc: nói NHIỀU = nguy cơ NHIỀU; nói CHẬM = nguy cơ ÍT. Cùng tư tưởng 13:3, 17:27, Gia-cơ 3:5-6 (lưỡi nhỏ nhưng cháy lớn). Sự an ninh THUỘC LINH liên quan KIỂM SOÁT lưỡi.",
+    "language": "vi",
+    "options": [
+      "GIỮ LINH HỒN mình khỏi sự khốn khổ (hoạn nạn)",
+      "Giữ tiền bạc (theo cách trình bày của text)",
+      "Giữ danh dự (xét trong văn cảnh)",
+      "Giữ sức khỏe (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Giữ miệng giữ linh hồn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 22,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 22:1, điều gì là quý hơn TÀI SẢN GIÀU CÓ? Hơn VÀNG + BẠC?",
+    "explanation": "Châm Ngôn 22:1 — 'Danh tiếng tốt còn hơn tiền của nhiều; và ơn nghĩa quý hơn bạc và vàng.' DANH (shem) trong tiếng Hê-bơ-rơ = REPUTATION. KHÔNG phải về tự hào — về việc người khác có thể TIN ngươi. Của cải có thể MẤT — danh dự một khi mất, KHÔNG thể tìm lại. Cùng câu Truyền Đạo 7:1.",
+    "language": "vi",
+    "options": [
+      "Sự sống lâu (như được mô tả trong sách)",
+      "Sức khỏe (xét trong văn cảnh)",
+      "Học rộng (theo cách trình bày của text)",
+      "DANH TIẾNG TỐT (danh thơm) đáng chuộng hơn của giàu — ƠN HUỆ thì hơn vàng và bạc"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Danh tốt hơn tiền của",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 28,
+    "verseStart": 13,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 28:13, ai GIẤU TỘI MÌNH thì sao? Ai XƯNG ra + LÌA bỏ thì sao?",
+    "explanation": "Châm Ngôn 28:13 — 'Người nào giấu tội lỗi mình sẽ không được may mắn; nhưng ai xưng nó ra và lìa bỏ nó sẽ được thương xót.' Cùng tư tưởng 1 Giăng 1:9 ('xưng tội mình thì Ngài thành tín + công bình tha tội'). 2 ĐỘNG TỪ: XƯNG + LÌA — không chỉ thừa nhận mà bỏ. Khác Đa-vít: che tội (Thi 32:3-4 'xương tan ra') vs xưng tội (32:5 'thì Ngài tha tội').",
+    "language": "vi",
+    "options": [
+      "Ai giấu được phước — xưng bị phạt",
+      "Cả hai đều như nhau (xét trong văn cảnh)",
+      "Ai GIẤU tội KHÔNG được THỊNH VƯỢNG — ai XƯNG + LÌA tội sẽ được THƯƠNG XÓT",
+      "Ai giấu được khôn — xưng bị quê"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Giấu tội bại - xưng + lìa được thương",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 1,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 1:20-21, sự KHÔN NGOAN được nhân hóa làm gì? Ở đâu?",
+    "explanation": "Châm Ngôn 1:20-21 — 'Sự khôn ngoan hô lên ngoài đường, cất tiếng mình nơi phố chợ; khôn ngoan kêu trong nơi đông đảo, mời gọi nơi cửa thành mà rao lời mình ra.' KHÔN NGOAN nhân hóa = phụ nữ kêu gọi (vs 'NGƯỜI NỮ DẠI' chương 9). KHÔN NGOAN KHÔNG GIẤU — Chúa muốn AI CŨNG nghe. Lý do nhiều người vẫn không có khôn ngoan: từ chối nghe, không phải khôn ngoan giấu mình.",
+    "language": "vi",
+    "options": [
+      "Nói thầm trong đền — chỉ thầy tế nghe",
+      "GỌI LỚN ngoài đường + cất tiếng nơi chợ + ngạch CỬA THÀNH — gọi mọi người",
+      "Kêu nhỏ trong vườn — chỉ vua nghe",
+      "Im lặng trên núi — chỉ tiên tri nghe"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Khôn ngoan kêu lớn ngoài đường",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 2,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 2:6, KHÔN NGOAN từ đâu mà có? Ai BAN SỰ THÔNG BIẾT?",
+    "explanation": "Châm Ngôn 2:6 — 'Vì Đức Giê-hô-va ban cho sự khôn ngoan; từ miệng Ngài ra sự thông sáng và tri thức.' KHÔN NGOAN không phải tự sinh — TỪ CHÚA. Nguồn 1: 1:7 = kính sợ Chúa = đầu mối; Nguồn 2: 2:6 = miệng Chúa ra. Cũng vì sao: 2:5 ('hiểu kính sợ Đức Giê-hô-va, gặp được sự thông biết của Đức Chúa Trời').",
+    "language": "vi",
+    "options": [
+      "ĐỨC GIÊ-HÔ-VA ban khôn ngoan; từ MIỆNG NGÀI ra sự thông biết + sự khôn sáng",
+      "Từ trí khôn loài người (theo cách trình bày của text)",
+      "Từ trải nghiệm cuộc đời (như được mô tả trong sách)",
+      "Từ học rộng (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Đức Giê-hô-va ban khôn ngoan",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 3:13-15, ai TÌM ĐƯỢC khôn ngoan thì có gì? Khôn ngoan quý hơn?",
+    "explanation": "Châm Ngôn 3:13-15 — 'Người nào tìm đặng sự khôn ngoan, và được sự thông sáng, có phước thay! Vì thà được nó hơn là được tiền bạc, hoa lợi nó sanh ra tốt hơn vàng ròng. Sự khôn ngoan quí báu hơn châu ngọc; chẳng một bảo vật nào con ưa thích mà sánh được nó.' Khôn ngoan ĐÁNG GIÁ HƠN MỌI THỨ — vì nó BAN SỰ SỐNG (3:18). Nguyên tắc đầu tư: bỏ tất cả để được khôn ngoan.",
+    "language": "vi",
+    "options": [
+      "Có quyền lực — quý hơn tiền (như được mô tả trong sách)",
+      "Có sức mạnh — quý hơn vàng (theo cách trình bày của text)",
+      "Có sống lâu — quý hơn bạc (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Có PHƯỚC LỚN — vì hoa lợi khôn ngoan TỐT HƠN hoa lợi BẠC + lợi tức TỐT HƠN VÀNG; quý HƠN CHÂU NGỌC, KHÔNG vật gì con ưa thích sánh được"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Khôn ngoan quý hơn châu ngọc",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 3:27-28, đối với người đáng được, con CHỚ làm gì? CHỚ nói gì với người lân cận?",
+    "explanation": "Châm Ngôn 3:27-28 — 'Chớ từ chối làm lành cho kẻ nào xứng đáng, miễn là tay con có thể làm được. Nhược bằng con có tại nơi con vật kẻ lân cận cầu xin, chớ nói với người rằng: Hãy đi và trở lại, ngày mai ta sẽ cho ngươi; vì con có sẵn nó.' Lời CỤ THỂ về thi hành công bình. Cùng dạy Mat 5:42, Gia-cơ 2:15-16. Quan trọng: không trì hoãn cứu trợ.",
+    "language": "vi",
+    "options": [
+      "Chớ vô lễ; chớ ai phản đối (xét trong văn cảnh)",
+      "Chớ thách thức; chớ ai báo oán (như được mô tả trong sách)",
+      "CHỚ TỪ CHỐI làm điều LÀNH cho ai có quyền nhận; CHỚ nói 'Hãy ĐI + TRỞ LẠI ngày mai' khi con HIỆN TẠI có khả năng",
+      "Chớ cho mượn; chớ ai trả lại (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Chớ từ chối điều lành",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 4:7, ĐIỀU NÀY là GỐC RỄ của khôn ngoan?",
+    "explanation": "Châm Ngôn 4:7 — 'Sự khôn ngoan là điều cần nhứt; vậy, khá cầu lấy sự khôn ngoan; hãy dùng hết của con đã được mà mua sự thông sáng.' '4:7 = câu vàng của Châm Ngôn'. KHÔN NGOAN = ưu tiên #1, không thể bỏ qua để đeo đuổi điều khác. 'DÙNG HẾT CỦA' = đầu tư hết — vì tiến trình khôn ngoan ĐÁNG GIÁ.",
+    "language": "vi",
+    "options": [
+      "Học cao — đó là khôn ngoan (xét trong văn cảnh)",
+      "KHÔN NGOAN là điều đầu (cốt yếu) — vậy hãy LẤY KHÔN NGOAN; cùng với mọi sự con hãy LẤY SỰ HIỂU BIẾT",
+      "Tiền bạc — đó là khôn ngoan (theo cách trình bày của text)",
+      "Quyền lực — đó là khôn ngoan (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Khôn ngoan là điều đầu",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 4,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 4:18-19, ĐƯỜNG người công bình GIỐNG gì? ĐƯỜNG kẻ ác?",
+    "explanation": "Châm Ngôn 4:18-19 — 'Nhưng con đường người công bình giống như sự sáng chiếu rạng, càng sáng thêm lên cho đến giữa trưa. Còn nẻo kẻ gian ác vẫn như tăm tối; chúng nó chẳng biết mình vấp ngã vì đâu.' 2 đường ĐỐI LẬP rõ rệt: SÁNG TĂNG dần (rạng đông → giữa trưa) vs TỐI TĂM HOÀN TOÀN. Người công bình CÀNG SỐNG, càng MINH BẠCH; kẻ ác KHÔNG BIẾT mình bị gì.",
+    "language": "vi",
+    "options": [
+      "Cả 2 đều như sương (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Cả 2 đều như cây (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Cả 2 đều như suối (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Đường người CÔNG BÌNH như SỰ SÁNG TỎ TƯỜNG, càng SÁNG THÊM lên cho đến giữa trưa; còn đường kẻ ÁC như sự TỐI TĂM, không biết mình VẤP NGÃ vào ĐÂU"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Đường công bình tăng sáng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 5,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 5:18-19, hãy lấy LÀM VUI MỪNG với ai? Lúc nào?",
+    "explanation": "Châm Ngôn 5:18-19 — 'Nguyện nguồn mạch con được phước; con hãy lấy làm vui thích nơi vợ con cưới buổi đang thì; như nai cái đáng thương, và hoàng dương có duyên tốt, nguyện đôi nương long nàng làm thỏa lòng con luôn luôn, và ái tình nàng khiến cho con say mê mãi mãi.' VUI VỢ MÌNH = thuốc giải DÂM PHỤ (5:1-14). Tình yêu vợ chồng VINH DỰ — không phải đáng xấu hổ.",
+    "language": "vi",
+    "options": [
+      "Với VỢ con thuở thanh xuân — cho ngươi nhanh nhẹn say sưa với LÒNG YÊU MẾN của nàng",
+      "Với chị em — luôn luôn (theo cách trình bày của text)",
+      "Với mẹ — khi đau ốm (xét trong văn cảnh)",
+      "Với đầy tớ — khi rảnh rỗi (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Vui với vợ thuở thanh xuân",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 6,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 6:23, điều răn là gì? Luật pháp là gì? Sự răn dạy khuyên bảo là gì?",
+    "explanation": "Châm Ngôn 6:23 — 'Vì điều răn là một cái đèn, luật pháp là ánh sáng, và sự quở trách khuyên dạy là con đường sự sống.' 3 hình ảnh: ĐÈN (mời sáng), SỰ SÁNG (chiếu rạng), CON ĐƯỜNG (định hướng). Cùng dạy Thi Thiên 119:105 ('Lời Chúa là ngọn đèn cho chân tôi'). Luật KHÔNG phải gánh nặng — là đèn SOI ĐƯỜNG.",
+    "language": "vi",
+    "options": [
+      "Răn = biển báo; luật = sách; răn dạy = thầy",
+      "Răn = quy định; luật = sách quốc; răn dạy = đào tạo",
+      "Điều răn là ĐÈN, luật pháp là SỰ SÁNG, và sự RĂN DẠY khuyên bảo là CON ĐƯỜNG SỰ SỐNG",
+      "Răn = hàng rào; luật = trại; răn dạy = an toàn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Răn = đèn, luật = sáng, dạy = sự sống",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 6,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 6:25, ĐỪNG để LÒNG con tham gì với người dâm phụ?",
+    "explanation": "Châm Ngôn 6:25 — 'Lòng con chớ tham muốn sắc nó; đừng để mình mắc phải mí mắt nó.' Sự THAM bắt đầu từ LÒNG (Mat 5:28 cùng dạy). 'MÍ MẮT' = quyến rũ bằng cách liếc. KHÔNG nói KHÔNG nhìn — nói LÒNG đừng THAM. Sự khác biệt giữa cám dỗ + tội: tội bắt đầu khi LÒNG đồng ý.",
+    "language": "vi",
+    "options": [
+      "Đừng tham tiền của họ (như được mô tả trong sách)",
+      "Đừng tham SẮC ĐẸP nàng — đừng để mình BỊ MẮT NÀNG dụ dỗ",
+      "Đừng tham đồ ăn họ (theo cách trình bày của text)",
+      "Đừng tham nhà họ (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Lòng đừng tham sắc đẹp",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 7:1-5, lý do CON phải ghi điều răn của CHA + giữ luật pháp như con NGƯƠI MẮT là để gì?",
+    "explanation": "Châm Ngôn 7:1-5 — 'Hỡi con, hãy giữ các lời ta, và giấu nơi lòng các mạng lịnh ta. Khá tuân thủ các mạng lịnh ta, thì con sẽ được sống... đặng giải cứu con khỏi dâm phụ, khỏi đàn bà ngoại đứng trau chuốt lời nói.' Luật pháp = HÀNG RÀO bảo vệ. Câu chuyện 7:6-23 — chàng trai khờ dại bị quyến rũ vào nhà dâm phụ, kết cuộc 'chết'. Lời cảnh cáo NGÀY NAY còn áp dụng.",
+    "language": "vi",
+    "options": [
+      "Để được giàu có (như được mô tả trong sách)",
+      "Để có vợ đẹp (theo cách trình bày của text)",
+      "Để cha vui (xét trong văn cảnh)",
+      "Để giữ con KHỎI người NỮ NGOẠI tình + người NỮ LẠ với LỜI dua nịnh"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Giữ điều răn để tránh dâm phụ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 9,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 9:1, sự KHÔN NGOAN đã làm gì để chuẩn bị tiệc?",
+    "explanation": "Châm Ngôn 9:1-2 — 'Sự khôn ngoan đã xây dựng nhà mình; tạc thành bảy cây trụ của nó. Người đã giết các con thú mình, pha rượu nho mình, và dọn bàn tiệc mình rồi.' KHÔN NGOAN = nhân hóa nữ chủ tiệc. 7 TRỤ — số HOÀN HẢO; nhà KHÔN NGOAN VỮNG CHẮC. Đối lập 9:13-18 — NGƯỜI ĐÀN BÀ DẠI cũng mời nhưng đến THẾ GIỚI CHẾT.",
+    "language": "vi",
+    "options": [
+      "XÂY NHÀ + ĐỤC nên BẢY TRỤ — giết SÚC vật + pha RƯỢU + DỌN bàn",
+      "Xây trường — gọi học sinh",
+      "Xây vườn — gọi tiệc nhẹ (theo cách trình bày của text)",
+      "Xây đền — gọi thầy tế (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Khôn ngoan xây 7 trụ + đãi tiệc",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 10,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 10:12, lòng GHEN GHÉT làm gì? Lòng YÊU THƯƠNG làm gì với tội?",
+    "explanation": "Châm Ngôn 10:12 — 'Sự ghen ghét xui điều cãi lộn; song lòng yêu thương lấp hết các tội phạm.' KHÔNG nói yêu thương thuần ngu dại lờ đi tội — nói KHÔNG bị THẤM SÂU bởi tội nhỏ ngày qua ngày. 1 Phi-e-rơ 4:8 trích cùng câu. 'CHE TỘI' KHÔNG nghĩa CỘ TÚC tội ác — nghĩa BỎ QUA những lỗi nhỏ trong quan hệ.",
+    "language": "vi",
+    "options": [
+      "Cả 2 đều phơi bày tội (như được mô tả trong sách)",
+      "Cả 2 đều giấu tội (xét trong văn cảnh)",
+      "GHEN GHÉT khêu chuyện CÃI LẪY — YÊU THƯƠNG che CÁC TỘI lỗi",
+      "Cả 2 đều khen tội (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Yêu thương che các tội",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 10,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 10:19, ai NÓI NHIỀU thì sao? Ai cầm GIỮ MIỆNG thì sao?",
+    "explanation": "Châm Ngôn 10:19 — 'Hễ lắm lời, vi phạm nào có thiếu; nhưng ai cầm giữ miệng mình là khôn ngoan.' NHIỀU LỜI = NHIỀU CƠ HỘI nói SAI. Cùng tư tưởng Truyền Đạo 5:2-3 ('chớ vội vàng trong lòng + chớ nói nhiều với Đức Chúa Trời'), Gia-cơ 1:19 (mau nghe + chậm nói).",
+    "language": "vi",
+    "options": [
+      "Nói nhiều có khôn — giữ miệng có ngu",
+      "Cả 2 như nhau (xét trong văn cảnh)",
+      "Nói nhiều được giàu — giữ miệng được nghèo",
+      "NÓI NHIỀU không thiếu sự QUÁ PHẠM (tội); kẻ CẦM GIỮ miệng là KHÔN NGOAN"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Nói nhiều = nhiều tội",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 11,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 11:14, KHÔNG có sự GIÚP đỡ thì dân thế nào? Có nhiều CỐ VẤN thì sao?",
+    "explanation": "Châm Ngôn 11:14 — 'Dân sự sa ngã tại không chánh trị; song nếu có nhiều mưu sĩ, bèn được yên ổn.' Cùng dạy 15:22 ('không có lời cố vấn, chương trình thất bại'), 24:6 ('chiến tranh được ưa khôn nhờ nhiều mưu sĩ'). Lãnh đạo MỘT MÌNH = nguy cơ; nhiều TIẾNG NÓI = an toàn.",
+    "language": "vi",
+    "options": [
+      "Có dân vẫn thịnh — cố vấn nhiều thì rối",
+      "DÂN sa NGÃ — sự CHIẾN THẮNG nằm ở NHIỀU MƯU SĨ",
+      "Cả 2 đều vô nghĩa (xét trong văn cảnh)",
+      "Dân yếu — cố vấn nhiều thì xấu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Dân sa ngã không cố vấn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 11,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 11:24, có người RẢI RA mà thêm nhiều, có người THÂU LẠI nhưng càng thiếu — nguyên tắc là gì?",
+    "explanation": "Châm Ngôn 11:24 — 'Có người rải của mình ra, lại càng thêm nhiều lên; cũng có người chắt lót quá bực, nhưng chỉ được sự thiếu thốn.' NGHỊCH LÝ kinh tế của Đức Chúa Trời. Cùng dạy 11:25 ('lòng rộng rãi sẽ được no nê'), 28:27 ('ai cho người nghèo sẽ không thiếu'). KHÔNG đảm bảo giàu có vật chất — đảm bảo phong phú thuộc linh.",
+    "language": "vi",
+    "options": [
+      "Tham lam có nhiều (như được mô tả trong sách)",
+      "Cộng tác giàu (xét trong văn cảnh)",
+      "Người hào phóng / RỘNG RÃI sẽ có DƯ DẬT — kẻ KEO KIỆT lại càng THIẾU THỐN",
+      "Lưu giữ là khôn (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Rải ra mà thêm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 11,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 11:25, ai CỨU GIÚP người khác thì cũng ra sao?",
+    "explanation": "Châm Ngôn 11:25 — 'Lòng rộng rãi sẽ được no nê; còn ai nhuần gội kẻ khác sẽ được nhuần gội chính mình.' Trùng với 'gặt như gieo' (Ga-la-ti 6:7). Áp dụng cho tài sản, lời nói, tình yêu. NGUYÊN TẮC PHỔ QUÁT: bạn cho ra điều gì, sẽ NHẬN LẠI điều đó.",
+    "language": "vi",
+    "options": [
+      "LÒNG RỘNG RÃI sẽ ĐƯỢC NO NÊ; ai TƯỚI cho người khác sẽ ĐƯỢC TƯỚI lại",
+      "Sẽ bị mất hết (theo cách trình bày của text)",
+      "Sẽ bị cảm tạ ít (như được mô tả trong sách)",
+      "Không có gì (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Tưới cho người được tưới lại",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 12,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 12:25, sự BUỒN RẦU trong lòng làm cho lòng thế nào? Lời TỐT làm gì?",
+    "explanation": "Châm Ngôn 12:25 — 'Sự buồn rầu ở nơi lòng người làm cho nao sờn; nhưng một lời lành khiến lòng vui vẻ.' Sức mạnh tinh thần của LỜI: LỜI TỐT có thể đảo ngược buồn rầu. Cùng tư tưởng 15:13 (lòng vui = mặt sáng), 17:22 (lòng vui = thuốc hay). Khích lệ là MỤC VỤ thuộc linh.",
+    "language": "vi",
+    "options": [
+      "Buồn = mạnh; tốt = yếu (theo cách trình bày của text)",
+      "Buồn = vui; tốt = buồn (như được mô tả trong sách)",
+      "Cả 2 = thay đổi (xét trong văn cảnh)",
+      "BUỒN RẦU làm LÒNG nặng nề (cúi xuống) — LỜI tốt LÀNH làm CHO VUI MỪNG"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Lời tốt khích lệ lòng buồn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 13,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 13:11, của bất chính thế nào? Của LÀM RA dần dần thì sao?",
+    "explanation": "Châm Ngôn 13:11 — 'Hoạnh tài ắt phải hao bớt; còn ai lấy tay thâu góp sẽ được thêm của nhiều lên.' KHÔNG nói nghèo = thánh, giàu = ác — nói CÁCH LÀM giàu QUAN TRỌNG. Của KIẾM nhanh (gian + cờ bạc + lừa đảo) → MẤT NHANH; của LÀM RA chậm (lao động + tiết kiệm) → BỀN.",
+    "language": "vi",
+    "options": [
+      "Bất chính = lâu; dần dần = mau (như được mô tả trong sách)",
+      "CỦA bất chính (vội vàng) sẽ HAO HỤT — ai THÂU LẠI từ từ bằng SỨC CON sẽ THÊM LÊN",
+      "Cả 2 đều mất (xét trong văn cảnh)",
+      "Cả 2 đều giữ (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Của bất chính hao - làm ra thêm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 13,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 13:20, ai ĐI VỚI người KHÔN thì sao? Ai LÀM BẠN với KẺ NGU?",
+    "explanation": "Châm Ngôn 13:20 — 'Ai giao tiếp với người khôn ngoan, trở nên khôn ngoan; nhưng kẻ làm bạn với bọn điên dại sẽ bị tàn hại.' Nguyên tắc TRUYỀN NHIỄM thuộc linh: bạn bè ẢNH HƯỞNG hơn ta nghĩ. Cùng dạy 1 Cô-rinh-tô 15:33 ('bạn xấu phá thói quen tốt'). KHÔNG nói tránh hoàn toàn người ngu — nhưng đừng làm BẠN THIẾT với họ.",
+    "language": "vi",
+    "options": [
+      "Người khôn — buồn; ngu — vui",
+      "Cả 2 đều như nhau (xét trong văn cảnh)",
+      "ĐI với KẺ KHÔN, sẽ ĐƯỢC KHÔN NGOAN — bạn KẺ NGU dại sẽ BỊ THIỆT HẠI",
+      "Người khôn — bị ghét; ngu — được yêu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Đi với khôn được khôn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 14,
+    "verseStart": 29,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 14:29, ai chậm GIẬN thì sao? Ai NÓNG TÍNH?",
+    "explanation": "Châm Ngôn 14:29 — 'Kẻ nào chậm giận có thông sáng lớn; nhưng ai có tánh nóng nảy tôn lên sự điên cuồng.' GIẬN không tự nó là tội — nhưng MAU giận = thiếu KIỂM SOÁT bản thân. Cùng dạy 16:32 (chậm giận hơn người mạnh), Gia-cơ 1:19 (chậm giận). 'TÔN LÊN' = phơi bày, làm thấy rõ.",
+    "language": "vi",
+    "options": [
+      "CHẬM nóng giận có sự THÔNG SÁNG LỚN; mau nóng giận tỏ ra điên DẠI",
+      "Cả 2 đều khôn (theo cách trình bày của text)",
+      "Cả 2 đều ngu (xét trong văn cảnh)",
+      "Cả 2 đều như nhau (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Chậm giận có thông sáng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 15,
+    "verseStart": 33,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 15:33, sự KÍNH SỢ Đức Giê-hô-va dạy gì? Sự KHIÊM NHƯỜNG dẫn đến gì?",
+    "explanation": "Châm Ngôn 15:33 — 'Sự kính sợ Đức Giê-hô-va dạy dỗ điều khôn ngoan; sự khiêm nhượng đi trước sự tôn trọng.' Cấu trúc đối: KÍNH SỢ → KHÔN NGOAN; KHIÊM NHƯỜNG → VINH HIỂN. Nguyên tắc CHIA: muốn được nâng lên, phải CÚI XUỐNG TRƯỚC. Cùng dạy 18:12, 22:4. Chúa Jêsus dạy Lu-ca 14:11 ('ai khiêm hạ sẽ được nâng lên').",
+    "language": "vi",
+    "options": [
+      "Dạy thần học — dẫn đến sách",
+      "Dạy SỰ KHÔN NGOAN; sự KHIÊM NHƯỜNG đi TRƯỚC sự VINH HIỂN",
+      "Dạy quân sự — dẫn đến chiến thắng",
+      "Dạy tiền bạc — dẫn đến giàu có"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Khiêm nhường đi trước vinh hiển",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 16,
+    "verseStart": 32,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 16:32, ai TỐT HƠN người MẠNH MẼ + ai TỐT HƠN người chiếm THÀNH?",
+    "explanation": "Châm Ngôn 16:32 — 'Người chậm nóng giận thắng hơn người dõng sĩ; và ai cai trị lòng mình thắng hơn kẻ chiếm lấy thành.' Câu nổi tiếng. KIỂM SOÁT BẢN THÂN > sức mạnh thân xác. Sự CHIẾN THẮNG khó nhất = trên CHÍNH MÌNH. Cùng dạy 1 Cô-rinh-tô 9:25-27, Ga-la-ti 5:22-23 (tự chủ là trái Thánh Linh).",
+    "language": "vi",
+    "options": [
+      "Người làm việc nặng — Người nghĩ chiến lược",
+      "Người tuân lệnh — Người phá tường (theo cách trình bày của text)",
+      "Người dũng cảm — Người mưu mẹo (xét trong văn cảnh)",
+      "Người CHẬM giận hơn KẺ DŨNG SĨ — người CAI TRỊ TÂM HỒN MÌNH hơn ai chiếm được THÀNH"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Cai trị lòng hơn chiếm thành",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 17,
+    "verseStart": 22,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 17:22, lòng VUI MỪNG là gì? TÂM TRÍ ưu sầu thế nào?",
+    "explanation": "Châm Ngôn 17:22 — 'Lòng vui mừng vốn một phương thuốc hay; còn trí nao sờn làm xương cốt khô héo.' Y HỌC HÔM NAY xác nhận: stress + buồn rầu liên tục → bệnh thân thể. Châm Ngôn nói cách đây 3000 năm. Lý do để PHÁT TRIỂN niềm vui thuộc linh không phải vì cảm thấy tốt — mà vì SỨC KHỎE TỔNG THỂ.",
+    "language": "vi",
+    "options": [
+      "Là một PHƯƠNG THUỐC HAY — TÂM TRÍ buồn rầu LÀM XƯƠNG cốt KHÔ HÉO",
+      "Là tiền bạc — buồn là sức khỏe",
+      "Là vinh quang — buồn là khiêm tốn",
+      "Là tự nhiên — buồn là tinh thần"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Lòng vui = thuốc hay",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 19,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 19:17, ai THƯƠNG XÓT kẻ NGHÈO thì coi như cho ai vay?",
+    "explanation": "Châm Ngôn 19:17 — 'Ai thương xót kẻ nghèo, tức cho Đức Giê-hô-va vay mượn; Ngài sẽ báo lại việc ơn lành ấy cho người.' KHÁI NIỆM cách mạng: HÀNH ĐỘNG đối với người NGHÈO = HÀNH ĐỘNG đối với CHÚA. Cùng dạy Mat 25:40 ('các ngươi đã làm cho 1 trong những anh em rất hèn mọn này, là làm cho ta'). NẮM CHẮC LỢI TỨC: Chúa SẼ TRẢ LẠI.",
+    "language": "vi",
+    "options": [
+      "Cho thiên sứ vay",
+      "Cho gia đình mình vay",
+      "Cho ĐỨC GIÊ-HÔ-VA vay — Ngài SẼ TRẢ LẠI",
+      "Cho thầy giáo vay"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Cho người nghèo = cho Chúa vay",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 20,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 20:7, người công bình bước đi thế nào? Con cái sau người ra sao?",
+    "explanation": "Châm Ngôn 20:7 — 'Người công bình ăn ở cách thanh liêm; những con cháu người lấy làm có phước thay!' Tác động ĐA THẾ HỆ. CHA + MẸ sống công bình = phước cho CON CHÁU. KHÔNG đảm bảo con không có vấn đề — đảm bảo HẠT GIỐNG TỐT đã được gieo. Cùng tư tưởng Phục Truyền 7:9, Thi Thiên 112:1-2.",
+    "language": "vi",
+    "options": [
+      "Họ đi mau — con cái khôn (theo cách trình bày của text)",
+      "Họ đi đẹp — con cái xinh (như được mô tả trong sách)",
+      "Họ đi xa — con cái mạnh (xét trong văn cảnh)",
+      "Người CÔNG BÌNH bước đi trong sự CHÍNH TRỰC mình — CON CÁI người sau người được PHƯỚC THAY"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Người công bình - phước cho con",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 21,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 21:1, LÒNG vua trong tay Đức Giê-hô-va GIỐNG gì?",
+    "explanation": "Châm Ngôn 21:1 — 'Lòng của vua ở trong tay Đức Giê-hô-va khác nào dòng nước chảy; Ngài làm nghiêng lệch nó bề nào tùy ý Ngài muốn.' Cùng tư tưởng 16:9 (Chúa định bước người), 19:21 (ý chỉ Chúa lập). VUA TỐT HOẶC ÁC vẫn TRONG TAY CHÚA — Ngài có thể làm cong ý chí. Vd: Si-ru cho phép Y-sơ-ra-ên trở về (Ê-sai 44:28-45:1).",
+    "language": "vi",
+    "options": [
+      "Giống các DÒNG NƯỚC chảy — Ngài LÀM NGHIÊNG về phía nào tùy ý mình",
+      "Giống cây cối — phát triển (như được mô tả trong sách)",
+      "Giống đá — không thay đổi (theo cách trình bày của text)",
+      "Giống mây — bay xa (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Lòng vua như dòng nước",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 22,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 22:7, kẻ GIÀU CAI TRỊ ai? Người MƯỢN NỢ là gì cho người CHO MƯỢN?",
+    "explanation": "Châm Ngôn 22:7 — 'Người giàu quản hạt kẻ nghèo; còn kẻ vay là tôi tớ của kẻ cho vay.' Hiện thực kinh tế. CẢNH BÁO: nợ KHÔNG TRUNG TÍNH — nó tạo TƯƠNG QUAN QUYỀN LỰC. Cùng dạy: tránh nợ thì có tự do. KHÔNG nói cho mượn là sai — nói biết quan hệ và thận trọng.",
+    "language": "vi",
+    "options": [
+      "Cai trị nông dân — mượn nợ là khôn",
+      "Kẻ GIÀU cai trị KẺ NGHÈO — kẻ MƯỢN NỢ làm TÔI cho kẻ CHO MƯỢN",
+      "Cai trị quân đội — mượn nợ là yếu",
+      "Cai trị thầy tế — mượn nợ là khách"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Giàu cai trị nghèo - mượn = tôi tớ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 23,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 23:4-5, ngươi CHỚ tốn sức để LÀM GIÀU; vì GIÀU CÓ giống gì?",
+    "explanation": "Châm Ngôn 23:4-5 — 'Con chớ chịu vất vả đặng làm giàu; khá thôi nhờ cậy khôn ngoan riêng của con. Con há liếc mắt vào sự giàu có sao? Nó đã chẳng còn nữa rồi; vì nó quả hẳn có mọc cánh, và bay lên trên trời như chim ưng vậy.' Của cải CÓ THỂ BAY ĐI — không bền. KHÔNG nói cấm làm việc chăm — nói cấm CỐ GẮNG ĐIÊN CUỒNG để giàu (workaholism, sự tham lam).",
+    "language": "vi",
+    "options": [
+      "Giống đá — bền vững (xét trong văn cảnh)",
+      "Giống cây — phát triển chậm",
+      "Giống chim BAY MAU LÊN trời — của giàu sẽ MỌC CÁNH bay đi",
+      "Giống nước chảy — ổn định"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Của giàu mọc cánh bay đi",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 26,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 26:4-5, có 2 lời chỉ dẫn ĐỐI NGHỊCH về kẻ NGU dại — đó là gì?",
+    "explanation": "Châm Ngôn 26:4-5 — 'Chớ đáp với kẻ ngu si tùy sự ngu dại nó, e con giống như nó chăng. Hãy đáp với kẻ ngu si tùy sự ngu dại nó, kẻo nó khôn ngoan theo mắt nó chăng.' KHÔNG mâu thuẫn — chỉ dẫn theo TÌNH HUỐNG. Khi nói chuyện sẽ kéo bạn xuống cấp họ → KHÔNG ĐÁP. Khi im sẽ làm họ tự kiêu → ĐÁP. Cần PHÂN BIỆT (discernment).",
+    "language": "vi",
+    "options": [
+      "Luôn đáp họ; luôn không đáp (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Luôn không đáp; luôn đáp tử tế (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Luôn cãi với họ; luôn nhịn họ (theo cách trình bày của text)",
+      "26:4 'CHỚ ĐÁP kẻ ngu' (kẻo con BẰNG họ); 26:5 'HÃY ĐÁP kẻ ngu THEO sự NGU dại nó' (kẻo nó nghĩ mình KHÔN); cần KHÔN NGOAN biết KHI NÀO làm cái nào"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Chớ + Hãy đáp ngu - tùy hoàn cảnh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 28,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 28:1, kẻ ÁC CHẠY trốn dù không ai đuổi — người CÔNG BÌNH thế nào?",
+    "explanation": "Châm Ngôn 28:1 — 'Kẻ ác chạy trốn dầu không ai đuổi theo; nhưng người công bình mãnh dõng như một sư tử.' Tâm lý cảm giác CỦA TỘI: TỘI tạo nỗi SỢ HÃI nội tâm — kẻ ác CHẠY khỏi cái không có. Người công bình KHÔNG có gì phải sợ → DẠN DĨ. Cùng dạy 1 Giăng 4:18 ('sự yêu thương trọn vẹn cất bỏ sự sợ').",
+    "language": "vi",
+    "options": [
+      "Người công bình DẠN DĨ NHƯ SƯ TỬ con",
+      "Người công bình ngủ ngon",
+      "Người công bình giàu có",
+      "Người công bình tươi cười"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Công bình dạn dĩ như sư tử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 2,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 2:16-19, sự khôn ngoan sẽ giải cứu con khỏi DÂM PHỤ — ai vào nhà nàng thì sao?",
+    "explanation": "Châm Ngôn 2:16-19 — 'Lại để giải cứu con khỏi dâm phụ, khỏi đàn bà ngoại đứng trau chuốt lời nói; nàng lìa bỏ bạn của buổi đang thì, và quên sự giao ước của Đức Chúa Trời mình; vì nhà nó xiêu qua sự chết, và con đường nó dẫn đến chốn kẻ thác; chẳng ai đi đến nàng mà trở về, hoặc được tới các lối sự sống.' Hậu quả ngoại tình KHÔNG hồi phục được. Cùng cảnh báo Châm 5:1-14, 6:32-35, 7.",
+    "language": "vi",
+    "options": [
+      "Sẽ giàu có (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Sẽ học khôn (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Sẽ được phép lạ (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "KHÔNG MỘT KẺ NÀO trở lại — cũng KHÔNG HỀ ĐẾN ĐƯỢC nẻo SỰ SỐNG; nhà nàng dẫn xuống SỰ CHẾT — đường nàng dẫn đến CÁC ÂM HỒN"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Vào nhà dâm phụ - không trở lại",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 3:11-12, sự SỬA TRỊ của Đức Giê-hô-va là gì? Lý do?",
+    "explanation": "Châm Ngôn 3:11-12 — 'Hỡi con, chớ khinh điều sửa phạt của Đức Giê-hô-va, chớ hiềm lòng khi Ngài quở trách; vì Đức Giê-hô-va yêu thương ai thì trách phạt nấy, như một người cha đối cùng con trai yêu dấu mình.' Trích trong Hê-bơ-rơ 12:5-6 → Tân Ước. Sự SỬA TRỊ = DẤU TÌNH YÊU CỦA CHA, không phải của ghét bỏ. Cùng dạy Khải Huyền 3:19 ('những kẻ ta yêu thương ta quở trách').",
+    "language": "vi",
+    "options": [
+      "Là sự trừng phạt — vì Chúa giận (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Chớ KHINH sửa trị + chớ TỪ CHỐI sự CHỈNH BẢO Ngài; vì ai NGÀI YÊU thì NGÀI SỬA PHẠT — như cha với CON ưa thích",
+      "Là điều ngẫu nhiên — không có ý nghĩa (theo cách trình bày của text)",
+      "Là sự thử thách — chỉ dành cho người yếu (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Chúa sửa trị vì yêu",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 5,
+    "verseStart": 3,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 5:3-6, MÔI của dâm phụ thoạt đầu nhỏ giọt gì? Sau cùng đắng như gì + bén như gì?",
+    "explanation": "Châm Ngôn 5:3-6 — 'Vì môi kẻ dâm phụ đặt ra mật, và miệng nó dịu hơn dầu; nhưng rốt lại đắng như ngải cứu, bén như gươm hai lưỡi. Chân nó xuống chốn chết; bước nó đụng đến âm phủ. Nàng không tìm đặng con đường bằng thẳng của sự sống.' MẬT + DẦU = ngọt + dễ trượt. NGẢI CỨU + GƯƠM = đắng + giết. CÁC TRẠNG THÁI ngoại tình: CỰC THỂ ĐẦU + đau khổ CUỐI.",
+    "language": "vi",
+    "options": [
+      "Mật + nước trong — sữa + dầu (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Vinh dự + giàu có — ô danh + nghèo nàn (như được mô tả trong sách)",
+      "MẬT ONG + miệng nàng TRƠN HƠN DẦU; nhưng SAU CÙNG ĐẮNG NHƯ NGẢI ĐẮNG, BÉN như GƯƠM HAI LƯỠI; chân nàng XUỐNG SỰ CHẾT",
+      "Ngọt ngào + ấm áp — nóng + đốt (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Môi dâm phụ - mật rồi gươm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 6,
+    "verseStart": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 6:30-35, kẻ TRỘM bánh khi đói thì sao? Kẻ NGOẠI TÌNH với vợ người khác thì sao?",
+    "explanation": "Châm Ngôn 6:30-35 — 'Người ta không khinh dể kẻ trộm, nếu nó ăn cắp đặng phỉ lòng mình khi đói khát; hễ nó bị bắt, chắc phải thường bồi gấp bảy lần; nó sẽ nộp hết tài sản của nhà mình. Kẻ nào phạm tội ngoại tình với người đàn bà, tất vô tâm vô tánh: ai làm như vậy, làm hư hại linh hồn mình. Người ấy sẽ bị thương tích và khinh bỉ, sự sỉ nhục người sẽ chẳng bôi mất đi; vì sự ghen ghét nổi lên cơn giận của người, trong ngày báo thù người chẳng dung thứ; người sẽ chẳng nhận giá đền tội nào hết, mặc dầu con gia tăng của lễ, người cũng không đành chịu.' Ngoại tình KHÔNG thể chuộc lại như tội trộm.",
+    "language": "vi",
+    "options": [
+      "Trộm chỉ phải BỒI THƯỜNG GẤP 7 LẦN; còn NGOẠI TÌNH ĐIÊN DẠI + tự HỦY MÌNH — không có giá nào CHỒNG ghen tuông CHẤP NHẬN",
+      "Cả 2 đều bị tha (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Cả 2 đều bị giết (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Trộm bị giết — ngoại tình bị tha (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Trộm bồi 7 lần, ngoại tình không tha",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 8,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 8:22-31, KHÔN NGOAN tự xưng mình ở với Chúa khi nào?",
+    "explanation": "Châm Ngôn 8:22-31 — 'Trong buổi Đức Giê-hô-va khởi cuộc tạo hóa, về thời thái cổ, trước khi chưa dựng nên muôn vật thì Ngài đã có ta. Ta đã được lập từ trước vô cùng... Khi Ngài lập các từng trời, ta đã ở đó... Ta ở bên Ngài làm thợ cái, hằng ngày ta là sự khoái lạc Ngài, và thường thường vui vẻ trước mặt Ngài.' KHÔN NGOAN nhân hóa = bạn đồng hành Đức Chúa Trời tại sáng tạo. Cô-lô-se 1:15-17 áp dụng cho Christ. Tranh luận thần học: KHÔN NGOAN = Christ trước nhập thể? Hay nhân hóa thuộc tính?",
+    "language": "vi",
+    "options": [
+      "Khi Chúa lập đất (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Đức Chúa Trời CÓ MÌNH (chiếm hữu) tôi LÚC KHỞI ĐẦU công việc Ngài — TRƯỚC SÁNG THẾ — tôi vui vẻ NHƯ THỢ THỦ CÔNG, vui mừng trước mặt Ngài + đặc biệt nơi loài người",
+      "Khi Chúa gọi Áp-ra-ham (theo cách trình bày của text) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Khi Chúa cứu Y-sơ-ra-ên (như được mô tả trong sách) (như văn bản ghi rõ) (theo bối cảnh đoạn này)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Khôn ngoan ở với Chúa từ khởi đầu",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 8,
+    "verseStart": 35,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 8:35-36, ai TÌM ĐƯỢC khôn ngoan sẽ tìm thấy gì? Ai PHẠM tội với khôn ngoan?",
+    "explanation": "Châm Ngôn 8:35-36 — 'Vì hễ ai tìm được ta, tìm được sự sống, và sẽ được ơn của Đức Giê-hô-va; nhưng ai phạm đến ta, làm hại cho linh hồn mình; còn kẻ nào ghét ta, ắt ưa thích sự chết.' MỆNH ĐỀ MẠNH: KHÔN NGOAN = sự sống chính nó. KHÔNG có vùng trung tính — phải HOẶC tìm khôn ngoan, HOẶC chọn sự chết. Cùng dạy Phục Truyền 30:15-20.",
+    "language": "vi",
+    "options": [
+      "Tìm tiền — bị nghèo (như được mô tả trong sách) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Tìm sức — bị yếu (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "TÌM KHÔN NGOAN = TÌM SỰ SỐNG + được ƠN của Đức Giê-hô-va; ai PHẠM tội với khôn ngoan = LÀM TỔN HẠI LINH HỒN mình; mọi kẻ GHÉT khôn ngoan = YÊU SỰ CHẾT",
+      "Tìm danh — bị quê (theo cách trình bày của text) (xét theo nội dung gốc) (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Tìm khôn ngoan = tìm sự sống",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 14,
+    "verseStart": 31,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 14:31, ai ÁP BỨC kẻ NGHÈO làm gì với Đấng tạo nên họ? Ai THƯƠNG XÓT kẻ thiếu thốn thì sao?",
+    "explanation": "Châm Ngôn 14:31 — 'Kẻ hà hiếp người nghèo khổ làm nhục Đấng Tạo hóa mình; còn ai thương xót người bần cùng tôn trọng Ngài.' KHÁI NIỆM mạnh: cách bạn đối xử với KẺ NGHÈO trực tiếp ảnh hưởng MỐI QUAN HỆ với CHÚA. Vì Chúa là Đấng TẠO ra CẢ kẻ giàu lẫn kẻ nghèo (Châm 22:2).",
+    "language": "vi",
+    "options": [
+      "ÁP BỨC kẻ NGHÈO = SỈ NHỤC ĐẤNG TẠO HÓA của họ; ai THƯƠNG XÓT kẻ thiếu = TÔN VINH ĐẤNG TẠO HÓA",
+      "Áp bức = tiên tri; thương xót = cẩu thả (như được mô tả trong sách)",
+      "Áp bức = thực tế; thương xót = ngu (theo cách trình bày của text)",
+      "Cả 2 đều bình thường (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Áp bức nghèo = sỉ Đấng tạo",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 15,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 15:8, lễ VẬT của KẺ ÁC là gì với Chúa? Lời CẦU NGUYỆN của người NGAY THẲNG?",
+    "explanation": "Châm Ngôn 15:8 — 'Của tế lễ kẻ gian ác lấy làm gớm ghiếc cho Đức Giê-hô-va; song lời cầu nguyện của người ngay thẳng được đẹp lòng Ngài.' SHOCK: thậm chí TẾ LỄ — điều thiêng liêng nhất trong Cựu Ước — là GỚM GHIẾC nếu ngươi sống ÁC. Cùng dạy Ê-sai 1:11-17, A-mốt 5:21-24. Đức Chúa Trời quan tâm CHẤT LƯỢNG TIM, không phải hình thức tôn giáo.",
+    "language": "vi",
+    "options": [
+      "Cả 2 đều được nhận (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Cả 2 đều bị từ chối (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Lễ vật là tốt; cầu nguyện là vô dụng (như được mô tả trong sách)",
+      "TẾ LỄ kẻ ÁC là sự GỚM GHIẾC cho Đức Giê-hô-va; song LỜI CẦU NGUYỆN của NGƯỜI NGAY THẲNG là sự VUI MỪNG của Ngài"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Tế lễ kẻ ác = gớm ghiếc",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 16,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 16:6, NHỜ điều gì mà tội ác được CHUỘC? Vì sự gì mà ngươi LÌA xa điều ác?",
+    "explanation": "Châm Ngôn 16:6 — 'Nhờ sự nhân từ và lẽ thật, tội lỗi được chuộc; và bởi sự kính sợ Đức Giê-hô-va người ta xây bỏ điều ác.' KHÔNG nói NHÂN TỪ + CHÂN THẬT của LOÀI NGƯỜI chuộc tội — của Đức Chúa Trời (cf. 'kindness + truth' = chesed + emet trong Xuất 34:6). Câu cảnh báo: tội KHÔNG được tự động xóa qua nghi lễ. Đòi sự ĂN NĂN qua kính sợ.",
+    "language": "vi",
+    "options": [
+      "Bằng tế lễ — vì sợ (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Nhờ NHÂN TỪ + CHÂN THẬT mà tội ác được CHUỘC; bởi sự KÍNH SỢ Đức Giê-hô-va, người ta lìa khỏi điều ÁC",
+      "Bằng việc lành — vì khôn (như được mô tả trong sách)",
+      "Bằng tiền — vì giàu (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Nhân từ + chân thật chuộc tội",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 17,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 17:5, ai CHẾ NHẠO kẻ NGHÈO làm gì với Đấng TẠO HÓA? Ai VUI MỪNG về TAI HỌA của người khác?",
+    "explanation": "Châm Ngôn 17:5 — 'Ai nhạo báng người bần cùng sỉ nhục Đấng tạo hóa mình; kẻ vui mừng vì tai họa sẽ chẳng được thoát khỏi bị phạt.' Mở rộng 14:31. CƯỜI ai gặp tai họa = nguyên tắc gặt như gieo: tai họa ấy SẼ ĐẾN với người chế nhạo. Kết hợp tôn trọng PHẨM GIÁ tất cả mọi người (vì là HÌNH ẢNH ĐỨC CHÚA TRỜI).",
+    "language": "vi",
+    "options": [
+      "Chế nhạo nghèo = thực tế; vui tai họa = đáng (theo trình tự câu chuyện)",
+      "Cả 2 đều bình thường (theo cách trình bày của text)",
+      "CHẾ NHẠO kẻ NGHÈO = SỈ NHỤC ĐẤNG TẠO HÓA của họ; ai VUI VẺ về TAI HỌA — sẽ KHÔNG khỏi BỊ HÌNH PHẠT",
+      "Cả 2 đều khôn (xét trong văn cảnh) (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Chế nhạo nghèo - sỉ Đấng tạo",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 19,
+    "verseStart": 21,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 19:21, có nhiều gì trong LÒNG người? Nhưng cuối cùng cái gì sẽ ĐỨNG VỮNG?",
+    "explanation": "Châm Ngôn 19:21 — 'Trong lòng loài người có nhiều mưu kế; song ý chỉ của Đức Giê-hô-va sẽ thành được.' Hài hòa với 16:9 (người tính - Chúa định bước), 21:1 (lòng vua trong tay Chúa). LOÀI NGƯỜI tự do tính kế — Đức Chúa Trời TỂ TRỊ kết quả. Câu này AN ỦI: KẾ Chúa SẼ THÀNH dù dù người làm gì.",
+    "language": "vi",
+    "options": [
+      "Cảm xúc — tâm trạng đứng vững (theo cách trình bày của text)",
+      "Ý tưởng — tâm trí đứng vững (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Tham vọng — kế hoạch đứng vững (như được mô tả trong sách)",
+      "Lòng người tính TOÁN nhiều mưu kế (kế hoạch); nhưng CHỈ duy MỤC ĐÍCH (CHƯƠNG TRÌNH) của ĐỨC GIÊ-HÔ-VA mới ĐỨNG VỮNG"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Người tính - ý Chúa thành",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 20,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 20:9, có ai có thể nói gì về LÒNG mình + tội?",
+    "explanation": "Châm Ngôn 20:9 — 'Ai có thể nói: Ta đã làm sạch lòng mình; ta sạch khỏi tội lỗi ta?' CÂU HỎI TU TỪ — ngụ ý: KHÔNG MỘT AI. Trả lời: KHÔNG có ai thật là sạch tự cứu. Cùng dạy 1 Vua 8:46, Ê-sai 53:6, Rô-ma 3:23 ('mọi người đều phạm tội'). Cần CỨU CHÚA bên ngoài chính mình.",
+    "language": "vi",
+    "options": [
+      "AI có thể nói: 'TA ĐÃ LÀM SẠCH LÒNG TA, TA SẠCH KHỎI TỘI LỖI TA' — ngụ ý KHÔNG ai có thể tự khẳng định",
+      "Tôi đã làm sạch (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Tôi đã chế ngự (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Tôi đã hoàn hảo (như được mô tả trong sách) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Không ai làm sạch lòng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 21,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 21:13, ai BỊT TAI trước tiếng kêu của KẺ NGHÈO thì sao?",
+    "explanation": "Châm Ngôn 21:13 — 'Ai bưng tai không khứng nghe tiếng kêu la của người nghèo khổ, người đó cũng sẽ kêu la mà chẳng có ai đáp lại.' GẶT NHƯ GIEO. Nguyên tắc PHỔ QUÁT: bạn KHÔNG nghe người khác — không ai nghe bạn. Mat 7:2 cùng tư tưởng. Áp dụng đặc biệt cho người NGHÈO — vì họ KHÔNG có quyền lực.",
+    "language": "vi",
+    "options": [
+      "Sẽ được khen (xét trong văn cảnh)",
+      "CŨNG sẽ KÊU LA — nhưng KHÔNG được NGHE",
+      "Sẽ được phước (như được mô tả trong sách)",
+      "Sẽ được giàu (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Bịt tai - sẽ không được nghe",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 21,
+    "verseStart": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 21:30-31, có loại KHÔN NGOAN nào CHỐNG LẠI ĐỨC GIÊ-HÔ-VA? Ngày tranh chiến, ngựa chuẩn bị sẵn — nhưng SỰ THẮNG ở đâu?",
+    "explanation": "Châm Ngôn 21:30-31 — 'Chẳng có sự khôn ngoan nào, sự thông minh nào, hay là mưu kế nào, mà chống địch Đức Giê-hô-va được. Ngựa sắm sẵn về ngày tranh chiến; nhưng sự thắng trận thuộc về Đức Giê-hô-va.' KHÔNG có chiến lược, vũ khí, hoặc tài năng nào ĐỦ ĐỂ chống lại Chúa. Cùng tư tưởng Thi 33:16-17, 1 Sa-mu-ên 17:47 (Đa-vít với Gô-li-át).",
+    "language": "vi",
+    "options": [
+      "Khôn ngoan loài người — ngựa quyết định (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Khôn ngoan tổ phụ — sức khỏe quyết định (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "KHÔNG CÓ khôn ngoan nào, KHÔNG sự thông sáng, KHÔNG mưu kế nào CHỐNG LẠI Đức Giê-hô-va; ngựa được sắm sửa sẵn cho chiến tranh — NHƯNG SỰ ĐẮC THẮNG là từ ĐỨC GIÊ-HÔ-VA",
+      "Khôn ngoan vua — số phận quyết định (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Không khôn ngoan chống Chúa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 22,
+    "verseStart": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 22:28, ngươi CHỚ DỜI gì mà tổ phụ ngươi đã DỰNG?",
+    "explanation": "Châm Ngôn 22:28 — 'Chớ dời đi các mộc giới hạn cũ, mà tổ phụ con đã dựng.' MỘC GIỚI = bia ranh đất. Trong xã hội nông nghiệp Y-sơ-ra-ên, mộc giới = ranh quyền sở hữu thừa kế từ Chúa. DỜI = ăn cắp. Phục Truyền 19:14 cùng dạy. Còn nghĩa thực: CHỚ thay đổi giáo lý / nguyên tắc đạo đức tổ phụ ĐÃ THIẾT LẬP.",
+    "language": "vi",
+    "options": [
+      "Chớ dời cây (xét trong văn cảnh)",
+      "Chớ dời sông (như được mô tả trong sách)",
+      "Chớ dời nhà (theo cách trình bày của text)",
+      "Chớ dời MỐC GIỚI HẠN (BIA RANH GIỚI) cũ mà TỔ PHỤ ngươi đã DỰNG"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Chớ dời mốc giới cũ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 24,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Châm Ngôn 24:11-12, ai BỊ DẪN ĐẾN SỰ CHẾT mà ngươi CỨU được — ngươi PHẢI làm gì?",
+    "explanation": "Châm Ngôn 24:11-12 — 'Hãy giải cứu kẻ bị đùa đến sự chết, và chớ chối rỗi cho người đi xiêu tó tới chốn hình khổ. Nếu con nói: Chúng tôi chẳng biết gì đến; thì Đấng cân nhắc lòng người há chẳng xem xét điều ấy sao? Và Đấng giữ linh hồn con, há không biết đến ư? Chớ thì Ngài sẽ chẳng báo mỗi người tùy theo công việc họ làm sao?' KHÔNG có ngoại lệ 'không biết'. Im lặng = nghiêm trọng.",
+    "language": "vi",
+    "options": [
+      "Phải GIẢI THOÁT họ + người sắp BỊ GIẾT — đừng ngần ngại; nếu ngươi nói 'CHÚNG TÔI KHÔNG BIẾT' — Đấng cân QUẢN TÂM CON đã CHẲNG biết SAO?",
+      "Bỏ mặc — vì là số phận (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Cầu nguyện cho họ — không cần làm gì (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Giấu mình — kẻo bị liên lụy (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Cứu kẻ bị dẫn đến chết",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 27,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Châm Ngôn 27:6, BẠN HỮU làm gì? Còn KẺ THÙ thì sao?",
+    "explanation": "Châm Ngôn 27:6 — 'Bạn hữu làm cho thương tích, ấy bởi lòng thành tín; còn sự hôn hít của kẻ ghen ghét lấy làm giả dối.' NGHỊCH LÝ: ĐAU từ BẠN > NGỌT từ KẺ THÙ. Bạn THẬT nói LẼ THẬT dù đau lòng. Cùng tư tưởng 27:5 ('quở trách công khai TỐT hơn YÊU thầm kín'). Liên kết với Giu-đa hôn Christ (Mat 26:48-49).",
+    "language": "vi",
+    "options": [
+      "Cả 2 đều khen (xét trong văn cảnh)",
+      "Bạn hữu LÀM thương tích THÀNH TÍN — nhưng kẻ THÙ HÔN nhiều mà DỐI",
+      "Cả 2 đều mắng (theo cách trình bày của text)",
+      "Cả 2 đều im lặng (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Bạn thương tích thành tín",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 30,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Châm Ngôn 30:7-9, A-gu-rơ cầu xin ĐỨC CHÚA TRỜI BAN cho 2 điều — đó là gì?",
+    "explanation": "Châm Ngôn 30:7-9 — 'Tôi đã cầu Chúa hai điều; xin chớ từ chối tôi, trước khi tôi chết: Xin dang xa khỏi tôi sự lường gạt và lời dối trá; chớ cho tôi nghèo khổ, hoặc sự giàu sang; hãy nuôi tôi đủ vật thực cần dùng, e khi no đủ, tôi từ chối Chúa, mà rằng: Đức Giê-hô-va là ai? Và lại kẻo e tôi bị nghèo khổ, ăn trộm cắp, và làm ô danh của Đức Chúa Trời tôi chăng.' Lời cầu nguyện kỳ lạ: KHÔNG xin nhiều tiền — xin VỪA ĐỦ.",
+    "language": "vi",
+    "options": [
+      "Sống lâu + giàu có (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan) (theo trình tự câu chuyện)",
+      "Khôn ngoan + sức mạnh (theo cách trình bày của text) (xét theo nội dung gốc) (xét trong văn cảnh) (theo cách trình bày của text)",
+      "(1) DỜI XA tôi sự GIAN DỐI + LỜI DỐI TRÁ; (2) ĐỪNG cho tôi SỰ NGHÈO khổ CŨNG ĐỪNG cho tôi SỰ GIÀU CÓ — chỉ NUÔI tôi với LƯƠNG THỰC cần dùng — kẻo NO QUÁ tôi PHỦ NHẬN Chúa, hoặc NGHÈO QUÁ tôi ĂN TRỘM + xúc phạm DANH Chúa",
+      "Vinh quang + danh tiếng (như được mô tả trong sách) (như văn bản ghi rõ) (theo bối cảnh đoạn này) (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "A-gu-rơ - chớ giàu chớ nghèo",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 31,
+    "verseStart": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Châm Ngôn 31:30, sự DUYÊN DÁNG là gì? SẮC ĐẸP là gì? Còn NGƯỜI NỮ nào đáng được KHEN?",
+    "explanation": "Châm Ngôn 31:30 — 'Duyên là giả dối, sắc lại hư không; nhưng người nữ nào kính sợ Đức Giê-hô-va sẽ được khen ngợi.' KẾT của thi 'NGƯỜI VỢ TÀI ĐỨC' (31:10-31). KHÔNG nói DUYÊN + SẮC là xấu — nói chúng KHÔNG BỀN. Đặc tính BỀN là KÍNH SỢ Chúa. Cùng dạy 1 Phi-e-rơ 3:3-4 (vẻ đẹp KHÔNG hư mất là tâm hồn dịu).",
+    "language": "vi",
+    "options": [
+      "Cả 2 đều quan trọng (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Cả 2 đều bền vững (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Cả 2 đều giả tạo (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "DUYÊN DÁNG là DỐI TRÁ + SẮC ĐẸP là HƯ KHÔNG; nhưng người NỮ KÍNH SỢ ĐỨC GIÊ-HÔ-VA sẽ được KHEN NGỢI"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Châm Ngôn",
+      "Thi ca",
+      "Sắc đẹp dối - kính sợ Chúa được khen",
+      "Nâng cao"
+    ]
   }
 ]
