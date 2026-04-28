@@ -83,13 +83,13 @@
 
 ### Priority B3 (5 sách OT major)
 
-#### Task B3-1: Daniel +40 (20→60)
-- Status: [ ] TODO
-- Current: 20 (E9 M7 H4) → Target: 60 (E18 M27 H15)
-- Plan: +9 Easy + 20 Medium + 11 Hard
-- File(s): `daniel_quiz.json` + `daniel_quiz_en.json` + `scripts/append_daniel_v3b.py`
-- Strategy: 6 narratives (Đa-ni-ên + 3 bạn không ăn của vua, lò lửa, hang sư tử, viết trên tường, Nê-bu-cát-nết-sa hóa thú, sấm sét); 4 khải tượng apocalyptic (chương 2, 7, 8, 9, 11-12); 70 tuần (9:24-27); KHÔNG quá sâu về interpretation
-- Commit: `feat(seed): Daniel +40 V3 B3 quality expansion (20→60)`
+#### Task B3-1: Daniel +40 (20→60) [x] DONE 2026-04-28
+- 20→**60** (E18 M27 H15, ratio **30.0/45.0/25.0%** — exact)
+- Pool +40: 9 Easy + 20 Medium + 11 Hard VI + 40 EN 1:1
+- Single idx: 0:10, 1:10, 2:9, 3:11 (well distributed)
+- 40 single + 0 multi
+- Topics: Nê-bu-cát-nết-sa vây Giê-ru-sa-lem (1:1); 4 tên Ba-by-lôn (1:7); 10 ngày rau + nước (1:12); tri thức + Đa-ni-ên giải chiêm bao (1:17); sự hiện thấy ban đêm (2:19); truất + lập vua (2:21); vua = đầu vàng (2:38); hòn đá đập chân hóa núi (2:34-35); 4 người trong lò lửa (3:24-25); cấm nói xấu Đức Chúa Trời (3:28-29); chiêm bao làm vua sợ (4:4); bỏ tội bằng công bình (4:27); 7 năm hóa thú (4:28-33); phục hồi và ngợi khen (4:34-37); Bên-xát-sa tiệc lớn (5:1); ngón tay viết trên tường (5:5-6); MENE TEKEL UPHARSIN (5:25-28); Đa-ri-út Mê-đi tiếp quản (5:30-31); Đa-ni-ên không có lỗi (6:4); 30 ngày chỉ cầu vua (6:6-9); thiên sứ bịt miệng sư tử (6:22); Đa-ri-út tôn Đức Chúa Trời Đa-ni-ên (6:26-27); 4 thú từ biển (7:1-3); Đấng Thượng Cổ ngọn lửa (7:9-10); 3.5 năm bắt các thánh đồ (7:25); vương quốc cho dân các thánh (7:27); dê đập chiên (8:1-7); cầu nguyện ăn chay bao gai tro (9:3); cậy lòng thương xót không cậy mình (9:16-19); 70 tuần 6 mục tiêu (9:24); vua giao ước - nửa tuần dứt tế lễ (9:27); người vải gai đai vàng (10:5); vua Ba-tư ngăn trở 21 ngày (10:13); A-léc-xan-đơ Đại Đế (11:2-4); vua tự tôn cao hơn các thần (11:36); Mi-chen + sách sự sống (12:1); đóng ấn cho đến kỳ cuối (12:4); 1+2+0.5 kỳ sau dân thánh tan (12:7)
+- VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
 #### Task B3-2: Jeremiah +30 (20→50)
 - Status: [ ] TODO

@@ -533,5 +533,1045 @@
       "Prophets",
       "Intermediate"
     ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Daniel 1:1, which Babylonian king besieged Jerusalem in the third year of Jehoiakim king of Judah?",
+    "explanation": "Daniel 1:1 — 'In the third year of the reign of Jehoiakim king of Judah, Nebuchadnezzar king of Babylon came to Jerusalem and besieged it.' First exile (~605 BC) — Daniel + 3 friends (Hananiah, Mishael, Azariah) were taken to Babylon with this group.",
+    "language": "en",
+    "options": [
+      "Belshazzar",
+      "Darius",
+      "NEBUCHADNEZZAR",
+      "Cyrus"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Nebuchadnezzar besieged",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Daniel 1:7, the chief gave Babylonian names to Daniel and 3 friends — what was Daniel's?",
+    "explanation": "Daniel 1:7 — 'And the chief of the eunuchs gave them names: Daniel he called Belteshazzar, Hananiah he called Shadrach, Mishael he called Meshach, and Azariah he called Abednego.' Hebrew names contained EL/IAH (God) — changed to Babylonian names with pagan deity names. Purpose: cultural assimilation.",
+    "language": "en",
+    "options": [
+      "Abednego",
+      "Meshach",
+      "Shadrach",
+      "BELTESHAZZAR"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Daniel = Belteshazzar",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Daniel 2:19, after Daniel's prayer, the MYSTERY of the king's dream was revealed to him in what?",
+    "explanation": "Daniel 2:19 — 'Then the mystery was revealed to Daniel in a vision of the night. Then Daniel blessed the God of heaven.' This is the start of chapter 2's narrative: Nebuchadnezzar demanded the wise men retell his dream + interpret it, under penalty of death. Only Daniel prayed and was shown by God.",
+    "language": "en",
+    "options": [
+      "A NIGHT VISION",
+      "A noon nap",
+      "While reading",
+      "Through meditation"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Vision of the night",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verseStart": 27,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Daniel 3:27, after the 3 men exited the fiery furnace, what did the officials see?",
+    "explanation": "Daniel 3:27 — 'And the satraps... saw that the fire had not had any power over the bodies of those men. The hair of their heads was not singed, their cloaks were not harmed, and no smell of fire had come upon them.' A clear miracle: not just escaped death — NO trace. King Nebuchadnezzar acknowledges the true God (3:28-29).",
+    "language": "en",
+    "options": [
+      "Charred (per the textual narrative)",
+      "Fire had NO power on their bodies — HAIR not singed, CLOTHES unchanged, NO smell of fire",
+      "Mildly burned (as described in the passage)",
+      "Vaporized (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Fire harmed not 3 men",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Daniel 4:4-5, Nebuchadnezzar was at his palace when what happened?",
+    "explanation": "Daniel 4:4-5 — 'I, Nebuchadnezzar, was at ease in my house and prospering in my palace. I saw a dream that made me afraid. As I lay in bed the fancies and the visions of my head alarmed me.' Chapter 4 opening — the dream of a GREAT TREE cut down — foretelling Nebuchadnezzar will be reduced to a beast for 7 years.",
+    "language": "en",
+    "options": [
+      "A messenger came",
+      "Heart attack",
+      "Thunder (per the textual narrative)",
+      "He had a DREAM that FRIGHTENED him"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Dream frightened king",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Daniel 5:1, which king (last of Babylon) held a great feast for 1,000 lords?",
+    "explanation": "Daniel 5:1 — 'King Belshazzar made a great feast for a thousand of his lords and drank wine in front of the thousand.' Belshazzar = co-regent with Nabonidus (his father) ~553-539 BC. The feast was on the night Babylon fell (5:30 — the king was slain, Darius the Mede took over). Lavish feast as Persian + Median armies besieged.",
+    "language": "en",
+    "options": [
+      "Nebuchadnezzar",
+      "Darius",
+      "BELSHAZZAR",
+      "Cyrus"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Belshazzar's great feast",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Daniel 6:4-5, the officials sought GROUNDS to accuse Daniel — what did they find?",
+    "explanation": "Daniel 6:4-5 — 'Then the high officials and the satraps sought to find a ground for complaint against Daniel with regard to the kingdom, but they could find no ground for complaint or any fault, because he was faithful, and no error or fault was found in him. Then these men said, \"We shall not find any ground for complaint against this Daniel unless we find it in connection with the law of his God.\"' Daniel = a model of integrity.",
+    "language": "en",
+    "options": [
+      "Found NO fault — Daniel was faithful; had to find pretext about his GOD'S LAW",
+      "Found corruption (as described in the passage)",
+      "Found lies (per the textual narrative)",
+      "Found rebellion (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Daniel without fault",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Daniel 9:3, how did Daniel seek God in prayer for his people?",
+    "explanation": "Daniel 9:3 — 'Then I turned my face to the Lord God, seeking him by prayer and pleas for mercy with fasting and sackcloth and ashes.' After reading Jeremiah (70-year exile — Jer 25:11-12, 29:10), Daniel prayed. 'SACKCLOTH + ASHES' = signs of repentance. Israel's restoration was not automatic — it required earnest prayer.",
+    "language": "en",
+    "options": [
+      "Silent reasoning (as described in the passage)",
+      "With offerings (per the textual narrative)",
+      "With formality (according to the text's framing)",
+      "Sought God with PRAYER, PLEAS, FASTING, sackcloth, and ASHES"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Prayer fasting sackcloth",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 10,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Daniel 10:5-6, after 3 weeks of fasting, Daniel saw a MAN clothed how? Face and eyes like what?",
+    "explanation": "Daniel 10:5-6 — 'I lifted up my eyes and looked, and behold, a man clothed in linen, with a belt of fine gold from Uphaz around his waist. His body was like beryl, his face like the appearance of lightning, his eyes like flaming torches, his arms and legs like the gleam of burnished bronze, and the sound of his words like the sound of a multitude.' This figure is possibly the pre-incarnate Christ (theophany) or a high-ranking angel. Rev 1:13-15 uses the same imagery for the glorified Christ.",
+    "language": "en",
+    "options": [
+      "Red robe — face like silver (per the textual narrative)",
+      "Clothed in LINEN, waist belted with gold of UPHAZ — face like LIGHTNING, EYES like flaming torches",
+      "Plain white — face like moon (according to the text's framing)",
+      "Black robe — face like night (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Linen-clad with gold belt",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Daniel 1:12-15, what test did Daniel propose to keep kosher?",
+    "explanation": "Daniel 1:12-15 — 'Test your servants for ten days; let us be given vegetables to eat and water to drink. Then let our appearance and the appearance of the youths who eat the king's food be observed by you, and deal with your servants according to what you see.' So he listened to them in this matter, and tested them for ten days. At the end of ten days it was seen that they were better in appearance and fatter in flesh than all the youths who ate the king's food.' Daniel refused defilement by king's food (likely dedicated to pagan gods).",
+    "language": "en",
+    "options": [
+      "10 DAYS of only VEGETABLES + WATER — then compare with those eating king's delicacies",
+      "1 year of fasting then judge (according to the text's framing)",
+      "30 days abstaining then compete (as described in the passage)",
+      "Just drink water and wait (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Test 10 days vegetables",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Daniel 1:17, what 2 gifts did God give the 4 Hebrews? Especially Daniel?",
+    "explanation": "Daniel 1:17 — 'As for these four youths, God gave them learning and skill in all literature and wisdom, and Daniel had understanding in all visions and dreams.' Daniel's distinction: dream interpretation (like Joseph). Used in chapter 2 (Nebuchadnezzar's dream) and chapter 4 (tree dream).",
+    "language": "en",
+    "options": [
+      "Strength + courage — Daniel mighty (according to the text's framing)",
+      "Rule + strategy — Daniel a general (as described in the passage)",
+      "LEARNING + SKILL in all LITERATURE + WISDOM; especially Daniel had UNDERSTANDING in all VISIONS and DREAMS",
+      "Health + longevity — Daniel old (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Learning + Daniel interprets dreams",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Daniel 2:21, what does God (whom Daniel blesses) do with TIMES and KINGS?",
+    "explanation": "Daniel 2:21 — 'He changes times and seasons; he removes kings and sets up kings; he gives wisdom to the wise and knowledge to those who have understanding.' Daniel's praise after receiving the vision. KEY verse of OT political theology: GOD rules KINGS — not the king's pagan gods. Repeated many times in the book.",
+    "language": "en",
+    "options": [
+      "Keeps them unchanged (according to the text's framing)",
+      "CHANGES times and seasons — REMOVES KINGS and SETS UP KINGS — gives wisdom to the wise",
+      "Lets humans rule (per the textual narrative)",
+      "Only controls angels (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Removes + sets up kings",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verseStart": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Daniel 2:38, what does Daniel tell Nebuchadnezzar he is in the statue?",
+    "explanation": "Daniel 2:38 — 'You are the head of gold.' King Nebuchadnezzar = head of gold = Babylonian kingdom. Next: silver chest (Medo-Persia), bronze belly (Greece), iron legs (Rome) — the Stone (eternal kingdom = Messiah) crushes the statue. This vision summarizes history.",
+    "language": "en",
+    "options": [
+      "The arms of silver",
+      "Belly + thighs of bronze",
+      "Legs of iron",
+      "The HEAD of GOLD"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "King = head of gold",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Daniel 3:4-6, what does Nebuchadnezzar command at the music? Punishment for refusal?",
+    "explanation": "Daniel 3:4-6 — 'Then the herald proclaimed aloud, \"You are commanded, O peoples, nations, and languages, that when you hear the sound of the horn, pipe... you are to fall down and worship the golden image that King Nebuchadnezzar has set up. And whoever does not fall down and worship shall immediately be cast into a burning fiery furnace.\"' Loyalty test: Daniel's 3 friends (Shadrach, Meshach, Abednego) refused.",
+    "language": "en",
+    "options": [
+      "FALL DOWN and WORSHIP the gold image — refusal = thrown into FIERY FURNACE",
+      "Stand still — or jail (according to the text's framing)",
+      "Sing along — or lose post (as described in the passage)",
+      "Pay tax — or fine (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Worship image or furnace",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Daniel 3:24-25, why was Nebuchadnezzar astonished looking into the furnace?",
+    "explanation": "Daniel 3:24-25 — 'Then King Nebuchadnezzar was astonished and rose up in haste. He declared to his counselors, \"Did we not cast three men bound into the fire?\" They answered and said to the king, \"True, O king.\" He answered and said, \"But I see four men unbound, walking in the midst of the fire, and they are not hurt; and the appearance of the fourth is like a son of the gods.\"' The 4th = an angel (3:28) or pre-incarnate Christ (theophany) — debated. Nothing consumed the 3.",
+    "language": "en",
+    "options": [
+      "The 3 men were all dead (as described in the passage)",
+      "Saw 4 MEN WALKING in the fire — UNHARMED — the 4th LIKE A SON OF THE GODS",
+      "Fire went out (per the textual narrative)",
+      "Strange smoke (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "4 men in furnace",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Daniel 4:28-33, Nebuchadnezzar walked his palace boasting Babylon — what happened next?",
+    "explanation": "Daniel 4:28-33 — 'All this came upon King Nebuchadnezzar... While the words were still in the king's mouth, there fell a voice from heaven, \"O King Nebuchadnezzar, to you it is spoken: The kingdom has departed from you, and you shall be driven from among men, and your dwelling shall be with the beasts of the field. And you shall be made to eat grass like an ox, and seven periods of time shall pass over you, until you know that the Most High rules the kingdom of men.\"' 7 PERIODS = 7 years. Pride humbled by God.",
+    "language": "en",
+    "options": [
+      "King died at once (according to the text's framing)",
+      "King repented (per the textual narrative) (in the story's sequence)",
+      "VOICE from heaven decreed king DRIVEN from men — lived AS A BEAST, ate GRASS LIKE OXEN — 7 PERIODS passed",
+      "King became greater (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "7 years as a beast",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "verseStart": 34,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Daniel 4:34-37, after 7 periods, Nebuchadnezzar's mind was restored and what did he do?",
+    "explanation": "Daniel 4:34-37 — 'At the end of the days I, Nebuchadnezzar, lifted my eyes to heaven, and my reason returned to me, and I blessed the Most High, and praised and honored him who lives forever... Now I, Nebuchadnezzar, praise and extol and honor the King of heaven, for all his works are right and his ways are just; and those who walk in pride he is able to humble.' Profound: the mightiest king must humble himself.",
+    "language": "en",
+    "options": [
+      "Took vengeance on rebels (according to the text's framing)",
+      "Expanded kingdom further (as described in the passage)",
+      "Built grander statue (per the textual narrative)",
+      "BLESSED, HONORED the MOST HIGH — his rule is eternal, his kingdom eternal; those who WALK IN PRIDE he humbles"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Restored, blessed Most High",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Daniel 5:5-6, during Belshazzar's feast, what unexpectedly appeared on the WALL?",
+    "explanation": "Daniel 5:5-6 — 'Immediately the fingers of a human hand appeared and wrote on the plaster of the wall of the king's palace, opposite the lampstand. And the king saw the hand as it wrote. Then the king's color changed, and his thoughts alarmed him; his limbs gave way, and his knees knocked together.' EERIE vision — only fingers writing, no visible body. Daniel interpreted MENE MENE TEKEL UPHARSIN (5:25).",
+    "language": "en",
+    "options": [
+      "FINGERS of a human hand APPEARED + wrote on the plaster WALL of the palace — king's color changed, knees knocked, legs trembled",
+      "A dark shadow (per the textual narrative) (in the story's sequence)",
+      "A bolt of lightning (as described in the passage) (per the original content)",
+      "A battle scene (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Fingers wrote on wall",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Daniel 5:30-31, the night Belshazzar was slain — who took over the kingdom?",
+    "explanation": "Daniel 5:30-31 — 'That very night Belshazzar the Chaldean king was killed. And Darius the Mede received the kingdom, being about sixty-two years old.' Babylon's fall (~539 BC) to Persian + Median armies (Cyrus, Darius's father-in-law). This Darius is DIFFERENT from Darius Hystaspes (later, Ezra 4-6).",
+    "language": "en",
+    "options": [
+      "Cyrus the Persian",
+      "Belteshazzar the king's son",
+      "DARIUS the MEDE — about 62 years old",
+      "Nebuchadnezzar II"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Darius the Mede",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Daniel 6:6-9, what LAW did the officials propose Darius enact to trap Daniel?",
+    "explanation": "Daniel 6:7-9 — 'All the high officials of the kingdom, the prefects and the satraps, the counselors and the governors are agreed that the king should establish an ordinance and enforce an injunction, that whoever makes petition to any god or man for thirty days, except to you, O king, shall be cast into the den of lions.' Darius did NOT know the scheme — only saw imperial glory. Per Medo-Persian law, once decreed it could NOT be revoked (6:8).",
+    "language": "en",
+    "options": [
+      "Work 7 days a week — no rest (per the textual narrative)",
+      "For 30 DAYS, anyone making PETITION to any god or man EXCEPT the KING — be thrown into LIONS' DEN",
+      "Give first wives to king — before marriage",
+      "Submit 50% assets — or be confiscated (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "30 days petition only king",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Daniel 7:2-3, Daniel saw 4 great beasts come out of where?",
+    "explanation": "Daniel 7:2-3 — 'Daniel declared, \"I saw in my vision by night, and behold, the four winds of heaven were stirring up the great sea. And four great beasts came up out of the sea, different from one another.\"' SEA = symbolic of nations (Rev 17:15). 4 beasts = 4 kingdoms (same as ch 2 but seen from a SAVAGE perspective — ch 2 shows beauty, ch 7 shows beasts). Lion (Babylon), bear (Medo-Persia), leopard (Greece), terrifying beast (Rome).",
+    "language": "en",
+    "options": [
+      "Out of the GREAT SEA stirred up by 4 winds",
+      "Out of the desert",
+      "Out of the forest",
+      "Out of the mountains"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "4 beasts from sea",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Daniel 7:9-10, the ANCIENT OF DAYS sat on the throne — described how?",
+    "explanation": "Daniel 7:9-10 — 'As I looked, thrones were placed, and the Ancient of Days took his seat; his clothing was white as snow, and the hair of his head like pure wool; his throne was fiery flames; its wheels were burning fire. A stream of fire issued and came out from before him; a thousand thousands served him, and ten thousand times ten thousand stood before him.' = GOD himself. Fire = the holiness of judgment. Rev 1:14 uses same imagery for Christ.",
+    "language": "en",
+    "options": [
+      "Black throne + dark robe + dark hair (as described in the passage) (per the original content)",
+      "Green + green + brown (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Red + orange + silver (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "Throne of FIERY FLAMES + wheels of FIRE — clothing WHITE AS SNOW — HAIR LIKE PURE WOOL — river of FIRE flowing before him; thousand thousands SERVED him + ten thousand times ten thousand STOOD before him"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Ancient of Days fiery throne",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Daniel 8:3-7, Daniel saw a RAM with 2 horns (later identified as Medo-Persia) being attacked how by a male GOAT (Greece under Alexander the Great)?",
+    "explanation": "Daniel 8:3-7 — 'I raised my eyes and saw, and behold, a ram standing on the bank of the canal. It had two horns... a male goat came from the west across the face of the whole earth, without touching the ground. And the goat had a conspicuous horn between his eyes. He came to the ram... and struck the ram and broke his two horns.' Daniel 8:21 identifies: goat = king of Greece, the great horn = the first king (Alexander).",
+    "language": "en",
+    "options": [
+      "Ram won (per the textual narrative) (in the story's sequence)",
+      "Both shared lands (according to the text's framing)",
+      "Goat ran from west — NOT touching ground — struck the ram + TRAMPLED it; NONE could rescue ram from goat's power",
+      "Goat and ram peaceful (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Goat struck ram",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Daniel 9:24, '70 WEEKS' have been decreed for Daniel's people + holy city for 6 purposes — especially?",
+    "explanation": "Daniel 9:24 — 'Seventy weeks are decreed about your people and your holy city, to finish the transgression, to put an end to sin, and to atone for iniquity, to bring in everlasting righteousness, to seal both vision and prophet, and to anoint a most holy place.' '70 WEEKS' = 70 × 7 = 490 years. 6 PURPOSES all fulfilled by Messiah. The most famous OT MESSIANIC vision.",
+    "language": "en",
+    "options": [
+      "To build temple + defend city (as described in the passage)",
+      "To FINISH TRANSGRESSION + MAKE END OF SIN + bring in EVERLASTING RIGHTEOUSNESS + SEAL vision + prophecy + ANOINT a Most Holy",
+      "Population + prosperity (according to the text's framing)",
+      "Israel defeats enemies (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "70 weeks 6 purposes",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 10,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Daniel 10:13, why did the angel arrive 21 days LATE to answer Daniel's prayer?",
+    "explanation": "Daniel 10:13 — 'The prince of the kingdom of Persia withstood me twenty-one days, but Michael, one of the chief princes, came to help me, for I was left there with the kings of Persia.' Reveals real SPIRITUAL WARFARE — the 'princes' of nations = evil spirits ruling peoples. MICHAEL = archangel (Rev 12:7) defending Israel (10:21, 12:1).",
+    "language": "en",
+    "options": [
+      "The PRINCE of PERSIA (evil spirit ruling Persia) withstood him 21 days — Michael, one of the chief princes, came to help",
+      "God testing Daniel (according to the text's framing)",
+      "Many other tasks (per the textual narrative) (in the story's sequence)",
+      "Verification needed (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Prince of Persia withstood",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Daniel 11:2-4, 3 more PERSIAN kings + 1 fourth richer than all — then a MIGHTY KING arises and his kingdom is broken into the 4 winds. Who is the mighty king?",
+    "explanation": "Daniel 11:2-4 — 'And now I will show you the truth. Behold, three more kings shall arise in Persia, and a fourth shall be far richer than all of them... Then a mighty king shall arise, who shall rule with great dominion and do as he wills. And as soon as he has arisen, his kingdom shall be broken and divided toward the four winds of heaven.' History fulfills 100%: Alexander died 323 BC, his kingdom split into 4 (Diadochi). Chapter 11 describes ongoing Seleucid vs Ptolemaic conflicts up to Antiochus IV desecrating temple (175-164 BC, 11:31).",
+    "language": "en",
+    "options": [
+      "Cyrus (per the textual narrative) (in the story's sequence)",
+      "Darius (according to the text's framing) (per the original content)",
+      "Xerxes I (as described in the passage) (as the text indicates)",
+      "ALEXANDER THE GREAT — Greek; after his death the kingdom split 4: Cassander + Lysimachus + Seleucus + Ptolemy"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Alexander the Great",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Daniel 12:1, who shall ARISE during a TIME OF TROUBLE never seen since nations existed? Who is DELIVERED?",
+    "explanation": "Daniel 12:1 — 'At that time shall arise Michael, the great prince who has charge of your people. And there shall be a time of trouble, such as never has been since there was a nation till that time. But at that time your people shall be delivered, everyone whose name shall be found written in the book.' MICHAEL = archangel. 'BOOK OF LIFE' (cf. Rev 13:8, 20:15). 'GREAT TRIBULATION' = source of Mt 24:21.",
+    "language": "en",
+    "options": [
+      "Messiah — only pure Jews (per the textual narrative)",
+      "Great prophet — only believers (as described in the passage)",
+      "MICHAEL the great prince who STANDS UP for DANIEL'S PEOPLE — those whose NAME is in the BOOK (book of life) shall be DELIVERED",
+      "End-time king — only the rich (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Michael + book of life",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Daniel 6:26-27, after Daniel's rescue, what DECREE did Darius send across the kingdom?",
+    "explanation": "Daniel 6:26-27 — 'I make a decree, that in all my royal dominion people are to tremble and fear before the God of Daniel, for he is the living God, enduring forever; his kingdom shall never be destroyed, and his dominion shall be to the end. He delivers and rescues; he works signs and wonders in heaven and on earth, he who has saved Daniel from the power of the lions.' True acknowledgment from a pagan king. Like Nebuchadnezzar in chapter 4.",
+    "language": "en",
+    "options": [
+      "Daniel's God is a common god (as described in the passage) (per the original content)",
+      "Daniel made deputy king (according to the text's framing) (as the text indicates)",
+      "Lions must be killed (per the textual narrative) (in the story's sequence)",
+      "All must TREMBLE before Daniel's God — for he is the LIVING GOD; his kingdom NEVER destroyed; his dominion to the END; he RESCUES + DELIVERS, works SIGNS + WONDERS"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Darius honors Daniel's God",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Daniel 12:4, what was Daniel commanded to do with the WORDS + BOOK until the END TIME?",
+    "explanation": "Daniel 12:4 — 'But you, Daniel, shut up the words and seal the book, until the time of the end. Many shall run to and fro, and knowledge shall increase.' Contrast Rev 22:10 ('Do not seal up the words of the prophecy of this book, for the time is near') — Daniel SEALED, Revelation OPEN. Reason: progression to the end accelerates.",
+    "language": "en",
+    "options": [
+      "Distribute to people — to study (as described in the passage)",
+      "SHUT + SEAL the words until the time of the end — many shall RUN TO AND FRO and KNOWLEDGE shall INCREASE",
+      "Burn it — keep it secret (according to the text's framing)",
+      "Bury it — preserve it (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Seal until end time",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verseStart": 34,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Daniel 2:34-35, the STONE not cut by human hands struck where on the statue? Then became what?",
+    "explanation": "Daniel 2:34-35 — 'As you looked, a stone was cut out by no human hand, and it struck the image on its feet of iron and clay, and broke them in pieces. Then the iron, the clay, the bronze, the silver, and the gold, all together were broken in pieces, and became like the chaff of the summer threshing floors; and the wind carried them away, so that not a trace of them could be found. But the stone that struck the image became a great mountain and filled the whole earth.' STONE = Messianic kingdom — comes at the end of human kingdoms, becoming INFINITE.",
+    "language": "en",
+    "options": [
+      "Struck the IRON + CLAY FEET — crushed all; the stone became a GREAT MOUNTAIN filling the WHOLE EARTH",
+      "Struck gold head — vanished gold (as described in the passage)",
+      "Struck silver chest — divided (per the textual narrative)",
+      "Struck bronze belly — shattered (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Stone struck feet, became mountain",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verseStart": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Daniel 3:28-29, after the furnace, what DECREE did Nebuchadnezzar issue?",
+    "explanation": "Daniel 3:29 — 'Therefore I make a decree: Any people, nation, or language that speaks anything against the God of Shadrach, Meshach, and Abednego shall be torn limb from limb, and their houses laid in ruins, for there is no other god who is able to rescue in this way.' The king does NOT compel worship of Yahweh — only forbids blasphemy. Progress: from recognizing the supreme God → only later in ch 4 the king himself humbles personally.",
+    "language": "en",
+    "options": [
+      "Worship Yahweh alone (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Build him a temple in Babylon (as described in the passage) (as the text indicates)",
+      "Send heralds across earth (according to the text's framing) (per the original content)",
+      "Any PEOPLE + tongue who speak ANYTHING AGAINST the God of Shadrach, Meshach, Abednego — be TORN LIMB FROM LIMB + houses LAID IN RUINS; for NO god can RESCUE like him"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Forbid speaking against God",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Daniel 4:27, what does Daniel ADVISE Nebuchadnezzar to do to PROLONG his peace?",
+    "explanation": "Daniel 4:27 — 'Therefore, O king, let my counsel be acceptable to you: break off your sins by practicing righteousness, and your iniquities by showing mercy to the oppressed, that there may perhaps be a lengthening of your prosperity.' The FINAL warning to the king before he falls into 7 years of madness. NOTABLY: treatment of the OPPRESSED — the OT often makes this proof of trusting God.",
+    "language": "en",
+    "options": [
+      "Offer regular sacrifices (as described in the passage) (as the text indicates)",
+      "BREAK OFF SIN by RIGHTEOUSNESS + iniquity by SHOWING MERCY to the OPPRESSED — perhaps your tranquility may be lengthened",
+      "Conquer more peoples (per the textual narrative) (in the story's sequence)",
+      "Build a greater temple (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Break off sin by righteousness",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Daniel 5:25-28, Daniel interpreted MENE MENE TEKEL UPHARSIN — meaning of each word?",
+    "explanation": "Daniel 5:25-28 — 'And this is the writing that was inscribed: MENE, MENE, TEKEL, and PARSIN. This is the interpretation of the matter: MENE, God has numbered the days of your kingdom and brought it to an end; TEKEL, you have been weighed in the balances and found wanting; PERES, your kingdom is divided and given to the Medes and Persians.' 'PERES' echoes 'Persia' — a deep wordplay.",
+    "language": "en",
+    "options": [
+      "MENE = Money — TEKEL = Measure — UPHARSIN = Peace (per the textual narrative) (in the story's sequence)",
+      "MENE = King — TEKEL = Queen — UPHARSIN = Minister (according to the text's framing) (per the original content)",
+      "MENE: God has NUMBERED your kingdom + brought it to an end — TEKEL: you are WEIGHED on the scales + found WANTING — PERES (UPHARSIN): kingdom DIVIDED to the Medes + Persians",
+      "MENE = Bless — TEKEL = Promise — UPHARSIN = Forgive (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Numbered + weighed + divided",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Daniel 6:22, how did Daniel explain his rescue from the lions' den?",
+    "explanation": "Daniel 6:22 — 'My God sent his angel and shut the lions' mouths, and they have not harmed me, because I was found blameless before him; and also before you, O king, I have done no harm.' Note: Daniel claims INNOCENCE before God + the king. He does NOT claim absolute righteousness — only innocence in this matter. Hebrews 11:33 'shut the mouths of lions through faith'.",
+    "language": "en",
+    "options": [
+      "My God sent his ANGEL to SHUT the LIONS' MOUTHS — they harmed me not, because I was found INNOCENT before him + I have done no wrong before you",
+      "Lions were full (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Lions were friendly (as described in the passage) (as the text indicates)",
+      "A magician helped (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Angel shut lions' mouths",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Daniel 7:25, what will the little horn (the final brutal king) do to the SAINTS + time?",
+    "explanation": "Daniel 7:25 — 'He shall speak words against the Most High, and shall wear out the saints of the Most High, and shall think to change the times and the law; and they shall be given into his hand for a time, times, and half a time.' 'TIME + TIMES + HALF A TIME' = 3.5 years (1 + 2 + 0.5). Same in Rev 12:14, 13:5 (42 months = 1260 days). The little horn = Antichrist — persecutes believers in the end.",
+    "language": "en",
+    "options": [
+      "Fight fairly — not harm saints (as described in the passage) (as the text indicates)",
+      "Invite saints into government (according to the text's framing) (per the original content)",
+      "Grant saints full freedom (per the textual narrative) (in the story's sequence)",
+      "SPEAK against the Most High — WEAR DOWN the saints — INTEND to change TIMES + LAWS — saints given into his hand for A TIME + TIMES + HALF A TIME (3.5 years)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "3.5 years saints persecuted",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Daniel 9:27, who will MAKE a strong COVENANT with 'MANY' for 1 WEEK? At mid-week what?",
+    "explanation": "Daniel 9:27 — 'And he shall make a strong covenant with many for one week, and for half of the week he shall put an end to sacrifice and offering. And on the wing of abominations shall come one who makes desolate, until the decreed end is poured out on the desolator.' 'WEEK' = 7 years (per 70-weeks principle). 'HALF A WEEK' = 3.5 years. 'ABOMINATION OF DESOLATION' (cf. Mt 24:15 Jesus's words). Debated: Messiah or Antichrist?",
+    "language": "en",
+    "options": [
+      "David — end temple (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "He (the little horn ch 11 / Antichrist) — at MID-WEEK STOPS SACRIFICE + offering; on the WING of ABOMINATIONS shall come the DESOLATION — until the END decreed",
+      "Abraham — abandon law (according to the text's framing) (per the original content)",
+      "Solomon — burn temple (as described in the passage) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Covenant + halfway sacrifice ends",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 11,
+    "verseStart": 36,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Daniel 11:36, what will the king (in the end) do AS HE PLEASES? Especially toward the gods?",
+    "explanation": "Daniel 11:36-37 — 'And the king shall do as he wills. He shall exalt himself and magnify himself above every god, and shall speak astonishing things against the God of gods. He shall prosper till the indignation is accomplished... He shall pay no attention to the gods of his fathers.' This proud king = Antiochus IV Epiphanes (~167 BC) directly; commonly applied to End-time Antichrist. 2 Thess 2:4 quotes this.",
+    "language": "en",
+    "options": [
+      "Per prophecy — obeys (according to the text's framing) (as the text indicates)",
+      "Per ancient law — reveres (as described in the passage) (per the original content)",
+      "AS HE PLEASES — EXALT HIMSELF — MAGNIFY ABOVE every god — SPEAK ASTONISHING things against the God of gods — prosper until WRATH IS COMPLETED",
+      "Per Daniel — fears (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "King exalts above all gods",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Daniel 12:7, the man in LINEN swears how long until the wonders end? Especially what?",
+    "explanation": "Daniel 12:7 — 'I heard the man clothed in linen, who was above the waters of the stream; he raised his right hand and his left hand toward heaven and swore by him who lives forever that it would be for a time, times, and half a time, and that when the shattering of the power of the holy people comes to an end all these things would be finished.' 3.5 TIMES = 1260 days. Same duration Revelation uses for Antichrist's reign. The end comes AFTER the holy people are SHATTERED — not avoided but PASSED THROUGH.",
+    "language": "en",
+    "options": [
+      "A TIME + TIMES + HALF a TIME (3.5 years) — when the SHATTERING of the HOLY PEOPLE'S power is COMPLETE — these things will be finished",
+      "10 years — king wins (as described in the passage) (as the text indicates)",
+      "100 years — at last (per the textual narrative) (in the story's sequence)",
+      "1000 years — at end (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "1+2+0.5 times after holy shattered",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Daniel 7:27, after the little horn is judged, the kingdom + dominion + greatness of the kingdom UNDER all HEAVEN will be GIVEN to whom?",
+    "explanation": "Daniel 7:27 — 'And the kingdom and the dominion and the greatness of the kingdoms under the whole heaven shall be given to the people of the saints of the Most High; his kingdom shall be an everlasting kingdom, and all dominions shall serve and obey him.' Climax of ch 7: AFTER the little horn + 4 beasts destroy themselves → the SAINTS inherit the kingdom. Mt 5:5 echoes this. Same idea Rev 20:4 (saints reign).",
+    "language": "en",
+    "options": [
+      "Pure Israel only (as described in the passage) (as the text indicates)",
+      "The PEOPLE of the SAINTS of the MOST HIGH — his kingdom is EVERLASTING; all dominions shall SERVE + OBEY him",
+      "Guardian angels (according to the text's framing) (per the original content)",
+      "Davidic line (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "Kingdom to saints",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Daniel 9:16-19, on what does Daniel BASE his plea for restoration?",
+    "explanation": "Daniel 9:18-19 — 'For we do not present our pleas before you because of our righteousness, but because of your great mercy. O Lord, hear; O Lord, forgive. O Lord, pay attention and act. Delay not, for your own sake, O my God, because your city and your people are called by your name.' Model prayer: NOT on merit — but on God's MERCY + NAME. Different from ancient Near Eastern prayer.",
+    "language": "en",
+    "options": [
+      "On Daniel's merit (per the textual narrative) (in the story's sequence)",
+      "On Abraham's promise (as described in the passage) (as the text indicates)",
+      "On the patriarchs (according to the text's framing)",
+      "ON GOD'S RIGHTEOUSNESS — NOT his own — for the sake of GOD'S NAME + the city Jerusalem belongs to GOD"
+    ],
+    "tags": [
+      "Old Testament",
+      "Daniel",
+      "Major Prophet",
+      "On God's mercy, not own",
+      "Advanced"
+    ]
   }
 ]

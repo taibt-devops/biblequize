@@ -533,5 +533,1045 @@
       "Tiên tri",
       "Trung cấp"
     ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Đa-ni-ên 1:1, vua nào của Ba-by-lôn vây Giê-ru-sa-lem trong năm thứ ba của Giê-hô-gia-kim vua Giu-đa?",
+    "explanation": "Đa-ni-ên 1:1 — 'Năm thứ ba về đời Giê-hô-gia-kim, vua Giu-đa, thì Nê-bu-cát-nết-sa, vua Ba-by-lôn, đến thành Giê-ru-sa-lem và vây lấy.' Lưu đày lần 1 (~605 TCN) — Đa-ni-ên + 3 bạn (Ha-na-nia, Mi-sa-ên, A-xa-ria) bị bắt sang Ba-by-lôn cùng đợt này.",
+    "language": "vi",
+    "options": [
+      "Bên-xát-sa (như được mô tả trong sách)",
+      "Đa-ri-út (theo cách trình bày của text)",
+      "NÊ-BU-CÁT-NẾT-SA",
+      "Si-ru (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Nê-bu-cát-nết-sa vây Giê-ru-sa-lem",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "verseStart": 7,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Đa-ni-ên 1:7, các quan trưởng đã đặt tên Ba-by-lôn cho Đa-ni-ên và 3 bạn — Đa-ni-ên có tên gì?",
+    "explanation": "Đa-ni-ên 1:7 — 'Người làm đầu hoạn quan đặt tên cho họ: Đa-ni-ên tên là Bên-tê-xát-sa; Ha-na-nia tên là Sa-đơ-rắc; Mi-sa-ên tên là Mê-sác; A-xa-ria tên là A-bết-Nê-gô.' Tên Hi-bơ-rơ chứa 'EL/IAH' (Đức Chúa Trời) — bị đổi sang tên Ba-by-lôn chứa tên thần ngoại bang. Mục đích: đồng hóa văn hóa.",
+    "language": "vi",
+    "options": [
+      "A-bết-Nê-gô",
+      "Mê-sác",
+      "Sa-đơ-rắc",
+      "BÊN-TÊ-XÁT-SA"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Đa-ni-ên = Bên-tê-xát-sa",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verseStart": 19,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Đa-ni-ên 2:19, sau khi Đa-ni-ên cầu nguyện, sự MẦU NHIỆM về chiêm bao của vua được tỏ ra cho ông trong gì?",
+    "explanation": "Đa-ni-ên 2:19 — 'Vậy sự kín nhiệm được tỏ ra cho Đa-ni-ên trong sự hiện thấy ban đêm; Đa-ni-ên bèn ngợi khen Chúa trên trời.' Đây là phần đầu của câu chuyện chương 2: Nê-bu-cát-nết-sa đòi cả nhà thông thái nói LẠI nội dung chiêm bao mình + giải nghĩa, dưới đe dọa giết. Chỉ Đa-ni-ên cầu nguyện và được Chúa tỏ.",
+    "language": "vi",
+    "options": [
+      "Trong sự HIỆN THẤY ban đêm",
+      "Trong giấc ngủ trưa",
+      "Trong khi đọc sách",
+      "Trong sự thiền định"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Sự hiện thấy ban đêm",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verseStart": 27,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Đa-ni-ên 3:27, sau khi 3 người vào lò lửa hực ra, các quan thấy điều gì về thân thể họ?",
+    "explanation": "Đa-ni-ên 3:27 — 'Đoạn, các phó vương... thấy lửa đã không có quyền chi trên thân thể họ; tóc trên đầu họ chẳng cháy, áo dài họ chẳng đổi, và không có mùi lửa cháy ở đó.' Phép lạ rõ rệt: không phải chỉ thoát chết — KHÔNG dấu vết. Vua Nê-bu-cát-nết-sa thừa nhận Đức Chúa Trời thật (3:28-29).",
+    "language": "vi",
+    "options": [
+      "Bị cháy đen (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "KHÔNG có quyền GÌ trên thân thể họ — TÓC trên đầu CHẲNG cháy, áo CHẲNG đổi, MÙI lửa CHẲNG thấm trên họ",
+      "Bị bỏng nhẹ (theo cách trình bày của text)",
+      "Bị tan biến (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Lò lửa không hại 3 người",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Đa-ni-ên 4:4-5, Nê-bu-cát-nết-sa đang ở trong cung thì có gì xảy ra?",
+    "explanation": "Đa-ni-ên 4:4-5 — 'Ta, Nê-bu-cát-nết-sa, ở yên lặng trong cung ta, và thạnh vượng trong đền ta. Ta thấy một điềm chiêm bao làm cho ta sợ; những ý tưởng ở trên giường, và những sự hiện thấy của đầu ta đã làm cho ta bối rối.' Mở đầu chương 4 — chiêm bao về CÂY LỚN bị chặt — báo trước Nê-bu-cát-nết-sa sẽ bị hạ làm thú vật 7 năm.",
+    "language": "vi",
+    "options": [
+      "Có sứ giả đến",
+      "Bị đau tim",
+      "Có sấm sét",
+      "Có CHIÊM BAO làm cho VUA SỢ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Chiêm bao làm vua sợ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Đa-ni-ên 5:1, vua nào (cuối cùng của Ba-by-lôn) đã làm tiệc lớn cho 1000 đại thần?",
+    "explanation": "Đa-ni-ên 5:1 — 'Vua Bên-xát-sa dọn tiệc lớn đãi một ngàn đại thần mình, và uống rượu với họ.' Bên-xát-sa = vua đồng trị với Nabonidus (cha) ~553-539 TCN. Tiệc trong đêm Ba-by-lôn rơi (5:30 — vua bị giết, Đa-ri-út người Mê-đi tiếp quản). Tiệc xa hoa giữa lúc thành đang bị quân Ba-tư + Mê-đi vây.",
+    "language": "vi",
+    "options": [
+      "Nê-bu-cát-nết-sa",
+      "Đa-ri-út (theo cách trình bày của text)",
+      "BÊN-XÁT-SA (như được mô tả trong sách)",
+      "Si-ru (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Bên-xát-sa tiệc lớn",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verseStart": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Đa-ni-ên 6:4-5, các quan trưởng tìm KHE HỞ kiện cáo Đa-ni-ên — họ tìm được gì?",
+    "explanation": "Đa-ni-ên 6:4-5 — 'Vậy các quan thượng thơ và các quan trấn thủ tìm cớ kiện Đa-ni-ên về việc nước; nhưng họ không thể tìm được một cớ nào, hay một sự xấu nào của người, bởi người là trung tín, trong người chẳng có điều lỗi và cũng chẳng có sự xấu... Vậy những người đó nói rằng: Chúng ta không tìm được một cớ nào mà cáo Đa-ni-ên nầy được, nếu chúng ta chẳng tìm trong sự thuộc về luật pháp Đức Chúa Trời nó.' Đa-ni-ên = mẫu mực ngay thẳng.",
+    "language": "vi",
+    "options": [
+      "KHÔNG tìm được lỗi gì — vì Đa-ni-ên trung tín; phải tìm cớ về LUẬT ĐỨC CHÚA TRỜI của ông",
+      "Tìm được tham nhũng (như được mô tả trong sách)",
+      "Tìm được nói dối (xét trong văn cảnh)",
+      "Tìm được phản loạn (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Đa-ni-ên không có lỗi",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "verseStart": 3,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Đa-ni-ên 9:3, Đa-ni-ên đối mặt với Đức Chúa Trời thế nào để cầu nguyện cho dân?",
+    "explanation": "Đa-ni-ên 9:3 — 'Ta để mặt hướng về Chúa là Đức Chúa Trời, lấy sự khẩn nguyện, nài xin, với sự kiêng ăn, mặc bao gai, đội tro mà tìm.' Sau khi đọc Giê-rê-mi (70 năm lưu đày — Giê-rê-mi 25:11-12, 29:10), Đa-ni-ên cầu nguyện. 'BAO GAI + TRO' = dấu hiệu ăn năn. Khôi phục Y-sơ-ra-ên không phải tự nhiên — đòi cầu nguyện thành khẩn.",
+    "language": "vi",
+    "options": [
+      "Im lặng và lý luận (theo cách trình bày của text)",
+      "Bằng lễ vật (xét trong văn cảnh)",
+      "Bằng sự nghiêm trang (như được mô tả trong sách)",
+      "Tìm Chúa với CẦU NGUYỆN, NÀI XIN, ĂN CHAY, mặc bao gai và rắc TRO"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Cầu nguyện ăn chay bao gai tro",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 10,
+    "verseStart": 5,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Đa-ni-ên 10:5-6, sau 3 tuần kiêng ăn, Đa-ni-ên thấy một NGƯỜI mặc áo gì? Mặt và mắt như gì?",
+    "explanation": "Đa-ni-ên 10:5-6 — 'Ta nhướng mắt nhìn xem, nầy, một người mặc vải gai, chung quanh lưng thắt đai bằng vàng ròng U-pha. Mình người như bích ngọc; mặt người như chớp; mắt người như đuốc cháy; tay và chân như đồng đánh bóng, và tiếng nói như tiếng đám đông.' Người này có thể là Christ trước khi nhập thể (theophany) hoặc thiên sứ cao cấp. Khải 1:13-15 dùng cùng hình ảnh cho Christ vinh hiển.",
+    "language": "vi",
+    "options": [
+      "Áo đỏ — mặt như bạc (xét trong văn cảnh)",
+      "Áo bằng VẢI GAI MỊN, lưng thắt đai vàng U-PHA — mặt như CHỚP NHOÁNG, MẮT như đuốc lửa",
+      "Áo trắng đơn — mặt như ánh trăng",
+      "Áo đen — mặt như đêm tối (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Người vải gai đai vàng",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Đa-ni-ên 1:12-15, Đa-ni-ên đề nghị thử nghiệm gì với người trông coi để giữ kosher?",
+    "explanation": "Đa-ni-ên 1:12-15 — 'Tôi xin ông hãy thử các tôi tớ ông trong 10 ngày, cho chúng tôi chỉ ăn rau uống nước. Sau đó, ông sẽ thấy mặt chúng tôi với mặt những người trẻ tuổi ăn đồ ngon vua ban; rồi sẽ làm cho các tôi tớ ông theo như điều ông thấy. Người nghe lời họ trong sự đó, và thử họ trong mười ngày. Mãn mười ngày, thấy mặt họ lại đẹp hơn... mọi kẻ trẻ tuổi đã ăn đồ ngon vua ban.' Đa-ni-ên KHÔNG làm ô uế bằng đồ ăn vua (có thể đã dâng cho thần ngoại).",
+    "language": "vi",
+    "options": [
+      "10 NGÀY chỉ ăn RAU + uống NƯỚC — sau đó so sánh với những kẻ ăn vật quý của vua",
+      "1 năm ăn chay rồi đánh giá (theo cách trình bày của text)",
+      "30 ngày kiêng cử rồi thi đua (như được mô tả trong sách)",
+      "Chỉ uống nước và đợi (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Thử 10 ngày rau và nước",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Đa-ni-ên 1:17, Đức Chúa Trời ban cho 4 người Hê-bơ-rơ 2 ơn gì? Đặc biệt Đa-ni-ên?",
+    "explanation": "Đa-ni-ên 1:17 — 'Vả, Đức Chúa Trời ban cho bốn người trai trẻ đó được thông biết tỏ sáng trong mọi thứ học thức và khôn ngoan. Đa-ni-ên cũng biết được mọi sự hiện thấy và chiêm bao.' Đặc tính ĐA-NI-ÊN: được giải nghĩa CHIÊM BAO (giống Giô-sép). Sẽ được dùng trong chương 2 (chiêm bao Nê-bu-cát-nết-sa) và chương 4 (chiêm bao cây).",
+    "language": "vi",
+    "options": [
+      "Sức mạnh + can đảm — đặc biệt Đa-ni-ên hùng mạnh",
+      "Tài cai trị + chiến lược — đặc biệt Đa-ni-ên là tướng",
+      "TRI THỨC + HỌC THỨC trong CỦA SÁCH + sự KHÔN NGOAN; đặc biệt Đa-ni-ên BIẾT MỌI HIỆN THẤY và CHIÊM BAO",
+      "Sức khỏe + sống lâu — đặc biệt Đa-ni-ên thọ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Tri thức + Đa-ni-ên giải chiêm bao",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Đa-ni-ên 2:21, Đức Chúa Trời (mà Đa-ni-ên ngợi khen) làm gì với THỜI ĐẠI và VUA?",
+    "explanation": "Đa-ni-ên 2:21 — 'Chính Ngài thay đổi thì giờ và mùa, bỏ và lập các vua; ban sự khôn ngoan cho kẻ khôn ngoan, và sự thông biết cho kẻ tỏ sáng.' Lời ca ngợi của Đa-ni-ên sau khi nhận khải tượng. Câu KEY của thần học chính trị Cựu Ước: ĐỨC CHÚA TRỜI tể trị VUA — không phải vua thuộc thần ngoại bang. Sẽ được lặp lại nhiều lần trong sách.",
+    "language": "vi",
+    "options": [
+      "Ngài giữ chúng nguyên — không thay đổi",
+      "Ngài THAY ĐỔI thì giờ và mùa — TRUẤT VUA và LẬP VUA — ban khôn ngoan cho người khôn",
+      "Ngài bỏ mặc cho con người (xét trong văn cảnh)",
+      "Ngài chỉ kiểm soát thiên sứ (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Truất + lập vua",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verseStart": 38,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Đa-ni-ên 2:38, Đa-ni-ên nói với Nê-bu-cát-nết-sa rằng vua là gì trong tượng?",
+    "explanation": "Đa-ni-ên 2:38 — 'Người là cái đầu bằng vàng đó.' Vua Nê-bu-cát-nết-sa = đầu vàng = vương quốc Ba-by-lôn. Tiếp theo: ngực bạc (Mê-đi-Ba-tư), bụng đồng (Hi Lạp), chân sắt (Rô-ma) — Hòn đá (vương quốc đời đời = Mê-si-a) đập tan tượng. Đây là khải tượng tóm lược lịch sử.",
+    "language": "vi",
+    "options": [
+      "Là cánh tay bằng bạc",
+      "Là bụng và đùi bằng đồng",
+      "Là chân bằng sắt",
+      "Là ĐẦU bằng VÀNG"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Vua = đầu vàng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Đa-ni-ên 3:4-6, vua Nê-bu-cát-nết-sa lệnh: nghe các nhạc cụ thì phải làm gì? Ai KHÔNG làm sẽ ra sao?",
+    "explanation": "Đa-ni-ên 3:4-6 — 'Sứ giả rao lớn tiếng rằng: Hỡi các dân, các nước, các thứ tiếng, các ngươi đều phải nghe! Khi nào các ngươi nghe tiếng còi, kèn... thì phải sấp mình xuống mà thờ pho tượng vàng vua Nê-bu-cát-nết-sa đã dựng lên. Kẻ nào không sấp mình xuống và không thờ, tức thì sẽ phải quăng vào giữa lò lửa hực.' Trắc nghiệm trung thành: 3 bạn Đa-ni-ên (Sa-đơ-rắc, Mê-sác, A-bết-Nê-gô) chọn KHÔNG.",
+    "language": "vi",
+    "options": [
+      "Phải SẤP MÌNH XUỐNG mà THỜ tượng vàng — ai KHÔNG làm sẽ bị quăng vào LÒ LỬA HỪNG",
+      "Phải đứng nghiêm — không thì bị tù",
+      "Phải hát theo — không thì mất chức",
+      "Phải dâng tiền — không thì bị phạt"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Sấp mình thờ tượng hoặc lò lửa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Đa-ni-ên 3:24-25, Nê-bu-cát-nết-sa nhìn vào lò lửa và sửng sốt vì sao?",
+    "explanation": "Đa-ni-ên 3:24-25 — 'Bấy giờ vua Nê-bu-cát-nết-sa lấy làm lạ, vội vàng đứng dậy, cất tiếng nói cùng các nghị viên rằng: Há chẳng phải chúng ta đã quăng ba người bị trói vào giữa lửa hay sao? Nầy, ta thấy bốn người không có bị trói, bước đi giữa lửa mà chẳng bị thương; và hình dung của người thứ tư giống như một con trai của các thần.' Người thứ 4 = thiên sứ (3:28) hoặc Christ trước nhập thể (theophany) — ý kiến tranh luận. KHÔNG có điều gì thiêu hủy 3 người.",
+    "language": "vi",
+    "options": [
+      "Vì 3 người chết hết (như được mô tả trong sách)",
+      "Thấy 4 NGƯỜI ĐI LẠI giữa lửa — KHÔNG bị tổn thương — và HÌNH DÁNG người thứ tư GIỐNG NHƯ CON CỦA CÁC THẦN",
+      "Vì lửa tắt (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Vì có khói lạ (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "4 người trong lò lửa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "verseStart": 28,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Đa-ni-ên 4:28-33, Nê-bu-cát-nết-sa đi dạo trên cung vua và khoe Ba-by-lôn — sau đó điều gì xảy ra?",
+    "explanation": "Đa-ni-ên 4:28-33 — 'Hết thảy mọi việc đó đều xảy đến cho vua Nê-bu-cát-nết-sa... Vua đang nói thì có tiếng từ trên trời xuống rằng: Hỡi Nê-bu-cát-nết-sa, đã phán cùng ngươi: Nước đã lìa khỏi ngươi. Ngươi sẽ bị đuổi khỏi giữa loài người, sẽ ở với thú đồng; sẽ bị buộc phải ăn cỏ như bò, rồi bảy kỳ sẽ trải qua trên ngươi, cho đến khi ngươi nhận biết rằng Đấng Rất Cao cai trị trong nước loài người.' 7 KỲ = 7 năm. KIÊU NGẠO bị Chúa hạ.",
+    "language": "vi",
+    "options": [
+      "Vua chết ngay (theo cách trình bày của text)",
+      "Vua hối hận (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "TIẾNG NÓI từ trời báo VUA bị ĐUỔI khỏi loài người — sống NHƯ THÚ ĐỒNG, ăn CỎ NHƯ BÒ — 7 KỲ qua",
+      "Vua vinh quang hơn (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "7 năm hóa thú",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "verseStart": 34,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Đa-ni-ên 4:34-37, sau 7 kỳ, Nê-bu-cát-nết-sa được phục hồi tâm trí và làm gì?",
+    "explanation": "Đa-ni-ên 4:34-37 — 'Đến cuối cùng những ngày đó, ta đây, Nê-bu-cát-nết-sa, ngước mắt lên trời, trí khôn đã phục lại cho ta, và ta xưng tạ Đấng Rất Cao... Bây giờ, ta, Nê-bu-cát-nết-sa, ngợi khen, tôn vinh, và làm cả sáng Vua trên trời; mọi công việc Ngài đều chân thật, các đường lối Ngài đều công bình; và kẻ nào bước đi kiêu ngạo, Ngài có thể hạ nó xuống.' Câu chuyện vĩ đại: vua mạnh nhất phải khiêm hạ.",
+    "language": "vi",
+    "options": [
+      "Trả thù những kẻ phản loạn (như được mô tả trong sách)",
+      "Mở rộng vương quốc thêm (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Xây tượng vinh quang hơn (theo cách trình bày của text)",
+      "NGỢI KHEN, TÔN VINH Đấng RẤT CAO — quyền cai trị Ngài đời đời, vương quốc Ngài đời đời; ai BƯỚC ĐI KIÊU NGẠO Ngài hạ thấp"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Phục hồi và ngợi khen",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Đa-ni-ên 5:5-6, trong tiệc của Bên-xát-sa, có gì bất ngờ hiện ra trên TƯỜNG?",
+    "explanation": "Đa-ni-ên 5:5-6 — 'Chính giờ đó, có những ngón tay của bàn tay người hiện ra, viết trên vôi tường cung vua, đối ngay chỗ để chân đèn; và vua trông thấy phần bàn tay đó đương viết. Bấy giờ vua biến sắc mặt, các ý tưởng làm cho vua bối rối; các xương lưng vua dường như rời đi, và hai đầu gối va vào nhau.' KHẢI TƯỢNG GHÊ RỢN — chỉ ngón tay viết, không thấy thân thể. Đa-ni-ên giải nghĩa MENE MENE TEKEL UPHARSIN (5:25).",
+    "language": "vi",
+    "options": [
+      "Có NGÓN TAY của bàn tay người HIỆN RA + viết trên TƯỜNG vôi của cung — vua thấy mặt mất sắc, đầu gối va với nhau, cẳng chân run rẩy",
+      "Một bóng đen (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Một tia chớp (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Một cảnh chiến trận (như được mô tả trong sách) (xét theo nội dung gốc)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Ngón tay viết trên tường",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "verseStart": 30,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Đa-ni-ên 5:30-31, trong đêm Bên-xát-sa bị giết — ai tiếp quản vương quốc?",
+    "explanation": "Đa-ni-ên 5:30-31 — 'Ngay đêm đó, vua người Canh-đê là Bên-xát-sa bị giết. Rồi Đa-ri-út là người Mê-đi được nước, bấy giờ tuổi người độ sáu mươi hai.' Sự rơi của Ba-by-lôn (~539 TCN) trước quân Ba-tư + Mê-đi (Si-ru cha vợ Đa-ri-út). Đa-ri-út này KHÁC với Đa-ri-út Hystaspes (sau này, Ezra 4-6).",
+    "language": "vi",
+    "options": [
+      "Si-ru người Ba-tư",
+      "Bên-tê-xát-sa con vua",
+      "ĐA-RI-ÚT người MÊ-ĐI — khoảng 62 tuổi",
+      "Nê-bu-cát-nết-sa II"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Đa-ri-út Mê-đi tiếp quản",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Đa-ni-ên 6:6-9, các quan trưởng đề nghị vua Đa-ri-út ra LUẬT gì để bẫy Đa-ni-ên?",
+    "explanation": "Đa-ni-ên 6:7-9 — 'Hết thảy các quan trưởng nước, các quan lãnh binh, các quan trấn thủ, các nghị viên và các quan đô tổng đều đồng tình xin vua ra chỉ dụ, lập một cấm lệnh nghiêm nhặt trong ba mươi ngày, hễ ai cầu xin thần nào hay là người nào ngoài vua, thì người ấy sẽ phải quăng vào hang sư tử.' Đa-ri-út KHÔNG biết âm mưu — chỉ thấy luật vinh quang Đế Quốc. Theo luật Mê-đi-Ba-tư, một khi đã ban thì KHÔNG thể bãi (6:8).",
+    "language": "vi",
+    "options": [
+      "Phải làm việc 7 ngày 1 tuần — không nghỉ (xét trong văn cảnh)",
+      "Trong 30 NGÀY ai DÂNG LỜI CẦU XIN cùng thần nào hay người nào KHÁC ngoài VUA — sẽ bị quăng vào HANG SƯ TỬ",
+      "Phải dâng đôi vợ đầu cho vua — sau đó mới được kết hôn",
+      "Phải nộp 50% tài sản — không thì bị tịch thu"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "30 ngày chỉ cầu vua",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Đa-ni-ên 7:2-3, Đa-ni-ên thấy 4 con thú lớn ra khỏi đâu?",
+    "explanation": "Đa-ni-ên 7:2-3 — 'Đa-ni-ên nói rằng: Đương đêm, ta nhìn xem trong sự hiện thấy, và, nầy, có bốn hướng gió trên trời xô xát trên biển lớn. Đoạn, bốn con thú lớn từ biển lên, khác nhau như sau nầy.' BIỂN = ám chỉ các dân (Khải 17:15). 4 thú = 4 vương quốc (giống chương 2 nhưng nhìn từ THỂ DIỆN ÁC LIỆT — chương 2 thấy đẹp, chương 7 thấy là thú dữ). Sư tử (Ba-by-lôn), gấu (Mê-đi-Ba-tư), beo (Hi Lạp), thú lạ (Rô-ma).",
+    "language": "vi",
+    "options": [
+      "Ra khỏi BIỂN LỚN do 4 hướng GIÓ thổi động",
+      "Ra khỏi đất sa mạc (như được mô tả trong sách)",
+      "Ra khỏi rừng rậm (theo cách trình bày của text)",
+      "Ra khỏi núi cao (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "4 thú từ biển",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Đa-ni-ên 7:9-10, ĐẤNG THƯỢNG CỔ (Ancient of Days) ngồi trên ngôi — mô tả thế nào?",
+    "explanation": "Đa-ni-ên 7:9-10 — 'Ta nhìn xem cho đến chừng các ngôi đã đặt, và có Đấng Thượng Cổ ngồi ở trên. Áo Ngài trắng như tuyết, và tóc trên đầu Ngài như lông chiên sạch. Ngôi Ngài là những ngọn lửa, và các bánh xe là lửa hừng. Trước mặt Ngài, một sông lửa chảy ra và tràn lan; ngàn ngàn hầu hạ Ngài, và muôn muôn đứng trước mặt Ngài.' = ĐỨC CHÚA TRỜI. Ngọn lửa = sự thánh khiết phán xét. Khải 1:14 cùng hình ảnh cho Christ.",
+    "language": "vi",
+    "options": [
+      "Ngôi đen + áo sẫm + tóc đen (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Ngôi xanh + áo lục + tóc nâu (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Ngôi đỏ + áo cam + tóc bạc (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Ngôi như NGỌN LỬA + bánh xe NGỌN LỬA — áo Ngài TRẮNG NHƯ TUYẾT — TÓC trên ĐẦU GIỐNG LÔNG CHIÊN sạch — sông LỬA chảy ra trước Ngài; ngàn ngàn HẦU HẠ Ngài + vạn vạn ĐỨNG TRƯỚC mặt"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Đấng Thượng Cổ ngồi ngọn lửa",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 8,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Đa-ni-ên 8:3-7, Đa-ni-ên thấy con CHIÊN ĐỰC có 2 sừng (sau chỉ Mê-đi-Ba-tư) bị con DÊ XỜM (chỉ Hi Lạp dưới A-léc-xan-đơ Đại Đế) làm gì?",
+    "explanation": "Đa-ni-ên 8:3-7 — 'Ta nhướng mắt lên và nhìn xem; nầy có một con chiên đực đứng gần sông, có hai cái sừng... Khi ta nhìn xem, nầy, có một con dê xờm đến từ phía tây, đi khắp trên mặt cả đất mà không đụng đến đất; con dê đó có cái sừng đáng chú ý ở giữa hai con mắt. Nó đi qua con chiên đực... đánh đó và bẻ gãy hai cái sừng nó.' Đa-ni-ên 8:21 giải: dê = vua Hi Lạp, sừng lớn = vua đầu (A-léc-xan-đơ).",
+    "language": "vi",
+    "options": [
+      "Chiên thắng dê (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Hai cùng chia lãnh thổ (như được mô tả trong sách)",
+      "Dê chạy nhanh từ phía Tây — KHÔNG đụng đất — đập VÀO chiên + GIẪM ĐẠP nó; KHÔNG ai cứu được chiên khỏi tay dê",
+      "Dê và chiên hòa thuận (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Dê đập chiên",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "verseStart": 24,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Đa-ni-ên 9:24, '70 TUẦN' đã được định cho dân Đa-ni-ên + thành thánh để thực hiện 6 mục tiêu — đặc biệt là gì?",
+    "explanation": "Đa-ni-ên 9:24 — 'Có bảy mươi tuần lễ định trên dân ngươi và thành thánh ngươi, đặng ngăn sự phạm phép, trừ tội lỗi, làm sạch sự gian ác, và đem sự công bình đời đời vào, đặng đặt ấn tín nơi sự hiện thấy và lời tiên tri, và xức dầu cho Đấng rất thánh.' '70 TUẦN' = 70 × 7 = 490 năm. 6 MỤC TIÊU hoàn toàn do Mê-si-a thực hiện. Khải tượng MÊ-SI-A nổi tiếng nhất Cựu Ước.",
+    "language": "vi",
+    "options": [
+      "Để xây đền thờ + bảo vệ thành (theo cách trình bày của text)",
+      "Để CHẤM DỨT TỘI LỖI + LÀM CHO HÒA THUẬN VÌ GIAN ÁC + đem CÔNG BÌNH ĐỜI ĐỜI + ĐÓNG ẤN khải tượng + tiên tri + xức dầu Đấng Rất Thánh",
+      "Để nhân dân thịnh vượng + sản xuất nhiều (như được mô tả trong sách)",
+      "Để Y-sơ-ra-ên thắng kẻ thù (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "70 tuần = 6 mục tiêu",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 10,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Đa-ni-ên 10:13, thiên sứ giải thích: vì sao Ngài đến TRỄ 21 ngày để trả lời cầu nguyện Đa-ni-ên?",
+    "explanation": "Đa-ni-ên 10:13 — 'Song vua nước Phe-rơ-sơ đã ngăn trở ta trong hai mươi mốt ngày; nhưng, kìa, Mi-chen là một trong các quan trưởng đầu nhứt, đã đến mà giúp đỡ ta, và ta ở lại đó với các vua nước Phe-rơ-sơ.' Cho thấy CHIẾN TRANH THUỘC LINH thực sự — các 'vua' nước = linh ác cai trị các dân. MI-CHEN = thiên sứ trưởng (Khải 12:7) bảo vệ Y-sơ-ra-ên (10:21, 12:1).",
+    "language": "vi",
+    "options": [
+      "Vì VUA NƯỚC BA-TƯ (linh ác cai trị Ba-tư) ngăn trở Ngài 21 ngày — Mi-chen, một trong các quan trưởng đầu nhứt, đến giúp Ngài",
+      "Vì Đức Chúa Trời thử Đa-ni-ên (như được mô tả trong sách)",
+      "Vì có nhiều việc khác (theo cách trình bày của text)",
+      "Vì cần xác minh (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Vua Ba-tư ngăn trở 21 ngày",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Đa-ni-ên 11:2-4, có 3 vua nữa của BA-TƯ + 1 vua thứ 4 GIÀU HƠN HẾT — sau đó VUA HÙNG MẠNH dấy lên rồi vương quốc bị chia ra theo 4 hướng GIÓ. Vua hùng mạnh đó là ai?",
+    "explanation": "Đa-ni-ên 11:2-4 — 'Bây giờ ta sẽ cho ngươi biết sự chân thật. Nầy còn ba vua trong nước Phe-rơ-sơ sẽ dấy lên... Đoạn, một vua mạnh sẽ dấy lên, lấy quyền lớn cai trị và làm theo ý mình. Khi vua ấy đã dấy lên, thì nước người bị xé và chia ra theo bốn gió của trời.' Lịch sử ứng nghiệm 100%: A-léc-xan-đơ chết 323 TCN, vương quốc chia làm 4 (Diadochi). Chương 11 mô tả TIẾP các xung đột Sê-leu-cốt vs Tô-lê-mê đến An-ti-ô Eppi-ph-an thiệt hại đền thờ (175-164 TCN, 11:31).",
+    "language": "vi",
+    "options": [
+      "Si-ru (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Đa-ri-út (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Xét-xét I (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "A-LÉC-XAN-ĐƠ ĐẠI ĐẾ — Hi Lạp; sau khi chết, vương quốc chia 4: Cát-san-đơ + Ly-si-mác + Sê-leu-cốt + Tô-lê-mê"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "A-léc-xan-đơ Đại Đế",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Đa-ni-ên 12:1, ai sẽ DẤY LÊN trong THỜI GIAN HỌẠN NẠN không từng có như vậy từ khi có nước đến nay? Ai sẽ được CỨU?",
+    "explanation": "Đa-ni-ên 12:1 — 'Trong kỳ đó, Mi-chen, quan trưởng lớn, là đấng đứng thay mặt con cái dân ngươi sẽ chỗi dậy. Lúc đó sẽ có tai nạn, đến nỗi từ khi mới có nước đến kỳ đó cũng chẳng có như vậy bao giờ. Bấy giờ, trong vòng dân sự ngươi, kẻ nào được ghi trong quyển sách kia sẽ được cứu.' MI-CHEN = thiên sứ trưởng. 'SÁCH SỰ SỐNG' (cf. Khải 13:8, 20:15). 'HOẠN NẠN LỚN' = câu nguồn cho Mat 24:21.",
+    "language": "vi",
+    "options": [
+      "Mê-si-a — chỉ những người Do Thái thuần (như được mô tả trong sách)",
+      "Tiên tri lớn — chỉ những người tin (theo cách trình bày của text)",
+      "MI-CHEN, quan trưởng LỚN bênh vực CON DÂN ĐA-NI-ÊN — ai có TÊN trong SÁCH (sách sự sống) sẽ được CỨU",
+      "Vua đời cuối — chỉ những kẻ giàu (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Mi-chen + sách sự sống",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Đa-ni-ên 6:26-27, sau khi Đa-ni-ên được cứu khỏi hang sư tử, Đa-ri-út ban CHIẾU CHỈ rao gì cho cả nước?",
+    "explanation": "Đa-ni-ên 6:26-27 — 'Ta ban chiếu chỉ nầy: Trong khắp các miền nước ta, người ta phải run rẩy kính sợ trước mặt Đức Chúa Trời của Đa-ni-ên; vì Ngài là Đức Chúa Trời hằng sống và còn đời đời. Nước Ngài không bao giờ bị hủy diệt, quyền cai trị Ngài còn đến cuối cùng. Ngài cứu rỗi và giải thoát, làm những dấu lạ sự lạ ở trên trời dưới đất; Ngài đã cứu Đa-ni-ên khỏi quyền sư tử.' Sự công nhận thật của một vua ngoại đạo. Cùng dạng với Nê-bu-cát-nết-sa chương 4.",
+    "language": "vi",
+    "options": [
+      "Đức Chúa Trời Đa-ni-ên là một thần thường (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Đa-ni-ên được lập làm vua phụ (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Các sư tử phải bị giết (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Mọi người phải RUN SỢ trước Đức Chúa Trời Đa-ni-ên — vì Ngài là ĐỨC CHÚA TRỜI HẰNG SỐNG; nước Ngài KHÔNG hề bị hủy diệt; quyền cai trị Ngài đến CUỐI CÙNG; Ngài CỨU + GIẢI THOÁT, làm DẤU LẠ + KỲ DIỆU"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Đa-ri-út tôn Đức Chúa Trời Đa-ni-ên",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Đa-ni-ên 12:4, Đa-ni-ên được lệnh làm gì với LỜI + SÁCH cho đến KỲ CUỐI CÙNG?",
+    "explanation": "Đa-ni-ên 12:4 — 'Còn như ngươi, hỡi Đa-ni-ên, ngươi hãy đóng lại những lời nầy, và hãy đóng ấn sách nầy cho đến kỳ cuối cùng. Nhiều kẻ sẽ đi qua đi lại, và sự học thức sẽ thêm lên.' Khác với Khải 22:10 ('chớ đóng ấn lời tiên tri trong sách nầy, vì thì giờ đã gần đến') — sách Đa-ni-ên ĐÓNG, Khải Huyền MỞ. Lý do: cuộc tiến đến kỳ cuối tăng tốc.",
+    "language": "vi",
+    "options": [
+      "Chia cho dân — để cùng học (theo cách trình bày của text)",
+      "Phải GIẤU + ĐÓNG ẤN cho đến kỳ cuối — nhiều người sẽ ĐI LẠI ĐÓ ĐÂY và sự HỌC THỨC sẽ THÊM LÊN",
+      "Phải đốt — để giữ bí mật (xét trong văn cảnh)",
+      "Phải chôn đất — để bảo quản (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Đóng ấn cho đến kỳ cuối",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "verseStart": 34,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Đa-ni-ên 2:34-35, HÒN ĐÁ KHÔNG bởi tay người đập tượng vào đâu? Sau đó hòn đá trở thành gì?",
+    "explanation": "Đa-ni-ên 2:34-35 — 'Vua nhìn xem cho đến khi có một hòn đá chẳng phải bởi tay đục ra, đến đập vào bàn chân bằng sắt và đất sét của tượng, và làm cho tan nát. Bấy giờ sắt, đất sét, đồng, bạc, và vàng đều cùng nhau tan nát cả; trở nên như rơm rác bay trên sân đạp lúa mùa hạ, phải gió đùa đi, chẳng tìm nơi nào cho chúng nó; nhưng hòn đá đập vào pho tượng thì hóa ra một hòn núi lớn và đầy khắp đất.' HÒN ĐÁ = vương quốc Mê-si-a — đến cuối cùng các vương quốc loài người, trở nên VÔ HẠN.",
+    "language": "vi",
+    "options": [
+      "Đập vào CHÂN BẰNG SẮT + ĐẤT SÉT — đập tan tất cả; hòn đá trở thành NÚI LỚN bao trùm CẢ ĐẤT",
+      "Đập vào đầu vàng — tan biến vàng (như được mô tả trong sách)",
+      "Đập vào ngực bạc — chia cắt (theo cách trình bày của text)",
+      "Đập vào bụng đồng — bể vỡ (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Hòn đá đập chân, hóa núi lớn",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "verseStart": 28,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Đa-ni-ên 3:28-29, sau lò lửa, Nê-bu-cát-nết-sa ban LUẬT gì cho cả nước?",
+    "explanation": "Đa-ni-ên 3:29 — 'Vậy ta ban chiếu chỉ nầy: Bất kỳ dân nào, nước nào, thứ tiếng nào, hễ có người nói xấu đến Đức Chúa Trời của Sa-đơ-rắc, Mê-sác và A-bết-Nê-gô, thì sẽ bị phân thây, nhà nó sẽ phải thành ra đống tro; vì không có thần nào khác có thể giải cứu được thể nầy.' Vua KHÔNG ép thờ Yhwh — chỉ cấm xúc phạm. Bước tiến: từ công nhận Đức Chúa Trời siêu việt → mãi đến chương 4 vua riêng tự khiêm nhường.",
+    "language": "vi",
+    "options": [
+      "Phải thờ Đức Giê-hô-va độc nhất (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Phải xây đền cho Ngài tại Ba-by-lôn (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Phải gửi sứ giả khắp đất rao (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Bất kỳ DÂN NÀO + tiếng nào nói LỜI XÚC PHẠM Đức Chúa Trời của Sa-đơ-rắc, Mê-sác, A-bết-Nê-gô — sẽ bị PHÂN THÂY + nhà bị làm THÀNH ĐỐNG TRO; vì KHÔNG có thần nào có thể GIẢI CỨU được như Ngài"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Cấm nói xấu Đức Chúa Trời của 3 người",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Đa-ni-ên 4:27, Đa-ni-ên KHUYÊN Nê-bu-cát-nết-sa làm gì để có thể KÉO DÀI sự bình an?",
+    "explanation": "Đa-ni-ên 4:27 — 'Vậy, hỡi vua, xin hãy nghe lời tôi khuyên vua: hãy lấy sự công bình mà chuộc tội lỗi, hãy thương xót những kẻ nghèo khó để chuộc những điều gian ác mình; như vậy có lẽ phước hạnh của vua được lâu dài.' Đây là LỜI CỨU cuối cùng cho vua trước khi rơi vào điên loạn 7 năm. ĐẶC BIỆT: hành xử đúng với KẺ NGHÈO KHỔ — Cựu Ước thường lấy đó làm bằng chứng tin Chúa.",
+    "language": "vi",
+    "options": [
+      "Phải dâng tế lễ thường xuyên (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "BỎ SỰ TỘI LỖI bằng SỰ CÔNG BÌNH + bỏ tội lỗi đối với KẺ KHỐN KHỔ bằng cách thương xót — biết đâu vận hạn vua sẽ kéo dài",
+      "Phải chinh phục thêm dân khác (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Phải xây đền lớn hơn (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Bỏ tội bằng công bình + thương xót",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Đa-ni-ên 5:25-28, Đa-ni-ên giải MENE MENE TEKEL UPHARSIN — ý nghĩa từng từ?",
+    "explanation": "Đa-ni-ên 5:25-28 — 'Những chữ đã viết ra như sau nầy: MÊ-NÊ, MÊ-NÊ, TÊ-KEN, U-PHÁC-SIN. Nầy là nghĩa những chữ đó: MÊ-NÊ là: Đức Chúa Trời đã đếm nước vua và khiến nó đến cuối cùng. TÊ-KEN là: Vua đã bị cân trên cân, và thấy là kém thiếu. PHẾT-RÊT là: Nước vua bị chia ra, được ban cho người Mê-đi và người Ba-tư.' 'PHẾT-RÊT' (Peres) đối với 'Phe-rơ-sơ' (Persia) — chơi chữ đậm.",
+    "language": "vi",
+    "options": [
+      "MENE = Tiền — TEKEL = Đo — UPHARSIN = Bình an (theo cách trình bày của text)",
+      "MENE = Vua — TEKEL = Hoàng Hậu — UPHARSIN = Bộ Trưởng (như được mô tả trong sách)",
+      "MENE: Đức Chúa Trời ĐÃ ĐẾM nước vua + chấm dứt — TEKEL: vua được CÂN trên cân + tìm thấy KÉM — PERES (UPHARSIN): nước CHIA cho dân Mê-đi + Ba-tư",
+      "MENE = Phước — TEKEL = Hứa — UPHARSIN = Tha (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Đếm + cân + chia",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Đa-ni-ên 6:22, Đa-ni-ên giải thích cho vua: ai đã giải cứu ông trong hang sư tử? Vì cớ gì?",
+    "explanation": "Đa-ni-ên 6:22 — 'Đức Chúa Trời tôi đã sai thiên sứ Ngài, và bịt miệng các sư tử, nên chúng nó không làm hại chi đến tôi, bởi tôi đã được nhận là vô tội trước mặt Ngài. Hỡi vua, đối với vua tôi cũng chẳng từng làm hại gì.' Lưu ý: Đa-ni-ên xác nhận VÔ TỘI trước Đức Chúa Trời + trước vua. KHÔNG nói tự công bình tuyệt đối — nói trong vụ này không có tội. Hê-bơ-rơ 11:33 'lấp miệng sư tử bởi đức tin'.",
+    "language": "vi",
+    "options": [
+      "Đức Chúa Trời tôi đã sai THIÊN SỨ NGÀI BỊT MIỆNG SƯ TỬ — nên không hề làm hại tôi vì tôi đã được TÌM THẤY VÔ TỘI trước mặt Ngài + cũng KHÔNG làm điều gì hại trước vua",
+      "Sư tử đã ăn no (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Sư tử thân thiện (theo cách trình bày của text) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Có thầy phù thủy (như được mô tả trong sách) (như văn bản ghi rõ) (theo bối cảnh đoạn này)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Thiên sứ bịt miệng sư tử",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "verseStart": 25,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Đa-ni-ên 7:25, sừng nhỏ (sau là vua khốc liệt cuối cùng) sẽ làm gì với CÁC THÁNH ĐỒ + thời gian?",
+    "explanation": "Đa-ni-ên 7:25 — 'Vua đó sẽ nói những lời phạm đến Đấng Rất Cao, làm hao mòn các thánh của Đấng Rất Cao, và định ý đổi những thời kỳ và luật pháp; các thánh sẽ bị phó trong tay người cho đến một kỳ, những kỳ, và nửa kỳ.' '1 KỲ + CÁC KỲ + NỬA KỲ' = 3.5 năm (1 + 2 + 0.5). Cùng số trong Khải 12:14, 13:5 (42 tháng = 1260 ngày). Sừng nhỏ = Anti-Christ — bắt bớ tín hữu trong cuối cùng.",
+    "language": "vi",
+    "options": [
+      "Sẽ chiến đấu công bằng — không hại các thánh đồ (như được mô tả trong sách)",
+      "Sẽ mời các thánh đồ vào chính quyền (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Sẽ cho các thánh đồ tự do hoàn toàn (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "NÓI LỜI nghịch Đấng Rất Cao — LÀM HAO MÒN CÁC THÁNH ĐỒ — định ý SỬA THỜI KỲ + LUẬT — các thánh đồ giao trong tay nó MỘT KỲ + CÁC KỲ + NỬA KỲ (3.5 năm)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "3.5 năm bắt các thánh đồ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Đa-ni-ên 9:27, ai sẽ LẬP một GIAO ƯỚC vững với 'NHIỀU NGƯỜI' trong 1 TUẦN? Đến nửa tuần làm gì?",
+    "explanation": "Đa-ni-ên 9:27 — 'Người sẽ lập giao ước vững bền với nhiều người trong một tuần lễ, và đến giữa tuần ấy, người sẽ khiến của lễ và của lễ chay dứt đi. Kẻ hủy phá sẽ đến bởi cánh gớm ghiếc, và sẽ có sự giận dữ đổ trên nơi bị hoang vu, cho đến kỳ sau rốt, là kỳ đã định.' 'TUẦN' = 7 năm (theo nguyên tắc 70 tuần). 'NỬA TUẦN' = 3.5 năm. 'GỚM GHIẾC HOANG TÀN' (cf. Mat 24:15 lời Chúa Jêsus). Tranh luận: Mê-si-a hay Anti-Christ?",
+    "language": "vi",
+    "options": [
+      "Đa-vít — chấm dứt đền thờ (như được mô tả trong sách) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Vua đó (sừng nhỏ chương 11 / Anti-Christ) — đến NỬA TUẦN sẽ làm CHỈ ĐỨT TẾ LỄ + CỦA LỄ; TRÊN CÁNH các tội ác sẽ DỰNG nên SỰ GỚM GHIẾC HOANG TÀN — đến KỲ HẾT",
+      "Áp-ra-ham — bỏ luật pháp (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Sa-lô-môn — đốt đền (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Vua lập giao ước - nửa tuần dứt tế lễ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 11,
+    "verseStart": 36,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Đa-ni-ên 11:36, vua đó (đến cuối cùng) sẽ làm gì THEO Ý MUỐN MÌNH? Đặc biệt với các thần?",
+    "explanation": "Đa-ni-ên 11:36-37 — 'Vua sẽ làm theo ý muốn mình; kiêu ngạo và tự cao hơn hết các thần; tự nói những lời lạ lùng nghịch cùng Đức Chúa Trời của các thần. Người sẽ được thịnh vượng cho đến khi cơn thạnh nộ Chúa được trọn... Người sẽ không đoái xem các thần của tổ phụ mình.' Vua kiêu ngạo = An-ti-ô IV Eppi-ph-an (~167 TCN) — trực tiếp; nhưng thường giải nghĩa Ngày Cuối là Anti-Christ. 2 Tê-sa-lô-ni-ca 2:4 trích.",
+    "language": "vi",
+    "options": [
+      "Làm theo lời tiên tri — vâng phục (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Làm theo luật cổ — tôn kính (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Làm theo Ý mình — TỰ TÔN MÌNH LÊN — CAO HƠN HẾT THẢY các thần — NÓI LẠ LÙNG nghịch Đức Chúa Trời các thần — sẽ thịnh đến KHI cơn THẠNH NỘ HẾT",
+      "Làm theo lời Đa-ni-ên — kính sợ (theo cách trình bày của text) (xét theo nội dung gốc)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Vua tự tôn cao hơn các thần",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Đa-ni-ên 12:7, người ÁO VẢI GAI thề bao lâu nữa thì các sự kỳ diệu sẽ chấm dứt? Đặc biệt là gì?",
+    "explanation": "Đa-ni-ên 12:7 — 'Ta nghe người mặc vải gai đứng trên nước sông, người cất tay hữu và tay tả lên trời, chỉ Đấng hằng sống mà thề rằng sẽ trải qua một kỳ, những kỳ, và nửa kỳ; và khi quyền của dân thánh đã bị tan tác hết, thì các sự nầy đều xong.' 3.5 KỲ = 1260 ngày. Cùng thời lượng Khải Huyền dùng cho thời điểm Anti-Christ. Sự kết thúc đến SAU khi DÂN THÁNH bị tan vỡ — KHÔNG phải tránh được, mà ĐI QUA.",
+    "language": "vi",
+    "options": [
+      "Một KỲ + các KỲ + NỬA KỲ (3.5 năm) — khi quyền lực của DÂN THÁNH bị TAN VỠ HOÀN TOÀN — các sự đó sẽ kết thúc",
+      "10 năm — khi vua thắng (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "100 năm — khi sự cuối (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "1000 năm — khi tận thế (như được mô tả trong sách) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "1 + 2 + 0.5 kỳ — sau dân thánh tan",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Đa-ni-ên 7:27, sau khi sừng nhỏ bị xét đoán, vương quốc + quyền cai trị + sự cao cả của VƯƠNG QUỐC dưới MỌI TRỜI sẽ được BAN cho ai?",
+    "explanation": "Đa-ni-ên 7:27 — 'Bấy giờ nước, quyền thế, và sự tôn đại của muôn nước ở dưới cả trời, sẽ được ban cho dân các thánh của Đấng Rất Cao. Nước Ngài là nước đời đời, và hết thảy các quyền thế đều hầu việc và vâng lời Ngài.' Đỉnh điểm chương 7: SAU sừng nhỏ + 4 thú tự diệt → DÂN THÁNH thừa kế vương quốc. Mat 5:5 trích cảm hứng. Cùng tư tưởng Khải 20:4 (các thánh trị vì).",
+    "language": "vi",
+    "options": [
+      "Cho dân Y-sơ-ra-ên thuần (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Cho DÂN của các THÁNH của ĐẤNG RẤT CAO — vương quốc Ngài là vương quốc ĐỜI ĐỜI; mọi quyền cai trị sẽ HẦU VIỆC + VÂNG LỜI Ngài",
+      "Cho thiên sứ bảo vệ (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Cho dòng vua Đa-vít (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Vương quốc cho dân các thánh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Đa-ni-ên 9:16-19, Đa-ni-ên cầu nguyện DỰA vào điều gì để xin phục hồi?",
+    "explanation": "Đa-ni-ên 9:18-19 — 'Hỡi Đức Chúa Trời tôi, chúng tôi không nhờ những sự công bình mình mà nài xin trước mặt Ngài đâu, song nhờ những sự thương xót cả thể của Ngài. Hỡi Chúa! hãy dủ nghe; hỡi Chúa, hãy tha thứ; hỡi Chúa, hãy để ý và làm đi. Đừng trì hoãn, vì cớ chính mình Chúa, hỡi Đức Chúa Trời tôi! vì thành Ngài và dân Ngài đã được xưng bằng danh Ngài.' Cầu nguyện MẪU MỰC: KHÔNG dựa công lao — dựa LÒNG THƯƠNG XÓT + DANH CHÚA. Khác phương Đông cổ.",
+    "language": "vi",
+    "options": [
+      "Dựa vào công lao Đa-ni-ên (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Dựa vào lời hứa Áp-ra-ham (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Dựa vào tổ phụ (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "DỰA vào SỰ CÔNG BÌNH CỦA CHÚA — KHÔNG cậy SỰ CÔNG BÌNH MÌNH — vì cớ DANH CHÚA + cho thành Giê-ru-sa-lem là CỦA CHÚA"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Đa-ni-ên",
+      "Tiên tri lớn",
+      "Cậy lòng thương xót, không cậy mình",
+      "Nâng cao"
+    ]
   }
 ]
