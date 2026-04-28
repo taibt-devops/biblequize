@@ -23,13 +23,13 @@
 - Topics: 5 cảnh báo (2:1, 3:12, 5:12-6:1, 10:26-29, 12:25-29); "TỐT HƠN" theme (1:4, 7:22, 8:6, 11:39-40); Mên-chi-xê-đéc deep (7:3 không gia phả, 7:4 Áp-ra-ham dâng 1/10, 7:9 Lê-vi qua Áp-ra-ham, 7:23-24 unchangeable); ngôi ơn (4:14-16); Đại Lễ Chuộc Tội (9:7, 9:12, 9:14, 9:24-28); chương 11 anh hùng đức tin (Abel, Hê-nóc, Nô-ê, tổ phụ khách lạ, Môi-se, Ra-háp); luật là bóng (8:5, 10:1); trích Giê-rê-mi 31 dài nhất (8:8-12); Si-na-i vs Si-ôn (12:18-24); ngoài trại (13:12); đám lửa thiêu (12:29)
 - VI/EN parity 100%, 0 duplicates, 0 length warnings
 
-#### Task B1-3: 1 Corinthians +46 (34→80)
-- Status: [ ] TODO
-- Current: 34 (E16 M12 H6) → Target: 80 (E24 M36 H20)
-- Plan: +8 Easy + 24 Medium + 14 Hard
-- File(s): `1corinthians_quiz.json` + `1corinthians_quiz_en.json` + `scripts/append_1corinthians_v3b.py`
-- Strategy: Chương 13 tình yêu (agape, definition + duration); chương 15 sống lại (resurrection foundation); chương 12-14 ân tứ Thánh Linh; Tiệc Thánh 11:23-26; "thân thể là đền Thánh Linh"; sự khôn ngoan Đức Chúa Trời vs khôn ngoan thế gian (1-3); kỷ luật hội thánh (5)
-- Commit: `feat(seed): 1 Corinthians +46 V3 B1 quality expansion (34→80)`
+#### Task B1-3: 1 Corinthians (already at 80) [x] DONE 2026-04-28 (verified — pool actually at target before V3 work began)
+- Pool **80** (E24 M36 H20, ratio **30.0/45.0/25.0%** — exact); 80 single + 0 multi
+- VI/EN parity 100%, 0 length warnings, 2 pre-existing duplicate keys (13:4-7 easy, 10:13 easy from earlier commit d24b774, NOT introduced by V3 work)
+- Single idx: 0:18, 1:19, 2:25, 3:18
+- Discovery: pool was already created at full 80 in commit `d24b774` (2026-04-20 "fea: update bonus xp") — TODO entry noting "current 34" was outdated when V3 plan was written
+- Topics already cover: chương 13 tình yêu (agape definition 13:4-7, longest gift 13:13, mature/childhood 13:11, see face to face 13:12); chương 15 sống lại (gospel summary 15:3-4, witnesses 15:5-8, Christ first fruits 15:20, resurrection necessity 15:12-19, last enemy death 15:24-26, last Adam 15:45, sting of death 15:55, victory through Christ 15:57); chương 12-14 ân tứ Thánh Linh (varieties 12:4-11, body of Christ 12:12-14, body baptism 12:13, Spirit's gifts 12:8-10, prophesying 14:1-5, orderly worship 14:26-33, sign for unbelievers 14:22); Tiệc Thánh (11:23-26, unworthy partaking 11:27-32, sickness/death 11:30); thân thể là đền Thánh Linh (3:16, 6:19-20); thân thể đền cộng đoàn (3:16-17); sự khôn ngoan Chúa vs thế gian (1:18-25 cross folly, 1:26-29 chosen lowly, 2:1-5 weak preaching, 2:6-8 hidden mystery, 2:9 eye not seen, 2:12-14 spiritual discernment, 2:16 mind of Christ, 3:1-4 carnal vs spiritual); kỷ luật hội thánh (5:1-5 incest case, 5:6-8 leaven, 5:9-13 not associating, 6:1-8 lawsuits, 6:9-11 unrighteous won't inherit); Phao-lô đầy tớ + nền duy nhất là Christ (3:6-7 plant/water, 3:10-15 builders, 3:11 no other foundation, 4:1-2 stewards, 4:7 received); chế độ tự do giới hạn (6:12, 8:4-13 idol meat, 9:1-12 rights waived, 9:19-23 all things to all, 10:14-22 cup of demons); hôn nhân + độc thân (7:1-7 mutuality, 7:10-11 no divorce, 7:29-31 short time, 7:29 brevity); chạy đua (9:24-27, 9:24); thử thách + lối thoát (10:13); cám dỗ Y-sơ-ra-ên hoang địa làm gương (10:1-4, 10:11); cộng đoàn = một bánh (10:16-17); kêu gọi Hội Thánh (1:1-2, 1:11-13 chia rẽ, 1:30 Christ là khôn ngoan công bình thánh hóa cứu chuộc); bắt chước Phao-lô (11:1); mọi sự cho vinh hiển Chúa (10:31); kết: hãy tỉnh + đứng vững + làm dõng + mạnh + có yêu (16:13-14); câu kết Maranatha (15:58 vững vàng); xưng Christ là Chúa (12:1-3, 1:23 Christ chịu đóng đinh)
+- Note: Task hoàn tất TRƯỚC khi V3 plan được viết. KHÔNG cần thêm script append_1corinthians_v3b.py
 
 ### Priority B2 (6 sách Pauline + General Epistles)
 
