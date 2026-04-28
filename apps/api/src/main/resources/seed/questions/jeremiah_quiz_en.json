@@ -527,5 +527,785 @@
       "Prophets",
       "Basic"
     ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Jeremiah 1:1, who is Jeremiah's father, and what kind of family was he from?",
+    "explanation": "Jeremiah 1:1 — 'The words of Jeremiah, the son of Hilkiah, one of the priests who were in Anathoth in the land of Benjamin.' Jeremiah was from a priestly line — but called by God to be a PROPHET. ANATHOTH is ~5km from Jerusalem, a priestly town (Joshua 21:18). This Hilkiah differs from the high priest Hilkiah under Josiah (2 Kings 22).",
+    "language": "en",
+    "options": [
+      "Son of Amos — king of Israel (according to the text's framing)",
+      "Son of HILKIAH — one of the PRIESTS who were in Anathoth in the territory of Benjamin",
+      "Son of David — king of Judah (as described in the passage)",
+      "Son of Levi — officer (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Jeremiah son of Hilkiah priest",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Jeremiah 16:1-2, what did God forbid Jeremiah as a SIGN to the people?",
+    "explanation": "Jeremiah 16:1-2 — 'The word of the LORD came to me: \"You shall not take a wife, nor shall you have sons or daughters in this place.\"' The prophet LIVED OUT his prophecy = Jeremiah's celibacy symbolized the coming DESTRUCTION. Reason: 16:3-4 — children born would die of disease, unmourned + unburied. Similar living prophecies: Hosea (married a prostitute), Ezekiel (wife dies).",
+    "language": "en",
+    "options": [
+      "Eating meat (according to the text's framing)",
+      "Praying (per the textual narrative)",
+      "TAKING a WIFE + having SONS or DAUGHTERS in that place",
+      "Building house (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Forbidden marriage as sign",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 36,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Jeremiah 36:1-4, what did God command Jeremiah to do with the WORDS spoken?",
+    "explanation": "Jeremiah 36:1-4 — 'In the fourth year of Jehoiakim... this word came to Jeremiah from the LORD: \"Take a scroll and write on it all the words that I have spoken to you against Israel and Judah... Then Jeremiah called Baruch the son of Neriah, and Baruch wrote on a scroll at the dictation of Jeremiah all the words of the LORD that he had spoken to him.\"' BARUCH = Jeremiah's scribe. The chapter 36 story: Jehoiakim burned the scroll — Jeremiah rewrote + added words.",
+    "language": "en",
+    "options": [
+      "TAKE a SCROLL + WRITE all WORDS the LORD spoke to Jeremiah from when first spoken to him until now — Baruch wrote at Jeremiah's dictation",
+      "Burn old book (per the textual narrative) (in the story's sequence)",
+      "Bring word to temple (as described in the passage)",
+      "Hide word in wall (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Wrote scroll through Baruch",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 39,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Jeremiah 39:1-2, in what YEAR of Zedekiah + MONTH + DAY did Jerusalem FALL?",
+    "explanation": "Jeremiah 39:1-2 — 'In the ninth year of Zedekiah king of Judah, in the tenth month, Nebuchadnezzar king of Babylon and all his army came against Jerusalem and besieged it. In the eleventh year of Zedekiah, in the fourth month, on the ninth day of the month, a breach was made in the city.' Siege of 18 months. City fell ~July 586 BC. Jerusalem's fall = OT's most painful event; Lamentations mourns it.",
+    "language": "en",
+    "options": [
+      "Year 5, month 1, day 1 (per the textual narrative)",
+      "Year 7, month 5, day 7 (according to the text's framing)",
+      "Year 9, month 10, day 10 — siege began; year 11, month 4, day 9 — city BREACHED",
+      "Year 15, month 8, day 15 (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Year 11 month 4 day 9",
+      "Basic"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Jeremiah 1:11-12, what was Jeremiah's first vision? Meaning?",
+    "explanation": "Jeremiah 1:11-12 — 'And the word of the LORD came to me, saying, \"Jeremiah, what do you see?\" And I said, \"I see an almond branch.\" Then the LORD said to me, \"You have seen well, for I am watching (shoqed) over my word to perform it.\"' HEBREW WORDPLAY: ALMOND (shaqed) ↔ WATCHING (shoqed). The almond is the FIRST tree to BLOOM in spring. The point: God is ACTIVELY WATCHING to FULFILL his word.",
+    "language": "en",
+    "options": [
+      "Vine — abundant fruit (as described in the passage)",
+      "An ALMOND BRANCH — for 'I am WATCHING over my WORD' (wordplay shaqed/shoqed)",
+      "Olive — peace (per the textual narrative)",
+      "Fig — blessing (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Almond branch - God watches",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 1,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Jeremiah 1:13-14, what was Jeremiah's SECOND vision? Threat from where?",
+    "explanation": "Jeremiah 1:13-14 — 'The word of the LORD came to me a second time, saying, \"What do you see?\" And I said, \"I see a boiling pot, facing away from the north.\" Then the LORD said to me, \"Out of the north disaster shall be let loose upon all the inhabitants of the land.\"' POT from the NORTH = Babylon (Nebuchadnezzar) coming from that direction even though Babylon is really east of Israel — armies came via the northern Fertile Crescent route (Euphrates).",
+    "language": "en",
+    "options": [
+      "Field of burning grain — south (as described in the passage)",
+      "Rushing river — west (per the textual narrative)",
+      "BOILING POT tilting from the NORTH — DISASTER will be poured on all inhabitants from the north",
+      "Crumbling mountain — east (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Boiling pot from north",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 7,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Jeremiah 7:4-7, in what did Jerusalem MISTAKENLY trust? What 3-times-repeated phrase is FALSE?",
+    "explanation": "Jeremiah 7:4 — 'Do not trust in these deceptive words: \"This is the temple of the LORD, the temple of the LORD, the temple of the LORD.\"' The people thought: the TEMPLE protects the city from destruction — because it's God's. Wrong: God had already destroyed SHILOH (7:12-14) when the tabernacle was there. Repentance is needed — not temple superstition. This is the 'TEMPLE SERMON' — story in chapter 26 (nearly killed Jeremiah).",
+    "language": "en",
+    "options": [
+      "Trust law — 'law! law! law!' (according to the text's framing)",
+      "Trust king — 'king! king! king!' (as described in the passage)",
+      "Trust Abraham — 'father!' (per the textual narrative)",
+      "Trust temple — 'TEMPLE of the LORD, TEMPLE of the LORD, TEMPLE of the LORD!' is DECEPTIVE"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Temple of LORD - deceptive trust",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 18,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Jeremiah 18:7-10, what principle does God state about judgment or blessing for a nation?",
+    "explanation": "Jeremiah 18:7-10 — 'If at any time I declare concerning a nation or a kingdom, that I will pluck up and break down and destroy it, and if that nation, concerning which I have spoken, turns from its evil, I will relent of the disaster that I intended to do to it. And if at any time I declare concerning a nation or a kingdom that I will build and plant it, and if it does evil in my sight, not listening to my voice, then I will relent of the good that I had intended to do to it.' Prophecy is CONDITIONAL — not rigid fate. Like Jonah at Nineveh.",
+    "language": "en",
+    "options": [
+      "If a nation declared TO BE UPROOTED + DESTROYED — but TURNS from evil — God WILL RELENT; if declared to BE BUILT — but does evil — God will also RELENT from GOOD",
+      "God's word never changes after spoken (as described in the passage)",
+      "God always firm with his word (per the textual narrative) (in the story's sequence)",
+      "God always gives second chance (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Conditional prophecy",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 19,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Jeremiah 19:10-11, at the Valley of Hinnom, what did Jeremiah do with the CLAY JAR before the elders? What SIGN?",
+    "explanation": "Jeremiah 19:10-11 — 'Then you shall break the flask in the sight of the men who go with you, and shall say to them, \"Thus says the LORD of hosts: So will I break this people and this city, as one breaks a potter's vessel, so that it can never be mended.\"' Contrast with ch 18 (potter can RESHAPE wet clay) → ch 19 (FIRED jar, broken IRREPARABLE). Topheth = Valley of Hinnom = Jerusalem's garbage dump.",
+    "language": "en",
+    "options": [
+      "Lifted jar high — victory sign (as described in the passage)",
+      "BROKE the JAR — SIGN: 'So will I break this people + this city — UNREPAIRABLE'",
+      "Poured water — blessing sign (according to the text's framing)",
+      "Planted in jar — life sign (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Broke jar - unrepairable",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 20,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Jeremiah 20:7-9, Jeremiah laments — God's word causes what? But if he tries to keep silent?",
+    "explanation": "Jeremiah 20:7-9 — 'O LORD, you have deceived me, and I was deceived; you are stronger than I, and you have prevailed. I have become a laughingstock all the day; everyone mocks me... If I say, \"I will not mention him, or speak any more in his name,\" there is in my heart as it were a burning fire shut up in my bones, and I am weary with holding it in, and I cannot.' One of Jeremiah's famous 'CONFESSIONS' — INNER suffering.",
+    "language": "en",
+    "options": [
+      "Angry at God — quit prophet role forever (as described in the passage)",
+      "Sad — stops preaching but still prays (according to the text's framing)",
+      "Mocked all day + reproached; but if I say 'I will not mention him' — the word becomes LIKE FIRE in my BONES — I CANNOT hold it in",
+      "Receives grace — no harm (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Fire in bones",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 23,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Jeremiah 23:1-4, whom does God rebuke? What does he promise?",
+    "explanation": "Jeremiah 23:1-4 — '\"Woe to the shepherds who destroy and scatter the sheep of my pasture!\"... \"Then I will gather the remnant of my flock out of all the countries where I have driven them, and I will bring them back to their fold, and they shall be fruitful and multiply. I will set shepherds over them who will care for them.\"' EVIL SHEPHERDS = Israel's leaders (kings, priests, false prophets). 23:5 then introduces the 'RIGHTEOUS BRANCH' (Messiah) as the true Shepherd. Same idea Ezekiel 34.",
+    "language": "en",
+    "options": [
+      "False prophets — only forgive (as described in the passage)",
+      "Northern kings — only punish (according to the text's framing)",
+      "General people — only call (per the textual narrative)",
+      "WOE to SHEPHERDS who DESTROY + SCATTER my flock — God will GATHER them + raise up OTHER SHEPHERDS"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Woe to evil shepherds",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 25,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Jeremiah 25:11-12, how many years will nations SERVE Babylon's king? Then what?",
+    "explanation": "Jeremiah 25:11-12 — 'This whole land shall become a ruin and a waste, and these nations shall serve the king of Babylon seventy years. Then after seventy years are completed, I will punish the king of Babylon and that nation, the land of the Chaldeans, for their iniquity, declares the LORD, making the land an everlasting waste.' '70 YEARS' exile = 605 (start of deportations) → 538 (Cyrus permits return). Daniel 9 grounds his prayer on this verse. Or 586 (temple destroyed) → 516 (temple rebuilt) = 70 years.",
+    "language": "en",
+    "options": [
+      "70 YEARS serving Babylon — after 70 years done, GOD JUDGES BABYLON'S KING + Chaldea + the land becomes EVERLASTING DESOLATION",
+      "30 — king pardoned (according to the text's framing)",
+      "100 — king glorified (as described in the passage)",
+      "10 — king honored (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "70 years serve Babylon",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 27,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Jeremiah 27:1-7, what did God command Jeremiah to MAKE to message neighboring kings?",
+    "explanation": "Jeremiah 27:2-6 — 'Thus the LORD said to me: Make yourself straps and yoke-bars, and put them on your neck. Send word to the king of Edom, the king of Moab, the king of the sons of Ammon, the king of Tyre, and the king of Sidon... Now I have given all these lands into the hand of Nebuchadnezzar, the king of Babylon, my servant.' YOKE = Babylonian rule. Message: DO NOT resist — submit and live. Verse 7 calls Nebuchadnezzar 'MY SERVANT' — God uses even pagan kings.",
+    "language": "en",
+    "options": [
+      "Break a staff (as described in the passage) (as the text indicates)",
+      "Plant a tree (according to the text's framing) (per the original content)",
+      "Make BANDS and YOKES + wear them on neck — send to kings of Edom, Moab, Ammon, Tyre, Sidon — message: serve Nebuchadnezzar",
+      "Draw a map (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Wear yoke - serve Babylon",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 28,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Jeremiah 28:15-17, the prophet Hananiah (Jeremiah's rival) broke the YOKE on Jeremiah's neck — Jeremiah's reply? Hananiah's fate?",
+    "explanation": "Jeremiah 28:15-17 — 'Listen, Hananiah, the LORD has not sent you, and you have made this people trust in a lie. Therefore thus says the LORD: Behold, I will remove you from the face of the earth. This year you shall die, because you have uttered rebellion against the LORD. In that same year, in the seventh month, the prophet Hananiah died.' True/false prophet test Deut 18:22 — fulfilled word = true. Hananiah failed = false.",
+    "language": "en",
+    "options": [
+      "Praises Hananiah — blesses (as described in the passage)",
+      "Hananiah made the people trust a lie — the LORD did NOT send you; you will DIE this YEAR — Hananiah died month 7 same year",
+      "Hananiah repents (according to the text's framing)",
+      "They reconcile (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Hananiah died same year",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 29,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Jeremiah 29:4-7, what did Jeremiah's letter to the exiles teach?",
+    "explanation": "Jeremiah 29:4-7 — 'Build houses and live in them; plant gardens and eat their produce. Take wives and have sons and daughters... that you may multiply there, and not decrease. But seek the welfare of the city where I have sent you into exile, and pray to the LORD on its behalf, for in its welfare you will find your welfare.' Shocking: pray FOR Babylon (the enemy). Exile = 70 years = LONG; must live normally + cooperate. NOT assimilated but contribute to city's peace.",
+    "language": "en",
+    "options": [
+      "Rebel immediately (according to the text's framing) (per the original content)",
+      "Hunger strike (per the textual narrative) (in the story's sequence)",
+      "Build secret base (as described in the passage) (as the text indicates)",
+      "BUILD HOUSES + plant GARDENS + take WIVES + have CHILDREN + multiply; SEEK the WELFARE (peace) of the CITY + PRAY for it — for in its welfare you have welfare"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Seek peace for city",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 29,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Jeremiah 29:10-14, after how many years will God visit the exiles? Found how?",
+    "explanation": "Jeremiah 29:10-14 — 'For thus says the LORD: When seventy years are completed for Babylon, I will visit you, and I will fulfill to you my promise and bring you back to this place... You will seek me and find me, when you seek me with all your heart.' The famous v11 'I KNOW the PLANS I have for you, plans for WELFARE'. Overall: 70 years + seek wholeheartedly + find.",
+    "language": "en",
+    "options": [
+      "After 70 YEARS at Babylon — visit + bring back; sought with WHOLE HEART will FIND him",
+      "50 — only some return (per the textual narrative)",
+      "100 — total destruction (according to the text's framing)",
+      "30 — only patriarchs return (as described in the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "70 years seek with whole heart",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 31,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Jeremiah 31:15, what Ramah image describes the exiles?",
+    "explanation": "Jeremiah 31:15 — 'Thus says the LORD: A voice is heard in Ramah, lamentation and bitter weeping. Rachel is weeping for her children; she refuses to be comforted for her children, because they are no more.' RACHEL = mother of Joseph + Benjamin. RAMAH = staging point before deportation to Babylon (40:1). Mt 2:18 cites this when applying to Herod's slaughter at Bethlehem.",
+    "language": "en",
+    "options": [
+      "Rachel singing (per the textual narrative)",
+      "Rachel WEEPING for her children + REFUSING comfort because they are NO MORE",
+      "Rachel laughing (as described in the passage)",
+      "Rachel praying (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Rachel weeping",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 32,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Jeremiah 32:6-15, during imprisonment (Babylon besieged Jerusalem), what did God command Jeremiah do as SIGN of HOPE?",
+    "explanation": "Jeremiah 32:6-15 — 'Hanamel my cousin came to me in the court of the guard, in accordance with the word of the LORD, and said to me, \"Buy my field that is at Anathoth\"... For thus says the LORD of hosts, the God of Israel: Houses and fields and vineyards shall again be bought in this land.' THE PURCHASE = an INVESTMENT of FAITH — Jeremiah trusted God to restore the land.",
+    "language": "en",
+    "options": [
+      "Sell all property (as described in the passage)",
+      "Burn scroll (according to the text's framing)",
+      "BUY a FIELD from his cousin at Anathoth — for 'HOUSES + FIELDS + VINEYARDS shall again be bought in this land'",
+      "Flee city (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Bought field as hope sign",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 45,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Jeremiah 45:1-5, God speaks directly to BARUCH (Jeremiah's scribe) when he LAMENTED — what does God promise Baruch?",
+    "explanation": "Jeremiah 45:3-5 — 'You said, \"Woe is me! For the LORD has added sorrow to my pain. I am weary with my groaning, and I find no rest.\" Thus shall you say to him, Thus says the LORD: Behold, what I have built I am breaking down, and what I have planted I am plucking up — that is, the whole land. And do you seek great things for yourself? Seek them not, for behold, I am bringing disaster upon all flesh, declares the LORD. But I will give you your life as a prize of war in all places to which you may go.' UNIQUE word to one individual — Baruch.",
+    "language": "en",
+    "options": [
+      "Make Baruch rich (per the textual narrative)",
+      "Make Baruch a great prophet (as described in the passage)",
+      "NO great glory — but GIVE Baruch his LIFE as a PRIZE wherever he goes",
+      "Give Baruch a grand house (according to the text's framing)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Baruch - life as prize",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 35,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Jeremiah 35:5-19, Jeremiah brought the RECHABITES into the temple + set out WINE + said 'drink' — their reply? Lesson?",
+    "explanation": "Jeremiah 35:6-7, 14, 18-19 — '\"We will drink no wine, for Jonadab the son of Rechab, our father, commanded us, You shall not drink wine, neither you nor your sons forever\"... Therefore Jonadab the son of Rechab shall never lack a man to stand before me.' The Rechabites obeyed an ancestor across generations — Israel did NOT obey God. NOT saying anyone must abstain from wine — this is OBEDIENCE in principle.",
+    "language": "en",
+    "options": [
+      "They drank — rebuked (per the textual narrative) (in the story's sequence)",
+      "They drank — blessed (according to the text's framing) (as the text indicates)",
+      "Drank halfway — pardoned (as described in the passage) (per the original content)",
+      "They REFUSED — for Jonadab their forefather COMMANDED us never to drink wine; God held them as EXAMPLE: obeyed an ancestor WHILE Israel did NOT obey GOD"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Rechabites refused wine",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 4,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Jeremiah 4:23-26, how does Jeremiah describe his vision of Israel?",
+    "explanation": "Jeremiah 4:23-26 — 'I looked on the earth, and behold, it was without form and void; and to the heavens, and they had no light. I looked on the mountains, and behold, they were quaking, and all the hills moved to and fro. I looked, and behold, there was no man, and all the birds of the air had fled. I looked, and behold, the fruitful land was a desert, and all its cities were laid in ruins.' 'TOHU WA-BOHU' = the exact term from Gen 1:2 (formless + void). Jeremiah describes UN-CREATION — the land reverts to PRE-CREATION state. A horrifying image.",
+    "language": "en",
+    "options": [
+      "Reverted to FORMLESS, VOID (tohu wa-bohu) — NO light — NO men + no birds + fertile land turned to desert",
+      "Beautiful as before (as described in the passage) (as the text indicates)",
+      "More prosperous (according to the text's framing) (per the original content)",
+      "Normal (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Reversed creation - void",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Jeremiah 5:1, what does God challenge to find in Jerusalem for forgiveness?",
+    "explanation": "Jeremiah 5:1 — 'Run to and fro through the streets of Jerusalem, look and take note! Search her squares to see if you can find a man, one who does justice and seeks truth, that I may pardon her.' Inspired by ABRAHAM PLEADING for Sodom (Gen 18:22-32 — Abraham came down to 10). Jeremiah also — but more sobering: God offers PARDON for just 1 PERSON! Not found.",
+    "language": "en",
+    "options": [
+      "Find 10 righteous (according to the text's framing)",
+      "Find EVEN ONE PERSON who does JUSTICE + seeks TRUTH — God WILL FORGIVE the city",
+      "Find 1 faithful priest (as described in the passage)",
+      "Find 1 repenter (per the textual narrative)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "1 just person to pardon",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Jeremiah 12:1, what does Jeremiah QUESTION before God?",
+    "explanation": "Jeremiah 12:1 — 'Righteous are you, O LORD, when I complain to you; yet I would plead my case before you. Why does the way of the wicked prosper? Why do all who are treacherous thrive?' The classic question of THEODICY: why do the wicked LIVE WELL? Same question as Job + Ps 73 (Asaph). God's answer 12:5-6 — judgment will accelerate.",
+    "language": "en",
+    "options": [
+      "Why Israel is small (per the textual narrative) (in the story's sequence)",
+      "Why sacrifices fail (according to the text's framing) (per the original content)",
+      "Why Jeremiah is weak (as described in the passage) (as the text indicates)",
+      "Righteous are you, O LORD... yet why does the WAY of the WICKED PROSPER? Why do all who are TREACHEROUS thrive?"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Why do wicked prosper",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 14,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Jeremiah 14:14, what does God say about prophets speaking in his name?",
+    "explanation": "Jeremiah 14:14 — 'And the LORD said to me: \"The prophets are prophesying lies in my name. I did not send them, nor did I command them or speak to them. They are prophesying to you a lying vision, worthless divination, and the deceit of their own minds.\"' 4 SOURCES of false prophecy: lying VISIONS + DIVINATION + worthless + DECEIT of mind. NOT from God.",
+    "language": "en",
+    "options": [
+      "True prophets sent (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Good prophets to encourage (as described in the passage) (per the original content)",
+      "Prophesy LIES in my name — I did NOT send them + did NOT command them + did NOT speak to them; FALSE visions + worthless DIVINATION + DECEIT of their own MINDS",
+      "Jeremiah's disciples (according to the text's framing) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "False prophets: 4 sources",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 22,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Jeremiah 22:13-19, which king does Jeremiah rebuke? Why?",
+    "explanation": "Jeremiah 22:13-19 — 'Woe to him who builds his house by unrighteousness, and his upper rooms by injustice, who makes his neighbor serve him for nothing, and does not give him his wages... Did not your father eat and drink and do justice and righteousness? Then it was well with him. He judged the cause of the poor and needy; then it was well... Therefore thus says the LORD concerning Jehoiakim... With the burial of a donkey he shall be buried, dragged and dumped beyond the gates of Jerusalem.'",
+    "language": "en",
+    "options": [
+      "JEHOIAKIM — for BUILDING PALACE by INJUSTICE + NOT paying laborers + compared with father Josiah (defended the poor); Jehoiakim's burial 'like a DONKEY' — dragged + cast outside Jerusalem",
+      "Zedekiah — coward (according to the text's framing) (per the original content) (per the textual narrative)",
+      "Josiah — reformer (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "David — adultery (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Jehoiakim - buried like donkey",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 23,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Jeremiah 23:16-22, what do false prophets say to the people? What is God's true word?",
+    "explanation": "Jeremiah 23:16-22 — 'They say continually to those who despise the word of the LORD, \"It shall be well with you\"; and to everyone who stubbornly follows his own heart, they say, \"No disaster shall come upon you\"... But if they had stood in my council, then they would have proclaimed my words to my people, and they would have turned them from their evil way.' False prophets = false PEACE; true = repentance. Criterion: true prophets TURN people back, not flatter sin.",
+    "language": "en",
+    "options": [
+      "They say good news — God angry (as described in the passage) (per the original content) (per the textual narrative)",
+      "They say 'You shall have PEACE' + 'NO DISASTER will come' — they speak VISIONS of their OWN HEARTS + did NOT STAND in GOD'S COUNCIL; if they had, they would have TURNED the people from EVIL",
+      "They speak imports (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "They speak naturally (according to the text's framing) (as the text indicates) (in the context of the passage)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "False prophets say peace",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 25,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to Jeremiah 25:15-29, what did God command Jeremiah to TAKE + GIVE to whom? Why?",
+    "explanation": "Jeremiah 25:15-17 — 'Thus the LORD, the God of Israel, said to me: Take from my hand this cup of the wine of wrath, and make all the nations to whom I send you drink it. They shall drink and stagger and be crazed because of the sword that I am sending among them. So I took the cup from the LORD's hand, and made all the nations to whom the LORD sent me drink it.' THE CUP OF WRATH — Messiah drinks instead (Mt 26:39 'remove this cup'); Rev 14:10 cup of wrath.",
+    "language": "en",
+    "options": [
+      "A pen — write nation's history (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "A sword — strike nations (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "A scroll — read to nations (according to the text's framing) (per the original content) (per the textual narrative)",
+      "The CUP OF WINE OF WRATH — give to ALL nations (Judah, Egypt, Edom, Tyre, Sidon, Arabia, Babylon last) — they DRINK + STAGGER + GO MAD — saying: 'A SWORD I will send among you'"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Cup of wrath for nations",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 31,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to Jeremiah 31:22, what is the strange prophecy about 'a new thing on earth'?",
+    "explanation": "Jeremiah 31:22 — 'How long will you waver, O faithless daughter? For the LORD has created a new thing on the earth: a woman encircles a man.' THE MOST DIFFICULT VERSE in Jeremiah. Many interpretations: (a) reversal of normal gender roles; (b) Messianic application (Father + virgin birth); (c) Israel (woman) protects God (man) — strange. Still debated.",
+    "language": "en",
+    "options": [
+      "A WOMAN SHALL ENCOMPASS a MAN — extraordinary",
+      "Trees bear monthly fruit",
+      "Moon will shine like day",
+      "Mountains will flow with milk"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Woman encircles man",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 33,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to Jeremiah 33:14-16, what does God promise to do for David? What name will be called?",
+    "explanation": "Jeremiah 33:14-16 — 'Behold, the days are coming, declares the LORD, when I will fulfill the promise I made... In those days and at that time I will cause a righteous Branch to spring up for David, and he shall execute justice and righteousness in the land. In those days Judah will be saved, and Jerusalem will dwell securely. And this is the name by which it will be called: \"The LORD is our righteousness.\"' MESSIAH. Same as 23:5-6.",
+    "language": "en",
+    "options": [
+      "A small son — called Immanuel (per the textual narrative) (in the story's sequence)",
+      "A priest — called Melchizedek (according to the text's framing)",
+      "A RIGHTEOUS BRANCH for David — execute justice + righteousness in the land; the BRANCH'S name 'THE LORD IS OUR RIGHTEOUSNESS'",
+      "A mighty king — called David II (as described in the passage) (as the text indicates)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Righteous Branch - YHWH our righteousness",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 50,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to Jeremiah 50:4-5, after Babylon falls, what will Israel + Judah do together?",
+    "explanation": "Jeremiah 50:4-5 — 'In those days and in that time, declares the LORD, the people of Israel and the people of Judah shall come together, weeping as they come, and they shall seek the LORD their God. They shall ask the way to Zion, with faces turned toward it, saying, \"Come, let us join ourselves to the LORD in an everlasting covenant that will never be forgotten.\"' PROPHECY OF REUNION of Israel + Judah (split after Solomon). Eventually the nation UNITED in the NEW covenant.",
+    "language": "en",
+    "options": [
+      "Fight to liberate Babylon (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "GO together WEEPING + seek the LORD their God; ASK the way to ZION, with faces turned toward it: 'COME + JOIN ourselves to the LORD in an EVERLASTING covenant that will NOT be forgotten'",
+      "Leave the land of Israel (according to the text's framing) (per the original content) (per the textual narrative)",
+      "Slay enemies (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "Old Testament",
+      "Jeremiah",
+      "Major Prophet",
+      "Israel Judah seek God together",
+      "Advanced"
+    ]
   }
 ]

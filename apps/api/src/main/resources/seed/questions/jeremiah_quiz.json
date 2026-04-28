@@ -527,5 +527,785 @@
       "Tiên tri",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Giê-rê-mi 1:1, Giê-rê-mi là con của ai và thuộc loại người gì?",
+    "explanation": "Giê-rê-mi 1:1 — 'Lời của Giê-rê-mi, con trai Hin-kia, một trong các thầy tế lễ ở A-na-tốt, xứ Bên-gia-min.' Giê-rê-mi thuộc dòng tế lễ — nhưng được Chúa gọi làm TIÊN TRI. A-NA-TỐT cách Giê-ru-sa-lem ~5km, làng tế lễ (Giô-suê 21:18). Hin-kia này khác Hin-kia thầy tế lễ thượng phẩm thời Giô-si-a (2 Vua 22).",
+    "language": "vi",
+    "options": [
+      "Con A-mốt — vua Y-sơ-ra-ên",
+      "Con HIN-KIA — một trong các THẦY TẾ LỄ ở A-na-tốt thuộc đất Bên-gia-min",
+      "Con Đa-vít — vua Giu-đa (theo cách trình bày của text)",
+      "Con Lê-vi — sĩ quan (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Giê-rê-mi con Hin-kia thầy tế lễ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 16,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Giê-rê-mi 16:1-2, Đức Chúa Trời cấm Giê-rê-mi điều gì như là DẤU HIỆU cho dân?",
+    "explanation": "Giê-rê-mi 16:1-2 — 'Lại có lời Đức Giê-hô-va phán cho tôi rằng: Ngươi chớ cưới vợ, chớ có con trai con gái trong chỗ nầy.' Tiên tri SỐNG ra LỜI tiên tri = đời độc thân Giê-rê-mi tiêu biểu cho DIỆT CHỦNG sắp đến. Lý do: 16:3-4 — con cái sinh ra sẽ chết bệnh, không được khóc + chôn. Cùng tiên tri sống tiêu biểu: Ô-sê (cưới kỵ nữ), Ê-xê-chi-ên (vợ chết).",
+    "language": "vi",
+    "options": [
+      "Cấm ăn thịt (xét trong văn cảnh)",
+      "Cấm cầu nguyện (như được mô tả trong sách)",
+      "Cấm CƯỚI VỢ + sinh CON TRAI hoặc CON GÁI tại nơi đó",
+      "Cấm xây nhà (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Cấm cưới vợ làm dấu",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 36,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Giê-rê-mi 36:1-4, Đức Chúa Trời truyền cho Giê-rê-mi làm gì với LỜI mình đã nói?",
+    "explanation": "Giê-rê-mi 36:1-4 — 'Năm thứ tư của Giê-hô-gia-kim... có lời từ nơi Đức Giê-hô-va phán cùng Giê-rê-mi rằng: Hãy lấy một cuốn sách, chép vào đó hết thảy những lời ta đã phán cùng ngươi nghịch cùng Y-sơ-ra-ên... Giê-rê-mi gọi Ba-rúc, con trai Nê-ri-gia. Ba-rúc nhờ miệng Giê-rê-mi đọc cho mà chép.' BA-RÚC = thư ký của Giê-rê-mi. Câu chuyện chương 36: Giê-hô-gia-kim đốt cuộn — Giê-rê-mi viết lại + thêm lời.",
+    "language": "vi",
+    "options": [
+      "LẤY MỘT CUỘN SÁCH + CHÉP MỌI LỜI Đức Chúa Trời đã phán cùng Giê-rê-mi từ ngày Chúa phán cùng người (đời Giô-si-a) đến nay — Ba-rúc chép theo lời Giê-rê-mi đọc",
+      "Đốt sách cũ (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Mang lời đến đền (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Giấu lời trong tường (như được mô tả trong sách) (xét theo nội dung gốc)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Chép cuộn sách qua Ba-rúc",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 39,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Giê-rê-mi 39:1-2, năm thứ NÀO của Sê-đê-kia + tháng NÀO + ngày NÀO thì thành Giê-ru-sa-lem bị PHÁ?",
+    "explanation": "Giê-rê-mi 39:1-2 — 'Năm thứ chín đời Sê-đê-kia, vua Giu-đa, tháng mười, Nê-bu-cát-nết-sa, vua Ba-by-lôn, đem cả đạo binh mình đến vây thành Giê-ru-sa-lem. Năm thứ mười một đời Sê-đê-kia, tháng tư, ngày mồng chín, thành bị phá.' Vây thành 18 tháng. Lúc thành phá: ~ tháng 7 năm 586 TCN. Sự sụp đổ Giê-ru-sa-lem = sự kiện đau thương lớn nhất Cựu Ước; Ca Thương khóc về nó.",
+    "language": "vi",
+    "options": [
+      "Năm 5, tháng 1, ngày 1 (xét trong văn cảnh)",
+      "Năm 7, tháng 5, ngày 7 (theo cách trình bày của text)",
+      "Năm 9, tháng 10, ngày 10 — bắt đầu vây; năm 11, tháng 4, ngày 9 — thành PHÁ",
+      "Năm 15, tháng 8, ngày 15 (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Năm 11 tháng 4 ngày 9",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Giê-rê-mi 1:11-12, khải tượng đầu tiên Chúa cho Giê-rê-mi là gì? Ý nghĩa là gì?",
+    "explanation": "Giê-rê-mi 1:11-12 — 'Lại có lời Đức Giê-hô-va phán cùng tôi rằng: Hỡi Giê-rê-mi, ngươi thấy gì? Tôi thưa rằng: Tôi thấy một gậy bằng cây hạnh. Đức Giê-hô-va bèn phán: Ngươi thấy phải, vì ta tỉnh thức (shoqed) trên lời ta đặng làm trọn.' CHƠI CHỮ tiếng Hê-bơ-rơ: CÂY HẠNH (shaqed) ↔ TỈNH THỨC (shoqed). Cây hạnh = cây nở hoa SỚM NHẤT mùa xuân. Ý: Đức Chúa Trời ĐANG TỈNH THỨC để THỰC HIỆN LỜI mình.",
+    "language": "vi",
+    "options": [
+      "Cây nho — sinh nhiều trái (như được mô tả trong sách)",
+      "NHÁNH CÂY HẠNH (cây hạnh nhân) — vì 'TA TỈNH THỨC giữ LỜI' (chơi chữ shaqed/shoqed)",
+      "Cây ô-li-ve — bình an (theo cách trình bày của text)",
+      "Cây vả — phước (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Cây hạnh — Chúa tỉnh thức",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 1,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Giê-rê-mi 1:13-14, khải tượng thứ HAI Chúa cho Giê-rê-mi là gì? Đe dọa từ đâu?",
+    "explanation": "Giê-rê-mi 1:13-14 — 'Lời Đức Giê-hô-va lại phán cùng tôi rằng: Ngươi thấy gì? Tôi thưa rằng: Tôi thấy một nồi nước sôi từ phương bắc đổ lại. Đức Giê-hô-va phán: Ấy là hoạn nạn từ phương bắc sẽ giáng cho hết thảy dân cư đất nầy.' NỒI từ PHÍA BẮC = Babylon (Nê-bu-cát-nết-sa) sẽ đến từ hướng đó dù Babylon thực sự ở phía đông Y-sơ-ra-ên — vì quân đội đến qua đường vòng phía bắc (sông Ơ-phơ-rát).",
+    "language": "vi",
+    "options": [
+      "Cánh đồng lúa cháy — phía nam (như được mô tả trong sách)",
+      "Sông cuồn cuộn — phía tây (theo cách trình bày của text)",
+      "NỒI NƯỚC SÔI nghiêng từ PHÍA BẮC — TAI HỌA sẽ ĐỔ TRÊN cả dân cư đất nầy từ phía bắc",
+      "Núi sụp — phía đông (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Nồi sôi từ phía bắc",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 7,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Giê-rê-mi 7:4-7, dân Giê-ru-sa-lem cậy điều gì làm SAI LẦM lớn? Lời lặp 3 lần nào là DỐI?",
+    "explanation": "Giê-rê-mi 7:4 — 'Chớ nhờ cậy những lời dối trá rằng: Đền thờ của Đức Giê-hô-va, đền thờ của Đức Giê-hô-va, đền thờ của Đức Giê-hô-va là đây.' Dân nghĩ: ĐỀN bảo vệ thành KHỎI bị diệt — vì đền là CỦA Chúa. Sai: Chúa đã hủy SI-LÔ trước (7:12-14) khi đền ở đó. Cần CẢI ĐỔI sống — không phải dấu hiệu thuộc đền. Đây là 'BÀI GIẢNG ĐỀN THỜ' — câu chuyện chương 26 (suýt bị giết).",
+    "language": "vi",
+    "options": [
+      "Cậy luật pháp — 'luật! luật! luật!' (như được mô tả trong sách)",
+      "Cậy vua — 'vua! vua! vua!' (xét trong văn cảnh)",
+      "Cậy Áp-ra-ham — 'cha! cha! cha!' (theo cách trình bày của text)",
+      "Cậy đền thờ — Lời 3 lần 'ĐỀN THỜ Đức Giê-hô-va, ĐỀN THỜ Đức Giê-hô-va, ĐỀN THỜ Đức Giê-hô-va!' là DỐI TRÁ"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Đền thờ Đức Giê-hô-va dối",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 18,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Giê-rê-mi 18:7-10, Đức Chúa Trời nói nguyên tắc gì về sự phán xét hay phước cho 1 dân?",
+    "explanation": "Giê-rê-mi 18:7-10 — 'Trong lúc nào ta sẽ nói về một dân một nước kia đặng nhổ đi, phá đi, hủy đi; nếu nước mà ta nói đó xây bỏ điều ác mình, thì ta sẽ ăn năn về họa ta đã định giáng cho nó. Cũng có lúc nào ta sẽ nói về một dân một nước kia đặng dựng nó, trồng nó; nếu nước ấy làm điều ác trước mắt ta và không nghe tiếng ta, thì ta sẽ ăn năn về sự lành mà ta đã định ban xuống.' Lời tiên tri có ĐIỀU KIỆN — không phải định mệnh cứng nhắc. Như Giô-na ở Ni-ni-ve.",
+    "language": "vi",
+    "options": [
+      "Nếu dân được tuyên bố sẽ bị NHỔ + PHÁ — nhưng XOAY khỏi điều ác — Chúa SẼ ĂN NĂN; nếu dân được tuyên bố sẽ XÂY DỰNG — nhưng làm điều ác — Chúa cũng SẼ ĂN NĂN khỏi điều TỐT",
+      "Lời Chúa không thay đổi sau khi tuyên bố (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Chúa luôn cứng rắn theo lời (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Chúa luôn cho ăn năn lần thứ hai (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Tiên tri có điều kiện",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 19,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Giê-rê-mi 19:10-11, khi đến trũng Hi-nôm, Giê-rê-mi làm gì với BÌNH GỐM trước mặt các trưởng lão? Đó là DẤU gì?",
+    "explanation": "Giê-rê-mi 19:10-11 — 'Rồi thì ngươi khá đập cái bình trước mắt các người đi với mình, mà bảo rằng: Đức Giê-hô-va vạn quân phán như vầy: Ta sẽ đập vỡ dân nầy và thành nầy cũng như đập cái bình bằng gốm, chẳng còn làm liền lại được; người ta sẽ chôn thây tại Tô-phết, cho đến thiếu chỗ chôn.' Đối lập 18 (thầy gốm có thể NẶN LẠI) → 19 (bình ĐÃ NUNG, đập bể KHÔNG sửa). Tô-phết = trũng Hi-nôm = bãi rác Giê-ru-sa-lem.",
+    "language": "vi",
+    "options": [
+      "Cất bình lên cao — dấu chiến thắng (như được mô tả trong sách)",
+      "ĐẬP BÌNH GỐM bể — DẤU 'Ta cũng sẽ làm dân nầy + thành nầy NHƯ VẬY' (đập tan KHÔNG SỬA được)",
+      "Đổ nước trong bình — dấu phước (xét trong văn cảnh)",
+      "Trồng cây vào bình — dấu sự sống (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Đập bình gốm = không sửa được",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 20,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Giê-rê-mi 20:7-9, Giê-rê-mi than van — vì lời Chúa làm ông bị gì? Nhưng nếu cố giữ im?",
+    "explanation": "Giê-rê-mi 20:7-9 — 'Đức Giê-hô-va, Ngài đã khuyên dỗ tôi, và tôi đã chịu khuyên dỗ; Ngài mạnh hơn tôi và đã thắng tôi. Trọn ngày tôi cứ làm trò cười, và ai cũng nhạo báng tôi. Mỗi lần tôi nói thì tôi kêu lên... Nếu tôi nói: Tôi sẽ chẳng nhắc đến Ngài nữa, sẽ chẳng nhân danh Ngài mà nói nữa, thì trong lòng tôi như lửa đốt cháy, bọc kín trong xương tôi, và tôi mệt mỏi vì nín lặng.' Đây là 1 trong 'CONFESSIONS' nổi tiếng của Giê-rê-mi — sự đau khổ TRONG NỘI tâm.",
+    "language": "vi",
+    "options": [
+      "Ông giận Chúa — bỏ chức tiên tri vĩnh viễn (theo cách trình bày của text)",
+      "Ông buồn rầu — ngừng giảng đạo nhưng vẫn cầu nguyện (như được mô tả trong sách)",
+      "Bị chế nhạo cả ngày + bị mạ lị; nhưng nếu nói 'Tôi sẽ chẳng nhắc đến Ngài' — thì lời TRONG LÒNG NHƯ LỬA CHÁY trong xương cốt — KHÔNG nhịn được",
+      "Ông được ân điển — không có tổn thương (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Lửa cháy trong xương",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 23,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Giê-rê-mi 23:1-4, Đức Chúa Trời quở trách ai? Ngài hứa làm gì?",
+    "explanation": "Giê-rê-mi 23:1-4 — 'Đức Giê-hô-va phán: Khốn thay cho những kẻ chăn hủy diệt và làm tan lạc bầy chiên của đồng cỏ ta!... Ta sẽ nhóm hiệp phần sót lại của bầy chiên ta, từ các nước mà ta đã đuổi chúng nó đến, đem chúng nó trở về trong chuồng, và chúng nó sẽ sanh sản đông nhiều. Ta sẽ lập lên những kẻ chăn nuôi chúng nó.' MỤC TỬ ác = lãnh đạo Y-sơ-ra-ên (vua, tế lễ, tiên tri giả). 23:5 sau đó nói về 'CHỒI CÔNG BÌNH' (Mê-si-a) làm Mục Tử thật. Cùng tư tưởng Ê-xê-chi-ên 34.",
+    "language": "vi",
+    "options": [
+      "Quở các tiên tri giả — chỉ tha (theo cách trình bày của text)",
+      "Quở các vua phương Bắc — chỉ phạt (như được mô tả trong sách)",
+      "Quở dân chung — chỉ kêu gọi (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Khốn cho NHỮNG MỤC TỬ làm cho BẦY chiên TA bị TAN MẤT — ĐỨC CHÚA TRỜI sẽ NHÓM HỌP CHÚNG NÓ + lập NHỮNG MỤC TỬ KHÁC để chăn"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Khốn cho các mục tử ác",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 25,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Giê-rê-mi 25:11-12, các nước SẼ HẦU VIỆC vua Ba-by-lôn bao nhiêu năm? Sau đó vua Ba-by-lôn ra sao?",
+    "explanation": "Giê-rê-mi 25:11-12 — 'Cả đất nầy sẽ trở nên hoang vu kinh hoàng, các nước nầy sẽ phục sự vua Ba-by-lôn trong bảy mươi năm. Đức Giê-hô-va phán: Khi bảy mươi năm ấy đã mãn, ta sẽ phạt vua Ba-by-lôn và dân người, vì cớ tội ác chúng nó.' '70 NĂM' lưu đày = 605 (đầu lưu đày) → 538 (Si-ru cho phép trở về). Đa-ni-ên 9 căn cứ vào câu này. Cũng có thể đếm 586 (đền phá) → 516 (đền xây xong) = 70 năm.",
+    "language": "vi",
+    "options": [
+      "70 NĂM hầu việc vua Ba-by-lôn — sau 70 năm xong, ĐỨC CHÚA TRỜI VẠCH TRẦN VUA BA-BY-LÔN + nước Canh-đê + đất ấy sẽ trở nên HOANG VU đời đời",
+      "30 năm — vua được tha (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "100 năm — vua được tôn vinh (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "10 năm — vua được tôn (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "70 năm hầu việc Ba-by-lôn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 27,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Giê-rê-mi 27:1-7, Đức Chúa Trời truyền cho Giê-rê-mi LÀM gì để gửi sứ điệp cho các vua chung quanh?",
+    "explanation": "Giê-rê-mi 27:2-6 — 'Đức Giê-hô-va phán cùng tôi như vầy: Hãy làm lấy những dây và ách, để trên cổ ngươi; rồi hãy gởi cho vua Ê-đôm, vua Mô-áp, vua các con cái Am-môn, vua Ty-rơ, vua Si-đôn... Bây giờ ta đã phó các nước này cho Nê-bu-cát-nết-sa, vua Ba-by-lôn, đầy tớ ta.' ÁCH = sự cai trị Babylon. Sứ điệp: ĐỪNG kháng chiến — phục tùng đi để sống. Câu 7 gọi Nê-bu-cát-nết-sa là 'TÔI TỚ TA' — Đức Chúa Trời ngay cả vua ngoại đạo.",
+    "language": "vi",
+    "options": [
+      "Đập gậy (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Trồng cây (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Làm các DÂY và ÁCH + đeo trên cổ — gửi cho các vua Ê-đôm, Mô-áp, Am-môn, Ty-rơ, Si-đôn — sứ điệp: phục vụ Nê-bu-cát-nết-sa",
+      "Vẽ bản đồ (như được mô tả trong sách) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Đeo ách - phục vụ Babylon",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 28,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Giê-rê-mi 28:15-17, tiên tri Ha-na-nia (đối thủ của Giê-rê-mi) bẻ ÁCH GIỖ trên cổ Giê-rê-mi — Giê-rê-mi đáp lời gì? Số phận Ha-na-nia?",
+    "explanation": "Giê-rê-mi 28:15-17 — 'Hãy nghe, hỡi Ha-na-nia! Đức Giê-hô-va chưa hề sai ngươi, song ngươi làm cho dân nầy trông cậy sự giả dối. Vậy nên, Đức Giê-hô-va phán như vầy: Nầy, ta sẽ duồng ngươi khỏi mặt đất, năm nay ngươi sẽ chết, vì đã nói ra sự bạn nghịch Đức Giê-hô-va. Cũng năm ấy, tháng bảy, tiên tri Ha-na-nia chết.' Phép thử tiên tri thật/giả Phục Truyền 18:22 — lời ứng nghiệm = thật. Ha-na-nia thất bại test = giả.",
+    "language": "vi",
+    "options": [
+      "Khen Ha-na-nia — chúc phước (như được mô tả trong sách)",
+      "Ha-na-nia khiến dân tin sự dối — Đức Chúa Trời chưa sai người ấy; ngươi sẽ CHẾT TRONG NĂM NÀY — Ha-na-nia chết tháng 7 cùng năm",
+      "Ha-na-nia ăn năn (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Hai người hòa giải (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Ha-na-nia chết trong năm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 29,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Giê-rê-mi 29:4-7, lá thư của Giê-rê-mi cho dân lưu đày tại Ba-by-lôn dạy gì?",
+    "explanation": "Giê-rê-mi 29:4-7 — 'Hãy xây nhà và ở; hãy trồng vườn và ăn trái... Hãy cưới vợ, sanh con trai con gái... đặng các ngươi thêm nhiều ra... và hãy cầu sự bình an cho thành mà ta đã khiến các ngươi bị đày đến làm phu tù, hãy vì nó cầu nguyện Đức Giê-hô-va; vì sự bình an các ngươi nhờ sự bình an của nó.' Lời gây sốc: cầu nguyện CHO Babylon (kẻ thù). Lưu đày 70 năm = LÂU; phải sống bình thường + cộng tác. KHÔNG bị đồng hóa nhưng đóng góp cho hòa bình thành.",
+    "language": "vi",
+    "options": [
+      "Phải nổi loạn ngay lập tức (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Phải tuyệt thực (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Phải xây căn cứ kín đáo (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Phải XÂY NHÀ + LẬP VƯỜN + CƯỚI VỢ + sinh CON CÁI + tăng số trong xứ; cầu sự BÌNH AN của THÀNH ấy + cầu cho thành — vì sự bình an thành = bình an của các ngươi"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Cầu bình an cho thành Ba-by-lôn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 29,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Giê-rê-mi 29:10-14, sau bao nhiêu năm Đức Chúa Trời sẽ thăm dân lưu đày? Khi tìm kiếm Ngài thế nào?",
+    "explanation": "Giê-rê-mi 29:10-14 — 'Đức Giê-hô-va phán như vầy: Khi bảy mươi năm sẽ mãn cho Ba-by-lôn, ta sẽ thăm viếng các ngươi, sẽ làm trọn lời tốt lành cho các ngươi, khiến các ngươi trở về đất nầy... Các ngươi sẽ tìm ta, và gặp được, khi các ngươi tìm kiếm ta hết lòng.' Câu 11 nổi tiếng 'TA BIẾT Ý ĐỊNH TA NGHĨ về các ngươi, là ý ĐỊNH BÌNH AN'. Tổng thể: 70 năm + tìm hết lòng + tìm thấy.",
+    "language": "vi",
+    "options": [
+      "Sau 70 NĂM tại Ba-by-lôn — sẽ thăm + đem trở về; tìm kiếm với HẾT LÒNG sẽ TÌM ĐƯỢC Ngài",
+      "Sau 50 năm — chỉ một số sẽ về (theo cách trình bày của text)",
+      "Sau 100 năm — toàn bộ hủy diệt (như được mô tả trong sách)",
+      "Sau 30 năm — chỉ tổ phụ về (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "70 năm tìm hết lòng sẽ gặp",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 31,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Giê-rê-mi 31:15, hình ảnh nào về Ra-ma được dùng để nói về dân lưu đày?",
+    "explanation": "Giê-rê-mi 31:15 — 'Đức Giê-hô-va phán như vầy: Tại Ra-ma nghe có tiếng than thở, khóc lóc đắng cay; ấy là Ra-chên khóc các con mình, vì chúng nó không còn nữa, mà từ chối, không chịu khuyên giải.' RA-CHÊN = mẹ Giô-sép + Bên-gia-min. RA-MA = nơi giam giữ trước khi đưa đi Babylon (40:1). Mat 2:18 trích cùng câu khi áp dụng cho Hê-rốt giết bé tại Bết-lê-hem.",
+    "language": "vi",
+    "options": [
+      "Ra-chên hát ru (xét trong văn cảnh)",
+      "Ra-chên KHÓC con cái mình + KHÔNG chịu được an ủi vì chúng nó KHÔNG còn",
+      "Ra-chên cười vui (theo cách trình bày của text)",
+      "Ra-chên cầu nguyện (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Ra-chên khóc con cái",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 32,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Giê-rê-mi 32:6-15, trong khi bị giam (Babylon vây Giê-ru-sa-lem), Đức Chúa Trời truyền Giê-rê-mi làm gì như DẤU HI VỌNG?",
+    "explanation": "Giê-rê-mi 32:6-15 — 'Hỡi anh em ta, đầu vào ngày dày dặc nhất khi quân Babylon vây thành, Hê-na-nê-ên, con bác ta, đến cùng tôi, theo lời Đức Giê-hô-va, mà nói rằng: Ta xin ngươi mua ruộng của ta ở A-na-tốt... Vì Đức Giê-hô-va vạn quân, Đức Chúa Trời của Y-sơ-ra-ên, phán như vầy: Người ta sẽ còn mua nhà, ruộng, và vườn nho trong đất nầy.' SỰ MUA = ĐẦU TƯ của ĐỨC TIN — Giê-rê-mi tin Chúa sẽ phục hồi xứ.",
+    "language": "vi",
+    "options": [
+      "Bán toàn bộ tài sản (như được mô tả trong sách)",
+      "Đốt cuộn sách (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "MUA RUỘNG ĐẤT từ con chú mình tại A-na-tốt — vì 'NHÀ + RUỘNG + VƯỜN nho lại sẽ được mua trong xứ nầy'",
+      "Trốn khỏi thành (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Mua đất A-na-tốt làm dấu hi vọng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 45,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Giê-rê-mi 45:1-5, Đức Chúa Trời nói trực tiếp với BA-RÚC (thư ký Giê-rê-mi) khi ông KÊU LA THAN VAN — Chúa hứa gì với Ba-rúc?",
+    "explanation": "Giê-rê-mi 45:3-5 — 'Ngươi đã nói: Khốn nạn cho ta, vì Đức Giê-hô-va thêm sự buồn rầu cho sự đau đớn ta; ta mệt nhọc vì rên siết, chẳng được nghỉ ngơi! Ngươi khá nói cùng nó rằng: Đức Giê-hô-va phán như vầy: Nầy, vật ta đã dựng, ta phá đi; vật ta đã trồng, ta nhổ đi; sự đó khắp cả đất. Còn ngươi, ngươi còn tìm việc lớn cho mình hay sao? Chớ có tìm kiếm, vì nầy, ta sẽ giáng tai vạ cho mọi loài xác thịt; nhưng ngươi, hễ đi đâu, ta cũng sẽ ban mạng sống cho ngươi làm của cướp.' Lời ƯU ĐẶC cho 1 cá nhân — Ba-rúc.",
+    "language": "vi",
+    "options": [
+      "Sẽ làm Ba-rúc giàu có (xét trong văn cảnh)",
+      "Sẽ làm Ba-rúc tiên tri lớn (theo cách trình bày của text)",
+      "KHÔNG hứa vinh quang lớn — nhưng SẼ ban CHO Ba-rúc MẠNG SỐNG mình LÀM CỦA CƯỚP nơi nào người sẽ đi",
+      "Sẽ ban Ba-rúc nhà cao cửa rộng (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Ba-rúc - mạng sống làm của cướp",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 35,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Giê-rê-mi 35:5-19, Giê-rê-mi mời nhóm RÊ-CÁP-BÍT vào đền thờ + đặt RƯỢU + nói 'hãy uống' — họ đáp gì? Giê-rê-mi rút bài học gì?",
+    "explanation": "Giê-rê-mi 35:6-7, 14, 18-19 — 'Họ thưa: Chúng tôi không uống rượu; vì Giô-na-đáp, con của tổ chúng tôi là Rê-cáp, đã răn chúng tôi rằng: Các ngươi cùng con cháu các ngươi đời đời chớ uống rượu... Đây là cớ tại sao Giô-na-đáp con trai Rê-cáp sẽ chẳng thiếu một người trước mặt ta để hầu việc ta luôn luôn.' Rê-cáp-bít vâng tổ phụ qua nhiều thế hệ — Y-sơ-ra-ên KHÔNG vâng Đức Chúa Trời. KHÔNG nói ai phải kiêng rượu — đây là VÂNG LỜI nguyên tắc.",
+    "language": "vi",
+    "options": [
+      "Họ uống — bị quở trách (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Họ uống — được phước (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Họ uống nửa chừng — được tha (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Họ TỪ CHỐI — vì tổ phụ Giô-na-đáp đã ra LỆNH chúng tôi không bao giờ uống rượu; Đức Chúa Trời nêu họ làm GƯƠNG: bài học vâng lời tổ phụ TRONG KHI dân Y-sơ-ra-ên KHÔNG vâng lời ĐỨC CHÚA TRỜI"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Rê-cáp-bít từ chối rượu",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 4,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Giê-rê-mi 4:23-26, Giê-rê-mi mô tả khải tượng đất Y-sơ-ra-ên thế nào?",
+    "explanation": "Giê-rê-mi 4:23-26 — 'Tôi xem đất, nầy, là vô hình và trống không; xem các từng trời, thì không có sự sáng. Tôi xem các núi, thấy đều rúng động; mọi gò đều lung lay. Tôi xem, và nầy, chẳng còn một người nào; hết thảy chim trời đều trốn tránh. Tôi xem, và nầy, ruộng tốt đã trở nên đồng vắng, hết thảy các thành đã bị phá bởi Đức Giê-hô-va.' 'TOHU WA-BOHU' = chính từ Sáng 1:2 (vô hình + trống không). Giê-rê-mi mô tả ĐẢO NGƯỢC SÁNG TẠO — đất quay về trạng thái KHÔN TIỀN. Hình ảnh kinh hoàng.",
+    "language": "vi",
+    "options": [
+      "Trở về CHƯA HÌNH, TRỐNG KHÔNG (tohu wa-bohu) — KHÔNG có sự sáng — KHÔNG còn người + chim trời + đất phì nhiêu trở thành sa mạc",
+      "Tươi đẹp như xưa (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Phồn thịnh hơn (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Bình thường (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Đảo ngược sáng tạo - vô hình trống không",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Giê-rê-mi 5:1, Đức Chúa Trời thách thức tìm gì trong thành Giê-ru-sa-lem để tha thứ?",
+    "explanation": "Giê-rê-mi 5:1 — 'Hãy đi dạo các đường phố Giê-ru-sa-lem, và nhìn xem; hãy dò trong các chợ và tìm kiếm; nếu các ngươi tìm thấy được dù một người làm sự công bình, tìm cách ăn ở thành tín, thì ta sẽ tha thứ thành ấy.' Cảm hứng từ ÁP-RA-HAM CẦU XIN cho Sô-đôm (Sáng 18:22-32 — Áp-ra-ham xuống đến 10 người). Giê-rê-mi cũng vậy — nhưng đáng thương hơn: Đức Chúa Trời đề nghị THA THỨ chỉ cần 1 NGƯỜI! KHÔNG tìm thấy.",
+    "language": "vi",
+    "options": [
+      "Tìm 10 người công bình (theo cách trình bày của text)",
+      "Tìm DÙ MỘT NGƯỜI làm sự CÔNG BÌNH + tìm sự CHÂN THẬT — Ngài SẼ THA THỨ thành ấy",
+      "Tìm 1 thầy tế lễ trung tín (như được mô tả trong sách)",
+      "Tìm 1 người ăn năn (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "1 người công bình tha thành",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Giê-rê-mi 12:1, Giê-rê-mi CHẤT VẤN Đức Chúa Trời điều gì?",
+    "explanation": "Giê-rê-mi 12:1 — 'Hỡi Đức Giê-hô-va, tôi biện luận cùng Ngài, Ngài thật công bình; dầu vậy, tôi còn muốn biện luận cùng Ngài. Sao đường lối những kẻ ác được thạnh vượng? Sao những người gian trá được yên ổn?' Câu hỏi cổ điển về THẦN HỌC ÁM HẠI: tại sao kẻ ác SỐNG TỐT? Cùng câu hỏi Gióp + Thi 73 (A-saph). Đức Chúa Trời đáp 12:5-6 — tốc độ đoán xét sẽ TĂNG.",
+    "language": "vi",
+    "options": [
+      "Vì sao Y-sơ-ra-ên không lớn (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Vì sao tế lễ không hiệu quả (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Vì sao Giê-rê-mi không khỏe (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Hỡi Đức Giê-hô-va, NGÀI là Đấng CÔNG BÌNH... vì sao ĐƯỜNG LỐI KẺ ÁC THÌNH VƯỢNG? Vì sao tất cả những kẻ DỐI TRÁ được an ổn?"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Vì sao kẻ ác thịnh vượng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 14,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Giê-rê-mi 14:14, Đức Chúa Trời nói các tiên tri đang nói nhân danh Ngài là gì?",
+    "explanation": "Giê-rê-mi 14:14 — 'Các tiên tri đó nhân danh ta mà nói tiên tri giả dối. Ta chẳng từng sai họ đi, chẳng từng truyền lệnh và chẳng từng phán cùng họ. Họ nói tiên tri đó cho các ngươi là sự hiện thấy giả dối, sự bói khoa, sự hư không, và sự lừa gạt bởi lòng riêng mình.' 4 LỚP nguồn của tiên tri giả: chiêm bao GIẢ + bói TOÁN + sự HƯ KHÔNG + sự GIAN DỐI tâm. KHÔNG đến từ Chúa.",
+    "language": "vi",
+    "options": [
+      "Là tiên tri thật được sai (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Là tiên tri tốt cần khích lệ (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Tiên tri NÓI DỐI nhân danh ta — TA KHÔNG SAI họ + TA KHÔNG TRUYỀN cho họ + TA KHÔNG NÓI cùng họ; CHIÊM BAO GIẢ + sự bói toán + sự HƯ KHÔNG + sự GIAN DỐI của lòng họ",
+      "Là môn đệ Giê-rê-mi (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Tiên tri giả: chiêm bao + bói + dối lòng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 22,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Giê-rê-mi 22:13-19, Giê-rê-mi quở vua nào? Vì cớ gì?",
+    "explanation": "Giê-rê-mi 22:13-19 — 'Khốn thay cho kẻ xây nhà mình bằng sự không công bình, làm phòng cao mình bằng sự không nghĩa, dùng công của kẻ lân cận mình mà không chịu thưởng... Cha ngươi xưa đã ăn đã uống, làm sự xét đoán và công bình, cho nên được thạnh vượng. Người đã làm ra lẽ thẳng cho kẻ nghèo và thiếu thốn... Vậy nên, đây là điều Đức Giê-hô-va phán về Giê-hô-gia-kim, con trai Giô-si-a, vua Giu-đa: Người ta sẽ chẳng khóc người mà nói rằng: Ôi, anh ơi! ôi, chị ơi!... Người sẽ bị chôn như chôn con lừa.'",
+    "language": "vi",
+    "options": [
+      "GIÊ-HÔ-GIA-KIM — vì cớ XÂY CUNG ĐIỆN bằng SỰ ÁC + KHÔNG TRẢ LƯƠNG cho lao công + so sánh với cha là Giô-si-a (đối xử với kẻ nghèo); Giê-hô-gia-kim sẽ bị chôn 'như chôn LỪA' — kéo + ném ra ngoài cửa Giê-ru-sa-lem",
+      "Vua Sê-đê-kia — vì hèn nhát (như được mô tả trong sách) (như văn bản ghi rõ) (theo bối cảnh đoạn này) (theo cách trình bày của text)",
+      "Vua Giô-si-a — vì cải cách (theo cách trình bày của text) (xét theo nội dung gốc) (xét trong văn cảnh) (như được mô tả trong sách)",
+      "Vua Đa-vít — vì gian dâm (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Giê-hô-gia-kim - chôn như lừa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 23,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Giê-rê-mi 23:16-22, các tiên tri giả nói lời gì với dân? Lời thật của Đức Chúa Trời ra sao?",
+    "explanation": "Giê-rê-mi 23:16-22 — 'Họ nói cùng kẻ khinh dể ta rằng: Đức Giê-hô-va phán: Các ngươi sẽ được bình an. Lại nói cùng những kẻ bước theo sự cứng cỏi của lòng mình rằng: Chẳng có tai họa gì sẽ đến trên các ngươi hết... Nếu họ đã đứng trong sự bàn luận ta, thì đã làm cho dân ta nghe lời ta, và đã khiến họ trở lại khỏi đường dữ, và việc làm ác của mình.' Tiên tri giả = bình an SAI; thật = ăn năn. Tiêu chí: tiên tri thật khiến dân QUAY về Chúa, không khen ngợi tội.",
+    "language": "vi",
+    "options": [
+      "Họ nói tin lành — Chúa giận (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Họ nói 'Các ngươi sẽ ĐƯỢC BÌNH AN' + 'TAI HỌA SẼ KHÔNG ĐẾN' — họ nói KHẢI TƯỢNG CỦA LÒNG MÌNH + KHÔNG ĐỨNG TRONG HỘI ĐỒNG ĐỨC CHÚA TRỜI; nếu đã đứng trong đó, họ sẽ KHIẾN dân TỪ BỎ ĐƯỜNG ÁC",
+      "Họ nói nhập khẩu (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này) (theo cách trình bày của text)",
+      "Họ tự nhiên (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Tiên tri giả nói bình an dối",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 25,
+    "verseStart": 15,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Giê-rê-mi 25:15-29, Đức Chúa Trời truyền cho Giê-rê-mi cầm gì + đem cho ai? Để làm gì?",
+    "explanation": "Giê-rê-mi 25:15-17 — 'Giê-hô-va Đức Chúa Trời của Y-sơ-ra-ên đã phán cùng tôi như vầy: Hãy lấy chén rượu của sự giận từ tay ta, khá cho các dân mà ta sai ngươi đến đều uống lấy. Chúng nó sẽ uống và đi xiêu tó, và điên cuồng vì gươm mà ta sẽ sai đến giữa chúng nó. Vậy tôi cầm chén nơi tay Đức Giê-hô-va, và khiến uống cho mọi nước mà Đức Giê-hô-va sai tôi đến.' CHÉN THẠNH NỘ — Mê-si-a uống thay (Mat 26:39 'cất chén nầy'); Khải Huyền 14:10 chén thạnh nộ.",
+    "language": "vi",
+    "options": [
+      "Cây bút — viết lịch sử các nước (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Lưỡi gươm — đánh các nước (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Cuộn sách — đọc các nước (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "CHÉN RƯỢU SỰ THẠNH NỘ — đem cho TẤT CẢ các nước (Giu-đa, Ai-cập, Ê-đôm, Ty-rơ, Si-đôn, Ả-rập, Ba-by-lôn cuối) — họ UỐNG + LẢO ĐẢO + ĐIÊN — nói: 'Đây là LƯỠI GƯƠM ta sẽ sai đến giữa các ngươi'"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Chén rượu thạnh nộ cho các nước",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 31,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Giê-rê-mi 31:22, lời tiên tri kỳ lạ về 'điều mới trên đất' là gì?",
+    "explanation": "Giê-rê-mi 31:22 — 'Hỡi gái bội nghịch, ngươi sẽ đi dông dài cho đến chừng nào? Vì Đức Giê-hô-va đã dựng nên một sự mới trên đất: ấy là người nữ sẽ bao bọc người nam.' CÂU KHÓ HIỂU NHẤT trong Giê-rê-mi. Nhiều giải thích: (a) sự đảo ngược vai trò xã hội thông thường; (b) áp dụng Mê-si-a (Đức Chúa Cha + nữ đồng trinh sinh CON); (c) Y-sơ-ra-ên (nữ) bảo vệ Đức Chúa Trời (nam) — kì dị. Vẫn còn tranh luận.",
+    "language": "vi",
+    "options": [
+      "MỘT NGƯỜI NỮ SẼ BAO QUANH (vây) MỘT NGƯỜI NAM (mạnh mẽ) — điều khác thường",
+      "Cây sẽ ra trái mỗi tháng (theo cách trình bày của text)",
+      "Mặt trăng sẽ chiếu đêm như ngày (như được mô tả trong sách)",
+      "Núi sẽ chảy mật (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Người nữ bao quanh người nam",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 33,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Giê-rê-mi 33:14-16, Đức Chúa Trời hứa SẼ làm cho Đa-vít gì? Tên nào sẽ được gọi?",
+    "explanation": "Giê-rê-mi 33:14-16 — 'Đức Giê-hô-va lại phán: Nầy, những ngày đến, bấy giờ ta sẽ làm trọn lời tốt lành mà ta đã phán về nhà Y-sơ-ra-ên... Trong những ngày ấy và kỳ đó ta sẽ khiến nẩy lên một Nhánh của sự công bình cho Đa-vít; Đấng ấy sẽ làm ra sự công bình chánh trực trong đất nầy. Trong những ngày đó, Giu-đa sẽ được cứu; Giê-ru-sa-lem sẽ ở yên ổn; danh nó sẽ được xưng rằng: Đức Giê-hô-va, sự công bình chúng ta!' MÊ-SI-A. Cùng từ 23:5-6.",
+    "language": "vi",
+    "options": [
+      "Một con trai nhỏ — gọi là Em-ma-nu-ên (theo cách trình bày của text)",
+      "Một thầy tế lễ — gọi là Mên-chi-xê-đéc (như được mô tả trong sách)",
+      "MỘT CHỒI CÔNG BÌNH NẨY LÊN CHO ĐA-VÍT — sẽ làm sự công bình + bình an trong xứ; tên CHỒI là 'ĐỨC GIÊ-HÔ-VA SỰ CÔNG BÌNH CHÚNG TA'",
+      "Một vua mạnh — gọi là Đa-vít II (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Chồi công bình - YHWH sự công bình",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 50,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Giê-rê-mi 50:4-5, sau khi Babylon ngã, dân Y-sơ-ra-ên + Giu-đa sẽ làm gì cùng nhau?",
+    "explanation": "Giê-rê-mi 50:4-5 — 'Đức Giê-hô-va phán: Trong những ngày đó và kỳ đó, con cái Y-sơ-ra-ên sẽ trở lại, chúng nó với con cái Giu-đa cùng nhau; vừa đi vừa khóc, tìm kiếm Giê-hô-va Đức Chúa Trời mình. Chúng nó sẽ hỏi thăm về Si-ôn, xây mặt về đó mà rằng: Hãy đến, liên kết với Đức Giê-hô-va bởi một giao ước đời đời sẽ không quên.' DỰ ĐOÁN TÁI HIỆP Y-sơ-ra-ên + Giu-đa (đã chia 1 vua sau Sa-lô-môn). Cuối cùng dân tộc HIỆP MỘT trong giao ước MỚI.",
+    "language": "vi",
+    "options": [
+      "Sẽ chiến đấu giải phóng Babylon (như được mô tả trong sách) (xét theo nội dung gốc) (xét trong văn cảnh)",
+      "Cùng nhau ĐI khóc + tìm Đức Giê-hô-va Đức Chúa Trời mình; HỎI ĐƯỜNG về SI-ÔN, mặt hướng đó nói: 'Hãy ĐẾN + HIỆP MÌNH cùng Đức Giê-hô-va trong giao ước ĐỜI ĐỜI sẽ KHÔNG bị quên'",
+      "Sẽ rời đất Y-sơ-ra-ên đi xa (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Sẽ giết các kẻ thù (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)"
+    ],
+    "tags": [
+      "Cựu Ước",
+      "Giê-rê-mi",
+      "Tiên tri lớn",
+      "Y-sơ-ra-ên Giu-đa cùng đi tìm Chúa",
+      "Nâng cao"
+    ]
   }
 ]

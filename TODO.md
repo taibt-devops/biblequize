@@ -91,13 +91,12 @@
 - Topics: Nê-bu-cát-nết-sa vây Giê-ru-sa-lem (1:1); 4 tên Ba-by-lôn (1:7); 10 ngày rau + nước (1:12); tri thức + Đa-ni-ên giải chiêm bao (1:17); sự hiện thấy ban đêm (2:19); truất + lập vua (2:21); vua = đầu vàng (2:38); hòn đá đập chân hóa núi (2:34-35); 4 người trong lò lửa (3:24-25); cấm nói xấu Đức Chúa Trời (3:28-29); chiêm bao làm vua sợ (4:4); bỏ tội bằng công bình (4:27); 7 năm hóa thú (4:28-33); phục hồi và ngợi khen (4:34-37); Bên-xát-sa tiệc lớn (5:1); ngón tay viết trên tường (5:5-6); MENE TEKEL UPHARSIN (5:25-28); Đa-ri-út Mê-đi tiếp quản (5:30-31); Đa-ni-ên không có lỗi (6:4); 30 ngày chỉ cầu vua (6:6-9); thiên sứ bịt miệng sư tử (6:22); Đa-ri-út tôn Đức Chúa Trời Đa-ni-ên (6:26-27); 4 thú từ biển (7:1-3); Đấng Thượng Cổ ngọn lửa (7:9-10); 3.5 năm bắt các thánh đồ (7:25); vương quốc cho dân các thánh (7:27); dê đập chiên (8:1-7); cầu nguyện ăn chay bao gai tro (9:3); cậy lòng thương xót không cậy mình (9:16-19); 70 tuần 6 mục tiêu (9:24); vua giao ước - nửa tuần dứt tế lễ (9:27); người vải gai đai vàng (10:5); vua Ba-tư ngăn trở 21 ngày (10:13); A-léc-xan-đơ Đại Đế (11:2-4); vua tự tôn cao hơn các thần (11:36); Mi-chen + sách sự sống (12:1); đóng ấn cho đến kỳ cuối (12:4); 1+2+0.5 kỳ sau dân thánh tan (12:7)
 - VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
-#### Task B3-2: Jeremiah +30 (20→50)
-- Status: [ ] TODO
-- Current: 20 (E11 M7 H2) → Target: 50 (E15 M23 H12)
-- Plan: +4 Easy + 16 Medium + 10 Hard
-- File(s): `jeremiah_quiz.json` + `jeremiah_quiz_en.json` + `scripts/append_jeremiah_v3b.py`
-- Strategy: "Prophet nước mắt"; giao ước MỚI 31:31-34 (Tân Ước trích Hê-bơ-rơ 8); 70 năm lưu đày 25:11-12, 29:10; thầy gốm + bình gốm 18-19; nồi sôi 1:13; ách 27-28; bị bỏ tù trong giếng bùn 38
-- Commit: `feat(seed): Jeremiah +30 V3 B3 quality expansion (20→50)`
+#### Task B3-2: Jeremiah +30 (20→50) [x] DONE 2026-04-28
+- 20→**50** (E15 M23 H12, ratio **30.0/46.0/24.0%** — gần khớp 30/45/25)
+- Pool +30: 4 Easy + 16 Medium + 10 Hard VI + 30 EN 1:1
+- Single idx: 0:7, 1:8, 2:8, 3:7 (well distributed)
+- Topics: Giê-rê-mi con Hin-kia thầy tế lễ (1:1); cấm cưới vợ làm dấu (16:1-2); chép cuộn sách qua Ba-rúc (36:1-4); năm 11 tháng 4 ngày 9 thành phá (39:1-2); cây hạnh - Chúa tỉnh thức (1:11-12); nồi sôi từ phía bắc (1:13-14); đền thờ Đức Giê-hô-va dối (7:4-7); thầy gốm có thể nắn lại (18:7-10); đập bình gốm không sửa được (19:10-11); lửa cháy trong xương (20:7-9); khốn cho mục tử ác (23:1-4); 70 năm hầu việc Babylon (25:11-12); đeo ách phục vụ Babylon (27:1-7); Ha-na-nia chết trong năm (28:15-17); cầu bình an cho thành Ba-by-lôn (29:4-7); 70 năm tìm hết lòng (29:10-14); Ra-chên khóc con cái (31:15); mua đất A-na-tốt làm dấu hi vọng (32:6-15); Rê-cáp-bít từ chối rượu (35:5-19); Ba-rúc - mạng sống làm của cướp (45:1-5); đảo ngược sáng tạo - tohu wa-bohu (4:23-26); 1 người công bình tha thành (5:1); vì sao kẻ ác thịnh vượng (12:1); tiên tri giả 4 nguồn (14:14); Giê-hô-gia-kim chôn như lừa (22:13-19); tiên tri giả nói bình an dối (23:16-22); chén rượu thạnh nộ cho các nước (25:15-29); người nữ bao quanh người nam (31:22); chồi công bình - YHWH sự công bình (33:14-16); Y-sơ-ra-ên Giu-đa cùng đi tìm Chúa (50:4-5)
+- VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
 #### Task B3-3: Proverbs +60 (20→80)
 - Status: [ ] TODO
