@@ -73,13 +73,13 @@
 - Topics: trông cậy ơn khi Christ hiện ra (1:13); cứu rỗi linh hồn (1:9); tiên tri tìm tòi + thiên sứ ước ao (1:10-12); chớ theo tư dục cũ (1:14); sống trong kính sợ (1:17); sinh lại bởi lời hằng sống (1:23); Christ định trước sáng thế (1:20); lột 5 tội xã hội (2:1); đền thờ thuộc linh + thầy tế lễ chung (2:4-5); Christ hòn đá góc Si-ôn (2:6-8) — đá bị bỏ trở nên đá góc; trước không phải dân nay là dân Chúa (2:10); cách ăn ở tốt giữa dân ngoại (2:12); phục tùng vì cớ Chúa (2:13-14); 4 mệnh lệnh tôn kính (2:17); Christ mang tội + chữa lành lằn roi (2:24); chiên lạc về với Đấng Chăn (2:25); vợ chinh phục chồng không đạo (3:1-2); chồng tôn kính vợ là kế tự ơn sự sống (3:7); lấy phước trả ác (3:9); phước cho người chịu khổ vì công bình (3:13-14); Christ giảng cho linh hồn bị tù (3:19-20); tư tưởng Christ làm khí giới (4:1); Tin Lành cho kẻ chết (4:6); tận thế gần — khôn + tỉnh + cầu (4:7); ân tứ phục vụ như quản lý (4:10-11); bị mắng vì Christ — Thần Vinh đậu (4:14); xét đoán từ nhà Chúa (4:17); giao linh hồn cho Đấng Tạo Hóa (4:19); chăn 3 KHÔNG + Đấng Chăn Trưởng + mão triều thiên không phai (5:1-4)
 - VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
-#### Task B2-6: 1 John +30 (20→50)
-- Status: [ ] TODO
-- Current: 20 (E14 M5 H1) → Target: 50 (E15 M23 H12)
-- Plan: +1 Easy + 18 Medium + 11 Hard
-- File(s): `1john_quiz.json` + `1john_quiz_en.json` + `scripts/append_1john_v3b.py`
-- Strategy: "Đức Chúa Trời là tình yêu" 4:8, 16; "Đức Chúa Trời là sự sáng" 1:5; 3 tests of faith (vâng lời + yêu thương + tin); cảnh báo Antichrist; assurance of salvation 5:13; bụng + huyết Christ 5:6-8
-- Commit: `feat(seed): 1 John +30 V3 B2 quality expansion (20→50)`
+#### Task B2-6: 1 John +30 (20→50) [x] DONE 2026-04-28
+- 20→**50** (E15 M23 H12, ratio **30.0/46.0/24.0%** — gần khớp 30/45/25)
+- Pool +30: 1 Easy + 18 Medium + 11 Hard VI + 30 EN 1:1
+- Single idx: 0:8, 1:7, 2:8, 3:7 (well distributed)
+- 30 single + 0 multi
+- Topics: Đức Chúa Trời là tình yêu (4:16); thông công với Cha và Con (1:3); nói thông công đi tối tăm = dối (1:6); nói chưa phạm tội = cho Chúa là dối (1:10); bước đi như Christ (2:6); ghét anh em = trong tối tăm (2:9-11); thế gian qua đi - ý Chúa đời đời (2:17); nhiều antichrist từ chúng ta ra (2:18-19); vừa cũ vừa mới điều răn (2:7-8); xức dầu từ Đấng thánh (2:20, 2:27); sẽ giống như Christ khi thấy Ngài (3:2); yêu thương lẫn nhau (3:11); Ca-in dữ ghét công bình (3:12); yêu thương = đã vượt qua sự chết (3:14); ghét = giết người (3:15); đóng lòng với anh em thiếu (3:17); phá công việc ma quỉ (3:8); điều răn: tin + yêu (3:23); thử các thần xưng Christ trong xác thịt (4:1-3); Đấng trong ta lớn hơn thế gian (4:4); yêu sinh bởi Chúa (4:7); Cha sai Con một mình (4:9); yêu Chúa nhưng ghét anh em = dối (4:20); tin Jêsus = sinh bởi Chúa (5:1); đức tin thắng thế gian (5:4-5); Thánh Linh + nước + huyết (5:6-8); sinh bởi Chúa kẻ ác không đụng (5:18-19); trí khôn biết Chân Thật + tránh hình tượng (5:20-21)
+- VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
 ### Priority B3 (5 sách OT major)
 

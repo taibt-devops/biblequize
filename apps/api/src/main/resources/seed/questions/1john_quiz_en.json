@@ -535,5 +535,785 @@
       "Epistle",
       "Basic"
     ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 4,
+    "verseStart": 16,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to 1 John 4:16, what have believers KNOWN and BELIEVED? Who abides in love?",
+    "explanation": "1 John 4:16 — 'So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him.' SECOND time 'GOD IS LOVE' (4:8 first time). Core of 1 John. Does NOT say God HAS love — he IS love in his being.",
+    "language": "en",
+    "options": [
+      "Known God's strength — who lives well abides in him",
+      "Known God's righteousness — who does good abides in him",
+      "KNOWN + BELIEVED the love God has for us — God IS LOVE; whoever abides in love abides in God, and God abides in him",
+      "Known God's wisdom — who is wise abides in him"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "God is love",
+      "Basic"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "verseStart": 3,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to 1 John 1:3, what is John's purpose in PROCLAIMING to believers?",
+    "explanation": "1 John 1:3 — 'that which we have seen and heard we proclaim also to you, so that you too may have fellowship with us; and indeed our fellowship is with the Father and with his Son Jesus Christ.' 'FELLOWSHIP' (koinōnia) = sharing, communion. The Gospel does NOT just teach theory — it draws people into RELATIONSHIP with Father + Son + community.",
+    "language": "en",
+    "options": [
+      "So they learn doctrine (according to the text's framing)",
+      "So they may be healed (per the textual narrative)",
+      "So they may do miracles (as described in the passage)",
+      "So that they may also have FELLOWSHIP with us — and our fellowship is WITH the FATHER and his SON Jesus Christ"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Fellowship with Father + Son",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to 1 John 1:6, if one CLAIMS fellowship with God yet WALKS in DARKNESS, what?",
+    "explanation": "1 John 1:6 — 'If we say we have fellowship with him while we walk in darkness, we lie and do not practice the truth.' 1 John tests FALSE faith with 3 'IF WE SAY': (1) 'I have fellowship' but walk in dark = lie; (2) 'No sin' (1:8); (3) 'Not sinned' (1:10). All WORDS contradict ACTIONS.",
+    "language": "en",
+    "options": [
+      "He LIES and does NOT practice the truth",
+      "Still receives God's mercy",
+      "Just a slow learner",
+      "Weak in faith (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Saying fellowship in dark = lie",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to 1 John 1:10, if one CLAIMS NEVER to have SINNED, what about God?",
+    "explanation": "1 John 1:10 — 'If we say we have not sinned, we make him a liar, and his word is not in us.' Contrasts 1:8 ('no sin') with 1:10 ('never sinned'). God has DECLARED all people sinners — denying = making GOD a LIAR. Extremely serious.",
+    "language": "en",
+    "options": [
+      "Honors him (per the textual narrative)",
+      "Praises him (according to the text's framing)",
+      "Makes him a LIAR — and his Word is NOT in us",
+      "Is humble before him"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "No sin = makes God liar",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to 1 John 2:6, whoever claims to abide in Christ must walk how?",
+    "explanation": "1 John 2:6 — 'whoever says he abides in him ought to walk in the same way in which he walked.' 'AS HE WALKED' = Christ's earthly life. The IMITATIO CHRISTI concept — imitate Christ. Saying 'I ABIDE IN HIM' is not enough — must WALK as HE walked. Faith is NOT a profession — it's a life.",
+    "language": "en",
+    "options": [
+      "Walk as a Jew (per the textual narrative)",
+      "Walk in the same way in which HE WALKED",
+      "Walk as the patriarchs",
+      "Walk according to custom"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Walk as he walked",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to 1 John 2:9-11, whoever CLAIMS to be in the light but HATES his brother is what?",
+    "explanation": "1 John 2:9-11 — 'Whoever says he is in the light and hates his brother is still in darkness... whoever hates his brother is in the darkness and walks in darkness, and does not know where he is going, because the darkness has blinded his eyes.' Test #2 (after OBEDIENCE 2:3-5) = LOVE for brothers. No love = no Christ.",
+    "language": "en",
+    "options": [
+      "A slow learner (according to the text's framing)",
+      "Still under grace (as described in the passage)",
+      "Good but weak (per the textual narrative) (in the story's sequence)",
+      "STILL in DARKNESS — walks in darkness, does NOT know where he goes, because darkness has BLINDED his eyes"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Hate brother = in darkness",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to 1 John 2:17, what is the world + its desires? What of those who do God's will?",
+    "explanation": "1 John 2:17 — 'And the world is passing away along with its desires, but whoever does the will of God abides forever.' Contrast: WORLD (passing) vs GOD'S WILL (eternal). Same teaching as Jesus 'world passes, my words do NOT' (Mt 24:35). Invest in the ETERNAL = do God's WILL.",
+    "language": "en",
+    "options": [
+      "The world + its desires PASSING AWAY — whoever DOES the will of God ABIDES FOREVER",
+      "The world will continue — good deeds rewarded",
+      "The world will improve — collaborators rewarded",
+      "The world will worsen — survivors rewarded"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "World passes - God's will abides",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to 1 John 2:18-19, who appeared showing it's the LAST HOUR? They came FROM where but did NOT belong to whom?",
+    "explanation": "1 John 2:18-19 — 'Children, it is the last hour, and as you have heard that antichrist is coming, so now many antichrists have come. Therefore we know that it is the last hour. They went out from us, but they were not of us.' Antichrist is NOT a single person only — many anti-Christ spirits. They left the Church = proof they were NOT truly believers.",
+    "language": "en",
+    "options": [
+      "False prophets — from Israel (as described in the passage)",
+      "False kings — from Rome (per the textual narrative)",
+      "MANY ANTICHRISTS — they went out FROM us, but they did NOT belong to us",
+      "False priests — from temple (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Antichrists went out",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to 1 John 3:2, believers are NOW children of God — what is not yet seen? When Christ APPEARS?",
+    "explanation": "1 John 3:2 — 'Beloved, we are God's children now, and what we will be has not yet appeared; but we know that when he appears we shall be like him, because we shall see him as he is.' 2 'ALREADY' (children), '+ NOT YET' (what we shall be), 'WILL' (be like him). The LIKENESS (homoioi) to Christ through the SEEING (opsometha).",
+    "language": "en",
+    "options": [
+      "Heaven — will enter (per the textual narrative)",
+      "What we WILL BE has not yet appeared — when HE appears we shall be LIKE HIM, for we shall see HIM AS HE IS",
+      "Reward — will receive (as described in the passage)",
+      "Enemy — will defeat (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Like him when see him",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to 1 John 3:11, what command have believers heard from the beginning?",
+    "explanation": "1 John 3:11 — 'For this is the message that you have heard from the beginning, that we should love one another.' 'FROM THE BEGINNING' = since hearing the Gospel. NOT a new command — the same Jesus gave (John 13:34). Next verse (3:12) contrasts: NOT be like Cain (killing brother Abel).",
+    "language": "en",
+    "options": [
+      "Fear God",
+      "Keep Moses' law",
+      "Give alms",
+      "LOVE ONE ANOTHER"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Love one another",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to 1 John 3:14, how do believers KNOW they have PASSED from DEATH to LIFE?",
+    "explanation": "1 John 3:14 — 'We know that we have passed out of death into life, because we love the brothers. Whoever does not love abides in death.' LOVE = evidence of ETERNAL LIFE. Does NOT say love SAVES — says love is a SIGN of being saved. Unlike Paul (faith = evidence) — John makes LOVE a test.",
+    "language": "en",
+    "options": [
+      "Because we LOVE the brothers — whoever does NOT love abides in DEATH",
+      "Because we do miracles (as described in the passage)",
+      "Because of wealth (per the textual narrative)",
+      "Because of learning (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Love = passed from death",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to 1 John 3:15, whoever HATES his brother is what? And does NOT have what?",
+    "explanation": "1 John 3:15 — 'Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him.' Same teaching as Jesus (Mt 5:21-22) — anger toward a brother = like murder. Reason: MURDER begins INSIDE the heart. Next verse (3:16) — Christ LAID DOWN HIS LIFE for us = the MODEL of love.",
+    "language": "en",
+    "options": [
+      "Small sinner (per the textual narrative)",
+      "Slow learner (according to the text's framing)",
+      "A MURDERER — and NO MURDERER has eternal life abiding in him",
+      "Weak in faith (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Hate = murderer",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to 1 John 3:17, whoever has the WORLD'S GOODS, sees a brother in need, yet CLOSES HIS HEART, what?",
+    "explanation": "1 John 3:17 — 'But if anyone has the world's goods and sees his brother in need, yet closes his heart against him, how does God's love abide in him?' 'CLOSES HEART' (kleisē ta splanchna) = shuts the heart's door (splanchna = bowels, seat of compassion). NO God's love if no LOVE shown to needy brothers. Practical love test.",
+    "language": "en",
+    "options": [
+      "Still loved by God",
+      "How does God's love abide in him?",
+      "Wise saver (per the textual narrative)",
+      "Has property rights"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Closes heart to needy brother",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to 1 John 4:1, what should believers NOT believe? What must they do?",
+    "explanation": "1 John 4:1 — 'Beloved, do not believe every spirit, but test the spirits to see whether they are from God, for many false prophets have gone out into the world.' 'TEST THE SPIRITS' (dokimazete ta pneumata) = examine. Believers should NOT be gullible — must DISCERN true/false. Next verses (4:2-3) give the CRITERION: confessing Jesus Christ has COME in the flesh = from God.",
+    "language": "en",
+    "options": [
+      "Don't believe rumors — verify (per the textual narrative)",
+      "Don't believe every teacher — discern (according to the text's framing)",
+      "Don't believe every book — read carefully (as described in the passage)",
+      "Don't believe every SPIRIT — TEST the spirits whether they are from God, for MANY FALSE PROPHETS have gone out into the world"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Test the spirits",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to 1 John 4:4, whom have believers OVERCOME? Why?",
+    "explanation": "1 John 4:4 — 'Little children, you are from God and have overcome them, for he who is in you is greater than he who is in the world.' 'HE IN YOU' = the Holy Spirit / Christ. 'HE IN THE WORLD' = Satan, antichrist. Encouraging believers in spiritual warfare: NO need to fear — Christ HAS WON.",
+    "language": "en",
+    "options": [
+      "Overcome (false) SPIRITS — because HE who is in believers is GREATER than HE who is in the world",
+      "Defeated kings — military (per the textual narrative)",
+      "Defeated teachers — learning (according to the text's framing)",
+      "Defeated enemies — protection (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Greater is in you",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to 1 John 4:7, why must believers LOVE ONE ANOTHER?",
+    "explanation": "1 John 4:7 — 'Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God.' Equation: LOVE = BORN OF GOD = KNOWS GOD. NOT loving = not yet born = does not know God. A short but extremely practical test.",
+    "language": "en",
+    "options": [
+      "Ancestral tradition (as described in the passage)",
+      "Mosaic law (per the textual narrative)",
+      "Because LOVE is FROM God — whoever LOVES has been BORN OF God and KNOWS God",
+      "Society expects (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Love = born of God",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 4,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to 1 John 4:9, how was God's love MANIFESTED to us?",
+    "explanation": "1 John 4:9 — 'In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him.' 'ONLY SON' (monogenēs) = unique, one-of-a-kind. Same teaching John 3:16. Don't measure God's love by circumstances — measure by the CROSS. Purpose: that we might LIVE (zōē) — not just exist but LIVE eternally.",
+    "language": "en",
+    "options": [
+      "Through creation (according to the text's framing)",
+      "God SENT HIS ONLY SON into the world — that we might LIVE through him",
+      "Through the OT prophets (as described in the passage)",
+      "Through angels (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Father sent only Son",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 4,
+    "verseStart": 20,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to 1 John 4:20, whoever SAYS 'I love God' but HATES his brother is what?",
+    "explanation": "1 John 4:20 — 'If anyone says, \"I love God,\" and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen.' Argument: brother SEEN = visible test of love. God UNSEEN = harder to verify. Love for God shown through PHYSICAL love.",
+    "language": "en",
+    "options": [
+      "Weak in faith (as described in the passage)",
+      "Indifferent (per the textual narrative) (in the story's sequence)",
+      "Slow learner (according to the text's framing)",
+      "A LIAR — for whoever does NOT love his brother whom he HAS SEEN cannot love God whom he HAS NOT SEEN"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Love God hate brother = liar",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to 1 John 5:1, whoever BELIEVES Jesus is the CHRIST is what?",
+    "explanation": "1 John 5:1 — 'Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him.' FAITH produces LOVE. Belonging to the SAME FAMILY (born of the same Father) = naturally LOVES the brothers. Simple principle: accept the Father = love the siblings.",
+    "language": "en",
+    "options": [
+      "BORN OF GOD — and whoever loves the Father loves whoever has been born of him",
+      "A Gentile — not yet born (as described in the passage)",
+      "Learned — venerable (per the textual narrative)",
+      "Wealthy — God-blessed (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Believe Jesus = born of God",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to 1 John 2:7-8, is the command of love OLD or NEW? Why?",
+    "explanation": "1 John 2:7-8 — 'Beloved, I am writing you no new commandment, but an old commandment that you had from the beginning... At the same time, it is a new commandment that I am writing to you, which is true in him and in you, because the darkness is passing away and the true light is already shining.' OLD = from Israel's time (Lev 19:18) or hearing the Gospel. NEW = real in Christ + the Church now.",
+    "language": "en",
+    "options": [
+      "Only old — from OT (according to the text's framing) (as the text indicates)",
+      "BOTH OLD (from the beginning) AND NEW (becoming real in Christ + believers) — because DARKNESS is PASSING + the TRUE LIGHT is shining",
+      "Only new — never before (as described in the passage) (per the original content)",
+      "Expired (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Both old and new",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to 1 John 2:20, what do believers have from the Holy One? Therefore they KNOW what?",
+    "explanation": "1 John 2:20 — 'But you have been anointed by the Holy One, and you all have knowledge.' 'ANOINTING' (chrisma) = the anointing — from the HOLY ONE (Christ). 'ALL KNOW' does NOT mean knowing every cosmic fact — knowing the essential TRUTH (especially distinguishing TRUE Christ + false). Opposite of GNOSTIC (only a few special).",
+    "language": "en",
+    "options": [
+      "Grace — knows mysteries (according to the text's framing)",
+      "Power — knows miracles (per the textual narrative)",
+      "Revelation — knows future (as described in the passage)",
+      "ANOINTING from the HOLY ONE — and they ALL KNOW"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Anointing from Holy One",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "verseStart": 27,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to 1 John 2:27, what does the ANOINTING believers received from Christ do?",
+    "explanation": "1 John 2:27 — 'But the anointing that you received from him abides in you, and you have no need that anyone should teach you. But as his anointing teaches you about everything, and is true, and is no lie — just as it has taught you, abide in him.' Does NOT say believers don't need teachers — says they don't need OUTSIDE teachers to DISCERN truth, because of the Spirit. Different from Gnosticism.",
+    "language": "en",
+    "options": [
+      "Gives them miracles (as described in the passage)",
+      "Makes them rich (according to the text's framing)",
+      "TEACHES them ABOUT EVERYTHING + the anointing is TRUE, not a lie — so abide in him",
+      "Makes them fly (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Anointing teaches all",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to 1 John 3:8, the Son of God appeared to do what to the devil's works?",
+    "explanation": "1 John 3:8 — 'Whoever makes a practice of sinning is of the devil, for the devil has been sinning from the beginning. The reason the Son of God appeared was to destroy the works of the devil.' 'DESTROY' (lysē) = dissolve, break apart — like dismantling a structure. Christ does NOT just forgive — he dismantles the devil's SYSTEM. Same teaching as Heb 2:14 (destroy him who had the power of death).",
+    "language": "en",
+    "options": [
+      "DESTROY the WORKS of the devil — for the devil has been SINNING from the beginning",
+      "Learn from the devil (according to the text's framing)",
+      "Pity the devil (per the textual narrative)",
+      "Cooperate with the devil (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Destroy works of devil",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "verseStart": 12,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to 1 John 3:12, why did Cain kill his brother Abel? Believers should NOT be like whom?",
+    "explanation": "1 John 3:12 — 'We should not be like Cain, who was of the evil one and murdered his brother. And why did he murder him? Because his own deeds were evil and his brother's righteous.' Genesis 4 — Cain killed Abel out of ENVY + EVIL HEART. Note: 1 John says Cain was 'of the evil one' (ek tou ponērou) — NOT physical descent, but spiritual. Gen 3:15 'seed of the serpent'.",
+    "language": "en",
+    "options": [
+      "Property dispute — don't be like greedy kings",
+      "Because his WORKS were EVIL + brother's RIGHTEOUS — NOT be like Cain (of the EVIL ONE)",
+      "Parents favored brother — don't be like neglected child",
+      "Brother took land — don't be like miser (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Cain evil envious of righteous",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to 1 John 3:23, what is the COMMANDMENT of God (summarized)?",
+    "explanation": "1 John 3:23 — 'And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us.' Note: John uses SINGULAR 'commandment' (entolē) — NOT 2 commands but ONE with 2 sides: FAITH + LOVE. Same principle: believe Christ → love brothers.",
+    "language": "en",
+    "options": [
+      "Keep Sabbath + tithe (according to the text's framing)",
+      "Pray 5x + fast (per the textual narrative)",
+      "Believe prophets + keep law (as described in the passage)",
+      "BELIEVE in the NAME of his Son Jesus Christ + LOVE ONE ANOTHER as he commanded"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Commandment: Believe + Love",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 4,
+    "verseStart": 2,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to 1 John 4:2-3, what is the CRITERION to distinguish God's Spirit from antichrist?",
+    "explanation": "1 John 4:2-3 — 'By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, and every spirit that does not confess Jesus is not from God. This is the spirit of the antichrist.' THE criterion is INCARNATION. Antichrist denies Christ TRULY became flesh. Related to the Docetic heresy.",
+    "language": "en",
+    "options": [
+      "Every spirit that CONFESSES Jesus Christ has COME IN THE FLESH is FROM GOD; every spirit that does NOT confess Jesus is NOT from God — that is the ANTICHRIST spirit, already in the world",
+      "Spirit doing miracles is from God (according to the text's framing) (per the original content)",
+      "Spirit speaking tongues is from God (as described in the passage) (as the text indicates) (in the context of the passage)",
+      "Spirit teaching law is from God (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Confess Christ in the flesh",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 5,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to 1 John 5:4-5, who overcomes whom (born of God)? What is the VICTORY? Who is the conqueror?",
+    "explanation": "1 John 5:4-5 — 'For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world — our faith. Who is it that overcomes the world except the one who believes that Jesus is the Son of God?' 'WORLD' (kosmos) = the anti-God system. FAITH = the conquering weapon. NOT personal effort — but TRUST in Christ as the weapon.",
+    "language": "en",
+    "options": [
+      "Conquer physical enemy — by army — soldiers",
+      "Conquer sin — by law-keeping — the obedient",
+      "Conquer the WORLD — by FAITH — the one who BELIEVES Jesus is the Son of God",
+      "Conquer temptation — by self-control — the persevering"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Faith overcomes world",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 5,
+    "verseStart": 6,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to 1 John 5:6-8, what 3 witnesses (per the older Greek manuscripts: 3 EARTHLY witnesses)?",
+    "explanation": "1 John 5:6-8 — 'This is he who came by water and blood — Jesus Christ; not by the water only but by the water and the blood... For there are three that testify: the Spirit and the water and the blood; and these three agree.' 3 WITNESSES: WATER (Christ's baptism in Jordan), BLOOD (Christ's death on the cross), SPIRIT (testimony in believers). Against GNOSTICS (Cerinthus separated Christ from Jesus at the cross).",
+    "language": "en",
+    "options": [
+      "Father + Word + Spirit (as described in the passage)",
+      "The SPIRIT + water + blood — 3 witnesses agreeing (about Christ)",
+      "3 angels (per the textual narrative)",
+      "Paul + Peter + John (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Spirit + water + blood",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 5,
+    "verseStart": 18,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to 1 John 5:18-19, what does the one BORN OF GOD do with sin? Where is the WORLD?",
+    "explanation": "1 John 5:18-19 — 'We know that everyone who has been born of God does not keep on sinning, but he who was born of God protects him, and the evil one does not touch him. We know that we are from God, and the whole world lies in the power of the evil one.' Does NOT say never sins — says does not LIVE IN sin (1:8 admits we have sin). 'HE WHO WAS BORN OF GOD' = Christ — who protects believers.",
+    "language": "en",
+    "options": [
+      "He does NOT KEEP ON SINNING (sin as lifestyle) — He WHO WAS BORN OF GOD protects him + the EVIL ONE does NOT touch him; the world LIES IN the POWER of the EVIL ONE",
+      "Never wrong (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Auto-forgiven (according to the text's framing) (as the text indicates) (in the context of the passage)",
+      "No need to repent (as described in the passage) (per the original content) (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Born of God: evil cannot touch",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "1 John",
+    "chapter": 5,
+    "verseStart": 20,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to 1 John 5:20-21, what did the Son of God come to GIVE? What is the closing warning?",
+    "explanation": "1 John 5:20-21 — 'And we know that the Son of God has come and has given us understanding, so that we may know him who is true; and we are in him who is true, in his Son Jesus Christ. He is the true God and eternal life. Little children, keep yourselves from idols.' 'TRUE' (alēthinos) repeats 3x. 'JESUS IS GOD' (explicit). IDOLS = anything replacing Christ.",
+    "language": "en",
+    "options": [
+      "Power — use it well (as described in the passage) (as the text indicates)",
+      "Wealth — manage it (per the textual narrative) (in the story's sequence)",
+      "UNDERSTANDING to KNOW the TRUE ONE (Jesus Christ is the true God + eternal life) — closing: KEEP YOURSELVES from IDOLS",
+      "Peace — pass it on (according to the text's framing) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "1 John",
+      "Epistle",
+      "Understanding + keep from idols",
+      "Advanced"
+    ]
   }
 ]
