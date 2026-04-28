@@ -7,7 +7,10 @@ import ComebackModal from '../components/ComebackModal'
 import DailyBonusModal from '../components/DailyBonusModal'
 import DailyMissionsCard from '../components/DailyMissionsCard'
 import EarlyRankedUnlockModal from '../components/EarlyRankedUnlockModal'
+import EmptyLeaderboardCTA from '../components/EmptyLeaderboardCTA'
+import FeaturedDailyChallenge from '../components/FeaturedDailyChallenge'
 import GameModeGrid from '../components/GameModeGrid'
+import LockedModesTeaser from '../components/LockedModesTeaser'
 import MilestoneBanner from '../components/MilestoneBanner'
 import TierProgressBar from '../components/TierProgressBar'
 import TutorialOverlay from '../components/TutorialOverlay'
@@ -122,86 +125,58 @@ export default function Home() {
         onDismiss={dismissEarlyUnlock}
       />
       <TutorialOverlay />
-      {/* ── Hero: Greeting + Tier ── */}
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 relative overflow-hidden rounded-2xl bg-surface-container p-8 border border-outline-variant/10 group">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full -mr-20 -mt-20 blur-3xl group-hover:bg-secondary/10 transition-colors" />
-          <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-8">
-            <div className="relative">
-              <div className="w-32 h-32 rounded-full border-4 border-secondary/20 flex items-center justify-center bg-surface-container-high shadow-inner">
-                <span className={`material-symbols-outlined text-6xl ${tier.current.colorTailwind}`} style={FILL_1}>{tier.current.iconMaterial}</span>
-              </div>
-              <div data-testid="home-tier-badge" className="absolute -bottom-2 -right-2 bg-secondary text-on-secondary text-[10px] font-black px-2 py-1 rounded-md shadow-lg uppercase tracking-tighter">
-                {t(tier.current.nameKey)}
-              </div>
+      {/* ── Hero: compact 1-row (greeting + tier in one card) ── */}
+      <section
+        data-testid="home-hero"
+        className="relative overflow-hidden rounded-2xl bg-surface-container p-6 md:p-8 border border-outline-variant/10 group"
+      >
+        <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full -mr-20 -mt-20 blur-3xl group-hover:bg-secondary/10 transition-colors pointer-events-none" />
+        <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6">
+          {/* Avatar/tier badge */}
+          <div className="relative shrink-0">
+            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-secondary/20 flex items-center justify-center bg-surface-container-high shadow-inner">
+              <span className={`material-symbols-outlined text-4xl md:text-5xl ${tier.current.colorTailwind}`} style={FILL_1}>{tier.current.iconMaterial}</span>
             </div>
-            <div className="flex-1 space-y-4">
-              <div>
-                <h1 data-testid="home-greeting" className="text-3xl font-black tracking-tight text-on-surface mb-1">
-                  {greeting}, <span data-testid="home-user-name">{userName}</span>!
-                </h1>
-                <div className="flex items-center gap-1.5 text-xs font-bold text-secondary mt-1">
-                  <span className="material-symbols-outlined text-sm" style={FILL_1}>local_fire_department</span>
-                  <span data-testid="home-streak-count">{meData?.currentStreak ?? 0}</span>
-                  <span className="text-on-surface-variant">{t('home.dayStreak', { defaultValue: 'day streak' })}</span>
-                </div>
-                <p className="text-on-surface-variant text-sm font-medium">
-                  {tier.next ? (
-                    <>{t('home.journeyTo')} <span className="text-secondary font-bold">{t(tier.next.nameKey)}</span>.</>
-                  ) : (
-                    <span data-testid="home-max-tier-msg" className="text-secondary font-bold">{t('home.maxTierReached')}</span>
-                  )}
-                </p>
-              </div>
-              <div className="space-y-2">
-                <div className="flex justify-between items-end">
-                  <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">{t('home.tierProgress')}</span>
-                  <span data-testid="home-total-points" className="text-xs font-bold text-on-surface">
-                    {(totalPoints ?? 0).toLocaleString()} {tier.next ? `/ ${(tier.next.minPoints ?? 0).toLocaleString()} ${t('home.points')}` : t('home.points')}
-                  </span>
-                </div>
-                <div className="h-3 w-full bg-primary-container rounded-full overflow-hidden">
-                  <div className="h-full gold-gradient rounded-full shadow-[0_0_12px_rgba(248,189,69,0.3)]" style={{ width: `${tier.progressPct}%` }} />
-                </div>
-                {tier.next && (
-                  <p className="text-[10px] text-right text-on-surface-variant font-medium">
-                    {t('home.pointsToNext', { points: tier.pointsToNext.toLocaleString(), tier: t(tier.next.nameKey) })}
-                  </p>
-                )}
-                <div data-testid="home-tier-progress-bar"><TierProgressBar /></div>
-                <MilestoneBanner />
-              </div>
+            <div data-testid="home-tier-badge" className="absolute -bottom-2 -right-2 bg-secondary text-on-secondary text-[10px] font-black px-2 py-1 rounded-md shadow-lg uppercase tracking-tighter">
+              {t(tier.current.nameKey)}
             </div>
           </div>
-        </div>
 
-        {/* Next Rank Preview */}
-        <div data-testid="home-next-tier-card" className="rounded-2xl bg-surface-container-low border border-outline-variant/10 p-6 flex flex-col items-center justify-center text-center space-y-4">
-          {tier.next ? (
-            <>
-              <div className="w-20 h-20 rounded-2xl glass-panel flex items-center justify-center border border-white/5">
-                <span className={`material-symbols-outlined text-4xl ${tier.next.colorTailwind}`} style={FILL_1}>{tier.next.iconMaterial}</span>
+          {/* Greeting + streak + tier progress in a single column */}
+          <div className="flex-1 min-w-0 space-y-3">
+            <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+              <h1 data-testid="home-greeting" className="text-2xl md:text-3xl font-black tracking-tight text-on-surface">
+                {greeting}, <span data-testid="home-user-name">{userName}</span>!
+              </h1>
+              <div className="flex items-center gap-1.5 text-xs font-bold text-secondary">
+                <span className="material-symbols-outlined text-sm" style={FILL_1}>local_fire_department</span>
+                <span data-testid="home-streak-count">{meData?.currentStreak ?? 0}</span>
+                <span className="text-on-surface-variant">{t('home.dayStreak', { defaultValue: 'day streak' })}</span>
               </div>
-              <div>
-                <h3 className="text-lg font-bold text-on-surface uppercase tracking-tight">{t('home.nextTier')}</h3>
-                <p className={`text-2xl font-black ${tier.next.colorTailwind}`}>{t(tier.next.nameKey)}</p>
+            </div>
+
+            <div className="space-y-1.5">
+              <div className="flex justify-between items-baseline">
+                <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">{t('home.tierProgress')}</span>
+                <span data-testid="home-total-points" className="text-xs font-bold text-on-surface">
+                  {(totalPoints ?? 0).toLocaleString()} {tier.next ? `/ ${(tier.next.minPoints ?? 0).toLocaleString()} ${t('home.points')}` : t('home.points')}
+                </span>
               </div>
-              <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary/10 border border-tertiary/20">
-                <span className="material-symbols-outlined text-xs text-tertiary">auto_awesome</span>
-                <span className="text-[10px] font-bold text-tertiary uppercase">{t('home.unlockRewards')}</span>
+              <div className="h-2.5 w-full bg-primary-container rounded-full overflow-hidden">
+                <div className="h-full gold-gradient rounded-full shadow-[0_0_12px_rgba(248,189,69,0.3)]" style={{ width: `${tier.progressPct}%` }} />
               </div>
-            </>
-          ) : (
-            <>
-              <div className="w-20 h-20 rounded-2xl glass-panel flex items-center justify-center border border-white/5">
-                <span className="material-symbols-outlined text-4xl text-secondary" style={FILL_1}>workspace_premium</span>
-              </div>
-              <div>
-                <h3 className="text-lg font-bold text-secondary uppercase tracking-tight">{t('home.maxTier')}</h3>
-                <p className="text-sm text-on-surface-variant">{t('home.conqueredAll')}</p>
-              </div>
-            </>
-          )}
+              {tier.next ? (
+                <p className="text-[10px] text-on-surface-variant font-medium">
+                  {t('home.pointsToNext', { points: tier.pointsToNext.toLocaleString(), tier: t(tier.next.nameKey) })}
+                </p>
+              ) : (
+                <p data-testid="home-max-tier-msg" className="text-[10px] text-secondary font-bold">{t('home.maxTierReached')}</p>
+              )}
+            </div>
+
+            <div data-testid="home-tier-progress-bar"><TierProgressBar /></div>
+            <MilestoneBanner />
+          </div>
         </div>
       </section>
 
@@ -218,13 +193,20 @@ export default function Home() {
       </section>
       ) })()}
 
-      {/* ── Game Modes ── */}
+      {/* ── Featured Daily Challenge (hero CTA for tier-1) ── */}
+      <FeaturedDailyChallenge />
+
+      {/* ── Game Modes ──
+          Tier 1 sees only Practice + Church Groups (the rest live in
+          <LockedModesTeaser /> below). Tier 2+ sees the full grid. */}
       <section className="space-y-4">
         <div className="flex justify-between items-center">
           <h2 className="text-xl font-black tracking-tight text-on-surface">{t('home.gameModes')}</h2>
-          <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
-            {t('home.exploreModes', { count: 9 })}
-          </span>
+          {userTierLevel >= 2 && (
+            <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
+              {t('home.exploreModes', { count: 9 })}
+            </span>
+          )}
         </div>
         <GameModeGrid
           userStats={{
@@ -235,6 +217,7 @@ export default function Home() {
           }}
           userTier={userTierLevel}
           earlyRankedUnlock={meData?.earlyRankedUnlock ?? false}
+          layout={userTierLevel === 1 ? 'tier1' : 'tier2plus'}
         />
       </section>
 
@@ -245,6 +228,9 @@ export default function Home() {
 
       {/* ── Journey Widget ── */}
       <JourneyWidget />
+
+      {/* ── Locked modes teaser (returns null when tier ≥ 5) ── */}
+      <LockedModesTeaser userTier={userTierLevel} totalPoints={totalPoints} />
 
       {/* ── Leaderboard + Feed ── */}
       <section data-testid="home-leaderboard" className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -272,7 +258,7 @@ export default function Home() {
 
           <div className={`space-y-3 transition-opacity duration-200 ${lbFetching ? 'opacity-50' : 'opacity-100'}`}>
             {leaderboard.length === 0 ? (
-              <p className="text-center text-on-surface-variant py-8">{t('home.noLeaderboardData')}</p>
+              <EmptyLeaderboardCTA />
             ) : leaderboard.map((p: any, i: number) => (
               <div key={p.userId || i} data-testid="leaderboard-row" className={`flex items-center justify-between p-4 rounded-xl ${i === 0 ? 'bg-secondary/5 border border-secondary/10' : 'hover:bg-surface-container-high transition-colors'}`}>
                 <div className="flex items-center gap-4">

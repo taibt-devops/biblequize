@@ -116,14 +116,6 @@ describe('Home Dashboard', () => {
       await waitFor(() => { expect(screen.getAllByText('Môn Đồ').length).toBeGreaterThan(0) })
     })
 
-    it('displays next rank preview (Hiền Triết)', async () => {
-      renderHome()
-      await waitFor(() => {
-        expect(screen.getByText('Hạng kế tiếp')).toBeInTheDocument()
-        expect(screen.getAllByText('Hiền Triết').length).toBeGreaterThanOrEqual(1)
-      })
-    })
-
     it('progress bar width correct for 8200 points (32%)', async () => {
       renderHome()
       await waitFor(() => {
@@ -154,8 +146,10 @@ describe('Home Dashboard', () => {
       })
       renderHome()
       await waitFor(() => {
+        // The hero collapses tier-progress copy down to a single
+        // "max tier reached" line once the user is at Apostle.
+        expect(screen.getByTestId('home-max-tier-msg')).toBeInTheDocument()
         expect(screen.getByText('Đã đạt hạng cao nhất!')).toBeInTheDocument()
-        expect(screen.getByText('Hạng cao nhất')).toBeInTheDocument()
       })
     })
   })
@@ -250,14 +244,18 @@ describe('Home Dashboard', () => {
       })
     })
 
-    it('shows empty state', async () => {
+    it('shows action-oriented empty state with Practice CTA', async () => {
       mockApiGet.mockImplementation((url: string) => {
         if (url.includes('/api/me')) return Promise.resolve({ data: { totalPoints: 0 } })
         if (url.includes('/api/leaderboard')) return Promise.resolve({ data: [] })
         return Promise.reject(new Error('Not found'))
       })
       renderHome()
-      await waitFor(() => { expect(screen.getByText('Chưa có dữ liệu xếp hạng')).toBeInTheDocument() })
+      await waitFor(() => {
+        expect(screen.getByTestId('empty-leaderboard-cta')).toBeInTheDocument()
+      })
+      const cta = screen.getByTestId('empty-leaderboard-cta-button')
+      expect(cta.getAttribute('href')).toBe('/practice')
     })
 
     it('has "Xem tất cả" link', async () => {
