@@ -57,13 +57,13 @@
 - Topics: vui lòng Chúa hay người (1:10); Phao-lô bắt bớ Hội Thánh trước khi tin (1:13-14); A-ra-bi sau khi kêu gọi (1:15-17); 15 ngày với Sê-pha (1:18-19); kẻ bắt bớ rao đức tin (1:23); 14 năm + Ba-na-ba + Tít (2:1-2); 3 trụ cột Gia-cơ Phi-e-rơ Giăng bắt tay hữu giao tình (2:9); Tít không bị ép cắt bì (2:3-5); xưng công bình bởi đức tin KHÔNG bởi luật (2:16); Christ chết vô ích nếu công bình bởi luật (2:21); Ga-la-ti dại dột bị mê hoặc (3:1); nhận Thánh Linh bởi nghe đức tin (3:2-3); cậy luật bị rủa (3:10); Tin Lành rao trước cho Áp-ra-ham (3:8); phước Áp-ra-ham + Thánh Linh (3:14); 430 năm trước luật + luật KHÔNG bãi bỏ giao ước (3:15-17); luật vì cớ tội phạm tạm thời (3:19); con cái bởi đức tin (3:26); mặc lấy Christ qua báp-têm (3:27); dòng dõi Áp-ra-ham qua Christ (3:29); kẻ kế tự nhỏ như tôi mọi (4:1-3); trở lại lề thói hèn mạt (4:9-10); A-ga + Sa-ra alegoria (4:24-26); cắt bì → Christ vô ích (5:2-4); tự do để phục vụ (5:13); yêu láng giềng tóm luật (5:14); mang gánh nặng cho nhau = luật Christ (6:2); làm điều lành cho mọi người (6:10); tân tạo trong Christ (6:15); dấu vết Christ trên thân (6:17)
 - VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
-#### Task B2-4: James +30 (20→50)
-- Status: [ ] TODO
-- Current: 20 (E13 M6 H1) → Target: 50 (E15 M23 H12)
-- Plan: +2 Easy + 17 Medium + 11 Hard
-- File(s): `james_quiz.json` + `james_quiz_en.json` + `scripts/append_james_v3b.py`
-- Strategy: Đức tin + việc làm 2:14-26; miệng lưỡi 3 (cây vả + suối nước + chữ); kiên nhẫn (Gióp + tiên tri); kẻ giàu + kẻ nghèo; cầu nguyện đức tin 5:13-18 (Ê-li); thử thách + cám dỗ 1
-- Commit: `feat(seed): James +30 V3 B2 quality expansion (20→50)`
+#### Task B2-4: James +31 (20→51) [x] DONE 2026-04-28
+- 20→**51** (E15 M24 H12, ratio **29.4/47.1/23.5%** — gần khớp 30/45/25, M dư 1)
+- Pool +31: 2 Easy + 18 Medium + 11 Hard VI + 31 EN 1:1 (+1 medium so với plan)
+- Single idx: 0:7, 1:8, 2:8, 3:8 (well distributed)
+- 31 single + 0 multi
+- Topics: mão triều thiên sự sống (1:12); cầu xin đức tin chớ nghi (1:6); nghèo khoe cao trọng (1:9-10); sinh bởi lời lẽ thật (1:18); nhận lời đã trồng (1:21); nghe + làm như soi gương (1:23-25); phạm 1 = phạm cả luật (2:10-11); thương xót thắng xét đoán (2:13); đức tin không việc làm vô ích (2:14, 26); Áp-ra-ham bạn của Đức Chúa Trời (2:21-23); Ra-háp việc tiếp rước thám tử (2:25); không lỡ lời = trọn vẹn (3:2); lưỡi không ai thuần hóa (3:7-8); khen Chúa + rủa loài người (3:9-10); khôn ngoan thế tục thuộc đất + xác thịt + ma quỉ (3:13-15); bông trái công bình gieo trong hòa bình (3:18); tranh cạnh từ tham dục (4:1-2); bạn thế gian = thù Chúa (4:4); Linh ghen tương + ơn cho khiêm (4:5-6); nói xấu = đoán xét luật (4:11-12); nếu Chúa muốn (4:13-15); rich weep + sét vàng bạc (5:1-3); tiếng kêu thợ gặt thấu Chúa các đạo binh (5:4); đừng oán trách (5:9); tiên tri + Gióp gương nhịn nhục (5:10-11); chớ thề (5:12); cầu nguyện đức tin cứu bệnh (5:15); Ê-li như chúng ta cầu mưa (5:17-18)
+- VI/EN parity 100%, 0 length warnings, 0 duplicate keys
 
 #### Task B2-5: 1 Peter +30 (20→50)
 - Status: [ ] TODO

@@ -538,5 +538,811 @@
       "Epistle",
       "Basic"
     ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to James 1:12, what does the one who endures trial receive?",
+    "explanation": "James 1:12 — 'Blessed is the man who remains steadfast under trial, for when he has stood the test he will receive the crown of life, which God has promised to those who love him.' 'CROWN' (stephanos) = victor's wreath. Rev 2:10 same phrase. Trials are NOT for destruction — but to prove and reward enduring faith.",
+    "language": "en",
+    "options": [
+      "Wealth (per the textual narrative)",
+      "Long life (as described in the passage)",
+      "The CROWN of life — promised to those who love him",
+      "Wisdom (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Crown of life",
+      "Basic"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to James 5:9, what should believers NOT do to one another, and why?",
+    "explanation": "James 5:9 — 'Do not grumble against one another, brothers, so that you may not be judged; behold, the Judge is standing at the door.' 'AT THE DOOR' (pro tōn thyrōn) = imminent. Like Jesus' 'I stand at the door and knock' (Rev 3:20). Urgent warning: Christ's return is NEAR, not far.",
+    "language": "en",
+    "options": [
+      "Not quarrel — because the law forbids",
+      "Do not GRUMBLE against one another — for the Judge is standing AT THE DOOR",
+      "Not compete — because envy is sin",
+      "Not marry — because times are hard"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Don't grumble",
+      "Basic"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to James 1:6, how must one ask for wisdom? The doubter is like what?",
+    "explanation": "James 1:6 — 'But let him ask in faith, with no doubting, for the one who doubts is like a wave of the sea that is driven and tossed by the wind.' 1:8 — 'double-minded' (dipsychos) = divided soul. Faith = WHOLEHEARTED trust, not one foot in + one out. Wisdom from God is given ONLY to a sincere heart.",
+    "language": "en",
+    "options": [
+      "Ask once — no repetition needed (as described in the passage)",
+      "Ask with reverence (per the textual narrative)",
+      "Ask with offerings (according to the text's framing)",
+      "Ask in faith, with NO DOUBTING — the doubter is like a WAVE of the sea driven and tossed by the wind"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Ask in faith no doubting",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to James 1:9-10, what should the LOWLY brother boast in? The RICH?",
+    "explanation": "James 1:9-10 — 'Let the lowly brother boast in his exaltation, and the rich in his humiliation, because like a flower of the grass he will pass away.' Inversion of the world: POOR = truly rich in Christ; RICH = truly poor if relying on material. The fading flower image is from Isaiah 40:6-8.",
+    "language": "en",
+    "options": [
+      "Lowly boasts in HIS EXALTATION — Rich boasts in his HUMILIATION (passing like a flower)",
+      "Lowly boasts in poverty — Rich in wealth",
+      "Lowly in wisdom — Rich in health (per the textual narrative)",
+      "Lowly in humility — Rich in glory (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Lowly boast in exaltation",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to James 1:18, by what means did God bring us forth so we are FIRSTFRUITS?",
+    "explanation": "James 1:18 — 'Of his own will he brought us forth by the word of truth, that we should be a kind of firstfruits of his creatures.' 'FIRSTFRUITS' (aparchē) = the first offering presented to God (Lev 23:10) — guarantee for the whole crop. Believers = the prototype + guarantee for the NEW CREATION.",
+    "language": "en",
+    "options": [
+      "By baptismal water (as described in the passage)",
+      "By Christ's blood (according to the text's framing)",
+      "By the WORD of truth — that we should be a kind of FIRSTFRUITS of his creatures",
+      "By good works (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Brought forth by word of truth",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to James 1:21, after PUTTING AWAY filth and excess wickedness, what must believers RECEIVE?",
+    "explanation": "James 1:21 — 'Therefore put away all filthiness and rampant wickedness and receive with meekness the implanted word, which is able to save your souls.' 'IMPLANTED' (emphytos) = embedded/planted. The Word is SOWN in believers by the Spirit. We must REMOVE the trash and PROVIDE soil for the Word to grow.",
+    "language": "en",
+    "options": [
+      "Receive foreign wisdom (as described in the passage)",
+      "Receive the IMPLANTED WORD with meekness — which is able to SAVE your souls",
+      "Receive a new law (per the textual narrative)",
+      "Receive a new title (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Receive implanted word",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to James 1:23-25, the one who only HEARS but does not DO is like whom? And the one who does?",
+    "explanation": "James 1:23-25 — 'For if anyone is a hearer of the word and not a doer, he is like a man who looks intently at his natural face in a mirror. For he looks at himself and goes away and at once forgets what he was like. But the one who looks into the perfect law, the law of liberty, and perseveres, being no hearer who forgets but a doer who acts, he will be blessed in his doing.' Image: mirror = the Word.",
+    "language": "en",
+    "options": [
+      "Like a child — will mature later (per the textual narrative) (in the story's sequence)",
+      "Like a diligent worker — praised (according to the text's framing) (per the original content)",
+      "Like a student — just needs time (as described in the passage) (as the text indicates)",
+      "Like a man LOOKING AT HIS FACE in a MIRROR who walks away and FORGETS; the one who LOOKS into the perfect LAW of liberty — NOT a forgetful hearer — will be BLESSED in his doing"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Hearer like one in mirror",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to James 2:10, what happens if one keeps the WHOLE law but stumbles in ONE point?",
+    "explanation": "James 2:10 — 'For whoever keeps the whole law but fails in one point has become accountable for all of it.' Argument: the law is a UNITY — like a chain, broken at one link = broken whole. Reason: breaking the law = rejecting the AUTHORITY of the LAW-GIVER. Conclusion: NO ONE can keep it all — we need Christ's GRACE.",
+    "language": "en",
+    "options": [
+      "Becomes ACCOUNTABLE for ALL — as if he broke the whole law",
+      "Only that one — separate",
+      "Forgiven by sacrifice (according to the text's framing)",
+      "Light penalty only (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Break one = break all",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to James 2:13, judgment without mercy falls on whom? What TRIUMPHS over judgment?",
+    "explanation": "James 2:13 — 'For judgment is without mercy to one who has shown no mercy. Mercy triumphs over judgment.' Same principle as Mt 5:7 'Blessed are the merciful — they shall receive mercy'. Believers receive enormous mercy from Christ — cannot fail to extend mercy to others.",
+    "language": "en",
+    "options": [
+      "On the wicked — Mercy triumphs",
+      "On the rich — Faith triumphs",
+      "On the one who showed NO MERCY — MERCY triumphs over judgment",
+      "On Gentiles — Hope triumphs"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Mercy triumphs",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to James 2:14, what kind of faith cannot SAVE?",
+    "explanation": "James 2:14 — 'What good is it, my brothers, if someone says he has faith but does not have works? Can that faith save him?' True faith always produces good works (Eph 2:10). If faith does NOT produce works = false faith. Unlike Paul: he opposed WORKS-SALVATION; James opposes COUNTERFEIT FAITH.",
+    "language": "en",
+    "options": [
+      "Small faith (per the textual narrative)",
+      "A faith with profession but NO works",
+      "Faith with doubts",
+      "Faith under trial"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Faith without works useless",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to James 2:21, by what was Abraham justified when offering Isaac?",
+    "explanation": "James 2:21 — 'Was not Abraham our father justified by works when he offered up his son Isaac on the altar?' Citing Gen 22 (Abraham offering Isaac). James's argument: works PROVE faith is real. NOT contradicting Romans 4 — Paul also uses Gen 15:6 (Abraham BELIEVED before Isaac was born) to show faith is the root.",
+    "language": "en",
+    "options": [
+      "By faith alone (per the textual narrative)",
+      "By circumcision (according to the text's framing)",
+      "By another offering (as described in the passage)",
+      "By WORKS when he OFFERED ISAAC his son on the altar"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Abraham justified by works",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to James 2:25, by what was Rahab the prostitute also justified?",
+    "explanation": "James 2:25 — 'And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way?' Rahab (Joshua 2) — a Gentile prostitute — bravely hid the Israelite spies. Her FAITH expressed through ACTION. Same person in Heb 11:31 (faith) — NOT contradictory.",
+    "language": "en",
+    "options": [
+      "By RECEIVING the spies and sending them off by ANOTHER WAY",
+      "By baptism (per the textual narrative)",
+      "By circumcision (as described in the passage)",
+      "By an oath (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Rahab by receiving spies",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to James 2:26, faith without works is like what?",
+    "explanation": "James 2:26 — 'For as the body apart from the spirit is dead, so also faith apart from works is dead.' Vivid image: as a corpse (NO spirit) → false faith (NO works). The closing of the faith + works argument. NOT saying works save — saying works = evidence faith is ALIVE.",
+    "language": "en",
+    "options": [
+      "Like a tree with no leaves",
+      "Like a ship with no sail",
+      "Like a BODY without the SPIRIT — dead",
+      "Like a house with no foundation"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Faith without works dead",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to James 3:2, who does not stumble in word — what is he?",
+    "explanation": "James 3:2 — 'For we all stumble in many ways. And if anyone does not stumble in what he says, he is a perfect man, able also to bridle his whole body.' 'PERFECT' (teleios) = mature. James's argument: who controls the TONGUE = controls his LIFE (a horse's bridle leads → where the body goes; a ship's rudder steers → where the ship goes). Small tongue — large power.",
+    "language": "en",
+    "options": [
+      "Will be wealthy (per the textual narrative)",
+      "He is a PERFECT MAN — able to BRIDLE his whole body",
+      "Will be glorified at once",
+      "Will be a prophet (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Bridle whole body",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to James 3:7-8, every kind of beast, bird, and sea creature can be TAMED — but what cannot be tamed?",
+    "explanation": "James 3:7-8 — 'For every kind of beast and bird, of reptile and sea creature, can be tamed and has been tamed by mankind, but no human being can tame the tongue. It is a restless evil, full of deadly poison.' The HUMAN tongue — the product of civilization — remains untameable by humans. Only the GRACE of the Holy Spirit can.",
+    "language": "en",
+    "options": [
+      "Fire (per the textual narrative)",
+      "The sea (as described in the passage)",
+      "Eagles (according to the text's framing)",
+      "The TONGUE — a restless evil, full of deadly poison"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Tongue untameable",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to James 4:1-2, where do quarrels and fights among believers come from?",
+    "explanation": "James 4:1-2 — 'What causes quarrels and what causes fights among you? Is it not this, that your passions are at war within you? You desire and do not have, so you murder. You covet and cannot obtain, so you fight and quarrel. You do not have, because you do not ask.' External roots = INTERNAL unrest.",
+    "language": "en",
+    "options": [
+      "From your PASSIONS at war in your members — you DESIRE and do not have, MURDER (resent) and covet — do not have because you do not ASK",
+      "From demons (per the textual narrative) (in the story's sequence)",
+      "From the secular world (as described in the passage) (as the text indicates)",
+      "From outside enemies (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Quarrels from passions",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to James 4:13-15, what speech does James rebuke? What replaces it?",
+    "explanation": "James 4:13-15 — 'Come now, you who say, \"Today or tomorrow we will go into such and such a town and spend a year there and trade and make a profit\" — yet you do not know what tomorrow will bring... Instead you ought to say, \"If the Lord wills, we will live and do this or that.\"' The phrase 'D.V.' (Deo Volente, Latin) or 'IF THE LORD WILLS' = a humble reminder — life is a VAPOR.",
+    "language": "en",
+    "options": [
+      "Rebukes 'I am the chief sinner' — must say 'I am holy' (as described in the passage)",
+      "Rebukes 'Today or tomorrow we will go to such-and-such town and trade + gain profit' — must say 'IF THE LORD WILLS, we will live and do this or that'",
+      "Rebukes friendly speech — must speak formally (according to the text's framing)",
+      "Rebukes short prayer — must pray long (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "If the Lord wills",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to James 5:10-11, whom should believers take as EXAMPLES of suffering and PATIENCE? Especially whom for patience?",
+    "explanation": "James 5:10-11 — 'As an example of suffering and patience, brothers, take the prophets who spoke in the name of the Lord. Behold, we consider those blessed who remained steadfast. You have heard of the steadfastness of Job, and you have seen the purpose of the Lord, how the Lord is compassionate and merciful.' JOB = the model of suffering; YET the outcome is good.",
+    "language": "en",
+    "options": [
+      "Kings + Solomon (per the textual narrative)",
+      "Priests + Levites (according to the text's framing)",
+      "The PROPHETS who spoke in the Lord's name + JOB for endurance — the Lord is compassionate and merciful",
+      "The apostles + Paul (as described in the passage)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Prophets + Job examples",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to James 5:12, what should believers NOT do in speech?",
+    "explanation": "James 5:12 — 'But above all, my brothers, do not swear, either by heaven or by earth or by any other oath, but let your \"yes\" be yes and your \"no\" be no, so that you may not fall under condemnation.' Same teaching as Jesus (Mt 5:34-37). Believers must speak HONESTLY — NO need for oaths. If oaths are needed to guarantee speech = already untrustworthy.",
+    "language": "en",
+    "options": [
+      "Not speak much (per the textual narrative)",
+      "Not speak fluently (as described in the passage)",
+      "Not speak rashly (according to the text's framing)",
+      "Do NOT swear — neither by heaven nor by earth nor by anything else — let your 'YES' be YES, your 'NO' NO"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Don't swear",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to James 5:15, what does the prayer of faith do for the sick, and what will the Lord do?",
+    "explanation": "James 5:15 — 'And the prayer of faith will save the one who is sick, and the Lord will raise him up. And if he has committed sins, he will be forgiven.' Does NOT promise HEALING for every disease — says 'save' (sōzō) = deliver, which may include comfort, recovery, and (sometimes) healing. Note: forgiveness if needed. Sickness is NOT automatically due to sin — but sometimes connected.",
+    "language": "en",
+    "options": [
+      "SAVE the sick, the Lord will RAISE HIM UP — and if he has sinned, will be forgiven",
+      "Heal immediately every disease (as described in the passage)",
+      "Take them to heaven (according to the text's framing)",
+      "Give signs (per the textual narrative)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Prayer of faith saves",
+      "Intermediate"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to James 2:11, why does breaking one commandment (e.g., murder) make one accountable for the whole law?",
+    "explanation": "James 2:11 — 'For he who said, \"Do not commit adultery,\" also said, \"Do not murder.\" If you do not commit adultery but do murder, you have become a transgressor of the law.' Argument: breaking the law = rebelling against the AUTHORITY of the LAWGIVER. Same God gave all → breaking one = breaking the central authority.",
+    "language": "en",
+    "options": [
+      "Because laws are plural (per the textual narrative) (in the story's sequence)",
+      "Because the SAME GOD said 'DO NOT COMMIT ADULTERY' also said 'DO NOT MURDER' — breaking one = rebelling against him = breaking the whole law",
+      "Because commandments are tightly linked (as described in the passage) (per the original content)",
+      "Because all sins are equally heavy (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Same God commanded all",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to James 2:23, after Abraham offered Isaac, how is Scripture fulfilled? What is Abraham called?",
+    "explanation": "James 2:23 — 'And the Scripture was fulfilled that says, \"Abraham believed God, and it was counted to him as righteousness\" — and he was called a friend of God.' Citing Gen 15:6 + Isa 41:8 + 2 Chr 20:7. 'FRIEND OF GOD' (philos theou) = a UNIQUE title for Abraham in the OT. Faith produces works → works confirm faith → FRIENDSHIP with God.",
+    "language": "en",
+    "options": [
+      "'Father of many nations' (as described in the passage)",
+      "'Friend of the king' (per the textual narrative) (in the story's sequence)",
+      "'Patriarch of Israel' (according to the text's framing)",
+      "'Abraham BELIEVED God, and it was COUNTED to him as RIGHTEOUSNESS' — he was called the FRIEND of God"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Friend of God",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to James 3:9-10, the believers' tongues sometimes do what 2 contradictory things? What of it?",
+    "explanation": "James 3:9-10 — 'With it we bless our Lord and Father, and with it we curse people who are made in the likeness of God. From the same mouth come blessing and cursing. My brothers, these things ought not to be so.' Theological issue: cursing PEOPLE = cursing the IMAGE of God (Gen 1:27). Every person, even enemies, bears God's IMAGE.",
+    "language": "en",
+    "options": [
+      "Pray + quarrel (per the textual narrative) (in the story's sequence)",
+      "Praise self + criticize others (as described in the passage)",
+      "WITH the tongue we BLESS God the Father + CURSE PEOPLE (made in GOD'S IMAGE) — this should not be",
+      "Sing + stay silent (according to the text's framing)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Bless God + curse people",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to James 3:13-15, how does wisdom FROM ABOVE differ from EARTHLY wisdom (3 marks of earthly)?",
+    "explanation": "James 3:14-15 — 'But if you have bitter jealousy and selfish ambition in your hearts, do not boast and be false to the truth. This is not the wisdom that comes down from above, but is earthly, unspiritual, demonic.' 3 LAYERS: EARTHLY (epigeios) + NATURAL (psychikē) + DEMONIC (daimoniōdēs). Its fruit: jealousy + strife + disorder (3:16).",
+    "language": "en",
+    "options": [
+      "Earthly wisdom is EARTHLY, NATURAL, DEMONIC — produces jealousy + strife + disorder + every evil thing",
+      "Earthly wisdom is from people + education + experience — respectable",
+      "Earthly wisdom is from ancestors + tradition + history — venerable",
+      "Earthly wisdom is from books + schools + teachers — worth learning"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Earthly wisdom 3 marks",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to James 3:18, the FRUIT of RIGHTEOUSNESS is sown in what, by whom?",
+    "explanation": "James 3:18 — 'And a harvest of righteousness is sown in peace by those who make peace.' Echoing Mt 5:9 'Blessed are the peacemakers — they shall be called sons of God'. Does NOT say the fruit = peace; says it is SOWN IN peace. The spiritual farm: farmer = peacemaker; soil = peace; harvest = righteousness.",
+    "language": "en",
+    "options": [
+      "In hardness — by kings + generals",
+      "In PEACE — by those who MAKE PEACE",
+      "In fairness — by judges",
+      "In conflict — by prophets"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Sown in peace",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to James 4:4, friendship with the WORLD is what relative to God?",
+    "explanation": "James 4:4 — 'You adulterous people! Do you not know that friendship with the world is enmity with God? Therefore whoever wishes to be a friend of the world makes himself an enemy of God.' 'ADULTEROUS' (moichalides) = spiritual unfaithfulness — the OT often called Israel 'adulterous' when worshiping other gods. NO neutral zone.",
+    "language": "en",
+    "options": [
+      "Insignificant (per the textual narrative) (in the story's sequence)",
+      "A temporary weakness (as described in the passage) (per the original content)",
+      "ENMITY (hostility) with God — whoever wishes to be a FRIEND of the world MAKES himself an ENEMY of God",
+      "Natural wisdom (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Friend of world = enemy of God",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to James 4:5-6, what SPIRIT does God have toward our spirit? What does he give?",
+    "explanation": "James 4:5-6 — 'Or do you suppose it is to no purpose that the Scripture says, \"He yearns jealously over the spirit that he has made to dwell in us\"? But he gives more grace. Therefore it says, \"God opposes the proud, but gives grace to the humble.\"' Quoting Proverbs 3:34. 'JEALOUSLY' must be understood as PASSIONATE LOVE wanting EXCLUSIVITY — not envy.",
+    "language": "en",
+    "options": [
+      "Spirit of release — gives freedom (according to the text's framing) (as the text indicates)",
+      "Spirit of indifference — gives discipline (as described in the passage)",
+      "Spirit of patience — gives time (per the textual narrative) (in the story's sequence)",
+      "Spirit of JEALOUSY (yearning) for the Spirit he made dwell in us — he gives MORE GRACE; God OPPOSES the proud, gives grace to the HUMBLE"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Yearning Spirit + grace humble",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "According to James 4:11-12, what does one who speaks evil of a brother do?",
+    "explanation": "James 4:11-12 — 'Do not speak evil against one another, brothers. The one who speaks against a brother or judges his brother, speaks evil against the law and judges the law. But if you judge the law, you are not a doer of the law but a judge. There is only one lawgiver and judge, he who is able to save and to destroy. But who are you to judge your neighbor?' Slander = setting oneself above the Lawgiver.",
+    "language": "en",
+    "options": [
+      "Speaks AGAINST the law + judges the law — no longer a DOER of law but a judge; there is only ONE Lawgiver and Judge — who can SAVE and DESTROY",
+      "Just casual (per the textual narrative) (in the story's sequence) (cross-referenced with related passages)",
+      "Normal among brothers (according to the text's framing) (as the text indicates)",
+      "If for good reason it's fine (as described in the passage) (per the original content)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Slander = judging law",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "According to James 5:1-3, what does James command the (unrighteous) rich to do? Fate of their wealth?",
+    "explanation": "James 5:1-3 — 'Come now, you rich, weep and howl for the miseries that are coming upon you. Your riches have rotted and your garments are moth-eaten. Your gold and silver have corroded, and their corrosion will be evidence against you and will eat your flesh like fire.' Gold and silver do NOT physically 'corrode' — James uses symbolic language: hoarded wealth has NO value in the day of judgment.",
+    "language": "en",
+    "options": [
+      "Repent quietly (per the textual narrative) (in the story's sequence)",
+      "WEEP and HOWL for the misery coming — gold and silver have CORRODED, the rust will BEAR WITNESS against them + EAT FLESH like FIRE",
+      "Accumulate more for protection (as described in the passage) (per the original content)",
+      "Offer sacrifices (according to the text's framing) (as the text indicates)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Rich weep, wealth corrodes",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "According to James 5:4, the wages of the harvesters (kept by the rich) are doing what? Whose ears do their cries reach?",
+    "explanation": "James 5:4 — 'Behold, the wages of the laborers who mowed your fields, which you kept back by fraud, are crying out against you, and the cries of the harvesters have reached the ears of the Lord of hosts.' 'LORD OF HOSTS' (Kyrios Sabaoth) = Yahweh Sabaoth — God's title as Commander. ABEL'S cries (Gen 4:10) also cried from the ground; same principle.",
+    "language": "en",
+    "options": [
+      "Wages quietly waiting — cries fall to the ground (as described in the passage)",
+      "Wages lost — cries meaningless (according to the text's framing)",
+      "Wages of the laborers cry out against the rich; the cries of the reapers have reached the EARS of the LORD OF HOSTS (SABAOTH)",
+      "Wages paid after death (per the textual narrative) (in the story's sequence)"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Cries reach Lord of Hosts",
+      "Advanced"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "According to James 5:17-18, what KIND of man was Elijah? Result of his prayer?",
+    "explanation": "James 5:17-18 — 'Elijah was a man with a nature like ours, and he prayed fervently that it might not rain, and for three years and six months it did not rain on the earth. Then he prayed again, and heaven gave rain, and the earth bore its fruit.' 'NATURE LIKE OURS' (homoiopathēs) = same feelings. James's point: NOT to think Elijah was super — but to STRENGTHEN our prayer that we are NOT inferior. 1 Kings 17-18.",
+    "language": "en",
+    "options": [
+      "Elijah was superhuman — specially chosen (according to the text's framing)",
+      "Elijah was an angel disguised as a man (per the textual narrative) (in the story's sequence)",
+      "Elijah was a high priest — naturally had authority (as described in the passage)",
+      "Elijah was a man with NATURE LIKE OURS — prayed fervently for it NOT to rain, and NO rain for 3.5 years; prayed again, heaven gave rain"
+    ],
+    "tags": [
+      "New Testament",
+      "James",
+      "Epistle",
+      "Elijah like us prayed for rain",
+      "Advanced"
+    ]
   }
 ]

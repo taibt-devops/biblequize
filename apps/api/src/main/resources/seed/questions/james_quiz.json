@@ -538,5 +538,811 @@
       "Thư tín",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Gia-cơ 1:12, ai chịu nổi sự thử thách thì được ban gì?",
+    "explanation": "Gia-cơ 1:12 — 'Phước cho người bị cám dỗ; vì lúc đã chịu nổi sự thử thách rồi, thì sẽ lãnh mão triều thiên của sự sống mà Đức Chúa Trời đã hứa cho kẻ kính mến Ngài.' 'MÃO TRIỀU THIÊN' (stephanos) = vương miện chiến thắng. Khải 2:10 cùng cụm. Thử thách KHÔNG phải để hủy diệt — mà để chứng tỏ và ban thưởng đức tin chịu đựng.",
+    "language": "vi",
+    "options": [
+      "Sự giàu có (xét trong văn cảnh)",
+      "Sự sống lâu (theo cách trình bày của text)",
+      "Mão TRIỀU THIÊN sự sống — Chúa hứa cho kẻ kính mến Ngài",
+      "Sự khôn ngoan (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Mão triều thiên sự sống",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 9,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Gia-cơ 5:9, các tín hữu chớ làm gì với nhau, vì cớ sao?",
+    "explanation": "Gia-cơ 5:9 — 'Hỡi anh em, chớ oán trách nhau, hầu cho khỏi bị xét đoán; kìa, Đấng phán xét đứng trước cửa.' 'TRƯỚC CỬA' (pro tōn thyrōn) = sắp đến rồi. Cũng giống Chúa Jêsus 'Ta đứng ngoài cửa mà gõ' (Khải 3:20). Khẩn cấp + cảnh báo: Chúa Christ tái lâm SẮP đến, không phải xa xôi.",
+    "language": "vi",
+    "options": [
+      "Chớ tranh chấp — vì luật pháp cấm",
+      "Chớ OÁN TRÁCH (phàn nàn) lẫn nhau — vì Đấng Phán Xét đứng TRƯỚC CỬA",
+      "Chớ tranh đua — vì ganh tị là tội",
+      "Chớ kết hôn — vì thời thế khó"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Đừng oán trách nhau",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Gia-cơ 1:6, ai cầu xin sự khôn ngoan phải xin thế nào? Người nghi ngờ giống gì?",
+    "explanation": "Gia-cơ 1:6 — 'Nhưng phải lấy đức tin mà cầu xin, chớ nghi ngờ; vì kẻ hay nghi ngờ giống như sóng biển bị gió động và đưa đi đây đi đó.' 1:8 — 'kẻ hai lòng' (dipsychos) = chia rẽ tâm hồn. Đức tin = TIN SƯ TRỌN VẸN, không một chân trong + một chân ngoài. Khôn ngoan từ Chúa CHỈ ban cho lòng thành.",
+    "language": "vi",
+    "options": [
+      "Phải xin một lần — không cần lặp lại (như được mô tả trong sách)",
+      "Phải xin trong sự nghiêm trang (theo cách trình bày của text)",
+      "Phải xin với của lễ (xét trong văn cảnh)",
+      "Phải lấy đức tin mà xin, CHỚ NGHI NGỜ — kẻ nghi ngờ giống NHƯ SÓNG BIỂN bị gió động, đưa tới đưa lui"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Cầu xin đức tin chớ nghi",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Gia-cơ 1:9-10, anh em hèn (nghèo) hãy KHOE về điều gì? Anh em giàu hãy KHOE về điều gì?",
+    "explanation": "Gia-cơ 1:9-10 — 'Anh em nào ở địa vị thấp hèn hãy khoe sự cao trọng của mình, anh em nào giàu cũng hãy khoe về phần đê hèn — vì người sẽ qua đi như hoa cỏ.' Đảo ngược thế gian: NGHÈO = thật giàu trong Christ; GIÀU = thật nghèo nếu cậy vật chất. Hoa CỎ QUA = hình ảnh từ Ê-sai 40:6-8.",
+    "language": "vi",
+    "options": [
+      "Hèn khoe sự CAO TRỌNG mình — Giàu khoe sự HẠ MÌNH (như hoa cỏ qua đi)",
+      "Hèn khoe nghèo — Giàu khoe giàu",
+      "Hèn khoe khôn — Giàu khoe khỏe",
+      "Hèn khoe khiêm — Giàu khoe vinh"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Nghèo khoe cao trọng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 18,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Gia-cơ 1:18, Đức Chúa Trời sinh ra chúng ta bằng phương tiện gì để chúng ta là TRÁI ĐẦU MÙA?",
+    "explanation": "Gia-cơ 1:18 — 'Ấy chính Ngài theo ý muốn mình, đã dùng lời chân thật sanh chúng ta, hầu cho chúng ta được nên như TRÁI ĐẦU MÙA của những vật Ngài dựng nên.' 'TRÁI ĐẦU MÙA' (aparchē) = lễ vật đầu tiên dâng cho Đức Chúa Trời (Lê 23:10) — bảo đảm cho cả mùa. Tín hữu = mẫu mực + bảo đảm cho TÂN TẠO.",
+    "language": "vi",
+    "options": [
+      "Bằng nước báp-têm (như được mô tả trong sách)",
+      "Bằng máu Christ (theo cách trình bày của text)",
+      "Bằng LỜI lẽ thật — để chúng ta là một TRÁI ĐẦU MÙA của các tạo vật Ngài",
+      "Bằng việc lành (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Sinh bởi lời lẽ thật",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Gia-cơ 1:21, sau khi BỎ điều ô uế và sự dư của tánh ác, các tín hữu phải LÃNH lấy điều gì?",
+    "explanation": "Gia-cơ 1:21 — 'Vậy hãy bỏ đi mọi điều ô uế và mọi điều gian ác còn lại, đem lòng nhu mì nhận lấy lời đã trồng trong anh em, là lời cứu được linh hồn của anh em.' 'TRỒNG' (emphytos) = đã được CẤY VÀO. Lời Chúa được Đức Thánh Linh GIEO trong tín hữu. Phải BỎ rác, NHẬN ĐẤT cho Lời mọc lên.",
+    "language": "vi",
+    "options": [
+      "Lãnh lấy sự khôn ngoan ngoại lai (như được mô tả trong sách)",
+      "Lãnh lấy LỜI ĐÃ TRỒNG (gieo) trong anh em với sự nhu mì — Lời ấy có thể CỨU LINH HỒN anh em",
+      "Lãnh lấy luật mới (xét trong văn cảnh)",
+      "Lãnh lấy danh hiệu mới (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Nhận lời đã trồng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Gia-cơ 1:23-25, kẻ chỉ NGHE đạo mà không LÀM theo giống ai? Còn ai làm theo thì ra sao?",
+    "explanation": "Gia-cơ 1:23-25 — 'Vì, nếu có kẻ nghe lời mà không làm theo, thì khác nào người soi mặt mình trong gương, thấy rồi thì đi, liền quên ngay mặt ra thể nào. Nhưng kẻ nào xét kỹ luật pháp trọn vẹn, là luật pháp về sự tự do, lại bền lòng suy gẫm lấy, chẳng phải nghe rồi quên đi, nhưng hết lòng giữ theo phép tắc nó, thì kẻ đó sẽ tìm được phước trong sự mình vâng lời.' Hình ảnh: gương = Lời Chúa.",
+    "language": "vi",
+    "options": [
+      "Giống đứa trẻ — sẽ trưởng thành sau (theo cách trình bày của text)",
+      "Giống người chăm chỉ — sẽ được khen (như được mô tả trong sách)",
+      "Giống học sinh — chỉ cần thời gian (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Giống NGƯỜI SOI MẶT trong gương rồi đi và QUÊN; ai TRA XEM LUẬT TRỌN VẸN của tự do — KHÔNG nghe rồi quên — sẽ được PHƯỚC trong việc mình làm"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Nghe mà không làm như soi gương",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Gia-cơ 2:10, ai giữ TRỌN luật pháp mà phạm MỘT điều thì ra sao?",
+    "explanation": "Gia-cơ 2:10 — 'Vì người nào giữ trọn luật pháp, mà phạm một điều răn, thì cũng đáng tội như đã phạm hết thảy.' Lập luận: Luật pháp là MỘT THỂ — như chuỗi xích, đứt 1 mắt = đứt cả. Lý do: phạm luật = chối thẩm quyền của ĐẤNG BAN luật. Kết luận: KHÔNG ai giữ được trọn — cần ÂN ĐIỂN CHRIST.",
+    "language": "vi",
+    "options": [
+      "Đắc tội về CẢ THẢY — như vi phạm trọn luật pháp",
+      "Chỉ phạm điều ấy — không liên hệ điều khác",
+      "Sẽ được tha qua dâng lễ",
+      "Chỉ nhận hình phạt nhẹ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Phạm 1 điều = phạm cả luật",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Gia-cơ 2:13, sự xét đoán không có thương xót sẽ rơi trên ai? Và điều gì THẮNG sự xét đoán?",
+    "explanation": "Gia-cơ 2:13 — 'Sự xét đoán không thương xót sẽ giáng trên kẻ chẳng làm sự thương xót; nhưng sự thương xót thắng sự xét đoán.' Cùng nguyên tắc Mat 5:7 'Phước cho kẻ thương xót — sẽ được thương xót'. Tín hữu nhận sự thương xót lớn từ Christ — không thể không bày tỏ thương xót cho người khác.",
+    "language": "vi",
+    "options": [
+      "Trên kẻ ác — Thương xót thắng (theo cách trình bày của text)",
+      "Trên kẻ giàu — Đức tin thắng (xét trong văn cảnh)",
+      "Trên kẻ KHÔNG làm sự THƯƠNG XÓT — Sự THƯƠNG XÓT thắng (vinh quang) sự xét đoán",
+      "Trên kẻ ngoại — Hi vọng thắng (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Thương xót thắng xét đoán",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Gia-cơ 2:14, đức tin nào KHÔNG thể CỨU?",
+    "explanation": "Gia-cơ 2:14 — 'Hỡi anh em, nếu ai nói mình có đức tin, song không có việc làm, thì ích chi chăng? Đức tin đó cứu người ấy được chăng?' Đức tin THẬT luôn sinh việc lành (Ê-phê-sô 2:10). Nếu đức tin KHÔNG sinh việc làm = đức tin GIẢ. Khác Phao-lô: ông phản đối VIỆC LÀM CỨU rỗi; Gia-cơ phản đối ĐỨC TIN GIẢ MẠO.",
+    "language": "vi",
+    "options": [
+      "Đức tin nhỏ (xét trong văn cảnh)",
+      "Đức tin có lời tuyên xưng nhưng KHÔNG có việc làm",
+      "Đức tin có nghi ngờ (theo cách trình bày của text)",
+      "Đức tin bị thử thách"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Đức tin không việc làm vô ích",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 21,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Gia-cơ 2:21, Áp-ra-ham được xưng công bình bởi điều gì khi dâng Y-sác?",
+    "explanation": "Gia-cơ 2:21 — 'Áp-ra-ham, tổ phụ chúng ta, khi dâng con mình là Y-sác trên bàn thờ, há chẳng được xưng công bình bởi việc làm sao?' Trích Sáng 22 (Áp-ra-ham dâng Y-sác). Lập luận Gia-cơ: việc làm CHỨNG MINH đức tin có thật. KHÔNG mâu thuẫn với Rô-ma 4 — Phao-lô cũng dùng Sáng 15:6 (Áp-ra-ham TIN trước khi sinh Y-sác) cho biết đức tin là gốc.",
+    "language": "vi",
+    "options": [
+      "Bởi đức tin một mình",
+      "Bởi sự cắt bì (xét trong văn cảnh)",
+      "Bởi lễ vật khác (theo cách trình bày của text)",
+      "Bởi VIỆC LÀM khi DÂNG Y-SÁC con mình trên bàn thờ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Áp-ra-ham xưng công bình bởi việc làm",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 25,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Gia-cơ 2:25, Ra-háp KỴ NỮ cũng được xưng công bình bởi việc gì?",
+    "explanation": "Gia-cơ 2:25 — 'Đồng một thể ấy, kỵ nữ Ra-háp tiếp rước các sứ giả và khiến họ noi đường khác mà đi, người há chẳng phải cũng đã được xưng công bình bởi việc làm sao?' Ra-háp (Giô-suê 2) — người ngoại bang, kỵ nữ — gan dạ giấu thám tử Y-sơ-ra-ên. ĐỨC TIN của bà thể hiện qua HÀNH ĐỘNG. Cùng nhân vật trong Hê 11:31 (đức tin) — KHÔNG mâu thuẫn.",
+    "language": "vi",
+    "options": [
+      "Bởi việc TIẾP RƯỚC các thám tử + đem họ ra ĐƯỜNG KHÁC",
+      "Bởi báp-têm (theo cách trình bày của text)",
+      "Bởi cắt bì (xét trong văn cảnh)",
+      "Bởi lời thề (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Ra-háp việc tiếp rước thám tử",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Gia-cơ 2:26, đức tin không có việc làm giống gì?",
+    "explanation": "Gia-cơ 2:26 — 'Vả, xác chẳng có hồn thì chết, đức tin không có việc làm cũng chết như vậy.' Hình ảnh sống động: như xác CHẾT (KHÔNG hồn) → đức tin GIẢ (KHÔNG việc làm). Câu kết của lập luận đức tin + việc làm. KHÔNG nói việc làm cứu — nói việc làm = bằng chứng đức tin SỐNG.",
+    "language": "vi",
+    "options": [
+      "Giống cây không có lá",
+      "Giống con tàu không có cánh buồm",
+      "Giống THÂN THỂ KHÔNG có HƠI THỞ — đã chết",
+      "Giống nhà không có nền"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Đức tin không việc làm chết",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "verseStart": 2,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Gia-cơ 3:2, ai không lỡ lời trong nói năng thì ra sao?",
+    "explanation": "Gia-cơ 3:2 — 'Chúng ta thảy đều vấp phạm nhiều cách lắm. Nếu có ai không vấp phạm trong lời nói mình, ấy là người trọn vẹn, hay hãm cầm cả mình.' 'TRỌN VẸN' (teleios) = trưởng thành. Lập luận Gia-cơ: kẻ kiểm soát LƯỠI = kiểm soát ĐỜI MÌNH (con ngựa cương dắt → đi đâu; tàu lái dẫn → đi đâu). Lưỡi nhỏ — quyền lớn.",
+    "language": "vi",
+    "options": [
+      "Sẽ được giàu có (xét trong văn cảnh)",
+      "Là người TRỌN VẸN — có thể HÃM CẦM cả thân thể (cương con ngựa)",
+      "Sẽ được vinh hiển ngay (như được mô tả trong sách)",
+      "Sẽ trở thành tiên tri (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Không lỡ lời = trọn vẹn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "verseStart": 8,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Gia-cơ 3:7-8, mọi loài thú dã, chim trời, vật ở dưới biển đều có thể bị THUẦN HÓA — nhưng cái gì không ai có thể thuần hóa?",
+    "explanation": "Gia-cơ 3:7-8 — 'Hết thảy loài muông thú, chim chóc, sâu bọ, loài dưới biển đều trị phục được và đã bị loài người trị phục rồi; nhưng cái lưỡi, không ai trị phục được nó; ấy là một vật dữ người ta không thể hãm dẹp được; đầy dẫy những chất độc giết người.' Lưỡi LOÀI NGƯỜI — sản phẩm văn minh — vẫn là điều người không thuần hóa được. Chỉ ÂN ĐIỂN ĐỨC THÁNH LINH có thể.",
+    "language": "vi",
+    "options": [
+      "Lửa (xét trong văn cảnh)",
+      "Nước biển (theo cách trình bày của text)",
+      "Chim đại bàng (như được mô tả trong sách)",
+      "Cái LƯỠI — vật dữ KHÔNG ĐÌNH ĐƯỢC, đầy chất độc giết người"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Lưỡi không ai thuần hóa được",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Gia-cơ 4:1-2, các sự tranh cạnh và trận đấu giữa các tín hữu đến từ đâu?",
+    "explanation": "Gia-cơ 4:1-2 — 'Những điều chiến đấu, tranh cạnh trong anh em bởi đâu mà đến? Há chẳng phải bởi tình dục anh em vẫn hay tranh chiến trong quan thể mình sao? Anh em tham muốn mà chẳng được; anh em giết người và ghen ghét mà chẳng được việc gì hết; anh em có sự tranh cạnh và chiến đấu; anh em chẳng được chi, vì không cầu xin.' Gốc rễ ngoại tại = bất an NỘI TÂM.",
+    "language": "vi",
+    "options": [
+      "Từ THAM DỤC chiến đấu trong các chi thể anh em — anh em ham muốn mà không có, GIẾT (giận) và ganh ghét — KHÔNG có vì KHÔNG cầu xin",
+      "Từ ma quỉ (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Từ đời thế tục (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Từ kẻ thù bên ngoài (như được mô tả trong sách) (xét theo nội dung gốc)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Tranh cạnh từ tham dục",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Gia-cơ 4:13-15, Phao-lô (Gia-cơ) khiển trách lối nói nào? Lối nói thay thế là gì?",
+    "explanation": "Gia-cơ 4:13-15 — 'Hỡi anh em, là kẻ nói rằng: Hôm nay hoặc ngày mai, ta sẽ đi đến thành kia, ở đó một năm, buôn bán và phát tài. Song ngày mai sẽ ra thế nào, anh em chẳng biết!... Anh em phải nói trái lại: Ví bằng Chúa muốn, và ta còn sống, thì ta sẽ làm việc nọ việc kia.' Cụm 'D.V.' (Deo Volente, Latin) hoặc 'NẾU CHÚA MUỐN' = lời nhắc khiêm tốn — đời người là HƠI NƯỚC.",
+    "language": "vi",
+    "options": [
+      "Khiển trách 'Tôi là tội nhân lớn' — phải nói 'Tôi nên thánh' (như được mô tả trong sách)",
+      "Khiển trách 'Hôm nay hoặc ngày mai chúng ta sẽ đi tới thành A, mua bán + làm lợi' — phải nói 'NẾU CHÚA MUỐN, chúng ta sẽ sống và làm điều này hay điều kia'",
+      "Khiển trách lời thân thiện — phải nói trang nghiêm (theo cách trình bày của text)",
+      "Khiển trách lời cầu nguyện ngắn — phải nói dài (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Nếu Chúa muốn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Gia-cơ 5:10-11, các tín hữu phải lấy ai làm GƯƠNG về sự CHỊU KHỔ và sự NHỊN NHỤC? Đặc biệt là ai về nhịn nhục?",
+    "explanation": "Gia-cơ 5:10-11 — 'Hỡi anh em, hãy lấy các đấng tiên tri đã nhân danh Chúa mà nói, làm mẫu mực về sự chịu khổ và nhịn nhục cho mình. Nầy chúng ta gọi những kẻ nhịn nhục là có phước. Anh em đã nghe nói về sự nhịn nhục của Gióp, và thấy cái kết cuộc mà Chúa ban cho người; vì Chúa đầy lòng thương xót và nhân từ.' GIÓP = mẫu chịu khổ; NHƯNG kết cuộc tốt đẹp.",
+    "language": "vi",
+    "options": [
+      "Các vua + Sa-lô-môn (xét trong văn cảnh)",
+      "Các thầy tế lễ + Lê-vi (như được mô tả trong sách)",
+      "Các TIÊN TRI từng nhân danh Chúa nói + GIÓP về sự nhịn nhục — Chúa rất thương xót và nhân từ",
+      "Các sứ đồ + Phao-lô (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Tiên tri + Gióp gương nhịn nhục",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Gia-cơ 5:12, các tín hữu CHỚ làm gì khi nói chuyện?",
+    "explanation": "Gia-cơ 5:12 — 'Hỡi anh em, trên hết mọi sự, chớ thề thốt — không bằng trời, không bằng đất, hay là vật khác nào; nhưng phải nói rằng: Phải, phải, không, không, hầu cho khỏi bị xét đoán.' Cùng dạy của Chúa Jêsus (Mat 5:34-37). Tin hữu phải có lời nói TRUNG THỰC — KHÔNG cần thề. Nếu cần thề để đảm bảo lời = đã không trung thực ngay từ đầu.",
+    "language": "vi",
+    "options": [
+      "Chớ nói nhiều (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Chớ nói lưu loát (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Chớ nói liều (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Chớ THỀ — không phải bằng trời, không phải bằng đất, không bất kỳ thứ gì khác — phải để 'PHẢI' là PHẢI, 'KHÔNG' là KHÔNG"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Chớ thề",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 15,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Gia-cơ 5:15, sự cầu nguyện đức tin sẽ làm gì cho người bệnh, và Chúa sẽ làm gì?",
+    "explanation": "Gia-cơ 5:15 — 'Sự cầu nguyện bởi đức tin sẽ cứu kẻ bịnh, Chúa sẽ đỡ kẻ ấy dậy; nếu kẻ bịnh có phạm tội, cũng sẽ được tha.' KHÔNG hứa CHỮA LÀNH cho mọi bệnh — nói 'cứu' (sōzō) = giải thoát, có thể bao gồm an ủi, hồi phục, và (đôi khi) chữa lành. Lưu ý: tha tội nếu có. Bệnh KHÔNG tự động do tội — nhưng đôi khi có liên hệ.",
+    "language": "vi",
+    "options": [
+      "Cứu kẻ bệnh, Chúa sẽ ĐỠ KẺ ẤY DẬY — nếu phạm tội cũng sẽ được tha",
+      "Chữa lành ngay lập tức cho mọi bệnh",
+      "Đem họ lên trời (theo cách trình bày của text)",
+      "Ban dấu lạ (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Cầu nguyện đức tin cứu bệnh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Gia-cơ 2:11, tại sao phạm 1 điều răn (như giết người) thì cũng đáng tội như đã phạm trọn luật?",
+    "explanation": "Gia-cơ 2:11 — 'Vả, Đấng đã phán rằng: Chớ phạm tội tà dâm, cũng có phán rằng: Chớ giết người. Vậy nếu người không phạm tội tà dâm, nhưng phạm tội giết người, thì ngươi là kẻ phạm luật pháp.' Lập luận: vi phạm luật = vi phạm quyền uy ĐẤNG BAN. Cùng Đấng ban tất cả → phá 1 = phá thẩm quyền chính.",
+    "language": "vi",
+    "options": [
+      "Vì luật là số nhiều (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Vì cùng MỘT ĐẤNG đã phán 'CHỚ TÀ DÂM' cũng đã phán 'CHỚ GIẾT NGƯỜI' — phạm điều này = bội nghịch Đấng ấy = vi phạm luật pháp",
+      "Vì các điều răn liên kết chặt chẽ (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Vì tội nào cũng nặng (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Cùng Đấng phán cả luật",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "verseStart": 23,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Gia-cơ 2:23, sau khi Áp-ra-ham dâng Y-sác, Kinh Thánh được ứng nghiệm thế nào? Áp-ra-ham được gọi là gì?",
+    "explanation": "Gia-cơ 2:23 — 'Vậy được ứng nghiệm lời Kinh Thánh rằng: Áp-ra-ham tin Đức Chúa Trời, và đều đó kể là công bình cho người; và người được gọi là bạn Đức Chúa Trời.' Trích Sáng 15:6 + Ê-sai 41:8 + 2 Sử ký 20:7. 'BẠN ĐỨC CHÚA TRỜI' (philos theou) = danh hiệu DUY NHẤT cho Áp-ra-ham trong Cựu Ước. Đức tin sinh việc → việc xác nhận đức tin → tình BẠN với Chúa.",
+    "language": "vi",
+    "options": [
+      "'Áp-ra-ham là cha vô số dân' (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "'Áp-ra-ham là bạn vua' (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "'Áp-ra-ham là tổ phụ Y-sơ-ra-ên' (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "'Áp-ra-ham TIN Đức Chúa Trời, và sự TIN ĐÓ ĐƯỢC KỂ LÀ CÔNG BÌNH cho người' — và người được gọi là BẠN HỮU của Đức Chúa Trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Bạn của Đức Chúa Trời",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "verseStart": 9,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Gia-cơ 3:9-10, miệng các tín hữu đôi khi làm 2 việc nghịch nhau gì? Điều ấy là thế nào?",
+    "explanation": "Gia-cơ 3:9-10 — 'Bởi cái lưỡi chúng ta khen ngợi Chúa, Cha chúng ta, và cũng bởi nó chúng ta rủa sả loài người, là loài tạo theo hình ảnh Đức Chúa Trời. Đồng một lỗ miệng mà ra cả sự khen ngợi và rủa sả! Hỡi anh em, không nên như vậy.' Vấn đề thần học: rủa sả LOÀI NGƯỜI = rủa sả HÌNH Đức Chúa Trời (Sáng 1:27). Mọi người, kể cả kẻ thù, đều mang HÌNH Chúa.",
+    "language": "vi",
+    "options": [
+      "Cầu nguyện + tranh cạnh (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "Khen mình + chê người (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "BỞI LƯỠI MÀ chúng ta NGỢI KHEN Chúa Cha + CHÚA RỦA SẢ loài người (được dựng theo HÌNH ĐỨC CHÚA TRỜI) — không nên có như vậy",
+      "Hát + im lặng (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Khen Chúa + rủa loài người",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Gia-cơ 3:13-15, sự khôn ngoan TỪ TRÊN khác sự khôn ngoan THẾ TỤC ở chỗ nào (3 đặc tính của khôn ngoan thế tục)?",
+    "explanation": "Gia-cơ 3:14-15 — 'Nhưng nếu anh em có sự ghen tương cay đắng và sự tranh cạnh trong lòng mình, thì chớ khoe mình và nói dối nghịch cùng lẽ thật. Sự khôn ngoan đó không phải từ trên mà xuống đâu; trái lại, nó thuộc về đất, về xác thịt, về ma quỉ.' 3 LỚP: ĐẤT (epigeios) + XÁC THỊT (psychikē) + MA QUỈ (daimoniōdēs). Trái nó: ghen ghét + tranh cạnh + lộn xộn (3:16).",
+    "language": "vi",
+    "options": [
+      "Khôn ngoan thế tục là THUỘC ĐẤT, THUỘC THỂ XÁC, THUỘC MA QUỈ — sinh ganh ghét + tranh cạnh + lộn xộn + mọi việc ác",
+      "Khôn ngoan thế tục là từ con người + từ giáo dục + từ kinh nghiệm — đáng nể",
+      "Khôn ngoan thế tục là từ tổ phụ + từ truyền thống + từ lịch sử — đáng kính",
+      "Khôn ngoan thế tục là từ sách + từ trường học + từ thầy — đáng học"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Khôn ngoan thế tục 3 lớp",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Gia-cơ 3:18, BÔNG TRÁI của sự CÔNG BÌNH được GIEO trong sự gì, bởi ai?",
+    "explanation": "Gia-cơ 3:18 — 'Vả bông trái của điều công bình thì gieo trong sự hòa bình, cho những kẻ nào làm sự hòa bình vậy.' Trùng với Mat 5:9 'Phước cho kẻ làm hòa hiệp — vì sẽ được gọi là con Đức Chúa Trời'. KHÔNG nói bông trái = hòa bình; nói nó GIEO TRONG hòa bình. Nông trại thuộc linh: nông dân = người làm hòa bình; đất = hòa bình; bông = công bình.",
+    "language": "vi",
+    "options": [
+      "Trong sự cứng cỏi — bởi vua + tướng",
+      "Trong sự HÒA BÌNH — bởi những kẻ LÀM SỰ HÒA BÌNH",
+      "Trong sự công bằng — bởi quan tòa",
+      "Trong sự chiến đấu — bởi tiên tri"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Bông trái công bình gieo trong hòa bình",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Gia-cơ 4:4, tình bạn với THẾ GIAN là gì so với Đức Chúa Trời?",
+    "explanation": "Gia-cơ 4:4 — 'Hỡi bọn tà dâm kia, anh em há chẳng biết làm bạn với thế gian tức là thù nghịch với Đức Chúa Trời sao? Cho nên ai muốn làm bạn với thế gian, thì người ấy trở nên kẻ nghịch thù với Đức Chúa Trời vậy.' 'TÀ DÂM' (moichalides) = ngoại tình thuộc linh — Cựu Ước thường gọi Y-sơ-ra-ên 'ngoại tình' khi thờ thần khác. KHÔNG có vùng trung lập.",
+    "language": "vi",
+    "options": [
+      "Là không quan trọng (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Là sự yếu đuối tạm thời (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "Là sự THÙ NGHỊCH (kẻ thù) cùng Đức Chúa Trời — ai LÀM BẠN với thế gian thì TRỞ NÊN KẺ NGHỊCH (thù) cùng Đức Chúa Trời",
+      "Là sự khôn ngoan tự nhiên (như được mô tả trong sách) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Bạn thế gian = thù Chúa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "verseStart": 5,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Gia-cơ 4:5-6, Đức Chúa Trời có TINH THẦN nào với linh chúng ta? Và Ngài ban gì?",
+    "explanation": "Gia-cơ 4:5-6 — 'Hay là anh em tưởng Kinh Thánh nói vô ích sao? Đức Thánh Linh mà Đức Chúa Trời khiến ở trong lòng chúng ta, ham mến chúng ta đến nỗi ghen tương... Nhưng Ngài lại ban thêm ân điển; vì vậy, Kinh Thánh chép rằng: Đức Chúa Trời chống cự kẻ kiêu ngạo, nhưng ban ơn cho kẻ khiêm nhường.' Trích Châm Ngôn 3:34. 'GHEN TƯƠNG' phải hiểu là YÊU say đắm muốn DÀNH RIÊNG — không phải ghen tị.",
+    "language": "vi",
+    "options": [
+      "Tinh thần buông tha — ban tự do (theo cách trình bày của text) (như văn bản ghi rõ) (theo bối cảnh đoạn này)",
+      "Tinh thần thờ ơ — ban kỷ luật (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Tinh thần kiên nhẫn — ban thời gian (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Tinh thần GHEN TƯƠNG (yêu say đắm) đối với Linh Ngài đã làm ngụ trong chúng ta — Ngài ban THÊM ÂN ĐIỂN; Đức Chúa Trời chống lại kẻ KIÊU NGẠO, ban ơn cho kẻ KHIÊM NHƯỜNG"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Linh ghen tương + ân điển kẻ khiêm",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo Gia-cơ 4:11-12, ai NÓI XẤU anh em mình thì làm gì?",
+    "explanation": "Gia-cơ 4:11-12 — 'Hỡi anh em, chớ nói hành nhau. Ai nói hành anh em mình hoặc xét đoán anh em mình, tức là nói xấu luật pháp, và xét đoán luật pháp. Vả, nếu ngươi xét đoán luật pháp, thì ngươi chẳng phải là kẻ vâng giữ luật pháp, bèn là người xét đoán luật pháp vậy. Chỉ có một Đấng lập ra luật pháp và một Đấng xét đoán, tức là Đấng cứu được và diệt được. Nhưng ngươi là ai, mà dám xét đoán kẻ lân cận mình?' Nói hành = đặt mình trên Đấng ban luật.",
+    "language": "vi",
+    "options": [
+      "Nói NGHỊCH luật + đoán xét luật — KHÔNG còn là người TUÂN luật mà là quan đoán xét; chỉ có MỘT Đấng ban luật và đoán xét — là Đấng có thể CỨU + DIỆT",
+      "Vô tình mà thôi (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Là điều bình thường giữa anh em (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Phải có lý do chính đáng (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Nói xấu = đoán xét luật",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo Gia-cơ 5:1-3, Phao-lô (Gia-cơ) lệnh kẻ giàu (không công bình) phải làm gì? Số phận tài sản họ là gì?",
+    "explanation": "Gia-cơ 5:1-3 — 'Hỡi anh em là kẻ giàu có! Hãy khóc lóc, kêu la, vì cớ hoạn nạn sẽ đổ trên anh em. Của cải anh em bị mục nát, áo xống bị mối mọt ăn rồi. Vàng bạc anh em bị ten rét, ten rét đó sẽ làm chứng nghịch cùng anh em, nó cũng như lửa vậy, sẽ ăn thịt anh em.' VÀNG BẠC KHÔNG bị 'sét' theo vật lý — Gia-cơ dùng ngôn ngữ tượng trưng: tài sản tích lũy KHÔNG còn giá trị trong ngày phán xét.",
+    "language": "vi",
+    "options": [
+      "Phải hối cải (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Phải KHÓC LÓC, KÊU LA về sự khốn nạn sắp đến — VÀNG BẠC bị đóng SÉT, sự đóng sét sẽ LÀM CHỨNG nghịch với họ + ĂN THỊT họ NHƯ LỬA",
+      "Phải tích lũy thêm để bảo vệ (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Phải dâng tế lễ (theo cách trình bày của text) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Của giàu hư mất + làm chứng nghịch",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 4,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo Gia-cơ 5:4, tiền công của những người làm ruộng đã GẶT (mà giàu giữ lại) đang làm gì? Tiếng kêu của họ đến tai ai?",
+    "explanation": "Gia-cơ 5:4 — 'Kìa, tiền công của các thợ gặt ruộng anh em mà anh em đã ăn gian, đang kêu oan; và tiếng kêu của thợ gặt đã thấu đến tai Chúa các đạo binh.' 'CHÚA CÁC ĐẠO BINH' (Kyrios Sabaoth) = Yhwh tsabaôt — danh hiệu Đức Chúa Trời TƯỚNG TRƯỞNG. Tiếng kêu của ABEL (Sáng 4:10) cũng kêu lên đất; cùng nguyên tắc.",
+    "language": "vi",
+    "options": [
+      "Tiền công lặng lẽ chờ — tiếng kêu rơi xuống đất (như được mô tả trong sách)",
+      "Tiền công bị mất — tiếng kêu vô nghĩa (theo cách trình bày của text)",
+      "Tiền công các kẻ làm thuê KÊU OAN nghịch giàu có; tiếng kêu của các thợ gặt đã thấu đến TAI CHÚA CÁC ĐẠO BINH",
+      "Tiền công được trả sau khi chết (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Tiếng kêu thợ gặt thấu Chúa",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "verseStart": 17,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo Gia-cơ 5:17-18, Ê-li là LOẠI NGƯỜI nào? Lời cầu nguyện ông kết quả như thế nào?",
+    "explanation": "Gia-cơ 5:17-18 — 'Ê-li vốn là người yếu đuối như chúng ta. Người cầu nguyện, cố xin cho đừng mưa, thì không mưa xuống đất trong ba năm rưỡi. Đoạn, người cầu nguyện lại, trời bèn mưa, và đất sanh sản hoa màu.' 'YẾU ĐUỐI NHƯ CHÚNG TA' (homoiopathēs) = cùng cảm giác. Mục đích Gia-cơ: KHÔNG khiến ta nghĩ Ê-li là siêu — mà CỦNG CỐ cầu nguyện ta KHÔNG kém ông. 1 Vua 17-18.",
+    "language": "vi",
+    "options": [
+      "Ê-li là siêu nhân — đặc biệt được Chúa chọn (theo cách trình bày của text)",
+      "Ê-li là thiên sứ giả dạng người (xét trong văn cảnh) (như được mô tả trong sách)",
+      "Ê-li là một thầy tế lễ thượng phẩm — đương nhiên có quyền (theo trình tự câu chuyện)",
+      "Ê-li là người CÓ TÌNH CẢM GIỐNG NHƯ chúng ta — cầu nguyện thiết tha cho TRỜI ĐỪNG MƯA, KHÔNG mưa 3.5 năm; lại cầu cho mưa, trời ban mưa"
+    ],
+    "tags": [
+      "Tân Ước",
+      "Gia-cơ",
+      "Thư tín",
+      "Ê-li như chúng ta — cầu mưa",
+      "Nâng cao"
+    ]
   }
 ]
