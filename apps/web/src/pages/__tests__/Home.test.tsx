@@ -290,17 +290,24 @@ describe('Home Dashboard', () => {
   })
 
   describe('Activity Feed', () => {
-    it('displays section', async () => {
+    it('displays section title', async () => {
       renderHome()
       await waitFor(() => { expect(screen.getByText('Hoạt động gần đây')).toBeInTheDocument() })
     })
 
-    it('displays items', async () => {
+    /**
+     * Step 4 of the Home refactor: hardcoded dummy rows ("Nguyễn A vừa
+     * đạt Hiền Triết" etc.) were visibly fake at launch (no users, no
+     * activity yet). Replaced with the empty-state pioneer card.
+     */
+    it('renders empty-state pioneer card instead of dummy data', async () => {
       renderHome()
       await waitFor(() => {
-        expect(screen.getByText('Nguyễn A')).toBeInTheDocument()
-        expect(screen.getByText('Minh Tâm')).toBeInTheDocument()
+        expect(screen.getByTestId('activity-empty-state')).toBeInTheDocument()
       })
+      expect(screen.queryByText('Nguyễn A')).not.toBeInTheDocument()
+      expect(screen.queryByText('Minh Tâm')).not.toBeInTheDocument()
+      expect(screen.queryByText('Hùng Dũng')).not.toBeInTheDocument()
     })
   })
 

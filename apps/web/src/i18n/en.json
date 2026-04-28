@@ -753,10 +753,13 @@
     "questions": "Q",
     "you": "You ({{name}})",
     "viewAll": "View all",
-    "recentActivity": "Recent Activity",
-    "activityReachedTier": "just reached {{tier}}",
-    "activityJoinedGroup": "joined your Church Group.",
-    "activityStreak": "maintained a {{days}}-day streak!",
+    "activityFeed": {
+      "title": "Recent activity",
+      "emptyTitle": "You're a pioneer!",
+      "emptyBody": "Community activity will appear when fellow believers play with you.",
+      "emptyCta": "Invite friends",
+      "systemWelcome": "Welcome to BibleQuiz! Version 1.0 just launched. Start your journey today."
+    },
     "dailyVerse": "TODAY'S VERSE",
     "verseToday": "Today's verse",
     "dailyMissions": "Today's missions",

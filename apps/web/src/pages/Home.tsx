@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { useTranslation } from 'react-i18next'
+import ActivityFeed from '../components/ActivityFeed'
 import ComebackModal from '../components/ComebackModal'
 import DailyBonusModal from '../components/DailyBonusModal'
 import DailyMissionsCard from '../components/DailyMissionsCard'
@@ -316,41 +317,9 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* Activity + Verse */}
+        {/* Activity */}
         <div className="lg:col-span-4 space-y-6">
-          {/* Activity Feed */}
-          <div className="bg-surface-container rounded-2xl p-6 border border-outline-variant/10">
-            <div className="flex items-center justify-between mb-4">
-              <h4 className="font-bold text-on-surface text-sm">{t('home.recentActivity')}</h4>
-              <button className="material-symbols-outlined text-on-surface-variant text-sm hover:text-on-surface transition-colors">refresh</button>
-            </div>
-            <div className="space-y-4">
-              <div className="flex gap-3">
-                <div className="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-secondary text-sm" style={FILL_1}>celebration</span>
-                </div>
-                <p className="text-xs text-on-surface leading-tight">
-                  <span className="font-bold">Nguyễn A</span> {t('home.activityReachedTier', { tier: t('tiers.sage') })}
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-primary text-sm">group_add</span>
-                </div>
-                <p className="text-xs text-on-surface leading-tight">
-                  <span className="font-bold">Minh Tâm</span> {t('home.activityJoinedGroup')}
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="w-8 h-8 rounded-full bg-tertiary/10 flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-tertiary text-sm">local_fire_department</span>
-                </div>
-                <p className="text-xs text-on-surface leading-tight">
-                  <span className="font-bold">Hùng Dũng</span> {t('home.activityStreak', { days: 30 })}
-                </p>
-              </div>
-            </div>
-          </div>
+          <ActivityFeed userCreatedAt={meData?.createdAt} />
         </div>
       </section>
     </div>

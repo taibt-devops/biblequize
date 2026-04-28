@@ -753,10 +753,13 @@
     "questions": "câu",
     "you": "Bạn ({{name}})",
     "viewAll": "Xem tất cả",
-    "recentActivity": "Hoạt động gần đây",
-    "activityReachedTier": "vừa đạt {{tier}}",
-    "activityJoinedGroup": "đã tham gia vào Nhóm Giáo Xứ của bạn.",
-    "activityStreak": "đã duy trì chuỗi {{days}} ngày!",
+    "activityFeed": {
+      "title": "Hoạt động gần đây",
+      "emptyTitle": "Bạn là người tiên phong!",
+      "emptyBody": "Hoạt động cộng đồng sẽ xuất hiện khi anh em trong hội thánh chơi cùng bạn.",
+      "emptyCta": "Mời anh em",
+      "systemWelcome": "Chào mừng đến BibleQuiz! Phiên bản 1.0 vừa ra mắt. Hãy bắt đầu hành trình của bạn ngay hôm nay."
+    },
     "dailyVerse": "HỌC NGÀY",
     "verseToday": "Câu gốc hôm nay",
     "dailyMissions": "Nhiệm vụ hôm nay",
