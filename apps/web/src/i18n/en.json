@@ -782,6 +782,11 @@
       "loading": "Loading challenge...",
       "errorFallback": "Today's Challenge — 5 questions daily",
       "retry": "Try again"
+    },
+    "lockedTeaser": {
+      "title": "WAITING TO UNLOCK",
+      "progressLabel": "{{current}} / {{target}} XP to {{tierName}}",
+      "linkText": "Learn the tier system →"
     }
   },
   "help": {
