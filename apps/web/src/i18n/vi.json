@@ -785,7 +785,7 @@
       "subtitle": "Khi đạt {{tierName}} ({{xp}} XP), bạn sẽ nhận:",
       "xpBoost": "+{{percent}}% XP cho mọi câu trả lời",
       "xpBoostMax": "×2 XP cho mọi câu trả lời (mức tối đa)",
-      "energyRegen": "Hồi {{perHour}} năng lượng / giờ",
+      "energyRegen": "Phục hồi {{perHour}} năng lượng mỗi giờ",
       "streakFreeze": "Đông cứng streak {{from}} → {{to}} lần / tuần",
       "linkText": "Tìm hiểu hệ thống hạng →"
     }

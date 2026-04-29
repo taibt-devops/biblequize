@@ -785,7 +785,7 @@
       "subtitle": "When you reach {{tierName}} ({{xp}} XP), you'll receive:",
       "xpBoost": "+{{percent}}% XP on every answer",
       "xpBoostMax": "×2 XP on every answer (top tier)",
-      "energyRegen": "Regenerate {{perHour}} energy / hour",
+      "energyRegen": "Recover {{perHour}} energy per hour",
       "streakFreeze": "Streak freeze {{from}} → {{to}} per week",
       "linkText": "Learn the tier system →"
     }
