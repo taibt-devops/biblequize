@@ -9,23 +9,13 @@ import DailyMissionsCard from '../components/DailyMissionsCard'
 import EmptyLeaderboardCTA from '../components/EmptyLeaderboardCTA'
 import FeaturedDailyChallenge from '../components/FeaturedDailyChallenge'
 import GameModeGrid from '../components/GameModeGrid'
-import MilestoneBanner from '../components/MilestoneBanner'
+import HeroStatSheet from '../components/HeroStatSheet'
 import TierPerksTeaser from '../components/TierPerksTeaser'
-import TierProgressBar from '../components/TierProgressBar'
 import TutorialOverlay from '../components/TutorialOverlay'
 import { useAuthStore } from '../store/authStore'
 import { api } from '../api/client'
 import { getDailyVerse } from '../data/verses'
 import { getTierInfo } from '../data/tiers'
-
-const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
-
-function getGreeting(t: any): string {
-  const h = new Date().getHours()
-  if (h < 12) return t('home.greetingMorning')
-  if (h < 18) return t('home.greetingAfternoon')
-  return t('home.greetingEvening')
-}
 
 /* ── Skeleton ── */
 function HomeSkeleton() {
@@ -99,67 +89,14 @@ export default function Home() {
   const tier = getTierInfo(totalPoints)
   // Tier level 1..6 — passed into TierPerksTeaser to highlight next-tier perks.
   const userTierLevel = tier.current.id
-  const greeting = getGreeting(t)
 
   return (
     <div data-testid="home-page" className="space-y-8 max-w-7xl mx-auto w-full">
       <ComebackModal />
       <DailyBonusModal />
       <TutorialOverlay />
-      {/* ── Hero: compact 1-row (greeting + tier in one card) ── */}
-      <section
-        data-testid="home-hero"
-        className="relative overflow-hidden rounded-2xl bg-surface-container p-6 md:p-8 border border-outline-variant/10 group"
-      >
-        <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full -mr-20 -mt-20 blur-3xl group-hover:bg-secondary/10 transition-colors pointer-events-none" />
-        <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6">
-          {/* Avatar/tier badge */}
-          <div className="relative shrink-0">
-            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-secondary/20 flex items-center justify-center bg-surface-container-high shadow-inner">
-              <span className={`material-symbols-outlined text-4xl md:text-5xl ${tier.current.colorTailwind}`} style={FILL_1}>{tier.current.iconMaterial}</span>
-            </div>
-            <div data-testid="home-tier-badge" className="absolute -bottom-2 -right-2 bg-secondary text-on-secondary text-[10px] font-black px-2 py-1 rounded-md shadow-lg uppercase tracking-tighter">
-              {t(tier.current.nameKey)}
-            </div>
-          </div>
-
-          {/* Greeting + streak + tier progress in a single column */}
-          <div className="flex-1 min-w-0 space-y-3">
-            <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-              <h1 data-testid="home-greeting" className="text-2xl md:text-3xl font-black tracking-tight text-on-surface">
-                {greeting}, <span data-testid="home-user-name">{userName}</span>!
-              </h1>
-              <div className="flex items-center gap-1.5 text-xs font-bold text-secondary">
-                <span className="material-symbols-outlined text-sm" style={FILL_1}>local_fire_department</span>
-                <span data-testid="home-streak-count">{meData?.currentStreak ?? 0}</span>
-                <span className="text-on-surface-variant">{t('home.dayStreak', { defaultValue: 'day streak' })}</span>
-              </div>
-            </div>
-
-            <div className="space-y-1.5">
-              <div className="flex justify-between items-baseline">
-                <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">{t('home.tierProgress')}</span>
-                <span data-testid="home-total-points" className="text-xs font-bold text-on-surface">
-                  {(totalPoints ?? 0).toLocaleString()} {tier.next ? `/ ${(tier.next.minPoints ?? 0).toLocaleString()} ${t('home.points')}` : t('home.points')}
-                </span>
-              </div>
-              <div className="h-2.5 w-full bg-primary-container rounded-full overflow-hidden">
-                <div className="h-full gold-gradient rounded-full shadow-[0_0_12px_rgba(248,189,69,0.3)]" style={{ width: `${tier.progressPct}%` }} />
-              </div>
-              {tier.next ? (
-                <p className="text-[10px] text-on-surface-variant font-medium">
-                  {t('home.pointsToNext', { points: tier.pointsToNext.toLocaleString(), tier: t(tier.next.nameKey) })}
-                </p>
-              ) : (
-                <p data-testid="home-max-tier-msg" className="text-[10px] text-secondary font-bold">{t('home.maxTierReached')}</p>
-              )}
-            </div>
-
-            <div data-testid="home-tier-progress-bar"><TierProgressBar /></div>
-            <MilestoneBanner />
-          </div>
-        </div>
-      </section>
+      {/* ── Hero (V3 stat sheet) ── */}
+      <HeroStatSheet />
 
       {/* ── Daily Verse banner ── */}
       {(() => { const verse = getDailyVerse(); return (

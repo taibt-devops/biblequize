@@ -2466,3 +2466,170 @@ select {
   --border-divider: rgba(212, 175, 55, 0.15);
   --border-strong-v3: rgba(212, 175, 55, 0.4);
 }
+
+/* ──────────────────────────────────────────────────────────────────────────
+   V3 Home — Hero Stat Sheet
+   Source: docs/designs/home-design-studio.html .v3-hero* (line 351+).
+   Names prefixed `hero-v3-*` to namespace; existing legacy hero classes
+   (home-hero, home-greeting, etc.) live alongside until full cut-over.
+   ────────────────────────────────────────────────────────────────────────── */
+.hero-v3 {
+  background: linear-gradient(135deg, rgba(45, 35, 20, 0.85), rgba(28, 25, 22, 0.7));
+  border: 1px solid var(--gold-border-medium);
+  border-radius: 16px;
+  padding: 24px 28px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 220, 100, 0.08),
+    0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+.hero-v3::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.hero-v3 > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-v3-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.1);
+  border: 2px solid var(--border-strong-v3);
+  box-shadow:
+    0 0 24px rgba(212, 175, 55, 0.15),
+    inset 0 0 12px rgba(255, 240, 200, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  flex-shrink: 0;
+}
+
+.hero-v3-content { flex: 1; min-width: 0; }
+
+.hero-v3-greeting {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  font-family: 'Sora', 'Be Vietnam Pro', sans-serif;
+  color: var(--text-primary);
+}
+
+.hero-v3-tier-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold-primary);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.hero-v3-divider-line {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 175, 55, 0.3) 20%,
+    rgba(212, 175, 55, 0.3) 80%,
+    transparent
+  );
+  margin-bottom: 16px;
+}
+
+.hero-v3-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  margin-bottom: 16px;
+}
+
+.hero-v3-stat-cell {
+  text-align: center;
+  padding: 4px 0;
+  border-right: 1px solid var(--border-divider);
+}
+
+.hero-v3-stat-cell:last-child { border-right: none; }
+
+.hero-v3-stat-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(245, 240, 232, 0.5);
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.hero-v3-stat-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+  font-family: 'Sora', 'Be Vietnam Pro', sans-serif;
+}
+
+.hero-v3-stat-value.fire { color: #ff8c42; }
+
+.hero-v3-progress-bar {
+  height: 6px;
+  background: rgba(212, 175, 55, 0.08);
+  border-radius: 3px;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+
+.hero-v3-progress-fill {
+  height: 100%;
+  background: var(--gold-gradient);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+  transition: width 0.5s ease;
+}
+
+.hero-v3-progress-label {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.hero-v3-stars {
+  letter-spacing: 2px;
+  color: var(--gold-primary);
+}
+
+.hero-v3-max-tier {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold-primary);
+  margin-top: 4px;
+}
+
+/* Mobile responsive — keep all stats visible, just shrink. */
+@media (max-width: 640px) {
+  .hero-v3 {
+    padding: 16px 18px;
+    gap: 14px;
+  }
+  .hero-v3-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+  .hero-v3-greeting { font-size: 16px; }
+  .hero-v3-tier-label { font-size: 11px; letter-spacing: 1.5px; }
+  .hero-v3-stat-label { font-size: 9px; }
+  .hero-v3-stat-value { font-size: 18px; }
+}

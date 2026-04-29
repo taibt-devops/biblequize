@@ -102,8 +102,14 @@ describe('Home Dashboard', () => {
     })
 
     it('displays tier progress bar', async () => {
+      // V3 hero stat-sheet drops the "Tiến trình hạng" label and goes
+      // straight to the gold-gradient progress fill — assert that
+      // (and its star-row) instead.
       renderHome()
-      await waitFor(() => { expect(screen.getByText('Tiến trình hạng')).toBeInTheDocument() })
+      await waitFor(() => {
+        expect(document.querySelector('.hero-v3-progress-fill')).toBeInTheDocument()
+        expect(screen.getByTestId('home-hero-stars')).toBeInTheDocument()
+      })
     })
 
     it('displays points (8,200)', async () => {
@@ -113,7 +119,9 @@ describe('Home Dashboard', () => {
 
     it('displays current tier (Môn Đồ)', async () => {
       renderHome()
-      await waitFor(() => { expect(screen.getAllByText('Môn Đồ').length).toBeGreaterThan(0) })
+      // Tier name lives in a dedicated span inside the V3 tier-label
+      // ("MÔN ĐỒ • TIER 3"), so target it explicitly.
+      await waitFor(() => { expect(screen.getByTestId('home-tier-name').textContent).toBe('Môn Đồ') })
     })
 
     it('progress bar width correct for 8200 points (32%)', async () => {
@@ -132,9 +140,10 @@ describe('Home Dashboard', () => {
       })
       renderHome()
       await waitFor(() => {
-        const bar = document.querySelector('.gold-gradient')
+        const bar = document.querySelector('.hero-v3-progress-fill')
         expect((bar as HTMLElement).style.width).toBe('0%')
-        expect(screen.getByText('Tân Tín Hữu')).toBeInTheDocument()
+        // Tier name lives inside its own span — match against textContent.
+        expect(screen.getByTestId('home-tier-name').textContent).toBe('Tân Tín Hữu')
       })
     })
 
@@ -148,8 +157,10 @@ describe('Home Dashboard', () => {
       await waitFor(() => {
         // The hero collapses tier-progress copy down to a single
         // "max tier reached" line once the user is at Apostle.
-        expect(screen.getByTestId('home-max-tier-msg')).toBeInTheDocument()
-        expect(screen.getByText('Đã đạt hạng cao nhất!')).toBeInTheDocument()
+        const msg = screen.getByTestId('home-max-tier-msg')
+        expect(msg).toBeInTheDocument()
+        // V3 prefixes the message with the 👑 emoji; assert substring.
+        expect(msg.textContent).toContain('Đã đạt hạng cao nhất!')
       })
     })
   })
@@ -345,7 +356,7 @@ describe('Home Dashboard', () => {
       renderHome()
       await waitFor(() => {
         expect(screen.getAllByText(/Nghĩa/).length).toBeGreaterThan(0)
-        expect(screen.getByText('Tân Tín Hữu')).toBeInTheDocument()
+        expect(screen.getByTestId('home-tier-name').textContent).toBe('Tân Tín Hữu')
       })
     })
 
