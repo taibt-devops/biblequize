@@ -2292,8 +2292,12 @@ select {
   background: radial-gradient(circle, var(--gold-glow-strong) 0%, transparent 65%);
 }
 
-/* Make sure card content stays above the ::before glow. */
-.featured-warm-card > * {
+/* Make sure card content stays above the ::before glow. The
+   `:not(.absolute)` carve-out leaves Tailwind-positioned overlays
+   (e.g. the recommendation pulse badge) free to use absolute
+   positioning — without it, flex's default align-items:stretch was
+   blowing the badge up to a full-width gold strip. */
+.featured-warm-card > *:not(.absolute) {
   position: relative;
   z-index: 1;
 }

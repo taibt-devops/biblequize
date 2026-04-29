@@ -88,7 +88,7 @@ export default function RankedFeaturedCard({ isRecommended, recommendReason }: R
     return (
       <FeaturedCard
         id="ranked"
-        icon="bolt"
+        icon="emoji_events"
         iconFill
         iconColor={iconColor}
         title={title}
@@ -108,7 +108,7 @@ export default function RankedFeaturedCard({ isRecommended, recommendReason }: R
     return (
       <FeaturedCard
         id="ranked"
-        icon="bolt"
+        icon="emoji_events"
         iconFill
         iconColor={iconColor}
         title={title}
@@ -135,7 +135,7 @@ export default function RankedFeaturedCard({ isRecommended, recommendReason }: R
     return (
       <FeaturedCard
         id="ranked"
-        icon="bolt"
+        icon="emoji_events"
         iconFill
         iconColor={iconColor}
         title={title}
