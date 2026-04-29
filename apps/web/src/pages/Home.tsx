@@ -98,7 +98,7 @@ export default function Home() {
   const isCurrentUserVisibleInList = myRank != null && myRank <= leaderboard.length
   const showMyRankSticky = myRank != null && !isCurrentUserVisibleInList
   const tier = getTierInfo(totalPoints)
-  // Tier level 1..6 — used by GameModeGrid for locking tier-gated modes.
+  // Tier level 1..6 — passed into TierPerksTeaser to highlight next-tier perks.
   const userTierLevel = tier.current.id
   const greeting = getGreeting(t)
 
@@ -182,25 +182,21 @@ export default function Home() {
       <BasicQuizCard />
 
       {/* ── Game Modes ──
-          Open access for everyone. Cards may surface their own per-mode
-          state (e.g. Ranked tier-2 gate with early-unlock hint, Tournament
-          matchmaking warning) — see GameModeGrid. */}
+          Open access for everyone. Ranked is now gated by the Bible
+          Basics catechism (BasicQuizCard above) and no longer rendered
+          inside this grid — see GameModeGrid. */}
       <section className="space-y-4">
         <div className="flex justify-between items-center">
           <h2 className="text-xl font-black tracking-tight text-on-surface">{t('home.gameModes')}</h2>
           <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
-            {t('home.exploreModes', { count: 9 })}
+            {t('home.exploreModes', { count: 8 })}
           </span>
         </div>
         <GameModeGrid
           userStats={{
             currentStreak: meData?.currentStreak,
             totalPoints,
-            practiceCorrectCount: meData?.practiceCorrectCount,
-            practiceTotalCount: meData?.practiceTotalCount,
           }}
-          userTier={userTierLevel}
-          earlyRankedUnlock={meData?.earlyRankedUnlock ?? false}
         />
       </section>
 
