@@ -2693,3 +2693,26 @@ select {
   .daily-verse-v3-divider-line { flex: 0 0 40px; }
   .daily-verse-v3-text { font-size: 16px; }
 }
+
+/* ──────────────────────────────────────────────────────────────────────────
+   V3 Featured Card — icon-wrap (rounded gold-tint frame for the 32px
+   primary icon). Source: docs/designs/home-design-studio.html
+   .v3-card-icon-wrap (line 504), with the inline override the design
+   uses for the Ranked variant promoted to a CSS rule here.
+   ────────────────────────────────────────────────────────────────────────── */
+.featured-card-icon-wrap {
+  display: inline-flex;
+  padding: 12px;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid var(--gold-border-subtle);
+  border-radius: 12px;
+  align-self: flex-start;
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.1);
+}
+
+/* Stronger gold tint + glow on the Ranked card to mirror the design's
+   "achievement vibe" inline style override. */
+.featured-warm-card[data-variant="ranked"] .featured-card-icon-wrap {
+  background: rgba(212, 175, 55, 0.12);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+}

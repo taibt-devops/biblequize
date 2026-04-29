@@ -171,6 +171,11 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
           description={t('practiceFeatured.description')}
           isRecommended={recommendation?.mode === 'practice'}
           recommendReason={recommendReason('practice')}
+          status={
+            <div data-testid="featured-card-practice-status" className="text-[13px] font-semibold text-secondary">
+              {t('practiceFeatured.status')}
+            </div>
+          }
           cta={{
             label: t('practiceFeatured.cta'),
             onClick: () => navigate('/practice'),

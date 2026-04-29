@@ -88,12 +88,14 @@ export default function FeaturedCard({
       )}
 
       <div className="flex-1">
-        <span
-          className={`material-symbols-outlined gold-icon text-4xl ${iconColor} block mb-4`}
-          style={iconFill ? FILL_1 : undefined}
-        >
-          {icon}
-        </span>
+        <div className="featured-card-icon-wrap mb-4">
+          <span
+            className={`material-symbols-outlined gold-icon text-[32px] ${iconColor}`}
+            style={iconFill ? FILL_1 : undefined}
+          >
+            {icon}
+          </span>
+        </div>
         <h3 className="font-sora text-[22px] font-bold text-on-surface uppercase tracking-[0.5px] mb-2">
           {title}
         </h3>
