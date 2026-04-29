@@ -3001,6 +3001,16 @@ Found 3-layer break: BE has no chat MessageMapping, /ws blocked by Security at h
 ```
 
 **Follow-up items (deferred, separate PRs):**
-- V32 migration: drop `users.early_ranked_unlock`, `practice_correct_count`, `practice_total_count`, `early_ranked_unlocked_at` columns once production has been stable for 1–2 weeks
-- Drop `requiredTier:2` + lock-state UI for Ranked card in GameModeGrid (cascades into ~6 dependent test rewrites — keep as a focused refactor PR)
-- Decommission `EarlyUnlockMetrics` admin page + `admin.earlyUnlock.*` keys (paired with V32 column drop)
+- ~~Drop `requiredTier:2` + lock-state UI for Ranked card in GameModeGrid~~ — DONE 2026-04-29 in commit `2e424c8` (Ranked card removed entirely; BasicQuizCard banner is now the single Ranked gateway).
+
+### v1.1 — Cleanup deprecated early ranked unlock system
+> Sau khi Bible Basics Quiz stable trong production 1–2 tuần.
+
+- [ ] V32 migration: `DROP COLUMN early_ranked_unlock, early_ranked_unlocked_at, practice_correct_count, practice_total_count` từ `users` table
+- [ ] Backend: remove `SessionService.updateEarlyRankedUnlockProgress` + any remaining references; check `RankedController` and other callers
+- [ ] Backend: retire `/api/admin/early-unlock-metrics` endpoint (+ service if dedicated)
+- [ ] Frontend: delete `apps/web/src/pages/admin/EarlyUnlockMetrics.tsx` + its test + nav link in admin sidebar
+- [ ] Frontend: drop `admin.earlyUnlock.*` i18n keys (vi + en, ~13 keys × 2 langs)
+- [ ] TypeScript types: remove `earlyRankedUnlock`, `practiceCorrectCount`, `practiceTotalCount`, `earlyRankedUnlockedAt` from `User` / `UserResponse` / any DTOs
+- [ ] `apps/web/src/utils/earlyUnlock.ts`: delete the entire module (orphan after Step 1.0 GameModeGrid surgery)
+- [ ] Tests: clean up any remaining tests referencing the old early-unlock system
