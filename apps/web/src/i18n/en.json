@@ -827,7 +827,11 @@
       },
       "tierSystem": {
         "q": "How does the tier system work?",
-        "a": "Six tiers: New Believer (0 XP) → Seeker (1,000) → Disciple (5,000) → Sage (15,000) → Prophet (40,000) → Apostle (100,000). Tiers only rise, never fall — based on lifetime XP total. Each tier unlocks new modes and boosts XP multiplier (Prophet 1.5×, Apostle 2×)."
+        "a": "Six tiers tracked by lifetime XP total: New Believer (0 XP) → Seeker (1,000) → Disciple (5,000) → Sage (15,000) → Prophet (40,000) → Apostle (100,000). Tiers only rise, never fall. Each tier scales 5 things at once: (1) mode unlocks — Ranked at T2, Tournament at T4; (2) Ranked XP multiplier: 1.0× → 1.1× → 1.2× → 1.3× → 1.5× → 2.0×; (3) Energy regen/hour: 20 → 22 → 25 → 28 → 30 → 35; (4) Streak Freezes/week: 1 (T1-T2) → 2 (T3-T4) → 3 (T5-T6); (5) Harder question mix + shorter timer — T1 has 70% easy/30s, T6 has 60% hard/18s. Cosmetics (avatar frames, quiz themes) also unlock by tier."
+      },
+      "streakVsXp": {
+        "q": "How are Streak and XP different?",
+        "a": "They're two completely independent currencies. XP is the main progression lane — earned only from Ranked mode, determines your tier (1-6), unlocks new modes, scales rewards, drives leaderboard position, and unlocks cosmetics. Streak is an engagement reward — goes up when you play Ranked daily (and Daily Challenge soon), regardless of performance. You can have a high streak but low tier (faithful daily visitor not yet skilled at Ranked) or vice versa (skilled grinder who plays sporadically). Both have their own value: streak reflects faithful consistency, XP reflects Bible mastery."
       },
       "howUnlockRanked": {
         "q": "When does Ranked mode unlock?",
@@ -843,7 +847,7 @@
       },
       "dailyStreak": {
         "q": "How do Daily Challenge and Streak work?",
-        "a": "Daily Challenge: 5 questions per day, once per day. Completing it increments your streak by 1. Miss a day → streak resets to 0. Milestones: 7 days (Persistence badge), 30 days (Endurance), 100 days (Steadfast) — each grants +200–1000 XP. From tier 3 you earn a Streak Freeze that forgives one missed day."
+        "a": "Daily Challenge: 5 fixed questions per day (same for everyone), once per day — creates a shared daily puzzle community. Streak: consecutive days played — increments by 1 each day you play Ranked mode. Miss 1 day → Streak Freeze auto-consumes (if available); miss 2+ days → streak resets to 1. Freeze count per week scales by tier: 1 freeze at T1-T2, 2 at T3-T4, 3 at T5-T6. Milestone badges planned: 7 days 'Diligent', 30 days 'Faithful', 100 days 'Patient as Job'. Note: Practice, Weekly, Mystery, Speed do NOT extend streak — only Ranked counts."
       },
       "groupsTournament": {
         "q": "What are Church Groups and Tournaments?",
@@ -1350,6 +1354,23 @@
     "cannotForfeit": "Could not forfeit",
     "wonMatch": "won the match!",
     "continue": "Continue"
+  },
+  "basicQuiz": {
+    "card": {
+      "passedBadge": "Bible Basics completed",
+      "rankedHeader": "Ranked Match",
+      "rankedDescription": "Compete live, earn big rank points.",
+      "unlockHeader": "Complete Bible Basics to unlock Ranked",
+      "subtitle": "{{total}} questions about core Christian doctrine — score at least {{threshold}} to pass.",
+      "attemptCount": "{{count}} attempts",
+      "attemptCount_one": "{{count}} attempt",
+      "attemptCount_other": "{{count}} attempts",
+      "cooldownLabel": "Try again in",
+      "ctaFirst": "Start Bible Basics",
+      "ctaRetry": "Retake the quiz",
+      "ctaCooldown": "Waiting... ({{time}})",
+      "ctaRanked": "Play Ranked"
+    }
   },
   "gameModes": {
     "practice": "Practice",

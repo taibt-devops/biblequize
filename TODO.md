@@ -2935,7 +2935,13 @@ Found 3-layer break: BE has no chat MessageMapping, /ws blocked by Security at h
 - [SessionService.java:79-90](apps/api/src/main/java/com/biblequiz/modules/quiz/service/SessionService.java#L79-L90) — Ranked gate replaced: now checks `basicQuizPassed` only (legacy earlyRankedUnlock fields untouched, dead-but-co-existing until V32)
 - [BasicQuizServiceTest.java](apps/api/src/test/java/com/biblequiz/service/BasicQuizServiceTest.java) — 11 tests cover fresh status, cooldown active, passed, getQuestions happy/incomplete-seed, pass 8/10, perfect 10/10, fail 7/10 with review, cooldown rejection, already-passed rejection, unknown questionId rejection
 - BE regression: 674 tests (+11 new), 1 failure + 51 errors — all preexisting (DuplicateDetectionService cascade, QuestionReviewControllerTest.stats); 0 new failures from Step 2
-### Step 3: BasicQuizCard FE component (4 states) [ ] TODO
+### Step 3: BasicQuizCard FE component (4 states) [x] DONE
+- [BasicQuizCard.tsx](apps/web/src/components/BasicQuizCard.tsx) — 4 states (first/retry/cooldown/passed) with local 1s countdown + server refetch on hit zero
+- [Home.tsx](apps/web/src/pages/Home.tsx) — BasicQuizCard mounted above GameModeGrid section
+- i18n: `basicQuiz.card.*` namespace added to vi.json + en.json (12 keys covering 4 states)
+- [BasicQuizCard.test.tsx](apps/web/src/components/__tests__/BasicQuizCard.test.tsx) — 8 test cases: 4 states + 2 navigations + cooldown ticker + skeleton
+- FE regression: 1009 tests pass, 100 files (incl. BasicQuizCard.test 8 new); 0 regressions
+- i18n validator: 123 hardcoded / 0 missing → IDENTICAL to baseline before Step 3
 ### Step 4: BasicQuiz page (10 Q + result screens) [ ] TODO
 ### Step 5: Admin filter + 10-min safeguard on delete [ ] TODO
 ### Step 6: i18n strings + remove old XP-unlock keys [ ] TODO

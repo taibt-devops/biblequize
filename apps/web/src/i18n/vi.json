@@ -827,7 +827,11 @@
       },
       "tierSystem": {
         "q": "Hệ thống hạng (tier) hoạt động như thế nào?",
-        "a": "Có 6 hạng: Tân Tín Hữu (0 XP) → Người Tìm Kiếm (1,000) → Môn Đồ (5,000) → Hiền Triết (15,000) → Tiên Tri (40,000) → Sứ Đồ (100,000). Hạng chỉ tăng, không giảm — tính theo tổng XP tích lũy all-time. Mỗi hạng mở khóa chế độ chơi mới và tăng XP multiplier (Tiên Tri 1.5×, Sứ Đồ 2×)."
+        "a": "Có 6 hạng theo tổng XP tích lũy all-time: Tân Tín Hữu (0 XP) → Người Tìm Kiếm (1,000) → Môn Đồ (5,000) → Hiền Triết (15,000) → Tiên Tri (40,000) → Sứ Đồ (100,000). Hạng chỉ tăng, không bao giờ giảm. Mỗi hạng scale 5 thứ cùng lúc: (1) mở khóa chế độ mới — Ranked ở T2, Tournament ở T4; (2) XP multiplier khi chơi Ranked: 1.0× → 1.1× → 1.2× → 1.3× → 1.5× → 2.0×; (3) Năng lượng hồi/giờ: 20 → 22 → 25 → 28 → 30 → 35; (4) Streak Freeze/tuần: 1 (T1-T2) → 2 (T3-T4) → 3 (T5-T6); (5) Câu hỏi khó hơn + timer ngắn hơn — T1 có 70% easy/30s, T6 có 60% hard/18s. Ngoài ra, avatar frame và quiz theme (cosmetics) cũng khóa theo tier."
+      },
+      "streakVsXp": {
+        "q": "Streak và XP khác nhau thế nào?",
+        "a": "Đây là 2 loại 'tiền tệ' hoàn toàn độc lập trong app. XP là đường progression chính — chỉ kiếm được từ Ranked mode, quyết định tier (1-6), mở khóa chế độ mới, scale phần thưởng, vị trí leaderboard, và unlock cosmetics. Streak là reward engagement — tăng khi bạn chơi Ranked (và sắp tới là Daily) mỗi ngày, không liên quan performance. Bạn có thể có streak cao nhưng tier thấp (user siêng chơi Daily nhưng chưa giỏi Ranked), hoặc ngược lại (user giỏi Ranked nhưng chơi rải rác). Cả hai đều có giá trị riêng: streak thể hiện sự bền bỉ đức tin, XP thể hiện mức độ thông thạo Kinh Thánh."
       },
       "howUnlockRanked": {
         "q": "Thi Đấu Xếp Hạng mở khóa khi nào?",
@@ -843,7 +847,7 @@
       },
       "dailyStreak": {
         "q": "Thử Thách Ngày và Streak hoạt động ra sao?",
-        "a": "Mỗi ngày có 5 câu Daily Challenge, chỉ làm được 1 lần/ngày. Hoàn thành = streak +1. Miss 1 ngày → streak reset về 0. Mốc thưởng: 7 ngày (badge Kiên Trì), 30 ngày (badge Dẻo Dai), 100 ngày (badge Bền Vững) — mỗi mốc +200-1000 XP bonus. Streak Freeze (từ hạng 3) cho phép miss 1 ngày mà không reset."
+        "a": "Thử Thách Ngày: 5 câu cố định mỗi ngày (giống nhau cho mọi user), chỉ chơi được 1 lần/ngày, mọi người cùng làm chung → tạo trải nghiệm cộng đồng. Streak: chuỗi ngày chơi liên tiếp — tăng +1 mỗi khi bạn chơi Ranked mode trong ngày. Bỏ quên 1 ngày → Streak Freeze tự consume (nếu còn), bỏ quên 2+ ngày → streak reset về 1. Số Freeze/tuần scale theo tier: 1 Freeze ở T1-T2, 2 ở T3-T4, 3 ở T5-T6. Mốc streak dự kiến có badge: 7 ngày 'Chuyên Cần', 30 ngày 'Trung Tín', 100 ngày 'Kiên Nhẫn Như Gióp'. Lưu ý: Practice, Weekly, Mystery, Speed KHÔNG extend streak — chỉ Ranked mới tính."
       },
       "groupsTournament": {
         "q": "Nhóm Giáo Xứ và Giải Đấu là gì?",
@@ -1350,6 +1354,23 @@
     "cannotForfeit": "Không thể bỏ cuộc",
     "wonMatch": "đã chiến thắng trận đấu!",
     "continue": "Tiếp Tục"
+  },
+  "basicQuiz": {
+    "card": {
+      "passedBadge": "Đã hoàn thành Bài Giáo Lý",
+      "rankedHeader": "Thi Đấu Xếp Hạng",
+      "rankedDescription": "Tranh tài trực tiếp, kiếm điểm rank lớn.",
+      "unlockHeader": "Hoàn thành Bài Giáo Lý Căn Bản để mở khóa Thi Đấu Xếp Hạng",
+      "subtitle": "{{total}} câu hỏi cơ bản về đức tin Cơ-đốc — đúng tối thiểu {{threshold}} để pass.",
+      "attemptCount": "Đã thử: {{count}} lần",
+      "attemptCount_one": "Đã thử: {{count}} lần",
+      "attemptCount_other": "Đã thử: {{count}} lần",
+      "cooldownLabel": "Có thể thử lại sau",
+      "ctaFirst": "Bắt đầu Bài Giáo Lý",
+      "ctaRetry": "Làm lại bài",
+      "ctaCooldown": "Đang chờ... ({{time}})",
+      "ctaRanked": "Bắt đầu Ranked"
+    }
   },
   "gameModes": {
     "practice": "Luyện Tập",

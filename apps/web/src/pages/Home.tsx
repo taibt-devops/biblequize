@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { useTranslation } from 'react-i18next'
 import ActivityFeed from '../components/ActivityFeed'
+import BasicQuizCard from '../components/BasicQuizCard'
 import ComebackModal from '../components/ComebackModal'
 import DailyBonusModal from '../components/DailyBonusModal'
 import DailyMissionsCard from '../components/DailyMissionsCard'
@@ -195,6 +196,9 @@ export default function Home() {
 
       {/* ── Featured Daily Challenge (hero CTA for tier-1) ── */}
       <FeaturedDailyChallenge />
+
+      {/* ── Bible Basics catechism unlock ── (Ranked gate, replaces XP/practice gate) */}
+      <BasicQuizCard />
 
       {/* ── Game Modes ──
           Open access for everyone. Cards may surface their own per-mode
