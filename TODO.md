@@ -1,5 +1,129 @@
 # TODO
 
+## 2026-04-30 — Ranked Page Redesign (Sacred Modernist v2) [IN PROGRESS]
+
+> Source: `docs/prompts/PROMPT_RANKED_REDESIGN.md` + mockup `docs/designs/ranked-redesign-mockup.html`.
+> Target file: `apps/web/src/pages/Ranked.tsx`. KHÔNG đụng AppLayout, KHÔNG đổi API, KHÔNG đổi business logic (energy/cap/season).
+> Pre-flight verification (2026-04-30):
+> - ✅ `/api/me/tier-progress` đã có (UserController.java:435) → cấp đủ data cho R1
+> - ✅ `/api/me/ranked-status` đã có (RankedController.java:416) → cấp livesRemaining/questionsCounted/pointsToday/cap/bookProgress/resetAt
+> - ✅ `/api/me/journey` đã có (UserController.java:383) → cấp bookMastery cho R4
+> - ✅ `currentStreak` đã expose qua `/api/me` (UserResponse.java:32) — KHÔNG cần task BE-EXTEND
+> - ⚠️ Backend gaps (handle bằng fallback FE, KHÔNG block redesign):
+>   - `dailyAccuracy` → FE compute từ `correctAnswersInCurrentBook / questionsInCurrentBook` nếu có, hoặc render "—"
+>   - `dailyDelta` (so với hôm qua) → render placeholder "—" hoặc hide line "↑ +N so với hôm qua"
+>   - `pointsToTop50`, `pointsToTop10` → hardcode "60đ"/"200đ" với comment `// TODO: BE-EXTEND-RANKED-STATUS`
+>
+> Adjustments to original prompt (đã align với user 2026-04-30):
+> - **CTA disabled rule**: GIỮ logic hiện tại `livesRemaining > 0 && questionsCounted < cap` (KHÔNG đổi sang "energy < 5"). Sub-text adapt: hết câu → "Đã đạt giới hạn 100 câu/ngày", hết energy → "Hết năng lượng — chờ phục hồi".
+> - **Timer format**: GIỮ `HH:MM:SS` (consistent với app), KHÔNG đổi sang `HH h MMm`.
+> - **Milestone progress formula** (R5):
+>   - `rank > 100` → bar 0%, "▼ Bạn ở đây" trước Top 100
+>   - `50 < rank ≤ 100` → bar lerp 0% → 33% theo (100 - rank) / 50
+>   - `10 < rank ≤ 50` → bar lerp 33% → 66% theo (50 - rank) / 40
+>   - `1 ≤ rank ≤ 10` → bar lerp 66% → 100% theo (10 - rank) / 9
+>
+> E2E impact: spec `tests/e2e/playwright/specs/{smoke,happy-path}/W-M04-ranked-mode.md` + code `apps/web/tests/e2e/{smoke,happy-path}/web-user/W-M04-ranked.spec.ts`. Data-testid `ranked-user-rank` BỊ BỎ (rank chỉ còn ở Season card R5) → cần cập nhật smoke spec W-M04-L1-002.
+
+### Task R1: Header + Tier Progress Bar [x] DONE 2026-04-30
+- Status: [x] DONE
+- File(s): `apps/web/src/pages/Ranked.tsx`
+- Test: `apps/web/src/pages/__tests__/Ranked.test.tsx`
+- API: `GET /api/me/tier-progress` (đã có)
+- Checklist:
+  - [x] Header redesigned: title + tier badge pill + progress text + 1.5px progress bar
+  - [x] Edge case max tier (`nextTier === null`) → "Đã đạt tier cao nhất 👑" + bar 100%
+  - [x] Animation `transition-all duration-700 ease-out` on progress bar
+  - [x] Preserve data-testid: `ranked-tier-badge`; new testids: `ranked-tier-progress-text`, `ranked-tier-progress-bar`
+  - [x] i18n keys added: `ranked.pointsToNext`, `ranked.maxTier` (vi+en)
+  - [x] Tier-progress API fetched via new `fetchTierProgress()`; `tierData.totalPoints` is canonical (fixes pre-existing bug where today's points were used for tier calc)
+  - [x] Vitest: 4 new R1 tests pass (16/16 total in Ranked.test.tsx)
+  - [x] Tầng 1 (16/16) + Tầng 2 (455/456 — 1 pre-existing GroupDetail flaky on main) + Tầng 3 FE (983/984) — 0 R1 regressions
+  - [x] Tầng 3 BE: pre-existing failures verified on main (QuestionReviewControllerTest + RankedControllerTest ApplicationContext) — 0 R1 regressions
+  - [x] Commit: `feat: Ranked header with tier progress bar (R1)`
+
+### Task R2: Energy + Streak 2-column row
+- Status: [ ] TODO
+- File(s): `apps/web/src/pages/Ranked.tsx`
+- Test: `apps/web/src/pages/__tests__/Ranked.test.tsx`
+- API: `livesRemaining` từ `/api/me/ranked-status`, `currentStreak` từ `/api/me` (cả 2 đã có)
+- Checklist:
+  - [ ] Card 1 Energy (left, 60%): big number + progress bar gold + "~Z câu" (Z = floor(energy/5)) + countdown HH:MM:SS
+  - [ ] Card 2 Streak (right, 40%): orange gradient bg + 🔥 + "N ngày" + caption tùy streak > 0
+  - [ ] Preserve data-testid: `ranked-energy-display`, `ranked-energy-timer`, `ranked-reset-timer`
+  - [ ] Sử dụng `useAuth()` để đọc `user.currentStreak`
+  - [ ] Vitest: 61 energy → "~12 câu", streak=0 → "Bắt đầu streak hôm nay!", countdown format
+  - [ ] Tầng 1 + 2 + 3 test pass
+  - [ ] Commit: `feat: Ranked energy + streak cards (R2)`
+
+### Task R3: 3 Stats Cards (loại bỏ rank duplicate)
+- Status: [ ] TODO
+- File(s): `apps/web/src/pages/Ranked.tsx`
+- Test: `apps/web/src/pages/__tests__/Ranked.test.tsx`
+- Checklist:
+  - [ ] Card "Câu hôm nay": `12/100` + "Còn N câu" + thin progress bar
+  - [ ] Card "Điểm hôm nay": gold number + "↑ +N so với hôm qua" (hide nếu delta=0 hoặc null)
+  - [ ] Card "Độ chính xác": `75%` + "9/12 câu đúng" (render "—" nếu null)
+  - [ ] **BỎ** card "Xếp hạng #26" cũ (rank chỉ còn ở Season R5)
+  - [ ] **BỎ** data-testid `ranked-user-rank` → update spec W-M04-L1-002 (xóa assertion)
+  - [ ] Preserve data-testid: `ranked-questions-counted`, `ranked-points-today`, `ranked-today-progress`
+  - [ ] Comment `// TODO: BE-EXTEND-RANKED-STATUS — dailyDelta, dailyAccuracy`
+  - [ ] Vitest: delta dương → "↑ +12", delta=0 → hide, accuracy null → "—"
+  - [ ] Update `tests/e2e/playwright/specs/smoke/W-M04-ranked-mode.md` xóa assertion `ranked-user-rank` trong L1-002
+  - [ ] Update `apps/web/tests/e2e/smoke/web-user/W-M04-ranked.spec.ts` (nếu test reference rank section)
+  - [ ] Tầng 1 + 2 + 3 test pass
+  - [ ] Commit: `feat: Ranked 3 stats cards without duplicate rank (R3)`
+
+### Task R4: Active Book Card
+- Status: [ ] TODO
+- File(s): `apps/web/src/pages/Ranked.tsx`
+- Test: `apps/web/src/pages/__tests__/Ranked.test.tsx`
+- API: `bookProgress` từ `/api/me/ranked-status` (đã có), tùy chọn `/api/me/journey`
+- Checklist:
+  - [ ] Slim horizontal card: 📖 icon + "Genesis • Sách 2/66" + progress bar + "Đổi sách →"
+  - [ ] Button "Đổi sách": disabled với tooltip "Sắp ra mắt" (chưa có flow book selector)
+  - [ ] Preserve data-testid: `ranked-current-book`, `ranked-current-book-name`, `ranked-current-book-progress`
+  - [ ] Vitest: render với book progress, disabled state cho "Đổi sách"
+  - [ ] Tầng 1 + 2 + 3 test pass
+  - [ ] Commit: `feat: Ranked active book card with progress (R4)`
+
+### Task R5: Season Card with Milestones + CTA
+- Status: [ ] TODO
+- File(s): `apps/web/src/pages/Ranked.tsx`
+- Test: `apps/web/src/pages/__tests__/Ranked.test.tsx`
+- Checklist:
+  - [ ] Season card: "🏆 MÙA THI ĐẤU — CÒN N NGÀY" + #rank + "40đ mùa" + 4 mốc (Top 100/50/10/1)
+  - [ ] Progress bar lerp theo formula đã chốt:
+    - rank > 100 → 0%
+    - 50 < rank ≤ 100 → 0-33% theo `(100 - rank) / 50 * 33`
+    - 10 < rank ≤ 50 → 33-66% theo `33 + (50 - rank) / 40 * 33`
+    - 1 ≤ rank ≤ 10 → 66-100% theo `66 + (10 - rank) / 9 * 34`
+  - [ ] "▼ Bạn ở đây" highlight ở mốc gần nhất, color gold weight 700
+  - [ ] CTA full-width: gold gradient + box-shadow glow + main text "VÀO THI ĐẤU NGAY" + sub text dynamic
+  - [ ] CTA disabled rule (GIỮ logic cũ): `livesRemaining > 0 && questionsCounted < cap`
+    - hết câu → sub: "Đã đạt giới hạn 100 câu/ngày"
+    - hết energy → sub: "Hết năng lượng — chờ phục hồi"
+    - bình thường → sub: "Tiếp tục Genesis • ~Z câu với năng lượng hiện có"
+  - [ ] Preserve data-testid: `ranked-season-card`, `ranked-season-rank`, `ranked-season-points`, `ranked-start-btn`, `ranked-no-energy-msg`, `ranked-cap-reached-msg`
+  - [ ] Comment `// TODO: BE-EXTEND-RANKED-STATUS — pointsToTop50/10` (placeholder 60đ/200đ)
+  - [ ] Vitest: rank=26 → milestones lerp đúng (~33%), rank=8 → ~85%, energy=0 → CTA disabled với sub text đúng
+  - [ ] Tầng 1 + 2 + 3 test pass
+  - [ ] Commit: `feat: Ranked season + CTA (R5)`
+
+### Task R6: Final regression + cleanup
+- Status: [ ] TODO
+- Checklist:
+  - [ ] `cd apps/web && npx vitest run` — baseline >= trước task
+  - [ ] `cd apps/web && npx playwright test tests/e2e/smoke/web-user/W-M04-ranked.spec.ts` pass
+  - [ ] `cd apps/web && npx playwright test tests/e2e/happy-path/web-user/W-M04-ranked.spec.ts` pass
+  - [ ] `cd apps/api && ./mvnw test` — backend baseline
+  - [ ] Update `DESIGN_SYNC_AUDIT.md` (nếu có): Ranked → ✅ Synced (custom v2)
+  - [ ] Tạo `BACKEND_GAPS_RANKED_V2.md` với 3 gaps (dailyAccuracy, dailyDelta, pointsToTop50/10)
+  - [ ] Đánh dấu section này DONE trong TODO.md
+  - [ ] Commit: `chore: Ranked redesign v2 final regression + docs`
+
+---
+
 ## 2026-04-27 — V3 Tier B/C Quality Expansion: 14 books [IN PROGRESS]
 
 > Sau V2 Tier A complete (1,440 câu, 30/45/25), nâng cấp 14 sách giá trị cao tiếp theo lên ratio gần 30/45/25.

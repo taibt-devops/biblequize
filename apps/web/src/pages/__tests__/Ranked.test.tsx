@@ -49,10 +49,39 @@ const RANKED_STATUS = {
   bookProgress: { currentIndex: 39, totalBooks: 66, currentBook: 'Ma-thi-ơ', nextBook: 'Mác', isCompleted: false, progressPercentage: 60 },
 }
 
+// Tier 2 (Người Tìm Kiếm) at 4350/5000 → 83.75% → 650 to next (Môn Đồ)
+const TIER_PROGRESS_TIER2 = {
+  tierLevel: 2,
+  tierName: 'Người Tìm Kiếm',
+  totalPoints: 4350,
+  nextTierPoints: 5000,
+  tierProgressPercent: 83.75,
+  starIndex: 4,
+  starXp: 4250,
+  nextStarXp: 5000,
+  starProgressPercent: 20,
+  milestone: null,
+}
+
+// Tier 6 (Sứ Đồ) — max tier, no nextTier
+const TIER_PROGRESS_MAX = {
+  tierLevel: 6,
+  tierName: 'Sứ Đồ',
+  totalPoints: 150_000,
+  nextTierPoints: 100_000,
+  tierProgressPercent: 100,
+  starIndex: 0,
+  starXp: 100_000,
+  nextStarXp: 100_000,
+  starProgressPercent: 100,
+  milestone: null,
+}
+
 describe('Ranked Mode Dashboard', () => {
   beforeEach(() => {
     vi.clearAllMocks()
     mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('tier-progress')) return Promise.resolve({ data: TIER_PROGRESS_TIER2 })
       if (url.includes('ranked-status')) return Promise.resolve({ data: RANKED_STATUS })
       if (url.includes('my-rank')) return Promise.resolve({ data: { rank: 42, points: 2340 } })
       if (url.includes('leaderboard')) return Promise.resolve({ data: [] })
@@ -169,6 +198,53 @@ describe('Ranked Mode Dashboard', () => {
     renderRanked()
     await waitFor(() => {
       expect(screen.queryByText(/undefined/i)).not.toBeInTheDocument()
+    })
+  })
+
+  // ── R1: Header + Tier Progress Bar ──
+
+  it('R1: renders tier progress text "Còn 650 điểm nữa lên Môn Đồ" for tier 2 user', async () => {
+    renderRanked()
+    await waitFor(() => {
+      const text = screen.getByTestId('ranked-tier-progress-text')
+      expect(text).toHaveTextContent('650')
+      expect(text).toHaveTextContent('Môn Đồ')
+    })
+  })
+
+  it('R1: renders max tier message for tier 6 (Sứ Đồ) user', async () => {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('tier-progress')) return Promise.resolve({ data: TIER_PROGRESS_MAX })
+      if (url.includes('ranked-status')) return Promise.resolve({ data: RANKED_STATUS })
+      if (url.includes('my-rank')) return Promise.resolve({ data: { rank: 1, points: 150_000 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderRanked()
+    await waitFor(() => {
+      const text = screen.getByTestId('ranked-tier-progress-text')
+      expect(text).toHaveTextContent(/đạt tier cao nhất/i)
+    })
+  })
+
+  it('R1: progress bar width matches tierProgressPercent from API', async () => {
+    renderRanked()
+    await waitFor(() => {
+      const bar = screen.getByTestId('ranked-tier-progress-bar') as HTMLElement
+      expect(bar.style.width).toBe('83.75%')
+    })
+  })
+
+  it('R1: progress bar at 100% when user is at max tier', async () => {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('tier-progress')) return Promise.resolve({ data: TIER_PROGRESS_MAX })
+      if (url.includes('ranked-status')) return Promise.resolve({ data: RANKED_STATUS })
+      if (url.includes('my-rank')) return Promise.resolve({ data: { rank: 1, points: 150_000 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderRanked()
+    await waitFor(() => {
+      const bar = screen.getByTestId('ranked-tier-progress-bar') as HTMLElement
+      expect(bar.style.width).toBe('100%')
     })
   })
 })

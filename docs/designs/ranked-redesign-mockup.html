@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>BibleQuiz Ranked — Redesign Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Be Vietnam Pro', system-ui, sans-serif;
+    background: #11131e;
+    color: #e1e1f1;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ========== APP SHELL ========== */
+  .app {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* ========== SIDEBAR ========== */
+  .sidebar {
+    background: #0d0f17;
+    padding: 24px 16px;
+    border-right: 1px solid rgba(255,255,255,0.05);
+  }
+  .logo {
+    color: #e8a832;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 24px;
+    padding: 0 8px;
+    letter-spacing: -0.3px;
+  }
+  .user-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 20px;
+  }
+  .user-card .avatar-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(232,168,50,0.15);
+    border: 2px solid #e8a832;
+    color: #e8a832;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .user-name {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .user-tier {
+    font-size: 11px;
+    color: rgba(225,225,241,0.5);
+    margin-top: 2px;
+  }
+  .mini-bar {
+    height: 4px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 100px;
+    overflow: hidden;
+    margin-top: 4px;
+  }
+  .mini-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #e8a832, #e7c268);
+    border-radius: 100px;
+  }
+  .tier-progress-text {
+    font-size: 10px;
+    color: rgba(225,225,241,0.4);
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  /* NAV */
+  .nav-section { margin-bottom: 16px; }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: rgba(225,225,241,0.6);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 2px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .nav-item:hover { background: rgba(255,255,255,0.04); color: #e1e1f1; }
+  .nav-item.active {
+    background: rgba(232,168,50,0.1);
+    color: #e8a832;
+    border-left: 2px solid #e8a832;
+    padding-left: 10px;
+    font-weight: 600;
+  }
+  .nav-icon {
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  /* SIDEBAR WIDGETS */
+  .widget {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-top: 10px;
+  }
+  .widget-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: rgba(225,225,241,0.5);
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  .streak-row {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+  .streak-num {
+    font-size: 22px;
+    font-weight: 800;
+    color: #fb923c;
+    line-height: 1;
+  }
+  .streak-unit {
+    font-size: 11px;
+    color: rgba(225,225,241,0.6);
+  }
+  .streak-warn {
+    font-size: 10px;
+    color: #fb923c;
+    margin-top: 4px;
+  }
+
+  /* ========== MAIN ========== */
+  .main {
+    position: relative;
+    padding: 32px 40px 48px;
+    overflow: hidden;
+  }
+  .main::before {
+    content: '';
+    position: absolute;
+    top: -300px;
+    right: -300px;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(232,168,50,0.07), transparent 65%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .main > * { position: relative; z-index: 1; }
+
+  /* HEADER */
+  .header { margin-bottom: 24px; }
+  .header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+  }
+  .tier-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .tier-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    background: rgba(232,168,50,0.1);
+    border: 1px solid rgba(232,168,50,0.3);
+    border-radius: 100px;
+    font-size: 13px;
+    color: #e8a832;
+    font-weight: 600;
+  }
+  .tier-progress-info {
+    font-size: 13px;
+    color: rgba(225,225,241,0.6);
+  }
+  .tier-progress-info b { color: #e1e1f1; }
+  .tier-progress-info .next { color: #e8a832; }
+  .tier-bar {
+    height: 6px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  .tier-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #e8a832, #e7c268);
+    width: 56%;
+    border-radius: 100px;
+  }
+
+  /* CARD BASE */
+  .card {
+    background: rgba(50,52,64,0.45);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    padding: 18px 20px;
+    backdrop-filter: blur(12px);
+  }
+  .card-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(225,225,241,0.5);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+  }
+  .card-icon {
+    color: #e8a832;
+  }
+
+  /* GRIDS */
+  .grid-2col {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .grid-3stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  /* ENERGY */
+  .energy-display {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .energy-num {
+    font-size: 38px;
+    font-weight: 800;
+    color: #e8a832;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+  .energy-total {
+    font-size: 18px;
+    color: rgba(225,225,241,0.5);
+    font-weight: 500;
+  }
+  .progress-thick {
+    height: 8px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #e8a832, #e7c268);
+    border-radius: 100px;
+  }
+  .energy-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 12px;
+    color: rgba(225,225,241,0.55);
+  }
+  .energy-meta b { color: #e1e1f1; font-weight: 600; }
+
+  /* STREAK CARD (right of energy) */
+  .streak-card {
+    background: linear-gradient(135deg, rgba(251,146,60,0.08), rgba(232,168,50,0.04));
+    border-color: rgba(251,146,60,0.2);
+  }
+  .streak-display {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .streak-fire {
+    font-size: 42px;
+    line-height: 1;
+    filter: drop-shadow(0 0 12px rgba(251,146,60,0.4));
+  }
+  .streak-text .num {
+    font-size: 26px;
+    font-weight: 800;
+    color: #fb923c;
+    line-height: 1;
+  }
+  .streak-text .label {
+    font-size: 11px;
+    color: rgba(225,225,241,0.65);
+    margin-top: 4px;
+  }
+
+  /* MINI STATS */
+  .stat-card { padding: 16px 18px; }
+  .stat-value {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    letter-spacing: -0.5px;
+  }
+  .stat-value.gold { color: #e8a832; }
+  .stat-value .sub-text {
+    color: rgba(225,225,241,0.4);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .stat-sub {
+    font-size: 11px;
+    color: rgba(225,225,241,0.55);
+  }
+  .stat-sub.up { color: #4ade80; }
+  .stat-progress {
+    height: 3px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 100px;
+    margin-top: 8px;
+    overflow: hidden;
+  }
+  .stat-progress-fill {
+    height: 100%;
+    background: #e8a832;
+    border-radius: 100px;
+  }
+
+  /* BOOK CARD */
+  .book-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 14px;
+  }
+  .book-icon-large {
+    width: 48px;
+    height: 48px;
+    background: rgba(232,168,50,0.1);
+    border: 1px solid rgba(232,168,50,0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e8a832;
+    flex-shrink: 0;
+    font-size: 24px;
+  }
+  .book-info { flex: 1; }
+  .book-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .book-title .meta-inline {
+    font-size: 11px;
+    color: rgba(225,225,241,0.5);
+    font-weight: 500;
+    margin-left: 6px;
+  }
+  .book-meta {
+    font-size: 12px;
+    color: rgba(225,225,241,0.55);
+    margin-bottom: 8px;
+  }
+  .book-progress {
+    height: 4px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  .btn-secondary {
+    background: rgba(232,168,50,0.08);
+    border: 1px solid rgba(232,168,50,0.25);
+    color: #e8a832;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s;
+  }
+  .btn-secondary:hover {
+    background: rgba(232,168,50,0.15);
+  }
+
+  /* SEASON */
+  .season-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .season-rank {
+    font-size: 36px;
+    font-weight: 800;
+    color: #e8a832;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+  .season-rank-sub {
+    font-size: 11px;
+    color: rgba(225,225,241,0.5);
+    margin-top: 4px;
+  }
+  .season-progress { flex: 1; }
+  .season-milestones {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: rgba(225,225,241,0.45);
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .season-milestones .current {
+    color: #e8a832;
+    font-weight: 700;
+    position: relative;
+  }
+  .season-milestones .next-tier {
+    color: rgba(225,225,241,0.7);
+  }
+
+  /* CTA */
+  .cta {
+    margin-top: 22px;
+    background: linear-gradient(135deg, #e8a832, #e7c268);
+    padding: 18px 28px;
+    border-radius: 14px;
+    color: #1a1410;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 8px 32px rgba(232,168,50,0.25);
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: none;
+    width: 100%;
+    font-family: inherit;
+  }
+  .cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 36px rgba(232,168,50,0.35);
+  }
+  .cta-main {
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .cta-sub {
+    font-size: 12px;
+    opacity: 0.7;
+    font-weight: 500;
+  }
+
+  /* ANNOTATIONS */
+  .annotations {
+    margin-top: 40px;
+    background: rgba(232,168,50,0.04);
+    border: 1px solid rgba(232,168,50,0.15);
+    border-left: 3px solid #e8a832;
+    padding: 20px 24px;
+    border-radius: 8px;
+  }
+  .annotations h3 {
+    color: #e8a832;
+    font-size: 14px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .annotations ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+  }
+  .annotations li {
+    padding: 4px 0 4px 24px;
+    position: relative;
+    font-size: 13px;
+    color: rgba(225,225,241,0.85);
+    line-height: 1.5;
+  }
+  .annotations li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #4ade80;
+    font-weight: 700;
+  }
+  .annotations li b {
+    color: #e8a832;
+    font-weight: 600;
+  }
+
+  /* Watermark */
+  .watermark {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    font-size: 10px;
+    color: rgba(225,225,241,0.3);
+    background: rgba(0,0,0,0.4);
+    padding: 6px 10px;
+    border-radius: 6px;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="app">
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar">
+    <div class="logo">Bible Quiz</div>
+
+    <div class="user-card">
+      <div class="avatar-row">
+        <div class="avatar">T</div>
+        <div>
+          <div class="user-name">TAI THANH</div>
+          <div class="user-tier">🌱 Tân Tín Hữu</div>
+        </div>
+      </div>
+      <div class="mini-bar"><div class="mini-bar-fill" style="width: 56%"></div></div>
+      <div class="tier-progress-text">850 / 1.500 điểm</div>
+    </div>
+
+    <div class="nav-section">
+      <a class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12L12 3l9 9v9a1 1 0 01-1 1h-5v-7H9v7H4a1 1 0 01-1-1z"/></svg>
+        Trang chủ
+      </a>
+      <a class="nav-item active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20h18M5 20V10m4 10V4m4 16v-8m4 8V8"/></svg>
+        Xếp hạng
+      </a>
+      <a class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5M14 18c0-2 2-3 4-3s3 1 3 3"/></svg>
+        Nhóm
+      </a>
+      <a class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+        Cá nhân
+      </a>
+    </div>
+
+    <div class="widget">
+      <div class="widget-label">🔥 Streak</div>
+      <div class="streak-row">
+        <span class="streak-num">7</span>
+        <span class="streak-unit">ngày liên tục</span>
+      </div>
+      <div class="streak-warn">Chơi hôm nay để giữ lửa!</div>
+    </div>
+
+    <div class="widget">
+      <div class="widget-label">🎯 Nhiệm vụ ngày</div>
+      <div style="font-weight: 700; font-size: 15px;">2/3 hoàn thành</div>
+      <div class="mini-bar" style="margin-top: 8px;"><div style="height: 100%; background: #4ade80; width: 67%;"></div></div>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Thi Đấu Xếp Hạng</h1>
+      <div class="tier-row">
+        <span class="tier-badge">🌱 Tân Tín Hữu</span>
+        <span class="tier-progress-info">Còn <b>650 điểm</b> nữa lên <b class="next">Người Tìm Kiếm</b></span>
+      </div>
+      <div class="tier-bar"><div class="tier-bar-fill"></div></div>
+    </div>
+
+    <!-- ENERGY + STREAK -->
+    <div class="grid-2col">
+      <div class="card">
+        <div class="card-label"><span class="card-icon">⚡</span> Năng Lượng</div>
+        <div class="energy-display">
+          <span class="energy-num">61</span>
+          <span class="energy-total">/ 100</span>
+        </div>
+        <div class="progress-thick"><div class="progress-fill" style="width: 61%"></div></div>
+        <div class="energy-meta">
+          <span>Đủ chơi <b>~12 câu</b> nữa</span>
+          <span>⏱ Phục hồi: 23h 59m</span>
+        </div>
+      </div>
+
+      <div class="card streak-card">
+        <div class="card-label"><span class="card-icon">🔥</span> Đang Cháy</div>
+        <div class="streak-display">
+          <div class="streak-fire">🔥</div>
+          <div class="streak-text">
+            <div class="num">7 ngày</div>
+            <div class="label">Đừng dừng — chơi tiếp!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATS ROW -->
+    <div class="grid-3stats">
+      <div class="card stat-card">
+        <div class="card-label">Câu hôm nay</div>
+        <div class="stat-value">12<span class="sub-text">/100</span></div>
+        <div class="stat-sub">Còn 88 câu được tính rank</div>
+        <div class="stat-progress"><div class="stat-progress-fill" style="width: 12%"></div></div>
+      </div>
+      <div class="card stat-card">
+        <div class="card-label">Điểm hôm nay</div>
+        <div class="stat-value gold">40</div>
+        <div class="stat-sub up">↑ +12 so với hôm qua</div>
+      </div>
+      <div class="card stat-card">
+        <div class="card-label">Độ chính xác</div>
+        <div class="stat-value">75<span class="sub-text">%</span></div>
+        <div class="stat-sub">9/12 câu đúng</div>
+      </div>
+    </div>
+
+    <!-- BOOK CARD -->
+    <div class="card book-card">
+      <div class="book-icon-large">📖</div>
+      <div class="book-info">
+        <div class="book-title">Genesis<span class="meta-inline">• Sách 2/66</span></div>
+        <div class="book-meta">Đang chinh phục — 18% câu đã trả lời đúng</div>
+        <div class="book-progress"><div class="progress-fill" style="width: 18%"></div></div>
+      </div>
+      <button class="btn-secondary">Đổi sách</button>
+    </div>
+
+    <!-- SEASON -->
+    <div class="card">
+      <div class="card-label"><span class="card-icon">🏆</span> Mùa Thi Đấu — Còn 23 ngày</div>
+      <div class="season-row">
+        <div>
+          <div class="season-rank">#26</div>
+          <div class="season-rank-sub">40 điểm mùa</div>
+        </div>
+        <div class="season-progress">
+          <div class="progress-thick"><div class="progress-fill" style="width: 48%"></div></div>
+          <div class="season-milestones">
+            <span>Top 100</span>
+            <span class="current">▼ Bạn ở đây</span>
+            <span class="next-tier">Top 50 (60đ)</span>
+            <span class="next-tier">Top 10 (200đ)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <button class="cta">
+      <div class="cta-main">▶ Vào Thi Đấu Ngay</div>
+      <div class="cta-sub">Tiếp tục Genesis • ~12 câu với năng lượng hiện có</div>
+    </button>
+
+    <!-- ANNOTATIONS -->
+    <div class="annotations">
+      <h3>Điểm cải thiện so với bản hiện tại</h3>
+      <ul>
+        <li><b>Tier progress bar ngay header</b> — user thấy mục tiêu cụ thể (còn 650đ → Người Tìm Kiếm)</li>
+        <li><b>Bỏ duplicate ranking</b> — #26 chỉ xuất hiện 1 lần ở Mùa, không trùng với card Hôm Nay</li>
+        <li><b>Streak widget nổi bật</b> — hook cảm xúc giữ user quay lại mỗi ngày</li>
+        <li><b>Energy có context</b> — "đủ chơi ~12 câu nữa" thay vì chỉ "61/100"</li>
+        <li><b>3 stats cards thật sự khác nhau</b> — câu / điểm / độ chính xác (không lặp rank)</li>
+        <li><b>Season milestones rõ ràng</b> — thấy được mốc kế (Top 50, Top 10) thay vì "Bắt đầu - Đỉnh"</li>
+        <li><b>Book card slim</b> — không chiếm full row, có nút "Đổi sách" inline</li>
+        <li><b>CTA có sub-text helpful</b> — user biết click sẽ chơi gì, được bao nhiêu câu</li>
+        <li><b>Sidebar tận dụng</b> — thêm Streak + Daily Mission widget, không trống 60% chiều dọc</li>
+        <li><b>Ambient gold gradient góc trên-phải</b> — không gian "thở", premium feel</li>
+        <li><b>Tier progress mini ở user card</b> — visible mọi page, không chỉ ở Ranked</li>
+        <li><b>Bỏ decorative icons mờ</b> — không còn lightning/trophy/water drop trông như bug</li>
+      </ul>
+    </div>
+  </main>
+</div>
+
+<div class="watermark">BibleQuiz Ranked Redesign Mockup • Sacred Modernist tokens</div>
+
+</body>
+</html>

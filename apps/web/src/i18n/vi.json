@@ -1619,7 +1619,9 @@
     "season": "Mùa Thi Đấu",
     "seasonProgress": "Tiến Trình Mùa",
     "start": "Bắt đầu",
-    "tryAgainLater": "Vui lòng thử lại sau"
+    "tryAgainLater": "Vui lòng thử lại sau",
+    "pointsToNext": "Còn {{points}} điểm nữa lên {{tier}}",
+    "maxTier": "Đã đạt tier cao nhất 👑"
   },
   "onboarding": {
     "slide1Title": "Chào mừng đến BibleQuiz",

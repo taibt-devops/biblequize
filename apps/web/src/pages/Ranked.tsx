@@ -5,11 +5,27 @@ import { api } from '../api/client'
 import { getQuizLanguage } from '../utils/quizLanguage'
 import { useAuth } from '../store/authStore'
 import { useRankedDataSync } from '../hooks/useRankedDataSync'
-import { getTierByPoints } from '../data/tiers'
+import { getTierInfo } from '../data/tiers'
 
 const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
 
 /* ── Types ── */
+interface TierProgressData {
+  tierLevel: number
+  tierName: string
+  totalPoints: number
+  nextTierPoints: number
+  tierProgressPercent: number
+  starIndex: number
+  starXp: number
+  nextStarXp: number
+  starProgressPercent: number
+  milestone: string | null
+  surgeActive?: boolean
+  surgeUntil?: string | null
+  surgeMultiplier?: number
+}
+
 interface RankedStatus {
   date: string
   livesRemaining: number
@@ -64,6 +80,7 @@ export default function Ranked() {
   const { isInitialized } = useRankedDataSync()
 
   const [userRank, setUserRank] = useState<any>(null)
+  const [tierData, setTierData] = useState<TierProgressData | null>(null)
   const [timeLeft, setTimeLeft] = useState('')
 
   const fetchStatus = async () => {
@@ -93,8 +110,16 @@ export default function Ranked() {
     } catch { /* rank info not available */ }
   }
 
+  const fetchTierProgress = async () => {
+    if (!user) return
+    try {
+      const res = await api.get('/api/me/tier-progress')
+      setTierData(res.data)
+    } catch { /* fallback to FE-computed tier info from totalPoints */ }
+  }
+
   useEffect(() => {
-    if (isInitialized) { fetchStatus(); fetchMyRank() }
+    if (isInitialized) { fetchStatus(); fetchMyRank(); fetchTierProgress() }
   }, [isInitialized])
 
   // Countdown
@@ -187,8 +212,17 @@ export default function Ranked() {
   // ── Derived ──
   const energyPct = rankedStatus.dailyLives > 0 ? Math.round((rankedStatus.livesRemaining / rankedStatus.dailyLives) * 100) : 0
   const canPlay = rankedStatus.livesRemaining > 0 && rankedStatus.questionsCounted < rankedStatus.cap
-  const totalPoints = userRank?.points ?? rankedStatus.pointsToday ?? 0
-  const currentTier = getTierByPoints(totalPoints)
+  // Prefer tier-progress API totalPoints (all-time accurate); fall back to leaderboard rank or today's points.
+  const totalPoints = tierData?.totalPoints ?? userRank?.points ?? rankedStatus.pointsToday ?? 0
+  const tierInfo = getTierInfo(totalPoints)
+  const currentTier = tierInfo.current
+  const nextTier = tierInfo.next
+  const pointsToNext = tierData
+    ? Math.max(0, tierData.nextTierPoints - tierData.totalPoints)
+    : tierInfo.pointsToNext
+  const tierProgressPct = nextTier
+    ? (tierData?.tierProgressPercent ?? tierInfo.progressPct)
+    : 100
   const bookPct = rankedStatus.bookProgress?.progressPercentage ?? 0
   const difficultyLabel = rankedStatus.currentDifficulty === 'all' ? t('practice.mixed')
     : rankedStatus.currentDifficulty === 'easy' ? t('practice.easy')
@@ -197,16 +231,55 @@ export default function Ranked() {
 
   return (
     <main data-testid="ranked-page" className="max-w-5xl mx-auto space-y-6">
-      {/* ── Header ── */}
-      <header className="mb-4">
-        <h1 className="text-4xl font-extrabold tracking-tight mb-2 flex items-center gap-3">
-          <span>{t('ranked.title')}</span>
+      {/* ── Header (R1) ── */}
+      <header className="mb-6">
+        <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">
+          {t('ranked.title')}
         </h1>
-        <div data-testid="ranked-tier-badge" className="flex items-center gap-2">
-          <div className="flex items-center justify-center w-8 h-8 rounded-full bg-secondary/10 text-secondary border border-secondary/20 shadow-[0_0_15px_rgba(248,189,69,0.15)]">
-            <span className="material-symbols-outlined text-lg" style={{ ...FILL_1, color: currentTier.colorHex }}>{currentTier.iconMaterial}</span>
+
+        <div className="flex flex-wrap items-center gap-3 mb-3">
+          <div
+            data-testid="ranked-tier-badge"
+            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border"
+            style={{
+              backgroundColor: 'rgba(232,168,50,0.1)',
+              borderColor: 'rgba(232,168,50,0.3)',
+            }}
+          >
+            <span
+              className="material-symbols-outlined text-base"
+              style={{ ...FILL_1, color: currentTier.colorHex }}
+            >
+              {currentTier.iconMaterial}
+            </span>
+            <span
+              className="font-bold text-sm uppercase tracking-wide"
+              style={{ color: currentTier.colorHex }}
+            >
+              {t(currentTier.nameKey)}
+            </span>
           </div>
-          <span className="font-bold text-lg tracking-wide uppercase" style={{ color: currentTier.colorHex }}>{t(currentTier.nameKey)}</span>
+
+          {nextTier ? (
+            <p data-testid="ranked-tier-progress-text" className="text-sm text-on-surface-variant">
+              {t('ranked.pointsToNext', {
+                points: pointsToNext.toLocaleString(),
+                tier: t(nextTier.nameKey),
+              })}
+            </p>
+          ) : (
+            <p data-testid="ranked-tier-progress-text" className="text-sm text-secondary font-bold">
+              {t('ranked.maxTier')}
+            </p>
+          )}
+        </div>
+
+        <div className="h-1.5 w-full bg-primary-container rounded-full overflow-hidden">
+          <div
+            data-testid="ranked-tier-progress-bar"
+            className="h-full gold-gradient rounded-full transition-all duration-700 ease-out"
+            style={{ width: `${tierProgressPct}%` }}
+          />
         </div>
       </header>
 

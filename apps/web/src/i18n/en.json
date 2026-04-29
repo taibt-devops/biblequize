@@ -1619,7 +1619,9 @@
     "season": "Ranked Season",
     "seasonProgress": "Season Progress",
     "start": "Start",
-    "tryAgainLater": "Please try again later"
+    "tryAgainLater": "Please try again later",
+    "pointsToNext": "{{points}} points to {{tier}}",
+    "maxTier": "Highest tier reached 👑"
   },
   "onboarding": {
     "slide1Title": "Welcome to BibleQuiz",
