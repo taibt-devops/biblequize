@@ -2,6 +2,33 @@
 
 ---
 
+## 2026-04-29 — Soft-pivot from Progressive Unlock to Open Access (game modes)
+
+- Quyết định: Bỏ tier-based gates trên UI cho Tournament + Multiplayer + Mystery + Speed Round. Mọi user (kể cả tier 1) đều thấy đầy đủ 9 game mode cards. Tier không còn quyết định **access**, chỉ ảnh hưởng **perks** (XP×, energy regen, streak freeze) per §3.2.2. Ranked giữ tier-2 gate vì BE thực sự enforce trong `SessionService` (có early-unlock alternative đẹp).
+- Lý do:
+  - **Step 0 grep** phát hiện BE chỉ enforce 1 tier gate (Ranked trong `SessionService.java:82`). Tournament + Multiplayer + Mystery + Speed: BE accept mọi user, FE đang fake locks → UX misleading ("locked" but click vẫn vào được).
+  - Target user là cộng đồng Tin Lành rộng (không chỉ thành viên hội thánh hiện tại). Lock 5/8 modes cho user mới = barrier quá cao cho launch v1.
+  - Reference apps phù hợp: YouVersion / Bible Project (open access). Duolingo có CEFR tree thật sự lock — không match BibleQuiz scope.
+- Trade-off:
+  - Tier 1 user vào Tournament (bracket 1v1) hoặc Multiplayer Battle Royale có thể gặp tier 4+ → trải nghiệm thua liên tục. Mitigated bằng **subtle info icon hint** trên Tournament + Multiplayer cards: "Đối thủ có thể đã chơi lâu hơn bạn — chuẩn bị tinh thần!". KHÔNG dùng modal/scary warning — user ownership over choice.
+  - Spec §3.2.3 ("Game mode unlocks per tier") nay outdated — flag TODO update spec sau launch.
+- Implementation (5 commits + 2 fixes):
+  - `e8cca0a feat(home): TierPerksTeaser` — aspirational next-tier perks card (XP×, energy regen, streak freeze) thay LockedModesTeaser ("5 modes locked")
+  - `7ec1ab2 refactor(home): open Tournament + matchmaking hint` — bỏ Tournament `requiredTier:4`, thêm info icon trên Tournament/Multiplayer
+  - `64e4353 refactor(home): wire TierPerksTeaser, drop LockedModesTeaser + tier-1 layout` — Home.tsx replace, GameModeGrid bỏ `layout` prop, xóa LockedModesTeaser
+  - `aeb24a3 i18n: drop dead home.lockedTeaser keys` — cleanup
+  - `b04dbe8 fix(auth): guard OAuth callback against StrictMode double-invoke` — phát hiện trong manual smoke test
+  - `4e5b47d fix(security): exclude CORS preflight from rate limit` — phát hiện trong manual smoke test
+- Backend changes: ZERO — soft pivot là FE-only refactor. BE tier gate cho Ranked giữ nguyên với early-unlock alternative.
+- Net: -277 LOC LockedModesTeaser, +250 LOC TierPerksTeaser + tierPerks data, full FE regression 1001/1001 pass.
+- Follow-ups (TODO post-launch):
+  - **MATCHMAKING v1.1**: tier-based seeding cho Tournament/Multiplayer thay info icon
+  - **SPEC v1.1**: rewrite §3.2.3 theo Open Access philosophy
+  - **PRESTIGE v1.2**: TierPerksTeaser hiện trả null khi tier 6 — Prestige system slot vào đây
+- KHÔNG thay đổi khi refactor trừ khi user feedback cho thấy lockout pattern là cần thiết (e.g., toxic competitive behavior).
+
+---
+
 ## 2026-04-20 — Daily Challenge as secondary XP path (+50 XP per completion)
 
 - Quyết định: Hoàn thành Daily Challenge = **+50 XP** vào `user_daily_progress.points_counted`, bổ sung cho Ranked là primary XP source. Superseds **partially** ADR "XP source of truth: Ranked only" ngay dưới — Ranked vẫn primary, Daily trở thành secondary casual path.
