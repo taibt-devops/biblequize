@@ -2633,3 +2633,63 @@ select {
   .hero-v3-stat-label { font-size: 9px; }
   .hero-v3-stat-value { font-size: 18px; }
 }
+
+/* ──────────────────────────────────────────────────────────────────────────
+   V3 Home — Daily Verse Banner
+   Source: docs/designs/home-design-studio.html .v3-verse* (line 414+).
+   Centered scripture quote in italic Crimson Pro serif, framed by an
+   ornamental ✦ divider with gold-fading lines on either side.
+   ────────────────────────────────────────────────────────────────────────── */
+.daily-verse-v3 {
+  text-align: center;
+  padding: 24px 20px;
+}
+
+.daily-verse-v3-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: rgba(212, 175, 55, 0.5);
+  margin-bottom: 16px;
+}
+
+.daily-verse-v3-divider-line {
+  flex: 0 0 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.4));
+}
+
+.daily-verse-v3-divider-line.right {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.4), transparent);
+}
+
+.daily-verse-v3-divider-ornament {
+  font-size: 12px;
+  color: rgba(212, 175, 55, 0.6);
+}
+
+.daily-verse-v3-text {
+  font-family: 'Crimson Pro', 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 580px;
+  margin: 0 auto 12px;
+  color: var(--text-primary);
+}
+
+.daily-verse-v3-ref {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--gold-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Mobile — shorten the divider lines + drop the text size a notch. */
+@media (max-width: 640px) {
+  .daily-verse-v3 { padding: 18px 12px; }
+  .daily-verse-v3-divider-line { flex: 0 0 40px; }
+  .daily-verse-v3-text { font-size: 16px; }
+}

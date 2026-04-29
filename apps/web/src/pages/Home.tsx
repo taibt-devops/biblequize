@@ -8,13 +8,13 @@ import DailyBonusModal from '../components/DailyBonusModal'
 import DailyMissionsCard from '../components/DailyMissionsCard'
 import EmptyLeaderboardCTA from '../components/EmptyLeaderboardCTA'
 import FeaturedDailyChallenge from '../components/FeaturedDailyChallenge'
+import DailyVerseBanner from '../components/DailyVerseBanner'
 import GameModeGrid from '../components/GameModeGrid'
 import HeroStatSheet from '../components/HeroStatSheet'
 import TierPerksTeaser from '../components/TierPerksTeaser'
 import TutorialOverlay from '../components/TutorialOverlay'
 import { useAuthStore } from '../store/authStore'
 import { api } from '../api/client'
-import { getDailyVerse } from '../data/verses'
 import { getTierInfo } from '../data/tiers'
 
 /* ── Skeleton ── */
@@ -98,18 +98,8 @@ export default function Home() {
       {/* ── Hero (V3 stat sheet) ── */}
       <HeroStatSheet />
 
-      {/* ── Daily Verse banner ── */}
-      {(() => { const verse = getDailyVerse(); return (
-      <section
-        data-testid="home-daily-verse"
-        className="rounded-2xl bg-surface-container border-l-4 border-secondary p-6 md:p-8"
-      >
-        <p className="text-base md:text-lg italic text-on-surface leading-relaxed mb-3">
-          "{verse.text}"
-        </p>
-        <p className="text-[10px] md:text-xs font-black text-secondary uppercase tracking-widest">{verse.ref}</p>
-      </section>
-      ) })()}
+      {/* ── Daily Verse banner (V3 ornament) ── */}
+      <DailyVerseBanner />
 
       {/* ── Featured Daily Challenge (hero CTA for tier-1) ── */}
       <FeaturedDailyChallenge />
