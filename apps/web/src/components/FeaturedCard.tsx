@@ -94,7 +94,7 @@ export default function FeaturedCard({
         >
           {icon}
         </span>
-        <h3 className="text-xl sm:text-2xl font-black text-on-surface uppercase tracking-tight mb-2">
+        <h3 className="font-sora text-[22px] font-bold text-on-surface uppercase tracking-[0.5px] mb-2">
           {title}
         </h3>
         <p className="text-sm text-on-surface-variant leading-relaxed mb-4 line-clamp-2">

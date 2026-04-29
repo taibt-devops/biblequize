@@ -110,7 +110,7 @@ export default function Home() {
           itself — see RankedFeaturedCard inside GameModeGrid. */}
       <section className="space-y-4">
         <div className="flex justify-between items-center">
-          <h2 className="text-xl font-black tracking-tight text-on-surface">{t('home.gameModes')}</h2>
+          <h2 className="font-sora text-base font-semibold text-on-surface">{t('home.gameModes')}</h2>
           <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
             {t('home.exploreModes', { count: 8 })}
           </span>

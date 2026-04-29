@@ -181,7 +181,7 @@ export default function FeaturedDailyChallenge() {
 
           <p
             data-testid="featured-daily-score"
-            className="text-2xl md:text-3xl font-black text-on-surface mb-2 leading-tight"
+            className="font-sora text-[26px] font-bold text-on-surface mb-2 leading-tight"
           >
             {t(scoreKey, { correct, total })}
           </p>
@@ -225,7 +225,7 @@ export default function FeaturedDailyChallenge() {
           </h2>
         </div>
 
-        <p data-testid="featured-daily-tagline" className="text-2xl md:text-3xl font-black text-on-surface mb-2 leading-tight">
+        <p data-testid="featured-daily-tagline" className="font-sora text-[26px] font-bold text-on-surface mb-2 leading-tight">
           {tagline}
         </p>
 
