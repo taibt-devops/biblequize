@@ -27,7 +27,7 @@ const mockMissions = {
   missions: [
     { slot: 1, type: 'answer_correct', description: 'Trả lời đúng 3 câu', progress: 2, target: 3, completed: false },
     { slot: 2, type: 'complete_daily_challenge', description: 'Hoàn thành thử thách hàng ngày', progress: 1, target: 1, completed: true },
-    { slot: 3, type: 'answer_combo', description: 'Đạt combo 5 câu liên tiếp', progress: 0, target: 1, completed: false },
+    { slot: 3, type: 'answer_combo', description: 'Trả lời 3 câu liên tiếp đúng', progress: 0, target: 3, completed: false },
   ],
   allCompleted: false,
   bonusClaimed: false,

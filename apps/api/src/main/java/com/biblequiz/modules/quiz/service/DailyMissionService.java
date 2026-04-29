@@ -38,7 +38,10 @@ public class DailyMissionService {
         1, List.of(
             new MissionDef("answer_correct", "mission.answerCorrect3", "{\"count\":3}", 3),
             new MissionDef("complete_daily_challenge", "mission.completeDailyChallenge", "{}", 1),
-            new MissionDef("answer_combo", "mission.combo5", "{\"streak\":5}", 1)
+            // Target now stores the streak length so the description and
+            // progress display agree. Previously target=1 produced the
+            // wrong "Đạt combo 1 câu liên tiếp" UI string.
+            new MissionDef("answer_combo", "mission.combo3", "{\"streak\":3}", 3)
         ),
         2, List.of(
             new MissionDef("play_any_mode", "mission.playAnyMode", "{}", 1),
@@ -57,7 +60,8 @@ public class DailyMissionService {
         ),
         5, List.of(
             new MissionDef("complete_mystery_mode", "mission.completeMystery", "{}", 1),
-            new MissionDef("answer_combo", "mission.combo10", "{\"streak\":10}", 1),
+            // target = streak length (see Tier-1 note) so the description renders correctly.
+            new MissionDef("answer_combo", "mission.combo10", "{\"streak\":10}", 10),
             new MissionDef("leaderboard_daily_top3", "mission.leaderboardTop3", "{}", 1)
         ),
         6, List.of(
@@ -179,7 +183,7 @@ public class DailyMissionService {
         return switch (type) {
             case "answer_correct" -> "Trả lời đúng " + target + " câu";
             case "complete_daily_challenge" -> "Hoàn thành thử thách hàng ngày";
-            case "answer_combo" -> "Đạt combo " + target + " câu liên tiếp";
+            case "answer_combo" -> "Trả lời " + target + " câu liên tiếp đúng";
             case "play_any_mode" -> "Chơi bất kỳ chế độ nào";
             case "answer_correct_difficulty" -> "Trả lời đúng " + target + " câu khó";
             case "ranked_score" -> "Đạt 60+ điểm trong Ranked";
