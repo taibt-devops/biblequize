@@ -2355,3 +2355,24 @@ select {
   border-color: var(--gold-border-medium);
   transform: translateY(-1px);
 }
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Card Polish Level 2 — Gold-gradient icon class (Option Y, Option B)
+   Reuses Material Symbols (the project's canonical icon system per
+   CLAUDE.md) and paints them with a 135° gold gradient via the
+   background-clip: text trick. Keeps the codebase on a single icon
+   library — no new dependencies.
+
+   Apply ONLY to primary featured-card icons + standalone status badges.
+   Secondary CompactCards and small in-line status annotations (timer,
+   small inline hints) intentionally stay neutral so the gold doesn't
+   compete with itself.
+   ────────────────────────────────────────────────────────────────────────── */
+.gold-icon {
+  background: linear-gradient(135deg, #f4d36e 0%, #d4af37 50%, #b8941f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.25));
+}

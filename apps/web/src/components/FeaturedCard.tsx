@@ -89,7 +89,7 @@ export default function FeaturedCard({
 
       <div className="flex-1">
         <span
-          className={`material-symbols-outlined text-4xl ${iconColor} block mb-4`}
+          className={`material-symbols-outlined gold-icon text-4xl ${iconColor} block mb-4`}
           style={iconFill ? FILL_1 : undefined}
         >
           {icon}

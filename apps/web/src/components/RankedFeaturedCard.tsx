@@ -117,7 +117,7 @@ export default function RankedFeaturedCard({ isRecommended, recommendReason }: R
         recommendReason={recommendReason}
         status={
           <div data-testid="ranked-featured-status" data-state="passed" className="flex items-center gap-2 text-xs font-bold text-secondary">
-            <span className="material-symbols-outlined text-base" style={FILL_1}>verified</span>
+            <span className="material-symbols-outlined gold-icon text-base" style={FILL_1}>verified</span>
             <span>{t('rankedFeatured.unlocked.badge')}</span>
           </div>
         }

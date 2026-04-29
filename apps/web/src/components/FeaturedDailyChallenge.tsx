@@ -173,7 +173,7 @@ export default function FeaturedDailyChallenge() {
       >
         <div className="relative z-10">
           <div className="flex items-center gap-3 mb-3">
-            <span className="material-symbols-outlined text-secondary text-2xl" style={FILL_1}>verified</span>
+            <span className="material-symbols-outlined gold-icon text-2xl" style={FILL_1}>verified</span>
             <h2 className="text-xs font-bold text-secondary uppercase tracking-widest">
               {t('home.featuredDaily.completedState.title')}
             </h2>
@@ -219,7 +219,7 @@ export default function FeaturedDailyChallenge() {
     <div data-testid="featured-daily-challenge" data-state="active" className="featured-daily-warm rounded-2xl p-8 group">
       <div className="relative z-10">
         <div className="flex items-center gap-3 mb-3">
-          <span className="material-symbols-outlined text-tertiary text-2xl" style={FILL_1}>calendar_today</span>
+          <span className="material-symbols-outlined gold-icon text-2xl" style={FILL_1}>calendar_today</span>
           <h2 className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
             {t('home.featuredDaily.title')}
           </h2>
