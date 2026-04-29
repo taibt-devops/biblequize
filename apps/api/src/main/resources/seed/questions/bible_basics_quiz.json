@@ -1,0 +1,205 @@
+[
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Đức Chúa Trời tồn tại như thế nào?",
+    "options": [
+      "Một Ngôi duy nhất",
+      "Ba Ngôi: Cha, Con, và Thánh Linh",
+      "Hai Ngôi: Cha và Con",
+      "Nhiều thần linh khác nhau"
+    ],
+    "correctAnswer": [1],
+    "explanation": "Đức Chúa Trời là Ba Ngôi: Đức Cha, Đức Con, và Đức Thánh Linh — ba thân vị nhưng cùng một bản thể. Đây là nền tảng đức tin Cơ-đốc giáo (Ma-thi-ơ 28:19).",
+    "language": "vi",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Giáo Lý", "Ba Ngôi", "Đức Chúa Trời"]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 139,
+    "verseStart": 7,
+    "verseEnd": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Đức Chúa Trời có những đặc tính nào?",
+    "options": [
+      "Toàn năng nhưng có giới hạn",
+      "Yêu thương nhưng không công bằng",
+      "Toàn năng, toàn tri, toàn tại, yêu thương và thánh khiết",
+      "Chỉ là một khái niệm tinh thần"
+    ],
+    "correctAnswer": [2],
+    "explanation": "Kinh Thánh dạy Đức Chúa Trời là toàn năng (làm được mọi sự), toàn tri (biết mọi sự), toàn tại (có mặt khắp nơi), yêu thương và thánh khiết (Thi Thiên 139:7-12).",
+    "language": "vi",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Giáo Lý", "Đặc tính Đức Chúa Trời"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Câu Kinh Thánh nào dạy rõ về Ba Ngôi?",
+    "options": [
+      "Sáng Thế Ký 1:1",
+      "Ma-thi-ơ 28:19 — nhân danh Đức Cha, Đức Con, và Đức Thánh Linh",
+      "Thi Thiên 23:1",
+      "Giăng 1:1"
+    ],
+    "correctAnswer": [1],
+    "explanation": "Ma-thi-ơ 28:19 là Đại Mạng Lệnh, nơi Chúa Jesus dạy phép báp-tem nhân danh ba thân vị: Đức Cha, Đức Con, và Đức Thánh Linh.",
+    "language": "vi",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Giáo Lý", "Ba Ngôi", "Đại Mạng Lệnh"]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 2,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Chúa Jesus là ai?",
+    "options": [
+      "Một nhà tiên tri vĩ đại",
+      "Một người thầy về đạo đức",
+      "Đức Chúa Trời nhập thể, Con Đức Chúa Trời, Đấng Cứu Thế",
+      "Một thiên sứ đặc biệt"
+    ],
+    "correctAnswer": [2],
+    "explanation": "Cô-lô-se 2:9 dạy: 'Vì sự đầy dẫy của thần tánh hiện diện trong thân thể Đấng Christ.' Chúa Jesus vừa là Đức Chúa Trời thật vừa là Người thật. Ngài là Con Đức Chúa Trời, đã nhập thể làm người để cứu chuộc nhân loại.",
+    "language": "vi",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Giáo Lý", "Christology", "Chúa Jesus"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 45,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Tại sao Chúa Jesus đến thế gian?",
+    "options": [
+      "Để dạy con người sống tốt hơn",
+      "Để chết trên thập tự giá đền tội cho nhân loại",
+      "Để thiết lập một vương quốc trần gian",
+      "Để giải phóng dân Y-sơ-ra-ên khỏi La Mã"
+    ],
+    "correctAnswer": [1],
+    "explanation": "Mác 10:45: 'Con Người đã đến không phải để được người ta hầu việc, song để hầu việc người ta, và phó sự sống mình làm giá chuộc cho nhiều người.' Mục đích chính của Chúa Jesus là chết thay cho tội nhân.",
+    "language": "vi",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Giáo Lý", "Cứu Chuộc", "Soteriology"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verseStart": 3,
+    "verseEnd": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Điều gì đã xảy ra sau khi Chúa Jesus chịu chết?",
+    "options": [
+      "Các môn đồ chôn cất Ngài và Ngài ở trong mộ mãi mãi",
+      "Ngài đã sống lại từ kẻ chết vào ngày thứ ba",
+      "Linh hồn Ngài bay về trời, thân xác ở lại",
+      "Ngài hóa thành thiên sứ"
+    ],
+    "correctAnswer": [1],
+    "explanation": "1 Cô-rinh-tô 15:3-4 dạy rõ: Đấng Christ chịu chết vì tội chúng ta theo lời Kinh Thánh, đã chôn, đến ngày thứ ba được sống lại. Sự phục sinh là sự kiện trung tâm của đức tin Cơ-đốc.",
+    "language": "vi",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Giáo Lý", "Phục Sinh", "Christology"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 27,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Con người được tạo dựng như thế nào?",
+    "options": [
+      "Tiến hóa từ loài vượn",
+      "Ngẫu nhiên xuất hiện",
+      "Đức Chúa Trời tạo dựng theo hình ảnh của Ngài",
+      "Do thiên sứ tạo ra"
+    ],
+    "correctAnswer": [2],
+    "explanation": "Sáng Thế Ký 1:27 dạy rằng Đức Chúa Trời đã trực tiếp tạo dựng con người theo hình ảnh của Ngài (imago Dei), khác biệt hoàn toàn với muôn loài khác.",
+    "language": "vi",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Giáo Lý", "Tạo Dựng", "Imago Dei"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Tại sao mọi người đều cần được cứu rỗi?",
+    "options": [
+      "Vì con người yếu đuối",
+      "Vì mọi người đều đã phạm tội và xa cách Đức Chúa Trời",
+      "Vì con người không biết đủ Kinh Thánh",
+      "Vì cuộc sống có quá nhiều khó khăn"
+    ],
+    "correctAnswer": [1],
+    "explanation": "Rô-ma 3:23 dạy rõ: 'Vì mọi người đều đã phạm tội, thiếu mất sự vinh hiển của Đức Chúa Trời.' Tội lỗi ngăn cách con người với Đức Chúa Trời, và mọi người đều cần được cứu rỗi.",
+    "language": "vi",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Giáo Lý", "Tội Lỗi", "Hamartiology"]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Làm thế nào để được cứu rỗi?",
+    "options": [
+      "Làm nhiều việc thiện",
+      "Giữ luật pháp và đi nhà thờ đều đặn",
+      "Bởi đức tin nơi Chúa Jesus, không phải bởi việc làm",
+      "Phải hoàn hảo về đạo đức"
+    ],
+    "correctAnswer": [2],
+    "explanation": "Ê-phê-sô 2:8-9: 'Vì nhờ ân điển, bởi đức tin mà anh em được cứu, điều đó không phải đến từ anh em, bèn là sự ban cho của Đức Chúa Trời. Ấy chẳng phải bởi việc làm đâu, hầu cho không ai khoe mình.'",
+    "language": "vi",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Giáo Lý", "Cứu Rỗi", "Ân Điển", "Soteriology"]
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Kinh Thánh là gì?",
+    "options": [
+      "Một tập hợp các câu chuyện cổ",
+      "Một cuốn sách tốt về đạo đức",
+      "Lời được Đức Chúa Trời linh cảm, là chân lý và thẩm quyền tuyệt đối cho đời sống đức tin",
+      "Sách lịch sử của dân Do Thái"
+    ],
+    "correctAnswer": [2],
+    "explanation": "2 Ti-mô-thê 3:16: 'Cả Kinh Thánh đều là bởi Đức Chúa Trời linh cảm, có ích cho sự dạy dỗ, bẻ trách, sửa trị, dạy người trong sự công bình.' Kinh Thánh là Lời Đức Chúa Trời, thẩm quyền tuyệt đối cho đức tin và đời sống.",
+    "language": "vi",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Giáo Lý", "Kinh Thánh", "Bibliology"]
+  }
+]

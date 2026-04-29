@@ -233,6 +233,7 @@ public class QuestionSeeder {
         // Tag the row so an admin can later tell which rows came from the seed
         // vs manual admin import vs AI generation.
         q.setSource(sq.source != null ? sq.source : "seed:json");
+        q.setCategory(sq.category);
         return q;
     }
 

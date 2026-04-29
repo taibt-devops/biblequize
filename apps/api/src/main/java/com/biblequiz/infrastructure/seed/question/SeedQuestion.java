@@ -48,4 +48,12 @@ public class SeedQuestion {
     // Optional future fields (not consumed yet but reserved)
     public List<String> tags;
     public String source;
+
+    /**
+     * Category tag persisted as Question.category. Currently used by
+     * Bible Basics catechism quiz ("bible_basics") to distinguish the
+     * 10 doctrinal questions that gate Ranked from regular content.
+     * Null/absent ⇒ regular question.
+     */
+    public String category;
 }

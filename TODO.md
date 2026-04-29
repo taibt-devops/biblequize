@@ -2897,3 +2897,37 @@ Found 3-layer break: BE has no chat MessageMapping, /ws blocked by Security at h
 
 ### Task 6: Rebuild + manual verify [x] DONE (implicit qua các session sau)
 - Container đã rebuild nhiều lần, feature wired và operational
+
+---
+
+## 2026-04-29 — Bible Basics Catechism Quiz [IN PROGRESS]
+
+> Replace Ranked unlock gate (XP/practice-accuracy) with a fixed 10-question
+> doctrinal quiz. Pass 8/10 = unlock Ranked permanently. See
+> docs/prompts/PROMPT_BIBLE_BASICS_QUIZ.md.
+>
+> Step 0 verified — 8 prompt overrides accepted (V31 not V29; multiple_choice_single;
+> verse_start/verse_end split; new `category` column; JSON seed not SQL Flyway;
+> co-exist with legacy earlyRankedUnlock; reuse BusinessLogicException).
+
+### Step 1: Schema migration + entity fields [x] DONE
+- [V31__add_basic_quiz_unlock.sql](apps/api/src/main/resources/db/migration/V31__add_basic_quiz_unlock.sql) — adds users.basic_quiz_* (4 cols) + questions.category + idx_questions_category
+- [Question.java](apps/api/src/main/java/com/biblequiz/modules/quiz/entity/Question.java) — adds `category` field + getter/setter
+- [User.java](apps/api/src/main/java/com/biblequiz/modules/user/entity/User.java) — adds basicQuizPassed/PassedAt/Attempts/LastAttemptAt + accessors
+- BE compile + test-compile clean. Preexisting failures (DuplicateDetectionService bean missing in test ctx, QuestionReviewControllerTest.stats JSON path) confirmed on baseline — not introduced by Step 1.
+
+### Step 1.5: JSON seed + extend QuestionSeeder for category [x] DONE
+- [SeedQuestion.java](apps/api/src/main/java/com/biblequiz/infrastructure/seed/question/SeedQuestion.java) — adds optional `category` field
+- [QuestionSeeder.java](apps/api/src/main/java/com/biblequiz/infrastructure/seed/question/QuestionSeeder.java) — `toEntity()` plumbs `category` through to `Question.category`
+- [bible_basics_quiz.json](apps/api/src/main/resources/seed/questions/bible_basics_quiz.json) — 10 VI catechism questions, all `category="bible_basics"`
+- [bible_basics_quiz_en.json](apps/api/src/main/resources/seed/questions/bible_basics_quiz_en.json) — 10 EN translations
+- Câu 4 reference đổi từ John 1:1,14 → Cô-lô-se 2:9 (verseStart=9, verseEnd=null) — VI + EN explanation updated to quote Col 2:9
+- DB verified: 20 rows seeded (10 vi + 10 en), all `category='bible_basics'`, idempotent (re-seed skips all 20)
+- BE regression: 663 tests, 1 failure + 51 errors — IDENTICAL to Step 1 baseline (all preexisting, none introduced)
+
+### Step 2: BasicQuizService + 3 endpoints + replace Ranked gate [ ] TODO
+### Step 3: BasicQuizCard FE component (4 states) [ ] TODO
+### Step 4: BasicQuiz page (10 Q + result screens) [ ] TODO
+### Step 5: Admin filter + 10-min safeguard on delete [ ] TODO
+### Step 6: i18n strings + remove old XP-unlock keys [ ] TODO
+### Step 7: Full regression [ ] TODO

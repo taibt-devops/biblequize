@@ -1,0 +1,205 @@
+[
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How does God exist?",
+    "options": [
+      "As one single Person",
+      "As the Trinity: Father, Son, and Holy Spirit",
+      "As two Persons: Father and Son",
+      "As many different deities"
+    ],
+    "correctAnswer": [1],
+    "explanation": "God exists as the Trinity: the Father, the Son, and the Holy Spirit — three Persons in one divine essence. This is the foundation of Christian faith (Matthew 28:19).",
+    "language": "en",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Doctrine", "Trinity", "God"]
+  },
+  {
+    "book": "Psalms",
+    "chapter": 139,
+    "verseStart": 7,
+    "verseEnd": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What are God's attributes?",
+    "options": [
+      "Almighty but limited",
+      "Loving but not just",
+      "Omnipotent, omniscient, omnipresent, loving and holy",
+      "Just a spiritual concept"
+    ],
+    "correctAnswer": [2],
+    "explanation": "Scripture teaches that God is omnipotent (all-powerful), omniscient (all-knowing), omnipresent (everywhere), loving and holy (Psalm 139:7-12).",
+    "language": "en",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Doctrine", "Attributes of God"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "verseStart": 19,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Which Bible verse clearly teaches the Trinity?",
+    "options": [
+      "Genesis 1:1",
+      "Matthew 28:19 — in the name of the Father, Son, and Holy Spirit",
+      "Psalm 23:1",
+      "John 1:1"
+    ],
+    "correctAnswer": [1],
+    "explanation": "Matthew 28:19 is the Great Commission, where Jesus commands baptism in the name of three Persons: Father, Son, and Holy Spirit.",
+    "language": "en",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Doctrine", "Trinity", "Great Commission"]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 2,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "Who is Jesus Christ?",
+    "options": [
+      "A great prophet",
+      "A moral teacher",
+      "God incarnate, the Son of God, the Savior",
+      "A special angel"
+    ],
+    "correctAnswer": [2],
+    "explanation": "Colossians 2:9 teaches: 'For in Christ all the fullness of the Deity lives in bodily form.' Jesus is fully God and fully man, the Son of God who became flesh to save humanity.",
+    "language": "en",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Doctrine", "Christology", "Jesus"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "verseStart": 45,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Why did Jesus come to earth?",
+    "options": [
+      "To teach people to live better",
+      "To die on the cross to atone for humanity's sins",
+      "To establish an earthly kingdom",
+      "To free Israel from Rome"
+    ],
+    "correctAnswer": [1],
+    "explanation": "Mark 10:45: 'For even the Son of Man did not come to be served, but to serve, and to give his life as a ransom for many.' The primary purpose of Jesus' coming was to die in place of sinners.",
+    "language": "en",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Doctrine", "Atonement", "Soteriology"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verseStart": 3,
+    "verseEnd": 4,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "What happened after Jesus died?",
+    "options": [
+      "His disciples buried Him and He stayed in the tomb forever",
+      "He rose from the dead on the third day",
+      "His soul went to heaven, body remained",
+      "He turned into an angel"
+    ],
+    "correctAnswer": [1],
+    "explanation": "1 Corinthians 15:3-4: Christ died for our sins according to the Scriptures, was buried, and was raised on the third day. The resurrection is the central event of Christian faith.",
+    "language": "en",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Doctrine", "Resurrection", "Christology"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "verseStart": 27,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "How were humans created?",
+    "options": [
+      "Evolved from apes",
+      "Appeared randomly",
+      "God created them in His own image",
+      "Created by angels"
+    ],
+    "correctAnswer": [2],
+    "explanation": "Genesis 1:27 teaches that God directly created humans in His own image (imago Dei), distinct from all other creatures.",
+    "language": "en",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Doctrine", "Creation", "Imago Dei"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "verseStart": 23,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "content": "Why does everyone need salvation?",
+    "options": [
+      "Because humans are weak",
+      "Because all have sinned and fallen short of God's glory",
+      "Because people don't know enough Bible",
+      "Because life has too many difficulties"
+    ],
+    "correctAnswer": [1],
+    "explanation": "Romans 3:23 clearly states: 'For all have sinned and fall short of the glory of God.' Sin separates humanity from God, and everyone needs salvation.",
+    "language": "en",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Doctrine", "Sin", "Hamartiology"]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "verseStart": 8,
+    "verseEnd": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "How can a person be saved?",
+    "options": [
+      "By doing many good deeds",
+      "By keeping the law and going to church regularly",
+      "By faith in Jesus Christ, not by works",
+      "By being morally perfect"
+    ],
+    "correctAnswer": [2],
+    "explanation": "Ephesians 2:8-9 teaches: 'For it is by grace you have been saved, through faith — and this is not from yourselves, it is the gift of God — not by works, so that no one can boast.'",
+    "language": "en",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Doctrine", "Salvation", "Grace", "Soteriology"]
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "content": "What is the Bible?",
+    "options": [
+      "A collection of ancient stories",
+      "A good book about morality",
+      "God-inspired Word, the absolute truth and authority for faith and life",
+      "A history book of the Jewish people"
+    ],
+    "correctAnswer": [2],
+    "explanation": "2 Timothy 3:16 teaches: 'All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness.' The Bible is God's Word, the absolute authority for faith and life.",
+    "language": "en",
+    "category": "bible_basics",
+    "source": "seed:bible_basics:v1",
+    "tags": ["Doctrine", "Bible", "Bibliology"]
+  }
+]
