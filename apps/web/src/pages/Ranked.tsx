@@ -263,7 +263,7 @@ export default function Ranked() {
           {nextTier ? (
             <p data-testid="ranked-tier-progress-text" className="text-sm text-on-surface-variant">
               {t('ranked.pointsToNext', {
-                points: pointsToNext.toLocaleString(),
+                points: pointsToNext.toLocaleString('vi-VN'),
                 tier: t(nextTier.nameKey),
               })}
             </p>

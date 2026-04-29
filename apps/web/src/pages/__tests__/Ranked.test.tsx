@@ -247,4 +247,102 @@ describe('Ranked Mode Dashboard', () => {
       expect(bar.style.width).toBe('100%')
     })
   })
+
+  // ── R1 Boundary tests: tier transitions at threshold values ──
+  // Verifies tier badge shows the correct tier when totalPoints crosses thresholds:
+  //   0 → tier 1 (Tân Tín Hữu); 999 → still tier 1; 1000 → tier 2 (Người Tìm Kiếm);
+  //   4999 → still tier 2; 5000 → tier 3 (Môn Đồ).
+  // Backend /api/me/tier-progress is the source of truth (all-time sum, not daily proxy).
+
+  function makeTierProgress(totalPoints: number) {
+    // Mirror server's TierProgressService logic for thresholds
+    const TIERS_VI = ['Tân Tín Hữu', 'Người Tìm Kiếm', 'Môn Đồ', 'Hiền Triết', 'Tiên Tri', 'Sứ Đồ']
+    const THRESHOLDS = [0, 1000, 5000, 15_000, 40_000, 100_000]
+    let level = 1
+    for (let i = THRESHOLDS.length - 1; i >= 0; i--) {
+      if (totalPoints >= THRESHOLDS[i]) { level = i + 1; break }
+    }
+    const tierStart = THRESHOLDS[level - 1]
+    const nextTierStart = level < 6 ? THRESHOLDS[level] : tierStart
+    const range = nextTierStart - tierStart
+    const pct = range > 0 ? ((totalPoints - tierStart) / range) * 100 : 100
+    return {
+      tierLevel: level,
+      tierName: TIERS_VI[level - 1],
+      totalPoints,
+      nextTierPoints: nextTierStart,
+      tierProgressPercent: Math.round(pct * 100) / 100,
+      starIndex: 0,
+      starXp: tierStart,
+      nextStarXp: nextTierStart,
+      starProgressPercent: pct,
+      milestone: null,
+    }
+  }
+
+  function mockWithTotalPoints(totalPoints: number) {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('tier-progress'))
+        return Promise.resolve({ data: makeTierProgress(totalPoints) })
+      if (url.includes('ranked-status')) return Promise.resolve({ data: RANKED_STATUS })
+      if (url.includes('my-rank')) return Promise.resolve({ data: { rank: 100, points: 0 } })
+      return Promise.reject(new Error('Not found'))
+    })
+  }
+
+  it('R1 boundary: totalPoints=0 → tier 1 (Tân Tín Hữu), points to Người Tìm Kiếm', async () => {
+    mockWithTotalPoints(0)
+    renderRanked()
+    await waitFor(() => {
+      expect(screen.getByTestId('ranked-tier-badge')).toHaveTextContent('Tân Tín Hữu')
+      const text = screen.getByTestId('ranked-tier-progress-text')
+      expect(text).toHaveTextContent('1.000') // 1000 with vi locale grouping
+      expect(text).toHaveTextContent('Người Tìm Kiếm')
+    })
+  })
+
+  it('R1 boundary: totalPoints=999 → still tier 1 (Tân Tín Hữu), 1 point to next', async () => {
+    mockWithTotalPoints(999)
+    renderRanked()
+    await waitFor(() => {
+      expect(screen.getByTestId('ranked-tier-badge')).toHaveTextContent('Tân Tín Hữu')
+      const text = screen.getByTestId('ranked-tier-progress-text')
+      // pointsToNext = 1000 - 999 = 1
+      expect(text).toHaveTextContent(/Còn\s+1\s+điểm/)
+      expect(text).toHaveTextContent('Người Tìm Kiếm')
+    })
+  })
+
+  it('R1 boundary: totalPoints=1000 → tier 2 (Người Tìm Kiếm), 4000 to Môn Đồ', async () => {
+    mockWithTotalPoints(1000)
+    renderRanked()
+    await waitFor(() => {
+      expect(screen.getByTestId('ranked-tier-badge')).toHaveTextContent('Người Tìm Kiếm')
+      const text = screen.getByTestId('ranked-tier-progress-text')
+      expect(text).toHaveTextContent('4.000')
+      expect(text).toHaveTextContent('Môn Đồ')
+    })
+  })
+
+  it('R1 boundary: totalPoints=4999 → still tier 2 (Người Tìm Kiếm), 1 point to Môn Đồ', async () => {
+    mockWithTotalPoints(4999)
+    renderRanked()
+    await waitFor(() => {
+      expect(screen.getByTestId('ranked-tier-badge')).toHaveTextContent('Người Tìm Kiếm')
+      const text = screen.getByTestId('ranked-tier-progress-text')
+      expect(text).toHaveTextContent(/Còn\s+1\s+điểm/)
+      expect(text).toHaveTextContent('Môn Đồ')
+    })
+  })
+
+  it('R1 boundary: totalPoints=5000 → tier 3 (Môn Đồ), 10000 to Hiền Triết', async () => {
+    mockWithTotalPoints(5000)
+    renderRanked()
+    await waitFor(() => {
+      expect(screen.getByTestId('ranked-tier-badge')).toHaveTextContent('Môn Đồ')
+      const text = screen.getByTestId('ranked-tier-progress-text')
+      expect(text).toHaveTextContent('10.000')
+      expect(text).toHaveTextContent('Hiền Triết')
+    })
+  })
 })
