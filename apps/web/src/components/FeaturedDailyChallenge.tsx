@@ -20,6 +20,32 @@ interface DailyChallengeResponse {
   totalQuestions: number
 }
 
+/**
+ * Mirror of {@link com.biblequiz.modules.daily.service.DailyChallengeService#getResultData}.
+ * Only present (i.e. fields beyond {@code completed}) when the user
+ * actually finished today.
+ */
+interface DailyChallengeResult {
+  completed: boolean
+  correctCount?: number
+  totalQuestions?: number
+  xpEarned?: number
+  nextResetAt?: string
+}
+
+/**
+ * Pick a celebratory message keyed by accuracy bucket. Three buckets so
+ * the copy stays warm without leaking exact percentile data (which
+ * would need an aggregate query we don't have yet).
+ */
+function scoreMessageKey(correct: number, total: number): string {
+  if (total <= 0) return 'home.featuredDaily.completedState.scoreEncouraging'
+  const pct = (correct / total) * 100
+  if (pct >= 80) return 'home.featuredDaily.completedState.scoreExcellent'
+  if (pct >= 60) return 'home.featuredDaily.completedState.scoreGood'
+  return 'home.featuredDaily.completedState.scoreEncouraging'
+}
+
 function msUntilMidnightUtc(): number {
   const now = new Date()
   const utcMidnight = new Date(Date.UTC(
@@ -59,6 +85,16 @@ export default function FeaturedDailyChallenge() {
   const { data, isLoading, isError, refetch } = useQuery<DailyChallengeResponse>({
     queryKey: ['daily-challenge', lang],
     queryFn: () => api.get(`/api/daily-challenge?language=${lang}`).then(r => r.data),
+    staleTime: 60_000,
+  })
+
+  // Only fetch the enriched completion payload (score / xpEarned /
+  // nextResetAt) once the parent query confirms the user finished today.
+  // Otherwise the call would return {completed: false} and waste a request.
+  const { data: resultData } = useQuery<DailyChallengeResult>({
+    queryKey: ['daily-challenge-result'],
+    queryFn: () => api.get('/api/daily-challenge/result').then(r => r.data),
+    enabled: !!data?.alreadyCompleted,
     staleTime: 60_000,
   })
 
@@ -122,8 +158,66 @@ export default function FeaturedDailyChallenge() {
   const completed = data.alreadyCompleted
   const bookList = uniqueBookNames.join(' • ')
 
+  // ── State B: completed today ──
+  if (completed) {
+    const correct = resultData?.correctCount ?? 0
+    const total = resultData?.totalQuestions ?? data.totalQuestions ?? 5
+    const xpEarned = resultData?.xpEarned ?? 50
+    const scoreKey = scoreMessageKey(correct, total)
+
+    return (
+      <div
+        data-testid="featured-daily-challenge"
+        data-state="completed"
+        className="relative overflow-hidden rounded-2xl bg-surface-container p-8 border border-secondary/30 group"
+      >
+        <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full -mr-20 -mt-20 blur-3xl pointer-events-none" />
+        <div className="relative z-10">
+          <div className="flex items-center gap-3 mb-3">
+            <span className="material-symbols-outlined text-secondary text-2xl" style={FILL_1}>verified</span>
+            <h2 className="text-xs font-bold text-secondary uppercase tracking-widest">
+              {t('home.featuredDaily.completedState.title')}
+            </h2>
+          </div>
+
+          <p
+            data-testid="featured-daily-score"
+            className="text-2xl md:text-3xl font-black text-on-surface mb-2 leading-tight"
+          >
+            {t(scoreKey, { correct, total })}
+          </p>
+
+          <p data-testid="featured-daily-theme" className="text-sm font-medium text-on-surface-variant mb-1">
+            {t('home.featuredDaily.completedState.themeLabel', { theme: tagline })}
+          </p>
+
+          <p className="text-xs font-bold text-secondary uppercase tracking-widest mb-6">
+            {t('home.featuredDaily.completedState.xpEarned', { xp: xpEarned })}
+          </p>
+
+          <div className="flex items-center gap-2 text-xs font-bold text-on-surface-variant mb-4">
+            <span className="material-symbols-outlined text-sm">timer</span>
+            <span data-testid="featured-daily-countdown">
+              {t('home.featuredDaily.completedState.nextChallenge', { time: countdown })}
+            </span>
+          </div>
+
+          <Link
+            to="/daily"
+            data-testid="featured-daily-review-cta"
+            className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-secondary/40 text-secondary font-bold hover:bg-secondary/10 transition-colors"
+          >
+            <span className="material-symbols-outlined text-base" style={FILL_1}>menu_book</span>
+            {t('home.featuredDaily.completedState.ctaReview')}
+          </Link>
+        </div>
+      </div>
+    )
+  }
+
+  // ── State A: active (not completed) ──
   return (
-    <div data-testid="featured-daily-challenge" className="relative overflow-hidden rounded-2xl bg-surface-container p-8 border border-outline-variant/10 group">
+    <div data-testid="featured-daily-challenge" data-state="active" className="relative overflow-hidden rounded-2xl bg-surface-container p-8 border border-outline-variant/10 group">
       <div className="absolute top-0 right-0 w-64 h-64 bg-tertiary/5 rounded-full -mr-20 -mt-20 blur-3xl group-hover:bg-tertiary/10 transition-colors" />
 
       <div className="relative z-10">
@@ -148,27 +242,19 @@ export default function FeaturedDailyChallenge() {
           {t('home.featuredDaily.meta')}
         </p>
 
-        {completed ? (
-          <p data-testid="featured-daily-completed" className="text-sm font-medium text-secondary">
-            {t('home.featuredDaily.completed', { time: countdown })}
-          </p>
-        ) : (
-          <>
-            <div className="flex items-center gap-2 text-xs font-bold text-on-surface-variant mb-4">
-              <span className="material-symbols-outlined text-sm">timer</span>
-              <span data-testid="featured-daily-countdown">
-                {t('home.featuredDaily.countdown', { time: countdown })}
-              </span>
-            </div>
-            <Link
-              to="/daily"
-              data-testid="featured-daily-cta"
-              className="block w-full text-center gold-gradient text-on-secondary font-black py-4 rounded-xl shadow-lg shadow-secondary/10 active:scale-95 transition-transform uppercase tracking-tight"
-            >
-              ▶  {t('home.featuredDaily.cta')}
-            </Link>
-          </>
-        )}
+        <div className="flex items-center gap-2 text-xs font-bold text-on-surface-variant mb-4">
+          <span className="material-symbols-outlined text-sm">timer</span>
+          <span data-testid="featured-daily-countdown">
+            {t('home.featuredDaily.countdown', { time: countdown })}
+          </span>
+        </div>
+        <Link
+          to="/daily"
+          data-testid="featured-daily-cta"
+          className="block w-full text-center gold-gradient text-on-secondary font-black py-4 rounded-xl shadow-lg shadow-secondary/10 active:scale-95 transition-transform uppercase tracking-tight"
+        >
+          ▶  {t('home.featuredDaily.cta')}
+        </Link>
       </div>
     </div>
   )

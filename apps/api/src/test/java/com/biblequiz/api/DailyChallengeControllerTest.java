@@ -116,19 +116,35 @@ class DailyChallengeControllerTest extends BaseControllerTest {
     @Test
     @Order(5)
     @WithMockUser(username = "test@example.com")
-    void getResult_completed_shouldReturnResult() throws Exception {
-        when(dailyChallengeService.hasCompletedToday("test@example.com")).thenReturn(true);
+    void getResult_completed_shouldReturnEnrichedPayload() throws Exception {
+        // Controller now delegates to DailyChallengeService.getResultData
+        // which augments the cached score with xpEarned + nextResetAt so
+        // FeaturedDailyChallenge can render the celebratory banner.
+        java.util.Map<String, Object> payload = new java.util.LinkedHashMap<>();
+        payload.put("completed", true);
+        payload.put("date", "2026-04-29");
+        payload.put("score", 80);
+        payload.put("correctCount", 4);
+        payload.put("totalQuestions", 5);
+        payload.put("xpEarned", 50);
+        payload.put("nextResetAt", "2026-04-30T00:00:00Z");
+        when(dailyChallengeService.getResultData("test@example.com")).thenReturn(payload);
 
         mockMvc.perform(get("/api/daily-challenge/result"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.completed").value(true));
+                .andExpect(jsonPath("$.completed").value(true))
+                .andExpect(jsonPath("$.correctCount").value(4))
+                .andExpect(jsonPath("$.totalQuestions").value(5))
+                .andExpect(jsonPath("$.xpEarned").value(50))
+                .andExpect(jsonPath("$.nextResetAt").value("2026-04-30T00:00:00Z"));
     }
 
     @Test
     @Order(6)
     @WithMockUser(username = "test@example.com")
     void getResult_notCompleted_shouldReturnFalse() throws Exception {
-        when(dailyChallengeService.hasCompletedToday("test@example.com")).thenReturn(false);
+        when(dailyChallengeService.getResultData("test@example.com"))
+                .thenReturn(java.util.Map.of("completed", false));
 
         mockMvc.perform(get("/api/daily-challenge/result"))
                 .andExpect(status().isOk())

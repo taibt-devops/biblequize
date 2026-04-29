@@ -776,6 +776,16 @@
       "countdown": "Next challenge in {{time}}",
       "cta": "Start today",
       "completed": "✅ You finished today — Come back in {{time}}",
+      "completedState": {
+        "title": "COMPLETED TODAY",
+        "scoreExcellent": "🎉 {{correct}}/{{total}} correct — Excellent!",
+        "scoreGood": "🎉 {{correct}}/{{total}} correct — Well done!",
+        "scoreEncouraging": "💪 {{correct}}/{{total}} correct — Keep practicing!",
+        "themeLabel": "Today: {{theme}}",
+        "xpEarned": "+{{xp}} XP earned",
+        "nextChallenge": "Next challenge in {{time}}",
+        "ctaReview": "Review your answers"
+      },
       "loading": "Loading challenge...",
       "errorFallback": "Today's Challenge — 5 questions daily",
       "retry": "Try again"

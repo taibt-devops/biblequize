@@ -776,6 +776,16 @@
       "countdown": "Thử thách mới sau {{time}}",
       "cta": "Bắt đầu hôm nay",
       "completed": "✅ Bạn đã hoàn thành hôm nay — Quay lại sau {{time}}",
+      "completedState": {
+        "title": "ĐÃ HOÀN THÀNH HÔM NAY",
+        "scoreExcellent": "🎉 {{correct}}/{{total}} đúng — Tuyệt vời!",
+        "scoreGood": "🎉 {{correct}}/{{total}} đúng — Giỏi lắm!",
+        "scoreEncouraging": "💪 {{correct}}/{{total}} đúng — Tiếp tục cố gắng!",
+        "themeLabel": "Hôm nay: {{theme}}",
+        "xpEarned": "+{{xp}} XP đã nhận",
+        "nextChallenge": "Thử thách mới sau {{time}}",
+        "ctaReview": "Xem lại bài làm"
+      },
       "loading": "Đang tải thử thách...",
       "errorFallback": "Thử Thách Hôm Nay — 5 câu mỗi ngày",
       "retry": "Thử lại"

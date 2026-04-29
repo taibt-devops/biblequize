@@ -98,15 +98,51 @@ describe('FeaturedDailyChallenge', () => {
     )
   })
 
-  it('renders completed state when user already finished today', async () => {
-    mockApiGet.mockResolvedValue({ data: sampleResponse({ alreadyCompleted: true }) })
+  it('renders completed state with score + theme + review CTA', async () => {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('/api/daily-challenge/result')) {
+        return Promise.resolve({
+          data: {
+            completed: true,
+            correctCount: 4,
+            totalQuestions: 5,
+            xpEarned: 50,
+            nextResetAt: '2026-04-30T00:00:00Z',
+          },
+        })
+      }
+      return Promise.resolve({ data: sampleResponse({ alreadyCompleted: true }) })
+    })
+    renderComponent()
+
+    const card = await screen.findByTestId('featured-daily-challenge')
+    expect(card).toHaveAttribute('data-state', 'completed')
+    // Score message picks the "Excellent" bucket at 4/5 = 80%.
+    await waitFor(() => {
+      expect(screen.getByTestId('featured-daily-score').textContent).toContain('4/5')
+    })
+    expect(screen.getByTestId('featured-daily-score').textContent).toMatch(/Tuyệt vời/)
+    expect(screen.getByTestId('featured-daily-theme').textContent).toContain('Hành trình qua 5 sách')
+    // Active CTA gone, review CTA points at /daily.
+    expect(screen.queryByTestId('featured-daily-cta')).not.toBeInTheDocument()
+    const reviewCta = screen.getByTestId('featured-daily-review-cta')
+    expect(reviewCta.getAttribute('href')).toBe('/daily')
+  })
+
+  it('completed state — Encouraging message when accuracy < 60%', async () => {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('/api/daily-challenge/result')) {
+        return Promise.resolve({
+          data: { completed: true, correctCount: 2, totalQuestions: 5, xpEarned: 50,
+                  nextResetAt: '2026-04-30T00:00:00Z' },
+        })
+      }
+      return Promise.resolve({ data: sampleResponse({ alreadyCompleted: true }) })
+    })
     renderComponent()
     await waitFor(() => {
-      expect(screen.getByTestId('featured-daily-completed')).toBeInTheDocument()
+      expect(screen.getByTestId('featured-daily-score').textContent).toMatch(/Tiếp tục cố gắng/)
     })
-    // CTA + countdown should NOT render in completed state
-    expect(screen.queryByTestId('featured-daily-cta')).not.toBeInTheDocument()
-    expect(screen.queryByTestId('featured-daily-countdown')).not.toBeInTheDocument()
   })
 
   it('formats countdown HH:MM:SS to next UTC midnight', async () => {

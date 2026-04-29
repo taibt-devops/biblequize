@@ -132,6 +132,11 @@ public class DailyChallengeController {
 
     /**
      * GET /api/daily-challenge/result — get results after completion.
+     *
+     * <p>Now returns the full payload the FeaturedDailyChallenge
+     * "completed" banner needs (score, correctCount, totalQuestions,
+     * xpEarned, nextResetAt). Falls back to {@code completed=false} for
+     * users who haven't finished today.
      */
     @GetMapping("/result")
     public ResponseEntity<Map<String, Object>> getResult(Authentication authentication) {
@@ -140,16 +145,6 @@ public class DailyChallengeController {
         }
 
         String userId = authentication.getName();
-        boolean completed = dailyChallengeService.hasCompletedToday(userId);
-
-        if (!completed) {
-            return ResponseEntity.ok(Map.of("completed", false));
-        }
-
-        Map<String, Object> response = new LinkedHashMap<>();
-        response.put("completed", true);
-        response.put("date", LocalDate.now(ZoneOffset.UTC).toString());
-
-        return ResponseEntity.ok(response);
+        return ResponseEntity.ok(dailyChallengeService.getResultData(userId));
     }
 }

@@ -6,6 +6,7 @@ import com.biblequiz.modules.quiz.repository.QuestionRepository;
 import com.biblequiz.modules.quiz.repository.UserDailyProgressRepository;
 import com.biblequiz.modules.user.entity.User;
 import com.biblequiz.modules.user.repository.UserRepository;
+import com.biblequiz.modules.user.service.StreakService;
 import com.biblequiz.infrastructure.service.CacheService;
 
 import org.slf4j.Logger;
@@ -46,6 +47,9 @@ public class DailyChallengeService {
 
     @Autowired
     private UserDailyProgressRepository userDailyProgressRepository;
+
+    @Autowired
+    private StreakService streakService;
 
     /**
      * Get today's 5 challenge questions. Same questions for all users on the same day.
@@ -123,6 +127,42 @@ public class DailyChallengeService {
     }
 
     /**
+     * Read the cached completion record for today and shape it into the
+     * response payload the FeaturedDailyChallenge "completed" banner
+     * needs. Returns {@code completed=false} when the user hasn't
+     * finished today.
+     *
+     * <p>The cache value written by {@link #markCompleted} carries
+     * {@code score / correct / total / completedAt}; this method
+     * augments those with the constants the FE would otherwise have to
+     * hardcode: {@code xpEarned} (the +50 XP that was credited) and
+     * {@code nextResetAt} (UTC midnight tomorrow ISO-8601 string for the
+     * countdown).
+     */
+    @SuppressWarnings("unchecked")
+    public Map<String, Object> getResultData(String userId) {
+        String dateStr = LocalDate.now(ZoneOffset.UTC).toString();
+        String key = CACHE_KEY_PREFIX + "completed:" + userId + ":" + dateStr;
+        Optional<Map> cached = cacheService.get(key, Map.class);
+        if (cached.isEmpty()) {
+            return Map.of("completed", false);
+        }
+        Map<String, Object> payload = cached.get();
+        Map<String, Object> response = new LinkedHashMap<>();
+        response.put("completed", true);
+        response.put("date", dateStr);
+        response.put("score", payload.getOrDefault("score", 0));
+        response.put("correctCount", payload.getOrDefault("correct", 0));
+        response.put("totalQuestions", payload.getOrDefault("total", DAILY_QUESTION_COUNT));
+        response.put("xpEarned", DAILY_COMPLETION_XP);
+        response.put("completedAt", payload.get("completedAt"));
+        // ISO-8601 instant — FE parses with new Date(...) for the countdown.
+        response.put("nextResetAt", LocalDate.now(ZoneOffset.UTC)
+                .plusDays(1).atStartOfDay().toInstant(ZoneOffset.UTC).toString());
+        return response;
+    }
+
+    /**
      * Mark user as having completed today's challenge and credit +50 XP into
      * their {@link UserDailyProgress} row for the day.
      *
@@ -147,7 +187,24 @@ public class DailyChallengeService {
                 "completedAt", System.currentTimeMillis());
         cacheService.put(key, result, java.time.Duration.ofHours(48));
 
-        creditCompletionXp(userId);
+        User user = userRepository.findById(userId)
+                .or(() -> userRepository.findByEmail(userId))
+                .orElse(null);
+        if (user == null) {
+            log.warn("Daily completion: user not found for id/email={}, skipping XP + streak", userId);
+            return;
+        }
+
+        creditCompletionXp(user);
+
+        // Daily completion extends streak (idempotent: StreakService skips
+        // when lastPlayedAt is today). See DECISIONS.md "Daily extends streak".
+        try {
+            streakService.recordActivity(user);
+        } catch (RuntimeException ex) {
+            log.warn("Daily completion: streak update failed for user {} ({}). " +
+                    "Cache + XP already credited; streak skipped.", user.getId(), ex.getMessage());
+        }
     }
 
     /**
@@ -157,20 +214,8 @@ public class DailyChallengeService {
      * same "create fresh if absent with 100 energy" initializer — so the
      * two XP paths (Ranked sync-progress, Daily completion) feed one
      * canonical per-day points ledger.
-     *
-     * <p>userId may be either the UUID primary key or the user's email
-     * (Principal.getName() is email for both OAuth and mobile login).
-     * Fall through both so callers don't have to resolve first.
      */
-    private void creditCompletionXp(String userId) {
-        User user = userRepository.findById(userId)
-                .or(() -> userRepository.findByEmail(userId))
-                .orElse(null);
-        if (user == null) {
-            log.warn("Daily completion XP: user not found for id/email={}, skipping credit", userId);
-            return;
-        }
-
+    private void creditCompletionXp(User user) {
         LocalDate today = LocalDate.now(ZoneOffset.UTC);
         UserDailyProgress udp = userDailyProgressRepository
                 .findByUserIdAndDate(user.getId(), today)
