@@ -161,8 +161,9 @@ describe('AppLayout — Logout', () => {
  *
  * Regression: previously used `<div className="fixed inset-0 z-40">` overlay
  * behind the popup. That overlay was blocked by the fixed header (z-50), so
- * clicking on header icons (favorite, bolt, stars) or logo did NOT close the
- * menu. Now uses a document mousedown listener scoped by ref.
+ * clicking on the header (logo, decorative icons) or any other header child
+ * did NOT close the menu. Now uses a document mousedown listener scoped by
+ * ref.
  */
 describe('AppLayout — User menu click-outside', () => {
   beforeEach(() => {

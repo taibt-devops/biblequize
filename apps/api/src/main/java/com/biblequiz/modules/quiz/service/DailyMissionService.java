@@ -183,7 +183,9 @@ public class DailyMissionService {
         return switch (type) {
             case "answer_correct" -> "Trả lời đúng " + target + " câu";
             case "complete_daily_challenge" -> "Hoàn thành thử thách hàng ngày";
-            case "answer_combo" -> "Trả lời " + target + " câu liên tiếp đúng";
+            case "answer_combo" -> target <= 1
+                    ? "Trả lời câu đầu tiên đúng"
+                    : "Trả lời " + target + " câu liên tiếp đúng";
             case "play_any_mode" -> "Chơi bất kỳ chế độ nào";
             case "answer_correct_difficulty" -> "Trả lời đúng " + target + " câu khó";
             case "ranked_score" -> "Đạt 60+ điểm trong Ranked";

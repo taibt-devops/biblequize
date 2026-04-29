@@ -101,9 +101,6 @@ export default function AppLayout() {
           Bible Quiz
         </Link>
         <div data-testid="header-notification-area" className="flex items-center gap-6">
-          <span className="material-symbols-outlined text-[#e8a832] cursor-pointer hover:scale-110 transition-transform">favorite</span>
-          <span className="material-symbols-outlined text-[#e8a832] cursor-pointer hover:scale-110 transition-transform">bolt</span>
-          <span data-testid="nav-notification-bell" className="inline-flex"><span data-testid="header-notification-btn" className="material-symbols-outlined text-[#e8a832] cursor-pointer hover:scale-110 transition-transform">stars</span></span>
           {/* User avatar + dropdown */}
           <div className="relative" ref={userMenuRef} data-testid="user-menu-container">
             <button
