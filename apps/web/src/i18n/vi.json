@@ -747,6 +747,15 @@
     "you": "Bạn ({{name}})",
     "viewAll": "Xem tất cả",
     "matchmakingHint": "Đối thủ có thể đã chơi lâu hơn bạn — chuẩn bị tinh thần!",
+    "exploreMore": "Khám phá thêm",
+    "compactSubtitles": {
+      "group": "Hội thánh",
+      "multiplayer": "2-20 người",
+      "tournament": "Bracket 1v1",
+      "weekly": "Chủ đề tuần",
+      "mystery": "Random hoàn toàn",
+      "speed": "10 câu × 10s"
+    },
     "activityFeed": {
       "title": "Hoạt động gần đây",
       "emptyTitle": "Bạn là người tiên phong!",
@@ -1396,6 +1405,29 @@
       "ctaRetry": "Làm lại bài",
       "ctaCooldown": "Đang chờ... ({{time}})",
       "ctaRanked": "Bắt đầu Ranked"
+    }
+  },
+  "practiceFeatured": {
+    "title": "Luyện Tập",
+    "description": "Học không áp lực, không giới hạn thời gian.",
+    "cta": "Bắt đầu"
+  },
+  "rankedFeatured": {
+    "title": "Thi Đấu Ranked",
+    "description": "Tranh tài trực tiếp, kiếm điểm rank lớn.",
+    "unlocked": {
+      "badge": "Đã mở khóa",
+      "cta": "Bắt đầu Ranked"
+    },
+    "needBasicQuiz": {
+      "label": "Cần hoàn thành Bài Giáo Lý ({{count}} câu)",
+      "cta": "Làm bài giáo lý ngay",
+      "duration": "Chỉ mất 5 phút"
+    },
+    "cooldown": {
+      "label": "Bài Giáo Lý — Lần thử: {{attempts}}",
+      "countdown": "Thử lại sau {{time}}",
+      "ctaDisabled": "Đang chờ... ({{time}})"
     }
   },
   "gameModes": {

@@ -747,6 +747,15 @@
     "you": "You ({{name}})",
     "viewAll": "View all",
     "matchmakingHint": "Other players may have been around longer — bring your A-game!",
+    "exploreMore": "Explore more",
+    "compactSubtitles": {
+      "group": "Church groups",
+      "multiplayer": "2-20 players",
+      "tournament": "1v1 bracket",
+      "weekly": "Weekly theme",
+      "mystery": "Fully random",
+      "speed": "10 × 10s"
+    },
     "activityFeed": {
       "title": "Recent activity",
       "emptyTitle": "You're a pioneer!",
@@ -1396,6 +1405,29 @@
       "ctaRetry": "Retake the quiz",
       "ctaCooldown": "Waiting... ({{time}})",
       "ctaRanked": "Play Ranked"
+    }
+  },
+  "practiceFeatured": {
+    "title": "Practice",
+    "description": "Learn stress-free, no time limit.",
+    "cta": "Start"
+  },
+  "rankedFeatured": {
+    "title": "Ranked Match",
+    "description": "Compete live, earn big rank points.",
+    "unlocked": {
+      "badge": "Unlocked",
+      "cta": "Play Ranked"
+    },
+    "needBasicQuiz": {
+      "label": "Pass Bible Basics first ({{count}} questions)",
+      "cta": "Take the catechism",
+      "duration": "Only 5 minutes"
+    },
+    "cooldown": {
+      "label": "Bible Basics — Attempt #{{attempts}}",
+      "countdown": "Retry in {{time}}",
+      "ctaDisabled": "Waiting... ({{time}})"
     }
   },
   "gameModes": {
