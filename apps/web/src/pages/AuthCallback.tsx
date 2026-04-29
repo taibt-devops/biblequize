@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../store/authStore'
@@ -11,8 +11,17 @@ export default function AuthCallback() {
   const [isProcessing, setIsProcessing] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const { login } = useAuth()
+  // Guard against React 18 StrictMode's double-invoke of useEffect in
+  // dev. The OAuth `code` from Google is one-time-use — exchanging it
+  // twice in parallel hits a 429 from the backend rate limiter on the
+  // second call and the user is bounced back to /login. Refs persist
+  // across StrictMode re-mounts, so checking + setting one is enough.
+  const hasProcessedRef = useRef(false)
 
   useEffect(() => {
+    if (hasProcessedRef.current) return
+    hasProcessedRef.current = true
+
     const processAuthCallback = async () => {
       try {
         const code = searchParams.get('code');
