@@ -1,7 +1,9 @@
 package com.biblequiz.api;
 
+import com.biblequiz.infrastructure.exception.BusinessLogicException;
 import com.biblequiz.modules.quiz.entity.Question;
 import com.biblequiz.modules.quiz.repository.QuestionRepository;
+import com.biblequiz.modules.quiz.service.BasicQuizService;
 import com.biblequiz.modules.quiz.service.DuplicateDetectionService;
 import com.biblequiz.modules.quiz.service.DuplicateDetectionService.*;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -53,7 +55,8 @@ public class AdminQuestionController {
             @RequestParam(required = false) String type,
             @RequestParam(required = false) String reviewStatus,
             @RequestParam(required = false) String search,
-            @RequestParam(required = false) String language) {
+            @RequestParam(required = false) String language,
+            @RequestParam(required = false) String category) {
 
         Question.Difficulty diff = null;
         if (difficulty != null && !difficulty.isBlank()) {
@@ -71,13 +74,14 @@ public class AdminQuestionController {
                 ? "%" + search.toLowerCase() + "%" : null;
         String bookParam = (book != null && !book.isBlank()) ? book : null;
         String langParam = (language != null && !language.isBlank()) ? language : null;
+        String categoryParam = (category != null && !category.isBlank()) ? category : null;
 
         var pageable = org.springframework.data.domain.PageRequest.of(
                 page, Math.min(size, 200),
                 org.springframework.data.domain.Sort.by("createdAt").descending());
 
         var result = questionRepository.findWithAdminFilters(
-                bookParam, diff, qType, langParam, rs, searchParam, pageable);
+                bookParam, diff, qType, langParam, rs, categoryParam, searchParam, pageable);
 
         return ResponseEntity.ok(Map.of(
                 "questions", result.getContent(),
@@ -153,6 +157,10 @@ public class AdminQuestionController {
             Optional<Question> opt = questionRepository.findById(id);
             if (opt.isEmpty()) return ResponseEntity.notFound().build();
             Question q = opt.get();
+            // Snapshot pre-update active flag so we can detect an
+            // active → inactive transition on a Bible Basics row and trip
+            // the safeguard before .save() commits.
+            boolean wasActive = Boolean.TRUE.equals(q.getIsActive());
             if (body.getBook() != null) q.setBook(body.getBook());
             if (body.getChapter() != null) q.setChapter(body.getChapter());
             if (body.getVerseStart() != null) q.setVerseStart(body.getVerseStart());
@@ -176,9 +184,22 @@ public class AdminQuestionController {
                     q.setIsActive(false);
                 }
             }
+            if (wasActive && !Boolean.TRUE.equals(q.getIsActive())) {
+                // Build a synthetic Question carrying just (category, language, isActive=true)
+                // so the shared safeguard can attribute the deactivation correctly.
+                Question removed = new Question();
+                removed.setCategory(q.getCategory());
+                removed.setLanguage(q.getLanguage());
+                removed.setIsActive(true);
+                assertBibleBasicsSafeguard(List.of(removed));
+            }
             Question saved = questionRepository.save(q);
             log.info("[ADMIN] Update question id={} success", id);
             return ResponseEntity.ok(saved);
+        } catch (BusinessLogicException ex) {
+            // Let GlobalExceptionHandler map this to 400 (e.g. Bible Basics
+            // safeguard) instead of swallowing it into a 500 here.
+            throw ex;
         } catch (Exception ex) {
             log.error("[ADMIN] Update question id={} failed: {}", id, ex.getMessage(), ex);
             return ResponseEntity.internalServerError().body(Map.of(
@@ -190,7 +211,9 @@ public class AdminQuestionController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable String id) {
-        if (!questionRepository.existsById(id)) return ResponseEntity.notFound().build();
+        Optional<Question> opt = questionRepository.findById(id);
+        if (opt.isEmpty()) return ResponseEntity.notFound().build();
+        assertBibleBasicsSafeguard(List.of(opt.get()));
         questionRepository.deleteById(id);
         return ResponseEntity.noContent().build();
     }
@@ -199,8 +222,44 @@ public class AdminQuestionController {
     public ResponseEntity<Map<String, Object>> bulkDelete(@RequestBody Map<String, List<String>> payload) {
         List<String> ids = payload.get("ids");
         if (ids == null || ids.isEmpty()) return ResponseEntity.badRequest().build();
+        List<Question> targets = questionRepository.findAllById(ids);
+        assertBibleBasicsSafeguard(targets);
         questionRepository.deleteAllById(ids);
         return ResponseEntity.ok(Map.of("deleted", ids.size()));
+    }
+
+    /**
+     * Block any operation that would drop the active Bible Basics catechism
+     * pool below {@link BasicQuizService#TOTAL_QUESTIONS} for any language.
+     * The /api/basic-quiz/questions endpoint requires exactly 10 active rows
+     * per language to function — falling short would 5xx every quiz attempt
+     * and silently break Ranked unlock for all new users.
+     *
+     * @param removals questions being deleted OR transitioning from
+     *                 active → inactive. Non-bible_basics or already-inactive
+     *                 entries are no-ops here.
+     */
+    private void assertBibleBasicsSafeguard(List<Question> removals) {
+        Map<String, Long> activeRemovedByLang = removals.stream()
+                .filter(Objects::nonNull)
+                .filter(q -> BasicQuizService.CATEGORY.equals(q.getCategory()))
+                .filter(q -> Boolean.TRUE.equals(q.getIsActive()))
+                .collect(Collectors.groupingBy(Question::getLanguage, Collectors.counting()));
+
+        if (activeRemovedByLang.isEmpty()) return;
+
+        for (var entry : activeRemovedByLang.entrySet()) {
+            String lang = entry.getKey();
+            long active = questionRepository.countByCategoryAndLanguageAndIsActiveTrue(
+                    BasicQuizService.CATEGORY, lang);
+            long remaining = active - entry.getValue();
+            if (remaining < BasicQuizService.TOTAL_QUESTIONS) {
+                throw new BusinessLogicException(
+                        "Cannot drop active Bible Basics pool below "
+                                + BasicQuizService.TOTAL_QUESTIONS
+                                + " for language '" + lang + "' (would leave " + remaining + ").");
+            }
+        }
     }
 
     // ── Import ───────────────────────────────────────────────────────────────

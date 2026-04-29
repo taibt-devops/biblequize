@@ -2950,6 +2950,14 @@ Found 3-layer break: BE has no chat MessageMapping, /ws blocked by Security at h
 - [BasicQuiz.test.tsx](apps/web/src/pages/__tests__/BasicQuiz.test.tsx) — 6 cases: render question, submit-disabled until all answered, prev/next preserves answer, pass screen + nav to /ranked, fail screen review, error path with retry
 - FE regression: 1015 tests, 101 files (+6 new tests); 0 regressions
 - i18n validator: 123 hardcoded / 0 missing — IDENTICAL baseline
-### Step 5: Admin filter + 10-min safeguard on delete [ ] TODO
+### Step 5: Admin filter + 10-min safeguard on delete [x] DONE
+- BE: [QuestionRepository.java](apps/api/src/main/java/com/biblequiz/modules/quiz/repository/QuestionRepository.java) — `findWithAdminFilters` now accepts `category` (8th param)
+- BE: [AdminQuestionController.java](apps/api/src/main/java/com/biblequiz/api/AdminQuestionController.java) — `?category` query param + `assertBibleBasicsSafeguard` helper applied to delete / bulkDelete / update (active→inactive transition); throws `BusinessLogicException` if pool would drop < 10 active per language
+- BE: incidental fix — added `@MockBean DuplicateDetectionService` to `AdminQuestionControllerTest` (preexisting test setup bug that cascaded 15 tests + 51 context errors across the suite)
+- BE tests: 5 new safeguard tests + 4 fixed signatures = 20 tests pass (was 0/15 before fix)
+- FE: [pages/admin/Questions.tsx](apps/web/src/pages/admin/Questions.tsx) — Category filter dropdown + Bible Basics badge on rows + `category` plumbed into fetchParams
+- i18n: `admin.questions.filter.{categoryLabel,categoryAll,categoryBibleBasics}` (vi + en)
+- BE regression: 679 tests, 1 failure + 36 errors (was 1+51 — net **-15 cascading errors fixed** by incidental test setup repair); 0 regressions introduced
+- FE regression: 1015 tests, 0 regressions
 ### Step 6: i18n strings + remove old XP-unlock keys [ ] TODO
 ### Step 7: Full regression [ ] TODO

@@ -27,6 +27,8 @@ interface Question {
   reviewStatus?: ReviewStatus
   approvalsCount?: number
   createdAt?: string
+  /** Optional tag — currently only "bible_basics" for the Ranked-unlock catechism. */
+  category?: string | null
 }
 
 interface ApiPage { questions: Question[]; total: number; page: number; size: number; totalPages: number }
@@ -94,6 +96,7 @@ export default function QuestionsAdmin() {
   const [difficulty,   setDifficulty]   = useState('')
   const [qType,        setQType]        = useState('')
   const [reviewStatus, setReviewStatus] = useState('')
+  const [category,     setCategory]     = useState('')
 
   // ── selection
   const [selectedIds, setSelectedIds] = useState<Record<string, boolean>>({})
@@ -122,9 +125,10 @@ export default function QuestionsAdmin() {
     if (difficulty)   p.set('difficulty', difficulty)
     if (qType)        p.set('type', qType)
     if (reviewStatus) p.set('reviewStatus', reviewStatus)
+    if (category)     p.set('category', category)
     if (search.trim()) p.set('search', search.trim())
     return p.toString()
-  }, [page, pageSize, book, difficulty, qType, reviewStatus, search])
+  }, [page, pageSize, book, difficulty, qType, reviewStatus, category, search])
 
   const refresh = useCallback(async () => {
     setLoading(true); setError(null)
@@ -141,7 +145,7 @@ export default function QuestionsAdmin() {
   useEffect(() => { refresh() }, [refresh])
 
   // Reset to page 0 when filters change
-  useEffect(() => { setPage(0) }, [search, book, difficulty, qType, reviewStatus, pageSize])
+  useEffect(() => { setPage(0) }, [search, book, difficulty, qType, reviewStatus, category, pageSize])
 
   // ── Selection ──────────────────────────────────────────────────────────────
 
@@ -341,6 +345,18 @@ export default function QuestionsAdmin() {
           </select>
         </div>
         <div>
+          <label className="block text-xs text-white/50 mb-1">{t('admin.questions.filter.categoryLabel')}</label>
+          <select
+            data-testid="admin-questions-category-filter"
+            value={category}
+            onChange={e => setCategory(e.target.value)}
+            className="h-9 px-3 rounded-md bg-white/10 border border-white/10 text-sm"
+          >
+            <option value="">{t('admin.questions.filter.categoryAll')}</option>
+            <option value="bible_basics">{t('admin.questions.filter.categoryBibleBasics')}</option>
+          </select>
+        </div>
+        <div>
           <label className="block text-xs text-white/50 mb-1">{t('admin.questions.filter.pageSizeLabel')}</label>
           <select value={pageSize} onChange={e => setPageSize(Number(e.target.value))}
             className="h-9 px-3 rounded-md bg-white/10 border border-white/10 text-sm">
@@ -404,6 +420,16 @@ export default function QuestionsAdmin() {
                       : <span className="text-white/30">—</span>}
                   </td>
                   <td className="px-3 py-2 max-w-[480px]">
+                    {q.category === 'bible_basics' && (
+                      <div className="mb-1">
+                        <span
+                          data-testid="admin-question-bible-basics-badge"
+                          className="inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider border bg-amber-600/20 text-amber-300 border-amber-500/30"
+                        >
+                          {t('admin.questions.filter.categoryBibleBasics')}
+                        </span>
+                      </div>
+                    )}
                     <div className="line-clamp-2 text-white/80">{q.content}</div>
                     {q.options && q.options.length > 0 && (
                       <div className="mt-1 flex flex-wrap gap-1">

@@ -212,6 +212,9 @@
         "fillBlank": "Fill blank",
         "statusLabel": "Status",
         "statusAll": "All",
+        "categoryLabel": "Category",
+        "categoryAll": "All",
+        "categoryBibleBasics": "Bible Basics",
         "pageSizeLabel": "Show"
       },
       "column": {

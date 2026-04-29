@@ -212,6 +212,9 @@
         "fillBlank": "Điền trống",
         "statusLabel": "Trạng thái",
         "statusAll": "Tất cả",
+        "categoryLabel": "Phân loại",
+        "categoryAll": "Tất cả",
+        "categoryBibleBasics": "Bài Giáo Lý",
         "pageSizeLabel": "Hiển thị"
       },
       "column": {

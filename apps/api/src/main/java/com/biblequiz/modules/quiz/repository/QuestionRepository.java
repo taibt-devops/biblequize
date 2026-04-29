@@ -123,6 +123,7 @@ public interface QuestionRepository extends JpaRepository<Question, String> {
            "(:type IS NULL OR q.type = :type) AND " +
            "(:language IS NULL OR q.language = :language) AND " +
            "(:reviewStatus IS NULL OR q.reviewStatus = :reviewStatus) AND " +
+           "(:category IS NULL OR q.category = :category) AND " +
            "(:search IS NULL OR LOWER(q.content) LIKE :search)")
     Page<Question> findWithAdminFilters(
             @Param("book") String book,
@@ -130,6 +131,7 @@ public interface QuestionRepository extends JpaRepository<Question, String> {
             @Param("type") Question.Type type,
             @Param("language") String language,
             @Param("reviewStatus") Question.ReviewStatus reviewStatus,
+            @Param("category") String category,
             @Param("search") String search,
             Pageable pageable);
 
