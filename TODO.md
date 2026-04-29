@@ -2959,5 +2959,17 @@ Found 3-layer break: BE has no chat MessageMapping, /ws blocked by Security at h
 - i18n: `admin.questions.filter.{categoryLabel,categoryAll,categoryBibleBasics}` (vi + en)
 - BE regression: 679 tests, 1 failure + 36 errors (was 1+51 — net **-15 cascading errors fixed** by incidental test setup repair); 0 regressions introduced
 - FE regression: 1015 tests, 0 regressions
-### Step 6: i18n strings + remove old XP-unlock keys [ ] TODO
+### Step 6: i18n strings + remove old XP-unlock keys [x] DONE
+- [Home.tsx](apps/web/src/pages/Home.tsx) — unmounted EarlyRankedUnlockModal, removed `useEarlyUnlockCelebration` hook + `practiceAccuracyPct` import
+- Deleted 4 obsolete files:
+  - `components/EarlyRankedUnlockModal.tsx`
+  - `components/__tests__/EarlyRankedUnlockModal.test.tsx`
+  - `hooks/useEarlyUnlockCelebration.ts`
+  - `hooks/__tests__/useEarlyUnlockCelebration.test.ts`
+- i18n: dropped `modals.earlyUnlock.*` (9 keys × 2 langs) — modal no longer exists
+- FAQ rewrite: `faq.howStart` and `faq.howUnlockRanked` (vi + en) — old text described "≥80% practice → early unlock" and "1,000 XP path"; replaced with "complete Bible Basics catechism, score ≥8/10" guidance
+- DEFERRED to follow-up PR (scope creep avoidance):
+  - Drop `requiredTier:2` from GameModeGrid Ranked card config (would require updating ~6 dependent unit tests in GameModeGrid.test.tsx that assert lock-state UI)
+  - Decommission `EarlyUnlockMetrics` admin page + `admin.earlyUnlock.*` keys (deferred until BE V32 drops the underlying earlyRankedUnlock fields)
+- Verification: 997 FE tests pass (was 1015 → -18 from deleted modal+hook tests; 0 regressions); i18n validator clean (123 hardcoded / 0 missing); `npm run build` succeeds
 ### Step 7: Full regression [ ] TODO

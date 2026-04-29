@@ -7,7 +7,6 @@ import BasicQuizCard from '../components/BasicQuizCard'
 import ComebackModal from '../components/ComebackModal'
 import DailyBonusModal from '../components/DailyBonusModal'
 import DailyMissionsCard from '../components/DailyMissionsCard'
-import EarlyRankedUnlockModal from '../components/EarlyRankedUnlockModal'
 import EmptyLeaderboardCTA from '../components/EmptyLeaderboardCTA'
 import FeaturedDailyChallenge from '../components/FeaturedDailyChallenge'
 import GameModeGrid from '../components/GameModeGrid'
@@ -15,12 +14,10 @@ import MilestoneBanner from '../components/MilestoneBanner'
 import TierPerksTeaser from '../components/TierPerksTeaser'
 import TierProgressBar from '../components/TierProgressBar'
 import TutorialOverlay from '../components/TutorialOverlay'
-import { useEarlyUnlockCelebration } from '../hooks/useEarlyUnlockCelebration'
 import { useAuthStore } from '../store/authStore'
 import { api } from '../api/client'
 import { getDailyVerse } from '../data/verses'
 import { getTierInfo } from '../data/tiers'
-import { practiceAccuracyPct } from '../utils/earlyUnlock'
 
 const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
 
@@ -62,14 +59,6 @@ export default function Home() {
     queryKey: ['me'],
     queryFn: () => api.get('/api/me').then(r => r.data),
     staleTime: 5 * 60_000, // 5 min
-  })
-
-  // Fires celebration modal exactly once per unlock. Scoped to the
-  // user's email so a different login on the same browser sees their
-  // own event (cheap edge-case safeguard, see hook docs).
-  const { shouldCelebrate, dismiss: dismissEarlyUnlock } = useEarlyUnlockCelebration({
-    earlyRankedUnlockedAt: meData?.earlyRankedUnlockedAt ?? null,
-    userKey: meData?.email ?? user?.email,
   })
 
   // TanStack Query: tier progress (includes totalPoints)
@@ -117,14 +106,6 @@ export default function Home() {
     <div data-testid="home-page" className="space-y-8 max-w-7xl mx-auto w-full">
       <ComebackModal />
       <DailyBonusModal />
-      <EarlyRankedUnlockModal
-        open={shouldCelebrate}
-        accuracyPct={practiceAccuracyPct(
-          meData?.practiceCorrectCount ?? 0,
-          meData?.practiceTotalCount ?? 0,
-        ) ?? undefined}
-        onDismiss={dismissEarlyUnlock}
-      />
       <TutorialOverlay />
       {/* ── Hero: compact 1-row (greeting + tier in one card) ── */}
       <section

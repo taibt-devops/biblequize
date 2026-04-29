@@ -83,16 +83,6 @@
       "claimButton": "Claim now! 🎁",
       "claiming": "..."
     },
-    "earlyUnlock": {
-      "title": "Congratulations!",
-      "subtitle": "You unlocked Ranked Mode early!",
-      "description": "Your Practice accuracy cleared the threshold — you can jump into Ranked right now, no need to grind XP.",
-      "descriptionWithPct": "Your Practice accuracy of {{pct}}% cleared the threshold — you can jump into Ranked right now, no need to grind XP.",
-      "badgeLabel": "Diligent Student Perk",
-      "badgeHint": "Permanent — even if your accuracy drops later.",
-      "playRankedBtn": "Play Ranked Now",
-      "continuePracticeBtn": "Keep Practicing"
-    },
     "starPopup": {
       "newStar": "New star! +{{count}} XP",
       "progress": "Star {{current}}/{{total}}"
@@ -818,7 +808,7 @@
     "items": {
       "howToPlay": {
         "q": "How do I start playing?",
-        "a": "Begin with Practice mode — no time limit, no energy cost. Pick a Bible book, difficulty, question count, and start. Practice is the onboarding path: it doesn't grant XP directly, but answering ≥80% correctly over 10+ questions unlocks Ranked mode early (without waiting to reach 1,000 XP). Ranked is where you earn XP toward your tier."
+        "a": "Begin with Practice mode — no time limit, no energy cost. Pick a Bible book, difficulty, question count, and start. Practice is the onboarding path; it doesn't grant XP directly. When you're ready for Ranked, complete the Bible Basics catechism (10 core doctrinal questions, score ≥8/10) to unlock it — passing once unlocks Ranked permanently. Ranked is where you earn XP toward your tier."
       },
       "bibleTranslation": {
         "q": "Which Bible translation does the app use?",
@@ -838,7 +828,7 @@
       },
       "howUnlockRanked": {
         "q": "When does Ranked mode unlock?",
-        "a": "Three paths unlock Ranked: (1) Reach Seeker tier (1,000 XP), (2) Early-unlock — play Practice with ≥80% accuracy over at least 10 answered questions, or (3) Daily streak — completing Daily Challenge grants +50 XP per day, so ~20 consecutive days reach 1,000 XP. Path 2 is fastest, path 3 is the most reliable for casual users. Once Ranked unlocks, XP continues accumulating toward the next tier."
+        "a": "Complete the Bible Basics catechism — 10 core questions covering Christian doctrine (Trinity, attributes of God, Christology, salvation by grace, etc.). Score at least 8/10 to pass — passing once unlocks Ranked permanently. There's a 60-second cooldown between failed attempts. Once Ranked unlocks, XP starts accumulating toward the next tier."
       },
       "howEarnXp": {
         "q": "How do I earn XP and can I lose it?",

@@ -83,16 +83,6 @@
       "claimButton": "Nhận ngay! 🎁",
       "claiming": "..."
     },
-    "earlyUnlock": {
-      "title": "Chúc mừng!",
-      "subtitle": "Bạn đã mở khóa Thi Đấu Xếp Hạng sớm!",
-      "description": "Độ chính xác Luyện Tập của bạn đã vượt ngưỡng — giờ bạn có thể chơi Xếp Hạng ngay, không cần đợi XP.",
-      "descriptionWithPct": "Độ chính xác Luyện Tập {{pct}}% đã vượt ngưỡng — giờ bạn có thể chơi Xếp Hạng ngay, không cần đợi XP.",
-      "badgeLabel": "Ưu đãi Học Trò Chăm Chỉ",
-      "badgeHint": "Vĩnh viễn — kể cả khi độ chính xác giảm sau này.",
-      "playRankedBtn": "Vào Thi Đấu Ngay",
-      "continuePracticeBtn": "Tiếp Tục Luyện Tập"
-    },
     "starPopup": {
       "newStar": "Sao mới! +{{count}} XP",
       "progress": "Sao {{current}}/{{total}}"
@@ -818,7 +808,7 @@
     "items": {
       "howToPlay": {
         "q": "Làm sao để bắt đầu chơi?",
-        "a": "Bắt đầu với chế độ Luyện Tập — không giới hạn thời gian, không tốn năng lượng. Chọn sách Kinh Thánh, độ khó, số câu rồi bấm Bắt Đầu. Luyện Tập là path onboarding: không trực tiếp cho XP, nhưng trả lời đúng ≥80% qua 10+ câu sẽ mở khóa Thi Đấu Xếp Hạng sớm (không cần đợi đủ 1,000 XP). Vào được Xếp Hạng, bạn mới bắt đầu tích XP để lên tier."
+        "a": "Bắt đầu với chế độ Luyện Tập — không giới hạn thời gian, không tốn năng lượng. Chọn sách Kinh Thánh, độ khó, số câu rồi bấm Bắt Đầu. Luyện Tập là path onboarding: không trực tiếp cho XP. Khi bạn sẵn sàng cho Thi Đấu Xếp Hạng, hãy hoàn thành Bài Giáo Lý Căn Bản (10 câu cơ bản về đức tin Cơ-đốc, đúng tối thiểu 8/10) để mở khóa — pass 1 lần là vĩnh viễn. Vào được Xếp Hạng, bạn mới bắt đầu tích XP để lên tier."
       },
       "bibleTranslation": {
         "q": "Bible Quiz dùng bản dịch Kinh Thánh nào?",
@@ -838,7 +828,7 @@
       },
       "howUnlockRanked": {
         "q": "Thi Đấu Xếp Hạng mở khóa khi nào?",
-        "a": "Có 3 cách: (1) Đạt hạng Người Tìm Kiếm (1,000 XP), (2) Mở khóa sớm — chơi Luyện Tập với ≥80% độ chính xác qua ít nhất 10 câu, hoặc (3) Làm Thử Thách Ngày đều đặn — mỗi ngày hoàn thành cộng +50 XP, khoảng 20 ngày liên tiếp sẽ đủ 1,000 XP. Cách (2) nhanh nhất, cách (3) đều đặn nhất cho người casual. Sau khi mở khóa Xếp Hạng, XP tiếp tục tích lũy để lên tier tiếp theo."
+        "a": "Hoàn thành Bài Giáo Lý Căn Bản — 10 câu hỏi cơ bản về đức tin Cơ-đốc (Ba Ngôi, đặc tính Đức Chúa Trời, Christology, sự cứu rỗi bởi đức tin, v.v.). Đúng tối thiểu 8/10 là pass — và pass 1 lần là mở khóa Xếp Hạng vĩnh viễn. Nếu chưa pass, có cooldown 60 giây giữa các lần thử. Sau khi mở khóa Xếp Hạng, bạn bắt đầu tích XP để lên tier tiếp theo."
       },
       "howEarnXp": {
         "q": "XP kiếm từ đâu và có mất không?",
