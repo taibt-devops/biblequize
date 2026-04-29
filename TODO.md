@@ -2972,4 +2972,35 @@ Found 3-layer break: BE has no chat MessageMapping, /ws blocked by Security at h
   - Drop `requiredTier:2` from GameModeGrid Ranked card config (would require updating ~6 dependent unit tests in GameModeGrid.test.tsx that assert lock-state UI)
   - Decommission `EarlyUnlockMetrics` admin page + `admin.earlyUnlock.*` keys (deferred until BE V32 drops the underlying earlyRankedUnlock fields)
 - Verification: 997 FE tests pass (was 1015 → -18 from deleted modal+hook tests; 0 regressions); i18n validator clean (123 hardcoded / 0 missing); `npm run build` succeeds
-### Step 7: Full regression [ ] TODO
+### Step 7: Full regression [x] DONE 2026-04-29
+**Test counts vs. pre-feature baseline:**
+
+| Suite | Baseline | Final | Delta | Notes |
+|---|---|---|---|---|
+| BE | 663 / 1F + 51E | **679** / 1F + 36E | **+16 tests, −15 errors** | +11 BasicQuizServiceTest, +5 admin safeguard. -15 errors from incidental fix to AdminQuestionControllerTest's missing @MockBean. All remaining 1F + 36E preexisting (DuplicateDetectionService cascade, QuestionReviewControllerTest.stats JSON path), unrelated to Bible Basics work. |
+| FE | 1009 / 0F | **997** / 0F | −12 net | +14 new tests (BasicQuizCard 8 + BasicQuiz 6), −26 deleted (EarlyRankedUnlockModal + useEarlyUnlockCelebration tests). Zero new failures. |
+| FE i18n validator | 123 hardcoded / 0 missing | **123 / 0** | unchanged | No new debt introduced. |
+| FE `npm run build` | green | **green** | — | 9.29s. |
+
+**Liveness checks:**
+- ✅ BE booted on :8080 (native via `mvnw spring-boot:run`)
+- ✅ Flyway: V31 `add basic quiz unlock` applied (success=1 in flyway_schema_history)
+- ✅ DB: 10 active vi + 10 active en bible_basics rows
+- ✅ `GET /api/basic-quiz/status` → 401 (correct: auth-required endpoint reachable)
+- ✅ `GET /api/basic-quiz/questions` → 401 with structured JSON error envelope
+
+**6 commits shipped (oldest first):**
+```
+7cbfb1f  feat(db):    V31 schema for Bible Basics catechism quiz unlock
+41ff511  feat(seed):  bible basics catechism — 10 VI/EN questions + extend seeder
+8e46824  feat(api):   BasicQuizService + 3 endpoints + replace Ranked gate
+19e3063  feat(home):  BasicQuizCard with 4 states + i18n + tests
+65c8b7f  feat(quiz):  BasicQuiz page — 10-Q catechism player + result screens
+4f186e9  feat(admin): Bible Basics — category filter + delete safeguard
+2c3f35b  chore(home): retire EarlyRankedUnlockModal + obsolete unlock copy
+```
+
+**Follow-up items (deferred, separate PRs):**
+- V32 migration: drop `users.early_ranked_unlock`, `practice_correct_count`, `practice_total_count`, `early_ranked_unlocked_at` columns once production has been stable for 1–2 weeks
+- Drop `requiredTier:2` + lock-state UI for Ranked card in GameModeGrid (cascades into ~6 dependent test rewrites — keep as a focused refactor PR)
+- Decommission `EarlyUnlockMetrics` admin page + `admin.earlyUnlock.*` keys (paired with V32 column drop)
