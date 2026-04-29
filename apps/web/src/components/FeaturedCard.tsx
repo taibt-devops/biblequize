@@ -54,9 +54,12 @@ export default function FeaturedCard({
   isRecommended,
   recommendReason,
 }: FeaturedCardProps) {
-  const borderClasses = isRecommended
-    ? 'border-secondary bg-secondary/[0.04] shadow-[0_0_32px_rgba(232,168,50,0.35)] ring-2 ring-secondary/30'
-    : 'border-outline-variant/10 hover:border-secondary/30'
+  // Recommendation overlay — keep as a Tailwind ring so it composes
+  // additively with the warm-gradient base without fighting the
+  // existing box-shadow stack.
+  const recommendOverlay = isRecommended
+    ? 'shadow-[0_0_32px_rgba(232,168,50,0.35)] ring-2 ring-secondary/30'
+    : ''
 
   const ctaClass =
     cta.className ??
@@ -64,11 +67,16 @@ export default function FeaturedCard({
       ? 'bg-surface-container-highest text-on-surface-variant cursor-not-allowed opacity-70'
       : 'gold-gradient text-on-secondary shadow-lg shadow-secondary/10 active:scale-95')
 
+  // 'ranked' variant gets a warmer gradient + stronger glow via global.css;
+  // any other id falls through to the Practice-style default.
+  const variant = id === 'ranked' ? 'ranked' : 'practice'
+
   return (
     <div
       data-testid={`featured-card-${id}`}
       data-recommended={isRecommended ? 'true' : 'false'}
-      className={`relative bg-surface-container rounded-2xl p-7 sm:p-8 border-2 transition-all flex flex-col min-h-[220px] ${borderClasses}`}
+      data-variant={variant}
+      className={`featured-warm-card rounded-2xl p-7 sm:p-8 transition-all flex flex-col min-h-[220px] ${recommendOverlay}`}
     >
       {isRecommended && (
         <div

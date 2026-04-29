@@ -169,9 +169,8 @@ export default function FeaturedDailyChallenge() {
       <div
         data-testid="featured-daily-challenge"
         data-state="completed"
-        className="relative overflow-hidden rounded-2xl bg-surface-container p-8 border border-secondary/30 group"
+        className="featured-daily-warm rounded-2xl p-8 group"
       >
-        <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full -mr-20 -mt-20 blur-3xl pointer-events-none" />
         <div className="relative z-10">
           <div className="flex items-center gap-3 mb-3">
             <span className="material-symbols-outlined text-secondary text-2xl" style={FILL_1}>verified</span>
@@ -217,9 +216,7 @@ export default function FeaturedDailyChallenge() {
 
   // ── State A: active (not completed) ──
   return (
-    <div data-testid="featured-daily-challenge" data-state="active" className="relative overflow-hidden rounded-2xl bg-surface-container p-8 border border-outline-variant/10 group">
-      <div className="absolute top-0 right-0 w-64 h-64 bg-tertiary/5 rounded-full -mr-20 -mt-20 blur-3xl group-hover:bg-tertiary/10 transition-colors" />
-
+    <div data-testid="featured-daily-challenge" data-state="active" className="featured-daily-warm rounded-2xl p-8 group">
       <div className="relative z-10">
         <div className="flex items-center gap-3 mb-3">
           <span className="material-symbols-outlined text-tertiary text-2xl" style={FILL_1}>calendar_today</span>

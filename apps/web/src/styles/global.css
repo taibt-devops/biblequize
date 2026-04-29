@@ -2216,3 +2216,142 @@ select {
 .animate-slideInRight {
   animation: slideInRight 0.3s ease-out;
 }
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Card Polish Level 1 — Texture & Depth (Option Y)
+   Warm gold gradients + ambient glows + subtle inner highlights for
+   the Home featured cards. Pure CSS — no new dependencies. Pairs with:
+     - components/FeaturedCard.tsx          (Practice + Ranked variants)
+     - components/FeaturedDailyChallenge.tsx
+     - components/CompactCard.tsx           (subtle gradient only)
+   ────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* Warm card palette — picked to read as "candlelight on parchment"
+     against the deep-space background. Subtle is the rule: alpha
+     channels stay below 0.1 except for the base background fill. */
+  --card-warm-from:        rgba(35, 32, 28, 0.85);
+  --card-warm-to:          rgba(28, 26, 24, 0.7);
+  --card-warmer-from:      rgba(40, 30, 25, 0.85);
+  --card-warmer-to:        rgba(30, 25, 22, 0.7);
+  --card-daily-from:       rgba(45, 35, 20, 0.85);
+  --card-daily-mid:        rgba(30, 28, 25, 0.7);
+  --card-daily-to:         rgba(40, 32, 18, 0.85);
+  --gold-glow-soft:        rgba(212, 175, 55, 0.06);
+  --gold-glow-medium:      rgba(212, 175, 55, 0.08);
+  --gold-glow-strong:      rgba(212, 175, 55, 0.10);
+  --gold-border-subtle:    rgba(212, 175, 55, 0.18);
+  --gold-border-medium:    rgba(212, 175, 55, 0.25);
+  --gold-border-strong:    rgba(212, 175, 55, 0.35);
+  --inner-highlight:       rgba(255, 240, 200, 0.05);
+  --inner-highlight-warm:  rgba(255, 240, 200, 0.06);
+  --inner-highlight-daily: rgba(255, 220, 100, 0.08);
+}
+
+/* ── Featured cards (Practice + Ranked) ── */
+.featured-warm-card {
+  background: linear-gradient(135deg, var(--card-warm-from) 0%, var(--card-warm-to) 100%);
+  border: 1px solid var(--gold-border-subtle);
+  box-shadow:
+    inset 0 1px 0 var(--inner-highlight),
+    0 4px 24px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ambient glow for Practice (top-left, learning vibe). */
+.featured-warm-card::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, var(--gold-glow-soft) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ranked variant — warmer tone, stronger border, glow shifted to the
+   top-right (achievement vibe), plus a faint outer halo. */
+.featured-warm-card[data-variant="ranked"] {
+  background: linear-gradient(135deg, var(--card-warmer-from) 0%, var(--card-warmer-to) 100%);
+  border-color: var(--gold-border-medium);
+  box-shadow:
+    inset 0 1px 0 var(--inner-highlight-warm),
+    0 4px 28px rgba(0, 0, 0, 0.35),
+    0 0 24px rgba(212, 175, 55, 0.04);
+}
+
+.featured-warm-card[data-variant="ranked"]::before {
+  top: -80px;
+  left: auto;
+  right: -80px;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, var(--gold-glow-strong) 0%, transparent 65%);
+}
+
+/* Make sure card content stays above the ::before glow. */
+.featured-warm-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Featured Daily Challenge banner ── */
+.featured-daily-warm {
+  background: linear-gradient(
+    135deg,
+    var(--card-daily-from) 0%,
+    var(--card-daily-mid) 50%,
+    var(--card-daily-to) 100%
+  );
+  border: 1px solid var(--gold-border-medium);
+  box-shadow:
+    inset 0 1px 0 var(--inner-highlight-daily),
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(212, 175, 55, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-daily-warm::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--gold-glow-medium) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.featured-daily-warm > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Compact secondary cards ── */
+.compact-card-polished {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    0 2px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.compact-card-polished:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  border-color: var(--gold-border-medium);
+  transform: translateY(-1px);
+}

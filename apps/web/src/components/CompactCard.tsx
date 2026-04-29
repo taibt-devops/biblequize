@@ -35,7 +35,7 @@ export default function CompactCard({
     <button
       data-testid={`compact-card-${id}`}
       onClick={onClick}
-      className="group relative flex flex-col items-start text-left bg-surface-container rounded-xl p-4 border border-outline-variant/10 hover:border-secondary/30 hover:bg-surface-container-high transition-colors min-h-[100px]"
+      className="compact-card-polished group relative flex flex-col items-start text-left rounded-xl p-4 min-h-[100px]"
     >
       {matchmakingHint && (
         <span
