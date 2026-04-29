@@ -753,6 +753,7 @@
     "questions": "Q",
     "you": "You ({{name}})",
     "viewAll": "View all",
+    "matchmakingHint": "Other players may have been around longer — bring your A-game!",
     "activityFeed": {
       "title": "Recent activity",
       "emptyTitle": "You're a pioneer!",

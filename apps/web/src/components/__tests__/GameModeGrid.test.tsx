@@ -285,8 +285,9 @@ describe('GameModeGrid', () => {
     })
 
     it('navigates to /tournaments when Tournament CTA clicked', async () => {
-      // Tournament requires Tier 4; without that gate cleared the CTA is
-      // replaced with the locked "Luyện tập để kiếm điểm" hint.
+      // After Option B Tournament has no tier gate, but we still pass
+      // userTier=4 here so Ranked (which DOES still require tier 2) also
+      // unlocks — keeps the surrounding test fixtures consistent.
       render(
         <MemoryRouter>
           <GameModeGrid userStats={{ currentStreak: 0, totalPoints: 6000 }} userTier={4} />
@@ -513,7 +514,10 @@ describe('GameModeGrid', () => {
       expect(status.textContent).toMatch(/5/)
     })
 
-    it('does NOT show accuracy path for Tournament (only Ranked gets early unlock)', async () => {
+    it('Tournament card renders unlocked at tier 1 (no tier gate after Option B)', async () => {
+      // Step B of the soft tier-pivot: Tournament's requiredTier=4 was
+      // removed because the backend never enforced it. The card now
+      // renders without a lock badge regardless of tier.
       render(
         <MemoryRouter>
           <GameModeGrid
@@ -528,11 +532,13 @@ describe('GameModeGrid', () => {
         </MemoryRouter>
       )
       await waitFor(() => {
-        // Tournament is locked (tier<4), XP path shown
-        expect(screen.getByTestId('game-mode-tournament-xp-path')).toBeInTheDocument()
+        const tournamentCard = screen.getByTestId('game-mode-tournament')
+        expect(tournamentCard.getAttribute('data-locked')).toBe('false')
       })
-      // But NO accuracy path for Tournament
+      // Neither XP nor accuracy unlock-path renders since the card isn't locked
+      expect(screen.queryByTestId('game-mode-tournament-xp-path')).not.toBeInTheDocument()
       expect(screen.queryByTestId('game-mode-tournament-accuracy-path')).not.toBeInTheDocument()
+      expect(screen.queryByTestId('game-mode-tournament-lock')).not.toBeInTheDocument()
     })
 
     it('does NOT show accuracy path when practice counts omitted (backward compat)', async () => {
@@ -600,7 +606,7 @@ describe('GameModeGrid', () => {
       expect(screen.queryByTestId('game-mode-ranked-unlock-hint')).not.toBeInTheDocument()
     })
 
-    it('earlyRankedUnlock flag does NOT unlock Tournament (stays tier-4 gated)', async () => {
+    it('earlyRankedUnlock flag affects only Ranked (Tournament has no gate to bypass)', async () => {
       render(
         <MemoryRouter>
           <GameModeGrid
@@ -612,8 +618,10 @@ describe('GameModeGrid', () => {
       )
       await waitFor(() => {
         const tournamentCard = screen.getByTestId('game-mode-tournament')
-        // Tournament remains locked (requires tier 4, flag only affects Ranked)
-        expect(tournamentCard.getAttribute('data-locked')).toBe('true')
+        const rankedCard = screen.getByTestId('game-mode-ranked')
+        // Ranked unlocked via the flag; Tournament has no gate at all (Option B)
+        expect(rankedCard.getAttribute('data-locked')).toBe('false')
+        expect(tournamentCard.getAttribute('data-locked')).toBe('false')
       })
     })
 
@@ -633,7 +641,9 @@ describe('GameModeGrid', () => {
       })
     })
 
-    it('locks Tournament card for users below Tier 4', async () => {
+    it('Tournament card has matchmaking hint info icon (Tournament + Multiplayer only)', async () => {
+      // Step B adds a subtle info icon hover-tooltip on competitive
+      // modes warning users they may face longer-tenured players.
       render(
         <MemoryRouter>
           <GameModeGrid
@@ -643,8 +653,26 @@ describe('GameModeGrid', () => {
         </MemoryRouter>
       )
       await waitFor(() => {
-        const tournamentCard = screen.getByTestId('game-mode-tournament')
-        expect(tournamentCard.getAttribute('data-locked')).toBe('true')
+        expect(screen.getByTestId('game-mode-tournament-matchmaking-hint')).toBeInTheDocument()
+      })
+      expect(screen.getByTestId('game-mode-multiplayer-matchmaking-hint')).toBeInTheDocument()
+      // Other modes (e.g. Practice, Daily) must NOT show the hint
+      expect(screen.queryByTestId('game-mode-practice-matchmaking-hint')).not.toBeInTheDocument()
+      expect(screen.queryByTestId('game-mode-daily-matchmaking-hint')).not.toBeInTheDocument()
+      expect(screen.queryByTestId('game-mode-mystery-matchmaking-hint')).not.toBeInTheDocument()
+    })
+
+    it('matchmaking hint icon has hover-tooltip via title attribute', async () => {
+      render(
+        <MemoryRouter>
+          <GameModeGrid userStats={{ currentStreak: 0, totalPoints: 500 }} userTier={2} />
+        </MemoryRouter>
+      )
+      await waitFor(() => {
+        const hint = screen.getByTestId('game-mode-tournament-matchmaking-hint')
+        expect(hint.getAttribute('title')).toBe(
+          'Đối thủ có thể đã chơi lâu hơn bạn — chuẩn bị tinh thần!',
+        )
       })
     })
 

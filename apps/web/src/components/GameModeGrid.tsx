@@ -141,8 +141,11 @@ const CARDS: CardConfig[] = [
     ctaClass: 'bg-error/10 text-error border border-error/20 hover:bg-error hover:text-on-error',
     route: '/tournaments',
     tier: 'secondary',
-    requiredTier: 4,
-    requiredTierNameKey: 'tiers.sage',
+    // Tournament was previously gated at tier 4. Backend never enforced
+    // this — only the UI was hiding it — so the gate is removed for v1
+    // launch (open access). A subtle matchmaking hint on the card warns
+    // the user they may face longer-tenured players. Tier-based seeding
+    // is tracked as a v1.1 follow-up (MATCHMAKING TODO).
   },
   {
     id: 'weekly',
@@ -187,6 +190,14 @@ const CARDS: CardConfig[] = [
     tier: 'discovery',
   },
 ]
+
+/**
+ * Cards where we surface a soft matchmaking hint — these put the user in
+ * a competitive room with strangers, so a tier-1 user may face longer-
+ * tenured players. Rendered as a subtle info icon with a hover tooltip
+ * (no scary modal). Tier-based seeding tracked as MATCHMAKING TODO v1.1.
+ */
+const MATCHMAKING_HINT_MODES = new Set(['tournament', 'multiplayer'])
 
 /* ── Props ── */
 interface GameModeGridProps {
@@ -508,6 +519,17 @@ export default function GameModeGrid({
               {card.icon}
             </span>
             <h4 className={`font-bold text-on-surface ${styles.titleSize}`}>{t(card.titleKey)}</h4>
+            {MATCHMAKING_HINT_MODES.has(card.id) && !isLocked && (
+              <span
+                data-testid={`game-mode-${card.id}-matchmaking-hint`}
+                title={t('home.matchmakingHint')}
+                aria-label={t('home.matchmakingHint')}
+                className="material-symbols-outlined text-sm text-on-surface-variant/70 ml-auto cursor-help"
+                onClick={(e) => e.stopPropagation()}
+              >
+                info
+              </span>
+            )}
           </div>
           <p className={`text-xs text-on-surface-variant ${styles.descLines}`}>{t(card.descKey)}</p>
           {/* Reason text (recommendation) */}
