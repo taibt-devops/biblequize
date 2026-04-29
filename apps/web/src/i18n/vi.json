@@ -787,11 +787,6 @@
       "errorFallback": "Thử Thách Hôm Nay — 5 câu mỗi ngày",
       "retry": "Thử lại"
     },
-    "lockedTeaser": {
-      "title": "ĐANG CHỜ MỞ KHÓA",
-      "progressLabel": "{{current}} / {{target}} XP đến {{tierName}}",
-      "linkText": "Tìm hiểu hệ thống hạng →"
-    },
     "tierPerks": {
       "title": "LÊN HẠNG ĐỂ NHẬN",
       "subtitle": "Khi đạt {{tierName}} ({{xp}} XP), bạn sẽ nhận:",
