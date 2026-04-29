@@ -68,6 +68,17 @@ public class RateLimitingFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
             FilterChain filterChain) throws ServletException, IOException {
 
+        // CORS preflight: browsers fire an OPTIONS request before every
+        // cross-origin call that uses non-simple methods/headers, so each
+        // user action effectively counts as TWO requests against the rate
+        // limit. Preflights carry no auth or business state and Spring's
+        // CORS handler short-circuits them anyway, so excluding them from
+        // the rate limit is both correct and prevents dev-mode lockout.
+        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+
         String clientIp = resolveClientIp(request);
         String requestPath = request.getRequestURI();
 
