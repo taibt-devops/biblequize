@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { useAuthStore } from '../store/authStore'
-import { getTierByPoints } from '../data/tiers'
 import { setQuizLanguage, type QuizLanguage } from '../utils/quizLanguage'
 import { useTranslation } from 'react-i18next'
 import OfflineBanner from '../components/OfflineBanner'
@@ -87,7 +86,6 @@ export default function AppLayout() {
   }
 
   const displayName = user?.name || t('home.defaultName')
-  const displayRole = t(getTierByPoints(user?.totalPoints ?? 0).nameKey)
 
   return (
     <div className="min-h-screen bg-[#11131e] text-[#e1e1f1]">
@@ -187,7 +185,6 @@ export default function AppLayout() {
               </div>
               <div>
                 <p className="font-black text-[#e8a832] text-sm uppercase tracking-widest truncate max-w-[120px]">{displayName}</p>
-                <p className="text-[#e1e1f1]/60 text-xs">{displayRole}</p>
               </div>
             </Link>
           </div>
