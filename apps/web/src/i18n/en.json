@@ -1356,6 +1356,29 @@
     "continue": "Continue"
   },
   "basicQuiz": {
+    "page": {
+      "title": "Bible Basics",
+      "counter": "Question {{current}}/{{total}}",
+      "prev": "Previous",
+      "next": "Next",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "errorTitle": "Couldn't load the quiz",
+      "errorMessage": "Please try again in a moment.",
+      "retryLoad": "Retry",
+      "backHome": "Back to home",
+      "passTitle": "Well done!",
+      "passSubtitle": "You scored {{correct}}/{{total}} — you've passed Bible Basics.",
+      "passUnlock": "Unlocked: Ranked Match",
+      "passCta": "Play Ranked now",
+      "failTitle": "You scored {{correct}}/{{total}} — not enough",
+      "failSubtitle": "At least {{threshold}} correct is required to pass. Review the missed questions below and try again.",
+      "failReview": "Review your wrong answers",
+      "failYourAnswer": "You chose",
+      "failCorrectAnswer": "Correct answer",
+      "failSkipped": "(Skipped)",
+      "cooldownMessage": "Try again in: {{time}}"
+    },
     "card": {
       "passedBadge": "Bible Basics completed",
       "rankedHeader": "Ranked Match",

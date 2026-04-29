@@ -1356,6 +1356,29 @@
     "continue": "Tiếp Tục"
   },
   "basicQuiz": {
+    "page": {
+      "title": "Bài Giáo Lý Căn Bản",
+      "counter": "Câu {{current}}/{{total}}",
+      "prev": "Câu trước",
+      "next": "Câu kế",
+      "submit": "Nộp bài",
+      "submitting": "Đang nộp...",
+      "errorTitle": "Không tải được câu hỏi",
+      "errorMessage": "Vui lòng thử lại sau ít phút.",
+      "retryLoad": "Thử lại",
+      "backHome": "Quay lại trang chủ",
+      "passTitle": "Chúc mừng!",
+      "passSubtitle": "Bạn đã đúng {{correct}}/{{total}} câu — vượt qua Bài Giáo Lý Căn Bản.",
+      "passUnlock": "Đã mở khóa: Thi Đấu Xếp Hạng",
+      "passCta": "Bắt đầu Ranked ngay",
+      "failTitle": "Bạn đúng {{correct}}/{{total}} câu — chưa đủ",
+      "failSubtitle": "Cần đúng tối thiểu {{threshold}} để pass. Hãy ôn lại các câu sai bên dưới rồi thử lại.",
+      "failReview": "Ôn lại câu sai",
+      "failYourAnswer": "Bạn chọn",
+      "failCorrectAnswer": "Đáp án đúng",
+      "failSkipped": "(Bỏ qua)",
+      "cooldownMessage": "Có thể thử lại sau: {{time}}"
+    },
     "card": {
       "passedBadge": "Đã hoàn thành Bài Giáo Lý",
       "rankedHeader": "Thi Đấu Xếp Hạng",

@@ -2942,7 +2942,14 @@ Found 3-layer break: BE has no chat MessageMapping, /ws blocked by Security at h
 - [BasicQuizCard.test.tsx](apps/web/src/components/__tests__/BasicQuizCard.test.tsx) — 8 test cases: 4 states + 2 navigations + cooldown ticker + skeleton
 - FE regression: 1009 tests pass, 100 files (incl. BasicQuizCard.test 8 new); 0 regressions
 - i18n validator: 123 hardcoded / 0 missing → IDENTICAL to baseline before Step 3
-### Step 4: BasicQuiz page (10 Q + result screens) [ ] TODO
+### Step 4: BasicQuiz page (10 Q + result screens) [x] DONE
+- [main.tsx](apps/web/src/main.tsx) — added `/basic-quiz` route inside AppLayout group, wrapped in RequireAuth
+- [BasicQuiz.tsx](apps/web/src/pages/BasicQuiz.tsx) — 10-question MCQ player + result screens (pass / fail with review). No timer, no energy, no streak per spec.
+- Phase machine: loading → playing → submitting → result; live cooldown countdown on fail screen
+- i18n: `basicQuiz.page.*` namespace added (22 keys covering header, prev/next/submit, error path, pass screen, fail review, cooldown msg)
+- [BasicQuiz.test.tsx](apps/web/src/pages/__tests__/BasicQuiz.test.tsx) — 6 cases: render question, submit-disabled until all answered, prev/next preserves answer, pass screen + nav to /ranked, fail screen review, error path with retry
+- FE regression: 1015 tests, 101 files (+6 new tests); 0 regressions
+- i18n validator: 123 hardcoded / 0 missing — IDENTICAL baseline
 ### Step 5: Admin filter + 10-min safeguard on delete [ ] TODO
 ### Step 6: i18n strings + remove old XP-unlock keys [ ] TODO
 ### Step 7: Full regression [ ] TODO

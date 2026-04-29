@@ -22,6 +22,7 @@ import WeeklyQuiz from './pages/WeeklyQuiz'
 import MysteryMode from './pages/MysteryMode'
 import SpeedRound from './pages/SpeedRound'
 import Ranked from './pages/Ranked'
+import BasicQuiz from './pages/BasicQuiz'
 import Rooms from './pages/Rooms'
 import AuthCallback from './pages/AuthCallback'
 import AdminLayout from './layouts/AdminLayout'
@@ -138,6 +139,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                   <Route path="/mystery-mode" element={<RequireAuth><MysteryMode /></RequireAuth>} />
                   <Route path="/speed-round" element={<RequireAuth><SpeedRound /></RequireAuth>} />
                   <Route path="/ranked" element={<Ranked />} />
+                  <Route path="/basic-quiz" element={<RequireAuth><BasicQuiz /></RequireAuth>} />
                   <Route path="/daily" element={<DailyChallenge />} />
                   <Route path="/practice" element={<Practice />} />
                   <Route path="/review" element={<Review />} />
