@@ -21,6 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.biblequiz.modules.quiz.entity.UserQuestionHistory;
 import com.biblequiz.modules.quiz.repository.UserQuestionHistoryRepository;
+import com.biblequiz.infrastructure.exception.BusinessLogicException;
 import com.biblequiz.modules.ranked.service.UserTierService;
 
 import java.time.LocalDateTime;
@@ -76,16 +77,15 @@ public class SessionService {
                 .orElseGet(() -> userRepository.findByEmail(ownerId)
                         .orElseGet(() -> createUserFromPrincipal(ownerId)));
 
-        // Ranked gate: Tier-1 users can only create Ranked sessions if they
-        // have earned the early unlock (≥80% accuracy over 10+ Practice
-        // answers). See updateEarlyRankedUnlockProgress below.
+        // Ranked gate: passing the Bible Basics catechism (≥8/10) is the
+        // single source of truth for unlocking Ranked. Replaces the legacy
+        // XP / practice-accuracy gate (DECISIONS.md 2026-04-29).
+        // The earlyRankedUnlock + practiceCorrect/Total fields remain in
+        // the schema for one release; V32 will drop them.
         if (mode == QuizSession.Mode.ranked) {
-            int totalPoints = userTierService.getTotalPoints(owner.getId());
-            boolean hasEarlyUnlock = Boolean.TRUE.equals(owner.getEarlyRankedUnlock());
-            if (totalPoints < 1_000 && !hasEarlyUnlock) {
-                throw new IllegalStateException(
-                        "Ranked mode requires Tier 2 (1,000 XP) or early-unlock. "
-                                + "Play Practice with ≥80% accuracy over 10+ questions to unlock early.");
+            if (!Boolean.TRUE.equals(owner.getBasicQuizPassed())) {
+                throw new BusinessLogicException(
+                        "Ranked mode is locked. Pass the Bible Basics catechism quiz (≥8/10) to unlock.");
             }
         }
 

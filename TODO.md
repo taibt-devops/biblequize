@@ -2925,7 +2925,16 @@ Found 3-layer break: BE has no chat MessageMapping, /ws blocked by Security at h
 - DB verified: 20 rows seeded (10 vi + 10 en), all `category='bible_basics'`, idempotent (re-seed skips all 20)
 - BE regression: 663 tests, 1 failure + 51 errors — IDENTICAL to Step 1 baseline (all preexisting, none introduced)
 
-### Step 2: BasicQuizService + 3 endpoints + replace Ranked gate [ ] TODO
+### Step 2: BasicQuizService + 3 endpoints + replace Ranked gate [x] DONE
+- [QuestionRepository.java](apps/api/src/main/java/com/biblequiz/modules/quiz/repository/QuestionRepository.java) — added `findByCategoryAndLanguageAndIsActiveTrue` + count variant
+- 4 DTOs in [api/dto/basicquiz/](apps/api/src/main/java/com/biblequiz/api/dto/basicquiz/): Status, Question, Submit, Result responses
+- [BasicQuizCooldownException.java](apps/api/src/main/java/com/biblequiz/modules/quiz/exception/BasicQuizCooldownException.java) extends BusinessLogicException, holds `secondsRemaining`
+- [GlobalExceptionHandler.java](apps/api/src/main/java/com/biblequiz/infrastructure/exception/GlobalExceptionHandler.java) — specific handler returns `secondsRemaining` in body
+- [BasicQuizService.java](apps/api/src/main/java/com/biblequiz/modules/quiz/service/BasicQuizService.java) — getStatus / getQuestions (shuffled, no answers) / submitAttempt (server-side scoring, cooldown enforcement, idempotent on already-passed)
+- [BasicQuizController.java](apps/api/src/main/java/com/biblequiz/api/BasicQuizController.java) — `GET /status`, `GET /questions?language`, `POST /submit`
+- [SessionService.java:79-90](apps/api/src/main/java/com/biblequiz/modules/quiz/service/SessionService.java#L79-L90) — Ranked gate replaced: now checks `basicQuizPassed` only (legacy earlyRankedUnlock fields untouched, dead-but-co-existing until V32)
+- [BasicQuizServiceTest.java](apps/api/src/test/java/com/biblequiz/service/BasicQuizServiceTest.java) — 11 tests cover fresh status, cooldown active, passed, getQuestions happy/incomplete-seed, pass 8/10, perfect 10/10, fail 7/10 with review, cooldown rejection, already-passed rejection, unknown questionId rejection
+- BE regression: 674 tests (+11 new), 1 failure + 51 errors — all preexisting (DuplicateDetectionService cascade, QuestionReviewControllerTest.stats); 0 new failures from Step 2
 ### Step 3: BasicQuizCard FE component (4 states) [ ] TODO
 ### Step 4: BasicQuiz page (10 Q + result screens) [ ] TODO
 ### Step 5: Admin filter + 10-min safeguard on delete [ ] TODO

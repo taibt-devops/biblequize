@@ -17,8 +17,11 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 
+import com.biblequiz.modules.quiz.exception.BasicQuizCooldownException;
+
 import java.time.LocalDateTime;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 @RestControllerAdvice
@@ -44,6 +47,25 @@ public class GlobalExceptionHandler {
                 .build();
         
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
+    }
+
+    /**
+     * Bible Basics catechism cooldown — more specific than the generic
+     * {@link BusinessLogicException} handler below. Includes
+     * {@code secondsRemaining} so the FE can drive a precise countdown
+     * without a round-trip to /status.
+     */
+    @ExceptionHandler(BasicQuizCooldownException.class)
+    public ResponseEntity<Map<String, Object>> handleBasicQuizCooldown(BasicQuizCooldownException ex, WebRequest request) {
+        logger.warn("Basic quiz cooldown: {}", ex.getMessage());
+        Map<String, Object> body = new LinkedHashMap<>();
+        body.put("timestamp", LocalDateTime.now().toString());
+        body.put("status", HttpStatus.BAD_REQUEST.value());
+        body.put("error", "Bible Basics Cooldown");
+        body.put("message", ex.getMessage());
+        body.put("secondsRemaining", ex.getSecondsRemaining());
+        body.put("path", getPath(request));
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(body);
     }
 
     @ExceptionHandler(BusinessLogicException.class)

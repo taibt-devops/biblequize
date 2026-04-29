@@ -168,4 +168,10 @@ public interface QuestionRepository extends JpaRepository<Question, String> {
 
     List<Question> findByBookAndChapterAndLanguageAndIsActiveTrue(
             String book, Integer chapter, String language);
+
+    // Bible Basics catechism quiz lookup (category='bible_basics' identifies
+    // the 10 doctrinal questions that gate Ranked unlock).
+    List<Question> findByCategoryAndLanguageAndIsActiveTrue(String category, String language);
+
+    long countByCategoryAndLanguageAndIsActiveTrue(String category, String language);
 }
