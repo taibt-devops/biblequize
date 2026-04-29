@@ -93,6 +93,21 @@ public class User {
     @Column(name = "early_ranked_unlocked_at")
     private LocalDateTime earlyRankedUnlockedAt;
 
+    // Bible Basics catechism quiz: passing 8/10 permanently unlocks Ranked.
+    // Replaces the XP / practice-accuracy gate (DECISIONS.md 2026-04-29).
+    // Legacy earlyRankedUnlock fields above remain co-existing until V32.
+    @Column(name = "basic_quiz_passed", nullable = false)
+    private Boolean basicQuizPassed = false;
+
+    @Column(name = "basic_quiz_passed_at")
+    private LocalDateTime basicQuizPassedAt;
+
+    @Column(name = "basic_quiz_attempts", nullable = false)
+    private Integer basicQuizAttempts = 0;
+
+    @Column(name = "basic_quiz_last_attempt_at")
+    private LocalDateTime basicQuizLastAttemptAt;
+
     // Comeback Bridge
     @Column(name = "last_active_date")
     private java.time.LocalDate lastActiveDate;
@@ -326,6 +341,18 @@ public class User {
 
     public LocalDateTime getComebackClaimedAt() { return comebackClaimedAt; }
     public void setComebackClaimedAt(LocalDateTime comebackClaimedAt) { this.comebackClaimedAt = comebackClaimedAt; }
+
+    public Boolean getBasicQuizPassed() { return basicQuizPassed; }
+    public void setBasicQuizPassed(Boolean basicQuizPassed) { this.basicQuizPassed = basicQuizPassed; }
+
+    public LocalDateTime getBasicQuizPassedAt() { return basicQuizPassedAt; }
+    public void setBasicQuizPassedAt(LocalDateTime basicQuizPassedAt) { this.basicQuizPassedAt = basicQuizPassedAt; }
+
+    public Integer getBasicQuizAttempts() { return basicQuizAttempts; }
+    public void setBasicQuizAttempts(Integer basicQuizAttempts) { this.basicQuizAttempts = basicQuizAttempts; }
+
+    public LocalDateTime getBasicQuizLastAttemptAt() { return basicQuizLastAttemptAt; }
+    public void setBasicQuizLastAttemptAt(LocalDateTime basicQuizLastAttemptAt) { this.basicQuizLastAttemptAt = basicQuizLastAttemptAt; }
 
     public Boolean getIsBanned() { return isBanned; }
     public void setIsBanned(Boolean banned) { this.isBanned = banned; }

@@ -63,6 +63,11 @@ public class Question {
 
     private String source;
 
+    // 'bible_basics' marks the 10-question catechism that gates Ranked mode.
+    // NULL = regular question. Indexed (idx_questions_category, V31).
+    @Column(length = 50)
+    private String category;
+
     @Column(nullable = false, length = 10)
     private String language = "vi";
 
@@ -279,5 +284,13 @@ public class Question {
 
     public void setApprovalsCount(Integer approvalsCount) {
         this.approvalsCount = approvalsCount;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 }
