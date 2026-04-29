@@ -12,7 +12,17 @@
       "mcp__stitch__*",
       "Bash(curl -s -o /dev/null http://localhost:8080/api/questions/qotd)",
       "Bash(curl -s -o /dev/null http://localhost:5173)",
-      "Bash(curl -s -X POST http://localhost:8080/api/auth/mobile/login -H \"Content-Type: application/json\" -d '{\"email\":\"admin@biblequiz.test\",\"password\":\"Test@123456\"}')"
+      "Bash(curl -s -X POST http://localhost:8080/api/auth/mobile/login -H \"Content-Type: application/json\" -d '{\"email\":\"admin@biblequiz.test\",\"password\":\"Test@123456\"}')",
+      "PowerShell(py *)",
+      "PowerShell(Join-Path *)",
+      "PowerShell($j = Get-Content \"D:\\\\code\\\\biblequize\\\\apps\\\\api\\\\src\\\\main\\\\resources\\\\seed\\\\questions\\\\1corinthians_quiz.json\" -Raw -Encoding UTF8 | ConvertFrom-Json; $j | ForEach-Object { $ve = if \\($_.verseEnd\\) { \"-$\\($_.verseEnd\\)\" } else { \"\" }; \"$\\($_.difficulty.PadRight\\(6\\)\\) $\\($_.chapter\\):$\\($_.verseStart\\)$ve  $\\($_.content.Substring\\(0,[Math]::Min\\(60,$_.content.Length\\)\\)\\)\" })",
+      "PowerShell($j = Get-Content \"D:\\\\code\\\\biblequize\\\\apps\\\\api\\\\src\\\\main\\\\resources\\\\seed\\\\questions\\\\1corinthians_quiz.json\" -Raw -Encoding UTF8 | ConvertFrom-Json; Write-Output \"VI book values:\"; $j | Group-Object -Property book | ForEach-Object { \"  '$\\($_.Name\\)' x$\\($_.Count\\)\" }; Write-Output \"\"; Write-Output \"VI tags first item examples:\"; $j | Select-Object -First 3 | ForEach-Object { \"  $\\($_.tags -join ' | '\\)\" })",
+      "PowerShell($candidates = @\\(\"python\",\"py\",\"python3\"\\); foreach \\($c in $candidates\\) { try { $v = & $c --version 2>&1; if \\($LASTEXITCODE -eq 0\\) { Write-Output \"$c -> $v\"; break } } catch { Write-Output \"$c not found\" } })",
+      "PowerShell(Get-Content *)"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "stitch"
+  ]
 }

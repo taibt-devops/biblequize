@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BibleQuiz Home — Design Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Cinzel:wght@500;600;700&family=Crimson+Pro:ital,wght@0,400;1,400;1,500&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  :root {
+    --bg-deep: #0F1117;
+    --bg-card: rgba(35, 30, 22, 0.7);
+    --bg-card-warm: rgba(45, 35, 20, 0.85);
+    --bg-card-secondary: rgba(255, 255, 255, 0.04);
+    --gold-primary: #D4AF37;
+    --gold-bright: #F4D36E;
+    --gold-deep: #8B6914;
+    --gold-gradient: linear-gradient(135deg, #F4D36E 0%, #D4AF37 50%, #8B6914 100%);
+    --text-primary: #F5F0E8;
+    --text-muted: #A89F8E;
+    --text-dim: #6B6358;
+    --border-subtle: rgba(212, 175, 55, 0.18);
+    --border-medium: rgba(212, 175, 55, 0.25);
+    --border-strong: rgba(212, 175, 55, 0.4);
+  }
+  
+  body {
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    min-height: 100vh;
+    padding: 0;
+  }
+  
+  /* TOP NAV — Variation switcher */
+  .design-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(15, 17, 23, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 16px 24px;
+  }
+  
+  .design-nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .design-nav h1 {
+    font-size: 18px;
+    color: var(--gold-primary);
+    font-weight: 700;
+  }
+  
+  .design-nav-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .design-tab {
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    color: var(--text-muted);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .design-tab:hover {
+    border-color: var(--border-medium);
+    color: var(--text-primary);
+  }
+  
+  .design-tab.active {
+    background: var(--gold-gradient);
+    color: #1a1a1a;
+    border-color: var(--gold-primary);
+    font-weight: 600;
+  }
+  
+  .info-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    background: rgba(212, 175, 55, 0.05);
+    border-radius: 12px;
+    margin-top: 16px;
+    border-left: 3px solid var(--gold-primary);
+  }
+  
+  .info-bar h2 {
+    font-size: 16px;
+    color: var(--gold-primary);
+    margin-bottom: 4px;
+  }
+  
+  .info-bar p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  
+  /* DESIGN CONTAINER */
+  .design-container {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 24px 80px;
+  }
+  
+  .variation {
+    display: none;
+  }
+  
+  .variation.active {
+    display: block;
+  }
+  
+  /* ============================================
+     SHARED STYLES (used by all variations)
+     ============================================ */
+  
+  .row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 16px 0;
+  }
+  
+  .row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 16px 0;
+  }
+  
+  /* ============================================
+     VARIATION 1: CURRENT STATE (Baseline)
+     ============================================ */
+  
+  .v1-hero {
+    background: rgba(40, 42, 52, 0.6);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .v1-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+    border: 2px solid rgba(212,175,55,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    flex-shrink: 0;
+  }
+  
+  .v1-greeting { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .v1-tier-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--gold-primary); margin-bottom: 12px; }
+  .v1-progress-bar { height: 6px; background: rgba(255,255,255,0.08); border-radius: 3px; margin-bottom: 4px; overflow: hidden; }
+  .v1-progress-fill { width: 8.1%; height: 100%; background: var(--gold-gradient); }
+  .v1-progress-label { font-size: 12px; color: var(--text-muted); }
+  
+  .v1-verse {
+    border-left: 4px solid var(--gold-primary);
+    padding: 16px 20px;
+    background: rgba(255,255,255,0.02);
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  .v1-verse-text { font-style: italic; font-size: 16px; line-height: 1.6; margin-bottom: 8px; }
+  .v1-verse-ref { font-size: 11px; color: var(--gold-primary); letter-spacing: 1px; font-weight: 600; }
+  
+  .v1-daily {
+    background: rgba(35, 30, 22, 0.7);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+  .v1-daily-label { font-size: 11px; letter-spacing: 1.5px; color: var(--gold-primary); margin-bottom: 12px; font-weight: 600; }
+  .v1-daily-title { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+  .v1-daily-books { font-size: 14px; color: var(--gold-primary); margin-bottom: 12px; opacity: 0.9; }
+  .v1-daily-meta { font-size: 13px; color: var(--text-muted); margin-bottom: 16px; }
+  .v1-cta-big {
+    background: var(--gold-gradient);
+    color: #1a1a1a;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  .v1-card {
+    background: rgba(35, 32, 28, 0.6);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 24px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+  .v1-card-icon { font-size: 36px; margin-bottom: 12px; }
+  .v1-card-title { font-size: 22px; font-weight: 700; margin-bottom: 8px; letter-spacing: 0.5px; }
+  .v1-card-desc { font-size: 14px; color: var(--text-muted); margin-bottom: auto; line-height: 1.5; }
+  .v1-card-cta { background: var(--gold-gradient); color: #1a1a1a; border: none; padding: 12px; border-radius: 8px; font-weight: 700; cursor: pointer; margin-top: 16px; font-family: inherit; }
+  
+  .v1-secondary {
+    background: var(--bg-card-secondary);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .v1-secondary:hover { border-color: var(--border-medium); }
+  .v1-sec-icon { font-size: 24px; margin-bottom: 6px; }
+  .v1-sec-title { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+  .v1-sec-sub { font-size: 11px; color: var(--text-muted); }
+  
+  /* ============================================
+     VARIATION 2: SACRED MINIMALIST
+     ============================================ */
+  
+  .v2-hero {
+    background: linear-gradient(135deg, rgba(35,30,22,0.7), rgba(25,22,18,0.5));
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .v2-greeting { font-size: 24px; font-weight: 500; color: var(--text-primary); margin-bottom: 8px; font-family: 'Crimson Pro', serif; }
+  .v2-tier-text { font-size: 13px; letter-spacing: 2px; color: var(--gold-primary); text-transform: uppercase; margin-bottom: 24px; }
+  .v2-progress-wrap { max-width: 360px; margin: 0 auto; }
+  .v2-progress-bar { height: 4px; background: rgba(212,175,55,0.1); border-radius: 2px; margin-bottom: 8px; overflow: hidden; }
+  .v2-progress-fill { width: 8.1%; height: 100%; background: var(--gold-gradient); }
+  .v2-progress-label { font-size: 12px; color: var(--text-muted); }
+  
+  .v2-verse {
+    text-align: center;
+    padding: 32px 24px;
+    margin-bottom: 32px;
+  }
+  .v2-divider {
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+    color: rgba(212,175,55,0.4); margin-bottom: 24px;
+  }
+  .v2-divider-line { flex: 0 0 80px; height: 1px; background: linear-gradient(90deg, transparent, rgba(212,175,55,0.4)); }
+  .v2-divider-line.right { background: linear-gradient(90deg, rgba(212,175,55,0.4), transparent); }
+  .v2-verse-text {
+    font-family: 'Crimson Pro', serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    max-width: 600px;
+    margin: 0 auto 16px;
+  }
+  .v2-verse-ref { font-size: 12px; letter-spacing: 2px; color: var(--gold-primary); font-weight: 600; text-transform: uppercase; margin-bottom: 24px; }
+  .v2-divider.bottom { margin-top: 24px; margin-bottom: 0; }
+  
+  .v2-daily {
+    background: rgba(40, 32, 18, 0.5);
+    border: 1px solid var(--border-medium);
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .v2-daily-label { font-size: 11px; letter-spacing: 3px; color: var(--gold-primary); margin-bottom: 16px; font-weight: 600; text-transform: uppercase; }
+  .v2-daily-title { font-size: 26px; font-weight: 500; margin-bottom: 12px; font-family: 'Crimson Pro', serif; }
+  .v2-daily-books { font-size: 13px; color: var(--gold-primary); margin-bottom: 20px; opacity: 0.85; letter-spacing: 0.5px; }
+  .v2-daily-meta { font-size: 12px; color: var(--text-muted); margin-bottom: 24px; letter-spacing: 1px; }
+  .v2-cta-big {
+    background: transparent;
+    color: var(--gold-primary);
+    border: 1px solid var(--gold-primary);
+    padding: 14px 32px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+  .v2-cta-big:hover { background: var(--gold-primary); color: #1a1a1a; }
+  
+  .v2-card {
+    background: rgba(30, 28, 25, 0.5);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 32px 24px;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  .v2-card:hover { border-color: var(--border-medium); }
+  .v2-card-icon-wrap { width: 60px; height: 60px; border-radius: 50%; border: 1px solid var(--gold-primary); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+  .v2-card-icon { font-size: 28px; }
+  .v2-card-title { font-size: 18px; font-weight: 500; margin-bottom: 12px; letter-spacing: 1.5px; text-transform: uppercase; }
+  .v2-card-desc { font-size: 13px; color: var(--text-muted); margin-bottom: auto; line-height: 1.6; max-width: 240px; }
+  .v2-card-cta {
+    background: transparent;
+    color: var(--gold-primary);
+    border: 1px solid var(--gold-primary);
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: inherit;
+    text-transform: uppercase;
+  }
+  
+  /* ============================================
+     VARIATION 3: STAT SHEET (RPG inspired)
+     ============================================ */
+  
+  .v3-hero {
+    background: linear-gradient(135deg, rgba(45,35,20,0.85), rgba(28,25,22,0.7));
+    border: 1px solid var(--border-medium);
+    border-radius: 16px;
+    padding: 24px 28px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 1px 0 rgba(255,220,100,0.08), 0 4px 24px rgba(0,0,0,0.3);
+  }
+  
+  .v3-hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 240px; height: 240px;
+    background: radial-gradient(circle, rgba(212,175,55,0.08) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  
+  .v3-avatar {
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    background: rgba(212,175,55,0.1);
+    border: 2px solid var(--border-strong);
+    box-shadow: 0 0 24px rgba(212,175,55,0.15), inset 0 0 12px rgba(255,240,200,0.08);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px;
+    color: var(--gold-primary);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .v3-content { flex: 1; position: relative; z-index: 1; }
+  .v3-greeting { font-size: 20px; font-weight: 700; margin-bottom: 4px; font-family: 'Sora', sans-serif; }
+  .v3-tier-label { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: var(--gold-primary); font-weight: 600; margin-bottom: 14px; }
+  .v3-divider-line { height: 1px; background: linear-gradient(90deg, transparent, rgba(212,175,55,0.3) 20%, rgba(212,175,55,0.3) 80%, transparent); margin-bottom: 16px; }
+  
+  .v3-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    margin-bottom: 16px;
+  }
+  
+  .v3-stat-cell {
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid rgba(212,175,55,0.15);
+  }
+  .v3-stat-cell:last-child { border-right: none; }
+  .v3-stat-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: rgba(245,240,232,0.5); margin-bottom: 4px; font-weight: 600; }
+  .v3-stat-value { font-size: 22px; font-weight: 700; color: var(--text-primary); font-variant-numeric: tabular-nums; font-family: 'Sora', sans-serif; }
+  .v3-stat-value.fire { color: #ff8c42; }
+  
+  .v3-progress-bar { height: 6px; background: rgba(212,175,55,0.08); border-radius: 3px; margin-bottom: 6px; overflow: hidden; }
+  .v3-progress-fill { width: 8.1%; height: 100%; background: var(--gold-gradient); box-shadow: 0 0 8px rgba(212,175,55,0.4); }
+  .v3-progress-label { font-size: 11px; color: var(--text-muted); }
+  
+  .v3-verse {
+    text-align: center;
+    padding: 24px 20px;
+    margin-bottom: 16px;
+  }
+  .v3-verse-divider { display: flex; align-items: center; justify-content: center; gap: 12px; color: rgba(212,175,55,0.5); margin-bottom: 16px; }
+  .v3-verse-divider-line { flex: 0 0 60px; height: 1px; background: linear-gradient(90deg, transparent, rgba(212,175,55,0.4)); }
+  .v3-verse-divider-line.right { background: linear-gradient(90deg, rgba(212,175,55,0.4), transparent); }
+  .v3-verse-divider-ornament { font-size: 12px; color: rgba(212,175,55,0.6); }
+  .v3-verse-text { font-family: 'Crimson Pro', serif; font-style: italic; font-size: 18px; line-height: 1.6; max-width: 580px; margin: 0 auto 12px; color: var(--text-primary); }
+  .v3-verse-ref { font-size: 11px; letter-spacing: 2px; color: var(--gold-primary); font-weight: 600; text-transform: uppercase; margin-bottom: 16px; }
+  
+  .v3-daily {
+    background: linear-gradient(135deg, rgba(45,35,20,0.85), rgba(30,28,25,0.7));
+    border: 1px solid var(--border-medium);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 1px 0 rgba(255,220,100,0.08), 0 8px 32px rgba(0,0,0,0.4);
+  }
+  .v3-daily::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(212,175,55,0.08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  
+  .v3-daily-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; position: relative; z-index: 1; }
+  .v3-daily-icon { color: var(--gold-primary); font-size: 18px; }
+  .v3-daily-label { font-size: 12px; letter-spacing: 2px; color: var(--gold-primary); font-weight: 600; text-transform: uppercase; }
+  .v3-daily-title { font-size: 26px; font-weight: 700; margin-bottom: 8px; font-family: 'Sora', sans-serif; position: relative; z-index: 1; }
+  .v3-daily-books { font-size: 14px; color: var(--gold-primary); margin-bottom: 12px; opacity: 0.9; position: relative; z-index: 1; }
+  .v3-daily-meta { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; position: relative; z-index: 1; }
+  .v3-daily-countdown { font-size: 12px; color: var(--text-muted); margin-bottom: 16px; position: relative; z-index: 1; }
+  
+  .v3-cta-big {
+    background: var(--gold-gradient);
+    color: #1a1a1a;
+    border: none;
+    width: 100%;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 20px rgba(212,175,55,0.2);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.2s;
+  }
+  .v3-cta-big:hover { transform: translateY(-2px); }
+  
+  .v3-section-label { font-size: 16px; font-weight: 600; margin: 24px 0 12px; font-family: 'Sora', sans-serif; }
+  
+  .v3-card {
+    background: linear-gradient(135deg, rgba(35,32,28,0.85), rgba(28,26,24,0.7));
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 24px;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 1px 0 rgba(255,240,200,0.05), 0 4px 24px rgba(0,0,0,0.3);
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  }
+  .v3-card.ranked {
+    background: linear-gradient(135deg, rgba(40,30,25,0.85), rgba(30,25,22,0.7));
+    border-color: var(--border-medium);
+    box-shadow: inset 0 1px 0 rgba(255,240,200,0.06), 0 4px 28px rgba(0,0,0,0.35), 0 0 24px rgba(212,175,55,0.04);
+  }
+  .v3-card::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: -60px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(212,175,55,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .v3-card.ranked::before { left: auto; right: -80px; top: -80px; width: 240px; height: 240px; background: radial-gradient(circle, rgba(212,175,55,0.1) 0%, transparent 65%); }
+  .v3-card:hover { transform: translateY(-3px); border-color: var(--border-strong); }
+  
+  .v3-card-content { position: relative; z-index: 1; display: flex; flex-direction: column; flex: 1; }
+  .v3-card-icon-wrap { display: inline-flex; padding: 12px; background: rgba(212,175,55,0.08); border: 1px solid var(--border-subtle); border-radius: 12px; align-self: flex-start; margin-bottom: 16px; box-shadow: 0 0 16px rgba(212,175,55,0.1); }
+  .v3-card-icon { font-size: 32px; }
+  .v3-card-title { font-size: 22px; font-weight: 700; margin-bottom: 8px; letter-spacing: 0.5px; font-family: 'Sora', sans-serif; }
+  .v3-card-desc { font-size: 14px; color: var(--text-muted); line-height: 1.5; margin-bottom: 16px; }
+  .v3-card-status { font-size: 13px; color: var(--gold-primary); margin-bottom: auto; display: flex; align-items: center; gap: 6px; }
+  .v3-card-cta { background: var(--gold-gradient); color: #1a1a1a; border: none; padding: 12px; border-radius: 8px; font-weight: 700; cursor: pointer; margin-top: 16px; font-family: inherit; letter-spacing: 0.5px; }
+  
+  .v3-secondary {
+    background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.03), 0 2px 12px rgba(0,0,0,0.2);
+  }
+  .v3-secondary:hover { transform: translateY(-1px); border-color: var(--border-medium); background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)); }
+  .v3-sec-icon { font-size: 26px; margin-bottom: 6px; }
+  .v3-sec-title { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+  .v3-sec-sub { font-size: 11px; color: var(--text-muted); letter-spacing: 0.5px; }
+  
+  /* ============================================
+     VARIATION 4: GAMING HEAVY (Full RPG)
+     ============================================ */
+  
+  .v4-hero {
+    background: linear-gradient(135deg, rgba(45,35,20,0.9), rgba(20,18,15,0.85));
+    border: 2px solid var(--gold-primary);
+    border-radius: 8px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 16px;
+    box-shadow: 0 0 40px rgba(212,175,55,0.15), inset 0 1px 0 rgba(255,220,100,0.15);
+  }
+  
+  .v4-hero-corners {
+    position: absolute;
+    inset: 8px;
+    border: 1px solid rgba(212,175,55,0.2);
+    pointer-events: none;
+  }
+  .v4-hero-corner { position: absolute; width: 20px; height: 20px; }
+  .v4-hero-corner.tl { top: -1px; left: -1px; border-top: 2px solid var(--gold-primary); border-left: 2px solid var(--gold-primary); }
+  .v4-hero-corner.tr { top: -1px; right: -1px; border-top: 2px solid var(--gold-primary); border-right: 2px solid var(--gold-primary); }
+  .v4-hero-corner.bl { bottom: -1px; left: -1px; border-bottom: 2px solid var(--gold-primary); border-left: 2px solid var(--gold-primary); }
+  .v4-hero-corner.br { bottom: -1px; right: -1px; border-bottom: 2px solid var(--gold-primary); border-right: 2px solid var(--gold-primary); }
+  
+  .v4-hero-inner { display: flex; gap: 20px; align-items: center; position: relative; z-index: 1; }
+  
+  .v4-avatar-wrap { position: relative; flex-shrink: 0; }
+  .v4-avatar {
+    width: 90px; height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(212,175,55,0.15), rgba(140,90,30,0.2));
+    border: 3px solid var(--gold-primary);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 40px;
+    box-shadow: 0 0 20px rgba(212,175,55,0.3), inset 0 0 16px rgba(255,240,200,0.1);
+  }
+  .v4-avatar-rank {
+    position: absolute;
+    bottom: -6px; right: -6px;
+    background: var(--gold-gradient);
+    color: #1a1a1a;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    border: 2px solid var(--bg-deep);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+  
+  .v4-content { flex: 1; }
+  .v4-greeting { font-size: 22px; font-weight: 700; font-family: 'Cinzel', serif; margin-bottom: 4px; }
+  .v4-tier-label { font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: var(--gold-primary); font-weight: 600; margin-bottom: 16px; }
+  
+  .v4-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .v4-stat-cell {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(212,175,55,0.2);
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-align: center;
+  }
+  .v4-stat-label { font-size: 9px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gold-primary); margin-bottom: 4px; font-weight: 600; opacity: 0.8; }
+  .v4-stat-value { font-size: 18px; font-weight: 700; color: var(--text-primary); font-family: 'Sora', sans-serif; }
+  
+  .v4-progress-wrap { display: flex; align-items: center; gap: 12px; }
+  .v4-progress-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid rgba(212,175,55,0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  .v4-progress-fill {
+    width: 8.1%; height: 100%;
+    background: var(--gold-gradient);
+    box-shadow: 0 0 12px rgba(212,175,55,0.5);
+    position: relative;
+  }
+  .v4-progress-fill::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shimmer 3s infinite;
+  }
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+  }
+  .v4-progress-label { font-size: 11px; color: var(--text-muted); white-space: nowrap; }
+  
+  .v4-verse {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 16px;
+    background: rgba(20,18,15,0.4);
+    border-top: 1px solid rgba(212,175,55,0.15);
+    border-bottom: 1px solid rgba(212,175,55,0.15);
+  }
+  .v4-verse-text { font-family: 'Crimson Pro', serif; font-style: italic; font-size: 17px; line-height: 1.6; max-width: 580px; margin: 0 auto 8px; }
+  .v4-verse-ref { font-size: 11px; letter-spacing: 2px; color: var(--gold-primary); font-weight: 600; text-transform: uppercase; }
+  
+  .v4-daily {
+    background: linear-gradient(135deg, rgba(50,40,25,0.9), rgba(20,18,15,0.85));
+    border: 2px solid var(--gold-primary);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 32px rgba(212,175,55,0.12);
+  }
+  .v4-daily::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 60%;
+    background: radial-gradient(ellipse at top, rgba(212,175,55,0.15), transparent 70%);
+    pointer-events: none;
+  }
+  .v4-daily-badge {
+    position: absolute;
+    top: 12px; right: 12px;
+    background: var(--gold-gradient);
+    color: #1a1a1a;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .v4-daily-label { font-size: 11px; letter-spacing: 3px; color: var(--gold-primary); font-weight: 600; text-transform: uppercase; margin-bottom: 12px; position: relative; z-index: 1; }
+  .v4-daily-title { font-size: 26px; font-weight: 700; font-family: 'Cinzel', serif; margin-bottom: 12px; position: relative; z-index: 1; }
+  .v4-daily-books { font-size: 13px; color: var(--gold-primary); margin-bottom: 16px; position: relative; z-index: 1; }
+  
+  .v4-daily-stats { display: flex; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; position: relative; z-index: 1; }
+  .v4-daily-stat { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); padding: 6px 12px; background: rgba(0,0,0,0.3); border: 1px solid rgba(212,175,55,0.15); border-radius: 4px; }
+  .v4-daily-stat strong { color: var(--gold-primary); font-weight: 700; }
+  
+  .v4-cta-big {
+    background: var(--gold-gradient);
+    color: #1a1a1a;
+    border: none;
+    width: 100%;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 20px rgba(212,175,55,0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+    position: relative;
+    z-index: 1;
+    transition: all 0.2s;
+  }
+  .v4-cta-big:hover { transform: translateY(-2px); box-shadow: 0 6px 28px rgba(212,175,55,0.4); }
+  
+  .v4-card {
+    background: linear-gradient(135deg, rgba(35,30,22,0.9), rgba(20,18,15,0.85));
+    border: 1px solid var(--border-medium);
+    border-radius: 8px;
+    padding: 24px;
+    min-height: 260px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    box-shadow: inset 0 1px 0 rgba(255,220,100,0.08);
+  }
+  .v4-card.ranked {
+    border: 2px solid var(--gold-primary);
+    box-shadow: 0 0 24px rgba(212,175,55,0.15), inset 0 1px 0 rgba(255,220,100,0.1);
+  }
+  .v4-card-corners { position: absolute; inset: 4px; pointer-events: none; }
+  .v4-card-corner { position: absolute; width: 12px; height: 12px; }
+  .v4-card-corner.tl { top: -1px; left: -1px; border-top: 1px solid var(--gold-primary); border-left: 1px solid var(--gold-primary); }
+  .v4-card-corner.tr { top: -1px; right: -1px; border-top: 1px solid var(--gold-primary); border-right: 1px solid var(--gold-primary); }
+  .v4-card-corner.bl { bottom: -1px; left: -1px; border-bottom: 1px solid var(--gold-primary); border-left: 1px solid var(--gold-primary); }
+  .v4-card-corner.br { bottom: -1px; right: -1px; border-bottom: 1px solid var(--gold-primary); border-right: 1px solid var(--gold-primary); }
+  
+  .v4-card-content { position: relative; z-index: 1; display: flex; flex-direction: column; height: 100%; }
+  .v4-card-icon-wrap {
+    display: inline-flex;
+    width: 56px; height: 56px;
+    align-items: center; justify-content: center;
+    background: rgba(212,175,55,0.1);
+    border: 1px solid var(--border-medium);
+    border-radius: 6px;
+    box-shadow: 0 0 16px rgba(212,175,55,0.15), inset 0 0 8px rgba(255,240,200,0.1);
+    margin-bottom: 16px;
+    align-self: flex-start;
+  }
+  .v4-card-icon { font-size: 28px; }
+  .v4-card-title { font-size: 22px; font-weight: 700; font-family: 'Cinzel', serif; margin-bottom: 8px; letter-spacing: 1px; }
+  .v4-card-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 12px; }
+  
+  .v4-card-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(63, 166, 113, 0.15);
+    border: 1px solid rgba(63, 166, 113, 0.4);
+    color: #5cb98a;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    align-self: flex-start;
+  }
+  
+  .v4-card-meta { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted); margin-bottom: auto; }
+  
+  .v4-card-cta {
+    background: var(--gold-gradient);
+    color: #1a1a1a;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 16px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    box-shadow: 0 2px 12px rgba(212,175,55,0.2);
+  }
+  
+  .v4-secondary {
+    background: linear-gradient(135deg, rgba(35,32,28,0.6), rgba(20,18,15,0.4));
+    border: 1px solid rgba(212,175,55,0.12);
+    border-radius: 6px;
+    padding: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+  }
+  .v4-secondary:hover {
+    border-color: var(--border-strong);
+    background: linear-gradient(135deg, rgba(45,38,22,0.7), rgba(25,22,18,0.5));
+    transform: translateY(-2px);
+  }
+  .v4-sec-icon-wrap { display: inline-flex; width: 32px; height: 32px; align-items: center; justify-content: center; background: rgba(212,175,55,0.1); border-radius: 4px; margin-bottom: 8px; }
+  .v4-sec-icon { font-size: 18px; }
+  .v4-sec-title { font-size: 14px; font-weight: 700; margin-bottom: 2px; font-family: 'Cinzel', serif; letter-spacing: 0.5px; }
+  .v4-sec-sub { font-size: 11px; color: var(--text-muted); letter-spacing: 0.3px; }
+</style>
+</head>
+<body>
+
+<nav class="design-nav">
+  <div class="design-nav-inner">
+    <h1>BibleQuiz Design Studio</h1>
+    <div class="design-nav-tabs">
+      <button class="design-tab active" data-variation="v1">1. Hiện tại (Baseline)</button>
+      <button class="design-tab" data-variation="v2">2. Sacred Minimalist</button>
+      <button class="design-tab" data-variation="v3">3. Stat Sheet (Khuyên dùng)</button>
+      <button class="design-tab" data-variation="v4">4. Gaming Heavy</button>
+    </div>
+  </div>
+</nav>
+
+<div class="design-container">
+  <div id="info-bar" class="info-bar">
+    <h2 id="info-title">1. Hiện tại — Baseline</h2>
+    <p id="info-desc">Trạng thái hiện tại của app sau các round polish vừa rồi. Sạch, focus, nhưng có thể trông hơi flat.</p>
+  </div>
+
+  <!-- ============================================
+       VARIATION 1: CURRENT BASELINE
+       ============================================ -->
+  <div class="variation active" data-variation="v1">
+    
+    <div class="v1-hero">
+      <div class="v1-avatar">🌱</div>
+      <div style="flex:1">
+        <div class="v1-greeting">Chào buổi chiều, TAI THANH!</div>
+        <div class="v1-tier-label">TÂN TÍN HỮU • TIER 1</div>
+        <div class="v1-progress-bar"><div class="v1-progress-fill"></div></div>
+        <div class="v1-progress-label">81 / 1,000 điểm — Còn 919 điểm đến Người Tìm Kiếm</div>
+      </div>
+    </div>
+    
+    <div class="v1-verse">
+      <div class="v1-verse-text">"Hãy vui vẻ trong sự trông cậy, nhịn nhục trong sự hoạn nạn, bền lòng mà cầu nguyện."</div>
+      <div class="v1-verse-ref">RÔ-MA 12:12</div>
+    </div>
+    
+    <div class="v1-daily">
+      <div class="v1-daily-label">📅 THỬ THÁCH HÔM NAY</div>
+      <div class="v1-daily-title">🌍 Hành trình qua 5 sách</div>
+      <div class="v1-daily-books">A-mốt • 2 Giăng • Ê-sai • 1 Cô-rinh-tô • Châm Ngôn</div>
+      <div class="v1-daily-meta">5 câu • 5 phút • +50 XP • Thử thách mới sau 19:30:38</div>
+      <button class="v1-cta-big">▶ BẮT ĐẦU HÔM NAY</button>
+    </div>
+    
+    <div class="row-2">
+      <div class="v1-card">
+        <div class="v1-card-icon">📖</div>
+        <div class="v1-card-title">LUYỆN TẬP</div>
+        <div class="v1-card-desc">Học không áp lực, không giới hạn thời gian.</div>
+        <button class="v1-card-cta">▶ Bắt đầu</button>
+      </div>
+      <div class="v1-card">
+        <div class="v1-card-icon">🎯</div>
+        <div class="v1-card-title">THI ĐẤU RANKED</div>
+        <div class="v1-card-desc">Tranh tài trực tiếp, kiếm điểm rank lớn.</div>
+        <div style="font-size:13px;color:var(--gold-primary);margin-bottom:8px;">✓ Đã mở khóa</div>
+        <button class="v1-card-cta">▶ Bắt đầu Ranked</button>
+      </div>
+    </div>
+    
+    <div class="row-3">
+      <div class="v1-secondary"><div class="v1-sec-icon">👥</div><div class="v1-sec-title">Nhóm Giáo Xứ</div><div class="v1-sec-sub">Hội thánh</div></div>
+      <div class="v1-secondary"><div class="v1-sec-icon">🎮</div><div class="v1-sec-title">Phòng Chơi</div><div class="v1-sec-sub">2-20 người</div></div>
+      <div class="v1-secondary"><div class="v1-sec-icon">🏆</div><div class="v1-sec-title">Giải Đấu</div><div class="v1-sec-sub">Bracket 1v1</div></div>
+    </div>
+    <div class="row-3">
+      <div class="v1-secondary"><div class="v1-sec-icon">🗓️</div><div class="v1-sec-title">Chủ Đề Tuần</div><div class="v1-sec-sub">Chủ đề tuần</div></div>
+      <div class="v1-secondary"><div class="v1-sec-icon">🎲</div><div class="v1-sec-title">Mystery Mode</div><div class="v1-sec-sub">Random hoàn toàn</div></div>
+      <div class="v1-secondary"><div class="v1-sec-icon">⚡</div><div class="v1-sec-title">Speed Round</div><div class="v1-sec-sub">10 câu × 10s</div></div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       VARIATION 2: SACRED MINIMALIST
+       ============================================ -->
+  <div class="variation" data-variation="v2">
+    
+    <div class="v2-hero">
+      <div class="v2-greeting">Chào buổi chiều, Tai Thanh</div>
+      <div class="v2-tier-text">Tân Tín Hữu</div>
+      <div class="v2-progress-wrap">
+        <div class="v2-progress-bar"><div class="v2-progress-fill"></div></div>
+        <div class="v2-progress-label">81 / 1,000 điểm</div>
+      </div>
+    </div>
+    
+    <div class="v2-verse">
+      <div class="v2-divider">
+        <span class="v2-divider-line"></span>
+        <span style="font-size:14px;">✦</span>
+        <span class="v2-divider-line right"></span>
+      </div>
+      <div class="v2-verse-text">"Hãy vui vẻ trong sự trông cậy, nhịn nhục trong sự hoạn nạn, bền lòng mà cầu nguyện."</div>
+      <div class="v2-verse-ref">Rô-ma 12:12</div>
+      <div class="v2-divider bottom">
+        <span class="v2-divider-line"></span>
+        <span style="font-size:14px;">✦</span>
+        <span class="v2-divider-line right"></span>
+      </div>
+    </div>
+    
+    <div class="v2-daily">
+      <div class="v2-daily-label">Thử thách hôm nay</div>
+      <div class="v2-daily-title">Hành trình qua 5 sách</div>
+      <div class="v2-daily-books">A-mốt · 2 Giăng · Ê-sai · 1 Cô-rinh-tô · Châm Ngôn</div>
+      <div class="v2-daily-meta">5 câu · 5 phút · +50 XP</div>
+      <button class="v2-cta-big">Bắt đầu</button>
+    </div>
+    
+    <div class="row-2">
+      <div class="v2-card">
+        <div class="v2-card-icon-wrap"><div class="v2-card-icon">📖</div></div>
+        <div class="v2-card-title">Luyện Tập</div>
+        <div class="v2-card-desc">Học không áp lực, không giới hạn thời gian.</div>
+        <button class="v2-card-cta">Bắt đầu</button>
+      </div>
+      <div class="v2-card">
+        <div class="v2-card-icon-wrap"><div class="v2-card-icon">🎯</div></div>
+        <div class="v2-card-title">Thi Đấu</div>
+        <div class="v2-card-desc">Tranh tài trực tiếp, kiếm điểm rank lớn.</div>
+        <button class="v2-card-cta">Bắt đầu</button>
+      </div>
+    </div>
+    
+    <div class="row-3">
+      <div class="v2-card" style="min-height:140px;padding:20px;"><div class="v2-card-icon-wrap" style="width:44px;height:44px;"><div class="v2-card-icon" style="font-size:20px;">👥</div></div><div class="v2-card-title" style="font-size:14px;">Nhóm</div></div>
+      <div class="v2-card" style="min-height:140px;padding:20px;"><div class="v2-card-icon-wrap" style="width:44px;height:44px;"><div class="v2-card-icon" style="font-size:20px;">🎮</div></div><div class="v2-card-title" style="font-size:14px;">Phòng Chơi</div></div>
+      <div class="v2-card" style="min-height:140px;padding:20px;"><div class="v2-card-icon-wrap" style="width:44px;height:44px;"><div class="v2-card-icon" style="font-size:20px;">🏆</div></div><div class="v2-card-title" style="font-size:14px;">Giải Đấu</div></div>
+    </div>
+    <div class="row-3">
+      <div class="v2-card" style="min-height:140px;padding:20px;"><div class="v2-card-icon-wrap" style="width:44px;height:44px;"><div class="v2-card-icon" style="font-size:20px;">🗓️</div></div><div class="v2-card-title" style="font-size:14px;">Tuần</div></div>
+      <div class="v2-card" style="min-height:140px;padding:20px;"><div class="v2-card-icon-wrap" style="width:44px;height:44px;"><div class="v2-card-icon" style="font-size:20px;">🎲</div></div><div class="v2-card-title" style="font-size:14px;">Mystery</div></div>
+      <div class="v2-card" style="min-height:140px;padding:20px;"><div class="v2-card-icon-wrap" style="width:44px;height:44px;"><div class="v2-card-icon" style="font-size:20px;">⚡</div></div><div class="v2-card-title" style="font-size:14px;">Speed</div></div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       VARIATION 3: STAT SHEET (RECOMMENDED)
+       ============================================ -->
+  <div class="variation" data-variation="v3">
+    
+    <div class="v3-hero">
+      <div class="v3-avatar">🌱</div>
+      <div class="v3-content">
+        <div class="v3-greeting">Chào buổi chiều, TAI THANH!</div>
+        <div class="v3-tier-label">TÂN TÍN HỮU • TIER 1</div>
+        <div class="v3-divider-line"></div>
+        <div class="v3-stats-grid">
+          <div class="v3-stat-cell">
+            <div class="v3-stat-label">Streak</div>
+            <div class="v3-stat-value">0 ngày</div>
+          </div>
+          <div class="v3-stat-cell">
+            <div class="v3-stat-label">Điểm</div>
+            <div class="v3-stat-value">81</div>
+          </div>
+          <div class="v3-stat-cell">
+            <div class="v3-stat-label">Tier</div>
+            <div class="v3-stat-value">1</div>
+          </div>
+        </div>
+        <div class="v3-progress-bar"><div class="v3-progress-fill"></div></div>
+        <div class="v3-progress-label">★ ☆ ☆ ☆ ☆ &nbsp; Còn 919 điểm đến Người Tìm Kiếm</div>
+      </div>
+    </div>
+    
+    <div class="v3-verse">
+      <div class="v3-verse-divider">
+        <span class="v3-verse-divider-line"></span>
+        <span class="v3-verse-divider-ornament">✦</span>
+        <span class="v3-verse-divider-line right"></span>
+      </div>
+      <div class="v3-verse-text">"Hãy vui vẻ trong sự trông cậy, nhịn nhục trong sự hoạn nạn, bền lòng mà cầu nguyện."</div>
+      <div class="v3-verse-ref">Rô-ma 12:12</div>
+      <div class="v3-verse-divider">
+        <span class="v3-verse-divider-line"></span>
+        <span class="v3-verse-divider-ornament">✦</span>
+        <span class="v3-verse-divider-line right"></span>
+      </div>
+    </div>
+    
+    <div class="v3-daily">
+      <div class="v3-daily-header">
+        <span class="v3-daily-icon">📅</span>
+        <span class="v3-daily-label">Thử Thách Hôm Nay</span>
+      </div>
+      <div class="v3-daily-title">🌍 Hành trình qua 5 sách</div>
+      <div class="v3-daily-books">A-mốt • 2 Giăng • Ê-sai • 1 Cô-rinh-tô • Châm Ngôn</div>
+      <div class="v3-daily-meta">5 câu • 5 phút • +50 XP</div>
+      <div class="v3-daily-countdown">⏱ Thử thách mới sau 19:30:38</div>
+      <button class="v3-cta-big">▶ BẮT ĐẦU HÔM NAY</button>
+    </div>
+    
+    <div class="v3-section-label">Chế độ chơi</div>
+    
+    <div class="row-2">
+      <div class="v3-card">
+        <div class="v3-card-content">
+          <div class="v3-card-icon-wrap"><span class="v3-card-icon">📖</span></div>
+          <div class="v3-card-title">LUYỆN TẬP</div>
+          <div class="v3-card-desc">Học không áp lực, không giới hạn thời gian.</div>
+          <div class="v3-card-status">Sẵn sàng thách thức?</div>
+          <button class="v3-card-cta">▶ Bắt đầu</button>
+        </div>
+      </div>
+      <div class="v3-card ranked">
+        <div class="v3-card-content">
+          <div class="v3-card-icon-wrap" style="background:rgba(212,175,55,0.12);box-shadow:0 0 20px rgba(212,175,55,0.15);"><span class="v3-card-icon">🏆</span></div>
+          <div class="v3-card-title">THI ĐẤU RANKED</div>
+          <div class="v3-card-desc">Tranh tài trực tiếp, kiếm điểm rank lớn.</div>
+          <div class="v3-card-status">✓ Đã mở khóa &nbsp;·&nbsp; ⚡ 100/100 năng lượng</div>
+          <button class="v3-card-cta">▶ Bắt đầu Ranked</button>
+        </div>
+      </div>
+    </div>
+    
+    <div style="text-align:center;margin:24px 0 16px;display:flex;align-items:center;gap:16px;">
+      <span style="flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,55,0.25));"></span>
+      <span style="font-size:11px;letter-spacing:2px;color:var(--gold-primary);text-transform:uppercase;">Khám Phá Thêm</span>
+      <span style="flex:1;height:1px;background:linear-gradient(90deg,rgba(212,175,55,0.25),transparent);"></span>
+    </div>
+    
+    <div class="row-3">
+      <div class="v3-secondary"><div class="v3-sec-icon">👥</div><div class="v3-sec-title">Nhóm Giáo Xứ</div><div class="v3-sec-sub">Hội thánh</div></div>
+      <div class="v3-secondary"><div class="v3-sec-icon">🎮</div><div class="v3-sec-title">Phòng Chơi</div><div class="v3-sec-sub">2-20 người</div></div>
+      <div class="v3-secondary"><div class="v3-sec-icon">🏆</div><div class="v3-sec-title">Giải Đấu</div><div class="v3-sec-sub">Bracket 1v1</div></div>
+    </div>
+    <div class="row-3">
+      <div class="v3-secondary"><div class="v3-sec-icon">🗓️</div><div class="v3-sec-title">Chủ Đề Tuần</div><div class="v3-sec-sub">Chủ đề tuần</div></div>
+      <div class="v3-secondary"><div class="v3-sec-icon">🎲</div><div class="v3-sec-title">Mystery Mode</div><div class="v3-sec-sub">Random hoàn toàn</div></div>
+      <div class="v3-secondary"><div class="v3-sec-icon">⚡</div><div class="v3-sec-title">Speed Round</div><div class="v3-sec-sub">10 câu × 10s</div></div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       VARIATION 4: GAMING HEAVY
+       ============================================ -->
+  <div class="variation" data-variation="v4">
+    
+    <div class="v4-hero">
+      <div class="v4-hero-corners"></div>
+      <div class="v4-hero-corner tl"></div>
+      <div class="v4-hero-corner tr"></div>
+      <div class="v4-hero-corner bl"></div>
+      <div class="v4-hero-corner br"></div>
+      
+      <div class="v4-hero-inner">
+        <div class="v4-avatar-wrap">
+          <div class="v4-avatar">🌱</div>
+          <div class="v4-avatar-rank">1</div>
+        </div>
+        <div class="v4-content">
+          <div class="v4-greeting">TAI THANH</div>
+          <div class="v4-tier-label">⚜ Tân Tín Hữu ⚜</div>
+          
+          <div class="v4-stats-grid">
+            <div class="v4-stat-cell">
+              <div class="v4-stat-label">Streak</div>
+              <div class="v4-stat-value">0</div>
+            </div>
+            <div class="v4-stat-cell">
+              <div class="v4-stat-label">Điểm</div>
+              <div class="v4-stat-value">81</div>
+            </div>
+            <div class="v4-stat-cell">
+              <div class="v4-stat-label">Tier</div>
+              <div class="v4-stat-value">1</div>
+            </div>
+          </div>
+          
+          <div class="v4-progress-wrap">
+            <div class="v4-progress-bar"><div class="v4-progress-fill"></div></div>
+            <span class="v4-progress-label">81 / 1,000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="v4-verse">
+      <div class="v4-verse-text">"Hãy vui vẻ trong sự trông cậy, nhịn nhục trong sự hoạn nạn, bền lòng mà cầu nguyện."</div>
+      <div class="v4-verse-ref">⚜ Rô-ma 12:12 ⚜</div>
+    </div>
+    
+    <div class="v4-daily">
+      <div class="v4-daily-badge">QUEST</div>
+      <div class="v4-daily-label">⚔ Thử Thách Hôm Nay</div>
+      <div class="v4-daily-title">Hành Trình Qua 5 Sách</div>
+      <div class="v4-daily-books">A-mốt • 2 Giăng • Ê-sai • 1 Cô-rinh-tô • Châm Ngôn</div>
+      <div class="v4-daily-stats">
+        <span class="v4-daily-stat"><strong>5</strong> câu</span>
+        <span class="v4-daily-stat"><strong>5</strong> phút</span>
+        <span class="v4-daily-stat"><strong>+50</strong> XP</span>
+        <span class="v4-daily-stat">⏱ <strong>19:30:38</strong></span>
+      </div>
+      <button class="v4-cta-big">▶ Bắt Đầu</button>
+    </div>
+    
+    <div class="row-2">
+      <div class="v4-card">
+        <div class="v4-card-corner tl"></div><div class="v4-card-corner tr"></div>
+        <div class="v4-card-corner bl"></div><div class="v4-card-corner br"></div>
+        <div class="v4-card-content">
+          <div class="v4-card-icon-wrap"><span class="v4-card-icon">📖</span></div>
+          <div class="v4-card-title">Luyện Tập</div>
+          <div class="v4-card-desc">Học không áp lực, không giới hạn thời gian. Hoàn hảo để củng cố kiến thức.</div>
+          <div class="v4-card-meta">⌛ Không giới hạn</div>
+          <button class="v4-card-cta">Bắt Đầu</button>
+        </div>
+      </div>
+      <div class="v4-card ranked">
+        <div class="v4-card-corner tl"></div><div class="v4-card-corner tr"></div>
+        <div class="v4-card-corner bl"></div><div class="v4-card-corner br"></div>
+        <div class="v4-card-content">
+          <div class="v4-card-icon-wrap"><span class="v4-card-icon">🏆</span></div>
+          <div class="v4-card-title">Thi Đấu Ranked</div>
+          <div class="v4-card-desc">Tranh tài trực tiếp, kiếm điểm rank lớn.</div>
+          <div class="v4-card-status-badge">✓ Đã Mở Khóa</div>
+          <div class="v4-card-meta">⚡ 100/100 năng lượng</div>
+          <button class="v4-card-cta">Tham Chiến</button>
+        </div>
+      </div>
+    </div>
+    
+    <div style="text-align:center;margin:24px 0 16px;display:flex;align-items:center;gap:16px;">
+      <span style="flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,55,0.4));"></span>
+      <span style="font-size:11px;letter-spacing:3px;color:var(--gold-primary);text-transform:uppercase;font-family:'Cinzel',serif;font-weight:600;">⚜ Khám Phá Thêm ⚜</span>
+      <span style="flex:1;height:1px;background:linear-gradient(90deg,rgba(212,175,55,0.4),transparent);"></span>
+    </div>
+    
+    <div class="row-3">
+      <div class="v4-secondary"><div class="v4-sec-icon-wrap"><div class="v4-sec-icon">👥</div></div><div class="v4-sec-title">Nhóm Giáo Xứ</div><div class="v4-sec-sub">Hội thánh</div></div>
+      <div class="v4-secondary"><div class="v4-sec-icon-wrap"><div class="v4-sec-icon">🎮</div></div><div class="v4-sec-title">Phòng Chơi</div><div class="v4-sec-sub">2-20 người</div></div>
+      <div class="v4-secondary"><div class="v4-sec-icon-wrap"><div class="v4-sec-icon">🏆</div></div><div class="v4-sec-title">Giải Đấu</div><div class="v4-sec-sub">Bracket 1v1</div></div>
+    </div>
+    <div class="row-3">
+      <div class="v4-secondary"><div class="v4-sec-icon-wrap"><div class="v4-sec-icon">🗓️</div></div><div class="v4-sec-title">Chủ Đề Tuần</div><div class="v4-sec-sub">Chủ đề tuần</div></div>
+      <div class="v4-secondary"><div class="v4-sec-icon-wrap"><div class="v4-sec-icon">🎲</div></div><div class="v4-sec-title">Mystery Mode</div><div class="v4-sec-sub">Random hoàn toàn</div></div>
+      <div class="v4-secondary"><div class="v4-sec-icon-wrap"><div class="v4-sec-icon">⚡</div></div><div class="v4-sec-title">Speed Round</div><div class="v4-sec-sub">10 câu × 10s</div></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.design-tab');
+  const variations = document.querySelectorAll('.variation');
+  const infoTitle = document.getElementById('info-title');
+  const infoDesc = document.getElementById('info-desc');
+  
+  const info = {
+    v1: { title: '1. Hiện tại — Baseline', desc: 'Trạng thái hiện tại của app sau các round polish vừa rồi. Sạch, focus, nhưng có thể trông hơi flat. Đây là baseline để so sánh.' },
+    v2: { title: '2. Sacred Minimalist — Tâm linh tối giản', desc: 'Tone trang trọng, italic serif cho verses, ornamental dividers, outline buttons. Phù hợp nếu user segment thiên về user lớn tuổi, Bible study truyền thống. Ít gaming feel.' },
+    v3: { title: '3. Stat Sheet (KHUYÊN DÙNG) — Sacred Modernist Gaming', desc: 'Sweet spot: Hero stat character sheet kiểu RPG (Streak/Điểm/Tier 3 columns), warm gradients, gold glows subtle, ornamental verse dividers. Vẫn reverent nhưng có gaming feel. Đây là direction tôi recommend.' },
+    v4: { title: '4. Gaming Heavy — RPG Full', desc: 'Cinzel serif font cho titles (như Hades game), gold corner brackets, badge "QUEST", "Tham Chiến" CTA, shimmer animations. Premium gaming hardcore. Risk: có thể trông "quá game", mất tâm linh feel cho older users.' }
+  };
+  
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const v = tab.dataset.variation;
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      variations.forEach(vEl => {
+        vEl.classList.toggle('active', vEl.dataset.variation === v);
+      });
+      infoTitle.textContent = info[v].title;
+      infoDesc.textContent = info[v].desc;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
+
+</body>
+</html>

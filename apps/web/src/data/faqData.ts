@@ -43,6 +43,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   { id: 'changeLanguage',    category: 'gettingStarted' },
   // Tier & XP
   { id: 'tierSystem',        category: 'tiers' },
+  { id: 'streakVsXp',        category: 'tiers' },
   { id: 'howUnlockRanked',   category: 'tiers' },
   { id: 'howEarnXp',         category: 'tiers' },
   // Game modes

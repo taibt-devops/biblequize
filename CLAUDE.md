@@ -240,11 +240,32 @@ Mỗi khi đưa ra quyết định kỹ thuật thuộc các loại sau:
 ```
 
 ## Local Dev Start
+
+Three modes — pick the one that matches what you're doing.
+
+**Mode 1 — Everything native (fastest BE iteration, hot-reload both sides)**
 ```bash
-docker compose up -d mysql redis          # 1. Infra
-cd apps/api && ./mvnw spring-boot:run     # 2. Backend (terminal 1)
-cd apps/web && npm run dev                # 3. Frontend (terminal 2)
+docker compose up -d mysql redis          # 1. Infra only
+cd apps/api && ./mvnw spring-boot:run     # 2. Backend native (terminal 1)
+cd apps/web && npm run dev                # 3. Frontend native (terminal 2)
 ```
+
+**Mode 2 — Full Docker stack (production-like, no hot-reload)**
+```bash
+docker compose up -d                      # api + web + mysql + redis
+# FE on http://localhost:3000 (nginx, built SPA), API on :8080
+```
+Rebuild after code changes: `docker compose up -d --build api web`.
+
+**Mode 3 — Hybrid: BE in Docker, FE native (most common dev flow)**
+```bash
+docker compose -f compose.yml -f compose.local-fe.yml up -d api mysql redis
+cd apps/web && npm run dev
+# Open http://localhost:5173 — OAuth redirects here after login.
+```
+The override file (`compose.local-fe.yml`) flips `APP_FRONTEND_URL` to
+`http://localhost:5173` so Google OAuth lands on Vite, not the dockerised
+nginx. CORS already includes 5173 in the base compose.yml.
 
 ## Quy tắc bắt buộc
 1. Sau mỗi thay đổi code → chạy test ngay (xem quy trình test bên dưới)

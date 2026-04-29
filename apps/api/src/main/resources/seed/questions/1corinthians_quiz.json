@@ -938,5 +938,1226 @@
       "Thư tín",
       "Cơ bản"
     ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 2,
+    "content": "Theo 1 Cô-rinh-tô 1:1-2, Phao-lô gửi thư cho ai?",
+    "explanation": "1 Cô-rinh-tô 1:2 — 'Gửi cho Hội Thánh Đức Chúa Trời tại Cô-rinh-tô, tức là cho những người đã được nên thánh trong Đức Chúa Jêsus Christ, được kêu gọi làm thánh đồ.' Phao-lô viết thư từ Ê-phê-sô khoảng năm 55 SCN trong chuyến truyền giáo lần 3.",
+    "language": "vi",
+    "options": [
+      "Cho hội thánh tại Rô-ma (xét trong văn cảnh)",
+      "Cho các tín hữu tại Ê-phê-sô (như được mô tả trong sách)",
+      "Cho Hội Thánh của Đức Chúa Trời tại Cô-rinh-tô — những người được nên thánh trong Christ Jêsus",
+      "Cho hội thánh tại Phi-líp (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Lời chào gửi Cô-rinh-tô",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "verseStart": 30,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo 1 Cô-rinh-tô 1:30, Đức Chúa Trời đã làm cho Christ Jêsus trở nên gì cho chúng ta?",
+    "explanation": "1 Cô-rinh-tô 1:30 — 'Chính Ngài đã làm cho anh em được ở trong Đấng Christ Jêsus, là Đấng mà Đức Chúa Trời đã làm nên sự khôn ngoan, sự công chính, sự thánh hóa, và sự cứu chuộc cho chúng ta.' Đây là một câu Christology cô đọng — Christ là TẤT CẢ những gì tín hữu cần.",
+    "language": "vi",
+    "options": [
+      "Chỉ là gương đạo đức",
+      "Chỉ là người dạy luật pháp",
+      "Chỉ là Đấng ban phước vật chất",
+      "Sự khôn ngoan, sự công bình, sự thánh hóa, và sự cứu chuộc"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Christ là tất cả",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 11,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Cô-rinh-tô 11:1, Phao-lô khuyên các tín hữu bắt chước ai?",
+    "explanation": "1 Cô-rinh-tô 11:1 — 'Hãy bắt chước tôi, cũng như chính tôi bắt chước Đấng Christ.' Phao-lô không tự đề cao — ông chỉ là gương khi và bao lâu ông phản chiếu Christ. Đây là nguyên tắc môn đồ hóa: gương sống Cơ Đốc đến từ việc theo Christ.",
+    "language": "vi",
+    "options": [
+      "Bắt chước các sứ đồ khác",
+      "Bắt chước Phao-lô như chính ông bắt chước Christ",
+      "Bắt chước các tiên tri Cựu Ước",
+      "Bắt chước thiên sứ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Bắt chước Phao-lô bắt chước Christ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "verseStart": 11,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo 1 Cô-rinh-tô 13:11, khi Phao-lô còn là trẻ con thì ông đã làm gì?",
+    "explanation": "1 Cô-rinh-tô 13:11 — 'Khi tôi còn là trẻ con, tôi nói như trẻ con, suy nghĩ như trẻ con, lý luận như trẻ con; nhưng khi tôi đã thành nhân thì tôi từ bỏ những điều thuộc về trẻ con.' Hình ảnh minh họa: ân tứ hiện tại (tiếng lạ, tri thức) sẽ chấm dứt khi 'điều trọn vẹn' (Christ tái lâm) đến — nhưng tình yêu thì còn mãi.",
+    "language": "vi",
+    "options": [
+      "Nói như trẻ con, suy nghĩ như trẻ con, lý luận như trẻ con",
+      "Đã hiểu biết đầy đủ ngay từ đầu",
+      "Không có khả năng cảm xúc",
+      "Đã có sự khôn ngoan như người trưởng thành"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Trẻ con vs trưởng thành",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "verseStart": 12,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Cô-rinh-tô 13:12, hiện nay chúng ta thấy như thế nào?",
+    "explanation": "1 Cô-rinh-tô 13:12 — 'Vì hiện nay chúng ta nhìn xem như qua một tấm gương cách mờ tối, đến bấy giờ chúng ta sẽ nhìn xem mặt đối mặt; bây giờ tôi biết phần nào, đến bấy giờ tôi sẽ biết như Chúa đã biết tôi vậy.' Gương cổ là kim loại đánh bóng — phản chiếu mờ. Đến khi Christ tái lâm, hiểu biết sẽ hoàn hảo.",
+    "language": "vi",
+    "options": [
+      "Mặt đối mặt rõ ràng",
+      "Hoàn toàn không thấy gì",
+      "Mờ tối như qua kính (gương)",
+      "Sáng tỏ như giữa ban ngày"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Mờ tối qua kính",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 14,
+    "verseStart": 1,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Cô-rinh-tô 14:1, điều gì là ưu tiên cao nhất, và sau đó tín hữu nên ao ước ân tứ nào?",
+    "explanation": "1 Cô-rinh-tô 14:1 — 'Hãy nôn nả tìm kiếm tình yêu thương. Cũng hãy ao ước các ân tứ thuộc linh, mà nhất là ân tứ nói tiên tri.' Tình yêu thương (ch 13) là 'con đường tốt lành hơn' (12:31) — nền tảng cho mọi ân tứ. Ân tứ tiên tri được ưa chuộng hơn tiếng lạ vì xây dựng Hội Thánh (14:3-4).",
+    "language": "vi",
+    "options": [
+      "Đeo đuổi tri thức; ao ước ân tứ tiếng lạ",
+      "Đeo đuổi tình yêu thương; ao ước các ân tứ thuộc linh, đặc biệt là ân tứ tiên tri",
+      "Đeo đuổi sự giàu có; ao ước ân tứ chữa lành",
+      "Đeo đuổi sự bình an; ao ước phép lạ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Đeo đuổi tình yêu, ao ước tiên tri",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verseStart": 20,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Cô-rinh-tô 15:20, Đấng Christ đã sống lại từ cõi chết và trở nên gì?",
+    "explanation": "1 Cô-rinh-tô 15:20 — 'Nhưng bây giờ Đấng Christ đã từ cõi chết sống lại; Ngài là trái đầu mùa của những kẻ ngủ.' 'Trái đầu mùa' (aparche) — phép ẩn dụ Cựu Ước (Lê-vi 23:10) báo trước mùa gặt. Christ sống lại trước → bảo đảm tín hữu cũng sẽ sống lại.",
+    "language": "vi",
+    "options": [
+      "Một thiên sứ",
+      "Một quan án",
+      "Trái đầu mùa của những kẻ ngủ",
+      "Một vị tiên tri"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Christ trái đầu mùa",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verseStart": 57,
+    "difficulty": "easy",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo 1 Cô-rinh-tô 15:57, vì sao tín hữu tạ ơn Đức Chúa Trời?",
+    "explanation": "1 Cô-rinh-tô 15:57 — 'Nhưng tạ ơn Đức Chúa Trời đã cho chúng ta sự thắng, nhờ Đức Chúa Jêsus Christ chúng ta.' Câu kết của bài tranh luận về sự sống lại — cái chết bị nuốt bởi sự thắng (15:54). Đây là nền cho lời khích lệ kế tiếp 'hãy vững vàng, không lay động' (15:58).",
+    "language": "vi",
+    "options": [
+      "Vì Ngài ban sự giàu có",
+      "Vì Ngài ban sức khỏe (xét trong văn cảnh)",
+      "Vì Ngài ban sự khôn ngoan",
+      "Vì Ngài đã ban cho chúng ta sự thắng nhờ Đức Chúa Jêsus Christ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Sự thắng nhờ Christ",
+      "Cơ bản"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "verseStart": 11,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 13,
+    "content": "Theo 1 Cô-rinh-tô 1:11-13, ai báo cho Phao-lô biết về sự chia rẽ tại Cô-rinh-tô, và 4 phe phái nhóm họ gọi mình là gì?",
+    "explanation": "1 Cô-rinh-tô 1:11-12 — 'Hỡi anh em, người nhà Cờ-lô-ê đã cho tôi hay rằng có sự cãi lẫy ở giữa anh em. Mỗi người trong anh em nói rằng: Ta thuộc về Phao-lô, ta thuộc về A-bô-lô, ta thuộc về Sê-pha, ta thuộc về Christ.' Phao-lô vạch trần lập nhóm tín ngưỡng quanh nhân vật. Câu 13 hỏi cay đắng: 'Đấng Christ bị chia ra sao?'",
+    "language": "vi",
+    "options": [
+      "Stê-pha-na — phe Phao-lô / A-bô-lô / Ti-mô-thê / Christ",
+      "Người nhà Cờ-lô-ê — phe Phao-lô / A-bô-lô / Sê-pha (Phi-e-rơ) / Christ",
+      "Phê-bê — phe Phao-lô / Tít / Sê-pha / Ba-na-ba",
+      "Akilas — phe Phi-e-rơ / Gia-cơ / A-bô-lô / Phao-lô"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Bốn phe chia rẽ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "verseStart": 23,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Cô-rinh-tô 1:23, Phao-lô giảng Đấng Christ bị đóng đinh — và điều này như thế nào với người Do Thái và người Hy Lạp?",
+    "explanation": "1 Cô-rinh-tô 1:23 — 'Còn chúng ta thì giảng Đấng Christ bị đóng đinh trên cây thập tự, là sự gây vấp phạm cho người Do Thái, và sự ngu dại cho dân ngoại.' Người Do Thái mong Mê-si-a chiến thắng — không phải bị đóng đinh; người Hy Lạp tôn sùng triết lý — Christ bị đóng đinh là điên rồ. Nhưng cho người được kêu gọi, đó là 'quyền năng và khôn ngoan của Đức Chúa Trời' (1:24).",
+    "language": "vi",
+    "options": [
+      "Sự khôn ngoan với cả hai",
+      "Sự cứu rỗi với cả hai (xét trong văn cảnh)",
+      "Sự vấp phạm cho người Do Thái và sự dại dột cho người Hy Lạp",
+      "Sự chiến thắng cho cả hai"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Vấp phạm và dại dột",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "verseStart": 26,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 29,
+    "content": "Theo 1 Cô-rinh-tô 1:26-29, Đức Chúa Trời chọn ai để đem lại điều gì?",
+    "explanation": "1 Cô-rinh-tô 1:27-29 — 'Đức Chúa Trời đã chọn những sự dại ở thế gian để làm hổ thẹn những kẻ khôn... cho chẳng ai khoe mình trước mặt Đức Chúa Trời.' Hội thánh Cô-rinh-tô không có nhiều giàu/quý/thông thái. Mục đích thần học: vinh quang chỉ thuộc về Đức Chúa Trời, không thuộc về con người.",
+    "language": "vi",
+    "options": [
+      "Chọn những kẻ dại dột, yếu đuối, hèn mọn — để không ai khoe khoang trước mặt Ngài",
+      "Chọn những bậc thông thái và quyền thế của thế gian",
+      "Chọn những người giàu có và có học thức",
+      "Chọn những người dòng dõi quý tộc"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Chọn yếu cho mạnh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 2,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 5,
+    "content": "Theo 1 Cô-rinh-tô 2:1-5, Phao-lô đến Cô-rinh-tô KHÔNG bằng điều gì, để đức tin của họ dựa trên gì?",
+    "explanation": "1 Cô-rinh-tô 2:4-5 — 'Lời nói và sự giảng của tôi chẳng phải bằng bài diễn thuyết khéo léo của sự khôn ngoan, nhưng tại sự tỏ ra Thánh Linh và quyền phép; hầu cho đức tin anh em chẳng lập trên sự khôn ngoan loài người, nhưng lập trên quyền phép Đức Chúa Trời.' Phao-lô quyết định 'chẳng biết sự gì khác ngoài Đức Chúa Jêsus Christ và Christ bị đóng đinh trên thập tự' (2:2).",
+    "language": "vi",
+    "options": [
+      "Không bằng tiền bạc — đức tin dựa trên tài sản",
+      "Không bằng quyền thế chính trị — đức tin dựa trên tổ chức",
+      "Không bằng dấu lạ phép kỳ — đức tin dựa trên cảm xúc",
+      "Không bằng lời cao xa hay khôn ngoan loài người — đức tin dựa trên quyền năng Đức Chúa Trời"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Không khôn ngoan loài người",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 2,
+    "verseStart": 6,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 8,
+    "content": "Theo 1 Cô-rinh-tô 2:8, nếu các bậc cầm quyền đời này biết được sự khôn ngoan giấu kín của Đức Chúa Trời, thì họ sẽ KHÔNG làm gì?",
+    "explanation": "1 Cô-rinh-tô 2:8 — 'Sự đó (sự khôn ngoan giấu kín) chẳng một ai trong các bậc cầm quyền đời này biết, vì nếu đã biết thì hẳn họ chẳng đóng đinh Chúa vinh hiển trên cây thập tự đâu.' 'Chúa vinh hiển' (Lord of glory) — Christology cao: Christ là vinh hiển ĐCT (cf. Gia-cơ 2:1). Sự khôn ngoan ĐCT bị giấu khỏi thế gian — chỉ Linh tỏ ra (2:10).",
+    "language": "vi",
+    "options": [
+      "Sẽ không tin nhận (xét trong văn cảnh)",
+      "Sẽ không truyền dạy (theo cách trình bày của text)",
+      "Sẽ KHÔNG đóng đinh Chúa vinh hiển trên cây thập tự",
+      "Sẽ không phát triển (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Không đóng đinh Chúa Vinh Hiển",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 2,
+    "verseStart": 16,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Cô-rinh-tô 2:16, Phao-lô khẳng định điều gì về tín hữu (kết luận từ trích Ê-sai 40:13)?",
+    "explanation": "1 Cô-rinh-tô 2:16 — 'Vì ai đã biết ý Chúa, đặng dạy dỗ Ngài? Nhưng phần chúng ta, thì có ý của Đấng Christ.' Trích Ê-sai 40:13 (Septuagint). Đức Thánh Linh, Đấng dò xét sự sâu nhiệm của ĐCT (2:10), ngự trong tín hữu — vì vậy chúng ta tiếp cận được tâm trí Christ.",
+    "language": "vi",
+    "options": [
+      "Chúng ta có sự khôn ngoan của thế gian",
+      "Chúng ta có tâm trí (ý) của Đấng Christ",
+      "Chúng ta có sức mạnh của thiên sứ",
+      "Chúng ta có quyền uy của các vua"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Có tâm trí Christ",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 3,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 4,
+    "content": "Theo 1 Cô-rinh-tô 3:1-4, Phao-lô không thể nói với người Cô-rinh-tô như những người thuộc linh, vì sao?",
+    "explanation": "1 Cô-rinh-tô 3:1-3 — 'Tôi không thể nói với anh em như với người thiêng liêng, nhưng như với người xác thịt, như với những đứa trẻ thơ trong Đấng Christ vậy. Tôi đã cho anh em uống sữa, chứ chẳng cho đồ ăn cứng, vì anh em chưa thể chịu được... ai nấy đều nói: 'Ta thuộc Phao-lô — Ta thuộc A-bô-lô' — anh em há chẳng cùng một thứ với người thế gian sao?' Sự chia rẽ là dấu họ vẫn còn xác thịt.",
+    "language": "vi",
+    "options": [
+      "Vì họ vẫn là trẻ con thuộc xác thịt — chỉ uống được sữa, không nhai nổi đồ ăn cứng",
+      "Vì họ chưa được cứu rỗi (theo cách trình bày của text)",
+      "Vì họ là người ngoại đạo (như được mô tả trong sách)",
+      "Vì họ không có ân tứ (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Trẻ con thuộc xác thịt",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 3,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 15,
+    "content": "Theo 1 Cô-rinh-tô 3:10-15, công việc của mỗi người sẽ được thử nghiệm bằng gì, và 6 vật liệu nào được liệt kê?",
+    "explanation": "1 Cô-rinh-tô 3:12-13 — 'Nếu có kẻ lấy vàng, bạc, ngọc quý, gỗ, cỏ khô, rơm rạ mà xây trên nền ấy — thì công việc mỗi người sẽ được tỏ ra; ngày đó sẽ tỏ tường ra, vì sẽ tỏ ra trong lửa.' 3 vật chịu được lửa (vàng/bạc/ngọc), 3 vật bị thiêu (gỗ/cỏ/rơm). Người được cứu nhưng công việc bị thiêu thì 'như qua lửa' (3:15) — không mất sự cứu rỗi nhưng mất phần thưởng.",
+    "language": "vi",
+    "options": [
+      "Bằng nước; gỗ, đá, đất sét, lúa mì, lúa mạch, dầu",
+      "Bằng gió; mây, bụi, sương, mưa, tuyết, băng",
+      "Bằng thời gian; vàng, bạc, đồng, sắt, chì, kẽm",
+      "Bằng lửa; vàng, bạc, ngọc quý — gỗ, cỏ, rơm rạ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Lửa thử công việc",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 4,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 2,
+    "content": "Theo 1 Cô-rinh-tô 4:1-2, Phao-lô và các sứ đồ được xem là gì, và đức tính nào được đòi hỏi nơi họ?",
+    "explanation": "1 Cô-rinh-tô 4:1-2 — 'Người ta phải xem chúng tôi như tôi tớ của Đấng Christ, và quản gia của các sự mầu nhiệm Đức Chúa Trời. Vả lại, cái điều người ta đòi nơi quản gia là phải trung thành.' Quản gia (oikonomos) không sở hữu tài sản — chỉ quản lý theo ý chủ. Sứ đồ không sở hữu Phúc Âm — chỉ truyền giao trung tín.",
+    "language": "vi",
+    "options": [
+      "Là chủ — phải khôn ngoan (xét trong văn cảnh)",
+      "Là tôi tớ Christ và quản gia của các sự mầu nhiệm Đức Chúa Trời — phải trung tín",
+      "Là nhà tài trợ — phải hào phóng (theo cách trình bày của text)",
+      "Là người dạy luật — phải nghiêm khắc"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Quản gia mầu nhiệm trung tín",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 5,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 5,
+    "content": "Theo 1 Cô-rinh-tô 5:1-5, Phao-lô bảo hội thánh Cô-rinh-tô làm gì với người tà dâm (đã lấy vợ của cha mình)?",
+    "explanation": "1 Cô-rinh-tô 5:5 — 'Phải phó người ấy cho quỷ Sa-tan, để hủy hoại phần xác thịt, hầu cho linh hồn được cứu trong ngày của Đức Chúa Jêsus.' Mục đích kỷ luật: KHÔNG phải báo thù — mà cứu rỗi linh hồn. Hội thánh kiêu ngạo (5:2) thay vì khóc lóc — đó là vấn đề Phao-lô vạch trần.",
+    "language": "vi",
+    "options": [
+      "Bỏ qua, tha thứ và để Chúa xử (như được mô tả trong sách)",
+      "Đem ra tòa án La Mã (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Loại trừ ra khỏi cộng đồng — phó cho Sa-tan, để xác thịt bị hư mất, để linh hồn được cứu trong ngày Chúa",
+      "Đánh đập rồi phục hồi (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Phó cho Sa-tan",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 5,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 13,
+    "content": "Theo 1 Cô-rinh-tô 5:9-13, Phao-lô KHÔNG bảo tránh người ngoại — mà bảo không giao thiệp với ai?",
+    "explanation": "1 Cô-rinh-tô 5:11-12 — 'Nhưng tôi viết bảo anh em đừng làm bạn với kẻ nào tự xưng là anh em mà tà dâm, tham lam, thờ thần tượng, chửi rủa, say sưa hoặc lừa đảo... có phải là anh em nên đoán xét những người ở trong sao?' Phao-lô phân biệt: tín hữu phải SỐNG TRONG thế gian không tin Chúa, nhưng KHÔNG dung túng tội ngay TRONG hội thánh.",
+    "language": "vi",
+    "options": [
+      "Không giao thiệp với người nghèo (xét trong văn cảnh)",
+      "Không giao thiệp với người ngoại đạo (như được mô tả trong sách)",
+      "Không giao thiệp với người Do Thái (theo cách trình bày của text)",
+      "Không giao thiệp với người gọi là anh em mà tà dâm, tham lam, thờ thần tượng, chửi rủa, say sưa, hoặc lừa đảo"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Không giao thiệp với 'anh em' tội lỗi",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 6,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 8,
+    "content": "Theo 1 Cô-rinh-tô 6:1-8, Phao-lô quở trách Cô-rinh-tô về điều gì, và lý do chính là gì?",
+    "explanation": "1 Cô-rinh-tô 6:1-3 — 'Khi anh em có sự kiện cáo nhau, anh em há dám đến trước mặt người không công bình mà nhờ phân xử thay vì các thánh đồ sao? Anh em chẳng biết các thánh đồ sẽ xét đoán thế gian sao? Anh em chẳng biết chúng ta sẽ xét đoán các thiên sứ sao?' Tốt hơn 'thua thiệt' (6:7) hơn là làm xấu danh Christ trước tòa ngoại đạo.",
+    "language": "vi",
+    "options": [
+      "Kiện cáo nhau trước tòa người không tin Chúa — sao không xin các thánh đồ phán xét? thậm chí thánh đồ sẽ xét đoán thiên sứ",
+      "Không tham gia chính trị La Mã (như được mô tả trong sách)",
+      "Không tôn vinh tòa án thế tục (theo cách trình bày của text)",
+      "Trốn tránh thuế (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Đừng kiện cáo trước tòa ngoại đạo",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 6,
+    "verseStart": 9,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 11,
+    "content": "Theo 1 Cô-rinh-tô 6:9-11, sau khi liệt kê những kẻ KHÔNG hưởng nước Đức Chúa Trời, Phao-lô khẳng định điều gì với tín hữu?",
+    "explanation": "1 Cô-rinh-tô 6:11 — 'Trước kia, có người trong anh em vốn là như thế đó; nhưng anh em đã được rửa sạch, đã được làm nên thánh, đã được xưng công bình trong danh Đức Chúa Jêsus Christ, và bởi Thánh Linh của Đức Chúa Trời chúng ta.' 3 thì quá khứ — apologomai (rửa), hagiazō (thánh hóa), dikaioō (xưng công bình). Tin Lành biến đổi: 'có người trong anh em VỐN LÀ như thế đó.'",
+    "language": "vi",
+    "options": [
+      "Không có ai trong anh em từng phạm tội (theo cách trình bày của text)",
+      "Anh em sẽ phải sống theo luật pháp Cựu Ước",
+      "Anh em đã được rửa, được nên thánh, được xưng công bình trong danh Đức Chúa Jêsus Christ và bởi Linh ĐCT",
+      "Anh em phải làm việc lành để được cứu (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Đã được rửa và xưng công bình",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 6,
+    "verseStart": 12,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Cô-rinh-tô 6:12, Phao-lô nêu nguyên tắc nào về tự do trong Christ?",
+    "explanation": "1 Cô-rinh-tô 6:12 — 'Mọi sự tôi có phép làm, nhưng chẳng phải mọi sự đều có ích; mọi sự tôi có phép làm, nhưng chẳng để sự gì bắt phục được tôi.' Có thể là khẩu hiệu mà người Cô-rinh-tô nói — Phao-lô không bác bỏ tự do nhưng đặt giới hạn: ÍCH LỢI và KHÔNG BỊ CAI TRỊ. Câu chìa khóa cho thần học tự do Cơ Đốc.",
+    "language": "vi",
+    "options": [
+      "Mọi sự đều bị cấm (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Mọi sự đều được phép — nhưng KHÔNG phải mọi sự đều có ích, và tôi không để điều nào cai trị mình",
+      "Tự do tuyệt đối không giới hạn (như được mô tả trong sách)",
+      "Phải giữ luật pháp Môi-se (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Tự do nhưng có giới hạn",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 7,
+    "verseStart": 10,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 11,
+    "content": "Theo 1 Cô-rinh-tô 7:10-11, mạng lệnh từ Chúa cho vợ chồng tín hữu là gì?",
+    "explanation": "1 Cô-rinh-tô 7:10-11 — 'Tôi truyền cho người đã cưới — chẳng phải tôi truyền, mà là Chúa — vợ chớ lìa khỏi chồng; nếu lìa, thì hãy ở vậy đừng lấy chồng khác hoặc phải làm hòa lại với chồng mình; còn chồng cũng đừng để vợ.' Phao-lô viện dẫn lời chính Chúa Jêsus (Mat 19:6 — 'điều ĐCT đã phối hợp, loài người không phân rẽ').",
+    "language": "vi",
+    "options": [
+      "Vợ không được lìa chồng — nếu lìa thì hãy ở vậy hoặc làm hòa lại; chồng không được để vợ",
+      "Mỗi người tự do ly hôn theo ý muốn (theo cách trình bày của text)",
+      "Vợ phải tuyệt đối phục tùng dù bị bạo hành",
+      "Chồng có thể có nhiều vợ (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Chớ ly dị",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 7,
+    "verseStart": 29,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 31,
+    "content": "Theo 1 Cô-rinh-tô 7:29-31, Phao-lô lý luận gì về 'thì giờ ngắn ngủi' và mọi quan hệ trần gian?",
+    "explanation": "1 Cô-rinh-tô 7:29-31 — 'Hỡi anh em, vậy thì tôi bảo nầy: thì giờ ngắn ngủi. Từ rày về sau, kẻ có vợ hãy như kẻ không có; kẻ đương khóc, như kẻ không khóc; kẻ đương vui, như kẻ không vui... vì hình trạng thế gian này qua đi.' KHÔNG bỏ trách nhiệm, nhưng giữ trọng tâm vĩnh hằng — vạn sự là tạm thời trong ánh sáng Christ tái lâm.",
+    "language": "vi",
+    "options": [
+      "Tránh xa thế gian hoàn toàn (như được mô tả trong sách)",
+      "Trở thành tu sĩ độc thân (theo cách trình bày của text)",
+      "Bán hết của cải (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Kẻ có vợ hãy như chẳng có; kẻ khóc như chẳng khóc; kẻ vui như chẳng vui; kẻ mua như chẳng giữ — vì hình trạng thế gian này qua đi"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Thì giờ ngắn ngủi",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 9,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "verseEnd": 12,
+    "content": "Theo 1 Cô-rinh-tô 9:1-12, Phao-lô khẳng định ông CÓ quyền gì với tư cách sứ đồ — nhưng ông đã KHÔNG làm gì?",
+    "explanation": "1 Cô-rinh-tô 9:11-12 — 'Nếu chúng tôi đã gieo của thiêng liêng cho anh em, mà muốn gặt của vật chất nơi anh em, thì có phải là một việc lớn lao chăng?... Dầu vậy, chúng tôi chẳng từng dùng quyền ấy; nhưng chúng tôi chịu mọi sự, hầu cho khỏi làm ngăn trở Tin Lành của Đấng Christ.' Phao-lô từ bỏ quyền hợp pháp vì lợi ích Phúc Âm.",
+    "language": "vi",
+    "options": [
+      "Có quyền ăn cắp — nhưng không lấy (xét trong văn cảnh)",
+      "Có quyền ăn uống, mang theo vợ tin Chúa, nhận lương vật chất từ hội thánh — nhưng KHÔNG dùng quyền đó để Tin Lành không bị cản trở",
+      "Có quyền cai trị — nhưng không cầm quyền (như được mô tả trong sách)",
+      "Có quyền chữa lành — nhưng không chữa (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Quyền sứ đồ — nhưng không dùng",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 10,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 4,
+    "content": "Theo 1 Cô-rinh-tô 10:1-4, các tổ phụ Y-sơ-ra-ên trong sa mạc đều kinh nghiệm điều gì, và 'vầng đá thiêng liêng' là ai?",
+    "explanation": "1 Cô-rinh-tô 10:2-4 — 'Tất cả đều chịu Môi-se làm phép báp-têm trong đám mây và dưới biển; tất cả đều ăn một thứ ăn thiêng liêng; tất cả đều uống một thứ uống thiêng liêng; vì họ uống nơi một hòn đá thiêng liêng theo mình, mà hòn đá ấy tức là Đấng Christ.' Bất ngờ Christ-cũ-trước-thời-điểm — Christ đã hiện diện và cung cấp cho dân Ngài trong sa mạc.",
+    "language": "vi",
+    "options": [
+      "Đều thoát khỏi Ai Cập — vầng đá là Môi-se (như được mô tả trong sách)",
+      "Đều ăn ma-na — vầng đá là một thiên sứ (theo cách trình bày của text)",
+      "Đều chịu báp-têm trong Môi-se (qua mây và biển), đều ăn cùng đồ ăn thiêng liêng và uống cùng nước uống thiêng liêng — vầng đá theo họ chính là Đấng Christ",
+      "Đều thấy Si-nai — vầng đá là dân (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Christ là vầng đá",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 10,
+    "verseStart": 14,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 22,
+    "content": "Theo 1 Cô-rinh-tô 10:14-22, vì sao tín hữu KHÔNG thể dự cả bàn của Chúa và bàn của ma quỷ?",
+    "explanation": "1 Cô-rinh-tô 10:21 — 'Anh em chẳng có thể uống chén của Chúa và cũng uống chén của các quỷ; chẳng có thể dự tiệc của Chúa, lại dự tiệc của các quỷ.' Tham dự thờ thần tượng — dù không tin thần tượng — vẫn tạo ra 'thông công' (koinōnia) với ma quỷ. Tiệc Thánh tạo thông công thực với máu và thân Christ (10:16) — không thể song song với thông công ma quỷ.",
+    "language": "vi",
+    "options": [
+      "Vì uống chén Chúa và chén của ma quỷ là sự thông công không tương hợp — anh em không thể vừa hầu việc Chúa vừa hầu việc ma quỷ",
+      "Vì luật pháp cấm (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Vì tốn tiền (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Vì tổ chức không cho phép (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Hai chén — không thể chung",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 11,
+    "verseStart": 27,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 32,
+    "content": "Theo 1 Cô-rinh-tô 11:27-32, dự Tiệc Thánh không xứng đáng dẫn đến hậu quả gì, và tín hữu nên làm gì trước?",
+    "explanation": "1 Cô-rinh-tô 11:28-30 — 'Mỗi người phải tự xét lấy mình, và như thế mới ăn bánh uống chén ấy; vì người nào không phân biệt thân Chúa mà ăn bánh uống chén đó, tức là ăn uống sự xét đoán cho mình. Vì cớ đó, trong anh em có nhiều kẻ tật nguyền, đau ốm, và có lắm kẻ ngủ.' 'Ngủ' = chết. Hội thánh Cô-rinh-tô đã coi thường Tiệc Thánh, ăn uống say sưa (11:21).",
+    "language": "vi",
+    "options": [
+      "Mất sự cứu rỗi — phải xưng tội với linh mục",
+      "Bị Đức Chúa Trời quên — phải dâng của lễ",
+      "Không có hậu quả — không cần xét lòng",
+      "Mắc tội với thân và huyết Chúa; nhiều người yếu, đau, chết; phải xét lòng mình trước"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Xét lòng trước Tiệc Thánh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 12,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 3,
+    "content": "Theo 1 Cô-rinh-tô 12:1-3, dấu hiệu rõ ràng cho biết một người KHÔNG nói bởi Đức Thánh Linh là gì, và tuyên xưng nào CHỈ đến từ Linh?",
+    "explanation": "1 Cô-rinh-tô 12:3 — 'Vậy tôi tỏ cùng anh em, chẳng ai cảm Thánh Linh của Đức Chúa Trời, mà nói rằng: Đức Chúa Jêsus đáng nguyền rủa! Nếu không cảm Đức Thánh Linh, cũng chẳng ai xưng Đức Chúa Jêsus là Chúa!' Đây là test thuộc linh ĐƠN GIẢN nhất: thái độ với Christ. 'Jêsus là Chúa' (Kyrios Iesous) là lời tuyên xưng cốt lõi Cơ Đốc.",
+    "language": "vi",
+    "options": [
+      "Không nói tiếng lạ — chỉ Linh nói tiếng lạ",
+      "Không có ân tứ — chỉ Linh ban ân tứ (theo cách trình bày của text)",
+      "Nói 'Anathema (rủa sả) Jêsus' KHÔNG đến từ Linh; tuyên xưng 'Jêsus là Chúa' CHỈ đến từ Đức Thánh Linh",
+      "Không khóc — chỉ Linh khiến khóc (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Jêsus là Chúa — chỉ bởi Linh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 12,
+    "verseStart": 13,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Cô-rinh-tô 12:13, các tín hữu thuộc mọi nguồn gốc đã được hiệp một thế nào?",
+    "explanation": "1 Cô-rinh-tô 12:13 — 'Vì chúng ta hoặc người Do Thái, hoặc người Hy Lạp, hoặc tôi mọi, hoặc tự chủ, đều đã chịu phép báp-têm chung một Thánh Linh để hiệp làm một thân; và chúng ta đều đã chịu uống chung một Thánh Linh nữa.' 'Báp-têm trong Linh' = Chúa Jêsus dìm tín hữu vào trong sự sống Linh tại lúc tin nhận. Hội thánh = Một Thân vượt qua mọi rào cản chủng tộc/giai cấp.",
+    "language": "vi",
+    "options": [
+      "Bởi học chung một giáo lý (như được mô tả trong sách)",
+      "Bởi MỘT Linh, chúng ta hết thảy đều chịu báp-têm trong MỘT Thân — dù Do Thái hay Hy Lạp, nô lệ hay tự chủ — đều uống chung MỘT Linh",
+      "Bởi cùng quốc tịch (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Bởi cùng giai cấp xã hội (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Một Linh — Một Thân",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 14,
+    "verseStart": 1,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 5,
+    "content": "Theo 1 Cô-rinh-tô 14:1-5, vì sao Phao-lô ưu tiên ân tứ tiên tri hơn tiếng lạ trong hội thánh?",
+    "explanation": "1 Cô-rinh-tô 14:4-5 — 'Kẻ nói tiếng lạ tự gây dựng lấy mình; song kẻ nói tiên tri gây dựng cho Hội Thánh. Tôi ước ao anh em hết thảy đều nói tiếng lạ, song tôi còn ao ước hơn nữa là anh em nói tiên tri... vì kẻ nói tiên tri là trọng hơn kẻ nói tiếng lạ — trừ khi có người thông giải để Hội Thánh được gây dựng.' Trọng tâm: ÍCH LỢI cho Thân — không phải kinh nghiệm cá nhân.",
+    "language": "vi",
+    "options": [
+      "Vì tiếng lạ không có thật (như được mô tả trong sách)",
+      "Vì tiên tri dễ làm hơn (theo cách trình bày của text)",
+      "Vì kẻ tiên tri xây dựng (oikodomeō) HỘI THÁNH; còn kẻ nói tiếng lạ chỉ xây dựng cho chính mình — trừ khi có người thông giải",
+      "Vì tiếng lạ gây ồn ào (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Tiên tri xây dựng Hội Thánh",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verseStart": 5,
+    "difficulty": "medium",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 8,
+    "content": "Theo 1 Cô-rinh-tô 15:5-8, sau khi sống lại, Đấng Christ đã hiện ra cho ai theo thứ tự Phao-lô liệt kê?",
+    "explanation": "1 Cô-rinh-tô 15:5-8 — 'Ngài đã hiện ra cho Sê-pha, rồi cho mười hai sứ đồ. Sau đó hiện ra cho hơn năm trăm anh em xem thấy một lần... rồi hiện ra cho Gia-cơ, kế đến cho các sứ đồ. Rốt lại sau những người ấy, cũng hiện ra cho tôi xem, như cho một thai sanh non vậy.' Đây là CHỨNG CỚ sống lại lâu đời nhất Tân Ước (~5 năm sau Phục Sinh) — nhiều nhân chứng còn SỐNG khi Phao-lô viết (~55 SCN).",
+    "language": "vi",
+    "options": [
+      "Chỉ cho 12 sứ đồ (xét trong văn cảnh) (như được mô tả trong sách)",
+      "Chỉ cho Ma-ri Ma-đơ-len (theo cách trình bày của text)",
+      "Cho Phi-e-rơ rồi cho 12 sứ đồ — chấm hết (theo trình tự câu chuyện)",
+      "Cho Sê-pha (Phi-e-rơ), 12 sứ đồ, hơn 500 anh em một lúc, Gia-cơ, các sứ đồ, sau cùng cho Phao-lô như đứa sanh non"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Hiện ra sau khi sống lại",
+      "Trung cấp"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "verseStart": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Cô-rinh-tô 1:30 sâu — bốn chức năng cụ thể nào của Đấng Christ được liệt kê (theo thứ tự ESV/RVV11)?",
+    "explanation": "1 Cô-rinh-tô 1:30 — 'Đức Chúa Trời đã làm Christ Jêsus nên sự khôn ngoan, sự công chính, sự thánh hóa, sự cứu chuộc cho chúng ta.' 4 thứ tự đặc biệt: SOPHIA (khôn ngoan = khái quát) → DIKAIOSYNĒ (xưng công bình = quá khứ) → HAGIASMOS (thánh hóa = hiện tại) → APOLYTRŌSIS (cứu chuộc = tương lai vinh hiển). Christ là 'từ A đến Z' của ơn cứu rỗi.",
+    "language": "vi",
+    "options": [
+      "Sự yêu thương, đức tin, hy vọng, vui mừng",
+      "Sự khôn ngoan từ Đức Chúa Trời, sự công chính, sự thánh hóa, sự cứu chuộc",
+      "Sự bình an, niềm vui, đức tin, đức ái",
+      "Sự sống, ánh sáng, sự thật, đường đi (xét trong văn cảnh)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Bốn chức năng Christ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 2,
+    "verseStart": 14,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Cô-rinh-tô 2:14, người 'thuộc xác thịt' (psychikos) phản ứng thế nào với những điều thuộc Linh, và vì sao?",
+    "explanation": "1 Cô-rinh-tô 2:14 — 'Vả, người có tánh xác thịt không nhận được những sự thuộc về Thánh Linh của Đức Chúa Trời; bởi chưng người đó coi sự ấy như là sự dồ dại, và không có thể hiểu được, vì phải xem xét cách thiêng liêng.' Psychikos = 'hồn-tự-nhiên' (KHÔNG có Linh nội cư). Sự hiểu thuộc linh đòi hỏi Linh ban — không phải bằng tài năng tự nhiên.",
+    "language": "vi",
+    "options": [
+      "Hiểu hoàn toàn — nhưng không vâng theo (như được mô tả trong sách)",
+      "Hiểu một phần — và cố gắng vâng phục (theo cách trình bày của text)",
+      "KHÔNG nhận lãnh được những điều thuộc Linh ĐCT — coi đó là điên dại; KHÔNG thể hiểu vì phải xét đoán cách thuộc linh",
+      "Tin tự nhiên — không cần Linh (xét trong văn cảnh) (theo trình tự câu chuyện)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Người xác thịt không nhận lãnh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 3,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo 1 Cô-rinh-tô 3:11, Phao-lô tuyên bố nền tảng nào KHÔNG ai có thể đặt khác hơn?",
+    "explanation": "1 Cô-rinh-tô 3:11 — 'Vì chẳng ai có thể đặt một nền khác hơn nền đã đặt, là Đức Chúa Jêsus Christ.' Khác với Mat 16:18 ('Phi-e-rơ là đá') — Phao-lô làm rõ: trong xây dựng Hội Thánh, NỀN duy nhất = Christ. Phao-lô tự xưng 'thợ cái khôn ngoan' đặt nền (3:10), nhưng chính Christ MỚI là nền.",
+    "language": "vi",
+    "options": [
+      "Chẳng ai có thể đặt nền nào khác ngoài nền đã đặt — tức là Đức Chúa Jêsus Christ",
+      "Phao-lô là nền (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "A-bô-lô là nền (theo cách trình bày của text)",
+      "Phi-e-rơ là nền duy nhất (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Christ là nền duy nhất",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 3,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 17,
+    "content": "Theo 1 Cô-rinh-tô 3:16-17, ai là 'đền thờ Đức Chúa Trời' (theo bối cảnh chương 3) — và điều này khác 1 Cô 6:19 thế nào?",
+    "explanation": "1 Cô-rinh-tô 3:16-17 — 'Anh em há chẳng biết mình là đền thờ của Đức Chúa Trời và Thánh Linh Đức Chúa Trời ở trong anh em sao? Vì có ai phá hủy đền thờ ĐCT, thì ĐCT sẽ phá hủy người đó.' 'Anh em' = số nhiều (HỘI THÁNH), ngữ cảnh là chia rẽ phá hủy Hội Thánh = phá đền thờ ĐCT. Còn 6:19 'thân thể anh em' (số ít distributive) = cá nhân tín hữu, ngữ cảnh tà dâm.",
+    "language": "vi",
+    "options": [
+      "Cá nhân tín hữu — giống 6:19 (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Đền thờ Giê-ru-sa-lem — không liên quan (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Chỉ các sứ đồ — đặc biệt (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "HỘI THÁNH (cộng đồng) là đền thờ Đức Chúa Trời (3:16-17, ngữ cảnh chia rẽ); còn 6:19 nói thân thể CÁ NHÂN là đền thờ Đức Thánh Linh (ngữ cảnh tà dâm)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Hội Thánh vs cá nhân là đền thờ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 4,
+    "verseStart": 7,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Cô-rinh-tô 4:7, ba câu hỏi tu từ Phao-lô đặt ra để đập tan sự kiêu ngạo Cô-rinh-tô là gì?",
+    "explanation": "1 Cô-rinh-tô 4:7 — 'Bởi vì, ai phân biệt ngươi với người khác? Ngươi há có điều chi mà chẳng đã nhận lãnh sao? Nếu ngươi đã nhận lãnh, thì sao còn khoe mình như chẳng từng nhận lãnh?' Ba câu hỏi đập vỡ niềm tự hào Cô-rinh-tô — TẤT CẢ những gì họ có (ân tứ, sự khôn ngoan, vị trí) đều LÀ ÂN TỨ. Khoe khoang phủ nhận ân tứ.",
+    "language": "vi",
+    "options": [
+      "Anh em là ai? Đến từ đâu? Đi về đâu? (như được mô tả trong sách)",
+      "Ai làm anh em hơn người khác? Anh có gì mà chẳng đã nhận lãnh? Nếu anh đã nhận lãnh, sao còn khoe như chẳng nhận?",
+      "Anh tin gì? Anh làm gì? Anh đi đâu? (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Ai gọi anh? Ai gửi anh? Ai chu cấp? (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Anh có gì mà chẳng nhận lãnh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 7,
+    "verseStart": 29,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "content": "Theo 1 Cô-rinh-tô 7:29 (cụ thể câu 29), Phao-lô nói 'từ rày về sau' kẻ có vợ phải sống thế nào, dựa trên lý do gì?",
+    "explanation": "1 Cô-rinh-tô 7:29 — 'Hỡi anh em, vậy thì tôi bảo nầy: thì giờ ngắn ngủi. Từ rày về sau, kẻ có vợ hãy như kẻ không có; còn kẻ có chủ ý vợ hãy như chẳng có gì.' 'Synestalmenos' = bị rút ngắn (perfect passive). KHÔNG bỏ vợ — nhưng đặt trọng tâm trên Christ tái lâm hơn quan hệ trần gian. Đây là 'as if not' (hōs mē) thần học — sống ưu tiên đời đời.",
+    "language": "vi",
+    "options": [
+      "Phải sống NHƯ KẺ KHÔNG CÓ vợ — vì 'thì giờ ngắn ngủi' (ho kairos synestalmenos estin)",
+      "Phải bỏ vợ — vì cần độc thân (xét trong văn cảnh)",
+      "Phải nhân nhiều vợ — vì để lại dòng dõi (theo cách trình bày của text)",
+      "Phải sống bình thường — không thay đổi gì (như được mô tả trong sách)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Như kẻ không có vợ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 10,
+    "verseStart": 11,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Cô-rinh-tô 10:11, vì sao những việc xảy ra cho dân Y-sơ-ra-ên trong sa mạc được ghi chép?",
+    "explanation": "1 Cô-rinh-tô 10:11 — 'Những sự ấy xảy ra để làm gương cho chúng ta, hầu cho chúng ta biết răn lấy mình; chúng ta là kẻ đời sau rốt đã đến nơi.' 'Typikōs' = mẫu/gương; 'telē tōn aiōnōn' = sự cuối cùng của các thời đại. Tín hữu Tân Ước đang sống trong thời thế-mạt — biến cố Cựu Ước có hiệu lực CẢNH CÁO cho mình.",
+    "language": "vi",
+    "options": [
+      "Để lưu truyền văn hóa (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Để chỉ cho người Do Thái (theo cách trình bày của text)",
+      "Như là gương (typikōs) cho chúng ta — viết để cảnh cáo cho chúng ta là kẻ ở thời 'cuối cùng' (telē tōn aiōnōn)",
+      "Như câu chuyện huyền thoại (như được mô tả trong sách) (như văn bản ghi rõ)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Cảnh cáo thời cuối cùng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 10,
+    "verseStart": 16,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "verseEnd": 17,
+    "content": "Theo 1 Cô-rinh-tô 10:16-17, Tiệc Thánh được mô tả là sự thông công (koinōnia) với gì, và tại sao 'một bánh' chứng minh 'một Thân'?",
+    "explanation": "1 Cô-rinh-tô 10:16-17 — 'Cái chén phước lành mà chúng ta chúc phước, há chẳng phải là sự thông công với huyết Christ sao? Cái bánh chúng ta bẻ, há chẳng phải là sự thông công với thân Christ sao? Vì chúng ta dầu nhiều, đều là một thân, vì chỉ ăn một cái bánh.' Tiệc Thánh tạo ra sự THÔNG CÔNG THẬT với Christ — không chỉ là biểu tượng. 'Một bánh' (artos) = nguồn duy nhất tạo nên thân.",
+    "language": "vi",
+    "options": [
+      "Sự thông công với loài người — bánh chỉ là bánh (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Sự thông công với tổ phụ — không có ý nghĩa thuộc linh (như được mô tả trong sách)",
+      "Sự thông công với chính Phao-lô — vì ông dạy (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Chén phước = thông công với máu Christ; bánh bẻ ra = thông công với thân Christ; vì có MỘT BÁNH, chúng ta nhiều người là MỘT THÂN — đều dự phần cùng MỘT BÁNH"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Một bánh chứng minh một thân",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 11,
+    "verseStart": 30,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "content": "Theo 1 Cô-rinh-tô 11:30 (đặt trong ngữ cảnh 11:27-32), ba hậu quả Phao-lô nêu ra cho việc dự Tiệc Thánh không xứng đáng là gì?",
+    "explanation": "1 Cô-rinh-tô 11:30 — 'Vì cớ đó, trong anh em có nhiều kẻ tật nguyền, đau ốm, và có lắm kẻ ngủ.' 3 cấp độ: ASTHENĒS (yếu đuối) → ARRŌSTOS (đau ốm) → KOIMĀSTHAI (ngủ = chết). 'Ngủ' là euphemism Tân Ước cho cái chết tín hữu (cf. 1 Tê 4:13). Tiệc Thánh KHÔNG đùa được — Đức Chúa Trời kỷ luật bằng bệnh và sự chết.",
+    "language": "vi",
+    "options": [
+      "Mất ơn — bị xua đuổi — bị cô lập",
+      "Đổi đức tin — đổi tín ngưỡng — đổi hội thánh",
+      "Nhiều kẻ yếu đuối, nhiều kẻ đau ốm, không ít kẻ ngủ (chết)",
+      "Mất công việc — mất tiền bạc — mất bạn"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Yếu — đau — ngủ",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 12,
+    "verseStart": 8,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      0
+    ],
+    "verseEnd": 10,
+    "content": "Theo 1 Cô-rinh-tô 12:8-10, chín ân tứ thuộc linh cụ thể được liệt kê (theo thứ tự) là gì?",
+    "explanation": "1 Cô-rinh-tô 12:8-10 — '(1) Lời nói khôn ngoan, (2) lời nói tri thức, (3) đức tin, (4) ân tứ chữa bệnh, (5) làm phép lạ, (6) nói tiên tri, (7) phân biệt các thần, (8) nói các thứ tiếng lạ, (9) thông giải các thứ tiếng.' 9 ân tứ — chia 3 nhóm: khải thị (1-2), quyền năng (3-5), nói (6-9). Tất cả đến từ MỘT Đức Thánh Linh (12:11) — Linh phân phát tùy ý.",
+    "language": "vi",
+    "options": [
+      "Lời khôn ngoan, lời tri thức, đức tin, ân tứ chữa lành, làm phép lạ, nói tiên tri, phân biệt các thần, các thứ tiếng lạ, thông giải các thứ tiếng",
+      "Yêu thương, đức tin, hy vọng, ân điển, bình an, nhịn nhục, vui mừng, dịu dàng, tiết độ",
+      "Sứ đồ, tiên tri, tin lành, mục sư, giáo sư, người chữa lành, người giúp đỡ, người quản trị, người nói tiếng",
+      "Khôn ngoan, hiểu biết, kế hoạch, sức mạnh, kính sợ Chúa, kính trọng, vâng phục, công bình, nhân từ"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Chín ân tứ Linh",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "verseStart": 13,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo 1 Cô-rinh-tô 13:13 sâu — vì sao 'tình yêu thương' được gọi là 'lớn hơn cả' trong ba điều còn lại mãi (đức tin, hy vọng, tình yêu thương)?",
+    "explanation": "1 Cô-rinh-tô 13:13 — 'Nên bây giờ còn có ba điều này: đức tin, hy vọng, tình yêu thương; nhưng điều trọng hơn trong ba điều đó là tình yêu thương.' Đức tin kết thúc khi gặp Đấng tin (cf. Hê 11:1); hy vọng kết thúc khi nhận được điều mong (Rô 8:24); nhưng tình yêu là BẢN CHẤT của ĐCT — không bao giờ kết thúc (13:8 'tình yêu chẳng hề hư mất bao giờ').",
+    "language": "vi",
+    "options": [
+      "Vì tình yêu dễ thực hành nhất (theo cách trình bày của text) (như văn bản ghi rõ)",
+      "Vì đức tin và hy vọng đã hết tác dụng (như được mô tả trong sách) (xét theo nội dung gốc)",
+      "Vì Phao-lô thiên vị tình yêu (xét trong văn cảnh) (theo trình tự câu chuyện) (đối chiếu với các phần đoạn liên quan)",
+      "Vì khi Christ tái lâm, đức tin chuyển thành sự thấy tận mắt và hy vọng chuyển thành sự sở hữu — nhưng tình yêu vẫn TIẾP TỤC mãi mãi (vì ĐCT là tình yêu, 1 Gi 4:8)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Tình yêu lớn hơn — vì còn mãi",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 14,
+    "verseStart": 22,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      1
+    ],
+    "content": "Theo 1 Cô-rinh-tô 14:22, các tiếng lạ và lời tiên tri là dấu cho ai?",
+    "explanation": "1 Cô-rinh-tô 14:22 — 'Vậy thì các tiếng lạ là một dấu, chẳng phải cho người tin Chúa, song cho người không tin; còn lời tiên tri là một dấu, chẳng cho người không tin, song cho người tin Chúa.' Trích Ê-sai 28:11-12 (14:21) — Đức Chúa Trời nói qua 'tiếng lạ' với dân không tin để PHÁN XÉT họ. Tiếng lạ có chức năng phán xét; tiên tri có chức năng xây dựng.",
+    "language": "vi",
+    "options": [
+      "Tiếng lạ cho người tin; tiên tri cho người không tin",
+      "Tiếng lạ là dấu cho NGƯỜI KHÔNG TIN; tiên tri là dấu cho NGƯỜI TIN — không cho người không tin",
+      "Cả hai cho người tin (xét trong văn cảnh) (như được mô tả trong sách)",
+      "Cả hai cho người không tin (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Tiếng lạ — dấu cho người không tin",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verseStart": 24,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      2
+    ],
+    "verseEnd": 26,
+    "content": "Theo 1 Cô-rinh-tô 15:24-26, kẻ thù cuối cùng (eschatos echthros) sẽ bị tiêu diệt là ai, và khi nào Christ giao vương quốc lại cho Đức Chúa Cha?",
+    "explanation": "1 Cô-rinh-tô 15:24-26 — 'Kế đó, cuối cùng sẽ đến là lúc Ngài sẽ giao nước lại cho Đức Chúa Trời là Cha, sau khi Ngài đã phá diệt mọi đế quốc, mọi quyền cai trị, và mọi thế lực; vì Ngài phải cầm quyền cho đến chừng đặt những kẻ thù nghịch dưới chân mình. Kẻ thù bị hủy diệt sau cùng, tức là sự chết.' Mat 22:44/Tv 110:1 — kẻ thù dưới chân; sự chết là kẻ thù CUỐI cùng — bị hủy bằng sự sống lại của tất cả tín hữu.",
+    "language": "vi",
+    "options": [
+      "Sa-tan — khi Christ thắng trận (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "Tội lỗi — khi tín hữu được thánh hóa (như được mô tả trong sách)",
+      "Sự chết — khi mọi kẻ thù đã bị đặt dưới chân Christ, và khi đó Christ giao vương quốc lại cho Đức Chúa Cha",
+      "Bóng tối — khi vầng đông sáng láng (theo cách trình bày của text)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "Sự chết — kẻ thù cuối cùng",
+      "Nâng cao"
+    ]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verseStart": 45,
+    "difficulty": "hard",
+    "type": "multiple_choice_single",
+    "correctAnswer": [
+      3
+    ],
+    "content": "Theo 1 Cô-rinh-tô 15:45, Phao-lô đối chiếu 'A-đam đầu' với 'A-đam sau cùng' (eschatos Adam) thế nào?",
+    "explanation": "1 Cô-rinh-tô 15:45 — 'Người thứ nhất là A-đam đã được dựng nên thành một loài sanh linh sống; còn A-đam sau hết là một thần linh ban sự sống.' Trích Sáng 2:7. A-đam đầu chỉ NHẬN sự sống; Christ A-đam thứ hai BAN sự sống. Đối lập: tự nhiên (psychikon) vs thuộc linh (pneumatikon) — Christ phục sinh là khuôn mẫu cho thân thể tín hữu sẽ sống lại (15:49).",
+    "language": "vi",
+    "options": [
+      "Cả hai đều là loài người thường (theo cách trình bày của text) (xét theo nội dung gốc)",
+      "A-đam đầu cao trọng hơn A-đam sau (như được mô tả trong sách) (như văn bản ghi rõ)",
+      "A-đam sau là Đa-vít (xét trong văn cảnh) (theo trình tự câu chuyện)",
+      "A-đam đầu trở nên 'một linh hồn sống' (psychēn zōsan); A-đam sau cùng (Christ) trở nên 'một linh ban sự sống' (pneuma zōopoioun)"
+    ],
+    "tags": [
+      "Tân Ước",
+      "1 Cô-rinh-tô",
+      "Thư tín",
+      "A-đam đầu vs A-đam sau",
+      "Nâng cao"
+    ]
   }
 ]

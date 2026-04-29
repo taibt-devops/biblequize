@@ -1,0 +1,29 @@
+# Hybrid mode: API + Mysql + Redis in Docker, frontend runs natively via Vite.
+#
+# Why this exists:
+#   When FE runs via `npm run dev` on port 5173, the OAuth2 success handler
+#   on the API still needs to know where to redirect the browser after login.
+#   The base compose.yml ships the production-mode default (the dockerised
+#   web container on port 3000); this override flips that to localhost:5173.
+#
+# How to use:
+#
+#   1) Start the backend stack (skip the dockerised web container):
+#        docker compose -f compose.yml -f compose.local-fe.yml up -d api mysql redis
+#
+#   2) In a second terminal, run the Vite dev server:
+#        cd apps/web && npm run dev
+#
+#   3) Open http://localhost:5173 — Google OAuth will redirect here after login.
+#
+# Notes:
+#   - The base compose.yml already includes localhost:5173 in CORS_ORIGINS, so
+#     the FE on 5173 can call /api on the dockerised backend (port 8080) without
+#     extra config.
+#   - If you want to flip back to the full dockerised stack, just run the
+#     usual `docker compose up -d` (no `-f compose.local-fe.yml`) and the web
+#     container picks up port 3000 again.
+services:
+  api:
+    environment:
+      APP_FRONTEND_URL: http://localhost:5173

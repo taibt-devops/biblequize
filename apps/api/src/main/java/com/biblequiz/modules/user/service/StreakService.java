@@ -36,7 +36,8 @@ public class StreakService {
     private UserRepository userRepository;
 
     /**
-     * Called when user completes a ranked answer. Updates streak.
+     * Called when user completes a Daily Challenge or a ranked answer.
+     * Same-day calls are idempotent (early return when lastPlayedAt is today).
      */
     public void recordActivity(User user) {
         LocalDate today = LocalDate.now(ZoneOffset.UTC);

@@ -8,6 +8,7 @@ import com.biblequiz.modules.quiz.repository.QuestionRepository;
 import com.biblequiz.modules.quiz.repository.UserDailyProgressRepository;
 import com.biblequiz.modules.user.entity.User;
 import com.biblequiz.modules.user.repository.UserRepository;
+import com.biblequiz.modules.user.service.StreakService;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.MethodOrderer;
@@ -45,6 +46,9 @@ class DailyChallengeServiceTest {
 
     @Mock
     private UserDailyProgressRepository userDailyProgressRepository;
+
+    @Mock
+    private StreakService streakService;
 
     @InjectMocks
     private DailyChallengeService dailyChallengeService;
@@ -168,11 +172,74 @@ class DailyChallengeServiceTest {
         when(userRepository.findById(userId)).thenReturn(Optional.empty());
         when(userRepository.findByEmail(userId)).thenReturn(Optional.empty());
 
-        // Cache write still happens; UDP write is skipped.
+        // Cache write still happens; UDP write + streak update are skipped.
         dailyChallengeService.markCompleted(userId, 0, 0);
 
         verify(cacheService).put(anyString(), any(), any());
         verify(userDailyProgressRepository, never()).save(any());
+        verify(streakService, never()).recordActivity(any());
+    }
+
+    // ── Daily streak: markCompleted calls StreakService.recordActivity ───────
+
+    @Order(8)
+    @Test
+    void markCompleted_shouldCallRecordActivityOnce() {
+        String userId = "user-streak-1";
+        User user = new User();
+        user.setId(userId);
+
+        when(userRepository.findById(userId)).thenReturn(Optional.of(user));
+        when(userDailyProgressRepository.findByUserIdAndDate(eq(userId), any(LocalDate.class)))
+                .thenReturn(Optional.empty());
+
+        dailyChallengeService.markCompleted(userId, 100, 5);
+
+        verify(streakService, times(1)).recordActivity(user);
+    }
+
+    // ── Daily streak: graceful degradation if recordActivity throws ──────────
+
+    @Order(9)
+    @Test
+    void markCompleted_shouldStillCreditXpIfStreakUpdateFails() {
+        String userId = "user-streak-fail";
+        User user = new User();
+        user.setId(userId);
+
+        when(userRepository.findById(userId)).thenReturn(Optional.of(user));
+        when(userDailyProgressRepository.findByUserIdAndDate(eq(userId), any(LocalDate.class)))
+                .thenReturn(Optional.empty());
+        doThrow(new RuntimeException("simulated streak failure"))
+                .when(streakService).recordActivity(user);
+
+        // Must not propagate — cache + XP already done.
+        dailyChallengeService.markCompleted(userId, 100, 5);
+
+        verify(cacheService).put(anyString(), any(), any());
+        verify(userDailyProgressRepository).save(any(UserDailyProgress.class));
+        verify(streakService).recordActivity(user);
+    }
+
+    // ── Daily streak: lookup by email also triggers recordActivity ───────────
+
+    @Order(10)
+    @Test
+    void markCompleted_shouldResolveUserByEmailWhenIdLookupMisses() {
+        String email = "alice@example.com";
+        User user = new User();
+        user.setId("user-uuid-alice");
+        user.setEmail(email);
+
+        when(userRepository.findById(email)).thenReturn(Optional.empty());
+        when(userRepository.findByEmail(email)).thenReturn(Optional.of(user));
+        when(userDailyProgressRepository.findByUserIdAndDate(eq("user-uuid-alice"), any(LocalDate.class)))
+                .thenReturn(Optional.empty());
+
+        dailyChallengeService.markCompleted(email, 100, 5);
+
+        verify(streakService, times(1)).recordActivity(user);
+        verify(userDailyProgressRepository).save(any(UserDailyProgress.class));
     }
 
     // ── TC-DAILY-005: Different dates produce different question selections ──
