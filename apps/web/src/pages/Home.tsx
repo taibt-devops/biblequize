@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { useTranslation } from 'react-i18next'
 import ActivityFeed from '../components/ActivityFeed'
-import BasicQuizCard from '../components/BasicQuizCard'
 import ComebackModal from '../components/ComebackModal'
 import DailyBonusModal from '../components/DailyBonusModal'
 import DailyMissionsCard from '../components/DailyMissionsCard'
@@ -178,13 +177,10 @@ export default function Home() {
       {/* ── Featured Daily Challenge (hero CTA for tier-1) ── */}
       <FeaturedDailyChallenge />
 
-      {/* ── Bible Basics catechism unlock ── (Ranked gate, replaces XP/practice gate) */}
-      <BasicQuizCard />
-
       {/* ── Game Modes ──
-          Open access for everyone. Ranked is now gated by the Bible
-          Basics catechism (BasicQuizCard above) and no longer rendered
-          inside this grid — see GameModeGrid. */}
+          Open access for everyone. The Bible Basics catechism gate
+          (Ranked unlock) is surfaced inside the Ranked featured card
+          itself — see RankedFeaturedCard inside GameModeGrid. */}
       <section className="space-y-4">
         <div className="flex justify-between items-center">
           <h2 className="text-xl font-black tracking-tight text-on-surface">{t('home.gameModes')}</h2>
