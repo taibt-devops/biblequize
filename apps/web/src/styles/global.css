@@ -2376,3 +2376,72 @@ select {
   color: transparent;
   filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.25));
 }
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Card Polish Level 3 — Hover & Interaction (Option Y)
+   Smooth, subtle elevation + glow enhance on featured cards. CompactCard
+   hover already lives in `.compact-card-polished` above. Mobile: no
+   visual change because hover media-queries don't fire on touch.
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* Featured-card hover: lift + brighten the inner highlight + add a
+   gentle outer gold halo. Reuse the same transition curve everywhere
+   so movements feel consistent across the page. */
+.featured-warm-card,
+.featured-daily-warm {
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.featured-warm-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--gold-border-strong);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 240, 200, 0.08),
+    0 8px 36px rgba(0, 0, 0, 0.4),
+    0 0 32px rgba(212, 175, 55, 0.08);
+}
+
+.featured-warm-card[data-variant="ranked"]:hover {
+  /* A touch warmer/stronger than Practice — matches the "achievement"
+     personality already set up in Level 1. */
+  box-shadow:
+    inset 0 1px 0 rgba(255, 240, 200, 0.1),
+    0 8px 40px rgba(0, 0, 0, 0.42),
+    0 0 36px rgba(212, 175, 55, 0.12);
+}
+
+.featured-daily-warm:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 1px 0 var(--inner-highlight-daily),
+    0 12px 36px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(212, 175, 55, 0.08);
+}
+
+/* Icon micro-scale on card hover — runs on the gold-icon child only,
+   so neutral icons (timer, hint annotations) don't twitch. */
+.featured-warm-card .gold-icon,
+.featured-daily-warm .gold-icon {
+  transition: transform 0.3s ease;
+}
+
+.featured-warm-card:hover .gold-icon,
+.featured-daily-warm:hover .gold-icon {
+  transform: scale(1.05);
+}
+
+/* CTA button hover — keep the gold gradient feel but brighten the
+   middle stop and add a soft drop-shadow. Hits both the existing
+   `.gold-gradient` utility (which is applied to every featured CTA)
+   and any `gold-cta`-named usage if introduced later. */
+.gold-gradient {
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gold-gradient:hover:not(:disabled) {
+  background: linear-gradient(90deg, #f4d36e 0%, #ffe080 50%, #f4d36e 100%);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+}
