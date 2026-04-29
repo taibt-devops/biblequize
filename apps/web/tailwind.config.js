@@ -75,6 +75,9 @@ export default {
         headline: ['Be Vietnam Pro', 'system-ui', 'sans-serif'],
         body: ['Be Vietnam Pro', 'system-ui', 'sans-serif'],
         label: ['Be Vietnam Pro', 'system-ui', 'sans-serif'],
+        // V3 design — "Sacred Modernist Gaming"
+        sora: ['Sora', 'Be Vietnam Pro', 'system-ui', 'sans-serif'],
+        verse: ['"Crimson Pro"', 'Playfair Display', 'serif'],
         // Legacy
         serif: ['Playfair Display', 'serif'],
         cursive: ['Caveat', 'cursive'],

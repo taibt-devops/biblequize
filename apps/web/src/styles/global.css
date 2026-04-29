@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@400;700&family=Nunito:wght@400;500;600;700;800&family=Orbitron:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Crimson+Pro:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;700&family=Nunito:wght@400;500;600;700;800&family=Orbitron:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Sora:wght@400;500;600;700&family=Syne:wght@400;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -2444,4 +2444,25 @@ select {
 .gold-gradient:hover:not(:disabled) {
   background: linear-gradient(90deg, #f4d36e 0%, #ffe080 50%, #f4d36e 100%);
   box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   V3 Design Tokens — Sacred Modernist Gaming
+   Source of truth: docs/designs/home-design-studio.html (.v3-* classes).
+   Extends the Card Polish palette above; the gold-* tokens here are hex
+   solids for use inside `linear-gradient(...)` etc., while the
+   `--gold-glow-*` / `--gold-border-*` tokens above are alpha rgbas.
+   ────────────────────────────────────────────────────────────────────────── */
+:root {
+  --bg-deep: #0F1117;
+  --gold-primary: #D4AF37;
+  --gold-bright:  #F4D36E;
+  --gold-deep:    #8B6914;
+  --gold-gradient: linear-gradient(135deg, #F4D36E 0%, #D4AF37 50%, #8B6914 100%);
+  --text-primary: #F5F0E8;
+  --text-muted:   #A89F8E;
+  --text-dim:     #6B6358;
+  --text-gold:    #D4AF37;
+  --border-divider: rgba(212, 175, 55, 0.15);
+  --border-strong-v3: rgba(212, 175, 55, 0.4);
 }
