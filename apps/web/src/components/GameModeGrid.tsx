@@ -227,23 +227,10 @@ interface GameModeGridProps {
    * Early Ranked unlock flag — Tier-1 users who demonstrated ≥80%
    * accuracy over 10+ Practice answers bypass the Ranked tier gate.
    * Server-side {@code /api/me} returns {@code earlyRankedUnlock}.
-   * Only affects the Ranked card (Tournament remains tier-4 gated).
+   * Only affects the Ranked card; Tournament has no tier gate after
+   * the Option B soft-pivot.
    */
   earlyRankedUnlock?: boolean
-  /**
-   * Selects how many cards the grid renders.
-   *
-   * <ul>
-   *   <li>{@code 'tier2plus'} (default) — full 9-card layout with
-   *       primary/secondary/discovery sections. Used for the steady-
-   *       state Home, the standalone Game Modes page, etc.</li>
-   *   <li>{@code 'tier1'} — first-impression layout for brand-new
-   *       users: only Practice + Church Groups, both as medium
-   *       (secondary-style) cards. The other 7 modes are surfaced
-   *       via {@code <LockedModesTeaser>} below the grid.</li>
-   * </ul>
-   */
-  layout?: 'tier1' | 'tier2plus'
 }
 
 /* ── Component ── */
@@ -251,7 +238,6 @@ export default function GameModeGrid({
   userStats,
   userTier = 1,
   earlyRankedUnlock = false,
-  layout = 'tier2plus',
 }: GameModeGridProps = {}) {
   const { t } = useTranslation()
   const navigate = useNavigate()
@@ -649,27 +635,8 @@ export default function GameModeGrid({
     )
   }
 
-  // Tier-1 first-impression layout: only Practice + Church Groups, both
-  // sized as 'secondary' (medium) cards. The other 7 modes are exposed
-  // via <LockedModesTeaser> below the grid in Home.tsx.
-  if (layout === 'tier1') {
-    const tier1Cards = CARDS
-      .filter(c => c.id === 'practice' || c.id === 'group')
-      .map(c => ({ ...c, tier: 'secondary' as CardTier }))
-    return (
-      <div data-testid="game-mode-grid" data-layout="tier1" className="space-y-5">
-        <section
-          data-testid="game-mode-tier1-cards"
-          className="grid grid-cols-1 sm:grid-cols-2 gap-4"
-        >
-          {tier1Cards.map(renderCard)}
-        </section>
-      </div>
-    )
-  }
-
   return (
-    <div data-testid="game-mode-grid" data-layout="tier2plus" className="space-y-5">
+    <div data-testid="game-mode-grid" className="space-y-5">
       {/* Tier 1 — Primary (core loops): Practice + Ranked, taller/wider */}
       <section
         data-testid="game-mode-tier-primary"

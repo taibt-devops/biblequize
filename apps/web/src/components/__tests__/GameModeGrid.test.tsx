@@ -71,40 +71,25 @@ describe('GameModeGrid', () => {
     })
 
     /**
-     * layout='tier1' is the first-impression Home variant — only
-     * Practice + Church Groups are rendered so a brand-new tier-1
-     * user is not buried under nine cards. The other 7 modes are
-     * exposed via <LockedModesTeaser> below the grid (see Home.tsx
-     * Step 5 integration).
+     * After Option B (soft tier-pivot) the grid renders all 9 cards for
+     * every user — the tier-1-only "two cards plus locked teaser"
+     * variant was retired together with LockedModesTeaser. This test
+     * pins the open-access invariant.
      */
-    it("layout='tier1' renders only Practice + Church Groups", () => {
+    it('renders the full grid for tier-1 users (no layout filter)', () => {
       render(
         <MemoryRouter>
-          <GameModeGrid layout="tier1" userTier={1} />
+          <GameModeGrid userTier={1} />
         </MemoryRouter>,
       )
-      expect(screen.getByText('Luyện Tập')).toBeInTheDocument()
-      expect(screen.getByText('Nhóm Giáo Xứ')).toBeInTheDocument()
-      // Other modes must NOT be rendered in tier1 layout
-      expect(screen.queryByText('Thi Đấu Xếp Hạng')).not.toBeInTheDocument()
-      expect(screen.queryByText('Thử Thách Ngày')).not.toBeInTheDocument()
-      expect(screen.queryByText('Phòng Chơi')).not.toBeInTheDocument()
-      expect(screen.queryByText('Giải Đấu')).not.toBeInTheDocument()
-      expect(screen.queryByText('Mystery Mode')).not.toBeInTheDocument()
-      expect(screen.queryByText('Speed Round')).not.toBeInTheDocument()
-      expect(screen.queryByText('Chủ Đề Tuần')).not.toBeInTheDocument()
-    })
-
-    it("layout='tier2plus' (default) renders the full grid", () => {
-      render(
-        <MemoryRouter>
-          <GameModeGrid layout="tier2plus" userTier={2} />
-        </MemoryRouter>,
-      )
-      // Spot-check a few cards from each tier band
+      // Spot-check cards from each band: primary, secondary, discovery
       expect(screen.getByText('Luyện Tập')).toBeInTheDocument()
       expect(screen.getByText('Thi Đấu Xếp Hạng')).toBeInTheDocument()
+      expect(screen.getByText('Nhóm Giáo Xứ')).toBeInTheDocument()
+      expect(screen.getByText('Phòng Chơi')).toBeInTheDocument()
+      expect(screen.getByText('Giải Đấu')).toBeInTheDocument()
       expect(screen.getByText('Mystery Mode')).toBeInTheDocument()
+      expect(screen.getByText('Speed Round')).toBeInTheDocument()
     })
   })
 

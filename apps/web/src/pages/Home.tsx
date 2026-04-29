@@ -10,8 +10,8 @@ import EarlyRankedUnlockModal from '../components/EarlyRankedUnlockModal'
 import EmptyLeaderboardCTA from '../components/EmptyLeaderboardCTA'
 import FeaturedDailyChallenge from '../components/FeaturedDailyChallenge'
 import GameModeGrid from '../components/GameModeGrid'
-import LockedModesTeaser from '../components/LockedModesTeaser'
 import MilestoneBanner from '../components/MilestoneBanner'
+import TierPerksTeaser from '../components/TierPerksTeaser'
 import TierProgressBar from '../components/TierProgressBar'
 import TutorialOverlay from '../components/TutorialOverlay'
 import { useEarlyUnlockCelebration } from '../hooks/useEarlyUnlockCelebration'
@@ -197,16 +197,15 @@ export default function Home() {
       <FeaturedDailyChallenge />
 
       {/* ── Game Modes ──
-          Tier 1 sees only Practice + Church Groups (the rest live in
-          <LockedModesTeaser /> below). Tier 2+ sees the full grid. */}
+          Open access for everyone. Cards may surface their own per-mode
+          state (e.g. Ranked tier-2 gate with early-unlock hint, Tournament
+          matchmaking warning) — see GameModeGrid. */}
       <section className="space-y-4">
         <div className="flex justify-between items-center">
           <h2 className="text-xl font-black tracking-tight text-on-surface">{t('home.gameModes')}</h2>
-          {userTierLevel >= 2 && (
-            <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
-              {t('home.exploreModes', { count: 9 })}
-            </span>
-          )}
+          <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
+            {t('home.exploreModes', { count: 9 })}
+          </span>
         </div>
         <GameModeGrid
           userStats={{
@@ -217,7 +216,6 @@ export default function Home() {
           }}
           userTier={userTierLevel}
           earlyRankedUnlock={meData?.earlyRankedUnlock ?? false}
-          layout={userTierLevel === 1 ? 'tier1' : 'tier2plus'}
         />
       </section>
 
@@ -229,8 +227,8 @@ export default function Home() {
       {/* ── Journey Widget ── */}
       <JourneyWidget />
 
-      {/* ── Locked modes teaser (returns null when tier ≥ 5) ── */}
-      <LockedModesTeaser userTier={userTierLevel} totalPoints={totalPoints} />
+      {/* ── Aspirational next-tier perks (returns null at tier 6) ── */}
+      <TierPerksTeaser userTier={userTierLevel} totalPoints={totalPoints} />
 
       {/* ── Leaderboard + Feed ── */}
       <section data-testid="home-leaderboard" className="grid grid-cols-1 lg:grid-cols-12 gap-6">
