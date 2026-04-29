@@ -260,14 +260,26 @@ export default function Ranked() {
             </span>
           </div>
 
-          {nextTier ? (
-            <p data-testid="ranked-tier-progress-text" className="text-sm text-on-surface-variant">
-              {t('ranked.pointsToNext', {
-                points: pointsToNext.toLocaleString('vi-VN'),
-                tier: t(nextTier.nameKey),
-              })}
-            </p>
-          ) : (
+          {nextTier ? (() => {
+            const nextTierName = t(nextTier.nameKey)
+            const fullText = t('ranked.pointsToNext', {
+              points: pointsToNext.toLocaleString('vi-VN'),
+              tier: nextTierName,
+            })
+            // R1 polish: highlight nextTier name in gold + semibold without
+            // changing the i18n string (locale-agnostic — assumes tier name
+            // appears verbatim once in the translated sentence).
+            const idx = fullText.lastIndexOf(nextTierName)
+            const before = idx >= 0 ? fullText.slice(0, idx) : fullText
+            const after = idx >= 0 ? fullText.slice(idx + nextTierName.length) : ''
+            return (
+              <p data-testid="ranked-tier-progress-text" className="text-sm text-on-surface-variant">
+                {before}
+                <span className="font-semibold" style={{ color: '#e8a832' }}>{nextTierName}</span>
+                {after}
+              </p>
+            )
+          })() : (
             <p data-testid="ranked-tier-progress-text" className="text-sm text-secondary font-bold">
               {t('ranked.maxTier')}
             </p>
@@ -283,32 +295,65 @@ export default function Ranked() {
         </div>
       </header>
 
-      {/* ── Energy Card ── */}
-      <section data-testid="ranked-energy-display" className="glass-card rounded-xl p-6 border border-white/5 relative overflow-hidden">
-        <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
-          <span className="material-symbols-outlined text-8xl">bolt</span>
-        </div>
-        <div className="flex justify-between items-end mb-4">
-          <div>
-            <div className="flex items-center gap-2 text-on-surface-variant uppercase text-xs font-bold tracking-widest mb-1">
-              <span className="material-symbols-outlined text-sm">bolt</span>
-              {t('ranked.energy')}
-            </div>
-            <div className="text-4xl font-black text-on-surface">
-              {rankedStatus.livesRemaining}<span className="text-on-surface-variant text-xl font-normal">/{rankedStatus.dailyLives}</span>
-            </div>
+      {/* ── Energy + Streak (R2) ── */}
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+        {/* Energy Card (left ~60%) */}
+        <section
+          data-testid="ranked-energy-card"
+          className="md:col-span-7 glass-card rounded-xl p-6 border border-white/5"
+        >
+          <div className="flex items-center gap-2 text-on-surface-variant uppercase text-xs font-bold tracking-widest mb-2">
+            <span className="material-symbols-outlined text-sm" style={FILL_1}>bolt</span>
+            {t('ranked.energy')}
           </div>
-          <div className="text-right">
-            <div data-testid="ranked-reset-timer" className="flex items-center gap-1 text-on-surface-variant text-sm font-medium">
+          <div className="mb-3">
+            <span data-testid="ranked-energy-display" className="text-4xl font-black" style={{ color: '#e8a832' }}>
+              {rankedStatus.livesRemaining ?? 0}
+            </span>
+            <span className="text-on-surface-variant text-xl font-normal ml-1">
+              / {rankedStatus.dailyLives ?? 0}
+            </span>
+          </div>
+          <div className="h-2 w-full bg-primary-container rounded-full overflow-hidden mb-4">
+            <div
+              className="h-full gold-gradient rounded-full transition-all duration-700 ease-out"
+              style={{ width: `${energyPct}%` }}
+            />
+          </div>
+          <div className="flex justify-between items-center text-xs">
+            <span className="text-on-surface-variant">
+              {t('ranked.questionsLeft', { count: Math.floor((rankedStatus.livesRemaining ?? 0) / 5) })}
+            </span>
+            <span data-testid="ranked-reset-timer" className="flex items-center gap-1 text-on-surface-variant font-medium">
               <span className="material-symbols-outlined text-sm">schedule</span>
               {t('ranked.recovery')}: <span data-testid="ranked-energy-timer">{timeLeft || '--:--:--'}</span>
-            </div>
+            </span>
           </div>
-        </div>
-        <div className="h-3 w-full bg-primary-container rounded-full overflow-hidden">
-          <div className="h-full gold-gradient rounded-full shadow-[0_0_10px_rgba(248,189,69,0.4)]" style={{ width: `${energyPct}%` }} />
-        </div>
-      </section>
+        </section>
+
+        {/* Streak Card (right ~40%) */}
+        <section
+          className="md:col-span-5 rounded-xl p-6 border flex flex-col justify-center"
+          style={{
+            background: 'linear-gradient(135deg, rgba(251,146,60,0.08), rgba(232,168,50,0.04))',
+            borderColor: 'rgba(251,146,60,0.2)',
+          }}
+        >
+          <div className="flex items-center gap-2 uppercase text-xs font-bold tracking-widest mb-3" style={{ color: 'rgba(251,146,60,0.9)' }}>
+            <span className="text-base" aria-hidden>🔥</span>
+            {t('ranked.streakHeader')}
+          </div>
+          <div className="flex items-baseline gap-3 mb-1">
+            <span className="text-4xl" aria-hidden style={{ filter: 'drop-shadow(0 0 8px rgba(251,146,60,0.4))' }}>🔥</span>
+            <span className="text-3xl font-black" style={{ color: '#fb923c' }}>
+              {t('ranked.streakDays', { count: user?.currentStreak ?? 0 })}
+            </span>
+          </div>
+          <p className="text-sm text-on-surface-variant">
+            {(user?.currentStreak ?? 0) > 0 ? t('ranked.streakKeepGoing') : t('ranked.streakStart')}
+          </p>
+        </section>
+      </div>
 
       {/* ── Today's Progress + Current Book ── */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">

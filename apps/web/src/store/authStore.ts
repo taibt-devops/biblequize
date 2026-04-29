@@ -7,6 +7,7 @@ interface User {
   email: string
   avatar?: string
   role?: string
+  currentStreak?: number
 }
 
 interface AuthState {
@@ -141,7 +142,8 @@ export const useAuthStore = create<AuthState>((set, get) => ({
         name: meRes.data?.name ?? name ?? 'User',
         email: meRes.data?.email ?? email ?? '',
         avatar: meRes.data?.avatarUrl ?? avatar ?? undefined,
-        role: normalizedRole
+        role: normalizedRole,
+        currentStreak: typeof meRes.data?.currentStreak === 'number' ? meRes.data.currentStreak : undefined,
       }
       // Update localStorage profile cache
       localStorage.setItem('userName', user.name)

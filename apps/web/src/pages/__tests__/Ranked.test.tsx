@@ -9,9 +9,13 @@ vi.mock('react-router-dom', async () => {
   return { ...actual, useNavigate: () => mockNavigate }
 })
 
+// Tests can override the user (e.g. set currentStreak) per case via
+// mockUseAuth.mockReturnValueOnce(...). beforeEach resets to default.
+const DEFAULT_USER = { name: 'Test', email: 'test@test.com', currentStreak: 0 }
+const mockUseAuth = vi.fn(() => ({ user: DEFAULT_USER }))
 vi.mock('../../store/authStore', () => ({
-  useAuthStore: () => ({ user: { name: 'Test', email: 'test@test.com' } }),
-  useAuth: () => ({ user: { name: 'Test', email: 'test@test.com' } }),
+  useAuthStore: () => mockUseAuth(),
+  useAuth: () => mockUseAuth(),
 }))
 
 vi.mock('../../hooks/useRankedDataSync', () => ({
@@ -80,6 +84,7 @@ const TIER_PROGRESS_MAX = {
 describe('Ranked Mode Dashboard', () => {
   beforeEach(() => {
     vi.clearAllMocks()
+    mockUseAuth.mockImplementation(() => ({ user: DEFAULT_USER }))
     mockApiGet.mockImplementation((url: string) => {
       if (url.includes('tier-progress')) return Promise.resolve({ data: TIER_PROGRESS_TIER2 })
       if (url.includes('ranked-status')) return Promise.resolve({ data: RANKED_STATUS })
@@ -343,6 +348,75 @@ describe('Ranked Mode Dashboard', () => {
       const text = screen.getByTestId('ranked-tier-progress-text')
       expect(text).toHaveTextContent('10.000')
       expect(text).toHaveTextContent('Hiền Triết')
+    })
+  })
+
+  // ── R2: Energy + Streak 2-column row ──
+
+  it('R2: energy display shows livesRemaining (75) — preserves testid', async () => {
+    renderRanked()
+    await waitFor(() => {
+      const display = screen.getByTestId('ranked-energy-display')
+      expect(display).toHaveTextContent('75')
+    })
+  })
+
+  it('R2: energy footer shows "~Z câu" hint (Z = floor(energy/5))', async () => {
+    // 75 energy → 75/5 = 15 questions
+    renderRanked()
+    await waitFor(() => {
+      expect(screen.getByText(/~15 câu/)).toBeInTheDocument()
+    })
+  })
+
+  it('R2: energy timer rendered in HH:MM:SS format inside footer', async () => {
+    renderRanked()
+    await waitFor(() => {
+      const timer = screen.getByTestId('ranked-energy-timer')
+      // Format HH:MM:SS — countdown driven by resetAt 1h from now
+      expect(timer.textContent).toMatch(/^\d{2}:\d{2}:\d{2}$/)
+    })
+  })
+
+  it('R2: streak card shows "N ngày" + keep-going caption when streak > 0', async () => {
+    mockUseAuth.mockImplementation(() => ({ user: { ...DEFAULT_USER, currentStreak: 7 } }))
+    renderRanked()
+    await waitFor(() => {
+      expect(screen.getByText(/7\s+ngày/)).toBeInTheDocument()
+      expect(screen.getByText('Đừng dừng — chơi tiếp!')).toBeInTheDocument()
+    })
+  })
+
+  it('R2: streak card shows "Bắt đầu streak hôm nay!" when streak = 0', async () => {
+    // Default user has currentStreak: 0
+    renderRanked()
+    await waitFor(() => {
+      expect(screen.getByText('Bắt đầu streak hôm nay!')).toBeInTheDocument()
+      // Should NOT show keep-going caption
+      expect(screen.queryByText('Đừng dừng — chơi tiếp!')).not.toBeInTheDocument()
+    })
+  })
+
+  it('R2: no decorative bolt watermark icon in energy section', async () => {
+    renderRanked()
+    await waitFor(() => {
+      expect(screen.getByTestId('ranked-energy-card')).toBeInTheDocument()
+    })
+    // Watermark used opacity-10 + text-8xl on a positioned div — should be gone
+    const energyCard = screen.getByTestId('ranked-energy-card')
+    expect(energyCard.querySelector('.text-8xl')).toBeNull()
+    expect(energyCard.querySelector('.opacity-10')).toBeNull()
+  })
+
+  it('R2: nextTier name styled gold + semibold in tier progress text', async () => {
+    renderRanked()
+    await waitFor(() => {
+      const text = screen.getByTestId('ranked-tier-progress-text')
+      const goldSpan = text.querySelector('span.font-semibold') as HTMLElement | null
+      expect(goldSpan).not.toBeNull()
+      // happy-dom preserves the original hex form (vs jsdom which converts to rgb)
+      expect(goldSpan!.style.color.toLowerCase()).toBe('#e8a832')
+      expect(goldSpan!.textContent).toBe('Môn Đồ') // default mock = tier 2 → next Môn Đồ
     })
   })
 })

@@ -1621,7 +1621,12 @@
     "start": "Start",
     "tryAgainLater": "Please try again later",
     "pointsToNext": "{{points}} points to {{tier}}",
-    "maxTier": "Highest tier reached 👑"
+    "maxTier": "Highest tier reached 👑",
+    "questionsLeft": "~{{count}} more questions",
+    "streakHeader": "On fire",
+    "streakDays": "{{count}} days",
+    "streakKeepGoing": "Don't stop — keep going!",
+    "streakStart": "Start your streak today!"
   },
   "onboarding": {
     "slide1Title": "Welcome to BibleQuiz",

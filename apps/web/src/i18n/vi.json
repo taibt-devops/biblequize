@@ -1621,7 +1621,12 @@
     "start": "Bắt đầu",
     "tryAgainLater": "Vui lòng thử lại sau",
     "pointsToNext": "Còn {{points}} điểm nữa lên {{tier}}",
-    "maxTier": "Đã đạt tier cao nhất 👑"
+    "maxTier": "Đã đạt tier cao nhất 👑",
+    "questionsLeft": "Đủ chơi ~{{count}} câu nữa",
+    "streakHeader": "Đang cháy",
+    "streakDays": "{{count}} ngày",
+    "streakKeepGoing": "Đừng dừng — chơi tiếp!",
+    "streakStart": "Bắt đầu streak hôm nay!"
   },
   "onboarding": {
     "slide1Title": "Chào mừng đến BibleQuiz",
