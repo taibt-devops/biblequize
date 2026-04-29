@@ -88,7 +88,7 @@ test.describe('W-M09 Church Groups — L1 Smoke @smoke @groups', () => {
     // SECTION 1: SETUP — fetch groupId from test3's groups (seeded in global-setup)
     // ============================================================
     const page = tier3Page
-    const groupsRes = await page.request.get('http://localhost:8080/api/groups/my-groups')
+    const groupsRes = await page.request.get(`${process.env.PLAYWRIGHT_API_URL ?? 'http://localhost:8080'}/api/groups/my-groups`)
     const groups = (await groupsRes.json()) as Array<{ id: string }>
     if (!groups.length) {
       test.skip(true, 'No groups for test3 — global-setup seed-group failed')

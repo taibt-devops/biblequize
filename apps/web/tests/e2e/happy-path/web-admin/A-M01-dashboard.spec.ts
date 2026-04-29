@@ -9,7 +9,7 @@
 import { test, expect } from '../../fixtures/auth'
 import { AdminDashboardPage } from '../../pages/admin/AdminDashboardPage'
 
-const API_BASE = 'http://localhost:8080'
+const API_BASE = process.env.PLAYWRIGHT_API_URL ?? 'http://localhost:8080'
 
 test.describe('A-M01 Admin Dashboard', () => {
   // ── A-M01-L2-001 — Dashboard KPI cards: GET /api/admin/dashboard/kpi ──

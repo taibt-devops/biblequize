@@ -14,7 +14,7 @@ import { test, expect } from '../../fixtures/auth'
 const VI_DIACRITIC =
   /[àáảãạăằắẳẵặâầấẩẫậèéẻẽẹêềếểễệìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳýỷỹỵđÀÁẢÃẠĂẰẮẲẴẶÂẦẤẨẪẬÈÉẺẼẸÊỀẾỂỄỆÌÍỈĨỊÒÓỎÕỌÔỒỐỔỖỘƠỜỚỞỠỢÙÚỦŨỤƯỪỨỬỮỰỲÝỶỸỴĐ]/
 
-const BASE = 'http://localhost:5173'
+const BASE = process.env.PLAYWRIGHT_BASE_URL ?? 'http://localhost:5173'
 
 interface RouteCase {
   id: string

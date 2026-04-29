@@ -11,7 +11,7 @@
 
 import { test, expect } from '../../fixtures/auth'
 
-const API_BASE = 'http://localhost:8080'
+const API_BASE = process.env.PLAYWRIGHT_API_URL ?? 'http://localhost:8080'
 
 // ═══════════════════════════════════════════════════════════════════════════
 // A-M11 — Notifications Broadcast

@@ -4,9 +4,14 @@
  * Deletes seeded test data via DELETE /api/admin/seed/test-data.
  */
 
-const API_BASE = 'http://localhost:8080'
+const API_BASE = process.env.PLAYWRIGHT_API_URL ?? 'http://localhost:8080'
 
 async function globalTeardown(): Promise<void> {
+  if (process.env.PLAYWRIGHT_KEEP_TEST_DATA === '1' || process.env.PLAYWRIGHT_BASE_URL) {
+    console.log('[global-teardown] Keeping test data (remote run / explicit opt-in)')
+    return
+  }
+
   // Login admin to get bearer token
   const loginRes = await fetch(`${API_BASE}/api/auth/mobile/login`, {
     method: 'POST',

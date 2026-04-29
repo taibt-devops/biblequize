@@ -29,8 +29,14 @@ type AuthFixtures = {
 }
 
 // Login helper: returns Bearer token for API requests
+const API_BASE =
+  process.env.PLAYWRIGHT_API_URL ??
+  ((process.env.PLAYWRIGHT_BASE_URL ?? 'http://localhost:5173') === 'http://localhost:5173'
+    ? 'http://localhost:8080'
+    : (process.env.PLAYWRIGHT_BASE_URL as string))
+
 async function getBearerToken(email: string): Promise<string> {
-  const res = await fetch('http://localhost:8080/api/auth/mobile/login', {
+  const res = await fetch(`${API_BASE}/api/auth/mobile/login`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, password: 'Test@123456' }),
@@ -93,7 +99,7 @@ export const test = base.extend<AuthFixtures>({
   adminPage: async ({ browser }, use) => {
     // Get admin access token once so page.request.* calls authenticate correctly
     // (storageState only has refresh_token cookie; Bearer header required for /api/admin/**)
-    const loginRes = await fetch('http://localhost:8080/api/auth/mobile/login', {
+    const loginRes = await fetch(`${API_BASE}/api/auth/mobile/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: 'admin@biblequiz.test', password: 'Test@123456' }),

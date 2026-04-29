@@ -9,7 +9,7 @@
 import { test, expect } from '../../fixtures/auth'
 import { LoginPage } from '../../pages/LoginPage'
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = process.env.PLAYWRIGHT_API_URL ?? 'http://localhost:8080'
 const TEST3_EMAIL = 'test3@dev.local'
 const PASSWORD = 'Test@123456'
 

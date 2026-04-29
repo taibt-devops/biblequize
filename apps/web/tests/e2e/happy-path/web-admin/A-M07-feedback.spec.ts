@@ -8,7 +8,7 @@
 
 import { test, expect } from '../../fixtures/auth'
 
-const API_BASE = 'http://localhost:8080'
+const API_BASE = process.env.PLAYWRIGHT_API_URL ?? 'http://localhost:8080'
 
 test.describe('A-M07 Feedback & Moderation', () => {
   // ── A-M07-L2-001 — List feedback with status filter ──

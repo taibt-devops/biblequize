@@ -166,12 +166,12 @@ test.describe('W-M06 Multiplayer Lobby — L1 Smoke @smoke @multiplayer', () => 
     // ============================================================
     const page = tier3Page
     // Force vi language to assert Vietnamese mode labels (storage-state defaults to en)
-    await page.goto('http://localhost:5173/')
+    await page.goto(`${process.env.PLAYWRIGHT_BASE_URL ?? 'http://localhost:5173'}/`)
     await page.evaluate(() => {
       localStorage.setItem('quizLanguage', 'vi')
       localStorage.setItem('i18nextLng', 'vi')
     })
-    await page.goto('http://localhost:5173/room/create')
+    await page.goto(`${process.env.PLAYWRIGHT_BASE_URL ?? 'http://localhost:5173'}/room/create`)
     await page.waitForSelector('[data-testid="create-room-page"]')
 
     // ============================================================

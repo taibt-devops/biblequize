@@ -33,7 +33,7 @@ test.describe('W-M05 Daily Challenge', () => {
     page,
   }) => {
     // Direct API call without auth
-    const res = await page.request.get('http://localhost:8080/api/daily-challenge?language=vi')
+    const res = await page.request.get(`${API_BASE}/api/daily-challenge?language=vi`)
     expect(res.status()).toBe(200)
 
     const body = await res.json()
@@ -77,7 +77,7 @@ test.describe('W-M05 Daily Challenge', () => {
     tier3Page: page,
   }) => {
     // Direct API call
-    const res = await page.request.post('http://localhost:8080/api/daily-challenge/start')
+    const res = await page.request.post(`${API_BASE}/api/daily-challenge/start`)
     expect(res.status()).toBe(200)
 
     const body = await res.json()
@@ -160,7 +160,7 @@ test.describe('W-M05 Daily Challenge', () => {
 
     // Section 4: API Verification — check completion
     // Re-fetch daily challenge to check alreadyCompleted
-    const checkRes = await page.request.get('http://localhost:8080/api/daily-challenge?language=vi')
+    const checkRes = await page.request.get(`${API_BASE}/api/daily-challenge?language=vi`)
     if (checkRes.ok()) {
       const checkBody = await checkRes.json()
       // If the frontend wired POST /complete, alreadyCompleted should be true
@@ -176,7 +176,7 @@ test.describe('W-M05 Daily Challenge', () => {
   }) => {
     // Setup: mark daily as completed via API
     const token = await testApi.loginAs(TEST_EMAIL, 'Test@123456')
-    const completeRes = await fetch('http://localhost:8080/api/daily-challenge/complete', {
+    const completeRes = await fetch(`${API_BASE}/api/daily-challenge/complete`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -190,7 +190,7 @@ test.describe('W-M05 Daily Challenge', () => {
     await dailyPage.goto()
 
     // Section 4: API Verification
-    const apiRes = await page.request.get('http://localhost:8080/api/daily-challenge?language=vi')
+    const apiRes = await page.request.get(`${API_BASE}/api/daily-challenge?language=vi`)
     if (apiRes.ok()) {
       const body = await apiRes.json()
       // If complete endpoint worked, alreadyCompleted should be true
@@ -203,7 +203,7 @@ test.describe('W-M05 Daily Challenge', () => {
     }
 
     // Verify idempotent: second POST /complete should return alreadyCompleted
-    const secondRes = await fetch('http://localhost:8080/api/daily-challenge/complete', {
+    const secondRes = await fetch(`${API_BASE}/api/daily-challenge/complete`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -279,15 +279,15 @@ test.describe('W-M05 Daily Challenge', () => {
     page,
   }) => {
     // Guest can GET questions
-    const questionsRes = await page.request.get('http://localhost:8080/api/daily-challenge?language=vi')
+    const questionsRes = await page.request.get(`${API_BASE}/api/daily-challenge?language=vi`)
     expect(questionsRes.status()).toBe(200)
 
     // Guest can start session
-    const startRes = await page.request.post('http://localhost:8080/api/daily-challenge/start')
+    const startRes = await page.request.post(`${API_BASE}/api/daily-challenge/start`)
     expect(startRes.status()).toBe(200)
 
     // Guest CANNOT get result (401)
-    const resultRes = await page.request.get('http://localhost:8080/api/daily-challenge/result')
+    const resultRes = await page.request.get(`${API_BASE}/api/daily-challenge/result`)
     expect(resultRes.status()).toBe(401)
   })
 
