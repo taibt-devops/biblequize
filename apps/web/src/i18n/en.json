@@ -1626,7 +1626,11 @@
     "streakHeader": "On fire",
     "streakDays": "{{count}} days",
     "streakKeepGoing": "Don't stop — keep going!",
-    "streakStart": "Start your streak today!"
+    "streakStart": "Start your streak today!",
+    "questionsLeftToday": "{{count}} questions left counting toward rank",
+    "deltaVsYesterday": "vs yesterday",
+    "accuracy": "Accuracy",
+    "correctOfTotal": "{{correct}}/{{total}} correct"
   },
   "onboarding": {
     "slide1Title": "Welcome to BibleQuiz",

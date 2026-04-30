@@ -1626,7 +1626,11 @@
     "streakHeader": "Đang cháy",
     "streakDays": "{{count}} ngày",
     "streakKeepGoing": "Đừng dừng — chơi tiếp!",
-    "streakStart": "Bắt đầu streak hôm nay!"
+    "streakStart": "Bắt đầu streak hôm nay!",
+    "questionsLeftToday": "Còn {{count}} câu được tính rank",
+    "deltaVsYesterday": "so với hôm qua",
+    "accuracy": "Độ chính xác",
+    "correctOfTotal": "{{correct}}/{{total}} câu đúng"
   },
   "onboarding": {
     "slide1Title": "Chào mừng đến BibleQuiz",

@@ -59,15 +59,14 @@
 - `expect(page.getByTestId('ranked-today-progress')).toBeVisible()`
 - `expect(page.getByTestId('ranked-questions-counted')).toBeVisible()`
 - `expect(page.getByTestId('ranked-points-today')).toBeVisible()`
-- `expect(page.getByTestId('ranked-user-rank')).toBeVisible()`
 
 **Cleanup**: none
 
 **Notes**:
-- [NEEDS TESTID: ranked-today-progress] — section "Hôm Nay"
-- [NEEDS TESTID: ranked-questions-counted] — "{questionsCounted}/{cap}" display
-- [NEEDS TESTID: ranked-points-today] — points today (large number)
-- [NEEDS TESTID: ranked-user-rank] — "#N" rank display
+- [NEEDS TESTID: ranked-today-progress] — Card 1 progress bar (3px) under "Câu hôm nay"
+- [NEEDS TESTID: ranked-questions-counted] — value of "{questionsCounted}/{cap}" in Card 1
+- [NEEDS TESTID: ranked-points-today] — points today (large gold number) in Card 2
+- Rank #N display removed in R3 redesign (2026-04-30) — rank-only in Season card; assertion belongs to W-M04-L1-005
 
 ---
 
@@ -238,10 +237,9 @@
 | Energy display "{N}/{N}" | `ranked-energy-display` | Ranked.tsx |
 | Energy countdown timer | `ranked-energy-timer` | Ranked.tsx |
 | Start ranked button | `ranked-start-btn` | Ranked.tsx |
-| Today section | `ranked-today-progress` | Ranked.tsx |
+| Today progress bar (Card 1) | `ranked-today-progress` | Ranked.tsx |
 | Questions counted | `ranked-questions-counted` | Ranked.tsx |
 | Points today | `ranked-points-today` | Ranked.tsx |
-| User rank | `ranked-user-rank` | Ranked.tsx |
 | Current book section | `ranked-current-book` | Ranked.tsx |
 | Current book name | `ranked-current-book-name` | Ranked.tsx |
 | Current book progress | `ranked-current-book-progress` | Ranked.tsx |

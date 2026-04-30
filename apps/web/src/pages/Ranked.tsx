@@ -49,6 +49,12 @@ interface RankedStatus {
   }
   askedQuestionIdsToday?: string[]
   askedQuestionCountToday?: number
+  // TODO: BE-EXTEND-RANKED-STATUS — accuracy/delta not yet exposed by
+  // /api/me/ranked-status. When backend ships these, the FE renders
+  // the third stats card (accuracy) and the delta line on points card.
+  dailyAccuracy?: number  // 0-1
+  dailyCorrect?: number   // numerator for the "{correct}/{total}" subtitle
+  dailyDelta?: number     // points delta vs yesterday
 }
 
 // Tier data centralised in `data/tiers.ts` (single source of truth).
@@ -306,12 +312,12 @@ export default function Ranked() {
             <span className="material-symbols-outlined text-sm" style={FILL_1}>bolt</span>
             {t('ranked.energy')}
           </div>
-          <div className="mb-3">
-            <span data-testid="ranked-energy-display" className="text-4xl font-black" style={{ color: '#e8a832' }}>
+          <div data-testid="ranked-energy-display" className="mb-3">
+            <span className="text-4xl font-black" style={{ color: '#e8a832' }}>
               {rankedStatus.livesRemaining ?? 0}
             </span>
             <span className="text-on-surface-variant text-xl font-normal ml-1">
-              / {rankedStatus.dailyLives ?? 0}
+              /{rankedStatus.dailyLives ?? 0}
             </span>
           </div>
           <div className="h-2 w-full bg-primary-container rounded-full overflow-hidden mb-4">
@@ -355,66 +361,112 @@ export default function Ranked() {
         </section>
       </div>
 
-      {/* ── Today's Progress + Current Book ── */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        {/* Today's Progress */}
-        <section data-testid="ranked-today-progress" className="lg:col-span-7 glass-card rounded-xl p-6 border border-white/5 min-h-[180px]">
-          <h3 className="text-sm font-bold text-on-surface-variant uppercase tracking-widest flex items-center gap-2 mb-6">
-            <span className="material-symbols-outlined text-sm">leaderboard</span>
-            {t('ranked.today')}
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            <div>
-              <div className="text-on-surface-variant text-xs mb-1">{t('ranked.questionsCounted')}</div>
-              <div data-testid="ranked-questions-counted" className="font-bold text-on-surface mb-2">{rankedStatus.questionsCounted}<span className="text-on-surface-variant font-normal">/{rankedStatus.cap}</span></div>
-              <div className="h-1 w-full bg-primary-container rounded-full overflow-hidden">
-                <div className="h-full bg-secondary/60 rounded-full" style={{ width: `${rankedStatus.cap > 0 ? (rankedStatus.questionsCounted / rankedStatus.cap) * 100 : 0}%` }} />
+      {/* ── 3 Stats Cards (R3) ── */}
+      {/*
+        Note: rank #N display removed from this row — rank lives only in
+        the Season card below (R5). testid ranked-user-rank is no longer
+        rendered; corresponding e2e assertion removed in W-M04-L1-002.
+      */}
+      {(() => {
+        const questionsCap = rankedStatus.cap || 0
+        const questionsAnswered = rankedStatus.questionsCounted ?? 0
+        const questionsLeft = Math.max(0, questionsCap - questionsAnswered)
+        const questionsPct = questionsCap > 0 ? (questionsAnswered / questionsCap) * 100 : 0
+        const points = rankedStatus.pointsToday ?? 0
+        const delta = rankedStatus.dailyDelta
+        const showDelta = typeof delta === 'number' && delta !== 0
+        const accuracyRaw = rankedStatus.dailyAccuracy
+        const showAccuracy = typeof accuracyRaw === 'number'
+        const accuracyPct = showAccuracy ? Math.round(accuracyRaw! * 100) : null
+        const correctCount = rankedStatus.dailyCorrect
+        return (
+          <div className={`grid grid-cols-1 sm:grid-cols-2 ${showAccuracy ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-3`}>
+            {/* Card 1: questions counted */}
+            <div className="glass-card rounded-xl p-5 border border-white/5">
+              <div className="text-on-surface-variant text-xs uppercase tracking-widest mb-2">
+                {t('ranked.questionsCounted')}
+              </div>
+              <div className="text-2xl font-black text-on-surface mb-1">
+                <span data-testid="ranked-questions-counted">{questionsAnswered}</span>
+                <span className="text-on-surface-variant font-normal text-lg">/{questionsCap}</span>
+              </div>
+              <div className="text-xs text-on-surface-variant mb-3">
+                {t('ranked.questionsLeftToday', { count: questionsLeft })}
+              </div>
+              <div className="h-[3px] w-full bg-primary-container rounded-full overflow-hidden">
+                <div
+                  data-testid="ranked-today-progress"
+                  className="h-full gold-gradient rounded-full transition-all duration-700 ease-out"
+                  style={{ width: `${questionsPct}%` }}
+                />
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center border-l border-r border-outline-variant/10">
-              <div className="text-on-surface-variant text-xs mb-1">{t('ranked.pointsToday')}</div>
-              <div data-testid="ranked-points-today" className="text-4xl font-black text-secondary">{rankedStatus.pointsToday ?? 0}</div>
-            </div>
-            <div className="flex flex-col items-end justify-center">
-              <div className="text-on-surface-variant text-xs mb-1">{t('ranked.ranking')}</div>
-              <div data-testid="ranked-user-rank" className="text-xl font-bold text-on-surface flex items-center gap-2">
-                <span>#{userRank?.rank ?? '—'}</span>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        {/* Current Book */}
-        <section className="lg:col-span-5 glass-card rounded-xl p-6 border border-white/5 relative">
-          <div className="absolute -left-1 top-6 w-1 h-12 bg-secondary rounded-full shadow-[0_0_10px_rgba(248,189,69,0.5)]" />
-          <h3 className="text-sm font-bold text-on-surface-variant uppercase tracking-widest flex items-center gap-2 mb-4">
-            <span className="material-symbols-outlined text-sm">menu_book</span>
-            {t('ranked.currentlyPlaying')}
-          </h3>
-          <div className="flex justify-between items-start mb-4">
-            <div>
-              <h4 data-testid="ranked-current-book" className="text-3xl font-black text-on-surface tracking-tight">
-                <span data-testid="ranked-current-book-name">{rankedStatus.currentBook}</span>
-              </h4>
-              <p data-testid="ranked-current-book-progress" className="text-sm text-on-surface-variant">
-                {rankedStatus.bookProgress ? t('ranked.bookOf', { current: rankedStatus.bookProgress.currentIndex + 1, total: rankedStatus.bookProgress.totalBooks }) : ''}
-              </p>
+            {/* Card 2: points today */}
+            <div className="glass-card rounded-xl p-5 border border-white/5">
+              <div className="text-on-surface-variant text-xs uppercase tracking-widest mb-2">
+                {t('ranked.pointsToday')}
+              </div>
+              <div data-testid="ranked-points-today" className="text-3xl font-black mb-1" style={{ color: '#e8a832' }}>
+                {points}
+              </div>
+              {showDelta && (
+                <div
+                  data-testid="ranked-points-delta"
+                  className="text-xs font-medium"
+                  style={{ color: delta! > 0 ? '#4ade80' : 'rgba(225,225,241,0.6)' }}
+                >
+                  {delta! > 0 ? '↑' : '↓'} {delta! > 0 ? '+' : ''}{delta} {t('ranked.deltaVsYesterday')}
+                </div>
+              )}
             </div>
-            <span className="bg-surface-container-high text-secondary text-[10px] font-bold px-3 py-1 rounded-full border border-secondary/20 uppercase tracking-tighter">
-              {difficultyLabel}
-            </span>
+
+            {/* Card 3: accuracy — only when BE provides it */}
+            {showAccuracy && (
+              <div className="glass-card rounded-xl p-5 border border-white/5">
+                <div className="text-on-surface-variant text-xs uppercase tracking-widest mb-2">
+                  {t('ranked.accuracy')}
+                </div>
+                <div data-testid="ranked-accuracy" className="text-2xl font-black text-on-surface mb-1">
+                  {accuracyPct}%
+                </div>
+                {typeof correctCount === 'number' && (
+                  <div className="text-xs text-on-surface-variant">
+                    {t('ranked.correctOfTotal', { correct: correctCount, total: questionsAnswered })}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
-          <div className="h-1 w-full bg-primary-container rounded-full overflow-hidden">
-            <div className="h-full gold-gradient rounded-full" style={{ width: `${bookPct}%` }} />
+        )
+      })()}
+
+      {/* ── Currently Playing ── */}
+      <section className="glass-card rounded-xl p-6 border border-white/5">
+        <h3 className="text-sm font-bold text-on-surface-variant uppercase tracking-widest flex items-center gap-2 mb-4">
+          <span className="material-symbols-outlined text-sm">menu_book</span>
+          {t('ranked.currentlyPlaying')}
+        </h3>
+        <div className="flex justify-between items-start mb-4">
+          <div>
+            <h4 data-testid="ranked-current-book" className="text-3xl font-black text-on-surface tracking-tight">
+              <span data-testid="ranked-current-book-name">{rankedStatus.currentBook}</span>
+            </h4>
+            <p data-testid="ranked-current-book-progress" className="text-sm text-on-surface-variant">
+              {rankedStatus.bookProgress ? t('ranked.bookOf', { current: rankedStatus.bookProgress.currentIndex + 1, total: rankedStatus.bookProgress.totalBooks }) : ''}
+            </p>
           </div>
-        </section>
-      </div>
+          <span className="bg-surface-container-high text-secondary text-[10px] font-bold px-3 py-1 rounded-full border border-secondary/20 uppercase tracking-tighter">
+            {difficultyLabel}
+          </span>
+        </div>
+        <div className="h-1 w-full bg-primary-container rounded-full overflow-hidden">
+          <div className="h-full gold-gradient rounded-full" style={{ width: `${bookPct}%` }} />
+        </div>
+      </section>
 
       {/* ── Season Card ── */}
-      <section data-testid="ranked-season-card" className="glass-card rounded-xl p-8 border border-white/5 flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
-        <div className="absolute -right-20 -bottom-20 opacity-5 pointer-events-none">
-          <span className="material-symbols-outlined text-[300px]">trophy</span>
-        </div>
+      <section data-testid="ranked-season-card" className="glass-card rounded-xl p-8 border border-white/5 flex flex-col md:flex-row items-center gap-8">
         <div className="w-full md:w-1/3 text-center md:text-left">
           <h3 className="text-sm font-bold text-on-surface-variant uppercase tracking-widest flex items-center justify-center md:justify-start gap-2 mb-4">
             <span className="material-symbols-outlined text-sm">emoji_events</span>

@@ -11,7 +11,6 @@ export class RankedPage extends BasePage {
   readonly tierBadge: Locator
   readonly questionsCounted: Locator
   readonly pointsToday: Locator
-  readonly userRank: Locator
   readonly currentBook: Locator
   readonly seasonCard: Locator
   readonly capReachedMsg: Locator
@@ -29,7 +28,6 @@ export class RankedPage extends BasePage {
     this.tierBadge = page.getByTestId('ranked-tier-badge')
     this.questionsCounted = page.getByTestId('ranked-questions-counted')
     this.pointsToday = page.getByTestId('ranked-points-today')
-    this.userRank = page.getByTestId('ranked-user-rank')
     this.currentBook = page.getByTestId('ranked-current-book')
     this.seasonCard = page.getByTestId('ranked-season-card')
     this.capReachedMsg = page.getByTestId('ranked-cap-reached-msg')

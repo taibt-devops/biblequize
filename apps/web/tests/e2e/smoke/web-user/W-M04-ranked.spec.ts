@@ -59,7 +59,8 @@ test.describe('W-M04 Ranked Mode — L1 Smoke @smoke @ranked', () => {
     await expect(page.getByTestId('ranked-today-progress')).toBeVisible()
     await expect(rankedPage.questionsCounted).toBeVisible()
     await expect(rankedPage.pointsToday).toBeVisible()
-    await expect(rankedPage.userRank).toBeVisible()
+    // Rank #N display removed from "Today" row in R3 redesign — rank now
+    // appears only in the Season card (assertion in W-M04-L1-005).
   })
 
   test('W-M04-L1-003: Current book section hien thi @smoke @ranked', async ({
