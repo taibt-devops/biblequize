@@ -730,6 +730,16 @@
     "maxTierReached": "Đã đạt hạng cao nhất!",
     "tierProgress": "Tiến trình hạng",
     "tierLabel": "Tier",
+    "hero": {
+      "currentBook": "📖 Đang đọc {{book}}",
+      "questionsToday": "🎯 {{count}} câu hôm nay",
+      "starsToNext": "{{points}} / {{total}} XP đến sao kế",
+      "starsToNextMobile": "{{points}}/{{total}} → sao kế",
+      "mobileStreakLabel": "STREAK",
+      "mobileTodayLabel": "HÔM NAY",
+      "streakUnit": "ngày",
+      "todayUnit": "câu"
+    },
     "statStreak": "Streak",
     "statStreakValue": "{{count}} ngày",
     "statPoints": "Điểm",

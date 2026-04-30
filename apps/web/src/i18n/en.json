@@ -730,6 +730,16 @@
     "maxTierReached": "Highest tier reached!",
     "tierProgress": "Tier progress",
     "tierLabel": "Tier",
+    "hero": {
+      "currentBook": "📖 Reading {{book}}",
+      "questionsToday": "🎯 {{count}} questions today",
+      "starsToNext": "{{points}} / {{total}} XP to next star",
+      "starsToNextMobile": "{{points}}/{{total}} → next star",
+      "mobileStreakLabel": "STREAK",
+      "mobileTodayLabel": "TODAY",
+      "streakUnit": "days",
+      "todayUnit": "Q"
+    },
     "statStreak": "Streak",
     "statStreakValue": "{{count}} days",
     "statPoints": "Points",

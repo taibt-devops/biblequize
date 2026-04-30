@@ -92,22 +92,24 @@ describe('Home Dashboard', () => {
 
   describe('Greeting & Tier', () => {
     it('displays time-based greeting with user name', async () => {
+      // V4 hero splits greeting line and user name into separate
+      // elements (mockup: greeting label sits above the name with
+      // smaller weight). Assert both pieces independently.
       renderHome()
       await waitFor(() => {
         const h = new Date().getHours()
         const expected = h < 12 ? 'Chào buổi sáng' : h < 18 ? 'Chào buổi chiều' : 'Chào buổi tối'
-        const heading = screen.getByTestId('home-greeting')
-        expect(heading.textContent).toContain(`${expected}, Nghĩa!`)
+        expect(screen.getByTestId('home-greeting').textContent).toContain(expected)
+        expect(screen.getByTestId('home-user-name').textContent).toBe('Nghĩa')
       })
     })
 
     it('displays tier progress bar', async () => {
-      // V3 hero stat-sheet drops the "Tiến trình hạng" label and goes
-      // straight to the gold-gradient progress fill — assert that
-      // (and its star-row) instead.
+      // V4 hero exposes the progress fill via data-testid; the bar uses
+      // the .gold-gradient utility class (no more .hero-v3-progress-fill).
       renderHome()
       await waitFor(() => {
-        expect(document.querySelector('.hero-v3-progress-fill')).toBeInTheDocument()
+        expect(screen.getByTestId('home-hero-progress-fill')).toBeInTheDocument()
         expect(screen.getByTestId('home-hero-stars')).toBeInTheDocument()
       })
     })
@@ -140,9 +142,9 @@ describe('Home Dashboard', () => {
       })
       renderHome()
       await waitFor(() => {
-        const bar = document.querySelector('.hero-v3-progress-fill')
-        expect((bar as HTMLElement).style.width).toBe('0%')
-        // Tier name lives inside its own span — match against textContent.
+        const bar = screen.getByTestId('home-hero-progress-fill')
+        expect(bar.style.width).toBe('0%')
+        // Tier name lives inside the tier pill — match against textContent.
         expect(screen.getByTestId('home-tier-name').textContent).toBe('Tân Tín Hữu')
       })
     })
