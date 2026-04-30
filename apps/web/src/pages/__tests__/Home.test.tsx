@@ -345,7 +345,10 @@ describe('Home Dashboard', () => {
      * hero section — see docs/prompts/PROMPT_HOME_REFACTOR_FIXES.md
      * Fix 3 ("brand soul" positioning).
      */
-    it('renders the verse banner above the game modes section', async () => {
+    it('renders the verse banner as the page footer (after game modes)', async () => {
+      // H8 demoted the verse from a hero ornament to a decorative
+      // footer at the bottom of Home — quieter, devotional close to
+      // the page rather than a visual peer of the gameplay rows.
       renderHome()
       await waitFor(() => {
         expect(screen.getByTestId('home-daily-verse')).toBeInTheDocument()
@@ -353,8 +356,8 @@ describe('Home Dashboard', () => {
       const verse = screen.getByTestId('home-daily-verse')
       const gameModes = screen.getByTestId('game-mode-grid')
       const cmp = verse.compareDocumentPosition(gameModes)
-      // DOCUMENT_POSITION_FOLLOWING = 4 — verse comes BEFORE game modes
-      expect(cmp & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
+      // DOCUMENT_POSITION_PRECEDING = 2 — verse comes AFTER game modes.
+      expect(cmp & Node.DOCUMENT_POSITION_PRECEDING).toBeTruthy()
     })
   })
 

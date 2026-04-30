@@ -96,11 +96,8 @@ export default function Home() {
       <ComebackModal />
       <DailyBonusModal />
       <TutorialOverlay />
-      {/* ── Hero (V3 stat sheet) ── */}
+      {/* ── Hero (V4 sub-tier stars) ── */}
       <HeroStatSheet />
-
-      {/* ── Daily Verse banner (V3 ornament) ── */}
-      <DailyVerseBanner />
 
       {/* ── Featured Daily Challenge (hero CTA for tier-1) ── */}
       <FeaturedDailyChallenge />
@@ -212,6 +209,9 @@ export default function Home() {
         {/* Activity */}
         <ActivityFeed userCreatedAt={meData?.createdAt} />
       </section>
+
+      {/* ── Daily verse decorative footer (H8) ── */}
+      <DailyVerseBanner />
     </div>
   )
 }
