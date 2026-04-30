@@ -790,6 +790,8 @@
     "dailyVerse": "TODAY'S VERSE",
     "verseToday": "Today's verse",
     "dailyMissions": "Today's missions",
+    "dailyMissionsHeader": "📋 Today's missions",
+    "dailyMissionsCount": "{{completed}}/{{total}} done",
     "received": "Received",
     "dayStreak": "day streak",
     "recommend": {

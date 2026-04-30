@@ -790,6 +790,8 @@
     "dailyVerse": "HỌC NGÀY",
     "verseToday": "Câu gốc hôm nay",
     "dailyMissions": "Nhiệm vụ hôm nay",
+    "dailyMissionsHeader": "📋 Nhiệm vụ hôm nay",
+    "dailyMissionsCount": "{{completed}}/{{total}} hoàn thành",
     "received": "Đã nhận",
     "dayStreak": "ngày liên tiếp",
     "recommend": {

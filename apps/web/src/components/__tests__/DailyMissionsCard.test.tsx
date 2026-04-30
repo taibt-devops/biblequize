@@ -9,7 +9,24 @@ vi.mock('../../api/client', () => ({
 
 vi.mock('react-i18next', () => ({
   useTranslation: () => ({
-    t: (key: string, fallback?: string) => fallback ?? key,
+    // Inline format: when called as t(key, values) we substitute simple
+    // {{var}} placeholders so the rendered output looks closer to prod.
+    // String fallbacks (legacy 2-arg form) still pass through.
+    t: (key: string, optsOrFallback?: string | Record<string, any>) => {
+      if (typeof optsOrFallback === 'string') return optsOrFallback
+      const dict: Record<string, string> = {
+        'home.dailyMissionsHeader': '📋 Nhiệm vụ hôm nay',
+        'home.dailyMissionsCount': '{{completed}}/{{total}} hoàn thành',
+        'home.received': 'nhận được!',
+      }
+      let template = dict[key] ?? key
+      if (optsOrFallback && typeof optsOrFallback === 'object') {
+        for (const [k, v] of Object.entries(optsOrFallback)) {
+          template = template.replace(new RegExp(`\\{\\{\\s*${k}\\s*\\}\\}`, 'g'), String(v))
+        }
+      }
+      return template
+    },
     i18n: { language: 'vi', changeLanguage: vi.fn() },
   }),
 }))
@@ -52,8 +69,10 @@ describe('DailyMissionsCard', () => {
     mockApiGet.mockResolvedValue({ data: mockMissions })
     render(<DailyMissionsCard />, { wrapper })
     await vi.waitFor(() => {
-      expect(screen.getByText('1/3')).toBeInTheDocument() // completed count
-      expect(screen.getByText('2/3')).toBeInTheDocument() // mission 1 progress
+      // Header now reads "1/3 hoàn thành" — partial match by regex.
+      expect(screen.getByText(/1\/3/)).toBeInTheDocument()
+      // Mission row 1 still shows raw "2/3" inline.
+      expect(screen.getByText('2/3')).toBeInTheDocument()
     })
   })
 
