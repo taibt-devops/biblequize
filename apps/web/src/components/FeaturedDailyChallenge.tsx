@@ -66,15 +66,18 @@ function formatCountdown(ms: number): string {
 }
 
 /**
- * Hero card on Home for the daily challenge. Pulls today's 5 questions from
- * {@code /api/daily-challenge}, derives the unique book set, and renders a
- * tagline that scales with variety: singleBook / fewBooks (2-3) / manyBooks
- * (4-5). Translations live in {@code home.featuredDaily.*}.
+ * Daily Challenge compact card per
+ * docs/designs/biblequiz_home_redesign_proposal.html. Renders one of
+ * three states: loading skeleton, active (CTA), or completed (review).
  *
- * Daily challenge selection is random across all active questions
- * (DailyChallengeService) so the book mix is the natural way to give the
- * card a "today is unique" feel without backend changes — see
- * docs/prompts/PROMPT_HOME_REFACTOR_FIXES.md Fix 1 v2.
+ * Data source: GET /api/daily-challenge for today's tagline + book mix,
+ * plus GET /api/daily-challenge/result (gated on {@code alreadyCompleted})
+ * for the score breakdown shown in the completed state.
+ *
+ * Layout differs between desktop and mobile:
+ *   - desktop: countdown sits inline at the right of the meta row
+ *   - mobile (< md): countdown drops to its own line under the CTA
+ *     (mockup line 69) so the meta row stays scannable on narrow widths.
  */
 export default function FeaturedDailyChallenge() {
   const { t, i18n } = useTranslation()
@@ -88,9 +91,6 @@ export default function FeaturedDailyChallenge() {
     staleTime: 60_000,
   })
 
-  // Only fetch the enriched completion payload (score / xpEarned /
-  // nextResetAt) once the parent query confirms the user finished today.
-  // Otherwise the call would return {completed: false} and waste a request.
   const { data: resultData } = useQuery<DailyChallengeResult>({
     queryKey: ['daily-challenge-result'],
     queryFn: () => api.get('/api/daily-challenge/result').then(r => r.data),
@@ -125,25 +125,26 @@ export default function FeaturedDailyChallenge() {
 
   if (isLoading) {
     return (
-      <div data-testid="featured-daily-loading" className="rounded-2xl bg-surface-container p-8 border border-outline-variant/10 animate-pulse">
-        <div className="h-4 w-32 bg-surface-container-high rounded mb-4" />
-        <div className="h-8 w-3/4 bg-surface-container-high rounded mb-3" />
-        <div className="h-4 w-1/2 bg-surface-container-high rounded mb-6" />
-        <div className="h-12 w-full bg-surface-container-high rounded" />
+      <div data-testid="featured-daily-loading" className="rounded-2xl bg-surface-container p-5 border border-secondary/20 animate-pulse">
+        <div className="h-3 w-28 bg-surface-container-high rounded mb-3" />
+        <div className="h-6 w-3/4 bg-surface-container-high rounded mb-2" />
+        <div className="h-3 w-1/2 bg-surface-container-high rounded mb-4" />
+        <div className="h-3 w-2/3 bg-surface-container-high rounded mb-4" />
+        <div className="h-10 w-full bg-surface-container-high rounded" />
       </div>
     )
   }
 
   if (isError || !data) {
     return (
-      <div data-testid="featured-daily-error" className="rounded-2xl bg-surface-container p-8 border border-outline-variant/10">
+      <div data-testid="featured-daily-error" className="rounded-2xl bg-surface-container p-5 border border-secondary/20">
         <div className="flex items-center gap-3 mb-3">
           <span className="material-symbols-outlined text-tertiary text-2xl" style={FILL_1}>calendar_today</span>
           <h2 className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
             {t('home.featuredDaily.title')}
           </h2>
         </div>
-        <p className="text-lg font-bold text-on-surface mb-4">{t('home.featuredDaily.errorFallback')}</p>
+        <p className="text-base font-medium text-on-surface mb-3">{t('home.featuredDaily.errorFallback')}</p>
         <button
           data-testid="featured-daily-retry"
           onClick={() => refetch()}
@@ -169,46 +170,50 @@ export default function FeaturedDailyChallenge() {
       <div
         data-testid="featured-daily-challenge"
         data-state="completed"
-        className="featured-daily-warm rounded-2xl p-8 group"
+        className="relative rounded-2xl bg-[rgba(50,52,64,0.4)] border border-secondary/40 p-4 md:p-5"
       >
-        <div className="relative z-10">
-          <div className="flex items-center gap-3 mb-3">
-            <span className="material-symbols-outlined gold-icon text-2xl" style={FILL_1}>verified</span>
-            <h2 className="text-xs font-bold text-secondary uppercase tracking-widest">
-              {t('home.featuredDaily.completedState.title')}
-            </h2>
-          </div>
+        {/* Header row: title label (left) + done badge (right) */}
+        <div className="flex items-center justify-between mb-2">
+          <h2 className="text-[10px] md:text-[11px] font-bold text-secondary/70 uppercase tracking-[0.6px] md:tracking-[0.8px]">
+            {t('home.featuredDaily.completedState.title')}
+          </h2>
+          <span className="bg-secondary/15 text-secondary px-2 py-0.5 rounded-full text-[9px] md:text-[10px] font-medium">
+            {t('home.featuredDaily.doneBadge')}
+          </span>
+        </div>
 
-          <p
-            data-testid="featured-daily-score"
-            className="font-sora text-[26px] font-bold text-on-surface mb-2 leading-tight"
-          >
-            {t(scoreKey, { correct, total })}
-          </p>
+        <p
+          data-testid="featured-daily-score"
+          className="text-on-surface text-[15px] md:text-[17px] font-medium mb-1.5 leading-tight"
+        >
+          {t(scoreKey, { correct, total })}
+        </p>
 
-          <p data-testid="featured-daily-theme" className="text-sm font-medium text-on-surface-variant mb-1">
-            {t('home.featuredDaily.completedState.themeLabel', { theme: tagline })}
-          </p>
+        <p
+          data-testid="featured-daily-theme"
+          className="text-[11px] md:text-xs text-on-surface-variant/55 leading-relaxed mb-3"
+        >
+          {t('home.featuredDaily.completedState.themeLabel', { theme: tagline })}
+        </p>
 
-          <p className="text-xs font-bold text-secondary uppercase tracking-widest mb-6">
-            {t('home.featuredDaily.completedState.xpEarned', { xp: xpEarned })}
-          </p>
+        <p className="text-[10px] md:text-[11px] font-medium text-secondary uppercase tracking-widest mb-3">
+          {t('home.featuredDaily.completedState.xpEarned', { xp: xpEarned })}
+        </p>
 
-          <div className="flex items-center gap-2 text-xs font-bold text-on-surface-variant mb-4">
-            <span className="material-symbols-outlined text-sm">timer</span>
-            <span data-testid="featured-daily-countdown">
-              {t('home.featuredDaily.completedState.nextChallenge', { time: countdown })}
-            </span>
-          </div>
+        <Link
+          to="/daily"
+          data-testid="featured-daily-review-cta"
+          className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-secondary/40 text-secondary font-medium hover:bg-secondary/10 transition-colors text-sm"
+        >
+          <span className="material-symbols-outlined text-base" style={FILL_1}>menu_book</span>
+          {t('home.featuredDaily.completedState.ctaReview')}
+        </Link>
 
-          <Link
-            to="/daily"
-            data-testid="featured-daily-review-cta"
-            className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-secondary/40 text-secondary font-bold hover:bg-secondary/10 transition-colors"
-          >
-            <span className="material-symbols-outlined text-base" style={FILL_1}>menu_book</span>
-            {t('home.featuredDaily.completedState.ctaReview')}
-          </Link>
+        <div
+          data-testid="featured-daily-countdown"
+          className="text-[10px] md:text-[11px] text-on-surface-variant/40 mt-3"
+        >
+          {t('home.featuredDaily.completedState.nextChallenge', { time: countdown })}
         </div>
       </div>
     )
@@ -216,42 +221,73 @@ export default function FeaturedDailyChallenge() {
 
   // ── State A: active (not completed) ──
   return (
-    <div data-testid="featured-daily-challenge" data-state="active" className="featured-daily-warm rounded-2xl p-8 group">
-      <div className="relative z-10">
-        <div className="flex items-center gap-3 mb-3">
-          <span className="material-symbols-outlined gold-icon text-2xl" style={FILL_1}>calendar_today</span>
-          <h2 className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
-            {t('home.featuredDaily.title')}
-          </h2>
-        </div>
-
-        <p data-testid="featured-daily-tagline" className="font-sora text-[26px] font-bold text-on-surface mb-2 leading-tight">
-          {tagline}
-        </p>
-
-        {uniqueBookNames.length > 1 && (
-          <p data-testid="featured-daily-booklist" className="text-sm font-medium text-on-surface-variant mb-4">
-            {bookList}
-          </p>
-        )}
-
-        <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-6">
-          {t('home.featuredDaily.meta')}
-        </p>
-
-        <div className="flex items-center gap-2 text-xs font-bold text-on-surface-variant mb-4">
-          <span className="material-symbols-outlined text-sm">timer</span>
-          <span data-testid="featured-daily-countdown">
-            {t('home.featuredDaily.countdown', { time: countdown })}
-          </span>
-        </div>
-        <Link
-          to="/daily"
-          data-testid="featured-daily-cta"
-          className="block w-full text-center gold-gradient text-on-secondary font-black py-4 rounded-xl shadow-lg shadow-secondary/10 active:scale-95 transition-transform uppercase tracking-tight"
+    <div
+      data-testid="featured-daily-challenge"
+      data-state="active"
+      className="relative rounded-2xl bg-[rgba(50,52,64,0.4)] border border-secondary/40 p-4 md:p-5"
+    >
+      {/* Header row: title label (left) + "ONLY TODAY" pill (right) */}
+      <div className="flex items-center justify-between mb-2">
+        <h2 className="text-[10px] md:text-[11px] font-bold text-secondary/70 uppercase tracking-[0.6px] md:tracking-[0.8px]">
+          {t('home.featuredDaily.title')}
+        </h2>
+        <span
+          data-testid="featured-daily-pill"
+          className="bg-secondary/15 text-secondary px-2 py-0.5 rounded-full text-[9px] md:text-[10px] font-medium"
         >
-          ▶  {t('home.featuredDaily.cta')}
-        </Link>
+          {t('home.featuredDaily.onlyToday')}
+        </span>
+      </div>
+
+      {/* Theme tagline */}
+      <p
+        data-testid="featured-daily-tagline"
+        className="text-on-surface text-[15px] md:text-[17px] font-medium mb-1.5 leading-tight"
+      >
+        {tagline}
+      </p>
+
+      {/* Book list (only when ≥2 unique books — single-book tagline already mentions it) */}
+      {uniqueBookNames.length > 1 && (
+        <p
+          data-testid="featured-daily-booklist"
+          className="text-[11px] md:text-xs text-on-surface-variant/55 leading-relaxed mb-3"
+        >
+          {bookList}
+        </p>
+      )}
+
+      {/* Meta row + inline countdown (desktop only) */}
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] md:text-[11px] mb-3">
+        <span className="text-on-surface-variant/60">⏱ {t('home.featuredDaily.metaTime')}</span>
+        <span className="text-on-surface-variant/60">📝 {t('home.featuredDaily.metaQuestions')}</span>
+        <span className="text-secondary font-medium">{t('home.featuredDaily.metaXp')}</span>
+        <span className="hidden md:inline ml-auto text-on-surface-variant/40">
+          {t('home.featuredDaily.countdownShort', { time: countdown })}
+        </span>
+      </div>
+
+      <Link
+        to="/daily"
+        data-testid="featured-daily-cta"
+        className="block w-full text-center gold-gradient text-on-secondary font-medium rounded-lg py-3 md:py-3.5 text-sm md:text-base"
+      >
+        ▶ {t('home.featuredDaily.cta')}
+      </Link>
+
+      {/* Countdown — exposes single testid; desktop variant above is
+          for visual placement only (no testid). */}
+      <div
+        data-testid="featured-daily-countdown"
+        className="md:hidden text-center text-[9px] text-on-surface-variant/40 mt-2"
+      >
+        {t('home.featuredDaily.countdownShort', { time: countdown })}
+      </div>
+      <div
+        data-testid="featured-daily-countdown-desktop"
+        className="hidden"
+      >
+        {t('home.featuredDaily.countdownShort', { time: countdown })}
       </div>
     </div>
   )
