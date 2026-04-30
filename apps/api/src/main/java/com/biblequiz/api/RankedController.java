@@ -56,6 +56,9 @@ public class RankedController {
     private com.biblequiz.modules.quiz.repository.QuestionRepository questionRepository;
 
     @Autowired
+    private com.biblequiz.modules.quiz.repository.AnswerRepository answerRepository;
+
+    @Autowired
     private com.biblequiz.infrastructure.service.CacheService cacheService;
 
     @Autowired
@@ -557,6 +560,35 @@ public class RankedController {
             }
         } catch (Exception ignore) {
         }
+        // A1: today's RANKED accuracy. Skipped for unauthenticated requests
+        // (returns null fields). Pulled live every call — no @Cacheable so
+        // the user sees their accuracy update right after answering.
+        body.put("dailyAccuracy", null);
+        body.put("dailyCorrectCount", null);
+        body.put("dailyTotalAnswered", null);
+        try {
+            String accuracyEmail = resolveEmail(authentication);
+            if (accuracyEmail != null) {
+                User accuracyUser = userRepository.findByEmail(accuracyEmail).orElse(null);
+                if (accuracyUser != null) {
+                    LocalDate today = LocalDate.now(ZoneOffset.UTC);
+                    LocalDateTime todayStart = today.atStartOfDay();
+                    LocalDateTime tomorrowStart = today.plusDays(1).atStartOfDay();
+                    long total = answerRepository.countRankedAnswersByUserBetween(
+                            accuracyUser.getId(), todayStart, tomorrowStart);
+                    if (total > 0) {
+                        long correct = answerRepository.countCorrectRankedAnswersByUserBetween(
+                                accuracyUser.getId(), todayStart, tomorrowStart);
+                        body.put("dailyAccuracy", (double) correct / (double) total);
+                        body.put("dailyCorrectCount", correct);
+                        body.put("dailyTotalAnswered", total);
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            log.debug("dailyAccuracy aggregation failed: {}", ex.getMessage());
+        }
+
         // Set reset time - configurable for testing vs production
         LocalDateTime now = LocalDateTime.now(ZoneOffset.UTC);
         LocalDateTime resetTime;

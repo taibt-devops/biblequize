@@ -67,6 +67,16 @@ class RankedControllerTest extends BaseControllerTest {
     @MockBean
     private NotificationService notificationService;
 
+    // A1: required for context load (controller @Autowires it). Without
+    // these mocks Spring fails to bootstrap and ALL tests in this class
+    // error out with ApplicationContext failure (pre-existing on main).
+    @MockBean
+    private com.biblequiz.modules.ranked.service.GameModeUnlockConfig gameModeUnlockConfig;
+
+    // A1: aggregates today's ranked accuracy.
+    @MockBean
+    private com.biblequiz.modules.quiz.repository.AnswerRepository answerRepository;
+
     private User testUser;
 
     @BeforeEach
@@ -203,6 +213,101 @@ class RankedControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.livesRemaining").value(100))
                 .andExpect(jsonPath("$.questionsCounted").value(0))
                 .andExpect(jsonPath("$.currentBook").value("Genesis"));
+    }
+
+    // ── A1: dailyAccuracy / dailyCorrectCount / dailyTotalAnswered ──────────
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_withRankedAnswersToday_returnsAccuracy() throws Exception {
+        // 8 correct out of 10 ranked answers → accuracy = 0.8
+        when(answerRepository.countRankedAnswersByUserBetween(
+                eq("user-1"), any(java.time.LocalDateTime.class), any(java.time.LocalDateTime.class)))
+                .thenReturn(10L);
+        when(answerRepository.countCorrectRankedAnswersByUserBetween(
+                eq("user-1"), any(java.time.LocalDateTime.class), any(java.time.LocalDateTime.class)))
+                .thenReturn(8L);
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.dailyAccuracy").value(0.8))
+                .andExpect(jsonPath("$.dailyCorrectCount").value(8))
+                .andExpect(jsonPath("$.dailyTotalAnswered").value(10));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_withNoAnswersToday_returnsNullAccuracy() throws Exception {
+        when(answerRepository.countRankedAnswersByUserBetween(
+                eq("user-1"), any(java.time.LocalDateTime.class), any(java.time.LocalDateTime.class)))
+                .thenReturn(0L);
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                // Keys are present in JSON with explicit null (HashMap.put
+                // with null is preserved by default Jackson config).
+                .andExpect(jsonPath("$.dailyAccuracy").value(org.hamcrest.Matchers.nullValue()))
+                .andExpect(jsonPath("$.dailyCorrectCount").value(org.hamcrest.Matchers.nullValue()))
+                .andExpect(jsonPath("$.dailyTotalAnswered").value(org.hamcrest.Matchers.nullValue()));
+
+        // Verify only the count query was issued; correct-count is skipped
+        // when total = 0 (saves a needless DB roundtrip).
+        verify(answerRepository).countRankedAnswersByUserBetween(
+                eq("user-1"), any(java.time.LocalDateTime.class), any(java.time.LocalDateTime.class));
+        verify(answerRepository, never()).countCorrectRankedAnswersByUserBetween(
+                anyString(), any(java.time.LocalDateTime.class), any(java.time.LocalDateTime.class));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_withYesterdayOnlyAnswers_returnsNullAccuracy() throws Exception {
+        // Repository contract: query filters by today's window. Service
+        // honors that contract and returns null fields when total = 0.
+        // Mocks return 0 to simulate "yesterday's answers don't appear in
+        // today's window".
+        when(answerRepository.countRankedAnswersByUserBetween(
+                eq("user-1"), any(java.time.LocalDateTime.class), any(java.time.LocalDateTime.class)))
+                .thenReturn(0L);
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.dailyAccuracy").value(org.hamcrest.Matchers.nullValue()));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_perfectAccuracy_returnsOne() throws Exception {
+        // 5/5 → accuracy = 1.0
+        when(answerRepository.countRankedAnswersByUserBetween(
+                eq("user-1"), any(java.time.LocalDateTime.class), any(java.time.LocalDateTime.class)))
+                .thenReturn(5L);
+        when(answerRepository.countCorrectRankedAnswersByUserBetween(
+                eq("user-1"), any(java.time.LocalDateTime.class), any(java.time.LocalDateTime.class)))
+                .thenReturn(5L);
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.dailyAccuracy").value(1.0))
+                .andExpect(jsonPath("$.dailyCorrectCount").value(5))
+                .andExpect(jsonPath("$.dailyTotalAnswered").value(5));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_zeroCorrect_returnsZeroAccuracy() throws Exception {
+        // 0/3 → accuracy = 0.0 (NOT null — user did try, just got everything wrong)
+        when(answerRepository.countRankedAnswersByUserBetween(
+                eq("user-1"), any(java.time.LocalDateTime.class), any(java.time.LocalDateTime.class)))
+                .thenReturn(3L);
+        when(answerRepository.countCorrectRankedAnswersByUserBetween(
+                eq("user-1"), any(java.time.LocalDateTime.class), any(java.time.LocalDateTime.class)))
+                .thenReturn(0L);
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.dailyAccuracy").value(0.0))
+                .andExpect(jsonPath("$.dailyCorrectCount").value(0))
+                .andExpect(jsonPath("$.dailyTotalAnswered").value(3));
     }
 
     // ── POST /api/ranked/sync-progress ───────────────────────────────────────
