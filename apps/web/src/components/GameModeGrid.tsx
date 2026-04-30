@@ -158,38 +158,48 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
 
   return (
     <div data-testid="game-mode-grid" className="space-y-8">
-      {/* ── Featured: Practice + Ranked (core experience) ── */}
+      {/* ── Featured: Practice + Ranked (continue-journey row) ──
+          Per H3 — section header + 2-col compact cards. Practice uses
+          the blue theme (outline button) so the gold filled Ranked CTA
+          dominates as the primary action. Reverts the PL-3 gold-outline
+          intermediate variant. */}
       <section
         data-testid="game-mode-tier-featured"
-        className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        className="space-y-2.5"
       >
-        <FeaturedCard
-          id="practice"
-          icon="menu_book"
-          iconColor="text-secondary"
-          title={t('practiceFeatured.title')}
-          description={t('practiceFeatured.description')}
-          isRecommended={recommendation?.mode === 'practice'}
-          recommendReason={recommendReason('practice')}
-          status={
-            <div data-testid="featured-card-practice-status" className="text-[13px] font-semibold text-secondary">
-              {t('practiceFeatured.status')}
-            </div>
-          }
-          cta={{
-            label: t('practiceFeatured.cta'),
-            onClick: () => navigate('/practice'),
-            iconLeft: 'play_arrow',
-            // Outline variant — Daily + Ranked keep gold-filled (primary);
-            // Practice steps down to secondary so the 3 CTAs no longer
-            // share identical visual weight on Home.
-            className: 'border-2 border-secondary text-secondary bg-transparent hover:bg-secondary/10 active:scale-95',
-          }}
-        />
-        <RankedFeaturedCard
-          isRecommended={recommendation?.mode === 'ranked'}
-          recommendReason={recommendReason('ranked')}
-        />
+        <header className="flex items-baseline justify-between">
+          <h2 className="text-on-surface/85 text-[13px] font-medium">
+            {t('home.continueJourney.title')}
+          </h2>
+          <span className="text-on-surface-variant/40 text-[11px]">
+            {t('home.continueJourney.subtitle')}
+          </span>
+        </header>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          <FeaturedCard
+            id="practice"
+            theme="blue"
+            icon="menu_book"
+            title={t('practiceFeatured.title')}
+            description={t('practiceFeatured.description')}
+            isRecommended={recommendation?.mode === 'practice'}
+            recommendReason={recommendReason('practice')}
+            badge={
+              <span data-testid="featured-card-practice-status" className="text-on-surface-variant/40">
+                {t('practiceFeatured.badge')}
+              </span>
+            }
+            cta={{
+              label: t('practiceFeatured.cta'),
+              onClick: () => navigate('/practice'),
+              iconLeft: 'play_arrow',
+            }}
+          />
+          <RankedFeaturedCard
+            isRecommended={recommendation?.mode === 'ranked'}
+            recommendReason={recommendReason('ranked')}
+          />
+        </div>
       </section>
 
       {/* ── Divider ── */}

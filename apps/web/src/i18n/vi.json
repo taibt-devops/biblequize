@@ -763,6 +763,10 @@
     "viewAll": "Xem tất cả",
     "matchmakingHint": "Đối thủ có thể đã chơi lâu hơn bạn — chuẩn bị tinh thần!",
     "exploreMore": "Khám phá thêm",
+    "continueJourney": {
+      "title": "Tiếp tục hành trình",
+      "subtitle": "Chế độ chính"
+    },
     "compactSubtitles": {
       "group": "Hội thánh",
       "multiplayer": "2-20 người",
@@ -1429,17 +1433,19 @@
     }
   },
   "practiceFeatured": {
-    "title": "Luyện Tập",
-    "description": "Học không áp lực, không giới hạn thời gian.",
+    "title": "Luyện tập",
+    "description": "Học theo nhịp riêng",
+    "badge": "Không áp lực",
     "status": "Sẵn sàng thách thức?",
     "cta": "Bắt đầu"
   },
   "rankedFeatured": {
-    "title": "Thi Đấu Ranked",
-    "description": "Tranh tài trực tiếp, kiếm điểm rank lớn.",
+    "title": "Thi đấu Ranked",
+    "description": "Cạnh tranh ranking",
+    "energyBadge": "{{count}} năng lượng",
     "unlocked": {
       "badge": "Đã mở khóa",
-      "cta": "Bắt đầu Ranked"
+      "cta": "Vào trận"
     },
     "needBasicQuiz": {
       "label": "Cần hoàn thành Bài Giáo Lý ({{count}} câu)",

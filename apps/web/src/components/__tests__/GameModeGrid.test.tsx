@@ -83,10 +83,16 @@ describe('GameModeGrid (Option Y)', () => {
       expect(mockNavigate).toHaveBeenCalledWith('/practice')
     })
 
-    it('Practice CTA uses outline variant (PL-3 visual hierarchy)', async () => {
+    it('Practice CTA uses blue outline (H3 visual hierarchy)', async () => {
+      // H3 supersedes PL-3: Practice card adopts the full blue theme
+      // (icon + border + outline button) so it visually steps back from
+      // the primary gold Ranked CTA. Practice card itself carries the
+      // theme via data-theme="blue".
       renderGrid()
+      const card = screen.getByTestId('featured-card-practice')
+      expect(card).toHaveAttribute('data-theme', 'blue')
       const cta = screen.getByTestId('featured-card-practice-cta')
-      expect(cta.className).toContain('border-secondary')
+      expect(cta.className).toContain('#4a9eff')
       expect(cta.className).toContain('bg-transparent')
       expect(cta.className).not.toContain('gold-gradient')
     })
