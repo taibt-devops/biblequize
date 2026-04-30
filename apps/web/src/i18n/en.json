@@ -1637,6 +1637,7 @@
     "seasonPointsLabel": "{{points}} season pts",
     "youAreHere": "▼ You are here",
     "topMilestone": "Top {{n}}",
+    "topMilestoneWithPoints": "Top {{n}} ({{points}} pts)",
     "unranked": "Unranked",
     "ctaPlayMain": "Play Ranked Now",
     "ctaPlaySub": "Continue {{book}} • ~{{count}} questions with current energy",

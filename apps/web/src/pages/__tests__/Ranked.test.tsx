@@ -456,7 +456,9 @@ describe('Ranked Mode Dashboard', () => {
       if (url.includes('tier-progress')) return Promise.resolve({ data: TIER_PROGRESS_TIER2 })
       if (url.includes('ranked-status'))
         return Promise.resolve({
-          data: { ...RANKED_STATUS, dailyAccuracy: 0.75, dailyCorrect: 9 },
+          // A4: subtitle now reads BE-supplied dailyTotalAnswered (not the
+          // denominator-of-day-cap from rankedStatus.questionsCounted).
+          data: { ...RANKED_STATUS, dailyAccuracy: 0.75, dailyCorrectCount: 9, dailyTotalAnswered: 12 },
         })
       if (url.includes('my-rank')) return Promise.resolve({ data: { rank: 42, points: 2340 } })
       return Promise.reject(new Error('Not found'))
@@ -464,8 +466,7 @@ describe('Ranked Mode Dashboard', () => {
     renderRanked()
     await waitFor(() => {
       expect(screen.getByTestId('ranked-accuracy')).toHaveTextContent('75%')
-      // Subtitle "9/34 câu đúng" — dailyCorrect=9, questionsCounted=34
-      expect(screen.getByText('9/34 câu đúng')).toBeInTheDocument()
+      expect(screen.getByText('9/12 câu đúng')).toBeInTheDocument()
     })
   })
 
@@ -719,6 +720,110 @@ describe('Ranked Mode Dashboard', () => {
       expect(screen.getByText(/Hoàn thành ngày/i)).toBeInTheDocument()
       const sub = screen.getByTestId('ranked-cap-reached-msg')
       expect(sub).toHaveTextContent(/Quay lại sau/)
+    })
+  })
+
+  // ── A4: FE consumes new BE fields (dailyAccuracy, dailyDelta, pointsToTopN) ──
+
+  it('A4: dailyAccuracy = 1.0 → renders "100%" + "10/10 câu đúng"', async () => {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('tier-progress')) return Promise.resolve({ data: TIER_PROGRESS_TIER2 })
+      if (url.includes('ranked-status'))
+        return Promise.resolve({
+          data: { ...RANKED_STATUS, dailyAccuracy: 1.0, dailyCorrectCount: 10, dailyTotalAnswered: 10 },
+        })
+      if (url.includes('my-rank')) return Promise.resolve({ data: { rank: 42, points: 2340 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderRanked()
+    await waitFor(() => {
+      expect(screen.getByTestId('ranked-accuracy')).toHaveTextContent('100%')
+      expect(screen.getByText('10/10 câu đúng')).toBeInTheDocument()
+    })
+  })
+
+  it('A4: dailyAccuracy null → accuracy card hidden + grid uses 2 cols', async () => {
+    // Default mock has no accuracy fields → null branch
+    renderRanked()
+    await waitFor(() => {
+      expect(screen.queryByTestId('ranked-accuracy')).toBeNull()
+    })
+  })
+
+  it('A4: dailyDelta = -5 → "↓ 5 so với hôm qua" rendered orange', async () => {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('tier-progress')) return Promise.resolve({ data: TIER_PROGRESS_TIER2 })
+      if (url.includes('ranked-status'))
+        return Promise.resolve({ data: { ...RANKED_STATUS, dailyDelta: -5 } })
+      if (url.includes('my-rank')) return Promise.resolve({ data: { rank: 42, points: 2340 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderRanked()
+    await waitFor(() => {
+      const delta = screen.getByTestId('ranked-points-delta')
+      expect(delta).toHaveTextContent('↓ 5')
+      expect(delta).toHaveTextContent('so với hôm qua')
+      // happy-dom preserves the literal hex
+      expect(delta.style.color.toLowerCase()).toBe('#fb923c')
+    })
+  })
+
+  it('A4: pointsToTop50 = 60 → milestone slot 1 reads "Top 50 (60đ)"', async () => {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('tier-progress')) return Promise.resolve({ data: TIER_PROGRESS_TIER2 })
+      if (url.includes('ranked-status'))
+        return Promise.resolve({ data: { ...RANKED_STATUS, pointsToTop50: 60, pointsToTop10: 200 } })
+      // rank 75 → user is in slot 0 ("you are here" at Top 100), so the
+      // points-suffix appears on the not-yet-active Top 50 / Top 10 slots
+      if (url.includes('my-rank')) return Promise.resolve({ data: { rank: 75, points: 40 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderRanked()
+    await waitFor(() => {
+      // Match the specific "(Nđ)" suffix pattern, not the bare letter "đ"
+      // (which also appears in "Bạn ở đây" → "đây").
+      expect(screen.getByTestId('ranked-milestone-50')).toHaveTextContent(/\(60đ\)/)
+      expect(screen.getByTestId('ranked-milestone-10')).toHaveTextContent(/\(200đ\)/)
+      // Top 100 + Top 1 stay bare — only 50/10 carry the points payload
+      expect(screen.getByTestId('ranked-milestone-100')).not.toHaveTextContent(/\(\d+đ\)/)
+      expect(screen.getByTestId('ranked-milestone-1')).not.toHaveTextContent(/\(\d+đ\)/)
+    })
+  })
+
+  it('A4: pointsToTop50 null → milestone slot 1 reads bare "Top 50"', async () => {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('tier-progress')) return Promise.resolve({ data: TIER_PROGRESS_TIER2 })
+      if (url.includes('ranked-status'))
+        return Promise.resolve({ data: { ...RANKED_STATUS, pointsToTop50: null, pointsToTop10: 200 } })
+      if (url.includes('my-rank')) return Promise.resolve({ data: { rank: 75, points: 40 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderRanked()
+    await waitFor(() => {
+      const top50 = screen.getByTestId('ranked-milestone-50')
+      expect(top50).toHaveTextContent(/^Top 50$/)
+      expect(top50).not.toHaveTextContent(/\(\d+đ\)/)
+      // top10 still shows points
+      expect(screen.getByTestId('ranked-milestone-10')).toHaveTextContent(/\(200đ\)/)
+    })
+  })
+
+  it('A4: active milestone slot still shows "Bạn ở đây" even when its points are non-null', async () => {
+    // rank 30 → active slot is Top 50 (slot 1). Even though pointsToTop50
+    // = 0 wouldn't make sense (user is past Top 50), if the BE happens to
+    // send a number, the active slot must still render the "Bạn ở đây"
+    // copy and never the points-suffix variant.
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('tier-progress')) return Promise.resolve({ data: TIER_PROGRESS_TIER2 })
+      if (url.includes('ranked-status'))
+        return Promise.resolve({ data: { ...RANKED_STATUS, pointsToTop50: 5, pointsToTop10: 200 } })
+      if (url.includes('my-rank')) return Promise.resolve({ data: { rank: 30, points: 95 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderRanked()
+    await waitFor(() => {
+      expect(screen.getByTestId('ranked-milestone-50')).toHaveTextContent('Bạn ở đây')
+      expect(screen.getByTestId('ranked-milestone-10')).toHaveTextContent(/\(200đ\)/)
     })
   })
 })

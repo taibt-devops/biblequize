@@ -49,12 +49,17 @@ interface RankedStatus {
   }
   askedQuestionIdsToday?: string[]
   askedQuestionCountToday?: number
-  // TODO: BE-EXTEND-RANKED-STATUS — accuracy/delta not yet exposed by
-  // /api/me/ranked-status. When backend ships these, the FE renders
-  // the third stats card (accuracy) and the delta line on points card.
-  dailyAccuracy?: number  // 0-1
-  dailyCorrect?: number   // numerator for the "{correct}/{total}" subtitle
-  dailyDelta?: number     // points delta vs yesterday
+  // Path A backend extensions to /api/me/ranked-status. Each is null
+  // when the relevant signal is unavailable (no answers today, no
+  // yesterday baseline, leaderboard < N users, no active season).
+  // The component branches off `null` rather than coalescing to 0
+  // so missing-data and zero-value stay visually distinguishable.
+  dailyAccuracy: number | null         // 0.0 – 1.0
+  dailyCorrectCount: number | null
+  dailyTotalAnswered: number | null
+  dailyDelta: number | null            // can be negative
+  pointsToTop50: number | null         // null when user is already in top 50
+  pointsToTop10: number | null         // null when user is already in top 10
 }
 
 // Tier data centralised in `data/tiers.ts` (single source of truth).
@@ -378,7 +383,8 @@ export default function Ranked() {
         const accuracyRaw = rankedStatus.dailyAccuracy
         const showAccuracy = typeof accuracyRaw === 'number'
         const accuracyPct = showAccuracy ? Math.round(accuracyRaw! * 100) : null
-        const correctCount = rankedStatus.dailyCorrect
+        const correctCount = rankedStatus.dailyCorrectCount
+        const totalAnswered = rankedStatus.dailyTotalAnswered
         return (
           <div className={`grid grid-cols-1 sm:grid-cols-2 ${showAccuracy ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-3`}>
             {/* Card 1: questions counted */}
@@ -414,9 +420,11 @@ export default function Ranked() {
                 <div
                   data-testid="ranked-points-delta"
                   className="text-xs font-medium"
-                  style={{ color: delta! > 0 ? '#4ade80' : 'rgba(225,225,241,0.6)' }}
+                  style={{ color: delta! > 0 ? '#4ade80' : '#fb923c' }}
                 >
-                  {delta! > 0 ? '↑' : '↓'} {delta! > 0 ? '+' : ''}{delta} {t('ranked.deltaVsYesterday')}
+                  {delta! > 0
+                    ? `↑ +${delta} ${t('ranked.deltaVsYesterday')}`
+                    : `↓ ${Math.abs(delta!)} ${t('ranked.deltaVsYesterday')}`}
                 </div>
               )}
             </div>
@@ -430,9 +438,9 @@ export default function Ranked() {
                 <div data-testid="ranked-accuracy" className="text-2xl font-black text-on-surface mb-1">
                   {accuracyPct}%
                 </div>
-                {typeof correctCount === 'number' && (
+                {typeof correctCount === 'number' && typeof totalAnswered === 'number' && (
                   <div className="text-xs text-on-surface-variant">
-                    {t('ranked.correctOfTotal', { correct: correctCount, total: questionsAnswered })}
+                    {t('ranked.correctOfTotal', { correct: correctCount, total: totalAnswered })}
                   </div>
                 )}
               </div>
@@ -596,6 +604,17 @@ export default function Ranked() {
                   {milestones.map((m, i) => {
                     const active = i === youAreHereSlot
                     const align = i === 0 ? 'text-left' : i === milestones.length - 1 ? 'text-right' : 'text-center'
+                    // Path A surfaces "points to enter" only for top 50 / top 10.
+                    // Show the suffix when the user is below that threshold;
+                    // otherwise fall back to the bare label.
+                    const pointsToReach = m.rank === 50
+                      ? rankedStatus.pointsToTop50
+                      : m.rank === 10
+                        ? rankedStatus.pointsToTop10
+                        : null
+                    const labelKey = !active && typeof pointsToReach === 'number'
+                      ? 'ranked.topMilestoneWithPoints'
+                      : 'ranked.topMilestone'
                     return (
                       <span
                         key={m.rank}
@@ -606,7 +625,9 @@ export default function Ranked() {
                           fontWeight: active ? 700 : 600,
                         }}
                       >
-                        {active ? t('ranked.youAreHere') : t('ranked.topMilestone', { n: m.rank })}
+                        {active
+                          ? t('ranked.youAreHere')
+                          : t(labelKey, { n: m.rank, points: pointsToReach ?? 0 })}
                       </span>
                     )
                   })}

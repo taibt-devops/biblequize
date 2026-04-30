@@ -1637,6 +1637,7 @@
     "seasonPointsLabel": "{{points}} đ mùa",
     "youAreHere": "▼ Bạn ở đây",
     "topMilestone": "Top {{n}}",
+    "topMilestoneWithPoints": "Top {{n}} ({{points}}đ)",
     "unranked": "Chưa xếp hạng",
     "ctaPlayMain": "Vào Thi Đấu Ngay",
     "ctaPlaySub": "Tiếp tục {{book}} • ~{{count}} câu với năng lượng hiện có",
