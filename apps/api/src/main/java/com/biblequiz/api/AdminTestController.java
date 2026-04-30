@@ -552,7 +552,11 @@ public class AdminTestController {
             return ResponseEntity.status(404).body(Map.of("error", "Owner not found: " + ownerEmail));
         }
 
-        // Create group
+        // Create group. Explicit timestamps bypass a Hibernate quirk where the
+        // second save() below would merge a detached entity and overwrite
+        // created_at with null (NOT NULL constraint violation). @CreationTimestamp
+        // on the entity fires only on the managed copy, not the caller's reference.
+        LocalDateTime now = LocalDateTime.now();
         ChurchGroup group = new ChurchGroup();
         group.setId(UUID.randomUUID().toString());
         group.setName(groupName);
@@ -560,7 +564,9 @@ public class AdminTestController {
         group.setDescription("Seeded by e2e test helper");
         group.setLeader(owner);
         group.setMemberCount(1);
-        churchGroupRepository.save(group);
+        group.setCreatedAt(now);
+        group.setUpdatedAt(now);
+        group = churchGroupRepository.save(group);
 
         // Add leader as member
         GroupMember leaderMember = new GroupMember();
@@ -593,7 +599,7 @@ public class AdminTestController {
             memberCount++;
         }
         group.setMemberCount(memberCount);
-        churchGroupRepository.save(group);
+        group = churchGroupRepository.save(group);
 
         log.warn("[TEST_PANEL] test.seed_group groupId={} owner={} members={} missing={}",
                 group.getId(), ownerEmail, addedMembers, missingMembers);

@@ -3,6 +3,10 @@ package com.biblequiz.api;
 import com.biblequiz.api.dto.SeedPointsRequest;
 import com.biblequiz.api.dto.SetMissionStateRequest;
 import com.biblequiz.api.dto.SetStateRequest;
+import com.biblequiz.modules.group.entity.ChurchGroup;
+import com.biblequiz.modules.group.entity.GroupMember;
+import com.biblequiz.modules.group.repository.ChurchGroupRepository;
+import com.biblequiz.modules.group.repository.GroupMemberRepository;
 import com.biblequiz.modules.quiz.entity.DailyMission;
 import com.biblequiz.modules.quiz.entity.UserDailyProgress;
 import com.biblequiz.modules.quiz.repository.DailyMissionRepository;
@@ -48,6 +52,8 @@ class AdminTestControllerTest {
     @Mock private UserDailyProgressRepository dailyProgressRepository;
     @Mock private DailyMissionRepository dailyMissionRepository;
     @Mock private SmartQuestionSelector smartQuestionSelector;
+    @Mock private ChurchGroupRepository churchGroupRepository;
+    @Mock private GroupMemberRepository groupMemberRepository;
 
     @InjectMocks private AdminTestController controller;
 
@@ -331,5 +337,40 @@ class AdminTestControllerTest {
         Map<String, Object> body = (Map<String, Object>) res.getBody();
         assertEquals(6, body.get("tierLevel"));
         assertEquals("Sứ Đồ", body.get("tierName"));
+    }
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // seed-group: regression — both saves must persist a non-null created_at.
+    // Bug: the second churchGroupRepository.save() merged a detached entity with
+    // createdAt=null, hitting the NOT NULL constraint on church_groups.created_at.
+    // Fix: explicitly set createdAt/updatedAt before the first save so the
+    // second save's UPDATE carries the same value.
+    // ─────────────────────────────────────────────────────────────────────────
+
+    @Test
+    void seedGroup_setsCreatedAtBeforeBothSaves() {
+        User owner = new User();
+        owner.setId("owner-id");
+        owner.setEmail("owner@dev.local");
+        when(userRepository.findByEmail("owner@dev.local")).thenReturn(Optional.of(owner));
+        when(churchGroupRepository.findByGroupCode(anyString())).thenReturn(Optional.empty());
+        when(churchGroupRepository.save(any(ChurchGroup.class)))
+                .thenAnswer(inv -> inv.getArgument(0));
+
+        ResponseEntity<?> res = controller.seedGroup(Map.of(
+                "ownerEmail", "owner@dev.local",
+                "memberEmails", List.of(),
+                "groupName", "Regression Group"
+        ));
+
+        assertEquals(200, res.getStatusCode().value());
+        ArgumentCaptor<ChurchGroup> captor = ArgumentCaptor.forClass(ChurchGroup.class);
+        verify(churchGroupRepository, atLeast(2)).save(captor.capture());
+        for (ChurchGroup g : captor.getAllValues()) {
+            assertNotNull(g.getCreatedAt(),
+                    "createdAt must be non-null on every save() to avoid NOT NULL violation");
+            assertNotNull(g.getUpdatedAt(),
+                    "updatedAt must be non-null on every save()");
+        }
     }
 }
