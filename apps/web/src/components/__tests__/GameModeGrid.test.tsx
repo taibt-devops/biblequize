@@ -82,6 +82,32 @@ describe('GameModeGrid (Option Y)', () => {
       await user.click(screen.getByTestId('featured-card-practice-cta'))
       expect(mockNavigate).toHaveBeenCalledWith('/practice')
     })
+
+    it('Practice CTA uses outline variant (PL-3 visual hierarchy)', async () => {
+      renderGrid()
+      const cta = screen.getByTestId('featured-card-practice-cta')
+      expect(cta.className).toContain('border-secondary')
+      expect(cta.className).toContain('bg-transparent')
+      expect(cta.className).not.toContain('gold-gradient')
+    })
+
+    it('Ranked CTA keeps gold-filled (regression guard)', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/daily-challenge')) {
+          return Promise.resolve({ data: { alreadyCompleted: false } })
+        }
+        if (url.includes('/api/basic-quiz/status')) {
+          return Promise.resolve({
+            data: { passed: true, cooldownRemainingSeconds: 0, attemptCount: 1,
+                    totalQuestions: 10, threshold: 8 },
+          })
+        }
+        return Promise.reject(new Error('Not mocked'))
+      })
+      renderGrid()
+      const cta = await screen.findByTestId('featured-card-ranked-cta')
+      expect(cta.className).toContain('gold-gradient')
+    })
   })
 
   describe('Ranked featured card states', () => {

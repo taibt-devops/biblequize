@@ -1,5 +1,75 @@
 # TODO
 
+## 2026-05-01 — Pre-launch Critical Fixes (B1 + B2 + V1) [IN PROGRESS]
+
+> Source: `docs/prompts/PROMPT_PRELAUNCH_CRITICAL.md` + investigation report.
+> Investigation phase concluded PL-1 has NO BUG (review confused threshold display
+> with actual user XP). Execution scope reduced to PL-3 + PL-2.
+
+### Task PL-3: Practice CTA outline variant (V1) — visual hierarchy
+- Status: [ ] TODO
+- File(s): `apps/web/src/components/GameModeGrid.tsx` (5 LOC change to FeaturedCard cta props)
+- Test: `apps/web/src/components/__tests__/GameModeGrid.test.tsx` (2 cases: outline class assertion + ranked regression guard)
+- Rationale: 3 gold-filled CTAs (Daily/Practice/Ranked) on Home → decision paralysis.
+  Practice → outline gold; Daily + Ranked stay primary.
+- Note: PL-1 boundary tests already exist comprehensively in `tiers.test.ts:71-81`
+  (`it.each` covers 0/999/1000/4999/5000/100000) — NOT duplicating.
+- Commit: `ux: practice CTA outline variant for visual hierarchy (PL-3)`
+
+### Task PL-2: Leaderboard tie-break (B1)
+- Status: [ ] TODO
+- File(s): `apps/api/src/main/java/com/biblequiz/modules/quiz/repository/UserDailyProgressRepository.java`
+  (3 native SQL ORDER BY: daily/weekly/all-time + GROUP BY add `u.created_at`)
+- Test: `apps/api/src/test/java/.../UserDailyProgressRepositoryTest.java` (verify Testcontainers integration first)
+- Rationale: current ORDER BY = `points DESC, u.id ASC` → tie-break implicit by UUID.
+  Proposed: `points DESC, questions DESC, u.created_at ASC` (fairness + determinism).
+- E2E W-M17 deferred to sprint 1 per `tests/e2e/TC-TODO.md:38`.
+- Commit: `fix: leaderboard tie-break by questions then createdAt (PL-2)`
+
+### Task PL-1: DROP — no bug
+- Status: [x] NOTED-NO-BUG 2026-05-01
+- Investigation result: 3-layer chain (RankTier.fromPoints uses `>=`,
+  `tiers.ts` getTierByPoints uses `>=` for minPoints, HeroStatSheet pointsToNext
+  formula correct). Screenshot "Tier 1 - Còn 1.000 điểm" is the EXPECTED display
+  for user with 0 XP (1.000 = threshold to next tier, not user's points).
+
+---
+
+## Defer post-launch — W-M02 home-tier-badge testid missing (5 smoke fails)
+
+5 W-M02 home smoke cases fail because `getByTestId('home-tier-badge')` element
+is not found on the Home page (timeout 5s):
+- W-M02-L1-001 Home page render dung cho user da dang nhap
+- W-M02-L1-002 Game mode grid hien thi du cac modes
+- W-M02-L1-003 Tier progress bar hien thi tren Home
+- W-M02-L1-004 Leaderboard section hien thi va toggle Daily/Weekly
+- W-M02-L1-006 Navigate tu game mode card sang dung route
+
+Verified pre-existing on `main` (commit `e6472d5`) by stashing the C3
+diff and rerunning — same 5 failures. Not introduced by Path C / Path A.
+Defer post-launch; investigate when the team has time to determine if
+the testid is missing in Home.tsx or the Playwright fixture is stale.
+
+---
+
+## 2026-04-30 — Color Audit (read-only) [DONE — chờ commit]
+
+> Source: `docs/prompts/PROMPT_COLOR_AUDIT.md` (đã sửa 2026-04-30).
+> Output: `docs/COLOR_AUDIT.md` (350+ lines, 10 sections).
+
+### Tasks CA-1 → CA-10
+- Status: [x] DONE 2026-04-30 — toàn bộ 10 tasks hoàn thành trong 1 pass.
+- Key findings:
+  - 332 hardcoded hex (web), 37 (mobile)
+  - **Tier colors web↔mobile: 6/6 mismatch** (tier 2 hue khác — green vs blue)
+  - 5 :root blocks chồng nhau trong global.css (HP, Cyberpunk, Royal Gold, Warm-card)
+  - 4 đáp án Quiz dùng IDENTICAL màu — không có per-position color
+  - Mobile dead tokens: 6 tier names cũ (Spark/Dawn/Lamp/Flame/Star/Glory)
+  - WCAG: pass tất cả states trừ RoomQuiz disabled (~3.8:1, fail AA)
+- Commit: `docs: add color audit report` (chờ user confirm)
+
+---
+
 ## 2026-04-30 — Ranked Page Redesign (Sacred Modernist v2) [IN PROGRESS]
 
 > Source: `docs/prompts/PROMPT_RANKED_REDESIGN.md` + mockup `docs/designs/ranked-redesign-mockup.html`.
@@ -37,90 +107,81 @@
   - [x] Preserve data-testid: `ranked-tier-badge`; new testids: `ranked-tier-progress-text`, `ranked-tier-progress-bar`
   - [x] i18n keys added: `ranked.pointsToNext`, `ranked.maxTier` (vi+en)
   - [x] Tier-progress API fetched via new `fetchTierProgress()`; `tierData.totalPoints` is canonical (fixes pre-existing bug where today's points were used for tier calc)
-  - [x] Vitest: 4 new R1 tests pass (16/16 total in Ranked.test.tsx)
-  - [x] Tầng 1 (16/16) + Tầng 2 (455/456 — 1 pre-existing GroupDetail flaky on main) + Tầng 3 FE (983/984) — 0 R1 regressions
+  - [x] Vitest: 4 visual + 5 boundary tests pass (21/21 total in Ranked.test.tsx)
+  - [x] Tầng 1 (21/21) + Tầng 2 (461/461) + Tầng 3 FE (989/989) — 0 R1 regressions
   - [x] Tầng 3 BE: pre-existing failures verified on main (QuestionReviewControllerTest + RankedControllerTest ApplicationContext) — 0 R1 regressions
-  - [x] Commit: `feat: Ranked header with tier progress bar (R1)`
+  - [x] Audit baseline: NO existing test asserts tier name from proxy data (e2e W-M04-L2-001 still passes — `setTier(N)` adjusts all-time sum to threshold so post-fix tier resolves identically)
+  - [x] Live BE smoke test (boundary): totalPoints ∈ {0, 999, 1000, 4999, 5000} via `seed-points` + `/api/me/tier-progress` — all 5 PASS, server-side tier resolution matches FE expectations
+  - [x] Locale fix: `pointsToNext.toLocaleString('vi-VN')` (matches HeroStatSheet.tsx pattern)
+  - [x] Commits: `feat: Ranked header with tier progress bar (R1)` + `test: R1 tier boundary cases + vi-VN locale`
 
-### Task R2: Energy + Streak 2-column row
-- Status: [ ] TODO
-- File(s): `apps/web/src/pages/Ranked.tsx`
+### Task R2: Energy + Streak 2-column row [x] DONE 2026-04-30
+- Status: [x] DONE
+- File(s): `apps/web/src/pages/Ranked.tsx`, `apps/web/src/store/authStore.ts` (extend User), `apps/web/src/i18n/{vi,en}.json`
 - Test: `apps/web/src/pages/__tests__/Ranked.test.tsx`
 - API: `livesRemaining` từ `/api/me/ranked-status`, `currentStreak` từ `/api/me` (cả 2 đã có)
 - Checklist:
-  - [ ] Card 1 Energy (left, 60%): big number + progress bar gold + "~Z câu" (Z = floor(energy/5)) + countdown HH:MM:SS
-  - [ ] Card 2 Streak (right, 40%): orange gradient bg + 🔥 + "N ngày" + caption tùy streak > 0
-  - [ ] Preserve data-testid: `ranked-energy-display`, `ranked-energy-timer`, `ranked-reset-timer`
-  - [ ] Sử dụng `useAuth()` để đọc `user.currentStreak`
-  - [ ] Vitest: 61 energy → "~12 câu", streak=0 → "Bắt đầu streak hôm nay!", countdown format
-  - [ ] Tầng 1 + 2 + 3 test pass
-  - [ ] Commit: `feat: Ranked energy + streak cards (R2)`
+  - [x] Layout `grid-cols-12` 7+5 split (Energy 60% / Streak 40%)
+  - [x] Energy card: gold number + h-2 progress + "~Z câu" footer left + timer footer right
+  - [x] Streak card: orange linear-gradient bg + 🔥 emoji + "N ngày" orange (#fb923c) + adaptive caption
+  - [x] R1 polish bundled: nextTier name → gold #e8a832 + font-semibold (locale-agnostic via lastIndexOf split)
+  - [x] Removed decorative `bolt` watermark (8xl opacity-10) from Energy card
+  - [x] Preserve testids: `ranked-energy-display` (moved to value span), `ranked-energy-timer`, `ranked-reset-timer`; new `ranked-energy-card`
+  - [x] AuthStore extended: `User.currentStreak?: number` + `checkAuth()` reads from `meRes.data.currentStreak`
+  - [x] i18n keys added: `ranked.questionsLeft`, `streakHeader`, `streakDays`, `streakKeepGoing`, `streakStart` (vi+en)
+  - [x] 7 R2 vitest cases pass: energy display, questionsLeft formula, timer format, streak>0 caption, streak=0 caption, no watermark, gold tier name
+  - [x] Tầng 1 (28/28) + Tầng 2 (468/468) + Tầng 3 FE (996/996) — 0 R2 regressions
+  - [x] Tầng 3 BE: 679 tests, 1 fail + 36 err — IDENTICAL to pre-R2 baseline (pre-existing on main)
+  - [x] i18n validator: 121 hardcoded (unchanged), 0 missing keys
+  - [x] Commit: `feat: Ranked energy + streak cards + R1 polish (R2)`
 
-### Task R3: 3 Stats Cards (loại bỏ rank duplicate)
-- Status: [ ] TODO
-- File(s): `apps/web/src/pages/Ranked.tsx`
-- Test: `apps/web/src/pages/__tests__/Ranked.test.tsx`
-- Checklist:
-  - [ ] Card "Câu hôm nay": `12/100` + "Còn N câu" + thin progress bar
-  - [ ] Card "Điểm hôm nay": gold number + "↑ +N so với hôm qua" (hide nếu delta=0 hoặc null)
-  - [ ] Card "Độ chính xác": `75%` + "9/12 câu đúng" (render "—" nếu null)
-  - [ ] **BỎ** card "Xếp hạng #26" cũ (rank chỉ còn ở Season R5)
-  - [ ] **BỎ** data-testid `ranked-user-rank` → update spec W-M04-L1-002 (xóa assertion)
-  - [ ] Preserve data-testid: `ranked-questions-counted`, `ranked-points-today`, `ranked-today-progress`
-  - [ ] Comment `// TODO: BE-EXTEND-RANKED-STATUS — dailyDelta, dailyAccuracy`
-  - [ ] Vitest: delta dương → "↑ +12", delta=0 → hide, accuracy null → "—"
-  - [ ] Update `tests/e2e/playwright/specs/smoke/W-M04-ranked-mode.md` xóa assertion `ranked-user-rank` trong L1-002
-  - [ ] Update `apps/web/tests/e2e/smoke/web-user/W-M04-ranked.spec.ts` (nếu test reference rank section)
-  - [ ] Tầng 1 + 2 + 3 test pass
-  - [ ] Commit: `feat: Ranked 3 stats cards without duplicate rank (R3)`
+### Task R3: 3 Stats Cards (loại bỏ rank duplicate) [x] DONE 2026-04-30
+- Status: [x] DONE
+- Files: `apps/web/src/pages/Ranked.tsx`, `Ranked.test.tsx`, `i18n/{vi,en}.json`, `tests/e2e/pages/RankedPage.ts`, `smoke/W-M04-ranked.spec.ts`, spec md
+- Outcome: 3-card grid (questions / points / accuracy). Card 3 conditional on backend `dailyAccuracy`. Card 2 delta line conditional on non-zero `dailyDelta`. No "75%"/"↑ +0" placeholders. Rank `#N` removed from Today row → exists only in Season card. Trophy + gold-strip watermarks removed. R2 oversight (energy testid scope) bundled in.
+- 6 R3 vitest cases pass; spec L1-002 + RankedPage POM + smoke spec MD updated.
+- Commit: `d64818f feat: Ranked 3 stats cards, no duplicate rank, watermark cleanup (R3)`
 
-### Task R4: Active Book Card
-- Status: [ ] TODO
-- File(s): `apps/web/src/pages/Ranked.tsx`
-- Test: `apps/web/src/pages/__tests__/Ranked.test.tsx`
-- API: `bookProgress` từ `/api/me/ranked-status` (đã có), tùy chọn `/api/me/journey`
-- Checklist:
-  - [ ] Slim horizontal card: 📖 icon + "Genesis • Sách 2/66" + progress bar + "Đổi sách →"
-  - [ ] Button "Đổi sách": disabled với tooltip "Sắp ra mắt" (chưa có flow book selector)
-  - [ ] Preserve data-testid: `ranked-current-book`, `ranked-current-book-name`, `ranked-current-book-progress`
-  - [ ] Vitest: render với book progress, disabled state cho "Đổi sách"
-  - [ ] Tầng 1 + 2 + 3 test pass
-  - [ ] Commit: `feat: Ranked active book card with progress (R4)`
+### Task R4: Active Book Card [x] DONE 2026-04-30
+- Status: [x] DONE
+- Files: `apps/web/src/pages/Ranked.tsx`, `Ranked.test.tsx`, `i18n/{vi,en}.json`
+- Outcome: Slim horizontal card — 48×48 gold-tinted icon + "Genesis • Book 2/66 • [MIXED]" inline + sub "Conquering — N%" + 1px gold progress bar + disabled "Change book" button (tooltip explains gap; grep confirmed no Ranked book-selector flow). Investigation confirmed no "water drop" element ever existed and "MIXED" badge was not orphan.
+- 5 R4 vitest cases pass; testids preserved.
+- Commit: `522ff5c feat: Ranked active book card slim horizontal layout (R4)`
 
-### Task R5: Season Card with Milestones + CTA
-- Status: [ ] TODO
-- File(s): `apps/web/src/pages/Ranked.tsx`
-- Test: `apps/web/src/pages/__tests__/Ranked.test.tsx`
-- Checklist:
-  - [ ] Season card: "🏆 MÙA THI ĐẤU — CÒN N NGÀY" + #rank + "40đ mùa" + 4 mốc (Top 100/50/10/1)
-  - [ ] Progress bar lerp theo formula đã chốt:
-    - rank > 100 → 0%
-    - 50 < rank ≤ 100 → 0-33% theo `(100 - rank) / 50 * 33`
-    - 10 < rank ≤ 50 → 33-66% theo `33 + (50 - rank) / 40 * 33`
-    - 1 ≤ rank ≤ 10 → 66-100% theo `66 + (10 - rank) / 9 * 34`
-  - [ ] "▼ Bạn ở đây" highlight ở mốc gần nhất, color gold weight 700
-  - [ ] CTA full-width: gold gradient + box-shadow glow + main text "VÀO THI ĐẤU NGAY" + sub text dynamic
-  - [ ] CTA disabled rule (GIỮ logic cũ): `livesRemaining > 0 && questionsCounted < cap`
-    - hết câu → sub: "Đã đạt giới hạn 100 câu/ngày"
-    - hết energy → sub: "Hết năng lượng — chờ phục hồi"
-    - bình thường → sub: "Tiếp tục Genesis • ~Z câu với năng lượng hiện có"
-  - [ ] Preserve data-testid: `ranked-season-card`, `ranked-season-rank`, `ranked-season-points`, `ranked-start-btn`, `ranked-no-energy-msg`, `ranked-cap-reached-msg`
-  - [ ] Comment `// TODO: BE-EXTEND-RANKED-STATUS — pointsToTop50/10` (placeholder 60đ/200đ)
-  - [ ] Vitest: rank=26 → milestones lerp đúng (~33%), rank=8 → ~85%, energy=0 → CTA disabled với sub text đúng
-  - [ ] Tầng 1 + 2 + 3 test pass
-  - [ ] Commit: `feat: Ranked season + CTA (R5)`
+### Task R5: Season Card with Milestones + CTA [x] DONE 2026-04-30
+- Status: [x] DONE
+- Files: `apps/web/src/pages/Ranked.tsx`, `Ranked.test.tsx`, `i18n/{vi,en}.json`, smoke spec MD + Playwright code
+- Outcome:
+  - Season card horizontal layout: rank big number left + "{N} đ mùa" sub + progress bar with 4 evenly-spaced milestones (Top 100/50/10/1) on the right; reset countdown badge in header.
+  - Milestone lerp formula (rank > 100 → 0%; 50<rank≤100 → 0-33%; 10<rank≤50 → 33-66%; 1≤rank≤10 → 66-100%) implemented with clamp helper. Active milestone slot replaces label with "▼ Bạn ở đây" gold/weight-700.
+  - Null daily rank → renders "Chưa xếp hạng" / "Unranked" (instead of legacy "#—"). Smoke spec L1-005 assertion updated to accept either rank pattern or unranked label.
+  - CTA 3 states (preserves existing `livesRemaining > 0 && questionsCounted < cap` logic, no new rule):
+    - Normal → "Vào Thi Đấu Ngay" + "Continue {book} • ~{Math.floor(energy/5)} questions" sub
+    - No energy → "Hết năng lượng" + "Phục hồi sau {time}" (testid `ranked-no-energy-msg` preserved)
+    - Cap reached → "Hoàn thành ngày" + "Quay lại sau {time}" (testid `ranked-cap-reached-msg` preserved)
+  - Testid dedup: Season card's reset timer renamed to `ranked-season-reset` (Energy card keeps `ranked-reset-timer` for L1-006).
+- 10 R5 vitest cases pass (boundary: rank=200/75/30/5/1, null rank, CTA states A/B/C, Vào Thi Đấu rendering).
+- **Tầng 4 W-M04 smoke 7/7 pass** (L1-001 → L1-007). Pre-existing L1-005 fail unblocked by R5.
+- Commit: `feat: Ranked season + milestones + CTA (R5)`
 
-### Task R6: Final regression + cleanup
-- Status: [ ] TODO
-- Checklist:
-  - [ ] `cd apps/web && npx vitest run` — baseline >= trước task
-  - [ ] `cd apps/web && npx playwright test tests/e2e/smoke/web-user/W-M04-ranked.spec.ts` pass
-  - [ ] `cd apps/web && npx playwright test tests/e2e/happy-path/web-user/W-M04-ranked.spec.ts` pass
-  - [ ] `cd apps/api && ./mvnw test` — backend baseline
-  - [ ] Update `DESIGN_SYNC_AUDIT.md` (nếu có): Ranked → ✅ Synced (custom v2)
-  - [ ] Tạo `BACKEND_GAPS_RANKED_V2.md` với 3 gaps (dailyAccuracy, dailyDelta, pointsToTop50/10)
-  - [ ] Đánh dấu section này DONE trong TODO.md
-  - [ ] Commit: `chore: Ranked redesign v2 final regression + docs`
+### Task R6: Final regression + cleanup [x] DONE 2026-04-30
+- Status: [x] DONE
+- Outcome:
+  - Tầng 3 FE: 1017/1017 pass (1007 → 1017 with R5)
+  - Tầng 3 BE: 679 / 1 fail / 36 err — IDENTICAL to pre-R1 baseline (all pre-existing on main, verified by stash-and-rerun)
+  - Tầng 4 Playwright W-M04 smoke: **7/7 pass** (clean board)
+  - i18n validator: 121 hardcoded (unchanged from R1 baseline), 0 missing keys
+  - Folded into R5 commit (no separate cleanup commit needed — all updates were inline)
+
+---
+
+**Ranked redesign v2 — final summary**:
+- Commits: 5 R-tasks + R1 follow-up = 6 commits (`51017e0` R1, `5ab4f09` R1 boundary tests, `fecb9d9` R2, `d64818f` R3, `522ff5c` R4, R5 commit pending stage)
+- Vitest cases added on Ranked.test.tsx: 12 → 49 (+37 total across R1-R5)
+- Tầng 3 FE total: ~980 baseline → 1017 with all R-tasks
+- Tầng 4 W-M04 smoke: 0/7 (pre-existing infra) → 6/7 (R3) → **7/7 (R5)**
+- 0 BE regressions across all 5 R-tasks (R1-R5 are FE-only)
 
 ---
 

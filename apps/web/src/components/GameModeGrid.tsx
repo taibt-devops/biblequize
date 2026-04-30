@@ -180,6 +180,10 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
             label: t('practiceFeatured.cta'),
             onClick: () => navigate('/practice'),
             iconLeft: 'play_arrow',
+            // Outline variant — Daily + Ranked keep gold-filled (primary);
+            // Practice steps down to secondary so the 3 CTAs no longer
+            // share identical visual weight on Home.
+            className: 'border-2 border-secondary text-secondary bg-transparent hover:bg-secondary/10 active:scale-95',
           }}
         />
         <RankedFeaturedCard
