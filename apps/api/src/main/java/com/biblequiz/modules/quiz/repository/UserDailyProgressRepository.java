@@ -46,33 +46,41 @@ public interface UserDailyProgressRepository extends JpaRepository<UserDailyProg
     @Query(value = "SELECT COUNT(*) FROM (SELECT SUM(COALESCE(points_counted, 0)) AS total FROM user_daily_progress GROUP BY user_id HAVING total > :points) t", nativeQuery = true)
     long countUsersAheadAllTime(@Param("points") int points);
 
-    // Paginated daily leaderboard — single query with JOIN
+    // Paginated daily leaderboard — single query with JOIN.
+    // Tie-break order (PL-2): primary by points DESC; users with the same
+    // points are ranked by questions answered DESC (active users rank higher),
+    // then by users.created_at ASC for deterministic ordering when both
+    // points and questions tie.
     @Query(value = "SELECT u.id AS userId, u.name AS name, u.avatar_url AS avatarUrl, "
             + "COALESCE(udp.points_counted, 0) AS points, COALESCE(udp.questions_counted, 0) AS questions "
             + "FROM user_daily_progress udp JOIN users u ON udp.user_id = u.id "
             + "WHERE udp.date = :date "
-            + "ORDER BY points DESC, u.id ASC "
+            + "ORDER BY points DESC, questions DESC, u.created_at ASC "
             + "LIMIT :limit OFFSET :offset", nativeQuery = true)
     List<Object[]> findDailyLeaderboard(@Param("date") LocalDate date,
             @Param("limit") int limit, @Param("offset") int offset);
 
-    // Paginated weekly leaderboard — GROUP BY at database level
+    // Paginated weekly leaderboard — GROUP BY at database level.
+    // Tie-break order (PL-2): see findDailyLeaderboard. u.created_at is
+    // included in GROUP BY because MySQL strict mode requires every
+    // non-aggregated column referenced in ORDER BY to appear in GROUP BY.
     @Query(value = "SELECT u.id AS userId, u.name AS name, u.avatar_url AS avatarUrl, "
             + "SUM(COALESCE(udp.points_counted, 0)) AS points, SUM(COALESCE(udp.questions_counted, 0)) AS questions "
             + "FROM user_daily_progress udp JOIN users u ON udp.user_id = u.id "
             + "WHERE udp.date BETWEEN :startDate AND :endDate "
-            + "GROUP BY u.id, u.name, u.avatar_url "
-            + "ORDER BY points DESC, u.id ASC "
+            + "GROUP BY u.id, u.name, u.avatar_url, u.created_at "
+            + "ORDER BY points DESC, questions DESC, u.created_at ASC "
             + "LIMIT :limit OFFSET :offset", nativeQuery = true)
     List<Object[]> findWeeklyLeaderboard(@Param("startDate") LocalDate startDate,
             @Param("endDate") LocalDate endDate, @Param("limit") int limit, @Param("offset") int offset);
 
-    // Paginated all-time leaderboard — GROUP BY at database level
+    // Paginated all-time leaderboard — GROUP BY at database level.
+    // Tie-break order (PL-2): see findDailyLeaderboard.
     @Query(value = "SELECT u.id AS userId, u.name AS name, u.avatar_url AS avatarUrl, "
             + "SUM(COALESCE(udp.points_counted, 0)) AS points, SUM(COALESCE(udp.questions_counted, 0)) AS questions "
             + "FROM user_daily_progress udp JOIN users u ON udp.user_id = u.id "
-            + "GROUP BY u.id, u.name, u.avatar_url "
-            + "ORDER BY points DESC, u.id ASC "
+            + "GROUP BY u.id, u.name, u.avatar_url, u.created_at "
+            + "ORDER BY points DESC, questions DESC, u.created_at ASC "
             + "LIMIT :limit OFFSET :offset", nativeQuery = true)
     List<Object[]> findAllTimeLeaderboard(@Param("limit") int limit, @Param("offset") int offset);
 

@@ -7,22 +7,18 @@
 > with actual user XP). Execution scope reduced to PL-3 + PL-2.
 
 ### Task PL-3: Practice CTA outline variant (V1) — visual hierarchy
-- Status: [ ] TODO
-- File(s): `apps/web/src/components/GameModeGrid.tsx` (5 LOC change to FeaturedCard cta props)
-- Test: `apps/web/src/components/__tests__/GameModeGrid.test.tsx` (2 cases: outline class assertion + ranked regression guard)
-- Rationale: 3 gold-filled CTAs (Daily/Practice/Ranked) on Home → decision paralysis.
-  Practice → outline gold; Daily + Ranked stay primary.
-- Note: PL-1 boundary tests already exist comprehensively in `tiers.test.ts:71-81`
-  (`it.each` covers 0/999/1000/4999/5000/100000) — NOT duplicating.
-- Commit: `ux: practice CTA outline variant for visual hierarchy (PL-3)`
+- Status: [x] DONE 2026-05-01 — commit `b7832d0`
+- File(s): `apps/web/src/components/GameModeGrid.tsx` (override className via existing FeaturedCard mechanism)
+- Test: `apps/web/src/components/__tests__/GameModeGrid.test.tsx` (+2 cases: outline class assertion + ranked regression guard) — 15/15 pass
 
 ### Task PL-2: Leaderboard tie-break (B1)
-- Status: [ ] TODO
+- Status: [ ] IN PROGRESS
 - File(s): `apps/api/src/main/java/com/biblequiz/modules/quiz/repository/UserDailyProgressRepository.java`
   (3 native SQL ORDER BY: daily/weekly/all-time + GROUP BY add `u.created_at`)
-- Test: `apps/api/src/test/java/.../UserDailyProgressRepositoryTest.java` (verify Testcontainers integration first)
+- Test: `apps/api/src/test/java/com/biblequiz/modules/quiz/repository/UserDailyProgressRepositoryTest.java`
+  (schema-lock via reflection — no Testcontainers infra exists in project)
 - Rationale: current ORDER BY = `points DESC, u.id ASC` → tie-break implicit by UUID.
-  Proposed: `points DESC, questions DESC, u.created_at ASC` (fairness + determinism).
+  Implemented: `points DESC, questions DESC, u.created_at ASC` (fairness + determinism).
 - E2E W-M17 deferred to sprint 1 per `tests/e2e/TC-TODO.md:38`.
 - Commit: `fix: leaderboard tie-break by questions then createdAt (PL-2)`
 
