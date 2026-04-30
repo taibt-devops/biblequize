@@ -200,14 +200,17 @@ describe('Home Dashboard', () => {
       renderHome()
       await waitFor(() => {
         expect(screen.getByText('Trần Thùy Linh')).toBeInTheDocument()
-        expect(screen.getByText('45,200 XP')).toBeInTheDocument()
+        // H7 redesign drops the "XP" suffix on each row — the column
+        // header / footer carries the unit, the rows just show counts.
+        expect(screen.getByText('45,200')).toBeInTheDocument()
       })
     })
 
     it('displays current user row', async () => {
       renderHome()
       await waitFor(() => {
-        expect(screen.getByText(/Bạn \(Nghĩa\)/)).toBeInTheDocument()
+        // H7: name comes first, "(bạn)" is the suffix per mockup.
+        expect(screen.getByText(/Nghĩa \(bạn\)/)).toBeInTheDocument()
         expect(screen.getByText('#85')).toBeInTheDocument()
       })
     })
@@ -240,12 +243,12 @@ describe('Home Dashboard', () => {
       renderHome()
 
       await waitFor(() => {
-        // Main list row for the user IS present
-        expect(screen.getByText('45,200 XP')).toBeInTheDocument()
+        // Main list row for the user IS present (H7 drops "XP" suffix).
+        expect(screen.getByText('45,200')).toBeInTheDocument()
       })
       // Sticky "Bạn" row is NOT present (user is rank 1 in a list of 2)
       expect(screen.queryByTestId('home-my-rank-sticky')).not.toBeInTheDocument()
-      expect(screen.queryByText(/Bạn \(Nghĩa\)/)).not.toBeInTheDocument()
+      expect(screen.queryByText(/Nghĩa \(bạn\)/)).not.toBeInTheDocument()
     })
 
     it('renders sticky "Bạn" row when user is OUTSIDE the top list', async () => {
@@ -274,7 +277,8 @@ describe('Home Dashboard', () => {
     it('has "Xem tất cả" link', async () => {
       renderHome()
       await waitFor(() => {
-        const link = screen.getByText('Xem tất cả')
+        // H7 footer renders "Xem tất cả →" with the trailing arrow.
+        const link = screen.getByText(/Xem tất cả/)
         expect(link.closest('a')).toHaveAttribute('href', '/leaderboard')
       })
     })
@@ -303,7 +307,9 @@ describe('Home Dashboard', () => {
   describe('Activity Feed', () => {
     it('displays section title', async () => {
       renderHome()
-      await waitFor(() => { expect(screen.getByText('Hoạt động gần đây')).toBeInTheDocument() })
+      // H7 shortened the title to "Hoạt động" with "Trong hội thánh"
+      // as a separate subtitle.
+      await waitFor(() => { expect(screen.getByText('Hoạt động')).toBeInTheDocument() })
     })
 
     /**

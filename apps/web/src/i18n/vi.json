@@ -759,7 +759,7 @@
       "cta": "Chơi ngay"
     },
     "questions": "câu",
-    "you": "Bạn ({{name}})",
+    "you": "{{name}} (bạn)",
     "viewAll": "Xem tất cả",
     "matchmakingHint": "Đối thủ có thể đã chơi lâu hơn bạn — chuẩn bị tinh thần!",
     "exploreMore": "Khám phá thêm",
@@ -781,7 +781,8 @@
       "speedXp": "+100% XP"
     },
     "activityFeed": {
-      "title": "Hoạt động gần đây",
+      "title": "Hoạt động",
+      "subtitle": "Trong hội thánh",
       "emptyTitle": "Bạn là người tiên phong!",
       "emptyBody": "Hoạt động cộng đồng sẽ xuất hiện khi anh em trong hội thánh chơi cùng bạn.",
       "emptyCta": "Mời anh em",

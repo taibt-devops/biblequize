@@ -759,7 +759,7 @@
       "cta": "Play now"
     },
     "questions": "Q",
-    "you": "You ({{name}})",
+    "you": "{{name}} (you)",
     "viewAll": "View all",
     "matchmakingHint": "Other players may have been around longer — bring your A-game!",
     "exploreMore": "Explore more",
@@ -781,7 +781,8 @@
       "speed": "10 × 10s"
     },
     "activityFeed": {
-      "title": "Recent activity",
+      "title": "Activity",
+      "subtitle": "In your church",
       "emptyTitle": "You're a pioneer!",
       "emptyBody": "Community activity will appear when fellow believers play with you.",
       "emptyCta": "Invite friends",
