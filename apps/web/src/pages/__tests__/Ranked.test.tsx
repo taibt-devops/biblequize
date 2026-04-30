@@ -513,4 +513,62 @@ describe('Ranked Mode Dashboard', () => {
     expect(main.querySelector('.opacity-10')).toBeNull()
     expect(main.querySelector('[class*="text-[300px]"]')).toBeNull()
   })
+
+  // ── R4: Active Book Card (slim horizontal) ──
+
+  it('R4: slim book card renders with name + position + difficulty pill', async () => {
+    renderRanked()
+    await waitFor(() => {
+      // Wrapper testid preserved
+      expect(screen.getByTestId('ranked-current-book')).toBeInTheDocument()
+      // Book name in the title (default mock: Ma-thi-ơ)
+      expect(screen.getByTestId('ranked-current-book-name')).toHaveTextContent('Ma-thi-ơ')
+      // Position info "Sách 40/66" rendered as inline meta (currentIndex 39 + 1)
+      expect(screen.getByText(/Sách\s+40\s*\/\s*66/)).toBeInTheDocument()
+      // Difficulty pill ("Trung bình" for medium) still rendered inline with title
+      expect(screen.getByText('Trung bình')).toBeInTheDocument()
+    })
+  })
+
+  it('R4: progress bar width matches bookProgress.progressPercentage', async () => {
+    renderRanked()
+    await waitFor(() => {
+      const bar = screen.getByTestId('ranked-current-book-progress') as HTMLElement
+      // Default mock: progressPercentage = 60
+      expect(bar.style.width).toBe('60%')
+    })
+  })
+
+  it('R4: "Conquering — N%" sub-line shows rounded progress percent', async () => {
+    renderRanked()
+    await waitFor(() => {
+      // i18n vi: "Đang chinh phục — 60%"
+      expect(screen.getByText(/Đang chinh phục\s*—\s*60%/)).toBeInTheDocument()
+    })
+  })
+
+  it('R4: "Đổi sách" button is disabled with tooltip explaining the gap', async () => {
+    renderRanked()
+    await waitFor(() => {
+      const btn = screen.getByRole('button', { name: /Sắp ra mắt/ })
+      expect(btn).toBeDisabled()
+      expect(btn).toHaveAttribute('title')
+      expect(btn.getAttribute('title')).toMatch(/Luyện Tập/)
+      expect(btn).toHaveTextContent(/Đổi sách/)
+    })
+  })
+
+  it('R4: card layout uses slim horizontal flex (icon + content + button)', async () => {
+    renderRanked()
+    await waitFor(() => {
+      const card = screen.getByTestId('ranked-current-book')
+      // Slim card uses items-center + gap utility for horizontal layout
+      expect(card.className).toMatch(/flex/)
+      expect(card.className).toMatch(/items-center/)
+      // 48x48 icon container is the first child
+      const iconBox = card.querySelector('div.w-12.h-12') as HTMLElement | null
+      expect(iconBox).not.toBeNull()
+      expect(iconBox!.querySelector('.material-symbols-outlined')?.textContent?.trim()).toBe('menu_book')
+    })
+  })
 })

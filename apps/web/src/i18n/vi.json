@@ -1630,7 +1630,10 @@
     "questionsLeftToday": "Còn {{count}} câu được tính rank",
     "deltaVsYesterday": "so với hôm qua",
     "accuracy": "Độ chính xác",
-    "correctOfTotal": "{{correct}}/{{total}} câu đúng"
+    "correctOfTotal": "{{correct}}/{{total}} câu đúng",
+    "conquering": "Đang chinh phục",
+    "changeBook": "Đổi sách",
+    "changeBookSoon": "Sắp ra mắt — đổi sách trong chế độ Luyện Tập"
   },
   "onboarding": {
     "slide1Title": "Chào mừng đến BibleQuiz",

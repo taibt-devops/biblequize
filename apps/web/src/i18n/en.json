@@ -1630,7 +1630,10 @@
     "questionsLeftToday": "{{count}} questions left counting toward rank",
     "deltaVsYesterday": "vs yesterday",
     "accuracy": "Accuracy",
-    "correctOfTotal": "{{correct}}/{{total}} correct"
+    "correctOfTotal": "{{correct}}/{{total}} correct",
+    "conquering": "Conquering",
+    "changeBook": "Change book",
+    "changeBookSoon": "Coming soon — change book in Practice mode"
   },
   "onboarding": {
     "slide1Title": "Welcome to BibleQuiz",

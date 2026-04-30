@@ -441,28 +441,78 @@ export default function Ranked() {
         )
       })()}
 
-      {/* ── Currently Playing ── */}
-      <section className="glass-card rounded-xl p-6 border border-white/5">
-        <h3 className="text-sm font-bold text-on-surface-variant uppercase tracking-widest flex items-center gap-2 mb-4">
-          <span className="material-symbols-outlined text-sm">menu_book</span>
-          {t('ranked.currentlyPlaying')}
-        </h3>
-        <div className="flex justify-between items-start mb-4">
-          <div>
-            <h4 data-testid="ranked-current-book" className="text-3xl font-black text-on-surface tracking-tight">
-              <span data-testid="ranked-current-book-name">{rankedStatus.currentBook}</span>
-            </h4>
-            <p data-testid="ranked-current-book-progress" className="text-sm text-on-surface-variant">
-              {rankedStatus.bookProgress ? t('ranked.bookOf', { current: rankedStatus.bookProgress.currentIndex + 1, total: rankedStatus.bookProgress.totalBooks }) : ''}
-            </p>
-          </div>
-          <span className="bg-surface-container-high text-secondary text-[10px] font-bold px-3 py-1 rounded-full border border-secondary/20 uppercase tracking-tighter">
-            {difficultyLabel}
+      {/* ── Active Book Card (R4) ── */}
+      <section
+        data-testid="ranked-current-book"
+        className="glass-card rounded-xl p-4 border border-white/5 flex items-center gap-4"
+      >
+        {/* Icon 48x48 gold-tinted */}
+        <div
+          className="flex items-center justify-center w-12 h-12 rounded-lg shrink-0"
+          style={{
+            backgroundColor: 'rgba(232,168,50,0.12)',
+            border: '1px solid rgba(232,168,50,0.25)',
+          }}
+        >
+          <span
+            className="material-symbols-outlined"
+            style={{ ...FILL_1, color: '#e8a832', fontSize: '24px' }}
+          >
+            menu_book
           </span>
         </div>
-        <div className="h-1 w-full bg-primary-container rounded-full overflow-hidden">
-          <div className="h-full gold-gradient rounded-full" style={{ width: `${bookPct}%` }} />
+
+        {/* Center content */}
+        <div className="flex-1 min-w-0">
+          <div className="flex items-baseline gap-2 flex-wrap mb-0.5">
+            <h4
+              data-testid="ranked-current-book-name"
+              className="text-lg font-black text-on-surface tracking-tight"
+            >
+              {rankedStatus.currentBook}
+            </h4>
+            {rankedStatus.bookProgress && (
+              <span className="text-xs text-on-surface-variant font-medium">
+                • {t('ranked.bookOf', {
+                  current: rankedStatus.bookProgress.currentIndex + 1,
+                  total: rankedStatus.bookProgress.totalBooks,
+                })}
+              </span>
+            )}
+            <span
+              className="bg-surface-container-high text-secondary text-[10px] font-bold px-2 py-0.5 rounded-full border border-secondary/20 uppercase tracking-wider"
+            >
+              {difficultyLabel}
+            </span>
+          </div>
+          <p className="text-xs text-on-surface-variant mb-2">
+            {t('ranked.conquering')} — {Math.round(bookPct)}%
+          </p>
+          <div className="h-1 w-full bg-primary-container rounded-full overflow-hidden">
+            <div
+              data-testid="ranked-current-book-progress"
+              className="h-full gold-gradient rounded-full transition-all duration-700 ease-out"
+              style={{ width: `${bookPct}%` }}
+            />
+          </div>
         </div>
+
+        {/* Change-book button — disabled until a Ranked book-selector flow exists */}
+        <button
+          type="button"
+          disabled
+          title={t('ranked.changeBookSoon')}
+          aria-label={t('ranked.changeBookSoon')}
+          className="shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider border opacity-50 cursor-not-allowed"
+          style={{
+            color: '#e8a832',
+            borderColor: 'rgba(232,168,50,0.4)',
+            backgroundColor: 'transparent',
+          }}
+        >
+          {t('ranked.changeBook')}
+          <span className="material-symbols-outlined text-sm">arrow_forward</span>
+        </button>
       </section>
 
       {/* ── Season Card ── */}
