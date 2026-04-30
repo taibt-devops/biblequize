@@ -767,6 +767,11 @@
       "title": "Continue your journey",
       "subtitle": "Core modes"
     },
+    "modeHint": {
+      "roomsOpen": "{{count}} rooms open",
+      "mysteryXp": "+50% XP",
+      "speedXp": "+100% XP"
+    },
     "compactSubtitles": {
       "group": "Church groups",
       "multiplayer": "2-20 players",

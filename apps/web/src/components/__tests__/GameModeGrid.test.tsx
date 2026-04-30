@@ -212,6 +212,80 @@ describe('GameModeGrid (Option Y)', () => {
       expect(screen.queryByTestId('compact-card-group-matchmaking-hint')).not.toBeInTheDocument()
       expect(screen.queryByTestId('compact-card-weekly-matchmaking-hint')).not.toBeInTheDocument()
     })
+
+    // ── H4: themed cards + live data hints ────────────────────────────
+
+    it('each compact card carries its mockup theme color (inline bg)', async () => {
+      // Spot-check 3 of 6 cards — full audit lives in COMPACT_CARDS.
+      // Group = #4a9eff (74,158,255), mystery = #d4537e (212,83,126),
+      // speed = #ff8c42 (255,140,66).
+      renderGrid()
+      const group = screen.getByTestId('compact-card-group')
+      expect(group.getAttribute('style')).toMatch(/74\s*,\s*158\s*,\s*255/)
+      const mystery = screen.getByTestId('compact-card-mystery')
+      expect(mystery.getAttribute('style')).toMatch(/212\s*,\s*83\s*,\s*126/)
+      const speed = screen.getByTestId('compact-card-speed')
+      expect(speed.getAttribute('style')).toMatch(/255\s*,\s*140\s*,\s*66/)
+    })
+
+    it('mystery + speed always render their hardcoded XP hint', async () => {
+      renderGrid()
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-mystery-hint').textContent).toBe('+50% XP')
+      })
+      expect(screen.getByTestId('compact-card-speed-hint').textContent).toBe('+100% XP')
+    })
+
+    it('multiplayer renders live "{N} phòng đang mở" when /api/rooms/public has data', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/daily-challenge')) {
+          return Promise.resolve({ data: { alreadyCompleted: false } })
+        }
+        if (url.includes('/api/basic-quiz/status')) {
+          return Promise.resolve({
+            data: { passed: false, cooldownRemainingSeconds: 0, attemptCount: 0,
+                    totalQuestions: 10, threshold: 8 },
+          })
+        }
+        if (url.includes('/api/rooms/public')) {
+          return Promise.resolve({ data: [{ id: 'r1' }, { id: 'r2' }, { id: 'r3' }] })
+        }
+        if (url.includes('/api/quiz/weekly/theme')) {
+          return Promise.resolve({ data: { themeName: 'Phép lạ Chúa Giê-su' } })
+        }
+        return Promise.reject(new Error('Not mocked: ' + url))
+      })
+      renderGrid()
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-multiplayer-hint').textContent).toContain('3')
+      })
+      expect(screen.getByTestId('compact-card-weekly-hint').textContent).toContain('Phép lạ')
+    })
+
+    it('multiplayer hint hides when rooms endpoint returns empty', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/daily-challenge')) {
+          return Promise.resolve({ data: { alreadyCompleted: false } })
+        }
+        if (url.includes('/api/basic-quiz/status')) {
+          return Promise.resolve({
+            data: { passed: false, cooldownRemainingSeconds: 0, attemptCount: 0,
+                    totalQuestions: 10, threshold: 8 },
+          })
+        }
+        if (url.includes('/api/rooms/public')) {
+          return Promise.resolve({ data: [] })
+        }
+        return Promise.reject(new Error('Not mocked: ' + url))
+      })
+      renderGrid()
+      // Wait for one of the always-rendered hints to assert the cards
+      // already mounted — then probe for the absent multiplayer hint.
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-mystery-hint')).toBeInTheDocument()
+      })
+      expect(screen.queryByTestId('compact-card-multiplayer-hint')).not.toBeInTheDocument()
+    })
   })
 
   describe('Recommendation highlight', () => {

@@ -775,6 +775,11 @@
       "mystery": "Random hoàn toàn",
       "speed": "10 câu × 10s"
     },
+    "modeHint": {
+      "roomsOpen": "{{count}} phòng đang mở",
+      "mysteryXp": "+50% XP",
+      "speedXp": "+100% XP"
+    },
     "activityFeed": {
       "title": "Hoạt động gần đây",
       "emptyTitle": "Bạn là người tiên phong!",
