@@ -4,6 +4,8 @@ import { useAuthStore } from '../store/authStore'
 import { setQuizLanguage, type QuizLanguage } from '../utils/quizLanguage'
 import { useTranslation } from 'react-i18next'
 import OfflineBanner from '../components/OfflineBanner'
+import StreakWidget from '../components/StreakWidget'
+import DailyMissionWidget from '../components/DailyMissionWidget'
 
 const navItems = [
   { path: '/', labelKey: 'nav.home', icon: 'home' },
@@ -205,6 +207,23 @@ export default function AppLayout() {
                 {t(item.labelKey)}
               </Link>
             ))}
+
+            {/*
+              Sidebar engagement widgets (Streak + Daily Mission). Only render
+              when authenticated — guests don't have either. Lives inside the
+              <nav> element to inherit the existing flex-1 spacing without
+              having to touch the layout's flex distribution. Mobile users
+              never see this because the entire <aside> is `hidden md:flex`.
+            */}
+            {user && (
+              <div
+                data-testid="sidebar-widgets"
+                className="pt-6 mt-4 border-t border-white/5 space-y-3"
+              >
+                <StreakWidget />
+                <DailyMissionWidget />
+              </div>
+            )}
           </nav>
           {/* Admin panel button (admin/content_mod only) */}
           {(user?.role === 'ADMIN' || user?.role === 'admin' || user?.role === 'CONTENT_MOD' || user?.role === 'content_mod') && (

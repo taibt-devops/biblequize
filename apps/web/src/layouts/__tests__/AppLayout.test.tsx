@@ -22,6 +22,23 @@ vi.mock('../../store/authStore', () => ({
   useAuthStore: (selector?: (state: any) => any) => {
     return selector ? selector(authState) : authState
   },
+  // StreakWidget reads via useAuth — same backing state.
+  useAuth: () => authState,
+}))
+
+// Stub TanStack Query so DailyMissionWidget renders deterministically
+// inside the layout. Default returns isLoading=true → widget shows the
+// skeleton placeholder (no network, no error). Tests that need data
+// override mockUseQuery per case.
+const mockUseQuery = vi.fn(() => ({ data: undefined, isLoading: true, isError: false }))
+vi.mock('@tanstack/react-query', () => ({
+  useQuery: (opts: any) => mockUseQuery(opts),
+}))
+
+// Block axios from running inside the widget's queryFn even if it ever
+// fires. Empty stub is safe because mockUseQuery returns synthetic state.
+vi.mock('../../api/client', () => ({
+  api: { get: vi.fn(() => Promise.resolve({ data: {} })) },
 }))
 
 import AppLayout from '../AppLayout'
@@ -285,5 +302,75 @@ describe('AppLayout — User menu click-outside', () => {
 
     addSpy.mockRestore()
     removeSpy.mockRestore()
+  })
+})
+
+/**
+ * C3 — Sidebar widgets (Streak + Daily Mission) integration.
+ * Widgets are rendered inside the desktop <aside> only; logged-out users
+ * and mobile users (whole sidebar `hidden md:flex`) never see them.
+ */
+describe('AppLayout — Sidebar widgets (C3)', () => {
+  beforeEach(() => {
+    vi.clearAllMocks()
+    mockUseQuery.mockReturnValue({ data: undefined, isLoading: true, isError: false })
+    mockLogout.mockResolvedValue(undefined)
+    authState = {
+      user: { name: 'Nguyễn Văn A', email: 'test@example.com', avatar: null, currentStreak: 7 },
+      isAuthenticated: true,
+      logout: mockLogout,
+    }
+  })
+
+  it('logged-in user → sidebar-widgets block visible', () => {
+    renderAppLayout()
+    expect(screen.getByTestId('sidebar-widgets')).toBeInTheDocument()
+    expect(screen.getByTestId('streak-widget')).toBeInTheDocument()
+    // DailyMissionWidget is in skeleton state by default mock
+    expect(screen.getByTestId('daily-mission-widget-skeleton')).toBeInTheDocument()
+  })
+
+  it('logged-out user (user=null) → sidebar-widgets block does NOT render', () => {
+    authState = { user: null, isAuthenticated: false, logout: mockLogout }
+    renderAppLayout()
+    expect(screen.queryByTestId('sidebar-widgets')).toBeNull()
+    expect(screen.queryByTestId('streak-widget')).toBeNull()
+    expect(screen.queryByTestId('daily-mission-widget')).toBeNull()
+    expect(screen.queryByTestId('daily-mission-widget-skeleton')).toBeNull()
+  })
+
+  it('mission data loaded → DailyMissionWidget renders (not skeleton)', () => {
+    mockUseQuery.mockReturnValue({
+      data: {
+        date: '2026-04-30',
+        missions: [
+          { slot: 1, type: 'x', description: 'a', progress: 5, target: 5, completed: true },
+          { slot: 2, type: 'y', description: 'b', progress: 2, target: 5, completed: false },
+          { slot: 3, type: 'z', description: 'c', progress: 0, target: 5, completed: false },
+        ],
+        allCompleted: false,
+        bonusClaimed: false,
+        bonusXp: 100,
+      },
+      isLoading: false,
+      isError: false,
+    })
+    renderAppLayout()
+    expect(screen.getByTestId('daily-mission-widget')).toBeInTheDocument()
+    expect(screen.getByTestId('daily-mission-widget-progress')).toHaveTextContent('1/3')
+    // Skeleton no longer in tree once data loaded
+    expect(screen.queryByTestId('daily-mission-widget-skeleton')).toBeNull()
+  })
+
+  it('widgets do NOT leak into the mobile bottom nav', () => {
+    renderAppLayout()
+    // Find the mobile bottom <nav> by its md:hidden visibility class.
+    // It's the only nav that has 'md:hidden' as a class.
+    const bottomNav = document.querySelector('nav.md\\:hidden')
+    expect(bottomNav).not.toBeNull()
+    // The bottom nav must NOT contain any of the widget testids.
+    expect(bottomNav!.querySelector('[data-testid="streak-widget"]')).toBeNull()
+    expect(bottomNav!.querySelector('[data-testid="daily-mission-widget"]')).toBeNull()
+    expect(bottomNav!.querySelector('[data-testid="sidebar-widgets"]')).toBeNull()
   })
 })
