@@ -589,6 +589,35 @@ public class RankedController {
             log.debug("dailyAccuracy aggregation failed: {}", ex.getMessage());
         }
 
+        // A2: today's points minus yesterday's. Null when either day has
+        // no UserDailyProgress row (new user, or skipped a day). Zero is
+        // a valid value (same points both days) — FE hides the "↑ +0"
+        // cosmetic line in A4, server doesn't shortcut it.
+        body.put("dailyDelta", null);
+        try {
+            String deltaEmail = resolveEmail(authentication);
+            if (deltaEmail != null) {
+                User deltaUser = userRepository.findByEmail(deltaEmail).orElse(null);
+                if (deltaUser != null) {
+                    LocalDate today = LocalDate.now(ZoneOffset.UTC);
+                    LocalDate yesterday = today.minusDays(1);
+                    java.util.Optional<UserDailyProgress> todayUdp =
+                            udpRepository.findByUserIdAndDate(deltaUser.getId(), today);
+                    java.util.Optional<UserDailyProgress> yesterdayUdp =
+                            udpRepository.findByUserIdAndDate(deltaUser.getId(), yesterday);
+                    if (todayUdp.isPresent() && yesterdayUdp.isPresent()) {
+                        int todayPoints = todayUdp.get().getPointsCounted() != null
+                                ? todayUdp.get().getPointsCounted() : 0;
+                        int yesterdayPoints = yesterdayUdp.get().getPointsCounted() != null
+                                ? yesterdayUdp.get().getPointsCounted() : 0;
+                        body.put("dailyDelta", todayPoints - yesterdayPoints);
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            log.debug("dailyDelta computation failed: {}", ex.getMessage());
+        }
+
         // Set reset time - configurable for testing vs production
         LocalDateTime now = LocalDateTime.now(ZoneOffset.UTC);
         LocalDateTime resetTime;

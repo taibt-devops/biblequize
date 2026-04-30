@@ -310,6 +310,99 @@ class RankedControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.dailyTotalAnswered").value(3));
     }
 
+    // ── A2: dailyDelta (today.points - yesterday.points) ───────────────────
+
+    private UserDailyProgress udpWithPoints(int points) {
+        UserDailyProgress udp = new UserDailyProgress();
+        udp.setPointsCounted(points);
+        return udp;
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_todayMoreThanYesterday_returnsPositiveDelta() throws Exception {
+        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate yesterday = today.minusDays(1);
+        when(udpRepository.findByUserIdAndDate("user-1", today)).thenReturn(Optional.of(udpWithPoints(50)));
+        when(udpRepository.findByUserIdAndDate("user-1", yesterday)).thenReturn(Optional.of(udpWithPoints(30)));
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.dailyDelta").value(20));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_todayLessThanYesterday_returnsNegativeDelta() throws Exception {
+        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate yesterday = today.minusDays(1);
+        when(udpRepository.findByUserIdAndDate("user-1", today)).thenReturn(Optional.of(udpWithPoints(30)));
+        when(udpRepository.findByUserIdAndDate("user-1", yesterday)).thenReturn(Optional.of(udpWithPoints(50)));
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.dailyDelta").value(-20));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_todayZeroYesterdayFifty_returnsLargeNegativeDelta() throws Exception {
+        // User played hard yesterday, hasn't picked up the streak today
+        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate yesterday = today.minusDays(1);
+        when(udpRepository.findByUserIdAndDate("user-1", today)).thenReturn(Optional.of(udpWithPoints(0)));
+        when(udpRepository.findByUserIdAndDate("user-1", yesterday)).thenReturn(Optional.of(udpWithPoints(50)));
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.dailyDelta").value(-50));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_samePointsBothDays_returnsZeroDelta() throws Exception {
+        // Boundary: 0 is a real value, NOT null. The FE hides "↑ +0" in
+        // A4 — that's a render-time concern, not a server one.
+        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate yesterday = today.minusDays(1);
+        when(udpRepository.findByUserIdAndDate("user-1", today)).thenReturn(Optional.of(udpWithPoints(50)));
+        when(udpRepository.findByUserIdAndDate("user-1", yesterday)).thenReturn(Optional.of(udpWithPoints(50)));
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.dailyDelta").value(0));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_noProgressToday_returnsNullDelta() throws Exception {
+        // Returning user — yesterday has data, today doesn't yet (haven't
+        // played yet this morning). Delta is null until today's row exists.
+        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate yesterday = today.minusDays(1);
+        when(udpRepository.findByUserIdAndDate("user-1", today)).thenReturn(Optional.empty());
+        when(udpRepository.findByUserIdAndDate("user-1", yesterday)).thenReturn(Optional.of(udpWithPoints(50)));
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.dailyDelta").value(org.hamcrest.Matchers.nullValue()));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_noProgressYesterday_returnsNullDelta() throws Exception {
+        // Brand-new user — first day playing. No yesterday baseline →
+        // delta meaningless, render null. Same for users who skipped a day.
+        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate yesterday = today.minusDays(1);
+        when(udpRepository.findByUserIdAndDate("user-1", today)).thenReturn(Optional.of(udpWithPoints(30)));
+        when(udpRepository.findByUserIdAndDate("user-1", yesterday)).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.dailyDelta").value(org.hamcrest.Matchers.nullValue()));
+    }
+
     // ── POST /api/ranked/sync-progress ───────────────────────────────────────
 
     @Test
