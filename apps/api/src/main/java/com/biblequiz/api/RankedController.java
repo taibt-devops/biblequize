@@ -65,6 +65,9 @@ public class RankedController {
     private com.biblequiz.modules.season.service.SeasonService seasonService;
 
     @Autowired
+    private com.biblequiz.modules.season.repository.SeasonRankingRepository seasonRankingRepository;
+
+    @Autowired
     private com.biblequiz.modules.achievement.service.AchievementService achievementService;
 
     @Autowired
@@ -93,6 +96,30 @@ public class RankedController {
     private static final int ENERGY_REGEN_PER_HOUR = 20;
     private static final int ENERGY_COST_WRONG = 5;
     private static final int DAILY_QUESTION_CAP = 100;
+
+    /**
+     * Read the season-leaderboard score at rank N with a 60s Redis cache.
+     * The threshold is shared across all callers so caching once per
+     * (season, rank) saves a DB roundtrip per /api/me/ranked-status hit
+     * after the first one inside the cache window.
+     *
+     * <p>Returns null when the leaderboard has fewer than {@code rank}
+     * users with a SeasonRanking row. Negative results are NOT cached so
+     * the call can pick up a freshly-eligible Nth user immediately.
+     */
+    private Integer getCachedSeasonScoreAtRank(String seasonId, int rank) {
+        String cacheKey = com.biblequiz.infrastructure.service.CacheService.LEADERBOARD_CACHE_PREFIX
+                + "thresholds:top-" + rank + ":season-" + seasonId;
+        java.util.Optional<Integer> cached = cacheService.get(cacheKey, Integer.class);
+        if (cached.isPresent()) return cached.get();
+        Integer dbValue = seasonRankingRepository
+                .findScoreAtRankOffset(seasonId, rank - 1)
+                .orElse(null);
+        if (dbValue != null) {
+            cacheService.put(cacheKey, dbValue, java.time.Duration.ofSeconds(60));
+        }
+        return dbValue;
+    }
 
     /**
      * Recovers energy based on elapsed time since lastUpdatedAt.
@@ -616,6 +643,45 @@ public class RankedController {
             }
         } catch (Exception ex) {
             log.debug("dailyDelta computation failed: {}", ex.getMessage());
+        }
+
+        // A3: points needed to enter Top 50 / Top 10 of the active season.
+        // Both null when (a) no active season, (b) leaderboard < N users,
+        // or (c) the user is already at or above the Nth-highest score
+        // (tie counts as "already in top" → null per quyết định).
+        //
+        // Queries are 60s-cached via existing Redis CacheService — the
+        // threshold only changes when someone in the top N gains points,
+        // so a stale read by < 60s is acceptable for an MVP. Skipped for
+        // unauthenticated requests.
+        body.put("pointsToTop50", null);
+        body.put("pointsToTop10", null);
+        try {
+            String topEmail = resolveEmail(authentication);
+            if (topEmail != null) {
+                User topUser = userRepository.findByEmail(topEmail).orElse(null);
+                if (topUser != null) {
+                    java.util.Optional<com.biblequiz.modules.season.entity.Season> activeSeason =
+                            seasonService.getActiveSeason();
+                    if (activeSeason.isPresent()) {
+                        String seasonId = activeSeason.get().getId();
+                        int userPoints = seasonRankingRepository
+                                .findBySeasonIdAndUserId(seasonId, topUser.getId())
+                                .map(sr -> sr.getTotalPoints() != null ? sr.getTotalPoints() : 0)
+                                .orElse(0);
+                        Integer top50 = getCachedSeasonScoreAtRank(seasonId, 50);
+                        if (top50 != null && userPoints < top50) {
+                            body.put("pointsToTop50", top50 - userPoints + 1);
+                        }
+                        Integer top10 = getCachedSeasonScoreAtRank(seasonId, 10);
+                        if (top10 != null && userPoints < top10) {
+                            body.put("pointsToTop10", top10 - userPoints + 1);
+                        }
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            log.debug("pointsToTopN computation failed: {}", ex.getMessage());
         }
 
         // Set reset time - configurable for testing vs production

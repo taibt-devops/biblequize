@@ -25,4 +25,23 @@ public interface SeasonRankingRepository extends JpaRepository<SeasonRanking, St
 
     @Query("SELECT COUNT(sr) FROM SeasonRanking sr WHERE sr.season.id = :seasonId AND sr.totalPoints > :points")
     long countUsersAheadInSeason(@Param("seasonId") String seasonId, @Param("points") int points);
+
+    /**
+     * Returns the total_points value of the user at a given 1-based rank in
+     * the active season's leaderboard (e.g. rank=50 returns the 50th-highest
+     * total). Empty when fewer than {@code rank} users have a SeasonRanking
+     * row.
+     *
+     * <p>Tie-breaker matches {@link #findSeasonLeaderboard} (id ASC after
+     * points DESC) so the value is deterministic.
+     *
+     * <p>Caller passes {@code rank - 1} as the offset parameter (LIMIT 1
+     * OFFSET N is the canonical "Nth row" SQL idiom).
+     */
+    @Query(value = "SELECT total_points FROM season_rankings "
+            + "WHERE season_id = :seasonId "
+            + "ORDER BY total_points DESC, id ASC "
+            + "LIMIT 1 OFFSET :offset", nativeQuery = true)
+    Optional<Integer> findScoreAtRankOffset(@Param("seasonId") String seasonId,
+            @Param("offset") int offset);
 }

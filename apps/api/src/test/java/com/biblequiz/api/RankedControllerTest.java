@@ -77,6 +77,10 @@ class RankedControllerTest extends BaseControllerTest {
     @MockBean
     private com.biblequiz.modules.quiz.repository.AnswerRepository answerRepository;
 
+    // A3: source for "Nth-highest seasonRanking.totalPoints".
+    @MockBean
+    private com.biblequiz.modules.season.repository.SeasonRankingRepository seasonRankingRepository;
+
     private User testUser;
 
     @BeforeEach
@@ -401,6 +405,160 @@ class RankedControllerTest extends BaseControllerTest {
         mockMvc.perform(get("/api/me/ranked-status"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.dailyDelta").value(org.hamcrest.Matchers.nullValue()));
+    }
+
+    // ── A3: pointsToTop50 / pointsToTop10 ───────────────────────────────────
+
+    private com.biblequiz.modules.season.entity.Season activeSeason() {
+        com.biblequiz.modules.season.entity.Season s = new com.biblequiz.modules.season.entity.Season();
+        s.setId("season-1");
+        return s;
+    }
+
+    private com.biblequiz.modules.season.entity.SeasonRanking userRanking(int totalPoints) {
+        com.biblequiz.modules.season.entity.SeasonRanking sr =
+                new com.biblequiz.modules.season.entity.SeasonRanking();
+        sr.setTotalPoints(totalPoints);
+        return sr;
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_userBelowTop50_returnsPointsToTop50() throws Exception {
+        // userPoints = 40, top50 threshold = 100 → need 100 - 40 + 1 = 61 to overtake
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason()));
+        when(seasonRankingRepository.findBySeasonIdAndUserId("season-1", "user-1"))
+                .thenReturn(Optional.of(userRanking(40)));
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 49)).thenReturn(Optional.of(100));
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 9)).thenReturn(Optional.of(500));
+        when(cacheService.get(anyString(), eq(Integer.class))).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.pointsToTop50").value(61))
+                .andExpect(jsonPath("$.pointsToTop10").value(461));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_userAlreadyInTop50_returnsNullPointsToTop50() throws Exception {
+        // userPoints = 200, top50 threshold = 100, top10 threshold = 500
+        // → user has cleared top 50 (null) but still chasing top 10 (need 301).
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason()));
+        when(seasonRankingRepository.findBySeasonIdAndUserId("season-1", "user-1"))
+                .thenReturn(Optional.of(userRanking(200)));
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 49)).thenReturn(Optional.of(100));
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 9)).thenReturn(Optional.of(500));
+        when(cacheService.get(anyString(), eq(Integer.class))).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.pointsToTop50").value(org.hamcrest.Matchers.nullValue()))
+                .andExpect(jsonPath("$.pointsToTop10").value(301));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_userInTop10_bothFieldsNull() throws Exception {
+        // userPoints = 1000, beyond both thresholds → both fields null.
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason()));
+        when(seasonRankingRepository.findBySeasonIdAndUserId("season-1", "user-1"))
+                .thenReturn(Optional.of(userRanking(1000)));
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 49)).thenReturn(Optional.of(100));
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 9)).thenReturn(Optional.of(500));
+        when(cacheService.get(anyString(), eq(Integer.class))).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.pointsToTop50").value(org.hamcrest.Matchers.nullValue()))
+                .andExpect(jsonPath("$.pointsToTop10").value(org.hamcrest.Matchers.nullValue()));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_userTiedWithTop50_returnsNullPointsToTop50() throws Exception {
+        // Quyết định: tie counts as "already in" → null. userPoints == top50.
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason()));
+        when(seasonRankingRepository.findBySeasonIdAndUserId("season-1", "user-1"))
+                .thenReturn(Optional.of(userRanking(100)));
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 49)).thenReturn(Optional.of(100));
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 9)).thenReturn(Optional.of(500));
+        when(cacheService.get(anyString(), eq(Integer.class))).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.pointsToTop50").value(org.hamcrest.Matchers.nullValue()))
+                .andExpect(jsonPath("$.pointsToTop10").value(401));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_leaderboardHasFewerThan50_returnsNullPointsToTop50() throws Exception {
+        // Only 30 users in season ranking → no rank-50 exists → null.
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason()));
+        when(seasonRankingRepository.findBySeasonIdAndUserId("season-1", "user-1"))
+                .thenReturn(Optional.of(userRanking(40)));
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 49)).thenReturn(Optional.empty());
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 9)).thenReturn(Optional.of(500));
+        when(cacheService.get(anyString(), eq(Integer.class))).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.pointsToTop50").value(org.hamcrest.Matchers.nullValue()))
+                .andExpect(jsonPath("$.pointsToTop10").value(461));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_noActiveSeason_bothFieldsNull() throws Exception {
+        when(seasonService.getActiveSeason()).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.pointsToTop50").value(org.hamcrest.Matchers.nullValue()))
+                .andExpect(jsonPath("$.pointsToTop10").value(org.hamcrest.Matchers.nullValue()));
+
+        // No DB query attempted when there's no season scope to ask about.
+        verify(seasonRankingRepository, never()).findScoreAtRankOffset(anyString(), anyInt());
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_cacheHit_skipsDbQuery() throws Exception {
+        // Cache returns the threshold directly → DB query NOT issued.
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason()));
+        when(seasonRankingRepository.findBySeasonIdAndUserId("season-1", "user-1"))
+                .thenReturn(Optional.of(userRanking(40)));
+        when(cacheService.get(contains("top-50"), eq(Integer.class))).thenReturn(Optional.of(100));
+        when(cacheService.get(contains("top-10"), eq(Integer.class))).thenReturn(Optional.of(500));
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.pointsToTop50").value(61))
+                .andExpect(jsonPath("$.pointsToTop10").value(461));
+
+        verify(seasonRankingRepository, never()).findScoreAtRankOffset(anyString(), anyInt());
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_cacheMiss_writesPositiveResultButNotNull() throws Exception {
+        // top50 hit → caches 100. top10 miss (< 10 users) → does NOT cache
+        // null so the next eligible 10th user is picked up immediately.
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason()));
+        when(seasonRankingRepository.findBySeasonIdAndUserId("season-1", "user-1"))
+                .thenReturn(Optional.of(userRanking(40)));
+        when(cacheService.get(anyString(), eq(Integer.class))).thenReturn(Optional.empty());
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 49)).thenReturn(Optional.of(100));
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 9)).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.pointsToTop50").value(61))
+                .andExpect(jsonPath("$.pointsToTop10").value(org.hamcrest.Matchers.nullValue()));
+
+        verify(cacheService).put(contains("top-50"), eq(100), any(java.time.Duration.class));
+        verify(cacheService, never()).put(contains("top-10"), any(), any(java.time.Duration.class));
     }
 
     // ── POST /api/ranked/sync-progress ───────────────────────────────────────
