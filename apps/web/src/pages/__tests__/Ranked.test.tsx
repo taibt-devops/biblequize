@@ -150,6 +150,16 @@ describe('Ranked Mode Dashboard', () => {
     })
   })
 
+  it('R5: shows "Vào thi đấu" CTA when energy > 0 and cap not reached', async () => {
+    // Default mock has livesRemaining=75, questionsCounted=34, cap=100 → canPlay
+    renderRanked()
+    await waitFor(() => {
+      const btn = screen.getByTestId('ranked-start-btn')
+      expect(btn).toBeInTheDocument()
+      expect(btn).toHaveTextContent(/Vào thi đấu/i)
+    })
+  })
+
   it('displays start button when energy > 0', async () => {
     renderRanked()
     await waitFor(() => {
@@ -371,7 +381,10 @@ describe('Ranked Mode Dashboard', () => {
     // 75 energy → 75/5 = 15 questions
     renderRanked()
     await waitFor(() => {
-      expect(screen.getByText(/~15 câu/)).toBeInTheDocument()
+      // Both Energy footer and CTA sub-text contain "~15 câu" — scope to
+      // the Energy card to avoid matching the CTA after R5.
+      const energyCard = screen.getByTestId('ranked-energy-card')
+      expect(energyCard.textContent).toMatch(/~15\s+câu/)
     })
   })
 
@@ -569,6 +582,143 @@ describe('Ranked Mode Dashboard', () => {
       const iconBox = card.querySelector('div.w-12.h-12') as HTMLElement | null
       expect(iconBox).not.toBeNull()
       expect(iconBox!.querySelector('.material-symbols-outlined')?.textContent?.trim()).toBe('menu_book')
+    })
+  })
+
+  // ── R5: Season Card Milestones + CTA states ──
+  // Helpers for parameterized rank → progress assertions.
+  function mockWithRank(rank: number | null) {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('tier-progress')) return Promise.resolve({ data: TIER_PROGRESS_TIER2 })
+      if (url.includes('ranked-status')) return Promise.resolve({ data: RANKED_STATUS })
+      if (url.includes('my-rank'))
+        return Promise.resolve({ data: rank == null ? null : { rank, points: 4350 } })
+      return Promise.reject(new Error('Not found'))
+    })
+  }
+
+  it('R5: rank=200 (off the leaderboard) → progress 0%, "▼ Bạn ở đây" before Top 100', async () => {
+    mockWithRank(200)
+    renderRanked()
+    await waitFor(() => {
+      const bar = screen.getByTestId('ranked-season-progress-bar') as HTMLElement
+      expect(bar.style.width).toBe('0%')
+      // Slot 0 (replacing "Top 100" label) shows "▼ Bạn ở đây"
+      expect(screen.getByTestId('ranked-milestone-100')).toHaveTextContent(/Bạn ở đây/)
+      // Other slots keep their milestone label
+      expect(screen.getByTestId('ranked-milestone-50')).toHaveTextContent(/Top 50/)
+      expect(screen.getByTestId('ranked-milestone-10')).toHaveTextContent(/Top 10/)
+      expect(screen.getByTestId('ranked-milestone-1')).toHaveTextContent(/Top 1/)
+    })
+  })
+
+  it('R5: rank=75 → progress ~16.5% (lerp 100→50 → 0→33%), highlight slot 0', async () => {
+    mockWithRank(75)
+    renderRanked()
+    await waitFor(() => {
+      const bar = screen.getByTestId('ranked-season-progress-bar') as HTMLElement
+      // (100 - 75) / 50 * 33 = 16.5
+      const w = parseFloat(bar.style.width)
+      expect(w).toBeGreaterThan(15)
+      expect(w).toBeLessThan(18)
+      expect(screen.getByTestId('ranked-milestone-100')).toHaveTextContent(/Bạn ở đây/)
+    })
+  })
+
+  it('R5: rank=30 → progress ~49.5% (lerp 50→10 → 33→66%), highlight slot 1 (Top 50)', async () => {
+    mockWithRank(30)
+    renderRanked()
+    await waitFor(() => {
+      const bar = screen.getByTestId('ranked-season-progress-bar') as HTMLElement
+      // 33 + (50-30)/40 * 33 = 33 + 16.5 = 49.5%
+      const w = parseFloat(bar.style.width)
+      expect(w).toBeGreaterThan(48)
+      expect(w).toBeLessThan(51)
+      // Slot 1 (Top 50 position) is now "Bạn ở đây"
+      expect(screen.getByTestId('ranked-milestone-50')).toHaveTextContent(/Bạn ở đây/)
+      expect(screen.getByTestId('ranked-milestone-100')).toHaveTextContent(/Top 100/)
+    })
+  })
+
+  it('R5: rank=5 → progress ~85% (lerp 10→1 → 66→100%), highlight slot 2 (Top 10)', async () => {
+    mockWithRank(5)
+    renderRanked()
+    await waitFor(() => {
+      const bar = screen.getByTestId('ranked-season-progress-bar') as HTMLElement
+      // 66 + (10-5)/9 * 34 = 66 + 18.9 = ~85%
+      const w = parseFloat(bar.style.width)
+      expect(w).toBeGreaterThan(83)
+      expect(w).toBeLessThan(87)
+      expect(screen.getByTestId('ranked-milestone-10')).toHaveTextContent(/Bạn ở đây/)
+    })
+  })
+
+  it('R5: rank=1 → progress 100%, highlight slot 3 (Top 1)', async () => {
+    mockWithRank(1)
+    renderRanked()
+    await waitFor(() => {
+      const bar = screen.getByTestId('ranked-season-progress-bar') as HTMLElement
+      expect(bar.style.width).toBe('100%')
+      expect(screen.getByTestId('ranked-milestone-1')).toHaveTextContent(/Bạn ở đây/)
+    })
+  })
+
+  it('R5: null rank → "Chưa xếp hạng" instead of "#—"', async () => {
+    mockWithRank(null)
+    renderRanked()
+    await waitFor(() => {
+      const rankEl = screen.getByTestId('ranked-season-rank')
+      expect(rankEl).toHaveTextContent(/Chưa xếp hạng/)
+      // Bar at 0% (no rank → no progress)
+      expect((screen.getByTestId('ranked-season-progress-bar') as HTMLElement).style.width).toBe('0%')
+    })
+  })
+
+  it('R5: CTA State A (normal) shows main + sub with "~Z câu" hint and "{book}"', async () => {
+    // Default mock: livesRemaining=75, questionsCounted=34, cap=100, currentBook=Ma-thi-ơ
+    renderRanked()
+    await waitFor(() => {
+      const btn = screen.getByTestId('ranked-start-btn')
+      expect(btn).toHaveTextContent(/Vào Thi Đấu Ngay/)
+      // Sub: "Tiếp tục Ma-thi-ơ • ~15 câu với năng lượng hiện có" (75/5 = 15)
+      expect(btn).toHaveTextContent('Ma-thi-ơ')
+      expect(btn).toHaveTextContent(/~15\s+câu/)
+    })
+  })
+
+  it('R5: CTA State B (no energy) shows "Hết năng lượng" + recovery time', async () => {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('tier-progress')) return Promise.resolve({ data: TIER_PROGRESS_TIER2 })
+      if (url.includes('ranked-status'))
+        return Promise.resolve({ data: { ...RANKED_STATUS, livesRemaining: 0 } })
+      if (url.includes('my-rank')) return Promise.resolve({ data: { rank: 42, points: 2340 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderRanked()
+    await waitFor(() => {
+      // Start button NOT rendered when not playable
+      expect(screen.queryByTestId('ranked-start-btn')).toBeNull()
+      // Main heading + sub testid preserved
+      expect(screen.getByText(/Hết năng lượng/i)).toBeInTheDocument()
+      const sub = screen.getByTestId('ranked-no-energy-msg')
+      expect(sub).toHaveTextContent(/Phục hồi sau/)
+    })
+  })
+
+  it('R5: CTA State C (cap reached) shows "Hoàn thành ngày" + come back time', async () => {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('tier-progress')) return Promise.resolve({ data: TIER_PROGRESS_TIER2 })
+      if (url.includes('ranked-status'))
+        return Promise.resolve({ data: { ...RANKED_STATUS, questionsCounted: 100, cap: 100 } })
+      if (url.includes('my-rank')) return Promise.resolve({ data: { rank: 42, points: 2340 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderRanked()
+    await waitFor(() => {
+      expect(screen.queryByTestId('ranked-start-btn')).toBeNull()
+      expect(screen.getByText(/Hoàn thành ngày/i)).toBeInTheDocument()
+      const sub = screen.getByTestId('ranked-cap-reached-msg')
+      expect(sub).toHaveTextContent(/Quay lại sau/)
     })
   })
 })

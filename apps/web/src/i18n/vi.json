@@ -1633,7 +1633,17 @@
     "correctOfTotal": "{{correct}}/{{total}} câu đúng",
     "conquering": "Đang chinh phục",
     "changeBook": "Đổi sách",
-    "changeBookSoon": "Sắp ra mắt — đổi sách trong chế độ Luyện Tập"
+    "changeBookSoon": "Sắp ra mắt — đổi sách trong chế độ Luyện Tập",
+    "seasonPointsLabel": "{{points}} đ mùa",
+    "youAreHere": "▼ Bạn ở đây",
+    "topMilestone": "Top {{n}}",
+    "unranked": "Chưa xếp hạng",
+    "ctaPlayMain": "Vào Thi Đấu Ngay",
+    "ctaPlaySub": "Tiếp tục {{book}} • ~{{count}} câu với năng lượng hiện có",
+    "ctaNoEnergyMain": "🔋 Hết năng lượng",
+    "ctaNoEnergySub": "Phục hồi sau {{time}}",
+    "ctaCapMain": "✅ Hoàn thành ngày",
+    "ctaCapSub": "Quay lại sau {{time}} cho ngày mới"
   },
   "onboarding": {
     "slide1Title": "Chào mừng đến BibleQuiz",

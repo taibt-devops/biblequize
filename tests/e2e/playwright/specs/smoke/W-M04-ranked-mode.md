@@ -151,7 +151,7 @@
 
 **Assertions**:
 - `expect(page.getByTestId('ranked-season-card')).toBeVisible()`
-- `expect(page.getByTestId('ranked-season-rank')).toHaveText(/#\d+/)` ← "#N"
+- `expect(page.getByTestId('ranked-season-rank')).toHaveText(/#\d+|Chưa xếp hạng|Unranked/)` ← rank or "unranked" placeholder when user has no daily activity yet
 - `expect(page.getByTestId('ranked-season-points')).toBeVisible()`
 - `expect(page.getByTestId('ranked-reset-timer')).toBeVisible()`
 
@@ -159,8 +159,8 @@
 
 **Notes**:
 - [NEEDS TESTID: ranked-season-card] — section "Mùa Giải"
-- [NEEDS TESTID: ranked-season-rank] — "#N" rank
-- [NEEDS TESTID: ranked-season-points] — total points
+- [NEEDS TESTID: ranked-season-rank] — "#N" rank, or "Chưa xếp hạng"/"Unranked" when daily rank is null
+- [NEEDS TESTID: ranked-season-points] — total points "{N} đ mùa"
 - [NEEDS TESTID: ranked-reset-timer] — countdown "Đặt lại: HH:MM:SS"
 
 ---

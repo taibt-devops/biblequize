@@ -136,7 +136,10 @@ test.describe('W-M04 Ranked Mode — L1 Smoke @smoke @ranked', () => {
     // SECTION 3: UI ASSERTIONS
     // ============================================================
     await expect(rankedPage.seasonCard).toBeVisible()
-    await expect(page.getByTestId('ranked-season-rank')).toHaveText(/#\d+/)
+    // R5 redesign: rank cell shows "#{rank}" when daily rank is known,
+    // or "Chưa xếp hạng" (vi) / "Unranked" (en) when /api/leaderboard/
+    // daily/my-rank returns null (user has no daily activity yet).
+    await expect(page.getByTestId('ranked-season-rank')).toHaveText(/#\d+|Chưa xếp hạng|Unranked/)
     await expect(page.getByTestId('ranked-season-points')).toBeVisible()
     await expect(rankedPage.resetTimer).toBeVisible()
   })

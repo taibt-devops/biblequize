@@ -1633,7 +1633,17 @@
     "correctOfTotal": "{{correct}}/{{total}} correct",
     "conquering": "Conquering",
     "changeBook": "Change book",
-    "changeBookSoon": "Coming soon — change book in Practice mode"
+    "changeBookSoon": "Coming soon — change book in Practice mode",
+    "seasonPointsLabel": "{{points}} season pts",
+    "youAreHere": "▼ You are here",
+    "topMilestone": "Top {{n}}",
+    "unranked": "Unranked",
+    "ctaPlayMain": "Play Ranked Now",
+    "ctaPlaySub": "Continue {{book}} • ~{{count}} questions with current energy",
+    "ctaNoEnergyMain": "🔋 Out of energy",
+    "ctaNoEnergySub": "Recovers in {{time}}",
+    "ctaCapMain": "✅ Daily complete",
+    "ctaCapSub": "Come back in {{time}} for a new day"
   },
   "onboarding": {
     "slide1Title": "Welcome to BibleQuiz",

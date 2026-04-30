@@ -515,53 +515,162 @@ export default function Ranked() {
         </button>
       </section>
 
-      {/* ── Season Card ── */}
-      <section data-testid="ranked-season-card" className="glass-card rounded-xl p-8 border border-white/5 flex flex-col md:flex-row items-center gap-8">
-        <div className="w-full md:w-1/3 text-center md:text-left">
-          <h3 className="text-sm font-bold text-on-surface-variant uppercase tracking-widest flex items-center justify-center md:justify-start gap-2 mb-4">
-            <span className="material-symbols-outlined text-sm">emoji_events</span>
-            {t('ranked.season')}
-          </h3>
-          <div data-testid="ranked-season-rank" className="text-6xl font-black text-secondary mb-2">#{userRank?.rank ?? '—'}</div>
-          <div data-testid="ranked-season-points" className="text-on-surface font-medium">{(totalPoints ?? 0).toLocaleString()} {t('ranked.points')}</div>
-        </div>
-        <div className="w-full md:w-2/3 space-y-4">
-          <div className="flex justify-between items-center text-sm">
-            <span className="text-on-surface font-bold">{t('ranked.seasonProgress')}</span>
-            <span className="text-on-surface-variant italic">{t('ranked.reset')}: {timeLeft || '--:--:--'}</span>
-          </div>
-          <div className="h-4 w-full bg-primary-container rounded-full overflow-hidden p-1">
-            <div className="h-full gold-gradient rounded-full shadow-[inset_0_1px_2px_rgba(0,0,0,0.2)]" style={{ width: '65%' }} />
-          </div>
-          <div className="flex justify-between text-[10px] uppercase font-bold tracking-widest text-on-surface-variant/60">
-            <span>{t('ranked.start')}</span>
-            <span>{t('ranked.peak')}</span>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Start CTA ── */}
-      <div className="mt-4 mb-10">
-        {canPlay ? (
-          <button
-            data-testid="ranked-start-btn"
-            onClick={startRankedQuiz}
-            className="w-full gold-gradient text-on-secondary font-black py-5 rounded-xl text-xl uppercase tracking-widest shadow-[0_8px_30px_rgb(248,189,69,0.3)] active:scale-[0.98] transition-transform flex items-center justify-center gap-4"
+      {/* ── Season Card with Milestones (R5) ── */}
+      {(() => {
+        const seasonRank = userRank?.rank as number | undefined | null
+        const hasRank = typeof seasonRank === 'number' && seasonRank > 0
+        // Lerp formula agreed with product: 4 milestones evenly spaced on a
+        // 0-100% bar. Rank > 100 → 0%, 100 → 0%, 50 → 33%, 10 → 66%, 1 → 100%.
+        const lerp = (v: number, fromMin: number, fromMax: number, toMin: number, toMax: number): number => {
+          if (fromMin === fromMax) return toMin
+          const t = (v - fromMin) / (fromMax - fromMin)
+          const clamped = Math.min(1, Math.max(0, t))
+          return toMin + clamped * (toMax - toMin)
+        }
+        const computeSeasonProgress = (rank: number): number => {
+          if (rank > 100) return 0
+          if (rank > 50) return lerp(rank, 100, 50, 0, 0.33)
+          if (rank > 10) return lerp(rank, 50, 10, 0.33, 0.66)
+          return lerp(rank, 10, 1, 0.66, 1)
+        }
+        const progress = hasRank ? computeSeasonProgress(seasonRank!) : 0
+        // Highlight the milestone closest to the user's progress position.
+        // For ranks > 100, the user is "before" Top 100 → highlight slot 0.
+        const milestones = [
+          { rank: 100, position: 0 },
+          { rank: 50, position: 1 / 3 },
+          { rank: 10, position: 2 / 3 },
+          { rank: 1, position: 1 },
+        ]
+        const youAreHereSlot = hasRank
+          ? (() => {
+              if (seasonRank! > 100) return 0
+              if (seasonRank! > 50) return 0  // between Top 100 and Top 50
+              if (seasonRank! > 10) return 1  // between Top 50 and Top 10
+              if (seasonRank! > 1) return 2   // between Top 10 and Top 1
+              return 3
+            })()
+          : -1
+        return (
+          <section
+            data-testid="ranked-season-card"
+            className="glass-card rounded-xl p-6 border border-white/5"
           >
-            <span className="material-symbols-outlined" style={FILL_1}>play_arrow</span>
-            {t('gameModes.rankedBtn')}
-          </button>
-        ) : rankedStatus.questionsCounted >= rankedStatus.cap ? (
-          <div data-testid="ranked-cap-reached-msg" className="w-full bg-surface-container-high text-on-surface-variant font-black py-5 rounded-xl text-xl uppercase tracking-widest flex items-center justify-center gap-4 opacity-60 cursor-not-allowed">
-            <span className="material-symbols-outlined">block</span>
-            {t('ranked.outOfEnergy')}
-          </div>
-        ) : (
-          <div data-testid="ranked-no-energy-msg" className="w-full bg-surface-container-high text-on-surface-variant font-black py-5 rounded-xl text-xl uppercase tracking-widest flex items-center justify-center gap-4 opacity-60 cursor-not-allowed">
-            <span className="material-symbols-outlined">block</span>
-            {t('ranked.outOfEnergy')}
-          </div>
-        )}
+            <div className="flex items-center justify-between mb-5">
+              <h3 className="text-sm font-bold text-on-surface-variant uppercase tracking-widest flex items-center gap-2">
+                <span className="material-symbols-outlined text-sm" style={FILL_1}>emoji_events</span>
+                {t('ranked.season')}
+              </h3>
+              <span data-testid="ranked-season-reset" className="text-xs text-on-surface-variant italic">
+                {t('ranked.reset')}: <span data-testid="ranked-season-reset-time">{timeLeft || '--:--:--'}</span>
+              </span>
+            </div>
+
+            <div className="flex items-center gap-6">
+              {/* Left: rank big number + season points */}
+              <div className="shrink-0 min-w-[100px]">
+                {hasRank ? (
+                  <div data-testid="ranked-season-rank" className="text-4xl font-black mb-1" style={{ color: '#e8a832' }}>
+                    #{seasonRank}
+                  </div>
+                ) : (
+                  <div data-testid="ranked-season-rank" className="text-base font-bold text-on-surface-variant mb-1">
+                    {t('ranked.unranked')}
+                  </div>
+                )}
+                <div data-testid="ranked-season-points" className="text-xs text-on-surface-variant font-medium">
+                  {t('ranked.seasonPointsLabel', { points: (totalPoints ?? 0).toLocaleString('vi-VN') })}
+                </div>
+              </div>
+
+              {/* Right: progress bar + milestones */}
+              <div className="flex-1 min-w-0">
+                <div className="h-1.5 w-full bg-primary-container rounded-full overflow-hidden mb-2">
+                  <div
+                    data-testid="ranked-season-progress-bar"
+                    className="h-full gold-gradient rounded-full transition-all duration-700 ease-out"
+                    style={{ width: `${progress * 100}%` }}
+                  />
+                </div>
+                <div className="grid grid-cols-4 text-[11px] uppercase font-bold tracking-wider">
+                  {milestones.map((m, i) => {
+                    const active = i === youAreHereSlot
+                    const align = i === 0 ? 'text-left' : i === milestones.length - 1 ? 'text-right' : 'text-center'
+                    return (
+                      <span
+                        key={m.rank}
+                        data-testid={`ranked-milestone-${m.rank}`}
+                        className={align}
+                        style={{
+                          color: active ? '#e8a832' : 'rgba(225,225,241,0.45)',
+                          fontWeight: active ? 700 : 600,
+                        }}
+                      >
+                        {active ? t('ranked.youAreHere') : t('ranked.topMilestone', { n: m.rank })}
+                      </span>
+                    )
+                  })}
+                </div>
+              </div>
+            </div>
+          </section>
+        )
+      })()}
+
+      {/* ── Start CTA (R5 — 3 states) ── */}
+      <div className="mt-4 mb-10">
+        {(() => {
+          const energy = rankedStatus.livesRemaining ?? 0
+          const questionsLeftFromEnergy = Math.floor(energy / 5)
+          const capReached = rankedStatus.questionsCounted >= rankedStatus.cap
+
+          if (canPlay) {
+            return (
+              <button
+                data-testid="ranked-start-btn"
+                onClick={startRankedQuiz}
+                className="w-full gold-gradient text-on-secondary font-black rounded-xl shadow-[0_8px_30px_rgb(248,189,69,0.3)] hover:shadow-[0_12px_36px_rgb(248,189,69,0.45)] active:scale-[0.98] transition-all py-4 px-7 flex flex-col items-center gap-1"
+              >
+                <span className="text-xl uppercase tracking-widest flex items-center gap-2">
+                  <span className="material-symbols-outlined" style={FILL_1}>play_arrow</span>
+                  {t('ranked.ctaPlayMain')}
+                </span>
+                <span className="text-xs font-medium opacity-80 normal-case tracking-normal">
+                  {t('ranked.ctaPlaySub', {
+                    book: rankedStatus.currentBook,
+                    count: questionsLeftFromEnergy,
+                  })}
+                </span>
+              </button>
+            )
+          }
+
+          // Disabled states share styling; pick label by reason
+          const sharedDisabledClass = 'w-full bg-surface-container-high text-on-surface-variant font-black rounded-xl py-4 px-7 flex flex-col items-center gap-1 opacity-60 cursor-not-allowed'
+          if (capReached) {
+            return (
+              <div className={sharedDisabledClass}>
+                <span className="text-xl uppercase tracking-widest">
+                  {t('ranked.ctaCapMain')}
+                </span>
+                <span data-testid="ranked-cap-reached-msg" className="text-xs font-medium normal-case tracking-normal">
+                  {t('ranked.ctaCapSub', { time: timeLeft || '--:--:--' })}
+                </span>
+              </div>
+            )
+          }
+          // noEnergy fallback
+          return (
+            <div className={sharedDisabledClass}>
+              <span className="text-xl uppercase tracking-widest">
+                {t('ranked.ctaNoEnergyMain')}
+              </span>
+              <span data-testid="ranked-no-energy-msg" className="text-xs font-medium normal-case tracking-normal">
+                {t('ranked.ctaNoEnergySub', { time: timeLeft || '--:--:--' })}
+              </span>
+            </div>
+          )
+        })()}
       </div>
     </main>
   )
