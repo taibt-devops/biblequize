@@ -792,6 +792,15 @@
     "dailyMissions": "Today's missions",
     "dailyMissionsHeader": "📋 Today's missions",
     "dailyMissionsCount": "{{completed}}/{{total}} done",
+    "journey": {
+      "title": "🗺 66-book journey",
+      "subtitleStart": "Start your journey from Genesis",
+      "subtitleOT": "On {{book}} · Matthew through Revelation are waiting",
+      "subtitleNT": "On {{book}} · {{count}} New Testament books left",
+      "subtitleDone": "You've conquered the whole Bible! 👑",
+      "otLabel": "OT (39)",
+      "ntLabel": "NT (27)"
+    },
     "received": "Received",
     "dayStreak": "day streak",
     "recommend": {

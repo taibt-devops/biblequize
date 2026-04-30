@@ -792,6 +792,15 @@
     "dailyMissions": "Nhiệm vụ hôm nay",
     "dailyMissionsHeader": "📋 Nhiệm vụ hôm nay",
     "dailyMissionsCount": "{{completed}}/{{total}} hoàn thành",
+    "journey": {
+      "title": "🗺 Hành trình 66 sách",
+      "subtitleStart": "Bắt đầu hành trình từ Genesis",
+      "subtitleOT": "Đang ở {{book}} · Ma-thi-ơ và Khải Huyền đang đợi bạn",
+      "subtitleNT": "Đang ở {{book}} · Còn {{count}} sách Tân Ước",
+      "subtitleDone": "Bạn đã chinh phục toàn bộ Kinh Thánh! 👑",
+      "otLabel": "Cựu Ước (39)",
+      "ntLabel": "Tân Ước (27)"
+    },
     "received": "Đã nhận",
     "dayStreak": "ngày liên tiếp",
     "recommend": {
