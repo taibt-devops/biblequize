@@ -1682,6 +1682,10 @@
     "topMilestoneWithPoints": "Top {{n}} ({{points}}đ)",
     "unranked": "Chưa xếp hạng",
     "ctaPlayMain": "Vào Thi Đấu Ngay",
+    "subtitle": "Cạnh tranh điểm số mỗi ngày",
+    "howToPlay": "Cách chơi →",
+    "targetNextTier": "Mục tiêu: tier kế",
+    "xpProgressLabel": "{{current}} / {{total}} XP",
     "sidebar": {
       "seasonGoalLabel": "MỤC TIÊU MÙA",
       "seasonGoalCurrent": "Hiện tại: hạng #{{rank}}",

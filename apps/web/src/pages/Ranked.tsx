@@ -6,6 +6,8 @@ import { getQuizLanguage } from '../utils/quizLanguage'
 import { useAuth } from '../store/authStore'
 import { useRankedDataSync } from '../hooks/useRankedDataSync'
 import { getTierInfo } from '../data/tiers'
+import RankedHeader from '../components/ranked/RankedHeader'
+import TierProgressCard from '../components/ranked/TierProgressCard'
 
 const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
 
@@ -242,69 +244,18 @@ export default function Ranked() {
 
   return (
     <main data-testid="ranked-page" className="max-w-5xl mx-auto space-y-6">
-      {/* ── Header (R1) ── */}
-      <header className="mb-6">
-        <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">
-          {t('ranked.title')}
-        </h1>
+      {/* ── Header (R2) — title + How to play ── */}
+      <RankedHeader />
 
-        <div className="flex flex-wrap items-center gap-3 mb-3">
-          <div
-            data-testid="ranked-tier-badge"
-            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border"
-            style={{
-              backgroundColor: 'rgba(232,168,50,0.1)',
-              borderColor: 'rgba(232,168,50,0.3)',
-            }}
-          >
-            <span
-              className="material-symbols-outlined text-base"
-              style={{ ...FILL_1, color: currentTier.colorHex }}
-            >
-              {currentTier.iconMaterial}
-            </span>
-            <span
-              className="font-bold text-sm uppercase tracking-wide"
-              style={{ color: currentTier.colorHex }}
-            >
-              {t(currentTier.nameKey)}
-            </span>
-          </div>
-
-          {nextTier ? (() => {
-            const nextTierName = t(nextTier.nameKey)
-            const fullText = t('ranked.pointsToNext', {
-              points: pointsToNext.toLocaleString('vi-VN'),
-              tier: nextTierName,
-            })
-            // R1 polish: highlight nextTier name in gold + semibold without
-            // changing the i18n string (locale-agnostic — assumes tier name
-            // appears verbatim once in the translated sentence).
-            const idx = fullText.lastIndexOf(nextTierName)
-            const before = idx >= 0 ? fullText.slice(0, idx) : fullText
-            const after = idx >= 0 ? fullText.slice(idx + nextTierName.length) : ''
-            return (
-              <p data-testid="ranked-tier-progress-text" className="text-sm text-on-surface-variant">
-                {before}
-                <span className="font-semibold" style={{ color: '#e8a832' }}>{nextTierName}</span>
-                {after}
-              </p>
-            )
-          })() : (
-            <p data-testid="ranked-tier-progress-text" className="text-sm text-secondary font-bold">
-              {t('ranked.maxTier')}
-            </p>
-          )}
-        </div>
-
-        <div className="h-1.5 w-full bg-primary-container rounded-full overflow-hidden">
-          <div
-            data-testid="ranked-tier-progress-bar"
-            className="h-full gold-gradient rounded-full transition-all duration-700 ease-out"
-            style={{ width: `${tierProgressPct}%` }}
-          />
-        </div>
-      </header>
+      {/* ── Tier progress card (R2 — RK-P1-1, RK-P1-2) ── */}
+      <TierProgressCard
+        currentTier={currentTier}
+        nextTier={nextTier}
+        totalPoints={totalPoints}
+        pointsToNext={pointsToNext}
+        tierProgressPct={tierProgressPct}
+        starIndex={tierData?.starIndex}
+      />
 
       {/* ── Energy + Streak (R2) ── */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">

@@ -1682,6 +1682,10 @@
     "topMilestoneWithPoints": "Top {{n}} ({{points}} pts)",
     "unranked": "Unranked",
     "ctaPlayMain": "Play Ranked Now",
+    "subtitle": "Daily competitive scoring",
+    "howToPlay": "How to play →",
+    "targetNextTier": "Goal: next tier",
+    "xpProgressLabel": "{{current}} / {{total}} XP",
     "sidebar": {
       "seasonGoalLabel": "SEASON GOAL",
       "seasonGoalCurrent": "Currently: rank #{{rank}}",
