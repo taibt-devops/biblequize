@@ -10,6 +10,7 @@ import RankedHeader from '../components/ranked/RankedHeader'
 import TierProgressCard from '../components/ranked/TierProgressCard'
 import EnergyCard from '../components/ranked/EnergyCard'
 import RankedStreakCard from '../components/ranked/RankedStreakCard'
+import DailyStatsCards from '../components/ranked/DailyStatsCards'
 
 const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
 
@@ -64,6 +65,7 @@ interface RankedStatus {
   dailyDelta: number | null            // can be negative
   pointsToTop50: number | null         // null when user is already in top 50
   pointsToTop10: number | null         // null when user is already in top 10
+  pointsToTop100?: number | null       // R10 will populate; null until then
 }
 
 // Tier data centralised in `data/tiers.ts` (single source of truth).
@@ -269,88 +271,18 @@ export default function Ranked() {
         <RankedStreakCard streak={user?.currentStreak ?? 0} />
       </div>
 
-      {/* ── 3 Stats Cards (R3) ── */}
-      {/*
-        Note: rank #N display removed from this row — rank lives only in
-        the Season card below (R5). testid ranked-user-rank is no longer
-        rendered; corresponding e2e assertion removed in W-M04-L1-002.
-      */}
-      {(() => {
-        const questionsCap = rankedStatus.cap || 0
-        const questionsAnswered = rankedStatus.questionsCounted ?? 0
-        const questionsLeft = Math.max(0, questionsCap - questionsAnswered)
-        const questionsPct = questionsCap > 0 ? (questionsAnswered / questionsCap) * 100 : 0
-        const points = rankedStatus.pointsToday ?? 0
-        const delta = rankedStatus.dailyDelta
-        const showDelta = typeof delta === 'number' && delta !== 0
-        const accuracyRaw = rankedStatus.dailyAccuracy
-        const showAccuracy = typeof accuracyRaw === 'number'
-        const accuracyPct = showAccuracy ? Math.round(accuracyRaw! * 100) : null
-        const correctCount = rankedStatus.dailyCorrectCount
-        const totalAnswered = rankedStatus.dailyTotalAnswered
-        return (
-          <div className={`grid grid-cols-1 sm:grid-cols-2 ${showAccuracy ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-3`}>
-            {/* Card 1: questions counted */}
-            <div className="glass-card rounded-xl p-5 border border-white/5">
-              <div className="text-on-surface-variant text-xs uppercase tracking-widest mb-2">
-                {t('ranked.questionsCounted')}
-              </div>
-              <div className="text-2xl font-black text-on-surface mb-1">
-                <span data-testid="ranked-questions-counted">{questionsAnswered}</span>
-                <span className="text-on-surface-variant font-normal text-lg">/{questionsCap}</span>
-              </div>
-              <div className="text-xs text-on-surface-variant mb-3">
-                {t('ranked.questionsLeftToday', { count: questionsLeft })}
-              </div>
-              <div className="h-[3px] w-full bg-primary-container rounded-full overflow-hidden">
-                <div
-                  data-testid="ranked-today-progress"
-                  className="h-full gold-gradient rounded-full transition-all duration-700 ease-out"
-                  style={{ width: `${questionsPct}%` }}
-                />
-              </div>
-            </div>
-
-            {/* Card 2: points today */}
-            <div className="glass-card rounded-xl p-5 border border-white/5">
-              <div className="text-on-surface-variant text-xs uppercase tracking-widest mb-2">
-                {t('ranked.pointsToday')}
-              </div>
-              <div data-testid="ranked-points-today" className="text-3xl font-black mb-1" style={{ color: '#e8a832' }}>
-                {points}
-              </div>
-              {showDelta && (
-                <div
-                  data-testid="ranked-points-delta"
-                  className="text-xs font-medium"
-                  style={{ color: delta! > 0 ? '#4ade80' : '#fb923c' }}
-                >
-                  {delta! > 0
-                    ? `↑ +${delta} ${t('ranked.deltaVsYesterday')}`
-                    : `↓ ${Math.abs(delta!)} ${t('ranked.deltaVsYesterday')}`}
-                </div>
-              )}
-            </div>
-
-            {/* Card 3: accuracy — only when BE provides it */}
-            {showAccuracy && (
-              <div className="glass-card rounded-xl p-5 border border-white/5">
-                <div className="text-on-surface-variant text-xs uppercase tracking-widest mb-2">
-                  {t('ranked.accuracy')}
-                </div>
-                <div data-testid="ranked-accuracy" className="text-2xl font-black text-on-surface mb-1">
-                  {accuracyPct}%
-                </div>
-                {typeof correctCount === 'number' && typeof totalAnswered === 'number' && (
-                  <div className="text-xs text-on-surface-variant">
-                    {t('ranked.correctOfTotal', { correct: correctCount, total: totalAnswered })}
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
-        )
-      })()}
+      {/* ── Daily stats 2-col (R4 — RK-P1-5) ──
+          Accuracy moved to sidebar WinRateWidget (R1) so this row is
+          now exactly two symmetric cards. */}
+      <DailyStatsCards
+        questionsAnswered={rankedStatus.questionsCounted ?? 0}
+        questionsCap={rankedStatus.cap || 0}
+        pointsToday={rankedStatus.pointsToday ?? 0}
+        dailyDelta={rankedStatus.dailyDelta}
+        pointsToTop100={rankedStatus.pointsToTop100}
+        pointsToTop50={rankedStatus.pointsToTop50}
+        pointsToTop10={rankedStatus.pointsToTop10}
+      />
 
       {/* ── Active Book Card (R4) ── */}
       <section
