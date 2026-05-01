@@ -768,22 +768,27 @@ const Quiz: React.FC = () => {
         </div>
       </main>
 
-      {/* Confirmation Modal */}
+      {/* Confirmation Modal — feedback bar with the score delta + Next button.
+          Mobile: stack vertically (button full-width below) so "+N Điểm thưởng"
+          doesn't get squeezed into a 3-line wrap. Desktop: horizontal row. */}
       {showResult && (
         <div className="fixed bottom-10 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-3rem)] max-w-lg">
-          <div data-testid="quiz-answer-feedback" className="bg-surface-container-highest p-5 rounded-3xl border border-secondary/30 shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex items-center justify-between gap-4 glass-panel">
-            <div className="flex items-center gap-4">
-              <div className={`w-12 h-12 rounded-full flex items-center justify-center ${isCorrect ? 'bg-secondary/20' : 'bg-error/20'}`}>
+          <div
+            data-testid="quiz-answer-feedback"
+            className="bg-surface-container-highest p-4 sm:p-5 rounded-3xl border border-secondary/30 shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 glass-panel"
+          >
+            <div className="flex items-center gap-4 min-w-0">
+              <div className={`w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center flex-shrink-0 ${isCorrect ? 'bg-secondary/20' : 'bg-error/20'}`}>
                 <span
                   className={`material-symbols-outlined text-2xl ${isCorrect ? 'text-secondary' : 'text-error'}`}
                   style={FILL_STYLE}
                 >{isCorrect ? 'verified' : 'cancel'}</span>
               </div>
-              <div>
-                <p className="text-base font-bold text-on-surface">
+              <div className="min-w-0 flex-1">
+                <p className="text-base font-bold text-on-surface leading-tight">
                   {isCorrect ? t('quiz.correct') : t('quiz.incorrect')}
                 </p>
-                <p data-testid="quiz-score-delta" className={`text-xs font-medium ${isCorrect ? 'text-secondary/80' : 'text-error/80'}`}>
+                <p data-testid="quiz-score-delta" className={`text-xs font-medium leading-tight mt-0.5 ${isCorrect ? 'text-secondary/80' : 'text-error/80'}`}>
                   {isCorrect ? t('quiz.bonusPoints', { points: lastQuestionScore }) : t('quiz.noPoints')}
                 </p>
               </div>
@@ -791,7 +796,7 @@ const Quiz: React.FC = () => {
             <button
               data-testid="quiz-next-btn"
               onClick={nextQuestion}
-              className="bg-gradient-to-r from-secondary to-tertiary text-on-secondary px-8 py-3 rounded-2xl font-black text-sm shadow-xl active:scale-95 transition-all hover:brightness-110 whitespace-nowrap"
+              className="bg-gradient-to-r from-secondary to-tertiary text-on-secondary px-6 sm:px-8 py-3 rounded-2xl font-black text-sm shadow-xl active:scale-95 transition-all hover:brightness-110 whitespace-nowrap w-full sm:w-auto"
             >
               {currentQuestionIndex + 1 >= questions.length ? t('quiz.viewResults') : t('quiz.nextQuestion')}
             </button>
@@ -805,7 +810,7 @@ const Quiz: React.FC = () => {
           the explanation text isn't truncated. max-h + overflow-y-auto keeps
           long explanations from spilling above the answer grid. */}
       {showResult && isCorrect === false && (currentQuestion.explanation || currentQuestion.verseStart) && (
-        <div data-testid="quiz-explanation" className="fixed bottom-44 sm:bottom-32 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-3rem)] max-w-lg animate-slide-up">
+        <div data-testid="quiz-explanation" className="fixed bottom-48 sm:bottom-36 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-3rem)] max-w-lg animate-slide-up">
           <div className="glass-panel p-5 rounded-2xl border border-error/20 space-y-3 max-h-[50vh] overflow-y-auto">
             {/* Correct answer */}
             <div className="flex items-center gap-2">
@@ -851,7 +856,7 @@ const Quiz: React.FC = () => {
           Same bottom offset + scroll cap as the wrong-answer panel (mobile
           responsive fix). */}
       {showResult && isCorrect === true && settings?.showExplanation && currentQuestion.explanation && (
-        <div className="fixed bottom-44 sm:bottom-32 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-3rem)] max-w-lg">
+        <div className="fixed bottom-48 sm:bottom-36 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-3rem)] max-w-lg">
           <div className="glass-panel p-4 rounded-2xl border border-outline-variant/10 text-sm text-on-surface-variant max-h-[50vh] overflow-y-auto">
             <strong className="text-on-surface">{t('quiz.explanation')}:</strong> {currentQuestion.explanation}
           </div>
