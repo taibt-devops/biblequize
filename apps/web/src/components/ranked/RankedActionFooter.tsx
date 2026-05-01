@@ -55,45 +55,51 @@ export default function RankedActionFooter({
   const { t } = useTranslation()
   const questionsLeftFromEnergy = Math.floor(energy / 5)
 
-  const primaryButton = canPlay ? (
+  // Each state returns the main button/pill (single-line label only)
+  // plus a hint string rendered as a separate caption row below the
+  // bar — keeps the gold button visually clean and matches the mockup
+  // where the energy estimate sits outside the button.
+  const button = canPlay ? (
     <button
       data-testid="ranked-start-btn"
       onClick={onStart}
-      className="w-full gold-gradient text-on-secondary font-medium rounded-xl shadow-[0_8px_30px_rgb(248,189,69,0.25)] hover:shadow-[0_12px_36px_rgb(248,189,69,0.4)] active:scale-[0.98] transition-all py-3.5 px-6 flex flex-col items-center gap-0.5"
+      className="w-full gold-gradient text-on-secondary font-medium rounded-xl shadow-[0_8px_30px_rgb(248,189,69,0.25)] hover:shadow-[0_12px_36px_rgb(248,189,69,0.4)] active:scale-[0.98] transition-all py-3.5 px-6 flex items-center justify-center gap-2"
     >
-      <span className="text-[15px] tracking-tight flex items-center gap-2">
-        <span className="material-symbols-outlined text-[20px]" style={FILL_1}>
-          play_arrow
-        </span>
-        {t('ranked.ctaPlayMain')}
+      <span className="material-symbols-outlined text-[20px]" style={FILL_1}>
+        play_arrow
       </span>
-      <span className="text-[11px] font-normal opacity-80">
-        {t('ranked.ctaPlaySub', { count: questionsLeftFromEnergy })}
+      <span className="text-[15px] tracking-tight">
+        {t('ranked.ctaPlayMain')}
       </span>
     </button>
   ) : capReached ? (
-    <div
-      className="w-full bg-surface-container-high text-on-surface-variant rounded-xl py-3.5 px-6 flex flex-col items-center gap-0.5 opacity-60 cursor-not-allowed"
-    >
+    <div className="w-full bg-surface-container-high text-on-surface-variant rounded-xl py-3.5 px-6 flex items-center justify-center opacity-60 cursor-not-allowed">
       <span className="text-[15px] font-medium tracking-tight">
         {t('ranked.ctaCapMain')}
       </span>
-      <span data-testid="ranked-cap-reached-msg" className="text-[11px] font-normal">
-        {t('ranked.ctaCapSub', { time: resetTimeLeft })}
-      </span>
     </div>
   ) : (
-    <div
-      className="w-full bg-surface-container-high text-on-surface-variant rounded-xl py-3.5 px-6 flex flex-col items-center gap-0.5 opacity-60 cursor-not-allowed"
-    >
+    <div className="w-full bg-surface-container-high text-on-surface-variant rounded-xl py-3.5 px-6 flex items-center justify-center opacity-60 cursor-not-allowed">
       <span className="text-[15px] font-medium tracking-tight">
         {t('ranked.ctaNoEnergyMain')}
       </span>
-      <span data-testid="ranked-no-energy-msg" className="text-[11px] font-normal">
-        {t('ranked.ctaNoEnergySub', { time: resetTimeLeft })}
-      </span>
     </div>
   )
+
+  // Caption rendered OUTSIDE the button. testids on the disabled-state
+  // captions are preserved (existing tests assert on
+  // ranked-cap-reached-msg / ranked-no-energy-msg).
+  const caption = canPlay
+    ? t('ranked.ctaPlaySub', { count: questionsLeftFromEnergy })
+    : capReached
+      ? t('ranked.ctaCapSub', { time: resetTimeLeft })
+      : t('ranked.ctaNoEnergySub', { time: resetTimeLeft })
+
+  const captionTestId = canPlay
+    ? undefined
+    : capReached
+      ? 'ranked-cap-reached-msg'
+      : 'ranked-no-energy-msg'
 
   return (
     <div
@@ -111,9 +117,15 @@ export default function RankedActionFooter({
             'linear-gradient(180deg, rgba(17,19,30,0) 0%, rgba(17,19,30,0.95) 100%)',
         }}
       />
-      <div className="bg-[#11131e]/95 backdrop-blur-md border-t border-secondary/15 px-4 md:px-10 lg:px-14 py-3 pointer-events-auto">
+      <div className="bg-[#11131e]/95 backdrop-blur-md border-t border-secondary/15 px-4 md:px-10 lg:px-14 pt-3 pb-2 pointer-events-auto">
         <div className="max-w-5xl mx-auto">
-          {primaryButton}
+          {button}
+          <p
+            data-testid={captionTestId}
+            className="text-center text-on-surface-variant/55 text-[11px] mt-1.5"
+          >
+            {caption}
+          </p>
         </div>
       </div>
     </div>
