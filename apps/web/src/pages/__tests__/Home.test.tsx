@@ -92,22 +92,24 @@ describe('Home Dashboard', () => {
 
   describe('Greeting & Tier', () => {
     it('displays time-based greeting with user name', async () => {
+      // V4 hero splits greeting line and user name into separate
+      // elements (mockup: greeting label sits above the name with
+      // smaller weight). Assert both pieces independently.
       renderHome()
       await waitFor(() => {
         const h = new Date().getHours()
         const expected = h < 12 ? 'Chào buổi sáng' : h < 18 ? 'Chào buổi chiều' : 'Chào buổi tối'
-        const heading = screen.getByTestId('home-greeting')
-        expect(heading.textContent).toContain(`${expected}, Nghĩa!`)
+        expect(screen.getByTestId('home-greeting').textContent).toContain(expected)
+        expect(screen.getByTestId('home-user-name').textContent).toBe('Nghĩa')
       })
     })
 
     it('displays tier progress bar', async () => {
-      // V3 hero stat-sheet drops the "Tiến trình hạng" label and goes
-      // straight to the gold-gradient progress fill — assert that
-      // (and its star-row) instead.
+      // V4 hero exposes the progress fill via data-testid; the bar uses
+      // the .gold-gradient utility class (no more .hero-v3-progress-fill).
       renderHome()
       await waitFor(() => {
-        expect(document.querySelector('.hero-v3-progress-fill')).toBeInTheDocument()
+        expect(screen.getByTestId('home-hero-progress-fill')).toBeInTheDocument()
         expect(screen.getByTestId('home-hero-stars')).toBeInTheDocument()
       })
     })
@@ -140,9 +142,9 @@ describe('Home Dashboard', () => {
       })
       renderHome()
       await waitFor(() => {
-        const bar = document.querySelector('.hero-v3-progress-fill')
-        expect((bar as HTMLElement).style.width).toBe('0%')
-        // Tier name lives inside its own span — match against textContent.
+        const bar = screen.getByTestId('home-hero-progress-fill')
+        expect(bar.style.width).toBe('0%')
+        // Tier name lives inside the tier pill — match against textContent.
         expect(screen.getByTestId('home-tier-name').textContent).toBe('Tân Tín Hữu')
       })
     })
@@ -198,14 +200,17 @@ describe('Home Dashboard', () => {
       renderHome()
       await waitFor(() => {
         expect(screen.getByText('Trần Thùy Linh')).toBeInTheDocument()
-        expect(screen.getByText('45,200 XP')).toBeInTheDocument()
+        // H7 redesign drops the "XP" suffix on each row — the column
+        // header / footer carries the unit, the rows just show counts.
+        expect(screen.getByText('45,200')).toBeInTheDocument()
       })
     })
 
     it('displays current user row', async () => {
       renderHome()
       await waitFor(() => {
-        expect(screen.getByText(/Bạn \(Nghĩa\)/)).toBeInTheDocument()
+        // H7: name comes first, "(bạn)" is the suffix per mockup.
+        expect(screen.getByText(/Nghĩa \(bạn\)/)).toBeInTheDocument()
         expect(screen.getByText('#85')).toBeInTheDocument()
       })
     })
@@ -238,12 +243,12 @@ describe('Home Dashboard', () => {
       renderHome()
 
       await waitFor(() => {
-        // Main list row for the user IS present
-        expect(screen.getByText('45,200 XP')).toBeInTheDocument()
+        // Main list row for the user IS present (H7 drops "XP" suffix).
+        expect(screen.getByText('45,200')).toBeInTheDocument()
       })
       // Sticky "Bạn" row is NOT present (user is rank 1 in a list of 2)
       expect(screen.queryByTestId('home-my-rank-sticky')).not.toBeInTheDocument()
-      expect(screen.queryByText(/Bạn \(Nghĩa\)/)).not.toBeInTheDocument()
+      expect(screen.queryByText(/Nghĩa \(bạn\)/)).not.toBeInTheDocument()
     })
 
     it('renders sticky "Bạn" row when user is OUTSIDE the top list', async () => {
@@ -272,7 +277,8 @@ describe('Home Dashboard', () => {
     it('has "Xem tất cả" link', async () => {
       renderHome()
       await waitFor(() => {
-        const link = screen.getByText('Xem tất cả')
+        // H7 footer renders "Xem tất cả →" with the trailing arrow.
+        const link = screen.getByText(/Xem tất cả/)
         expect(link.closest('a')).toHaveAttribute('href', '/leaderboard')
       })
     })
@@ -301,7 +307,9 @@ describe('Home Dashboard', () => {
   describe('Activity Feed', () => {
     it('displays section title', async () => {
       renderHome()
-      await waitFor(() => { expect(screen.getByText('Hoạt động gần đây')).toBeInTheDocument() })
+      // H7 shortened the title to "Hoạt động" with "Trong hội thánh"
+      // as a separate subtitle.
+      await waitFor(() => { expect(screen.getByText('Hoạt động')).toBeInTheDocument() })
     })
 
     /**
@@ -337,7 +345,10 @@ describe('Home Dashboard', () => {
      * hero section — see docs/prompts/PROMPT_HOME_REFACTOR_FIXES.md
      * Fix 3 ("brand soul" positioning).
      */
-    it('renders the verse banner above the game modes section', async () => {
+    it('renders the verse banner as the page footer (after game modes)', async () => {
+      // H8 demoted the verse from a hero ornament to a decorative
+      // footer at the bottom of Home — quieter, devotional close to
+      // the page rather than a visual peer of the gameplay rows.
       renderHome()
       await waitFor(() => {
         expect(screen.getByTestId('home-daily-verse')).toBeInTheDocument()
@@ -345,8 +356,8 @@ describe('Home Dashboard', () => {
       const verse = screen.getByTestId('home-daily-verse')
       const gameModes = screen.getByTestId('game-mode-grid')
       const cmp = verse.compareDocumentPosition(gameModes)
-      // DOCUMENT_POSITION_FOLLOWING = 4 — verse comes BEFORE game modes
-      expect(cmp & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
+      // DOCUMENT_POSITION_PRECEDING = 2 — verse comes AFTER game modes.
+      expect(cmp & Node.DOCUMENT_POSITION_PRECEDING).toBeTruthy()
     })
   })
 

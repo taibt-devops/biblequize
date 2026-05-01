@@ -2,6 +2,44 @@
 
 ---
 
+## 2026-05-01 — Home mode-card live hints (HM-P1-1) — 2 BE endpoints added
+
+- Quyết định: Add `GET /api/groups/me` (current user's primary group) + `GET /api/tournaments/upcoming` (count + next LOBBY tournament) để power live hints cho 2 mode cards còn thiếu (Nhóm Giáo Xứ + Giải Đấu) trong H4 grid.
+- Lý do: HM-P1-1 trong `docs/BUG_REPORT_HOME_POST_IMPL.md` — 2/6 mode cards render generic subtitle thay vì live data, làm giảm "này-có-gì-mới" feel của Home page. Mockup dụng ý 6/6 cards có live hint.
+- "Upcoming" semantics cho tournament: trong entity `Tournament` không có field `startsAt` (chỉ có `startedAt` set khi bắt đầu thực sự). "Upcoming" maps sang `Status.LOBBY` (open for joining), `next` = lobby tournament tạo gần nhất. FE render "{count} đấu trường đang mở".
+- Group endpoint trả về primary group (first by joined-at order) khi user thuộc nhiều nhóm — Home card chỉ cần 1 tên để render "Trong {groupName}". Khi không có nhóm → `{ hasGroup: false }`, FE render "Bạn chưa có nhóm".
+- Trade-off:
+  - 2 endpoints mới đều auth-required (consistent với rest of app, dù `/upcoming` về lý có thể public). Trade-off: unauthenticated visitors không thấy hint — chấp nhận được vì Home toàn bộ behind auth.
+  - Lobby ordering "most recent first" thay vì "soonest startsAt": entity hiện không có `startsAt` field, không refactor schema cho task nhỏ. Khi BE add scheduled tournaments later → swap ordering ở 1 method (`TournamentService.getUpcomingTournaments`).
+- Implementation:
+  - BE: 1 commit thêm 2 controller endpoints + 2 service methods + 5 unit tests (3 group + 2 tournament).
+  - FE: 1 commit thêm 2 TanStack queries + i18n keys (`home.modeHint.groupNone/groupIn/tournamentOpen`) + 4 unit tests trong `GameModeGrid.test.tsx`.
+- Tests: BE 274/255 pass (1 fail + 17 errors all pre-existing baseline). FE 1045/1045 pass (zero failures).
+- Closes HM-P1-1. BACKEND_GAPS_HOME_V2.md updated to "ALL WIRED".
+
+---
+
+## 2026-05-01 — AppLayout responsive, Direction B (drop desktop top bar)
+
+- Quyết định: Trên desktop (≥ md) bỏ top bar; sidebar mang đầy đủ identity (logo "Bible Quiz" + notification bell + user card với 5-item dropdown + nav + Streak/Mission widgets footer). Trên mobile (< md) sidebar ẩn, dùng `MobileTopBar` (logo + bell + avatar dropdown) + `MobileBottomTabs` (4 tabs).
+- Lý do: top bar trên desktop trùng với sidebar (avatar render 2 lần, identity thừa) — flagged HM-P0-1 trong `docs/BUG_REPORT_HOME_POST_IMPL.md`. Top bar chiếm ~80px chiều cao mà chỉ chứa logo + avatar.
+- Trade-off:
+  - Tăng số file layout (4 component mới: SidebarHeader / SidebarUserCard / MobileTopBar / MobileBottomTabs) + 2 reusable extract (NotificationBell / UserDropdown). Đối lại AppLayout.tsx giảm 284 → 115 LOC, thoải mái dưới ngưỡng 300 LOC của CLAUDE.md.
+  - Notification bell trên desktop nay nằm cạnh logo trong sidebar (Option A) — mất một chỗ "rest" cho mắt (top bar trống) nhưng giải quyết duplicate identity.
+  - Mobile bottom tabs giữ nguyên 4 mục (`Trang chủ / Xếp hạng / Nhóm / Cá nhân`) — labels đã đủ ngắn cho viewport 320px (HM-MB-2).
+- Implementation (6 commits trên branch `feat/home-redesign-v2`):
+  - `c2fe8fb chore(layout): scaffold components` — Task 1
+  - `d4c877f feat(layout): NotificationBell + UserDropdown extracted, SidebarHeader + SidebarUserCard wired` — Task 2
+  - `b2929bf feat(layout): MobileTopBar + MobileBottomTabs` — Task 3
+  - `7f4da66 refactor(layout): AppLayout responsive` — Task 4
+  - `baa3631 test(layout): visual regression baseline + i18n cleanup` — Task 5
+  - cleanup commit này — Task 6
+- Backend changes: ZERO (FE-only refactor).
+- Reuse: notification panel logic + click-outside handler đã được port từ `components/Header.tsx` orphan (chỉ test files import, không production mount). Polished UX (timeAgo formatter, mark-as-read on click, mark-all-read header button, type-based routing) survive vào `NotificationBell.tsx` mới. Header.tsx + Header.module.css + Header.test.tsx đã được xóa trong Task 6 cleanup.
+- KHÔNG thay đổi khi refactor trừ khi có lý do mới.
+
+---
+
 ## 2026-04-29 — Soft-pivot from Progressive Unlock to Open Access (game modes)
 
 - Quyết định: Bỏ tier-based gates trên UI cho Tournament + Multiplayer + Mystery + Speed Round. Mọi user (kể cả tier 1) đều thấy đầy đủ 9 game mode cards. Tier không còn quyết định **access**, chỉ ảnh hưởng **perks** (XP×, energy regen, streak freeze) per §3.2.2. Ranked giữ tier-2 gate vì BE thực sự enforce trong `SessionService` (có early-unlock alternative đẹp).

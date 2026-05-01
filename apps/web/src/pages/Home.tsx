@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { useTranslation } from 'react-i18next'
 import ActivityFeed from '../components/ActivityFeed'
+import BibleJourneyCard from '../components/BibleJourneyCard'
 import ComebackModal from '../components/ComebackModal'
 import DailyBonusModal from '../components/DailyBonusModal'
 import DailyMissionsCard from '../components/DailyMissionsCard'
@@ -15,7 +16,7 @@ import TierPerksTeaser from '../components/TierPerksTeaser'
 import TutorialOverlay from '../components/TutorialOverlay'
 import { useAuthStore } from '../store/authStore'
 import { api } from '../api/client'
-import { getTierInfo } from '../data/tiers'
+import { getTierInfo, getTierByPoints } from '../data/tiers'
 
 /* ── Skeleton ── */
 function HomeSkeleton() {
@@ -95,11 +96,8 @@ export default function Home() {
       <ComebackModal />
       <DailyBonusModal />
       <TutorialOverlay />
-      {/* ── Hero (V3 stat sheet) ── */}
+      {/* ── Hero (V4 sub-tier stars) ── */}
       <HeroStatSheet />
-
-      {/* ── Daily Verse banner (V3 ornament) ── */}
-      <DailyVerseBanner />
 
       {/* ── Featured Daily Challenge (hero CTA for tier-1) ── */}
       <FeaturedDailyChallenge />
@@ -128,131 +126,166 @@ export default function Home() {
         <div data-testid="home-daily-missions"><DailyMissionsCard /></div>
       </section>
 
-      {/* ── Journey Widget ── */}
-      <JourneyWidget />
+      {/* ── Bible Journey 66 books (H6 elevated split bar) ── */}
+      <BibleJourneyCard />
 
       {/* ── Aspirational next-tier perks (returns null at tier 6) ── */}
       <TierPerksTeaser userTier={userTierLevel} totalPoints={totalPoints} />
 
-      {/* ── Leaderboard + Feed ── */}
-      <section data-testid="home-leaderboard" className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        <div className="lg:col-span-8 bg-surface-container rounded-2xl p-6 border border-outline-variant/10">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-            <h3 className="text-lg font-black tracking-tight text-on-surface">{t('home.leaderboard')}</h3>
-            {/* Period tabs */}
-            <div className="flex p-1 bg-surface-container-high rounded-lg">
+      {/* ── Leaderboard + Activity (H7) ── 1.4fr / 1fr per mockup */}
+      <section
+        data-testid="home-leaderboard"
+        className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-2.5"
+      >
+        <div className="bg-[rgba(50,52,64,0.4)] rounded-2xl p-4 border border-secondary/15">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-on-surface text-[12px] md:text-[13px] font-medium">
+              {t('home.leaderboard')}
+            </h3>
+            <div className="flex gap-1 bg-black/30 rounded-md p-0.5">
               <button
                 data-testid="leaderboard-tab-daily"
                 onClick={() => setLbPeriod('daily')}
-                className={`px-3 py-1.5 text-[10px] font-bold rounded-md transition-all ${lbPeriod === 'daily' ? 'bg-secondary text-on-secondary shadow-sm' : 'text-on-surface-variant hover:text-on-surface'}`}
+                className={`px-2 py-1 text-[9px] md:text-[10px] font-medium rounded transition-all ${
+                  lbPeriod === 'daily'
+                    ? 'bg-secondary text-on-secondary'
+                    : 'text-on-surface-variant/45'
+                }`}
               >
                 {t('home.daily')}
               </button>
               <button
                 data-testid="leaderboard-tab-weekly"
                 onClick={() => setLbPeriod('weekly')}
-                className={`px-3 py-1.5 text-[10px] font-bold rounded-md transition-all ${lbPeriod === 'weekly' ? 'bg-secondary text-on-secondary shadow-sm' : 'text-on-surface-variant hover:text-on-surface'}`}
+                className={`px-2 py-1 text-[9px] md:text-[10px] font-medium rounded transition-all ${
+                  lbPeriod === 'weekly'
+                    ? 'bg-secondary text-on-secondary'
+                    : 'text-on-surface-variant/45'
+                }`}
               >
                 {t('home.weekly')}
               </button>
             </div>
           </div>
 
-          <div className={`space-y-3 transition-opacity duration-200 ${lbFetching ? 'opacity-50' : 'opacity-100'}`}>
+          <div
+            className={`flex flex-col gap-1.5 transition-opacity duration-200 ${
+              lbFetching ? 'opacity-50' : 'opacity-100'
+            }`}
+          >
             {leaderboard.length === 0 ? (
               <EmptyLeaderboardCTA />
-            ) : leaderboard.map((p: any, i: number) => (
-              <div key={p.userId || i} data-testid="leaderboard-row" className={`flex items-center justify-between p-4 rounded-xl ${i === 0 ? 'bg-secondary/5 border border-secondary/10' : 'hover:bg-surface-container-high transition-colors'}`}>
-                <div className="flex items-center gap-4">
-                  <span className={`text-xl font-black w-6 text-center ${i === 0 ? 'text-secondary' : 'text-on-surface-variant'}`}>{i + 1}</span>
-                  <div className="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center border border-outline-variant/20 overflow-hidden">
-                    {p.avatarUrl ? <img src={p.avatarUrl} alt="" className="w-full h-full object-cover" /> :
-                      <span className="text-sm font-bold text-on-surface-variant">{(p.name || p.userName || '?').charAt(0).toUpperCase()}</span>}
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-on-surface">{p.name || p.userName}</p>
-                    <p className="text-[10px] text-on-surface-variant font-medium">{p.groupName || ''}</p>
-                  </div>
-                </div>
-                <div className="text-right">
-                  <p className={`font-black text-sm ${i === 0 ? 'text-secondary' : 'text-on-surface'}`}>{(p.points || 0).toLocaleString()} XP</p>
-                  <p className="text-[10px] font-bold text-on-surface-variant">{(p.questions || 0)} {t('home.questions')}</p>
-                </div>
-              </div>
-            ))}
+            ) : (
+              leaderboard.map((p: any, i: number) => (
+                <LeaderboardRow
+                  key={p.userId || i}
+                  rank={i + 1}
+                  name={p.name || p.userName || '?'}
+                  points={p.points || 0}
+                  isTop1={i === 0}
+                />
+              ))
+            )}
             {showMyRankSticky && (
-              <div data-testid="home-my-rank-sticky" className="flex items-center justify-between p-4 rounded-xl bg-surface-container-highest border-l-4 border-secondary">
-                <div className="flex items-center gap-4">
-                  <span className="text-sm font-black text-on-surface w-6 text-center">#{myRank}</span>
-                  <div className="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center border border-secondary overflow-hidden">
-                    <span className="material-symbols-outlined text-secondary text-sm">person</span>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-on-surface">{t('home.you', { name: userName })}</p>
-                    <p className="text-[10px] text-on-surface-variant font-medium">{t(tier.current.nameKey)}</p>
-                  </div>
-                </div>
-                <div className="text-right">
-                  <p className="font-black text-on-surface text-sm">{totalPoints.toLocaleString()} XP</p>
-                  <p className="text-[10px] font-bold text-secondary uppercase tracking-tighter">{t(tier.current.nameKey)}</p>
-                </div>
-              </div>
+              <LeaderboardRow
+                rank={myRank!}
+                name={userName}
+                points={totalPoints}
+                isCurrentUser
+              />
             )}
           </div>
 
-          <Link to="/leaderboard" className="block mt-4 text-center text-xs font-bold text-secondary hover:underline uppercase tracking-widest">
-            {t('home.viewAll')}
-          </Link>
+          <div className="text-center pt-2.5 mt-1.5 border-t border-white/[0.06]">
+            <Link
+              to="/leaderboard"
+              className="text-[10px] text-secondary hover:underline"
+            >
+              {t('home.viewAll')} →
+            </Link>
+          </div>
         </div>
 
         {/* Activity */}
-        <div className="lg:col-span-4 space-y-6">
-          <ActivityFeed userCreatedAt={meData?.createdAt} />
-        </div>
+        <ActivityFeed userCreatedAt={meData?.createdAt} />
       </section>
+
+      {/* ── Daily verse decorative footer (H8) ── */}
+      <DailyVerseBanner />
     </div>
   )
 }
 
-function JourneyWidget() {
-  const { t, i18n } = useTranslation()
-  const isVi = i18n.language === 'vi'
+interface LeaderboardRowProps {
+  rank: number
+  name: string
+  points: number
+  /** Top-1 row gets the gold-tinted bg + gold rank/XP. */
+  isTop1?: boolean
+  /** Current user row pinned via gold left border + you-suffix. */
+  isCurrentUser?: boolean
+}
 
-  const { data } = useQuery<{ summary: { completedBooks: number; totalBooks: number; currentBook: string | null; overallMasteryPercent: number } }>({
-    queryKey: ['journey-summary', i18n.language],
-    queryFn: async () => (await api.get(`/api/me/journey?language=${i18n.language}`)).data,
-  })
+/**
+ * One leaderboard row in the Home H7 list. Avatar background uses the
+ * tier color from {@code data/tiers.ts} so the row at a glance signals
+ * the player's standing — top of the list still differentiates by gold
+ * accents on rank + XP.
+ */
+function LeaderboardRow({ rank, name, points, isTop1, isCurrentUser }: LeaderboardRowProps) {
+  const { t } = useTranslation()
+  const tier = getTierByPoints(points)
+  const tierName = t(tier.nameKey)
+  const initial = (name || '?').charAt(0).toUpperCase()
 
-  if (!data) return null
+  const rowClass = isCurrentUser
+    ? 'bg-[rgba(232,168,50,0.04)] border-l-2 border-secondary rounded-r-md'
+    : isTop1
+      ? 'bg-[rgba(232,168,50,0.06)] rounded-md'
+      : ''
 
-  const { summary } = data
-  const pct = summary.totalBooks > 0 ? Math.round((summary.completedBooks / summary.totalBooks) * 100) : 0
+  const accent = isTop1 || isCurrentUser
 
   return (
-    <Link to="/journey" className="block">
-      <div className="bg-surface-container rounded-2xl p-5 border border-outline-variant/10 hover:border-secondary/20 transition-all group">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>map</span>
-            <div>
-              <p className="text-sm font-bold text-on-surface">
-                {t('journey.homeWidget', { count: summary.completedBooks, total: summary.totalBooks })}
-              </p>
-              {summary.currentBook && (
-                <p className="text-xs text-on-surface-variant">
-                  {t('journey.currentBook', { book: summary.currentBook, percent: summary.overallMasteryPercent })}
-                </p>
-              )}
-            </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="w-16 h-2 bg-surface-container-high rounded-full overflow-hidden">
-              <div className="h-full bg-secondary rounded-full" style={{ width: `${pct}%` }} />
-            </div>
-            <span className="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors">chevron_right</span>
-          </div>
+    <div
+      data-testid={isCurrentUser ? 'home-my-rank-sticky' : 'leaderboard-row'}
+      className={`flex items-center gap-2 md:gap-2.5 px-1.5 md:px-2 py-1.5 ${rowClass}`}
+    >
+      <span
+        className={`text-[10px] md:text-[11px] font-medium w-3.5 md:w-[18px] text-center shrink-0 ${
+          accent ? 'text-secondary' : 'text-on-surface-variant/45'
+        }`}
+      >
+        {isCurrentUser ? `#${rank}` : rank}
+      </span>
+      <div
+        className="w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center text-[9px] md:text-[10px] font-medium shrink-0"
+        style={{ background: tier.colorHex, color: '#11131e' }}
+      >
+        {initial}
+      </div>
+      <div className="flex-1 min-w-0">
+        <div
+          className={`text-[10px] md:text-[11px] truncate ${
+            accent ? 'text-on-surface font-medium' : 'text-on-surface/85'
+          }`}
+        >
+          {isCurrentUser ? t('home.you', { name }) : name}
+        </div>
+        <div
+          className="text-[8px] md:text-[9px] truncate"
+          style={{ color: tier.colorHex }}
+        >
+          {tierName}
         </div>
       </div>
-    </Link>
+      <span
+        className={`text-[10px] md:text-[11px] font-medium shrink-0 ${
+          accent ? 'text-secondary' : 'text-on-surface/85'
+        }`}
+      >
+        {points.toLocaleString()}
+      </span>
+    </div>
   )
 }

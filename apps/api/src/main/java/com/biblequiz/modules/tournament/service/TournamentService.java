@@ -41,6 +41,35 @@ public class TournamentService {
     @Autowired
     private UserDailyProgressRepository udpRepository;
 
+    /**
+     * Returns a summary of upcoming tournaments for the Home
+     * mode-card live hint (HM-P1-1). "Upcoming" maps to LOBBY status
+     * (open for joining) since the entity has no scheduled startsAt
+     * field — the FE renders "{count} đấu trường đang mở" or hides
+     * the hint when count is 0.
+     */
+    public Map<String, Object> getUpcomingTournaments() {
+        List<Tournament> lobby = tournamentRepository.findByStatus(Tournament.Status.LOBBY);
+        Map<String, Object> response = new HashMap<>();
+        response.put("count", lobby.size());
+        if (lobby.isEmpty()) {
+            response.put("next", null);
+        } else {
+            // Pick the most recently created lobby tournament — most
+            // likely the one users would discover first on /tournaments.
+            Tournament next = lobby.stream()
+                    .max((a, b) -> a.getCreatedAt().compareTo(b.getCreatedAt()))
+                    .orElse(lobby.get(0));
+            Map<String, Object> nextInfo = new LinkedHashMap<>();
+            nextInfo.put("id", next.getId());
+            nextInfo.put("name", next.getName());
+            nextInfo.put("bracketSize", next.getBracketSize());
+            nextInfo.put("createdAt", next.getCreatedAt());
+            response.put("next", nextInfo);
+        }
+        return response;
+    }
+
     public Map<String, Object> createTournament(String name, User creator, int bracketSize) {
         Map<String, Object> result = new HashMap<>();
 

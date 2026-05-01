@@ -730,6 +730,16 @@
     "maxTierReached": "Đã đạt hạng cao nhất!",
     "tierProgress": "Tiến trình hạng",
     "tierLabel": "Tier",
+    "hero": {
+      "currentBook": "📖 Đang đọc {{book}}",
+      "questionsToday": "🎯 {{count}} câu hôm nay",
+      "starsToNext": "{{points}} / {{total}} XP đến sao kế",
+      "starsToNextMobile": "{{points}}/{{total}} → sao kế",
+      "mobileStreakLabel": "STREAK",
+      "mobileTodayLabel": "HÔM NAY",
+      "streakUnit": "ngày",
+      "todayUnit": "câu"
+    },
     "statStreak": "Streak",
     "statStreakValue": "{{count}} ngày",
     "statPoints": "Điểm",
@@ -749,10 +759,14 @@
       "cta": "Chơi ngay"
     },
     "questions": "câu",
-    "you": "Bạn ({{name}})",
+    "you": "{{name}} (bạn)",
     "viewAll": "Xem tất cả",
     "matchmakingHint": "Đối thủ có thể đã chơi lâu hơn bạn — chuẩn bị tinh thần!",
     "exploreMore": "Khám phá thêm",
+    "continueJourney": {
+      "title": "Tiếp tục hành trình",
+      "subtitle": "Chế độ chính"
+    },
     "compactSubtitles": {
       "group": "Hội thánh",
       "multiplayer": "2-20 người",
@@ -761,8 +775,17 @@
       "mystery": "Random hoàn toàn",
       "speed": "10 câu × 10s"
     },
+    "modeHint": {
+      "roomsOpen": "{{count}} phòng đang mở",
+      "mysteryXp": "+50% XP",
+      "speedXp": "+100% XP",
+      "groupNone": "Bạn chưa có nhóm",
+      "groupIn": "Trong {{name}}",
+      "tournamentOpen": "{{count}} đấu trường đang mở"
+    },
     "activityFeed": {
-      "title": "Hoạt động gần đây",
+      "title": "Hoạt động",
+      "subtitle": "Trong hội thánh",
       "emptyTitle": "Bạn là người tiên phong!",
       "emptyBody": "Hoạt động cộng đồng sẽ xuất hiện khi anh em trong hội thánh chơi cùng bạn.",
       "emptyCta": "Mời anh em",
@@ -771,6 +794,17 @@
     "dailyVerse": "HỌC NGÀY",
     "verseToday": "Câu gốc hôm nay",
     "dailyMissions": "Nhiệm vụ hôm nay",
+    "dailyMissionsHeader": "📋 Nhiệm vụ hôm nay",
+    "dailyMissionsCount": "{{completed}}/{{total}} hoàn thành",
+    "journey": {
+      "title": "🗺 Hành trình 66 sách",
+      "subtitleStart": "Bắt đầu hành trình từ Genesis",
+      "subtitleOT": "Đang ở {{book}} · Ma-thi-ơ và Khải Huyền đang đợi bạn",
+      "subtitleNT": "Đang ở {{book}} · Còn {{count}} sách Tân Ước",
+      "subtitleDone": "Bạn đã chinh phục toàn bộ Kinh Thánh! 👑",
+      "otLabel": "Cựu Ước (39)",
+      "ntLabel": "Tân Ước (27)"
+    },
     "received": "Đã nhận",
     "dayStreak": "ngày liên tiếp",
     "recommend": {
@@ -787,8 +821,14 @@
       "fewBooks": "Hành trình qua {{count}} sách",
       "manyBooks": "🌍 Hành trình qua {{count}} sách",
       "meta": "5 câu • 5 phút • +50 XP",
+      "metaTime": "5 phút",
+      "metaQuestions": "5 câu",
+      "metaXp": "+50 XP",
+      "onlyToday": "CHỈ HÔM NAY",
+      "doneBadge": "ĐÃ HOÀN THÀNH",
       "countdown": "Thử thách mới sau {{time}}",
-      "cta": "Bắt đầu hôm nay",
+      "countdownShort": "Mới sau {{time}}",
+      "cta": "Vào thử thách",
       "completed": "✅ Bạn đã hoàn thành hôm nay — Quay lại sau {{time}}",
       "completedState": {
         "title": "ĐÃ HOÀN THÀNH HÔM NAY",
@@ -1413,17 +1453,19 @@
     }
   },
   "practiceFeatured": {
-    "title": "Luyện Tập",
-    "description": "Học không áp lực, không giới hạn thời gian.",
+    "title": "Luyện tập",
+    "description": "Học theo nhịp riêng",
+    "badge": "Không áp lực",
     "status": "Sẵn sàng thách thức?",
     "cta": "Bắt đầu"
   },
   "rankedFeatured": {
-    "title": "Thi Đấu Ranked",
-    "description": "Tranh tài trực tiếp, kiếm điểm rank lớn.",
+    "title": "Thi đấu Ranked",
+    "description": "Cạnh tranh ranking",
+    "energyBadge": "{{count}} năng lượng",
     "unlocked": {
       "badge": "Đã mở khóa",
-      "cta": "Bắt đầu Ranked"
+      "cta": "Vào trận"
     },
     "needBasicQuiz": {
       "label": "Cần hoàn thành Bài Giáo Lý ({{count}} câu)",

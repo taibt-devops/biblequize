@@ -1,31 +1,21 @@
-import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
-import { screen, waitFor } from '@testing-library/react'
-import { renderWithI18n } from '../../test/i18n-test-utils'
+import { describe, it, expect, beforeEach, afterEach } from 'vitest'
 import i18n from '../index'
-import Header from '../../components/Header'
 
-// Mock auth so Header renders the authenticated shell without needing a store
-vi.mock('../../store/authStore', () => ({
-  useAuth: () => ({
-    user: { name: 'Tester', email: 't@ex.com' },
-    isAuthenticated: true,
-    logout: vi.fn(),
-  }),
-  useAuthStore: () => ({
-    user: { name: 'Tester', email: 't@ex.com' },
-    isAuthenticated: true,
-    logout: vi.fn(),
-  }),
-}))
-
-// Silence the axios interceptor that setups up auth; no network calls in these tests
-vi.mock('../../api/client', () => ({
-  api: {
-    get: vi.fn().mockResolvedValue({ data: { notifications: [], unreadCount: 0 } }),
-    patch: vi.fn().mockResolvedValue({}),
-  },
-}))
-
+/**
+ * Direct-i18n tests for mid-session language switching. The previous
+ * version mounted the orphan {@code components/Header.tsx} to assert
+ * nav-label text changed reactively; that component was removed in
+ * the AppLayout Hướng B refactor (HM-P0-1) and its render-time test
+ * coverage is now redundant — every consumer goes through the same
+ * {@code i18n.changeLanguage} call this suite still exercises.
+ *
+ * What we keep is the sharp contract: changing the active locale
+ * updates {@code i18n.language} and {@code i18n.t} resolution
+ * synchronously, so any component that reads either at render time
+ * (NotificationBell, UserDropdown, Home, ...) gets fresh strings on
+ * the next render. Component-level tests for those (HeroStatSheet,
+ * AppLayout, GameModeGrid) cover the rendering path independently.
+ */
 describe('i18n language switch mid-session', () => {
   beforeEach(async () => {
     await i18n.changeLanguage('vi')
@@ -35,58 +25,41 @@ describe('i18n language switch mid-session', () => {
     await i18n.changeLanguage('vi')
   })
 
-  it('renders Vietnamese nav labels when language is vi', () => {
-    renderWithI18n(<Header />, { language: 'vi' })
-    expect(screen.getByText('Trang chủ')).toBeInTheDocument()
-    expect(screen.getByText('Hằng ngày')).toBeInTheDocument()
-    expect(screen.getByText('Leo Rank')).toBeInTheDocument()
+  it('resolves Vietnamese nav labels when language is vi', () => {
+    expect(i18n.t('nav.home')).toBe('Trang chủ')
+    expect(i18n.t('nav.leaderboard')).toBe('Xếp hạng')
+    expect(i18n.t('nav.profile')).toBe('Cá nhân')
   })
 
-  it('swaps to English nav labels after i18n.changeLanguage("en")', async () => {
-    renderWithI18n(<Header />, { language: 'vi' })
-    expect(screen.getByText('Trang chủ')).toBeInTheDocument()
-
+  it('swaps to English nav labels after changeLanguage("en")', async () => {
+    expect(i18n.t('nav.home')).toBe('Trang chủ')
     await i18n.changeLanguage('en')
-
-    await waitFor(() => {
-      expect(screen.getByText('Home')).toBeInTheDocument()
-      expect(screen.getByText('Daily')).toBeInTheDocument()
-      expect(screen.getByText('Ranked')).toBeInTheDocument()
-    })
-    // Vietnamese labels should be gone
-    expect(screen.queryByText('Trang chủ')).not.toBeInTheDocument()
-    expect(screen.queryByText('Leo Rank')).not.toBeInTheDocument()
+    expect(i18n.t('nav.home')).not.toBe('Trang chủ')
+    expect(i18n.t('nav.home').toLowerCase()).toContain('home')
   })
 
   it('round-trips vi → en → vi and recovers the original labels', async () => {
-    renderWithI18n(<Header />, { language: 'vi' })
-    expect(screen.getByText('Trang chủ')).toBeInTheDocument()
-
+    const viFirst = i18n.t('nav.home')
     await i18n.changeLanguage('en')
-    await waitFor(() => expect(screen.getByText('Home')).toBeInTheDocument())
-
+    const enValue = i18n.t('nav.home')
+    expect(enValue).not.toBe(viFirst)
     await i18n.changeLanguage('vi')
-    await waitFor(() => {
-      expect(screen.getByText('Trang chủ')).toBeInTheDocument()
-      expect(screen.queryByText('Home')).not.toBeInTheDocument()
-    })
+    expect(i18n.t('nav.home')).toBe(viFirst)
   })
 
   it('i18n.language reflects the active locale', async () => {
-    renderWithI18n(<Header />, { language: 'vi' })
     expect(i18n.language).toBe('vi')
-
     await i18n.changeLanguage('en')
     expect(i18n.language).toBe('en')
-
     await i18n.changeLanguage('vi')
     expect(i18n.language).toBe('vi')
   })
 
   it('time-ago interpolation updates with the active locale', async () => {
+    // Used by NotificationBell.timeAgo() — verify the {{count}}
+    // placeholder + locale switch survives.
     await i18n.changeLanguage('vi')
     expect(i18n.t('header.time.minutesAgo', { count: 5 })).toBe('5 phút trước')
-
     await i18n.changeLanguage('en')
     expect(i18n.t('header.time.minutesAgo', { count: 5 })).toBe('5 min ago')
   })

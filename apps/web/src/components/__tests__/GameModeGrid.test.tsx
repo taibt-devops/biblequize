@@ -83,10 +83,16 @@ describe('GameModeGrid (Option Y)', () => {
       expect(mockNavigate).toHaveBeenCalledWith('/practice')
     })
 
-    it('Practice CTA uses outline variant (PL-3 visual hierarchy)', async () => {
+    it('Practice CTA uses blue outline (H3 visual hierarchy)', async () => {
+      // H3 supersedes PL-3: Practice card adopts the full blue theme
+      // (icon + border + outline button) so it visually steps back from
+      // the primary gold Ranked CTA. Practice card itself carries the
+      // theme via data-theme="blue".
       renderGrid()
+      const card = screen.getByTestId('featured-card-practice')
+      expect(card).toHaveAttribute('data-theme', 'blue')
       const cta = screen.getByTestId('featured-card-practice-cta')
-      expect(cta.className).toContain('border-secondary')
+      expect(cta.className).toContain('#4a9eff')
       expect(cta.className).toContain('bg-transparent')
       expect(cta.className).not.toContain('gold-gradient')
     })
@@ -205,6 +211,170 @@ describe('GameModeGrid (Option Y)', () => {
       expect(screen.getByTestId('compact-card-multiplayer-matchmaking-hint')).toBeInTheDocument()
       expect(screen.queryByTestId('compact-card-group-matchmaking-hint')).not.toBeInTheDocument()
       expect(screen.queryByTestId('compact-card-weekly-matchmaking-hint')).not.toBeInTheDocument()
+    })
+
+    // ── H4: themed cards + live data hints ────────────────────────────
+
+    it('each compact card carries its mockup theme color (inline bg)', async () => {
+      // Spot-check 3 of 6 cards — full audit lives in COMPACT_CARDS.
+      // Group = #4a9eff (74,158,255), mystery = #d4537e (212,83,126),
+      // speed = #ff8c42 (255,140,66).
+      renderGrid()
+      const group = screen.getByTestId('compact-card-group')
+      expect(group.getAttribute('style')).toMatch(/74\s*,\s*158\s*,\s*255/)
+      const mystery = screen.getByTestId('compact-card-mystery')
+      expect(mystery.getAttribute('style')).toMatch(/212\s*,\s*83\s*,\s*126/)
+      const speed = screen.getByTestId('compact-card-speed')
+      expect(speed.getAttribute('style')).toMatch(/255\s*,\s*140\s*,\s*66/)
+    })
+
+    it('mystery + speed always render their hardcoded XP hint', async () => {
+      renderGrid()
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-mystery-hint').textContent).toBe('+50% XP')
+      })
+      expect(screen.getByTestId('compact-card-speed-hint').textContent).toBe('+100% XP')
+    })
+
+    it('multiplayer renders live "{N} phòng đang mở" when /api/rooms/public has data', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/daily-challenge')) {
+          return Promise.resolve({ data: { alreadyCompleted: false } })
+        }
+        if (url.includes('/api/basic-quiz/status')) {
+          return Promise.resolve({
+            data: { passed: false, cooldownRemainingSeconds: 0, attemptCount: 0,
+                    totalQuestions: 10, threshold: 8 },
+          })
+        }
+        if (url.includes('/api/rooms/public')) {
+          return Promise.resolve({ data: [{ id: 'r1' }, { id: 'r2' }, { id: 'r3' }] })
+        }
+        if (url.includes('/api/quiz/weekly/theme')) {
+          return Promise.resolve({ data: { themeName: 'Phép lạ Chúa Giê-su' } })
+        }
+        return Promise.reject(new Error('Not mocked: ' + url))
+      })
+      renderGrid()
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-multiplayer-hint').textContent).toContain('3')
+      })
+      expect(screen.getByTestId('compact-card-weekly-hint').textContent).toContain('Phép lạ')
+    })
+
+    it('group hint shows "Trong {name}" when /api/groups/me returns hasGroup=true', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/daily-challenge')) {
+          return Promise.resolve({ data: { alreadyCompleted: false } })
+        }
+        if (url.includes('/api/basic-quiz/status')) {
+          return Promise.resolve({
+            data: { passed: false, cooldownRemainingSeconds: 0, attemptCount: 0,
+                    totalQuestions: 10, threshold: 8 },
+          })
+        }
+        if (url.includes('/api/groups/me')) {
+          return Promise.resolve({ data: { hasGroup: true, groupName: 'Hội Thánh Phước Lành', memberCount: 12 } })
+        }
+        return Promise.reject(new Error('Not mocked: ' + url))
+      })
+      renderGrid()
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-group-hint').textContent).toContain('Hội Thánh Phước Lành')
+      })
+    })
+
+    it('group hint shows "Bạn chưa có nhóm" when /api/groups/me returns hasGroup=false', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/daily-challenge')) {
+          return Promise.resolve({ data: { alreadyCompleted: false } })
+        }
+        if (url.includes('/api/basic-quiz/status')) {
+          return Promise.resolve({
+            data: { passed: false, cooldownRemainingSeconds: 0, attemptCount: 0,
+                    totalQuestions: 10, threshold: 8 },
+          })
+        }
+        if (url.includes('/api/groups/me')) {
+          return Promise.resolve({ data: { hasGroup: false } })
+        }
+        return Promise.reject(new Error('Not mocked: ' + url))
+      })
+      renderGrid()
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-group-hint').textContent).toMatch(/chưa có nhóm/i)
+      })
+    })
+
+    it('tournament hint shows count when /api/tournaments/upcoming has lobby items', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/daily-challenge')) {
+          return Promise.resolve({ data: { alreadyCompleted: false } })
+        }
+        if (url.includes('/api/basic-quiz/status')) {
+          return Promise.resolve({
+            data: { passed: false, cooldownRemainingSeconds: 0, attemptCount: 0,
+                    totalQuestions: 10, threshold: 8 },
+          })
+        }
+        if (url.includes('/api/tournaments/upcoming')) {
+          return Promise.resolve({ data: { count: 2, next: { id: 't1', name: 'Spring Cup' } } })
+        }
+        return Promise.reject(new Error('Not mocked: ' + url))
+      })
+      renderGrid()
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-tournament-hint').textContent).toContain('2')
+      })
+    })
+
+    it('tournament hint hides when count is 0', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/daily-challenge')) {
+          return Promise.resolve({ data: { alreadyCompleted: false } })
+        }
+        if (url.includes('/api/basic-quiz/status')) {
+          return Promise.resolve({
+            data: { passed: false, cooldownRemainingSeconds: 0, attemptCount: 0,
+                    totalQuestions: 10, threshold: 8 },
+          })
+        }
+        if (url.includes('/api/tournaments/upcoming')) {
+          return Promise.resolve({ data: { count: 0, next: null } })
+        }
+        return Promise.reject(new Error('Not mocked: ' + url))
+      })
+      renderGrid()
+      // Wait for an always-rendered hint to confirm cards mounted.
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-mystery-hint')).toBeInTheDocument()
+      })
+      expect(screen.queryByTestId('compact-card-tournament-hint')).not.toBeInTheDocument()
+    })
+
+    it('multiplayer hint hides when rooms endpoint returns empty', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/daily-challenge')) {
+          return Promise.resolve({ data: { alreadyCompleted: false } })
+        }
+        if (url.includes('/api/basic-quiz/status')) {
+          return Promise.resolve({
+            data: { passed: false, cooldownRemainingSeconds: 0, attemptCount: 0,
+                    totalQuestions: 10, threshold: 8 },
+          })
+        }
+        if (url.includes('/api/rooms/public')) {
+          return Promise.resolve({ data: [] })
+        }
+        return Promise.reject(new Error('Not mocked: ' + url))
+      })
+      renderGrid()
+      // Wait for one of the always-rendered hints to assert the cards
+      // already mounted — then probe for the absent multiplayer hint.
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-mystery-hint')).toBeInTheDocument()
+      })
+      expect(screen.queryByTestId('compact-card-multiplayer-hint')).not.toBeInTheDocument()
     })
   })
 

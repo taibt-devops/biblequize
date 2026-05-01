@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useQuery } from '@tanstack/react-query'
 import { useTranslation } from 'react-i18next'
 import { api } from '../api/client'
 import { getRecommendedMode, type RecommendedMode } from '../utils/getRecommendedMode'
@@ -19,7 +20,9 @@ interface CompactConfig {
   id: string
   icon: string
   iconFill?: boolean
-  iconColor: string
+  /** Mockup color (line 286-294 in proposal.html). Drives bg tint,
+   *  border, icon, and live-hint text. */
+  themeHex: string
   titleKey: string
   subtitleKey: string
   route: string
@@ -29,13 +32,14 @@ interface CompactConfig {
  * 6-card secondary grid (3×2 desktop, 2×3 mobile). Daily migrated to
  * the standalone FeaturedDailyChallenge banner above the grid; Practice
  * + Ranked promoted to the FeaturedCard row, so this list stays focused
- * on "more ways to play".
+ * on "more ways to play". H4 redesign: each card has its own color
+ * theme + (where the BE supports it) a live-data hint.
  */
 const COMPACT_CARDS: CompactConfig[] = [
   {
     id: 'group',
     icon: 'church',
-    iconColor: 'text-primary',
+    themeHex: '#4a9eff',
     titleKey: 'gameModes.groups',
     subtitleKey: 'home.compactSubtitles.group',
     route: '/groups',
@@ -43,7 +47,7 @@ const COMPACT_CARDS: CompactConfig[] = [
   {
     id: 'multiplayer',
     icon: 'gamepad',
-    iconColor: 'text-secondary',
+    themeHex: '#9b59b6',
     titleKey: 'gameModes.rooms',
     subtitleKey: 'home.compactSubtitles.multiplayer',
     route: '/multiplayer',
@@ -51,7 +55,7 @@ const COMPACT_CARDS: CompactConfig[] = [
   {
     id: 'tournament',
     icon: 'trophy',
-    iconColor: 'text-error',
+    themeHex: '#ff6b6b',
     titleKey: 'gameModes.tournament',
     subtitleKey: 'home.compactSubtitles.tournament',
     route: '/tournaments',
@@ -60,7 +64,7 @@ const COMPACT_CARDS: CompactConfig[] = [
     id: 'weekly',
     icon: 'event',
     iconFill: true,
-    iconColor: 'text-purple-400',
+    themeHex: '#a855f7',
     titleKey: 'gameModes.weekly',
     subtitleKey: 'home.compactSubtitles.weekly',
     route: '/weekly-quiz',
@@ -69,7 +73,7 @@ const COMPACT_CARDS: CompactConfig[] = [
     id: 'mystery',
     icon: 'casino',
     iconFill: true,
-    iconColor: 'text-pink-400',
+    themeHex: '#d4537e',
     titleKey: 'gameModes.mystery',
     subtitleKey: 'home.compactSubtitles.mystery',
     route: '/mystery-mode',
@@ -78,7 +82,7 @@ const COMPACT_CARDS: CompactConfig[] = [
     id: 'speed',
     icon: 'speed',
     iconFill: true,
-    iconColor: 'text-orange-400',
+    themeHex: '#ff8c42',
     titleKey: 'gameModes.speed',
     subtitleKey: 'home.compactSubtitles.speed',
     route: '/speed-round',
@@ -156,40 +160,115 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
       ? (t(`home.recommend.${recommendation.reasonKey}`, recommendation.values) as string)
       : undefined
 
+  // Live-data hints (H4 + HM-P1-1). All 4 BE endpoints wired up as
+  // of 2026-05-01. Cards without an endpoint (mystery + speed) render
+  // static XP-multiplier text. Each query lives in its own TanStack
+  // entry so a slow one doesn't block the rest of the grid.
+  const { data: roomsCount } = useQuery<number>({
+    queryKey: ['home-rooms-public-count'],
+    queryFn: async () => {
+      const res = await api.get('/api/rooms/public')
+      return Array.isArray(res.data) ? res.data.length : 0
+    },
+    staleTime: 60_000,
+  })
+
+  const { data: weeklyTheme } = useQuery<string | null>({
+    queryKey: ['home-weekly-theme'],
+    queryFn: async () => {
+      const res = await api.get('/api/quiz/weekly/theme')
+      return (res.data?.themeName as string) || (res.data?.theme as string) || null
+    },
+    staleTime: 5 * 60_000,
+  })
+
+  interface MyGroupResponse {
+    hasGroup: boolean
+    groupName?: string
+  }
+  const { data: myGroup } = useQuery<MyGroupResponse>({
+    queryKey: ['home-my-group'],
+    queryFn: () => api.get('/api/groups/me').then(r => r.data),
+    staleTime: 5 * 60_000,
+  })
+
+  interface UpcomingTournamentsResponse {
+    count: number
+    next: { id: string; name: string } | null
+  }
+  const { data: upcomingTournaments } = useQuery<UpcomingTournamentsResponse>({
+    queryKey: ['home-tournaments-upcoming'],
+    queryFn: () => api.get('/api/tournaments/upcoming').then(r => r.data),
+    staleTime: 60_000,
+  })
+
+  const groupHint = myGroup
+    ? myGroup.hasGroup && myGroup.groupName
+      ? (t('home.modeHint.groupIn', { name: myGroup.groupName }) as string)
+      : (t('home.modeHint.groupNone') as string)
+    : undefined
+
+  const tournamentHint =
+    upcomingTournaments && upcomingTournaments.count > 0
+      ? (t('home.modeHint.tournamentOpen', { count: upcomingTournaments.count }) as string)
+      : undefined
+
+  const liveHints: Record<string, string | undefined> = {
+    group: groupHint,
+    multiplayer:
+      typeof roomsCount === 'number' && roomsCount > 0
+        ? (t('home.modeHint.roomsOpen', { count: roomsCount }) as string)
+        : undefined,
+    tournament: tournamentHint,
+    weekly: weeklyTheme || undefined,
+    mystery: t('home.modeHint.mysteryXp') as string,
+    speed: t('home.modeHint.speedXp') as string,
+  }
+
   return (
     <div data-testid="game-mode-grid" className="space-y-8">
-      {/* ── Featured: Practice + Ranked (core experience) ── */}
+      {/* ── Featured: Practice + Ranked (continue-journey row) ──
+          Per H3 — section header + 2-col compact cards. Practice uses
+          the blue theme (outline button) so the gold filled Ranked CTA
+          dominates as the primary action. Reverts the PL-3 gold-outline
+          intermediate variant. */}
       <section
         data-testid="game-mode-tier-featured"
-        className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        className="space-y-2.5"
       >
-        <FeaturedCard
-          id="practice"
-          icon="menu_book"
-          iconColor="text-secondary"
-          title={t('practiceFeatured.title')}
-          description={t('practiceFeatured.description')}
-          isRecommended={recommendation?.mode === 'practice'}
-          recommendReason={recommendReason('practice')}
-          status={
-            <div data-testid="featured-card-practice-status" className="text-[13px] font-semibold text-secondary">
-              {t('practiceFeatured.status')}
-            </div>
-          }
-          cta={{
-            label: t('practiceFeatured.cta'),
-            onClick: () => navigate('/practice'),
-            iconLeft: 'play_arrow',
-            // Outline variant — Daily + Ranked keep gold-filled (primary);
-            // Practice steps down to secondary so the 3 CTAs no longer
-            // share identical visual weight on Home.
-            className: 'border-2 border-secondary text-secondary bg-transparent hover:bg-secondary/10 active:scale-95',
-          }}
-        />
-        <RankedFeaturedCard
-          isRecommended={recommendation?.mode === 'ranked'}
-          recommendReason={recommendReason('ranked')}
-        />
+        <header className="flex items-baseline justify-between">
+          <h2 className="text-on-surface/85 text-[13px] font-medium">
+            {t('home.continueJourney.title')}
+          </h2>
+          <span className="text-on-surface-variant/40 text-[11px]">
+            {t('home.continueJourney.subtitle')}
+          </span>
+        </header>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          <FeaturedCard
+            id="practice"
+            theme="blue"
+            icon="menu_book"
+            title={t('practiceFeatured.title')}
+            description={t('practiceFeatured.description')}
+            isRecommended={recommendation?.mode === 'practice'}
+            recommendReason={recommendReason('practice')}
+            badge={
+              <span data-testid="featured-card-practice-status" className="text-on-surface-variant/40">
+                {t('practiceFeatured.badge')}
+              </span>
+            }
+            cta={{
+              label: t('practiceFeatured.cta'),
+              onClick: () => navigate('/practice'),
+              iconLeft: 'play_arrow',
+            }}
+          />
+          <RankedFeaturedCard
+            isRecommended={recommendation?.mode === 'ranked'}
+            recommendReason={recommendReason('ranked')}
+          />
+        </div>
       </section>
 
       {/* ── Divider ── */}
@@ -212,9 +291,10 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
             id={card.id}
             icon={card.icon}
             iconFill={card.iconFill}
-            iconColor={card.iconColor}
+            themeHex={card.themeHex}
             title={t(card.titleKey)}
             subtitle={t(card.subtitleKey)}
+            liveHint={liveHints[card.id]}
             onClick={() => navigate(card.route)}
             matchmakingHint={
               MATCHMAKING_HINT_MODES.has(card.id)

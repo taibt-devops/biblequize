@@ -124,6 +124,45 @@ class ChurchGroupControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.group.id").value("group-1"));
     }
 
+    // ── GET /api/groups/me (HM-P1-1 Home live hint) ──────────────────────────
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getMyGroup_inGroup_returnsHasGroupTrueWithName() throws Exception {
+        Map<String, Object> serviceResult = new LinkedHashMap<>();
+        serviceResult.put("hasGroup", true);
+        serviceResult.put("groupId", "group-42");
+        serviceResult.put("groupName", "Hội Thánh Phước Lành");
+        serviceResult.put("memberCount", 12);
+        serviceResult.put("role", "MEMBER");
+
+        when(churchGroupService.getMyGroup("user-1")).thenReturn(serviceResult);
+
+        mockMvc.perform(get("/api/groups/me"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.hasGroup").value(true))
+                .andExpect(jsonPath("$.groupId").value("group-42"))
+                .andExpect(jsonPath("$.groupName").value("Hội Thánh Phước Lành"))
+                .andExpect(jsonPath("$.memberCount").value(12))
+                .andExpect(jsonPath("$.role").value("MEMBER"));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getMyGroup_notInAnyGroup_returnsHasGroupFalse() throws Exception {
+        when(churchGroupService.getMyGroup("user-1")).thenReturn(Map.of("hasGroup", false));
+
+        mockMvc.perform(get("/api/groups/me"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.hasGroup").value(false));
+    }
+
+    @Test
+    void getMyGroup_withoutAuth_shouldReturn401() throws Exception {
+        mockMvc.perform(get("/api/groups/me"))
+                .andExpect(status().isUnauthorized());
+    }
+
     // ── GET /api/groups/{id}/leaderboard ─────────────────────────────────────
 
     @Test

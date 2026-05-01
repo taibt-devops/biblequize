@@ -13,17 +13,21 @@ describe('DailyVerseBanner', () => {
     expect(screen.getByTestId('home-daily-verse-ref').textContent?.length).toBeGreaterThan(0)
   })
 
-  it('renders the ornamental ✦ divider', () => {
+  it('reference begins with the em-dash separator (mockup style)', () => {
+    // H8 dropped the ornamental ✦ divider in favour of a minimal,
+    // typography-only footer (mockup line 308-311). Reference is
+    // prefixed with "— " so eyes can scan from quote → attribution.
     render(<DailyVerseBanner />)
-    expect(screen.getByText('✦')).toBeInTheDocument()
-    // Two divider lines flanking the ornament.
-    expect(document.querySelectorAll('.daily-verse-v3-divider-line')).toHaveLength(2)
+    const ref = screen.getByTestId('home-daily-verse-ref').textContent ?? ''
+    expect(ref.startsWith('—')).toBe(true)
   })
 
-  it('uses the V3 namespaced classes (verifies CSS hookup)', () => {
+  it('verse text uses italic serif typography', () => {
     render(<DailyVerseBanner />)
-    expect(document.querySelector('.daily-verse-v3')).toBeInTheDocument()
-    expect(document.querySelector('.daily-verse-v3-text')).toBeInTheDocument()
-    expect(document.querySelector('.daily-verse-v3-ref')).toBeInTheDocument()
+    const text = screen.getByTestId('home-daily-verse-text')
+    // Tailwind utility classes are still on the element in JSDOM —
+    // assert the design-token contract (italic serif font) didn't drift.
+    expect(text.className).toContain('italic')
+    expect(text.className).toContain('font-serif')
   })
 })

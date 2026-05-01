@@ -5,8 +5,6 @@ import { useTranslation } from 'react-i18next'
 import { api } from '../api/client'
 import FeaturedCard from './FeaturedCard'
 
-const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
-
 /**
  * Mirrors {@code BasicQuizStatusResponse} on the BE. Reused by
  * BasicQuizCard (the standalone banner) and this component — both
@@ -81,16 +79,15 @@ export default function RankedFeaturedCard({ isRecommended, recommendReason }: R
 
   const title = t('rankedFeatured.title')
   const description = t('rankedFeatured.description')
-  const iconColor = 'text-secondary'
 
   // Loading skeleton — keep the same shape as State A so layout is stable.
   if (isLoading || !data) {
     return (
       <FeaturedCard
         id="ranked"
+        theme="gold"
         icon="emoji_events"
         iconFill
-        iconColor={iconColor}
         title={title}
         description={description}
         cta={{
@@ -108,18 +105,21 @@ export default function RankedFeaturedCard({ isRecommended, recommendReason }: R
     return (
       <FeaturedCard
         id="ranked"
+        theme="gold"
         icon="emoji_events"
         iconFill
-        iconColor={iconColor}
         title={title}
         description={description}
         isRecommended={isRecommended}
         recommendReason={recommendReason}
-        status={
-          <div data-testid="ranked-featured-status" data-state="passed" className="flex items-center gap-2 text-xs font-bold text-secondary">
-            <span className="material-symbols-outlined gold-icon text-base" style={FILL_1}>verified</span>
-            <span>{t('rankedFeatured.unlocked.badge')}</span>
-          </div>
+        badge={
+          <span
+            data-testid="ranked-featured-status"
+            data-state="passed"
+            className="text-secondary font-medium"
+          >
+            {t('rankedFeatured.unlocked.badge')}
+          </span>
         }
         cta={{
           label: t('rankedFeatured.unlocked.cta'),
@@ -135,24 +135,21 @@ export default function RankedFeaturedCard({ isRecommended, recommendReason }: R
     return (
       <FeaturedCard
         id="ranked"
+        theme="gold"
         icon="emoji_events"
         iconFill
-        iconColor={iconColor}
         title={title}
         description={description}
-        status={
-          <div className="text-xs space-y-1.5">
-            <div data-testid="ranked-featured-status" data-state="cooldown" className="flex items-center gap-2 text-on-surface-variant">
-              <span className="material-symbols-outlined text-sm">menu_book</span>
-              <span>{t('rankedFeatured.cooldown.label', { attempts: data.attemptCount })}</span>
-            </div>
-            <div className="flex items-center gap-2 font-semibold text-secondary">
-              <span className="material-symbols-outlined text-sm">timer</span>
-              <span data-testid="ranked-featured-cooldown">
-                {t('rankedFeatured.cooldown.countdown', { time: formatMmSs(localCooldown) })}
-              </span>
-            </div>
-          </div>
+        badge={
+          <span
+            data-testid="ranked-featured-status"
+            data-state="cooldown"
+            className="text-on-surface-variant"
+          >
+            <span data-testid="ranked-featured-cooldown" className="text-secondary font-medium">
+              {t('rankedFeatured.cooldown.countdown', { time: formatMmSs(localCooldown) })}
+            </span>
+          </span>
         }
         cta={{
           label: t('rankedFeatured.cooldown.ctaDisabled', { time: formatMmSs(localCooldown) }),
@@ -168,22 +165,19 @@ export default function RankedFeaturedCard({ isRecommended, recommendReason }: R
   return (
     <FeaturedCard
       id="ranked"
+      theme="gold"
       icon="bolt"
       iconFill
-      iconColor={iconColor}
       title={title}
       description={description}
-      status={
-        <div className="text-xs space-y-1.5">
-          <div data-testid="ranked-featured-status" data-state="needs-quiz" className="flex items-center gap-2 font-semibold text-on-surface">
-            <span className="material-symbols-outlined text-sm text-secondary">menu_book</span>
-            <span>{t('rankedFeatured.needBasicQuiz.label', { count: totalQuestions })}</span>
-          </div>
-          <div className="text-on-surface-variant flex items-center gap-2">
-            <span className="material-symbols-outlined text-sm">timer</span>
-            <span>{t('rankedFeatured.needBasicQuiz.duration')}</span>
-          </div>
-        </div>
+      badge={
+        <span
+          data-testid="ranked-featured-status"
+          data-state="needs-quiz"
+          className="text-secondary font-medium whitespace-nowrap"
+        >
+          {t('rankedFeatured.needBasicQuiz.label', { count: totalQuestions })}
+        </span>
       }
       cta={{
         label: t('rankedFeatured.needBasicQuiz.cta'),

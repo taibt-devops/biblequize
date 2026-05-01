@@ -730,6 +730,16 @@
     "maxTierReached": "Highest tier reached!",
     "tierProgress": "Tier progress",
     "tierLabel": "Tier",
+    "hero": {
+      "currentBook": "📖 Reading {{book}}",
+      "questionsToday": "🎯 {{count}} questions today",
+      "starsToNext": "{{points}} / {{total}} XP to next star",
+      "starsToNextMobile": "{{points}}/{{total}} → next star",
+      "mobileStreakLabel": "STREAK",
+      "mobileTodayLabel": "TODAY",
+      "streakUnit": "days",
+      "todayUnit": "Q"
+    },
     "statStreak": "Streak",
     "statStreakValue": "{{count}} days",
     "statPoints": "Points",
@@ -749,10 +759,22 @@
       "cta": "Play now"
     },
     "questions": "Q",
-    "you": "You ({{name}})",
+    "you": "{{name}} (you)",
     "viewAll": "View all",
     "matchmakingHint": "Other players may have been around longer — bring your A-game!",
     "exploreMore": "Explore more",
+    "continueJourney": {
+      "title": "Continue your journey",
+      "subtitle": "Core modes"
+    },
+    "modeHint": {
+      "roomsOpen": "{{count}} rooms open",
+      "mysteryXp": "+50% XP",
+      "speedXp": "+100% XP",
+      "groupNone": "No group yet",
+      "groupIn": "In {{name}}",
+      "tournamentOpen": "{{count}} tournaments open"
+    },
     "compactSubtitles": {
       "group": "Church groups",
       "multiplayer": "2-20 players",
@@ -762,7 +784,8 @@
       "speed": "10 × 10s"
     },
     "activityFeed": {
-      "title": "Recent activity",
+      "title": "Activity",
+      "subtitle": "In your church",
       "emptyTitle": "You're a pioneer!",
       "emptyBody": "Community activity will appear when fellow believers play with you.",
       "emptyCta": "Invite friends",
@@ -771,6 +794,17 @@
     "dailyVerse": "TODAY'S VERSE",
     "verseToday": "Today's verse",
     "dailyMissions": "Today's missions",
+    "dailyMissionsHeader": "📋 Today's missions",
+    "dailyMissionsCount": "{{completed}}/{{total}} done",
+    "journey": {
+      "title": "🗺 66-book journey",
+      "subtitleStart": "Start your journey from Genesis",
+      "subtitleOT": "On {{book}} · Matthew through Revelation are waiting",
+      "subtitleNT": "On {{book}} · {{count}} New Testament books left",
+      "subtitleDone": "You've conquered the whole Bible! 👑",
+      "otLabel": "OT (39)",
+      "ntLabel": "NT (27)"
+    },
     "received": "Received",
     "dayStreak": "day streak",
     "recommend": {
@@ -787,8 +821,14 @@
       "fewBooks": "Journey through {{count}} books",
       "manyBooks": "🌍 Journey through {{count}} books",
       "meta": "5 questions • 5 min • +50 XP",
+      "metaTime": "5 min",
+      "metaQuestions": "5 Q",
+      "metaXp": "+50 XP",
+      "onlyToday": "TODAY ONLY",
+      "doneBadge": "COMPLETED",
       "countdown": "Next challenge in {{time}}",
-      "cta": "Start today",
+      "countdownShort": "Next in {{time}}",
+      "cta": "Enter challenge",
       "completed": "✅ You finished today — Come back in {{time}}",
       "completedState": {
         "title": "COMPLETED TODAY",
@@ -1414,16 +1454,18 @@
   },
   "practiceFeatured": {
     "title": "Practice",
-    "description": "Learn stress-free, no time limit.",
+    "description": "Learn at your own pace",
+    "badge": "No pressure",
     "status": "Ready for the challenge?",
     "cta": "Start"
   },
   "rankedFeatured": {
     "title": "Ranked Match",
-    "description": "Compete live, earn big rank points.",
+    "description": "Compete for rank",
+    "energyBadge": "{{count}} energy",
     "unlocked": {
       "badge": "Unlocked",
-      "cta": "Play Ranked"
+      "cta": "Enter battle"
     },
     "needBasicQuiz": {
       "label": "Pass Bible Basics first ({{count}} questions)",
