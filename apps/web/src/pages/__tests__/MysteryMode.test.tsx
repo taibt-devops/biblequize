@@ -60,10 +60,12 @@ describe('MysteryMode', () => {
       expect(questionMarks.length).toBe(3) // Book, Difficulty, Topic
     })
 
-    it('shows XP multiplier badge', () => {
+    it('does NOT show XP multiplier badge (Option A: variety modes have no XP)', () => {
+      // Per Bui decision 2026-05-02 — variety modes are "for fun, no XP".
+      // Advertising 1.5x XP would mislead users since no scoring path applies it.
       renderMystery()
-      expect(screen.getByTestId('mystery-multiplier-badge')).toBeInTheDocument()
-      expect(screen.getByText('1.5x XP')).toBeInTheDocument()
+      expect(screen.queryByTestId('mystery-multiplier-badge')).not.toBeInTheDocument()
+      expect(screen.queryByText('1.5x XP')).not.toBeInTheDocument()
     })
 
     it('shows time limit', () => {
@@ -76,9 +78,10 @@ describe('MysteryMode', () => {
       expect(screen.getByText('10')).toBeInTheDocument()
     })
 
-    it('shows info labels', () => {
+    it('shows info labels (no Bonus label — XP badge removed)', () => {
       renderMystery()
-      expect(screen.getByText('Bonus')).toBeInTheDocument()
+      // Bonus label removed alongside the misleading 1.5x XP badge.
+      expect(screen.queryByText('Bonus')).not.toBeInTheDocument()
       expect(screen.getByText(/Thời gian/)).toBeInTheDocument()
       expect(screen.getByText(/Câu hỏi/)).toBeInTheDocument()
     })

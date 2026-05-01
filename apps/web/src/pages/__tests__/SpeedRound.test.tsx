@@ -66,10 +66,12 @@ describe('SpeedRound', () => {
       expect(screen.getByText('mỗi câu')).toBeInTheDocument()
     })
 
-    it('shows XP bonus stat', () => {
+    it('does NOT show XP bonus stat (Option A: variety modes have no XP)', () => {
+      // Per Bui decision 2026-05-02 — variety modes are "for fun, no XP".
+      // Advertising 2x XP would mislead users since no scoring path applies it.
       renderSpeed()
-      expect(screen.getByText('2x')).toBeInTheDocument()
-      expect(screen.getByText('XP bonus')).toBeInTheDocument()
+      expect(screen.queryByTestId('speed-round-bonus-stat')).not.toBeInTheDocument()
+      expect(screen.queryByText('XP bonus')).not.toBeInTheDocument()
     })
 
     it('shows difficulty info', () => {

@@ -55,11 +55,12 @@ export default function MysteryMode() {
           </div>
         </div>
 
+        {/* XP multiplier badge removed per Bui decision 2026-05-02: variety modes
+            are "for fun, no XP" — advertising 1.5x XP misled users since no
+            scoring path consumed the multiplier server-side. See
+            apps/api/AUDIT_VARIETY_MODES_LEADERBOARD.md + VarietyQuizController
+            JavaDoc for context. */}
         <div className="flex justify-center gap-6">
-          <div className="bg-pink-500/10 border border-pink-500/20 rounded-xl px-4 py-2 text-center" data-testid="mystery-multiplier-badge">
-            <p className="text-xs text-on-surface-variant">{t('gameModes.mysteryPage.bonusLabel')}</p>
-            <p className="text-lg font-black text-pink-400" data-testid="mystery-bonus-xp">1.5x XP</p>
-          </div>
           <div className="bg-pink-500/10 border border-pink-500/20 rounded-xl px-4 py-2 text-center">
             <p className="text-xs text-on-surface-variant">{t('gameModes.mysteryPage.timeLabel')}</p>
             <p className="text-lg font-black text-pink-400">25s</p>

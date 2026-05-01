@@ -50,10 +50,8 @@ export default function SpeedRound() {
             <p className="text-3xl font-black text-orange-400">10s</p>
             <p className="text-xs text-on-surface-variant mt-1">{t('gameModes.speedPage.perQuestionSuffix')}</p>
           </div>
-          <div className="bg-orange-500/10 border border-orange-500/20 rounded-xl px-5 py-3 text-center" data-testid="speed-round-bonus-stat">
-            <p className="text-3xl font-black text-orange-400">2x</p>
-            <p className="text-xs text-on-surface-variant mt-1">XP bonus</p>
-          </div>
+          {/* "2x XP bonus" stat removed per Bui decision 2026-05-02: variety
+              modes are "for fun, no XP" — see MysteryMode.tsx + audit. */}
         </div>
 
         <div className="space-y-2 text-sm text-on-surface-variant">
