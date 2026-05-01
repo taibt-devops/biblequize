@@ -1642,7 +1642,8 @@
     "seasonEnded": "Season ended",
     "seasonEndsIn": "Season ends in",
     "seasonRanking": "Season Ranking",
-    "tierSeasonSubtitle": "At season's end, top 3 of each tier earn the Spring 2026 Glory badge",
+    "tierSeasonSubtitle": "At season's end, top 3 of each tier earn the {{seasonName}} Glory badge",
+    "tierSeasonSubtitleFallback": "At season's end, top 3 of each tier earn a Glory badge",
     "tierThresholdRange": "{{min}} - {{max}} pts",
     "tierThresholdMax": "{{min}}+ pts",
     "sidebar": {

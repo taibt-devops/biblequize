@@ -27,10 +27,10 @@
   - [x] Refactor SeasonService.getActiveSeason — date-based primary, falls back to `findByIsActiveTrue` for legacy
   - [x] Test BE: SeasonServiceTest 7/7 (was 6 + 2 new date-based tests, dropped 1 redundant)
   - [x] LeaderboardControllerTest still 12/12
-  - [ ] Commit: `feat(season): 4 liturgical seasons + date-based active lookup (LB-2.1)` — PENDING
+  - [x] Commit: `feat(season): 4 liturgical seasons + date-based active lookup (LB-2.1)` (5ef9b48)
 
-### Task LB-2.2: Frontend remove Daily tab + dynamic Mùa label [ ] TODO
-- Status: [ ] TODO
+### Task LB-2.2: Frontend remove Daily tab + dynamic Mùa label [x] DONE 2026-05-01
+- Status: [x] DONE — pending commit
 - File(s):
   - `apps/web/src/pages/Leaderboard.tsx` — remove 'daily' from Tab type, default tab = 'weekly', tab "MÙA" label use `season.name` dynamic
   - `apps/web/src/pages/__tests__/Leaderboard.test.tsx` — update tab tests
@@ -41,13 +41,17 @@
   - Section header "Xếp Hạng Mùa" stays (generic) but subtitle uses dynamic season name interpolation
   - Sidebar widgets unaffected (LeaderboardSeasonWidget already shows season.name dynamic)
 - Checklist:
-  - [ ] Tab type updated
-  - [ ] Default tab logic
-  - [ ] Dynamic Mùa label
-  - [ ] i18n subtitle dynamic via {{seasonName}}
-  - [ ] Test: tab labels render dynamic, default tab is weekly
-  - [ ] Vitest pass: Leaderboard.test.tsx (currently 21 tests)
-  - [ ] Commit: `feat(leaderboard): 3 tabs + dynamic Mùa label (LB-2.2)`
+  - [x] Tab type → `'weekly' | 'season' | 'all_time'` (Daily removed)
+  - [x] Default activeTab = 'weekly'
+  - [x] Tab "Mùa" label dynamic from `season.name.toUpperCase()` with generic fallback
+  - [x] Tabs array refactored to `TAB_TO_API_PATH` map (cleaner than inline label/path)
+  - [x] i18n subtitle: `tierSeasonSubtitle` now `{{seasonName}}` interpolated; `tierSeasonSubtitleFallback` for no-season case
+  - [x] Bug fix: `season.endAt` → `season.endDate` (BE returns endDate, FE was reading non-existent endAt)
+  - [x] LeaderboardSeasonWidget: same endAt → endDate fix
+  - [x] Tests: 22/22 pass (was 21 + 2 LB-2.2 - 1 daily-tab test removed)
+  - [x] Tầng 2 pages: 480 pass (29 fails Ranked baseline)
+  - [x] i18n validator: 0 missing, +2 hardcoded JSDoc (accepted debt)
+  - [ ] Commit: `feat(leaderboard): 3 tabs + dynamic Mùa label + fix endDate bug (LB-2.2)` — PENDING
 
 ### Task LB-2.3: Final regression + bug report update [ ] TODO
 - Status: [ ] TODO

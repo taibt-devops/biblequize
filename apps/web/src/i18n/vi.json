@@ -1642,7 +1642,8 @@
     "seasonEnded": "Mùa đã kết thúc",
     "seasonEndsIn": "Mùa kết thúc sau",
     "seasonRanking": "Xếp Hạng Mùa",
-    "tierSeasonSubtitle": "Cuối mùa, top 3 mỗi tier sẽ nhận badge Vinh Quang Mùa Xuân 2026",
+    "tierSeasonSubtitle": "Cuối mùa, top 3 mỗi tier sẽ nhận badge Vinh Quang {{seasonName}}",
+    "tierSeasonSubtitleFallback": "Cuối mùa, top 3 mỗi tier sẽ nhận badge Vinh Quang",
     "tierThresholdRange": "{{min}} - {{max}} điểm",
     "tierThresholdMax": "{{min}}+ điểm",
     "sidebar": {

@@ -6,7 +6,8 @@ interface ActiveSeasonResponse {
   active?: boolean
   id?: string
   name?: string
-  endAt?: string
+  startDate?: string
+  endDate?: string
 }
 
 /**
@@ -28,8 +29,8 @@ export default function LeaderboardSeasonWidget() {
     staleTime: 5 * 60_000,
   })
 
-  const daysLeft = season?.endAt
-    ? Math.max(0, Math.floor((new Date(season.endAt).getTime() - Date.now()) / 86400000))
+  const daysLeft = season?.endDate
+    ? Math.max(0, Math.floor((new Date(season.endDate).getTime() - Date.now()) / 86400000))
     : null
 
   return (

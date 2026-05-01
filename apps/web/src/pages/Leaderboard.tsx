@@ -5,7 +5,7 @@ import { api } from '../api/client'
 import { useAuthStore } from '../store/authStore'
 import { TIERS, getTierByPoints } from '../data/tiers'
 
-type Tab = 'daily' | 'weekly' | 'season' | 'all_time'
+type Tab = 'weekly' | 'season' | 'all_time'
 
 // Podium hierarchy per mockup (LB-P1-1, LB-P1-2, LB-P1-3):
 // idx in podiumOrder: 0 = rank 2 (left), 1 = rank 1 (center, tallest), 2 = rank 3 (right).
@@ -16,17 +16,17 @@ const PODIUM_LAYOUT = [
   { rank: 3, avatar: 'w-10 h-10 md:w-14 md:h-14', bucket: 'h-[42px] md:h-[65px]' },
 ]
 
+const TAB_TO_API_PATH: Record<Tab, string> = {
+  weekly: 'weekly',
+  season: 'season',
+  all_time: 'all-time',
+}
+
 export default function Leaderboard() {
   const { t } = useTranslation()
-  const [activeTab, setActiveTab] = useState<Tab>('daily')
+  const [activeTab, setActiveTab] = useState<Tab>('weekly')
   const user = useAuthStore(s => s.user)
-  const tabs: { key: Tab; label: string; apiPath: string }[] = [
-    { key: 'daily', label: t('leaderboard.daily'), apiPath: 'daily' },
-    { key: 'weekly', label: t('leaderboard.weekly'), apiPath: 'weekly' },
-    { key: 'season', label: t('leaderboard.season'), apiPath: 'season' },
-    { key: 'all_time', label: t('leaderboard.allTime'), apiPath: 'all-time' },
-  ]
-  const apiPath = tabs.find(t => t.key === activeTab)?.apiPath ?? 'daily'
+  const apiPath = TAB_TO_API_PATH[activeTab]
 
   const { data: entries, isLoading, isFetching } = useQuery({
     queryKey: ['leaderboard', activeTab],
@@ -45,6 +45,18 @@ export default function Leaderboard() {
     queryFn: () => api.get('/api/seasons/active').then(r => r.data).catch(() => null),
     staleTime: 300_000,
   })
+
+  // Tab "Mùa" label: dynamic season name when active season available (decision 1A);
+  // fallback to generic 'Mùa' while season query loading or no active season.
+  const seasonLabel = season?.active && season.name
+    ? season.name.toUpperCase()
+    : t('leaderboard.season')
+
+  const tabs: { key: Tab; label: string }[] = [
+    { key: 'weekly', label: t('leaderboard.weekly') },
+    { key: 'season', label: seasonLabel },
+    { key: 'all_time', label: t('leaderboard.allTime') },
+  ]
 
   const { data: tierData } = useQuery({
     queryKey: ['me-tier-progress'],
@@ -70,9 +82,9 @@ export default function Leaderboard() {
   const isCurrentUserInList = myUserId != null && list.some((e: any) => e.userId === myUserId)
   const showMyRankSticky = myRank != null && !isCurrentUserInList
 
-  const seasonCountdown = season?.endAt
+  const seasonCountdown = season?.endDate
     ? (() => {
-        const diff = new Date(season.endAt).getTime() - Date.now()
+        const diff = new Date(season.endDate).getTime() - Date.now()
         if (diff <= 0) return t('leaderboard.seasonEnded')
         const d = Math.floor(diff / 86400000)
         const h = Math.floor((diff % 86400000) / 3600000)
@@ -247,7 +259,11 @@ export default function Leaderboard() {
             <span>🏆</span>
             {t('leaderboard.seasonRanking')}
           </h4>
-          <p className="text-xs text-on-surface-variant leading-relaxed">{t('leaderboard.tierSeasonSubtitle')}</p>
+          <p className="text-xs text-on-surface-variant leading-relaxed">
+            {season?.active && season.name
+              ? t('leaderboard.tierSeasonSubtitle', { seasonName: season.name })
+              : t('leaderboard.tierSeasonSubtitleFallback')}
+          </p>
         </header>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
           {TIERS.map((tier) => {

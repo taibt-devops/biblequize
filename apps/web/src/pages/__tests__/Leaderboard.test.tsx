@@ -36,7 +36,13 @@ describe('Leaderboard', () => {
       // my-rank includes userId so FE can identify current user in list
       if (url.includes('/my-rank')) return Promise.resolve({ data: { userId: 'u1', name: 'Test User', rank: 5, points: 4520 } })
       if (url.includes('/leaderboard/')) return Promise.resolve({ data: MOCK_ENTRIES })
-      if (url.includes('/seasons/active')) return Promise.resolve({ data: { endAt: new Date(Date.now() + 3 * 86400000).toISOString() } })
+      if (url.includes('/seasons/active')) return Promise.resolve({ data: {
+        active: true,
+        id: 'season-2026-q2',
+        name: 'Mùa Ngũ Tuần 2026',
+        startDate: '2026-04-01',
+        endDate: new Date(Date.now() + 3 * 86400000).toISOString().slice(0, 10),
+      } })
       // Test User has 4520 points → tier "seeker" (1,000-4,999 range)
       if (url.includes('/api/me/tier-progress')) return Promise.resolve({ data: { totalPoints: 4520 } })
       return Promise.reject(new Error('Not found'))
@@ -65,11 +71,15 @@ describe('Leaderboard', () => {
     await waitFor(() => { expect(screen.getAllByText('Bạn').length).toBeGreaterThan(0) })
   })
 
-  it('renders 4 tab buttons (LB-1.3)', () => {
+  it('LB-2.2: renders 3 tab buttons — no Daily, dynamic Mùa label', async () => {
     renderLeaderboard()
-    expect(screen.getByText('Hàng ngày')).toBeInTheDocument()
+    // Daily tab REMOVED in LB-2 (decision 2026-05-01)
+    expect(screen.queryByText('Hàng ngày')).not.toBeInTheDocument()
     expect(screen.getByText('Hàng tuần')).toBeInTheDocument()
-    expect(screen.getByText('Mùa Xuân')).toBeInTheDocument()
+    // Tab "Mùa" label is dynamic — uses active season name uppercased
+    await waitFor(() => {
+      expect(screen.getByText('MÙA NGŨ TUẦN 2026')).toBeInTheDocument()
+    })
     expect(screen.getByText('Tất cả')).toBeInTheDocument()
   })
 
@@ -102,7 +112,8 @@ describe('Leaderboard', () => {
   it('renders tier section subtitle with season reward explanation', async () => {
     renderLeaderboard()
     await waitFor(() => {
-      expect(screen.getByText(/Vinh Quang Mùa Xuân 2026/i)).toBeInTheDocument()
+      // Subtitle now interpolates active season name dynamically (LB-2.2)
+      expect(screen.getByText(/Vinh Quang Mùa Ngũ Tuần 2026/i)).toBeInTheDocument()
     })
   })
 
@@ -128,9 +139,20 @@ describe('Leaderboard', () => {
     expect(document.querySelector('.animate-pulse')).toBeInTheDocument()
   })
 
-  it('calls API with correct period', () => {
+  it('LB-2.2: default tab fetches /leaderboard/weekly (Daily tab removed)', () => {
     renderLeaderboard()
-    expect(mockApiGet).toHaveBeenCalledWith(expect.stringContaining('/leaderboard/daily'))
+    expect(mockApiGet).toHaveBeenCalledWith(expect.stringContaining('/leaderboard/weekly'))
+    // Daily endpoint should NOT be called from /leaderboard page after Daily tab removal
+    const dailyCalls = mockApiGet.mock.calls.filter((call) => String(call[0]).includes('/leaderboard/daily'))
+    expect(dailyCalls).toHaveLength(0)
+  })
+
+  it('LB-2.2: tier section subtitle interpolates active season name', async () => {
+    renderLeaderboard()
+    await waitFor(() => {
+      // Subtitle should mention active season name dynamically
+      expect(screen.getByText(/Mùa Ngũ Tuần 2026/)).toBeInTheDocument()
+    })
   })
 
   // LB-1.5 — Row enrichment per mockup
@@ -212,11 +234,11 @@ describe('Leaderboard', () => {
     })
   })
 
-  it('LB-1.3: clicking Season tab fetches /api/leaderboard/season', async () => {
+  it('LB-1.3 + LB-2.2: clicking Season tab (dynamic name) fetches /api/leaderboard/season', async () => {
     renderLeaderboard()
-    // Wait for initial render then trigger tab click via fireEvent (faster + stable in parallel runs)
-    await waitFor(() => { expect(screen.getByText('Mùa Xuân')).toBeInTheDocument() })
-    fireEvent.click(screen.getByText('Mùa Xuân'))
+    // Tab label is dynamic from active season — wait for it to render
+    await waitFor(() => { expect(screen.getByText('MÙA NGŨ TUẦN 2026')).toBeInTheDocument() })
+    fireEvent.click(screen.getByText('MÙA NGŨ TUẦN 2026'))
     await waitFor(() => {
       expect(mockApiGet).toHaveBeenCalledWith(expect.stringContaining('/leaderboard/season'))
     })
