@@ -69,6 +69,15 @@ export default {
           orange: '#ff6600',
           blue: '#00bfff',
         },
+        // Answer Color Mapping (Quiz screen) — DESIGN_TOKENS.md "Game Mode Accent"
+        // A=top-left, B=top-right, C=bottom-left, D=bottom-right.
+        // Vị trí cố định, shuffle content KHÔNG shuffle vị trí màu.
+        answer: {
+          a: '#E8826A', // Coral — cảm xúc ấm
+          b: '#6AB8E8', // Sky — tin cậy, calm
+          c: '#E8C76A', // Gold — năng lượng, joy (ấm hơn primary gold)
+          d: '#7AB87A', // Sage — bình an, growth
+        },
       },
       fontFamily: {
         sans: ['Be Vietnam Pro', 'system-ui', 'sans-serif'],
