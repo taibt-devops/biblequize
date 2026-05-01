@@ -398,9 +398,9 @@ public class ChurchGroupService {
 
         Map<String, Object> result = new LinkedHashMap<>();
         result.put("id", announcement.getId());
-        result.put("content", announcement.getContent());
+        result.put("body", announcement.getContent());
         result.put("authorId", member.getUser().getId());
-        result.put("authorName", member.getUser().getName());
+        result.put("author", member.getUser().getName());
         result.put("createdAt", announcement.getCreatedAt());
         return result;
     }
@@ -414,9 +414,9 @@ public class ChurchGroupService {
         List<Map<String, Object>> items = announcements.stream().map(a -> {
             Map<String, Object> item = new LinkedHashMap<>();
             item.put("id", a.getId());
-            item.put("content", a.getContent());
+            item.put("body", a.getContent());
             item.put("authorId", a.getAuthor().getId());
-            item.put("authorName", a.getAuthor().getName());
+            item.put("author", a.getAuthor().getName());
             item.put("createdAt", a.getCreatedAt());
             return item;
         }).collect(Collectors.toList());

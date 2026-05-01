@@ -393,7 +393,7 @@ class ChurchGroupServiceTest {
 
         Map<String, Object> result = churchGroupService.createAnnouncement("group-1", "leader-1", "Hello group!");
 
-        assertEquals("Hello group!", result.get("content"));
+        assertEquals("Hello group!", result.get("body"));
         assertNotNull(result.get("id"));
         verify(groupAnnouncementRepository).save(any(GroupAnnouncement.class));
     }
@@ -439,7 +439,7 @@ class ChurchGroupServiceTest {
         @SuppressWarnings("unchecked")
         List<Map<String, Object>> items = (List<Map<String, Object>>) result.get("items");
         assertEquals(1, items.size());
-        assertEquals("First", items.get(0).get("content"));
+        assertEquals("First", items.get(0).get("body"));
         assertEquals(1L, result.get("total"));
         assertEquals(false, result.get("hasMore"));
     }

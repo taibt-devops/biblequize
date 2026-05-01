@@ -34,8 +34,8 @@ interface LeaderboardEntry {
 
 interface Announcement {
   id: string;
-  content: string;
-  authorName: string;
+  body: string;
+  author: string;
   createdAt: string;
 }
 
@@ -824,11 +824,11 @@ const GroupDetail: React.FC = () => {
                       {/* Content */}
                       <div className="flex-1 bg-surface-container-low rounded-2xl p-6 border border-outline-variant/10 group-hover/item:border-secondary/10 transition-all">
                         <p className="text-sm text-on-surface leading-relaxed font-medium mb-3">
-                          {a.content}
+                          {a.body}
                         </p>
                         <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-on-surface-variant">
                           <span className="material-symbols-outlined text-[14px]">person</span>
-                          {a.authorName}
+                          {a.author}
                           <span className="mx-1 opacity-30">|</span>
                           <span className="material-symbols-outlined text-[14px]">schedule</span>
                           {new Date(a.createdAt).toLocaleDateString('vi-VN')}
