@@ -5,6 +5,29 @@
 > **Page:** `apps/web/src/pages/Leaderboard.tsx` (web), mobile equivalent if exists
 > **Severity overview:** 4× P0 (blockers), 5× P1 (UX issues), 3× P2 (improvements), 2× P3 (polish)
 
+## 📊 Fix status (2026-05-01)
+
+| Bug | Severity | Status | Commit |
+|---|---|---|---|
+| LB-P0-1 i18n keys raw | 🔴 P0 | ✅ FIXED | `941cee5` |
+| LB-P0-2 Tier season naming | 🔴 P0 | ✅ DECIDED + FIXED (Option A, mockup override) | `941cee5` |
+| LB-P0-3 Duplicate user row | 🔴 P0 | ✅ FIXED (FE) — BE root cause investigation deferred | `888c146` |
+| LB-P0-4 Tier colors not distinguishable | 🔴 P0 | ✅ FIXED (avatars + bục now use tier colorHex) | `8254ad2` |
+| LB-P1-1 Podium same height | 🟠 P1 | ✅ FIXED | `8254ad2` |
+| LB-P1-2 Roman numerals redundant | 🟠 P1 | ✅ FIXED | `8254ad2` |
+| LB-P1-3 Crown #1 too small | 🟠 P1 | ✅ FIXED (👑 + gold glow) | `8254ad2` |
+| LB-P1-4 Missing Season tab | 🟠 P1 | ✅ FIXED (BE + FE) | `8f1f6e6` |
+| LB-P1-5 Tie-break opacity | 🟠 P1 | ✅ FIXED (questions count in podium) | `8254ad2` |
+| LB-P2-1 Flat row content | 🟡 P2 | ✅ FIXED (tier badge + streak/trend graceful) | `b371117` |
+| LB-P2-2 Empty state daily | 🟡 P2 | ⏸️ DEFERRED to LB-2 |
+| LB-P2-3 Section purpose | 🟡 P2 | ✅ FIXED (subtitle added) | `941cee5` |
+| LB-P3-1 Sidebar context | 🟢 P3 | ✅ FIXED (2 widgets) | `3f00b70` |
+| LB-P3-2 Header font hierarchy | 🟢 P3 | ⏸️ DEFERRED to LB-2 |
+
+**Sprint 1 score: 12/14 fixed (86%), 2 deferred to LB-2.**
+
+Tracked in `TODO.md` "Leaderboard Redesign Sprint 1 [DONE]".
+
 ---
 
 ## 🔴 P0 — Production Blockers

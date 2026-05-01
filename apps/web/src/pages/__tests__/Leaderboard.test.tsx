@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen, waitFor } from '@testing-library/react'
+import { render, screen, waitFor, fireEvent } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
@@ -213,9 +213,10 @@ describe('Leaderboard', () => {
   })
 
   it('LB-1.3: clicking Season tab fetches /api/leaderboard/season', async () => {
-    const { default: userEvent } = await import('@testing-library/user-event')
     renderLeaderboard()
-    await userEvent.setup().click(screen.getByText('Mùa Xuân'))
+    // Wait for initial render then trigger tab click via fireEvent (faster + stable in parallel runs)
+    await waitFor(() => { expect(screen.getByText('Mùa Xuân')).toBeInTheDocument() })
+    fireEvent.click(screen.getByText('Mùa Xuân'))
     await waitFor(() => {
       expect(mockApiGet).toHaveBeenCalledWith(expect.stringContaining('/leaderboard/season'))
     })
