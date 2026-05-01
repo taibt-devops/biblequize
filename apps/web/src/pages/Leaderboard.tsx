@@ -3,15 +3,9 @@ import { useQuery } from '@tanstack/react-query'
 import { useTranslation } from 'react-i18next'
 import { api } from '../api/client'
 import { useAuthStore } from '../store/authStore'
+import { TIERS, getTierByPoints } from '../data/tiers'
 
 type Tab = 'daily' | 'weekly' | 'all_time'
-
-const tierInfo = [
-  { icon: 'workspace_premium', iconColor: 'text-secondary', borderColor: 'border-secondary/40', nameKey: 'leaderboard.tierGold', descKey: 'leaderboard.tierGoldDesc', filled: true },
-  { icon: 'military_tech', iconColor: 'text-[#c0c0c0]', borderColor: 'border-[#c0c0c0]/40', nameKey: 'leaderboard.tierSilver', descKey: 'leaderboard.tierSilverDesc', filled: true },
-  { icon: 'award_star', iconColor: 'text-[#cd7f32]', borderColor: 'border-[#cd7f32]/40', nameKey: 'leaderboard.tierBronze', descKey: 'leaderboard.tierBronzeDesc', filled: true },
-  { icon: 'stars', iconColor: 'text-outline', borderColor: 'border-outline/40', nameKey: 'leaderboard.tierIron', descKey: 'leaderboard.tierIronDesc', filled: false },
-]
 
 const PODIUM_STYLES = [
   { border: 'border-[#c0c0c0]/30', bg: 'bg-[#c0c0c0]', barH: 'h-20 md:h-24', numeral: 'II', color: 'text-[#c0c0c0]', size: 'w-16 h-16 md:w-24 md:h-24' },
@@ -47,6 +41,15 @@ export default function Leaderboard() {
     queryFn: () => api.get('/api/seasons/active').then(r => r.data).catch(() => null),
     staleTime: 300_000,
   })
+
+  const { data: tierData } = useQuery({
+    queryKey: ['me-tier-progress'],
+    queryFn: () => api.get('/api/me/tier-progress').then(r => r.data).catch(() => null),
+    staleTime: 60_000,
+  })
+
+  const userPoints = tierData?.totalPoints ?? 0
+  const userTierId = getTierByPoints(userPoints).id
 
   const list: any[] = Array.isArray(entries) ? entries : []
   const top3 = list.slice(0, 3)
@@ -210,20 +213,50 @@ export default function Leaderboard() {
         )}
       </div>
 
-      {/* Tier Info */}
-      <section className="glass-card p-8 rounded-3xl mb-24 border border-outline-variant/10">
-        <h4 className="text-lg font-black mb-8 flex items-center gap-2">
-          <span className="material-symbols-outlined text-secondary">info</span>
-          {t('leaderboard.seasonRanking')}
-        </h4>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          {tierInfo.map((tier) => (
-            <div key={tier.nameKey} className={`p-5 bg-surface-container-lowest rounded-2xl border-t-2 ${tier.borderColor}`}>
-              <span className={`material-symbols-outlined ${tier.iconColor} mb-3`} style={tier.filled ? { fontVariationSettings: "'FILL' 1" } : undefined}>{tier.icon}</span>
-              <p className="font-bold text-sm mb-2">{t(tier.nameKey)}</p>
-              <p className="text-[10px] text-on-surface-variant leading-relaxed">{t(tier.descKey)}</p>
-            </div>
-          ))}
+      {/* Season Tier Ranking — 6 religious tiers (decision A 2026-05-01) */}
+      <section className="glass-card p-6 md:p-8 rounded-3xl mb-24 border border-outline-variant/10" data-testid="leaderboard-tier-section">
+        <header className="mb-6">
+          <h4 className="text-lg font-black flex items-center gap-2 mb-1">
+            <span>🏆</span>
+            {t('leaderboard.seasonRanking')}
+          </h4>
+          <p className="text-xs text-on-surface-variant leading-relaxed">{t('leaderboard.tierSeasonSubtitle')}</p>
+        </header>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+          {TIERS.map((tier) => {
+            const isCurrent = tier.id === userTierId
+            const thresholdLabel = Number.isFinite(tier.maxPoints)
+              ? t('leaderboard.tierThresholdRange', { min: tier.minPoints.toLocaleString(), max: tier.maxPoints.toLocaleString() })
+              : t('leaderboard.tierThresholdMax', { min: tier.minPoints.toLocaleString() })
+            return (
+              <div
+                key={tier.id}
+                data-testid={`leaderboard-tier-card-${tier.id}`}
+                className={`relative p-4 rounded-2xl border-t-2 transition-colors ${
+                  isCurrent
+                    ? 'bg-secondary/10 border-secondary'
+                    : 'bg-surface-container-lowest border-outline/30'
+                }`}
+                style={!isCurrent ? { borderTopColor: tier.colorHex + '66' } : undefined}
+              >
+                {isCurrent && (
+                  <span className="absolute top-2 right-2 bg-secondary text-[#412d00] text-[8px] font-black px-1.5 py-0.5 rounded-full uppercase tracking-tight">
+                    {t('leaderboard.me')}
+                  </span>
+                )}
+                <span
+                  className="material-symbols-outlined mb-2 text-2xl"
+                  style={{ color: tier.colorHex, fontVariationSettings: "'FILL' 1" }}
+                >
+                  {tier.iconMaterial}
+                </span>
+                <p className="font-bold text-sm mb-1" style={{ color: isCurrent ? undefined : tier.colorHex }}>
+                  {t(tier.nameKey)}
+                </p>
+                <p className="text-[10px] text-on-surface-variant leading-relaxed">{thresholdLabel}</p>
+              </div>
+            )
+          })}
         </div>
       </section>
     </div>

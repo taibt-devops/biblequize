@@ -2,6 +2,16 @@
 
 ---
 
+## 2026-05-01 — Leaderboard redesign: mockup là design reference, content theo Option A
+- Quyết định: 2 mockup `docs/leaderboard/biblequiz_leaderboard_redesign.html` + `_mobile.html` là **source of truth về visual/layout** (podium hybrid, crown #1, list rich content, sidebar widgets, 4 tabs, section title "Vinh Quang Mùa Xuân 2026"). Section "Xếp Hạng Mùa" content **OVERRIDE** mockup: dùng nguyên 6 tier tôn giáo (Tân Tín Hữu → Sứ Đồ) thay vì 4 reward tier Bible-themed (Vinh Quang/Hào Quang/Ánh Sáng/Tia Lửa) mockup vẽ.
+- Lý do split: mockup design hợp lý ở 90% phần (đã solve LB-P1-1/2/3/4/5, LB-P2-1/3) — không nên redraw. Nhưng phần tier season reward 4-tier mâu thuẫn với decision 2026-04-19 "Keep OLD religious tier naming" + tạo dual-tier-system phức tạp. Giữ 6 tier có sẵn → 1 hệ thống tier duy nhất, badge "Vinh Quang Mùa Xuân 2026" cho top 3 mỗi tier (SPEC mục 9.2).
+- Cách render section: 6 cards (3x2 desktop / 2x3 mobile) với tier name + colorHex + threshold + badge "BẠN" trên tier user hiện tại. Reuse `data/tiers.ts` (TIERS array + getTierByPoints).
+- Trade-off: Mockup phải override 1 section khi code → designer cần biết để update mockup nếu redraw lần sau. Layout 6 cards cần adjust grid 4-col → 3x2 (desktop) hoặc 2x3 (mobile) — minor visual change.
+- Impact: LB-P0-1 (i18n keys raw) — KHÔNG thêm `tierGold/Silver/Bronze/Iron*` keys; reuse `tiers.{newBeliever|seeker|disciple|sage|prophet|apostle}` đã có. LB-P0-4 (tier colors) — section "Xếp Hạng Mùa" dùng cùng 6 màu `colorHex` từ `data/tiers.ts`.
+- KHÔNG thay đổi khi refactor trừ khi có lý do mới
+
+---
+
 ## 2026-05-01 — Quiz redesign Sprint 2: energy display = compact + keep score badge (hybrid)
 - Quyết định: Energy widget render **inline** (label "NĂNG LƯỢNG" + 5 bars + số `100/100`) khớp mockup, NHƯNG giữ nguyên score badge "⚡ {score}" ở header top-right.
 - Lý do: Mockup chỉ vẽ energy compact, không có score visible. Bug report đề xuất Option A (compact). Tuy nhiên score là metric quan trọng cho user trong-quiz (xem progress) — bỏ score sẽ giảm feedback loop. Hybrid giữ cả 2: energy inline (visual gọn), score badge header (consistent với app pattern).

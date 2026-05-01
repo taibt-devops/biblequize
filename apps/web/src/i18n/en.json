@@ -1640,7 +1640,10 @@
     "me": "Me",
     "seasonEnded": "Season ended",
     "seasonEndsIn": "Season ends in",
-    "seasonRanking": "Season Ranking"
+    "seasonRanking": "Season Ranking",
+    "tierSeasonSubtitle": "At season's end, top 3 of each tier earn the Spring 2026 Glory badge",
+    "tierThresholdRange": "{{min}} - {{max}} pts",
+    "tierThresholdMax": "{{min}}+ pts"
   },
   "ranked": {
     "title": "Ranked Match",

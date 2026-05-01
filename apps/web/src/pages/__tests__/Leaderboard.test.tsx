@@ -34,6 +34,8 @@ describe('Leaderboard', () => {
       if (url.includes('/my-rank')) return Promise.resolve({ data: { rank: 5, points: 4520 } })
       if (url.includes('/leaderboard/')) return Promise.resolve({ data: MOCK_ENTRIES })
       if (url.includes('/seasons/active')) return Promise.resolve({ data: { endAt: new Date(Date.now() + 3 * 86400000).toISOString() } })
+      // Test User has 4520 points → tier "seeker" (1,000-4,999 range)
+      if (url.includes('/api/me/tier-progress')) return Promise.resolve({ data: { totalPoints: 4520 } })
       return Promise.reject(new Error('Not found'))
     })
   })
@@ -67,11 +69,37 @@ describe('Leaderboard', () => {
     expect(screen.getByText('Tất cả')).toBeInTheDocument()
   })
 
-  it('renders tier info section', () => {
+  it('renders tier info section with 6 religious tiers', async () => {
     renderLeaderboard()
     expect(screen.getByText(/Xếp Hạng Mùa/i)).toBeInTheDocument()
-    // tierGold key is missing from vi.json, falls back to key
-    expect(screen.getByText('leaderboard.tierGold')).toBeInTheDocument()
+    // 6 religious tier names render (decision A 2026-05-01)
+    await waitFor(() => { expect(screen.getByText('Tân Tín Hữu')).toBeInTheDocument() })
+    expect(screen.getByText('Người Tìm Kiếm')).toBeInTheDocument()
+    expect(screen.getByText('Môn Đồ')).toBeInTheDocument()
+    expect(screen.getByText('Hiền Triết')).toBeInTheDocument()
+    expect(screen.getByText('Tiên Tri')).toBeInTheDocument()
+    expect(screen.getByText('Sứ Đồ')).toBeInTheDocument()
+    // No raw i18n key visible (LB-P0-1 fixed)
+    expect(screen.queryByText('leaderboard.tierGold')).not.toBeInTheDocument()
+    expect(screen.queryByText('leaderboard.tierSilver')).not.toBeInTheDocument()
+  })
+
+  it('highlights current user tier in tier section (BẠN badge)', async () => {
+    renderLeaderboard()
+    // Test User has 4,520 pts → tier 2 (seeker, 1,000-4,999)
+    await waitFor(() => {
+      const tier2Card = screen.getByTestId('leaderboard-tier-card-2')
+      expect(tier2Card.className).toContain('border-secondary')
+      // "Bạn" badge appears inside tier-2 card AND in list (current user row), so >= 1 expected
+      expect(tier2Card.textContent).toContain('Bạn')
+    })
+  })
+
+  it('renders tier section subtitle with season reward explanation', async () => {
+    renderLeaderboard()
+    await waitFor(() => {
+      expect(screen.getByText(/Vinh Quang Mùa Xuân 2026/i)).toBeInTheDocument()
+    })
   })
 
   it('renders season countdown', async () => {

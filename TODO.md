@@ -1,5 +1,154 @@
 # TODO
 
+## 2026-05-01 — Leaderboard Redesign Sprint 1 (P0 + P1 mockup) [IN PROGRESS]
+
+> **Source:** `docs/leaderboard/BUG_REPORT_LEADERBOARD.md` (audit 2026-04-30) + 2 mockup `docs/leaderboard/biblequiz_leaderboard_redesign.html` + `_mobile.html`.
+> **Decision split:** Mockup là design reference cho visual/layout; section "Xếp Hạng Mùa" content theo decision A (6 tier tôn giáo) thay vì 4 reward tier mockup vẽ. Xem `DECISIONS.md` 2026-05-01.
+> **Target files:** `apps/web/src/pages/Leaderboard.tsx` (231 LOC, single file inline), `apps/web/src/pages/__tests__/Leaderboard.test.tsx`, `apps/web/src/i18n/{vi,en}.json`. Backend: `apps/api/.../api/LeaderboardController.java` (chỉ nếu LB-1.2 cần fix duplicate).
+> **KHÔNG đổi business logic** — chỉ refactor presentation + thêm visuals + fix duplicate row + fix i18n. Tier system (`data/tiers.ts`) đã consolidated, reuse trực tiếp.
+>
+> **Pre-flight checks (2026-05-01):**
+> - ✅ `data/tiers.ts` đã có 6 tier với `colorHex`, `getTierByPoints()`, `getTierInfo()` — reuse, KHÔNG tạo mới
+> - ✅ i18n `tiers.{newBeliever..apostle}` đã có (vi.json + en.json) — reuse
+> - ✅ i18n `leaderboard.tier{Gold|Silver|Bronze|Iron}*` MISSING — đó là root cause LB-P0-1
+> - ✅ Leaderboard.tsx chỉ 231 LOC, single file — đủ small để refactor incrementally, không cần tách component ngay
+> - ✅ Backend endpoints: `/daily`, `/weekly`, `/monthly`, `/all-time` + `/{period}/my-rank` — KHÔNG có `/season` endpoint
+> - ⚠️ Backend duplicate row TAI THANH (LB-P0-3): cần verify với data thật trước khi fix — có thể là FE bug `userId` type mismatch, không phải backend
+>
+> **E2E Test Gate:** Chưa verify TC spec cho `/leaderboard` — đọc `tests/e2e/INDEX.md` + check W-M07 hoặc tương tự trong BƯỚC 2 trước khi code các task lớn.
+
+### Task LB-1.1: Fix i18n keys raw → reuse 6 religious tier keys (LB-P0-1 + LB-P0-2 partial) [x] DONE 2026-05-01
+- Status: [x] DONE — pending commit
+- File(s):
+  - `apps/web/src/pages/Leaderboard.tsx` — removed `tierInfo` 4-tier metallic array, added `useQuery(['me-tier-progress'])`, replaced render section (line 213→ 6-card grid using `TIERS`)
+  - `apps/web/src/i18n/vi.json` + `en.json` — added 3 keys: `tierSeasonSubtitle`, `tierThresholdRange`, `tierThresholdMax`
+  - `apps/web/src/pages/__tests__/Leaderboard.test.tsx` — added tier-progress mock, replaced raw-key assertion with 6 religious tier names check + 2 new tests for highlight + subtitle
+- Approach taken:
+  - Imported `TIERS` + `getTierByPoints` from `data/tiers.ts` (single source of truth, decision 2026-04-19)
+  - User points: fetched via `/api/me/tier-progress` (same pattern as Home.tsx line 55-59)
+  - Section render: 6 cards in `grid-cols-2 md:grid-cols-3` (3x2 desktop, 2x3 mobile)
+  - Each card: material icon colored via `tier.colorHex`, tier name `t(tier.nameKey)`, threshold range/max
+  - Current user tier: `bg-secondary/10 + border-secondary` highlight + "BẠN" badge top-right
+  - Section subtitle: "Cuối mùa, top 3 mỗi tier sẽ nhận badge Vinh Quang Mùa Xuân 2026"
+- Checklist:
+  - [x] Verified `useAuthStore.User` has NO `id`/`totalPoints` field — using `/api/me/tier-progress` query instead
+  - [x] Replaced `tierInfo` array → `TIERS.map(...)` rendering
+  - [x] Grid: `grid-cols-2 md:grid-cols-3`
+  - [x] Highlight tier hiện tại với badge "BẠN" + border highlight
+  - [x] Section subtitle với "Vinh Quang Mùa Xuân 2026"
+  - [x] i18n: 3 keys added (vi + en)
+  - [x] Test: 12/12 pass (was 10, added 2 new tests)
+  - [x] Tầng 2 `pages/`: 467 pass + 32 pre-existing fails (Ranked.test.tsx baseline drift, NOT caused by this commit)
+  - [x] i18n validator: 0 missing keys
+  - [ ] Commit: `fix(leaderboard): replace 4 metallic tier cards with 6 religious tier (LB-1.1)` — PENDING
+
+> **Finding for LB-1.2**: `apps/web/src/store/authStore.ts` `User` interface has NO `id` field (only `name, email, avatar, role, currentStreak`). Leaderboard.tsx line 154 (`isMe = entry.userId === user?.id`) and line 191 (`!list.some((e) => e.userId === user?.id)`) both compare against `undefined` → likely root cause of duplicate row bug. Test mock fakes `user.id = 'u1'` so test passes but production has bug.
+
+### Task LB-1.2: Debug + fix duplicate user row (LB-P0-3) [ ] TODO
+- Status: [ ] TODO — needs data verification first
+- File(s):
+  - `apps/web/src/pages/Leaderboard.tsx` (line 154 isMe check, line 191 myRank dedup)
+  - Possibly `apps/api/.../LeaderboardController.java` (line 125-135 mapLeaderboardRows) — only if BE returns duplicate
+- Investigation steps (BƯỚC 4 verify assumption):
+  - [ ] Run `curl http://localhost:8080/api/leaderboard/daily?size=20` — check if userId duplicated in response
+  - [ ] If BE returns duplicate → check `findDailyLeaderboard` query for missing GROUP BY or DB unique constraint
+  - [ ] If BE clean → check FE: `entry.userId` type (UUID/String) vs `user?.id` type — possible mismatch
+- Fix approach (TBD post-investigation):
+  - Option 1 (FE dedup): Add `list.filter((r, i, arr) => arr.findIndex(x => x.userId === r.userId) === i)` defensive
+  - Option 2 (BE fix): GROUP BY userId trong native query
+- Checklist:
+  - [ ] Verify with curl on local dev
+  - [ ] Identify root cause (write findings to commit message)
+  - [ ] Apply fix
+  - [ ] Test: e2e (Playwright) verify TAI THANH appears once
+  - [ ] Commit: `fix(leaderboard): dedupe user row in {fe|be} (LB-1.2)`
+
+### Task LB-1.3: Add Season tab — 4 tabs total (LB-P1-4) [ ] TODO
+- Status: [ ] TODO
+- File(s):
+  - `apps/web/src/pages/Leaderboard.tsx` (line 7 Tab type + line 26-30 tabs array)
+  - `apps/web/src/i18n/{vi,en}.json` — thêm `leaderboard.season`
+  - `apps/api/.../LeaderboardController.java` — thêm `/season` endpoint (gộp từ Season entity start→end date)
+- Approach:
+  - Read existing `seasons/active` API + `Season` entity for start/end dates
+  - BE: new `@GetMapping("/season")` endpoint reuse `findWeeklyLeaderboard(seasonStart, seasonEnd, size, offset)` (already accepts date range)
+  - FE: tab order = Hôm nay / Tuần / Mùa Xuân / Tất cả (theo mockup desktop line 41-46)
+- Checklist:
+  - [ ] BE: GET /api/leaderboard/season + /season/my-rank (mirror weekly impl)
+  - [ ] BE: unit test SeasonLeaderboardTest (start/end pulled from active Season)
+  - [ ] FE: add 'season' to Tab type + tabs array
+  - [ ] FE: i18n key `leaderboard.season`
+  - [ ] FE: test 4 tab switching
+  - [ ] BE test pass
+  - [ ] FE Vitest pass
+  - [ ] Commit: `feat(leaderboard): add season tab (LB-1.3)`
+
+### Task LB-1.4: Redesign Podium per mockup (LB-P1-1 + LB-P1-2 + LB-P1-3) [ ] TODO
+- Status: [ ] TODO
+- File(s): `apps/web/src/pages/Leaderboard.tsx` (line 86-131 Podium section + line 16-20 PODIUM_STYLES)
+- Approach (theo mockup desktop line 48-92):
+  - Bục chiều cao theo mockup: #1 = 130px, #2 = 90px, #3 = 65px (desktop); #1 = 88px, #2 = 60px, #3 = 42px (mobile)
+  - Avatar size: #1 = 80px (md:80) / 56px (mobile), #2 = 64px / 44px, #3 = 56px / 38px
+  - XÓA chữ La Mã `I/II/III` → thay bằng số Ả-rập badge tròn dưới avatar (đã có ở line 115)
+  - Crown 👑 SVG/emoji size 22px desktop / 16px mobile, top -22px above #1 avatar, gold drop-shadow
+  - Tier color: avatar bg dùng `tier.colorHex` từ `getTierByPoints(player.points)` thay vì metallic gold/silver/bronze
+  - Bục bg: subtle tier-color-tinted (e.g. `rgba(232,168,50,0.12)` cho #1)
+  - Hiện tier name dưới username + tie-break info (điểm + câu) trong bục #3 → fix LB-P1-5
+- Checklist:
+  - [ ] Compute tier per player using `getTierByPoints(player.points)` — display tier name + tier-colored avatar
+  - [ ] 3 bục với chiều cao khác nhau (Tailwind: h-32/h-22/h-16 desktop, h-22/h-15/h-10 mobile)
+  - [ ] Bỏ hết La Mã, dùng số Ả-rập trong badge tròn
+  - [ ] Crown 👑 trên #1 với size + glow
+  - [ ] Tie-break info dưới điểm: "X điểm · Y câu"
+  - [ ] Test: render 3 bục với props mock, verify height/size/crown
+  - [ ] Vitest pass
+  - [ ] Commit: `style(leaderboard): redesign podium per mockup (LB-1.4)`
+
+### Task LB-1.5: Enrich list rows per mockup (LB-P2-1) [ ] TODO
+- Status: [ ] TODO
+- File(s): `apps/web/src/pages/Leaderboard.tsx` (line 145-211 list section)
+- Approach (theo mockup desktop line 94-190):
+  - Mỗi row hiện: rank · avatar (tier-colored) · name · tier badge color · 🔥 streak · ▲▼ trend · điểm
+  - Badge "BẠN" + gold bg cho current user
+  - Footer link "Xem 247 người chơi →" nếu list > 8
+- Data needs:
+  - `entry.points` (đã có)
+  - `entry.tier` hoặc derive từ getTierByPoints(entry.points) (FE compute OK, KHÔNG cần BE thêm field)
+  - `entry.streak` — BE field MISSING — defer hoặc add to query
+  - `entry.trend` — BE field MISSING — defer (cần snapshot hôm trước)
+- Checklist:
+  - [ ] Render rich row layout (tier badge color via colorHex)
+  - [ ] Streak: hide if BE doesn't return field (graceful degradation)
+  - [ ] Trend: hide if BE doesn't return field (graceful degradation)
+  - [ ] Footer "Xem N người chơi →" với link to /leaderboard/full hoặc paginate trong-place
+  - [ ] Test: render row variations (with/without streak/trend)
+  - [ ] Vitest pass
+  - [ ] Commit: `style(leaderboard): enrich list rows per mockup (LB-1.5)`
+
+### Task LB-1.6: Sidebar widgets per mockup (LB-P3-1 partial) [ ] TODO
+- Status: [ ] TODO — defer if AppLayout sidebar không support context-specific widgets
+- File(s): TBD — depends on AppLayout structure
+- Approach (theo mockup desktop line 21-31):
+  - "Vị trí của bạn": #4 trên 247 + "Còn X điểm để vượt hạng 3"
+  - "Mùa hiện tại": Mùa Xuân 2026 + countdown days
+- Checklist:
+  - [ ] Investigate AppLayout sidebar slot mechanism
+  - [ ] If supported → inject 2 widgets via prop/portal
+  - [ ] If not → defer to LB-2 sprint
+  - [ ] Commit: `feat(leaderboard): context-specific sidebar widgets (LB-1.6)` OR document defer
+
+### Task LB-1.7: Final regression + cleanup [ ] TODO
+- Status: [ ] TODO
+- Checklist:
+  - [ ] Tầng 3 Full Regression: `npx vitest run` + `npx playwright test smoke/web-user/W-M*.spec.ts`
+  - [ ] Số test >= baseline (1045 unit + e2e current count)
+  - [ ] Visual check 3 viewports: desktop / tablet / mobile portrait
+  - [ ] Update bug report `docs/leaderboard/BUG_REPORT_LEADERBOARD.md` — mark P0/P1 fixed
+  - [ ] Update DECISIONS.md if new decisions emerged
+  - [ ] Final commit nếu cần
+
+---
+
 ## 2026-05-01 — Quiz Screen Redesign — Sprint 1 (P0 critical) [TODO]
 
 > Source: `docs/quiz/BUG_REPORT_QUIZ.md` (audit 2026-04-30) + mockup `docs/quiz/biblequiz_quiz_screen_redesign_desktop.html`.
