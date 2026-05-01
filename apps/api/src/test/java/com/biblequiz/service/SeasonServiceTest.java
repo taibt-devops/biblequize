@@ -53,7 +53,7 @@ class SeasonServiceTest {
     @Test
     void getActiveSeason_byDate_shouldReturnSeasonCoveringToday() {
         // Date-based lookup — primary path per LB-2 / DECISIONS 2026-05-01 4B
-        when(seasonRepository.findByStartDateLessThanEqualAndEndDateGreaterThanEqual(any(), any()))
+        when(seasonRepository.findTopByStartDateLessThanEqualAndEndDateGreaterThanEqualOrderByStartDateDesc(any(), any()))
                 .thenReturn(Optional.of(activeSeason));
 
         Optional<Season> result = seasonService.getActiveSeason();
@@ -66,7 +66,7 @@ class SeasonServiceTest {
 
     @Test
     void getActiveSeason_dateLookupEmpty_fallsBackToIsActiveTrue() {
-        when(seasonRepository.findByStartDateLessThanEqualAndEndDateGreaterThanEqual(any(), any()))
+        when(seasonRepository.findTopByStartDateLessThanEqualAndEndDateGreaterThanEqualOrderByStartDateDesc(any(), any()))
                 .thenReturn(Optional.empty());
         when(seasonRepository.findByIsActiveTrue()).thenReturn(Optional.of(activeSeason));
 
@@ -78,7 +78,7 @@ class SeasonServiceTest {
 
     @Test
     void getActiveSeason_whenNone_shouldReturnEmpty() {
-        when(seasonRepository.findByStartDateLessThanEqualAndEndDateGreaterThanEqual(any(), any()))
+        when(seasonRepository.findTopByStartDateLessThanEqualAndEndDateGreaterThanEqualOrderByStartDateDesc(any(), any()))
                 .thenReturn(Optional.empty());
         when(seasonRepository.findByIsActiveTrue()).thenReturn(Optional.empty());
 
