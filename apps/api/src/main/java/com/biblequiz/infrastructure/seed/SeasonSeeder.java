@@ -5,7 +5,9 @@ import com.biblequiz.modules.season.repository.SeasonRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.annotation.Profile;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
@@ -45,6 +47,25 @@ public class SeasonSeeder {
 
     @Autowired
     private SeasonRepository seasonRepository;
+
+    /**
+     * Auto-seed liturgical seasons after Spring Boot is fully ready.
+     * Idempotent (deterministic IDs), so safe to run on every restart —
+     * existing rows skip, missing rows insert. Wrapped in try/catch so
+     * a seed failure never breaks startup. Pattern mirrors
+     * {@link com.biblequiz.infrastructure.seed.question.QuestionSeeder}.
+     */
+    @EventListener(ApplicationReadyEvent.class)
+    public void onReady() {
+        try {
+            int inserted = seed();
+            if (inserted > 0) {
+                log.info("SeasonSeeder auto-seed complete — {} new seasons", inserted);
+            }
+        } catch (Exception e) {
+            log.error("SeasonSeeder auto-seed failed — continuing without seeding", e);
+        }
+    }
 
     public int seed() {
         int currentYear = LocalDate.now(ZoneOffset.UTC).getYear();
