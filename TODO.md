@@ -18,7 +18,7 @@
 > **E2E Test Gate:** Chưa verify TC spec cho `/leaderboard` — đọc `tests/e2e/INDEX.md` + check W-M07 hoặc tương tự trong BƯỚC 2 trước khi code các task lớn.
 
 ### Task LB-1.1: Fix i18n keys raw → reuse 6 religious tier keys (LB-P0-1 + LB-P0-2 partial) [x] DONE 2026-05-01
-- Status: [x] DONE — pending commit
+- Status: [x] DONE — commit `941cee5`
 - File(s):
   - `apps/web/src/pages/Leaderboard.tsx` — removed `tierInfo` 4-tier metallic array, added `useQuery(['me-tier-progress'])`, replaced render section (line 213→ 6-card grid using `TIERS`)
   - `apps/web/src/i18n/vi.json` + `en.json` — added 3 keys: `tierSeasonSubtitle`, `tierThresholdRange`, `tierThresholdMax`
@@ -40,28 +40,35 @@
   - [x] Test: 12/12 pass (was 10, added 2 new tests)
   - [x] Tầng 2 `pages/`: 467 pass + 32 pre-existing fails (Ranked.test.tsx baseline drift, NOT caused by this commit)
   - [x] i18n validator: 0 missing keys
-  - [ ] Commit: `fix(leaderboard): replace 4 metallic tier cards with 6 religious tier (LB-1.1)` — PENDING
+  - [x] Commit: `fix(leaderboard): replace 4 metallic tier cards with 6 religious tier (LB-1.1)` (941cee5)
 
 > **Finding for LB-1.2**: `apps/web/src/store/authStore.ts` `User` interface has NO `id` field (only `name, email, avatar, role, currentStreak`). Leaderboard.tsx line 154 (`isMe = entry.userId === user?.id`) and line 191 (`!list.some((e) => e.userId === user?.id)`) both compare against `undefined` → likely root cause of duplicate row bug. Test mock fakes `user.id = 'u1'` so test passes but production has bug.
 
-### Task LB-1.2: Debug + fix duplicate user row (LB-P0-3) [ ] TODO
-- Status: [ ] TODO — needs data verification first
+### Task LB-1.2: Fix duplicate user row + sticky logic (LB-P0-3) [x] DONE 2026-05-01
+- Status: [x] DONE — pending commit
 - File(s):
-  - `apps/web/src/pages/Leaderboard.tsx` (line 154 isMe check, line 191 myRank dedup)
-  - Possibly `apps/api/.../LeaderboardController.java` (line 125-135 mapLeaderboardRows) — only if BE returns duplicate
-- Investigation steps (BƯỚC 4 verify assumption):
-  - [ ] Run `curl http://localhost:8080/api/leaderboard/daily?size=20` — check if userId duplicated in response
-  - [ ] If BE returns duplicate → check `findDailyLeaderboard` query for missing GROUP BY or DB unique constraint
-  - [ ] If BE clean → check FE: `entry.userId` type (UUID/String) vs `user?.id` type — possible mismatch
-- Fix approach (TBD post-investigation):
-  - Option 1 (FE dedup): Add `list.filter((r, i, arr) => arr.findIndex(x => x.userId === r.userId) === i)` defensive
-  - Option 2 (BE fix): GROUP BY userId trong native query
+  - `apps/web/src/pages/Leaderboard.tsx` — replaced broken `user?.id` checks (always undefined since authStore.User has no id field) with `myRank.userId`-based identification + defensive dedup filter on raw list
+  - `apps/web/src/pages/__tests__/Leaderboard.test.tsx` — removed fake `user.id`, added `userId` to my-rank mock, +3 tests (dedup, sticky-hide, sticky-show)
+- Root cause findings:
+  - Primary FE bug: `authStore.User` interface has no `id` field (only name/email/avatar/role/currentStreak). Both `entry.userId === user?.id` (line 154 isMe) and `!list.some((e) => e.userId === user?.id)` (line 191 sticky guard) compared against `undefined` → in-list highlight broken AND sticky guard always allows sticky row → user rendered twice (1 normal row + 1 sticky)
+  - Secondary BE concern: backend duplicate (same userId in 2 list rows) may exist — defensive FE dedup added; backend investigation deferred until live data confirms or test infra (e2e w/ DB) catches it
+- Fix approach taken:
+  - Use `myRank?.userId` (returned by `/api/leaderboard/{period}/my-rank`) to identify current user — no authStore mutation needed
+  - Sticky-row guard adopted Home.tsx 2026-04-19 rank-based pattern (`showMyRankSticky = myRank != null && !isCurrentUserInList`)
+  - Defensive dedup `rawList.filter(...findIndex unique)` to guard against BE returning duplicate rows
+  - `data-testid="leaderboard-my-rank-sticky"` added for e2e + unit test stable selector
+  - Sticky row name/avatar fallback from `myRank.name` first then `user?.name` (preserves existing UX when user from authStore lags)
 - Checklist:
-  - [ ] Verify with curl on local dev
-  - [ ] Identify root cause (write findings to commit message)
-  - [ ] Apply fix
-  - [ ] Test: e2e (Playwright) verify TAI THANH appears once
-  - [ ] Commit: `fix(leaderboard): dedupe user row in {fe|be} (LB-1.2)`
+  - [x] Verified `authStore.User` has no `id` (root cause confirmed)
+  - [x] Verified `/api/me` BE response (UserResponse.java) does include id — but FE never captured it; switching to my-rank.userId avoids authStore change
+  - [x] Verified `/api/leaderboard/{period}/my-rank` returns userId (LeaderboardController line 162, 198, 233, 265)
+  - [x] Replace `entry.userId === user?.id` → `myUserId != null && entry.userId === myUserId`
+  - [x] Replace sticky guard `!list.some(e => e.userId === user?.id)` → derived `showMyRankSticky` flag
+  - [x] Add defensive list dedup
+  - [x] Tests: 15/15 pass (was 12, added 3 LB-1.2 regression cases)
+  - [x] Tầng 2 pages/: 473 pass + 29 pre-existing fails (Ranked.test.tsx baseline drift)
+  - [x] TypeScript clean for Leaderboard.tsx (pre-existing errors elsewhere, none in this file)
+  - [ ] Commit: `fix(leaderboard): dedupe user row + use my-rank.userId for current-user detection (LB-1.2)` — PENDING
 
 ### Task LB-1.3: Add Season tab — 4 tabs total (LB-P1-4) [ ] TODO
 - Status: [ ] TODO

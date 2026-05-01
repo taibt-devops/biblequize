@@ -51,10 +51,20 @@ export default function Leaderboard() {
   const userPoints = tierData?.totalPoints ?? 0
   const userTierId = getTierByPoints(userPoints).id
 
-  const list: any[] = Array.isArray(entries) ? entries : []
+  const rawList: any[] = Array.isArray(entries) ? entries : []
+  // Defensive dedup: if BE returns duplicate rows for same userId, keep first occurrence.
+  // Root-cause investigation pending — see TODO LB-1.2 for backend follow-up.
+  const list = rawList.filter(
+    (row, idx, arr) => arr.findIndex((r) => r.userId === row.userId) === idx,
+  )
   const top3 = list.slice(0, 3)
   const rest = list.slice(3)
   const podiumOrder = [top3[1], top3[0], top3[2]].filter(Boolean) // 2, 1, 3
+
+  // Identify current user via my-rank API response (authStore.User has no `id` field)
+  const myUserId: string | undefined = myRank?.userId
+  const isCurrentUserInList = myUserId != null && list.some((e: any) => e.userId === myUserId)
+  const showMyRankSticky = myRank != null && !isCurrentUserInList
 
   const seasonCountdown = season?.endAt
     ? (() => {
@@ -153,7 +163,7 @@ export default function Leaderboard() {
           <>
             {rest.map((entry: any, idx: number) => {
               const rank = idx + 4
-              const isMe = entry.userId === user?.id
+              const isMe = myUserId != null && entry.userId === myUserId
               return isMe ? (
                 <div key={entry.userId || rank} className="flex items-center gap-4 p-6 bg-[#e8a832] rounded-2xl border-l-8 border-background/20 shadow-[0_15px_30px_rgba(232,168,50,0.3)]">
                   <div className="w-8 text-center font-black text-[#11131e]">{rank}</div>
@@ -190,16 +200,16 @@ export default function Leaderboard() {
               )
             })}
 
-            {/* My rank if not in list */}
-            {myRank && !list.some((e: any) => e.userId === user?.id) && (
-              <div className="flex items-center gap-4 p-6 bg-[#e8a832] rounded-2xl border-l-8 border-background/20 shadow-[0_15px_30px_rgba(232,168,50,0.3)]">
+            {/* My rank sticky — only when current user NOT in displayed list (around-me pattern) */}
+            {showMyRankSticky && (
+              <div data-testid="leaderboard-my-rank-sticky" className="flex items-center gap-4 p-6 bg-[#e8a832] rounded-2xl border-l-8 border-background/20 shadow-[0_15px_30px_rgba(232,168,50,0.3)]">
                 <div className="w-8 text-center font-black text-[#11131e]">{myRank.rank ?? '—'}</div>
                 <div className="w-12 h-12 rounded-full border-2 border-[#11131e] shadow-lg overflow-hidden bg-[#11131e]/10 flex items-center justify-center text-[#11131e] font-bold">
-                  {user?.name?.charAt(0)}
+                  {(myRank.name ?? user?.name)?.charAt(0)}
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-2">
-                    <h3 className="font-black text-sm text-[#11131e]">{user?.name}</h3>
+                    <h3 className="font-black text-sm text-[#11131e]">{myRank.name ?? user?.name}</h3>
                     <span className="bg-[#11131e]/10 text-[#11131e] text-[8px] font-black px-1.5 py-0.5 rounded uppercase tracking-tighter">{t('leaderboard.me')}</span>
                   </div>
                 </div>

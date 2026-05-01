@@ -6,7 +6,9 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 const mockApiGet = vi.fn()
 vi.mock('../../api/client', () => ({ api: { get: (...a: any[]) => mockApiGet(...a) } }))
 
-let authState = { isAuthenticated: true, isLoading: false, user: { id: 'u1', name: 'Test User', email: 'a@b.com' } }
+// authStore.User has NO `id` field in production (only name/email/avatar/role/currentStreak).
+// Leaderboard now identifies current user via my-rank API response (userId field).
+let authState = { isAuthenticated: true, isLoading: false, user: { name: 'Test User', email: 'a@b.com' } }
 vi.mock('../../store/authStore', () => ({
   useAuthStore: (s?: (st: any) => any) => s ? s(authState) : authState,
   useAuth: () => authState,
@@ -31,7 +33,8 @@ describe('Leaderboard', () => {
   beforeEach(() => {
     vi.clearAllMocks()
     mockApiGet.mockImplementation((url: string) => {
-      if (url.includes('/my-rank')) return Promise.resolve({ data: { rank: 5, points: 4520 } })
+      // my-rank includes userId so FE can identify current user in list
+      if (url.includes('/my-rank')) return Promise.resolve({ data: { userId: 'u1', name: 'Test User', rank: 5, points: 4520 } })
       if (url.includes('/leaderboard/')) return Promise.resolve({ data: MOCK_ENTRIES })
       if (url.includes('/seasons/active')) return Promise.resolve({ data: { endAt: new Date(Date.now() + 3 * 86400000).toISOString() } })
       // Test User has 4520 points → tier "seeker" (1,000-4,999 range)
@@ -127,5 +130,53 @@ describe('Leaderboard', () => {
   it('calls API with correct period', () => {
     renderLeaderboard()
     expect(mockApiGet).toHaveBeenCalledWith(expect.stringContaining('/leaderboard/daily'))
+  })
+
+  // LB-1.2 — duplicate row prevention (regression guard)
+  it('LB-1.2: dedupes user appearing twice in BE response', async () => {
+    const DUPLICATE_ENTRIES = [
+      { userId: 'u2', name: 'Player 1', points: 15820, avatarUrl: null },
+      { userId: 'u3', name: 'Player 2', points: 12450, avatarUrl: null },
+      { userId: 'u1', name: 'Test User', points: 4520, avatarUrl: null }, // duplicate #1
+      { userId: 'u1', name: 'Test User', points: 4520, avatarUrl: null }, // duplicate #2
+      { userId: 'u4', name: 'Player 3', points: 3000, avatarUrl: null },
+    ]
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('/my-rank')) return Promise.resolve({ data: { userId: 'u1', name: 'Test User', rank: 3, points: 4520 } })
+      if (url.includes('/leaderboard/')) return Promise.resolve({ data: DUPLICATE_ENTRIES })
+      if (url.includes('/seasons')) return Promise.resolve({ data: null })
+      if (url.includes('/api/me/tier-progress')) return Promise.resolve({ data: { totalPoints: 4520 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderLeaderboard()
+    await waitFor(() => { expect(screen.getByText('Player 3')).toBeInTheDocument() })
+    // Test User name should appear exactly once (FE defensive dedup)
+    expect(screen.getAllByText('Test User')).toHaveLength(1)
+  })
+
+  it('LB-1.2: hides sticky my-rank row when current user IS in displayed list', async () => {
+    // Test User (u1) is in MOCK_ENTRIES at idx 4 (rank 5) → no sticky needed
+    renderLeaderboard()
+    await waitFor(() => { expect(screen.getByText('Player 4')).toBeInTheDocument() })
+    expect(screen.queryByTestId('leaderboard-my-rank-sticky')).not.toBeInTheDocument()
+  })
+
+  it('LB-1.2: shows sticky my-rank row when current user NOT in list', async () => {
+    const ENTRIES_WITHOUT_ME = [
+      { userId: 'u2', name: 'Player 1', points: 15820, avatarUrl: null },
+      { userId: 'u3', name: 'Player 2', points: 12450, avatarUrl: null },
+      { userId: 'u4', name: 'Player 3', points: 11200, avatarUrl: null },
+      { userId: 'u5', name: 'Player 4', points: 9840, avatarUrl: null },
+    ]
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('/my-rank')) return Promise.resolve({ data: { userId: 'u1', name: 'Test User', rank: 50, points: 100 } })
+      if (url.includes('/leaderboard/')) return Promise.resolve({ data: ENTRIES_WITHOUT_ME })
+      if (url.includes('/seasons')) return Promise.resolve({ data: null })
+      if (url.includes('/api/me/tier-progress')) return Promise.resolve({ data: { totalPoints: 100 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderLeaderboard()
+    await waitFor(() => { expect(screen.getByText('Player 4')).toBeInTheDocument() })
+    expect(screen.getByTestId('leaderboard-my-rank-sticky')).toBeInTheDocument()
   })
 })
