@@ -466,6 +466,38 @@ class SessionServiceTest {
         }
 
         @Test
+        void submitAnswer_varietyMode_shortCircuitsBeforeUdpWrite() {
+                // Hardening (Bui decision 2026-05-02): if a future FE accidentally
+                // creates a QuizSession with mode=mystery_mode/speed_round/weekly_quiz,
+                // creditNonRankedProgress must reject early — no UDP write — so the
+                // ranked leaderboard cannot be contaminated. Allow-list only permits
+                // practice + single.
+                QuizSession mysterySession = new QuizSession();
+                mysterySession.setId("ms1");
+                mysterySession.setMode(QuizSession.Mode.mystery_mode);
+                mysterySession.setOwner(sampleUser);
+                mysterySession.setStatus(QuizSession.Status.in_progress);
+                mysterySession.setScore(0);
+                mysterySession.setTotalQuestions(1);
+                mysterySession.setCorrectAnswers(0);
+
+                when(quizSessionRepository.findById("ms1")).thenReturn(Optional.of(mysterySession));
+                when(userRepository.findById("user1")).thenReturn(Optional.of(sampleUser));
+                when(questionRepository.findById("q1")).thenReturn(Optional.of(sampleQuestion));
+                when(answerRepository.findBySessionIdAndQuestionIdAndUserId("ms1", "q1", "user1"))
+                                .thenReturn(Optional.empty());
+                when(answerRepository.save(any(Answer.class))).thenReturn(sampleAnswer);
+                when(quizSessionQuestionRepository.findBySessionIdAndQuestionId("ms1", "q1"))
+                                .thenReturn(new QuizSessionQuestion());
+
+                sessionService.submitAnswer("ms1", "user1", "q1", 0, 5000);
+
+                // Allow-list rejects mystery_mode → no UDP lookup, no UDP save.
+                verify(userDailyProgressRepository, never()).findByUserIdAndDate(anyString(), any());
+                verify(userDailyProgressRepository, never()).save(any());
+        }
+
+        @Test
         void submitAnswer_practiceMode_wrongAnswer_doesNotGrantPointsCounted() {
                 // Wrong answers always grant 0 points (any mode). Verify
                 // questionsCounted still increments so daily-mission progress

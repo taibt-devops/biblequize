@@ -272,6 +272,23 @@ public class SessionService {
     private void creditNonRankedProgress(User user, QuizSession.Mode mode, boolean isCorrect, int scoreDelta) {
         if (mode == QuizSession.Mode.ranked) return;
 
+        // Hardening allow-list (Bui decision 2026-05-02): only practice and single
+        // are valid modes for this path. Variety modes (mystery_mode, speed_round,
+        // weekly_quiz) currently never reach here because their FE flow doesn't
+        // create a QuizSession — but if a future FE wiring did create one, the
+        // submitAnswer call would route here with grantXp=true under the old
+        // contract and silently contaminate the ranked leaderboard. Reject any
+        // unexpected mode early so the contamination cannot happen by accident.
+        // If you want to wire a variety mode to scoring in future, do it via a
+        // dedicated path (NOT this method) and decide leaderboard policy
+        // explicitly with Bui.
+        if (mode != QuizSession.Mode.practice && mode != QuizSession.Mode.single) {
+            log.error("Unexpected mode {} reached creditNonRankedProgress for user {}. "
+                    + "Per Option A, only practice/single allowed. Variety modes must use a "
+                    + "separate scoring path.", mode, user.getId());
+            return;
+        }
+
         // Option A (Bui decision 2026-05-02 + AUDIT_VARIETY_MODES_LEADERBOARD.md V2):
         // This method NEVER grants ranked leaderboard points. Practice (any tier)
         // and Single modes are the only callers in production today; both are
