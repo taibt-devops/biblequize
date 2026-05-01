@@ -55,25 +55,29 @@ const SAMPLE_GROUP = {
   memberCount: 42,
   totalPoints: 15800,
   location: 'TP. Hồ Chí Minh',
+  isPublic: true,
 }
 
+// Backend returns `score` (not `points`) — see ChurchGroupService.getLeaderboard
 const SAMPLE_LEADERBOARD = [
-  { rank: 1, userId: 'u1', name: 'Lê Minh', avatarUrl: null, points: 15800 },
-  { rank: 2, userId: 'u2', name: 'Trần An', avatarUrl: null, points: 12400 },
-  { rank: 3, userId: 'u3', name: 'Phạm Hùng', avatarUrl: null, points: 10100 },
-  { rank: 4, userId: 'u4', name: 'Nguyễn Thu', avatarUrl: null, points: 8920 },
+  { rank: 1, userId: 'u1', name: 'Lê Minh', avatarUrl: null, score: 15800, role: 'LEADER' },
+  { rank: 2, userId: 'u2', name: 'Trần An', avatarUrl: null, score: 12400, role: 'MEMBER' },
+  { rank: 3, userId: 'u3', name: 'Phạm Hùng', avatarUrl: null, score: 10100, role: 'MEMBER' },
+  { rank: 4, userId: 'u4', name: 'Nguyễn Thu', avatarUrl: null, score: 8920, role: 'MEMBER' },
 ]
 
 const SAMPLE_ANNOUNCEMENTS = [
   {
     id: 'a1',
     author: 'Quản trị viên',
-    title: 'Cuộc thi tuần 42',
+    authorRole: 'LEADER',
     body: 'Chuẩn bị cho chủ đề mới.',
     createdAt: new Date(Date.now() - 7200000).toISOString(),
-    isNew: true,
   },
 ]
+
+const NO_GROUP_RESPONSE = { hasGroup: false }
+const HAS_GROUP_RESPONSE = { hasGroup: true, groupId: 'g1', groupName: 'Hội Thánh Tin Lành', memberCount: 42, role: 'MEMBER' }
 
 describe('Groups Page', () => {
   beforeEach(() => {
@@ -82,47 +86,66 @@ describe('Groups Page', () => {
   })
 
   it('renders without crashing', () => {
+    mockGet.mockResolvedValue({ data: NO_GROUP_RESPONSE })
     expect(() => renderGroups()).not.toThrow()
   })
 
-  it('shows no-group view when user has no saved group', () => {
-    renderGroups()
-    expect(screen.getByTestId('no-group')).toBeTruthy()
-    expect(screen.getByText('Bạn chưa tham gia nhóm nào')).toBeTruthy()
-  })
-
-  it('shows create and join buttons in no-group view', () => {
-    renderGroups()
-    expect(screen.getByText('Tạo Nhóm')).toBeTruthy()
-    expect(screen.getByText('Tìm Nhóm')).toBeTruthy()
-  })
-
-  it('shows loading skeleton when user has a group', () => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify([{ id: 'g1', name: 'Test' }]))
-    mockGet.mockReturnValue(new Promise(() => {})) // never resolves
-    renderGroups()
-    expect(screen.getByTestId('groups-skeleton')).toBeTruthy()
-  })
-
-  it('renders group overview when user has a saved group', async () => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify([{ id: 'g1', name: 'Test' }]))
+  it('shows no-group view when API returns hasGroup: false', async () => {
     mockGet.mockImplementation((url: string) => {
-      if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: SAMPLE_LEADERBOARD } })
-      if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: SAMPLE_ANNOUNCEMENTS, total: SAMPLE_ANNOUNCEMENTS.length, hasMore: false } } })
-      return Promise.resolve({ data: SAMPLE_GROUP })
+      if (url.includes('/api/groups/me')) return Promise.resolve({ data: NO_GROUP_RESPONSE })
+      return Promise.resolve({ data: {} })
     })
     renderGroups()
     await waitFor(() => {
-      expect(screen.getByText('Hội Thánh Tin Lành')).toBeTruthy()
+      expect(screen.getByTestId('no-group')).toBeTruthy()
+    })
+    expect(screen.getByText('Tham gia nhóm hội thánh')).toBeTruthy()
+  })
+
+  it('shows create and join CTAs in no-group view', async () => {
+    mockGet.mockImplementation((url: string) => {
+      if (url.includes('/api/groups/me')) return Promise.resolve({ data: NO_GROUP_RESPONSE })
+      return Promise.resolve({ data: {} })
+    })
+    renderGroups()
+    await waitFor(() => {
+      expect(screen.getByTestId('groups-create-btn')).toBeTruthy()
+      expect(screen.getByTestId('groups-join-btn')).toBeTruthy()
     })
   })
 
-  it('renders leaderboard from API', async () => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify([{ id: 'g1', name: 'Test' }]))
+  it('clears stale localStorage when API says hasGroup: false', async () => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify([{ id: 'stale', name: 'Stale' }]))
     mockGet.mockImplementation((url: string) => {
+      if (url.includes('/api/groups/me')) return Promise.resolve({ data: NO_GROUP_RESPONSE })
+      return Promise.resolve({ data: {} })
+    })
+    renderGroups()
+    await waitFor(() => {
+      expect(screen.getByTestId('no-group')).toBeTruthy()
+    })
+    expect(localStorage.getItem(STORAGE_KEY)).toBeNull()
+  })
+
+  it('renders group overview when API returns hasGroup: true', async () => {
+    mockGet.mockImplementation((url: string) => {
+      if (url.includes('/api/groups/me')) return Promise.resolve({ data: HAS_GROUP_RESPONSE })
+      if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: SAMPLE_LEADERBOARD } })
+      if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: SAMPLE_ANNOUNCEMENTS, total: SAMPLE_ANNOUNCEMENTS.length, hasMore: false } } })
+      return Promise.resolve({ data: { success: true, group: SAMPLE_GROUP } })
+    })
+    renderGroups()
+    await waitFor(() => {
+      expect(screen.getAllByText('Hội Thánh Tin Lành').length).toBeGreaterThan(0)
+    })
+  })
+
+  it('renders podium top-3 from API leaderboard (uses score field)', async () => {
+    mockGet.mockImplementation((url: string) => {
+      if (url.includes('/api/groups/me')) return Promise.resolve({ data: HAS_GROUP_RESPONSE })
       if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: SAMPLE_LEADERBOARD } })
       if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: [], total: 0, hasMore: false } } })
-      return Promise.resolve({ data: SAMPLE_GROUP })
+      return Promise.resolve({ data: { success: true, group: SAMPLE_GROUP } })
     })
     renderGroups()
     await waitFor(() => {
@@ -130,29 +153,64 @@ describe('Groups Page', () => {
     })
     expect(screen.getByText('Trần An')).toBeTruthy()
     expect(screen.getByText('Phạm Hùng')).toBeTruthy()
+    // Score formatted (not literal "undefined")
+    expect(screen.queryByText(/undefined/)).toBeNull()
   })
 
-  it('renders announcements from API', async () => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify([{ id: 'g1', name: 'Test' }]))
+  it('renders announcements body from API', async () => {
     mockGet.mockImplementation((url: string) => {
+      if (url.includes('/api/groups/me')) return Promise.resolve({ data: HAS_GROUP_RESPONSE })
       if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: [] } })
       if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: SAMPLE_ANNOUNCEMENTS, total: SAMPLE_ANNOUNCEMENTS.length, hasMore: false } } })
-      return Promise.resolve({ data: SAMPLE_GROUP })
+      return Promise.resolve({ data: { success: true, group: SAMPLE_GROUP } })
     })
     renderGroups()
     await waitFor(() => {
-      expect(screen.getByText('Cuộc thi tuần 42')).toBeTruthy()
+      expect(screen.getByText('Chuẩn bị cho chủ đề mới.')).toBeTruthy()
     })
   })
 
   it('shows error state when group fetch fails', async () => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify([{ id: 'g1', name: 'Test' }]))
-    mockGet.mockRejectedValue(new Error('Not found'))
+    mockGet.mockImplementation((url: string) => {
+      if (url.includes('/api/groups/me')) return Promise.resolve({ data: HAS_GROUP_RESPONSE })
+      return Promise.reject(new Error('Not found'))
+    })
     renderGroups()
     await waitFor(() => {
       expect(screen.getByTestId('group-error')).toBeTruthy()
     })
     expect(screen.getByText('Không thể tải thông tin nhóm')).toBeTruthy()
+  })
+
+  it('renders fallback name when group.name is empty', async () => {
+    const emptyNameGroup = { ...SAMPLE_GROUP, name: '' }
+    mockGet.mockImplementation((url: string) => {
+      if (url.includes('/api/groups/me')) return Promise.resolve({ data: { ...HAS_GROUP_RESPONSE, groupName: '' } })
+      if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: [] } })
+      if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: [], total: 0, hasMore: false } } })
+      return Promise.resolve({ data: { success: true, group: emptyNameGroup } })
+    })
+    renderGroups()
+    await waitFor(() => {
+      expect(screen.getByText('Nhóm chưa đặt tên')).toBeTruthy()
+    })
+  })
+
+  it('renders podium empty slots when leaderboard has < 3 members', async () => {
+    const partialLeaderboard = [SAMPLE_LEADERBOARD[0]]
+    mockGet.mockImplementation((url: string) => {
+      if (url.includes('/api/groups/me')) return Promise.resolve({ data: HAS_GROUP_RESPONSE })
+      if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: partialLeaderboard } })
+      if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: [], total: 0, hasMore: false } } })
+      return Promise.resolve({ data: { success: true, group: SAMPLE_GROUP } })
+    })
+    renderGroups()
+    await waitFor(() => {
+      expect(screen.getByText('Lê Minh')).toBeTruthy()
+    })
+    // 2 empty slots should render with "Còn trống" label
+    const emptyLabels = screen.getAllByText('Còn trống')
+    expect(emptyLabels.length).toBe(2)
   })
 
   it('returns null when not authenticated', () => {

@@ -1,11 +1,28 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../store/authStore';
 import { api } from '../api/client';
+import { getTierByPoints } from '../data/tiers';
 
 /* ─── Types ─── */
+
+interface MyGroupResponse {
+  hasGroup: boolean;
+  groupId?: string;
+  groupName?: string;
+  memberCount?: number;
+  role?: string;
+}
+
+interface GroupMemberLite {
+  id: string;
+  name: string;
+  avatarUrl?: string;
+  role: string;
+  joinedAt?: string;
+}
 
 interface GroupInfo {
   id: string;
@@ -17,26 +34,41 @@ interface GroupInfo {
   location?: string;
   bannerUrl?: string;
   logoUrl?: string;
+  avatarUrl?: string;
+  isPublic?: boolean;
+  leaderId?: string;
+  members?: GroupMemberLite[];
 }
 
 interface LeaderboardMember {
-  rank: number;
+  rank?: number;
   userId: string;
   name: string;
   avatarUrl?: string;
-  points: number;
+  score: number;
+  role?: string;
+  questionsAnswered?: number;
 }
 
 interface Announcement {
   id: string;
-  author: string;
-  title: string;
   body: string;
+  author: string;
+  authorRole?: string;
   createdAt: string;
-  isNew?: boolean;
 }
 
-/* ─── Helper: SavedGroup localStorage ─── */
+interface PublicGroupListItem {
+  id: string;
+  name: string;
+  code?: string;
+  memberCount: number;
+  location?: string;
+  weeklyStreak?: number;
+  avatarHue?: 'gold' | 'blue' | 'purple' | 'green';
+}
+
+/* ─── localStorage cache (NOT source of truth — see useMyGroup hook) ─── */
 
 interface SavedGroup {
   id: string;
@@ -60,104 +92,303 @@ function saveGroup(group: SavedGroup) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(groups));
 }
 
-function formatPoints(n: number): string {
+function clearSavedGroups() {
+  localStorage.removeItem(STORAGE_KEY);
+}
+
+function formatPoints(n: number | undefined | null): string {
+  if (n == null || Number.isNaN(n)) return '0';
   if (n >= 10000) return `${(n / 1000).toFixed(1)}k`;
   if (n >= 1000) return n.toLocaleString('vi-VN');
   return String(n);
 }
 
-/* ─── Skeleton ─── */
+function getInitial(name?: string): string {
+  if (!name) return '?';
+  const trimmed = name.trim();
+  return trimmed.length > 0 ? trimmed[0].toUpperCase() : '?';
+}
+
+/* ─── Featured public groups: BE endpoint pending (Phase 0.1).
+   Until merged, we render a small static preview so the empty
+   state feels alive. Replace with `useQuery(['public-groups'])`
+   once GET /api/groups/public ships. ─── */
+const FEATURED_PUBLIC_GROUPS: PublicGroupListItem[] = [
+  { id: 'demo-1', name: 'Hội Thánh Tin Lành Free Methodist', memberCount: 128, location: 'Vũng Tàu', weeklyStreak: 47, avatarHue: 'gold' },
+  { id: 'demo-2', name: 'Nhóm tế bào Bình Thạnh', memberCount: 42, location: 'TP. Hồ Chí Minh', weeklyStreak: 12, avatarHue: 'blue' },
+  { id: 'demo-3', name: 'Hội Thánh Free Methodist Đà Nẵng', memberCount: 87, location: 'Đà Nẵng', weeklyStreak: 23, avatarHue: 'purple' },
+];
+
+const HUE_BG: Record<NonNullable<PublicGroupListItem['avatarHue']>, string> = {
+  gold: 'bg-[rgba(232,168,50,0.15)]',
+  blue: 'bg-[rgba(74,158,255,0.15)]',
+  purple: 'bg-[rgba(168,85,247,0.15)]',
+  green: 'bg-[rgba(99,153,34,0.15)]',
+};
+
+const HUE_ICON: Record<NonNullable<PublicGroupListItem['avatarHue']>, string> = {
+  gold: '⛪',
+  blue: '📖',
+  purple: '✝️',
+  green: '🕊️',
+};
+
+/* ─── Skeleton (compact, matches mockup shape) ─── */
 
 function GroupSkeleton() {
   return (
-    <div className="max-w-6xl mx-auto space-y-12 animate-pulse" data-testid="groups-skeleton">
-      <div className="rounded-[2.5rem] bg-surface-container h-72" />
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-        <div className="lg:col-span-2 space-y-10">
-          <div className="bg-surface-container rounded-[2.5rem] h-96" />
-          <div className="bg-surface-container rounded-[2.5rem] h-72" />
+    <div className="max-w-5xl mx-auto space-y-4 animate-pulse" data-testid="groups-skeleton">
+      <div className="rounded-2xl bg-[rgba(50,52,64,0.4)] h-24" />
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-4">
+        <div className="space-y-3">
+          <div className="bg-[rgba(50,52,64,0.4)] rounded-2xl h-80" />
+          <div className="bg-[rgba(50,52,64,0.4)] rounded-2xl h-40" />
         </div>
-        <div className="space-y-10">
-          <div className="bg-surface-container rounded-[2.5rem] h-48" />
-          <div className="bg-surface-container rounded-[2.5rem] h-64" />
+        <div className="space-y-3">
+          <div className="bg-[rgba(50,52,64,0.4)] rounded-2xl h-44" />
+          <div className="bg-[rgba(99,153,34,0.06)] rounded-2xl h-32" />
         </div>
       </div>
     </div>
   );
 }
 
-/* ─── No Group View ─── */
+/* ─── No Group View (mockup: groups_empty_state.html) ─── */
 
 function NoGroupView({
   onCreateClick,
   onJoinClick,
 }: {
   onCreateClick: () => void;
-  onJoinClick: () => void;
+  onJoinClick: (prefill?: string) => void;
 }) {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-lg mx-auto text-center py-16" data-testid="no-group">
-      <span
-        className="material-symbols-outlined text-6xl text-on-surface-variant mb-6 block"
-        style={{ fontVariationSettings: "'FILL' 1" }}
-      >
-        groups
-      </span>
-      <h2 className="text-2xl font-black tracking-tight text-on-surface mb-3">
-        {t('groups.noGroupTitle')}
-      </h2>
-      <p className="text-on-surface-variant mb-10 leading-relaxed">
-        {t('groups.noGroupDesc')}
-      </p>
-      <div className="flex justify-center gap-4">
-        <button
-          onClick={onCreateClick}
-          data-testid="groups-create-btn"
-          className="px-8 py-4 gold-gradient text-on-secondary rounded-2xl font-black text-xs uppercase tracking-widest hover:shadow-[0_0_30px_rgba(232,168,50,0.4)] transition-all active:scale-95 shadow-lg"
-        >
-          {t('groups.createGroup')}
-        </button>
-        <button
-          onClick={onJoinClick}
-          data-testid="groups-join-btn"
-          className="px-8 py-4 bg-surface-container-highest/80 backdrop-blur text-on-surface rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-surface-bright transition-all active:scale-95 border border-white/5"
-        >
-          {t('groups.findGroup')}
-        </button>
+    <div className="max-w-3xl mx-auto space-y-4" data-testid="no-group">
+      {/* Hero card */}
+      <div className="text-center px-6 py-8 bg-[rgba(50,52,64,0.3)] border-[0.5px] border-[rgba(232,168,50,0.15)] rounded-2xl">
+        <div className="w-20 h-20 rounded-[20px] bg-[rgba(232,168,50,0.1)] border-2 border-[rgba(232,168,50,0.3)] flex items-center justify-center mx-auto mb-5">
+          <span className="text-[36px]">⛪</span>
+        </div>
+        <h2 className="text-[22px] font-medium text-on-surface mb-2">
+          {t('groups.noGroupTitle')}
+        </h2>
+        <p className="text-on-surface/55 text-[13px] max-w-md mx-auto mb-6 leading-relaxed">
+          {t('groups.noGroupDesc')}
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-2.5 mb-4">
+          <button
+            onClick={() => onJoinClick()}
+            data-testid="groups-join-btn"
+            className="bg-secondary text-on-secondary border-0 rounded-[10px] px-6 py-3 text-[13px] font-medium cursor-pointer shadow-[0_0_24px_rgba(232,168,50,0.2)] flex items-center gap-2 hover:brightness-110 transition-all active:scale-95"
+          >
+            <span>🔑</span> {t('groups.joinByCodeCta')}
+          </button>
+          <button
+            onClick={onCreateClick}
+            data-testid="groups-create-btn"
+            className="bg-white/5 text-on-surface border-[0.5px] border-white/15 rounded-[10px] px-6 py-3 text-[13px] font-medium cursor-pointer flex items-center gap-2 hover:bg-white/10 transition-all active:scale-95"
+          >
+            <span>✨</span> {t('groups.createGroupCta')}
+          </button>
+        </div>
+
+        <div className="text-on-surface/40 text-[11px]">{t('groups.noGroupHint')}</div>
+      </div>
+
+      {/* Benefits grid (3 cards) */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div className="bg-[rgba(74,158,255,0.06)] border-[0.5px] border-[rgba(74,158,255,0.2)] rounded-xl p-3.5">
+          <div className="text-[18px] mb-1.5">🏆</div>
+          <div className="text-on-surface text-[13px] font-medium mb-0.5">{t('groups.benefit1Title')}</div>
+          <div className="text-on-surface/55 text-[11px] leading-snug">{t('groups.benefit1Desc')}</div>
+        </div>
+        <div className="bg-[rgba(168,85,247,0.06)] border-[0.5px] border-[rgba(168,85,247,0.2)] rounded-xl p-3.5">
+          <div className="text-[18px] mb-1.5">📚</div>
+          <div className="text-on-surface text-[13px] font-medium mb-0.5">{t('groups.benefit2Title')}</div>
+          <div className="text-on-surface/55 text-[11px] leading-snug">{t('groups.benefit2Desc')}</div>
+        </div>
+        <div className="bg-[rgba(99,153,34,0.06)] border-[0.5px] border-[rgba(99,153,34,0.2)] rounded-xl p-3.5">
+          <div className="text-[18px] mb-1.5">🔥</div>
+          <div className="text-on-surface text-[13px] font-medium mb-0.5">{t('groups.benefit3Title')}</div>
+          <div className="text-on-surface/55 text-[11px] leading-snug">{t('groups.benefit3Desc')}</div>
+        </div>
+      </div>
+
+      {/* Featured public groups */}
+      <div className="bg-[rgba(50,52,64,0.3)] border-[0.5px] border-white/[0.06] rounded-xl px-4 py-4">
+        <div className="flex justify-between items-center mb-3">
+          <div>
+            <div className="text-on-surface text-[13px] font-medium">{t('groups.discoverPublic')}</div>
+            <div className="text-on-surface/45 text-[11px] mt-0.5">{t('groups.discoverPublicSubtitle')}</div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-2">
+          {FEATURED_PUBLIC_GROUPS.map((group) => {
+            const hue = group.avatarHue ?? 'gold';
+            return (
+              <div
+                key={group.id}
+                className="bg-[rgba(50,52,64,0.5)] border-[0.5px] border-white/[0.04] rounded-lg px-3 py-2.5 flex items-center gap-2.5"
+              >
+                <div className={`w-9 h-9 rounded-lg flex items-center justify-center text-[16px] ${HUE_BG[hue]}`}>
+                  {HUE_ICON[hue]}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-on-surface text-[12px] font-medium truncate">{group.name}</div>
+                  <div className="text-on-surface/50 text-[10px]">
+                    {group.memberCount} {t('groups.members')}
+                    {group.location ? ` · ${group.location}` : ''}
+                    {group.weeklyStreak ? ` · ${t('groups.publicStreakLabel', { count: group.weeklyStreak })}` : ''}
+                  </div>
+                </div>
+                <button
+                  onClick={() => onJoinClick(group.code)}
+                  className="bg-[rgba(232,168,50,0.15)] text-secondary border-[0.5px] border-[rgba(232,168,50,0.4)] rounded-md px-3 py-1.5 text-[11px] font-medium cursor-pointer hover:brightness-110 transition-all"
+                >
+                  {t('groups.joinPublicGroup')}
+                </button>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
 }
 
-/* ─── Group Overview ─── */
+/* ─── Podium 3-slot pattern with empty state ─── */
+
+function PodiumSlot({
+  member,
+  rank,
+  elevated,
+  isCurrentUser,
+}: {
+  member: LeaderboardMember | null;
+  rank: 1 | 2 | 3;
+  elevated?: boolean;
+  isCurrentUser?: boolean;
+}) {
+  const { t } = useTranslation();
+
+  if (!member) {
+    return (
+      <div
+        className="bg-white/[0.03] border-[0.5px] border-dashed border-white/10 rounded-[10px] p-2.5 text-center opacity-60 flex flex-col items-center justify-center"
+        style={{ minHeight: elevated ? 110 : 90 }}
+      >
+        <div className="w-10 h-10 rounded-full border border-dashed border-on-surface-variant/30 flex items-center justify-center mb-1.5">
+          <span className="material-symbols-outlined text-on-surface-variant/40 text-[18px]">person_add</span>
+        </div>
+        <div className="text-on-surface-variant text-[10px]">{t('groups.podiumEmptySlot')}</div>
+      </div>
+    );
+  }
+
+  const tier = getTierByPoints(member.score);
+  const tierName = t(tier.nameKey);
+  const isLeader = member.role === 'LEADER';
+
+  // mockup color tokens per rank
+  const styles = elevated
+    ? {
+        wrapper: 'bg-[rgba(232,168,50,0.12)] border border-[rgba(232,168,50,0.5)] rounded-[10px] p-3.5 px-2.5 text-center',
+        ring: 'shadow-[0_0_0_2px_rgba(232,168,50,0.15)]',
+        avatarWrap: 'w-[50px] h-[50px] bg-[rgba(232,168,50,0.3)] border-2 border-secondary text-secondary',
+        rankBadge: 'bg-secondary text-on-secondary',
+        rankFontSize: '11px',
+        nameSize: 'text-[12px]',
+        scoreSize: 'text-[10px]',
+      }
+    : rank === 2
+    ? {
+        wrapper: 'bg-white/[0.04] border-[0.5px] border-white/10 rounded-[10px] p-2.5 text-center',
+        ring: '',
+        avatarWrap: 'w-10 h-10 bg-[rgba(74,158,255,0.3)] border-2 border-[rgba(74,158,255,0.6)] text-[#6AB8E8]',
+        rankBadge: 'bg-white/60 text-background',
+        rankFontSize: '10px',
+        nameSize: 'text-[11px]',
+        scoreSize: 'text-[9px]',
+      }
+    : {
+        wrapper: 'bg-[rgba(255,140,66,0.08)] border-[0.5px] border-[rgba(255,140,66,0.3)] rounded-[10px] p-2.5 text-center',
+        ring: '',
+        avatarWrap: 'w-10 h-10 bg-[rgba(168,85,247,0.3)] border-2 border-[rgba(168,85,247,0.6)] text-[#c084fc]',
+        rankBadge: 'bg-[rgba(255,140,66,0.8)] text-background',
+        rankFontSize: '10px',
+        nameSize: 'text-[11px]',
+        scoreSize: 'text-[9px]',
+      };
+
+  return (
+    <div className={`${styles.wrapper} ${styles.ring} ${isCurrentUser ? 'ring-1 ring-secondary' : ''}`}>
+      <div className="relative inline-block mb-1.5">
+        <div
+          className={`rounded-full flex items-center justify-center text-[14px] font-medium ${styles.avatarWrap}`}
+          style={elevated ? { fontSize: '16px' } : undefined}
+        >
+          {member.avatarUrl ? (
+            <img alt={member.name} src={member.avatarUrl} className="w-full h-full rounded-full object-cover" />
+          ) : (
+            getInitial(member.name)
+          )}
+        </div>
+        <div
+          className={`absolute -bottom-0.5 -right-1 w-[18px] h-[18px] rounded-full flex items-center justify-center font-semibold ${styles.rankBadge}`}
+          style={elevated ? { width: 20, height: 20, fontSize: '11px' } : { fontSize: '10px' }}
+        >
+          {rank}
+        </div>
+      </div>
+      <div className={`text-on-surface ${styles.nameSize} font-medium truncate`}>
+        {member.name}
+      </div>
+      <div className="text-[9px]" style={{ color: tier.colorHex }}>
+        {tierName} {isLeader && '👑'}
+      </div>
+      <div className={`text-on-surface/45 ${styles.scoreSize} mt-0.5`}>
+        {formatPoints(member.score)} {t('groups.pointsAbbr')}
+      </div>
+    </div>
+  );
+}
+
+/* ─── Group Overview (mockup: groups_member_dashboard.html) ─── */
 
 function GroupOverview({ groupId }: { groupId: string }) {
   const { t } = useTranslation();
+  const { user } = useAuth();
+  const [period, setPeriod] = useState<'weekly' | 'monthly' | 'all_time'>('weekly');
 
   const {
-    data: group,
+    data: groupRes,
     isLoading: groupLoading,
     isError: groupError,
-  } = useQuery<GroupInfo>({
+  } = useQuery<{ success: boolean; group: GroupInfo }>({
     queryKey: ['group', groupId],
     queryFn: () => api.get(`/api/groups/${groupId}`).then((r) => r.data),
   });
 
-  // BE wraps responses: GET /leaderboard → {success, leaderboard: [...]};
-  // GET /announcements → {success, data: {items: [...], total, hasMore}}.
-  // Unwrap to array so .map / .slice work without defensive checks downstream.
+  const group = groupRes?.group;
+
   const { data: leaderboard } = useQuery<LeaderboardMember[]>({
-    queryKey: ['group-leaderboard', groupId],
+    queryKey: ['group-leaderboard', groupId, period],
     queryFn: () =>
-      api.get(`/api/groups/${groupId}/leaderboard?period=weekly`).then((r) => r.data?.leaderboard ?? []),
+      api
+        .get(`/api/groups/${groupId}/leaderboard?period=${period}`)
+        .then((r) => (r.data?.leaderboard ?? r.data?.entries ?? []) as LeaderboardMember[]),
     enabled: !!group,
   });
 
   const { data: announcements } = useQuery<Announcement[]>({
     queryKey: ['group-announcements', groupId],
-    queryFn: () => api.get(`/api/groups/${groupId}/announcements`).then((r) => r.data?.data?.items ?? []),
+    queryFn: () =>
+      api
+        .get(`/api/groups/${groupId}/announcements`)
+        .then((r) => r.data?.data?.items ?? r.data?.announcements ?? []),
     enabled: !!group,
   });
 
@@ -165,7 +396,7 @@ function GroupOverview({ groupId }: { groupId: string }) {
 
   if (groupError || !group) {
     return (
-      <div className="glass-card rounded-2xl p-10 text-center" data-testid="group-error">
+      <div className="max-w-5xl mx-auto bg-[rgba(50,52,64,0.4)] rounded-2xl p-10 text-center" data-testid="group-error">
         <span className="material-symbols-outlined text-5xl text-error mb-4 block">error</span>
         <p className="text-on-surface font-bold text-lg mb-2">{t('groups.errorLoadGroup')}</p>
         <p className="text-on-surface-variant text-sm">{t('groups.errorLoadGroupDesc')}</p>
@@ -173,220 +404,265 @@ function GroupOverview({ groupId }: { groupId: string }) {
     );
   }
 
-  const top3 = (leaderboard || []).slice(0, 3);
-  const rest = (leaderboard || []).slice(3);
+  // Member count: prefer fresh API field; fallback to nested members.length
+  const memberCount = group.memberCount ?? group.members?.length ?? 0;
+  const groupName = group.name?.trim() || t('groups.untitledGroup');
+  const leader = group.members?.find((m) => m.role === 'LEADER');
+
+  const top3: Array<LeaderboardMember | null> = [
+    leaderboard?.[0] ?? null,
+    leaderboard?.[1] ?? null,
+    leaderboard?.[2] ?? null,
+  ];
+  const rest = (leaderboard ?? []).slice(3, 7);
+  const currentUserId = user?.email; // placeholder — better from /me but unavailable here
 
   return (
-    <div className="max-w-6xl mx-auto space-y-12" data-testid="group-overview">
-      {/* ── Group Hero Header ── */}
-      <header className="relative rounded-[2.5rem] overflow-hidden bg-surface-container-lowest h-72 flex flex-col justify-end p-10 group shadow-2xl">
-        <div className="absolute inset-0 z-0">
-          {group.bannerUrl && (
-            <img
-              alt="Group Banner"
-              className="w-full h-full object-cover opacity-30 transition-transform duration-1000 group-hover:scale-110"
-              src={group.bannerUrl}
-            />
+    <div className="max-w-5xl mx-auto space-y-4" data-testid="group-overview">
+      {/* ── Header ── */}
+      <header className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-[rgba(232,168,50,0.2)] rounded-[14px] p-4 flex items-center gap-4">
+        <div className="w-[60px] h-[60px] rounded-[14px] bg-[rgba(232,168,50,0.15)] border-[1.5px] border-[rgba(232,168,50,0.4)] flex items-center justify-center flex-shrink-0">
+          {group.avatarUrl || group.logoUrl ? (
+            <img alt={groupName} src={group.avatarUrl ?? group.logoUrl} className="w-full h-full rounded-[14px] object-cover" />
+          ) : (
+            <span className="text-[28px]">⛪</span>
           )}
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
         </div>
-        <div className="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-8">
-          <div className="flex items-center gap-8">
-            <div className="w-24 h-24 md:w-32 md:h-32 rounded-[2rem] gold-gradient p-1 shadow-2xl">
-              <div className="w-full h-full rounded-[1.75rem] bg-surface-container flex items-center justify-center overflow-hidden">
-                {group.logoUrl ? (
-                  <img alt="Group Logo" className="w-full h-full object-cover" src={group.logoUrl} />
-                ) : (
-                  <span className="material-symbols-outlined text-5xl text-secondary">church</span>
-                )}
-              </div>
-            </div>
-            <div>
-              <h1 className="text-3xl md:text-5xl font-black tracking-tight text-on-surface mb-3">
-                {group.name}
-              </h1>
-              <div className="flex flex-wrap gap-5 text-xs font-black tracking-widest uppercase text-secondary">
-                <span className="flex items-center gap-2 bg-surface-container/50 px-3 py-1 rounded-full">
-                  <span className="material-symbols-outlined text-[16px]">groups</span>{' '}
-                  {group.memberCount ?? 0} {t('groups.members')}
-                </span>
-                {group.totalPoints != null && (
-                  <span className="flex items-center gap-2 bg-surface-container/50 px-3 py-1 rounded-full">
-                    <span className="material-symbols-outlined text-[16px]">workspace_premium</span>{' '}
-                    {formatPoints(group.totalPoints)} {t('groups.points')}
-                  </span>
-                )}
-                {group.location && (
-                  <span className="flex items-center gap-2 bg-surface-container/50 px-3 py-1 rounded-full text-on-surface-variant">
-                    <span className="material-symbols-outlined text-[16px]">location_on</span>{' '}
-                    {group.location}
-                  </span>
-                )}
-              </div>
-            </div>
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 flex-wrap" data-testid="group-name-heading">
+            <h2 className="text-on-surface text-[18px] font-medium m-0 truncate">{groupName}</h2>
+            {group.isPublic !== false ? (
+              <span className="bg-[rgba(99,153,34,0.15)] text-[#97C459] px-2 py-0.5 rounded-full text-[9px] font-medium">
+                {t('groups.publicBadge')}
+              </span>
+            ) : (
+              <span className="bg-white/[0.06] text-on-surface-variant px-2 py-0.5 rounded-full text-[9px] font-medium">
+                {t('groups.privateBadge')}
+              </span>
+            )}
           </div>
+          <div className="text-on-surface/55 text-[12px] mt-1 flex items-center gap-3 flex-wrap">
+            <span>👥 {memberCount} {t('groups.members')}</span>
+            {leader && (
+              <>
+                <span>·</span>
+                <span>👑 {leader.name}</span>
+              </>
+            )}
+            {group.location && (
+              <>
+                <span>·</span>
+                <span>📍 {group.location}</span>
+              </>
+            )}
+          </div>
+        </div>
+        <div className="flex gap-2 flex-shrink-0">
+          <Link
+            to={`/groups/${group.id}`}
+            className="bg-white/5 text-on-surface/70 border-[0.5px] border-white/10 rounded-lg px-3.5 py-2 text-[11px] font-medium hover:bg-white/10 transition-all"
+          >
+            🔗 {t('groups.invite')}
+          </Link>
+          <Link
+            to={`/groups/${group.id}`}
+            className="bg-white/5 text-on-surface/70 border-[0.5px] border-white/10 rounded-lg px-3.5 py-2 text-[11px] font-medium hover:bg-white/10 transition-all"
+          >
+            ⋯
+          </Link>
         </div>
       </header>
 
-      {/* ── Bento Grid Content ── */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-        {/* Left Column: Leaderboard */}
-        <section className="lg:col-span-2 space-y-10">
-          <div className="bg-surface-container rounded-[2.5rem] p-10 shadow-xl border border-white/5">
-            <div className="flex items-center justify-between mb-10">
-              <h2 className="text-2xl font-black tracking-tight flex items-center gap-3">
-                <span className="material-symbols-outlined text-secondary text-3xl">leaderboard</span>
-                {t('groups.leaderboard')}
-              </h2>
-              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant bg-surface-container-high px-4 py-2 rounded-full">
-                {t('groups.thisWeek')}
-              </span>
+      {/* ── Two-column body ── */}
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-4">
+        {/* Main column */}
+        <div className="flex flex-col gap-3">
+          {/* Leaderboard section */}
+          <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-[rgba(232,168,50,0.15)] rounded-xl p-5">
+            <div className="flex justify-between items-center mb-4">
+              <div className="text-on-surface text-[13px] font-medium">📊 {t('groups.leaderboard')}</div>
+              <div className="inline-flex bg-black/30 rounded-md p-0.5">
+                {(['weekly', 'monthly', 'all_time'] as const).map((p) => (
+                  <button
+                    key={p}
+                    onClick={() => setPeriod(p)}
+                    className={`border-0 px-2.5 py-1 rounded text-[10px] font-medium cursor-pointer transition-all ${
+                      period === p
+                        ? 'bg-secondary text-on-secondary'
+                        : 'bg-transparent text-on-surface/55'
+                    }`}
+                  >
+                    {p === 'weekly' ? t('groups.thisWeek') : p === 'monthly' ? t('groups.month') : t('groups.everytime')}
+                  </button>
+                ))}
+              </div>
             </div>
 
-            {(!leaderboard || leaderboard.length === 0) && (
-              <p className="text-center text-on-surface-variant py-8">{t('groups.noLeaderboardData')}</p>
-            )}
-
-            {top3.length > 0 && (
-              <div className="space-y-6">
-                {/* Top 3 Featured */}
-                <div className="grid grid-cols-3 gap-6 mb-12 items-end">
-                  {/* Rank 2 (left) */}
-                  {top3.length > 1 && (
-                    <div className="bg-surface-container-low rounded-3xl p-6 flex flex-col items-center text-center border-b-4 border-secondary/10 transition-transform hover:translate-y-[-4px]">
-                      <div className="relative mb-4">
-                        <div className="w-16 h-16 rounded-full border-2 border-secondary overflow-hidden shadow-lg bg-surface-container-highest">
-                          {top3[1].avatarUrl ? (
-                            <img alt="Rank 2" src={top3[1].avatarUrl} className="w-full h-full object-cover" />
-                          ) : (
-                            <span className="material-symbols-outlined text-2xl text-on-surface-variant flex items-center justify-center w-full h-full">person</span>
-                          )}
-                        </div>
-                        <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-secondary rounded-full flex items-center justify-center text-[10px] font-black text-on-secondary shadow-md">
-                          2
-                        </div>
-                      </div>
-                      <p className="text-sm font-black truncate w-full mb-1">{top3[1].name}</p>
-                      <p className="text-xs text-secondary font-black">{formatPoints(top3[1].points)}</p>
-                    </div>
-                  )}
-
-                  {/* Rank 1 (center, elevated) */}
-                  <div className="bg-surface-container-high rounded-[2rem] p-8 flex flex-col items-center text-center border-b-8 border-secondary shadow-2xl relative z-10 scale-110 transition-transform hover:scale-[1.12]">
-                    <div className="relative mb-5">
-                      <div className="w-20 h-20 rounded-full border-4 border-secondary overflow-hidden shadow-xl bg-surface-container-highest">
-                        {top3[0].avatarUrl ? (
-                          <img alt="Rank 1" src={top3[0].avatarUrl} className="w-full h-full object-cover" />
-                        ) : (
-                          <span className="material-symbols-outlined text-3xl text-on-surface-variant flex items-center justify-center w-full h-full">person</span>
-                        )}
-                      </div>
-                      <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-sm font-black text-on-secondary shadow-lg ring-4 ring-surface-container-high">
-                        1
-                      </div>
-                    </div>
-                    <p className="text-base font-black truncate w-full mb-1">{top3[0].name}</p>
-                    <p className="text-xs text-secondary font-black uppercase tracking-widest">
-                      {formatPoints(top3[0].points)}
-                    </p>
-                  </div>
-
-                  {/* Rank 3 (right) */}
-                  {top3.length > 2 && (
-                    <div className="bg-surface-container-low rounded-3xl p-6 flex flex-col items-center text-center border-b-4 border-secondary/10 transition-transform hover:translate-y-[-4px]">
-                      <div className="relative mb-4">
-                        <div className="w-16 h-16 rounded-full border-2 border-tertiary overflow-hidden shadow-lg bg-surface-container-highest">
-                          {top3[2].avatarUrl ? (
-                            <img alt="Rank 3" src={top3[2].avatarUrl} className="w-full h-full object-cover" />
-                          ) : (
-                            <span className="material-symbols-outlined text-2xl text-on-surface-variant flex items-center justify-center w-full h-full">person</span>
-                          )}
-                        </div>
-                        <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-tertiary rounded-full flex items-center justify-center text-[10px] font-black text-on-tertiary shadow-md">
-                          3
-                        </div>
-                      </div>
-                      <p className="text-sm font-black truncate w-full mb-1">{top3[2].name}</p>
-                      <p className="text-xs text-tertiary font-black">{formatPoints(top3[2].points)}</p>
-                    </div>
-                  )}
-                </div>
-
-                {/* List items (rank 4+) */}
-                {rest.length > 0 && (
-                  <div className="space-y-4">
-                    {rest.map((member) => (
-                      <div
-                        key={member.userId}
-                        data-testid="group-leaderboard-row"
-                        className="flex items-center justify-between p-6 bg-surface-container-low rounded-2xl hover:bg-surface-container-high transition-all border border-transparent hover:border-white/5"
-                      >
-                        <div className="flex items-center gap-6">
-                          <span className="text-xs font-black text-on-surface-variant w-4">
-                            {member.rank}
-                          </span>
-                          <div className="w-12 h-12 rounded-xl overflow-hidden shadow-inner bg-surface-container-highest">
-                            {member.avatarUrl ? (
-                              <img alt={member.name} src={member.avatarUrl} className="w-full h-full object-cover" />
-                            ) : (
-                              <span className="material-symbols-outlined text-xl text-on-surface-variant flex items-center justify-center w-full h-full">person</span>
-                            )}
-                          </div>
-                          <span className="font-bold text-base">{member.name}</span>
-                        </div>
-                        <span className="text-base font-black text-secondary">{formatPoints(member.points)}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
-        </section>
-
-        {/* Right Column: Announcements */}
-        <aside className="space-y-10">
-          <section className="bg-surface-container rounded-[2.5rem] p-10 overflow-hidden shadow-xl border border-white/5">
-            <div className="flex items-center justify-between mb-8">
-              <h2 className="text-2xl font-black tracking-tight">{t('groups.announcements')}</h2>
+            {/* Podium 3-slot */}
+            <div className="grid grid-cols-3 gap-2 items-end mb-4">
+              <PodiumSlot
+                member={top3[1]}
+                rank={2}
+                isCurrentUser={!!top3[1] && top3[1].userId === currentUserId}
+              />
+              <PodiumSlot
+                member={top3[0]}
+                rank={1}
+                elevated
+                isCurrentUser={!!top3[0] && top3[0].userId === currentUserId}
+              />
+              <PodiumSlot
+                member={top3[2]}
+                rank={3}
+                isCurrentUser={!!top3[2] && top3[2].userId === currentUserId}
+              />
             </div>
-            <div className="space-y-10">
-              {/* Scripture Quote Block */}
-              <div className="relative bg-surface-container-low p-6 rounded-3xl border border-white/5">
-                <div className="absolute left-0 top-6 bottom-6 w-1.5 bg-secondary rounded-full shadow-[0_0_10px_rgba(232,168,50,0.5)]" />
-                <p className="text-sm font-medium italic text-on-surface/90 leading-relaxed mb-4">
-                  {t('groups.scriptureQuote')}
-                </p>
-                <p className="text-[10px] font-black uppercase tracking-widest text-secondary">
-                  {t('groups.scriptureRef')}
-                </p>
-              </div>
 
-              {(!announcements || announcements.length === 0) && (
-                <p className="text-center text-on-surface-variant py-4 text-sm">
-                  {t('groups.noAnnouncements')}
+            {/* Mini list (rank 4-7) */}
+            <div className="flex flex-col gap-1">
+              {rest.length === 0 && top3.every((m) => m === null) && (
+                <p className="text-center text-on-surface-variant py-6 text-[12px]">
+                  {t('groups.noLeaderboardData')}
                 </p>
               )}
-
-              {announcements &&
-                announcements.map((item) => (
-                  <article key={item.id} className="space-y-3 group cursor-pointer">
-                    <div className="flex items-center gap-2">
-                      <span
-                        className={`w-2 h-2 rounded-full ${
-                          item.isNew ? 'bg-secondary animate-pulse' : 'bg-on-surface-variant/30'
-                        }`}
-                      />
-                      <span className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant">
-                        {item.author} &bull; {new Date(item.createdAt).toLocaleDateString()}
-                      </span>
+              {rest.map((member, idx) => {
+                const tier = getTierByPoints(member.score);
+                const tierName = t(tier.nameKey);
+                const isCurrent = member.userId === currentUserId;
+                const rank = member.rank ?? idx + 4;
+                return (
+                  <div
+                    key={member.userId}
+                    data-testid="group-leaderboard-row"
+                    className={`rounded-md px-3 py-2 flex items-center gap-2.5 border-[0.5px] ${
+                      isCurrent
+                        ? 'bg-[rgba(232,168,50,0.08)] border-[rgba(232,168,50,0.4)]'
+                        : 'bg-white/[0.03] border-white/[0.04]'
+                    }`}
+                  >
+                    <div
+                      className={`text-[11px] font-medium w-[18px] text-center ${
+                        isCurrent ? 'text-secondary' : 'text-on-surface/50'
+                      }`}
+                    >
+                      {rank}
                     </div>
-                    <h4 className="font-black text-base group-hover:text-secondary transition-colors">
-                      {item.title}
-                    </h4>
-                    <p className="text-sm text-on-surface-variant leading-relaxed">{item.body}</p>
+                    <div className="w-[26px] h-[26px] rounded-full bg-white/10 flex items-center justify-center text-[10px] font-medium text-on-surface">
+                      {member.avatarUrl ? (
+                        <img alt={member.name} src={member.avatarUrl} className="w-full h-full rounded-full object-cover" />
+                      ) : (
+                        getInitial(member.name)
+                      )}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-on-surface text-[11px] truncate">
+                        {member.name}
+                        {isCurrent && <span className="ml-1 font-medium">{t('groups.memberLabel')}</span>}
+                      </div>
+                      <div className="text-on-surface/40 text-[9px]" style={{ color: tier.colorHex }}>
+                        {tierName}
+                      </div>
+                    </div>
+                    <div className="text-secondary text-[11px] font-medium">{formatPoints(member.score)} {t('groups.pointsAbbr')}</div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {memberCount > 0 && (
+              <div className="text-center mt-3">
+                <Link
+                  to={`/groups/${group.id}?tab=members`}
+                  className="text-[rgba(232,168,50,0.7)] text-[11px] hover:text-secondary transition-colors"
+                >
+                  {t('groups.viewAllMembers', { count: memberCount })} →
+                </Link>
+              </div>
+            )}
+          </section>
+
+          {/* Quiz sets section (placeholder — wire to /api/groups/{id}/quiz-sets) */}
+          <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-white/[0.06] rounded-xl p-5">
+            <div className="flex justify-between items-center mb-3">
+              <div className="text-on-surface text-[13px] font-medium">📚 {t('groups.quizSetsSection')}</div>
+              <Link
+                to={`/groups/${group.id}?tab=quizsets`}
+                className="text-[rgba(232,168,50,0.7)] text-[11px] hover:text-secondary"
+              >
+                {t('groups.viewAll')} →
+              </Link>
+            </div>
+            <p className="text-on-surface-variant text-[11px] py-2">
+              {t('groups.noQuizSets')}
+            </p>
+          </section>
+        </div>
+
+        {/* Sidebar column */}
+        <aside className="flex flex-col gap-3">
+          {/* Announcements */}
+          <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-white/[0.06] rounded-xl p-4">
+            <div className="flex justify-between items-center mb-3">
+              <div className="text-on-surface text-[12px] font-medium">📢 {t('groups.announcements')}</div>
+              <Link
+                to={`/groups/${group.id}?tab=announcements`}
+                className="text-[rgba(232,168,50,0.7)] text-[10px] hover:text-secondary"
+              >
+                {t('groups.viewAll')} →
+              </Link>
+            </div>
+            {(!announcements || announcements.length === 0) && (
+              <p className="text-center text-on-surface-variant py-3 text-[11px]">
+                {t('groups.noAnnouncements')}
+              </p>
+            )}
+            <div className="flex flex-col gap-2">
+              {(announcements ?? []).slice(0, 3).map((item) => {
+                const isLeader = (item.authorRole ?? '').toUpperCase() === 'LEADER';
+                return (
+                  <article
+                    key={item.id}
+                    className={`rounded-[4px] px-3 py-2.5 ${
+                      isLeader
+                        ? 'bg-[rgba(232,168,50,0.05)] border-l-2 border-secondary'
+                        : 'bg-[rgba(50,52,64,0.5)] border-[0.5px] border-white/[0.04]'
+                    }`}
+                  >
+                    <div className="flex justify-between items-center mb-1.5">
+                      <div className={`text-[10px] font-medium ${isLeader ? 'text-secondary' : 'text-on-surface/70'}`}>
+                        {isLeader ? '👑' : '🛡️'} {item.author}
+                      </div>
+                      <div className="text-on-surface/40 text-[9px]">
+                        {new Date(item.createdAt).toLocaleDateString()}
+                      </div>
+                    </div>
+                    <div className="text-on-surface/85 text-[11px] leading-relaxed">{item.body}</div>
                   </article>
-                ))}
+                );
+              })}
+            </div>
+          </section>
+
+          {/* Group streak widget */}
+          <section className="bg-[rgba(99,153,34,0.06)] border-[0.5px] border-[rgba(99,153,34,0.25)] rounded-xl p-4">
+            <div className="flex items-center gap-1.5 mb-2.5">
+              <span className="text-[14px]">🔥</span>
+              <span className="text-[rgba(151,196,89,0.85)] text-[11px] font-medium tracking-wider">
+                {t('groups.groupStreak')}
+              </span>
+            </div>
+            <div className="text-[#97C459] text-[32px] font-medium leading-none">
+              0<span className="text-[rgba(151,196,89,0.5)] text-[14px] ml-1">{t('groups.daysShort')}</span>
+            </div>
+            <div className="text-on-surface/55 text-[11px] mt-1.5 leading-snug">{t('groups.groupStreakDesc')}</div>
+            <div className="mt-2.5 h-1 bg-white/[0.06] rounded-sm overflow-hidden">
+              <div
+                className="h-full rounded-sm bg-gradient-to-r from-[#97C459] to-secondary"
+                style={{ width: `0%` }}
+              />
+            </div>
+            <div className="text-on-surface/40 text-[10px] mt-1">
+              {t('groups.groupStreakProgress', { active: 0, total: memberCount })}
             </div>
           </section>
         </aside>
@@ -417,9 +693,40 @@ const Groups: React.FC = () => {
   const [joinLoading, setJoinLoading] = useState(false);
   const [joinError, setJoinError] = useState('');
 
-  // Check if user has a saved group
-  const savedGroups = getSavedGroups();
-  const myGroupId = savedGroups.length > 0 ? savedGroups[0].id : null;
+  // Source of truth: backend /api/groups/me. localStorage = cache only.
+  const {
+    data: myGroupRes,
+    isLoading: myGroupLoading,
+    refetch: refetchMyGroup,
+  } = useQuery<MyGroupResponse>({
+    queryKey: ['my-group'],
+    queryFn: () =>
+      api
+        .get('/api/groups/me')
+        .then((r) => r.data as MyGroupResponse)
+        .catch(() => ({ hasGroup: false })),
+    enabled: isAuthenticated,
+    staleTime: 30_000,
+  });
+
+  // Reconcile localStorage cache with backend truth
+  useEffect(() => {
+    if (!myGroupRes) return;
+    if (myGroupRes.hasGroup && myGroupRes.groupId && myGroupRes.groupName) {
+      saveGroup({ id: myGroupRes.groupId, name: myGroupRes.groupName });
+    } else if (myGroupRes.hasGroup === false) {
+      // Backend says no group → clear stale localStorage
+      const saved = getSavedGroups();
+      if (saved.length > 0) clearSavedGroups();
+    }
+  }, [myGroupRes]);
+
+  const myGroupId = myGroupRes?.hasGroup ? myGroupRes.groupId ?? null : null;
+
+  const openJoinModal = (prefill?: string) => {
+    if (prefill) setJoinCode(prefill);
+    setShowJoinModal(true);
+  };
 
   const handleCreate = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -434,6 +741,7 @@ const Groups: React.FC = () => {
       if (res.data.success) {
         const group = res.data.group;
         saveGroup({ id: group.id, name: group.name, code: group.code });
+        await refetchMyGroup();
         setShowCreateModal(false);
         setCreateName('');
         setCreateDesc('');
@@ -458,11 +766,11 @@ const Groups: React.FC = () => {
         code: joinCode.trim().toUpperCase(),
       });
       if (res.data.success) {
-        const group = res.data.group;
-        saveGroup({ id: group.id, name: group.name, code: group.code });
+        await refetchMyGroup();
         setShowJoinModal(false);
         setJoinCode('');
-        navigate(`/groups/${group.id}`);
+        const groupId = res.data.data?.groupId ?? res.data.group?.id;
+        if (groupId) navigate(`/groups/${groupId}`);
       } else {
         setJoinError(res.data.message || t('groups.joinFailed'));
       }
@@ -474,15 +782,16 @@ const Groups: React.FC = () => {
   };
 
   if (!isAuthenticated) return null;
+  if (myGroupLoading) return <div className="px-6 py-8"><GroupSkeleton /></div>;
 
   return (
-    <div data-testid="groups-page">
+    <div className="px-4 py-6" data-testid="groups-page">
       {myGroupId ? (
         <GroupOverview groupId={myGroupId} />
       ) : (
         <NoGroupView
           onCreateClick={() => setShowCreateModal(true)}
-          onJoinClick={() => setShowJoinModal(true)}
+          onJoinClick={openJoinModal}
         />
       )}
 
@@ -493,25 +802,25 @@ const Groups: React.FC = () => {
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setShowCreateModal(false)}
           />
-          <div className="relative bg-surface-container rounded-[2rem] p-10 w-full max-w-md mx-4 border border-white/10 shadow-2xl">
+          <div className="relative bg-surface-container rounded-2xl p-8 w-full max-w-md mx-4 border border-white/10 shadow-2xl">
             <button
-              className="absolute top-6 right-6 text-on-surface-variant hover:text-on-surface transition-colors"
+              className="absolute top-5 right-5 text-on-surface-variant hover:text-on-surface transition-colors"
               onClick={() => setShowCreateModal(false)}
             >
               <span className="material-symbols-outlined">close</span>
             </button>
-            <h3 className="text-xl font-black mb-6 flex items-center gap-3">
+            <h3 className="text-lg font-medium mb-5 flex items-center gap-2">
               <span className="material-symbols-outlined text-secondary">add_circle</span>
               {t('groups.createGroupModal')}
             </h3>
-            <form onSubmit={handleCreate} className="space-y-5" data-testid="groups-create-form">
+            <form onSubmit={handleCreate} className="space-y-4" data-testid="groups-create-form">
               <div>
-                <label className="block text-xs font-black uppercase tracking-widest text-on-surface-variant mb-2">
+                <label className="block text-[11px] font-medium uppercase tracking-wider text-on-surface-variant mb-1.5">
                   {t('groups.groupName')} *
                 </label>
                 <input
                   data-testid="groups-create-name-input"
-                  className="w-full bg-surface-container-low border border-white/10 rounded-xl px-5 py-4 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-secondary/50 transition-colors"
+                  className="w-full bg-surface-container-low border border-white/10 rounded-lg px-4 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-secondary/50"
                   value={createName}
                   onChange={(e) => setCreateName(e.target.value)}
                   placeholder={t('groups.groupNamePlaceholder')}
@@ -520,12 +829,12 @@ const Groups: React.FC = () => {
                 />
               </div>
               <div>
-                <label className="block text-xs font-black uppercase tracking-widest text-on-surface-variant mb-2">
+                <label className="block text-[11px] font-medium uppercase tracking-wider text-on-surface-variant mb-1.5">
                   {t('groups.description')}
                 </label>
                 <textarea
                   data-testid="group-description-input"
-                  className="w-full bg-surface-container-low border border-white/10 rounded-xl px-5 py-4 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-secondary/50 transition-colors resize-none h-24"
+                  className="w-full bg-surface-container-low border border-white/10 rounded-lg px-4 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-secondary/50 resize-none h-20"
                   value={createDesc}
                   onChange={(e) => setCreateDesc(e.target.value)}
                   placeholder={t('groups.descriptionPlaceholder')}
@@ -536,7 +845,7 @@ const Groups: React.FC = () => {
               <button
                 type="submit"
                 data-testid="groups-create-submit-btn"
-                className="w-full py-4 gold-gradient text-on-secondary rounded-xl font-black text-sm uppercase tracking-widest shadow-lg hover:shadow-[0_4px_25px_rgba(232,168,50,0.4)] transition-all active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-3 gold-gradient text-on-secondary rounded-lg font-medium text-sm shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={createLoading || !createName.trim()}
               >
                 {createLoading ? t('groups.creating') : t('groups.createGroupBtn')}
@@ -553,24 +862,24 @@ const Groups: React.FC = () => {
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setShowJoinModal(false)}
           />
-          <div className="relative bg-surface-container rounded-[2rem] p-10 w-full max-w-md mx-4 border border-white/10 shadow-2xl">
+          <div className="relative bg-surface-container rounded-2xl p-8 w-full max-w-md mx-4 border border-white/10 shadow-2xl">
             <button
-              className="absolute top-6 right-6 text-on-surface-variant hover:text-on-surface transition-colors"
+              className="absolute top-5 right-5 text-on-surface-variant hover:text-on-surface transition-colors"
               onClick={() => setShowJoinModal(false)}
             >
               <span className="material-symbols-outlined">close</span>
             </button>
-            <h3 className="text-xl font-black mb-6 flex items-center gap-3">
+            <h3 className="text-lg font-medium mb-5 flex items-center gap-2">
               <span className="material-symbols-outlined text-tertiary">search</span>
               {t('groups.joinGroupModal')}
             </h3>
-            <form onSubmit={handleJoin} className="space-y-5">
+            <form onSubmit={handleJoin} className="space-y-4">
               <div>
-                <label className="block text-xs font-black uppercase tracking-widest text-on-surface-variant mb-2">
+                <label className="block text-[11px] font-medium uppercase tracking-wider text-on-surface-variant mb-1.5">
                   {t('groups.inviteCode')}
                 </label>
                 <input
-                  className="w-full bg-surface-container-low border border-white/10 rounded-xl px-5 py-4 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-secondary/50 transition-colors text-center text-lg tracking-[0.1em]"
+                  className="w-full bg-surface-container-low border border-white/10 rounded-lg px-4 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-secondary/50 text-center text-base tracking-widest"
                   value={joinCode}
                   onChange={(e) => setJoinCode(e.target.value.toUpperCase())}
                   placeholder={t('groups.inviteCodePlaceholder')}
@@ -581,7 +890,7 @@ const Groups: React.FC = () => {
               {joinError && <p className="text-sm text-error font-bold">{joinError}</p>}
               <button
                 type="submit"
-                className="w-full py-4 gold-gradient text-on-secondary rounded-xl font-black text-sm uppercase tracking-widest shadow-lg hover:shadow-[0_4px_25px_rgba(232,168,50,0.4)] transition-all active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-3 gold-gradient text-on-secondary rounded-lg font-medium text-sm shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={joinLoading || !joinCode.trim()}
               >
                 {joinLoading ? t('groups.joining') : t('groups.joinBtn')}
