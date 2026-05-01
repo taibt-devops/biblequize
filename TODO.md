@@ -111,28 +111,31 @@
   - [x] Tie-break info "{questions} câu"
   - [x] data-testid: leaderboard-podium, podium-rank-{1,2,3}
   - [x] Tests: 18/18 pass (was 16, +2 LB-1.4)
-  - [ ] Commit: `style(leaderboard): redesign podium per mockup (LB-1.4)` — PENDING
+  - [x] Commit: `style(leaderboard): redesign podium per mockup (LB-1.4)` (8254ad2)
 
-### Task LB-1.5: Enrich list rows per mockup (LB-P2-1) [ ] TODO
-- Status: [ ] TODO
-- File(s): `apps/web/src/pages/Leaderboard.tsx` (line 145-211 list section)
-- Approach (theo mockup desktop line 94-190):
-  - Mỗi row hiện: rank · avatar (tier-colored) · name · tier badge color · 🔥 streak · ▲▼ trend · điểm
-  - Badge "BẠN" + gold bg cho current user
-  - Footer link "Xem 247 người chơi →" nếu list > 8
-- Data needs:
-  - `entry.points` (đã có)
-  - `entry.tier` hoặc derive từ getTierByPoints(entry.points) (FE compute OK, KHÔNG cần BE thêm field)
-  - `entry.streak` — BE field MISSING — defer hoặc add to query
-  - `entry.trend` — BE field MISSING — defer (cần snapshot hôm trước)
+### Task LB-1.5: Enrich list rows per mockup (LB-P2-1) [x] DONE 2026-05-01
+- Status: [x] DONE — pending commit
+- File(s):
+  - `apps/web/src/pages/Leaderboard.tsx` — extracted `LeaderboardListRow` helper component (handles isMe + sticky cases); added tier badge color, tier name, streak, trend rendering
+  - `apps/web/src/pages/__tests__/Leaderboard.test.tsx` — +3 LB-1.5 tests
+- Changes:
+  - Extracted `<LeaderboardListRow>` helper (87 LOC) — unifies regular row + isMe + sticky into one component with conditional styling
+  - Each row now shows: rank · avatar (tier-colored bg) · {name + tier name + 🔥streak} · ▲▼trend · points
+  - Streak: graceful degrade — hide when `entry.streak` undefined or 0
+  - Trend: graceful degrade — hide when `entry.trend` undefined or 0; ▲ blue / ▼ red
+  - Tier name color = `tier.colorHex`
+  - Avatar background = tier color (consistent với podium LB-1.4)
+  - File: 379 LOC total (main component ~273, helper ~88) — both under 300 LOC component limit
+- Backend deferred:
+  - `entry.streak` and `entry.trend` fields NOT yet in BE response (LeaderboardController mapLeaderboardRows) → FE handles missing gracefully. Add to BE in LB-2 when available.
 - Checklist:
-  - [ ] Render rich row layout (tier badge color via colorHex)
-  - [ ] Streak: hide if BE doesn't return field (graceful degradation)
-  - [ ] Trend: hide if BE doesn't return field (graceful degradation)
-  - [ ] Footer "Xem N người chơi →" với link to /leaderboard/full hoặc paginate trong-place
-  - [ ] Test: render row variations (with/without streak/trend)
-  - [ ] Vitest pass
-  - [ ] Commit: `style(leaderboard): enrich list rows per mockup (LB-1.5)`
+  - [x] Render rich row layout (tier badge color via colorHex)
+  - [x] Streak graceful degradation
+  - [x] Trend graceful degradation
+  - [x] Test: 21/21 pass (was 18, +3 LB-1.5)
+  - [x] Tầng 2: 473 pass (35 fails pre-existing Ranked baseline drift)
+  - [⏸️] Footer "Xem N người chơi →" — defer to LB-2 (not in current mockup ref)
+  - [ ] Commit: `style(leaderboard): enrich list rows + extract LeaderboardListRow helper (LB-1.5)` — PENDING
 
 ### Task LB-1.6: Sidebar widgets per mockup (LB-P3-1 partial) [ ] TODO
 - Status: [ ] TODO — defer if AppLayout sidebar không support context-specific widgets

@@ -209,60 +209,32 @@ export default function Leaderboard() {
             {rest.map((entry: any, idx: number) => {
               const rank = idx + 4
               const isMe = myUserId != null && entry.userId === myUserId
-              return isMe ? (
-                <div key={entry.userId || rank} className="flex items-center gap-4 p-6 bg-[#e8a832] rounded-2xl border-l-8 border-background/20 shadow-[0_15px_30px_rgba(232,168,50,0.3)]">
-                  <div className="w-8 text-center font-black text-[#11131e]">{rank}</div>
-                  <div className="w-12 h-12 rounded-full border-2 border-[#11131e] shadow-lg overflow-hidden bg-[#11131e]/10 flex items-center justify-center text-[#11131e] font-bold">
-                    {entry.avatarUrl ? <img alt="Me" className="w-full h-full object-cover" src={entry.avatarUrl} /> : entry.name?.charAt(0)}
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2">
-                      <h3 className="font-black text-sm text-[#11131e]">{entry.name}</h3>
-                      <span className="bg-[#11131e]/10 text-[#11131e] text-[8px] font-black px-1.5 py-0.5 rounded uppercase tracking-tighter">{t('leaderboard.me')}</span>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-[#11131e] font-black text-lg">{(entry.points ?? 0).toLocaleString()}</p>
-                    <p className="text-[10px] uppercase text-[#11131e]/60 font-bold">{t('leaderboard.points')}</p>
-                  </div>
-                </div>
-              ) : (
-                <div key={entry.userId || rank} className="flex items-center gap-4 p-5 bg-surface-container-low rounded-2xl hover:bg-surface-container-high transition-all group">
-                  <div className="w-8 text-center font-black text-on-surface-variant group-hover:text-on-surface transition-colors">{rank}</div>
-                  <div className="relative">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-surface-container flex items-center justify-center text-sm font-bold text-on-surface-variant">
-                      {entry.avatarUrl ? <img alt="Player" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src={entry.avatarUrl} /> : entry.name?.charAt(0)}
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-bold text-sm text-on-surface">{entry.name}</h3>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-on-surface font-black text-sm">{(entry.points ?? 0).toLocaleString()}</p>
-                    <p className="text-[10px] uppercase text-on-surface-variant">{t('leaderboard.points')}</p>
-                  </div>
-                </div>
+              return (
+                <LeaderboardListRow
+                  key={entry.userId || rank}
+                  rank={rank}
+                  name={entry.name}
+                  points={entry.points}
+                  avatarUrl={entry.avatarUrl}
+                  streak={entry.streak}
+                  trend={entry.trend}
+                  isMe={isMe}
+                />
               )
             })}
 
             {/* My rank sticky — only when current user NOT in displayed list (around-me pattern) */}
             {showMyRankSticky && (
-              <div data-testid="leaderboard-my-rank-sticky" className="flex items-center gap-4 p-6 bg-[#e8a832] rounded-2xl border-l-8 border-background/20 shadow-[0_15px_30px_rgba(232,168,50,0.3)]">
-                <div className="w-8 text-center font-black text-[#11131e]">{myRank.rank ?? '—'}</div>
-                <div className="w-12 h-12 rounded-full border-2 border-[#11131e] shadow-lg overflow-hidden bg-[#11131e]/10 flex items-center justify-center text-[#11131e] font-bold">
-                  {(myRank.name ?? user?.name)?.charAt(0)}
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center gap-2">
-                    <h3 className="font-black text-sm text-[#11131e]">{myRank.name ?? user?.name}</h3>
-                    <span className="bg-[#11131e]/10 text-[#11131e] text-[8px] font-black px-1.5 py-0.5 rounded uppercase tracking-tighter">{t('leaderboard.me')}</span>
-                  </div>
-                </div>
-                <div className="text-right">
-                  <p className="text-[#11131e] font-black text-lg">{(myRank.points ?? 0).toLocaleString()}</p>
-                  <p className="text-[10px] uppercase text-[#11131e]/60 font-bold">{t('leaderboard.points')}</p>
-                </div>
-              </div>
+              <LeaderboardListRow
+                testId="leaderboard-my-rank-sticky"
+                rank={myRank.rank ?? 0}
+                name={myRank.name ?? user?.name ?? '?'}
+                points={myRank.points ?? 0}
+                avatarUrl={undefined}
+                streak={myRank.streak}
+                trend={myRank.trend}
+                isMe
+              />
             )}
           </>
         )}
@@ -314,6 +286,94 @@ export default function Leaderboard() {
           })}
         </div>
       </section>
+    </div>
+  )
+}
+
+/** One leaderboard list row. Avatar + name + tier badge + optional streak/trend + points.
+ *  Highlight gold + "BẠN" badge when {@code isMe}. Used for both rest list rows
+ *  and the sticky my-rank row (around-me pattern). */
+interface LeaderboardListRowProps {
+  rank: number
+  name: string
+  points: number
+  avatarUrl?: string
+  /** Optional — backend currently does not populate; FE hides when missing. */
+  streak?: number
+  /** Optional — positive = up, negative = down, 0/undefined = no change. */
+  trend?: number
+  isMe?: boolean
+  testId?: string
+}
+
+function LeaderboardListRow({ rank, name, points, avatarUrl, streak, trend, isMe, testId }: LeaderboardListRowProps) {
+  const { t } = useTranslation()
+  const tier = getTierByPoints(points)
+  const tierColor = tier.colorHex
+  const tierName = t(tier.nameKey)
+  const initial = (name || '?').charAt(0).toUpperCase()
+
+  if (isMe) {
+    return (
+      <div
+        data-testid={testId}
+        className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-[#e8a832] rounded-2xl border-l-8 border-background/20 shadow-[0_15px_30px_rgba(232,168,50,0.3)]"
+      >
+        <div className="w-7 md:w-8 text-center font-black text-[#11131e]">{rank}</div>
+        <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#11131e] shadow-lg overflow-hidden flex items-center justify-center text-[#11131e] font-bold" style={{ background: tierColor }}>
+          {avatarUrl ? <img alt={name} className="w-full h-full object-cover" src={avatarUrl} /> : initial}
+        </div>
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 flex-wrap">
+            <h3 className="font-black text-xs md:text-sm text-[#11131e] truncate">{name}</h3>
+            <span className="bg-[#11131e]/15 text-[#11131e] text-[8px] font-black px-1.5 py-0.5 rounded uppercase tracking-tighter">{t('leaderboard.me')}</span>
+          </div>
+          <div className="flex items-center gap-2 mt-0.5 text-[10px] md:text-[11px] text-[#11131e]/70">
+            <span>{tierName}</span>
+            {streak != null && streak > 0 && <span>🔥 {streak}</span>}
+          </div>
+        </div>
+        {trend != null && trend !== 0 && (
+          <div className="text-[10px] md:text-xs text-[#11131e]/70 font-bold">
+            {trend > 0 ? `▲ ${trend}` : `▼ ${Math.abs(trend)}`}
+          </div>
+        )}
+        <div className="text-right">
+          <p className="text-[#11131e] font-black text-base md:text-lg">{points.toLocaleString()}</p>
+          <p className="text-[9px] md:text-[10px] uppercase text-[#11131e]/60 font-bold">{t('leaderboard.points')}</p>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div
+      data-testid={testId}
+      className="flex items-center gap-3 md:gap-4 p-3 md:p-5 bg-surface-container-low rounded-2xl hover:bg-surface-container-high transition-all group"
+    >
+      <div className="w-7 md:w-8 text-center font-black text-on-surface-variant group-hover:text-on-surface transition-colors text-sm">{rank}</div>
+      <div className="w-9 h-9 md:w-10 md:h-10 rounded-full overflow-hidden flex items-center justify-center text-sm font-bold text-[#11131e]" style={{ background: tierColor }}>
+        {avatarUrl ? <img alt={name} className="w-full h-full object-cover" src={avatarUrl} /> : initial}
+      </div>
+      <div className="flex-1 min-w-0">
+        <h3 className="font-bold text-xs md:text-sm text-on-surface truncate">{name}</h3>
+        <div className="flex items-center gap-2 mt-0.5 text-[10px] md:text-[11px]">
+          <span style={{ color: tierColor }}>{tierName}</span>
+          {streak != null && streak > 0 && <span className="text-[#ff8c42]/80">🔥 {streak}</span>}
+        </div>
+      </div>
+      {trend != null && trend !== 0 && (
+        <div
+          className="text-[10px] md:text-xs font-bold"
+          style={{ color: trend > 0 ? 'rgba(74,158,255,0.8)' : 'rgba(239,68,68,0.8)' }}
+        >
+          {trend > 0 ? `▲ ${trend}` : `▼ ${Math.abs(trend)}`}
+        </div>
+      )}
+      <div className="text-right">
+        <p className="text-on-surface font-black text-sm">{points.toLocaleString()}</p>
+        <p className="text-[9px] md:text-[10px] uppercase text-on-surface-variant">{t('leaderboard.points')}</p>
+      </div>
     </div>
   )
 }

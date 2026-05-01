@@ -133,6 +133,63 @@ describe('Leaderboard', () => {
     expect(mockApiGet).toHaveBeenCalledWith(expect.stringContaining('/leaderboard/daily'))
   })
 
+  // LB-1.5 — Row enrichment per mockup
+  it('LB-1.5: list rows show tier name below username', async () => {
+    renderLeaderboard()
+    // Player 4 (9840 pts) → tier 3 disciple "Môn Đồ"
+    await waitFor(() => { expect(screen.getByText('Player 4')).toBeInTheDocument() })
+    // Tier name appears in tier section + at least once in list rows (Player 4)
+    expect(screen.getAllByText('Môn Đồ').length).toBeGreaterThanOrEqual(2)
+  })
+
+  it('LB-1.5: list row shows streak when entry.streak > 0', async () => {
+    const ENTRIES_WITH_STREAK = [
+      { userId: 'u2', name: 'Player A', points: 15820, avatarUrl: null, streak: 7 },
+      { userId: 'u3', name: 'Player B', points: 12450, avatarUrl: null, streak: 0 }, // no streak
+      { userId: 'u4', name: 'Player C', points: 11200, avatarUrl: null }, // missing field
+      { userId: 'u5', name: 'Player D', points: 9840, avatarUrl: null, streak: 12 },
+    ]
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('/my-rank')) return Promise.resolve({ data: { userId: 'u1', name: 'Test User', rank: 99 } })
+      if (url.includes('/leaderboard/')) return Promise.resolve({ data: ENTRIES_WITH_STREAK })
+      if (url.includes('/seasons')) return Promise.resolve({ data: null })
+      if (url.includes('/api/me/tier-progress')) return Promise.resolve({ data: { totalPoints: 100 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderLeaderboard()
+    await waitFor(() => { expect(screen.getByText('Player D')).toBeInTheDocument() })
+    // Player D has streak 12 → fire emoji
+    expect(screen.getByText(/🔥 12/)).toBeInTheDocument()
+    // Player B has streak 0 → no fire emoji for them
+    expect(screen.queryByText(/🔥 0/)).not.toBeInTheDocument()
+  })
+
+  it('LB-1.5: list row shows trend ▲▼ when entry.trend non-zero', async () => {
+    // 3 podium entries + 4 list rows so trends render below podium (LeaderboardListRow)
+    const ENTRIES_WITH_TREND = [
+      { userId: 'u_top1', name: 'Top 1', points: 50000, avatarUrl: null },
+      { userId: 'u_top2', name: 'Top 2', points: 40000, avatarUrl: null },
+      { userId: 'u_top3', name: 'Top 3', points: 30000, avatarUrl: null },
+      { userId: 'u2', name: 'Player A', points: 15820, avatarUrl: null, trend: 3 },
+      { userId: 'u3', name: 'Player B', points: 12450, avatarUrl: null, trend: -1 },
+      { userId: 'u4', name: 'Player C', points: 11200, avatarUrl: null, trend: 0 },
+      { userId: 'u5', name: 'Player D', points: 9840, avatarUrl: null },
+    ]
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('/my-rank')) return Promise.resolve({ data: { userId: 'u1', name: 'Test User', rank: 99 } })
+      if (url.includes('/leaderboard/')) return Promise.resolve({ data: ENTRIES_WITH_TREND })
+      if (url.includes('/seasons')) return Promise.resolve({ data: null })
+      if (url.includes('/api/me/tier-progress')) return Promise.resolve({ data: { totalPoints: 100 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderLeaderboard()
+    await waitFor(() => { expect(screen.getByText('Player D')).toBeInTheDocument() })
+    // Player A: ▲ 3
+    expect(screen.getByText(/▲ 3/)).toBeInTheDocument()
+    // Player B: ▼ 1
+    expect(screen.getByText(/▼ 1/)).toBeInTheDocument()
+  })
+
   // LB-1.4 — Podium redesign per mockup
   it('LB-1.4: podium renders 3 ranks with Arabic numerals (no La Mã)', async () => {
     renderLeaderboard()
