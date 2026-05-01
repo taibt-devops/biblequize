@@ -6,6 +6,7 @@ import { api } from '../api/client'
 import { soundManager } from '../services/soundManager'
 import { haptic } from '../utils/haptics'
 import { useLifeline } from '../hooks/useLifeline'
+import { AnswerButton, type AnswerState } from '../components/quiz/AnswerButton'
 import QuizResults from './QuizResults'
 
 interface Question {
@@ -687,7 +688,8 @@ const Quiz: React.FC = () => {
             </div>
           </div>
 
-          {/* Answers Grid */}
+          {/* Answers Grid — AnswerButton handles per-position color (Coral/Sky/Gold/Sage),
+              all 6 visual states, animations, icons. See QZ-P0-1 in BUG_REPORT_QUIZ.md. */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {currentQuestion.options.map((option, index) => {
               const correctIdx = currentQuestion.correctAnswer?.[0] ?? -1
@@ -696,66 +698,24 @@ const Quiz: React.FC = () => {
               const isWrongSelected = showResult && isSelected && index !== correctIdx
               const isEliminated = !showResult && lifeline.eliminatedOptions.has(index)
 
-              let buttonClasses = 'group relative flex items-center p-8 rounded-[2rem] transition-all duration-300 text-left active:scale-[0.98]'
-              let letterClasses = 'w-14 h-14 flex items-center justify-center rounded-2xl font-black text-xl transition-colors flex-shrink-0'
-              let textClasses = 'ml-6 font-bold text-xl'
-
-              if (isEliminated) {
-                // Hint-eliminated wrong option: greyed out and non-interactive,
-                // styled to be visually crossed-out without reshuffling layout.
-                buttonClasses += ' bg-surface-container border-2 border-transparent opacity-30 pointer-events-none'
-                letterClasses += ' bg-surface-container-highest text-on-surface-variant line-through'
-                textClasses += ' text-on-surface-variant line-through'
-              } else if (showResult && isCorrectAnswer) {
-                buttonClasses += ' bg-green-500/10 border-2 border-green-500 answer-correct-anim'
-                letterClasses += ' bg-green-500 text-on-secondary shadow-lg'
-                textClasses += ' text-green-400'
-              } else if (isWrongSelected) {
-                buttonClasses += ' bg-error/10 border-2 border-error answer-wrong-anim'
-                letterClasses += ' bg-error text-on-secondary shadow-lg'
-                textClasses += ' text-error'
-              } else if (isSelected && !showResult) {
-                buttonClasses += ' bg-secondary/10 border-2 border-secondary gold-glow'
-                letterClasses += ' bg-secondary text-on-secondary shadow-lg'
-                textClasses += ' text-secondary'
-              } else if (showResult) {
-                buttonClasses += ' bg-surface-container border-2 border-transparent opacity-60'
-                letterClasses += ' bg-surface-container-highest text-secondary'
-                textClasses += ' text-on-surface'
-              } else {
-                buttonClasses += ' bg-surface-container hover:bg-surface-container-high border-2 border-transparent hover:border-outline-variant/20'
-                letterClasses += ' bg-surface-container-highest text-secondary group-hover:bg-secondary group-hover:text-on-secondary'
-                textClasses += ' text-on-surface'
-              }
+              let state: AnswerState
+              if (isEliminated) state = 'eliminated'
+              else if (isCorrectAnswer) state = 'correct'
+              else if (isWrongSelected) state = 'wrong'
+              else if (isSelected && !showResult) state = 'selected'
+              else if (showResult) state = 'disabled'
+              else state = 'default'
 
               return (
-                <button
-                  data-testid={`quiz-answer-${index}`}
-                  data-eliminated={isEliminated ? 'true' : 'false'}
+                <AnswerButton
                   key={index}
+                  index={index as 0 | 1 | 2 | 3}
+                  letter={ANSWER_LETTERS[index] as 'A' | 'B' | 'C' | 'D'}
+                  text={option}
+                  state={state}
                   onClick={() => handleAnswerSelect(index)}
-                  disabled={showResult || isEliminated}
-                  aria-disabled={showResult || isEliminated}
-                  className={buttonClasses}
-                >
-                  <div className={letterClasses}>{ANSWER_LETTERS[index]}</div>
-                  <span className={textClasses}>{option}</span>
-                  {isEliminated && (
-                    <div className="absolute right-8 top-1/2 -translate-y-1/2">
-                      <span className="material-symbols-outlined text-on-surface-variant/60 text-3xl">close</span>
-                    </div>
-                  )}
-                  {showResult && isCorrectAnswer && (
-                    <div className="absolute right-8 top-1/2 -translate-y-1/2">
-                      <span className="material-symbols-outlined text-green-400 text-3xl" style={FILL_STYLE}>check_circle</span>
-                    </div>
-                  )}
-                  {isWrongSelected && (
-                    <div className="absolute right-8 top-1/2 -translate-y-1/2">
-                      <span className="material-symbols-outlined text-error text-3xl" style={FILL_STYLE}>cancel</span>
-                    </div>
-                  )}
-                </button>
+                  testId={`quiz-answer-${index}`}
+                />
               )
             })}
           </div>
