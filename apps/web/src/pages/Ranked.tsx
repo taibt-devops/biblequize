@@ -8,6 +8,8 @@ import { useRankedDataSync } from '../hooks/useRankedDataSync'
 import { getTierInfo } from '../data/tiers'
 import RankedHeader from '../components/ranked/RankedHeader'
 import TierProgressCard from '../components/ranked/TierProgressCard'
+import EnergyCard from '../components/ranked/EnergyCard'
+import RankedStreakCard from '../components/ranked/RankedStreakCard'
 
 const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
 
@@ -257,64 +259,14 @@ export default function Ranked() {
         starIndex={tierData?.starIndex}
       />
 
-      {/* ── Energy + Streak (R2) ── */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-        {/* Energy Card (left ~60%) */}
-        <section
-          data-testid="ranked-energy-card"
-          className="md:col-span-7 glass-card rounded-xl p-6 border border-white/5"
-        >
-          <div className="flex items-center gap-2 text-on-surface-variant uppercase text-xs font-bold tracking-widest mb-2">
-            <span className="material-symbols-outlined text-sm" style={FILL_1}>bolt</span>
-            {t('ranked.energy')}
-          </div>
-          <div data-testid="ranked-energy-display" className="mb-3">
-            <span className="text-4xl font-black" style={{ color: '#e8a832' }}>
-              {rankedStatus.livesRemaining ?? 0}
-            </span>
-            <span className="text-on-surface-variant text-xl font-normal ml-1">
-              /{rankedStatus.dailyLives ?? 0}
-            </span>
-          </div>
-          <div className="h-2 w-full bg-primary-container rounded-full overflow-hidden mb-4">
-            <div
-              className="h-full gold-gradient rounded-full transition-all duration-700 ease-out"
-              style={{ width: `${energyPct}%` }}
-            />
-          </div>
-          <div className="flex justify-between items-center text-xs">
-            <span className="text-on-surface-variant">
-              {t('ranked.questionsLeft', { count: Math.floor((rankedStatus.livesRemaining ?? 0) / 5) })}
-            </span>
-            <span data-testid="ranked-reset-timer" className="flex items-center gap-1 text-on-surface-variant font-medium">
-              <span className="material-symbols-outlined text-sm">schedule</span>
-              {t('ranked.recovery')}: <span data-testid="ranked-energy-timer">{timeLeft || '--:--:--'}</span>
-            </span>
-          </div>
-        </section>
-
-        {/* Streak Card (right ~40%) */}
-        <section
-          className="md:col-span-5 rounded-xl p-6 border flex flex-col justify-center"
-          style={{
-            background: 'linear-gradient(135deg, rgba(251,146,60,0.08), rgba(232,168,50,0.04))',
-            borderColor: 'rgba(251,146,60,0.2)',
-          }}
-        >
-          <div className="flex items-center gap-2 uppercase text-xs font-bold tracking-widest mb-3" style={{ color: 'rgba(251,146,60,0.9)' }}>
-            <span className="text-base" aria-hidden>🔥</span>
-            {t('ranked.streakHeader')}
-          </div>
-          <div className="flex items-baseline gap-3 mb-1">
-            <span className="text-4xl" aria-hidden style={{ filter: 'drop-shadow(0 0 8px rgba(251,146,60,0.4))' }}>🔥</span>
-            <span className="text-3xl font-black" style={{ color: '#fb923c' }}>
-              {t('ranked.streakDays', { count: user?.currentStreak ?? 0 })}
-            </span>
-          </div>
-          <p className="text-sm text-on-surface-variant">
-            {(user?.currentStreak ?? 0) > 0 ? t('ranked.streakKeepGoing') : t('ranked.streakStart')}
-          </p>
-        </section>
+      {/* ── Energy + Streak 2-col (R3 — RK-P2-4) ── */}
+      <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-3">
+        <EnergyCard
+          energy={rankedStatus.livesRemaining ?? 0}
+          energyMax={rankedStatus.dailyLives ?? 0}
+          recoverTimeLeft={timeLeft || '--:--:--'}
+        />
+        <RankedStreakCard streak={user?.currentStreak ?? 0} />
       </div>
 
       {/* ── 3 Stats Cards (R3) ── */}
