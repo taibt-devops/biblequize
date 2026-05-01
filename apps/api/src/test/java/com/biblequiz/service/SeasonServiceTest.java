@@ -51,7 +51,23 @@ class SeasonServiceTest {
     }
 
     @Test
-    void getActiveSeason_whenExists_shouldReturnSeason() {
+    void getActiveSeason_byDate_shouldReturnSeasonCoveringToday() {
+        // Date-based lookup — primary path per LB-2 / DECISIONS 2026-05-01 4B
+        when(seasonRepository.findByStartDateLessThanEqualAndEndDateGreaterThanEqual(any(), any()))
+                .thenReturn(Optional.of(activeSeason));
+
+        Optional<Season> result = seasonService.getActiveSeason();
+
+        assertTrue(result.isPresent());
+        assertEquals("Season 1", result.get().getName());
+        // Fallback should NOT be invoked when date lookup hits
+        verify(seasonRepository, never()).findByIsActiveTrue();
+    }
+
+    @Test
+    void getActiveSeason_dateLookupEmpty_fallsBackToIsActiveTrue() {
+        when(seasonRepository.findByStartDateLessThanEqualAndEndDateGreaterThanEqual(any(), any()))
+                .thenReturn(Optional.empty());
         when(seasonRepository.findByIsActiveTrue()).thenReturn(Optional.of(activeSeason));
 
         Optional<Season> result = seasonService.getActiveSeason();
@@ -62,6 +78,8 @@ class SeasonServiceTest {
 
     @Test
     void getActiveSeason_whenNone_shouldReturnEmpty() {
+        when(seasonRepository.findByStartDateLessThanEqualAndEndDateGreaterThanEqual(any(), any()))
+                .thenReturn(Optional.empty());
         when(seasonRepository.findByIsActiveTrue()).thenReturn(Optional.empty());
 
         assertTrue(seasonService.getActiveSeason().isEmpty());

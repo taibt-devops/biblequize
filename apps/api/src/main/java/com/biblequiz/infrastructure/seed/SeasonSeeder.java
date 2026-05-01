@@ -9,33 +9,73 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.util.UUID;
+import java.time.ZoneOffset;
 
+/**
+ * Seeds 4 liturgical seasons per year (current + next year), aligned to
+ * calendar quarters per DECISIONS.md 2026-05-01 "Leaderboard tabs + 4
+ * liturgical seasons":
+ *
+ * <ul>
+ *   <li>Q1 (Jan-Mar): Mùa Phục Sinh (Easter)</li>
+ *   <li>Q2 (Apr-Jun): Mùa Ngũ Tuần (Pentecost)</li>
+ *   <li>Q3 (Jul-Sep): Mùa Cảm Tạ (Thanksgiving)</li>
+ *   <li>Q4 (Oct-Dec): Mùa Giáng Sinh (Christmas)</li>
+ * </ul>
+ *
+ * Idempotent via deterministic ID {@code season-{year}-q{1-4}}. Re-running
+ * the seeder upserts (insert if missing, leave existing alone). Old rows
+ * from earlier seeder versions (random UUIDs, non-quarter dates) are NOT
+ * deleted — they become legacy data and are ignored by date-based
+ * {@code SeasonService.getActiveSeason()} since their dates won't match
+ * "today" in the new quarter grid.
+ */
 @Component
 @Profile("!prod")
 public class SeasonSeeder {
 
     private static final Logger log = LoggerFactory.getLogger(SeasonSeeder.class);
-    @Autowired private SeasonRepository seasonRepository;
+
+    private static final String[] QUARTER_NAMES = {
+            "Mùa Phục Sinh",
+            "Mùa Ngũ Tuần",
+            "Mùa Cảm Tạ",
+            "Mùa Giáng Sinh",
+    };
+
+    @Autowired
+    private SeasonRepository seasonRepository;
 
     public int seed() {
-        if (seasonRepository.count() > 0) {
-            log.info("SeasonSeeder: seasons exist, skipping");
-            return 0;
+        int currentYear = LocalDate.now(ZoneOffset.UTC).getYear();
+        int inserted = 0;
+
+        for (int year : new int[]{currentYear, currentYear + 1}) {
+            for (int quarter = 1; quarter <= 4; quarter++) {
+                String id = String.format("season-%d-q%d", year, quarter);
+                if (seasonRepository.existsById(id)) {
+                    continue;
+                }
+                LocalDate start = LocalDate.of(year, (quarter - 1) * 3 + 1, 1);
+                LocalDate end = start.plusMonths(3).minusDays(1);
+                String name = String.format("%s %d", QUARTER_NAMES[quarter - 1], year);
+                Season season = new Season(id, name, start, end);
+                // is_active is informational only; SeasonService computes
+                // active by date range (DECISIONS 4B). Set true for
+                // current quarter to keep DB self-consistent.
+                LocalDate today = LocalDate.now(ZoneOffset.UTC);
+                season.setIsActive(!today.isBefore(start) && !today.isAfter(end));
+                seasonRepository.save(season);
+                inserted++;
+            }
         }
 
-        Season past = new Season(UUID.randomUUID().toString(), "Mùa Giáng Sinh 2025",
-                LocalDate.of(2025, 12, 1), LocalDate.of(2025, 12, 31));
-        past.setIsActive(false);
-        seasonRepository.save(past);
-
-        Season active = new Season(UUID.randomUUID().toString(), "Mùa Phục Sinh 2026",
-                LocalDate.of(2026, 3, 1), LocalDate.of(2026, 5, 31));
-        active.setIsActive(true);
-        seasonRepository.save(active);
-
-        log.info("SeasonSeeder: created 2 seasons");
-        return 2;
+        if (inserted > 0) {
+            log.info("SeasonSeeder: inserted {} liturgical seasons", inserted);
+        } else {
+            log.debug("SeasonSeeder: all liturgical seasons already present, skipping");
+        }
+        return inserted;
     }
 
     public void clear() {

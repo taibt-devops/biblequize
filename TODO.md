@@ -1,5 +1,65 @@
 # TODO
 
+## 2026-05-01 — Leaderboard LB-2 Sprint: 3 tabs + 4 liturgical seasons [IN PROGRESS]
+
+> **Source:** Bui's request 2026-05-01 — bỏ Daily tab, thay 1-mùa/năm bằng 4 mùa Cơ-đốc theo quarter (Mùa Phục Sinh / Ngũ Tuần / Cảm Tạ / Giáng Sinh).
+> **Decision:** Pick 1A · 2A · 3C · 4B — xem `DECISIONS.md` 2026-05-01 "Leaderboard tabs + 4 liturgical seasons".
+> **Scope:** BE seeder + service refactor; FE tab restructure + dynamic Mùa label; i18n updates. KHÔNG xóa data DB cũ (legacy random-UUID "Mùa Phục Sinh 2026" — leave alone).
+> **Pre-flight:**
+> - ✅ `SeasonSeeder` already uses liturgical names (Mùa Giáng Sinh 2025, Mùa Phục Sinh 2026) — extend pattern to 4 seasons/year
+> - ✅ `seasonRepository.findByStartDateLessThanEqualAndEndDateGreaterThanEqual` already exists — reuse for date-based active lookup
+> - ✅ `/api/seasons/active` endpoint already exists — FE just consumes it
+> - ⚠️ Existing DB rows from old seeder (random UUID) won't conflict if new seeder uses deterministic IDs `season-{year}-q{1-4}`
+
+### Task LB-2.1: Backend SeasonSeeder + service refactor [x] DONE 2026-05-01
+- Status: [x] DONE — pending commit
+- File(s):
+  - `apps/api/.../infrastructure/seed/SeasonSeeder.java` — refactor to seed 4 mùa/năm × 2 năm (current + next), idempotent via deterministic ID
+  - `apps/api/.../modules/season/service/SeasonService.java` — switch `getActiveSeason()` from `findByIsActiveTrue()` to date-based `findByStartDateLessThanEqualAndEndDateGreaterThanEqual(today, today)`
+  - `apps/api/.../api/SeasonController.java` — verify `/api/seasons/active` returns season.name + endAt for FE consumption
+  - `apps/api/.../modules/season/service/SeasonServiceTest.java` (if exists) or create — test 4 quarter mappings
+- Approach:
+  - Quarter-aligned dates: Q1 (Jan 1 - Mar 31) Mùa Phục Sinh / Q2 (Apr 1 - Jun 30) Mùa Ngũ Tuần / Q3 (Jul 1 - Sep 30) Mùa Cảm Tạ / Q4 (Oct 1 - Dec 31) Mùa Giáng Sinh
+  - Seeder: iterate years (current, next), iterate quarters (1-4) → upsert via `findById` check
+  - Service: simple date lookup, no caching needed (cheap query)
+- Checklist:
+  - [x] Refactor SeasonSeeder — idempotent via deterministic ID `season-{year}-q{1-4}`, seeds 8 rows (current + next year)
+  - [x] Refactor SeasonService.getActiveSeason — date-based primary, falls back to `findByIsActiveTrue` for legacy
+  - [x] Test BE: SeasonServiceTest 7/7 (was 6 + 2 new date-based tests, dropped 1 redundant)
+  - [x] LeaderboardControllerTest still 12/12
+  - [ ] Commit: `feat(season): 4 liturgical seasons + date-based active lookup (LB-2.1)` — PENDING
+
+### Task LB-2.2: Frontend remove Daily tab + dynamic Mùa label [ ] TODO
+- Status: [ ] TODO
+- File(s):
+  - `apps/web/src/pages/Leaderboard.tsx` — remove 'daily' from Tab type, default tab = 'weekly', tab "MÙA" label use `season.name` dynamic
+  - `apps/web/src/pages/__tests__/Leaderboard.test.tsx` — update tab tests
+  - `apps/web/src/i18n/{vi,en}.json` — update `leaderboard.tierSeasonSubtitle` to remove hardcoded "Vinh Quang Mùa Xuân 2026" (use template with {{seasonName}})
+- Approach:
+  - Remove "Hôm nay" tab; default activeTab to 'weekly' (changes initial fetch)
+  - Tab label "MÙA" → render `season?.name ?? t('leaderboard.season')` — falls back to "Mùa" generic when season query loading
+  - Section header "Xếp Hạng Mùa" stays (generic) but subtitle uses dynamic season name interpolation
+  - Sidebar widgets unaffected (LeaderboardSeasonWidget already shows season.name dynamic)
+- Checklist:
+  - [ ] Tab type updated
+  - [ ] Default tab logic
+  - [ ] Dynamic Mùa label
+  - [ ] i18n subtitle dynamic via {{seasonName}}
+  - [ ] Test: tab labels render dynamic, default tab is weekly
+  - [ ] Vitest pass: Leaderboard.test.tsx (currently 21 tests)
+  - [ ] Commit: `feat(leaderboard): 3 tabs + dynamic Mùa label (LB-2.2)`
+
+### Task LB-2.3: Final regression + bug report update [ ] TODO
+- Status: [ ] TODO
+- Checklist:
+  - [ ] BE: LeaderboardControllerTest + SeasonServiceTest pass
+  - [ ] FE: Leaderboard.test.tsx + Tầng 2 pages
+  - [ ] i18n validator: 0 missing keys
+  - [ ] Update BUG_REPORT_LEADERBOARD.md if Bui's request closed any deferred bugs
+  - [ ] Commit: `chore(leaderboard): LB-2 Sprint wrap-up (LB-2.3)`
+
+---
+
 ## 2026-05-01 — Leaderboard Redesign Sprint 1 (P0 + P1 mockup) [DONE]
 
 > **Sprint summary**: 12/14 bugs from `BUG_REPORT_LEADERBOARD.md` fixed (86%). 7 commits on main. 2 deferred (LB-P2-2 empty state, LB-P3-2 font hierarchy) → LB-2.

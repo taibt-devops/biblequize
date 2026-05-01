@@ -24,9 +24,19 @@ public class SeasonService {
     private SeasonRankingRepository seasonRankingRepository;
 
     /**
-     * Returns the currently active season, or empty if none.
+     * Returns the season covering today's date — date-based lookup per
+     * DECISIONS.md 2026-05-01 "4B: compute on-the-fly". 4 liturgical
+     * seasons per year don't overlap, so exactly one row matches at any
+     * time. Falls back to {@code findByIsActiveTrue()} if no row covers
+     * today (e.g. legacy data from older seeder versions).
      */
     public Optional<Season> getActiveSeason() {
+        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        Optional<Season> byDate = seasonRepository
+                .findByStartDateLessThanEqualAndEndDateGreaterThanEqual(today, today);
+        if (byDate.isPresent()) {
+            return byDate;
+        }
         return seasonRepository.findByIsActiveTrue();
     }
 

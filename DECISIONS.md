@@ -2,6 +2,29 @@
 
 ---
 
+## 2026-05-01 — Leaderboard tabs + 4 liturgical seasons (LB-2 Sprint)
+- Quyết định: `/leaderboard` chỉ giữ **3 tabs** (Tuần / Mùa / Tất cả) — bỏ tab "Hôm nay". Thay khái niệm season cũ (1 mùa/năm "Mùa Xuân 2026") bằng **4 mùa Cơ-đốc** mỗi năm theo quarter calendar:
+  - Q1 (Jan-Mar): **Mùa Phục Sinh** (Easter)
+  - Q2 (Apr-Jun): **Mùa Ngũ Tuần** (Pentecost)
+  - Q3 (Jul-Sep): **Mùa Cảm Tạ** (Thanksgiving)
+  - Q4 (Oct-Dec): **Mùa Giáng Sinh** (Christmas)
+- Lý do:
+  - Bỏ Daily tab: theo audit UX của Bui, daily quá vụn, không đủ data tích lũy để rank ý nghĩa. Home page vẫn giữ daily snapshot dùng cho widget — endpoint BE `/daily` không xóa.
+  - 4 mùa Cơ-đốc: gắn narrative spiritual với liturgical calendar Tin Lành, tăng độ engagement theological. Mỗi mùa exact 3 tháng (KISS) thay vì align Easter date lunar (overkill cho audience VN, chấp nhận chệch ~vài tuần với Easter calendar thật).
+  - Tab "MÙA" hiển thị tên mùa hiện tại động (1A): "MÙA PHỤC SINH" / "MÙA NGŨ TUẦN" / ... — mockup ý có quarter awareness, đẹp UX, +1 query rẻ.
+- Implementation:
+  - BE SeasonSeeder: idempotent via deterministic ID `season-{year}-q{1-4}`. Seeds 4 mùa cho năm hiện tại + năm kế tiếp (8 rows). Old "Mùa Phục Sinh 2026" (random UUID, dates Mar-May) → để legacy data, KHÔNG xóa; getActiveSeason chỉ dùng date-range nên không conflict.
+  - BE getActiveSeason(): switch từ `findByIsActiveTrue()` sang `findByStartDateLessThanEqualAndEndDateGreaterThanEqual(today, today)` (4B: compute on-the-fly thay vì cron flip isActive). Repo method đã có sẵn.
+  - FE: remove 'daily' từ Tab type; default tab = 'weekly'; tab "MÙA" label dùng `season.name` từ `/api/seasons/active` (đã có endpoint).
+  - i18n: thay "Vinh Quang Mùa Xuân 2026" hardcoded bằng dynamic season name.
+- Trade-off:
+  - 4 mùa cố định không match Easter date thật (Easter có thể rơi cuối tháng 3 hoặc đầu tháng 4). Chấp nhận: audience Tin Lành VN không strict liturgical, narrative quan trọng hơn date precision.
+  - Old DB rows (1 random-UUID Mùa Phục Sinh 2026 từ seeder cũ) thành "rác" — không xóa để tránh data loss. SeasonSeeder mới idempotent qua ID nên chạy lại an toàn.
+  - Daily tab variants nếu cần restore sau → endpoint BE còn nguyên, FE chỉ thiếu UI tab.
+- KHÔNG thay đổi khi refactor trừ khi có lý do mới
+
+---
+
 ## 2026-05-01 — Leaderboard redesign: mockup là design reference, content theo Option A
 - Quyết định: 2 mockup `docs/leaderboard/biblequiz_leaderboard_redesign.html` + `_mobile.html` là **source of truth về visual/layout** (podium hybrid, crown #1, list rich content, sidebar widgets, 4 tabs, section title "Vinh Quang Mùa Xuân 2026"). Section "Xếp Hạng Mùa" content **OVERRIDE** mockup: dùng nguyên 6 tier tôn giáo (Tân Tín Hữu → Sứ Đồ) thay vì 4 reward tier Bible-themed (Vinh Quang/Hào Quang/Ánh Sáng/Tia Lửa) mockup vẽ.
 - Lý do split: mockup design hợp lý ở 90% phần (đã solve LB-P1-1/2/3/4/5, LB-P2-1/3) — không nên redraw. Nhưng phần tier season reward 4-tier mâu thuẫn với decision 2026-04-19 "Keep OLD religious tier naming" + tạo dual-tier-system phức tạp. Giữ 6 tier có sẵn → 1 hệ thống tier duy nhất, badge "Vinh Quang Mùa Xuân 2026" cho top 3 mỗi tier (SPEC mục 9.2).
