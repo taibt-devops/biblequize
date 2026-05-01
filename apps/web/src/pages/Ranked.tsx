@@ -11,6 +11,7 @@ import TierProgressCard from '../components/ranked/TierProgressCard'
 import EnergyCard from '../components/ranked/EnergyCard'
 import RankedStreakCard from '../components/ranked/RankedStreakCard'
 import DailyStatsCards from '../components/ranked/DailyStatsCards'
+import SeasonCard from '../components/ranked/SeasonCard'
 
 const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
 
@@ -284,6 +285,9 @@ export default function Ranked() {
         pointsToTop10={rankedStatus.pointsToTop10}
       />
 
+      {/* ── Season card (R5 — RK-P0-2, RK-P1-3, RK-P1-4, RK-P3-2) ── */}
+      <SeasonCard />
+
       {/* ── Active Book Card (R4) ── */}
       <section
         data-testid="ranked-current-book"
@@ -358,122 +362,7 @@ export default function Ranked() {
         </button>
       </section>
 
-      {/* ── Season Card with Milestones (R5) ── */}
-      {(() => {
-        const seasonRank = userRank?.rank as number | undefined | null
-        const hasRank = typeof seasonRank === 'number' && seasonRank > 0
-        // Lerp formula agreed with product: 4 milestones evenly spaced on a
-        // 0-100% bar. Rank > 100 → 0%, 100 → 0%, 50 → 33%, 10 → 66%, 1 → 100%.
-        const lerp = (v: number, fromMin: number, fromMax: number, toMin: number, toMax: number): number => {
-          if (fromMin === fromMax) return toMin
-          const t = (v - fromMin) / (fromMax - fromMin)
-          const clamped = Math.min(1, Math.max(0, t))
-          return toMin + clamped * (toMax - toMin)
-        }
-        const computeSeasonProgress = (rank: number): number => {
-          if (rank > 100) return 0
-          if (rank > 50) return lerp(rank, 100, 50, 0, 0.33)
-          if (rank > 10) return lerp(rank, 50, 10, 0.33, 0.66)
-          return lerp(rank, 10, 1, 0.66, 1)
-        }
-        const progress = hasRank ? computeSeasonProgress(seasonRank!) : 0
-        // Highlight the milestone closest to the user's progress position.
-        // For ranks > 100, the user is "before" Top 100 → highlight slot 0.
-        const milestones = [
-          { rank: 100, position: 0 },
-          { rank: 50, position: 1 / 3 },
-          { rank: 10, position: 2 / 3 },
-          { rank: 1, position: 1 },
-        ]
-        const youAreHereSlot = hasRank
-          ? (() => {
-              if (seasonRank! > 100) return 0
-              if (seasonRank! > 50) return 0  // between Top 100 and Top 50
-              if (seasonRank! > 10) return 1  // between Top 50 and Top 10
-              if (seasonRank! > 1) return 2   // between Top 10 and Top 1
-              return 3
-            })()
-          : -1
-        return (
-          <section
-            data-testid="ranked-season-card"
-            className="glass-card rounded-xl p-6 border border-white/5"
-          >
-            <div className="flex items-center justify-between mb-5">
-              <h3 className="text-sm font-bold text-on-surface-variant uppercase tracking-widest flex items-center gap-2">
-                <span className="material-symbols-outlined text-sm" style={FILL_1}>emoji_events</span>
-                {t('ranked.season')}
-              </h3>
-              <span data-testid="ranked-season-reset" className="text-xs text-on-surface-variant italic">
-                {t('ranked.reset')}: <span data-testid="ranked-season-reset-time">{timeLeft || '--:--:--'}</span>
-              </span>
-            </div>
-
-            <div className="flex items-center gap-6">
-              {/* Left: rank big number + season points */}
-              <div className="shrink-0 min-w-[100px]">
-                {hasRank ? (
-                  <div data-testid="ranked-season-rank" className="text-4xl font-black mb-1" style={{ color: '#e8a832' }}>
-                    #{seasonRank}
-                  </div>
-                ) : (
-                  <div data-testid="ranked-season-rank" className="text-base font-bold text-on-surface-variant mb-1">
-                    {t('ranked.unranked')}
-                  </div>
-                )}
-                <div data-testid="ranked-season-points" className="text-xs text-on-surface-variant font-medium">
-                  {t('ranked.seasonPointsLabel', { points: (totalPoints ?? 0).toLocaleString('vi-VN') })}
-                </div>
-              </div>
-
-              {/* Right: progress bar + milestones */}
-              <div className="flex-1 min-w-0">
-                <div className="h-1.5 w-full bg-primary-container rounded-full overflow-hidden mb-2">
-                  <div
-                    data-testid="ranked-season-progress-bar"
-                    className="h-full gold-gradient rounded-full transition-all duration-700 ease-out"
-                    style={{ width: `${progress * 100}%` }}
-                  />
-                </div>
-                <div className="grid grid-cols-4 text-[11px] uppercase font-bold tracking-wider">
-                  {milestones.map((m, i) => {
-                    const active = i === youAreHereSlot
-                    const align = i === 0 ? 'text-left' : i === milestones.length - 1 ? 'text-right' : 'text-center'
-                    // Path A surfaces "points to enter" only for top 50 / top 10.
-                    // Show the suffix when the user is below that threshold;
-                    // otherwise fall back to the bare label.
-                    const pointsToReach = m.rank === 50
-                      ? rankedStatus.pointsToTop50
-                      : m.rank === 10
-                        ? rankedStatus.pointsToTop10
-                        : null
-                    const labelKey = !active && typeof pointsToReach === 'number'
-                      ? 'ranked.topMilestoneWithPoints'
-                      : 'ranked.topMilestone'
-                    return (
-                      <span
-                        key={m.rank}
-                        data-testid={`ranked-milestone-${m.rank}`}
-                        className={align}
-                        style={{
-                          color: active ? '#e8a832' : 'rgba(225,225,241,0.45)',
-                          fontWeight: active ? 700 : 600,
-                        }}
-                      >
-                        {active
-                          ? t('ranked.youAreHere')
-                          : t(labelKey, { n: m.rank, points: pointsToReach ?? 0 })}
-                      </span>
-                    )
-                  })}
-                </div>
-              </div>
-            </div>
-          </section>
-        )
-      })()}
-
-      {/* ── Start CTA (R5 — 3 states) ── */}
+      {/* ── Start CTA ── */}
       <div className="mt-4 mb-10">
         {(() => {
           const energy = rankedStatus.livesRemaining ?? 0
