@@ -285,12 +285,18 @@ public class UserController {
     }
 
     /**
-     * GET /api/me/history — Session history (newest first, paginated)
+     * GET /api/me/history — Session history (newest first, paginated).
+     *
+     * <p>{@code mode} optionally narrows to a single QuizSession.Mode
+     * (e.g. {@code ranked} for the Ranked dashboard's recent-matches
+     * row). Unknown values fall through to the unfiltered query so a
+     * malformed param never 4xxs — the caller just sees the full list.
      */
     @GetMapping("/history")
     public ResponseEntity<?> getHistory(Authentication authentication,
                                         @RequestParam(defaultValue = "20") int limit,
-                                        @RequestParam(defaultValue = "0") int page) {
+                                        @RequestParam(defaultValue = "0") int page,
+                                        @RequestParam(required = false) String mode) {
         if (authentication == null || !authentication.isAuthenticated()) {
             return ResponseEntity.status(401).build();
         }
@@ -308,8 +314,19 @@ public class UserController {
         }
 
         User user = userOpt.get();
-        Page<QuizSession> sessions = quizSessionRepository.findByOwnerIdOrderByCreatedAtDesc(
-                user.getId(), PageRequest.of(page, limit));
+        QuizSession.Mode modeFilter = null;
+        if (mode != null && !mode.isBlank()) {
+            try {
+                modeFilter = QuizSession.Mode.valueOf(mode.trim().toLowerCase());
+            } catch (IllegalArgumentException ignore) {
+                // Unknown mode → fall through to unfiltered listing.
+            }
+        }
+        Page<QuizSession> sessions = modeFilter != null
+                ? quizSessionRepository.findByOwnerIdAndModeOrderByCreatedAtDesc(
+                        user.getId(), modeFilter, PageRequest.of(page, limit))
+                : quizSessionRepository.findByOwnerIdOrderByCreatedAtDesc(
+                        user.getId(), PageRequest.of(page, limit));
 
         List<Map<String, Object>> items = sessions.getContent().stream().map(s -> {
             Map<String, Object> item = new HashMap<>();

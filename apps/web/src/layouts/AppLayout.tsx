@@ -4,6 +4,9 @@ import { useTranslation } from 'react-i18next'
 import OfflineBanner from '../components/OfflineBanner'
 import StreakWidget from '../components/StreakWidget'
 import DailyMissionWidget from '../components/DailyMissionWidget'
+import SeasonGoalWidget from '../components/SeasonGoalWidget'
+import WinRateWidget from '../components/WinRateWidget'
+import WeekComboWidget from '../components/WeekComboWidget'
 import SidebarHeader from './components/SidebarHeader'
 import SidebarUserCard from './components/SidebarUserCard'
 import MobileTopBar from './components/MobileTopBar'
@@ -69,15 +72,30 @@ export default function AppLayout() {
               </Link>
             ))}
 
-            {/* Sidebar engagement widgets (Streak + Daily Mission).
-                Authenticated only — guests have neither. */}
+            {/* Sidebar engagement widgets — route-aware (R1 of Ranked
+                redesign): /ranked surfaces season-specific widgets
+                (goal / win rate / combo) instead of the generic
+                Streak + Daily Mission pair, since Ranked dashboard
+                already shows Streak as a primary card and the
+                generic widgets duplicated that info (RK-P0-1). All
+                other routes keep the original pair. */}
             {user && (
               <div
                 data-testid="sidebar-widgets"
                 className="pt-5 mt-3 border-t border-white/5 space-y-2.5"
               >
-                <StreakWidget />
-                <DailyMissionWidget />
+                {location.pathname.startsWith('/ranked') ? (
+                  <>
+                    <SeasonGoalWidget />
+                    <WinRateWidget />
+                    <WeekComboWidget />
+                  </>
+                ) : (
+                  <>
+                    <StreakWidget />
+                    <DailyMissionWidget />
+                  </>
+                )}
               </div>
             )}
           </nav>

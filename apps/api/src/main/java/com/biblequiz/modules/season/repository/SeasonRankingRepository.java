@@ -27,6 +27,15 @@ public interface SeasonRankingRepository extends JpaRepository<SeasonRanking, St
     long countUsersAheadInSeason(@Param("seasonId") String seasonId, @Param("points") int points);
 
     /**
+     * Total players competing in a given season — used to compute the
+     * "Top X% / N người" denominator on the Ranked Season card. Counts
+     * every SeasonRanking row, so users with 0 points still inflate the
+     * denominator if they registered for the season.
+     */
+    @Query("SELECT COUNT(sr) FROM SeasonRanking sr WHERE sr.season.id = :seasonId")
+    long countBySeasonId(@Param("seasonId") String seasonId);
+
+    /**
      * Returns the total_points value of the user at a given 1-based rank in
      * the active season's leaderboard (e.g. rank=50 returns the 50th-highest
      * total). Empty when fewer than {@code rank} users have a SeasonRanking
