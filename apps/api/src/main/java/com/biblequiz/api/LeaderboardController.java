@@ -2,6 +2,8 @@ package com.biblequiz.api;
 
 import com.biblequiz.modules.quiz.entity.UserDailyProgress;
 import com.biblequiz.modules.quiz.repository.UserDailyProgressRepository;
+import com.biblequiz.modules.season.entity.Season;
+import com.biblequiz.modules.season.service.SeasonService;
 import com.biblequiz.modules.user.entity.User;
 import com.biblequiz.modules.user.repository.UserRepository;
 import com.biblequiz.infrastructure.service.CacheService;
@@ -15,6 +17,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
@@ -33,6 +36,9 @@ public class LeaderboardController {
 
     @Autowired
     private CacheService cacheService;
+
+    @Autowired
+    private SeasonService seasonService;
 
     private String resolveEmail(Authentication authentication) {
         if (authentication == null)
@@ -116,6 +122,36 @@ public class LeaderboardController {
         List<Object[]> rows = udpRepository.findAllTimeLeaderboard(size, page * size);
         List<Map<String, Object>> result = mapLeaderboardRows(rows);
         cacheService.cacheLeaderboard("all-time:p" + page + ":s" + size, result);
+        return ResponseEntity.ok(result);
+    }
+
+    /**
+     * Season leaderboard — sums {@code UserDailyProgress.pointsCounted} between
+     * the active season's start and end dates. Returns empty list when no
+     * season is active. End date clamped to today so an in-flight season does
+     * not include future zero-point days.
+     */
+    @GetMapping("/season")
+    @SuppressWarnings("unchecked")
+    public ResponseEntity<List<Map<String, Object>>> season(
+            @RequestParam(value = "page", defaultValue = "0") int page,
+            @RequestParam(value = "size", defaultValue = "20") int size) {
+        Optional<Season> activeSeason = seasonService.getActiveSeason();
+        if (activeSeason.isEmpty()) {
+            return ResponseEntity.ok(Collections.emptyList());
+        }
+        Season s = activeSeason.get();
+        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate end = today.isBefore(s.getEndDate()) ? today : s.getEndDate();
+        LocalDate start = s.getStartDate();
+        String cacheKey = CacheService.LEADERBOARD_CACHE_PREFIX + "season:" + s.getId() + ":" + start + ":" + end + ":p" + page + ":s" + size;
+        Optional<List> cached = cacheService.get(cacheKey, List.class);
+        if (cached.isPresent()) {
+            return ResponseEntity.ok(cached.get());
+        }
+        List<Object[]> rows = udpRepository.findWeeklyLeaderboard(start, end, size, page * size);
+        List<Map<String, Object>> result = mapLeaderboardRows(rows);
+        cacheService.cacheLeaderboard("season:" + s.getId() + ":" + start + ":" + end + ":p" + page + ":s" + size, result);
         return ResponseEntity.ok(result);
     }
 
@@ -228,6 +264,47 @@ public class LeaderboardController {
         }
 
         int rank = (int) udpRepository.countUsersAheadInMonth(monthStart, end, myPoints) + 1;
+
+        Map<String, Object> result = new HashMap<>();
+        result.put("userId", user.getId());
+        result.put("name", user.getName());
+        result.put("points", myPoints);
+        result.put("rank", rank);
+        return ResponseEntity.ok(result);
+    }
+
+    @GetMapping("/season/my-rank")
+    public ResponseEntity<Map<String, Object>> getMySeasonRank(Authentication authentication) {
+        if (authentication == null) {
+            return ResponseEntity.ok(null);
+        }
+
+        Optional<Season> activeSeason = seasonService.getActiveSeason();
+        if (activeSeason.isEmpty()) {
+            return ResponseEntity.ok(null);
+        }
+
+        String email = resolveEmail(authentication);
+        User user = userRepository.findByEmail(email).orElse(null);
+        if (user == null) {
+            return ResponseEntity.ok(null);
+        }
+
+        Season s = activeSeason.get();
+        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate end = today.isBefore(s.getEndDate()) ? today : s.getEndDate();
+        LocalDate start = s.getStartDate();
+
+        int myPoints = udpRepository.findByUserIdAndDateBetween(user.getId(), start, end)
+                .stream()
+                .mapToInt(udp -> udp.getPointsCounted() != null ? udp.getPointsCounted() : 0)
+                .sum();
+
+        if (myPoints == 0) {
+            return ResponseEntity.ok(null);
+        }
+
+        int rank = (int) udpRepository.countUsersAheadInDateRange(start, end, myPoints) + 1;
 
         Map<String, Object> result = new HashMap<>();
         result.put("userId", user.getId());

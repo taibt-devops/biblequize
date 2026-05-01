@@ -5,7 +5,7 @@ import { api } from '../api/client'
 import { useAuthStore } from '../store/authStore'
 import { TIERS, getTierByPoints } from '../data/tiers'
 
-type Tab = 'daily' | 'weekly' | 'all_time'
+type Tab = 'daily' | 'weekly' | 'season' | 'all_time'
 
 const PODIUM_STYLES = [
   { border: 'border-[#c0c0c0]/30', bg: 'bg-[#c0c0c0]', barH: 'h-20 md:h-24', numeral: 'II', color: 'text-[#c0c0c0]', size: 'w-16 h-16 md:w-24 md:h-24' },
@@ -20,6 +20,7 @@ export default function Leaderboard() {
   const tabs: { key: Tab; label: string; apiPath: string }[] = [
     { key: 'daily', label: t('leaderboard.daily'), apiPath: 'daily' },
     { key: 'weekly', label: t('leaderboard.weekly'), apiPath: 'weekly' },
+    { key: 'season', label: t('leaderboard.season'), apiPath: 'season' },
     { key: 'all_time', label: t('leaderboard.allTime'), apiPath: 'all-time' },
   ]
   const apiPath = tabs.find(t => t.key === activeTab)?.apiPath ?? 'daily'

@@ -45,7 +45,7 @@
 > **Finding for LB-1.2**: `apps/web/src/store/authStore.ts` `User` interface has NO `id` field (only `name, email, avatar, role, currentStreak`). Leaderboard.tsx line 154 (`isMe = entry.userId === user?.id`) and line 191 (`!list.some((e) => e.userId === user?.id)`) both compare against `undefined` → likely root cause of duplicate row bug. Test mock fakes `user.id = 'u1'` so test passes but production has bug.
 
 ### Task LB-1.2: Fix duplicate user row + sticky logic (LB-P0-3) [x] DONE 2026-05-01
-- Status: [x] DONE — pending commit
+- Status: [x] DONE — commit `888c146`
 - File(s):
   - `apps/web/src/pages/Leaderboard.tsx` — replaced broken `user?.id` checks (always undefined since authStore.User has no id field) with `myRank.userId`-based identification + defensive dedup filter on raw list
   - `apps/web/src/pages/__tests__/Leaderboard.test.tsx` — removed fake `user.id`, added `userId` to my-rank mock, +3 tests (dedup, sticky-hide, sticky-show)
@@ -68,27 +68,26 @@
   - [x] Tests: 15/15 pass (was 12, added 3 LB-1.2 regression cases)
   - [x] Tầng 2 pages/: 473 pass + 29 pre-existing fails (Ranked.test.tsx baseline drift)
   - [x] TypeScript clean for Leaderboard.tsx (pre-existing errors elsewhere, none in this file)
-  - [ ] Commit: `fix(leaderboard): dedupe user row + use my-rank.userId for current-user detection (LB-1.2)` — PENDING
+  - [x] Commit: `fix(leaderboard): dedupe user row + use my-rank.userId for current-user detection (LB-1.2)` (888c146)
 
-### Task LB-1.3: Add Season tab — 4 tabs total (LB-P1-4) [ ] TODO
-- Status: [ ] TODO
+### Task LB-1.3: Add Season tab — 4 tabs total (LB-P1-4) [x] DONE 2026-05-01
+- Status: [x] DONE — pending commit
 - File(s):
-  - `apps/web/src/pages/Leaderboard.tsx` (line 7 Tab type + line 26-30 tabs array)
-  - `apps/web/src/i18n/{vi,en}.json` — thêm `leaderboard.season`
-  - `apps/api/.../LeaderboardController.java` — thêm `/season` endpoint (gộp từ Season entity start→end date)
-- Approach:
-  - Read existing `seasons/active` API + `Season` entity for start/end dates
-  - BE: new `@GetMapping("/season")` endpoint reuse `findWeeklyLeaderboard(seasonStart, seasonEnd, size, offset)` (already accepts date range)
-  - FE: tab order = Hôm nay / Tuần / Mùa Xuân / Tất cả (theo mockup desktop line 41-46)
+  - `apps/api/.../LeaderboardController.java` — added `@GetMapping("/season")` + `/season/my-rank`; injected SeasonService; reuse `findWeeklyLeaderboard` with active season's start/end dates (end clamped to today)
+  - `apps/api/.../LeaderboardControllerTest.java` — +4 tests (season w/active, w/no-active, my-rank w/points, my-rank w/no-active) → 12/12 pass
+  - `apps/web/src/pages/Leaderboard.tsx` — Tab type extended with 'season'; tabs array reordered Hôm nay / Tuần / Mùa Xuân / Tất cả per mockup
+  - `apps/web/src/i18n/{vi,en}.json` — added `leaderboard.season`
+  - `apps/web/src/pages/__tests__/Leaderboard.test.tsx` — added "renders 4 tab buttons" + "clicks Season tab fetches /api/leaderboard/season"
 - Checklist:
-  - [ ] BE: GET /api/leaderboard/season + /season/my-rank (mirror weekly impl)
-  - [ ] BE: unit test SeasonLeaderboardTest (start/end pulled from active Season)
-  - [ ] FE: add 'season' to Tab type + tabs array
-  - [ ] FE: i18n key `leaderboard.season`
-  - [ ] FE: test 4 tab switching
-  - [ ] BE test pass
-  - [ ] FE Vitest pass
-  - [ ] Commit: `feat(leaderboard): add season tab (LB-1.3)`
+  - [x] BE: GET /api/leaderboard/season + /season/my-rank
+  - [x] BE: 4 unit tests (active/no-active for both endpoints)
+  - [x] FE: 'season' in Tab type + tabs array
+  - [x] FE: i18n key `leaderboard.season`
+  - [x] FE: test tab switching
+  - [x] BE test: 12/12 pass
+  - [x] FE Vitest: 16/16 pass (was 15)
+  - [x] i18n validator: 0 missing
+  - [ ] Commit: `feat(leaderboard): add Season tab + BE endpoint (LB-1.3)` — PENDING
 
 ### Task LB-1.4: Redesign Podium per mockup (LB-P1-1 + LB-P1-2 + LB-P1-3) [ ] TODO
 - Status: [ ] TODO

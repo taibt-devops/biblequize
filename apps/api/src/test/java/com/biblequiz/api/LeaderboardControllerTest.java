@@ -3,6 +3,8 @@ package com.biblequiz.api;
 import com.biblequiz.infrastructure.service.CacheService;
 import com.biblequiz.modules.quiz.entity.UserDailyProgress;
 import com.biblequiz.modules.quiz.repository.UserDailyProgressRepository;
+import com.biblequiz.modules.season.entity.Season;
+import com.biblequiz.modules.season.service.SeasonService;
 import com.biblequiz.modules.user.entity.User;
 import com.biblequiz.modules.user.repository.UserRepository;
 
@@ -33,6 +35,9 @@ class LeaderboardControllerTest extends BaseControllerTest {
 
     @MockBean
     private CacheService cacheService;
+
+    @MockBean
+    private SeasonService seasonService;
 
     private User testUser;
 
@@ -102,6 +107,69 @@ class LeaderboardControllerTest extends BaseControllerTest {
         mockMvc.perform(get("/api/leaderboard/monthly"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$").isArray());
+    }
+
+    // ── GET /api/leaderboard/season ──────────────────────────────────────────
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void season_withActiveSeason_shouldReturnLeaderboard() throws Exception {
+        Season activeSeason = new Season("season-1", "Mùa Xuân 2026",
+                LocalDate.of(2026, 1, 1), LocalDate.of(2026, 12, 31));
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason));
+
+        Object[] row = new Object[]{"user-1", "Test User", "avatar.png", 5000, 200};
+        when(udpRepository.findWeeklyLeaderboard(any(LocalDate.class), any(LocalDate.class), eq(20), eq(0)))
+                .thenReturn(java.util.Collections.singletonList(row));
+
+        mockMvc.perform(get("/api/leaderboard/season"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(1)))
+                .andExpect(jsonPath("$[0].userId").value("user-1"))
+                .andExpect(jsonPath("$[0].points").value(5000));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void season_withNoActiveSeason_shouldReturnEmptyList() throws Exception {
+        when(seasonService.getActiveSeason()).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/leaderboard/season"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(0)));
+
+        verify(udpRepository, never()).findWeeklyLeaderboard(any(), any(), anyInt(), anyInt());
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getMySeasonRank_withActiveSeasonAndPoints_shouldReturn200() throws Exception {
+        Season activeSeason = new Season("season-1", "Mùa Xuân 2026",
+                LocalDate.of(2026, 1, 1), LocalDate.of(2026, 12, 31));
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason));
+
+        UserDailyProgress udp = new UserDailyProgress();
+        udp.setPointsCounted(800);
+        when(udpRepository.findByUserIdAndDateBetween(eq("user-1"), any(LocalDate.class), any(LocalDate.class)))
+                .thenReturn(List.of(udp));
+        when(udpRepository.countUsersAheadInDateRange(any(), any(), eq(800))).thenReturn(4L);
+
+        mockMvc.perform(get("/api/leaderboard/season/my-rank"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.userId").value("user-1"))
+                .andExpect(jsonPath("$.points").value(800))
+                .andExpect(jsonPath("$.rank").value(5));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getMySeasonRank_withNoActiveSeason_shouldReturnNullBody() throws Exception {
+        when(seasonService.getActiveSeason()).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/leaderboard/season/my-rank"))
+                .andExpect(status().isOk());
+        // Body should be null/empty when no active season
+        verify(udpRepository, never()).findByUserIdAndDateBetween(anyString(), any(), any());
     }
 
     // ── GET /api/leaderboard/all-time ────────────────────────────────────────

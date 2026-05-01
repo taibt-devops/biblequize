@@ -1634,6 +1634,7 @@
     "description": "See how you rank against the community",
     "daily": "Daily",
     "weekly": "Weekly",
+    "season": "Season",
     "allTime": "All time",
     "noData": "No leaderboard data yet",
     "points": "Points",

@@ -65,10 +65,11 @@ describe('Leaderboard', () => {
     await waitFor(() => { expect(screen.getAllByText('Bạn').length).toBeGreaterThan(0) })
   })
 
-  it('renders tab buttons', () => {
+  it('renders 4 tab buttons (LB-1.3)', () => {
     renderLeaderboard()
     expect(screen.getByText('Hàng ngày')).toBeInTheDocument()
     expect(screen.getByText('Hàng tuần')).toBeInTheDocument()
+    expect(screen.getByText('Mùa Xuân')).toBeInTheDocument()
     expect(screen.getByText('Tất cả')).toBeInTheDocument()
   })
 
@@ -130,6 +131,15 @@ describe('Leaderboard', () => {
   it('calls API with correct period', () => {
     renderLeaderboard()
     expect(mockApiGet).toHaveBeenCalledWith(expect.stringContaining('/leaderboard/daily'))
+  })
+
+  it('LB-1.3: clicking Season tab fetches /api/leaderboard/season', async () => {
+    const { default: userEvent } = await import('@testing-library/user-event')
+    renderLeaderboard()
+    await userEvent.setup().click(screen.getByText('Mùa Xuân'))
+    await waitFor(() => {
+      expect(mockApiGet).toHaveBeenCalledWith(expect.stringContaining('/leaderboard/season'))
+    })
   })
 
   // LB-1.2 — duplicate row prevention (regression guard)
