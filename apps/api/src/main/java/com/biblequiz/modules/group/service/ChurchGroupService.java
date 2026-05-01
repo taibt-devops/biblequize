@@ -143,7 +143,7 @@ public class ChurchGroupService {
         result.put("hasGroup", true);
         result.put("groupId", group.getId());
         result.put("groupName", group.getName());
-        result.put("memberCount", group.getMemberCount());
+        result.put("memberCount", groupMemberRepository.countByGroupId(group.getId()));
         result.put("role", primary.getRole().name());
         return result;
     }
@@ -164,6 +164,14 @@ public class ChurchGroupService {
             return memberMap;
         }).collect(Collectors.toList());
 
+        // Self-heal: cached memberCount may drift from actual member rows (legacy data,
+        // race conditions, soft-delete edge cases). Always reconcile on read.
+        int actualCount = members.size();
+        if (actualCount != group.getMemberCount()) {
+            group.setMemberCount(actualCount);
+            churchGroupRepository.save(group);
+        }
+
         Map<String, Object> result = new LinkedHashMap<>();
         result.put("id", group.getId());
         result.put("name", group.getName());
@@ -172,7 +180,7 @@ public class ChurchGroupService {
         result.put("avatarUrl", group.getAvatarUrl());
         result.put("isPublic", group.getIsPublic());
         result.put("maxMembers", group.getMaxMembers());
-        result.put("memberCount", group.getMemberCount());
+        result.put("memberCount", actualCount);
         result.put("leaderId", group.getLeader().getId());
         result.put("createdAt", group.getCreatedAt());
         result.put("members", memberList);
