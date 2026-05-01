@@ -17,6 +17,31 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
 
+/**
+ * Variety modes (Mystery / Speed Round / Weekly Themed / Seasonal) per Bui
+ * decision 2026-05-02: "for fun, no XP, no leaderboard". These endpoints
+ * return question lists only — no QuizSession is created, no scoring path
+ * runs server-side, no points are written anywhere. The previous
+ * {@code xpMultiplier} keys (1.5x / 2.0x / 1.5x) were removed since no
+ * scoring code consumed them; advertising a non-functional multiplier
+ * misled FE devs into thinking variety play granted XP when it does not.
+ *
+ * <p>Daily Bonus ({@code /daily-bonus}) keeps {@code bonusType}/value
+ * because FE displays the bonus card UI from those fields. The multipliers
+ * referenced by {@code DOUBLE_XP} are still dead code server-side — see
+ * the TODO at that endpoint.
+ *
+ * <p>If you want to wire scoring for a variety mode in future:
+ * <ol>
+ *   <li>Decide leaderboard contamination policy (consult Bui).</li>
+ *   <li>Create a {@link com.biblequiz.modules.quiz.entity.QuizSession}
+ *       with the appropriate mode.</li>
+ *   <li>Route through a dedicated scoring path — NOT
+ *       {@link com.biblequiz.modules.quiz.service.SessionService#creditNonRankedProgress}
+ *       (it has an allow-list that rejects variety modes).</li>
+ *   <li>Update FE to display XP feedback after the round.</li>
+ * </ol>
+ */
 @RestController
 @RequestMapping("/api/quiz")
 public class VarietyQuizController {
@@ -80,7 +105,6 @@ public class VarietyQuizController {
         Map<String, Object> response = new LinkedHashMap<>();
         response.put("questions", questions);
         response.put("questionCount", questions.size());
-        response.put("xpMultiplier", 1.5);
         response.put("timerSeconds", 25);
         return ResponseEntity.ok(response);
     }
@@ -102,7 +126,6 @@ public class VarietyQuizController {
         response.put("questions", questions);
         response.put("questionCount", questions.size());
         response.put("timerSeconds", 10);
-        response.put("xpMultiplier", 2.0);
         return ResponseEntity.ok(response);
     }
 
@@ -168,7 +191,6 @@ public class VarietyQuizController {
         Map<String, Object> response = new LinkedHashMap<>();
         response.put("season", season);
         response.put("hasEvent", true);
-        response.put("xpMultiplier", 1.5);
 
         if ("CHRISTMAS".equals(season)) {
             response.put("title", "Mùa Giáng Sinh");
