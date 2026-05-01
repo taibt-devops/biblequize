@@ -76,6 +76,17 @@ public class TournamentController {
         return ResponseEntity.ok(result);
     }
 
+    /**
+     * GET /api/tournaments/upcoming — count + first lobby tournament
+     * for the Home mode-card live hint (HM-P1-1). Public read, no
+     * auth required so unauthenticated visitors can see "Có giải đấu
+     * đang mở" before signing up.
+     */
+    @GetMapping("/upcoming")
+    public ResponseEntity<Map<String, Object>> getUpcoming() {
+        return ResponseEntity.ok(tournamentService.getUpcomingTournaments());
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<Map<String, Object>> getTournament(
             @PathVariable("id") String id,

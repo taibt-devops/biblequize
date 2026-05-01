@@ -126,6 +126,42 @@ class TournamentControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.tournamentId").value("tourn-1"));
     }
 
+    // ── GET /api/tournaments/upcoming (HM-P1-1 Home live hint) ───────────────
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getUpcoming_emptyLobby_returnsCountZero() throws Exception {
+        Map<String, Object> empty = new LinkedHashMap<>();
+        empty.put("count", 0);
+        empty.put("next", null);
+        when(tournamentService.getUpcomingTournaments()).thenReturn(empty);
+
+        mockMvc.perform(get("/api/tournaments/upcoming"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.count").value(0))
+                .andExpect(jsonPath("$.next").doesNotExist());
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getUpcoming_withLobbyTournaments_returnsCountAndNext() throws Exception {
+        Map<String, Object> nextInfo = new LinkedHashMap<>();
+        nextInfo.put("id", "tourn-7");
+        nextInfo.put("name", "Spring Cup");
+        nextInfo.put("bracketSize", 8);
+        Map<String, Object> result = new LinkedHashMap<>();
+        result.put("count", 3);
+        result.put("next", nextInfo);
+        when(tournamentService.getUpcomingTournaments()).thenReturn(result);
+
+        mockMvc.perform(get("/api/tournaments/upcoming"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.count").value(3))
+                .andExpect(jsonPath("$.next.id").value("tourn-7"))
+                .andExpect(jsonPath("$.next.name").value("Spring Cup"))
+                .andExpect(jsonPath("$.next.bracketSize").value(8));
+    }
+
     // ── POST /api/tournaments/{id}/matches/{matchId}/forfeit ─────────────────
 
     @Test

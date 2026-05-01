@@ -126,6 +126,28 @@ public class ChurchGroupService {
         return result;
     }
 
+    /**
+     * Returns a small "is the user in any group?" payload for the
+     * Home mode-card live hint (HM-P1-1). When the user is in
+     * multiple groups, picks the first by joined-at order — the home
+     * card just needs ONE name to render "Trong {groupName}".
+     */
+    public Map<String, Object> getMyGroup(String userId) {
+        List<GroupMember> memberships = groupMemberRepository.findByUserId(userId);
+        if (memberships.isEmpty()) {
+            return Map.of("hasGroup", false);
+        }
+        GroupMember primary = memberships.get(0);
+        ChurchGroup group = primary.getGroup();
+        Map<String, Object> result = new LinkedHashMap<>();
+        result.put("hasGroup", true);
+        result.put("groupId", group.getId());
+        result.put("groupName", group.getName());
+        result.put("memberCount", group.getMemberCount());
+        result.put("role", primary.getRole().name());
+        return result;
+    }
+
     public Map<String, Object> getGroupDetails(String groupId) {
         ChurchGroup group = churchGroupRepository.findById(groupId)
                 .orElseThrow(() -> new RuntimeException("Nhom khong ton tai"));

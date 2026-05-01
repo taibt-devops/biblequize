@@ -51,6 +51,20 @@ public class ChurchGroupController {
     }
 
     /**
+     * GET /api/groups/me — current user's primary group (or hasGroup=false).
+     * Powers the Home mode-card live hint per HM-P1-1.
+     */
+    @GetMapping("/me")
+    public ResponseEntity<?> getMyGroup(Principal principal) {
+        try {
+            User user = getUser(principal);
+            return ResponseEntity.ok(churchGroupService.getMyGroup(user.getId()));
+        } catch (Exception e) {
+            return ResponseEntity.status(401).body(Map.of("hasGroup", false, "message", e.getMessage()));
+        }
+    }
+
+    /**
      * GET /api/groups/{id} - Lay thong tin nhom
      */
     @GetMapping("/{id}")
