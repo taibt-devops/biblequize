@@ -107,8 +107,8 @@ describe('Groups Page', () => {
   it('renders group overview when user has a saved group', async () => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify([{ id: 'g1', name: 'Test' }]))
     mockGet.mockImplementation((url: string) => {
-      if (url.includes('/leaderboard')) return Promise.resolve({ data: SAMPLE_LEADERBOARD })
-      if (url.includes('/announcements')) return Promise.resolve({ data: SAMPLE_ANNOUNCEMENTS })
+      if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: SAMPLE_LEADERBOARD } })
+      if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: SAMPLE_ANNOUNCEMENTS, total: SAMPLE_ANNOUNCEMENTS.length, hasMore: false } } })
       return Promise.resolve({ data: SAMPLE_GROUP })
     })
     renderGroups()
@@ -120,8 +120,8 @@ describe('Groups Page', () => {
   it('renders leaderboard from API', async () => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify([{ id: 'g1', name: 'Test' }]))
     mockGet.mockImplementation((url: string) => {
-      if (url.includes('/leaderboard')) return Promise.resolve({ data: SAMPLE_LEADERBOARD })
-      if (url.includes('/announcements')) return Promise.resolve({ data: [] })
+      if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: SAMPLE_LEADERBOARD } })
+      if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: [], total: 0, hasMore: false } } })
       return Promise.resolve({ data: SAMPLE_GROUP })
     })
     renderGroups()
@@ -135,8 +135,8 @@ describe('Groups Page', () => {
   it('renders announcements from API', async () => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify([{ id: 'g1', name: 'Test' }]))
     mockGet.mockImplementation((url: string) => {
-      if (url.includes('/leaderboard')) return Promise.resolve({ data: [] })
-      if (url.includes('/announcements')) return Promise.resolve({ data: SAMPLE_ANNOUNCEMENTS })
+      if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: [] } })
+      if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: SAMPLE_ANNOUNCEMENTS, total: SAMPLE_ANNOUNCEMENTS.length, hasMore: false } } })
       return Promise.resolve({ data: SAMPLE_GROUP })
     })
     renderGroups()

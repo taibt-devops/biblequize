@@ -145,16 +145,19 @@ function GroupOverview({ groupId }: { groupId: string }) {
     queryFn: () => api.get(`/api/groups/${groupId}`).then((r) => r.data),
   });
 
+  // BE wraps responses: GET /leaderboard → {success, leaderboard: [...]};
+  // GET /announcements → {success, data: {items: [...], total, hasMore}}.
+  // Unwrap to array so .map / .slice work without defensive checks downstream.
   const { data: leaderboard } = useQuery<LeaderboardMember[]>({
     queryKey: ['group-leaderboard', groupId],
     queryFn: () =>
-      api.get(`/api/groups/${groupId}/leaderboard?period=weekly`).then((r) => r.data),
+      api.get(`/api/groups/${groupId}/leaderboard?period=weekly`).then((r) => r.data?.leaderboard ?? []),
     enabled: !!group,
   });
 
   const { data: announcements } = useQuery<Announcement[]>({
     queryKey: ['group-announcements', groupId],
-    queryFn: () => api.get(`/api/groups/${groupId}/announcements`).then((r) => r.data),
+    queryFn: () => api.get(`/api/groups/${groupId}/announcements`).then((r) => r.data?.data?.items ?? []),
     enabled: !!group,
   });
 
