@@ -52,7 +52,8 @@ interface NotificationBellProps {
  * Bell icon + unread badge + click-to-open panel listing the 10 most
  * recent unread notifications. Polls every 30s while the user is
  * authenticated. Click an item → mark-read + navigate to the route
- * mapped from {@code n.type}; click "Đọc tất cả" → mark-all-read.
+ * mapped from {@code n.type}; the panel header has a mark-all-read
+ * button that also fires when unread count is non-zero.
  *
  * Logic ported verbatim from the orphan {@code components/Header.tsx}
  * (line 30-92) so the polished panel UX (timeAgo, mark-read, type

@@ -14,7 +14,7 @@ interface TabConfig {
  * 4 equal columns.
  *
  * HM-MB-2 (320px label-wrap test) lives downstream — labels are
- * single words ({@code Trang chủ}, {@code Xếp hạng}, ...) so they
+ * single words (the nav.* i18n keys resolve to short labels) so they
  * already fit in ~64px-per-tab even at iPhone SE width.
  */
 const TABS: TabConfig[] = [
