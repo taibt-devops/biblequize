@@ -9,13 +9,20 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
  */
 
 const mockNavigate = vi.fn()
+const mockLocation: { pathname: string; state: any; search: string; hash: string; key: string } = {
+  pathname: '/quiz',
+  state: null,
+  search: '?mode=practice',
+  hash: '',
+  key: '',
+}
 vi.mock('react-router-dom', async () => {
   const actual = await vi.importActual('react-router-dom')
   return {
     ...actual,
     useNavigate: () => mockNavigate,
     useSearchParams: () => [new URLSearchParams('mode=practice'), vi.fn()],
-    useLocation: () => ({ pathname: '/quiz', state: null, search: '?mode=practice', hash: '', key: '' }),
+    useLocation: () => mockLocation,
   }
 })
 
@@ -52,6 +59,8 @@ function renderQuiz() {
 describe('Quiz Gameplay', () => {
   beforeEach(() => {
     vi.clearAllMocks()
+    // Reset to default state — individual tests can override via mockLocation.state
+    mockLocation.state = null
     mockApiGet.mockResolvedValue({
       data: [{
         id: 'q1',
@@ -143,6 +152,69 @@ describe('Quiz Gameplay', () => {
         // either "present" (question loaded) or "absent" (still loading).
         // The strict "present" assertion is covered by E2E.
         expect(hintBtn === null || hintBtn instanceof HTMLElement).toBe(true)
+      })
+    })
+  })
+
+  /**
+   * Integration: AnswerButton wiring (QZ-1.3).
+   *
+   * AnswerButton itself is exhaustively unit-tested (per-color, per-state,
+   * click handlers — see components/quiz/__tests__/AnswerButton.test.tsx).
+   * Here we just verify Quiz.tsx renders 4 AnswerButtons in the right order
+   * with the right testIds and indices, so the per-position color mapping
+   * (A=Coral / B=Sky / C=Gold / D=Sage) reaches the DOM correctly.
+   */
+  describe('Answer Color Mapping (integration)', () => {
+    it('renders 4 AnswerButtons with quiz-answer-{0..3} testIds + correct indices', async () => {
+      mockLocation.state = {
+        mode: 'practice',
+        questions: [{
+          id: 'q1',
+          book: 'Genesis',
+          chapter: 35,
+          verseStart: 16,
+          verseEnd: 20,
+          difficulty: 'medium',
+          type: 'multiple_choice',
+          content: 'Test question?',
+          options: ['Option A', 'Option B', 'Option C', 'Option D'],
+          correctAnswer: [0],
+          explanation: '',
+        }],
+      }
+      renderQuiz()
+      await waitFor(() => {
+        for (let i = 0; i < 4; i++) {
+          const btn = screen.getByTestId(`quiz-answer-${i}`)
+          expect(btn).toBeInTheDocument()
+          expect(btn).toHaveAttribute('data-answer-index', String(i))
+        }
+      })
+    })
+
+    it('default state: each AnswerButton carries its position color class (answer-a/b/c/d)', async () => {
+      mockLocation.state = {
+        mode: 'practice',
+        questions: [{
+          id: 'q1',
+          book: 'Genesis',
+          chapter: 35,
+          difficulty: 'medium',
+          type: 'multiple_choice',
+          content: 'Test?',
+          options: ['A', 'B', 'C', 'D'],
+          correctAnswer: [0],
+          explanation: '',
+        }],
+      }
+      renderQuiz()
+      await waitFor(() => {
+        const colors = ['answer-a', 'answer-b', 'answer-c', 'answer-d']
+        colors.forEach((color, i) => {
+          const btn = screen.getByTestId(`quiz-answer-${i}`)
+          expect(btn.className).toContain(color)
+        })
       })
     })
   })

@@ -44,4 +44,11 @@ export const colors = {
   tierFlame: '#a855f7',
   tierStar: '#eab308',
   tierGlory: '#ef4444',
+
+  // Answer Color Mapping (Quiz screen) — DESIGN_TOKENS.md "Game Mode Accent"
+  // Vị trí cố định: A=top-left, B=top-right, C=bottom-left, D=bottom-right.
+  answerA: '#E8826A', // Coral
+  answerB: '#6AB8E8', // Sky
+  answerC: '#E8C76A', // Gold
+  answerD: '#7AB87A', // Sage
 } as const

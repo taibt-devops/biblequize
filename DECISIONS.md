@@ -2,6 +2,26 @@
 
 ---
 
+## 2026-05-01 — Quiz redesign Sprint 2: energy display = compact + keep score badge (hybrid)
+- Quyết định: Energy widget render **inline** (label "NĂNG LƯỢNG" + 5 bars + số `100/100`) khớp mockup, NHƯNG giữ nguyên score badge "⚡ {score}" ở header top-right.
+- Lý do: Mockup chỉ vẽ energy compact, không có score visible. Bug report đề xuất Option A (compact). Tuy nhiên score là metric quan trọng cho user trong-quiz (xem progress) — bỏ score sẽ giảm feedback loop. Hybrid giữ cả 2: energy inline (visual gọn), score badge header (consistent với app pattern).
+- Trade-off: Header hơi đông (close + book + score badge), nhưng đã có pattern này từ trước (line 585-589 Quiz.tsx) — không phá tone.
+- KHÔNG thay đổi khi refactor trừ khi có lý do mới
+
+## 2026-05-01 — Quiz redesign Sprint 2: background = radial gradient subtle
+- Quyết định: Quiz screen background dùng `radial-gradient(ellipse at center, rgba(50,52,64,0.3) 0%, rgba(17,19,30,1) 70%)` thay vì 2 blob blurs hiện tại.
+- Lý do: Mockup chứng minh radial gradient không phá Sacred Modernist tone — center sáng nhẹ giúp focus mắt vào câu hỏi (center-aligned). 2 blob blurs hiện tại scatter attention. Bug report (QZ-P2-4) cũng recommend radial.
+- Trade-off: 1 lớp gradient thay 2 blob → giảm GPU work nhẹ. Lệch khỏi Home/Ranked pattern (dùng blobs), nhưng Quiz là task-focus screen, deserve khác biệt.
+- KHÔNG thay đổi khi refactor trừ khi có lý do mới
+
+## 2026-05-01 — Quiz redesign Sprint 2: bookmark có 2 entry points (header + reveal panel)
+- Quyết định: Giữ bookmark button trong reveal panel (sau khi sai, hiện tại) + thêm bookmark icon ở header top-right (mockup) — cùng endpoint `POST /api/me/bookmarks`.
+- Lý do: Header bookmark cho "câu khó muốn ôn lại trước khi trả lời" (user nhìn thấy biết khó). Reveal panel bookmark cho "câu đã sai, muốn ôn" (sau context). 2 use cases khác nhau, không trùng. SPEC v3 mục 4.5 chỉ nói reveal panel, nhưng không cấm header.
+- Trade-off: 2 entry points → user có thể bookmark 1 câu 2 lần (BE phải idempotent — verify `POST /api/me/bookmarks` đã handle dedupe). FE: `bookmarked` state shared giữa 2 buttons (1 store hoặc 1 query key).
+- KHÔNG thay đổi khi refactor trừ khi có lý do mới
+
+---
+
 ## 2026-05-01 — Home mode-card live hints (HM-P1-1) — 2 BE endpoints added
 
 - Quyết định: Add `GET /api/groups/me` (current user's primary group) + `GET /api/tournaments/upcoming` (count + next LOBBY tournament) để power live hints cho 2 mode cards còn thiếu (Nhóm Giáo Xứ + Giải Đấu) trong H4 grid.

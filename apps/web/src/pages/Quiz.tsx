@@ -6,6 +6,9 @@ import { api } from '../api/client'
 import { soundManager } from '../services/soundManager'
 import { haptic } from '../utils/haptics'
 import { useLifeline } from '../hooks/useLifeline'
+import { AnswerButton, type AnswerState } from '../components/quiz/AnswerButton'
+import { CircularTimer } from '../components/quiz/CircularTimer'
+import { wrapProperNouns, formatVerseRef } from '../utils/textHelpers'
 import QuizResults from './QuizResults'
 
 interface Question {
@@ -624,33 +627,19 @@ const Quiz: React.FC = () => {
             </div>
           </div>
 
-          {/* Circular Countdown Timer */}
+          {/* Circular Countdown Timer — CircularTimer handles 4 colour
+              bands (gold/yellow/orange/red) + warning/critical pulse
+              animations + correct dashOffset formula (QZ-P0-3). */}
           <div className="hidden md:flex flex-col items-center gap-1">
-            <span className="text-[10px] font-bold uppercase tracking-[0.1em] text-on-surface-variant">{t('quiz.time')}</span>
-            <div className={`relative w-14 h-14 flex items-center justify-center ${
-              timeLeft <= 3 ? 'timer-critical-anim' : timeLeft <= 5 ? 'timer-warning-anim' : ''
-            }`}>
-              <svg className="timer-svg w-full h-full" viewBox="0 0 36 36">
-                <circle
-                  className="stroke-surface-container-highest"
-                  cx="18" cy="18" r="16"
-                  fill="none" strokeWidth="2"
-                />
-                <circle
-                  className={`timer-arc ${timeLeft <= 3 ? 'stroke-error' : timeLeft <= 5 ? 'stroke-yellow-500' : 'stroke-secondary'}`}
-                  cx="18" cy="18" r="16"
-                  fill="none" strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeDasharray="100"
-                  strokeDashoffset={100 - (timeLeft / timerLimit) * 100}
-                />
-              </svg>
-              <span data-testid="quiz-timer" className={`absolute font-headline font-black text-xl ${
-                timeLeft <= 3 ? 'text-error' : timeLeft <= 5 ? 'text-yellow-500' : 'text-secondary'
-              }`}>
-                {timeLeft}
-              </span>
-            </div>
+            <span className="text-[10px] font-bold uppercase tracking-[0.1em] text-on-surface-variant">
+              {t('quiz.time')}
+            </span>
+            <CircularTimer
+              secondsLeft={timeLeft}
+              totalSeconds={timerLimit}
+              size={64}
+              testId="quiz-timer"
+            />
           </div>
 
           <div className="flex flex-col items-end gap-1">
@@ -672,12 +661,30 @@ const Quiz: React.FC = () => {
           </div>
         </div>
 
-        {/* Question Section */}
+        {/* Question Section.
+            QZ-P0-2: verse badge top + wrapProperNouns on the question
+            content + .question-text class for `text-wrap: pretty`. The
+            bottom book-meta line stays for E2E (data-testid="quiz-question-book"). */}
         <div className="w-full space-y-16">
           <div className="relative w-full aspect-[16/9] md:aspect-[21/7] flex flex-col items-center justify-center text-center p-10 bg-surface-container-low rounded-[2.5rem] border border-outline-variant/10 shadow-2xl overflow-hidden">
             <div className="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-32 bg-secondary rounded-r-full"></div>
-            <h2 data-testid="quiz-question-text" className="font-headline text-2xl md:text-4xl font-extrabold tracking-tight leading-snug max-w-3xl text-on-surface">
-              {currentQuestion.content}
+
+            {/* Verse badge — pill at the top of the card. */}
+            <div
+              data-testid="quiz-verse-badge"
+              className="inline-flex items-center gap-1.5 bg-secondary/10 border border-secondary/20 rounded-full px-3 py-1 mb-4"
+            >
+              <span className="material-symbols-outlined text-secondary text-xs">menu_book</span>
+              <span className="text-secondary text-[11px] font-medium tracking-wider">
+                {formatVerseRef(currentQuestion)}
+              </span>
+            </div>
+
+            <h2
+              data-testid="quiz-question-text"
+              className="question-text font-headline text-2xl md:text-4xl font-extrabold tracking-tight leading-snug max-w-3xl text-on-surface"
+            >
+              {wrapProperNouns(currentQuestion.content)}
             </h2>
             <div className="mt-8 flex items-center gap-2 text-on-surface-variant/60">
               <span className="material-symbols-outlined text-sm">menu_book</span>
@@ -687,7 +694,8 @@ const Quiz: React.FC = () => {
             </div>
           </div>
 
-          {/* Answers Grid */}
+          {/* Answers Grid — AnswerButton handles per-position color (Coral/Sky/Gold/Sage),
+              all 6 visual states, animations, icons. See QZ-P0-1 in BUG_REPORT_QUIZ.md. */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {currentQuestion.options.map((option, index) => {
               const correctIdx = currentQuestion.correctAnswer?.[0] ?? -1
@@ -696,66 +704,24 @@ const Quiz: React.FC = () => {
               const isWrongSelected = showResult && isSelected && index !== correctIdx
               const isEliminated = !showResult && lifeline.eliminatedOptions.has(index)
 
-              let buttonClasses = 'group relative flex items-center p-8 rounded-[2rem] transition-all duration-300 text-left active:scale-[0.98]'
-              let letterClasses = 'w-14 h-14 flex items-center justify-center rounded-2xl font-black text-xl transition-colors flex-shrink-0'
-              let textClasses = 'ml-6 font-bold text-xl'
-
-              if (isEliminated) {
-                // Hint-eliminated wrong option: greyed out and non-interactive,
-                // styled to be visually crossed-out without reshuffling layout.
-                buttonClasses += ' bg-surface-container border-2 border-transparent opacity-30 pointer-events-none'
-                letterClasses += ' bg-surface-container-highest text-on-surface-variant line-through'
-                textClasses += ' text-on-surface-variant line-through'
-              } else if (showResult && isCorrectAnswer) {
-                buttonClasses += ' bg-green-500/10 border-2 border-green-500 answer-correct-anim'
-                letterClasses += ' bg-green-500 text-on-secondary shadow-lg'
-                textClasses += ' text-green-400'
-              } else if (isWrongSelected) {
-                buttonClasses += ' bg-error/10 border-2 border-error answer-wrong-anim'
-                letterClasses += ' bg-error text-on-secondary shadow-lg'
-                textClasses += ' text-error'
-              } else if (isSelected && !showResult) {
-                buttonClasses += ' bg-secondary/10 border-2 border-secondary gold-glow'
-                letterClasses += ' bg-secondary text-on-secondary shadow-lg'
-                textClasses += ' text-secondary'
-              } else if (showResult) {
-                buttonClasses += ' bg-surface-container border-2 border-transparent opacity-60'
-                letterClasses += ' bg-surface-container-highest text-secondary'
-                textClasses += ' text-on-surface'
-              } else {
-                buttonClasses += ' bg-surface-container hover:bg-surface-container-high border-2 border-transparent hover:border-outline-variant/20'
-                letterClasses += ' bg-surface-container-highest text-secondary group-hover:bg-secondary group-hover:text-on-secondary'
-                textClasses += ' text-on-surface'
-              }
+              let state: AnswerState
+              if (isEliminated) state = 'eliminated'
+              else if (isCorrectAnswer) state = 'correct'
+              else if (isWrongSelected) state = 'wrong'
+              else if (isSelected && !showResult) state = 'selected'
+              else if (showResult) state = 'disabled'
+              else state = 'default'
 
               return (
-                <button
-                  data-testid={`quiz-answer-${index}`}
-                  data-eliminated={isEliminated ? 'true' : 'false'}
+                <AnswerButton
                   key={index}
+                  index={index as 0 | 1 | 2 | 3}
+                  letter={ANSWER_LETTERS[index] as 'A' | 'B' | 'C' | 'D'}
+                  text={option}
+                  state={state}
                   onClick={() => handleAnswerSelect(index)}
-                  disabled={showResult || isEliminated}
-                  aria-disabled={showResult || isEliminated}
-                  className={buttonClasses}
-                >
-                  <div className={letterClasses}>{ANSWER_LETTERS[index]}</div>
-                  <span className={textClasses}>{option}</span>
-                  {isEliminated && (
-                    <div className="absolute right-8 top-1/2 -translate-y-1/2">
-                      <span className="material-symbols-outlined text-on-surface-variant/60 text-3xl">close</span>
-                    </div>
-                  )}
-                  {showResult && isCorrectAnswer && (
-                    <div className="absolute right-8 top-1/2 -translate-y-1/2">
-                      <span className="material-symbols-outlined text-green-400 text-3xl" style={FILL_STYLE}>check_circle</span>
-                    </div>
-                  )}
-                  {isWrongSelected && (
-                    <div className="absolute right-8 top-1/2 -translate-y-1/2">
-                      <span className="material-symbols-outlined text-error text-3xl" style={FILL_STYLE}>cancel</span>
-                    </div>
-                  )}
-                </button>
+                  testId={`quiz-answer-${index}`}
+                />
               )
             })}
           </div>
@@ -802,22 +768,27 @@ const Quiz: React.FC = () => {
         </div>
       </main>
 
-      {/* Confirmation Modal */}
+      {/* Confirmation Modal — feedback bar with the score delta + Next button.
+          Mobile: stack vertically (button full-width below) so "+N Điểm thưởng"
+          doesn't get squeezed into a 3-line wrap. Desktop: horizontal row. */}
       {showResult && (
         <div className="fixed bottom-10 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-3rem)] max-w-lg">
-          <div data-testid="quiz-answer-feedback" className="bg-surface-container-highest p-5 rounded-3xl border border-secondary/30 shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex items-center justify-between gap-4 glass-panel">
-            <div className="flex items-center gap-4">
-              <div className={`w-12 h-12 rounded-full flex items-center justify-center ${isCorrect ? 'bg-secondary/20' : 'bg-error/20'}`}>
+          <div
+            data-testid="quiz-answer-feedback"
+            className="bg-surface-container-highest p-4 sm:p-5 rounded-3xl border border-secondary/30 shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 glass-panel"
+          >
+            <div className="flex items-center gap-4 min-w-0">
+              <div className={`w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center flex-shrink-0 ${isCorrect ? 'bg-secondary/20' : 'bg-error/20'}`}>
                 <span
                   className={`material-symbols-outlined text-2xl ${isCorrect ? 'text-secondary' : 'text-error'}`}
                   style={FILL_STYLE}
                 >{isCorrect ? 'verified' : 'cancel'}</span>
               </div>
-              <div>
-                <p className="text-base font-bold text-on-surface">
+              <div className="min-w-0 flex-1">
+                <p className="text-base font-bold text-on-surface leading-tight">
                   {isCorrect ? t('quiz.correct') : t('quiz.incorrect')}
                 </p>
-                <p data-testid="quiz-score-delta" className={`text-xs font-medium ${isCorrect ? 'text-secondary/80' : 'text-error/80'}`}>
+                <p data-testid="quiz-score-delta" className={`text-xs font-medium leading-tight mt-0.5 ${isCorrect ? 'text-secondary/80' : 'text-error/80'}`}>
                   {isCorrect ? t('quiz.bonusPoints', { points: lastQuestionScore }) : t('quiz.noPoints')}
                 </p>
               </div>
@@ -825,7 +796,7 @@ const Quiz: React.FC = () => {
             <button
               data-testid="quiz-next-btn"
               onClick={nextQuestion}
-              className="bg-gradient-to-r from-secondary to-tertiary text-on-secondary px-8 py-3 rounded-2xl font-black text-sm shadow-xl active:scale-95 transition-all hover:brightness-110 whitespace-nowrap"
+              className="bg-gradient-to-r from-secondary to-tertiary text-on-secondary px-6 sm:px-8 py-3 rounded-2xl font-black text-sm shadow-xl active:scale-95 transition-all hover:brightness-110 whitespace-nowrap w-full sm:w-auto"
             >
               {currentQuestionIndex + 1 >= questions.length ? t('quiz.viewResults') : t('quiz.nextQuestion')}
             </button>
@@ -833,10 +804,14 @@ const Quiz: React.FC = () => {
         </div>
       )}
 
-      {/* Explanation panel — always show for wrong answers */}
+      {/* Explanation panel — always show for wrong answers.
+          Bottom offset clears the feedback bar at bottom-10 (which on mobile
+          can wrap to 2-3 lines with "+N Điểm thưởng" → ~120-140px tall) so
+          the explanation text isn't truncated. max-h + overflow-y-auto keeps
+          long explanations from spilling above the answer grid. */}
       {showResult && isCorrect === false && (currentQuestion.explanation || currentQuestion.verseStart) && (
-        <div data-testid="quiz-explanation" className="fixed bottom-28 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-3rem)] max-w-lg animate-slide-up">
-          <div className="glass-panel p-5 rounded-2xl border border-error/20 space-y-3">
+        <div data-testid="quiz-explanation" className="fixed bottom-48 sm:bottom-36 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-3rem)] max-w-lg animate-slide-up">
+          <div className="glass-panel p-5 rounded-2xl border border-error/20 space-y-3 max-h-[50vh] overflow-y-auto">
             {/* Correct answer */}
             <div className="flex items-center gap-2">
               <span className="material-symbols-outlined text-green-400 text-sm" style={FILL_STYLE}>check_circle</span>
@@ -877,10 +852,12 @@ const Quiz: React.FC = () => {
         </div>
       )}
 
-      {/* Explanation for correct — only when showExplanation setting is on */}
+      {/* Explanation for correct — only when showExplanation setting is on.
+          Same bottom offset + scroll cap as the wrong-answer panel (mobile
+          responsive fix). */}
       {showResult && isCorrect === true && settings?.showExplanation && currentQuestion.explanation && (
-        <div className="fixed bottom-28 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-3rem)] max-w-lg">
-          <div className="glass-panel p-4 rounded-2xl border border-outline-variant/10 text-sm text-on-surface-variant">
+        <div className="fixed bottom-48 sm:bottom-36 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-3rem)] max-w-lg">
+          <div className="glass-panel p-4 rounded-2xl border border-outline-variant/10 text-sm text-on-surface-variant max-h-[50vh] overflow-y-auto">
             <strong className="text-on-surface">{t('quiz.explanation')}:</strong> {currentQuestion.explanation}
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { View, Text, StyleSheet, Pressable, Animated, Alert, BackHandler } from 'react-native'
+import Svg, { Circle } from 'react-native-svg'
 import { useNavigation, useRoute } from '@react-navigation/native'
 import { useTranslation } from 'react-i18next'
 import SafeScreen from '../../components/layout/SafeScreen'
@@ -10,6 +11,51 @@ import { useHaptic } from '../../hooks/useHaptic'
 import { colors, typography, spacing, borderRadius } from '../../theme'
 
 const LETTERS = ['A', 'B', 'C', 'D']
+
+// Per-position colour for the Answer Color Mapping (web parity, QZ-P0-1).
+// rgb triplets so we can use rgba() for varying opacity per state.
+const POS_RGB = [
+  '232,130,106', // A — Coral  (#E8826A)
+  '106,184,232', // B — Sky    (#6AB8E8)
+  '232,199,106', // C — Gold   (#E8C76A)
+  '122,184,122', // D — Sage   (#7AB87A)
+] as const
+
+// True/False questions render only 2 answers — per spec they map to A
+// (Coral) + D (Sage), skipping Sky + Gold so the contrast is maximal.
+function colorPositionFor(idx: number, total: number): number {
+  if (total === 2) return idx === 0 ? 0 : 3
+  return idx
+}
+
+/**
+ * Format a verse reference for the badge above the question (QZ-P0-2).
+ * Mirrors `apps/web/src/utils/textHelpers.ts#formatVerseRef`. Kept inline
+ * here rather than imported to avoid pulling React-DOM utils into the
+ * RN bundle.
+ */
+function formatVerseRef(q: { book: string; chapter?: number; verseStart?: number; verseEnd?: number }): string {
+  const book = q.book.toUpperCase()
+  if (!q.chapter) return book
+  if (!q.verseStart) return `${book} ${q.chapter}`
+  if (q.verseEnd && q.verseEnd !== q.verseStart) {
+    return `${book} ${q.chapter}:${q.verseStart}-${q.verseEnd}`
+  }
+  return `${book} ${q.chapter}:${q.verseStart}`
+}
+
+// Timer ring constants — mirror web CircularTimer (QZ-P0-3).
+const TIMER_SIZE = 64
+const TIMER_STROKE = 4
+const TIMER_RADIUS = TIMER_SIZE / 2 - TIMER_STROKE - 1
+const TIMER_CIRCUMFERENCE = 2 * Math.PI * TIMER_RADIUS
+
+function colorForSeconds(s: number): string {
+  if (s > 10) return '#e8a832' // gold
+  if (s > 5) return '#eab308'  // yellow
+  if (s > 3) return '#ff8c42'  // orange
+  return '#ef4444'             // red — critical
+}
 
 export default function QuizScreen() {
   const { t } = useTranslation()
@@ -147,25 +193,66 @@ export default function QuizScreen() {
 
         <ProgressBar progress={progress} height={4} />
 
-        {/* Timer */}
+        {/* Timer — circular ring with 4 colour bands (QZ-P0-3 mobile parity).
+            Pulse animations from the web version are intentionally omitted
+            here; the colour shift + shrinking arc are enough on a small
+            mobile screen and animations would need a separate Animated loop. */}
         <View style={styles.timerRow}>
-          <Text style={[styles.timerText, timeLeft <= 5 && styles.timerWarning]}>
-            {timeLeft}s
-          </Text>
+          <View style={styles.timerWrap}>
+            <Svg width={TIMER_SIZE} height={TIMER_SIZE} viewBox={`0 0 ${TIMER_SIZE} ${TIMER_SIZE}`}>
+              {/* Track */}
+              <Circle
+                cx={TIMER_SIZE / 2} cy={TIMER_SIZE / 2} r={TIMER_RADIUS}
+                stroke="rgba(255,255,255,0.06)" strokeWidth={TIMER_STROKE} fill="none"
+              />
+              {/* Progress arc — rotated -90° via originX/originY so 12 o'clock is start */}
+              <Circle
+                cx={TIMER_SIZE / 2} cy={TIMER_SIZE / 2} r={TIMER_RADIUS}
+                stroke={colorForSeconds(timeLeft)} strokeWidth={TIMER_STROKE} fill="none"
+                strokeDasharray={`${TIMER_CIRCUMFERENCE}`}
+                strokeDashoffset={
+                  TIMER_CIRCUMFERENCE *
+                  (1 - Math.max(0, Math.min(1, timePerQuestion > 0 ? timeLeft / timePerQuestion : 1)))
+                }
+                strokeLinecap="round"
+                rotation={-90}
+                originX={TIMER_SIZE / 2}
+                originY={TIMER_SIZE / 2}
+              />
+            </Svg>
+            <Text style={[styles.timerNumber, { color: colorForSeconds(timeLeft) }]}>
+              {timeLeft}
+            </Text>
+          </View>
           <Text style={styles.bookLabel}>{question.book} {question.chapter}</Text>
         </View>
 
-        {/* Question */}
+        {/* Question — verse badge top + question text (QZ-P0-2 mobile parity). */}
         <View style={styles.questionCard}>
+          <View style={styles.verseBadge}>
+            <Text style={styles.verseBadgeText}>{formatVerseRef(question)}</Text>
+          </View>
           <Text style={styles.questionText}>{question.content}</Text>
         </View>
 
-        {/* Answers */}
+        {/* Answers — per-position colour mapping (Coral/Sky/Gold/Sage), QZ-P0-1.
+            Reveal states (correct=green, wrong=red) override the position colour. */}
         <View style={styles.answers}>
           {question.options?.map((opt: string, idx: number) => {
             const isSel = selected === idx
             const isRight = showResult && idx === question.correctAnswer?.[0]
             const isWrong = showResult && isSel && idx !== question.correctAnswer?.[0]
+            const total = question.options?.length ?? 0
+            const rgb = POS_RGB[colorPositionFor(idx, total)]
+
+            // Default = subtle position tint; selected = stronger; eliminated/
+            // disabled inherits default + opacity (handled in JSX below).
+            const useReveal = isRight || isWrong
+            const positionStyle = useReveal
+              ? null
+              : isSel
+                ? { borderColor: `rgb(${rgb})`, backgroundColor: `rgba(${rgb},0.20)` }
+                : { borderColor: `rgba(${rgb},0.30)`, backgroundColor: `rgba(${rgb},0.10)` }
 
             return (
               <Pressable
@@ -174,13 +261,28 @@ export default function QuizScreen() {
                 disabled={showResult}
                 style={[
                   styles.answerBtn,
+                  positionStyle,
                   isRight && styles.ansCorrect,
                   isWrong && styles.ansWrong,
-                  isSel && !showResult && styles.ansSelected,
                 ]}
               >
-                <View style={[styles.letter, isRight && styles.letterCorrect, isWrong && styles.letterWrong]}>
-                  <Text style={styles.letterText}>{LETTERS[idx]}</Text>
+                <View
+                  style={[
+                    styles.letter,
+                    !useReveal && { backgroundColor: `rgba(${rgb},0.30)` },
+                    isRight && styles.letterCorrect,
+                    isWrong && styles.letterWrong,
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.letterText,
+                      !useReveal && { color: `rgb(${rgb})` },
+                      (isRight || isWrong) && { color: colors.onSecondary },
+                    ]}
+                  >
+                    {LETTERS[idx]}
+                  </Text>
                 </View>
                 <Text style={[styles.ansText, isRight && { color: colors.success }, isWrong && { color: colors.error }]} numberOfLines={2}>
                   {opt}
@@ -219,12 +321,35 @@ const styles = StyleSheet.create({
   comboBadge: { backgroundColor: colors.surfaceContainer, borderRadius: borderRadius.full, paddingHorizontal: spacing.md, paddingVertical: spacing.xs },
   comboText: { fontSize: typography.size.sm, fontWeight: typography.weight.bold, color: colors.gold },
   timerRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginVertical: spacing.lg },
-  timerText: { fontSize: typography.size['2xl'], fontWeight: typography.weight.bold, color: colors.gold },
-  timerWarning: { color: colors.error },
+  timerWrap: {
+    width: TIMER_SIZE, height: TIMER_SIZE,
+    alignItems: 'center', justifyContent: 'center', position: 'relative',
+  },
+  timerNumber: {
+    position: 'absolute',
+    fontSize: TIMER_SIZE * 0.32,
+    fontWeight: typography.weight.medium,
+  },
   bookLabel: { fontSize: typography.size.xs, color: colors.textMuted },
   questionCard: {
     backgroundColor: colors.surfaceContainer, borderRadius: borderRadius['2xl'],
     padding: spacing.xl, marginBottom: spacing.xl, minHeight: 100, justifyContent: 'center',
+    alignItems: 'center',
+  },
+  verseBadge: {
+    backgroundColor: 'rgba(232,168,50,0.10)',
+    borderColor: 'rgba(232,168,50,0.20)',
+    borderWidth: 1,
+    borderRadius: borderRadius.full,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.xs,
+    marginBottom: spacing.md,
+  },
+  verseBadgeText: {
+    color: colors.gold,
+    fontSize: typography.size.xs,
+    fontWeight: typography.weight.medium,
+    letterSpacing: 1,
   },
   questionText: { fontSize: typography.size.xl, fontWeight: typography.weight.bold, color: colors.textPrimary, textAlign: 'center', lineHeight: 30 },
   answers: { gap: spacing.md, flex: 1 },
@@ -233,7 +358,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surfaceContainer, borderRadius: borderRadius.xl,
     borderWidth: 2, borderColor: 'transparent',
   },
-  ansSelected: { borderColor: colors.gold, backgroundColor: 'rgba(248,189,69,0.08)' },
+  // ansSelected dropped — per-position selected style now inline (uses
+  // POS_RGB so the gold accent matches the position colour).
   ansCorrect: { borderColor: colors.success, backgroundColor: 'rgba(34,197,94,0.1)' },
   ansWrong: { borderColor: colors.error, backgroundColor: 'rgba(239,68,68,0.1)' },
   letter: { width: 32, height: 32, borderRadius: 8, backgroundColor: colors.surfaceContainerHighest, alignItems: 'center', justifyContent: 'center', marginRight: spacing.md },
