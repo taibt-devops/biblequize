@@ -7,10 +7,13 @@ import { TIERS, getTierByPoints } from '../data/tiers'
 
 type Tab = 'daily' | 'weekly' | 'season' | 'all_time'
 
-const PODIUM_STYLES = [
-  { border: 'border-[#c0c0c0]/30', bg: 'bg-[#c0c0c0]', barH: 'h-20 md:h-24', numeral: 'II', color: 'text-[#c0c0c0]', size: 'w-16 h-16 md:w-24 md:h-24' },
-  { border: 'border-secondary', bg: 'bg-secondary', barH: 'h-28 md:h-36', numeral: 'I', color: 'text-secondary', size: 'w-20 h-20 md:w-32 md:h-32', glow: 'shadow-[0_0_30px_rgba(232,168,50,0.3)]' },
-  { border: 'border-[#cd7f32]/30', bg: 'bg-[#cd7f32]', barH: 'h-16 md:h-20', numeral: 'III', color: 'text-[#cd7f32]', size: 'w-16 h-16 md:w-24 md:h-24' },
+// Podium hierarchy per mockup (LB-P1-1, LB-P1-2, LB-P1-3):
+// idx in podiumOrder: 0 = rank 2 (left), 1 = rank 1 (center, tallest), 2 = rank 3 (right).
+// Avatar size + bục height encode rank visual hierarchy without numerals.
+const PODIUM_LAYOUT = [
+  { rank: 2, avatar: 'w-11 h-11 md:w-16 md:h-16', bucket: 'h-[60px] md:h-[90px]' },
+  { rank: 1, avatar: 'w-14 h-14 md:w-20 md:h-20', bucket: 'h-[88px] md:h-[130px]' },
+  { rank: 3, avatar: 'w-10 h-10 md:w-14 md:h-14', bucket: 'h-[42px] md:h-[65px]' },
 ]
 
 export default function Leaderboard() {
@@ -109,29 +112,70 @@ export default function Leaderboard() {
           ))}
         </div>
       ) : top3.length >= 3 ? (
-        <section className="grid grid-cols-3 gap-4 md:gap-10 items-end mb-16 px-2">
+        <section data-testid="leaderboard-podium" className="grid grid-cols-3 gap-2 md:gap-6 items-end mb-16 px-2">
           {podiumOrder.map((player, idx) => {
-            const style = PODIUM_STYLES[idx]
-            const rank = idx === 0 ? 2 : idx === 1 ? 1 : 3
+            const layout = PODIUM_LAYOUT[idx]
+            const isFirst = layout.rank === 1
+            const tier = getTierByPoints(player.points ?? 0)
+            const tierColor = tier.colorHex
+            const points = (player.points ?? 0).toLocaleString()
+            const questions = player.questions
             return (
-              <div key={player.userId || idx} className={`flex flex-col items-center ${idx === 1 ? '' : ''}`}>
-                <div className={`relative mb-6 ${idx === 1 ? 'scale-110' : ''}`}>
-                  {idx === 1 && (
-                    <div className="absolute -top-6 left-1/2 -translate-x-1/2">
-                      <span className="material-symbols-outlined text-secondary text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>workspace_premium</span>
+              <div key={player.userId || idx} data-testid={`podium-rank-${layout.rank}`} className="flex flex-col items-center">
+                {/* Avatar + crown (#1 only) + rank badge */}
+                <div className="relative mb-2 md:mb-3">
+                  {isFirst && (
+                    <div className="absolute -top-4 md:-top-6 left-1/2 -translate-x-1/2 text-2xl md:text-3xl drop-shadow-[0_0_8px_rgba(232,168,50,0.6)]">
+                      👑
                     </div>
                   )}
-                  <div className={`${style.size} rounded-full border-4 ${style.border} overflow-hidden ${style.glow || ''}`}>
-                    {player.avatarUrl ? <img alt={`Rank ${rank}`} className="w-full h-full object-cover" src={player.avatarUrl} /> : (
-                      <div className="w-full h-full bg-surface-container-high flex items-center justify-center text-lg font-bold text-on-surface-variant">{player.name?.charAt(0)}</div>
+                  <div
+                    className={`${layout.avatar} rounded-full overflow-hidden border-2 ${isFirst ? 'shadow-[0_0_20px_rgba(232,168,50,0.4)]' : ''}`}
+                    style={{ borderColor: isFirst ? '#e8a832' : tierColor + '99' }}
+                  >
+                    {player.avatarUrl ? (
+                      <img alt={`Rank ${layout.rank}`} className="w-full h-full object-cover" src={player.avatarUrl} />
+                    ) : (
+                      <div
+                        className="w-full h-full flex items-center justify-center text-sm md:text-xl font-medium text-[#11131e]"
+                        style={{ background: tierColor }}
+                      >
+                        {player.name?.charAt(0)}
+                      </div>
                     )}
                   </div>
-                  <div className={`absolute -bottom-2 left-1/2 -translate-x-1/2 ${style.bg} text-[#11131e] ${rank === 1 ? 'w-8 h-8' : 'w-6 h-6'} rounded-full flex items-center justify-center font-bold text-xs`}>{rank}</div>
+                  {/* Arabic-numeral rank badge — replaces La Mã (LB-P1-2) */}
+                  <div
+                    className="absolute -bottom-1 md:-bottom-1.5 left-1/2 -translate-x-1/2 w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center font-medium text-[10px] md:text-xs text-[#11131e] border-2 border-background"
+                    style={{ background: isFirst ? '#e8a832' : tierColor }}
+                  >
+                    {layout.rank}
+                  </div>
                 </div>
-                <p className="font-bold text-xs md:text-sm text-center truncate w-full">{player.name}</p>
-                <p className="text-secondary text-[10px] md:text-xs font-bold">{(player.points ?? 0).toLocaleString()} pts</p>
-                <div className={`w-full ${style.barH} bg-surface-container rounded-t-xl mt-6 flex items-end justify-center pb-2 ${idx !== 1 ? (idx === 0 ? 'opacity-60' : 'opacity-40') : ''}`}>
-                  <span className={`${style.color} font-black text-${idx === 1 ? '4xl' : '2xl'}`}>{style.numeral}</span>
+
+                {/* Name + tier name */}
+                <p className="font-medium text-[11px] md:text-sm text-center truncate w-full text-on-surface">{player.name}</p>
+                <p className="text-[9px] md:text-xs mb-1.5 md:mb-2 truncate w-full text-center" style={{ color: tierColor }}>
+                  {t(tier.nameKey)}
+                </p>
+
+                {/* Bục — tier-tinted bg, height varies by rank */}
+                <div
+                  className={`w-full ${layout.bucket} rounded-t-lg border-t flex flex-col items-center justify-center px-1 md:px-2`}
+                  style={{
+                    background: isFirst ? 'rgba(232,168,50,0.12)' : `${tierColor}1a`,
+                    borderTopColor: isFirst ? 'rgba(232,168,50,0.4)' : `${tierColor}66`,
+                  }}
+                >
+                  <div
+                    className={`${isFirst ? 'text-base md:text-2xl' : 'text-xs md:text-lg'} font-medium`}
+                    style={{ color: isFirst ? '#e8a832' : tierColor }}
+                  >
+                    {points}
+                  </div>
+                  <div className="text-[8px] md:text-[10px] text-on-surface-variant/55 mt-0.5">
+                    {t('leaderboard.points').toLowerCase()}{questions ? ` · ${questions} câu` : ''}
+                  </div>
                 </div>
               </div>
             )

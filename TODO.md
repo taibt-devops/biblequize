@@ -71,7 +71,7 @@
   - [x] Commit: `fix(leaderboard): dedupe user row + use my-rank.userId for current-user detection (LB-1.2)` (888c146)
 
 ### Task LB-1.3: Add Season tab — 4 tabs total (LB-P1-4) [x] DONE 2026-05-01
-- Status: [x] DONE — pending commit
+- Status: [x] DONE — commit `8f1f6e6`
 - File(s):
   - `apps/api/.../LeaderboardController.java` — added `@GetMapping("/season")` + `/season/my-rank`; injected SeasonService; reuse `findWeeklyLeaderboard` with active season's start/end dates (end clamped to today)
   - `apps/api/.../LeaderboardControllerTest.java` — +4 tests (season w/active, w/no-active, my-rank w/points, my-rank w/no-active) → 12/12 pass
@@ -89,26 +89,29 @@
   - [x] i18n validator: 0 missing
   - [ ] Commit: `feat(leaderboard): add Season tab + BE endpoint (LB-1.3)` — PENDING
 
-### Task LB-1.4: Redesign Podium per mockup (LB-P1-1 + LB-P1-2 + LB-P1-3) [ ] TODO
-- Status: [ ] TODO
-- File(s): `apps/web/src/pages/Leaderboard.tsx` (line 86-131 Podium section + line 16-20 PODIUM_STYLES)
-- Approach (theo mockup desktop line 48-92):
-  - Bục chiều cao theo mockup: #1 = 130px, #2 = 90px, #3 = 65px (desktop); #1 = 88px, #2 = 60px, #3 = 42px (mobile)
-  - Avatar size: #1 = 80px (md:80) / 56px (mobile), #2 = 64px / 44px, #3 = 56px / 38px
-  - XÓA chữ La Mã `I/II/III` → thay bằng số Ả-rập badge tròn dưới avatar (đã có ở line 115)
-  - Crown 👑 SVG/emoji size 22px desktop / 16px mobile, top -22px above #1 avatar, gold drop-shadow
-  - Tier color: avatar bg dùng `tier.colorHex` từ `getTierByPoints(player.points)` thay vì metallic gold/silver/bronze
-  - Bục bg: subtle tier-color-tinted (e.g. `rgba(232,168,50,0.12)` cho #1)
-  - Hiện tier name dưới username + tie-break info (điểm + câu) trong bục #3 → fix LB-P1-5
+### Task LB-1.4: Redesign Podium per mockup (LB-P1-1 + LB-P1-2 + LB-P1-3 + LB-P1-5) [x] DONE 2026-05-01
+- Status: [x] DONE — pending commit
+- File(s):
+  - `apps/web/src/pages/Leaderboard.tsx` — replaced PODIUM_STYLES (metallic gold/silver/bronze) with PODIUM_LAYOUT (size + bucket only); refactored render to use tier color per-player + crown + tie-break info
+  - `apps/web/src/pages/__tests__/Leaderboard.test.tsx` — +2 tests (Arabic numerals, crown + glow)
+- Changes:
+  - Bục heights: `h-[88px] md:h-[130px]` / `h-[60px] md:h-[90px]` / `h-[42px] md:h-[65px]` (#1/#2/#3) — visual hierarchy without La Mã
+  - Avatar sizes: `w-14 h-14 md:w-20 md:h-20` (#1) / `w-11 h-11 md:w-16 md:h-16` (#2) / `w-10 h-10 md:w-14 md:h-14` (#3)
+  - XÓA La Mã (chữ I/II/III); rank badge dùng số Ả-rập 1/2/3 (đã có)
+  - Crown 👑 emoji `text-2xl md:text-3xl` với drop-shadow gold glow trên #1
+  - Avatar bg: `tier.colorHex` per-player (Sứ Đồ red, Tiên Tri secondary, Hiền Triết purple, ...)
+  - Bục bg: tier-tinted (`{colorHex}1a` = ~10% opacity); #1 dùng gold (#e8a832) bất kể tier
+  - Tier name dưới username (LB-P2-1 partial — full enrich row trong LB-1.5)
+  - Tie-break info: "{points} điểm · {questions} câu" trong bục (LB-P1-5)
 - Checklist:
-  - [ ] Compute tier per player using `getTierByPoints(player.points)` — display tier name + tier-colored avatar
-  - [ ] 3 bục với chiều cao khác nhau (Tailwind: h-32/h-22/h-16 desktop, h-22/h-15/h-10 mobile)
-  - [ ] Bỏ hết La Mã, dùng số Ả-rập trong badge tròn
-  - [ ] Crown 👑 trên #1 với size + glow
-  - [ ] Tie-break info dưới điểm: "X điểm · Y câu"
-  - [ ] Test: render 3 bục với props mock, verify height/size/crown
-  - [ ] Vitest pass
-  - [ ] Commit: `style(leaderboard): redesign podium per mockup (LB-1.4)`
+  - [x] tier color per player via getTierByPoints(player.points)
+  - [x] Bục chiều cao khác nhau
+  - [x] Bỏ La Mã, số Ả-rập badge
+  - [x] Crown 👑 + glow trên #1
+  - [x] Tie-break info "{questions} câu"
+  - [x] data-testid: leaderboard-podium, podium-rank-{1,2,3}
+  - [x] Tests: 18/18 pass (was 16, +2 LB-1.4)
+  - [ ] Commit: `style(leaderboard): redesign podium per mockup (LB-1.4)` — PENDING
 
 ### Task LB-1.5: Enrich list rows per mockup (LB-P2-1) [ ] TODO
 - Status: [ ] TODO

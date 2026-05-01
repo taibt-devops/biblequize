@@ -133,6 +133,28 @@ describe('Leaderboard', () => {
     expect(mockApiGet).toHaveBeenCalledWith(expect.stringContaining('/leaderboard/daily'))
   })
 
+  // LB-1.4 — Podium redesign per mockup
+  it('LB-1.4: podium renders 3 ranks with Arabic numerals (no La Mã)', async () => {
+    renderLeaderboard()
+    await waitFor(() => { expect(screen.getByTestId('podium-rank-1')).toBeInTheDocument() })
+    expect(screen.getByTestId('podium-rank-2')).toBeInTheDocument()
+    expect(screen.getByTestId('podium-rank-3')).toBeInTheDocument()
+    // No La Mã numerals
+    const podium = screen.getByTestId('leaderboard-podium')
+    expect(podium.textContent).not.toMatch(/\bI\b|\bII\b|\bIII\b/)
+  })
+
+  it('LB-1.4: podium #1 shows crown + gold glow', async () => {
+    renderLeaderboard()
+    await waitFor(() => {
+      const rank1 = screen.getByTestId('podium-rank-1')
+      // Crown emoji present
+      expect(rank1.textContent).toContain('👑')
+      // Gold glow class on avatar wrapper
+      expect(rank1.innerHTML).toContain('rgba(232,168,50,0.4)')
+    })
+  })
+
   it('LB-1.3: clicking Season tab fetches /api/leaderboard/season', async () => {
     const { default: userEvent } = await import('@testing-library/user-event')
     renderLeaderboard()
