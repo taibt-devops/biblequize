@@ -13,6 +13,7 @@ import RankedStreakCard from '../components/ranked/RankedStreakCard'
 import DailyStatsCards from '../components/ranked/DailyStatsCards'
 import SeasonCard from '../components/ranked/SeasonCard'
 import CurrentBookCard from '../components/ranked/CurrentBookCard'
+import RecentMatchesSection from '../components/ranked/RecentMatchesSection'
 
 const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
 
@@ -296,6 +297,9 @@ export default function Ranked() {
         masteryPct={bookPct}
         difficultyLabel={difficultyLabel}
       />
+
+      {/* ── Recent matches (R7 — RK-P2-3) ── */}
+      <RecentMatchesSection />
 
       {/* ── Start CTA ── */}
       <div className="mt-4 mb-10">
