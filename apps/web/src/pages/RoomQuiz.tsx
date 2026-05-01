@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useStomp } from '../hooks/useStomp';
 import ReactionBar from '../components/ReactionBar';
 import LiveFeed from '../components/LiveFeed';
+import { AnswerButton, type AnswerState } from '../components/quiz/AnswerButton';
 import {
   PodiumScreen, EliminationScreen, TeamScoreBar, TeamWinScreen,
   MatchResultOverlay, SdArenaHeader, RoundScoreboard,
@@ -271,40 +272,19 @@ const RoomQuiz: React.FC = () => {
 
   const timerPercent = timeLimit > 0 ? (timeLeft / timeLimit) * 100 : 0;
 
-  const getOptionClasses = (i: number) => {
-    let btn = 'group relative flex items-center p-5 md:p-6 rounded-2xl transition-all duration-300 text-left active:scale-[0.98] border-2';
-    let letter = 'w-11 h-11 flex items-center justify-center rounded-xl font-black text-lg transition-colors flex-shrink-0';
-    let text = 'ml-4 font-bold text-base md:text-lg leading-relaxed';
-
+  // Map RoomQuiz state → AnswerButton state (per-position color via component).
+  // Preserves the prior visual semantics (correct=green, wrong=red, selected
+  // pre-reveal, faded for cannot-interact) but adds the 4-position colour
+  // mapping (Coral/Sky/Gold/Sage) shared with single-player Quiz.
+  const buildAnswerState = (i: number): AnswerState => {
     if (correctIndex !== null) {
-      if (i === correctIndex) {
-        btn += ' bg-green-500/10 border-green-500';
-        letter += ' bg-green-500 text-on-secondary shadow-lg';
-        text += ' text-green-400';
-      } else if (i === selected && i !== correctIndex) {
-        btn += ' bg-error/10 border-error';
-        letter += ' bg-error text-on-secondary shadow-lg';
-        text += ' text-error';
-      } else {
-        btn += ' bg-surface-container border-transparent opacity-50';
-        letter += ' bg-surface-container-highest text-on-surface-variant';
-        text += ' text-on-surface-variant';
-      }
-    } else if (selected === i) {
-      btn += ' bg-secondary/10 border-secondary gold-glow';
-      letter += ' bg-secondary text-on-secondary shadow-lg';
-      text += ' text-secondary';
-    } else if ((isEliminated && !isSpectator) || (isSuddenDeath && sdSpectating)) {
-      btn += ' bg-surface-container border-transparent cursor-not-allowed opacity-60';
-      letter += ' bg-surface-container-highest text-on-surface-variant';
-      text += ' text-on-surface-variant';
-    } else {
-      btn += ' bg-surface-container hover:bg-surface-container-high border-transparent hover:border-outline-variant/20';
-      letter += ' bg-surface-container-highest text-secondary group-hover:bg-secondary group-hover:text-on-secondary';
-      text += ' text-on-surface';
+      if (i === correctIndex) return 'correct';
+      if (i === selected) return 'wrong';
+      return 'disabled';
     }
-
-    return { btn, letter, text };
+    if (selected === i) return 'selected';
+    if ((isEliminated && !isSpectator) || (isSuddenDeath && sdSpectating)) return 'disabled';
+    return 'default';
   };
 
   // ── Overlays ──
@@ -539,32 +519,20 @@ const RoomQuiz: React.FC = () => {
               </h2>
             </div>
 
-            {/* Answer Grid — 2x2 */}
+            {/* Answer Grid — 2x2. AnswerButton handles per-position colour
+                (A=Coral, B=Sky, C=Gold, D=Sage) + state visuals + icons. */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {(question?.options ?? []).map((opt, i) => {
-                const cls = getOptionClasses(i);
-                return (
-                  <button
-                    key={i}
-                    disabled={!canAnswer && correctIndex === null}
-                    onClick={() => submitAnswer(i)}
-                    className={cls.btn}
-                  >
-                    <div className={cls.letter}>{ANSWER_LETTERS[i]}</div>
-                    <span className={cls.text}>{opt}</span>
-                    {correctIndex !== null && i === correctIndex && (
-                      <div className="absolute right-5 top-1/2 -translate-y-1/2">
-                        <span className="material-symbols-outlined text-green-400 text-2xl" style={FILL_STYLE}>check_circle</span>
-                      </div>
-                    )}
-                    {correctIndex !== null && i === selected && i !== correctIndex && (
-                      <div className="absolute right-5 top-1/2 -translate-y-1/2">
-                        <span className="material-symbols-outlined text-error text-2xl" style={FILL_STYLE}>cancel</span>
-                      </div>
-                    )}
-                  </button>
-                );
-              })}
+              {(question?.options ?? []).map((opt, i) => (
+                <AnswerButton
+                  key={i}
+                  index={i as 0 | 1 | 2 | 3}
+                  letter={ANSWER_LETTERS[i] as 'A' | 'B' | 'C' | 'D'}
+                  text={opt}
+                  state={buildAnswerState(i)}
+                  onClick={() => submitAnswer(i)}
+                  testId={`room-quiz-answer-${i}`}
+                />
+              ))}
             </div>
 
             {/* Feedback */}
