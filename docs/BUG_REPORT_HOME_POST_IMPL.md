@@ -24,7 +24,16 @@ Sau khi đối chiếu code hiện tại trên branch:
 | ℹ️ **NOTE only** | 1 | HM-MB-6 |
 | ❌ **INACCURATE CLAIM** | 1 | HM-P0-1 "logo duplicate" — sidebar không có logo |
 
-**Effort còn lại:** ~30-60min (HM-MB-2 320px test + HM-P1-1 wait BE) thay vì ~10-13h như tổng kết gốc. HM-P0-1 đã ship trên `feat/home-redesign-v2` — xem audit `2026-05-01` trong DECISIONS.md.
+**Effort còn lại sau audit + 8 fix commits 2026-05-01: 0h trên FE.** Branch `feat/home-redesign-v2` chỉ chờ:
+- **HM-P1-1** (1h FE wiring) — chờ BE add `GET /api/groups/me` + `GET /api/tournaments/upcoming`. Tracked trong [BACKEND_GAPS_HOME_V2.md](../BACKEND_GAPS_HOME_V2.md). 4/6 mode cards đã có live hint.
+- **HM-MB-5** — chờ COLOR_AUDIT Task 1 (sync 6 tier colors web↔mobile). Không phải refactor riêng cho Home.
+
+Tất cả issues khác đã: (a) FIXED bởi H1-H8 + AppLayout refactor + Direction-3 tabs, (b) BY DESIGN match mockup, (c) ENHANCEMENT vượt mockup defer, (d) NOTE only. **Branch ready để merge sau visual review trên dev server.**
+
+Commits đã ship cho bug report này:
+- H1-H8 redesign (`7d05f63` → `555ff74`)
+- HM-P0-1 AppLayout Direction-B (`c2fe8fb` → `f5a8da2`, 6 commits)
+- HM-MB-2 bottom tabs Direction-3 (`91bb388`)
 
 Status markers (✅/⚠️/🟢/💡/⏳/ℹ️) được thêm vào title từng bug bên dưới — xem phần tương ứng để biết chi tiết audit.
 
@@ -853,3 +862,4 @@ Hiện tại chỉ có Logo + Avatar (no dropdown), giống top bar desktop trư
 *Generated 2026-04-30 — Living document, cập nhật khi có thêm finding.*
 *Updated 2026-04-30 — Added mobile-specific issues section + 8 questions structured.*
 *Updated 2026-05-01 — Audit pass after H1-H8 ship: 5 bugs FIXED, 4 BY DESIGN, 2 ENHANCEMENT, 1 STILL VALID + INACCURATE CLAIM correction (HM-P0-1 logo). Effort còn lại ~3-4h thay vì ~10-13h gốc.*
+*Updated 2026-05-01 (later) — HM-P0-1 AppLayout Direction-B refactor shipped (6 commits `c2fe8fb`..`f5a8da2`); HM-MB-2 bottom tabs Direction-3 active-only-label shipped (`91bb388`). Open FE work = 0h. Remaining: HM-P1-1 (1h FE wiring after BE adds 2 endpoints) + HM-MB-5 (depends on COLOR_AUDIT Task 1).*
