@@ -445,3 +445,24 @@
 - Lý do: JwtServiceTest dùng base64 secret hardcode khác `application-dev.yml` → JWT decode crash ở runtime nhưng test pass. Gap giữa test và reality.
 - Trade-off: Test setup phức tạp hơn (cần sync với config). Đổi lại, phát hiện config bugs sớm.
 - KHÔNG thay đổi khi refactor trừ khi có lý do mới
+
+
+---
+
+## 2026-05-01 — Ranked redesign V2: defer seasonRankDelta to v1.1 (Option C)
+- Quyết định: `seasonRank trend` column trong R5 SeasonCard render placeholder (`em-dash`) thay vì ship snapshot infrastructure.
+- Lý do:
+  - Option A (daily snapshot table) cần Flyway migration `season_ranking_snapshots` + cron job 00:00 UTC + cleanup logic. ~4-6h work cho 1 column phụ.
+  - Option B (compute on-the-fly) cần thêm `points_at_eod` field trên `UserDailyProgress` + back-fill query. Vẫn ~3-4h.
+  - Option C (defer): BE trả `seasonRankDelta = null`, FE render em-dash với `data-testid="ranked-season-trend"`. Khi v1.1 thêm snapshot → flip 1 field, FE auto picks up.
+- Trade-off: Một column trong 3-col Season card không có nội dung động cho launch. Bù lại unblock 12 fix khác (R1-R11) ship đúng deadline tiền-launch.
+- KHÔNG thay đổi khi refactor trừ khi có lý do mới
+
+## 2026-05-01 — Ranked redesign V2: useRankedPage hook owns page-level data
+- Quyết định: Trích `fetchStatus + fetchMyRank + fetchTierProgress + countdown ticker + visibility refresh` từ Ranked.tsx vào `hooks/useRankedPage.ts`. Page chỉ orchestrate JSX (161 LOC, từ 698).
+- Lý do:
+  - 698 LOC vi phạm 300-LOC component ceiling (CLAUDE.md).
+  - 3 fetch funcs + 2 useEffects + 7 useState là page-specific concerns, không component-specific → không nên ở trong page tsx.
+  - Sub-components R1-R8 đã extract → page giờ là pure orchestrator, hook là natural place cho data logic.
+- Trade-off: Một file thêm để maintain. Nhưng: testable hook (sẽ viết unit test ở R12 v1.1), Ranked.tsx giờ readable trong 1 màn hình, các page tương lai có thể follow pattern này (ví dụ Home dashboard).
+- KHÔNG thay đổi khi refactor trừ khi có lý do mới
