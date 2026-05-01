@@ -1644,7 +1644,17 @@
     "seasonRanking": "Xếp Hạng Mùa",
     "tierSeasonSubtitle": "Cuối mùa, top 3 mỗi tier sẽ nhận badge Vinh Quang Mùa Xuân 2026",
     "tierThresholdRange": "{{min}} - {{max}} điểm",
-    "tierThresholdMax": "{{min}}+ điểm"
+    "tierThresholdMax": "{{min}}+ điểm",
+    "sidebar": {
+      "rankLabel": "Vị trí của bạn",
+      "rankSubtitle": "Cập nhật theo bảng hôm nay",
+      "rankNone": "Chưa xếp hạng",
+      "rankNoneSubtitle": "Chơi 1 câu để vào bảng",
+      "seasonLabel": "Mùa hiện tại",
+      "seasonNone": "Chưa có mùa hoạt động",
+      "seasonDaysLeft": "Còn {{count}} ngày",
+      "seasonNoCountdown": "Đợi mùa kế tiếp"
+    }
   },
   "ranked": {
     "title": "Thi Đấu Xếp Hạng",

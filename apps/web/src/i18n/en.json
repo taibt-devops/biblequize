@@ -1644,7 +1644,17 @@
     "seasonRanking": "Season Ranking",
     "tierSeasonSubtitle": "At season's end, top 3 of each tier earn the Spring 2026 Glory badge",
     "tierThresholdRange": "{{min}} - {{max}} pts",
-    "tierThresholdMax": "{{min}}+ pts"
+    "tierThresholdMax": "{{min}}+ pts",
+    "sidebar": {
+      "rankLabel": "Your position",
+      "rankSubtitle": "From today's leaderboard",
+      "rankNone": "Unranked",
+      "rankNoneSubtitle": "Play 1 question to enter",
+      "seasonLabel": "Current season",
+      "seasonNone": "No active season",
+      "seasonDaysLeft": "{{count}} days left",
+      "seasonNoCountdown": "Awaiting next season"
+    }
   },
   "ranked": {
     "title": "Ranked Match",

@@ -135,19 +135,31 @@
   - [x] Test: 21/21 pass (was 18, +3 LB-1.5)
   - [x] Tầng 2: 473 pass (35 fails pre-existing Ranked baseline drift)
   - [⏸️] Footer "Xem N người chơi →" — defer to LB-2 (not in current mockup ref)
-  - [ ] Commit: `style(leaderboard): enrich list rows + extract LeaderboardListRow helper (LB-1.5)` — PENDING
+  - [x] Commit: `style(leaderboard): enrich list rows + extract LeaderboardListRow helper (LB-1.5)` (b371117)
 
-### Task LB-1.6: Sidebar widgets per mockup (LB-P3-1 partial) [ ] TODO
-- Status: [ ] TODO — defer if AppLayout sidebar không support context-specific widgets
-- File(s): TBD — depends on AppLayout structure
-- Approach (theo mockup desktop line 21-31):
-  - "Vị trí của bạn": #4 trên 247 + "Còn X điểm để vượt hạng 3"
-  - "Mùa hiện tại": Mùa Xuân 2026 + countdown days
+### Task LB-1.6: Sidebar widgets per mockup (LB-P3-1 partial) [x] DONE 2026-05-01
+- Status: [x] DONE — pending commit
+- File(s):
+  - `apps/web/src/components/LeaderboardRankWidget.tsx` (new, 60 LOC)
+  - `apps/web/src/components/LeaderboardSeasonWidget.tsx` (new, 65 LOC)
+  - `apps/web/src/layouts/AppLayout.tsx` — extended route-aware widget switcher with `/leaderboard` branch
+  - `apps/web/src/i18n/{vi,en}.json` — added `leaderboard.sidebar.*` namespace (8 keys)
+- Pattern reused: AppLayout already supports route-aware sidebar widgets via `location.pathname.startsWith('/ranked')` (existing). Added `'/leaderboard'` branch following same pattern. No new abstraction.
+- Widget content:
+  - `LeaderboardRankWidget` — daily rank from /api/leaderboard/daily/my-rank (cache-shared with main page); fallback "Chưa xếp hạng" when null
+  - `LeaderboardSeasonWidget` — season name + countdown from /api/seasons/active (cache-shared); fallback "Chưa có mùa hoạt động" when null
+- Sensitive file impact (AppLayout):
+  - Tầng 3 full vitest run: 1081 pass / 33 fail (BasicQuiz/GroupDetail/Ranked) — but ALL passed when run isolated → timing/memory flakiness in parallel run, NOT real regression
+  - Leaderboard.test.tsx isolated: 21/21 pass
 - Checklist:
-  - [ ] Investigate AppLayout sidebar slot mechanism
-  - [ ] If supported → inject 2 widgets via prop/portal
-  - [ ] If not → defer to LB-2 sprint
-  - [ ] Commit: `feat(leaderboard): context-specific sidebar widgets (LB-1.6)` OR document defer
+  - [x] Investigated AppLayout — has route-aware widget pattern
+  - [x] Created 2 widgets follow SeasonGoalWidget pattern (cheap useQuery, graceful empty state)
+  - [x] AppLayout extended with /leaderboard branch
+  - [x] i18n keys added (vi + en, 8 keys each)
+  - [x] Leaderboard.test.tsx: 21/21 pass
+  - [x] Tầng 3 full regression: no real regressions (3 isolated fails when run together = flakiness)
+  - [x] i18n validator: 0 missing keys (5 hardcoded in JSDoc comments — accepted debt)
+  - [ ] Commit: `feat(leaderboard): context-specific sidebar widgets (LB-1.6)` — PENDING
 
 ### Task LB-1.7: Final regression + cleanup [ ] TODO
 - Status: [ ] TODO

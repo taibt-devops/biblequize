@@ -7,6 +7,8 @@ import DailyMissionWidget from '../components/DailyMissionWidget'
 import SeasonGoalWidget from '../components/SeasonGoalWidget'
 import WinRateWidget from '../components/WinRateWidget'
 import WeekComboWidget from '../components/WeekComboWidget'
+import LeaderboardRankWidget from '../components/LeaderboardRankWidget'
+import LeaderboardSeasonWidget from '../components/LeaderboardSeasonWidget'
 import SidebarHeader from './components/SidebarHeader'
 import SidebarUserCard from './components/SidebarUserCard'
 import MobileTopBar from './components/MobileTopBar'
@@ -89,6 +91,11 @@ export default function AppLayout() {
                     <SeasonGoalWidget />
                     <WinRateWidget />
                     <WeekComboWidget />
+                  </>
+                ) : location.pathname.startsWith('/leaderboard') ? (
+                  <>
+                    <LeaderboardRankWidget />
+                    <LeaderboardSeasonWidget />
                   </>
                 ) : (
                   <>
