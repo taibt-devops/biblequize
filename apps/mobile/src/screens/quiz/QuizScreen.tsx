@@ -11,6 +11,22 @@ import { colors, typography, spacing, borderRadius } from '../../theme'
 
 const LETTERS = ['A', 'B', 'C', 'D']
 
+// Per-position colour for the Answer Color Mapping (web parity, QZ-P0-1).
+// rgb triplets so we can use rgba() for varying opacity per state.
+const POS_RGB = [
+  '232,130,106', // A — Coral  (#E8826A)
+  '106,184,232', // B — Sky    (#6AB8E8)
+  '232,199,106', // C — Gold   (#E8C76A)
+  '122,184,122', // D — Sage   (#7AB87A)
+] as const
+
+// True/False questions render only 2 answers — per spec they map to A
+// (Coral) + D (Sage), skipping Sky + Gold so the contrast is maximal.
+function colorPositionFor(idx: number, total: number): number {
+  if (total === 2) return idx === 0 ? 0 : 3
+  return idx
+}
+
 export default function QuizScreen() {
   const { t } = useTranslation()
   const navigation = useNavigation<any>()
@@ -160,12 +176,24 @@ export default function QuizScreen() {
           <Text style={styles.questionText}>{question.content}</Text>
         </View>
 
-        {/* Answers */}
+        {/* Answers — per-position colour mapping (Coral/Sky/Gold/Sage), QZ-P0-1.
+            Reveal states (correct=green, wrong=red) override the position colour. */}
         <View style={styles.answers}>
           {question.options?.map((opt: string, idx: number) => {
             const isSel = selected === idx
             const isRight = showResult && idx === question.correctAnswer?.[0]
             const isWrong = showResult && isSel && idx !== question.correctAnswer?.[0]
+            const total = question.options?.length ?? 0
+            const rgb = POS_RGB[colorPositionFor(idx, total)]
+
+            // Default = subtle position tint; selected = stronger; eliminated/
+            // disabled inherits default + opacity (handled in JSX below).
+            const useReveal = isRight || isWrong
+            const positionStyle = useReveal
+              ? null
+              : isSel
+                ? { borderColor: `rgb(${rgb})`, backgroundColor: `rgba(${rgb},0.20)` }
+                : { borderColor: `rgba(${rgb},0.30)`, backgroundColor: `rgba(${rgb},0.10)` }
 
             return (
               <Pressable
@@ -174,13 +202,28 @@ export default function QuizScreen() {
                 disabled={showResult}
                 style={[
                   styles.answerBtn,
+                  positionStyle,
                   isRight && styles.ansCorrect,
                   isWrong && styles.ansWrong,
-                  isSel && !showResult && styles.ansSelected,
                 ]}
               >
-                <View style={[styles.letter, isRight && styles.letterCorrect, isWrong && styles.letterWrong]}>
-                  <Text style={styles.letterText}>{LETTERS[idx]}</Text>
+                <View
+                  style={[
+                    styles.letter,
+                    !useReveal && { backgroundColor: `rgba(${rgb},0.30)` },
+                    isRight && styles.letterCorrect,
+                    isWrong && styles.letterWrong,
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.letterText,
+                      !useReveal && { color: `rgb(${rgb})` },
+                      (isRight || isWrong) && { color: colors.onSecondary },
+                    ]}
+                  >
+                    {LETTERS[idx]}
+                  </Text>
                 </View>
                 <Text style={[styles.ansText, isRight && { color: colors.success }, isWrong && { color: colors.error }]} numberOfLines={2}>
                   {opt}
@@ -233,7 +276,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surfaceContainer, borderRadius: borderRadius.xl,
     borderWidth: 2, borderColor: 'transparent',
   },
-  ansSelected: { borderColor: colors.gold, backgroundColor: 'rgba(248,189,69,0.08)' },
+  // ansSelected dropped — per-position selected style now inline (uses
+  // POS_RGB so the gold accent matches the position colour).
   ansCorrect: { borderColor: colors.success, backgroundColor: 'rgba(34,197,94,0.1)' },
   ansWrong: { borderColor: colors.error, backgroundColor: 'rgba(239,68,68,0.1)' },
   letter: { width: 32, height: 32, borderRadius: 8, backgroundColor: colors.surfaceContainerHighest, alignItems: 'center', justifyContent: 'center', marginRight: spacing.md },
