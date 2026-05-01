@@ -155,6 +155,21 @@ describe('Leaderboard', () => {
     })
   })
 
+  it('LB-2.2: tab "Mùa" falls back to generic "Mùa" when no active season (regression guard)', async () => {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('/my-rank')) return Promise.resolve({ data: { userId: 'u1', name: 'Test User', rank: 5, points: 4520 } })
+      if (url.includes('/leaderboard/')) return Promise.resolve({ data: MOCK_ENTRIES })
+      // Simulate no active season (BE returns active: false)
+      if (url.includes('/seasons/active')) return Promise.resolve({ data: { active: false } })
+      if (url.includes('/api/me/tier-progress')) return Promise.resolve({ data: { totalPoints: 4520 } })
+      return Promise.reject(new Error('Not found'))
+    })
+    renderLeaderboard()
+    // Tab label should be generic "Mùa" (uppercased by CSS), NOT outdated "Mùa Xuân"
+    await waitFor(() => { expect(screen.getByText('Mùa')).toBeInTheDocument() })
+    expect(screen.queryByText(/Mùa Xuân/)).not.toBeInTheDocument()
+  })
+
   // LB-1.5 — Row enrichment per mockup
   it('LB-1.5: list rows show tier name below username', async () => {
     renderLeaderboard()
