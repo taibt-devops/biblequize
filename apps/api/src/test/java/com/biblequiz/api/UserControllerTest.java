@@ -37,6 +37,38 @@ class UserControllerTest extends BaseControllerTest {
     @MockBean
     private QuizSessionRepository quizSessionRepository;
 
+    // Required for context load — UserController autowires these
+    // but the class-level setup pre-existing on main only mocked 3.
+    @MockBean
+    private com.biblequiz.modules.quiz.repository.QuestionRepository questionRepository;
+
+    @MockBean
+    private com.biblequiz.modules.quiz.repository.UserQuestionHistoryRepository userQuestionHistoryRepository;
+
+    @MockBean
+    private com.biblequiz.modules.user.service.AccountDeletionService accountDeletionService;
+
+    @MockBean
+    private com.biblequiz.modules.quiz.service.BookMasteryService bookMasteryService;
+
+    @MockBean
+    private com.biblequiz.modules.ranked.service.TierProgressService tierProgressService;
+
+    @MockBean
+    private com.biblequiz.modules.ranked.service.UserTierService userTierService;
+
+    @MockBean
+    private com.biblequiz.modules.quiz.service.DailyMissionService dailyMissionService;
+
+    @MockBean
+    private com.biblequiz.modules.user.service.ComebackService comebackService;
+
+    @MockBean
+    private com.biblequiz.modules.user.service.CosmeticService cosmeticService;
+
+    @MockBean
+    private com.biblequiz.modules.ranked.service.PrestigeService prestigeService;
+
     private User testUser;
 
     @BeforeEach
@@ -208,5 +240,57 @@ class UserControllerTest extends BaseControllerTest {
     void getHistory_withoutAuth_shouldReturn401() throws Exception {
         mockMvc.perform(get("/api/me/history"))
                 .andExpect(status().isUnauthorized());
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getHistory_withModeRanked_routesThroughModeFilteredQuery() throws Exception {
+        when(userRepository.findByEmail("test@example.com")).thenReturn(Optional.of(testUser));
+
+        QuizSession ranked = new QuizSession();
+        ranked.setId("sess-ranked");
+        ranked.setMode(QuizSession.Mode.ranked);
+        ranked.setStatus(QuizSession.Status.completed);
+        ranked.setScore(80);
+        ranked.setTotalQuestions(10);
+        ranked.setCorrectAnswers(7);
+
+        when(quizSessionRepository.findByOwnerIdAndModeOrderByCreatedAtDesc(
+                eq("user-1"), eq(QuizSession.Mode.ranked), any(Pageable.class)))
+                .thenReturn(new PageImpl<>(List.of(ranked)));
+
+        mockMvc.perform(get("/api/me/history?mode=ranked"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.items[0].id").value("sess-ranked"))
+                .andExpect(jsonPath("$.items[0].mode").value("ranked"));
+
+        // Unfiltered query NOT issued — the filter is honored, not bypassed.
+        verify(quizSessionRepository, never()).findByOwnerIdOrderByCreatedAtDesc(
+                anyString(), any(Pageable.class));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getHistory_withUnknownMode_fallsBackToUnfilteredQuery() throws Exception {
+        // Defensive contract: a malformed/unknown mode never 4xxs — the
+        // caller just gets the full list. Avoids a frontend crash if a
+        // future mode name is rolled out client-side first.
+        when(userRepository.findByEmail("test@example.com")).thenReturn(Optional.of(testUser));
+
+        QuizSession sess = new QuizSession();
+        sess.setId("sess-fallback");
+        sess.setMode(QuizSession.Mode.practice);
+        sess.setStatus(QuizSession.Status.completed);
+
+        when(quizSessionRepository.findByOwnerIdOrderByCreatedAtDesc(eq("user-1"), any(Pageable.class)))
+                .thenReturn(new PageImpl<>(List.of(sess)));
+
+        mockMvc.perform(get("/api/me/history?mode=tournament"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.items[0].id").value("sess-fallback"));
+
+        // Mode-filtered query NOT issued — fell through to unfiltered.
+        verify(quizSessionRepository, never()).findByOwnerIdAndModeOrderByCreatedAtDesc(
+                anyString(), any(QuizSession.Mode.class), any(Pageable.class));
     }
 }

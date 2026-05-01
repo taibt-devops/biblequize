@@ -654,8 +654,19 @@ public class RankedController {
         // threshold only changes when someone in the top N gains points,
         // so a stale read by < 60s is acceptable for an MVP. Skipped for
         // unauthenticated requests.
+        // R10 additions — season placement + week-highest combo. All
+        // null when (a) unauthenticated, (b) no active season,
+        // (c) user has no SeasonRanking row, or (d) no ranked answers
+        // in the past 7 days. seasonRankDelta is intentionally null
+        // until v1.1 (DECISIONS — option C: defer snapshot infra).
         body.put("pointsToTop50", null);
         body.put("pointsToTop10", null);
+        body.put("pointsToTop100", null);
+        body.put("seasonRank", null);
+        body.put("seasonTotalPlayers", null);
+        body.put("seasonPoints", null);
+        body.put("seasonRankDelta", null);
+        body.put("weekHighestCombo", null);
         try {
             String topEmail = resolveEmail(authentication);
             if (topEmail != null) {
@@ -665,8 +676,9 @@ public class RankedController {
                             seasonService.getActiveSeason();
                     if (activeSeason.isPresent()) {
                         String seasonId = activeSeason.get().getId();
-                        int userPoints = seasonRankingRepository
-                                .findBySeasonIdAndUserId(seasonId, topUser.getId())
+                        java.util.Optional<com.biblequiz.modules.season.entity.SeasonRanking> srOpt =
+                                seasonRankingRepository.findBySeasonIdAndUserId(seasonId, topUser.getId());
+                        int userPoints = srOpt
                                 .map(sr -> sr.getTotalPoints() != null ? sr.getTotalPoints() : 0)
                                 .orElse(0);
                         Integer top50 = getCachedSeasonScoreAtRank(seasonId, 50);
@@ -677,11 +689,49 @@ public class RankedController {
                         if (top10 != null && userPoints < top10) {
                             body.put("pointsToTop10", top10 - userPoints + 1);
                         }
+                        Integer top100 = getCachedSeasonScoreAtRank(seasonId, 100);
+                        if (top100 != null && userPoints < top100) {
+                            body.put("pointsToTop100", top100 - userPoints + 1);
+                        }
+                        // Season placement (rank, total players, points). Only
+                        // fill when the user has a SeasonRanking row — a brand
+                        // new account with 0 ranked answers shouldn't claim
+                        // a rank.
+                        if (srOpt.isPresent()) {
+                            int rank = (int) seasonRankingRepository
+                                    .countUsersAheadInSeason(seasonId, userPoints) + 1;
+                            long totalPlayers = seasonRankingRepository.countBySeasonId(seasonId);
+                            body.put("seasonRank", rank);
+                            body.put("seasonTotalPlayers", totalPlayers);
+                            body.put("seasonPoints", userPoints);
+                        }
+                    }
+                    // Week-highest combo — longest consecutive-correct run
+                    // across the user's ranked answers in the trailing 7
+                    // days. Uses a projection-only query to avoid loading
+                    // full Answer entities. Returns null when there are no
+                    // ranked answers in the window so the FE can hide the
+                    // sidebar widget instead of showing "0".
+                    LocalDateTime weekStart = LocalDateTime.now(ZoneOffset.UTC).minusDays(7);
+                    java.util.List<Boolean> answers = answerRepository
+                            .findRankedAnswerCorrectnessSince(topUser.getId(), weekStart);
+                    if (!answers.isEmpty()) {
+                        int best = 0;
+                        int run = 0;
+                        for (Boolean correct : answers) {
+                            if (Boolean.TRUE.equals(correct)) {
+                                run += 1;
+                                if (run > best) best = run;
+                            } else {
+                                run = 0;
+                            }
+                        }
+                        body.put("weekHighestCombo", best);
                     }
                 }
             }
         } catch (Exception ex) {
-            log.debug("pointsToTopN computation failed: {}", ex.getMessage());
+            log.debug("season placement / weekly combo computation failed: {}", ex.getMessage());
         }
 
         // Set reset time - configurable for testing vs production

@@ -77,4 +77,23 @@ public interface AnswerRepository extends JpaRepository<Answer, String> {
             @Param("userId") String userId,
             @Param("todayStart") LocalDateTime todayStart,
             @Param("tomorrowStart") LocalDateTime tomorrowStart);
+
+    /**
+     * Stream the user's RANKED answers in a window in chronological
+     * order, projecting only {@code isCorrect} so the combo scan can
+     * walk a flat boolean list without hydrating the full Answer
+     * entity. Pair with {@link Boolean} list iteration to compute the
+     * longest consecutive-correct run (e.g., week-highest combo).
+     */
+    @Query("""
+            SELECT a.isCorrect
+            FROM Answer a
+            WHERE a.user.id = :userId
+              AND a.session.mode = com.biblequiz.modules.quiz.entity.QuizSession.Mode.ranked
+              AND a.createdAt >= :since
+            ORDER BY a.createdAt ASC
+            """)
+    List<Boolean> findRankedAnswerCorrectnessSince(
+            @Param("userId") String userId,
+            @Param("since") LocalDateTime since);
 }

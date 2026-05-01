@@ -561,6 +561,106 @@ class RankedControllerTest extends BaseControllerTest {
         verify(cacheService, never()).put(contains("top-10"), any(), any(java.time.Duration.class));
     }
 
+    // ── R10: pointsToTop100 / season placement / weekHighestCombo ─────────
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_userBelowTop100_returnsPointsToTop100() throws Exception {
+        // userPoints = 20, top100 threshold = 50 → need 31 to pass.
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason()));
+        when(seasonRankingRepository.findBySeasonIdAndUserId("season-1", "user-1"))
+                .thenReturn(Optional.of(userRanking(20)));
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 99)).thenReturn(Optional.of(50));
+        when(cacheService.get(anyString(), eq(Integer.class))).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.pointsToTop100").value(31));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_userAboveTop100_returnsNullPointsToTop100() throws Exception {
+        // User comfortably inside top 100 → field reads null so the
+        // sidebar widget hides the "Đến top 100" milestone.
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason()));
+        when(seasonRankingRepository.findBySeasonIdAndUserId("season-1", "user-1"))
+                .thenReturn(Optional.of(userRanking(500)));
+        when(seasonRankingRepository.findScoreAtRankOffset("season-1", 99)).thenReturn(Optional.of(50));
+        when(cacheService.get(anyString(), eq(Integer.class))).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.pointsToTop100").value(org.hamcrest.Matchers.nullValue()));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_returnsSeasonRankAndTotalPlayers() throws Exception {
+        // 12 users have more points than this user → rank = 13.
+        // 200 total rows in season → 200 players in the season.
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason()));
+        when(seasonRankingRepository.findBySeasonIdAndUserId("season-1", "user-1"))
+                .thenReturn(Optional.of(userRanking(40)));
+        when(seasonRankingRepository.countUsersAheadInSeason("season-1", 40)).thenReturn(12L);
+        when(seasonRankingRepository.countBySeasonId("season-1")).thenReturn(200L);
+        when(cacheService.get(anyString(), eq(Integer.class))).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.seasonRank").value(13))
+                .andExpect(jsonPath("$.seasonTotalPlayers").value(200))
+                .andExpect(jsonPath("$.seasonPoints").value(40))
+                // R10 deferred per option C — always null until snapshot infra ships.
+                .andExpect(jsonPath("$.seasonRankDelta").value(org.hamcrest.Matchers.nullValue()));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_userWithoutSeasonRanking_returnsNullSeasonFields() throws Exception {
+        // Active season exists but user has no SeasonRanking row → don't
+        // claim a rank for them (would be misleading "#1 of 0").
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason()));
+        when(seasonRankingRepository.findBySeasonIdAndUserId("season-1", "user-1"))
+                .thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.seasonRank").value(org.hamcrest.Matchers.nullValue()))
+                .andExpect(jsonPath("$.seasonTotalPlayers").value(org.hamcrest.Matchers.nullValue()))
+                .andExpect(jsonPath("$.seasonPoints").value(org.hamcrest.Matchers.nullValue()));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_weekHighestCombo_pickedFromAnswerStream() throws Exception {
+        // Stream: T T T F T T → longest run = 3.
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason()));
+        when(seasonRankingRepository.findBySeasonIdAndUserId("season-1", "user-1"))
+                .thenReturn(Optional.of(userRanking(40)));
+        when(answerRepository.findRankedAnswerCorrectnessSince(eq("user-1"), any(java.time.LocalDateTime.class)))
+                .thenReturn(java.util.List.of(true, true, true, false, true, true));
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.weekHighestCombo").value(3));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void getRankedStatus_weekHighestCombo_emptyWindowReturnsNull() throws Exception {
+        // No ranked answers in the past 7 days → null (FE hides widget).
+        when(seasonService.getActiveSeason()).thenReturn(Optional.of(activeSeason()));
+        when(seasonRankingRepository.findBySeasonIdAndUserId("season-1", "user-1"))
+                .thenReturn(Optional.of(userRanking(40)));
+        when(answerRepository.findRankedAnswerCorrectnessSince(eq("user-1"), any(java.time.LocalDateTime.class)))
+                .thenReturn(java.util.Collections.emptyList());
+
+        mockMvc.perform(get("/api/me/ranked-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.weekHighestCombo").value(org.hamcrest.Matchers.nullValue()));
+    }
+
     // ── POST /api/ranked/sync-progress ───────────────────────────────────────
 
     @Test

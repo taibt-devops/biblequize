@@ -102,26 +102,21 @@ function MatchRow({ match }: RowProps) {
  * Recent-matches section on /ranked — surfaces the 3 most recent ranked
  * sessions so the user has momentum context when they return (RK-P2-3).
  *
- * Fetches /api/me/history (no `mode` query param yet — R10 will add)
- * and filters client-side to {@code mode === 'ranked'}. Until R10
- * lands, fetching limit=20 + filtering keeps the FE simple and a
- * single roundtrip; once the BE supports the filter we can drop the
- * client-side filter.
- *
- * Each row links to /sessions/{id}/review — the existing review
- * route — so users can re-walk their answers.
+ * Uses {@code /api/me/history?mode=ranked} (R10 added the mode filter
+ * server-side) so the BE returns only the ranked sessions. Each row
+ * links to /sessions/{id}/review so users can re-walk their answers.
  */
 export default function RecentMatchesSection() {
   const { t } = useTranslation()
 
   const { data, isLoading } = useQuery<HistoryResponse>({
     queryKey: ['ranked-history'],
-    queryFn: () => api.get('/api/me/history?limit=20').then(r => r.data),
+    queryFn: () => api.get('/api/me/history?mode=ranked&limit=5').then(r => r.data),
     staleTime: 60_000,
   })
 
   if (isLoading) return null
-  const ranked = (data?.items ?? []).filter(s => s.mode === 'ranked').slice(0, 3)
+  const ranked = (data?.items ?? []).slice(0, 3)
 
   return (
     <section>
