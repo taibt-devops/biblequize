@@ -16,8 +16,8 @@ Sau khi đối chiếu code hiện tại trên branch:
 
 | Status | Count | Issue IDs |
 |--------|-------|-----------|
-| ✅ **FIXED** bởi H1-H8 + AppLayout refactor | 6 | HM-P1-2, HM-P1-3, HM-P2-2, HM-P2-4, HM-MB-3, **HM-P0-1** |
-| ⚠️ **STILL VALID** — cần fix | 2 | HM-P1-1 (partial), HM-MB-2 |
+| ✅ **FIXED** bởi H1-H8 + AppLayout refactor + Direction-3 tabs | 7 | HM-P1-2, HM-P1-3, HM-P2-2, HM-P2-4, HM-MB-3, HM-P0-1, **HM-MB-2** |
+| ⚠️ **STILL VALID** — cần fix | 1 | HM-P1-1 (partial — wait BE) |
 | 🟢 **BY DESIGN** — match mockup intent | 4 | HM-P1-4, HM-P2-3, HM-P3-1, HM-P3-2 |
 | 💡 **ENHANCEMENT** — vượt mockup, subjective | 2 | HM-MB-1, HM-P3-3 |
 | ⏳ **DEPENDS ON** other work | 1 | HM-MB-5 (COLOR_AUDIT Task 1) |
@@ -526,14 +526,9 @@ Trên mobile, user cần affordance rõ vì:
 
 ---
 
-### HM-MB-2: Bottom tabs labels có thể wrap ở viewport hẹp ⚠️ STILL VALID — chưa test 320px
+### HM-MB-2: Bottom tabs labels có thể wrap ở viewport hẹp ✅ DONE 2026-05-01
 
-**Audit 2026-05-01:** [AppLayout.tsx:277](../apps/web/src/layouts/AppLayout.tsx#L277) hiện tại:
-```tsx
-<span className="text-[10px] font-black uppercase tracking-widest">{t(item.labelKey)}</span>
-```
-
-`tracking-widest` (0.1em) + uppercase + 2-từ labels ("Trang chủ"/"Xếp hạng"/"Cá nhân") trên iPhone SE 320px (~64px usable per tab) **có rủi ro wrap thật**. Chưa được test trên 320px viewport. Cần verify visually + rút label nếu cần.
+**Status:** Implemented Direction-3 (label only when active) in `MobileBottomTabs.tsx`. Inactive tabs show the icon only; the active tab renders an icon + label pill. Only one label is on screen at any time, and the pill flexes to its content width — eliminates the wrap risk on 320px viewports. `safe-area-inset-bottom` honored for iPhone home indicator.
 
 **Severity:** P2 · **Type:** Responsive · **Effort:** 30min test + fix
 
@@ -847,7 +842,7 @@ Hiện tại chỉ có Logo + Avatar (no dropdown), giống top bar desktop trư
 | HM-P3-2 | P3 | 🟢 BY DESIGN — match mockup hard edge | Skip |
 | HM-P3-3 | P3 | 💡 ENHANCEMENT (vượt mockup) | Defer |
 | **HM-MB-1** | **P1** | 💡 ENHANCEMENT (mockup không có arrow) | Defer / subjective |
-| **HM-MB-2** | **P2** | ⚠️ STILL VALID — chưa test 320px | Cần fix |
+| **HM-MB-2** | **P2** | ✅ DONE 2026-05-01 (Direction-3 active-only-label) | Closed |
 | **HM-MB-3** | **P3** | ✅ FIXED bởi H3 (Practice → blue theme) | Closed |
 | **HM-MB-4** | **P3** | 💡 ENHANCEMENT (subjective) | Defer |
 | **HM-MB-5** | **P2** | ⏳ DEPENDS ON COLOR_AUDIT Task 1 | Wait for color audit |
