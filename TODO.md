@@ -1,6 +1,10 @@
 # TODO
 
-## 2026-05-01 — Leaderboard LB-2 Sprint: 3 tabs + 4 liturgical seasons [IN PROGRESS]
+## 2026-05-01 — Leaderboard LB-2 Sprint: 3 tabs + 4 liturgical seasons [DONE]
+
+> **Sprint summary**: Bui's mid-Sprint request — bỏ Daily tab + thay 1-mùa/năm bằng 4 mùa Cơ-đốc. 3 commits trên main. Bonus discovered + fixed `endAt`/`endDate` field mismatch causing countdown to always be null.
+> **Commits**: 5ef9b48 (LB-2.1 BE seeder + service) · 16d10bd (LB-2.2 FE 3 tabs + dynamic label + endDate fix) · LB-2.3 wrap-up.
+> **Tests**: BE 19/19 (12 LeaderboardController + 7 SeasonService). FE Leaderboard.test.tsx 22/22 isolated. Combined Leaderboard + components: 223/224 (1 fail BasicQuizCard pre-existing timer flakiness, NOT regression). i18n 0 missing.
 
 > **Source:** Bui's request 2026-05-01 — bỏ Daily tab, thay 1-mùa/năm bằng 4 mùa Cơ-đốc theo quarter (Mùa Phục Sinh / Ngũ Tuần / Cảm Tạ / Giáng Sinh).
 > **Decision:** Pick 1A · 2A · 3C · 4B — xem `DECISIONS.md` 2026-05-01 "Leaderboard tabs + 4 liturgical seasons".
@@ -51,16 +55,18 @@
   - [x] Tests: 22/22 pass (was 21 + 2 LB-2.2 - 1 daily-tab test removed)
   - [x] Tầng 2 pages: 480 pass (29 fails Ranked baseline)
   - [x] i18n validator: 0 missing, +2 hardcoded JSDoc (accepted debt)
-  - [ ] Commit: `feat(leaderboard): 3 tabs + dynamic Mùa label + fix endDate bug (LB-2.2)` — PENDING
+  - [x] Commit: `feat(leaderboard): 3 tabs + dynamic Mùa label + fix endDate bug (LB-2.2)` (16d10bd)
 
-### Task LB-2.3: Final regression + bug report update [ ] TODO
-- Status: [ ] TODO
+### Task LB-2.3: Final regression + bug report update [x] DONE 2026-05-01
+- Status: [x] DONE — pending commit
 - Checklist:
-  - [ ] BE: LeaderboardControllerTest + SeasonServiceTest pass
-  - [ ] FE: Leaderboard.test.tsx + Tầng 2 pages
-  - [ ] i18n validator: 0 missing keys
-  - [ ] Update BUG_REPORT_LEADERBOARD.md if Bui's request closed any deferred bugs
-  - [ ] Commit: `chore(leaderboard): LB-2 Sprint wrap-up (LB-2.3)`
+  - [x] BE: LeaderboardControllerTest 12/12 + SeasonServiceTest 7/7 = 19/19
+  - [x] FE: Leaderboard.test.tsx 22/22 isolated
+  - [x] FE combined Leaderboard + components: 223/224 (1 BasicQuizCard timer flakiness pre-existing — verified isolated pass)
+  - [x] FE Tầng 2 pages: 480 pass (29 fails Ranked baseline drift, NOT new regressions)
+  - [x] i18n validator: 0 missing keys
+  - [x] Update BUG_REPORT_LEADERBOARD.md with LB-2 sprint section
+  - [ ] Commit: `chore(leaderboard): LB-2 Sprint wrap-up (LB-2.3)` — PENDING
 
 ---
 

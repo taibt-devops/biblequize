@@ -28,6 +28,20 @@
 
 Tracked in `TODO.md` "Leaderboard Redesign Sprint 1 [DONE]".
 
+## 📊 LB-2 Sprint (2026-05-01 Bui request)
+
+Bui requested mid-Sprint changes:
+1. Bỏ tab "Hôm nay" → giữ 3 tabs (Tuần / Mùa / Tất cả)
+2. Thay 1-mùa/năm bằng 4 mùa Cơ-đốc theo quarter calendar (Mùa Phục Sinh / Ngũ Tuần / Cảm Tạ / Giáng Sinh)
+
+| Change | Status | Commit |
+|---|---|---|
+| LB-2.1 BE: 4 liturgical seasons + date-based active lookup | ✅ DONE | `5ef9b48` |
+| LB-2.2 FE: 3 tabs + dynamic Mùa label + endDate bug fix | ✅ DONE | `16d10bd` |
+| LB-2.3 wrap-up | ✅ DONE | this commit |
+
+**Bonus bug fix in LB-2.2**: discovered `season.endAt` (FE) vs `season.endDate` (BE) field mismatch — countdown was always null. Fixed.
+
 ---
 
 ## 🔴 P0 — Production Blockers
