@@ -71,15 +71,15 @@ describe('Leaderboard', () => {
     await waitFor(() => { expect(screen.getAllByText('Bạn').length).toBeGreaterThan(0) })
   })
 
-  it('LB-2.2: renders 3 tab buttons — no Daily, dynamic Mùa label', async () => {
+  it('LB-2.2: renders 3 tab buttons — no Daily, generic "Mùa" label', () => {
     renderLeaderboard()
     // Daily tab REMOVED in LB-2 (decision 2026-05-01)
     expect(screen.queryByText('Hàng ngày')).not.toBeInTheDocument()
     expect(screen.getByText('Hàng tuần')).toBeInTheDocument()
-    // Tab "Mùa" label is dynamic — uses active season name uppercased
-    await waitFor(() => {
-      expect(screen.getByText('MÙA NGŨ TUẦN 2026')).toBeInTheDocument()
-    })
+    // Tab "Mùa" label is the generic i18n string (Bui decision 2026-05-02
+    // revision: dynamic season name caused ugly tabs when test data leaked
+    // long auto-generated names like "Season E2E Test 1776471648641").
+    expect(screen.getByText('Mùa')).toBeInTheDocument()
     expect(screen.getByText('Tất cả')).toBeInTheDocument()
   })
 
@@ -249,11 +249,11 @@ describe('Leaderboard', () => {
     })
   })
 
-  it('LB-1.3 + LB-2.2: clicking Season tab (dynamic name) fetches /api/leaderboard/season', async () => {
+  it('LB-1.3 + LB-2.2: clicking Season tab fetches /api/leaderboard/season', async () => {
     renderLeaderboard()
-    // Tab label is dynamic from active season — wait for it to render
-    await waitFor(() => { expect(screen.getByText('MÙA NGŨ TUẦN 2026')).toBeInTheDocument() })
-    fireEvent.click(screen.getByText('MÙA NGŨ TUẦN 2026'))
+    // Generic "Mùa" label per Bui decision 2026-05-02 revision.
+    await waitFor(() => { expect(screen.getByText('Mùa')).toBeInTheDocument() })
+    fireEvent.click(screen.getByText('Mùa'))
     await waitFor(() => {
       expect(mockApiGet).toHaveBeenCalledWith(expect.stringContaining('/leaderboard/season'))
     })

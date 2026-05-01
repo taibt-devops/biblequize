@@ -46,15 +46,15 @@ export default function Leaderboard() {
     staleTime: 300_000,
   })
 
-  // Tab "Mùa" label: dynamic season name when active season available (decision 1A);
-  // fallback to generic 'Mùa' while season query loading or no active season.
-  const seasonLabel = season?.active && season.name
-    ? season.name.toUpperCase()
-    : t('leaderboard.season')
-
+  // Tab "Mùa" label is always the generic "Mùa" string (Bui decision 2026-05-02
+  // revision of LB-2 1A). The dynamic season-name approach broke down when test
+  // data produced names like "Season E2E Test 1776471648641" — the tab visually
+  // ballooned and looked unprofessional. The current season name is still
+  // surfaced via the countdown header + sidebar widget on the page itself, so
+  // information isn't lost — only the tab label stays compact.
   const tabs: { key: Tab; label: string }[] = [
     { key: 'weekly', label: t('leaderboard.weekly') },
-    { key: 'season', label: seasonLabel },
+    { key: 'season', label: t('leaderboard.season') },
     { key: 'all_time', label: t('leaderboard.allTime') },
   ]
 
