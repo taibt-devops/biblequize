@@ -120,9 +120,14 @@ export default function SeasonCard() {
         {t('ranked.seasonRewardHint', { name: seasonName })}
       </p>
 
-      <div className="flex items-center gap-4 mb-3">
+      {/* Mobile stacks the three stat columns vertically; desktop keeps
+          them side-by-side with vertical separators. The border + pl
+          utilities are inverted between breakpoints so the divider sits
+          at the top of each row on mobile (a single hairline is the
+          least invasive grouping signal in a thin column). */}
+      <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-4 mb-3">
         {/* Rank column */}
-        <div className="min-w-[88px]">
+        <div className="md:min-w-[88px]">
           <div className="text-on-surface-variant/50 text-[10px] tracking-wider mb-0.5">
             {t('ranked.seasonRankLabel')}
           </div>
@@ -158,7 +163,7 @@ export default function SeasonCard() {
         </div>
 
         {/* Points column */}
-        <div className="flex-1 pl-4 border-l border-white/[0.08]">
+        <div className="md:flex-1 md:pl-4 md:border-l border-t md:border-t-0 border-white/[0.08] pt-3 md:pt-0">
           <div className="text-on-surface-variant/50 text-[10px] tracking-wider mb-0.5">
             {t('ranked.seasonPointsBigLabel')}
           </div>
@@ -176,7 +181,7 @@ export default function SeasonCard() {
         </div>
 
         {/* Trend column — placeholder until R10 BE adds seasonRankDelta */}
-        <div className="pl-4 border-l border-white/[0.08]">
+        <div className="md:pl-4 md:border-l border-t md:border-t-0 border-white/[0.08] pt-3 md:pt-0">
           <div className="text-on-surface-variant/50 text-[10px] tracking-wider mb-0.5">
             {t('ranked.seasonTrendLabel')}
           </div>
