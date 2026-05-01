@@ -380,13 +380,14 @@ class SessionServiceTest {
         }
 
         @Test
-        void submitAnswer_practiceMode_tier1_creditsXpToUserDailyProgress() {
-                // Updated contract: Practice NOW grants XP up to the Tier-2 cap.
-                // Tier-1 users (totalPoints < 1000) receive scoreDelta into
-                // UserDailyProgress.pointsCounted so that Practice contributes
-                // to tier progression — this is the onboarding path. Once
-                // totalPoints >= 1000, the cap kicks in (see separate test).
-                // See creditNonRankedProgress javadoc + user request 2026-04-20.
+        void submitAnswer_practiceMode_tier1_doesNotGrantPointsCounted() {
+                // Option A (V2 fix 2026-05-02): Practice mode NEVER grants ranked
+                // leaderboard points, regardless of tier. Previously Tier-1 users
+                // received scoreDelta into pointsCounted as an onboarding path —
+                // that contaminated the daily/weekly/all-time leaderboards. Now
+                // Tier-1 Practice still ticks questionsCounted (for stats + daily
+                // missions) but pointsCounted stays at 0.
+                // See AUDIT_VARIETY_MODES_LEADERBOARD.md V2.
                 when(quizSessionRepository.findById("session1")).thenReturn(Optional.of(sampleSession));
                 when(userRepository.findById("user1")).thenReturn(Optional.of(sampleUser));
                 when(questionRepository.findById("q1")).thenReturn(Optional.of(sampleQuestion));
@@ -397,23 +398,22 @@ class SessionServiceTest {
                                 .thenReturn(new QuizSessionQuestion());
                 when(userDailyProgressRepository.findByUserIdAndDate(eq("user1"), any()))
                                 .thenReturn(Optional.empty());
-                // Tier-1 user: totalPoints < 1000 → grantXp = true
-                when(userTierService.getTotalPoints("user1")).thenReturn(0);
 
                 sessionService.submitAnswer("session1", "user1", "q1", 0, 5000);
 
-                // Practice now writes UDP: questionsCounted ticks always,
-                // pointsCounted increases on correct answers under cap.
                 verify(userDailyProgressRepository).findByUserIdAndDate("user1", java.time.LocalDate.now(java.time.ZoneOffset.UTC));
                 verify(userDailyProgressRepository).save(argThat(udp ->
-                        udp.getQuestionsCounted() != null && udp.getQuestionsCounted() == 1));
+                        udp.getQuestionsCounted() != null && udp.getQuestionsCounted() == 1
+                                && udp.getPointsCounted() != null && udp.getPointsCounted() == 0));
         }
 
         @Test
-        void submitAnswer_practiceMode_tier2_capsXpButStillTicksQuestions() {
-                // Cap invariant: once totalPoints >= 1000 (Tier 2+), Practice
-                // stops granting XP but questionsCounted still ticks so daily
-                // missions / streak keep working.
+        void submitAnswer_practiceMode_tier2_doesNotGrantPointsCounted() {
+                // Option A (V2 fix 2026-05-02): same as Tier-1 — Practice never
+                // grants pointsCounted. Tier-2 was already excluded under the old
+                // cap logic; this test is now redundant with the Tier-1 test but
+                // kept as a regression guard in case someone reintroduces a tier-
+                // dependent grant path.
                 when(quizSessionRepository.findById("session1")).thenReturn(Optional.of(sampleSession));
                 when(userRepository.findById("user1")).thenReturn(Optional.of(sampleUser));
                 when(questionRepository.findById("q1")).thenReturn(Optional.of(sampleQuestion));
@@ -424,12 +424,66 @@ class SessionServiceTest {
                                 .thenReturn(new QuizSessionQuestion());
                 when(userDailyProgressRepository.findByUserIdAndDate(eq("user1"), any()))
                                 .thenReturn(Optional.empty());
-                // Tier-2 user: totalPoints = 1500 → grantXp = false
-                when(userTierService.getTotalPoints("user1")).thenReturn(1500);
 
                 sessionService.submitAnswer("session1", "user1", "q1", 0, 5000);
 
-                // questionsCounted ticks, pointsCounted stays 0.
+                verify(userDailyProgressRepository).save(argThat(udp ->
+                        udp.getQuestionsCounted() != null && udp.getQuestionsCounted() == 1
+                                && udp.getPointsCounted() != null && udp.getPointsCounted() == 0));
+        }
+
+        @Test
+        void submitAnswer_singleMode_doesNotGrantPointsCounted() {
+                // Option A (V2.5 fix 2026-05-02): Single mode (custom solo quiz,
+                // not yet wired in production FE) also must not contaminate the
+                // ranked leaderboard ledger. questionsCounted ticks; pointsCounted
+                // stays 0.
+                QuizSession singleSession = new QuizSession();
+                singleSession.setId("ss1");
+                singleSession.setMode(QuizSession.Mode.single);
+                singleSession.setOwner(sampleUser);
+                singleSession.setStatus(QuizSession.Status.in_progress);
+                singleSession.setScore(0);
+                singleSession.setTotalQuestions(1);
+                singleSession.setCorrectAnswers(0);
+
+                when(quizSessionRepository.findById("ss1")).thenReturn(Optional.of(singleSession));
+                when(userRepository.findById("user1")).thenReturn(Optional.of(sampleUser));
+                when(questionRepository.findById("q1")).thenReturn(Optional.of(sampleQuestion));
+                when(answerRepository.findBySessionIdAndQuestionIdAndUserId("ss1", "q1", "user1"))
+                                .thenReturn(Optional.empty());
+                when(answerRepository.save(any(Answer.class))).thenReturn(sampleAnswer);
+                when(quizSessionQuestionRepository.findBySessionIdAndQuestionId("ss1", "q1"))
+                                .thenReturn(new QuizSessionQuestion());
+                when(userDailyProgressRepository.findByUserIdAndDate(eq("user1"), any()))
+                                .thenReturn(Optional.empty());
+
+                sessionService.submitAnswer("ss1", "user1", "q1", 0, 5000);
+
+                verify(userDailyProgressRepository).save(argThat(udp ->
+                        udp.getQuestionsCounted() != null && udp.getQuestionsCounted() == 1
+                                && udp.getPointsCounted() != null && udp.getPointsCounted() == 0));
+        }
+
+        @Test
+        void submitAnswer_practiceMode_wrongAnswer_doesNotGrantPointsCounted() {
+                // Wrong answers always grant 0 points (any mode). Verify
+                // questionsCounted still increments so daily-mission progress
+                // counts the attempt.
+                when(quizSessionRepository.findById("session1")).thenReturn(Optional.of(sampleSession));
+                when(userRepository.findById("user1")).thenReturn(Optional.of(sampleUser));
+                when(questionRepository.findById("q1")).thenReturn(Optional.of(sampleQuestion));
+                when(answerRepository.findBySessionIdAndQuestionIdAndUserId("session1", "q1", "user1"))
+                                .thenReturn(Optional.empty());
+                when(answerRepository.save(any(Answer.class))).thenReturn(sampleAnswer);
+                when(quizSessionQuestionRepository.findBySessionIdAndQuestionId("session1", "q1"))
+                                .thenReturn(new QuizSessionQuestion());
+                when(userDailyProgressRepository.findByUserIdAndDate(eq("user1"), any()))
+                                .thenReturn(Optional.empty());
+
+                // sampleQuestion correct answer is index 0; submit index 1 = wrong
+                sessionService.submitAnswer("session1", "user1", "q1", 1, 5000);
+
                 verify(userDailyProgressRepository).save(argThat(udp ->
                         udp.getQuestionsCounted() != null && udp.getQuestionsCounted() == 1
                                 && udp.getPointsCounted() != null && udp.getPointsCounted() == 0));

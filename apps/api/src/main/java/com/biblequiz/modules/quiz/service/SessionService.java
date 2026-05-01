@@ -272,13 +272,17 @@ public class SessionService {
     private void creditNonRankedProgress(User user, QuizSession.Mode mode, boolean isCorrect, int scoreDelta) {
         if (mode == QuizSession.Mode.ranked) return;
 
-        boolean grantXp = true;
-        if (mode == QuizSession.Mode.practice) {
-            int totalPoints = userTierService.getTotalPoints(user.getId());
-            if (totalPoints >= 1_000) {
-                grantXp = false;
-            }
-        }
+        // Option A (Bui decision 2026-05-02 + AUDIT_VARIETY_MODES_LEADERBOARD.md V2):
+        // This method NEVER grants ranked leaderboard points. Practice (any tier)
+        // and Single modes are the only callers in production today; both are
+        // excluded from the leaderboard ledger so Tier-1 grinders cannot climb
+        // ranked leaderboards via Practice.
+        // Only Daily Challenge (DailyChallengeService.creditCompletionXp +50 XP,
+        // intentional per Bui decision) and Ranked (RankedController.submitRankedAnswer)
+        // write to UserDailyProgress.pointsCounted.
+        // questionsCounted still ticks so stats / accuracy / daily-mission progress
+        // continue working for non-ranked play.
+        boolean grantPoints = false;
 
         java.time.LocalDate today = java.time.LocalDate.now(java.time.ZoneOffset.UTC);
         com.biblequiz.modules.quiz.entity.UserDailyProgress udp = userDailyProgressRepository
@@ -291,16 +295,16 @@ public class SessionService {
                     fresh.setPointsCounted(0);
                     return fresh;
                 });
-        int addPoints = (isCorrect && grantXp) ? Math.max(0, scoreDelta) : 0;
+        int addPoints = (isCorrect && grantPoints) ? Math.max(0, scoreDelta) : 0;
         int beforePoints = Optional.ofNullable(udp.getPointsCounted()).orElse(0);
         int beforeQuestions = Optional.ofNullable(udp.getQuestionsCounted()).orElse(0);
         udp.setPointsCounted(beforePoints + addPoints);
         udp.setQuestionsCounted(beforeQuestions + 1);
         userDailyProgressRepository.save(udp);
 
-        log.info("creditNonRankedProgress user={} mode={} isCorrect={} scoreDelta={} grantXp={} "
+        log.info("creditNonRankedProgress user={} mode={} isCorrect={} scoreDelta={} grantPoints={} "
                 + "pointsCounted={}→{} questionsCounted={}→{}",
-                user.getId(), mode, isCorrect, scoreDelta, grantXp,
+                user.getId(), mode, isCorrect, scoreDelta, grantPoints,
                 beforePoints, beforePoints + addPoints,
                 beforeQuestions, beforeQuestions + 1);
     }
