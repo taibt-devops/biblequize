@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate, Link, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../store/authStore';
 import { api } from '../api/client';
@@ -93,7 +93,24 @@ const GroupDetail: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  const [activeTab, setActiveTab] = useState<TabKey>('leaderboard');
+  // Deep-link support: ?tab=members opens that tab on mount.
+  const [searchParams, setSearchParams] = useSearchParams();
+  const initialTab = (searchParams.get('tab') as TabKey | null);
+  const validInitial: TabKey = initialTab && ['leaderboard', 'members', 'announcements', 'quizsets'].includes(initialTab)
+    ? initialTab
+    : 'leaderboard';
+  const [activeTab, setActiveTab] = useState<TabKey>(validInitial);
+
+  // Sync state → URL when user clicks a tab so deep links can be shared.
+  const handleTabChange = (key: TabKey) => {
+    setActiveTab(key);
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      if (key === 'leaderboard') next.delete('tab');
+      else next.set('tab', key);
+      return next;
+    }, { replace: true });
+  };
 
   // Leaderboard
   const [period, setPeriod] = useState<'weekly' | 'all_time'>('weekly');
@@ -351,7 +368,7 @@ const GroupDetail: React.FC = () => {
                 </button>
               </div>
               <h1 data-testid="group-name-heading" className="text-5xl font-black text-on-surface tracking-tighter mb-2 truncate">
-                {group.name}
+                {group.name?.trim() || t('groups.untitledGroup')}
               </h1>
               {group.description && (
                 <p className="text-on-surface-variant max-w-2xl font-medium leading-relaxed line-clamp-2">
@@ -462,7 +479,7 @@ const GroupDetail: React.FC = () => {
           {TABS.map(tab => (
             <button
               key={tab.key}
-              onClick={() => setActiveTab(tab.key)}
+              onClick={() => handleTabChange(tab.key)}
               className={`pb-4 px-2 font-bold text-sm tracking-wide transition-colors flex items-center gap-2 ${
                 activeTab === tab.key
                   ? 'text-secondary border-b-2 border-secondary'
