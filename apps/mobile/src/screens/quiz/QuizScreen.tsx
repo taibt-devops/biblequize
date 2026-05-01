@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { View, Text, StyleSheet, Pressable, Animated, Alert, BackHandler } from 'react-native'
+import Svg, { Circle } from 'react-native-svg'
 import { useNavigation, useRoute } from '@react-navigation/native'
 import { useTranslation } from 'react-i18next'
 import SafeScreen from '../../components/layout/SafeScreen'
@@ -41,6 +42,19 @@ function formatVerseRef(q: { book: string; chapter?: number; verseStart?: number
     return `${book} ${q.chapter}:${q.verseStart}-${q.verseEnd}`
   }
   return `${book} ${q.chapter}:${q.verseStart}`
+}
+
+// Timer ring constants — mirror web CircularTimer (QZ-P0-3).
+const TIMER_SIZE = 64
+const TIMER_STROKE = 4
+const TIMER_RADIUS = TIMER_SIZE / 2 - TIMER_STROKE - 1
+const TIMER_CIRCUMFERENCE = 2 * Math.PI * TIMER_RADIUS
+
+function colorForSeconds(s: number): string {
+  if (s > 10) return '#e8a832' // gold
+  if (s > 5) return '#eab308'  // yellow
+  if (s > 3) return '#ff8c42'  // orange
+  return '#ef4444'             // red — critical
 }
 
 export default function QuizScreen() {
@@ -179,11 +193,37 @@ export default function QuizScreen() {
 
         <ProgressBar progress={progress} height={4} />
 
-        {/* Timer */}
+        {/* Timer — circular ring with 4 colour bands (QZ-P0-3 mobile parity).
+            Pulse animations from the web version are intentionally omitted
+            here; the colour shift + shrinking arc are enough on a small
+            mobile screen and animations would need a separate Animated loop. */}
         <View style={styles.timerRow}>
-          <Text style={[styles.timerText, timeLeft <= 5 && styles.timerWarning]}>
-            {timeLeft}s
-          </Text>
+          <View style={styles.timerWrap}>
+            <Svg width={TIMER_SIZE} height={TIMER_SIZE} viewBox={`0 0 ${TIMER_SIZE} ${TIMER_SIZE}`}>
+              {/* Track */}
+              <Circle
+                cx={TIMER_SIZE / 2} cy={TIMER_SIZE / 2} r={TIMER_RADIUS}
+                stroke="rgba(255,255,255,0.06)" strokeWidth={TIMER_STROKE} fill="none"
+              />
+              {/* Progress arc — rotated -90° via originX/originY so 12 o'clock is start */}
+              <Circle
+                cx={TIMER_SIZE / 2} cy={TIMER_SIZE / 2} r={TIMER_RADIUS}
+                stroke={colorForSeconds(timeLeft)} strokeWidth={TIMER_STROKE} fill="none"
+                strokeDasharray={`${TIMER_CIRCUMFERENCE}`}
+                strokeDashoffset={
+                  TIMER_CIRCUMFERENCE *
+                  (1 - Math.max(0, Math.min(1, timePerQuestion > 0 ? timeLeft / timePerQuestion : 1)))
+                }
+                strokeLinecap="round"
+                rotation={-90}
+                originX={TIMER_SIZE / 2}
+                originY={TIMER_SIZE / 2}
+              />
+            </Svg>
+            <Text style={[styles.timerNumber, { color: colorForSeconds(timeLeft) }]}>
+              {timeLeft}
+            </Text>
+          </View>
           <Text style={styles.bookLabel}>{question.book} {question.chapter}</Text>
         </View>
 
@@ -281,8 +321,15 @@ const styles = StyleSheet.create({
   comboBadge: { backgroundColor: colors.surfaceContainer, borderRadius: borderRadius.full, paddingHorizontal: spacing.md, paddingVertical: spacing.xs },
   comboText: { fontSize: typography.size.sm, fontWeight: typography.weight.bold, color: colors.gold },
   timerRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginVertical: spacing.lg },
-  timerText: { fontSize: typography.size['2xl'], fontWeight: typography.weight.bold, color: colors.gold },
-  timerWarning: { color: colors.error },
+  timerWrap: {
+    width: TIMER_SIZE, height: TIMER_SIZE,
+    alignItems: 'center', justifyContent: 'center', position: 'relative',
+  },
+  timerNumber: {
+    position: 'absolute',
+    fontSize: TIMER_SIZE * 0.32,
+    fontWeight: typography.weight.medium,
+  },
   bookLabel: { fontSize: typography.size.xs, color: colors.textMuted },
   questionCard: {
     backgroundColor: colors.surfaceContainer, borderRadius: borderRadius['2xl'],
