@@ -7,6 +7,7 @@ import { soundManager } from '../services/soundManager'
 import { haptic } from '../utils/haptics'
 import { useLifeline } from '../hooks/useLifeline'
 import { AnswerButton, type AnswerState } from '../components/quiz/AnswerButton'
+import { CircularTimer } from '../components/quiz/CircularTimer'
 import { wrapProperNouns, formatVerseRef } from '../utils/textHelpers'
 import QuizResults from './QuizResults'
 
@@ -626,33 +627,19 @@ const Quiz: React.FC = () => {
             </div>
           </div>
 
-          {/* Circular Countdown Timer */}
+          {/* Circular Countdown Timer — CircularTimer handles 4 colour
+              bands (gold/yellow/orange/red) + warning/critical pulse
+              animations + correct dashOffset formula (QZ-P0-3). */}
           <div className="hidden md:flex flex-col items-center gap-1">
-            <span className="text-[10px] font-bold uppercase tracking-[0.1em] text-on-surface-variant">{t('quiz.time')}</span>
-            <div className={`relative w-14 h-14 flex items-center justify-center ${
-              timeLeft <= 3 ? 'timer-critical-anim' : timeLeft <= 5 ? 'timer-warning-anim' : ''
-            }`}>
-              <svg className="timer-svg w-full h-full" viewBox="0 0 36 36">
-                <circle
-                  className="stroke-surface-container-highest"
-                  cx="18" cy="18" r="16"
-                  fill="none" strokeWidth="2"
-                />
-                <circle
-                  className={`timer-arc ${timeLeft <= 3 ? 'stroke-error' : timeLeft <= 5 ? 'stroke-yellow-500' : 'stroke-secondary'}`}
-                  cx="18" cy="18" r="16"
-                  fill="none" strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeDasharray="100"
-                  strokeDashoffset={100 - (timeLeft / timerLimit) * 100}
-                />
-              </svg>
-              <span data-testid="quiz-timer" className={`absolute font-headline font-black text-xl ${
-                timeLeft <= 3 ? 'text-error' : timeLeft <= 5 ? 'text-yellow-500' : 'text-secondary'
-              }`}>
-                {timeLeft}
-              </span>
-            </div>
+            <span className="text-[10px] font-bold uppercase tracking-[0.1em] text-on-surface-variant">
+              {t('quiz.time')}
+            </span>
+            <CircularTimer
+              secondsLeft={timeLeft}
+              totalSeconds={timerLimit}
+              size={64}
+              testId="quiz-timer"
+            />
           </div>
 
           <div className="flex flex-col items-end gap-1">
