@@ -177,7 +177,7 @@
   - [x] DECISIONS.md: 2026-05-01 entry "mockup là design reference, content theo Option A"
   - [⏸️] Visual check 3 viewports: deferred — relying on Tailwind responsive classes + Vitest happy-dom for now; live check next time dev server is running
   - [⏸️] e2e Playwright: deferred — Leaderboard TC specs not yet written (TODO LB-2 follow-up)
-  - [ ] Commit: `chore(leaderboard): Sprint 1 wrap-up — bug report status + LB-1.3 fireEvent fix (LB-1.7)` — PENDING
+  - [x] Commit: `chore(leaderboard): Sprint 1 wrap-up — bug report status + LB-1.3 fireEvent fix (LB-1.7)` (d680e59)
 
 ---
 
