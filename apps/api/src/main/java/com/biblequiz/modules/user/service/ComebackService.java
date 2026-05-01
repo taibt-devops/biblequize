@@ -113,6 +113,17 @@ public class ComebackService {
         return "NONE";
     }
 
+    /**
+     * TODO: Wire the xpMultiplier rewards (2X_XP_DAY / RECOVERY_PACK / STARTER_PACK).
+     * The reward type is persisted to the user when claimed, but no scoring path checks
+     * for an active comeback reward and applies the 2.0x multiplier to ranked points.
+     * To wire: ScoringService should accept a "comeback boost" flag (similar to
+     * xpSurgeActive — see User.xpSurgeUntil) and RankedController.submitRankedAnswer
+     * should compute the flag from the user's active reward + duration.
+     * XP_BOOST (one-shot +50) is also dead code — no caller adds it to pointsCounted.
+     * Audit 2026-05-01 confirmed all xpMultiplier values here are JSON-only (FE may
+     * display the description, but the multiplier itself never reaches scoring).
+     */
     private Map<String, Object> buildRewardInfo(String tier, long daysSince) {
         return switch (tier) {
             case "XP_BOOST" -> Map.of("xpBonus", 50, "description", "+50 XP ngay lập tức");

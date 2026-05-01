@@ -90,6 +90,14 @@ public class ScoringService {
 
     /**
      * Calculate with tier XP multiplier + optional XP surge (1.5x from milestone burst).
+     *
+     * <p>TODO: Wire {@code xpSurgeActive} parameter — currently always false from all
+     * callers. {@code RankedController.submitRankedAnswer} calls
+     * {@link #calculate(Question.Difficulty, int, int, boolean)} (no tier/surge variant),
+     * so this overload is dead code. To wire: caller should pass
+     * {@code xpSurgeActive = user.getXpSurgeUntil() != null && user.getXpSurgeUntil().isAfter(LocalDateTime.now())}.
+     * See {@link com.biblequiz.modules.user.entity.User#xpSurgeUntil} TODO for context.
+     * Audit 2026-05-01 confirmed no production caller invokes this overload.
      */
     public ScoreResult calculateWithTier(Question.Difficulty difficulty, int clientElapsedMs,
                                           int currentStreak, boolean isDailyFirst, int tierLevel,

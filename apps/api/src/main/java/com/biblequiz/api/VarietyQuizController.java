@@ -131,6 +131,13 @@ public class VarietyQuizController {
 
     // ── Daily Bonus ──
 
+    /**
+     * TODO: Wire DOUBLE_XP bonusType. The endpoint advertises a 2.0x multiplier
+     * (and other bonus values) but no scoring path consumes the active bonus when
+     * computing awarded points. Decision needed before wiring: should DOUBLE_XP
+     * apply to ranked points only, tier XP only, or both? Consult Bui.
+     * Audit 2026-05-01 confirmed only this controller references DOUBLE_XP.
+     */
     @GetMapping("/daily-bonus")
     public ResponseEntity<?> getDailyBonus(Authentication auth) {
         String userId = getUserId(auth);
