@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { api } from '../api/client'
 import { getQuizLanguage } from '../utils/quizLanguage'
 import { useAuth } from '../store/authStore'
-import { useRankedDataSync } from '../hooks/useRankedDataSync'
 import { getTierInfo } from '../data/tiers'
+import { useRankedPage } from '../hooks/useRankedPage'
+import RankedSkeleton from '../components/ranked/RankedSkeleton'
 import RankedHeader from '../components/ranked/RankedHeader'
 import TierProgressCard from '../components/ranked/TierProgressCard'
 import EnergyCard from '../components/ranked/EnergyCard'
@@ -16,173 +16,30 @@ import CurrentBookCard from '../components/ranked/CurrentBookCard'
 import RecentMatchesSection from '../components/ranked/RecentMatchesSection'
 import RankedActionFooter from '../components/ranked/RankedActionFooter'
 
-const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
-
-/* ── Types ── */
-interface TierProgressData {
-  tierLevel: number
-  tierName: string
-  totalPoints: number
-  nextTierPoints: number
-  tierProgressPercent: number
-  starIndex: number
-  starXp: number
-  nextStarXp: number
-  starProgressPercent: number
-  milestone: string | null
-  surgeActive?: boolean
-  surgeUntil?: string | null
-  surgeMultiplier?: number
-}
-
-interface RankedStatus {
-  date: string
-  livesRemaining: number
-  questionsCounted: number
-  pointsToday: number
-  cap: number
-  dailyLives: number
-  currentBook: string
-  currentBookIndex: number
-  isPostCycle: boolean
-  currentDifficulty: string
-  nextBook?: string
-  resetAt: string
-  bookProgress?: {
-    currentIndex: number
-    totalBooks: number
-    currentBook: string
-    nextBook: string
-    isCompleted: boolean
-    progressPercentage: number
-  }
-  askedQuestionIdsToday?: string[]
-  askedQuestionCountToday?: number
-  // Path A backend extensions to /api/me/ranked-status. Each is null
-  // when the relevant signal is unavailable (no answers today, no
-  // yesterday baseline, leaderboard < N users, no active season).
-  // The component branches off `null` rather than coalescing to 0
-  // so missing-data and zero-value stay visually distinguishable.
-  dailyAccuracy: number | null         // 0.0 – 1.0
-  dailyCorrectCount: number | null
-  dailyTotalAnswered: number | null
-  dailyDelta: number | null            // can be negative
-  pointsToTop50: number | null         // null when user is already in top 50
-  pointsToTop10: number | null         // null when user is already in top 10
-  pointsToTop100?: number | null       // R10 will populate; null until then
-}
-
-// Tier data centralised in `data/tiers.ts` (single source of truth).
-// Use `getTierByPoints(points)` for current tier lookup.
-
-/* ── Skeleton ── */
-function RankedSkeleton() {
-  return (
-    <div className="max-w-5xl mx-auto space-y-6 animate-pulse">
-      <div className="h-12 w-64 rounded-xl bg-surface-container" />
-      <div className="h-40 rounded-xl bg-surface-container" />
-      <div className="grid grid-cols-12 gap-6">
-        <div className="col-span-7 h-44 rounded-xl bg-surface-container" />
-        <div className="col-span-5 h-44 rounded-xl bg-surface-container" />
-      </div>
-      <div className="h-48 rounded-xl bg-surface-container" />
-      <div className="h-16 rounded-xl bg-surface-container" />
-    </div>
-  )
-}
-
-/* ── Main ── */
 export default function Ranked() {
   const { t } = useTranslation()
-  const [rankedStatus, setRankedStatus] = useState<RankedStatus | null>(null)
-  const [isLoading, setIsLoading] = useState(true)
   const navigate = useNavigate()
   const { user } = useAuth()
-  const { isInitialized } = useRankedDataSync()
-
-  const [userRank, setUserRank] = useState<any>(null)
-  const [tierData, setTierData] = useState<TierProgressData | null>(null)
-  const [timeLeft, setTimeLeft] = useState('')
-
-  const fetchStatus = async () => {
-    setIsLoading(true)
-    try {
-      const res = await api.get('/api/me/ranked-status')
-      const data = res.data
-      if (data?.askedQuestionIdsToday?.length > 0) {
-        const today = new Date().toISOString().slice(0, 10)
-        localStorage.setItem('askedQuestionIds', JSON.stringify(data.askedQuestionIdsToday))
-        localStorage.setItem('lastAskedDate', today)
-      }
-      setRankedStatus(data ?? null)
-    } catch {
-      setRankedStatus(null)
-    } finally {
-      setIsLoading(false)
-    }
-  }
-
-  const fetchMyRank = async () => {
-    if (!user) return
-    try {
-      const today = new Date().toISOString().slice(0, 10)
-      const res = await api.get('/api/leaderboard/daily/my-rank', { params: { date: today } })
-      setUserRank(res.data)
-    } catch { /* rank info not available */ }
-  }
-
-  const fetchTierProgress = async () => {
-    if (!user) return
-    try {
-      const res = await api.get('/api/me/tier-progress')
-      setTierData(res.data)
-    } catch { /* fallback to FE-computed tier info from totalPoints */ }
-  }
-
-  useEffect(() => {
-    if (isInitialized) { fetchStatus(); fetchMyRank(); fetchTierProgress() }
-  }, [isInitialized])
-
-  // Countdown
-  useEffect(() => {
-    if (!rankedStatus?.resetAt) return
-    const tick = () => {
-      const diff = new Date(rankedStatus.resetAt).getTime() - Date.now()
-      if (diff <= 0) { setTimeLeft('00:00:00'); return false }
-      const h = Math.floor(diff / 3_600_000)
-      const m = Math.floor((diff % 3_600_000) / 60_000)
-      const s = Math.floor((diff % 60_000) / 1_000)
-      setTimeLeft(`${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`)
-      return true
-    }
-    tick() // Set initial value immediately (was only updating on interval)
-    const timer = setInterval(() => { if (!tick()) clearInterval(timer) }, 1000)
-    return () => clearInterval(timer)
-  }, [rankedStatus?.resetAt])
-
-  // Visibility change refresh
-  useEffect(() => {
-    const handler = () => { if (!document.hidden && isInitialized) fetchStatus() }
-    const customHandler = (e: CustomEvent) => {
-      try { setRankedStatus(prev => ({ ...prev!, ...e.detail })) } catch { /* ignore */ }
-    }
-    document.addEventListener('visibilitychange', handler)
-    window.addEventListener('rankedStatusUpdate', customHandler as EventListener)
-    return () => {
-      document.removeEventListener('visibilitychange', handler)
-      window.removeEventListener('rankedStatusUpdate', customHandler as EventListener)
-    }
-  }, [isInitialized])
+  const {
+    rankedStatus,
+    userRank,
+    tierData,
+    timeLeft,
+    isLoading,
+    isInitialized,
+    refetch,
+  } = useRankedPage()
 
   const startRankedQuiz = async () => {
+    if (!rankedStatus) return
     try {
       const res = await api.post('/api/ranked/sessions', { language: getQuizLanguage() })
       const sessionId = res.data.sessionId
-      const serverAskedIds: string[] = rankedStatus?.askedQuestionIdsToday ?? []
+      const serverAskedIds: string[] = rankedStatus.askedQuestionIdsToday ?? []
       const localAskedIds: string[] = (() => { try { return JSON.parse(localStorage.getItem('askedQuestionIds') || '[]') } catch { return [] } })()
       const exclude = new Set<string>([...serverAskedIds, ...localAskedIds])
 
-      let questions: any[] = []
+      const questions: any[] = []
       const addUnique = (items: any[]) => {
         for (const q of items ?? []) {
           if (!q?.id || exclude.has(q.id) || questions.find((x: any) => x.id === q.id)) continue
@@ -194,11 +51,11 @@ export default function Ranked() {
 
       if (questions.length < 10) {
         const params: any = { limit: 10 - questions.length, excludeIds: Array.from(exclude) }
-        if (rankedStatus?.currentBook) params.book = rankedStatus.currentBook
-        if (rankedStatus?.currentDifficulty && rankedStatus.currentDifficulty !== 'all') params.difficulty = rankedStatus.currentDifficulty
+        if (rankedStatus.currentBook) params.book = rankedStatus.currentBook
+        if (rankedStatus.currentDifficulty && rankedStatus.currentDifficulty !== 'all') params.difficulty = rankedStatus.currentDifficulty
         addUnique((await api.get('/api/questions', { params })).data ?? [])
       }
-      if (questions.length < 10 && rankedStatus?.currentBook) {
+      if (questions.length < 10 && rankedStatus.currentBook) {
         addUnique((await api.get('/api/questions', { params: { limit: 10 - questions.length, book: rankedStatus.currentBook, excludeIds: Array.from(exclude) } })).data ?? [])
       }
       if (questions.length < 10) {
@@ -211,10 +68,8 @@ export default function Ranked() {
     }
   }
 
-  // ── Loading ──
   if (isLoading || !isInitialized) return <RankedSkeleton />
 
-  // ── Error ──
   if (!rankedStatus) {
     return (
       <div className="flex items-center justify-center py-32">
@@ -222,7 +77,7 @@ export default function Ranked() {
           <span className="material-symbols-outlined text-error text-5xl mb-4 block">error</span>
           <p className="text-on-surface font-bold text-lg mb-2">{t('ranked.loadError')}</p>
           <p className="text-on-surface-variant text-sm mb-6">{t('ranked.tryAgainLater')}</p>
-          <button onClick={fetchStatus} className="gold-gradient text-on-secondary font-black px-8 py-3 rounded-xl text-sm uppercase tracking-widest">
+          <button onClick={refetch} className="gold-gradient text-on-secondary font-black px-8 py-3 rounded-xl text-sm uppercase tracking-widest">
             {t('common.retry')}
           </button>
         </div>
@@ -230,10 +85,10 @@ export default function Ranked() {
     )
   }
 
-  // ── Derived ──
-  const energyPct = rankedStatus.dailyLives > 0 ? Math.round((rankedStatus.livesRemaining / rankedStatus.dailyLives) * 100) : 0
+  // Derived values
   const canPlay = rankedStatus.livesRemaining > 0 && rankedStatus.questionsCounted < rankedStatus.cap
-  // Prefer tier-progress API totalPoints (all-time accurate); fall back to leaderboard rank or today's points.
+  // Prefer tier-progress API totalPoints (all-time accurate); fall
+  // back to leaderboard rank or today's points.
   const totalPoints = tierData?.totalPoints ?? userRank?.points ?? rankedStatus.pointsToday ?? 0
   const tierInfo = getTierInfo(totalPoints)
   const currentTier = tierInfo.current
@@ -252,10 +107,8 @@ export default function Ranked() {
 
   return (
     <main data-testid="ranked-page" className="max-w-5xl mx-auto space-y-6">
-      {/* ── Header (R2) — title + How to play ── */}
       <RankedHeader />
 
-      {/* ── Tier progress card (R2 — RK-P1-1, RK-P1-2) ── */}
       <TierProgressCard
         currentTier={currentTier}
         nextTier={nextTier}
@@ -265,7 +118,6 @@ export default function Ranked() {
         starIndex={tierData?.starIndex}
       />
 
-      {/* ── Energy + Streak 2-col (R3 — RK-P2-4) ── */}
       <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-3">
         <EnergyCard
           energy={rankedStatus.livesRemaining ?? 0}
@@ -275,9 +127,6 @@ export default function Ranked() {
         <RankedStreakCard streak={user?.currentStreak ?? 0} />
       </div>
 
-      {/* ── Daily stats 2-col (R4 — RK-P1-5) ──
-          Accuracy moved to sidebar WinRateWidget (R1) so this row is
-          now exactly two symmetric cards. */}
       <DailyStatsCards
         questionsAnswered={rankedStatus.questionsCounted ?? 0}
         questionsCap={rankedStatus.cap || 0}
@@ -288,10 +137,8 @@ export default function Ranked() {
         pointsToTop10={rankedStatus.pointsToTop10}
       />
 
-      {/* ── Season card (R5 — RK-P0-2, RK-P1-3, RK-P1-4, RK-P3-2) ── */}
       <SeasonCard />
 
-      {/* ── Current book card (R6 — RK-P0-3, RK-P1-6) ── */}
       <CurrentBookCard
         bookName={rankedStatus.currentBook}
         bookIndex={rankedStatus.currentBookIndex ?? 0}
@@ -299,10 +146,8 @@ export default function Ranked() {
         difficultyLabel={difficultyLabel}
       />
 
-      {/* ── Recent matches (R7 — RK-P2-3) ── */}
       <RecentMatchesSection />
 
-      {/* ── Action footer (R8 — RK-P2-2) ── */}
       <RankedActionFooter
         canPlay={canPlay}
         capReached={rankedStatus.questionsCounted >= rankedStatus.cap}

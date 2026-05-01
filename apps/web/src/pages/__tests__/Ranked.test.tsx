@@ -2,6 +2,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 const mockNavigate = vi.fn()
 vi.mock('react-router-dom', async () => {
@@ -33,8 +34,17 @@ vi.mock('../../api/client', () => ({
 
 import Ranked from '../Ranked'
 
+// Sub-components (SeasonCard R5, RecentMatchesSection R7) use
+// TanStack Query, so the page now needs a QueryClientProvider.
 function renderRanked() {
-  return render(<MemoryRouter><Ranked /></MemoryRouter>)
+  const queryClient = new QueryClient({
+    defaultOptions: { queries: { retry: false, gcTime: 0 } },
+  })
+  return render(
+    <QueryClientProvider client={queryClient}>
+      <MemoryRouter><Ranked /></MemoryRouter>
+    </QueryClientProvider>
+  )
 }
 
 const RANKED_STATUS = {
@@ -91,6 +101,11 @@ describe('Ranked Mode Dashboard', () => {
       if (url.includes('my-rank')) return Promise.resolve({ data: { rank: 42, points: 2340 } })
       if (url.includes('leaderboard')) return Promise.resolve({ data: [] })
       if (url.includes('questions')) return Promise.resolve({ data: [] })
+      // R5/R7 sub-components (SeasonCard, RecentMatchesSection) hit
+      // these — return safe defaults so they don't reject and crash
+      // the test rendering tree.
+      if (url.includes('/api/seasons/active')) return Promise.resolve({ data: null })
+      if (url.includes('/api/me/history')) return Promise.resolve({ data: { items: [], totalPages: 0, totalItems: 0, currentPage: 0, hasMore: false } })
       return Promise.reject(new Error('Not found'))
     })
     mockApiPost.mockResolvedValue({ data: { sessionId: 'sess-1' } })
