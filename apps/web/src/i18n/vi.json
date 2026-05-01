@@ -1681,7 +1681,7 @@
     "topMilestone": "Top {{n}}",
     "topMilestoneWithPoints": "Top {{n}} ({{points}}đ)",
     "unranked": "Chưa xếp hạng",
-    "ctaPlayMain": "Vào Thi Đấu Ngay",
+    "ctaPlayMain": "Vào trận đấu",
     "subtitle": "Cạnh tranh điểm số mỗi ngày",
     "energyExplainer": "Mỗi câu sai sẽ tốn 5 năng lượng · Trả lời đúng không tốn gì",
     "questionsCountedLabel": "CÂU RANKED HÔM NAY",
@@ -1727,7 +1727,7 @@
       "weekComboLabel": "COMBO CAO NHẤT TUẦN",
       "weekComboPending": "Sắp có"
     },
-    "ctaPlaySub": "Tiếp tục {{book}} • ~{{count}} câu với năng lượng hiện có",
+    "ctaPlaySub": "~{{count}} câu với năng lượng hiện có",
     "ctaNoEnergyMain": "🔋 Hết năng lượng",
     "ctaNoEnergySub": "Phục hồi sau {{time}}",
     "ctaCapMain": "✅ Hoàn thành ngày",

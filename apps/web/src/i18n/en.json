@@ -1681,7 +1681,7 @@
     "topMilestone": "Top {{n}}",
     "topMilestoneWithPoints": "Top {{n}} ({{points}} pts)",
     "unranked": "Unranked",
-    "ctaPlayMain": "Play Ranked Now",
+    "ctaPlayMain": "Enter match",
     "subtitle": "Daily competitive scoring",
     "energyExplainer": "Each wrong answer costs 5 energy · Correct answers cost nothing",
     "questionsCountedLabel": "RANKED Q TODAY",
@@ -1727,7 +1727,7 @@
       "weekComboLabel": "WEEK'S TOP COMBO",
       "weekComboPending": "Coming soon"
     },
-    "ctaPlaySub": "Continue {{book}} • ~{{count}} questions with current energy",
+    "ctaPlaySub": "~{{count}} questions with current energy",
     "ctaNoEnergyMain": "🔋 Out of energy",
     "ctaNoEnergySub": "Recovers in {{time}}",
     "ctaCapMain": "✅ Daily complete",

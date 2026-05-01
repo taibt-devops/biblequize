@@ -11,8 +11,6 @@ interface RankedActionFooterProps {
   /** Energy used to compute the "~N questions" descriptor on the
    *  active CTA. */
   energy: number
-  /** Active book name; appears in the resume sub-line. */
-  currentBook: string
   /** "{HH}:{MM}:{SS}" countdown to next reset for the disabled states. */
   resetTimeLeft: string
   /** Click handler for the primary CTA — already wired in Ranked.tsx
@@ -51,7 +49,6 @@ export default function RankedActionFooter({
   canPlay,
   capReached,
   energy,
-  currentBook,
   resetTimeLeft,
   onStart,
 }: RankedActionFooterProps) {
@@ -71,10 +68,7 @@ export default function RankedActionFooter({
         {t('ranked.ctaPlayMain')}
       </span>
       <span className="text-[11px] font-normal opacity-80">
-        {t('ranked.ctaPlaySub', {
-          book: currentBook,
-          count: questionsLeftFromEnergy,
-        })}
+        {t('ranked.ctaPlaySub', { count: questionsLeftFromEnergy })}
       </span>
     </button>
   ) : capReached ? (

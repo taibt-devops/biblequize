@@ -152,7 +152,6 @@ export default function Ranked() {
         canPlay={canPlay}
         capReached={rankedStatus.questionsCounted >= rankedStatus.cap}
         energy={rankedStatus.livesRemaining ?? 0}
-        currentBook={rankedStatus.currentBook}
         resetTimeLeft={timeLeft || '--:--:--'}
         onStart={startRankedQuiz}
       />
