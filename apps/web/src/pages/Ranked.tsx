@@ -106,7 +106,7 @@ export default function Ranked() {
     : rankedStatus.currentDifficulty === 'hard' ? t('practice.hard') : rankedStatus.currentDifficulty
 
   return (
-    <main data-testid="ranked-page" className="max-w-5xl mx-auto space-y-6">
+    <main data-testid="ranked-page" className="max-w-5xl mx-auto space-y-6 pb-[120px] md:pb-[112px]">
       <RankedHeader />
 
       <TierProgressCard
