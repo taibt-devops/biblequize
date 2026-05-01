@@ -799,10 +799,14 @@ const Quiz: React.FC = () => {
         </div>
       )}
 
-      {/* Explanation panel — always show for wrong answers */}
+      {/* Explanation panel — always show for wrong answers.
+          Bottom offset clears the feedback bar at bottom-10 (which on mobile
+          can wrap to 2-3 lines with "+N Điểm thưởng" → ~120-140px tall) so
+          the explanation text isn't truncated. max-h + overflow-y-auto keeps
+          long explanations from spilling above the answer grid. */}
       {showResult && isCorrect === false && (currentQuestion.explanation || currentQuestion.verseStart) && (
-        <div data-testid="quiz-explanation" className="fixed bottom-28 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-3rem)] max-w-lg animate-slide-up">
-          <div className="glass-panel p-5 rounded-2xl border border-error/20 space-y-3">
+        <div data-testid="quiz-explanation" className="fixed bottom-44 sm:bottom-32 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-3rem)] max-w-lg animate-slide-up">
+          <div className="glass-panel p-5 rounded-2xl border border-error/20 space-y-3 max-h-[50vh] overflow-y-auto">
             {/* Correct answer */}
             <div className="flex items-center gap-2">
               <span className="material-symbols-outlined text-green-400 text-sm" style={FILL_STYLE}>check_circle</span>
@@ -843,10 +847,12 @@ const Quiz: React.FC = () => {
         </div>
       )}
 
-      {/* Explanation for correct — only when showExplanation setting is on */}
+      {/* Explanation for correct — only when showExplanation setting is on.
+          Same bottom offset + scroll cap as the wrong-answer panel (mobile
+          responsive fix). */}
       {showResult && isCorrect === true && settings?.showExplanation && currentQuestion.explanation && (
-        <div className="fixed bottom-28 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-3rem)] max-w-lg">
-          <div className="glass-panel p-4 rounded-2xl border border-outline-variant/10 text-sm text-on-surface-variant">
+        <div className="fixed bottom-44 sm:bottom-32 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-3rem)] max-w-lg">
+          <div className="glass-panel p-4 rounded-2xl border border-outline-variant/10 text-sm text-on-surface-variant max-h-[50vh] overflow-y-auto">
             <strong className="text-on-surface">{t('quiz.explanation')}:</strong> {currentQuestion.explanation}
           </div>
         </div>
