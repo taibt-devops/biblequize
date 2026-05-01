@@ -1682,6 +1682,16 @@
     "topMilestoneWithPoints": "Top {{n}} ({{points}} pts)",
     "unranked": "Unranked",
     "ctaPlayMain": "Play Ranked Now",
+    "sidebar": {
+      "seasonGoalLabel": "SEASON GOAL",
+      "seasonGoalCurrent": "Currently: rank #{{rank}}",
+      "seasonGoalNoRank": "Not ranked yet",
+      "winRateLabel": "WIN RATE TODAY",
+      "winRateValue": "{{percent}}% ({{correct}}/{{total}})",
+      "winRateNoData": "No data today",
+      "weekComboLabel": "WEEK'S TOP COMBO",
+      "weekComboPending": "Coming soon"
+    },
     "ctaPlaySub": "Continue {{book}} • ~{{count}} questions with current energy",
     "ctaNoEnergyMain": "🔋 Out of energy",
     "ctaNoEnergySub": "Recovers in {{time}}",
