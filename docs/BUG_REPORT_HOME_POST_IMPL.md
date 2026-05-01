@@ -16,16 +16,15 @@ Sau khi đối chiếu code hiện tại trên branch:
 
 | Status | Count | Issue IDs |
 |--------|-------|-----------|
-| ✅ **FIXED** bởi H1-H8 + AppLayout refactor + Direction-3 tabs | 7 | HM-P1-2, HM-P1-3, HM-P2-2, HM-P2-4, HM-MB-3, HM-P0-1, **HM-MB-2** |
-| ⚠️ **STILL VALID** — cần fix | 1 | HM-P1-1 (partial — wait BE) |
+| ✅ **FIXED** trên FE + BE | 8 | HM-P1-2, HM-P1-3, HM-P2-2, HM-P2-4, HM-MB-3, HM-P0-1, HM-MB-2, **HM-P1-1** |
+| ⚠️ **STILL VALID** — cần fix | 0 | (none on FE/BE) |
 | 🟢 **BY DESIGN** — match mockup intent | 4 | HM-P1-4, HM-P2-3, HM-P3-1, HM-P3-2 |
 | 💡 **ENHANCEMENT** — vượt mockup, subjective | 2 | HM-MB-1, HM-P3-3 |
 | ⏳ **DEPENDS ON** other work | 1 | HM-MB-5 (COLOR_AUDIT Task 1) |
 | ℹ️ **NOTE only** | 1 | HM-MB-6 |
 | ❌ **INACCURATE CLAIM** | 1 | HM-P0-1 "logo duplicate" — sidebar không có logo |
 
-**Effort còn lại sau audit + 8 fix commits 2026-05-01: 0h trên FE.** Branch `feat/home-redesign-v2` chỉ chờ:
-- **HM-P1-1** (1h FE wiring) — chờ BE add `GET /api/groups/me` + `GET /api/tournaments/upcoming`. Tracked trong [BACKEND_GAPS_HOME_V2.md](../BACKEND_GAPS_HOME_V2.md). 4/6 mode cards đã có live hint.
+**Effort còn lại sau audit + 9 fix commits 2026-05-01: 0h trên cả FE và BE cho Home.** Branch `feat/home-redesign-v2` chỉ chờ:
 - **HM-MB-5** — chờ COLOR_AUDIT Task 1 (sync 6 tier colors web↔mobile). Không phải refactor riêng cho Home.
 
 Tất cả issues khác đã: (a) FIXED bởi H1-H8 + AppLayout refactor + Direction-3 tabs, (b) BY DESIGN match mockup, (c) ENHANCEMENT vượt mockup defer, (d) NOTE only. **Branch ready để merge sau visual review trên dev server.**
@@ -152,20 +151,18 @@ function AppLayout({ children }: PropsWithChildren) {
 
 ## 🟠 P1 — UX Issues
 
-### HM-P1-1: 6 mode cards thiếu live data ⚠️ STILL VALID — partially fixed (4/6 wired)
+### HM-P1-1: 6 mode cards thiếu live data ✅ DONE 2026-05-01 (4/4 dynamic + 2 static)
 
-**Audit 2026-05-01:** H4 commit `918fd75` đã wire 4/6 cards. Status hiện tại:
+**Audit 2026-05-01 → fix 2026-05-01:** H4 commit `918fd75` shipped 4/6 wired (multiplayer + weekly + mystery + speed). HM-P1-1 followup commit shipped the 2 missing BE endpoints + FE wiring same day. All 6 cards now render their intended hint.
 
-| Card | Live data H4 status | API |
-|------|---------------------|-----|
-| Nhóm Giáo Xứ | ❌ vẫn không có | BE thiếu `/api/groups/me` (tracked in [BACKEND_GAPS_HOME_V2.md](../BACKEND_GAPS_HOME_V2.md)) |
-| Phòng Chơi | ✅ "X phòng đang mở" | `/api/rooms/public` |
-| Giải Đấu | ❌ vẫn không có | BE thiếu `/api/tournaments/upcoming` (tracked in BACKEND_GAPS) |
+| Card | Live data status | API |
+|------|------------------|-----|
+| Nhóm Giáo Xứ | ✅ "Trong {name}" / "Bạn chưa có nhóm" | `GET /api/groups/me` (shipped) |
+| Phòng Chơi | ✅ "{N} phòng đang mở" | `/api/rooms/public` |
+| Giải Đấu | ✅ "{N} đấu trường đang mở" | `GET /api/tournaments/upcoming` (shipped) |
 | Chủ Đề Tuần | ✅ theme name | `/api/quiz/weekly/theme` |
 | Mystery Mode | ✅ "+50% XP" | static |
 | Speed Round | ✅ "+100% XP" | static |
-
-→ Bug status: **2/6 cards còn thiếu** (group + tournament). Cần BE add 2 endpoints để hoàn thành.
 
 **Severity:** High · **Type:** Content · **Effort:** 1h FE wiring sau khi BE ready (~2-3h tổng cả BE)
 
@@ -839,7 +836,7 @@ Hiện tại chỉ có Logo + Avatar (no dropdown), giống top bar desktop trư
 | Issue ID | Severity | Audit Status | Action |
 |---|---|---|---|
 | HM-P0-1 | P0 | ✅ DONE 2026-05-01 (`c2fe8fb`..cleanup) | Closed — see DECISIONS.md 2026-05-01 |
-| HM-P1-1 | P1 | ⚠️ PARTIAL (4/6 wired) | Wait for BE: `/api/groups/me` + `/api/tournaments/upcoming` |
+| HM-P1-1 | P1 | ✅ DONE 2026-05-01 (BE endpoints shipped + FE wired) | Closed — 4/4 dynamic + 2 static hints |
 | HM-P1-2 | P1 | ✅ FIXED bởi H1 (`7d05f63`) | Closed |
 | HM-P1-3 | P1 | ✅ FIXED — logic verified correct | Closed |
 | HM-P1-4 | P1 | 🟢 BY DESIGN — match mockup | Skip |

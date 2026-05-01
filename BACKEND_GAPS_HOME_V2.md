@@ -5,26 +5,38 @@
 > what the desired live behaviour would look like once the BE endpoint
 > lands.
 
-## H4 — 6 mode cards live data
+## ✅ H4 — 6 mode cards live data — ALL WIRED 2026-05-01
 
-| # | Card | Endpoint needed | FE today | FE when wired up |
-|---|------|-----------------|----------|------------------|
-| 1 | Nhóm Giáo Xứ | `GET /api/groups/me` (or expose `User.groupId`) | No live hint rendered | "Trong {groupName}" / "Bạn chưa có nhóm" |
-| 2 | Phòng Chơi   | `GET /api/rooms/public` (already exists) ✅ | Counts the response array length and renders "{N} phòng đang mở" when > 0 | already live |
-| 3 | Giải Đấu     | `GET /api/tournaments/upcoming` (or filter on `/api/tournaments`) | No live hint | "Mới sau {N} ngày" / "{N} đang diễn ra" |
-| 4 | Chủ Đề Tuần  | `GET /api/quiz/weekly/theme` (already exists) ✅ | Reads `themeName` and renders it | already live |
-| 5 | Mystery Mode | n/a — static "+50% XP" | hardcoded | (no change) |
-| 6 | Speed Round  | n/a — static "+100% XP" | hardcoded | (no change) |
+All 4 dynamic-data BE endpoints are now implemented + consumed by FE.
+Mystery + Speed remain static (XP multipliers). Closes HM-P1-1 in
+`docs/BUG_REPORT_HOME_POST_IMPL.md`.
 
-**Recommended BE work post-launch:**
+| # | Card | Endpoint | FE rendering |
+|---|------|----------|--------------|
+| 1 | Nhóm Giáo Xứ | `GET /api/groups/me` ✅ shipped 2026-05-01 | "Trong {groupName}" if `hasGroup=true`, else "Bạn chưa có nhóm" |
+| 2 | Phòng Chơi   | `GET /api/rooms/public` ✅ | "{N} phòng đang mở" when count > 0 |
+| 3 | Giải Đấu     | `GET /api/tournaments/upcoming` ✅ shipped 2026-05-01 | "{count} đấu trường đang mở" when LOBBY tournaments > 0 |
+| 4 | Chủ Đề Tuần  | `GET /api/quiz/weekly/theme` ✅ | weekly `themeName` |
+| 5 | Mystery Mode | n/a — static "+50% XP" | hardcoded |
+| 6 | Speed Round  | n/a — static "+100% XP" | hardcoded |
 
-1. Add `GET /api/groups/me` returning the user's primary group (or
-   expose `groupId` on `/api/me`). Single-row read; no new schema.
-2. Add `GET /api/tournaments/upcoming?limit=1` returning the next
-   `startsAt`-sorted tournament so FE can render "Mới sau {N} ngày".
-3. Wire both into `liveHints` in
-   `apps/web/src/components/GameModeGrid.tsx`; the rest of the H4 card
-   plumbing is already generic over the `liveHint` slot.
+**`/api/groups/me` semantics:**
+- Auth required.
+- Returns `{ hasGroup: false }` when the user has no GroupMember rows.
+- Returns `{ hasGroup: true, groupId, groupName, memberCount, role }` for the
+  user's primary group (first by joined-at order if multiple memberships).
+- Lives in `ChurchGroupService.getMyGroup(userId)` →
+  `ChurchGroupController.GET /me`.
+
+**`/api/tournaments/upcoming` semantics:**
+- Auth required.
+- "Upcoming" maps to `Tournament.Status.LOBBY` (open for joining) since the
+  entity has no scheduled `startsAt` field.
+- Returns `{ count: int, next: { id, name, bracketSize, createdAt } | null }`.
+  `next` is the most-recently-created LOBBY tournament so the user lands on
+  the freshest one when they tap through.
+- Lives in `TournamentService.getUpcomingTournaments()` →
+  `TournamentController.GET /upcoming`.
 
 ## H6 — Bible Journey
 

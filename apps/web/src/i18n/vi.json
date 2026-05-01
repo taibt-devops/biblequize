@@ -778,7 +778,10 @@
     "modeHint": {
       "roomsOpen": "{{count}} phòng đang mở",
       "mysteryXp": "+50% XP",
-      "speedXp": "+100% XP"
+      "speedXp": "+100% XP",
+      "groupNone": "Bạn chưa có nhóm",
+      "groupIn": "Trong {{name}}",
+      "tournamentOpen": "{{count}} đấu trường đang mở"
     },
     "activityFeed": {
       "title": "Hoạt động",

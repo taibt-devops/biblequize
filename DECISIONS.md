@@ -2,6 +2,23 @@
 
 ---
 
+## 2026-05-01 — Home mode-card live hints (HM-P1-1) — 2 BE endpoints added
+
+- Quyết định: Add `GET /api/groups/me` (current user's primary group) + `GET /api/tournaments/upcoming` (count + next LOBBY tournament) để power live hints cho 2 mode cards còn thiếu (Nhóm Giáo Xứ + Giải Đấu) trong H4 grid.
+- Lý do: HM-P1-1 trong `docs/BUG_REPORT_HOME_POST_IMPL.md` — 2/6 mode cards render generic subtitle thay vì live data, làm giảm "này-có-gì-mới" feel của Home page. Mockup dụng ý 6/6 cards có live hint.
+- "Upcoming" semantics cho tournament: trong entity `Tournament` không có field `startsAt` (chỉ có `startedAt` set khi bắt đầu thực sự). "Upcoming" maps sang `Status.LOBBY` (open for joining), `next` = lobby tournament tạo gần nhất. FE render "{count} đấu trường đang mở".
+- Group endpoint trả về primary group (first by joined-at order) khi user thuộc nhiều nhóm — Home card chỉ cần 1 tên để render "Trong {groupName}". Khi không có nhóm → `{ hasGroup: false }`, FE render "Bạn chưa có nhóm".
+- Trade-off:
+  - 2 endpoints mới đều auth-required (consistent với rest of app, dù `/upcoming` về lý có thể public). Trade-off: unauthenticated visitors không thấy hint — chấp nhận được vì Home toàn bộ behind auth.
+  - Lobby ordering "most recent first" thay vì "soonest startsAt": entity hiện không có `startsAt` field, không refactor schema cho task nhỏ. Khi BE add scheduled tournaments later → swap ordering ở 1 method (`TournamentService.getUpcomingTournaments`).
+- Implementation:
+  - BE: 1 commit thêm 2 controller endpoints + 2 service methods + 5 unit tests (3 group + 2 tournament).
+  - FE: 1 commit thêm 2 TanStack queries + i18n keys (`home.modeHint.groupNone/groupIn/tournamentOpen`) + 4 unit tests trong `GameModeGrid.test.tsx`.
+- Tests: BE 274/255 pass (1 fail + 17 errors all pre-existing baseline). FE 1045/1045 pass (zero failures).
+- Closes HM-P1-1. BACKEND_GAPS_HOME_V2.md updated to "ALL WIRED".
+
+---
+
 ## 2026-05-01 — AppLayout responsive, Direction B (drop desktop top bar)
 
 - Quyết định: Trên desktop (≥ md) bỏ top bar; sidebar mang đầy đủ identity (logo "Bible Quiz" + notification bell + user card với 5-item dropdown + nav + Streak/Mission widgets footer). Trên mobile (< md) sidebar ẩn, dùng `MobileTopBar` (logo + bell + avatar dropdown) + `MobileBottomTabs` (4 tabs).

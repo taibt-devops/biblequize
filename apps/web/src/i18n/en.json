@@ -770,7 +770,10 @@
     "modeHint": {
       "roomsOpen": "{{count}} rooms open",
       "mysteryXp": "+50% XP",
-      "speedXp": "+100% XP"
+      "speedXp": "+100% XP",
+      "groupNone": "No group yet",
+      "groupIn": "In {{name}}",
+      "tournamentOpen": "{{count}} tournaments open"
     },
     "compactSubtitles": {
       "group": "Church groups",

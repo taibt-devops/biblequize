@@ -160,11 +160,10 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
       ? (t(`home.recommend.${recommendation.reasonKey}`, recommendation.values) as string)
       : undefined
 
-  // Live-data hints (H4) — only the BE endpoints we actually have are
-  // wired up. Cards without an endpoint silently render no hint instead
-  // of showing fake/placeholder text. See PROMPT_HOME_REDESIGN.md H4 +
-  // BACKEND_GAPS_HOME_V2.md for the deferred /api/groups/me +
-  // /api/tournaments/upcoming work.
+  // Live-data hints (H4 + HM-P1-1). All 4 BE endpoints wired up as
+  // of 2026-05-01. Cards without an endpoint (mystery + speed) render
+  // static XP-multiplier text. Each query lives in its own TanStack
+  // entry so a slow one doesn't block the rest of the grid.
   const { data: roomsCount } = useQuery<number>({
     queryKey: ['home-rooms-public-count'],
     queryFn: async () => {
@@ -183,11 +182,44 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
     staleTime: 5 * 60_000,
   })
 
+  interface MyGroupResponse {
+    hasGroup: boolean
+    groupName?: string
+  }
+  const { data: myGroup } = useQuery<MyGroupResponse>({
+    queryKey: ['home-my-group'],
+    queryFn: () => api.get('/api/groups/me').then(r => r.data),
+    staleTime: 5 * 60_000,
+  })
+
+  interface UpcomingTournamentsResponse {
+    count: number
+    next: { id: string; name: string } | null
+  }
+  const { data: upcomingTournaments } = useQuery<UpcomingTournamentsResponse>({
+    queryKey: ['home-tournaments-upcoming'],
+    queryFn: () => api.get('/api/tournaments/upcoming').then(r => r.data),
+    staleTime: 60_000,
+  })
+
+  const groupHint = myGroup
+    ? myGroup.hasGroup && myGroup.groupName
+      ? (t('home.modeHint.groupIn', { name: myGroup.groupName }) as string)
+      : (t('home.modeHint.groupNone') as string)
+    : undefined
+
+  const tournamentHint =
+    upcomingTournaments && upcomingTournaments.count > 0
+      ? (t('home.modeHint.tournamentOpen', { count: upcomingTournaments.count }) as string)
+      : undefined
+
   const liveHints: Record<string, string | undefined> = {
+    group: groupHint,
     multiplayer:
       typeof roomsCount === 'number' && roomsCount > 0
         ? (t('home.modeHint.roomsOpen', { count: roomsCount }) as string)
         : undefined,
+    tournament: tournamentHint,
     weekly: weeklyTheme || undefined,
     mystery: t('home.modeHint.mysteryXp') as string,
     speed: t('home.modeHint.speedXp') as string,

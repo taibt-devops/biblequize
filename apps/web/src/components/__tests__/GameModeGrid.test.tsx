@@ -262,6 +262,96 @@ describe('GameModeGrid (Option Y)', () => {
       expect(screen.getByTestId('compact-card-weekly-hint').textContent).toContain('Phép lạ')
     })
 
+    it('group hint shows "Trong {name}" when /api/groups/me returns hasGroup=true', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/daily-challenge')) {
+          return Promise.resolve({ data: { alreadyCompleted: false } })
+        }
+        if (url.includes('/api/basic-quiz/status')) {
+          return Promise.resolve({
+            data: { passed: false, cooldownRemainingSeconds: 0, attemptCount: 0,
+                    totalQuestions: 10, threshold: 8 },
+          })
+        }
+        if (url.includes('/api/groups/me')) {
+          return Promise.resolve({ data: { hasGroup: true, groupName: 'Hội Thánh Phước Lành', memberCount: 12 } })
+        }
+        return Promise.reject(new Error('Not mocked: ' + url))
+      })
+      renderGrid()
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-group-hint').textContent).toContain('Hội Thánh Phước Lành')
+      })
+    })
+
+    it('group hint shows "Bạn chưa có nhóm" when /api/groups/me returns hasGroup=false', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/daily-challenge')) {
+          return Promise.resolve({ data: { alreadyCompleted: false } })
+        }
+        if (url.includes('/api/basic-quiz/status')) {
+          return Promise.resolve({
+            data: { passed: false, cooldownRemainingSeconds: 0, attemptCount: 0,
+                    totalQuestions: 10, threshold: 8 },
+          })
+        }
+        if (url.includes('/api/groups/me')) {
+          return Promise.resolve({ data: { hasGroup: false } })
+        }
+        return Promise.reject(new Error('Not mocked: ' + url))
+      })
+      renderGrid()
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-group-hint').textContent).toMatch(/chưa có nhóm/i)
+      })
+    })
+
+    it('tournament hint shows count when /api/tournaments/upcoming has lobby items', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/daily-challenge')) {
+          return Promise.resolve({ data: { alreadyCompleted: false } })
+        }
+        if (url.includes('/api/basic-quiz/status')) {
+          return Promise.resolve({
+            data: { passed: false, cooldownRemainingSeconds: 0, attemptCount: 0,
+                    totalQuestions: 10, threshold: 8 },
+          })
+        }
+        if (url.includes('/api/tournaments/upcoming')) {
+          return Promise.resolve({ data: { count: 2, next: { id: 't1', name: 'Spring Cup' } } })
+        }
+        return Promise.reject(new Error('Not mocked: ' + url))
+      })
+      renderGrid()
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-tournament-hint').textContent).toContain('2')
+      })
+    })
+
+    it('tournament hint hides when count is 0', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/daily-challenge')) {
+          return Promise.resolve({ data: { alreadyCompleted: false } })
+        }
+        if (url.includes('/api/basic-quiz/status')) {
+          return Promise.resolve({
+            data: { passed: false, cooldownRemainingSeconds: 0, attemptCount: 0,
+                    totalQuestions: 10, threshold: 8 },
+          })
+        }
+        if (url.includes('/api/tournaments/upcoming')) {
+          return Promise.resolve({ data: { count: 0, next: null } })
+        }
+        return Promise.reject(new Error('Not mocked: ' + url))
+      })
+      renderGrid()
+      // Wait for an always-rendered hint to confirm cards mounted.
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-mystery-hint')).toBeInTheDocument()
+      })
+      expect(screen.queryByTestId('compact-card-tournament-hint')).not.toBeInTheDocument()
+    })
+
     it('multiplayer hint hides when rooms endpoint returns empty', async () => {
       mockApiGet.mockImplementation((url: string) => {
         if (url.includes('/api/daily-challenge')) {
