@@ -14,6 +14,7 @@ import DailyStatsCards from '../components/ranked/DailyStatsCards'
 import SeasonCard from '../components/ranked/SeasonCard'
 import CurrentBookCard from '../components/ranked/CurrentBookCard'
 import RecentMatchesSection from '../components/ranked/RecentMatchesSection'
+import RankedActionFooter from '../components/ranked/RankedActionFooter'
 
 const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
 
@@ -301,61 +302,15 @@ export default function Ranked() {
       {/* ── Recent matches (R7 — RK-P2-3) ── */}
       <RecentMatchesSection />
 
-      {/* ── Start CTA ── */}
-      <div className="mt-4 mb-10">
-        {(() => {
-          const energy = rankedStatus.livesRemaining ?? 0
-          const questionsLeftFromEnergy = Math.floor(energy / 5)
-          const capReached = rankedStatus.questionsCounted >= rankedStatus.cap
-
-          if (canPlay) {
-            return (
-              <button
-                data-testid="ranked-start-btn"
-                onClick={startRankedQuiz}
-                className="w-full gold-gradient text-on-secondary font-black rounded-xl shadow-[0_8px_30px_rgb(248,189,69,0.3)] hover:shadow-[0_12px_36px_rgb(248,189,69,0.45)] active:scale-[0.98] transition-all py-4 px-7 flex flex-col items-center gap-1"
-              >
-                <span className="text-xl uppercase tracking-widest flex items-center gap-2">
-                  <span className="material-symbols-outlined" style={FILL_1}>play_arrow</span>
-                  {t('ranked.ctaPlayMain')}
-                </span>
-                <span className="text-xs font-medium opacity-80 normal-case tracking-normal">
-                  {t('ranked.ctaPlaySub', {
-                    book: rankedStatus.currentBook,
-                    count: questionsLeftFromEnergy,
-                  })}
-                </span>
-              </button>
-            )
-          }
-
-          // Disabled states share styling; pick label by reason
-          const sharedDisabledClass = 'w-full bg-surface-container-high text-on-surface-variant font-black rounded-xl py-4 px-7 flex flex-col items-center gap-1 opacity-60 cursor-not-allowed'
-          if (capReached) {
-            return (
-              <div className={sharedDisabledClass}>
-                <span className="text-xl uppercase tracking-widest">
-                  {t('ranked.ctaCapMain')}
-                </span>
-                <span data-testid="ranked-cap-reached-msg" className="text-xs font-medium normal-case tracking-normal">
-                  {t('ranked.ctaCapSub', { time: timeLeft || '--:--:--' })}
-                </span>
-              </div>
-            )
-          }
-          // noEnergy fallback
-          return (
-            <div className={sharedDisabledClass}>
-              <span className="text-xl uppercase tracking-widest">
-                {t('ranked.ctaNoEnergyMain')}
-              </span>
-              <span data-testid="ranked-no-energy-msg" className="text-xs font-medium normal-case tracking-normal">
-                {t('ranked.ctaNoEnergySub', { time: timeLeft || '--:--:--' })}
-              </span>
-            </div>
-          )
-        })()}
-      </div>
+      {/* ── Action footer (R8 — RK-P2-2) ── */}
+      <RankedActionFooter
+        canPlay={canPlay}
+        capReached={rankedStatus.questionsCounted >= rankedStatus.cap}
+        energy={rankedStatus.livesRemaining ?? 0}
+        currentBook={rankedStatus.currentBook}
+        resetTimeLeft={timeLeft || '--:--:--'}
+        onStart={startRankedQuiz}
+      />
     </main>
   )
 }
