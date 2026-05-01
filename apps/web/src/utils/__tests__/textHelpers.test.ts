@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { render } from '@testing-library/react'
 import React from 'react'
-import { wrapProperNouns } from '../textHelpers'
+import { wrapProperNouns, formatVerseRef } from '../textHelpers'
 
 /**
  * Render the result of wrapProperNouns into a fragment so we can run
@@ -107,5 +107,40 @@ describe('wrapProperNouns', () => {
       expect(spans).toHaveLength(1)
       expect(spans[0].textContent).toBe('Bên-gia-min')
     })
+  })
+})
+
+describe('formatVerseRef', () => {
+  it('book + chapter + verse range → full reference', () => {
+    expect(formatVerseRef({
+      book: 'Sáng Thế Ký', chapter: 35, verseStart: 16, verseEnd: 20,
+    })).toBe('SÁNG THẾ KÝ 35:16-20')
+  })
+
+  it('book + chapter + single verse', () => {
+    expect(formatVerseRef({
+      book: 'Genesis', chapter: 1, verseStart: 1,
+    })).toBe('GENESIS 1:1')
+  })
+
+  it('book + chapter, no verse', () => {
+    expect(formatVerseRef({ book: 'Mác', chapter: 3 })).toBe('MÁC 3')
+  })
+
+  it('book only', () => {
+    expect(formatVerseRef({ book: 'Ru-tơ' })).toBe('RU-TƠ')
+  })
+
+  it('verseStart === verseEnd is rendered as single verse (no "16-16")', () => {
+    expect(formatVerseRef({
+      book: 'Mác', chapter: 1, verseStart: 16, verseEnd: 16,
+    })).toBe('MÁC 1:16')
+  })
+
+  it('verseEnd present without verseStart is treated as no-verse', () => {
+    // Defensive: verseEnd alone is meaningless, drop it.
+    expect(formatVerseRef({
+      book: 'Mác', chapter: 5, verseEnd: 10,
+    })).toBe('MÁC 5')
   })
 })

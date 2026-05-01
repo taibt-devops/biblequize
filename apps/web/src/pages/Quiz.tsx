@@ -7,6 +7,7 @@ import { soundManager } from '../services/soundManager'
 import { haptic } from '../utils/haptics'
 import { useLifeline } from '../hooks/useLifeline'
 import { AnswerButton, type AnswerState } from '../components/quiz/AnswerButton'
+import { wrapProperNouns, formatVerseRef } from '../utils/textHelpers'
 import QuizResults from './QuizResults'
 
 interface Question {
@@ -673,12 +674,30 @@ const Quiz: React.FC = () => {
           </div>
         </div>
 
-        {/* Question Section */}
+        {/* Question Section.
+            QZ-P0-2: verse badge top + wrapProperNouns on the question
+            content + .question-text class for `text-wrap: pretty`. The
+            bottom book-meta line stays for E2E (data-testid="quiz-question-book"). */}
         <div className="w-full space-y-16">
           <div className="relative w-full aspect-[16/9] md:aspect-[21/7] flex flex-col items-center justify-center text-center p-10 bg-surface-container-low rounded-[2.5rem] border border-outline-variant/10 shadow-2xl overflow-hidden">
             <div className="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-32 bg-secondary rounded-r-full"></div>
-            <h2 data-testid="quiz-question-text" className="font-headline text-2xl md:text-4xl font-extrabold tracking-tight leading-snug max-w-3xl text-on-surface">
-              {currentQuestion.content}
+
+            {/* Verse badge — pill at the top of the card. */}
+            <div
+              data-testid="quiz-verse-badge"
+              className="inline-flex items-center gap-1.5 bg-secondary/10 border border-secondary/20 rounded-full px-3 py-1 mb-4"
+            >
+              <span className="material-symbols-outlined text-secondary text-xs">menu_book</span>
+              <span className="text-secondary text-[11px] font-medium tracking-wider">
+                {formatVerseRef(currentQuestion)}
+              </span>
+            </div>
+
+            <h2
+              data-testid="quiz-question-text"
+              className="question-text font-headline text-2xl md:text-4xl font-extrabold tracking-tight leading-snug max-w-3xl text-on-surface"
+            >
+              {wrapProperNouns(currentQuestion.content)}
             </h2>
             <div className="mt-8 flex items-center gap-2 text-on-surface-variant/60">
               <span className="material-symbols-outlined text-sm">menu_book</span>

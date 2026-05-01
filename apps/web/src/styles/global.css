@@ -33,6 +33,12 @@
   .timer-arc {
     transition: stroke-dashoffset 1s linear;
   }
+  /* Quiz question text — better line-balance + disable auto-hyphenation
+     so Bible names like "Bên-gia-min" stay intact (QZ-P0-2). */
+  .question-text {
+    text-wrap: pretty;
+    hyphens: manual;
+  }
 }
 
 .material-symbols-outlined {

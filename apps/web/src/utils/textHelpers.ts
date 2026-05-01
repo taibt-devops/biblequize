@@ -31,6 +31,35 @@ const PROPER_NOUN_REGEX = /([A-ZĐÁẢÀẠÃÉẾỀỂỄỆÌÍỊỈĨÒÓ�
  * because they're already protected by the `text-wrap: pretty` CSS rule
  * applied to the question card.
  */
+interface VerseRef {
+  book: string
+  chapter?: number
+  verseStart?: number
+  verseEnd?: number
+}
+
+/**
+ * Format a verse reference for display in the Quiz question badge
+ * (top of the question card). Handles the four levels of granularity
+ * we may have:
+ *   - book only           → "BOOK"
+ *   - book + chapter      → "BOOK 35"
+ *   - + verse start       → "BOOK 35:16"
+ *   - + verse end         → "BOOK 35:16-20"
+ *
+ * Book is upper-cased here (the badge always reads in caps in the
+ * design); callers don't need to upper-case ahead of time.
+ */
+export function formatVerseRef(ref: VerseRef): string {
+  const book = ref.book.toUpperCase()
+  if (!ref.chapter) return book
+  if (!ref.verseStart) return `${book} ${ref.chapter}`
+  if (ref.verseEnd && ref.verseEnd !== ref.verseStart) {
+    return `${book} ${ref.chapter}:${ref.verseStart}-${ref.verseEnd}`
+  }
+  return `${book} ${ref.chapter}:${ref.verseStart}`
+}
+
 export function wrapProperNouns(text: string): React.ReactNode[] {
   if (!text) return []
   // String.prototype.split with a capturing group keeps the captures in

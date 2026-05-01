@@ -27,6 +27,22 @@ function colorPositionFor(idx: number, total: number): number {
   return idx
 }
 
+/**
+ * Format a verse reference for the badge above the question (QZ-P0-2).
+ * Mirrors `apps/web/src/utils/textHelpers.ts#formatVerseRef`. Kept inline
+ * here rather than imported to avoid pulling React-DOM utils into the
+ * RN bundle.
+ */
+function formatVerseRef(q: { book: string; chapter?: number; verseStart?: number; verseEnd?: number }): string {
+  const book = q.book.toUpperCase()
+  if (!q.chapter) return book
+  if (!q.verseStart) return `${book} ${q.chapter}`
+  if (q.verseEnd && q.verseEnd !== q.verseStart) {
+    return `${book} ${q.chapter}:${q.verseStart}-${q.verseEnd}`
+  }
+  return `${book} ${q.chapter}:${q.verseStart}`
+}
+
 export default function QuizScreen() {
   const { t } = useTranslation()
   const navigation = useNavigation<any>()
@@ -171,8 +187,11 @@ export default function QuizScreen() {
           <Text style={styles.bookLabel}>{question.book} {question.chapter}</Text>
         </View>
 
-        {/* Question */}
+        {/* Question — verse badge top + question text (QZ-P0-2 mobile parity). */}
         <View style={styles.questionCard}>
+          <View style={styles.verseBadge}>
+            <Text style={styles.verseBadgeText}>{formatVerseRef(question)}</Text>
+          </View>
           <Text style={styles.questionText}>{question.content}</Text>
         </View>
 
@@ -268,6 +287,22 @@ const styles = StyleSheet.create({
   questionCard: {
     backgroundColor: colors.surfaceContainer, borderRadius: borderRadius['2xl'],
     padding: spacing.xl, marginBottom: spacing.xl, minHeight: 100, justifyContent: 'center',
+    alignItems: 'center',
+  },
+  verseBadge: {
+    backgroundColor: 'rgba(232,168,50,0.10)',
+    borderColor: 'rgba(232,168,50,0.20)',
+    borderWidth: 1,
+    borderRadius: borderRadius.full,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.xs,
+    marginBottom: spacing.md,
+  },
+  verseBadgeText: {
+    color: colors.gold,
+    fontSize: typography.size.xs,
+    fontWeight: typography.weight.medium,
+    letterSpacing: 1,
   },
   questionText: { fontSize: typography.size.xl, fontWeight: typography.weight.bold, color: colors.textPrimary, textAlign: 'center', lineHeight: 30 },
   answers: { gap: spacing.md, flex: 1 },
