@@ -12,6 +12,7 @@ import EnergyCard from '../components/ranked/EnergyCard'
 import RankedStreakCard from '../components/ranked/RankedStreakCard'
 import DailyStatsCards from '../components/ranked/DailyStatsCards'
 import SeasonCard from '../components/ranked/SeasonCard'
+import CurrentBookCard from '../components/ranked/CurrentBookCard'
 
 const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
 
@@ -288,79 +289,13 @@ export default function Ranked() {
       {/* ── Season card (R5 — RK-P0-2, RK-P1-3, RK-P1-4, RK-P3-2) ── */}
       <SeasonCard />
 
-      {/* ── Active Book Card (R4) ── */}
-      <section
-        data-testid="ranked-current-book"
-        className="glass-card rounded-xl p-4 border border-white/5 flex items-center gap-4"
-      >
-        {/* Icon 48x48 gold-tinted */}
-        <div
-          className="flex items-center justify-center w-12 h-12 rounded-lg shrink-0"
-          style={{
-            backgroundColor: 'rgba(232,168,50,0.12)',
-            border: '1px solid rgba(232,168,50,0.25)',
-          }}
-        >
-          <span
-            className="material-symbols-outlined"
-            style={{ ...FILL_1, color: '#e8a832', fontSize: '24px' }}
-          >
-            menu_book
-          </span>
-        </div>
-
-        {/* Center content */}
-        <div className="flex-1 min-w-0">
-          <div className="flex items-baseline gap-2 flex-wrap mb-0.5">
-            <h4
-              data-testid="ranked-current-book-name"
-              className="text-lg font-black text-on-surface tracking-tight"
-            >
-              {rankedStatus.currentBook}
-            </h4>
-            {rankedStatus.bookProgress && (
-              <span className="text-xs text-on-surface-variant font-medium">
-                • {t('ranked.bookOf', {
-                  current: rankedStatus.bookProgress.currentIndex + 1,
-                  total: rankedStatus.bookProgress.totalBooks,
-                })}
-              </span>
-            )}
-            <span
-              className="bg-surface-container-high text-secondary text-[10px] font-bold px-2 py-0.5 rounded-full border border-secondary/20 uppercase tracking-wider"
-            >
-              {difficultyLabel}
-            </span>
-          </div>
-          <p className="text-xs text-on-surface-variant mb-2">
-            {t('ranked.conquering')} — {Math.round(bookPct)}%
-          </p>
-          <div className="h-1 w-full bg-primary-container rounded-full overflow-hidden">
-            <div
-              data-testid="ranked-current-book-progress"
-              className="h-full gold-gradient rounded-full transition-all duration-700 ease-out"
-              style={{ width: `${bookPct}%` }}
-            />
-          </div>
-        </div>
-
-        {/* Change-book button — disabled until a Ranked book-selector flow exists */}
-        <button
-          type="button"
-          disabled
-          title={t('ranked.changeBookSoon')}
-          aria-label={t('ranked.changeBookSoon')}
-          className="shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider border opacity-50 cursor-not-allowed"
-          style={{
-            color: '#e8a832',
-            borderColor: 'rgba(232,168,50,0.4)',
-            backgroundColor: 'transparent',
-          }}
-        >
-          {t('ranked.changeBook')}
-          <span className="material-symbols-outlined text-sm">arrow_forward</span>
-        </button>
-      </section>
+      {/* ── Current book card (R6 — RK-P0-3, RK-P1-6) ── */}
+      <CurrentBookCard
+        bookName={rankedStatus.currentBook}
+        bookIndex={rankedStatus.currentBookIndex ?? 0}
+        masteryPct={bookPct}
+        difficultyLabel={difficultyLabel}
+      />
 
       {/* ── Start CTA ── */}
       <div className="mt-4 mb-10">
