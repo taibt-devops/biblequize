@@ -1,8 +1,15 @@
 package com.biblequiz.api;
 
+import com.biblequiz.modules.adminai.AIGenerationService;
+import com.biblequiz.modules.group.entity.ChurchGroup;
+import com.biblequiz.modules.group.entity.GroupMember;
 import com.biblequiz.modules.group.entity.GroupQuizSet;
+import com.biblequiz.modules.group.repository.ChurchGroupRepository;
+import com.biblequiz.modules.group.repository.GroupMemberRepository;
 import com.biblequiz.modules.group.repository.GroupQuizSetRepository;
 import com.biblequiz.modules.group.service.ChurchGroupService;
+import com.biblequiz.modules.quiz.entity.Question;
+import com.biblequiz.modules.quiz.repository.QuestionRepository;
 import com.biblequiz.modules.user.entity.User;
 import com.biblequiz.modules.user.repository.UserRepository;
 
@@ -10,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.core.user.OAuth2User;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
@@ -24,7 +32,19 @@ public class ChurchGroupController {
     private ChurchGroupService churchGroupService;
 
     @Autowired
+    private ChurchGroupRepository churchGroupRepository;
+
+    @Autowired
     private GroupQuizSetRepository groupQuizSetRepository;
+
+    @Autowired
+    private GroupMemberRepository groupMemberRepository;
+
+    @Autowired
+    private QuestionRepository questionRepository;
+
+    @Autowired
+    private AIGenerationService aiGenerationService;
 
     @Autowired
     private UserRepository userRepository;
@@ -332,6 +352,138 @@ public class ChurchGroupController {
             return ResponseEntity.ok(Map.of("success", true, "data", result));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
+        }
+    }
+
+    /**
+     * POST /api/groups/{id}/ai-generate
+     * Generate draft questions via AI for a group quiz set.
+     * Requires LEADER or MOD membership. Questions are NOT saved to DB.
+     */
+    @PostMapping("/{id}/ai-generate")
+    @SuppressWarnings("unchecked")
+    public ResponseEntity<?> aiGenerateQuestions(@PathVariable String id,
+                                                  @RequestBody Map<String, Object> body,
+                                                  Principal principal) {
+        try {
+            User user = getUser(principal);
+            requireLeaderOrMod(id, user.getId());
+
+            String book = (String) body.getOrDefault("book", "John");
+            int chapter = body.get("chapter") instanceof Number n ? n.intValue() : 1;
+            int chapterEnd = body.get("chapterEnd") instanceof Number n ? n.intValue() : chapter;
+            int verseStart = body.get("verseStart") instanceof Number n ? n.intValue() : 1;
+            int verseEnd = body.get("verseEnd") instanceof Number n ? n.intValue() : 50;
+            String topic = (String) body.getOrDefault("topic", "");
+            int count = body.get("count") instanceof Number n ? Math.min(Math.max(n.intValue(), 1), 15) : 5;
+            String difficulty = (String) body.getOrDefault("difficulty", "MEDIUM");
+            String language = (String) body.getOrDefault("language", "vi");
+
+            List<Map<String, Object>> drafts = aiGenerationService.generate(
+                    book, chapter, verseStart, verseEnd,
+                    difficulty, "MULTIPLE_CHOICE", language,
+                    count, null, topic.isBlank() ? null : topic);
+
+            return ResponseEntity.ok(Map.of("success", true, "questions", drafts));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.status(403).body(Map.of("success", false, "message", e.getMessage()));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
+        }
+    }
+
+    /**
+     * POST /api/groups/{id}/quiz-sets/custom
+     * Save leader-authored questions and create a quiz set in one transaction.
+     * Each question is saved with source='group-custom', isActive=false.
+     */
+    @PostMapping("/{id}/quiz-sets/custom")
+    @Transactional
+    @SuppressWarnings("unchecked")
+    public ResponseEntity<?> createCustomQuizSet(@PathVariable String id,
+                                                  @RequestBody Map<String, Object> body,
+                                                  Principal principal) {
+        try {
+            User user = getUser(principal);
+            requireLeaderOrMod(id, user.getId());
+
+            String name = (String) body.get("name");
+            if (name == null || name.isBlank()) {
+                return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Ten quiz set khong duoc de trong"));
+            }
+
+            List<Map<String, Object>> rawQuestions = (List<Map<String, Object>>) body.get("questions");
+            if (rawQuestions == null || rawQuestions.isEmpty()) {
+                return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Danh sach cau hoi khong duoc de trong"));
+            }
+
+            List<String> savedIds = new ArrayList<>();
+            for (Map<String, Object> raw : rawQuestions) {
+                Question q = new Question();
+                q.setId(UUID.randomUUID().toString());
+                q.setContent((String) raw.getOrDefault("content", ""));
+                q.setBook((String) raw.getOrDefault("book", "custom"));
+                q.setChapter(raw.get("chapter") instanceof Number n ? n.intValue() : null);
+                q.setVerseStart(raw.get("verseStart") instanceof Number n ? n.intValue() : null);
+                q.setVerseEnd(raw.get("verseEnd") instanceof Number n ? n.intValue() : null);
+
+                String diffStr = (String) raw.getOrDefault("difficulty", "medium");
+                try { q.setDifficulty(Question.Difficulty.valueOf(diffStr.toLowerCase())); }
+                catch (Exception ex) { q.setDifficulty(Question.Difficulty.medium); }
+
+                q.setType(Question.Type.multiple_choice_single);
+                q.setLanguage((String) raw.getOrDefault("language", "vi"));
+                q.setOptions((List<String>) raw.getOrDefault("options", List.of()));
+
+                Object ca = raw.get("correctAnswer");
+                if (ca instanceof List<?> list) {
+                    q.setCorrectAnswer(list.stream()
+                            .map(v -> v instanceof Number n ? n.intValue() : 0)
+                            .collect(Collectors.toList()));
+                } else if (ca instanceof Number n) {
+                    q.setCorrectAnswer(List.of(n.intValue()));
+                } else {
+                    q.setCorrectAnswer(List.of(0));
+                }
+
+                q.setExplanation((String) raw.get("explanation"));
+                q.setSource("group-custom");
+                q.setIsActive(false);
+                q.setReviewStatus(Question.ReviewStatus.ACTIVE);
+
+                questionRepository.save(q);
+                savedIds.add(q.getId());
+            }
+
+            ChurchGroup group = churchGroupRepository.findById(id)
+                    .orElseThrow(() -> new RuntimeException("Nhom khong ton tai"));
+
+            GroupQuizSet qs = new GroupQuizSet();
+            qs.setId(UUID.randomUUID().toString());
+            qs.setGroup(group);
+            qs.setName(name);
+            qs.setQuestionIds(savedIds);
+            qs.setCreatedBy(user);
+            groupQuizSetRepository.save(qs);
+
+            Map<String, Object> result = new LinkedHashMap<>();
+            result.put("id", qs.getId());
+            result.put("name", qs.getName());
+            result.put("questionCount", savedIds.size());
+            result.put("createdAt", qs.getCreatedAt());
+            return ResponseEntity.ok(Map.of("success", true, "quizSet", result));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.status(403).body(Map.of("success", false, "message", e.getMessage()));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
+        }
+    }
+
+    private void requireLeaderOrMod(String groupId, String userId) {
+        GroupMember member = groupMemberRepository.findByGroupIdAndUserId(groupId, userId)
+                .orElseThrow(() -> new IllegalArgumentException("Ban khong phai thanh vien cua nhom nay"));
+        if (member.getRole() != GroupMember.GroupRole.LEADER && member.getRole() != GroupMember.GroupRole.MOD) {
+            throw new IllegalArgumentException("Chi leader hoac mod moi co the thuc hien thao tac nay");
         }
     }
 

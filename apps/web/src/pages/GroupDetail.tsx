@@ -21,6 +21,7 @@ interface Group {
   maxMembers: number;
   members: Member[];
   leaderUserId: string;
+  avatarUrl?: string;
 }
 
 interface LeaderboardEntry {
@@ -126,6 +127,95 @@ const GroupDetail: React.FC = () => {
   // Quiz Sets
   const [quizSets, setQuizSets] = useState<QuizSet[]>([]);
   const [quizSetsLoading, setQuizSetsLoading] = useState(false);
+
+  // Create quiz set modal — 2 tabs: AI Generate + Manual
+  type QsTab = 'ai' | 'manual';
+  interface AiDraft { content: string; options: string[]; correctAnswer: number[]; explanation?: string; difficulty: string; book?: string; chapter?: number; verseStart?: number; verseEnd?: number; }
+  interface ManualQ { content: string; options: string[]; correctAnswer: number; difficulty: string; }
+
+  const [showCreateQsModal, setShowCreateQsModal] = useState(false);
+  const [qsModalTab, setQsModalTab] = useState<QsTab>('ai');
+  const [qsName, setQsName] = useState('');
+  const [qsError, setQsError] = useState('');
+  const [qsSubmitting, setQsSubmitting] = useState(false);
+
+  // AI tab
+  const [qsAiBook, setQsAiBook] = useState('');
+  const [qsAiChapter, setQsAiChapter] = useState(1);
+  const [qsAiChapterEnd, setQsAiChapterEnd] = useState(1);
+  const [qsAiVerseStart, setQsAiVerseStart] = useState(1);
+  const [qsAiVerseEnd, setQsAiVerseEnd] = useState(50);
+  const [qsAiTopic, setQsAiTopic] = useState('');
+  const [qsAiCount, setQsAiCount] = useState(5);
+  const [qsAiDifficulty, setQsAiDifficulty] = useState('MEDIUM');
+  const [qsAiGenerating, setQsAiGenerating] = useState(false);
+  const [qsAiDrafts, setQsAiDrafts] = useState<AiDraft[]>([]);
+
+  // Manual tab
+  const [qsManualList, setQsManualList] = useState<ManualQ[]>([]);
+  const [qsMContent, setQsMContent] = useState('');
+  const [qsMOptions, setQsMOptions] = useState(['', '', '', '']);
+  const [qsMCorrect, setQsMCorrect] = useState(0);
+  const [qsMDifficulty, setQsMDifficulty] = useState('MEDIUM');
+
+  const openCreateModal = () => {
+    setQsModalTab('ai');
+    setQsName(''); setQsError('');
+    setQsAiBook(''); setQsAiChapter(1); setQsAiChapterEnd(1);
+    setQsAiVerseStart(1); setQsAiVerseEnd(50);
+    setQsAiTopic(''); setQsAiCount(5); setQsAiDifficulty('MEDIUM');
+    setQsAiGenerating(false); setQsAiDrafts([]);
+    setQsManualList([]); setQsMContent('');
+    setQsMOptions(['', '', '', '']); setQsMCorrect(0); setQsMDifficulty('MEDIUM');
+    setShowCreateQsModal(true);
+  };
+
+  const handleAiGenerate = async () => {
+    if (!qsAiBook.trim()) { setQsError(t('groups.aiModalBookRequired')); return; }
+    setQsAiGenerating(true);
+    setQsError('');
+    try {
+      const res = await api.post(`/api/groups/${id}/ai-generate`, {
+        book: qsAiBook.trim(),
+        chapter: qsAiChapter,
+        chapterEnd: qsAiChapterEnd,
+        verseStart: qsAiVerseStart,
+        verseEnd: qsAiVerseEnd,
+        topic: qsAiTopic.trim() || undefined,
+        count: qsAiCount,
+        difficulty: qsAiDifficulty,
+        language: 'vi',
+      });
+      setQsAiDrafts((res.data.questions ?? []).map((q: any) => ({
+        ...q,
+        correctAnswer: Array.isArray(q.correctAnswer) ? q.correctAnswer : [q.correctAnswer ?? 0],
+      })));
+    } catch (err: any) {
+      setQsError(err.response?.data?.message ?? t('groups.createFailed'));
+    } finally { setQsAiGenerating(false); }
+  };
+
+  const handleSaveQuizSet = async (questions: object[]) => {
+    if (!qsName.trim()) { setQsError(t('groups.aiModalNoName')); return; }
+    if (questions.length === 0) { setQsError(t('groups.aiModalNoQuestions')); return; }
+    setQsSubmitting(true);
+    setQsError('');
+    try {
+      await api.post(`/api/groups/${id}/quiz-sets/custom`, { name: qsName.trim(), questions });
+      setShowCreateQsModal(false);
+      fetchQuizSets();
+    } catch (err: any) {
+      setQsError(err.response?.data?.message ?? t('groups.createFailed'));
+    } finally { setQsSubmitting(false); }
+  };
+
+  const handleManualAdd = () => {
+    if (!qsMContent.trim() || qsMOptions.filter(o => o.trim()).length < 2) return;
+    setQsManualList(prev => [...prev, { content: qsMContent.trim(), options: qsMOptions.map(o => o.trim()), correctAnswer: qsMCorrect, difficulty: qsMDifficulty }]);
+    setQsMContent('');
+    setQsMOptions(['', '', '', '']);
+    setQsMCorrect(0);
+  };
 
   // Members tab — Phase 0.3 paginated endpoint
   type MemberSort = 'score' | 'tier' | 'activity' | 'joined';
@@ -1001,8 +1091,8 @@ const GroupDetail: React.FC = () => {
             <div className="text-on-surface text-[13px] font-medium">📚 {t('groups.quizSetsSection')}</div>
             {isLeaderOrMod && (
               <button
+                onClick={openCreateModal}
                 className="bg-[rgba(232,168,50,0.15)] text-secondary border-[0.5px] border-[rgba(232,168,50,0.4)] rounded-md px-3 py-1.5 text-[11px] font-medium hover:brightness-110 transition-all"
-                title={t('groups.createQuizSetCta')}
               >
                 + {t('groups.createQuizSetCta')}
               </button>
@@ -1145,6 +1235,289 @@ const GroupDetail: React.FC = () => {
                 {editLoading ? t('groups.saving') : t('groups.saveChanges')}
               </button>
             </form>
+          </div>
+        </div>
+      )}
+
+      {/* ── Create Quiz Set Modal — 2 tabs: AI Generate + Manual ── */}
+      {showCreateQsModal && (
+        <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4">
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setShowCreateQsModal(false)} />
+          <div className="relative bg-[#1d1f2a] rounded-t-2xl sm:rounded-2xl w-full sm:max-w-xl mx-auto border border-white/10 shadow-2xl flex flex-col" style={{ maxHeight: '92vh' }}>
+
+            {/* Header */}
+            <div className="flex items-center justify-between px-5 pt-5 pb-3 border-b border-white/[0.06] flex-shrink-0">
+              <div className="flex items-center gap-2">
+                <span className="text-[18px]">📚</span>
+                <h3 className="text-[14px] font-semibold text-on-surface">{t('groups.aiModalTitle')}</h3>
+              </div>
+              <button onClick={() => setShowCreateQsModal(false)} className="text-on-surface/50 hover:text-on-surface transition-colors">
+                <span className="material-symbols-outlined text-[20px]">close</span>
+              </button>
+            </div>
+
+            {/* Tab switcher */}
+            <div className="flex px-5 pt-3 pb-0 gap-2 flex-shrink-0">
+              {(['ai', 'manual'] as QsTab[]).map(tab => (
+                <button
+                  key={tab}
+                  onClick={() => { setQsModalTab(tab); setQsError(''); }}
+                  className={`flex-1 py-2 rounded-lg text-[12px] font-medium transition-all ${qsModalTab === tab ? 'bg-[rgba(232,168,50,0.15)] text-secondary border border-[rgba(232,168,50,0.3)]' : 'bg-white/[0.04] text-on-surface/50 border border-white/[0.06] hover:bg-white/[0.07]'}`}
+                >
+                  {tab === 'ai' ? `🤖 ${t('groups.aiModalTabAI')}` : `✍️ ${t('groups.aiModalTabManual')}`}
+                </button>
+              ))}
+            </div>
+
+            {/* Scrollable body */}
+            <div className="overflow-y-auto flex-1 px-5 py-4 space-y-4">
+
+              {/* Quiz set name — always visible */}
+              <div>
+                <label className="block text-[10px] font-medium uppercase tracking-wider text-on-surface/60 mb-1.5">{t('groups.aiModalQsNameLabel')}</label>
+                <input
+                  className="w-full bg-[rgba(50,52,64,0.5)] border border-white/10 rounded-lg px-3.5 py-2.5 text-on-surface text-[13px] placeholder:text-on-surface/30 focus:outline-none focus:border-secondary/50 transition-all"
+                  value={qsName}
+                  onChange={e => setQsName(e.target.value)}
+                  placeholder={t('groups.aiModalQsNamePlaceholder')}
+                  maxLength={100}
+                  autoFocus
+                />
+              </div>
+
+              {/* ── AI TAB ── */}
+              {qsModalTab === 'ai' && (
+                <>
+                  {/* Book + Chapter range */}
+                  <div className="grid grid-cols-3 gap-2">
+                    <div className="col-span-3 sm:col-span-1">
+                      <label className="block text-[10px] font-medium uppercase tracking-wider text-on-surface/60 mb-1.5">{t('groups.aiModalBook')}</label>
+                      <input
+                        className="w-full bg-[rgba(50,52,64,0.5)] border border-white/10 rounded-lg px-3 py-2 text-[12px] text-on-surface placeholder:text-on-surface/30 focus:outline-none focus:border-secondary/40"
+                        value={qsAiBook}
+                        onChange={e => setQsAiBook(e.target.value)}
+                        placeholder={t('groups.aiModalBookPlaceholder')}
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-[10px] font-medium uppercase tracking-wider text-on-surface/60 mb-1.5">{t('groups.aiModalChapterFrom')}</label>
+                      <input type="number" min={1} max={150}
+                        className="w-full bg-[rgba(50,52,64,0.5)] border border-white/10 rounded-lg px-3 py-2 text-[12px] text-on-surface focus:outline-none focus:border-secondary/40"
+                        value={qsAiChapter}
+                        onChange={e => { const v = Number(e.target.value); setQsAiChapter(v); if (qsAiChapterEnd < v) setQsAiChapterEnd(v); }}
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-[10px] font-medium uppercase tracking-wider text-on-surface/60 mb-1.5">{t('groups.aiModalChapterTo')}</label>
+                      <input type="number" min={1} max={150}
+                        className="w-full bg-[rgba(50,52,64,0.5)] border border-white/10 rounded-lg px-3 py-2 text-[12px] text-on-surface focus:outline-none focus:border-secondary/40"
+                        value={qsAiChapterEnd}
+                        onChange={e => setQsAiChapterEnd(Math.max(qsAiChapter, Number(e.target.value)))}
+                      />
+                    </div>
+                  </div>
+
+                  {/* Topic */}
+                  <div>
+                    <label className="block text-[10px] font-medium uppercase tracking-wider text-on-surface/60 mb-1.5">{t('groups.aiModalTopic')}</label>
+                    <textarea
+                      className="w-full bg-[rgba(50,52,64,0.5)] border border-white/10 rounded-lg px-3 py-2.5 text-[12px] text-on-surface placeholder:text-on-surface/30 focus:outline-none focus:border-secondary/40 resize-none"
+                      rows={2}
+                      value={qsAiTopic}
+                      onChange={e => setQsAiTopic(e.target.value)}
+                      placeholder={t('groups.aiModalTopicPlaceholder')}
+                      maxLength={300}
+                    />
+                  </div>
+
+                  {/* Count + Difficulty */}
+                  <div className="flex gap-3 items-start">
+                    <div className="flex-1">
+                      <label className="block text-[10px] font-medium uppercase tracking-wider text-on-surface/60 mb-1.5">{t('groups.aiModalCount')}: {qsAiCount}</label>
+                      <input type="range" min={3} max={15} step={1}
+                        className="w-full accent-secondary mt-1"
+                        value={qsAiCount}
+                        onChange={e => setQsAiCount(Number(e.target.value))}
+                      />
+                      <div className="flex justify-between text-[9px] text-on-surface/40 mt-0.5"><span>3</span><span>15</span></div>
+                    </div>
+                    <div>
+                      <label className="block text-[10px] font-medium uppercase tracking-wider text-on-surface/60 mb-1.5">{t('groups.aiModalDifficulty')}</label>
+                      <div className="flex gap-1">
+                        {(['EASY', 'MEDIUM', 'HARD'] as const).map(d => (
+                          <button key={d} onClick={() => setQsAiDifficulty(d)}
+                            className={`px-2.5 py-1.5 rounded-md text-[10px] font-medium transition-all border ${qsAiDifficulty === d
+                              ? d === 'EASY' ? 'bg-[rgba(99,153,34,0.25)] text-[#97C459] border-[rgba(99,153,34,0.4)]'
+                                : d === 'MEDIUM' ? 'bg-[rgba(232,168,50,0.2)] text-secondary border-[rgba(232,168,50,0.4)]'
+                                : 'bg-[rgba(239,68,68,0.15)] text-error border-error/30'
+                              : 'bg-transparent text-on-surface/40 border-white/[0.06] hover:bg-white/5'
+                            }`}
+                          >
+                            {d === 'EASY' ? t('groups.aiModalDiffEasy') : d === 'MEDIUM' ? t('groups.aiModalDiffMedium') : t('groups.aiModalDiffHard')}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Generate button */}
+                  <button
+                    onClick={handleAiGenerate}
+                    disabled={qsAiGenerating || !qsAiBook.trim()}
+                    className="w-full py-3 gold-gradient text-on-secondary rounded-xl text-[12px] font-semibold hover:brightness-110 transition-all active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  >
+                    {qsAiGenerating
+                      ? <><div className="w-4 h-4 border-2 border-on-secondary/30 border-t-on-secondary rounded-full animate-spin" />{t('groups.aiModalGenerating')}</>
+                      : t('groups.aiModalGenerate')}
+                  </button>
+
+                  {/* Draft question list */}
+                  {qsAiDrafts.length > 0 && (
+                    <div>
+                      <div className="flex justify-between items-center mb-2">
+                        <div className="text-[11px] font-medium text-on-surface/70">{t('groups.aiModalDraftTitle')} · {qsAiDrafts.length} {t('groups.aiModalDraftCount')}</div>
+                        <button onClick={handleAiGenerate} disabled={qsAiGenerating} className="text-[10px] text-secondary hover:brightness-125 disabled:opacity-50 transition-colors">
+                          {t('groups.aiModalRegenerate')}
+                        </button>
+                      </div>
+                      <div className="flex flex-col gap-2 max-h-[320px] overflow-y-auto pr-1">
+                        {qsAiDrafts.map((draft, idx) => (
+                          <div key={idx} className="bg-[rgba(50,52,64,0.6)] border-[0.5px] border-white/[0.08] rounded-xl p-3">
+                            <div className="flex items-start gap-2 mb-2.5">
+                              <span className="text-secondary text-[10px] font-bold mt-0.5 flex-shrink-0">Q{idx + 1}</span>
+                              <textarea
+                                className="flex-1 bg-transparent text-on-surface text-[11px] leading-snug resize-none outline-none border-b border-transparent focus:border-secondary/30 transition-all"
+                                value={draft.content}
+                                onChange={e => { const u = [...qsAiDrafts]; u[idx] = { ...draft, content: e.target.value }; setQsAiDrafts(u); }}
+                                rows={2}
+                              />
+                              <button
+                                onClick={() => setQsAiDrafts(prev => prev.filter((_, i) => i !== idx))}
+                                className="text-on-surface/25 hover:text-error transition-colors flex-shrink-0"
+                              >
+                                <span className="material-symbols-outlined text-[15px]">close</span>
+                              </button>
+                            </div>
+                            <div className="grid grid-cols-2 gap-1.5">
+                              {(draft.options || []).map((opt, oi) => {
+                                const isCorrect = (draft.correctAnswer || []).includes(oi);
+                                return (
+                                  <div
+                                    key={oi}
+                                    onClick={() => { const u = [...qsAiDrafts]; u[idx] = { ...draft, correctAnswer: [oi] }; setQsAiDrafts(u); }}
+                                    className={`flex items-center gap-1.5 rounded-md px-2 py-1.5 cursor-pointer border transition-all ${isCorrect ? 'border-[rgba(99,153,34,0.5)] bg-[rgba(99,153,34,0.1)]' : 'border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.05]'}`}
+                                  >
+                                    <div className={`w-4 h-4 rounded-full flex-shrink-0 flex items-center justify-center border text-[8px] transition-all ${isCorrect ? 'bg-[#4a9c22] border-[#4a9c22] text-white' : 'bg-transparent border-white/20'}`}>
+                                      {isCorrect && '✓'}
+                                    </div>
+                                    <span className="text-[10px] text-on-surface/80 flex-1 truncate">{opt || `Đáp án ${oi + 1}`}</span>
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </>
+              )}
+
+              {/* ── MANUAL TAB ── */}
+              {qsModalTab === 'manual' && (
+                <>
+                  {/* Question input form */}
+                  <div className="bg-[rgba(50,52,64,0.3)] border-[0.5px] border-white/[0.06] rounded-xl p-4 space-y-3">
+                    <div>
+                      <label className="block text-[10px] font-medium uppercase tracking-wider text-on-surface/60 mb-1.5">{t('groups.aiModalManualContent')}</label>
+                      <textarea
+                        className="w-full bg-[rgba(50,52,64,0.5)] border border-white/10 rounded-lg px-3 py-2 text-[12px] text-on-surface placeholder:text-on-surface/30 focus:outline-none focus:border-secondary/40 resize-none"
+                        rows={3}
+                        value={qsMContent}
+                        onChange={e => setQsMContent(e.target.value)}
+                        placeholder="Nhập câu hỏi..."
+                      />
+                    </div>
+                    <div className="grid grid-cols-2 gap-2">
+                      {qsMOptions.map((opt, i) => (
+                        <div key={i} className="flex items-center gap-1.5">
+                          <button
+                            onClick={() => setQsMCorrect(i)}
+                            className={`w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center border transition-all ${qsMCorrect === i ? 'bg-[#4a9c22] border-[#4a9c22] text-white text-[9px]' : 'bg-transparent border-white/25 hover:border-white/50'}`}
+                          >
+                            {qsMCorrect === i && '✓'}
+                          </button>
+                          <input
+                            className="flex-1 bg-[rgba(50,52,64,0.5)] border border-white/10 rounded-lg px-2.5 py-1.5 text-[11px] text-on-surface placeholder:text-on-surface/30 focus:outline-none focus:border-secondary/40"
+                            value={opt}
+                            onChange={e => { const n = [...qsMOptions]; n[i] = e.target.value; setQsMOptions(n); }}
+                            placeholder={`${t('groups.aiModalManualOption')} ${i + 1}`}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="flex gap-1">
+                        {(['EASY', 'MEDIUM', 'HARD'] as const).map(d => (
+                          <button key={d} onClick={() => setQsMDifficulty(d)}
+                            className={`px-2 py-1 rounded text-[9px] font-medium transition-all border ${qsMDifficulty === d ? d === 'EASY' ? 'bg-[rgba(99,153,34,0.25)] text-[#97C459] border-[rgba(99,153,34,0.4)]' : d === 'MEDIUM' ? 'bg-[rgba(232,168,50,0.2)] text-secondary border-[rgba(232,168,50,0.3)]' : 'bg-[rgba(239,68,68,0.15)] text-error border-error/30' : 'bg-transparent text-on-surface/40 border-white/[0.06]'}`}
+                          >
+                            {d === 'EASY' ? t('groups.aiModalDiffEasy') : d === 'MEDIUM' ? t('groups.aiModalDiffMedium') : t('groups.aiModalDiffHard')}
+                          </button>
+                        ))}
+                      </div>
+                      <button
+                        onClick={handleManualAdd}
+                        disabled={!qsMContent.trim() || qsMOptions.filter(o => o.trim()).length < 2}
+                        className="bg-[rgba(232,168,50,0.15)] text-secondary border-[0.5px] border-[rgba(232,168,50,0.4)] rounded-lg px-4 py-1.5 text-[11px] font-medium hover:brightness-110 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+                      >
+                        + {t('groups.aiModalManualAdd')}
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Question list */}
+                  {qsManualList.length === 0 ? (
+                    <p className="text-center text-on-surface/35 text-[11px] py-3">{t('groups.aiModalManualEmpty')}</p>
+                  ) : (
+                    <div className="flex flex-col gap-2 max-h-[280px] overflow-y-auto pr-1">
+                      {qsManualList.map((q, i) => (
+                        <div key={i} className="bg-[rgba(50,52,64,0.5)] border-[0.5px] border-white/[0.06] rounded-xl p-3 flex items-start gap-2">
+                          <span className="text-secondary text-[10px] font-bold mt-0.5 flex-shrink-0">Q{i + 1}</span>
+                          <div className="flex-1 min-w-0">
+                            <div className="text-on-surface text-[11px] font-medium line-clamp-2">{q.content}</div>
+                            <div className="text-on-surface/45 text-[9px] mt-0.5">
+                              {q.options.filter(Boolean).length} {t('groups.aiModalDraftCount')} · {q.difficulty === 'EASY' ? t('groups.aiModalDiffEasy') : q.difficulty === 'HARD' ? t('groups.aiModalDiffHard') : t('groups.aiModalDiffMedium')}
+                            </div>
+                          </div>
+                          <button onClick={() => setQsManualList(prev => prev.filter((_, j) => j !== i))} className="text-on-surface/25 hover:text-error transition-colors flex-shrink-0">
+                            <span className="material-symbols-outlined text-[15px]">close</span>
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </>
+              )}
+            </div>
+
+            {/* Footer */}
+            <div className="px-5 pb-5 pt-3 border-t border-white/[0.06] flex-shrink-0 space-y-2">
+              {qsError && <p className="text-error text-[11px] text-center">{qsError}</p>}
+              <button
+                onClick={() => handleSaveQuizSet(
+                  qsModalTab === 'ai'
+                    ? qsAiDrafts.map(d => ({ ...d, book: d.book || qsAiBook }))
+                    : qsManualList
+                )}
+                disabled={qsSubmitting || !qsName.trim() || (qsModalTab === 'ai' ? qsAiDrafts.length === 0 : qsManualList.length === 0)}
+                className="w-full py-3 gold-gradient text-on-secondary rounded-xl text-[12px] font-semibold hover:brightness-110 transition-all active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              >
+                {qsSubmitting
+                  ? <><div className="w-4 h-4 border-2 border-on-secondary/30 border-t-on-secondary rounded-full animate-spin" />{t('groups.aiModalSaving')}</>
+                  : `${t('groups.aiModalSave')} (${qsModalTab === 'ai' ? qsAiDrafts.length : qsManualList.length} ${t('groups.aiModalDraftCount')})`}
+              </button>
+            </div>
           </div>
         </div>
       )}
