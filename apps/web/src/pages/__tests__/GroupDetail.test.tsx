@@ -11,5 +11,5 @@ describe('Group Detail', () => {
     const mod = await import('../GroupDetail')
     expect(mod.default).toBeDefined()
     expect(typeof mod.default).toBe('function')
-  })
+  }, 30000) // GroupDetail is 1100+ LOC + i18n + many child components — vite transform on Windows can take 10-15s on cold cache
 })

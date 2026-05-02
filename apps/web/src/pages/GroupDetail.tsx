@@ -416,350 +416,277 @@ const GroupDetail: React.FC = () => {
   const restLeaderboard = leaderboard.slice(3);
 
   return (
-    <div className="relative pb-20" data-testid="group-detail-page">
+    <div className="relative pb-12 max-w-5xl mx-auto px-4 lg:px-6 pt-6" data-testid="group-detail-page">
 
-      {/* ── Hero Header ── */}
-      <header className="relative w-full h-[360px] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent z-10" />
-        <img
-          alt="Church Interior"
-          className="w-full h-full object-cover scale-105"
-          src={GROUP_BANNER}
-        />
-        <div className="absolute inset-0 z-20 flex flex-col justify-end px-12 pb-12">
-          <div className="flex items-end gap-8">
-            {/* Group Logo */}
-            <div className="w-32 h-32 rounded-3xl bg-surface-container-high border-4 border-surface shadow-2xl flex items-center justify-center overflow-hidden flex-shrink-0">
-              <img alt="Group Logo" className="w-full h-full object-cover" src={GROUP_LOGO} />
-            </div>
-            {/* Group Info */}
-            <div className="flex-grow min-w-0" data-testid="group-detail-name">
-              <div className="flex items-center gap-4 mb-2">
-                <span className="bg-secondary/20 text-secondary text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-widest">
-                  {group.isPublic ? 'OPEN' : 'PRIVATE'}
-                </span>
-                {group.isPublic && (
-                  <span className="text-on-surface-variant flex items-center gap-1 text-xs">
-                    <span className="material-symbols-outlined text-sm">public</span> {t('groups.publicGroup')}
-                  </span>
-                )}
-                {/* Invite Code Chip */}
-                <button
-                  data-testid="group-join-code"
-                  onClick={handleCopyCode}
-                  className="flex items-center gap-1.5 text-xs text-on-surface-variant hover:text-secondary transition-colors"
-                >
-                  <span className="material-symbols-outlined text-sm">content_copy</span>
-                  {copied ? t('groups.copied') : group.code}
-                </button>
-              </div>
-              <h1 data-testid="group-name-heading" className="text-5xl font-black text-on-surface tracking-tighter mb-2 truncate">
-                {group.name?.trim() || t('groups.untitledGroup')}
-              </h1>
-              {group.description && (
-                <p className="text-on-surface-variant max-w-2xl font-medium leading-relaxed line-clamp-2">
-                  {group.description}
-                </p>
-              )}
-            </div>
-            {/* Action Buttons */}
-            <div className="flex gap-3 mb-4 flex-shrink-0">
-              {isLeader ? (
-                <button
-                  onClick={openEditModal}
-                  className="flex items-center gap-2 bg-surface-container-highest hover:bg-surface-variant text-on-surface px-6 py-3 rounded-xl font-bold transition-all border border-outline-variant/15"
-                >
-                  <span className="material-symbols-outlined">settings</span>
-                  {t('groups.settings')}
-                </button>
-              ) : (
-                <button
-                  data-testid="group-leave-btn"
-                  onClick={handleLeave}
-                  className="flex items-center gap-2 bg-surface-container-highest hover:bg-surface-variant text-on-surface px-6 py-3 rounded-xl font-bold transition-all border border-outline-variant/15"
-                >
-                  <span className="material-symbols-outlined">logout</span>
-                  {t('groups.leaveGroup')}
-                </button>
-              )}
-              <button
-                onClick={handleCopyCode}
-                className="flex items-center gap-2 gold-gradient text-on-secondary px-8 py-3 rounded-xl font-bold shadow-lg shadow-secondary/10 transition-transform active:scale-95"
-              >
-                <span className="material-symbols-outlined">person_add</span>
-                {t('groups.invite')}
-              </button>
-            </div>
+      {/* ── Compact Header (mockup: groups_member_dashboard.html / groups_leader_dashboard.html) ── */}
+      <header
+        className={`rounded-[14px] p-4 flex items-center gap-4 mb-3 ${
+          isLeader
+            ? 'bg-gradient-to-br from-[rgba(232,168,50,0.1)] to-[rgba(50,52,64,0.4)] border-[0.5px] border-[rgba(232,168,50,0.3)]'
+            : 'bg-[rgba(50,52,64,0.4)] border-[0.5px] border-[rgba(232,168,50,0.2)]'
+        }`}
+      >
+        <div
+          className={`w-[60px] h-[60px] rounded-[14px] bg-[rgba(232,168,50,0.15)] flex items-center justify-center flex-shrink-0 overflow-hidden ${
+            isLeader ? 'border-[1.5px] border-secondary' : 'border-[1.5px] border-[rgba(232,168,50,0.4)]'
+          }`}
+        >
+          {group.avatarUrl ? (
+            <img alt={group.name} src={group.avatarUrl} className="w-full h-full object-cover" />
+          ) : (
+            <span className="text-[28px]">⛪</span>
+          )}
+        </div>
+
+        <div className="flex-1 min-w-0" data-testid="group-detail-name">
+          <div className="flex items-center gap-2 flex-wrap">
+            <h2 data-testid="group-name-heading" className="text-on-surface text-[18px] font-medium m-0 truncate">
+              {group.name?.trim() || t('groups.untitledGroup')}
+            </h2>
+            {isLeader ? (
+              <span className="bg-[rgba(232,168,50,0.2)] text-secondary px-2 py-0.5 rounded-full text-[9px] font-medium border-[0.5px] border-[rgba(232,168,50,0.4)]">
+                👑 {t('groups.leaderBadge')}
+              </span>
+            ) : group.isPublic ? (
+              <span className="bg-[rgba(99,153,34,0.15)] text-[#97C459] px-2 py-0.5 rounded-full text-[9px] font-medium">
+                {t('groups.publicBadge')}
+              </span>
+            ) : (
+              <span className="bg-white/[0.06] text-on-surface-variant px-2 py-0.5 rounded-full text-[9px] font-medium">
+                {t('groups.privateBadge')}
+              </span>
+            )}
           </div>
+          <div className="text-on-surface/55 text-[12px] mt-1 flex items-center gap-3 flex-wrap">
+            <span data-testid="group-member-count">👥 {group.members?.length || 0} {t('groups.members')}</span>
+            {leader && (
+              <>
+                <span>·</span>
+                <span>👑 {leader.name}</span>
+              </>
+            )}
+            <span>·</span>
+            <button
+              data-testid="group-join-code"
+              onClick={handleCopyCode}
+              className="flex items-center gap-1 text-on-surface/55 hover:text-secondary transition-colors"
+            >
+              🔑 {t('groups.groupCodeLabel')}:{' '}
+              <code className="bg-white/[0.06] px-1.5 py-px rounded text-secondary font-mono">
+                {copied ? t('groups.copied') : group.code}
+              </code>
+            </button>
+          </div>
+        </div>
+
+        <div className="flex gap-2 flex-shrink-0">
+          {isLeader && (
+            <Link
+              to={`/groups/${id}/analytics`}
+              className="bg-[rgba(232,168,50,0.15)] text-secondary border-[0.5px] border-[rgba(232,168,50,0.4)] rounded-lg px-3.5 py-2 text-[11px] font-medium hover:brightness-110 transition-all flex items-center gap-1.5"
+            >
+              📊 {t('groupAnalytics.title')}
+            </Link>
+          )}
+          {isLeader ? (
+            <button
+              onClick={openEditModal}
+              className="bg-white/5 text-on-surface/70 border-[0.5px] border-white/10 rounded-lg px-3.5 py-2 text-[11px] font-medium hover:bg-white/10 transition-all flex items-center gap-1.5"
+            >
+              ⚙️ {t('groups.settings')}
+            </button>
+          ) : (
+            <button
+              data-testid="group-leave-btn"
+              onClick={handleLeave}
+              className="bg-white/5 text-on-surface/70 border-[0.5px] border-white/10 rounded-lg px-3.5 py-2 text-[11px] font-medium hover:bg-white/10 transition-all flex items-center gap-1.5"
+            >
+              🚪 {t('groups.leaveGroup')}
+            </button>
+          )}
+          <button
+            onClick={handleCopyCode}
+            className="bg-secondary text-on-secondary rounded-lg px-3.5 py-2 text-[11px] font-medium shadow-[0_0_18px_rgba(232,168,50,0.2)] hover:brightness-110 active:scale-95 transition-all flex items-center gap-1.5"
+          >
+            🔗 {t('groups.invite')}
+          </button>
         </div>
       </header>
 
-      {/* ── Stats Bar ── */}
-      <section className="px-12 -mt-6 relative z-30">
-        <div className="grid grid-cols-4 gap-6">
-          {/* Members */}
-          <div className="col-span-1 glass-card p-6 rounded-2xl flex items-center gap-5 border border-outline-variant/10">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-              <span className="material-symbols-outlined text-3xl">groups</span>
-            </div>
-            <div>
-              <p data-testid="group-member-count" className="text-2xl font-black text-on-surface">{group.members?.length || 0}</p>
-              <p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">{t('groups.members')}</p>
-            </div>
-          </div>
-          {/* Total XP */}
-          <div className="col-span-1 glass-card p-6 rounded-2xl flex items-center gap-5 border border-outline-variant/10">
-            <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
-              <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>local_fire_department</span>
-            </div>
-            <div>
-              <p className="text-2xl font-black text-on-surface">{(totalXp ?? 0).toLocaleString()}</p>
-              <p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">{t('groups.totalXP')}</p>
-            </div>
-          </div>
-          {/* Max Members */}
-          <div className="col-span-1 glass-card p-6 rounded-2xl flex items-center gap-5 border border-outline-variant/10">
-            <div className="w-12 h-12 rounded-full bg-tertiary/10 flex items-center justify-center text-tertiary">
-              <span className="material-symbols-outlined text-3xl">workspace_premium</span>
-            </div>
-            <div>
-              <p className="text-2xl font-black text-on-surface">{group.maxMembers}</p>
-              <p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">{t('groups.limit')}</p>
-            </div>
-          </div>
-          {/* Leader Mini Card */}
-          <div className="col-span-1 glass-card p-4 rounded-2xl border border-secondary/30 flex items-center justify-between bg-secondary/5">
-            <div className="pl-2 flex items-center gap-3 min-w-0">
-              {leader && (
-                <>
-                  <div className="w-10 h-10 rounded-full bg-secondary/15 flex items-center justify-center text-secondary font-black flex-shrink-0 overflow-hidden">
-                    {leader.avatarUrl ? (
-                      <img src={leader.avatarUrl} alt="" className="w-full h-full object-cover" />
-                    ) : (
-                      leader.name?.charAt(0).toUpperCase() || '?'
-                    )}
-                  </div>
-                  <div className="min-w-0">
-                    <p className="text-on-surface font-bold text-sm truncate">{leader.name}</p>
-                    <p className="text-xs text-on-surface-variant">{t('groups.groupLeader')}</p>
-                  </div>
-                </>
-              )}
-              {!leader && (
-                <div>
-                  <p className="text-on-surface font-bold text-sm">--</p>
-                  <p className="text-xs text-on-surface-variant">{t('groups.groupLeader')}</p>
-                </div>
-              )}
-            </div>
-            {isLeader && (
-              <Link to={`/groups/${id}/analytics`} className="bg-secondary text-on-secondary p-3 rounded-xl flex-shrink-0">
-                <span className="material-symbols-outlined">analytics</span>
-              </Link>
+      {/* ── Tab Navigation (compact) ── */}
+      <nav className="flex items-center gap-6 border-b border-white/10 overflow-x-auto whitespace-nowrap mb-4">
+        {TABS.map(tab => (
+          <button
+            key={tab.key}
+            onClick={() => handleTabChange(tab.key)}
+            className={`pb-2.5 px-1 text-[12px] font-medium tracking-wide transition-colors flex items-center gap-1.5 ${
+              activeTab === tab.key
+                ? 'text-secondary border-b-2 border-secondary'
+                : 'text-on-surface/55 hover:text-on-surface'
+            }`}
+          >
+            {tab.label}
+            {tab.hasNotification && announcements.length > 0 && (
+              <span className="w-1.5 h-1.5 rounded-full bg-error" />
             )}
-          </div>
-        </div>
-
-        {/* ── Tab Navigation (underline style) ── */}
-        <nav className="mt-12 flex items-center gap-10 border-b border-outline-variant/15 overflow-x-auto whitespace-nowrap">
-          {TABS.map(tab => (
-            <button
-              key={tab.key}
-              onClick={() => handleTabChange(tab.key)}
-              className={`pb-4 px-2 font-bold text-sm tracking-wide transition-colors flex items-center gap-2 ${
-                activeTab === tab.key
-                  ? 'text-secondary border-b-2 border-secondary'
-                  : 'text-on-surface-variant hover:text-on-surface'
-              }`}
-            >
-              {tab.label}
-              {tab.hasNotification && announcements.length > 0 && (
-                <span className="w-2 h-2 rounded-full bg-error" />
-              )}
-            </button>
-          ))}
-        </nav>
-      </section>
+          </button>
+        ))}
+      </nav>
 
       {/* ── Tab Content ── */}
 
       {/* ===== LEADERBOARD TAB ===== */}
       {activeTab === 'leaderboard' && (
-        <section className="px-12 mt-10" data-testid="group-leaderboard">
-          {/* Period Toggle */}
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-black tracking-tight flex items-center gap-3">
-              <span className="material-symbols-outlined text-secondary text-3xl">leaderboard</span>
-              {t('groups.leaderboardTitle')}
-            </h2>
-            <div className="flex gap-2">
+        <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-[rgba(232,168,50,0.15)] rounded-xl p-5" data-testid="group-leaderboard">
+          {/* Header + period toggle */}
+          <div className="flex justify-between items-center mb-4">
+            <div className="text-on-surface text-[13px] font-medium">📊 {t('groups.leaderboard')}</div>
+            <div className="inline-flex bg-black/30 rounded-md p-0.5">
               <button
                 onClick={() => setPeriod('weekly')}
-                className={`px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${
-                  period === 'weekly'
-                    ? 'bg-secondary/15 text-secondary'
-                    : 'text-on-surface-variant hover:text-on-surface bg-surface-container-high'
+                className={`border-0 px-2.5 py-1 rounded text-[10px] font-medium cursor-pointer transition-all ${
+                  period === 'weekly' ? 'bg-secondary text-on-secondary' : 'bg-transparent text-on-surface/55'
                 }`}
               >
-                {t('groups.weekly')}
+                {t('groups.thisWeek')}
               </button>
               <button
                 onClick={() => setPeriod('all_time')}
-                className={`px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${
-                  period === 'all_time'
-                    ? 'bg-secondary/15 text-secondary'
-                    : 'text-on-surface-variant hover:text-on-surface bg-surface-container-high'
+                className={`border-0 px-2.5 py-1 rounded text-[10px] font-medium cursor-pointer transition-all ${
+                  period === 'all_time' ? 'bg-secondary text-on-secondary' : 'bg-transparent text-on-surface/55'
                 }`}
               >
-                {t('groups.allTime')}
+                {t('groups.everytime')}
               </button>
             </div>
           </div>
 
           {lbLoading ? (
-            <div className="flex justify-center py-12">
-              <div className="w-8 h-8 border-3 border-secondary/20 border-t-secondary rounded-full animate-spin" />
+            <div className="flex justify-center py-8">
+              <div className="w-7 h-7 border-2 border-secondary/20 border-t-secondary rounded-full animate-spin" />
             </div>
           ) : leaderboard.length === 0 ? (
-            <div className="text-center py-16">
-              <span className="material-symbols-outlined text-6xl text-on-surface-variant/30 mb-4 block">emoji_events</span>
-              <p className="text-sm text-on-surface-variant font-bold">{t('groups.noRankingData')}</p>
-            </div>
+            <p className="text-center text-on-surface-variant py-6 text-[12px]">
+              {t('groups.noRankingData')}
+            </p>
           ) : (
-            <div className="grid grid-cols-12 gap-8">
-              {/* Podium Top 3 */}
-              {top3.length > 0 && (
-                <div className="col-span-12 flex justify-center items-end gap-8 pb-10">
-                  {/* 2nd Place */}
-                  {top3[1] && (
-                    <div className="flex flex-col items-center group">
-                      <div className="relative mb-4">
-                        <div className="w-24 h-24 rounded-full p-1 bg-gradient-to-tr from-outline to-surface-variant">
-                          {top3[1].avatarUrl ? (
-                            <img alt={top3[1].name} className="w-full h-full rounded-full object-cover grayscale group-hover:grayscale-0 transition-all" src={top3[1].avatarUrl} />
+            <>
+              {/* Compact 3-slot podium (mockup pattern: rank 2 left / rank 1 elevated center / rank 3 right) */}
+              <div className="grid grid-cols-3 gap-2 items-end mb-4">
+                {[1, 0, 2].map((podiumIdx, gridPos) => {
+                  const entry = top3[podiumIdx];
+                  const rank = (podiumIdx + 1) as 1 | 2 | 3;
+                  const elevated = gridPos === 1;
+                  if (!entry) {
+                    return (
+                      <div
+                        key={`empty-${rank}`}
+                        className="bg-white/[0.03] border-[0.5px] border-dashed border-white/10 rounded-[10px] p-2.5 text-center opacity-60 flex flex-col items-center justify-center"
+                        style={{ minHeight: elevated ? 110 : 90 }}
+                      >
+                        <div className="w-10 h-10 rounded-full border border-dashed border-on-surface-variant/30 flex items-center justify-center mb-1.5">
+                          <span className="material-symbols-outlined text-on-surface-variant/40 text-[18px]">person_add</span>
+                        </div>
+                        <div className="text-on-surface-variant text-[10px]">{t('groups.podiumEmptySlot')}</div>
+                      </div>
+                    );
+                  }
+                  const isCurrentUser = entry.name === user?.name;
+                  const isMemberLeader = entry.role === 'LEADER';
+                  const wrapperStyle = elevated
+                    ? 'bg-[rgba(232,168,50,0.12)] border border-[rgba(232,168,50,0.5)] shadow-[0_0_0_2px_rgba(232,168,50,0.15)]'
+                    : rank === 2
+                    ? 'bg-white/[0.04] border-[0.5px] border-white/10'
+                    : 'bg-[rgba(255,140,66,0.08)] border-[0.5px] border-[rgba(255,140,66,0.3)]';
+                  const avatarStyle = elevated
+                    ? 'w-[50px] h-[50px] bg-[rgba(232,168,50,0.3)] border-2 border-secondary text-secondary text-[16px]'
+                    : rank === 2
+                    ? 'w-10 h-10 bg-[rgba(74,158,255,0.3)] border-2 border-[rgba(74,158,255,0.6)] text-[#6AB8E8] text-[14px]'
+                    : 'w-10 h-10 bg-[rgba(168,85,247,0.3)] border-2 border-[rgba(168,85,247,0.6)] text-[#c084fc] text-[14px]';
+                  const badgeStyle = elevated
+                    ? 'bg-secondary text-on-secondary text-[11px] w-5 h-5'
+                    : rank === 2
+                    ? 'bg-white/60 text-background text-[10px] w-[18px] h-[18px]'
+                    : 'bg-[rgba(255,140,66,0.8)] text-background text-[10px] w-[18px] h-[18px]';
+                  return (
+                    <div
+                      key={entry.userId}
+                      className={`rounded-[10px] p-2.5 text-center ${wrapperStyle} ${isCurrentUser ? 'ring-1 ring-secondary' : ''}`}
+                    >
+                      <div className="relative inline-block mb-1.5">
+                        <div className={`rounded-full flex items-center justify-center font-medium ${avatarStyle}`}>
+                          {entry.avatarUrl ? (
+                            <img alt={entry.name} src={entry.avatarUrl} className="w-full h-full rounded-full object-cover" />
                           ) : (
-                            <div className="w-full h-full rounded-full bg-surface-container-highest flex items-center justify-center text-2xl font-black text-on-surface-variant grayscale group-hover:grayscale-0 transition-all">
-                              {top3[1].name?.charAt(0).toUpperCase() || '?'}
-                            </div>
+                            (entry.name || '?').charAt(0).toUpperCase()
                           )}
                         </div>
-                        <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-surface-container-high text-on-surface text-xs font-black w-8 h-8 rounded-full flex items-center justify-center border-2 border-surface">2</div>
-                      </div>
-                      <p className="font-bold text-on-surface">{top3[1].name}</p>
-                      <p className="text-xs text-on-surface-variant mb-3">{top3[1].role === 'LEADER' ? t('groups.leaderRole') : top3[1].role === 'MODERATOR' ? t('groups.moderatorRole') : t('groups.memberRole')}</p>
-                      <div className="px-4 py-1 rounded-full bg-surface-container-high text-on-surface text-xs font-black">{(top3[1].score ?? 0).toLocaleString()} XP</div>
-                    </div>
-                  )}
-                  {/* 1st Place */}
-                  {top3[0] && (
-                    <div className="flex flex-col items-center group -translate-y-4">
-                      <div className="relative mb-4">
-                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 text-secondary scale-150 animate-bounce">
-                          <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>workspace_premium</span>
+                        <div
+                          className={`absolute -bottom-0.5 -right-1 rounded-full flex items-center justify-center font-semibold ${badgeStyle}`}
+                        >
+                          {rank}
                         </div>
-                        <div className="w-32 h-32 rounded-full p-1.5 bg-gradient-to-tr from-secondary to-tertiary">
-                          {top3[0].avatarUrl ? (
-                            <img alt={top3[0].name} className="w-full h-full rounded-full object-cover" src={top3[0].avatarUrl} />
-                          ) : (
-                            <div className="w-full h-full rounded-full bg-secondary/15 flex items-center justify-center text-3xl font-black text-secondary">
-                              {top3[0].name?.charAt(0).toUpperCase() || '?'}
-                            </div>
-                          )}
-                        </div>
-                        <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 gold-gradient text-on-secondary text-sm font-black w-10 h-10 rounded-full flex items-center justify-center border-4 border-surface shadow-lg">1</div>
                       </div>
-                      <p className="font-black text-lg text-on-surface">{top3[0].name}</p>
-                      <p className="text-xs text-secondary mb-3 font-bold">{top3[0].role === 'LEADER' ? t('groups.leaderRole') : top3[0].role === 'MODERATOR' ? t('groups.moderatorRole') : t('groups.memberRole')}</p>
-                      <div className="px-6 py-2 rounded-full gold-gradient text-on-secondary text-sm font-black shadow-xl shadow-secondary/20">{(top3[0].score ?? 0).toLocaleString()} XP</div>
-                    </div>
-                  )}
-                  {/* 3rd Place */}
-                  {top3[2] && (
-                    <div className="flex flex-col items-center group">
-                      <div className="relative mb-4">
-                        <div className="w-20 h-20 rounded-full p-1 bg-gradient-to-tr from-tertiary to-surface-variant">
-                          {top3[2].avatarUrl ? (
-                            <img alt={top3[2].name} className="w-full h-full rounded-full object-cover grayscale group-hover:grayscale-0 transition-all" src={top3[2].avatarUrl} />
-                          ) : (
-                            <div className="w-full h-full rounded-full bg-surface-container-highest flex items-center justify-center text-xl font-black text-on-surface-variant grayscale group-hover:grayscale-0 transition-all">
-                              {top3[2].name?.charAt(0).toUpperCase() || '?'}
-                            </div>
-                          )}
-                        </div>
-                        <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-surface-container-high text-on-surface text-xs font-black w-8 h-8 rounded-full flex items-center justify-center border-2 border-surface">3</div>
+                      <div className="text-on-surface text-[12px] font-medium truncate">
+                        {entry.name}
                       </div>
-                      <p className="font-bold text-on-surface">{top3[2].name}</p>
-                      <p className="text-xs text-on-surface-variant mb-3">{top3[2].role === 'LEADER' ? t('groups.leaderRole') : top3[2].role === 'MODERATOR' ? t('groups.moderatorRole') : t('groups.memberRole')}</p>
-                      <div className="px-4 py-1 rounded-full bg-surface-container-high text-on-surface text-xs font-black">{(top3[2].score ?? 0).toLocaleString()} XP</div>
+                      <div className="text-[9px]" style={{ color: isMemberLeader ? '#e8a832' : rank === 2 ? '#6AB8E8' : '#c084fc' }}>
+                        {isMemberLeader ? `👑 ${t('groups.filterLeader')}` : entry.role === 'MOD' ? `🛡️ ${t('groups.filterMod')}` : t('groups.memberRole')}
+                      </div>
+                      <div className="text-on-surface/45 text-[10px] mt-0.5">
+                        {(entry.score ?? 0).toLocaleString()} {t('groups.pointsAbbr')}
+                      </div>
                     </div>
-                  )}
-                </div>
-              )}
+                  );
+                })}
+              </div>
 
-              {/* Full Leaderboard Table */}
+              {/* Mini list (rank 4+) */}
               {restLeaderboard.length > 0 && (
-                <div className="col-span-12 glass-card rounded-3xl overflow-hidden border border-outline-variant/10">
-                  <table className="w-full border-collapse">
-                    <thead>
-                      <tr className="bg-surface-container-high/50 text-left">
-                        <th className="py-5 px-8 text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">{t('groups.rankColumn')}</th>
-                        <th className="py-5 px-8 text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">{t('groups.memberColumn')}</th>
-                        <th className="py-5 px-8 text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">{t('groups.roleColumn')}</th>
-                        <th className="py-5 px-8 text-right text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">{t('groups.totalXP')}</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-outline-variant/5">
-                      {restLeaderboard.map((entry, i) => {
-                        const isCurrentUser = entry.name === user?.name;
-                        return (
-                          <tr
-                            key={entry.userId}
-                            className={`transition-colors group ${
-                              isCurrentUser
-                                ? 'bg-secondary/5 border-l-4 border-secondary'
-                                : 'hover:bg-surface-container-high/30'
-                            }`}
-                          >
-                            <td className={`py-5 px-8 font-black ${isCurrentUser ? 'text-secondary' : 'text-on-surface-variant group-hover:text-on-surface'}`}>
-                              {String(i + 4).padStart(2, '0')}
-                            </td>
-                            <td className="py-5 px-8">
-                              <div className="flex items-center gap-4">
-                                <div className={`w-10 h-10 rounded-xl overflow-hidden flex-shrink-0 ${
-                                  isCurrentUser ? 'bg-secondary/20 ring-2 ring-secondary/50 ring-offset-2 ring-offset-surface' : 'bg-surface-container-highest'
-                                }`}>
-                                  {entry.avatarUrl ? (
-                                    <img alt={entry.name} className="w-full h-full object-cover" src={entry.avatarUrl} />
-                                  ) : (
-                                    <div className="w-full h-full flex items-center justify-center font-black text-on-surface-variant">
-                                      {entry.name?.charAt(0).toUpperCase() || '?'}
-                                    </div>
-                                  )}
-                                </div>
-                                <div className="flex flex-col">
-                                  <span className="font-bold text-on-surface">
-                                    {entry.name}{isCurrentUser && ` (${t('groups.you')})`}
-                                  </span>
-                                  {isCurrentUser && (
-                                    <span className="text-[10px] text-secondary font-bold uppercase tracking-tighter">{t('groups.levelUpSoon')}</span>
-                                  )}
-                                </div>
-                              </div>
-                            </td>
-                            <td className="py-5 px-8">
-                              <span className="px-3 py-1 rounded-lg bg-surface-container-highest text-on-surface-variant text-[10px] font-bold uppercase tracking-wider">
-                                {entry.role === 'LEADER' ? t('groups.leaderRole') : entry.role === 'MODERATOR' ? t('groups.moderatorRole') : t('groups.memberRole')}
-                              </span>
-                            </td>
-                            <td className="py-5 px-8 text-right font-black text-on-surface">{(entry.score ?? 0).toLocaleString()}</td>
-                          </tr>
-                        );
-                      })}
-                    </tbody>
-                  </table>
+                <div className="flex flex-col gap-1">
+                  {restLeaderboard.map((entry, i) => {
+                    const isCurrentUser = entry.name === user?.name;
+                    return (
+                      <div
+                        key={entry.userId}
+                        className={`rounded-md px-3 py-2 flex items-center gap-2.5 border-[0.5px] ${
+                          isCurrentUser
+                            ? 'bg-[rgba(232,168,50,0.08)] border-[rgba(232,168,50,0.4)]'
+                            : 'bg-white/[0.03] border-white/[0.04]'
+                        }`}
+                      >
+                        <div
+                          className={`text-[11px] font-medium w-[18px] text-center ${
+                            isCurrentUser ? 'text-secondary' : 'text-on-surface/50'
+                          }`}
+                        >
+                          {i + 4}
+                        </div>
+                        <div className="w-[26px] h-[26px] rounded-full bg-white/10 flex items-center justify-center text-[10px] font-medium text-on-surface overflow-hidden">
+                          {entry.avatarUrl ? (
+                            <img alt={entry.name} src={entry.avatarUrl} className="w-full h-full rounded-full object-cover" />
+                          ) : (
+                            (entry.name || '?').charAt(0).toUpperCase()
+                          )}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="text-on-surface text-[11px] truncate">
+                            {entry.name}
+                            {isCurrentUser && <span className="ml-1 font-medium">{t('groups.memberLabel')}</span>}
+                          </div>
+                          <div className="text-on-surface/40 text-[9px]">
+                            {entry.role === 'LEADER' ? t('groups.filterLeader') : entry.role === 'MOD' ? t('groups.filterMod') : t('groups.memberRole')}
+                          </div>
+                        </div>
+                        <div className="text-secondary text-[11px] font-medium">
+                          {(entry.score ?? 0).toLocaleString()} {t('groups.pointsAbbr')}
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               )}
-            </div>
+            </>
           )}
         </section>
       )}
@@ -983,130 +910,156 @@ const GroupDetail: React.FC = () => {
         </section>
       )}
 
-      {/* ===== ANNOUNCEMENTS TAB ===== */}
+      {/* ===== ANNOUNCEMENTS TAB (mockup: announcements panel pattern) ===== */}
       {activeTab === 'announcements' && (
-        <section className="px-12 mt-10 space-y-8">
-          {/* Post Announcement (Leader/Mod only) */}
+        <section className="space-y-3">
+          {/* Compose box (Leader/Mod only) */}
           {isLeaderOrMod && (
-            <div className="glass-card rounded-2xl p-6 border border-outline-variant/10">
-              <div className="flex gap-3">
+            <div className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-white/[0.06] rounded-xl p-4">
+              <div className="flex gap-2">
                 <input
-                  className="flex-1 px-5 py-3.5 bg-surface-container-low rounded-xl border border-outline-variant/10 text-on-surface font-medium text-sm outline-none focus:border-secondary/30 transition-all placeholder:text-on-surface-variant/50"
+                  className="flex-1 bg-[rgba(50,52,64,0.5)] border-[0.5px] border-white/10 rounded-lg px-3 py-2 text-on-surface text-[12px] outline-none focus:border-secondary/30 placeholder:text-on-surface/40"
                   value={newAnnouncement}
                   onChange={e => setNewAnnouncement(e.target.value)}
                   placeholder={t('groups.writeAnnouncement')}
                   onKeyDown={e => e.key === 'Enter' && handlePostAnnouncement()}
+                  maxLength={500}
                 />
                 <button
                   onClick={handlePostAnnouncement}
                   disabled={postingAnnouncement || !newAnnouncement.trim()}
-                  className="px-6 py-3.5 gold-gradient text-on-secondary rounded-xl font-black text-xs uppercase tracking-widest hover:shadow-[0_0_20px_rgba(232,168,50,0.3)] transition-all active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-2"
+                  className="bg-secondary text-on-secondary rounded-lg px-4 py-2 text-[11px] font-medium hover:brightness-110 active:scale-95 transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5"
                 >
-                  <span className="material-symbols-outlined text-[18px]">send</span>
-                  {postingAnnouncement ? '...' : t('groups.send')}
+                  📨 {postingAnnouncement ? '...' : t('groups.send')}
                 </button>
               </div>
             </div>
           )}
 
-          {/* Activity Feed */}
-          <div className="glass-card rounded-3xl p-10 border border-outline-variant/10">
-            <h2 className="text-2xl font-black tracking-tight flex items-center gap-3 mb-8">
-              <span className="material-symbols-outlined text-secondary text-3xl">timeline</span>
-              {t('groups.recentActivity')}
-            </h2>
+          {/* Announcements list */}
+          <div className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-white/[0.06] rounded-xl p-4">
+            <div className="text-on-surface text-[13px] font-medium mb-3">📢 {t('groups.announcements')}</div>
 
             {announcementsLoading ? (
-              <div className="flex justify-center py-12">
-                <div className="w-8 h-8 border-3 border-secondary/20 border-t-secondary rounded-full animate-spin" />
+              <div className="flex justify-center py-8">
+                <div className="w-7 h-7 border-2 border-secondary/20 border-t-secondary rounded-full animate-spin" />
               </div>
             ) : announcements.length === 0 ? (
-              <div className="text-center py-16">
-                <span className="material-symbols-outlined text-6xl text-on-surface-variant/30 mb-4 block">history</span>
-                <p className="text-sm text-on-surface-variant font-bold">{t('groups.noActivity')}</p>
-              </div>
+              <p className="text-center text-on-surface-variant py-6 text-[12px]">
+                {t('groups.noAnnouncements')}
+              </p>
             ) : (
-              <div className="relative">
-                {/* Timeline line */}
-                <div className="absolute left-[19px] top-4 bottom-4 w-0.5 bg-outline-variant/15" />
-                <div className="space-y-8">
-                  {announcements.map(a => (
-                    <article key={a.id} className="relative flex gap-5 group/item">
-                      {/* Timeline dot */}
-                      <div className="relative z-10 mt-1.5 flex-shrink-0">
-                        <div className="w-10 h-10 rounded-full bg-surface-container-high border-2 border-secondary/30 flex items-center justify-center">
-                          <span className="material-symbols-outlined text-secondary text-[18px]">campaign</span>
+              <div className="flex flex-col gap-2">
+                {announcements.map(a => {
+                  // Match the row authorship to the leader/mod role from group.members
+                  const authorMember = group.members?.find(m => m.name === a.author);
+                  const isLeaderAuthor = authorMember?.role === 'LEADER';
+                  return (
+                    <article
+                      key={a.id}
+                      className={`rounded-[4px] px-3 py-2.5 ${
+                        isLeaderAuthor
+                          ? 'bg-[rgba(232,168,50,0.05)] border-l-2 border-secondary'
+                          : 'bg-[rgba(50,52,64,0.5)] border-[0.5px] border-white/[0.04]'
+                      }`}
+                    >
+                      <div className="flex justify-between items-center mb-1.5">
+                        <div className={`text-[10px] font-medium ${isLeaderAuthor ? 'text-secondary' : 'text-on-surface/70'}`}>
+                          {isLeaderAuthor ? '👑' : '🛡️'} {a.author}
+                        </div>
+                        <div className="text-on-surface/40 text-[9px]">
+                          {formatRelativeTime(a.createdAt)}
                         </div>
                       </div>
-                      {/* Content */}
-                      <div className="flex-1 bg-surface-container-low rounded-2xl p-6 border border-outline-variant/10 group-hover/item:border-secondary/10 transition-all">
-                        <p className="text-sm text-on-surface leading-relaxed font-medium mb-3">
-                          {a.body}
-                        </p>
-                        <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-on-surface-variant">
-                          <span className="material-symbols-outlined text-[14px]">person</span>
-                          {a.author}
-                          <span className="mx-1 opacity-30">|</span>
-                          <span className="material-symbols-outlined text-[14px]">schedule</span>
-                          {new Date(a.createdAt).toLocaleDateString('vi-VN')}
-                        </div>
-                      </div>
+                      <div className="text-on-surface/85 text-[11px] leading-relaxed">{a.body}</div>
                     </article>
-                  ))}
-                </div>
+                  );
+                })}
               </div>
             )}
           </div>
         </section>
       )}
 
-      {/* ===== QUIZ SETS TAB ===== */}
+      {/* ===== QUIZ SETS TAB (mockup: groups_member_dashboard.html quiz sets section) ===== */}
       {activeTab === 'quizsets' && (
-        <section className="px-12 mt-10">
-          <div className="glass-card rounded-3xl p-10 border border-outline-variant/10">
-            <h2 className="text-2xl font-black tracking-tight flex items-center gap-3 mb-8">
-              <span className="material-symbols-outlined text-tertiary text-3xl">quiz</span>
-              {t('groups.quizSets')}
-            </h2>
-            {quizSetsLoading ? (
-              <div className="flex justify-center py-6">
-                <div className="w-6 h-6 border-2 border-secondary/20 border-t-secondary rounded-full animate-spin" />
-              </div>
-            ) : quizSets.length === 0 ? (
-              <div className="text-center py-12">
-                <span className="material-symbols-outlined text-5xl text-on-surface-variant/30 mb-3 block">description</span>
-                <p className="text-xs text-on-surface-variant font-bold">{t('groups.noQuizSets')}</p>
-              </div>
-            ) : (
-              <div className="space-y-3">
-                {quizSets.map(qs => (
-                  <div key={qs.id} className="flex items-center justify-between p-5 bg-surface-container-low rounded-2xl hover:bg-surface-container-high transition-all border border-outline-variant/5">
-                    <div>
-                      <p className="font-bold text-sm text-on-surface">{qs.name}</p>
-                      <p className="text-[10px] text-on-surface-variant font-bold uppercase tracking-wider">{t('groups.questionsCount', { count: qs.questionCount })}</p>
-                    </div>
-                    <span className="material-symbols-outlined text-on-surface-variant text-xl">chevron_right</span>
-                  </div>
-                ))}
-              </div>
+        <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-white/[0.06] rounded-xl p-5">
+          <div className="flex justify-between items-center mb-3">
+            <div className="text-on-surface text-[13px] font-medium">📚 {t('groups.quizSetsSection')}</div>
+            {isLeaderOrMod && (
+              <button
+                className="bg-[rgba(232,168,50,0.15)] text-secondary border-[0.5px] border-[rgba(232,168,50,0.4)] rounded-md px-3 py-1.5 text-[11px] font-medium hover:brightness-110 transition-all"
+                title={t('groups.createQuizSetCta')}
+              >
+                + {t('groups.createQuizSetCta')}
+              </button>
             )}
           </div>
+          {quizSetsLoading ? (
+            <div className="flex justify-center py-8">
+              <div className="w-7 h-7 border-2 border-secondary/20 border-t-secondary rounded-full animate-spin" />
+            </div>
+          ) : quizSets.length === 0 ? (
+            <p className="text-center text-on-surface-variant py-6 text-[12px]">
+              {t('groups.noQuizSets')}
+            </p>
+          ) : (
+            <div className="flex flex-col gap-2">
+              {quizSets.map((qs, idx) => {
+                // Highlight the most recent set (index 0 — backend orders by createdAt DESC implicitly)
+                const isNew = idx === 0;
+                return (
+                  <div
+                    key={qs.id}
+                    className={`rounded-lg px-3 py-2.5 flex items-center gap-2.5 cursor-pointer transition-all hover:brightness-110 ${
+                      isNew
+                        ? 'bg-[rgba(232,168,50,0.06)] border-[0.5px] border-[rgba(232,168,50,0.25)]'
+                        : 'bg-[rgba(50,52,64,0.5)] border-[0.5px] border-white/[0.06]'
+                    }`}
+                  >
+                    <div
+                      className={`w-8 h-8 rounded-md flex items-center justify-center text-[14px] flex-shrink-0 ${
+                        isNew ? 'bg-[rgba(232,168,50,0.2)]' : 'bg-[rgba(74,158,255,0.15)]'
+                      }`}
+                    >
+                      {isNew ? '📖' : '📜'}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-on-surface text-[12px] font-medium truncate">{qs.name}</div>
+                      <div className="text-on-surface/50 text-[10px]">
+                        {t('groups.questionsCount', { count: qs.questionCount })}
+                        {isNew && ` · ${t('groups.newToday')}`}
+                      </div>
+                    </div>
+                    <button
+                      className={`rounded-md px-3 py-1.5 text-[11px] font-medium cursor-pointer transition-all ${
+                        isNew
+                          ? 'bg-secondary text-on-secondary hover:brightness-110'
+                          : 'bg-white/5 text-on-surface/70 border-[0.5px] border-white/10 hover:bg-white/10'
+                      }`}
+                    >
+                      {isNew ? t('groups.play') : t('groups.playAgain')}
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </section>
       )}
 
-      {/* ── Footer Actions ── */}
+      {/* ── Footer: leader-only delete ── */}
       {isLeader && (
-        <div className="flex justify-center gap-4 px-12 mt-12 pb-10">
+        <div className="flex justify-center mt-6 mb-2">
           <button
             onClick={() => {
               if (confirm(t('groups.confirmDelete'))) {
                 // Delete group logic would go here
               }
             }}
-            className="px-8 py-3.5 bg-error-container/20 text-error rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-error-container/40 transition-all active:scale-95 border border-error/10 flex items-center gap-2"
+            className="bg-error-container/20 text-error rounded-lg px-4 py-2 text-[11px] font-medium hover:bg-error-container/40 transition-all border border-error/10 flex items-center gap-1.5"
           >
-            <span className="material-symbols-outlined text-[18px]">delete_forever</span>
-            {t('groups.deleteGroup')}
+            🗑️ {t('groups.deleteGroup')}
           </button>
         </div>
       )}
