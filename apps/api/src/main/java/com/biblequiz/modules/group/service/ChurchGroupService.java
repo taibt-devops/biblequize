@@ -23,6 +23,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.*;
+import java.util.Comparator;
 import java.util.stream.Collectors;
 
 @Service
@@ -211,6 +212,153 @@ public class ChurchGroupService {
             entry.put("createdAt", g.getCreatedAt());
             return entry;
         }).collect(Collectors.toList());
+    }
+
+    /**
+     * Paginated, searchable, filterable members list for the GroupDetail
+     * "members" tab. Sort options: score (joins UserDailyProgress 7-day
+     * window), tier (proxy via score), activity (lastActiveAt), joined
+     * (joinedAt). Filter values: leader / mod / member / inactive.
+     * Inactive = lastActiveAt < now() - 7 days (or NULL fallback).
+     *
+     * <p>The cursor is a 1-based offset encoded as String for parity with
+     * future opaque-cursor migrations; "null cursor" means start at 0.
+     */
+    public Map<String, Object> listMembers(String groupId, String search, String sort, String order,
+                                            String filter, int limit, String cursor) {
+        int safeLimit = Math.max(1, Math.min(50, limit));
+        int offset = 0;
+        if (cursor != null && !cursor.isBlank()) {
+            try { offset = Math.max(0, Integer.parseInt(cursor)); } catch (NumberFormatException ignored) {}
+        }
+
+        List<GroupMember> all = groupMemberRepository.findByGroupId(groupId);
+        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate weekStart = today.minusDays(6);
+        LocalDateTime inactiveThreshold = LocalDateTime.now(ZoneOffset.UTC).minusDays(7);
+
+        // Pre-compute weekly score per member for sort=score (single pass)
+        Map<String, Integer> weeklyScores = new HashMap<>();
+        for (GroupMember m : all) {
+            int score = udpRepository.findByUserIdAndDateBetween(m.getUser().getId(), weekStart, today).stream()
+                    .mapToInt(u -> u.getPointsCounted() != null ? u.getPointsCounted() : 0)
+                    .sum();
+            weeklyScores.put(m.getUser().getId(), score);
+        }
+
+        // Filter
+        String normalizedSearch = search == null ? "" : search.trim().toLowerCase();
+        String normalizedFilter = filter == null ? "" : filter.trim().toLowerCase();
+
+        List<GroupMember> filtered = all.stream()
+                .filter(m -> {
+                    if (!normalizedSearch.isEmpty()) {
+                        String name = m.getUser().getName();
+                        if (name == null || !name.toLowerCase().contains(normalizedSearch)) return false;
+                    }
+                    if (normalizedFilter.isEmpty()) return true;
+                    if ("leader".equals(normalizedFilter)) return m.getRole() == GroupMember.GroupRole.LEADER;
+                    if ("mod".equals(normalizedFilter)) return m.getRole() == GroupMember.GroupRole.MOD;
+                    if ("member".equals(normalizedFilter)) return m.getRole() == GroupMember.GroupRole.MEMBER;
+                    if ("inactive".equals(normalizedFilter)) {
+                        LocalDateTime last = m.getLastActiveAt();
+                        return last == null || last.isBefore(inactiveThreshold);
+                    }
+                    return true;
+                })
+                .collect(Collectors.toList());
+
+        // Sort
+        String sortKey = sort == null ? "score" : sort.toLowerCase();
+        boolean asc = "asc".equalsIgnoreCase(order);
+        Comparator<GroupMember> cmp;
+        switch (sortKey) {
+            case "joined":
+                cmp = Comparator.comparing(GroupMember::getJoinedAt,
+                        Comparator.nullsLast(Comparator.naturalOrder()));
+                break;
+            case "activity":
+                cmp = Comparator.comparing(GroupMember::getLastActiveAt,
+                        Comparator.nullsLast(Comparator.naturalOrder()));
+                break;
+            case "tier":
+                // Proxy: same direction as score ranking
+                cmp = Comparator.comparingInt(m -> -weeklyScores.getOrDefault(m.getUser().getId(), 0));
+                break;
+            case "score":
+            default:
+                cmp = Comparator.comparingInt(m -> -weeklyScores.getOrDefault(m.getUser().getId(), 0));
+                break;
+        }
+        if (asc) cmp = cmp.reversed();
+        filtered.sort(cmp);
+
+        int total = filtered.size();
+        int end = Math.min(offset + safeLimit, total);
+        List<GroupMember> page = offset < total ? filtered.subList(offset, end) : List.of();
+
+        List<Map<String, Object>> items = page.stream().map(m -> {
+            Map<String, Object> row = new LinkedHashMap<>();
+            row.put("userId", m.getUser().getId());
+            row.put("name", m.getUser().getName());
+            row.put("avatarUrl", m.getUser().getAvatarUrl());
+            row.put("role", m.getRole().name());
+            row.put("joinedAt", m.getJoinedAt());
+            row.put("lastActiveAt", m.getLastActiveAt());
+            row.put("score", weeklyScores.getOrDefault(m.getUser().getId(), 0));
+            return row;
+        }).collect(Collectors.toList());
+
+        Map<String, Object> result = new LinkedHashMap<>();
+        result.put("items", items);
+        result.put("total", total);
+        result.put("nextCursor", end < total ? String.valueOf(end) : null);
+        result.put("hasMore", end < total);
+        return result;
+    }
+
+    /**
+     * Promote/demote a group member. Only the LEADER can call. Cannot
+     * change another LEADER's role (single-leader invariant — transfer
+     * ownership is a separate flow not part of this sprint).
+     */
+    public Map<String, Object> changeMemberRole(String groupId, String requesterId, String targetUserId, String newRole) {
+        if (newRole == null || newRole.isBlank()) {
+            throw new RuntimeException("Vai tro moi khong duoc de trong");
+        }
+        GroupMember.GroupRole parsed;
+        try {
+            parsed = GroupMember.GroupRole.valueOf(newRole.toUpperCase());
+        } catch (IllegalArgumentException e) {
+            throw new RuntimeException("Vai tro khong hop le: " + newRole);
+        }
+        if (parsed == GroupMember.GroupRole.LEADER) {
+            throw new RuntimeException("Khong the gan vai tro LEADER (chuyen quyen leader la quy trinh rieng)");
+        }
+
+        GroupMember requester = groupMemberRepository.findByGroupIdAndUserId(groupId, requesterId)
+                .orElseThrow(() -> new RuntimeException("Ban khong phai thanh vien cua nhom"));
+        if (requester.getRole() != GroupMember.GroupRole.LEADER) {
+            throw new RuntimeException("Chi leader moi duoc doi vai tro thanh vien");
+        }
+
+        if (requesterId.equals(targetUserId)) {
+            throw new RuntimeException("Khong the doi vai tro chinh minh");
+        }
+
+        GroupMember target = groupMemberRepository.findByGroupIdAndUserId(groupId, targetUserId)
+                .orElseThrow(() -> new RuntimeException("Nguoi dung khong phai thanh vien cua nhom"));
+        if (target.getRole() == GroupMember.GroupRole.LEADER) {
+            throw new RuntimeException("Khong the doi vai tro cua leader hien tai");
+        }
+
+        target.setRole(parsed);
+        groupMemberRepository.save(target);
+
+        Map<String, Object> result = new LinkedHashMap<>();
+        result.put("userId", targetUserId);
+        result.put("role", parsed.name());
+        return result;
     }
 
     public List<Map<String, Object>> getLeaderboard(String groupId, String period) {

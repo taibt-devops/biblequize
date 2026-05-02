@@ -65,6 +65,9 @@ public class RankedController {
     private com.biblequiz.modules.season.service.SeasonService seasonService;
 
     @Autowired
+    private com.biblequiz.modules.group.repository.GroupMemberRepository groupMemberRepository;
+
+    @Autowired
     private com.biblequiz.modules.season.repository.SeasonRankingRepository seasonRankingRepository;
 
     @Autowired
@@ -321,6 +324,16 @@ public class RankedController {
                         }
 
                         udpRepository.save(udp);
+
+                        // Bump GroupMember.lastActiveAt for the inactive-filter on
+                        // /api/groups/{id}/members. Best-effort — never fail the
+                        // ranked answer submit if group bookkeeping errors.
+                        try {
+                            groupMemberRepository.touchLastActiveByUserId(user.getId(),
+                                    java.time.LocalDateTime.now(ZoneOffset.UTC));
+                        } catch (Exception groupTouchErr) {
+                            // log only; do not surface
+                        }
 
                         // Invalidate leaderboard cache after score update
                         cacheService.deletePattern(com.biblequiz.infrastructure.service.CacheService.LEADERBOARD_CACHE_PREFIX + "*");

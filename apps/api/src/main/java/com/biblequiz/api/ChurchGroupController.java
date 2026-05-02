@@ -134,6 +134,48 @@ public class ChurchGroupController {
     }
 
     /**
+     * GET /api/groups/{id}/members — paginated, searchable, filterable members.
+     * Supports search (name contains), sort (score | tier | activity | joined),
+     * order (asc | desc), filter (leader | mod | member | inactive),
+     * limit + cursor (string offset). Auth required (members + visitors).
+     */
+    @GetMapping("/{id}/members")
+    public ResponseEntity<?> listMembers(@PathVariable String id,
+                                         @RequestParam(required = false) String search,
+                                         @RequestParam(defaultValue = "score") String sort,
+                                         @RequestParam(defaultValue = "desc") String order,
+                                         @RequestParam(required = false) String filter,
+                                         @RequestParam(defaultValue = "20") int limit,
+                                         @RequestParam(required = false) String cursor) {
+        try {
+            Map<String, Object> result = churchGroupService.listMembers(id, search, sort, order, filter, limit, cursor);
+            return ResponseEntity.ok(Map.of("success", true, "data", result));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
+        }
+    }
+
+    /**
+     * PATCH /api/groups/{id}/members/{userId}/role — promote/demote member.
+     * Body: {"role": "MEMBER" | "MOD"}. Only LEADER may call. LEADER role
+     * cannot be assigned via this endpoint (transfer-leader is separate).
+     */
+    @PatchMapping("/{id}/members/{userId}/role")
+    public ResponseEntity<?> changeMemberRole(@PathVariable String id,
+                                              @PathVariable String userId,
+                                              @RequestBody Map<String, String> body,
+                                              Principal principal) {
+        try {
+            User user = getUser(principal);
+            String role = body.get("role");
+            Map<String, Object> result = churchGroupService.changeMemberRole(id, user.getId(), userId, role);
+            return ResponseEntity.ok(Map.of("success", true, "data", result));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
+        }
+    }
+
+    /**
      * GET /api/groups/{id}/leaderboard - Bang xep hang nhom
      */
     @GetMapping("/{id}/leaderboard")

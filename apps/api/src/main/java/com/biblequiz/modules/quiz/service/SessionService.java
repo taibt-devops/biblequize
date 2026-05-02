@@ -46,6 +46,7 @@ public class SessionService {
     // field on User — we reuse UserTierService as the single source of truth
     // for that computation to avoid drift between Ranked gating and tier UI.
     private final UserTierService userTierService;
+    private final com.biblequiz.modules.group.repository.GroupMemberRepository groupMemberRepository;
 
     public SessionService(QuizSessionRepository quizSessionRepository,
             QuizSessionQuestionRepository quizSessionQuestionRepository,
@@ -57,7 +58,8 @@ public class SessionService {
             QuestionService questionService,
             UserQuestionHistoryRepository userQuestionHistoryRepository,
             SmartQuestionSelector smartQuestionSelector,
-            UserTierService userTierService) {
+            UserTierService userTierService,
+            com.biblequiz.modules.group.repository.GroupMemberRepository groupMemberRepository) {
         this.quizSessionRepository = quizSessionRepository;
         this.quizSessionQuestionRepository = quizSessionQuestionRepository;
         this.questionRepository = questionRepository;
@@ -69,6 +71,20 @@ public class SessionService {
         this.userQuestionHistoryRepository = userQuestionHistoryRepository;
         this.smartQuestionSelector = smartQuestionSelector;
         this.userTierService = userTierService;
+        this.groupMemberRepository = groupMemberRepository;
+    }
+
+    /**
+     * Bump GroupMember.lastActiveAt for the answering user. Best-effort —
+     * any DB error is swallowed because group-member tracking must NEVER
+     * fail an answer submit. Phase 0.5 of dashboard sprint.
+     */
+    private void touchGroupMembership(String userId) {
+        try {
+            groupMemberRepository.touchLastActiveByUserId(userId, LocalDateTime.now(java.time.ZoneOffset.UTC));
+        } catch (Exception e) {
+            log.warn("touchGroupMembership failed userId={} err={}", userId, e.getMessage());
+        }
     }
 
     @Transactional
@@ -318,6 +334,7 @@ public class SessionService {
         udp.setPointsCounted(beforePoints + addPoints);
         udp.setQuestionsCounted(beforeQuestions + 1);
         userDailyProgressRepository.save(udp);
+        touchGroupMembership(user.getId());
 
         log.info("creditNonRankedProgress user={} mode={} isCorrect={} scoreDelta={} grantPoints={} "
                 + "pointsCounted={}→{} questionsCounted={}→{}",

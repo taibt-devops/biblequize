@@ -35,6 +35,16 @@ public class GroupMember {
     @Column(name = "joined_at")
     private LocalDateTime joinedAt;
 
+    /**
+     * Timestamp of the member's most recent activity (e.g. quiz answer
+     * submission). Initialized to {@code joinedAt} by V32 migration so the
+     * inactive-filter never reports a freshly-joined member as inactive.
+     * Phase 0.5 (real update trigger from AnswerService) is deferred —
+     * this column reads as joinedAt until that wires through.
+     */
+    @Column(name = "last_active_at")
+    private LocalDateTime lastActiveAt;
+
     public GroupMember() {
     }
 
@@ -53,4 +63,7 @@ public class GroupMember {
 
     public LocalDateTime getJoinedAt() { return joinedAt; }
     public void setJoinedAt(LocalDateTime joinedAt) { this.joinedAt = joinedAt; }
+
+    public LocalDateTime getLastActiveAt() { return lastActiveAt; }
+    public void setLastActiveAt(LocalDateTime lastActiveAt) { this.lastActiveAt = lastActiveAt; }
 }
