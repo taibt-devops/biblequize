@@ -65,6 +65,23 @@ public class ChurchGroupController {
     }
 
     /**
+     * GET /api/groups/public — discovery widget on the empty-state Groups page.
+     * Returns up to {@code limit} public groups; {@code featured=true} sorts by
+     * memberCount, otherwise by createdAt. No auth required.
+     */
+    @GetMapping("/public")
+    public ResponseEntity<?> listPublicGroups(
+            @RequestParam(defaultValue = "10") int limit,
+            @RequestParam(defaultValue = "false") boolean featured) {
+        try {
+            List<Map<String, Object>> groups = churchGroupService.listPublicGroups(limit, featured);
+            return ResponseEntity.ok(Map.of("success", true, "groups", groups));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
+        }
+    }
+
+    /**
      * GET /api/groups/{id} - Lay thong tin nhom
      */
     @GetMapping("/{id}")

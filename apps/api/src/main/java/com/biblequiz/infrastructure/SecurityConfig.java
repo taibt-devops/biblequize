@@ -100,6 +100,7 @@ public class SecurityConfig {
                                                 "/api/share/render/**",
                                                 "/api/share/og/**",
                                                                 "/api/public/**",
+                                                                "/api/groups/public",
                                                                 "/swagger-ui/**",
                                                                 "/v3/api-docs/**",
                                                                 "/swagger-ui.html",

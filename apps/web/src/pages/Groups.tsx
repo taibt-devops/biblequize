@@ -62,10 +62,18 @@ interface PublicGroupListItem {
   id: string;
   name: string;
   code?: string;
+  description?: string;
+  avatarUrl?: string;
   memberCount: number;
+  maxMembers?: number;
   location?: string;
   weeklyStreak?: number;
   avatarHue?: 'gold' | 'blue' | 'purple' | 'green';
+}
+
+interface PublicGroupsResponse {
+  success: boolean;
+  groups: PublicGroupListItem[];
 }
 
 /* ─── localStorage cache (NOT source of truth — see useMyGroup hook) ─── */
@@ -109,15 +117,16 @@ function getInitial(name?: string): string {
   return trimmed.length > 0 ? trimmed[0].toUpperCase() : '?';
 }
 
-/* ─── Featured public groups: BE endpoint pending (Phase 0.1).
-   Until merged, we render a small static preview so the empty
-   state feels alive. Replace with `useQuery(['public-groups'])`
-   once GET /api/groups/public ships. ─── */
-const FEATURED_PUBLIC_GROUPS: PublicGroupListItem[] = [
-  { id: 'demo-1', name: 'Hội Thánh Tin Lành Free Methodist', memberCount: 128, location: 'Vũng Tàu', weeklyStreak: 47, avatarHue: 'gold' },
-  { id: 'demo-2', name: 'Nhóm tế bào Bình Thạnh', memberCount: 42, location: 'TP. Hồ Chí Minh', weeklyStreak: 12, avatarHue: 'blue' },
-  { id: 'demo-3', name: 'Hội Thánh Free Methodist Đà Nẵng', memberCount: 87, location: 'Đà Nẵng', weeklyStreak: 23, avatarHue: 'purple' },
-];
+/* ─── Featured public groups: deterministic hue per group id so the same
+   group always gets the same visual tint without backend coordination.
+   Pure UI presentation — backend only supplies the data. ─── */
+const HUE_KEYS: Array<NonNullable<PublicGroupListItem['avatarHue']>> = ['gold', 'blue', 'purple', 'green'];
+
+function pickHue(id: string): NonNullable<PublicGroupListItem['avatarHue']> {
+  let hash = 0;
+  for (let i = 0; i < id.length; i++) hash = (hash * 31 + id.charCodeAt(i)) >>> 0;
+  return HUE_KEYS[hash % HUE_KEYS.length];
+}
 
 const HUE_BG: Record<NonNullable<PublicGroupListItem['avatarHue']>, string> = {
   gold: 'bg-[rgba(232,168,50,0.15)]',
@@ -163,6 +172,17 @@ function NoGroupView({
   onJoinClick: (prefill?: string) => void;
 }) {
   const { t } = useTranslation();
+
+  const { data: publicRes, isLoading: publicLoading } = useQuery<PublicGroupsResponse>({
+    queryKey: ['public-groups', 'featured'],
+    queryFn: () =>
+      api
+        .get('/api/groups/public?featured=true&limit=3')
+        .then((r) => r.data as PublicGroupsResponse)
+        .catch(() => ({ success: false, groups: [] })),
+    staleTime: 5 * 60 * 1000,
+  });
+  const publicGroups = publicRes?.groups ?? [];
 
   return (
     <div className="max-w-3xl mx-auto space-y-4" data-testid="no-group">
@@ -217,44 +237,58 @@ function NoGroupView({
         </div>
       </div>
 
-      {/* Featured public groups */}
-      <div className="bg-[rgba(50,52,64,0.3)] border-[0.5px] border-white/[0.06] rounded-xl px-4 py-4">
-        <div className="flex justify-between items-center mb-3">
-          <div>
-            <div className="text-on-surface text-[13px] font-medium">{t('groups.discoverPublic')}</div>
-            <div className="text-on-surface/45 text-[11px] mt-0.5">{t('groups.discoverPublicSubtitle')}</div>
+      {/* Featured public groups (real API: GET /api/groups/public?featured=true) */}
+      {(publicLoading || publicGroups.length > 0) && (
+        <div className="bg-[rgba(50,52,64,0.3)] border-[0.5px] border-white/[0.06] rounded-xl px-4 py-4">
+          <div className="flex justify-between items-center mb-3">
+            <div>
+              <div className="text-on-surface text-[13px] font-medium">{t('groups.discoverPublic')}</div>
+              <div className="text-on-surface/45 text-[11px] mt-0.5">{t('groups.discoverPublicSubtitle')}</div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            {publicLoading && (
+              <>
+                <div className="h-12 bg-[rgba(50,52,64,0.5)] rounded-lg animate-pulse" />
+                <div className="h-12 bg-[rgba(50,52,64,0.5)] rounded-lg animate-pulse" />
+                <div className="h-12 bg-[rgba(50,52,64,0.5)] rounded-lg animate-pulse" />
+              </>
+            )}
+            {!publicLoading &&
+              publicGroups.map((group) => {
+                const hue = group.avatarHue ?? pickHue(group.id);
+                return (
+                  <div
+                    key={group.id}
+                    className="bg-[rgba(50,52,64,0.5)] border-[0.5px] border-white/[0.04] rounded-lg px-3 py-2.5 flex items-center gap-2.5"
+                  >
+                    <div className={`w-9 h-9 rounded-lg flex items-center justify-center text-[16px] overflow-hidden ${HUE_BG[hue]}`}>
+                      {group.avatarUrl ? (
+                        <img alt={group.name} src={group.avatarUrl} className="w-full h-full object-cover" />
+                      ) : (
+                        HUE_ICON[hue]
+                      )}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-on-surface text-[12px] font-medium truncate">{group.name}</div>
+                      <div className="text-on-surface/50 text-[10px]">
+                        {group.memberCount} {t('groups.members')}
+                        {group.location ? ` · ${group.location}` : ''}
+                        {group.weeklyStreak ? ` · ${t('groups.publicStreakLabel', { count: group.weeklyStreak })}` : ''}
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => onJoinClick(group.code)}
+                      className="bg-[rgba(232,168,50,0.15)] text-secondary border-[0.5px] border-[rgba(232,168,50,0.4)] rounded-md px-3 py-1.5 text-[11px] font-medium cursor-pointer hover:brightness-110 transition-all"
+                    >
+                      {t('groups.joinPublicGroup')}
+                    </button>
+                  </div>
+                );
+              })}
           </div>
         </div>
-        <div className="flex flex-col gap-2">
-          {FEATURED_PUBLIC_GROUPS.map((group) => {
-            const hue = group.avatarHue ?? 'gold';
-            return (
-              <div
-                key={group.id}
-                className="bg-[rgba(50,52,64,0.5)] border-[0.5px] border-white/[0.04] rounded-lg px-3 py-2.5 flex items-center gap-2.5"
-              >
-                <div className={`w-9 h-9 rounded-lg flex items-center justify-center text-[16px] ${HUE_BG[hue]}`}>
-                  {HUE_ICON[hue]}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="text-on-surface text-[12px] font-medium truncate">{group.name}</div>
-                  <div className="text-on-surface/50 text-[10px]">
-                    {group.memberCount} {t('groups.members')}
-                    {group.location ? ` · ${group.location}` : ''}
-                    {group.weeklyStreak ? ` · ${t('groups.publicStreakLabel', { count: group.weeklyStreak })}` : ''}
-                  </div>
-                </div>
-                <button
-                  onClick={() => onJoinClick(group.code)}
-                  className="bg-[rgba(232,168,50,0.15)] text-secondary border-[0.5px] border-[rgba(232,168,50,0.4)] rounded-md px-3 py-1.5 text-[11px] font-medium cursor-pointer hover:brightness-110 transition-all"
-                >
-                  {t('groups.joinPublicGroup')}
-                </button>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      )}
     </div>
   );
 }

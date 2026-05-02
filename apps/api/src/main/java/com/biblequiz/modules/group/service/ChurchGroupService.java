@@ -187,6 +187,32 @@ public class ChurchGroupService {
         return result;
     }
 
+    /**
+     * Discovery widget on the empty-state Groups page. Returns up to {@code limit}
+     * public, non-deleted, non-locked groups. {@code featured=true} sorts by
+     * memberCount (engagement proxy); {@code featured=false} sorts by createdAt
+     * (newest first). No auth required — intentionally public-readable.
+     */
+    public List<Map<String, Object>> listPublicGroups(int limit, boolean featured) {
+        int safeLimit = Math.max(1, Math.min(50, limit));
+        org.springframework.data.domain.Pageable pageable = org.springframework.data.domain.PageRequest.of(0, safeLimit);
+        List<ChurchGroup> groups = featured
+                ? churchGroupRepository.findPublicGroupsByMemberCountDesc(pageable)
+                : churchGroupRepository.findPublicGroupsByCreatedAtDesc(pageable);
+
+        return groups.stream().map(g -> {
+            Map<String, Object> entry = new LinkedHashMap<>();
+            entry.put("id", g.getId());
+            entry.put("name", g.getName());
+            entry.put("description", g.getDescription());
+            entry.put("avatarUrl", g.getAvatarUrl());
+            entry.put("memberCount", g.getMemberCount());
+            entry.put("maxMembers", g.getMaxMembers());
+            entry.put("createdAt", g.getCreatedAt());
+            return entry;
+        }).collect(Collectors.toList());
+    }
+
     public List<Map<String, Object>> getLeaderboard(String groupId, String period) {
         List<GroupMember> members = groupMemberRepository.findByGroupId(groupId);
         LocalDate today = LocalDate.now(ZoneOffset.UTC);
