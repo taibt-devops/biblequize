@@ -127,6 +127,35 @@ const GroupDetail: React.FC = () => {
   const [quizSets, setQuizSets] = useState<QuizSet[]>([]);
   const [quizSetsLoading, setQuizSetsLoading] = useState(false);
 
+  // Members tab — Phase 0.3 paginated endpoint
+  type MemberSort = 'score' | 'tier' | 'activity' | 'joined';
+  type MemberFilter = '' | 'leader' | 'mod' | 'member' | 'inactive';
+  interface PaginatedMember {
+    userId: string;
+    name: string;
+    avatarUrl?: string;
+    role: string;
+    joinedAt?: string;
+    lastActiveAt?: string;
+    score: number;
+  }
+  const [memberSearch, setMemberSearch] = useState('');
+  const [memberSearchDebounced, setMemberSearchDebounced] = useState('');
+  const [memberSort, setMemberSort] = useState<MemberSort>('score');
+  const [memberFilter, setMemberFilter] = useState<MemberFilter>(
+    (searchParams.get('filter') as MemberFilter | null) ?? '',
+  );
+  const [memberItems, setMemberItems] = useState<PaginatedMember[]>([]);
+  const [memberTotal, setMemberTotal] = useState(0);
+  const [memberCursor, setMemberCursor] = useState<string | null>(null);
+  const [memberLoading, setMemberLoading] = useState(false);
+
+  // Debounce search input 300ms — avoid hammering the BE on every keystroke.
+  useEffect(() => {
+    const handle = setTimeout(() => setMemberSearchDebounced(memberSearch), 300);
+    return () => clearTimeout(handle);
+  }, [memberSearch]);
+
   // Edit modal
   const [showEditModal, setShowEditModal] = useState(false);
   const [editName, setEditName] = useState('');
@@ -185,6 +214,28 @@ const GroupDetail: React.FC = () => {
     finally { setAnnouncementsLoading(false); }
   }, [id]);
 
+  const fetchMembers = useCallback(async (cursor: string | null = null, append = false) => {
+    setMemberLoading(true);
+    try {
+      const params = new URLSearchParams();
+      if (memberSearchDebounced) params.set('search', memberSearchDebounced);
+      params.set('sort', memberSort);
+      params.set('order', 'desc');
+      if (memberFilter) params.set('filter', memberFilter);
+      params.set('limit', '20');
+      if (cursor) params.set('cursor', cursor);
+      const res = await api.get(`/api/groups/${id}/members?${params.toString()}`);
+      if (res.data.success) {
+        const data = res.data.data ?? {};
+        const items: PaginatedMember[] = data.items ?? [];
+        setMemberItems((prev) => (append ? [...prev, ...items] : items));
+        setMemberTotal(data.total ?? 0);
+        setMemberCursor(data.nextCursor ?? null);
+      }
+    } catch { /* ignore */ }
+    finally { setMemberLoading(false); }
+  }, [id, memberSearchDebounced, memberSort, memberFilter]);
+
   const fetchQuizSets = useCallback(async () => {
     setQuizSetsLoading(true);
     try {
@@ -206,12 +257,21 @@ const GroupDetail: React.FC = () => {
       fetchAnnouncements();
     } else if (activeTab === 'quizsets') {
       fetchQuizSets();
+    } else if (activeTab === 'members') {
+      fetchMembers(null, false);
     }
-  }, [activeTab, group, fetchLeaderboard, fetchAnnouncements, fetchQuizSets]);
+  }, [activeTab, group, fetchLeaderboard, fetchAnnouncements, fetchQuizSets, fetchMembers]);
 
   useEffect(() => {
     if (activeTab === 'leaderboard' && group) fetchLeaderboard();
   }, [period]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Reset + refetch when search / sort / filter change while on members tab
+  useEffect(() => {
+    if (activeTab === 'members' && group) {
+      fetchMembers(null, false);
+    }
+  }, [memberSearchDebounced, memberSort, memberFilter]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleCopyCode = async () => {
     if (!group) return;
@@ -236,7 +296,33 @@ const GroupDetail: React.FC = () => {
     try {
       await api.delete(`/api/groups/${id}/members/${userId}`);
       fetchGroup();
+      if (activeTab === 'members') fetchMembers(null, false);
     } catch { /* ignore */ }
+  };
+
+  const handleChangeRole = async (userId: string, newRole: 'MEMBER' | 'MOD') => {
+    try {
+      await api.patch(`/api/groups/${id}/members/${userId}/role`, { role: newRole });
+      fetchGroup();
+      if (activeTab === 'members') fetchMembers(null, false);
+    } catch { /* ignore — backend returns 400 with reason on conflicts */ }
+  };
+
+  const formatRelativeTime = (iso?: string): string => {
+    if (!iso) return '—';
+    const ts = new Date(iso).getTime();
+    if (Number.isNaN(ts)) return '—';
+    const diff = Date.now() - ts;
+    if (diff < 60_000) return t('groups.timeJustNow');
+    if (diff < 3_600_000) return t('groups.timeMinutesAgo', { count: Math.floor(diff / 60_000) });
+    if (diff < 86_400_000) return t('groups.timeHoursAgo', { count: Math.floor(diff / 3_600_000) });
+    return t('groups.timeDaysAgo', { count: Math.floor(diff / 86_400_000) });
+  };
+
+  const isInactive = (member: PaginatedMember): boolean => {
+    if (!member.lastActiveAt) return true;
+    const ts = new Date(member.lastActiveAt).getTime();
+    return Date.now() - ts > 7 * 86_400_000;
   };
 
   const handlePostAnnouncement = async () => {
@@ -678,106 +764,220 @@ const GroupDetail: React.FC = () => {
         </section>
       )}
 
-      {/* ===== MEMBERS TAB ===== */}
+      {/* ===== MEMBERS TAB (mockup: groups_member_list_expanded.html) ===== */}
       {activeTab === 'members' && (
-        <section className="px-12 mt-10" data-testid="group-detail-members">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-black tracking-tight flex items-center gap-3">
-              <span className="material-symbols-outlined text-secondary text-3xl">groups</span>
-              {t('groups.membersTitle')} ({group.members?.length || 0})
-            </h2>
+        <section className="px-6 lg:px-12 mt-8" data-testid="group-detail-members">
+          {/* Header + search + sort */}
+          <div className="flex justify-between items-center mb-4 flex-wrap gap-3">
+            <div>
+              <div className="text-on-surface text-[18px] font-medium">
+                {t('groups.membersHeader', { count: memberTotal || group.members?.length || 0 })}
+              </div>
+              <div className="text-on-surface/50 text-[11px] mt-0.5">
+                {t('groups.membersHeaderSubtitle', {
+                  active: memberItems.filter((m) => !isInactive(m)).length,
+                  inactive: memberItems.filter((m) => isInactive(m)).length,
+                })}
+              </div>
+            </div>
+            <div className="flex gap-2 items-center flex-wrap">
+              <div className="bg-[rgba(50,52,64,0.5)] border-[0.5px] border-white/[0.08] rounded-lg px-3 py-2 flex items-center gap-2 min-w-[220px]">
+                <span className="text-[12px] text-on-surface/40">🔍</span>
+                <input
+                  className="bg-transparent border-0 outline-none text-on-surface text-[12px] flex-1"
+                  placeholder={t('groups.memberSearchPlaceholder')}
+                  value={memberSearch}
+                  onChange={(e) => setMemberSearch(e.target.value)}
+                />
+              </div>
+              <div className="inline-flex bg-black/30 rounded-md p-0.5">
+                {(['score', 'tier', 'activity'] as MemberSort[]).map((s) => (
+                  <button
+                    key={s}
+                    onClick={() => setMemberSort(s)}
+                    className={`border-0 px-3 py-1.5 rounded text-[11px] font-medium cursor-pointer transition-all ${
+                      memberSort === s ? 'bg-secondary text-on-secondary' : 'bg-transparent text-on-surface/55'
+                    }`}
+                  >
+                    {s === 'score' ? t('groups.sortByScore') : s === 'tier' ? t('groups.sortByTier') : t('groups.sortByActivity')}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
-          {(!group.members || group.members.length === 0) ? (
-            <div className="text-center py-16">
-              <span className="material-symbols-outlined text-6xl text-on-surface-variant/30 mb-4 block">group_off</span>
-              <p className="text-sm text-on-surface-variant font-bold">{t('groups.noMembers')}</p>
+          {/* Filter chips */}
+          <div className="flex gap-2 mb-4 flex-wrap">
+            {([
+              ['', t('groups.filterAll')],
+              ['leader', `👑 ${t('groups.filterLeader')}`],
+              ['mod', `🛡️ ${t('groups.filterMod')}`],
+              ['member', t('groups.filterMember')],
+              ['inactive', t('groups.filterInactive')],
+            ] as Array<[MemberFilter, string]>).map(([key, label]) => {
+              const active = memberFilter === key;
+              const isInactiveChip = key === 'inactive';
+              return (
+                <button
+                  key={key}
+                  onClick={() => setMemberFilter(key)}
+                  className={`rounded-full px-3 py-1 text-[11px] font-medium border-[0.5px] cursor-pointer transition-all ${
+                    active
+                      ? isInactiveChip
+                        ? 'bg-[rgba(255,140,66,0.15)] text-[#ff8c42] border-[rgba(255,140,66,0.4)]'
+                        : 'bg-[rgba(232,168,50,0.15)] text-secondary border-[rgba(232,168,50,0.4)]'
+                      : isInactiveChip
+                      ? 'bg-[rgba(255,140,66,0.08)] text-[#ff8c42] border-[rgba(255,140,66,0.3)]'
+                      : 'bg-white/[0.04] text-on-surface/60 border-white/10'
+                  }`}
+                >
+                  {label}
+                </button>
+              );
+            })}
+          </div>
+
+          {memberLoading && memberItems.length === 0 ? (
+            <div className="bg-[rgba(50,52,64,0.3)] rounded-xl py-10 text-center">
+              <div className="w-8 h-8 border-2 border-secondary/20 border-t-secondary rounded-full animate-spin mx-auto" />
+            </div>
+          ) : memberItems.length === 0 ? (
+            <div className="bg-[rgba(50,52,64,0.3)] rounded-xl py-10 text-center text-on-surface/50 text-[12px]">
+              {t('groups.noMembersFound')}
             </div>
           ) : (
-            <div className="glass-card rounded-3xl overflow-hidden border border-outline-variant/10">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="bg-surface-container-high/50 text-left">
-                    <th className="py-5 px-8 text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">{t('groups.memberColumn')}</th>
-                    <th className="py-5 px-8 text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">{t('groups.roleColumn')}</th>
-                    <th className="py-5 px-8 text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">{t('groups.joinedColumn')}</th>
-                    {isLeader && (
-                      <th className="py-5 px-8 text-right text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">{t('groups.actionsColumn')}</th>
-                    )}
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-outline-variant/5">
-                  {[...group.members]
-                    .sort((a, b) => {
-                      const roleOrder: Record<string, number> = { LEADER: 0, MODERATOR: 1, MEMBER: 2 };
-                      return (roleOrder[a.role] ?? 2) - (roleOrder[b.role] ?? 2);
-                    })
-                    .map(member => (
-                      <tr
-                        key={member.userId}
-                        className={`transition-colors group ${
-                          member.role === 'LEADER'
-                            ? 'bg-secondary/5'
-                            : 'hover:bg-surface-container-high/30'
+            <div className="bg-[rgba(50,52,64,0.3)] border-[0.5px] border-white/[0.06] rounded-xl overflow-hidden">
+              {/* Header row */}
+              <div className="grid grid-cols-[40px_1fr_100px_100px_100px_60px] gap-3 px-4 py-2.5 bg-black/20 border-b-[0.5px] border-white/[0.06] items-center">
+                <div className="text-on-surface/40 text-[9px] font-medium tracking-wider">#</div>
+                <div className="text-on-surface/40 text-[9px] font-medium tracking-wider">{t('groups.colMember')}</div>
+                <div className="text-on-surface/40 text-[9px] font-medium tracking-wider text-right">{t('groups.colWeekScore')}</div>
+                <div className="text-on-surface/40 text-[9px] font-medium tracking-wider text-right">{t('groups.colStreak')}</div>
+                <div className="text-on-surface/40 text-[9px] font-medium tracking-wider text-right">{t('groups.colLastActive')}</div>
+                <div></div>
+              </div>
+
+              {/* Rows */}
+              {memberItems.map((m, idx) => {
+                const isMe = m.name === user?.name;
+                const isMemberLeader = m.role === 'LEADER';
+                const isMemberMod = m.role === 'MOD' || m.role === 'MODERATOR';
+                const inactive = isInactive(m);
+                const tierColor = isMemberLeader ? '#e8a832' : '#6AB8E8';
+
+                return (
+                  <div
+                    key={m.userId}
+                    className={`grid grid-cols-[40px_1fr_100px_100px_100px_60px] gap-3 px-4 py-2.5 items-center border-b-[0.5px] border-white/[0.04] ${
+                      isMe ? 'bg-[rgba(232,168,50,0.08)] border-l-2 border-l-secondary' : isMemberLeader ? 'bg-[rgba(232,168,50,0.05)]' : ''
+                    } ${inactive ? 'opacity-60' : ''}`}
+                  >
+                    <div className={`text-[13px] font-medium text-center ${isMe || isMemberLeader ? 'text-secondary' : 'text-on-surface/50'}`}>
+                      {idx + 1}
+                    </div>
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <div
+                        className={`w-8 h-8 rounded-full flex items-center justify-center text-[12px] font-medium flex-shrink-0 ${
+                          isMemberLeader
+                            ? 'bg-[rgba(232,168,50,0.3)] border-[1.5px] border-secondary text-secondary'
+                            : isMemberMod
+                            ? 'bg-[rgba(168,85,247,0.3)] text-[#c084fc]'
+                            : inactive
+                            ? 'bg-[rgba(255,140,66,0.2)] text-[rgba(255,140,66,0.7)]'
+                            : 'bg-[rgba(74,158,255,0.3)] text-[#6AB8E8]'
                         }`}
                       >
-                        <td className="py-5 px-8">
-                          <div className="flex items-center gap-4">
-                            <div className={`relative w-10 h-10 rounded-xl overflow-hidden flex-shrink-0 ${
-                              member.role === 'LEADER' ? 'ring-2 ring-secondary/50 ring-offset-2 ring-offset-surface' : 'bg-surface-container-highest'
-                            }`}>
-                              {member.avatarUrl ? (
-                                <img src={member.avatarUrl} alt="" className="w-full h-full object-cover" />
-                              ) : (
-                                <div className={`w-full h-full flex items-center justify-center font-black text-lg ${
-                                  member.role === 'LEADER' ? 'bg-secondary/15 text-secondary' : 'bg-primary-container text-on-primary-container'
-                                }`}>
-                                  {member.name?.charAt(0).toUpperCase() || '?'}
-                                </div>
-                              )}
-                              {member.role === 'LEADER' && (
-                                <div className="absolute -top-0.5 -right-0.5 w-5 h-5 gold-gradient rounded-full flex items-center justify-center shadow-lg">
-                                  <span className="material-symbols-outlined text-on-secondary text-[12px]">star</span>
-                                </div>
-                              )}
-                            </div>
-                            <span className="font-bold text-on-surface">{member.name}</span>
-                          </div>
-                        </td>
-                        <td className="py-5 px-8">
-                          {member.role === 'LEADER' ? (
-                            <span className="px-3 py-1 rounded-lg gold-gradient text-on-secondary text-[10px] font-black uppercase tracking-wider">
-                              {t('groups.leaderRole')}
-                            </span>
-                          ) : member.role === 'MODERATOR' ? (
-                            <span className="px-3 py-1 rounded-lg bg-primary-container text-on-primary-container text-[10px] font-bold uppercase tracking-wider">
-                              {t('groups.moderatorRole')}
-                            </span>
-                          ) : (
-                            <span className="px-3 py-1 rounded-lg bg-surface-container-highest text-on-surface-variant text-[10px] font-bold uppercase tracking-wider">
-                              {t('groups.memberRole')}
+                        {m.avatarUrl ? (
+                          <img alt={m.name} src={m.avatarUrl} className="w-full h-full rounded-full object-cover" />
+                        ) : (
+                          (m.name || '?').charAt(0).toUpperCase()
+                        )}
+                      </div>
+                      <div className="min-w-0">
+                        <div className="text-on-surface text-[12px] font-medium flex items-center gap-1.5 truncate">
+                          {m.name}
+                          {isMemberLeader && (
+                            <span className="bg-[rgba(232,168,50,0.2)] text-secondary px-1.5 py-px rounded-full text-[9px] flex-shrink-0">
+                              👑 {t('groups.filterLeader')}
                             </span>
                           )}
-                        </td>
-                        <td className="py-5 px-8 text-sm text-on-surface-variant font-medium">
-                          {new Date(member.joinedAt).toLocaleDateString('vi-VN')}
-                        </td>
-                        {isLeader && (
-                          <td className="py-5 px-8 text-right">
-                            {member.role !== 'LEADER' && (
+                          {isMemberMod && (
+                            <span className="bg-[rgba(74,158,255,0.15)] text-[#6AB8E8] px-1.5 py-px rounded-full text-[9px] flex-shrink-0">
+                              🛡️ {t('groups.filterMod')}
+                            </span>
+                          )}
+                          {isMe && (
+                            <span className="bg-[rgba(232,168,50,0.2)] text-secondary px-1.5 py-px rounded-full text-[9px] flex-shrink-0">
+                              {t('groups.youBadge')}
+                            </span>
+                          )}
+                        </div>
+                        <div className="text-[10px]" style={{ color: inactive ? 'rgba(255,140,66,0.6)' : tierColor }}>
+                          {inactive ? t('groups.inactiveBadge') : t('groups.memberRole')}
+                        </div>
+                      </div>
+                    </div>
+                    <div className={`text-[13px] font-medium text-right ${isMe || isMemberLeader ? 'text-secondary' : 'text-on-surface'}`}>
+                      {(m.score ?? 0).toLocaleString()}
+                    </div>
+                    <div className="text-on-surface/40 text-[12px] text-right">— 0</div>
+                    <div className={`text-[11px] text-right ${inactive ? 'text-[rgba(255,140,66,0.7)]' : 'text-on-surface/55'}`}>
+                      {formatRelativeTime(m.lastActiveAt ?? m.joinedAt)}
+                    </div>
+                    <div className="text-right flex justify-end gap-1">
+                      {inactive && isLeaderOrMod && (
+                        <button
+                          onClick={() => alert(t('groups.remindCta'))}
+                          className="bg-[rgba(255,140,66,0.15)] text-[#ff8c42] border-[0.5px] border-[rgba(255,140,66,0.4)] rounded-[4px] px-2 py-0.5 text-[10px] cursor-pointer hover:brightness-125"
+                        >
+                          {t('groups.remindCta')}
+                        </button>
+                      )}
+                      {isLeader && !isMemberLeader && !isMe && (
+                        <details className="relative inline-block">
+                          <summary className="list-none cursor-pointer text-on-surface/30 text-[14px] hover:text-on-surface/70">⋯</summary>
+                          <div className="absolute right-0 top-full mt-1 z-10 bg-surface-container border-[0.5px] border-white/10 rounded-lg shadow-lg py-1 min-w-[160px]">
+                            {!isMemberMod ? (
                               <button
-                                onClick={() => handleKick(member.userId, member.name)}
-                                className="px-4 py-2 bg-error-container/20 text-error rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-error-container/40 transition-all active:scale-95"
+                                onClick={() => handleChangeRole(m.userId, 'MOD')}
+                                className="w-full text-left px-3 py-1.5 text-[11px] text-on-surface hover:bg-white/5"
                               >
-                                {t('groups.kick')}
+                                {t('groups.promoteToMod')}
+                              </button>
+                            ) : (
+                              <button
+                                onClick={() => handleChangeRole(m.userId, 'MEMBER')}
+                                className="w-full text-left px-3 py-1.5 text-[11px] text-on-surface hover:bg-white/5"
+                              >
+                                {t('groups.demoteToMember')}
                               </button>
                             )}
-                          </td>
-                        )}
-                      </tr>
-                    ))}
-                </tbody>
-              </table>
+                            <button
+                              onClick={() => handleKick(m.userId, m.name)}
+                              className="w-full text-left px-3 py-1.5 text-[11px] text-error hover:bg-error/10"
+                            >
+                              {t('groups.removeMember')}
+                            </button>
+                          </div>
+                        </details>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+
+              {/* Load more */}
+              {memberCursor && (
+                <div className="px-4 py-3 text-center bg-black/20">
+                  <button
+                    onClick={() => fetchMembers(memberCursor, true)}
+                    disabled={memberLoading}
+                    className="bg-white/5 text-on-surface/70 border-[0.5px] border-white/10 rounded-md px-5 py-2 text-[11px] cursor-pointer hover:bg-white/10 disabled:opacity-50"
+                  >
+                    {memberLoading ? '...' : `${t('groups.loadMore')} →`}
+                  </button>
+                </div>
+              )}
             </div>
           )}
         </section>
