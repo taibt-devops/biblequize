@@ -1415,6 +1415,7 @@
     "errorLoadData": "Could not load data",
     "noPermission": "You do not have permission to view this group's analytics",
     "memberTooltip": "{{count}} members",
+    "questionsLabel": "answers",
     "dayMon": "Mon",
     "dayTue": "Tue",
     "dayWed": "Wed",

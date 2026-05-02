@@ -1415,6 +1415,7 @@
     "errorLoadData": "Không thể tải dữ liệu",
     "noPermission": "Bạn không có quyền xem phân tích nhóm này",
     "memberTooltip": "{{count}} thành viên",
+    "questionsLabel": "câu trả lời",
     "dayMon": "T2",
     "dayTue": "T3",
     "dayWed": "T4",

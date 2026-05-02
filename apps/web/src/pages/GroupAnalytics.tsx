@@ -4,24 +4,39 @@ import { useTranslation } from 'react-i18next';
 import { useAuth } from '../store/authStore';
 import { api } from '../api/client';
 
+interface TopContributor {
+  userId: string;
+  name: string;
+  avatarUrl?: string | null;
+  score: number;
+  questionsAnswered: number;
+}
+
+interface WeeklyActivityPoint {
+  date: string;
+  activeCount: number;
+}
+
 interface Analytics {
   totalMembers: number;
   activeToday: number;
-  // Phase 0.2 fields (currently NOT returned by BE — placeholder UI shows
-  // "—" until ChurchGroupService.getAnalytics ships expanded payload).
   activeWeek?: number;
   avgScore?: number;
   accuracy?: number;
   inactiveCount?: number;
-  weeklyActivity?: Array<{ date: string; activeCount: number }>;
+  totalQuizzes?: number;
+  totalPointsWeek?: number;
+  totalQuestionsWeek?: number;
+  weeklyActivity?: WeeklyActivityPoint[];
+  topContributors?: TopContributor[];
 }
 
 type Period = '7d' | '30d' | '90d';
 
-/* ─── Mock weekly chart until BE provides weeklyActivity (Phase 0.2) ─── */
-function getMockWeeklyHeights(): number[] {
-  // Heights as percentages — last day (today) highlighted prominently
-  return [50, 60, 45, 70, 55, 90, 67];
+function getInitial(name?: string): string {
+  if (!name) return '?';
+  const trimmed = name.trim();
+  return trimmed.length > 0 ? trimmed[0].toUpperCase() : '?';
 }
 
 /* ─── Single bar in the activity chart ─── */
@@ -158,16 +173,25 @@ const GroupAnalytics: React.FC = () => {
     );
   }
 
-  const weeklyHeights = analytics?.weeklyActivity
-    ? analytics.weeklyActivity.map((d) => d.activeCount)
-    : getMockWeeklyHeights();
-  const dayLabels = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', t('groups.today')];
-
   const totalMembers = analytics?.totalMembers ?? 0;
   const activeWeek = analytics?.activeWeek ?? analytics?.activeToday ?? 0;
   const avgScore = analytics?.avgScore ?? 0;
   const accuracy = analytics?.accuracy ?? 0;
   const inactiveCount = analytics?.inactiveCount ?? Math.max(0, totalMembers - activeWeek);
+  const topContributors = analytics?.topContributors ?? [];
+
+  // Weekly activity: scale daily activeCount to a 0-100 height percentage
+  // based on the busiest day in the window. When the entire group is silent
+  // for 7 days the bars all render at a 4% floor so the chart is visible.
+  const weeklyData = analytics?.weeklyActivity ?? [];
+  const maxDayCount = weeklyData.reduce((max, d) => Math.max(max, d.activeCount), 0);
+  const weeklyBars = weeklyData.map((d) => ({
+    date: d.date,
+    count: d.activeCount,
+    height: maxDayCount === 0 ? 4 : Math.max(4, (d.activeCount / maxDayCount) * 100),
+  }));
+
+  const dayLabels = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', t('groups.today')];
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-6 space-y-3">
@@ -245,13 +269,20 @@ const GroupAnalytics: React.FC = () => {
             <div className="text-on-surface/40 text-[10px]">{t('groups.weeklyActivitySubtitle')}</div>
           </div>
           <div className="grid grid-cols-7 gap-1.5 items-end h-20">
-            {weeklyHeights.slice(0, 7).map((h, idx) => {
-              const isToday = idx === 6;
-              const heightPct = analytics?.weeklyActivity
-                ? Math.max(8, Math.min(100, h * 3))
-                : h;
-              return <ChartBar key={idx} height={heightPct} label={dayLabels[idx]} isToday={isToday} />;
-            })}
+            {weeklyBars.length === 7 ? (
+              weeklyBars.map((bar, idx) => (
+                <ChartBar
+                  key={bar.date}
+                  height={bar.height}
+                  label={idx === 6 ? dayLabels[6] : dayLabels[idx]}
+                  isToday={idx === 6}
+                />
+              ))
+            ) : (
+              dayLabels.map((label, idx) => (
+                <ChartBar key={label} height={4} label={label} isToday={idx === 6} />
+              ))
+            )}
           </div>
         </div>
 
@@ -278,6 +309,53 @@ const GroupAnalytics: React.FC = () => {
           </div>
         )}
       </section>
+
+      {/* ── Top contributors (real data from analytics.topContributors) ── */}
+      {topContributors.length > 0 && (
+        <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-white/[0.06] rounded-xl p-5">
+          <div className="text-on-surface text-[13px] font-medium mb-3 flex items-center gap-2">
+            🏆 {t('groupAnalytics.topContributors')}
+          </div>
+          <div className="flex flex-col gap-2">
+            {topContributors.map((c, idx) => (
+              <div
+                key={c.userId}
+                className={`rounded-lg px-3 py-2.5 flex items-center gap-3 border-[0.5px] ${
+                  idx === 0
+                    ? 'bg-[rgba(232,168,50,0.05)] border-[rgba(232,168,50,0.25)]'
+                    : 'bg-white/[0.03] border-white/[0.04]'
+                }`}
+              >
+                <div
+                  className={`text-[13px] font-medium w-5 text-center ${
+                    idx < 3 ? 'text-secondary' : 'text-on-surface-variant'
+                  }`}
+                >
+                  {idx + 1}
+                </div>
+                <div
+                  className={`w-9 h-9 rounded-lg flex items-center justify-center text-[12px] font-medium ${
+                    idx === 0 ? 'bg-[rgba(232,168,50,0.15)] text-secondary ring-2 ring-secondary' : 'bg-white/10 text-on-surface'
+                  }`}
+                >
+                  {c.avatarUrl ? (
+                    <img alt={c.name} src={c.avatarUrl} className="w-full h-full rounded-lg object-cover" />
+                  ) : (
+                    getInitial(c.name)
+                  )}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-on-surface text-[12px] font-medium truncate">{c.name}</div>
+                  <div className="text-on-surface/45 text-[10px]">
+                    {c.questionsAnswered} {t('groupAnalytics.questionsLabel')}
+                  </div>
+                </div>
+                <div className="text-secondary text-[12px] font-medium">{(c.score ?? 0).toLocaleString()}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* ── Quick Actions panel ── */}
       <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-[rgba(232,168,50,0.15)] rounded-xl p-5">

@@ -264,21 +264,102 @@ public class ChurchGroupService {
             throw new RuntimeException("Khong co quyen truy cap");
         }
 
-        int totalMembers = groupMemberRepository.countByGroupId(groupId);
-
-        // Count members who played today (have UserDailyProgress with questionsCounted > 0)
         LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate weekStart = today.minusDays(6);
+
         List<GroupMember> members = groupMemberRepository.findByGroupId(groupId);
-        long activeToday = members.stream()
-                .filter(m -> {
-                    Optional<UserDailyProgress> udp = udpRepository.findByUserIdAndDate(m.getUser().getId(), today);
-                    return udp.isPresent() && udp.get().getQuestionsCounted() != null && udp.get().getQuestionsCounted() > 0;
-                })
-                .count();
+        int totalMembers = members.size();
+
+        // ── Active counts ───────────────────────────────────────────────
+        long activeToday = 0;
+        long activeWeek = 0;
+        long inactiveCount = 0;
+        // ── Aggregates over the past 7 days for KPI panel ────────────────
+        long totalQuestionsWeek = 0;
+        long totalPointsWeek = 0;
+        // ── Per-member tally for top contributors ratting ────────────────
+        List<Map<String, Object>> contributorRows = new ArrayList<>();
+        // ── Daily bucket for weekly activity chart (Mon..Sun aligned to today-6..today) ──
+        int[] dailyActiveCounts = new int[7];
+
+        for (GroupMember m : members) {
+            String userId = m.getUser().getId();
+            Optional<UserDailyProgress> todayUdp = udpRepository.findByUserIdAndDate(userId, today);
+            boolean playedToday = todayUdp.isPresent()
+                    && todayUdp.get().getQuestionsCounted() != null
+                    && todayUdp.get().getQuestionsCounted() > 0;
+            if (playedToday) activeToday++;
+
+            List<UserDailyProgress> weekUdps = udpRepository.findByUserIdAndDateBetween(userId, weekStart, today);
+            int memberWeekPoints = 0;
+            int memberWeekQuestions = 0;
+            boolean activeAnyDay = false;
+            for (UserDailyProgress udp : weekUdps) {
+                int q = udp.getQuestionsCounted() != null ? udp.getQuestionsCounted() : 0;
+                int p = udp.getPointsCounted() != null ? udp.getPointsCounted() : 0;
+                memberWeekPoints += p;
+                memberWeekQuestions += q;
+                if (q > 0) {
+                    activeAnyDay = true;
+                    int dayIdx = (int) java.time.temporal.ChronoUnit.DAYS.between(weekStart, udp.getDate());
+                    if (dayIdx >= 0 && dayIdx < 7) {
+                        dailyActiveCounts[dayIdx] += 1;
+                    }
+                }
+            }
+            if (activeAnyDay) activeWeek++;
+            else inactiveCount++;
+
+            totalQuestionsWeek += memberWeekQuestions;
+            totalPointsWeek += memberWeekPoints;
+
+            if (memberWeekQuestions > 0) {
+                Map<String, Object> row = new LinkedHashMap<>();
+                row.put("userId", userId);
+                row.put("name", m.getUser().getName());
+                row.put("avatarUrl", m.getUser().getAvatarUrl());
+                row.put("score", memberWeekPoints);
+                row.put("questionsAnswered", memberWeekQuestions);
+                contributorRows.add(row);
+            }
+        }
+
+        // Top contributors: sort by score DESC, take 5
+        contributorRows.sort((a, b) -> Integer.compare((int) b.get("score"), (int) a.get("score")));
+        List<Map<String, Object>> topContributors = contributorRows.stream().limit(5).collect(Collectors.toList());
+
+        // Weekly activity series — index 0 = oldest day, 6 = today
+        List<Map<String, Object>> weeklyActivity = new ArrayList<>();
+        for (int i = 0; i < 7; i++) {
+            Map<String, Object> day = new LinkedHashMap<>();
+            day.put("date", weekStart.plusDays(i).toString());
+            day.put("activeCount", dailyActiveCounts[i]);
+            weeklyActivity.add(day);
+        }
+
+        int avgScore = activeWeek > 0 ? (int) Math.round((double) totalPointsWeek / activeWeek) : 0;
+        // Accuracy proxy: pointsPerQuestion ≈ 10 in BibleQuiz scoring. Pure derivation
+        // until UserDailyProgress carries an explicit correct-count column.
+        int accuracy = totalQuestionsWeek > 0
+                ? (int) Math.min(100, Math.round((double) totalPointsWeek / (totalQuestionsWeek * 10) * 100))
+                : 0;
+        // Approximate quiz session count as questions / 10 (5-question quizzes are also possible
+        // but 10-question is the dominant default). Real distinct-session count would require
+        // joining QuizSession — defer until that becomes a sprint priority.
+        int totalQuizzes = (int) Math.round((double) totalQuestionsWeek / 10);
 
         Map<String, Object> result = new LinkedHashMap<>();
         result.put("totalMembers", totalMembers);
         result.put("activeToday", (int) activeToday);
+        result.put("activeWeek", (int) activeWeek);
+        result.put("inactiveCount", (int) inactiveCount);
+        result.put("avgScore", avgScore);
+        result.put("accuracy", accuracy);
+        result.put("totalQuizzes", totalQuizzes);
+        result.put("totalPointsWeek", (int) totalPointsWeek);
+        result.put("totalQuestionsWeek", (int) totalQuestionsWeek);
+        result.put("weeklyActivity", weeklyActivity);
+        result.put("topContributors", topContributors);
         return result;
     }
 
