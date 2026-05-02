@@ -218,22 +218,22 @@ function NoGroupView({
         <div className="text-on-surface/40 text-[11px]">{t('groups.noGroupHint')}</div>
       </div>
 
-      {/* Benefits grid (3 cards) */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-        <div className="bg-[rgba(74,158,255,0.06)] border-[0.5px] border-[rgba(74,158,255,0.2)] rounded-xl p-3.5">
-          <div className="text-[18px] mb-1.5">🏆</div>
-          <div className="text-on-surface text-[13px] font-medium mb-0.5">{t('groups.benefit1Title')}</div>
-          <div className="text-on-surface/55 text-[11px] leading-snug">{t('groups.benefit1Desc')}</div>
+      {/* Benefits grid (3 cards) — always 3-col per mobile mockup */}
+      <div className="grid grid-cols-3 gap-2 sm:gap-3">
+        <div className="bg-[rgba(74,158,255,0.06)] border-[0.5px] border-[rgba(74,158,255,0.2)] rounded-[10px] p-2.5 sm:p-3.5 text-center sm:text-left">
+          <div className="text-[16px] sm:text-[18px] mb-1">🏆</div>
+          <div className="text-on-surface text-[10px] sm:text-[13px] font-medium mb-0.5">{t('groups.benefit1Title')}</div>
+          <div className="text-on-surface/55 text-[9px] sm:text-[11px] leading-snug hidden sm:block">{t('groups.benefit1Desc')}</div>
         </div>
-        <div className="bg-[rgba(168,85,247,0.06)] border-[0.5px] border-[rgba(168,85,247,0.2)] rounded-xl p-3.5">
-          <div className="text-[18px] mb-1.5">📚</div>
-          <div className="text-on-surface text-[13px] font-medium mb-0.5">{t('groups.benefit2Title')}</div>
-          <div className="text-on-surface/55 text-[11px] leading-snug">{t('groups.benefit2Desc')}</div>
+        <div className="bg-[rgba(168,85,247,0.06)] border-[0.5px] border-[rgba(168,85,247,0.2)] rounded-[10px] p-2.5 sm:p-3.5 text-center sm:text-left">
+          <div className="text-[16px] sm:text-[18px] mb-1">📚</div>
+          <div className="text-on-surface text-[10px] sm:text-[13px] font-medium mb-0.5">{t('groups.benefit2Title')}</div>
+          <div className="text-on-surface/55 text-[9px] sm:text-[11px] leading-snug hidden sm:block">{t('groups.benefit2Desc')}</div>
         </div>
-        <div className="bg-[rgba(99,153,34,0.06)] border-[0.5px] border-[rgba(99,153,34,0.2)] rounded-xl p-3.5">
-          <div className="text-[18px] mb-1.5">🔥</div>
-          <div className="text-on-surface text-[13px] font-medium mb-0.5">{t('groups.benefit3Title')}</div>
-          <div className="text-on-surface/55 text-[11px] leading-snug">{t('groups.benefit3Desc')}</div>
+        <div className="bg-[rgba(99,153,34,0.06)] border-[0.5px] border-[rgba(99,153,34,0.2)] rounded-[10px] p-2.5 sm:p-3.5 text-center sm:text-left">
+          <div className="text-[16px] sm:text-[18px] mb-1">🔥</div>
+          <div className="text-on-surface text-[10px] sm:text-[13px] font-medium mb-0.5">{t('groups.benefit3Title')}</div>
+          <div className="text-on-surface/55 text-[9px] sm:text-[11px] leading-snug hidden sm:block">{t('groups.benefit3Desc')}</div>
         </div>
       </div>
 
@@ -390,12 +390,14 @@ function PodiumSlot({
   );
 }
 
-/* ─── Group Overview (mockup: groups_member_dashboard.html) ─── */
+/* ─── Group Overview (mockup: groups_member_dashboard.html / groups_leader_dashboard.html) ─── */
 
-function GroupOverview({ groupId }: { groupId: string }) {
+function GroupOverview({ groupId, role }: { groupId: string; role?: string }) {
   const { t } = useTranslation();
   const { user } = useAuth();
   const [period, setPeriod] = useState<'weekly' | 'monthly' | 'all_time'>('weekly');
+  const isLeader = (role ?? '').toUpperCase() === 'LEADER';
+  const isMod = (role ?? '').toUpperCase() === 'MOD';
 
   const {
     data: groupRes,
@@ -426,6 +428,19 @@ function GroupOverview({ groupId }: { groupId: string }) {
     enabled: !!group,
   });
 
+  // Latest quiz set for mobile CTA card
+  const { data: quizSetsRes } = useQuery<{ quizSets: Array<{ id: string; name: string; questionCount: number; createdAt: string }> }>({
+    queryKey: ['group-quizsets', groupId],
+    queryFn: () =>
+      api
+        .get(`/api/groups/${groupId}/quiz-sets`)
+        .then((r) => ({ quizSets: r.data?.quizSets ?? [] }))
+        .catch(() => ({ quizSets: [] })),
+    enabled: !!group,
+    staleTime: 5 * 60_000,
+  });
+  const latestQuizSet = quizSetsRes?.quizSets?.[0] ?? null;
+
   if (groupLoading) return <GroupSkeleton />;
 
   if (groupError || !group) {
@@ -452,32 +467,54 @@ function GroupOverview({ groupId }: { groupId: string }) {
   const currentUserId = user?.email; // placeholder — better from /me but unavailable here
 
   return (
-    <div className="max-w-5xl mx-auto space-y-4" data-testid="group-overview">
+    <div className="max-w-5xl mx-auto space-y-3" data-testid="group-overview">
       {/* ── Header ── */}
-      <header className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-[rgba(232,168,50,0.2)] rounded-[14px] p-4 flex items-center gap-4">
-        <div className="w-[60px] h-[60px] rounded-[14px] bg-[rgba(232,168,50,0.15)] border-[1.5px] border-[rgba(232,168,50,0.4)] flex items-center justify-center flex-shrink-0">
+      <header
+        className={`border-[0.5px] rounded-[14px] p-3 sm:p-4 flex items-center gap-3 sm:gap-4 ${
+          isLeader
+            ? 'bg-gradient-to-br from-[rgba(232,168,50,0.1)] to-[rgba(50,52,64,0.4)] border-[rgba(232,168,50,0.3)]'
+            : 'bg-[rgba(50,52,64,0.4)] border-[rgba(232,168,50,0.2)]'
+        }`}
+      >
+        <div
+          className={`w-[44px] h-[44px] sm:w-[60px] sm:h-[60px] rounded-[12px] sm:rounded-[14px] flex items-center justify-center flex-shrink-0 ${
+            isLeader
+              ? 'bg-[rgba(232,168,50,0.2)] border-[1.5px] border-secondary'
+              : 'bg-[rgba(232,168,50,0.15)] border-[1.5px] border-[rgba(232,168,50,0.4)]'
+          }`}
+        >
           {group.avatarUrl || group.logoUrl ? (
-            <img alt={groupName} src={group.avatarUrl ?? group.logoUrl} className="w-full h-full rounded-[14px] object-cover" />
+            <img alt={groupName} src={group.avatarUrl ?? group.logoUrl} className="w-full h-full rounded-[12px] object-cover" />
           ) : (
-            <span className="text-[28px]">⛪</span>
+            <span className="text-[24px] sm:text-[28px]">⛪</span>
           )}
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap" data-testid="group-name-heading">
-            <h2 className="text-on-surface text-[18px] font-medium m-0 truncate">{groupName}</h2>
-            {group.isPublic !== false ? (
-              <span className="bg-[rgba(99,153,34,0.15)] text-[#97C459] px-2 py-0.5 rounded-full text-[9px] font-medium">
-                {t('groups.publicBadge')}
+            <h2 className="text-on-surface text-[15px] sm:text-[18px] font-medium m-0 truncate">{groupName}</h2>
+            {isLeader ? (
+              <span className="bg-[rgba(232,168,50,0.2)] text-secondary px-2 py-0.5 rounded-full text-[8px] font-medium border-[0.5px] border-[rgba(232,168,50,0.4)]">
+                👑 {t('groups.leaderBadge')}
+              </span>
+            ) : isMod ? (
+              <span className="bg-[rgba(74,158,255,0.15)] text-[#6AB8E8] px-2 py-0.5 rounded-full text-[8px] font-medium border-[0.5px] border-[rgba(74,158,255,0.3)]">
+                🛡️ {t('groups.modBadge')}
               </span>
             ) : (
-              <span className="bg-white/[0.06] text-on-surface-variant px-2 py-0.5 rounded-full text-[9px] font-medium">
-                {t('groups.privateBadge')}
-              </span>
+              group.isPublic !== false ? (
+                <span className="bg-[rgba(99,153,34,0.15)] text-[#97C459] px-2 py-0.5 rounded-full text-[9px] font-medium">
+                  {t('groups.publicBadge')}
+                </span>
+              ) : (
+                <span className="bg-white/[0.06] text-on-surface-variant px-2 py-0.5 rounded-full text-[9px] font-medium">
+                  {t('groups.privateBadge')}
+                </span>
+              )
             )}
           </div>
-          <div className="text-on-surface/55 text-[12px] mt-1 flex items-center gap-3 flex-wrap">
+          <div className="text-on-surface/55 text-[11px] sm:text-[12px] mt-0.5 flex items-center gap-2 sm:gap-3 flex-wrap">
             <span>👥 {memberCount} {t('groups.members')}</span>
-            {leader && (
+            {leader && !isLeader && (
               <>
                 <span>·</span>
                 <span>👑 {leader.name}</span>
@@ -486,26 +523,67 @@ function GroupOverview({ groupId }: { groupId: string }) {
             {group.location && (
               <>
                 <span>·</span>
-                <span>📍 {group.location}</span>
+                <span className="hidden sm:inline">📍 {group.location}</span>
+              </>
+            )}
+            {group.code && isLeader && (
+              <>
+                <span>·</span>
+                <span>🔑 <code className="bg-white/[0.06] px-1 py-0.5 rounded text-secondary text-[9px] font-mono">{group.code}</code></span>
               </>
             )}
           </div>
         </div>
-        <div className="flex gap-2 flex-shrink-0">
-          <Link
-            to={`/groups/${group.id}`}
-            className="bg-white/5 text-on-surface/70 border-[0.5px] border-white/10 rounded-lg px-3.5 py-2 text-[11px] font-medium hover:bg-white/10 transition-all"
-          >
-            🔗 {t('groups.invite')}
-          </Link>
-          <Link
-            to={`/groups/${group.id}`}
-            className="bg-white/5 text-on-surface/70 border-[0.5px] border-white/10 rounded-lg px-3.5 py-2 text-[11px] font-medium hover:bg-white/10 transition-all"
-          >
-            ⋯
-          </Link>
+        <div className="flex gap-1.5 sm:gap-2 flex-shrink-0">
+          {(isLeader || isMod) ? (
+            <>
+              <Link
+                to={`/groups/${group.id}?tab=quizsets`}
+                className="bg-[rgba(232,168,50,0.15)] text-secondary border-[0.5px] border-[rgba(232,168,50,0.4)] rounded-lg px-2.5 py-1.5 sm:px-3.5 sm:py-2 text-[10px] sm:text-[11px] font-medium hover:brightness-110 transition-all"
+              >
+                + {t('groups.quickActionCreateQuizShort')}
+              </Link>
+              <Link
+                to={`/groups/${group.id}`}
+                className="bg-white/5 text-on-surface/70 border-[0.5px] border-white/10 rounded-lg px-2.5 py-1.5 sm:px-3.5 sm:py-2 text-[10px] sm:text-[11px] font-medium hover:bg-white/10 transition-all"
+              >
+                ⚙️
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link
+                to={`/groups/${group.id}`}
+                className="bg-white/5 text-on-surface/70 border-[0.5px] border-white/10 rounded-lg px-2.5 py-1.5 sm:px-3.5 sm:py-2 text-[10px] sm:text-[11px] font-medium hover:bg-white/10 transition-all"
+              >
+                🔗 {t('groups.invite')}
+              </Link>
+              <Link
+                to={`/groups/${group.id}`}
+                className="bg-white/5 text-on-surface/70 border-[0.5px] border-white/10 rounded-lg px-2.5 py-1.5 sm:px-3.5 sm:py-2 text-[10px] sm:text-[11px] font-medium hover:bg-white/10 transition-all"
+              >
+                ⋯
+              </Link>
+            </>
+          )}
         </div>
       </header>
+
+      {/* ── Mobile stat cards (hidden on lg — shown in sidebar on desktop) ── */}
+      <div className="grid grid-cols-2 gap-2.5 lg:hidden">
+        <div className="bg-[rgba(99,153,34,0.06)] border-[0.5px] border-[rgba(99,153,34,0.25)] rounded-[10px] p-2.5">
+          <div className="text-[rgba(151,196,89,0.7)] text-[9px] tracking-[0.4px] mb-1 uppercase">{t('groups.groupStreak')}</div>
+          <div className="text-[#97C459] text-[18px] font-medium">🔥 0</div>
+          <div className="text-on-surface/45 text-[9px] mt-0.5">
+            {t('groups.groupStreakProgress', { active: 0, total: memberCount })}
+          </div>
+        </div>
+        <div className="bg-[rgba(232,168,50,0.06)] border-[0.5px] border-[rgba(232,168,50,0.25)] rounded-[10px] p-2.5">
+          <div className="text-[rgba(232,168,50,0.7)] text-[9px] tracking-[0.4px] mb-1 uppercase">{t('groups.groupRank')}</div>
+          <div className="text-[#e8a832] text-[18px] font-medium">#— / —</div>
+          <div className="text-on-surface/45 text-[9px] mt-0.5">{t('groups.groupRankSubtitle')}</div>
+        </div>
+      </div>
 
       {/* ── Two-column body ── */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-4">
@@ -615,21 +693,43 @@ function GroupOverview({ groupId }: { groupId: string }) {
             )}
           </section>
 
-          {/* Quiz sets section (placeholder — wire to /api/groups/{id}/quiz-sets) */}
-          <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-white/[0.06] rounded-xl p-5">
-            <div className="flex justify-between items-center mb-3">
-              <div className="text-on-surface text-[13px] font-medium">📚 {t('groups.quizSetsSection')}</div>
+          {/* Featured quiz set CTA (shown when there are quiz sets) */}
+          {latestQuizSet ? (
+            <section className="bg-[rgba(232,168,50,0.06)] border-[0.5px] border-[rgba(232,168,50,0.25)] rounded-xl p-3.5 sm:p-5">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-[14px]">📚</span>
+                <span className="text-on-surface text-[12px] sm:text-[13px] font-medium">{t('groups.quizSetsSection')}</span>
+                <span className="bg-[rgba(255,140,66,0.2)] text-[#ff8c42] px-1.5 py-0.5 rounded-full text-[9px] font-medium">
+                  {t('groups.newBadge')}
+                </span>
+              </div>
+              <div className="text-on-surface text-[12px] sm:text-[13px] mb-1">{latestQuizSet.name}</div>
+              <div className="text-on-surface/55 text-[10px] sm:text-[11px] mb-3">
+                {latestQuizSet.questionCount} {t('groups.questionsCount')}
+              </div>
               <Link
                 to={`/groups/${group.id}?tab=quizsets`}
-                className="text-[rgba(232,168,50,0.7)] text-[11px] hover:text-secondary"
+                className="block w-full bg-secondary text-on-secondary border-0 rounded-lg py-2 text-[11px] sm:text-[12px] font-medium text-center hover:brightness-110 transition-all active:scale-95"
               >
-                {t('groups.viewAll')} →
+                ▶ {t('groups.startPlaying')}
               </Link>
-            </div>
-            <p className="text-on-surface-variant text-[11px] py-2">
-              {t('groups.noQuizSets')}
-            </p>
-          </section>
+            </section>
+          ) : (
+            <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-white/[0.06] rounded-xl p-4 sm:p-5">
+              <div className="flex justify-between items-center mb-2 sm:mb-3">
+                <div className="text-on-surface text-[12px] sm:text-[13px] font-medium">📚 {t('groups.quizSetsSection')}</div>
+                <Link
+                  to={`/groups/${group.id}?tab=quizsets`}
+                  className="text-[rgba(232,168,50,0.7)] text-[11px] hover:text-secondary"
+                >
+                  {t('groups.viewAll')} →
+                </Link>
+              </div>
+              <p className="text-on-surface-variant text-[11px] py-2">
+                {t('groups.noQuizSets')}
+              </p>
+            </section>
+          )}
         </div>
 
         {/* Sidebar column */}
@@ -698,6 +798,20 @@ function GroupOverview({ groupId }: { groupId: string }) {
             <div className="text-on-surface/40 text-[10px] mt-1">
               {t('groups.groupStreakProgress', { active: 0, total: memberCount })}
             </div>
+          </section>
+
+          {/* Tournament card */}
+          <section className="bg-[rgba(74,158,255,0.05)] border-[0.5px] border-[rgba(74,158,255,0.2)] rounded-xl p-3.5">
+            <div className="flex justify-between items-center mb-1.5">
+              <div className="text-on-surface text-[11px] font-medium">🏆 {t('groups.tournamentLabel')}</div>
+            </div>
+            <div className="text-on-surface/55 text-[10px] mb-3">{t('groups.noUpcomingTournament')}</div>
+            <Link
+              to="/tournaments"
+              className="block w-full bg-[rgba(74,158,255,0.15)] text-[#6AB8E8] border-[0.5px] border-[rgba(74,158,255,0.4)] rounded-lg py-1.5 text-[10px] font-medium text-center hover:brightness-110 transition-all"
+            >
+              {t('groups.browseTournaments')}
+            </Link>
           </section>
         </aside>
       </div>
@@ -821,7 +935,7 @@ const Groups: React.FC = () => {
   return (
     <div className="px-4 py-6" data-testid="groups-page">
       {myGroupId ? (
-        <GroupOverview groupId={myGroupId} />
+        <GroupOverview groupId={myGroupId} role={myGroupRes?.role} />
       ) : (
         <NoGroupView
           onCreateClick={() => setShowCreateModal(true)}

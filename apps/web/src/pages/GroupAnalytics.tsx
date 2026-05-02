@@ -205,8 +205,8 @@ const GroupAnalytics: React.FC = () => {
       </button>
 
       {/* ── Analytics card (mockup: groups_leader_dashboard.html, blue-tinted leader-only block) ── */}
-      <section className="bg-[rgba(74,158,255,0.05)] border-[0.5px] border-[rgba(74,158,255,0.25)] rounded-xl p-5">
-        <div className="flex justify-between items-center mb-4">
+      <section className="bg-[rgba(74,158,255,0.05)] border-[0.5px] border-[rgba(74,158,255,0.25)] rounded-xl p-3.5 sm:p-5">
+        <div className="flex flex-wrap gap-2 justify-between items-center mb-3 sm:mb-4">
           <div>
             <div className="text-[rgba(106,184,232,0.7)] text-[10px] tracking-wider mb-1">
               {t('groups.leaderOnly')}
@@ -312,7 +312,7 @@ const GroupAnalytics: React.FC = () => {
 
       {/* ── Top contributors (real data from analytics.topContributors) ── */}
       {topContributors.length > 0 && (
-        <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-white/[0.06] rounded-xl p-5">
+        <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-white/[0.06] rounded-xl p-3.5 sm:p-5">
           <div className="text-on-surface text-[13px] font-medium mb-3 flex items-center gap-2">
             🏆 {t('groupAnalytics.topContributors')}
           </div>
@@ -358,7 +358,7 @@ const GroupAnalytics: React.FC = () => {
       )}
 
       {/* ── Quick Actions panel ── */}
-      <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-[rgba(232,168,50,0.15)] rounded-xl p-5">
+      <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-[rgba(232,168,50,0.15)] rounded-xl p-3.5 sm:p-5">
         <div className="text-on-surface text-[13px] font-medium mb-3">⚡ {t('groups.quickActions')}</div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
           <Link

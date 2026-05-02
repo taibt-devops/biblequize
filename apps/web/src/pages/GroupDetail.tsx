@@ -707,34 +707,37 @@ const GroupDetail: React.FC = () => {
                 })}
               </div>
             </div>
-            <div className="flex gap-2 items-center flex-wrap">
-              <div className="bg-[rgba(50,52,64,0.5)] border-[0.5px] border-white/[0.08] rounded-lg px-3 py-2 flex items-center gap-2 min-w-[220px]">
+            <div className="flex flex-col sm:flex-row gap-2 items-stretch sm:items-center">
+              <div className="bg-[rgba(50,52,64,0.5)] border-[0.5px] border-white/[0.08] rounded-lg px-2.5 sm:px-3 py-2 flex items-center gap-2 sm:min-w-[220px]">
                 <span className="text-[12px] text-on-surface/40">🔍</span>
                 <input
-                  className="bg-transparent border-0 outline-none text-on-surface text-[12px] flex-1"
+                  className="bg-transparent border-0 outline-none text-on-surface text-[11px] sm:text-[12px] flex-1"
                   placeholder={t('groups.memberSearchPlaceholder')}
                   value={memberSearch}
                   onChange={(e) => setMemberSearch(e.target.value)}
                 />
               </div>
-              <div className="inline-flex bg-black/30 rounded-md p-0.5">
-                {(['score', 'tier', 'activity'] as MemberSort[]).map((s) => (
-                  <button
-                    key={s}
-                    onClick={() => setMemberSort(s)}
-                    className={`border-0 px-3 py-1.5 rounded text-[11px] font-medium cursor-pointer transition-all ${
-                      memberSort === s ? 'bg-secondary text-on-secondary' : 'bg-transparent text-on-surface/55'
-                    }`}
-                  >
-                    {s === 'score' ? t('groups.sortByScore') : s === 'tier' ? t('groups.sortByTier') : t('groups.sortByActivity')}
-                  </button>
-                ))}
+              <div className="flex items-center gap-1.5">
+                <span className="text-on-surface/50 text-[10px] sm:hidden">{t('groups.sortByScore').split(' ')[0]}:</span>
+                <div className="inline-flex bg-black/30 rounded-md p-0.5">
+                  {(['score', 'tier', 'activity'] as MemberSort[]).map((s) => (
+                    <button
+                      key={s}
+                      onClick={() => setMemberSort(s)}
+                      className={`border-0 px-2 sm:px-3 py-1 sm:py-1.5 rounded text-[10px] sm:text-[11px] font-medium cursor-pointer transition-all ${
+                        memberSort === s ? 'bg-secondary text-on-secondary' : 'bg-transparent text-on-surface/55'
+                      }`}
+                    >
+                      {s === 'score' ? t('groups.sortByScore') : s === 'tier' ? t('groups.sortByTier') : t('groups.sortByActivity')}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Filter chips */}
-          <div className="flex gap-2 mb-4 flex-wrap">
+          {/* Filter chips — horizontal scroll on mobile */}
+          <div className="flex gap-1.5 sm:gap-2 mb-3 sm:mb-4 overflow-x-auto pb-1 [-webkit-overflow-scrolling:touch]">
             {([
               ['', t('groups.filterAll')],
               ['leader', `👑 ${t('groups.filterLeader')}`],
@@ -748,7 +751,7 @@ const GroupDetail: React.FC = () => {
                 <button
                   key={key}
                   onClick={() => setMemberFilter(key)}
-                  className={`rounded-full px-3 py-1 text-[11px] font-medium border-[0.5px] cursor-pointer transition-all ${
+                  className={`rounded-full px-2.5 sm:px-3 py-1 text-[10px] sm:text-[11px] font-medium border-[0.5px] cursor-pointer transition-all whitespace-nowrap flex-shrink-0 ${
                     active
                       ? isInactiveChip
                         ? 'bg-[rgba(255,140,66,0.15)] text-[#ff8c42] border-[rgba(255,140,66,0.4)]'
@@ -795,16 +798,16 @@ const GroupDetail: React.FC = () => {
                 return (
                   <div
                     key={m.userId}
-                    className={`grid grid-cols-[40px_1fr_100px_100px_100px_60px] gap-3 px-4 py-2.5 items-center border-b-[0.5px] border-white/[0.04] ${
+                    className={`flex sm:grid sm:grid-cols-[40px_1fr_100px_100px_100px_60px] gap-2.5 sm:gap-3 px-3 sm:px-4 py-2.5 items-center border-b-[0.5px] border-white/[0.04] ${
                       isMe ? 'bg-[rgba(232,168,50,0.08)] border-l-2 border-l-secondary' : isMemberLeader ? 'bg-[rgba(232,168,50,0.05)]' : ''
                     } ${inactive ? 'opacity-60' : ''}`}
                   >
-                    <div className={`text-[13px] font-medium text-center ${isMe || isMemberLeader ? 'text-secondary' : 'text-on-surface/50'}`}>
+                    <div className={`text-[12px] sm:text-[13px] font-medium text-center w-[16px] sm:w-auto flex-shrink-0 ${isMe || isMemberLeader ? 'text-secondary' : 'text-on-surface/50'}`}>
                       {idx + 1}
                     </div>
-                    <div className="flex items-center gap-2.5 min-w-0">
+                    <div className="flex items-center gap-2 sm:gap-2.5 min-w-0 flex-1">
                       <div
-                        className={`w-8 h-8 rounded-full flex items-center justify-center text-[12px] font-medium flex-shrink-0 ${
+                        className={`w-9 h-9 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-[12px] font-medium flex-shrink-0 ${
                           isMemberLeader
                             ? 'bg-[rgba(232,168,50,0.3)] border-[1.5px] border-secondary text-secondary'
                             : isMemberMod
@@ -820,38 +823,48 @@ const GroupDetail: React.FC = () => {
                           (m.name || '?').charAt(0).toUpperCase()
                         )}
                       </div>
-                      <div className="min-w-0">
-                        <div className="text-on-surface text-[12px] font-medium flex items-center gap-1.5 truncate">
+                      <div className="min-w-0 flex-1">
+                        <div className="text-on-surface text-[11px] sm:text-[12px] font-medium flex items-center gap-1 sm:gap-1.5 flex-wrap">
                           {m.name}
                           {isMemberLeader && (
-                            <span className="bg-[rgba(232,168,50,0.2)] text-secondary px-1.5 py-px rounded-full text-[9px] flex-shrink-0">
+                            <span className="bg-[rgba(232,168,50,0.2)] text-secondary px-1.5 py-px rounded-full text-[8px] sm:text-[9px] flex-shrink-0">
                               👑 {t('groups.filterLeader')}
                             </span>
                           )}
                           {isMemberMod && (
-                            <span className="bg-[rgba(74,158,255,0.15)] text-[#6AB8E8] px-1.5 py-px rounded-full text-[9px] flex-shrink-0">
+                            <span className="bg-[rgba(74,158,255,0.15)] text-[#6AB8E8] px-1.5 py-px rounded-full text-[8px] sm:text-[9px] flex-shrink-0">
                               🛡️ {t('groups.filterMod')}
                             </span>
                           )}
                           {isMe && (
-                            <span className="bg-[rgba(232,168,50,0.2)] text-secondary px-1.5 py-px rounded-full text-[9px] flex-shrink-0">
+                            <span className="bg-[rgba(232,168,50,0.2)] text-secondary px-1.5 py-px rounded-full text-[8px] sm:text-[9px] flex-shrink-0">
                               {t('groups.youBadge')}
                             </span>
                           )}
                         </div>
-                        <div className="text-[10px]" style={{ color: inactive ? 'rgba(255,140,66,0.6)' : tierColor }}>
+                        <div className="text-[9px] sm:text-[10px]" style={{ color: inactive ? 'rgba(255,140,66,0.6)' : tierColor }}>
                           {inactive ? t('groups.inactiveBadge') : t('groups.memberRole')}
                         </div>
                       </div>
                     </div>
-                    <div className={`text-[13px] font-medium text-right ${isMe || isMemberLeader ? 'text-secondary' : 'text-on-surface'}`}>
+                    {/* Mobile: score + time stacked right */}
+                    <div className="flex flex-col items-end flex-shrink-0 sm:hidden">
+                      <div className={`text-[12px] font-medium ${isMe || isMemberLeader ? 'text-secondary' : 'text-on-surface'}`}>
+                        {(m.score ?? 0).toLocaleString()}
+                      </div>
+                      <div className={`text-[9px] ${inactive ? 'text-[rgba(255,140,66,0.7)]' : 'text-on-surface/40'}`}>
+                        {formatRelativeTime(m.lastActiveAt ?? m.joinedAt)}
+                      </div>
+                    </div>
+                    {/* Desktop: separate grid columns */}
+                    <div className={`hidden sm:block text-[13px] font-medium text-right ${isMe || isMemberLeader ? 'text-secondary' : 'text-on-surface'}`}>
                       {(m.score ?? 0).toLocaleString()}
                     </div>
-                    <div className="text-on-surface/40 text-[12px] text-right">— 0</div>
-                    <div className={`text-[11px] text-right ${inactive ? 'text-[rgba(255,140,66,0.7)]' : 'text-on-surface/55'}`}>
+                    <div className="hidden sm:block text-on-surface/40 text-[12px] text-right">— 0</div>
+                    <div className={`hidden sm:block text-[11px] text-right ${inactive ? 'text-[rgba(255,140,66,0.7)]' : 'text-on-surface/55'}`}>
                       {formatRelativeTime(m.lastActiveAt ?? m.joinedAt)}
                     </div>
-                    <div className="text-right flex justify-end gap-1">
+                    <div className="hidden sm:flex text-right justify-end gap-1">
                       {inactive && isLeaderOrMod && (
                         <button
                           onClick={() => alert(t('groups.remindCta'))}
