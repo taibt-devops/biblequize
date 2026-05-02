@@ -122,6 +122,15 @@ export const useAuthStore = create<AuthState>((set, get) => ({
       return
     }
 
+    // Skip refresh on /auth/callback — AuthCallback.tsx owns the OAuth code
+    // exchange flow and will populate the store itself. Running checkAuth
+    // in parallel races a stale refresh-cookie call against the fresh login,
+    // producing harmless but noisy /api/me 404s in the console.
+    if (typeof window !== 'undefined' && window.location.pathname.startsWith('/auth/callback')) {
+      set({ isLoading: false })
+      return
+    }
+
     try {
       const { api } = await import('../api/client')
       if (import.meta.env.DEV) {
@@ -159,12 +168,21 @@ export const useAuthStore = create<AuthState>((set, get) => ({
       if (import.meta.env.DEV) {
         console.log('[AUTH_STORE] Session restored, role:', normalizedRole)
       }
-    } catch {
-      // No valid session (refresh token missing or expired)
+    } catch (err: any) {
+      // No valid session (refresh token missing or expired) OR /api/me said
+      // user-not-found (404 — refresh token belonged to a user no longer in
+      // DB, e.g. account deletion / DB reset). Clear the cached profile so
+      // future page loads don't keep retrying the same dead session.
       setAccessToken(null)
+      const status = err?.response?.status
+      if (status === 404 || status === 401) {
+        localStorage.removeItem('userName')
+        localStorage.removeItem('userEmail')
+        localStorage.removeItem('userAvatar')
+      }
       set({ user: null, isAuthenticated: false, isAdmin: false })
       if (import.meta.env.DEV) {
-        console.log('[AUTH_STORE] No valid session found')
+        console.log('[AUTH_STORE] No valid session found', status ? `(${status})` : '')
       }
     } finally {
       set({ isLoading: false })
