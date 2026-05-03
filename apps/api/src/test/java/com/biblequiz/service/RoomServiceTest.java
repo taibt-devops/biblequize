@@ -82,7 +82,7 @@ class RoomServiceTest {
         });
 
         Room result = roomService.createRoom("My Room", hostUser, 4, 10, 30, Room.RoomMode.SPEED_RACE, false,
-                Room.RoomDifficulty.MIXED, "ALL", Room.QuestionSource.DATABASE);
+                Room.RoomDifficulty.MIXED, "ALL", Room.QuestionSource.DATABASE, null);
 
         assertNotNull(result.getId());
         assertNotNull(result.getRoomCode());
@@ -104,7 +104,7 @@ class RoomServiceTest {
             return Optional.of(r);
         });
 
-        Room result = roomService.createRoom("Room", hostUser, null, null, null, null, null, null, null, null);
+        Room result = roomService.createRoom("Room", hostUser, null, null, null, null, null, null, null, null, null);
 
         assertEquals(4, result.getMaxPlayers());
         assertEquals(10, result.getQuestionCount());

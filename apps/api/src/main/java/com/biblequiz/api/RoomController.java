@@ -45,6 +45,7 @@ public class RoomController {
             String difficultyStr = body.get("difficulty") instanceof String s ? s : "MIXED";
             String bookScope = body.get("bookScope") instanceof String s ? s : "ALL";
             String questionSourceStr = body.get("questionSource") instanceof String s ? s : "DATABASE";
+            String questionSetId = body.get("questionSetId") instanceof String s ? s : null;
 
             Room.RoomMode mode;
             try {
@@ -67,7 +68,7 @@ public class RoomController {
                 questionSource = Room.QuestionSource.DATABASE;
             }
 
-            Room room = roomService.createRoom(roomName, user, maxPlayers, questionCount, timePerQuestion, mode, isPublic, difficulty, bookScope, questionSource);
+            Room room = roomService.createRoom(roomName, user, maxPlayers, questionCount, timePerQuestion, mode, isPublic, difficulty, bookScope, questionSource, questionSetId);
             RoomService.RoomDetailsDTO details = roomService.getRoomDetails(room.getId());
 
             return ResponseEntity.ok(Map.of("success", true, "room", details));

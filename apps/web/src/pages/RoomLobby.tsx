@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, useRef } from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useStomp } from '../hooks/useStomp';
 import { api } from '../api/client';
@@ -16,6 +16,7 @@ type RoomDetails = {
   questionCount: number; timePerQuestion: number;
   hostId: string; hostName: string; players: Player[];
   questionSource?: 'DATABASE' | 'CUSTOM';
+  questionSetId?: string | null;
 };
 
 type UserQuestionDTO = {
@@ -304,10 +305,31 @@ const RoomLobby: React.FC = () => {
           </div>
         </div>
 
-        {/* ── Host Question Panel (CUSTOM source only) ── */}
-        {isHost && room.questionSource === 'CUSTOM' && (
+        {/* ── Question Panel (CUSTOM source only) ── */}
+        {room.questionSource === 'CUSTOM' && (
           <div className="mb-8">
-            <HostQuestionPanel roomId={room.id} />
+            {room.questionSetId ? (
+              /* Set-based: show compact banner + link to editor */
+              <div className="glass-card rounded-xl p-4 border border-secondary/20 flex items-center gap-3">
+                <span className="material-symbols-outlined text-secondary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>menu_book</span>
+                <div className="flex-1 min-w-0">
+                  <p className="text-xs font-bold text-on-surface uppercase tracking-wide">Bộ câu hỏi tuỳ chỉnh</p>
+                  <p className="text-xs text-on-surface-variant/60 mt-0.5">Câu hỏi đã được soạn sẵn từ bộ câu hỏi của host.</p>
+                </div>
+                {isHost && (
+                  <Link
+                    to={`/my-sets/${room.questionSetId}`}
+                    className="flex items-center gap-1.5 text-xs font-semibold text-secondary border border-secondary/30 px-3 py-2 rounded-lg hover:bg-secondary/10 transition-colors flex-shrink-0"
+                  >
+                    <span className="material-symbols-outlined text-sm">edit</span>
+                    Soạn câu hỏi
+                  </Link>
+                )}
+              </div>
+            ) : isHost ? (
+              /* Legacy: no set assigned, show inline panel */
+              <HostQuestionPanel roomId={room.id} />
+            ) : null}
           </div>
         )}
 

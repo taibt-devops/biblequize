@@ -74,7 +74,7 @@ class RoomControllerTest extends BaseControllerTest {
     @Order(1)
     @WithMockUser(username = "test@example.com")
     void createRoom_withValidData_shouldReturn200() throws Exception {
-        when(roomService.createRoom(anyString(), any(User.class), anyInt(), anyInt(), anyInt(), any(), anyBoolean(), any(), any(), any()))
+        when(roomService.createRoom(anyString(), any(User.class), anyInt(), anyInt(), anyInt(), any(), anyBoolean(), any(), any(), any(), any()))
                 .thenReturn(testRoom);
         when(roomService.getRoomDetails("room-1")).thenReturn(testRoomDetails);
 

@@ -55,6 +55,9 @@ public class Room {
     @Enumerated(EnumType.STRING)
     private QuestionSource questionSource = QuestionSource.DATABASE;
 
+    @Column(name = "question_set_id", length = 36)
+    private String questionSetId;
+
     @Column(name = "is_public", nullable = false)
     private Boolean isPublic = false;
 
@@ -187,6 +190,9 @@ public class Room {
 
     public QuestionSource getQuestionSource() { return questionSource; }
     public void setQuestionSource(QuestionSource questionSource) { this.questionSource = questionSource; }
+
+    public String getQuestionSetId() { return questionSetId; }
+    public void setQuestionSetId(String questionSetId) { this.questionSetId = questionSetId; }
 
     public Boolean getIsPublic() { return isPublic; }
     public void setIsPublic(Boolean isPublic) { this.isPublic = isPublic; }

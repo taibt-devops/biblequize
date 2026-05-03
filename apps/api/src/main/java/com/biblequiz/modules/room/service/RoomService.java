@@ -34,7 +34,7 @@ public class RoomService {
     public Room createRoom(String roomName, User host, Integer maxPlayers, Integer questionCount,
                            Integer timePerQuestion, Room.RoomMode mode, Boolean isPublic,
                            Room.RoomDifficulty difficulty, String bookScope,
-                           Room.QuestionSource questionSource) {
+                           Room.QuestionSource questionSource, String questionSetId) {
         String roomId = UUID.randomUUID().toString();
         String roomCode = generateRoomCode();
 
@@ -56,6 +56,9 @@ public class RoomService {
         room.setDifficulty(difficulty != null ? difficulty : Room.RoomDifficulty.MIXED);
         room.setBookScope(bookScope != null && !bookScope.isBlank() ? bookScope : "ALL");
         room.setQuestionSource(questionSource != null ? questionSource : Room.QuestionSource.DATABASE);
+        if (questionSetId != null && !questionSetId.isBlank()) {
+            room.setQuestionSetId(questionSetId);
+        }
 
         roomRepository.save(room);
 
@@ -317,6 +320,7 @@ public class RoomService {
         public final String hostId;
         public final String hostName;
         public final String questionSource;
+        public final String questionSetId;
         public final List<PlayerInfoDTO> players;
 
         public RoomDetailsDTO(Room room, List<RoomPlayer> roomPlayers) {
@@ -334,6 +338,7 @@ public class RoomService {
             this.hostName = room.getHost().getName();
             this.questionSource = room.getQuestionSource() != null
                     ? room.getQuestionSource().name() : "DATABASE";
+            this.questionSetId = room.getQuestionSetId();
 
             this.players = roomPlayers.stream()
                 .map(player -> new PlayerInfoDTO(

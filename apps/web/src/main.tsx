@@ -66,6 +66,8 @@ import { useOnboardingStore } from './store/onboardingStore'
 import OnboardingTryQuiz from './pages/OnboardingTryQuiz'
 import Journey from './pages/Journey'
 import Help from './pages/Help'
+import MySets from './pages/MySets'
+import SetEditor from './pages/SetEditor'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -148,6 +150,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                   <Route path="/rooms" element={<RequireAuth><Rooms /></RequireAuth>} />
                   <Route path="/room/create" element={<RequireAuth><CreateRoom /></RequireAuth>} />
                   <Route path="/room/join" element={<RequireAuth><JoinRoom /></RequireAuth>} />
+                  <Route path="/my-sets" element={<RequireAuth><MySets /></RequireAuth>} />
+                  <Route path="/my-sets/:setId" element={<RequireAuth><SetEditor /></RequireAuth>} />
                 </Route>
 
                 {/* Public pages (no auth) */}

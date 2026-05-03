@@ -100,6 +100,30 @@ public class UserQuestionService {
         return questionRepo.findByUserIdOrderByCreatedAtDesc(userId);
     }
 
+    public UserQuestion updateQuestion(String questionId, String userId, ManualQuestionRequest req) {
+        UserQuestion q = questionRepo.findById(questionId)
+                .orElseThrow(() -> new IllegalArgumentException("Câu hỏi không tồn tại"));
+        if (!q.getUser().getId().equals(userId)) {
+            throw new SecurityException("Không có quyền chỉnh sửa câu hỏi này");
+        }
+        if (req.options() == null || req.options().size() != 4) {
+            throw new IllegalArgumentException("Câu hỏi cần đúng 4 đáp án");
+        }
+        if (req.correctAnswer() < 0 || req.correctAnswer() > 3) {
+            throw new IllegalArgumentException("correctAnswer phải là 0-3");
+        }
+        q.setContent(req.content());
+        q.setOptions(req.options());
+        q.setCorrectAnswer(req.correctAnswer());
+        if (req.difficulty() != null) q.setDifficulty(req.difficulty());
+        q.setExplanation(req.explanation());
+        q.setBook(req.book());
+        q.setChapterStart(req.chapter());
+        q.setChapterEnd(req.chapter());
+        q.setTheme(req.theme());
+        return questionRepo.save(q);
+    }
+
     public void delete(String questionId, String userId) {
         UserQuestion q = questionRepo.findById(questionId)
                 .orElseThrow(() -> new IllegalArgumentException("Câu hỏi không tồn tại"));

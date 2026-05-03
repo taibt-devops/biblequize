@@ -11,6 +11,7 @@ import com.biblequiz.modules.room.repository.RoomPlayerRepository;
 import com.biblequiz.modules.room.repository.RoomRepository;
 import com.biblequiz.modules.room.repository.RoomRoundRepository;
 import com.biblequiz.modules.userquiz.entity.UserQuestion;
+import com.biblequiz.modules.userquiz.repository.QuestionSetItemRepository;
 import com.biblequiz.modules.userquiz.repository.RoomQuestionSelectionRepository;
 
 import org.slf4j.Logger;
@@ -38,6 +39,7 @@ public class RoomQuizService {
     @Autowired private QuestionRepository questionRepository;
     @Autowired private RoomRepository roomRepository;
     @Autowired private RoomQuestionSelectionRepository roomQuestionSelectionRepo;
+    @Autowired private QuestionSetItemRepository questionSetItemRepo;
     @Autowired private RoomWebSocketController wsController;
     @Autowired private RoomService roomService;
     @Autowired private RoomStateService roomStateService;
@@ -308,6 +310,19 @@ public class RoomQuizService {
         Room room = roomRepository.findById(roomId).orElseThrow();
 
         if (room.getQuestionSource() == Room.QuestionSource.CUSTOM) {
+            // Priority 1: QuestionSet (new)
+            if (room.getQuestionSetId() != null) {
+                List<Question> fromSet = questionSetItemRepo
+                        .findByQuestionSetIdOrderByOrderIndexAsc(room.getQuestionSetId())
+                        .stream()
+                        .map(i -> toTransientQuestion(i.getUserQuestion()))
+                        .toList();
+                if (!fromSet.isEmpty()) {
+                    log.info("[RoomQuizService] Room {} dùng {} questions từ QuestionSet {}", roomId, fromSet.size(), room.getQuestionSetId());
+                    return fromSet;
+                }
+            }
+            // Priority 2: legacy RoomQuestionSelection
             List<Question> custom = roomQuestionSelectionRepo
                     .findByRoomIdOrderByOrderIndex(roomId)
                     .stream()
@@ -315,7 +330,7 @@ public class RoomQuizService {
                     .toList();
 
             if (!custom.isEmpty()) {
-                log.info("[RoomQuizService] Room {} dùng {} custom questions", roomId, custom.size());
+                log.info("[RoomQuizService] Room {} dùng {} custom questions (legacy)", roomId, custom.size());
                 return custom;
             }
             log.warn("[RoomQuizService] Room {} questionSource=CUSTOM nhưng chưa gán câu hỏi — fallback DB", roomId);

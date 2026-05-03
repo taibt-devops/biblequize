@@ -99,6 +99,42 @@ public class UserQuestionController {
         }
     }
 
+    /** PUT /api/user-questions/{id} — edit a question (content, options, correctAnswer, etc.) */
+    @PutMapping("/{id}")
+    public ResponseEntity<?> update(@PathVariable String id,
+                                     @RequestBody Map<String, Object> body,
+                                     Principal principal) {
+        try {
+            User user = getUser(principal);
+            @SuppressWarnings("unchecked")
+            List<String> options = (List<String>) body.get("options");
+            int correctAnswer    = body.get("correctAnswer") instanceof Number n ? n.intValue() : 0;
+            String diffStr       = body.get("difficulty") instanceof String s ? s : "MIXED";
+            UserQuestion.Difficulty diff;
+            try { diff = UserQuestion.Difficulty.valueOf(diffStr.toUpperCase()); }
+            catch (Exception e) { diff = UserQuestion.Difficulty.MIXED; }
+
+            UserQuestionService.ManualQuestionRequest req = new UserQuestionService.ManualQuestionRequest(
+                    (String) body.get("content"),
+                    options,
+                    correctAnswer,
+                    diff,
+                    body.get("explanation") instanceof String s ? s : null,
+                    body.get("book") instanceof String s ? s : null,
+                    body.get("chapter") instanceof Number n ? n.intValue() : null,
+                    body.get("theme") instanceof String s ? s : null,
+                    body.get("language") instanceof String s ? s : "vi"
+            );
+
+            UserQuestion saved = service.updateQuestion(id, user.getId(), req);
+            return ResponseEntity.ok(Map.of("success", true, "question", toDTO(saved)));
+        } catch (SecurityException e) {
+            return ResponseEntity.status(403).body(Map.of("success", false, "message", e.getMessage()));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
+        }
+    }
+
     /** DELETE /api/user-questions/{id} */
     @DeleteMapping("/{id}")
     public ResponseEntity<?> delete(@PathVariable String id, Principal principal) {

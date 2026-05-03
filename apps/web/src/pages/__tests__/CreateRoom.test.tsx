@@ -1,6 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 /**
  * Phase A.1 — CreateRoom unit tests.
@@ -24,14 +25,23 @@ vi.mock('../../store/authStore', () => ({
 }))
 
 const mockApiPost = vi.fn()
+const mockApiGet = vi.fn().mockResolvedValue({ data: { sets: [], locked: [] } })
 vi.mock('../../api/client', () => ({
-  api: { post: (...args: any[]) => mockApiPost(...args) },
+  api: {
+    post: (...args: any[]) => mockApiPost(...args),
+    get: (...args: any[]) => mockApiGet(...args),
+  },
 }))
 
 import CreateRoom from '../CreateRoom'
 
 function renderCreateRoom() {
-  return render(<MemoryRouter><CreateRoom /></MemoryRouter>)
+  const qc = new QueryClient({ defaultOptions: { queries: { retry: false } } })
+  return render(
+    <QueryClientProvider client={qc}>
+      <MemoryRouter><CreateRoom /></MemoryRouter>
+    </QueryClientProvider>
+  )
 }
 
 describe('CreateRoom', () => {

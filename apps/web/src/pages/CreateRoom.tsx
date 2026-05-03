@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { getQuizLanguage } from '../utils/quizLanguage'
 import { useNavigate, Link } from 'react-router-dom'
 import { useAuth } from '../store/authStore'
+import { useQuery } from '@tanstack/react-query'
 import { api } from '../api/client'
 
 const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
@@ -47,7 +48,15 @@ export default function CreateRoom() {
     isPublic: true,
     bookScope: 'ALL',
     questionSource: 'DATABASE',
+    questionSetId: null as string | null,
   })
+
+  const { data: setsData } = useQuery({
+    queryKey: ['my-sets'],
+    queryFn: () => api.get('/api/question-sets').then(r => r.data),
+    enabled: formData.questionSource === 'CUSTOM',
+  })
+  const userSets: { id: string; name: string; questionCount: number; visibility: string }[] = setsData?.sets ?? []
 
   useEffect(() => {
     if (!isAuthenticated) navigate('/login', { replace: true })
@@ -58,7 +67,11 @@ export default function CreateRoom() {
     setLoading(true)
     setError(null)
     try {
-      const res = await api.post('/api/rooms', { ...formData, language: getQuizLanguage() })
+      const payload: Record<string, unknown> = { ...formData, language: getQuizLanguage() }
+      if (formData.questionSource !== 'CUSTOM' || !formData.questionSetId) {
+        delete payload.questionSetId
+      }
+      const res = await api.post('/api/rooms', payload)
       const room = res.data.room
       navigate(`/room/${room.id}/lobby`, { state: { room, mode: formData.mode } })
     } catch (err: any) {
@@ -196,10 +209,48 @@ export default function CreateRoom() {
               })}
             </div>
             {formData.questionSource === 'CUSTOM' && (
-              <p className="text-xs text-secondary/80 flex items-center gap-1.5">
-                <span className="material-symbols-outlined text-sm">info</span>
-                Bạn sẽ tạo câu hỏi trong phòng chờ. Số câu hỏi sẽ theo danh sách bạn tạo.
-              </p>
+              <div className="space-y-3 pt-1">
+                <div className="flex items-center justify-between">
+                  <p className="text-xs font-semibold text-on-surface-variant uppercase tracking-wide">Chọn bộ câu hỏi</p>
+                  <Link to="/my-sets" className="text-xs text-secondary flex items-center gap-1 hover:underline">
+                    <span className="material-symbols-outlined text-sm">add</span>Tạo bộ mới
+                  </Link>
+                </div>
+                {userSets.length === 0 ? (
+                  <div className="p-4 rounded-xl border border-dashed border-outline-variant/20 text-center">
+                    <p className="text-xs text-on-surface-variant/60">Chưa có bộ câu hỏi nào.</p>
+                    <Link to="/my-sets" className="text-xs text-secondary hover:underline mt-1 inline-block">Tạo bộ đầu tiên →</Link>
+                  </div>
+                ) : (
+                  <div className="space-y-2 max-h-[200px] overflow-y-auto pr-0.5">
+                    {userSets.map(set => {
+                      const active = formData.questionSetId === set.id
+                      return (
+                        <button
+                          key={set.id}
+                          type="button"
+                          onClick={() => setFormData(prev => ({ ...prev, questionSetId: active ? null : set.id }))}
+                          className={`w-full flex items-center gap-3 p-3 rounded-xl text-left transition-all border ${active ? 'border-[#f8bd45] bg-secondary/5' : 'border-outline-variant/10 hover:border-outline-variant/30'}`}
+                        >
+                          <span className="material-symbols-outlined text-lg" style={{ color: active ? '#f8bd45' : undefined, fontVariationSettings: "'FILL' 1" }}>
+                            {active ? 'check_circle' : 'menu_book'}
+                          </span>
+                          <div className="flex-1 min-w-0">
+                            <p className={`text-sm font-medium truncate ${active ? 'text-on-surface' : 'text-on-surface-variant'}`}>{set.name}</p>
+                            <p className="text-[11px] text-on-surface-variant/50">{set.questionCount} câu · {set.visibility === 'PUBLIC' ? 'Public' : 'Riêng tư'}</p>
+                          </div>
+                        </button>
+                      )
+                    })}
+                  </div>
+                )}
+                {!formData.questionSetId && userSets.length > 0 && (
+                  <p className="text-[11px] text-on-surface-variant/50 flex items-center gap-1">
+                    <span className="material-symbols-outlined text-sm">info</span>
+                    Chọn một bộ hoặc tạo mới. Số câu hỏi sẽ theo bộ đã chọn.
+                  </p>
+                )}
+              </div>
             )}
           </section>
 
