@@ -91,13 +91,13 @@ describe('CreateRoom', () => {
   // 7. Visibility toggle
   it('toggles public/private visibility', () => {
     renderCreateRoom()
-    expect(screen.getByText('Riêng tư')).toBeInTheDocument()
-    // Toggle is a button with rounded-full class inside the visibility section
+    // Default is now PUBLIC
+    expect(screen.getByText('Công khai')).toBeInTheDocument()
     const toggleBtns = document.querySelectorAll('button[type="button"]')
     const toggleBtn = Array.from(toggleBtns).find(b => b.className.includes('rounded-full') && b.className.includes('w-12'))
     expect(toggleBtn).toBeTruthy()
     fireEvent.click(toggleBtn!)
-    expect(screen.getByText('Công khai')).toBeInTheDocument()
+    expect(screen.getByText('Riêng tư')).toBeInTheDocument()
   })
 
   // 8. Submit success → navigate to lobby

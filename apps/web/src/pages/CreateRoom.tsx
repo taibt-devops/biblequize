@@ -44,7 +44,7 @@ export default function CreateRoom() {
     timePerQuestion: 15,
     difficulty: 'MIXED',
     maxPlayers: 8,
-    isPublic: false,
+    isPublic: true,
     bookScope: 'ALL',
     questionSource: 'DATABASE',
   })
@@ -291,15 +291,38 @@ export default function CreateRoom() {
             </div>
           </div>
 
+          {/* Visibility toggle — always visible */}
+          <div className="flex items-center justify-between p-4 bg-surface-container-low rounded-xl">
+            <div className="flex items-center gap-3">
+              <span className="material-symbols-outlined text-lg" style={{ color: formData.isPublic ? '#97c459' : '#e8a832', ...FILL_1 }}>
+                {formData.isPublic ? 'public' : 'lock'}
+              </span>
+              <div className="space-y-0.5">
+                <p className="text-sm font-medium text-on-surface">
+                  {formData.isPublic ? t('createRoom.isPublic') : t('createRoom.isPrivate')}
+                </p>
+                <p className="text-xs text-on-surface-variant/60">
+                  {formData.isPublic ? t('createRoom.publicDesc') : t('createRoom.privateDesc')}
+                </p>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => setFormData(prev => ({ ...prev, isPublic: !prev.isPublic }))}
+              className={`w-12 h-6 rounded-full transition-colors relative flex-shrink-0 ${formData.isPublic ? 'bg-[#97c459]' : 'bg-surface-container-highest'}`}
+            >
+              <div className={`w-4 h-4 rounded-full bg-white shadow-md absolute top-1 transition-all ${formData.isPublic ? 'right-1' : 'left-1'}`} />
+            </button>
+          </div>
+
           {/* Advanced settings (collapsible) */}
-          <div className="pt-4 border-t border-outline-variant/10">
+          <div className="border-t border-outline-variant/10 pt-4">
             <details className="group">
               <summary className="flex items-center gap-2 cursor-pointer list-none text-sm text-on-surface-variant/80 hover:text-on-surface transition-colors select-none">
                 <span className="material-symbols-outlined text-base transition-transform group-open:rotate-180">expand_more</span>
                 <span>⚙️ {t('createRoom.advanced', 'Nâng cao')}</span>
               </summary>
-
-              <div className="pt-6 space-y-6">
+              <div className="pt-6">
                 {/* Max players slider */}
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
@@ -307,36 +330,13 @@ export default function CreateRoom() {
                     <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-bold">{formData.maxPlayers}</span>
                   </div>
                   <input
-                    type="range"
-                    min={2}
-                    max={20}
-                    value={formData.maxPlayers}
+                    type="range" min={2} max={20} value={formData.maxPlayers}
                     onChange={(e) => setFormData(prev => ({ ...prev, maxPlayers: parseInt(e.target.value) }))}
                     className="w-full accent-[#e8a832] h-2 rounded-full appearance-none bg-surface-container-highest cursor-pointer"
                   />
                   <div className="flex justify-between text-[10px] text-on-surface-variant/40">
-                    <span>2</span>
-                    <span>20</span>
+                    <span>2</span><span>20</span>
                   </div>
-                </div>
-
-                {/* Visibility toggle */}
-                <div className="flex items-center justify-between p-4 bg-surface-container-low rounded-xl">
-                  <div className="space-y-1">
-                    <p className="text-sm font-medium text-on-surface">
-                      {formData.isPublic ? t('createRoom.isPublic') : t('createRoom.isPrivate')}
-                    </p>
-                    <p className="text-xs text-on-surface-variant/60">
-                      {formData.isPublic ? t('createRoom.publicDesc') : t('createRoom.privateDesc')}
-                    </p>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => setFormData(prev => ({ ...prev, isPublic: !prev.isPublic }))}
-                    className={`w-12 h-6 rounded-full transition-colors relative flex-shrink-0 ${formData.isPublic ? 'bg-secondary' : 'bg-surface-container-highest'}`}
-                  >
-                    <div className={`w-4 h-4 rounded-full bg-white shadow-md absolute top-1 transition-transform ${formData.isPublic ? 'right-1' : 'left-1'}`} />
-                  </button>
                 </div>
               </div>
             </details>
