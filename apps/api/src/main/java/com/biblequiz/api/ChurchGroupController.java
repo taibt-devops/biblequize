@@ -10,6 +10,9 @@ import com.biblequiz.modules.group.repository.GroupQuizSetRepository;
 import com.biblequiz.modules.group.service.ChurchGroupService;
 import com.biblequiz.modules.quiz.entity.Question;
 import com.biblequiz.modules.quiz.repository.QuestionRepository;
+import com.biblequiz.modules.room.entity.Room;
+import com.biblequiz.modules.room.repository.RoomRepository;
+import com.biblequiz.modules.room.service.RoomService;
 import com.biblequiz.modules.user.entity.User;
 import com.biblequiz.modules.user.repository.UserRepository;
 
@@ -48,6 +51,12 @@ public class ChurchGroupController {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private RoomService roomService;
+
+    @Autowired
+    private RoomRepository roomRepository;
 
     /**
      * POST /api/groups - Tao nhom moi
@@ -472,6 +481,55 @@ public class ChurchGroupController {
             result.put("questionCount", savedIds.size());
             result.put("createdAt", qs.getCreatedAt());
             return ResponseEntity.ok(Map.of("success", true, "quizSet", result));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.status(403).body(Map.of("success", false, "message", e.getMessage()));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
+        }
+    }
+
+    /**
+     * POST /api/groups/{groupId}/quiz-sets/{setId}/play
+     * Creates a room pre-loaded with the group quiz set's questions.
+     * Any group member can initiate. Returns room id + code to navigate to lobby.
+     */
+    @PostMapping("/{groupId}/quiz-sets/{setId}/play")
+    @Transactional
+    @SuppressWarnings("unchecked")
+    public ResponseEntity<?> playQuizSet(@PathVariable String groupId,
+                                          @PathVariable String setId,
+                                          Principal principal) {
+        try {
+            User user = getUser(principal);
+            groupMemberRepository.findByGroupIdAndUserId(groupId, user.getId())
+                    .orElseThrow(() -> new IllegalArgumentException("Ban khong phai thanh vien cua nhom nay"));
+
+            GroupQuizSet gqs = groupQuizSetRepository.findById(setId)
+                    .orElseThrow(() -> new RuntimeException("Khong tim thay quiz set"));
+            if (!gqs.getGroup().getId().equals(groupId)) {
+                return ResponseEntity.status(403).body(Map.of("success", false, "message", "Quiz set khong thuoc nhom nay"));
+            }
+
+            List<String> questionIds = (List<String>) gqs.getQuestionIds();
+            if (questionIds == null || questionIds.isEmpty()) {
+                return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Quiz set chua co cau hoi nao"));
+            }
+
+            Room room = roomService.createRoom(
+                    gqs.getName(), user,
+                    8, questionIds.size(), 15,
+                    Room.RoomMode.SPEED_RACE, false,
+                    Room.RoomDifficulty.MIXED, "ALL",
+                    Room.QuestionSource.CUSTOM, null);
+
+            room.setCustomQuestionIds(questionIds);
+            roomRepository.save(room);
+
+            Map<String, Object> roomInfo = new LinkedHashMap<>();
+            roomInfo.put("id", room.getId());
+            roomInfo.put("roomCode", room.getRoomCode());
+            roomInfo.put("roomName", room.getRoomName());
+            return ResponseEntity.ok(Map.of("success", true, "room", roomInfo));
         } catch (IllegalArgumentException e) {
             return ResponseEntity.status(403).body(Map.of("success", false, "message", e.getMessage()));
         } catch (Exception e) {

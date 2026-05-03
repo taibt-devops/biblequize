@@ -157,24 +157,35 @@ describe('Room Lobby — chat', () => {
   })
 })
 
-describe('Room Lobby — host question panel', () => {
-  const mockRoomCustom = {
+describe('Room Lobby — question set banner', () => {
+  const mockRoomCustomWithSet = {
     ...mockRoom,
     questionSource: 'CUSTOM',
-    hostId: 'host-1', // matches userName "WS Host" (see beforeEach: localStorage userName = 'WS Host')
+    questionSetId: 'set-abc',
+    hostId: 'host-1',
     players: [
       { id: 'p1', userId: 'host-1', username: 'WS Host', isReady: false, score: 0 },
     ],
   }
 
-  async function renderCustomLobby() {
+  const mockRoomCustomNoSet = {
+    ...mockRoom,
+    questionSource: 'CUSTOM',
+    questionSetId: null,
+    hostId: 'host-1',
+    players: [
+      { id: 'p1', userId: 'host-1', username: 'WS Host', isReady: false, score: 0 },
+    ],
+  }
+
+  async function renderRoomLobby(room: object) {
     const RoomLobby = (await import('../RoomLobby')).default
     vi.stubGlobal('fetch', vi.fn(() => Promise.resolve({
       ok: true,
-      json: () => Promise.resolve({ success: true, room: mockRoomCustom }),
+      json: () => Promise.resolve({ success: true, room }),
     } as Response)))
     return render(
-      <MemoryRouter initialEntries={[{ pathname: '/room/room-1', state: { room: mockRoomCustom } }]}>
+      <MemoryRouter initialEntries={[{ pathname: '/room/room-1', state: { room } }]}>
         <Routes>
           <Route path="/room/:roomId" element={<RoomLobby />} />
         </Routes>
@@ -182,42 +193,26 @@ describe('Room Lobby — host question panel', () => {
     )
   }
 
-  it('shows host question panel for CUSTOM source when user is host', async () => {
-    await renderCustomLobby()
-    expect(await screen.findByTestId('host-question-panel')).toBeInTheDocument()
+  it('shows set banner when CUSTOM source with questionSetId (host)', async () => {
+    await renderRoomLobby(mockRoomCustomWithSet)
+    expect(await screen.findByText(/Soạn câu hỏi/i)).toBeInTheDocument()
   })
 
-  it('does NOT show host question panel for DATABASE source', async () => {
-    await renderLobby() // uses mockRoom with no questionSource (DATABASE)
-    await screen.findByPlaceholderText(/Nhắn tin/i) // wait for render
-    expect(screen.queryByTestId('host-question-panel')).not.toBeInTheDocument()
+  it('does NOT show set banner when CUSTOM source without questionSetId', async () => {
+    await renderRoomLobby(mockRoomCustomNoSet)
+    await screen.findByPlaceholderText(/Nhắn tin/i)
+    expect(screen.queryByText(/Soạn câu hỏi/i)).not.toBeInTheDocument()
   })
 
-  it('switches to Manual tab and shows question textarea', async () => {
-    await renderCustomLobby()
-    await screen.findByTestId('host-question-panel')
-    fireEvent.click(screen.getByText('Thủ công'))
-    expect(await screen.findByPlaceholderText('Nhập câu hỏi...')).toBeInTheDocument()
+  it('does NOT show set banner for DATABASE source', async () => {
+    await renderLobby()
+    await screen.findByPlaceholderText(/Nhắn tin/i)
+    expect(screen.queryByText(/Soạn câu hỏi/i)).not.toBeInTheDocument()
   })
 
-  it('switches to Assigned tab and shows empty state', async () => {
-    await renderCustomLobby()
-    await screen.findByTestId('host-question-panel')
-    fireEvent.click(screen.getByText('Đã gán'))
-    expect(await screen.findByText(/Chưa có câu hỏi/i)).toBeInTheDocument()
-  })
-
-  it('AI generate button calls /api/user-questions/generate', async () => {
-    mockApiPost.mockResolvedValueOnce({
-      data: { success: true, generated: 3, questions: [
-        { id: 'q1', content: 'Q1', options: ['A','B','C','D'], correctAnswer: 0, difficulty: 'MEDIUM', source: 'AI', book: '', chapter: 0, explanation: '', theme: '' },
-      ] }
-    })
-    await renderCustomLobby()
-    await screen.findByTestId('host-question-panel')
-    fireEvent.click(screen.getByText(/Tạo với AI/i))
-    await waitFor(() => {
-      expect(mockApiPost).toHaveBeenCalledWith('/api/user-questions/generate', expect.any(Object))
-    })
+  it('set banner links to /my-sets/:questionSetId for host', async () => {
+    await renderRoomLobby(mockRoomCustomWithSet)
+    const link = (await screen.findByText(/Soạn câu hỏi/i)).closest('a')
+    expect(link).toHaveAttribute('href', '/my-sets/set-abc')
   })
 })

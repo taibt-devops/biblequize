@@ -1,6 +1,7 @@
 package com.biblequiz.modules.room.entity;
 
 import com.biblequiz.modules.user.entity.User;
+import com.biblequiz.shared.converter.JsonListConverter;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -57,6 +58,10 @@ public class Room {
 
     @Column(name = "question_set_id", length = 36)
     private String questionSetId;
+
+    @Convert(converter = JsonListConverter.class)
+    @Column(name = "custom_question_ids", columnDefinition = "JSON")
+    private List<String> customQuestionIds;
 
     @Column(name = "is_public", nullable = false)
     private Boolean isPublic = false;
@@ -193,6 +198,9 @@ public class Room {
 
     public String getQuestionSetId() { return questionSetId; }
     public void setQuestionSetId(String questionSetId) { this.questionSetId = questionSetId; }
+
+    public List<String> getCustomQuestionIds() { return customQuestionIds; }
+    public void setCustomQuestionIds(List<String> customQuestionIds) { this.customQuestionIds = customQuestionIds; }
 
     public Boolean getIsPublic() { return isPublic; }
     public void setIsPublic(Boolean isPublic) { this.isPublic = isPublic; }

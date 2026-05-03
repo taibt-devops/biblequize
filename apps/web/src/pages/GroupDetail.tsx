@@ -43,6 +43,7 @@ interface Announcement {
 interface QuizSet {
   id: string;
   name: string;
+  questionIds?: string[];
   questionCount: number;
   createdAt: string;
 }
@@ -127,6 +128,7 @@ const GroupDetail: React.FC = () => {
   // Quiz Sets
   const [quizSets, setQuizSets] = useState<QuizSet[]>([]);
   const [quizSetsLoading, setQuizSetsLoading] = useState(false);
+  const [playingSetId, setPlayingSetId] = useState<string | null>(null);
 
   // Create quiz set modal — 2 tabs: AI Generate + Manual
   type QsTab = 'ai' | 'manual';
@@ -331,11 +333,31 @@ const GroupDetail: React.FC = () => {
     try {
       const res = await api.get(`/api/groups/${id}/quiz-sets`);
       if (res.data.success) {
-        setQuizSets(res.data.quizSets || []);
+        const sets = (res.data.quizSets || []).map((qs: any) => ({
+          ...qs,
+          questionCount: Array.isArray(qs.questionIds) ? qs.questionIds.length : (qs.questionCount ?? 0),
+        }));
+        setQuizSets(sets);
       }
     } catch { /* ignore */ }
     finally { setQuizSetsLoading(false); }
   }, [id]);
+
+  const handlePlayQuizSet = useCallback(async (setId: string) => {
+    if (playingSetId) return;
+    setPlayingSetId(setId);
+    try {
+      const res = await api.post(`/api/groups/${id}/quiz-sets/${setId}/play`);
+      if (res.data.success && res.data.room?.id) {
+        navigate(`/room/${res.data.room.id}/lobby`);
+      }
+    } catch (err: any) {
+      const msg = err?.response?.data?.message || 'Không thể tạo phòng';
+      alert(msg);
+    } finally {
+      setPlayingSetId(null);
+    }
+  }, [id, navigate, playingSetId]);
 
   useEffect(() => { fetchGroup(); }, [fetchGroup]);
 
@@ -1135,13 +1157,15 @@ const GroupDetail: React.FC = () => {
                       </div>
                     </div>
                     <button
-                      className={`rounded-md px-3 py-1.5 text-[11px] font-medium cursor-pointer transition-all ${
+                      onClick={() => handlePlayQuizSet(qs.id)}
+                      disabled={playingSetId === qs.id}
+                      className={`rounded-md px-3 py-1.5 text-[11px] font-medium cursor-pointer transition-all disabled:opacity-50 disabled:cursor-not-allowed ${
                         isNew
                           ? 'bg-secondary text-on-secondary hover:brightness-110'
                           : 'bg-white/5 text-on-surface/70 border-[0.5px] border-white/10 hover:bg-white/10'
                       }`}
                     >
-                      {isNew ? t('groups.play') : t('groups.playAgain')}
+                      {playingSetId === qs.id ? '...' : isNew ? t('groups.play') : t('groups.playAgain')}
                     </button>
                   </div>
                 );

@@ -20,6 +20,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
+import org.springframework.data.domain.PageRequest;
+
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
@@ -303,14 +305,25 @@ public class RoomQuizService {
 
     /**
      * Load questions for a room.
-     * - CUSTOM: dùng câu hỏi host đã tạo (AI/manual), fallback DB nếu chưa có.
-     * - DATABASE (default): lấy ngẫu nhiên từ hệ thống.
+     * Priority 0: customQuestionIds on room (group quiz sets, direct IDs)
+     * Priority 1: QuestionSet items (personal sets)
+     * Priority 2: legacy RoomQuestionSelection
+     * Fallback: random from Question DB by scope/difficulty
      */
     private List<Question> loadQuestionsForRoom(String roomId, int questionCount) {
         Room room = roomRepository.findById(roomId).orElseThrow();
 
+        // Priority 0: direct question IDs stored on room (e.g., from group quiz set)
+        if (room.getCustomQuestionIds() != null && !room.getCustomQuestionIds().isEmpty()) {
+            List<Question> byIds = questionRepository.findAllById(room.getCustomQuestionIds());
+            if (!byIds.isEmpty()) {
+                log.info("[RoomQuizService] Room {} dùng {} questions từ customQuestionIds", roomId, byIds.size());
+                return byIds;
+            }
+        }
+
         if (room.getQuestionSource() == Room.QuestionSource.CUSTOM) {
-            // Priority 1: QuestionSet (new)
+            // Priority 1: QuestionSet (personal sets)
             if (room.getQuestionSetId() != null) {
                 List<Question> fromSet = questionSetItemRepo
                         .findByQuestionSetIdOrderByOrderIndexAsc(room.getQuestionSetId())
@@ -328,7 +341,6 @@ public class RoomQuizService {
                     .stream()
                     .map(s -> toTransientQuestion(s.getUserQuestion()))
                     .toList();
-
             if (!custom.isEmpty()) {
                 log.info("[RoomQuizService] Room {} dùng {} custom questions (legacy)", roomId, custom.size());
                 return custom;
@@ -336,7 +348,28 @@ public class RoomQuizService {
             log.warn("[RoomQuizService] Room {} questionSource=CUSTOM nhưng chưa gán câu hỏi — fallback DB", roomId);
         }
 
-        return loadQuestionsForRoom(roomId, questionCount);
+        return loadQuestionsFromDatabase(room, questionCount);
+    }
+
+    private List<Question> loadQuestionsFromDatabase(Room room, int questionCount) {
+        String scope = room.getBookScope() != null ? room.getBookScope() : "ALL";
+        Room.RoomDifficulty diff = room.getDifficulty() != null ? room.getDifficulty() : Room.RoomDifficulty.MIXED;
+        PageRequest page = PageRequest.of(0, questionCount);
+        List<String> empty = List.of();
+
+        boolean isSpecificBook = !"ALL".equals(scope) && !scope.endsWith("_TESTAMENT") && !"GOSPELS".equals(scope);
+
+        if (diff != Room.RoomDifficulty.MIXED) {
+            Question.Difficulty qDiff = Question.Difficulty.valueOf(diff.name());
+            if (isSpecificBook) {
+                return questionRepository.findRandomQuestionsByBookAndDifficultyExcludingIds(scope, qDiff, empty, page);
+            }
+            return questionRepository.findRandomQuestionsByDifficultyExcludingIds(qDiff, empty, page);
+        }
+        if (isSpecificBook) {
+            return questionRepository.findRandomQuestionsByBookExcludingIds(scope, empty, page);
+        }
+        return questionRepository.findRandomQuestionsNative(questionCount);
     }
 
     /** Chuyển UserQuestion thành Question transient (không lưu DB) để dùng trong quiz flow. */
