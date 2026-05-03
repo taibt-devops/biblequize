@@ -46,6 +46,7 @@ services:
       CORS_ORIGINS: https://www.quize.top,https://quize.top,https://be.quize.top
       GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
       GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
+      GEMINI_API_KEY: ${GEMINI_API_KEY}
       SERVER_SERVLET_SESSION_COOKIE_DOMAIN: quize.top
       SERVER_SERVLET_SESSION_COOKIE_SECURE: "true"
       SERVER_SERVLET_SESSION_COOKIE_SAME_SITE: lax
