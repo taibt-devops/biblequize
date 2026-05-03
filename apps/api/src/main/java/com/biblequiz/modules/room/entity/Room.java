@@ -39,10 +39,21 @@ public class Room {
     @Column(name = "status", nullable = false)
     @Enumerated(EnumType.STRING)
     private RoomStatus status = RoomStatus.LOBBY;
-    
+
     @Column(name = "mode", nullable = false)
     @Enumerated(EnumType.STRING)
     private RoomMode mode = RoomMode.SPEED_RACE;
+
+    @Column(name = "difficulty")
+    @Enumerated(EnumType.STRING)
+    private RoomDifficulty difficulty = RoomDifficulty.MIXED;
+
+    @Column(name = "book_scope", length = 100)
+    private String bookScope = "ALL";
+
+    @Column(name = "question_source", nullable = false, length = 20)
+    @Enumerated(EnumType.STRING)
+    private QuestionSource questionSource = QuestionSource.DATABASE;
 
     @Column(name = "is_public", nullable = false)
     private Boolean isPublic = false;
@@ -82,6 +93,15 @@ public class Room {
         BATTLE_ROYALE,
         TEAM_VS_TEAM,
         SUDDEN_DEATH
+    }
+
+    public enum RoomDifficulty {
+        EASY, MEDIUM, HARD, MIXED
+    }
+
+    public enum QuestionSource {
+        DATABASE,   // Dùng ngân hàng câu hỏi hệ thống
+        CUSTOM      // Host tự tạo (AI hoặc thủ công)
     }
     
     // Constructors
@@ -158,6 +178,15 @@ public class Room {
 
     public RoomMode getMode() { return mode; }
     public void setMode(RoomMode mode) { this.mode = mode; }
+
+    public RoomDifficulty getDifficulty() { return difficulty; }
+    public void setDifficulty(RoomDifficulty difficulty) { this.difficulty = difficulty; }
+
+    public String getBookScope() { return bookScope; }
+    public void setBookScope(String bookScope) { this.bookScope = bookScope; }
+
+    public QuestionSource getQuestionSource() { return questionSource; }
+    public void setQuestionSource(QuestionSource questionSource) { this.questionSource = questionSource; }
 
     public Boolean getIsPublic() { return isPublic; }
     public void setIsPublic(Boolean isPublic) { this.isPublic = isPublic; }

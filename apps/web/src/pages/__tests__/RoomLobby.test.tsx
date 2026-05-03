@@ -20,6 +20,17 @@ vi.mock('../../hooks/useStomp', () => ({
   },
 }))
 
+const mockApiGet = vi.fn()
+const mockApiPost = vi.fn()
+const mockApiDelete = vi.fn()
+vi.mock('../../api/client', () => ({
+  api: {
+    get: (...args: any[]) => mockApiGet(...args),
+    post: (...args: any[]) => mockApiPost(...args),
+    delete: (...args: any[]) => mockApiDelete(...args),
+  },
+}))
+
 const mockNavigate = vi.fn()
 vi.mock('react-router-dom', async () => {
   const actual = await vi.importActual<typeof import('react-router-dom')>('react-router-dom')
@@ -60,6 +71,10 @@ beforeEach(() => {
       } as Response),
     ),
   )
+  // Default api mock: no questions assigned
+  mockApiGet.mockResolvedValue({ data: { success: true, questions: [] } })
+  mockApiPost.mockResolvedValue({ data: { success: true, questions: [], assigned: 0, generated: 0, question: null } })
+  mockApiDelete.mockResolvedValue({ data: { success: true } })
 })
 
 afterEach(() => {
@@ -139,5 +154,70 @@ describe('Room Lobby — chat', () => {
     fireEvent.keyDown(input, { key: 'Enter' })
 
     await waitFor(() => expect(input.value).toBe(''))
+  })
+})
+
+describe('Room Lobby — host question panel', () => {
+  const mockRoomCustom = {
+    ...mockRoom,
+    questionSource: 'CUSTOM',
+    hostId: 'host-1', // matches userName "WS Host" (see beforeEach: localStorage userName = 'WS Host')
+    players: [
+      { id: 'p1', userId: 'host-1', username: 'WS Host', isReady: false, score: 0 },
+    ],
+  }
+
+  async function renderCustomLobby() {
+    const RoomLobby = (await import('../RoomLobby')).default
+    vi.stubGlobal('fetch', vi.fn(() => Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve({ success: true, room: mockRoomCustom }),
+    } as Response)))
+    return render(
+      <MemoryRouter initialEntries={[{ pathname: '/room/room-1', state: { room: mockRoomCustom } }]}>
+        <Routes>
+          <Route path="/room/:roomId" element={<RoomLobby />} />
+        </Routes>
+      </MemoryRouter>,
+    )
+  }
+
+  it('shows host question panel for CUSTOM source when user is host', async () => {
+    await renderCustomLobby()
+    expect(await screen.findByTestId('host-question-panel')).toBeInTheDocument()
+  })
+
+  it('does NOT show host question panel for DATABASE source', async () => {
+    await renderLobby() // uses mockRoom with no questionSource (DATABASE)
+    await screen.findByPlaceholderText(/Nhắn tin/i) // wait for render
+    expect(screen.queryByTestId('host-question-panel')).not.toBeInTheDocument()
+  })
+
+  it('switches to Manual tab and shows question textarea', async () => {
+    await renderCustomLobby()
+    await screen.findByTestId('host-question-panel')
+    fireEvent.click(screen.getByText('Thủ công'))
+    expect(await screen.findByPlaceholderText('Nhập câu hỏi...')).toBeInTheDocument()
+  })
+
+  it('switches to Assigned tab and shows empty state', async () => {
+    await renderCustomLobby()
+    await screen.findByTestId('host-question-panel')
+    fireEvent.click(screen.getByText('Đã gán'))
+    expect(await screen.findByText(/Chưa có câu hỏi/i)).toBeInTheDocument()
+  })
+
+  it('AI generate button calls /api/user-questions/generate', async () => {
+    mockApiPost.mockResolvedValueOnce({
+      data: { success: true, generated: 3, questions: [
+        { id: 'q1', content: 'Q1', options: ['A','B','C','D'], correctAnswer: 0, difficulty: 'MEDIUM', source: 'AI', book: '', chapter: 0, explanation: '', theme: '' },
+      ] }
+    })
+    await renderCustomLobby()
+    await screen.findByTestId('host-question-panel')
+    fireEvent.click(screen.getByText(/Tạo với AI/i))
+    await waitFor(() => {
+      expect(mockApiPost).toHaveBeenCalledWith('/api/user-questions/generate', expect.any(Object))
+    })
   })
 })

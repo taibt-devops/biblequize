@@ -8,7 +8,10 @@ import com.biblequiz.modules.room.entity.Room;
 import com.biblequiz.modules.room.entity.RoomPlayer;
 import com.biblequiz.modules.room.entity.RoomRound;
 import com.biblequiz.modules.room.repository.RoomPlayerRepository;
+import com.biblequiz.modules.room.repository.RoomRepository;
 import com.biblequiz.modules.room.repository.RoomRoundRepository;
+import com.biblequiz.modules.userquiz.entity.UserQuestion;
+import com.biblequiz.modules.userquiz.repository.RoomQuestionSelectionRepository;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,6 +36,8 @@ public class RoomQuizService {
     private static final Logger log = LoggerFactory.getLogger(RoomQuizService.class);
 
     @Autowired private QuestionRepository questionRepository;
+    @Autowired private RoomRepository roomRepository;
+    @Autowired private RoomQuestionSelectionRepository roomQuestionSelectionRepo;
     @Autowired private RoomWebSocketController wsController;
     @Autowired private RoomService roomService;
     @Autowired private RoomStateService roomStateService;
@@ -72,7 +77,7 @@ public class RoomQuizService {
     // ────────────────────────────── SPEED RACE ──────────────────────────────
 
     private void runSpeedRace(String roomId, int questionCount, int timePerQuestion) throws InterruptedException {
-        List<Question> questions = questionRepository.findRandomQuestionsNative(questionCount);
+        List<Question> questions = loadQuestionsForRoom(roomId, questionCount);
         if (questions.isEmpty()) {
             roomService.endRoom(roomId);
             wsController.broadcastQuizEnd(roomId, List.of());
@@ -103,7 +108,7 @@ public class RoomQuizService {
     // ────────────────────────────── BATTLE ROYALE ──────────────────────────────
 
     private void runBattleRoyale(String roomId, int questionCount, int timePerQuestion) throws InterruptedException {
-        List<Question> questions = questionRepository.findRandomQuestionsNative(questionCount);
+        List<Question> questions = loadQuestionsForRoom(roomId, questionCount);
         if (questions.isEmpty()) {
             roomService.endRoom(roomId);
             wsController.broadcastQuizEnd(roomId, List.of());
@@ -159,7 +164,7 @@ public class RoomQuizService {
     // ────────────────────────────── TEAM VS TEAM ──────────────────────────────
 
     private void runTeamVsTeam(String roomId, int questionCount, int timePerQuestion) throws InterruptedException {
-        List<Question> questions = questionRepository.findRandomQuestionsNative(questionCount);
+        List<Question> questions = loadQuestionsForRoom(roomId, questionCount);
         if (questions.isEmpty()) {
             roomService.endRoom(roomId);
             wsController.broadcastQuizEnd(roomId, List.of());
@@ -218,7 +223,7 @@ public class RoomQuizService {
     // ────────────────────────────── SUDDEN DEATH ──────────────────────────────
 
     private void runSuddenDeath(String roomId, int questionCount, int timePerQuestion) throws InterruptedException {
-        List<Question> questions = questionRepository.findRandomQuestionsNative(questionCount);
+        List<Question> questions = loadQuestionsForRoom(roomId, questionCount);
         if (questions.isEmpty()) {
             roomService.endRoom(roomId);
             wsController.broadcastQuizEnd(roomId, List.of());
@@ -294,6 +299,47 @@ public class RoomQuizService {
         return roomRoundRepository.save(round);
     }
 
+    /**
+     * Load questions for a room.
+     * - CUSTOM: dùng câu hỏi host đã tạo (AI/manual), fallback DB nếu chưa có.
+     * - DATABASE (default): lấy ngẫu nhiên từ hệ thống.
+     */
+    private List<Question> loadQuestionsForRoom(String roomId, int questionCount) {
+        Room room = roomRepository.findById(roomId).orElseThrow();
+
+        if (room.getQuestionSource() == Room.QuestionSource.CUSTOM) {
+            List<Question> custom = roomQuestionSelectionRepo
+                    .findByRoomIdOrderByOrderIndex(roomId)
+                    .stream()
+                    .map(s -> toTransientQuestion(s.getUserQuestion()))
+                    .toList();
+
+            if (!custom.isEmpty()) {
+                log.info("[RoomQuizService] Room {} dùng {} custom questions", roomId, custom.size());
+                return custom;
+            }
+            log.warn("[RoomQuizService] Room {} questionSource=CUSTOM nhưng chưa gán câu hỏi — fallback DB", roomId);
+        }
+
+        return loadQuestionsForRoom(roomId, questionCount);
+    }
+
+    /** Chuyển UserQuestion thành Question transient (không lưu DB) để dùng trong quiz flow. */
+    private Question toTransientQuestion(UserQuestion uq) {
+        Question q = new Question();
+        q.setId(uq.getId());
+        q.setContent(uq.getContent());
+        q.setOptions(uq.getOptions());
+        q.setCorrectAnswer(List.of(uq.getCorrectAnswer()));
+        q.setExplanation(uq.getExplanation());
+        q.setBook(uq.getBook() != null ? uq.getBook() : "");
+        q.setChapter(uq.getChapterStart() != null ? uq.getChapterStart() : 0);
+        q.setVerseStart(uq.getVerseStart() != null ? uq.getVerseStart() : 0);
+        q.setVerseEnd(uq.getVerseEnd()   != null ? uq.getVerseEnd()   : 0);
+        q.setLanguage(uq.getLanguage() != null ? uq.getLanguage() : "vi");
+        return q;
+    }
+
     private Map<String, Object> buildQuestionDto(Question q) {
         Map<String, Object> dto = new HashMap<>();
         dto.put("id", q.getId());
@@ -302,6 +348,20 @@ public class RoomQuizService {
         dto.put("type", q.getType() != null ? q.getType().name() : "multiple_choice_single");
         dto.put("book", q.getBook());
         dto.put("chapter", q.getChapter());
+        dto.put("correctAnswer", q.getCorrectAnswer() != null && !q.getCorrectAnswer().isEmpty()
+                ? q.getCorrectAnswer().get(0) : 0);
+        return dto;
+    }
+
+    private Map<String, Object> buildQuestionDtoFromUserQuestion(UserQuestion q) {
+        Map<String, Object> dto = new HashMap<>();
+        dto.put("id", q.getId());
+        dto.put("content", q.getContent());
+        dto.put("options", q.getOptions());
+        dto.put("type", "multiple_choice_single");
+        dto.put("book", q.getBook() != null ? q.getBook() : "");
+        dto.put("chapter", q.getChapterStart() != null ? q.getChapterStart() : 0);
+        dto.put("correctAnswer", q.getCorrectAnswer());
         return dto;
     }
 

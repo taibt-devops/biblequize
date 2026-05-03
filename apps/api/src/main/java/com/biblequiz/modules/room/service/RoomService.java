@@ -32,7 +32,9 @@ public class RoomService {
      * Create a new room
      */
     public Room createRoom(String roomName, User host, Integer maxPlayers, Integer questionCount,
-                           Integer timePerQuestion, Room.RoomMode mode, Boolean isPublic) {
+                           Integer timePerQuestion, Room.RoomMode mode, Boolean isPublic,
+                           Room.RoomDifficulty difficulty, String bookScope,
+                           Room.QuestionSource questionSource) {
         String roomId = UUID.randomUUID().toString();
         String roomCode = generateRoomCode();
 
@@ -51,6 +53,9 @@ public class RoomService {
         room.setStatus(Room.RoomStatus.LOBBY);
         room.setMode(mode != null ? mode : Room.RoomMode.SPEED_RACE);
         room.setIsPublic(isPublic != null ? isPublic : false);
+        room.setDifficulty(difficulty != null ? difficulty : Room.RoomDifficulty.MIXED);
+        room.setBookScope(bookScope != null && !bookScope.isBlank() ? bookScope : "ALL");
+        room.setQuestionSource(questionSource != null ? questionSource : Room.QuestionSource.DATABASE);
 
         roomRepository.save(room);
 
@@ -265,13 +270,22 @@ public class RoomService {
             .collect(Collectors.toList());
     }
 
+    private static final List<String> TEST_ROOM_PREFIXES = List.of("WS Test", "E2E Test", "[TEST]", "[test]");
+
+    private boolean isTestRoom(Room room) {
+        return TEST_ROOM_PREFIXES.stream().anyMatch(prefix -> room.getRoomName().startsWith(prefix));
+    }
+
     /**
-     * Get public lobby rooms (Speed Race, Team vs Team)
+     * Get public lobby rooms (all modes), filtered of test rooms
      */
     public List<PublicRoomDTO> getPublicRooms() {
         return roomRepository.findPublicLobbyRooms().stream()
-            .map(r -> new PublicRoomDTO(r.getId(), r.getRoomCode(), r.getRoomName(),
-                    r.getMode(), r.getCurrentPlayers(), r.getMaxPlayers()))
+            .filter(r -> !isTestRoom(r))
+            .map(r -> {
+                List<RoomPlayer> players = roomPlayerRepository.findByRoomId(r.getId());
+                return new PublicRoomDTO(r, players);
+            })
             .collect(Collectors.toList());
     }
 
@@ -302,6 +316,7 @@ public class RoomService {
         public final Integer timePerQuestion;
         public final String hostId;
         public final String hostName;
+        public final String questionSource;
         public final List<PlayerInfoDTO> players;
 
         public RoomDetailsDTO(Room room, List<RoomPlayer> roomPlayers) {
@@ -317,6 +332,8 @@ public class RoomService {
             this.timePerQuestion = room.getTimePerQuestion();
             this.hostId = room.getHost().getId();
             this.hostName = room.getHost().getName();
+            this.questionSource = room.getQuestionSource() != null
+                    ? room.getQuestionSource().name() : "DATABASE";
 
             this.players = roomPlayers.stream()
                 .map(player -> new PlayerInfoDTO(
@@ -388,17 +405,38 @@ public class RoomService {
         public final String roomCode;
         public final String roomName;
         public final Room.RoomMode mode;
+        public final Room.RoomStatus status;
+        public final Boolean isPublic;
         public final Integer currentPlayers;
         public final Integer maxPlayers;
+        public final Integer questionCount;
+        public final Integer timePerQuestion;
+        public final Room.RoomDifficulty difficulty;
+        public final String bookScope;
+        public final String hostName;
+        public final String createdAt;
+        public final List<String> playerInitials;
 
-        public PublicRoomDTO(String id, String roomCode, String roomName,
-                             Room.RoomMode mode, Integer currentPlayers, Integer maxPlayers) {
-            this.id = id;
-            this.roomCode = roomCode;
-            this.roomName = roomName;
-            this.mode = mode;
-            this.currentPlayers = currentPlayers;
-            this.maxPlayers = maxPlayers;
+        public PublicRoomDTO(Room room, List<RoomPlayer> players) {
+            this.id = room.getId();
+            this.roomCode = room.getRoomCode();
+            this.roomName = room.getRoomName();
+            this.mode = room.getMode();
+            this.status = room.getStatus();
+            this.isPublic = room.getIsPublic();
+            this.currentPlayers = room.getCurrentPlayers();
+            this.maxPlayers = room.getMaxPlayers();
+            this.questionCount = room.getQuestionCount();
+            this.timePerQuestion = room.getTimePerQuestion();
+            this.difficulty = room.getDifficulty();
+            this.bookScope = room.getBookScope();
+            this.hostName = room.getHost() != null ? room.getHost().getName() : null;
+            this.createdAt = room.getCreatedAt() != null ? room.getCreatedAt().toString() : null;
+            this.playerInitials = players.stream()
+                .map(p -> p.getUsername() != null && !p.getUsername().isEmpty()
+                    ? p.getUsername().substring(0, 1).toUpperCase()
+                    : "?")
+                .collect(Collectors.toList());
         }
     }
 }

@@ -60,7 +60,7 @@ describe('CreateRoom', () => {
     renderCreateRoom()
     const brBtn = screen.getByText('Sinh tồn').closest('button')!
     fireEvent.click(brBtn)
-    expect(brBtn.className).toContain('border-secondary')
+    expect(brBtn).toHaveAttribute('aria-pressed', 'true')
   })
 
   // 4. Segmented controls — question count
@@ -68,7 +68,7 @@ describe('CreateRoom', () => {
     renderCreateRoom()
     const btn20 = screen.getAllByText('20')[0] // question count 20
     fireEvent.click(btn20)
-    expect(btn20.className).toContain('gold-gradient')
+    expect(btn20.className).toContain('bg-[#f8bd45]')
   })
 
   // 5. Segmented controls — time per question
@@ -76,7 +76,7 @@ describe('CreateRoom', () => {
     renderCreateRoom()
     const btn30 = screen.getByText('30s')
     fireEvent.click(btn30)
-    expect(btn30.className).toContain('gold-gradient')
+    expect(btn30.className).toContain('bg-[#f8bd45]')
   })
 
   // 6. Max players slider
@@ -102,7 +102,7 @@ describe('CreateRoom', () => {
 
   // 8. Submit success → navigate to lobby
   it('submits form and navigates to lobby on success', async () => {
-    mockApiPost.mockResolvedValue({ data: { id: 'room-123', roomCode: 'ABC123' } })
+    mockApiPost.mockResolvedValue({ data: { success: true, room: { id: 'room-123', roomCode: 'ABC123' } } })
     renderCreateRoom()
     const submitBtn = document.querySelector('button[type="submit"]')!
     fireEvent.click(submitBtn)
@@ -157,7 +157,7 @@ describe('CreateRoom', () => {
     renderCreateRoom()
     const hardBtn = screen.getByText('Khó')
     fireEvent.click(hardBtn)
-    expect(hardBtn.className).toContain('gold-gradient')
+    expect(hardBtn.className).toContain('bg-[#f8bd45]')
   })
 
   // 14. Room name input
@@ -165,5 +165,22 @@ describe('CreateRoom', () => {
     renderCreateRoom()
     const input = screen.getByPlaceholderText(/Phòng Kinh Thánh vui/i)
     expect(input).toBeInTheDocument()
+  })
+
+  // 15. Question source selector — default DATABASE, switch to CUSTOM
+  it('switches question source to CUSTOM and sends it in submit', async () => {
+    mockApiPost.mockResolvedValue({ data: { success: true, room: { id: 'r1', roomCode: 'ZZZ' } } })
+    renderCreateRoom()
+
+    const customBtn = screen.getByText('Tự tạo câu hỏi').closest('button')!
+    fireEvent.click(customBtn)
+    expect(customBtn).toHaveAttribute('aria-pressed', 'true')
+
+    fireEvent.click(document.querySelector('button[type="submit"]')!)
+    await waitFor(() => {
+      expect(mockApiPost).toHaveBeenCalledWith('/api/rooms', expect.objectContaining({
+        questionSource: 'CUSTOM',
+      }))
+    })
   })
 })

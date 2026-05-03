@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState, useRef } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useStomp } from '../hooks/useStomp';
+import { api } from '../api/client';
 
 type Player = {
   id: string; userId: string; username: string; avatarUrl?: string;
@@ -14,6 +15,13 @@ type RoomDetails = {
   maxPlayers: number; currentPlayers: number;
   questionCount: number; timePerQuestion: number;
   hostId: string; hostName: string; players: Player[];
+  questionSource?: 'DATABASE' | 'CUSTOM';
+};
+
+type UserQuestionDTO = {
+  id: string; content: string; options: string[];
+  correctAnswer: number; difficulty: string; source: string;
+  book: string; chapter: number; explanation: string; theme: string;
 };
 type ChatMessage = {
   sender: string;
@@ -66,7 +74,7 @@ const RoomLobby: React.FC = () => {
         case 'GAME_STARTING': {
           const d = msg.data as { countdown: number };
           setCountdown(d.countdown);
-          const myTeam = room?.players.find(p => p.username === myUsername())?.team ?? null;
+          const myTeam = room?.players?.find(p => p.username === myUsername())?.team ?? null;
           setTimeout(() => navigate(`/room/${roomId}/quiz`, {
             replace: true,
             state: { mode: room?.mode, myTeam }
@@ -77,7 +85,7 @@ const RoomLobby: React.FC = () => {
         case 'QUESTION_START':
           navigate(`/room/${roomId}/quiz`, {
             replace: true,
-            state: { mode: room?.mode, myTeam: room?.players.find(p => p.username === myUsername())?.team ?? null }
+            state: { mode: room?.mode, myTeam: room?.players?.find(p => p.username === myUsername())?.team ?? null }
           });
           break;
         case 'QUIZ_END':
@@ -170,12 +178,12 @@ const RoomLobby: React.FC = () => {
     navigate('/multiplayer');
   };
 
-  const readyCount = useMemo(() => room?.players.filter((p) => p.isReady).length ?? 0, [room]);
+  const readyCount = useMemo(() => room?.players?.filter((p) => p.isReady).length ?? 0, [room]);
   const isTeamVsTeam = room?.mode === 'TEAM_VS_TEAM';
   const isSuddenDeath = room?.mode === 'SUDDEN_DEATH';
-  const teamAPlayers = room?.players.filter(p => p.team === 'A') ?? [];
-  const teamBPlayers = room?.players.filter(p => p.team === 'B') ?? [];
-  const myPlayer = room?.players.find(p => p.username === myUsername());
+  const teamAPlayers = room?.players?.filter(p => p.team === 'A') ?? [];
+  const teamBPlayers = room?.players?.filter(p => p.team === 'B') ?? [];
+  const myPlayer = room?.players?.find(p => p.username === myUsername());
   const isHost = myPlayer?.userId === room?.hostId;
   const canStart = room?.status === 'LOBBY' && readyCount >= 2;
   const emptySlots = room ? Math.max(0, room.maxPlayers - room.currentPlayers) : 0;
@@ -296,6 +304,13 @@ const RoomLobby: React.FC = () => {
           </div>
         </div>
 
+        {/* ── Host Question Panel (CUSTOM source only) ── */}
+        {isHost && room.questionSource === 'CUSTOM' && (
+          <div className="mb-8">
+            <HostQuestionPanel roomId={room.id} />
+          </div>
+        )}
+
         {/* ── Main Layout: Players Grid + Chat ── */}
         <div className="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8">
 
@@ -350,7 +365,7 @@ const RoomLobby: React.FC = () => {
                   👑 {t('room.battleOrder')}
                 </div>
                 <div className="space-y-3">
-                  {room.players.map((p, idx) => (
+                  {(room.players ?? []).map((p, idx) => (
                     <div
                       key={p.id}
                       className={`bg-surface-container p-4 rounded-xl flex items-center gap-4 border transition-all ${
@@ -386,7 +401,7 @@ const RoomLobby: React.FC = () => {
             ) : (
               /* Default grid layout */
               <div className="grid grid-cols-2 gap-4">
-                {room.players.map((p) => (
+                {(room.players ?? []).map((p) => (
                   <PlayerCard key={p.id} player={p} hostId={room.hostId} t={t} />
                 ))}
                 {/* Empty slots */}
@@ -592,5 +607,257 @@ const EmptySlot: React.FC<{ t: (key: string) => string }> = ({ t }) => (
     <span className="text-sm font-medium text-outline-variant/40 italic">{t('room.waitingSlot')}</span>
   </div>
 );
+
+/* ── Question Preview Item ── */
+const QuestionPreviewItem: React.FC<{
+  question: UserQuestionDTO; index: number; onRemove: () => void;
+}> = ({ question, index, onRemove }) => (
+  <div className="flex items-start gap-3 bg-surface-container rounded-lg p-3 text-xs">
+    <span className="w-5 h-5 rounded-full bg-secondary/20 text-secondary flex-shrink-0 flex items-center justify-center font-bold text-[10px]">
+      {index}
+    </span>
+    <div className="flex-1 min-w-0">
+      <p className="text-on-surface leading-snug line-clamp-1">{question.content}</p>
+      <p className="text-on-surface-variant/50 mt-0.5 truncate">
+        ✓ {question.options[question.correctAnswer]}
+        {question.book ? ` · ${question.book}` : ''}
+      </p>
+    </div>
+    <button type="button" onClick={onRemove} className="text-on-surface-variant/40 hover:text-error transition-colors flex-shrink-0 mt-0.5">
+      <span className="material-symbols-outlined text-base">close</span>
+    </button>
+  </div>
+);
+
+/* ── Host Question Panel ── */
+const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" };
+
+const HostQuestionPanel: React.FC<{ roomId: string }> = ({ roomId }) => {
+  const [tab, setTab] = useState<'ai' | 'manual' | 'assigned'>('ai');
+  const [staging, setStaging] = useState<UserQuestionDTO[]>([]);
+  const [assigned, setAssigned] = useState<UserQuestionDTO[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [notice, setNotice] = useState<{ type: 'error' | 'ok'; msg: string } | null>(null);
+  const [aiForm, setAiForm] = useState({ book: '', chapterStart: '', chapterEnd: '', theme: '', difficulty: 'MIXED', language: 'vi', count: 5 });
+  const [manualForm, setManualForm] = useState({ content: '', options: ['', '', '', ''], correctAnswer: 0, difficulty: 'MIXED', explanation: '', book: '', language: 'vi' });
+
+  const flash = (type: 'error' | 'ok', msg: string) => { setNotice({ type, msg }); setTimeout(() => setNotice(null), 3500); };
+
+  useEffect(() => {
+    api.get(`/api/user-questions/room/${roomId}`)
+      .then(r => { if (r.data.success) setAssigned(r.data.questions); })
+      .catch(() => {});
+  }, [roomId]);
+
+  const handleGenerateAI = async () => {
+    setLoading(true);
+    try {
+      const payload: Record<string, unknown> = { difficulty: aiForm.difficulty, language: aiForm.language, count: aiForm.count };
+      if (aiForm.book) payload.book = aiForm.book;
+      if (aiForm.chapterStart) payload.chapterStart = Number(aiForm.chapterStart);
+      if (aiForm.chapterEnd) payload.chapterEnd = Number(aiForm.chapterEnd);
+      if (aiForm.theme) payload.theme = aiForm.theme;
+      const r = await api.post('/api/user-questions/generate', payload);
+      setStaging(prev => [...r.data.questions, ...prev]);
+      flash('ok', `Đã tạo ${r.data.generated} câu hỏi!`);
+    } catch (e: any) { flash('error', e?.response?.data?.message || 'Lỗi tạo câu hỏi'); }
+    finally { setLoading(false); }
+  };
+
+  const handleCreateManual = async () => {
+    setLoading(true);
+    try {
+      const r = await api.post('/api/user-questions', {
+        content: manualForm.content, options: manualForm.options,
+        correctAnswer: manualForm.correctAnswer, difficulty: manualForm.difficulty,
+        explanation: manualForm.explanation || null, book: manualForm.book || null, language: manualForm.language,
+      });
+      setStaging(prev => [r.data.question, ...prev]);
+      setManualForm({ content: '', options: ['', '', '', ''], correctAnswer: 0, difficulty: 'MIXED', explanation: '', book: '', language: 'vi' });
+      flash('ok', 'Đã thêm câu hỏi!');
+    } catch (e: any) { flash('error', e?.response?.data?.message || 'Lỗi thêm câu hỏi'); }
+    finally { setLoading(false); }
+  };
+
+  const handleAssignAll = async () => {
+    if (!staging.length) return;
+    setLoading(true);
+    try {
+      const r = await api.post('/api/user-questions/assign-to-room', { roomId, questionIds: staging.map(q => q.id) });
+      setAssigned(r.data.questions);
+      setStaging([]);
+      flash('ok', `Đã gán ${r.data.assigned} câu hỏi!`);
+      setTab('assigned');
+    } catch (e: any) { flash('error', e?.response?.data?.message || 'Lỗi gán câu hỏi'); }
+    finally { setLoading(false); }
+  };
+
+  const handleRemoveAssigned = async (qId: string) => {
+    try {
+      await api.delete(`/api/user-questions/room/${roomId}/${qId}`);
+      setAssigned(prev => prev.filter(q => q.id !== qId));
+    } catch (e: any) { flash('error', e?.response?.data?.message || 'Lỗi xoá câu hỏi'); }
+  };
+
+  return (
+    <div className="glass-card rounded-xl p-5 space-y-4 border border-secondary/20" data-testid="host-question-panel">
+      <div className="flex items-center gap-2">
+        <span className="material-symbols-outlined text-secondary text-lg" style={FILL_1}>quiz</span>
+        <h3 className="text-sm font-bold text-on-surface uppercase tracking-wider">Câu hỏi phòng</h3>
+        <div className="ml-auto flex items-center gap-2">
+          {assigned.length > 0 && <span className="text-xs bg-secondary/20 text-secondary px-2 py-0.5 rounded-full font-bold">{assigned.length} đã gán</span>}
+          {staging.length > 0 && <span className="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded-full font-bold">+{staging.length} chờ gán</span>}
+        </div>
+      </div>
+
+      {/* Tabs */}
+      <div className="flex bg-surface-container-highest p-1 rounded-lg text-xs">
+        {([['ai', 'smart_toy', 'AI tạo'], ['manual', 'edit_note', 'Thủ công'], ['assigned', 'checklist', 'Đã gán']] as const).map(([k, icon, label]) => (
+          <button key={k} type="button" onClick={() => setTab(k)}
+            className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-md transition-all font-medium ${tab === k ? 'bg-[#f8bd45] text-[#11131e] font-bold shadow-sm' : 'text-on-surface-variant hover:text-on-surface'}`}>
+            <span className="material-symbols-outlined text-sm">{icon}</span>{label}
+          </button>
+        ))}
+      </div>
+
+      {notice && (
+        <div className={`p-3 rounded-lg text-xs flex items-center gap-2 ${notice.type === 'ok' ? 'bg-emerald-500/10 border border-emerald-500/20 text-emerald-400' : 'bg-error/10 border border-error/20 text-error'}`}>
+          <span className="material-symbols-outlined text-sm">{notice.type === 'ok' ? 'check_circle' : 'error'}</span>
+          {notice.msg}
+          {notice.type === 'error' && <button onClick={() => setNotice(null)} className="ml-auto"><span className="material-symbols-outlined text-sm">close</span></button>}
+        </div>
+      )}
+
+      {/* AI Tab */}
+      {tab === 'ai' && (
+        <div className="space-y-3">
+          <div className="grid grid-cols-2 gap-3">
+            <div className="space-y-1.5">
+              <label className="text-xs text-on-surface-variant">Sách Kinh Thánh</label>
+              <input type="text" value={aiForm.book} onChange={e => setAiForm(p => ({ ...p, book: e.target.value }))}
+                placeholder="VD: Giăng, Sáng Thế Ký..." className="w-full bg-surface-container-highest rounded-lg px-3 py-2 text-xs text-on-surface placeholder:text-on-surface-variant/40 outline-none focus:ring-1 focus:ring-secondary/50" />
+            </div>
+            <div className="space-y-1.5">
+              <label className="text-xs text-on-surface-variant">Chủ đề</label>
+              <input type="text" value={aiForm.theme} onChange={e => setAiForm(p => ({ ...p, theme: e.target.value }))}
+                placeholder="VD: tình yêu thương, cứu rỗi..." className="w-full bg-surface-container-highest rounded-lg px-3 py-2 text-xs text-on-surface placeholder:text-on-surface-variant/40 outline-none focus:ring-1 focus:ring-secondary/50" />
+            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-3">
+            <div className="space-y-1.5">
+              <label className="text-xs text-on-surface-variant">Chương từ</label>
+              <input type="number" min={1} value={aiForm.chapterStart} onChange={e => setAiForm(p => ({ ...p, chapterStart: e.target.value }))}
+                placeholder="1" className="w-full bg-surface-container-highest rounded-lg px-3 py-2 text-xs text-on-surface outline-none focus:ring-1 focus:ring-secondary/50" />
+            </div>
+            <div className="space-y-1.5">
+              <label className="text-xs text-on-surface-variant">Đến chương</label>
+              <input type="number" min={1} value={aiForm.chapterEnd} onChange={e => setAiForm(p => ({ ...p, chapterEnd: e.target.value }))}
+                placeholder="3" className="w-full bg-surface-container-highest rounded-lg px-3 py-2 text-xs text-on-surface outline-none focus:ring-1 focus:ring-secondary/50" />
+            </div>
+            <div className="space-y-1.5">
+              <label className="text-xs text-on-surface-variant">Số câu</label>
+              <select value={aiForm.count} onChange={e => setAiForm(p => ({ ...p, count: Number(e.target.value) }))}
+                className="w-full bg-surface-container-highest rounded-lg px-3 py-2 text-xs text-on-surface outline-none focus:ring-1 focus:ring-secondary/50 appearance-none">
+                {[3, 5, 8, 10].map(n => <option key={n} value={n}>{n}</option>)}
+              </select>
+            </div>
+          </div>
+          <button type="button" onClick={handleGenerateAI} disabled={loading}
+            className="w-full gold-gradient h-10 rounded-xl text-[#11131e] font-bold text-sm flex items-center justify-center gap-2 disabled:opacity-50">
+            {loading ? <><span className="material-symbols-outlined animate-spin text-lg">progress_activity</span>Đang tạo...</>
+              : <><span className="material-symbols-outlined text-lg" style={FILL_1}>auto_awesome</span>Tạo với AI</>}
+          </button>
+          <StagingPreview staging={staging} loading={loading} onRemove={id => setStaging(prev => prev.filter(q => q.id !== id))} onAssign={handleAssignAll} />
+        </div>
+      )}
+
+      {/* Manual Tab */}
+      {tab === 'manual' && (
+        <div className="space-y-3">
+          <div className="space-y-1.5">
+            <label className="text-xs text-on-surface-variant">Nội dung câu hỏi *</label>
+            <textarea rows={2} value={manualForm.content} onChange={e => setManualForm(p => ({ ...p, content: e.target.value }))}
+              placeholder="Nhập câu hỏi..."
+              className="w-full bg-surface-container-highest rounded-lg px-3 py-2 text-sm text-on-surface placeholder:text-on-surface-variant/40 outline-none focus:ring-1 focus:ring-secondary/50 resize-none" />
+          </div>
+          <div className="space-y-2">
+            <label className="text-xs text-on-surface-variant">4 đáp án (nhấn chữ cái để đánh dấu đúng)</label>
+            {manualForm.options.map((opt, idx) => (
+              <div key={idx} className="flex items-center gap-2">
+                <button type="button" onClick={() => setManualForm(p => ({ ...p, correctAnswer: idx }))}
+                  className={`w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold transition-all ${manualForm.correctAnswer === idx ? 'bg-emerald-500 text-white' : 'bg-surface-container-highest text-on-surface-variant hover:bg-secondary/20'}`}>
+                  {String.fromCharCode(65 + idx)}
+                </button>
+                <input type="text" value={opt}
+                  onChange={e => { const o = [...manualForm.options]; o[idx] = e.target.value; setManualForm(p => ({ ...p, options: o })); }}
+                  placeholder={`Đáp án ${String.fromCharCode(65 + idx)}`}
+                  className="flex-1 bg-surface-container-highest rounded-lg px-3 py-2 text-xs text-on-surface placeholder:text-on-surface-variant/40 outline-none focus:ring-1 focus:ring-secondary/50" />
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            <div className="space-y-1.5">
+              <label className="text-xs text-on-surface-variant">Sách (tùy chọn)</label>
+              <input type="text" value={manualForm.book} onChange={e => setManualForm(p => ({ ...p, book: e.target.value }))}
+                placeholder="VD: Giăng" className="w-full bg-surface-container-highest rounded-lg px-3 py-2 text-xs text-on-surface placeholder:text-on-surface-variant/40 outline-none focus:ring-1 focus:ring-secondary/50" />
+            </div>
+            <div className="space-y-1.5">
+              <label className="text-xs text-on-surface-variant">Độ khó</label>
+              <select value={manualForm.difficulty} onChange={e => setManualForm(p => ({ ...p, difficulty: e.target.value }))}
+                className="w-full bg-surface-container-highest rounded-lg px-3 py-2 text-xs text-on-surface outline-none focus:ring-1 focus:ring-secondary/50 appearance-none">
+                {[['EASY','Dễ'],['MEDIUM','Trung bình'],['HARD','Khó'],['MIXED','Hỗn hợp']].map(([v,l]) => <option key={v} value={v}>{l}</option>)}
+              </select>
+            </div>
+          </div>
+          <button type="button" onClick={handleCreateManual}
+            disabled={loading || !manualForm.content.trim() || manualForm.options.some(o => !o.trim())}
+            className="w-full h-10 rounded-xl border border-secondary/40 text-secondary font-bold text-sm flex items-center justify-center gap-2 hover:bg-secondary/10 transition-colors disabled:opacity-40">
+            <span className="material-symbols-outlined text-lg">add_circle</span>Thêm câu hỏi
+          </button>
+          <StagingPreview staging={staging} loading={loading} onRemove={id => setStaging(prev => prev.filter(q => q.id !== id))} onAssign={handleAssignAll} />
+        </div>
+      )}
+
+      {/* Assigned Tab */}
+      {tab === 'assigned' && (
+        <div className="space-y-2">
+          {assigned.length === 0 ? (
+            <p className="text-center text-on-surface-variant/40 text-xs italic py-8">
+              Chưa có câu hỏi nào được gán.<br />Tạo câu hỏi ở tab AI hoặc Thủ công.
+            </p>
+          ) : (
+            <div className="space-y-1.5 max-h-[360px] overflow-y-auto">
+              {assigned.map((q, idx) => (
+                <QuestionPreviewItem key={q.id} question={q} index={idx + 1} onRemove={() => handleRemoveAssigned(q.id)} />
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
+
+/* Staging preview shared by AI + Manual tabs */
+const StagingPreview: React.FC<{
+  staging: UserQuestionDTO[]; loading: boolean;
+  onRemove: (id: string) => void; onAssign: () => void;
+}> = ({ staging, loading, onRemove, onAssign }) => {
+  if (!staging.length) return null;
+  return (
+    <div className="space-y-2 pt-1 border-t border-outline-variant/10">
+      <div className="flex items-center justify-between">
+        <p className="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Chờ gán ({staging.length})</p>
+        <button type="button" onClick={onAssign} disabled={loading}
+          className="text-xs bg-secondary/20 text-secondary px-3 py-1.5 rounded-lg hover:bg-secondary/30 transition-colors font-bold flex items-center gap-1 disabled:opacity-50">
+          <span className="material-symbols-outlined text-sm">playlist_add_check</span>Gán vào phòng
+        </button>
+      </div>
+      <div className="space-y-1.5 max-h-[240px] overflow-y-auto">
+        {staging.map((q, idx) => <QuestionPreviewItem key={q.id} question={q} index={idx + 1} onRemove={() => onRemove(q.id)} />)}
+      </div>
+    </div>
+  );
+};
 
 export default RoomLobby;

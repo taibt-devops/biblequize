@@ -42,6 +42,9 @@ public class RoomController {
             Integer timePerQuestion = body.get("timePerQuestion") instanceof Number n ? n.intValue() : 30;
             String modeStr = body.get("mode") instanceof String s ? s : "SPEED_RACE";
             Boolean isPublic = body.get("isPublic") instanceof Boolean b ? b : false;
+            String difficultyStr = body.get("difficulty") instanceof String s ? s : "MIXED";
+            String bookScope = body.get("bookScope") instanceof String s ? s : "ALL";
+            String questionSourceStr = body.get("questionSource") instanceof String s ? s : "DATABASE";
 
             Room.RoomMode mode;
             try {
@@ -50,7 +53,21 @@ public class RoomController {
                 mode = Room.RoomMode.SPEED_RACE;
             }
 
-            Room room = roomService.createRoom(roomName, user, maxPlayers, questionCount, timePerQuestion, mode, isPublic);
+            Room.RoomDifficulty difficulty;
+            try {
+                difficulty = Room.RoomDifficulty.valueOf(difficultyStr.toUpperCase());
+            } catch (IllegalArgumentException e) {
+                difficulty = Room.RoomDifficulty.MIXED;
+            }
+
+            Room.QuestionSource questionSource;
+            try {
+                questionSource = Room.QuestionSource.valueOf(questionSourceStr.toUpperCase());
+            } catch (IllegalArgumentException e) {
+                questionSource = Room.QuestionSource.DATABASE;
+            }
+
+            Room room = roomService.createRoom(roomName, user, maxPlayers, questionCount, timePerQuestion, mode, isPublic, difficulty, bookScope, questionSource);
             RoomService.RoomDetailsDTO details = roomService.getRoomDetails(room.getId());
 
             return ResponseEntity.ok(Map.of("success", true, "room", details));
