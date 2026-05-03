@@ -177,20 +177,14 @@ describe('CreateRoom', () => {
     expect(input).toBeInTheDocument()
   })
 
-  // 15. Question source selector — default DATABASE, switch to CUSTOM
-  it('switches question source to CUSTOM and sends it in submit', async () => {
-    mockApiPost.mockResolvedValue({ data: { success: true, room: { id: 'r1', roomCode: 'ZZZ' } } })
+  // 15. CUSTOM without set selected → submit disabled
+  it('disables submit when CUSTOM source selected but no set chosen', async () => {
     renderCreateRoom()
-
     const customBtn = screen.getByText('Tự tạo câu hỏi').closest('button')!
     fireEvent.click(customBtn)
     expect(customBtn).toHaveAttribute('aria-pressed', 'true')
 
-    fireEvent.click(document.querySelector('button[type="submit"]')!)
-    await waitFor(() => {
-      expect(mockApiPost).toHaveBeenCalledWith('/api/rooms', expect.objectContaining({
-        questionSource: 'CUSTOM',
-      }))
-    })
+    const submitBtn = document.querySelector('button[type="submit"]') as HTMLButtonElement
+    expect(submitBtn).toBeDisabled()
   })
 })

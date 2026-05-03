@@ -245,9 +245,9 @@ export default function CreateRoom() {
                   </div>
                 )}
                 {!formData.questionSetId && userSets.length > 0 && (
-                  <p className="text-[11px] text-on-surface-variant/50 flex items-center gap-1">
-                    <span className="material-symbols-outlined text-sm">info</span>
-                    Chọn một bộ hoặc tạo mới. Số câu hỏi sẽ theo bộ đã chọn.
+                  <p className="text-[11px] text-amber-400/80 flex items-center gap-1">
+                    <span className="material-symbols-outlined text-sm">warning</span>
+                    Phải chọn một bộ câu hỏi để tiếp tục.
                   </p>
                 )}
               </div>
@@ -406,7 +406,7 @@ export default function CreateRoom() {
             <button
               data-testid="create-room-submit-btn"
               type="submit"
-              disabled={loading}
+              disabled={loading || (formData.questionSource === 'CUSTOM' && !formData.questionSetId)}
               className="w-full h-12 gold-gradient rounded-xl font-bold text-[#11131e] flex items-center justify-center gap-2 shadow-[0_8px_30px_rgba(248,189,69,0.2)] hover:opacity-90 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? (
