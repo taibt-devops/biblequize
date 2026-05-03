@@ -472,15 +472,24 @@ const Multiplayer = () => {
             </p>
           </div>
         </div>
-        <button
-          data-testid="multiplayer-create-btn"
-          onClick={() => navigate('/room/create')}
-          className="flex items-center gap-2 py-2.5 px-5 rounded-xl text-sm font-bold shadow-md transition-all hover:opacity-90"
-          style={{ background: '#e8a832', color: '#412d00', boxShadow: '0 0 20px rgba(232,168,50,0.25)' }}
-        >
-          <span className="material-symbols-outlined text-sm" style={FILL_1}>add_circle</span>
-          {t('multiplayer.createRoom', 'Tạo phòng mới')}
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => navigate('/my-sets')}
+            className="flex items-center gap-2 py-2.5 px-4 rounded-xl text-sm font-semibold border border-secondary/30 text-secondary hover:bg-secondary/10 transition-colors"
+          >
+            <span className="material-symbols-outlined text-sm" style={FILL_1}>menu_book</span>
+            Bộ câu hỏi
+          </button>
+          <button
+            data-testid="multiplayer-create-btn"
+            onClick={() => navigate('/room/create')}
+            className="flex items-center gap-2 py-2.5 px-5 rounded-xl text-sm font-bold shadow-md transition-all hover:opacity-90"
+            style={{ background: '#e8a832', color: '#412d00', boxShadow: '0 0 20px rgba(232,168,50,0.25)' }}
+          >
+            <span className="material-symbols-outlined text-sm" style={FILL_1}>add_circle</span>
+            {t('multiplayer.createRoom', 'Tạo phòng mới')}
+          </button>
+        </div>
       </div>
 
       {/* ── Join by code + Featured event ── */}
