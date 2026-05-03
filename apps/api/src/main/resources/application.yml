@@ -99,7 +99,7 @@ management:
 # Rate limiter will trust X-Forwarded-For ONLY when the direct TCP peer is in this list.
 # Example for production behind a known load-balancer: "10.0.0.1,172.16.0.2"
 gemini:
-  api-key: ${GEMINI_API_KEY:AIzaSyC09pswY57C3BzvsRjFwwuOYuQ2DxWewO4}
+  api-key: ${GEMINI_API_KEY:}
   model: ${GEMINI_MODEL:gemini-2.5-flash}
 
 app:

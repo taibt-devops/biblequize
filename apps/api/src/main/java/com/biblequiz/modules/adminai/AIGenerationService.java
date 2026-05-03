@@ -80,60 +80,42 @@ public class AIGenerationService {
             String difficulty, String type, String language, int count,
             String scriptureText, String customPrompt) throws Exception {
 
-        // Build a single-question prompt and fire `count` parallel requests
+        // Single request asking for all `count` questions to avoid Gemini rate limiting
         String prompt = buildPrompt(book, chapter, verseStart, verseEnd,
-                difficulty, type, language, 1, scriptureText, customPrompt);
+                difficulty, type, language, count, scriptureText, customPrompt);
 
         String requestJson = objectMapper.writeValueAsString(Map.of(
                 "contents", List.of(Map.of("parts", List.of(Map.of("text", prompt))))
         ));
         String url = String.format(GEMINI_API_URL, model, apiKey);
 
-        log.info("[AI] Launching {} parallel Gemini requests: model={}, book={} {}:{}-{}",
+        log.info("[AI] Single Gemini request for {} questions: model={}, book={} {}:{}-{}",
                 count, model, book, chapter, verseStart, verseEnd);
 
-        List<CompletableFuture<Map<String, Object>>> futures = new ArrayList<>();
-        for (int i = 0; i < count; i++) {
-            HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create(url))
-                    .header("Content-Type", "application/json")
-                    .POST(HttpRequest.BodyPublishers.ofString(requestJson))
-                    .timeout(Duration.ofSeconds(60))
-                    .build();
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(url))
+                .header("Content-Type", "application/json")
+                .POST(HttpRequest.BodyPublishers.ofString(requestJson))
+                .timeout(Duration.ofSeconds(90))
+                .build();
 
-            final int idx = i;
-            CompletableFuture<Map<String, Object>> future = httpClient
-                    .sendAsync(request, HttpResponse.BodyHandlers.ofString())
-                    .thenApply(response -> {
-                        try {
-                            if (response.statusCode() != 200) {
-                                log.error("[AI] Request #{} failed: status={}", idx, response.statusCode());
-                                return null;
-                            }
-                            String text = extractTextFromGeminiResponse(response.body()).strip();
-                            if (text.startsWith("```")) {
-                                text = text.replaceFirst("```(?:json)?\\s*", "").replaceAll("```\\s*$", "").strip();
-                            }
-                            List<Map<String, Object>> list = objectMapper.readValue(
-                                    extractJsonArray(text), new TypeReference<>() {});
-                            log.debug("[AI] Request #{} OK", idx);
-                            return list.isEmpty() ? null : list.get(0);
-                        } catch (Exception e) {
-                            log.error("[AI] Request #{} parse error: {}", idx, e.getMessage());
-                            return null;
-                        }
-                    });
-            futures.add(future);
+        HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+
+        if (response.statusCode() != 200) {
+            log.error("[AI] Request failed: status={}, body={}", response.statusCode(),
+                    response.body().substring(0, Math.min(300, response.body().length())));
+            return List.of();
         }
 
-        CompletableFuture.allOf(futures.toArray(new CompletableFuture[0])).join();
+        String text = extractTextFromGeminiResponse(response.body()).strip();
+        if (text.startsWith("```")) {
+            text = text.replaceFirst("```(?:json)?\\s*", "").replaceAll("```\\s*$", "").strip();
+        }
 
-        List<Map<String, Object>> questions = futures.stream()
-                .map(CompletableFuture::join)
-                .filter(Objects::nonNull)
-                .collect(Collectors.toList());
+        List<Map<String, Object>> questions = objectMapper.readValue(
+                extractJsonArray(text), new TypeReference<>() {});
 
-        log.info("[AI] Generated {}/{} questions successfully (parallel)", questions.size(), count);
+        log.info("[AI] Generated {}/{} questions from single request", questions.size(), count);
         return questions;
     }
 
