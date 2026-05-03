@@ -35,18 +35,18 @@ services:
       - "127.0.0.1:8080:8080"
     environment:
       SPRING_PROFILES_ACTIVE: docker
-      OAUTH2_REDIRECT_URI: https://vibecode-be.infaxia.io/login/oauth2/code/google
-      APP_FRONTEND_URL: https://vibecode.infaxia.io
+      OAUTH2_REDIRECT_URI: https://be.quize.top/login/oauth2/code/google
+      APP_FRONTEND_URL: https://www.quize.top
       DB_URL: jdbc:mysql://mysql:3306/biblequiz?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8&useUnicode=true&connectionCollation=utf8mb4_unicode_ci
       DB_USER: biblequiz
       DB_PASS: pass
       REDIS_HOST: redis
       REDIS_PORT: 6379
       JWT_SECRET: 2y3VJvKq3yO9lWqA1mJr5yJ1ZfQk7bHRrX9JwR3fT8mL2CqN5pSd8UwZ0rB6Xy1hD4sN8vQ6cT2mP9aL7yK3gF1qR5zU8
-      CORS_ORIGINS: https://vibecode.infaxia.io,https://vibecode-be.infaxia.io
+      CORS_ORIGINS: https://www.quize.top,https://quize.top,https://be.quize.top
       GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
       GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
-      SERVER_SERVLET_SESSION_COOKIE_DOMAIN: infaxia.io
+      SERVER_SERVLET_SESSION_COOKIE_DOMAIN: quize.top
       SERVER_SERVLET_SESSION_COOKIE_SECURE: "true"
       SERVER_SERVLET_SESSION_COOKIE_SAME_SITE: lax
       SERVER_FORWARD_HEADERS_STRATEGY: framework

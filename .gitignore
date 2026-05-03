@@ -8,6 +8,8 @@ key/
 .env
 .env.*
 env.local
+# Allow Playwright env template (real .env.e2e.* still gitignored above)
+!apps/web/.env.e2e.example
 .claude/settings.json
 .mcp.json
 # app secrets and local config - keep out of git

@@ -11,6 +11,10 @@ interface Participant {
   lives: number;
   score: number;
   isWinner: boolean;
+  seed?: number;
+  correctCount?: number;
+  wrongCount?: number;
+  avgSpeed?: number;
 }
 
 interface Match {
@@ -32,31 +36,150 @@ interface BracketData {
 }
 
 /* ── Helpers ── */
-function getRoundLabel(round: number, totalRounds: number, t: (key: string, opts?: any) => string): string {
-  if (round === totalRounds) return t('tournaments.final');
-  if (round === totalRounds - 1) return t('tournaments.semiFinal');
-  if (round === totalRounds - 2) return t('tournaments.quarterFinal');
-  return t('tournaments.round', { number: round });
+function getRoundLabel(round: number, totalRounds: number): string {
+  if (round === totalRounds) return 'Chung kết';
+  if (round === totalRounds - 1) return 'Bán kết';
+  if (round === totalRounds - 2) return 'Tứ kết';
+  return `Vòng ${round}`;
 }
 
-function HeartIcons({ count, max = 3, size = 'md' }: { count: number; max?: number; size?: 'sm' | 'md' | 'lg' }) {
-  const sizeClass = size === 'lg' ? 'text-2xl' : size === 'md' ? 'text-base' : 'text-xs';
+/* ── HeartRow ── */
+function HeartRow({ lives, max = 3, size = 16 }: { lives: number; max?: number; size?: number }) {
   return (
-    <div className="flex gap-1">
+    <div className="flex gap-1 justify-center">
       {Array.from({ length: max }).map((_, i) => (
-        <span
-          key={i}
-          className={`material-symbols-outlined ${sizeClass} ${i < count ? 'text-secondary' : 'text-on-surface-variant/20'}`}
-          style={{ fontVariationSettings: "'FILL' 1" }}
-        >
-          {i < count ? 'favorite' : 'heart_broken'}
+        <span key={i} style={{ fontSize: size, opacity: i < lives ? 1 : 0.2, filter: i < lives ? 'none' : 'grayscale(1)' }}>
+          {i < lives ? '❤️' : '🖤'}
         </span>
       ))}
     </div>
   );
 }
 
-/* ── Confetti gold particles ── */
+/* ── SVG Countdown Timer ── */
+function TimerCircle({ seconds, maxSeconds = 15, size = 80 }: { seconds: number; maxSeconds?: number; size?: number }) {
+  const r = 44;
+  const circumference = 2 * Math.PI * r;
+  const progress = Math.max(0, seconds / maxSeconds);
+  const strokeDashoffset = circumference * (1 - progress);
+  const color = seconds <= 5 ? '#f87171' : seconds <= 10 ? '#ff8c42' : '#e8a832';
+
+  return (
+    <div className="relative flex-shrink-0" style={{ width: size, height: size }}>
+      <svg viewBox="0 0 100 100" width={size} height={size} style={{ transform: 'rotate(-90deg)' }}>
+        <circle cx="50" cy="50" r={r} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="6" />
+        <circle
+          cx="50" cy="50" r={r} fill="none"
+          stroke={color} strokeWidth="6"
+          strokeDasharray={circumference}
+          strokeDashoffset={strokeDashoffset}
+          strokeLinecap="round"
+          style={{ filter: `drop-shadow(0 0 8px ${color}60)`, transition: 'stroke-dashoffset 1s linear, stroke 0.5s' }}
+        />
+      </svg>
+      <div className="absolute inset-0 flex flex-col items-center justify-center">
+        <span className="font-mono font-semibold leading-none" style={{ color, fontSize: size * 0.28 }}>{seconds}</span>
+      </div>
+    </div>
+  );
+}
+
+/* ── Player Card ── */
+function PlayerCard({
+  participant,
+  isCurrentUser,
+  isWinner,
+  isLoser,
+  highlight = false,
+}: {
+  participant: Participant;
+  isCurrentUser: boolean;
+  isWinner: boolean;
+  isLoser: boolean;
+  highlight?: boolean;
+}) {
+  const initial = participant.userName.charAt(0).toUpperCase();
+  const avatarBg = highlight ? 'rgba(156,163,175,0.3)' : 'rgba(255,140,66,0.3)';
+  const avatarBorder = highlight ? '#e8a832' : 'rgba(255,140,66,0.5)';
+  const avatarColor = highlight ? '#fff' : '#ff8c42';
+  const seedBg = highlight ? '#e8a832' : 'rgba(255,255,255,0.6)';
+  const seedColor = highlight ? '#412d00' : '#11131e';
+
+  return (
+    <div
+      className="rounded-2xl p-4 md:p-5 flex flex-col items-center gap-3 transition-all duration-300"
+      style={{
+        background: 'rgba(50,52,64,0.5)',
+        border: highlight
+          ? '1.5px solid rgba(232,168,50,0.5)'
+          : isWinner
+            ? '1.5px solid rgba(232,168,50,0.4)'
+            : '0.5px solid rgba(255,255,255,0.1)',
+        boxShadow: highlight ? '0 0 24px rgba(232,168,50,0.15)' : isWinner ? '0 0 20px rgba(232,168,50,0.1)' : undefined,
+        opacity: isLoser ? 0.55 : 1,
+      }}
+    >
+      {/* Winner crown */}
+      {isWinner && <span style={{ fontSize: 20 }}>👑</span>}
+
+      {/* Avatar + seed badge */}
+      <div className="relative">
+        <div
+          className="rounded-full flex items-center justify-center font-semibold"
+          style={{ width: 52, height: 52, background: avatarBg, border: `2px solid ${avatarBorder}`, color: avatarColor, fontSize: 20 }}
+        >
+          {initial}
+        </div>
+        {participant.seed != null && (
+          <div
+            className="absolute rounded-full flex items-center justify-center font-bold"
+            style={{ width: 18, height: 18, bottom: -2, right: -4, background: seedBg, color: seedColor, fontSize: 9 }}
+          >
+            {participant.seed}
+          </div>
+        )}
+      </div>
+
+      {/* Name */}
+      <div className="text-center">
+        <div className="font-medium text-white leading-tight" style={{ fontSize: 14 }}>
+          {participant.userName}
+        </div>
+        {isCurrentUser && (
+          <span className="text-[9px] font-medium px-1.5 py-0.5 rounded-full" style={{ background: 'rgba(232,168,50,0.2)', color: '#e8a832' }}>BẠN</span>
+        )}
+        {participant.seed != null && !isCurrentUser && (
+          <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: 10, marginTop: 1 }}>Seed #{participant.seed}</div>
+        )}
+      </div>
+
+      {/* Hearts */}
+      <HeartRow lives={participant.lives} size={14} />
+
+      {/* Stats */}
+      {(participant.correctCount != null || participant.score > 0) && (
+        <div className="w-full pt-2 mt-1 flex justify-between items-center" style={{ borderTop: '0.5px solid rgba(255,255,255,0.06)' }}>
+          <div className="text-center">
+            <div className="text-[9px] tracking-wider mb-0.5" style={{ color: 'rgba(255,255,255,0.5)' }}>ĐÚNG / SAI</div>
+            <div style={{ fontSize: 13, fontWeight: 500 }}>
+              <span style={{ color: '#97C459' }}>{participant.correctCount ?? participant.score}</span>
+              {participant.wrongCount != null && <span style={{ color: 'rgba(255,255,255,0.4)' }}> / </span>}
+              {participant.wrongCount != null && <span style={{ color: '#f87171' }}>{participant.wrongCount}</span>}
+            </div>
+          </div>
+          {participant.avgSpeed != null && (
+            <div className="text-center">
+              <div className="text-[9px] tracking-wider mb-0.5" style={{ color: 'rgba(255,255,255,0.5)' }}>TỐC ĐỘ TB</div>
+              <div className="text-white font-medium" style={{ fontSize: 13 }}>{participant.avgSpeed.toFixed(1)}s</div>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ── GoldConfetti ── */
 function GoldConfetti() {
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -65,34 +188,26 @@ function GoldConfetti() {
         const delay = Math.random() * 2;
         const duration = 2 + Math.random() * 3;
         const size = 4 + Math.random() * 8;
-        const rotation = Math.random() * 360;
         return (
           <div
             key={i}
             className="absolute rounded-sm"
             style={{
-              left: `${left}%`,
-              top: '-5%',
-              width: size,
-              height: size * 0.6,
-              background: `linear-gradient(${rotation}deg, #e8a832, #e7c268, #f8bd45)`,
+              left: `${left}%`, top: '-5%',
+              width: size, height: size * 0.6,
+              background: `linear-gradient(${Math.random() * 360}deg, #e8a832, #e7c268, #f8bd45)`,
               animation: `confettiFall ${duration}s ${delay}s ease-in infinite`,
               opacity: 0.8,
             }}
           />
         );
       })}
-      <style>{`
-        @keyframes confettiFall {
-          0% { transform: translateY(0) rotate(0deg); opacity: 0.9; }
-          100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
-        }
-      `}</style>
+      <style>{`@keyframes confettiFall { 0% { transform: translateY(0) rotate(0deg); opacity: 0.9; } 100% { transform: translateY(110vh) rotate(720deg); opacity: 0; } }`}</style>
     </div>
   );
 }
 
-/* ── Component ── */
+/* ── Main Component ── */
 const TournamentMatch: React.FC = () => {
   const { id, matchId } = useParams<{ id: string; matchId: string }>();
   const navigate = useNavigate();
@@ -104,7 +219,6 @@ const TournamentMatch: React.FC = () => {
   const [totalRounds, setTotalRounds] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-
   const [forfeitLoading, setForfeitLoading] = useState(false);
   const [showWinnerOverlay, setShowWinnerOverlay] = useState(false);
 
@@ -115,48 +229,32 @@ const TournamentMatch: React.FC = () => {
       const data: BracketData = res.data;
       setTournamentName(data.name);
       setTotalRounds(data.totalRounds);
-
-      // Find the specific match
       let found: Match | null = null;
       for (const roundMatches of Object.values(data.rounds)) {
         for (const m of roundMatches) {
-          if (m.matchId === matchId) {
-            found = m;
-            break;
-          }
+          if (m.matchId === matchId) { found = m; break; }
         }
         if (found) break;
       }
-
       if (found) {
         setMatch(found);
-        // Show winner overlay when match just completed
-        if (found.status === 'COMPLETED' && !showWinnerOverlay) {
-          setShowWinnerOverlay(true);
-        }
+        if (found.status === 'COMPLETED' && !showWinnerOverlay) setShowWinnerOverlay(true);
         setError('');
       } else {
         setError(t('tournaments.matchNotFound'));
       }
     } catch (err: any) {
-      if (!match) {
-        setError(err.response?.data?.message || err.response?.data?.error || t('tournaments.errorLoadMatch'));
-      }
+      if (!match) setError(err.response?.data?.message || t('tournaments.errorLoadMatch'));
     } finally {
       setLoading(false);
     }
   }, [id, matchId, match, showWinnerOverlay, t]);
 
-  // Initial fetch
-  useEffect(() => {
-    fetchMatch();
-  }, [id, matchId]); // eslint-disable-line react-hooks/exhaustive-deps
-
-  // Auto-refresh every 5s when IN_PROGRESS
+  useEffect(() => { fetchMatch(); }, [id, matchId]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!match || match.status !== 'IN_PROGRESS') return;
-    const interval = setInterval(fetchMatch, 5000);
-    return () => clearInterval(interval);
+    const iv = setInterval(fetchMatch, 5000);
+    return () => clearInterval(iv);
   }, [match?.status, fetchMatch]);
 
   const handleForfeit = async () => {
@@ -166,18 +264,16 @@ const TournamentMatch: React.FC = () => {
       await api.post(`/api/tournaments/${id}/matches/${matchId}/forfeit`);
       await fetchMatch();
     } catch (err: any) {
-      alert(err.response?.data?.message || err.response?.data?.error || t('tournaments.cannotForfeit'));
-    } finally {
-      setForfeitLoading(false);
-    }
+      alert(err.response?.data?.message || t('tournaments.cannotForfeit'));
+    } finally { setForfeitLoading(false); }
   };
 
   /* ── Loading ── */
   if (loading) {
     return (
-      <div className="min-h-screen bg-background flex flex-col items-center justify-center gap-4">
-        <div className="w-12 h-12 border-3 border-outline-variant/20 border-t-secondary rounded-full animate-spin" />
-        <span className="text-on-surface-variant text-sm">{t('tournaments.loadingMatch')}</span>
+      <div className="min-h-screen flex flex-col items-center justify-center gap-4" style={{ background: '#11131e' }}>
+        <div className="w-12 h-12 rounded-full animate-spin" style={{ border: '3px solid rgba(255,255,255,0.08)', borderTopColor: '#e8a832' }} />
+        <span className="text-sm" style={{ color: 'rgba(255,255,255,0.5)' }}>{t('tournaments.loadingMatch')}</span>
       </div>
     );
   }
@@ -185,19 +281,13 @@ const TournamentMatch: React.FC = () => {
   /* ── Error ── */
   if (error && !match) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center p-6">
+      <div className="min-h-screen flex items-center justify-center p-6" style={{ background: '#11131e' }}>
         <div className="glass-card rounded-2xl p-12 text-center max-w-md w-full">
+          <span className="material-symbols-outlined text-5xl mb-4 block" style={{ color: '#f87171' }}>error</span>
+          <p className="text-sm mb-6" style={{ color: '#f87171' }}>{error}</p>
           <button
-            onClick={() => navigate(`/tournaments/${id}`)}
-            className="flex items-center gap-1.5 text-on-surface-variant hover:text-secondary transition-colors text-sm mb-8 mx-auto"
-          >
-            <span className="material-symbols-outlined text-lg">arrow_back</span>
-            {t('tournaments.backToBracket')}
-          </button>
-          <span className="material-symbols-outlined text-5xl text-error/60 mb-4 block">error</span>
-          <p className="text-error text-sm mb-6">{error}</p>
-          <button
-            className="px-6 py-2.5 rounded-xl bg-secondary/10 border border-secondary/30 text-secondary font-bold text-sm hover:bg-secondary/20 transition-colors"
+            className="px-6 py-2.5 rounded-xl text-sm font-bold"
+            style={{ background: 'rgba(232,168,50,0.1)', border: '0.5px solid rgba(232,168,50,0.3)', color: '#e8a832' }}
             onClick={() => { setLoading(true); setError(''); fetchMatch(); }}
           >
             {t('common.retry')}
@@ -209,296 +299,256 @@ const TournamentMatch: React.FC = () => {
 
   if (!match) return null;
 
-  const p1 = match.participants[0] || null;
-  const p2 = match.participants[1] || null;
+  const p1 = match.participants[0] ?? null;
+  const p2 = match.participants[1] ?? null;
   const winner = match.participants.find(p => p.isWinner);
-  const roundLabel = totalRounds > 0
-    ? getRoundLabel(match.roundNumber, totalRounds, t)
-    : t('tournaments.round', { number: match.roundNumber });
+  const roundLabel = totalRounds > 0 ? getRoundLabel(match.roundNumber, totalRounds) : `Vòng ${match.roundNumber}`;
+  const currentUserId = user?.email ?? user?.id ?? '';
+
+  const isP1Current = !!p1 && p1.userId === currentUserId;
+  const meParticipant = match.participants.find(p => p.userId === currentUserId);
 
   return (
-    <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Subtle background glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-secondary/5 rounded-full blur-[120px] pointer-events-none" />
+    <div className="min-h-screen relative overflow-hidden" style={{ background: 'linear-gradient(135deg, rgba(232,168,50,0.03), rgba(168,85,247,0.03), #11131e)' }}>
+      {/* Background glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 rounded-full pointer-events-none" style={{ width: 600, height: 400, background: 'rgba(232,168,50,0.04)', filter: 'blur(120px)' }} />
 
-      {/* ── Match Header ── */}
-      <header className="relative z-10 pt-6 pb-4 px-6">
-        <div className="max-w-3xl mx-auto">
-          <button
-            onClick={() => navigate(`/tournaments/${id}`)}
-            className="flex items-center gap-1.5 text-on-surface-variant hover:text-secondary transition-colors text-sm mb-6"
-          >
-            <span className="material-symbols-outlined text-lg">arrow_back</span>
-            {t('tournaments.backToBracket')}
-          </button>
+      {/* ── Floating Header ── */}
+      <header
+        className="sticky top-0 z-20 flex items-center justify-between px-4 py-2.5"
+        style={{ background: 'rgba(0,0,0,0.4)', borderBottom: '0.5px solid rgba(255,255,255,0.06)', backdropFilter: 'blur(12px)' }}
+      >
+        <button
+          onClick={() => navigate(`/tournaments/${id}`)}
+          className="flex items-center gap-1.5 text-sm transition-opacity hover:opacity-70"
+          style={{ color: 'rgba(255,255,255,0.5)' }}
+        >
+          <span className="material-symbols-outlined text-base">arrow_back</span>
+          <span className="hidden sm:inline">{t('tournaments.backToBracket')}</span>
+          <span className="sm:hidden">Bỏ</span>
+        </button>
 
-          <div className="text-center">
-            {tournamentName && (
-              <span className="text-secondary font-bold tracking-[0.2em] uppercase text-[10px] mb-2 block">
-                {tournamentName}
-              </span>
-            )}
-            <h1 className="text-2xl md:text-3xl font-black text-on-surface tracking-tight mb-3">
-              {roundLabel} &mdash; {t('tournaments.matchLabel', { number: match.matchIndex + 1 })}
-            </h1>
-            <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider ${
-              match.status === 'PENDING' ? 'bg-surface-container-high text-on-surface-variant' :
-              match.status === 'IN_PROGRESS' ? 'bg-secondary-container/40 text-secondary' :
-              'bg-surface-container-high text-tertiary'
-            }`}>
-              <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>
-                {match.status === 'PENDING' ? 'schedule' : match.status === 'IN_PROGRESS' ? 'swords' : 'check_circle'}
-              </span>
-              {match.status === 'PENDING' && t('tournaments.statusPending')}
-              {match.status === 'IN_PROGRESS' && t('tournaments.inProgress')}
-              {match.status === 'COMPLETED' && t('tournaments.statusCompleted')}
+        <div className="flex items-center gap-2">
+          {tournamentName && (
+            <span
+              className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-medium"
+              style={{ background: 'rgba(232,168,50,0.15)', color: '#e8a832', border: '0.5px solid rgba(232,168,50,0.3)' }}
+            >
+              🏆 {tournamentName} — {roundLabel}
             </span>
-          </div>
+          )}
+          <span className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>
+            Match #{match.matchIndex + 1}
+          </span>
         </div>
+
+        <button
+          className="w-8 h-8 rounded-lg flex items-center justify-center"
+          style={{ background: 'rgba(255,255,255,0.05)', border: '0.5px solid rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.5)' }}
+        >
+          <span className="material-symbols-outlined text-sm">settings</span>
+        </button>
       </header>
 
-      {/* ── BYE match ── */}
-      {match.isBye && (
-        <div className="relative z-10 max-w-lg mx-auto px-6 mt-12">
-          <div className="glass-card rounded-2xl p-10 text-center border border-outline-variant/10">
-            <span className="material-symbols-outlined text-5xl text-secondary mb-4 block" style={{ fontVariationSettings: "'FILL' 1" }}>
-              shield
-            </span>
-            <p className="text-on-surface font-bold text-lg mb-2">{t('tournaments.byeMatch')}</p>
-            <p className="text-on-surface-variant text-sm mb-4">{t('tournaments.byeDesc')}</p>
+      <div className="max-w-2xl mx-auto px-4 py-5 space-y-4">
+
+        {/* ── BYE match ── */}
+        {match.isBye && (
+          <div className="glass-card rounded-2xl p-10 text-center">
+            <span className="text-5xl block mb-4">🛡️</span>
+            <p className="text-white font-bold text-lg mb-2">{t('tournaments.byeMatch')}</p>
+            <p className="text-sm mb-4" style={{ color: 'rgba(255,255,255,0.5)' }}>{t('tournaments.byeDesc')}</p>
             {p1 && (
-              <div className="inline-flex items-center gap-3 bg-secondary/10 rounded-full px-5 py-2 border border-secondary/20">
-                <span className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>
-                  workspace_premium
-                </span>
-                <span className="font-bold text-secondary">{p1.userName}</span>
+              <div className="inline-flex items-center gap-3 rounded-full px-5 py-2" style={{ background: 'rgba(232,168,50,0.1)', border: '0.5px solid rgba(232,168,50,0.2)' }}>
+                <span style={{ color: '#e8a832' }}>🏆</span>
+                <span className="font-bold" style={{ color: '#e8a832' }}>{p1.userName}</span>
               </div>
             )}
           </div>
-        </div>
-      )}
+        )}
 
-      {/* ── PENDING match ── */}
-      {!match.isBye && match.status === 'PENDING' && (
-        <div className="relative z-10 max-w-lg mx-auto px-6 mt-12">
-          <div className="glass-card rounded-2xl p-10 text-center border border-outline-variant/10">
-            <span className="material-symbols-outlined text-5xl text-on-surface-variant/40 mb-4 block">hourglass_empty</span>
-            <p className="text-on-surface font-bold text-lg mb-2">{t('tournaments.pendingMatch')}</p>
+        {/* ── PENDING match ── */}
+        {!match.isBye && match.status === 'PENDING' && (
+          <div className="glass-card rounded-2xl p-10 text-center">
+            <span className="material-symbols-outlined text-5xl mb-4 block" style={{ color: 'rgba(255,255,255,0.3)' }}>hourglass_empty</span>
+            <p className="text-white font-bold text-lg mb-6">{t('tournaments.pendingMatch')}</p>
             {p1 && p2 && (
-              <div className="flex items-center justify-center gap-4 mt-6">
+              <div className="flex items-center justify-center gap-6">
                 <div className="text-center">
-                  <div className="w-14 h-14 rounded-full bg-secondary/15 flex items-center justify-center text-secondary font-bold text-xl mx-auto mb-2">
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center text-xl font-black mx-auto mb-2" style={{ background: 'rgba(232,168,50,0.15)', color: '#e8a832' }}>
                     {p1.userName.charAt(0).toUpperCase()}
                   </div>
-                  <span className="text-sm font-bold text-on-surface">{p1.userName}</span>
+                  <span className="text-sm font-bold text-white">{p1.userName}</span>
                 </div>
-                <span className="text-on-surface-variant/40 font-black text-xl">VS</span>
+                <span className="font-black text-xl" style={{ color: 'rgba(255,255,255,0.3)' }}>VS</span>
                 <div className="text-center">
-                  <div className="w-14 h-14 rounded-full bg-secondary/15 flex items-center justify-center text-secondary font-bold text-xl mx-auto mb-2">
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center text-xl font-black mx-auto mb-2" style={{ background: 'rgba(232,168,50,0.15)', color: '#e8a832' }}>
                     {p2.userName.charAt(0).toUpperCase()}
                   </div>
-                  <span className="text-sm font-bold text-on-surface">{p2.userName}</span>
+                  <span className="text-sm font-bold text-white">{p2.userName}</span>
                 </div>
               </div>
             )}
           </div>
-        </div>
-      )}
+        )}
 
-      {/* ── IN_PROGRESS or COMPLETED — Score Display ── */}
-      {!match.isBye && (match.status === 'IN_PROGRESS' || match.status === 'COMPLETED') && (
-        <div className="relative z-10 max-w-3xl mx-auto px-6 mt-8">
-          {/* Live indicator */}
-          {match.status === 'IN_PROGRESS' && (
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75" />
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-secondary" />
-              </span>
-              <span className="text-secondary text-xs font-bold uppercase tracking-widest">LIVE</span>
-            </div>
-          )}
-
-          {/* Player cards — VS layout */}
-          <div className="flex items-stretch gap-4 md:gap-6">
-            {/* Player 1 */}
-            {p1 && (
-              <div className={`flex-1 glass-card rounded-2xl p-6 md:p-8 text-center border transition-all duration-300 ${
-                match.status === 'COMPLETED' && p1.isWinner
-                  ? 'border-secondary/40 shadow-[0_0_30px_rgba(232,168,50,0.15)]'
-                  : match.status === 'COMPLETED' && !p1.isWinner
-                    ? 'border-outline-variant/10 opacity-50'
-                    : 'border-outline-variant/10'
-              }`}>
-                {/* Winner crown */}
-                {match.status === 'COMPLETED' && p1.isWinner && (
-                  <span className="material-symbols-outlined text-3xl text-secondary mb-2 block" style={{ fontVariationSettings: "'FILL' 1" }}>
-                    workspace_premium
-                  </span>
-                )}
-                {/* Avatar */}
-                <div className={`w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center text-2xl md:text-3xl font-black mx-auto mb-3 ${
-                  match.status === 'COMPLETED' && p1.isWinner
-                    ? 'bg-secondary/20 text-secondary border-2 border-secondary/40'
-                    : 'bg-surface-container-high text-on-surface-variant'
-                }`}>
-                  {p1.userName.charAt(0).toUpperCase()}
-                </div>
-                <p className={`font-bold text-base md:text-lg mb-3 ${
-                  match.status === 'COMPLETED' && p1.isWinner ? 'text-secondary' : 'text-on-surface'
-                }`}>
-                  {p1.userName}
-                </p>
-                {/* HP Hearts */}
-                <div className="flex justify-center mb-4">
-                  <HeartIcons count={p1.lives} size="lg" />
-                </div>
-                {/* Score */}
-                <div className="bg-surface-container rounded-xl py-3 px-4">
-                  <p className="text-3xl md:text-4xl font-black text-secondary">{p1.score}</p>
-                  <p className="text-[10px] uppercase tracking-widest text-on-surface-variant mt-1">{t('tournaments.score')}</p>
-                </div>
-                {match.status === 'COMPLETED' && p1.isWinner && (
-                  <div className="mt-3 inline-flex items-center gap-1.5 bg-secondary/15 rounded-full px-4 py-1.5 border border-secondary/20">
-                    <span className="material-symbols-outlined text-sm text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>emoji_events</span>
-                    <span className="text-xs font-bold text-secondary">{t('tournaments.victory')}</span>
-                  </div>
-                )}
-              </div>
-            )}
-
-            {/* VS divider */}
-            <div className="flex flex-col items-center justify-center flex-shrink-0">
-              <div className="w-px h-8 bg-outline-variant/20" />
-              <div className="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant/20">
-                <span className="material-symbols-outlined text-secondary text-xl">swords</span>
-              </div>
-              <div className="w-px h-8 bg-outline-variant/20" />
-            </div>
-
-            {/* Player 2 */}
-            {p2 && (
-              <div className={`flex-1 glass-card rounded-2xl p-6 md:p-8 text-center border transition-all duration-300 ${
-                match.status === 'COMPLETED' && p2.isWinner
-                  ? 'border-secondary/40 shadow-[0_0_30px_rgba(232,168,50,0.15)]'
-                  : match.status === 'COMPLETED' && !p2.isWinner
-                    ? 'border-outline-variant/10 opacity-50'
-                    : 'border-outline-variant/10'
-              }`}>
-                {match.status === 'COMPLETED' && p2.isWinner && (
-                  <span className="material-symbols-outlined text-3xl text-secondary mb-2 block" style={{ fontVariationSettings: "'FILL' 1" }}>
-                    workspace_premium
-                  </span>
-                )}
-                <div className={`w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center text-2xl md:text-3xl font-black mx-auto mb-3 ${
-                  match.status === 'COMPLETED' && p2.isWinner
-                    ? 'bg-secondary/20 text-secondary border-2 border-secondary/40'
-                    : 'bg-surface-container-high text-on-surface-variant'
-                }`}>
-                  {p2.userName.charAt(0).toUpperCase()}
-                </div>
-                <p className={`font-bold text-base md:text-lg mb-3 ${
-                  match.status === 'COMPLETED' && p2.isWinner ? 'text-secondary' : 'text-on-surface'
-                }`}>
-                  {p2.userName}
-                </p>
-                <div className="flex justify-center mb-4">
-                  <HeartIcons count={p2.lives} size="lg" />
-                </div>
-                <div className="bg-surface-container rounded-xl py-3 px-4">
-                  <p className="text-3xl md:text-4xl font-black text-secondary">{p2.score}</p>
-                  <p className="text-[10px] uppercase tracking-widest text-on-surface-variant mt-1">{t('tournaments.score')}</p>
-                </div>
-                {match.status === 'COMPLETED' && p2.isWinner && (
-                  <div className="mt-3 inline-flex items-center gap-1.5 bg-secondary/15 rounded-full px-4 py-1.5 border border-secondary/20">
-                    <span className="material-symbols-outlined text-sm text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>emoji_events</span>
-                    <span className="text-xs font-bold text-secondary">{t('tournaments.victory')}</span>
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
-
-          {/* Forfeit button for in-progress matches */}
-          {match.status === 'IN_PROGRESS' && (
-            <div className="text-center mt-8">
-              <button
-                className="px-6 py-2.5 rounded-xl bg-error/10 border border-error/20 text-error font-bold text-sm hover:bg-error/20 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                onClick={handleForfeit}
-                disabled={forfeitLoading}
-              >
-                <span className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-lg">flag</span>
-                  {forfeitLoading ? t('tournaments.forfeiting') : t('tournaments.forfeit')}
+        {/* ── IN_PROGRESS or COMPLETED ── */}
+        {!match.isBye && (match.status === 'IN_PROGRESS' || match.status === 'COMPLETED') && (
+          <>
+            {/* Live badge */}
+            {match.status === 'IN_PROGRESS' && (
+              <div className="flex items-center justify-center gap-2">
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ background: '#97C459' }} />
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5" style={{ background: '#97C459' }} />
                 </span>
-              </button>
-            </div>
-          )}
+                <span className="text-xs font-bold uppercase tracking-widest" style={{ color: '#97C459' }}>LIVE</span>
+              </div>
+            )}
 
-          {/* Back to bracket button for completed matches (non-overlay) */}
-          {match.status === 'COMPLETED' && !showWinnerOverlay && (
-            <div className="text-center mt-8">
-              <button
-                className="px-8 py-3 rounded-xl gold-gradient text-on-secondary font-bold text-sm uppercase tracking-wider shadow-[0_0_20px_rgba(232,168,50,0.25)] hover:scale-105 transition-transform"
-                onClick={() => navigate(`/tournaments/${id}`)}
-              >
-                <span className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-lg">arrow_back</span>
+            {/* 3-column VS layout */}
+            <div className="grid items-center gap-3" style={{ gridTemplateColumns: '1fr auto 1fr' }}>
+              {/* Player 1 */}
+              {p1 ? (
+                <PlayerCard
+                  participant={p1}
+                  isCurrentUser={p1.userId === currentUserId}
+                  isWinner={match.status === 'COMPLETED' && p1.isWinner}
+                  isLoser={match.status === 'COMPLETED' && !p1.isWinner}
+                  highlight={p1.userId === currentUserId}
+                />
+              ) : (
+                <div className="glass-card rounded-2xl p-6 text-center" style={{ opacity: 0.4 }}>
+                  <div className="text-3xl mb-2">?</div>
+                  <div className="text-sm" style={{ color: 'rgba(255,255,255,0.5)' }}>TBD</div>
+                </div>
+              )}
+
+              {/* Center: timer + VS */}
+              <div className="flex flex-col items-center gap-2 flex-shrink-0">
+                {match.status === 'IN_PROGRESS' ? (
+                  <>
+                    <TimerCircle seconds={15} maxSeconds={15} size={72} />
+                    <div className="px-3 py-1 rounded-full text-[10px] font-medium" style={{ background: 'rgba(232,168,50,0.1)', border: '0.5px solid rgba(232,168,50,0.3)', color: '#e8a832' }}>
+                      ⚔️ VS
+                    </div>
+                  </>
+                ) : (
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ background: 'rgba(50,52,64,0.6)', border: '0.5px solid rgba(255,255,255,0.12)' }}>
+                    <span className="material-symbols-outlined" style={{ color: '#e8a832', fontSize: 20 }}>swords</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Player 2 */}
+              {p2 ? (
+                <PlayerCard
+                  participant={p2}
+                  isCurrentUser={p2.userId === currentUserId}
+                  isWinner={match.status === 'COMPLETED' && p2.isWinner}
+                  isLoser={match.status === 'COMPLETED' && !p2.isWinner}
+                  highlight={p2.userId === currentUserId}
+                />
+              ) : (
+                <div className="glass-card rounded-2xl p-6 text-center" style={{ opacity: 0.4 }}>
+                  <div className="text-3xl mb-2">?</div>
+                  <div className="text-sm" style={{ color: 'rgba(255,255,255,0.5)' }}>TBD</div>
+                </div>
+              )}
+            </div>
+
+            {/* Stats mini row (mobile compact) */}
+            {meParticipant && match.status === 'IN_PROGRESS' && (
+              <div className="flex gap-3">
+                <div className="flex-1 flex items-center gap-2 rounded-lg px-3 py-2" style={{ background: 'rgba(50,52,64,0.4)', border: '0.5px solid rgba(255,255,255,0.06)' }}>
+                  <span className="text-[9px]" style={{ color: 'rgba(255,255,255,0.5)' }}>Bạn:</span>
+                  <span className="text-[11px] font-medium" style={{ color: '#97C459' }}>{meParticipant.score}đ</span>
+                  {meParticipant.avgSpeed != null && (
+                    <>
+                      <span style={{ color: 'rgba(255,255,255,0.3)' }}>·</span>
+                      <span className="text-[10px]" style={{ color: 'rgba(255,255,255,0.7)' }}>{meParticipant.avgSpeed.toFixed(1)}s</span>
+                    </>
+                  )}
+                </div>
+                {p1 && p2 && (() => {
+                  const opponent = p1.userId === currentUserId ? p2 : p1;
+                  return (
+                    <div className="flex-1 flex items-center gap-2 justify-end rounded-lg px-3 py-2" style={{ background: 'rgba(50,52,64,0.4)', border: '0.5px solid rgba(255,255,255,0.06)' }}>
+                      {opponent.avgSpeed != null && (
+                        <>
+                          <span className="text-[10px]" style={{ color: 'rgba(255,255,255,0.7)' }}>{opponent.avgSpeed.toFixed(1)}s</span>
+                          <span style={{ color: 'rgba(255,255,255,0.3)' }}>·</span>
+                        </>
+                      )}
+                      <span className="text-[11px] font-medium text-white">{opponent.score}đ</span>
+                      <span className="text-[9px]" style={{ color: 'rgba(255,255,255,0.5)' }}>:Đối thủ</span>
+                    </div>
+                  );
+                })()}
+              </div>
+            )}
+
+            {/* Forfeit button */}
+            {match.status === 'IN_PROGRESS' && (
+              <div className="text-center">
+                <button
+                  onClick={handleForfeit}
+                  disabled={forfeitLoading}
+                  className="px-6 py-2.5 rounded-xl text-sm font-bold transition-colors disabled:opacity-50"
+                  style={{ background: 'rgba(239,68,68,0.1)', border: '0.5px solid rgba(239,68,68,0.25)', color: '#f87171' }}
+                >
+                  <span className="flex items-center gap-2">
+                    <span className="material-symbols-outlined text-base">flag</span>
+                    {forfeitLoading ? t('tournaments.forfeiting') : t('tournaments.forfeit')}
+                  </span>
+                </button>
+              </div>
+            )}
+
+            {/* Back button for completed */}
+            {match.status === 'COMPLETED' && !showWinnerOverlay && (
+              <div className="text-center">
+                <button
+                  onClick={() => navigate(`/tournaments/${id}`)}
+                  className="px-8 py-3 rounded-xl font-bold text-sm uppercase tracking-wider hover:scale-105 transition-transform"
+                  style={{ background: '#e8a832', color: '#412d00', boxShadow: '0 0 20px rgba(232,168,50,0.25)' }}
+                >
                   {t('tournaments.backToBracket')}
-                </span>
-              </button>
-            </div>
-          )}
-        </div>
-      )}
+                </button>
+              </div>
+            )}
+          </>
+        )}
+      </div>
 
       {/* ── Winner Overlay ── */}
       {showWinnerOverlay && match.status === 'COMPLETED' && winner && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center animate-fade-in"
+          className="fixed inset-0 z-50 flex items-center justify-center"
           onClick={() => setShowWinnerOverlay(false)}
         >
-          {/* Backdrop */}
-          <div className="absolute inset-0 bg-background/90 backdrop-blur-md" />
-
-          {/* Gold confetti */}
+          <div className="absolute inset-0 backdrop-blur-md" style={{ background: 'rgba(17,19,30,0.9)' }} />
           <GoldConfetti />
-
-          {/* Content */}
           <div className="relative z-10 text-center px-6 max-w-md">
-            {/* Glow */}
-            <div className="absolute -inset-20 bg-secondary/10 rounded-full blur-[80px] pointer-events-none" />
-
-            <div className="relative">
-              <span
-                className="material-symbols-outlined text-7xl text-secondary mb-4 block"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                workspace_premium
-              </span>
-
-              <div className="w-24 h-24 rounded-full bg-secondary/20 border-2 border-secondary/50 flex items-center justify-center text-4xl font-black text-secondary mx-auto mb-4 shadow-[0_0_40px_rgba(232,168,50,0.3)]">
-                {winner.userName.charAt(0).toUpperCase()}
-              </div>
-
-              <p className="text-3xl md:text-4xl font-black text-secondary mb-2">
-                {winner.userName}
-              </p>
-              <p className="text-on-surface-variant text-lg mb-8">{t('tournaments.wonMatch')}</p>
-
-              <button
-                className="px-10 py-4 rounded-xl gold-gradient text-on-secondary font-bold text-sm uppercase tracking-widest shadow-[0_0_30px_rgba(232,168,50,0.35)] hover:scale-105 transition-transform"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  navigate(`/tournaments/${id}`);
-                }}
-              >
-                <span className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-lg">arrow_forward</span>
-                  {t('tournaments.continue')}
-                </span>
-              </button>
+            <span className="material-symbols-outlined text-7xl mb-4 block" style={{ color: '#e8a832', fontVariationSettings: "'FILL' 1" }}>workspace_premium</span>
+            <div
+              className="w-24 h-24 rounded-full flex items-center justify-center text-4xl font-black mx-auto mb-4"
+              style={{ background: 'rgba(232,168,50,0.2)', border: '2px solid rgba(232,168,50,0.5)', color: '#e8a832', boxShadow: '0 0 40px rgba(232,168,50,0.3)' }}
+            >
+              {winner.userName.charAt(0).toUpperCase()}
             </div>
+            <p className="text-3xl md:text-4xl font-black mb-2" style={{ color: '#e8a832' }}>{winner.userName}</p>
+            <p className="text-lg mb-8" style={{ color: 'rgba(255,255,255,0.6)' }}>{t('tournaments.wonMatch')}</p>
+            <button
+              className="px-10 py-4 rounded-xl font-bold text-sm uppercase tracking-widest hover:scale-105 transition-transform"
+              style={{ background: '#e8a832', color: '#412d00', boxShadow: '0 0 30px rgba(232,168,50,0.35)' }}
+              onClick={(e) => { e.stopPropagation(); navigate(`/tournaments/${id}`); }}
+            >
+              <span className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-lg">arrow_forward</span>
+                {t('tournaments.continue')}
+              </span>
+            </button>
           </div>
         </div>
       )}

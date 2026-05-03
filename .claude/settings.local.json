@@ -18,7 +18,12 @@
       "PowerShell($j = Get-Content \"D:\\\\code\\\\biblequize\\\\apps\\\\api\\\\src\\\\main\\\\resources\\\\seed\\\\questions\\\\1corinthians_quiz.json\" -Raw -Encoding UTF8 | ConvertFrom-Json; $j | ForEach-Object { $ve = if \\($_.verseEnd\\) { \"-$\\($_.verseEnd\\)\" } else { \"\" }; \"$\\($_.difficulty.PadRight\\(6\\)\\) $\\($_.chapter\\):$\\($_.verseStart\\)$ve  $\\($_.content.Substring\\(0,[Math]::Min\\(60,$_.content.Length\\)\\)\\)\" })",
       "PowerShell($j = Get-Content \"D:\\\\code\\\\biblequize\\\\apps\\\\api\\\\src\\\\main\\\\resources\\\\seed\\\\questions\\\\1corinthians_quiz.json\" -Raw -Encoding UTF8 | ConvertFrom-Json; Write-Output \"VI book values:\"; $j | Group-Object -Property book | ForEach-Object { \"  '$\\($_.Name\\)' x$\\($_.Count\\)\" }; Write-Output \"\"; Write-Output \"VI tags first item examples:\"; $j | Select-Object -First 3 | ForEach-Object { \"  $\\($_.tags -join ' | '\\)\" })",
       "PowerShell($candidates = @\\(\"python\",\"py\",\"python3\"\\); foreach \\($c in $candidates\\) { try { $v = & $c --version 2>&1; if \\($LASTEXITCODE -eq 0\\) { Write-Output \"$c -> $v\"; break } } catch { Write-Output \"$c not found\" } })",
-      "PowerShell(Get-Content *)"
+      "PowerShell(Get-Content *)",
+      "PowerShell(Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue)",
+      "PowerShell($conn = Get-NetTCPConnection -LocalPort 8080 -State Listen -ErrorAction SilentlyContinue; if \\($conn\\) { Get-Process -Id $conn.OwningProcess | Select-Object Id, ProcessName, StartTime | Format-List } else { Write-Output 'Port 8080 free' })",
+      "PowerShell(Get-WmiObject Win32_Process -Filter \"ProcessId=20380\")",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\code\\\\biblequize\\\\docs\" -Recurse | Where-Object { $_.Name -match \"ultiplayer|tournament|room\" } | Select-Object FullName, Length)",
+      "PowerShell(cmd /c \"dir D:\\\\code\\\\biblequize\\\\apps\\\\api\\\\src\\\\main\\\\resources\\\\db\\\\migration /b 2>&1\")"
     ]
   },
   "enableAllProjectMcpServers": true,

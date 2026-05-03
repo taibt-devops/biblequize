@@ -31,7 +31,9 @@ Test runner tự load env file theo target. Wrapper script (`scripts/e2e.mjs`) s
 | `npm run test:e2e:dev` | `dev` | đọc `PLAYWRIGHT_BASE_URL` từ `.env.e2e.dev` |
 | `npm run test:e2e:prod` | `prod` | `.env.e2e.prod`, mặc định chỉ chạy `@smoke` |
 | `npm run test:e2e:headed` | `local` | mở browser UI |
-| `npm run test:e2e:report` | — | mở HTML report của lần chạy gần nhất |
+| `npm run test:e2e:report` | — | mở HTML report của lần chạy local |
+| `npm run test:e2e:report:dev` | — | mở HTML report của lần chạy dev |
+| `npm run test:e2e:report:prod` | — | mở HTML report của lần chạy prod |
 
 Pass thêm Playwright args sau `--`:
 ```bash
@@ -64,14 +66,16 @@ Khi run, config in:
 
 Chỉ start `npm run dev` khi `PLAYWRIGHT_BASE_URL=http://localhost:5173`. Khi target dev/prod remote → không clash với local server.
 
-#### Test artifacts
+#### Test artifacts (tách theo env)
 
 | Loại | Đường dẫn |
 |---|---|
-| HTML report | `apps/web/playwright-report/` |
-| Traces, screenshots, videos (chỉ khi fail) | `apps/web/test-results/` |
+| HTML report | `apps/web/playwright-report/<env>/` |
+| Traces, screenshots, videos (chỉ khi fail) | `apps/web/test-results/<env>/` |
 
-Cả 2 đều gitignored.
+`<env>` = `local` / `dev` / `prod` (theo `E2E_ENV`). Run dev không ghi đè report local — debug song song được.
+
+Cả 2 folder đều gitignored.
 
 ## Build
 

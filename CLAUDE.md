@@ -681,6 +681,29 @@ BƯỚC 4: Hành động:
          5. Commit: "fix: quiz timer not resetting + e2e test W-M03-L2-014"
 ```
 
+### TC-TODO.md tracking (BẮT BUỘC khi viết e2e TC mới)
+
+> **Mỗi khi viết hoặc hoàn thành TC e2e, PHẢI cập nhật trạng thái trong [tests/e2e/TC-TODO.md](tests/e2e/TC-TODO.md).**
+
+File [TC-TODO.md](tests/e2e/TC-TODO.md) là tracker cho các TC còn thiếu (gaps so với coverage hiện tại trong INDEX.md). Mỗi TC có status: ⬜ todo · 🔄 in progress · ✅ done · ⏭️ deferred · ❌ blocked.
+
+**Quy tắc cập nhật**:
+
+| Hành động | Cập nhật TC-TODO.md |
+|---|---|
+| Bắt đầu viết spec markdown cho 1 TC | Đổi status ⬜ → 🔄 |
+| Spec markdown + Playwright code đã viết, chạy pass | Đổi status 🔄 → ✅ |
+| Chạy fail vì backend/feature chưa implement | Đổi status → ❌ blocked + ghi rõ block reason |
+| Test bị defer (Phase sau, infra chưa sẵn) | Đổi status → ⏭️ deferred |
+| Phát hiện gap mới (screen/flow chưa có trong file) | Append section mới với TC list |
+
+**Khi tất cả TC trong 1 module đã ✅** → đồng thời update [INDEX.md](tests/e2e/INDEX.md) (thêm row module, đánh dấu Phase done).
+
+**KHÔNG được**:
+- Viết TC mới mà không add vào TC-TODO.md trước (đầu sprint) hoặc không update sau (đuôi sprint)
+- Skip TC đã ✅ trong TC-TODO.md mà không có lý do (rollback hoặc rewrite phải đổi lại status)
+- Để TC ở trạng thái 🔄 quá 1 commit — phải hoàn thành hoặc đổi sang ❌/⏭️ kèm note
+
 ---
 
 ## Workflow khi làm feature mới

@@ -17,9 +17,13 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "test:e2e": "playwright test --config playwright.config.ts",
-    "test:e2e:headed": "playwright test --config playwright.config.ts --headed",
-    "test:e2e:report": "playwright show-report",
+    "test:e2e": "node scripts/e2e.mjs local",
+    "test:e2e:dev": "node scripts/e2e.mjs dev",
+    "test:e2e:prod": "node scripts/e2e.mjs prod --grep @smoke",
+    "test:e2e:headed": "node scripts/e2e.mjs local --headed",
+    "test:e2e:report": "playwright show-report playwright-report/local",
+    "test:e2e:report:dev": "playwright show-report playwright-report/dev",
+    "test:e2e:report:prod": "playwright show-report playwright-report/prod",
     "validate:i18n": "node scripts/validate-i18n.mjs"
   },
   "dependencies": {

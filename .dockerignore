@@ -1,0 +1,23 @@
+# Maven build artifacts
+apps/api/target/
+apps/api/.mvn/
+
+# Node modules
+apps/web/node_modules/
+apps/web/dist/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Docs / design files
+docs/
+tests/e2e/
+
+# Logs
+*.log

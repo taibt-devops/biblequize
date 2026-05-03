@@ -76,6 +76,22 @@ interface PublicGroupsResponse {
   groups: PublicGroupListItem[];
 }
 
+interface AnalyticsData {
+  totalMembers: number;
+  activeToday: number;
+  activeWeek: number;
+  inactiveCount: number;
+  avgScore: number;
+  accuracy: number;
+  totalQuizzes: number;
+  totalPointsWeek: number;
+  totalQuestionsWeek: number;
+  weeklyActivity: Array<{ date: string; activeCount: number }>;
+  topContributors: Array<{ userId: string; name: string; avatarUrl?: string; score: number; questionsAnswered: number }>;
+}
+
+type AnalyticsPeriod = '7d' | '30d' | '90d';
+
 /* ─── localStorage cache (NOT source of truth — see useMyGroup hook) ─── */
 
 interface SavedGroup {
@@ -396,6 +412,7 @@ function GroupOverview({ groupId, role }: { groupId: string; role?: string }) {
   const { t } = useTranslation();
   const { user } = useAuth();
   const [period, setPeriod] = useState<'weekly' | 'monthly' | 'all_time'>('weekly');
+  const [analyticsPeriod, setAnalyticsPeriod] = useState<AnalyticsPeriod>('7d');
   const isLeader = (role ?? '').toUpperCase() === 'LEADER';
   const isMod = (role ?? '').toUpperCase() === 'MOD';
 
@@ -440,6 +457,14 @@ function GroupOverview({ groupId, role }: { groupId: string; role?: string }) {
     staleTime: 5 * 60_000,
   });
   const latestQuizSet = quizSetsRes?.quizSets?.[0] ?? null;
+
+  const { data: analyticsRes } = useQuery<{ success: boolean; analytics: AnalyticsData }>({
+    queryKey: ['group-analytics', groupId],
+    queryFn: () => api.get(`/api/groups/${groupId}/analytics`).then((r) => r.data),
+    enabled: isLeader && !!group,
+    staleTime: 2 * 60_000,
+  });
+  const analytics = analyticsRes?.analytics ?? null;
 
   if (groupLoading) return <GroupSkeleton />;
 
@@ -585,6 +610,130 @@ function GroupOverview({ groupId, role }: { groupId: string; role?: string }) {
         </div>
       </div>
 
+      {/* ── Analytics inline preview (leader only) ── */}
+      {isLeader && (
+        <section
+          data-testid="analytics-inline"
+          className="bg-[rgba(74,158,255,0.05)] border-[0.5px] border-[rgba(74,158,255,0.25)] rounded-xl p-4"
+        >
+          {/* Header */}
+          <div className="text-[rgba(106,184,232,0.7)] text-[9px] uppercase tracking-[0.6px] mb-1">
+            {t('groups.leaderOnly')}
+          </div>
+          <div className="flex justify-between items-center mb-3">
+            <div className="text-on-surface text-[13px] font-medium">📊 {t('groups.analyticsTitle')}</div>
+            <div className="inline-flex bg-black/30 rounded-md p-0.5">
+              {(['7d', '30d', '90d'] as AnalyticsPeriod[]).map((p) => (
+                <button
+                  key={p}
+                  onClick={() => setAnalyticsPeriod(p)}
+                  className={`border-0 px-2.5 py-0.5 rounded text-[9px] font-medium cursor-pointer transition-all ${
+                    analyticsPeriod === p
+                      ? 'bg-[rgba(74,158,255,0.3)] text-[#6AB8E8]'
+                      : 'bg-transparent text-on-surface/50'
+                  }`}
+                >
+                  {p === '7d' ? '7N' : p === '30d' ? '30N' : '90N'}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* KPI 2×2 → 4×1 grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 mb-3">
+            <div className="bg-[rgba(151,196,89,0.06)] border-[0.5px] border-[rgba(151,196,89,0.2)] rounded-[10px] p-2.5">
+              <div className="text-[rgba(151,196,89,0.7)] text-[8px] uppercase tracking-[0.4px] mb-1">{t('groups.kpiActiveWeek')}</div>
+              <div className="text-[#97C459] text-[17px] font-medium leading-tight">
+                {analytics ? `${analytics.activeWeek}/${analytics.totalMembers}` : '—'}
+              </div>
+              {analytics && analytics.totalMembers > 0 && (
+                <div className="text-on-surface/45 text-[9px] mt-0.5">
+                  {Math.round((analytics.activeWeek / analytics.totalMembers) * 100)}%
+                </div>
+              )}
+            </div>
+            <div className="bg-[rgba(232,168,50,0.06)] border-[0.5px] border-[rgba(232,168,50,0.2)] rounded-[10px] p-2.5">
+              <div className="text-[rgba(232,168,50,0.7)] text-[8px] uppercase tracking-[0.4px] mb-1">{t('groups.kpiAvgScore')}</div>
+              <div className="text-[#e8a832] text-[17px] font-medium leading-tight">
+                {analytics ? `${analytics.avgScore}` : '—'}
+              </div>
+              <div className="text-on-surface/45 text-[9px] mt-0.5">{t('groups.kpiPerPerson')}</div>
+            </div>
+            <div className="bg-[rgba(74,158,255,0.06)] border-[0.5px] border-[rgba(74,158,255,0.2)] rounded-[10px] p-2.5">
+              <div className="text-[rgba(106,184,232,0.7)] text-[8px] uppercase tracking-[0.4px] mb-1">{t('groups.kpiAccuracy')}</div>
+              <div className="text-[#6AB8E8] text-[17px] font-medium leading-tight">
+                {analytics ? `${analytics.accuracy}%` : '—'}
+              </div>
+              <div className="text-on-surface/45 text-[9px] mt-0.5">{t('groups.kpiStable')}</div>
+            </div>
+            <div className="bg-[rgba(255,140,66,0.06)] border-[0.5px] border-[rgba(255,140,66,0.2)] rounded-[10px] p-2.5">
+              <div className="text-[rgba(255,140,66,0.7)] text-[8px] uppercase tracking-[0.4px] mb-1">{t('groups.kpiInactive')}</div>
+              <div className="text-[#ff8c42] text-[17px] font-medium leading-tight">
+                {analytics ? analytics.inactiveCount : '—'}
+              </div>
+              <div className="text-on-surface/45 text-[9px] mt-0.5">{t('groups.kpiPeople')}</div>
+            </div>
+          </div>
+
+          {/* Mini 7-bar activity chart */}
+          {analytics && analytics.weeklyActivity.length > 0 && (
+            <div className="mb-3">
+              <div className="text-on-surface/50 text-[10px] mb-1.5">{t('groups.weeklyActivitySubtitle')}</div>
+              <div className="flex items-end gap-1 h-[60px]">
+                {analytics.weeklyActivity.map((day, i) => {
+                  const maxCount = Math.max(...analytics.weeklyActivity.map((d) => d.activeCount), 1);
+                  const heightPct = Math.max((day.activeCount / maxCount) * 100, 4);
+                  const dayLabel = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'][
+                    new Date(day.date).getDay() === 0 ? 6 : new Date(day.date).getDay() - 1
+                  ];
+                  const isToday = i === analytics.weeklyActivity.length - 1;
+                  return (
+                    <div key={day.date} className="flex-1 flex flex-col items-center gap-0.5">
+                      <div
+                        className={`w-full rounded-t-[3px] transition-all ${
+                          isToday
+                            ? 'bg-[#e8a832]'
+                            : 'bg-[rgba(232,168,50,0.35)]'
+                        }`}
+                        style={{ height: `${heightPct}%` }}
+                      />
+                      <div className="text-on-surface/35 text-[8px] leading-none">
+                        {isToday ? t('groups.today') : dayLabel}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* Inactive members alert */}
+          {analytics && analytics.inactiveCount > 0 && (
+            <div className="bg-[rgba(255,140,66,0.08)] border-[0.5px] border-[rgba(255,140,66,0.25)] rounded-lg px-3 py-2 flex items-center justify-between gap-2 mb-3">
+              <div className="text-[#ff8c42] text-[11px] font-medium">
+                {t('groups.inactiveAlert', { count: analytics.inactiveCount })}
+              </div>
+              <Link
+                to={`/groups/${group.id}?tab=members&filter=inactive`}
+                className="text-[#ff8c42] text-[10px] font-medium whitespace-nowrap hover:brightness-125 transition-all"
+              >
+                {t('groups.viewInactiveList')} →
+              </Link>
+            </div>
+          )}
+
+          {/* View full analytics link */}
+          <div className="text-right">
+            <Link
+              to={`/groups/${group.id}/analytics`}
+              className="text-[rgba(106,184,232,0.7)] text-[11px] hover:text-[#6AB8E8] transition-colors"
+            >
+              {t('groups.viewFullAnalytics')} →
+            </Link>
+          </div>
+        </section>
+      )}
+
       {/* ── Two-column body ── */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-4">
         {/* Main column */}
@@ -712,6 +861,20 @@ function GroupOverview({ groupId, role }: { groupId: string; role?: string }) {
                 className="block w-full bg-secondary text-on-secondary border-0 rounded-lg py-2 text-[11px] sm:text-[12px] font-medium text-center hover:brightness-110 transition-all active:scale-95"
               >
                 ▶ {t('groups.startPlaying')}
+              </Link>
+            </section>
+          ) : isLeader ? (
+            <section className="bg-[rgba(232,168,50,0.06)] border-[0.5px] border-[rgba(232,168,50,0.2)] rounded-xl p-4 sm:p-5">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-[14px]">📚</span>
+                <span className="text-on-surface text-[12px] sm:text-[13px] font-medium">{t('groups.quizSetsSection')}</span>
+              </div>
+              <p className="text-on-surface/55 text-[11px] mb-3">{t('groups.noQuizSets')}</p>
+              <Link
+                to={`/groups/${group.id}?tab=quizsets`}
+                className="block w-full bg-secondary text-on-secondary border-0 rounded-lg py-2 text-[11px] sm:text-[12px] font-medium text-center hover:brightness-110 transition-all active:scale-95"
+              >
+                + {t('groups.quickActionCreateQuiz')}
               </Link>
             </section>
           ) : (

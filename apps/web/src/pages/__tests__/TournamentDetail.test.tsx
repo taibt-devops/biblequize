@@ -100,8 +100,8 @@ describe('TournamentDetail', () => {
   it('shows status badge', async () => {
     renderTD()
     await waitFor(() => {
-      const badge = screen.queryByText(/Dang dien ra/i) || screen.queryByText(/IN_PROGRESS/i) ||
-        document.querySelector('[class*="bg-secondary-container"]')
+      const badge = screen.queryByText(/ĐANG DIỄN RA/i) || screen.queryByText(/diễn ra/i) ||
+        screen.queryByText(/IN_PROGRESS/i)
       expect(badge).toBeTruthy()
     })
   })
@@ -128,9 +128,10 @@ describe('TournamentDetail', () => {
   it('renders heart icons for player lives', async () => {
     renderTD()
     await waitFor(() => {
-      const hearts = document.querySelectorAll('.material-symbols-outlined')
-      const favoriteIcons = Array.from(hearts).filter(h => h.textContent === 'favorite')
-      expect(favoriteIcons.length).toBeGreaterThanOrEqual(1)
+      // Redesign uses emoji hearts ❤️ instead of Material Icons
+      const bodyText = document.body.textContent ?? ''
+      const hasHearts = bodyText.includes('❤️') || bodyText.includes('mạng')
+      expect(hasHearts).toBe(true)
     })
   })
 

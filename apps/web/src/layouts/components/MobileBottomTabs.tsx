@@ -43,7 +43,7 @@ export default function MobileBottomTabs() {
   return (
     <nav
       data-testid="mobile-bottom-tabs"
-      className="md:hidden fixed bottom-0 left-0 w-full z-40 flex items-center justify-between gap-2 px-3 pt-2 bg-[#11131e]/90 backdrop-blur-xl border-t border-surface-container-highest/20"
+      className="md:hidden fixed bottom-0 left-0 w-full z-40 flex items-center justify-between gap-2 px-3 pt-2 bg-[#11131e]/90 backdrop-blur-xl border-t border-[rgba(232,168,50,0.15)]"
       style={{ paddingBottom: 'max(8px, env(safe-area-inset-bottom))' }}
     >
       {TABS.map(tab => {
