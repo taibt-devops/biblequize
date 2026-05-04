@@ -236,8 +236,12 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
         : undefined,
     tournament: tournamentHint,
     weekly: weeklyTheme || undefined,
-    mystery: t('home.modeHint.mysteryXp') as string,
-    speed: t('home.modeHint.speedXp') as string,
+    // HR-4b fix: Mystery + Speed are "for fun" — no XP / no leaderboard
+    // per DECISIONS.md 2026-05-02. Remove the misleading +50% / +100% XP
+    // hint labels; subtitle ("Random hoàn toàn", "10 câu × 10s") is the
+    // only descriptive text these cards need.
+    mystery: undefined,
+    speed: undefined,
   }
 
   return (

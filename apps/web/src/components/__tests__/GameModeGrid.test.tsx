@@ -236,12 +236,17 @@ describe('GameModeGrid (Option Y)', () => {
       expect(speed.getAttribute('style')).toMatch(/255\s*,\s*140\s*,\s*66/)
     })
 
-    it('mystery + speed always render their hardcoded XP hint', async () => {
+    it('mystery + speed render NO XP hint (HR-4b fix: variety = for fun, no XP)', async () => {
+      // DECISIONS.md 2026-05-02 — Mystery/Speed grant no XP and don't
+      // affect leaderboard. The earlier "+50% XP" / "+100% XP" labels
+      // were misleading and have been removed; subtitle is the only
+      // descriptive text these cards carry.
       renderGrid()
       await waitFor(() => {
-        expect(screen.getByTestId('compact-card-mystery-hint').textContent).toBe('+50% XP')
+        expect(screen.getByTestId('compact-card-mystery')).toBeInTheDocument()
       })
-      expect(screen.getByTestId('compact-card-speed-hint').textContent).toBe('+100% XP')
+      expect(screen.queryByTestId('compact-card-mystery-hint')).not.toBeInTheDocument()
+      expect(screen.queryByTestId('compact-card-speed-hint')).not.toBeInTheDocument()
     })
 
     it('multiplayer renders live "{N} phòng đang mở" when /api/rooms/public has data', async () => {
@@ -356,9 +361,10 @@ describe('GameModeGrid (Option Y)', () => {
         return Promise.reject(new Error('Not mocked: ' + url))
       })
       renderGrid()
-      // Wait for an always-rendered hint to confirm cards mounted.
+      // HR-4b: mystery-hint removed (no XP for variety modes). Wait
+      // for the card itself to confirm the grid mounted.
       await waitFor(() => {
-        expect(screen.getByTestId('compact-card-mystery-hint')).toBeInTheDocument()
+        expect(screen.getByTestId('compact-card-mystery')).toBeInTheDocument()
       })
       expect(screen.queryByTestId('compact-card-tournament-hint')).not.toBeInTheDocument()
     })
@@ -380,10 +386,10 @@ describe('GameModeGrid (Option Y)', () => {
         return Promise.reject(new Error('Not mocked: ' + url))
       })
       renderGrid()
-      // Wait for one of the always-rendered hints to assert the cards
-      // already mounted — then probe for the absent multiplayer hint.
+      // HR-4b: mystery-hint removed. Wait for the multiplayer card
+      // itself to assert mount, then probe for the absent hint.
       await waitFor(() => {
-        expect(screen.getByTestId('compact-card-mystery-hint')).toBeInTheDocument()
+        expect(screen.getByTestId('compact-card-multiplayer')).toBeInTheDocument()
       })
       expect(screen.queryByTestId('compact-card-multiplayer-hint')).not.toBeInTheDocument()
     })
