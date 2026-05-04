@@ -731,6 +731,12 @@
       "energy": "Energy",
       "seasonPoints": "Season"
     },
+    "motivation": {
+      "step": "Step 1",
+      "title": "Complete today's challenge",
+      "description": "Once you finish your first Daily Challenge, you'll unlock Daily Missions, the Leaderboard, and start your streak.",
+      "cta": "Start"
+    },
     "defaultName": "Learner",
     "maxTierReached": "Highest tier reached!",
     "tierProgress": "Tier progress",

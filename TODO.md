@@ -45,7 +45,7 @@
   - [x] Tests: FDC 13/13, Home 28/28, GreetingCard 15/15 = 56/56 pass
   - [ ] Commit: `feat(home): redesign FeaturedDailyChallenge hero — 3-col + season chip (HR-2)` — pending
 
-### Task HR-3: MotivationCard cho user mới [ ] TODO
+### Task HR-3: MotivationCard cho user mới [x] DONE 2026-05-05
 - File(s): `apps/web/src/components/MotivationCard.tsx` (NEW), test
 - Mockup section: `.motivation-card` (lines 660-695, 877-891)
 - Spec:
@@ -53,9 +53,11 @@
   - Icon 56px blue gradient `tips_and_updates` + "Bước 1: Hoàn thành thử thách hôm nay"
   - CTA "Bắt đầu →" navigate `/daily-challenge`
 - Checklist:
-  - [ ] Component + i18n keys
-  - [ ] ≥ 8 tests (render khi <1000, ẩn khi ≥1000, click CTA navigate, props, a11y)
-  - [ ] Commit: `feat(home): MotivationCard for new users (HR-3)`
+  - [x] Component + i18n keys (`home.motivation.{step,title,description,cta}` vi+en)
+  - [x] 9 tests pass (container, icon, step badge, title, description, CTA href /daily, CTA label, language switch en, link tag)
+  - [x] Tests: MotivationCard 9/9 pass
+  - [ ] Wire vào Home.tsx — defer to HR-6 (conditional render khi totalPoints < 1000)
+  - [ ] Commit: `feat(home): MotivationCard for new users (HR-3)` — pending
 
 ### Task HR-4: Tách GameModeGrid thành 3 sections [ ] TODO
 - File(s): `apps/web/src/components/GameModeGrid.tsx` → split thành `PrimaryModes.tsx` + `VarietyModes.tsx` + `GroupModes.tsx`, test

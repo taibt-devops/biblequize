@@ -731,6 +731,12 @@
       "energy": "Năng lượng",
       "seasonPoints": "Mùa này"
     },
+    "motivation": {
+      "step": "Bước 1",
+      "title": "Hoàn thành thử thách hôm nay",
+      "description": "Sau khi hoàn thành Daily Challenge đầu tiên, bạn sẽ mở khóa Nhiệm vụ ngày, Bảng xếp hạng, và bắt đầu chuỗi (streak).",
+      "cta": "Bắt đầu"
+    },
     "defaultName": "Người Học",
     "maxTierReached": "Đã đạt hạng cao nhất!",
     "tierProgress": "Tiến trình hạng",
