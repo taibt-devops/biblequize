@@ -23,6 +23,21 @@ describe('AnswerButton', () => {
       expect(screen.getByTestId('quiz-answer-0')).toBeInTheDocument()
     })
 
+    it('compact prop sets data-compact and applies smaller min-h class on mobile', () => {
+      render(<AnswerButton {...baseProps} compact testId="qa" />)
+      const btn = screen.getByTestId('qa')
+      expect(btn).toHaveAttribute('data-compact', 'true')
+      expect(btn.className).toContain('min-h-[44px]')
+      expect(btn.className).toContain('md:min-h-[64px]')
+    })
+
+    it('omits data-compact attribute when compact is false', () => {
+      render(<AnswerButton {...baseProps} testId="qa" />)
+      const btn = screen.getByTestId('qa')
+      expect(btn).not.toHaveAttribute('data-compact')
+      expect(btn.className).toContain('min-h-[64px]')
+    })
+
     it('exposes index and state via data attributes', () => {
       render(<AnswerButton {...baseProps} index={2} letter="C" state="selected" />)
       const btn = screen.getByRole('button')

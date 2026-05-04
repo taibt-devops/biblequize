@@ -16,6 +16,10 @@ interface AnswerButtonProps {
   state: AnswerState
   onClick?: () => void
   testId?: string
+  /** QM-4: when true, mobile (<md) uses compact size (44px min-h, smaller
+   *  padding/letter/text) — used when the question is very long so answers
+   *  don't push content off-screen. Desktop layout is unchanged either way. */
+  compact?: boolean
 }
 
 // Per-position color classes. Tailwind JIT needs literal class strings, so we
@@ -65,6 +69,7 @@ export const AnswerButton: React.FC<AnswerButtonProps> = ({
   state,
   onClick,
   testId,
+  compact = false,
 }) => {
   const color = COLORS[index]
   const isInteractive = state === 'default' || state === 'selected'
@@ -143,23 +148,31 @@ export const AnswerButton: React.FC<AnswerButtonProps> = ({
       onClick={isInteractive ? onClick : undefined}
       disabled={!isInteractive}
       aria-disabled={!isInteractive}
+      data-compact={compact || undefined}
       className={clsx(
-        'group relative flex items-center gap-4 p-4 md:p-5 rounded-2xl border-2',
+        'group relative flex items-center rounded-2xl border-2',
         'transition-all duration-200 text-left active:scale-[0.98]',
-        'min-h-[64px]',
+        compact
+          ? 'gap-2.5 md:gap-4 p-2.5 md:p-5 min-h-[44px] md:min-h-[64px]'
+          : 'gap-4 p-4 md:p-5 min-h-[64px]',
         btnClasses,
       )}
     >
       <div
         className={clsx(
-          'w-9 h-9 flex items-center justify-center rounded-lg',
-          'font-medium text-base flex-shrink-0',
+          'flex items-center justify-center rounded-lg',
+          'font-medium flex-shrink-0',
+          compact ? 'w-7 h-7 md:w-9 md:h-9 text-sm md:text-base' : 'w-9 h-9 text-base',
           letterClasses,
         )}
       >
         {letter}
       </div>
-      <span className={clsx('flex-1 font-medium text-sm md:text-base leading-snug', textClasses)}>
+      <span className={clsx(
+        'flex-1 font-medium leading-snug',
+        compact ? 'text-xs md:text-base' : 'text-sm md:text-base',
+        textClasses,
+      )}>
         {text}
       </span>
       {trailingIcon && (

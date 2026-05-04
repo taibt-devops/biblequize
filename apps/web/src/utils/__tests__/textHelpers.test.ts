@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { render } from '@testing-library/react'
 import React from 'react'
-import { wrapProperNouns, formatVerseRef } from '../textHelpers'
+import { wrapProperNouns, formatVerseRef, getQuestionLengthClass } from '../textHelpers'
 
 /**
  * Render the result of wrapProperNouns into a fragment so we can run
@@ -142,5 +142,29 @@ describe('formatVerseRef', () => {
     expect(formatVerseRef({
       book: 'Mác', chapter: 5, verseEnd: 10,
     })).toBe('MÁC 5')
+  })
+})
+
+describe('getQuestionLengthClass', () => {
+  it('returns "short" for text < 80 chars', () => {
+    expect(getQuestionLengthClass('Ai đã tạo dựng trời đất?')).toBe('short')
+    expect(getQuestionLengthClass('a'.repeat(79))).toBe('short')
+  })
+
+  it('returns "medium" for 80..179 chars', () => {
+    expect(getQuestionLengthClass('a'.repeat(80))).toBe('medium')
+    expect(getQuestionLengthClass('a'.repeat(120))).toBe('medium')
+    expect(getQuestionLengthClass('a'.repeat(179))).toBe('medium')
+  })
+
+  it('returns "long" for ≥ 180 chars', () => {
+    expect(getQuestionLengthClass('a'.repeat(180))).toBe('long')
+    expect(getQuestionLengthClass('a'.repeat(300))).toBe('long')
+  })
+
+  it('treats null/undefined/empty as "short"', () => {
+    expect(getQuestionLengthClass(null)).toBe('short')
+    expect(getQuestionLengthClass(undefined)).toBe('short')
+    expect(getQuestionLengthClass('')).toBe('short')
   })
 })

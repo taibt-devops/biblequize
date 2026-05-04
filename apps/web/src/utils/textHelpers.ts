@@ -60,6 +60,22 @@ export function formatVerseRef(ref: VerseRef): string {
   return `${book} ${ref.chapter}:${ref.verseStart}`
 }
 
+/**
+ * Bucket question content length into one of three classes used by the
+ * mobile Quiz layout (QM-3 / `quiz_mobile_redesign_mockup.html`):
+ *   - 'short'  (< 80 chars)   → font 21px, weight 700, center align
+ *   - 'medium' (80–179 chars) → font 18px, weight 600, center align
+ *   - 'long'   (≥ 180 chars)  → font 15px, weight 600, left align
+ */
+export type QuestionLengthClass = 'short' | 'medium' | 'long'
+
+export function getQuestionLengthClass(text: string | null | undefined): QuestionLengthClass {
+  const len = (text ?? '').length
+  if (len < 80) return 'short'
+  if (len < 180) return 'medium'
+  return 'long'
+}
+
 export function wrapProperNouns(text: string): React.ReactNode[] {
   if (!text) return []
   // String.prototype.split with a capturing group keeps the captures in

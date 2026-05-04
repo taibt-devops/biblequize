@@ -8,7 +8,7 @@ import { haptic } from '../utils/haptics'
 import { useLifeline } from '../hooks/useLifeline'
 import { AnswerButton, type AnswerState } from '../components/quiz/AnswerButton'
 import { CircularTimer } from '../components/quiz/CircularTimer'
-import { wrapProperNouns, formatVerseRef } from '../utils/textHelpers'
+import { wrapProperNouns, formatVerseRef, getQuestionLengthClass } from '../utils/textHelpers'
 import QuizResults from './QuizResults'
 
 interface Question {
@@ -121,6 +121,7 @@ const Quiz: React.FC = () => {
 
   const currentQuestion = questions[currentQuestionIndex]
   const progressPercent = questions.length > 0 ? ((currentQuestionIndex + 1) / questions.length) * 100 : 0
+  const questionLenClass = getQuestionLengthClass(currentQuestion?.content)
 
   // Lifeline (hint) integration. Disabled when there's no backend session
   // (guest / practice-without-session mode) or when the user is on the
@@ -586,14 +587,17 @@ const Quiz: React.FC = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2 bg-surface-container-high px-3 py-1.5 rounded-full border border-outline-variant/10">
+          <div className="hidden md:flex items-center gap-2 bg-surface-container-high px-3 py-1.5 rounded-full border border-outline-variant/10">
             <span className="material-symbols-outlined text-secondary text-lg" style={FILL_STYLE}>bolt</span>
             <span className="font-bold text-sm">{score.toLocaleString()}</span>
           </div>
-          <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-secondary/20 flex items-center justify-center bg-surface-container-high md:hidden">
-            <span className={`font-black text-sm ${timeLeft <= 5 ? 'text-error animate-pulse' : 'text-on-surface'}`}>
-              {timeLeft}
-            </span>
+          <div className="md:hidden">
+            <CircularTimer
+              secondsLeft={timeLeft}
+              totalSeconds={timerLimit}
+              size={44}
+              testId="quiz-timer-mobile"
+            />
           </div>
         </div>
       </header>
@@ -615,8 +619,47 @@ const Quiz: React.FC = () => {
 
       {/* Main Content */}
       <main className="relative min-h-screen pt-24 pb-12 px-6 flex flex-col items-center justify-center max-w-5xl mx-auto">
-        {/* Top Stats Row */}
-        <div className="w-full flex justify-between items-end mb-8">
+        {/* Mobile-only HUD strip — 3 pills (energy/combo/score) per QM-2 mockup.
+            Replaces desktop "Top Stats Row" on small screens. */}
+        <div
+          data-testid="quiz-hud-mobile"
+          className="md:hidden w-full grid grid-cols-3 gap-2 mb-4"
+        >
+          <div className="flex items-center gap-2 px-2.5 py-2 rounded-xl bg-surface-container-low border border-outline-variant/10 min-w-0">
+            <span className="material-symbols-outlined text-secondary text-base flex-shrink-0" style={FILL_STYLE}>bolt</span>
+            <div className="min-w-0">
+              <div className="text-[9px] font-bold uppercase tracking-wider text-on-surface-variant leading-none">{t('quiz.energy')}</div>
+              <div className="flex gap-0.5 mt-1.5" data-testid="quiz-energy-bars-mobile" data-energy={serverEnergy ?? ''}>
+                {Array.from({ length: ENERGY_BARS }).map((_, i) => {
+                  const filled = i < computeEnergyBarsFilled(serverEnergy, lives)
+                  return (
+                    <div
+                      key={i}
+                      className={`w-1 h-2 rounded-sm ${filled ? 'bg-secondary' : 'bg-surface-container-highest'}`}
+                    />
+                  )
+                })}
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 px-2.5 py-2 rounded-xl bg-surface-container-low border border-outline-variant/10 min-w-0">
+            <span className="material-symbols-outlined text-secondary text-base flex-shrink-0" style={FILL_STYLE}>stars</span>
+            <div className="min-w-0">
+              <div className="text-[9px] font-bold uppercase tracking-wider text-on-surface-variant leading-none">{t('quiz.comboStreak')}</div>
+              <div className={`text-[13px] font-extrabold tabular-nums leading-none mt-1.5 ${combo > 0 ? 'text-secondary' : 'text-on-surface'} ${scorePopping ? 'score-pop-anim' : ''}`}>×{combo}</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 px-2.5 py-2 rounded-xl bg-surface-container-low border border-outline-variant/10 min-w-0">
+            <span className="material-symbols-outlined text-green-400 text-base flex-shrink-0" style={FILL_STYLE}>scoreboard</span>
+            <div className="min-w-0">
+              <div className="text-[9px] font-bold uppercase tracking-wider text-on-surface-variant leading-none">{t('quiz.score')}</div>
+              <div className="text-[13px] font-extrabold tabular-nums leading-none mt-1.5 text-on-surface">{score.toLocaleString()}</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Top Stats Row — desktop only (mobile uses HUD strip above) */}
+        <div className="hidden md:flex w-full justify-between items-end mb-8">
           <div className="flex flex-col items-start gap-1">
             <span className="text-[10px] font-bold uppercase tracking-[0.1em] text-on-surface-variant">{t('quiz.comboStreak')}</span>
             <div className={`flex items-center gap-2 glass-panel px-4 py-2 rounded-2xl border transition-all duration-300 ${combo > 0 ? 'border-secondary/20 gold-glow' : 'border-outline-variant/10'}`}>
@@ -664,39 +707,61 @@ const Quiz: React.FC = () => {
         {/* Question Section.
             QZ-P0-2: verse badge top + wrapProperNouns on the question
             content + .question-text class for `text-wrap: pretty`. The
-            bottom book-meta line stays for E2E (data-testid="quiz-question-book"). */}
-        <div className="w-full space-y-16">
-          <div className="relative w-full aspect-[16/9] md:aspect-[21/7] flex flex-col items-center justify-center text-center p-10 bg-surface-container-low rounded-[2.5rem] border border-outline-variant/10 shadow-2xl overflow-hidden">
-            <div className="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-32 bg-secondary rounded-r-full"></div>
+            bottom book-meta line stays for E2E (data-testid="quiz-question-book").
+            QM-3 mobile: aspect-auto + min-h + adaptive font 3 buckets via
+            getQuestionLengthClass — desktop layout (aspect-[21/7], text-4xl) unchanged. */}
+        <div className="w-full space-y-6 md:space-y-16">
+          {(() => {
+            // Mobile-only font/alignment overrides per length bucket.
+            // Desktop (md+) keeps text-4xl, font-extrabold, text-center via md: prefix.
+            const mobileFontCls =
+              questionLenClass === 'short'  ? 'text-[21px] font-bold text-center' :
+              questionLenClass === 'medium' ? 'text-[18px] font-semibold text-center' :
+                                              'text-[15px] font-semibold text-left'
+            const lenClass = questionLenClass
+            return (
+              <div
+                data-question-length={lenClass}
+                className="relative w-full aspect-auto min-h-[160px] md:aspect-[21/7] md:min-h-0 flex flex-col items-center justify-center text-center p-5 md:p-10 bg-surface-container-low rounded-2xl md:rounded-[2.5rem] border border-outline-variant/10 shadow-2xl overflow-hidden"
+              >
+                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1.5 md:w-2 h-20 md:h-32 bg-secondary rounded-r-full"></div>
 
-            {/* Verse badge — pill at the top of the card. */}
-            <div
-              data-testid="quiz-verse-badge"
-              className="inline-flex items-center gap-1.5 bg-secondary/10 border border-secondary/20 rounded-full px-3 py-1 mb-4"
-            >
-              <span className="material-symbols-outlined text-secondary text-xs">menu_book</span>
-              <span className="text-secondary text-[11px] font-medium tracking-wider">
-                {formatVerseRef(currentQuestion)}
-              </span>
-            </div>
+                {/* Verse badge — pill at the top of the card. */}
+                <div
+                  data-testid="quiz-verse-badge"
+                  className="inline-flex items-center gap-1.5 bg-secondary/10 border border-secondary/20 rounded-full px-3 py-1 mb-3 md:mb-4"
+                >
+                  <span className="material-symbols-outlined text-secondary text-xs">menu_book</span>
+                  <span className="text-secondary text-[11px] font-medium tracking-wider">
+                    {formatVerseRef(currentQuestion)}
+                  </span>
+                </div>
 
-            <h2
-              data-testid="quiz-question-text"
-              className="question-text font-headline text-2xl md:text-4xl font-extrabold tracking-tight leading-snug max-w-3xl text-on-surface"
-            >
-              {wrapProperNouns(currentQuestion.content)}
-            </h2>
-            <div className="mt-8 flex items-center gap-2 text-on-surface-variant/60">
-              <span className="material-symbols-outlined text-sm">menu_book</span>
-              <span data-testid="quiz-question-book" className="text-xs font-bold uppercase tracking-widest">
-                {currentQuestion.book}{currentQuestion.chapter ? ` - ${t('quiz.chapter', { chapter: currentQuestion.chapter })}` : ''}
-              </span>
-            </div>
-          </div>
+                <h2
+                  data-testid="quiz-question-text"
+                  className={`question-text font-headline ${mobileFontCls} md:text-4xl md:font-extrabold md:text-center tracking-tight leading-snug max-w-3xl text-on-surface w-full`}
+                >
+                  {wrapProperNouns(currentQuestion.content)}
+                </h2>
+                {/* Bottom book-meta — desktop only; mobile already shows book+chapter in topbar. */}
+                <div className="hidden md:flex mt-8 items-center gap-2 text-on-surface-variant/60">
+                  <span className="material-symbols-outlined text-sm">menu_book</span>
+                  <span data-testid="quiz-question-book" className="text-xs font-bold uppercase tracking-widest">
+                    {currentQuestion.book}{currentQuestion.chapter ? ` - ${t('quiz.chapter', { chapter: currentQuestion.chapter })}` : ''}
+                  </span>
+                </div>
+              </div>
+            )
+          })()}
 
           {/* Answers Grid — AnswerButton handles per-position color (Coral/Sky/Gold/Sage),
-              all 6 visual states, animations, icons. See QZ-P0-1 in BUG_REPORT_QUIZ.md. */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              all 6 visual states, animations, icons. See QZ-P0-1 in BUG_REPORT_QUIZ.md.
+              QM-4: tighter gap on mobile + compact button mode when question is "long". */}
+          <div
+            data-testid="quiz-answers-grid"
+            data-compact={questionLenClass === 'long' || undefined}
+            className={`grid grid-cols-1 md:grid-cols-2 ${questionLenClass === 'long' ? 'gap-2' : 'gap-3'} md:gap-6`}
+          >
             {currentQuestion.options.map((option, index) => {
               const correctIdx = currentQuestion.correctAnswer?.[0] ?? -1
               const isSelected = selectedAnswer === index
@@ -719,6 +784,7 @@ const Quiz: React.FC = () => {
                   letter={ANSWER_LETTERS[index] as 'A' | 'B' | 'C' | 'D'}
                   text={option}
                   state={state}
+                  compact={questionLenClass === 'long'}
                   onClick={() => handleAnswerSelect(index)}
                   testId={`quiz-answer-${index}`}
                 />
