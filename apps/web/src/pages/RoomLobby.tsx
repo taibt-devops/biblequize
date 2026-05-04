@@ -17,6 +17,9 @@ type RoomDetails = {
   hostId: string; hostName: string; players: Player[];
   questionSource?: 'DATABASE' | 'CUSTOM';
   questionSetId?: string | null;
+  bookScope?: string;
+  difficulty?: string;
+  createdAt?: string;
 };
 
 type UserQuestionDTO = {
@@ -25,21 +28,59 @@ type UserQuestionDTO = {
   book: string; chapter: number; explanation: string; theme: string;
 };
 type ChatMessage = {
-  sender: string;
-  text: string;
-  isHost?: boolean;
+  sender: string; text: string;
+  isHost?: boolean; isSystem?: boolean; time?: string;
 };
 
-const MODE_LABELS: Record<string, string> = {
-  SPEED_RACE: 'Speed Race',
-  BATTLE_ROYALE: 'Battle Royale',
-  TEAM_VS_TEAM: 'Team vs Team',
-  SUDDEN_DEATH: 'Sudden Death',
+const MODE_INFO: Record<string, { label: string; emoji: string; ruleTitle: string; ruleText: string; badgeColor: string; badgeBg: string; badgeBorder: string }> = {
+  SPEED_RACE: {
+    label: 'Speed Race', emoji: '⚡',
+    ruleTitle: 'LUẬT SPEED RACE',
+    ruleText: 'Trả lời nhanh nhất để ghi điểm cao nhất. Tốc độ và độ chính xác cùng quyết định thứ hạng của bạn.',
+    badgeColor: '#fbbf24', badgeBg: 'rgba(251,191,36,0.15)', badgeBorder: 'rgba(251,191,36,0.3)',
+  },
+  BATTLE_ROYALE: {
+    label: 'Battle Royale', emoji: '❤️',
+    ruleTitle: 'LUẬT BATTLE ROYALE',
+    ruleText: 'Mỗi câu sai = bị loại. Người trả lời đúng cuối cùng thắng. Tối đa 30 câu/trận. Khi cả nhóm sai cùng câu, không ai bị loại.',
+    badgeColor: '#f87171', badgeBg: 'rgba(239,68,68,0.15)', badgeBorder: 'rgba(239,68,68,0.3)',
+  },
+  TEAM_VS_TEAM: {
+    label: 'Team vs Team', emoji: '🏆',
+    ruleTitle: 'LUẬT TEAM VS TEAM',
+    ruleText: 'Hai đội cạnh tranh nhau. Đội nào ghi nhiều điểm hơn sau tất cả câu hỏi sẽ thắng. Phối hợp với đồng đội!',
+    badgeColor: '#60a5fa', badgeBg: 'rgba(96,165,250,0.15)', badgeBorder: 'rgba(96,165,250,0.3)',
+  },
+  SUDDEN_DEATH: {
+    label: 'Sudden Death', emoji: '⚔️',
+    ruleTitle: 'LUẬT SUDDEN DEATH',
+    ruleText: 'Sai một câu là thua! Chỉ có một người có thể trở thành người chiến thắng cuối cùng.',
+    badgeColor: '#c084fc', badgeBg: 'rgba(192,132,252,0.15)', badgeBorder: 'rgba(192,132,252,0.3)',
+  },
 };
 
-const QUICK_EMOJIS = ['🙏', '🔥', '🙌', '💡', '✨'];
+const DIFFICULTY_INFO: Record<string, { label: string; color: string; bg: string }> = {
+  EASY:   { label: 'Dễ',          color: '#4ade80', bg: 'rgba(74,222,128,0.15)' },
+  MEDIUM: { label: 'Trung bình',  color: '#ff8c42', bg: 'rgba(255,140,66,0.15)' },
+  HARD:   { label: 'Khó',         color: '#f87171', bg: 'rgba(239,68,68,0.15)'  },
+  MIXED:  { label: 'Hỗn hợp',    color: 'rgba(255,255,255,0.55)', bg: 'rgba(255,255,255,0.07)' },
+};
+
+const QUICK_EMOJIS = ['🙏', '🔥', '👏', '💡', '✨'];
 
 const myUsername = () => localStorage.getItem('userName') ?? '';
+
+const fmtTime = (iso?: string) => {
+  if (!iso) return '';
+  try {
+    const d = new Date(iso);
+    return `${d.getHours().toString().padStart(2, '0')}:${d.getMinutes().toString().padStart(2, '0')}`;
+  } catch { return ''; }
+};
+
+const nowTime = () => fmtTime(new Date().toISOString());
+
+// ─────────────────────────────────────────────────────────────────────────────
 
 const RoomLobby: React.FC = () => {
   const { t } = useTranslation();
@@ -51,10 +92,17 @@ const RoomLobby: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [countdown, setCountdown] = useState<number | null>(null);
   const [switchingTeam, setSwitchingTeam] = useState(false);
-  const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
+  const [chatMessages, setChatMessages] = useState<ChatMessage[]>([{
+    sender: 'SYSTEM',
+    text: 'Phòng đã được tạo. Đang chờ người chơi tham gia...',
+    isSystem: true,
+    time: nowTime(),
+  }]);
   const [chatInput, setChatInput] = useState('');
   const [codeCopied, setCodeCopied] = useState(false);
   const chatEndRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.innerWidth < 640);
+  const [chatOpen, setChatOpen] = useState(true);
 
   const { connected, reconnecting, send } = useStomp({
     roomId,
@@ -69,7 +117,11 @@ const RoomLobby: React.FC = () => {
           break;
         case 'CHAT_MESSAGE': {
           const d = msg.data as { sender: string; text: string };
-          setChatMessages(prev => [...prev, { sender: d.sender, text: d.text, isHost: d.sender === room?.hostName }]);
+          setChatMessages(prev => [...prev, {
+            sender: d.sender, text: d.text,
+            isHost: d.sender === room?.hostName,
+            time: nowTime(),
+          }]);
           break;
         }
         case 'GAME_STARTING': {
@@ -77,8 +129,7 @@ const RoomLobby: React.FC = () => {
           setCountdown(d.countdown);
           const myTeam = room?.players?.find(p => p.username === myUsername())?.team ?? null;
           setTimeout(() => navigate(`/room/${roomId}/quiz`, {
-            replace: true,
-            state: { mode: room?.mode, myTeam }
+            replace: true, state: { mode: room?.mode, myTeam }
           }), d.countdown * 1000);
           break;
         }
@@ -99,60 +150,39 @@ const RoomLobby: React.FC = () => {
   const fetchRoom = async () => {
     if (!roomId) return;
     try {
-      const res = await fetch(`/api/rooms/${roomId}`, {
-        headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
-      });
-      const data = await res.json();
-      if (data.success) setRoom(data.room);
-      else setError(data.message || t('room.errorFetchRoom'));
+      const res = await api.get(`/api/rooms/${roomId}`);
+      if (res.data.success) setRoom(res.data.room);
+      else setError(res.data.message || t('room.errorFetchRoom'));
     } catch {
       setError(t('room.errorNetwork'));
     }
   };
 
+  useEffect(() => { fetchRoom(); }, []);
+  useEffect(() => { chatEndRef.current?.scrollIntoView({ behavior: 'smooth' }); }, [chatMessages]);
   useEffect(() => {
-    if (!room) fetchRoom();
+    const handler = () => setIsMobile(window.innerWidth < 640);
+    window.addEventListener('resize', handler);
+    return () => window.removeEventListener('resize', handler);
   }, []);
 
-  useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [chatMessages]);
-
-  const handleToggleReady = () => {
-    if (!roomId) return;
-    send(`/app/room/${roomId}/ready`, {});
-  };
-
+  const handleToggleReady = () => { if (roomId) send(`/app/room/${roomId}/ready`, {}); };
   const handleStart = async () => {
     if (!roomId) return;
     try {
-      await fetch(`/api/rooms/${roomId}/start`, {
-        method: 'POST',
-        headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
-      });
+      await api.post(`/api/rooms/${roomId}/start`);
       send(`/app/room/${roomId}/start`, {});
-    } catch {
-      setError(t('room.errorStartRoom'));
-    }
+    } catch { setError(t('room.errorStartRoom')); }
   };
-
   const handleSwitchTeam = async () => {
     if (!roomId) return;
     setSwitchingTeam(true);
     try {
-      const res = await fetch(`/api/rooms/${roomId}/switch-team`, {
-        method: 'POST',
-        headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
-      });
-      const data = await res.json();
-      if (data.success) setRoom(data.room);
-    } catch {
-      setError(t('room.errorSwitchTeam'));
-    } finally {
-      setSwitchingTeam(false);
-    }
+      const res = await api.post(`/api/rooms/${roomId}/switch-team`);
+      if (res.data.success) setRoom(res.data.room);
+    } catch { setError(t('room.errorSwitchTeam')); }
+    finally { setSwitchingTeam(false); }
   };
-
   const handleCopyCode = () => {
     if (room?.roomCode) {
       navigator.clipboard.writeText(room.roomCode);
@@ -160,69 +190,294 @@ const RoomLobby: React.FC = () => {
       setTimeout(() => setCodeCopied(false), 2000);
     }
   };
-
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(`${window.location.origin}/join?code=${room?.roomCode}`);
+  };
   const handleSendChat = (text: string) => {
     if (!text.trim() || !roomId) return;
     send(`/app/room/${roomId}/chat`, { text: text.trim() });
     setChatInput('');
   };
-
   const handleLeave = async () => {
-    if (roomId) {
-      try {
-        await fetch(`/api/rooms/${roomId}/leave`, {
-          method: 'POST',
-          headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` },
-        });
-      } catch { /* ignore */ }
-    }
+    if (roomId) { try { await api.post(`/api/rooms/${roomId}/leave`); } catch { /* ignore */ } }
     navigate('/multiplayer');
   };
 
-  const readyCount = useMemo(() => room?.players?.filter((p) => p.isReady).length ?? 0, [room]);
   const isTeamVsTeam = room?.mode === 'TEAM_VS_TEAM';
   const isSuddenDeath = room?.mode === 'SUDDEN_DEATH';
   const teamAPlayers = room?.players?.filter(p => p.team === 'A') ?? [];
   const teamBPlayers = room?.players?.filter(p => p.team === 'B') ?? [];
   const myPlayer = room?.players?.find(p => p.username === myUsername());
   const isHost = myPlayer?.userId === room?.hostId;
-  const canStart = room?.status === 'LOBBY' && readyCount >= 2;
   const emptySlots = room ? Math.max(0, room.maxPlayers - room.currentPlayers) : 0;
+  const modeInfo = MODE_INFO[room?.mode ?? ''] ?? { label: room?.mode ?? '', emoji: '🎮', ruleTitle: 'LUẬT CHƠI', ruleText: '', badgeColor: '#e8a832', badgeBg: 'rgba(232,168,50,0.15)', badgeBorder: 'rgba(232,168,50,0.3)' };
+  const diffInfo = DIFFICULTY_INFO[room?.difficulty ?? ''] ?? DIFFICULTY_INFO.MIXED;
 
-  /* ---------- Countdown overlay ---------- */
-  if (countdown !== null) {
-    return (
-      <div className="min-h-screen bg-surface-dim flex items-center justify-center">
-        <div className="text-center">
-          <div className="text-8xl font-bold text-secondary animate-bounce-in">{countdown}</div>
-          <p className="text-xl text-on-surface-variant mt-4">{t('room.gameStarting')}</p>
-        </div>
+  // Non-host players: must all be ready before host can start
+  const nonHostPlayers = useMemo(() => room?.players?.filter(p => p.userId !== room?.hostId) ?? [], [room]);
+  const readyNonHostCount = useMemo(() => nonHostPlayers.filter(p => p.isReady).length, [nonHostPlayers]);
+  const readyCount = useMemo(() => room?.players?.filter(p => p.isReady).length ?? 0, [room]);
+  const canStart = room?.status === 'LOBBY' && nonHostPlayers.length >= 1 && readyNonHostCount === nonHostPlayers.length;
+
+  // Status copy — single source of truth
+  const statusPrimary = (() => {
+    if (!room) return '';
+    if (room.currentPlayers < 2) return 'Đang chờ thêm người chơi';
+    if (readyNonHostCount < nonHostPlayers.length) return 'Đang chờ tất cả sẵn sàng';
+    return 'Tất cả đã sẵn sàng!';
+  })();
+  const statusSecondary = (() => {
+    if (!room) return '';
+    const need = Math.max(0, 2 - room.currentPlayers);
+    if (room.currentPlayers < 2) return `Cần thêm ${need} người để bắt đầu`;
+    if (readyNonHostCount < nonHostPlayers.length) return `${readyNonHostCount}/${nonHostPlayers.length} người chơi đã sẵn sàng`;
+    return `${room.currentPlayers}/${room.maxPlayers} người · Có thể bắt đầu`;
+  })();
+
+  /* ── Countdown overlay ── */
+  if (countdown !== null) return (
+    <div className="min-h-screen bg-surface-dim flex items-center justify-center">
+      <div className="text-center">
+        <div className="text-8xl font-bold text-secondary animate-bounce-in">{countdown}</div>
+        <p className="text-xl text-on-surface-variant mt-4">{t('room.gameStarting')}</p>
       </div>
-    );
-  }
+    </div>
+  );
 
-  /* ---------- Error state ---------- */
+  /* ── Error state ── */
   if (error) return (
     <div className="min-h-screen bg-surface-dim flex items-center justify-center">
       <div className="text-center space-y-4">
         <span className="material-symbols-outlined text-error text-5xl">error</span>
         <p className="text-error text-lg">{error}</p>
-        <button onClick={() => navigate('/multiplayer')} className="text-secondary underline text-sm">
-          {t('common.back')}
-        </button>
+        <button onClick={() => navigate('/multiplayer')} className="text-secondary underline text-sm">{t('common.back')}</button>
       </div>
     </div>
   );
 
-  /* ---------- Loading state ---------- */
+  /* ── Loading state ── */
   if (!room) return (
     <div className="min-h-screen bg-surface-dim flex items-center justify-center">
       <p className="text-on-surface-variant animate-pulse text-lg">{t('room.loadingRoom')}</p>
     </div>
   );
 
+  /* ── MOBILE LAYOUT ── */
+  if (isMobile) return (
+    <div style={{ background: '#11131e', minHeight: '100vh', position: 'relative', fontFamily: "'Be Vietnam Pro', sans-serif", color: '#e1e1f1' }}>
+
+      {reconnecting && (
+        <div className="fixed top-0 left-0 right-0 z-[70] bg-error-container/90 text-on-error-container text-center py-2 text-sm font-medium">
+          <span className="material-symbols-outlined text-sm align-middle mr-1">wifi_off</span>
+          {t('room.reconnecting')}
+        </div>
+      )}
+
+      {/* Sticky header */}
+      <header style={{ position: 'sticky', top: 0, background: 'rgba(17,19,30,0.95)', backdropFilter: 'blur(8px)', borderBottom: '0.5px solid rgba(255,255,255,0.06)', padding: '10px 14px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 5 }}>
+        <Link to="/multiplayer" style={{ color: 'rgba(255,255,255,0.6)', fontSize: 14, textDecoration: 'none' }}>←</Link>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+          <span style={{ width: 6, height: 6, borderRadius: '50%', background: connected ? '#97C459' : '#f87171', boxShadow: connected ? '0 0 4px #97C459' : '0 0 4px #f87171', display: 'inline-block' }} />
+          <span style={{ color: connected ? '#97C459' : '#f87171', fontSize: 10, fontWeight: 500, letterSpacing: '0.4px' }}>
+            {connected ? 'ĐÃ KẾT NỐI' : 'MẤT KẾT NỐI'}
+          </span>
+        </div>
+        <button style={{ background: 'transparent', color: 'rgba(255,255,255,0.6)', border: 'none', fontSize: 16, cursor: 'pointer' }}>⚙️</button>
+      </header>
+
+      {/* Scrollable content */}
+      <div style={{ padding: '12px 14px 110px' }}>
+
+        {/* Room info card */}
+        <section style={{ background: 'linear-gradient(135deg, rgba(232,168,50,0.08), rgba(50,52,64,0.4))', border: '0.5px solid rgba(232,168,50,0.25)', borderRadius: 12, padding: 12, marginBottom: 10 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6, flexWrap: 'wrap' }}>
+            <span style={{ background: modeInfo.badgeBg, color: modeInfo.badgeColor, padding: '2px 6px', borderRadius: 5, fontSize: 9, fontWeight: 500, display: 'flex', alignItems: 'center', gap: 3, border: `0.5px solid ${modeInfo.badgeBorder}` }}>
+              <span>{modeInfo.emoji}</span> {modeInfo.label}
+            </span>
+            <span style={{ background: room.isPublic ? 'rgba(74,222,128,0.1)' : 'rgba(255,140,66,0.15)', color: room.isPublic ? '#4ade80' : '#ff8c42', padding: '2px 6px', borderRadius: 999, fontSize: 8, fontWeight: 500 }}>
+              {room.isPublic ? '🌐 Công khai' : '🔒 Riêng tư'}
+            </span>
+          </div>
+          <h1 style={{ color: '#fff', fontSize: 16, fontWeight: 500, margin: '0 0 6px', lineHeight: 1.3 }}>{room.roomName}</h1>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 10 }}>
+            <div style={{ width: 18, height: 18, borderRadius: '50%', background: 'rgba(156,163,175,0.3)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 9, fontWeight: 500 }}>
+              {room.hostName?.[0]?.toUpperCase()}
+            </div>
+            <span style={{ color: 'rgba(255,255,255,0.85)', fontSize: 11 }}>{room.hostName}</span>
+            <span style={{ background: 'rgba(232,168,50,0.2)', color: '#e8a832', padding: '1px 5px', borderRadius: 999, fontSize: 8, fontWeight: 500 }}>CHỦ</span>
+            {room.createdAt && <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: 10, marginLeft: 'auto' }}>{fmtTime(room.createdAt)}</span>}
+          </div>
+          <div style={{ background: 'rgba(0,0,0,0.2)', borderRadius: 8, padding: '8px 10px', display: 'flex', flexDirection: 'column', gap: 6 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 11, color: 'rgba(255,255,255,0.85)' }}>
+              <span>📖</span>
+              <span style={{ fontWeight: 500 }}>{room.bookScope && room.bookScope !== 'ALL' ? room.bookScope : 'Toàn bộ Kinh Thánh'}</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 11, color: 'rgba(255,255,255,0.65)' }}>
+              {room.difficulty && (
+                <span style={{ background: diffInfo.bg, color: diffInfo.color, padding: '1px 6px', borderRadius: 999, fontSize: 10, fontWeight: 500 }}>⚡ {diffInfo.label}</span>
+              )}
+              <span>📝 {room.questionCount} câu</span>
+              <span>⏱ {room.timePerQuestion}s</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Room code section */}
+        <section style={{ background: 'rgba(0,0,0,0.4)', border: '1px solid rgba(232,168,50,0.4)', borderRadius: 12, padding: 12, marginBottom: 10 }}>
+          <div style={{ color: 'rgba(232,168,50,0.7)', fontSize: 9, letterSpacing: '0.5px', marginBottom: 6, fontWeight: 500 }}>MÃ PHÒNG · CHIA SẺ MỜI BẠN BÈ</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <div style={{ color: '#e8a832', fontSize: 22, fontWeight: 600, fontFamily: "'Courier New', monospace", letterSpacing: 3, lineHeight: 1, flex: 1 }}>
+              {room.roomCode}
+            </div>
+            <button
+              onClick={handleCopyCode}
+              style={{ background: 'rgba(232,168,50,0.15)', color: '#e8a832', border: '0.5px solid rgba(232,168,50,0.4)', borderRadius: 6, padding: '6px 10px', fontSize: 11, cursor: 'pointer', flexShrink: 0 }}
+            >
+              {codeCopied ? '✓ Đã sao' : '📋 Sao'}
+            </button>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6 }}>
+            <button onClick={handleCopyLink} style={{ background: 'rgba(232,168,50,0.15)', color: '#e8a832', border: '0.5px solid rgba(232,168,50,0.4)', borderRadius: 6, padding: 8, fontSize: 11, fontWeight: 500, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
+              🔗 Chia sẻ link
+            </button>
+            <button style={{ background: 'rgba(232,168,50,0.15)', color: '#e8a832', border: '0.5px solid rgba(232,168,50,0.4)', borderRadius: 6, padding: 8, fontSize: 11, fontWeight: 500, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
+              📱 Hiện QR
+            </button>
+          </div>
+        </section>
+
+        {/* Players section */}
+        <section style={{ marginBottom: 10 }} data-testid="lobby-player-grid">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
+            <div>
+              <div style={{ color: '#fff', fontSize: 13, fontWeight: 500 }}>Người chơi</div>
+              <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: 10, marginTop: 1 }}>Cần ≥2 người · Tối đa {room.maxPlayers}</div>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 4, background: 'rgba(232,168,50,0.08)', border: '0.5px solid rgba(232,168,50,0.25)', borderRadius: 999, padding: '3px 8px' }}>
+              <span style={{ color: '#e8a832', fontSize: 11, fontWeight: 500 }}>{room.currentPlayers} / {room.maxPlayers}</span>
+            </div>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+            {(room.players ?? []).map(p => (
+              <PlayerCard key={p.id} player={p} hostId={room.hostId} t={t} compact />
+            ))}
+            {Array.from({ length: emptySlots }).map((_, i) => (
+              <EmptySlot key={`empty-${i}`} index={i} t={t} gold={i === 0} />
+            ))}
+          </div>
+        </section>
+
+        {/* Rule banner */}
+        {modeInfo.ruleText && (
+          <section style={{ background: 'rgba(74,158,255,0.05)', border: '0.5px solid rgba(74,158,255,0.2)', borderRadius: 10, padding: '10px 12px', display: 'flex', alignItems: 'flex-start', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 14, flexShrink: 0 }}>💡</span>
+            <div style={{ flex: 1 }}>
+              <div style={{ color: '#6AB8E8', fontSize: 9, fontWeight: 500, letterSpacing: '0.4px', marginBottom: 3 }}>{modeInfo.ruleTitle}</div>
+              <div style={{ color: 'rgba(255,255,255,0.85)', fontSize: 11, lineHeight: 1.4 }}>{modeInfo.ruleText}</div>
+            </div>
+          </section>
+        )}
+
+        {/* Chat section (collapsible) */}
+        <section style={{ background: 'rgba(50,52,64,0.4)', border: '0.5px solid rgba(255,255,255,0.06)', borderRadius: 12, padding: 12, marginBottom: 10 }}>
+          <div
+            style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: chatOpen ? 10 : 0, cursor: 'pointer' }}
+            onClick={() => setChatOpen(v => !v)}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              <span style={{ fontSize: 13 }}>💬</span>
+              <span style={{ color: '#fff', fontSize: 12, fontWeight: 500 }}>Trò chuyện</span>
+              {chatMessages.length > 1 && (
+                <span style={{ background: 'rgba(232,168,50,0.15)', color: '#e8a832', padding: '1px 6px', borderRadius: 999, fontSize: 9, fontWeight: 500 }}>
+                  {chatMessages.length}
+                </span>
+              )}
+            </div>
+            <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: 11 }}>{chatOpen ? '▲' : '▼'}</span>
+          </div>
+          {chatOpen && (
+            <>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 8, maxHeight: 160, overflowY: 'auto' }}>
+                {chatMessages.map((msg, i) => (
+                  <div key={i} style={{ background: 'rgba(255,255,255,0.03)', borderRadius: 8, padding: '8px 10px' }}>
+                    <div style={{ color: msg.isSystem ? 'rgba(232,168,50,0.7)' : msg.isHost ? '#e8a832' : 'rgba(106,184,232,0.9)', fontSize: 9, fontWeight: 500, marginBottom: 2 }}>
+                      {msg.isSystem ? `SYSTEM · ${msg.time ?? ''}` : msg.sender}
+                    </div>
+                    <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: 11, lineHeight: 1.4 }}>{msg.text}</div>
+                  </div>
+                ))}
+                <div ref={chatEndRef} />
+              </div>
+              <div style={{ display: 'flex', gap: 4, marginBottom: 8 }}>
+                {QUICK_EMOJIS.map(emoji => (
+                  <button key={emoji} onClick={() => handleSendChat(emoji)}
+                    style={{ background: 'rgba(255,255,255,0.04)', border: '0.5px solid rgba(255,255,255,0.08)', borderRadius: 6, padding: '4px 8px', fontSize: 13, cursor: 'pointer' }}
+                  >{emoji}</button>
+                ))}
+              </div>
+              <div style={{ background: 'rgba(0,0,0,0.3)', border: '0.5px solid rgba(255,255,255,0.08)', borderRadius: 8, padding: '8px 10px', display: 'flex', alignItems: 'center', gap: 6 }}>
+                <input
+                  style={{ background: 'transparent', border: 'none', outline: 'none', color: '#fff', fontSize: 11, flex: 1 }}
+                  placeholder="Nhắn tin trong phòng..."
+                  value={chatInput}
+                  onChange={e => setChatInput(e.target.value)}
+                  onKeyDown={e => { if (e.key === 'Enter') handleSendChat(chatInput); }}
+                />
+                <button onClick={() => handleSendChat(chatInput)}
+                  style={{ background: 'transparent', color: '#e8a832', border: 'none', fontSize: 14, cursor: 'pointer' }}
+                >→</button>
+              </div>
+            </>
+          )}
+        </section>
+
+      </div>
+
+      {/* Fixed footer */}
+      <footer style={{ position: 'fixed', bottom: 0, left: 0, right: 0, background: 'rgba(17,19,30,0.97)', backdropFilter: 'blur(12px)', borderTop: '0.5px solid rgba(232,168,50,0.15)', padding: '10px 14px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginBottom: 4 }}>
+          <span style={{ width: 6, height: 6, borderRadius: '50%', background: canStart ? '#4ade80' : '#ff8c42', boxShadow: canStart ? '0 0 4px #4ade80' : '0 0 4px #ff8c42', display: 'inline-block' }} />
+          <span style={{ color: '#fff', fontSize: 11, fontWeight: 500 }}>{statusPrimary}</span>
+        </div>
+        <div style={{ textAlign: 'center', color: 'rgba(255,255,255,0.55)', fontSize: 10, marginBottom: 10 }}>
+          {statusSecondary}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', gap: 8 }}>
+          <button
+            data-testid="lobby-leave-btn"
+            onClick={handleLeave}
+            style={{ background: 'rgba(239,68,68,0.1)', color: '#f87171', border: '0.5px solid rgba(239,68,68,0.3)', borderRadius: 8, padding: '11px 14px', fontSize: 12, fontWeight: 500, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 4 }}
+          >
+            ↩ Rời
+          </button>
+          {isHost ? (
+            <button
+              onClick={handleStart}
+              disabled={!canStart}
+              title={!canStart ? statusSecondary : undefined}
+              style={{ background: canStart ? 'linear-gradient(135deg, #e8a832, #e7c268)' : 'rgba(232,168,50,0.15)', color: canStart ? '#11131e' : 'rgba(232,168,50,0.5)', border: `0.5px solid ${canStart ? 'transparent' : 'rgba(232,168,50,0.3)'}`, borderRadius: 10, padding: 11, fontSize: 12, fontWeight: 500, cursor: canStart ? 'pointer' : 'not-allowed', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 }}
+            >
+              ▶ Bắt đầu
+            </button>
+          ) : (
+            <button
+              data-testid="lobby-ready-btn"
+              onClick={handleToggleReady}
+              style={{ background: myPlayer?.isReady ? 'rgba(74,222,128,0.15)' : 'rgba(255,255,255,0.05)', color: myPlayer?.isReady ? '#4ade80' : 'rgba(255,255,255,0.7)', border: `0.5px solid ${myPlayer?.isReady ? 'rgba(74,222,128,0.4)' : 'rgba(255,255,255,0.15)'}`, borderRadius: 8, padding: 11, fontSize: 12, fontWeight: 500, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}
+            >
+              {myPlayer?.isReady ? '✓ Sẵn sàng' : '○ Sẵn sàng'}
+            </button>
+          )}
+        </div>
+      </footer>
+
+    </div>
+  );
+
+  /* ── DESKTOP LAYOUT ── */
   return (
-    <div className="bg-surface-dim text-on-surface min-h-screen selection:bg-secondary/30">
+    <div style={{ background: '#11131e', minHeight: '100vh', fontFamily: "'Be Vietnam Pro', sans-serif", padding: '1.5rem', color: '#e1e1f1' }}>
+
       {/* ── Reconnecting banner ── */}
       {reconnecting && (
         <div className="fixed top-0 left-0 right-0 z-[60] bg-error-container/90 text-on-error-container text-center py-2 text-sm font-medium">
@@ -231,142 +486,233 @@ const RoomLobby: React.FC = () => {
         </div>
       )}
 
-      {/* ── Top Navigation Bar ── */}
-      <header className="bg-surface-container sticky top-0 z-50">
-        <div className="flex justify-between items-center w-full px-6 py-4 max-w-[900px] mx-auto">
-          <h1 className="text-xl font-bold tracking-tighter text-secondary uppercase">
-            {t('room.lobbyTitle')}
-          </h1>
-          <div className="flex items-center gap-3">
-            {/* Connection status dot */}
-            <div className="flex items-center gap-1.5">
-              <span
-                className={`w-2 h-2 rounded-full ${connected ? 'bg-emerald-400 animate-pulse' : 'bg-red-400'}`}
-              />
-              <span className="text-[10px] uppercase tracking-wider text-on-surface-variant/60 font-bold">
-                {connected ? t('room.online') : t('room.offline')}
-              </span>
-            </div>
-            <button
-              onClick={handleCopyCode}
-              className="hover:bg-surface-container-high transition-colors p-2 rounded-lg active:scale-95 active:duration-150"
-              title={t('room.shareRoomCode')}
-            >
-              <span className="material-symbols-outlined text-on-surface">share</span>
-            </button>
+      {/* ── HEADER ── */}
+      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
+        <Link
+          to="/multiplayer"
+          style={{ color: 'rgba(255,255,255,0.5)', fontSize: 12, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 4 }}
+        >
+          ← Đa người chơi
+        </Link>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          {/* Connection status */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+            <span style={{
+              width: 6, height: 6, borderRadius: '50%',
+              background: connected ? '#97C459' : '#f87171',
+              boxShadow: connected ? '0 0 6px #97C459' : '0 0 6px #f87171',
+              display: 'inline-block',
+            }} />
+            <span style={{ color: connected ? '#97C459' : '#f87171', fontSize: 11, fontWeight: 500, letterSpacing: '0.4px' }}>
+              {connected ? 'ĐÃ KẾT NỐI' : 'MẤT KẾT NỐI'}
+            </span>
           </div>
+          <button
+            style={{ background: 'rgba(255,255,255,0.05)', color: 'rgba(255,255,255,0.7)', border: '0.5px solid rgba(255,255,255,0.1)', borderRadius: 6, padding: '6px 10px', fontSize: 11, cursor: 'pointer' }}
+          >
+            ⚙️ Cài đặt
+          </button>
         </div>
       </header>
 
-      {/* ── Main Content ── */}
-      <main className="max-w-[900px] mx-auto px-6 pt-8 pb-32">
-        {/* ── Room Header Section ── */}
-        <div className="flex flex-col md:flex-row gap-6 items-center justify-between mb-10">
-          {/* Room Code + QR */}
-          <div className="flex items-center gap-4">
-            <div className="border-2 border-secondary/40 bg-surface-container-low px-6 py-3 rounded-xl flex items-center gap-4" data-testid="lobby-room-code">
-              <span className="text-3xl font-mono font-bold tracking-widest text-secondary">
-                {room.roomCode}
+      {/* ── ROOM INFO CARD ── */}
+      <section style={{
+        background: 'linear-gradient(135deg, rgba(232,168,50,0.08), rgba(50,52,64,0.4))',
+        border: '0.5px solid rgba(232,168,50,0.25)',
+        borderRadius: 14, padding: '1.25rem', marginBottom: '1.25rem',
+      }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 24, alignItems: 'center' }}>
+
+          {/* Left: room metadata */}
+          <div>
+            {/* Mode + privacy badges */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6, flexWrap: 'wrap' }}>
+              <span style={{
+                background: modeInfo.badgeBg, color: modeInfo.badgeColor,
+                padding: '2px 8px', borderRadius: 6, fontSize: 10, fontWeight: 500,
+                display: 'flex', alignItems: 'center', gap: 4,
+                border: `0.5px solid ${modeInfo.badgeBorder}`,
+              }}>
+                <span>{modeInfo.emoji}</span> {modeInfo.label}
               </span>
+              <span style={{
+                background: room.isPublic ? 'rgba(74,222,128,0.1)' : 'rgba(255,140,66,0.15)',
+                color: room.isPublic ? '#4ade80' : '#ff8c42',
+                padding: '2px 8px', borderRadius: 999, fontSize: 9, fontWeight: 500,
+                display: 'flex', alignItems: 'center', gap: 4,
+              }}>
+                {room.isPublic ? '🌐 Công khai' : '🔒 Riêng tư'}
+              </span>
+            </div>
+
+            {/* Room name */}
+            <h1 style={{ color: '#fff', fontSize: 22, fontWeight: 500, margin: '0 0 6px' }}>
+              {room.roomName}
+            </h1>
+
+            {/* Host info */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap', marginBottom: 12 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <div style={{
+                  width: 22, height: 22, borderRadius: '50%',
+                  background: 'rgba(156,163,175,0.3)', color: '#fff',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: 10, fontWeight: 500,
+                }}>
+                  {room.hostName?.[0]?.toUpperCase()}
+                </div>
+                <span style={{ color: 'rgba(255,255,255,0.85)', fontSize: 12 }}>{room.hostName}</span>
+                <span style={{
+                  background: 'rgba(232,168,50,0.2)', color: '#e8a832',
+                  padding: '1px 6px', borderRadius: 999, fontSize: 9, fontWeight: 500,
+                }}>CHỦ PHÒNG</span>
+              </div>
+              {room.createdAt && (
+                <>
+                  <span style={{ color: 'rgba(255,255,255,0.3)' }}>·</span>
+                  <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: 11 }}>Tạo lúc {fmtTime(room.createdAt)}</span>
+                </>
+              )}
+            </div>
+
+            {/* Metadata row */}
+            <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+              {room.bookScope && room.bookScope !== 'ALL' && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <span style={{ fontSize: 14 }}>📖</span>
+                  <span style={{ color: 'rgba(255,255,255,0.85)', fontSize: 12 }}>{room.bookScope}</span>
+                </div>
+              )}
+              {room.difficulty && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <span style={{ fontSize: 14 }}>⚡</span>
+                  <span style={{
+                    background: diffInfo.bg, color: diffInfo.color,
+                    padding: '2px 8px', borderRadius: 999, fontSize: 11, fontWeight: 500,
+                  }}>{diffInfo.label}</span>
+                </div>
+              )}
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <span style={{ fontSize: 14 }}>📝</span>
+                <span style={{ color: 'rgba(255,255,255,0.85)', fontSize: 12 }}>{room.questionCount} câu</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <span style={{ fontSize: 14 }}>⏱</span>
+                <span style={{ color: 'rgba(255,255,255,0.85)', fontSize: 12 }}>{room.timePerQuestion}s/câu</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right: room code box */}
+          <div style={{
+            background: 'rgba(0,0,0,0.4)', border: '1px solid rgba(232,168,50,0.4)',
+            borderRadius: 12, padding: '12px 16px', minWidth: 220,
+          }}>
+            <div style={{ color: 'rgba(232,168,50,0.7)', fontSize: 9, letterSpacing: '0.5px', marginBottom: 6, fontWeight: 500 }}>
+              MÃ PHÒNG · CHIA SẺ
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+              <div style={{
+                color: '#e8a832', fontSize: 26, fontWeight: 600,
+                fontFamily: "'Courier New', monospace", letterSpacing: 4, lineHeight: 1,
+              }}>
+                {room.roomCode}
+              </div>
               <button
                 onClick={handleCopyCode}
-                className="text-on-surface-variant hover:text-secondary transition-colors"
-                title={t('room.copyRoomCode')}
+                title="Sao chép mã"
+                style={{
+                  background: 'rgba(232,168,50,0.15)', color: '#e8a832',
+                  border: '0.5px solid rgba(232,168,50,0.4)', borderRadius: 6,
+                  padding: '6px 8px', fontSize: 11, cursor: 'pointer',
+                }}
               >
-                <span className="material-symbols-outlined">
-                  {codeCopied ? 'check' : 'content_copy'}
-                </span>
+                {codeCopied ? '✓' : '📋'}
+              </button>
+            </div>
+            <div style={{ display: 'flex', gap: 6 }}>
+              <button
+                onClick={handleCopyLink}
+                style={{
+                  background: 'rgba(232,168,50,0.15)', color: '#e8a832',
+                  border: '0.5px solid rgba(232,168,50,0.4)', borderRadius: 6,
+                  padding: '6px 10px', fontSize: 11, fontWeight: 500, cursor: 'pointer',
+                  flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4,
+                }}
+              >
+                🔗 Link
+              </button>
+              <button
+                style={{
+                  background: 'rgba(232,168,50,0.15)', color: '#e8a832',
+                  border: '0.5px solid rgba(232,168,50,0.4)', borderRadius: 6,
+                  padding: '6px 10px', fontSize: 11, fontWeight: 500, cursor: 'pointer',
+                  flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4,
+                }}
+              >
+                📱 QR
               </button>
             </div>
           </div>
 
-          {/* Game Settings Pill */}
-          <div className="flex flex-col items-end gap-2">
-            <div className="flex items-center gap-3 bg-surface-container-high px-4 py-2 rounded-full border border-outline-variant/10">
-              <div className="flex items-center gap-1.5 text-sm font-medium">
-                <span className="material-symbols-outlined text-xs text-secondary">list_alt</span>
-                <span>{t('room.questionsCount', { count: room.questionCount })}</span>
-              </div>
-              <div className="w-1 h-1 rounded-full bg-outline-variant/30" />
-              <div className="flex items-center gap-1.5 text-sm font-medium">
-                <span className="material-symbols-outlined text-xs text-secondary">timer</span>
-                <span>{t('room.timePerQuestion', { count: room.timePerQuestion })}</span>
-              </div>
-              <div className="w-1 h-1 rounded-full bg-outline-variant/30" />
-              <div className="flex items-center gap-1.5 text-sm font-medium">
-                <span className="material-symbols-outlined text-xs text-secondary">trending_up</span>
-                <span>{MODE_LABELS[room.mode] ?? room.mode}</span>
-              </div>
-            </div>
-            {/* Visibility badge */}
-            <span className="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant/50 pr-2">
-              {room.isPublic ? `🌐 ${t('room.public')}` : `🔒 ${t('room.private')}`}
-            </span>
-          </div>
         </div>
+      </section>
 
-        {/* ── Question Panel (CUSTOM source only) ── */}
-        {room.questionSource === 'CUSTOM' && room.questionSetId && (
-          <div className="mb-8">
-            <div className="glass-card rounded-xl p-4 border border-secondary/20 flex items-center gap-3">
-              <span className="material-symbols-outlined text-secondary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>menu_book</span>
-              <div className="flex-1 min-w-0">
-                <p className="text-xs font-bold text-on-surface uppercase tracking-wide">Bộ câu hỏi tuỳ chỉnh</p>
-                <p className="text-xs text-on-surface-variant/60 mt-0.5">Câu hỏi đã được soạn sẵn từ bộ câu hỏi của host.</p>
-              </div>
-              {isHost && (
-                <Link
-                  to={`/my-sets/${room.questionSetId}`}
-                  className="flex items-center gap-1.5 text-xs font-semibold text-secondary border border-secondary/30 px-3 py-2 rounded-lg hover:bg-secondary/10 transition-colors flex-shrink-0"
-                >
-                  <span className="material-symbols-outlined text-sm">edit</span>
-                  Soạn câu hỏi
-                </Link>
-              )}
-            </div>
-          </div>
-        )}
+      {/* ── MAIN 2-COLUMN ── */}
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 320px', gap: '1.25rem' }}>
 
-        {/* ── Main Layout: Players Grid + Chat ── */}
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8">
+        {/* ── LEFT COLUMN ── */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
 
-          {/* ── Players Grid (Left Side) ── */}
+          {/* ── PLAYERS SECTION ── */}
           <section data-testid="lobby-player-grid">
+            {/* Section header */}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+              <div>
+                <div style={{ color: '#fff', fontSize: 14, fontWeight: 500 }}>Người chơi</div>
+                <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: 11, marginTop: 2 }}>
+                  Cần ít nhất 2 người để bắt đầu · Tối đa {room.maxPlayers} người
+                </div>
+              </div>
+              <div style={{
+                display: 'flex', alignItems: 'center', gap: 6,
+                background: 'rgba(232,168,50,0.08)', border: '0.5px solid rgba(232,168,50,0.25)',
+                borderRadius: 999, padding: '4px 10px',
+              }}>
+                <span style={{ color: '#e8a832', fontSize: 12, fontWeight: 500 }}>
+                  {room.currentPlayers} / {room.maxPlayers}
+                </span>
+                <span style={{ width: 1, height: 10, background: 'rgba(232,168,50,0.3)', display: 'inline-block' }} />
+                <span style={{ color: 'rgba(232,168,50,0.7)', fontSize: 10 }}>
+                  {room.currentPlayers < 2 ? `Cần thêm ${2 - room.currentPlayers} người` : canStart ? 'Sẵn sàng' : 'Đang chờ sẵn sàng'}
+                </span>
+              </div>
+            </div>
+
             {/* Team vs Team layout */}
             {isTeamVsTeam ? (
               <div className="space-y-6">
-                {/* Team A */}
                 <div>
                   <div className="text-xs font-bold uppercase tracking-widest text-blue-400 mb-3 flex items-center gap-2">
                     🔵 {t('room.teamA')} {myPlayer?.team === 'A' && <span className="text-on-surface-variant text-[10px]">({t('room.you')})</span>}
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
-                    {teamAPlayers.map(p => (
-                      <PlayerCard key={p.id} player={p} hostId={room.hostId} t={t} />
-                    ))}
-                    {teamAPlayers.length === 0 && (
-                      <EmptySlot t={t} />
-                    )}
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10 }}>
+                    {teamAPlayers.map(p => <PlayerCard key={p.id} player={p} hostId={room.hostId} t={t} />)}
+                    {teamAPlayers.length === 0 && <EmptySlot index={0} t={t} />}
                   </div>
                 </div>
-                {/* Team B */}
                 <div>
                   <div className="text-xs font-bold uppercase tracking-widest text-red-400 mb-3 flex items-center gap-2">
                     🔴 {t('room.teamB')} {myPlayer?.team === 'B' && <span className="text-on-surface-variant text-[10px]">({t('room.you')})</span>}
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
-                    {teamBPlayers.map(p => (
-                      <PlayerCard key={p.id} player={p} hostId={room.hostId} t={t} />
-                    ))}
-                    {teamBPlayers.length === 0 && (
-                      <EmptySlot t={t} />
-                    )}
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10 }}>
+                    {teamBPlayers.map(p => <PlayerCard key={p.id} player={p} hostId={room.hostId} t={t} />)}
+                    {teamBPlayers.length === 0 && <EmptySlot index={0} t={t} />}
                   </div>
                 </div>
                 {myPlayer && (
                   <button
-                    onClick={handleSwitchTeam}
-                    disabled={switchingTeam}
+                    onClick={handleSwitchTeam} disabled={switchingTeam}
                     className="text-xs text-secondary border border-secondary/30 px-4 py-2 rounded-lg hover:bg-secondary/10 transition-colors disabled:opacity-50"
                   >
                     <span className="material-symbols-outlined text-sm align-middle mr-1">swap_horiz</span>
@@ -376,268 +722,373 @@ const RoomLobby: React.FC = () => {
               </div>
             ) : isSuddenDeath ? (
               /* Sudden Death layout */
-              <div>
+              <div className="space-y-3">
                 <div className="text-xs font-bold uppercase tracking-widest text-secondary mb-4">
                   👑 {t('room.battleOrder')}
                 </div>
-                <div className="space-y-3">
-                  {(room.players ?? []).map((p, idx) => (
-                    <div
-                      key={p.id}
-                      className={`bg-surface-container p-4 rounded-xl flex items-center gap-4 border transition-all ${
-                        idx === 0 ? 'border-secondary/30' : 'border-outline-variant/5'
-                      } hover:bg-surface-container-high`}
-                    >
-                      <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm ${
-                        idx === 0 ? 'bg-secondary text-on-secondary' : idx === 1 ? 'bg-surface-container-highest text-on-surface' : 'bg-surface-container-low text-on-surface-variant'
-                      }`}>
-                        {idx === 0 ? '👑' : idx === 1 ? '⚔️' : `#${idx + 1}`}
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <p className="font-bold text-on-surface truncate">
-                          {p.username}{p.username === myUsername() ? ` (${t('room.you')})` : ''}
-                        </p>
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">
-                          {idx === 0 ? t('room.hotSeat') : idx === 1 ? t('room.challenger') : t('room.waiting')}
-                        </span>
-                      </div>
-                      {p.userId === room.hostId && (
-                        <span className="text-[10px] font-bold text-secondary uppercase">Host</span>
-                      )}
-                      <span
-                        className={`material-symbols-outlined text-2xl ${p.isReady ? 'text-emerald-400' : 'text-on-surface-variant/20'}`}
-                        style={p.isReady ? { fontVariationSettings: "'FILL' 1" } : undefined}
-                      >
-                        {p.isReady ? 'check_circle' : 'pending'}
+                {(room.players ?? []).map((p, idx) => (
+                  <div key={p.id} className={`bg-surface-container p-4 rounded-xl flex items-center gap-4 border transition-all ${idx === 0 ? 'border-secondary/30' : 'border-outline-variant/5'} hover:bg-surface-container-high`}>
+                    <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm ${idx === 0 ? 'bg-secondary text-on-secondary' : idx === 1 ? 'bg-surface-container-highest text-on-surface' : 'bg-surface-container-low text-on-surface-variant'}`}>
+                      {idx === 0 ? '👑' : idx === 1 ? '⚔️' : `#${idx + 1}`}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="font-bold text-on-surface truncate">{p.username}{p.username === myUsername() ? ` (${t('room.you')})` : ''}</p>
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">
+                        {idx === 0 ? t('room.hotSeat') : idx === 1 ? t('room.challenger') : t('room.waiting')}
                       </span>
                     </div>
-                  ))}
-                </div>
+                    {p.userId === room.hostId && <span className="text-[10px] font-bold text-secondary uppercase">Host</span>}
+                    <span className={`material-symbols-outlined text-2xl ${p.isReady ? 'text-emerald-400' : 'text-on-surface-variant/20'}`} style={p.isReady ? { fontVariationSettings: "'FILL' 1" } : undefined}>
+                      {p.isReady ? 'check_circle' : 'pending'}
+                    </span>
+                  </div>
+                ))}
               </div>
             ) : (
-              /* Default grid layout */
-              <div className="grid grid-cols-2 gap-4">
-                {(room.players ?? []).map((p) => (
+              /* Default 4-column grid */
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10 }}>
+                {(room.players ?? []).map(p => (
                   <PlayerCard key={p.id} player={p} hostId={room.hostId} t={t} />
                 ))}
-                {/* Empty slots */}
                 {Array.from({ length: emptySlots }).map((_, i) => (
-                  <EmptySlot key={`empty-${i}`} t={t} />
+                  <EmptySlot key={`empty-${i}`} index={i} t={t} />
                 ))}
               </div>
             )}
           </section>
 
-          {/* ── Chat Panel (Right Side) ── */}
-          <aside className="flex flex-col h-[520px] bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/5">
-            {/* Chat Header */}
-            <div className="p-4 border-b border-outline-variant/10 flex items-center gap-2">
-              <span className="material-symbols-outlined text-secondary text-sm">forum</span>
-              <span className="text-xs font-bold uppercase tracking-widest text-on-surface">{t('room.chat')}</span>
-            </div>
-
-            {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-4 text-sm">
-              {chatMessages.length === 0 && (
-                <p className="text-on-surface-variant/40 text-xs text-center italic mt-8">
-                  {t('room.noChatMessages')}
-                </p>
-              )}
-              {chatMessages.map((msg, i) => (
-                <div key={i} className="space-y-1">
-                  <p className={`text-[10px] font-bold uppercase ${msg.isHost ? 'text-secondary' : 'text-on-primary-container'}`}>
-                    {msg.sender}
-                  </p>
-                  <div className={`${msg.isHost ? 'bg-surface-container-high' : 'bg-surface-container-highest'} px-3 py-2 rounded-xl rounded-tl-none inline-block`}>
-                    {msg.text}
-                  </div>
+          {/* ── RULE BANNER ── */}
+          {modeInfo.ruleText && (
+            <section style={{
+              background: 'rgba(74,158,255,0.04)', border: '0.5px solid rgba(74,158,255,0.2)',
+              borderRadius: 12, padding: '14px 16px',
+              display: 'flex', alignItems: 'flex-start', gap: 12,
+            }}>
+              <span style={{ fontSize: 18 }}>💡</span>
+              <div style={{ flex: 1 }}>
+                <div style={{ color: '#6AB8E8', fontSize: 11, fontWeight: 500, letterSpacing: '0.4px', marginBottom: 4 }}>
+                  {modeInfo.ruleTitle}
                 </div>
-              ))}
-              <div ref={chatEndRef} />
-            </div>
+                <div style={{ color: 'rgba(255,255,255,0.85)', fontSize: 12, lineHeight: 1.5 }}>
+                  {modeInfo.ruleText}
+                </div>
+              </div>
+              <button style={{
+                background: 'transparent', color: 'rgba(106,184,232,0.7)',
+                border: '0.5px solid rgba(106,184,232,0.3)', borderRadius: 6,
+                padding: '4px 8px', fontSize: 10, cursor: 'pointer', flexShrink: 0,
+              }}>
+                Xem chi tiết →
+              </button>
+            </section>
+          )}
 
-            {/* Footer Chat */}
-            <div className="p-3 bg-surface-container-low border-t border-outline-variant/10">
-              {/* Quick emoji row */}
-              <div className="flex gap-2 mb-3 overflow-x-auto pb-1">
-                {QUICK_EMOJIS.map(emoji => (
-                  <button
-                    key={emoji}
-                    onClick={() => handleSendChat(emoji)}
-                    className="bg-surface-container-highest w-8 h-8 rounded-full flex items-center justify-center text-lg hover:scale-110 transition-transform flex-shrink-0"
-                  >
-                    {emoji}
-                  </button>
-                ))}
-              </div>
-              {/* Text input */}
-              <div className="relative">
-                <input
-                  className="w-full bg-surface-container-highest border-none rounded-xl py-2.5 pl-4 pr-10 text-sm focus:ring-1 focus:ring-secondary/50 placeholder:text-on-surface-variant/40 text-on-surface outline-none"
-                  placeholder={t('room.chatPlaceholder')}
-                  type="text"
-                  value={chatInput}
-                  onChange={(e) => setChatInput(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter') handleSendChat(chatInput);
-                  }}
-                />
-                <button
-                  onClick={() => handleSendChat(chatInput)}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 text-secondary p-1"
-                >
-                  <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>send</span>
-                </button>
-              </div>
-            </div>
-          </aside>
         </div>
-      </main>
 
-      {/* ── Bottom Action Bar ── */}
-      <nav className="fixed bottom-0 left-0 w-full flex justify-center items-center px-4 pb-8 pt-6 z-50">
-        <div className="bg-surface-container/60 backdrop-blur-xl w-full max-w-[900px] flex justify-between items-center px-8 py-4 rounded-2xl shadow-[0_-4px_24px_rgba(11,14,24,0.6)] border border-outline-variant/5">
-          {/* Left: Leave Button */}
-          <button
-            data-testid="lobby-leave-btn"
-            onClick={handleLeave}
-            className="flex items-center gap-2 text-on-surface/80 hover:bg-error-container/20 hover:text-error transition-all px-6 py-3 rounded-xl border border-outline-variant/15 font-medium uppercase tracking-widest text-[11px] active:scale-[0.98] active:duration-100"
-          >
-            <span className="material-symbols-outlined text-sm">logout</span>
-            {t('room.leaveRoom')}
-          </button>
-
-          {/* Center: Player Counter */}
-          <div className="flex flex-col items-center">
-            <div className="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant/60 mb-1">
-              {connected ? t('room.connected') : t('room.disconnected')}
-            </div>
-            <div className="flex items-center gap-2">
-              <span className={`w-2 h-2 rounded-full ${connected ? 'bg-emerald-400 animate-pulse' : 'bg-red-400'}`} />
-              <span className="text-xl font-bold text-on-surface">
-                {room.currentPlayers} / {room.maxPlayers}
-              </span>
-            </div>
+        {/* ── RIGHT: CHAT ASIDE ── */}
+        <aside style={{
+          background: 'rgba(50,52,64,0.4)', border: '0.5px solid rgba(255,255,255,0.06)',
+          borderRadius: 12, padding: '1rem',
+          display: 'flex', flexDirection: 'column',
+        }}>
+          {/* Chat header */}
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: 6,
+            marginBottom: 12, paddingBottom: 12,
+            borderBottom: '0.5px solid rgba(255,255,255,0.06)',
+          }}>
+            <span style={{ fontSize: 14 }}>💬</span>
+            <span style={{ color: '#fff', fontSize: 13, fontWeight: 500 }}>Trò chuyện</span>
+            <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: 10, marginLeft: 'auto' }}>Public</span>
           </div>
 
-          {/* Right: Ready / Start buttons */}
-          <div className="flex items-center gap-3">
-            {/* Ready toggle */}
+          {/* Messages */}
+          <div style={{ flex: 1, minHeight: 200, display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 12, overflowY: 'auto', maxHeight: 280 }}>
+            {chatMessages.map((msg, i) => (
+              <div key={i} style={{ background: 'rgba(255,255,255,0.03)', borderRadius: 8, padding: '8px 10px' }}>
+                <div style={{
+                  color: msg.isSystem ? 'rgba(232,168,50,0.7)' : msg.isHost ? '#e8a832' : 'rgba(106,184,232,0.9)',
+                  fontSize: 9, fontWeight: 500, marginBottom: 2,
+                }}>
+                  {msg.isSystem ? 'SYSTEM' : msg.sender}
+                </div>
+                <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: 11, lineHeight: 1.4 }}>{msg.text}</div>
+                {msg.time && <div style={{ color: 'rgba(255,255,255,0.35)', fontSize: 9, marginTop: 2 }}>{msg.time}</div>}
+              </div>
+            ))}
+            {chatMessages.length === 1 && (
+              <div style={{ textAlign: 'center', color: 'rgba(255,255,255,0.35)', fontSize: 11, padding: '20px 10px', flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                Hãy nói lời chào tới những người chơi khác!
+              </div>
+            )}
+            <div ref={chatEndRef} />
+          </div>
+
+          {/* Quick emoji */}
+          <div style={{ display: 'flex', gap: 4, marginBottom: 8, flexWrap: 'wrap' }}>
+            {QUICK_EMOJIS.map(emoji => (
+              <button
+                key={emoji}
+                onClick={() => handleSendChat(emoji)}
+                style={{
+                  background: 'rgba(255,255,255,0.04)', border: '0.5px solid rgba(255,255,255,0.08)',
+                  borderRadius: 6, padding: '4px 8px', fontSize: 13, cursor: 'pointer',
+                }}
+                title={emoji}
+              >
+                {emoji}
+              </button>
+            ))}
+          </div>
+
+          {/* Chat input */}
+          <div style={{
+            background: 'rgba(0,0,0,0.3)', border: '0.5px solid rgba(255,255,255,0.08)',
+            borderRadius: 8, padding: '8px 10px',
+            display: 'flex', alignItems: 'center', gap: 8,
+          }}>
+            <input
+              style={{ background: 'transparent', border: 'none', outline: 'none', color: '#fff', fontSize: 12, flex: 1 }}
+              placeholder="Nhắn tin trong phòng..."
+              value={chatInput}
+              onChange={e => setChatInput(e.target.value)}
+              onKeyDown={e => { if (e.key === 'Enter') handleSendChat(chatInput); }}
+            />
+            <button
+              onClick={() => handleSendChat(chatInput)}
+              style={{ background: 'transparent', color: '#e8a832', border: 'none', fontSize: 16, cursor: 'pointer' }}
+            >
+              →
+            </button>
+          </div>
+        </aside>
+
+      </div>
+
+      {/* ── FOOTER ── */}
+      <footer style={{
+        marginTop: '1.25rem',
+        background: 'rgba(50,52,64,0.4)', border: '0.5px solid rgba(255,255,255,0.06)',
+        borderRadius: 12, padding: '14px 18px',
+        display: 'flex', alignItems: 'center', gap: 16,
+      }}>
+
+        {/* Leave */}
+        <button
+          data-testid="lobby-leave-btn"
+          onClick={handleLeave}
+          style={{
+            background: 'rgba(239,68,68,0.1)', color: '#f87171',
+            border: '0.5px solid rgba(239,68,68,0.3)', borderRadius: 8,
+            padding: '10px 16px', fontSize: 12, fontWeight: 500, cursor: 'pointer',
+            display: 'flex', alignItems: 'center', gap: 6, flexShrink: 0,
+          }}
+        >
+          ↩ Rời phòng
+        </button>
+
+        {/* Center status */}
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <span style={{
+              width: 8, height: 8, borderRadius: '50%',
+              background: canStart ? '#4ade80' : '#ff8c42',
+              boxShadow: canStart ? '0 0 6px #4ade80' : '0 0 6px #ff8c42',
+              display: 'inline-block',
+            }} />
+            <span style={{ color: '#fff', fontSize: 13, fontWeight: 500 }}>{statusPrimary}</span>
+          </div>
+          <div style={{ color: 'rgba(255,255,255,0.55)', fontSize: 11 }}>{statusSecondary}</div>
+        </div>
+
+        {/* Right: host → Start only; player → Ready toggle only */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
+          {isHost ? (
+            <button
+              onClick={handleStart}
+              disabled={!canStart}
+              title={!canStart ? statusSecondary : undefined}
+              style={{
+                background: canStart ? 'linear-gradient(135deg, #e8a832, #e7c268)' : 'rgba(232,168,50,0.15)',
+                color: canStart ? '#11131e' : 'rgba(232,168,50,0.5)',
+                border: `0.5px solid ${canStart ? 'transparent' : 'rgba(232,168,50,0.3)'}`,
+                borderRadius: 10, padding: '12px 28px',
+                fontSize: 13, fontWeight: 500,
+                cursor: canStart ? 'pointer' : 'not-allowed',
+                display: 'flex', alignItems: 'center', gap: 8,
+              }}
+            >
+              ▶ Bắt đầu
+            </button>
+          ) : (
             <button
               data-testid="lobby-ready-btn"
               onClick={handleToggleReady}
-              className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold uppercase tracking-widest text-[11px] transition-all active:scale-[0.98] active:duration-100 ${
-                myPlayer?.isReady
-                  ? 'bg-surface-container-highest text-on-surface border border-outline-variant/20'
-                  : 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
-              }`}
+              style={{
+                background: myPlayer?.isReady ? 'rgba(74,222,128,0.15)' : 'rgba(255,255,255,0.05)',
+                color: myPlayer?.isReady ? '#4ade80' : 'rgba(255,255,255,0.7)',
+                border: `0.5px solid ${myPlayer?.isReady ? 'rgba(74,222,128,0.4)' : 'rgba(255,255,255,0.15)'}`,
+                borderRadius: 8, padding: '10px 14px', fontSize: 12, fontWeight: 500, cursor: 'pointer',
+                display: 'flex', alignItems: 'center', gap: 6,
+              }}
             >
-              <span className="material-symbols-outlined text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>
-                {myPlayer?.isReady ? 'close' : 'check_circle'}
-              </span>
-              {myPlayer?.isReady ? t('room.unready') : t('room.ready')}
+              {myPlayer?.isReady ? '✓ Sẵn sàng' : '○ Sẵn sàng'}
             </button>
-
-            {/* Start button (host only) */}
-            {isHost && (
-              <button
-                onClick={handleStart}
-                disabled={!canStart}
-                className="gold-gradient flex items-center gap-2 text-surface-dim px-10 py-3 rounded-xl font-bold uppercase tracking-widest text-[11px] hover:opacity-90 transition-opacity active:scale-[0.98] active:duration-100 shadow-lg shadow-secondary/20 disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                <span className="material-symbols-outlined text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>play_arrow</span>
-                {t('room.startGame')}
-              </button>
-            )}
-          </div>
+          )}
         </div>
-      </nav>
+
+      </footer>
+
+      {/* ── TIP ── */}
+      <div style={{ textAlign: 'center', marginTop: 8, color: 'rgba(255,255,255,0.4)', fontSize: 10 }}>
+        💡 Khi có ≥2 người sẵn sàng, nút "Bắt đầu" sẽ kích hoạt · Auto-start sau 10 giây nếu host AFK
+      </div>
+
     </div>
   );
 };
 
-/* ── Player Card Component ── */
-const PlayerCard: React.FC<{ player: Player; hostId: string; t: (key: string) => string }> = ({ player, hostId, t }) => {
+// ─────────────────────────────────────────────────────────────────────────────
+
+/* ── Player Card — vertical layout ── */
+const PlayerCard: React.FC<{ player: Player; hostId: string; t: (key: string) => string; compact?: boolean }> = ({ player, hostId, t, compact }) => {
+  const avatarSize = compact ? 40 : 48;
+  const crownSize = compact ? 16 : 18;
   const isHost = player.userId === hostId;
   const isMe = player.username === myUsername();
 
   return (
-    <div className={`bg-surface-container p-4 rounded-xl flex items-center gap-4 border transition-all hover:bg-surface-container-high ${
-      isHost ? 'border-secondary/20' : 'border-outline-variant/5'
-    }`}>
-      {/* Avatar */}
-      <div className="relative">
-        {player.avatarUrl ? (
-          <img
-            className={`w-14 h-14 rounded-full object-cover ${isHost ? 'border-2 border-secondary' : ''} ${!player.isReady ? 'opacity-60 grayscale' : ''}`}
-            src={player.avatarUrl}
-            alt={player.username}
-          />
-        ) : (
-          <div className={`w-14 h-14 rounded-full flex items-center justify-center text-xl font-bold ${
-            isHost ? 'border-2 border-secondary bg-surface-container-high text-secondary' : 'bg-surface-container-highest text-on-surface'
-          } ${!player.isReady ? 'opacity-60 grayscale' : ''}`}>
-            {player.username?.[0]?.toUpperCase() || 'U'}
-          </div>
-        )}
-        {/* Host crown badge */}
-        {isHost && (
-          <div className="absolute -top-2 -left-2 bg-secondary text-on-secondary w-6 h-6 rounded-full flex items-center justify-center shadow-lg">
-            <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>workspace_premium</span>
-          </div>
-        )}
-      </div>
+    <div style={{
+      background: 'rgba(50,52,64,0.5)',
+      border: `1.5px solid ${isHost ? 'rgba(232,168,50,0.4)' : 'rgba(255,255,255,0.08)'}`,
+      borderRadius: compact ? 10 : 12, padding: compact ? 10 : 12, position: 'relative',
+      boxShadow: isHost ? (compact ? '0 0 12px rgba(232,168,50,0.1)' : '0 0 16px rgba(232,168,50,0.1)') : undefined,
+    }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
 
-      {/* Info */}
-      <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-1">
-          <p className={`font-bold truncate ${player.isReady ? 'text-on-surface' : 'text-on-surface-variant'}`}>
-            {player.username}{isMe ? ` (${t('room.you')})` : ''}
-          </p>
+        {/* Avatar */}
+        <div style={{ position: 'relative' }}>
+          {player.avatarUrl ? (
+            <img
+              src={player.avatarUrl} alt={player.username}
+              style={{
+                width: avatarSize, height: avatarSize, borderRadius: '50%', objectFit: 'cover',
+                border: isHost ? '1.5px solid #e8a832' : '1.5px solid rgba(255,255,255,0.1)',
+                opacity: player.isReady ? 1 : 0.7,
+              }}
+            />
+          ) : (
+            <div style={{
+              width: avatarSize, height: avatarSize, borderRadius: '50%',
+              background: isHost ? 'rgba(232,168,50,0.15)' : 'rgba(156,163,175,0.3)',
+              border: isHost ? '1.5px solid #e8a832' : '1.5px solid rgba(255,255,255,0.1)',
+              color: isHost ? '#e8a832' : '#fff',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: compact ? 14 : 18, fontWeight: 500,
+              opacity: player.isReady ? 1 : 0.7,
+            }}>
+              {player.username?.[0]?.toUpperCase() || 'U'}
+            </div>
+          )}
+          {/* Crown badge for host */}
           {isHost && (
-            <span className="material-symbols-outlined text-secondary text-xs" style={{ fontVariationSettings: "'FILL' 1" }}>stars</span>
+            <div style={{
+              position: 'absolute', bottom: -2, right: -2,
+              width: crownSize, height: crownSize, borderRadius: '50%',
+              background: '#e8a832', color: '#412d00',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: compact ? 9 : 10,
+            }}>
+              👑
+            </div>
           )}
         </div>
-        <span className={`text-[10px] font-bold uppercase tracking-wider ${isHost ? 'text-secondary/70' : 'text-on-surface-variant'}`}>
-          {isHost ? t('room.hostLabel') : (player.isReady ? t('room.readyLabel') : t('room.waitingLabel'))}
-        </span>
-      </div>
 
-      {/* Ready status icon */}
-      <span
-        className={`material-symbols-outlined text-2xl ${player.isReady ? 'text-emerald-400' : 'text-on-surface-variant/20'}`}
-        style={player.isReady ? { fontVariationSettings: "'FILL' 1" } : undefined}
-      >
-        {player.isReady ? 'check_circle' : 'pending'}
-      </span>
+        {/* Name */}
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ color: '#fff', fontSize: 11, fontWeight: 500, lineHeight: 1.2 }}>
+            {player.username}{isMe ? ' (bạn)' : ''}
+          </div>
+          {isHost && (
+            <div style={{ color: 'rgba(232,168,50,0.7)', fontSize: 9, marginTop: 1 }}>CHỦ PHÒNG</div>
+          )}
+        </div>
+
+        {/* Ready status badge */}
+        <div style={{
+          background: player.isReady ? 'rgba(74,222,128,0.15)' : 'rgba(255,140,66,0.1)',
+          color: player.isReady ? '#4ade80' : '#ff8c42',
+          padding: '2px 8px', borderRadius: 999, fontSize: 9, fontWeight: 500,
+          display: 'flex', alignItems: 'center', gap: 4,
+          border: `0.5px solid ${player.isReady ? 'rgba(74,222,128,0.4)' : 'rgba(255,140,66,0.3)'}`,
+        }}>
+          <span style={{
+            width: 5, height: 5, borderRadius: '50%',
+            background: player.isReady ? '#4ade80' : '#ff8c42',
+            display: 'inline-block',
+          }} />
+          {player.isReady ? 'Sẵn sàng' : 'Chưa sẵn sàng'}
+        </div>
+
+      </div>
     </div>
   );
 };
 
-/* ── Empty Slot Component ── */
-const EmptySlot: React.FC<{ t: (key: string) => string }> = ({ t }) => (
-  <div className="bg-surface-container-low border-2 border-dashed border-outline-variant/15 p-4 rounded-xl flex items-center justify-center gap-4 animate-pulse">
-    <div className="w-14 h-14 rounded-full bg-outline-variant/10 flex items-center justify-center">
-      <span className="material-symbols-outlined text-outline-variant/40">person_add</span>
+/* ── Empty Slot ── */
+const EmptySlot: React.FC<{ index: number; t: (key: string) => string; gold?: boolean }> = ({ index, gold }) => {
+  const isInvite = index === 0;
+  if (gold) return (
+    <div style={{ background: 'rgba(232,168,50,0.04)', border: '1.5px dashed rgba(232,168,50,0.3)', borderRadius: 10, padding: 10, cursor: 'pointer' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+        <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'rgba(232,168,50,0.08)', border: '1.5px dashed rgba(232,168,50,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <span style={{ fontSize: 18, color: '#e8a832' }}>+</span>
+        </div>
+        <div style={{ textAlign: 'center', marginTop: 4 }}>
+          <div style={{ color: '#e8a832', fontSize: 10, fontWeight: 500 }}>Mời bạn bè</div>
+          <div style={{ color: 'rgba(232,168,50,0.5)', fontSize: 8, marginTop: 1 }}>Chia sẻ mã</div>
+        </div>
+      </div>
     </div>
-    <span className="text-sm font-medium text-outline-variant/40 italic">{t('room.waitingSlot')}</span>
-  </div>
-);
+  );
+  return (
+    <div style={{
+      background: isInvite ? 'rgba(50,52,64,0.3)' : 'rgba(50,52,64,0.25)',
+      border: isInvite ? '1.5px dashed rgba(255,255,255,0.15)' : '1.5px dashed rgba(255,255,255,0.08)',
+      borderRadius: 12, padding: 12, cursor: isInvite ? 'pointer' : 'default',
+    }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, opacity: isInvite ? 0.65 : 0.5 }}>
+        <div style={{
+          width: 48, height: 48, borderRadius: '50%',
+          background: isInvite ? 'rgba(255,255,255,0.04)' : 'rgba(255,255,255,0.03)',
+          border: isInvite ? '1.5px dashed rgba(255,255,255,0.2)' : '1px dashed rgba(255,255,255,0.1)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>
+          {isInvite
+            ? <span style={{ fontSize: 22, color: 'rgba(255,255,255,0.3)' }}>+</span>
+            : <span style={{ fontSize: 14, color: 'rgba(255,255,255,0.25)' }}>⏳</span>
+          }
+        </div>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ color: isInvite ? 'rgba(255,255,255,0.55)' : 'rgba(255,255,255,0.4)', fontSize: 11, fontWeight: isInvite ? 500 : 400 }}>
+            {isInvite ? 'Mời bạn bè' : 'Đang chờ'}
+          </div>
+          <div style={{ color: isInvite ? 'rgba(255,255,255,0.35)' : 'rgba(255,255,255,0.25)', fontSize: 9, marginTop: 1 }}>
+            {isInvite ? 'Hoặc chia sẻ mã' : `Slot #${index + 1}`}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 /* ── Question Preview Item ── */
-const QuestionPreviewItem: React.FC<{
-  question: UserQuestionDTO; index: number; onRemove: () => void;
-}> = ({ question, index, onRemove }) => (
+const QuestionPreviewItem: React.FC<{ question: UserQuestionDTO; index: number; onRemove: () => void }> = ({ question, index, onRemove }) => (
   <div className="flex items-start gap-3 bg-surface-container rounded-lg p-3 text-xs">
-    <span className="w-5 h-5 rounded-full bg-secondary/20 text-secondary flex-shrink-0 flex items-center justify-center font-bold text-[10px]">
-      {index}
-    </span>
+    <span className="w-5 h-5 rounded-full bg-secondary/20 text-secondary flex-shrink-0 flex items-center justify-center font-bold text-[10px]">{index}</span>
     <div className="flex-1 min-w-0">
       <p className="text-on-surface leading-snug line-clamp-1">{question.content}</p>
-      <p className="text-on-surface-variant/50 mt-0.5 truncate">
-        ✓ {question.options[question.correctAnswer]}
-        {question.book ? ` · ${question.book}` : ''}
-      </p>
+      <p className="text-on-surface-variant/50 mt-0.5 truncate">✓ {question.options[question.correctAnswer]}{question.book ? ` · ${question.book}` : ''}</p>
     </div>
     <button type="button" onClick={onRemove} className="text-on-surface-variant/40 hover:text-error transition-colors flex-shrink-0 mt-0.5">
       <span className="material-symbols-outlined text-base">close</span>
@@ -725,8 +1176,6 @@ const HostQuestionPanel: React.FC<{ roomId: string }> = ({ roomId }) => {
           {staging.length > 0 && <span className="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded-full font-bold">+{staging.length} chờ gán</span>}
         </div>
       </div>
-
-      {/* Tabs */}
       <div className="flex bg-surface-container-highest p-1 rounded-lg text-xs">
         {([['ai', 'smart_toy', 'AI tạo'], ['manual', 'edit_note', 'Thủ công'], ['assigned', 'checklist', 'Đã gán']] as const).map(([k, icon, label]) => (
           <button key={k} type="button" onClick={() => setTab(k)}
@@ -735,7 +1184,6 @@ const HostQuestionPanel: React.FC<{ roomId: string }> = ({ roomId }) => {
           </button>
         ))}
       </div>
-
       {notice && (
         <div className={`p-3 rounded-lg text-xs flex items-center gap-2 ${notice.type === 'ok' ? 'bg-emerald-500/10 border border-emerald-500/20 text-emerald-400' : 'bg-error/10 border border-error/20 text-error'}`}>
           <span className="material-symbols-outlined text-sm">{notice.type === 'ok' ? 'check_circle' : 'error'}</span>
@@ -743,8 +1191,6 @@ const HostQuestionPanel: React.FC<{ roomId: string }> = ({ roomId }) => {
           {notice.type === 'error' && <button onClick={() => setNotice(null)} className="ml-auto"><span className="material-symbols-outlined text-sm">close</span></button>}
         </div>
       )}
-
-      {/* AI Tab */}
       {tab === 'ai' && (
         <div className="space-y-3">
           <div className="grid grid-cols-2 gap-3">
@@ -786,8 +1232,6 @@ const HostQuestionPanel: React.FC<{ roomId: string }> = ({ roomId }) => {
           <StagingPreview staging={staging} loading={loading} onRemove={id => setStaging(prev => prev.filter(q => q.id !== id))} onAssign={handleAssignAll} />
         </div>
       )}
-
-      {/* Manual Tab */}
       {tab === 'manual' && (
         <div className="space-y-3">
           <div className="space-y-1.5">
@@ -833,8 +1277,6 @@ const HostQuestionPanel: React.FC<{ roomId: string }> = ({ roomId }) => {
           <StagingPreview staging={staging} loading={loading} onRemove={id => setStaging(prev => prev.filter(q => q.id !== id))} onAssign={handleAssignAll} />
         </div>
       )}
-
-      {/* Assigned Tab */}
       {tab === 'assigned' && (
         <div className="space-y-2">
           {assigned.length === 0 ? (
@@ -854,7 +1296,7 @@ const HostQuestionPanel: React.FC<{ roomId: string }> = ({ roomId }) => {
   );
 };
 
-/* Staging preview shared by AI + Manual tabs */
+/* ── Staging Preview ── */
 const StagingPreview: React.FC<{
   staging: UserQuestionDTO[]; loading: boolean;
   onRemove: (id: string) => void; onAssign: () => void;
