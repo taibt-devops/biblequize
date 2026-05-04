@@ -26,7 +26,7 @@ export default function DailyVerseBanner() {
           data-testid="home-daily-verse-title"
           className="text-on-surface text-[13px] md:text-[14px] font-bold"
         >
-          {t('home.dailyVerse.title')}
+          {t('home.verseToday')}
         </h3>
       </div>
 
