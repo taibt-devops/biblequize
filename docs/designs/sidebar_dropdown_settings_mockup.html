@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BibleQuiz · Sidebar + Dropdown + Settings (mockup)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #11131e;
+    color: #f3f4f6;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    font-size: inherit;
+    vertical-align: middle;
+  }
+
+  /* ===== View Toggle ===== */
+  .view-toggle {
+    position: fixed; top: 16px; right: 16px; z-index: 200;
+    background: rgba(50,52,64,0.9);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(232,168,50,0.3);
+    border-radius: 12px;
+    padding: 6px;
+    display: flex; gap: 4px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
+  .view-toggle button {
+    background: transparent; border: none; color: #9ca3af;
+    padding: 8px 14px; border-radius: 8px; cursor: pointer;
+    font-family: inherit; font-size: 13px; font-weight: 600;
+  }
+  .view-toggle button.active {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+  }
+
+  .layout { display: flex; min-height: 100vh; }
+
+  /* ===== Sidebar (NEW — clean, không streak/missions) ===== */
+  .sidebar {
+    width: 240px;
+    background: #0d0f17;
+    border-right: 1px solid rgba(232,168,50,0.08);
+    padding: 24px 16px;
+    display: flex; flex-direction: column;
+    flex-shrink: 0;
+    position: sticky; top: 0;
+    height: 100vh;
+  }
+  .sidebar-brand {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 8px 24px;
+  }
+  .sidebar-brand h1 {
+    font-size: 22px; font-weight: 800;
+    background: linear-gradient(135deg, #e8a832 0%, #fbbf24 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .sidebar-brand .bell {
+    width: 32px; height: 32px; border-radius: 8px;
+    background: rgba(50,52,64,0.6);
+    display: grid; place-items: center;
+    color: #e8a832; font-size: 18px;
+    position: relative;
+  }
+  .sidebar-brand .bell::after {
+    content: '9+'; position: absolute; top: -4px; right: -4px;
+    background: #e8a832; color: #11131e; font-size: 10px; font-weight: 800;
+    padding: 2px 5px; border-radius: 8px;
+  }
+
+  /* User card with dropdown */
+  .user-card-wrap {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  .user-card {
+    background: rgba(50,52,64,0.4);
+    border: 1px solid rgba(232,168,50,0.15);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex; align-items: center; gap: 10px;
+    cursor: pointer;
+  }
+  .user-card.open {
+    border-color: rgba(232,168,50,0.4);
+    background: rgba(50,52,64,0.6);
+    box-shadow: 0 4px 16px rgba(232,168,50,0.1);
+  }
+  .user-card .avatar {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    display: grid; place-items: center;
+    color: #11131e; font-weight: 800; font-size: 14px;
+    flex-shrink: 0;
+  }
+  .user-card .info { flex: 1; min-width: 0; }
+  .user-card .name {
+    font-size: 13px; font-weight: 700;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .user-card .tier { font-size: 11px; color: #9ca3af; }
+  .user-card .chevron {
+    color: #9ca3af; font-size: 18px;
+    transition: transform 0.2s;
+  }
+  .user-card.open .chevron { transform: rotate(180deg); }
+
+  /* Nav items */
+  .sidebar-nav-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px; border-radius: 10px;
+    color: #9ca3af; font-weight: 600; font-size: 13px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    cursor: pointer;
+    margin-bottom: 4px;
+  }
+  .sidebar-nav-item:hover { background: rgba(50,52,64,0.4); color: #f3f4f6; }
+  .sidebar-nav-item.active {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+    box-shadow: 0 4px 12px rgba(232,168,50,0.25);
+  }
+
+  /* Sidebar footer (subtle) */
+  .sidebar-footer {
+    margin-top: auto;
+    padding: 12px 14px;
+    font-size: 11px; color: #6b7280;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.04);
+  }
+  .sidebar-footer a {
+    color: #9ca3af; text-decoration: none;
+  }
+  .sidebar-footer a:hover { color: #e8a832; }
+
+  /* ===== USER DROPDOWN (refined) ===== */
+  .user-dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0; right: 0;
+    background: #1a1d2e;
+    border: 1px solid rgba(232,168,50,0.2);
+    border-radius: 14px;
+    overflow: hidden;
+    z-index: 50;
+    box-shadow:
+      0 12px 32px rgba(0,0,0,0.5),
+      0 4px 12px rgba(232,168,50,0.05);
+    display: none;
+  }
+  .user-card.open + .user-dropdown { display: block; }
+
+  /* Clickable user header → /profile */
+  .dd-header {
+    padding: 14px 14px;
+    background: linear-gradient(135deg, rgba(232,168,50,0.08) 0%, transparent 60%);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .dd-header:hover {
+    background: linear-gradient(135deg, rgba(232,168,50,0.14) 0%, rgba(232,168,50,0.02) 60%);
+  }
+  .dd-header-top {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 6px;
+  }
+  .dd-avatar {
+    width: 38px; height: 38px; border-radius: 50%;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    display: grid; place-items: center;
+    color: #11131e; font-weight: 800; font-size: 15px;
+    flex-shrink: 0;
+  }
+  .dd-name-block { flex: 1; min-width: 0; }
+  .dd-name {
+    font-size: 13px; font-weight: 800;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .dd-email {
+    font-size: 11px; color: #9ca3af;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    margin-top: 1px;
+  }
+  .dd-view-profile {
+    font-size: 10px; color: #fbbf24; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    display: inline-flex; align-items: center; gap: 3px;
+  }
+
+  /* Dropdown items */
+  .dd-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 11px 14px;
+    color: #d1d5db; font-size: 13px; font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .dd-item:hover { background: rgba(232,168,50,0.06); color: #f3f4f6; }
+  .dd-item .material-symbols-outlined {
+    font-size: 18px; color: #9ca3af;
+    width: 22px;
+  }
+  .dd-item:hover .material-symbols-outlined { color: #e8a832; }
+  .dd-divider {
+    height: 1px; background: rgba(255,255,255,0.05);
+    margin: 4px 0;
+  }
+  .dd-item.danger { color: #fca5a5; }
+  .dd-item.danger .material-symbols-outlined { color: #f87171; }
+  .dd-item.danger:hover { background: rgba(239,68,68,0.08); }
+
+  /* ===== Main ===== */
+  .main {
+    flex: 1; padding: 32px 40px 60px;
+    max-width: 1100px;
+    overflow: hidden;
+  }
+
+  /* ===== Home view content (placeholder) ===== */
+  .placeholder-content {
+    background: rgba(50,52,64,0.3);
+    border: 1px dashed rgba(232,168,50,0.15);
+    border-radius: 14px;
+    padding: 80px 40px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+  }
+  .placeholder-content .material-symbols-outlined {
+    font-size: 48px; color: #9ca3af; margin-bottom: 16px;
+  }
+  .placeholder-content h3 {
+    color: #d1d5db; font-size: 18px; font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .placeholder-content code {
+    background: rgba(17,19,30,0.6); padding: 2px 6px;
+    border-radius: 4px; color: #e8a832; font-size: 12px;
+  }
+
+  /* ===== Settings page ===== */
+  .settings-header {
+    margin-bottom: 28px;
+  }
+  .settings-header h2 {
+    font-size: 30px; font-weight: 800;
+    margin-bottom: 6px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .settings-header h2 .material-symbols-outlined {
+    font-size: 30px; color: #e8a832;
+  }
+  .settings-header p { color: #9ca3af; font-size: 14px; }
+
+  .settings-section {
+    background: rgba(50,52,64,0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(232,168,50,0.1);
+    border-radius: 16px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+  }
+  .settings-section.danger {
+    background: rgba(239,68,68,0.04);
+    border-color: rgba(239,68,68,0.2);
+  }
+  .section-h {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .section-h-icon {
+    width: 36px; height: 36px; border-radius: 10px;
+    background: rgba(232,168,50,0.12);
+    border: 1px solid rgba(232,168,50,0.25);
+    display: grid; place-items: center;
+    color: #e8a832; font-size: 18px;
+  }
+  .section-h.danger .section-h-icon {
+    background: rgba(239,68,68,0.1);
+    border-color: rgba(239,68,68,0.25);
+    color: #f87171;
+  }
+  .section-h-title {
+    font-size: 15px; font-weight: 700;
+  }
+  .section-h-desc {
+    font-size: 12px; color: #9ca3af;
+    margin-top: 2px;
+  }
+
+  /* Setting row */
+  .setting-row {
+    display: flex; align-items: center; gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .setting-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .setting-row:first-of-type { padding-top: 0; }
+  .setting-info { flex: 1; min-width: 0; }
+  .setting-label { font-size: 13px; font-weight: 600; color: #f3f4f6; }
+  .setting-desc {
+    font-size: 12px; color: #9ca3af;
+    margin-top: 2px; line-height: 1.5;
+  }
+  .setting-control { flex-shrink: 0; }
+
+  /* Toggle switch */
+  .toggle {
+    width: 44px; height: 24px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .toggle.on {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+  }
+  .toggle::after {
+    content: '';
+    position: absolute;
+    top: 2px; left: 2px;
+    width: 20px; height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    transition: left 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  .toggle.on::after { left: 22px; }
+
+  /* Segmented control */
+  .segmented {
+    display: inline-flex;
+    background: rgba(17,19,30,0.5);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 10px;
+    padding: 3px;
+    gap: 2px;
+  }
+  .segmented-option {
+    padding: 6px 14px;
+    border-radius: 7px;
+    font-size: 12px; font-weight: 700;
+    color: #9ca3af;
+    cursor: pointer;
+  }
+  .segmented-option.active {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+  }
+
+  /* Slider */
+  .slider-wrap {
+    display: flex; align-items: center; gap: 12px;
+    width: 200px;
+  }
+  .slider-track {
+    flex: 1;
+    height: 5px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+  }
+  .slider-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #d97706 0%, #e8a832 50%, #fbbf24 100%);
+    border-radius: 3px;
+    width: 70%;
+    position: relative;
+  }
+  .slider-fill::after {
+    content: '';
+    position: absolute;
+    right: -7px; top: 50%; transform: translateY(-50%);
+    width: 16px; height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+  .slider-value {
+    font-size: 12px; color: #e8a832; font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    min-width: 32px; text-align: right;
+  }
+
+  /* Time picker compact */
+  .time-range {
+    display: flex; gap: 8px; align-items: center;
+    font-size: 12px; color: #9ca3af;
+  }
+  .time-input {
+    background: rgba(17,19,30,0.5);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 7px 12px;
+    color: #f3f4f6; font-family: inherit;
+    font-size: 13px; font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    cursor: pointer;
+  }
+
+  /* Select compact */
+  .select-compact {
+    background: rgba(17,19,30,0.5);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 8px 30px 8px 12px;
+    color: #f3f4f6; font-family: inherit;
+    font-size: 13px; font-weight: 600;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+
+  /* Buttons */
+  .btn-link {
+    color: #9ca3af; font-size: 12px;
+    background: transparent; border: none; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 4px;
+    font-family: inherit; font-weight: 600;
+  }
+  .btn-link:hover { color: #e8a832; }
+
+  .btn-danger {
+    background: rgba(239,68,68,0.1);
+    color: #fca5a5;
+    border: 1px solid rgba(239,68,68,0.3);
+    padding: 10px 20px; border-radius: 10px;
+    font-family: inherit; font-size: 13px; font-weight: 700;
+    cursor: pointer;
+  }
+  .btn-danger:hover {
+    background: rgba(239,68,68,0.2);
+    color: #fff;
+    border-color: #ef4444;
+  }
+
+  /* Email field readonly */
+  .email-field {
+    background: rgba(17,19,30,0.4);
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #d1d5db;
+    display: flex; align-items: center; gap: 8px;
+    min-width: 240px;
+  }
+  .email-field .material-symbols-outlined { font-size: 14px; color: #6b7280; }
+  .email-field .verified {
+    margin-left: auto;
+    background: rgba(74,222,128,0.12);
+    color: #4ade80;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 10px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    display: inline-flex; align-items: center; gap: 3px;
+  }
+  .email-field .verified .material-symbols-outlined {
+    font-size: 12px; color: #4ade80;
+  }
+
+  /* About section */
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  }
+  .about-cell {
+    background: rgba(17,19,30,0.4);
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .about-label {
+    font-size: 11px; color: #9ca3af; text-transform: uppercase;
+    letter-spacing: 0.5px; margin-bottom: 4px;
+  }
+  .about-value {
+    font-size: 14px; font-weight: 700; color: #f3f4f6;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Danger explanation */
+  .danger-warning {
+    background: rgba(239,68,68,0.06);
+    border: 1px dashed rgba(239,68,68,0.3);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    font-size: 12px; color: #fca5a5;
+    line-height: 1.6;
+  }
+  .danger-warning strong { color: #f87171; font-weight: 700; }
+
+  /* View visibility */
+  .show-home, .show-settings { display: none; }
+  .view-home .show-home { display: block; }
+  .view-settings .show-settings { display: block; }
+
+  /* Annotation */
+  .annotation {
+    margin-top: 32px;
+    padding: 20px 24px;
+    background: rgba(96,165,250,0.06);
+    border: 1px solid rgba(96,165,250,0.2);
+    border-radius: 14px;
+    color: #93c5fd;
+    font-size: 13px; line-height: 1.7;
+  }
+  .annotation strong { color: #60a5fa; }
+  .annotation code {
+    background: rgba(17,19,30,0.6); padding: 2px 6px;
+    border-radius: 4px; font-size: 12px;
+  }
+  .annotation ul { margin: 6px 0 0 20px; }
+  .annotation li { margin-bottom: 4px; }
+  .annotation .delta {
+    margin-top: 12px; padding: 12px;
+    background: rgba(74,222,128,0.06);
+    border-left: 3px solid #4ade80;
+    border-radius: 6px;
+  }
+  .annotation .delta strong { color: #4ade80; }
+
+  /* "Click here" hint */
+  .click-hint {
+    position: absolute;
+    top: -20px; right: -8px;
+    background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+    color: #fff;
+    font-size: 10px; font-weight: 800;
+    padding: 4px 10px; border-radius: 12px 12px 12px 4px;
+    z-index: 60;
+    animation: bounce 1.5s infinite;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    pointer-events: none;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+  }
+</style>
+</head>
+<body class="view-home">
+
+<div class="view-toggle">
+  <button class="active" onclick="setView('home')">Home + Dropdown</button>
+  <button onclick="setView('settings')">Settings page</button>
+</div>
+
+<div class="layout">
+  <!-- ===== Sidebar (NEW — clean) ===== -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <h1>Bible Quiz</h1>
+      <div class="bell"><span class="material-symbols-outlined">notifications</span></div>
+    </div>
+
+    <div class="user-card-wrap">
+      <div class="show-home click-hint">↑ Đã mở</div>
+      <div class="user-card open" onclick="toggleDropdown(this)">
+        <div class="avatar">T</div>
+        <div class="info">
+          <div class="name">TAI THANH</div>
+          <div class="tier">Tân Tín Hữu</div>
+        </div>
+        <span class="material-symbols-outlined chevron">keyboard_arrow_down</span>
+      </div>
+
+      <!-- USER DROPDOWN (REFINED) -->
+      <div class="user-dropdown">
+        <!-- Clickable header → /profile -->
+        <div class="dd-header">
+          <div class="dd-header-top">
+            <div class="dd-avatar">T</div>
+            <div class="dd-name-block">
+              <div class="dd-name">TAI THANH</div>
+              <div class="dd-email">thanhtai18021994@gmail.com</div>
+            </div>
+          </div>
+          <div class="dd-view-profile">
+            Xem hồ sơ <span class="material-symbols-outlined" style="font-size:11px">arrow_forward</span>
+          </div>
+        </div>
+
+        <!-- Just 2 items + logout -->
+        <div class="dd-item">
+          <span class="material-symbols-outlined">settings</span>
+          Cài đặt
+        </div>
+        <div class="dd-item">
+          <span class="material-symbols-outlined">help_outline</span>
+          Trợ giúp
+        </div>
+        <div class="dd-divider"></div>
+        <div class="dd-item danger">
+          <span class="material-symbols-outlined">logout</span>
+          Đăng xuất
+        </div>
+      </div>
+    </div>
+
+    <!-- Nav (4 items) -->
+    <div class="sidebar-nav-item show-home active">
+      <span class="material-symbols-outlined">home</span> Trang chủ
+    </div>
+    <div class="sidebar-nav-item show-settings">
+      <span class="material-symbols-outlined">home</span> Trang chủ
+    </div>
+    <div class="sidebar-nav-item">
+      <span class="material-symbols-outlined">leaderboard</span> Xếp hạng
+    </div>
+    <div class="sidebar-nav-item">
+      <span class="material-symbols-outlined">groups</span> Nhóm
+    </div>
+    <div class="sidebar-nav-item">
+      <span class="material-symbols-outlined">person</span> Cá nhân
+    </div>
+
+    <!-- Sidebar footer -->
+    <div class="sidebar-footer">
+      <a href="#">Chính sách</a> · <a href="#">Điều khoản</a><br>
+      <span style="margin-top:4px;display:block">v2.7.1 · build 2026.05</span>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <!-- ===== HOME VIEW (placeholder — focus là sidebar+dropdown) ===== -->
+    <div class="show-home">
+      <div class="placeholder-content">
+        <span class="material-symbols-outlined">visibility</span>
+        <h3>Đây là vị trí Home page</h3>
+        <p>Content giống Home redesign mockup ở mockup trước. Focus của view này là sidebar bên trái + user dropdown đang mở.</p>
+        <p style="margin-top:12px">Click vào <strong>user card</strong> bên trái để toggle dropdown · Click <strong>"Settings page"</strong> ở góc phải trên để xem trang Cài đặt mới.</p>
+      </div>
+
+      <div class="annotation">
+        <strong>📝 Sidebar + Dropdown — Thay đổi so với hiện tại</strong>
+
+        <div class="delta">
+          <strong>Δ Sidebar:</strong>
+          <ul style="margin-top:6px">
+            <li>❌ <strong>Bỏ</strong> STREAK card và NHIỆM VỤ NGÀY card — đã có ở Home main content, không cần duplicate.</li>
+            <li>✅ <strong>Thêm</strong> sidebar footer với link Chính sách / Điều khoản + version info — clean và proper cho production.</li>
+            <li>✅ <strong>Sticky position</strong> — sidebar fixed khi scroll, nav luôn accessible.</li>
+            <li>4 nav items giữ nguyên: Trang chủ · Xếp hạng · Nhóm · Cá nhân.</li>
+          </ul>
+        </div>
+
+        <div class="delta">
+          <strong>Δ User dropdown:</strong>
+          <ul style="margin-top:6px">
+            <li>❌ <strong>Bỏ "Hồ sơ"</strong> as menu item — duplicate với "Cá nhân" trong nav.</li>
+            <li>❌ <strong>Bỏ "Thành tích"</strong> — đây là tab/sub-page của Profile, không nên đứng riêng cùng cấp.</li>
+            <li>❌ <strong>Bỏ "Câu hỏi VI/EN"</strong> toggle inline — move vào Settings page (proper home cho language settings).</li>
+            <li>✅ <strong>Header dropdown clickable</strong> → /profile — visual hint "Xem hồ sơ →" gold màu.</li>
+            <li>✅ <strong>Email hiển thị</strong> trong header dropdown — confirm đúng account.</li>
+            <li>✅ <strong>3 menu items</strong> only: Cài đặt · Trợ giúp · Đăng xuất.</li>
+          </ul>
+        </div>
+
+        <p style="margin-top:14px"><strong>So sánh số items:</strong></p>
+        <ul>
+          <li>Trước: header (avatar+name+email) + 5 items (Hồ sơ, Thành tích, Trợ giúp, Câu hỏi VI/EN, Đăng xuất)</li>
+          <li>Sau: header clickable + 3 items (Cài đặt, Trợ giúp, Đăng xuất)</li>
+          <li>Reduced 40% items, thông tin hierarchy rõ hơn.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===== SETTINGS VIEW ===== -->
+    <div class="show-settings">
+
+      <div class="settings-header">
+        <h2>
+          <span class="material-symbols-outlined">settings</span>
+          Cài đặt
+        </h2>
+        <p>Tùy chỉnh trải nghiệm BibleQuiz của bạn</p>
+      </div>
+
+      <!-- TÀI KHOẢN -->
+      <div class="settings-section">
+        <div class="section-h">
+          <div class="section-h-icon"><span class="material-symbols-outlined">person</span></div>
+          <div>
+            <div class="section-h-title">Tài khoản</div>
+            <div class="section-h-desc">Thông tin cá nhân và xác thực</div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Tên hiển thị</div>
+            <div class="setting-desc">Hiển thị trên bảng xếp hạng và nhóm</div>
+          </div>
+          <div class="setting-control">
+            <input type="text" value="TAI THANH" class="time-input" style="min-width:200px;text-transform:none">
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Email</div>
+            <div class="setting-desc">Đăng nhập qua Google · không thể thay đổi</div>
+          </div>
+          <div class="setting-control">
+            <div class="email-field">
+              <span class="material-symbols-outlined">mail</span>
+              thanhtai18021994@gmail.com
+              <span class="verified">
+                <span class="material-symbols-outlined">verified</span>
+                Đã xác thực
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NGÔN NGỮ -->
+      <div class="settings-section">
+        <div class="section-h">
+          <div class="section-h-icon"><span class="material-symbols-outlined">translate</span></div>
+          <div>
+            <div class="section-h-title">Ngôn ngữ</div>
+            <div class="section-h-desc">Giao diện và câu hỏi có thể khác ngôn ngữ</div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Ngôn ngữ giao diện</div>
+            <div class="setting-desc">Áp dụng cho toàn bộ menu, label, thông báo</div>
+          </div>
+          <div class="setting-control">
+            <div class="segmented">
+              <div class="segmented-option active">Tiếng Việt</div>
+              <div class="segmented-option">English</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Ngôn ngữ câu hỏi</div>
+            <div class="setting-desc">Câu hỏi quiz hiển thị bằng ngôn ngữ này (tách biệt với UI)</div>
+          </div>
+          <div class="setting-control">
+            <div class="segmented">
+              <div class="segmented-option active">Tiếng Việt</div>
+              <div class="segmented-option">English</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ÂM THANH & RUNG -->
+      <div class="settings-section">
+        <div class="section-h">
+          <div class="section-h-icon"><span class="material-symbols-outlined">volume_up</span></div>
+          <div>
+            <div class="section-h-title">Âm thanh & Rung</div>
+            <div class="section-h-desc">Hiệu ứng khi trả lời, combo, lên tier</div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Hiệu ứng âm thanh</div>
+            <div class="setting-desc">Đúng/sai, combo, hoàn thành, lên tier</div>
+          </div>
+          <div class="setting-control">
+            <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Âm lượng</div>
+            <div class="setting-desc">Mức độ to nhỏ của hiệu ứng</div>
+          </div>
+          <div class="setting-control">
+            <div class="slider-wrap">
+              <div class="slider-track">
+                <div class="slider-fill" style="width:70%"></div>
+              </div>
+              <div class="slider-value">70%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Phản hồi rung (Mobile)</div>
+            <div class="setting-desc">Rung nhẹ khi đúng, rung mạnh khi sai · chỉ trên điện thoại</div>
+          </div>
+          <div class="setting-control">
+            <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Tắt animations</div>
+            <div class="setting-desc">Cho thiết bị chậm hoặc nếu bị say chuyển động</div>
+          </div>
+          <div class="setting-control">
+            <div class="toggle" onclick="this.classList.toggle('on')"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- THÔNG BÁO -->
+      <div class="settings-section">
+        <div class="section-h">
+          <div class="section-h-icon"><span class="material-symbols-outlined">notifications</span></div>
+          <div>
+            <div class="section-h-title">Thông báo</div>
+            <div class="section-h-desc">Push notifications và email reminders</div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Cảnh báo chuỗi (Streak)</div>
+            <div class="setting-desc">Nhắc khi streak sắp gãy · trước khi hết ngày 2 giờ</div>
+          </div>
+          <div class="setting-control">
+            <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Thử thách hàng ngày</div>
+            <div class="setting-desc">Nhắc lúc 8:00 sáng (giờ địa phương) khi có thử thách mới</div>
+          </div>
+          <div class="setting-control">
+            <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Hoạt động nhóm</div>
+            <div class="setting-desc">Ai đó hoàn thành, đạt tier, gửi thông báo trong nhóm</div>
+          </div>
+          <div class="setting-control">
+            <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Giải đấu & thách đấu</div>
+            <div class="setting-desc">Bắt đầu giải đấu, có người thách đấu 1v1</div>
+          </div>
+          <div class="setting-control">
+            <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Tóm tắt tuần</div>
+            <div class="setting-desc">Email mỗi sáng Thứ Hai · điểm tuần qua, tier progression</div>
+          </div>
+          <div class="setting-control">
+            <div class="toggle" onclick="this.classList.toggle('on')"></div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Giờ yên lặng</div>
+            <div class="setting-desc">Không gửi thông báo trong khoảng giờ này</div>
+          </div>
+          <div class="setting-control">
+            <div class="time-range">
+              <input type="text" class="time-input" value="22:00">
+              <span>—</span>
+              <input type="text" class="time-input" value="07:00">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUYỀN RIÊNG TƯ -->
+      <div class="settings-section">
+        <div class="section-h">
+          <div class="section-h-icon"><span class="material-symbols-outlined">lock</span></div>
+          <div>
+            <div class="section-h-title">Quyền riêng tư</div>
+            <div class="section-h-desc">Ai có thể thấy bạn và hoạt động của bạn</div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Hồ sơ công khai</div>
+            <div class="setting-desc">Cho phép người khác xem trang Cá nhân của bạn</div>
+          </div>
+          <div class="setting-control">
+            <select class="select-compact">
+              <option>Công khai</option>
+              <option>Chỉ thành viên nhóm</option>
+              <option>Riêng tư</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Hiển thị trên bảng xếp hạng</div>
+            <div class="setting-desc">Tắt nếu muốn chơi ẩn danh · vẫn ghi điểm</div>
+          </div>
+          <div class="setting-control">
+            <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Cho phép thách đấu 1v1</div>
+            <div class="setting-desc">Người khác có thể gửi lời thách đấu trực tiếp đến bạn</div>
+          </div>
+          <div class="setting-control">
+            <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VỀ BIBLEQUIZ -->
+      <div class="settings-section">
+        <div class="section-h">
+          <div class="section-h-icon"><span class="material-symbols-outlined">info</span></div>
+          <div>
+            <div class="section-h-title">Về BibleQuiz</div>
+            <div class="section-h-desc">Phiên bản, pháp lý, hỗ trợ</div>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-cell">
+            <div class="about-label">Phiên bản</div>
+            <div class="about-value">2.7.1</div>
+          </div>
+          <div class="about-cell">
+            <div class="about-label">Build</div>
+            <div class="about-value">2026.05.04</div>
+          </div>
+        </div>
+
+        <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn-link"><span class="material-symbols-outlined" style="font-size:14px">policy</span> Chính sách bảo mật</button>
+          <button class="btn-link"><span class="material-symbols-outlined" style="font-size:14px">gavel</span> Điều khoản dịch vụ</button>
+          <button class="btn-link"><span class="material-symbols-outlined" style="font-size:14px">code</span> Open source licenses</button>
+          <button class="btn-link"><span class="material-symbols-outlined" style="font-size:14px">support_agent</span> Liên hệ hỗ trợ</button>
+        </div>
+      </div>
+
+      <!-- KHU VỰC NGUY HIỂM -->
+      <div class="settings-section danger">
+        <div class="section-h danger">
+          <div class="section-h-icon"><span class="material-symbols-outlined">warning</span></div>
+          <div>
+            <div class="section-h-title" style="color:#fca5a5">Khu vực nguy hiểm</div>
+            <div class="section-h-desc">Các thao tác không thể hoàn tác</div>
+          </div>
+        </div>
+
+        <div class="danger-warning">
+          <strong>Xóa tài khoản sẽ xóa vĩnh viễn:</strong> điểm số, tier, streak, lịch sử quiz, thành tích, dữ liệu nhóm, và mọi dữ liệu cá nhân khác. <strong>Không thể khôi phục.</strong> Bạn sẽ phải xác nhận bằng cách nhập "XÓA TÀI KHOẢN".
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-info">
+            <div class="setting-label">Xóa tài khoản</div>
+            <div class="setting-desc">Hành động vĩnh viễn, không thể hoàn tác</div>
+          </div>
+          <div class="setting-control">
+            <button class="btn-danger">
+              <span class="material-symbols-outlined" style="font-size:14px;margin-right:4px">delete_forever</span>
+              Xóa tài khoản của tôi
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Annotation -->
+      <div class="annotation">
+        <strong>📝 Settings page — Theo SPEC mục 13.2</strong>
+
+        <p style="margin-top:10px"><strong>7 sections (theo thứ tự thông tin):</strong></p>
+        <ul>
+          <li><strong>Tài khoản</strong> — Tên hiển thị (editable) + Email (readonly với badge xác thực)</li>
+          <li><strong>Ngôn ngữ</strong> — UI language + Quiz language tách biệt (theo SPEC 10.2)</li>
+          <li><strong>Âm thanh & Rung</strong> — Toggle SFX, slider volume, toggle haptics, toggle reduce-motion</li>
+          <li><strong>Thông báo</strong> — 5 toggles individual + giờ yên lặng (theo SPEC 12.3)</li>
+          <li><strong>Quyền riêng tư</strong> — Profile visibility (3 levels) + leaderboard toggle + challenge toggle</li>
+          <li><strong>Về BibleQuiz</strong> — Version + build + 4 legal/support links</li>
+          <li><strong>Khu vực nguy hiểm</strong> — Delete account với warning rõ + button danger style (theo SPEC 14.3, Apple bắt buộc)</li>
+        </ul>
+
+        <p style="margin-top:12px"><strong>Pattern UI thống nhất:</strong></p>
+        <ul>
+          <li>Mỗi section là 1 card glass với header (icon + title + desc)</li>
+          <li>Setting row pattern: <code>[label + desc] | [control]</code></li>
+          <li>Controls: <strong>Toggle</strong> (boolean) · <strong>Segmented</strong> (2-3 options) · <strong>Select</strong> (3+ options) · <strong>Slider</strong> (range) · <strong>Time input</strong> · <strong>Text input</strong> · <strong>Button</strong></li>
+        </ul>
+
+        <p style="margin-top:12px"><strong>API endpoints (mới hoặc reuse):</strong></p>
+        <ul>
+          <li><code>PATCH /api/me</code> — update name (existing)</li>
+          <li><code>PATCH /api/me/settings</code> — bulk update settings (mentioned in SPEC mục 17.3)</li>
+          <li><code>DELETE /api/me/account</code> — delete account (existing per SPEC 14.3)</li>
+          <li>Settings persist trong DB table <code>user_settings</code> (cần tạo nếu chưa có)</li>
+        </ul>
+
+        <p style="margin-top:12px"><strong>Câu hỏi cho Bui:</strong></p>
+        <ul>
+          <li><strong>"Trợ giúp"</strong> trong dropdown — link tới <code>/help</code> page riêng (FAQ + contact form), hay external link Facebook group? Hiện chưa có /help page trong code.</li>
+          <li><strong>Settings persistence</strong> — backend hiện có endpoint <code>PATCH /api/me/settings</code> chưa? Nếu chưa, cần build cùng với UI.</li>
+          <li><strong>"Xóa tài khoản"</strong> — UI confirm modal "nhập XÓA TÀI KHOẢN" có nên vẽ riêng không? (Theo SPEC 14.3 cần modal này.)</li>
+          <li><strong>Avatar upload</strong> — không thấy trong SPEC 13.2 nhưng common pattern. Defer hay add row vào Tài khoản section?</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+<script>
+  function setView(view) {
+    document.body.className = 'view-' + view;
+    document.querySelectorAll('.view-toggle button').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  function toggleDropdown(card) {
+    card.classList.toggle('open');
+  }
+</script>
+
+</body>
+</html>

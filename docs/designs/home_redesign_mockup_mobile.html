@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BibleQuiz · Home Mobile Redesign (mockup)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #0a0b13;
+    color: #f3f4f6;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    padding: 40px 20px 60px;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    font-size: inherit;
+    vertical-align: middle;
+  }
+
+  .review-header { text-align: center; margin-bottom: 32px; }
+  .review-header h1 {
+    font-size: 22px; font-weight: 800;
+    background: linear-gradient(135deg, #e8a832 0%, #fbbf24 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+  }
+  .review-header p { color: #9ca3af; font-size: 13px; }
+
+  .phones { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; }
+  .phone-wrap { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .phone-label {
+    background: rgba(50,52,64,0.6);
+    border: 1px solid rgba(232,168,50,0.25);
+    color: #e8a832;
+    padding: 6px 14px; border-radius: 20px;
+    font-size: 12px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .phone {
+    width: 390px;
+    height: 844px;
+    background: #11131e;
+    border-radius: 44px;
+    border: 8px solid #1f2030;
+    box-shadow: 0 0 0 2px #0a0b13, 0 30px 80px rgba(0,0,0,0.6);
+    overflow: hidden;
+    position: relative;
+    display: flex; flex-direction: column;
+  }
+  .status-bar {
+    height: 44px; padding: 12px 28px 0;
+    display: flex; justify-content: space-between; align-items: flex-start;
+    font-size: 14px; font-weight: 600;
+    flex-shrink: 0; position: relative; z-index: 10;
+  }
+  .status-bar .icons {
+    display: flex; gap: 6px; align-items: center; color: #f3f4f6; font-size: 13px;
+  }
+  .phone::before {
+    content: ''; position: absolute; top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 120px; height: 30px;
+    background: #0a0b13; border-radius: 0 0 18px 18px; z-index: 11;
+  }
+
+  .app-content {
+    flex: 1;
+    overflow-y: auto; overflow-x: hidden;
+    padding-bottom: 84px;
+    /* Block layout — KHÔNG dùng flex column ở đây vì sẽ squash children có overflow:hidden */
+  }
+  .app-content::-webkit-scrollbar { display: none; }
+
+  /* ===== Responsive cho khi mở mockup trên mobile thật ===== */
+  @media (max-width: 880px) {
+    .phones { flex-direction: column; align-items: center; }
+  }
+  @media (max-width: 420px) {
+    body { padding: 12px 0 40px; }
+    .review-header { padding: 0 16px; margin-bottom: 20px; }
+    .review-header h1 { font-size: 18px; }
+    .phone-wrap { width: 100%; gap: 8px; }
+    .phone {
+      width: 100%; max-width: 420px;
+      height: auto; min-height: 100vh;
+      border-radius: 0; border: none;
+      box-shadow: none;
+    }
+    .phone::before { display: none; }
+    .status-bar { display: none; }
+    .annotation { margin: 30px 12px 0; padding: 16px; }
+  }
+
+  /* App top bar */
+  .app-topbar {
+    padding: 8px 20px 16px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-shrink: 0;
+  }
+  .app-brand {
+    font-size: 17px; font-weight: 800;
+    background: linear-gradient(135deg, #e8a832 0%, #fbbf24 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .app-bell {
+    width: 36px; height: 36px; border-radius: 10px;
+    background: rgba(50,52,64,0.5);
+    display: grid; place-items: center;
+    color: #e8a832; font-size: 18px;
+    position: relative;
+  }
+  .app-bell::after {
+    content: '9+'; position: absolute; top: -2px; right: -2px;
+    background: #e8a832; color: #11131e; font-size: 9px; font-weight: 800;
+    padding: 2px 5px; border-radius: 8px;
+  }
+
+  /* ===== GREETING CARD ===== */
+  .greeting {
+    margin: 0 16px 16px;
+    background: rgba(50,52,64,0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(232,168,50,0.15);
+    border-radius: 18px;
+    padding: 18px;
+  }
+  .greeting-top {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 16px;
+  }
+  .greeting-avatar-wrap { position: relative; flex-shrink: 0; }
+  .greeting-avatar {
+    width: 52px; height: 52px; border-radius: 50%;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    display: grid; place-items: center;
+    color: #11131e; font-weight: 800; font-size: 20px;
+    box-shadow: 0 4px 16px rgba(232,168,50,0.25);
+  }
+  .greeting-tier-mini {
+    position: absolute; bottom: -2px; right: -2px;
+    background: #11131e;
+    border: 2px solid #e8a832;
+    border-radius: 50%;
+    width: 22px; height: 22px;
+    display: grid; place-items: center;
+    font-size: 11px;
+  }
+  .greeting-meta-info { flex: 1; min-width: 0; }
+  .greeting-greet {
+    font-size: 10px; color: #9ca3af; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.8px;
+  }
+  .greeting-name {
+    font-size: 17px; font-weight: 800; line-height: 1.1;
+    margin: 2px 0 4px;
+  }
+  .greeting-tier-name {
+    font-size: 12px; color: #e8a832; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 4px;
+  }
+
+  /* Tier progress mobile */
+  .tier-prog-mobile {
+    margin-bottom: 14px;
+  }
+  .tier-prog-row {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 6px;
+    font-size: 11px;
+  }
+  .tier-prog-current {
+    color: #d1d5db; font-weight: 600;
+  }
+  .tier-prog-current strong { color: #e8a832; }
+  .tier-prog-next { color: #9ca3af; }
+  .tier-prog-bar-wrap {
+    height: 7px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 4px;
+  }
+  .tier-prog-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #d97706 0%, #e8a832 50%, #fbbf24 100%);
+    border-radius: 4px;
+  }
+  .tier-prog-milestones {
+    position: absolute; inset: 0;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 4px; pointer-events: none;
+  }
+  .tier-prog-dot {
+    width: 4px; height: 4px; border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+  }
+  .tier-prog-dot.reached {
+    background: #fff;
+    box-shadow: 0 0 4px rgba(255,255,255,0.6);
+  }
+  .tier-prog-xp {
+    font-size: 10px; color: #9ca3af;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+  .tier-prog-xp strong { color: #e8a832; font-weight: 700; }
+
+  /* Stats row */
+  .greeting-stats {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    background: rgba(17,19,30,0.4);
+    border-radius: 12px;
+    padding: 10px 8px;
+  }
+  .gs-cell { text-align: center; }
+  .gs-cell + .gs-cell {
+    border-left: 1px solid rgba(232,168,50,0.06);
+  }
+  .gs-icon {
+    font-size: 16px;
+    background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gs-icon.energy {
+    background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gs-icon.season {
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gs-v { font-size: 15px; font-weight: 800; line-height: 1; margin: 2px 0 1px; }
+  .gs-l {
+    font-size: 9px; color: #9ca3af;
+    text-transform: uppercase; letter-spacing: 0.4px;
+  }
+
+  /* ===== DAILY CHALLENGE ===== */
+  .dc-mobile {
+    margin: 0 16px 16px;
+    background: linear-gradient(135deg, rgba(239,68,68,0.1) 0%, rgba(50,52,64,0.4) 60%);
+    border: 1px solid rgba(239,68,68,0.25);
+    border-radius: 18px;
+    padding: 18px;
+    position: relative; overflow: hidden;
+  }
+  .dc-mobile::before {
+    content: ''; position: absolute; top: -30px; right: -30px;
+    width: 140px; height: 140px;
+    background: radial-gradient(circle, rgba(239,68,68,0.15) 0%, transparent 70%);
+  }
+  .dc-mobile-top {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 12px; position: relative; z-index: 1;
+  }
+  .dc-mobile-icon {
+    width: 48px; height: 48px; border-radius: 12px;
+    background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+    display: grid; place-items: center;
+    color: #fff; font-size: 24px;
+    box-shadow: 0 4px 16px rgba(239,68,68,0.3);
+    flex-shrink: 0;
+  }
+  .dc-mobile-info { flex: 1; min-width: 0; }
+  .dc-mobile-label {
+    font-size: 10px; font-weight: 700; color: #fca5a5;
+    text-transform: uppercase; letter-spacing: 0.8px;
+  }
+  .dc-mobile-title {
+    font-size: 17px; font-weight: 800; margin-top: 2px;
+    line-height: 1.2;
+  }
+  .dc-mobile-meta {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-bottom: 14px; position: relative; z-index: 1;
+  }
+  .dc-meta-chip {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 9px; border-radius: 8px;
+    background: rgba(17,19,30,0.6);
+    border: 1px solid rgba(255,255,255,0.05);
+    font-size: 11px; color: #d1d5db; font-weight: 600;
+  }
+  .dc-meta-chip.reward {
+    color: #e8a832; border-color: rgba(232,168,50,0.25);
+  }
+  .dc-meta-chip.season {
+    color: #fca5a5; border-color: rgba(239,68,68,0.25);
+  }
+  .dc-meta-chip .material-symbols-outlined { font-size: 12px; }
+  .dc-mobile-cta {
+    width: 100%;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e; border: none;
+    padding: 14px; border-radius: 12px;
+    font-family: inherit; font-size: 15px; font-weight: 800;
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    box-shadow: 0 6px 20px rgba(232,168,50,0.3);
+    position: relative; z-index: 1;
+  }
+  .dc-mobile-countdown {
+    text-align: center; font-size: 11px;
+    color: #9ca3af; margin-top: 8px;
+    font-variant-numeric: tabular-nums;
+    position: relative; z-index: 1;
+  }
+  .dc-mobile-countdown strong { color: #fca5a5; }
+
+  /* ===== Section heading mobile ===== */
+  .sec-h-m {
+    padding: 0 20px 10px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .sec-h-m-title {
+    font-size: 13px; font-weight: 700;
+    display: flex; align-items: center; gap: 7px;
+  }
+  .sec-h-m-title .material-symbols-outlined { font-size: 17px; color: #e8a832; }
+  .sec-h-m-title .small {
+    font-size: 10px; color: #9ca3af; font-weight: 500;
+    text-transform: none; letter-spacing: 0;
+  }
+  .sec-h-m-title .small.success {
+    color: #4ade80; font-weight: 600;
+  }
+  .sec-h-m-action {
+    font-size: 11px; color: #9ca3af; font-weight: 600;
+  }
+
+  /* ===== MOTIVATION CARD ===== */
+  .mot-mobile {
+    margin: 0 16px 16px;
+    background: linear-gradient(135deg, rgba(96,165,250,0.1) 0%, rgba(50,52,64,0.4) 60%);
+    border: 1px solid rgba(96,165,250,0.25);
+    border-radius: 16px;
+    padding: 16px;
+  }
+  .mot-mobile-top {
+    display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px;
+  }
+  .mot-mobile-icon {
+    width: 40px; height: 40px; border-radius: 10px;
+    background: linear-gradient(135deg, rgba(96,165,250,0.2) 0%, rgba(59,130,246,0.1) 100%);
+    border: 1px solid rgba(96,165,250,0.3);
+    display: grid; place-items: center;
+    color: #60a5fa; font-size: 20px;
+    flex-shrink: 0;
+  }
+  .mot-mobile-h {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 700; margin-bottom: 4px;
+  }
+  .mot-mobile-h .step {
+    background: rgba(96,165,250,0.15);
+    color: #93c5fd;
+    font-size: 10px; font-weight: 700;
+    padding: 2px 7px; border-radius: 6px;
+  }
+  .mot-mobile-d { font-size: 12px; color: #9ca3af; line-height: 1.5; }
+  .btn-outline-mobile {
+    width: 100%;
+    background: rgba(96,165,250,0.1);
+    color: #93c5fd;
+    border: 1px solid rgba(96,165,250,0.3);
+    padding: 11px; border-radius: 10px;
+    font-family: inherit; font-size: 13px; font-weight: 700;
+    cursor: pointer;
+  }
+
+  /* ===== MODE CARDS (mobile - vertical stack, full width) ===== */
+  .mode-stack {
+    display: flex; flex-direction: column; gap: 10px;
+    padding: 0 16px;
+    margin-bottom: 18px;
+  }
+  .mode-mobile {
+    background: rgba(50,52,64,0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(232,168,50,0.1);
+    border-radius: 14px;
+    padding: 16px;
+    cursor: pointer;
+    position: relative;
+  }
+  .mode-mobile.featured {
+    border-color: rgba(232,168,50,0.3);
+    background:
+      linear-gradient(135deg, rgba(232,168,50,0.06) 0%, transparent 50%),
+      rgba(50,52,64,0.4);
+  }
+  .mode-mobile.locked { opacity: 0.65; }
+  .mode-mobile-top {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
+  }
+  .mode-mobile-icon {
+    width: 40px; height: 40px; border-radius: 10px;
+    display: grid; place-items: center; font-size: 20px;
+    flex-shrink: 0;
+  }
+  .mode-mobile-icon.practice {
+    background: linear-gradient(135deg, rgba(96,165,250,0.2) 0%, rgba(59,130,246,0.1) 100%);
+    border: 1px solid rgba(96,165,250,0.3);
+    color: #60a5fa;
+  }
+  .mode-mobile-icon.ranked {
+    background: linear-gradient(135deg, rgba(232,168,50,0.2) 0%, rgba(217,119,6,0.1) 100%);
+    border: 1px solid rgba(232,168,50,0.3);
+    color: #e8a832;
+  }
+  .mode-mobile-icon.multiplayer {
+    background: linear-gradient(135deg, rgba(167,139,250,0.2) 0%, rgba(124,58,237,0.1) 100%);
+    border: 1px solid rgba(167,139,250,0.3);
+    color: #a78bfa;
+  }
+  .mode-mobile-icon.tournament {
+    background: linear-gradient(135deg, rgba(244,114,182,0.2) 0%, rgba(219,39,119,0.1) 100%);
+    border: 1px solid rgba(244,114,182,0.3);
+    color: #f472b6;
+  }
+  .mode-mobile-info { flex: 1; min-width: 0; }
+  .mode-mobile-name { font-size: 15px; font-weight: 700; }
+  .mode-mobile-desc {
+    font-size: 11px; color: #9ca3af;
+    margin-top: 2px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .mode-mobile-status {
+    display: inline-flex; align-items: center; gap: 3px;
+    padding: 4px 8px; border-radius: 8px;
+    font-size: 9px; font-weight: 800;
+    text-transform: uppercase; letter-spacing: 0.4px;
+    flex-shrink: 0;
+  }
+  .mode-mobile-status.unlocked {
+    background: rgba(74,222,128,0.12);
+    color: #4ade80;
+    border: 1px solid rgba(74,222,128,0.25);
+  }
+  .mode-mobile-status.locked {
+    background: rgba(107,114,128,0.2);
+    color: #9ca3af;
+    border: 1px solid rgba(107,114,128,0.3);
+  }
+  .mode-mobile-status .material-symbols-outlined { font-size: 11px; }
+  .mode-mobile-footer {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    font-size: 11px;
+  }
+  .mode-mobile-meta { color: #9ca3af; flex: 1; min-width: 0; padding-right: 8px; }
+  .mode-mobile-meta strong { color: #f3f4f6; font-weight: 700; }
+  .mode-mobile-arrow {
+    color: #e8a832; font-weight: 700;
+    display: inline-flex; align-items: center; gap: 3px;
+    flex-shrink: 0;
+  }
+  .mode-locked-overlay-m {
+    background: rgba(17,19,30,0.7);
+    border: 1px dashed rgba(232,168,50,0.3);
+    border-radius: 8px;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 11px; color: #fbbf24; font-weight: 600;
+    display: flex; align-items: center; justify-content: center; gap: 5px;
+  }
+  .mode-locked-overlay-m .material-symbols-outlined { font-size: 12px; }
+
+  /* ===== VARIETY MODES (horizontal scroll) ===== */
+  .variety-scroll {
+    display: flex; gap: 10px;
+    padding: 0 16px 4px;
+    overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 18px;
+  }
+  .variety-scroll::-webkit-scrollbar { display: none; }
+  .variety-mobile {
+    flex: 0 0 180px;
+    scroll-snap-align: start;
+    background: rgba(50,52,64,0.3);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 14px;
+    cursor: pointer;
+  }
+  .variety-mobile-top {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .vm-icon {
+    width: 32px; height: 32px; border-radius: 9px;
+    display: grid; place-items: center; font-size: 16px;
+  }
+  .vm-icon.weekly {
+    background: rgba(74,222,128,0.12); border: 1px solid rgba(74,222,128,0.25); color: #4ade80;
+  }
+  .vm-icon.mystery {
+    background: rgba(167,139,250,0.12); border: 1px solid rgba(167,139,250,0.25); color: #a78bfa;
+  }
+  .vm-icon.speed {
+    background: rgba(248,113,113,0.12); border: 1px solid rgba(248,113,113,0.25); color: #f87171;
+  }
+  .vm-xp {
+    font-size: 9px; font-weight: 800;
+    padding: 2px 6px; border-radius: 6px;
+    background: rgba(232,168,50,0.15); color: #fbbf24;
+  }
+  .vm-name { font-size: 12px; font-weight: 700; margin-bottom: 4px; }
+  .vm-desc { font-size: 10px; color: #9ca3af; line-height: 1.4; }
+
+  /* ===== DAILY MISSIONS (state active) ===== */
+  .missions-mobile {
+    margin: 0 16px 16px;
+    background: rgba(50,52,64,0.4);
+    border: 1px solid rgba(232,168,50,0.1);
+    border-radius: 14px;
+    padding: 16px;
+  }
+  .mission-row-m {
+    display: flex; align-items: center; gap: 11px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .mission-row-m:last-child { border-bottom: none; padding-bottom: 0; }
+  .mission-row-m:first-child { padding-top: 0; }
+  .mission-check-m {
+    width: 20px; height: 20px; border-radius: 50%;
+    border: 2px solid #6b7280;
+    flex-shrink: 0;
+    display: grid; place-items: center;
+  }
+  .mission-check-m.done {
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+    border-color: transparent;
+    color: #fff;
+  }
+  .mission-check-m .material-symbols-outlined { font-size: 12px; }
+  .mission-text-m { flex: 1; font-size: 12px; color: #d1d5db; }
+  .mission-text-m.done {
+    text-decoration: line-through; color: #9ca3af;
+  }
+  .mission-prog-m {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 11px; color: #9ca3af;
+    font-variant-numeric: tabular-nums;
+  }
+  .mission-bar-m {
+    width: 40px; height: 4px; border-radius: 2px;
+    background: rgba(255,255,255,0.06); overflow: hidden;
+  }
+  .mission-bar-m-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #e8a832 0%, #fbbf24 100%);
+  }
+
+  /* ===== CARD BASE (Verse, Journey, etc) ===== */
+  .card-m {
+    margin: 0 16px 16px;
+    background: rgba(50,52,64,0.4);
+    border: 1px solid rgba(232,168,50,0.1);
+    border-radius: 14px;
+    padding: 16px;
+  }
+  .card-m-h {
+    font-size: 13px; font-weight: 700;
+    margin-bottom: 12px;
+    display: flex; align-items: center; gap: 7px;
+  }
+  .card-m-h .material-symbols-outlined { font-size: 16px; color: #e8a832; }
+  .card-m-h .right {
+    margin-left: auto; font-size: 11px; color: #9ca3af; font-weight: 500;
+  }
+
+  /* Verse */
+  .verse-m {
+    background:
+      linear-gradient(135deg, rgba(232,168,50,0.05) 0%, transparent 50%),
+      rgba(50,52,64,0.4);
+  }
+  .verse-text-m {
+    font-size: 14px; line-height: 1.6; color: #f3f4f6;
+    font-style: italic; margin-bottom: 10px;
+    padding-left: 14px; position: relative;
+  }
+  .verse-text-m::before {
+    content: '"'; position: absolute; left: 0; top: -6px;
+    font-size: 28px; color: #e8a832; font-family: Georgia, serif;
+    line-height: 1;
+  }
+  .verse-ref-m {
+    font-size: 11px; color: #e8a832; font-weight: 700;
+    text-align: right;
+  }
+
+  /* Journey mobile */
+  .journey-row-m {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px;
+    background: rgba(17,19,30,0.4);
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .journey-book-m {
+    display: flex; align-items: center; gap: 10px; min-width: 0;
+  }
+  .journey-bicon-m {
+    width: 36px; height: 36px; border-radius: 9px;
+    background: linear-gradient(135deg, rgba(96,165,250,0.2) 0%, rgba(59,130,246,0.1) 100%);
+    border: 1px solid rgba(96,165,250,0.3);
+    display: grid; place-items: center;
+    color: #60a5fa; font-size: 18px;
+    flex-shrink: 0;
+  }
+  .journey-bname-m { font-size: 13px; font-weight: 700; }
+  .journey-bprog-m { font-size: 10px; color: #9ca3af; margin-top: 1px; }
+  .journey-pct-m { font-size: 18px; font-weight: 800; color: #e8a832; }
+  .journey-bar-m {
+    height: 5px; border-radius: 3px;
+    background: rgba(255,255,255,0.06);
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+  .journey-bar-m-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #60a5fa 0%, #3b82f6 100%);
+  }
+  .journey-next-m {
+    background: rgba(232,168,50,0.06);
+    border: 1px solid rgba(232,168,50,0.15);
+    border-radius: 9px;
+    padding: 10px 12px;
+    display: flex; align-items: center; gap: 9px;
+  }
+  .journey-next-icon-m {
+    width: 28px; height: 28px; border-radius: 7px;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    display: grid; place-items: center; flex-shrink: 0;
+    color: #11131e; font-size: 14px;
+  }
+  .journey-next-text-m { flex: 1; min-width: 0; }
+  .journey-next-l-m {
+    font-size: 9px; color: #fbbf24; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.4px;
+  }
+  .journey-next-n-m {
+    font-size: 12px; font-weight: 700; margin-top: 1px;
+    line-height: 1.3;
+  }
+
+  /* Leaderboard mini mobile */
+  .lb-row-m {
+    display: grid;
+    grid-template-columns: 24px 28px 1fr auto;
+    gap: 10px; align-items: center;
+    padding: 8px 6px;
+    border-radius: 8px;
+  }
+  .lb-row-m.me {
+    background: rgba(232,168,50,0.08);
+    border: 1px solid rgba(232,168,50,0.2);
+  }
+  .lb-rank-m { font-size: 11px; font-weight: 800; color: #6b7280; text-align: center; }
+  .lb-rank-m.medal-1 { color: #fbbf24; font-size: 14px; }
+  .lb-rank-m.medal-2 { color: #d1d5db; font-size: 13px; }
+  .lb-rank-m.medal-3 { color: #d97706; font-size: 13px; }
+  .lb-avatar-m {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+    display: grid; place-items: center;
+    color: #f3f4f6; font-weight: 700; font-size: 11px;
+  }
+  .lb-avatar-m.me {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+  }
+  .lb-avatar-m.gold {
+    background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+    color: #11131e;
+  }
+  .lb-name-m {
+    font-size: 12px; font-weight: 600;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .lb-score-m {
+    font-size: 12px; font-weight: 800; color: #e8a832;
+    font-variant-numeric: tabular-nums;
+  }
+  .lb-divider-m {
+    text-align: center; font-size: 10px; color: #6b7280;
+    letter-spacing: 2px; margin: 6px 0;
+  }
+
+  /* Activity mobile */
+  .activity-m {
+    display: flex; align-items: center; gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 12px;
+  }
+  .activity-m:last-child { border-bottom: none; padding-bottom: 0; }
+  .activity-m:first-child { padding-top: 0; }
+  .activity-icon-m {
+    width: 28px; height: 28px; border-radius: 8px;
+    display: grid; place-items: center; flex-shrink: 0;
+    font-size: 13px;
+  }
+  .activity-icon-m.complete { background: rgba(74,222,128,0.12); color: #4ade80; }
+  .activity-icon-m.tier { background: rgba(232,168,50,0.12); color: #e8a832; }
+  .activity-icon-m.streak { background: rgba(239,68,68,0.12); color: #f87171; }
+  .activity-text-m { flex: 1; color: #d1d5db; min-width: 0; }
+  .activity-text-m strong { color: #f3f4f6; font-weight: 700; }
+  .activity-time-m { font-size: 10px; color: #6b7280; flex-shrink: 0; }
+
+  /* ===== Bottom nav (Hướng 3) ===== */
+  .bottom-nav {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(13,15,23,0.95);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(232,168,50,0.1);
+    padding: 10px 16px 24px;
+    display: flex; justify-content: space-around; align-items: center;
+    z-index: 20;
+  }
+  .nav-item {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    display: grid; place-items: center;
+    color: #6b7280; font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-item.active {
+    width: auto; padding: 0 16px;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 13px; font-weight: 800;
+    box-shadow: 0 4px 12px rgba(232,168,50,0.3);
+  }
+  .nav-item.active .material-symbols-outlined { font-size: 20px; }
+
+  /* State control */
+  .state-new .show-active { display: none; }
+  .state-new .show-new { display: block; }
+  .state-active .show-active { display: block; }
+  .state-active .show-new { display: none; }
+  .state-new .show-active-flex,
+  .state-active .show-new-flex { display: none; }
+  .state-active .show-active-flex { display: flex; }
+  .state-new .show-new-flex { display: flex; }
+  .state-new .show-active-grid,
+  .state-active .show-new-grid { display: none; }
+  .state-active .show-active-grid { display: grid; }
+  .state-new .show-new-grid { display: grid; }
+
+  /* Annotation */
+  .annotation {
+    margin: 50px auto 0;
+    max-width: 880px;
+    padding: 24px 28px;
+    background: rgba(96,165,250,0.06);
+    border: 1px solid rgba(96,165,250,0.2);
+    border-radius: 16px;
+    color: #93c5fd;
+    font-size: 13px; line-height: 1.7;
+  }
+  .annotation strong { color: #60a5fa; }
+  .annotation code {
+    background: rgba(17,19,30,0.6); padding: 2px 6px;
+    border-radius: 4px; font-size: 12px;
+  }
+  .annotation ul { margin: 6px 0 0 20px; }
+  .annotation li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<div class="review-header">
+  <h1>Home · Mobile Redesign</h1>
+  <p>2 state cạnh nhau · 390 × 844 (iPhone 14 Pro)</p>
+</div>
+
+<div class="phones">
+
+  <!-- ============================================ -->
+  <!-- PHONE 1: USER MỚI (Tier 1)                   -->
+  <!-- ============================================ -->
+  <div class="phone-wrap">
+    <div class="phone-label">User mới · Tier 1</div>
+    <div class="phone state-new">
+
+      <div class="status-bar">
+        <div class="time">9:41</div>
+        <div class="icons">
+          <span class="material-symbols-outlined" style="font-size:14px">network_cell</span>
+          <span class="material-symbols-outlined" style="font-size:14px">wifi</span>
+          <span class="material-symbols-outlined" style="font-size:14px">battery_full</span>
+        </div>
+      </div>
+
+      <div class="app-content">
+
+        <div class="app-topbar">
+          <div class="app-brand">Bible Quiz</div>
+          <div class="app-bell"><span class="material-symbols-outlined">notifications</span></div>
+        </div>
+
+        <!-- Greeting -->
+        <div class="greeting">
+          <div class="greeting-top">
+            <div class="greeting-avatar-wrap">
+              <div class="greeting-avatar">T</div>
+              <div class="greeting-tier-mini">🌱</div>
+            </div>
+            <div class="greeting-meta-info">
+              <div class="greeting-greet">Chào buổi tối</div>
+              <div class="greeting-name">TAI THANH</div>
+              <div class="greeting-tier-name">
+                <span class="material-symbols-outlined" style="font-size:12px">stars</span>
+                Tân Tín Hữu
+              </div>
+            </div>
+          </div>
+
+          <div class="tier-prog-mobile">
+            <div class="tier-prog-row">
+              <span class="tier-prog-current"><strong>Tân Tín Hữu</strong></span>
+              <span class="tier-prog-next">→ Người Tìm Kiếm</span>
+            </div>
+            <div class="tier-prog-bar-wrap">
+              <div class="tier-prog-fill" style="width:0%"></div>
+              <div class="tier-prog-milestones">
+                <span class="tier-prog-dot"></span>
+                <span class="tier-prog-dot"></span>
+                <span class="tier-prog-dot"></span>
+                <span class="tier-prog-dot"></span>
+                <span class="tier-prog-dot"></span>
+              </div>
+            </div>
+            <div class="tier-prog-xp"><strong>0</strong> / 1,000 XP · sao 0/5</div>
+          </div>
+
+          <div class="greeting-stats">
+            <div class="gs-cell">
+              <div class="gs-icon">🔥</div>
+              <div class="gs-v">0</div>
+              <div class="gs-l">Streak</div>
+            </div>
+            <div class="gs-cell">
+              <div class="gs-icon energy">⚡</div>
+              <div class="gs-v">100</div>
+              <div class="gs-l">Năng lượng</div>
+            </div>
+            <div class="gs-cell">
+              <div class="gs-icon season">📊</div>
+              <div class="gs-v">0</div>
+              <div class="gs-l">Mùa này</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Daily Challenge -->
+        <div class="dc-mobile">
+          <div class="dc-mobile-top">
+            <div class="dc-mobile-icon">
+              <span class="material-symbols-outlined">local_fire_department</span>
+            </div>
+            <div class="dc-mobile-info">
+              <div class="dc-mobile-label">Thử thách hôm nay</div>
+              <div class="dc-mobile-title">5 câu cùng cộng đồng</div>
+            </div>
+          </div>
+          <div class="dc-mobile-meta">
+            <span class="dc-meta-chip">
+              <span class="material-symbols-outlined">timer</span> 5 phút
+            </span>
+            <span class="dc-meta-chip">
+              <span class="material-symbols-outlined">quiz</span> 5 câu
+            </span>
+            <span class="dc-meta-chip reward">
+              <span class="material-symbols-outlined">workspace_premium</span> +50 XP
+            </span>
+            <span class="dc-meta-chip season">
+              <span class="material-symbols-outlined">auto_awesome</span> Mùa Ngũ Tuần ×1.5
+            </span>
+          </div>
+          <button class="dc-mobile-cta">
+            Vào thử thách
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+          <div class="dc-mobile-countdown">Làm mới sau <strong>07:17:55</strong></div>
+        </div>
+
+        <!-- Motivation card -->
+        <div class="mot-mobile">
+          <div class="mot-mobile-top">
+            <div class="mot-mobile-icon">
+              <span class="material-symbols-outlined">tips_and_updates</span>
+            </div>
+            <div>
+              <div class="mot-mobile-h">
+                <span class="step">Bước 1</span>
+                Hoàn thành thử thách hôm nay
+              </div>
+              <div class="mot-mobile-d">
+                Sau khi xong, bạn sẽ mở khóa Nhiệm vụ ngày, Bảng xếp hạng, và bắt đầu chuỗi liên tục.
+              </div>
+            </div>
+          </div>
+          <button class="btn-outline-mobile">Bắt đầu →</button>
+        </div>
+
+        <!-- Game modes primary -->
+        <div class="sec-h-m">
+          <div class="sec-h-m-title">
+            <span class="material-symbols-outlined">sports_esports</span>
+            Chế độ chơi
+          </div>
+        </div>
+
+        <div class="mode-stack">
+          <div class="mode-mobile">
+            <div class="mode-mobile-top">
+              <div class="mode-mobile-icon practice">
+                <span class="material-symbols-outlined">menu_book</span>
+              </div>
+              <div class="mode-mobile-info">
+                <div class="mode-mobile-name">Luyện tập</div>
+                <div class="mode-mobile-desc">Học theo nhịp riêng</div>
+              </div>
+              <span class="mode-mobile-status unlocked">
+                <span class="material-symbols-outlined">check</span> Mở
+              </span>
+            </div>
+            <div class="mode-mobile-footer">
+              <div class="mode-mobile-meta">Chọn sách + độ khó tự do</div>
+              <span class="mode-mobile-arrow">Bắt đầu <span class="material-symbols-outlined" style="font-size:14px">arrow_forward</span></span>
+            </div>
+          </div>
+
+          <div class="mode-mobile locked">
+            <div class="mode-mobile-top">
+              <div class="mode-mobile-icon ranked">
+                <span class="material-symbols-outlined">trophy</span>
+              </div>
+              <div class="mode-mobile-info">
+                <div class="mode-mobile-name">Thi đấu Ranked</div>
+                <div class="mode-mobile-desc">Cạnh tranh xếp hạng theo mùa</div>
+              </div>
+              <span class="mode-mobile-status locked">
+                <span class="material-symbols-outlined">lock</span> Khóa
+              </span>
+            </div>
+            <div class="mode-locked-overlay-m">
+              <span class="material-symbols-outlined">flag</span>
+              Đạt <strong>Người Tìm Kiếm</strong> để mở khóa
+            </div>
+          </div>
+        </div>
+
+        <!-- Variety modes -->
+        <div class="sec-h-m">
+          <div class="sec-h-m-title">
+            <span class="material-symbols-outlined">casino</span>
+            Variety
+            <span class="small">không tính XP/leaderboard</span>
+          </div>
+        </div>
+
+        <div class="variety-scroll">
+          <div class="variety-mobile">
+            <div class="variety-mobile-top">
+              <div class="vm-icon weekly">
+                <span class="material-symbols-outlined">date_range</span>
+              </div>
+              <span class="vm-xp">CHỦ ĐỀ</span>
+            </div>
+            <div class="vm-name">Chủ đề tuần</div>
+            <div class="vm-desc">"Lòng can đảm" · 10 câu</div>
+          </div>
+          <div class="variety-mobile">
+            <div class="variety-mobile-top">
+              <div class="vm-icon mystery">
+                <span class="material-symbols-outlined">help_outline</span>
+              </div>
+              <span class="vm-xp">×1.5 XP</span>
+            </div>
+            <div class="vm-name">Mystery Mode</div>
+            <div class="vm-desc">Random hoàn toàn</div>
+          </div>
+          <div class="variety-mobile">
+            <div class="variety-mobile-top">
+              <div class="vm-icon speed">
+                <span class="material-symbols-outlined">flash_on</span>
+              </div>
+              <span class="vm-xp">×2 XP</span>
+            </div>
+            <div class="vm-name">Speed Round</div>
+            <div class="vm-desc">10 câu × 10s</div>
+          </div>
+        </div>
+
+        <!-- Multiplayer + Tournament (locked) -->
+        <div class="sec-h-m">
+          <div class="sec-h-m-title">
+            <span class="material-symbols-outlined">groups</span>
+            Thi đấu nhóm
+          </div>
+        </div>
+
+        <div class="mode-stack">
+          <div class="mode-mobile locked">
+            <div class="mode-mobile-top">
+              <div class="mode-mobile-icon multiplayer">
+                <span class="material-symbols-outlined">groups</span>
+              </div>
+              <div class="mode-mobile-info">
+                <div class="mode-mobile-name">Phòng chơi</div>
+                <div class="mode-mobile-desc">Speed Race · Battle Royale</div>
+              </div>
+              <span class="mode-mobile-status locked">
+                <span class="material-symbols-outlined">lock</span> Khóa
+              </span>
+            </div>
+            <div class="mode-locked-overlay-m">
+              <span class="material-symbols-outlined">flag</span>
+              Đạt <strong>Người Tìm Kiếm</strong> để mở khóa
+            </div>
+          </div>
+
+          <div class="mode-mobile locked">
+            <div class="mode-mobile-top">
+              <div class="mode-mobile-icon tournament">
+                <span class="material-symbols-outlined">military_tech</span>
+              </div>
+              <div class="mode-mobile-info">
+                <div class="mode-mobile-name">Giải đấu</div>
+                <div class="mode-mobile-desc">Bracket 1v1 · 3 mạng</div>
+              </div>
+              <span class="mode-mobile-status locked">
+                <span class="material-symbols-outlined">lock</span> Khóa
+              </span>
+            </div>
+            <div class="mode-locked-overlay-m">
+              <span class="material-symbols-outlined">flag</span>
+              Đạt <strong>Hiền Triết</strong> để mở khóa
+            </div>
+          </div>
+        </div>
+
+        <!-- Verse -->
+        <div class="card-m verse-m">
+          <div class="card-m-h">
+            <span class="material-symbols-outlined">menu_book</span>
+            Câu gốc hôm nay
+          </div>
+          <div class="verse-text-m">
+            Hãy tìm kiếm nước Đức Chúa Trời và sự công bình của Ngài, thì Ngài sẽ cho thêm các ngươi mọi điều ấy nữa.
+          </div>
+          <div class="verse-ref-m">— Ma-thi-ơ 6:33</div>
+        </div>
+
+        <!-- Journey (state new) -->
+        <div class="card-m">
+          <div class="card-m-h">
+            <span class="material-symbols-outlined">map</span>
+            Hành trình 66 sách
+            <span class="right">0/66</span>
+          </div>
+          <div class="journey-row-m">
+            <div class="journey-book-m">
+              <div class="journey-bicon-m">
+                <span class="material-symbols-outlined">auto_stories</span>
+              </div>
+              <div>
+                <div class="journey-bname-m">Sáng Thế Ký</div>
+                <div class="journey-bprog-m">Sách đầu tiên · 50 câu</div>
+              </div>
+            </div>
+            <div class="journey-pct-m">0%</div>
+          </div>
+          <div class="journey-bar-m"><div class="journey-bar-m-fill" style="width:0%"></div></div>
+          <div class="journey-next-m">
+            <div class="journey-next-icon-m">📖</div>
+            <div class="journey-next-text-m">
+              <div class="journey-next-l-m">Phần thưởng</div>
+              <div class="journey-next-n-m">Badge "Khởi Hành" + mở Xuất Hành</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom nav -->
+      <div class="bottom-nav">
+        <div class="nav-item active">
+          <span class="material-symbols-outlined">home</span>
+          <span>Trang chủ</span>
+        </div>
+        <div class="nav-item"><span class="material-symbols-outlined">leaderboard</span></div>
+        <div class="nav-item"><span class="material-symbols-outlined">groups</span></div>
+        <div class="nav-item"><span class="material-symbols-outlined">person</span></div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ============================================ -->
+  <!-- PHONE 2: USER ACTIVE (Tier 2)                -->
+  <!-- ============================================ -->
+  <div class="phone-wrap">
+    <div class="phone-label">User active · Tier 2</div>
+    <div class="phone state-active">
+
+      <div class="status-bar">
+        <div class="time">9:41</div>
+        <div class="icons">
+          <span class="material-symbols-outlined" style="font-size:14px">network_cell</span>
+          <span class="material-symbols-outlined" style="font-size:14px">wifi</span>
+          <span class="material-symbols-outlined" style="font-size:14px">battery_full</span>
+        </div>
+      </div>
+
+      <div class="app-content">
+
+        <div class="app-topbar">
+          <div class="app-brand">Bible Quiz</div>
+          <div class="app-bell"><span class="material-symbols-outlined">notifications</span></div>
+        </div>
+
+        <!-- Greeting -->
+        <div class="greeting">
+          <div class="greeting-top">
+            <div class="greeting-avatar-wrap">
+              <div class="greeting-avatar">T</div>
+              <div class="greeting-tier-mini">🔍</div>
+            </div>
+            <div class="greeting-meta-info">
+              <div class="greeting-greet">Chào buổi tối</div>
+              <div class="greeting-name">TAI THANH</div>
+              <div class="greeting-tier-name">
+                <span class="material-symbols-outlined" style="font-size:12px">stars</span>
+                Người Tìm Kiếm
+              </div>
+            </div>
+          </div>
+
+          <div class="tier-prog-mobile">
+            <div class="tier-prog-row">
+              <span class="tier-prog-current"><strong>Người Tìm Kiếm</strong></span>
+              <span class="tier-prog-next">→ Môn Đồ</span>
+            </div>
+            <div class="tier-prog-bar-wrap">
+              <div class="tier-prog-fill" style="width:62%"></div>
+              <div class="tier-prog-milestones">
+                <span class="tier-prog-dot reached"></span>
+                <span class="tier-prog-dot reached"></span>
+                <span class="tier-prog-dot reached"></span>
+                <span class="tier-prog-dot"></span>
+                <span class="tier-prog-dot"></span>
+              </div>
+            </div>
+            <div class="tier-prog-xp"><strong>3,120</strong> / 5,000 XP · sao 3/5</div>
+          </div>
+
+          <div class="greeting-stats">
+            <div class="gs-cell">
+              <div class="gs-icon">🔥</div>
+              <div class="gs-v">12</div>
+              <div class="gs-l">Streak</div>
+            </div>
+            <div class="gs-cell">
+              <div class="gs-icon energy">⚡</div>
+              <div class="gs-v">100</div>
+              <div class="gs-l">Năng lượng</div>
+            </div>
+            <div class="gs-cell">
+              <div class="gs-icon season">📊</div>
+              <div class="gs-v">847</div>
+              <div class="gs-l">Mùa này</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Daily Challenge -->
+        <div class="dc-mobile">
+          <div class="dc-mobile-top">
+            <div class="dc-mobile-icon">
+              <span class="material-symbols-outlined">local_fire_department</span>
+            </div>
+            <div class="dc-mobile-info">
+              <div class="dc-mobile-label">Thử thách hôm nay</div>
+              <div class="dc-mobile-title">5 câu cùng cộng đồng</div>
+            </div>
+          </div>
+          <div class="dc-mobile-meta">
+            <span class="dc-meta-chip">
+              <span class="material-symbols-outlined">timer</span> 5 phút
+            </span>
+            <span class="dc-meta-chip">
+              <span class="material-symbols-outlined">quiz</span> 5 câu
+            </span>
+            <span class="dc-meta-chip reward">
+              <span class="material-symbols-outlined">workspace_premium</span> +50 XP
+            </span>
+            <span class="dc-meta-chip season">
+              <span class="material-symbols-outlined">auto_awesome</span> Mùa Ngũ Tuần ×1.5
+            </span>
+          </div>
+          <button class="dc-mobile-cta">
+            Vào thử thách
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+          <div class="dc-mobile-countdown">Làm mới sau <strong>07:17:55</strong></div>
+        </div>
+
+        <!-- Game modes primary -->
+        <div class="sec-h-m">
+          <div class="sec-h-m-title">
+            <span class="material-symbols-outlined">sports_esports</span>
+            Chế độ chơi
+          </div>
+        </div>
+
+        <div class="mode-stack">
+          <div class="mode-mobile">
+            <div class="mode-mobile-top">
+              <div class="mode-mobile-icon practice">
+                <span class="material-symbols-outlined">menu_book</span>
+              </div>
+              <div class="mode-mobile-info">
+                <div class="mode-mobile-name">Luyện tập</div>
+                <div class="mode-mobile-desc">Học theo nhịp riêng</div>
+              </div>
+              <span class="mode-mobile-status unlocked">
+                <span class="material-symbols-outlined">check</span> Mở
+              </span>
+            </div>
+            <div class="mode-mobile-footer">
+              <div class="mode-mobile-meta">Đang ôn <strong>Genesis</strong> · 47%</div>
+              <span class="mode-mobile-arrow">Tiếp <span class="material-symbols-outlined" style="font-size:14px">arrow_forward</span></span>
+            </div>
+          </div>
+
+          <div class="mode-mobile featured">
+            <div class="mode-mobile-top">
+              <div class="mode-mobile-icon ranked">
+                <span class="material-symbols-outlined">trophy</span>
+              </div>
+              <div class="mode-mobile-info">
+                <div class="mode-mobile-name">Thi đấu Ranked</div>
+                <div class="mode-mobile-desc">Cạnh tranh ranking mùa</div>
+              </div>
+              <span class="mode-mobile-status unlocked">
+                <span class="material-symbols-outlined">bolt</span> 100/100
+              </span>
+            </div>
+            <div class="mode-mobile-footer">
+              <div class="mode-mobile-meta">Hôm nay <strong>23/100</strong> · Hạng <strong>#147</strong></div>
+              <span class="mode-mobile-arrow">Vào trận <span class="material-symbols-outlined" style="font-size:14px">arrow_forward</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Daily Missions -->
+        <div class="sec-h-m">
+          <div class="sec-h-m-title">
+            <span class="material-symbols-outlined">task_alt</span>
+            Nhiệm vụ hôm nay
+            <span class="small success">2/3 ✓</span>
+          </div>
+        </div>
+
+        <div class="missions-mobile">
+          <div class="mission-row-m">
+            <div class="mission-check-m done">
+              <span class="material-symbols-outlined">check</span>
+            </div>
+            <div class="mission-text-m done">Trả lời đúng 3 câu</div>
+            <div class="mission-prog-m">
+              <div class="mission-bar-m"><div class="mission-bar-m-fill" style="width:100%"></div></div>
+              3/3
+            </div>
+          </div>
+          <div class="mission-row-m">
+            <div class="mission-check-m done">
+              <span class="material-symbols-outlined">check</span>
+            </div>
+            <div class="mission-text-m done">Hoàn thành thử thách ngày</div>
+            <div class="mission-prog-m">
+              <div class="mission-bar-m"><div class="mission-bar-m-fill" style="width:100%"></div></div>
+              1/1
+            </div>
+          </div>
+          <div class="mission-row-m">
+            <div class="mission-check-m"></div>
+            <div class="mission-text-m">3 câu liên tiếp đúng</div>
+            <div class="mission-prog-m">
+              <div class="mission-bar-m"><div class="mission-bar-m-fill" style="width:33%"></div></div>
+              1/3
+            </div>
+          </div>
+        </div>
+
+        <!-- Variety -->
+        <div class="sec-h-m">
+          <div class="sec-h-m-title">
+            <span class="material-symbols-outlined">casino</span>
+            Variety
+            <span class="small">không tính XP/leaderboard</span>
+          </div>
+        </div>
+
+        <div class="variety-scroll">
+          <div class="variety-mobile">
+            <div class="variety-mobile-top">
+              <div class="vm-icon weekly">
+                <span class="material-symbols-outlined">date_range</span>
+              </div>
+              <span class="vm-xp">CHỦ ĐỀ</span>
+            </div>
+            <div class="vm-name">Chủ đề tuần</div>
+            <div class="vm-desc">"Lòng can đảm" · 10 câu</div>
+          </div>
+          <div class="variety-mobile">
+            <div class="variety-mobile-top">
+              <div class="vm-icon mystery">
+                <span class="material-symbols-outlined">help_outline</span>
+              </div>
+              <span class="vm-xp">×1.5 XP</span>
+            </div>
+            <div class="vm-name">Mystery Mode</div>
+            <div class="vm-desc">Random hoàn toàn</div>
+          </div>
+          <div class="variety-mobile">
+            <div class="variety-mobile-top">
+              <div class="vm-icon speed">
+                <span class="material-symbols-outlined">flash_on</span>
+              </div>
+              <span class="vm-xp">×2 XP</span>
+            </div>
+            <div class="vm-name">Speed Round</div>
+            <div class="vm-desc">10 câu × 10s</div>
+          </div>
+        </div>
+
+        <!-- Multiplayer + Tournament -->
+        <div class="sec-h-m">
+          <div class="sec-h-m-title">
+            <span class="material-symbols-outlined">groups</span>
+            Thi đấu nhóm
+          </div>
+        </div>
+
+        <div class="mode-stack">
+          <div class="mode-mobile">
+            <div class="mode-mobile-top">
+              <div class="mode-mobile-icon multiplayer">
+                <span class="material-symbols-outlined">groups</span>
+              </div>
+              <div class="mode-mobile-info">
+                <div class="mode-mobile-name">Phòng chơi</div>
+                <div class="mode-mobile-desc">Speed · Battle · Team</div>
+              </div>
+              <span class="mode-mobile-status unlocked">
+                <span class="material-symbols-outlined">circle</span> 12 phòng
+              </span>
+            </div>
+            <div class="mode-mobile-footer">
+              <div class="mode-mobile-meta">3 phòng từ <strong>FMC Đà Nẵng</strong></div>
+              <span class="mode-mobile-arrow">Tham gia <span class="material-symbols-outlined" style="font-size:14px">arrow_forward</span></span>
+            </div>
+          </div>
+
+          <div class="mode-mobile locked">
+            <div class="mode-mobile-top">
+              <div class="mode-mobile-icon tournament">
+                <span class="material-symbols-outlined">military_tech</span>
+              </div>
+              <div class="mode-mobile-info">
+                <div class="mode-mobile-name">Giải đấu</div>
+                <div class="mode-mobile-desc">Bracket 1v1 · 3 mạng</div>
+              </div>
+              <span class="mode-mobile-status locked">
+                <span class="material-symbols-outlined">lock</span> Khóa
+              </span>
+            </div>
+            <div class="mode-locked-overlay-m">
+              <span class="material-symbols-outlined">flag</span>
+              Đạt <strong>Hiền Triết</strong> để mở khóa
+            </div>
+          </div>
+        </div>
+
+        <!-- Verse -->
+        <div class="card-m verse-m">
+          <div class="card-m-h">
+            <span class="material-symbols-outlined">menu_book</span>
+            Câu gốc hôm nay
+          </div>
+          <div class="verse-text-m">
+            Hãy tìm kiếm nước Đức Chúa Trời và sự công bình của Ngài, thì Ngài sẽ cho thêm các ngươi mọi điều ấy nữa.
+          </div>
+          <div class="verse-ref-m">— Ma-thi-ơ 6:33</div>
+        </div>
+
+        <!-- Journey (state active) -->
+        <div class="card-m">
+          <div class="card-m-h">
+            <span class="material-symbols-outlined">map</span>
+            Hành trình 66 sách
+            <span class="right">8/66</span>
+          </div>
+          <div class="journey-row-m">
+            <div class="journey-book-m">
+              <div class="journey-bicon-m">
+                <span class="material-symbols-outlined">auto_stories</span>
+              </div>
+              <div>
+                <div class="journey-bname-m">Lê-vi Ký</div>
+                <div class="journey-bprog-m">Đang chinh phục · 23/52 câu</div>
+              </div>
+            </div>
+            <div class="journey-pct-m">44%</div>
+          </div>
+          <div class="journey-bar-m"><div class="journey-bar-m-fill" style="width:44%"></div></div>
+          <div class="journey-next-m">
+            <div class="journey-next-icon-m">⛰️</div>
+            <div class="journey-next-text-m">
+              <div class="journey-next-l-m">Còn 36% để chinh phục</div>
+              <div class="journey-next-n-m">Badge "Người chinh phục Lê-vi Ký"</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leaderboard mini -->
+        <div class="card-m">
+          <div class="card-m-h">
+            <span class="material-symbols-outlined">leaderboard</span>
+            Xếp hạng tuần
+            <span class="right">Tuần này</span>
+          </div>
+
+          <div class="lb-row-m">
+            <div class="lb-rank-m medal-1">🥇</div>
+            <div class="lb-avatar-m gold">M</div>
+            <div class="lb-name-m">Minh Pham · Sứ Đồ</div>
+            <div class="lb-score-m">3,420</div>
+          </div>
+          <div class="lb-row-m">
+            <div class="lb-rank-m medal-2">🥈</div>
+            <div class="lb-avatar-m">L</div>
+            <div class="lb-name-m">Lan Nguyen · Tiên Tri</div>
+            <div class="lb-score-m">2,890</div>
+          </div>
+          <div class="lb-row-m">
+            <div class="lb-rank-m medal-3">🥉</div>
+            <div class="lb-avatar-m">H</div>
+            <div class="lb-name-m">Hieu Tran · Hiền Triết</div>
+            <div class="lb-score-m">2,140</div>
+          </div>
+          <div class="lb-divider-m">···</div>
+          <div class="lb-row-m me">
+            <div class="lb-rank-m">147</div>
+            <div class="lb-avatar-m me">T</div>
+            <div class="lb-name-m">TAI THANH (bạn)</div>
+            <div class="lb-score-m">847</div>
+          </div>
+        </div>
+
+        <!-- Activity -->
+        <div class="card-m">
+          <div class="card-m-h">
+            <span class="material-symbols-outlined">notifications_active</span>
+            Hoạt động trong nhóm
+          </div>
+          <div class="activity-m">
+            <div class="activity-icon-m complete">
+              <span class="material-symbols-outlined">check</span>
+            </div>
+            <div class="activity-text-m"><strong>Tai Bui Thanh</strong> hoàn thành Daily 5/5</div>
+            <div class="activity-time-m">15p</div>
+          </div>
+          <div class="activity-m">
+            <div class="activity-icon-m tier">
+              <span class="material-symbols-outlined">workspace_premium</span>
+            </div>
+            <div class="activity-text-m"><strong>Hoa Le</strong> đạt Môn Đồ 🪔</div>
+            <div class="activity-time-m">2g</div>
+          </div>
+          <div class="activity-m">
+            <div class="activity-icon-m streak">
+              <span class="material-symbols-outlined">local_fire_department</span>
+            </div>
+            <div class="activity-text-m"><strong>Anh Pham</strong> streak 30 ngày 🔥</div>
+            <div class="activity-time-m">3g</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bottom-nav">
+        <div class="nav-item active">
+          <span class="material-symbols-outlined">home</span>
+          <span>Trang chủ</span>
+        </div>
+        <div class="nav-item"><span class="material-symbols-outlined">leaderboard</span></div>
+        <div class="nav-item"><span class="material-symbols-outlined">groups</span></div>
+        <div class="nav-item"><span class="material-symbols-outlined">person</span></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Annotation -->
+<div class="annotation">
+  <strong>📝 Ghi chú thiết kế Home mobile</strong>
+
+  <p style="margin-top:12px"><strong>Khác biệt so với desktop:</strong></p>
+  <ul>
+    <li><strong>Greeting card vertical layout</strong> — avatar+name+tier ở row 1, tier progress bar full-width row 2, 3 stats row 3 (3 cột với divider). Compact ~160px.</li>
+    <li><strong>Daily Challenge stack vertical</strong> — icon+title row 1, meta chips wrapping row 2, big CTA full-width row 3, countdown nhỏ phía dưới.</li>
+    <li><strong>Mode cards single column stack</strong> — không 2-col grid, mỗi card full-width. Header row có icon + name + status chip; description compact; footer với meta + arrow.</li>
+    <li><strong>Variety modes horizontal scroll</strong> — 3 cards 180px width, scroll-snap, hint card thứ 3 lú ra mép phải.</li>
+    <li><strong>Multiplayer + Tournament stack</strong> — 2 cards full-width thay vì grid.</li>
+    <li><strong>Verse + Journey stack vertical</strong> — không 2-col, verse trước journey sau.</li>
+    <li><strong>Leaderboard + Activity stack</strong> — chỉ ở state-active. Mỗi card riêng, full-width.</li>
+  </ul>
+
+  <p style="margin-top:12px"><strong>Mobile-specific tweaks:</strong></p>
+  <ul>
+    <li>Tier progress XP label: "3,120 / 5,000 XP · sao 3/5" — giúp user hiểu cả tier XP lẫn star sub-progress trong cùng 1 dòng.</li>
+    <li>Section heading "không tính XP/leaderboard" rút gọn hơn cho variety modes (vs desktop "không ảnh hưởng XP/leaderboard").</li>
+    <li>Mode card description rút gọn 1 dòng (white-space:nowrap + ellipsis) để fit 358px width.</li>
+    <li>Activity items rút gọn: "Daily Challenge (5/5)" → "Daily 5/5", "Tai Bui Thanh hoàn thành" giữ nguyên nhưng time chỉ "15p" thay vì "15 phút".</li>
+    <li>FAB không có ở Home — không có create action chính.</li>
+  </ul>
+
+  <p style="margin-top:12px"><strong>Bottom nav (Hướng 3):</strong></p>
+  <ul>
+    <li>Home <strong>active pill với label "Trang chủ"</strong> — gold gradient, shadow.</li>
+    <li>Leaderboard / Groups / Profile inactive — icon only 22px.</li>
+  </ul>
+
+  <p style="margin-top:12px"><strong>Above-fold check (sau status bar + topbar = ~720px scroll area trừ bottom nav 84px):</strong></p>
+  <ul>
+    <li>State new: greeting (~190px) + DC (~270px) = 460px → motivation card lú ra ~1/3.</li>
+    <li>State active: greeting (~190px) + DC (~270px) = 460px → game modes section heading lú ra.</li>
+    <li>Daily Challenge CTA fully visible above fold — primary action accessible immediately.</li>
+  </ul>
+
+  <p style="margin-top:12px"><strong>Total page length:</strong></p>
+  <ul>
+    <li>State new: ~1,750px (8 sections, ngắn hơn vì hide missions/leaderboard/activity)</li>
+    <li>State active: ~2,400px (10 sections — full dashboard)</li>
+    <li>Tương đương 2.5 - 3 viewport scroll, chấp nhận được cho mobile dashboard pattern.</li>
+  </ul>
+</div>
+
+</body>
+</html>
