@@ -199,14 +199,18 @@ describe('GameModeGrid (Option Y)', () => {
     })
 
     it('compact card click navigates to its route', async () => {
-      renderGrid()
+      // HR-4: tournament is tier-locked < 15000 XP. Pass userStats above
+      // the threshold so the click handler is wired.
+      renderGrid({ userStats: { totalPoints: 50000, currentStreak: 5 } })
       const user = userEvent.setup()
       await user.click(screen.getByTestId('compact-card-tournament'))
       expect(mockNavigate).toHaveBeenCalledWith('/tournaments')
     })
 
     it('matchmaking-hint icon shown on Tournament + Multiplayer only', async () => {
-      renderGrid()
+      // HR-4: matchmaking-hint replaced by lock-chip when locked. Use
+      // unlocked stats here.
+      renderGrid({ userStats: { totalPoints: 50000, currentStreak: 5 } })
       expect(screen.getByTestId('compact-card-tournament-matchmaking-hint')).toBeInTheDocument()
       expect(screen.getByTestId('compact-card-multiplayer-matchmaking-hint')).toBeInTheDocument()
       expect(screen.queryByTestId('compact-card-group-matchmaking-hint')).not.toBeInTheDocument()
@@ -255,7 +259,9 @@ describe('GameModeGrid (Option Y)', () => {
         }
         return Promise.reject(new Error('Not mocked: ' + url))
       })
-      renderGrid()
+      // HR-4: multiplayer locked < 1000 XP — use unlocked stats so live
+      // hint replaces the lock-reason text.
+      renderGrid({ userStats: { totalPoints: 50000, currentStreak: 5 } })
       await waitFor(() => {
         expect(screen.getByTestId('compact-card-multiplayer-hint').textContent).toContain('3')
       })
@@ -322,7 +328,8 @@ describe('GameModeGrid (Option Y)', () => {
         }
         return Promise.reject(new Error('Not mocked: ' + url))
       })
-      renderGrid()
+      // HR-4: tournament locked < 15000 XP — use stats above threshold.
+      renderGrid({ userStats: { totalPoints: 50000, currentStreak: 5 } })
       await waitFor(() => {
         expect(screen.getByTestId('compact-card-tournament-hint').textContent).toContain('2')
       })
@@ -394,6 +401,71 @@ describe('GameModeGrid (Option Y)', () => {
         const practiceCard = screen.getByTestId('featured-card-practice')
         expect(practiceCard.getAttribute('data-recommended')).toBe('true')
       })
+    })
+  })
+
+  // ── HR-4: 3-section split + tier-locked overlays ────────────────
+
+  describe('HR-4 sections', () => {
+    it('renders Variety section header + 3 variety cards', async () => {
+      renderGrid()
+      await waitFor(() => {
+        expect(screen.getByTestId('game-mode-tier-variety')).toBeInTheDocument()
+      })
+      expect(screen.getByTestId('compact-card-weekly')).toBeInTheDocument()
+      expect(screen.getByTestId('compact-card-mystery')).toBeInTheDocument()
+      expect(screen.getByTestId('compact-card-speed')).toBeInTheDocument()
+    })
+
+    it('renders Group section with Group + Multiplayer + Tournament', async () => {
+      renderGrid()
+      await waitFor(() => {
+        expect(screen.getByTestId('game-mode-tier-group')).toBeInTheDocument()
+      })
+      expect(screen.getByTestId('compact-card-group')).toBeInTheDocument()
+      expect(screen.getByTestId('compact-card-multiplayer')).toBeInTheDocument()
+      expect(screen.getByTestId('compact-card-tournament')).toBeInTheDocument()
+    })
+
+    it('locks Multiplayer + Tournament for new user (totalPoints=0)', async () => {
+      renderGrid({ userStats: { currentStreak: 0, totalPoints: 0 } })
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-multiplayer-lock-chip')).toBeInTheDocument()
+      })
+      expect(screen.getByTestId('compact-card-tournament-lock-chip')).toBeInTheDocument()
+      // Lock reason mentions the unlocking tier
+      expect(screen.getByTestId('compact-card-multiplayer-lock-reason').textContent)
+        .toMatch(/Người Tìm Kiếm/)
+      expect(screen.getByTestId('compact-card-tournament-lock-reason').textContent)
+        .toMatch(/Hiền Triết/)
+    })
+
+    it('unlocks Multiplayer at 1000 XP but Tournament still locked', async () => {
+      renderGrid({ userStats: { currentStreak: 5, totalPoints: 1000 } })
+      await waitFor(() => {
+        expect(screen.queryByTestId('compact-card-multiplayer-lock-chip')).not.toBeInTheDocument()
+      })
+      expect(screen.getByTestId('compact-card-tournament-lock-chip')).toBeInTheDocument()
+    })
+
+    it('locked Multiplayer click does NOT navigate', async () => {
+      renderGrid({ userStats: { currentStreak: 0, totalPoints: 0 } })
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-multiplayer-lock-chip')).toBeInTheDocument()
+      })
+      const user = userEvent.setup()
+      await user.click(screen.getByTestId('compact-card-multiplayer'))
+      expect(mockNavigate).not.toHaveBeenCalledWith('/multiplayer')
+    })
+
+    it('Variety modes are NEVER locked even at 0 XP', async () => {
+      renderGrid({ userStats: { currentStreak: 0, totalPoints: 0 } })
+      await waitFor(() => {
+        expect(screen.getByTestId('compact-card-weekly')).toBeInTheDocument()
+      })
+      expect(screen.queryByTestId('compact-card-weekly-lock-chip')).not.toBeInTheDocument()
+      expect(screen.queryByTestId('compact-card-mystery-lock-chip')).not.toBeInTheDocument()
+      expect(screen.queryByTestId('compact-card-speed-lock-chip')).not.toBeInTheDocument()
     })
   })
 })

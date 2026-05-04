@@ -737,6 +737,16 @@
       "description": "Once you finish your first Daily Challenge, you'll unlock Daily Missions, the Leaderboard, and start your streak.",
       "cta": "Start"
     },
+    "variety": {
+      "title": "Variety Modes",
+      "subtitle": "Doesn't affect XP / leaderboard"
+    },
+    "group": {
+      "title": "Group play"
+    },
+    "modeLocked": {
+      "reason": "Reach {{tier}} to unlock"
+    },
     "defaultName": "Learner",
     "maxTierReached": "Highest tier reached!",
     "tierProgress": "Tier progress",

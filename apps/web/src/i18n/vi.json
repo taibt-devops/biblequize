@@ -737,6 +737,16 @@
       "description": "Sau khi hoàn thành Daily Challenge đầu tiên, bạn sẽ mở khóa Nhiệm vụ ngày, Bảng xếp hạng, và bắt đầu chuỗi (streak).",
       "cta": "Bắt đầu"
     },
+    "variety": {
+      "title": "Variety Modes",
+      "subtitle": "Không ảnh hưởng XP / xếp hạng"
+    },
+    "group": {
+      "title": "Thi đấu nhóm"
+    },
+    "modeLocked": {
+      "reason": "Đạt {{tier}} để mở khóa"
+    },
     "defaultName": "Người Học",
     "maxTierReached": "Đã đạt hạng cao nhất!",
     "tierProgress": "Tiến trình hạng",

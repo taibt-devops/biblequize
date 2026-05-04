@@ -20,46 +20,28 @@ interface CompactConfig {
   id: string
   icon: string
   iconFill?: boolean
-  /** Mockup color (line 286-294 in proposal.html). Drives bg tint,
-   *  border, icon, and live-hint text. */
+  /** Mockup color. Drives bg tint, border, icon, and live-hint text. */
   themeHex: string
   titleKey: string
   subtitleKey: string
   route: string
+  /** Tier-locked threshold (HR-4). Card is shown locked until totalPoints
+   *  reaches this minimum. Undefined = always unlocked. Tier 2 (Người Tìm
+   *  Kiếm) = 1000, Tier 4 (Hiền Triết) = 15000 — see data/tiers.ts. */
+  lockedUntilPoints?: number
+  lockedUnlockTierKey?: string
 }
 
 /**
- * 6-card secondary grid (3×2 desktop, 2×3 mobile). Daily migrated to
- * the standalone FeaturedDailyChallenge banner above the grid; Practice
- * + Ranked promoted to the FeaturedCard row, so this list stays focused
- * on "more ways to play". H4 redesign: each card has its own color
- * theme + (where the BE supports it) a live-data hint.
+ * HR-4 redesign: 3 sections matching home_redesign_mockup.html.
+ *   1. Primary (FeaturedCard row): Practice + Ranked
+ *   2. Variety (3-col): Weekly + Mystery + Speed — never tier-locked
+ *      (DECISIONS.md 2026-05-02: variety modes are flat XP, no leaderboard)
+ *   3. Group (3-col): Group + Multiplayer + Tournament — Multiplayer +
+ *      Tournament are tier-gated (cannot enter competitive room without
+ *      proving readiness in single-player first).
  */
-const COMPACT_CARDS: CompactConfig[] = [
-  {
-    id: 'group',
-    icon: 'church',
-    themeHex: '#4a9eff',
-    titleKey: 'gameModes.groups',
-    subtitleKey: 'home.compactSubtitles.group',
-    route: '/groups',
-  },
-  {
-    id: 'multiplayer',
-    icon: 'gamepad',
-    themeHex: '#9b59b6',
-    titleKey: 'gameModes.rooms',
-    subtitleKey: 'home.compactSubtitles.multiplayer',
-    route: '/multiplayer',
-  },
-  {
-    id: 'tournament',
-    icon: 'trophy',
-    themeHex: '#ff6b6b',
-    titleKey: 'gameModes.tournament',
-    subtitleKey: 'home.compactSubtitles.tournament',
-    route: '/tournaments',
-  },
+const VARIETY_CARDS: CompactConfig[] = [
   {
     id: 'weekly',
     icon: 'event',
@@ -86,6 +68,37 @@ const COMPACT_CARDS: CompactConfig[] = [
     titleKey: 'gameModes.speed',
     subtitleKey: 'home.compactSubtitles.speed',
     route: '/speed-round',
+  },
+]
+
+const GROUP_CARDS: CompactConfig[] = [
+  {
+    id: 'group',
+    icon: 'church',
+    themeHex: '#4a9eff',
+    titleKey: 'gameModes.groups',
+    subtitleKey: 'home.compactSubtitles.group',
+    route: '/groups',
+  },
+  {
+    id: 'multiplayer',
+    icon: 'gamepad',
+    themeHex: '#9b59b6',
+    titleKey: 'gameModes.rooms',
+    subtitleKey: 'home.compactSubtitles.multiplayer',
+    route: '/multiplayer',
+    lockedUntilPoints: 1000,
+    lockedUnlockTierKey: 'tiers.seeker',
+  },
+  {
+    id: 'tournament',
+    icon: 'trophy',
+    themeHex: '#ff6b6b',
+    titleKey: 'gameModes.tournament',
+    subtitleKey: 'home.compactSubtitles.tournament',
+    route: '/tournaments',
+    lockedUntilPoints: 15_000,
+    lockedUnlockTierKey: 'tiers.sage',
   },
 ]
 
@@ -138,6 +151,8 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
     () => new Set(['practice', 'ranked', 'daily']),
     [],
   )
+
+  const totalPoints = userStats?.totalPoints ?? 0
 
   const recommendation = useMemo(() => {
     if (dailyLoading) return null
@@ -271,38 +286,76 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
         </div>
       </section>
 
-      {/* ── Divider ── */}
-      <div className="flex items-center gap-3">
-        <div className="flex-1 h-px bg-outline-variant/20" />
-        <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
-          {t('home.exploreMore')}
-        </span>
-        <div className="flex-1 h-px bg-outline-variant/20" />
-      </div>
+      {/* ── Variety modes (3-col, never tier-locked) ── */}
+      <section data-testid="game-mode-tier-variety" className="space-y-2.5">
+        <header className="flex items-baseline justify-between gap-2 flex-wrap">
+          <h2 className="text-on-surface/85 text-[13px] font-medium flex items-center gap-2">
+            <span className="material-symbols-outlined text-[16px] text-secondary">casino</span>
+            {t('home.variety.title')}
+          </h2>
+          <span className="text-on-surface-variant/40 text-[10px]">
+            {t('home.variety.subtitle')}
+          </span>
+        </header>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {VARIETY_CARDS.map(card => (
+            <CompactCard
+              key={card.id}
+              id={card.id}
+              icon={card.icon}
+              iconFill={card.iconFill}
+              themeHex={card.themeHex}
+              title={t(card.titleKey)}
+              subtitle={t(card.subtitleKey)}
+              liveHint={liveHints[card.id]}
+              onClick={() => navigate(card.route)}
+            />
+          ))}
+        </div>
+      </section>
 
-      {/* ── Secondary: 6-card grid (3×2 desktop, 2×3 mobile) ── */}
-      <section
-        data-testid="game-mode-tier-secondary"
-        className="grid grid-cols-2 sm:grid-cols-3 gap-3"
-      >
-        {COMPACT_CARDS.map(card => (
-          <CompactCard
-            key={card.id}
-            id={card.id}
-            icon={card.icon}
-            iconFill={card.iconFill}
-            themeHex={card.themeHex}
-            title={t(card.titleKey)}
-            subtitle={t(card.subtitleKey)}
-            liveHint={liveHints[card.id]}
-            onClick={() => navigate(card.route)}
-            matchmakingHint={
-              MATCHMAKING_HINT_MODES.has(card.id)
-                ? { title: t('home.matchmakingHint') }
-                : undefined
-            }
-          />
-        ))}
+      {/* ── Group modes (Multiplayer + Tournament tier-locked) ── */}
+      <section data-testid="game-mode-tier-group" className="space-y-2.5">
+        <header className="flex items-baseline justify-between">
+          <h2 className="text-on-surface/85 text-[13px] font-medium flex items-center gap-2">
+            <span className="material-symbols-outlined text-[16px] text-secondary">groups</span>
+            {t('home.group.title')}
+          </h2>
+        </header>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {GROUP_CARDS.map(card => {
+            const isLocked =
+              typeof card.lockedUntilPoints === 'number' &&
+              totalPoints < card.lockedUntilPoints
+            return (
+              <CompactCard
+                key={card.id}
+                id={card.id}
+                icon={card.icon}
+                iconFill={card.iconFill}
+                themeHex={card.themeHex}
+                title={t(card.titleKey)}
+                subtitle={t(card.subtitleKey)}
+                liveHint={liveHints[card.id]}
+                onClick={() => navigate(card.route)}
+                matchmakingHint={
+                  MATCHMAKING_HINT_MODES.has(card.id)
+                    ? { title: t('home.matchmakingHint') }
+                    : undefined
+                }
+                locked={
+                  isLocked && card.lockedUnlockTierKey
+                    ? {
+                        reason: t('home.modeLocked.reason', {
+                          tier: t(card.lockedUnlockTierKey),
+                        }) as string,
+                      }
+                    : undefined
+                }
+              />
+            )
+          })}
+        </div>
       </section>
     </div>
   )

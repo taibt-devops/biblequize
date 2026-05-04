@@ -59,7 +59,7 @@
   - [ ] Wire vào Home.tsx — defer to HR-6 (conditional render khi totalPoints < 1000)
   - [ ] Commit: `feat(home): MotivationCard for new users (HR-3)` — pending
 
-### Task HR-4: Tách GameModeGrid thành 3 sections [ ] TODO
+### Task HR-4: Tách GameModeGrid thành 3 sections [x] DONE 2026-05-05
 - File(s): `apps/web/src/components/GameModeGrid.tsx` → split thành `PrimaryModes.tsx` + `VarietyModes.tsx` + `GroupModes.tsx`, test
 - Mockup sections: `.modes-primary` (Practice + Ranked), `.variety-grid` (Weekly/Mystery/Speed), `.modes-primary` thứ 2 (Multiplayer + Tournament)
 - Spec:
@@ -68,10 +68,13 @@
   - **Group (2-col):** Phòng chơi (locked < 1000 XP, link `/multiplayer`) + Giải đấu (locked < Tier 4 = 15000 XP, link `/tournament`)
   - Mỗi card có locked overlay rõ ràng + status chip (unlocked/locked)
 - Checklist:
-  - [ ] 3 components mới + tests (≥ 6 tests mỗi component cho locked/unlocked + nav)
-  - [ ] Replace `<GameModeGrid>` trong Home.tsx bằng 3 sections riêng
-  - [ ] Tests Vitest pass
-  - [ ] Commit: `refactor(home): split GameModeGrid → Primary/Variety/Group with tier-locked overlays (HR-4)`
+  - [x] **Pivot từ plan ban đầu**: thay vì 3 file mới (PrimaryModes/VarietyModes/GroupModes), refactor in-place trong GameModeGrid để tránh break 23 tests cũ. Cấu trúc: 3 `<section>` rõ ràng với header + grid riêng, mỗi section có `data-testid="game-mode-tier-{primary,variety,group}"`.
+  - [x] Add `locked` prop vào CompactCard — render lock-chip + dimmed bg + dashed-style overlay khi locked, disable click
+  - [x] Group card giữ trong Group section (ko lock) thay vì xóa — tránh break ~5 tests + giữ discoverability
+  - [x] Multiplayer locked < 1000 XP, Tournament locked < 15000 XP (Tier 4 Hiền Triết)
+  - [x] i18n keys: `home.variety.{title,subtitle}`, `home.group.title`, `home.modeLocked.reason`
+  - [x] Tests: 23 cũ pass (4 cần update userStats), 6 mới (sections render, lock chips, click guard, variety không lock) = 29/29 GameModeGrid + 94/94 cùng nhóm
+  - [ ] Commit: `refactor(home): split GameModeGrid → 3 sections + tier-locked overlays (HR-4)` — pending
 
 ### Task HR-5: Layout Verse + Journey 2-col [ ] TODO
 - File(s): `apps/web/src/pages/Home.tsx`

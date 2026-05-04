@@ -18,6 +18,9 @@ interface CompactCardProps {
   onClick: () => void
   /** Optional matchmaking-hint info pill (Tournament + Multiplayer). */
   matchmakingHint?: { title: string }
+  /** Tier-gated lock (HR-4). When set, click is disabled, card is dimmed,
+   *  and a lock chip + overlay describing the unlock condition is shown. */
+  locked?: { reason: string }
 }
 
 function hexToRgba(hex: string, alpha: number): string {
@@ -58,16 +61,24 @@ export default function CompactCard({
   liveHint,
   onClick,
   matchmakingHint,
+  locked,
 }: CompactCardProps) {
+  const isLocked = !!locked
   return (
     <button
       data-testid={`compact-card-${id}`}
-      onClick={onClick}
+      data-locked={isLocked || undefined}
+      onClick={isLocked ? undefined : onClick}
+      disabled={isLocked}
+      aria-disabled={isLocked || undefined}
+      title={isLocked ? locked.reason : undefined}
       style={{
-        backgroundColor: hexToRgba(themeHex, 0.06),
-        border: `0.5px solid ${hexToRgba(themeHex, 0.2)}`,
+        backgroundColor: hexToRgba(themeHex, isLocked ? 0.03 : 0.06),
+        border: `0.5px solid ${hexToRgba(themeHex, isLocked ? 0.12 : 0.2)}`,
       }}
-      className="rounded-lg p-2.5 md:p-3 text-left flex flex-col items-stretch min-h-[88px] md:min-h-[96px] hover:opacity-80 transition-opacity"
+      className={`relative rounded-lg p-2.5 md:p-3 text-left flex flex-col items-stretch min-h-[88px] md:min-h-[96px] transition-opacity ${
+        isLocked ? 'opacity-60 cursor-not-allowed' : 'hover:opacity-80'
+      }`}
     >
       <div className="flex items-center justify-between mb-1.5">
         <span
@@ -76,16 +87,26 @@ export default function CompactCard({
         >
           {icon}
         </span>
-        {matchmakingHint && (
+        {isLocked ? (
           <span
-            data-testid={`compact-card-${id}-matchmaking-hint`}
-            title={matchmakingHint.title}
-            aria-label={matchmakingHint.title}
-            className="material-symbols-outlined text-[12px] text-on-surface-variant/70"
-            onClick={(e) => e.stopPropagation()}
+            data-testid={`compact-card-${id}-lock-chip`}
+            className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-[rgba(107,114,128,0.2)] border border-[rgba(107,114,128,0.3)] text-[9px] font-bold uppercase tracking-wide text-on-surface-variant"
           >
-            info
+            <span className="material-symbols-outlined text-[10px]">lock</span>
+            Khóa
           </span>
+        ) : (
+          matchmakingHint && (
+            <span
+              data-testid={`compact-card-${id}-matchmaking-hint`}
+              title={matchmakingHint.title}
+              aria-label={matchmakingHint.title}
+              className="material-symbols-outlined text-[12px] text-on-surface-variant/70"
+              onClick={(e) => e.stopPropagation()}
+            >
+              info
+            </span>
+          )
         )}
       </div>
       <div className="text-[11px] md:text-[12px] text-on-surface font-medium leading-tight">
@@ -94,14 +115,24 @@ export default function CompactCard({
       <div className="text-[9px] md:text-[10px] text-on-surface-variant/40 mt-0.5">
         {subtitle}
       </div>
-      {liveHint && (
+      {isLocked ? (
         <div
-          data-testid={`compact-card-${id}-hint`}
-          className="text-[9px] md:text-[10px] font-medium mt-1.5"
-          style={{ color: themeHex }}
+          data-testid={`compact-card-${id}-lock-reason`}
+          className="text-[9px] md:text-[10px] font-medium mt-1.5 text-[#fbbf24] flex items-center gap-1"
         >
-          {liveHint}
+          <span className="material-symbols-outlined text-[11px]">flag</span>
+          {locked.reason}
         </div>
+      ) : (
+        liveHint && (
+          <div
+            data-testid={`compact-card-${id}-hint`}
+            className="text-[9px] md:text-[10px] font-medium mt-1.5"
+            style={{ color: themeHex }}
+          >
+            {liveHint}
+          </div>
+        )
       )}
     </button>
   )
