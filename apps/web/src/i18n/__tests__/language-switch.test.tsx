@@ -13,7 +13,7 @@ import i18n from '../index'
  * updates {@code i18n.language} and {@code i18n.t} resolution
  * synchronously, so any component that reads either at render time
  * (NotificationBell, UserDropdown, Home, ...) gets fresh strings on
- * the next render. Component-level tests for those (HeroStatSheet,
+ * the next render. Component-level tests for those (GreetingCard,
  * AppLayout, GameModeGrid) cover the rendering path independently.
  */
 describe('i18n language switch mid-session', () => {

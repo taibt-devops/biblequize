@@ -27,7 +27,7 @@ interface RankedStatusData {
  *
  * Layout: avatar + tier badge | greeting/name/tier-progress | 3 inline stats.
  * Tier progress is a SEGMENTED bar with 5 milestone dots (sub-stars from
- * /api/me/tier-progress.starIndex), NOT a 5-star rating UI. Replaces the
+ * /api/me/tier-progress.starIndex), NOT a 5-star rating UI. Replaced the
  * older HeroStatSheet — kept identical query keys so the cache is shared.
  */
 export default function GreetingCard() {

@@ -13,7 +13,7 @@ import UserDropdown from './UserDropdown'
  * tree.
  *
  * Reuses the {@code ['me']} TanStack query key so the totalPoints
- * read here is the same in-flight request HeroStatSheet already
+ * read here is the same in-flight request GreetingCard already
  * triggers on Home — no extra HTTP round-trip.
  */
 export default function SidebarUserCard() {
