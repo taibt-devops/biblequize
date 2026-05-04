@@ -12,6 +12,7 @@ import FeaturedDailyChallenge from '../components/FeaturedDailyChallenge'
 import DailyVerseBanner from '../components/DailyVerseBanner'
 import GameModeGrid from '../components/GameModeGrid'
 import GreetingCard from '../components/GreetingCard'
+import MotivationCard from '../components/MotivationCard'
 import TierPerksTeaser from '../components/TierPerksTeaser'
 import TutorialOverlay from '../components/TutorialOverlay'
 import { useAuthStore } from '../store/authStore'
@@ -90,6 +91,10 @@ export default function Home() {
   const tier = getTierInfo(totalPoints)
   // Tier level 1..6 — passed into TierPerksTeaser to highlight next-tier perks.
   const userTierLevel = tier.current.id
+  // HR-6: gate Daily Missions / Leaderboard / Activity on having reached
+  // Tier 2 (Người Tìm Kiếm, 1000 XP). Until then, show MotivationCard
+  // instead — see DECISIONS.md "User mới = totalPoints<1000".
+  const isNewUser = totalPoints < 1000
 
   return (
     <div data-testid="home-page" className="space-y-8 max-w-7xl mx-auto w-full">
@@ -101,6 +106,9 @@ export default function Home() {
 
       {/* ── Featured Daily Challenge (hero CTA for tier-1) ── */}
       <FeaturedDailyChallenge />
+
+      {/* ── Motivation onboarding nudge (HR-6: only for new users) ── */}
+      {isNewUser && <MotivationCard />}
 
       {/* ── Game Modes ──
           Open access for everyone. The Bible Basics catechism gate
@@ -121,10 +129,12 @@ export default function Home() {
         />
       </section>
 
-      {/* ── Daily Missions ── */}
-      <section>
-        <div data-testid="home-daily-missions"><DailyMissionsCard /></div>
-      </section>
+      {/* ── Daily Missions (HR-6: hidden for new users) ── */}
+      {!isNewUser && (
+        <section>
+          <div data-testid="home-daily-missions"><DailyMissionsCard /></div>
+        </section>
+      )}
 
       {/* ── Verse + Journey 2-col (HR-5 — verse promoted from footer) ── */}
       <section
@@ -138,7 +148,8 @@ export default function Home() {
       {/* ── Aspirational next-tier perks (returns null at tier 6) ── */}
       <TierPerksTeaser userTier={userTierLevel} totalPoints={totalPoints} />
 
-      {/* ── Leaderboard + Activity (H7) ── 1.4fr / 1fr per mockup */}
+      {/* ── Leaderboard + Activity (HR-6: hidden for new users) ── */}
+      {!isNewUser && (
       <section
         data-testid="home-leaderboard"
         className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-2.5"
@@ -215,6 +226,7 @@ export default function Home() {
         {/* Activity */}
         <ActivityFeed userCreatedAt={meData?.createdAt} />
       </section>
+      )}
     </div>
   )
 }

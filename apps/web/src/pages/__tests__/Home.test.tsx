@@ -256,8 +256,11 @@ describe('Home Dashboard', () => {
     })
 
     it('shows action-oriented empty state with Practice CTA', async () => {
+      // HR-6: leaderboard is hidden for new users (totalPoints<1000), so
+      // pass a non-new user with an empty leaderboard array to exercise
+      // the empty-state branch.
       mockApiGet.mockImplementation((url: string) => {
-        if (url.includes('/api/me')) return Promise.resolve({ data: { totalPoints: 0 } })
+        if (url.includes('/api/me')) return Promise.resolve({ data: { totalPoints: 8200 } })
         if (url.includes('/api/leaderboard')) return Promise.resolve({ data: [] })
         return Promise.reject(new Error('Not found'))
       })
@@ -387,6 +390,97 @@ describe('Home Dashboard', () => {
         expect(screen.queryByText(/undefined/i)).not.toBeInTheDocument()
         expect(screen.queryByText(/null/i)).not.toBeInTheDocument()
       })
+    })
+  })
+
+  // ── HR-6: state-aware rendering (new vs active user) ───────────
+
+  describe('HR-6 state-aware', () => {
+    function setupNewUser() {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/me/tier-progress'))
+          return Promise.resolve({ data: { tierLevel: 1, totalPoints: 200, starIndex: 0, starXp: 0, nextStarXp: 200 } })
+        if (url.includes('/api/me/journey'))
+          return Promise.resolve({ data: { summary: { totalBooks: 66, completedBooks: 0, oldTestamentCompleted: 0, newTestamentCompleted: 0, currentBook: null }, books: [] } })
+        if (url.includes('/api/me')) return Promise.resolve({ data: { totalPoints: 200, currentStreak: 0 } })
+        if (url.includes('/api/leaderboard')) return Promise.resolve({ data: [] })
+        if (url.includes('my-rank')) return Promise.resolve({ data: null })
+        return Promise.resolve({ data: {} })
+      })
+    }
+
+    it('renders MotivationCard for new user (totalPoints<1000)', async () => {
+      setupNewUser()
+      renderHome()
+      await waitFor(() => {
+        expect(screen.getByTestId('motivation-card')).toBeInTheDocument()
+      })
+    })
+
+    it('hides Daily Missions for new user', async () => {
+      setupNewUser()
+      renderHome()
+      // Wait for some other element to settle so render is past initial loading.
+      await waitFor(() => {
+        expect(screen.getByTestId('motivation-card')).toBeInTheDocument()
+      })
+      expect(screen.queryByTestId('home-daily-missions')).not.toBeInTheDocument()
+    })
+
+    it('hides Leaderboard + Activity for new user', async () => {
+      setupNewUser()
+      renderHome()
+      await waitFor(() => {
+        expect(screen.getByTestId('motivation-card')).toBeInTheDocument()
+      })
+      expect(screen.queryByTestId('home-leaderboard')).not.toBeInTheDocument()
+    })
+
+    it('shows Daily Missions + Leaderboard for active user (totalPoints≥1000)', async () => {
+      // Default beforeEach mock has totalPoints=8200
+      renderHome()
+      await waitFor(() => {
+        expect(screen.getByTestId('home-daily-missions')).toBeInTheDocument()
+        expect(screen.getByTestId('home-leaderboard')).toBeInTheDocument()
+      })
+      // MotivationCard should NOT render for active users.
+      expect(screen.queryByTestId('motivation-card')).not.toBeInTheDocument()
+    })
+
+    it('boundary: totalPoints=999 still shows MotivationCard, hides Missions', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/me/tier-progress'))
+          return Promise.resolve({ data: { tierLevel: 1, totalPoints: 999, starIndex: 4, starXp: 800, nextStarXp: 1000 } })
+        if (url.includes('/api/me/journey'))
+          return Promise.resolve({ data: { summary: { totalBooks: 66, completedBooks: 0, oldTestamentCompleted: 0, newTestamentCompleted: 0, currentBook: null }, books: [] } })
+        if (url.includes('/api/me')) return Promise.resolve({ data: { totalPoints: 999 } })
+        if (url.includes('/api/leaderboard')) return Promise.resolve({ data: [] })
+        return Promise.resolve({ data: {} })
+      })
+      renderHome()
+      await waitFor(() => {
+        expect(screen.getByTestId('motivation-card')).toBeInTheDocument()
+      })
+      expect(screen.queryByTestId('home-daily-missions')).not.toBeInTheDocument()
+    })
+
+    it('boundary: totalPoints=1000 hides MotivationCard, shows Missions', async () => {
+      mockApiGet.mockImplementation((url: string) => {
+        if (url.includes('/api/me/tier-progress'))
+          return Promise.resolve({ data: { tierLevel: 2, totalPoints: 1000, starIndex: 0, starXp: 1000, nextStarXp: 1800 } })
+        if (url.includes('/api/me/journey'))
+          return Promise.resolve({ data: { summary: { totalBooks: 66, completedBooks: 0, oldTestamentCompleted: 0, newTestamentCompleted: 0, currentBook: null }, books: [] } })
+        if (url.includes('/api/me/daily-missions'))
+          return Promise.resolve({ data: { date: '2026-05-05', missions: [], allCompleted: false, bonusClaimed: false, bonusXp: 50 } })
+        if (url.includes('/api/me')) return Promise.resolve({ data: { totalPoints: 1000 } })
+        if (url.includes('/api/leaderboard')) return Promise.resolve({ data: [] })
+        return Promise.resolve({ data: {} })
+      })
+      renderHome()
+      await waitFor(() => {
+        expect(screen.getByTestId('home-daily-missions')).toBeInTheDocument()
+      })
+      expect(screen.queryByTestId('motivation-card')).not.toBeInTheDocument()
     })
   })
 })

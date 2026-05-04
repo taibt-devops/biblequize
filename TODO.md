@@ -92,15 +92,20 @@
   - [x] Tests: Home 30/30, DailyVerseBanner 4/4, related suites 99/99 pass
   - [ ] Commit: `feat(home): verse + journey 2-col layout, verse promoted from footer (HR-5)` — pending
 
-### Task HR-6: State-aware logic (new vs active) [ ] TODO
+### Task HR-6: State-aware logic (new vs active) [x] DONE 2026-05-05
 - File(s): `apps/web/src/pages/Home.tsx`
 - Spec: Khi `totalPoints < 1000`:
   - HIỂN THỊ: GreetingCard, FeaturedDailyChallenge, MotivationCard, PrimaryModes (Ranked locked), VarietyModes, GroupModes (locked), Verse+Journey
   - ẨN: DailyMissionsCard, Leaderboard mini, ActivityFeed
 - Checklist:
-  - [ ] Conditional rendering với `isNewUser = totalPoints < 1000`
-  - [ ] Update Home.test.tsx state-aware tests (≥ 4 tests cho new vs active rendering)
-  - [ ] Commit: `feat(home): state-aware rendering for new users (HR-6)`
+  - [x] Add `isNewUser = totalPoints < 1000` derivation in Home.tsx
+  - [x] Conditional `{isNewUser && <MotivationCard />}` after FeaturedDailyChallenge
+  - [x] Conditional `{!isNewUser && (<DailyMissions section />)}` and same for Leaderboard+Activity section
+  - [x] Imports MotivationCard
+  - [x] Update existing test "shows action-oriented empty state" — bump totalPoints from 0→8200 so leaderboard renders (test premise was empty array, not new user)
+  - [x] 5 new tests in HR-6 describe block (MotivationCard render new, hide Missions/Leaderboard new, show for active, boundary 999 vs 1000)
+  - [x] Tests: Home 35/35 (was 30 + 5), related 105/105
+  - [ ] Commit: `feat(home): state-aware rendering for new users (HR-6)` — pending
 
 ### Task HR-7: Full regression + i18n + e2e update [ ] TODO
 - Checklist:
