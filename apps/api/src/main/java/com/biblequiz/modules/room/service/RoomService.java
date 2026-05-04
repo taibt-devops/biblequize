@@ -321,6 +321,9 @@ public class RoomService {
         public final String hostName;
         public final String questionSource;
         public final String questionSetId;
+        public final String bookScope;
+        public final String difficulty;
+        public final String createdAt;
         public final List<PlayerInfoDTO> players;
 
         public RoomDetailsDTO(Room room, List<RoomPlayer> roomPlayers) {
@@ -331,7 +334,7 @@ public class RoomService {
             this.mode = room.getMode();
             this.isPublic = room.getIsPublic();
             this.maxPlayers = room.getMaxPlayers();
-            this.currentPlayers = room.getCurrentPlayers();
+            this.currentPlayers = roomPlayers.size();
             this.questionCount = room.getQuestionCount();
             this.timePerQuestion = room.getTimePerQuestion();
             this.hostId = room.getHost().getId();
@@ -339,6 +342,9 @@ public class RoomService {
             this.questionSource = room.getQuestionSource() != null
                     ? room.getQuestionSource().name() : "DATABASE";
             this.questionSetId = room.getQuestionSetId();
+            this.bookScope = room.getBookScope();
+            this.difficulty = room.getDifficulty() != null ? room.getDifficulty().name() : "MIXED";
+            this.createdAt = room.getCreatedAt() != null ? room.getCreatedAt().toString() : null;
 
             this.players = roomPlayers.stream()
                 .map(player -> new PlayerInfoDTO(
