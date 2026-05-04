@@ -349,7 +349,7 @@ const GroupDetail: React.FC = () => {
     try {
       const res = await api.post(`/api/groups/${id}/quiz-sets/${setId}/play`);
       if (res.data.success && res.data.room?.id) {
-        navigate(`/room/${res.data.room.id}/lobby`);
+        navigate(`/room/${res.data.room.id}/lobby`, { state: { fromGroupId: id } });
       }
     } catch (err: any) {
       const msg = err?.response?.data?.message || 'Không thể tạo phòng';

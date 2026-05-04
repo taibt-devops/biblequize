@@ -200,7 +200,8 @@ const RoomLobby: React.FC = () => {
   };
   const handleLeave = async () => {
     if (roomId) { try { await api.post(`/api/rooms/${roomId}/leave`); } catch { /* ignore */ } }
-    navigate('/multiplayer');
+    const fromGroupId = (location.state as { fromGroupId?: string } | null)?.fromGroupId;
+    navigate(fromGroupId ? `/groups/${fromGroupId}` : '/multiplayer');
   };
 
   const isTeamVsTeam = room?.mode === 'TEAM_VS_TEAM';
