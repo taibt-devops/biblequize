@@ -86,6 +86,26 @@ public class DailyChallengeController {
     }
 
     /**
+     * POST /api/daily-challenge/answer — check a single answer without a real QuizSession.
+     * Returns isCorrect, correctAnswer indices, and explanation.
+     * Public (guests can play), no auth required.
+     */
+    @PostMapping("/answer")
+    public ResponseEntity<Map<String, Object>> checkAnswer(
+            @RequestBody Map<String, Object> body) {
+        String questionId = (String) body.get("questionId");
+        Integer selectedAnswer = (Integer) body.get("answer");
+        if (questionId == null || selectedAnswer == null) {
+            return ResponseEntity.badRequest().body(Map.of("error", "questionId and answer are required"));
+        }
+        try {
+            return ResponseEntity.ok(dailyChallengeService.checkAnswer(questionId, selectedAnswer));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
+        }
+    }
+
+    /**
      * POST /api/daily-challenge/complete — mark today's daily challenge as completed.
      *
      * <p>Called by the client after finishing all 5 questions. Records completion

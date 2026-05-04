@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, waitFor } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
@@ -32,9 +33,7 @@ import Groups from '../Groups'
 const STORAGE_KEY = 'biblequiz_my_groups'
 
 function createClient() {
-  return new QueryClient({
-    defaultOptions: { queries: { retry: false } },
-  })
+  return new QueryClient({ defaultOptions: { queries: { retry: false } } })
 }
 
 function renderGroups() {
@@ -48,286 +47,225 @@ function renderGroups() {
   )
 }
 
-const SAMPLE_GROUP = {
+const LEADER_GROUP = {
   id: 'g1',
-  name: 'Hội Thánh Tin Lành',
-  code: 'ABC123',
-  memberCount: 42,
-  totalPoints: 15800,
-  location: 'TP. Hồ Chí Minh',
+  name: 'FMC Đà Nẵng',
+  description: 'Hội Thánh Methodist Đà Nẵng',
+  code: 'NVH0S9',
   isPublic: true,
+  role: 'LEADER',
+  memberCount: 12,
+  avgScore: 189,
+  accuracy: 41,
+  activeWeek: 8,
+  lastActivityAt: new Date().toISOString(),
+  myWeekPoints: 200,
+  myRank: 1,
 }
 
-// Backend returns `score` (not `points`) — see ChurchGroupService.getLeaderboard
-const SAMPLE_LEADERBOARD = [
-  { rank: 1, userId: 'u1', name: 'Lê Minh', avatarUrl: null, score: 15800, role: 'LEADER' },
-  { rank: 2, userId: 'u2', name: 'Trần An', avatarUrl: null, score: 12400, role: 'MEMBER' },
-  { rank: 3, userId: 'u3', name: 'Phạm Hùng', avatarUrl: null, score: 10100, role: 'MEMBER' },
-  { rank: 4, userId: 'u4', name: 'Nguyễn Thu', avatarUrl: null, score: 8920, role: 'MEMBER' },
+const MEMBER_GROUP = {
+  id: 'g2',
+  name: 'SV Tin Lành Hà Nội',
+  description: 'Nhóm sinh viên',
+  code: 'XYZ987',
+  isPublic: true,
+  role: 'MEMBER',
+  memberCount: 47,
+  avgScore: 324,
+  accuracy: 68,
+  activeWeek: 30,
+  lastActivityAt: new Date(Date.now() - 2 * 60 * 60 * 1000).toISOString(),
+  myWeekPoints: 100,
+  myRank: 12,
+}
+
+const PUBLIC_GROUPS = [
+  { id: 'p1', name: 'FMC Sài Gòn', description: 'HT Methodist SG', memberCount: 124, code: 'PUB001' },
+  { id: 'p2', name: 'Học Tân Ước', description: '27 sách', memberCount: 89, code: 'PUB002' },
 ]
 
-const SAMPLE_ANNOUNCEMENTS = [
-  {
-    id: 'a1',
-    author: 'Quản trị viên',
-    authorRole: 'LEADER',
-    body: 'Chuẩn bị cho chủ đề mới.',
-    createdAt: new Date(Date.now() - 7200000).toISOString(),
-  },
-]
-
-const NO_GROUP_RESPONSE = { hasGroup: false }
-const HAS_GROUP_RESPONSE = { hasGroup: true, groupId: 'g1', groupName: 'Hội Thánh Tin Lành', memberCount: 42, role: 'MEMBER' }
-
-describe('Groups Page', () => {
+describe('Groups Page (multi-group index)', () => {
   beforeEach(() => {
     vi.clearAllMocks()
     localStorage.clear()
+    authState = { isAuthenticated: true, isLoading: false, user: { name: 'Test', email: 'a@b.com' } }
   })
 
   it('renders without crashing', () => {
-    mockGet.mockResolvedValue({ data: NO_GROUP_RESPONSE })
+    mockGet.mockResolvedValue({ data: { success: true, groups: [] } })
     expect(() => renderGroups()).not.toThrow()
   })
 
-  it('shows no-group view when API returns hasGroup: false', async () => {
+  it('shows empty state when user has no groups', async () => {
     mockGet.mockImplementation((url: string) => {
-      if (url.includes('/api/groups/me')) return Promise.resolve({ data: NO_GROUP_RESPONSE })
+      if (url.includes('/api/groups/mine')) return Promise.resolve({ data: { success: true, groups: [] } })
+      if (url.includes('/api/groups/public')) return Promise.resolve({ data: { success: true, groups: [] } })
       return Promise.resolve({ data: {} })
     })
     renderGroups()
     await waitFor(() => {
-      expect(screen.getByTestId('no-group')).toBeTruthy()
+      expect(screen.getByTestId('no-group')).toBeInTheDocument()
     })
-    expect(screen.getByText('Tham gia nhóm hội thánh')).toBeTruthy()
+    expect(screen.getByTestId('groups-empty-create-btn')).toBeInTheDocument()
+    expect(screen.getByTestId('groups-empty-join-btn')).toBeInTheDocument()
   })
 
-  it('shows create and join CTAs in no-group view', async () => {
-    mockGet.mockImplementation((url: string) => {
-      if (url.includes('/api/groups/me')) return Promise.resolve({ data: NO_GROUP_RESPONSE })
-      return Promise.resolve({ data: {} })
-    })
-    renderGroups()
-    await waitFor(() => {
-      expect(screen.getByTestId('groups-create-btn')).toBeTruthy()
-      expect(screen.getByTestId('groups-join-btn')).toBeTruthy()
-    })
-  })
-
-  it('clears stale localStorage when API says hasGroup: false', async () => {
+  it('clears stale localStorage when user has no groups', async () => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify([{ id: 'stale', name: 'Stale' }]))
     mockGet.mockImplementation((url: string) => {
-      if (url.includes('/api/groups/me')) return Promise.resolve({ data: NO_GROUP_RESPONSE })
+      if (url.includes('/api/groups/mine')) return Promise.resolve({ data: { success: true, groups: [] } })
+      if (url.includes('/api/groups/public')) return Promise.resolve({ data: { success: true, groups: [] } })
       return Promise.resolve({ data: {} })
     })
     renderGroups()
     await waitFor(() => {
-      expect(screen.getByTestId('no-group')).toBeTruthy()
+      expect(screen.getByTestId('no-group')).toBeInTheDocument()
     })
     expect(localStorage.getItem(STORAGE_KEY)).toBeNull()
   })
 
-  it('renders group overview when API returns hasGroup: true', async () => {
+  it('renders group cards when user has groups (multi)', async () => {
     mockGet.mockImplementation((url: string) => {
-      if (url.includes('/api/groups/me')) return Promise.resolve({ data: HAS_GROUP_RESPONSE })
-      if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: SAMPLE_LEADERBOARD } })
-      if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: SAMPLE_ANNOUNCEMENTS, total: SAMPLE_ANNOUNCEMENTS.length, hasMore: false } } })
-      return Promise.resolve({ data: { success: true, group: SAMPLE_GROUP } })
+      if (url.includes('/api/groups/mine')) return Promise.resolve({ data: { success: true, groups: [LEADER_GROUP, MEMBER_GROUP] } })
+      if (url.includes('/api/groups/public')) return Promise.resolve({ data: { success: true, groups: [] } })
+      return Promise.resolve({ data: {} })
     })
     renderGroups()
     await waitFor(() => {
-      expect(screen.getAllByText('Hội Thánh Tin Lành').length).toBeGreaterThan(0)
+      expect(screen.getAllByTestId('group-card').length).toBe(2)
+    })
+    expect(screen.getByText('FMC Đà Nẵng')).toBeInTheDocument()
+    expect(screen.getByText('SV Tin Lành Hà Nội')).toBeInTheDocument()
+  })
+
+  it('shows leader role badge on leader card', async () => {
+    mockGet.mockImplementation((url: string) => {
+      if (url.includes('/api/groups/mine')) return Promise.resolve({ data: { success: true, groups: [LEADER_GROUP] } })
+      if (url.includes('/api/groups/public')) return Promise.resolve({ data: { success: true, groups: [] } })
+      return Promise.resolve({ data: {} })
+    })
+    renderGroups()
+    await waitFor(() => {
+      expect(screen.getByText('Trưởng')).toBeInTheDocument()
     })
   })
 
-  it('renders podium top-3 from API leaderboard (uses score field)', async () => {
+  it('shows group code on leader card footer (not member rank)', async () => {
     mockGet.mockImplementation((url: string) => {
-      if (url.includes('/api/groups/me')) return Promise.resolve({ data: HAS_GROUP_RESPONSE })
-      if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: SAMPLE_LEADERBOARD } })
-      if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: [], total: 0, hasMore: false } } })
-      return Promise.resolve({ data: { success: true, group: SAMPLE_GROUP } })
+      if (url.includes('/api/groups/mine')) return Promise.resolve({ data: { success: true, groups: [LEADER_GROUP] } })
+      if (url.includes('/api/groups/public')) return Promise.resolve({ data: { success: true, groups: [] } })
+      return Promise.resolve({ data: {} })
     })
     renderGroups()
     await waitFor(() => {
-      expect(screen.getByText('Lê Minh')).toBeTruthy()
-    })
-    expect(screen.getByText('Trần An')).toBeTruthy()
-    expect(screen.getByText('Phạm Hùng')).toBeTruthy()
-    // Score formatted (not literal "undefined")
-    expect(screen.queryByText(/undefined/)).toBeNull()
-  })
-
-  it('renders announcements body from API', async () => {
-    mockGet.mockImplementation((url: string) => {
-      if (url.includes('/api/groups/me')) return Promise.resolve({ data: HAS_GROUP_RESPONSE })
-      if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: [] } })
-      if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: SAMPLE_ANNOUNCEMENTS, total: SAMPLE_ANNOUNCEMENTS.length, hasMore: false } } })
-      return Promise.resolve({ data: { success: true, group: SAMPLE_GROUP } })
-    })
-    renderGroups()
-    await waitFor(() => {
-      expect(screen.getByText('Chuẩn bị cho chủ đề mới.')).toBeTruthy()
+      expect(screen.getByText('NVH0S9')).toBeInTheDocument()
     })
   })
 
-  it('shows error state when group fetch fails', async () => {
+  it('shows my rank on member card footer (not group code)', async () => {
     mockGet.mockImplementation((url: string) => {
-      if (url.includes('/api/groups/me')) return Promise.resolve({ data: HAS_GROUP_RESPONSE })
-      return Promise.reject(new Error('Not found'))
+      if (url.includes('/api/groups/mine')) return Promise.resolve({ data: { success: true, groups: [MEMBER_GROUP] } })
+      if (url.includes('/api/groups/public')) return Promise.resolve({ data: { success: true, groups: [] } })
+      return Promise.resolve({ data: {} })
     })
     renderGroups()
     await waitFor(() => {
-      expect(screen.getByTestId('group-error')).toBeTruthy()
+      expect(screen.getByText(/Hạng #12/)).toBeInTheDocument()
     })
-    expect(screen.getByText('Không thể tải thông tin nhóm')).toBeTruthy()
+    // Member card should NOT show the group code
+    expect(screen.queryByText('XYZ987')).not.toBeInTheDocument()
   })
 
-  it('renders fallback name when group.name is empty', async () => {
-    const emptyNameGroup = { ...SAMPLE_GROUP, name: '' }
+  it('renders 3 stats per card (members / avg score / accuracy)', async () => {
     mockGet.mockImplementation((url: string) => {
-      if (url.includes('/api/groups/me')) return Promise.resolve({ data: { ...HAS_GROUP_RESPONSE, groupName: '' } })
-      if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: [] } })
-      if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: [], total: 0, hasMore: false } } })
-      return Promise.resolve({ data: { success: true, group: emptyNameGroup } })
+      if (url.includes('/api/groups/mine')) return Promise.resolve({ data: { success: true, groups: [LEADER_GROUP] } })
+      if (url.includes('/api/groups/public')) return Promise.resolve({ data: { success: true, groups: [] } })
+      return Promise.resolve({ data: {} })
     })
     renderGroups()
     await waitFor(() => {
-      expect(screen.getByText('Nhóm chưa đặt tên')).toBeTruthy()
+      expect(screen.getByText('12')).toBeInTheDocument()  // memberCount
+    })
+    expect(screen.getByText('189')).toBeInTheDocument()  // avgScore
+    expect(screen.getByText('41%')).toBeInTheDocument()  // accuracy
+  })
+
+  it('always shows the Quick Join Bar (even when has groups)', async () => {
+    mockGet.mockImplementation((url: string) => {
+      if (url.includes('/api/groups/mine')) return Promise.resolve({ data: { success: true, groups: [LEADER_GROUP] } })
+      if (url.includes('/api/groups/public')) return Promise.resolve({ data: { success: true, groups: [] } })
+      return Promise.resolve({ data: {} })
+    })
+    renderGroups()
+    await waitFor(() => {
+      expect(screen.getByTestId('groups-quick-join')).toBeInTheDocument()
+    })
+    expect(screen.getByTestId('groups-quick-join-input')).toBeInTheDocument()
+    expect(screen.getByTestId('groups-quick-join-submit')).toBeInTheDocument()
+  })
+
+  it('renders public discovery section when public groups available', async () => {
+    mockGet.mockImplementation((url: string) => {
+      if (url.includes('/api/groups/mine')) return Promise.resolve({ data: { success: true, groups: [LEADER_GROUP] } })
+      if (url.includes('/api/groups/public')) return Promise.resolve({ data: { success: true, groups: PUBLIC_GROUPS } })
+      return Promise.resolve({ data: {} })
+    })
+    renderGroups()
+    await waitFor(() => {
+      expect(screen.getByTestId('public-groups-section')).toBeInTheDocument()
+    })
+    expect(screen.getByText('FMC Sài Gòn')).toBeInTheDocument()
+    expect(screen.getByText('Học Tân Ước')).toBeInTheDocument()
+  })
+
+  it('hides public section entirely when no public groups', async () => {
+    mockGet.mockImplementation((url: string) => {
+      if (url.includes('/api/groups/mine')) return Promise.resolve({ data: { success: true, groups: [LEADER_GROUP] } })
+      if (url.includes('/api/groups/public')) return Promise.resolve({ data: { success: true, groups: [] } })
+      return Promise.resolve({ data: {} })
+    })
+    renderGroups()
+    await waitFor(() => {
+      expect(screen.getAllByTestId('group-card').length).toBe(1)
+    })
+    expect(screen.queryByTestId('public-groups-section')).not.toBeInTheDocument()
+  })
+
+  it('quick-join submit triggers POST /api/groups/join with uppercased code', async () => {
+    const user = userEvent.setup()
+    mockGet.mockImplementation((url: string) => {
+      if (url.includes('/api/groups/mine')) return Promise.resolve({ data: { success: true, groups: [LEADER_GROUP] } })
+      if (url.includes('/api/groups/public')) return Promise.resolve({ data: { success: true, groups: [] } })
+      return Promise.resolve({ data: {} })
+    })
+    mockPost.mockResolvedValue({ data: { success: true, data: { groupId: 'g1' } } })
+    renderGroups()
+    await waitFor(() => {
+      expect(screen.getByTestId('groups-quick-join-input')).toBeInTheDocument()
+    })
+    const input = screen.getByTestId('groups-quick-join-input') as HTMLInputElement
+    await user.type(input, 'abc123')
+    await user.click(screen.getByTestId('groups-quick-join-submit'))
+    await waitFor(() => {
+      expect(mockPost).toHaveBeenCalledWith('/api/groups/join', { code: 'ABC123' })
     })
   })
 
-  it('renders podium empty slots when leaderboard has < 3 members', async () => {
-    const partialLeaderboard = [SAMPLE_LEADERBOARD[0]]
+  it('FAB visible when has groups (mobile create entry-point)', async () => {
     mockGet.mockImplementation((url: string) => {
-      if (url.includes('/api/groups/me')) return Promise.resolve({ data: HAS_GROUP_RESPONSE })
-      if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: partialLeaderboard } })
-      if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: [], total: 0, hasMore: false } } })
-      return Promise.resolve({ data: { success: true, group: SAMPLE_GROUP } })
+      if (url.includes('/api/groups/mine')) return Promise.resolve({ data: { success: true, groups: [LEADER_GROUP] } })
+      if (url.includes('/api/groups/public')) return Promise.resolve({ data: { success: true, groups: [] } })
+      return Promise.resolve({ data: {} })
     })
     renderGroups()
     await waitFor(() => {
-      expect(screen.getByText('Lê Minh')).toBeTruthy()
+      expect(screen.getByTestId('groups-fab-create')).toBeInTheDocument()
     })
-    // 2 empty slots should render with "Còn trống" label
-    const emptyLabels = screen.getAllByText('Còn trống')
-    expect(emptyLabels.length).toBe(2)
   })
 
   it('returns null when not authenticated', () => {
     authState = { isAuthenticated: false, isLoading: false, user: null as any }
     const { container } = renderGroups()
     expect(container.innerHTML).toBe('')
-    authState = { isAuthenticated: true, isLoading: false, user: { name: 'Test', email: 'a@b.com' } }
-  })
-})
-
-/* ── Analytics inline preview ── */
-
-const LEADER_GROUP_RESPONSE = { hasGroup: true, groupId: 'g1', groupName: 'Hội Thánh Tin Lành', memberCount: 42, role: 'LEADER' }
-
-const SAMPLE_ANALYTICS = {
-  totalMembers: 10,
-  activeToday: 3,
-  activeWeek: 7,
-  inactiveCount: 3,
-  avgScore: 412,
-  accuracy: 73,
-  totalQuizzes: 8,
-  totalPointsWeek: 2884,
-  totalQuestionsWeek: 70,
-  weeklyActivity: [
-    { date: '2026-04-27', activeCount: 4 },
-    { date: '2026-04-28', activeCount: 6 },
-    { date: '2026-04-29', activeCount: 5 },
-    { date: '2026-04-30', activeCount: 3 },
-    { date: '2026-05-01', activeCount: 7 },
-    { date: '2026-05-02', activeCount: 6 },
-    { date: '2026-05-03', activeCount: 3 },
-  ],
-  topContributors: [],
-}
-
-function mockLeaderApis(analyticsOverride?: Partial<typeof SAMPLE_ANALYTICS>) {
-  mockGet.mockImplementation((url: string) => {
-    if (url.includes('/api/groups/me')) return Promise.resolve({ data: LEADER_GROUP_RESPONSE })
-    if (url.includes('/analytics')) return Promise.resolve({ data: { success: true, analytics: { ...SAMPLE_ANALYTICS, ...analyticsOverride } } })
-    if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: [] } })
-    if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: [], total: 0, hasMore: false } } })
-    if (url.includes('/quiz-sets')) return Promise.resolve({ data: { quizSets: [] } })
-    return Promise.resolve({ data: { success: true, group: SAMPLE_GROUP } })
-  })
-}
-
-describe('Groups Page — analytics inline preview (leader)', () => {
-  beforeEach(() => {
-    vi.clearAllMocks()
-    localStorage.clear()
-  })
-
-  it('renders analytics section when role is LEADER', async () => {
-    mockLeaderApis()
-    renderGroups()
-    await waitFor(() => {
-      expect(screen.getByTestId('analytics-inline')).toBeInTheDocument()
-    })
-  })
-
-  it('does not render analytics section when role is MEMBER', async () => {
-    mockGet.mockImplementation((url: string) => {
-      if (url.includes('/api/groups/me')) return Promise.resolve({ data: HAS_GROUP_RESPONSE })
-      if (url.includes('/leaderboard')) return Promise.resolve({ data: { success: true, leaderboard: [] } })
-      if (url.includes('/announcements')) return Promise.resolve({ data: { success: true, data: { items: [], total: 0, hasMore: false } } })
-      if (url.includes('/quiz-sets')) return Promise.resolve({ data: { quizSets: [] } })
-      return Promise.resolve({ data: { success: true, group: SAMPLE_GROUP } })
-    })
-    renderGroups()
-    await waitFor(() => {
-      expect(screen.getByTestId('group-overview')).toBeInTheDocument()
-    })
-    expect(screen.queryByTestId('analytics-inline')).not.toBeInTheDocument()
-  })
-
-  it('shows KPI values from analytics API response', async () => {
-    mockLeaderApis()
-    renderGroups()
-    await waitFor(() => {
-      expect(screen.getByText('7/10')).toBeInTheDocument()  // activeWeek/totalMembers
-      expect(screen.getByText('412')).toBeInTheDocument()   // avgScore
-      expect(screen.getByText('73%')).toBeInTheDocument()   // accuracy
-    })
-  })
-
-  it('shows inactive alert when inactiveCount > 0', async () => {
-    mockLeaderApis()
-    renderGroups()
-    await waitFor(() => {
-      expect(screen.getByText(/3 thành viên không hoạt động/)).toBeInTheDocument()
-    })
-  })
-
-  it('hides inactive alert when inactiveCount is 0', async () => {
-    mockLeaderApis({ inactiveCount: 0 })
-    renderGroups()
-    await waitFor(() => {
-      expect(screen.getByTestId('analytics-inline')).toBeInTheDocument()
-    })
-    expect(screen.queryByText(/thành viên không hoạt động/)).not.toBeInTheDocument()
-  })
-
-  it('renders view-full-analytics link to /groups/g1/analytics', async () => {
-    mockLeaderApis()
-    renderGroups()
-    await waitFor(() => {
-      const link = screen.getByText('Xem phân tích đầy đủ →')
-      expect(link.closest('a')?.getAttribute('href')).toBe('/groups/g1/analytics')
-    })
-  })
-
-  it('renders weekly activity chart label when data is loaded', async () => {
-    mockLeaderApis()
-    renderGroups()
-    await waitFor(() => {
-      expect(screen.getByText('Số người học mỗi ngày')).toBeInTheDocument()
-    })
   })
 })

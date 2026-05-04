@@ -48,6 +48,29 @@ interface QuizSet {
   createdAt: string;
 }
 
+interface AnalyticsData {
+  totalMembers: number;
+  activeToday: number;
+  activeWeek: number;
+  inactiveCount: number;
+  avgScore: number;
+  accuracy: number;
+  totalQuizzes: number;
+  totalPointsWeek: number;
+  totalQuestionsWeek: number;
+  weeklyActivity: Array<{ date: string; activeCount: number }>;
+  topContributors: Array<{ userId: string; name: string; avatarUrl?: string; score: number; questionsAnswered: number }>;
+}
+
+interface GroupStreak {
+  currentStreak: number;
+  longestStreak: number;
+  todayActiveCount: number;
+  totalMembers: number;
+}
+
+type AnalyticsPeriod = '7d' | '30d' | '90d';
+
 type TabKey = 'leaderboard' | 'members' | 'announcements' | 'quizsets';
 
 const GROUP_BANNER =
@@ -129,6 +152,11 @@ const GroupDetail: React.FC = () => {
   const [quizSets, setQuizSets] = useState<QuizSet[]>([]);
   const [quizSetsLoading, setQuizSetsLoading] = useState(false);
   const [playingSetId, setPlayingSetId] = useState<string | null>(null);
+
+  // Analytics (leader-only) + Group streak
+  const [analytics, setAnalytics] = useState<AnalyticsData | null>(null);
+  const [analyticsPeriod, setAnalyticsPeriod] = useState<AnalyticsPeriod>('7d');
+  const [streak, setStreak] = useState<GroupStreak | null>(null);
 
   // Create quiz set modal — 2 tabs: AI Generate + Manual
   type QsTab = 'ai' | 'manual';
@@ -343,6 +371,20 @@ const GroupDetail: React.FC = () => {
     finally { setQuizSetsLoading(false); }
   }, [id]);
 
+  const fetchAnalytics = useCallback(async () => {
+    try {
+      const res = await api.get(`/api/groups/${id}/analytics`);
+      if (res.data.success) setAnalytics(res.data.analytics);
+    } catch { /* ignore — non-leaders get 403, expected */ }
+  }, [id]);
+
+  const fetchStreak = useCallback(async () => {
+    try {
+      const res = await api.get(`/api/groups/${id}/streak`);
+      if (res.data.success) setStreak(res.data.streak);
+    } catch { /* ignore */ }
+  }, [id]);
+
   const handlePlayQuizSet = useCallback(async (setId: string) => {
     if (playingSetId) return;
     setPlayingSetId(setId);
@@ -364,7 +406,14 @@ const GroupDetail: React.FC = () => {
   useEffect(() => {
     if (!group) return;
     if (activeTab === 'leaderboard') {
+      // Overview tab loads everything the dashboard needs.
       fetchLeaderboard();
+      fetchStreak();
+      fetchQuizSets();
+      fetchAnnouncements();
+      // fetchAnalytics is gated by leader role — call unconditionally;
+      // non-leaders get a 403 which is silently swallowed.
+      fetchAnalytics();
     } else if (activeTab === 'announcements') {
       fetchAnnouncements();
     } else if (activeTab === 'quizsets') {
@@ -372,7 +421,7 @@ const GroupDetail: React.FC = () => {
     } else if (activeTab === 'members') {
       fetchMembers(null, false);
     }
-  }, [activeTab, group, fetchLeaderboard, fetchAnnouncements, fetchQuizSets, fetchMembers]);
+  }, [activeTab, group, fetchLeaderboard, fetchAnnouncements, fetchQuizSets, fetchMembers, fetchAnalytics, fetchStreak]);
 
   useEffect(() => {
     if (activeTab === 'leaderboard' && group) fetchLeaderboard();
@@ -525,7 +574,16 @@ const GroupDetail: React.FC = () => {
   const totalXp = leaderboard.reduce((sum, e) => sum + (e.score || 0), 0);
   const leader = group.members?.find(m => m.role === 'LEADER');
   const top3 = leaderboard.slice(0, 3);
-  const restLeaderboard = leaderboard.slice(3);
+  const restLeaderboard = leaderboard.slice(3, 7);
+
+  // Overview-tab derived values (mockup: groups_leader_dashboard.html / groups_member_dashboard.html).
+  // "New announcements" = posts created in the last 7 days (no unread tracking server-side yet).
+  const newAnnouncementCount = announcements.filter((a) => {
+    const t = Date.parse(a.createdAt);
+    return Number.isFinite(t) && t > Date.now() - 7 * 24 * 60 * 60 * 1000;
+  }).length;
+  const latestQuizSetsForOverview = quizSets.slice(0, 3);
+  const memberTotalForOverview = group.members?.length ?? 0;
 
   return (
     <div className="relative pb-12 max-w-5xl mx-auto px-4 lg:px-6 pt-6" data-testid="group-detail-page">
@@ -647,160 +705,530 @@ const GroupDetail: React.FC = () => {
 
       {/* ── Tab Content ── */}
 
-      {/* ===== LEADERBOARD TAB ===== */}
+      {/* ===== OVERVIEW TAB (formerly LEADERBOARD; redesigned per groups_leader_dashboard.html / groups_member_dashboard.html) ===== */}
       {activeTab === 'leaderboard' && (
-        <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-[rgba(232,168,50,0.15)] rounded-xl p-5" data-testid="group-leaderboard">
-          {/* Header + period toggle */}
-          <div className="flex justify-between items-center mb-4">
-            <div className="text-on-surface text-[13px] font-medium">📊 {t('groups.leaderboard')}</div>
-            <div className="inline-flex bg-black/30 rounded-md p-0.5">
-              <button
-                onClick={() => setPeriod('weekly')}
-                className={`border-0 px-2.5 py-1 rounded text-[10px] font-medium cursor-pointer transition-all ${
-                  period === 'weekly' ? 'bg-secondary text-on-secondary' : 'bg-transparent text-on-surface/55'
-                }`}
-              >
-                {t('groups.thisWeek')}
-              </button>
-              <button
-                onClick={() => setPeriod('all_time')}
-                className={`border-0 px-2.5 py-1 rounded text-[10px] font-medium cursor-pointer transition-all ${
-                  period === 'all_time' ? 'bg-secondary text-on-secondary' : 'bg-transparent text-on-surface/55'
-                }`}
-              >
-                {t('groups.everytime')}
-              </button>
-            </div>
-          </div>
-
-          {lbLoading ? (
-            <div className="flex justify-center py-8">
-              <div className="w-7 h-7 border-2 border-secondary/20 border-t-secondary rounded-full animate-spin" />
-            </div>
-          ) : leaderboard.length === 0 ? (
-            <p className="text-center text-on-surface-variant py-6 text-[12px]">
-              {t('groups.noRankingData')}
-            </p>
-          ) : (
+        <div data-testid="group-overview" className="space-y-3 sm:space-y-4">
+          {isLeader ? (
             <>
-              {/* Compact 3-slot podium (mockup pattern: rank 2 left / rank 1 elevated center / rank 3 right) */}
-              <div className="grid grid-cols-3 gap-2 items-end mb-4">
-                {[1, 0, 2].map((podiumIdx, gridPos) => {
-                  const entry = top3[podiumIdx];
-                  const rank = (podiumIdx + 1) as 1 | 2 | 3;
-                  const elevated = gridPos === 1;
-                  if (!entry) {
-                    return (
-                      <div
-                        key={`empty-${rank}`}
-                        className="bg-white/[0.03] border-[0.5px] border-dashed border-white/10 rounded-[10px] p-2.5 text-center opacity-60 flex flex-col items-center justify-center"
-                        style={{ minHeight: elevated ? 110 : 90 }}
-                      >
-                        <div className="w-10 h-10 rounded-full border border-dashed border-on-surface-variant/30 flex items-center justify-center mb-1.5">
-                          <span className="material-symbols-outlined text-on-surface-variant/40 text-[18px]">person_add</span>
-                        </div>
-                        <div className="text-on-surface-variant text-[10px]">{t('groups.podiumEmptySlot')}</div>
-                      </div>
-                    );
-                  }
-                  const isCurrentUser = entry.name === user?.name;
-                  const isMemberLeader = entry.role === 'LEADER';
-                  const wrapperStyle = elevated
-                    ? 'bg-[rgba(232,168,50,0.12)] border border-[rgba(232,168,50,0.5)] shadow-[0_0_0_2px_rgba(232,168,50,0.15)]'
-                    : rank === 2
-                    ? 'bg-white/[0.04] border-[0.5px] border-white/10'
-                    : 'bg-[rgba(255,140,66,0.08)] border-[0.5px] border-[rgba(255,140,66,0.3)]';
-                  const avatarStyle = elevated
-                    ? 'w-[50px] h-[50px] bg-[rgba(232,168,50,0.3)] border-2 border-secondary text-secondary text-[16px]'
-                    : rank === 2
-                    ? 'w-10 h-10 bg-[rgba(74,158,255,0.3)] border-2 border-[rgba(74,158,255,0.6)] text-[#6AB8E8] text-[14px]'
-                    : 'w-10 h-10 bg-[rgba(168,85,247,0.3)] border-2 border-[rgba(168,85,247,0.6)] text-[#c084fc] text-[14px]';
-                  const badgeStyle = elevated
-                    ? 'bg-secondary text-on-secondary text-[11px] w-5 h-5'
-                    : rank === 2
-                    ? 'bg-white/60 text-background text-[10px] w-[18px] h-[18px]'
-                    : 'bg-[rgba(255,140,66,0.8)] text-background text-[10px] w-[18px] h-[18px]';
-                  return (
-                    <div
-                      key={entry.userId}
-                      className={`rounded-[10px] p-2.5 text-center ${wrapperStyle} ${isCurrentUser ? 'ring-1 ring-secondary' : ''}`}
-                    >
-                      <div className="relative inline-block mb-1.5">
-                        <div className={`rounded-full flex items-center justify-center font-medium ${avatarStyle}`}>
-                          {entry.avatarUrl ? (
-                            <img alt={entry.name} src={entry.avatarUrl} className="w-full h-full rounded-full object-cover" />
-                          ) : (
-                            (entry.name || '?').charAt(0).toUpperCase()
-                          )}
-                        </div>
-                        <div
-                          className={`absolute -bottom-0.5 -right-1 rounded-full flex items-center justify-center font-semibold ${badgeStyle}`}
-                        >
-                          {rank}
-                        </div>
-                      </div>
-                      <div className="text-on-surface text-[12px] font-medium truncate">
-                        {entry.name}
-                      </div>
-                      <div className="text-[9px]" style={{ color: isMemberLeader ? '#e8a832' : rank === 2 ? '#6AB8E8' : '#c084fc' }}>
-                        {isMemberLeader ? `👑 ${t('groups.filterLeader')}` : entry.role === 'MOD' ? `🛡️ ${t('groups.filterMod')}` : t('groups.memberRole')}
-                      </div>
-                      <div className="text-on-surface/45 text-[10px] mt-0.5">
-                        {(entry.score ?? 0).toLocaleString()} {t('groups.pointsAbbr')}
-                      </div>
+              {/* ── Analytics inline (leader-only) ── */}
+              <section
+                data-testid="analytics-inline"
+                className="bg-[rgba(74,158,255,0.05)] border-[0.5px] border-[rgba(74,158,255,0.25)] rounded-xl p-4 sm:p-5"
+              >
+                <div className="flex justify-between items-center mb-3 sm:mb-4">
+                  <div>
+                    <div className="text-[rgba(106,184,232,0.7)] text-[8px] sm:text-[9px] uppercase tracking-[0.5px] mb-1">
+                      {t('groups.leaderOnly')}
                     </div>
-                  );
-                })}
-              </div>
-
-              {/* Mini list (rank 4+) */}
-              {restLeaderboard.length > 0 && (
-                <div className="flex flex-col gap-1">
-                  {restLeaderboard.map((entry, i) => {
-                    const isCurrentUser = entry.name === user?.name;
-                    return (
-                      <div
-                        key={entry.userId}
-                        className={`rounded-md px-3 py-2 flex items-center gap-2.5 border-[0.5px] ${
-                          isCurrentUser
-                            ? 'bg-[rgba(232,168,50,0.08)] border-[rgba(232,168,50,0.4)]'
-                            : 'bg-white/[0.03] border-white/[0.04]'
+                    <div className="text-on-surface text-[12px] sm:text-[14px] font-medium">📊 {t('groups.analyticsTitle')}</div>
+                  </div>
+                  <div className="inline-flex bg-black/30 rounded-md p-0.5">
+                    {(['7d', '30d', '90d'] as AnalyticsPeriod[]).map((p) => (
+                      <button
+                        key={p}
+                        onClick={() => setAnalyticsPeriod(p)}
+                        className={`border-0 px-2 sm:px-2.5 py-0.5 rounded text-[9px] sm:text-[10px] font-medium cursor-pointer transition-all ${
+                          analyticsPeriod === p ? 'bg-[rgba(74,158,255,0.3)] text-[#6AB8E8]' : 'bg-transparent text-on-surface/55'
                         }`}
                       >
-                        <div
-                          className={`text-[11px] font-medium w-[18px] text-center ${
-                            isCurrentUser ? 'text-secondary' : 'text-on-surface/50'
-                          }`}
-                        >
-                          {i + 4}
-                        </div>
-                        <div className="w-[26px] h-[26px] rounded-full bg-white/10 flex items-center justify-center text-[10px] font-medium text-on-surface overflow-hidden">
-                          {entry.avatarUrl ? (
-                            <img alt={entry.name} src={entry.avatarUrl} className="w-full h-full rounded-full object-cover" />
-                          ) : (
-                            (entry.name || '?').charAt(0).toUpperCase()
-                          )}
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className="text-on-surface text-[11px] truncate">
-                            {entry.name}
-                            {isCurrentUser && <span className="ml-1 font-medium">{t('groups.memberLabel')}</span>}
-                          </div>
-                          <div className="text-on-surface/40 text-[9px]">
-                            {entry.role === 'LEADER' ? t('groups.filterLeader') : entry.role === 'MOD' ? t('groups.filterMod') : t('groups.memberRole')}
-                          </div>
-                        </div>
-                        <div className="text-secondary text-[11px] font-medium">
-                          {(entry.score ?? 0).toLocaleString()} {t('groups.pointsAbbr')}
-                        </div>
-                      </div>
-                    );
-                  })}
+                        {p === '7d' ? '7N' : p === '30d' ? '30N' : '90N'}
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              )}
+
+                {/* KPI: 2 cols mobile, 4 cols desktop */}
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 mb-3">
+                  <div className="bg-[rgba(50,52,64,0.5)] border-[0.5px] border-[rgba(99,153,34,0.3)] rounded-lg p-2 sm:p-2.5">
+                    <div className="text-[rgba(151,196,89,0.7)] text-[8px] sm:text-[9px] uppercase tracking-[0.4px] mb-1">
+                      {t('groups.kpiActiveWeek')}
+                    </div>
+                    <div className="text-[#97C459] text-[18px] sm:text-[22px] font-medium leading-none">
+                      {analytics ? analytics.activeWeek : '—'}
+                      <span className="text-on-surface/40 text-[10px] sm:text-[11px] ml-1">
+                        / {analytics ? analytics.totalMembers : '—'}
+                      </span>
+                    </div>
+                    <div className="text-[#97C459] text-[9px] sm:text-[10px] mt-1">
+                      {analytics && analytics.totalMembers > 0
+                        ? `${Math.round((analytics.activeWeek / analytics.totalMembers) * 100)}%`
+                        : ''}
+                    </div>
+                  </div>
+                  <div className="bg-[rgba(50,52,64,0.5)] border-[0.5px] border-[rgba(232,168,50,0.3)] rounded-lg p-2 sm:p-2.5">
+                    <div className="text-[rgba(232,168,50,0.7)] text-[8px] sm:text-[9px] uppercase tracking-[0.4px] mb-1">
+                      {t('groups.kpiAvgScore')}
+                    </div>
+                    <div className="text-[#e8a832] text-[18px] sm:text-[22px] font-medium leading-none">
+                      {analytics ? analytics.avgScore : '—'}
+                      <span className="text-on-surface/40 text-[10px] sm:text-[11px] ml-1">{t('groups.pointsAbbr')}</span>
+                    </div>
+                    <div className="text-on-surface/45 text-[9px] sm:text-[10px] mt-1">{t('groups.kpiPerPerson')}</div>
+                  </div>
+                  <div className="bg-[rgba(50,52,64,0.5)] border-[0.5px] border-[rgba(106,184,232,0.3)] rounded-lg p-2 sm:p-2.5">
+                    <div className="text-[rgba(106,184,232,0.7)] text-[8px] sm:text-[9px] uppercase tracking-[0.4px] mb-1">
+                      {t('groups.kpiAccuracy')}
+                    </div>
+                    <div className="text-[#6AB8E8] text-[18px] sm:text-[22px] font-medium leading-none">
+                      {analytics ? `${analytics.accuracy}%` : '—'}
+                    </div>
+                    <div className="text-[rgba(106,184,232,0.7)] text-[9px] sm:text-[10px] mt-1">{t('groups.kpiStable')}</div>
+                  </div>
+                  <div className="bg-[rgba(50,52,64,0.5)] border-[0.5px] border-[rgba(255,140,66,0.3)] rounded-lg p-2 sm:p-2.5">
+                    <div className="text-[rgba(255,140,66,0.7)] text-[8px] sm:text-[9px] uppercase tracking-[0.4px] mb-1">
+                      {t('groups.kpiInactive')}
+                    </div>
+                    <div className="text-[#ff8c42] text-[18px] sm:text-[22px] font-medium leading-none">
+                      {analytics ? analytics.inactiveCount : '—'}
+                      <span className="text-on-surface/40 text-[10px] sm:text-[11px] ml-1">{t('groups.kpiPeople')}</span>
+                    </div>
+                    <div className="text-[#ff8c42] text-[9px] sm:text-[10px] mt-1">{t('groups.kpiNeedAttention')}</div>
+                  </div>
+                </div>
+
+                {/* Bar chart 7 days */}
+                {analytics && analytics.weeklyActivity.length > 0 && (
+                  <div className="bg-[rgba(50,52,64,0.5)] border-[0.5px] border-white/[0.06] rounded-lg p-3 mb-3">
+                    <div className="flex justify-between items-center mb-2">
+                      <div className="text-on-surface/85 text-[10px] sm:text-[11px] font-medium">
+                        📈 {t('groups.weeklyActivity')}
+                      </div>
+                      <div className="text-on-surface/40 text-[9px] sm:text-[10px]">{t('groups.weeklyActivitySubtitle')}</div>
+                    </div>
+                    <div className="grid grid-cols-7 gap-1 sm:gap-1.5 items-end h-[60px] sm:h-[80px]">
+                      {analytics.weeklyActivity.map((day, i) => {
+                        const maxCount = Math.max(...analytics.weeklyActivity.map((d) => d.activeCount), 1);
+                        const heightPct = Math.max((day.activeCount / maxCount) * 100, 4);
+                        const dow = new Date(day.date).getDay();
+                        const dayLabel = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'][dow];
+                        const isToday = i === analytics.weeklyActivity.length - 1;
+                        return (
+                          <div key={day.date} className="flex flex-col items-center gap-1">
+                            <div
+                              className={`w-full rounded-t-[3px] transition-all bg-gradient-to-t from-[rgba(232,168,50,0.5)] to-[#e8a832] ${
+                                isToday ? 'shadow-[0_0_8px_rgba(232,168,50,0.4)]' : ''
+                              }`}
+                              style={{ height: `${heightPct}%` }}
+                            />
+                            <div className={`text-[8px] sm:text-[9px] ${isToday ? 'text-secondary font-medium' : 'text-on-surface/40'}`}>
+                              {isToday ? t('groups.today') : dayLabel}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                {/* Inactive alert */}
+                {analytics && analytics.inactiveCount > 0 && (
+                  <div className="bg-[rgba(255,140,66,0.06)] border-[0.5px] border-[rgba(255,140,66,0.3)] rounded-lg p-3 flex items-start sm:items-center justify-between gap-2 sm:gap-3 flex-wrap sm:flex-nowrap">
+                    <div className="min-w-0">
+                      <div className="text-[#ff8c42] text-[10px] sm:text-[11px] font-medium mb-1 flex items-center gap-1">
+                        <span>⚠️</span> {t('groups.inactiveAlert', { count: analytics.inactiveCount })}
+                      </div>
+                      <div className="text-on-surface/60 text-[10px] sm:text-[11px] leading-snug">
+                        {t('groups.inactiveAlertDesc')}
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => { handleTabChange('members'); setMemberFilter('inactive'); }}
+                      className="bg-[rgba(255,140,66,0.15)] text-[#ff8c42] border-[0.5px] border-[rgba(255,140,66,0.4)] rounded-md px-3 py-1.5 text-[10px] sm:text-[11px] font-medium whitespace-nowrap hover:brightness-110 transition-all"
+                    >
+                      {t('groups.viewInactiveList')} →
+                    </button>
+                  </div>
+                )}
+              </section>
+
+              {/* ── Quick Actions ── */}
+              <section
+                data-testid="quick-actions"
+                className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-[rgba(232,168,50,0.15)] rounded-xl p-4 sm:p-5"
+              >
+                <div className="text-on-surface text-[12px] sm:text-[13px] font-medium mb-3">
+                  ⚡ {t('groups.quickActions')}
+                </div>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
+                  <button
+                    onClick={openCreateModal}
+                    className="bg-[rgba(232,168,50,0.08)] border-[0.5px] border-[rgba(232,168,50,0.25)] rounded-lg p-3 cursor-pointer flex flex-col items-center gap-1 hover:brightness-110 transition-all active:scale-95"
+                  >
+                    <span className="text-[18px]">📚</span>
+                    <span className="text-on-surface text-[11px]">{t('groups.quickActionCreateQuiz')}</span>
+                    <span className="text-on-surface/40 text-[9px]">
+                      {t('groups.quickActionQuizSetCount', { count: quizSets.length })}
+                    </span>
+                  </button>
+                  <button
+                    onClick={() => handleTabChange('announcements')}
+                    className="relative bg-[rgba(74,158,255,0.08)] border-[0.5px] border-[rgba(74,158,255,0.25)] rounded-lg p-3 cursor-pointer flex flex-col items-center gap-1 hover:brightness-110 transition-all active:scale-95"
+                  >
+                    <span className="text-[18px]">📢</span>
+                    <span className="text-on-surface text-[11px]">{t('groups.quickActionPostAnnouncement')}</span>
+                    <span className="text-on-surface/40 text-[9px]">
+                      {newAnnouncementCount > 0
+                        ? t('groups.quickActionNewAnnouncements', { count: newAnnouncementCount })
+                        : t('groups.quickActionSendTo', { count: memberTotalForOverview })}
+                    </span>
+                    {newAnnouncementCount > 0 && (
+                      <span className="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-[#ff8c42] text-white text-[9px] font-semibold flex items-center justify-center">
+                        {newAnnouncementCount}
+                      </span>
+                    )}
+                  </button>
+                  <button
+                    onClick={() => navigate('/tournaments')}
+                    className="bg-[rgba(168,85,247,0.08)] border-[0.5px] border-[rgba(168,85,247,0.25)] rounded-lg p-3 cursor-pointer flex flex-col items-center gap-1 hover:brightness-110 transition-all active:scale-95"
+                  >
+                    <span className="text-[18px]">🏆</span>
+                    <span className="text-on-surface text-[11px]">{t('groups.quickActionTournament')}</span>
+                    <span className="text-on-surface/40 text-[9px]">{t('groups.quickActionBracket')}</span>
+                  </button>
+                  <button
+                    onClick={() => handleTabChange('members')}
+                    className="bg-[rgba(99,153,34,0.08)] border-[0.5px] border-[rgba(99,153,34,0.25)] rounded-lg p-3 cursor-pointer flex flex-col items-center gap-1 hover:brightness-110 transition-all active:scale-95"
+                  >
+                    <span className="text-[18px]">👥</span>
+                    <span className="text-on-surface text-[11px]">{t('groups.quickActionMembers')}</span>
+                    <span className="text-on-surface/40 text-[9px]">
+                      {t('groups.membersHeader', { count: memberTotalForOverview })}
+                    </span>
+                  </button>
+                </div>
+              </section>
             </>
+          ) : (
+            // ── Member / Mod overview: leaderboard + quiz sets + sidebar (Announcements + Streak + Tournament) ──
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-3 lg:gap-4">
+              <div className="flex flex-col gap-3">
+                {/* Leaderboard */}
+                <section
+                  className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-[rgba(232,168,50,0.15)] rounded-xl p-4 sm:p-5"
+                  data-testid="group-leaderboard"
+                >
+                  <div className="flex justify-between items-center mb-3 sm:mb-4">
+                    <div className="text-on-surface text-[12px] sm:text-[13px] font-medium">📊 {t('groups.leaderboard')}</div>
+                    <div className="inline-flex bg-black/30 rounded-md p-0.5">
+                      <button
+                        onClick={() => setPeriod('weekly')}
+                        className={`border-0 px-2 sm:px-2.5 py-1 rounded text-[9px] sm:text-[10px] font-medium cursor-pointer transition-all ${
+                          period === 'weekly' ? 'bg-secondary text-on-secondary' : 'bg-transparent text-on-surface/55'
+                        }`}
+                      >
+                        {t('groups.thisWeek')}
+                      </button>
+                      <button
+                        onClick={() => setPeriod('all_time')}
+                        className={`border-0 px-2 sm:px-2.5 py-1 rounded text-[9px] sm:text-[10px] font-medium cursor-pointer transition-all ${
+                          period === 'all_time' ? 'bg-secondary text-on-secondary' : 'bg-transparent text-on-surface/55'
+                        }`}
+                      >
+                        {t('groups.everytime')}
+                      </button>
+                    </div>
+                  </div>
+
+                  {lbLoading ? (
+                    <div className="flex justify-center py-8">
+                      <div className="w-7 h-7 border-2 border-secondary/20 border-t-secondary rounded-full animate-spin" />
+                    </div>
+                  ) : leaderboard.length === 0 ? (
+                    <p className="text-center text-on-surface-variant py-6 text-[12px]">
+                      {t('groups.noRankingData')}
+                    </p>
+                  ) : (
+                    <>
+                      {/* Podium 3 */}
+                      <div className="grid grid-cols-3 gap-2 items-end mb-4">
+                        {[1, 0, 2].map((podiumIdx, gridPos) => {
+                          const entry = top3[podiumIdx];
+                          const rank = (podiumIdx + 1) as 1 | 2 | 3;
+                          const elevated = gridPos === 1;
+                          if (!entry) {
+                            return (
+                              <div
+                                key={`empty-${rank}`}
+                                className="bg-white/[0.03] border-[0.5px] border-dashed border-white/10 rounded-[10px] p-2.5 text-center opacity-60 flex flex-col items-center justify-center"
+                                style={{ minHeight: elevated ? 110 : 90 }}
+                              >
+                                <div className="w-10 h-10 rounded-full border border-dashed border-on-surface-variant/30 flex items-center justify-center mb-1.5">
+                                  <span className="material-symbols-outlined text-on-surface-variant/40 text-[18px]">person_add</span>
+                                </div>
+                                <div className="text-on-surface-variant text-[10px]">{t('groups.podiumEmptySlot')}</div>
+                              </div>
+                            );
+                          }
+                          const isCurrentUser = entry.name === user?.name;
+                          const isMemberLeader = entry.role === 'LEADER';
+                          const wrapperStyle = elevated
+                            ? 'bg-[rgba(232,168,50,0.12)] border border-[rgba(232,168,50,0.5)] shadow-[0_0_0_2px_rgba(232,168,50,0.15)]'
+                            : rank === 2
+                            ? 'bg-white/[0.04] border-[0.5px] border-white/10'
+                            : 'bg-[rgba(255,140,66,0.08)] border-[0.5px] border-[rgba(255,140,66,0.3)]';
+                          const avatarStyle = elevated
+                            ? 'w-[50px] h-[50px] bg-[rgba(232,168,50,0.3)] border-2 border-secondary text-secondary text-[16px]'
+                            : rank === 2
+                            ? 'w-10 h-10 bg-[rgba(74,158,255,0.3)] border-2 border-[rgba(74,158,255,0.6)] text-[#6AB8E8] text-[14px]'
+                            : 'w-10 h-10 bg-[rgba(168,85,247,0.3)] border-2 border-[rgba(168,85,247,0.6)] text-[#c084fc] text-[14px]';
+                          const badgeStyle = elevated
+                            ? 'bg-secondary text-on-secondary text-[11px] w-5 h-5'
+                            : rank === 2
+                            ? 'bg-white/60 text-background text-[10px] w-[18px] h-[18px]'
+                            : 'bg-[rgba(255,140,66,0.8)] text-background text-[10px] w-[18px] h-[18px]';
+                          return (
+                            <div
+                              key={entry.userId}
+                              className={`rounded-[10px] p-2.5 text-center ${wrapperStyle} ${isCurrentUser ? 'ring-1 ring-secondary' : ''}`}
+                            >
+                              <div className="relative inline-block mb-1.5">
+                                <div className={`rounded-full flex items-center justify-center font-medium ${avatarStyle}`}>
+                                  {entry.avatarUrl ? (
+                                    <img alt={entry.name} src={entry.avatarUrl} className="w-full h-full rounded-full object-cover" />
+                                  ) : (
+                                    (entry.name || '?').charAt(0).toUpperCase()
+                                  )}
+                                </div>
+                                <div className={`absolute -bottom-0.5 -right-1 rounded-full flex items-center justify-center font-semibold ${badgeStyle}`}>
+                                  {rank}
+                                </div>
+                              </div>
+                              <div className="text-on-surface text-[11px] sm:text-[12px] font-medium truncate">{entry.name}</div>
+                              <div className="text-[9px]" style={{ color: isMemberLeader ? '#e8a832' : rank === 2 ? '#6AB8E8' : '#c084fc' }}>
+                                {isMemberLeader ? `👑 ${t('groups.filterLeader')}` : entry.role === 'MOD' ? `🛡️ ${t('groups.filterMod')}` : t('groups.memberRole')}
+                              </div>
+                              <div className="text-on-surface/45 text-[10px] mt-0.5">
+                                {(entry.score ?? 0).toLocaleString()} {t('groups.pointsAbbr')}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+
+                      {restLeaderboard.length > 0 && (
+                        <div className="flex flex-col gap-1">
+                          {restLeaderboard.map((entry, i) => {
+                            const isCurrentUser = entry.name === user?.name;
+                            return (
+                              <div
+                                key={entry.userId}
+                                className={`rounded-md px-3 py-2 flex items-center gap-2.5 border-[0.5px] ${
+                                  isCurrentUser
+                                    ? 'bg-[rgba(232,168,50,0.08)] border-[rgba(232,168,50,0.4)]'
+                                    : 'bg-white/[0.03] border-white/[0.04]'
+                                }`}
+                              >
+                                <div className={`text-[11px] font-medium w-[18px] text-center ${isCurrentUser ? 'text-secondary' : 'text-on-surface/50'}`}>
+                                  {i + 4}
+                                </div>
+                                <div className="w-[26px] h-[26px] rounded-full bg-white/10 flex items-center justify-center text-[10px] font-medium text-on-surface overflow-hidden">
+                                  {entry.avatarUrl ? (
+                                    <img alt={entry.name} src={entry.avatarUrl} className="w-full h-full rounded-full object-cover" />
+                                  ) : (
+                                    (entry.name || '?').charAt(0).toUpperCase()
+                                  )}
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                  <div className="text-on-surface text-[11px] truncate">
+                                    {entry.name}
+                                    {isCurrentUser && <span className="ml-1 font-medium">{t('groups.memberLabel')}</span>}
+                                  </div>
+                                  <div className="text-on-surface/40 text-[9px]">
+                                    {entry.role === 'LEADER' ? t('groups.filterLeader') : entry.role === 'MOD' ? t('groups.filterMod') : t('groups.memberRole')}
+                                  </div>
+                                </div>
+                                <div className="text-secondary text-[11px] font-medium">
+                                  {(entry.score ?? 0).toLocaleString()} {t('groups.pointsAbbr')}
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      )}
+
+                      {memberTotalForOverview > 0 && (
+                        <div className="text-center mt-3">
+                          <button
+                            onClick={() => handleTabChange('members')}
+                            className="text-[rgba(232,168,50,0.7)] text-[11px] hover:text-secondary transition-colors"
+                          >
+                            {t('groups.viewAllMembers', { count: memberTotalForOverview })} →
+                          </button>
+                        </div>
+                      )}
+                    </>
+                  )}
+                </section>
+
+                {/* Quiz sets (latest 3) */}
+                <section
+                  data-testid="overview-quiz-sets"
+                  className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-white/[0.06] rounded-xl p-4 sm:p-5"
+                >
+                  <div className="flex justify-between items-center mb-3">
+                    <div className="text-on-surface text-[12px] sm:text-[13px] font-medium">📚 {t('groups.quizSetsSection')}</div>
+                    <button
+                      onClick={() => handleTabChange('quizsets')}
+                      className="text-[rgba(232,168,50,0.7)] text-[11px] hover:text-secondary transition-colors"
+                    >
+                      {t('groups.viewAll')} →
+                    </button>
+                  </div>
+                  {quizSetsLoading ? (
+                    <div className="space-y-2">
+                      <div className="h-12 bg-[rgba(50,52,64,0.5)] rounded-lg animate-pulse" />
+                      <div className="h-12 bg-[rgba(50,52,64,0.5)] rounded-lg animate-pulse" />
+                    </div>
+                  ) : latestQuizSetsForOverview.length === 0 ? (
+                    <p className="text-on-surface-variant text-[11px] py-2">{t('groups.noQuizSets')}</p>
+                  ) : (
+                    <div className="flex flex-col gap-2">
+                      {latestQuizSetsForOverview.map((qs, idx) => {
+                        const newest = idx === 0;
+                        return (
+                          <div
+                            key={qs.id}
+                            className={`rounded-lg px-3 py-2.5 flex items-center gap-2.5 border-[0.5px] ${
+                              newest
+                                ? 'bg-[rgba(232,168,50,0.06)] border-[rgba(232,168,50,0.25)]'
+                                : 'bg-[rgba(50,52,64,0.5)] border-white/[0.06]'
+                            }`}
+                          >
+                            <div
+                              className={`w-8 h-8 rounded-md flex items-center justify-center text-[14px] flex-shrink-0 ${
+                                newest ? 'bg-[rgba(232,168,50,0.2)]' : 'bg-[rgba(74,158,255,0.15)]'
+                              }`}
+                            >
+                              📖
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <div className="text-on-surface text-[11px] sm:text-[12px] font-medium truncate">{qs.name}</div>
+                              <div className="text-on-surface/50 text-[9px] sm:text-[10px]">
+                                {qs.questionCount} {t('groups.questionsCount')}
+                              </div>
+                            </div>
+                            <button
+                              onClick={() => handlePlayQuizSet(qs.id)}
+                              disabled={playingSetId === qs.id}
+                              className={`rounded-md px-3 py-1.5 text-[10px] sm:text-[11px] font-medium whitespace-nowrap transition-all ${
+                                newest
+                                  ? 'bg-secondary text-on-secondary hover:brightness-110'
+                                  : 'bg-white/5 text-on-surface/70 border-[0.5px] border-white/10 hover:bg-white/10'
+                              } disabled:opacity-50 disabled:cursor-not-allowed`}
+                            >
+                              {playingSetId === qs.id ? '…' : t('groups.startPlaying')}
+                            </button>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </section>
+              </div>
+
+              {/* Sidebar */}
+              <aside className="flex flex-col gap-3">
+                {/* Announcements (latest 2) */}
+                <section className="bg-[rgba(50,52,64,0.4)] border-[0.5px] border-white/[0.06] rounded-xl p-4">
+                  <div className="flex justify-between items-center mb-3">
+                    <div className="text-on-surface text-[12px] font-medium">📢 {t('groups.announcements')}</div>
+                    <button
+                      onClick={() => handleTabChange('announcements')}
+                      className="text-[rgba(232,168,50,0.7)] text-[10px] hover:text-secondary transition-colors"
+                    >
+                      {t('groups.viewAll')} →
+                    </button>
+                  </div>
+                  {announcementsLoading ? (
+                    <div className="h-16 bg-[rgba(50,52,64,0.5)] rounded animate-pulse" />
+                  ) : announcements.length === 0 ? (
+                    <p className="text-center text-on-surface-variant py-3 text-[11px]">{t('groups.noAnnouncements')}</p>
+                  ) : (
+                    <div className="flex flex-col gap-2">
+                      {announcements.slice(0, 2).map((a, idx) => {
+                        const isLeaderPost = idx === 0;
+                        return (
+                          <article
+                            key={a.id}
+                            className={`rounded px-3 py-2.5 ${
+                              isLeaderPost
+                                ? 'bg-[rgba(232,168,50,0.05)] border-l-2 border-secondary'
+                                : 'bg-[rgba(50,52,64,0.5)] border-[0.5px] border-white/[0.04]'
+                            }`}
+                          >
+                            <div className="flex justify-between items-center mb-1.5">
+                              <div className={`text-[10px] font-medium ${isLeaderPost ? 'text-secondary' : 'text-on-surface/70'}`}>
+                                {isLeaderPost ? '👑' : '🛡️'} {a.author}
+                              </div>
+                              <div className="text-on-surface/40 text-[9px]">
+                                {new Date(a.createdAt).toLocaleDateString()}
+                              </div>
+                            </div>
+                            <div className="text-on-surface/85 text-[11px] leading-relaxed line-clamp-3">{a.body}</div>
+                          </article>
+                        );
+                      })}
+                    </div>
+                  )}
+                </section>
+
+                {/* Group streak */}
+                <section
+                  data-testid="group-streak-card"
+                  className="bg-[rgba(99,153,34,0.06)] border-[0.5px] border-[rgba(99,153,34,0.25)] rounded-xl p-4"
+                >
+                  <div className="flex items-center gap-1.5 mb-2">
+                    <span className="text-[14px]">🔥</span>
+                    <span className="text-[rgba(151,196,89,0.85)] text-[11px] font-medium tracking-wider uppercase">
+                      {t('groups.groupStreak')}
+                    </span>
+                  </div>
+                  <div className="text-[#97C459] text-[28px] sm:text-[32px] font-medium leading-none">
+                    {streak ? streak.currentStreak : 0}
+                    <span className="text-[rgba(151,196,89,0.5)] text-[13px] sm:text-[14px] ml-1">{t('groups.daysShort')}</span>
+                  </div>
+                  <div className="text-on-surface/55 text-[11px] mt-1.5 leading-snug">
+                    {streak && streak.currentStreak > 0
+                      ? t('groups.groupStreakDescActive', { longest: streak.longestStreak })
+                      : t('groups.groupStreakDesc')}
+                  </div>
+                  {streak && streak.totalMembers > 0 && (
+                    <>
+                      <div className="mt-3 h-1 bg-white/[0.06] rounded-sm overflow-hidden">
+                        <div
+                          className="h-full rounded-sm bg-gradient-to-r from-[#97C459] to-secondary"
+                          style={{
+                            width: `${Math.min(100, Math.round((streak.todayActiveCount / streak.totalMembers) * 100))}%`,
+                          }}
+                        />
+                      </div>
+                      <div className="text-on-surface/40 text-[10px] mt-1">
+                        {t('groups.groupStreakProgress', { active: streak.todayActiveCount, total: streak.totalMembers })}
+                      </div>
+                    </>
+                  )}
+                </section>
+
+                {/* Tournament card (placeholder + browse) */}
+                <section className="bg-[rgba(74,158,255,0.05)] border-[0.5px] border-[rgba(74,158,255,0.2)] rounded-xl p-3.5">
+                  <div className="text-[rgba(106,184,232,0.7)] text-[10px] uppercase tracking-[0.4px] mb-1 font-medium">
+                    {t('groups.upcomingTournament')}
+                  </div>
+                  <div className="text-on-surface text-[12px] font-medium mb-1">🏆 {t('groups.tournamentLabel')}</div>
+                  <div className="text-on-surface/55 text-[10px] mb-2.5 leading-snug">
+                    {t('groups.noUpcomingTournament')}
+                  </div>
+                  <Link
+                    to="/tournaments"
+                    className="block w-full bg-[rgba(74,158,255,0.15)] text-[#6AB8E8] border-[0.5px] border-[rgba(74,158,255,0.4)] rounded-md py-1.5 text-[10px] sm:text-[11px] font-medium text-center hover:brightness-110 transition-all"
+                  >
+                    {t('groups.browseTournaments')}
+                  </Link>
+                </section>
+              </aside>
+            </div>
           )}
-        </section>
+        </div>
       )}
 
       {/* ===== MEMBERS TAB (mockup: groups_member_list_expanded.html) ===== */}

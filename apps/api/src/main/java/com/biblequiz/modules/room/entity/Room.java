@@ -59,6 +59,9 @@ public class Room {
     @Column(name = "question_set_id", length = 36)
     private String questionSetId;
 
+    @Column(name = "group_quiz_set_id", length = 36)
+    private String groupQuizSetId;
+
     @Convert(converter = JsonListConverter.class)
     @Column(name = "custom_question_ids", columnDefinition = "JSON")
     private List<String> customQuestionIds;
@@ -198,6 +201,9 @@ public class Room {
 
     public String getQuestionSetId() { return questionSetId; }
     public void setQuestionSetId(String questionSetId) { this.questionSetId = questionSetId; }
+
+    public String getGroupQuizSetId() { return groupQuizSetId; }
+    public void setGroupQuizSetId(String groupQuizSetId) { this.groupQuizSetId = groupQuizSetId; }
 
     public List<String> getCustomQuestionIds() { return customQuestionIds; }
     public void setCustomQuestionIds(List<String> customQuestionIds) { this.customQuestionIds = customQuestionIds; }

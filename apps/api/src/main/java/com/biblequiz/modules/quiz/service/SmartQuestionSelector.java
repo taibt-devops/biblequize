@@ -161,9 +161,10 @@ public class SmartQuestionSelector {
                 && !"all".equalsIgnoreCase(filter.difficulty()))
                 ? Question.Difficulty.valueOf(filter.difficulty().toLowerCase()) : null;
 
-        if (book != null && difficulty != null) {
+        boolean hasBook = book != null && !book.isEmpty();
+        if (hasBook && difficulty != null) {
             return questionRepository.findAllActiveByLanguageAndBookAndDifficulty(language, book, difficulty);
-        } else if (book != null) {
+        } else if (hasBook) {
             return questionRepository.findAllActiveByLanguageAndBook(language, book);
         } else if (difficulty != null) {
             return questionRepository.findAllActiveByLanguageAndDifficulty(language, difficulty);

@@ -8,9 +8,11 @@ import com.biblequiz.modules.group.repository.ChurchGroupRepository;
 import com.biblequiz.modules.group.repository.GroupMemberRepository;
 import com.biblequiz.modules.group.repository.GroupQuizSetRepository;
 import com.biblequiz.modules.group.service.ChurchGroupService;
+import com.biblequiz.modules.group.service.GroupStreakService;
 import com.biblequiz.modules.quiz.entity.Question;
 import com.biblequiz.modules.quiz.repository.QuestionRepository;
 import com.biblequiz.modules.room.entity.Room;
+import com.biblequiz.modules.room.repository.RoomPlayerRepository;
 import com.biblequiz.modules.room.repository.RoomRepository;
 import com.biblequiz.modules.room.service.RoomService;
 import com.biblequiz.modules.user.entity.User;
@@ -35,6 +37,9 @@ public class ChurchGroupController {
     private ChurchGroupService churchGroupService;
 
     @Autowired
+    private GroupStreakService groupStreakService;
+
+    @Autowired
     private ChurchGroupRepository churchGroupRepository;
 
     @Autowired
@@ -57,6 +62,9 @@ public class ChurchGroupController {
 
     @Autowired
     private RoomRepository roomRepository;
+
+    @Autowired
+    private RoomPlayerRepository roomPlayerRepository;
 
     /**
      * POST /api/groups - Tao nhom moi
@@ -90,6 +98,22 @@ public class ChurchGroupController {
             return ResponseEntity.ok(churchGroupService.getMyGroup(user.getId()));
         } catch (Exception e) {
             return ResponseEntity.status(401).body(Map.of("hasGroup", false, "message", e.getMessage()));
+        }
+    }
+
+    /**
+     * GET /api/groups/mine — full list of groups the user belongs to with
+     * weekly summary (memberCount, avgScore, accuracy, lastActivityAt, myRank).
+     * Powers the multi-group /groups index page.
+     */
+    @GetMapping("/mine")
+    public ResponseEntity<?> listMyGroups(Principal principal) {
+        try {
+            User user = getUser(principal);
+            List<Map<String, Object>> groups = churchGroupService.listMyGroupsWithSummary(user.getId());
+            return ResponseEntity.ok(Map.of("success", true, "groups", groups));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
         }
     }
 
@@ -227,6 +251,24 @@ public class ChurchGroupController {
             User user = getUser(principal);
             Map<String, Object> analytics = churchGroupService.getAnalytics(id, user.getId());
             return ResponseEntity.ok(Map.of("success", true, "analytics", analytics));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
+        }
+    }
+
+    /**
+     * GET /api/groups/{id}/streak - Group streak (Option A: >=1 active member/day).
+     * Public to all members (no role gate) so member view can show it in sidebar.
+     */
+    @GetMapping("/{id}/streak")
+    public ResponseEntity<?> getGroupStreak(@PathVariable String id, Principal principal) {
+        try {
+            User user = getUser(principal);
+            // Verify membership (returns 403 via exception path below if not a member)
+            groupMemberRepository.findByGroupIdAndUserId(id, user.getId())
+                    .orElseThrow(() -> new RuntimeException("Ban khong phai thanh vien cua nhom"));
+            Map<String, Object> streak = groupStreakService.getGroupStreak(id);
+            return ResponseEntity.ok(Map.of("success", true, "streak", streak));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
         }
@@ -515,15 +557,26 @@ public class ChurchGroupController {
                 return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Quiz set chua co cau hoi nao"));
             }
 
-            Room room = roomService.createRoom(
-                    gqs.getName(), user,
-                    8, questionIds.size(), 15,
-                    Room.RoomMode.SPEED_RACE, false,
-                    Room.RoomDifficulty.MIXED, "ALL",
-                    Room.QuestionSource.CUSTOM, null);
-
-            room.setCustomQuestionIds(questionIds);
-            roomRepository.save(room);
+            // Tìm phòng đang lobby cho quiz set này — nếu có thì join chung thay vì tạo mới
+            Optional<Room> existingRoom = roomRepository.findFirstByGroupQuizSetIdAndStatus(setId, Room.RoomStatus.LOBBY);
+            Room room;
+            if (existingRoom.isPresent()) {
+                room = existingRoom.get();
+                boolean alreadyIn = roomPlayerRepository.findByRoomIdAndUserId(room.getId(), user.getId()).isPresent();
+                if (!alreadyIn) {
+                    roomService.joinRoom(room.getRoomCode(), user);
+                }
+            } else {
+                room = roomService.createRoom(
+                        gqs.getName(), user,
+                        8, questionIds.size(), 15,
+                        Room.RoomMode.SPEED_RACE, false,
+                        Room.RoomDifficulty.MIXED, "ALL",
+                        Room.QuestionSource.CUSTOM, null);
+                room.setCustomQuestionIds(questionIds);
+                room.setGroupQuizSetId(setId);
+                roomRepository.save(room);
+            }
 
             Map<String, Object> roomInfo = new LinkedHashMap<>();
             roomInfo.put("id", room.getId());

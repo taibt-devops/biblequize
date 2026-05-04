@@ -49,4 +49,7 @@ public interface RoomRepository extends JpaRepository<Room, String> {
     // Tìm phòng công khai đang lobby hoặc đang chơi (tất cả modes)
     @Query("SELECT r FROM Room r WHERE r.isPublic = true AND r.status IN ('LOBBY', 'IN_PROGRESS') ORDER BY r.createdAt DESC")
     List<Room> findPublicLobbyRooms();
+
+    // Tìm phòng đang lobby cho 1 group quiz set cụ thể (để gom nhóm vào cùng phòng)
+    Optional<Room> findFirstByGroupQuizSetIdAndStatus(String groupQuizSetId, Room.RoomStatus status);
 }

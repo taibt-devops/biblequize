@@ -4,6 +4,7 @@ import com.biblequiz.modules.quiz.entity.Question;
 import com.biblequiz.modules.quiz.entity.UserDailyProgress;
 import com.biblequiz.modules.quiz.repository.QuestionRepository;
 import com.biblequiz.modules.quiz.repository.UserDailyProgressRepository;
+import com.biblequiz.modules.quiz.service.DailyMissionService;
 import com.biblequiz.modules.user.entity.User;
 import com.biblequiz.modules.user.repository.UserRepository;
 import com.biblequiz.modules.user.service.StreakService;
@@ -34,6 +35,8 @@ public class DailyChallengeService {
     // See DECISIONS.md 2026-04-20 "Daily Challenge as secondary XP path".
     // Kept local (not app.yml) because it's a design invariant, not a tunable.
     private static final int DAILY_COMPLETION_XP = 50;
+    // Minimum correct answers (out of DAILY_QUESTION_COUNT) required to earn XP.
+    private static final int DAILY_XP_MIN_CORRECT = 4;
     private static final String CACHE_KEY_PREFIX = "daily_challenge:";
 
     @Autowired
@@ -50,6 +53,9 @@ public class DailyChallengeService {
 
     @Autowired
     private StreakService streakService;
+
+    @Autowired
+    private DailyMissionService dailyMissionService;
 
     /**
      * Get today's 5 challenge questions. Same questions for all users on the same day.
@@ -154,7 +160,9 @@ public class DailyChallengeService {
         response.put("score", payload.getOrDefault("score", 0));
         response.put("correctCount", payload.getOrDefault("correct", 0));
         response.put("totalQuestions", payload.getOrDefault("total", DAILY_QUESTION_COUNT));
-        response.put("xpEarned", DAILY_COMPLETION_XP);
+        boolean xpEarned = Boolean.TRUE.equals(payload.getOrDefault("xpEarned", false));
+        response.put("xpEarned", xpEarned ? DAILY_COMPLETION_XP : 0);
+        response.put("xpMinCorrect", DAILY_XP_MIN_CORRECT);
         response.put("completedAt", payload.get("completedAt"));
         // ISO-8601 instant — FE parses with new Date(...) for the countdown.
         response.put("nextResetAt", LocalDate.now(ZoneOffset.UTC)
@@ -180,11 +188,13 @@ public class DailyChallengeService {
     public void markCompleted(String userId, int score, int correctCount) {
         String dateStr = LocalDate.now(ZoneOffset.UTC).toString();
         String key = CACHE_KEY_PREFIX + "completed:" + userId + ":" + dateStr;
-        Map<String, Object> result = Map.of(
-                "score", score,
-                "correct", correctCount,
-                "total", DAILY_QUESTION_COUNT,
-                "completedAt", System.currentTimeMillis());
+        boolean xpEarned = correctCount >= DAILY_XP_MIN_CORRECT;
+        Map<String, Object> result = new java.util.HashMap<>();
+        result.put("score", score);
+        result.put("correct", correctCount);
+        result.put("total", DAILY_QUESTION_COUNT);
+        result.put("completedAt", System.currentTimeMillis());
+        result.put("xpEarned", xpEarned);
         cacheService.put(key, result, java.time.Duration.ofHours(48));
 
         User user = userRepository.findById(userId)
@@ -195,7 +205,12 @@ public class DailyChallengeService {
             return;
         }
 
-        creditCompletionXp(user);
+        if (xpEarned) {
+            creditCompletionXp(user);
+        } else {
+            log.info("Daily completion: user={} scored {}/{} — below threshold {}, XP not credited",
+                    userId, correctCount, DAILY_QUESTION_COUNT, DAILY_XP_MIN_CORRECT);
+        }
 
         // Daily completion extends streak (idempotent: StreakService skips
         // when lastPlayedAt is today). See DECISIONS.md "Daily extends streak".
@@ -204,6 +219,14 @@ public class DailyChallengeService {
         } catch (RuntimeException ex) {
             log.warn("Daily completion: streak update failed for user {} ({}). " +
                     "Cache + XP already credited; streak skipped.", user.getId(), ex.getMessage());
+        }
+
+        // Mark "complete_daily_challenge" mission as done.
+        try {
+            dailyMissionService.trackProgress(user.getId(), "complete_daily_challenge", 1);
+        } catch (RuntimeException ex) {
+            log.warn("Daily completion: mission tracking failed for user {} ({}). " +
+                    "Cache + XP already credited; mission skipped.", user.getId(), ex.getMessage());
         }
     }
 
@@ -237,5 +260,24 @@ public class DailyChallengeService {
 
     public int getDailyQuestionCount() {
         return DAILY_QUESTION_COUNT;
+    }
+
+    /**
+     * Check a single answer for a daily challenge question.
+     * Returns isCorrect, correctAnswer indices, and explanation.
+     * Used by the dedicated /api/daily-challenge/answer endpoint so the
+     * frontend does not need a real QuizSession (daily sessions are
+     * client-side tracking IDs only).
+     */
+    public Map<String, Object> checkAnswer(String questionId, int selectedAnswer) {
+        Question question = questionRepository.findById(questionId)
+                .orElseThrow(() -> new IllegalArgumentException("Question not found: " + questionId));
+        List<Integer> correctAnswer = question.getCorrectAnswer();
+        boolean isCorrect = correctAnswer != null && correctAnswer.contains(selectedAnswer);
+        Map<String, Object> result = new LinkedHashMap<>();
+        result.put("isCorrect", isCorrect);
+        result.put("correctAnswer", correctAnswer != null ? correctAnswer : List.of());
+        result.put("explanation", question.getExplanation());
+        return result;
     }
 }

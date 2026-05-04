@@ -1,7 +1,15 @@
 package com.biblequiz.api;
 
+import com.biblequiz.modules.adminai.AIGenerationService;
+import com.biblequiz.modules.group.repository.ChurchGroupRepository;
+import com.biblequiz.modules.group.repository.GroupMemberRepository;
 import com.biblequiz.modules.group.repository.GroupQuizSetRepository;
 import com.biblequiz.modules.group.service.ChurchGroupService;
+import com.biblequiz.modules.group.service.GroupStreakService;
+import com.biblequiz.modules.quiz.repository.QuestionRepository;
+import com.biblequiz.modules.room.repository.RoomPlayerRepository;
+import com.biblequiz.modules.room.repository.RoomRepository;
+import com.biblequiz.modules.room.service.RoomService;
 import com.biblequiz.modules.user.entity.User;
 import com.biblequiz.modules.user.repository.UserRepository;
 
@@ -29,7 +37,31 @@ class ChurchGroupControllerTest extends BaseControllerTest {
     private ChurchGroupService churchGroupService;
 
     @MockBean
+    private GroupStreakService groupStreakService;
+
+    @MockBean
     private GroupQuizSetRepository groupQuizSetRepository;
+
+    @MockBean
+    private ChurchGroupRepository churchGroupRepository;
+
+    @MockBean
+    private GroupMemberRepository groupMemberRepository;
+
+    @MockBean
+    private QuestionRepository questionRepository;
+
+    @MockBean
+    private AIGenerationService aiGenerationService;
+
+    @MockBean
+    private RoomService roomService;
+
+    @MockBean
+    private RoomRepository roomRepository;
+
+    @MockBean
+    private RoomPlayerRepository roomPlayerRepository;
 
     @MockBean
     private UserRepository userRepository;

@@ -149,6 +149,79 @@ public class ChurchGroupService {
         return result;
     }
 
+    /**
+     * List ALL groups the user belongs to with embedded weekly summary
+     * (memberCount, avgScore, accuracy, activeWeek, lastActivityAt, myRank).
+     * Powers the multi-group /groups index page. Stats are NOT role-gated —
+     * any member can see the group's basic weekly numbers.
+     */
+    public List<Map<String, Object>> listMyGroupsWithSummary(String userId) {
+        List<GroupMember> memberships = groupMemberRepository.findByUserId(userId);
+        if (memberships.isEmpty()) return new ArrayList<>();
+
+        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate weekStart = today.minusDays(6);
+
+        List<Map<String, Object>> result = new ArrayList<>();
+        for (GroupMember mySeat : memberships) {
+            ChurchGroup group = mySeat.getGroup();
+            List<GroupMember> members = groupMemberRepository.findByGroupId(group.getId());
+
+            long totalPoints = 0;
+            long totalQuestions = 0;
+            int activeMembers = 0;
+            int myWeekPoints = 0;
+            List<Integer> memberWeekPoints = new ArrayList<>();
+            LocalDateTime maxActivity = null;
+
+            for (GroupMember m : members) {
+                String mUserId = m.getUser().getId();
+                if (m.getLastActiveAt() != null
+                        && (maxActivity == null || m.getLastActiveAt().isAfter(maxActivity))) {
+                    maxActivity = m.getLastActiveAt();
+                }
+                int memberPts = 0;
+                int memberQs = 0;
+                for (UserDailyProgress udp : udpRepository.findByUserIdAndDateBetween(mUserId, weekStart, today)) {
+                    memberPts += udp.getPointsCounted() != null ? udp.getPointsCounted() : 0;
+                    memberQs += udp.getQuestionsCounted() != null ? udp.getQuestionsCounted() : 0;
+                }
+                if (memberQs > 0) activeMembers++;
+                totalPoints += memberPts;
+                totalQuestions += memberQs;
+                memberWeekPoints.add(memberPts);
+                if (mUserId.equals(userId)) myWeekPoints = memberPts;
+            }
+
+            int avgScore = activeMembers > 0
+                    ? (int) Math.round((double) totalPoints / activeMembers)
+                    : 0;
+            int accuracy = totalQuestions > 0
+                    ? (int) Math.min(100, Math.round((double) totalPoints / (totalQuestions * 10) * 100))
+                    : 0;
+            final int myPoints = myWeekPoints;
+            long myRank = 1 + memberWeekPoints.stream().filter(p -> p > myPoints).count();
+
+            Map<String, Object> entry = new LinkedHashMap<>();
+            entry.put("id", group.getId());
+            entry.put("name", group.getName());
+            entry.put("description", group.getDescription());
+            entry.put("avatarUrl", group.getAvatarUrl());
+            entry.put("code", group.getGroupCode());
+            entry.put("isPublic", group.getIsPublic());
+            entry.put("role", mySeat.getRole().name());
+            entry.put("memberCount", members.size());
+            entry.put("avgScore", avgScore);
+            entry.put("accuracy", accuracy);
+            entry.put("activeWeek", activeMembers);
+            entry.put("lastActivityAt", maxActivity);
+            entry.put("myWeekPoints", myWeekPoints);
+            entry.put("myRank", (int) myRank);
+            result.add(entry);
+        }
+        return result;
+    }
+
     public Map<String, Object> getGroupDetails(String groupId) {
         ChurchGroup group = churchGroupRepository.findById(groupId)
                 .orElseThrow(() -> new RuntimeException("Nhom khong ton tai"));

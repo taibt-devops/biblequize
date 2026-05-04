@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BibleQuiz · /groups Mobile (mockup)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #0a0b13;
+    color: #f3f4f6;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    padding: 40px 20px 60px;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    font-size: inherit;
+    vertical-align: middle;
+  }
+
+  /* Page heading for review */
+  .review-header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .review-header h1 {
+    font-size: 22px; font-weight: 800;
+    background: linear-gradient(135deg, #e8a832 0%, #fbbf24 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+  }
+  .review-header p { color: #9ca3af; font-size: 13px; }
+
+  /* Phone frames container */
+  .phones {
+    display: flex; gap: 32px; justify-content: center;
+    flex-wrap: wrap;
+  }
+  .phone-wrap {
+    display: flex; flex-direction: column; align-items: center; gap: 14px;
+  }
+  .phone-label {
+    background: rgba(50,52,64,0.6);
+    border: 1px solid rgba(232,168,50,0.25);
+    color: #e8a832;
+    padding: 6px 14px; border-radius: 20px;
+    font-size: 12px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .phone {
+    width: 390px;
+    height: 844px;
+    background: #11131e;
+    border-radius: 44px;
+    border: 8px solid #1f2030;
+    box-shadow:
+      0 0 0 2px #0a0b13,
+      0 30px 80px rgba(0,0,0,0.6),
+      0 8px 24px rgba(232,168,50,0.05);
+    overflow: hidden;
+    position: relative;
+    display: flex; flex-direction: column;
+  }
+
+  /* Phone status bar */
+  .status-bar {
+    height: 44px;
+    padding: 12px 28px 0;
+    display: flex; justify-content: space-between; align-items: flex-start;
+    font-size: 14px; font-weight: 600;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
+  }
+  .status-bar .time { color: #f3f4f6; }
+  .status-bar .icons {
+    display: flex; gap: 6px; align-items: center;
+    color: #f3f4f6; font-size: 13px;
+  }
+  /* Notch */
+  .phone::before {
+    content: '';
+    position: absolute; top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 120px; height: 30px;
+    background: #0a0b13;
+    border-radius: 0 0 18px 18px;
+    z-index: 11;
+  }
+
+  /* App content area */
+  .app-content {
+    flex: 1;
+    display: flex; flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 84px; /* room for bottom nav */
+  }
+  .app-content::-webkit-scrollbar { display: none; }
+
+  /* App top bar */
+  .app-topbar {
+    padding: 8px 20px 12px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-shrink: 0;
+  }
+  .app-brand {
+    font-size: 17px; font-weight: 800;
+    background: linear-gradient(135deg, #e8a832 0%, #fbbf24 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .app-bell {
+    width: 36px; height: 36px; border-radius: 10px;
+    background: rgba(50,52,64,0.5);
+    display: grid; place-items: center;
+    color: #e8a832; font-size: 18px;
+    position: relative;
+  }
+  .app-bell::after {
+    content: '9+'; position: absolute; top: -2px; right: -2px;
+    background: #e8a832; color: #11131e; font-size: 9px; font-weight: 800;
+    padding: 2px 5px; border-radius: 8px;
+  }
+
+  /* Page header */
+  .page-header {
+    padding: 4px 20px 20px;
+  }
+  .page-header h2 {
+    font-size: 24px; font-weight: 800; letter-spacing: -0.3px;
+    margin-bottom: 4px;
+  }
+  .page-header p {
+    color: #9ca3af; font-size: 13px; line-height: 1.45;
+  }
+
+  /* Quick action card */
+  .quick-action {
+    margin: 0 20px 24px;
+    background: rgba(50,52,64,0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(232,168,50,0.15);
+    border-radius: 16px;
+    padding: 16px;
+  }
+  .quick-action-row {
+    display: flex; gap: 10px; align-items: center;
+    margin-bottom: 12px;
+  }
+  .quick-action-icon {
+    width: 38px; height: 38px; border-radius: 10px;
+    background: linear-gradient(135deg, rgba(232,168,50,0.2) 0%, rgba(217,119,6,0.1) 100%);
+    border: 1px solid rgba(232,168,50,0.3);
+    display: grid; place-items: center;
+    color: #e8a832; font-size: 18px;
+    flex-shrink: 0;
+  }
+  .quick-action-label {
+    font-size: 13px; font-weight: 700; color: #f3f4f6;
+  }
+  .quick-action-hint {
+    font-size: 11px; color: #9ca3af; margin-top: 1px;
+  }
+  .quick-input-row {
+    display: flex; gap: 8px;
+  }
+  .quick-input {
+    flex: 1;
+    background: rgba(17,19,30,0.6);
+    border: 1px solid rgba(232,168,50,0.15);
+    border-radius: 10px;
+    padding: 11px 14px;
+    color: #f3f4f6; font-family: inherit; font-size: 13px;
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  .quick-input::placeholder {
+    color: #6b7280; letter-spacing: normal;
+    text-transform: none; font-size: 12px;
+  }
+  .quick-input:focus { outline: none; border-color: #e8a832; }
+  .btn-secondary {
+    background: rgba(232,168,50,0.15);
+    color: #e8a832;
+    border: 1px solid rgba(232,168,50,0.3);
+    padding: 11px 16px; border-radius: 10px;
+    font-family: inherit; font-size: 13px; font-weight: 700;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .quick-create-link {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 12px; color: #9ca3af;
+  }
+  .quick-create-link a {
+    color: #e8a832; font-weight: 600; text-decoration: none;
+  }
+
+  /* Section heading */
+  .section-heading {
+    padding: 0 20px 12px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .section-heading-left {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 14px; font-weight: 700;
+  }
+  .section-heading-left .material-symbols-outlined {
+    font-size: 18px; color: #e8a832;
+  }
+  .section-heading-left .count {
+    color: #e8a832; font-size: 12px;
+    background: rgba(232,168,50,0.12);
+    padding: 2px 8px; border-radius: 8px;
+    font-weight: 700;
+  }
+  .section-heading-action {
+    color: #9ca3af; font-size: 12px; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 3px;
+  }
+
+  /* Group card mobile */
+  .group-card {
+    margin: 0 20px 12px;
+    background: rgba(50,52,64,0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(232,168,50,0.1);
+    border-radius: 16px;
+    padding: 16px;
+    cursor: pointer;
+    position: relative; overflow: hidden;
+  }
+  .group-card.leader::before {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(232,168,50,0.06) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  .gc-top {
+    display: flex; gap: 12px; align-items: flex-start;
+    margin-bottom: 14px;
+  }
+  .gc-avatar {
+    width: 48px; height: 48px; border-radius: 12px;
+    background: linear-gradient(135deg, rgba(232,168,50,0.2) 0%, rgba(217,119,6,0.1) 100%);
+    border: 1px solid rgba(232,168,50,0.25);
+    display: grid; place-items: center;
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+  .gc-info { flex: 1; min-width: 0; }
+  .gc-name-row {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 4px;
+  }
+  .gc-name {
+    font-size: 15px; font-weight: 700;
+    flex: 1; min-width: 0;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .role-badge {
+    display: inline-flex; align-items: center; gap: 3px;
+    padding: 3px 7px; border-radius: 6px;
+    font-size: 9px; font-weight: 800; text-transform: uppercase;
+    letter-spacing: 0.4px;
+    flex-shrink: 0;
+  }
+  .role-badge.leader {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+  }
+  .role-badge.member {
+    background: rgba(74,222,128,0.12);
+    color: #4ade80;
+    border: 1px solid rgba(74,222,128,0.25);
+  }
+  .gc-desc {
+    font-size: 12px; color: #9ca3af; line-height: 1.4;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .gc-stats {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    background: rgba(17,19,30,0.4);
+    border-radius: 10px;
+    padding: 10px 8px;
+    margin-bottom: 12px;
+  }
+  .gc-stat {
+    text-align: center;
+    border-right: 1px solid rgba(232,168,50,0.06);
+  }
+  .gc-stat:last-child { border-right: none; }
+  .gc-stat-v {
+    font-size: 16px; font-weight: 800; color: #e8a832;
+  }
+  .gc-stat-l {
+    font-size: 9px; color: #9ca3af; text-transform: uppercase;
+    letter-spacing: 0.5px; margin-top: 1px;
+  }
+  .gc-footer {
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 11px; color: #6b7280;
+  }
+  .gc-activity {
+    display: inline-flex; align-items: center; gap: 5px;
+  }
+  .gc-activity-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #4ade80;
+  }
+  .gc-code {
+    color: #9ca3af; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 3px;
+  }
+  .gc-rank {
+    color: #e8a832; font-weight: 700;
+  }
+
+  /* Public groups horizontal scroll */
+  .public-scroll {
+    display: flex; gap: 12px;
+    padding: 0 20px 4px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .public-scroll::-webkit-scrollbar { display: none; }
+  .public-card {
+    flex: 0 0 240px;
+    scroll-snap-align: start;
+    background: rgba(50,52,64,0.3);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 14px;
+  }
+  .pc-top {
+    display: flex; gap: 10px; align-items: center; margin-bottom: 10px;
+  }
+  .pc-avatar {
+    width: 38px; height: 38px; border-radius: 10px;
+    background: rgba(232,168,50,0.1);
+    display: grid; place-items: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .pc-info { flex: 1; min-width: 0; }
+  .pc-name {
+    font-size: 13px; font-weight: 700;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .pc-members {
+    font-size: 10px; color: #9ca3af; margin-top: 2px;
+    display: inline-flex; align-items: center; gap: 3px;
+  }
+  .pc-desc {
+    font-size: 11px; color: #9ca3af; line-height: 1.5; margin-bottom: 12px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 33px;
+  }
+  .pc-join {
+    width: 100%;
+    background: rgba(232,168,50,0.1);
+    color: #e8a832;
+    border: 1px solid rgba(232,168,50,0.25);
+    padding: 7px; border-radius: 8px;
+    font-family: inherit; font-size: 11px; font-weight: 700;
+    cursor: pointer;
+  }
+
+  /* Empty state */
+  .empty {
+    margin: 8px 20px 24px;
+    background: rgba(50,52,64,0.3);
+    border: 1px dashed rgba(232,168,50,0.25);
+    border-radius: 20px;
+    padding: 36px 24px;
+    text-align: center;
+  }
+  .empty-icon {
+    width: 72px; height: 72px; border-radius: 50%;
+    background: rgba(232,168,50,0.08);
+    display: grid; place-items: center;
+    margin: 0 auto 18px;
+    font-size: 36px; color: #e8a832;
+  }
+  .empty h3 {
+    font-size: 18px; font-weight: 700; margin-bottom: 10px;
+  }
+  .empty p {
+    font-size: 13px; color: #9ca3af; line-height: 1.55;
+    margin-bottom: 22px;
+  }
+  .btn-primary-full {
+    width: 100%;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e; border: none;
+    padding: 13px 18px; border-radius: 12px;
+    font-family: inherit; font-size: 14px; font-weight: 800;
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+    box-shadow: 0 4px 16px rgba(232,168,50,0.3);
+    margin-bottom: 10px;
+  }
+  .btn-secondary-full {
+    width: 100%;
+    background: rgba(232,168,50,0.1);
+    color: #e8a832;
+    border: 1px solid rgba(232,168,50,0.3);
+    padding: 12px 18px; border-radius: 12px;
+    font-family: inherit; font-size: 13px; font-weight: 700;
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  }
+
+  /* Bottom nav (Hướng 3) */
+  .bottom-nav {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(13,15,23,0.95);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(232,168,50,0.1);
+    padding: 10px 16px 24px;
+    display: flex; justify-content: space-around; align-items: center;
+    z-index: 20;
+  }
+  .nav-item {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    display: grid; place-items: center;
+    color: #6b7280; font-size: 22px;
+    cursor: pointer; transition: color 0.2s;
+  }
+  .nav-item:hover { color: #9ca3af; }
+  .nav-item.active {
+    width: auto; padding: 0 16px;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 13px; font-weight: 800;
+    box-shadow: 0 4px 12px rgba(232,168,50,0.3);
+  }
+  .nav-item.active .material-symbols-outlined { font-size: 20px; }
+  .nav-label { font-size: 13px; font-weight: 800; }
+
+  /* FAB */
+  .fab {
+    position: absolute;
+    bottom: 96px; right: 16px;
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    display: grid; place-items: center;
+    color: #11131e; font-size: 28px;
+    box-shadow: 0 8px 24px rgba(232,168,50,0.4);
+    cursor: pointer;
+    z-index: 15;
+  }
+
+  /* Annotation block */
+  .annotation {
+    margin: 50px auto 0;
+    max-width: 880px;
+    padding: 24px 28px;
+    background: rgba(96,165,250,0.06);
+    border: 1px solid rgba(96,165,250,0.2);
+    border-radius: 16px;
+    color: #93c5fd;
+    font-size: 13px; line-height: 1.7;
+  }
+  .annotation strong { color: #60a5fa; }
+  .annotation code {
+    background: rgba(17,19,30,0.6); padding: 2px 6px;
+    border-radius: 4px; font-size: 12px;
+  }
+  .annotation ul { margin: 8px 0 0 20px; }
+  .annotation li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<div class="review-header">
+  <h1>Trang /groups · Mobile</h1>
+  <p>2 state cạnh nhau để review · 390 × 844 (iPhone 14 Pro)</p>
+</div>
+
+<div class="phones">
+
+  <!-- ============================================ -->
+  <!-- PHONE 1: HAS GROUPS                          -->
+  <!-- ============================================ -->
+  <div class="phone-wrap">
+    <div class="phone-label">State A · Có nhóm</div>
+    <div class="phone">
+
+      <!-- Status bar -->
+      <div class="status-bar">
+        <div class="time">9:41</div>
+        <div class="icons">
+          <span class="material-symbols-outlined" style="font-size:14px">network_cell</span>
+          <span class="material-symbols-outlined" style="font-size:14px">wifi</span>
+          <span class="material-symbols-outlined" style="font-size:14px">battery_full</span>
+        </div>
+      </div>
+
+      <!-- App content -->
+      <div class="app-content">
+
+        <div class="app-topbar">
+          <div class="app-brand">Bible Quiz</div>
+          <div class="app-bell">
+            <span class="material-symbols-outlined">notifications</span>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h2>Nhóm Hội Thánh</h2>
+          <p>Học Lời Chúa cùng anh chị em</p>
+        </div>
+
+        <!-- Quick action -->
+        <div class="quick-action">
+          <div class="quick-action-row">
+            <div class="quick-action-icon">
+              <span class="material-symbols-outlined">key</span>
+            </div>
+            <div>
+              <div class="quick-action-label">Tham gia bằng mã</div>
+              <div class="quick-action-hint">Nhập 6 ký tự từ trưởng nhóm</div>
+            </div>
+          </div>
+          <div class="quick-input-row">
+            <input class="quick-input" placeholder="Ví dụ: NVH0S9" maxlength="6">
+            <button class="btn-secondary">Vào</button>
+          </div>
+        </div>
+
+        <!-- My Groups section -->
+        <div class="section-heading">
+          <div class="section-heading-left">
+            <span class="material-symbols-outlined">church</span>
+            Nhóm của bạn
+            <span class="count">2</span>
+          </div>
+        </div>
+
+        <!-- Group 1: Leader -->
+        <div class="group-card leader">
+          <div class="gc-top">
+            <div class="gc-avatar">⛪</div>
+            <div class="gc-info">
+              <div class="gc-name-row">
+                <div class="gc-name">FMC Đà Nẵng</div>
+                <span class="role-badge leader">
+                  <span class="material-symbols-outlined" style="font-size:10px">workspace_premium</span>
+                  Trưởng
+                </span>
+              </div>
+              <div class="gc-desc">Hội Thánh Tin Lành Methodist Đà Nẵng — học Kinh Thánh hàng tuần</div>
+            </div>
+          </div>
+          <div class="gc-stats">
+            <div class="gc-stat">
+              <div class="gc-stat-v">2</div>
+              <div class="gc-stat-l">Tviên</div>
+            </div>
+            <div class="gc-stat">
+              <div class="gc-stat-v">189</div>
+              <div class="gc-stat-l">Điểm TB</div>
+            </div>
+            <div class="gc-stat">
+              <div class="gc-stat-v">41%</div>
+              <div class="gc-stat-l">Chính xác</div>
+            </div>
+          </div>
+          <div class="gc-footer">
+            <span class="gc-activity">
+              <span class="gc-activity-dot"></span>
+              Hoạt động hôm nay
+            </span>
+            <span class="gc-code">
+              <span class="material-symbols-outlined" style="font-size:12px">key</span>
+              NVH0S9
+            </span>
+          </div>
+        </div>
+
+        <!-- Group 2: Member -->
+        <div class="group-card">
+          <div class="gc-top">
+            <div class="gc-avatar">📖</div>
+            <div class="gc-info">
+              <div class="gc-name-row">
+                <div class="gc-name">SV Tin Lành Hà Nội</div>
+                <span class="role-badge member">Tviên</span>
+              </div>
+              <div class="gc-desc">Nhóm sinh viên các trường ĐH miền Bắc — gặp thứ Bảy hàng tuần</div>
+            </div>
+          </div>
+          <div class="gc-stats">
+            <div class="gc-stat">
+              <div class="gc-stat-v">47</div>
+              <div class="gc-stat-l">Tviên</div>
+            </div>
+            <div class="gc-stat">
+              <div class="gc-stat-v">324</div>
+              <div class="gc-stat-l">Điểm TB</div>
+            </div>
+            <div class="gc-stat">
+              <div class="gc-stat-v">68%</div>
+              <div class="gc-stat-l">Chính xác</div>
+            </div>
+          </div>
+          <div class="gc-footer">
+            <span class="gc-activity">
+              <span class="gc-activity-dot"></span>
+              2 giờ trước
+            </span>
+            <span class="gc-rank">Hạng #12 / 47</span>
+          </div>
+        </div>
+
+        <!-- Public Groups -->
+        <div class="section-heading" style="margin-top:16px">
+          <div class="section-heading-left">
+            <span class="material-symbols-outlined" style="color:#60a5fa">explore</span>
+            Khám phá
+          </div>
+          <span class="section-heading-action">
+            Xem tất cả
+            <span class="material-symbols-outlined" style="font-size:13px">arrow_forward</span>
+          </span>
+        </div>
+
+        <div class="public-scroll">
+          <div class="public-card">
+            <div class="pc-top">
+              <div class="pc-avatar">✝️</div>
+              <div class="pc-info">
+                <div class="pc-name">FMC Sài Gòn</div>
+                <div class="pc-members">
+                  <span class="material-symbols-outlined" style="font-size:11px">group</span>
+                  124 thành viên
+                </div>
+              </div>
+            </div>
+            <div class="pc-desc">HT Methodist Sài Gòn — chào đón anh chị em mọi vùng miền</div>
+            <button class="pc-join">+ Tham gia</button>
+          </div>
+
+          <div class="public-card">
+            <div class="pc-top">
+              <div class="pc-avatar">🔥</div>
+              <div class="pc-info">
+                <div class="pc-name">Thanh niên Tin Lành</div>
+                <div class="pc-members">
+                  <span class="material-symbols-outlined" style="font-size:11px">group</span>
+                  203 thành viên
+                </div>
+              </div>
+            </div>
+            <div class="pc-desc">Cộng đồng 18–30 tuổi — thi đấu hàng tuần, lên tier nhanh</div>
+            <button class="pc-join">+ Tham gia</button>
+          </div>
+
+          <div class="public-card">
+            <div class="pc-top">
+              <div class="pc-avatar">📚</div>
+              <div class="pc-info">
+                <div class="pc-name">Học Tân Ước</div>
+                <div class="pc-members">
+                  <span class="material-symbols-outlined" style="font-size:11px">group</span>
+                  89 thành viên
+                </div>
+              </div>
+            </div>
+            <div class="pc-desc">Nhóm chuyên đề 27 sách Tân Ước — Phúc Âm, Thư Tín</div>
+            <button class="pc-join">+ Tham gia</button>
+          </div>
+
+          <div class="public-card">
+            <div class="pc-top">
+              <div class="pc-avatar">🌅</div>
+              <div class="pc-info">
+                <div class="pc-name">Đọc KT mỗi sáng</div>
+                <div class="pc-members">
+                  <span class="material-symbols-outlined" style="font-size:11px">group</span>
+                  56 thành viên
+                </div>
+              </div>
+            </div>
+            <div class="pc-desc">Cùng nhau đọc và quiz mỗi sáng — duy trì thói quen</div>
+            <button class="pc-join">+ Tham gia</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FAB -->
+      <div class="fab">
+        <span class="material-symbols-outlined">add</span>
+      </div>
+
+      <!-- Bottom nav -->
+      <div class="bottom-nav">
+        <div class="nav-item">
+          <span class="material-symbols-outlined">home</span>
+        </div>
+        <div class="nav-item">
+          <span class="material-symbols-outlined">leaderboard</span>
+        </div>
+        <div class="nav-item active">
+          <span class="material-symbols-outlined">groups</span>
+          <span class="nav-label">Nhóm</span>
+        </div>
+        <div class="nav-item">
+          <span class="material-symbols-outlined">person</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ============================================ -->
+  <!-- PHONE 2: EMPTY STATE                         -->
+  <!-- ============================================ -->
+  <div class="phone-wrap">
+    <div class="phone-label">State B · Chưa có nhóm</div>
+    <div class="phone">
+
+      <div class="status-bar">
+        <div class="time">9:41</div>
+        <div class="icons">
+          <span class="material-symbols-outlined" style="font-size:14px">network_cell</span>
+          <span class="material-symbols-outlined" style="font-size:14px">wifi</span>
+          <span class="material-symbols-outlined" style="font-size:14px">battery_full</span>
+        </div>
+      </div>
+
+      <div class="app-content">
+
+        <div class="app-topbar">
+          <div class="app-brand">Bible Quiz</div>
+          <div class="app-bell">
+            <span class="material-symbols-outlined">notifications</span>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h2>Nhóm Hội Thánh</h2>
+          <p>Học Lời Chúa cùng anh chị em</p>
+        </div>
+
+        <!-- Empty hero -->
+        <div class="empty">
+          <div class="empty-icon">
+            <span class="material-symbols-outlined" style="font-size:42px">church</span>
+          </div>
+          <h3>Bạn chưa tham gia nhóm nào</h3>
+          <p>
+            Nhóm Hội Thánh giúp bạn học Kinh Thánh cùng anh chị em — thi đua điểm số,
+            cùng giữ chuỗi liên tục, động viên nhau mỗi ngày.
+          </p>
+          <button class="btn-primary-full">
+            <span class="material-symbols-outlined">add</span>
+            Tạo nhóm của tôi
+          </button>
+          <button class="btn-secondary-full">
+            <span class="material-symbols-outlined">key</span>
+            Tham gia bằng mã
+          </button>
+        </div>
+
+        <!-- Public Groups (empty state cũng cần discovery) -->
+        <div class="section-heading">
+          <div class="section-heading-left">
+            <span class="material-symbols-outlined" style="color:#60a5fa">explore</span>
+            Hoặc khám phá nhóm
+          </div>
+          <span class="section-heading-action">
+            Xem tất cả
+            <span class="material-symbols-outlined" style="font-size:13px">arrow_forward</span>
+          </span>
+        </div>
+
+        <div class="public-scroll">
+          <div class="public-card">
+            <div class="pc-top">
+              <div class="pc-avatar">✝️</div>
+              <div class="pc-info">
+                <div class="pc-name">FMC Sài Gòn</div>
+                <div class="pc-members">
+                  <span class="material-symbols-outlined" style="font-size:11px">group</span>
+                  124 thành viên
+                </div>
+              </div>
+            </div>
+            <div class="pc-desc">HT Methodist Sài Gòn — chào đón anh chị em mọi vùng miền</div>
+            <button class="pc-join">+ Tham gia</button>
+          </div>
+
+          <div class="public-card">
+            <div class="pc-top">
+              <div class="pc-avatar">🔥</div>
+              <div class="pc-info">
+                <div class="pc-name">Thanh niên Tin Lành</div>
+                <div class="pc-members">
+                  <span class="material-symbols-outlined" style="font-size:11px">group</span>
+                  203 thành viên
+                </div>
+              </div>
+            </div>
+            <div class="pc-desc">Cộng đồng 18–30 tuổi — thi đấu hàng tuần</div>
+            <button class="pc-join">+ Tham gia</button>
+          </div>
+
+          <div class="public-card">
+            <div class="pc-top">
+              <div class="pc-avatar">📚</div>
+              <div class="pc-info">
+                <div class="pc-name">Học Tân Ước</div>
+                <div class="pc-members">
+                  <span class="material-symbols-outlined" style="font-size:11px">group</span>
+                  89 thành viên
+                </div>
+              </div>
+            </div>
+            <div class="pc-desc">Nhóm chuyên đề 27 sách Tân Ước</div>
+            <button class="pc-join">+ Tham gia</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom nav -->
+      <div class="bottom-nav">
+        <div class="nav-item">
+          <span class="material-symbols-outlined">home</span>
+        </div>
+        <div class="nav-item">
+          <span class="material-symbols-outlined">leaderboard</span>
+        </div>
+        <div class="nav-item active">
+          <span class="material-symbols-outlined">groups</span>
+          <span class="nav-label">Nhóm</span>
+        </div>
+        <div class="nav-item">
+          <span class="material-symbols-outlined">person</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Annotation -->
+<div class="annotation">
+  <strong>📝 Ghi chú thiết kế mobile</strong>
+
+  <p style="margin-top:12px"><strong>Khác biệt so với desktop:</strong></p>
+  <ul>
+    <li><strong>Sidebar → Top bar + Bottom nav</strong> — top bar chỉ có brand + notification bell, primary nav xuống bottom (Hướng 3: icon-only inactive, pill+label active).</li>
+    <li><strong>Header gọn hơn</strong> — bỏ nút "Tạo nhóm" inline, thay bằng <strong>FAB</strong> floating ở góc phải dưới (chỉ ở state có nhóm — empty state không cần FAB vì đã có 2 button to trong empty hero).</li>
+    <li><strong>Quick action card</strong> — input + nút "Vào" trên cùng row thay vì tách riêng. Compact hơn.</li>
+    <li><strong>Group cards</strong> — vertical layout thay vì horizontal grid. Avatar 48px (so với 56px desktop), name + role badge cùng dòng, description xuống dòng dưới. Stats grid 3 cột giữ nguyên (compact đủ ở 358px width).</li>
+    <li><strong>Public groups</strong> — horizontal scroll-snap thay vì grid. Mỗi card 240px, hint card thứ 2 lú ra mép phải để báo hiệu có thể swipe.</li>
+    <li><strong>Stat label</strong> rút gọn: "Thành viên" → "Tviên" để tiết kiệm width.</li>
+    <li><strong>Role badge</strong> "Thành viên" → "Tviên" cùng lý do.</li>
+  </ul>
+
+  <p style="margin-top:12px"><strong>Bottom nav (Hướng 3 đã chốt):</strong></p>
+  <ul>
+    <li>Inactive: icon 22px, color #6b7280, 44×44 hit target.</li>
+    <li>Active: pill gradient gold, icon + label, padding ngang 16px, gold shadow.</li>
+    <li>4 mục: Home · Leaderboard · <strong>Groups (active)</strong> · Profile.</li>
+  </ul>
+
+  <p style="margin-top:12px"><strong>Empty state mobile:</strong></p>
+  <ul>
+    <li>Empty hero <em>không có FAB</em> — 2 button full-width đã đủ rõ.</li>
+    <li>Public groups discovery vẫn hiện bên dưới — heading "Hoặc khám phá nhóm" kết nối với hero.</li>
+  </ul>
+
+  <p style="margin-top:12px"><strong>Touch targets:</strong> Tất cả interactive elements ≥ 44×44px. Group card chỉ tap toàn card → navigate <code>/groups/:id</code>. Public card có nút Tham gia riêng (44px tall).</p>
+
+  <p style="margin-top:12px"><strong>Scroll behavior:</strong> Page scroll vertical, public groups horizontal nested scroll với scroll-snap. Bottom nav fixed, FAB fixed.</p>
+</div>
+
+</body>
+</html>

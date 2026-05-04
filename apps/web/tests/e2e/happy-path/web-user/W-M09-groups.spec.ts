@@ -535,4 +535,99 @@ test.describe('W-M09 Church Groups — L2 Happy Path @happy-path @groups', () =>
     expect(status).toBe(404)
   })
 
+  test('W-M09-L2-013: Two members playing same quiz set join the same room @write @serial @critical', async ({
+    testApi,
+  }) => {
+    const token3 = await loginAndGetToken(TEST3_EMAIL)
+    const token4 = await loginAndGetToken(TEST4_EMAIL)
+
+    // ============================================================
+    // SECTION 1: SETUP — group with 2 members + quiz set
+    // ============================================================
+
+    // Pre-cleanup: test4 may be stuck in a group from a previous failed run
+    const me4Res = await fetch(`${BASE_URL}/api/groups/me`, { headers: { Authorization: `Bearer ${token4}` } })
+    const me4 = await me4Res.json()
+    if (me4.hasGroup && me4.groupId) {
+      await fetch(`${BASE_URL}/api/groups/${me4.groupId}/leave`, { method: 'DELETE', headers: { Authorization: `Bearer ${token4}` } })
+    }
+
+    // Create group (response: { success, group: { id, name, code, memberCount } })
+    const createGroupRes = await fetch(`${BASE_URL}/api/groups`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token3}` },
+      body: JSON.stringify({ name: 'E2E Quiz Set Group', description: 'test', language: 'vi' }),
+    })
+    const createGroupBody = await createGroupRes.json()
+    expect(createGroupRes.ok, `createGroup failed: ${JSON.stringify(createGroupBody)}`).toBe(true)
+    const groupId: string = createGroupBody.group.id
+    const joinCode: string = createGroupBody.group.code
+    expect(groupId).toBeTruthy()
+    expect(joinCode).toBeTruthy()
+
+    // test4 joins the group (endpoint expects field "code" or "groupCode")
+    const joinRes = await fetch(`${BASE_URL}/api/groups/join`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token4}` },
+      body: JSON.stringify({ code: joinCode }),
+    })
+    const joinBody = await joinRes.clone().text()
+    expect(joinRes.ok, `join failed: ${joinBody}`).toBe(true)
+
+    // Get question IDs (no auth required)
+    const questionsRaw = await (await fetch(`${BASE_URL}/api/questions?count=3`)).json()
+    const questionIds: string[] = (Array.isArray(questionsRaw) ? questionsRaw : questionsRaw.questions ?? questionsRaw.content ?? [])
+      .slice(0, 3).map((q: any) => q.id)
+    expect(questionIds.length, 'no questions available').toBeGreaterThanOrEqual(1)
+
+    // Create quiz set (leader token3 has permission; response: { success, quizSet: { id, ... } })
+    const qsRes = await fetch(`${BASE_URL}/api/groups/${groupId}/quiz-sets`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token3}` },
+      body: JSON.stringify({ name: 'E2E Quiz Set', questionIds }),
+    })
+    const qsBody = await qsRes.json()
+    expect(qsRes.ok, `createQuizSet failed: ${JSON.stringify(qsBody)}`).toBe(true)
+    const quizSetId: string = qsBody.quizSet.id
+    expect(quizSetId).toBeTruthy()
+
+    // ============================================================
+    // SECTION 2: ACTIONS — both users hit play endpoint sequentially
+    // ============================================================
+    const play3Res = await fetch(
+      `${BASE_URL}/api/groups/${groupId}/quiz-sets/${quizSetId}/play`,
+      { method: 'POST', headers: { Authorization: `Bearer ${token3}` } },
+    )
+    const play3Body = await play3Res.json()
+    expect(play3Res.ok, `play3 failed: ${JSON.stringify(play3Body)}`).toBe(true)
+
+    const play4Res = await fetch(
+      `${BASE_URL}/api/groups/${groupId}/quiz-sets/${quizSetId}/play`,
+      { method: 'POST', headers: { Authorization: `Bearer ${token4}` } },
+    )
+    const play4Body = await play4Res.json()
+    expect(play4Res.ok, `play4 failed: ${JSON.stringify(play4Body)}`).toBe(true)
+
+    // ============================================================
+    // SECTION 3: UI ASSERTIONS — N/A (API-only test)
+    // ============================================================
+
+    // ============================================================
+    // SECTION 4: API VERIFICATION — both must land in the same room
+    // ============================================================
+    const room3 = play3Body.room
+    const room4 = play4Body.room
+
+    expect(room3.id).toBeTruthy()
+    expect(room4.id).toBeTruthy()
+    expect(room3.id).toBe(room4.id)
+    expect(room3.roomCode).toBe(room4.roomCode)
+
+    // ============================================================
+    // CLEANUP
+    // ============================================================
+    await fetch(`${BASE_URL}/api/groups/${groupId}/leave`, { method: 'DELETE', headers: { Authorization: `Bearer ${token4}` } })
+    await fetch(`${BASE_URL}/api/groups/${groupId}`, { method: 'DELETE', headers: { Authorization: `Bearer ${token3}` } })
+  })
+
 })

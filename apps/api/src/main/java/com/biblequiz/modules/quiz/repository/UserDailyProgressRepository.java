@@ -90,4 +90,21 @@ public interface UserDailyProgressRepository extends JpaRepository<UserDailyProg
             + "GROUP BY user_id HAVING total > :points) t", nativeQuery = true)
     long countUsersAheadInMonth(@Param("startDate") LocalDate startDate,
             @Param("endDate") LocalDate endDate, @Param("points") int points);
+
+    // Group streak: distinct active dates in a date range across a member set
+    // (member is "active" on a date if they have a UDP row with questions_counted > 0).
+    @Query("SELECT DISTINCT udp.date FROM UserDailyProgress udp "
+            + "WHERE udp.user.id IN :userIds "
+            + "AND udp.date BETWEEN :startDate AND :endDate "
+            + "AND COALESCE(udp.questionsCounted, 0) > 0")
+    List<LocalDate> findDistinctActiveDatesByUserIdsBetween(@Param("userIds") List<String> userIds,
+            @Param("startDate") LocalDate startDate, @Param("endDate") LocalDate endDate);
+
+    // Group streak: count distinct active members on a single date
+    @Query("SELECT COUNT(DISTINCT udp.user.id) FROM UserDailyProgress udp "
+            + "WHERE udp.user.id IN :userIds "
+            + "AND udp.date = :date "
+            + "AND COALESCE(udp.questionsCounted, 0) > 0")
+    long countDistinctActiveMembersOnDate(@Param("userIds") List<String> userIds,
+            @Param("date") LocalDate date);
 }

@@ -443,4 +443,60 @@ class ChurchGroupServiceTest {
         assertEquals(1L, result.get("total"));
         assertEquals(false, result.get("hasMore"));
     }
+
+    // ── listMyGroupsWithSummary (multi-group /groups page) ───────────────────
+
+    @Test
+    void listMyGroupsWithSummary_emptyMemberships_returnsEmptyList() {
+        when(groupMemberRepository.findByUserId("nobody")).thenReturn(java.util.Collections.emptyList());
+
+        List<Map<String, Object>> result = churchGroupService.listMyGroupsWithSummary("nobody");
+
+        assertTrue(result.isEmpty());
+    }
+
+    @Test
+    void listMyGroupsWithSummary_returnsSummaryWithMyRank() {
+        // Two members in group; current user is member-1 (regular member)
+        GroupMember leaderSeat = new GroupMember();
+        leaderSeat.setRole(GroupMember.GroupRole.LEADER);
+        leaderSeat.setUser(leaderUser);
+        leaderSeat.setGroup(testGroup);
+
+        GroupMember mySeat = new GroupMember();
+        mySeat.setRole(GroupMember.GroupRole.MEMBER);
+        mySeat.setUser(memberUser);
+        mySeat.setGroup(testGroup);
+
+        when(groupMemberRepository.findByUserId("member-1")).thenReturn(java.util.List.of(mySeat));
+        when(groupMemberRepository.findByGroupId("group-1")).thenReturn(java.util.List.of(leaderSeat, mySeat));
+
+        // Leader: 100 pts, 10 questions; Me: 50 pts, 5 questions → leader ranks ahead → my rank = 2
+        com.biblequiz.modules.quiz.entity.UserDailyProgress leaderUdp = new com.biblequiz.modules.quiz.entity.UserDailyProgress();
+        leaderUdp.setPointsCounted(100);
+        leaderUdp.setQuestionsCounted(10);
+        com.biblequiz.modules.quiz.entity.UserDailyProgress myUdp = new com.biblequiz.modules.quiz.entity.UserDailyProgress();
+        myUdp.setPointsCounted(50);
+        myUdp.setQuestionsCounted(5);
+        when(udpRepository.findByUserIdAndDateBetween(eq("leader-1"), any(), any()))
+                .thenReturn(java.util.List.of(leaderUdp));
+        when(udpRepository.findByUserIdAndDateBetween(eq("member-1"), any(), any()))
+                .thenReturn(java.util.List.of(myUdp));
+
+        List<Map<String, Object>> result = churchGroupService.listMyGroupsWithSummary("member-1");
+
+        assertEquals(1, result.size());
+        Map<String, Object> entry = result.get(0);
+        assertEquals("group-1", entry.get("id"));
+        assertEquals("MEMBER", entry.get("role"));
+        assertEquals(2, entry.get("memberCount"));
+        // 150 total points / 2 active = 75
+        assertEquals(75, entry.get("avgScore"));
+        // 150 / (15 * 10) = 100% (capped)
+        assertEquals(100, entry.get("accuracy"));
+        assertEquals(2, entry.get("activeWeek"));
+        assertEquals(50, entry.get("myWeekPoints"));
+        // leader has 100 > my 50 → 1 ahead → rank 2
+        assertEquals(2, entry.get("myRank"));
+    }
 }
