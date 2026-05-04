@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BibleQuiz · Leaderboard Redesign (mockup)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #11131e;
+    color: #f3f4f6;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    font-size: inherit;
+    vertical-align: middle;
+  }
+
+  /* State toggle */
+  .state-toggle {
+    position: fixed; top: 16px; right: 16px; z-index: 200;
+    background: rgba(50,52,64,0.9);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(232,168,50,0.3);
+    border-radius: 12px;
+    padding: 6px;
+    display: flex; gap: 4px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
+  .state-toggle button {
+    background: transparent; border: none; color: #9ca3af;
+    padding: 8px 14px; border-radius: 8px; cursor: pointer;
+    font-family: inherit; font-size: 13px; font-weight: 600;
+  }
+  .state-toggle button.active {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+  }
+
+  .layout { display: flex; min-height: 100vh; }
+
+  /* Sidebar (clean from earlier redesign) */
+  .sidebar {
+    width: 240px;
+    background: #0d0f17;
+    border-right: 1px solid rgba(232,168,50,0.08);
+    padding: 24px 16px;
+    display: flex; flex-direction: column;
+    flex-shrink: 0;
+    position: sticky; top: 0;
+    height: 100vh;
+  }
+  .sidebar-brand {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 8px 24px;
+  }
+  .sidebar-brand h1 {
+    font-size: 22px; font-weight: 800;
+    background: linear-gradient(135deg, #e8a832 0%, #fbbf24 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .sidebar-brand .bell {
+    width: 32px; height: 32px; border-radius: 8px;
+    background: rgba(50,52,64,0.6); display: grid; place-items: center;
+    color: #e8a832; font-size: 18px; position: relative;
+  }
+  .sidebar-brand .bell::after {
+    content: '9+'; position: absolute; top: -4px; right: -4px;
+    background: #e8a832; color: #11131e; font-size: 10px; font-weight: 800;
+    padding: 2px 5px; border-radius: 8px;
+  }
+  .sidebar-user {
+    background: rgba(50,52,64,0.4);
+    border: 1px solid rgba(232,168,50,0.1);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 16px;
+  }
+  .sidebar-user .avatar {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    display: grid; place-items: center;
+    color: #11131e; font-weight: 800; font-size: 14px;
+  }
+  .sidebar-user .name { font-size: 13px; font-weight: 700; }
+  .sidebar-user .tier { font-size: 11px; color: #9ca3af; }
+  .sidebar-nav-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px; border-radius: 10px;
+    color: #9ca3af; font-weight: 600; font-size: 13px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    cursor: pointer;
+    margin-bottom: 4px;
+  }
+  .sidebar-nav-item.active {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+  }
+  .sidebar-footer {
+    margin-top: auto;
+    padding: 12px 14px;
+    font-size: 11px; color: #6b7280;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.04);
+  }
+
+  /* Main */
+  .main {
+    flex: 1; padding: 32px 40px 60px;
+    max-width: 1100px;
+  }
+
+  /* ===== Page header ===== */
+  .page-header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    margin-bottom: 24px; gap: 24px; flex-wrap: wrap;
+  }
+  .page-header-left { flex: 1; min-width: 280px; }
+  .page-header h2 {
+    font-size: 30px; font-weight: 800; letter-spacing: -0.3px;
+    margin-bottom: 8px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .page-header h2 .icon {
+    width: 38px; height: 38px; border-radius: 10px;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    display: grid; place-items: center;
+    color: #11131e; font-size: 22px;
+  }
+  .meta-chips {
+    display: flex; gap: 8px; flex-wrap: wrap;
+  }
+  .meta-chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 5px 11px; border-radius: 10px;
+    background: rgba(50,52,64,0.5);
+    border: 1px solid rgba(255,255,255,0.06);
+    font-size: 12px; color: #d1d5db; font-weight: 600;
+  }
+  .meta-chip.season {
+    background: linear-gradient(135deg, rgba(239,68,68,0.15) 0%, rgba(249,115,22,0.1) 100%);
+    border-color: rgba(239,68,68,0.3);
+    color: #fca5a5;
+  }
+  .meta-chip .material-symbols-outlined { font-size: 14px; }
+
+  /* Countdown card */
+  .countdown {
+    background: rgba(50,52,64,0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(232,168,50,0.2);
+    border-radius: 12px;
+    padding: 12px 18px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .countdown .label {
+    font-size: 10px; color: #9ca3af;
+    text-transform: uppercase; letter-spacing: 1px; font-weight: 700;
+  }
+  .countdown .time {
+    font-size: 18px; font-weight: 800; color: #e8a832;
+    font-variant-numeric: tabular-nums;
+    margin-top: 4px;
+  }
+  .countdown .sublabel { font-size: 10px; color: #6b7280; margin-top: 2px; }
+
+  /* ===== Filter bar (top — was buried below) ===== */
+  .filter-bar {
+    background: rgba(50,52,64,0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(232,168,50,0.1);
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap;
+  }
+  .scope-tabs {
+    display: flex; gap: 4px;
+    background: rgba(17,19,30,0.5);
+    padding: 4px; border-radius: 10px;
+  }
+  .scope-tab {
+    padding: 8px 14px; border-radius: 7px;
+    font-size: 12px; font-weight: 700;
+    color: #9ca3af; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .scope-tab.active {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+    box-shadow: 0 2px 8px rgba(232,168,50,0.25);
+  }
+  .scope-tab.disabled {
+    opacity: 0.4; cursor: not-allowed;
+  }
+  .scope-tab .material-symbols-outlined { font-size: 14px; }
+  .scope-tab .badge {
+    background: rgba(255,255,255,0.15);
+    color: #e8a832;
+    font-size: 9px; padding: 1px 6px; border-radius: 6px;
+    font-weight: 800;
+  }
+  .scope-tab.active .badge { background: rgba(17,19,30,0.25); color: #11131e; }
+
+  .period-segmented {
+    display: flex; gap: 2px;
+    background: rgba(17,19,30,0.5);
+    padding: 3px; border-radius: 8px;
+  }
+  .period-option {
+    padding: 6px 12px; border-radius: 6px;
+    font-size: 11px; font-weight: 700;
+    color: #9ca3af; cursor: pointer;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .period-option.active {
+    background: rgba(232,168,50,0.15);
+    color: #e8a832;
+    border: 1px solid rgba(232,168,50,0.3);
+  }
+
+  /* ===== Podium ===== */
+  .podium {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr 1fr;
+    gap: 14px;
+    align-items: end;
+    margin-bottom: 24px;
+    padding: 20px 0;
+  }
+  .podium-card {
+    background: rgba(50,52,64,0.4);
+    backdrop-filter: blur(12px);
+    border: 1.5px solid;
+    border-radius: 16px;
+    padding: 18px 16px;
+    text-align: center;
+    position: relative;
+  }
+  .podium-card.first {
+    border-color: rgba(251,191,36,0.4);
+    background:
+      linear-gradient(180deg, rgba(251,191,36,0.08) 0%, rgba(50,52,64,0.4) 60%);
+    padding-top: 32px;
+    box-shadow:
+      0 8px 32px rgba(232,168,50,0.15),
+      inset 0 1px 0 rgba(251,191,36,0.2);
+  }
+  .podium-card.second { border-color: rgba(209,213,219,0.25); }
+  .podium-card.third { border-color: rgba(217,119,6,0.3); }
+
+  /* Crown for #1 */
+  .crown {
+    position: absolute;
+    top: -28px; left: 50%; transform: translateX(-50%);
+    font-size: 36px;
+    filter: drop-shadow(0 4px 8px rgba(251,191,36,0.4));
+    animation: crownGlow 3s ease-in-out infinite;
+  }
+  @keyframes crownGlow {
+    0%, 100% { filter: drop-shadow(0 4px 8px rgba(251,191,36,0.4)); }
+    50% { filter: drop-shadow(0 4px 16px rgba(251,191,36,0.7)); }
+  }
+
+  /* Medal for #2 #3 */
+  .medal {
+    position: absolute;
+    top: -16px; left: 50%; transform: translateX(-50%);
+    width: 32px; height: 32px; border-radius: 50%;
+    display: grid; place-items: center;
+    font-size: 14px; font-weight: 800;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  .medal.silver {
+    background: linear-gradient(135deg, #e5e7eb 0%, #9ca3af 100%);
+    color: #11131e;
+    border: 2px solid #f3f4f6;
+  }
+  .medal.bronze {
+    background: linear-gradient(135deg, #d97706 0%, #92400e 100%);
+    color: #fff;
+    border: 2px solid #fbbf24;
+  }
+
+  .podium-avatar {
+    width: 56px; height: 56px; border-radius: 50%;
+    margin: 0 auto 10px;
+    background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+    display: grid; place-items: center;
+    color: #f3f4f6; font-weight: 800; font-size: 20px;
+    border: 3px solid;
+  }
+  .podium-card.first .podium-avatar {
+    width: 70px; height: 70px;
+    font-size: 26px;
+    background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+    color: #11131e;
+    border-color: #fbbf24;
+    box-shadow: 0 8px 24px rgba(251,191,36,0.3);
+  }
+  .podium-card.second .podium-avatar {
+    background: linear-gradient(135deg, #93c5fd 0%, #3b82f6 100%);
+    color: #11131e;
+    border-color: rgba(147,197,253,0.5);
+  }
+  .podium-card.third .podium-avatar {
+    background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);
+    color: #11131e;
+    border-color: rgba(244,114,182,0.5);
+  }
+  .podium-name {
+    font-size: 14px; font-weight: 700;
+    margin-bottom: 4px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .podium-card.first .podium-name { font-size: 16px; }
+  .podium-tier {
+    font-size: 10px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+  .podium-tier.tier-2 { color: #4ade80; }
+  .podium-tier.tier-4 { color: #c084fc; }
+  .podium-tier.tier-5 { color: #f87171; }
+  .podium-tier.tier-6 { color: #fbbf24; }
+
+  /* Score bar visualization */
+  .score-bar {
+    height: 6px; border-radius: 3px;
+    background: rgba(255,255,255,0.06);
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .score-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+  }
+  .podium-card.first .score-bar-fill {
+    background: linear-gradient(90deg, #fbbf24 0%, #d97706 100%);
+    width: 100%;
+  }
+  .podium-card.second .score-bar-fill {
+    background: linear-gradient(90deg, #93c5fd 0%, #3b82f6 100%);
+    width: 67%;
+  }
+  .podium-card.third .score-bar-fill {
+    background: linear-gradient(90deg, #f472b6 0%, #ec4899 100%);
+    width: 49%;
+  }
+  .podium-score {
+    font-size: 22px; font-weight: 800;
+    color: #f3f4f6;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  .podium-card.first .podium-score {
+    font-size: 28px;
+    background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .podium-meta {
+    font-size: 10px; color: #9ca3af;
+    margin-top: 6px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ===== User Position Stat Card ===== */
+  .my-rank-card {
+    background:
+      linear-gradient(135deg, rgba(232,168,50,0.1) 0%, rgba(50,52,64,0.4) 60%);
+    border: 1px solid rgba(232,168,50,0.3);
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 18px; align-items: center;
+  }
+  .my-rank-num {
+    font-size: 36px; font-weight: 800;
+    background: linear-gradient(135deg, #e8a832 0%, #fbbf24 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    min-width: 60px;
+    text-align: center;
+  }
+  .my-rank-num::before { content: '#'; }
+  .my-rank-info { min-width: 0; }
+  .my-rank-label {
+    font-size: 10px; color: #fbbf24; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .my-rank-name {
+    font-size: 16px; font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .my-rank-context {
+    font-size: 11px; color: #9ca3af;
+    display: flex; gap: 10px; flex-wrap: wrap;
+  }
+  .my-rank-context strong { color: #f3f4f6; font-weight: 700; }
+  .my-rank-delta {
+    background: rgba(74,222,128,0.12);
+    border: 1px solid rgba(74,222,128,0.25);
+    color: #4ade80;
+    padding: 6px 12px; border-radius: 10px;
+    font-size: 12px; font-weight: 700;
+    display: inline-flex; align-items: center; gap: 4px;
+  }
+  .my-rank-delta.down {
+    background: rgba(248,113,113,0.1);
+    border-color: rgba(248,113,113,0.25);
+    color: #fca5a5;
+  }
+  .my-rank-delta .material-symbols-outlined { font-size: 14px; }
+  .my-rank-score {
+    text-align: right;
+  }
+  .my-rank-score .v {
+    font-size: 22px; font-weight: 800; color: #e8a832;
+    font-variant-numeric: tabular-nums;
+  }
+  .my-rank-score .l {
+    font-size: 10px; color: #9ca3af;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-top: 2px;
+  }
+
+  /* ===== Leaderboard table ===== */
+  .lb-section {
+    background: rgba(50,52,64,0.3);
+    border: 1px solid rgba(232,168,50,0.08);
+    border-radius: 14px;
+    padding: 8px;
+    margin-bottom: 24px;
+  }
+  .lb-row {
+    display: grid;
+    grid-template-columns: 40px 44px 1fr auto auto;
+    gap: 14px; align-items: center;
+    padding: 11px 14px;
+    border-radius: 10px;
+    transition: background 0.15s;
+  }
+  .lb-row + .lb-row { margin-top: 2px; }
+  .lb-row:hover { background: rgba(232,168,50,0.04); }
+  .lb-row.me {
+    background: linear-gradient(135deg, rgba(232,168,50,0.15) 0%, rgba(232,168,50,0.05) 100%);
+    border: 1px solid rgba(232,168,50,0.4);
+    box-shadow: 0 4px 16px rgba(232,168,50,0.1);
+  }
+
+  .lb-rank {
+    font-size: 14px; font-weight: 800; color: #6b7280;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .lb-rank.me-rank {
+    color: #fbbf24;
+  }
+  .lb-rank-arrow {
+    display: block;
+    font-size: 9px; margin-top: 1px;
+    font-weight: 600;
+  }
+  .lb-rank-arrow.up { color: #4ade80; }
+  .lb-rank-arrow.down { color: #f87171; }
+  .lb-rank-arrow.same { color: #6b7280; }
+
+  .lb-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+    display: grid; place-items: center;
+    color: #f3f4f6; font-weight: 700; font-size: 14px;
+  }
+  .lb-avatar.me {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+    box-shadow: 0 0 0 2px rgba(232,168,50,0.3);
+  }
+  .lb-avatar.tier-2 { background: linear-gradient(135deg, #4ade80 0%, #16a34a 100%); }
+  .lb-avatar.tier-3 { background: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%); }
+  .lb-avatar.tier-4 { background: linear-gradient(135deg, #c084fc 0%, #9333ea 100%); color: #fff; }
+  .lb-avatar.tier-5 { background: linear-gradient(135deg, #f87171 0%, #dc2626 100%); color: #fff; }
+  .lb-avatar.tier-6 { background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%); }
+
+  .lb-info { min-width: 0; }
+  .lb-name {
+    font-size: 13px; font-weight: 700;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .you-badge {
+    background: rgba(232,168,50,0.2);
+    color: #fbbf24;
+    font-size: 9px; padding: 2px 6px; border-radius: 5px;
+    font-weight: 800;
+    text-transform: uppercase; letter-spacing: 0.4px;
+  }
+  .lb-tier {
+    font-size: 11px;
+    margin-top: 2px;
+    font-weight: 600;
+  }
+  .lb-tier.t-2 { color: #4ade80; }
+  .lb-tier.t-3 { color: #60a5fa; }
+  .lb-tier.t-4 { color: #c084fc; }
+  .lb-tier.t-5 { color: #f87171; }
+  .lb-tier.t-6 { color: #fbbf24; }
+
+  .lb-stats {
+    text-align: right;
+  }
+  .lb-score {
+    font-size: 14px; font-weight: 800; color: #e8a832;
+    font-variant-numeric: tabular-nums;
+  }
+  .lb-stats-meta {
+    font-size: 10px; color: #9ca3af;
+    margin-top: 2px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .lb-show-all {
+    text-align: center;
+    padding: 14px;
+    color: #9ca3af; font-size: 13px; font-weight: 600;
+    cursor: pointer;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    margin-top: 8px;
+    display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    width: 100%;
+  }
+  .lb-show-all:hover { color: #e8a832; }
+  .lb-show-all .material-symbols-outlined { font-size: 16px; }
+
+  .lb-divider-row {
+    text-align: center;
+    padding: 10px;
+    color: #6b7280; font-size: 12px;
+    letter-spacing: 4px;
+  }
+
+  /* ===== Compact tier rewards (replaces the bloated bottom card) ===== */
+  .rewards-strip {
+    background: rgba(50,52,64,0.3);
+    border: 1px solid rgba(232,168,50,0.1);
+    border-radius: 14px;
+    padding: 16px 22px;
+    display: flex; align-items: center; gap: 18px;
+  }
+  .rewards-icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: linear-gradient(135deg, rgba(251,191,36,0.2) 0%, rgba(217,119,6,0.1) 100%);
+    border: 1px solid rgba(251,191,36,0.3);
+    display: grid; place-items: center;
+    color: #fbbf24; font-size: 22px;
+    flex-shrink: 0;
+  }
+  .rewards-text { flex: 1; min-width: 0; }
+  .rewards-headline {
+    font-size: 14px; font-weight: 700; margin-bottom: 4px;
+  }
+  .rewards-desc {
+    font-size: 12px; color: #9ca3af; line-height: 1.5;
+  }
+  .rewards-desc strong { color: #fbbf24; font-weight: 700; }
+  .rewards-link {
+    color: #e8a832; font-size: 12px; font-weight: 700;
+    cursor: pointer;
+    display: inline-flex; align-items: center; gap: 4px;
+    flex-shrink: 0;
+  }
+  .rewards-link:hover { color: #fbbf24; }
+  .rewards-link .material-symbols-outlined { font-size: 14px; }
+
+  /* State control */
+  .state-top10 .show-outside-top10 { display: none; }
+  .state-outside .show-in-top10 { display: none; }
+
+  /* Annotation */
+  .annotation {
+    margin-top: 32px;
+    padding: 20px 24px;
+    background: rgba(96,165,250,0.06);
+    border: 1px solid rgba(96,165,250,0.2);
+    border-radius: 14px;
+    color: #93c5fd;
+    font-size: 13px; line-height: 1.7;
+  }
+  .annotation strong { color: #60a5fa; }
+  .annotation code {
+    background: rgba(17,19,30,0.6); padding: 2px 6px;
+    border-radius: 4px; font-size: 12px;
+  }
+  .annotation ul { margin: 6px 0 0 20px; }
+  .annotation li { margin-bottom: 4px; }
+  .annotation .delta {
+    margin: 12px 0; padding: 12px 14px;
+    background: rgba(74,222,128,0.06);
+    border-left: 3px solid #4ade80;
+    border-radius: 6px;
+  }
+  .annotation .delta strong { color: #4ade80; }
+
+  @media (max-width: 800px) {
+    .my-rank-card { grid-template-columns: auto 1fr; }
+    .my-rank-card .my-rank-delta,
+    .my-rank-card .my-rank-score { grid-column: 1 / -1; }
+  }
+</style>
+</head>
+<body class="state-top10">
+
+<div class="state-toggle">
+  <button class="active" onclick="setState('top10')">User trong top 10 (#4)</button>
+  <button onclick="setState('outside')">User ngoài top 10 (#147)</button>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <h1>Bible Quiz</h1>
+      <div class="bell"><span class="material-symbols-outlined">notifications</span></div>
+    </div>
+    <div class="sidebar-user">
+      <div class="avatar">T</div>
+      <div>
+        <div class="name">TAI THANH</div>
+        <div class="tier">Tân Tín Hữu</div>
+      </div>
+    </div>
+    <div class="sidebar-nav-item">
+      <span class="material-symbols-outlined">home</span> Trang chủ
+    </div>
+    <div class="sidebar-nav-item active">
+      <span class="material-symbols-outlined">leaderboard</span> Xếp hạng
+    </div>
+    <div class="sidebar-nav-item">
+      <span class="material-symbols-outlined">groups</span> Nhóm
+    </div>
+    <div class="sidebar-nav-item">
+      <span class="material-symbols-outlined">person</span> Cá nhân
+    </div>
+    <div class="sidebar-footer">
+      <span style="margin-top:4px;display:block">v2.7.1</span>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <!-- Page header -->
+    <div class="page-header">
+      <div class="page-header-left">
+        <h2>
+          <span class="icon"><span class="material-symbols-outlined">leaderboard</span></span>
+          Bảng Xếp Hạng
+        </h2>
+        <div class="meta-chips">
+          <span class="meta-chip season">
+            <span class="material-symbols-outlined">auto_awesome</span>
+            <strong>Mùa Ngũ Tuần</strong>
+          </span>
+          <span class="meta-chip">
+            <span class="material-symbols-outlined">group</span>
+            1,247 người tham gia
+          </span>
+        </div>
+      </div>
+      <div class="countdown">
+        <div class="label">Mùa kết thúc sau</div>
+        <div class="time">26 ngày · 6 giờ</div>
+        <div class="sublabel">Top 3 mỗi tier nhận badge</div>
+      </div>
+    </div>
+
+    <!-- Filter bar — moved to TOP -->
+    <div class="filter-bar">
+      <div class="scope-tabs">
+        <div class="scope-tab active">
+          <span class="material-symbols-outlined">public</span>
+          Toàn cầu
+        </div>
+        <div class="scope-tab">
+          <span class="material-symbols-outlined">groups</span>
+          Nhóm của tôi
+          <span class="badge">FMC ĐÀ NẴNG</span>
+        </div>
+        <div class="scope-tab disabled">
+          <span class="material-symbols-outlined">favorite</span>
+          Bạn bè
+          <span class="badge">SOON</span>
+        </div>
+      </div>
+
+      <div class="period-segmented">
+        <div class="period-option active">Hàng tuần</div>
+        <div class="period-option">Mùa</div>
+        <div class="period-option">Tất cả</div>
+      </div>
+    </div>
+
+    <!-- Podium — proper proportions -->
+    <div class="podium">
+
+      <!-- #2 (left) -->
+      <div class="podium-card second">
+        <div class="medal silver">2</div>
+        <div class="podium-avatar">L</div>
+        <div class="podium-name">Lan Nguyễn</div>
+        <div class="podium-tier tier-5">Tiên Tri</div>
+        <div class="score-bar"><div class="score-bar-fill"></div></div>
+        <div class="podium-score">2,890</div>
+        <div class="podium-meta">98 câu · 87% chính xác</div>
+      </div>
+
+      <!-- #1 (center, taller, with crown) -->
+      <div class="podium-card first">
+        <div class="crown">👑</div>
+        <div class="podium-avatar">M</div>
+        <div class="podium-name">Minh Phạm</div>
+        <div class="podium-tier tier-6">Sứ Đồ</div>
+        <div class="score-bar"><div class="score-bar-fill"></div></div>
+        <div class="podium-score">4,350</div>
+        <div class="podium-meta">125 câu · 92% chính xác</div>
+      </div>
+
+      <!-- #3 (right) -->
+      <div class="podium-card third">
+        <div class="medal bronze">3</div>
+        <div class="podium-avatar">H</div>
+        <div class="podium-name">Hiếu Trần</div>
+        <div class="podium-tier tier-4">Hiền Triết</div>
+        <div class="score-bar"><div class="score-bar-fill"></div></div>
+        <div class="podium-score">2,140</div>
+        <div class="podium-meta">87 câu · 79% chính xác</div>
+      </div>
+
+    </div>
+
+    <!-- User position stat card -->
+    <div class="my-rank-card show-in-top10">
+      <div class="my-rank-num">4</div>
+      <div class="my-rank-info">
+        <div class="my-rank-label">Vị trí của bạn</div>
+        <div class="my-rank-name">TAI THANH</div>
+        <div class="my-rank-context">
+          <span>Cách <strong>top 1</strong>: 4,211 điểm</span>
+          <span>·</span>
+          <span>Cách <strong>top 3</strong>: 2,001 điểm</span>
+        </div>
+      </div>
+      <div class="my-rank-delta">
+        <span class="material-symbols-outlined">arrow_upward</span>
+        +2 hạng tuần này
+      </div>
+      <div class="my-rank-score">
+        <div class="v">139</div>
+        <div class="l">Điểm tuần</div>
+      </div>
+    </div>
+
+    <div class="my-rank-card show-outside-top10">
+      <div class="my-rank-num">147</div>
+      <div class="my-rank-info">
+        <div class="my-rank-label">Vị trí của bạn</div>
+        <div class="my-rank-name">TAI THANH</div>
+        <div class="my-rank-context">
+          <span>Cần <strong>+125 điểm</strong> để vào top 100</span>
+          <span>·</span>
+          <span>Tốt hơn <strong>62%</strong> người chơi</span>
+        </div>
+      </div>
+      <div class="my-rank-delta">
+        <span class="material-symbols-outlined">arrow_upward</span>
+        +12 hạng tuần này
+      </div>
+      <div class="my-rank-score">
+        <div class="v">847</div>
+        <div class="l">Điểm tuần</div>
+      </div>
+    </div>
+
+    <!-- Leaderboard table -->
+    <div class="lb-section">
+
+      <!-- Show in-top10 state: rows 4-10 -->
+      <div class="show-in-top10">
+        <!-- User row #4 (highlighted) -->
+        <div class="lb-row me">
+          <div class="lb-rank me-rank">
+            4
+            <span class="lb-rank-arrow up">▲ 2</span>
+          </div>
+          <div class="lb-avatar me">T</div>
+          <div class="lb-info">
+            <div class="lb-name">
+              TAI THANH
+              <span class="you-badge">BẠN</span>
+            </div>
+            <div class="lb-tier" style="color:#9ca3af">Tân Tín Hữu</div>
+          </div>
+          <div class="lb-stats">
+            <div class="lb-score">139</div>
+            <div class="lb-stats-meta">12 câu · 75%</div>
+          </div>
+        </div>
+
+        <div class="lb-row">
+          <div class="lb-rank">
+            5
+            <span class="lb-rank-arrow same">—</span>
+          </div>
+          <div class="lb-avatar tier-3">A</div>
+          <div class="lb-info">
+            <div class="lb-name">An Võ</div>
+            <div class="lb-tier t-3">Môn Đồ</div>
+          </div>
+          <div class="lb-stats">
+            <div class="lb-score">102</div>
+            <div class="lb-stats-meta">9 câu · 78%</div>
+          </div>
+        </div>
+
+        <div class="lb-row">
+          <div class="lb-rank">
+            6
+            <span class="lb-rank-arrow up">▲ 3</span>
+          </div>
+          <div class="lb-avatar tier-2">B</div>
+          <div class="lb-info">
+            <div class="lb-name">Bình Lê</div>
+            <div class="lb-tier t-2">Người Tìm Kiếm</div>
+          </div>
+          <div class="lb-stats">
+            <div class="lb-score">98</div>
+            <div class="lb-stats-meta">11 câu · 65%</div>
+          </div>
+        </div>
+
+        <div class="lb-row">
+          <div class="lb-rank">
+            7
+            <span class="lb-rank-arrow down">▼ 1</span>
+          </div>
+          <div class="lb-avatar tier-3">N</div>
+          <div class="lb-info">
+            <div class="lb-name">Ngọc Hà</div>
+            <div class="lb-tier t-3">Môn Đồ</div>
+          </div>
+          <div class="lb-stats">
+            <div class="lb-score">85</div>
+            <div class="lb-stats-meta">8 câu · 71%</div>
+          </div>
+        </div>
+
+        <div class="lb-row">
+          <div class="lb-rank">
+            8
+            <span class="lb-rank-arrow up">▲ 1</span>
+          </div>
+          <div class="lb-avatar tier-2">D</div>
+          <div class="lb-info">
+            <div class="lb-name">Dũng Nguyễn</div>
+            <div class="lb-tier t-2">Người Tìm Kiếm</div>
+          </div>
+          <div class="lb-stats">
+            <div class="lb-score">76</div>
+            <div class="lb-stats-meta">7 câu · 68%</div>
+          </div>
+        </div>
+
+        <div class="lb-row">
+          <div class="lb-rank">
+            9
+            <span class="lb-rank-arrow same">—</span>
+          </div>
+          <div class="lb-avatar tier-2">P</div>
+          <div class="lb-info">
+            <div class="lb-name">Phương Anh</div>
+            <div class="lb-tier t-2">Người Tìm Kiếm</div>
+          </div>
+          <div class="lb-stats">
+            <div class="lb-score">68</div>
+            <div class="lb-stats-meta">6 câu · 80%</div>
+          </div>
+        </div>
+
+        <div class="lb-row">
+          <div class="lb-rank">
+            10
+            <span class="lb-rank-arrow up">▲ 4</span>
+          </div>
+          <div class="lb-avatar">T</div>
+          <div class="lb-info">
+            <div class="lb-name">Tài Bùi Thanh</div>
+            <div class="lb-tier" style="color:#9ca3af">Tân Tín Hữu</div>
+          </div>
+          <div class="lb-stats">
+            <div class="lb-score">50</div>
+            <div class="lb-stats-meta">5 câu · 60%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Show outside-top10 state: rows 4-10 (without me) + divider + me at 147 -->
+      <div class="show-outside-top10">
+        <div class="lb-row">
+          <div class="lb-rank">4 <span class="lb-rank-arrow same">—</span></div>
+          <div class="lb-avatar tier-4">A</div>
+          <div class="lb-info">
+            <div class="lb-name">An Võ</div>
+            <div class="lb-tier t-4">Hiền Triết</div>
+          </div>
+          <div class="lb-stats"><div class="lb-score">1,820</div><div class="lb-stats-meta">62 câu</div></div>
+        </div>
+        <div class="lb-row">
+          <div class="lb-rank">5 <span class="lb-rank-arrow up">▲ 2</span></div>
+          <div class="lb-avatar tier-3">B</div>
+          <div class="lb-info">
+            <div class="lb-name">Bình Lê</div>
+            <div class="lb-tier t-3">Môn Đồ</div>
+          </div>
+          <div class="lb-stats"><div class="lb-score">1,640</div><div class="lb-stats-meta">58 câu</div></div>
+        </div>
+        <div class="lb-row">
+          <div class="lb-rank">6 <span class="lb-rank-arrow down">▼ 1</span></div>
+          <div class="lb-avatar tier-4">N</div>
+          <div class="lb-info">
+            <div class="lb-name">Ngọc Hà</div>
+            <div class="lb-tier t-4">Hiền Triết</div>
+          </div>
+          <div class="lb-stats"><div class="lb-score">1,510</div><div class="lb-stats-meta">53 câu</div></div>
+        </div>
+
+        <div class="lb-divider-row">· · ·</div>
+
+        <!-- User row #147 (sticky at bottom) -->
+        <div class="lb-row me">
+          <div class="lb-rank me-rank">
+            147
+            <span class="lb-rank-arrow up">▲ 12</span>
+          </div>
+          <div class="lb-avatar me">T</div>
+          <div class="lb-info">
+            <div class="lb-name">
+              TAI THANH
+              <span class="you-badge">BẠN</span>
+            </div>
+            <div class="lb-tier" style="color:#9ca3af">Tân Tín Hữu</div>
+          </div>
+          <div class="lb-stats">
+            <div class="lb-score">847</div>
+            <div class="lb-stats-meta">42 câu · 71%</div>
+          </div>
+        </div>
+
+        <!-- Neighbors of user (around-me) -->
+        <div class="lb-row">
+          <div class="lb-rank">148 <span class="lb-rank-arrow same">—</span></div>
+          <div class="lb-avatar">D</div>
+          <div class="lb-info">
+            <div class="lb-name">Diệu Linh</div>
+            <div class="lb-tier" style="color:#9ca3af">Tân Tín Hữu</div>
+          </div>
+          <div class="lb-stats"><div class="lb-score">823</div><div class="lb-stats-meta">39 câu</div></div>
+        </div>
+        <div class="lb-row">
+          <div class="lb-rank">149 <span class="lb-rank-arrow down">▼ 5</span></div>
+          <div class="lb-avatar">K</div>
+          <div class="lb-info">
+            <div class="lb-name">Khánh Linh</div>
+            <div class="lb-tier" style="color:#9ca3af">Tân Tín Hữu</div>
+          </div>
+          <div class="lb-stats"><div class="lb-score">801</div><div class="lb-stats-meta">38 câu</div></div>
+        </div>
+      </div>
+
+      <div class="lb-show-all">
+        Xem tất cả 1,247 người chơi
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </div>
+    </div>
+
+    <!-- Compact rewards strip — replaces bloated tier ladder -->
+    <div class="rewards-strip">
+      <div class="rewards-icon">
+        <span class="material-symbols-outlined">military_tech</span>
+      </div>
+      <div class="rewards-text">
+        <div class="rewards-headline">Phần thưởng cuối mùa cho tier <strong style="color:#9ca3af">Tân Tín Hữu</strong></div>
+        <div class="rewards-desc">
+          <strong>Top 3</strong> trong tier của bạn cuối Mùa Ngũ Tuần sẽ nhận badge "Vinh Quang Mùa Ngũ Tuần 🏆" và avatar frame đặc biệt.
+        </div>
+      </div>
+      <a class="rewards-link">
+        Xem tất cả tier
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+    </div>
+
+    <!-- Annotation -->
+    <div class="annotation">
+      <strong>📝 Leaderboard redesign — Fix 6 vấn đề + 3 thiếu sót</strong>
+
+      <div class="delta">
+        <strong>✅ 3 critical fixes:</strong>
+        <ul style="margin-top:6px">
+          <li><strong>Bỏ duplicate "#2" trong sidebar</strong> — vị trí chỉ hiện ở 1 chỗ (my-rank-card prominent), không lặp lại trong sidebar gây confused.</li>
+          <li><strong>Replace test data</strong> — Test Tier 1/2/3 → tên Việt thực tế (Minh Phạm, Lan Nguyễn, Hiếu Trần). Backend cần filter test users hoặc seed lại với data thật.</li>
+          <li><strong>Bỏ season name leak</strong> "Season E2E Test 1776471648641" — chỉ show "Mùa Ngũ Tuần" với chip seasonal.</li>
+        </ul>
+      </div>
+
+      <div class="delta">
+        <strong>✅ 3 UX fixes:</strong>
+        <ul style="margin-top:6px">
+          <li><strong>Filter bar moved to TOP</strong> trên cả podium. Thêm <strong>Scope tabs</strong> (Toàn cầu / Nhóm của tôi / Bạn bè). User chọn scope+period TRƯỚC, xem rank SAU.</li>
+          <li><strong>Podium proper proportions</strong> — #1 cao hơn rõ rệt với crown lớn animated, avatar 70px (vs 56px của #2 #3). <strong>Score bar visualization</strong> dưới mỗi card show tỉ lệ điểm vs leader (#1=100%, #2=67%, #3=49%).</li>
+          <li><strong>Bỏ tier ladder card 6-cell</strong> ở footer — replace bằng <strong>compact rewards strip</strong> 1 row, focus vào tier hiện tại của user + reward cụ thể. Link "Xem tất cả tier" → trang Profile.</li>
+        </ul>
+      </div>
+
+      <div class="delta">
+        <strong>✅ 3 thiếu sót đã add:</strong>
+        <ul style="margin-top:6px">
+          <li><strong>User position stat card</strong> prominent: rank lớn (#4), delta hạng tuần này (▲ +2), score, distance to top 1 / top 3.</li>
+          <li><strong>Around-me pattern</strong> khi user ngoài top 10: hiện top 10 + divider "···" + user row highlighted + 2 neighbors. (Toggle "User ngoài top 10 (#147)" để xem.)</li>
+          <li><strong>Rank deltas</strong> trên mỗi row (▲ 2, ▼ 1, —) — cho thấy ai đang đi lên/xuống tuần này. Tăng engagement.</li>
+        </ul>
+      </div>
+
+      <p style="margin-top:14px"><strong>Format countdown đã fix:</strong></p>
+      <ul>
+        <li>Trước: <code>26 ngày : 06 giờ : 00 phút</code> (clunky, dấu cách lung tung)</li>
+        <li>Sau: <code>26 ngày · 6 giờ</code> (drop minutes vì còn xa, dùng dot separator)</li>
+        <li>Khi <7 ngày: thêm hours. Khi <24h: thêm minutes. Tự động scale theo thời gian.</li>
+      </ul>
+
+      <p style="margin-top:14px"><strong>API endpoints (mostly reuse + 1 new):</strong></p>
+      <ul>
+        <li><code>GET /api/leaderboard/global?period=weekly&scope=global</code> (existing) — thêm <code>scope</code> param</li>
+        <li><code>GET /api/leaderboard/around-me?period=weekly</code> (existing) — dùng cho state "ngoài top 10"</li>
+        <li><code>GET /api/me/leaderboard-rank?period=weekly</code> (mới) — trả về rank + delta tuần trước + distances</li>
+        <li>Backend cần thêm tracking <strong>previous-week rank</strong> để compute delta. Lưu snapshot weekly via cron hoặc compute on-the-fly từ history.</li>
+      </ul>
+
+      <p style="margin-top:14px"><strong>Câu hỏi cho Bui:</strong></p>
+      <ul>
+        <li><strong>Tab "Bạn bè"</strong> — defer đến v3.0 per SPEC FIX-005. Giờ disabled với badge "SOON" hay hide hoàn toàn? Tôi nghiêng disable visible vì tạo expectation cho user.</li>
+        <li><strong>Rank delta computation</strong> — backend snapshot weekly rank vào table riêng (đơn giản, query nhanh) hay compute từ session history (tốn CPU)? Snapshot tốt hơn cho scale.</li>
+        <li><strong>Scope "Nhóm của tôi"</strong> — nếu user trong nhiều nhóm thì sao? Show dropdown chọn nhóm, hay default group đầu tiên? (Per memory: 1 user = 1 group hiện tại, nhưng leader có thể nhiều — scope này quan trọng cho leader.)</li>
+        <li><strong>Test data filter</strong> — backend đã có flag <code>app.test-data.enabled</code>. Cần verify production env có flag = false, hoặc thêm column <code>is_test_user</code> trong User table để filter ra khỏi leaderboard query.</li>
+      </ul>
+    </div>
+
+  </main>
+</div>
+
+<script>
+  function setState(state) {
+    document.body.className = 'state-' + state;
+    document.querySelectorAll('.state-toggle button').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>

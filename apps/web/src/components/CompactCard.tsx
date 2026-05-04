@@ -76,14 +76,19 @@ export default function CompactCard({
         backgroundColor: hexToRgba(themeHex, isLocked ? 0.03 : 0.06),
         border: `0.5px solid ${hexToRgba(themeHex, isLocked ? 0.12 : 0.2)}`,
       }}
-      className={`relative rounded-lg p-2.5 md:p-3 text-left flex flex-col items-stretch min-h-[88px] md:min-h-[96px] transition-opacity ${
+      className={`relative w-full h-full rounded-xl p-3 md:p-4 text-left flex flex-col gap-2.5 items-stretch min-h-[112px] md:min-h-[120px] transition-opacity ${
         isLocked ? 'opacity-60 cursor-not-allowed' : 'hover:opacity-80'
       }`}
     >
-      <div className="flex items-center justify-between mb-1.5">
+      <div className="flex items-center justify-between">
         <span
-          className="material-symbols-outlined text-[16px] md:text-[18px]"
-          style={{ color: themeHex, ...(iconFill ? FILL_1 : {}) }}
+          className="w-8 h-8 md:w-9 md:h-9 rounded-lg grid place-items-center material-symbols-outlined text-[16px] md:text-[18px] border"
+          style={{
+            color: themeHex,
+            backgroundColor: hexToRgba(themeHex, 0.12),
+            borderColor: hexToRgba(themeHex, 0.25),
+            ...(iconFill ? FILL_1 : {}),
+          }}
         >
           {icon}
         </span>
@@ -109,10 +114,10 @@ export default function CompactCard({
           )
         )}
       </div>
-      <div className="text-[11px] md:text-[12px] text-on-surface font-medium leading-tight">
+      <div className="text-[13px] md:text-[14px] text-on-surface font-bold leading-tight">
         {title}
       </div>
-      <div className="text-[9px] md:text-[10px] text-on-surface-variant/40 mt-0.5">
+      <div className="text-[10px] md:text-[11px] text-on-surface-variant/60 leading-snug">
         {subtitle}
       </div>
       {isLocked ? (

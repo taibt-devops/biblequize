@@ -306,7 +306,7 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
           {VARIETY_CARDS.map(card => (
             <div
               key={card.id}
-              className="snap-start shrink-0 w-[180px] sm:w-auto sm:shrink"
+              className="snap-start shrink-0 w-[180px] sm:w-full"
             ><CompactCard
               id={card.id}
               icon={card.icon}

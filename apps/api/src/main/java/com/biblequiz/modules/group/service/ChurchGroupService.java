@@ -284,6 +284,7 @@ public class ChurchGroupService {
             Map<String, Object> entry = new LinkedHashMap<>();
             entry.put("id", g.getId());
             entry.put("name", g.getName());
+            entry.put("code", g.getGroupCode());
             entry.put("description", g.getDescription());
             entry.put("avatarUrl", g.getAvatarUrl());
             entry.put("memberCount", g.getMemberCount());
