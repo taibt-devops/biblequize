@@ -87,8 +87,8 @@ const GROUP_CARDS: CompactConfig[] = [
     titleKey: 'gameModes.rooms',
     subtitleKey: 'home.compactSubtitles.multiplayer',
     route: '/multiplayer',
-    lockedUntilPoints: 1000,
-    lockedUnlockTierKey: 'tiers.seeker',
+    // Bui 2026-05-05: multiplayer không khóa — anyone can join a room
+    // regardless of tier.
   },
   {
     id: 'tournament',

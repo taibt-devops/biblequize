@@ -268,9 +268,7 @@ describe('GameModeGrid (Option Y)', () => {
         }
         return Promise.reject(new Error('Not mocked: ' + url))
       })
-      // HR-4: multiplayer locked < 1000 XP — use unlocked stats so live
-      // hint replaces the lock-reason text.
-      renderGrid({ userStats: { totalPoints: 50000, currentStreak: 5 } })
+      renderGrid()
       await waitFor(() => {
         expect(screen.getByTestId('compact-card-multiplayer-hint').textContent).toContain('3')
       })
@@ -444,35 +442,25 @@ describe('GameModeGrid (Option Y)', () => {
       expect(screen.getByTestId('compact-card-tournament')).toBeInTheDocument()
     })
 
-    it('locks Multiplayer + Tournament for new user (totalPoints=0)', async () => {
+    it('locks Tournament for new user; Multiplayer stays unlocked (Bui 2026-05-05)', async () => {
       renderGrid({ userStats: { currentStreak: 0, totalPoints: 0 } })
       await waitFor(() => {
-        expect(screen.getByTestId('compact-card-multiplayer-lock-chip')).toBeInTheDocument()
+        expect(screen.getByTestId('compact-card-tournament-lock-chip')).toBeInTheDocument()
       })
-      expect(screen.getByTestId('compact-card-tournament-lock-chip')).toBeInTheDocument()
-      // Lock reason mentions the unlocking tier
-      expect(screen.getByTestId('compact-card-multiplayer-lock-reason').textContent)
-        .toMatch(/Người Tìm Kiếm/)
       expect(screen.getByTestId('compact-card-tournament-lock-reason').textContent)
         .toMatch(/Hiền Triết/)
+      // Multiplayer is open to everyone — anyone can join a room.
+      expect(screen.queryByTestId('compact-card-multiplayer-lock-chip')).not.toBeInTheDocument()
     })
 
-    it('unlocks Multiplayer at 1000 XP but Tournament still locked', async () => {
-      renderGrid({ userStats: { currentStreak: 5, totalPoints: 1000 } })
-      await waitFor(() => {
-        expect(screen.queryByTestId('compact-card-multiplayer-lock-chip')).not.toBeInTheDocument()
-      })
-      expect(screen.getByTestId('compact-card-tournament-lock-chip')).toBeInTheDocument()
-    })
-
-    it('locked Multiplayer click does NOT navigate', async () => {
+    it('Multiplayer click navigates to /multiplayer at any tier', async () => {
       renderGrid({ userStats: { currentStreak: 0, totalPoints: 0 } })
       await waitFor(() => {
-        expect(screen.getByTestId('compact-card-multiplayer-lock-chip')).toBeInTheDocument()
+        expect(screen.getByTestId('compact-card-multiplayer')).toBeInTheDocument()
       })
       const user = userEvent.setup()
       await user.click(screen.getByTestId('compact-card-multiplayer'))
-      expect(mockNavigate).not.toHaveBeenCalledWith('/multiplayer')
+      expect(mockNavigate).toHaveBeenCalledWith('/multiplayer')
     })
 
     it('Variety modes are NEVER locked even at 0 XP', async () => {
