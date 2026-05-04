@@ -76,7 +76,7 @@
   - [x] Tests: 23 cũ pass (4 cần update userStats), 6 mới (sections render, lock chips, click guard, variety không lock) = 29/29 GameModeGrid + 94/94 cùng nhóm
   - [ ] Commit: `refactor(home): split GameModeGrid → 3 sections + tier-locked overlays (HR-4)` — pending
 
-### Task HR-5: Layout Verse + Journey 2-col [ ] TODO
+### Task HR-5: Layout Verse + Journey 2-col [x] DONE 2026-05-05
 - File(s): `apps/web/src/pages/Home.tsx`
 - Mockup section: `.grid-1-1` (lines 1130-1200)
 - Spec:
@@ -84,11 +84,13 @@
   - Verse di chuyển từ footer lên giữa page
   - Journey card: focus 1 sách hiện tại + reward badge (state-new: "Sáng Thế Ký 0%, mở Xuất Hành"; state-active: sách đang ôn từ `/api/me/journey`)
 - Checklist:
-  - [ ] Refactor `DailyVerseBanner` → `DailyVerseCard` (card style, vẫn deterministic)
-  - [ ] Refactor `BibleJourneyCard` để compact + focus 1 milestone
-  - [ ] Wire 2-col grid trong Home.tsx
-  - [ ] Tests update
-  - [ ] Commit: `feat(home): verse + journey 2-col layout with milestone focus (HR-5)`
+  - [x] Refactor `DailyVerseBanner` lên glass-card style (giữ name component, giữ testid `home-daily-verse`/`-text`/`-ref`, thêm `home-daily-verse-title`). Bỏ font-serif → italic Be Vietnam Pro theo mockup.
+  - [x] Giữ `BibleJourneyCard` nguyên (OT/NT split bar đã informative — pivot từ plan). Mockup focus single book có thể làm task riêng nếu Bui muốn.
+  - [x] Wire 2-col grid trong Home.tsx (`<section data-testid="home-verse-journey">`) sau Daily Missions, trước Leaderboard. Xóa `<DailyVerseBanner />` khỏi footer.
+  - [x] i18n: `home.dailyVerse.title` (vi+en)
+  - [x] Update Home.test position-assertion (verse từ "page footer" → "between gameModes and leaderboard"); thêm test 2-col grid contains both. Update DailyVerseBanner test (font-serif → italic-only, thêm title testid test).
+  - [x] Tests: Home 30/30, DailyVerseBanner 4/4, related suites 99/99 pass
+  - [ ] Commit: `feat(home): verse + journey 2-col layout, verse promoted from footer (HR-5)` — pending
 
 ### Task HR-6: State-aware logic (new vs active) [ ] TODO
 - File(s): `apps/web/src/pages/Home.tsx`

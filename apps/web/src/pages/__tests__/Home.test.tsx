@@ -335,24 +335,34 @@ describe('Home Dashboard', () => {
     })
 
     /**
-     * Verse moved out of the right sidebar (where it was an afterthought
-     * under Activity Feed) to a full-width banner directly under the
-     * hero section — see docs/prompts/PROMPT_HOME_REFACTOR_FIXES.md
-     * Fix 3 ("brand soul" positioning).
+     * HR-5: verse moves from page footer into a 2-col Verse + Journey
+     * grid placed AFTER game modes + daily missions but BEFORE the
+     * leaderboard. Mockup `.grid-1-1` puts spiritual content above
+     * comparison-heavy leaderboard.
      */
-    it('renders the verse banner as the page footer (after game modes)', async () => {
-      // H8 demoted the verse from a hero ornament to a decorative
-      // footer at the bottom of Home — quieter, devotional close to
-      // the page rather than a visual peer of the gameplay rows.
+    it('renders the verse card after game modes and before the leaderboard', async () => {
       renderHome()
       await waitFor(() => {
         expect(screen.getByTestId('home-daily-verse')).toBeInTheDocument()
       })
       const verse = screen.getByTestId('home-daily-verse')
       const gameModes = screen.getByTestId('game-mode-grid')
-      const cmp = verse.compareDocumentPosition(gameModes)
-      // DOCUMENT_POSITION_PRECEDING = 2 — verse comes AFTER game modes.
-      expect(cmp & Node.DOCUMENT_POSITION_PRECEDING).toBeTruthy()
+      const leaderboard = screen.getByTestId('home-leaderboard')
+      // verse comes AFTER game modes
+      expect(gameModes.compareDocumentPosition(verse) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
+      // verse comes BEFORE leaderboard
+      expect(verse.compareDocumentPosition(leaderboard) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
+    })
+
+    it('verse and journey share the 2-col grid', async () => {
+      renderHome()
+      await waitFor(() => {
+        // Both children render asynchronously (journey gates on /api/me/journey).
+        expect(screen.getByTestId('bible-journey-card')).toBeInTheDocument()
+      })
+      const grid = screen.getByTestId('home-verse-journey')
+      expect(grid.contains(screen.getByTestId('home-daily-verse'))).toBe(true)
+      expect(grid.contains(screen.getByTestId('bible-journey-card'))).toBe(true)
     })
   })
 

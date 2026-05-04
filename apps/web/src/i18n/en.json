@@ -747,6 +747,9 @@
     "modeLocked": {
       "reason": "Reach {{tier}} to unlock"
     },
+    "dailyVerse": {
+      "title": "Today's verse"
+    },
     "defaultName": "Learner",
     "maxTierReached": "Highest tier reached!",
     "tierProgress": "Tier progress",

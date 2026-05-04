@@ -747,6 +747,9 @@
     "modeLocked": {
       "reason": "Đạt {{tier}} để mở khóa"
     },
+    "dailyVerse": {
+      "title": "Câu gốc hôm nay"
+    },
     "defaultName": "Người Học",
     "maxTierReached": "Đã đạt hạng cao nhất!",
     "tierProgress": "Tiến trình hạng",

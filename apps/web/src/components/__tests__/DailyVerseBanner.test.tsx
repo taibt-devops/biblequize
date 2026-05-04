@@ -1,7 +1,12 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, beforeAll } from 'vitest'
 import { render, screen } from '@testing-library/react'
+import i18n from '../../i18n'
 
 import DailyVerseBanner from '../DailyVerseBanner'
+
+beforeAll(() => {
+  i18n.changeLanguage('vi')
+})
 
 describe('DailyVerseBanner', () => {
   it('renders the home-daily-verse section with text + reference', () => {
@@ -22,12 +27,20 @@ describe('DailyVerseBanner', () => {
     expect(ref.startsWith('—')).toBe(true)
   })
 
-  it('verse text uses italic serif typography', () => {
+  it('verse text uses italic typography', () => {
     render(<DailyVerseBanner />)
     const text = screen.getByTestId('home-daily-verse-text')
-    // Tailwind utility classes are still on the element in JSDOM —
-    // assert the design-token contract (italic serif font) didn't drift.
+    // HR-5: serif dropped (mockup `.verse-text` is italic Be Vietnam Pro,
+    // not Georgia). Italic + leading-relaxed is the new design contract.
     expect(text.className).toContain('italic')
-    expect(text.className).toContain('font-serif')
+  })
+
+  // ── HR-5: glass-card upgrade ──────────────────────────────────
+
+  it('renders the card title header (HR-5 glass-card)', () => {
+    render(<DailyVerseBanner />)
+    // i18n key used; assert via testid since text may be the raw key
+    // when i18n hasn't fully resolved in isolated unit tests.
+    expect(screen.getByTestId('home-daily-verse-title')).toBeInTheDocument()
   })
 })

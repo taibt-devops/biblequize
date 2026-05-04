@@ -126,8 +126,14 @@ export default function Home() {
         <div data-testid="home-daily-missions"><DailyMissionsCard /></div>
       </section>
 
-      {/* ── Bible Journey 66 books (H6 elevated split bar) ── */}
-      <BibleJourneyCard />
+      {/* ── Verse + Journey 2-col (HR-5 — verse promoted from footer) ── */}
+      <section
+        data-testid="home-verse-journey"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-4"
+      >
+        <DailyVerseBanner />
+        <BibleJourneyCard />
+      </section>
 
       {/* ── Aspirational next-tier perks (returns null at tier 6) ── */}
       <TierPerksTeaser userTier={userTierLevel} totalPoints={totalPoints} />
@@ -209,9 +215,6 @@ export default function Home() {
         {/* Activity */}
         <ActivityFeed userCreatedAt={meData?.createdAt} />
       </section>
-
-      {/* ── Daily verse decorative footer (H8) ── */}
-      <DailyVerseBanner />
     </div>
   )
 }
