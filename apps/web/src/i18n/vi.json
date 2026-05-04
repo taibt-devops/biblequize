@@ -726,6 +726,11 @@
     "greetingMorning": "Chào buổi sáng",
     "greetingAfternoon": "Chào buổi chiều",
     "greetingEvening": "Chào buổi tối",
+    "greeting": {
+      "streak": "Streak",
+      "energy": "Năng lượng",
+      "seasonPoints": "Mùa này"
+    },
     "defaultName": "Người Học",
     "maxTierReached": "Đã đạt hạng cao nhất!",
     "tierProgress": "Tiến trình hạng",

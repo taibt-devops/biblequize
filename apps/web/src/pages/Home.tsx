@@ -11,7 +11,7 @@ import EmptyLeaderboardCTA from '../components/EmptyLeaderboardCTA'
 import FeaturedDailyChallenge from '../components/FeaturedDailyChallenge'
 import DailyVerseBanner from '../components/DailyVerseBanner'
 import GameModeGrid from '../components/GameModeGrid'
-import HeroStatSheet from '../components/HeroStatSheet'
+import GreetingCard from '../components/GreetingCard'
 import TierPerksTeaser from '../components/TierPerksTeaser'
 import TutorialOverlay from '../components/TutorialOverlay'
 import { useAuthStore } from '../store/authStore'
@@ -96,8 +96,8 @@ export default function Home() {
       <ComebackModal />
       <DailyBonusModal />
       <TutorialOverlay />
-      {/* ── Hero (V4 sub-tier stars) ── */}
-      <HeroStatSheet />
+      {/* ── Greeting card (HR-1: replaces HeroStatSheet) ── */}
+      <GreetingCard />
 
       {/* ── Featured Daily Challenge (hero CTA for tier-1) ── */}
       <FeaturedDailyChallenge />

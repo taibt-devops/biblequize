@@ -1,5 +1,113 @@
 # TODO
 
+## 2026-05-05 — Home Redesign theo mockup `home_redesign_mockup.html` [IN PROGRESS]
+
+> **Source:** Bui yêu cầu redesign Home theo `docs/designs/home_redesign_mockup.html`. Option A incremental (7 commits).
+> **Decisions chốt với Bui (2026-05-05):**
+> - Q2: Thay HoàN TOÀN HeroStatSheet bằng `GreetingCard` mới (viết lại test).
+> - Q3a: User mới = `totalPoints < 1000` (chưa Tier 2 Người Tìm Kiếm).
+> - Q4: Variety routes/endpoints đã verify tồn tại (`/weekly-quiz`, `/mystery-mode`, `/speed-round` + BE `/weekly`, `/mystery`, `/speed-round`).
+> - Q5: Dùng `ActivityFeed` hiện tại (global), defer group-scoped endpoint.
+>
+> **Baseline tests:** Home 91, HeroStatSheet 23, FeaturedDailyChallenge 29, GameModeGrid 58 = 201. Sau redesign: HeroStatSheet xóa, GreetingCard mới (≥10 tests), tổng phải ≥ baseline.
+>
+> **E2E Test Gate:** `tests/e2e/{smoke,happy-path}/web-user/W-M02-home.spec.ts` đã có — sau T6 phải update selectors cho layout mới + thêm TC cho state-aware (new vs active).
+
+### Task HR-1: GreetingCard mới (thay HeroStatSheet) [x] DONE 2026-05-05
+- File(s): `apps/web/src/components/GreetingCard.tsx` (NEW), `GreetingCard.test.tsx` (NEW), xóa `HeroStatSheet.tsx` + test sau khi Home wire xong.
+- Mockup section: `.greeting-card` (lines 115-200, 780-842).
+- Spec:
+  - Avatar 72px gold gradient + tier badge floating bottom-right (🌱 cho Tier 1, biểu tượng tier 2-6 từ `tiers.ts`)
+  - Greeting "Chào buổi sáng/chiều/tối" theo giờ local + tên user
+  - Tier progress: SEGMENTED bar 8px + 5 milestone dots (NOT 5 stars) — `currentTier → nextTier` label, fill % theo `(totalPoints - tierMin) / (nextTierMin - tierMin)`
+  - 3 inline stats với border-left separator: 🔥 Streak, ⚡ Năng lượng, 📊 Mùa này
+  - Mobile: stack vertical, ẩn separator
+- Data sources: `useAuthStore.user`, `/api/me` (currentStreak), `/tier-progress` (totalPoints, nextTier), `/ranked-status` (energy)
+- Checklist:
+  - [x] Component + i18n keys (`home.greeting.streak/energy/seasonPoints` added VI+EN)
+  - [x] 15 unit tests pass (avatar, greeting time x3 buckets, tier badge emoji, label current→next, fill width %, XP label, milestones reached, clamp >5, max-tier hides progress, stats render, fallback 0, thousands separator)
+  - [x] Vitest pass: GreetingCard 15/15, Home.test.tsx 28/28 sau khi update 7 testids cũ → mới
+  - [ ] Commit: `feat(home): GreetingCard with segmented tier bar + inline stats (HR-1)` — pending Bui approval
+  - **Note:** HeroStatSheet.tsx + test file giữ lại (chưa dùng) — sẽ xóa ở HR-7 cleanup
+
+### Task HR-2: Refactor FeaturedDailyChallenge theo mockup [ ] TODO
+- File(s): `apps/web/src/components/FeaturedDailyChallenge.tsx`, test file
+- Mockup section: `.dc-hero` (lines 234-301, 845-874)
+- Spec changes:
+  - Icon 64px gradient red→orange với `local_fire_department`
+  - 4 meta chips: ⏱ 5 phút · 📝 5 câu · ⭐ +50 XP · ✨ Mùa Ngũ Tuần ×1.5 (chip mùa lấy từ `/api/seasons/active`, ẩn nếu không có multiplier)
+  - CTA + countdown nằm bên phải cùng column (countdown nhỏ dưới CTA)
+  - BỎ "Chỉ hôm nay" badge nếu có
+- Checklist:
+  - [ ] Update layout 3-col grid (icon | info | CTA wrap)
+  - [ ] Wire season chip
+  - [ ] Update existing tests + thêm test season chip
+  - [ ] Commit: `feat(home): redesign FeaturedDailyChallenge — 4 meta chips + season multiplier (HR-2)`
+
+### Task HR-3: MotivationCard cho user mới [ ] TODO
+- File(s): `apps/web/src/components/MotivationCard.tsx` (NEW), test
+- Mockup section: `.motivation-card` (lines 660-695, 877-891)
+- Spec:
+  - Hiển thị CHỈ KHI `totalPoints < 1000`
+  - Icon 56px blue gradient `tips_and_updates` + "Bước 1: Hoàn thành thử thách hôm nay"
+  - CTA "Bắt đầu →" navigate `/daily-challenge`
+- Checklist:
+  - [ ] Component + i18n keys
+  - [ ] ≥ 8 tests (render khi <1000, ẩn khi ≥1000, click CTA navigate, props, a11y)
+  - [ ] Commit: `feat(home): MotivationCard for new users (HR-3)`
+
+### Task HR-4: Tách GameModeGrid thành 3 sections [ ] TODO
+- File(s): `apps/web/src/components/GameModeGrid.tsx` → split thành `PrimaryModes.tsx` + `VarietyModes.tsx` + `GroupModes.tsx`, test
+- Mockup sections: `.modes-primary` (Practice + Ranked), `.variety-grid` (Weekly/Mystery/Speed), `.modes-primary` thứ 2 (Multiplayer + Tournament)
+- Spec:
+  - **Primary (2-col):** Practice (always unlocked) + Ranked (locked nếu `totalPoints < 1000`, hiện overlay "Đạt Người Tìm Kiếm để mở khóa")
+  - **Variety (3-col):** Weekly / Mystery / Speed — link tới `/weekly-quiz`, `/mystery-mode`, `/speed-round` (đã verify exists). Note "không ảnh hưởng XP/leaderboard" trong section header.
+  - **Group (2-col):** Phòng chơi (locked < 1000 XP, link `/multiplayer`) + Giải đấu (locked < Tier 4 = 15000 XP, link `/tournament`)
+  - Mỗi card có locked overlay rõ ràng + status chip (unlocked/locked)
+- Checklist:
+  - [ ] 3 components mới + tests (≥ 6 tests mỗi component cho locked/unlocked + nav)
+  - [ ] Replace `<GameModeGrid>` trong Home.tsx bằng 3 sections riêng
+  - [ ] Tests Vitest pass
+  - [ ] Commit: `refactor(home): split GameModeGrid → Primary/Variety/Group with tier-locked overlays (HR-4)`
+
+### Task HR-5: Layout Verse + Journey 2-col [ ] TODO
+- File(s): `apps/web/src/pages/Home.tsx`
+- Mockup section: `.grid-1-1` (lines 1130-1200)
+- Spec:
+  - `DailyVerseBanner` (style lại thành card với glass-card, không phải decorative footer) + `BibleJourneyCard` (compact, focus next milestone) — 2-col grid
+  - Verse di chuyển từ footer lên giữa page
+  - Journey card: focus 1 sách hiện tại + reward badge (state-new: "Sáng Thế Ký 0%, mở Xuất Hành"; state-active: sách đang ôn từ `/api/me/journey`)
+- Checklist:
+  - [ ] Refactor `DailyVerseBanner` → `DailyVerseCard` (card style, vẫn deterministic)
+  - [ ] Refactor `BibleJourneyCard` để compact + focus 1 milestone
+  - [ ] Wire 2-col grid trong Home.tsx
+  - [ ] Tests update
+  - [ ] Commit: `feat(home): verse + journey 2-col layout with milestone focus (HR-5)`
+
+### Task HR-6: State-aware logic (new vs active) [ ] TODO
+- File(s): `apps/web/src/pages/Home.tsx`
+- Spec: Khi `totalPoints < 1000`:
+  - HIỂN THỊ: GreetingCard, FeaturedDailyChallenge, MotivationCard, PrimaryModes (Ranked locked), VarietyModes, GroupModes (locked), Verse+Journey
+  - ẨN: DailyMissionsCard, Leaderboard mini, ActivityFeed
+- Checklist:
+  - [ ] Conditional rendering với `isNewUser = totalPoints < 1000`
+  - [ ] Update Home.test.tsx state-aware tests (≥ 4 tests cho new vs active rendering)
+  - [ ] Commit: `feat(home): state-aware rendering for new users (HR-6)`
+
+### Task HR-7: Full regression + i18n + e2e update [ ] TODO
+- Checklist:
+  - [ ] Xóa `HeroStatSheet.tsx` + test (đã thay bởi GreetingCard từ HR-1)
+  - [ ] Update `tests/e2e/smoke/web-user/W-M02-home.spec.ts` selectors mới
+  - [ ] Update `tests/e2e/happy-path/web-user/W-M02-home.spec.ts` + thêm TC state-new vs state-active
+  - [ ] Update `tests/e2e/playwright/specs/{smoke,happy-path}/W-M02-*.md` TC spec
+  - [ ] Update `tests/e2e/TC-TODO.md` status
+  - [ ] `npm run validate:i18n` — 0 missing
+  - [ ] Tầng 3: `npx vitest run` (FE), `./mvnw test` (BE) — pass hết, count ≥ baseline
+  - [ ] `npx playwright test tests/e2e/smoke/web-user/W-M02-home.spec.ts` — pass
+  - [ ] Commit: `chore(home): finalize redesign — e2e + i18n + cleanup (HR-7)`
+
+---
+
 ## 2026-05-02 — Variety Modes Leaderboard Fix (Option A) [DONE]
 
 > Per audit `apps/api/AUDIT_VARIETY_MODES_LEADERBOARD.md` (2026-05-01) + Bui decision 2026-05-02: Practice/Single NEVER grant ranked leaderboard points. Daily Challenge intentionally grants +50 XP (motivation). Variety modes (Mystery/Speed/Weekly/Seasonal/Daily Bonus) are "for fun" — no XP, no leaderboard. Milestone Burst UI disabled until wired.

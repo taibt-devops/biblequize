@@ -726,6 +726,11 @@
     "greetingMorning": "Good morning",
     "greetingAfternoon": "Good afternoon",
     "greetingEvening": "Good evening",
+    "greeting": {
+      "streak": "Streak",
+      "energy": "Energy",
+      "seasonPoints": "Season"
+    },
     "defaultName": "Learner",
     "maxTierReached": "Highest tier reached!",
     "tierProgress": "Tier progress",

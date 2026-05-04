@@ -92,25 +92,22 @@ describe('Home Dashboard', () => {
 
   describe('Greeting & Tier', () => {
     it('displays time-based greeting with user name', async () => {
-      // V4 hero splits greeting line and user name into separate
-      // elements (mockup: greeting label sits above the name with
-      // smaller weight). Assert both pieces independently.
+      // HR-1: GreetingCard splits greeting + name into separate testids.
       renderHome()
       await waitFor(() => {
         const h = new Date().getHours()
         const expected = h < 12 ? 'Chào buổi sáng' : h < 18 ? 'Chào buổi chiều' : 'Chào buổi tối'
-        expect(screen.getByTestId('home-greeting').textContent).toContain(expected)
-        expect(screen.getByTestId('home-user-name').textContent).toBe('Nghĩa')
+        expect(screen.getByTestId('home-greeting-meta').textContent).toContain(expected)
+        expect(screen.getByTestId('home-greeting-name').textContent).toBe('Nghĩa')
       })
     })
 
-    it('displays tier progress bar', async () => {
-      // V4 hero exposes the progress fill via data-testid; the bar uses
-      // the .gold-gradient utility class (no more .hero-v3-progress-fill).
+    it('displays tier progress bar with milestones', async () => {
+      // HR-1: segmented bar with 5 milestone dots replaces the 5-star UI.
       renderHome()
       await waitFor(() => {
-        expect(screen.getByTestId('home-hero-progress-fill')).toBeInTheDocument()
-        expect(screen.getByTestId('home-hero-stars')).toBeInTheDocument()
+        expect(screen.getByTestId('home-greeting-progress-fill')).toBeInTheDocument()
+        expect(screen.getByTestId('home-greeting-milestone-0')).toBeInTheDocument()
       })
     })
 
@@ -119,18 +116,20 @@ describe('Home Dashboard', () => {
       await waitFor(() => { expect(screen.getAllByText(/8,200/).length).toBeGreaterThan(0) })
     })
 
-    it('displays current tier (Môn Đồ)', async () => {
+    it('displays current tier (Môn Đồ) in progress label', async () => {
       renderHome()
-      // Tier name lives in a dedicated span inside the V3 tier-label
-      // ("MÔN ĐỒ • TIER 3"), so target it explicitly.
-      await waitFor(() => { expect(screen.getByTestId('home-tier-name').textContent).toBe('Môn Đồ') })
+      // HR-1: tier name appears inside greeting tier-label "current → next".
+      await waitFor(() => {
+        expect(screen.getByTestId('home-greeting-tier-label').textContent).toContain('Môn Đồ')
+      })
     })
 
     it('progress bar width correct for 8200 points (32%)', async () => {
       renderHome()
       await waitFor(() => {
-        const bar = document.querySelector('.gold-gradient')
-        expect((bar as HTMLElement).style.width).toBe('32%')
+        const bar = screen.getByTestId('home-greeting-progress-fill')
+        // 8200 in tier 3 (5000-14999): (8200-5000)/(15000-5000) = 32%
+        expect(bar.style.width).toBe('32%')
       })
     })
 
@@ -142,10 +141,9 @@ describe('Home Dashboard', () => {
       })
       renderHome()
       await waitFor(() => {
-        const bar = screen.getByTestId('home-hero-progress-fill')
+        const bar = screen.getByTestId('home-greeting-progress-fill')
         expect(bar.style.width).toBe('0%')
-        // Tier name lives inside the tier pill — match against textContent.
-        expect(screen.getByTestId('home-tier-name').textContent).toBe('Tân Tín Hữu')
+        expect(screen.getByTestId('home-greeting-tier-label').textContent).toContain('Tân Tín Hữu')
       })
     })
 
@@ -157,11 +155,8 @@ describe('Home Dashboard', () => {
       })
       renderHome()
       await waitFor(() => {
-        // The hero collapses tier-progress copy down to a single
-        // "max tier reached" line once the user is at Apostle.
-        const msg = screen.getByTestId('home-max-tier-msg')
+        const msg = screen.getByTestId('home-greeting-max-tier')
         expect(msg).toBeInTheDocument()
-        // V3 prefixes the message with the 👑 emoji; assert substring.
         expect(msg.textContent).toContain('Đã đạt hạng cao nhất!')
       })
     })
@@ -367,7 +362,7 @@ describe('Home Dashboard', () => {
       renderHome()
       await waitFor(() => {
         expect(screen.getAllByText(/Nghĩa/).length).toBeGreaterThan(0)
-        expect(screen.getByTestId('home-tier-name').textContent).toBe('Tân Tín Hữu')
+        expect(screen.getByTestId('home-greeting-tier-label').textContent).toContain('Tân Tín Hữu')
       })
     })
 
