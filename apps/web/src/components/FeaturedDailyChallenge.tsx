@@ -20,11 +20,6 @@ interface DailyChallengeResponse {
   totalQuestions: number
 }
 
-/**
- * Mirror of {@link com.biblequiz.modules.daily.service.DailyChallengeService#getResultData}.
- * Only present (i.e. fields beyond {@code completed}) when the user
- * actually finished today.
- */
 interface DailyChallengeResult {
   completed: boolean
   correctCount?: number
@@ -33,11 +28,14 @@ interface DailyChallengeResult {
   nextResetAt?: string
 }
 
-/**
- * Pick a celebratory message keyed by accuracy bucket. Three buckets so
- * the copy stays warm without leaking exact percentile data (which
- * would need an aggregate query we don't have yet).
- */
+interface SeasonResponse {
+  active: boolean
+  id?: string
+  name?: string
+  startDate?: string
+  endDate?: string
+}
+
 function scoreMessageKey(correct: number, total: number): string {
   if (total <= 0) return 'home.featuredDaily.completedState.scoreEncouraging'
   const pct = (correct / total) * 100
@@ -66,18 +64,14 @@ function formatCountdown(ms: number): string {
 }
 
 /**
- * Daily Challenge compact card per
- * docs/designs/biblequiz_home_redesign_proposal.html. Renders one of
- * three states: loading skeleton, active (CTA), or completed (review).
+ * Daily Challenge hero (HR-2 redesign) per
+ * docs/designs/home_redesign_mockup.html `.dc-hero`. 3-col grid: red→orange
+ * icon | label/title/meta-chips | CTA + countdown stacked. Mobile collapses
+ * to single column. Three states preserved: loading, active, completed.
  *
- * Data source: GET /api/daily-challenge for today's tagline + book mix,
- * plus GET /api/daily-challenge/result (gated on {@code alreadyCompleted})
- * for the score breakdown shown in the completed state.
- *
- * Layout differs between desktop and mobile:
- *   - desktop: countdown sits inline at the right of the meta row
- *   - mobile (< md): countdown drops to its own line under the CTA
- *     (mockup line 69) so the meta row stays scannable on narrow widths.
+ * Season chip shows only the season name (no XP multiplier) because BE
+ * does not currently apply any season multiplier to Daily Challenge —
+ * see DECISIONS.md 2026-05-02 (variety/daily are flat +50 XP).
  */
 export default function FeaturedDailyChallenge() {
   const { t, i18n } = useTranslation()
@@ -98,6 +92,12 @@ export default function FeaturedDailyChallenge() {
     staleTime: 60_000,
   })
 
+  const { data: season } = useQuery<SeasonResponse>({
+    queryKey: ['season-active'],
+    queryFn: () => api.get('/api/seasons/active').then(r => r.data),
+    staleTime: 5 * 60_000,
+  })
+
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 1000)
     return () => clearInterval(id)
@@ -112,12 +112,8 @@ export default function FeaturedDailyChallenge() {
   const tagline = useMemo(() => {
     const count = uniqueBookNames.length
     if (count === 0) return ''
-    if (count === 1) {
-      return t('home.featuredDaily.singleBook', { book: uniqueBookNames[0] })
-    }
-    if (count <= 3) {
-      return t('home.featuredDaily.fewBooks', { count })
-    }
+    if (count === 1) return t('home.featuredDaily.singleBook', { book: uniqueBookNames[0] })
+    if (count <= 3) return t('home.featuredDaily.fewBooks', { count })
     return t('home.featuredDaily.manyBooks', { count })
   }, [uniqueBookNames, t])
 
@@ -157,7 +153,7 @@ export default function FeaturedDailyChallenge() {
   }
 
   const completed = data.alreadyCompleted
-  const bookList = uniqueBookNames.join(' • ')
+  const seasonName = season?.active && season.name ? season.name : null
 
   // ── State B: completed today ──
   if (completed) {
@@ -170,9 +166,8 @@ export default function FeaturedDailyChallenge() {
       <div
         data-testid="featured-daily-challenge"
         data-state="completed"
-        className="relative rounded-2xl bg-[rgba(50,52,64,0.4)] border border-secondary/40 p-4 md:p-5"
+        className="relative overflow-hidden rounded-2xl border border-secondary/30 bg-[rgba(50,52,64,0.4)] backdrop-blur-md p-5 md:p-6"
       >
-        {/* Header row: title label (left) + done badge (right) */}
         <div className="flex items-center justify-between mb-2">
           <h2 className="text-[10px] md:text-[11px] font-bold text-secondary/70 uppercase tracking-[0.6px] md:tracking-[0.8px]">
             {t('home.featuredDaily.completedState.title')}
@@ -219,76 +214,107 @@ export default function FeaturedDailyChallenge() {
     )
   }
 
-  // ── State A: active (not completed) ──
+  // ── State A: active (mockup .dc-hero — 3-col grid: icon | info | CTA) ──
   return (
     <div
       data-testid="featured-daily-challenge"
       data-state="active"
-      className="relative rounded-2xl bg-[rgba(50,52,64,0.4)] border border-secondary/40 p-4 md:p-5"
+      className="relative overflow-hidden rounded-2xl border border-[rgba(239,68,68,0.2)] bg-[linear-gradient(135deg,rgba(239,68,68,0.08)_0%,rgba(50,52,64,0.4)_60%)] backdrop-blur-md p-5 md:p-6"
     >
-      {/* Header row: title label (left) + "ONLY TODAY" pill (right) */}
-      <div className="flex items-center justify-between mb-2">
-        <h2 className="text-[10px] md:text-[11px] font-bold text-secondary/70 uppercase tracking-[0.6px] md:tracking-[0.8px]">
-          {t('home.featuredDaily.title')}
-        </h2>
-        <span
-          data-testid="featured-daily-pill"
-          className="bg-secondary/15 text-secondary px-2 py-0.5 rounded-full text-[9px] md:text-[10px] font-medium"
-        >
-          {t('home.featuredDaily.onlyToday')}
-        </span>
-      </div>
-
-      {/* Theme tagline */}
-      <p
-        data-testid="featured-daily-tagline"
-        className="text-on-surface text-[15px] md:text-[17px] font-medium mb-1.5 leading-tight"
-      >
-        {tagline}
-      </p>
-
-      {/* Book list (only when ≥2 unique books — single-book tagline already mentions it) */}
-      {uniqueBookNames.length > 1 && (
-        <p
-          data-testid="featured-daily-booklist"
-          className="text-[11px] md:text-xs text-on-surface-variant/55 leading-relaxed mb-3"
-        >
-          {bookList}
-        </p>
-      )}
-
-      {/* Meta row + inline countdown (desktop only) */}
-      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] md:text-[11px] mb-3">
-        <span className="text-on-surface-variant/60">⏱ {t('home.featuredDaily.metaTime')}</span>
-        <span className="text-on-surface-variant/60">📝 {t('home.featuredDaily.metaQuestions')}</span>
-        <span className="text-secondary font-medium">{t('home.featuredDaily.metaXp')}</span>
-        <span className="hidden md:inline ml-auto text-on-surface-variant/40">
-          {t('home.featuredDaily.countdownShort', { time: countdown })}
-        </span>
-      </div>
-
-      <Link
-        to="/daily"
-        data-testid="featured-daily-cta"
-        className="block w-full text-center gold-gradient text-on-secondary font-medium rounded-lg py-3 md:py-3.5 text-sm md:text-base"
-      >
-        ▶ {t('home.featuredDaily.cta')}
-      </Link>
-
-      {/* Countdown — exposes single testid; desktop variant above is
-          for visual placement only (no testid). */}
+      {/* Decorative radial blob (top-right) */}
       <div
-        data-testid="featured-daily-countdown"
-        className="md:hidden text-center text-[9px] text-on-surface-variant/40 mt-2"
-      >
-        {t('home.featuredDaily.countdownShort', { time: countdown })}
-      </div>
-      <div
-        data-testid="featured-daily-countdown-desktop"
-        className="hidden"
-      >
-        {t('home.featuredDaily.countdownShort', { time: countdown })}
+        aria-hidden
+        className="absolute -top-10 -right-10 w-[200px] h-[200px] rounded-full pointer-events-none bg-[radial-gradient(circle,rgba(239,68,68,0.12)_0%,transparent_70%)]"
+      />
+
+      <div className="relative grid grid-cols-1 md:grid-cols-[auto_1fr_auto] gap-4 md:gap-6 items-center">
+        {/* Icon (red→orange gradient, 64px) */}
+        <div
+          data-testid="featured-daily-icon"
+          className="w-16 h-16 rounded-2xl grid place-items-center text-white shadow-[0_8px_24px_rgba(239,68,68,0.3)] bg-gradient-to-br from-[#ef4444] to-[#f97316]"
+        >
+          <span className="material-symbols-outlined text-[32px]" style={FILL_1}>local_fire_department</span>
+        </div>
+
+        {/* Info: label / title / meta chips */}
+        <div className="min-w-0">
+          <div
+            data-testid="featured-daily-label"
+            className="text-[11px] font-bold text-[#fca5a5] uppercase tracking-[1px] mb-1"
+          >
+            {t('home.featuredDaily.title')}
+          </div>
+          <div
+            data-testid="featured-daily-tagline"
+            className="text-[18px] md:text-[22px] font-extrabold leading-tight mb-2 text-on-surface tracking-[-0.3px]"
+          >
+            {tagline || t('home.featuredDaily.errorFallback')}
+          </div>
+
+          <div
+            data-testid="featured-daily-meta"
+            className="flex flex-wrap gap-2"
+          >
+            <MetaChip icon="timer">{t('home.featuredDaily.metaTime')}</MetaChip>
+            <MetaChip icon="quiz">{t('home.featuredDaily.metaQuestions')}</MetaChip>
+            <MetaChip icon="workspace_premium" tone="reward">
+              {t('home.featuredDaily.metaXp')}
+            </MetaChip>
+            {seasonName && (
+              <MetaChip
+                testId="featured-daily-season-chip"
+                icon="auto_awesome"
+                tone="season"
+              >
+                {seasonName}
+              </MetaChip>
+            )}
+          </div>
+        </div>
+
+        {/* CTA + countdown stack */}
+        <div className="flex flex-col items-stretch md:items-end gap-2 md:min-w-[180px]">
+          <Link
+            to="/daily"
+            data-testid="featured-daily-cta"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl gold-gradient text-[#11131e] font-extrabold text-sm md:text-[15px] shadow-[0_6px_20px_rgba(232,168,50,0.35)] hover:-translate-y-0.5 transition-transform"
+          >
+            {t('home.featuredDaily.cta')}
+            <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </Link>
+          <div
+            data-testid="featured-daily-countdown"
+            className="text-[11px] text-on-surface-variant/70 tabular-nums text-center md:text-right"
+          >
+            {t('home.featuredDaily.countdownShort', { time: countdown })}
+          </div>
+        </div>
       </div>
     </div>
+  )
+}
+
+interface MetaChipProps {
+  icon: string
+  children: React.ReactNode
+  tone?: 'default' | 'reward' | 'season'
+  testId?: string
+}
+
+function MetaChip({ icon, children, tone = 'default', testId }: MetaChipProps) {
+  const toneCls =
+    tone === 'reward'
+      ? 'text-secondary border-secondary/25'
+      : tone === 'season'
+        ? 'text-[#fca5a5] border-[rgba(239,68,68,0.25)]'
+        : 'text-on-surface/85 border-white/[0.05]'
+  return (
+    <span
+      data-testid={testId}
+      className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-[10px] bg-[rgba(17,19,30,0.5)] border text-[12px] font-semibold ${toneCls}`}
+    >
+      <span className="material-symbols-outlined text-[14px]">{icon}</span>
+      {children}
+    </span>
   )
 }

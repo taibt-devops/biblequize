@@ -30,7 +30,7 @@
   - [ ] Commit: `feat(home): GreetingCard with segmented tier bar + inline stats (HR-1)` — pending Bui approval
   - **Note:** HeroStatSheet.tsx + test file giữ lại (chưa dùng) — sẽ xóa ở HR-7 cleanup
 
-### Task HR-2: Refactor FeaturedDailyChallenge theo mockup [ ] TODO
+### Task HR-2: Refactor FeaturedDailyChallenge theo mockup [x] DONE 2026-05-05
 - File(s): `apps/web/src/components/FeaturedDailyChallenge.tsx`, test file
 - Mockup section: `.dc-hero` (lines 234-301, 845-874)
 - Spec changes:
@@ -39,10 +39,11 @@
   - CTA + countdown nằm bên phải cùng column (countdown nhỏ dưới CTA)
   - BỎ "Chỉ hôm nay" badge nếu có
 - Checklist:
-  - [ ] Update layout 3-col grid (icon | info | CTA wrap)
-  - [ ] Wire season chip
-  - [ ] Update existing tests + thêm test season chip
-  - [ ] Commit: `feat(home): redesign FeaturedDailyChallenge — 4 meta chips + season multiplier (HR-2)`
+  - [x] Update layout 3-col grid (icon | info | CTA wrap) — added decorative red radial blob, 64px gradient icon, 4 meta chips with new MetaChip subcomponent
+  - [x] Wire season chip — query `/api/seasons/active`, render chip only when `season.active && season.name`. NOTE: BE has no multiplier — chip shows season name only (per DECISIONS.md 2026-05-02 daily challenge has flat +50 XP, no surge)
+  - [x] Update existing tests (booklist removed) + 4 new tests (icon, label, base meta chips, season chip with/without active season)
+  - [x] Tests: FDC 13/13, Home 28/28, GreetingCard 15/15 = 56/56 pass
+  - [ ] Commit: `feat(home): redesign FeaturedDailyChallenge hero — 3-col + season chip (HR-2)` — pending
 
 ### Task HR-3: MotivationCard cho user mới [ ] TODO
 - File(s): `apps/web/src/components/MotivationCard.tsx` (NEW), test

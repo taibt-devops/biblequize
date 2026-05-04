@@ -86,16 +86,15 @@ describe('FeaturedDailyChallenge', () => {
     expect(screen.queryByTestId('featured-daily-booklist')).not.toBeInTheDocument()
   })
 
-  it('renders many-books tagline + book list for 5 unique books', async () => {
+  it('renders many-books tagline for 5 unique books (HR-2: dedicated booklist removed)', async () => {
     mockApiGet.mockResolvedValue({ data: sampleResponse() })
     renderComponent()
     await waitFor(() => {
       expect(screen.getByTestId('featured-daily-tagline')).toBeInTheDocument()
     })
     expect(screen.getByTestId('featured-daily-tagline').textContent).toContain('Hành trình qua 5 sách')
-    expect(screen.getByTestId('featured-daily-booklist').textContent).toBe(
-      'Sáng Thế Ký • Xuất Ê-díp-tô Ký • Thi Thiên • Giăng • Khải Huyền',
-    )
+    // HR-2 redesign: standalone book list paragraph removed; tagline is sufficient.
+    expect(screen.queryByTestId('featured-daily-booklist')).not.toBeInTheDocument()
   })
 
   it('renders completed state with score + theme + review CTA', async () => {
@@ -187,5 +186,57 @@ describe('FeaturedDailyChallenge', () => {
     })
     const cta = screen.getByTestId('featured-daily-cta')
     expect(cta.getAttribute('href')).toBe('/daily')
+  })
+
+  // ── HR-2: hero redesign ──────────────────────────────────────────
+
+  it('renders fire icon (HR-2 hero)', async () => {
+    mockApiGet.mockResolvedValue({ data: sampleResponse() })
+    renderComponent()
+    await waitFor(() => {
+      expect(screen.getByTestId('featured-daily-icon')).toBeInTheDocument()
+    })
+    expect(screen.getByTestId('featured-daily-icon').textContent).toContain('local_fire_department')
+  })
+
+  it('renders red label (Thử thách hôm nay)', async () => {
+    mockApiGet.mockResolvedValue({ data: sampleResponse() })
+    renderComponent()
+    await waitFor(() => {
+      expect(screen.getByTestId('featured-daily-label')).toBeInTheDocument()
+    })
+    expect(screen.getByTestId('featured-daily-label').textContent).toContain('THỬ THÁCH')
+  })
+
+  it('renders 3 base meta chips (time / questions / XP) when no active season', async () => {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('/api/seasons/active')) return Promise.resolve({ data: { active: false } })
+      return Promise.resolve({ data: sampleResponse() })
+    })
+    renderComponent()
+    await waitFor(() => {
+      expect(screen.getByTestId('featured-daily-meta')).toBeInTheDocument()
+    })
+    const meta = screen.getByTestId('featured-daily-meta')
+    expect(meta.textContent).toContain('5 phút')
+    expect(meta.textContent).toContain('5 câu')
+    expect(meta.textContent).toContain('+50 XP')
+    expect(screen.queryByTestId('featured-daily-season-chip')).not.toBeInTheDocument()
+  })
+
+  it('renders season chip when /api/seasons/active returns an active season', async () => {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url.includes('/api/seasons/active')) {
+        return Promise.resolve({
+          data: { active: true, id: 'season-2026-q2', name: 'Mùa Ngũ Tuần 2026' },
+        })
+      }
+      return Promise.resolve({ data: sampleResponse() })
+    })
+    renderComponent()
+    await waitFor(() => {
+      expect(screen.getByTestId('featured-daily-season-chip')).toBeInTheDocument()
+    })
+    expect(screen.getByTestId('featured-daily-season-chip').textContent).toContain('Mùa Ngũ Tuần 2026')
   })
 })
