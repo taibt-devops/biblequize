@@ -301,10 +301,13 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
             {t('home.variety.subtitle')}
           </span>
         </header>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        {/* Mobile: horizontal scroll (snap), Desktop: 3-col grid */}
+        <div className="flex sm:grid sm:grid-cols-3 gap-3 overflow-x-auto sm:overflow-visible snap-x snap-mandatory sm:snap-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {VARIETY_CARDS.map(card => (
-            <CompactCard
+            <div
               key={card.id}
+              className="snap-start shrink-0 w-[180px] sm:w-auto sm:shrink"
+            ><CompactCard
               id={card.id}
               icon={card.icon}
               iconFill={card.iconFill}
@@ -313,12 +316,12 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
               subtitle={t(card.subtitleKey)}
               liveHint={liveHints[card.id]}
               onClick={() => navigate(card.route)}
-            />
+            /></div>
           ))}
         </div>
       </section>
 
-      {/* ── Group modes (Multiplayer + Tournament tier-locked) ── */}
+      {/* ── Group modes (Tournament tier-locked) ── */}
       <section data-testid="game-mode-tier-group" className="space-y-2.5">
         <header className="flex items-baseline justify-between">
           <h2 className="text-on-surface/85 text-[13px] font-medium flex items-center gap-2">
@@ -326,7 +329,8 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
             {t('home.group.title')}
           </h2>
         </header>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        {/* Mobile: 1-col stack (mockup .mode-stack); Desktop: 3-col grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {GROUP_CARDS.map(card => {
             const isLocked =
               typeof card.lockedUntilPoints === 'number' &&

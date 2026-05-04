@@ -69,20 +69,20 @@ export default function GreetingCard() {
   return (
     <section
       data-testid="home-greeting-card"
-      className="rounded-2xl border border-secondary/15 bg-[rgba(50,52,64,0.4)] backdrop-blur-md p-5 md:p-6"
+      className="rounded-2xl border border-secondary/15 bg-[rgba(50,52,64,0.4)] backdrop-blur-md p-4 md:p-6"
     >
-      <div className="grid grid-cols-1 md:grid-cols-[auto_1fr_auto] gap-4 md:gap-6 items-center">
-        {/* Avatar + tier badge */}
+      <div className="grid grid-cols-[auto_1fr] md:grid-cols-[auto_1fr_auto] gap-3.5 md:gap-6 items-center">
+        {/* Avatar + tier badge — 52px mobile, 72px desktop per mockup */}
         <div className="relative w-fit">
           <div
             data-testid="home-greeting-avatar"
-            className="w-[72px] h-[72px] rounded-full grid place-items-center text-[28px] font-bold gold-gradient text-[#11131e] shadow-[0_6px_20px_rgba(232,168,50,0.3)]"
+            className="w-[52px] h-[52px] md:w-[72px] md:h-[72px] rounded-full grid place-items-center text-[20px] md:text-[28px] font-bold gold-gradient text-[#11131e] shadow-[0_4px_16px_rgba(232,168,50,0.25)] md:shadow-[0_6px_20px_rgba(232,168,50,0.3)]"
           >
             {initial}
           </div>
           <div
             data-testid="home-greeting-tier-badge"
-            className="absolute -bottom-1 -right-1 w-7 h-7 rounded-full grid place-items-center text-sm bg-gradient-to-br from-[#11131e] to-[#1a1d2e] border-2 border-secondary"
+            className="absolute -bottom-0.5 -right-0.5 md:-bottom-1 md:-right-1 w-[22px] h-[22px] md:w-7 md:h-7 rounded-full grid place-items-center text-[11px] md:text-sm bg-gradient-to-br from-[#11131e] to-[#1a1d2e] border-2 border-secondary"
             title={t(tier.current.nameKey)}
           >
             {tier.current.iconEmoji}
@@ -159,10 +159,11 @@ export default function GreetingCard() {
           )}
         </div>
 
-        {/* 3 inline stats */}
+        {/* Stats — desktop: third grid col with left border separator;
+            mobile: full-width inner panel below the avatar/info row. */}
         <div
           data-testid="home-greeting-stats"
-          className="flex gap-5 md:pl-6 md:border-l md:border-white/[0.06] justify-around md:justify-start"
+          className="col-span-2 md:col-span-1 md:pl-6 md:border-l md:border-white/[0.06] grid grid-cols-3 md:flex md:gap-5 bg-[rgba(17,19,30,0.4)] md:bg-transparent rounded-xl md:rounded-none px-2 py-2.5 md:p-0 mt-1 md:mt-0"
         >
           <Stat
             testId="home-greeting-stat-streak"
@@ -175,12 +176,14 @@ export default function GreetingCard() {
             icon="⚡"
             value={energy}
             label={t('home.greeting.energy')}
+            withDivider
           />
           <Stat
             testId="home-greeting-stat-season"
             icon="📊"
             value={seasonPoints}
             label={t('home.greeting.seasonPoints')}
+            withDivider
           />
         </div>
       </div>
@@ -193,17 +196,25 @@ function Stat({
   icon,
   value,
   label,
+  withDivider,
 }: {
   testId: string
   icon: string
   value: number
   label: string
+  /** Mobile-only left border separator between cells (mockup `.gs-cell + .gs-cell`). */
+  withDivider?: boolean
 }) {
   return (
-    <div data-testid={testId} className="text-center">
-      <div className="text-[22px] leading-none">{icon}</div>
-      <div className="text-[18px] font-extrabold leading-none mt-1">{value.toLocaleString()}</div>
-      <div className="text-[10px] uppercase tracking-[0.5px] text-on-surface-variant mt-1">
+    <div
+      data-testid={testId}
+      className={`text-center ${withDivider ? 'border-l border-secondary/[0.06] md:border-0' : ''}`}
+    >
+      <div className="text-[16px] md:text-[22px] leading-none">{icon}</div>
+      <div className="text-[15px] md:text-[18px] font-extrabold leading-none mt-1">
+        {value.toLocaleString()}
+      </div>
+      <div className="text-[9px] md:text-[10px] uppercase tracking-[0.4px] md:tracking-[0.5px] text-on-surface-variant mt-1">
         {label}
       </div>
     </div>

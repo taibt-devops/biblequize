@@ -227,66 +227,78 @@ export default function FeaturedDailyChallenge() {
         className="absolute -top-10 -right-10 w-[200px] h-[200px] rounded-full pointer-events-none bg-[radial-gradient(circle,rgba(239,68,68,0.12)_0%,transparent_70%)]"
       />
 
-      <div className="relative grid grid-cols-1 md:grid-cols-[auto_1fr_auto] gap-4 md:gap-6 items-center">
-        {/* Icon (red→orange gradient, 64px) */}
-        <div
-          data-testid="featured-daily-icon"
-          className="w-16 h-16 rounded-2xl grid place-items-center text-white shadow-[0_8px_24px_rgba(239,68,68,0.3)] bg-gradient-to-br from-[#ef4444] to-[#f97316]"
-        >
-          <span className="material-symbols-outlined text-[32px]" style={FILL_1}>local_fire_department</span>
-        </div>
-
-        {/* Info: label / title / meta chips */}
-        <div className="min-w-0">
+      <div className="relative">
+        {/* Mobile: icon + info on row 1, meta full-width row 2, CTA full-width row 3.
+            Desktop: 3-col grid (icon | info+meta | CTA stack). */}
+        <div className="grid grid-cols-[auto_1fr] md:grid-cols-[auto_1fr_auto] gap-x-3 md:gap-x-6 gap-y-3 md:gap-y-0 items-center">
           <div
-            data-testid="featured-daily-label"
-            className="text-[11px] font-bold text-[#fca5a5] uppercase tracking-[1px] mb-1"
+            data-testid="featured-daily-icon"
+            className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl grid place-items-center text-white shadow-[0_4px_16px_rgba(239,68,68,0.3)] md:shadow-[0_8px_24px_rgba(239,68,68,0.3)] bg-gradient-to-br from-[#ef4444] to-[#f97316] shrink-0"
           >
-            {t('home.featuredDaily.title')}
-          </div>
-          <div
-            data-testid="featured-daily-tagline"
-            className="text-[18px] md:text-[22px] font-extrabold leading-tight mb-2 text-on-surface tracking-[-0.3px]"
-          >
-            {tagline || t('home.featuredDaily.errorFallback')}
+            <span className="material-symbols-outlined text-[24px] md:text-[32px]" style={FILL_1}>local_fire_department</span>
           </div>
 
-          <div
-            data-testid="featured-daily-meta"
-            className="flex flex-wrap gap-2"
-          >
+          <div className="min-w-0">
+            <div
+              data-testid="featured-daily-label"
+              className="text-[10px] md:text-[11px] font-bold text-[#fca5a5] uppercase tracking-[0.8px] md:tracking-[1px] mb-0.5 md:mb-1"
+            >
+              {t('home.featuredDaily.title')}
+            </div>
+            <div
+              data-testid="featured-daily-tagline"
+              className="text-[17px] md:text-[22px] font-extrabold leading-tight md:mb-2 text-on-surface tracking-[-0.3px]"
+            >
+              {tagline || t('home.featuredDaily.errorFallback')}
+            </div>
+
+            <div
+              data-testid="featured-daily-meta"
+              className="hidden md:flex flex-wrap gap-2"
+            >
+              <MetaChip icon="timer">{t('home.featuredDaily.metaTime')}</MetaChip>
+              <MetaChip icon="quiz">{t('home.featuredDaily.metaQuestions')}</MetaChip>
+              <MetaChip icon="workspace_premium" tone="reward">
+                {t('home.featuredDaily.metaXp')}
+              </MetaChip>
+              {seasonName && (
+                <MetaChip testId="featured-daily-season-chip" icon="auto_awesome" tone="season">
+                  {seasonName}
+                </MetaChip>
+              )}
+            </div>
+          </div>
+
+          {/* Mobile-only meta chips row (full width). Desktop renders meta inside info col above. */}
+          <div className="md:hidden col-span-2 flex flex-wrap gap-1.5">
             <MetaChip icon="timer">{t('home.featuredDaily.metaTime')}</MetaChip>
             <MetaChip icon="quiz">{t('home.featuredDaily.metaQuestions')}</MetaChip>
             <MetaChip icon="workspace_premium" tone="reward">
               {t('home.featuredDaily.metaXp')}
             </MetaChip>
             {seasonName && (
-              <MetaChip
-                testId="featured-daily-season-chip"
-                icon="auto_awesome"
-                tone="season"
-              >
+              <MetaChip icon="auto_awesome" tone="season">
                 {seasonName}
               </MetaChip>
             )}
           </div>
-        </div>
 
-        {/* CTA + countdown stack */}
-        <div className="flex flex-col items-stretch md:items-end gap-2 md:min-w-[180px]">
-          <Link
-            to="/daily"
-            data-testid="featured-daily-cta"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl gold-gradient text-[#11131e] font-extrabold text-sm md:text-[15px] shadow-[0_6px_20px_rgba(232,168,50,0.35)] hover:-translate-y-0.5 transition-transform"
-          >
-            {t('home.featuredDaily.cta')}
-            <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-          </Link>
-          <div
-            data-testid="featured-daily-countdown"
-            className="text-[11px] text-on-surface-variant/70 tabular-nums text-center md:text-right"
-          >
-            {t('home.featuredDaily.countdownShort', { time: countdown })}
+          {/* CTA + countdown — full width mobile, right-aligned col desktop */}
+          <div className="col-span-2 md:col-span-1 flex flex-col items-stretch md:items-end gap-2 md:min-w-[180px]">
+            <Link
+              to="/daily"
+              data-testid="featured-daily-cta"
+              className="inline-flex items-center justify-center gap-2 px-5 md:px-6 py-3 md:py-3.5 rounded-xl gold-gradient text-[#11131e] font-extrabold text-[15px] shadow-[0_4px_16px_rgba(232,168,50,0.3)] md:shadow-[0_6px_20px_rgba(232,168,50,0.35)] hover:-translate-y-0.5 transition-transform"
+            >
+              {t('home.featuredDaily.cta')}
+              <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </Link>
+            <div
+              data-testid="featured-daily-countdown"
+              className="text-[11px] text-on-surface-variant/70 tabular-nums text-center md:text-right"
+            >
+              {t('home.featuredDaily.countdownShort', { time: countdown })}
+            </div>
           </div>
         </div>
       </div>
