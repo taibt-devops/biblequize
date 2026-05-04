@@ -52,7 +52,7 @@ test.describe('W-M13 i18n Language Switching — L1 Smoke @smoke @i18n', () => {
     // SECTION 3: UI ASSERTIONS
     // ============================================================
     await expect(page.getByTestId('lang-toggle-en')).toHaveAttribute('data-active', 'true')
-    await expect(page.getByTestId('home-greeting')).toHaveText(/Good (morning|afternoon|evening)/i)
+    await expect(page.getByTestId('home-greeting-meta')).toHaveText(/Good (morning|afternoon|evening)/i)
 
     // ============================================================
     // CLEANUP — restore VI
@@ -75,12 +75,12 @@ test.describe('W-M13 i18n Language Switching — L1 Smoke @smoke @i18n', () => {
     await page.waitForSelector('[data-testid="lang-toggle-en"]')
     await page.getByTestId('lang-toggle-en').click()
     await page.reload()
-    await page.waitForSelector('[data-testid="home-greeting"]')
+    await page.waitForSelector('[data-testid="home-greeting-meta"]')
 
     // ============================================================
     // SECTION 3: UI ASSERTIONS
     // ============================================================
-    await expect(page.getByTestId('home-greeting')).toHaveText(/Good (morning|afternoon|evening)/i)
+    await expect(page.getByTestId('home-greeting-meta')).toHaveText(/Good (morning|afternoon|evening)/i)
     const storedLang = await page.evaluate(() => localStorage.getItem('quizLanguage'))
     expect(storedLang).toBe('en')
 

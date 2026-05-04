@@ -21,7 +21,8 @@ export class HomePage extends BasePage {
     super(page)
     this.container = page.getByTestId('home-page')
     this.tierBadge = page.getByTestId('home-tier-badge')
-    this.greeting = page.getByTestId('home-greeting')
+    // HR-1: GreetingCard split greeting label and name into separate testids.
+    this.greeting = page.getByTestId('home-greeting-meta')
     this.totalPoints = page.getByTestId('home-total-points')
     this.tierProgressBar = page.getByTestId('home-tier-progress-bar')
     this.dailyMissions = page.getByTestId('home-daily-missions')

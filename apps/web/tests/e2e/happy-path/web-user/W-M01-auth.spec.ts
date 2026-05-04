@@ -79,7 +79,7 @@ test.describe('W-M01 Auth & Onboarding', () => {
 
     // UI assertions
     await expect(page).toHaveURL('/')
-    await expect(page.getByTestId('home-user-name')).toContainText(/Test Tier 3/i)
+    await expect(page.getByTestId('home-greeting-name')).toContainText(/Test Tier 3/i)
   })
 
   // ── W-M01-L2-003 — Login wrong password -> 401 ──
