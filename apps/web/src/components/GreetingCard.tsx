@@ -11,6 +11,9 @@ interface TierProgressData {
   starProgressPercent: number
   starXp: number
   nextStarXp: number
+  /** Authoritative running total — preferred over /api/me.totalPoints
+   *  which can lag for a few seconds after a session is credited. */
+  totalPoints?: number
 }
 
 interface RankedStatusData {
@@ -49,7 +52,8 @@ export default function GreetingCard() {
     staleTime: 60_000,
   })
 
-  const totalPoints = meData?.totalPoints ?? 0
+  // Match Home.tsx: tier-progress is the source of truth, /api/me is fallback.
+  const totalPoints = tierProgress?.totalPoints ?? meData?.totalPoints ?? 0
   const currentStreak = meData?.currentStreak ?? 0
   const energy = rankedStatus?.energy ?? 100
   const seasonPoints = rankedStatus?.seasonPoints ?? 0
