@@ -737,6 +737,9 @@
       "description": "Once you finish your first Daily Challenge, you'll unlock Daily Missions, the Leaderboard, and start your streak.",
       "cta": "Start"
     },
+    "primary": {
+      "title": "Core play"
+    },
     "variety": {
       "title": "Variety Modes",
       "subtitle": "Doesn't affect XP / leaderboard"

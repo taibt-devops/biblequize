@@ -737,6 +737,9 @@
       "description": "Sau khi hoàn thành Daily Challenge đầu tiên, bạn sẽ mở khóa Nhiệm vụ ngày, Bảng xếp hạng, và bắt đầu chuỗi (streak).",
       "cta": "Bắt đầu"
     },
+    "primary": {
+      "title": "Chế độ chơi chính"
+    },
     "variety": {
       "title": "Variety Modes",
       "subtitle": "Không ảnh hưởng XP / xếp hạng"

@@ -168,13 +168,9 @@ describe('Home Dashboard', () => {
       await waitFor(() => { expect(screen.getByTestId('game-mode-grid')).toBeInTheDocument() })
     })
 
-    it('displays section header', async () => {
-      renderHome()
-      await waitFor(() => {
-        expect(screen.getByText('Chế độ chơi')).toBeInTheDocument()
-        expect(screen.getByText('KHÁM PHÁ 8 CHẾ ĐỘ')).toBeInTheDocument()
-      })
-    })
+    // HR-4b: outer wrapper header removed from Home; primary section
+    // header now lives inside GameModeGrid (which is mocked here).
+    // Header rendering tested in GameModeGrid.test.tsx instead.
   })
 
   describe('Leaderboard', () => {

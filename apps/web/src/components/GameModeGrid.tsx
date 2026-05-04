@@ -252,14 +252,14 @@ export default function GameModeGrid({ userStats }: GameModeGridProps = {}) {
         className="space-y-2.5"
       >
         <header className="flex items-baseline justify-between">
-          <h2 className="text-on-surface/85 text-[13px] font-medium">
-            {t('home.continueJourney.title')}
+          <h2 className="text-on-surface/85 text-[13px] font-medium flex items-center gap-2">
+            <span className="material-symbols-outlined text-[16px] text-secondary">
+              sports_esports
+            </span>
+            {t('home.primary.title')}
           </h2>
-          <span className="text-on-surface-variant/40 text-[11px]">
-            {t('home.continueJourney.subtitle')}
-          </span>
         </header>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <FeaturedCard
             id="practice"
             theme="blue"

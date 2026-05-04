@@ -110,24 +110,16 @@ export default function Home() {
       {/* ── Motivation onboarding nudge (HR-6: only for new users) ── */}
       {isNewUser && <MotivationCard />}
 
-      {/* ── Game Modes ──
-          Open access for everyone. The Bible Basics catechism gate
-          (Ranked unlock) is surfaced inside the Ranked featured card
-          itself — see RankedFeaturedCard inside GameModeGrid. */}
-      <section className="space-y-4">
-        <div className="flex justify-between items-center">
-          <h2 className="font-sora text-base font-semibold text-on-surface">{t('home.gameModes')}</h2>
-          <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
-            {t('home.exploreModes', { count: 8 })}
-          </span>
-        </div>
-        <GameModeGrid
-          userStats={{
-            currentStreak: meData?.currentStreak,
-            totalPoints,
-          }}
-        />
-      </section>
+      {/* ── Game Modes (HR-4b: outer wrapper header removed; section
+          headers live inside GameModeGrid per mockup). The Bible Basics
+          catechism gate (Ranked unlock) is surfaced inside the Ranked
+          card itself via RankedFeaturedCard. */}
+      <GameModeGrid
+        userStats={{
+          currentStreak: meData?.currentStreak,
+          totalPoints,
+        }}
+      />
 
       {/* ── Daily Missions (HR-6: hidden for new users) ── */}
       {!isNewUser && (

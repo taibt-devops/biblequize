@@ -83,21 +83,20 @@ describe('GameModeGrid (Option Y)', () => {
       expect(mockNavigate).toHaveBeenCalledWith('/practice')
     })
 
-    it('Practice CTA uses blue outline (H3 visual hierarchy)', async () => {
-      // H3 supersedes PL-3: Practice card adopts the full blue theme
-      // (icon + border + outline button) so it visually steps back from
-      // the primary gold Ranked CTA. Practice card itself carries the
-      // theme via data-theme="blue".
+    it('Practice card uses blue theme (HR-4b: arrow-link CTA)', async () => {
+      // HR-4b moves Practice/Ranked to the mockup .mode-card layout —
+      // the whole card is the click target, the CTA is now a text+arrow
+      // affordance. Theme color lives in the arrow text (#60a5fa) and
+      // the card's data-theme attribute.
       renderGrid()
       const card = screen.getByTestId('featured-card-practice')
       expect(card).toHaveAttribute('data-theme', 'blue')
       const cta = screen.getByTestId('featured-card-practice-cta')
-      expect(cta.className).toContain('#4a9eff')
-      expect(cta.className).toContain('bg-transparent')
+      expect(cta.className).toContain('#60a5fa')
       expect(cta.className).not.toContain('gold-gradient')
     })
 
-    it('Ranked CTA keeps gold-filled (regression guard)', async () => {
+    it('Ranked card uses gold theme on arrow CTA (regression guard)', async () => {
       mockApiGet.mockImplementation((url: string) => {
         if (url.includes('/api/daily-challenge')) {
           return Promise.resolve({ data: { alreadyCompleted: false } })
@@ -111,8 +110,11 @@ describe('GameModeGrid (Option Y)', () => {
         return Promise.reject(new Error('Not mocked'))
       })
       renderGrid()
+      const card = await screen.findByTestId('featured-card-ranked')
+      expect(card).toHaveAttribute('data-theme', 'gold')
       const cta = await screen.findByTestId('featured-card-ranked-cta')
-      expect(cta.className).toContain('gold-gradient')
+      // HR-4b: CTA is now a text+arrow link colored via tokens.arrowText.
+      expect(cta.className).toContain('text-secondary')
     })
   })
 
@@ -167,8 +169,10 @@ describe('GameModeGrid (Option Y)', () => {
       const status = await screen.findByTestId('ranked-featured-status')
       expect(status).toHaveAttribute('data-state', 'cooldown')
       expect(screen.getByTestId('ranked-featured-cooldown').textContent).toContain('00:42')
-      const cta = screen.getByTestId('featured-card-ranked-cta') as HTMLButtonElement
-      expect(cta).toBeDisabled()
+      // HR-4b: disabled state is on the parent card (whole card is the
+      // click target); the arrow CTA is just a visual span inside it.
+      const card = screen.getByTestId('featured-card-ranked') as HTMLButtonElement
+      expect(card).toBeDisabled()
     })
   })
 
@@ -407,6 +411,13 @@ describe('GameModeGrid (Option Y)', () => {
   // ── HR-4: 3-section split + tier-locked overlays ────────────────
 
   describe('HR-4 sections', () => {
+    it('renders Primary section header "Chế độ chơi chính" (HR-4b)', async () => {
+      renderGrid()
+      await waitFor(() => {
+        expect(screen.getByText('Chế độ chơi chính')).toBeInTheDocument()
+      })
+    })
+
     it('renders Variety section header + 3 variety cards', async () => {
       renderGrid()
       await waitFor(() => {
