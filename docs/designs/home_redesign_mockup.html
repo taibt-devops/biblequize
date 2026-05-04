@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BibleQuiz · Home Redesign (mockup)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #11131e;
+    color: #f3f4f6;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    font-size: inherit;
+    vertical-align: middle;
+  }
+
+  /* State Toggle */
+  .state-toggle {
+    position: fixed; top: 16px; right: 16px; z-index: 100;
+    background: rgba(50,52,64,0.9);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(232,168,50,0.3);
+    border-radius: 12px;
+    padding: 6px;
+    display: flex; gap: 4px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
+  .state-toggle button {
+    background: transparent; border: none; color: #9ca3af;
+    padding: 8px 14px; border-radius: 8px; cursor: pointer;
+    font-family: inherit; font-size: 13px; font-weight: 600;
+  }
+  .state-toggle button.active {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+  }
+  .state-toggle button:hover:not(.active) { color: #f3f4f6; }
+
+  .layout { display: flex; min-height: 100vh; }
+
+  /* ===== Sidebar (cleaner — bỏ duplicate streak/missions) ===== */
+  .sidebar {
+    width: 240px;
+    background: #0d0f17;
+    border-right: 1px solid rgba(232,168,50,0.08);
+    padding: 24px 16px;
+    display: flex; flex-direction: column; gap: 8px;
+    flex-shrink: 0;
+  }
+  .sidebar-brand {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 8px 24px;
+  }
+  .sidebar-brand h1 {
+    font-size: 22px; font-weight: 800;
+    background: linear-gradient(135deg, #e8a832 0%, #fbbf24 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .sidebar-brand .bell {
+    width: 32px; height: 32px; border-radius: 8px;
+    background: rgba(50,52,64,0.6); display: grid; place-items: center;
+    color: #e8a832; font-size: 18px; position: relative;
+  }
+  .sidebar-brand .bell::after {
+    content: '9+'; position: absolute; top: -4px; right: -4px;
+    background: #e8a832; color: #11131e; font-size: 10px; font-weight: 800;
+    padding: 2px 5px; border-radius: 8px;
+  }
+  .sidebar-user {
+    background: rgba(50,52,64,0.4);
+    border: 1px solid rgba(232,168,50,0.1);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 16px;
+  }
+  .sidebar-user .avatar {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    display: grid; place-items: center;
+    color: #11131e; font-weight: 800; font-size: 14px;
+  }
+  .sidebar-user .name { font-size: 13px; font-weight: 700; }
+  .sidebar-user .tier { font-size: 11px; color: #9ca3af; }
+  .sidebar-nav-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px; border-radius: 10px;
+    color: #9ca3af; font-weight: 600; font-size: 13px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    cursor: pointer;
+  }
+  .sidebar-nav-item:hover { background: rgba(50,52,64,0.4); color: #f3f4f6; }
+  .sidebar-nav-item.active {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+  }
+
+  /* ===== Main ===== */
+  .main {
+    flex: 1; padding: 32px 40px 60px;
+    max-width: 1240px;
+  }
+
+  /* ===== GREETING + TIER (Compact unified) ===== */
+  .greeting-card {
+    background: rgba(50,52,64,0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(232,168,50,0.15);
+    border-radius: 18px;
+    padding: 22px 26px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 24px;
+    align-items: center;
+  }
+  .greeting-avatar-wrap {
+    position: relative;
+  }
+  .greeting-avatar {
+    width: 72px; height: 72px; border-radius: 50%;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    display: grid; place-items: center;
+    color: #11131e; font-weight: 800; font-size: 28px;
+    box-shadow: 0 6px 20px rgba(232,168,50,0.3);
+  }
+  .greeting-tier-badge {
+    position: absolute; bottom: -4px; right: -4px;
+    background: linear-gradient(135deg, #11131e 0%, #1a1d2e 100%);
+    border: 2px solid #e8a832;
+    border-radius: 50%;
+    width: 28px; height: 28px;
+    display: grid; place-items: center;
+    font-size: 14px;
+  }
+  .greeting-info { min-width: 0; }
+  .greeting-meta {
+    font-size: 11px; color: #9ca3af; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.8px;
+    margin-bottom: 4px;
+  }
+  .greeting-name {
+    font-size: 22px; font-weight: 800; line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  /* Tier progress (NOT 5-star rating) */
+  .tier-progress {
+    display: flex; align-items: center; gap: 12px;
+  }
+  .tier-progress-label {
+    font-size: 13px; color: #d1d5db;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .tier-progress-label strong { color: #e8a832; font-weight: 700; }
+  .tier-progress-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    max-width: 280px;
+  }
+  .tier-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #d97706 0%, #e8a832 50%, #fbbf24 100%);
+    border-radius: 4px;
+    transition: width 0.6s;
+    position: relative;
+  }
+  /* Star milestones (5 sub-stars per tier) */
+  .tier-milestones {
+    position: absolute; inset: 0;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 4px;
+    pointer-events: none;
+  }
+  .tier-milestone {
+    width: 4px; height: 4px; border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+  }
+  .tier-milestone.reached {
+    background: #fff;
+    box-shadow: 0 0 4px rgba(255,255,255,0.6);
+  }
+  .tier-progress-pct {
+    font-size: 12px; font-weight: 700; color: #e8a832;
+    font-variant-numeric: tabular-nums;
+    min-width: 80px; text-align: right;
+  }
+
+  /* Quick stats inline */
+  .greeting-stats {
+    display: flex; gap: 20px;
+    padding-left: 24px;
+    border-left: 1px solid rgba(255,255,255,0.06);
+  }
+  .greeting-stat { text-align: center; }
+  .greeting-stat-icon {
+    font-size: 22px;
+    background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .greeting-stat-icon.energy { 
+    background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .greeting-stat-icon.cal {
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .greeting-stat-v {
+    font-size: 18px; font-weight: 800; line-height: 1;
+    margin: 2px 0 1px;
+  }
+  .greeting-stat-l {
+    font-size: 10px; color: #9ca3af;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+
+  /* ===== DAILY CHALLENGE HERO ===== */
+  .dc-hero {
+    background: linear-gradient(135deg, rgba(239,68,68,0.08) 0%, rgba(50,52,64,0.4) 60%);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(239,68,68,0.2);
+    border-radius: 18px;
+    padding: 24px 28px;
+    margin-bottom: 28px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 24px; align-items: center;
+    position: relative; overflow: hidden;
+  }
+  .dc-hero::before {
+    content: ''; position: absolute; top: -40px; right: -40px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(239,68,68,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .dc-icon {
+    width: 64px; height: 64px; border-radius: 16px;
+    background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+    display: grid; place-items: center;
+    font-size: 32px; color: #fff;
+    box-shadow: 0 8px 24px rgba(239,68,68,0.3);
+    flex-shrink: 0;
+  }
+  .dc-info { position: relative; z-index: 1; }
+  .dc-label {
+    font-size: 11px; font-weight: 700; color: #fca5a5;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .dc-title {
+    font-size: 22px; font-weight: 800; margin-bottom: 8px;
+    letter-spacing: -0.3px;
+  }
+  .dc-meta {
+    display: flex; gap: 8px; flex-wrap: wrap;
+  }
+  .dc-meta-item {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 5px 11px; border-radius: 10px;
+    background: rgba(17,19,30,0.5);
+    border: 1px solid rgba(255,255,255,0.05);
+    font-size: 12px; color: #d1d5db; font-weight: 600;
+  }
+  .dc-meta-item.reward { color: #e8a832; border-color: rgba(232,168,50,0.25); }
+  .dc-meta-item .material-symbols-outlined { font-size: 14px; }
+  .dc-cta-wrap {
+    display: flex; flex-direction: column; align-items: flex-end; gap: 6px;
+    position: relative; z-index: 1;
+  }
+  .dc-countdown {
+    font-size: 11px; color: #9ca3af;
+    font-variant-numeric: tabular-nums;
+  }
+  .dc-countdown strong { color: #fca5a5; }
+  .btn-cta-large {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e; border: none;
+    padding: 14px 28px; border-radius: 12px;
+    font-family: inherit; font-size: 15px; font-weight: 800;
+    cursor: pointer; transition: all 0.2s;
+    display: inline-flex; align-items: center; gap: 8px;
+    box-shadow: 0 6px 20px rgba(232,168,50,0.35);
+  }
+  .btn-cta-large:hover { transform: translateY(-1px); }
+
+  /* ===== Section heading ===== */
+  .section-h {
+    display: flex; align-items: center; justify-content: space-between;
+    margin: 0 4px 14px;
+  }
+  .section-h-title {
+    font-size: 16px; font-weight: 700;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .section-h-title .material-symbols-outlined { font-size: 20px; color: #e8a832; }
+  .section-h-action {
+    color: #9ca3af; font-size: 12px; font-weight: 600;
+    cursor: pointer;
+    display: inline-flex; align-items: center; gap: 4px;
+  }
+  .section-h-action:hover { color: #e8a832; }
+
+  /* ===== Game Mode Cards ===== */
+  .modes-primary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .mode-card {
+    background: rgba(50,52,64,0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(232,168,50,0.1);
+    border-radius: 16px;
+    padding: 22px;
+    cursor: pointer;
+    position: relative; overflow: hidden;
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  .mode-card.featured {
+    border-color: rgba(232,168,50,0.3);
+    background:
+      linear-gradient(135deg, rgba(232,168,50,0.06) 0%, transparent 50%),
+      rgba(50,52,64,0.4);
+  }
+  .mode-card.locked {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  .mode-card.locked::after {
+    content: ''; position: absolute; inset: 0;
+    background: rgba(11,13,21,0.4);
+    pointer-events: none;
+  }
+  .mode-card-top {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 12px;
+  }
+  .mode-icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    display: grid; place-items: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+  .mode-icon.practice {
+    background: linear-gradient(135deg, rgba(96,165,250,0.2) 0%, rgba(59,130,246,0.1) 100%);
+    border: 1px solid rgba(96,165,250,0.3);
+    color: #60a5fa;
+  }
+  .mode-icon.ranked {
+    background: linear-gradient(135deg, rgba(232,168,50,0.2) 0%, rgba(217,119,6,0.1) 100%);
+    border: 1px solid rgba(232,168,50,0.3);
+    color: #e8a832;
+  }
+  .mode-icon.multiplayer {
+    background: linear-gradient(135deg, rgba(167,139,250,0.2) 0%, rgba(124,58,237,0.1) 100%);
+    border: 1px solid rgba(167,139,250,0.3);
+    color: #a78bfa;
+  }
+  .mode-icon.tournament {
+    background: linear-gradient(135deg, rgba(244,114,182,0.2) 0%, rgba(219,39,119,0.1) 100%);
+    border: 1px solid rgba(244,114,182,0.3);
+    color: #f472b6;
+  }
+  .mode-icon.battle {
+    background: linear-gradient(135deg, rgba(248,113,113,0.2) 0%, rgba(220,38,38,0.1) 100%);
+    border: 1px solid rgba(248,113,113,0.3);
+    color: #f87171;
+  }
+  .mode-name {
+    font-size: 17px; font-weight: 700; margin-bottom: 3px;
+  }
+  .mode-desc { font-size: 12px; color: #9ca3af; }
+  .mode-status-chip {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 9px; border-radius: 10px;
+    font-size: 10px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    z-index: 1;
+  }
+  .mode-status-chip.unlocked {
+    background: rgba(74,222,128,0.12);
+    color: #4ade80;
+    border: 1px solid rgba(74,222,128,0.25);
+  }
+  .mode-status-chip.locked {
+    background: rgba(107,114,128,0.2);
+    color: #9ca3af;
+    border: 1px solid rgba(107,114,128,0.3);
+  }
+  .mode-status-chip .material-symbols-outlined { font-size: 12px; }
+  .mode-card-footer {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .mode-card-meta { font-size: 11px; color: #9ca3af; }
+  .mode-card-meta strong { color: #f3f4f6; font-weight: 700; }
+  .mode-arrow {
+    color: #e8a832; font-size: 18px;
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 13px; font-weight: 700;
+  }
+  .mode-locked-overlay {
+    background: rgba(17,19,30,0.7);
+    border: 1px dashed rgba(232,168,50,0.3);
+    border-radius: 10px;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 12px; color: #fbbf24; font-weight: 600;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+  }
+
+  /* ===== Variety Modes Grid (3 cards) ===== */
+  .variety-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .variety-card {
+    background: rgba(50,52,64,0.3);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 16px;
+    cursor: pointer;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .variety-card:hover { border-color: rgba(232,168,50,0.25); }
+  .variety-top {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .variety-icon {
+    width: 36px; height: 36px; border-radius: 10px;
+    display: grid; place-items: center; font-size: 18px;
+  }
+  .variety-icon.weekly {
+    background: rgba(74,222,128,0.12); border: 1px solid rgba(74,222,128,0.25);
+    color: #4ade80;
+  }
+  .variety-icon.mystery {
+    background: rgba(167,139,250,0.12); border: 1px solid rgba(167,139,250,0.25);
+    color: #a78bfa;
+  }
+  .variety-icon.speed {
+    background: rgba(248,113,113,0.12); border: 1px solid rgba(248,113,113,0.25);
+    color: #f87171;
+  }
+  .xp-badge {
+    font-size: 10px; font-weight: 800;
+    padding: 3px 8px; border-radius: 8px;
+    background: rgba(232,168,50,0.15);
+    color: #fbbf24;
+  }
+  .variety-name { font-size: 14px; font-weight: 700; }
+  .variety-desc { font-size: 11px; color: #9ca3af; line-height: 1.4; }
+
+  /* ===== Daily Missions ===== */
+  .missions-card {
+    background: rgba(50,52,64,0.4);
+    border: 1px solid rgba(232,168,50,0.1);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin-bottom: 24px;
+  }
+  .mission-row {
+    display: flex; align-items: center; gap: 14px;
+    padding: 11px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .mission-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .mission-row:first-of-type { padding-top: 0; }
+  .mission-check {
+    width: 22px; height: 22px; border-radius: 50%;
+    border: 2px solid #6b7280;
+    flex-shrink: 0;
+    display: grid; place-items: center;
+    font-size: 12px;
+  }
+  .mission-check.done {
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+    border-color: transparent;
+    color: #fff;
+  }
+  .mission-text {
+    flex: 1;
+    font-size: 13px; color: #d1d5db;
+  }
+  .mission-text.done { text-decoration: line-through; color: #9ca3af; }
+  .mission-progress-mini {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; color: #9ca3af;
+    font-variant-numeric: tabular-nums;
+  }
+  .mission-bar {
+    width: 60px; height: 5px; border-radius: 3px;
+    background: rgba(255,255,255,0.06);
+    overflow: hidden;
+  }
+  .mission-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #e8a832 0%, #fbbf24 100%);
+    border-radius: 3px;
+  }
+
+  /* ===== 2-col secondary content (Verse + Journey) ===== */
+  .grid-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .card-base {
+    background: rgba(50,52,64,0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(232,168,50,0.1);
+    border-radius: 16px;
+    padding: 22px;
+  }
+
+  /* Verse card */
+  .verse-card {
+    background:
+      linear-gradient(135deg, rgba(232,168,50,0.05) 0%, transparent 50%),
+      rgba(50,52,64,0.4);
+  }
+  .card-h {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 14px; font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .card-h .material-symbols-outlined { font-size: 18px; color: #e8a832; }
+  .verse-text {
+    font-size: 16px; line-height: 1.7; color: #f3f4f6;
+    font-style: italic; margin-bottom: 12px;
+    padding-left: 16px; position: relative;
+  }
+  .verse-text::before {
+    content: '"'; position: absolute; left: 0; top: -8px;
+    font-size: 32px; color: #e8a832; font-family: Georgia, serif;
+    line-height: 1;
+  }
+  .verse-ref {
+    font-size: 12px; color: #e8a832; font-weight: 700;
+    text-align: right;
+  }
+
+  /* Journey card - focused on next milestone */
+  .journey-progress-row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px;
+    background: rgba(17,19,30,0.4);
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+  .journey-book-info {
+    display: flex; align-items: center; gap: 12px;
+  }
+  .journey-book-icon {
+    width: 40px; height: 40px; border-radius: 10px;
+    background: linear-gradient(135deg, rgba(96,165,250,0.2) 0%, rgba(59,130,246,0.1) 100%);
+    border: 1px solid rgba(96,165,250,0.3);
+    display: grid; place-items: center;
+    color: #60a5fa; font-size: 20px;
+  }
+  .journey-book-name { font-size: 14px; font-weight: 700; }
+  .journey-book-prog { font-size: 11px; color: #9ca3af; margin-top: 2px; }
+  .journey-pct {
+    font-size: 22px; font-weight: 800; color: #e8a832;
+  }
+  .journey-mini-bar {
+    height: 6px; border-radius: 3px;
+    background: rgba(255,255,255,0.06);
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+  .journey-mini-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #60a5fa 0%, #3b82f6 100%);
+    border-radius: 3px;
+  }
+  .journey-next-badge {
+    background: rgba(232,168,50,0.06);
+    border: 1px solid rgba(232,168,50,0.15);
+    border-radius: 10px;
+    padding: 12px 14px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .journey-next-icon {
+    width: 32px; height: 32px; border-radius: 8px;
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    display: grid; place-items: center; flex-shrink: 0;
+    color: #11131e; font-size: 16px;
+  }
+  .journey-next-text { flex: 1; }
+  .journey-next-label {
+    font-size: 10px; color: #fbbf24; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .journey-next-name {
+    font-size: 13px; font-weight: 700; margin-top: 2px;
+  }
+
+  /* ===== Leaderboard mini ===== */
+  .lb-mini-row {
+    display: grid;
+    grid-template-columns: 28px 32px 1fr auto;
+    gap: 12px; align-items: center;
+    padding: 10px 8px; border-radius: 8px;
+  }
+  .lb-mini-row.me {
+    background: rgba(232,168,50,0.08);
+    border: 1px solid rgba(232,168,50,0.2);
+  }
+  .lb-mini-rank {
+    font-size: 12px; font-weight: 800; color: #6b7280;
+    text-align: center;
+  }
+  .lb-mini-rank.medal-1 { color: #fbbf24; font-size: 16px; }
+  .lb-mini-rank.medal-2 { color: #d1d5db; font-size: 14px; }
+  .lb-mini-rank.medal-3 { color: #d97706; font-size: 14px; }
+  .lb-mini-avatar {
+    width: 32px; height: 32px; border-radius: 50%;
+    background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+    display: grid; place-items: center;
+    color: #f3f4f6; font-weight: 700; font-size: 12px;
+  }
+  .lb-mini-avatar.me {
+    background: linear-gradient(135deg, #e8a832 0%, #d97706 100%);
+    color: #11131e;
+  }
+  .lb-mini-name {
+    font-size: 13px; font-weight: 600;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .lb-mini-score {
+    font-size: 13px; font-weight: 800; color: #e8a832;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* New user motivation card */
+  .motivation-card {
+    background: linear-gradient(135deg, rgba(96,165,250,0.08) 0%, rgba(50,52,64,0.4) 60%);
+    border: 1px solid rgba(96,165,250,0.2);
+    border-radius: 16px;
+    padding: 22px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 18px; align-items: center;
+  }
+  .mot-icon {
+    width: 56px; height: 56px; border-radius: 14px;
+    background: linear-gradient(135deg, rgba(96,165,250,0.2) 0%, rgba(59,130,246,0.1) 100%);
+    border: 1px solid rgba(96,165,250,0.3);
+    display: grid; place-items: center;
+    color: #60a5fa; font-size: 28px;
+  }
+  .mot-text-h {
+    font-size: 15px; font-weight: 700;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .mot-text-h .step {
+    background: rgba(96,165,250,0.15);
+    color: #93c5fd;
+    font-size: 11px; font-weight: 700;
+    padding: 2px 8px; border-radius: 8px;
+  }
+  .mot-text-d { font-size: 13px; color: #9ca3af; margin-top: 4px; }
+  .btn-outline {
+    background: rgba(96,165,250,0.1);
+    color: #93c5fd;
+    border: 1px solid rgba(96,165,250,0.3);
+    padding: 10px 18px; border-radius: 10px;
+    font-family: inherit; font-size: 13px; font-weight: 700;
+    cursor: pointer;
+  }
+
+  /* Activity (state B) */
+  .activity-row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 13px;
+  }
+  .activity-row:last-child { border-bottom: none; }
+  .activity-icon {
+    width: 32px; height: 32px; border-radius: 10px;
+    display: grid; place-items: center; flex-shrink: 0;
+    font-size: 14px;
+  }
+  .activity-icon.complete { background: rgba(74,222,128,0.12); color: #4ade80; }
+  .activity-icon.tier { background: rgba(232,168,50,0.12); color: #e8a832; }
+  .activity-icon.streak { background: rgba(239,68,68,0.12); color: #f87171; }
+  .activity-text { flex: 1; color: #d1d5db; }
+  .activity-text strong { color: #f3f4f6; font-weight: 700; }
+  .activity-time { font-size: 11px; color: #6b7280; }
+
+  /* State Hidden */
+  .state-new .show-active { display: none; }
+  .state-new .show-new { display: block; }
+  .state-active .show-active { display: block; }
+  .state-active .show-new { display: none; }
+
+  /* Annotation */
+  .annotation {
+    margin-top: 32px;
+    padding: 20px;
+    background: rgba(96,165,250,0.06);
+    border: 1px solid rgba(96,165,250,0.2);
+    border-radius: 12px;
+    color: #93c5fd;
+    font-size: 13px; line-height: 1.7;
+  }
+  .annotation strong { color: #60a5fa; }
+  .annotation code {
+    background: rgba(17,19,30,0.6); padding: 2px 6px;
+    border-radius: 4px; font-size: 12px;
+  }
+  .annotation ul { margin: 6px 0 0 20px; }
+  .annotation li { margin-bottom: 4px; }
+  .annotation .delta {
+    margin-top: 12px; padding: 12px;
+    background: rgba(74,222,128,0.06);
+    border-left: 3px solid #4ade80;
+    border-radius: 6px;
+  }
+  .annotation .delta strong { color: #4ade80; }
+</style>
+</head>
+<body class="state-new">
+
+<div class="state-toggle">
+  <button class="active" onclick="setState('new')">User mới (Tier 1)</button>
+  <button onclick="setState('active')">User active (Tier 2)</button>
+</div>
+
+<div class="layout">
+  <!-- Sidebar (clean — bỏ duplicate streak/missions) -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <h1>Bible Quiz</h1>
+      <div class="bell"><span class="material-symbols-outlined">notifications</span></div>
+    </div>
+    <div class="sidebar-user">
+      <div class="avatar">T</div>
+      <div>
+        <div class="name">TAI THANH</div>
+        <div class="tier show-new">Tân Tín Hữu</div>
+        <div class="tier show-active">Người Tìm Kiếm</div>
+      </div>
+    </div>
+    <div class="sidebar-nav-item active"><span class="material-symbols-outlined">home</span> Trang chủ</div>
+    <div class="sidebar-nav-item"><span class="material-symbols-outlined">leaderboard</span> Xếp hạng</div>
+    <div class="sidebar-nav-item"><span class="material-symbols-outlined">groups</span> Nhóm</div>
+    <div class="sidebar-nav-item"><span class="material-symbols-outlined">person</span> Cá nhân</div>
+  </aside>
+
+  <main class="main">
+
+    <!-- ===== GREETING + TIER (compact unified) ===== -->
+    <div class="greeting-card">
+      <div class="greeting-avatar-wrap">
+        <div class="greeting-avatar">T</div>
+        <div class="greeting-tier-badge show-new">🌱</div>
+        <div class="greeting-tier-badge show-active">🔍</div>
+      </div>
+
+      <div class="greeting-info">
+        <div class="greeting-meta">Chào buổi tối</div>
+        <div class="greeting-name">TAI THANH</div>
+        <!-- Tier progress: SEGMENTED bar with 5 milestone dots (NOT star rating) -->
+        <div class="tier-progress">
+          <div class="tier-progress-label show-new">
+            <strong>Tân Tín Hữu</strong>
+            <span class="material-symbols-outlined" style="font-size:14px;color:#6b7280">arrow_forward</span>
+            Người Tìm Kiếm
+          </div>
+          <div class="tier-progress-label show-active">
+            <strong>Người Tìm Kiếm</strong>
+            <span class="material-symbols-outlined" style="font-size:14px;color:#6b7280">arrow_forward</span>
+            Môn Đồ
+          </div>
+          <div class="tier-progress-bar">
+            <div class="tier-progress-fill show-new" style="width:0%"></div>
+            <div class="tier-progress-fill show-active" style="width:62%"></div>
+            <div class="tier-milestones">
+              <span class="tier-milestone show-active reached"></span>
+              <span class="tier-milestone show-active reached"></span>
+              <span class="tier-milestone show-active reached"></span>
+              <span class="tier-milestone show-active"></span>
+              <span class="tier-milestone show-active"></span>
+              <span class="tier-milestone show-new"></span>
+              <span class="tier-milestone show-new"></span>
+              <span class="tier-milestone show-new"></span>
+              <span class="tier-milestone show-new"></span>
+              <span class="tier-milestone show-new"></span>
+            </div>
+          </div>
+          <div class="tier-progress-pct show-new">0 / 1,000 XP</div>
+          <div class="tier-progress-pct show-active">3,120 / 5,000</div>
+        </div>
+      </div>
+
+      <div class="greeting-stats">
+        <div class="greeting-stat">
+          <div class="greeting-stat-icon">🔥</div>
+          <div class="greeting-stat-v show-new">0</div>
+          <div class="greeting-stat-v show-active">12</div>
+          <div class="greeting-stat-l">Streak</div>
+        </div>
+        <div class="greeting-stat">
+          <div class="greeting-stat-icon energy">⚡</div>
+          <div class="greeting-stat-v">100</div>
+          <div class="greeting-stat-l">Năng lượng</div>
+        </div>
+        <div class="greeting-stat">
+          <div class="greeting-stat-icon cal">📊</div>
+          <div class="greeting-stat-v show-new">0</div>
+          <div class="greeting-stat-v show-active">847</div>
+          <div class="greeting-stat-l">Mùa này</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== DAILY CHALLENGE HERO ===== -->
+    <div class="dc-hero">
+      <div class="dc-icon">
+        <span class="material-symbols-outlined">local_fire_department</span>
+      </div>
+      <div class="dc-info">
+        <div class="dc-label">Thử thách hôm nay</div>
+        <div class="dc-title">5 câu cùng cộng đồng</div>
+        <div class="dc-meta">
+          <span class="dc-meta-item">
+            <span class="material-symbols-outlined">timer</span> 5 phút
+          </span>
+          <span class="dc-meta-item">
+            <span class="material-symbols-outlined">quiz</span> 5 câu
+          </span>
+          <span class="dc-meta-item reward">
+            <span class="material-symbols-outlined">workspace_premium</span> +50 XP
+          </span>
+          <span class="dc-meta-item" style="color:#fca5a5;border-color:rgba(239,68,68,0.25)">
+            <span class="material-symbols-outlined">auto_awesome</span> Mùa Ngũ Tuần ×1.5
+          </span>
+        </div>
+      </div>
+      <div class="dc-cta-wrap">
+        <button class="btn-cta-large">
+          Vào thử thách
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+        <div class="dc-countdown">Làm mới sau <strong>07:17:55</strong></div>
+      </div>
+    </div>
+
+    <!-- ===== MOTIVATION CARD (state new only — friendly hint) ===== -->
+    <div class="show-new motivation-card">
+      <div class="mot-icon">
+        <span class="material-symbols-outlined">tips_and_updates</span>
+      </div>
+      <div>
+        <div class="mot-text-h">
+          <span class="step">Bước 1</span>
+          Hoàn thành thử thách hôm nay
+        </div>
+        <div class="mot-text-d">
+          Sau khi hoàn thành Daily Challenge đầu tiên, bạn sẽ mở khóa Nhiệm vụ ngày, Bảng xếp hạng, và bắt đầu chuỗi (streak).
+        </div>
+      </div>
+      <button class="btn-outline">Bắt đầu →</button>
+    </div>
+
+    <!-- ===== GAME MODES — PRIMARY (Practice + Ranked) ===== -->
+    <div class="section-h">
+      <div class="section-h-title">
+        <span class="material-symbols-outlined">sports_esports</span>
+        Chế độ chơi chính
+      </div>
+    </div>
+
+    <div class="modes-primary">
+      <!-- Practice -->
+      <div class="mode-card">
+        <div class="mode-card-top">
+          <div style="display:flex;gap:14px;align-items:center">
+            <div class="mode-icon practice">
+              <span class="material-symbols-outlined">menu_book</span>
+            </div>
+            <div>
+              <div class="mode-name">Luyện tập</div>
+              <div class="mode-desc">Học theo nhịp riêng, không giới hạn</div>
+            </div>
+          </div>
+          <span class="mode-status-chip unlocked">
+            <span class="material-symbols-outlined">check</span> Mở
+          </span>
+        </div>
+        <div class="mode-card-footer">
+          <div class="mode-card-meta show-new">Chọn sách + độ khó tự do</div>
+          <div class="mode-card-meta show-active">Đang ôn <strong>Genesis</strong> · 47% mastery</div>
+          <span class="mode-arrow">Bắt đầu <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span></span>
+        </div>
+      </div>
+
+      <!-- Ranked: locked for new, featured for active -->
+      <div class="mode-card show-new locked">
+        <div class="mode-card-top">
+          <div style="display:flex;gap:14px;align-items:center">
+            <div class="mode-icon ranked">
+              <span class="material-symbols-outlined">trophy</span>
+            </div>
+            <div>
+              <div class="mode-name">Thi đấu Ranked</div>
+              <div class="mode-desc">Cạnh tranh xếp hạng theo mùa</div>
+            </div>
+          </div>
+          <span class="mode-status-chip locked">
+            <span class="material-symbols-outlined">lock</span> Khóa
+          </span>
+        </div>
+        <div class="mode-locked-overlay">
+          <span class="material-symbols-outlined" style="font-size:14px">flag</span>
+          Đạt <strong>Người Tìm Kiếm</strong> (1,000 XP) để mở khóa
+        </div>
+      </div>
+
+      <div class="mode-card show-active featured">
+        <div class="mode-card-top">
+          <div style="display:flex;gap:14px;align-items:center">
+            <div class="mode-icon ranked">
+              <span class="material-symbols-outlined">trophy</span>
+            </div>
+            <div>
+              <div class="mode-name">Thi đấu Ranked</div>
+              <div class="mode-desc">Cạnh tranh xếp hạng theo mùa</div>
+            </div>
+          </div>
+          <span class="mode-status-chip unlocked">
+            <span class="material-symbols-outlined">bolt</span> 100/100
+          </span>
+        </div>
+        <div class="mode-card-footer">
+          <div class="mode-card-meta">Hôm nay <strong>23/100</strong> câu · Hạng <strong>#147</strong> mùa này</div>
+          <span class="mode-arrow">Vào trận <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VARIETY MODES (3 cards — không tier-locked theo SPEC) ===== -->
+    <div class="section-h">
+      <div class="section-h-title">
+        <span class="material-symbols-outlined">casino</span>
+        Variety Modes
+        <span style="font-size:11px;color:#9ca3af;font-weight:500;text-transform:none;letter-spacing:0">(không ảnh hưởng XP/leaderboard)</span>
+      </div>
+    </div>
+
+    <div class="variety-grid">
+      <div class="variety-card">
+        <div class="variety-top">
+          <div class="variety-icon weekly">
+            <span class="material-symbols-outlined">date_range</span>
+          </div>
+          <span class="xp-badge">CHỦ ĐỀ</span>
+        </div>
+        <div class="variety-name">Chủ đề tuần này</div>
+        <div class="variety-desc">"Lòng can đảm" · 10 câu xoay vòng theo tuần</div>
+      </div>
+
+      <div class="variety-card">
+        <div class="variety-top">
+          <div class="variety-icon mystery">
+            <span class="material-symbols-outlined">help_outline</span>
+          </div>
+          <span class="xp-badge">×1.5 XP</span>
+        </div>
+        <div class="variety-name">Mystery Mode</div>
+        <div class="variety-desc">Random hoàn toàn — bạn có dám?</div>
+      </div>
+
+      <div class="variety-card">
+        <div class="variety-top">
+          <div class="variety-icon speed">
+            <span class="material-symbols-outlined">flash_on</span>
+          </div>
+          <span class="xp-badge">×2 XP</span>
+        </div>
+        <div class="variety-name">Speed Round</div>
+        <div class="variety-desc">10 câu × 10s · 1 lần/ngày</div>
+      </div>
+    </div>
+
+    <!-- ===== MULTIPLAYER & TOURNAMENT (locked-aware) ===== -->
+    <div class="section-h">
+      <div class="section-h-title">
+        <span class="material-symbols-outlined">groups</span>
+        Thi đấu nhóm
+      </div>
+    </div>
+
+    <div class="modes-primary">
+      <!-- Multiplayer Speed Race -->
+      <div class="mode-card show-new locked">
+        <div class="mode-card-top">
+          <div style="display:flex;gap:14px;align-items:center">
+            <div class="mode-icon multiplayer">
+              <span class="material-symbols-outlined">groups</span>
+            </div>
+            <div>
+              <div class="mode-name">Phòng chơi</div>
+              <div class="mode-desc">Speed Race, Battle Royale, Team vs Team</div>
+            </div>
+          </div>
+          <span class="mode-status-chip locked">
+            <span class="material-symbols-outlined">lock</span> Khóa
+          </span>
+        </div>
+        <div class="mode-locked-overlay">
+          <span class="material-symbols-outlined" style="font-size:14px">flag</span>
+          Đạt <strong>Người Tìm Kiếm</strong> để mở khóa
+        </div>
+      </div>
+
+      <div class="mode-card show-active">
+        <div class="mode-card-top">
+          <div style="display:flex;gap:14px;align-items:center">
+            <div class="mode-icon multiplayer">
+              <span class="material-symbols-outlined">groups</span>
+            </div>
+            <div>
+              <div class="mode-name">Phòng chơi</div>
+              <div class="mode-desc">Speed Race · Battle Royale · Team vs Team</div>
+            </div>
+          </div>
+          <span class="mode-status-chip unlocked">
+            <span class="material-symbols-outlined">circle</span> 12 phòng
+          </span>
+        </div>
+        <div class="mode-card-footer">
+          <div class="mode-card-meta">Anh em trong nhóm đang chờ · 3 phòng từ <strong>FMC Đà Nẵng</strong></div>
+          <span class="mode-arrow">Tham gia <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span></span>
+        </div>
+      </div>
+
+      <!-- Tournament -->
+      <div class="mode-card locked">
+        <div class="mode-card-top">
+          <div style="display:flex;gap:14px;align-items:center">
+            <div class="mode-icon tournament">
+              <span class="material-symbols-outlined">military_tech</span>
+            </div>
+            <div>
+              <div class="mode-name">Giải đấu</div>
+              <div class="mode-desc">Bracket 1v1 · 3 mạng/trận</div>
+            </div>
+          </div>
+          <span class="mode-status-chip locked">
+            <span class="material-symbols-outlined">lock</span> Khóa
+          </span>
+        </div>
+        <div class="mode-locked-overlay">
+          <span class="material-symbols-outlined" style="font-size:14px">flag</span>
+          Đạt <strong>Hiền Triết</strong> (Tier 4) để mở khóa
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== DAILY MISSIONS (state-active only — bỏ noise cho user mới) ===== -->
+    <div class="show-active">
+      <div class="section-h">
+        <div class="section-h-title">
+          <span class="material-symbols-outlined">task_alt</span>
+          Nhiệm vụ hôm nay
+          <span style="font-size:11px;color:#4ade80;font-weight:600;letter-spacing:0;text-transform:none">2/3 hoàn thành</span>
+        </div>
+      </div>
+      <div class="missions-card">
+        <div class="mission-row">
+          <div class="mission-check done">
+            <span class="material-symbols-outlined" style="font-size:14px">check</span>
+          </div>
+          <div class="mission-text done">Trả lời đúng 3 câu</div>
+          <div class="mission-progress-mini">
+            <div class="mission-bar"><div class="mission-bar-fill" style="width:100%"></div></div>
+            3/3
+          </div>
+        </div>
+        <div class="mission-row">
+          <div class="mission-check done">
+            <span class="material-symbols-outlined" style="font-size:14px">check</span>
+          </div>
+          <div class="mission-text done">Hoàn thành thử thách hàng ngày</div>
+          <div class="mission-progress-mini">
+            <div class="mission-bar"><div class="mission-bar-fill" style="width:100%"></div></div>
+            1/1
+          </div>
+        </div>
+        <div class="mission-row">
+          <div class="mission-check"></div>
+          <div class="mission-text">Trả lời 3 câu liên tiếp đúng</div>
+          <div class="mission-progress-mini">
+            <div class="mission-bar"><div class="mission-bar-fill" style="width:33%"></div></div>
+            1/3
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VERSE + JOURNEY (2-col, moved up — nội dung spiritual quan trọng) ===== -->
+    <div class="grid-1-1">
+
+      <div class="card-base verse-card">
+        <div class="card-h">
+          <span class="material-symbols-outlined">menu_book</span>
+          Câu gốc hôm nay
+        </div>
+        <div class="verse-text">
+          Hãy tìm kiếm nước Đức Chúa Trời và sự công bình của Ngài, thì Ngài sẽ cho thêm các ngươi mọi điều ấy nữa.
+        </div>
+        <div class="verse-ref">— Ma-thi-ơ 6:33 (BTTHĐ 2011)</div>
+      </div>
+
+      <div class="card-base">
+        <div class="card-h">
+          <span class="material-symbols-outlined">map</span>
+          Hành trình 66 sách
+          <span style="margin-left:auto;font-size:11px;color:#9ca3af;font-weight:500" class="show-active">8/66</span>
+          <span style="margin-left:auto;font-size:11px;color:#9ca3af;font-weight:500" class="show-new">0/66</span>
+        </div>
+
+        <!-- State new: focus on first book -->
+        <div class="show-new">
+          <div class="journey-progress-row">
+            <div class="journey-book-info">
+              <div class="journey-book-icon">
+                <span class="material-symbols-outlined">auto_stories</span>
+              </div>
+              <div>
+                <div class="journey-book-name">Sáng Thế Ký</div>
+                <div class="journey-book-prog">Sách đầu tiên · 50 câu</div>
+              </div>
+            </div>
+            <div class="journey-pct">0%</div>
+          </div>
+          <div class="journey-mini-bar"><div class="journey-mini-fill" style="width:0%"></div></div>
+          <div class="journey-next-badge">
+            <div class="journey-next-icon">📖</div>
+            <div class="journey-next-text">
+              <div class="journey-next-label">Phần thưởng khi hoàn thành</div>
+              <div class="journey-next-name">Badge "Khởi Hành" + mở Xuất Hành</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- State active: focus on current book progress -->
+        <div class="show-active">
+          <div class="journey-progress-row">
+            <div class="journey-book-info">
+              <div class="journey-book-icon">
+                <span class="material-symbols-outlined">auto_stories</span>
+              </div>
+              <div>
+                <div class="journey-book-name">Lê-vi Ký</div>
+                <div class="journey-book-prog">Đang chinh phục · 23/52 câu</div>
+              </div>
+            </div>
+            <div class="journey-pct">44%</div>
+          </div>
+          <div class="journey-mini-bar"><div class="journey-mini-fill" style="width:44%"></div></div>
+          <div class="journey-next-badge">
+            <div class="journey-next-icon">⛰️</div>
+            <div class="journey-next-text">
+              <div class="journey-next-label">Còn 36% để chinh phục</div>
+              <div class="journey-next-name">Badge "Người chinh phục Lê-vi Ký" + mở Dân Số Ký</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== LEADERBOARD MINI + ACTIVITY (state-active only) ===== -->
+    <div class="show-active grid-1-1">
+      <div class="card-base">
+        <div class="card-h">
+          <span class="material-symbols-outlined">leaderboard</span>
+          Bảng xếp hạng tuần này
+          <span style="margin-left:auto;font-size:11px;color:#9ca3af;font-weight:500">Tab: Tuần</span>
+        </div>
+
+        <div class="lb-mini-row">
+          <div class="lb-mini-rank medal-1">🥇</div>
+          <div class="lb-mini-avatar" style="background:linear-gradient(135deg,#fbbf24 0%,#d97706 100%);color:#11131e">M</div>
+          <div class="lb-mini-name">Minh Pham · Sứ Đồ</div>
+          <div class="lb-mini-score">3,420 đ</div>
+        </div>
+        <div class="lb-mini-row">
+          <div class="lb-mini-rank medal-2">🥈</div>
+          <div class="lb-mini-avatar">L</div>
+          <div class="lb-mini-name">Lan Nguyen · Tiên Tri</div>
+          <div class="lb-mini-score">2,890 đ</div>
+        </div>
+        <div class="lb-mini-row">
+          <div class="lb-mini-rank medal-3">🥉</div>
+          <div class="lb-mini-avatar">H</div>
+          <div class="lb-mini-name">Hieu Tran · Hiền Triết</div>
+          <div class="lb-mini-score">2,140 đ</div>
+        </div>
+        <div style="text-align:center;font-size:11px;color:#6b7280;letter-spacing:2px;margin:8px 0">···</div>
+        <div class="lb-mini-row me">
+          <div class="lb-mini-rank">147</div>
+          <div class="lb-mini-avatar me">T</div>
+          <div class="lb-mini-name">TAI THANH (bạn)</div>
+          <div class="lb-mini-score">847 đ</div>
+        </div>
+      </div>
+
+      <div class="card-base">
+        <div class="card-h">
+          <span class="material-symbols-outlined">notifications_active</span>
+          Hoạt động trong nhóm
+        </div>
+        <div class="activity-row">
+          <div class="activity-icon complete">
+            <span class="material-symbols-outlined">check</span>
+          </div>
+          <div class="activity-text"><strong>Tai Bui Thanh</strong> hoàn thành Daily Challenge (5/5)</div>
+          <div class="activity-time">15p</div>
+        </div>
+        <div class="activity-row">
+          <div class="activity-icon tier">
+            <span class="material-symbols-outlined">workspace_premium</span>
+          </div>
+          <div class="activity-text"><strong>Hoa Le</strong> đạt tier <strong>Môn Đồ</strong> 🪔</div>
+          <div class="activity-time">2g</div>
+        </div>
+        <div class="activity-row">
+          <div class="activity-icon streak">
+            <span class="material-symbols-outlined">local_fire_department</span>
+          </div>
+          <div class="activity-text"><strong>Anh Pham</strong> đang có streak 30 ngày 🔥</div>
+          <div class="activity-time">3g</div>
+        </div>
+        <div class="activity-row">
+          <div class="activity-icon complete">
+            <span class="material-symbols-outlined">trophy</span>
+          </div>
+          <div class="activity-text"><strong>FMC Đà Nẵng</strong> tổ chức tournament tối nay 20:00</div>
+          <div class="activity-time">5g</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Annotation ===== -->
+    <div class="annotation">
+      <strong>📝 Ghi chú thiết kế</strong>
+
+      <p style="margin-top:12px"><strong>Cấu trúc theo priority P0 → P3:</strong></p>
+      <ul>
+        <li><strong>P0 — Greeting card</strong>: Tier progress thay 5 ⭐ rating bằng <strong>segmented bar + 5 milestone dots</strong>. Quick stats inline (streak/energy/season points) thay vì cards riêng. <em>Compact ~120px height.</em></li>
+        <li><strong>P0 — Daily Challenge hero</strong>: Bỏ list 5 sách, bỏ "Chỉ hôm nay" badge. Thêm chip mùa Ngũ Tuần ×1.5. Right side là CTA + countdown.</li>
+        <li><strong>P0 — Motivation card</strong> (state-new only): "Bước 1: hoàn thành thử thách". Gentle onboarding instead of empty 0/0/0 sections.</li>
+        <li><strong>P1 — Game modes chính</strong>: Practice (always on) + Ranked. State-aware: locked với clear CTA "Đạt Người Tìm Kiếm để mở khóa".</li>
+        <li><strong>P2 — Variety modes</strong>: 3 cards (Weekly/Mystery/Speed) — KHÔNG tier-locked theo SPEC mục 5.6. Note "không ảnh hưởng XP/leaderboard" nhỏ.</li>
+        <li><strong>P2 — Multiplayer + Tournament</strong>: Section riêng "Thi đấu nhóm". <strong>Bỏ "Nhóm Giáo Xứ"</strong> khỏi đây — đó là Group feature, có nav riêng.</li>
+        <li><strong>P2 — Daily Missions</strong>: HIDE cho user mới. Show khi state-active. (Sidebar không còn duplicate.)</li>
+        <li><strong>P3 — Verse + Journey 2-col</strong>: Verse move lên cao thấy được. Journey focus 1 sách cụ thể + reward badge cụ thể, không generic 0/66 bar.</li>
+        <li><strong>P3 — Leaderboard + Activity 2-col</strong>: Chỉ state-active. State-new ẩn để tránh comparison âm tính.</li>
+      </ul>
+
+      <div class="delta">
+        <strong>Δ Diff với design cũ:</strong>
+        <ul style="margin-top:6px">
+          <li>❌ Bỏ: 5-star rating UI (confusing), "Chỉ hôm nay" badge, list 5 tên sách trong DC, Nhóm Giáo Xứ trong game modes, sidebar streak+missions duplicate</li>
+          <li>✅ Thêm: tier segmented bar với milestone dots, motivation card cho user mới, locked state rõ ràng cho mọi mode tier-locked, mùa Ngũ Tuần chip, Journey next milestone cụ thể</li>
+          <li>📦 Move: Verse từ footer lên giữa page, Daily Missions từ sidebar vào main</li>
+          <li>🙈 Hide cho user mới: Daily Missions, Leaderboard, Activity (giảm noise 0-state)</li>
+        </ul>
+      </div>
+
+      <p style="margin-top:12px"><strong>API gap (cần thêm hoặc reuse):</strong></p>
+      <ul>
+        <li><code>GET /api/me</code> đã có — extend response thêm <code>currentBook</code> (sách đang ôn) + <code>currentBookProgress</code></li>
+        <li><code>GET /api/me/journey/next-milestone</code> — sách kế tiếp cần focus (1 record thay vì 66)</li>
+        <li><code>GET /api/me/activity-feed?scope=group&limit=4</code> — hoạt động trong nhóm (state-active)</li>
+        <li>Existing endpoints reuse: ranked-status, daily-challenge, leaderboard/global, tier-progress, daily-missions</li>
+      </ul>
+
+      <p style="margin-top:12px"><strong>Câu hỏi cho Bui:</strong></p>
+      <ul>
+        <li>Tier progress segmented bar OK chứ? (5 dots = 5 sub-stars match TierProgressService logic.) Hay bạn muốn visual khác (stepper, percentage only, hexagons...)?</li>
+        <li>Motivation card "Bước 1" cho user mới — có muốn thêm "Bước 2: Đạt Người Tìm Kiếm để mở Ranked" sau khi user complete DC đầu tiên không?</li>
+        <li>Variety modes section — currently note "không ảnh hưởng XP/leaderboard" trong heading. Có rõ ràng đủ không, hay cần icon warning visible hơn?</li>
+        <li>Activity feed (state-active) — backend hiện chưa có, build v1 hay defer?</li>
+      </ul>
+    </div>
+
+  </main>
+</div>
+
+<script>
+  function setState(state) {
+    document.body.className = 'state-' + state;
+    document.querySelectorAll('.state-toggle button').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>

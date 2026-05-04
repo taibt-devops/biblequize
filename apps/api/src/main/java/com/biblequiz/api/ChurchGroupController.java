@@ -75,12 +75,14 @@ public class ChurchGroupController {
             User user = getUser(principal);
             String name = (String) body.get("name");
             String description = (String) body.get("description");
+            // Default true (public) — discovery-first; user can opt out at create time.
+            boolean isPublic = body.get("isPublic") == null ? true : Boolean.TRUE.equals(body.get("isPublic"));
 
             if (name == null || name.isBlank()) {
                 return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Ten nhom khong duoc de trong"));
             }
 
-            Map<String, Object> result = churchGroupService.createGroup(name, description, user);
+            Map<String, Object> result = churchGroupService.createGroup(name, description, isPublic, user);
             return ResponseEntity.ok(Map.of("success", true, "group", result));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));

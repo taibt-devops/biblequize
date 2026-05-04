@@ -243,7 +243,7 @@ function PublicCard({
   const { t } = useTranslation();
   const hue = group.avatarHue ?? pickHue(group.id);
   return (
-    <div className="bg-[rgba(50,52,64,0.3)] backdrop-blur-md border border-white/5 hover:border-[rgba(232,168,50,0.3)] hover:bg-[rgba(50,52,64,0.5)] rounded-2xl p-3.5 sm:p-4.5 transition-all flex flex-col">
+    <div className="w-full h-full bg-[rgba(50,52,64,0.3)] backdrop-blur-md border border-white/5 hover:border-[rgba(232,168,50,0.3)] hover:bg-[rgba(50,52,64,0.5)] rounded-2xl p-3.5 sm:p-4.5 transition-all flex flex-col">
       <div className="flex gap-2.5 items-center mb-3">
         <div className={`w-9 h-9 sm:w-11 sm:h-11 rounded-lg flex items-center justify-center text-[18px] sm:text-[22px] flex-shrink-0 overflow-hidden ${HUE_BG[hue]}`}>
           {group.avatarUrl ? (
@@ -262,15 +262,16 @@ function PublicCard({
           </div>
         </div>
       </div>
-      {group.description && (
-        <div className="text-on-surface/55 text-[11px] sm:text-[12px] leading-relaxed line-clamp-2 mb-3 min-h-[2.5em]">
-          {group.description}
-        </div>
-      )}
+      <div
+        className="text-on-surface/55 text-[11px] sm:text-[12px] leading-relaxed line-clamp-2 mb-3 flex-1 min-h-[2.5em]"
+        title={group.description ?? ''}
+      >
+        {group.description ?? ''}
+      </div>
       <button
         onClick={() => onJoin(group.code)}
         disabled={joining}
-        className="w-full bg-[rgba(232,168,50,0.1)] text-secondary border border-[rgba(232,168,50,0.25)] hover:bg-[rgba(232,168,50,0.2)] rounded-lg px-3 py-2 text-[11px] sm:text-[12px] font-bold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full bg-[rgba(232,168,50,0.1)] text-secondary border border-[rgba(232,168,50,0.25)] hover:bg-[rgba(232,168,50,0.2)] rounded-lg px-3 py-2 text-[11px] sm:text-[12px] font-bold transition-colors disabled:opacity-50 disabled:cursor-not-allowed mt-auto"
       >
         + {t('groups.joinBtn')}
       </button>
@@ -297,6 +298,7 @@ const Groups: React.FC = () => {
   // Create form
   const [createName, setCreateName] = useState('');
   const [createDesc, setCreateDesc] = useState('');
+  const [createIsPublic, setCreateIsPublic] = useState(true);
   const [createLoading, setCreateLoading] = useState(false);
   const [createError, setCreateError] = useState('');
 
@@ -391,6 +393,7 @@ const Groups: React.FC = () => {
       const res = await api.post('/api/groups', {
         name: createName.trim(),
         description: createDesc.trim(),
+        isPublic: createIsPublic,
       });
       if (res.data.success) {
         const group = res.data.group;
@@ -398,6 +401,7 @@ const Groups: React.FC = () => {
         setShowCreateModal(false);
         setCreateName('');
         setCreateDesc('');
+        setCreateIsPublic(true);
         navigate(`/groups/${group.id}`);
       } else {
         setCreateError(res.data.message || t('groups.createFailed'));
@@ -576,7 +580,7 @@ const Groups: React.FC = () => {
                   />
                 ))
               : publicGroups.map((g) => (
-                  <div key={g.id} className="snap-start sm:snap-align-none">
+                  <div key={g.id} className="snap-start sm:snap-align-none flex">
                     <PublicCard group={g} onJoin={handleJoinPublicGroup} joining={quickJoining} />
                   </div>
                 ))}
@@ -641,6 +645,56 @@ const Groups: React.FC = () => {
                   maxLength={500}
                 />
               </div>
+
+              {/* Privacy toggle */}
+              <div>
+                <label className="block text-[11px] font-medium uppercase tracking-wider text-on-surface-variant mb-1.5">
+                  {t('groups.privacyLabel')}
+                </label>
+                <div className="grid grid-cols-2 gap-2" role="radiogroup">
+                  <button
+                    type="button"
+                    role="radio"
+                    aria-checked={createIsPublic}
+                    data-testid="groups-create-public-btn"
+                    onClick={() => setCreateIsPublic(true)}
+                    className={`rounded-lg border px-3 py-2.5 text-left transition-all ${
+                      createIsPublic
+                        ? 'bg-[rgba(232,168,50,0.1)] border-secondary text-on-surface'
+                        : 'bg-surface-container-low border-white/10 text-on-surface/70 hover:border-white/20'
+                    }`}
+                  >
+                    <div className="flex items-center gap-1.5 text-[12px] font-semibold">
+                      <span className="material-symbols-outlined text-[15px]">public</span>
+                      {t('groups.privacyPublic')}
+                    </div>
+                    <div className="text-[10px] text-on-surface/50 mt-0.5 leading-snug">
+                      {t('groups.privacyPublicHint')}
+                    </div>
+                  </button>
+                  <button
+                    type="button"
+                    role="radio"
+                    aria-checked={!createIsPublic}
+                    data-testid="groups-create-private-btn"
+                    onClick={() => setCreateIsPublic(false)}
+                    className={`rounded-lg border px-3 py-2.5 text-left transition-all ${
+                      !createIsPublic
+                        ? 'bg-[rgba(232,168,50,0.1)] border-secondary text-on-surface'
+                        : 'bg-surface-container-low border-white/10 text-on-surface/70 hover:border-white/20'
+                    }`}
+                  >
+                    <div className="flex items-center gap-1.5 text-[12px] font-semibold">
+                      <span className="material-symbols-outlined text-[15px]">lock</span>
+                      {t('groups.privacyPrivate')}
+                    </div>
+                    <div className="text-[10px] text-on-surface/50 mt-0.5 leading-snug">
+                      {t('groups.privacyPrivateHint')}
+                    </div>
+                  </button>
+                </div>
+              </div>
+
               {createError && <p className="text-sm text-error font-bold">{createError}</p>}
               <button
                 type="submit"

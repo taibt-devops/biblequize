@@ -90,7 +90,7 @@ class ChurchGroupControllerTest extends BaseControllerTest {
         serviceResult.put("code", "ABC123");
         serviceResult.put("memberCount", 1);
 
-        when(churchGroupService.createGroup(eq("My Group"), eq("A church group"), any(User.class)))
+        when(churchGroupService.createGroup(eq("My Group"), eq("A church group"), anyBoolean(), any(User.class)))
                 .thenReturn(serviceResult);
 
         mockMvc.perform(post("/api/groups")

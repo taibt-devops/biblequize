@@ -52,6 +52,10 @@ public class ChurchGroupService {
     private final SecureRandom random = new SecureRandom();
 
     public Map<String, Object> createGroup(String name, String description, User leader) {
+        return createGroup(name, description, true, leader);
+    }
+
+    public Map<String, Object> createGroup(String name, String description, boolean isPublic, User leader) {
         String code = generateGroupCode();
 
         ChurchGroup group = new ChurchGroup();
@@ -59,6 +63,7 @@ public class ChurchGroupService {
         group.setName(name);
         group.setGroupCode(code);
         group.setDescription(description);
+        group.setIsPublic(isPublic);
         group.setLeader(leader);
         group.setMemberCount(1);
         churchGroupRepository.save(group);
@@ -74,6 +79,7 @@ public class ChurchGroupService {
         result.put("id", group.getId());
         result.put("name", group.getName());
         result.put("code", group.getGroupCode());
+        result.put("isPublic", group.getIsPublic());
         result.put("memberCount", group.getMemberCount());
         return result;
     }
