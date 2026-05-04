@@ -16,6 +16,12 @@ const MODES = [
 ] as const
 
 const QUESTION_COUNTS = [10, 15, 20, 30]
+const MODE_QUESTION_DEFAULTS: Record<string, number> = {
+  SPEED_RACE:   15,
+  BATTLE_ROYALE: 20,
+  TEAM_VS_TEAM:  15,
+  SUDDEN_DEATH:  20,
+}
 const TIME_OPTIONS = [10, 15, 20, 30]
 const DIFFICULTY_OPTIONS = [
   { value: 'EASY',   labelKey: 'practice.easy' },
@@ -41,7 +47,7 @@ export default function CreateRoom() {
   const [formData, setFormData] = useState({
     roomName: '',
     mode: 'SPEED_RACE',
-    questionCount: 10,
+    questionCount: MODE_QUESTION_DEFAULTS['SPEED_RACE'],
     timePerQuestion: 15,
     difficulty: 'MIXED',
     maxPlayers: 8,
@@ -62,12 +68,22 @@ export default function CreateRoom() {
     if (!isAuthenticated) navigate('/login', { replace: true })
   }, [isAuthenticated, navigate])
 
+  const validateRoomName = (name: string): string | null => {
+    if (name.length === 0) return null // empty → server default
+    if (name.length < 5) return 'Tên phòng phải có ít nhất 5 ký tự'
+    if (name.length > 60) return 'Tên phòng tối đa 60 ký tự'
+    if (/^(.)\1+$/.test(name)) return 'Tên phòng không hợp lệ (không thể chỉ một ký tự lặp lại)'
+    return null
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    const nameError = validateRoomName(formData.roomName.trim())
+    if (nameError) { setError(nameError); return; }
     setLoading(true)
     setError(null)
     try {
-      const payload: Record<string, unknown> = { ...formData, language: getQuizLanguage() }
+      const payload: Record<string, unknown> = { ...formData, roomName: formData.roomName.trim(), language: getQuizLanguage() }
       if (formData.questionSource !== 'CUSTOM' || !formData.questionSetId) {
         delete payload.questionSetId
       }
@@ -106,16 +122,26 @@ export default function CreateRoom() {
 
           {/* Room name */}
           <section className="space-y-2">
-            <label className="text-sm font-medium text-on-surface-variant">{t('createRoom.roomName')}</label>
+            <div className="flex items-center justify-between">
+              <label className="text-sm font-medium text-on-surface-variant">{t('createRoom.roomName')}</label>
+              {formData.roomName.length > 0 && (
+                <span className={`text-xs ${formData.roomName.length < 5 || formData.roomName.length > 60 ? 'text-error' : 'text-on-surface-variant/50'}`}>
+                  {formData.roomName.length}/60
+                </span>
+              )}
+            </div>
             <input
               type="text"
               value={formData.roomName}
               onChange={(e) => setFormData(prev => ({ ...prev, roomName: e.target.value }))}
               placeholder={t('createRoom.roomNamePlaceholder')}
               data-testid="create-room-name-input"
+              maxLength={60}
               className="w-full bg-surface-container-highest border border-transparent rounded-lg px-4 py-3 text-on-surface placeholder:text-on-surface-variant/40 focus:ring-1 focus:ring-secondary/60 focus:border-secondary/40 outline-none transition-all"
             />
-            <p className="text-xs text-on-surface-variant/60 italic">Để trống để dùng tên mặc định</p>
+            <p className="text-xs text-on-surface-variant/60 italic">
+              {formData.roomName.length === 0 ? 'Để trống để dùng tên mặc định' : 'Tối thiểu 5 ký tự'}
+            </p>
           </section>
 
           {/* Game mode — 4-col tall cards */}
@@ -128,7 +154,7 @@ export default function CreateRoom() {
                   <button
                     key={m.id}
                     type="button"
-                    onClick={() => setFormData(prev => ({ ...prev, mode: m.id }))}
+                    onClick={() => setFormData(prev => ({ ...prev, mode: m.id, questionCount: MODE_QUESTION_DEFAULTS[m.id] ?? 15 }))}
                     aria-pressed={active}
                     className="relative flex flex-col items-center justify-center text-center p-3 h-[140px] rounded-xl glass-card border transition-all active:scale-95"
                     style={{

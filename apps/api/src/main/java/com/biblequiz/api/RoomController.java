@@ -1,5 +1,7 @@
 package com.biblequiz.api;
 
+import com.biblequiz.api.websocket.RoomWebSocketController;
+import com.biblequiz.api.websocket.WebSocketMessage;
 import com.biblequiz.modules.room.entity.Room;
 import com.biblequiz.modules.room.service.RoomQuizService;
 import com.biblequiz.modules.room.service.RoomService;
@@ -28,6 +30,9 @@ public class RoomController {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private RoomWebSocketController roomWebSocketController;
+
     /**
      * POST /api/rooms - Tạo phòng mới
      */
@@ -36,7 +41,13 @@ public class RoomController {
         try {
             User user = getUser(principal);
 
-            String roomName = (String) body.getOrDefault("roomName", "Phòng của " + user.getName());
+            String rawName = body.get("roomName") instanceof String s ? s.trim() : "";
+            if (!rawName.isEmpty()) {
+                if (rawName.length() < 5)  throw new IllegalArgumentException("Tên phòng phải có ít nhất 5 ký tự");
+                if (rawName.length() > 60) throw new IllegalArgumentException("Tên phòng tối đa 60 ký tự");
+                if (rawName.matches("^(.)\\1+$")) throw new IllegalArgumentException("Tên phòng không hợp lệ");
+            }
+            String roomName = rawName.isEmpty() ? "Phòng của " + user.getName() : rawName;
             Integer maxPlayers = body.get("maxPlayers") instanceof Number n ? n.intValue() : 4;
             Integer questionCount = body.get("questionCount") instanceof Number n ? n.intValue() : 10;
             Integer timePerQuestion = body.get("timePerQuestion") instanceof Number n ? n.intValue() : 30;
@@ -91,6 +102,16 @@ public class RoomController {
 
             Room room = roomService.joinRoom(roomCode.trim().toUpperCase(), user);
             RoomService.RoomDetailsDTO details = roomService.getRoomDetails(room.getId());
+
+            // Broadcast PLAYER_JOINED so existing subscribers (e.g. the host) see the new player immediately
+            WebSocketMessage.PlayerJoinedData playerData = new WebSocketMessage.PlayerJoinedData(
+                    user.getId(), user.getName(), user.getAvatarUrl(),
+                    details.players.stream()
+                            .filter(p -> p.userId.equals(user.getId()))
+                            .findFirst()
+                            .orElse(null));
+            roomWebSocketController.sendToRoom(room.getId(),
+                    new WebSocketMessage.Message(WebSocketMessage.MessageTypes.PLAYER_JOINED, playerData));
 
             return ResponseEntity.ok(Map.of("success", true, "room", details));
         } catch (Exception e) {

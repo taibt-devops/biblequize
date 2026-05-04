@@ -120,7 +120,7 @@ describe('CreateRoom', () => {
     await waitFor(() => {
       expect(mockApiPost).toHaveBeenCalledWith('/api/rooms', expect.objectContaining({
         mode: 'SPEED_RACE',
-        questionCount: 10,
+        questionCount: 15,
       }))
       expect(mockNavigate).toHaveBeenCalledWith('/room/room-123/lobby', expect.anything())
     })
