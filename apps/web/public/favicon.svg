@@ -1,24 +1,23 @@
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mirrors the header logo mark (AppLayout.tsx): spectrum arch frame,
+       paper interior, flame. 30x34 CSS px scaled x13, centered. -->
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#312e81"/><stop offset="1" stop-color="#1e1b4b"/>
+    <linearGradient id="spectrum" gradientUnits="userSpaceOnUse" x1="61" y1="0" x2="451" y2="0">
+      <stop offset="0" stop-color="#2D46C8"/>
+      <stop offset="0.34" stop-color="#0E8A6B"/>
+      <stop offset="0.64" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#E0354B"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
-      <stop offset="0" stop-color="#fcd34d" stop-opacity="0.55"/>
-      <stop offset="0.6" stop-color="#f59e0b" stop-opacity="0.10"/>
-      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fef3c7"/><stop offset="0.5" stop-color="#fbbf24"/><stop offset="1" stop-color="#d97706"/>
-    </linearGradient>
-    <linearGradient id="lite" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fffdf5"/><stop offset="1" stop-color="#fde68a"/>
+    <linearGradient id="flame" gradientUnits="userSpaceOnUse" x1="0" y1="152" x2="0" y2="321">
+      <stop offset="0" stop-color="#FFE08A"/>
+      <stop offset="0.52" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#FF6F3D"/>
     </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
-  <circle cx="256" cy="215" r="190" fill="url(#glow)"/>
-  <path fill="url(#gold)" d="M256,104 C296,168 330,212 330,280 C330,350 298,398 256,402
-      C214,398 182,350 182,280 C182,212 216,168 256,104 Z"/>
-  <path fill="url(#lite)" d="M256,198 C280,240 298,268 298,308 C298,346 280,370 256,372
-      C232,370 214,346 214,308 C214,268 232,240 256,198 Z"/>
+  <path fill="url(#spectrum)" d="M61,269 A195,234 0 0 1 256,35 A195,234 0 0 1 451,269
+      L451,386 A91,91 0 0 1 360,477 L152,477 A91,91 0 0 1 61,386 Z"/>
+  <path fill="#FBFAF5" d="M100,266 A156,192 0 0 1 256,74 A156,192 0 0 1 412,266
+      L412,378 A60,60 0 0 1 352,438 L160,438 A60,60 0 0 1 100,378 Z"/>
+  <path fill="url(#flame)" d="M210.5,256.8 A45.5,104.8 0 0 1 301.5,256.8
+      A45.5,64.2 0 0 1 256,321 A45.5,64.2 0 0 1 210.5,256.8 Z"/>
 </svg>

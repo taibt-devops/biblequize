@@ -1,9 +1,8 @@
 // Regenerate the favicon/app-icon set from public/favicon.svg.
-// The source SVG is a self-contained flame mark on a rounded indigo square.
-// Tab icons (16/32) render it as-is (rounded transparent corners are fine in a
-// browser tab); PWA / home-screen icons (180/192/512) flatten it full-bleed onto
-// the source's base indigo (#1e1b4b) so the rounded corners read as a solid
-// square (no transparent-corner artifact on iOS — the OS applies its own mask).
+// The source SVG is the header logo mark (spectrum arch + flame) on transparent.
+// Tab icons (16/32) render it as-is; PWA / home-screen icons (180/192/512) place
+// it at ~70% onto a solid paper (#FBFAF5) square so the OS mask never clips the
+// arch and there is no transparent-corner artifact on iOS.
 // favicon.ico bundles the 16+32 PNGs (PNG-in-ICO). Run: node scripts/gen-favicons.mjs
 import sharp from 'sharp'
 import { readFileSync, writeFileSync } from 'fs'
@@ -12,14 +11,15 @@ import { dirname, join } from 'path'
 
 const PUB = join(dirname(fileURLToPath(import.meta.url)), '..', 'public')
 const svg = readFileSync(join(PUB, 'favicon.svg'))
-const BASE = { r: 0x1e, g: 0x1b, b: 0x4b, alpha: 1 } // #1e1b4b — SVG's base indigo
+const BASE = { r: 0xfb, g: 0xfa, b: 0xf5, alpha: 1 } // #FBFAF5 — --bq-paper
 const DENSITY = 384 // oversample the 512-unit viewBox (~2730px) so icons stay crisp
 
 const tab = (size) =>
   sharp(svg, { density: DENSITY }).resize(size, size).png().toBuffer()
 
 async function appIcon(size) {
-  const mark = await sharp(svg, { density: DENSITY }).resize(size, size).png().toBuffer()
+  const inner = Math.round(size * 0.7)
+  const mark = await sharp(svg, { density: DENSITY }).resize(inner, inner).png().toBuffer()
   return sharp({ create: { width: size, height: size, channels: 4, background: BASE } })
     .composite([{ input: mark, gravity: 'center' }]).png().toBuffer()
 }
