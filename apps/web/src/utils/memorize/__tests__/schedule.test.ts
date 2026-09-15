@@ -1,5 +1,17 @@
 import { describe, it, expect } from 'vitest'
-import { daysUntilReview, formatReference, SUGGESTED_VERSES } from '../schedule'
+import { daysUntilReview, formatReference, SUGGESTED_VERSES, verseEndOptions } from '../schedule'
+
+describe('verseEndOptions', () => {
+  it('allows up to 5 consecutive verses, clamped to the chapter end', () => {
+    expect(verseEndOptions(16, 36)).toEqual([16, 17, 18, 19, 20])
+    expect(verseEndOptions(24, 25)).toEqual([24, 25])
+  })
+
+  it('is empty for an invalid start', () => {
+    expect(verseEndOptions(0, 10)).toEqual([])
+    expect(verseEndOptions(11, 10)).toEqual([])
+  })
+})
 import { getVerseCount } from '../../../data/bibleData'
 
 describe('daysUntilReview', () => {

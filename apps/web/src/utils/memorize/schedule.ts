@@ -13,6 +13,16 @@ export function formatReference(bookName: string, chapter: number, verseStart: n
   return `${bookName} ${chapter}:${verseStart}${verseEnd > verseStart ? `-${verseEnd}` : ''}`
 }
 
+/** Max verses in one memorize passage (server enforces the same limit). */
+export const MAX_PASSAGE_VERSES = 5
+
+/** Allowed "to" verses for a start verse: start … min(start + 4, last verse of chapter). */
+export function verseEndOptions(verseStart: number, verseCount: number): number[] {
+  if (verseStart < 1 || verseStart > verseCount) return []
+  const last = Math.min(verseStart + MAX_PASSAGE_VERSES - 1, verseCount)
+  return Array.from({ length: last - verseStart + 1 }, (_, i) => verseStart + i)
+}
+
 /** Starter suggestions shown on an empty list — references only, text comes from the API. */
 export const SUGGESTED_VERSES = [
   { book: 'John', chapter: 3, verseStart: 16, verseEnd: 16 },

@@ -3138,6 +3138,20 @@
       "delete": "Xoá",
       "deleteConfirm": "Xoá khỏi danh sách?",
       "cancel": "Huỷ"
+    },
+    "add": {
+      "back": "Quay lại danh sách",
+      "title": "Thêm câu gốc",
+      "maxHint": "Chọn 1 câu hoặc tối đa 5 câu liền nhau.",
+      "book": "Sách",
+      "chapter": "Chương",
+      "verseFrom": "Từ câu",
+      "verseTo": "Đến câu",
+      "choose": "Chọn…",
+      "noText": "Chưa có nội dung cho đoạn này.",
+      "duplicate": "Đoạn này đã có trong danh sách.",
+      "error": "Chưa thêm được. Vui lòng thử lại.",
+      "submit": "Thêm vào danh sách"
     }
   }
 }

@@ -3138,6 +3138,20 @@
       "delete": "Delete",
       "deleteConfirm": "Remove from list?",
       "cancel": "Cancel"
+    },
+    "add": {
+      "back": "Back to list",
+      "title": "Add a memory verse",
+      "maxHint": "Pick one verse or up to 5 consecutive verses.",
+      "book": "Book",
+      "chapter": "Chapter",
+      "verseFrom": "From verse",
+      "verseTo": "To verse",
+      "choose": "Choose…",
+      "noText": "No text available for this passage yet.",
+      "duplicate": "This passage is already in your list.",
+      "error": "Couldn't add it. Please try again.",
+      "submit": "Add to my list"
     }
   }
 }

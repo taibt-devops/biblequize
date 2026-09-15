@@ -187,7 +187,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-16 Trang chọn câu `/practice/memorize/add`
-  - Status: [ ] TODO · Files: `src/pages/memorize/MemorizeAdd.tsx` · Test: page test (chọn sách/chương/câu, giới hạn 5, preview, 409 trùng)
+  - Status: [x] DONE · Files: `src/pages/memorize/MemorizeAdd.tsx` (select native), `hooks/useBookName.ts` (+ export `useBooks`, cùng cache `['books']`), `utils/memorize/schedule.ts` (+ `verseEndOptions`), `main.tsx` route, i18n `memorize.add.*` · Test: `MemorizeAdd.test.tsx` 5/5 (thứ tự sách + khoá picker, ≤ 5 câu + preview, thêm → về danh sách, 409 trùng, không có chữ → khoá) + schedule 6/6. Tầng 3 FE: Vitest 1461 pass, tsc 29 có sẵn/0 mới, i18n 1145/85, build OK
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-17 Hook `useMemorizeSession`

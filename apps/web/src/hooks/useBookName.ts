@@ -2,12 +2,21 @@ import { useCallback, useMemo } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { api } from '../api/client'
 
-interface Book {
+export interface Book {
   id: string
   name: string
   nameVi: string
   testament: string
   orderIndex: number
+}
+
+/** Canonical book list from {@code GET /api/books}, sharing the {@code ['books']} cache. */
+export function useBooks() {
+  return useQuery({
+    queryKey: ['books'],
+    queryFn: () => api.get('/api/books').then(r => r.data as Book[]),
+    staleTime: Infinity,
+  })
 }
 
 /**
@@ -27,11 +36,7 @@ interface Book {
  *   - the key is unknown (defensive — keeps UI readable).
  */
 export function useBookName() {
-  const { data: books = [] } = useQuery({
-    queryKey: ['books'],
-    queryFn: () => api.get('/api/books').then(r => r.data as Book[]),
-    staleTime: Infinity,
-  })
+  const { data: books = [] } = useBooks()
 
   const map = useMemo(
     // Defensive: tolerate a non-array payload (e.g. an error/empty shape) so a

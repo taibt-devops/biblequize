@@ -83,6 +83,7 @@ const Help = lazy(() => import('./pages/Help'))
 const MySets = lazy(() => import('./pages/MySets'))
 const PersonalQuizSetEditor = lazy(() => import('./pages/PersonalQuizSetEditor'))
 const MemorizeList = lazy(() => import('./pages/memorize/MemorizeList'))
+const MemorizeAdd = lazy(() => import('./pages/memorize/MemorizeAdd'))
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -174,6 +175,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                   <Route path="/daily" element={<DailyChallenge />} />
                   <Route path="/practice" element={<Practice />} />
                   <Route path="/practice/memorize" element={<RequireAuth><MemorizeList /></RequireAuth>} />
+                  <Route path="/practice/memorize/add" element={<RequireAuth><MemorizeAdd /></RequireAuth>} />
                   <Route path="/review" element={<Review />} />
                   <Route path="/help" element={<Help />} />
                   <Route path="/multiplayer" element={<RequireAuth><Multiplayer /></RequireAuth>} />
