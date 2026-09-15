@@ -147,7 +147,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: convert · verify · commit
 
 - HT-6 `BiblePassageService` + `GET /api/bible/passage`
-  - Status: [ ] TODO · Files: `modules/bible/service/BiblePassageService.java`, `api/BibleController.java` · Test: service unit + `BibleControllerTest`
+  - Status: [x] DONE · Files: `modules/bible/service/BiblePassageService.java`, `api/BibleController.java` · Test: `BiblePassageServiceTest` 5/5 (thứ tự, cắt cuối chương, chưa import → empty, tham chiếu sai, span tối đa 30) + `BibleControllerTest` 4/4 (200/404/400/chưa đăng nhập). Không sửa SecurityConfig (`anyRequest().authenticated()` đã phủ). BE Tầng 3: 920 run, chỉ 3 fail có sẵn
   - **Spec strategy**: [x] (c) (spec đã ở HT-1) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-7 `MemorySchedule` (pure SRS)
