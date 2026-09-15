@@ -23,7 +23,7 @@
 | W-M13 i18n | Cross-cutting | ✅ 4/4 | ✅ 5/5 | — | Phase 4a done |
 | W-M14 | — | ⏭️ skip | ⏭️ skip | — | Mobile-specific |
 | W-M15 Cross-cutting | Error boundary, offline, loading | ✅ 5/5 | ✅ 6/6 | — | Phase 4a done |
-| W-M19 Memorize (Học Thuộc) | `/practice/memorize`, `/practice/memorize/add`, `/practice/memorize/session`, `/` (due card) | 🔄 0/3 | 🔄 0/7 | — | 2026-09-15 spec + code viết trước UI (HT-12); L2 stub API vì DB E2E chưa có toàn văn |
+| W-M19 Memorize (Học Thuộc) | `/practice/memorize`, `/practice/memorize/add`, `/practice/memorize/session`, `/` (due card) | ✅ 3/3 | ✅ 7/7 | — | 2026-09-15 HT-21 pass local stack; L2 stub API vì DB E2E chưa có toàn văn |
 
 ---
 
