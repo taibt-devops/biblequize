@@ -3152,6 +3152,26 @@
       "duplicate": "Đoạn này đã có trong danh sách.",
       "error": "Chưa thêm được. Vui lòng thử lại.",
       "submit": "Thêm vào danh sách"
+    },
+    "session": {
+      "title": "Ôn câu gốc",
+      "progress": "Câu {{index}}/{{total}}",
+      "contextHint": "Đọc đoạn văn xung quanh để nhớ bối cảnh của câu.",
+      "start": "Bắt đầu",
+      "passed": "Làm tốt lắm!",
+      "failed": "Chưa thuộc — câu này sẽ được ôn lại sớm.",
+      "saving": "Đang lưu…",
+      "saveFailed": "Chưa lưu được kết quả.",
+      "retry": "Thử lại",
+      "next": "Câu tiếp theo",
+      "finish": "Xem tổng kết",
+      "emptyTitle": "Không có câu nào cần ôn",
+      "emptyDesc": "Quay lại sau nhé, hoặc thêm câu mới vào danh sách.",
+      "backToList": "Về danh sách",
+      "loadError": "Không tải được phiên ôn.",
+      "summaryTitle": "Hoàn thành phiên ôn",
+      "summaryReviewed": "Bạn đã ôn {{count}} câu.",
+      "summaryLeveled": "{{count}} câu lên mức thuộc mới."
     }
   }
 }

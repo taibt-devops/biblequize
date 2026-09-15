@@ -195,7 +195,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-18 Trang phiên ôn `/practice/memorize/session`
-  - Status: [ ] TODO · Files: `src/pages/memorize/MemorizeSession.tsx` (+ `ContextPassage.tsx`, `SessionSummary.tsx` nếu > 300 LOC) · Test: page test
+  - Status: [x] DONE · Files: `src/pages/memorize/MemorizeSession.tsx` (121 LOC), `components/memorize/ContextPassage.tsx`, `SessionSummary.tsx`, `main.tsx` route, i18n `memorize.session.*` · Test: `MemorizeSession.test.tsx` 6/6 (empty, ngữ cảnh ±2 + tiến độ + bài sắp xếp L0, fallback khi không có đoạn, hoàn thành → lưu → tổng kết, L2 dùng điền khuyết, lỗi + thử lại). Tầng 3 FE: Vitest 1472 pass, tsc 29/0 mới, i18n 1145/85, build OK
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-19 Lối vào Practice (thẻ Học Thuộc)

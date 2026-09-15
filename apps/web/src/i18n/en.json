@@ -3152,6 +3152,26 @@
       "duplicate": "This passage is already in your list.",
       "error": "Couldn't add it. Please try again.",
       "submit": "Add to my list"
+    },
+    "session": {
+      "title": "Review verses",
+      "progress": "Verse {{index}}/{{total}}",
+      "contextHint": "Read the surrounding passage to recall the verse's context.",
+      "start": "Start",
+      "passed": "Well done!",
+      "failed": "Not yet — this verse will come back soon.",
+      "saving": "Saving…",
+      "saveFailed": "Couldn't save your result.",
+      "retry": "Try again",
+      "next": "Next verse",
+      "finish": "See summary",
+      "emptyTitle": "Nothing to review",
+      "emptyDesc": "Come back later, or add a new verse to your list.",
+      "backToList": "Back to list",
+      "loadError": "Couldn't load the review session.",
+      "summaryTitle": "Session complete",
+      "summaryReviewed": "You reviewed {{count}} verses.",
+      "summaryLeveled": "{{count}} verses reached a new mastery level."
     }
   }
 }
