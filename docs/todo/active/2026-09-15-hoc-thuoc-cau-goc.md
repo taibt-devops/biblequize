@@ -214,6 +214,17 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
 
 ---
 
+- HT-22a Cổng hiển thị — backend `GET /api/public/bible/status`
+  - Status: [x] DONE · Lý do: user yêu cầu đưa lên prod trong khi HT-5 (chữ BTTHĐ 2011) còn BLOCKED → deploy code nhưng ẩn lối vào tới khi import. Files: `api/BibleStatusController.java` (dưới `/api/public/**` đã permitAll → **không sửa SecurityConfig**), `BiblePassageService.isTextAvailable`, `BibleVerseRepository.existsByVersion`, SPEC_USER §5.1.1 + §27.20 · Test: `BibleStatusControllerTest` 2/2, `BiblePassageServiceTest` +1. BE Tầng 3: 952 run, chỉ 3 fail có sẵn
+  - **Spec impact**: [x] SPEC_USER §5.1.1, §27.20 · **Spec strategy**: [x] (a) update inline
+
+- HT-22b Cổng hiển thị — frontend ẩn thẻ Practice khi chưa có chữ
+  - Status: [ ] TODO · Files: `api/memorize.ts`, `hooks/useMemoryVerses.ts` (`useBibleTextAvailable`), `MemorizeEntryCard.tsx`, tests + E2E smoke L1-001 stub status
+  - **Spec strategy**: [x] (c) (spec ở HT-22a)
+
+- HT-23 Merge `main` vào nhánh → Tầng 3 → fast-forward `main` → push → deploy prod → verify (V72, thẻ ẩn, health)
+  - Status: [ ] TODO
+
 ## 3b. Phát hiện ngoài phạm vi (không sửa — module khác, báo user)
 
 - `StreakServiceTest` 3 test fail sẵn trên `main` (baseline 895/3 fail trước khi đổi code).

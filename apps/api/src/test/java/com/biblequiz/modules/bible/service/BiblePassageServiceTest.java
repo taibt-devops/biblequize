@@ -64,4 +64,11 @@ class BiblePassageServiceTest {
     void allowsMaxSpan() {
         assertDoesNotThrow(() -> service.getPassage("Psalms", 119, 1, 30));
     }
+
+    @Test
+    void textAvailability_checksTheCanonicalVersion() {
+        when(repository.existsByVersion(BibleVerse.BTTHD_2011)).thenReturn(false, true);
+        assertFalse(service.isTextAvailable());
+        assertTrue(service.isTextAvailable());
+    }
 }

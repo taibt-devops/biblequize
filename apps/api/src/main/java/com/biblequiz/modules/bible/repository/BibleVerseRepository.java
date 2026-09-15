@@ -13,4 +13,7 @@ public interface BibleVerseRepository extends JpaRepository<BibleVerse, String> 
 
     /** Importer dùng để bỏ qua sách đã đủ câu. */
     long countByVersionAndBook(String version, String book);
+
+    /** Cổng hiển thị Học Thuộc: đã import chữ cho bản dịch này chưa. */
+    boolean existsByVersion(String version);
 }

@@ -25,6 +25,11 @@ public class BiblePassageService {
         this.repository = repository;
     }
 
+    /** True khi đã có chữ BTTHĐ 2011 — FE chỉ hiện lối vào Học Thuộc khi đúng (SPEC_USER §5.1.1). */
+    public boolean isTextAvailable() {
+        return repository.existsByVersion(BibleVerse.BTTHD_2011);
+    }
+
     /**
      * @throws IllegalArgumentException tham chiếu không hợp lệ (sách lạ, chương/câu ngoài phạm vi, quá dài)
      * @return empty nếu tham chiếu hợp lệ nhưng chưa có chữ (chưa import)

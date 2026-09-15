@@ -300,6 +300,7 @@ Người dùng tự chọn câu/đoạn Kinh Thánh bất kỳ (BTTHĐ 2011, C4)
 | Bản dịch | `BTTHD2011`; toàn văn lưu bảng `bible_verses` (import gated `BIBLE_IMPORT_ENABLED`) |
 | Đơn vị học | 1 câu hoặc 1 đoạn liền nhau **tối đa 5 câu** (`verseEnd - verseStart ≤ 4`); trùng đoạn → 409 |
 | Lối vào | Thẻ "Học Thuộc câu gốc" trên `/practice` · thẻ "Câu gốc cần ôn hôm nay" trên Home, **chỉ hiện khi `dueCount > 0`** |
+| Cổng hiển thị | Thẻ trên `/practice` **chỉ hiện khi đã import chữ** (`GET /api/public/bible/status` → `available: true`) — deploy trước dữ liệu thì người dùng không thấy tính năng rỗng; import xong tự hiện, không cần deploy lại |
 
 **Mức thuộc & lịch ôn** (`mastery_level` 0–5; câu mới thêm đến hạn ngay):
 
@@ -1335,6 +1336,7 @@ Verified `QuestionSetController.java:22-33`:
 ### 27.20 Bible text & Học Thuộc (§5.1.1)
 | Method | Path | Notes |
 |---|---|---|
+| GET | `/api/public/bible/status` | Public · `{version, available}` — chỉ boolean, không lộ chữ |
 | GET | `/api/bible/passage?book&chapter&from&to` | `{version, book, chapter, verses:[{verse,text}]}`; `to - from ≤ 29`; 404 nếu không có |
 | GET | `/api/me/memory-verses` | `{items:[{id, book, chapter, verseStart, verseEnd, text, masteryLevel, nextReviewAt, due}], dueCount}` |
 | GET | `/api/me/memory-verses/due` | Tối đa 10 item đến hạn (cùng shape) |
