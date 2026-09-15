@@ -139,7 +139,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-4 `BibleTextImporter` (gated, batch, idempotent)
-  - Status: [ ] TODO · Files: `infrastructure/seed/bible/BibleTextImporter.java`, `application.yml` (flag), test fixture `src/test/resources/seed/bible-fixture/` · Test: `BibleTextImporterTest` (skip khi đủ, upsert khi thiếu, WARN lệch cấu trúc)
+  - Status: [x] DONE · Files: `infrastructure/seed/bible/BibleTextImporter.java`, `application.yml` (`app.seeding.bible.enabled/pattern`) · Test: `BibleTextImporterTest` 7/7 (skip khi đủ, upsert id deterministic, chia lô 500, `_`→khoảng trắng, sai tên file/thứ tự sách, lệch cấu trúc, parse JSON) — fixture inline chuỗi giả. Tên file seed: `NN-Book.json` (vd `09-1_Samuel.json`). BE Tầng 3: 911 run, chỉ 3 fail có sẵn
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-5 Chuyển đổi dữ liệu BTTHĐ 2011 → seed JSON + import dev + verify

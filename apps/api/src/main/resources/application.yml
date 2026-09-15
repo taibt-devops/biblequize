@@ -140,6 +140,11 @@ app:
       requests: ${RATE_LIMIT_GENERAL_REQUESTS:1000}
       window: ${RATE_LIMIT_GENERAL_WINDOW:3600}
   seeding:
+    bible:
+      # Toàn văn Kinh Thánh cho mode Học Thuộc (infrastructure/seed/bible/BibleTextImporter).
+      # Idempotent: sách đã đủ câu thì bỏ qua. Bật one-shot rồi tắt lại (như questions).
+      enabled: ${BIBLE_IMPORT_ENABLED:false}
+      pattern: ${BIBLE_IMPORT_PATTERN:classpath*:seed/bible/btthd2011/*.json}
     questions:
       # Runtime JSON-based question seeder (infrastructure/seed/question/QuestionSeeder).
       # Reads src/main/resources/seed/questions/*_quiz.json on startup.
