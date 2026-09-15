@@ -3180,6 +3180,11 @@
       "due": "{{count}} due",
       "open": "Open",
       "login": "Sign in"
+    },
+    "homeCard": {
+      "label": "Memorize",
+      "title": "{{count}} memory verses to review today",
+      "cta": "Review now"
     }
   }
 }

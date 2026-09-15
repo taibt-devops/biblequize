@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next'
 
 import ComebackModal from '../components/ComebackModal'
 import DailyBonusModal from '../components/DailyBonusModal'
+import MemoryDueCard from '../components/memorize/MemoryDueCard'
 import { api } from '../api/client'
 import { useAuthStore } from '../store/authStore'
 import { getTierInfo } from '../data/tiers'
@@ -381,6 +382,7 @@ export default function Home() {
       {/* ── VERSE LIGHTWELL ── */}
       <div className="mt-10"><VerseLightwell /></div>
       <p className="text-center text-[12px] text-bq-ink2 mt-3.5 mb-2">{t('home.verseDriver', 'Hoàn thành nhiệm vụ hôm nay để tích thêm ánh sáng cho hành trình của bạn')}</p>
+      <MemoryDueCard enabled={!!user} />
 
       {/* ── DAILY ── */}
       <div className="flex items-center gap-3 mt-11 mb-4">

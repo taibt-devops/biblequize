@@ -203,7 +203,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-20 Thẻ Home "Câu gốc cần ôn hôm nay"
-  - Status: [ ] TODO · Files: `src/components/memorize/MemoryDueCard.tsx`, `src/pages/Home.tsx` (chèn sau VerseLightwell) · Test: card test (ẩn khi 0, hiện N) + Home.test
+  - Status: [x] DONE · Files: `src/components/memorize/MemoryDueCard.tsx` (chỉ render khi dueCount > 0; loading/lỗi im lặng), `src/pages/Home.tsx` (import + 1 dòng sau câu dẫn VerseLightwell), i18n `memorize.homeCard.*` · Test: `MemoryDueCard.test.tsx` 3/3 + `Home.test.tsx` +1 (HT-20). Vitest 1480 pass; tsc 29/0 mới; i18n 1145/85; build OK
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-21 E2E xanh + full regression + đóng Đợt 1

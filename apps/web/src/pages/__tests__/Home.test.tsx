@@ -40,10 +40,14 @@ interface MockOpts {
   dailyDone?: boolean
   /** LBF-11: fewer than 10 weekly players → Home shows the low-data message. */
   lowWeekly?: boolean
+  /** HT-20: memory verses due for review. */
+  memoryDue?: number
 }
 
 function setupApi(opts: MockOpts = {}) {
   mockApiGet.mockImplementation((url: string) => {
+    if (url.includes('/api/me/memory-verses/due-count'))
+      return Promise.resolve({ data: { dueCount: opts.memoryDue ?? 0 } })
     if (url.includes('/api/quiz/daily-bonus'))
       return Promise.resolve({ data: { hasBonus: false } })
     if (url.includes('/api/me/comeback-status'))
@@ -126,6 +130,18 @@ describe('Home Dashboard (Khung Sáng IA)', () => {
     it('renders the verse lightwell', async () => {
       renderHome()
       await waitFor(() => expect(screen.getByTestId('home-verse')).toBeInTheDocument())
+    })
+
+    it('HT-20: shows the memory-verse due card only when verses are due', async () => {
+      setupApi({ memoryDue: 2 })
+      const { unmount } = renderHome()
+      expect(await screen.findByTestId('home-memory-due-card')).toHaveTextContent('2')
+      unmount()
+
+      setupApi({ memoryDue: 0 })
+      renderHome()
+      await waitFor(() => expect(screen.getByTestId('home-verse')).toBeInTheDocument())
+      expect(screen.queryByTestId('home-memory-due-card')).not.toBeInTheDocument()
     })
   })
 

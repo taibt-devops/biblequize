@@ -3180,6 +3180,11 @@
       "due": "{{count}} câu cần ôn",
       "open": "Mở",
       "login": "Đăng nhập"
+    },
+    "homeCard": {
+      "label": "Học Thuộc",
+      "title": "Hôm nay có {{count}} câu gốc cần ôn",
+      "cta": "Ôn ngay"
     }
   }
 }
