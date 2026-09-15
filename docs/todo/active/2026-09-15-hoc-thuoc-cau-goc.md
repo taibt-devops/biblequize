@@ -179,7 +179,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-14 `ClozeExercise`
-  - Status: [ ] TODO · Files: `src/components/memorize/ClozeExercise.tsx` · Test: component test
+  - Status: [x] DONE · Files: `src/components/memorize/ClozeExercise.tsx` · Test: `ClozeExercise.test.tsx` 5/5 (số ô theo ratio + ngân hàng = đáp án + 2 chữ nhiễu ngữ cảnh, đạt, chọn sai giữ ô, trượt khi vượt ngưỡng, chạm ô sau để chọn đích). FE Vitest 1443 pass; i18n 1145/85 không đổi
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-15 Trang danh sách `/practice/memorize` + route
