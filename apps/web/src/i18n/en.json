@@ -3172,6 +3172,14 @@
       "summaryTitle": "Session complete",
       "summaryReviewed": "You reviewed {{count}} verses.",
       "summaryLeveled": "{{count}} verses reached a new mastery level."
+    },
+    "entry": {
+      "title": "Memorize verses",
+      "desc": "Learn your favourite Bible verses by heart, a little every day.",
+      "loginHint": "Sign in to save verses and review daily.",
+      "due": "{{count}} due",
+      "open": "Open",
+      "login": "Sign in"
     }
   }
 }

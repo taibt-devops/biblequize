@@ -8,6 +8,7 @@ import { getQuizLanguage, type QuizLanguage } from '../utils/quizLanguage'
 import { getChapterCount, getVerseCount } from '../data/bibleData'
 import { useTranslation } from 'react-i18next'
 import { useAuthStore } from '../store/authStore'
+import MemorizeEntryCard from '../components/memorize/MemorizeEntryCard'
 
 interface Book {
   id: string
@@ -263,6 +264,8 @@ export default function Practice() {
           <p className="text-sm text-bq-ink2">{t('practice.heroDesc')}</p>
         </div>
       </section>
+
+      <MemorizeEntryCard isAuthenticated={isAuthenticated} />
 
       {/* ── Error ─────────────────────────────────────────── */}
       {errorMsg && (

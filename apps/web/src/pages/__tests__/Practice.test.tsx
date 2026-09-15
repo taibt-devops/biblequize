@@ -67,6 +67,11 @@ describe('Practice Mode', () => {
     expect(screen.getByText(/Tập/)).toBeInTheDocument()
   })
 
+  it('HT-19: shows the Memorize entry card (SPEC_USER §5.1.1)', () => {
+    renderPractice()
+    expect(screen.getByTestId('memorize-entry-card')).toHaveTextContent('Học Thuộc câu gốc')
+  })
+
   it('renders difficulty options (Dễ, TB, Khó, Hỗn hợp equivalent)', () => {
     renderPractice()
     expect(screen.getByText('Dễ')).toBeInTheDocument()

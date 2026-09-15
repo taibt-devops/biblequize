@@ -3172,6 +3172,14 @@
       "summaryTitle": "Hoàn thành phiên ôn",
       "summaryReviewed": "Bạn đã ôn {{count}} câu.",
       "summaryLeveled": "{{count}} câu lên mức thuộc mới."
+    },
+    "entry": {
+      "title": "Học Thuộc câu gốc",
+      "desc": "Thuộc lòng những câu Kinh Thánh bạn yêu thích, ôn mỗi ngày một chút.",
+      "loginHint": "Đăng nhập để lưu câu gốc và ôn mỗi ngày.",
+      "due": "{{count}} câu cần ôn",
+      "open": "Mở",
+      "login": "Đăng nhập"
     }
   }
 }

@@ -199,7 +199,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-19 Lối vào Practice (thẻ Học Thuộc)
-  - Status: [ ] TODO · Files: `src/components/memorize/MemorizeEntryCard.tsx`, `src/pages/Practice.tsx` (chỉ chèn 1 dòng) · Test: Practice.test + card test (guest → nhắc đăng nhập)
+  - Status: [x] DONE · Files: `src/components/memorize/MemorizeEntryCard.tsx` (badge số câu đến hạn; guest → /login, không gọi API), `src/pages/Practice.tsx` (import + 1 dòng JSX ngay dưới header), i18n `memorize.entry.*` · Test: `MemorizeEntryCard.test.tsx` 3/3 + `Practice.test.tsx` +1 (HT-19). Vitest 1476 pass; tsc 29 (Practice.tsx 1 lỗi có sẵn)/0 mới; i18n 1145/85
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-20 Thẻ Home "Câu gốc cần ôn hôm nay"
