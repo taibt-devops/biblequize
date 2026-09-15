@@ -25,13 +25,13 @@ class BiblePassageServiceTest {
     @Test
     void returnsVersesInOrder() {
         when(repository.findByVersionAndBookAndChapterAndVerseBetweenOrderByVerseAsc(
-                BibleVerse.BTTHD_2011, "John", 3, 14, 18))
-                .thenReturn(List.of(new BibleVerse("BTTHD2011", "John", 43, 3, 14, "fixture a"),
-                        new BibleVerse("BTTHD2011", "John", 43, 3, 15, "fixture b")));
+                BibleVerse.ACTIVE_VERSION, "John", 3, 14, 18))
+                .thenReturn(List.of(new BibleVerse("BTT1926", "John", 43, 3, 14, "fixture a"),
+                        new BibleVerse("BTT1926", "John", 43, 3, 15, "fixture b")));
 
         var passage = service.getPassage("John", 3, 14, 18).orElseThrow();
 
-        assertEquals("BTTHD2011", passage.version());
+        assertEquals("BTT1926", passage.version());
         assertEquals(List.of(new BiblePassageService.VerseText(14, "fixture a"),
                 new BiblePassageService.VerseText(15, "fixture b")), passage.verses());
     }
@@ -41,7 +41,7 @@ class BiblePassageServiceTest {
         // Jude 1 có 25 câu: ngữ cảnh ±2 quanh câu 25 xin tới 27.
         service.getPassage("Jude", 1, 23, 27);
         verify(repository).findByVersionAndBookAndChapterAndVerseBetweenOrderByVerseAsc(
-                BibleVerse.BTTHD_2011, "Jude", 1, 23, 25);
+                BibleVerse.ACTIVE_VERSION, "Jude", 1, 23, 25);
     }
 
     @Test
@@ -67,7 +67,7 @@ class BiblePassageServiceTest {
 
     @Test
     void textAvailability_checksTheCanonicalVersion() {
-        when(repository.existsByVersion(BibleVerse.BTTHD_2011)).thenReturn(false, true);
+        when(repository.existsByVersion(BibleVerse.ACTIVE_VERSION)).thenReturn(false, true);
         assertFalse(service.isTextAvailable());
         assertTrue(service.isTextAvailable());
     }

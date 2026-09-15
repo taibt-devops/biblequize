@@ -30,7 +30,7 @@ beforeEach(() => {
       if (passageFails) return Promise.reject({ response: { status: 404 } })
       const { from, to } = config!.params
       const verses = Array.from({ length: to - from + 1 }, (_, i) => ({ verse: from + i, text: `fixture ${from + i}` }))
-      return Promise.resolve({ data: { version: 'BTTHD2011', book: 'John', chapter: 3, verses } })
+      return Promise.resolve({ data: { version: 'BTT1926', book: 'John', chapter: 3, verses } })
     }
     return Promise.reject(new Error(url))
   })

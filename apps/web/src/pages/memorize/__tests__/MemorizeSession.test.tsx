@@ -29,7 +29,7 @@ function mockApi(items: unknown[], passageOk = true) {
     if (url === '/api/me/memory-verses/due') return Promise.resolve({ data: { items } })
     if (url === '/api/bible/passage') {
       return passageOk
-        ? Promise.resolve({ data: { version: 'BTTHD2011', book: 'John', chapter: 3,
+        ? Promise.resolve({ data: { version: 'BTT1926', book: 'John', chapter: 3,
             verses: [{ verse: 15, text: 'ctx before' }, { verse: 16, text: TEXT }, { verse: 17, text: 'ctx after' }] } })
         : Promise.reject({ response: { status: 404 } })
     }

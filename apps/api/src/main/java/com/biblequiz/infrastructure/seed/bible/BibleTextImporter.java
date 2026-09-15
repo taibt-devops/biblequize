@@ -25,7 +25,7 @@ import java.util.regex.Pattern;
 /**
  * Nạp toàn văn Kinh Thánh cho mode Học Thuộc (SPEC_USER §5.1.1).
  *
- * <p>Mỗi file {@code seed/bible/btthd2011/NN-Book.json} (vd {@code 43-John.json},
+ * <p>Mỗi file {@code seed/bible/btt1926/NN-Book.json} (vd {@code 43-John.json},
  * {@code 09-1_Samuel.json} — {@code _} thay khoảng trắng) là mảng
  * {@code {chapter, verse, text}}.
  *
@@ -51,7 +51,7 @@ public class BibleTextImporter {
     private final ObjectMapper objectMapper;
     private final ResourcePatternResolver resolver;
 
-    @Value("${app.seeding.bible.pattern:classpath*:seed/bible/btthd2011/*.json}")
+    @Value("${app.seeding.bible.pattern:classpath*:seed/bible/btt1926/*.json}")
     private String pattern;
 
     public BibleTextImporter(BibleVerseRepository repository, JdbcTemplate jdbc,
@@ -89,7 +89,7 @@ public class BibleTextImporter {
             throw new IllegalArgumentException("File " + fileName + " does not match canonical book #" + order);
         }
 
-        if (repository.countByVersionAndBook(BibleVerse.BTTHD_2011, book) >= rows.size()) {
+        if (repository.countByVersionAndBook(BibleVerse.ACTIVE_VERSION, book) >= rows.size()) {
             return 0;
         }
         List<String> mismatches = structureMismatches(book, rows);
@@ -101,8 +101,8 @@ public class BibleTextImporter {
 
         List<Object[]> args = new ArrayList<>(rows.size());
         for (VerseRow r : rows) {
-            args.add(new Object[]{BibleVerse.idFor(BibleVerse.BTTHD_2011, book, r.chapter(), r.verse()),
-                    BibleVerse.BTTHD_2011, book, order, r.chapter(), r.verse(), r.text()});
+            args.add(new Object[]{BibleVerse.idFor(BibleVerse.ACTIVE_VERSION, book, r.chapter(), r.verse()),
+                    BibleVerse.ACTIVE_VERSION, book, order, r.chapter(), r.verse(), r.text()});
         }
         for (int i = 0; i < args.size(); i += BATCH_SIZE) {
             jdbc.batchUpdate(UPSERT_SQL, args.subList(i, Math.min(i + BATCH_SIZE, args.size())));

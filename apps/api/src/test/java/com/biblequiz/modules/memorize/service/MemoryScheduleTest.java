@@ -14,7 +14,7 @@ class MemoryScheduleTest {
     private static final LocalDateTime NOW = LocalDateTime.of(2026, 9, 15, 20, 0);
 
     private static UserMemoryVerse atLevel(int level) {
-        UserMemoryVerse v = new UserMemoryVerse("id", null, "BTTHD2011", "John", 3, 16, 16, NOW.minusDays(3));
+        UserMemoryVerse v = new UserMemoryVerse("id", null, "BTT1926", "John", 3, 16, 16, NOW.minusDays(3));
         v.setMasteryLevel(level);
         return v;
     }

@@ -72,7 +72,7 @@ export class MemorizeApiStub {
       const verses = []
       for (let v = Math.max(1, from); v <= to; v++) verses.push({ verse: v, text: fakeVerseText(v) })
       return this.json(route, 200, {
-        version: 'BTTHD2011', book: url.searchParams.get('book'), chapter: Number(url.searchParams.get('chapter')), verses,
+        version: 'BTT1926', book: url.searchParams.get('book'), chapter: Number(url.searchParams.get('chapter')), verses,
       })
     }
 

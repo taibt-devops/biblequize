@@ -18,7 +18,7 @@ test.describe('W-M19 Memorize — L1 Smoke @smoke @memorize', () => {
     const page = tier1Page
     const memorize = new MemorizePage(page)
     await page.route('**/api/public/bible/status', route =>
-      route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ version: 'BTTHD2011', available: true }) }))
+      route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ version: 'BTT1926', available: true }) }))
 
     // SECTION 2: ACTIONS
     await page.goto('/practice')

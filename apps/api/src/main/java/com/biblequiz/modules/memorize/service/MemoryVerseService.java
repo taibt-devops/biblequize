@@ -59,10 +59,10 @@ public class MemoryVerseService {
             throw new MemoryVerseException(INVALID, "Tối đa " + MAX_VERSES + " câu liền nhau");
         }
         String text = passageText(book, chapter, verseStart, verseEnd);
-        if (repository.existsRef(user.getId(), BibleVerse.BTTHD_2011, book, chapter, verseStart, verseEnd)) {
+        if (repository.existsRef(user.getId(), BibleVerse.ACTIVE_VERSION, book, chapter, verseStart, verseEnd)) {
             throw new MemoryVerseException(DUPLICATE, "Đoạn này đã có trong danh sách");
         }
-        UserMemoryVerse verse = new UserMemoryVerse(UUID.randomUUID().toString(), user, BibleVerse.BTTHD_2011,
+        UserMemoryVerse verse = new UserMemoryVerse(UUID.randomUUID().toString(), user, BibleVerse.ACTIVE_VERSION,
                 book, chapter, verseStart, verseEnd, now);
         try {
             repository.saveAndFlush(verse);

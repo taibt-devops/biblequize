@@ -51,7 +51,7 @@ class UserMemoryVerseRepositoryTest {
     @Test
     void newVerse_isLevelZeroAndDueImmediately() {
         LocalDateTime now = LocalDateTime.of(2026, 9, 15, 8, 0);
-        UserMemoryVerse v = new UserMemoryVerse("id-1", null, "BTTHD2011", "John", 3, 16, 17, now);
+        UserMemoryVerse v = new UserMemoryVerse("id-1", null, "BTT1926", "John", 3, 16, 17, now);
         assertEquals(0, v.getMasteryLevel());
         assertTrue(v.isDue(now));
         assertFalse(v.isDue(now.minusSeconds(1)));

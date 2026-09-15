@@ -56,7 +56,7 @@ describe('Practice Mode', () => {
         ] })
       if (url.includes('/practice/recent')) return Promise.resolve({ data: [] })
       if (url.includes('/wrong-questions/count')) return Promise.resolve({ data: { count: 0 } })
-      if (url === '/api/public/bible/status') return Promise.resolve({ data: { version: 'BTTHD2011', available: true } })
+      if (url === '/api/public/bible/status') return Promise.resolve({ data: { version: 'BTT1926', available: true } })
       return Promise.reject(new Error('Not found'))
     })
     mockApiPost.mockResolvedValue({ data: { sessionId: 'sess-1', questions: [] } })

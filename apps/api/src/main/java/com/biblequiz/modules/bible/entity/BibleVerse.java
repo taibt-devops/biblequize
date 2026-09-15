@@ -17,8 +17,17 @@ import java.util.UUID;
 @Table(name = "bible_verses")
 public class BibleVerse {
 
-    /** Bản dịch canonical (C4). */
+    /** Bản dịch canonical (C4) — đích, chưa có dữ liệu (BL-1). */
     public static final String BTTHD_2011 = "BTTHD2011";
+
+    /** Bản Truyền Thống 1926 (Cadman, eBible {@code vie1934}) — Public Domain. */
+    public static final String BTT_1926 = "BTT1926";
+
+    /**
+     * Bản dịch Học Thuộc đang dùng thật. Tạm là BTT 1926 cho tới khi có file BTTHĐ 2011
+     * (DECISIONS 2026-09-15, BL-1): đổi hằng này + nạp seed tương ứng.
+     */
+    public static final String ACTIVE_VERSION = BTT_1926;
 
     @Id
     @Column(length = 36)

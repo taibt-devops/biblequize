@@ -24,12 +24,12 @@ class BibleControllerTest extends BaseControllerTest {
     @WithMockUser(username = "test@example.com")
     void passage_returns200WithVerses() throws Exception {
         when(passageService.getPassage("John", 3, 16, 17)).thenReturn(Optional.of(
-                new Passage("BTTHD2011", "John", 3, List.of(new VerseText(16, "fixture"), new VerseText(17, "fixture 2")))));
+                new Passage("BTT1926", "John", 3, List.of(new VerseText(16, "fixture"), new VerseText(17, "fixture 2")))));
 
         mockMvc.perform(get("/api/bible/passage").param("book", "John").param("chapter", "3")
                         .param("from", "16").param("to", "17"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.version").value("BTTHD2011"))
+                .andExpect(jsonPath("$.version").value("BTT1926"))
                 .andExpect(jsonPath("$.verses[0].verse").value(16))
                 .andExpect(jsonPath("$.verses[1].text").value("fixture 2"));
     }

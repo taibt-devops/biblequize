@@ -144,7 +144,7 @@ app:
       # Toàn văn Kinh Thánh cho mode Học Thuộc (infrastructure/seed/bible/BibleTextImporter).
       # Idempotent: sách đã đủ câu thì bỏ qua. Bật one-shot rồi tắt lại (như questions).
       enabled: ${BIBLE_IMPORT_ENABLED:false}
-      pattern: ${BIBLE_IMPORT_PATTERN:classpath*:seed/bible/btthd2011/*.json}
+      pattern: ${BIBLE_IMPORT_PATTERN:classpath*:seed/bible/btt1926/*.json}
     questions:
       # Runtime JSON-based question seeder (infrastructure/seed/question/QuestionSeeder).
       # Reads src/main/resources/seed/questions/*_quiz.json on startup.

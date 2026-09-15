@@ -25,9 +25,9 @@ public class BiblePassageService {
         this.repository = repository;
     }
 
-    /** True khi đã có chữ BTTHĐ 2011 — FE chỉ hiện lối vào Học Thuộc khi đúng (SPEC_USER §5.1.1). */
+    /** True khi đã có chữ của bản dịch đang dùng — FE chỉ hiện lối vào Học Thuộc khi đúng (SPEC_USER §5.1.1). */
     public boolean isTextAvailable() {
-        return repository.existsByVersion(BibleVerse.BTTHD_2011);
+        return repository.existsByVersion(BibleVerse.ACTIVE_VERSION);
     }
 
     /**
@@ -40,13 +40,13 @@ public class BiblePassageService {
         int last = Math.min(to, BibleStructure.getVerseCount(book, chapter));
         List<VerseText> verses = repository
                 .findByVersionAndBookAndChapterAndVerseBetweenOrderByVerseAsc(
-                        BibleVerse.BTTHD_2011, book, chapter, Math.max(1, from), last)
+                        BibleVerse.ACTIVE_VERSION, book, chapter, Math.max(1, from), last)
                 .stream()
                 .map(v -> new VerseText(v.getVerse(), v.getText()))
                 .toList();
         return verses.isEmpty()
                 ? Optional.empty()
-                : Optional.of(new Passage(BibleVerse.BTTHD_2011, book, chapter, verses));
+                : Optional.of(new Passage(BibleVerse.ACTIVE_VERSION, book, chapter, verses));
     }
 
     static void validate(String book, int chapter, int from, int to) {

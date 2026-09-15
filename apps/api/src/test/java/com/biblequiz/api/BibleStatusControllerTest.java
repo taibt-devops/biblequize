@@ -20,7 +20,7 @@ class BibleStatusControllerTest extends BaseControllerTest {
 
         mockMvc.perform(get("/api/public/bible/status"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.version").value("BTTHD2011"))
+                .andExpect(jsonPath("$.version").value("BTT1926"))
                 .andExpect(jsonPath("$.available").value(false));
     }
 

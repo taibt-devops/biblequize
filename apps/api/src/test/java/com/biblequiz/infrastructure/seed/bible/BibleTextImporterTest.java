@@ -40,7 +40,7 @@ class BibleTextImporterTest {
 
     @Test
     void skipsBookThatIsAlreadyComplete() {
-        when(repository.countByVersionAndBook(BibleVerse.BTTHD_2011, "Jude")).thenReturn(25L);
+        when(repository.countByVersionAndBook(BibleVerse.ACTIVE_VERSION, "Jude")).thenReturn(25L);
         assertEquals(0, importer.importFile("65-Jude.json", rows("Jude", 1, 25)));
         verifyNoInteractions(jdbc);
     }
@@ -53,7 +53,7 @@ class BibleTextImporterTest {
         ArgumentCaptor<List<Object[]>> captor = ArgumentCaptor.captor();
         verify(jdbc).batchUpdate(eq(BibleTextImporter.UPSERT_SQL), captor.capture());
         Object[] first = captor.getValue().get(0);
-        assertEquals(BibleVerse.idFor(BibleVerse.BTTHD_2011, "Jude", 1, 1), first[0]);
+        assertEquals(BibleVerse.idFor(BibleVerse.ACTIVE_VERSION, "Jude", 1, 1), first[0]);
         assertEquals("Jude", first[2]);
         assertEquals(65, first[3]);
         assertEquals(25, captor.getValue().size());
@@ -71,7 +71,7 @@ class BibleTextImporterTest {
 
     @Test
     void underscoreInFileNameMapsToSpaceInBookKey() {
-        when(repository.countByVersionAndBook(BibleVerse.BTTHD_2011, "1 Samuel")).thenReturn(0L);
+        when(repository.countByVersionAndBook(BibleVerse.ACTIVE_VERSION, "1 Samuel")).thenReturn(0L);
         assertEquals(2, importer.importFile("09-1_Samuel.json", rows("1 Samuel", 1, 2)));
     }
 

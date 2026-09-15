@@ -43,7 +43,7 @@ class MemoryVerseServiceTest {
     private void passage(String book, int chapter, int from, int to) {
         List<VerseText> verses = IntStream.rangeClosed(from, to).mapToObj(v -> new VerseText(v, "f" + v)).toList();
         when(passageService.getPassage(book, chapter, from, to))
-                .thenReturn(Optional.of(new Passage("BTTHD2011", book, chapter, verses)));
+                .thenReturn(Optional.of(new Passage("BTT1926", book, chapter, verses)));
     }
 
     private static Kind kindOf(Runnable call) {
@@ -81,7 +81,7 @@ class MemoryVerseServiceTest {
         assertEquals(Kind.INVALID, kindOf(() -> service.add(user, "John", 3, 16, 16, NOW)));
 
         passage("Jude", 1, 24, 25);
-        when(passageService.getPassage("Jude", 1, 24, 26)).thenReturn(Optional.of(new Passage("BTTHD2011", "Jude", 1,
+        when(passageService.getPassage("Jude", 1, 24, 26)).thenReturn(Optional.of(new Passage("BTT1926", "Jude", 1,
                 List.of(new VerseText(24, "a"), new VerseText(25, "b")))));
         assertEquals(Kind.INVALID, kindOf(() -> service.add(user, "Jude", 1, 24, 26, NOW)));
         verify(repository, never()).saveAndFlush(any());
@@ -90,7 +90,7 @@ class MemoryVerseServiceTest {
     @Test
     void add_duplicate_isRejected_evenOnRace() {
         passage("John", 3, 16, 16);
-        when(repository.existsRef("user-1", "BTTHD2011", "John", 3, 16, 16)).thenReturn(true);
+        when(repository.existsRef("user-1", "BTT1926", "John", 3, 16, 16)).thenReturn(true);
         assertEquals(Kind.DUPLICATE, kindOf(() -> service.add(user, "John", 3, 16, 16, NOW)));
 
         when(repository.existsRef(any(), any(), any(), anyInt(), anyInt(), anyInt())).thenReturn(false);
@@ -107,7 +107,7 @@ class MemoryVerseServiceTest {
 
     @Test
     void review_appliesScheduleAndSaves() {
-        UserMemoryVerse v = new UserMemoryVerse("v-1", user, "BTTHD2011", "John", 3, 16, 16, NOW.minusDays(1));
+        UserMemoryVerse v = new UserMemoryVerse("v-1", user, "BTT1926", "John", 3, 16, 16, NOW.minusDays(1));
         v.setMasteryLevel(2);
         when(repository.findOwned("v-1", "user-1")).thenReturn(Optional.of(v));
         passage("John", 3, 16, 16);
@@ -122,7 +122,7 @@ class MemoryVerseServiceTest {
 
     @Test
     void due_limitsToSessionSize_andListKeepsItemsWhoseTextIsGone() {
-        UserMemoryVerse v = new UserMemoryVerse("v-1", user, "BTTHD2011", "John", 3, 16, 16, NOW.minusHours(1));
+        UserMemoryVerse v = new UserMemoryVerse("v-1", user, "BTT1926", "John", 3, 16, 16, NOW.minusHours(1));
         when(repository.findDue(eq("user-1"), eq(NOW), any(Pageable.class))).thenReturn(List.of(v));
         when(passageService.getPassage("John", 3, 16, 16)).thenReturn(Optional.empty());
 

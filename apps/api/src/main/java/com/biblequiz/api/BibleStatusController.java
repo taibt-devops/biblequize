@@ -26,6 +26,6 @@ public class BibleStatusController {
 
     @GetMapping("/status")
     public ResponseEntity<Map<String, Object>> status() {
-        return ResponseEntity.ok(Map.of("version", BibleVerse.BTTHD_2011, "available", passageService.isTextAvailable()));
+        return ResponseEntity.ok(Map.of("version", BibleVerse.ACTIVE_VERSION, "available", passageService.isTextAvailable()));
     }
 }

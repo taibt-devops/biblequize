@@ -17,7 +17,7 @@ function mockApi({ available = true, dueCount = 0 }: { available?: boolean | 'er
     if (url === '/api/public/bible/status') {
       return available === 'error'
         ? Promise.reject(new Error('down'))
-        : Promise.resolve({ data: { version: 'BTTHD2011', available } })
+        : Promise.resolve({ data: { version: 'BTT1926', available } })
     }
     if (url === '/api/me/memory-verses/due-count') return Promise.resolve({ data: { dueCount } })
     return Promise.reject(new Error(url))
