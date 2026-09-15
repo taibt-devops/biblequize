@@ -1,4 +1,4 @@
--- V71: Học Thuộc câu gốc (SPEC_USER §5.1.1) — toàn văn Kinh Thánh + danh sách
+-- V72: Học Thuộc câu gốc (SPEC_USER §5.1.1) — toàn văn Kinh Thánh + danh sách
 -- câu gốc của từng user kèm lịch ôn giãn cách.
 --
 -- bible_verses: read-only sau import (BibleTextImporter, gated

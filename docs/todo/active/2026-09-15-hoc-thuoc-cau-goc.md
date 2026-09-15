@@ -25,7 +25,7 @@
 
 ## 2. Thiết kế Đợt 1
 
-### 2.1 Dữ liệu (Flyway V71)
+### 2.1 Dữ liệu (Flyway V72 — đổi từ V71 vì V71 dành cho fix Flyway drift `asked_question_ids`)
 
 **`bible_verses`** — toàn văn, read-only sau import
 ```

@@ -36,11 +36,11 @@ class BibleVerseTest {
 
     /** Schema lock: test profile chạy H2 không Flyway, nên khoá các ràng buộc cốt lõi trong migration. */
     @Test
-    void migrationV71_declaresUniqueRefsAndDueIndex() throws Exception {
+    void migrationV72_declaresUniqueRefsAndDueIndex() throws Exception {
         String sql;
         try (InputStream in = getClass().getResourceAsStream(
-                "/db/migration/V71__bible_verses_and_memory_verses.sql")) {
-            assertNotNull(in, "V71 migration must exist on classpath");
+                "/db/migration/V72__bible_verses_and_memory_verses.sql")) {
+            assertNotNull(in, "V72 migration must exist on classpath");
             sql = new String(in.readAllBytes(), StandardCharsets.UTF_8).replaceAll("\\s+", " ");
         }
         assertTrue(sql.contains("UNIQUE KEY uk_bv_ref (version, book, chapter, verse)"));
