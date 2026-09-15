@@ -64,6 +64,31 @@ class MemoryVerseServiceTest {
     }
 
     @Test
+    void add_storesNextReviewAtWithoutFractionalSeconds_soItIsDueImmediately() {
+        // MySQL TIMESTAMP rounds .5s up: an un-truncated "now" could land in the next second
+        // and hide the new verse from countDue/findDue for a moment (BT-4a).
+        passage("John", 3, 16, 16);
+        LocalDateTime withNanos = NOW.withNano(900_000_000);
+
+        MemoryVerseService.Item item = service.add(user, "John", 3, 16, 16, withNanos);
+
+        assertEquals(NOW, item.nextReviewAt());
+        verify(repository).saveAndFlush(argThat(v -> v.getNextReviewAt().equals(NOW) && v.getNextReviewAt().getNano() == 0));
+    }
+
+    @Test
+    void review_schedulesFromWholeSeconds() {
+        UserMemoryVerse v = new UserMemoryVerse("v-1", user, "BTT1926", "John", 3, 16, 16, NOW.minusDays(1));
+        when(repository.findOwned("v-1", "user-1")).thenReturn(Optional.of(v));
+        passage("John", 3, 16, 16);
+
+        service.review("user-1", "v-1", false, NOW.withNano(700_000_000));
+
+        assertEquals(NOW.plusMinutes(10), v.getNextReviewAt());
+        assertEquals(NOW, v.getLastReviewedAt());
+    }
+
+    @Test
     void add_rejectsMoreThanFiveVerses() {
         assertEquals(Kind.INVALID, kindOf(() -> service.add(user, "Psalms", 23, 1, 6, NOW)));
         verifyNoInteractions(passageService);

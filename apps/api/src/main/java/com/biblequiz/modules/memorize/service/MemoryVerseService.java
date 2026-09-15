@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -53,8 +54,18 @@ public class MemoryVerseService {
         return repository.countDue(userId, now);
     }
 
+    /**
+     * Timestamps are stored in MySQL {@code TIMESTAMP} (no fractional seconds), which ROUNDS
+     * half-up. Persisting {@code now} with nanos ≥ .5 would land next_review_at in the next
+     * second, so a just-added verse is briefly "not due" for countDue/findDue. Truncate first.
+     */
+    static LocalDateTime storable(LocalDateTime now) {
+        return now.truncatedTo(ChronoUnit.SECONDS);
+    }
+
     @Transactional
-    public Item add(User user, String book, int chapter, int verseStart, int verseEnd, LocalDateTime now) {
+    public Item add(User user, String book, int chapter, int verseStart, int verseEnd, LocalDateTime requestedAt) {
+        LocalDateTime now = storable(requestedAt);
         if (verseEnd - verseStart + 1 > MAX_VERSES) {
             throw new MemoryVerseException(INVALID, "Tối đa " + MAX_VERSES + " câu liền nhau");
         }
@@ -80,7 +91,8 @@ public class MemoryVerseService {
 
     /** Ghi kết quả 1 lần ôn. {@code passed} do client chấm (không có phần thưởng để gian lận). */
     @Transactional
-    public Item review(String userId, String id, boolean passed, LocalDateTime now) {
+    public Item review(String userId, String id, boolean passed, LocalDateTime requestedAt) {
+        LocalDateTime now = storable(requestedAt);
         UserMemoryVerse verse = owned(userId, id);
         MemorySchedule.applyReview(verse, passed, now);
         repository.save(verse);
