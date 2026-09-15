@@ -58,6 +58,26 @@ Legend: ⬜ todo · 🔄 in progress · ✅ done · ⏭️ deferred · ❌ block
 
 ---
 
+### W-M19 — Memorize "Học Thuộc câu gốc" (feature mới 2026-09-15)
+- **Routes**: `/practice/memorize`, `/practice/memorize/add`, `/practice/memorize/session`, thẻ Home
+- **Spec**: [smoke](playwright/specs/smoke/W-M19-memorize.md) · [happy-path](playwright/specs/happy-path/W-M19-memorize.md) · SPEC_USER §5.1.1
+- **Status**: 🔄 spec + Playwright code đã viết (HT-12), chờ UI (HT-13..20) để chuyển ✅
+
+| TC ID | Level | Description | Status |
+|---|---|---|---|
+| W-M19-L1-001 | smoke | Practice hiện thẻ Học Thuộc → danh sách | 🔄 |
+| W-M19-L1-002 | smoke | Danh sách: empty state hoặc items + nút Thêm | 🔄 |
+| W-M19-L1-003 | smoke | Trang chọn câu: bộ chọn + submit khoá khi chưa chọn | 🔄 |
+| W-M19-L2-001 | happy | Thêm đoạn mới → thấy trong danh sách | 🔄 |
+| W-M19-L2-002 | happy | Thêm trùng → báo lỗi | 🔄 |
+| W-M19-L2-003 | happy | Đoạn chưa có chữ → không cho thêm | 🔄 |
+| W-M19-L2-004 | happy | Ôn L0 sắp xếp cụm đúng → đạt | 🔄 |
+| W-M19-L2-005 | happy | Ôn L2 điền khuyết đúng → đạt | 🔄 |
+| W-M19-L2-006 | happy | Xoá câu 2 bước | 🔄 |
+| W-M19-L2-007 | happy | Thẻ Home câu cần ôn → phiên ôn | 🔄 |
+
+---
+
 ## Sprint 2 — Feature edge gaps (MEDIUM priority)
 
 ### W-M18 — Basic Quiz (mode riêng, không phải Practice)

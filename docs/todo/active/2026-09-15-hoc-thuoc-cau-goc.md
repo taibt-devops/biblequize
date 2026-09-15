@@ -110,7 +110,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
 ### 2.6 Test strategy
 - BE: unit Mockito cho `MemorySchedule`, `MemoryVerseService`, `BiblePassageService`, `BibleTextImporter` (fixture giả); `@WebMvcTest` + `BaseControllerTest` cho 2 controller. (Repo test profile = H2, không Testcontainers — theo codebase thực tế.)
 - FE: Vitest cho utils (nhiều case), 2 exercise component, 3 page, hook session, 2 thẻ lối vào.
-- E2E: module mới **W-M16 Memorize** (`/practice/memorize*`) — TC spec + Playwright smoke/happy **trước** khi code page (E2E Test Gate); cập nhật `tests/e2e/INDEX.md` + `TC-TODO.md`.
+- E2E: module mới **W-M19 Memorize** (`/practice/memorize*`) — TC spec + Playwright smoke/happy **trước** khi code page (E2E Test Gate); cập nhật `tests/e2e/INDEX.md` + `TC-TODO.md`.
 - Tầng 3 trước mỗi commit; baseline `.test-baseline` không giảm.
 
 ---
@@ -170,8 +170,8 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - Status: [x] DONE · Files: `src/utils/memorize/exercises.ts` (gộp tokenize/normalize/chunk/shuffleSeeded/pickClozeIndices/clozeDistractors/grading/exerciseForLevel/seedFor) · Test: `exercises.test.ts` 17/17. FE Vitest: 1433 pass. `validate:i18n` hardcoded 1145 = trước khi thêm code FE (comment code FE viết tiếng Anh — validator đếm cả comment có dấu)
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
-- HT-12 E2E W-M16: TC spec + Playwright (fail trước)
-  - Status: [ ] TODO · Files: `tests/e2e/playwright/specs/smoke/W-M16-memorize.md`, `.../happy-path/W-M16-memorize.md`, `tests/e2e/smoke/web-user/W-M16-memorize.spec.ts`, `tests/e2e/happy-path/web-user/W-M16-memorize.spec.ts`, page object `tests/e2e/pages/MemorizePage.ts`, `INDEX.md`, `TC-TODO.md` · Test: chạy → fail đúng chỗ chưa có UI
+- HT-12 E2E W-M19: TC spec + Playwright (fail trước)
+  - Status: [x] DONE (viết xong; **chưa chạy** — cần full stack, chạy ở HT-21). Module đổi **W-M16 → W-M19** vì W-M16/17/18 đã được TC-TODO dành cho Achievements/Leaderboard/Basic Quiz. Smoke 3 TC backend thật (read-only); happy 7 TC dùng `helpers/memorize-api-stub.ts` (stub có trạng thái, chữ giả) vì DB E2E chưa có toàn văn. `playwright test --list` nhận đủ 10 test. Chọn sách dùng `<select>` native (dễ test, thay SearchableSelect trong §2.5) · Files: `tests/e2e/playwright/specs/smoke/W-M19-memorize.md`, `.../happy-path/W-M19-memorize.md`, `tests/e2e/smoke/web-user/W-M19-memorize.spec.ts`, `tests/e2e/happy-path/web-user/W-M19-memorize.spec.ts`, page object `tests/e2e/pages/MemorizePage.ts`, `INDEX.md`, `TC-TODO.md` · Test: chạy → fail đúng chỗ chưa có UI
   - **Spec strategy**: [x] (c) · Checklist: TC · code · index · commit
 
 - HT-13 `PhraseOrderExercise`
@@ -207,7 +207,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-21 E2E xanh + full regression + đóng Đợt 1
-  - Status: [ ] TODO · Files: — · Test: Playwright W-M16 pass, Tầng 3 đủ, `validate:i18n`, `audit.sh`
+  - Status: [ ] TODO · Files: — · Test: Playwright W-M19 pass, Tầng 3 đủ, `validate:i18n`, `audit.sh`
   - **Spec strategy**: [x] (c) · Checklist: regression · cập nhật baseline · move file sang archive (sau khi merge) · cập nhật TODO.md
 
 **Thứ tự khi HT-5 còn BLOCKED:** làm HT-1 → HT-4, HT-6 → HT-21 với fixture; HT-5 chèn vào khi có file. Không deploy prod Học Thuộc trước khi HT-5 xong.
