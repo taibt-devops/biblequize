@@ -94,4 +94,20 @@ class BibleStructureTest {
     void validateRange_rejectsInvertedVerseRange() {
         assertNotNull(BibleStructure.validateRange("Mark", 1, 1, 20, 10));
     }
+
+    // BT-3a (2026-09-15): Leviticus 19–27, Ecclesiastes 4–5, Isaiah 34–66 and Ephesians 4–6 had
+    // wrong verse counts (total 31,152). Locked against the bundled BTT 1926 text (31,102).
+    @Test
+    void verseCounts_matchStandardProtestantVersification() {
+        int total = 0;
+        for (String book : BibleStructure.getCanonicalBooks()) {
+            for (int v : BibleStructure.getVerses(book)) total += v;
+        }
+        assertEquals(31_102, total);
+        assertEquals(37, BibleStructure.getVerseCount("Leviticus", 19));
+        assertEquals(20, BibleStructure.getVerseCount("Ecclesiastes", 5));
+        assertEquals(12, BibleStructure.getVerseCount("Isaiah", 53));
+        assertEquals(31, BibleStructure.getVerseCount("Isaiah", 40));
+        assertEquals(33, BibleStructure.getVerseCount("Ephesians", 5));
+    }
 }
