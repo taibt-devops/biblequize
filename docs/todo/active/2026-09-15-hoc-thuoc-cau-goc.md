@@ -163,7 +163,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-10 FE api adapter + query keys + hooks
-  - Status: [ ] TODO · Files: `src/api/memorize.ts`, `src/api/queryKeys.ts` (thêm domain), `src/hooks/useMemoryVerses.ts`, `src/hooks/usePassage.ts` · Test: `src/hooks/__tests__/useMemoryVerses.test.tsx`
+  - Status: [x] DONE · Files: `src/api/memorize.ts`, `src/api/queryKeys.ts` (domain `memorize`), `src/hooks/useMemoryVerses.ts` (gộp `usePassage`) · Test: `useMemoryVerses.test.tsx` 5/5. FE Vitest toàn bộ: 1416 pass (baseline worktree 1411). `tsc` lỗi chỉ ở file có sẵn, 0 ở file mới. Playwright chạy ở HT-12/HT-21
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-11 Utils thuần `src/utils/memorize/*`

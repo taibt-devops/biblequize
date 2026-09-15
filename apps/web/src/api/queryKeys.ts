@@ -51,4 +51,13 @@ export const queryKeys = {
     detail: (groupId: string, journeyId: string) =>
       [...queryKeys.groupJourney.all, groupId, 'detail', journeyId] as const,
   },
+
+  memorize: {
+    all: ['memorize'] as const,
+    list: () => [...queryKeys.memorize.all, 'list'] as const,
+    due: () => [...queryKeys.memorize.all, 'due'] as const,
+    dueCount: () => [...queryKeys.memorize.all, 'due-count'] as const,
+    passage: (book: string, chapter: number, from: number, to: number) =>
+      ['bible-passage', book, chapter, from, to] as const,
+  },
 } as const
