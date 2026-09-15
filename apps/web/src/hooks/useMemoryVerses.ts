@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import {
-  addMemoryVerse, deleteMemoryVerse, getMemoryDueCount, getPassage, listDueMemoryVerses,
+  addMemoryVerse, deleteMemoryVerse, getBibleStatus, getMemoryDueCount, getPassage, listDueMemoryVerses,
   listMemoryVerses, reviewMemoryVerse, type ExerciseType, type MemoryVerseRef,
 } from '../api/memorize'
 import { queryKeys } from '../api/queryKeys'
@@ -36,6 +36,20 @@ export function useMemoryDueCount(enabled = true) {
     enabled,
     staleTime: 60_000,
   })
+}
+
+/**
+ * Memorize is only offered once Bible text is imported (SPEC_USER §5.1.1 gate).
+ * Treats loading and errors as "not available" so the entry never flashes in empty.
+ */
+export function useBibleTextAvailable(): boolean {
+  const { data } = useQuery({
+    queryKey: queryKeys.memorize.bibleStatus(),
+    queryFn: getBibleStatus,
+    staleTime: 10 * 60_000,
+    retry: false,
+  })
+  return data?.available === true
 }
 
 export function usePassage(book: string | undefined, chapter: number | undefined,

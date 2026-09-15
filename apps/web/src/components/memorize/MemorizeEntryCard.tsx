@@ -1,16 +1,21 @@
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
-import { useMemoryDueCount } from '../../hooks/useMemoryVerses'
+import { useBibleTextAvailable, useMemoryDueCount } from '../../hooks/useMemoryVerses'
 
 interface MemorizeEntryCardProps {
   isAuthenticated: boolean
 }
 
-/** Practice page entry into Memorize mode (SPEC_USER §5.1.1). Guests are sent to login. */
+/**
+ * Practice page entry into Memorize mode (SPEC_USER §5.1.1). Guests are sent to login.
+ * Hidden until Bible text is imported, so the feature never ships empty.
+ */
 export default function MemorizeEntryCard({ isAuthenticated }: MemorizeEntryCardProps) {
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const { data: dueCount = 0 } = useMemoryDueCount(isAuthenticated)
+  const available = useBibleTextAvailable()
+  const { data: dueCount = 0 } = useMemoryDueCount(isAuthenticated && available)
+  if (!available) return null
 
   return (
     <div

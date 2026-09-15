@@ -72,3 +72,9 @@ export async function getPassage(book: string, chapter: number, from: number, to
   const res = await api.get('/api/bible/passage', { params: { book, chapter, from, to } })
   return res.data
 }
+
+/** Public: whether Bible text is imported — gates the Memorize entry point. */
+export async function getBibleStatus(): Promise<{ version: string; available: boolean }> {
+  const res = await api.get('/api/public/bible/status')
+  return res.data
+}

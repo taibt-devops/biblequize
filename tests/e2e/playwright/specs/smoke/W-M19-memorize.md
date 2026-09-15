@@ -10,6 +10,8 @@
 
 **Priority**: P1 · **Est. runtime**: ~3s · **Auth**: storageState=tier1 · **Tags**: @smoke @memorize
 
+**Setup**: stub `GET /api/public/bible/status` → `{available: true}` (thẻ bị cổng ẩn khi chưa import chữ — HT-22; DB E2E chưa có chữ)
+
 **Actions**:
 1. `page.goto('/practice')`
 2. `page.getByTestId('memorize-entry-btn').click()`

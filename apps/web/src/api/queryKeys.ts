@@ -57,6 +57,7 @@ export const queryKeys = {
     list: () => [...queryKeys.memorize.all, 'list'] as const,
     due: () => [...queryKeys.memorize.all, 'due'] as const,
     dueCount: () => [...queryKeys.memorize.all, 'due-count'] as const,
+    bibleStatus: () => ['bible-status'] as const,
     passage: (book: string, chapter: number, from: number, to: number) =>
       ['bible-passage', book, chapter, from, to] as const,
   },

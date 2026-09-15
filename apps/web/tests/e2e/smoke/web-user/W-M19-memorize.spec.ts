@@ -13,9 +13,12 @@ test.describe('W-M19 Memorize — L1 Smoke @smoke @memorize', () => {
   test('W-M19-L1-001: Practice hien the Hoc Thuoc va dan toi danh sach @smoke @memorize', async ({
     tier1Page,
   }) => {
-    // SECTION 1: SETUP — none
+    // SECTION 1: SETUP — the entry card is gated on imported Bible text (HT-22); the
+    // E2E DB has none, so report it available. Everything else hits the real backend.
     const page = tier1Page
     const memorize = new MemorizePage(page)
+    await page.route('**/api/public/bible/status', route =>
+      route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ version: 'BTTHD2011', available: true }) }))
 
     // SECTION 2: ACTIONS
     await page.goto('/practice')

@@ -219,7 +219,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec impact**: [x] SPEC_USER §5.1.1, §27.20 · **Spec strategy**: [x] (a) update inline
 
 - HT-22b Cổng hiển thị — frontend ẩn thẻ Practice khi chưa có chữ
-  - Status: [ ] TODO · Files: `api/memorize.ts`, `hooks/useMemoryVerses.ts` (`useBibleTextAvailable`), `MemorizeEntryCard.tsx`, tests + E2E smoke L1-001 stub status
+  - Status: [x] DONE · Files: `api/memorize.ts` (`getBibleStatus`), `api/queryKeys.ts`, `hooks/useMemoryVerses.ts` (`useBibleTextAvailable` — loading/lỗi = ẩn), `MemorizeEntryCard.tsx` (ẩn khi chưa có chữ, không gọi due-count), `MemorizeEntryCard.test.tsx` 5/5 (+ẩn khi chưa có chữ, +ẩn khi lỗi), `Practice.test.tsx` mock status, E2E smoke L1-001 + TC spec stub status. Thẻ Home không cần cổng (chưa có chữ → không thêm được câu → dueCount = 0). Vitest 1482 pass; tsc 29/0 mới; i18n 1145/85
   - **Spec strategy**: [x] (c) (spec ở HT-22a)
 
 - HT-23 Merge `main` vào nhánh → Tầng 3 → fast-forward `main` → push → deploy prod → verify (V72, thẻ ẩn, health)

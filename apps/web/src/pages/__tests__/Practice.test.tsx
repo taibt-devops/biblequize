@@ -56,6 +56,7 @@ describe('Practice Mode', () => {
         ] })
       if (url.includes('/practice/recent')) return Promise.resolve({ data: [] })
       if (url.includes('/wrong-questions/count')) return Promise.resolve({ data: { count: 0 } })
+      if (url === '/api/public/bible/status') return Promise.resolve({ data: { version: 'BTTHD2011', available: true } })
       return Promise.reject(new Error('Not found'))
     })
     mockApiPost.mockResolvedValue({ data: { sessionId: 'sess-1', questions: [] } })
@@ -67,9 +68,9 @@ describe('Practice Mode', () => {
     expect(screen.getByText(/Tập/)).toBeInTheDocument()
   })
 
-  it('HT-19: shows the Memorize entry card (SPEC_USER §5.1.1)', () => {
+  it('HT-19: shows the Memorize entry card once Bible text is available (SPEC_USER §5.1.1)', async () => {
     renderPractice()
-    expect(screen.getByTestId('memorize-entry-card')).toHaveTextContent('Học Thuộc câu gốc')
+    expect(await screen.findByTestId('memorize-entry-card')).toHaveTextContent('Học Thuộc câu gốc')
   })
 
   it('renders difficulty options (Dễ, TB, Khó, Hỗn hợp equivalent)', () => {
