@@ -183,7 +183,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-15 Trang danh sách `/practice/memorize` + route
-  - Status: [ ] TODO · Files: `src/pages/memorize/MemorizeList.tsx`, `src/main.tsx` (⚠️ file nhạy cảm → Tầng 3 ngay), i18n · Test: page test (loading/error/empty+gợi ý/list/xoá)
+  - Status: [x] DONE · Files: `src/pages/memorize/MemorizeList.tsx`, `src/components/memorize/MemoryVerseItem.tsx` (tách cho < 300 LOC), `src/utils/memorize/schedule.ts` (daysUntilReview/formatReference/SUGGESTED_VERSES), `src/main.tsx` (lazy route + RequireAuth), i18n `memorize.list.*` · Test: `MemorizeList.test.tsx` 7/7 (skeleton, list + tên sách VN + nút ôn, không đến hạn → disabled + "sau N ngày", empty gợi ý → POST, xoá 2 bước, lỗi + thử lại, nút thêm) + `schedule.test.ts` 4/4. Tầng 3 FE (main.tsx nhạy cảm): Vitest 1454 pass, tsc 29 lỗi có sẵn/0 mới, i18n 1145/85, `vite build` OK
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-16 Trang chọn câu `/practice/memorize/add`

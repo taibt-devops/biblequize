@@ -3118,6 +3118,26 @@
       "clozePrompt": "Tap a blank, then pick the right word",
       "wrongTry": "Not quite — try again",
       "mistakes": "Wrong picks: {{count}}"
+    },
+    "list": {
+      "eyebrow": "Memorize",
+      "title": "My memory verses",
+      "desc": "Pick the verses you want to learn by heart and review a little every day.",
+      "reviewDue": "Review {{count}} due",
+      "noneDue": "Nothing due yet",
+      "add": "Add verse",
+      "loadError": "Couldn't load your memory verses.",
+      "retry": "Try again",
+      "emptyTitle": "No memory verses yet",
+      "emptyDesc": "Start with a familiar verse:",
+      "suggestionError": "Couldn't add that verse. Try another one.",
+      "due": "Due for review",
+      "reviewIn": "Review again in {{count}} days",
+      "reviewSoon": "Review again later today",
+      "level": "Mastery {{level}}/5",
+      "delete": "Delete",
+      "deleteConfirm": "Remove from list?",
+      "cancel": "Cancel"
     }
   }
 }

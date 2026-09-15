@@ -3118,6 +3118,26 @@
       "clozePrompt": "Chạm vào ô trống rồi chọn chữ đúng",
       "wrongTry": "Chưa đúng, thử lại nhé",
       "mistakes": "Số lần chọn sai: {{count}}"
+    },
+    "list": {
+      "eyebrow": "Học Thuộc",
+      "title": "Câu gốc của tôi",
+      "desc": "Chọn những câu bạn muốn thuộc lòng và ôn mỗi ngày một chút.",
+      "reviewDue": "Ôn {{count}} câu đến hạn",
+      "noneDue": "Chưa có câu đến hạn",
+      "add": "Thêm câu",
+      "loadError": "Không tải được danh sách câu gốc.",
+      "retry": "Thử lại",
+      "emptyTitle": "Chưa có câu gốc nào",
+      "emptyDesc": "Bắt đầu với một câu quen thuộc:",
+      "suggestionError": "Chưa thêm được câu này. Hãy chọn câu khác.",
+      "due": "Đến hạn ôn",
+      "reviewIn": "Ôn lại sau {{count}} ngày",
+      "reviewSoon": "Ôn lại trong hôm nay",
+      "level": "Mức thuộc {{level}}/5",
+      "delete": "Xoá",
+      "deleteConfirm": "Xoá khỏi danh sách?",
+      "cancel": "Huỷ"
     }
   }
 }
