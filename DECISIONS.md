@@ -2,6 +2,15 @@
 
 ---
 
+## 2026-09-15 — Định hướng "vừa chơi vừa học": mode Học Thuộc câu gốc trong Luyện Tập
+
+- **Bối cảnh:** đo prod 2026-09-15 — người mới bỏ app sau trận Đấu Hạng đầu tiên, không tương quan độ chính xác (không phải do câu khó). Phản hồi người dùng: muốn app giúp **học và ghi nhớ Kinh Thánh tốt hơn**. Chưa chỉnh độ khó Đấu Hạng (dữ liệu quá ít để đo).
+- **Quyết định (user chốt):** D1 trục chính = thuộc câu gốc (nhớ câu chuyện + hiểu ý nghĩa bổ trợ) · D2 bản BTTHĐ 2011 (user xác nhận đã có quyền dùng nguyên văn) · D3 user tự chọn bất kỳ câu nào (cần toàn văn) · D4 mode "Học Thuộc" trong Luyện Tập + thẻ nhắc ôn trên Home · D5 4 dạng bài (sắp xếp cụm, điền khuyết tăng dần, gõ chữ cái đầu, nhớ địa chỉ) · D6 ngữ cảnh: đoạn xung quanh + quiz cùng chương + giải thích AI · D7 AI hiện ngay + nhãn + nút báo sai · D8 triển khai theo đợt (MVP trước).
+- **Không làm:** XP / năng lượng / xếp hạng / streak cho Học Thuộc. Không đổi Đấu Hạng.
+- **Implementation:** task `docs/todo/active/2026-09-15-hoc-thuoc-cau-goc.md` (HT-0..21). Spec: SPEC_USER §5.1.1 + §27.20 (strategy a, HT-1).
+
+---
+
 ## 2026-06-21 — Ranked scoring rework: công bằng theo kỹ năng + động lực (BL-26)
 
 > **Status: 🔓 LOCKED 2026-06-22 (D1–D4 dưới).** A+B+C gộp 1 sprint → task `docs/todo/active/2026-06-22-ranked-scoring-rework-abc.md`. SPEC_USER §4 update inline khi code xong.
