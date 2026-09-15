@@ -130,7 +130,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - Checklist: spec theo §2 file này · audit no NEW broken · commit `docs: update SPEC_USER §5.1.1 Học Thuộc`
 
 - HT-2 Flyway V71 + entity/repo `BibleVerse`
-  - Status: [ ] TODO · Files: `db/migration/V71__bible_verses_and_memory.sql` (cả 2 bảng), `modules/bible/entity/BibleVerse.java`, `modules/bible/repository/BibleVerseRepository.java` · Test: repository query-string test + app context (H2 create-drop)
+  - Status: [x] DONE · Files: `db/migration/V71__bible_verses_and_memory_verses.sql` (cả 2 bảng), `modules/bible/entity/BibleVerse.java`, `modules/bible/repository/BibleVerseRepository.java` · Test: `BibleVerseTest` 4/4 (id deterministic + schema-lock V71); V71 chạy sạch trên MySQL 8 container tạm (stub `users`). BE Tầng 3: 899 run, 3 fail **có sẵn trên main** (`StreakServiceTest` ×3, baseline 895/3 fail trước khi đổi code — không thuộc module này, không sửa)
   - **Spec impact**: [ ] None (đã ở HT-1) · **Spec strategy**: [x] (c)
   - Checklist: impl · Tầng 1+2+3 pass · commit
 
