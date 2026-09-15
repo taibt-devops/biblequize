@@ -14,13 +14,17 @@ export function useMemoryVerses(enabled = true) {
   return useQuery({ queryKey: queryKeys.memorize.list(), queryFn: listMemoryVerses, enabled })
 }
 
-/** Review-session queue — never refetched mid-session (a just-reviewed verse would leave the queue). */
+/**
+ * Review-session queue. Always fresh when a session opens; callers snapshot the
+ * first result so a later refetch never reshuffles an in-progress session.
+ */
 export function useDueMemoryVerses(enabled = true) {
   return useQuery({
     queryKey: queryKeys.memorize.due(),
     queryFn: listDueMemoryVerses,
     enabled,
-    staleTime: Infinity,
+    staleTime: 0,
+    refetchOnMount: 'always',
     refetchOnWindowFocus: false,
   })
 }

@@ -191,7 +191,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-17 Hook `useMemorizeSession`
-  - Status: [ ] TODO · Files: `src/hooks/useMemorizeSession.ts` · Test: hook test (hàng đợi, submit review, kết thúc, lỗi mạng giữ câu)
+  - Status: [x] DONE · Files: `src/hooks/useMemorizeSession.ts`; `useDueMemoryVerses` đổi sang luôn refetch khi mount (cache mặc định 5 phút sẽ trả hàng đợi cũ) + hook chụp hàng đợi lần tải đầu · Test: `useMemorizeSession.test.tsx` 5/5 (empty, error, context→exercise→result + bài theo level, tóm tắt reviewed/leveledUp, không qua câu khi chưa lưu + thử lưu lại). FE Vitest 1466 pass; tsc 29/0 mới; i18n 1145/85
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-18 Trang phiên ôn `/practice/memorize/session`
