@@ -223,7 +223,15 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) (spec ở HT-22a)
 
 - HT-23 Merge `main` vào nhánh → Tầng 3 → fast-forward `main` → push → deploy prod → verify (V72, thẻ ẩn, health)
-  - Status: [ ] TODO
+  - Status: [x] DONE · Merge `origin/main` vào nhánh (tự gộp sạch, V70→V71→V72). Tầng 3 bản merge: BE 954 run / 3 fail có sẵn, Vitest 1482 pass, build OK, **W-M19 10/10** trên stack local `ddl-auto: none` (74 migration, app chạy nhờ V71). `main` fast-forward → `04a9ddbf`, push. Deploy build từ worktree sạch: BE `sha256:b86b21e7…`, FE `sha256:3d280819…` (rollback: BE `4d46b5b1…`, FE `be197f59…`). Prod: health 200, Flyway **V72** success, bảng `bible_verses` + `user_memory_verses` tạo, 0 dòng ERROR, `GET /api/public/bible/status` → `available:false`; mở `/practice` bằng trình duyệt thật → **thẻ Học Thuộc ẩn** (status 200); `/api/me/memory-verses` không token → 401
+
+## 3c. Runbook bật tính năng trên prod (khi có file BTTHĐ 2011 — HT-5)
+
+1. User gửi file toàn văn (định dạng bất kỳ) → script chuyển sang `apps/api/src/main/resources/seed/bible/btthd2011/NN-Book.json` (mảng `{chapter, verse, text}`, `_` thay khoảng trắng trong tên sách) → soát ~20 câu với bản in + đếm câu/sách so `BibleStructure` → commit, merge `main`.
+2. Deploy như thường (build từ worktree sạch — Dockerfile BE build từ working tree).
+3. Import one-shot: thêm `BIBLE_IMPORT_ENABLED: "true"` vào env `api` trong `/opt/biblequiz/compose.yml` → `docker compose up -d --no-deps --force-recreate api` → chờ log `[bible-import] done, N verses written` → `SELECT COUNT(*) FROM bible_verses` (~31.1k) → đặt lại `"false"` + recreate (tránh quét lại mỗi lần boot; importer idempotent nên chạy lại cũng an toàn).
+4. Kiểm: `GET /api/public/bible/status` → `available:true`; thẻ Học Thuộc hiện trên `/practice` (FE cache status tối đa 10 phút); thêm thử 1 câu bằng tài khoản thật rồi xoá.
+
 
 ## 3b. Phát hiện ngoài phạm vi (không sửa — module khác, báo user)
 
