@@ -135,7 +135,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - Checklist: impl · Tầng 1+2+3 pass · commit
 
 - HT-3 Entity/repo `UserMemoryVerse`
-  - Status: [ ] TODO · Files: `modules/memorize/entity/UserMemoryVerse.java`, `modules/memorize/repository/UserMemoryVerseRepository.java` (findDue, countDue, findByUserOrderBy…) · Test: repository query test
+  - Status: [x] DONE · Files: `modules/memorize/entity/UserMemoryVerse.java`, `modules/memorize/repository/UserMemoryVerseRepository.java` (findAllByUserId, findDue, countDue, findOwned, existsRef) · Test: `UserMemoryVerseRepositoryTest` 5/5 (schema-lock JPQL). BE Tầng 3: 904 run, chỉ 3 fail có sẵn. ⚠️ JPQL chỉ được Spring validate lúc boot → kiểm bằng boot app trên MySQL tạm ở HT-9
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-4 `BibleTextImporter` (gated, batch, idempotent)
