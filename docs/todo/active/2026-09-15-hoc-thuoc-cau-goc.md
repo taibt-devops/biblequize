@@ -155,7 +155,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-8 `MemoryVerseService` (add/list/delete/due/dueCount/review)
-  - Status: [ ] TODO · Files: `modules/memorize/service/MemoryVerseService.java` · Test: `MemoryVerseServiceTest` (range > 5, câu không tồn tại, trùng, xoá của người khác, review cập nhật đúng)
+  - Status: [x] DONE · Files: `modules/memorize/service/MemoryVerseService.java`, `MemoryVerseException.java` (INVALID/DUPLICATE/NOT_FOUND) · Test: `MemoryVerseServiceTest` 8/8 (thêm L0 đến hạn ngay, > 5 câu, tham chiếu sai, thiếu/thiếu một phần chữ, trùng kể cả race unique key, xoá của người khác, review áp lịch, due giới hạn 10 + item mất chữ vẫn hiện). `exerciseType` không lưu (schema Đợt 1 không có cột). BE Tầng 3: 941 run, chỉ 3 fail có sẵn
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-9 `MemoryVerseController`
