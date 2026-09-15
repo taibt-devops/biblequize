@@ -3110,5 +3110,14 @@
         "emptyPanelManual": "Chưa có câu nào. Bấm \"+ Thêm thủ công\" ở đầu sidebar bên trái để bắt đầu."
       }
     }
+  },
+  "memorize": {
+    "exercise": {
+      "orderPrompt": "Chạm các cụm từ theo đúng thứ tự của câu gốc",
+      "orderAnswerEmpty": "Cụm từ bạn chọn sẽ hiện ở đây",
+      "clozePrompt": "Chạm vào ô trống rồi chọn chữ đúng",
+      "wrongTry": "Chưa đúng, thử lại nhé",
+      "mistakes": "Số lần chọn sai: {{count}}"
+    }
   }
 }

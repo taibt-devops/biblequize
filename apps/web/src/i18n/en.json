@@ -3110,5 +3110,14 @@
         "emptyPanelManual": "No questions yet. Click \"+ Add manually\" in the left sidebar to start."
       }
     }
+  },
+  "memorize": {
+    "exercise": {
+      "orderPrompt": "Tap the phrases in the verse's order",
+      "orderAnswerEmpty": "Your phrases will appear here",
+      "clozePrompt": "Tap a blank, then pick the right word",
+      "wrongTry": "Not quite — try again",
+      "mistakes": "Wrong picks: {{count}}"
+    }
   }
 }

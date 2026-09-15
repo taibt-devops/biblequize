@@ -175,7 +175,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: TC · code · index · commit
 
 - HT-13 `PhraseOrderExercise`
-  - Status: [ ] TODO · Files: `src/components/memorize/PhraseOrderExercise.tsx` · Test: component test (đưa lên/trả về, đạt/chưa đạt)
+  - Status: [x] DONE · Files: `src/components/memorize/PhraseOrderExercise.tsx`, i18n `memorize.exercise.*` (vi+en, chèn khối cuối file bằng script — locale có key trùng nên không re-serialize) · Test: `PhraseOrderExercise.test.tsx` 5/5 (bank xáo, đạt 0 lỗi, chạm sai giữ lại + đếm, 1 lỗi vẫn đạt / 2 lỗi trượt, cụm trùng chữ). Thiết kế: chỉ nhận cụm kế tiếp đúng (không cần "trả về"). FE Vitest 1438 pass; i18n 1145/85 không đổi
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-14 `ClozeExercise`
