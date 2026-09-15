@@ -32,8 +32,8 @@
 id VARCHAR(36) PK            -- UUID.nameUUIDFromBytes("bible|version|book|chapter|verse") (deterministic)
 version VARCHAR(16)          -- 'BTTHD2011'
 book VARCHAR(40)             -- English key như questions.book ("Genesis", "1 Samuel", "Song of Songs")
-book_order TINYINT           -- 1..66 theo BibleStructure
-chapter SMALLINT, verse SMALLINT
+book_order INT              -- 1..66 theo BibleStructure (INT, không TINYINT/SMALLINT — khớp entity `int`, xem HT-9)
+chapter INT, verse INT
 text TEXT NOT NULL
 created_at, updated_at
 UNIQUE uk_bv_ref (version, book, chapter, verse)
@@ -44,8 +44,8 @@ INDEX idx_bv_chapter (version, book_order, chapter, verse)
 ```
 id VARCHAR(36) PK (UUID.randomUUID)
 user_id VARCHAR(36) FK users ON DELETE CASCADE
-version VARCHAR(16), book VARCHAR(40), chapter SMALLINT, verse_start SMALLINT, verse_end SMALLINT
-mastery_level TINYINT NOT NULL DEFAULT 0      -- 0..5
+version VARCHAR(16), book VARCHAR(40), chapter INT, verse_start INT, verse_end INT
+mastery_level INT NOT NULL DEFAULT 0          -- 0..5
 next_review_at TIMESTAMP NOT NULL             -- thêm mới = now (đến hạn ngay)
 last_reviewed_at TIMESTAMP NULL
 review_count INT NOT NULL DEFAULT 0, lapse_count INT NOT NULL DEFAULT 0
@@ -61,7 +61,7 @@ Ràng buộc nghiệp vụ (service): `verse_end - verse_start ≤ 4` (tối đa
 - `BibleTextImporter` (`infrastructure/seed/bible`): gate `app.seeding.bible.enabled=${BIBLE_IMPORT_ENABLED:false}`, chạy `ApplicationReadyEvent`, nuốt exception (như QuestionSeeder).
 - Idempotent + nhanh: mỗi sách → nếu `count(version, book)` == số câu trong file thì **bỏ qua**; ngược lại `JdbcTemplate.batchUpdate` với `INSERT ... ON DUPLICATE KEY UPDATE text=VALUES(text)`, 1 transaction/sách. KHÔNG `existsById` từng dòng.
 - Kiểm tra cấu trúc: log WARN nếu số chương/câu lệch `BibleStructure` (versification VN có thể khác nhẹ — không chặn import).
-- ⚠️ **Phụ thuộc dữ liệu**: repo chưa có file toàn văn BTTHĐ 2011. Task HT-4 chuyển đổi từ nguồn user cung cấp → **BLOCKED cho tới khi có file** (hỏi user định dạng: JSON/USFM/XML/SQL…). Mọi task khác dùng fixture giả (text rõ ràng là giả, KHÔNG bịa câu Kinh Thánh).
+- ⚠️ **Phụ thuộc dữ liệu**: repo chưa có file toàn văn BTTHĐ 2011. Task HT-5 chuyển đổi từ nguồn user cung cấp → **BLOCKED cho tới khi có file** (hỏi user định dạng: JSON/USFM/XML/SQL…). Mọi task khác dùng fixture giả (text rõ ràng là giả, KHÔNG bịa câu Kinh Thánh).
 
 ### 2.3 Lịch ôn giãn cách (`MemorySchedule`, pure function)
 
@@ -97,7 +97,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
 
 - Routes (trong AppLayout, `RequireAuth`, lazy): `/practice/memorize` (danh sách) · `/practice/memorize/add` (chọn câu) · `/practice/memorize/session` (phiên ôn).
 - **Danh sách**: mỗi câu = thẻ (địa chỉ `useBookName`, trích 2 dòng, level 0–5 dạng chấm, "đến hạn"/"ôn lại sau N ngày", nút xoá). Nút "Ôn N câu đến hạn" + "Thêm câu". Empty state gợi ý vài câu phổ biến (Giăng 3:16, Thi Thiên 23:1, Phi-líp 4:13, Rô-ma 8:28, Châm Ngôn 3:5-6) — bấm để thêm, text lấy từ API (không hardcode nội dung câu).
-- **Chọn câu**: Sách (`SearchableSelect` + `/api/books`) → Chương (`getChapterCount`) → Câu từ/đến (`getVerseCount`, tối đa 5) → xem trước bằng `/api/bible/passage` → "Thêm vào danh sách".
+- **Chọn câu**: Sách (`<select>` native + `/api/books`, đổi từ SearchableSelect ở HT-12) → Chương (`getChapterCount`) → Câu từ/đến (`getVerseCount`, tối đa 5) → xem trước bằng `/api/bible/passage` → "Thêm vào danh sách".
 - **Phiên ôn** (`useMemorizeSession` hook giữ hàng đợi + trạng thái): mỗi câu: (1) màn ngữ cảnh — đoạn ±2 câu xung quanh, câu gốc tô đậm, nút "Bắt đầu"; (2) bài tập theo level; (3) kết quả đạt/chưa + câu đúng đầy đủ → POST review → câu kế. Cuối phiên: tóm tắt (đã ôn N, lên cấp M), không điểm.
 - **Bài tập** (không thêm dependency — tap-to-place, hợp mobile/Capacitor):
   - `PhraseOrderExercise`: cụm xáo trộn ở dưới, chạm để đưa lên dòng trả lời, chạm dòng trả lời để trả về; đạt nếu sai ≤ 1 lần.
@@ -110,7 +110,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
 ### 2.6 Test strategy
 - BE: unit Mockito cho `MemorySchedule`, `MemoryVerseService`, `BiblePassageService`, `BibleTextImporter` (fixture giả); `@WebMvcTest` + `BaseControllerTest` cho 2 controller. (Repo test profile = H2, không Testcontainers — theo codebase thực tế.)
 - FE: Vitest cho utils (nhiều case), 2 exercise component, 3 page, hook session, 2 thẻ lối vào.
-- E2E: module mới **W-M19 Memorize** (`/practice/memorize*`) — TC spec + Playwright smoke/happy **trước** khi code page (E2E Test Gate); cập nhật `tests/e2e/INDEX.md` + `TC-TODO.md`.
+- E2E: module mới **W-M19 Memorize** (W-M16..18 đã có chủ trong TC-TODO) (`/practice/memorize*`) — TC spec + Playwright smoke/happy **trước** khi code page (E2E Test Gate); cập nhật `tests/e2e/INDEX.md` + `TC-TODO.md`.
 - Tầng 3 trước mỗi commit; baseline `.test-baseline` không giảm.
 
 ---
@@ -207,7 +207,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-21 E2E xanh + full regression + đóng Đợt 1
-  - Status: [ ] TODO · Files: — · Test: Playwright W-M19 pass, Tầng 3 đủ, `validate:i18n`, `audit.sh`
+  - Status: [x] DONE (trừ archive — chờ HT-5 + merge) · Stack local: MySQL 8 + Redis container tạm, API jar (profile dev, seed test user + 10.096 câu hỏi), Vite. **W-M19 10/10 pass**. Kiểm tra thêm (không commit) bằng trình duyệt trên **backend thật** với 5 câu mẫu `[Mẫu]` chèn tay vào `bible_verses`: vào từ Practice → danh sách trống → chọn Giăng 3:16 + preview → thêm → ngữ cảnh ±2 → sắp xếp cụm → đạt → tổng kết; API xác nhận L1 + `due=false`; ảnh chụp các màn đúng token Khung Sáng. Regression E2E W-M02 + W-M03 (smoke + happy): nhánh 16 pass / 17 fail / 8 skip — **chạy đúng bộ đó trên `main` (worktree baseline) ra y hệt cùng 17 test fail** → không regression. BE Tầng 3: 949 run, 3 fail có sẵn. FE: Vitest 1480 pass, tsc 29 lỗi có sẵn / 0 mới, i18n 1145/85 không đổi, `vite build` OK. Chưa kiểm: giao diện mobile ~390px · Files: — · Test: Playwright W-M19 pass, Tầng 3 đủ, `validate:i18n`, `audit.sh`
   - **Spec strategy**: [x] (c) · Checklist: regression · cập nhật baseline · move file sang archive (sau khi merge) · cập nhật TODO.md
 
 **Thứ tự khi HT-5 còn BLOCKED:** làm HT-1 → HT-4, HT-6 → HT-21 với fixture; HT-5 chèn vào khi có file. Không deploy prod Học Thuộc trước khi HT-5 xong.
@@ -219,6 +219,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
 - `StreakServiceTest` 3 test fail sẵn trên `main` (baseline 895/3 fail trước khi đổi code).
 - **Flyway drift**: cột `user_daily_progress.asked_question_ids` được entity dùng nhưng KHÔNG có trong migration nào → app boot trên DB trống với `ddl-auto: none` (cấu hình prod) chết ở startup runner đọc UDP. Dev/prod hiện sống nhờ DB cũ / `ddl-auto: update`. Cần task riêng (migration bổ sung).
 - `ddl-auto: validate` không dùng được cho cả codebase (vd `room_answers.answer_index` TINYINT vs `int`).
+- **E2E W-M02/W-M03 hỏng sẵn trên `main`**: 17 test fail (testid cũ trước redesign Khung Sáng như `game-mode-grid`, `home-total-points`, `home-tier-badge`; API câu hỏi trả `content` không phải `text`) — INDEX.md vẫn ghi ✅ cho 2 module này. Cần task riêng cập nhật test.
 
 ## 4. Đợt sau (chưa thành task)
 
