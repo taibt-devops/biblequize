@@ -151,7 +151,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) (spec đã ở HT-1) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-7 `MemorySchedule` (pure SRS)
-  - Status: [ ] TODO · Files: `modules/memorize/service/MemorySchedule.java` · Test: `MemoryScheduleTest` (mọi level × đạt/chưa, clamp 0/5, 10 phút ở L0)
+  - Status: [x] DONE · Files: `modules/memorize/service/MemorySchedule.java` · Test: `MemoryScheduleTest` 13/13 (mọi level × đạt/chưa, clamp 0/5, 10 phút khi về L0, đếm review/lapse). BE Tầng 3: 933 run, chỉ 3 fail có sẵn
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-8 `MemoryVerseService` (add/list/delete/due/dueCount/review)
