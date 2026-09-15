@@ -6,15 +6,15 @@ import {
 import { queryKeys } from '../api/queryKeys'
 
 /**
- * Học Thuộc câu gốc (SPEC_USER §5.1.1). Mọi mutation invalidate cả domain
- * `memorize` — danh sách, hàng đợi ôn và số câu đến hạn luôn khớp nhau.
+ * Memorize mode (SPEC_USER §5.1.1). Add/delete invalidate the whole `memorize`
+ * domain so the list, review queue and due count always agree.
  */
 
 export function useMemoryVerses(enabled = true) {
   return useQuery({ queryKey: queryKeys.memorize.list(), queryFn: listMemoryVerses, enabled })
 }
 
-/** Hàng đợi phiên ôn — không refetch tự động giữa phiên (câu vừa ôn xong sẽ rời hàng đợi). */
+/** Review-session queue — never refetched mid-session (a just-reviewed verse would leave the queue). */
 export function useDueMemoryVerses(enabled = true) {
   return useQuery({
     queryKey: queryKeys.memorize.due(),
@@ -41,7 +41,7 @@ export function usePassage(book: string | undefined, chapter: number | undefined
     queryKey: queryKeys.memorize.passage(book ?? '', chapter ?? 0, from ?? 0, to ?? 0),
     queryFn: () => getPassage(book!, chapter!, from!, to!),
     enabled: ready,
-    staleTime: Infinity, // toàn văn không đổi
+    staleTime: Infinity, // Bible text never changes
     retry: false,
   })
 }
@@ -62,8 +62,8 @@ export function useDeleteMemoryVerse() {
 }
 
 /**
- * Ghi kết quả ôn. KHÔNG invalidate hàng đợi `due` giữa phiên (phiên tự tiến câu);
- * chỉ làm tươi danh sách + số đến hạn.
+ * Records a review result. Does NOT invalidate the in-session `due` queue (the
+ * session advances itself); only refreshes the list and due count.
  */
 export function useReviewMemoryVerse() {
   const qc = useQueryClient()

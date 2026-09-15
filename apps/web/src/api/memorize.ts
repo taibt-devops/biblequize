@@ -1,4 +1,4 @@
-// Học Thuộc câu gốc — API adapter (SPEC_USER §5.1.1, §27.20).
+// Memorize mode ("Hoc Thuoc") — API adapter (SPEC_USER §5.1.1, §27.20).
 
 import { api } from './client'
 

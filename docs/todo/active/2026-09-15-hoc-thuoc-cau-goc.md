@@ -167,7 +167,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-11 Utils thuần `src/utils/memorize/*`
-  - Status: [ ] TODO · Files: `tokenize.ts`, `exercises.ts` (chunk/cloze/grade/exerciseForLevel) · Test: `src/utils/memorize/__tests__/*.test.ts`
+  - Status: [x] DONE · Files: `src/utils/memorize/exercises.ts` (gộp tokenize/normalize/chunk/shuffleSeeded/pickClozeIndices/clozeDistractors/grading/exerciseForLevel/seedFor) · Test: `exercises.test.ts` 17/17. FE Vitest: 1433 pass. `validate:i18n` hardcoded 1145 = trước khi thêm code FE (comment code FE viết tiếng Anh — validator đếm cả comment có dấu)
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-12 E2E W-M16: TC spec + Playwright (fail trước)
