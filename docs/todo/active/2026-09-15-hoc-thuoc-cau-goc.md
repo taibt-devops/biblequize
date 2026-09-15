@@ -159,7 +159,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-9 `MemoryVerseController`
-  - Status: [ ] TODO · Files: `api/MemoryVerseController.java` · Test: `MemoryVerseControllerTest` (201/400/404/409/204, unauth 401)
+  - Status: [x] DONE · Files: `api/MemoryVerseController.java`; sửa V71 cột số `TINYINT/SMALLINT` → `INT` cho khớp entity (Hibernate validate bắt được) · Test: `MemoryVerseControllerTest` 8/8 (list/due/due-count, 201, 409/400 map lỗi, thiếu field, 204/404, review, chưa đăng nhập). **Boot thật** trên MySQL 8 + Redis container tạm: Flyway V1→V71 sạch, repository JPQL hợp lệ; smoke curl đủ luồng (passage, add 201, trùng 409, thiếu chữ 400, list/dueCount, review đạt → L1 +1 ngày, due rỗng, delete 204→404, không token 401), tiếng Việt UTF-8 đúng. BE Tầng 3: 949 run, chỉ 3 fail có sẵn
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-10 FE api adapter + query keys + hooks
@@ -213,6 +213,12 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
 **Thứ tự khi HT-5 còn BLOCKED:** làm HT-1 → HT-4, HT-6 → HT-21 với fixture; HT-5 chèn vào khi có file. Không deploy prod Học Thuộc trước khi HT-5 xong.
 
 ---
+
+## 3b. Phát hiện ngoài phạm vi (không sửa — module khác, báo user)
+
+- `StreakServiceTest` 3 test fail sẵn trên `main` (baseline 895/3 fail trước khi đổi code).
+- **Flyway drift**: cột `user_daily_progress.asked_question_ids` được entity dùng nhưng KHÔNG có trong migration nào → app boot trên DB trống với `ddl-auto: none` (cấu hình prod) chết ở startup runner đọc UDP. Dev/prod hiện sống nhờ DB cũ / `ddl-auto: update`. Cần task riêng (migration bổ sung).
+- `ddl-auto: validate` không dùng được cho cả codebase (vd `room_answers.answer_index` TINYINT vs `int`).
 
 ## 4. Đợt sau (chưa thành task)
 
