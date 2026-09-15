@@ -143,7 +143,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - **Spec strategy**: [x] (c) · Checklist: impl · Tầng 1+2+3 · commit
 
 - HT-5 Chuyển đổi dữ liệu BTTHĐ 2011 → seed JSON + import dev + verify
-  - Status: [!] BLOCKED — chờ user cung cấp file toàn văn + định dạng · Files: script `scripts/bible/convert_btthd2011.*`, `seed/bible/btthd2011/*.json` · Test: đếm câu/sách vs `BibleStructure`, soát ngẫu nhiên 20 câu với bản in
+  - Status: [~] SUPERSEDED 2026-09-15 bởi `docs/todo/active/2026-09-15-memorize-btt1926.md` BT-3 (tạm dùng BTT 1926 public domain — DECISIONS 2026-09-15); BTTHĐ 2011 chuyển sang BL-1 · Files: script `scripts/bible/convert_btthd2011.*`, `seed/bible/btthd2011/*.json` · Test: đếm câu/sách vs `BibleStructure`, soát ngẫu nhiên 20 câu với bản in
   - **Spec strategy**: [x] (c) · Checklist: convert · verify · commit
 
 - HT-6 `BiblePassageService` + `GET /api/bible/passage`

@@ -9,8 +9,8 @@
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
-| 2026-09-15 | Học Thuộc: nạp Bản Truyền Thống 1926 (public domain, eBible vie1934) + bật tính năng trên prod (BT-1..5) | IN PROGRESS | [detail](docs/todo/active/2026-09-15-memorize-btt1926.md) |
-| 2026-09-15 | Học Thuộc câu gốc — mode trong Luyện Tập, Đợt 1: toàn văn BTTHĐ 2011 + danh sách + ôn giãn cách + sắp xếp/điền khuyết + thẻ Home (HT-0..23; code đã lên prod, lối vào ẩn cho tới khi import chữ — HT-5 chờ file dữ liệu) | IN PROGRESS | [detail](docs/todo/active/2026-09-15-hoc-thuoc-cau-goc.md) |
+| 2026-09-15 | Học Thuộc: nạp Bản Truyền Thống 1926 (public domain, eBible vie1934) + bật tính năng trên prod (BT-1..5) | DONE | [detail](docs/todo/active/2026-09-15-memorize-btt1926.md) |
+| 2026-09-15 | Học Thuộc câu gốc — mode trong Luyện Tập, Đợt 1: toàn văn BTTHĐ 2011 + danh sách + ôn giãn cách + sắp xếp/điền khuyết + thẻ Home (HT-0..23; LIVE trên prod với BTT 1926 — Đợt 2/3 chưa làm) | DONE (Đợt 1) | [detail](docs/todo/active/2026-09-15-hoc-thuoc-cau-goc.md) |
 | 2026-09-15 | Favicon cache-busting: vite plugin gắn `?v=<hash>` vào favicon/manifest href (FCB-1) | DONE | [detail](docs/todo/active/2026-09-15-favicon-cache-busting.md) |
 | 2026-07-11 | Soạn câu hỏi 5 sách Thơ Ca (Gióp/Thi Thiên/Châm Ngôn 100, Truyền Đạo 60, Nhã Ca 40) — fan-out 40 agent (PB-1..4) | DONE | [detail](docs/todo/active/2026-07-11-poetry-books-questions.md) |
 | 2026-07-11 | PWA đầy đủ: thêm Service Worker (vite-plugin-pwa) — installable + offline cache, guard bản Capacitor (PWA-1..2) | IN PROGRESS | [detail](docs/todo/active/2026-07-11-pwa-service-worker.md) |
