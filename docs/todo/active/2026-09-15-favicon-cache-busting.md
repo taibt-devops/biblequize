@@ -8,3 +8,9 @@
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
   - Checklist: impl · Tầng 1+2+3 pass · commit · deploy FE
+- FCB-2 Service worker: bỏ precache HTML + navigateFallback → NetworkFirst cho navigation (loại /api, /oauth2)
+  - Root cause: SW (PWA-1) phục vụ `index.html` precache cũ → lần mở đầu sau deploy vẫn HTML cũ (favicon cũ, UI cũ); SW mới chỉ activate sau khi trang đã render.
+  - Status: [x] DONE · Files: `apps/web/vite.config.ts` · Test: Playwright vs `vite preview` — SW-controlled page nhận HTML mới sau 1 reload; build → `dist/sw.js` không còn precache html + có NetworkFirst route
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
+  - Checklist: impl · Tầng 3 pass · commit · deploy FE

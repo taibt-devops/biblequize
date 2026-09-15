@@ -40,10 +40,26 @@ export default defineConfig(({ mode }) => {
               // index.html) as the single source of truth — don't generate one.
               manifest: false,
               workbox: {
-                globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
-                // SPA fallback for client-routed paths; never shadow the API.
-                navigateFallback: '/index.html',
-                navigateFallbackDenylist: [/^\/api/],
+                // No HTML in the precache: a precached index.html is served by the
+                // OLD worker on the first visit after a deploy (stale UI/favicon
+                // until a second reload). Pages go network-first instead, falling
+                // back to the last cached copy only when offline / network stalls.
+                globPatterns: ['**/*.{js,css,ico,png,svg,woff2}'],
+                // Must be explicit: the plugin defaults this to 'index.html', whose
+                // NavigationRoute would shadow the network-first route below.
+                navigateFallback: null,
+                runtimeCaching: [
+                  {
+                    urlPattern: ({ request, url }) =>
+                      request.mode === 'navigate' && !/^\/(api|oauth2)\//.test(url.pathname),
+                    handler: 'NetworkFirst',
+                    options: {
+                      cacheName: 'bq-pages',
+                      networkTimeoutSeconds: 4,
+                      expiration: { maxEntries: 30 },
+                    },
+                  },
+                ],
                 cleanupOutdatedCaches: true,
                 // A couple of vendor chunks exceed the 2 MiB default.
                 maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
