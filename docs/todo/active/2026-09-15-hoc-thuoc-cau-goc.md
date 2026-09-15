@@ -124,7 +124,7 @@ Chấm điểm bài tập làm ở **FE** (pure utils); BE chỉ nhận `passed`
   - Checklist: plan · decision log · index row · commit
 
 - HT-1 SPEC_USER: §5.1.1 Học Thuộc + §27.20 endpoints
-  - Status: [ ] TODO · Files: `docs/spec/SPEC_USER_v3.1.md` · Test: `bash tools/spec-audit/audit.sh`
+  - Status: [x] DONE · Files: `docs/spec/SPEC_USER_v3.1.md` · Test: `bash tools/spec-audit/audit.sh` → broken 102 = trước khi sửa (không NEW)
   - **Spec impact**: [x] SPEC_USER §5.1.1, §27.20
   - **Spec strategy**: [x] (a) update inline
   - Checklist: spec theo §2 file này · audit no NEW broken · commit `docs: update SPEC_USER §5.1.1 Học Thuộc`

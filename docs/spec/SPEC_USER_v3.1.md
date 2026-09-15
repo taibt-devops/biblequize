@@ -285,6 +285,42 @@ Auto-regen theo bảng 3.3.
 
 Cấu hình trong UI: chọn book / quiz set / difficulty / count / language / bật/tắt explanation.
 
+#### 5.1.1 Học Thuộc câu gốc (mode trong Luyện Tập)
+
+> **Status:** Đợt 1 đang triển khai trên nhánh `feat/hoc-thuoc-cau-goc` — spec này merge cùng code. **Decision:** [DECISIONS.md](../../DECISIONS.md) 2026-09-15. **Task:** `docs/todo/active/2026-09-15-hoc-thuoc-cau-goc.md`.
+
+Người dùng tự chọn câu/đoạn Kinh Thánh bất kỳ (BTTHĐ 2011, C4) vào **danh sách của tôi**, rồi ôn theo **lịch giãn cách**; mỗi lần ôn là một bài tập nhỏ có độ khó tăng theo mức thuộc.
+
+| Field | Value |
+|---|---|
+| i18n namespace | `memorize.*` — VN "Học Thuộc", EN "Memorize" |
+| Routes | `/practice/memorize` (danh sách) · `/practice/memorize/add` (chọn câu) · `/practice/memorize/session` (phiên ôn) |
+| Auth | **bắt buộc** (guest thấy thẻ lối vào kèm nhắc đăng nhập) |
+| Energy / XP / Leaderboard / Streak | **KHÔNG** — không tốn năng lượng, không cộng điểm, không xếp hạng |
+| Bản dịch | `BTTHD2011`; toàn văn lưu bảng `bible_verses` (import gated `BIBLE_IMPORT_ENABLED`) |
+| Đơn vị học | 1 câu hoặc 1 đoạn liền nhau **tối đa 5 câu** (`verseEnd - verseStart ≤ 4`); trùng đoạn → 409 |
+| Lối vào | Thẻ "Học Thuộc câu gốc" trên `/practice` · thẻ "Câu gốc cần ôn hôm nay" trên Home, **chỉ hiện khi `dueCount > 0`** |
+
+**Mức thuộc & lịch ôn** (`mastery_level` 0–5; câu mới thêm đến hạn ngay):
+
+| Level | Bài tập (Đợt 1) | Đạt → ôn lại sau |
+|---|---|---|
+| 0 | Sắp xếp cụm lớn (3–4 chữ/cụm) | 1 ngày |
+| 1 | Sắp xếp cụm nhỏ (2 chữ/cụm) | 2 ngày |
+| 2 | Điền từ khuyết 25% | 4 ngày |
+| 3 | Điền từ khuyết 50% | 7 ngày |
+| 4 | Điền từ khuyết 75% | 14 ngày |
+| 5 | Điền từ khuyết 100% | 30 ngày (giữ L5) |
+
+- **Đạt** ở level L → `nextReviewAt = now + khoảng của L`, `level = min(L+1, 5)`.
+- **Chưa đạt** → `level = max(L-1, 0)`; `nextReviewAt = now + 10 phút` nếu level mới = 0, ngược lại `now + 1 ngày`.
+- Đạt: sắp xếp — sai ≤ 1 lần; điền khuyết — số lần sai ≤ max(1, 10% số ô). Chấm ở client; server chỉ nhận `passed` (không có phần thưởng → không cần chống khai khống).
+- Phiên ôn: tối đa **10** câu đến hạn, cũ nhất trước. Mỗi câu: màn ngữ cảnh (đoạn ±2 câu, câu gốc tô đậm) → bài tập → hiện câu đầy đủ + đạt/chưa. Cuối phiên: tóm tắt số câu đã ôn / lên cấp, không điểm.
+- Bài tập dùng **chạm-để-đặt** (không kéo thả). Điền khuyết: ngân hàng chữ = chữ bị ẩn + 2 chữ nhiễu từ đoạn xung quanh.
+- Danh sách trống → gợi ý vài câu phổ biến để thêm nhanh (nội dung lấy từ API, không hardcode).
+
+**Đợt sau (chưa shipped):** gõ chữ cái đầu (thay L4–5), nhớ địa chỉ câu, tìm theo từ khoá, quiz cùng chương, giải thích AI (nhãn "Do AI tóm tắt" + báo sai).
+
 ### 5.2 Đấu Hạng (Ranked)
 
 > **Source:** `apps/web/src/pages/Ranked.tsx`; `RankedSessionService.java`; controller `/api/ranked`.
@@ -1295,6 +1331,17 @@ Verified `QuestionSetController.java:22-33`:
 | POST | `/api/share-cards` |
 | GET | `/api/share-cards/{id}` |
 | GET | `/api/health` |
+
+### 27.20 Bible text & Học Thuộc (§5.1.1)
+| Method | Path | Notes |
+|---|---|---|
+| GET | `/api/bible/passage?book&chapter&from&to` | `{version, book, chapter, verses:[{verse,text}]}`; `to - from ≤ 29`; 404 nếu không có |
+| GET | `/api/me/memory-verses` | `{items:[{id, book, chapter, verseStart, verseEnd, text, masteryLevel, nextReviewAt, due}], dueCount}` |
+| GET | `/api/me/memory-verses/due` | Tối đa 10 item đến hạn (cùng shape) |
+| GET | `/api/me/memory-verses/due-count` | `{dueCount}` |
+| POST | `/api/me/memory-verses` | Body `{book, chapter, verseStart, verseEnd}` → 201 item · 400 range/không tồn tại · 409 trùng |
+| DELETE | `/api/me/memory-verses/{id}` | 204 · 404 nếu không phải của mình |
+| POST | `/api/me/memory-verses/{id}/review` | Body `{exerciseType, passed}` → item đã cập nhật |
 
 ---
 
