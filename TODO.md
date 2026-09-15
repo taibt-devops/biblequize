@@ -3,12 +3,13 @@
 > Task tracker. Active TODOs ở dưới. DONE/SUPERSEDED đã chuyển sang [`docs/todo/archive/`](docs/todo/archive/).
 > Format mỗi task file theo template CLAUDE.md §Quy trình quản lý Task.
 
-## Active (27)
+## Active (28)
 
 > Dọn 2026-06-22: 23 task ghi "TODO/DONE" nhưng đã verify hoàn thành → archive (xem git log + Archive bên dưới). Bảng này giờ chỉ còn việc THỰC SỰ đang mở.
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
+| 2026-09-15 | Học Thuộc: nạp Bản Truyền Thống 1926 (public domain, eBible vie1934) + bật tính năng trên prod (BT-1..5) | IN PROGRESS | [detail](docs/todo/active/2026-09-15-memorize-btt1926.md) |
 | 2026-09-15 | Học Thuộc câu gốc — mode trong Luyện Tập, Đợt 1: toàn văn BTTHĐ 2011 + danh sách + ôn giãn cách + sắp xếp/điền khuyết + thẻ Home (HT-0..23; code đã lên prod, lối vào ẩn cho tới khi import chữ — HT-5 chờ file dữ liệu) | IN PROGRESS | [detail](docs/todo/active/2026-09-15-hoc-thuoc-cau-goc.md) |
 | 2026-09-15 | Favicon cache-busting: vite plugin gắn `?v=<hash>` vào favicon/manifest href (FCB-1) | DONE | [detail](docs/todo/active/2026-09-15-favicon-cache-busting.md) |
 | 2026-07-11 | Soạn câu hỏi 5 sách Thơ Ca (Gióp/Thi Thiên/Châm Ngôn 100, Truyền Đạo 60, Nhã Ca 40) — fan-out 40 agent (PB-1..4) | DONE | [detail](docs/todo/active/2026-07-11-poetry-books-questions.md) |

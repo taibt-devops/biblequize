@@ -289,7 +289,7 @@ Cấu hình trong UI: chọn book / quiz set / difficulty / count / language / b
 
 > **Status:** Đợt 1 đang triển khai trên nhánh `feat/hoc-thuoc-cau-goc` — spec này merge cùng code. **Decision:** [DECISIONS.md](../../DECISIONS.md) 2026-09-15. **Task:** `docs/todo/active/2026-09-15-hoc-thuoc-cau-goc.md`.
 
-Người dùng tự chọn câu/đoạn Kinh Thánh bất kỳ (BTTHĐ 2011, C4) vào **danh sách của tôi**, rồi ôn theo **lịch giãn cách**; mỗi lần ôn là một bài tập nhỏ có độ khó tăng theo mức thuộc.
+Người dùng tự chọn câu/đoạn Kinh Thánh bất kỳ (hiện dùng BTT 1926, đích BTTHĐ 2011 — C4/BL-1) vào **danh sách của tôi**, rồi ôn theo **lịch giãn cách**; mỗi lần ôn là một bài tập nhỏ có độ khó tăng theo mức thuộc.
 
 | Field | Value |
 |---|---|
@@ -297,7 +297,7 @@ Người dùng tự chọn câu/đoạn Kinh Thánh bất kỳ (BTTHĐ 2011, C4)
 | Routes | `/practice/memorize` (danh sách) · `/practice/memorize/add` (chọn câu) · `/practice/memorize/session` (phiên ôn) |
 | Auth | **bắt buộc** (guest thấy thẻ lối vào kèm nhắc đăng nhập) |
 | Energy / XP / Leaderboard / Streak | **KHÔNG** — không tốn năng lượng, không cộng điểm, không xếp hạng |
-| Bản dịch | `BTTHD2011`; toàn văn lưu bảng `bible_verses` (import gated `BIBLE_IMPORT_ENABLED`) |
+| Bản dịch | **Tạm thời `BTT1926`** (Bản Truyền Thống 1926, nguồn eBible.org `vie1934` — Public Domain; DECISIONS 2026-09-15). Đích C4 vẫn là BTTHĐ 2011 → BL-1. Toàn văn lưu bảng `bible_verses` (import gated `BIBLE_IMPORT_ENABLED`) |
 | Đơn vị học | 1 câu hoặc 1 đoạn liền nhau **tối đa 5 câu** (`verseEnd - verseStart ≤ 4`); trùng đoạn → 409 |
 | Lối vào | Thẻ "Học Thuộc câu gốc" trên `/practice` · thẻ "Câu gốc cần ôn hôm nay" trên Home, **chỉ hiện khi `dueCount > 0`** |
 | Cổng hiển thị | Thẻ trên `/practice` **chỉ hiện khi đã import chữ** (`GET /api/public/bible/status` → `available: true`) — deploy trước dữ liệu thì người dùng không thấy tính năng rỗng; import xong tự hiện, không cần deploy lại |

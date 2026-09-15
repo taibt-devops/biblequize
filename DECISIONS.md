@@ -2,6 +2,16 @@
 
 ---
 
+## 2026-09-15 — Học Thuộc tạm dùng Bản Truyền Thống 1926 (sửa D2)
+
+- **Bối cảnh:** code Học Thuộc đã lên prod nhưng lối vào bị ẩn vì chưa có văn bản; chưa có file BTTHĐ 2011.
+- **Quyết định (user chốt):** Học Thuộc dùng **BTT 1926** (bản dịch Cadman — Tân Ước 1923, Cựu Ước 1925, trọn bộ 1926) làm bản chạy thật **tạm thời**; BTTHĐ 2011 (C4) vẫn là đích, chuyển khi có file (BL-1). Sửa D2 của quyết định "vừa chơi vừa học" bên dưới.
+- **Nguồn:** eBible.org `vie1934` (USFM) — ghi rõ **Public Domain** (Tân Ước hết bản quyền 01/01/2019, Cựu Ước 01/01/2021). Không dùng `thiagobodruk/bible` (giấy phép CC BY-NC, không rõ phiên bản).
+- **Hệ quả đã chấp nhận:** người dùng thuộc theo văn phong 1926; khi chuyển 2011, câu đã thuộc sẽ khác chữ → cần kế hoạch chuyển đổi danh sách (`user_memory_verses.version`) lúc làm BL-1.
+- **Implementation:** task `docs/todo/active/2026-09-15-memorize-btt1926.md` (BT-1..5).
+
+---
+
 ## 2026-09-15 — Định hướng "vừa chơi vừa học": mode Học Thuộc câu gốc trong Luyện Tập
 
 - **Bối cảnh:** đo prod 2026-09-15 — người mới bỏ app sau trận Đấu Hạng đầu tiên, không tương quan độ chính xác (không phải do câu khó). Phản hồi người dùng: muốn app giúp **học và ghi nhớ Kinh Thánh tốt hơn**. Chưa chỉnh độ khó Đấu Hạng (dữ liệu quá ít để đo).
