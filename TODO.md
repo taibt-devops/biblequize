@@ -9,7 +9,6 @@
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
-| 2026-09-15 | Flyway drift: thêm migration idempotent cho cột `user_daily_progress.asked_question_ids` (FWD-1..2) | DONE | [detail](docs/todo/active/2026-09-15-flyway-udp-asked-question-ids.md) |
 | 2026-09-15 | Favicon cache-busting: vite plugin gắn `?v=<hash>` vào favicon/manifest href (FCB-1) | DONE | [detail](docs/todo/active/2026-09-15-favicon-cache-busting.md) |
 | 2026-07-11 | Soạn câu hỏi 5 sách Thơ Ca (Gióp/Thi Thiên/Châm Ngôn 100, Truyền Đạo 60, Nhã Ca 40) — fan-out 40 agent (PB-1..4) | DONE | [detail](docs/todo/active/2026-07-11-poetry-books-questions.md) |
 | 2026-07-11 | PWA đầy đủ: thêm Service Worker (vite-plugin-pwa) — installable + offline cache, guard bản Capacitor (PWA-1..2) | IN PROGRESS | [detail](docs/todo/active/2026-07-11-pwa-service-worker.md) |
@@ -47,13 +46,15 @@
 
 > **Chưa reconcile:** ~50 row cũ đã đánh DONE/SUPERSEDED + ~15 file trong `active/` không có row (vd `ks-w0..w10`, `profile-sprint-5/6/7`, `tablet-responsive`, `home-game-redesign`…) — cần 1 đợt audit riêng để verify rồi archive (xem ghi chú cuối phiên 2026-06-22).
 
-## Archive (98)
+## Archive (99)
 
 > 98 task DONE/SUPERSEDED đã chuyển sang [`docs/todo/archive/`](docs/todo/archive/) — duyệt folder theo ngày để tra cứu.
 > **Batch 2026-06-22:** archive thêm 23 task đã verify hoàn thành (TVT tie-break, 3 MP test suites, MP page i18n, group announcement BL-24, group page A/B, daily scoring rework, ranked play fixes, quiz screen redesign sprint-1, home hide daily card, questions content-hash dedup, seed distractor Haladyna, AI error_type, AI CSS polish, liturgical coverage sprint, practice book-select, guest practice, favicon, rebrand forbible.org, avatar preset Bible chars, profile sprint-4, fix rank score-delta flicker SDF-1).
 
 <details>
 <summary>Xem inline list (tuỳ chọn)</summary>
+
+- 2026-09-15 — Flyway drift: migration V71 idempotent tạo cột `user_daily_progress.asked_question_ids` (FWD-1..2) · DONE · [detail](docs/todo/archive/2026-09-15-flyway-udp-asked-question-ids.md)
 
 - 2026-05-18..20 — **Mobile RN app rewrite (S0–S6 + ranked/daily/quiz fixes, 19 file)** · SUPERSEDED 2026-06-17 — `apps/mobile` đã gỡ để viết lại bản mới · [folder](docs/todo/archive/)
 
