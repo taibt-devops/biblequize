@@ -9,7 +9,7 @@
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
-| 2026-09-15 | Flyway drift: thêm migration idempotent cho cột `user_daily_progress.asked_question_ids` (FWD-1..2) | IN PROGRESS | [detail](docs/todo/active/2026-09-15-flyway-udp-asked-question-ids.md) |
+| 2026-09-15 | Flyway drift: thêm migration idempotent cho cột `user_daily_progress.asked_question_ids` (FWD-1..2) | DONE | [detail](docs/todo/active/2026-09-15-flyway-udp-asked-question-ids.md) |
 | 2026-09-15 | Favicon cache-busting: vite plugin gắn `?v=<hash>` vào favicon/manifest href (FCB-1) | DONE | [detail](docs/todo/active/2026-09-15-favicon-cache-busting.md) |
 | 2026-07-11 | Soạn câu hỏi 5 sách Thơ Ca (Gióp/Thi Thiên/Châm Ngôn 100, Truyền Đạo 60, Nhã Ca 40) — fan-out 40 agent (PB-1..4) | DONE | [detail](docs/todo/active/2026-07-11-poetry-books-questions.md) |
 | 2026-07-11 | PWA đầy đủ: thêm Service Worker (vite-plugin-pwa) — installable + offline cache, guard bản Capacitor (PWA-1..2) | IN PROGRESS | [detail](docs/todo/active/2026-07-11-pwa-service-worker.md) |

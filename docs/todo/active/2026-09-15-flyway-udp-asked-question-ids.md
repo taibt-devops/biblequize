@@ -19,6 +19,6 @@
   - Checklist: impl · verify 2 kịch bản DB · Tầng 3 BE · commit
 
 - FWD-2 Nhánh `feat/hoc-thuoc-cau-goc`: đổi migration Học Thuộc V71 → V72
-  - Status: [ ] TODO · Files: (nhánh kia) `V72__bible_verses_and_memory_verses.sql`, `BibleVerseTest` · Test: `BibleVerseTest`
+  - Status: [x] DONE (commit `322b6db1` trên `feat/hoc-thuoc-cau-goc`) · Files: (nhánh kia) `V72__bible_verses_and_memory_verses.sql`, `BibleVerseTest` · Test: `BibleVerseTest` 4/4, BE Tầng 3 nhánh kia 949 run / 3 fail có sẵn. Kiểm bản merge thử 2 nhánh trên DB trống `ddl-auto: none`: Flyway V70 → V71 → V72 success, app chạy, 0 lỗi Unknown column. Merge thật sẽ conflict nhẹ ở `TODO.md` (2 nhánh cùng thêm row)
   - **Spec strategy**: [x] (c) [no-spec-impact]
   - Checklist: rename · test · commit
