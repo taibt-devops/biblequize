@@ -1,6 +1,7 @@
 import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
+import assetVersion from './vite-plugins/assetVersion'
 
 export default defineConfig(({ mode }) => {
   // Load env file based on `mode` in the current working directory.
@@ -22,6 +23,8 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       react(),
+      // `?v=<hash>` on favicon/manifest links so icon changes reach users.
+      assetVersion(),
       // Installable PWA + offline precache. Web build only (see isCapacitor).
       ...(isCapacitor
         ? []
