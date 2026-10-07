@@ -87,12 +87,12 @@ function QuestRow({ label, value, target }: { label: string; value: number; targ
   )
 }
 
-/* ── Mode card (Khung Sáng jewel cards) ── */
+/* ── Mode card: storybook sticker card with a painted emblem (LKD-16) ── */
 type ModeVariant = 'study' | 'ranked' | 'rooms'
-const MODE_STYLE: Record<ModeVariant, { edge: string; shadow: string; shadowHover: string; accent: string; tag: string }> = {
-  study: { edge: 'from-bq-sapphire to-[#6E86F0]', shadow: 'shadow-bq-sap', shadowHover: 'hover:shadow-bq-sap-h', accent: 'text-bq-sapphire', tag: 'HỌC MỘT MÌNH' },
-  ranked: { edge: 'from-bq-ruby to-[#FF7A5A]', shadow: 'shadow-bq-rub', shadowHover: 'hover:shadow-bq-rub-h', accent: 'text-bq-ruby', tag: 'THI ĐẤU' },
-  rooms: { edge: 'from-bq-emerald to-[#46C89A]', shadow: 'shadow-bq-eme', shadowHover: 'hover:shadow-bq-eme-h', accent: 'text-bq-emerald', tag: 'CÙNG NHAU' },
+const MODE_STYLE: Record<ModeVariant, { icon: string; accent: string; tag: string }> = {
+  study: { icon: '/images/lk/scroll.webp', accent: 'text-bq-sapphire', tag: 'HỌC MỘT MÌNH' },
+  ranked: { icon: '/images/lk/sword.webp', accent: 'text-bq-ruby', tag: 'THI ĐẤU' },
+  rooms: { icon: '/images/lk/heart.webp', accent: 'text-bq-emerald', tag: 'CÙNG NHAU' },
 }
 function ModeCard({ variant, title, desc, inner, cta, onClick }: {
   variant: ModeVariant; title: string; desc: string; inner: React.ReactNode; cta: string; onClick: () => void
@@ -100,13 +100,13 @@ function ModeCard({ variant, title, desc, inner, cta, onClick }: {
   const m = MODE_STYLE[variant]
   return (
     <button type="button" onClick={onClick} data-testid={`home-mode-${variant}`}
-      className={`group relative text-left bg-bq-white border border-bq-hair p-6 min-h-[240px] flex flex-col gap-2 overflow-hidden bq-arch-card transition-transform duration-200 hover:-translate-y-1.5 ${m.shadow} ${m.shadowHover}`}>
-      <span className={`absolute inset-x-0 top-0 h-[5px] bg-gradient-to-r ${m.edge}`} />
-      <span className={`text-eyebrow font-extrabold tracking-[0.18em] mt-1 ${m.accent}`}>{m.tag}</span>
-      <h4 className="font-display text-[23px] font-extrabold tracking-tight text-bq-ink">{title}</h4>
-      <p className="text-[12.5px] text-bq-ink2 leading-relaxed">{desc}</p>
-      <div className="mt-auto border border-bq-hair bg-bq-paper rounded-2xl px-3.5 py-3 text-xs text-bq-ink2">{inner}</div>
-      <div className={`flex justify-between items-center mt-3.5 text-sm font-extrabold ${m.accent}`}>
+      className="group relative text-left bg-bq-white border-[3px] border-bq-ink rounded-bq p-6 min-h-[240px] flex flex-col gap-2 overflow-hidden shadow-bq-card transition-transform duration-150 hover:-translate-y-1 hover:shadow-bq-card-h active:translate-y-0.5">
+      <img src={m.icon} alt="" aria-hidden className="absolute right-4 top-4 h-14 w-14 object-contain" />
+      <span className={`text-[13px] font-extrabold tracking-[0.06em] mt-1 ${m.accent}`}>{m.tag}</span>
+      <h4 className="font-display text-[26px] font-extrabold tracking-tight text-bq-ink pr-14">{title}</h4>
+      <p className="text-[14px] text-bq-ink2 leading-relaxed">{desc}</p>
+      <div className="mt-auto border-2 border-bq-hair bg-bq-paper rounded-2xl px-3.5 py-3 text-[13px] text-bq-ink2">{inner}</div>
+      <div className={`flex justify-between items-center mt-3.5 text-[16px] font-extrabold ${m.accent}`}>
         <span>{cta}</span><span aria-hidden className="transition-transform group-hover:translate-x-1 group-active:translate-x-1">→</span>
       </div>
     </button>
@@ -114,13 +114,13 @@ function ModeCard({ variant, title, desc, inner, cta, onClick }: {
 }
 
 /* ── Weekly leaderboard card (Top điểm tuần) ── */
-const LB_AVATAR = ['linear-gradient(140deg,#2D46C8,#5168E0)', '#F59E0B', '#0E8A6B', '#E0354B', '#6E86F0']
+const LB_AVATAR = ['#E8826A', '#6AB8E8', '#E8C76A', '#7AB87A', '#C68A4E']
 interface LbEntry { userId?: string; name?: string; points?: number; rank?: number }
 function LeaderboardRow({ rank, name, points, me }: { rank: number; name: string; points: number; me: boolean }) {
   return (
-    <div className={`flex items-center gap-2.5 px-2.5 py-2 rounded-xl text-[13px] ${me ? 'bg-[linear-gradient(90deg,rgba(245,158,11,.13),transparent)] outline outline-[1.5px] outline-bq-amber/40' : ''}`}>
+    <div className={`flex items-center gap-2.5 px-2.5 py-2 rounded-xl text-[15px] ${me ? 'bg-bq-amber/25 outline outline-2 outline-bq-ink' : ''}`}>
       <span className={`font-display font-extrabold w-4 tabular-nums ${me ? 'text-bq-amberd' : 'text-bq-ink3'}`}>{rank}</span>
-      <span className="w-[26px] h-[26px] rounded-[9px] grid place-items-center text-white text-[11px] font-extrabold shrink-0" style={{ background: LB_AVATAR[(rank - 1) % LB_AVATAR.length] }}>
+      <span className="w-[30px] h-[30px] rounded-full border-2 border-bq-ink grid place-items-center text-bq-ink text-[13px] font-extrabold shrink-0" style={{ background: LB_AVATAR[(rank - 1) % LB_AVATAR.length] }}>
         {(name || '?').charAt(0).toUpperCase()}
       </span>
       <span className={`flex-1 truncate ${me ? 'text-bq-ink font-bold' : 'text-bq-ink2 font-semibold'}`}>{name || '—'}</span>
@@ -134,9 +134,9 @@ function LeaderboardCard({ entries, myUserId, me, seasonLabel, lowData }: {
   const { t } = useTranslation()
   const inList = !!myUserId && entries.some(e => e.userId === myUserId)
   return (
-    <div data-testid="home-weekly-leaderboard" className="bg-bq-white border border-bq-hair rounded-[20px] px-6 py-5 self-start">
+    <div data-testid="home-weekly-leaderboard" className="bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card px-6 py-5 self-start">
       <div className="flex items-baseline justify-between mb-2.5">
-        <h4 className="font-display text-[15px] font-bold text-bq-ink">{t('home.lb.title', 'Top điểm tuần')}</h4>
+        <h4 className="font-display text-[20px] font-extrabold text-bq-ink">{t('home.lb.title', 'Top điểm tuần')}</h4>
         <Link to="/leaderboard" className="text-[11.5px] font-bold text-bq-ink2 hover:text-bq-ink">{t('home.lb.full', 'Bảng đầy đủ')} →</Link>
       </div>
       {/* LBF-11: below SEED_THRESHOLD players, show the encouraging message
@@ -295,7 +295,7 @@ export default function Home() {
       />
 
       {isNewUser && (
-        <div data-testid="home-start-here" className="rounded-2xl border border-bq-amber/30 bg-bq-amber/10 border-l-[3px] border-l-bq-amber px-4 py-3.5 mt-4 mb-1 flex items-center gap-3 max-w-[740px] mx-auto">
+        <div data-testid="home-start-here" className="rounded-bq border-[3px] border-bq-ink bg-bq-leaf px-4 py-3.5 mt-6 mb-1 flex items-center gap-3 max-w-[740px] mx-auto">
           <span aria-hidden className="material-symbols-outlined text-bq-amberd text-[26px] shrink-0">arrow_downward</span>
           <div className="min-w-0">
             <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-bq-amberd mb-0.5">{t('home.emptyState.label')}</div>
@@ -312,27 +312,26 @@ export default function Home() {
 
       {/* ── DAILY ── */}
       <div className="flex items-center gap-3 mt-11 mb-4">
-        <span className="font-display text-[12px] font-extrabold text-white w-[26px] h-[26px] rounded-lg grid place-items-center bg-bq-amber">1</span>
-        <h2 className="font-display text-[22px] font-bold tracking-[-0.015em] text-bq-ink">{t('home.daily.section', 'Thử thách hôm nay')}</h2>
+        <h2 className="font-display text-[26px] font-extrabold tracking-[-0.015em] text-bq-ink">{t('home.daily.section', 'Thử thách hôm nay')}</h2>
       </div>
-      <section data-testid="home-daily" className="relative bg-bq-white border border-bq-hair rounded-[22px] p-7 md:p-8 overflow-hidden shadow-bq-amb">
-        <span aria-hidden className="absolute top-0 inset-x-0 h-[5px] bg-bq-spectrum" />
+      <section data-testid="home-daily" className="relative bg-bq-white border-[3px] border-bq-ink rounded-bq p-7 md:p-8 overflow-hidden shadow-bq-card">
         <div className="flex gap-7 items-center flex-wrap">
+          <img src="/images/lk/sword.webp" alt="" aria-hidden className="hidden sm:block h-24 -rotate-[24deg]" />
           <div className="flex-1 min-w-[280px]">
-            <span className="inline-flex items-center gap-1.5 text-[10.5px] font-extrabold tracking-[0.14em] text-bq-amberd bg-bq-amber/10 px-3 py-1.5 rounded-full mb-3.5 uppercase">
-              <span className="w-[7px] h-[7px] rounded-full bg-bq-amber" /> {t('home.daily.priority', 'Ưu tiên hôm nay')}
+            <span className="inline-flex items-center gap-1.5 text-[15px] font-bold text-bq-amberd mb-2">
+              {t('home.daily.priority', 'Ưu tiên hôm nay')}
             </span>
             <h3 className="font-display text-[clamp(24px,3vw,31px)] font-extrabold tracking-[-0.02em] leading-[1.12] text-bq-ink">
               {dailyDone ? t('home.daily.doneTitle', 'Bạn đã hoàn thành hôm nay') : <>{t('home.daily.title', 'Bắt đầu ngày mới với')} <span className="text-bq-amberd">{t('home.daily.titleAccent', 'Lời Chúa')}</span></>}
             </h3>
             <div className="flex gap-2 mt-3.5 flex-wrap">
               {dailyDone ? (
-                <span className="text-[12px] font-semibold text-bq-ink2 border border-bq-hair bg-bq-paper px-3 py-1.5 rounded-full">✅ {dailyCorrect}/{dailyTotal} đúng</span>
+                <span className="text-[14px] font-bold text-bq-ink border-2 border-bq-ink bg-bq-paper px-3 py-1 rounded-full">✅ {dailyCorrect}/{dailyTotal} đúng</span>
               ) : (
                 <>
-                  <span className="text-[12px] font-semibold text-bq-ink2 border border-bq-hair bg-bq-paper px-3 py-1.5 rounded-full">📖 {dailyTotalQ} câu</span>
-                  <span className="text-[12px] font-semibold text-bq-ink2 border border-bq-hair bg-bq-paper px-3 py-1.5 rounded-full">⏱ ~3 phút</span>
-                  <span className="text-[12px] font-semibold text-bq-ink2 border border-bq-hair bg-bq-paper px-3 py-1.5 rounded-full">🌐 {t('home.daily.community', 'Cùng cộng đồng')}</span>
+                  <span className="text-[14px] font-bold text-bq-ink border-2 border-bq-ink bg-bq-paper px-3 py-1 rounded-full">📖 {dailyTotalQ} câu</span>
+                  <span className="text-[14px] font-bold text-bq-ink border-2 border-bq-ink bg-bq-paper px-3 py-1 rounded-full">⏱ ~3 phút</span>
+                  <span className="text-[14px] font-bold text-bq-ink border-2 border-bq-ink bg-bq-paper px-3 py-1 rounded-full">🌐 {t('home.daily.community', 'Cùng cộng đồng')}</span>
                 </>
               )}
             </div>
@@ -342,10 +341,10 @@ export default function Home() {
             <button
               data-testid="featured-daily-cta"
               onClick={() => navigate('/daily')}
-              className="inline-flex items-center gap-2.5 font-extrabold text-[14.5px] text-bq-ink bg-bq-action px-7 py-[15px] rounded-[14px] shadow-bq-action transition hover:-translate-y-0.5 hover:brightness-105"
+              className="inline-flex items-center gap-2.5 font-extrabold text-[20px] text-bq-ink bg-bq-action px-8 py-3 rounded-bq-btn shadow-bq-action"
             >
               {dailyDone ? t('home.daily.reviewCta', 'Xem lại') : t('home.daily.playCta', 'Chơi ngay')}
-              {!dailyDone && <span className="bg-white/25 text-xs font-extrabold px-2 py-0.5 rounded-md">+150 XP</span>}
+              {!dailyDone && <span className="bg-bq-white border-2 border-bq-ink text-[13px] font-extrabold px-2 py-0.5 rounded-full">+150 XP</span>}
             </button>
           </div>
         </div>
@@ -353,8 +352,7 @@ export default function Home() {
 
       {/* ── 2: MODE CARDS ── */}
       <div className="flex items-center gap-3 mt-11 mb-4">
-        <span className="font-display text-[12px] font-extrabold text-white w-[26px] h-[26px] rounded-lg grid place-items-center bg-bq-ruby">2</span>
-        <h2 className="font-display text-[22px] font-bold tracking-[-0.015em] text-bq-ink">{t('home.primary.title')}</h2>
+        <h2 className="font-display text-[26px] font-extrabold tracking-[-0.015em] text-bq-ink">{t('home.primary.title')}</h2>
       </div>
       <div data-testid="home-modes-grid" className="grid grid-cols-1 sm:grid-cols-3 gap-[18px]">
         <ModeCard variant="study" title={t('gameModes.practice')} desc={t('home.mode.studyDesc', 'Tự do, không tính XP — luyện theo từng sách.')}
@@ -362,7 +360,7 @@ export default function Home() {
           inner={bookName ? (
             <div>
               <div className="flex items-center gap-1.5"><span className="material-symbols-outlined text-[16px]">auto_stories</span> {t('home.mode.studyOngoing', 'Đang học dở')} · <b className="text-bq-ink">{bookName}</b></div>
-              <div className="h-1.5 bg-bq-white border border-bq-hair rounded-full mt-2 overflow-hidden"><div className="h-full rounded-full bg-gradient-to-r from-bq-sapphire to-[#7E94F4]" style={{ width: `${bookPct}%` }} /></div>
+              <div className="h-2.5 bg-bq-track border-2 border-bq-ink rounded-full mt-2 overflow-hidden"><div className="h-full bg-bq-sapphire" style={{ width: `${bookPct}%` }} /></div>
               <div className="mt-2">{bookAnswered}/{bookTotal} {t('home.mode.questions', 'câu')} · {t('home.mode.remaining', 'còn')} {bookRemaining} {t('home.mode.toComplete', 'để hoàn thành sách')}</div>
             </div>
           ) : t('home.mode.studyInner', 'Tự do · không tính XP · luyện theo từng sách')} />
@@ -400,8 +398,7 @@ export default function Home() {
 
       {/* ── 3: QUESTS + WEEKLY LEADERBOARD (2-col) ── */}
       <div className="flex items-center gap-3 mt-11 mb-4">
-        <span className="font-display text-[12px] font-extrabold text-white w-[26px] h-[26px] rounded-lg grid place-items-center bg-bq-sapphire">3</span>
-        <h2 className="font-display text-[22px] font-bold tracking-[-0.015em] text-bq-ink">{t('home.missions.section', 'Nhiệm vụ hôm nay')}</h2>
+        <h2 className="font-display text-[26px] font-extrabold tracking-[-0.015em] text-bq-ink">{t('home.missions.section', 'Nhiệm vụ hôm nay')}</h2>
         <span className="ml-auto text-[12.5px] font-bold text-bq-ink2">{missionsDone}/{missions.length || 3} {t('home.missions.completed', 'hoàn thành')}</span>
       </div>
       <div className="grid gap-4 lg:grid-cols-[1.6fr_1fr]">
