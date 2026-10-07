@@ -103,20 +103,21 @@ describe('AnswerButton', () => {
       expect(screen.getByText(/✗ BẠN CHỌN/)).toBeInTheDocument()
     })
 
-    it('correct state has the Khung Sáng emerald-tinted bg + emerald border', () => {
+    it('correct state keeps its C5 board and adds the Lữ Khách gold halo + tick chip', () => {
       render(<AnswerButton {...baseProps} state="correct" />)
       const btn = screen.getByRole('button') as HTMLButtonElement
-      // jsdom normalises rgb / hex; verify the light-theme emerald inline styles landed.
-      expect(btn.style.background).toContain('rgba(14,138,107')
-      expect(btn.style.borderColor).toMatch(/#0E8A6B|rgb\(14,\s*138,\s*107\)/i)
+      // jsdom normalises rgb spacing; verify the gold halo inline style landed.
+      expect(btn.style.boxShadow).toMatch(/255,\s*243,\s*176/)
+      expect(btn.className).toContain('answer-a')
+      expect(btn.textContent).toContain('✓')
     })
 
-    it('disabled state keeps a visible (hairline) card, dimmed but readable', () => {
+    it('disabled state keeps a visible (ink-outlined) board, dimmed but readable', () => {
       render(<AnswerButton {...baseProps} state="disabled" />)
       const btn = screen.getByRole('button')
-      // Khung Sáng: dimmed-but-readable, NOT transparent/invisible.
+      // Lữ Khách: dimmed-but-readable, NOT transparent/invisible.
       expect(btn.className).toContain('opacity-50')
-      expect(btn.className).toContain('border-bq-hair')
+      expect(btn.className).toContain('border-bq-ink')
       expect(btn.className).not.toContain('border-transparent')
     })
 
