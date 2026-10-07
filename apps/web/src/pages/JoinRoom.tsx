@@ -79,7 +79,7 @@ export default function JoinRoom() {
             <button
               type="button"
               onClick={() => navigate('/multiplayer', { replace: true })}
-              className="mt-2 inline-flex items-center justify-center h-10 px-5 rounded-lg bg-bq-action text-white shadow-bq-action text-sm font-bold"
+              className="mt-2 inline-flex items-center justify-center h-10 px-5 rounded-lg bg-bq-action text-bq-ink shadow-bq-action text-sm font-bold"
             >
               Về Multiplayer
             </button>

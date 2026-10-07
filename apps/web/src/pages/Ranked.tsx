@@ -153,7 +153,7 @@ export default function Ranked() {
           <span className="material-symbols-outlined text-bq-ruby text-5xl mb-4 block">error</span>
           <p className="text-bq-ink font-bold text-lg mb-2">{t('ranked.loadError')}</p>
           <p className="text-bq-ink2 text-sm mb-6">{t('ranked.tryAgainLater')}</p>
-          <button onClick={refetch} className="bg-bq-action text-white shadow-bq-action font-black px-8 py-3 rounded-xl text-sm uppercase tracking-widest active:scale-95">
+          <button onClick={refetch} className="bg-bq-action text-bq-ink shadow-bq-action font-black px-8 py-3 rounded-xl text-sm uppercase tracking-widest active:scale-95">
             {t('common.retry')}
           </button>
         </div>
@@ -379,7 +379,7 @@ export default function Ranked() {
                 <div
                   className={`flex items-center justify-center gap-2 rounded-[13px] py-4 px-6 font-bold text-[15px] transition-transform ${
                     canPlay
-                      ? 'bg-bq-action text-white shadow-bq-action hover:-translate-y-0.5 active:translate-y-0'
+                      ? 'bg-bq-action text-bq-ink shadow-bq-action hover:-translate-y-0.5 active:translate-y-0'
                       : 'bg-bq-inset border border-bq-hair text-bq-ink3 cursor-not-allowed opacity-70'
                   }`}
                 >

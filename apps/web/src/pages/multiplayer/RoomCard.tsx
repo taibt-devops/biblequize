@@ -144,7 +144,7 @@ export default function RoomCard({ room }: { room: PublicRoom }) {
         className="w-full h-9 rounded-lg text-[12px] font-bold transition-colors disabled:cursor-not-allowed"
         style={{
           background: ctaEnabled ? 'var(--bq-action)' : '#F2F0E7',
-          color: ctaEnabled ? '#FFFFFF' : '#A8A69C',
+          color: ctaEnabled ? 'var(--bq-action-fg)' : '#A8A69C',
         }}
       >
         {cta.label}

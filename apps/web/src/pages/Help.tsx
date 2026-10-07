@@ -183,7 +183,7 @@ function CategoryPill({
       onClick={onClick}
       className={`px-4 py-2 rounded-full text-xs font-bold tracking-tight transition-colors ${
         active
-          ? 'bg-bq-action text-white shadow-bq-action'
+          ? 'bg-bq-action text-bq-ink shadow-bq-action'
           : 'bg-bq-white border border-bq-hair text-bq-ink2 hover:bg-bq-inset hover:text-bq-ink'
       }`}
     >

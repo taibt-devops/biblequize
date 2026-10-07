@@ -203,7 +203,7 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
           <span className="material-symbols-outlined text-bq-ruby text-5xl mb-4 block">error</span>
           <h2 className="text-2xl font-display font-black text-bq-ink mb-2">{t('results.noData')}</h2>
           <p className="text-bq-ink2 text-sm mb-6">{t('results.errorLoading')}</p>
-          <button onClick={onBackToHome} className="bg-bq-action text-white shadow-bq-action hover:brightness-105 font-black px-8 py-3 rounded-xl transition">
+          <button onClick={onBackToHome} className="bg-bq-action text-bq-ink shadow-bq-action hover:brightness-105 font-black px-8 py-3 rounded-xl transition">
             {t('errors.goHome')}
           </button>
         </div>
@@ -421,7 +421,7 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
           <button
             data-testid="quiz-results-play-btn"
             onClick={onPlayAgain}
-            className="w-full py-3.5 rounded-xl bg-bq-action text-white shadow-bq-action font-extrabold text-sm flex items-center justify-center gap-2 transition-transform hover:-translate-y-0.5 hover:brightness-105 active:translate-y-0"
+            className="w-full py-3.5 rounded-xl bg-bq-action text-bq-ink shadow-bq-action font-extrabold text-sm flex items-center justify-center gap-2 transition-transform hover:-translate-y-0.5 hover:brightness-105 active:translate-y-0"
           >
             <span className="material-symbols-outlined text-base">refresh</span>
             <span className="md:hidden">{t('results.playAgain')}</span>

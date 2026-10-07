@@ -36,7 +36,7 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <Link
             to="/"
-            className="bg-bq-action text-white font-bold px-8 py-3 rounded-xl shadow-bq-action hover:scale-[1.02] transition-all duration-200"
+            className="bg-bq-action text-bq-ink font-bold px-8 py-3 rounded-xl shadow-bq-action hover:scale-[1.02] transition-all duration-200"
           >
             {t('errors.goHome')}
           </Link>

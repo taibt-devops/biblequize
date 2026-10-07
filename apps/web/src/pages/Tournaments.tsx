@@ -124,7 +124,7 @@ const Tournaments: React.FC = () => {
           </p>
           <button
             onClick={() => refetch()}
-            className="px-6 py-3 bg-bq-action text-white shadow-bq-action rounded-xl font-black text-xs uppercase tracking-widest hover:opacity-90 transition-all active:scale-95"
+            className="px-6 py-3 bg-bq-action text-bq-ink shadow-bq-action rounded-xl font-black text-xs uppercase tracking-widest hover:opacity-90 transition-all active:scale-95"
           >
             {t('common.retry')}
           </button>

@@ -76,7 +76,7 @@ export default function Review() {
           <span className="material-symbols-outlined text-bq-ink2 text-5xl mb-4 block">quiz</span>
           <h2 className="text-xl font-bold font-display text-bq-ink mb-2">{t('review.noData')}</h2>
           <p className="text-bq-ink2 text-sm mb-6">{t('review.completeFirst')}</p>
-          <button onClick={() => navigate('/practice')} className="bg-bq-action text-white font-bold px-6 py-3 rounded-xl shadow-bq-action">
+          <button onClick={() => navigate('/practice')} className="bg-bq-action text-bq-ink font-bold px-6 py-3 rounded-xl shadow-bq-action">
             {t('review.backToPractice')}
           </button>
         </div>
@@ -117,7 +117,7 @@ export default function Review() {
             </div>
             {wrongCount > 0 && (
               <button data-testid="review-retry-btn" onClick={handleRetry} disabled={retrying}
-                className="bg-bq-action px-4 py-2 md:px-6 rounded-xl text-white font-bold text-sm flex items-center gap-2 shadow-bq-action active:scale-95 transition-transform disabled:opacity-50">
+                className="bg-bq-action px-4 py-2 md:px-6 rounded-xl text-bq-ink font-bold text-sm flex items-center gap-2 shadow-bq-action active:scale-95 transition-transform disabled:opacity-50">
                 <span className="material-symbols-outlined text-sm">refresh</span>
                 <span className="hidden sm:inline">{t('review.retryWrong')}</span>
               </button>

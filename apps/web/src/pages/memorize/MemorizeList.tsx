@@ -33,7 +33,7 @@ export default function MemorizeList() {
           data-testid="memorize-start-review-btn"
           disabled={dueCount === 0}
           onClick={() => navigate('/practice/memorize/session')}
-          className="rounded-xl bg-bq-action px-5 py-2.5 text-sm font-semibold text-white shadow-bq-action transition hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-none"
+          className="rounded-xl bg-bq-action px-5 py-2.5 text-sm font-semibold text-bq-ink shadow-bq-action transition hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-none"
         >
           {dueCount > 0 ? t('memorize.list.reviewDue', { count: dueCount }) : t('memorize.list.noneDue')}
         </button>

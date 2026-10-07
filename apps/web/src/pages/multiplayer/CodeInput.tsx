@@ -74,7 +74,7 @@ export default function CodeInput({ onJoin, disabled, error }: Props) {
         className="w-full inline-flex items-center justify-center gap-1.5 h-10 rounded-lg text-[13px] font-semibold transition-colors disabled:cursor-not-allowed"
         style={{
           background: ready ? 'var(--bq-action)' : '#F2F0E7',
-          color: ready ? '#FFFFFF' : '#A8A69C',
+          color: ready ? 'var(--bq-action-fg)' : '#A8A69C',
           border: ready ? 'none' : '1px solid #E7E4DA',
         }}
       >

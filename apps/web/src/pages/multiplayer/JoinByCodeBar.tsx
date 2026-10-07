@@ -93,7 +93,7 @@ export default function JoinByCodeBar({ onJoin, disabled, error }: Props) {
         className="ml-auto h-9 px-4 rounded-lg text-[12px] font-semibold transition-opacity disabled:cursor-not-allowed"
         style={{
           background: ready ? 'var(--bq-action)' : '#F2F0E7',
-          color: ready ? '#FFFFFF' : '#A8A69C',
+          color: ready ? 'var(--bq-action-fg)' : '#A8A69C',
           border: ready ? 'none' : '1px solid #E7E4DA',
         }}
       >

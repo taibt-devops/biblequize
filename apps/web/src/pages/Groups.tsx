@@ -458,7 +458,7 @@ const Groups: React.FC = () => {
         <button
           onClick={() => setShowCreateModal(true)}
           data-testid="groups-create-btn"
-          className="hidden lg:inline-flex items-center gap-2 bg-bq-action text-white shadow-bq-action font-bold text-[14px] px-5 py-3 rounded-xl hover:-translate-y-0.5 transition-all"
+          className="hidden lg:inline-flex items-center gap-2 bg-bq-action text-bq-ink shadow-bq-action font-bold text-[14px] px-5 py-3 rounded-xl hover:-translate-y-0.5 transition-all"
         >
           <span className="material-symbols-outlined">add</span>
           {t('groups.createGroupCta')}
@@ -539,7 +539,7 @@ const Groups: React.FC = () => {
               <button
                 onClick={() => setShowCreateModal(true)}
                 data-testid="groups-empty-create-btn"
-                className="inline-flex items-center justify-center gap-2 bg-bq-action text-white shadow-bq-action font-bold text-[14px] px-6 py-3 rounded-xl"
+                className="inline-flex items-center justify-center gap-2 bg-bq-action text-bq-ink shadow-bq-action font-bold text-[14px] px-6 py-3 rounded-xl"
               >
                 <span className="material-symbols-outlined">add</span>
                 {t('groups.createGroupCta')}
@@ -594,7 +594,7 @@ const Groups: React.FC = () => {
         onClick={() => setShowCreateModal(true)}
         aria-label={t('groups.createGroupCta')}
         data-testid="groups-fab-create"
-        className="lg:hidden fixed bottom-24 right-4 w-14 h-14 rounded-2xl bg-bq-action text-white flex items-center justify-center shadow-bq-action active:scale-95 transition-transform z-30"
+        className="lg:hidden fixed bottom-24 right-4 w-14 h-14 rounded-2xl bg-bq-action text-bq-ink flex items-center justify-center shadow-bq-action active:scale-95 transition-transform z-30"
       >
         <span className="material-symbols-outlined text-[28px]">add</span>
       </button>
@@ -700,7 +700,7 @@ const Groups: React.FC = () => {
               <button
                 type="submit"
                 data-testid="groups-create-submit-btn"
-                className="w-full py-3 bg-bq-action text-white shadow-bq-action rounded-lg font-medium text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-3 bg-bq-action text-bq-ink shadow-bq-action rounded-lg font-medium text-sm disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={createLoading || !createName.trim()}
               >
                 {createLoading ? t('groups.creating') : t('groups.createGroupBtn')}
@@ -746,7 +746,7 @@ const Groups: React.FC = () => {
               {joinError && <p className="text-sm text-error font-bold">{joinError}</p>}
               <button
                 type="submit"
-                className="w-full py-3 bg-bq-action text-white shadow-bq-action rounded-lg font-medium text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-3 bg-bq-action text-bq-ink shadow-bq-action rounded-lg font-medium text-sm disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={joinLoading || !joinCode.trim()}
               >
                 {joinLoading ? t('groups.joining') : t('groups.joinBtn')}

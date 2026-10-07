@@ -348,7 +348,7 @@ function PrimaryActions({
     return (
       <button
         onClick={onPlayNow} disabled={busy}
-        className="w-full py-3 rounded-xl bg-bq-action shadow-bq-action font-display font-extrabold text-white text-sm flex items-center justify-center gap-2 disabled:opacity-50"
+        className="w-full py-3 rounded-xl bg-bq-action shadow-bq-action font-display font-extrabold text-bq-ink text-sm flex items-center justify-center gap-2 disabled:opacity-50"
       >
         <span>▶</span><span>{t('quizSet.detail.ctaPlayNow')}</span>
       </button>
@@ -358,7 +358,7 @@ function PrimaryActions({
     return (
       <button
         onClick={onPublish} disabled={busy || quizSet.totalQuestions < 5}
-        className="w-full py-3 rounded-xl bg-bq-action shadow-bq-action font-display font-extrabold text-white text-sm flex items-center justify-center gap-2 disabled:opacity-50"
+        className="w-full py-3 rounded-xl bg-bq-action shadow-bq-action font-display font-extrabold text-bq-ink text-sm flex items-center justify-center gap-2 disabled:opacity-50"
       >
         <span>✓</span><span>{quizSet.totalQuestions < 5 ? t('quizSet.detail.ctaNeedQuestions', { count: quizSet.totalQuestions }) : t('quizSet.detail.ctaPublish')}</span>
       </button>

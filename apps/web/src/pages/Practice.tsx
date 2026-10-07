@@ -330,7 +330,7 @@ export default function Practice() {
                       onClick={() => setQuestionCount(num)}
                       className={`py-2.5 rounded-lg text-sm font-semibold transition-all
                         ${questionCount === num
-                          ? 'bg-bq-action text-white shadow-bq-action'
+                          ? 'bg-bq-action text-bq-ink shadow-bq-action'
                           : 'bg-bq-inset text-bq-ink2 hover:bg-bq-hair'
                         }`}
                     >
@@ -536,7 +536,7 @@ export default function Practice() {
             data-testid="practice-start-btn"
             type="submit"
             disabled={isDisabled}
-            className={`bg-bq-action text-white font-bold py-3 px-7 rounded-xl text-sm shadow-bq-action transition-all
+            className={`bg-bq-action text-bq-ink font-bold py-3 px-7 rounded-xl text-sm shadow-bq-action transition-all
               ${isDisabled
                 ? 'opacity-60 cursor-not-allowed'
                 : 'hover:scale-[1.02] active:scale-95'

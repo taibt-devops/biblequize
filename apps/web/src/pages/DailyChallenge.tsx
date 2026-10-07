@@ -466,7 +466,7 @@ const DailyChallenge: React.FC = () => {
         <button
           data-testid="daily-error-retry-btn"
           onClick={() => window.location.reload()}
-          className="bg-bq-action text-white shadow-bq-action px-8 py-3 rounded-xl font-bold"
+          className="bg-bq-action text-bq-ink shadow-bq-action px-8 py-3 rounded-xl font-bold"
         >
           {t('common.retry')}
         </button>
@@ -652,7 +652,7 @@ const DailyChallenge: React.FC = () => {
               <button
                 data-testid="daily-next-btn"
                 onClick={handleNext}
-                className="bg-bq-action text-white px-6 sm:px-8 py-3 rounded-2xl font-black text-sm shadow-bq-action active:scale-95 transition-all hover:brightness-110 whitespace-nowrap w-full sm:w-auto"
+                className="bg-bq-action text-bq-ink px-6 sm:px-8 py-3 rounded-2xl font-black text-sm shadow-bq-action active:scale-95 transition-all hover:brightness-110 whitespace-nowrap w-full sm:w-auto"
               >
                 {currentIndex + 1 >= totalQuestions ? t('daily.viewResult') : t('daily.nextQuestion')}
               </button>
@@ -672,7 +672,7 @@ const DailyChallenge: React.FC = () => {
         </div>
         <h3 className="font-display text-2xl font-bold text-bq-ink">{t('daily.noQuestions')}</h3>
         <p className="text-bq-ink2">{t('daily.comeBackLater')}</p>
-        <Link to="/" className="bg-bq-action text-white shadow-bq-action px-8 py-3 rounded-xl font-bold">{t('daily.home')}</Link>
+        <Link to="/" className="bg-bq-action text-bq-ink shadow-bq-action px-8 py-3 rounded-xl font-bold">{t('daily.home')}</Link>
       </div>
     )
   }

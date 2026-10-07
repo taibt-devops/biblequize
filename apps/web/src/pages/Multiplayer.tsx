@@ -181,7 +181,7 @@ export default function Multiplayer() {
               data-testid="multiplayer-create-btn"
               onClick={() => navigate('/room/create')}
               className="w-full md:w-auto inline-flex items-center justify-center gap-2 h-11 px-5 rounded-lg text-[14px] font-bold transition-opacity hover:opacity-90 shadow-bq-action"
-              style={{ background: 'var(--bq-action)', color: '#FFFFFF' }}
+              style={{ background: 'var(--bq-action)', color: 'var(--bq-action-fg)' }}
             >
               <span className="material-symbols-outlined" style={{ fontSize: 18 }}>add</span>
               {t('multiplayer.createRoom', 'Tạo Phòng')}
@@ -342,7 +342,7 @@ function ErrorState({ onRetry, retrying }: { onRetry: () => void; retrying: bool
         onClick={onRetry}
         disabled={retrying}
         className="py-3 px-8 rounded-xl font-bold text-sm disabled:opacity-60 shadow-bq-action"
-        style={{ background: 'var(--bq-action)', color: '#FFFFFF' }}
+        style={{ background: 'var(--bq-action)', color: 'var(--bq-action-fg)' }}
       >
         {retrying ? t('multiplayer.loadErrorLoading') : t('multiplayer.loadErrorRetry')}
       </button>

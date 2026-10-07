@@ -416,7 +416,7 @@ export default function Home() {
             <button
               data-testid="featured-daily-cta"
               onClick={() => navigate('/daily')}
-              className="inline-flex items-center gap-2.5 font-extrabold text-[14.5px] text-white bg-bq-action px-7 py-[15px] rounded-[14px] shadow-bq-action transition hover:-translate-y-0.5 hover:brightness-105"
+              className="inline-flex items-center gap-2.5 font-extrabold text-[14.5px] text-bq-ink bg-bq-action px-7 py-[15px] rounded-[14px] shadow-bq-action transition hover:-translate-y-0.5 hover:brightness-105"
             >
               {dailyDone ? t('home.daily.reviewCta', 'Xem lại') : t('home.daily.playCta', 'Chơi ngay')}
               {!dailyDone && <span className="bg-white/25 text-xs font-extrabold px-2 py-0.5 rounded-md">+150 XP</span>}

@@ -493,7 +493,7 @@ export default function RankedQuizResults({
                 type="button"
                 data-testid="ranked-result-play-again"
                 onClick={onPlayAgain}
-                className="w-full inline-flex items-center justify-center gap-2 rounded-[14px] py-4 px-4 font-bold text-[15px] text-white bg-bq-action shadow-bq-action hover:-translate-y-0.5 active:translate-y-0 transition-transform"
+                className="w-full inline-flex items-center justify-center gap-2 rounded-[14px] py-4 px-4 font-bold text-[15px] text-bq-ink bg-bq-action shadow-bq-action hover:-translate-y-0.5 active:translate-y-0 transition-transform"
               >
                 <span className="material-symbols-outlined text-[20px]" style={FILL_1}>replay</span>
                 {t('ranked.result.ctaPlayAgain', 'Chơi trận khác')}
@@ -523,7 +523,7 @@ export default function RankedQuizResults({
               <button
                 type="button"
                 onClick={() => navigate('/help#tiers')}
-                className="w-full inline-flex items-center justify-center gap-2 rounded-[14px] py-4 px-4 font-bold text-[15px] text-white bg-bq-action shadow-bq-action hover:-translate-y-0.5 active:translate-y-0 transition-transform"
+                className="w-full inline-flex items-center justify-center gap-2 rounded-[14px] py-4 px-4 font-bold text-[15px] text-bq-ink bg-bq-action shadow-bq-action hover:-translate-y-0.5 active:translate-y-0 transition-transform"
               >
                 <span className="material-symbols-outlined text-[20px]" style={FILL_1}>military_tech</span>
                 {t('ranked.result.ctaTierPerks', 'Xem đặc quyền hạng mới')}

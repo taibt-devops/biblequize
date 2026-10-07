@@ -143,7 +143,7 @@ const WeekCard: React.FC<WeekCardProps> = ({ week, groupId, journeyId, isLeader,
             <button
               type="button" data-testid="journey-week-play"
               onClick={() => navigate(`/groups/${groupId}/scheduled-quizzes/${week.scheduledQuizId}`)}
-              className="px-3.5 py-2 rounded-lg font-bold text-xs bg-bq-action text-white shadow-bq-action"
+              className="px-3.5 py-2 rounded-lg font-bold text-xs bg-bq-action text-bq-ink shadow-bq-action"
             >
               {t('groupJourney.playWeek')}
             </button>

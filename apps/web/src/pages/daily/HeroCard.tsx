@@ -106,7 +106,7 @@ export function HeroCard(props: HeroCardProps) {
         <button
           data-testid="daily-start-btn"
           onClick={onStart}
-          className="w-full bg-bq-action text-white border-none px-7 py-4 rounded-2xl text-base font-extrabold cursor-pointer transition-all flex items-center justify-center gap-2.5 shadow-bq-action hover:-translate-y-px"
+          className="w-full bg-bq-action text-bq-ink border-none px-7 py-4 rounded-2xl text-base font-extrabold cursor-pointer transition-all flex items-center justify-center gap-2.5 shadow-bq-action hover:-translate-y-px"
         >
           <span className="material-symbols-outlined">play_arrow</span>
           {t('daily.ready.cta')}
@@ -181,7 +181,7 @@ export function HeroCard(props: HeroCardProps) {
         </div>
         <button
           onClick={onReview}
-          className="w-full bg-bq-action text-white border-none px-7 py-4 rounded-2xl text-base font-extrabold cursor-pointer transition-all flex items-center justify-center gap-2.5 shadow-bq-action hover:-translate-y-px"
+          className="w-full bg-bq-action text-bq-ink border-none px-7 py-4 rounded-2xl text-base font-extrabold cursor-pointer transition-all flex items-center justify-center gap-2.5 shadow-bq-action hover:-translate-y-px"
         >
           <span className="material-symbols-outlined">visibility</span>
           {t('daily.done.cta')}

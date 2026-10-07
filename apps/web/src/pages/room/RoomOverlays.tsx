@@ -100,7 +100,7 @@ export const PodiumScreen: React.FC<{ results: PlayerScore[]; onClose: () => voi
           ))}
         </div>
       </div>
-      <button onClick={onClose} className="bg-bq-action text-white font-black py-3.5 px-10 rounded-2xl text-sm uppercase tracking-widest shadow-bq-action active:scale-95 transition-all hover:brightness-110">
+      <button onClick={onClose} className="bg-bq-action text-bq-ink font-black py-3.5 px-10 rounded-2xl text-sm uppercase tracking-widest shadow-bq-action active:scale-95 transition-all hover:brightness-110">
         Ve Phong Cho
       </button>
     </div>
@@ -197,7 +197,7 @@ export const TeamWinScreen: React.FC<{
         ))}
       </div>
     </div>
-    <button onClick={onClose} className="bg-bq-action text-white font-black py-3.5 px-10 rounded-2xl text-sm uppercase tracking-widest shadow-bq-action active:scale-95 transition-all hover:brightness-110">
+    <button onClick={onClose} className="bg-bq-action text-bq-ink font-black py-3.5 px-10 rounded-2xl text-sm uppercase tracking-widest shadow-bq-action active:scale-95 transition-all hover:brightness-110">
       Ve Phong Cho
     </button>
   </div>

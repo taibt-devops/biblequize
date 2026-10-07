@@ -154,7 +154,7 @@ export const SequentialRevealPanel: React.FC<{
           <button
             data-testid="sequential-advance-btn"
             onClick={onAdvance}
-            className="w-full py-3 rounded-xl text-[14px] font-bold flex items-center justify-center gap-2 transition-all hover:brightness-110 bg-bq-action text-white shadow-bq-action"
+            className="w-full py-3 rounded-xl text-[14px] font-bold flex items-center justify-center gap-2 transition-all hover:brightness-110 bg-bq-action text-bq-ink shadow-bq-action"
           >
             {t('room.quiz.sequentialAdvance')}
             <span className="material-symbols-outlined text-[18px]">arrow_forward</span>

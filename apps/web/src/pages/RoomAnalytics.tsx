@@ -117,7 +117,7 @@ export default function RoomAnalytics() {
         <p className="text-bq-ink text-center">{error ?? 'Không tìm thấy phòng'}</p>
         <button
           onClick={() => navigate('/multiplayer')}
-          className="px-4 py-2 rounded-lg text-sm font-bold bg-bq-action text-white shadow-bq-action"
+          className="px-4 py-2 rounded-lg text-sm font-bold bg-bq-action text-bq-ink shadow-bq-action"
         >
           Về danh sách phòng
         </button>

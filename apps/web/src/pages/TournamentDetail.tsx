@@ -536,7 +536,7 @@ const TournamentDetail: React.FC = () => {
                   onClick={handleJoin}
                   disabled={joinLoading}
                   className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium transition-all hover:opacity-90 disabled:opacity-50"
-                  style={{ background: 'var(--bq-action)', color: '#FFFFFF', boxShadow: 'var(--bq-glow-action)' }}
+                  style={{ background: 'var(--bq-action)', color: 'var(--bq-action-fg)', boxShadow: 'var(--bq-glow-action)' }}
                 >
                   <span>⚔️</span>
                   {joinLoading ? 'Đang đăng ký...' : 'Tham gia ngay'}
@@ -557,7 +557,7 @@ const TournamentDetail: React.FC = () => {
               <button
                 onClick={() => navigate(`/tournaments/${id}/match/latest`)}
                 className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium transition-all hover:opacity-90"
-                style={{ background: 'var(--bq-action)', color: '#FFFFFF' }}
+                style={{ background: 'var(--bq-action)', color: 'var(--bq-action-fg)' }}
               >
                 <span>⚔️</span> Vào trận của bạn
               </button>
@@ -731,7 +731,7 @@ const TournamentDetail: React.FC = () => {
             <p className="text-lg mb-8" style={{ color: 'var(--bq-ink-soft)' }}>{t('tournaments.wonMatch')}</p>
             <button
               className="px-10 py-4 rounded-xl font-bold text-sm uppercase tracking-widest hover:scale-105 transition-transform"
-              style={{ background: 'var(--bq-action)', color: '#FFFFFF', boxShadow: 'var(--bq-glow-action)' }}
+              style={{ background: 'var(--bq-action)', color: 'var(--bq-action-fg)', boxShadow: 'var(--bq-glow-action)' }}
               onClick={(e) => { e.stopPropagation(); setShowWinnerOverlay(false); }}
             >
               Đóng

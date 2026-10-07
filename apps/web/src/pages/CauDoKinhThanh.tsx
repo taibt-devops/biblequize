@@ -88,7 +88,7 @@ export default function CauDoKinhThanh() {
           </Link>
           <Link
             to="/practice"
-            className="bg-bq-action text-white text-sm font-bold px-4 py-2 rounded-xl shadow-bq-action active:scale-95 transition-transform"
+            className="bg-bq-action text-bq-ink text-sm font-bold px-4 py-2 rounded-xl shadow-bq-action active:scale-95 transition-transform"
           >
             Chơi Ngay
           </Link>
@@ -189,7 +189,7 @@ export default function CauDoKinhThanh() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               to="/practice"
-              className="bg-bq-action text-white font-bold px-8 py-3 rounded-xl shadow-bq-action active:scale-95 transition-transform"
+              className="bg-bq-action text-bq-ink font-bold px-8 py-3 rounded-xl shadow-bq-action active:scale-95 transition-transform"
             >
               Chơi Ngay
             </Link>

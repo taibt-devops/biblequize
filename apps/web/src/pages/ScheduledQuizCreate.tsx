@@ -246,7 +246,7 @@ const ScheduledQuizCreate: React.FC = () => {
           <button
             type="submit" disabled={submitting || atMaxActive || !selectedSetId}
             data-testid="submit-create"
-            className="flex-1 py-3.5 rounded-xl font-extrabold text-sm flex items-center justify-center gap-2 transition disabled:opacity-50 disabled:cursor-not-allowed bg-bq-action text-white shadow-bq-action"
+            className="flex-1 py-3.5 rounded-xl font-extrabold text-sm flex items-center justify-center gap-2 transition disabled:opacity-50 disabled:cursor-not-allowed bg-bq-action text-bq-ink shadow-bq-action"
           >
             <span className="material-symbols-outlined text-base">schedule</span>
             {submitting ? '...' : t('scheduledQuiz.submitCta')}

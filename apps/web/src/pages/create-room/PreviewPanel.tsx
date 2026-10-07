@@ -120,7 +120,7 @@ export default function PreviewPanel({
             disabled={loading || !canSubmit}
             className={`w-full inline-flex items-center justify-center gap-2 px-[18px] py-[14px] rounded-[12px] text-[15px] font-bold transition-all disabled:cursor-not-allowed ${
               canSubmit && !loading
-                ? 'bg-bq-action text-white shadow-bq-action'
+                ? 'bg-bq-action text-bq-ink shadow-bq-action'
                 : 'bg-bq-inset text-bq-ink3'
             }`}
           >

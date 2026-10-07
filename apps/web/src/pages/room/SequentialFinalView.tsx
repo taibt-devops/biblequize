@@ -141,13 +141,13 @@ const SequentialFinalView: React.FC<Props> = ({
         </button>
         {isHost ? (
           <button onClick={onCreateNew ?? onClose}
-            className="flex-1 rounded-xl py-3.5 text-[14px] font-extrabold flex items-center justify-center gap-2 bg-bq-action text-white shadow-bq-action">
+            className="flex-1 rounded-xl py-3.5 text-[14px] font-extrabold flex items-center justify-center gap-2 bg-bq-action text-bq-ink shadow-bq-action">
             <span className="material-symbols-outlined text-[18px]">refresh</span>
             Tạo phòng mới
           </button>
         ) : (
           <button onClick={onClose}
-            className="flex-1 rounded-xl py-3.5 text-[14px] font-extrabold bg-bq-action text-white shadow-bq-action">
+            className="flex-1 rounded-xl py-3.5 text-[14px] font-extrabold bg-bq-action text-bq-ink shadow-bq-action">
             Quay về nhóm
           </button>
         )}

@@ -171,7 +171,7 @@ export default function BasicQuiz() {
         <div className="flex gap-3 justify-center">
           <button
             onClick={() => refetch()}
-            className="bg-bq-action text-white shadow-bq-action px-5 py-2.5 rounded-xl font-bold"
+            className="bg-bq-action text-bq-ink shadow-bq-action px-5 py-2.5 rounded-xl font-bold"
           >
             {t('basicQuiz.page.retryLoad')}
           </button>
@@ -253,7 +253,7 @@ export default function BasicQuiz() {
                   <span
                     className={
                       'shrink-0 w-9 h-9 rounded-lg flex items-center justify-center font-black ' +
-                      (isSelected ? 'bg-bq-action text-white' : 'bg-bq-white text-bq-amberd')
+                      (isSelected ? 'bg-bq-action text-bq-ink' : 'bg-bq-white text-bq-amberd')
                     }
                   >
                     {LETTERS[idx]}
@@ -289,7 +289,7 @@ export default function BasicQuiz() {
             data-testid="basic-quiz-next"
             onClick={goNext}
             disabled={answers[currentIndex] == null}
-            className="bg-bq-action text-white shadow-bq-action px-6 py-2.5 rounded-xl font-bold disabled:opacity-40 disabled:cursor-not-allowed"
+            className="bg-bq-action text-bq-ink shadow-bq-action px-6 py-2.5 rounded-xl font-bold disabled:opacity-40 disabled:cursor-not-allowed"
           >
             {t('basicQuiz.page.next')}
           </button>
@@ -298,7 +298,7 @@ export default function BasicQuiz() {
             data-testid="basic-quiz-submit"
             onClick={submit}
             disabled={!allAnswered || phase === 'submitting'}
-            className="bg-bq-action text-white shadow-bq-action px-6 py-2.5 rounded-xl font-bold disabled:opacity-40 disabled:cursor-not-allowed"
+            className="bg-bq-action text-bq-ink shadow-bq-action px-6 py-2.5 rounded-xl font-bold disabled:opacity-40 disabled:cursor-not-allowed"
           >
             {phase === 'submitting' ? t('basicQuiz.page.submitting') : t('basicQuiz.page.submit')}
           </button>
@@ -423,7 +423,7 @@ function PassScreen({
           <button
             data-testid="basic-quiz-pass-cta"
             onClick={onPlayRanked}
-            className="bg-bq-action text-white shadow-bq-action px-6 py-3 rounded-xl font-bold"
+            className="bg-bq-action text-bq-ink shadow-bq-action px-6 py-3 rounded-xl font-bold"
           >
             <span className="material-symbols-outlined align-middle text-base mr-1" style={FILL_1}>play_arrow</span>
             {t('basicQuiz.page.passCta')}

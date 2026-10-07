@@ -43,7 +43,7 @@ export default function Onboarding() {
           <span className="text-xl font-bold text-bq-amberd uppercase tracking-[0.05em] font-display">BibleQuiz</span>
           <div className="flex items-center gap-4">
             <button onClick={skip} className="text-bq-ink2 hover:text-bq-amberd transition-colors text-sm">Skip</button>
-            <button onClick={() => navigate('/login')} className="bg-bq-action text-white shadow-bq-action px-6 py-2 rounded-xl text-sm font-bold">Login</button>
+            <button onClick={() => navigate('/login')} className="bg-bq-action text-bq-ink shadow-bq-action px-6 py-2 rounded-xl text-sm font-bold">Login</button>
           </div>
         </nav>
 
@@ -201,7 +201,7 @@ export default function Onboarding() {
               <button
                 data-testid={step === 3 ? 'onboarding-start-btn' : 'onboarding-next-btn'}
                 onClick={step === 3 ? finish : nextSlide}
-                className="bg-bq-action text-white px-10 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-3 hover:scale-[1.02] transition-all shadow-bq-action active:scale-95"
+                className="bg-bq-action text-bq-ink px-10 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-3 hover:scale-[1.02] transition-all shadow-bq-action active:scale-95"
               >
                 {step === 3 ? t('onboarding.start') : t('common.next')}
                 <span className="material-symbols-outlined">arrow_forward</span>

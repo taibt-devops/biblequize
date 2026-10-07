@@ -55,7 +55,7 @@ export default function MySets() {
           <button
             onClick={() => navigate('/my-sets/new')}
             disabled={sets.length >= MAX_SETS}
-            className="bg-bq-action shadow-bq-action px-4 py-2 rounded-xl text-white font-bold text-sm flex items-center gap-1.5 disabled:opacity-40 disabled:cursor-not-allowed"
+            className="bg-bq-action shadow-bq-action px-4 py-2 rounded-xl text-bq-ink font-bold text-sm flex items-center gap-1.5 disabled:opacity-40 disabled:cursor-not-allowed"
           >
             <span className="material-symbols-outlined text-lg">add</span>
             Tạo bộ mới

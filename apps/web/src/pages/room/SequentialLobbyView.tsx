@@ -183,7 +183,7 @@ const SequentialLobbyView: React.FC<Props> = ({
                 Đóng phòng
               </button>
               <button onClick={onStart}
-                className="flex-1 rounded-xl py-4 text-[15px] font-extrabold flex items-center justify-center gap-2 bg-bq-action text-white shadow-bq-action">
+                className="flex-1 rounded-xl py-4 text-[15px] font-extrabold flex items-center justify-center gap-2 bg-bq-action text-bq-ink shadow-bq-action">
                 <span className="material-symbols-outlined text-[20px]">play_arrow</span>
                 Bắt đầu chơi
               </button>

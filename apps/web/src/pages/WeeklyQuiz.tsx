@@ -81,7 +81,7 @@ export default function WeeklyQuiz() {
             onClick={startQuiz}
             disabled={starting}
             data-testid="weekly-start-btn"
-            className="mt-4 px-8 py-3 bg-bq-action text-white font-black rounded-xl shadow-bq-action transition-colors disabled:opacity-50"
+            className="mt-4 px-8 py-3 bg-bq-action text-bq-ink font-black rounded-xl shadow-bq-action transition-colors disabled:opacity-50"
           >
             {starting ? '...' : t('gameModes.weeklyBtn')}
           </button>

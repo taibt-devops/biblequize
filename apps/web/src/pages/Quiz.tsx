@@ -812,7 +812,7 @@ const Quiz: React.FC = () => {
           <div className="text-2xl font-bold mb-4 text-bq-ink font-display">{t('quiz.noQuestions')}</div>
           <button
             onClick={() => navigate('/practice')}
-            className="bg-bq-action text-white px-8 py-3 rounded-2xl font-black text-sm shadow-bq-action active:scale-95 transition-all hover:brightness-110"
+            className="bg-bq-action text-bq-ink px-8 py-3 rounded-2xl font-black text-sm shadow-bq-action active:scale-95 transition-all hover:brightness-110"
           >
             {t('quiz.goBack')}
           </button>
@@ -1251,7 +1251,7 @@ const Quiz: React.FC = () => {
               <button
                 data-testid="quiz-next-btn"
                 onClick={nextQuestion}
-                className="bg-bq-action text-white px-6 sm:px-8 py-3 rounded-2xl font-black text-sm shadow-bq-action active:scale-95 transition-all hover:brightness-110 whitespace-nowrap w-full sm:w-auto"
+                className="bg-bq-action text-bq-ink px-6 sm:px-8 py-3 rounded-2xl font-black text-sm shadow-bq-action active:scale-95 transition-all hover:brightness-110 whitespace-nowrap w-full sm:w-auto"
               >
                 {currentQuestionIndex + 1 >= questions.length ? t('quiz.viewResults') : t('quiz.nextQuestion')}
               </button>

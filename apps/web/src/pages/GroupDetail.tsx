@@ -600,7 +600,7 @@ const GroupDetail: React.FC = () => {
             {showBackToGroups ? (
               <button
                 onClick={() => navigate('/groups')}
-                className="px-6 py-3 bg-bq-action text-white shadow-bq-action rounded-xl font-bold text-sm hover:brightness-110 transition-all"
+                className="px-6 py-3 bg-bq-action text-bq-ink shadow-bq-action rounded-xl font-bold text-sm hover:brightness-110 transition-all"
               >
                 {t('groups.backToGroups')}
               </button>
@@ -1190,7 +1190,7 @@ const GroupDetail: React.FC = () => {
                 <button
                   onClick={handlePostAnnouncement}
                   disabled={postingAnnouncement || !newAnnouncement.trim()}
-                  className="bg-bq-action text-white shadow-bq-action rounded-lg px-4 py-2 text-[11px] font-medium hover:brightness-110 active:scale-95 transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5"
+                  className="bg-bq-action text-bq-ink shadow-bq-action rounded-lg px-4 py-2 text-[11px] font-medium hover:brightness-110 active:scale-95 transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5"
                 >
                   📨 {postingAnnouncement ? '...' : t('groups.send')}
                 </button>
@@ -1741,7 +1741,7 @@ const GroupDetail: React.FC = () => {
               <button
                 type="submit"
                 disabled={editLoading || !editName.trim()}
-                className="w-full py-4 bg-bq-action text-white shadow-bq-action rounded-xl font-black text-xs uppercase tracking-widest hover:brightness-110 transition-all active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed"
+                className="w-full py-4 bg-bq-action text-bq-ink shadow-bq-action rounded-xl font-black text-xs uppercase tracking-widest hover:brightness-110 transition-all active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 {editLoading ? t('groups.saving') : t('groups.saveChanges')}
               </button>

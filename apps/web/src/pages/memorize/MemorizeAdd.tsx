@@ -107,7 +107,7 @@ export default function MemorizeAdd() {
         data-testid="memorize-add-submit"
         disabled={!passage.data || passage.isFetching || addVerse.isPending}
         onClick={submit}
-        className="w-full rounded-xl bg-bq-action px-5 py-3 text-sm font-semibold text-white shadow-bq-action transition hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-none md:w-auto"
+        className="w-full rounded-xl bg-bq-action px-5 py-3 text-sm font-semibold text-bq-ink shadow-bq-action transition hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-none md:w-auto"
       >
         {t('memorize.add.submit')}
       </button>

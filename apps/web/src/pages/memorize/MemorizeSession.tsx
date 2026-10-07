@@ -108,7 +108,7 @@ export default function MemorizeSession() {
                 data-testid="memorize-next-btn"
                 disabled={!session.canContinue}
                 onClick={session.next}
-                className="w-full rounded-xl bg-bq-action px-5 py-3 text-sm font-semibold text-white shadow-bq-action transition hover:brightness-105 disabled:opacity-50 disabled:shadow-none md:w-auto"
+                className="w-full rounded-xl bg-bq-action px-5 py-3 text-sm font-semibold text-bq-ink shadow-bq-action transition hover:brightness-105 disabled:opacity-50 disabled:shadow-none md:w-auto"
               >
                 {session.saving ? t('memorize.session.saving') : isLast ? t('memorize.session.finish') : t('memorize.session.next')}
               </button>

@@ -280,7 +280,7 @@ export default function Login() {
                 data-testid="login-submit-btn"
                 type="submit"
                 disabled={isLoading || isGoogleLoading}
-                className="w-full py-4 mt-4 rounded-xl bg-bq-action text-white font-bold shadow-bq-action hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                className="w-full py-4 mt-4 rounded-xl bg-bq-action text-bq-ink font-bold shadow-bq-action hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
                 {isLoading ? (
                   <>

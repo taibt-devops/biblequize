@@ -185,7 +185,7 @@ const ScheduledQuizDetailPage: React.FC = () => {
             onClick={() => navigate(`/groups/${groupId}/scheduled-quizzes/${quizId}/play`)}
             disabled={!canPlay}
             data-testid="play-btn"
-            className="w-full py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition disabled:opacity-50 disabled:cursor-not-allowed bg-bq-action text-white shadow-bq-action"
+            className="w-full py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition disabled:opacity-50 disabled:cursor-not-allowed bg-bq-action text-bq-ink shadow-bq-action"
           >
             <span className="material-symbols-outlined text-base">play_arrow</span>
             {detail.myStatus.attemptsUsed === 0 ? t('scheduledQuiz.playFirst')
@@ -254,7 +254,7 @@ const ScheduledQuizDetailPage: React.FC = () => {
           </button>
           <button
             onClick={() => navigate(`/groups/${groupId}/scheduled-quizzes/new?quizSetId=${detail.quizSetId}`)}
-            className="flex-1 rounded-xl py-3.5 text-sm font-extrabold flex items-center justify-center gap-2 bg-bq-action text-white shadow-bq-action">
+            className="flex-1 rounded-xl py-3.5 text-sm font-extrabold flex items-center justify-center gap-2 bg-bq-action text-bq-ink shadow-bq-action">
             <span className="material-symbols-outlined text-[18px]">add</span>
             Tạo quiz tuần mới
           </button>

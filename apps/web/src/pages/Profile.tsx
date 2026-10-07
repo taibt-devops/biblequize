@@ -90,7 +90,7 @@ const Profile: React.FC = () => {
       <div className="flex items-center justify-center py-24">
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4 text-bq-amberd">{t('profile.loginRequired')}</h2>
-          <Link to="/login" className="px-6 py-3 rounded-lg font-bold bg-bq-action text-white shadow-bq-action inline-block">
+          <Link to="/login" className="px-6 py-3 rounded-lg font-bold bg-bq-action text-bq-ink shadow-bq-action inline-block">
             {t('auth.login')}
           </Link>
         </div>

@@ -298,7 +298,7 @@ export default function QuizSetList() {
               </button>
               <Link
                 to={`/groups/${groupId}/quiz-sets/new`}
-                className="px-4 py-2 rounded-lg bg-bq-action shadow-bq-action text-white text-xs font-extrabold flex items-center gap-1.5 hover:opacity-90"
+                className="px-4 py-2 rounded-lg bg-bq-action shadow-bq-action text-bq-ink text-xs font-extrabold flex items-center gap-1.5 hover:opacity-90"
               >
                 <span className="text-base leading-none">+</span><span>TẠO BỘ MỚI</span>
               </Link>
@@ -520,7 +520,7 @@ function MobileHeader({ groupId, t, totalCount }: { groupId: string; t: any; tot
       </div>
       <Link
         to={`/groups/${groupId}/quiz-sets/new`}
-        className="w-9 h-9 rounded-full bg-bq-action shadow-bq-action flex items-center justify-center text-white font-bold"
+        className="w-9 h-9 rounded-full bg-bq-action shadow-bq-action flex items-center justify-center text-bq-ink font-bold"
         aria-label={t('quizSet.list.createNew')}
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3}>
@@ -878,7 +878,7 @@ function EmptyState({ groupId, hasSearch, t }: { groupId: string; hasSearch: boo
       {!hasSearch && (
         <Link
           to={`/groups/${groupId}/quiz-sets/new`}
-          className="inline-block px-4 py-2 rounded-lg bg-bq-action shadow-bq-action text-white font-bold text-sm"
+          className="inline-block px-4 py-2 rounded-lg bg-bq-action shadow-bq-action text-bq-ink font-bold text-sm"
         >{t('quizSet.list.createFirst')}</Link>
       )}
     </div>

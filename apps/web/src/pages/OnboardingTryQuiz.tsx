@@ -171,7 +171,7 @@ export default function OnboardingTryQuiz() {
                     <button
                       data-testid="try-quiz-register-btn"
                       onClick={goRegister}
-                      className="bg-bq-action text-white shadow-bq-action font-bold py-4 px-8 rounded-xl flex items-center justify-center gap-3 hover:scale-[1.02] transition-all active:scale-95"
+                      className="bg-bq-action text-bq-ink shadow-bq-action font-bold py-4 px-8 rounded-xl flex items-center justify-center gap-3 hover:scale-[1.02] transition-all active:scale-95"
                     >
                       {t('auth.loginWithGoogle')}
                     </button>
@@ -222,7 +222,7 @@ export default function OnboardingTryQuiz() {
         </div>
         <div className="flex items-center gap-4">
           <button onClick={goSkip} className="text-bq-ink2 hover:text-bq-amberd transition-colors text-sm">Skip</button>
-          <button onClick={goRegister} className="bg-bq-action text-white shadow-bq-action px-6 py-2 rounded-xl text-sm font-bold">Login</button>
+          <button onClick={goRegister} className="bg-bq-action text-bq-ink shadow-bq-action px-6 py-2 rounded-xl text-sm font-bold">Login</button>
         </div>
       </nav>
 
@@ -277,7 +277,7 @@ export default function OnboardingTryQuiz() {
                 >
                   <div className={`flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg font-bold transition-colors ${
                     selected === null
-                      ? 'bg-bq-inset text-bq-amberd group-hover:bg-bq-action group-hover:text-white'
+                      ? 'bg-bq-inset text-bq-amberd group-hover:bg-bq-action group-hover:text-bq-ink'
                       : question.correctAnswer.includes(idx)
                         ? 'bg-bq-emerald/25 text-bq-emerald'
                         : idx === selected

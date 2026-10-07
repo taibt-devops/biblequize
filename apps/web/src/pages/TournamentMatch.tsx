@@ -511,7 +511,7 @@ const TournamentMatch: React.FC = () => {
                 <button
                   onClick={() => navigate(`/tournaments/${id}`)}
                   className="px-8 py-3 rounded-xl font-bold text-sm uppercase tracking-wider hover:scale-105 transition-transform"
-                  style={{ background: 'var(--bq-action)', color: '#FFFFFF', boxShadow: 'var(--bq-glow-action)' }}
+                  style={{ background: 'var(--bq-action)', color: 'var(--bq-action-fg)', boxShadow: 'var(--bq-glow-action)' }}
                 >
                   {t('tournaments.backToBracket')}
                 </button>
@@ -541,7 +541,7 @@ const TournamentMatch: React.FC = () => {
             <p className="text-lg mb-8" style={{ color: 'var(--bq-ink-soft)' }}>{t('tournaments.wonMatch')}</p>
             <button
               className="px-10 py-4 rounded-xl font-bold text-sm uppercase tracking-widest hover:scale-105 transition-transform"
-              style={{ background: 'var(--bq-action)', color: '#FFFFFF', boxShadow: 'var(--bq-glow-action)' }}
+              style={{ background: 'var(--bq-action)', color: 'var(--bq-action-fg)', boxShadow: 'var(--bq-glow-action)' }}
               onClick={(e) => { e.stopPropagation(); navigate(`/tournaments/${id}`); }}
             >
               <span className="flex items-center gap-2">

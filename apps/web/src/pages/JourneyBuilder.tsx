@@ -95,7 +95,7 @@ const CreateJourney: React.FC<{ groupId: string; navigate: ReturnType<typeof use
         {error && <div className="text-error text-sm" data-testid="journey-error">{error}</div>}
         <button
           type="submit" disabled={create.isPending || !title.trim()} data-testid="journey-create-submit"
-          className="w-full py-3.5 rounded-xl font-extrabold text-sm flex items-center justify-center gap-2 transition disabled:opacity-50 bg-bq-action text-white shadow-bq-action"
+          className="w-full py-3.5 rounded-xl font-extrabold text-sm flex items-center justify-center gap-2 transition disabled:opacity-50 bg-bq-action text-bq-ink shadow-bq-action"
         >
           <span className="material-symbols-outlined text-base">hiking</span>
           {create.isPending ? '...' : t('groupJourney.createCta')}
@@ -222,7 +222,7 @@ const BuildWeeks: React.FC<{ groupId: string; journeyId: string; navigate: Retur
       {/* Start */}
       <button
         type="button" onClick={onStart} disabled={!canStart || start.isPending} data-testid="journey-start-submit"
-        className="w-full py-3.5 rounded-xl font-extrabold text-sm flex items-center justify-center gap-2 transition disabled:opacity-50 bg-bq-action text-white shadow-bq-action"
+        className="w-full py-3.5 rounded-xl font-extrabold text-sm flex items-center justify-center gap-2 transition disabled:opacity-50 bg-bq-action text-bq-ink shadow-bq-action"
       >
         <span className="material-symbols-outlined text-base">flag</span>
         {start.isPending ? '...' : t('groupJourney.startCta')}

@@ -86,7 +86,7 @@ function GuestHeader() {
           </Link>
           <Link
             to="/login"
-            className="bg-bq-action px-4 sm:px-6 py-2 rounded-xl text-white shadow-bq-action font-bold text-sm sm:text-base active:scale-95 transition-transform inline-block whitespace-nowrap"
+            className="bg-bq-action px-4 sm:px-6 py-2 rounded-xl text-bq-ink shadow-bq-action font-bold text-sm sm:text-base active:scale-95 transition-transform inline-block whitespace-nowrap"
           >
             {t('auth.register')}
           </Link>
@@ -132,7 +132,7 @@ function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="/practice"
-              className="bg-bq-action px-8 py-4 rounded-xl text-white font-bold text-lg shadow-bq-action active:scale-95 transition-transform text-center"
+              className="bg-bq-action px-8 py-4 rounded-xl text-bq-ink font-bold text-lg shadow-bq-action active:scale-95 transition-transform text-center"
             >
               {t('landing.tryNow')}
             </Link>
@@ -269,7 +269,7 @@ function TryNowSection() {
               </div>
               <Link
                 to="/daily"
-                className="bg-bq-action px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl text-white shadow-bq-action font-bold text-sm sm:text-base active:scale-95 transition-transform inline-block whitespace-nowrap"
+                className="bg-bq-action px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl text-bq-ink shadow-bq-action font-bold text-sm sm:text-base active:scale-95 transition-transform inline-block whitespace-nowrap"
               >
                 {t('gameModes.dailyBtn')}
               </Link>
@@ -340,7 +340,7 @@ function LeaderboardPreview() {
     <section id="leaderboard" className="scroll-mt-24 py-16 sm:py-24 px-4 sm:px-6 bg-bq-paper" aria-label="Bảng xếp hạng">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <div className="inline-block px-6 py-2 rounded-full bg-bq-action text-white shadow-bq-action font-extrabold text-lg mb-6">
+          <div className="inline-block px-6 py-2 rounded-full bg-bq-action text-bq-ink shadow-bq-action font-extrabold text-lg mb-6">
             {import.meta.env.VITE_SEASON_NAME || t('landing.seasonDefault')}
           </div>
           <h2 className="font-display text-4xl font-extrabold tracking-tight text-bq-ink">{t('landing.nationalLeaderboard')}</h2>
@@ -474,7 +474,7 @@ function ChurchGroupShowcase() {
 
           <Link
             to="/groups"
-            className="bg-bq-action px-8 py-4 rounded-xl text-white font-bold text-lg active:scale-95 transition-transform shadow-bq-action inline-block"
+            className="bg-bq-action px-8 py-4 rounded-xl text-bq-ink font-bold text-lg active:scale-95 transition-transform shadow-bq-action inline-block"
           >
             {t('landing.createFreeGroup')}
           </Link>

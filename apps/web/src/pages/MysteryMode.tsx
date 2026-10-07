@@ -78,7 +78,7 @@ export default function MysteryMode() {
           onClick={startQuiz}
           disabled={starting}
           data-testid="mystery-start-btn"
-          className="px-8 py-3 bg-bq-action text-white font-black rounded-xl shadow-bq-action transition-colors disabled:opacity-50"
+          className="px-8 py-3 bg-bq-action text-bq-ink font-black rounded-xl shadow-bq-action transition-colors disabled:opacity-50"
         >
           {starting ? '...' : t('gameModes.mysteryBtn')}
         </button>

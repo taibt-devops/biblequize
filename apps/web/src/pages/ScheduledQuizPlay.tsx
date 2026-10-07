@@ -63,7 +63,7 @@ const ScheduledQuizPlay: React.FC = () => {
         <div className="text-3xl font-bold text-bq-amberd tabular-nums my-3">{result.score}</div>
         <p className="text-bq-ink2 text-sm mb-5">{result.correctCount}/{result.totalQuestions} {t('scheduledQuiz.correct')}</p>
         <button onClick={() => navigate(`/groups/${groupId}/scheduled-quizzes/${quizId}`, { replace: true })}
-          className="w-full py-3 rounded-xl font-bold text-sm bg-bq-action text-white shadow-bq-action">
+          className="w-full py-3 rounded-xl font-bold text-sm bg-bq-action text-bq-ink shadow-bq-action">
           {t('scheduledQuiz.backToDetail')}
         </button>
       </div>
@@ -122,7 +122,7 @@ const ScheduledQuizPlay: React.FC = () => {
         </button>
         {!isLast ? (
           <button onClick={() => setIdx(i => Math.min(questions.length - 1, i + 1))}
-            className="flex-1 py-3 rounded-xl text-sm font-bold bg-bq-action text-white shadow-bq-action">
+            className="flex-1 py-3 rounded-xl text-sm font-bold bg-bq-action text-bq-ink shadow-bq-action">
             {t('scheduledQuiz.next')}
           </button>
         ) : (

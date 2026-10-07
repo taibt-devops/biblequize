@@ -452,7 +452,7 @@ const RoomQuizHost: React.FC = () => {
             <button
               data-testid="end-host-replay"
               onClick={handleReplayWithSameGroup}
-              className="bg-bq-action text-white shadow-bq-action w-full py-3.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2"
+              className="bg-bq-action text-bq-ink shadow-bq-action w-full py-3.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2"
             >
               <span className="material-symbols-outlined text-[18px]" aria-hidden="true">replay</span>
               <span>Tổ chức trận mới với cùng nhóm</span>
@@ -790,7 +790,7 @@ const RoomQuizHost: React.FC = () => {
             <button
               data-testid="host-pause-resume"
               onClick={handlePauseToggle}
-              className="bg-bq-action text-white shadow-bq-action inline-flex items-center gap-2 px-8 py-3 rounded-full font-bold text-lg"
+              className="bg-bq-action text-bq-ink shadow-bq-action inline-flex items-center gap-2 px-8 py-3 rounded-full font-bold text-lg"
             >
               <span className="material-symbols-outlined">play_arrow</span>
               Tiếp tục
@@ -834,7 +834,7 @@ const RoomQuizHost: React.FC = () => {
                 data-testid="host-broadcast-send"
                 onClick={handleSendBroadcast}
                 disabled={broadcastMsg.trim().length === 0}
-                className="px-3 py-1.5 rounded text-sm font-bold bg-bq-action text-white shadow-bq-action"
+                className="px-3 py-1.5 rounded text-sm font-bold bg-bq-action text-bq-ink shadow-bq-action"
               >
                 Gửi
               </button>

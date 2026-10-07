@@ -158,7 +158,7 @@ const Achievements: React.FC = () => {
           </p>
           <Link
             to="/login"
-            className="px-6 py-3 rounded-xl font-bold bg-bq-action text-white shadow-bq-action inline-block"
+            className="px-6 py-3 rounded-xl font-bold bg-bq-action text-bq-ink shadow-bq-action inline-block"
           >
             {t('auth.login')}
           </Link>
