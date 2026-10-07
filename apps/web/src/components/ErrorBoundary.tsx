@@ -69,72 +69,62 @@ class ErrorBoundary extends Component<Props, State> {
       const t = i18n.t.bind(i18n)
 
       return (
-        <div data-testid="error-boundary" className="min-h-screen flex items-center justify-center bg-gray-900">
-          <div className="max-w-md w-full mx-4">
-            <div className="bg-red-900/20 border border-red-500/30 rounded-2xl p-8 text-center">
-              {/* Error Icon */}
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-red-500/20 flex items-center justify-center">
-                <svg className="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                </svg>
-              </div>
-              
-              {/* Error Title */}
-              <h2 className="text-2xl font-bold text-red-400 mb-4">
-                {t('components.errorBoundary.title')}
-              </h2>
+        <div data-testid="error-boundary" className="min-h-screen flex items-center justify-center bg-bq-paper px-4 py-10">
+          <div className="max-w-md w-full bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card p-8 text-center">
+            {/* The traveller rests beside an unlit lantern: something stopped, nothing is lost (LKD-20) */}
+            <img src="/images/lk/hero-rest.webp" alt="" aria-hidden className="h-40 mx-auto mb-5" />
 
-              {/* Error Message */}
-              <p className="text-gray-300 mb-6">
-                {t('components.errorBoundary.description')}
-              </p>
-              
-              {/* Error Details (Development only) */}
-              {process.env.NODE_ENV === 'development' && this.state.error && (
-                <details className="mb-6 text-left">
-                  <summary className="cursor-pointer text-sm text-gray-400 hover:text-gray-300 mb-2">
-                    {t('components.errorBoundary.detailsSummary')}
-                  </summary>
-                  <div className="bg-gray-800 rounded-lg p-4 text-xs text-gray-300 overflow-auto max-h-40">
-                    <div className="mb-2">
-                      <strong>{t('components.errorBoundary.errorLabel')}</strong> {this.state.error.message}
-                    </div>
-                    <div className="mb-2">
-                      <strong>{t('components.errorBoundary.stackLabel')}</strong>
-                      <pre className="whitespace-pre-wrap mt-1">{this.state.error.stack}</pre>
-                    </div>
-                    {this.state.errorInfo && (
-                      <div>
-                        <strong>{t('components.errorBoundary.componentStackLabel')}</strong>
-                        <pre className="whitespace-pre-wrap mt-1">{this.state.errorInfo.componentStack}</pre>
-                      </div>
-                    )}
+            <h2 className="font-display text-2xl font-extrabold text-bq-ink mb-3">
+              {t('components.errorBoundary.title')}
+            </h2>
+
+            <p className="font-read text-bq-ink2 mb-6">
+              {t('components.errorBoundary.description')}
+            </p>
+
+            {/* Error Details (Development only) */}
+            {process.env.NODE_ENV === 'development' && this.state.error && (
+              <details className="mb-6 text-left">
+                <summary className="cursor-pointer text-sm font-bold text-bq-ink2 hover:text-bq-ink mb-2">
+                  {t('components.errorBoundary.detailsSummary')}
+                </summary>
+                <div className="bg-bq-parch border-2 border-bq-ink/20 rounded-xl p-4 text-xs text-bq-ink overflow-auto max-h-40">
+                  <div className="mb-2">
+                    <strong>{t('components.errorBoundary.errorLabel')}</strong> {this.state.error.message}
                   </div>
-                </details>
-              )}
-              
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3">
-                <button
-                  data-testid="error-boundary-retry-btn"
-                  onClick={this.handleRetry}
-                  className="flex-1 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200"
-                >
-                  {t('components.errorBoundary.retryButton')}
-                </button>
-                <button
-                  onClick={this.handleReload}
-                  className="flex-1 px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors duration-200"
-                >
-                  {t('components.errorBoundary.reloadButton')}
-                </button>
-              </div>
+                  <div className="mb-2">
+                    <strong>{t('components.errorBoundary.stackLabel')}</strong>
+                    <pre className="whitespace-pre-wrap mt-1">{this.state.error.stack}</pre>
+                  </div>
+                  {this.state.errorInfo && (
+                    <div>
+                      <strong>{t('components.errorBoundary.componentStackLabel')}</strong>
+                      <pre className="whitespace-pre-wrap mt-1">{this.state.errorInfo.componentStack}</pre>
+                    </div>
+                  )}
+                </div>
+              </details>
+            )}
 
-              {/* Help Text */}
-              <p className="text-sm text-gray-400 mt-4">
-                {t('components.errorBoundary.helpHint')}
-              </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <button
+                data-testid="error-boundary-retry-btn"
+                onClick={this.handleRetry}
+                className="lk-btn flex-1 text-bq-ink"
+              >
+                {t('components.errorBoundary.retryButton')}
+              </button>
+              <button
+                onClick={this.handleReload}
+                className="lk-btn lk-btn-2 flex-1 text-bq-ink"
+              >
+                {t('components.errorBoundary.reloadButton')}
+              </button>
             </div>
+
+            <p className="text-sm text-bq-ink3 mt-5">
+              {t('components.errorBoundary.helpHint')}
+            </p>
           </div>
         </div>
       )

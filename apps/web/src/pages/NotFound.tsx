@@ -2,56 +2,51 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import PageMeta from '../components/PageMeta'
 
+/** 404: the traveller is holding a blank map (LKD-20, Lu Khach storybook). */
 export default function NotFound() {
   const { t } = useTranslation()
   const navigate = useNavigate()
 
   return (
-    <div className="relative min-h-screen bg-bq-paper flex items-center justify-center overflow-hidden px-4">
+    <div className="min-h-screen bg-bq-paper flex items-center justify-center px-4 py-12">
       <PageMeta title="Trang không tìm thấy" noindex />
-      {/* Decorative blur circles */}
-      <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-bq-amber/5 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-bq-sapphire/5 blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 flex flex-col items-center text-center max-w-md">
-        {/* Large 404 */}
-        <h1 className="font-display text-[8rem] sm:text-[10rem] font-black leading-none tracking-tighter bg-bq-spectrum bg-clip-text text-transparent select-none">
-          404
-        </h1>
+      <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10 max-w-3xl">
+        <img
+          src="/images/lk/hero-lost.webp"
+          alt=""
+          aria-hidden
+          className="h-56 sm:h-80 shrink-0 motion-safe:animate-bob"
+        />
 
-        {/* Icon */}
-        <span className="material-symbols-outlined text-6xl text-bq-ink3 -mt-4 mb-6">
-          explore_off
-        </span>
-
-        {/* Message */}
-        <h2 className="font-display text-2xl sm:text-3xl font-bold tracking-tight text-bq-ink mb-3">
-          {t('errors.notFound')}
-        </h2>
-        <p className="text-bq-ink2 font-medium leading-relaxed mb-8">
-          {t('errors.notFoundDesc')}
-        </p>
-
-        {/* Actions */}
-        <div className="flex flex-col sm:flex-row items-center gap-4">
-          <Link
-            to="/"
-            className="bg-bq-action text-bq-ink font-bold px-8 py-3 rounded-xl shadow-bq-action hover:scale-[1.02] transition-all duration-200"
+        <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+          <h1
+            className="font-display text-[6.5rem] sm:text-[8rem] font-black leading-none select-none text-bq-ink"
+            style={{ textShadow: '0 0.06em 0 #FFC93C' }}
           >
-            {t('errors.goHome')}
-          </Link>
-          <button
-            onClick={() => navigate(-1)}
-            className="text-bq-ink2 hover:text-bq-ink font-medium px-6 py-3 rounded-xl transition-colors duration-200"
-          >
-            {t('errors.goBack')}
-          </button>
+            404
+          </h1>
+
+          <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-bq-ink mt-3 mb-2">
+            {t('errors.notFound')}
+          </h2>
+          <p className="font-read text-bq-ink2 leading-relaxed mb-7 max-w-sm">
+            {t('errors.notFoundDesc')}
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <Link to="/" className="bg-bq-action shadow-bq-action rounded-bq-btn px-8 py-3 font-extrabold text-bq-ink">
+              {t('errors.goHome')}
+            </Link>
+            <button onClick={() => navigate(-1)} className="lk-btn lk-btn-2 text-bq-ink">
+              {t('errors.goBack')}
+            </button>
+          </div>
+
+          <p className="mt-10 font-read text-sm text-bq-ink3 italic leading-relaxed">
+            {t('errors.seekAndFind')}
+          </p>
         </div>
-
-        {/* Bible verse */}
-        <p className="mt-16 font-literata text-sm text-bq-ink3 italic leading-relaxed">
-          {t('errors.seekAndFind')}
-        </p>
       </div>
     </div>
   )
