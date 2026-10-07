@@ -35,6 +35,8 @@ Tên token giữ từ Khung Sáng, giá trị đổi sang Lữ Khách.
 | `--bq-shadow-btn` | `0 6px 0 var(--bq-ink)` | bóng nút |
 | Bo góc | nút 18px · thẻ 26px · chip 999px | |
 
+**Độ trong suốt:** Tailwind lấy màu `bq-*` từ kênh RGB `--bq-<tên>-rgb` (vd `--bq-amber-rgb: 255 201 60`) nên `bg-bq-amber/10`, `border-bq-emerald/30` mới sinh CSS. Đổi một màu gốc thì **đổi cả biến `-rgb` đi kèm**. Thiếu kênh RGB, Tailwind 3.4 bỏ qua class có `/NN` mà không báo lỗi gì (lỗi này có từ thời Khung Sáng, sửa ở LKD-19).
+
 ## Chữ
 
 | Vai trò | Font | Ghi chú |
@@ -60,13 +62,30 @@ Nút đáp án là "biển gỗ" tô màu C5, viền mực 3px, ô chữ cái tr
 - **Biển gỗ:** `#C68A4E`, chữ `#2B1A08`, viền mực, bóng cứng. Dùng cho lối vào chế độ chơi.
 - **Thanh tiến độ:** track `#F0DFB8` viền mực 2–3px, phần đã đi màu vàng.
 - **Đèn nhiệm vụ:** đèn sáng = xong, đèn mờ = đang làm, đèn tắt = chưa làm (luôn kèm số và thanh, không chỉ dựa vào màu).
-- **Khiên hạng:** 6 ảnh khiên theo C1 (`/images/lk/tier-1..6.webp`).
+- **Khiên hạng:** 6 ảnh khiên theo C1 (`/images/lk/tier-1..6.webp`). Màu chữ hạng (`data/tiers.ts`) đã làm đậm cho nền giấy: `#6B5530` · `#2E7D4F` · `#2F6FB0` · `#7A4AA0` · `#A8690C` · `#B3452F`.
+- **Chữ sticker:** số/tiêu đề lớn cần nổi bật thì dùng chữ mực + bóng vàng lệch xuống: `color: #1D2B22; text-shadow: 0 0.06em 0 #FFC93C`. KHÔNG dùng chữ tô gradient (`background-clip: text`): mọi gradient Lữ Khách đều đi qua vàng sáng và biến mất trên nền kem.
+- **Bục xếp hạng:** khối vàng (hạng 1) / giấy (2) / rãnh (3), viền mực, điểm chữ mực.
+- **Trang trống / lỗi:** 404 = lữ khách cầm bản đồ trắng (`hero-lost.webp`); lỗi = lữ khách ngồi nghỉ cạnh đèn tắt (`hero-rest.webp`); danh sách trống = icon trong vòng tròn lá viền mực (`EmptyState`).
 
 ## Ảnh (`apps/web/public/images/lk/`)
 
 - Vẽ bằng Game Asset Studio, style "Lữ Khách" (ảnh mốc: nhân vật lữ khách), chất lượng medium.
-- Sprite nền trong suốt → WebP, cạnh dài ≤ 420px. Tranh nền 1536×1024 → WebP q82.
+- Sprite nền trong suốt → WebP, cạnh dài ≤ 420px (sprite lớn cho 404 / màn lỗi ≤ 512px). Tranh nền 1536×1024 → WebP q82.
 - Mọi ảnh trang trí có `alt=""`; ảnh mang nghĩa có `alt` tiếng Việt.
+
+## Cầu nối cho class cũ (global.css + tailwind.config.js)
+
+Code cũ còn dùng tên của 2 design system trước. Các tên đó được giữ lại nhưng trỏ sang màu Lữ Khách, để màn cũ tự đổi theo. **Code mới không dùng các tên này.**
+
+| Tên cũ | Giờ là |
+|---|---|
+| `bg-surface-*`, `bg-background` | giấy / giấy kem |
+| `text-on-surface*`, `text-secondary`, `text-error`, `text-primary` | mực / vàng sậm / hồng đất / lam |
+| `--hp-*` (`.form-input`, `.form-select`, `.segmented-control`, `.badge-*`) | giấy, mực, vàng |
+| `.bg-bq-white.border-bq-hair.shadow-bq-soft` | thẻ dán (viền mực 3px) |
+| `button/a.bg-bq-action.shadow-bq-action`, `.gold-gradient`, `.lk-btn` | nút vàng ấn được; `.lk-btn-2` = nút lá |
+
+Admin dùng mã hex viết thẳng đã đổi sang màu Lữ Khách (LKD-18). `index.html` đặt `body` màu mực, nên phần tử không tự đặt màu chữ sẽ là mực.
 
 ## Quy tắc UI bắt buộc
 
