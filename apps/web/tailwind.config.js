@@ -111,19 +111,18 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Be Vietnam Pro', 'system-ui', 'sans-serif'],
-        headline: ['Be Vietnam Pro', 'system-ui', 'sans-serif'],
+        // "Lữ Khách" (LKD-1): Baloo 2 is the UI face everywhere; Be Vietnam Pro
+        // stays only for long reading text (`font-read`, `font-body`).
+        sans: ['"Baloo 2"', 'Be Vietnam Pro', 'system-ui', 'sans-serif'],
+        headline: ['"Baloo 2"', 'Be Vietnam Pro', 'system-ui', 'sans-serif'],
         body: ['Be Vietnam Pro', 'system-ui', 'sans-serif'],
-        label: ['Be Vietnam Pro', 'system-ui', 'sans-serif'],
-        // V3 design — "Sacred Modernist Gaming"
-        sora: ['Sora', 'Be Vietnam Pro', 'system-ui', 'sans-serif'],
-        // "Khung Sáng" (KS W0-1): display = Bricolage Grotesque, verse = Literata.
-        // `literata` is separate from `verse` (Cormorant, HR-1) to avoid clobbering.
-        display: ['"Bricolage Grotesque"', 'Be Vietnam Pro', 'system-ui', 'sans-serif'],
-        literata: ['Literata', 'Georgia', 'serif'],
-        // HR-1: Cormorant Garamond italic ONLY for verse text + drop cap.
-        // Do not use this stack elsewhere (mode titles, headings, etc.).
-        verse: ['"Cormorant Garamond"', '"Crimson Pro"', 'Playfair Display', 'serif'],
+        read: ['Be Vietnam Pro', 'system-ui', 'sans-serif'],
+        label: ['"Baloo 2"', 'Be Vietnam Pro', 'system-ui', 'sans-serif'],
+        sora: ['"Baloo 2"', 'Be Vietnam Pro', 'system-ui', 'sans-serif'],
+        display: ['"Baloo 2"', 'Be Vietnam Pro', 'system-ui', 'sans-serif'],
+        // Verse text joins the storybook face (was Literata / Cormorant italic).
+        literata: ['"Baloo 2"', 'Be Vietnam Pro', 'system-ui', 'sans-serif'],
+        verse: ['"Baloo 2"', 'Be Vietnam Pro', 'system-ui', 'sans-serif'],
         // Legacy
         serif: ['Playfair Display', 'serif'],
         cursive: ['Caveat', 'cursive'],
