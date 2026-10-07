@@ -52,7 +52,7 @@ export default function MobileBottomTabs() {
   return (
     <nav
       data-testid="mobile-bottom-tabs"
-      className="md:hidden fixed bottom-0 left-0 w-full z-40 flex items-stretch justify-between px-1 pt-1 bg-bq-paper/90 backdrop-blur-xl border-t border-bq-hair"
+      className="md:hidden fixed bottom-0 left-0 w-full z-40 flex items-stretch justify-between gap-1 px-1.5 pt-1.5 bg-bq-white border-t-[3px] border-bq-ink"
       style={{ paddingBottom: 'max(8px, min(env(safe-area-inset-bottom, 0px), 12px))' }}
     >
       {visibleTabs.map(tab => {
@@ -65,10 +65,10 @@ export default function MobileBottomTabs() {
             data-active={active ? 'true' : 'false'}
             aria-label={t(tab.labelKey) as string}
             aria-current={active ? 'page' : undefined}
-            className={`relative flex-1 flex flex-col items-center justify-center gap-0.5 min-h-[44px] px-1 transition-colors duration-200 ease-out ${
+            className={`relative flex-1 flex flex-col items-center justify-center gap-0.5 min-h-[44px] px-1 rounded-xl border-2 transition-colors duration-200 ease-out ${
               active
-                ? 'text-bq-amberd'
-                : 'text-bq-ink3 hover:text-bq-ink2'
+                ? 'bg-bq-amber border-bq-ink text-bq-ink'
+                : 'border-transparent text-bq-ink2 hover:text-bq-ink'
             }`}
           >
             <span
@@ -79,18 +79,12 @@ export default function MobileBottomTabs() {
               {tab.icon}
             </span>
             <span
-              className={`text-[11px] leading-tight whitespace-nowrap ${
-                active ? 'font-semibold' : 'font-medium'
+              className={`text-[12px] leading-tight whitespace-nowrap ${
+                active ? 'font-extrabold' : 'font-semibold'
               }`}
             >
               {t(tab.labelKey)}
             </span>
-            {active && (
-              <span
-                aria-hidden="true"
-                className="absolute bottom-0 h-[2px] w-6 rounded-full bg-bq-amber"
-              />
-            )}
           </Link>
         )
       })}

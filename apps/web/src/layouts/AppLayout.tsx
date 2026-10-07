@@ -19,8 +19,9 @@ const navItems = [
 ]
 
 /**
- * Top-level layout — "Khung Sáng" TopNav (KS W0-2 redo):
- *   - Sticky horizontal nav per the mockup: spectrum logo mark + nav links
+ * Top-level layout — "Lữ Khách" TopNav (LKD-10; was Khung Sáng KS W0-2):
+ *   - Sticky cream bar with an ink rule: lantern logo + nav links (active = gold
+ *     pill with ink outline)
  *     + 3 stats (streak / năng lượng / điểm mùa) + bell + avatar dropdown.
  *   - Single centered content column below (no sidebar).
  *   - Mobile (< md): nav links + stats collapse; MobileBottomTabs handles
@@ -49,19 +50,13 @@ export default function AppLayout() {
 
       <header
         data-testid="app-topnav"
-        className="sticky top-0 z-30 bg-bq-paper/85 backdrop-blur-md border-b border-bq-hair"
+        className="sticky top-0 z-30 bg-bq-white border-b-[3px] border-bq-ink"
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center gap-5">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 shrink-0" aria-label="BibleQuiz home">
-            <span
-              aria-hidden
-              className="relative w-[30px] h-[34px] rounded-[15px_15px_7px_7px/18px_18px_7px_7px] overflow-hidden bg-bq-spectrum shadow-[0_4px_14px_-4px_rgba(245,158,11,0.5)]"
-            >
-              <span className="absolute inset-[3px] rounded-[13px_13px_5px_5px/16px_16px_5px_5px] bg-bq-paper" />
-              <span className="absolute left-1/2 top-[9px] -translate-x-1/2 w-[7px] h-[13px] rounded-[50%_50%_50%_50%/62%_62%_38%_38%] bg-bq-flame" />
-            </span>
-            <span className="font-display text-[19px] font-extrabold tracking-[-0.01em] text-bq-ink leading-none">
+            <img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="h-[34px] w-auto" />
+            <span className="font-display text-[24px] font-extrabold tracking-[-0.01em] text-bq-ink leading-none">
               Bible<span className="text-bq-amberd">Quiz</span>
             </span>
           </Link>
@@ -72,8 +67,10 @@ export default function AppLayout() {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-[13.5px] font-semibold px-3.5 py-2 rounded-full transition-colors ${
-                  isActive(item.path) ? 'bg-bq-ink text-white' : 'text-bq-ink2 hover:text-bq-ink hover:bg-bq-inset'
+                className={`text-[16px] font-bold px-4 py-1 rounded-full border-[3px] transition-colors ${
+                  isActive(item.path)
+                    ? 'bg-bq-amber border-bq-ink text-bq-ink'
+                    : 'border-transparent text-bq-ink2 hover:text-bq-ink hover:bg-bq-inset'
                 }`}
               >
                 {t(item.labelKey)}
@@ -103,7 +100,7 @@ export default function AppLayout() {
               <Link
                 to="/login"
                 data-testid="topnav-login-link"
-                className="inline-flex items-center text-[13.5px] font-semibold px-4 py-2 rounded-full bg-bq-ink text-white hover:bg-bq-ink/90 transition-colors"
+                className="inline-flex items-center text-[16px] font-bold px-5 py-1.5 rounded-bq-btn bg-bq-action shadow-bq-action text-bq-ink"
               >
                 {t('auth.login')}
               </Link>
