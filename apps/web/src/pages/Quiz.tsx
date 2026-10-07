@@ -1175,14 +1175,14 @@ const Quiz: React.FC = () => {
                   data-testid="quiz-explanation-pill"
                   type="button"
                   onClick={() => setExplanationCollapsed(false)}
-                  className={`px-4 py-2 rounded-full bg-bq-white border text-xs font-bold flex items-center gap-2 shadow-bq-soft hover:scale-105 transition-transform ${pillBorder}`}
+                  className={`px-4 py-2 rounded-full bg-bq-white border-2 border-bq-ink text-sm font-bold flex items-center gap-2 shadow-bq-btn hover:scale-105 transition-transform ${pillBorder}`}
                 >
                   <span className="material-symbols-outlined text-sm" style={FILL_STYLE}>lightbulb</span>
                   {t('quiz.showExplanationAgain', 'Xem giải thích')}
                 </button>
               ) : (
                 <div ref={explanationRef} data-testid="quiz-explanation" className="w-full animate-slide-up">
-                  <div className={`bg-bq-white p-5 rounded-2xl border space-y-3 max-h-[50vh] overflow-y-auto shadow-bq-soft ${isCorrect ? 'border-bq-amber/40' : 'border-bq-ruby/40'}`}>
+                  <div className="bg-bq-white p-5 rounded-bq border-[3px] border-bq-ink space-y-3 max-h-[50vh] overflow-y-auto shadow-bq-card">
                     <div className="flex items-center justify-between gap-2">
                       <div className="flex items-center gap-2 min-w-0">
                         {hasWrongExp && (
@@ -1218,7 +1218,7 @@ const Quiz: React.FC = () => {
                       </p>
                     )}
                     {currentQuestion.explanation && (
-                      <p className="text-bq-ink2 text-sm leading-relaxed flex items-start gap-1.5">
+                      <p className="font-read text-bq-ink2 text-sm leading-relaxed flex items-start gap-1.5">
                         <span className="material-symbols-outlined text-sm mt-0.5 text-bq-amberd">lightbulb</span>
                         <span>{currentQuestion.explanation}</span>
                       </p>
@@ -1240,17 +1240,18 @@ const Quiz: React.FC = () => {
             )}
             <div
               data-testid="quiz-answer-feedback"
-              className={`w-full bg-bq-white p-4 sm:p-5 rounded-3xl border shadow-bq-soft flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 ${isCorrect ? 'border-bq-amber/40' : 'border-bq-ruby/40'}`}
+              className="w-full bg-bq-white p-4 sm:p-5 rounded-bq border-[3px] border-bq-ink shadow-bq-card flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4"
             >
               <div className="flex items-center gap-4 min-w-0">
-                <div className={`w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center flex-shrink-0 ${isCorrect ? 'bg-bq-amber/15' : 'bg-bq-ruby/15'}`}>
-                  <span
-                    className={`material-symbols-outlined text-2xl ${isCorrect ? 'text-bq-amberd' : 'text-bq-ruby'}`}
-                    style={FILL_STYLE}
-                  >{isCorrect ? 'verified' : 'cancel'}</span>
-                </div>
+                {/* Lữ Khách: the traveller cheers on a right answer, stands by on a wrong one (LKD-13). */}
+                <img
+                  src={isCorrect ? '/images/lk/hero-cheer.webp' : '/images/lk/hero.webp'}
+                  alt=""
+                  aria-hidden
+                  className="h-16 sm:h-20 w-auto flex-shrink-0 -my-2"
+                />
                 <div className="min-w-0 flex-1">
-                  <p className="text-base font-bold text-bq-ink leading-tight">
+                  <p className={`text-xl font-extrabold leading-tight ${isCorrect ? 'text-bq-emerald' : 'text-bq-ruby'}`}>
                     {isCorrect ? t('quiz.correct') : t('quiz.incorrect')}
                   </p>
                   <p data-testid="quiz-score-delta" className={`text-xs font-medium leading-tight mt-0.5 ${isCorrect ? 'text-bq-amberd' : 'text-bq-ruby'}`}>
