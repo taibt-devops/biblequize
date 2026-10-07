@@ -24,7 +24,7 @@ describe('Button', () => {
   it('applies secondary variant', () => {
     render(<Button variant="secondary">Secondary</Button>)
     const btn = screen.getByRole('button')
-    expect(btn.className).toContain('bg-bq-inset')
+    expect(btn.className).toContain('bg-bq-leaf')
   })
 
   it('applies outline variant', () => {
@@ -41,10 +41,10 @@ describe('Button', () => {
 
   it('applies size classes', () => {
     const { rerender } = render(<Button size="sm">Small</Button>)
-    expect(screen.getByRole('button').className).toContain('h-8')
+    expect(screen.getByRole('button').className).toContain('h-9')
 
     rerender(<Button size="lg">Large</Button>)
-    expect(screen.getByRole('button').className).toContain('h-12')
+    expect(screen.getByRole('button').className).toContain('h-14')
   })
 
   it('is disabled when disabled prop is set', () => {

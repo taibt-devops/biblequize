@@ -14,19 +14,20 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   ...props
 }) => {
-  const baseClasses = 'inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none'
+  // Lữ Khách pressable button: ink outline, hard shadow, sinks 4px when pressed.
+  const baseClasses = 'inline-flex items-center justify-center gap-2 rounded-bq-btn border-[3px] border-bq-ink font-bold shadow-bq-btn transition-[transform,box-shadow,filter] duration-75 active:translate-y-1 active:shadow-bq-btn-down focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-bq-sapphire focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none'
   
   const variantClasses = {
-    primary: 'bg-bq-action text-bq-ink shadow-bq-action hover:brightness-105',
-    secondary: 'bg-bq-inset text-bq-ink hover:bg-bq-hair',
-    outline: 'border border-bq-hair bg-transparent text-bq-ink hover:bg-bq-inset',
-    ghost: 'text-bq-ink hover:bg-bq-inset'
+    primary: 'bg-bq-action text-bq-ink hover:brightness-105',
+    secondary: 'bg-bq-leaf text-bq-ink hover:brightness-105',
+    outline: 'bg-bq-white text-bq-ink hover:bg-bq-inset',
+    ghost: 'border-transparent shadow-none text-bq-ink hover:bg-bq-inset active:translate-y-0 active:shadow-none'
   }
   
   const sizeClasses = {
-    sm: 'h-8 px-3 text-sm',
-    md: 'h-10 px-4 py-2',
-    lg: 'h-12 px-6 text-lg'
+    sm: 'h-9 px-3 text-sm',
+    md: 'h-11 px-5 text-base',
+    lg: 'h-14 px-7 text-lg'
   }
 
   return (

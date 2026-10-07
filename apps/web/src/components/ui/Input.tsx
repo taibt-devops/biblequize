@@ -18,14 +18,14 @@ export const Input: React.FC<InputProps> = ({
   return (
     <div className="space-y-2">
       {label && (
-        <label htmlFor={inputId} className="text-sm font-medium text-bq-ink2">
+        <label htmlFor={inputId} className="text-sm font-bold text-bq-ink2">
           {label}
         </label>
       )}
       <input
         id={inputId}
         className={clsx(
-          'flex h-10 w-full rounded-md border border-bq-hair bg-bq-white px-3 py-2 text-sm text-bq-ink ring-offset-bq-paper file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-bq-ink3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bq-sapphire focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+          'flex h-11 w-full rounded-bq-btn border-2 border-bq-ink bg-bq-inset px-3 py-2 text-base text-bq-ink ring-offset-bq-paper file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-bq-ink3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bq-sapphire focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
           error && 'border-bq-ruby focus-visible:ring-bq-ruby',
           className
         )}

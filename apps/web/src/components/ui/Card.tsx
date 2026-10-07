@@ -8,7 +8,8 @@ interface CardProps {
 
 export const Card: React.FC<CardProps> = ({ children, className }) => {
   return (
-    <div className={clsx('rounded-2xl border border-bq-hair bg-bq-white shadow-bq-soft', className)}>
+    // Lữ Khách sticker card: cream paper, 3px ink outline, hard offset shadow.
+    <div className={clsx('rounded-bq border-[3px] border-bq-ink bg-bq-white shadow-bq-card', className)}>
       {children}
     </div>
   )
@@ -47,7 +48,7 @@ interface CardTitleProps {
 
 export const CardTitle: React.FC<CardTitleProps> = ({ children, className }) => {
   return (
-    <h3 className={clsx('text-2xl font-semibold leading-none tracking-tight', className)}>
+    <h3 className={clsx('text-2xl font-extrabold leading-tight', className)}>
       {children}
     </h3>
   )

@@ -15,9 +15,9 @@ describe('Card', () => {
 
   it('has default styling', () => {
     const { container } = render(<Card>Content</Card>)
-    expect(container.firstChild).toHaveClass('rounded-2xl')
-    expect(container.firstChild).toHaveClass('border')
-    expect(container.firstChild).toHaveClass('shadow-bq-soft')
+    expect(container.firstChild).toHaveClass('rounded-bq')
+    expect(container.firstChild).toHaveClass('border-bq-ink')
+    expect(container.firstChild).toHaveClass('shadow-bq-card')
   })
 })
 

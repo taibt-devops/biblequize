@@ -19,7 +19,7 @@ const SIZE_MAX_WIDTH: Record<NonNullable<ModalProps['size']>, number> = {
 }
 
 /**
- * Sacred Modernist base modal — glass card on a blurred backdrop.
+ * Lữ Khách base modal — cream sticker card (ink outline, hard shadow) on a dimmed backdrop.
  *
  * Hardcoded hex values throughout (no CSS variables — they render against a
  * white background in the portal layer due to a known token-resolution bug).
@@ -89,9 +89,7 @@ export default function Modal({
       style={{
         position: 'fixed',
         inset: 0,
-        background: 'rgba(22, 21, 27, 0.45)',
-        backdropFilter: 'blur(8px)',
-        WebkitBackdropFilter: 'blur(8px)',
+        background: 'rgba(29, 43, 34, 0.5)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -108,13 +106,13 @@ export default function Modal({
         onClick={(e) => e.stopPropagation()}
         style={{
           position: 'relative',
-          background: '#FFFFFF',
-          border: '1px solid #E7E4DA',
-          borderRadius: 24,
+          background: '#FFF8E7',
+          border: '3px solid #1D2B22',
+          borderRadius: 26,
           padding: '32px 24px 24px 24px',
           maxWidth: SIZE_MAX_WIDTH[size],
           width: '100%',
-          boxShadow: '0 34px 64px -28px rgba(20, 20, 30, 0.35)',
+          boxShadow: '6px 10px 0 rgba(29, 43, 34, 0.35)',
           animation: 'bq-modal-slide-up 0.4s ease',
         }}
       >
@@ -132,10 +130,11 @@ export default function Modal({
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              borderRadius: 8,
-              background: 'transparent',
-              border: 'none',
-              color: '#6C6A62',
+              borderRadius: 12,
+              background: '#FFF8E7',
+              border: '3px solid #1D2B22',
+              boxShadow: '0 3px 0 #1D2B22',
+              color: '#1D2B22',
               cursor: 'pointer',
               fontSize: 20,
             }}
