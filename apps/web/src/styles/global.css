@@ -3012,3 +3012,56 @@ html.capacitor .select-text {
     transform: none !important;
   }
 }
+
+/* ═════════════════════════════════════════════════════════════════════
+   "Lữ Khách" sticker cards + pressable buttons (LKD-9)
+   Pages build cards as `bg-bq-white border border-bq-hair shadow-bq-soft`
+   (≈210 places) and primary CTAs as `bg-bq-action shadow-bq-action`
+   (≈113 places). These bridge rules give every such card the ink outline
+   and every such CTA the pressable look in one place instead of editing
+   each page. New code: use .lk-card / .lk-btn (+ .lk-btn-2, leaf secondary).
+   Hex hardcoded on purpose (see body note) — keep in sync with tokens.css.
+   ═════════════════════════════════════════════════════════════════════ */
+.lk-card,
+.bg-bq-white.border-bq-hair.shadow-bq-soft {
+  border-width: 3px;
+  border-color: #1D2B22;
+}
+.bg-bq-white.border-bq-hair.shadow-bq-soft.rounded-full { border-width: 2px; }
+.lk-card {
+  border-style: solid;
+  border-radius: 26px;
+  background: #FFF8E7;
+  box-shadow: 6px 10px 0 rgba(29, 43, 34, .35);
+}
+
+.lk-btn,
+button.bg-bq-action.shadow-bq-action,
+a.bg-bq-action.shadow-bq-action {
+  border: 3px solid #1D2B22;
+  box-shadow: 0 6px 0 #1D2B22;
+  color: #1D2B22;
+  transition: transform .08s ease, box-shadow .08s ease, filter .15s ease;
+}
+button.bg-bq-action.shadow-bq-action.rounded-full { border-width: 2px; box-shadow: 0 3px 0 #1D2B22; }
+.lk-btn:hover:not(:disabled),
+button.bg-bq-action.shadow-bq-action:hover:not(:disabled),
+a.bg-bq-action.shadow-bq-action:hover { filter: brightness(1.04); }
+.lk-btn:active:not(:disabled),
+button.bg-bq-action.shadow-bq-action:not(.rounded-full):active:not(:disabled),
+a.bg-bq-action.shadow-bq-action:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #1D2B22;
+}
+.lk-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .7rem 1.6rem;
+  border-radius: 18px;
+  background: #FFC93C;
+  font-weight: 800;
+}
+.lk-btn-2 { background: #D9F0C8; }
+.lk-btn:disabled { opacity: .55; cursor: not-allowed; }
