@@ -118,7 +118,7 @@ export default function UserDropdown({
         className={
           trigger === 'card'
             ? 'flex items-center gap-3 w-full px-3 py-2.5 rounded-lg bg-bq-white border border-bq-hair hover:bg-bq-inset transition-colors text-left'
-            : 'w-10 h-10 rounded-full grid place-items-center transition-transform hover:scale-[1.04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/60'
+            : 'w-9 h-9 md:w-11 md:h-11 rounded-full grid place-items-center transition-transform hover:scale-[1.04] focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-bq-sapphire focus-visible:ring-offset-2'
         }
       >
         {trigger === 'card' ? (
@@ -174,12 +174,12 @@ export default function UserDropdown({
             src={resolved.kind === 'img' ? resolved.src : undefined}
             alt={displayName}
             onError={() => setAvatarBroken(true)}
-            className="w-full h-full rounded-full object-cover border border-[rgba(232,168,50,0.35)]"
+            className="w-full h-full rounded-full object-cover border-[3px] border-bq-ink"
           />
         ) : resolved.kind === 'preset' ? (
           <span
             data-testid="user-dropdown-avatar-preset"
-            className="w-full h-full rounded-full flex items-center justify-center text-[30px] leading-none border border-[rgba(232,168,50,0.35)]"
+            className="w-full h-full rounded-full flex items-center justify-center text-[26px] leading-none border-[3px] border-bq-ink"
             style={{ background: resolved.preset.bg }}
             aria-hidden
           >
@@ -188,11 +188,7 @@ export default function UserDropdown({
         ) : (
           <span
             data-testid="user-dropdown-avatar-initial"
-            className="w-full h-full rounded-full grid place-items-center text-[15px] font-extrabold text-bq-ink"
-            style={{
-              background: '#FFC93C',
-              border: '3px solid #1D2B22',
-            }}
+            className="w-full h-full rounded-full grid place-items-center text-[16px] md:text-[20px] font-extrabold text-bq-ink bg-bq-leaf border-[3px] border-bq-ink"
           >
             {displayName.charAt(0).toUpperCase()}
           </span>

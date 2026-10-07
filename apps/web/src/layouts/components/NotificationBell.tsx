@@ -103,7 +103,7 @@ export default function NotificationBell({ wrapperClassName = '' }: Notification
         data-testid="notification-bell-btn"
         aria-label={t('header.notifications.title') as string}
         onClick={() => setOpen(p => !p)}
-        className="relative w-10 h-10 flex items-center justify-center rounded-[10px] bg-bq-white border border-bq-hair text-bq-ink2 hover:bg-bq-inset hover:text-bq-ink transition-colors"
+        className="relative w-9 h-9 md:w-11 md:h-11 flex items-center justify-center rounded-full bg-bq-cream border-2 md:border-[3px] border-bq-ink text-bq-ink hover:bg-bq-amber transition-colors"
       >
         <span className="material-symbols-outlined text-[22px]">notifications</span>
         {unreadCount > 0 && (

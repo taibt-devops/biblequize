@@ -19,6 +19,9 @@
   --bq-hairline:     #C9B58C;   /* đường kẻ mảnh bên trong thẻ */
   --bq-parch:        #F9ECC8;   /* thân cuộn giấy */
   --bq-track:        #F0DFB8;   /* rãnh thanh tiến độ */
+  --bq-cream:        #FFF1C9;   /* chip, thẻ mùa, hàng "Bạn" (mockup) */
+  --bq-silver:       #DFE3EA;   /* huy chương hạng 2 */
+  --bq-bronze:       #E2B07A;   /* huy chương hạng 3 */
 
   /* Ink / text */
   --bq-ink:          #1D2B22;   /* mực: chữ chính, viền, bóng */
@@ -62,6 +65,9 @@
   --bq-wood-ink-rgb: 43 26 8;
   --bq-parch-rgb: 249 236 200;
   --bq-track-rgb: 240 223 184;
+  --bq-cream-rgb: 255 241 201;
+  --bq-silver-rgb: 223 227 234;
+  --bq-bronze-rgb: 226 176 122;
 
   /* ---------- 2. SEMANTIC ---------- */
 

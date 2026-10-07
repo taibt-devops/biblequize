@@ -7,14 +7,17 @@ import OfflineBanner from '../components/OfflineBanner'
 import NotificationBell from './components/NotificationBell'
 import UserDropdown from './components/UserDropdown'
 import MobileBottomTabs from './components/MobileBottomTabs'
+import HeaderStats from './components/HeaderStats'
 
+// Lu Khach mockup (LKF-1): Home, Journey, Leaderboard, Groups, Profile.
+// Multiplayer rooms are entered from the Home signpost.
 const navItems = [
   { path: '/', labelKey: 'nav.home' },
-  { path: '/leaderboard', labelKey: 'nav.leaderboard' },
   // `auth: true` = chỉ hiện khi đã đăng nhập. Guest vào route public
   // (vd /leaderboard) không thấy link dẫn tới trang RequireAuth.
+  { path: '/journey', labelKey: 'nav.journey', auth: true },
+  { path: '/leaderboard', labelKey: 'nav.leaderboard' },
   { path: '/groups', labelKey: 'nav.groups', auth: true },
-  { path: '/multiplayer', labelKey: 'gameModes.rooms', auth: true },
   { path: '/profile', labelKey: 'nav.profile', auth: true },
 ]
 
@@ -52,25 +55,24 @@ export default function AppLayout() {
         data-testid="app-topnav"
         className="sticky top-0 z-30 bg-bq-white border-b-[3px] border-bq-ink"
       >
-        <div className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center gap-5">
+        <div className="max-w-[1280px] mx-auto px-3.5 md:px-6 min-h-[58px] md:min-h-[66px] py-2 flex items-center gap-2 md:gap-[22px]">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 shrink-0" aria-label="BibleQuiz home">
-            <img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="h-[34px] w-auto" />
-            <span className="font-display text-[24px] font-extrabold tracking-[-0.01em] text-bq-ink leading-none">
-              Bible<span className="text-bq-amberd">Quiz</span>
+          <Link to="/" className="flex items-center gap-2 shrink-0" aria-label="BibleQuiz home">
+            <img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="h-[30px] md:h-9 w-auto" />
+            <span className="font-display text-[22px] md:text-[27px] font-extrabold tracking-[-0.02em] text-bq-ink leading-none">
+              BibleQuiz
             </span>
           </Link>
 
           {/* Nav links */}
-          <nav className="hidden md:flex items-center gap-0.5 ml-1.5">
+          <nav className="hidden md:flex flex-wrap items-center gap-1">
             {visibleNavItems.map(item => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-[16px] font-bold px-4 py-1 rounded-full border-[3px] transition-colors ${
-                  isActive(item.path)
-                    ? 'bg-bq-amber border-bq-ink text-bq-ink'
-                    : 'border-transparent text-bq-ink2 hover:text-bq-ink hover:bg-bq-inset'
+                aria-current={isActive(item.path) ? 'page' : undefined}
+                className={`text-[18px] font-bold px-4 py-1 rounded-full border-[3px] text-bq-ink transition-colors ${
+                  isActive(item.path) ? 'bg-bq-amber border-bq-ink' : 'border-transparent hover:bg-bq-cream'
                 }`}
               >
                 {t(item.labelKey)}
@@ -78,11 +80,13 @@ export default function AppLayout() {
             ))}
           </nav>
 
-          {/* Right: admin + bell + avatar (per-user stats live in the Home hero).
-              Guest (route public) thấy nút Đăng nhập thay vì bell + avatar giả. */}
-          <div className="ml-auto flex items-center gap-4">
+          {/* Right: stat chips + admin + bell + avatar (mockup). Guest (route public)
+              thấy nút Đăng nhập thay vì bell + avatar giả. */}
+          <div className="ml-auto flex items-center gap-1.5 md:gap-2.5">
             {isAuthenticated ? (
               <>
+                <div className="hidden lg:block"><HeaderStats /></div>
+                <div className="lg:hidden"><HeaderStats compact /></div>
                 {isAdmin && (
                   <Link
                     to="/admin"

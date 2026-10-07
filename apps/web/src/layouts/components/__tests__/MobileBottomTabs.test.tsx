@@ -27,17 +27,17 @@ describe('MobileBottomTabs — auth-aware tabs', () => {
     expect(screen.getByTestId('mobile-tab-home')).toBeInTheDocument()
     expect(screen.getByTestId('mobile-tab-leaderboard')).toBeInTheDocument()
     expect(screen.getByTestId('mobile-tab-groups')).toBeInTheDocument()
-    expect(screen.getByTestId('mobile-tab-multiplayer')).toBeInTheDocument()
+    expect(screen.getByTestId('mobile-tab-journey')).toBeInTheDocument()
     expect(screen.getByTestId('mobile-tab-profile')).toBeInTheDocument()
   })
 
-  it('hides auth-only tabs (groups / multiplayer / profile) for guests', () => {
+  it('hides auth-only tabs (journey / groups / profile) for guests', () => {
     authState = { isAuthenticated: false }
     renderTabs()
     expect(screen.getByTestId('mobile-tab-home')).toBeInTheDocument()
     expect(screen.getByTestId('mobile-tab-leaderboard')).toBeInTheDocument()
     expect(screen.queryByTestId('mobile-tab-groups')).not.toBeInTheDocument()
-    expect(screen.queryByTestId('mobile-tab-multiplayer')).not.toBeInTheDocument()
+    expect(screen.queryByTestId('mobile-tab-journey')).not.toBeInTheDocument()
     expect(screen.queryByTestId('mobile-tab-profile')).not.toBeInTheDocument()
   })
 })

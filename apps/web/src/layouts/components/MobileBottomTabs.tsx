@@ -22,11 +22,13 @@ interface TabConfig {
  * nav toward the SPEC_USER 5-tab set; it reuses the desktop {@code gameModes.rooms}
  * label so both navs stay in sync.
  */
+// Same set as the desktop nav (LKF-1). The mockup draws 4 tabs; Groups is kept
+// so church groups stay one tap away. Multiplayer lives on the Home signpost.
 const TABS: TabConfig[] = [
   { path: '/', labelKey: 'nav.home', icon: 'home' },
-  { path: '/leaderboard', labelKey: 'nav.leaderboard', icon: 'leaderboard' },
+  { path: '/journey', labelKey: 'nav.journey', icon: 'map', auth: true },
+  { path: '/leaderboard', labelKey: 'nav.leaderboard', icon: 'emoji_events' },
   { path: '/groups', labelKey: 'nav.groups', icon: 'groups', auth: true },
-  { path: '/multiplayer', labelKey: 'gameModes.rooms', icon: 'sports_esports', auth: true },
   { path: '/profile', labelKey: 'nav.profile', icon: 'person', auth: true },
 ]
 
@@ -52,7 +54,7 @@ export default function MobileBottomTabs() {
   return (
     <nav
       data-testid="mobile-bottom-tabs"
-      className="md:hidden fixed bottom-0 left-0 w-full z-40 flex items-stretch justify-between gap-1 px-1.5 pt-1.5 bg-bq-white border-t-[3px] border-bq-ink"
+      className="md:hidden fixed bottom-0 left-0 w-full z-40 flex items-stretch justify-between gap-1.5 px-2.5 pt-2 bg-bq-white border-t-[3px] border-bq-ink"
       style={{ paddingBottom: 'max(8px, min(env(safe-area-inset-bottom, 0px), 12px))' }}
     >
       {visibleTabs.map(tab => {
@@ -65,23 +67,15 @@ export default function MobileBottomTabs() {
             data-active={active ? 'true' : 'false'}
             aria-label={t(tab.labelKey) as string}
             aria-current={active ? 'page' : undefined}
-            className={`relative flex-1 flex flex-col items-center justify-center gap-0.5 min-h-[44px] px-1 rounded-xl border-2 transition-colors duration-200 ease-out ${
-              active
-                ? 'bg-bq-amber border-bq-ink text-bq-ink'
-                : 'border-transparent text-bq-ink2 hover:text-bq-ink'
+            className={`relative flex-1 flex flex-col items-center justify-center min-h-[52px] px-1 rounded-[14px] border-2 text-bq-ink transition-colors duration-200 ease-out ${
+              active ? 'bg-bq-amber border-bq-ink' : 'border-transparent hover:bg-bq-cream'
             }`}
           >
-            <span
-              className="material-symbols-outlined text-[20px]"
-              style={active ? { fontVariationSettings: "'FILL' 1" } : undefined}
-              aria-hidden="true"
-            >
+            <span className="material-symbols-outlined text-[22px] leading-none" aria-hidden="true">
               {tab.icon}
             </span>
             <span
-              className={`text-[12px] leading-tight whitespace-nowrap ${
-                active ? 'font-extrabold' : 'font-semibold'
-              }`}
+              className={`text-[13px] leading-tight whitespace-nowrap ${active ? 'font-extrabold' : 'font-bold'}`}
             >
               {t(tab.labelKey)}
             </span>

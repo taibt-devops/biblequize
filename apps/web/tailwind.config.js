@@ -117,6 +117,9 @@ export default {
           woodink: 'rgb(var(--bq-wood-ink-rgb) / <alpha-value>)',
           parch:   'rgb(var(--bq-parch-rgb) / <alpha-value>)',
           track:   'rgb(var(--bq-track-rgb) / <alpha-value>)',
+          cream:   'rgb(var(--bq-cream-rgb) / <alpha-value>)',
+          silver:  'rgb(var(--bq-silver-rgb) / <alpha-value>)',
+          bronze:  'rgb(var(--bq-bronze-rgb) / <alpha-value>)',
         },
       },
       fontFamily: {
