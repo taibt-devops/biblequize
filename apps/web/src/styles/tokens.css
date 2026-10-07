@@ -1,36 +1,45 @@
 /* =====================================================================
-   BibleQuiz · "Khung Sáng" Design Tokens
-   Identity: ánh sáng xuyên kính màu (light through stained glass)
-   Layer 1 = primitives (giá trị thô)  ·  Layer 2 = semantic (dùng trong UI)
+   BibleQuiz · "Lữ Khách" Design Tokens (LKD-2, 2026-10-08)
+   Identity: storybook paper, ink outlines, hard offset shadows, pressable
+   buttons — the same world as the Lữ Khách game.
+   Token NAMES are kept from "Khung Sáng" so every `bq-*` utility re-skins
+   without touching components; only the VALUES changed.
+   Layer 1 = primitives · Layer 2 = semantic.
    Imported once at root (src/main.tsx) — use via var(--bq-*) or Tailwind bq-*.
-   Source: docs/designs/home-game vibe/biblequiz-tokens.css (KS migration W0-1).
+   Spec: docs/dev/design-system.md
    ===================================================================== */
 
 :root{
   /* ---------- 1. PRIMITIVES ---------- */
 
   /* Paper / surfaces */
-  --bq-paper:        #FBFAF5;   /* nền app (gallery wall) */
-  --bq-paper-sunk:   #F2F0E7;   /* nền chìm: track, chip nền */
-  --bq-white:        #FFFFFF;   /* mặt card */
-  --bq-hairline:     #E7E4DA;   /* viền 1px */
+  --bq-paper:        #EFE3C3;   /* nền trang (da dê) */
+  --bq-paper-sunk:   #F3E6C4;   /* nền chìm: track, chip nền, ô nhập */
+  --bq-white:        #FFF8E7;   /* mặt thẻ (giấy kem) */
+  --bq-hairline:     #C9B58C;   /* đường kẻ mảnh bên trong thẻ */
+  --bq-parch:        #F9ECC8;   /* thân cuộn giấy */
+  --bq-track:        #F0DFB8;   /* rãnh thanh tiến độ */
 
   /* Ink / text */
-  --bq-ink:          #16151B;   /* chữ chính */
-  --bq-ink-soft:     #6C6A62;   /* chữ phụ */
-  --bq-ink-faint:    #A8A69C;   /* chữ mờ / caption */
+  --bq-ink:          #1D2B22;   /* mực: chữ chính, viền, bóng */
+  --bq-ink-soft:     #4D3A1F;   /* chữ phụ */
+  --bq-ink-faint:    #6B5530;   /* chú thích — 6.6:1 trên giấy kem */
 
-  /* Jewel palette (màu kính — KHÔNG đổi theo giờ/mùa ở bản gốc) */
-  --bq-sapphire:     #2D46C8;
-  --bq-sapphire-lt:  #6E86F0;
-  --bq-emerald:      #0E8A6B;
-  --bq-emerald-lt:   #46C89A;
-  --bq-amber:        #F59E0B;
-  --bq-amber-deep:   #A84A05;   /* amber-text: WCAG AA (>=4.5) trên mọi nền sáng (paper/white/sunk) */
+  /* Accents (tên cũ giữ cho tương thích; giá trị theo bảng màu Lữ Khách) */
+  --bq-sapphire:     #2F6FB0;   /* Luyện Tập — 5:1 trên giấy kem */
+  --bq-sapphire-lt:  #6AB8E8;
+  --bq-emerald:      #2E7D4F;   /* Phòng chơi */
+  --bq-emerald-lt:   #7AB87A;
+  --bq-amber:        #FFC93C;   /* vàng: nút chính, tiến độ */
+  --bq-amber-deep:   #8A5A12;   /* chữ vàng-nâu trên nền sáng (≥ 4.5:1) */
   --bq-amber-lt:     #FFE08A;
-  --bq-ruby:         #E0354B;
-  --bq-ruby-lt:      #FF7A5A;
-  --bq-ember:        #FF6F3D;   /* cam cháy: trạng thái "đang nhen" */
+  --bq-ruby:         #B3452F;   /* Đấu Hạng */
+  --bq-ruby-lt:      #E8826A;
+  --bq-ember:        #E8743B;   /* trạng thái "đang nhen" */
+  --bq-leaf:         #D9F0C8;   /* nút phụ */
+  --bq-wood:         #8A5A2B;   /* trục cuộn giấy */
+  --bq-wood-lt:      #C68A4E;   /* biển gỗ */
+  --bq-wood-ink:     #2B1A08;   /* chữ trên biển gỗ */
 
   /* ---------- 2. SEMANTIC ---------- */
 
@@ -39,25 +48,21 @@
   --bq-bg-card:      var(--bq-white);
   --bq-bg-inset:     var(--bq-paper-sunk);
   --bq-border:       var(--bq-hairline);
+  --bq-line:         3px solid var(--bq-ink);   /* viền thẻ, nút */
 
   /* Text */
   --bq-text:         var(--bq-ink);
   --bq-text-2:       var(--bq-ink-soft);
   --bq-text-3:       var(--bq-ink-faint);
 
-  /* SIGNATURE — phổ khúc xạ. Dùng cho: gạch chân tên, đỉnh card,
-     XP, bệ giếng trời, logo mark. Lặp lại = nhận diện thương hiệu. */
-  --bq-spectrum: linear-gradient(90deg,
-      var(--bq-sapphire) 0%,
-      var(--bq-emerald)  34%,
-      var(--bq-amber)    64%,
-      var(--bq-ruby)     100%);
+  /* Former "spectrum" signature → warm gold (progress fills, edges, logo). */
+  --bq-spectrum: linear-gradient(90deg, #FFD45E 0%, var(--bq-amber) 100%);
 
-  /* Action — CTA chính (ấm, sặc, mời gọi) */
-  --bq-action: linear-gradient(135deg, #FF9D2E 0%, #FF5A45 55%, var(--bq-ruby) 100%);
-  --bq-action-fg: #FFFFFF;
+  /* Action — CTA chính: vàng phẳng, chữ mực */
+  --bq-action: linear-gradient(var(--bq-amber), var(--bq-amber));
+  --bq-action-fg: var(--bq-ink);
 
-  /* Flame — ngọn lửa (verse mark, streak, lamp "lit") */
+  /* Flame — đèn lồng / chuỗi ngày */
   --bq-flame: linear-gradient(180deg, var(--bq-amber-lt), var(--bq-amber) 52%, var(--bq-ember));
 
   /* Quest lamp states (KHÔNG dùng đỏ=lỗi; cùng họ ấm) */
@@ -65,76 +70,71 @@
   --bq-quest-warm:  linear-gradient(180deg, #FFD98A, var(--bq-ember));              /* đang làm */
   --bq-quest-off:   var(--bq-paper-sunk);                                           /* chưa làm */
 
-  /* Mode / variant accents (door cạnh card) */
+  /* Mode / variant accents */
   --bq-mode-study:  var(--bq-sapphire);   /* Luyện Tập */
   --bq-mode-ranked: var(--bq-ruby);       /* Đấu Hạng  */
   --bq-mode-rooms:  var(--bq-emerald);    /* Phòng Chơi */
 
   /* ---------- 3. RADII ---------- */
-  --bq-r-sm:   8px;
+  --bq-r-sm:   10px;
   --bq-r-md:   14px;
-  --bq-r-lg:   20px;
-  --bq-r-xl:   22px;
+  --bq-r-lg:   18px;   /* nút */
+  --bq-r-xl:   26px;   /* thẻ */
   --bq-r-pill: 999px;
-  /* Shape "vòm" (lancet) — đỉnh bo cong kiểu cửa sổ nhà thờ */
-  --bq-arch-card:  64px 64px var(--bq-r-xl) var(--bq-r-xl) / 30px 30px var(--bq-r-xl) var(--bq-r-xl);
-  --bq-arch-well:  240px 240px 0 0 / 180px 180px 0 0; /* giếng trời verse */
+  /* Khung Sáng "vòm" shapes become plain storybook cards. */
+  --bq-arch-card:  var(--bq-r-xl);
+  --bq-arch-well:  var(--bq-r-xl);
 
-  /* ---------- 4. SHADOWS (bóng khúc xạ màu) ---------- */
-  --bq-shadow-soft:   0 18px 40px -24px rgba(20,20,30,.28);
-  --bq-shadow-sap:    0 26px 46px -28px rgba(45,70,200,.5);
-  --bq-shadow-sap-h:  0 34px 60px -26px rgba(45,70,200,.62);  /* hover */
-  --bq-shadow-rub:    0 26px 46px -28px rgba(224,53,75,.5);
-  --bq-shadow-rub-h:  0 34px 60px -26px rgba(224,53,75,.62);
-  --bq-shadow-eme:    0 26px 46px -28px rgba(14,138,107,.5);
-  --bq-shadow-eme-h:  0 34px 60px -26px rgba(14,138,107,.62);
-  --bq-shadow-amb:    0 34px 64px -34px rgba(245,158,11,.5);
-  --bq-glow-action:   0 16px 34px -12px rgba(224,53,75,.6), 0 4px 16px -6px rgba(245,158,11,.55);
-  --bq-glow-flame:    0 0 18px rgba(245,158,11,.65);
+  /* ---------- 4. SHADOWS (bóng cứng, không nhoè) ---------- */
+  --bq-shadow-card:     6px 10px 0 rgba(29,43,34,.35);
+  --bq-shadow-card-h:   8px 13px 0 rgba(29,43,34,.4);
+  --bq-shadow-btn:      0 6px 0 var(--bq-ink);
+  --bq-shadow-btn-down: 0 2px 0 var(--bq-ink);
+  --bq-shadow-soft:   var(--bq-shadow-card);
+  --bq-shadow-sap:    var(--bq-shadow-card);
+  --bq-shadow-sap-h:  var(--bq-shadow-card-h);
+  --bq-shadow-rub:    var(--bq-shadow-card);
+  --bq-shadow-rub-h:  var(--bq-shadow-card-h);
+  --bq-shadow-eme:    var(--bq-shadow-card);
+  --bq-shadow-eme-h:  var(--bq-shadow-card-h);
+  --bq-shadow-amb:    var(--bq-shadow-card);
+  --bq-glow-action:   var(--bq-shadow-btn);
+  --bq-glow-flame:    0 0 0 transparent;
 
   /* ---------- 5. TYPOGRAPHY ---------- */
-  --bq-font-display: 'Bricolage Grotesque', system-ui, sans-serif; /* tiêu đề */
-  --bq-font-body:    'Be Vietnam Pro', system-ui, sans-serif;      /* UI/body */
-  --bq-font-verse:   'Literata', Georgia, serif;                   /* câu Kinh Thánh */
+  --bq-font-display: 'Baloo 2', 'Be Vietnam Pro', system-ui, sans-serif;  /* tiêu đề, giao diện */
+  --bq-font-body:    'Baloo 2', 'Be Vietnam Pro', system-ui, sans-serif;  /* giao diện */
+  --bq-font-read:    'Be Vietnam Pro', system-ui, sans-serif;             /* đoạn đọc dài */
+  --bq-font-verse:   'Baloo 2', 'Be Vietnam Pro', system-ui, sans-serif;  /* câu Kinh Thánh */
 
   --bq-fs-hero:   clamp(40px, 5.6vw, 66px);
-  --bq-fs-h2:     22px;
-  --bq-fs-h3:     31px;   /* tiêu đề card lớn (daily) */
-  --bq-fs-h4:     23px;   /* tiêu đề mode card */
+  --bq-fs-h2:     24px;
+  --bq-fs-h3:     32px;   /* tiêu đề thẻ lớn (daily) */
+  --bq-fs-h4:     24px;   /* tiêu đề thẻ chế độ */
   --bq-fs-verse:  25px;
-  --bq-fs-body:   14px;
-  --bq-fs-sm:     12px;
-  --bq-fs-eyebrow:11px;   /* + letter-spacing .22em, uppercase, weight 800 */
+  --bq-fs-body:   16px;
+  --bq-fs-sm:     13px;
+  --bq-fs-eyebrow:13px;
 
   /* ---------- 6. MOTION ---------- */
   --bq-ease:        cubic-bezier(.2,.7,.3,1);
-  --bq-dur-fast:    .15s;
-  --bq-dur-theme:   1.2s;   /* nếu dùng time-of-day breathing */
-  --bq-lift:        translateY(-5px); /* hover card */
+  --bq-dur-fast:    .08s;
+  --bq-dur-theme:   1.2s;
+  --bq-lift:        translateY(-3px); /* hover card */
 }
 
 /* =====================================================================
-   SHAPE CLASSES — vòm không map gọn vào Tailwind (KS spec §5.3)
+   SHAPE CLASSES — kept for compatibility; now plain rounded cards
    ===================================================================== */
 .bq-arch-card{ border-radius: var(--bq-arch-card); }
 .bq-arch-well{ border-radius: var(--bq-arch-well); }
 
 /* =====================================================================
-   ATMOSPHERE — áp vào wrapper trang Khung Sáng (vd .bq-lightwell)
+   ATMOSPHERE — Khung Sáng godrays/grain retired: the storybook paper
+   itself is the atmosphere. Selectors kept so wrappers still compile.
    ===================================================================== */
-.bq-lightwell::before{ /* tia nắng cao + bụi sáng, cực nhạt */
-  content:''; position:fixed; inset:0; z-index:0; pointer-events:none;
-  background:
-    radial-gradient(1100px 560px at 50% -16%, rgba(255,221,150,.5), transparent 60%),
-    conic-gradient(from 90deg at 50% -10%, transparent 0 42%,
-      rgba(245,158,11,.05) 46%, transparent 50%,
-      rgba(45,70,200,.04) 54%, transparent 58%);
-}
-.bq-lightwell::after{ /* grain "tường gallery" */
-  content:''; position:fixed; inset:0; z-index:0; pointer-events:none;
-  opacity:.035; mix-blend-mode:multiply;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
+.bq-lightwell::before,
+.bq-lightwell::after{ content: none; }
 
 /* =====================================================================
    MOTION SAFETY — luôn tôn trọng người dùng
@@ -144,12 +144,9 @@
 }
 
 /* =====================================================================
-   (TUỲ CHỌN) SEASON THEMING
-   Mỗi mùa override jewel + spectrum; toàn UI đổi theo mà không sửa component.
+   SEASON THEMING (tuỳ chọn) — mỗi mùa có thể override accent.
    Ví dụ: <body data-season="advent">
    ===================================================================== */
 [data-season="advent"]{   /* Mùa Vọng: xanh đêm + vàng kim */
   --bq-sapphire:#1E3A8A; --bq-ruby:#B45309; --bq-amber:#FBBF24;
-  --bq-spectrum: linear-gradient(90deg, #1E3A8A, #0E7490 38%, #FBBF24 70%, #B45309);
 }
-/* Thêm các mùa khác (pentecost/lent...) theo cùng pattern. */

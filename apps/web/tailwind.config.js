@@ -108,6 +108,13 @@ export default {
           amberd:  'var(--bq-amber-deep)',
           ruby:    'var(--bq-ruby)',
           ember:   'var(--bq-ember)',
+          // Lữ Khách (LKD-2)
+          leaf:    'var(--bq-leaf)',
+          wood:    'var(--bq-wood)',
+          woodlt:  'var(--bq-wood-lt)',
+          woodink: 'var(--bq-wood-ink)',
+          parch:   'var(--bq-parch)',
+          track:   'var(--bq-track)',
         },
       },
       fontFamily: {
@@ -135,8 +142,9 @@ export default {
         "2xl": "1rem",
         "3xl": "1.5rem",
         full: "9999px",
-        // Khung Sáng (KS W0-1)
-        bq: "22px",
+        // Lữ Khách card radius (was Khung Sáng 22px)
+        bq: "26px",
+        'bq-btn': "18px",
       },
       // Khung Sáng signature gradients / shadows / typography (KS W0-1)
       fontSize: {
@@ -161,6 +169,11 @@ export default {
         'bq-amb':    'var(--bq-shadow-amb)',
         'bq-action': 'var(--bq-glow-action)',
         'bq-flame':  'var(--bq-glow-flame)',
+        // Lữ Khách hard shadows (LKD-2)
+        'bq-card':     'var(--bq-shadow-card)',
+        'bq-card-h':   'var(--bq-shadow-card-h)',
+        'bq-btn':      'var(--bq-shadow-btn)',
+        'bq-btn-down': 'var(--bq-shadow-btn-down)',
       },
       transitionTimingFunction: { bq: 'cubic-bezier(.2,.7,.3,1)' },
       animation: {
