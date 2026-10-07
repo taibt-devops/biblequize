@@ -57,8 +57,8 @@
 .active-bracket-line { background: #F59E0B; box-shadow: 0 0 8px rgba(245, 158, 11, 0.35); }
 
 ::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: #11131e; }
-::-webkit-scrollbar-thumb { background: #323440; border-radius: 10px; }
+::-webkit-scrollbar-track { background: #EFE3C3; }
+::-webkit-scrollbar-thumb { background: #C9B58C; border-radius: 10px; }
 
 /* ── Quiz Answer Animations ── */
 @keyframes answer-correct-pulse {
@@ -300,22 +300,19 @@
   --mobile-nav-h: calc(54px + max(8px, min(env(safe-area-inset-bottom, 0px), 12px)));
 }
 
-/* ── HR-1 Modern Spiritual atmosphere ──
-   1 source-of-truth body declaration (was 3 in V2.8 — consolidated).
-   Hardcoded hex per memory rule (CSS variables triggered white-background
-   rendering bug in earlier Home refactor). Mockup: home_modern.html. */
+/* ── "Lữ Khách" storybook paper (LKD-4) ──
+   1 source-of-truth body declaration. Hardcoded hex per memory rule (CSS
+   variables triggered a white-background rendering bug in an earlier Home
+   refactor) — keep in sync with --bq-paper / --bq-ink in tokens.css. */
 body {
   margin: 0;
-  font-family: 'Be Vietnam Pro', system-ui, sans-serif;
-  line-height: 1.55;
+  font-family: 'Baloo 2', 'Be Vietnam Pro', system-ui, sans-serif;
+  line-height: 1.5;
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
-  background:
-    radial-gradient(ellipse 1000px 700px at 18% -5%, rgba(232,168,50,0.10), transparent 55%),
-    radial-gradient(ellipse 700px 500px at 92% 20%, rgba(124,45,58,0.04), transparent 60%),
-    radial-gradient(ellipse 900px 600px at 50% 110%, rgba(232,168,50,0.04), transparent 60%),
-    #0a0c14;
+  color: #1D2B22;
+  background: #EFE3C3;
 }
 
 /* Noise overlay — parchment grain for atmosphere depth. */
@@ -329,15 +326,7 @@ body::before {
   opacity: 0.04;
 }
 
-/* Vignette — soft inner darkening for visual focus. */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background: radial-gradient(ellipse 1400px 900px at 50% 50%, transparent 40%, rgba(0,0,0,0.55) 100%);
-}
+/* Vignette retired with the dark theme (LKD-4): storybook pages stay flat. */
 
 /* App root sits above atmosphere layers. */
 #root {
@@ -690,16 +679,16 @@ body::after {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.3);
+  background: #EFE3C3;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(232, 168, 50, 0.25);
+  background: #C9B58C;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(232, 168, 50, 0.45);
+  background: #8A5A2B;
 }
 
 /* Loading animation */
