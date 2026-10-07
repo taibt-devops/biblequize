@@ -46,56 +46,41 @@ function HomeSkeleton() {
   )
 }
 
-/* ── Verse lightwell (Khung Sáng signature focal point) ── */
-function VerseLightwell() {
+/* ── Verse of the day on a parchment scroll with a lantern (LKD-16) ── */
+function VerseScroll() {
   const { t } = useTranslation()
   return (
-    <section data-testid="home-verse" className="mb-1">
-      <div
-        className="relative mx-auto max-w-[740px] px-7 md:px-[54px] pt-11 pb-9 text-center
-                   border border-bq-hair border-b-0 bq-arch-well
-                   bg-[radial-gradient(120%_80%_at_50%_4%,rgba(255,236,190,.85),#fff_62%)] shadow-bq-amb"
-      >
-        <span aria-hidden className="absolute left-1/2 -translate-x-1/2 -top-px h-[3px] w-[74%] rounded-full bg-bq-spectrum opacity-60" />
-        <div className="text-[10.5px] font-extrabold tracking-eyebrow text-bq-amberd mb-[18px] uppercase">
+    <section data-testid="home-verse" className="mb-1 max-w-[740px] mx-auto px-2">
+      <div aria-hidden className="h-[18px] rounded-full bg-bq-wood border-[3px] border-bq-ink" />
+      <div className="mx-3 -my-1 px-6 md:px-10 pt-5 pb-6 text-center bg-bq-parch border-x-[3px] border-bq-ink">
+        <img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="h-14 mx-auto" />
+        <div className="mt-1 mb-2 text-[16px] font-bold text-bq-amberd">
           {t('home.verseOfDay', 'Câu gốc hôm nay')}
         </div>
-        <div className="flex justify-center mb-4" aria-hidden>
-          <span className="w-[15px] h-[21px] rounded-[50%_50%_50%_50%/62%_62%_38%_38%] bg-bq-flame shadow-bq-flame animate-flick" />
-        </div>
-        <p className="font-literata text-[21px] md:text-verse leading-[1.5] text-bq-ink">
-          “Lời Chúa là <em className="italic text-bq-amberd">ngọn đèn</em> cho chân tôi, ánh sáng cho đường lối tôi.”
+        <p className="text-[22px] md:text-[26px] leading-[1.35] font-bold text-bq-ink">
+          Lời Chúa là ngọn đèn cho chân tôi, ánh sáng cho đường lối tôi.
         </p>
-        <div className="mt-4 text-eyebrow font-extrabold tracking-eyebrow text-bq-ink3">THI THIÊN 119 : 105</div>
+        <div className="mt-3 text-[17px] font-extrabold text-bq-amberd">Thi Thiên 119:105</div>
       </div>
-      <div aria-hidden className="max-w-[740px] mx-auto h-3.5 rounded-b-xl bg-bq-spectrum shadow-[0_26px_50px_-22px_rgba(45,70,200,.35),0_26px_50px_-22px_rgba(224,53,75,.3)]" />
+      <div aria-hidden className="h-[18px] rounded-full bg-bq-wood border-[3px] border-bq-ink" />
     </section>
   )
 }
 
-/* ── Quest lamp row (no red = error; warm lamp encodes status) ── */
+/* ── Quest row: a lantern per quest — lit = done, glowing = in progress, dark = todo (LKD-16) ── */
 type QuestStatus = 'done' | 'progress' | 'todo'
 function QuestRow({ label, value, target }: { label: string; value: number; target: number }) {
   const status: QuestStatus = value >= target ? 'done' : value > 0 ? 'progress' : 'todo'
   const pct = status === 'done' ? 100 : Math.round((value / Math.max(1, target)) * 100)
-  const lamp = status === 'done'
-    ? 'bg-[linear-gradient(180deg,#FFE08A,var(--bq-amber))] border-transparent shadow-[0_0_8px_rgba(245,158,11,.6)]'
-    : status === 'progress'
-      ? 'bg-[linear-gradient(180deg,#FFD98A,#FF8A3D)] border-transparent shadow-[0_0_7px_rgba(255,138,61,.5)]'
-      : 'bg-bq-inset border-bq-hair'
-  const fill = status === 'done'
-    ? 'bg-[linear-gradient(90deg,#FFD773,var(--bq-amber))]'
-    : status === 'progress'
-      ? 'bg-[linear-gradient(90deg,var(--bq-amber),#FF8A3D)]'
-      : 'bg-transparent'
+  const lantern = status === 'todo' ? '/images/lk/lantern-off.webp' : '/images/lk/lantern-on.webp'
   return (
-    <div className="flex items-center gap-3.5 py-4 border-b border-bq-hair last:border-0">
-      <span aria-hidden className={`w-2.5 h-[13px] shrink-0 border rounded-[50%_50%_50%_50%/60%_60%_40%_40%] ${lamp}`} />
-      <span className={`flex-1 text-[13.5px] font-semibold ${status === 'done' ? 'text-bq-ink2' : 'text-bq-ink'}`}>{label}</span>
-      <span className="w-[150px] h-[7px] bg-bq-inset rounded-full overflow-hidden hidden sm:block">
-        <span className={`block h-full rounded-full ${fill}`} style={{ width: `${pct}%` }} />
+    <div className="flex items-center gap-3.5 py-3 border-b-2 border-dashed border-bq-hair last:border-0">
+      <img src={lantern} alt="" aria-hidden className={`h-11 w-8 object-contain shrink-0 ${status === 'progress' ? 'opacity-55 saturate-[.6]' : ''}`} />
+      <span className={`flex-1 text-[16px] font-semibold ${status === 'done' ? 'text-bq-ink3' : 'text-bq-ink'}`}>{label}</span>
+      <span className="w-[150px] h-4 bg-bq-track border-2 border-bq-ink rounded-full overflow-hidden hidden sm:block">
+        <span className="block h-full bg-bq-amber" style={{ width: `${pct}%` }} />
       </span>
-      <span className="w-9 text-right text-xs font-extrabold text-bq-ink2 tabular-nums">
+      <span className="w-10 text-right text-[15px] font-extrabold text-bq-ink tabular-nums">
         {status === 'done' ? '✓' : `${value}/${target}`}
       </span>
     </div>
@@ -321,7 +306,7 @@ export default function Home() {
       )}
 
       {/* ── VERSE LIGHTWELL ── */}
-      <div className="mt-10"><VerseLightwell /></div>
+      <div className="mt-10"><VerseScroll /></div>
       <p className="text-center text-[12px] text-bq-ink2 mt-3.5 mb-2">{t('home.verseDriver', 'Hoàn thành nhiệm vụ hôm nay để tích thêm ánh sáng cho hành trình của bạn')}</p>
       <MemoryDueCard enabled={!!user} />
 
@@ -420,7 +405,7 @@ export default function Home() {
         <span className="ml-auto text-[12.5px] font-bold text-bq-ink2">{missionsDone}/{missions.length || 3} {t('home.missions.completed', 'hoàn thành')}</span>
       </div>
       <div className="grid gap-4 lg:grid-cols-[1.6fr_1fr]">
-        <section data-testid="home-daily-missions" className="bg-bq-white border border-bq-hair rounded-[20px] px-6 py-1 self-start">
+        <section data-testid="home-daily-missions" className="bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card px-6 py-1 self-start">
           {missions.length > 0 ? (
             missions.map((m, i) => (
               <QuestRow key={i} label={m.description || `Nhiệm vụ ${i + 1}`} value={m.progress ?? 0} target={m.target ?? 1} />
