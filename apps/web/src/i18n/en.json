@@ -1230,6 +1230,7 @@
       "learning": "This book is tricky. Don't worry — replay to learn the Word better.",
       "encourage": "Every attempt is a learning step."
     },
+    "starsLabel": "{{count}}/3 stars",
     "stats": {
       "correct": "Correct",
       "correctShort": "Correct",

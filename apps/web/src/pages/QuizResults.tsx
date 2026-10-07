@@ -78,8 +78,8 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
     }
 
     if (acc >= 70) {
-      // Khung Sáng jewel spectrum for celebration confetti (not answer colors).
-      const colors = ['#2D46C8', '#0E8A6B', '#F59E0B', '#E0354B', '#FF6F3D']
+      // Storybook (LK) celebration confetti: gold, the four answer colours, cream paper.
+      const colors = ['#FFC93C', '#E8826A', '#6AB8E8', '#7AB87A', '#FFF8E7']
       const burst = (originX: number) => confetti({
         particleCount: acc >= 90 ? 90 : 55,
         spread: 75,
@@ -136,7 +136,7 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
   }, [isRanked])
 
   // Book aggregates
-  const { books, primaryBook, accuracy, diffRows, breakdown, isHigh, tone, emoji } = useMemo(() => {
+  const { books, primaryBook, accuracy, diffRows, breakdown, isHigh, tone } = useMemo(() => {
     if (!stats) {
       return {
         books: [] as { book: string; correct: number; total: number; acc: number }[],
@@ -214,9 +214,8 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
   // Hero variant tokens — high = emerald (success), low = sapphire (info).
   // Hero is a white card + spectrum strip + amber shadow; accent only tints
   // the radial glow, the tone message and the accuracy figure.
-  const heroGlow = isHigh
-    ? 'radial-gradient(circle at 20% 30%, rgba(245,158,11,0.12) 0%, transparent 50%), radial-gradient(circle at 80% 60%, rgba(14,138,107,0.1) 0%, transparent 50%), radial-gradient(circle at 50% 80%, rgba(224,53,75,0.08) 0%, transparent 50%)'
-    : 'radial-gradient(circle at 20% 30%, rgba(45,70,200,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 60%, rgba(245,158,11,0.08) 0%, transparent 50%)'
+  // Storybook (LK) stars, like the game's level result (LKD-14): 3 ≥ 90%, 2 ≥ 70%, 1 ≥ 40%.
+  const stars = accuracy >= 90 ? 3 : accuracy >= 70 ? 2 : accuracy >= 40 ? 1 : 0
   const heroMessageClass = isHigh ? 'text-bq-emerald' : 'text-bq-sapphire'
   const accuracyColor = isHigh ? 'text-bq-emerald' : 'text-bq-sapphire'
 
@@ -241,20 +240,26 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
     <div data-testid="quiz-results-page" className="min-h-screen bg-bq-paper p-4 py-8 md:py-12 pb-28 md:pb-12">
       <main className="max-w-2xl mx-auto w-full flex flex-col">
 
-        {/* HERO BLOCK — celebratory white card with spectrum top strip */}
+        {/* HERO BLOCK — Storybook (LK) sticker card: the traveller + stars */}
         <section
-          className="relative overflow-hidden rounded-3xl border border-bq-hair bg-bq-white shadow-bq-amb px-6 py-7 md:px-8 md:py-8 mb-4 text-center"
+          className="relative overflow-hidden rounded-bq border-[3px] border-bq-ink bg-bq-white shadow-bq-card px-6 py-7 md:px-8 md:py-8 mb-4 text-center"
           data-testid="quiz-results-hero"
         >
-          <span aria-hidden className="absolute top-0 inset-x-0 h-[5px] bg-bq-spectrum" />
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0"
-            style={{ backgroundImage: heroGlow }}
-          />
-
           <div className="relative z-10">
-            <div className="text-5xl md:text-6xl mb-2">{emoji}</div>
+            <img
+              src={isHigh ? '/images/lk/hero-cheer.webp' : '/images/lk/hero.webp'}
+              alt=""
+              aria-hidden
+              className="h-28 md:h-32 w-auto mx-auto mb-1"
+            />
+            <div
+              data-testid="quiz-results-stars"
+              aria-label={t('results.starsLabel', { count: stars, defaultValue: '{{count}}/3 sao' })}
+              className="text-4xl md:text-5xl font-extrabold tracking-[0.12em] text-bq-amber [-webkit-text-stroke:2px_#1D2B22] mb-1"
+            >
+              <span>{'★'.repeat(stars)}</span>
+              <span className="text-bq-track">{'★'.repeat(3 - stars)}</span>
+            </div>
             <h1
               data-testid="quiz-results-grade"
               className={`font-display text-2xl md:text-[28px] font-extrabold leading-tight mb-1.5 ${heroMessageClass}`}
@@ -266,8 +271,8 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
             </p>
 
             {/* 3 stat row */}
-            <div className="grid grid-cols-3 gap-px rounded-2xl overflow-hidden bg-bq-hair max-w-md mx-auto">
-              <div className="bg-bq-inset py-3 px-2">
+            <div className="grid grid-cols-3 gap-2 max-w-md mx-auto">
+              <div className="bg-bq-inset border-2 border-bq-ink rounded-2xl py-3 px-2">
                 <div data-testid="quiz-results-score" className="font-display text-lg md:text-xl font-extrabold leading-none mb-1 tabular-nums text-bq-ink">
                   {stats.correctAnswers}
                   <span className="text-bq-ink3 font-semibold text-[0.7em]">/{stats.totalQuestions}</span>
@@ -277,13 +282,13 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
                   <span className="hidden md:inline">{t('results.stats.correct')}</span>
                 </div>
               </div>
-              <div className="bg-bq-inset py-3 px-2">
+              <div className="bg-bq-inset border-2 border-bq-ink rounded-2xl py-3 px-2">
                 <div data-testid="quiz-results-accuracy" className={`font-display text-lg md:text-xl font-extrabold leading-none mb-1 tabular-nums ${accuracyColor}`}>
                   {accuracy}%
                 </div>
                 <div className="text-[10px] uppercase tracking-wider font-bold text-bq-ink2">{t('results.stats.accuracyShort')}</div>
               </div>
-              <div className="bg-bq-inset py-3 px-2">
+              <div className="bg-bq-inset border-2 border-bq-ink rounded-2xl py-3 px-2">
                 <div data-testid="quiz-results-total-score" className="font-display text-lg md:text-xl font-extrabold leading-none mb-1 tabular-nums text-bq-amberd">
                   {scoreDisplay}
                 </div>
