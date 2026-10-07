@@ -2,6 +2,8 @@ import { useQuery } from '@tanstack/react-query'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { api } from '../api/client'
+import JourneyMap, { type RegionProgress } from '../components/journey/JourneyMap'
+import { JOURNEY_REGIONS, regionOfOrder, type JourneyRegion, type JourneyRegionId } from '../data/journeyRegions'
 
 interface BookProgress {
   book: string
@@ -29,8 +31,6 @@ interface JourneyData {
   summary: JourneySummary
   books: BookProgress[]
 }
-
-const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
 
 export default function Journey() {
   const { t, i18n } = useTranslation()
@@ -68,85 +68,83 @@ export default function Journey() {
 
   const { summary, books } = data
   const pct = summary.totalBooks > 0 ? Math.round((summary.completedBooks / summary.totalBooks) * 100) : 0
+  const onBookClick = (book: BookProgress) => navigate(`/practice?book=${encodeURIComponent(book.book)}`)
 
-  const oldBooks = books.filter(b => b.testament === 'OLD')
-  const newBooks = books.filter(b => b.testament === 'NEW')
+  // LKD-17 (SPEC_USER §6.3): the 66 books are walked land by land on a painted map.
+  const booksOf = (r: JourneyRegion) => books.filter(b => b.order >= r.from && b.order <= r.to)
+  const progress = Object.fromEntries(JOURNEY_REGIONS.map(r => {
+    const bs = booksOf(r)
+    return [r.id, { done: bs.filter(b => b.status === 'COMPLETED').length, total: bs.length || r.to - r.from + 1 }]
+  })) as Record<JourneyRegionId, RegionProgress>
+  const currentOrder = books.find(b => b.book === summary.currentBook)?.order
+    ?? books.find(b => b.status !== 'COMPLETED')?.order
+  const currentRegion = currentOrder ? regionOfOrder(currentOrder)?.id ?? null : null
+  const scrollToLand = (id: JourneyRegionId) =>
+    document.getElementById(`journey-land-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
   return (
-    <div className="space-y-6 max-w-5xl mx-auto w-full" data-testid="journey-page">
+    <div className="space-y-7 max-w-5xl mx-auto w-full" data-testid="journey-page">
       {/* Summary */}
-      <section className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-6" data-testid="journey-summary-card">
-        <div className="flex items-center gap-3 mb-3">
-          <span className="material-symbols-outlined text-bq-amberd text-2xl" style={FILL_1}>map</span>
-          <h1 className="text-xl font-display font-bold text-bq-ink">{t('journey.title')}</h1>
+      <section className="bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card p-6" data-testid="journey-summary-card">
+        <div className="flex items-center gap-3 mb-2">
+          <img src="/images/lk/scroll.webp" alt="" aria-hidden className="h-10" />
+          <h1 className="text-[30px] font-display font-extrabold text-bq-ink leading-tight">{t('journey.title')}</h1>
         </div>
-        <p data-testid="journey-mastery-pct" className="text-bq-ink2 text-sm mb-3">
+        <p data-testid="journey-mastery-pct" className="font-read text-bq-ink2 text-[15px] mb-3">
           {t('journey.conquered', { count: summary.completedBooks, total: summary.totalBooks, percent: pct })}
         </p>
-        <div className="w-full h-3 bg-bq-inset rounded-full overflow-hidden">
-          <div
-            className="h-full bg-bq-amber rounded-full transition-all"
-            style={{ width: `${pct}%` }}
-          />
+        <div className="w-full h-4 bg-bq-track border-2 border-bq-ink rounded-full overflow-hidden">
+          <div className="h-full bg-bq-amber transition-all" style={{ width: `${pct}%` }} />
         </div>
-        <div className="flex gap-6 mt-3 text-xs text-bq-ink2">
-          <span data-testid="journey-books-completed" className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full bg-bq-emerald" />
-            {t('journey.completed')}: {summary.completedBooks}
+        <div className="flex flex-wrap gap-2 mt-3 text-[14px] font-bold text-bq-ink">
+          <span data-testid="journey-books-completed" className="px-3 py-0.5 rounded-full border-2 border-bq-ink bg-bq-leaf">
+            ★ {t('journey.completed')}: {summary.completedBooks}
           </span>
-          <span data-testid="journey-books-inprogress" className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full bg-bq-amber" />
+          <span data-testid="journey-books-inprogress" className="px-3 py-0.5 rounded-full border-2 border-bq-ink bg-bq-amber">
             {t('journey.inProgress')}: {summary.inProgressBooks}
           </span>
-          <span className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full bg-bq-ink3/40" />
+          <span className="px-3 py-0.5 rounded-full border-2 border-bq-ink bg-bq-paper text-bq-ink2">
             {t('journey.notStarted')}: {summary.lockedBooks}
           </span>
         </div>
       </section>
 
-      {/* Old Testament */}
-      <div data-testid="journey-old-testament">
-        <BookSection
-          title={t('journey.oldTestament')}
-          books={oldBooks}
-          isVi={isVi}
-          onBookClick={(book) => navigate(`/practice?book=${encodeURIComponent(book.book)}`)}
-          t={t}
-          testId="journey-ot-tab"
-        />
-      </div>
+      <JourneyMap progress={progress} currentRegion={currentRegion} onSelectRegion={scrollToLand} />
 
-      {/* New Testament */}
-      <div data-testid="journey-new-testament">
-        <BookSection
-          title={t('journey.newTestament')}
-          books={newBooks}
-          isVi={isVi}
-          onBookClick={(book) => navigate(`/practice?book=${encodeURIComponent(book.book)}`)}
-          t={t}
-          testId="journey-nt-tab"
-        />
-      </div>
+      {(['OLD', 'NEW'] as const).map(testament => (
+        <div key={testament} data-testid={testament === 'OLD' ? 'journey-old-testament' : 'journey-new-testament'} className="space-y-6">
+          <h2 className="font-display text-[26px] font-extrabold text-bq-ink px-1">
+            {t(testament === 'OLD' ? 'journey.oldTestament' : 'journey.newTestament')}
+          </h2>
+          {JOURNEY_REGIONS.filter(r => r.testament === testament).map(r => (
+            <LandSection key={r.id} region={r} books={booksOf(r)} isVi={isVi} onBookClick={onBookClick} t={t} />
+          ))}
+        </div>
+      ))}
     </div>
   )
 }
 
-function BookSection({
-  title, books, isVi, onBookClick, t, testId
+function LandSection({
+  region, books, isVi, onBookClick, t
 }: {
-  title: string
+  region: JourneyRegion
   books: BookProgress[]
   isVi: boolean
   onBookClick: (b: BookProgress) => void
   t: (key: string, opts?: Record<string, any>) => string
-  testId?: string
 }) {
+  const done = books.filter(b => b.status === 'COMPLETED').length
   return (
-    <section data-testid={testId}>
-      <h2 className="text-sm font-bold text-bq-ink2 uppercase tracking-wider mb-3 px-1">{title}</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-        {books.map((book) => (
+    <section id={`journey-land-${region.id}`} data-testid={`journey-land-${region.id}`} className="scroll-mt-24">
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-3 px-1">
+        <span className="grid place-items-center w-9 h-9 rounded-full border-[3px] border-bq-ink bg-bq-white font-extrabold">{region.no}</span>
+        <h3 className="font-display text-[22px] font-extrabold text-bq-ink">{t(`journey.regions.${region.id}.name`)}</h3>
+        <span className="text-[15px] font-semibold text-bq-ink3">{t(`journey.regions.${region.id}.place`)}</span>
+        <span className="ml-auto text-[15px] font-bold text-bq-ink2">{t('journey.regionBooks', { done, total: books.length })}</span>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {books.map(book => (
           <BookCard key={book.order} book={book} isVi={isVi} onClick={() => onBookClick(book)} t={t} />
         ))}
       </div>
@@ -163,57 +161,50 @@ function BookCard({
   t: (key: string, opts?: Record<string, any>) => string
 }) {
   const isCompleted = book.status === 'COMPLETED'
+  const started = book.status === 'IN_PROGRESS'
   const bookName = isVi && book.bookVi ? book.bookVi : book.book
 
   return (
     <div data-testid="journey-book-card">
     <div
       data-testid={`journey-book-card-${book.book}`}
+      role="button"
+      tabIndex={0}
       onClick={onClick}
-      className={`flex items-center gap-4 p-4 rounded-xl border transition-all ${
-        isCompleted
-          ? 'bg-bq-emerald/10 border-bq-emerald/30 cursor-pointer hover:border-bq-emerald/50'
-          : 'bg-bq-white border-bq-hair cursor-pointer hover:border-bq-amber/40'
+      onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick() } }}
+      className={`flex items-center gap-4 p-3.5 rounded-2xl border-[3px] border-bq-ink shadow-bq-btn cursor-pointer transition-transform hover:-translate-y-0.5 active:translate-y-1 active:shadow-bq-btn-down ${
+        isCompleted ? 'bg-bq-leaf' : 'bg-bq-white'
       }`}
     >
-      {/* Status icon */}
-      <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${
-        isCompleted ? 'bg-bq-emerald/20' : 'bg-bq-amber/20'
+      {/* Status: gold star when conquered, the book number otherwise */}
+      <div className={`w-11 h-11 rounded-full border-[3px] border-bq-ink grid place-items-center shrink-0 font-extrabold ${
+        isCompleted ? 'bg-bq-amber text-[20px]' : started ? 'bg-bq-white text-[15px]' : 'bg-bq-paper text-bq-ink3 text-[15px]'
       }`}>
-        <span className={`material-symbols-outlined text-lg ${
-          isCompleted ? 'text-bq-emerald' : 'text-bq-amberd'
-        }`} style={isCompleted ? { fontVariationSettings: "'FILL' 1" } : undefined}>
-          {isCompleted ? 'check_circle' : 'menu_book'}
-        </span>
+        {isCompleted ? '★' : book.order}
       </div>
 
-      {/* Book info */}
       <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2">
-          <span data-testid="journey-book-name" className="font-semibold text-sm text-bq-ink">
-            {bookName}
-          </span>
-          <span className="text-[10px] text-bq-ink2">#{book.order}</span>
-        </div>
+        <span data-testid="journey-book-name" className="font-bold text-[16px] text-bq-ink">
+          {bookName}
+        </span>
         {book.totalQuestions > 0 ? (
-          <p data-testid="journey-book-mastery" className="text-xs text-bq-ink2">
+          <p data-testid="journey-book-mastery" className="text-[13px] font-semibold text-bq-ink2">
             {t('journey.questions', { count: book.totalQuestions })} · {book.masteredQuestions}/{book.totalQuestions}
           </p>
         ) : (
-          <p data-testid="journey-book-mastery" className="text-xs text-bq-ink3">{t('journey.noQuestions')}</p>
+          <p data-testid="journey-book-mastery" className="text-[13px] text-bq-ink3">{t('journey.noQuestions')}</p>
         )}
       </div>
 
-      {/* Progress bar + percentage */}
       {book.totalQuestions > 0 && (
-        <div className="flex items-center gap-3 shrink-0">
-          <div className="w-20 h-2 bg-bq-inset rounded-full overflow-hidden">
+        <div className="flex items-center gap-2.5 shrink-0">
+          <div className="w-20 h-3 bg-bq-track border-2 border-bq-ink rounded-full overflow-hidden">
             <div
-              className={`h-full rounded-full transition-all ${isCompleted ? 'bg-bq-emerald' : 'bg-bq-amber'}`}
+              className={`h-full transition-all ${isCompleted ? 'bg-bq-emerald' : 'bg-bq-amber'}`}
               style={{ width: `${Math.min(book.masteryPercent, 100)}%` }}
             />
           </div>
-          <span className={`text-xs font-bold w-10 text-right ${isCompleted ? 'text-bq-emerald' : 'text-bq-ink2'}`}>
+          <span className="text-[14px] font-extrabold w-11 text-right text-bq-ink">
             {book.masteryPercent}%
           </span>
         </div>

@@ -2796,6 +2796,44 @@
     "heroDraftHint": "Continue building the journey →"
   },
   "journey": {
+    "mapLabel": "Map of the 66-book journey",
+    "mapAlt": "Hand-painted map of the Bible lands: desert, mountain, walled cities, pastures, watchtowers, a lake, a harbour and the golden city",
+    "regionSign": "{{name}}: {{done}} of {{total}} books conquered",
+    "regionBooks": "{{done}}/{{total}} books",
+    "regions": {
+      "pentateuch": {
+        "name": "Pentateuch",
+        "place": "Desert and Mount Sinai"
+      },
+      "history": {
+        "name": "History",
+        "place": "Royal cities"
+      },
+      "poetry": {
+        "name": "Poetry",
+        "place": "Sheep pastures"
+      },
+      "prophets": {
+        "name": "Prophets",
+        "place": "Watchtower hills"
+      },
+      "gospels": {
+        "name": "Gospels",
+        "place": "Sea of Galilee"
+      },
+      "acts": {
+        "name": "Acts",
+        "place": "The harbour"
+      },
+      "epistles": {
+        "name": "Epistles",
+        "place": "Cities with churches"
+      },
+      "revelation": {
+        "name": "Revelation",
+        "place": "The Golden City"
+      }
+    },
     "title": "Bible Journey",
     "conquered": "Conquered: {{count}}/{{total}} books ({{percent}}%)",
     "oldTestament": "OLD TESTAMENT",

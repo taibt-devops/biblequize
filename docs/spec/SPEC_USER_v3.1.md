@@ -440,10 +440,24 @@ Status:
 
 ### 6.3 UI
 
-> **Source:** `pages/Journey.tsx`, `components/BibleJourneyCard.tsx`, `BookProgress.tsx`.
+> **Source:** `pages/Journey.tsx`, `components/journey/JourneyMap.tsx`, `data/journeyRegions.ts`.
 
-- Chia 2 nhóm: Cựu Ước (39 sách) / Tân Ước (27 sách).
-- Mỗi sách: name VN, mastery%, status icon (✅ / 📖 / 🔒).
+- **Bản đồ vẽ tay 8 vùng đất** (đổi 2026-10-08, design system Lữ Khách — xem `DECISIONS.md`). Mỗi vùng = 1 nhóm sách theo `book.order`:
+
+  | # | Vùng | Sách | Cảnh trên bản đồ |
+  |---|---|---|---|
+  | 1 | Ngũ Kinh | 1–5 | Sa mạc và núi Si-na-i |
+  | 2 | Lịch Sử | 6–17 | Các vương thành |
+  | 3 | Thi Ca | 18–22 | Đồng cỏ chiên |
+  | 4 | Tiên Tri | 23–39 | Đồi tháp canh |
+  | 5 | Phúc Âm | 40–43 | Biển hồ Ga-li-lê |
+  | 6 | Công Vụ | 44 | Bến cảng |
+  | 7 | Thư Tín | 45–65 | Các thành có hội thánh |
+  | 8 | Khải Huyền | 66 | Thành Vàng |
+
+- Mỗi vùng có 1 bảng gỗ trên bản đồ: số thứ tự + tên + `đã COMPLETED / tổng sách`. Vùng chứa `summary.currentBook` (hoặc sách chưa COMPLETED đầu tiên) tô vàng, nhân vật đứng dưới bảng. Điện thoại (< 640px): bảng thu thành chấm số 1–8. Bấm bảng → cuộn tới danh sách sách của vùng.
+- Dưới bản đồ vẫn chia 2 nhóm Cựu Ước (vùng 1–4, 39 sách) / Tân Ước (vùng 5–8, 27 sách); trong mỗi nhóm, sách xếp theo vùng.
+- Mỗi sách: name VN, số câu đã thuộc / tổng, mastery% + thanh tiến độ; COMPLETED = nền lá + ★ vàng, còn lại hiện số thứ tự sách.
 - Click sách → Practice mode pre-filtered.
 
 ### 6.4 Book completion celebration

@@ -2796,6 +2796,44 @@
     "heroDraftHint": "Tiếp tục dựng hành trình →"
   },
   "journey": {
+    "mapLabel": "Bản đồ hành trình 66 sách",
+    "mapAlt": "Bản đồ vẽ tay các vùng đất Kinh Thánh: sa mạc, núi, các thành, đồng cỏ, tháp canh, biển hồ, bến cảng và thành vàng",
+    "regionSign": "{{name}}: đã chinh phục {{done}}/{{total}} sách",
+    "regionBooks": "{{done}}/{{total}} sách",
+    "regions": {
+      "pentateuch": {
+        "name": "Ngũ Kinh",
+        "place": "Sa mạc và núi Si-na-i"
+      },
+      "history": {
+        "name": "Lịch Sử",
+        "place": "Các vương thành"
+      },
+      "poetry": {
+        "name": "Thi Ca",
+        "place": "Đồng cỏ chiên"
+      },
+      "prophets": {
+        "name": "Tiên Tri",
+        "place": "Đồi tháp canh"
+      },
+      "gospels": {
+        "name": "Phúc Âm",
+        "place": "Biển hồ Ga-li-lê"
+      },
+      "acts": {
+        "name": "Công Vụ",
+        "place": "Bến cảng ra khơi"
+      },
+      "epistles": {
+        "name": "Thư Tín",
+        "place": "Các thành có hội thánh"
+      },
+      "revelation": {
+        "name": "Khải Huyền",
+        "place": "Thành Vàng"
+      }
+    },
     "title": "Hành trình Kinh Thánh",
     "conquered": "Đã chinh phục: {{count}}/{{total}} sách ({{percent}}%)",
     "oldTestament": "CỰU ƯỚC",
