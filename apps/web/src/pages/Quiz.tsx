@@ -822,15 +822,16 @@ const Quiz: React.FC = () => {
   }
 
   return (
-    <div data-testid="quiz-page" className="min-h-dvh bg-bq-paper font-body text-bq-ink overflow-hidden relative">
+    <div data-testid="quiz-page" className="min-h-dvh font-sans text-bq-ink overflow-hidden relative">
       {/* Background Decorative Elements */}
       <div className="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 overflow-hidden">
-        <div className="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-bq-amber/5 blur-[120px] rounded-full"></div>
-        <div className="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-bq-sapphire/5 blur-[120px] rounded-full"></div>
+        {/* Lữ Khách: calm painted meadow behind the scroll (LKD-11) */}
+        <img src="/images/lk/bq-quiz.webp" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-bq-paper/25" />
       </div>
 
       {/* Top Navigation Header */}
-      <header className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-bq-white border-b border-bq-hair">
+      <header className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-bq-white border-b-[3px] border-bq-ink">
         <div className="flex items-center gap-3">
           <Link
             to={quitPath}
@@ -857,11 +858,18 @@ const Quiz: React.FC = () => {
         {/* Progress Bar Center (desktop) */}
         <div className="absolute left-1/2 -translate-x-1/2 w-full max-w-md px-4 hidden md:block text-center">
           <div className="flex items-center gap-4">
-            <div className="h-2 flex-1 bg-bq-inset rounded-full overflow-hidden">
+            <div className="relative h-3.5 flex-1 bg-bq-track border-2 border-bq-ink rounded-full">
               <div
-                className="h-full bg-bq-action transition-all duration-500"
+                className="h-full rounded-full bg-bq-amber transition-all duration-500"
                 style={{ width: `${progressPercent}%` }}
               ></div>
+              <img
+                src="/images/lk/hero.webp"
+                alt=""
+                aria-hidden
+                className="absolute bottom-1 h-7 -translate-x-1/2 transition-[left] duration-500"
+                style={{ left: `${progressPercent}%` }}
+              />
             </div>
             <span data-testid="quiz-progress" className="text-[10px] font-black text-bq-amberd whitespace-nowrap">
               {currentQuestionIndex + 1} / {questions.length}
@@ -886,9 +894,9 @@ const Quiz: React.FC = () => {
       </header>
 
       {/* Mobile Progress Bar */}
-      <div className="fixed top-16 left-0 w-full h-1 bg-bq-inset md:hidden z-50">
+      <div className="fixed top-16 left-0 w-full h-1.5 bg-bq-track border-b-2 border-bq-ink md:hidden z-50">
         <div
-          className="h-full bg-bq-action transition-all duration-500"
+          className="h-full bg-bq-amber transition-all duration-500"
           style={{ width: `${progressPercent}%` }}
         ></div>
       </div>
@@ -1018,12 +1026,14 @@ const Quiz: React.FC = () => {
               questionLenClass === 'medium' ? 'text-[18px] font-semibold text-center' :
                                               'text-[15px] font-semibold text-left'
             const lenClass = questionLenClass
+            // Lữ Khách: the question sits on a parchment scroll between two wooden rods (LKD-11).
             return (
+              <div>
+              <div aria-hidden className="h-4 md:h-5 rounded-full bg-bq-wood border-[3px] border-bq-ink" />
               <div
                 data-question-length={lenClass}
-                className="relative w-full aspect-auto min-h-[160px] md:aspect-[21/7] md:min-h-0 flex flex-col items-center justify-center text-center p-5 md:p-10 bg-bq-white rounded-2xl md:rounded-[2.5rem] border border-bq-hair shadow-bq-soft overflow-hidden"
+                className="relative mx-3 md:mx-5 -my-1 aspect-auto min-h-[160px] md:aspect-[21/7] md:min-h-0 flex flex-col items-center justify-center text-center p-5 md:p-10 bg-bq-parch border-x-[3px] border-bq-ink overflow-hidden"
               >
-                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1.5 md:w-2 h-20 md:h-32 bg-bq-amber rounded-r-full"></div>
 
                 {/* Verse badge + DTAG-2 difficulty badge — pills at the top of the card. */}
                 <div className="flex items-center justify-center flex-wrap gap-2 mb-3 md:mb-4">
@@ -1052,6 +1062,8 @@ const Quiz: React.FC = () => {
                     {getBookName(currentQuestion.book, bookLang)}{currentQuestion.chapter ? ` - ${t('quiz.chapter', { chapter: currentQuestion.chapter })}` : ''}
                   </span>
                 </div>
+              </div>
+              <div aria-hidden className="h-4 md:h-5 rounded-full bg-bq-wood border-[3px] border-bq-ink" />
               </div>
             )
           })()}
@@ -1109,17 +1121,17 @@ const Quiz: React.FC = () => {
           See DECISIONS.md 2026-04-18.
         */}
         {!showResult && (
-        <div className="mt-16 w-full flex justify-between items-center opacity-80">
+        <div className="mt-12 w-full flex justify-between items-center">
           <button
             data-testid="quiz-hint-btn"
             data-hint-remaining={lifeline.hintsRemaining}
             onClick={() => { if (lifeline.canUseHint && !showResult) lifeline.useHint() }}
             disabled={!lifeline.canUseHint || showResult}
             aria-disabled={!lifeline.canUseHint || showResult}
-            className={`flex items-center gap-2 transition-colors ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-2xl border-[3px] border-bq-ink bg-bq-white shadow-bq-btn active:translate-y-1 active:shadow-bq-btn-down transition-transform ${
               lifeline.canUseHint && !showResult
-                ? 'text-bq-ink2 hover:text-bq-ink'
-                : 'text-bq-ink3 cursor-not-allowed'
+                ? 'text-bq-ink'
+                : 'text-bq-ink3 opacity-60 cursor-not-allowed'
             }`}
           >
             <span className="material-symbols-outlined">lightbulb</span>
@@ -1135,7 +1147,7 @@ const Quiz: React.FC = () => {
                 handleAnswerSelect(-1)
               }
             }}
-            className="flex items-center gap-2 text-bq-ink2 hover:text-bq-ink transition-colors"
+            className="flex items-center gap-2 px-4 py-2 rounded-2xl border-[3px] border-bq-ink bg-bq-white shadow-bq-btn active:translate-y-1 active:shadow-bq-btn-down transition-transform text-bq-ink"
           >
             <span className="material-symbols-outlined">skip_next</span>
             <span className="text-xs font-bold uppercase tracking-widest">{t('quiz.skip')}</span>
