@@ -74,21 +74,21 @@ export default function FeedbackAdmin() {
   const statusBadge = (status: string) => {
     const base = 'inline-block px-2 py-0.5 rounded text-xs font-medium'
     switch (status) {
-      case 'pending':     return <span className={`${base} bg-yellow-500/20 text-yellow-300 border border-yellow-500/30`}>{t('admin.feedback.filter.pending')}</span>
-      case 'in_progress': return <span className={`${base} bg-blue-500/20 text-blue-300 border border-blue-500/30`}>{t('admin.feedback.filter.inProgress')}</span>
-      case 'resolved':    return <span className={`${base} bg-emerald-500/20 text-emerald-300 border border-emerald-500/30`}>{t('admin.feedback.filter.resolved')}</span>
-      case 'rejected':    return <span className={`${base} bg-rose-500/20 text-rose-300 border border-rose-500/30`}>{t('admin.feedback.filter.rejected')}</span>
-      default: return <span className={`${base} bg-white/10 text-[#d5c4af]/60`}>{status}</span>
+      case 'pending':     return <span className={`${base} bg-yellow-500/20 text-[#8A5A12] border border-yellow-500/30`}>{t('admin.feedback.filter.pending')}</span>
+      case 'in_progress': return <span className={`${base} bg-blue-500/20 text-[#2F6FB0] border border-blue-500/30`}>{t('admin.feedback.filter.inProgress')}</span>
+      case 'resolved':    return <span className={`${base} bg-emerald-500/20 text-[#2E7D4F] border border-emerald-500/30`}>{t('admin.feedback.filter.resolved')}</span>
+      case 'rejected':    return <span className={`${base} bg-rose-500/20 text-[#B3452F] border border-rose-500/30`}>{t('admin.feedback.filter.rejected')}</span>
+      default: return <span className={`${base} bg-[#1D2B22]/[0.06] text-[#4D3A1F]/60`}>{status}</span>
     }
   }
 
   const typeBadge = (type: string) => {
     const base = 'inline-block px-2 py-0.5 rounded text-xs font-medium'
     switch (type) {
-      case 'report':   return <span className={`${base} bg-rose-500/20 text-rose-300`}>{t('admin.feedback.filter.report')}</span>
-      case 'question': return <span className={`${base} bg-purple-500/20 text-purple-300`}>{t('admin.feedback.filter.question')}</span>
-      case 'general':  return <span className={`${base} bg-sky-500/20 text-sky-300`}>{t('admin.feedback.filter.general')}</span>
-      default: return <span className={`${base} bg-white/10 text-[#d5c4af]/60`}>{type}</span>
+      case 'report':   return <span className={`${base} bg-rose-500/20 text-[#B3452F]`}>{t('admin.feedback.filter.report')}</span>
+      case 'question': return <span className={`${base} bg-purple-500/20 text-[#6B3FA0]`}>{t('admin.feedback.filter.question')}</span>
+      case 'general':  return <span className={`${base} bg-sky-500/20 text-[#2F6FB0]`}>{t('admin.feedback.filter.general')}</span>
+      default: return <span className={`${base} bg-[#1D2B22]/[0.06] text-[#4D3A1F]/60`}>{type}</span>
     }
   }
 
@@ -112,7 +112,7 @@ export default function FeedbackAdmin() {
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-2xl font-semibold">{t('admin.feedback.title')}</h2>
-            <p className="text-[#d5c4af]/60 text-sm mt-0.5">{t('admin.feedback.subtitle', { count: total })}</p>
+            <p className="text-[#4D3A1F]/60 text-sm mt-0.5">{t('admin.feedback.subtitle', { count: total })}</p>
           </div>
         </div>
 
@@ -124,11 +124,11 @@ export default function FeedbackAdmin() {
               data-testid={`feedback-stat-${key}`}
               onClick={() => setStatusFilter(statusFilter === key ? '' : key)}
               className={`p-3 rounded-lg border text-left transition-all cursor-pointer ${
-                statusFilter === key ? colorMap[color] : 'border-[#d5c4af]/10 bg-[#1d1f29] hover:bg-white/10'
+                statusFilter === key ? colorMap[color] : 'border-[#4D3A1F]/10 bg-[#FFF8E7] hover:bg-[#1D2B22]/[0.06]'
               }`}
             >
               <div className="text-2xl font-bold">{stats[key] ?? 0}</div>
-              <div className="text-xs text-[#d5c4af]/60 mt-0.5">{t(`admin.feedback.stats.${key}`)}</div>
+              <div className="text-xs text-[#4D3A1F]/60 mt-0.5">{t(`admin.feedback.stats.${key}`)}</div>
             </button>
           ))}
         </div>
@@ -157,9 +157,9 @@ export default function FeedbackAdmin() {
         </div>
 
         {/* Table */}
-        <div data-testid="feedback-table" className="rounded-lg border border-[#d5c4af]/10 overflow-hidden">
+        <div data-testid="feedback-table" className="rounded-lg border border-[#4D3A1F]/10 overflow-hidden">
           <table className="min-w-full text-sm">
-            <thead className="bg-[#1d1f29] text-[#d5c4af]/70">
+            <thead className="bg-[#FFF8E7] text-[#4D3A1F]/70">
               <tr>
                 <th className="px-3 py-2 text-left">{t('admin.feedback.columnUser')}</th>
                 <th className="px-3 py-2 text-left">{t('admin.feedback.columnType')}</th>
@@ -171,32 +171,32 @@ export default function FeedbackAdmin() {
             </thead>
             <tbody>
               {isLoading ? (
-                <tr><td colSpan={6} className="px-3 py-6 text-white/50 text-center">{t('admin.feedback.loading')}</td></tr>
+                <tr><td colSpan={6} className="px-3 py-6 text-[#6B5530] text-center">{t('admin.feedback.loading')}</td></tr>
               ) : items.length === 0 ? (
-                <tr><td colSpan={6} className="px-3 py-6 text-white/50 text-center">{t('admin.feedback.empty')}</td></tr>
+                <tr><td colSpan={6} className="px-3 py-6 text-[#6B5530] text-center">{t('admin.feedback.empty')}</td></tr>
               ) : items.map(item => (
                 <tr
                   data-testid="feedback-row"
                   key={item.id}
-                  className="odd:bg-white/[0.03] hover:bg-white/[0.07] cursor-pointer"
+                  className="odd:bg-[#1D2B22]/[0.04] hover:bg-[#1D2B22]/[0.04] cursor-pointer"
                   onClick={() => { setSelected(item); setNote('') }}
                 >
                   <td className="px-3 py-2 whitespace-nowrap">
                     <div className="font-medium">{item.userName || '—'}</div>
-                    <div className="text-xs text-[#d5c4af]/40">{item.userEmail || ''}</div>
+                    <div className="text-xs text-[#4D3A1F]/40">{item.userEmail || ''}</div>
                   </td>
                   <td className="px-3 py-2">{typeBadge(item.type)}</td>
                   <td className="px-3 py-2 max-w-xs">
-                    <div className="truncate text-white/80" title={item.content}>{item.content}</div>
+                    <div className="truncate text-[#4D3A1F]" title={item.content}>{item.content}</div>
                   </td>
-                  <td className="px-3 py-2 text-xs text-white/50 max-w-[200px]">
+                  <td className="px-3 py-2 text-xs text-[#6B5530] max-w-[200px]">
                     {item.question
                       ? <span title={item.question.content}>[{item.question.book}] {item.question.content?.slice(0, 45)}…</span>
                       : '—'
                     }
                   </td>
                   <td className="px-3 py-2 text-center">{statusBadge(item.status)}</td>
-                  <td className="px-3 py-2 text-xs text-white/50 whitespace-nowrap">
+                  <td className="px-3 py-2 text-xs text-[#6B5530] whitespace-nowrap">
                     {item.createdAt ? new Date(item.createdAt).toLocaleDateString() : '—'}
                   </td>
                 </tr>
@@ -207,16 +207,16 @@ export default function FeedbackAdmin() {
 
         {/* Pagination */}
         <div className="flex items-center justify-end gap-2">
-          <span className="text-sm text-white/50">{t('admin.feedback.paginationSummary', { page: page + 1, totalPages })}</span>
+          <span className="text-sm text-[#6B5530]">{t('admin.feedback.paginationSummary', { page: page + 1, totalPages })}</span>
           <button
             disabled={page <= 0}
             onClick={() => { const p = page - 1; setPage(p); fetchData(p) }}
-            className="px-2 py-1 rounded bg-white/10 disabled:opacity-40 text-sm"
+            className="px-2 py-1 rounded bg-[#1D2B22]/[0.06] disabled:opacity-40 text-sm"
           >{t('admin.feedback.paginationPrev')}</button>
           <button
             disabled={page >= totalPages - 1}
             onClick={() => { const p = page + 1; setPage(p); fetchData(p) }}
-            className="px-2 py-1 rounded bg-white/10 disabled:opacity-40 text-sm"
+            className="px-2 py-1 rounded bg-[#1D2B22]/[0.06] disabled:opacity-40 text-sm"
           >{t('admin.feedback.paginationNext')}</button>
         </div>
       </div>
@@ -224,10 +224,10 @@ export default function FeedbackAdmin() {
       {/* Detail Modal */}
       {selected && (
         <div data-testid="feedback-detail-modal" className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
-          <div className="w-full max-w-xl rounded-xl border border-[#d5c4af]/10 bg-[#111018] p-6 shadow-2xl">
+          <div className="w-full max-w-xl rounded-xl border border-[#4D3A1F]/10 bg-[#EFE3C3] p-6 shadow-2xl">
             <div className="flex items-center justify-between mb-4">
               <div className="text-lg font-semibold">{t('admin.feedback.detailTitle')}</div>
-              <button onClick={() => setSelected(null)} className="px-2 py-1 rounded bg-white/10 hover:bg-white/20">✕</button>
+              <button onClick={() => setSelected(null)} className="px-2 py-1 rounded bg-[#1D2B22]/[0.06] hover:bg-[#1D2B22]/10">✕</button>
             </div>
 
             <div className="space-y-3 text-sm">
@@ -235,47 +235,47 @@ export default function FeedbackAdmin() {
                 {typeBadge(selected.type)}
                 {statusBadge(selected.status)}
                 {selected.handledBy && (
-                  <span className="text-xs text-[#d5c4af]/40">{t('admin.feedback.handledBy', { name: selected.handledBy })}</span>
+                  <span className="text-xs text-[#4D3A1F]/40">{t('admin.feedback.handledBy', { name: selected.handledBy })}</span>
                 )}
               </div>
 
               <div>
-                <div className="text-xs text-[#d5c4af]/40 mb-1">{t('admin.feedback.sender')}</div>
+                <div className="text-xs text-[#4D3A1F]/40 mb-1">{t('admin.feedback.sender')}</div>
                 <div className="font-medium">{selected.userName}
-                  <span className="text-white/50 font-normal ml-2 text-xs">({selected.userEmail})</span>
+                  <span className="text-[#6B5530] font-normal ml-2 text-xs">({selected.userEmail})</span>
                 </div>
               </div>
 
               {selected.question && (
                 <div>
-                  <div className="text-xs text-[#d5c4af]/40 mb-1">{t('admin.feedback.relatedQuestion')}</div>
-                  <div className="px-3 py-2 rounded bg-[#1d1f29] border border-[#d5c4af]/10 text-xs text-white/80">
+                  <div className="text-xs text-[#4D3A1F]/40 mb-1">{t('admin.feedback.relatedQuestion')}</div>
+                  <div className="px-3 py-2 rounded bg-[#FFF8E7] border border-[#4D3A1F]/10 text-xs text-[#4D3A1F]">
                     [{selected.question.book}] {selected.question.content}
                   </div>
                 </div>
               )}
 
               <div>
-                <div className="text-xs text-[#d5c4af]/40 mb-1">{t('admin.feedback.contentLabel')}</div>
-                <div className="px-3 py-2 rounded bg-[#1d1f29] border border-[#d5c4af]/10 whitespace-pre-wrap text-white/80 max-h-40 overflow-y-auto">
+                <div className="text-xs text-[#4D3A1F]/40 mb-1">{t('admin.feedback.contentLabel')}</div>
+                <div className="px-3 py-2 rounded bg-[#FFF8E7] border border-[#4D3A1F]/10 whitespace-pre-wrap text-[#4D3A1F] max-h-40 overflow-y-auto">
                   {selected.content}
                 </div>
               </div>
 
               <div>
-                <div className="text-xs text-[#d5c4af]/40 mb-1">{t('admin.feedback.adminNoteLabel')}</div>
+                <div className="text-xs text-[#4D3A1F]/40 mb-1">{t('admin.feedback.adminNoteLabel')}</div>
                 <textarea
                   rows={2}
                   value={note}
                   onChange={e => setNote(e.target.value)}
                   placeholder={t('admin.feedback.adminNotePlaceholder')}
-                  className="w-full px-3 py-2 rounded bg-white/10 border border-[#d5c4af]/10 text-sm resize-none"
+                  className="w-full px-3 py-2 rounded bg-[#1D2B22]/[0.06] border border-[#4D3A1F]/10 text-sm resize-none"
                 />
               </div>
             </div>
 
             <div data-testid="feedback-status-select" className="flex items-center justify-end gap-2 mt-5 flex-wrap">
-              <button onClick={() => setSelected(null)} className="px-3 py-2 rounded bg-white/10 hover:bg-white/20 text-sm">
+              <button onClick={() => setSelected(null)} className="px-3 py-2 rounded bg-[#1D2B22]/[0.06] hover:bg-[#1D2B22]/10 text-sm">
                 {t('admin.feedback.closeButton')}
               </button>
               <button

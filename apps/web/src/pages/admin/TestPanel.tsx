@@ -130,20 +130,20 @@ export default function TestPanel() {
           <div className="bg-surface-container-lowest rounded-lg p-4 space-y-3 text-sm">
             <div className="flex gap-4">
               <span className="text-on-surface-variant">Pool:</span>
-              <span className="text-green-400">NEW {preview.poolBreakdown.NEW ?? 0}</span>
+              <span className="text-[#2E7D4F]">NEW {preview.poolBreakdown.NEW ?? 0}</span>
               <span className="text-secondary">REVIEW {preview.poolBreakdown.REVIEW ?? 0}</span>
               <span className="text-on-surface-variant">OLD {preview.poolBreakdown.OLD ?? 0}</span>
             </div>
             <div className="flex gap-4">
               <span className="text-on-surface-variant">Difficulty:</span>
-              <span className="text-green-400">easy {preview.difficultyBreakdown.easy ?? 0}</span>
+              <span className="text-[#2E7D4F]">easy {preview.difficultyBreakdown.easy ?? 0}</span>
               <span className="text-secondary">medium {preview.difficultyBreakdown.medium ?? 0}</span>
               <span className="text-error">hard {preview.difficultyBreakdown.hard ?? 0}</span>
             </div>
             <ul className="text-xs text-on-surface-variant space-y-1 max-h-40 overflow-y-auto">
               {preview.questions.map(q => (
                 <li key={q.id} className="flex gap-2">
-                  <span className={q.difficulty === 'hard' ? 'text-error' : q.difficulty === 'medium' ? 'text-secondary' : 'text-green-400'}>
+                  <span className={q.difficulty === 'hard' ? 'text-error' : q.difficulty === 'medium' ? 'text-secondary' : 'text-[#2E7D4F]'}>
                     [{q.difficulty}]
                   </span>
                   <span>{q.book}</span>

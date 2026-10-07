@@ -261,11 +261,11 @@ export default function AIQuestionGenerator() {
       {/* Header */}
       <div className="flex items-start justify-between flex-wrap gap-3">
         <div>
-          <h2 className="text-3xl font-extrabold text-[#e1e1ef] tracking-tight flex items-center gap-2.5">
-            <span className="material-symbols-outlined text-[#e8a832] text-2xl">psychology</span>
+          <h2 className="text-3xl font-extrabold text-[#1D2B22] tracking-tight flex items-center gap-2.5">
+            <span className="material-symbols-outlined text-[#8A5A12] text-2xl">psychology</span>
             {t('admin.aiGenerator.title')}
           </h2>
-          <p className="text-[#d5c4af]/60 text-sm mt-1">{t('admin.aiGenerator.subtitle')}</p>
+          <p className="text-[#4D3A1F]/60 text-sm mt-1">{t('admin.aiGenerator.subtitle')}</p>
           {aiInfo && (
             <div className="flex flex-wrap items-center gap-1.5 mt-2">
               {(['deepseek', 'gemini', 'claude'] as const).map(p => {
@@ -273,7 +273,7 @@ export default function AIQuestionGenerator() {
                 if (!info) return null
                 const label = p === 'deepseek' ? 'DeepSeek' : p === 'gemini' ? 'Gemini' : 'Claude'
                 return (
-                  <span key={p} className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md text-[11px] font-medium bg-white/[0.03] border border-white/10 text-[#d5c4af]/70">
+                  <span key={p} className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md text-[11px] font-medium bg-[#1D2B22]/[0.04] border border-[#1D2B22]/15 text-[#4D3A1F]/70">
                     <span className={`w-1.5 h-1.5 rounded-full ${info.configured ? 'bg-emerald-400' : 'bg-red-400/70'}`} />
                     {label} {info.configured ? info.model : t('admin.aiGenerator.notConfigured')}
                   </span>
@@ -284,17 +284,17 @@ export default function AIQuestionGenerator() {
         </div>
         {drafts.length > 0 && (
           <div className="flex items-center gap-2 text-sm flex-wrap">
-            <span className="px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-300 font-bold border border-yellow-500/30">
+            <span className="px-3 py-1 rounded-full bg-yellow-500/20 text-[#8A5A12] font-bold border border-yellow-500/30">
               {t('admin.aiGenerator.pendingChip', { count: pendingCount })}
             </span>
-            <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30">
+            <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-[#2E7D4F] font-bold border border-emerald-500/30">
               {t('admin.aiGenerator.approvedChip', { count: approvedCount })}
             </span>
             {pendingCount > 1 && (
               <button
                 onClick={saveAllPending}
                 disabled={isSavingAll}
-                className="px-3 py-1 rounded-full bg-[#4bbf9f]/20 text-[#e8a832] font-bold border border-[#4bbf9f]/30 hover:bg-[#4bbf9f]/30 transition-colors disabled:opacity-50">
+                className="px-3 py-1 rounded-full bg-[#2E7D4F]/20 text-[#8A5A12] font-bold border border-[#2E7D4F]/30 hover:bg-[#2E7D4F]/30 transition-colors disabled:opacity-50">
                 {isSavingAll ? t('admin.aiGenerator.saveAllSaving') : t('admin.aiGenerator.saveAllButton', { count: pendingCount })}
               </button>
             )}
@@ -305,16 +305,16 @@ export default function AIQuestionGenerator() {
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 items-start">
 
         {/* ══════════════════ FORM PANEL ══════════════════ */}
-        <div className="bg-[#1d1f29] rounded-lg border border-[#504535]/10 p-5 space-y-5">
+        <div className="bg-[#FFF8E7] rounded-lg border border-[#1D2B22]/10 p-5 space-y-5">
 
           {/* Scripture ref */}
           <div data-testid="ai-scripture-selector">
-            <h3 className="text-xs font-bold text-[#d5c4af]/70 uppercase tracking-wider mb-3">
+            <h3 className="text-xs font-bold text-[#4D3A1F]/70 uppercase tracking-wider mb-3">
               {t('admin.aiGenerator.scriptureSectionTitle')}
             </h3>
             <div className="grid grid-cols-2 gap-3 mb-3">
               <div>
-                <label className="block text-xs font-bold text-[#d5c4af] uppercase tracking-wider mb-1.5">{t('admin.aiGenerator.bookLabel')}</label>
+                <label className="block text-xs font-bold text-[#4D3A1F] uppercase tracking-wider mb-1.5">{t('admin.aiGenerator.bookLabel')}</label>
                 <select value={book} onChange={e => onBookChange(e.target.value)} className="form-select">
                   <option value="">{t('admin.aiGenerator.bookPlaceholder')}</option>
                   <option value={ALL_BOOKS}>{t('admin.aiGenerator.allBooksOption')}</option>
@@ -327,8 +327,8 @@ export default function AIQuestionGenerator() {
                 </select>
               </div>
               <div>
-                <label className="block text-xs font-bold text-[#d5c4af] uppercase tracking-wider mb-1.5">
-                  {t('admin.aiGenerator.chapterLabel')} {totalChapters > 0 && <span className="text-[#d5c4af]/50 normal-case font-normal">{t('admin.aiGenerator.chaptersCount', { count: totalChapters })}</span>}
+                <label className="block text-xs font-bold text-[#4D3A1F] uppercase tracking-wider mb-1.5">
+                  {t('admin.aiGenerator.chapterLabel')} {totalChapters > 0 && <span className="text-[#4D3A1F]/50 normal-case font-normal">{t('admin.aiGenerator.chaptersCount', { count: totalChapters })}</span>}
                 </label>
                 <div className="flex items-center gap-1.5">
                   <select value={chapter} onChange={e => onChapterChange(Number(e.target.value))}
@@ -336,7 +336,7 @@ export default function AIQuestionGenerator() {
                     {Array.from({length: totalChapters}, (_, i) => i + 1).map(c =>
                       <option key={c} value={c}>{c}</option>)}
                   </select>
-                  <span className="text-[#d5c4af] text-xs font-bold">{t('admin.aiGenerator.chapterTo')}</span>
+                  <span className="text-[#4D3A1F] text-xs font-bold">{t('admin.aiGenerator.chapterTo')}</span>
                   <select value={chapterEnd} onChange={e => onChapterEndChange(Number(e.target.value))}
                     disabled={!book || isAllBooks} className="form-select flex-1">
                     {Array.from({length: totalChapters}, (_, i) => i + 1)
@@ -347,13 +347,13 @@ export default function AIQuestionGenerator() {
               </div>
             </div>
             {isAllBooks && (
-              <p className="text-xs text-[#e8a832]/80 mb-3 -mt-1">{t('admin.aiGenerator.allBooksHint')}</p>
+              <p className="text-xs text-[#8A5A12]/80 mb-3 -mt-1">{t('admin.aiGenerator.allBooksHint')}</p>
             )}
             {!isRange && (
             <div className="grid grid-cols-2 gap-3 mb-3">
               <div>
-                <label className="block text-xs font-bold text-[#d5c4af] uppercase tracking-wider mb-1.5">
-                  {t('admin.aiGenerator.verseStartLabel')} <span className="text-[#d5c4af]/50 normal-case font-normal">{t('admin.aiGenerator.verseStartMax', { count: maxVerseStart })}</span>
+                <label className="block text-xs font-bold text-[#4D3A1F] uppercase tracking-wider mb-1.5">
+                  {t('admin.aiGenerator.verseStartLabel')} <span className="text-[#4D3A1F]/50 normal-case font-normal">{t('admin.aiGenerator.verseStartMax', { count: maxVerseStart })}</span>
                 </label>
                 <select value={verseStart} onChange={e => { const v = Number(e.target.value); setVerseStart(v); if (verseEnd < v) setVerseEnd(v) }}
                   disabled={!book || isAllBooks} className="form-select">
@@ -362,8 +362,8 @@ export default function AIQuestionGenerator() {
                 </select>
               </div>
               <div>
-                <label className="block text-xs font-bold text-[#d5c4af] uppercase tracking-wider mb-1.5">
-                  {t('admin.aiGenerator.verseEndLabel')} <span className="text-[#d5c4af]/50 normal-case font-normal">{t('admin.aiGenerator.verseStartMax', { count: maxVerseEnd })}</span>
+                <label className="block text-xs font-bold text-[#4D3A1F] uppercase tracking-wider mb-1.5">
+                  {t('admin.aiGenerator.verseEndLabel')} <span className="text-[#4D3A1F]/50 normal-case font-normal">{t('admin.aiGenerator.verseStartMax', { count: maxVerseEnd })}</span>
                 </label>
                 <select value={verseEnd} onChange={e => setVerseEnd(Number(e.target.value))}
                   disabled={!book || isAllBooks} className="form-select">
@@ -375,8 +375,8 @@ export default function AIQuestionGenerator() {
             </div>
             )}
             <div>
-              <label className="block text-xs font-bold text-[#d5c4af] uppercase tracking-wider mb-1.5">
-                {t('admin.aiGenerator.scriptureTextLabel')} <span className="text-[#d5c4af]/50 normal-case font-normal">{t('admin.aiGenerator.scriptureTextHint')}</span>
+              <label className="block text-xs font-bold text-[#4D3A1F] uppercase tracking-wider mb-1.5">
+                {t('admin.aiGenerator.scriptureTextLabel')} <span className="text-[#4D3A1F]/50 normal-case font-normal">{t('admin.aiGenerator.scriptureTextHint')}</span>
               </label>
               <textarea rows={3} value={scriptureText} onChange={e => setText(e.target.value)}
                 placeholder={t('admin.aiGenerator.scriptureTextPlaceholder')}
@@ -386,14 +386,14 @@ export default function AIQuestionGenerator() {
 
           {/* Divider */}
           <div className="flex items-center gap-3">
-            <div className="flex-1 h-px bg-[#504535]/30" />
-            <span className="text-xs text-[#d5c4af]/50 font-bold tracking-wider">{t('admin.aiGenerator.settingsDivider')}</span>
-            <div className="flex-1 h-px bg-[#504535]/30" />
+            <div className="flex-1 h-px bg-[#1D2B22]/30" />
+            <span className="text-xs text-[#4D3A1F]/50 font-bold tracking-wider">{t('admin.aiGenerator.settingsDivider')}</span>
+            <div className="flex-1 h-px bg-[#1D2B22]/30" />
           </div>
 
           {/* Difficulty */}
           <div data-testid="ai-settings-panel">
-            <label className="block text-xs font-bold text-[#d5c4af] uppercase tracking-wider mb-1.5">{t('admin.aiGenerator.difficultyLabel')}</label>
+            <label className="block text-xs font-bold text-[#4D3A1F] uppercase tracking-wider mb-1.5">{t('admin.aiGenerator.difficultyLabel')}</label>
             <div className="segmented-control">
               {(['easy','medium','hard'] as Difficulty[]).map(d => (
                 <button key={d} onClick={() => setDifficulty(d)}
@@ -407,7 +407,7 @@ export default function AIQuestionGenerator() {
           {/* Type + Language */}
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-xs font-bold text-[#d5c4af] uppercase tracking-wider mb-1.5">{t('admin.aiGenerator.typeLabel')}</label>
+              <label className="block text-xs font-bold text-[#4D3A1F] uppercase tracking-wider mb-1.5">{t('admin.aiGenerator.typeLabel')}</label>
               <select value={qType} onChange={e => setQType(e.target.value as QuestionType)} className="form-select text-sm">
                 <option value="multiple_choice_single">{t('admin.aiGenerator.typeMcSingle')}</option>
                 <option value="multiple_choice_multi">{t('admin.aiGenerator.typeMcMulti')}</option>
@@ -416,7 +416,7 @@ export default function AIQuestionGenerator() {
               </select>
             </div>
             <div>
-              <label className="block text-xs font-bold text-[#d5c4af] uppercase tracking-wider mb-1.5">{t('admin.aiGenerator.languageLabel')}</label>
+              <label className="block text-xs font-bold text-[#4D3A1F] uppercase tracking-wider mb-1.5">{t('admin.aiGenerator.languageLabel')}</label>
               <div className="segmented-control">
                 {['vi','en'].map(l => (
                   <button key={l} onClick={() => setLanguage(l)}
@@ -430,20 +430,20 @@ export default function AIQuestionGenerator() {
 
           {/* Count slider */}
           <div>
-            <label className="block text-xs font-bold text-[#d5c4af] uppercase tracking-wider mb-2">
-              {t('admin.aiGenerator.countLabel')} <span className="text-[#e8a832] font-black text-sm">{count}</span>
+            <label className="block text-xs font-bold text-[#4D3A1F] uppercase tracking-wider mb-2">
+              {t('admin.aiGenerator.countLabel')} <span className="text-[#8A5A12] font-black text-sm">{count}</span>
             </label>
             <div className="flex items-center gap-3">
-              <span className="text-xs text-[#d5c4af]/50">1</span>
+              <span className="text-xs text-[#4D3A1F]/50">1</span>
               <input type="range" min={1} max={10} value={count} onChange={e => setCount(Number(e.target.value))}
-                className="flex-1 accent-[#4bbf9f] cursor-pointer" />
-              <span className="text-xs text-[#d5c4af]/50">10</span>
+                className="flex-1 accent-[#2E7D4F] cursor-pointer" />
+              <span className="text-xs text-[#4D3A1F]/50">10</span>
             </div>
           </div>
 
           {/* Provider selector */}
           <div>
-            <label className="block text-xs font-bold text-[#d5c4af] uppercase tracking-wider mb-1.5">{t('admin.aiGenerator.providerLabel')}</label>
+            <label className="block text-xs font-bold text-[#4D3A1F] uppercase tracking-wider mb-1.5">{t('admin.aiGenerator.providerLabel')}</label>
             <div data-testid="ai-provider-select" className="segmented-control">
               {(['deepseek', 'gemini', 'claude'] as const).map(p => {
                 const info = aiInfo?.providers[p]
@@ -461,7 +461,7 @@ export default function AIQuestionGenerator() {
                     {labelText}
                     {isDefault && (
                       <span data-testid="ai-provider-default-badge"
-                        className="ml-1 text-[9px] font-black tracking-wider bg-[#e8a832] text-[#281900] px-1 py-0.5 rounded">
+                        className="ml-1 text-[9px] font-black tracking-wider bg-[#FFC93C] text-[#1D2B22] px-1 py-0.5 rounded">
                         DEFAULT
                       </span>
                     )}
@@ -485,11 +485,11 @@ export default function AIQuestionGenerator() {
           {provider === 'claude' && (
             <div>
               <div className="flex items-center justify-between mb-2">
-                <label className="text-xs font-bold text-[#d5c4af] uppercase tracking-wider">{t('admin.aiGenerator.claudeModelsLabel')}</label>
+                <label className="text-xs font-bold text-[#4D3A1F] uppercase tracking-wider">{t('admin.aiGenerator.claudeModelsLabel')}</label>
                 <label className="flex items-center gap-1.5 cursor-pointer">
                   <input type="checkbox" checked={claudeAutoMode} onChange={e => setClaudeAutoMode(e.target.checked)}
-                    className="accent-[#e8a832] w-3.5 h-3.5" />
-                  <span className="text-xs font-bold text-[#e8a832]">{t('admin.aiGenerator.claudeAutoLabel')}</span>
+                    className="accent-[#8A5A12] w-3.5 h-3.5" />
+                  <span className="text-xs font-bold text-[#8A5A12]">{t('admin.aiGenerator.claudeAutoLabel')}</span>
                 </label>
               </div>
 
@@ -502,12 +502,12 @@ export default function AIQuestionGenerator() {
                   ].map(item => (
                     <div key={item.diffKey} className={`px-2.5 py-2 rounded-lg border text-center transition-all ${
                       difficulty === item.diffKey
-                        ? 'bg-[#e8a832]/10 border-[#e8a832]/30'
-                        : 'bg-[#11131c] border-[#504535]/20 opacity-50'
+                        ? 'bg-[#FFC93C]/10 border-[#8A5A12]/30'
+                        : 'bg-[#EFE3C3] border-[#1D2B22]/20 opacity-50'
                     }`}>
-                      <div className="text-[10px] font-bold text-[#d5c4af]">{item.label}</div>
-                      <div className="text-xs font-black text-[#e8a832]">{item.model}</div>
-                      <div className="text-[9px] text-[#d5c4af]/50">{item.note}</div>
+                      <div className="text-[10px] font-bold text-[#4D3A1F]">{item.label}</div>
+                      <div className="text-xs font-black text-[#8A5A12]">{item.model}</div>
+                      <div className="text-[9px] text-[#4D3A1F]/50">{item.note}</div>
                     </div>
                   ))}
                 </div>
@@ -519,8 +519,8 @@ export default function AIQuestionGenerator() {
                       return (
                         <label key={m.id} className={`flex items-center gap-2.5 px-3 py-2.5 rounded-lg border cursor-pointer transition-all ${
                           checked
-                            ? 'bg-[#e8a832]/10 border-[#e8a832]/30 text-[#e8a832]'
-                            : 'bg-[#11131c] border-[#504535]/20 text-[#d5c4af]/60 hover:border-[#d5c4af]/40'
+                            ? 'bg-[#FFC93C]/10 border-[#8A5A12]/30 text-[#8A5A12]'
+                            : 'bg-[#EFE3C3] border-[#1D2B22]/20 text-[#4D3A1F]/60 hover:border-[#4D3A1F]/40'
                         }`}>
                           <input type="checkbox" checked={checked} onChange={e => {
                             if (e.target.checked) {
@@ -529,17 +529,17 @@ export default function AIQuestionGenerator() {
                               const next = claudeModels.filter(id => id !== m.id)
                               setClaudeModels(next.length === 0 ? [m.id] : next)
                             }
-                          }} className="accent-[#e8a832] w-3.5 h-3.5 flex-shrink-0" />
+                          }} className="accent-[#8A5A12] w-3.5 h-3.5 flex-shrink-0" />
                           <div className="min-w-0">
                             <div className="text-xs font-bold truncate">{m.label}</div>
-                            <div className="text-[10px] text-[#d5c4af]/50">{t(m.noteKey)}</div>
+                            <div className="text-[10px] text-[#4D3A1F]/50">{t(m.noteKey)}</div>
                           </div>
                         </label>
                       )
                     })}
                   </div>
                   {claudeModels.filter(id => id !== 'auto').length > 1 && (
-                    <p className="text-xs text-[#e8a832] mt-1.5 font-medium">
+                    <p className="text-xs text-[#8A5A12] mt-1.5 font-medium">
                       {t('admin.aiGenerator.claudeModelsMultiplier', { models: claudeModels.length, count, total: claudeModels.length * count })}
                     </p>
                   )}
@@ -551,7 +551,7 @@ export default function AIQuestionGenerator() {
           {/* Prompt toggle */}
           <div>
             <button onClick={() => setShowPrompt(p => !p)}
-              className="flex items-center gap-1.5 text-xs font-bold text-[#e8a832] hover:text-[#e8a832]/80 transition-colors">
+              className="flex items-center gap-1.5 text-xs font-bold text-[#8A5A12] hover:text-[#8A5A12]/80 transition-colors">
               <svg className={`w-3.5 h-3.5 transition-transform ${showPrompt ? 'rotate-90' : ''}`}
                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
@@ -560,13 +560,13 @@ export default function AIQuestionGenerator() {
             </button>
             {showPrompt && (
               <div className="mt-2 space-y-1.5">
-                <p className="text-xs text-[#d5c4af]/60">
+                <p className="text-xs text-[#4D3A1F]/60">
                   {t('admin.aiGenerator.promptDesc')}
                 </p>
                 <textarea rows={7} value={prompt} onChange={e => setPrompt(e.target.value)}
                   className="form-input resize-none text-xs font-mono leading-relaxed" />
                 <button onClick={() => setPrompt(DEFAULT_PROMPT)}
-                  className="text-xs text-[#d5c4af]/40 hover:text-[#e8a832] transition-colors">
+                  className="text-xs text-[#4D3A1F]/40 hover:text-[#8A5A12] transition-colors">
                   {t('admin.aiGenerator.resetPromptButton')}
                 </button>
               </div>
@@ -576,15 +576,15 @@ export default function AIQuestionGenerator() {
           {/* Error */}
           {error && (
             <div className="flex items-start gap-2.5 px-4 py-3 rounded bg-red-500/10 border border-red-500/30">
-              <span className="material-symbols-outlined text-red-400 text-sm mt-0.5">error</span>
-              <p className="text-red-400 text-sm font-semibold leading-snug">{error}</p>
+              <span className="material-symbols-outlined text-[#B3452F] text-sm mt-0.5">error</span>
+              <p className="text-[#B3452F] text-sm font-semibold leading-snug">{error}</p>
             </div>
           )}
 
           {/* Generate button */}
           <button data-testid="ai-generate-btn" onClick={handleGenerate}
             disabled={isGenerating}
-            className="w-full py-4 gold-gradient text-[#281900] font-black uppercase tracking-[0.2em] rounded-lg flex items-center justify-center gap-3 transition-transform active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed">
+            className="w-full py-4 gold-gradient text-[#1D2B22] font-black uppercase tracking-[0.2em] rounded-lg flex items-center justify-center gap-3 transition-transform active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed">
             {isGenerating ? (
               <>
                 <svg className="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24">
@@ -608,26 +608,26 @@ export default function AIQuestionGenerator() {
         {/* ══════════════════ DRAFTS PANEL ══════════════════ */}
         <div className="space-y-4">
           {drafts.length === 0 ? (
-            <div className="bg-[#1d1f29] rounded-lg border border-[#504535]/10 p-12 flex flex-col items-center justify-center text-center">
-              <div className="w-20 h-20 rounded-full bg-[#1d1f29] flex items-center justify-center mb-4">
-                <svg className="w-10 h-10 text-[#d5c4af]/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-[#FFF8E7] rounded-lg border border-[#1D2B22]/10 p-12 flex flex-col items-center justify-center text-center">
+              <div className="w-20 h-20 rounded-full bg-[#FFF8E7] flex items-center justify-center mb-4">
+                <svg className="w-10 h-10 text-[#4D3A1F]/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
                     d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <p className="text-[#d5c4af]/60 font-bold text-base">{t('admin.aiGenerator.draftsEmptyTitle')}</p>
-              <p className="text-[#d5c4af]/50 text-sm mt-1 max-w-xs">
+              <p className="text-[#4D3A1F]/60 font-bold text-base">{t('admin.aiGenerator.draftsEmptyTitle')}</p>
+              <p className="text-[#4D3A1F]/50 text-sm mt-1 max-w-xs">
                 {t('admin.aiGenerator.draftsEmptyHint')}
               </p>
             </div>
           ) : (
             <>
               <div className="flex items-center justify-between">
-                <span className="text-xs font-black text-[#d5c4af]/60 uppercase tracking-widest">
+                <span className="text-xs font-black text-[#4D3A1F]/60 uppercase tracking-widest">
                   {t('admin.aiGenerator.draftsHeader', { count: drafts.length })}
                 </span>
                 <button onClick={() => setDrafts([])}
-                  className="text-xs text-[#d5c4af]/60 hover:text-red-400 transition-colors font-medium">
+                  className="text-xs text-[#4D3A1F]/60 hover:text-[#B3452F] transition-colors font-medium">
                   {t('admin.aiGenerator.clearAllButton')}
                 </button>
               </div>

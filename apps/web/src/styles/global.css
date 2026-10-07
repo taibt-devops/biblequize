@@ -213,17 +213,17 @@
 }
 .xp-float-anim { animation: xp-float 1.2s ease-out forwards; }
 
-/* ── Homepage Design System (V3) ── */
+/* ── Homepage Design System (V3) — values re-pointed to Lu Khach (LKD-18) ── */
 :root {
-  --hp-bg:    #0A0A0E;
-  --hp-bg2:   #111118;
-  --hp-card:  #16161F;
-  --hp-gold:  #D4A843;
-  --hp-gold2: #F5C842;
-  --hp-lime:  #B8F55A;
-  --hp-coral: #FF6B5B;
-  --hp-text:  #F0E8D0;
-  --hp-muted: #6B6355;
+  --hp-bg:    #EFE3C3;
+  --hp-bg2:   #F9ECC8;
+  --hp-card:  #FFF8E7;
+  --hp-gold:  #8A5A12;
+  --hp-gold2: #FFC93C;
+  --hp-lime:  #2E7D4F;
+  --hp-coral: #B3452F;
+  --hp-text:  #1D2B22;
+  --hp-muted: #6B5530;
 }
 
 /* Homepage keyframes */
@@ -2081,9 +2081,9 @@ body::before {
 .form-input,
 .form-select {
   width: 100%;
-  background: rgba(255,255,255,.04) !important;
-  border: 1px solid rgba(255,255,255,.12) !important;
-  border-radius: 8px !important;
+  background: #FFF8E7 !important;
+  border: 2px solid rgba(29,43,34,.35) !important;
+  border-radius: 12px !important;
   padding: .75rem 1rem !important;
   color: var(--hp-text) !important;
   font-family: 'Nunito', sans-serif !important;
@@ -2094,8 +2094,8 @@ body::before {
 
 .form-input:focus,
 .form-select:focus {
-  border-color: rgba(212,168,67,.5) !important;
-  box-shadow: 0 0 0 3px rgba(212,168,67,.08) !important;
+  border-color: #1D2B22 !important;
+  box-shadow: 0 0 0 3px rgba(255,201,60,.45) !important;
 }
 
 .form-input::placeholder {
@@ -2109,11 +2109,11 @@ body::before {
 
 /* Segmented control (tabs) */
 .segmented-control {
-  background: rgba(255,255,255,.05) !important;
+  background: rgba(29,43,34,.05) !important;
   padding: 3px !important;
-  border-radius: 8px !important;
+  border-radius: 12px !important;
   display: flex !important;
-  border: 1px solid rgba(255,255,255,.08);
+  border: 1px solid rgba(29,43,34,.15);
   box-shadow: none !important;
 }
 
@@ -2131,8 +2131,8 @@ body::before {
 }
 
 .segmented-control-item.active {
-  background: rgba(212,168,67,.15) !important;
-  color: var(--hp-gold) !important;
+  background: #FFC93C !important;
+  color: #1D2B22 !important;
   font-weight: 800 !important;
   box-shadow: none !important;
   transform: none !important;
@@ -2140,7 +2140,7 @@ body::before {
 
 .segmented-control-item:not(.active):hover {
   color: var(--hp-text) !important;
-  background: rgba(255,255,255,.04) !important;
+  background: rgba(29,43,34,.06) !important;
 }
 
 /* Practice page classes */

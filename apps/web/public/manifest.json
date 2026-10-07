@@ -9,8 +9,8 @@
   "orientation": "any",
   "dir": "ltr",
   "lang": "vi",
-  "theme_color": "#11131e",
-  "background_color": "#11131e",
+  "theme_color": "#EFE3C3",
+  "background_color": "#EFE3C3",
   "categories": ["education", "games", "lifestyle"],
   "icons": [
     {

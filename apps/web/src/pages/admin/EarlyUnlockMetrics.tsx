@@ -42,16 +42,16 @@ function KpiCard({
   return (
     <div
       data-testid={testId}
-      className={`bg-[#1d1f29] rounded-lg h-[110px] flex flex-col justify-center px-6 border-l-2 shadow-sm ${
-        accent ? 'border-[#e8a832]' : 'border-[#504535]/20'
+      className={`bg-[#FFF8E7] rounded-lg h-[110px] flex flex-col justify-center px-6 border-l-2 shadow-sm ${
+        accent ? 'border-[#8A5A12]' : 'border-[#1D2B22]/20'
       }`}
     >
-      <span className="text-[11px] uppercase tracking-[0.2em] text-[#d5c4af]/60 font-semibold">
+      <span className="text-[11px] uppercase tracking-[0.2em] text-[#4D3A1F]/60 font-semibold">
         {label}
       </span>
       <div className="flex items-baseline justify-between mt-1">
-        <span className="text-2xl font-bold text-white font-mono leading-tight">{value}</span>
-        {hint && <span className="text-[10px] text-[#d5c4af]/50">{hint}</span>}
+        <span className="text-2xl font-bold text-[#1D2B22] font-mono leading-tight">{value}</span>
+        {hint && <span className="text-[10px] text-[#4D3A1F]/50">{hint}</span>}
       </div>
     </div>
   )
@@ -79,7 +79,7 @@ function TimelineChart({ points }: { points: TimelinePoint[] }) {
           >
             <div
               className={`w-full rounded-t ${
-                p.count === 0 ? 'bg-[#504535]/20' : isLast ? 'bg-[#e8a832]' : 'bg-[#e8a832]/60'
+                p.count === 0 ? 'bg-[#1D2B22]/20' : isLast ? 'bg-[#FFC93C]' : 'bg-[#FFC93C]/60'
               }`}
               style={{ height: `${h}%` }}
             />
@@ -104,17 +104,17 @@ export default function EarlyUnlockMetrics() {
       <div data-testid="early-unlock-metrics-loading" className="space-y-6 animate-pulse">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[1, 2, 3, 4].map(i => (
-            <div key={i} className="h-[110px] bg-[#1d1f29] rounded-lg" />
+            <div key={i} className="h-[110px] bg-[#FFF8E7] rounded-lg" />
           ))}
         </div>
-        <div className="h-[200px] bg-[#1d1f29] rounded-lg" />
+        <div className="h-[200px] bg-[#FFF8E7] rounded-lg" />
       </div>
     )
   }
 
   if (isError || !data) {
     return (
-      <div data-testid="early-unlock-metrics-error" className="bg-[#1d1f29] rounded-lg p-6 text-[#d5c4af]/60">
+      <div data-testid="early-unlock-metrics-error" className="bg-[#FFF8E7] rounded-lg p-6 text-[#4D3A1F]/60">
         {t('admin.earlyUnlock.loading')}
       </div>
     )
@@ -129,10 +129,10 @@ export default function EarlyUnlockMetrics() {
   return (
     <div data-testid="early-unlock-metrics-page" className="space-y-8">
       <header>
-        <h1 className="text-2xl font-bold text-white tracking-tight">
+        <h1 className="text-2xl font-bold text-[#1D2B22] tracking-tight">
           {t('admin.earlyUnlock.pageTitle')}
         </h1>
-        <p className="mt-1 text-sm text-[#d5c4af]/60 max-w-2xl">
+        <p className="mt-1 text-sm text-[#4D3A1F]/60 max-w-2xl">
           {t('admin.earlyUnlock.subtitle')}
         </p>
       </header>
@@ -165,12 +165,12 @@ export default function EarlyUnlockMetrics() {
       </section>
 
       {/* Timeline */}
-      <section className="bg-[#1d1f29] rounded-lg p-6">
-        <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#d5c4af]/60 mb-4">
+      <section className="bg-[#FFF8E7] rounded-lg p-6">
+        <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#4D3A1F]/60 mb-4">
           {t('admin.earlyUnlock.timelineTitle')}
         </h2>
         {isEmpty ? (
-          <p data-testid="early-unlock-empty" className="text-sm text-[#d5c4af]/50 py-8 text-center">
+          <p data-testid="early-unlock-empty" className="text-sm text-[#4D3A1F]/50 py-8 text-center">
             {t('admin.earlyUnlock.emptyState')}
           </p>
         ) : (

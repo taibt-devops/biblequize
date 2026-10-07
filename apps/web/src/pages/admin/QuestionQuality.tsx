@@ -27,14 +27,14 @@ export default function QuestionQuality() {
 
   return (
     <div data-testid="admin-quality-page" className="space-y-6">
-      <div><h2 className="text-3xl font-extrabold text-[#e1e1ef] tracking-tight">{t('admin.questionQuality.title')}</h2><p className="text-[#d5c4af] text-sm mt-1">{t('admin.questionQuality.subtitle')}</p></div>
+      <div><h2 className="text-3xl font-extrabold text-[#1D2B22] tracking-tight">{t('admin.questionQuality.title')}</h2><p className="text-[#4D3A1F] text-sm mt-1">{t('admin.questionQuality.subtitle')}</p></div>
 
       {/* Coverage Map — the only real, backed view. ADM-5 removed the hardcoded
           "overall score" (72) + the 3 "needs API" problem-category placeholders. */}
-      <div data-testid="quality-coverage-map" className="rounded-lg border border-[#504535]/10 bg-[#1d1f29] p-5">
-        <h3 className="font-medium text-[#e1e1ef] mb-4">{t('admin.questionQuality.coverageTitle')}</h3>
-        {isLoading ? <p className="text-[#d5c4af]/40 text-sm">{t('admin.questionQuality.loading')}</p>
-         : !coverage ? <p className="text-[#d5c4af]/40 text-sm">{t('admin.questionQuality.loadError')}</p>
+      <div data-testid="quality-coverage-map" className="rounded-lg border border-[#1D2B22]/10 bg-[#FFF8E7] p-5">
+        <h3 className="font-medium text-[#1D2B22] mb-4">{t('admin.questionQuality.coverageTitle')}</h3>
+        {isLoading ? <p className="text-[#4D3A1F]/40 text-sm">{t('admin.questionQuality.loading')}</p>
+         : !coverage ? <p className="text-[#4D3A1F]/40 text-sm">{t('admin.questionQuality.loadError')}</p>
          : (
           <div className="space-y-2 max-h-96 overflow-y-auto">
             {(Array.isArray(coverage)
@@ -49,11 +49,11 @@ export default function QuestionQuality() {
               const pct = Math.min(100, Math.round((total / minPool) * 100))
               return (
                 <div key={i} data-testid="coverage-book-bar" className="flex items-center gap-3">
-                  <span className="text-[#d5c4af]/60 text-xs w-28 truncate">{item.book || t('admin.questionQuality.bookFallback', { index: i + 1 })}</span>
-                  <div className="flex-1 h-2 bg-[#282933] rounded-full overflow-hidden">
-                    <div className={`h-full rounded-full ${pct >= 100 ? 'bg-emerald-500' : pct >= 50 ? 'bg-[#e8a832]' : 'bg-red-500'}`} style={{ width: `${pct}%` }} />
+                  <span className="text-[#4D3A1F]/60 text-xs w-28 truncate">{item.book || t('admin.questionQuality.bookFallback', { index: i + 1 })}</span>
+                  <div className="flex-1 h-2 bg-[#F0DFB8] rounded-full overflow-hidden">
+                    <div className={`h-full rounded-full ${pct >= 100 ? 'bg-emerald-500' : pct >= 50 ? 'bg-[#FFC93C]' : 'bg-red-500'}`} style={{ width: `${pct}%` }} />
                   </div>
-                  <span data-testid="coverage-pct" className="text-[#d5c4af]/40 text-xs w-8 text-right">{total}</span>
+                  <span data-testid="coverage-pct" className="text-[#4D3A1F]/40 text-xs w-8 text-right">{total}</span>
                 </div>
               )
             })}

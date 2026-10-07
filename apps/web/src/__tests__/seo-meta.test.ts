@@ -90,8 +90,8 @@ describe('SEO: manifest.json (PWA installability)', () => {
     expect(manifest.display).toBe('standalone')
     expect(manifest.name).toBeTruthy()
     expect(manifest.short_name).toBeTruthy()
-    expect(manifest.theme_color).toBe('#11131e')
-    expect(manifest.background_color).toBe('#11131e')
+    expect(manifest.theme_color).toBe('#EFE3C3')
+    expect(manifest.background_color).toBe('#EFE3C3')
     expect(Array.isArray(manifest.categories)).toBe(true)
   })
 

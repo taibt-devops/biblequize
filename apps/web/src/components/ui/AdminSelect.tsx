@@ -44,16 +44,16 @@ export default function AdminSelect({ value, onChange, options, className = '', 
         type="button"
         data-testid={testId}
         onClick={() => setOpen(o => !o)}
-        className="w-full h-9 pl-3 pr-2 rounded-md bg-white/10 border border-white/10 text-sm text-left text-[#e1e1ef] hover:border-[#e8a832]/40 focus:outline-none focus:border-[#e8a832]/60 transition-colors flex items-center justify-between gap-2"
+        className="w-full h-9 pl-3 pr-2 rounded-md bg-[#1D2B22]/[0.06] border border-[#1D2B22]/15 text-sm text-left text-[#1D2B22] hover:border-[#8A5A12]/40 focus:outline-none focus:border-[#8A5A12]/60 transition-colors flex items-center justify-between gap-2"
       >
         <span className="truncate">{current?.label}</span>
-        <span className={`material-symbols-outlined text-base text-[#d5c4af]/50 transition-transform shrink-0 ${open ? 'rotate-180' : ''}`}>expand_more</span>
+        <span className={`material-symbols-outlined text-base text-[#4D3A1F]/50 transition-transform shrink-0 ${open ? 'rotate-180' : ''}`}>expand_more</span>
       </button>
 
       {open && (
         <div
           role="listbox"
-          className="absolute z-50 mt-1.5 min-w-full w-max max-w-[240px] rounded-lg bg-[#11131c] border border-white/10 shadow-xl shadow-black/50 py-1 max-h-64 overflow-y-auto"
+          className="absolute z-50 mt-1.5 min-w-full w-max max-w-[240px] rounded-lg bg-[#EFE3C3] border border-[#1D2B22]/15 shadow-lg shadow-[#1D2B22]/15 py-1 max-h-64 overflow-y-auto"
         >
           {options.map(o => {
             const active = o.value === value
@@ -65,7 +65,7 @@ export default function AdminSelect({ value, onChange, options, className = '', 
                 aria-selected={active}
                 onClick={() => { onChange(o.value); setOpen(false) }}
                 className={`w-full text-left pl-2 pr-3 py-1.5 text-sm flex items-center gap-1.5 transition-colors ${
-                  active ? 'text-[#e8a832] bg-[#e8a832]/10' : 'text-[#d5c4af] hover:bg-white/5 hover:text-white'
+                  active ? 'text-[#8A5A12] bg-[#FFC93C]/10' : 'text-[#4D3A1F] hover:bg-[#1D2B22]/[0.04] hover:text-[#1D2B22]'
                 }`}
               >
                 <span className="material-symbols-outlined text-sm w-4 shrink-0">{active ? 'check' : ''}</span>

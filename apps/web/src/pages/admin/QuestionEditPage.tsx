@@ -120,11 +120,11 @@ export default function QuestionEditPage() {
       explanation: typeof s.explanation === 'string' && s.explanation ? s.explanation : prev.explanation,
     } : prev)
 
-  if (loading) return <div className="p-8 text-white/50">{t('admin.questions.modal.saving')}…</div>
+  if (loading) return <div className="p-8 text-[#6B5530]">{t('admin.questions.modal.saving')}…</div>
   if (loadError || !draft) return (
     <div className="p-8">
-      <p className="text-red-400 mb-3">{loadError ?? t('admin.questions.error.loading')}</p>
-      <Link to={backTo} className="text-[#e8a832] text-sm">← {t('admin.backToApp')}</Link>
+      <p className="text-[#B3452F] mb-3">{loadError ?? t('admin.questions.error.loading')}</p>
+      <Link to={backTo} className="text-[#8A5A12] text-sm">← {t('admin.backToApp')}</Link>
     </div>
   )
 
@@ -136,13 +136,13 @@ export default function QuestionEditPage() {
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-3">
-          <Link to={backTo} className="w-9 h-9 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center text-white/60">
+          <Link to={backTo} className="w-9 h-9 rounded-lg bg-[#1D2B22]/[0.04] hover:bg-[#1D2B22]/[0.06] flex items-center justify-center text-[#4D3A1F]">
             <span className="material-symbols-outlined">arrow_back</span>
           </Link>
-          <h2 className="text-xl font-bold text-[#e1e1ef]">{isNew ? t('admin.questions.modal.createTitle') : t('admin.questions.modal.editTitle')}</h2>
+          <h2 className="text-xl font-bold text-[#1D2B22]">{isNew ? t('admin.questions.modal.createTitle') : t('admin.questions.modal.editTitle')}</h2>
         </div>
         <div className="flex gap-2">
-          <Link to={backTo} className="px-4 py-2 rounded bg-white/10 hover:bg-white/20 text-sm">{t('admin.questions.modal.cancelButton')}</Link>
+          <Link to={backTo} className="px-4 py-2 rounded bg-[#1D2B22]/[0.06] hover:bg-[#1D2B22]/10 text-sm">{t('admin.questions.modal.cancelButton')}</Link>
           <button data-testid="admin-question-save-btn" disabled={saving} onClick={() => save()}
             className="px-5 py-2 rounded bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-sm font-medium">
             {saving ? t('admin.questions.modal.saving') : (draft.id ? t('admin.questions.modal.updateButton') : t('admin.questions.modal.createSubmit'))}
@@ -152,14 +152,14 @@ export default function QuestionEditPage() {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Form */}
-        <div className="lg:col-span-7 bg-[#1d1f29] rounded-xl border border-white/10 p-5">
+        <div className="lg:col-span-7 bg-[#FFF8E7] rounded-xl border border-[#1D2B22]/15 p-5">
           <QuestionFields draft={draft} setField={setField} setOption={setOption} toggleCorrect={toggleCorrect} handleTypeChange={handleTypeChange} />
-          {saveError && <div className="mt-4 p-3 rounded-lg bg-red-500/10 border border-red-500/30 text-red-300 text-sm">{saveError}</div>}
+          {saveError && <div className="mt-4 p-3 rounded-lg bg-red-500/10 border border-red-500/30 text-[#B3452F] text-sm">{saveError}</div>}
           {dup && (
             <div data-testid="duplicate-warning" className="mt-4 p-4 rounded-lg bg-yellow-500/10 border border-yellow-500/30">
-              <h4 className="text-yellow-400 font-semibold text-sm mb-2">⚠️ {dup.message}</h4>
+              <h4 className="text-[#8A5A12] font-semibold text-sm mb-2">⚠️ {dup.message}</h4>
               <div className="flex gap-2">
-                <button onClick={() => setDup(null)} className="px-3 py-1.5 rounded bg-white/10 hover:bg-white/20 text-xs">{t('admin.questions.modal.duplicateCancel')}</button>
+                <button onClick={() => setDup(null)} className="px-3 py-1.5 rounded bg-[#1D2B22]/[0.06] hover:bg-[#1D2B22]/10 text-xs">{t('admin.questions.modal.duplicateCancel')}</button>
                 <button onClick={() => save(true)} className="px-3 py-1.5 rounded bg-yellow-600 hover:bg-yellow-500 text-xs font-medium">{t('admin.questions.modal.duplicateProceed')}</button>
               </div>
             </div>
@@ -170,45 +170,45 @@ export default function QuestionEditPage() {
         {isMc && (
           <div className="lg:col-span-5 space-y-4 lg:sticky lg:top-4 self-start">
             {/* Heuristic checklist (live) */}
-            <div data-testid="quality-eval-result" className="bg-[#1d1f29] rounded-xl border border-white/10 p-4 space-y-1.5">
-              <span className="text-xs font-semibold text-white/70 uppercase tracking-wider">{t('admin.questions.editor.evalTitle')}</span>
+            <div data-testid="quality-eval-result" className="bg-[#FFF8E7] rounded-xl border border-[#1D2B22]/15 p-4 space-y-1.5">
+              <span className="text-xs font-semibold text-[#4D3A1F] uppercase tracking-wider">{t('admin.questions.editor.evalTitle')}</span>
               {checks.map((c, i) => (
                 <div key={i} className="flex items-start gap-2 text-xs pt-1">
-                  <span className={c.status === 'pass' ? 'text-emerald-400' : c.status === 'warn' ? 'text-yellow-400' : 'text-sky-400'}>
+                  <span className={c.status === 'pass' ? 'text-[#2E7D4F]' : c.status === 'warn' ? 'text-[#8A5A12]' : 'text-[#2F6FB0]'}>
                     {c.status === 'pass' ? '✓' : c.status === 'warn' ? '⚠' : 'ℹ'}
                   </span>
-                  <span className="text-white/70 leading-snug">{c.label}</span>
+                  <span className="text-[#4D3A1F] leading-snug">{c.label}</span>
                 </div>
               ))}
             </div>
 
             {/* AI suggestion */}
-            <div className="bg-[#1d1f29] rounded-xl border border-white/10 p-4 space-y-3">
+            <div className="bg-[#FFF8E7] rounded-xl border border-[#1D2B22]/15 p-4 space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold text-white/70 uppercase tracking-wider">{t('admin.questions.editor.aiTitle')}</span>
+                <span className="text-xs font-semibold text-[#4D3A1F] uppercase tracking-wider">{t('admin.questions.editor.aiTitle')}</span>
                 <button data-testid="ai-suggest-btn" onClick={requestAiSuggestion} disabled={aiLoading}
-                  className="text-xs px-3 py-1.5 rounded bg-[#e8a832]/15 border border-[#e8a832]/30 text-[#e8a832] hover:bg-[#e8a832]/25 disabled:opacity-50 flex items-center gap-1">
+                  className="text-xs px-3 py-1.5 rounded bg-[#FFC93C]/15 border border-[#8A5A12]/30 text-[#8A5A12] hover:bg-[#FFC93C]/25 disabled:opacity-50 flex items-center gap-1">
                   <span className="material-symbols-outlined text-sm">auto_awesome</span>
                   {aiLoading ? t('admin.questions.editor.aiAnalyzing') : t('admin.questions.editor.aiSuggestBtn')}
                 </button>
               </div>
-              {aiMsg && <p className="text-xs text-white/40">{aiMsg}</p>}
+              {aiMsg && <p className="text-xs text-[#6B5530]">{aiMsg}</p>}
               {aiSuggestion && (
                 <div className="space-y-2">
-                  {aiSuggestion.rationale && <p className="text-xs text-sky-300/80 italic">{aiSuggestion.rationale}</p>}
+                  {aiSuggestion.rationale && <p className="text-xs text-[#2F6FB0]/80 italic">{aiSuggestion.rationale}</p>}
                   <div className="space-y-1">
                     {(aiSuggestion.options ?? []).map((o, i) => (
-                      <div key={i} className={`text-xs px-2 py-1.5 rounded ${i === aiSuggestion.correctAnswer ? 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/20' : 'bg-white/5 text-white/70'}`}>
+                      <div key={i} className={`text-xs px-2 py-1.5 rounded ${i === aiSuggestion.correctAnswer ? 'bg-emerald-500/10 text-[#2E7D4F] border border-emerald-500/20' : 'bg-[#1D2B22]/[0.04] text-[#4D3A1F]'}`}>
                         <span className="font-bold mr-1">{String.fromCharCode(65 + i)}.</span>{o}
                       </div>
                     ))}
                   </div>
-                  {aiSuggestion.explanation && <p className="text-[11px] text-white/50 italic">{aiSuggestion.explanation}</p>}
+                  {aiSuggestion.explanation && <p className="text-[11px] text-[#6B5530] italic">{aiSuggestion.explanation}</p>}
                   <button data-testid="ai-apply-btn" onClick={() => applySuggestion(aiSuggestion)}
                     className="w-full mt-1 px-3 py-2 rounded bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold">
                     {t('admin.questions.editor.applyBtn')}
                   </button>
-                  <p className="text-[10px] text-white/30">{t('admin.questions.editor.applyHint')}</p>
+                  <p className="text-[10px] text-[#6B5530]">{t('admin.questions.editor.applyHint')}</p>
                 </div>
               )}
             </div>
