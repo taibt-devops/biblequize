@@ -105,7 +105,7 @@ export default function GroupCodeModal({ groupName, groupCode, open, onClose }: 
               type="button"
               onClick={() => copyText(joinUrl)}
               data-testid="qr-modal-copy-link"
-              className="bg-bq-action text-white shadow-bq-action rounded-md px-3 py-2 text-[11px] font-bold hover:brightness-110 transition-all whitespace-nowrap"
+              className="bg-bq-action text-bq-ink shadow-bq-action rounded-md px-3 py-2 text-[11px] font-bold hover:brightness-110 transition-all whitespace-nowrap"
             >
               {t('groups.qrModal.copyLink')}
             </button>

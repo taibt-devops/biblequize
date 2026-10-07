@@ -112,7 +112,7 @@ export default function BasicQuizCard() {
         <button
           data-testid="basic-quiz-card-cta"
           onClick={() => navigate('/ranked')}
-          className="bg-bq-action text-white shadow-bq-action px-6 py-3 rounded-xl font-bold w-full sm:w-auto active:scale-95"
+          className="bg-bq-action text-bq-ink shadow-bq-action px-6 py-3 rounded-xl font-bold w-full sm:w-auto active:scale-95"
         >
           <span className="material-symbols-outlined align-middle text-base mr-1" style={FILL_1}>play_arrow</span>
           {t('basicQuiz.card.ctaRanked')}
@@ -172,7 +172,7 @@ export default function BasicQuizCard() {
             className={
               inCooldown
                 ? 'bg-bq-inset border border-bq-hair text-bq-ink2 px-6 py-3 rounded-xl font-bold w-full sm:w-auto cursor-not-allowed opacity-70'
-                : 'bg-bq-action text-white shadow-bq-action px-6 py-3 rounded-xl font-bold w-full sm:w-auto active:scale-95'
+                : 'bg-bq-action text-bq-ink shadow-bq-action px-6 py-3 rounded-xl font-bold w-full sm:w-auto active:scale-95'
             }
           >
             {ctaLabel}

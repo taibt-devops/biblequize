@@ -19,7 +19,7 @@ export default function SessionSummary({ reviewed, leveledUp, onBack }: SessionS
       <button
         type="button"
         onClick={onBack}
-        className="mt-5 rounded-xl bg-bq-action px-5 py-2.5 text-sm font-semibold text-white shadow-bq-action hover:brightness-105"
+        className="mt-5 rounded-xl bg-bq-action px-5 py-2.5 text-sm font-semibold text-bq-ink shadow-bq-action hover:brightness-105"
       >
         {t('memorize.session.backToList')}
       </button>

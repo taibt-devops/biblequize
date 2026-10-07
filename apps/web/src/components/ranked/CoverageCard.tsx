@@ -76,7 +76,7 @@ export default function CoverageCard({ coverage, onUnlockNext }: CoverageCardPro
           type="button"
           data-testid="ranked-coverage-unlock-cta"
           onClick={onUnlockNext}
-          className="w-full rounded-lg px-3 py-2 text-[13px] font-bold bg-bq-action text-white shadow-bq-action hover:opacity-90 transition-opacity"
+          className="w-full rounded-lg px-3 py-2 text-[13px] font-bold bg-bq-action text-bq-ink shadow-bq-action hover:opacity-90 transition-opacity"
         >
           {t('coverage.unlockNextCta', { n: weekNumber + 1 })}
         </button>

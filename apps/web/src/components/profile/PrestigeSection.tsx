@@ -49,7 +49,7 @@ export function PrestigeSection() {
           <span data-testid="profile-days-at-tier6" className="font-bold text-bq-ink">{daysAtTier6}</span>/{daysRequired} {t('profile.prestigeDaysLabel').toLowerCase()}
         </p>
         {canPrestige && nextPrestigeName && (
-          <Link to="/cosmetics" className="inline-flex mt-3 px-3 py-1.5 rounded-lg bg-bq-action text-white shadow-bq-action text-xs font-bold">
+          <Link to="/cosmetics" className="inline-flex mt-3 px-3 py-1.5 rounded-lg bg-bq-action text-bq-ink shadow-bq-action text-xs font-bold">
             {t('profile.prestigeEligibleTitle')}
           </Link>
         )}

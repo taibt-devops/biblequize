@@ -76,7 +76,7 @@ export function TierProgressCard({ currentTier, nextTier, tierProgress, currentS
               key={i}
               className={
                 state === 'filled'
-                  ? 'w-6 h-6 rounded-full bg-bq-action text-white shadow-bq-action flex items-center justify-center text-[13px]'
+                  ? 'w-6 h-6 rounded-full bg-bq-action text-bq-ink shadow-bq-action flex items-center justify-center text-[13px]'
                   : state === 'current'
                   ? 'w-6 h-6 rounded-full bg-bq-amber/15 border border-bq-amber text-bq-amberd flex items-center justify-center text-[13px] animate-pulse'
                   : 'w-6 h-6 rounded-full bg-bq-inset border border-bq-hair text-bq-ink3 flex items-center justify-center text-[13px]'

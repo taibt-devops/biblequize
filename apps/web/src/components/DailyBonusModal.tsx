@@ -64,7 +64,7 @@ export default function DailyBonusModal() {
         </div>
         <button
           onClick={handleConfirm}
-          className="w-full px-6 py-3 bg-bq-action shadow-bq-action text-white font-black rounded-xl hover:brightness-105 transition"
+          className="w-full px-6 py-3 bg-bq-action shadow-bq-action text-bq-ink font-black rounded-xl hover:brightness-105 transition"
         >
           {t('modals.dailyBonus.confirmButton')}
         </button>

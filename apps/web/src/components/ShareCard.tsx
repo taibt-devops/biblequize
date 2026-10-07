@@ -179,7 +179,7 @@ export default function ShareCard({
       <div className="flex gap-3 justify-center max-w-sm mx-auto">
         <button
           onClick={handleShare}
-          className="flex-1 py-3 bg-bq-action text-white font-bold rounded-xl shadow-bq-action active:scale-95 transition-all flex items-center justify-center gap-2 text-sm"
+          className="flex-1 py-3 bg-bq-action text-bq-ink font-bold rounded-xl shadow-bq-action active:scale-95 transition-all flex items-center justify-center gap-2 text-sm"
         >
           <span className="material-symbols-outlined text-lg">share</span>
           {t('components.shareCard.shareButton')}

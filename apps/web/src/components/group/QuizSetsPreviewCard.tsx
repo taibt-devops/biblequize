@@ -120,7 +120,7 @@ export default function QuizSetsPreviewCard({ quizSets, onPlay, onViewAll, playi
                 <button
                   onClick={() => onPlay(qs.id)}
                   disabled={playingId === qs.id}
-                  className="px-2.5 py-1 rounded-md bg-bq-action text-white shadow-bq-action text-[10px] font-bold disabled:opacity-50 hover:brightness-110 transition-all whitespace-nowrap"
+                  className="px-2.5 py-1 rounded-md bg-bq-action text-bq-ink shadow-bq-action text-[10px] font-bold disabled:opacity-50 hover:brightness-110 transition-all whitespace-nowrap"
                 >
                   {playingId === qs.id ? '...' : t('groups.play')}
                 </button>

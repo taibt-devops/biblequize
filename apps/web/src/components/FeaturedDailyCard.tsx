@@ -134,7 +134,7 @@ export default function FeaturedDailyCard({
           data-testid="featured-daily-card-cta"
           type="button"
           onClick={onStart}
-          className="inline-flex flex-shrink-0 items-center justify-center gap-1.5 px-5 py-3 rounded-[12px] bg-bq-action text-white shadow-bq-action font-bold text-[14px] tracking-[0.01em] whitespace-nowrap transition-transform duration-200 hover:translate-x-[3px]"
+          className="inline-flex flex-shrink-0 items-center justify-center gap-1.5 px-5 py-3 rounded-[12px] bg-bq-action text-bq-ink shadow-bq-action font-bold text-[14px] tracking-[0.01em] whitespace-nowrap transition-transform duration-200 hover:translate-x-[3px]"
         >
           Bắt đầu
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

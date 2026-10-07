@@ -66,7 +66,7 @@ export function HeroCompact({ profile, tierEmoji, tierName, tierLevel }: {
             </span>
           )}
         </div>
-        <div className="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-bq-action text-white shadow-bq-action flex items-center justify-center text-base border-[3px] border-bq-white">
+        <div className="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-bq-action text-bq-ink shadow-bq-action flex items-center justify-center text-base border-[3px] border-bq-white">
           {tierEmoji}
         </div>
       </div>
@@ -110,7 +110,7 @@ export function HeroCompact({ profile, tierEmoji, tierName, tierLevel }: {
         <button
           data-testid="profile-edit-btn"
           onClick={() => setEditing(true)}
-          className="h-10 px-4 rounded-xl bg-bq-action text-white shadow-bq-action text-sm font-semibold inline-flex items-center gap-1.5 hover:opacity-90 transition-opacity"
+          className="h-10 px-4 rounded-xl bg-bq-action text-bq-ink shadow-bq-action text-sm font-semibold inline-flex items-center gap-1.5 hover:opacity-90 transition-opacity"
         >
           <span className="material-symbols-outlined text-[18px]">edit</span>
           {t('profile.editProfile')}

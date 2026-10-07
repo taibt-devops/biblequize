@@ -256,7 +256,7 @@ export function EditProfileModal({ open, onClose, profile }: {
             type="submit"
             data-testid="edit-profile-submit"
             disabled={mutation.isPending}
-            className="rounded-xl py-2.5 text-sm font-bold text-white bg-bq-action shadow-bq-action disabled:opacity-50 transition-opacity hover:opacity-90"
+            className="rounded-xl py-2.5 text-sm font-bold text-bq-ink bg-bq-action shadow-bq-action disabled:opacity-50 transition-opacity hover:opacity-90"
             style={{ flex: '1.5 1 0' }}
           >
             {mutation.isPending ? t('profile.editSaving') : t('profile.editSubmit')}

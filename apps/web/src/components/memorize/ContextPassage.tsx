@@ -47,7 +47,7 @@ export default function ContextPassage({
         type="button"
         data-testid="memorize-context-start"
         onClick={onStart}
-        className="w-full rounded-xl bg-bq-action px-5 py-3 text-sm font-semibold text-white shadow-bq-action transition hover:brightness-105 md:w-auto"
+        className="w-full rounded-xl bg-bq-action px-5 py-3 text-sm font-semibold text-bq-ink shadow-bq-action transition hover:brightness-105 md:w-auto"
       >
         {t('memorize.session.start')}
       </button>

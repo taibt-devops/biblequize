@@ -63,7 +63,7 @@ export default function RankedActionFooter({
     <button
       data-testid="ranked-start-btn"
       onClick={onStart}
-      className="w-full bg-bq-action text-white shadow-bq-action font-bold rounded-xl active:scale-[0.98] transition-all py-3.5 px-6 flex items-center justify-center gap-2"
+      className="w-full bg-bq-action text-bq-ink shadow-bq-action font-bold rounded-xl active:scale-[0.98] transition-all py-3.5 px-6 flex items-center justify-center gap-2"
     >
       <span className="material-symbols-outlined text-[20px]" style={FILL_1}>
         play_arrow

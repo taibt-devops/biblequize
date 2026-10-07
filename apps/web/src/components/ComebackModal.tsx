@@ -106,7 +106,7 @@ export default function ComebackModal() {
           <button
             onClick={() => claimMutation.mutate()}
             disabled={claimMutation.isPending}
-            className="flex-1 px-4 py-2.5 text-sm font-black text-white bg-bq-action shadow-bq-action rounded-xl hover:brightness-105 transition disabled:opacity-50"
+            className="flex-1 px-4 py-2.5 text-sm font-black text-bq-ink bg-bq-action shadow-bq-action rounded-xl hover:brightness-105 transition disabled:opacity-50"
           >
             {claimMutation.isPending ? t('modals.comeback.claiming') : t('modals.comeback.claimButton')}
           </button>

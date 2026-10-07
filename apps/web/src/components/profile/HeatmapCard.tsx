@@ -85,7 +85,7 @@ export function HeatmapCard({ cells, activeDays }: { cells: HeatmapLevel[]; acti
           </div>
           <button
             onClick={() => navigate('/daily')}
-            className="h-9 px-3 rounded-lg bg-bq-action text-white shadow-bq-action text-xs font-semibold inline-flex items-center gap-1.5 self-start sm:self-auto"
+            className="h-9 px-3 rounded-lg bg-bq-action text-bq-ink shadow-bq-action text-xs font-semibold inline-flex items-center gap-1.5 self-start sm:self-auto"
           >
             <span className="material-symbols-outlined text-[16px]">play_arrow</span>
             {t('profile.heatmapPlayCta')}

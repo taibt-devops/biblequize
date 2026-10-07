@@ -55,7 +55,7 @@ export default function TierUpModal({
         {/* Continue button */}
         <button
           onClick={onClose}
-          className="mt-8 px-8 py-3 bg-bq-action text-white shadow-bq-action font-black rounded-xl active:scale-95 transition-transform"
+          className="mt-8 px-8 py-3 bg-bq-action text-bq-ink shadow-bq-action font-black rounded-xl active:scale-95 transition-transform"
         >
           {t('modals.tierUp.continueButton')}
         </button>

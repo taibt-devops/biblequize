@@ -52,7 +52,7 @@ export default function MotivationCard() {
         <Link
           to="/daily"
           data-testid="motivation-card-cta"
-          className="col-span-2 md:col-span-1 inline-flex items-center justify-center gap-1.5 px-5 py-2.5 md:py-2.5 rounded-xl bg-bq-action text-white shadow-bq-action text-[13px] md:text-sm font-bold transition-opacity hover:opacity-90"
+          className="col-span-2 md:col-span-1 inline-flex items-center justify-center gap-1.5 px-5 py-2.5 md:py-2.5 rounded-xl bg-bq-action text-bq-ink shadow-bq-action text-[13px] md:text-sm font-bold transition-opacity hover:opacity-90"
         >
           {t('home.motivation.cta')}
           <span className="material-symbols-outlined text-[16px]">arrow_forward</span>

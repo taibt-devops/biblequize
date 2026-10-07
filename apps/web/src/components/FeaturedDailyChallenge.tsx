@@ -294,7 +294,7 @@ export default function FeaturedDailyChallenge() {
             <Link
               to="/daily"
               data-testid="featured-daily-cta"
-              className="inline-flex items-center justify-center gap-2 px-5 md:px-6 py-3 md:py-3.5 rounded-xl bg-bq-action text-white shadow-bq-action font-extrabold text-[15px] hover:-translate-y-0.5 transition-transform"
+              className="inline-flex items-center justify-center gap-2 px-5 md:px-6 py-3 md:py-3.5 rounded-xl bg-bq-action text-bq-ink shadow-bq-action font-extrabold text-[15px] hover:-translate-y-0.5 transition-transform"
             >
               {t('home.featuredDaily.cta')}
               <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
