@@ -181,7 +181,7 @@ Mọi feature/fix → check TC spec + Playwright code TRƯỚC khi code. Chi ti�
 - Tầng 3 pass (Vitest + Playwright + JUnit) — số test ≥ baseline (`.test-baseline` files)
 - Không TypeScript/Java compile error; không `@SuppressWarnings` mới
 - Flyway migration clean trên DB trống; chạy được local end-to-end
-- UI match design tokens (Stitch → pixel-perfect); loading/error/success states đều handled
+- UI match design tokens Lữ Khách (`docs/dev/design-system.md` + mockup canvas); loading/error/success states đều handled
 
 ## Commit Convention
 
@@ -251,7 +251,7 @@ _None hiện tại — `hooks/useWebSocket.ts` đã được xóa 2026-05-13 (BL
 |------|-------------|
 | `docs/dev/setup.md` | Setup local environment, env vars, ports, 3 dev modes |
 | `docs/dev/architecture.md` | Hiểu cấu trúc backend modules / frontend pages / mobile |
-| `docs/dev/design-system.md` | Sửa UI, sync Stitch design, design tokens |
+| `docs/dev/design-system.md` | Sửa UI, design tokens Lữ Khách, thành phần mẫu, ảnh |
 | `docs/dev/testing.md` | Lệnh test chi tiết, E2E Test Gate full, viết test |
 | `docs/dev/dependencies.md` | Add deps mới, check version |
 | `docs/dev/workflows.md` | Feature workflow, Stitch sync workflow, PROMPT_*.md pattern |

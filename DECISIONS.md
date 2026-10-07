@@ -2,6 +2,17 @@
 
 ---
 
+## 2026-10-08 — Đổi design system "Khung Sáng" → "Lữ Khách" cho toàn bộ app
+
+- **Bối cảnh:** user làm game **Lữ Khách** (học thuộc câu gốc theo Thiên Lộ Lịch Trình, repo `taibt-devops/lu-khach`) và muốn BibleQuiz chung một thế giới hình ảnh với game. Mockup đã duyệt 2026-10-08: canvas "BibleQuiz × Lữ Khách" (https://claude.ai/artifact/PGPt4eys2jWJiKPjNRu4dQ) — Trang chủ, Quiz, Hành trình 66 sách, bộ giao diện, 2 màn điện thoại.
+- **Quyết định (user chốt, phương án A — đổi toàn bộ):** giấy kem + viền mực 3px + bóng cứng (không blur) + nút "ấn được" (bấm lún 4px) + chữ **Baloo 2** + tranh vẽ kiểu truyện (Game Asset Studio, style "Lữ Khách") + linh vật **lữ khách** dẫn đường. Thay "Khung Sáng" (phổ kính màu, vòm, bóng màu phát sáng) và phần "Sacred Modernist" còn sót (nền tối, glass-card).
+- **Giữ nguyên:** C1 tên 6 hạng, C2 "Luyện Tập"/"Đấu Hạng", C3 4 mùa, **C5 màu đáp án đúng từng hex** (A `#E8826A` / B `#6AB8E8` / C `#E8C76A` / D `#7AB87A`). Tên token `--bq-*` giữ nguyên, chỉ đổi giá trị → 188 file đang dùng `bq-*` đổi theo không cần sửa.
+- **Đã chấp nhận:** Baloo 2 là font UI mặc định; Be Vietnam Pro chỉ còn cho đoạn đọc dài (giải thích đáp án, đoạn Kinh Thánh, trang pháp lý). Trang admin chỉ đổi theo token, không vẽ tranh. Stitch MCP không còn là nguồn thiết kế: nguồn là mockup canvas + `docs/dev/design-system.md`.
+- **Spec impact:** Hành trình chia **8 vùng đất** (Ngũ Kinh · Lịch Sử · Thi Ca · Tiên Tri · Phúc Âm · Công Vụ · Thư Tín · Khải Huyền) thay vì 2 nhóm Cựu/Tân Ước → SPEC_USER §6.3 cập nhật cùng task LKD (strategy a). Các thay đổi còn lại chỉ là hình thức, không đổi hành vi.
+- **Implementation:** task `docs/todo/active/2026-10-08-lu-khach-redesign.md` (LKD-0..21), nhánh `feat/lu-khach-ui`.
+
+---
+
 ## 2026-09-15 — Học Thuộc tạm dùng Bản Truyền Thống 1926 (sửa D2)
 
 - **Bối cảnh:** code Học Thuộc đã lên prod nhưng lối vào bị ẩn vì chưa có văn bản; chưa có file BTTHĐ 2011.
