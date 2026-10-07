@@ -19,7 +19,7 @@ const navItems = [
 ]
 
 /**
- * Top-level layout — "Lữ Khách" TopNav (LKD-10; was Khung Sáng KS W0-2):
+ * Top-level layout — storybook TopNav (LKD-10; was KS W0-2):
  *   - Sticky cream bar with an ink rule: lantern logo + nav links (active = gold
  *     pill with ink outline)
  *     + 3 stats (streak / năng lượng / điểm mùa) + bell + avatar dropdown.

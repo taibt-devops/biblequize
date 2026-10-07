@@ -29,7 +29,7 @@ interface AnswerButtonProps {
 
 // Per-position color classes. Tailwind JIT needs literal class strings, so we
 // cannot template `bg-answer-${color}` — every variant must appear here as a
-// real string. Lữ Khách (LKD-12): each answer is a solid C5-coloured signboard
+// real string. Storybook (LK) (LKD-12): each answer is a solid C5-coloured signboard
 // with an ink outline; colours stay exactly as locked by C5.
 const COLORS = [
   { btn: 'bg-answer-a', faded: 'bg-answer-a/40' }, // 0 = A → Coral

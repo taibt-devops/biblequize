@@ -71,7 +71,7 @@ export const CircularTimer: React.FC<CircularTimerProps> = ({
 
   return (
     <div
-      // Lữ Khách: cream dial with an ink outline; the coloured arc keeps the 4 urgency bands.
+      // Storybook (LK): cream dial with an ink outline; the coloured arc keeps the 4 urgency bands.
       className={clsx('relative flex items-center justify-center rounded-full bg-bq-white border-[3px] border-bq-ink shadow-bq-btn', animClass)}
       style={{ width: size, height: size }}
     >

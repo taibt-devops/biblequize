@@ -825,7 +825,7 @@ const Quiz: React.FC = () => {
     <div data-testid="quiz-page" className="min-h-dvh font-sans text-bq-ink overflow-hidden relative">
       {/* Background Decorative Elements */}
       <div className="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 overflow-hidden">
-        {/* Lữ Khách: calm painted meadow behind the scroll (LKD-11) */}
+        {/* Storybook (LK): calm painted meadow behind the scroll (LKD-11) */}
         <img src="/images/lk/bq-quiz.webp" alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-bq-paper/25" />
       </div>
@@ -1026,7 +1026,7 @@ const Quiz: React.FC = () => {
               questionLenClass === 'medium' ? 'text-[18px] font-semibold text-center' :
                                               'text-[15px] font-semibold text-left'
             const lenClass = questionLenClass
-            // Lữ Khách: the question sits on a parchment scroll between two wooden rods (LKD-11).
+            // Storybook (LK): the question sits on a parchment scroll between two wooden rods (LKD-11).
             return (
               <div>
               <div aria-hidden className="h-4 md:h-5 rounded-full bg-bq-wood border-[3px] border-bq-ink" />
@@ -1243,7 +1243,7 @@ const Quiz: React.FC = () => {
               className="w-full bg-bq-white p-4 sm:p-5 rounded-bq border-[3px] border-bq-ink shadow-bq-card flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4"
             >
               <div className="flex items-center gap-4 min-w-0">
-                {/* Lữ Khách: the traveller cheers on a right answer, stands by on a wrong one (LKD-13). */}
+                {/* Storybook (LK): the traveller cheers on a right answer, stands by on a wrong one (LKD-13). */}
                 <img
                   src={isCorrect ? '/images/lk/hero-cheer.webp' : '/images/lk/hero.webp'}
                   alt=""

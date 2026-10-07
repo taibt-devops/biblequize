@@ -103,7 +103,7 @@ describe('AnswerButton', () => {
       expect(screen.getByText(/✗ BẠN CHỌN/)).toBeInTheDocument()
     })
 
-    it('correct state keeps its C5 board and adds the Lữ Khách gold halo + tick chip', () => {
+    it('correct state keeps its C5 board and adds the Storybook (LK) gold halo + tick chip', () => {
       render(<AnswerButton {...baseProps} state="correct" />)
       const btn = screen.getByRole('button') as HTMLButtonElement
       // jsdom normalises rgb spacing; verify the gold halo inline style landed.
@@ -115,7 +115,7 @@ describe('AnswerButton', () => {
     it('disabled state keeps a visible (ink-outlined) board, dimmed but readable', () => {
       render(<AnswerButton {...baseProps} state="disabled" />)
       const btn = screen.getByRole('button')
-      // Lữ Khách: dimmed-but-readable, NOT transparent/invisible.
+      // Storybook (LK): dimmed-but-readable, NOT transparent/invisible.
       expect(btn.className).toContain('opacity-50')
       expect(btn.className).toContain('border-bq-ink')
       expect(btn.className).not.toContain('border-transparent')

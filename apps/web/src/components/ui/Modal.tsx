@@ -19,7 +19,7 @@ const SIZE_MAX_WIDTH: Record<NonNullable<ModalProps['size']>, number> = {
 }
 
 /**
- * Lữ Khách base modal — cream sticker card (ink outline, hard shadow) on a dimmed backdrop.
+ * Storybook (LK) base modal — cream sticker card (ink outline, hard shadow) on a dimmed backdrop.
  *
  * Hardcoded hex values throughout (no CSS variables — they render against a
  * white background in the portal layer due to a known token-resolution bug).

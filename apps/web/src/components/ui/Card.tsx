@@ -8,7 +8,7 @@ interface CardProps {
 
 export const Card: React.FC<CardProps> = ({ children, className }) => {
   return (
-    // Lữ Khách sticker card: cream paper, 3px ink outline, hard offset shadow.
+    // Storybook (LK) sticker card: cream paper, 3px ink outline, hard offset shadow.
     <div className={clsx('rounded-bq border-[3px] border-bq-ink bg-bq-white shadow-bq-card', className)}>
       {children}
     </div>

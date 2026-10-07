@@ -14,7 +14,7 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   ...props
 }) => {
-  // Lữ Khách pressable button: ink outline, hard shadow, sinks 4px when pressed.
+  // Storybook (LK) pressable button: ink outline, hard shadow, sinks 4px when pressed.
   const baseClasses = 'inline-flex items-center justify-center gap-2 rounded-bq-btn border-[3px] border-bq-ink font-bold shadow-bq-btn transition-[transform,box-shadow,filter] duration-75 active:translate-y-1 active:shadow-bq-btn-down focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-bq-sapphire focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none'
   
   const variantClasses = {
