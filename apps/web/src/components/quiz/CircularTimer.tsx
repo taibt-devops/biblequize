@@ -71,7 +71,8 @@ export const CircularTimer: React.FC<CircularTimerProps> = ({
 
   return (
     <div
-      className={clsx('relative flex items-center justify-center', animClass)}
+      // Lữ Khách: cream dial with an ink outline; the coloured arc keeps the 4 urgency bands.
+      className={clsx('relative flex items-center justify-center rounded-full bg-bq-white border-[3px] border-bq-ink shadow-bq-btn', animClass)}
       style={{ width: size, height: size }}
     >
       <svg
@@ -83,7 +84,7 @@ export const CircularTimer: React.FC<CircularTimerProps> = ({
           cx={size / 2}
           cy={size / 2}
           r={radius}
-          stroke="rgba(255,255,255,0.06)"
+          stroke="#F0DFB8"
           strokeWidth={STROKE_WIDTH}
           fill="none"
         />
@@ -103,8 +104,8 @@ export const CircularTimer: React.FC<CircularTimerProps> = ({
       </svg>
       <span
         data-testid={testId}
-        className="absolute font-medium leading-none"
-        style={{ color, fontSize: size * 0.3 }}
+        className="absolute font-extrabold leading-none text-bq-ink"
+        style={{ fontSize: size * 0.32 }}
       >
         {secondsLeft}
       </span>
