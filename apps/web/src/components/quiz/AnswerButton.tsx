@@ -73,7 +73,7 @@ export const AnswerButton: React.FC<AnswerButtonProps> = ({
     case 'correct':
       // Reveal: gold halo + green tick chip + text badge (never colour alone).
       btnClasses = clsx('answer-correct-anim', color.btn)
-      letterClasses = 'bg-bq-emerald text-white'
+      letterClasses = 'bg-bq-white text-bq-emerald font-black'
       letterContent = '✓'
       inlineStyle = { boxShadow: HALO_CORRECT }
       trailingIcon = (
@@ -84,7 +84,7 @@ export const AnswerButton: React.FC<AnswerButtonProps> = ({
       break
     case 'wrong':
       btnClasses = clsx('answer-wrong-anim', color.btn)
-      letterClasses = 'bg-bq-ruby text-white'
+      letterClasses = 'bg-bq-white text-bq-ruby font-black'
       letterContent = '✗'
       inlineStyle = { boxShadow: HALO_WRONG }
       trailingIcon = (
@@ -125,11 +125,11 @@ export const AnswerButton: React.FC<AnswerButtonProps> = ({
       aria-disabled={!isInteractive}
       data-compact={compact || undefined}
       className={clsx(
-        'group relative flex items-center rounded-[20px] border-[3px] border-bq-ink shadow-bq-btn',
+        'group relative flex items-center rounded-[18px] md:rounded-[20px] border-[3px] border-bq-ink shadow-bq-btn',
         'transition-all duration-150 text-left active:translate-y-1 active:shadow-bq-btn-down',
         compact
           ? 'gap-2.5 md:gap-4 p-2.5 md:p-4 min-h-[44px] md:min-h-[64px]'
-          : 'gap-4 p-3.5 md:p-4 min-h-[64px]',
+          : 'gap-3 md:gap-4 px-3.5 py-2 md:px-5 md:py-4 min-h-[56px] md:min-h-[82px]',
         btnClasses,
       )}
       style={inlineStyle}
@@ -138,7 +138,7 @@ export const AnswerButton: React.FC<AnswerButtonProps> = ({
         className={clsx(
           'flex items-center justify-center rounded-full border-[3px] border-bq-ink',
           'font-extrabold flex-shrink-0',
-          compact ? 'w-8 h-8 md:w-10 md:h-10 text-sm md:text-lg' : 'w-10 h-10 text-lg',
+          compact ? 'w-8 h-8 md:w-10 md:h-10 text-sm md:text-lg' : 'w-9 h-9 md:w-[46px] md:h-[46px] text-lg md:text-[22px]',
           letterClasses,
         )}
       >
@@ -146,7 +146,7 @@ export const AnswerButton: React.FC<AnswerButtonProps> = ({
       </div>
       <span className={clsx(
         'flex-1 font-bold leading-snug',
-        compact ? 'text-sm md:text-lg' : 'text-base md:text-xl',
+        compact ? 'text-[16px] md:text-[20px]' : 'text-[20px] md:text-[24px]',
         textClasses,
       )}>
         {text}

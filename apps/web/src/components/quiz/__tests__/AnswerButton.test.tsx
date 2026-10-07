@@ -35,7 +35,8 @@ describe('AnswerButton', () => {
       render(<AnswerButton {...baseProps} testId="qa" />)
       const btn = screen.getByTestId('qa')
       expect(btn).not.toHaveAttribute('data-compact')
-      expect(btn.className).toContain('min-h-[64px]')
+      // Lu Khach mockup: big answer boards (56px phone, 82px desktop)
+      expect(btn.className).toContain('md:min-h-[82px]')
     })
 
     it('exposes index and state via data attributes', () => {

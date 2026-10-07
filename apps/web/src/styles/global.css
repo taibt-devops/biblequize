@@ -290,14 +290,15 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
   /* MFP-1 / MBT-3: single source of truth for the mobile bottom-tab clearance.
      MobileBottomTabs nav height = 44px (min-h) + 4px (pt-1) + paddingBottom, where
      paddingBottom = max(8px, min(safe-area-inset-bottom, 12px)). The inset is CAPPED
      at 12px: 3-button-nav devices report a ~48px bottom inset even though the system
      bar sits *below* the WebView, which otherwise left a tall empty band under the tabs.
-     Capped → bar is 56px (no inset) to 60px (capped inset); var adds ~6px breathing gap. */
-  --mobile-nav-h: calc(54px + max(8px, min(env(safe-area-inset-bottom, 0px), 12px)));
+     Capped → bar is 56px (no inset) to 60px (capped inset); var adds ~6px breathing gap.
+     LKF-1: tabs are 52px tall + 8px top padding + 3px rule → 63px before the inset. */
+  --mobile-nav-h: calc(68px + max(8px, min(env(safe-area-inset-bottom, 0px), 12px)));
 }
 
 /* ── "Lữ Khách" storybook paper (LKD-4) ──
@@ -2321,15 +2322,10 @@ body::before {
   box-shadow: 0 0 15px rgba(212,168,67,.2) !important;
 }
 
-/* Dark select arrows */
+/* Native select popups follow the light paper theme (was a dark-theme leftover) */
 select.form-select,
 select {
-  color-scheme: dark;
-}
-
-/* Remove old glow group hover */
-.group:hover {
-  box-shadow: none !important;
+  color-scheme: light;
 }
 
 /* Social Fun: Reaction float up */

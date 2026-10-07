@@ -12,7 +12,9 @@ Nguyên tắc: render artboard ra PNG, đặt cạnh ảnh app cùng khổ (1280
 - LKF-3 Code Trang chủ theo mockup LKF-2 (desktop + điện thoại)
   - Status: [ ] TODO · **Spec impact**: [x] None (spec không mô tả bố cục Trang chủ)
 - LKF-4 Quiz theo artboard Quiz / QuizPhone (hàng chip trên tranh, 20 chấm + lữ khách, dầu đèn + combo trong cuộn giấy, phản hồi dưới đáp án)
-  - Status: [ ] TODO
+  - Status: [x] DONE · Lệch mockup: giữ badge "✓ ĐÚNG · BẠN CHỌN" (test khoá, giúp người mù màu) + nhãn độ khó cạnh tham chiếu; quiz > 20 câu dùng thanh thay chấm
+  - Sửa kèm: `.group:hover { box-shadow:none !important }` (tắt quầng đáp án + bóng nút khi rê chuột), `:root`/`select` color-scheme dark → light, `quiz.correctAnswerIs` thiếu đáp án (thay bằng `quiz.lk.correctIs`)
+  - **Spec impact**: [x] None · **Spec strategy**: [x] (c)
 - LKF-5 Mockup màn Kết quả → user duyệt → code
   - Status: [ ] TODO
 - LKF-6 Hành trình theo artboard Journey (trạm sách trên bản đồ, panel chi tiết, 8 vùng, huy hiệu)

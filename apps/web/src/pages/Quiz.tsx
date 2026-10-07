@@ -7,7 +7,9 @@ import { soundManager } from '../services/soundManager'
 import { haptic } from '../utils/haptics'
 import { useLifeline } from '../hooks/useLifeline'
 import { AnswerButton, type AnswerState } from '../components/quiz/AnswerButton'
-import { CircularTimer } from '../components/quiz/CircularTimer'
+import LampTimer from '../components/quiz/LampTimer'
+import QuizTopBar from '../components/quiz/QuizTopBar'
+import QuizFeedback from '../components/quiz/QuizFeedback'
 import DifficultyBadge from '../components/DifficultyBadge'
 import { wrapProperNouns, formatVerseRef, getQuestionLengthClass } from '../utils/textHelpers'
 import { getQuizLanguage } from '../utils/quizLanguage'
@@ -227,11 +229,8 @@ const Quiz: React.FC = () => {
   const [showCombo, setShowCombo] = useState(false)
   const [answerAnim, setAnswerAnim] = useState<'correct' | 'wrong' | null>(null)
   const [scorePopping, setScorePopping] = useState(false)
-  // Hidden by default so the pill doesn't cover the answer grid on short
-  // mobile viewports (user report 2026-05-20 — pill at bottom-48 was
-  // overlapping answer D). User taps "Xem giải thích" pill to expand panel.
-  const [explanationCollapsed, setExplanationCollapsed] = useState(true)
-  const explanationRef = useRef<HTMLDivElement | null>(null)
+  // Feedback card: brought into view on reveal (desktop card sits under the answers).
+  const feedbackRef = useRef<HTMLElement | null>(null)
 
   const currentQuestion = questions[currentQuestionIndex]
   const progressPercent = questions.length > 0 ? ((currentQuestionIndex + 1) / questions.length) * 100 : 0
@@ -307,30 +306,9 @@ const Quiz: React.FC = () => {
     }
   }, [isQuizCompleted, queryClient])
 
-  // Reset the explanation popup to collapsed whenever a new feedback shows
-  // (new question, or just-answered the current one). Keeps the panel hidden
-  // until the user explicitly taps the "Xem giải thích" pill.
   useEffect(() => {
-    setExplanationCollapsed(true)
-  }, [currentQuestionIndex, showResult])
-
-  // Click-outside on the explanation panel collapses it so the answer grid
-  // behind is visible. Only attach the listener while a panel is open.
-  useEffect(() => {
-    if (!showResult || explanationCollapsed) return
-    const onPointerDown = (e: MouseEvent | TouchEvent) => {
-      const node = explanationRef.current
-      if (node && !node.contains(e.target as Node)) {
-        setExplanationCollapsed(true)
-      }
-    }
-    document.addEventListener('mousedown', onPointerDown)
-    document.addEventListener('touchstart', onPointerDown)
-    return () => {
-      document.removeEventListener('mousedown', onPointerDown)
-      document.removeEventListener('touchstart', onPointerDown)
-    }
-  }, [showResult, explanationCollapsed])
+    if (showResult) feedbackRef.current?.scrollIntoView?.({ block: 'nearest', behavior: 'smooth' })
+  }, [showResult])
 
   useEffect(() => {
     const boot = () => {
@@ -821,457 +799,169 @@ const Quiz: React.FC = () => {
     )
   }
 
+  const modeLabel = settings?.isRanked || settings?.mode === 'ranked' ? t('gameModes.ranked')
+    : settings?.mode === 'mystery_mode' ? t('gameModes.mystery')
+    : settings?.mode === 'speed_round' ? t('gameModes.speed')
+    : t('gameModes.practice')
+  const bookLabel = getBookName(currentQuestion.book, bookLang)
+  const handleQuit = () => { if (confirm(t('quiz.confirmQuit'))) navigate(quitPath) }
+  const correctIdx = currentQuestion.correctAnswer?.[0] ?? -1
+  const showExplanation = showResult && !!currentQuestion.explanation &&
+    (isCorrect === false || (isCorrect === true && !!settings?.showExplanation))
+  // Sentence-case reference for the scroll pill (formatVerseRef upper-cases the book).
+  const refLabel = currentQuestion.chapter ? `${bookLabel} ${currentQuestion.chapter}` : bookLabel
+  const verseRefText = currentQuestion.verseStart
+    ? `${bookLabel} ${currentQuestion.chapter}:${currentQuestion.verseStart}${currentQuestion.verseEnd && currentQuestion.verseEnd !== currentQuestion.verseStart ? `–${currentQuestion.verseEnd}` : ''}`
+    : null
+  const questionFont =
+    questionLenClass === 'short' ? 'text-[22px] text-center'
+      : questionLenClass === 'medium' ? 'text-[19px] text-center'
+        : 'text-[16px] text-left md:text-center'
+
+  // Storybook play screen (LKF-4): chips float over the painted meadow, the
+  // question sits on a scroll with the lamp-oil timer and the combo sword,
+  // answers are big C5 boards, feedback comes with the traveller.
   return (
-    <div data-testid="quiz-page" className="min-h-dvh font-sans text-bq-ink overflow-hidden relative">
-      {/* Background Decorative Elements */}
-      <div className="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 overflow-hidden">
-        {/* Storybook (LK): calm painted meadow behind the scroll (LKD-11) */}
-        <img src="/images/lk/bq-quiz.webp" alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-bq-paper/25" />
+    <div data-testid="quiz-page" className="min-h-dvh font-sans text-bq-ink relative">
+      <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+        <img src="/images/lk/bq-quiz.webp" alt="" className="absolute inset-0 w-full h-full object-cover object-[30%_50%] md:object-center" />
+        <div className="absolute inset-0 bg-bq-cream/20" />
       </div>
 
-      {/* Top Navigation Header */}
-      <header className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-bq-white border-b-[3px] border-bq-ink">
-        <div className="flex items-center gap-3">
-          <Link
-            to={quitPath}
-            className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-bq-inset transition-colors"
-            onClick={(e) => {
-              e.preventDefault()
-              if (confirm(t('quiz.confirmQuit'))) {
-                navigate(quitPath)
-              }
-            }}
-          >
-            <span className="material-symbols-outlined text-bq-ink2">close</span>
-          </Link>
-          <div className="flex flex-col">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-bq-amberd">
-              {t('quiz.question', { current: currentQuestionIndex + 1, total: questions.length })}
-            </span>
-            <span className="font-display font-bold text-sm tracking-tight">
-              {getBookName(currentQuestion.book, bookLang)}{currentQuestion.chapter ? `: ${t('quiz.chapter', { chapter: currentQuestion.chapter })}` : ''}
-            </span>
-          </div>
-        </div>
-
-        {/* Progress Bar Center (desktop) */}
-        <div className="absolute left-1/2 -translate-x-1/2 w-full max-w-md px-4 hidden md:block text-center">
-          <div className="flex items-center gap-4">
-            <div className="relative h-3.5 flex-1 bg-bq-track border-2 border-bq-ink rounded-full">
-              <div
-                className="h-full rounded-full bg-bq-amber transition-all duration-500"
-                style={{ width: `${progressPercent}%` }}
-              ></div>
-              <img
-                src="/images/lk/hero.webp"
-                alt=""
-                aria-hidden
-                className="absolute bottom-1 h-7 -translate-x-1/2 transition-[left] duration-500"
-                style={{ left: `${progressPercent}%` }}
-              />
-            </div>
-            <span data-testid="quiz-progress" className="text-[10px] font-black text-bq-amberd whitespace-nowrap">
-              {currentQuestionIndex + 1} / {questions.length}
-            </span>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-4">
-          <div className="hidden md:flex items-center gap-2 bg-bq-inset px-3 py-1.5 rounded-full border border-bq-hair">
-            <span className="material-symbols-outlined text-bq-amberd text-lg" style={FILL_STYLE}>bolt</span>
-            <span className="font-bold text-sm">{score.toLocaleString()}</span>
-          </div>
-          <div className="md:hidden">
-            <CircularTimer
-              secondsLeft={timeLeft}
-              totalSeconds={timerLimit}
-              size={44}
-              testId="quiz-timer-mobile"
-            />
-          </div>
-        </div>
-      </header>
-
-      {/* Mobile Progress Bar */}
-      <div className="fixed top-16 left-0 w-full h-1.5 bg-bq-track border-b-2 border-bq-ink md:hidden z-50">
-        <div
-          className="h-full bg-bq-amber transition-all duration-500"
-          style={{ width: `${progressPercent}%` }}
-        ></div>
-      </div>
-
-      {/* Combo Banner */}
       {showCombo && (
-        <div className="combo-banner-anim fixed top-20 left-1/2 z-[60] px-6 py-3 rounded-full font-black text-lg shadow-bq-flame bg-bq-flame text-white whitespace-nowrap">
-          🔥 {combo}x COMBO!
+        <div className="combo-banner-anim fixed top-24 left-1/2 z-[60] flex items-center gap-2 pl-2 pr-5 py-1.5 rounded-full bg-bq-amber border-[3px] border-bq-ink shadow-[0_5px_0_#1D2B22] font-extrabold text-[20px] whitespace-nowrap">
+          <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-9 -rotate-[30deg]" />
+          {t('quiz.lk.comboBanner', { count: combo })}
         </div>
       )}
 
-      {/* Main Content — pad-bottom grows when the feedback dock is visible
-          so the answer grid scrolls clear of the dock instead of being
-          covered by it (the dock was floating at `bottom-48` and overlapping
-          answer D on short mobile viewports — fix 2026-05-20). */}
-      <main className={`relative min-h-dvh pt-24 px-6 flex flex-col items-center justify-center max-w-5xl mx-auto ${showResult ? 'pb-56 sm:pb-44' : 'pb-12'}`}>
-        {/* Mobile-only HUD strip — 3 pills (energy/combo/score) per QM-2 mockup.
-            Replaces desktop "Top Stats Row" on small screens. */}
-        <div
-          data-testid="quiz-hud-mobile"
-          className={`md:hidden w-full grid gap-2 mb-4 ${isPracticeMode ? 'grid-cols-2' : 'grid-cols-3'}`}
-        >
-          {!isPracticeMode && (
-          <div className="flex items-center gap-2 px-2.5 py-2 rounded-xl bg-bq-white border border-bq-hair shadow-bq-soft min-w-0">
-            <span className="material-symbols-outlined text-bq-amberd text-base flex-shrink-0" style={FILL_STYLE}>bolt</span>
-            <div className="min-w-0 flex-1">
-              <div className="text-[9px] font-bold uppercase tracking-wider text-bq-ink2 leading-none">{t('quiz.energy')}</div>
-              <div
-                className="flex items-center gap-1.5 mt-1.5"
-                data-testid="quiz-energy-bar-mobile"
-                data-energy={serverEnergy ?? ''}
-              >
-                <div className="relative flex-1 h-2 rounded-full bg-bq-inset overflow-hidden">
-                  <div
-                    className="absolute inset-y-0 left-0 rounded-full bg-bq-amber transition-[width] duration-500 ease-out"
-                    style={{ width: `${computeEnergyPercent(serverEnergy, lives)}%` }}
-                  />
-                </div>
-                <span className="text-[10px] font-bold tabular-nums text-bq-ink leading-none">
-                  {Math.round(computeEnergyPercent(serverEnergy, lives))}%
-                </span>
-              </div>
-            </div>
-          </div>
-          )}
-          <div className="flex items-center gap-2 px-2.5 py-2 rounded-xl bg-bq-white border border-bq-hair shadow-bq-soft min-w-0">
-            <span className="material-symbols-outlined text-bq-amberd text-base flex-shrink-0" style={FILL_STYLE}>stars</span>
-            <div className="min-w-0">
-              <div className="text-[9px] font-bold uppercase tracking-wider text-bq-ink2 leading-none">{t('quiz.comboStreak')}</div>
-              <div className={`text-[13px] font-extrabold tabular-nums leading-none mt-1.5 ${combo > 0 ? 'text-bq-amberd' : 'text-bq-ink'} ${scorePopping ? 'score-pop-anim' : ''}`}>×{combo}</div>
-            </div>
-          </div>
-          <div className="flex items-center gap-2 px-2.5 py-2 rounded-xl bg-bq-white border border-bq-hair shadow-bq-soft min-w-0">
-            <span className="material-symbols-outlined text-bq-emerald text-base flex-shrink-0" style={FILL_STYLE}>scoreboard</span>
-            <div className="min-w-0">
-              <div className="text-[9px] font-bold uppercase tracking-wider text-bq-ink2 leading-none">{t('quiz.score')}</div>
-              <div className="text-[13px] font-extrabold tabular-nums leading-none mt-1.5 text-bq-ink">{score.toLocaleString()}</div>
-            </div>
-          </div>
-        </div>
+      <main className={`relative max-w-[1100px] mx-auto px-3.5 md:px-6 pt-3.5 md:pt-[18px] flex flex-col gap-3 md:gap-[18px] ${showResult ? 'pb-[250px] md:pb-8' : 'pb-8'}`}>
+        <QuizTopBar
+          onQuit={handleQuit}
+          modeLabel={modeLabel}
+          bookLabel={bookLabel}
+          current={currentQuestionIndex + 1}
+          total={questions.length}
+          energy={isPracticeMode ? null : computeEnergyPercent(serverEnergy, lives)}
+          energyRaw={serverEnergy}
+          score={score}
+        />
 
-        {/* Top Stats Row — desktop only (mobile uses HUD strip above) */}
-        <div className="hidden md:flex w-full justify-between items-end mb-8">
-          <div className="flex flex-col items-start gap-1">
-            <span className="text-[10px] font-bold uppercase tracking-[0.1em] text-bq-ink2">{t('quiz.comboStreak')}</span>
-            <div className={`flex items-center gap-2 bg-bq-white px-4 py-2 rounded-2xl border transition-all duration-300 ${combo > 0 ? 'border-bq-amber/40 shadow-bq-amb' : 'border-bq-hair shadow-bq-soft'}`}>
-              <span className="material-symbols-outlined text-bq-amberd" style={FILL_STYLE}>stars</span>
-              <span className={`font-display font-black text-2xl italic ${combo > 0 ? 'text-bq-amberd' : 'text-bq-ink2'} ${scorePopping ? 'score-pop-anim' : ''}`}>
-                x{combo}
+        {/* The question on a parchment scroll between two wooden rods */}
+        <section aria-label={t('quiz.lk.questionAria')} className="md:px-1.5">
+          <div aria-hidden className="h-4 md:h-5 rounded-full bg-bq-wood border-[3px] border-bq-ink" />
+          <div
+            data-question-length={questionLenClass}
+            className="relative mx-2.5 md:mx-3.5 -my-[3px] md:-my-1 px-4 md:px-[34px] pt-2.5 md:pt-4 pb-3.5 md:pb-[26px] bg-bq-parch border-x-[3px] border-bq-ink"
+          >
+            <div className="flex items-center justify-between gap-2.5">
+              <LampTimer secondsLeft={timeLeft} totalSeconds={timerLimit} />
+              <span
+                data-testid="quiz-combo"
+                className={`shrink-0 flex items-center gap-0.5 md:gap-1.5 pl-0.5 md:pl-1.5 pr-2.5 md:pr-4 py-0.5 bg-bq-cream border-2 md:border-[3px] border-bq-ink rounded-full font-extrabold text-[14px] md:text-[19px] ${combo > 0 ? '' : 'opacity-60'} ${scorePopping ? 'score-pop-anim' : ''}`}
+              >
+                <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-6 md:h-[34px] -rotate-[30deg]" />
+                <span className="md:hidden">×{combo}</span>
+                <span className="hidden md:inline">{t('quiz.lk.combo', { count: combo })}</span>
               </span>
             </div>
-          </div>
-
-          {/* Circular Countdown Timer — CircularTimer handles 4 colour
-              bands (gold/yellow/orange/red) + warning/critical pulse
-              animations + correct dashOffset formula (QZ-P0-3). */}
-          <div className="hidden md:flex flex-col items-center gap-1">
-            <span className="text-[10px] font-bold uppercase tracking-[0.1em] text-bq-ink2">
-              {t('quiz.time')}
-            </span>
-            <CircularTimer
-              secondsLeft={timeLeft}
-              totalSeconds={timerLimit}
-              size={64}
-              testId="quiz-timer"
-            />
-          </div>
-
-          {isPracticeMode ? (
-            // Practice: no energy gauge — keep the right column as a spacer
-            // so the centred timer stays centred under justify-between.
-            <div className="min-w-[180px]" aria-hidden="true" />
-          ) : (
-            <div className="flex flex-col items-end gap-1 min-w-[180px]">
-              <span className="text-[10px] font-bold uppercase tracking-[0.1em] text-bq-ink2">{t('quiz.energy')}</span>
-              <div
-                className="flex items-center gap-2 w-full"
-                data-testid="quiz-energy-bar"
-                data-energy={serverEnergy ?? ''}
-              >
-                <div className="relative flex-1 h-3 rounded-full bg-bq-inset overflow-hidden">
-                  <div
-                    className="absolute inset-y-0 left-0 rounded-full bg-bq-amber transition-[width] duration-500 ease-out"
-                    style={{ width: `${computeEnergyPercent(serverEnergy, lives)}%` }}
-                  />
-                </div>
-                <span className="text-sm font-bold tabular-nums text-bq-ink min-w-[44px] text-right">
-                  {Math.round(computeEnergyPercent(serverEnergy, lives))}%
-                </span>
-              </div>
-            </div>
-          )}
-        </div>
-
-        {/* Question Section.
-            QZ-P0-2: verse badge top + wrapProperNouns on the question
-            content + .question-text class for `text-wrap: pretty`. The
-            bottom book-meta line stays for E2E (data-testid="quiz-question-book").
-            QM-3 mobile: aspect-auto + min-h + adaptive font 3 buckets via
-            getQuestionLengthClass — desktop layout (aspect-[21/7], text-4xl) unchanged. */}
-        <div className="w-full space-y-6 md:space-y-16">
-          {(() => {
-            // Mobile-only font/alignment overrides per length bucket.
-            // Desktop (md+) keeps text-4xl, font-extrabold, text-center via md: prefix.
-            const mobileFontCls =
-              questionLenClass === 'short'  ? 'text-[21px] font-bold text-center' :
-              questionLenClass === 'medium' ? 'text-[18px] font-semibold text-center' :
-                                              'text-[15px] font-semibold text-left'
-            const lenClass = questionLenClass
-            // Storybook (LK): the question sits on a parchment scroll between two wooden rods (LKD-11).
-            return (
-              <div>
-              <div aria-hidden className="h-4 md:h-5 rounded-full bg-bq-wood border-[3px] border-bq-ink" />
-              <div
-                data-question-length={lenClass}
-                className="relative mx-3 md:mx-5 -my-1 aspect-auto min-h-[160px] md:aspect-[21/7] md:min-h-0 flex flex-col items-center justify-center text-center p-5 md:p-10 bg-bq-parch border-x-[3px] border-bq-ink overflow-hidden"
-              >
-
-                {/* Verse badge + DTAG-2 difficulty badge — pills at the top of the card. */}
-                <div className="flex items-center justify-center flex-wrap gap-2 mb-3 md:mb-4">
-                  <div
-                    data-testid="quiz-verse-badge"
-                    className="inline-flex items-center gap-1.5 bg-bq-inset border border-bq-hair rounded-full px-3 py-1"
-                  >
-                    <span className="material-symbols-outlined text-bq-amberd text-xs">menu_book</span>
-                    <span className="text-bq-amberd text-[11px] font-medium tracking-wider">
-                      {formatVerseRef(currentQuestion, getBookName(currentQuestion.book, bookLang))}
-                    </span>
-                  </div>
-                  <DifficultyBadge difficulty={currentQuestion.difficulty} />
-                </div>
-
-                <h2
-                  data-testid="quiz-question-text"
-                  className={`question-text font-display ${mobileFontCls} md:text-4xl md:font-extrabold md:text-center tracking-tight leading-snug max-w-3xl text-bq-ink w-full`}
-                >
-                  {wrapProperNouns(currentQuestion.content)}
-                </h2>
-                {/* Bottom book-meta — desktop only; mobile already shows book+chapter in topbar. */}
-                <div className="hidden md:flex mt-8 items-center gap-2 text-bq-ink3">
-                  <span className="material-symbols-outlined text-sm">menu_book</span>
-                  <span data-testid="quiz-question-book" className="text-xs font-bold uppercase tracking-widest">
-                    {getBookName(currentQuestion.book, bookLang)}{currentQuestion.chapter ? ` - ${t('quiz.chapter', { chapter: currentQuestion.chapter })}` : ''}
-                  </span>
-                </div>
-              </div>
-              <div aria-hidden className="h-4 md:h-5 rounded-full bg-bq-wood border-[3px] border-bq-ink" />
-              </div>
-            )
-          })()}
-
-          {/* Answers Grid — AnswerButton handles per-position color (Coral/Sky/Gold/Sage),
-              all 6 visual states, animations, icons. See QZ-P0-1 in BUG_REPORT_QUIZ.md.
-              QM-4: tighter gap on mobile + compact button mode when question is "long". */}
-          <div
-            data-testid="quiz-answers-grid"
-            data-compact={questionLenClass === 'long' || undefined}
-            className={`grid grid-cols-1 md:grid-cols-2 ${questionLenClass === 'long' ? 'gap-2' : 'gap-3'} md:gap-6`}
-          >
-            {currentQuestion.options.map((option, index) => {
-              const correctIdx = currentQuestion.correctAnswer?.[0] ?? -1
-              const isSelected = selectedAnswer === index
-              const isCorrectAnswer = showResult && index === correctIdx
-              const isWrongSelected = showResult && isSelected && index !== correctIdx
-              const isEliminated = !showResult && lifeline.eliminatedOptions.has(index)
-
-              let state: AnswerState
-              if (isEliminated) state = 'eliminated'
-              else if (isCorrectAnswer) state = 'correct'
-              else if (isWrongSelected) state = 'wrong'
-              else if (isSelected && !showResult) state = 'selected'
-              else if (showResult) state = 'disabled'
-              else state = 'default'
-
-              return (
-                <AnswerButton
-                  key={index}
-                  index={index as 0 | 1 | 2 | 3}
-                  letter={ANSWER_LETTERS[index] as 'A' | 'B' | 'C' | 'D'}
-                  text={option}
-                  state={state}
-                  compact={questionLenClass === 'long'}
-                  onClick={() => handleAnswerSelect(index)}
-                  testId={`quiz-answer-${index}`}
-                  pickedByUser={isSelected}
-                />
-              )
-            })}
-          </div>
-        </div>
-
-        {/* Gameplay Footer — only renders pre-answer. Once `showResult` is
-            true both controls are useless (hint can't change a revealed
-            answer; skip can't unsubmit) and the bottom dock already shows
-            the score delta + "Câu tiếp theo" CTA, so the footer is just
-            visual noise. User report 2026-05-20: skip button looked active
-            after answering. */}
-        {/*
-          AskOpinion (community poll) lifeline was removed in v1 — it needs
-          a critical mass of community answers (cold-start problem). Will
-          be reintroduced in v2 once we reach ≥30 samples/question avg.
-          See DECISIONS.md 2026-04-18.
-        */}
-        {!showResult && (
-        <div className="mt-12 w-full flex justify-between items-center">
-          <button
-            data-testid="quiz-hint-btn"
-            data-hint-remaining={lifeline.hintsRemaining}
-            onClick={() => { if (lifeline.canUseHint && !showResult) lifeline.useHint() }}
-            disabled={!lifeline.canUseHint || showResult}
-            aria-disabled={!lifeline.canUseHint || showResult}
-            className={`flex items-center gap-2 px-4 py-2 rounded-2xl border-[3px] border-bq-ink bg-bq-white shadow-bq-btn active:translate-y-1 active:shadow-bq-btn-down transition-transform ${
-              lifeline.canUseHint && !showResult
-                ? 'text-bq-ink'
-                : 'text-bq-ink3 opacity-60 cursor-not-allowed'
-            }`}
-          >
-            <span className="material-symbols-outlined">lightbulb</span>
-            <span className="text-xs font-bold uppercase tracking-widest">
-              {lifeline.hintsRemaining === -1
-                ? t('quiz.hint')
-                : t('quiz.hintWithCount', { count: Math.max(0, lifeline.hintsRemaining) })}
-            </span>
-          </button>
-          <button
-            onClick={() => {
-              if (!showResult) {
-                handleAnswerSelect(-1)
-              }
-            }}
-            className="flex items-center gap-2 px-4 py-2 rounded-2xl border-[3px] border-bq-ink bg-bq-white shadow-bq-btn active:translate-y-1 active:shadow-bq-btn-down transition-transform text-bq-ink"
-          >
-            <span className="material-symbols-outlined">skip_next</span>
-            <span className="text-xs font-bold uppercase tracking-widest">{t('quiz.skip')}</span>
-          </button>
-        </div>
-        )}
-      </main>
-
-      {/* Bottom dock — single fixed container that stacks the (optional)
-          explanation pill/panel above the feedback bar. Previously these were
-          two separate `fixed` elements (pill at bottom-48 → overlapped
-          answer D on short mobile viewports). Wrapping them in one column
-          keeps the pill above the feedback bar without floating over the
-          answer grid (fix 2026-05-20, mirrors DailyChallenge dock pattern). */}
-      {showResult && (() => {
-        const hasWrongExp = isCorrect === false && (currentQuestion.explanation || currentQuestion.verseStart)
-        const hasRightExp = isCorrect === true && settings?.showExplanation && currentQuestion.explanation
-        const hasExp = hasWrongExp || hasRightExp
-        const pillBorder = isCorrect ? 'border-bq-amber/40 text-bq-amberd' : 'border-bq-ruby/40 text-bq-ruby'
-        return (
-          <div className="fixed bottom-6 sm:bottom-10 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] sm:w-[calc(100%-3rem)] max-w-lg flex flex-col items-center gap-2">
-            {hasExp && (
-              explanationCollapsed ? (
-                <button
-                  data-testid="quiz-explanation-pill"
-                  type="button"
-                  onClick={() => setExplanationCollapsed(false)}
-                  className={`px-4 py-2 rounded-full bg-bq-white border-2 border-bq-ink text-sm font-bold flex items-center gap-2 shadow-bq-btn hover:scale-105 transition-transform ${pillBorder}`}
-                >
-                  <span className="material-symbols-outlined text-sm" style={FILL_STYLE}>lightbulb</span>
-                  {t('quiz.showExplanationAgain', 'Xem giải thích')}
-                </button>
-              ) : (
-                <div ref={explanationRef} data-testid="quiz-explanation" className="w-full animate-slide-up">
-                  <div className="bg-bq-white p-5 rounded-bq border-[3px] border-bq-ink space-y-3 max-h-[50vh] overflow-y-auto shadow-bq-card">
-                    <div className="flex items-center justify-between gap-2">
-                      <div className="flex items-center gap-2 min-w-0">
-                        {hasWrongExp && (
-                          <>
-                            <span className="material-symbols-outlined text-bq-emerald text-sm flex-shrink-0" style={FILL_STYLE}>check_circle</span>
-                            <span className="text-sm font-bold text-bq-emerald truncate">
-                              {t('quiz.correctAnswerIs', { answer: currentQuestion.options[currentQuestion.correctAnswer?.[0] ?? 0] ?? '' })}
-                            </span>
-                          </>
-                        )}
-                        {hasRightExp && (
-                          <span className="text-sm font-bold text-bq-ink">
-                            {t('quiz.explanation')}
-                          </span>
-                        )}
-                      </div>
-                      <button
-                        data-testid="quiz-explanation-close"
-                        type="button"
-                        onClick={() => setExplanationCollapsed(true)}
-                        className="text-bq-ink3 hover:text-bq-ink transition-colors -mr-1 flex-shrink-0"
-                        aria-label={t('quiz.minimizeExplanation', 'Thu nhỏ')}
-                      >
-                        <span className="material-symbols-outlined text-base">close</span>
-                      </button>
-                    </div>
-                    {hasWrongExp && currentQuestion.verseStart && (
-                      <p className="text-bq-amberd text-sm font-medium flex items-center gap-1.5">
-                        <span className="material-symbols-outlined text-sm">menu_book</span>
-                        {getBookName(currentQuestion.book, bookLang)} {currentQuestion.chapter}:{currentQuestion.verseStart}
-                        {currentQuestion.verseEnd && currentQuestion.verseEnd !== currentQuestion.verseStart
-                          ? `–${currentQuestion.verseEnd}` : ''}
-                      </p>
-                    )}
-                    {currentQuestion.explanation && (
-                      <p className="font-read text-bq-ink2 text-sm leading-relaxed flex items-start gap-1.5">
-                        <span className="material-symbols-outlined text-sm mt-0.5 text-bq-amberd">lightbulb</span>
-                        <span>{currentQuestion.explanation}</span>
-                      </p>
-                    )}
-                    {hasWrongExp && (
-                      <button
-                        onClick={() => {
-                          try { api.post('/api/me/bookmarks', { questionId: currentQuestion.id }) } catch {}
-                        }}
-                        className="flex items-center gap-1.5 text-xs font-bold text-bq-amberd hover:opacity-80 transition-opacity mt-1"
-                      >
-                        <span className="material-symbols-outlined text-sm">bookmark_add</span>
-                        {t('quiz.bookmarkForReview', 'Đánh dấu ôn lại')}
-                      </button>
-                    )}
-                  </div>
-                </div>
-              )
-            )}
-            <div
-              data-testid="quiz-answer-feedback"
-              className="w-full bg-bq-white p-4 sm:p-5 rounded-bq border-[3px] border-bq-ink shadow-bq-card flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4"
+            <h1
+              data-testid="quiz-question-text"
+              className={`question-text font-extrabold leading-[1.22] mt-2.5 md:mt-[18px] mb-2 md:mb-2.5 md:[font-size:clamp(26px,3.3vw,38px)] ${questionFont}`}
             >
-              <div className="flex items-center gap-4 min-w-0">
-                {/* Storybook (LK): the traveller cheers on a right answer, stands by on a wrong one (LKD-13). */}
-                <img
-                  src={isCorrect ? '/images/lk/hero-cheer.webp' : '/images/lk/hero.webp'}
-                  alt=""
-                  aria-hidden
-                  className="h-16 sm:h-20 w-auto flex-shrink-0 -my-2"
-                />
-                <div className="min-w-0 flex-1">
-                  <p className={`text-xl font-extrabold leading-tight ${isCorrect ? 'text-bq-emerald' : 'text-bq-ruby'}`}>
-                    {isCorrect ? t('quiz.correct') : t('quiz.incorrect')}
-                  </p>
-                  <p data-testid="quiz-score-delta" className={`text-xs font-medium leading-tight mt-0.5 ${isCorrect ? 'text-bq-amberd' : 'text-bq-ruby'}`}>
-                    {isCorrect
-                      ? (scorePending ? t('quiz.calculatingPoints') : t('quiz.bonusPoints', { points: lastQuestionScore }))
-                      : t('quiz.noPoints')}
-                  </p>
-                </div>
-              </div>
+              {wrapProperNouns(currentQuestion.content)}
+            </h1>
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              <span data-testid="quiz-verse-badge" className="px-3 md:px-3.5 bg-bq-white border-2 border-bq-ink rounded-full text-[13px] md:text-[15px] font-bold text-bq-ink2">
+                <span data-testid="quiz-question-book">{refLabel}</span>
+              </span>
+              <DifficultyBadge difficulty={currentQuestion.difficulty} />
+            </div>
+          </div>
+          <div aria-hidden className="h-4 md:h-5 rounded-full bg-bq-wood border-[3px] border-bq-ink" />
+        </section>
+
+        {/* Answers: C5 boards (AnswerButton) */}
+        <div
+          data-testid="quiz-answers-grid"
+          data-compact={questionLenClass === 'long' || undefined}
+          className="grid grid-cols-1 md:grid-cols-2 gap-2.5 md:gap-[18px]"
+        >
+          {currentQuestion.options.map((option, index) => {
+            const isSelected = selectedAnswer === index
+            const isCorrectAnswer = showResult && index === correctIdx
+            const isWrongSelected = showResult && isSelected && index !== correctIdx
+            const isEliminated = !showResult && lifeline.eliminatedOptions.has(index)
+
+            let state: AnswerState
+            if (isEliminated) state = 'eliminated'
+            else if (isCorrectAnswer) state = 'correct'
+            else if (isWrongSelected) state = 'wrong'
+            else if (isSelected && !showResult) state = 'selected'
+            else if (showResult) state = 'disabled'
+            else state = 'default'
+
+            return (
+              <AnswerButton
+                key={index}
+                index={index as 0 | 1 | 2 | 3}
+                letter={ANSWER_LETTERS[index] as 'A' | 'B' | 'C' | 'D'}
+                text={option}
+                state={state}
+                compact={questionLenClass === 'long'}
+                onClick={() => handleAnswerSelect(index)}
+                testId={`quiz-answer-${index}`}
+                pickedByUser={isSelected}
+              />
+            )
+          })}
+        </div>
+
+        {/* Before answering: hint + skip on the left, a nudge on the right.
+            (AskOpinion lifeline removed in v1 — see DECISIONS.md 2026-04-18.) */}
+        {!showResult && (
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div className="flex gap-2.5">
               <button
-                data-testid="quiz-next-btn"
-                onClick={nextQuestion}
-                className="bg-bq-action text-bq-ink px-6 sm:px-8 py-3 rounded-2xl font-black text-sm shadow-bq-action active:scale-95 transition-all hover:brightness-110 whitespace-nowrap w-full sm:w-auto"
+                type="button"
+                data-testid="quiz-hint-btn"
+                data-hint-remaining={lifeline.hintsRemaining}
+                onClick={() => { if (lifeline.canUseHint) lifeline.useHint() }}
+                disabled={!lifeline.canUseHint}
+                aria-disabled={!lifeline.canUseHint}
+                className="px-4 md:px-[18px] py-1.5 md:py-2 bg-bq-white border-[3px] border-bq-ink rounded-[14px] shadow-[0_5px_0_#1D2B22] font-extrabold text-[15px] md:text-[17px] active:translate-y-1 active:shadow-[0_1px_0_#1D2B22] transition-transform disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {currentQuestionIndex + 1 >= questions.length ? t('quiz.viewResults') : t('quiz.nextQuestion')}
+                {lifeline.hintsRemaining === -1 ? t('quiz.lk.hint') : t('quiz.lk.hintLeft', { count: Math.max(0, lifeline.hintsRemaining) })}
+              </button>
+              <button
+                type="button"
+                onClick={() => handleAnswerSelect(-1)}
+                className="px-4 md:px-[18px] py-1.5 md:py-2 bg-bq-white border-[3px] border-bq-ink rounded-[14px] shadow-[0_5px_0_#1D2B22] font-extrabold text-[15px] md:text-[17px] active:translate-y-1 active:shadow-[0_1px_0_#1D2B22] transition-transform"
+              >
+                {t('quiz.lk.skip')}
               </button>
             </div>
+            <span className="hidden md:inline px-3.5 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-xl text-[17px] font-bold">{t('quiz.lk.pickOne')}</span>
           </div>
-        )
-      })()}
+        )}
+
+        {showResult && (
+          <QuizFeedback
+            ref={feedbackRef}
+            isCorrect={!!isCorrect}
+            pending={scorePending}
+            points={lastQuestionScore}
+            combo={combo}
+            correctLetter={ANSWER_LETTERS[correctIdx] ?? ''}
+            correctText={currentQuestion.options[correctIdx] ?? ''}
+            explanation={showExplanation ? currentQuestion.explanation : null}
+            verseRef={verseRefText}
+            isLast={currentQuestionIndex + 1 >= questions.length}
+            onNext={nextQuestion}
+            onBookmark={() => { try { api.post('/api/me/bookmarks', { questionId: currentQuestion.id }) } catch { /* best effort */ } }}
+          />
+        )}
+      </main>
     </div>
   )
 }
