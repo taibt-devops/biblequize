@@ -792,6 +792,12 @@
     "heroDesc": "Bible Quiz — interactive trivia, compete and track your Bible learning journey."
   },
   "home": {
+    "signpost": {
+      "nav": "Crossroads: pick a way to play",
+      "sceneAlt": "A village crossroads with a wooden signpost and a small chapel far away",
+      "ask": "Which way today?",
+      "journey": "Journey"
+    },
     "greetingMorning": "Good morning",
     "greetingAfternoon": "Good afternoon",
     "greetingEvening": "Good evening",

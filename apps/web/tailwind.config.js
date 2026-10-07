@@ -184,6 +184,8 @@ export default {
         flick:   'flick 2.6s ease-in-out infinite',
         shimmer: 'shimmer 7s ease-in-out infinite',
         sweep:   'sweep 3.2s ease-in-out infinite',
+        // Lữ Khách idle bob for the traveller sprite
+        bob:     'bob 1.6s ease-in-out infinite',
       },
       keyframes: {
         // Khung Sáng
@@ -191,6 +193,7 @@ export default {
         shimmer: { '0%,100%': { backgroundPosition: '0% 50%' }, '50%': { backgroundPosition: '100% 50%' } },
         // Light glint sweeping left→right with a rest off-screen (balanced base stays put).
         sweep:   { '0%': { transform: 'translateX(-140%)' }, '55%,100%': { transform: 'translateX(140%)' } },
+        bob:     { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-6px)' } },
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },

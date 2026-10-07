@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 import ComebackModal from '../components/ComebackModal'
 import DailyBonusModal from '../components/DailyBonusModal'
 import MemoryDueCard from '../components/memorize/MemoryDueCard'
+import HomeHeroScene from '../components/home/HomeHeroScene'
 import { api } from '../api/client'
 import { useAuthStore } from '../store/authStore'
 import { getTierInfo } from '../data/tiers'
@@ -69,31 +70,6 @@ function VerseLightwell() {
       </div>
       <div aria-hidden className="max-w-[740px] mx-auto h-3.5 rounded-b-xl bg-bq-spectrum shadow-[0_26px_50px_-22px_rgba(45,70,200,.35),0_26px_50px_-22px_rgba(224,53,75,.3)]" />
     </section>
-  )
-}
-
-/* ── XP spectrum bar (10 segments filling along the refraction spectrum) ── */
-function XpSpectrumBar({ pct }: { pct: number }) {
-  const segments = 10
-  const filled = Math.floor((pct / 100) * segments)
-  const partial = ((pct / 100) * segments) - filled
-  return (
-    <div className="flex gap-[5px]">
-      {Array.from({ length: segments }).map((_, i) => {
-        if (i < filled)
-          return (
-            <span key={i} className="flex-1 h-[13px] rounded bg-bq-spectrum"
-              style={{ backgroundSize: `${segments * 52}% 100%`, backgroundPosition: `${(i / (segments - 1)) * 100}% 50%` }} />
-          )
-        if (i === filled)
-          return (
-            <span key={i} className="flex-1 h-[13px] rounded bg-bq-inset border border-bq-hair relative overflow-hidden">
-              <span className="absolute inset-0 bg-bq-amber" style={{ width: `${partial * 100}%` }} />
-            </span>
-          )
-        return <span key={i} className="flex-1 h-[13px] rounded bg-bq-inset border border-bq-hair" />
-      })}
-    </div>
   )
 }
 
@@ -314,59 +290,24 @@ export default function Home() {
       <ComebackModal />
       <DailyBonusModal />
 
-      {/* ── HERO (centered, mockup-faithful) ── */}
-      <section data-testid="home-greeting-card" className="text-center pt-2 pb-1">
-        <div className="text-[11px] font-extrabold tracking-[0.24em] text-bq-amberd mb-3 uppercase">✦ {greeting}</div>
-        <h1 className="font-display text-[clamp(32px,5.6vw,56px)] font-extrabold tracking-[-0.03em] leading-[1.04] text-bq-ink">
-          {t('home.hero.ready', 'Sẵn sàng chưa,')}{' '}
-          <span data-testid="home-greeting-name" className="relative whitespace-normal sm:whitespace-nowrap break-words">
-            {userName}?
-            {/* Underline: balanced static full spectrum + a light glint sweeping across. */}
-            <span aria-hidden className="absolute left-0 right-0 bottom-[6px] h-3 -z-10 rounded-full overflow-hidden">
-              <span className="absolute inset-0 bg-bq-spectrum opacity-45 blur-[1px]" />
-              <span className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-transparent via-white/70 to-transparent blur-[1px] animate-sweep" />
-            </span>
-          </span>
-        </h1>
-
-        <div className="mt-4 flex items-center justify-center gap-x-3 gap-y-1.5 flex-wrap text-[15px] text-bq-ink2">
-          <span className="text-[11px] font-extrabold text-white px-2.5 py-1 rounded-full bg-bq-ink">LV. {lvl}</span>
-          {isMaxTier ? (
-            <span data-testid="home-greeting-max-tier" className="font-semibold text-bq-amberd">
-              👑 {t('home.maxTierReached')}
-            </span>
-          ) : (
-            <span>
-              <span data-testid="home-greeting-tier-label" className="text-bq-ink font-bold">{t(tier.current.nameKey)}</span>
-              {' → '}
-              <b className="text-bq-ink">{tier.next && t(tier.next.nameKey)}</b>
-            </span>
-          )}
-          {showWeeklyRank && (
-            <>
-              <span className="text-bq-ink3">·</span>
-              <span>{t('home.hero.weeklyRank', 'Hạng tuần')} <b className="text-bq-ink">#{wRank}</b></span>
-            </>
-          )}
-        </div>
-
-        {!isMaxTier && (
-          <div className="mt-6 max-w-[560px] mx-auto">
-            <XpSpectrumBar pct={tier.progressPct} />
-            <div className="flex justify-between mt-2.5 text-[12px] text-bq-ink2">
-              <span><b className="text-bq-ink">{totalPoints.toLocaleString()}</b> / {tier.next?.minPoints.toLocaleString()} XP</span>
-              <span>{t('home.hero.toNext', 'còn')} <b className="text-bq-ink">{tier.pointsToNext.toLocaleString()} XP</b></span>
-            </div>
-          </div>
-        )}
-
-        {/* Compact stat row (adapted: mockup keeps these in the top nav) */}
-        <div className="mt-5 inline-flex items-center gap-5 text-[13px] font-bold text-bq-ink">
-          <span className="inline-flex items-center gap-1.5"><span className="w-2 h-2 rounded-sm bg-bq-ruby" />{currentStreak} <span className="text-bq-ink3 font-semibold text-[10.5px] uppercase tracking-wide">{t('home.greeting.streak')}</span></span>
-          <span className="inline-flex items-center gap-1.5"><span className="w-2 h-2 rounded-sm bg-bq-amber" />{energy} <span className="text-bq-ink3 font-semibold text-[10.5px] uppercase tracking-wide">{t('home.greeting.energy')}</span></span>
-          <span className="inline-flex items-center gap-1.5"><span className="w-2 h-2 rounded-sm bg-bq-emerald" />{seasonPoints.toLocaleString()} <span className="text-bq-ink3 font-semibold text-[10.5px] uppercase tracking-wide">{seasonLabel}</span></span>
-        </div>
-      </section>
+      {/* ── HERO: storybook crossroads — signpost arrows are the mode entrances (LKD-15) ── */}
+      <HomeHeroScene
+        greeting={greeting}
+        userName={userName}
+        level={lvl}
+        tierId={tier.current.id}
+        tierLabel={t(tier.current.nameKey)}
+        nextTierLabel={isMaxTier ? null : (tier.next ? t(tier.next.nameKey) : null)}
+        progressPct={tier.progressPct}
+        totalPoints={totalPoints}
+        nextMinPoints={tier.next?.minPoints}
+        pointsToNext={tier.pointsToNext}
+        streak={currentStreak}
+        energy={energy}
+        seasonPoints={seasonPoints}
+        seasonLabel={seasonLabel}
+        weeklyRank={showWeeklyRank ? wRank : null}
+      />
 
       {isNewUser && (
         <div data-testid="home-start-here" className="rounded-2xl border border-bq-amber/30 bg-bq-amber/10 border-l-[3px] border-l-bq-amber px-4 py-3.5 mt-4 mb-1 flex items-center gap-3 max-w-[740px] mx-auto">

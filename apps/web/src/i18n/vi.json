@@ -792,6 +792,12 @@
     "heroDesc": "Quiz Kinh Thánh — trắc nghiệm tương tác, thi đấu và theo dõi tiến trình học Kinh Thánh của bạn."
   },
   "home": {
+    "signpost": {
+      "nav": "Ngã ba: chọn lối chơi",
+      "sceneAlt": "Ngã ba làng quê có biển chỉ đường bằng gỗ, nhà thờ nhỏ phía xa",
+      "ask": "Hôm nay đi lối nào đây?",
+      "journey": "Hành Trình"
+    },
     "greetingMorning": "Chào buổi sáng",
     "greetingAfternoon": "Chào buổi chiều",
     "greetingEvening": "Chào buổi tối",
