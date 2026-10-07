@@ -34,14 +34,14 @@ export default function NewGroupOnboarding(props: Props) {
   const tasks = [
     {
       icon: '👥',
-      iconBg: 'rgba(45,70,200,0.16)',
+      iconBg: 'rgba(47,111,176,0.16)',
       label: t('groups.onboarding.task1'),
       done: props.memberCount >= 5,
       action: props.onInvite,
     },
     {
       icon: '📚',
-      iconBg: 'rgba(14,138,107,0.16)',
+      iconBg: 'rgba(46,125,79,0.16)',
       label: t('groups.onboarding.task2'),
       done: props.quizSetsCount > 0,
       action: props.onCreateQuizSet,
@@ -98,11 +98,11 @@ export default function NewGroupOnboarding(props: Props) {
                   ? 'border-bq-emerald/30 cursor-default'
                   : 'border-bq-hair hover:border-bq-amber/40 hover:bg-bq-inset'
               }`}
-              style={task.done ? { background: 'rgba(14,138,107,0.06)' } : undefined}
+              style={task.done ? { background: 'rgba(46,125,79,0.06)' } : undefined}
             >
               <span
                 className="w-8 h-8 rounded-lg flex items-center justify-center text-[16px] shrink-0"
-                style={{ background: task.done ? 'rgba(14,138,107,0.18)' : task.iconBg }}
+                style={{ background: task.done ? 'rgba(46,125,79,0.18)' : task.iconBg }}
               >
                 {task.done ? '✅' : task.icon}
               </span>

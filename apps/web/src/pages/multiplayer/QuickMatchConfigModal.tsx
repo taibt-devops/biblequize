@@ -18,7 +18,7 @@ import {
 const COUNT_OPTIONS = [5, 10, 15, 20]
 const TIME_OPTIONS = [15, 20, 30]
 const MAX_PLAYER_OPTIONS = [10, 20, 50, 100]
-const INDIGO = '#2D46C8'
+const INDIGO = '#2F6FB0'
 
 interface Props {
   open: boolean
@@ -77,21 +77,21 @@ export default function QuickMatchConfigModal({ open, onClose, userTier = 1 }: P
       data-testid="qm-modal-backdrop"
       onClick={onClose}
       className="fixed inset-0 z-50 flex items-center justify-center px-4 py-8 overflow-y-auto"
-      style={{ background: 'rgba(22,21,27,0.5)', backdropFilter: 'blur(4px)' }}
+      style={{ background: 'rgba(29,43,34,0.5)', backdropFilter: 'blur(4px)' }}
     >
       <div
         data-testid="qm-modal"
         onClick={e => e.stopPropagation()}
         className="w-full max-w-[520px] rounded-2xl bg-bq-white"
         style={{
-          border: `1px solid #E7E4DA`,
+          border: `1px solid #C9B58C`,
           boxShadow: `var(--bq-shadow-sap)`,
         }}
       >
         {/* Header */}
         <div className="px-6 pt-5 pb-3 flex items-start justify-between">
           <div>
-            <div className="text-[10px] tracking-widest uppercase font-bold mb-1" style={{ color: '#2D46C8' }}>
+            <div className="text-[10px] tracking-widest uppercase font-bold mb-1" style={{ color: '#2F6FB0' }}>
               {t('multiplayer.config.kicker')}
             </div>
             <h2 className="font-display text-[20px] font-extrabold text-bq-ink">{t('multiplayer.config.title')}</h2>
@@ -121,9 +121,9 @@ export default function QuickMatchConfigModal({ open, onClose, userTier = 1 }: P
                     onClick={() => setMode(m.id)}
                     className="flex items-center gap-2 px-3 h-10 rounded-lg text-[12px] font-semibold transition-colors text-left"
                     style={{
-                      background: active ? hexAlpha(m.color, 0.14) : '#F2F0E7',
-                      border: `1px solid ${active ? m.color : '#E7E4DA'}`,
-                      color: active ? '#16151B' : '#6C6A62',
+                      background: active ? hexAlpha(m.color, 0.14) : '#EFE3C3',
+                      border: `1px solid ${active ? m.color : '#C9B58C'}`,
+                      color: active ? '#1D2B22' : '#4D3A1F',
                     }}
                   >
                     <span className="material-symbols-outlined" style={{ fontSize: 16, color: m.color }}>{m.icon}</span>
@@ -142,8 +142,8 @@ export default function QuickMatchConfigModal({ open, onClose, userTier = 1 }: P
                 onChange={e => setBookScope(e.target.value)}
                 className="w-full px-3 py-2.5 rounded-lg text-[13px] text-bq-ink outline-none appearance-none cursor-pointer"
                 style={{
-                  background: '#F2F0E7',
-                  border: '1px solid #E7E4DA',
+                  background: '#EFE3C3',
+                  border: '1px solid #C9B58C',
                 }}
               >
                 <BookScopeOptions />
@@ -203,7 +203,7 @@ export default function QuickMatchConfigModal({ open, onClose, userTier = 1 }: P
             <div
               data-testid="qm-error"
               className="px-3 py-2 rounded-lg text-[12px]"
-              style={{ background: 'rgba(224,53,75,0.10)', border: '1px solid rgba(224,53,75,0.25)', color: '#E0354B' }}
+              style={{ background: 'rgba(179,69,47,0.10)', border: '1px solid rgba(179,69,47,0.25)', color: '#B3452F' }}
             >
               ⚠ {error}
             </div>
@@ -216,7 +216,7 @@ export default function QuickMatchConfigModal({ open, onClose, userTier = 1 }: P
             onClick={handleSubmit}
             disabled={submitting}
             className="w-full inline-flex items-center justify-center gap-2 h-11 rounded-lg text-[14px] font-bold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
-            style={{ background: `linear-gradient(135deg, ${INDIGO} 0%, #6E86F0 100%)` }}
+            style={{ background: `linear-gradient(135deg, ${INDIGO} 0%, #2F6FB0 100%)` }}
           >
             <span className="material-symbols-outlined" style={{ fontSize: 18 }}>rocket_launch</span>
             {submitting ? t('multiplayer.config.submitting') : t('multiplayer.config.submit')}
@@ -250,7 +250,7 @@ function ChipGroup<T extends string | number>({
   onChange: (v: T) => void
 }) {
   return (
-    <div className="flex gap-1 p-1 rounded-lg" style={{ background: '#F2F0E7', border: '1px solid #E7E4DA' }}>
+    <div className="flex gap-1 p-1 rounded-lg" style={{ background: '#EFE3C3', border: '1px solid #C9B58C' }}>
       {options.map(o => {
         const active = o.value === value
         return (
@@ -260,8 +260,8 @@ function ChipGroup<T extends string | number>({
             onClick={() => onChange(o.value)}
             className="flex-1 py-1.5 rounded-md text-[12px] transition-all"
             style={{
-              background: active ? `linear-gradient(135deg, ${INDIGO}, #6E86F0)` : 'transparent',
-              color: active ? '#fff' : '#6C6A62',
+              background: active ? `linear-gradient(135deg, ${INDIGO}, #2F6FB0)` : 'transparent',
+              color: active ? '#fff' : '#4D3A1F',
               fontWeight: active ? 700 : 500,
             }}
           >
@@ -289,14 +289,14 @@ function SourceButton({
       disabled={disabled}
       className="flex items-start gap-2 p-3 rounded-lg text-left transition-colors disabled:cursor-not-allowed"
       style={{
-        background: active ? hexAlpha(INDIGO, 0.12) : '#F2F0E7',
-        border: `1px solid ${active ? INDIGO : '#E7E4DA'}`,
+        background: active ? hexAlpha(INDIGO, 0.12) : '#EFE3C3',
+        border: `1px solid ${active ? INDIGO : '#C9B58C'}`,
         opacity: disabled ? 0.5 : 1,
       }}
     >
       <span
         className="material-symbols-outlined flex-shrink-0"
-        style={{ fontSize: 18, color: active ? INDIGO : '#6E86F0', fontVariationSettings: "'FILL' 1" }}
+        style={{ fontSize: 18, color: active ? INDIGO : '#2F6FB0', fontVariationSettings: "'FILL' 1" }}
       >
         {icon}
       </span>

@@ -48,7 +48,7 @@ export function DeleteAccountSection() {
       </button>
 
       {showModal && (
-        <div data-testid="delete-account-modal" className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(22,21,27,0.45)] backdrop-blur-sm p-4">
+        <div data-testid="delete-account-modal" className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(29,43,34,0.45)] backdrop-blur-sm p-4">
           <div className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl max-w-md w-full p-6 space-y-4">
             <h2 className="font-display text-xl font-bold text-error">{t('profile.deleteAccountTitle')}</h2>
             <div className="bg-error/10 border border-error/30 rounded-lg p-4">

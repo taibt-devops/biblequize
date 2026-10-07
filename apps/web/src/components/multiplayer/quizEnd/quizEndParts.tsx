@@ -37,7 +37,7 @@ export const ActionButton: React.FC<{
       primary
         ? {
             background: 'linear-gradient(135deg, #e8a832 0%, #d97706 100%)',
-            color: '#11131e',
+            color: '#1D2B22',
             boxShadow: '0 6px 20px rgba(232,168,50,0.3)',
           }
         : danger

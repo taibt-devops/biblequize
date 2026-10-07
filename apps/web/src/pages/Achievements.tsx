@@ -30,12 +30,12 @@ interface TierInfo {
 }
 
 const TIERS: TierInfo[] = [
-  { name: 'newBeliever', icon: 'person', color: '#A8A69C', bgColor: 'bg-bq-inset', textColor: 'text-bq-ink3', borderColor: 'border-bq-hair', minPoints: 0 },
-  { name: 'seeker', icon: 'search', color: '#0E8A6B', bgColor: 'bg-bq-emerald/10', textColor: 'text-bq-emerald', borderColor: 'border-bq-emerald/30', minPoints: 500 },
-  { name: 'disciple', icon: 'school', color: '#2D46C8', bgColor: 'bg-bq-sapphire/10', textColor: 'text-bq-sapphire', borderColor: 'border-bq-sapphire/30', minPoints: 1500 },
-  { name: 'sage', icon: 'psychology', color: '#2D46C8', bgColor: 'bg-bq-sapphire/10', textColor: 'text-bq-sapphire', borderColor: 'border-bq-sapphire/30', minPoints: 4000 },
+  { name: 'newBeliever', icon: 'person', color: '#6B5530', bgColor: 'bg-bq-inset', textColor: 'text-bq-ink3', borderColor: 'border-bq-hair', minPoints: 0 },
+  { name: 'seeker', icon: 'search', color: '#2E7D4F', bgColor: 'bg-bq-emerald/10', textColor: 'text-bq-emerald', borderColor: 'border-bq-emerald/30', minPoints: 500 },
+  { name: 'disciple', icon: 'school', color: '#2F6FB0', bgColor: 'bg-bq-sapphire/10', textColor: 'text-bq-sapphire', borderColor: 'border-bq-sapphire/30', minPoints: 1500 },
+  { name: 'sage', icon: 'psychology', color: '#2F6FB0', bgColor: 'bg-bq-sapphire/10', textColor: 'text-bq-sapphire', borderColor: 'border-bq-sapphire/30', minPoints: 4000 },
   { name: 'prophet', icon: 'auto_awesome', color: '#F59E0B', bgColor: 'bg-bq-amber/10', textColor: 'text-bq-amberd', borderColor: 'border-bq-amber/30', minPoints: 8000 },
-  { name: 'apostle', icon: 'local_fire_department', color: '#E0354B', bgColor: 'bg-bq-ruby/10', textColor: 'text-bq-ruby', borderColor: 'border-bq-ruby/30', minPoints: 15000 },
+  { name: 'apostle', icon: 'local_fire_department', color: '#B3452F', bgColor: 'bg-bq-ruby/10', textColor: 'text-bq-ruby', borderColor: 'border-bq-ruby/30', minPoints: 15000 },
 ]
 
 function getCurrentTier(points: number): { current: TierInfo; next: TierInfo | null; progress: number } {

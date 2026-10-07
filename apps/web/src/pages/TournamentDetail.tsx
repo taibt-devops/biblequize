@@ -110,7 +110,7 @@ function MatchCard({
   const isPending = match.status === 'PENDING';
   const isFinal = match.roundNumber === totalRounds;
 
-  const AVATAR_COLORS = ['rgba(245,158,11,0.18)', 'rgba(45,70,200,0.16)', 'rgba(45,70,200,0.16)', 'rgba(14,138,107,0.16)', 'rgba(255,111,61,0.16)', 'rgba(45,70,200,0.16)', 'rgba(224,53,75,0.16)', 'rgba(45,70,200,0.16)'];
+  const AVATAR_COLORS = ['rgba(245,158,11,0.18)', 'rgba(47,111,176,0.16)', 'rgba(47,111,176,0.16)', 'rgba(46,125,79,0.16)', 'rgba(255,111,61,0.16)', 'rgba(47,111,176,0.16)', 'rgba(179,69,47,0.16)', 'rgba(47,111,176,0.16)'];
   const AVATAR_TEXT = ['var(--bq-amber-deep)', 'var(--bq-sapphire)', 'var(--bq-sapphire)', 'var(--bq-emerald)', 'var(--bq-amber-deep)', 'var(--bq-sapphire)', 'var(--bq-ruby)', 'var(--bq-sapphire)'];
   function avatarColor(idx: number) { return AVATAR_COLORS[idx % AVATAR_COLORS.length]; }
   function avatarText(idx: number)  { return AVATAR_TEXT[idx % AVATAR_TEXT.length]; }
@@ -145,7 +145,7 @@ function MatchCard({
           : isFinal
             ? '1px solid rgba(245,158,11,0.4)'
             : isActive
-              ? '1px solid rgba(14,138,107,0.45)'
+              ? '1px solid rgba(46,125,79,0.45)'
               : '1px solid var(--bq-hairline)',
         boxShadow: isUserMatch ? '0 0 12px rgba(245,158,11,0.18)' : 'var(--bq-shadow-soft)',
       }}
@@ -449,9 +449,9 @@ const TournamentDetail: React.FC = () => {
   })();
 
   const STATUS_CONFIG: Record<string, { label: string; bg: string; color: string; border: string }> = {
-    LOBBY:       { label: '⏰ SẮP DIỄN RA',  bg: 'rgba(45,70,200,0.12)',  color: 'var(--bq-sapphire)', border: 'rgba(45,70,200,0.35)' },
+    LOBBY:       { label: '⏰ SẮP DIỄN RA',  bg: 'rgba(47,111,176,0.12)',  color: 'var(--bq-sapphire)', border: 'rgba(47,111,176,0.35)' },
     IN_PROGRESS: { label: '⚔️ ĐANG DIỄN RA', bg: 'rgba(245,158,11,0.15)', color: 'var(--bq-amber-deep)', border: 'rgba(245,158,11,0.4)' },
-    COMPLETED:   { label: '✅ ĐÃ KẾT THÚC',  bg: 'rgba(14,138,107,0.14)',  color: 'var(--bq-emerald)', border: 'rgba(14,138,107,0.35)' },
+    COMPLETED:   { label: '✅ ĐÃ KẾT THÚC',  bg: 'rgba(46,125,79,0.14)',  color: 'var(--bq-emerald)', border: 'rgba(46,125,79,0.35)' },
   };
   const statusCfg = STATUS_CONFIG[bracket.status] ?? STATUS_CONFIG.LOBBY;
 
@@ -472,7 +472,7 @@ const TournamentDetail: React.FC = () => {
         className="rounded-2xl p-5 relative overflow-hidden bg-bq-white shadow-bq-soft"
         data-testid="tournament-detail-name"
         style={{
-          background: 'linear-gradient(135deg, rgba(245,158,11,0.12), rgba(45,70,200,0.06), var(--bq-white))',
+          background: 'linear-gradient(135deg, rgba(245,158,11,0.12), rgba(47,111,176,0.06), var(--bq-white))',
           border: '1px solid rgba(245,158,11,0.3)',
         }}
       >
@@ -492,7 +492,7 @@ const TournamentDetail: React.FC = () => {
               <span className="px-2 py-0.5 rounded-full text-[9px] font-medium" style={{ background: statusCfg.bg, color: statusCfg.color, border: `1px solid ${statusCfg.border}`, letterSpacing: '0.04em' }}>
                 {statusCfg.label}
               </span>
-              <span className="px-2 py-0.5 rounded-full text-[9px] font-medium" style={{ background: 'rgba(45,70,200,0.12)', color: 'var(--bq-sapphire)' }}>
+              <span className="px-2 py-0.5 rounded-full text-[9px] font-medium" style={{ background: 'rgba(47,111,176,0.12)', color: 'var(--bq-sapphire)' }}>
                 PUBLIC
               </span>
             </div>
@@ -574,7 +574,7 @@ const TournamentDetail: React.FC = () => {
 
       {/* ── 4 Info Cards ── */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3" data-testid="tournament-rules">
-        <div className="rounded-xl p-3 bg-bq-white shadow-bq-soft" style={{ border: '1px solid rgba(45,70,200,0.22)' }}>
+        <div className="rounded-xl p-3 bg-bq-white shadow-bq-soft" style={{ border: '1px solid rgba(47,111,176,0.22)' }}>
           <div className="text-[9px] tracking-wider mb-1.5" style={{ color: 'var(--bq-sapphire)' }}>SÁCH KINH THÁNH</div>
           <div className="text-sm font-medium mb-0.5" style={{ color: 'var(--bq-ink)' }}>📖 {bracket.bookScope ?? '1 + 2 Sa-mu-ên'}</div>
           <div className="text-[10px]" style={{ color: 'var(--bq-ink-soft)' }}>Cựu Ước · Lịch sử</div>
@@ -586,7 +586,7 @@ const TournamentDetail: React.FC = () => {
             {bracket.questionCount ?? 10} câu / trận · {bracket.timePerQuestion ?? 15}s/câu
           </div>
         </div>
-        <div className="rounded-xl p-3 bg-bq-white shadow-bq-soft" style={{ border: '1px solid rgba(224,53,75,0.22)' }}>
+        <div className="rounded-xl p-3 bg-bq-white shadow-bq-soft" style={{ border: '1px solid rgba(179,69,47,0.22)' }}>
           <div className="text-[9px] tracking-wider mb-1.5" style={{ color: 'var(--bq-ruby)' }}>CƠ CHẾ</div>
           <div className="text-sm font-medium mb-0.5" style={{ color: 'var(--bq-ink)' }}>❤️ 3 mạng / trận</div>
           <div className="text-[10px]" style={{ color: 'var(--bq-ink-soft)' }}>Hết mạng = thua</div>
@@ -657,7 +657,7 @@ const TournamentDetail: React.FC = () => {
                       {p.seed}
                     </div>
                   )}
-                  <div className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0" style={{ background: ['rgba(245,158,11,0.16)', 'rgba(45,70,200,0.14)', 'rgba(45,70,200,0.14)', 'rgba(14,138,107,0.14)'][i % 4], color: ['var(--bq-amber-deep)', 'var(--bq-sapphire)', 'var(--bq-sapphire)', 'var(--bq-emerald)'][i % 4] }}>
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0" style={{ background: ['rgba(245,158,11,0.16)', 'rgba(47,111,176,0.14)', 'rgba(47,111,176,0.14)', 'rgba(46,125,79,0.14)'][i % 4], color: ['var(--bq-amber-deep)', 'var(--bq-sapphire)', 'var(--bq-sapphire)', 'var(--bq-emerald)'][i % 4] }}>
                     {p.userName.charAt(0).toUpperCase()}
                   </div>
                   <span className="text-sm font-medium truncate" style={{ color: 'var(--bq-ink)' }}>{p.userName}</span>

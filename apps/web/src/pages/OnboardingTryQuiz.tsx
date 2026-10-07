@@ -108,7 +108,7 @@ export default function OnboardingTryQuiz() {
               <div className="relative">
                 <div className="absolute inset-0 bg-bq-action blur-3xl opacity-15 rounded-full" />
                 <div className="relative">
-                  <p data-testid="try-quiz-score" className="text-[120px] md:text-[160px] font-extrabold leading-none tracking-tighter font-display" style={{ background: 'linear-gradient(135deg, #F59E0B, #D97F06)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+                  <p data-testid="try-quiz-score" className="text-[120px] md:text-[160px] font-extrabold leading-none tracking-tighter font-display" style={{ color: '#1D2B22', textShadow: '0 0.06em 0 #FFC93C' }}>
                     {correct}/{total}
                   </p>
                   <div className="h-1.5 w-32 bg-bq-action rounded-full mt-2" />

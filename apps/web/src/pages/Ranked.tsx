@@ -255,12 +255,12 @@ export default function Ranked() {
                 )}
               </div>
 
-              <div className="bg-bq-inset border border-bq-hair rounded-full h-[7px] overflow-hidden">
+              <div className="bg-bq-track border-2 border-bq-ink rounded-full h-3 overflow-hidden">
                 <div
                   className="h-full rounded-full transition-[width] duration-500"
                   style={{
                     width: `${energyPct}%`,
-                    background: 'linear-gradient(90deg, #F59E0B, #FFE08A)',
+                    background: '#FFC93C',
                   }}
                 />
               </div>
@@ -351,7 +351,7 @@ export default function Ranked() {
               className="absolute inset-0 pointer-events-none"
               style={{
                 background:
-                  'radial-gradient(50% 70% at 80% 10%, rgba(224,53,75,0.12), transparent 60%)',
+                  'radial-gradient(50% 70% at 80% 10%, rgba(179,69,47,0.12), transparent 60%)',
               }}
             />
             <div className="relative z-10 flex flex-col h-full">

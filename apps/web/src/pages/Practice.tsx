@@ -19,10 +19,10 @@ interface Book {
 }
 
 const DIFFICULTY_OPTIONS = [
-  { key: 'all',    labelKey: 'practice.difficultyAll', icon: 'category',       color: '#6C6A62' },
-  { key: 'easy',   labelKey: 'practice.easy',          icon: 'sentiment_satisfied', color: '#0E8A6B' },
+  { key: 'all',    labelKey: 'practice.difficultyAll', icon: 'category',       color: '#4D3A1F' },
+  { key: 'easy',   labelKey: 'practice.easy',          icon: 'sentiment_satisfied', color: '#2E7D4F' },
   { key: 'medium', labelKey: 'practice.medium',        icon: 'speed',          color: '#D97F06' },
-  { key: 'hard',   labelKey: 'practice.hard',          icon: 'local_fire_department', color: '#E0354B' },
+  { key: 'hard',   labelKey: 'practice.hard',          icon: 'local_fire_department', color: '#B3452F' },
 ]
 
 const COUNT_OPTIONS = [5, 10, 20, 50]

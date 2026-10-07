@@ -95,7 +95,7 @@ export function ExplanationPanel({ questionId, scriptureRef, explanation, onCont
               className="px-4 py-2 rounded-lg text-xs font-bold"
               style={{
                 background: 'linear-gradient(135deg, #e8a832 0%, #d97706 100%)',
-                color: '#11131e',
+                color: '#1D2B22',
               }}
             >
               Tiếp tục →

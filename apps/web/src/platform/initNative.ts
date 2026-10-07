@@ -10,13 +10,13 @@ export function initNative(): void {
   // Marker class for native-only CSS (overscroll/text-select tweaks).
   document.documentElement.classList.add('capacitor')
 
-  // Status bar: dark app chrome (#11131e) with light icons, not overlaying
+  // Status bar: dark app chrome (#1D2B22) with light icons, not overlaying
   // the WebView so content starts below it (top bar still adds safe-area pad).
   import('@capacitor/status-bar')
     .then(({ StatusBar, Style }) => {
       StatusBar.setOverlaysWebView({ overlay: false }).catch(() => {})
       StatusBar.setStyle({ style: Style.Dark }).catch(() => {})
-      StatusBar.setBackgroundColor({ color: '#11131e' }).catch(() => {})
+      StatusBar.setBackgroundColor({ color: '#1D2B22' }).catch(() => {})
     })
     .catch(() => {})
 

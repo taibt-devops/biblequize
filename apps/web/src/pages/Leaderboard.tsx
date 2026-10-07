@@ -173,8 +173,7 @@ export default function Leaderboard() {
                     </div>
                   )}
                   <div
-                    className={`${layout.avatar} rounded-full overflow-hidden border-2 ${isFirst ? 'shadow-[0_0_20px_rgba(232,168,50,0.4)]' : ''}`}
-                    style={{ borderColor: isFirst ? '#D97F06' : tierColor + '99' }}
+                    className={`${layout.avatar} rounded-full overflow-hidden border-[3px] border-bq-ink bg-bq-white`}
                   >
                     {(() => {
                       const r = resolveAvatar(player.avatarUrl, player.name)
@@ -184,8 +183,8 @@ export default function Leaderboard() {
                       )
                       return (
                         <div
-                          className="w-full h-full flex items-center justify-center text-sm md:text-xl font-medium text-bq-ink"
-                          style={{ background: tierColor }}
+                          className="w-full h-full flex items-center justify-center text-sm md:text-xl font-extrabold text-bq-ink"
+                          style={{ background: `${tierColor}26` }}
                         >
                           {r.initial}
                         </div>
@@ -194,8 +193,7 @@ export default function Leaderboard() {
                   </div>
                   {/* Arabic-numeral rank badge — replaces La Mã (LB-P1-2) */}
                   <div
-                    className="absolute -bottom-1 md:-bottom-1.5 left-1/2 -translate-x-1/2 w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center font-medium text-[10px] md:text-xs text-bq-ink border-2 border-bq-paper"
-                    style={{ background: isFirst ? '#D97F06' : tierColor }}
+                    className={`absolute -bottom-1 md:-bottom-1.5 left-1/2 -translate-x-1/2 w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center font-extrabold text-[10px] md:text-xs text-bq-ink border-2 border-bq-ink ${isFirst ? 'bg-bq-amber' : 'bg-bq-white'}`}
                   >
                     {layout.rank}
                   </div>
@@ -203,25 +201,22 @@ export default function Leaderboard() {
 
                 {/* Name + tier name */}
                 <p className="font-medium text-[11px] md:text-sm text-center truncate w-full text-bq-ink">{player.name}</p>
-                <p className="text-[10px] md:text-xs mb-1.5 md:mb-2 truncate w-full text-center" style={{ color: tierColor }}>
+                <p className="text-[10px] md:text-xs font-bold mb-1.5 md:mb-2 truncate w-full text-center" style={{ color: tierColor }}>
                   {t(tier.nameKey)}
                 </p>
 
                 {/* Bục — tier-tinted bg, height varies by rank */}
                 <div
-                  className={`w-full ${layout.bucket} rounded-t-lg border-t flex flex-col items-center justify-center px-1 md:px-2`}
-                  style={{
-                    background: isFirst ? 'rgba(232,168,50,0.12)' : `${tierColor}1a`,
-                    borderTopColor: isFirst ? 'rgba(232,168,50,0.4)' : `${tierColor}66`,
-                  }}
+                  className={`w-full ${layout.bucket} rounded-t-2xl border-[3px] border-b-0 border-bq-ink flex flex-col items-center justify-center px-1 md:px-2 ${
+                    isFirst ? 'bg-bq-amber' : layout.rank === 2 ? 'bg-bq-parch' : 'bg-bq-track'
+                  }`}
                 >
                   <div
-                    className={`${isFirst ? 'text-base md:text-2xl' : 'text-xs md:text-lg'} font-medium`}
-                    style={{ color: isFirst ? '#D97F06' : tierColor }}
+                    className={`${isFirst ? 'text-base md:text-2xl' : 'text-xs md:text-lg'} font-extrabold text-bq-ink`}
                   >
                     {points}
                   </div>
-                  <div className="text-[10px] text-bq-ink2/70 mt-0.5 truncate w-full text-center">
+                  <div className="text-[10px] text-bq-ink2 mt-0.5 truncate w-full text-center">
                     {t('leaderboard.points').toLowerCase()}{questions ? ` · ${questions} câu` : ''}
                   </div>
                 </div>
@@ -414,7 +409,7 @@ function LeaderboardListRow({ rank, name, points, avatarUrl, isMe, testId }: Lea
         className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-bq-amber/10 rounded-2xl outline outline-bq-amber/40 shadow-bq-soft"
       >
         <div className="w-7 md:w-8 text-center font-black text-bq-amberd">{rank}</div>
-        <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-bq-amber shadow-bq-soft overflow-hidden flex items-center justify-center text-bq-ink font-bold" style={{ background: tierColor }}>
+        <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-bq-amber shadow-bq-soft overflow-hidden flex items-center justify-center text-bq-ink font-bold" style={{ background: `${tierColor}26` }}>
           {renderAvatarBody()}
         </div>
         <div className="flex-1 min-w-0">
@@ -440,13 +435,13 @@ function LeaderboardListRow({ rank, name, points, avatarUrl, isMe, testId }: Lea
       className="flex items-center gap-3 md:gap-4 p-3 md:p-5 bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl hover:bg-bq-inset transition-all group"
     >
       <div className="w-7 md:w-8 text-center font-black text-bq-ink2 group-hover:text-bq-ink transition-colors text-sm">{rank}</div>
-      <div className="w-9 h-9 md:w-10 md:h-10 rounded-full overflow-hidden flex items-center justify-center text-sm font-bold text-bq-ink" style={{ background: tierColor }}>
+      <div className="w-9 h-9 md:w-10 md:h-10 rounded-full overflow-hidden flex items-center justify-center text-sm font-bold text-bq-ink border-2 border-bq-ink" style={{ background: `${tierColor}26` }}>
         {renderAvatarBody()}
       </div>
       <div className="flex-1 min-w-0">
         <h3 className="font-bold text-xs md:text-sm text-bq-ink truncate">{name}</h3>
         <div className="flex items-center gap-2 mt-0.5 text-[10px] md:text-[11px]">
-          <span style={{ color: tierColor }}>{tierName}</span>
+          <span className="font-bold" style={{ color: tierColor }}>{tierName}</span>
         </div>
       </div>
       <div className="text-right">

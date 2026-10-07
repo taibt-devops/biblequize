@@ -48,7 +48,7 @@ export default function WeeklyMultiplayerStatsWidget() {
     <div
       className="p-4 rounded-xl bg-bq-white border border-bq-hair shadow-bq-soft"
     >
-      <div className="text-[10px] tracking-widest uppercase font-bold mb-2" style={{ color: '#2D46C8' }}>
+      <div className="text-[10px] tracking-widest uppercase font-bold mb-2" style={{ color: '#2F6FB0' }}>
         {t('multiplayer.stats.weekHeader')}
       </div>
       <div className="flex items-baseline justify-between mb-3">

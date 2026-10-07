@@ -255,7 +255,7 @@ export default function Login() {
                   </label>
                   <a
                     href="#"
-                    className="text-[10px] uppercase tracking-tighter font-bold text-bq-amberd/70 hover:text-bq-amberd transition-colors"
+                    className="text-xs font-bold text-bq-amberd underline underline-offset-2 hover:text-bq-ink transition-colors"
                   >
                     {t('auth.forgotPassword')}
                   </a>

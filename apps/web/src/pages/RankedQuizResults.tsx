@@ -440,7 +440,7 @@ export default function RankedQuizResults({
                 <li key={q.id} className="flex items-start gap-2.5 pt-2.5 first:pt-0 border-t border-bq-hair first:border-t-0">
                   <span
                     className="w-[22px] h-[22px] rounded-[7px] grid place-items-center text-[11px] font-bold shrink-0 mt-0.5 text-bq-ruby"
-                    style={{ background: 'rgba(224,53,75,0.10)' }}
+                    style={{ background: 'rgba(179,69,47,0.10)' }}
                   >
                     {orderNum}
                   </span>

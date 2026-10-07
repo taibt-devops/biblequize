@@ -100,7 +100,7 @@ export default function SeasonCard() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(50% 70% at 100% 0%, rgba(45,70,200,0.06), transparent 60%)',
+            'radial-gradient(50% 70% at 100% 0%, rgba(47,111,176,0.06), transparent 60%)',
         }}
       />
 
@@ -137,12 +137,12 @@ export default function SeasonCard() {
         </p>
 
         <div className="flex items-center gap-3.5 mt-4">
-          <div className="flex-1 bg-bq-inset border border-bq-hair rounded-full h-1.5 overflow-hidden">
+          <div className="flex-1 bg-bq-track border-2 border-bq-ink rounded-full h-3 overflow-hidden">
             <div
               className="h-full rounded-full transition-[width] duration-700"
               style={{
                 width: `${champPct}%`,
-                background: 'linear-gradient(90deg,#2D46C8,#0E8A6B 34%,#F59E0B 64%,#E0354B)',
+                background: '#FFC93C',
               }}
             />
           </div>

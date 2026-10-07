@@ -45,7 +45,7 @@ export default function ComebackModal() {
   const { rewardTier, daysSinceLastPlay, reward } = data
 
   return (
-    <div data-testid="comeback-modal" className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(22,21,27,0.45)] backdrop-blur-sm">
+    <div data-testid="comeback-modal" className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(29,43,34,0.45)] backdrop-blur-sm">
       <div className="bg-bq-white rounded-2xl p-8 max-w-md w-full mx-4 border border-bq-hair shadow-bq-soft text-center space-y-6">
         {/* Celebration */}
         <div className="text-5xl mb-2">🎉</div>

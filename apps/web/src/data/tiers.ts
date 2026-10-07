@@ -42,8 +42,8 @@ export const TIERS: Tier[] = [
     maxPoints: 999,
     iconMaterial: 'spa',
     iconEmoji: '🌱',
-    colorHex: '#919098',
-    colorTailwind: 'text-outline',
+    colorHex: '#6B5530',
+    colorTailwind: 'text-[#6B5530]',
   },
   {
     id: 2,
@@ -52,8 +52,8 @@ export const TIERS: Tier[] = [
     maxPoints: 4_999,
     iconMaterial: 'eco',
     iconEmoji: '🌿',
-    colorHex: '#4ade80',
-    colorTailwind: 'text-green-400',
+    colorHex: '#2E7D4F',
+    colorTailwind: 'text-[#2E7D4F]',
   },
   {
     id: 3,
@@ -62,8 +62,8 @@ export const TIERS: Tier[] = [
     maxPoints: 14_999,
     iconMaterial: 'scrollable_header',
     iconEmoji: '📜',
-    colorHex: '#4a9eff',
-    colorTailwind: 'text-[#4a9eff]',
+    colorHex: '#2F6FB0',
+    colorTailwind: 'text-[#2F6FB0]',
   },
   {
     id: 4,
@@ -72,8 +72,8 @@ export const TIERS: Tier[] = [
     maxPoints: 39_999,
     iconMaterial: 'lightbulb',
     iconEmoji: '🪔',
-    colorHex: '#9b59b6',
-    colorTailwind: 'text-[#9b59b6]',
+    colorHex: '#7A4AA0',
+    colorTailwind: 'text-[#7A4AA0]',
   },
   {
     id: 5,
@@ -82,8 +82,8 @@ export const TIERS: Tier[] = [
     maxPoints: 99_999,
     iconMaterial: 'local_fire_department',
     iconEmoji: '🔥',
-    colorHex: '#f8bd45',
-    colorTailwind: 'text-secondary',
+    colorHex: '#A8690C',
+    colorTailwind: 'text-[#A8690C]',
   },
   {
     id: 6,
@@ -92,8 +92,8 @@ export const TIERS: Tier[] = [
     maxPoints: Infinity,
     iconMaterial: 'workspace_premium',
     iconEmoji: '👑',
-    colorHex: '#ff6b6b',
-    colorTailwind: 'text-[#ff6b6b]',
+    colorHex: '#B3452F',
+    colorTailwind: 'text-[#B3452F]',
   },
 ]
 

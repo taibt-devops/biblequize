@@ -23,11 +23,11 @@ interface Props {
 // emerald, sky, purple, orange, teal) so any 3 indices look distinct.
 const GRADIENTS = [
   'linear-gradient(135deg, #F59E0B 0%, #D97F06 100%)', // 0 — amber
-  'linear-gradient(135deg, #46C89A 0%, #0E8A6B 100%)', // 1 — emerald
-  'linear-gradient(135deg, #6E86F0 0%, #2D46C8 100%)', // 2 — sapphire
-  'linear-gradient(135deg, #2D46C8 0%, #1E2E86 100%)', // 3 — deep sapphire
-  'linear-gradient(135deg, #FF7A5A 0%, #E0354B 100%)', // 4 — ruby/ember
-  'linear-gradient(135deg, #0E8A6B 0%, #0A6650 100%)', // 5 — deep emerald
+  'linear-gradient(135deg, #46C89A 0%, #2E7D4F 100%)', // 1 — emerald
+  'linear-gradient(135deg, #2F6FB0 0%, #2F6FB0 100%)', // 2 — sapphire
+  'linear-gradient(135deg, #2F6FB0 0%, #1E2E86 100%)', // 3 — deep sapphire
+  'linear-gradient(135deg, #FF7A5A 0%, #B3452F 100%)', // 4 — ruby/ember
+  'linear-gradient(135deg, #2E7D4F 0%, #0A6650 100%)', // 5 — deep emerald
 ];
 
 // 32-bit FNV-1a hash for better distribution than the prior shift-add

@@ -127,7 +127,7 @@ export default function UserDropdown({
               className="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold shrink-0"
               style={
                 tierColorHex
-                  ? { background: tierColorHex, color: '#11131e' }
+                  ? { background: tierColorHex, color: '#FFF8E7' }
                   : undefined
               }
             >
@@ -188,11 +188,10 @@ export default function UserDropdown({
         ) : (
           <span
             data-testid="user-dropdown-avatar-initial"
-            className="w-full h-full rounded-full grid place-items-center text-[15px] font-extrabold text-[#1a1208]"
+            className="w-full h-full rounded-full grid place-items-center text-[15px] font-extrabold text-bq-ink"
             style={{
-              background: 'linear-gradient(135deg, #e8a832 0%, #c98a1c 70%, #7a5818 100%)',
-              boxShadow:
-                '0 0 16px rgba(232,168,50,0.30), inset 0 -4px 10px rgba(122,88,24,0.4), inset 0 2px 4px rgba(255,220,140,0.5)',
+              background: '#FFC93C',
+              border: '3px solid #1D2B22',
             }}
           >
             {displayName.charAt(0).toUpperCase()}
@@ -247,7 +246,7 @@ export default function UserDropdown({
                   data-active={lang === 'vi' ? 'true' : 'false'}
                   onClick={() => toggleLang('vi')}
                   className={`px-2 py-0.5 rounded text-[10px] font-bold transition-colors ${
-                    lang === 'vi' ? 'bg-bq-ink text-white' : 'text-bq-ink2 hover:text-bq-ink'
+                    lang === 'vi' ? 'bg-bq-amber text-bq-ink border-2 border-bq-ink' : 'text-bq-ink2 hover:text-bq-ink'
                   }`}
                 >
                   VI
@@ -257,7 +256,7 @@ export default function UserDropdown({
                   data-active={lang === 'en' ? 'true' : 'false'}
                   onClick={() => toggleLang('en')}
                   className={`px-2 py-0.5 rounded text-[10px] font-bold transition-colors ${
-                    lang === 'en' ? 'bg-bq-ink text-white' : 'text-bq-ink2 hover:text-bq-ink'
+                    lang === 'en' ? 'bg-bq-amber text-bq-ink border-2 border-bq-ink' : 'text-bq-ink2 hover:text-bq-ink'
                   }`}
                 >
                   EN

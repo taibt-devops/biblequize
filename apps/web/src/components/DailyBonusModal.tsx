@@ -55,7 +55,7 @@ export default function DailyBonusModal() {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(22,21,27,0.45)] backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(29,43,34,0.45)] backdrop-blur-sm">
       <div className="bg-bq-white rounded-2xl p-8 max-w-sm w-full mx-4 border border-bq-hair shadow-bq-soft text-center space-y-5">
         <div className="text-5xl">{BONUS_ICONS[data.bonusType ?? ''] ?? '🎁'}</div>
         <div>

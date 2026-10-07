@@ -41,6 +41,28 @@
   --bq-wood-lt:      #C68A4E;   /* biển gỗ */
   --bq-wood-ink:     #2B1A08;   /* chữ trên biển gỗ */
 
+  /* RGB channels of the primitives above, for Tailwind opacity modifiers
+     (bg-bq-amber/10). Keep in sync with the hex values. */
+  --bq-paper-rgb: 239 227 195;
+  --bq-white-rgb: 255 248 231;
+  --bq-paper-sunk-rgb: 243 230 196;
+  --bq-hairline-rgb: 201 181 140;
+  --bq-ink-rgb: 29 43 34;
+  --bq-ink-soft-rgb: 77 58 31;
+  --bq-ink-faint-rgb: 107 85 48;
+  --bq-sapphire-rgb: 47 111 176;
+  --bq-emerald-rgb: 46 125 79;
+  --bq-amber-rgb: 255 201 60;
+  --bq-amber-deep-rgb: 138 90 18;
+  --bq-ruby-rgb: 179 69 47;
+  --bq-ember-rgb: 232 116 59;
+  --bq-leaf-rgb: 217 240 200;
+  --bq-wood-rgb: 138 90 43;
+  --bq-wood-lt-rgb: 198 138 78;
+  --bq-wood-ink-rgb: 43 26 8;
+  --bq-parch-rgb: 249 236 200;
+  --bq-track-rgb: 240 223 184;
+
   /* ---------- 2. SEMANTIC ---------- */
 
   /* Backgrounds & borders */
@@ -149,4 +171,5 @@
    ===================================================================== */
 [data-season="advent"]{   /* Mùa Vọng: xanh đêm + vàng kim */
   --bq-sapphire:#1E3A8A; --bq-ruby:#B45309; --bq-amber:#FBBF24;
+  --bq-sapphire-rgb:30 58 138; --bq-ruby-rgb:180 83 9; --bq-amber-rgb:251 191 36;
 }

@@ -11,13 +11,13 @@ import { api } from '../../api/client'
 import QuickMatchConfigModal from './QuickMatchConfigModal'
 
 const QM = {
-  primary: '#2D46C8',
-  primaryLight: '#2D46C8',
-  primaryLighter: '#2D46C8',
-  gradient: 'linear-gradient(135deg, #2D46C8 0%, #6E86F0 100%)',
-  tintBg: 'rgba(45,70,200,0.10)',
-  tintBgSoft: 'rgba(45,70,200,0.03)',
-  tintBorder: 'rgba(45,70,200,0.22)',
+  primary: '#2F6FB0',
+  primaryLight: '#2F6FB0',
+  primaryLighter: '#2F6FB0',
+  gradient: 'linear-gradient(135deg, #2F6FB0 0%, #2F6FB0 100%)',
+  tintBg: 'rgba(47,111,176,0.10)',
+  tintBgSoft: 'rgba(47,111,176,0.03)',
+  tintBorder: 'rgba(47,111,176,0.22)',
 }
 
 interface Props {
@@ -51,13 +51,13 @@ export default function QuickMatchEntryCard({ userTier = 1 }: Props) {
       >
         <div
           className="absolute -right-12 -top-12 w-48 h-48 rounded-full pointer-events-none"
-          style={{ background: 'radial-gradient(circle, rgba(45,70,200,0.10) 0%, transparent 70%)' }}
+          style={{ background: 'radial-gradient(circle, rgba(47,111,176,0.10) 0%, transparent 70%)' }}
         />
 
         {/* MỚI badge with shimmer */}
         <div
           className="absolute top-5 right-5 flex items-center gap-1 px-2 py-1 rounded-md"
-          style={{ background: 'rgba(45,70,200,0.12)', border: '1px solid rgba(45,70,200,0.30)' }}
+          style={{ background: 'rgba(47,111,176,0.12)', border: '1px solid rgba(47,111,176,0.30)' }}
         >
           <span
             className="material-symbols-outlined animate-pulse"
@@ -141,9 +141,9 @@ function Tag({ icon, label }: { icon: string; label: string }) {
     <span
       className="px-2 py-1 rounded-md text-[10px] font-semibold flex items-center gap-1"
       style={{
-        background: 'rgba(45,70,200,0.08)',
-        border: '1px solid rgba(45,70,200,0.18)',
-        color: '#2D46C8',
+        background: 'rgba(47,111,176,0.08)',
+        border: '1px solid rgba(47,111,176,0.18)',
+        color: '#2F6FB0',
       }}
     >
       <span className="material-symbols-outlined" style={{ fontSize: 12 }}>{icon}</span>

@@ -88,7 +88,7 @@ export default function GroupQuickInfoSidebar({ groupId }: { groupId: string }) 
     <div
       data-testid="group-quick-info-sidebar"
       className="rounded-xl p-3 border border-bq-emerald/20"
-      style={{ background: 'rgba(14,138,107,0.06)' }}
+      style={{ background: 'rgba(46,125,79,0.06)' }}
     >
       <div className="text-[10px] font-bold text-bq-emerald uppercase tracking-wider mb-2 flex items-center gap-1.5">
         <span className="text-base animate-pulse">🟢</span>

@@ -75,8 +75,8 @@ const SequentialLobbyView: React.FC<Props> = ({
         </button>
         <div className="flex items-center gap-2.5 flex-1 min-w-0">
           <div className="w-8 h-8 rounded-lg grid place-items-center flex-shrink-0"
-            style={{ background: 'linear-gradient(135deg, rgba(45,70,200,0.16) 0%, rgba(45,70,200,0.06) 100%)', border: '1px solid rgba(45,70,200,0.3)' }}>
-            <span className="material-symbols-outlined text-[18px]" style={{ color: '#2D46C8', ...FILL }}>play_circle</span>
+            style={{ background: 'linear-gradient(135deg, rgba(47,111,176,0.16) 0%, rgba(47,111,176,0.06) 100%)', border: '1px solid rgba(47,111,176,0.3)' }}>
+            <span className="material-symbols-outlined text-[18px]" style={{ color: '#2F6FB0', ...FILL }}>play_circle</span>
           </div>
           <div className="min-w-0">
             <h2 className="font-display text-[18px] font-extrabold truncate">Phòng "{roomName}"</h2>
@@ -88,12 +88,12 @@ const SequentialLobbyView: React.FC<Props> = ({
       {/* Lobby card */}
       <div className="rounded-2xl p-5 mb-4 bg-bq-white shadow-bq-soft"
         style={{
-          border: '1px solid #E7E4DA',
+          border: '1px solid #C9B58C',
         }}
       >
         {/* Room code wrap */}
         <div className="rounded-xl px-4 py-3.5 mb-4 flex items-center justify-between"
-          style={{ background: '#F2F0E7', border: '1px solid rgba(245,158,11,0.25)' }}>
+          style={{ background: '#EFE3C3', border: '1px solid rgba(245,158,11,0.25)' }}>
           <div className="flex-1 min-w-0">
             <div className="text-[10px] uppercase tracking-[1px] text-bq-ink2 mb-0.5">Mã tham gia · Chia sẻ với anh chị em</div>
             <div className="text-[22px] font-extrabold tabular-nums" style={{ color: '#D97F06', letterSpacing: 4 }}>{roomCode}</div>
@@ -114,8 +114,8 @@ const SequentialLobbyView: React.FC<Props> = ({
             { icon: 'forum', value: 'Tuần tự', label: 'Có pause' },
           ].map((c, i) => (
             <div key={i} className="rounded-lg px-3 py-2.5 text-center"
-              style={{ background: '#F2F0E7', border: '1px solid #E7E4DA' }}>
-              <span className="material-symbols-outlined text-[16px] block mb-1" style={{ color: '#2D46C8' }}>{c.icon}</span>
+              style={{ background: '#EFE3C3', border: '1px solid #C9B58C' }}>
+              <span className="material-symbols-outlined text-[16px] block mb-1" style={{ color: '#2F6FB0' }}>{c.icon}</span>
               <div className="text-[14px] font-extrabold">{c.value}</div>
               <div className="text-[9px] uppercase tracking-wide text-bq-ink2 mt-0.5">{c.label}</div>
             </div>
@@ -148,9 +148,9 @@ const SequentialLobbyView: React.FC<Props> = ({
                     background: isHostP
                       ? 'linear-gradient(135deg, #F59E0B 0%, #D97F06 100%)'
                       : ready
-                        ? 'linear-gradient(135deg, #46C89A 0%, #0E8A6B 100%)'
-                        : '#F2F0E7',
-                    color: isHostP || ready ? '#FFFFFF' : '#6C6A62',
+                        ? 'linear-gradient(135deg, #46C89A 0%, #2E7D4F 100%)'
+                        : '#EFE3C3',
+                    color: isHostP || ready ? '#FFFFFF' : '#4D3A1F',
                   }}>
                   {p.username[0]?.toUpperCase()}
                 </div>
@@ -179,7 +179,7 @@ const SequentialLobbyView: React.FC<Props> = ({
             <div className="flex gap-2.5 mb-2.5">
               <button onClick={onLeave}
                 className="rounded-xl px-4 py-3.5 text-[13px] font-bold"
-                style={{ background: '#F2F0E7', color: '#6C6A62', border: '1px solid #E7E4DA' }}>
+                style={{ background: '#EFE3C3', color: '#4D3A1F', border: '1px solid #C9B58C' }}>
                 Đóng phòng
               </button>
               <button onClick={onStart}
@@ -194,7 +194,7 @@ const SequentialLobbyView: React.FC<Props> = ({
           </>
         ) : (
           <div className="rounded-lg px-4 py-3 flex items-center justify-center gap-1.5 text-[12px]"
-            style={{ background: 'rgba(45,70,200,0.06)', border: '1px solid rgba(45,70,200,0.22)', color: '#2D46C8' }}>
+            style={{ background: 'rgba(47,111,176,0.06)', border: '1px solid rgba(47,111,176,0.22)', color: '#2F6FB0' }}>
             <span className="w-1.5 h-1.5 rounded-full bg-bq-sapphire animate-pulse" />
             Đang chờ trưởng phòng bắt đầu...
           </div>

@@ -174,8 +174,8 @@ export default function GroupAnalyticsTab({ groupId, groupCreatedAt, groupMember
             label={t('groups.kpiActiveWeek')}
             value={activeWeek}
             unit={`/ ${totalMembers}`}
-            borderColor="rgba(14,138,107,0.3)"
-            textColor="#0E8A6B"
+            borderColor="rgba(46,125,79,0.3)"
+            textColor="#2E7D4F"
             tooltip={t('groups.kpiTooltip.activeWeek', { active: activeWeek, total: totalMembers })}
           />
           <KpiCard
@@ -194,8 +194,8 @@ export default function GroupAnalyticsTab({ groupId, groupCreatedAt, groupMember
             testId="kpi-tab-accuracy"
             label={t('groups.kpiAccuracy')}
             value={`${accuracy}%`}
-            borderColor="rgba(45,70,200,0.3)"
-            textColor="#2D46C8"
+            borderColor="rgba(47,111,176,0.3)"
+            textColor="#2F6FB0"
             tooltip={t('groups.kpiTooltip.accuracy', { sample: activeWeek })}
           />
           <KpiCard

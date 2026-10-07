@@ -28,9 +28,9 @@ function statusBadge(t: TFunction, status: PublishStatus, savedAgo: number | nul
     else label = t('quizSet.editor.topbar.draftSavedAgo', { ago: formatAgo(t, savedAgo) })
     return { bg: 'rgba(245,158,11,0.12)', color: COLOR.warning, label }
   }
-  if (status === 'PUBLISHED') return { bg: 'rgba(14,138,107,0.12)', color: COLOR.success, label: t('quizSet.editor.topbar.published') }
+  if (status === 'PUBLISHED') return { bg: 'rgba(46,125,79,0.12)', color: COLOR.success, label: t('quizSet.editor.topbar.published') }
   if (status === 'ARCHIVED')  return { bg: 'rgba(168,166,156,0.16)', color: COLOR.textMuted, label: t('quizSet.editor.topbar.archived') }
-  return { bg: 'rgba(224,53,75,0.12)', color: COLOR.danger, label: t('quizSet.editor.topbar.deleted') }
+  return { bg: 'rgba(179,69,47,0.12)', color: COLOR.danger, label: t('quizSet.editor.topbar.deleted') }
 }
 
 function formatAgo(t: TFunction, sec: number): string {

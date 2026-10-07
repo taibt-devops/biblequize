@@ -197,7 +197,7 @@ export default function CreateRoom() {
                           background: active
                             ? `linear-gradient(135deg, ${hexToRgba(m.color, 0.18)}, ${hexToRgba(m.color, 0.04)})`
                             : undefined,
-                          border: `1.5px solid ${active ? m.color : '#E7E4DA'}`,
+                          border: `1.5px solid ${active ? m.color : '#C9B58C'}`,
                           boxShadow: active ? `0 0 0 1px ${m.color}, 0 10px 28px -10px ${m.color}` : undefined,
                         }}
                       >
@@ -256,14 +256,14 @@ export default function CreateRoom() {
                         background: active
                           ? 'linear-gradient(135deg, rgba(245,158,11,0.18), rgba(245,158,11,0.06))'
                           : undefined,
-                        border: `1.5px solid ${active ? 'rgba(245,158,11,0.5)' : '#E7E4DA'}`,
+                        border: `1.5px solid ${active ? 'rgba(245,158,11,0.5)' : '#C9B58C'}`,
                       }}
                     >
                       <span
                         className={`inline-flex items-center justify-center rounded-[9px] ${active ? 'text-bq-amber' : 'text-bq-ink3'}`}
                         style={{
                           width: 36, height: 36,
-                          background: active ? 'rgba(245,158,11,0.2)' : '#F2F0E7',
+                          background: active ? 'rgba(245,158,11,0.2)' : '#EFE3C3',
                         }}
                       >
                         <span className="material-symbols-outlined" style={{ fontSize: 18 }}>{src.icon}</span>
@@ -305,7 +305,7 @@ export default function CreateRoom() {
                               background: active
                                 ? 'linear-gradient(135deg, rgba(245,158,11,0.12), rgba(245,158,11,0.04))'
                                 : undefined,
-                              border: `1.5px solid ${active ? 'rgba(245,158,11,0.5)' : '#E7E4DA'}`,
+                              border: `1.5px solid ${active ? 'rgba(245,158,11,0.5)' : '#C9B58C'}`,
                             }}
                           >
                             <span
@@ -333,7 +333,7 @@ export default function CreateRoom() {
                 <div className="mt-3.5 flex items-center gap-3 p-3.5 rounded-[12px] text-[13px] text-bq-ink2 bg-bq-inset border border-bq-hair">
                   <span
                     className="inline-flex items-center justify-center rounded-[10px] flex-shrink-0 text-bq-sapphire"
-                    style={{ width: 42, height: 42, background: 'rgba(45,70,200,0.15)' }}
+                    style={{ width: 42, height: 42, background: 'rgba(47,111,176,0.15)' }}
                   >
                     <span className="material-symbols-outlined" style={{ fontSize: 20 }}>info</span>
                   </span>
@@ -390,8 +390,8 @@ export default function CreateRoom() {
               <div
                 className="mt-4 flex items-center gap-2 px-3.5 py-2.5 rounded-[10px] text-[13px] text-bq-sapphire"
                 style={{
-                  background: 'rgba(45,70,200,0.08)',
-                  border: '1px solid rgba(45,70,200,0.22)',
+                  background: 'rgba(47,111,176,0.08)',
+                  border: '1px solid rgba(47,111,176,0.22)',
                 }}
               >
                 <span className="material-symbols-outlined" style={{ fontSize: 16 }}>schedule</span>

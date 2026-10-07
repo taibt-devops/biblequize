@@ -131,7 +131,7 @@ export default function ShareCard({
               {/* Score circle */}
               <div className="relative w-28 h-28 mx-auto">
                 <svg className="w-28 h-28 -rotate-90" viewBox="0 0 100 100">
-                  <circle cx="50" cy="50" r="45" fill="transparent" stroke="#E7E4DA" strokeWidth="6" />
+                  <circle cx="50" cy="50" r="45" fill="transparent" stroke="#C9B58C" strokeWidth="6" />
                   <circle
                     cx="50" cy="50" r="45" fill="transparent"
                     stroke="#F59E0B" strokeWidth="6" strokeLinecap="round"

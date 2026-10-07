@@ -47,7 +47,7 @@ export default function AIRewriteModal({ open, current, remaining, limit, onClos
 
   return (
     <div onClick={onClose} style={{
-      position: 'fixed', inset: 0, background: 'rgba(22,21,27,0.45)', zIndex: 50,
+      position: 'fixed', inset: 0, background: 'rgba(29,43,34,0.45)', zIndex: 50,
       display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 16,
     }}>
       <div onClick={e => e.stopPropagation()} style={{
@@ -95,7 +95,7 @@ export default function AIRewriteModal({ open, current, remaining, limit, onClos
 
           {error && (
             <div style={{
-              background: 'rgba(224,53,75,0.10)', border: `1px solid rgba(224,53,75,0.30)`,
+              background: 'rgba(179,69,47,0.10)', border: `1px solid rgba(179,69,47,0.30)`,
               color: COLOR.danger, padding: '8px 12px', borderRadius: 7, fontSize: 12, marginBottom: 12,
             }}>{error}</div>
           )}

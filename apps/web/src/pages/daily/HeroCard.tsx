@@ -210,7 +210,7 @@ export function HeroCard(props: HeroCardProps) {
                   <stop offset="100%" stopColor="#D97F06" />
                 </linearGradient>
               </defs>
-              <circle cx="80" cy="80" r={ringRadius} fill="none" stroke="rgba(22,21,27,0.08)" strokeWidth="12" />
+              <circle cx="80" cy="80" r={ringRadius} fill="none" stroke="rgba(29,43,34,0.08)" strokeWidth="12" />
               <circle
                 cx="80"
                 cy="80"
@@ -230,10 +230,8 @@ export function HeroCard(props: HeroCardProps) {
                   data-testid="daily-score-display"
                   className="text-[42px] font-extrabold leading-none"
                   style={{
-                    background: 'linear-gradient(135deg, #D97F06 0%, #F59E0B 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
+                    color: '#1D2B22',
+                    textShadow: '0 0.06em 0 #FFC93C',
                   }}
                 >
                   {done.correctCount}

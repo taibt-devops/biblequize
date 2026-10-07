@@ -76,7 +76,7 @@ export function EditProfileModal({ open, onClose, profile }: {
     <div
       data-testid="edit-profile-modal"
       className="fixed inset-0 z-50 flex items-center justify-center p-4"
-      style={{ background: 'rgba(22,21,27,0.45)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)' }}
+      style={{ background: 'rgba(29,43,34,0.45)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)' }}
       onMouseDown={(e) => { if (e.target === e.currentTarget) onClose() }}
     >
       <form
@@ -107,7 +107,7 @@ export function EditProfileModal({ open, onClose, profile }: {
             style={{
               border: `2px solid ${GOLD}`,
               boxShadow: `0 0 24px ${GOLD}40, 0 8px 20px rgba(20,20,30,0.12)`,
-              background: resolved.kind === 'preset' ? resolved.preset.bg : 'linear-gradient(135deg, #F2F0E7, #FFFFFF)',
+              background: resolved.kind === 'preset' ? resolved.preset.bg : 'linear-gradient(135deg, #EFE3C3, #FFFFFF)',
             }}
           >
             {resolved.kind === 'img' && (

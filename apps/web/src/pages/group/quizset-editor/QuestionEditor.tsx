@@ -129,7 +129,7 @@ export default function QuestionEditor({
           )}
           <button onClick={onDelete} title={t('quizSet.editor.question.deleteTooltip')} style={{
             background: 'transparent', color: COLOR.danger,
-            border: `1px solid rgba(224,53,75,0.30)`,
+            border: `1px solid rgba(179,69,47,0.30)`,
             padding: '5px 8px', borderRadius: 6, fontSize: 11, cursor: 'pointer',
           }}>
             <span className="material-symbols-outlined" style={{ fontSize: 13 }} aria-hidden>delete</span>
@@ -179,8 +179,8 @@ export default function QuestionEditor({
             return (
               <div key={i} style={{
                 display: 'flex', alignItems: 'center', gap: 9,
-                background: isCorrect ? 'rgba(14,138,107,0.08)' : COLOR.inputBg,
-                border: `1px solid ${isCorrect ? 'rgba(14,138,107,0.30)' : empty ? COLOR.warning : COLOR.borderXSubtle}`,
+                background: isCorrect ? 'rgba(46,125,79,0.08)' : COLOR.inputBg,
+                border: `1px solid ${isCorrect ? 'rgba(46,125,79,0.30)' : empty ? COLOR.warning : COLOR.borderXSubtle}`,
                 borderRadius: 8, padding: '9px 12px',
               }}>
                 <div style={{

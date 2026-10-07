@@ -309,7 +309,7 @@ const TournamentMatch: React.FC = () => {
   const meParticipant = match.participants.find(p => p.userId === currentUserId);
 
   return (
-    <div className="min-h-screen relative overflow-hidden" style={{ background: 'linear-gradient(135deg, rgba(245,158,11,0.05), rgba(45,70,200,0.04), var(--bq-paper))' }}>
+    <div className="min-h-screen relative overflow-hidden" style={{ background: 'linear-gradient(135deg, rgba(245,158,11,0.05), rgba(47,111,176,0.04), var(--bq-paper))' }}>
       {/* Background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 rounded-full pointer-events-none" style={{ width: 600, height: 400, background: 'rgba(245,158,11,0.10)', filter: 'blur(120px)' }} />
 
@@ -495,7 +495,7 @@ const TournamentMatch: React.FC = () => {
                   onClick={handleForfeit}
                   disabled={forfeitLoading}
                   className="px-6 py-2.5 rounded-xl text-sm font-bold transition-colors disabled:opacity-50"
-                  style={{ background: 'rgba(224,53,75,0.10)', border: '1px solid rgba(224,53,75,0.3)', color: 'var(--bq-ruby)' }}
+                  style={{ background: 'rgba(179,69,47,0.10)', border: '1px solid rgba(179,69,47,0.3)', color: 'var(--bq-ruby)' }}
                 >
                   <span className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-base">flag</span>

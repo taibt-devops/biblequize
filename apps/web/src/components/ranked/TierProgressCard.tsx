@@ -48,8 +48,8 @@ export default function TierProgressCard({
         className="hidden md:block absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(60% 80% at 8% 0%, rgba(224,53,75,0.08), transparent 60%),'
-            + 'radial-gradient(50% 70% at 95% 100%, rgba(224,53,75,0.05), transparent 60%)',
+            'radial-gradient(60% 80% at 8% 0%, rgba(179,69,47,0.08), transparent 60%),'
+            + 'radial-gradient(50% 70% at 95% 100%, rgba(179,69,47,0.05), transparent 60%)',
         }}
         aria-hidden
       />
@@ -84,7 +84,7 @@ export default function TierProgressCard({
                   key={i}
                   className="material-symbols-outlined text-[18px] md:text-[20px]"
                   style={{
-                    color: i < starIndex ? '#F59E0B' : '#E7E4DA',
+                    color: i < starIndex ? '#F59E0B' : '#C9B58C',
                     ...(i < starIndex ? FILL_1 : undefined),
                   }}
                 >
@@ -128,14 +128,13 @@ export default function TierProgressCard({
 
       {/* Progress bar + foot */}
       <div className="relative z-10 mt-5 md:mt-6">
-        <div className="bg-bq-inset border border-bq-hair rounded-full h-[9px] overflow-hidden">
+        <div className="bg-bq-track border-2 border-bq-ink rounded-full h-[14px] overflow-hidden">
           <div
             data-testid="ranked-tier-progress-bar"
             className="h-full rounded-full transition-[width] duration-700 ease-out"
             style={{
               width: `${tierProgressPct}%`,
-              background: 'linear-gradient(90deg,#2D46C8,#0E8A6B 34%,#F59E0B 64%,#E0354B)',
-              boxShadow: '0 2px 10px -2px rgba(224,53,75,0.4)',
+              background: '#FFC93C',
             }}
           />
         </div>

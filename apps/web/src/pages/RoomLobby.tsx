@@ -466,11 +466,9 @@ const RoomLobby: React.FC = () => {
               fontWeight: 900,
               letterSpacing: '-0.02em',
               lineHeight: 1.05,
-              background: 'var(--bq-action)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              filter: 'drop-shadow(0 8px 40px rgba(224,53,75,0.35))',
+              color: '#1D2B22',
+              textShadow: '0 0.06em 0 #FFC93C',
+              filter: 'drop-shadow(0 8px 40px rgba(179,69,47,0.35))',
             }}
           >
             BẮT ĐẦU!
@@ -504,10 +502,8 @@ const RoomLobby: React.FC = () => {
                   fontWeight: 900,
                   letterSpacing: '-0.04em',
                   lineHeight: 1,
-                  background: 'linear-gradient(135deg, var(--bq-amber) 0%, var(--bq-amber-deep) 50%, var(--bq-ember) 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
+                  color: '#1D2B22',
+                  textShadow: '0 0.06em 0 #FFC93C',
                   animation: 'countdownNumberPop 0.4s cubic-bezier(0.34,1.56,0.64,1)',
                 }}
               >
@@ -786,10 +782,8 @@ const RoomLobby: React.FC = () => {
                     fontSize: 'clamp(32px, 5vw, 48px)',
                     letterSpacing: '0.25em',
                     fontVariantNumeric: 'tabular-nums',
-                    background: 'linear-gradient(135deg, var(--bq-amber-deep) 0%, var(--bq-amber) 50%, var(--bq-ember) 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
+                    color: '#1D2B22',
+                    textShadow: '0 0.06em 0 #FFC93C',
                   }}
                   data-testid="lobby-room-code"
                 >

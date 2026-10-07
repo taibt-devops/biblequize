@@ -7,7 +7,7 @@ interface Props {
   groupId: string;
 }
 
-const EMERALD_BG = 'rgba(14,138,107,0.06)';
+const EMERALD_BG = 'rgba(46,125,79,0.06)';
 
 export default function CollectiveGrowthCard({ groupId }: Props) {
   const { t } = useTranslation();

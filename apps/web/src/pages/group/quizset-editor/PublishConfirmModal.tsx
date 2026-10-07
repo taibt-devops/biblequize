@@ -36,7 +36,7 @@ export default function PublishConfirmModal({
 
   return (
     <div onClick={onClose} style={{
-      position: 'fixed', inset: 0, background: 'rgba(22,21,27,0.45)', zIndex: 60,
+      position: 'fixed', inset: 0, background: 'rgba(29,43,34,0.45)', zIndex: 60,
       display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 16,
     }}>
       <div onClick={e => e.stopPropagation()} style={{

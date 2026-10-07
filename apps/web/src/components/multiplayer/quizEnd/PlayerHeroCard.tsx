@@ -51,8 +51,8 @@ export function PlayerHeroCard({ me, myUsername, myRank, totalQuestions }: Props
                   width: 36, height: 36,
                   borderRadius: '50%',
                   background: rankBadgeBg(myRank),
-                  color: '#11131e',
-                  border: '2px solid #11131e',
+                  color: '#1D2B22',
+                  border: '2px solid #1D2B22',
                 }}
               >
                 {myRank}

@@ -11,9 +11,9 @@ import AvatarStack from './AvatarStack'
 import { DIFFICULTY_CONFIG, formatBookScope, formatRelativeTime, type PublicRoom } from './types'
 
 const STATUS_BADGE_STYLE: Record<'WAITING' | 'ALMOST_FULL' | 'FULL' | 'PLAYING', { bg: string; fg: string; key: string }> = {
-  WAITING:     { bg: 'rgba(14,138,107,0.12)', fg: '#0E8A6B', key: 'multiplayer.room.statusWaiting' },
+  WAITING:     { bg: 'rgba(46,125,79,0.12)', fg: '#2E7D4F', key: 'multiplayer.room.statusWaiting' },
   ALMOST_FULL: { bg: 'rgba(245,158,11,0.14)', fg: '#D97F06', key: 'multiplayer.room.statusAlmostFull' },
-  FULL:        { bg: 'rgba(224,53,75,0.12)',  fg: '#E0354B', key: 'multiplayer.room.statusFull'  },
+  FULL:        { bg: 'rgba(179,69,47,0.12)',  fg: '#B3452F', key: 'multiplayer.room.statusFull'  },
   PLAYING:     { bg: 'rgba(217,127,6,0.14)',  fg: '#D97F06', key: 'multiplayer.room.statusPlaying' },
 }
 
@@ -73,7 +73,7 @@ export default function RoomCard({ room }: { room: PublicRoom }) {
       data-testid="room-card"
       className="rounded-xl p-4 flex flex-col gap-3 transition-all bg-bq-white shadow-bq-soft"
       style={{
-        border: `1px solid ${almostFull ? hexToRgba(mode.color, 0.4) : '#E7E4DA'}`,
+        border: `1px solid ${almostFull ? hexToRgba(mode.color, 0.4) : '#C9B58C'}`,
         boxShadow: almostFull ? `0 0 16px ${hexToRgba(mode.color, 0.12)}` : undefined,
         cursor: ctaEnabled ? 'pointer' : 'default',
       }}
@@ -133,7 +133,7 @@ export default function RoomCard({ room }: { room: PublicRoom }) {
       </div>
 
       {joinError && (
-        <div className="text-[11px] px-2 py-1 rounded-lg" style={{ background: 'rgba(224,53,75,0.10)', color: '#E0354B' }}>
+        <div className="text-[11px] px-2 py-1 rounded-lg" style={{ background: 'rgba(179,69,47,0.10)', color: '#B3452F' }}>
           ⚠ {joinError}
         </div>
       )}
@@ -143,8 +143,8 @@ export default function RoomCard({ room }: { room: PublicRoom }) {
         disabled={!ctaEnabled}
         className="w-full h-9 rounded-lg text-[12px] font-bold transition-colors disabled:cursor-not-allowed"
         style={{
-          background: ctaEnabled ? 'var(--bq-action)' : '#F2F0E7',
-          color: ctaEnabled ? 'var(--bq-action-fg)' : '#A8A69C',
+          background: ctaEnabled ? 'var(--bq-action)' : '#EFE3C3',
+          color: ctaEnabled ? 'var(--bq-action-fg)' : '#6B5530',
         }}
       >
         {cta.label}

@@ -30,7 +30,7 @@ export function ComboBanner({ count, multiplier, onDismiss }: Props) {
       style={{
         transform: 'translateX(-50%)',
         background: 'linear-gradient(135deg, #ff7a59 0%, #e8a832 100%)',
-        color: '#11131e',
+        color: '#1D2B22',
         borderRadius: 16,
         padding: '12px 20px',
         boxShadow: '0 12px 40px rgba(255,122,89,0.45)',

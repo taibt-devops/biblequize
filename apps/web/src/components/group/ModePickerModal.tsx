@@ -149,7 +149,7 @@ export default function ModePickerModal({
               >
                 <div
                   className="qs-mode-icon shrink-0 lg:w-14 lg:h-14 lg:text-3xl"
-                  style={{ background: 'rgba(45, 70, 200, 0.12)', border: '1px solid rgba(45, 70, 200, 0.3)' }}
+                  style={{ background: 'rgba(47,111,176, 0.12)', border: '1px solid rgba(47,111,176, 0.3)' }}
                 >📅</div>
                 <div className="flex-1 text-left min-w-0">
                   <div className="text-sm lg:text-base font-bold text-bq-ink mb-0.5">Lên lịch quiz cho nhóm</div>

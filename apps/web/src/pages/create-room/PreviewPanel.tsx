@@ -93,8 +93,8 @@ export default function PreviewPanel({
             <div
               className="flex items-center gap-2 px-3 py-2.5 mb-3 rounded-[9px] text-[12.5px] font-medium text-bq-ruby"
               style={{
-                background: 'rgba(224,53,75,0.08)',
-                border: '1px solid rgba(224,53,75,0.25)',
+                background: 'rgba(179,69,47,0.08)',
+                border: '1px solid rgba(179,69,47,0.25)',
               }}
             >
               <span className="material-symbols-outlined" style={{ fontSize: 16 }}>warning</span>
@@ -105,8 +105,8 @@ export default function PreviewPanel({
             <div
               className="flex items-center gap-2 px-3 py-2.5 mb-3 rounded-[9px] text-[12.5px] font-medium text-bq-ruby"
               style={{
-                background: 'rgba(224,53,75,0.10)',
-                border: '1px solid rgba(224,53,75,0.30)',
+                background: 'rgba(179,69,47,0.10)',
+                border: '1px solid rgba(179,69,47,0.30)',
               }}
             >
               <span className="material-symbols-outlined" style={{ fontSize: 16 }}>error</span>

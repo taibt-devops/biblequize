@@ -66,12 +66,12 @@ function MatchRow({ match }: RowProps) {
       className="rounded-md border border-bq-hair bg-bq-white shadow-bq-soft flex items-center gap-3 px-3 py-2.5 hover:bg-bq-inset transition-colors"
       style={{
         borderLeftWidth: '2px',
-        borderLeftColor: passed ? '#0E8A6B' : '#E0354B',
+        borderLeftColor: passed ? '#2E7D4F' : '#B3452F',
       }}
     >
       <div
         className="text-[12px] font-medium w-3.5 shrink-0 text-center"
-        style={{ color: passed ? '#0E8A6B' : '#E0354B' }}
+        style={{ color: passed ? '#2E7D4F' : '#B3452F' }}
       >
         {passed ? '✓' : '✗'}
       </div>
@@ -89,7 +89,7 @@ function MatchRow({ match }: RowProps) {
       </div>
       <div
         className="text-[13px] font-bold shrink-0"
-        style={{ color: passed ? '#D97F06' : '#A8A69C' }}
+        style={{ color: passed ? '#D97F06' : '#6B5530' }}
       >
         +{score}
       </div>

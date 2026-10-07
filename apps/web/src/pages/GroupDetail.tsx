@@ -1041,7 +1041,7 @@ const GroupDetail: React.FC = () => {
                 const isMemberLeader = m.role === 'LEADER';
                 const isMemberMod = m.role === 'MOD' || m.role === 'MODERATOR';
                 const inactive = isInactive(m);
-                const tierColor = isMemberLeader ? '#D97F06' : isMemberMod ? '#2D46C8' : '#6C6A62';
+                const tierColor = isMemberLeader ? '#D97F06' : isMemberMod ? '#2F6FB0' : '#4D3A1F';
 
                 return (
                   <div
@@ -1287,26 +1287,26 @@ const GroupDetail: React.FC = () => {
                     }}
                     className="live-call-banner relative w-full overflow-hidden rounded-2xl p-4 sm:p-5 text-left cursor-pointer transition-all hover:brightness-105 grid items-center gap-3 sm:gap-4 grid-cols-[auto_minmax(0,1fr)] sm:grid-cols-[auto_minmax(0,1fr)_auto]"
                     style={{
-                      background: 'linear-gradient(135deg, rgba(45,70,200,0.10) 0%, #FFFFFF 60%)',
-                      border: '1px solid rgba(45,70,200,0.35)',
+                      background: 'linear-gradient(135deg, rgba(47,111,176,0.10) 0%, #FFFFFF 60%)',
+                      border: '1px solid rgba(47,111,176,0.35)',
                       boxShadow: '0 18px 40px -24px rgba(20,20,30,.28)',
                     }}
                   >
                     <div className="absolute top-[-30px] right-[-30px] w-[100px] h-[100px] pointer-events-none"
-                      style={{ background: 'radial-gradient(circle, rgba(45,70,200,0.12) 0%, transparent 70%)' }} />
+                      style={{ background: 'radial-gradient(circle, rgba(47,111,176,0.12) 0%, transparent 70%)' }} />
                     <div className="w-12 h-12 rounded-[13px] grid place-items-center text-[24px] flex-shrink-0 relative z-[1]"
                       style={{
-                        background: 'linear-gradient(135deg, rgba(45,70,200,0.18) 0%, rgba(45,70,200,0.10) 100%)',
-                        border: '1px solid rgba(45,70,200,0.35)',
-                        color: '#2D46C8',
+                        background: 'linear-gradient(135deg, rgba(47,111,176,0.18) 0%, rgba(47,111,176,0.10) 100%)',
+                        border: '1px solid rgba(47,111,176,0.35)',
+                        color: '#2F6FB0',
                       }}>
                       <span className="material-symbols-outlined text-[24px]">groups</span>
                     </div>
                     <div className="min-w-0 relative z-[1]">
                       <div className="flex items-center gap-1.5 text-[10px] font-extrabold uppercase tracking-wide sm:tracking-wider mb-1"
-                        style={{ color: '#2D46C8' }}>
+                        style={{ color: '#2F6FB0' }}>
                         <span className="w-[7px] h-[7px] rounded-full inline-block flex-shrink-0 animate-pulse"
-                          style={{ background: '#2D46C8', boxShadow: '0 0 0 0 rgba(45,70,200,0.5)' }} />
+                          style={{ background: '#2F6FB0', boxShadow: '0 0 0 0 rgba(47,111,176,0.5)' }} />
                         <span className="truncate">
                           {isInProgress ? `Đang chơi · ${rm.currentPlayers} người` : `Trưởng nhóm vừa mở phòng · ${opened}`}
                         </span>
@@ -1320,8 +1320,8 @@ const GroupDetail: React.FC = () => {
                     </div>
                     <div className="col-span-2 sm:col-span-1 flex-shrink-0 relative z-[1] py-3 sm:py-3.5 px-4 sm:px-6 rounded-[11px] flex sm:inline-flex items-center justify-center gap-2 text-[14px] font-extrabold text-white"
                       style={{
-                        background: 'linear-gradient(135deg, #2D46C8 0%, #1E2E86 100%)',
-                        boxShadow: '0 26px 46px -28px rgba(45,70,200,.5)',
+                        background: 'linear-gradient(135deg, #2F6FB0 0%, #1E2E86 100%)',
+                        boxShadow: '0 26px 46px -28px rgba(47,111,176,.5)',
                       }}>
                       <span className="material-symbols-outlined text-[18px]">login</span>
                       Tham gia phòng
@@ -1363,21 +1363,21 @@ const GroupDetail: React.FC = () => {
                       }}
                       className="rounded-2xl p-4 text-left cursor-pointer transition-all hover:brightness-105"
                       style={{
-                        background: 'linear-gradient(135deg, rgba(45,70,200,0.06) 0%, #FFFFFF 60%)',
-                        border: '1px solid rgba(45,70,200,0.25)',
+                        background: 'linear-gradient(135deg, rgba(47,111,176,0.06) 0%, #FFFFFF 60%)',
+                        border: '1px solid rgba(47,111,176,0.25)',
                         boxShadow: '0 18px 40px -24px rgba(20,20,30,.28)',
                       }}
                     >
                       <div className="flex items-center gap-2.5 mb-3">
                         <div className="w-9 h-9 rounded-[9px] grid place-items-center flex-shrink-0"
-                          style={{ background: 'rgba(45,70,200,0.12)', border: '1px solid rgba(45,70,200,0.3)', color: '#2D46C8' }}>
+                          style={{ background: 'rgba(47,111,176,0.12)', border: '1px solid rgba(47,111,176,0.3)', color: '#2F6FB0' }}>
                           <span className="material-symbols-outlined text-[18px]">groups</span>
                         </div>
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider mb-0.5"
-                            style={{ color: '#2D46C8' }}>
+                            style={{ color: '#2F6FB0' }}>
                             <span className="w-1.5 h-1.5 rounded-full inline-block animate-pulse"
-                              style={{ background: '#2D46C8' }} />
+                              style={{ background: '#2F6FB0' }} />
                             {isInProgress ? `Đang chơi · ${rm.currentPlayers} người` : `Phòng Live · ${rm.currentPlayers}/${rm.maxPlayers} người`}
                           </div>
                           <div className="text-bq-ink text-[14px] font-bold truncate">
@@ -1398,7 +1398,7 @@ const GroupDetail: React.FC = () => {
                         )}
                       </div>
                       <div className="w-full py-2.5 rounded-[9px] text-[12px] font-bold inline-flex items-center justify-center gap-1.5"
-                        style={{ background: 'rgba(45,70,200,0.12)', color: '#2D46C8', border: '1px solid rgba(45,70,200,0.3)' }}>
+                        style={{ background: 'rgba(47,111,176,0.12)', color: '#2F6FB0', border: '1px solid rgba(47,111,176,0.3)' }}>
                         <span className="material-symbols-outlined text-[14px]">login</span>
                         Tham gia phòng
                       </div>
@@ -1417,21 +1417,21 @@ const GroupDetail: React.FC = () => {
                       onClick={() => navigate(`/groups/${id}/scheduled-quizzes/${sq.id}`)}
                       className="rounded-2xl p-4 text-left cursor-pointer transition-all hover:brightness-105"
                       style={{
-                        background: 'linear-gradient(135deg, rgba(14,138,107,0.06) 0%, #FFFFFF 60%)',
-                        border: '1px solid rgba(14,138,107,0.25)',
+                        background: 'linear-gradient(135deg, rgba(46,125,79,0.06) 0%, #FFFFFF 60%)',
+                        border: '1px solid rgba(46,125,79,0.25)',
                         boxShadow: '0 18px 40px -24px rgba(20,20,30,.28)',
                       }}
                     >
                       <div className="flex items-center gap-2.5 mb-3">
                         <div className="w-9 h-9 rounded-[9px] grid place-items-center text-[18px] flex-shrink-0"
-                          style={{ background: 'rgba(14,138,107,0.12)', border: '1px solid rgba(14,138,107,0.3)', color: '#0E8A6B' }}>
+                          style={{ background: 'rgba(46,125,79,0.12)', border: '1px solid rgba(46,125,79,0.3)', color: '#2E7D4F' }}>
                           <span className="material-symbols-outlined text-[18px]">schedule</span>
                         </div>
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider mb-0.5"
-                            style={{ color: '#0E8A6B' }}>
+                            style={{ color: '#2E7D4F' }}>
                             <span className="w-1.5 h-1.5 rounded-full inline-block animate-pulse"
-                              style={{ background: '#0E8A6B' }} />
+                              style={{ background: '#2E7D4F' }} />
                             Quiz đã đặt lịch
                           </div>
                           <div className="text-bq-ink text-[14px] font-bold truncate">{sq.name}</div>
@@ -1446,7 +1446,7 @@ const GroupDetail: React.FC = () => {
                         <span>{sq.questionCount} câu</span>
                       </div>
                       <div className="w-full py-2.5 rounded-[9px] text-[12px] font-bold inline-flex items-center justify-center gap-1.5"
-                        style={{ background: 'rgba(14,138,107,0.12)', color: '#0E8A6B', border: '1px solid rgba(14,138,107,0.3)' }}>
+                        style={{ background: 'rgba(46,125,79,0.12)', color: '#2E7D4F', border: '1px solid rgba(46,125,79,0.3)' }}>
                         <span className="material-symbols-outlined text-[14px]">play_arrow</span>
                         Tham gia ngay
                       </div>
@@ -1461,8 +1461,8 @@ const GroupDetail: React.FC = () => {
           {!isLeaderOrMod && activeRooms.length === 0 && activeScheduled.length === 0 && quizSets.length > 0 && (
             <div className="text-center py-9 px-6 mb-4 rounded-2xl"
               style={{
-                background: '#F2F0E7',
-                border: '1px dashed #E7E4DA',
+                background: '#EFE3C3',
+                border: '1px dashed #C9B58C',
               }}>
               <div className="w-15 h-15 mx-auto mb-3.5 rounded-full grid place-items-center"
                 style={{ width: 60, height: 60, background: '#FFFFFF' }}>
@@ -1510,7 +1510,7 @@ const GroupDetail: React.FC = () => {
           ) : quizSets.length === 0 ? (
             <div className="text-center py-12 px-8 rounded-2xl"
               style={{
-                background: '#F2F0E7',
+                background: '#EFE3C3',
                 border: '1px dashed rgba(245,158,11,0.25)',
               }}>
               <div className="w-[72px] h-[72px] mx-auto mb-4 rounded-full grid place-items-center"
@@ -1524,7 +1524,7 @@ const GroupDetail: React.FC = () => {
               {isLeaderOrMod && (
                 <button onClick={() => navigate(`/groups/${id}/quiz-sets/new`)}
                   className="rounded-[10px] px-6 py-3 text-[14px] font-bold inline-flex items-center gap-2 transition hover:brightness-110"
-                  style={{ background: 'linear-gradient(135deg, #FF9D2E 0%, #FF5A45 55%, #E0354B 100%)', color: '#FFFFFF', boxShadow: '0 16px 34px -12px rgba(224,53,75,.6), 0 4px 16px -6px rgba(245,158,11,.55)' }}>
+                  style={{ background: 'linear-gradient(135deg, #FF9D2E 0%, #FF5A45 55%, #B3452F 100%)', color: '#FFFFFF', boxShadow: '0 16px 34px -12px rgba(179,69,47,.6), 0 4px 16px -6px rgba(245,158,11,.55)' }}>
                   <span className="material-symbols-outlined text-[18px]">add</span>
                   {t('groups.emptyQuizSetsCta')}
                 </button>
@@ -1807,7 +1807,7 @@ const GroupDetail: React.FC = () => {
                 onClick={() => setShowDeleteModal(false)}
                 disabled={deleting}
                 className="flex-1 py-3 rounded-xl text-sm font-bold disabled:opacity-50"
-                style={{ background: '#F2F0E7', color: '#16151B', border: '1px solid #E7E4DA' }}>
+                style={{ background: '#EFE3C3', color: '#1D2B22', border: '1px solid #C9B58C' }}>
                 {t('common.cancel')}
               </button>
               <button

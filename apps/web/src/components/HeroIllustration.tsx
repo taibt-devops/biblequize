@@ -35,14 +35,14 @@ export default function HeroIllustration({ className = '' }: { className?: strin
         </linearGradient>
         <linearGradient id="hi-cover" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor="#FF7A5A" />
-          <stop offset="1" stopColor="#E0354B" />
+          <stop offset="1" stopColor="#B3452F" />
         </linearGradient>
         <linearGradient id="hi-ray" x1="0" y1="1" x2="0" y2="0">
           <stop offset="0" stopColor="#F8C65A" stopOpacity="0" />
           <stop offset="1" stopColor="#F8C65A" stopOpacity=".55" />
         </linearGradient>
         <filter id="hi-cardShadow" x="-30%" y="-30%" width="160%" height="160%">
-          <feDropShadow dx="0" dy="12" stdDeviation="10" floodColor="#16151B" floodOpacity=".16" />
+          <feDropShadow dx="0" dy="12" stdDeviation="10" floodColor="#1D2B22" floodOpacity=".16" />
         </filter>
       </defs>
 
@@ -72,8 +72,8 @@ export default function HeroIllustration({ className = '' }: { className?: strin
         <path d="M300 300 L504 268 Q514 300 482 360 L300 338 Z" fill="#C92A41" />
         <path d="M300 246 L300 338" stroke="#B9213A" strokeWidth="6" opacity=".25" />
 
-        <path d="M300 250 L110 282 Q124 308 138 332 L300 328 Z" fill="url(#hi-pageL)" stroke="#E7E4DA" strokeWidth="1.5" />
-        <path d="M300 250 L490 282 Q476 308 462 332 L300 328 Z" fill="url(#hi-pageR)" stroke="#E7E4DA" strokeWidth="1.5" />
+        <path d="M300 250 L110 282 Q124 308 138 332 L300 328 Z" fill="url(#hi-pageL)" stroke="#C9B58C" strokeWidth="1.5" />
+        <path d="M300 250 L490 282 Q476 308 462 332 L300 328 Z" fill="url(#hi-pageR)" stroke="#C9B58C" strokeWidth="1.5" />
         <path d="M300 250 L300 328" stroke="#D9D4C6" strokeWidth="3" opacity=".7" />
 
         <g stroke="#CFC9BA" strokeWidth="3" strokeLinecap="round" opacity=".8">
@@ -91,8 +91,8 @@ export default function HeroIllustration({ className = '' }: { className?: strin
 
       {/* floating quiz answer card — answer colors A=Coral B=Sky C=Gold D=Sage (C5) */}
       <g transform="translate(372,70) rotate(5)" filter="url(#hi-cardShadow)">
-        <rect x="0" y="0" width="196" height="138" rx="18" fill="#FFFFFF" stroke="#E7E4DA" strokeWidth="1.5" />
-        <rect x="18" y="18" width="120" height="9" rx="4.5" fill="#16151B" />
+        <rect x="0" y="0" width="196" height="138" rx="18" fill="#FFFFFF" stroke="#C9B58C" strokeWidth="1.5" />
+        <rect x="18" y="18" width="120" height="9" rx="4.5" fill="#1D2B22" />
         <rect x="18" y="33" width="86" height="7" rx="3.5" fill="#CFC9BA" />
 
         <rect x="18" y="54" width="78" height="30" rx="9" fill="#FF7A5A" opacity=".16" />
@@ -100,21 +100,21 @@ export default function HeroIllustration({ className = '' }: { className?: strin
         <text x="31.5" y="73" fontSize="12" fontWeight="700" fill="#fff">A</text>
         <rect x="50" y="65" width="38" height="7" rx="3.5" fill="#FF7A5A" opacity=".55" />
 
-        <rect x="102" y="54" width="78" height="30" rx="9" fill="#6E86F0" opacity=".16" />
-        <circle cx="119" cy="69" r="9" fill="#6E86F0" />
+        <rect x="102" y="54" width="78" height="30" rx="9" fill="#2F6FB0" opacity=".16" />
+        <circle cx="119" cy="69" r="9" fill="#2F6FB0" />
         <text x="115.5" y="73" fontSize="12" fontWeight="700" fill="#fff">B</text>
-        <rect x="134" y="65" width="38" height="7" rx="3.5" fill="#6E86F0" opacity=".55" />
+        <rect x="134" y="65" width="38" height="7" rx="3.5" fill="#2F6FB0" opacity=".55" />
 
         <rect x="18" y="92" width="78" height="30" rx="9" fill="#F59E0B" opacity=".22" stroke="#F59E0B" strokeWidth="2" />
         <circle cx="35" cy="107" r="9" fill="#F59E0B" />
         <text x="31.5" y="111" fontSize="12" fontWeight="700" fill="#fff">C</text>
         <rect x="50" y="103" width="26" height="7" rx="3.5" fill="#D97F06" opacity=".7" />
-        <path d="M82 107 l3.5 3.5 L92 103" fill="none" stroke="#0E8A6B" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M82 107 l3.5 3.5 L92 103" fill="none" stroke="#2E7D4F" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
 
         <rect x="102" y="92" width="78" height="30" rx="9" fill="#46C89A" opacity=".16" />
-        <circle cx="119" cy="107" r="9" fill="#0E8A6B" />
+        <circle cx="119" cy="107" r="9" fill="#2E7D4F" />
         <text x="115.5" y="111" fontSize="12" fontWeight="700" fill="#fff">D</text>
-        <rect x="134" y="103" width="38" height="7" rx="3.5" fill="#0E8A6B" opacity=".5" />
+        <rect x="134" y="103" width="38" height="7" rx="3.5" fill="#2E7D4F" opacity=".5" />
       </g>
 
       {/* sparkles */}

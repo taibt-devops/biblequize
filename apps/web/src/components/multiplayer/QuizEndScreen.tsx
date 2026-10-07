@@ -73,7 +73,7 @@ export function QuizEndScreen({
       data-testid="quiz-end-screen"
       className="fixed inset-0 z-50 overflow-auto"
       style={{
-        background: 'radial-gradient(ellipse at top, rgba(232,168,50,0.20) 0%, #11131e 60%)',
+        background: 'radial-gradient(ellipse at top, rgba(232,168,50,0.20) 0%, #1D2B22 60%)',
         fontFamily: "'Be Vietnam Pro', sans-serif",
       }}
     >
@@ -138,10 +138,8 @@ export function QuizEndScreen({
               <h1
                 className="font-black text-3xl lg:text-4xl tracking-tight"
                 style={{
-                  background: 'linear-gradient(135deg, #e8a832 0%, #fbbf24 50%, #e7c268 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
+                  color: '#1D2B22',
+                  textShadow: '0 0.06em 0 #FFC93C',
                   lineHeight: 1.1,
                 }}
               >

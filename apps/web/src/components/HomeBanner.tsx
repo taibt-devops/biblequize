@@ -187,8 +187,8 @@ export default function HomeBanner() {
                     className="h-full rounded-full relative transition-[width] duration-500"
                     style={{
                       width: `${progressPct}%`,
-                      background: 'linear-gradient(90deg,#2D46C8,#0E8A6B 34%,#F59E0B 64%,#E0354B)',
-                      boxShadow: '0 2px 10px -2px rgba(45,70,200,0.4)',
+                      background: 'linear-gradient(90deg,#2F6FB0,#2E7D4F 34%,#F59E0B 64%,#B3452F)',
+                      boxShadow: '0 2px 10px -2px rgba(47,111,176,0.4)',
                     }}
                   >
                     <span

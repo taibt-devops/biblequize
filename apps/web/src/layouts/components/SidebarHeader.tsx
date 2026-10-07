@@ -21,14 +21,14 @@ export default function SidebarHeader() {
           aria-hidden
           className="grid place-items-center w-7 h-7 rounded-full shrink-0"
           style={{
-            background: 'linear-gradient(135deg, #e8a832, #c98a1c)',
-            boxShadow: '0 0 16px rgba(232,168,50,0.35)',
+            background: '#FFC93C',
+            border: '2px solid #1D2B22',
           }}
         >
           <svg
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#1a1208"
+            stroke="#1D2B22"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"

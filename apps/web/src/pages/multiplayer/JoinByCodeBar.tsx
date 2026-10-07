@@ -43,7 +43,7 @@ export default function JoinByCodeBar({ onJoin, disabled, error }: Props) {
     <div
       className="rounded-xl px-4 py-3 flex items-center gap-4 flex-wrap bg-bq-white shadow-bq-soft"
       style={{
-        border: '1px solid #E7E4DA',
+        border: '1px solid #C9B58C',
       }}
     >
       <div className="flex items-center gap-2 shrink-0">
@@ -55,7 +55,7 @@ export default function JoinByCodeBar({ onJoin, disabled, error }: Props) {
         </div>
         <div>
           <div className="text-[12px] font-bold leading-tight text-bq-ink">{t('multiplayer.join.kicker')}</div>
-          <div className="text-[10px] leading-tight" style={{ color: error ? '#E0354B' : '#6C6A62' }}>
+          <div className="text-[10px] leading-tight" style={{ color: error ? '#B3452F' : '#4D3A1F' }}>
             {error ?? t('multiplayer.join.hint')}
           </div>
         </div>
@@ -77,12 +77,12 @@ export default function JoinByCodeBar({ onJoin, disabled, error }: Props) {
             className="text-center text-base font-semibold text-bq-ink outline-none transition-colors"
             style={{
               width: 36, height: 36,
-              background: '#F2F0E7',
-              border: `1px solid ${c ? '#D97F06' : '#E7E4DA'}`,
+              background: '#EFE3C3',
+              border: `1px solid ${c ? '#D97F06' : '#C9B58C'}`,
               borderRadius: 8,
             }}
             onFocus={(e) => { e.currentTarget.style.borderColor = '#D97F06' }}
-            onBlur={(e) => { e.currentTarget.style.borderColor = c ? '#D97F06' : '#E7E4DA' }}
+            onBlur={(e) => { e.currentTarget.style.borderColor = c ? '#D97F06' : '#C9B58C' }}
           />
         ))}
       </div>
@@ -92,9 +92,9 @@ export default function JoinByCodeBar({ onJoin, disabled, error }: Props) {
         disabled={!ready}
         className="ml-auto h-9 px-4 rounded-lg text-[12px] font-semibold transition-opacity disabled:cursor-not-allowed"
         style={{
-          background: ready ? 'var(--bq-action)' : '#F2F0E7',
-          color: ready ? 'var(--bq-action-fg)' : '#A8A69C',
-          border: ready ? 'none' : '1px solid #E7E4DA',
+          background: ready ? 'var(--bq-action)' : '#EFE3C3',
+          color: ready ? 'var(--bq-action-fg)' : '#6B5530',
+          border: ready ? 'none' : '1px solid #C9B58C',
         }}
       >
         {disabled ? t('multiplayer.join.joining') : t('multiplayer.join.submit')}

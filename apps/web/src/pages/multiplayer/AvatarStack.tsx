@@ -3,9 +3,9 @@
 
 const PALETTE = [
   { bg: 'rgba(245,158,11,0.18)', fg: '#D97F06' },  // amber
-  { bg: 'rgba(45,70,200,0.18)',  fg: '#2D46C8' },  // sapphire
-  { bg: 'rgba(14,138,107,0.18)', fg: '#0E8A6B' },  // emerald
-  { bg: 'rgba(224,53,75,0.16)',  fg: '#E0354B' },  // ruby
+  { bg: 'rgba(47,111,176,0.18)',  fg: '#2F6FB0' },  // sapphire
+  { bg: 'rgba(46,125,79,0.18)', fg: '#2E7D4F' },  // emerald
+  { bg: 'rgba(179,69,47,0.16)',  fg: '#B3452F' },  // ruby
   { bg: 'rgba(255,111,61,0.18)', fg: '#FF6F3D' },  // ember
 ]
 

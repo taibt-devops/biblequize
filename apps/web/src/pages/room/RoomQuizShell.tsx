@@ -274,7 +274,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
         <div className="flex items-center justify-between px-4 lg:px-6 h-14">
           {/* Left: mode chip + "Câu N/M" + progress bar */}
           <div className="flex items-center gap-3 min-w-0">
-            <div className={`w-2 h-2 rounded-full flex-shrink-0 ${connected ? 'bg-bq-emerald shadow-[0_0_6px_rgba(14,138,107,0.4)]' : 'bg-bq-ruby shadow-[0_0_6px_rgba(224,53,75,0.4)]'}`} />
+            <div className={`w-2 h-2 rounded-full flex-shrink-0 ${connected ? 'bg-bq-emerald shadow-[0_0_6px_rgba(46,125,79,0.4)]' : 'bg-bq-ruby shadow-[0_0_6px_rgba(179,69,47,0.4)]'}`} />
             <span
               className="text-[10px] font-bold uppercase tracking-[0.1em] flex-shrink-0"
               style={{ color: 'var(--bq-emerald)' }}
@@ -328,8 +328,8 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
                     : 'linear-gradient(135deg, var(--bq-ruby-lt) 0%, var(--bq-ruby) 100%)',
                   fontFamily: "'Be Vietnam Pro', sans-serif",
                   boxShadow: selected === correctIndex
-                    ? '0 0 24px rgba(14,138,107,0.4)'
-                    : '0 0 24px rgba(224,53,75,0.4)',
+                    ? '0 0 24px rgba(46,125,79,0.4)'
+                    : '0 0 24px rgba(179,69,47,0.4)',
                 }}
               >
                 {selected === correctIndex ? '✓ ĐÚNG!' : '✗ SAI'}

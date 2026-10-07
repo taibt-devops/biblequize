@@ -107,8 +107,8 @@ export default function HomeKhungSangMock() {
 
 const CSS = `
 .hks{position:fixed;inset:0;overflow-y:auto;
-  --bg:#FBFAF5; --bg-2:#F2F0E7; --ink:#16151B; --mut:#6C6A62; --dim:#A8A69C; --hair:#E7E4DA;
-  --c-sap:#2D46C8; --c-eme:#0E8A6B; --c-amb:#F59E0B; --c-amb-d:#D97F06; --c-rub:#E0354B;
+  --bg:#FBFAF5; --bg-2:#EFE3C3; --ink:#1D2B22; --mut:#4D3A1F; --dim:#6B5530; --hair:#C9B58C;
+  --c-sap:#2F6FB0; --c-eme:#2E7D4F; --c-amb:#F59E0B; --c-amb-d:#D97F06; --c-rub:#B3452F;
   --spectrum:linear-gradient(90deg, var(--c-sap), var(--c-eme) 34%, var(--c-amb) 64%, var(--c-rub));
   --ff-d:'Bricolage Grotesque',sans-serif; --ff-b:'Be Vietnam Pro',sans-serif; --ff-v:'Literata',serif;
   font-family:var(--ff-b); background:var(--bg); color:var(--ink);}
@@ -117,7 +117,7 @@ const CSS = `
 .hks::before{content:''; position:fixed; inset:0; z-index:0; pointer-events:none;
   background:
     radial-gradient(1100px 560px at 50% -16%, rgba(255,221,150,.5), transparent 60%),
-    conic-gradient(from 90deg at 50% -10%, transparent 0 42%, rgba(245,158,11,.05) 46%, transparent 50%, rgba(45,70,200,.04) 54%, transparent 58%);}
+    conic-gradient(from 90deg at 50% -10%, transparent 0 42%, rgba(245,158,11,.05) 46%, transparent 50%, rgba(47,111,176,.04) 54%, transparent 58%);}
 .hks::after{content:''; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.035; mix-blend-mode:multiply;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
 .hks .wrap{max-width:1180px; margin:0 auto; padding:0 32px; position:relative; z-index:1;}
@@ -179,7 +179,7 @@ const CSS = `
 .hks .verse .ref{margin-top:16px; font-size:11px; font-weight:800; letter-spacing:.2em; color:var(--dim); clear:both}
 .hks .sill{max-width:740px; margin:0 auto 8px; height:14px; border-radius:0 0 12px 12px;
   background:var(--spectrum); filter:blur(.4px);
-  box-shadow:0 26px 50px -22px rgba(45,70,200,.35), 0 26px 50px -22px rgba(224,53,75,.3)}
+  box-shadow:0 26px 50px -22px rgba(47,111,176,.35), 0 26px 50px -22px rgba(179,69,47,.3)}
 .hks .verse-act{text-align:center; font-size:12px; color:var(--mut); margin-top:14px}
 
 /* SECTION */
@@ -191,7 +191,7 @@ const CSS = `
 
 /* DAILY */
 .hks .daily{position:relative; background:#fff; border:1px solid var(--hair); border-radius:22px; padding:30px 32px; overflow:hidden;
-  box-shadow:0 34px 64px -34px rgba(245,158,11,.5), 0 14px 34px -22px rgba(224,53,75,.22)}
+  box-shadow:0 34px 64px -34px rgba(245,158,11,.5), 0 14px 34px -22px rgba(179,69,47,.22)}
 .hks .daily::before{content:''; position:absolute; top:0; left:0; right:0; height:5px; background:var(--spectrum)}
 .hks .daily::after{content:''; position:absolute; right:-80px; top:-100px; width:280px; height:280px; border-radius:50%;
   background:radial-gradient(closest-side, rgba(255,200,90,.3), transparent); pointer-events:none}
@@ -209,7 +209,7 @@ const CSS = `
 .hks .cta{display:inline-flex; align-items:center; gap:10px; font-weight:800; font-size:14.5px; color:#fff;
   background:linear-gradient(135deg,#FF9D2E 0%, #FF5A45 55%, var(--c-rub) 100%);
   padding:15px 27px; border-radius:14px; cursor:pointer; border:none; transition:transform .15s, box-shadow .15s, filter .15s;
-  box-shadow:0 16px 34px -12px rgba(224,53,75,.6), 0 4px 16px -6px rgba(245,158,11,.55)}
+  box-shadow:0 16px 34px -12px rgba(179,69,47,.6), 0 4px 16px -6px rgba(245,158,11,.55)}
 .hks .cta:hover{transform:translateY(-2px); filter:brightness(1.05)} .hks .cta .xp-tag{background:rgba(255,255,255,.25); color:#fff; font-size:11px; font-weight:800; padding:3px 8px; border-radius:7px}
 
 /* QUESTS + LB */
@@ -241,10 +241,10 @@ const CSS = `
   border-radius:64px 64px 22px 22px / 30px 30px 22px 22px; overflow:hidden;
   display:flex; flex-direction:column; gap:8px; min-height:256px; transition:transform .2s, box-shadow .2s}
 .hks .mode::before{content:''; position:absolute; top:0; left:0; right:0; height:5px}
-.hks .mode.m1::before{background:linear-gradient(90deg,var(--c-sap),#6E86F0)} .hks .mode.m2::before{background:linear-gradient(90deg,var(--c-rub),#FF7A5A)} .hks .mode.m3::before{background:linear-gradient(90deg,var(--c-eme),#46C89A)}
-.hks .mode.m1{box-shadow:0 26px 46px -28px rgba(45,70,200,.5)} .hks .mode.m2{box-shadow:0 26px 46px -28px rgba(224,53,75,.5)} .hks .mode.m3{box-shadow:0 26px 46px -28px rgba(14,138,107,.5)}
+.hks .mode.m1::before{background:linear-gradient(90deg,var(--c-sap),#2F6FB0)} .hks .mode.m2::before{background:linear-gradient(90deg,var(--c-rub),#FF7A5A)} .hks .mode.m3::before{background:linear-gradient(90deg,var(--c-eme),#46C89A)}
+.hks .mode.m1{box-shadow:0 26px 46px -28px rgba(47,111,176,.5)} .hks .mode.m2{box-shadow:0 26px 46px -28px rgba(179,69,47,.5)} .hks .mode.m3{box-shadow:0 26px 46px -28px rgba(46,125,79,.5)}
 .hks .mode:hover{transform:translateY(-5px)}
-.hks .mode.m1:hover{box-shadow:0 34px 60px -26px rgba(45,70,200,.62)} .hks .mode.m2:hover{box-shadow:0 34px 60px -26px rgba(224,53,75,.62)} .hks .mode.m3:hover{box-shadow:0 34px 60px -26px rgba(14,138,107,.62)}
+.hks .mode.m1:hover{box-shadow:0 34px 60px -26px rgba(47,111,176,.62)} .hks .mode.m2:hover{box-shadow:0 34px 60px -26px rgba(179,69,47,.62)} .hks .mode.m3:hover{box-shadow:0 34px 60px -26px rgba(46,125,79,.62)}
 .hks .mode .tag{font-size:10px; font-weight:800; letter-spacing:.18em; margin-top:4px}
 .hks .m1 .tag{color:var(--c-sap)} .hks .m2 .tag{color:var(--c-rub)} .hks .m3 .tag{color:var(--c-eme)}
 .hks .mode h4{font-family:var(--ff-d); font-size:23px; font-weight:800; letter-spacing:-.02em}

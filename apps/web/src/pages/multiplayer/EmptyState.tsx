@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import QuickMatchConfigModal from './QuickMatchConfigModal'
 
-const INDIGO_GRADIENT = 'linear-gradient(135deg, #2D46C8 0%, #6E86F0 100%)'
+const INDIGO_GRADIENT = 'linear-gradient(135deg, #2F6FB0 0%, #2F6FB0 100%)'
 
 interface Props {
   /** Forward to config modal so AI source can be tier-gated. */

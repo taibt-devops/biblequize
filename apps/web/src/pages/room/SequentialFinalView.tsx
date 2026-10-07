@@ -62,9 +62,9 @@ const SequentialFinalView: React.FC<Props> = ({
             const place = idx === 0 ? 'second' : idx === 1 ? 'first' : 'third'
             const medal = place === 'first' ? '🥇' : place === 'second' ? '🥈' : '🥉'
             const borderColor = place === 'first' ? 'rgba(245,158,11,0.4)'
-              : place === 'second' ? 'rgba(45,70,200,0.25)' : 'rgba(224,53,75,0.3)'
+              : place === 'second' ? 'rgba(47,111,176,0.25)' : 'rgba(179,69,47,0.3)'
             const avatarBg = place === 'first' ? 'linear-gradient(135deg, #F59E0B, #D97F06)'
-              : place === 'second' ? 'linear-gradient(135deg, #6E86F0, #2D46C8)' : 'linear-gradient(135deg, #FF7A5A, #E0354B)'
+              : place === 'second' ? 'linear-gradient(135deg, #2F6FB0, #2F6FB0)' : 'linear-gradient(135deg, #FF7A5A, #B3452F)'
             const avatarColor = '#FFFFFF'
             const avatarSize = place === 'first' ? 48 : 40
             return (
@@ -76,7 +76,7 @@ const SequentialFinalView: React.FC<Props> = ({
                     width: avatarSize, height: avatarSize,
                     fontSize: place === 'first' ? 18 : 14,
                     background: avatarBg, color: avatarColor,
-                    borderColor: place === 'first' ? '#F59E0B' : place === 'second' ? '#6E86F0' : '#FF7A5A',
+                    borderColor: place === 'first' ? '#F59E0B' : place === 'second' ? '#2F6FB0' : '#FF7A5A',
                   }}>
                   {p.username[0]?.toUpperCase()}
                 </div>
@@ -112,7 +112,7 @@ const SequentialFinalView: React.FC<Props> = ({
                 style={{
                   background: isMe ? 'linear-gradient(135deg, #F59E0B, #D97F06)'
                     : idx === 0 ? 'linear-gradient(135deg, #F59E0B, #D97F06)'
-                    : 'linear-gradient(135deg, #A8A69C, #6C6A62)',
+                    : 'linear-gradient(135deg, #6B5530, #4D3A1F)',
                 }}>
                 {p.username[0]?.toUpperCase()}
               </div>
@@ -135,7 +135,7 @@ const SequentialFinalView: React.FC<Props> = ({
       <div className="flex gap-2.5">
         <button onClick={onShare ?? onClose}
           className="rounded-xl px-4 py-3.5 text-[13px] font-bold flex items-center gap-1.5"
-          style={{ background: '#FFFFFF', color: '#6C6A62', border: '1px solid #E7E4DA' }}>
+          style={{ background: '#FFFFFF', color: '#4D3A1F', border: '1px solid #C9B58C' }}>
           <span className="material-symbols-outlined text-[16px]">share</span>
           Chia sẻ kết quả
         </button>

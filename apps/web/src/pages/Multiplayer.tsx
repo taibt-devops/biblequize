@@ -134,7 +134,7 @@ export default function Multiplayer() {
         <button
           onClick={() => navigate('/my-sets')}
           className="hidden md:flex items-center gap-2 px-4 h-10 rounded-lg text-[13px] font-semibold transition-colors bg-bq-white"
-          style={{ border: '1px solid #E7E4DA', color: '#16151B' }}
+          style={{ border: '1px solid #C9B58C', color: '#1D2B22' }}
         >
           <span className="material-symbols-outlined text-sm" style={FILL_1}>menu_book</span>
           {t('multiplayer.quizSetsBtn')}
@@ -204,10 +204,10 @@ export default function Multiplayer() {
             </h3>
             <span
               className="flex items-center gap-1.5 px-2.5 py-1 rounded-full"
-              style={{ background: 'rgba(14,138,107,0.10)', border: '1px solid rgba(14,138,107,0.22)' }}
+              style={{ background: 'rgba(46,125,79,0.10)', border: '1px solid rgba(46,125,79,0.22)' }}
             >
               <LiveDot />
-              <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#0E8A6B' }}>Live · {liveCount}</span>
+              <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#2E7D4F' }}>Live · {liveCount}</span>
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -229,7 +229,7 @@ export default function Multiplayer() {
             active={modeFilter === 'QUICK_MATCH'}
             onClick={() => setModeFilter('QUICK_MATCH')}
             icon="rocket_launch"
-            iconColor="#2D46C8"
+            iconColor="#2F6FB0"
           >
             {t('multiplayer.filterQuickMatch')}
           </FilterChip>
@@ -289,7 +289,7 @@ function FeatureTag({ icon, label }: { icon: string; label: string }) {
   return (
     <span
       className="px-2 py-1 rounded-md text-[10px] font-semibold flex items-center gap-1"
-      style={{ background: '#F2F0E7', color: '#6C6A62' }}
+      style={{ background: '#EFE3C3', color: '#4D3A1F' }}
     >
       <span className="material-symbols-outlined" style={{ fontSize: 12 }}>{icon}</span>
       {label}
@@ -313,8 +313,8 @@ function FilterChip({
       className="inline-flex items-center gap-1.5 px-3 h-8 rounded-full text-[12px] font-semibold transition-colors"
       style={{
         background: active ? 'rgba(245,158,11,0.14)' : '#FFFFFF',
-        border: `1px solid ${active ? 'rgba(245,158,11,0.40)' : '#E7E4DA'}`,
-        color: active ? '#D97F06' : '#6C6A62',
+        border: `1px solid ${active ? 'rgba(245,158,11,0.40)' : '#C9B58C'}`,
+        color: active ? '#D97F06' : '#4D3A1F',
       }}
     >
       {icon && (
@@ -331,10 +331,10 @@ function ErrorState({ onRetry, retrying }: { onRetry: () => void; retrying: bool
     <div
       data-testid="multiplayer-error-state"
       className="flex flex-col items-center justify-center py-20 rounded-2xl"
-      style={{ background: 'rgba(224,53,75,0.06)', border: '1px solid rgba(224,53,75,0.20)' }}
+      style={{ background: 'rgba(179,69,47,0.06)', border: '1px solid rgba(179,69,47,0.20)' }}
     >
-      <div className="w-20 h-20 rounded-full flex items-center justify-center mb-5" style={{ background: 'rgba(224,53,75,0.12)' }}>
-        <span className="material-symbols-outlined" style={{ fontSize: 32, color: '#E0354B' }}>error</span>
+      <div className="w-20 h-20 rounded-full flex items-center justify-center mb-5" style={{ background: 'rgba(179,69,47,0.12)' }}>
+        <span className="material-symbols-outlined" style={{ fontSize: 32, color: '#B3452F' }}>error</span>
       </div>
       <h5 className="font-display text-lg font-bold text-bq-ink mb-2">{t('multiplayer.loadErrorTitle')}</h5>
       <p className="text-sm text-bq-ink2 text-center max-w-xs mb-6">{t('multiplayer.loadErrorDesc')}</p>

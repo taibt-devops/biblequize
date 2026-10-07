@@ -17,13 +17,13 @@ type GroupRole = 'LEADER' | 'MOD' | 'MEMBER' | null
  *  Khung Sáng: nhẹ, sáng — jewel tint trên nền giấy. */
 const COVER_GRADIENTS = [
   'linear-gradient(135deg, #FFE08A 0%, #F59E0B 100%)',  // easter — amber
-  'linear-gradient(135deg, #6E86F0 0%, #2D46C8 100%)',  // gospel — sapphire
-  'linear-gradient(135deg, #46C89A 0%, #0E8A6B 100%)',  // creation — emerald
-  'linear-gradient(135deg, #46C89A 0%, #0E8A6B 100%)',  // children — emerald
-  'linear-gradient(135deg, #FF7A5A 0%, #E0354B 100%)',  // OT — ruby/ember
-  'linear-gradient(135deg, #6E86F0 0%, #2D46C8 100%)',  // sea — sapphire
-  'linear-gradient(135deg, #6E86F0 0%, #2D46C8 100%)',  // psalms — sapphire
-  'linear-gradient(135deg, #6E86F0 0%, #2D46C8 100%)',  // letters — sapphire
+  'linear-gradient(135deg, #2F6FB0 0%, #2F6FB0 100%)',  // gospel — sapphire
+  'linear-gradient(135deg, #46C89A 0%, #2E7D4F 100%)',  // creation — emerald
+  'linear-gradient(135deg, #46C89A 0%, #2E7D4F 100%)',  // children — emerald
+  'linear-gradient(135deg, #FF7A5A 0%, #B3452F 100%)',  // OT — ruby/ember
+  'linear-gradient(135deg, #2F6FB0 0%, #2F6FB0 100%)',  // sea — sapphire
+  'linear-gradient(135deg, #2F6FB0 0%, #2F6FB0 100%)',  // psalms — sapphire
+  'linear-gradient(135deg, #2F6FB0 0%, #2F6FB0 100%)',  // letters — sapphire
 ]
 
 function pickCoverGradient(qs: QuizSet, idx: number): string {
@@ -41,8 +41,8 @@ function pickCoverGradient(qs: QuizSet, idx: number): string {
 
 const STATUS_FILTERS: { key: PublishStatus | 'ALL'; tKey: string; dot: string }[] = [
   { key: 'ALL',       tKey: 'quizSet.list.filterAll',       dot: '#F59E0B' },
-  { key: 'PUBLISHED', tKey: 'quizSet.list.filterPublished', dot: '#0E8A6B' },
-  { key: 'DRAFT',     tKey: 'quizSet.list.filterDraft',     dot: '#A8A69C' },
+  { key: 'PUBLISHED', tKey: 'quizSet.list.filterPublished', dot: '#2E7D4F' },
+  { key: 'DRAFT',     tKey: 'quizSet.list.filterDraft',     dot: '#6B5530' },
   { key: 'ARCHIVED',  tKey: 'quizSet.list.filterArchived',  dot: '#F59E0B' },
 ]
 

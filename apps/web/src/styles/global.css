@@ -52,8 +52,8 @@
 }
 
 /* Bracket lines for tournament — Khung Sáng: light hairline + amber active */
-.bracket-line-v { width: 1px; background: #E7E4DA; }
-.bracket-line-h { height: 1px; background: #E7E4DA; }
+.bracket-line-v { width: 1px; background: #C9B58C; }
+.bracket-line-h { height: 1px; background: #C9B58C; }
 .active-bracket-line { background: #F59E0B; box-shadow: 0 0 8px rgba(245, 158, 11, 0.35); }
 
 ::-webkit-scrollbar { width: 6px; height: 6px; }
@@ -1982,9 +1982,9 @@ body::before {
 
 /* Difficulty badges */
 .badge-easy {
-  background: rgba(184,245,90,.1) !important;
-  color: var(--hp-lime) !important;
-  border: 1px solid rgba(184,245,90,.3) !important;
+  background: #D9F0C8 !important;
+  color: #1F5C38 !important;
+  border: 1.5px solid #2E7D4F !important;
   padding: .2rem .55rem;
   border-radius: 100px;
   font-size: .7rem;
@@ -1993,9 +1993,9 @@ body::before {
 }
 
 .badge-medium {
-  background: rgba(212,168,67,.1) !important;
-  color: var(--hp-gold2) !important;
-  border: 1px solid rgba(212,168,67,.3) !important;
+  background: #FFF0B8 !important;
+  color: #6E4610 !important;
+  border: 1.5px solid #8A5A12 !important;
   padding: .2rem .55rem;
   border-radius: 100px;
   font-size: .7rem;
@@ -2004,9 +2004,9 @@ body::before {
 }
 
 .badge-hard {
-  background: rgba(255,107,91,.1) !important;
-  color: var(--hp-coral) !important;
-  border: 1px solid rgba(255,107,91,.3) !important;
+  background: #F7D9CF !important;
+  color: #8E3422 !important;
+  border: 1.5px solid #B3452F !important;
   padding: .2rem .55rem;
   border-radius: 100px;
   font-size: .7rem;
@@ -2883,7 +2883,7 @@ button.gold-gradient:active:not(:disabled), a.gold-gradient:active {
 
 /* ─── Sprint 5 — Quiz Set Professional design tokens (per mockup) ─────── */
 
-.qs-bg                  { background: #11131e; color: #e5e7eb; }
+.qs-bg                  { background: #1D2B22; color: #e5e7eb; }
 .qs-font-vn-display     { font-family: 'Be Vietnam Pro', sans-serif; }
 
 .qs-glass {

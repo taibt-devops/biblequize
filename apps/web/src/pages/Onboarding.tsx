@@ -52,7 +52,7 @@ export default function Onboarding() {
           <div className="max-w-[600px] w-full text-center space-y-12 py-12">
             {/* Header */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight font-display" style={{ background: 'linear-gradient(90deg, #2D46C8 0%, #0E8A6B 34%, #F59E0B 64%, #E0354B 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+              <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight font-display" style={{ color: '#1D2B22', textShadow: '0 0.06em 0 #FFC93C' }}>
                 {t('onboarding.welcomeBilingual')}
               </h1>
               <p className="text-bq-ink2 text-lg tracking-wide">
@@ -174,7 +174,7 @@ export default function Onboarding() {
                 {step === 1 && <>{t('onboarding.slide1Title').replace('BibleQuiz', '')}<span className="text-bq-amberd">BibleQuiz</span></>}
                 {step === 2 && t('onboarding.slide2Title')}
                 {step === 3 && (
-                  <>{t('onboarding.slide3TitlePrefix')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-bq-amber to-bq-amberd">{t('onboarding.slide3TitleAccent')}</span></>
+                  <>{t('onboarding.slide3TitlePrefix')} <span className="text-bq-ink">{t('onboarding.slide3TitleAccent')}</span></>
                 )}
               </h2>
               <p className="text-bq-ink2 text-lg leading-relaxed max-w-md">
@@ -282,7 +282,7 @@ function SlideVisual({ step }: { step: number }) {
     const AVATAR_TINT = ['text-bq-sapphire', 'text-bq-emerald', 'text-bq-amberd', 'text-bq-ruby']
     return (
       <div className="h-full flex flex-col justify-center items-center relative group">
-        <div className="absolute inset-0 rounded-full blur-[100px] opacity-30" style={{ boxShadow: '0 0 60px -15px rgba(45,70,200,0.15)' }} />
+        <div className="absolute inset-0 rounded-full blur-[100px] opacity-30" style={{ boxShadow: '0 0 60px -15px rgba(47,111,176,0.15)' }} />
         <div className="relative w-full aspect-square max-w-[500px] flex items-center justify-center">
           <div className="absolute w-full h-full border border-bq-hair rounded-full animate-pulse" style={{ animationDuration: '8s' }} />
           <div className="absolute w-3/4 h-3/4 border border-bq-hair rounded-full animate-pulse" style={{ animationDuration: '6s' }} />

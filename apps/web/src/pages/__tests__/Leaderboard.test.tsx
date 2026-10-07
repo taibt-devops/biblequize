@@ -210,14 +210,15 @@ describe('Leaderboard', () => {
     expect(podium.textContent).not.toMatch(/\bI\b|\bII\b|\bIII\b/)
   })
 
-  it('LB-1.4: podium #1 shows crown + gold glow', async () => {
+  it('LB-1.4: podium #1 shows crown + gold podium block', async () => {
     renderLeaderboard()
     await waitFor(() => {
       const rank1 = screen.getByTestId('podium-rank-1')
       // Crown emoji present
       expect(rank1.textContent).toContain('👑')
-      // Gold glow class on avatar wrapper
-      expect(rank1.innerHTML).toContain('rgba(232,168,50,0.4)')
+      // Lu Khach: #1 stands on the gold block (was a gold glow)
+      expect(rank1.innerHTML).toContain('bg-bq-amber')
+      expect(screen.getByTestId('podium-rank-2').innerHTML).not.toContain('bg-bq-amber border-[3px]')
     })
   })
 

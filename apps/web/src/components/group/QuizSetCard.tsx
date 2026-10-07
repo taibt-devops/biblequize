@@ -29,11 +29,11 @@ interface Props {
 // pairs stay visually consistent for the same set.
 const HERO_GRADIENTS = [
   'linear-gradient(135deg, #F59E0B 0%, #D97F06 50%, #B36405 100%)', // amber (default per mockup hero)
-  'linear-gradient(135deg, #46C89A 0%, #0E8A6B 100%)',              // emerald
-  'linear-gradient(135deg, #6E86F0 0%, #2D46C8 100%)',              // sapphire
-  'linear-gradient(135deg, #2D46C8 0%, #1E2E86 100%)',              // deep sapphire
-  'linear-gradient(135deg, #FF7A5A 0%, #E0354B 100%)',              // ruby/ember
-  'linear-gradient(135deg, #0E8A6B 0%, #0A6650 100%)',              // deep emerald
+  'linear-gradient(135deg, #46C89A 0%, #2E7D4F 100%)',              // emerald
+  'linear-gradient(135deg, #2F6FB0 0%, #2F6FB0 100%)',              // sapphire
+  'linear-gradient(135deg, #2F6FB0 0%, #1E2E86 100%)',              // deep sapphire
+  'linear-gradient(135deg, #FF7A5A 0%, #B3452F 100%)',              // ruby/ember
+  'linear-gradient(135deg, #2E7D4F 0%, #0A6650 100%)',              // deep emerald
 ];
 
 function hashId(id: string): number {
@@ -57,11 +57,11 @@ function parseEmojiCover(coverUrl?: string | null): string | null {
 
 const MODE_BADGE: Record<string, { label: string; bg: string; border: string; color: string }> = {
   SPEED_RACE:            { label: '⚡', bg: 'linear-gradient(135deg, rgba(245,158,11,0.15), rgba(245,158,11,0.03))', border: 'rgba(245,158,11,0.3)', color: '#D97F06' },
-  GROUP_LIVE_SEQUENTIAL: { label: '📚', bg: 'linear-gradient(135deg, rgba(14,138,107,0.15), rgba(14,138,107,0.03))', border: 'rgba(14,138,107,0.3)', color: '#0E8A6B' },
-  SEQUENTIAL:            { label: '📚', bg: 'linear-gradient(135deg, rgba(14,138,107,0.15), rgba(14,138,107,0.03))', border: 'rgba(14,138,107,0.3)', color: '#0E8A6B' },
-  TEAM_VS_TEAM:          { label: '⚔️', bg: 'linear-gradient(135deg, rgba(45,70,200,0.15), rgba(45,70,200,0.03))', border: 'rgba(45,70,200,0.3)', color: '#2D46C8' },
-  BATTLE_ROYALE:         { label: '💀', bg: 'linear-gradient(135deg, rgba(45,70,200,0.15), rgba(45,70,200,0.03))', border: 'rgba(45,70,200,0.3)', color: '#2D46C8' },
-  SUDDEN_DEATH:          { label: '🥊', bg: 'linear-gradient(135deg, rgba(224,53,75,0.15), rgba(224,53,75,0.03))', border: 'rgba(224,53,75,0.3)', color: '#E0354B' },
+  GROUP_LIVE_SEQUENTIAL: { label: '📚', bg: 'linear-gradient(135deg, rgba(46,125,79,0.15), rgba(46,125,79,0.03))', border: 'rgba(46,125,79,0.3)', color: '#2E7D4F' },
+  SEQUENTIAL:            { label: '📚', bg: 'linear-gradient(135deg, rgba(46,125,79,0.15), rgba(46,125,79,0.03))', border: 'rgba(46,125,79,0.3)', color: '#2E7D4F' },
+  TEAM_VS_TEAM:          { label: '⚔️', bg: 'linear-gradient(135deg, rgba(47,111,176,0.15), rgba(47,111,176,0.03))', border: 'rgba(47,111,176,0.3)', color: '#2F6FB0' },
+  BATTLE_ROYALE:         { label: '💀', bg: 'linear-gradient(135deg, rgba(47,111,176,0.15), rgba(47,111,176,0.03))', border: 'rgba(47,111,176,0.3)', color: '#2F6FB0' },
+  SUDDEN_DEATH:          { label: '🥊', bg: 'linear-gradient(135deg, rgba(179,69,47,0.15), rgba(179,69,47,0.03))', border: 'rgba(179,69,47,0.3)', color: '#B3452F' },
 };
 
 export default function QuizSetCard({ quizSet, onClick }: Props) {
@@ -76,9 +76,9 @@ export default function QuizSetCard({ quizSet, onClick }: Props) {
 
   const difficultyMeta: { label: string; color: string } | null = (() => {
     switch ((quizSet.difficulty ?? '').toUpperCase()) {
-      case 'EASY':   return { label: t('groups.quizCard.difficultyEasy'), color: '#0E8A6B' };
+      case 'EASY':   return { label: t('groups.quizCard.difficultyEasy'), color: '#2E7D4F' };
       case 'MEDIUM': return { label: '⚡ ' + t('groups.quizCard.difficultyMedium'), color: '#D97F06' };
-      case 'HARD':   return { label: '🔥 ' + t('groups.quizCard.difficultyHard'), color: '#E0354B' };
+      case 'HARD':   return { label: '🔥 ' + t('groups.quizCard.difficultyHard'), color: '#B3452F' };
       default: return null;
     }
   })();

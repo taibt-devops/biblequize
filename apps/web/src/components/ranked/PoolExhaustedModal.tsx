@@ -39,14 +39,14 @@ export default function PoolExhaustedModal({
           style={{
             fontSize: 22,
             fontWeight: 800,
-            color: '#16151B',
+            color: '#1D2B22',
             margin: '12px 0 8px',
           }}
         >
           {t('ranked.pool_exhausted.title')}
         </h2>
 
-        <p style={{ fontSize: 14, color: '#6C6A62', lineHeight: 1.5, margin: 0 }}>
+        <p style={{ fontSize: 14, color: '#4D3A1F', lineHeight: 1.5, margin: 0 }}>
           {canUnlockNext
             ? t('ranked.pool_exhausted.body')
             : t('ranked.pool_exhausted.no_unlock_body')}
@@ -67,7 +67,7 @@ export default function PoolExhaustedModal({
                   padding: '12px 16px',
                   borderRadius: 12,
                   border: 'none',
-                  background: 'linear-gradient(135deg, #FF9D2E 0%, #FF5A45 55%, #E0354B 100%)',
+                  background: 'linear-gradient(135deg, #FF9D2E 0%, #FF5A45 55%, #B3452F 100%)',
                   color: '#FFFFFF',
                   fontSize: 14,
                   fontWeight: 800,
@@ -84,8 +84,8 @@ export default function PoolExhaustedModal({
                   padding: '12px 16px',
                   borderRadius: 12,
                   background: 'transparent',
-                  border: '1px solid #E7E4DA',
-                  color: '#6C6A62',
+                  border: '1px solid #C9B58C',
+                  color: '#4D3A1F',
                   fontSize: 14,
                   fontWeight: 600,
                   cursor: 'pointer',
@@ -103,8 +103,8 @@ export default function PoolExhaustedModal({
                 padding: '12px 16px',
                 borderRadius: 12,
                 background: 'transparent',
-                border: '1px solid #E7E4DA',
-                color: '#6C6A62',
+                border: '1px solid #C9B58C',
+                color: '#4D3A1F',
                 fontSize: 14,
                 fontWeight: 600,
                 cursor: 'pointer',

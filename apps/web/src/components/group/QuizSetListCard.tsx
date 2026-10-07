@@ -11,13 +11,13 @@ const HEX = {
   gold: '#D97F06',          // bq-amber-deep (contrast-safe on light)
   goldHover: '#F59E0B',     // bq-amber
   navy: '#FFFFFF',          // fg on filled jewel buttons
-  textPrimary: '#16151B',   // bq-ink
-  textMuted: '#6C6A62',     // bq-ink-soft
-  textDim: '#A8A69C',       // bq-ink-faint
-  iconText: '#6C6A62',      // bq-ink-soft
-  green: '#0E8A6B',         // bq-emerald
-  blue: '#2D46C8',          // bq-sapphire
-  red: '#E0354B',           // bq-ruby
+  textPrimary: '#1D2B22',   // bq-ink
+  textMuted: '#4D3A1F',     // bq-ink-soft
+  textDim: '#6B5530',       // bq-ink-faint
+  iconText: '#4D3A1F',      // bq-ink-soft
+  green: '#2E7D4F',         // bq-emerald
+  blue: '#2F6FB0',          // bq-sapphire
+  red: '#B3452F',           // bq-ruby
   copper: '#D97F06',        // bq-amber-deep
 }
 
@@ -43,10 +43,10 @@ interface Props {
 
 function statusBadge(status: QuizSet['publishStatus']): { label: string; bg: string; color: string; icon: string } | null {
   switch (status) {
-    case 'PUBLISHED': return { label: 'Đã xuất bản', bg: 'rgba(14, 138, 107, 0.12)', color: HEX.green,  icon: 'check_circle' }
+    case 'PUBLISHED': return { label: 'Đã xuất bản', bg: 'rgba(46,125,79, 0.12)', color: HEX.green,  icon: 'check_circle' }
     case 'DRAFT':     return { label: 'Bản nháp',    bg: 'rgba(108, 106, 98, 0.12)', color: HEX.textMuted, icon: 'edit_note' }
     case 'ARCHIVED':  return { label: 'Đã lưu trữ',  bg: 'rgba(217, 127, 6, 0.12)',  color: HEX.copper, icon: 'archive' }
-    case 'SOFT_DELETED': return { label: 'Đã xóa',  bg: 'rgba(224, 53, 75, 0.12)',   color: HEX.red, icon: 'delete' }
+    case 'SOFT_DELETED': return { label: 'Đã xóa',  bg: 'rgba(179,69,47, 0.12)',   color: HEX.red, icon: 'delete' }
     default: return null
   }
 }
@@ -174,7 +174,7 @@ export default function QuizSetListCard({
         data-status={qs.publishStatus}
         style={{
           background: '#FFFFFF',
-          border: '1px solid #E7E4DA',
+          border: '1px solid #C9B58C',
           borderRadius: 16,
           overflow: 'hidden',
           display: 'flex',
@@ -190,7 +190,7 @@ export default function QuizSetListCard({
             alignItems: 'center',
             gap: 8,
             padding: '14px 16px',
-            borderBottom: '1px solid #E7E4DA',
+            borderBottom: '1px solid #C9B58C',
           }}
         >
           {badge && (
@@ -243,7 +243,7 @@ export default function QuizSetListCard({
                     position: 'absolute', top: 32, right: 0, zIndex: 30,
                     minWidth: 180,
                     background: '#FFFFFF',
-                    border: '1px solid #E7E4DA',
+                    border: '1px solid #C9B58C',
                     borderRadius: 10, padding: 4,
                     boxShadow: '0 18px 40px -24px rgba(20,20,30,.28)',
                   }}
@@ -291,7 +291,7 @@ export default function QuizSetListCard({
           <div
             style={{
               display: 'flex', alignItems: 'center', gap: 12,
-              padding: '10px 12px', background: '#F2F0E7',
+              padding: '10px 12px', background: '#EFE3C3',
               borderRadius: 10, fontSize: 12, color: HEX.textMuted,
             }}
           >
@@ -313,9 +313,9 @@ export default function QuizSetListCard({
         {/* ACTIONS FOOTER — state-aware */}
         <div
           style={{
-            padding: 12, borderTop: '1px solid #E7E4DA',
+            padding: 12, borderTop: '1px solid #C9B58C',
             display: 'flex', gap: 8,
-            background: isDraft ? '#F2F0E7' : '#FBFAF5',
+            background: isDraft ? '#EFE3C3' : '#FBFAF5',
           }}
         >
           {isPublished && isLeader && (
@@ -411,7 +411,7 @@ export default function QuizSetListCard({
                 data-testid="btn-wait-leader"
                 style={{
                   flex: 1, padding: '11px 14px', borderRadius: 10,
-                  background: '#F2F0E7', color: HEX.textMuted,
+                  background: '#EFE3C3', color: HEX.textMuted,
                   fontSize: 12, textAlign: 'center', fontStyle: 'italic',
                 }}
               >Đợi trưởng nhóm bắt đầu</div>
@@ -454,8 +454,8 @@ export default function QuizSetListCard({
                 onClick={e => { stop(e); navigate(`/groups/${groupId}/quiz-sets/${qs.id}`) }}
                 style={{
                   flex: 1,
-                  background: '#F2F0E7', color: HEX.iconText,
-                  border: '1px solid #E7E4DA',
+                  background: '#EFE3C3', color: HEX.iconText,
+                  border: '1px solid #C9B58C',
                   padding: '11px 14px', borderRadius: 10,
                   fontWeight: 700, fontSize: 14, cursor: 'pointer',
                   display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
@@ -488,7 +488,7 @@ export default function QuizSetListCard({
           style={{
             position: 'fixed', bottom: 16, left: '50%', transform: 'translateX(-50%)',
             zIndex: 60, padding: '8px 14px', borderRadius: 8,
-            background: 'rgba(224, 53, 75, 0.95)', color: '#fff',
+            background: 'rgba(179,69,47, 0.95)', color: '#fff',
             fontSize: 12, fontFamily: 'inherit', cursor: 'pointer',
           }}
           onClick={() => setCoPlayError(null)}
@@ -503,13 +503,13 @@ function DifficultyPill({ label, count, color }: { label: string; count: number;
   return (
     <div
       style={{
-        flex: 1, background: '#F2F0E7',
+        flex: 1, background: '#EFE3C3',
         borderRadius: 8, padding: '6px 8px', textAlign: 'center',
-        border: '1px solid #E7E4DA',
+        border: '1px solid #C9B58C',
       }}
     >
       <span style={{ display: 'block', fontWeight: 700, fontSize: 15, marginBottom: 1, color }}>{count}</span>
-      <span style={{ fontSize: 10, color: '#6C6A62', textTransform: 'uppercase', letterSpacing: 0.3 }}>{label}</span>
+      <span style={{ fontSize: 10, color: '#4D3A1F', textTransform: 'uppercase', letterSpacing: 0.3 }}>{label}</span>
     </div>
   )
 }
@@ -524,7 +524,7 @@ function Stat({ icon, children }: { icon: string; children: React.ReactNode }) {
 }
 
 function Divider() {
-  return <div style={{ width: 1, height: 12, background: '#E7E4DA' }} />
+  return <div style={{ width: 1, height: 12, background: '#C9B58C' }} />
 }
 
 interface IconButtonProps {
@@ -555,7 +555,7 @@ function MenuItem({
         fontSize: 13, fontFamily: 'inherit', textAlign: 'left',
         cursor: 'pointer',
       }}
-      onMouseEnter={e => { e.currentTarget.style.background = danger ? 'rgba(224, 53, 75, 0.10)' : 'rgba(20,20,30,0.05)' }}
+      onMouseEnter={e => { e.currentTarget.style.background = danger ? 'rgba(179,69,47, 0.10)' : 'rgba(20,20,30,0.05)' }}
       onMouseLeave={e => { e.currentTarget.style.background = 'transparent' }}
     >
       <span className="material-symbols-outlined" style={{ fontSize: 17 }}>{icon}</span>
@@ -576,9 +576,9 @@ function IconButton(props: IconButtonProps) {
       data-testid={props['data-testid']}
       style={{
         width: 42, height: 42,
-        background: '#F2F0E7',
-        border: '1px solid #E7E4DA',
-        color: '#6C6A62', borderRadius: 10,
+        background: '#EFE3C3',
+        border: '1px solid #C9B58C',
+        color: '#4D3A1F', borderRadius: 10,
         cursor: disabled ? 'not-allowed' : 'pointer',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         fontFamily: 'inherit', opacity: disabled ? 0.5 : 1,

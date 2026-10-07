@@ -10,7 +10,7 @@ export default function CellGroupPulseCard() {
     <div
       data-testid="cell-group-pulse-placeholder"
       className="rounded-2xl p-4 border border-dashed border-bq-emerald/25"
-      style={{ background: 'rgba(14,138,107,0.06)' }}
+      style={{ background: 'rgba(46,125,79,0.06)' }}
     >
       <div className="flex items-center gap-3">
         <div className="text-3xl opacity-40 select-none">💚</div>

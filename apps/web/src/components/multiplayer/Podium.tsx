@@ -44,7 +44,7 @@ export function Podium({ results, compact = false }: Props) {
     if (rank === 2) return 'linear-gradient(180deg, #e5e7eb 0%, #9ca3af 100%)';
     return 'linear-gradient(180deg, #cd7f32 0%, #8b5a2b 100%)';
   };
-  const numberColor = (rank: number) => (rank === 3 ? '#fff' : '#11131e');
+  const numberColor = (rank: number) => (rank === 3 ? '#fff' : '#1D2B22');
   const scoreColor = (rank: number) =>
     rank === 1 ? '#e8a832' : rank === 2 ? '#9ca3af' : '#cd7f32';
 
@@ -120,9 +120,9 @@ export function Podium({ results, compact = false }: Props) {
                   height: '100%',
                   borderRadius: '50%',
                   background: avatarGrads[i % avatarGrads.length],
-                  color: rank === 1 ? '#11131e' : '#fff',
+                  color: rank === 1 ? '#1D2B22' : '#fff',
                   fontSize: isFirst ? (compact ? 18 : 28) : (compact ? 14 : 22),
-                  border: isFirst ? `3px solid #e8a832` : `2px solid #11131e`,
+                  border: isFirst ? `3px solid #e8a832` : `2px solid #1D2B22`,
                 }}
               >
                 {initial}

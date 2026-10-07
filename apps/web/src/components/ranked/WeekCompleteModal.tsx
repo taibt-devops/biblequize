@@ -68,7 +68,7 @@ export default function WeekCompleteModal({
             : t('ranked.week_complete.heading_sm', { week: completedWeek })}
         </div>
 
-        <h2 className="font-display" style={{ fontSize: 22, fontWeight: 800, color: '#16151B', margin: '6px 0 12px' }}>
+        <h2 className="font-display" style={{ fontSize: 22, fontWeight: 800, color: '#1D2B22', margin: '6px 0 12px' }}>
           {isMasteryWeek
             ? t('ranked.week_complete.mastery_week_body')
             : t('ranked.week_complete.heading_lg')}
@@ -76,7 +76,7 @@ export default function WeekCompleteModal({
 
         <p style={{
           fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic',
-          fontSize: 16, color: '#6C6A62', lineHeight: 1.4, margin: 0,
+          fontSize: 16, color: '#4D3A1F', lineHeight: 1.4, margin: 0,
         }}>
           {verse}
         </p>
@@ -119,7 +119,7 @@ export default function WeekCompleteModal({
               onClick={() => { onStartNextWeek(); onClose() }}
               style={{
                 width: '100%', padding: '12px 16px', borderRadius: 12, border: 'none',
-                background: 'linear-gradient(135deg, #FF9D2E 0%, #FF5A45 55%, #E0354B 100%)',
+                background: 'linear-gradient(135deg, #FF9D2E 0%, #FF5A45 55%, #B3452F 100%)',
                 color: '#FFFFFF', fontSize: 14, fontWeight: 800, cursor: 'pointer',
               }}
             >
@@ -132,8 +132,8 @@ export default function WeekCompleteModal({
             style={{
               width: '100%', padding: '12px 16px', borderRadius: 12,
               background: 'transparent',
-              border: '1px solid #E7E4DA',
-              color: '#6C6A62', fontSize: 14, fontWeight: 600, cursor: 'pointer',
+              border: '1px solid #C9B58C',
+              color: '#4D3A1F', fontSize: 14, fontWeight: 600, cursor: 'pointer',
             }}
           >
             {isMasteryWeek

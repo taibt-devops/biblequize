@@ -12,9 +12,9 @@ import AvatarStack from './AvatarStack'
 import { formatBookScope, type PublicRoom } from './types'
 import { MODE_META, type RoomModeId } from '../create-room/modeMeta'
 
-const INDIGO = '#2D46C8'
-const INDIGO_LIGHT = '#2D46C8'
-const INDIGO_GRADIENT = 'linear-gradient(135deg, #2D46C8 0%, #6E86F0 100%)'
+const INDIGO = '#2F6FB0'
+const INDIGO_LIGHT = '#2F6FB0'
+const INDIGO_GRADIENT = 'linear-gradient(135deg, #2F6FB0 0%, #2F6FB0 100%)'
 
 function modeShortLabel(id: string): string {
   switch (id) {
@@ -56,7 +56,7 @@ export default function QuickMatchRoomCard({ room }: { room: PublicRoom }) {
       data-testid="room-card"
       className="rounded-xl p-5 flex flex-col gap-3 relative overflow-hidden transition-transform hover:-translate-y-0.5 bg-bq-white shadow-bq-soft"
       style={{
-        border: `1px solid ${isFull ? '#E7E4DA' : 'rgba(45,70,200,0.30)'}`,
+        border: `1px solid ${isFull ? '#C9B58C' : 'rgba(47,111,176,0.30)'}`,
         cursor: isFull ? 'default' : 'pointer',
       }}
       onClick={() => { if (!isFull) handleJoin() }}
@@ -64,7 +64,7 @@ export default function QuickMatchRoomCard({ room }: { room: PublicRoom }) {
       {/* "Đấu Nhanh" pill (top-right) */}
       <div
         className="absolute top-3 right-3 px-2 py-0.5 rounded-md"
-        style={{ background: 'rgba(45,70,200,0.12)', border: '1px solid rgba(45,70,200,0.30)' }}
+        style={{ background: 'rgba(47,111,176,0.12)', border: '1px solid rgba(47,111,176,0.30)' }}
       >
         <span className="text-[9px] font-bold uppercase tracking-wider" style={{ color: INDIGO_LIGHT }}>
           {t('multiplayer.filterQuickMatch')}
@@ -75,7 +75,7 @@ export default function QuickMatchRoomCard({ room }: { room: PublicRoom }) {
       <div className="flex items-start gap-2 pr-16">
         <div
           className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-          style={{ background: 'rgba(45,70,200,0.10)', border: '1px solid rgba(45,70,200,0.22)' }}
+          style={{ background: 'rgba(47,111,176,0.10)', border: '1px solid rgba(47,111,176,0.22)' }}
         >
           <span className="material-symbols-outlined" style={{ fontSize: 18, color: INDIGO }}>rocket_launch</span>
         </div>
@@ -109,7 +109,7 @@ export default function QuickMatchRoomCard({ room }: { room: PublicRoom }) {
       </div>
 
       {joinError && (
-        <div className="text-[11px] px-2 py-1 rounded-lg" style={{ background: 'rgba(224,53,75,0.10)', color: '#E0354B' }}>
+        <div className="text-[11px] px-2 py-1 rounded-lg" style={{ background: 'rgba(179,69,47,0.10)', color: '#B3452F' }}>
           ⚠ {joinError}
         </div>
       )}
@@ -119,7 +119,7 @@ export default function QuickMatchRoomCard({ room }: { room: PublicRoom }) {
         onClick={(e) => { e.stopPropagation(); handleJoin() }}
         disabled={joining || isFull}
         className="w-full h-9 rounded-lg text-white text-[12px] font-bold transition-opacity hover:opacity-90 disabled:opacity-60"
-        style={{ background: isFull ? '#F2F0E7' : INDIGO_GRADIENT, color: isFull ? '#A8A69C' : '#fff' }}
+        style={{ background: isFull ? '#EFE3C3' : INDIGO_GRADIENT, color: isFull ? '#6B5530' : '#fff' }}
       >
         {joining ? t('multiplayer.quickMatch.ctaJoining') : isFull ? t('multiplayer.quickMatch.ctaFull') : t('multiplayer.quickMatch.ctaEnterNow')}
       </button>

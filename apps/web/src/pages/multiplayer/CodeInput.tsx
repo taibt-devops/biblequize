@@ -59,12 +59,12 @@ export default function CodeInput({ onJoin, disabled, error }: Props) {
             className="text-center text-[22px] font-semibold text-bq-ink outline-none transition-colors"
             style={{
               width: 44, height: 52,
-              background: '#F2F0E7',
-              border: `1px solid ${c ? '#D97F06' : '#E7E4DA'}`,
+              background: '#EFE3C3',
+              border: `1px solid ${c ? '#D97F06' : '#C9B58C'}`,
               borderRadius: 10,
             }}
             onFocus={(e) => { e.currentTarget.style.borderColor = '#D97F06' }}
-            onBlur={(e) => { e.currentTarget.style.borderColor = c ? '#D97F06' : '#E7E4DA' }}
+            onBlur={(e) => { e.currentTarget.style.borderColor = c ? '#D97F06' : '#C9B58C' }}
           />
         ))}
       </div>
@@ -73,9 +73,9 @@ export default function CodeInput({ onJoin, disabled, error }: Props) {
         disabled={!ready}
         className="w-full inline-flex items-center justify-center gap-1.5 h-10 rounded-lg text-[13px] font-semibold transition-colors disabled:cursor-not-allowed"
         style={{
-          background: ready ? 'var(--bq-action)' : '#F2F0E7',
-          color: ready ? 'var(--bq-action-fg)' : '#A8A69C',
-          border: ready ? 'none' : '1px solid #E7E4DA',
+          background: ready ? 'var(--bq-action)' : '#EFE3C3',
+          color: ready ? 'var(--bq-action-fg)' : '#6B5530',
+          border: ready ? 'none' : '1px solid #C9B58C',
         }}
       >
         {disabled ? t('multiplayer.join.joining') : t('multiplayer.join.submit')}
@@ -83,7 +83,7 @@ export default function CodeInput({ onJoin, disabled, error }: Props) {
       {error && (
         <div
           className="mt-2 text-[11px] px-2 py-1.5 rounded-lg"
-          style={{ background: 'rgba(224,53,75,0.10)', color: '#E0354B' }}
+          style={{ background: 'rgba(179,69,47,0.10)', color: '#B3452F' }}
         >
           ⚠ {error}
         </div>

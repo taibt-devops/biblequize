@@ -429,7 +429,7 @@ export default function QuizSetEditor({
         style={{
           position: 'fixed', top: 80, right: 24, zIndex: 100,
           padding: '10px 18px', borderRadius: 8, fontSize: 13, fontWeight: 600,
-          background: '#0E8A6B', color: '#FFFFFF',
+          background: '#2E7D4F', color: '#FFFFFF',
           boxShadow: '0 18px 40px -24px rgba(20,20,30,0.28)',
           display: 'flex', alignItems: 'center', gap: 6,
           pointerEvents: 'none',
