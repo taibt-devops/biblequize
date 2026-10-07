@@ -19,10 +19,10 @@
     backdrop-filter: blur(12px);
   }
   .gold-gradient {
-    background: linear-gradient(135deg, #e8a832 0%, #e7c268 100%);
+    background: #FFC93C;
   }
   .gold-gradient-bg {
-    background: linear-gradient(135deg, #f8bd45 0%, #e7c268 100%);
+    background: #FFC93C;
   }
   .gold-glow {
     box-shadow: 0 0 20px rgba(232, 168, 50, 0.2);
@@ -2579,8 +2579,17 @@ select {
 }
 
 .gold-gradient:hover:not(:disabled) {
-  background: linear-gradient(90deg, #f4d36e 0%, #ffe080 50%, #f4d36e 100%);
-  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+  filter: brightness(1.05);
+}
+
+button.gold-gradient, a.gold-gradient {
+  border: 3px solid #1D2B22;
+  box-shadow: 0 5px 0 #1D2B22;
+  color: #1D2B22;
+}
+button.gold-gradient:active:not(:disabled), a.gold-gradient:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #1D2B22;
 }
 
 /* ──────────────────────────────────────────────────────────────────────────

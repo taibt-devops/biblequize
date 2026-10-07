@@ -22,7 +22,7 @@ export default function QuizLanguageSelect({ onChange, className = '' }: Props) 
         type="button"
         onClick={() => handleChange('vi')}
         className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-          lang === 'vi' ? 'bg-secondary text-on-secondary' : 'text-on-surface-variant hover:text-on-surface'
+          lang === 'vi' ? 'bg-bq-amber text-bq-ink border-2 border-bq-ink' : 'text-on-surface-variant hover:text-on-surface'
         }`}
       >
         VI
@@ -31,7 +31,7 @@ export default function QuizLanguageSelect({ onChange, className = '' }: Props) 
         type="button"
         onClick={() => handleChange('en')}
         className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-          lang === 'en' ? 'bg-secondary text-on-secondary' : 'text-on-surface-variant hover:text-on-surface'
+          lang === 'en' ? 'bg-bq-amber text-bq-ink border-2 border-bq-ink' : 'text-on-surface-variant hover:text-on-surface'
         }`}
       >
         EN
