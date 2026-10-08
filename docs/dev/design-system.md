@@ -64,8 +64,49 @@ Nút đáp án là "biển gỗ" tô màu C5, viền mực 3px, ô chữ cái tr
 - **Đèn nhiệm vụ:** đèn sáng = xong, đèn mờ = đang làm, đèn tắt = chưa làm (luôn kèm số và thanh, không chỉ dựa vào màu).
 - **Khiên hạng:** 6 ảnh khiên theo C1 (`/images/lk/tier-1..6.webp`). Màu chữ hạng (`data/tiers.ts`) đã làm đậm cho nền giấy: `#6B5530` · `#2E7D4F` · `#2F6FB0` · `#7A4AA0` · `#A8690C` · `#B3452F`.
 - **Chữ sticker:** số/tiêu đề lớn cần nổi bật thì dùng chữ mực + bóng vàng lệch xuống: `color: #1D2B22; text-shadow: 0 0.06em 0 #FFC93C`. KHÔNG dùng chữ tô gradient (`background-clip: text`): mọi gradient Lữ Khách đều đi qua vàng sáng và biến mất trên nền kem.
-- **Bục xếp hạng:** khối vàng (hạng 1) / giấy (2) / rãnh (3), viền mực, điểm chữ mực.
-- **Trang trống / lỗi:** 404 = lữ khách cầm bản đồ trắng (`hero-lost.webp`); lỗi = lữ khách ngồi nghỉ cạnh đèn tắt (`hero-rest.webp`); danh sách trống = icon trong vòng tròn lá viền mực (`EmptyState`).
+- **Bục xếp hạng:** khối gỗ vàng (hạng 1) / bạc (2) / đồng (3) có vân ván, viền mực, điểm chữ mực; hạng 1 có vương miện + hào quang vàng.
+- **Trang trống / lỗi:** 404 / lỗi tải = lữ khách cầm bản đồ trắng (`hero-lost.webp`); chưa có gì / hết lượt = lữ khách ngồi nghỉ (`hero-rest.webp`); mời bắt đầu = lữ khách đứng (`hero.webp`); thắng / mừng = `hero-cheer.webp`. Luôn kèm một nút vàng dẫn đi tiếp.
+
+## Mỗi màn là một địa điểm (LKF, 2026-10-08)
+
+Mọi màn người dùng là một nơi trong thế giới của lữ khách: tranh nền cố định phía sau, tiêu đề trên biển gỗ, nội dung trên giấy viền mực. Admin giữ dạng công cụ (không tranh).
+
+| Địa điểm (`PlaceKey`) | Ảnh | Màn |
+|---|---|---|
+| `meadow` | `bq-quiz.webp` | Quiz, Kết quả Quiz |
+| `map` | `bq-journey.webp` | Hành trình 66 sách |
+| `study` (phòng đọc) | `place-study.webp` | Luyện Tập, Học Thuộc, Ôn tập, Chủ đề tuần, Bộ đề của tôi, Trợ giúp, Chính sách, Điều khoản |
+| `arena` (sân đấu) | `place-arena.webp` | Đấu Hạng, Bài Giáo Lý, Kết quả Đấu Hạng, Giải đấu, Vòng Tốc độ |
+| `post` (nhà bưu điện) | `place-post.webp` | Thử thách hôm nay (lá thư bồ câu) |
+| `summit` (đỉnh đồi) | `place-summit.webp` | Xếp hạng |
+| `camp` (lều trại) | `place-camp.webp` | Cá nhân, Thành tích, Ngoại hình |
+| `square` (quảng trường tối) | `place-square.webp` | Phòng chơi, Tạo/Vào phòng, Phòng chờ, chơi phòng, Bí ẩn |
+| `chapel` (gốc sồi nhà nguyện) | `place-chapel.webp` | Nhóm + trang con |
+| `gate` (cổng làng bình minh) | `place-gate.webp` | Đăng nhập, Đăng ký, Onboarding, Thử quiz, Landing, Câu đố Kinh Thánh |
+
+Trang chủ là cảnh riêng (`components/home/scene/*`: cột biển chỉ đường, sáng / hoàng hôn / đêm).
+
+### Bộ thành phần (`components/lk/Place.tsx`)
+
+- `PlaceBackdrop place veil` — tranh cố định `-z-10` + lớp kem (`soft` / `mid` / `strong`; trang nhiều chữ dùng `strong`). Gốc trang KHÔNG được có `bg-bq-paper` (che mất tranh).
+- `Plaque` — biển gỗ cho tiêu đề trang / mục (`as="h1|h2|h3|span"`), có thể kèm ảnh nhỏ trước chữ.
+- `ScrollPanel` — cuộn giấy hai trục gỗ (câu hỏi, kết quả).
+- `Medal size` — huy chương viền gỗ cho số liệu và icon.
+- `TrackBar pct fill` — thanh tiến độ gỗ.
+- `lkClass` — `.medal`, `.plaque`, `.bob` (nhún), `.star` (sao bật), `.range` (thanh trượt gỗ).
+
+### Huy hiệu người chơi (`components/lk/PlayerCrest.tsx`)
+
+- `PlayerCrest name avatarUrl tierId size showTier frame` — ảnh đại diện trong vành đinh tán làm bằng chất liệu của bậc (1 gỗ sáng · 2 gỗ sẫm · 3 đồng · 4 bạc · 5 vàng · 6 vàng rực có hào quang; bậc vàng có vệt sáng chạy chậm, tắt khi giảm chuyển động), khiên bậc gắn góc dưới phải. Không có ảnh → chân dung pastel theo tên + chữ cái đầu; ảnh lỗi → tự quay về chân dung.
+- `frame` = khung avatar đã đeo (1..6) → vành theo màu tên khung (Viền Xám, Xanh Nhạt, Xanh Dương, Tím Lửa, Vàng Sao, Vàng Đỏ Hoàng Gia).
+- `TierRibbon tierId` — dải tên bậc, màu riêng từng bậc.
+- Dùng cho mọi chỗ hiện người chơi (bục + hàng xếp hạng, Cá nhân, Ngoại hình, Phòng chờ).
+
+### Chữ trên màn
+
+- Không có nhãn chữ IN HOA giãn chữ ("eyebrow"); nhãn nhỏ viết thường, đậm, ≥ 12px.
+- Không tô màu một cụm chữ trong tiêu đề; tiêu đề một màu mực.
+- Số liệu lớn dùng `font-display` + `tabular-nums`; `font-mono` (monospace hệ thống) chỉ cho mã kỹ thuật / ID (Admin). Orbitron đã gỡ.
 
 ## Ảnh (`apps/web/public/images/lk/`)
 
