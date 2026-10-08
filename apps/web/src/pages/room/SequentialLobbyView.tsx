@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { PlaceBackdrop } from '../../components/lk/Place'
 
 type Player = {
   id: string; userId: string; username: string; avatarUrl?: string;
@@ -41,7 +42,8 @@ const SequentialLobbyView: React.FC<Props> = ({
   // Error state — host closed room, room expired, network failure on retry.
   if (error) {
     return (
-      <div className="min-h-screen flex items-center justify-center px-4" style={{ background: '#FBFAF5' }}>
+      <div className="relative min-h-screen flex items-center justify-center px-4">
+        <PlaceBackdrop place="square" veil="strong" />
         <div className="text-center space-y-4 max-w-sm">
           <span className="material-symbols-outlined text-bq-ruby text-5xl">error</span>
           <p className="text-bq-ink text-base">{error}</p>
@@ -54,7 +56,8 @@ const SequentialLobbyView: React.FC<Props> = ({
   }
 
   return (
-    <div className="min-h-screen text-bq-ink px-4 py-5 max-w-3xl mx-auto" style={{ background: '#FBFAF5' }}>
+    <div className="relative min-h-screen text-bq-ink px-4 py-5 max-w-3xl mx-auto">
+      <PlaceBackdrop place="square" veil="strong" />
       {/* Reconnecting banner — same UX as the standard lobby */}
       {reconnecting && (
         <div className="fixed top-0 left-0 right-0 z-[70] bg-bq-ruby/90 text-white text-center py-2 text-sm font-medium">

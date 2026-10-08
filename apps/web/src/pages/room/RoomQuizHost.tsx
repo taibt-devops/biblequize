@@ -4,6 +4,7 @@ import { fetchCurrentQuestion, useRoomChannel } from '../../hooks/useRoomChannel
 import { api } from '../../api/client';
 import { PodiumBlock } from './RoomOverlays';
 import HeadToHead from '../../components/multiplayer/HeadToHead';
+import { PlaceBackdrop } from '../../components/lk/Place'
 import type { QuestionStartData, RoomEvent, RoomQuestion } from '../../types/room';
 
 /**
@@ -308,11 +309,8 @@ const RoomQuizHost: React.FC = () => {
       <div
         data-testid="quiz-end-host-page"
         className="min-h-screen text-bq-ink relative"
-        style={{
-          background: 'radial-gradient(ellipse at top, rgba(245,158,11,0.18) 0%, #FBFAF5 60%)',
-          fontFamily: "'Be Vietnam Pro', sans-serif",
-        }}
       >
+        <PlaceBackdrop place="square" veil="mid" />
         <div className="mx-auto w-full max-w-3xl px-4 lg:px-6 pb-10">
           <header className="pt-4 flex items-center">
             <span
@@ -484,9 +482,9 @@ const RoomQuizHost: React.FC = () => {
   return (
     <div
       data-testid="room-quiz-host-page"
-      className="min-h-screen text-bq-ink"
-      style={{ background: '#FBFAF5', fontFamily: "'Be Vietnam Pro', sans-serif" }}
+      className="relative min-h-screen text-bq-ink"
     >
+      <PlaceBackdrop place="square" veil="strong" />
       {reconnecting && (
         <div className="fixed top-0 left-0 right-0 z-[70] text-center py-2 text-sm font-medium text-white"
              style={{ background: 'rgba(179,69,47,0.92)' }}>

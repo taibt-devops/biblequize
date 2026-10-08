@@ -1,6 +1,13 @@
 import React, { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const FILL_STYLE = { fontVariationSettings: "'FILL' 1" } as const
+
+/** One line of overlay copy from room.overlay.* (the overlays are expression components). */
+function T({ k, n }: { k: string; n?: number }) {
+  const { t } = useTranslation()
+  return <>{t(`room.overlay.${k}`, { n })}</>
+}
 
 // Canonical definition lives in src/types/room.ts (FMR-1); re-exported here
 // so existing imports (QuizEndScreen, Podium, tests) keep working.
@@ -65,7 +72,7 @@ export const PodiumScreen: React.FC<{ results: PlayerScore[]; onClose: () => voi
       </div>
       <div className="flex items-center gap-3 mb-10">
         <span className="material-symbols-outlined text-bq-amberd text-4xl" style={FILL_STYLE}>trophy</span>
-        <h1 className="font-display text-3xl md:text-4xl font-black tracking-tighter text-bq-ink">KET QUA CUOI</h1>
+        <h1 className="font-display text-3xl md:text-4xl font-black tracking-tighter text-bq-ink"><T k="finalResults" /></h1>
       </div>
       <div className="flex items-end gap-4 mb-10">
         {podiumOrder.map((p) => {
@@ -78,7 +85,7 @@ export const PodiumScreen: React.FC<{ results: PlayerScore[]; onClose: () => voi
                 </span>
               </div>
               <div className="text-bq-ink font-bold text-sm mb-1 max-w-[90px] text-center truncate">{p!.username}</div>
-              <div className="text-bq-amberd text-xs font-bold mb-2">{p!.score} diem</div>
+              <div className="text-bq-amberd text-xs font-bold mb-2"><T k="points" n={p!.score} /></div>
               <div className={`${podiumHeights[rank]} w-24 bg-gradient-to-t ${podiumColors[rank]} rounded-t-2xl flex items-end justify-center pb-3 border border-bq-hair`}>
                 <span className="text-white font-black text-2xl font-display">#{rank + 1}</span>
               </div>
@@ -87,7 +94,7 @@ export const PodiumScreen: React.FC<{ results: PlayerScore[]; onClose: () => voi
         })}
       </div>
       <div className="w-full max-w-sm bg-bq-white rounded-2xl border border-bq-hair shadow-bq-soft p-5 mb-8">
-        <div className="text-[12px] font-bold text-bq-ink2 mb-4">Tat ca nguoi choi</div>
+        <div className="text-[12px] font-bold text-bq-ink2 mb-4"><T k="allPlayers" /></div>
         <div className="space-y-2 max-h-44 overflow-auto">
           {results.map((r, idx) => (
             <div key={r.playerId} className="flex items-center justify-between p-2.5 rounded-xl bg-bq-inset border border-bq-hair">
@@ -101,7 +108,7 @@ export const PodiumScreen: React.FC<{ results: PlayerScore[]; onClose: () => voi
         </div>
       </div>
       <button onClick={onClose} className="bg-bq-action text-bq-ink font-black py-3.5 px-10 rounded-2xl text-sm uppercase tracking-widest shadow-bq-action active:scale-95 transition-all hover:brightness-110">
-        Ve Phong Cho
+        <T k="backToLobby" />
       </button>
     </div>
   )
@@ -118,13 +125,13 @@ export const EliminationScreen: React.FC<{
     <div className="w-20 h-20 rounded-full bg-bq-ruby/10 border-2 border-bq-ruby/30 flex items-center justify-center mb-6">
       <span className="material-symbols-outlined text-bq-ruby text-4xl" style={FILL_STYLE}>skull</span>
     </div>
-    <h1 className="font-display text-3xl font-black tracking-tighter text-bq-ruby mb-2">Ban da bi loai!</h1>
+    <h1 className="font-display text-3xl font-black tracking-tighter text-bq-ruby mb-2"><T k="eliminated" /></h1>
     <p className="text-bq-ink2 text-lg mb-1">
       Thu hang: <b className="text-bq-ink font-black">#{rank}</b>/{totalPlayers}
     </p>
     {correctIndex !== null && question && (
       <div className="mt-4 mb-8 bg-bq-white rounded-2xl border border-bq-hair shadow-bq-soft px-5 py-4 max-w-xs text-center">
-        <span className="text-[12px] font-bold text-bq-ink2 block mb-2">Dap an dung</span>
+        <span className="text-[12px] font-bold text-bq-ink2 block mb-2"><T k="correctAnswer" /></span>
         <span className="text-bq-emerald font-bold text-sm">
           {String.fromCharCode(65 + correctIndex)}. {question.options[correctIndex]}
         </span>
@@ -132,7 +139,7 @@ export const EliminationScreen: React.FC<{
     )}
     <button onClick={onSpectate} className="flex items-center gap-2 py-3 px-8 bg-bq-inset hover:bg-bq-paper text-bq-ink font-bold rounded-2xl transition-colors border border-bq-hair">
       <span className="material-symbols-outlined text-lg">visibility</span>
-      Xem tiep (Spectator)
+      <T k="spectate" />
     </button>
   </div>
 )
@@ -180,14 +187,14 @@ export const TeamWinScreen: React.FC<{
       </span>
     </div>
     <h1 className="font-display text-3xl font-black tracking-tighter text-bq-ink mb-2">
-      {winner === 'TIE' ? 'Hoa!' : winner === 'A' ? 'Team A thang!' : 'Team B thang!'}
+      <T k={winner === 'TIE' ? 'tie' : winner === 'A' ? 'teamAWins' : 'teamBWins'} />
     </h1>
     <div className="flex gap-8 mb-8 text-lg font-bold">
       <span className="text-bq-sapphire flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-bq-sapphire" /> {scoreA}</span>
       <span className="text-bq-ruby flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-bq-ruby" /> {scoreB}</span>
     </div>
     <div className="w-full max-w-sm bg-bq-white rounded-2xl border border-bq-hair shadow-bq-soft p-5 mb-8">
-      <div className="text-[12px] font-bold text-bq-ink2 mb-4">Diem ca nhan</div>
+      <div className="text-[12px] font-bold text-bq-ink2 mb-4"><T k="personalScores" /></div>
       <div className="space-y-2 max-h-48 overflow-auto">
         {leaderboard.map((r) => (
           <div key={r.playerId} className="flex items-center justify-between p-2.5 rounded-xl bg-bq-inset border border-bq-hair">
@@ -198,7 +205,7 @@ export const TeamWinScreen: React.FC<{
       </div>
     </div>
     <button onClick={onClose} className="bg-bq-action text-bq-ink font-black py-3.5 px-10 rounded-2xl text-sm uppercase tracking-widest shadow-bq-action active:scale-95 transition-all hover:brightness-110">
-      Ve Phong Cho
+      <T k="backToLobby" />
     </button>
   </div>
 )
@@ -218,12 +225,12 @@ export const MatchResultOverlay: React.FC<{
           </span>
         </div>
         <div className={`text-xl font-black mb-2 tracking-tight ${iWon ? 'text-bq-amberd' : 'text-bq-ruby'}`}>
-          {iWon ? 'Ban thang! Giu ghe nong!' : 'Ban thua! Xep hang cho...'}
+          <T k={iWon ? 'youWon' : 'youLost'} />
         </div>
         <div className="text-bq-ink2 text-sm">
-          <span className="text-bq-emerald font-bold">{winnerName}</span> thang — <span className="text-bq-ruby font-bold">{loserName}</span> thua
+          <span className="text-bq-emerald font-bold">{winnerName}</span> <T k="won" /> — <span className="text-bq-ruby font-bold">{loserName}</span> <T k="lost" />
         </div>
-        <div className="text-bq-ink3 text-xs mt-3">Tran tiep sap bat dau...</div>
+        <div className="text-bq-ink3 text-xs mt-3"><T k="nextMatchSoon" /></div>
       </div>
     </div>
   )
@@ -237,7 +244,7 @@ export const SdArenaHeader: React.FC<{
     <div className="flex items-center justify-center gap-6 text-sm font-bold">
       <div className="text-center">
         <div className={`text-base font-black ${championName === me ? 'text-bq-amberd' : 'text-bq-ink'}`}>
-          {championName}{championName === me ? ' (ban)' : ''}
+          {championName}{championName === me ? <> <T k="you" /></> : ''}
         </div>
         <div className="flex items-center justify-center gap-1 mt-1">
           <span className="material-symbols-outlined text-bq-amberd text-sm" style={FILL_STYLE}>military_tech</span>
@@ -246,7 +253,7 @@ export const SdArenaHeader: React.FC<{
         {championStreak > 0 && (
           <div className="text-bq-ember text-xs font-bold mt-0.5 flex items-center justify-center gap-1">
             <span className="material-symbols-outlined text-sm" style={FILL_STYLE}>local_fire_department</span>
-            {championStreak} streak
+            <T k="streak" n={championStreak} />
           </div>
         )}
       </div>
@@ -255,7 +262,7 @@ export const SdArenaHeader: React.FC<{
       </div>
       <div className="text-center">
         <div className={`text-base font-black ${challengerName === me ? 'text-bq-amberd' : 'text-bq-ink'}`}>
-          {challengerName}{challengerName === me ? ' (ban)' : ''}
+          {challengerName}{challengerName === me ? <> <T k="you" /></> : ''}
         </div>
         <div className="flex items-center justify-center gap-1 mt-1">
           <span className="material-symbols-outlined text-bq-sapphire text-sm" style={FILL_STYLE}>swords</span>
@@ -266,7 +273,7 @@ export const SdArenaHeader: React.FC<{
     {queueRemaining > 0 && (
       <div className="text-center text-bq-ink3 text-xs mt-2 flex items-center justify-center gap-1">
         <span className="material-symbols-outlined text-sm">schedule</span>
-        {queueRemaining} nguoi dang cho
+        <T k="waiting" n={queueRemaining} />
       </div>
     )}
   </div>
@@ -279,7 +286,7 @@ export const RoundScoreboard: React.FC<{ scores: PlayerScore[]; myUsername: stri
     <div className="mt-5 bg-bq-white rounded-2xl border border-bq-hair shadow-bq-soft p-4 animate-in fade-in">
       <div className="text-[12px] font-bold text-bq-ink2 mb-3 flex items-center gap-1.5">
         <span className="material-symbols-outlined text-sm text-bq-amberd">leaderboard</span>
-        Ket qua vong nay
+        <T k="roundResults" />
       </div>
       <div className="flex flex-wrap gap-2">
         {scores.slice(0, 8).map((s, idx) => {

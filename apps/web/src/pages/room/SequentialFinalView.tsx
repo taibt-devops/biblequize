@@ -1,4 +1,5 @@
 import React from 'react'
+import { PlaceBackdrop } from '../../components/lk/Place'
 
 export type FinalPlayer = {
   playerId: string
@@ -43,7 +44,8 @@ const SequentialFinalView: React.FC<Props> = ({
   const top3 = sorted.slice(0, 3)
 
   return (
-    <div className="min-h-screen text-bq-ink px-4 py-6 max-w-3xl mx-auto" style={{ background: '#FBFAF5' }} data-testid="sequential-final">
+    <div className="relative min-h-screen text-bq-ink px-4 py-6 max-w-3xl mx-auto" data-testid="sequential-final">
+      <PlaceBackdrop place="square" veil="strong" />
       {/* Final banner */}
       <div className="rounded-2xl p-5 text-center mb-4 bg-bq-white shadow-bq-soft"
         style={{ border: '1px solid rgba(245,158,11,0.3)' }}>

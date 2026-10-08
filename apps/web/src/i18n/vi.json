@@ -1677,6 +1677,28 @@
     }
   },
   "room": {
+    "overlay": {
+      "finalResults": "Kết quả cuối",
+      "allPlayers": "Tất cả người chơi",
+      "points": "{{n}} điểm",
+      "backToLobby": "Về phòng chờ",
+      "eliminated": "Bạn đã bị loại!",
+      "correctAnswer": "Đáp án đúng",
+      "spectate": "Xem tiếp (khán giả)",
+      "tie": "Hòa!",
+      "teamAWins": "Đội A thắng!",
+      "teamBWins": "Đội B thắng!",
+      "personalScores": "Điểm cá nhân",
+      "youWon": "Bạn thắng! Giữ ghế nóng!",
+      "youLost": "Bạn thua! Xếp hàng chờ…",
+      "won": "thắng",
+      "lost": "thua",
+      "nextMatchSoon": "Trận tiếp sắp bắt đầu…",
+      "you": "(bạn)",
+      "streak": "{{n}} trận liền",
+      "waiting": "{{n}} người đang chờ",
+      "roundResults": "Kết quả vòng này"
+    },
     "lobbyTitle": "BIBLE QUIZ LOBBY",
     "online": "Online",
     "offline": "Offline",

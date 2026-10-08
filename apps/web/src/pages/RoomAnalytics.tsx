@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { PlaceBackdrop, Plaque } from '../components/lk/Place'
 import { api } from '../api/client';
 
 type RoomDetails = {
@@ -128,27 +129,22 @@ export default function RoomAnalytics() {
   return (
     <div
       data-testid="room-analytics-page"
-      className="min-h-screen px-4 lg:px-8 py-6 bg-bq-paper"
-      style={{
-        fontFamily: "'Be Vietnam Pro', sans-serif",
-      }}
+      className="relative min-h-screen px-4 lg:px-8 py-6"
     >
+      <PlaceBackdrop place="square" veil="strong" />
       {/* Header */}
       <header className="flex items-center justify-between mb-6 max-w-5xl mx-auto">
         <button
           type="button"
           onClick={() => navigate(`/room/${roomId}/quiz`)}
-          className="text-sm font-semibold inline-flex items-center gap-1.5 text-bq-ink2"
+          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border-2 border-bq-ink bg-bq-white text-[14px] font-bold text-bq-ink hover:bg-bq-cream"
           data-testid="analytics-back-btn"
         >
           <span className="material-symbols-outlined text-base">arrow_back</span>
           Quay lại kết quả
         </button>
         <div className="flex items-center gap-2">
-          <span
-            className="px-2 py-0.5 rounded text-[12px] font-bold"
-            style={{ background: 'rgba(245,158,11,0.18)', color: '#D97F06' }}
-          >
+          <span className="px-3 py-1 rounded-full border-2 border-bq-ink bg-bq-amber text-[13px] font-extrabold">
             📊 Phân tích chi tiết
           </span>
         </div>
@@ -160,9 +156,9 @@ export default function RoomAnalytics() {
           <div className="text-[12.5px] font-bold mb-1" style={{ color: '#4D3A1F' }}>
             {room.mode.replace(/_/g, ' ')} · {room.roomCode}
           </div>
-          <h1 className="font-display text-2xl lg:text-3xl font-extrabold text-bq-ink tracking-tight">
+          <Plaque className="text-[26px] lg:text-[32px]">
             {room.roomName || 'Phân tích trận đấu'}
-          </h1>
+          </Plaque>
           {room.hostName && (
             <p className="text-sm mt-1" style={{ color: '#4D3A1F' }}>
               Chủ phòng: <span className="text-bq-ink font-semibold">{room.hostName}</span>

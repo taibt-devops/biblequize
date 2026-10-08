@@ -48,7 +48,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-11 | Xếp hạng ✅ | `/leaderboard` | đỉnh đồi, bục vinh danh |
 | LKF-12 | Cá nhân, Thành tích, Ngoại hình ✅ | `/profile`, `/achievements`, `/cosmetics` | lều trại |
 | LKF-13 | Phòng chơi, Danh sách phòng, Tạo phòng, Vào phòng ✅ | `/multiplayer`, `/rooms`, `/room/create`, `/room/join` | quảng trường làng |
-| LKF-14 | Phòng chờ, Chơi phòng, Màn chủ phòng, Phân tích phòng | `/room/:id/*` | quảng trường |
+| LKF-14 | Phòng chờ, Chơi phòng, Màn chủ phòng, Phân tích phòng ✅ | `/room/:id/*` | quảng trường |
 | LKF-15 | Nhóm + chi tiết + trang con | `/groups*` | gốc sồi nhà nguyện |
 | LKF-16 | Giải đấu, chi tiết, trận | `/tournaments*` | sân đấu |
 | LKF-17 | Đăng nhập, Đăng ký, Onboarding, Thử quiz, Landing, Câu đố Kinh Thánh | `/login`, `/register`, `/onboarding*`, `/landing`, `/cau-do-kinh-thanh` | cổng làng |
@@ -109,3 +109,11 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
   - Vào phòng (quét QR): thẻ giữa màn, đèn lồng nhún + mã dạng đá khắc khi đang vào; lỗi = lữ khách lạc đường + nút vàng
   - Quyết định: Đấu Nhanh đổi xanh dương → nút lá (giữ 2 màu chính vàng/lá của bộ nút)
   - **Spec impact**: [x] None · **Spec strategy**: [x] (c)
+- LKF-14 Phòng chờ · Chơi phòng · Màn quản trò · Phân tích — quảng trường
+  - Status: [x] DONE
+  - Phòng chờ: tranh quảng trường sau cột giữa, thanh trên viền mực đậm, nút quay lại / rời phòng dạng viên thuốc; mã phòng = 6 viên đá khắc; QR có khung mực; "Người chơi" là biển gỗ nhỏ; thẻ người chơi = huy hiệu người chơi (vành theo bậc, không gắn khiên), chip trạng thái vàng/lá; ô mời = nét đứt + nút vàng; ô trống = đèn lồng tắt; luật chơi trên nền kem có cuộn giấy; nút Bắt đầu / Sẵn sàng là nút vàng / lá, chữ thường ("Bắt đầu trận đấu", "Đang chờ người chơi…" thay "BẮT ĐẦU TRẬN ĐẤU", "ĐANG CHỜ...")
+  - Chơi phòng / quản trò / phân tích / chế độ tuần tự: thêm tranh quảng trường + viền mực thanh trên; phân tích có biển gỗ tên phòng
+  - Sửa lỗi có sẵn: màn kết thúc trận (`RoomOverlays`) hiện tiếng Việt KHÔNG DẤU ("KET QUA CUOI", "Ban da bi loai!", "Ve Phong Cho"…) → viết lại có dấu và chuyển sang khóa `room.overlay.*` (vi + en); test cập nhật theo
+  - `PlayerCrest` tự quay về chân dung chữ cái khi ảnh đại diện lỗi 404
+  - Không chụp được màn chơi / quản trò / phân tích ở máy local (cần ≥ 2 người chơi thật) — chỉ đổi khung + màu, giữ nguyên bố cục; dựa vào test (86 test phòng pass)
+  - **Spec impact**: [x] None · **Spec strategy**: [x] (b) test RoomOverlays theo chữ có dấu

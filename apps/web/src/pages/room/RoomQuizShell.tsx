@@ -16,6 +16,7 @@ import type { SequentialModeState } from './hooks/useSequentialMode';
 import BattleRoyaleView, { BattleRoyaleHeaderBadge, SpectatorBadge } from './views/BattleRoyaleView';
 import TeamVsTeamView, { PerfectRoundBanner, TeamHeaderBadge } from './views/TeamVsTeamView';
 import SuddenDeathView, { SdMatchResultOverlay, SdSpectatingBadge } from './views/SuddenDeathView';
+import { PlaceBackdrop } from '../../components/lk/Place'
 import SequentialView, { SequentialRevealPanel, SequentialWaitingStrip } from './views/SequentialView';
 
 // Sprint 2 Q1 — persistent live-feed sidebar entry. Each entry is one row
@@ -108,7 +109,8 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
   };
 
   return (
-    <div className="min-h-screen bg-bq-paper font-body text-bq-ink overflow-hidden relative">
+    <div className="min-h-screen font-body text-bq-ink overflow-hidden relative">
+      <PlaceBackdrop place="square" veil="strong" />
       {/* Sprint 4 (S4-9): Quan Tro pause overlay */}
       {isPaused && (
         <div
@@ -270,7 +272,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
       )}
 
       {/* ═══════════ HEADER BAR (Q2: mockup state ③/④) ═══════════ */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-bq-white/90 backdrop-blur-xl border-b border-bq-hair">
+      <header className="fixed top-0 left-0 w-full z-50 bg-bq-white/95 backdrop-blur-xl border-b-[3px] border-bq-ink">
         <div className="flex items-center justify-between px-4 lg:px-6 h-14">
           {/* Left: mode chip + "Câu N/M" + progress bar */}
           <div className="flex items-center gap-3 min-w-0">

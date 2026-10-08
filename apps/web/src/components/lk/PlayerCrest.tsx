@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TIERS } from '../../data/tiers'
 import { resolveAvatar } from '../../utils/avatar'
@@ -55,7 +56,8 @@ export function PlayerCrest({ name, avatarUrl, tierId, size = 44, showTier = tru
   const tier = Math.min(6, Math.max(1, tierId))
   const rim = Math.max(4, Math.round(size * 0.13))
   const border = size >= 60 ? 3 : 2
-  const resolved = resolveAvatar(avatarUrl ?? undefined, name)
+  const [broken, setBroken] = useState(false)
+  const resolved = resolveAvatar(broken ? undefined : avatarUrl ?? undefined, name)
   const radius = size / 2 - border - rim / 2
   const rivet = Math.max(3, Math.round(rim * 0.42))
   const tierName = t(TIERS[tier - 1]?.nameKey ?? '')
@@ -68,7 +70,7 @@ export function PlayerCrest({ name, avatarUrl, tierId, size = 44, showTier = tru
       >
         <span className="block w-full h-full rounded-full overflow-hidden border-2 border-bq-ink/80">
           {resolved.kind === 'img' ? (
-            <img alt={name} src={resolved.src} className="w-full h-full object-cover" />
+            <img alt={name} src={resolved.src} onError={() => setBroken(true)} className="w-full h-full object-cover" />
           ) : resolved.kind === 'preset' ? (
             <span className="w-full h-full grid place-items-center leading-none" style={{ background: resolved.preset.bg, fontSize: size * 0.4 }} aria-hidden>
               {resolved.preset.emoji}

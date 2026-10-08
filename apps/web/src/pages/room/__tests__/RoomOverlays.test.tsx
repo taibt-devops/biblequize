@@ -42,8 +42,8 @@ describe('PodiumScreen', () => {
   it('renders title and close button', () => {
     const onClose = vi.fn()
     render(<PodiumScreen results={players3} onClose={onClose} />)
-    expect(screen.getByText('KET QUA CUOI')).toBeInTheDocument()
-    expect(screen.getByText('Ve Phong Cho')).toBeInTheDocument()
+    expect(screen.getByText('Kết quả cuối')).toBeInTheDocument()
+    expect(screen.getByText('Về phòng chờ')).toBeInTheDocument()
   })
 
   it('displays top 3 players on podium', () => {
@@ -56,9 +56,9 @@ describe('PodiumScreen', () => {
 
   it('shows scores with "diem" suffix', () => {
     render(<PodiumScreen results={players3} onClose={vi.fn()} />)
-    expect(screen.getByText('300 diem')).toBeInTheDocument()
-    expect(screen.getByText('200 diem')).toBeInTheDocument()
-    expect(screen.getByText('100 diem')).toBeInTheDocument()
+    expect(screen.getByText('300 điểm')).toBeInTheDocument()
+    expect(screen.getByText('200 điểm')).toBeInTheDocument()
+    expect(screen.getByText('100 điểm')).toBeInTheDocument()
   })
 
   it('shows rank numbers #1 #2 #3', () => {
@@ -70,19 +70,19 @@ describe('PodiumScreen', () => {
 
   it('shows all players in leaderboard section', () => {
     render(<PodiumScreen results={players3} onClose={vi.fn()} />)
-    expect(screen.getByText('Tat ca nguoi choi')).toBeInTheDocument()
+    expect(screen.getByText('Tất cả người chơi')).toBeInTheDocument()
   })
 
   it('calls onClose when button is clicked', () => {
     const onClose = vi.fn()
     render(<PodiumScreen results={players3} onClose={onClose} />)
-    fireEvent.click(screen.getByText('Ve Phong Cho'))
+    fireEvent.click(screen.getByText('Về phòng chờ'))
     expect(onClose).toHaveBeenCalledTimes(1)
   })
 
   it('handles empty results gracefully', () => {
     render(<PodiumScreen results={[]} onClose={vi.fn()} />)
-    expect(screen.getByText('KET QUA CUOI')).toBeInTheDocument()
+    expect(screen.getByText('Kết quả cuối')).toBeInTheDocument()
   })
 })
 
@@ -92,7 +92,7 @@ describe('EliminationScreen', () => {
 
   it('renders elimination message', () => {
     render(<EliminationScreen rank={5} totalPlayers={10} correctIndex={null} question={null} onSpectate={vi.fn()} />)
-    expect(screen.getByText('Ban da bi loai!')).toBeInTheDocument()
+    expect(screen.getByText('Bạn đã bị loại!')).toBeInTheDocument()
   })
 
   it('shows rank and total players', () => {
@@ -103,25 +103,25 @@ describe('EliminationScreen', () => {
 
   it('shows correct answer when provided', () => {
     render(<EliminationScreen rank={3} totalPlayers={8} correctIndex={1} question={question} onSpectate={vi.fn()} />)
-    expect(screen.getByText('Dap an dung')).toBeInTheDocument()
+    expect(screen.getByText('Đáp án đúng')).toBeInTheDocument()
     expect(screen.getByText('B. David')).toBeInTheDocument()
   })
 
   it('does not show correct answer when correctIndex is null', () => {
     render(<EliminationScreen rank={3} totalPlayers={8} correctIndex={null} question={null} onSpectate={vi.fn()} />)
-    expect(screen.queryByText('Dap an dung')).not.toBeInTheDocument()
+    expect(screen.queryByText('Đáp án đúng')).not.toBeInTheDocument()
   })
 
   it('calls onSpectate when spectate button is clicked', () => {
     const onSpectate = vi.fn()
     render(<EliminationScreen rank={3} totalPlayers={8} correctIndex={null} question={null} onSpectate={onSpectate} />)
-    fireEvent.click(screen.getByText(/Xem tiep/))
+    fireEvent.click(screen.getByText(/Xem tiếp/))
     expect(onSpectate).toHaveBeenCalledTimes(1)
   })
 
   it('shows spectator button text', () => {
     render(<EliminationScreen rank={2} totalPlayers={5} correctIndex={null} question={null} onSpectate={vi.fn()} />)
-    expect(screen.getByText(/Spectator/)).toBeInTheDocument()
+    expect(screen.getByText(/khán giả/)).toBeInTheDocument()
   })
 })
 
@@ -170,22 +170,22 @@ describe('TeamWinScreen', () => {
 
   it('renders Team A wins when winner is A', () => {
     render(<TeamWinScreen winner="A" scoreA={100} scoreB={80} leaderboard={leaderboard} onClose={vi.fn()} />)
-    expect(screen.getByText('Team A thang!')).toBeInTheDocument()
+    expect(screen.getByText('Đội A thắng!')).toBeInTheDocument()
   })
 
   it('renders Team B wins when winner is B', () => {
     render(<TeamWinScreen winner="B" scoreA={80} scoreB={100} leaderboard={leaderboard} onClose={vi.fn()} />)
-    expect(screen.getByText('Team B thang!')).toBeInTheDocument()
+    expect(screen.getByText('Đội B thắng!')).toBeInTheDocument()
   })
 
   it('renders TIE when winner is TIE', () => {
     render(<TeamWinScreen winner="TIE" scoreA={90} scoreB={90} leaderboard={leaderboard} onClose={vi.fn()} />)
-    expect(screen.getByText('Hoa!')).toBeInTheDocument()
+    expect(screen.getByText('Hòa!')).toBeInTheDocument()
   })
 
   it('shows individual scores in leaderboard', () => {
     render(<TeamWinScreen winner="A" scoreA={100} scoreB={80} leaderboard={leaderboard} onClose={vi.fn()} />)
-    expect(screen.getByText('Diem ca nhan')).toBeInTheDocument()
+    expect(screen.getByText('Điểm cá nhân')).toBeInTheDocument()
     expect(screen.getByText('Alice')).toBeInTheDocument()
     expect(screen.getByText('Bob')).toBeInTheDocument()
   })
@@ -193,7 +193,7 @@ describe('TeamWinScreen', () => {
   it('calls onClose when button is clicked', () => {
     const onClose = vi.fn()
     render(<TeamWinScreen winner="A" scoreA={100} scoreB={80} leaderboard={leaderboard} onClose={onClose} />)
-    fireEvent.click(screen.getByText('Ve Phong Cho'))
+    fireEvent.click(screen.getByText('Về phòng chờ'))
     expect(onClose).toHaveBeenCalledTimes(1)
   })
 
@@ -222,12 +222,12 @@ describe('MatchResultOverlay', () => {
 
   it('shows win message when current user won', () => {
     render(<MatchResultOverlay winnerId="w1" winnerName="Alice" loserId="l1" loserName="Bob" myUserId="w1" onDismiss={vi.fn()} />)
-    expect(screen.getByText(/Ban thang/)).toBeInTheDocument()
+    expect(screen.getByText(/Bạn thắng/)).toBeInTheDocument()
   })
 
   it('shows lose message when current user lost', () => {
     render(<MatchResultOverlay winnerId="w1" winnerName="Alice" loserId="l1" loserName="Bob" myUserId="l1" onDismiss={vi.fn()} />)
-    expect(screen.getByText(/Ban thua/)).toBeInTheDocument()
+    expect(screen.getByText(/Bạn thua/)).toBeInTheDocument()
   })
 
   it('auto-dismisses after 3 seconds', () => {
@@ -241,13 +241,13 @@ describe('MatchResultOverlay', () => {
   it('dismisses on click', () => {
     const onDismiss = vi.fn()
     render(<MatchResultOverlay winnerId="w1" winnerName="Alice" loserId="l1" loserName="Bob" onDismiss={onDismiss} />)
-    fireEvent.click(screen.getByText(/Tran tiep sap bat dau/))
+    fireEvent.click(screen.getByText(/Trận tiếp sắp bắt đầu/))
     expect(onDismiss).toHaveBeenCalled()
   })
 
   it('shows "Tran tiep sap bat dau..." text', () => {
     render(<MatchResultOverlay winnerId="w1" winnerName="Alice" loserId="l1" loserName="Bob" onDismiss={vi.fn()} />)
-    expect(screen.getByText(/Tran tiep sap bat dau/)).toBeInTheDocument()
+    expect(screen.getByText(/Trận tiếp sắp bắt đầu/)).toBeInTheDocument()
   })
 })
 
@@ -261,12 +261,12 @@ describe('SdArenaHeader', () => {
 
   it('marks current user with (ban)', () => {
     render(<SdArenaHeader championName="Alice" championStreak={3} challengerName="Bob" myUsername="Alice" queueRemaining={0} />)
-    expect(screen.getByText(/Alice \(ban\)/)).toBeInTheDocument()
+    expect(screen.getByText(/Alice \(bạn\)/)).toBeInTheDocument()
   })
 
   it('marks challenger as (ban) when myUsername matches', () => {
     render(<SdArenaHeader championName="Alice" championStreak={3} challengerName="Bob" myUsername="Bob" queueRemaining={0} />)
-    expect(screen.getByText(/Bob \(ban\)/)).toBeInTheDocument()
+    expect(screen.getByText(/Bob \(bạn\)/)).toBeInTheDocument()
   })
 
   it('shows Champion and Challenger labels', () => {
@@ -282,7 +282,7 @@ describe('SdArenaHeader', () => {
 
   it('shows streak when championStreak > 0', () => {
     render(<SdArenaHeader championName="Alice" championStreak={5} challengerName="Bob" myUsername="Other" queueRemaining={0} />)
-    expect(screen.getByText('5 streak')).toBeInTheDocument()
+    expect(screen.getByText('5 trận liền')).toBeInTheDocument()
   })
 
   it('does not show streak when championStreak is 0', () => {
@@ -292,7 +292,7 @@ describe('SdArenaHeader', () => {
 
   it('shows queue remaining when > 0', () => {
     render(<SdArenaHeader championName="Alice" championStreak={0} challengerName="Bob" myUsername="Other" queueRemaining={4} />)
-    expect(screen.getByText(/4 nguoi dang cho/)).toBeInTheDocument()
+    expect(screen.getByText(/4 người đang chờ/)).toBeInTheDocument()
   })
 
   it('does not show queue when 0', () => {
@@ -316,7 +316,7 @@ describe('RoundScoreboard', () => {
 
   it('renders scoreboard title', () => {
     render(<RoundScoreboard scores={scores} myUsername="Alice" />)
-    expect(screen.getByText('Ket qua vong nay')).toBeInTheDocument()
+    expect(screen.getByText('Kết quả vòng này')).toBeInTheDocument()
   })
 
   it('displays player names and scores', () => {

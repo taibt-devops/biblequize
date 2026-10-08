@@ -1677,6 +1677,28 @@
     }
   },
   "room": {
+    "overlay": {
+      "finalResults": "Final results",
+      "allPlayers": "All players",
+      "points": "{{n}} pts",
+      "backToLobby": "Back to lobby",
+      "eliminated": "You're out!",
+      "correctAnswer": "Correct answer",
+      "spectate": "Keep watching (spectator)",
+      "tie": "It's a tie!",
+      "teamAWins": "Team A wins!",
+      "teamBWins": "Team B wins!",
+      "personalScores": "Player scores",
+      "youWon": "You won! Keep the hot seat!",
+      "youLost": "You lost! Back in the queue…",
+      "won": "won",
+      "lost": "lost",
+      "nextMatchSoon": "Next match starting…",
+      "you": "(you)",
+      "streak": "{{n}} in a row",
+      "waiting": "{{n}} waiting",
+      "roundResults": "Round results"
+    },
     "lobbyTitle": "BIBLE QUIZ LOBBY",
     "online": "Online",
     "offline": "Offline",
