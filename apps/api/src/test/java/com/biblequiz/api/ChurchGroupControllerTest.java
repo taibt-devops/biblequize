@@ -822,5 +822,35 @@ class ChurchGroupControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.questions[0]._quality.valid").value(true));
 
         verify(aiGenerationService).annotateQuality(any());
+        // Group-owned: saved outside the shared Ranked/Practice pool.
+        verify(questionRepository).save(argThat((com.biblequiz.modules.quiz.entity.Question q) -> "ai-group".equals(q.getSource())
+                && Boolean.FALSE.equals(q.getIsActive())));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void addQuestionToSet_savesGroupQuestionOutsideSharedPool() throws Exception {
+        GroupMember leader = new GroupMember();
+        leader.setRole(GroupMember.GroupRole.LEADER);
+        when(groupMemberRepository.findByGroupIdAndUserId("group-1", "user-1"))
+                .thenReturn(Optional.of(leader));
+        ChurchGroup group = new ChurchGroup();
+        group.setId("group-1");
+        GroupQuizSet qs = new GroupQuizSet();
+        qs.setId("qs-1");
+        qs.setGroup(group);
+        qs.setQuestionIds(new java.util.ArrayList<>());
+        when(groupQuizSetRepository.findById("qs-1")).thenReturn(Optional.of(qs));
+
+        String body = "{\"content\":\"Ai đóng tàu?\",\"book\":\"Sáng Thế Ký\",\"chapter\":6,"
+                + "\"options\":[\"Nô-ê\",\"Áp-ra-ham\",\"Môi-se\",\"Đa-vít\"],\"correctAnswer\":0}";
+        mockMvc.perform(post("/api/groups/group-1/quiz-sets/qs-1/questions")
+                        .contentType(MediaType.APPLICATION_JSON).content(body))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.success").value(true))
+                .andExpect(jsonPath("$.totalQuestions").value(1));
+
+        verify(questionRepository).save(argThat((com.biblequiz.modules.quiz.entity.Question q) -> "group-custom".equals(q.getSource())
+                && Boolean.FALSE.equals(q.getIsActive())));
     }
 }

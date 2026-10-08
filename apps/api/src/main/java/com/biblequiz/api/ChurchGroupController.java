@@ -1767,7 +1767,11 @@ public class ChurchGroupController {
 
         q.setExplanation((String) raw.get("explanation"));
         q.setSource(source);
-        q.setIsActive(true);
+        // Group-owned questions stay out of the shared Ranked/Practice pool, as
+        // /quiz-sets/custom has done since 840d8aea: group play loads them by id
+        // (customQuestionIds), which ignores isActive. They are unreviewed and
+        // keep the editor's Vietnamese book names.
+        q.setIsActive(false);
         q.setReviewStatus(Question.ReviewStatus.ACTIVE);
         return q;
     }
