@@ -97,8 +97,7 @@ export default function Ranked() {
       const pickRes = await api.post('/api/ranked/questions/select', {
         limit: 10,
         excludeIds,
-        // Option C: ~70% from the current journey book, ~30% whole-pool variety.
-        book: rankedStatus.currentBook,
+        // No book: the server draws from the whole Bible by tier (2026-10-08).
         difficulty: rankedStatus.currentDifficulty,
         language: getQuizLanguage(),
       })

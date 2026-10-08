@@ -821,7 +821,7 @@
       "hudQuests": "Nhiệm vụ",
       "hudNew": "mới",
       "journeyTip": "{{book}} · đã thuộc {{pct}}%",
-      "journeyTipStart": "Bắt đầu từ Sáng Thế Ký",
+      "journeyTipStart": "Chơi để sưu tầm 66 sách",
       "rankTip": "Hạng {{rank}} tuần này · {{points}} điểm",
       "rankTipLow": "Bảng xếp hạng tuần",
       "seasonTip": "{{name}} · còn {{count}} ngày",
@@ -854,7 +854,7 @@
       "journeyTitle": "Hành trình 66 sách",
       "journeyAtPrefix": "Bạn đang đi qua",
       "journeyAtSuffix": "ở vùng {{region}}. Đã thuộc {{pct}}% câu hỏi của sách này.",
-      "journeyStart": "Bắt đầu từ Sáng Thế Ký ở vùng Ngũ Kinh. Mỗi sách thuộc 80% là chinh phục xong.",
+      "journeyStart": "Sưu tầm sách theo thứ tự nào cũng được. Mỗi sách thuộc 80% là chinh phục xong.",
       "journeyNextBadge": "Huy hiệu kế tiếp: {{name}} ({{count}} sách)",
       "journeyAllBadges": "Đã có đủ huy hiệu chặng",
       "journeyOpen": "Mở bản đồ",
@@ -934,7 +934,7 @@
       "review": "Xem lại bài làm"
     },
     "journeyExtra": {
-      "subUnlock": "Bắt đầu từ Sáng Thế Ký · Hoàn thành 80% mỗi sách để mở khóa sách tiếp theo",
+      "subUnlock": "Sưu tầm theo thứ tự nào cũng được · Thuộc 80% mỗi sách là chinh phục xong",
       "metaCount": "{{done}} / {{total}} sách",
       "metaCountSuffix": "/ {{total}} sách",
       "metaCurrent": "Đang ở {{book}}",

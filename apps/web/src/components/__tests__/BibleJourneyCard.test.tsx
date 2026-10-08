@@ -14,7 +14,7 @@ vi.mock('react-i18next', () => ({
       const dict: Record<string, string> = {
         'home.journey.title': 'Hành trình 66 sách',
         'home.journeyExtra.subUnlock':
-          'Bắt đầu từ Sáng Thế Ký · Hoàn thành 80% mỗi sách để mở khóa sách tiếp theo',
+          'Sưu tầm theo thứ tự nào cũng được · Thuộc 80% mỗi sách là chinh phục xong',
         'home.journeyExtra.metaCountSuffix': '/ {{total}} sách',
         'home.journeyExtra.metaCurrent': 'Đang ở {{book}}',
         'home.journeyExtra.testamentOld': 'Cựu Ước',
@@ -128,12 +128,12 @@ describe('BibleJourneyCard (Modern Spiritual)', () => {
     expect(screen.queryByTestId('bible-journey-current')).not.toBeInTheDocument()
   })
 
-  it('renders the static unlock-rule sub line', async () => {
+  it('renders the static collection-rule sub line', async () => {
     mockApiGet.mockResolvedValue(journey([]))
     renderCard()
     await waitFor(() => {
       expect(screen.getByTestId('bible-journey-sub').textContent).toContain(
-        'Hoàn thành 80%',
+        'Thuộc 80%',
       )
     })
   })

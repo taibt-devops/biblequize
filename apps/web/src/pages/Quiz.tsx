@@ -147,8 +147,7 @@ const Quiz: React.FC = () => {
       const pickRes = await api.post('/api/ranked/questions/select', {
         limit: 10,
         excludeIds,
-        // Option C: ~70% current journey book, ~30% whole-pool variety.
-        book: status?.currentBook,
+        // No book: the server draws from the whole Bible by tier (2026-10-08).
         difficulty: status?.currentDifficulty,
         language,
       })

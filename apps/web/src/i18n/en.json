@@ -821,7 +821,7 @@
       "hudQuests": "Quests",
       "hudNew": "new",
       "journeyTip": "{{book}} · {{pct}}% known",
-      "journeyTipStart": "Start with Genesis",
+      "journeyTipStart": "Play to collect all 66 books",
       "rankTip": "#{{rank}} this week · {{points}} points",
       "rankTipLow": "This week's leaderboard",
       "seasonTip": "{{name}} · {{count}} days left",
@@ -854,7 +854,7 @@
       "journeyTitle": "The 66-book journey",
       "journeyAtPrefix": "You are walking through",
       "journeyAtSuffix": "in {{region}}. You know {{pct}}% of its questions.",
-      "journeyStart": "Start with Genesis in the Pentateuch. Know 80% of a book to conquer it.",
+      "journeyStart": "Collect the books in any order. Know 80% of a book to conquer it.",
       "journeyNextBadge": "Next badge: {{name}} ({{count}} books)",
       "journeyAllBadges": "All milestone badges earned",
       "journeyOpen": "Open the map",
@@ -934,7 +934,7 @@
       "review": "Review answers"
     },
     "journeyExtra": {
-      "subUnlock": "Start with Genesis · Complete 80% of each book to unlock the next",
+      "subUnlock": "Collect in any order · Know 80% of a book to conquer it",
       "metaCount": "{{done}} / {{total}} books",
       "metaCountSuffix": "/ {{total}} books",
       "metaCurrent": "Currently in {{book}}",
