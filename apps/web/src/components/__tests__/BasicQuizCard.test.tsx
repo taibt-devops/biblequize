@@ -142,17 +142,27 @@ describe('BasicQuizCard — 4 states', () => {
 
     renderCard()
 
-    // First wait — let the query resolve via real microtasks.
+    // First wait — let the query resolve. vi.waitFor advances the fake clock on every poll, so
+    // under a loaded run the ticker may already have moved: read the start value instead of
+    // assuming 00:05, then check the 2 s step.
     await vi.waitFor(() => {
       expect(screen.getByTestId('basic-quiz-cooldown')).toBeInTheDocument()
     })
-    expect(screen.getByTestId('basic-quiz-cooldown')).toHaveTextContent(/00:05/)
+    const secondsShown = () => {
+      const m = screen.getByTestId('basic-quiz-cooldown').textContent?.match(/(\d\d):(\d\d)/)
+      return m ? Number(m[1]) * 60 + Number(m[2]) : NaN
+    }
+    // vi.waitFor is not wrapped in act: commit the pending effects so the ticker's interval exists
+    await act(async () => {})
+    const start = secondsShown()
+    expect(start).toBeGreaterThanOrEqual(3)
+    expect(start).toBeLessThanOrEqual(5)
 
-    // Advance fake clock by 2s — local ticker should drop the display to 00:03.
+    // Advance fake clock by 2s — local ticker should drop the display by 2.
     act(() => {
       vi.advanceTimersByTime(2_000)
     })
-    expect(screen.getByTestId('basic-quiz-cooldown')).toHaveTextContent(/00:03/)
+    expect(secondsShown()).toBe(start - 2)
   })
 
   it('renders skeleton while initial /status request is pending', () => {

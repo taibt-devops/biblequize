@@ -106,11 +106,12 @@ async function renderLobby(roomOverride?: object, viewerUserId: string = 'host-1
 }
 
 describe('RoomLobby — module', () => {
+  // the lobby module is large; importing it cold during a full parallel run can take > 5 s
   it('exports default component', async () => {
     const mod = await import('../RoomLobby')
     expect(mod.default).toBeDefined()
     expect(typeof mod.default).toBe('function')
-  })
+  }, 30_000)
 })
 
 describe('RoomLobby — hero block + room code', () => {
