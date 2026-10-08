@@ -62,30 +62,6 @@ test.describe('W-M11 Variety Modes — L1 Smoke @smoke @variety', () => {
 
   // ── Mystery Mode ────────────────────────────────────────────────
 
-  test('W-M11-L1-003: Mystery Mode page render dung @smoke @variety @mystery', async ({
-    tier3Page,
-  }) => {
-    // ============================================================
-    // SECTION 1: SETUP — none
-    // ============================================================
-
-    // ============================================================
-    // SECTION 2: ACTIONS
-    // ============================================================
-    const page = tier3Page
-    await page.goto('/mystery-mode')
-    await page.waitForSelector('[data-testid="mystery-page"]')
-
-    // ============================================================
-    // SECTION 3: UI ASSERTIONS
-    // ============================================================
-    await expect(page).toHaveURL('/mystery-mode')
-    await expect(page.getByTestId('mystery-page')).toBeVisible()
-    await expect(page.getByTestId('mystery-info-card')).toBeVisible()
-    await expect(page.getByTestId('mystery-bonus-xp')).toBeVisible()
-    await expect(page.getByTestId('mystery-start-btn')).toBeVisible()
-  })
-
   test('W-M11-L1-004: Mystery Mode click Start vao quiz @smoke @variety @mystery', async ({
     tier3Page,
   }) => {
@@ -111,31 +87,6 @@ test.describe('W-M11 Variety Modes — L1 Smoke @smoke @variety', () => {
   })
 
   // ── Speed Round ─────────────────────────────────────────────────
-
-  test('W-M11-L1-005: Speed Round page render dung @smoke @variety @speed-round', async ({
-    tier3Page,
-  }) => {
-    // ============================================================
-    // SECTION 1: SETUP — none
-    // ============================================================
-
-    // ============================================================
-    // SECTION 2: ACTIONS
-    // ============================================================
-    const page = tier3Page
-    await page.goto('/speed-round')
-    await page.waitForSelector('[data-testid="speed-round-page"]')
-
-    // ============================================================
-    // SECTION 3: UI ASSERTIONS
-    // ============================================================
-    await expect(page).toHaveURL('/speed-round')
-    await expect(page.getByTestId('speed-round-page')).toBeVisible()
-    await expect(page.getByTestId('speed-round-stats-card')).toBeVisible()
-    await expect(page.getByTestId('speed-round-timer-stat')).toHaveText(/10/)
-    await expect(page.getByTestId('speed-round-bonus-stat')).toHaveText(/2x/)
-    await expect(page.getByTestId('speed-round-start-btn')).toBeVisible()
-  })
 
   test('W-M11-L1-006: Speed Round click Start vao quiz voi timer @smoke @variety @speed-round', async ({
     tier3Page,

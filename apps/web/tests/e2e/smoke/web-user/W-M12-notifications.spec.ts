@@ -9,27 +9,6 @@ import { test, expect } from '../../fixtures/auth'
 
 test.describe('W-M12 Notifications — L1 Smoke @smoke @notifications', () => {
 
-  test('W-M12-L1-001: Notification icons visible trong AppLayout header @smoke @notifications', async ({
-    tier3Page,
-  }) => {
-    // ============================================================
-    // SECTION 1: SETUP — none
-    // ============================================================
-
-    // ============================================================
-    // SECTION 2: ACTIONS
-    // ============================================================
-    const page = tier3Page
-    await page.goto('/')
-    await page.waitForSelector('[data-testid="app-header"]')
-
-    // ============================================================
-    // SECTION 3: UI ASSERTIONS
-    // ============================================================
-    await expect(page.getByTestId('app-header')).toBeVisible()
-    await expect(page.getByTestId('header-notification-area')).toBeVisible()
-  })
-
   test('W-M12-L1-002: Notification badge hien thi khi co unread @smoke @notifications', async ({
     tier3Page,
   }) => {

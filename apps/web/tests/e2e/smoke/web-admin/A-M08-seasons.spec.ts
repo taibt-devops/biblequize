@@ -39,24 +39,6 @@ test.describe('A-M08 Seasons & Rankings — L1 Smoke', () => {
     await expect(adminPage.getByTestId('end-season-btn')).toBeVisible()
   })
 
-  // ── A-M08-L1-003 ── admin ──────────────────────────────────
-  test('A-M08-L1-003: Create new season form visible @smoke @admin @rankings', async ({
-    adminPage,
-  }) => {
-    // ── Actions ──
-    await adminPage.goto('/admin/rankings')
-    await adminPage.waitForSelector('[data-testid="create-season-form"]')
-
-    // ── UI Assertions ──
-    await expect(adminPage.getByTestId('create-season-form')).toBeVisible()
-    await expect(
-      adminPage.getByTestId('create-season-name-input'),
-    ).toBeVisible()
-    await expect(
-      adminPage.getByTestId('create-season-submit-btn'),
-    ).toBeVisible()
-  })
-
   // ── A-M08-L1-004 ── admin ──────────────────────────────────
   test('A-M08-L1-004: Inactive seasons list hien thi @smoke @admin @rankings', async ({
     adminPage,

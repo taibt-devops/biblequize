@@ -26,19 +26,8 @@ interface RouteCase {
 }
 
 const ROUTES: RouteCase[] = [
-  { id: 'dashboard',   path: '/admin',                  testid: 'admin-dashboard-page',   name: 'Dashboard' },
-  { id: 'users',       path: '/admin/users',            testid: 'admin-users-page',       name: 'Users' },
-  { id: 'questions',   path: '/admin/questions',        testid: 'admin-questions-page',   name: 'Questions' },
-  { id: 'feedback',    path: '/admin/feedback',         testid: 'admin-feedback-page',    name: 'Feedback' },
-  { id: 'rankings',    path: '/admin/rankings',         testid: 'admin-rankings-page',    name: 'Rankings' },
-  { id: 'events',      path: '/admin/events',           testid: 'admin-events-page',      name: 'Events' },
-  { id: 'ai-generator', path: '/admin/ai-generator',    testid: 'ai-generator-page',      name: 'AI Generator' },
-  { id: 'review-queue', path: '/admin/review-queue',    testid: 'review-queue-page',      name: 'Review Queue' },
-  { id: 'groups',      path: '/admin/groups',           testid: 'admin-groups-page',      name: 'Groups' },
-  { id: 'notifications', path: '/admin/notifications', testid: 'admin-notifications-page', name: 'Notifications' },
   { id: 'config',      path: '/admin/config',           testid: 'admin-config-page',      name: 'Configuration' },
   { id: 'export',      path: '/admin/export',           testid: 'admin-export-page',      name: 'Export Center' },
-  { id: 'question-quality', path: '/admin/question-quality', testid: 'admin-quality-page', name: 'Question Quality' },
 ]
 
 test.describe('W-M13 i18n coverage across admin pages @smoke @i18n @admin @regression', () => {

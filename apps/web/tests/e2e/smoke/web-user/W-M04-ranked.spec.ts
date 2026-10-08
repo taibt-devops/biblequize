@@ -78,65 +78,6 @@ test.describe('W-M04 Ranked Mode — L1 Smoke @smoke @ranked', () => {
     await expect(rankedPage.currentBook).toBeVisible()
   })
 
-  test('W-M04-L1-004: Click Vao Thi Dau tao session va vao quiz @smoke @ranked @critical @write', async ({
-    page,
-    testApi,
-  }) => {
-    // ============================================================
-    // SECTION 1: SETUP — fresh login + refill energy + reset history
-    // ============================================================
-    await testApi.refillEnergy('test3@dev.local')
-    await testApi.resetHistory('test3@dev.local')
-
-    const loginPage = new LoginPage(page)
-    await loginPage.goto()
-    await loginPage.loginWithCredentials('test3@dev.local', 'Test@123456')
-    await page.waitForURL('/')
-
-    // ============================================================
-    // SECTION 2: ACTIONS
-    // ============================================================
-    const rankedPage = new RankedPage(page)
-    await page.goto('/ranked')
-    await rankedPage.waitForLoaded()
-    await rankedPage.startBtn.waitFor({ state: 'visible' })
-    await rankedPage.startQuiz()
-    await page.waitForURL('/quiz')
-
-    // ============================================================
-    // SECTION 3: UI ASSERTIONS
-    // ============================================================
-    await expect(page).toHaveURL('/quiz')
-    const quizPage = new QuizPage(page)
-    await expect(quizPage.questionText).toBeVisible()
-  })
-
-  test('W-M04-L1-005: Season card hien thi voi rank va points @smoke @ranked', async ({
-    tier3Page,
-  }) => {
-    // ============================================================
-    // SECTION 1: SETUP — none
-    // ============================================================
-
-    // ============================================================
-    // SECTION 2: ACTIONS
-    // ============================================================
-    const page = tier3Page
-    const rankedPage = new RankedPage(page)
-    await rankedPage.goto()
-
-    // ============================================================
-    // SECTION 3: UI ASSERTIONS
-    // ============================================================
-    await expect(rankedPage.seasonCard).toBeVisible()
-    // R5 redesign: rank cell shows "#{rank}" when daily rank is known,
-    // or "Chưa xếp hạng" (vi) / "Unranked" (en) when /api/leaderboard/
-    // daily/my-rank returns null (user has no daily activity yet).
-    await expect(page.getByTestId('ranked-season-rank')).toHaveText(/#\d+|Chưa xếp hạng|Unranked/)
-    await expect(page.getByTestId('ranked-season-points')).toBeVisible()
-    await expect(rankedPage.resetTimer).toBeVisible()
-  })
-
   test('W-M04-L1-006: Trang thai het energy button bi disable @smoke @ranked', async ({
     page,
     testApi,

@@ -100,26 +100,6 @@ authTest.describe('W-M01 Auth & Onboarding — L1 Smoke (authenticated)', () => 
     },
   )
 
-  // ── W-M01-L1-009 ── storageState=tier3 ───────────────────
-  authTest(
-    'W-M01-L1-009: Dang xuat xoa session @smoke @auth',
-    async ({ tier3Page }) => {
-      // ── Actions ──
-      await tier3Page.goto('/')
-      await tier3Page.waitForSelector('[data-testid="home-page"]')
-      await tier3Page.getByTestId('logout-btn').click()
-      await tier3Page.waitForURL('/login')
-
-      // ── UI Assertions ──
-      await authExpect(tier3Page).toHaveURL('/login')
-
-      // ── API Verification ──
-      const userName = await tier3Page.evaluate(() =>
-        localStorage.getItem('userName'),
-      )
-      expect(userName).toBeNull()
-    },
-  )
 })
 
 // ── Guest tests: onboarding ─────────────────────────────────

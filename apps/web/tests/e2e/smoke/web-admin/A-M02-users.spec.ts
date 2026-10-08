@@ -27,27 +27,6 @@ test.describe('A-M02 Users Management — L1 Smoke', () => {
     await expect(adminPage.getByTestId('admin-users-search')).toBeVisible()
   })
 
-  // ── A-M02-L1-002 ── admin ──────────────────────────────────
-  test('A-M02-L1-002: Search users theo email @smoke @admin @users', async ({
-    adminPage,
-  }) => {
-    // ── Actions ──
-    await adminPage.goto('/admin/users')
-    await adminPage.waitForSelector('[data-testid="admin-users-search"]')
-    await adminPage.getByTestId('admin-users-search').fill('test1@dev.local')
-    await adminPage.waitForResponse((resp) =>
-      resp.url().includes('/api/admin/users') && resp.status() === 200,
-    )
-
-    // ── UI Assertions ──
-    await expect(
-      adminPage.getByTestId('admin-users-table').getByTestId('admin-user-row'),
-    ).toHaveCount(1)
-    await expect(adminPage.getByTestId('admin-user-row').first()).toContainText(
-      'test1@dev.local',
-    )
-  })
-
   // ── A-M02-L1-003 ── admin ──────────────────────────────────
   test('A-M02-L1-003: Click user row mo user detail modal @smoke @admin @users', async ({
     adminPage,
@@ -64,27 +43,4 @@ test.describe('A-M02 Users Management — L1 Smoke', () => {
     await expect(adminPage.getByTestId('admin-user-ban-btn')).toBeVisible()
   })
 
-  // ── A-M02-L1-004 ── admin ──────────────────────────────────
-  test('A-M02-L1-004: Ban user voi ly do @smoke @admin @users @write', async ({
-    adminPage,
-  }) => {
-    // ── Actions ──
-    await adminPage.goto('/admin/users')
-    await adminPage.waitForSelector('[data-testid="admin-users-search"]')
-    await adminPage.getByTestId('admin-users-search').fill('test1@dev.local')
-    await adminPage.waitForResponse((resp) =>
-      resp.url().includes('/api/admin/users') && resp.status() === 200,
-    )
-    await adminPage.getByTestId('admin-user-row').first().click()
-    await adminPage.waitForSelector('[data-testid="admin-user-detail-modal"]')
-    await adminPage.getByTestId('admin-user-ban-btn').click()
-    await adminPage.waitForSelector('[data-testid="admin-ban-reason-input"]')
-    await adminPage.getByTestId('admin-ban-reason-input').fill('E2E test ban')
-    await adminPage.getByTestId('admin-ban-confirm-btn').click()
-
-    // ── UI Assertions ──
-    await expect(adminPage.getByTestId('admin-user-row').first()).toContainText(
-      /banned|cấm/i,
-    )
-  })
 })

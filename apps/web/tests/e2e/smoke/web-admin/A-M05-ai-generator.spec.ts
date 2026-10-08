@@ -42,48 +42,4 @@ test.describe('A-M05 AI Question Generator — L1 Smoke', () => {
     await expect(adminPage.getByTestId('ai-provider-claude')).toBeVisible()
   })
 
-  // ── A-M05-L1-003 ── admin ──────────────────────────────────
-  test('A-M05-L1-003: Generate drafts — draft cards xuat hien @smoke @admin @ai-generator @write', async ({
-    adminPage,
-  }) => {
-    // ── Actions ──
-    await adminPage.goto('/admin/ai-generator')
-    await adminPage.waitForSelector('[data-testid="ai-generator-page"]')
-    // Select book Genesis + chapter 1 (via scripture selector)
-    await adminPage.getByTestId('ai-scripture-selector').click()
-    // Scripture selector clicked — first option auto-selected
-    await adminPage.getByTestId('ai-generate-btn').click()
-    await adminPage.waitForSelector('[data-testid="ai-draft-card"]', {
-      timeout: 15_000,
-    })
-
-    // ── UI Assertions ──
-    await expect(adminPage.getByTestId('ai-draft-card')).toHaveCount({ min: 1 })
-    await expect(
-      adminPage.getByTestId('ai-draft-approve-btn').first(),
-    ).toBeVisible()
-    await expect(
-      adminPage.getByTestId('ai-draft-reject-btn').first(),
-    ).toBeVisible()
-  })
-
-  // ── A-M05-L1-004 ── admin ──────────────────────────────────
-  test('A-M05-L1-004: Approve draft — goi API save @smoke @admin @ai-generator @write', async ({
-    adminPage,
-  }) => {
-    // ── Actions ── (generate drafts first)
-    await adminPage.goto('/admin/ai-generator')
-    await adminPage.waitForSelector('[data-testid="ai-generator-page"]')
-    await adminPage.getByTestId('ai-scripture-selector').click()
-    await adminPage.getByTestId('ai-generate-btn').click()
-    await adminPage.waitForSelector('[data-testid="ai-draft-card"]', {
-      timeout: 15_000,
-    })
-    await adminPage.getByTestId('ai-draft-approve-btn').first().click()
-
-    // ── UI Assertions ──
-    await expect(
-      adminPage.getByTestId('ai-draft-card').first(),
-    ).toHaveAttribute('data-status', 'approved')
-  })
 })

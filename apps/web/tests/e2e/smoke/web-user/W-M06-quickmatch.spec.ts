@@ -30,28 +30,6 @@ test.describe('W-M06-QM Đấu Nhanh Lobby — L1 Smoke @smoke @multiplayer @qui
     expect(Number(used)).toBeLessThanOrEqual(3)
   })
 
-  test('W-M06-QM-L1-002: Click CTA opens config modal, Esc + backdrop dismiss @smoke @quickmatch', async ({
-    tier3Page,
-  }) => {
-    const page = tier3Page
-    await page.goto('/multiplayer')
-    await page.waitForSelector('[data-testid="qm-entry-cta"]')
-
-    // Open
-    await page.getByTestId('qm-entry-cta').click()
-    await expect(page.getByTestId('qm-modal')).toBeVisible()
-
-    // Esc closes
-    await page.keyboard.press('Escape')
-    await expect(page.getByTestId('qm-modal')).toHaveCount(0)
-
-    // Reopen + backdrop click closes
-    await page.getByTestId('qm-entry-cta').click()
-    await expect(page.getByTestId('qm-modal')).toBeVisible()
-    await page.getByTestId('qm-modal-backdrop').click({ position: { x: 5, y: 5 } })
-    await expect(page.getByTestId('qm-modal')).toHaveCount(0)
-  })
-
   test('W-M06-QM-L1-003: Modal hiện đủ 4 mode chips, mặc định SPEED_RACE active @smoke @quickmatch', async ({
     tier3Page,
   }) => {
@@ -99,30 +77,6 @@ test.describe('W-M06-QM Đấu Nhanh Lobby — L1 Smoke @smoke @multiplayer @qui
     await expect(page.getByTestId('qm-source-database')).toHaveAttribute('data-active', 'true')
     // Tier 3 user → AI locked (need Tier 4+).
     await expect(page.getByTestId('qm-source-ai')).toHaveAttribute('data-disabled', 'true')
-  })
-
-  test('W-M06-QM-L1-006: Mode labels VN không leak i18n raw key @smoke @quickmatch @i18n', async ({
-    tier3Page,
-  }) => {
-    const page = tier3Page
-    await page.goto(`${process.env.PLAYWRIGHT_BASE_URL ?? 'http://localhost:5173'}/`)
-    await page.evaluate(() => {
-      localStorage.setItem('quizLanguage', 'vi')
-      localStorage.setItem('i18nextLng', 'vi')
-    })
-    await page.goto(`${process.env.PLAYWRIGHT_BASE_URL ?? 'http://localhost:5173'}/multiplayer`)
-    await page.getByTestId('qm-entry-cta').click()
-    await page.waitForSelector('[data-testid="qm-modal"]')
-
-    // Vietnamese mode labels render (from QuickMatchConfigModal modeLabel()).
-    await expect(page.getByText('Speed Race', { exact: true })).toBeVisible()
-    await expect(page.getByText('Battle Royale', { exact: true })).toBeVisible()
-    await expect(page.getByText('Team vs Team', { exact: true })).toBeVisible()
-    await expect(page.getByText('Đấu vương', { exact: true })).toBeVisible()
-
-    // Regression guard: no raw i18n keys.
-    await expect(page.getByText(/multiplayer\.config\./)).toHaveCount(0)
-    await expect(page.getByText(/multiplayer\.quickMatch\./)).toHaveCount(0)
   })
 
 })

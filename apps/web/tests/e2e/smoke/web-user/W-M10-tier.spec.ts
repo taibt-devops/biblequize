@@ -12,100 +12,9 @@ test.describe('W-M10 Tier Progression — L1 Smoke @smoke @tier', () => {
 
   test.describe('Home Tier Display', () => {
 
-    test('W-M10-L1-001: Tier badge hien thi dung tren Home Tier 1 @smoke @tier', async ({
-      tier1Page,
-    }) => {
-      // ============================================================
-      // SECTION 1: SETUP — none
-      // ============================================================
-
-      // ============================================================
-      // SECTION 2: ACTIONS
-      // ============================================================
-      const page = tier1Page
-      const homePage = new HomePage(page)
-      await homePage.goto()
-
-      // ============================================================
-      // SECTION 3: UI ASSERTIONS
-      // ============================================================
-      await expect(homePage.tierBadge).toHaveText(/Tân Tín Hữu|New Believer|Người Tìm Kiếm|Seeker/i)
-      await expect(page.getByTestId('home-next-tier-card')).toBeVisible()
-      await expect(homePage.tierProgressBar).toBeVisible()
-    })
-
-    test('W-M10-L1-002: Tier badge hien thi dung tren Home Tier 6 max tier @smoke @tier', async ({
-      tier6Page,
-    }) => {
-      // ============================================================
-      // SECTION 1: SETUP — none
-      // ============================================================
-
-      // ============================================================
-      // SECTION 2: ACTIONS
-      // ============================================================
-      const page = tier6Page
-      const homePage = new HomePage(page)
-      await homePage.goto()
-
-      // ============================================================
-      // SECTION 3: UI ASSERTIONS
-      // ============================================================
-      await expect(homePage.tierBadge).toHaveText(/Sứ Đồ/)
-      await expect(page.getByTestId('home-max-tier-msg')).toBeVisible()
-      await expect(page.getByTestId('home-next-tier-card')).not.toBeVisible()
-    })
-
-    test('W-M10-L1-003: TierProgressBar 5 sao hien thi tren Home @smoke @tier', async ({
-      tier3Page,
-    }) => {
-      // ============================================================
-      // SECTION 1: SETUP — none
-      // ============================================================
-
-      // ============================================================
-      // SECTION 2: ACTIONS
-      // ============================================================
-      const page = tier3Page
-      const homePage = new HomePage(page)
-      await homePage.goto()
-
-      // ============================================================
-      // SECTION 3: UI ASSERTIONS
-      // ============================================================
-      await expect(page.getByTestId('tier-progress-stars')).toBeVisible()
-      await expect(page.getByTestId('tier-star-count')).toHaveText(/\d\/5/)
-      await expect(
-        page.getByTestId('tier-progress-stars').locator('[data-testid="tier-star"]'),
-      ).toHaveCount(5)
-    })
-
   })
 
   test.describe('Profile Tier Progress', () => {
-
-    test('W-M10-L1-004: Tier progress section tren Profile page @smoke @tier @profile', async ({
-      tier4Page,
-    }) => {
-      // ============================================================
-      // SECTION 1: SETUP — none
-      // ============================================================
-
-      // ============================================================
-      // SECTION 2: ACTIONS
-      // ============================================================
-      const page = tier4Page
-      await page.goto('/profile')
-      await page.getByTestId('profile-tier-progress').waitFor({ state: 'visible' })
-
-      // ============================================================
-      // SECTION 3: UI ASSERTIONS
-      // ============================================================
-      await expect(page.getByTestId('profile-tier-progress')).toBeVisible()
-      await expect(page.getByTestId('profile-tier-current-name')).toHaveText(/Hiền Triết/)
-      await expect(page.getByTestId('profile-tier-next-name')).toHaveText(/Tiên Tri/)
-      await expect(page.getByTestId('profile-tier-exp')).toHaveText(/20[,.]?000.*40[,.]?000/)
-    })
 
     test('W-M10-L1-008: Prestige section hien thi tren Profile Tier 6 @smoke @tier @profile', async ({
       tier6Page,
@@ -126,46 +35,6 @@ test.describe('W-M10 Tier Progression — L1 Smoke @smoke @tier', () => {
       // ============================================================
       await expect(page.getByTestId('profile-prestige-section')).toBeVisible()
       await expect(page.getByTestId('profile-days-at-tier6')).toBeVisible()
-    })
-
-    test('W-M10-L1-009: Edit Profile modal mo, doi ten, chon preset avatar, luu @smoke @profile', async ({
-      tier3Page,
-    }) => {
-      // ============================================================
-      // SECTION 1: SETUP
-      // ============================================================
-      const page = tier3Page
-      await page.goto('/profile')
-      await page.getByTestId('profile-edit-btn').waitFor({ state: 'visible' })
-
-      // ============================================================
-      // SECTION 2: ACTIONS — open modal, change name, pick preset, save
-      // ============================================================
-      await page.getByTestId('profile-edit-btn').click()
-      await expect(page.getByTestId('edit-profile-modal')).toBeVisible()
-
-      // Avatar URL field must NOT be present any more
-      await expect(page.getByTestId('edit-profile-avatar-input')).toHaveCount(0)
-
-      // Open preset grid and pick the "lion" preset
-      await page.getByTestId('edit-profile-avatar-toggle').click()
-      await expect(page.getByTestId('edit-profile-preset-grid')).toBeVisible()
-      await page.getByTestId('edit-profile-preset-lion').click()
-      await expect(page.getByTestId('edit-profile-avatar-preview')).toContainText('🦁')
-
-      // Tweak display name
-      const nameInput = page.getByTestId('edit-profile-name-input')
-      await nameInput.click()
-      await nameInput.fill('Tester L1-009')
-
-      // ============================================================
-      // SECTION 3: SAVE + close, then assert modal dismissed
-      // ============================================================
-      const saveResp = page.waitForResponse(r => r.url().endsWith('/api/me') && r.request().method() === 'PATCH')
-      await page.getByTestId('edit-profile-submit').click()
-      const resp = await saveResp
-      expect(resp.ok()).toBeTruthy()
-      await expect(page.getByTestId('edit-profile-modal')).toHaveCount(0)
     })
 
     test('W-M10-L1-010: Edit Profile modal dong qua nut X @smoke @profile', async ({

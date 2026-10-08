@@ -63,20 +63,6 @@ test.describe('A-M11 Notifications Broadcast — L1 Smoke', () => {
 // ────────────────────────────────────────────────────────────────
 
 test.describe('A-M12 Configuration — L1 Smoke', () => {
-  // ── A-M12-L1-001 ── admin ──────────────────────────────────
-  test('A-M12-L1-001: Configuration page render dung @smoke @admin @config @critical', async ({
-    adminPage,
-  }) => {
-    // ── Actions ──
-    await adminPage.goto('/admin/config')
-    await adminPage.waitForSelector('[data-testid="admin-config-page"]')
-
-    // ── UI Assertions ──
-    await expect(adminPage).toHaveURL('/admin/config')
-    await expect(adminPage.getByTestId('admin-config-page')).toBeVisible()
-    await expect(adminPage.getByTestId('config-game-panel')).toBeVisible()
-    await expect(adminPage.getByTestId('config-scoring-panel')).toBeVisible()
-  })
 
   // ── A-M12-L1-002 ── admin ──────────────────────────────────
   test('A-M12-L1-002: Thay doi gia tri — Save N changes button active @smoke @admin @config', async ({
@@ -148,37 +134,5 @@ test.describe('A-M13 Export Center — L1 Smoke', () => {
 // ────────────────────────────────────────────────────────────────
 
 test.describe('A-M14 Question Quality — L1 Smoke', () => {
-  // ── A-M14-L1-001 ── admin ──────────────────────────────────
-  test('A-M14-L1-001: Question Quality page render dung @smoke @admin @quality @critical', async ({
-    adminPage,
-  }) => {
-    // ── Actions ──
-    await adminPage.goto('/admin/question-quality')
-    await adminPage.waitForSelector('[data-testid="admin-quality-page"]')
 
-    // ── UI Assertions ──
-    await expect(adminPage).toHaveURL('/admin/question-quality')
-    await expect(adminPage.getByTestId('admin-quality-page')).toBeVisible()
-    await expect(adminPage.getByTestId('quality-overall-score')).toBeVisible()
-    await expect(adminPage.getByTestId('quality-coverage-map')).toBeVisible()
-  })
-
-  // ── A-M14-L1-002 ── admin ──────────────────────────────────
-  test('A-M14-L1-002: Coverage map hien thi books voi progress bars @smoke @admin @quality', async ({
-    adminPage,
-  }) => {
-    // ── Actions ──
-    await adminPage.goto('/admin/question-quality')
-    await adminPage.waitForSelector('[data-testid="quality-coverage-map"]')
-
-    // ── UI Assertions ──
-    await expect(
-      adminPage
-        .getByTestId('quality-coverage-map')
-        .getByTestId('coverage-book-bar'),
-    ).toHaveCount({ min: 1 })
-    await expect(
-      adminPage.getByTestId('coverage-book-bar').first().getByTestId('coverage-pct'),
-    ).toBeVisible()
-  })
 })

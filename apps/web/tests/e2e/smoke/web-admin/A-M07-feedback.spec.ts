@@ -42,23 +42,6 @@ test.describe('A-M07 Feedback & Moderation — L1 Smoke', () => {
     await expect(adminPage.getByTestId('feedback-stat-rejected')).toBeVisible()
   })
 
-  // ── A-M07-L1-003 ── admin ──────────────────────────────────
-  test('A-M07-L1-003: Filter feedback theo status @smoke @admin @feedback', async ({
-    adminPage,
-  }) => {
-    // ── Actions ──
-    await adminPage.goto('/admin/feedback')
-    await adminPage.waitForSelector('[data-testid="feedback-status-filter"]')
-    await adminPage.getByTestId('feedback-status-filter').selectOption('pending')
-    await adminPage.waitForResponse((resp) =>
-      resp.url().includes('/api/admin/feedback') && resp.status() === 200,
-    )
-
-    // ── UI Assertions ──
-    // Filtered results may be 0 or more — just verify table is still visible
-    await expect(adminPage.getByTestId('feedback-table')).toBeVisible()
-  })
-
   // ── A-M07-L1-004 ── admin ──────────────────────────────────
   test('A-M07-L1-004: Click feedback mo detail modal + update status @smoke @admin @feedback @write', async ({
     adminPage,

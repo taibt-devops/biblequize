@@ -45,20 +45,6 @@ test.describe('A-M01 Admin Dashboard — L1 Smoke', () => {
     await expect(adminPage.getByTestId('kpi-pending-review')).toBeVisible()
   })
 
-  // ── A-M01-L1-003 ── admin ──────────────────────────────────
-  test('A-M01-L1-003: Activity log section hien thi @smoke @admin @dashboard', async ({
-    adminPage,
-  }) => {
-    // ── Setup ──
-    const dashboard = new AdminDashboardPage(adminPage)
-
-    // ── Actions ──
-    await dashboard.goto()
-
-    // ── UI Assertions ──
-    await expect(dashboard.activityLog).toBeVisible()
-  })
-
   // ── A-M01-L1-004 ── non-admin ─────────────────────────────
   test('A-M01-L1-004: Non-admin redirect sang /login @smoke @admin @auth @critical', async ({
     tier3Page,

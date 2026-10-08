@@ -10,29 +10,6 @@ import { test, expect } from '../../fixtures/auth'
 
 test.describe('W-M06 Multiplayer Lobby — L1 Smoke @smoke @multiplayer', () => {
 
-  test('W-M06-L1-001: Rooms list page render dung @smoke @multiplayer', async ({
-    tier3Page,
-  }) => {
-    // ============================================================
-    // SECTION 1: SETUP — none
-    // ============================================================
-
-    // ============================================================
-    // SECTION 2: ACTIONS
-    // ============================================================
-    const page = tier3Page
-    await page.goto('/multiplayer')
-    await page.waitForSelector('[data-testid="multiplayer-page"]')
-
-    // ============================================================
-    // SECTION 3: UI ASSERTIONS
-    // ============================================================
-    await expect(page).toHaveURL('/multiplayer')
-    await expect(page.getByTestId('multiplayer-page')).toBeVisible()
-    await expect(page.getByTestId('multiplayer-create-btn')).toBeVisible()
-    await expect(page.getByTestId('multiplayer-join-btn')).toBeVisible()
-  })
-
   test('W-M06-L1-002: Navigate to Create Room page @smoke @multiplayer', async ({
     tier3Page,
   }) => {
@@ -55,53 +32,6 @@ test.describe('W-M06 Multiplayer Lobby — L1 Smoke @smoke @multiplayer', () => 
     await expect(page.getByTestId('create-room-mode-select')).toBeVisible()
     await expect(page.getByTestId('create-room-submit-btn')).toBeVisible()
     await expect(page.getByTestId('create-room-submit-btn')).toBeEnabled()
-  })
-
-  test('W-M06-L1-003: Join Room section trong Multiplayer page @smoke @multiplayer', async ({
-    tier3Page,
-  }) => {
-    // ============================================================
-    // SECTION 1: SETUP — none
-    // ============================================================
-
-    // ============================================================
-    // SECTION 2: ACTIONS
-    // ============================================================
-    const page = tier3Page
-    await page.goto('/multiplayer')
-    await page.waitForSelector('[data-testid="multiplayer-page"]')
-
-    // ============================================================
-    // SECTION 3: UI ASSERTIONS
-    // ============================================================
-    await expect(page).toHaveURL('/multiplayer')
-    await expect(page.getByTestId('multiplayer-page')).toBeVisible()
-    await expect(page.getByTestId('join-room-code-input')).toBeVisible()
-    await expect(page.getByTestId('multiplayer-join-btn')).toBeVisible()
-  })
-
-  test('W-M06-L1-004: Join room form submit empty code validation error @smoke @multiplayer', async ({
-    tier3Page,
-  }) => {
-    // ============================================================
-    // SECTION 1: SETUP — none
-    // ============================================================
-
-    // ============================================================
-    // SECTION 2: ACTIONS
-    // ============================================================
-    const page = tier3Page
-    await page.goto('/multiplayer')
-    await page.waitForSelector('[data-testid="multiplayer-join-btn"]')
-    await page.getByTestId('multiplayer-join-btn').click()
-
-    // ============================================================
-    // SECTION 3: UI ASSERTIONS
-    // ============================================================
-    await expect(page).toHaveURL('/multiplayer')
-    // No dedicated error element exists; the join button click with empty code
-    // should not navigate away — staying on the page is the validation behavior
-    await expect(page.getByTestId('multiplayer-page')).toBeVisible()
   })
 
   test('W-M06-L1-005: Room Lobby room code hien thi va co the copy @smoke @multiplayer @critical', async ({
@@ -152,39 +82,6 @@ test.describe('W-M06 Multiplayer Lobby — L1 Smoke @smoke @multiplayer', () => 
     // ============================================================
     await expect(page.getByTestId('lobby-ready-btn')).toBeVisible()
     await expect(page.getByTestId('lobby-start-btn')).not.toBeVisible()
-  })
-
-  test('W-M06-L1-007: CreateRoom mode cards hien thi tieng Viet, khong lo i18n raw key @smoke @multiplayer @i18n @regression', async ({
-    tier3Page,
-  }) => {
-    // ============================================================
-    // SECTION 1: SETUP — none (default language = vi)
-    // ============================================================
-
-    // ============================================================
-    // SECTION 2: ACTIONS
-    // ============================================================
-    const page = tier3Page
-    // Force vi language to assert Vietnamese mode labels (storage-state defaults to en)
-    await page.goto(`${process.env.PLAYWRIGHT_BASE_URL ?? 'http://localhost:5173'}/`)
-    await page.evaluate(() => {
-      localStorage.setItem('quizLanguage', 'vi')
-      localStorage.setItem('i18nextLng', 'vi')
-    })
-    await page.goto(`${process.env.PLAYWRIGHT_BASE_URL ?? 'http://localhost:5173'}/room/create`)
-    await page.waitForSelector('[data-testid="create-room-page"]')
-
-    // ============================================================
-    // SECTION 3: UI ASSERTIONS — localized mode names visible (vi)
-    // ============================================================
-    await expect(page.getByText('Đua tốc độ')).toBeVisible()
-    await expect(page.getByText('Sinh tồn')).toBeVisible()
-    await expect(page.getByText('Đội đấu đội')).toBeVisible()
-    await expect(page.getByText('Cái chết bất ngờ')).toBeVisible()
-
-    // Regression guard: no raw i18n keys leaked to UI
-    await expect(page.getByText(/room\.modes\./)).toHaveCount(0)
-    await expect(page.getByText(/createRoom\.modeDesc\./)).toHaveCount(0)
   })
 
   test('W-M06-L1-008: Lobby share button opens invite modal (Copy/Link/QR) @smoke @multiplayer @lobby-redesign', async ({

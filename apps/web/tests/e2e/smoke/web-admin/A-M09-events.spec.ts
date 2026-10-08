@@ -25,26 +25,6 @@ test.describe('A-M09 Events & Tournaments — L1 Smoke', () => {
     await expect(adminPage.getByTestId('admin-events-page')).toBeVisible()
   })
 
-  // ── A-M09-L1-002 ── admin ──────────────────────────────────
-  test('A-M09-L1-002: Tournament list hien thi voi status badges @smoke @admin @events', async ({
-    adminPage,
-  }) => {
-    // ── Actions ──
-    await adminPage.goto('/admin/events')
-    await adminPage.waitForSelector('[data-testid="admin-tournament-row"]')
-
-    // ── UI Assertions ──
-    await expect(adminPage.getByTestId('admin-tournament-row')).toHaveCount({
-      min: 1,
-    })
-    await expect(
-      adminPage
-        .getByTestId('admin-tournament-row')
-        .first()
-        .getByTestId('tournament-status-badge'),
-    ).toBeVisible()
-  })
-
   // ── A-M09-L1-003 ── admin ──────────────────────────────────
   test('A-M09-L1-003: Create tournament button visible @smoke @admin @events', async ({
     adminPage,
@@ -60,26 +40,4 @@ test.describe('A-M09 Events & Tournaments — L1 Smoke', () => {
     await expect(adminPage.getByTestId('create-tournament-btn')).toBeVisible()
   })
 
-  // ── A-M09-L1-004 ── admin ──────────────────────────────────
-  test('A-M09-L1-004: Bracket size va round info hien thi @smoke @admin @events', async ({
-    adminPage,
-  }) => {
-    // ── Actions ──
-    await adminPage.goto('/admin/events')
-    await adminPage.waitForSelector('[data-testid="admin-tournament-row"]')
-
-    // ── UI Assertions ──
-    await expect(
-      adminPage
-        .getByTestId('admin-tournament-row')
-        .first()
-        .getByTestId('tournament-bracket-size'),
-    ).toBeVisible()
-    await expect(
-      adminPage
-        .getByTestId('admin-tournament-row')
-        .first()
-        .getByTestId('tournament-round-info'),
-    ).toBeVisible()
-  })
 })

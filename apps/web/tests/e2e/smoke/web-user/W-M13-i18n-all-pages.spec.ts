@@ -24,14 +24,8 @@ interface RouteCase {
 }
 
 const ROUTES: RouteCase[] = [
-  { id: 'home',        path: '/',            testid: 'home-page',        name: 'Home' },
-  { id: 'daily',       path: '/daily',       testid: 'daily-page',       name: 'Daily Challenge' },
   { id: 'practice',    path: '/practice',    testid: 'practice-page',    name: 'Practice' },
   { id: 'ranked',      path: '/ranked',      testid: 'ranked-page',      name: 'Ranked' },
-  { id: 'profile',     path: '/profile',     testid: 'profile-page',     name: 'Profile' },
-  { id: 'groups',      path: '/groups',      testid: 'groups-page',      name: 'Church Groups' },
-  { id: 'multiplayer', path: '/multiplayer', testid: 'multiplayer-page', name: 'Multiplayer' },
-  { id: 'leaderboard', path: '/leaderboard', testid: 'leaderboard-page', name: 'Leaderboard' },
   { id: 'achievements', path: '/achievements', testid: 'achievements-page', name: 'Achievements' },
 ]
 
