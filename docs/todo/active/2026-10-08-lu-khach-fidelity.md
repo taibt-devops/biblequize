@@ -44,7 +44,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-7 | Bộ "địa điểm" dùng chung ✅ | — | `components/lk/Place.tsx`: `PlaceBackdrop`, `Plaque` (biển gỗ), `ScrollPanel`, `Medal`, `TrackBar` + 8 tranh địa điểm `place-*.webp` |
 | LKF-8 | Luyện Tập, Học Thuộc (3 màn), Ôn tập ✅ | `/practice`, `/practice/memorize*`, `/review` | phòng đọc |
 | LKF-9 | Đấu Hạng, Bài kiểm tra cơ bản ✅ | `/ranked`, `/basic-quiz` | sân đấu |
-| LKF-10 | Thử thách hôm nay | `/daily` | lá thư bồ câu mang tới |
+| LKF-10 | Thử thách hôm nay ✅ | `/daily` | lá thư bồ câu mang tới |
 | LKF-11 | Xếp hạng | `/leaderboard` | đỉnh đồi, bục vinh danh |
 | LKF-12 | Cá nhân, Thành tích, Ngoại hình | `/profile`, `/achievements`, `/cosmetics` | lều trại |
 | LKF-13 | Phòng chơi, Danh sách phòng, Tạo phòng, Vào phòng | `/multiplayer`, `/rooms`, `/room/create`, `/room/join` | quảng trường làng |
@@ -71,4 +71,13 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
   - Bài Giáo Lý: là "bài thi vào sân đấu" — câu hỏi trên cuộn giấy, đáp án dùng màu biển gỗ như Quiz (A san hô, B trời, C vàng, D lá), chọn = biển ấn xuống + vòng mực + ✓; 10 viên đá tiến độ; đậu = lữ khách nhảy mừng + huy chương kiếm "Đã mở khóa: Đấu Hạng"; trượt = lữ khách ngồi nghỉ + đèn lồng đếm giờ thử lại; ôn bài = tờ giấy có dải trạng thái
   - Quyết định: bỏ xoay ảnh kiếm (ảnh gốc đã chéo, xoay thêm thành cây nến) — cả màn kết quả Đấu Hạng; sửa chữ "Đủ chơi −N câu" → "~N", "Cap N/ngày" → "Tối đa N câu/ngày", "Bắt đầu Ranked ngay" → "Vào Đấu Hạng ngay"
   - Chưa chụp được: kết quả Đấu Hạng trên điện thoại ở máy local — kho câu Đấu Hạng của tài khoản test đã hết (`questions/select` trả rỗng); Bài Giáo Lý chụp bằng API giả lập (DB local không có bộ bible_basics → 404)
+  - **Spec impact**: [x] None · **Spec strategy**: [x] (c)
+- LKF-10 Thử thách hôm nay — nhà bưu điện, lá thư bồ câu mang tới
+  - Status: [x] DONE
+  - Thẻ chính là lá thư: viền thư máy bay (sọc đỏ–xanh), dấu bưu điện tròn nét đứt ghi ngày (chỉ khi thư còn niêm), bồ câu ngậm thư nhún nhảy; nút "Mở thư hôm nay" (cùng chữ với Trang chủ); phần thưởng trong huy chương sao
+  - Đã làm: thư mở — bảng tổng kết viền mực, 5 viên đá đúng/sai, huy chương điểm lớn, chip % chính xác, hạng toàn cầu, nút Chia sẻ / Tải ảnh
+  - Chuỗi = đèn lồng (tắt khi 0 ngày), 7 ngày dạng đèn tròn (vàng = đã làm, nét đứt = hôm nay chưa làm), đóng băng ❄; lịch sử 30 ngày = con tem vàng đậm/nhạt; bảng xếp hạng hôm nay = huy chương vàng/bạc/đồng
+  - Khi chơi: tranh bưu điện, biển gỗ, 5 viên đá tiến độ, câu hỏi trên cuộn giấy, tham chiếu tên sách tiếng Việt (`useBookName`, bỏ chữ IN HOA tiếng Anh), thanh phản hồi nền lá / hồng, giải thích trên giấy
+  - Quyết định: CTA `daily.ready.cta` "Bắt đầu thử thách" → "Mở thư hôm nay" (EN "Open today's letter"); "· perfect" → "★"; ô "đáp án đúng là" dùng `quiz.lk.correctIs` (có chữ cái đáp án)
+  - Ghi nhận (không sửa, ngoài phạm vi giao diện): DB local chỉ có 3 câu/ngày nhưng kết quả ghi "trên 5 câu" và chữ thưởng "+150 XP nếu đúng cả 5" — số 5 đến từ BE/i18n
   - **Spec impact**: [x] None · **Spec strategy**: [x] (c)

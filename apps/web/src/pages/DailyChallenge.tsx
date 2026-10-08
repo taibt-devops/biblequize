@@ -8,13 +8,15 @@ import PageMeta from '../components/PageMeta'
 import DifficultyBadge from '../components/DifficultyBadge'
 import { getQuizLanguage } from '../utils/quizLanguage'
 import { AnswerButton, type AnswerState } from '../components/quiz/AnswerButton'
-import { wrapProperNouns, formatVerseRef, getQuestionLengthClass } from '../utils/textHelpers'
+import { wrapProperNouns, getQuestionLengthClass } from '../utils/textHelpers'
 import { useAuthStore } from '../store/authStore'
+import { useBookName } from '../hooks/useBookName'
 import { PageHeader } from './daily/PageHeader'
 import { HeroCard } from './daily/HeroCard'
 import { DailyLeaderboard, type DailyLbEntry } from './daily/DailyLeaderboard'
 import { StreakCard } from './daily/StreakCard'
 import { HeatmapCard, type HeatmapDay } from './daily/HeatmapCard'
+import { PlaceBackdrop, Plaque, ScrollPanel } from '../components/lk/Place'
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 interface Question {
@@ -69,7 +71,6 @@ interface ActiveSeason {
   isActive: boolean
 }
 
-const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
 const LETTERS = ['A', 'B', 'C', 'D']
 
 // Daily Challenge XP by correct-count — mirrors BE DailyChallengeService.dailyXp
@@ -119,15 +120,15 @@ function LoadingSkeleton() {
   // its <h1> — including in the prerendered snapshot, which is captured while
   // the daily query is still loading.
   return (
-    <div className="max-w-5xl mx-auto p-2 space-y-6">
+    <div className="relative max-w-5xl mx-auto p-2 space-y-6">
+      <PlaceBackdrop place="post" veil="mid" />
       <PageHeader todayLabel={getTodayLabel(t)} />
       <div className="space-y-6 animate-pulse">
-        <div className="h-80 bg-bq-inset rounded-2xl" />
+        <div className="h-80 bg-bq-inset/80 border-[3px] border-bq-ink/20 rounded-bq" />
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-5">
-          <div className="h-96 bg-bq-inset rounded-2xl" />
-          <div className="h-96 bg-bq-inset rounded-2xl" />
+          <div className="h-96 bg-bq-inset/80 border-[3px] border-bq-ink/20 rounded-bq" />
+          <div className="h-96 bg-bq-inset/80 border-[3px] border-bq-ink/20 rounded-bq" />
         </div>
-        <div className="h-40 bg-bq-inset rounded-2xl" />
       </div>
     </div>
   )
@@ -142,6 +143,7 @@ const DailyChallenge: React.FC = () => {
   const userAvatar = useAuthStore((s) => s.user?.avatar)
   const userStreak = useAuthStore((s) => s.user?.currentStreak ?? 0)
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated)
+  const getBookName = useBookName()
 
   // Page-level state
   const [error, setError] = useState<string | null>(null)
@@ -458,18 +460,19 @@ const DailyChallenge: React.FC = () => {
   // ─── Error ──────────────────────────────────────────────────────────────
   if (challengeQuery.isError && !challengeData) {
     return (
-      <div data-testid="daily-error-state" className="max-w-5xl mx-auto flex flex-col items-center justify-center py-20 space-y-6">
-        <div className="w-20 h-20 bg-bq-ruby/10 rounded-full flex items-center justify-center">
-          <span className="material-symbols-outlined text-5xl text-bq-ruby">error</span>
+      <div data-testid="daily-error-state" className="relative max-w-md mx-auto py-16 px-4">
+        <PlaceBackdrop place="post" veil="strong" />
+        <div className="p-7 text-center bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card space-y-4">
+          <img src="/images/lk/hero-lost.webp" alt="" aria-hidden className="mx-auto h-32" />
+          <p className="m-0 font-read text-[16px] text-bq-ink2">{error ?? t('daily.loadError')}</p>
+          <button
+            data-testid="daily-error-retry-btn"
+            onClick={() => window.location.reload()}
+            className="lk-btn text-bq-ink text-[16px]"
+          >
+            {t('common.retry')}
+          </button>
         </div>
-        <p className="text-bq-ink2 text-lg">{error ?? t('daily.loadError')}</p>
-        <button
-          data-testid="daily-error-retry-btn"
-          onClick={() => window.location.reload()}
-          className="bg-bq-action text-bq-ink shadow-bq-action px-8 py-3 rounded-xl font-bold"
-        >
-          {t('common.retry')}
-        </button>
       </div>
     )
   }
@@ -482,65 +485,61 @@ const DailyChallenge: React.FC = () => {
 
     return (
       <div className={`relative flex flex-col items-center max-w-5xl mx-auto ${answered ? 'pb-56 md:pb-44' : 'pb-12'}`}>
-        <div className="w-full flex items-center justify-between mb-6">
-          <div>
-            <h2 className="font-display text-lg font-extrabold tracking-tight text-bq-ink">{t('daily.title')}</h2>
-            <p className="text-xs text-bq-ink2 mt-0.5">{t('quiz.question', { current: currentIndex + 1, total: totalQuestions })}</p>
-          </div>
-          <div className="bg-bq-white px-4 py-2 rounded-xl border border-bq-hair text-sm font-mono font-bold text-bq-amberd">
-            {todayLabel}
+        <PlaceBackdrop place="post" veil="strong" />
+        <div className="w-full flex flex-wrap items-center justify-between gap-3 mb-4">
+          <Plaque as="h2" className="text-[20px] md:text-[26px]">
+            <img src="/images/lk/dove-letter.webp" alt="" aria-hidden className="h-[1.3em] -my-1" />
+            {t('daily.title')}
+          </Plaque>
+          <div className="flex items-center gap-2">
+            <span className="px-3 py-1 bg-bq-white border-2 border-bq-ink rounded-full text-[14px] font-extrabold tabular-nums">
+              {t('quiz.question', { current: currentIndex + 1, total: totalQuestions })}
+            </span>
+            <span className="hidden sm:inline-block px-3 py-1 bg-bq-cream border-2 border-bq-ink rounded-full text-[13px] font-bold">
+              {todayLabel}
+            </span>
           </div>
         </div>
 
-        <div className="w-full flex gap-2 mb-10">
+        {/* one stone per question: leaf = right, ruby = wrong, gold = now */}
+        <div className="w-full flex gap-2 mb-6 md:mb-8">
           {Array.from({ length: totalQuestions }, (_, i) => (
             <div
               key={i}
-              className={`h-1.5 flex-1 rounded-full transition-colors duration-300 ${
+              className={`h-4 flex-1 rounded-full border-2 border-bq-ink transition-colors duration-300 ${
                 i < currentIndex
-                  ? results[i] ? 'bg-bq-emerald' : 'bg-bq-ruby'
-                  : i === currentIndex ? 'bg-bq-amber' : 'bg-bq-inset'
+                  ? results[i] ? 'bg-bq-leaf' : 'bg-bq-ruby'
+                  : i === currentIndex ? 'bg-bq-amber' : 'bg-bq-track'
               }`}
             />
           ))}
         </div>
 
-        <div className="w-full space-y-6 md:space-y-16">
+        <div className="w-full space-y-5 md:space-y-8">
           {(() => {
             const lenClass = getQuestionLengthClass(question.content)
             const mobileFontCls =
-              lenClass === 'short'  ? 'text-[21px] font-bold text-center' :
-              lenClass === 'medium' ? 'text-[18px] font-semibold text-center' :
-                                      'text-[15px] font-semibold text-left'
+              lenClass === 'short'  ? 'text-[22px] font-bold text-center' :
+              lenClass === 'medium' ? 'text-[19px] font-bold text-center' :
+                                      'text-[16px] font-semibold text-left'
             return (
-              <div
-                data-question-length={lenClass}
-                className="relative w-full aspect-auto min-h-[160px] md:aspect-[21/7] md:min-h-0 flex flex-col items-center justify-center text-center p-5 md:p-10 bg-bq-white rounded-2xl md:rounded-[2.5rem] border border-bq-hair shadow-bq-soft overflow-hidden"
-              >
-                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1.5 md:w-2 h-20 md:h-32 bg-bq-amber rounded-r-full" />
-                {/* Verse badge + DTAG-2 difficulty badge. */}
-                <div className="flex items-center justify-center flex-wrap gap-2 mb-3 md:mb-4">
-                  <div className="inline-flex items-center gap-1.5 bg-bq-amber/10 border border-bq-amber/20 rounded-full px-3 py-1">
-                    <span className="material-symbols-outlined text-bq-amberd text-xs">menu_book</span>
-                    <span className="text-bq-amberd text-[11px] font-medium tracking-wider">
-                      {formatVerseRef({ book: question.book, chapter: question.chapter })}
+              <ScrollPanel bodyClassName="px-5 md:px-12 py-6 md:py-9 text-center">
+                <div data-question-length={lenClass} className="flex flex-col items-center">
+                  <div className="flex items-center justify-center flex-wrap gap-2 mb-3 md:mb-4">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-0.5 bg-bq-white border-2 border-bq-ink rounded-full text-[13px] font-extrabold">
+                      <img src="/images/lk/scroll.webp" alt="" aria-hidden className="h-4" />
+                      {getBookName(question.book)} {question.chapter}
                     </span>
+                    <DifficultyBadge difficulty={question.difficulty} />
                   </div>
-                  <DifficultyBadge difficulty={question.difficulty} />
+                  <h2
+                    data-testid="daily-question-text"
+                    className={`question-text m-0 font-read ${mobileFontCls} md:text-[30px] md:font-bold md:text-center leading-snug max-w-3xl text-bq-ink w-full`}
+                  >
+                    {wrapProperNouns(question.content)}
+                  </h2>
                 </div>
-                <h2
-                  data-testid="daily-question-text"
-                  className={`question-text font-headline ${mobileFontCls} md:text-4xl md:font-extrabold md:text-center tracking-tight leading-snug max-w-3xl text-bq-ink w-full`}
-                >
-                  {wrapProperNouns(question.content)}
-                </h2>
-                <div className="hidden md:flex mt-6 items-center gap-2 text-bq-ink3">
-                  <span className="material-symbols-outlined text-sm">menu_book</span>
-                  <span className="text-xs font-bold uppercase tracking-widest">
-                    {question.book}{question.chapter ? ` - ${t('quiz.chapter', { chapter: question.chapter })}` : ''}
-                  </span>
-                </div>
-              </div>
+              </ScrollPanel>
             )
           })()}
 
@@ -588,42 +587,35 @@ const DailyChallenge: React.FC = () => {
                   data-testid="daily-explanation-pill"
                   type="button"
                   onClick={() => setExplanationCollapsed(false)}
-                  className={`px-4 py-2 rounded-full bg-bq-white border text-xs font-bold flex items-center gap-2 shadow-bq-soft hover:scale-105 transition-transform ${
-                    isCorrect ? 'border-bq-emerald/30 text-bq-emerald' : 'border-bq-ruby/30 text-bq-ruby'
-                  }`}
+                  className="px-4 py-1.5 rounded-full bg-bq-white border-2 border-bq-ink text-[14px] font-extrabold flex items-center gap-2 shadow-[0_3px_0_#1D2B22] active:translate-y-[3px] active:shadow-none"
                 >
-                  <span className="material-symbols-outlined text-sm" style={FILL_1}>lightbulb</span>
+                  <img src="/images/lk/scroll.webp" alt="" aria-hidden className="h-5" />
                   {t('quiz.showExplanationAgain', 'Xem giải thích')}
                 </button>
               ) : (
                 <div ref={explanationRef} className="w-full">
-                  <div className={`bg-bq-white shadow-bq-soft p-5 rounded-2xl border space-y-3 max-h-[50vh] overflow-y-auto ${isCorrect ? 'border-bq-emerald/20' : 'border-bq-ruby/20'}`}>
+                  <div className="bg-bq-white p-4 rounded-2xl border-[3px] border-bq-ink shadow-bq-card space-y-2.5 max-h-[50vh] overflow-y-auto">
                     <div className="flex items-center justify-between gap-2">
-                      <div className="flex items-center gap-2 min-w-0">
+                      <div className="min-w-0">
+                        {isCorrect && <span className="font-display text-[16px] font-extrabold">{t('daily.explanation')}</span>}
                         {!isCorrect && correctOptionText && (
-                          <>
-                            <span className="material-symbols-outlined text-bq-emerald text-sm flex-shrink-0" style={FILL_1}>check_circle</span>
-                            <span className="text-sm font-bold text-bq-emerald truncate">
-                              {t('quiz.correctAnswerIs', { answer: correctOptionText })}
-                            </span>
-                          </>
+                          <span className="inline-block px-2.5 py-0.5 rounded-full bg-bq-leaf border-2 border-bq-ink text-[13.5px] font-extrabold">
+                            ✓ {t('quiz.lk.correctIs', { letter: LETTERS[correctAnswerIndices[0] ?? 0], answer: correctOptionText })}
+                          </span>
                         )}
                       </div>
                       <button
                         data-testid="daily-explanation-close"
                         type="button"
                         onClick={() => setExplanationCollapsed(true)}
-                        className="text-bq-ink3 hover:text-bq-ink transition-colors -mr-1 flex-shrink-0"
+                        className="w-8 h-8 grid place-items-center rounded-full border-2 border-bq-ink bg-bq-paper text-bq-ink flex-shrink-0"
                         aria-label={t('quiz.minimizeExplanation', 'Thu nhỏ')}
                       >
-                        <span className="material-symbols-outlined text-base">close</span>
+                        <span className="material-symbols-outlined text-[18px]">close</span>
                       </button>
                     </div>
                     {currentExplanation && (
-                      <p className="text-bq-ink2 text-sm leading-relaxed flex items-start gap-1.5">
-                        <span className="material-symbols-outlined text-sm mt-0.5 text-bq-amberd">lightbulb</span>
-                        <span>{currentExplanation}</span>
-                      </p>
+                      <p className="m-0 font-read text-[15px] leading-relaxed text-bq-ink2">{currentExplanation}</p>
                     )}
                   </div>
                 </div>
@@ -631,20 +623,17 @@ const DailyChallenge: React.FC = () => {
             )}
             <div
               data-testid="daily-answer-feedback"
-              className={`w-full bg-bq-white p-4 sm:p-5 rounded-3xl border shadow-bq-soft flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 ${isCorrect ? 'border-bq-emerald/30' : 'border-bq-ruby/30'}`}
+              className={`w-full p-3.5 sm:p-4 rounded-[22px] border-[3px] border-bq-ink shadow-bq-card flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 ${isCorrect ? 'bg-bq-leaf' : 'bg-[#F9D9CF]'}`}
             >
-              <div className="flex items-center gap-4 min-w-0">
-                <div className={`w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center flex-shrink-0 ${isCorrect ? 'bg-bq-emerald/15' : 'bg-bq-ruby/15'}`}>
-                  <span
-                    className={`material-symbols-outlined text-2xl ${isCorrect ? 'text-bq-emerald' : 'text-bq-ruby'}`}
-                    style={FILL_1}
-                  >{isCorrect ? 'verified' : 'cancel'}</span>
-                </div>
+              <div className="flex items-center gap-3 min-w-0">
+                <span className={`w-11 h-11 rounded-full border-[3px] border-bq-ink grid place-items-center text-[20px] font-extrabold flex-shrink-0 ${isCorrect ? 'bg-bq-white text-bq-emerald' : 'bg-bq-white text-bq-ruby'}`}>
+                  {isCorrect ? '✓' : '✗'}
+                </span>
                 <div className="min-w-0 flex-1">
-                  <p className="text-base font-bold text-bq-ink leading-tight">
+                  <p className="m-0 font-display text-[19px] font-extrabold text-bq-ink leading-tight">
                     {isCorrect ? t('quiz.correct') : t('quiz.incorrect')}
                   </p>
-                  <p className={`text-xs font-medium leading-tight mt-0.5 ${isCorrect ? 'text-bq-emerald' : 'text-bq-ruby'}`}>
+                  <p className="m-0 text-[13.5px] font-bold leading-tight mt-0.5 text-bq-ink2">
                     {t('daily.xpSoFar', { xp: dailyXp(results.filter(Boolean).length) })}
                   </p>
                 </div>
@@ -652,7 +641,7 @@ const DailyChallenge: React.FC = () => {
               <button
                 data-testid="daily-next-btn"
                 onClick={handleNext}
-                className="bg-bq-action text-bq-ink px-6 sm:px-8 py-3 rounded-2xl font-black text-sm shadow-bq-action active:scale-95 transition-all hover:brightness-110 whitespace-nowrap w-full sm:w-auto"
+                className="lk-btn w-full sm:w-auto whitespace-nowrap text-bq-ink text-[16px]"
               >
                 {currentIndex + 1 >= totalQuestions ? t('daily.viewResult') : t('daily.nextQuestion')}
               </button>
@@ -666,13 +655,14 @@ const DailyChallenge: React.FC = () => {
   // ─── No data — only block when not completed; completed users still see hero ─
   if ((!challengeData || !Array.isArray(challengeData.questions) || challengeData.questions.length === 0) && !isCompleted) {
     return (
-      <div className="max-w-5xl mx-auto flex flex-col items-center justify-center py-20 space-y-6">
-        <div className="w-20 h-20 bg-bq-inset rounded-full flex items-center justify-center">
-          <span className="material-symbols-outlined text-5xl text-bq-ink2">hourglass_empty</span>
+      <div className="relative max-w-md mx-auto py-16 px-4">
+        <PlaceBackdrop place="post" veil="strong" />
+        <div className="p-7 text-center bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card space-y-3">
+          <img src="/images/lk/dove-perched.webp" alt="" aria-hidden className="mx-auto h-28" />
+          <h3 className="m-0 font-display text-[24px] font-extrabold text-bq-ink">{t('daily.noQuestions')}</h3>
+          <p className="m-0 font-read text-[15px] text-bq-ink2">{t('daily.comeBackLater')}</p>
+          <Link to="/" className="lk-btn text-bq-ink text-[16px] no-underline">{t('daily.home')}</Link>
         </div>
-        <h3 className="font-display text-2xl font-bold text-bq-ink">{t('daily.noQuestions')}</h3>
-        <p className="text-bq-ink2">{t('daily.comeBackLater')}</p>
-        <Link to="/" className="bg-bq-action text-bq-ink shadow-bq-action px-8 py-3 rounded-xl font-bold">{t('daily.home')}</Link>
       </div>
     )
   }
@@ -697,7 +687,8 @@ const DailyChallenge: React.FC = () => {
   } : undefined
 
   return (
-    <div data-testid="daily-page" className="max-w-5xl mx-auto p-2">
+    <div data-testid="daily-page" className="relative max-w-5xl mx-auto p-2">
+      <PlaceBackdrop place="post" veil="mid" />
       <PageMeta
         title="Thử thách Kinh Thánh hàng ngày"
         description="5 câu hỏi Kinh Thánh mỗi ngày — thử sức với cộng đồng và chia sẻ kết quả."
@@ -723,7 +714,7 @@ const DailyChallenge: React.FC = () => {
           hiệu động lực ngược trước khi user kịp bấm Bắt đầu. Khi đã
           hoàn thành, surface ranking thật làm reward. */}
       {isCompleted ? (
-        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-5 mb-7">
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] lg:items-start gap-5 mb-7">
           <DailyLeaderboard
             entries={leaderboardEntries}
             myEntry={myEntry}
@@ -739,7 +730,7 @@ const DailyChallenge: React.FC = () => {
         // State A: pair StreakCard with the 30-day heatmap side-by-side on
         // lg+ so the page doesn't read as a 3-row stack with mostly empty
         // horizontal space. Mobile stays vertical (default grid-cols-1).
-        <div className={`grid grid-cols-1 ${historyDays.length > 0 ? 'lg:grid-cols-[2fr_3fr]' : ''} gap-5 mb-7`}>
+        <div className={`grid grid-cols-1 ${historyDays.length > 0 ? 'lg:grid-cols-[2fr_3fr]' : ''} lg:items-start gap-5 mb-7`}>
           <StreakCard
             currentStreak={currentStreak}
             last7Days={last7Days}
@@ -760,37 +751,35 @@ const DailyChallenge: React.FC = () => {
           payload only when the user has already completed today. */}
       {showReviewModal && challengeData?.questions && (
         <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-start justify-center p-4 overflow-y-auto" onClick={() => setShowReviewModal(false)}>
-          <div className="max-w-2xl w-full bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-6 my-8" onClick={(e) => e.stopPropagation()}>
-            <div className="flex items-center justify-between mb-5">
-              <h3 className="font-display text-xl font-extrabold text-bq-ink flex items-center gap-2">
-                <span className="material-symbols-outlined text-bq-amberd">visibility</span>
-                {t('daily.review.title')}
-              </h3>
+          <div className="max-w-2xl w-full bg-bq-white border-[3px] border-bq-ink shadow-bq-card rounded-bq p-5 md:p-6 my-8" onClick={(e) => e.stopPropagation()}>
+            <div className="flex items-center justify-between gap-3 mb-5">
+              <Plaque as="h3" className="text-[20px] md:text-[22px]">{t('daily.review.title')}</Plaque>
               <button
                 onClick={() => setShowReviewModal(false)}
-                className="w-8 h-8 rounded-lg bg-bq-inset hover:bg-bq-hair grid place-items-center text-bq-ink2"
+                aria-label={t('common.close')}
+                className="w-10 h-10 grid place-items-center bg-bq-white border-[3px] border-bq-ink rounded-[12px] shadow-[0_3px_0_#1D2B22] active:translate-y-[3px] active:shadow-none"
               >
                 <span className="material-symbols-outlined">close</span>
               </button>
             </div>
-            <div className="space-y-5">
+            <div className="space-y-4">
               {challengeData.questions.map((q, idx) => {
                 const correctIdx = q.correctAnswer?.[0] ?? -1
                 const userGotIt = results[idx]
                 return (
-                  <div key={q.id} className="bg-bq-paper border border-bq-hair rounded-xl p-4">
+                  <div key={q.id} className="bg-bq-paper border-2 border-bq-ink rounded-2xl p-4">
                     <div className="flex items-start justify-between gap-3 mb-3">
-                      <div className="flex items-start gap-2 flex-1">
-                        <span className={`flex-shrink-0 w-6 h-6 rounded-full grid place-items-center text-xs font-bold ${
+                      <div className="flex items-start gap-2.5 flex-1">
+                        <span className={`flex-shrink-0 w-7 h-7 rounded-full border-2 border-bq-ink grid place-items-center text-[13px] font-extrabold ${
                           userGotIt === undefined
-                            ? 'bg-bq-inset text-bq-ink2'
-                            : userGotIt ? 'bg-bq-emerald/15 text-bq-emerald' : 'bg-bq-ruby/15 text-bq-ruby'
+                            ? 'bg-bq-white text-bq-ink'
+                            : userGotIt ? 'bg-bq-leaf text-bq-ink' : 'bg-bq-ruby text-bq-white'
                         }`}>
                           {idx + 1}
                         </span>
-                        <span className="text-sm font-bold text-bq-ink leading-relaxed">{q.content}</span>
+                        <span className="font-read text-[15.5px] font-bold text-bq-ink leading-relaxed">{q.content}</span>
                       </div>
-                      <span className="text-[10px] text-bq-ink2 flex-shrink-0 px-2 py-0.5 rounded bg-bq-inset">
+                      <span className="text-[12px] font-bold text-bq-ink2 flex-shrink-0 px-2 py-0.5 rounded-full bg-bq-white border-2 border-bq-ink/30">
                         {q.book} {q.chapter}
                       </span>
                     </div>
@@ -800,22 +789,21 @@ const DailyChallenge: React.FC = () => {
                         return (
                           <div
                             key={i}
-                            className={`px-3 py-2 rounded-lg text-xs flex items-start gap-2 border ${
+                            className={`px-3 py-2 rounded-xl text-[14px] flex items-start gap-2 border-2 ${
                               isCorrect
-                                ? 'bg-bq-emerald/10 border-bq-emerald/30 text-bq-emerald'
-                                : 'bg-bq-inset border-bq-hair text-bq-ink2'
+                                ? 'bg-bq-leaf border-bq-ink text-bq-ink font-bold'
+                                : 'bg-bq-white border-bq-ink/15 text-bq-ink2'
                             }`}
                           >
-                            <span className="font-bold">{LETTERS[i]}.</span>
+                            <span className="font-extrabold">{LETTERS[i]}.</span>
                             <span className="flex-1">{opt}</span>
-                            {isCorrect && <span className="material-symbols-outlined text-sm">check_circle</span>}
+                            {isCorrect && <span aria-hidden>✓</span>}
                           </div>
                         )
                       })}
                     </div>
                     {q.explanation && (
-                      <div className="text-xs text-bq-ink2 leading-relaxed bg-bq-amber/5 border-l-2 border-bq-amber/40 px-3 py-2 rounded">
-                        <span className="material-symbols-outlined text-sm align-middle mr-1 text-bq-amberd">lightbulb</span>
+                      <div className="font-read text-[14px] text-bq-ink2 leading-relaxed bg-bq-cream border-2 border-dashed border-bq-ink/40 px-3 py-2 rounded-xl">
                         {q.explanation}
                       </div>
                     )}
@@ -830,7 +818,7 @@ const DailyChallenge: React.FC = () => {
       {/* Share modal */}
       {showShareCard && dailyResult && (
         <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4" onClick={() => setShowShareCard(false)}>
-          <div className="max-w-md w-full bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-6" onClick={(e) => e.stopPropagation()}>
+          <div className="max-w-md w-full bg-bq-white border-[3px] border-bq-ink shadow-bq-card rounded-bq p-6" onClick={(e) => e.stopPropagation()}>
             <ShareCard
               sessionId={dailyResult.sessionId ?? sessionId ?? ''}
               score={dailyResult.xpEarned ?? 0}
@@ -840,7 +828,7 @@ const DailyChallenge: React.FC = () => {
             />
             <button
               onClick={() => setShowShareCard(false)}
-              className="block mx-auto mt-4 text-bq-ink2 hover:text-bq-ink transition-colors text-sm font-medium"
+              className="lk-btn !bg-bq-white mx-auto mt-4 !flex text-bq-ink text-[15px]"
             >
               {t('common.close')}
             </button>

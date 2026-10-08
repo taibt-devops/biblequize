@@ -2535,7 +2535,7 @@
       "rewardLabel": "Phần thưởng tối đa",
       "rewardBase": "mỗi câu đúng",
       "rewardPerfect": "nếu đúng cả 5",
-      "cta": "Bắt đầu thử thách",
+      "cta": "Mở thư hôm nay",
       "yesterdayPrefix": "Hôm qua:",
       "yesterdayBody": "bạn đúng {{correct}}/{{total}} câu, hoàn thành trong {{time}}.",
       "yesterdayBodyNoTime": "bạn đúng {{correct}}/{{total}} câu."

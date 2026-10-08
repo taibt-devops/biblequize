@@ -13,18 +13,15 @@ interface StreakCardProps {
 
 const MILESTONES = [7, 14, 30, 60, 100, 365]
 
+/**
+ * Streak on /daily (LKF-10): the lantern that stays lit (bigger from 7 days), the next milestone,
+ * a row of 7 day lanterns (lit = done, dashed = today still open) and the weekly freezes.
+ */
 export function StreakCard({ currentStreak, last7Days, freezesPerWeek = 1 }: StreakCardProps) {
   const { t } = useTranslation()
-  // Scale celebration graphic by streak length — a 1-day streak should not
-  // own the biggest visual on the page (prompt DC-4: "Streak 1 ngày KHÔNG
-  // được chiếm graphic to nhất màn"). Threshold of 7 matches the week strip.
+  // a 1-day streak must not own the biggest graphic on the page (DC-4)
   const isHighStreak = currentStreak >= 7
-  const flameClass = isHighStreak ? 'text-[56px]' : 'text-[40px]'
-  const numberClass = isHighStreak ? 'text-5xl' : 'text-4xl'
 
-  // Next-milestone caption — gives the user a concrete target instead of
-  // an isolated number. Falls back to a "fresh start" prompt at streak 0
-  // and a legendary tag past the highest milestone.
   const nextMilestone = MILESTONES.find((m) => m > currentStreak)
   const caption =
     currentStreak === 0
@@ -36,53 +33,36 @@ export function StreakCard({ currentStreak, last7Days, freezesPerWeek = 1 }: Str
   return (
     <div
       data-testid="daily-streak-display"
-      className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-5"
+      className="bg-bq-white border-[3px] border-bq-ink shadow-bq-card rounded-bq p-5"
     >
-      <div className="flex items-center gap-2 text-[15px] font-bold mb-0 text-bq-ink">
-        <span className="material-symbols-outlined text-lg text-bq-ember">local_fire_department</span>
-        {t('daily.streakTitle')}
-      </div>
-      <div className="flex items-center justify-center gap-4 pt-3 pb-2">
-        <div
-          className={`${flameClass} leading-none`}
-          style={{
-            background: 'var(--bq-flame)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-            filter: 'drop-shadow(0 4px 12px rgba(255,111,61,0.35))',
-          }}
-        >
-          🔥
-        </div>
+      <div className="font-display text-[19px] font-extrabold text-bq-ink">{t('daily.streakTitle')}</div>
+      <div className="flex items-center justify-center gap-4 pt-3 pb-1">
+        <img
+          src={currentStreak > 0 ? '/images/lk/lantern-on.webp' : '/images/lk/lantern-off.webp'}
+          alt=""
+          aria-hidden
+          className={isHighStreak ? 'h-[72px]' : 'h-[56px]'}
+        />
         <div className="text-left">
-          <div className={`${numberClass} font-extrabold leading-none text-bq-ink`}>{currentStreak}</div>
-          <div className="text-xs text-bq-ink2 mt-1">{t('daily.streakDaysLine')}</div>
+          <div className={`font-display font-extrabold leading-none text-bq-ink ${isHighStreak ? 'text-[48px]' : 'text-[40px]'}`}>{currentStreak}</div>
+          <div className="text-[13px] font-bold text-bq-ink2 mt-1">{t('daily.streakDaysLine')}</div>
         </div>
       </div>
-      <div className="text-[11px] text-center text-bq-ink2 mb-2">{caption}</div>
+      <div className="font-read text-[14px] text-center text-bq-ink2 mb-1">{caption}</div>
 
-      {/* Week strip — fixed-size circles centered, so the row stays compact
-          regardless of card width. Before DC-5, StreakCard lived in a narrow
-          right column where `aspect-square` happened to render small; after
-          the leaderboard gate the card is full-width on State A and the
-          circles ballooned to ~100px each. Bound them to 44px. */}
-      <div className="flex justify-around gap-1.5 mt-[18px]">
+      {/* the last 7 days as small lanterns: lit = done, dashed = today still open */}
+      <div className="flex justify-around gap-1.5 mt-4">
         {last7Days.map((d) => {
-          const cls = d.completed && d.isToday
-            ? 'bg-bq-flame text-white border-2 border-bq-amber'
+          const cls = d.completed
+            ? 'bg-bq-amber border-bq-ink text-bq-ink'
             : d.isToday
-              ? 'bg-bq-amber/15 border-2 border-dashed border-bq-amber/50 text-bq-amberd'
-              : d.completed
-                ? 'bg-bq-flame text-white border-transparent'
-                : 'bg-bq-inset text-bq-ink2 border border-bq-hair'
-          // Always render the day label so no day reads as an unlabeled
-          // circle (DC-4: 3 states must be distinguishable — done /
-          // chưa làm / hôm nay — through bg+border, not by hiding text).
+              ? 'bg-bq-cream border-dashed border-bq-ink text-bq-ink'
+              : 'bg-bq-paper border-bq-ink/25 text-bq-ink3'
+          // always show the day label: done / missed / today read by fill + border, not hidden text
           return (
             <div
               key={d.date}
-              className={`w-11 h-11 rounded-full grid place-items-center text-[11px] font-bold flex-shrink-0 ${cls}`}
+              className={`w-11 h-11 rounded-full border-[3px] grid place-items-center text-[12px] font-extrabold flex-shrink-0 ${cls}`}
             >
               {d.label}
             </div>
@@ -90,12 +70,12 @@ export function StreakCard({ currentStreak, last7Days, freezesPerWeek = 1 }: Str
         })}
       </div>
 
-      <div className="mt-4 px-3 py-2.5 bg-bq-sapphire/[0.06] border border-bq-sapphire/15 rounded-[10px] flex items-center justify-between text-xs">
-        <span className="text-bq-sapphire flex items-center gap-1.5">
-          <span className="material-symbols-outlined text-sm">ac_unit</span>
+      <div className="mt-4 px-3 py-2 bg-bq-sapphire/10 border-2 border-bq-ink rounded-full flex items-center justify-between text-[13.5px]">
+        <span className="font-bold text-bq-ink flex items-center gap-1.5">
+          <span aria-hidden className="text-bq-sapphire">❄</span>
           {t('daily.freezeIndicator')}
         </span>
-        <span className="text-bq-ink font-bold">
+        <span className="text-bq-ink font-extrabold">
           {t('daily.freezePerWeek', { count: freezesPerWeek })}
         </span>
       </div>

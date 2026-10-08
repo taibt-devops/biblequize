@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next'
-
-const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
+import { Medal, lkClass } from '../../components/lk/Place'
 
 interface YesterdaySummary {
   completed: boolean
@@ -42,78 +41,77 @@ function formatTime(seconds: number | undefined): string {
   return `${m}:${String(s).padStart(2, '0')}`
 }
 
+/**
+ * Today's challenge as the letter the dove brought (LKF-10). Ready: a sealed letter with a
+ * postmark, the dove, what's inside and the reward. Done: the opened letter with the tally on
+ * the left and the score medal, rank and share on the right.
+ */
 export function HeroCard(props: HeroCardProps) {
-  const { t } = useTranslation()
+  const now = new Date()
+  const postmark = `${String(now.getDate()).padStart(2, '0')}/${String(now.getMonth() + 1).padStart(2, '0')}`
 
   return (
-    <div className="relative bg-bq-white border border-bq-hair shadow-bq-amb rounded-[20px] overflow-hidden mb-7">
-      <div className="absolute inset-y-0 right-0 w-[400px] bg-[radial-gradient(circle_at_right,rgba(245,158,11,0.10)_0%,transparent_60%)] pointer-events-none" />
-      <div className={`relative z-[1] grid grid-cols-1 ${props.state === 'done' ? 'lg:grid-cols-[1.6fr_1fr]' : ''}`}>
-        {/* LEFT (or full-width on ready state) */}
-        <div className={`p-8 ${props.state === 'done' ? 'lg:border-r border-bq-hair' : ''}`}>
+    <section className="relative mb-7 rounded-bq border-[3px] border-bq-ink bg-[#FFF8E7] shadow-bq-card overflow-hidden">
+      {/* airmail edge */}
+      <div aria-hidden className="h-2.5 border-b-[3px] border-bq-ink bg-[repeating-linear-gradient(135deg,#B3452F_0_14px,#FFF8E7_14px_24px,#2F6FB0_24px_38px,#FFF8E7_38px_48px)]" />
+      {/* postmark (sealed letter only; the opened one shows the score medal there) */}
+      {props.state === 'ready' && <div aria-hidden className="absolute right-4 top-6 md:right-7 md:top-7 w-[74px] h-[74px] md:w-[88px] md:h-[88px] rotate-[14deg] rounded-full border-[3px] border-dashed border-bq-ruby/70 text-bq-ruby/80 grid place-items-center text-center leading-tight">
+        <span className="text-[11px] md:text-[12px] font-extrabold">
+          BibleQuiz<br /><span className="text-[17px] md:text-[20px]">{postmark}</span>
+        </span>
+      </div>}
+      <div className={`relative grid grid-cols-1 ${props.state === 'done' ? 'lg:grid-cols-[1.6fr_1fr]' : ''}`}>
+        <div className={`p-6 md:p-8 ${props.state === 'done' ? 'lg:border-r-[3px] lg:border-dashed lg:border-bq-ink/25' : ''}`}>
           {props.state === 'ready' ? <ReadyLeft {...props} /> : <DoneLeft {...props} />}
         </div>
-        {/* RIGHT — only Done state. Ready hero is single-column post-DC-1/DC-2
-            (verse moved to Home banner, big-flame streak block now lives
-            exclusively in the standalone StreakCard). */}
         {props.state === 'done' && (
-          <div className="p-8 bg-bq-inset">
+          <div className="p-6 md:p-8 bg-bq-cream/60 border-t-[3px] border-dashed border-bq-ink/25 lg:border-t-0">
             <DoneRight {...props} />
           </div>
         )}
       </div>
-    </div>
+    </section>
   )
+}
 
-  function ReadyLeft({ questionCount, timeLimit, yesterday, onStart }: HeroCardProps) {
-    return (
-      <>
-        <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-[20px] mb-3 bg-bq-amber/10 border border-bq-amber/30 text-bq-amberd text-xs font-bold uppercase tracking-[0.5px]">
-          <span className="w-2 h-2 rounded-full bg-bq-ember animate-pulse-ring" />
+function ReadyLeft({ questionCount, timeLimit, yesterday, onStart }: HeroCardProps) {
+  const { t } = useTranslation()
+  return (
+    <div className="flex flex-col md:flex-row md:items-start gap-5 md:gap-8">
+      <img src="/images/lk/dove-letter.webp" alt="" aria-hidden className={`w-[120px] md:w-[170px] shrink-0 self-center ${lkClass.bob}`} />
+      <div className="min-w-0 flex-1">
+        <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-bq-leaf border-2 border-bq-ink text-[13px] font-extrabold mb-3">
+          <span className="w-2 h-2 rounded-full bg-bq-emerald animate-pulse-ring-green" />
           {t('daily.ready.statusBadge')}
-        </div>
-        <div className="text-[11px] text-bq-ink3 font-semibold uppercase tracking-[0.18em] mb-1.5">
-          {t('daily.ready.eyebrow')}
-        </div>
-        <h3 className="font-display text-[28px] font-extrabold mb-2.5 tracking-tight">
-          <span className="text-bq-ink">{t('daily.ready.titleLead', { count: questionCount })}</span>
-          {' '}
-          <span className="text-bq-amberd">{t('daily.ready.titleAccent')}</span>
-        </h3>
-        <p className="font-literata text-bq-ink2 text-sm italic leading-relaxed mb-6">
+        </span>
+        <h2 className="m-0 mb-2 pr-20 font-display text-[28px] md:text-[34px] font-extrabold leading-tight text-bq-ink">
+          {t('daily.ready.titleLead', { count: questionCount })} {t('daily.ready.titleAccent')}
+        </h2>
+        <p className="m-0 mb-5 font-read italic text-[15px] md:text-[16px] leading-relaxed text-bq-ink2">
           &ldquo;{t('daily.ready.desc')}&rdquo;
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-[22px]">
+        <div className="flex flex-wrap gap-2 mb-5">
           <MetaItem icon="quiz" text={t('daily.ready.metaQuestions', { count: questionCount })} />
           <MetaItem icon="timer" text={t('daily.ready.metaTime', { minutes: timeLimit })} />
           <MetaItem icon="public" text={t('daily.ready.metaGlobal')} />
-          <MetaItem icon="shield" text={t('daily.ready.metaNoEnergy')} />
+          <MetaItem icon="favorite" text={t('daily.ready.metaNoEnergy')} />
         </div>
-        <div className="bg-bq-inset border border-bq-amber/12 rounded-xl px-4 py-3.5 mb-[22px] flex items-center gap-3.5">
-          <div className="w-10 h-10 rounded-[10px] bg-bq-amber/15 border border-bq-amber/30 grid place-items-center text-bq-amberd text-[22px] flex-shrink-0">
-            <span className="material-symbols-outlined">workspace_premium</span>
-          </div>
-          <div className="flex-1">
-            <div className="text-[11px] text-bq-ink2 font-semibold uppercase tracking-[0.5px]">
-              {t('daily.ready.rewardLabel')}
-            </div>
-            <div className="text-sm text-bq-ink font-bold mt-0.5">
-              <strong className="text-bq-amberd">+20 XP</strong> {t('daily.ready.rewardBase')} ·{' '}
-              <strong className="text-bq-amberd">+150 XP</strong> {t('daily.ready.rewardPerfect')}
+        <div className="flex items-center gap-3.5 mb-6">
+          <Medal size={50}><span className="text-[24px] leading-none" style={{ color: '#FFC93C', WebkitTextStroke: '1.5px #1D2B22' }}>★</span></Medal>
+          <div>
+            <div className="text-[13px] font-bold text-bq-ink3">{t('daily.ready.rewardLabel')}</div>
+            <div className="text-[15px] font-bold text-bq-ink">
+              <strong className="font-extrabold">+20 XP</strong> {t('daily.ready.rewardBase')} ·{' '}
+              <strong className="font-extrabold">+150 XP</strong> {t('daily.ready.rewardPerfect')}
             </div>
           </div>
         </div>
-        <button
-          data-testid="daily-start-btn"
-          onClick={onStart}
-          className="w-full bg-bq-action text-bq-ink border-none px-7 py-4 rounded-2xl text-base font-extrabold cursor-pointer transition-all flex items-center justify-center gap-2.5 shadow-bq-action hover:-translate-y-px"
-        >
-          <span className="material-symbols-outlined">play_arrow</span>
+        <button data-testid="daily-start-btn" onClick={onStart} className="lk-btn w-full md:w-auto text-bq-ink text-[18px]">
           {t('daily.ready.cta')}
         </button>
         {yesterday?.completed && (
-          <div className="mt-4 px-3.5 py-3 bg-bq-inset border-l-[3px] border-bq-sapphire/50 rounded-lg text-xs text-bq-ink2 leading-relaxed">
-            📊 <strong className="text-bq-sapphire">{t('daily.ready.yesterdayPrefix')}</strong>{' '}
+          <p className="m-0 mt-4 px-3.5 py-2.5 bg-bq-white border-2 border-dashed border-bq-ink/30 rounded-xl font-read text-[14px] text-bq-ink2 leading-relaxed">
+            <strong className="text-bq-ink">{t('daily.ready.yesterdayPrefix')}</strong>{' '}
             {yesterday.timeSeconds && yesterday.timeSeconds > 0
               ? t('daily.ready.yesterdayBody', {
                   correct: yesterday.correctCount ?? 0,
@@ -124,185 +122,122 @@ export function HeroCard(props: HeroCardProps) {
                   correct: yesterday.correctCount ?? 0,
                   total: yesterday.totalQuestions ?? 5,
                 })}
+          </p>
+        )}
+      </div>
+    </div>
+  )
+}
+
+function DoneLeft({ done, onReview }: HeroCardProps) {
+  const { t } = useTranslation()
+  if (!done) return null
+  const completedTimeLabel = done.completedAt
+    ? new Date(done.completedAt).toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })
+    : '—'
+  return (
+    <>
+      <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-bq-leaf border-2 border-bq-ink text-[13px] font-extrabold mb-3">
+        ✓ {t('daily.done.statusBadge', { time: completedTimeLabel })}
+      </span>
+      <h2 data-testid="daily-completed-badge" className="m-0 mb-2 font-display text-[28px] md:text-[32px] font-extrabold leading-tight text-bq-ink">
+        {t('daily.done.title')}
+      </h2>
+      <p className="m-0 mb-5 font-read text-[15px] leading-relaxed text-bq-ink2">
+        {done.betterThanPercent != null
+          ? <>{t('daily.done.descPrefix')} <strong className="text-bq-ink">{done.betterThanPercent}%</strong> {t('daily.done.descPlayers')}</>
+          : t('daily.done.descNoData')}
+      </p>
+      <div className="bg-bq-white border-2 border-bq-ink rounded-2xl px-4 py-1.5 mb-5">
+        <SummaryRow label={t('daily.done.rowCorrect')} value={`${done.correctCount} / ${done.totalQuestions}`} />
+        {done.timeSeconds != null && (
+          <SummaryRow label={t('daily.done.rowTime')} value={formatTime(done.timeSeconds)} />
+        )}
+        {done.betterThanPercent != null && (
+          <SummaryRow label={t('daily.done.rowBetterThan')} value={t('daily.done.betterThanValue', { percent: done.betterThanPercent })} />
+        )}
+        <SummaryRow
+          label={t('daily.done.rowXP')}
+          value={`+${done.xpEarned} XP`}
+          valueClass={done.xpEarned > 0 ? 'text-bq-ink [text-shadow:0_.08em_0_#FFC93C]' : 'text-bq-ink3'}
+          lastRow
+        />
+        {done.resultsBreakdown && done.resultsBreakdown.length > 0 && (
+          <div className="flex gap-1.5 pb-3 pt-1">
+            {done.resultsBreakdown.map((correct, i) => (
+              <span
+                key={i}
+                title={t('daily.done.qDotTitle', { num: i + 1, status: correct ? t('daily.done.qDotCorrect') : t('daily.done.qDotWrong') })}
+                className={`flex-1 h-3.5 rounded-full border-2 border-bq-ink ${correct ? 'bg-bq-leaf' : 'bg-bq-ruby'}`}
+              />
+            ))}
           </div>
         )}
-      </>
-    )
-  }
+      </div>
+      <button onClick={onReview} className="lk-btn lk-btn-2 w-full md:w-auto text-bq-ink text-[16px]">
+        {t('daily.done.cta')}
+      </button>
+    </>
+  )
+}
 
-  function DoneLeft({ done, onReview }: HeroCardProps) {
-    if (!done) return null
-    const completedTimeLabel = done.completedAt
-      ? new Date(done.completedAt).toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })
-      : '—'
-    return (
-      <>
-        <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-[20px] mb-[18px] bg-bq-emerald/10 border border-bq-emerald/30 text-bq-emerald text-xs font-bold uppercase tracking-[0.5px]">
-          <span className="w-2 h-2 rounded-full bg-bq-emerald animate-pulse-ring-green" />
-          {t('daily.done.statusBadge', { time: completedTimeLabel })}
-        </div>
-        <h3 data-testid="daily-completed-badge" className="font-display text-[28px] font-extrabold mb-2.5 tracking-tight text-bq-ink">
-          {t('daily.done.title')}
-        </h3>
-        <p className="text-bq-ink2 text-sm leading-relaxed mb-6">
-          {done.betterThanPercent != null
-            ? <>{t('daily.done.descPrefix')} <strong className="text-bq-emerald">{done.betterThanPercent}%</strong> {t('daily.done.descPlayers')}</>
-            : t('daily.done.descNoData')}
-        </p>
-        <div className="bg-bq-inset border border-bq-emerald/15 rounded-xl p-4 mb-[22px]">
-          <SummaryRow icon="check_circle" label={t('daily.done.rowCorrect')} value={`${done.correctCount} / ${done.totalQuestions}`} valueClass="text-bq-emerald" />
-          {done.timeSeconds != null && (
-            <SummaryRow icon="timer" label={t('daily.done.rowTime')} value={formatTime(done.timeSeconds)} />
-          )}
-          {done.betterThanPercent != null && (
-            <SummaryRow icon="trending_up" label={t('daily.done.rowBetterThan')} value={t('daily.done.betterThanValue', { percent: done.betterThanPercent })} valueClass="text-bq-emerald" />
-          )}
-          <SummaryRow
-            icon="workspace_premium"
-            label={t('daily.done.rowXP')}
-            value={`+${done.xpEarned} XP`}
-            valueClass={done.xpEarned > 0 ? 'text-bq-amberd' : 'text-bq-ink3'}
-            lastRow
-          />
-          {done.resultsBreakdown && done.resultsBreakdown.length > 0 && (
-            <div className="flex gap-1 mt-3.5">
-              {done.resultsBreakdown.map((correct, i) => (
-                <div
-                  key={i}
-                  title={t('daily.done.qDotTitle', { num: i + 1, status: correct ? t('daily.done.qDotCorrect') : t('daily.done.qDotWrong') })}
-                  className={`flex-1 h-2 rounded ${correct
-                    ? 'bg-bq-emerald'
-                    : 'bg-bq-ruby'
-                    }`}
-                />
-              ))}
-            </div>
-          )}
-        </div>
-        <button
-          onClick={onReview}
-          className="w-full bg-bq-action text-bq-ink border-none px-7 py-4 rounded-2xl text-base font-extrabold cursor-pointer transition-all flex items-center justify-center gap-2.5 shadow-bq-action hover:-translate-y-px"
-        >
-          <span className="material-symbols-outlined">visibility</span>
-          {t('daily.done.cta')}
+function DoneRight({ done, onShare, onDownload }: HeroCardProps) {
+  const { t } = useTranslation()
+  if (!done) return null
+  const percent = done.totalQuestions > 0
+    ? Math.round((done.correctCount / done.totalQuestions) * 100)
+    : 0
+
+  return (
+    <div className="flex flex-col items-center text-center">
+      <Medal size={148}>
+        <span>
+          <span
+            data-testid="daily-score-display"
+            className="block font-display text-[52px] font-extrabold leading-none text-bq-ink [text-shadow:0_.06em_0_#FFC93C]"
+          >
+            {done.correctCount}
+          </span>
+          <span className="block text-[13px] font-bold text-bq-ink2 mt-1">
+            {t('daily.done.scoreOf', { total: done.totalQuestions })}
+          </span>
+        </span>
+      </Medal>
+      <span className="mt-5 px-3 py-0.5 rounded-full bg-bq-leaf border-2 border-bq-ink text-[13px] font-extrabold">
+        {t('daily.done.scorePercent', { percent })}
+      </span>
+      <div className="mt-4 w-full px-3 py-2.5 bg-bq-white border-2 border-bq-ink rounded-2xl">
+        <div className="font-display text-[24px] font-extrabold leading-none">{done.rankGlobal != null ? `#${done.rankGlobal}` : '—'}</div>
+        <div className="mt-1 text-[13px] font-bold text-bq-ink2">{t('daily.done.rankGlobal')}</div>
+      </div>
+      <div className="mt-3 grid grid-cols-2 gap-2 w-full">
+        <button onClick={onShare} className="lk-btn !px-3 !bg-bq-white text-bq-ink text-[14px]">
+          <span className="material-symbols-outlined text-[18px]">share</span>
+          {t('daily.done.share')}
         </button>
-      </>
-    )
-  }
-
-  function DoneRight({ done, onShare, onDownload }: HeroCardProps) {
-    if (!done) return null
-    const percent = done.totalQuestions > 0
-      ? Math.round((done.correctCount / done.totalQuestions) * 100)
-      : 0
-    const ringRadius = 70
-    const ringCircumference = 2 * Math.PI * ringRadius
-    const ringOffset = ringCircumference - (percent / 100) * ringCircumference
-
-    return (
-      <>
-        <div className="text-center mb-[18px]">
-          <div className="relative w-40 h-40 mx-auto mb-3">
-            <svg className="w-full h-full -rotate-90" viewBox="0 0 160 160">
-              <defs>
-                <linearGradient id="dailyHeroScoreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#F59E0B" />
-                  <stop offset="100%" stopColor="#D97F06" />
-                </linearGradient>
-              </defs>
-              <circle cx="80" cy="80" r={ringRadius} fill="none" stroke="rgba(29,43,34,0.08)" strokeWidth="12" />
-              <circle
-                cx="80"
-                cy="80"
-                r={ringRadius}
-                fill="none"
-                stroke="url(#dailyHeroScoreGrad)"
-                strokeWidth="12"
-                strokeLinecap="round"
-                strokeDasharray={ringCircumference}
-                strokeDashoffset={ringOffset}
-                style={{ filter: 'drop-shadow(0 0 8px rgba(245,158,11,0.45))', transition: 'stroke-dashoffset 0.8s ease-out' }}
-              />
-            </svg>
-            <div className="absolute inset-0 grid place-items-center text-center">
-              <div>
-                <div
-                  data-testid="daily-score-display"
-                  className="text-[42px] font-extrabold leading-none"
-                  style={{
-                    color: '#1D2B22',
-                    textShadow: '0 0.06em 0 #FFC93C',
-                  }}
-                >
-                  {done.correctCount}
-                </div>
-                <div className="text-sm text-bq-ink2 mt-1">
-                  {t('daily.done.scoreOf', { total: done.totalQuestions })}
-                </div>
-                <div className="text-[11px] text-bq-emerald font-bold mt-0.5">
-                  {t('daily.done.scorePercent', { percent })}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Single-col: chỉ "Hạng toàn cầu". Ô "Trong nhóm" đã bỏ — Daily
-            Challenge là hoạt động solo, group leaderboard locked group-play-only
-            (SPEC_GROUP Q-A) + §10 đang deprecated. */}
-        <div className="grid grid-cols-1 gap-2 mb-3.5">
-          <StatMini value={done.rankGlobal != null ? `#${done.rankGlobal}` : '—'} label={t('daily.done.rankGlobal')} highlight />
-        </div>
-        <div className="grid grid-cols-2 gap-2">
-          <ShareBtn icon="share" label={t('daily.done.share')} onClick={onShare} />
-          <ShareBtn icon="photo_camera" label={t('daily.done.downloadImage')} onClick={onDownload} />
-        </div>
-      </>
-    )
-  }
+        <button onClick={onDownload} className="lk-btn !px-3 !bg-bq-white text-bq-ink text-[14px]">
+          <span className="material-symbols-outlined text-[18px]">photo_camera</span>
+          {t('daily.done.downloadImage')}
+        </button>
+      </div>
+    </div>
+  )
 }
 
 function MetaItem({ icon, text }: { icon: string; text: string }) {
   return (
-    <span className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-[10px] bg-bq-inset border border-bq-hair text-xs text-bq-ink font-semibold">
-      <span className="material-symbols-outlined text-base text-bq-amberd">{icon}</span>
+    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-bq-white border-2 border-bq-ink text-[13.5px] font-bold text-bq-ink">
+      <span className="material-symbols-outlined text-[17px]">{icon}</span>
       {text}
     </span>
   )
 }
 
-function SummaryRow({ icon, label, value, valueClass = 'text-bq-ink', lastRow = false }: { icon: string; label: string; value: string; valueClass?: string; lastRow?: boolean }) {
+function SummaryRow({ label, value, valueClass = 'text-bq-ink', lastRow = false }: { label: string; value: string; valueClass?: string; lastRow?: boolean }) {
   return (
-    <div className={`flex justify-between items-center py-2.5 ${!lastRow ? 'border-b border-bq-hair' : ''}`}>
-      <div className="text-xs text-bq-ink2 flex items-center gap-2">
-        <span className="material-symbols-outlined text-base text-bq-ink2">{icon}</span>
-        {label}
-      </div>
-      <div className={`text-sm font-bold ${valueClass}`}>{value}</div>
+    <div className={`flex justify-between items-center py-2.5 ${!lastRow ? 'border-b-2 border-dashed border-bq-hair' : ''}`}>
+      <span className="text-[14px] font-bold text-bq-ink2">{label}</span>
+      <span className={`text-[16px] font-extrabold tabular-nums ${valueClass}`}>{value}</span>
     </div>
   )
 }
-
-function StatMini({ value, label, highlight = false, success = false }: { value: string; label: string; highlight?: boolean; success?: boolean }) {
-  const valueColor = highlight ? 'text-bq-amberd' : success ? 'text-bq-emerald' : 'text-bq-ink'
-  return (
-    <div className="bg-bq-white border border-bq-hair rounded-[10px] px-3 py-2.5 text-center">
-      <div className={`text-lg font-extrabold ${valueColor}`}>{value}</div>
-      <div className="text-[10px] text-bq-ink2 uppercase tracking-[0.5px] mt-0.5">{label}</div>
-    </div>
-  )
-}
-
-function ShareBtn({ icon, label, onClick }: { icon: string; label: string; onClick: () => void }) {
-  return (
-    <button
-      onClick={onClick}
-      className="bg-bq-amber/10 text-bq-amberd border border-bq-amber/25 hover:bg-bq-amber/20 px-3 py-3 rounded-[10px] text-[13px] font-bold cursor-pointer transition-all flex items-center justify-center gap-1.5"
-    >
-      <span className="material-symbols-outlined text-base">{icon}</span>
-      {label}
-    </button>
-  )
-}
-
-// Suppress unused-warn for FILL_1 — kept for parity if needed by future state badges.
-void FILL_1

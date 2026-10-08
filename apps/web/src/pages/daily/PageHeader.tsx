@@ -1,29 +1,28 @@
 import { useTranslation } from 'react-i18next'
+import { Plaque } from '../../components/lk/Place'
 
 interface PageHeaderProps {
   todayLabel: string
   seasonName?: string
 }
 
+/** /daily title (LKF-10): the post house plaque with the dove, today's date and the season. */
 export function PageHeader({ todayLabel, seasonName }: PageHeaderProps) {
   const { t } = useTranslation()
   return (
-    <div className="mb-6">
-      <h1 className="font-display text-[22px] md:text-3xl font-extrabold tracking-tight mb-2 flex items-center gap-2.5 md:gap-3 text-bq-ink">
-        <span className="w-9 h-9 md:w-10 md:h-10 rounded-[10px] bg-bq-flame grid place-items-center text-[20px] md:text-[22px] text-white shadow-bq-flame shrink-0">
-          <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>local_fire_department</span>
-        </span>
+    <div className="mb-6 space-y-3">
+      <Plaque className="text-[22px] md:text-[32px]">
+        <img src="/images/lk/dove-letter.webp" alt="" aria-hidden className="h-[1.3em] -my-1" />
         {t('daily.heading')}
-      </h1>
+      </Plaque>
       <div className="flex gap-2 flex-wrap">
-        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[10px] bg-bq-white border border-bq-hair text-xs text-bq-ink2 font-semibold">
-          <span className="material-symbols-outlined text-sm">calendar_today</span>
+        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-bq-white border-2 border-bq-ink text-[13.5px] font-bold">
+          <span className="material-symbols-outlined text-[16px]">calendar_today</span>
           {todayLabel}
         </span>
         {seasonName && (
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[10px] bg-bq-amber/10 border border-bq-amber/30 text-xs text-bq-amberd font-semibold">
-            <span className="material-symbols-outlined text-sm">auto_awesome</span>
-            <strong className="text-bq-amberd">{seasonName}</strong>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-bq-amber border-2 border-bq-ink text-[13.5px] font-extrabold">
+            ★ {seasonName}
           </span>
         )}
       </div>

@@ -2535,7 +2535,7 @@
       "rewardLabel": "Max reward",
       "rewardBase": "per correct",
       "rewardPerfect": "if all 5 correct",
-      "cta": "Start challenge",
+      "cta": "Open today's letter",
       "yesterdayPrefix": "Yesterday:",
       "yesterdayBody": "you got {{correct}}/{{total}} correct in {{time}}.",
       "yesterdayBodyNoTime": "you got {{correct}}/{{total}} correct."
