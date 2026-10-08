@@ -1151,7 +1151,7 @@
     }
   },
   "landing": {
-    "tagline": "ỨNG DỤNG HỌC KINH THÁNH THẾ HỆ MỚI",
+    "tagline": "Ứng dụng học Kinh Thánh thế hệ mới",
     "heroTitle1": "Trắc nghiệm ",
     "heroHighlight": "Kinh Thánh",
     "heroTitle2": " thú vị mỗi ngày",
@@ -1198,7 +1198,7 @@
     "teamProgress": "Tiến Độ Nhóm",
     "verseText": "Lời Chúa là ngọn đèn cho chân tôi, ánh sáng cho đường lối tôi.",
     "verseRef": "— Thi Thiên 119:105",
-    "copyright": "© 2026 BibleQuiz. The Sacred Modernist Path.",
+    "copyright": "© 2026 BibleQuiz",
     "privacy": "Chính sách Bảo mật",
     "terms": "Điều khoản Sử dụng"
   },
@@ -2893,7 +2893,7 @@
     "scriptureRef": "— Thi Thiên 119:105",
     "journeyProgressTitle": "Tiến trình hiện tại",
     "journeyProgressDetail": "Sáng Thế Ký • 12/50 Chương",
-    "stepIndicator": "Step Indicator",
+    "stepIndicator": "Làm quen",
     "stepCounter": "{{current}} / {{total}}"
   },
   "groupJourney": {

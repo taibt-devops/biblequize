@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { PlaceBackdrop } from '../components/lk/Place'
 import PageMeta from '../components/PageMeta'
 
 /**
@@ -73,7 +74,8 @@ export default function CauDoKinhThanh() {
   })
 
   return (
-    <div className="min-h-screen bg-bq-paper text-bq-ink">
+    <div className="relative min-h-screen text-bq-ink">
+      <PlaceBackdrop place="gate" veil="strong" />
       <PageMeta
         title="Câu Đố Kinh Thánh Tin Lành – Trắc Nghiệm Kinh Thánh Online Miễn Phí"
         description="Chơi câu đố Kinh Thánh & trắc nghiệm Kinh Thánh Tin Lành online miễn phí — hàng nghìn câu hỏi từ 66 sách (BTTHĐ), đố Kinh Thánh theo từng sách, thi đấu cùng nhóm hội thánh Việt Nam."

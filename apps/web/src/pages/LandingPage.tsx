@@ -6,8 +6,8 @@ import { useAuthStore } from '../store/authStore'
 import { api } from '../api/client'
 import { getTierByPoints } from '../data/tiers'
 import PageMeta from '../components/PageMeta'
+import { lkClass } from '../components/lk/Place'
 import QuizLanguageSelect from '../components/QuizLanguageSelect'
-import HeroIllustration from '../components/HeroIllustration'
 
 /* ────────────────────────────── Guest Header ────────────────────────────── */
 
@@ -101,70 +101,41 @@ function GuestHeader() {
 function HeroSection() {
   const { t } = useTranslation()
   return (
-    <header className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6 overflow-hidden">
-      {/* Lightwell atmosphere — high sun ray + jewel refraction, very faint */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl -z-10 pointer-events-none">
-        <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-bq-amber/20 rounded-full blur-[120px]" />
-        <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-bq-sapphire/15 rounded-full blur-[100px]" />
-      </div>
-
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        {/* Left – copy */}
-        <div className="space-y-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-bq-amber/10 border border-bq-amber/30 text-bq-amberd text-sm font-medium tracking-wide">
-            <span
-              className="material-symbols-outlined text-sm"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
-              auto_awesome
+    <header className="relative pt-20 sm:pt-24 pb-10 sm:pb-16 px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto relative rounded-bq overflow-hidden border-[3px] border-bq-ink shadow-bq-card bg-bq-cream">
+        {/* the village gate at dawn, the traveller about to set out */}
+        <img
+          src="/images/lk/place-gate.webp"
+          alt=""
+          aria-hidden
+          className="block w-full h-[240px] sm:h-[340px] md:h-[540px] object-cover"
+          style={{ objectPosition: '50% 62%' }}
+        />
+        <img
+          src="/images/lk/hero.webp"
+          alt=""
+          aria-hidden
+          className={`absolute right-[8%] bottom-[6%] h-[120px] sm:h-[150px] md:h-[230px] drop-shadow-[0_6px_0_rgba(29,43,34,.25)] ${lkClass.bob}`}
+        />
+        <div className="md:absolute md:inset-y-0 md:left-0 p-4 sm:p-6 md:p-10 flex items-center">
+          <div className="max-w-xl bg-bq-white/90 border-[3px] border-bq-ink rounded-bq shadow-bq-card p-6 md:p-8 space-y-5">
+            <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-bq-amber border-2 border-bq-ink text-[13px] font-extrabold">
+              <img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="h-4" />
+              {t('landing.tagline')}
             </span>
-            {t('landing.tagline')}
-          </div>
-
-          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] text-bq-ink">
-            {t('landing.heroTitle1')}<span className="text-bq-amberd">{t('landing.heroHighlight')}</span>{t('landing.heroTitle2')}
-          </h1>
-
-          <p className="text-base sm:text-xl text-bq-ink2 leading-relaxed max-w-lg">
-            {t('landing.heroDesc')}
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              to="/practice"
-              className="bg-bq-action px-8 py-4 rounded-xl text-bq-ink font-bold text-lg shadow-bq-action active:scale-95 transition-transform text-center"
-            >
-              {t('landing.tryNow')}
-            </Link>
-            <Link
-              to="/login"
-              className="px-8 py-4 rounded-xl border border-bq-hair text-bq-ink font-bold text-lg hover:bg-bq-inset transition-colors active:scale-95 text-center"
-            >
-              {t('auth.login')}
-            </Link>
-          </div>
-        </div>
-
-        {/* Right – illustration */}
-        <div className="relative group">
-          <div className="absolute -inset-4 bg-bq-amber/10 rounded-[2rem] blur-2xl group-hover:bg-bq-amber/20 transition-all" />
-          <HeroIllustration />
-
-          {/* Floating streak card */}
-          <div className="absolute -bottom-6 -left-6 bg-bq-white p-6 rounded-2xl border border-bq-hair shadow-bq-soft hidden lg:block">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-bq-flame shadow-bq-flame flex items-center justify-center text-white">
-                <span
-                  className="material-symbols-outlined"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  local_fire_department
-                </span>
-              </div>
-              <div>
-                <p className="text-[12.5px] text-bq-amberd font-bold">{t('landing.dailyStreak')}</p>
-                <p className="text-xl font-bold text-bq-ink">{t('landing.daysStreak', { count: 15 })}</p>
-              </div>
+            <h1 className="m-0 font-display text-[36px] sm:text-[44px] md:text-[54px] font-extrabold leading-[1.06] text-bq-ink">
+              {t('landing.heroTitle1')}{t('landing.heroHighlight')}{t('landing.heroTitle2')}
+            </h1>
+            <p className="m-0 font-read text-[16px] sm:text-[18px] text-bq-ink2 leading-relaxed">
+              {t('landing.heroDesc')}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link to="/practice" className="lk-btn text-bq-ink text-[17px] no-underline">
+                {t('landing.tryNow')}
+              </Link>
+              <Link to="/login" className="lk-btn !bg-bq-white text-bq-ink text-[17px] no-underline">
+                {t('auth.login')}
+              </Link>
             </div>
           </div>
         </div>
@@ -378,7 +349,7 @@ function LeaderboardPreview() {
                     </div>
                     <span className={`font-bold truncate text-sm sm:text-base text-bq-ink ${entry.top ? 'sm:text-lg' : ''}`}>{entry.name}</span>
                   </div>
-                  <div className={`col-span-3 sm:col-span-2 font-mono text-xs sm:text-base ${entry.top ? 'text-bq-amberd' : 'text-bq-ink2'}`}>
+                  <div className={`col-span-3 sm:col-span-2 font-display font-extrabold tabular-nums text-[13px] sm:text-base ${entry.top ? 'text-bq-amberd' : 'text-bq-ink2'}`}>
                     {entry.xp}
                   </div>
                   <div
@@ -426,25 +397,24 @@ function ChurchGroupShowcase() {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
         {/* Image */}
         <div className="order-2 lg:order-1 relative">
-          <div className="absolute -inset-10 bg-bq-emerald/10 rounded-full blur-[100px]" />
-          <img
-            alt="Nhóm bạn trẻ học Kinh Thánh qua trắc nghiệm"
+                    <img
+            alt="Gốc sồi cạnh nhà nguyện — nơi nhóm cùng học Kinh Thánh"
             width={600}
             height={400}
             loading="lazy"
-            className="relative rounded-[2rem] shadow-bq-soft z-10"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnm3LIt9EiyqGvjOzhF7rg8NoKMQoAjbDHWgkYgYTcjATw8YGu6nvIwD21ypU3A5cSNU5YgzZ4oStRZaYpVP37Fv9KrmqJ1yTWYyNV8MPJOP9EQDvi7dwbLUPj2GK18ZXveYRRuAkiOMNcerFyYD3JwSSOXaWoBWLHZnb1UJZSmhsA5ppJF4A78tXcbZMRiP5dnGucV58PQs__oVK1uan3IZwbSeQ1R7wfr--M3W8K2cn0zQGPw2NGpSpzUFnFsNsWkUcurItdKsw"
+            className="relative w-full aspect-[3/2] object-cover rounded-bq border-[3px] border-bq-ink shadow-bq-card z-10"
+            src="/images/lk/place-chapel.webp"
           />
 
           {/* Floating stats */}
-          <div className="absolute top-10 -right-8 bg-bq-white p-6 rounded-2xl shadow-bq-soft z-20 border border-bq-hair hidden md:block">
-            <div className="text-sm font-bold text-bq-emerald mb-4 uppercase tracking-widest">{t('landing.teamProgress')}</div>
+          <div className="absolute top-10 -right-6 bg-bq-white p-5 rounded-2xl z-20 border-[3px] border-bq-ink shadow-[0_4px_0_#1D2B22] hidden md:block">
+            <div className="text-[14px] font-extrabold text-bq-ink mb-3">{t('landing.teamProgress')}</div>
             <div className="space-y-3">
-              <div className="h-2 w-48 bg-bq-inset rounded-full overflow-hidden">
-                <div className="h-full w-[75%] bg-bq-spectrum" />
+              <div className="h-3 w-48 bg-bq-track border-2 border-bq-ink rounded-full overflow-hidden">
+                <div className="h-full w-[75%] bg-bq-amber" />
               </div>
-              <div className="h-2 w-48 bg-bq-inset rounded-full overflow-hidden">
-                <div className="h-full w-[45%] bg-bq-spectrum" />
+              <div className="h-3 w-48 bg-bq-track border-2 border-bq-ink rounded-full overflow-hidden">
+                <div className="h-full w-[45%] bg-bq-leaf" />
               </div>
             </div>
           </div>
@@ -474,7 +444,7 @@ function ChurchGroupShowcase() {
 
           <Link
             to="/groups"
-            className="bg-bq-action px-8 py-4 rounded-xl text-bq-ink font-bold text-lg active:scale-95 transition-transform shadow-bq-action inline-block"
+            className="lk-btn text-bq-ink text-[17px] no-underline"
           >
             {t('landing.createFreeGroup')}
           </Link>
@@ -527,16 +497,14 @@ function FooterCTA() {
         <div className="flex flex-col items-center gap-4">
           <button
             onClick={handleGoogleSignup}
-            className="flex items-center gap-3 bg-bq-ink text-white px-10 py-4 rounded-xl font-bold text-lg hover:brightness-110 transition-all active:scale-95"
+            className="lk-btn !bg-bq-white text-bq-ink text-[17px]"
           >
-            <img
-              alt="Google"
-              width={24}
-              height={24}
-              loading="lazy"
-              className="w-6 h-6"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcJIraLBnXjAOS0EXUCIC2rsomKCPxGvpBNYCmt4hQSQzzTt3HaTfkiLVJf9Wgb_lImqBmvVodHASMpqGU5bh1M6pMBhnDWC4ACT6pdtz__gRW5ca7GOmAoVj9qqJAfvRUSwIg27rDceLWagSU29hiYRkHKoVLfsohGVdXJWj01Kae2VDprsg2QNIbxhKzQTIsCspOQnwjByjN_-TX-4TvnQUGIy7hPsg0H5mcnRNMACynXMRatZ3R8cLaWiPG4q6Qko0ODPnYMLE"
-            />
+            <svg className="w-6 h-6" viewBox="0 0 24 24" aria-hidden>
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
+            </svg>
             {t('auth.loginWithGoogle')}
           </button>
           <p className="text-sm text-bq-ink3">

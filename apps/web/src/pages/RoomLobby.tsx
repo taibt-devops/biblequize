@@ -668,7 +668,7 @@ const RoomLobby: React.FC = () => {
               <span className="truncate">{room.groupQuizSetName}</span>
             </span>
           )}
-          <span className="text-xs font-mono truncate text-bq-ink2" style={{ fontVariantNumeric: 'tabular-nums' }} data-testid="lobby-topbar-code">
+          <span className="text-[13px] font-display font-bold tracking-[0.08em] truncate text-bq-ink2" style={{ fontVariantNumeric: 'tabular-nums' }} data-testid="lobby-topbar-code">
             Phòng {room.roomCode}
           </span>
         </div>

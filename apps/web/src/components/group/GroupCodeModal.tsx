@@ -77,7 +77,7 @@ export default function GroupCodeModal({ groupName, groupCode, open, onClose }: 
           <div className="text-[12px] text-bq-ink3 mb-1">
             {t('groups.qrModal.codeLabel')}
           </div>
-          <div className="text-[28px] font-mono font-extrabold text-bq-amberd tracking-[0.2em] mb-1.5">
+          <div className="text-[30px] font-display font-extrabold text-bq-ink tracking-[0.18em] mb-1.5">
             {groupCode}
           </div>
           <button

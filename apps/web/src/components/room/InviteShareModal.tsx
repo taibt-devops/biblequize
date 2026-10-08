@@ -60,7 +60,7 @@ const InviteShareModal: React.FC<Props> = ({ open, roomCode, onClose }) => {
             Mã phòng
           </div>
           <div
-            className="font-mono font-extrabold text-secondary"
+            className="font-display font-extrabold tracking-[0.12em] text-bq-ink"
             style={{ fontSize: 32, letterSpacing: 6 }}
           >
             {roomCode}

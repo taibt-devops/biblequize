@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../store/authStore'
 import { api } from '../api/client'
+import { PlaceBackdrop, lkClass } from '../components/lk/Place'
 import PageMeta from '../components/PageMeta'
 
 export default function Register() {
@@ -53,83 +54,62 @@ export default function Register() {
   }
 
   return (
-    <main className="flex min-h-dvh bg-bq-paper">
+    <main className="relative flex flex-col md:flex-row min-h-dvh">
+      <PlaceBackdrop place="gate" veil="soft" focus="30% 60%" />
       <PageMeta title={t('auth.register', { defaultValue: 'Register' })} canonicalPath="/register" />
 
-      {/* Left Hero (hidden on mobile) */}
-      <section className="hidden md:flex md:w-[55%] lg:w-[60%] relative overflow-hidden bg-bq-paper">
-        <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-gradient-to-br from-bq-amber/10 via-transparent to-bq-paper" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-bq-amber/10 rounded-full blur-[120px]" />
-          {/* Spectrum wash at the top edge — refracted light identity */}
-          <div className="absolute inset-x-0 top-0 h-1.5 bg-bq-spectrum opacity-80" />
-        </div>
-        <div className="relative z-10 flex flex-col justify-end p-20 w-full h-full">
-          <div className="max-w-2xl">
-            {/* Spectrum logo mark feel */}
-            <div className="mb-8 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-bq-spectrum shadow-bq-soft">
-              <span
-                className="material-symbols-outlined text-white text-4xl"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                menu_book
-              </span>
-            </div>
-            <h1 className="font-display text-6xl font-extrabold tracking-tight leading-tight mb-6 text-bq-ink">
-              {t('auth.joinUs', { defaultValue: 'Join the' })} <br />
-              <span className="text-bq-amberd italic font-light">{t('auth.journeyBegins', { defaultValue: 'journey of faith' })}</span>
+      {/* Left: the traveller setting off through the gate (hidden on mobile) */}
+      <section className="hidden md:flex md:w-[55%] lg:w-[60%] relative items-end p-10 lg:p-16">
+        <div className="relative max-w-xl">
+          <img src="/images/lk/hero-cheer.webp" alt="" aria-hidden className={`h-[170px] lg:h-[210px] mb-4 ml-6 ${lkClass.bob}`} />
+          <div className="bg-bq-white/90 border-[3px] border-bq-ink rounded-bq shadow-bq-card p-7 lg:p-8">
+            <h1 className="m-0 font-display text-[40px] lg:text-[48px] font-extrabold leading-[1.08] text-bq-ink">
+              {t('auth.joinUs', { defaultValue: 'Join the' })} {t('auth.journeyBegins', { defaultValue: 'journey of faith' })}
             </h1>
-            <p className="text-xl text-bq-ink2 font-light max-w-lg leading-relaxed">
+            <p className="m-0 mt-3 font-read text-[17px] text-bq-ink2 leading-relaxed">
               {t('auth.registerHero', { defaultValue: 'Create your account to track progress, compete with others, and grow in scripture.' })}
             </p>
-          </div>
-          <div className="mt-12 flex items-center gap-4">
-            <div className="h-12 w-1 bg-bq-spectrum rounded-full" />
-            <p className="font-literata italic text-bq-ink2 font-medium">
-              "{t('landing.verseText')}"
+            <p className="m-0 mt-5 pt-4 border-t-2 border-dashed border-bq-hair font-read italic text-[15px] text-bq-ink2">
+              &ldquo;{t('landing.verseText')}&rdquo;
             </p>
           </div>
         </div>
       </section>
 
-      {/* Right Form */}
-      <section className="w-full md:w-[45%] lg:w-[40%] flex flex-col justify-center items-center px-8 sm:px-12 lg:px-24 py-12 md:py-0 bg-bq-paper relative">
-        <div className="w-full max-w-md space-y-8 bg-bq-white border border-bq-hair shadow-bq-soft rounded-bq p-8 sm:p-10">
-          <div className="flex flex-col items-center mb-10">
-            <div className="w-16 h-16 rounded-xl bg-bq-spectrum flex items-center justify-center mb-4 shadow-bq-soft">
-              <span className="material-symbols-outlined text-white text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>
-                menu_book
-              </span>
-            </div>
-            <span className="text-2xl font-bold text-bq-amberd uppercase tracking-[0.2em]">Bible Quiz</span>
+      {/* Right: the sign-up card */}
+      <section className="w-full md:w-[45%] lg:w-[40%] flex flex-col justify-center items-center px-5 sm:px-10 lg:px-16 py-10 md:py-8 relative">
+        <div className="w-full max-w-md space-y-6 bg-bq-white border-[3px] border-bq-ink shadow-bq-card rounded-bq p-7 sm:p-9">
+          <div className="flex flex-col items-center">
+            <img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="h-16 mb-1" />
+            <span className="font-display text-[28px] font-extrabold text-bq-ink leading-none">BibleQuiz</span>
           </div>
 
-          <div className="space-y-2 text-center">
-            <h2 className="font-display text-3xl font-bold tracking-tight text-bq-ink">
+          <div className="space-y-1 text-center">
+            <h2 className="m-0 font-display text-[28px] font-extrabold text-bq-ink">
               {t('auth.createAccount', { defaultValue: 'Create your account' })}
             </h2>
-            <p className="text-bq-ink2">
+            <p className="m-0 font-read text-[15px] text-bq-ink2">
               {t('auth.alreadyHaveAccount', { defaultValue: 'Already have an account?' })}{' '}
-              <Link to="/login" className="text-bq-amberd font-bold hover:underline">
+              <Link to="/login" className="text-bq-ink font-extrabold underline decoration-bq-amber decoration-[3px] underline-offset-2">
                 {t('auth.login')}
               </Link>
             </p>
           </div>
 
           {error && (
-            <div data-testid="register-error-msg" className="flex items-start gap-3 px-4 py-3 rounded-xl bg-bq-ruby/10 border border-bq-ruby/30">
-              <span className="material-symbols-outlined text-bq-ruby text-sm mt-0.5">error</span>
-              <p className="text-sm text-bq-ruby">{error}</p>
+            <div data-testid="register-error-msg" className="flex items-start gap-3 px-4 py-3 rounded-2xl bg-bq-white border-[3px] border-bq-ruby">
+              <span className="material-symbols-outlined text-bq-ruby text-[18px] mt-0.5">error</span>
+              <p className="m-0 text-[14px] font-bold text-bq-ruby">{error}</p>
             </div>
           )}
 
           <form onSubmit={handleSubmit} className="space-y-4 mt-8">
             <div className="space-y-1.5">
-              <label className="text-[12.5px] font-bold text-bq-ink2 ml-1">
+              <label className="text-[14px] font-extrabold text-bq-ink ml-1">
                 {t('auth.name', { defaultValue: 'Full Name' })}
               </label>
               <div className="relative group">
-                <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-sapphire transition-colors">
+                <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-ink transition-colors">
                   person
                 </span>
                 <input
@@ -138,18 +118,18 @@ export default function Register() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  className="w-full bg-bq-white border border-bq-hair rounded-xl py-4 pl-12 pr-4 text-bq-ink focus:ring-1 focus:ring-bq-sapphire placeholder:text-bq-ink3 transition-all"
+                  className="w-full bg-bq-paper border-[3px] border-bq-ink/30 rounded-2xl py-3.5 pl-12 pr-4 text-[16px] text-bq-ink focus:outline-none focus:border-bq-ink focus:ring-2 focus:ring-bq-amber placeholder:text-bq-ink3 transition-colors"
                   placeholder={t('auth.namePlaceholder', { defaultValue: 'John Doe' })}
                 />
               </div>
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-[12.5px] font-bold text-bq-ink2 ml-1">
+              <label className="text-[14px] font-extrabold text-bq-ink ml-1">
                 {t('auth.email')}
               </label>
               <div className="relative group">
-                <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-sapphire transition-colors">
+                <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-ink transition-colors">
                   mail
                 </span>
                 <input
@@ -158,18 +138,18 @@ export default function Register() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="w-full bg-bq-white border border-bq-hair rounded-xl py-4 pl-12 pr-4 text-bq-ink focus:ring-1 focus:ring-bq-sapphire placeholder:text-bq-ink3 transition-all"
+                  className="w-full bg-bq-paper border-[3px] border-bq-ink/30 rounded-2xl py-3.5 pl-12 pr-4 text-[16px] text-bq-ink focus:outline-none focus:border-bq-ink focus:ring-2 focus:ring-bq-amber placeholder:text-bq-ink3 transition-colors"
                   placeholder="email@example.com"
                 />
               </div>
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-[12.5px] font-bold text-bq-ink2 ml-1">
+              <label className="text-[14px] font-extrabold text-bq-ink ml-1">
                 {t('auth.password')}
               </label>
               <div className="relative group">
-                <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-sapphire transition-colors">
+                <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-ink transition-colors">
                   lock
                 </span>
                 <input
@@ -179,18 +159,18 @@ export default function Register() {
                   onChange={(e) => setPassword(e.target.value)}
                   required
                   minLength={8}
-                  className="w-full bg-bq-white border border-bq-hair rounded-xl py-4 pl-12 pr-4 text-bq-ink focus:ring-1 focus:ring-bq-sapphire placeholder:text-bq-ink3 transition-all"
+                  className="w-full bg-bq-paper border-[3px] border-bq-ink/30 rounded-2xl py-3.5 pl-12 pr-4 text-[16px] text-bq-ink focus:outline-none focus:border-bq-ink focus:ring-2 focus:ring-bq-amber placeholder:text-bq-ink3 transition-colors"
                   placeholder="••••••••"
                 />
               </div>
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-[12.5px] font-bold text-bq-ink2 ml-1">
+              <label className="text-[14px] font-extrabold text-bq-ink ml-1">
                 {t('auth.confirmPassword', { defaultValue: 'Confirm password' })}
               </label>
               <div className="relative group">
-                <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-sapphire transition-colors">
+                <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-ink transition-colors">
                   lock
                 </span>
                 <input
@@ -200,7 +180,7 @@ export default function Register() {
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   required
                   minLength={8}
-                  className="w-full bg-bq-white border border-bq-hair rounded-xl py-4 pl-12 pr-4 text-bq-ink focus:ring-1 focus:ring-bq-sapphire placeholder:text-bq-ink3 transition-all"
+                  className="w-full bg-bq-paper border-[3px] border-bq-ink/30 rounded-2xl py-3.5 pl-12 pr-4 text-[16px] text-bq-ink focus:outline-none focus:border-bq-ink focus:ring-2 focus:ring-bq-amber placeholder:text-bq-ink3 transition-colors"
                   placeholder="••••••••"
                 />
               </div>
@@ -210,7 +190,7 @@ export default function Register() {
               data-testid="register-submit-btn"
               type="submit"
               disabled={isLoading}
-              className="w-full py-4 mt-6 rounded-xl bg-bq-action text-bq-ink font-bold shadow-bq-action hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2"
+              className="lk-btn w-full mt-4 text-bq-ink text-[17px]"
             >
               {isLoading ? (
                 <>
@@ -220,18 +200,17 @@ export default function Register() {
               ) : (
                 <>
                   {t('auth.register', { defaultValue: 'Create account' })}
-                  <span className="material-symbols-outlined text-sm">arrow_forward</span>
                 </>
               )}
             </button>
           </form>
 
-          <div className="pt-6 flex flex-col items-center gap-3 border-t border-bq-hair">
+          <div className="pt-5 flex flex-col items-center gap-3 border-t-2 border-dashed border-bq-hair">
             <Link
               to="/"
-              className="flex items-center gap-2 text-[12.5px] font-bold text-bq-ink3 hover:text-bq-ink transition-colors py-2 px-4 rounded-full bg-bq-inset"
+              className="flex items-center gap-2 text-[14px] font-bold text-bq-ink py-1.5 px-4 rounded-full bg-bq-leaf border-2 border-bq-ink no-underline hover:brightness-105"
             >
-              <span className="material-symbols-outlined text-sm">stadium</span>
+              <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-5" />
               {t('auth.guestPlay')}
             </Link>
           </div>

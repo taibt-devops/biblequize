@@ -1151,7 +1151,7 @@
     }
   },
   "landing": {
-    "tagline": "NEXT-GEN BIBLE LEARNING APP",
+    "tagline": "A new way to learn the Bible",
     "heroTitle1": "Fun ",
     "heroHighlight": "Bible quizzes",
     "heroTitle2": " every day",
@@ -1198,7 +1198,7 @@
     "teamProgress": "Team Progress",
     "verseText": "Your word is a lamp for my feet, a light on my path.",
     "verseRef": "— Psalm 119:105",
-    "copyright": "© 2026 BibleQuiz. The Sacred Modernist Path.",
+    "copyright": "© 2026 BibleQuiz",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
@@ -2893,7 +2893,7 @@
     "scriptureRef": "— Psalm 119:105",
     "journeyProgressTitle": "Current progress",
     "journeyProgressDetail": "Genesis • 12/50 Chapters",
-    "stepIndicator": "Step Indicator",
+    "stepIndicator": "Getting started",
     "stepCounter": "{{current}} / {{total}}"
   },
   "groupJourney": {

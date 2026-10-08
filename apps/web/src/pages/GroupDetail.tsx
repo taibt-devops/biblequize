@@ -84,12 +84,6 @@ type AnalyticsPeriod = '7d' | '30d' | '90d';
 
 type TabKey = 'activity' | 'members' | 'announcements' | 'quizsets';
 
-const GROUP_BANNER =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuDFnTx3fGDw7x7TL7ge8vDEEkbSjq2ai-wsyEd__vq0byTyOGvi3d1WQJV-Z692ksccl6DDoOTaPZ-RL6J3WDmSBY0g8tNHqXPey9lmDhtJm5uWerKyh-E_CoWIffIBMnkKidiZmdYyryDzyan-U5KggGWHq86m0LjMDFuhdre8DhsrG1bfRTGgMv0gcxaS723-h-Ktb7hs3pnVXl86T0Bxzczh42s-_TVCqF9GGN9tV6Evi0FZeIe1ilRaSLf4vwUHB7Q31bszVCE';
-
-const GROUP_LOGO =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuD4sJ4N_X2MNRMMd3yaZH9kLp_-xyJ4GqF9FvdK1dAW0P1U3HdpQYGd1pIgSJzNDOc44IwaqQIjthMlpuDdh5pYmQ2jNq3KaGX4HvM7hfZGtpiiP4mR5ak9Inm0c7b_s_pgenTSwlf77RToeW07Qk-jDkuNo8rxgTF2QZFN5RzT9LZTyvzKmm4UGlKv4EFucaEvknMaxEwjnCJI-h8JklEYtOS7RH_Hx2QgMk9KnmmiDj-ard7VlrNcnYErAbV48emDvKUI6Mccb0M';
-
 const STORAGE_KEY = 'biblequiz_my_groups';
 
 function updateSavedGroup(group: { id: string; name: string }) {

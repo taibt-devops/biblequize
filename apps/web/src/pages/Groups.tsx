@@ -216,7 +216,7 @@ function GroupCard({ group, onOpen }: { group: MyGroupSummary; onOpen: (id: stri
           {activeNow ? t('groups.activityToday') : formatRelativeTime(group.lastActivityAt, t)}
         </span>
         {(isLeader || isMod) && group.code ? (
-          <span className="inline-flex items-center gap-1 text-bq-ink2 font-mono">
+          <span className="inline-flex items-center gap-1 text-bq-ink2 font-display font-bold tracking-[0.08em]">
             <span className="material-symbols-outlined text-[13px]">key</span>
             {group.code}
           </span>

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useOnboardingStore } from '../store/onboardingStore'
+import { PlaceBackdrop, ScrollPanel } from '../components/lk/Place'
 import { api } from '../api/client'
 
 const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
@@ -86,10 +87,11 @@ export default function OnboardingTryQuiz() {
     }
 
     return (
-      <div data-testid="try-quiz-results" className="bq-lightwell min-h-dvh bg-bq-paper flex flex-col">
+      <div data-testid="try-quiz-results" className="relative min-h-dvh flex flex-col">
+        <PlaceBackdrop place="gate" veil="strong" />
         {/* Nav */}
-        <nav className="flex justify-between items-center w-full px-8 py-4 sticky top-0 z-50 bg-bq-paper">
-          <span className="text-xl font-bold text-bq-amberd uppercase tracking-[0.05em] font-display">BibleQuiz</span>
+        <nav className="flex justify-between items-center w-full px-8 py-4 sticky top-0 z-50 bg-bq-white/95 border-b-[3px] border-bq-ink">
+          <span className="inline-flex items-center gap-1.5 font-display text-[24px] font-extrabold text-bq-ink"><img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="h-8" />BibleQuiz</span>
           <div className="hidden md:flex gap-8">
             {[t('onboarding.tryNavHome'), t('onboarding.tryNavChallenge'), t('onboarding.tryNavCommunity')].map(l => (
               <span key={l} className="text-bq-ink2 text-sm">{l}</span>
@@ -195,8 +197,8 @@ export default function OnboardingTryQuiz() {
         </main>
 
         {/* Footer */}
-        <footer className="relative z-10 bg-bq-paper border-t border-bq-hair flex flex-col gap-3 sm:flex-row justify-between items-center px-6 md:px-12 py-8 w-full">
-          <span className="text-bq-amberd font-semibold text-sm">© 2024 BibleQuiz. The Sacred Path.</span>
+        <footer className="relative z-10 bg-bq-white/90 border-t-[3px] border-bq-ink flex flex-col gap-3 sm:flex-row justify-between items-center px-6 md:px-12 py-8 w-full">
+          <span className="text-bq-ink2 font-bold text-[14px]">© 2026 BibleQuiz</span>
           <div className="flex gap-8">
             <a href="/privacy" className="text-bq-ink2 text-sm hover:text-bq-amberd transition-colors">Privacy</a>
             <a href="/terms" className="text-bq-ink2 text-sm hover:text-bq-amberd transition-colors">Terms</a>
@@ -211,10 +213,11 @@ export default function OnboardingTryQuiz() {
   const LETTERS = ['A', 'B', 'C', 'D']
 
   return (
-    <div className="bq-lightwell min-h-dvh bg-bq-paper flex flex-col">
+    <div className="relative min-h-dvh flex flex-col">
+      <PlaceBackdrop place="gate" veil="strong" />
       {/* Nav */}
-      <nav className="flex justify-between items-center w-full px-8 py-4 sticky top-0 z-50 bg-bq-paper">
-        <span className="text-xl font-bold text-bq-amberd uppercase tracking-[0.05em] font-display">BibleQuiz</span>
+      <nav className="flex justify-between items-center w-full px-8 py-4 sticky top-0 z-50 bg-bq-white/95 border-b-[3px] border-bq-ink">
+        <span className="inline-flex items-center gap-1.5 font-display text-[24px] font-extrabold text-bq-ink"><img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="h-8" />BibleQuiz</span>
         <div className="hidden md:flex items-center gap-8">
           {['Home', 'Quiz', 'Leaderboard'].map(l => (
             <span key={l} className="text-bq-ink2 text-sm">{l}</span>
@@ -233,38 +236,42 @@ export default function OnboardingTryQuiz() {
           <div className="space-y-6">
             <div className="flex justify-between items-end">
               <div>
-                <span className="text-bq-amberd font-bold text-sm tracking-[0.05em] uppercase block mb-1">{t('onboarding.tryChallengeOfDay')}</span>
+                <span className="inline-block mb-1.5 px-3 py-0.5 rounded-full bg-bq-amber border-2 border-bq-ink text-[13px] font-extrabold text-bq-ink">{t('onboarding.tryChallengeOfDay')}</span>
                 <h2 className="text-3xl font-bold tracking-tight text-bq-ink font-display">{t('onboarding.tryQuestionOfTotal', { current: currentQ + 1, total: questions.length })}</h2>
               </div>
               <span className="text-bq-ink2 text-sm font-medium">{t('onboarding.tryPercentComplete', { percent: pctComplete })}</span>
             </div>
-            <div className="h-3 w-full bg-bq-inset rounded-full overflow-hidden">
-              <div className="h-full bg-bq-action rounded-full relative transition-all duration-500" style={{ width: `${pctComplete}%` }} />
+            <div className="h-4 w-full bg-bq-track border-2 border-bq-ink rounded-full overflow-hidden">
+              <div className="h-full bg-bq-amber border-r-2 border-bq-ink/40 transition-all duration-500" style={{ width: `${pctComplete}%` }} />
             </div>
           </div>
 
           {/* Question card */}
-          <div className="bg-bq-white shadow-bq-soft rounded-xl p-10 md:p-16 border border-bq-hair relative overflow-hidden">
-            <div className="absolute -top-12 -right-12 w-48 h-48 bg-bq-amber/5 rounded-full blur-3xl" />
-            <div className="relative z-10">
-              <div className="flex items-center gap-3 mb-6 text-bq-amberd">
-                <span className="material-symbols-outlined">menu_book</span>
-                <span className="text-[12.5px] font-bold">{question.book || t('onboarding.tryBookFallback')}</span>
-              </div>
-              <p data-testid="try-quiz-question" className="text-2xl md:text-3xl font-semibold leading-snug text-bq-ink">{question.content}</p>
-            </div>
-            <div className="absolute bottom-0 left-0 h-1 w-24 bg-bq-amber" />
-          </div>
+          <ScrollPanel bodyClassName="px-6 md:px-12 py-7 md:py-10 text-center">
+            <span className="inline-flex items-center gap-1.5 mb-4 px-3 py-0.5 bg-bq-white border-2 border-bq-ink rounded-full text-[13px] font-extrabold">
+              <img src="/images/lk/scroll.webp" alt="" aria-hidden className="h-4" />
+              {question.book || t('onboarding.tryBookFallback')}
+            </span>
+            <p data-testid="try-quiz-question" className="m-0 font-read text-[22px] md:text-[28px] font-bold leading-snug text-bq-ink">{question.content}</p>
+          </ScrollPanel>
 
           {/* Answer options */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {question.options.map((opt, idx) => {
-              let cls = 'bg-bq-white border-bq-hair hover:bg-bq-inset shadow-bq-soft'
+              // the quiz signboards (A coral, B sky, C gold, D sage); reveal = leaf ring / ruby ring
+              const board = ['bg-answer-a', 'bg-answer-b', 'bg-answer-c', 'bg-answer-d'][idx % 4]
+              const isRight = question.correctAnswer.includes(idx)
+              let cls = `${board} shadow-bq-btn hover:brightness-105 active:translate-y-1 active:shadow-bq-btn-down`
+              let mark: string = LETTERS[idx]
               if (selected !== null) {
-                if (question.correctAnswer.includes(idx)) {
-                  cls = 'bg-bq-emerald/15 border-bq-emerald/50'
+                if (isRight) {
+                  cls = `${board} shadow-bq-btn ring-4 ring-bq-emerald/50`
+                  mark = '✓'
                 } else if (idx === selected) {
-                  cls = 'bg-bq-ruby/15 border-bq-ruby/50'
+                  cls = `${board} shadow-bq-btn ring-4 ring-bq-ruby/40`
+                  mark = '✗'
+                } else {
+                  cls = `${board} opacity-50 saturate-[.65]`
                 }
               }
               return (
@@ -273,20 +280,14 @@ export default function OnboardingTryQuiz() {
                   data-testid={`try-quiz-option-${idx}`}
                   onClick={() => handleSelect(idx)}
                   disabled={selected !== null}
-                  className={`group flex items-center gap-4 p-5 rounded-xl border transition-all duration-300 text-left active:scale-95 ${cls}`}
+                  className={`flex items-center gap-3 md:gap-4 px-4 py-3 md:px-5 md:py-4 min-h-[60px] md:min-h-[78px] rounded-[18px] md:rounded-[20px] border-[3px] border-bq-ink transition-all text-left ${cls}`}
                 >
-                  <div className={`flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg font-bold transition-colors ${
-                    selected === null
-                      ? 'bg-bq-inset text-bq-amberd group-hover:bg-bq-action group-hover:text-bq-ink'
-                      : question.correctAnswer.includes(idx)
-                        ? 'bg-bq-emerald/25 text-bq-emerald'
-                        : idx === selected
-                          ? 'bg-bq-ruby/25 text-bq-ruby'
-                          : 'bg-bq-inset text-bq-ink2'
+                  <span className={`flex-shrink-0 w-9 h-9 md:w-11 md:h-11 grid place-items-center rounded-full border-[3px] border-bq-ink bg-bq-white font-extrabold text-[17px] md:text-[20px] ${
+                    selected !== null && isRight ? 'text-bq-emerald' : selected === idx ? 'text-bq-ruby' : 'text-bq-ink'
                   }`}>
-                    {LETTERS[idx]}
-                  </div>
-                  <span className="text-lg font-medium text-bq-ink">{opt}</span>
+                    {mark}
+                  </span>
+                  <span className="text-[18px] md:text-[21px] font-bold leading-snug text-bq-ink">{opt}</span>
                 </button>
               )
             })}
@@ -308,8 +309,8 @@ export default function OnboardingTryQuiz() {
       </main>
 
       {/* Footer */}
-      <footer className="relative z-10 bg-bq-paper border-t border-bq-hair py-8 flex flex-col gap-3 sm:flex-row justify-between items-center px-6 md:px-12 w-full mt-auto">
-        <span className="text-bq-amberd font-semibold text-sm">© 2024 BibleQuiz</span>
+      <footer className="relative z-10 bg-bq-white/90 border-t-[3px] border-bq-ink py-8 flex flex-col gap-3 sm:flex-row justify-between items-center px-6 md:px-12 w-full mt-auto">
+        <span className="text-bq-ink2 font-bold text-[14px]">© 2026 BibleQuiz</span>
         <div className="flex gap-8">
           <a href="/privacy" className="text-bq-ink2 text-sm hover:text-bq-amberd transition-colors">Privacy</a>
           <a href="/terms" className="text-bq-ink2 text-sm hover:text-bq-amberd transition-colors">Terms</a>

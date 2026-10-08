@@ -3,6 +3,7 @@ import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../store/authStore'
 import PageMeta from '../components/PageMeta'
+import { PlaceBackdrop, lkClass } from '../components/lk/Place'
 import { isCapacitor } from '../platform/capacitor'
 
 export default function Login() {
@@ -113,84 +114,56 @@ export default function Login() {
   }
 
   return (
-    <main className="flex min-h-dvh bg-bq-paper">
+    <main className="relative flex flex-col md:flex-row min-h-dvh">
+      <PlaceBackdrop place="gate" veil="soft" focus="30% 60%" />
       <PageMeta title={t('auth.login')} canonicalPath="/login" />
-      {/* Left Side: Hero Section (60%) */}
-      <section className="hidden md:flex md:w-[55%] lg:w-[60%] relative overflow-hidden bg-bq-paper">
-        <div className="absolute inset-0 z-0">
-          {/* Light-well glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-bq-amber/10 rounded-full blur-[120px]" />
-          {/* Spectrum wash at the top edge — refracted light identity */}
-          <div className="absolute inset-x-0 top-0 h-1.5 bg-bq-spectrum opacity-80" />
-        </div>
-
-        <div className="relative z-10 flex flex-col justify-end p-20 w-full h-full">
-          <div className="max-w-2xl">
-            {/* Spectrum logo mark feel */}
-            <div className="mb-8 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-bq-spectrum shadow-bq-soft">
-              <span
-                className="material-symbols-outlined text-white text-4xl"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                menu_book
-              </span>
-            </div>
-            <h1 className="font-display text-6xl font-extrabold tracking-tight leading-tight mb-6 text-bq-ink">
-              {t('auth.discoverWord')} <br />
-              <span className="text-bq-amberd italic font-light">{t('auth.throughGames')}</span>
+      {/* Left: the traveller at the village gate, welcome on a parchment note */}
+      <section className="hidden md:flex md:w-[55%] lg:w-[60%] relative items-end p-10 lg:p-16">
+        <div className="relative max-w-xl">
+          <img src="/images/lk/hero.webp" alt="" aria-hidden className={`h-[170px] lg:h-[210px] mb-4 ml-6 ${lkClass.bob}`} />
+          <div className="bg-bq-white/90 border-[3px] border-bq-ink rounded-bq shadow-bq-card p-7 lg:p-8">
+            <h1 className="m-0 font-display text-[40px] lg:text-[48px] font-extrabold leading-[1.08] text-bq-ink">
+              {t('auth.discoverWord')} {t('auth.throughGames')}
             </h1>
-            <p className="text-xl text-bq-ink2 font-light max-w-lg leading-relaxed">
+            <p className="m-0 mt-3 font-read text-[17px] text-bq-ink2 leading-relaxed">
               {t('auth.heroDesc')}
             </p>
-          </div>
-          {/* Scriptural Accent Block */}
-          <div className="mt-12 flex items-center gap-4">
-            <div className="h-12 w-1 bg-bq-spectrum rounded-full" />
-            <p className="font-literata italic text-bq-ink2 font-medium">
-              "{t('landing.verseText')}"
+            <p className="m-0 mt-5 pt-4 border-t-2 border-dashed border-bq-hair font-read italic text-[15px] text-bq-ink2">
+              &ldquo;{t('landing.verseText')}&rdquo;
             </p>
           </div>
         </div>
       </section>
 
-      {/* Right Side: Login Form (40%) */}
-      <section className="w-full md:w-[45%] lg:w-[40%] flex flex-col justify-center items-center px-5 sm:px-12 lg:px-24 py-12 md:py-0 bg-bq-paper relative">
-        <div className="w-full max-w-md space-y-6 sm:space-y-8 bg-bq-white border border-bq-hair shadow-bq-soft rounded-bq p-8 sm:p-10">
-          {/* Brand Anchor */}
-          <div className="flex flex-col items-center mb-10">
-            <div className="w-16 h-16 rounded-xl bg-bq-spectrum flex items-center justify-center mb-4 shadow-bq-soft">
-              <span
-                className="material-symbols-outlined text-white text-4xl"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                menu_book
-              </span>
-            </div>
-            <span className="text-2xl font-bold text-bq-amberd uppercase tracking-[0.2em]">
-              Bible Quiz
-            </span>
+      {/* Right: the sign-in card */}
+      <section className="w-full md:w-[45%] lg:w-[40%] flex flex-col justify-center items-center px-5 sm:px-10 lg:px-16 py-10 md:py-8 relative">
+        <div className="w-full max-w-md space-y-6 bg-bq-white border-[3px] border-bq-ink shadow-bq-card rounded-bq p-7 sm:p-9">
+          {/* Brand */}
+          <div className="flex flex-col items-center">
+            <img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="h-16 mb-1" />
+            <span className="font-display text-[28px] font-extrabold text-bq-ink leading-none">BibleQuiz</span>
           </div>
 
-          <div className="space-y-2 text-center">
-            <h2 className="font-display text-3xl font-bold tracking-tight text-bq-ink">{t('auth.welcomeBack')}</h2>
-            <p className="text-bq-ink2">{t('auth.loginToContinue')}</p>
+          <div className="space-y-1 text-center">
+            <h2 className="m-0 font-display text-[28px] font-extrabold text-bq-ink">{t('auth.welcomeBack')}</h2>
+            <p className="m-0 font-read text-[15px] text-bq-ink2">{t('auth.loginToContinue')}</p>
           </div>
 
           {/* Error Message */}
           {error && (
-            <div data-testid="login-error-msg" className="flex items-start gap-3 px-4 py-3 rounded-xl bg-bq-ruby/10 border border-bq-ruby/30">
-              <span className="material-symbols-outlined text-bq-ruby text-sm mt-0.5">error</span>
-              <p className="text-sm text-bq-ruby">{error}</p>
+            <div data-testid="login-error-msg" className="flex items-start gap-3 px-4 py-3 rounded-2xl bg-bq-white border-[3px] border-bq-ruby">
+              <span className="material-symbols-outlined text-bq-ruby text-[18px] mt-0.5">error</span>
+              <p className="m-0 text-[14px] font-bold text-bq-ruby">{error}</p>
             </div>
           )}
 
-          <div className="mt-8 space-y-6">
+          <div className="space-y-5">
             {/* Google OAuth — keep Google branding (white surface + colored mark) */}
             <button
               data-testid="login-google-btn"
               onClick={handleGoogleLogin}
               disabled={isGoogleLoading || isLoading}
-              className="w-full py-3.5 px-4 rounded-xl bg-bq-white border border-bq-hair text-bq-ink font-bold flex items-center justify-center gap-3 transition-all duration-300 hover:scale-[1.02] hover:bg-bq-inset active:scale-95 shadow-bq-soft disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+              className="lk-btn w-full !bg-bq-white text-bq-ink text-[16px] disabled:opacity-50"
             >
               {isGoogleLoading ? (
                 <span className="material-symbols-outlined animate-spin text-xl text-bq-amberd">progress_activity</span>
@@ -219,21 +192,21 @@ export default function Login() {
 
             {/* Divider */}
             <div className="flex items-center gap-4">
-              <div className="h-[1px] flex-1 bg-bq-hair" />
-              <span className="text-[12.5px] text-bq-ink3 font-bold">
+              <div className="flex-1 border-t-2 border-dashed border-bq-ink/25" />
+              <span className="text-[13px] text-bq-ink2 font-bold">
                 {t('auth.orLoginWith')}
               </span>
-              <div className="h-[1px] flex-1 bg-bq-hair" />
+              <div className="flex-1 border-t-2 border-dashed border-bq-ink/25" />
             </div>
 
             {/* Traditional Login Form */}
             <form onSubmit={handleEmailSubmit} className="space-y-4">
               <div className="space-y-1.5">
-                <label className="text-[12.5px] font-bold text-bq-ink2 ml-1">
+                <label className="text-[14px] font-extrabold text-bq-ink ml-1">
                   {t('auth.email')}
                 </label>
                 <div className="relative group">
-                  <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-sapphire transition-colors">
+                  <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-ink transition-colors">
                     mail
                   </span>
                   <input
@@ -242,7 +215,7 @@ export default function Login() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    className="w-full bg-bq-white border border-bq-hair rounded-xl py-4 pl-12 pr-4 text-bq-ink focus:ring-1 focus:ring-bq-sapphire placeholder:text-bq-ink3 transition-all"
+                    className="w-full bg-bq-paper border-[3px] border-bq-ink/30 rounded-2xl py-3.5 pl-12 pr-4 text-[16px] text-bq-ink focus:outline-none focus:border-bq-ink focus:ring-2 focus:ring-bq-amber placeholder:text-bq-ink3 transition-colors"
                     placeholder="email@example.com"
                   />
                 </div>
@@ -250,18 +223,18 @@ export default function Login() {
 
               <div className="space-y-1.5">
                 <div className="flex justify-between items-end ml-1">
-                  <label className="text-[12.5px] font-bold text-bq-ink2">
+                  <label className="text-[14px] font-extrabold text-bq-ink">
                     {t('auth.password')}
                   </label>
                   <a
                     href="#"
-                    className="text-xs font-bold text-bq-amberd underline underline-offset-2 hover:text-bq-ink transition-colors"
+                    className="text-[13px] font-bold text-bq-ink2 underline decoration-bq-amber decoration-2 underline-offset-2 hover:text-bq-ink"
                   >
                     {t('auth.forgotPassword')}
                   </a>
                 </div>
                 <div className="relative group">
-                  <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-sapphire transition-colors">
+                  <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-ink transition-colors">
                     lock
                   </span>
                   <input
@@ -270,7 +243,7 @@ export default function Login() {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
-                    className="w-full bg-bq-white border border-bq-hair rounded-xl py-4 pl-12 pr-4 text-bq-ink focus:ring-1 focus:ring-bq-sapphire placeholder:text-bq-ink3 transition-all"
+                    className="w-full bg-bq-paper border-[3px] border-bq-ink/30 rounded-2xl py-3.5 pl-12 pr-4 text-[16px] text-bq-ink focus:outline-none focus:border-bq-ink focus:ring-2 focus:ring-bq-amber placeholder:text-bq-ink3 transition-colors"
                     placeholder="••••••••"
                   />
                 </div>
@@ -280,7 +253,7 @@ export default function Login() {
                 data-testid="login-submit-btn"
                 type="submit"
                 disabled={isLoading || isGoogleLoading}
-                className="w-full py-4 mt-4 rounded-xl bg-bq-action text-bq-ink font-bold shadow-bq-action hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                className="lk-btn w-full mt-3 text-bq-ink text-[17px]"
               >
                 {isLoading ? (
                   <>
@@ -290,7 +263,6 @@ export default function Login() {
                 ) : (
                   <>
                     {t('auth.login')}
-                    <span className="material-symbols-outlined text-sm">arrow_forward</span>
                   </>
                 )}
               </button>
@@ -298,12 +270,12 @@ export default function Login() {
           </div>
 
           {/* Footer Links */}
-          <div className="pt-8 flex flex-col items-center gap-4 border-t border-bq-hair">
-            <p className="text-sm text-bq-ink2">
+          <div className="pt-5 flex flex-col items-center gap-3 border-t-2 border-dashed border-bq-hair">
+            <p className="m-0 text-[15px] text-bq-ink2">
               {t('auth.noAccount')}{' '}
               <Link
                 to="/register"
-                className="text-bq-amberd font-bold hover:underline decoration-bq-amberd/30 underline-offset-4 ml-1"
+                className="text-bq-ink font-extrabold underline decoration-bq-amber decoration-[3px] underline-offset-2 ml-1"
               >
                 {t('auth.registerNow')}
               </Link>
@@ -311,9 +283,9 @@ export default function Login() {
             <Link
               data-testid="login-guest-link"
               to="/"
-              className="flex items-center gap-2 text-[12.5px] font-bold text-bq-ink3 hover:text-bq-ink transition-colors py-2 px-4 rounded-full bg-bq-inset"
+              className="flex items-center gap-2 text-[14px] font-bold text-bq-ink py-1.5 px-4 rounded-full bg-bq-leaf border-2 border-bq-ink no-underline hover:brightness-105"
             >
-              <span className="material-symbols-outlined text-sm">stadium</span>
+              <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-5" />
               {t('auth.guestPlay')}
             </Link>
           </div>
@@ -323,18 +295,18 @@ export default function Login() {
         <footer className="lg:fixed lg:bottom-4 lg:right-4 mt-10 lg:mt-0 flex flex-wrap gap-x-4 gap-y-2 items-center justify-center">
           <a
             href="/privacy"
-            className="text-[12px] sm:text-xs text-bq-ink3 hover:text-bq-amberd transition-opacity opacity-100 hover:opacity-80 whitespace-nowrap"
+            className="text-[12.5px] font-bold text-bq-ink2 hover:text-bq-ink whitespace-nowrap px-2 py-0.5 rounded-full bg-bq-white/80"
           >
             {t('landing.privacy')}
           </a>
           <a
             href="/terms"
-            className="text-[12px] sm:text-xs text-bq-ink3 hover:text-bq-amberd transition-opacity opacity-100 hover:opacity-80 whitespace-nowrap"
+            className="text-[12.5px] font-bold text-bq-ink2 hover:text-bq-ink whitespace-nowrap px-2 py-0.5 rounded-full bg-bq-white/80"
           >
             {t('landing.terms')}
           </a>
-          <span className="text-[12px] sm:text-xs text-bq-ink3 opacity-60 whitespace-nowrap">
-            &copy; 2024 Bible Quiz
+          <span className="text-[12.5px] font-bold text-bq-ink2 whitespace-nowrap px-2 py-0.5 rounded-full bg-bq-white/80">
+            &copy; 2026 BibleQuiz
           </span>
         </footer>
       </section>

@@ -48,11 +48,10 @@ describe('LandingPage', () => {
     expect(screen.getByText(/Chơi Thử Ngay|Try Now/i)).toBeInTheDocument()
   })
 
-  it('renders the flat hero illustration (no external Bible photo)', () => {
+  it('opens on the village gate painting and loads no external placeholder images', () => {
     renderLanding()
-    expect(
-      screen.getByRole('img', { name: /Kinh Thánh mở|Open Bible/i })
-    ).toBeInTheDocument()
+    expect(document.querySelector('img[src="/images/lk/place-gate.webp"]')).not.toBeNull()
+    expect(document.querySelector('img[src*="googleusercontent"]')).toBeNull()
   })
 
   it('renders features grid section', () => {

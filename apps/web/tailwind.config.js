@@ -138,7 +138,7 @@ export default {
         // Legacy
         serif: ['Playfair Display', 'serif'],
         cursive: ['Caveat', 'cursive'],
-        mono: ['Orbitron', 'Courier New', 'monospace'],
+        mono: ['ui-monospace', 'SFMono-Regular', 'Consolas', 'monospace'],
       },
       borderRadius: {
         DEFAULT: "0.25rem",

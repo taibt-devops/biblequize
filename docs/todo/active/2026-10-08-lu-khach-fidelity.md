@@ -51,7 +51,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-14 | Phòng chờ, Chơi phòng, Màn chủ phòng, Phân tích phòng ✅ | `/room/:id/*` | quảng trường |
 | LKF-15 | Nhóm + chi tiết + trang con ✅ | `/groups*` | gốc sồi nhà nguyện |
 | LKF-16 | Giải đấu, chi tiết, trận ✅ | `/tournaments*` | sân đấu |
-| LKF-17 | Đăng nhập, Đăng ký, Onboarding, Thử quiz, Landing, Câu đố Kinh Thánh | `/login`, `/register`, `/onboarding*`, `/landing`, `/cau-do-kinh-thanh` | cổng làng |
+| LKF-17 | Đăng nhập, Đăng ký, Onboarding, Thử quiz, Landing, Câu đố Kinh Thánh ✅ | `/login`, `/register`, `/onboarding*`, `/landing`, `/cau-do-kinh-thanh` | cổng làng |
 | LKF-18 | Chủ đề tuần, Bí ẩn, Tốc độ, Bộ đề của tôi, Trợ giúp, Chính sách, Điều khoản | … | |
 | LKF-19 | Admin | `/admin/*` | **giữ dạng công cụ** (đã sang màu Lữ Khách ở LKD-18) — màn làm việc cần gọn, không đưa cảnh game vào |
 | LKF-20 | Hồi quy + trang nghiệm thu trước/sau + báo cáo | — | |
@@ -131,3 +131,14 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
   - Không chụp được: `/api/tournaments` trả 500 ở máy local
   - Phát hiện: 17 file `pages/*.module.css` (gồm bảng màu neon của giao diện cũ) không còn được import ở đâu → xóa ở commit dọn dẹp riêng
   - **Spec impact**: [x] None · **Spec strategy**: [x] (c)
+- LKF-17 Đăng nhập · Đăng ký · Onboarding · Thử quiz · Landing · Câu đố Kinh Thánh — cổng làng lúc bình minh
+  - Status: [x] DONE
+  - Đăng nhập / Đăng ký: tranh cổng làng phủ cả màn; trái = lữ khách (Đăng ký: lữ khách nhảy mừng) + lời chào trên tấm giấy; phải = thẻ viền mực, logo đèn lồng + "BibleQuiz" (bỏ "B I B L E  Q U I Z"), ô nhập nền giấy viền mực, nút vàng, "Chơi thử" = viên thuốc lá có thanh kiếm
+  - Landing: ảnh chính = tranh cổng làng + lữ khách đứng ở cổng, lời giới thiệu trên tấm giấy (không tô màu một cụm chữ); ảnh nhóm = tranh nhà nguyện; nút Google cuối trang = nút trắng có logo vẽ sẵn
+  - Onboarding: tranh cổng làng, biển gỗ "Chào mừng / Welcome", thẻ ngôn ngữ viền mực có huy chương (cờ Việt Nam vẽ lại bằng SVG trong máy, tiếng Anh = quả địa cầu), slide 1–3 = tranh cổng làng + lữ khách / quảng trường / bản đồ 66 sách, chấm tiến độ = viên đá, nút vàng
+  - Thử quiz: câu hỏi trên cuộn giấy, đáp án = biển gỗ 4 màu như Quiz, đúng = vòng lá, sai = vòng đỏ
+  - Câu đố Kinh Thánh (trang SEO): thêm tranh cổng làng, giữ nội dung + bố cục
+  - Sửa lỗi có sẵn: ảnh lấy từ host ngoài của công cụ thiết kế (`lh3.googleusercontent.com/aida-public`) ở Landing (ảnh nhóm, logo Google) và Onboarding (cờ Việt Nam hiện chữ rác) → ảnh trong máy; 2 hằng ảnh placeholder không dùng ở GroupDetail bị xóa; chân trang ghi "The Sacred Modernist Path" / "The Sacred Path" (tên bản thiết kế cũ) → "© 2026 BibleQuiz"; khẩu hiệu Landing viết HOA → chữ thường; "Step Indicator" (giá trị tạm tiếng Anh) → "Làm quen" / "Getting started"
+  - Font: bỏ Orbitron (font khoa học viễn tưởng của giao diện cũ) — 6 chỗ người dùng thấy (mã nhóm, mã phòng, điểm Landing, đồng hồ trận) đổi sang Baloo số thẳng hàng; `font-mono` = monospace hệ thống (Admin giữ cho ID); gỡ Orbitron khỏi link Google Fonts
+  - Test: Landing kiểm "tranh cổng làng + không tải ảnh ngoài" thay cho ảnh minh họa cũ (đã xóa `HeroIllustration`); Onboarding tìm nút bằng test id (bỏ mũi tên); chân trang 2026
+  - **Spec impact**: [x] None · **Spec strategy**: [x] (b) cập nhật test theo thiết kế

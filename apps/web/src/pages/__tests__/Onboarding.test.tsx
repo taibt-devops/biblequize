@@ -88,7 +88,7 @@ describe('Onboarding', () => {
 
     it('renders footer with copyright', () => {
       renderOnboarding()
-      expect(screen.getByText(/© 2024 BibleQuiz/)).toBeInTheDocument()
+      expect(screen.getByText(/© 2026 BibleQuiz/)).toBeInTheDocument()
     })
 
     it('clicking Vietnamese advances to slide 1', async () => {
@@ -146,16 +146,13 @@ describe('Onboarding', () => {
     it('clicking Next advances from slide 1 to slide 2', async () => {
       const user = await goToSlide1()
       // Find the primary CTA button (gold-gradient)
-      const buttons = screen.getAllByRole('button')
-      const nextBtn = buttons.find(b => b.textContent?.includes('arrow_forward'))
-      await user.click(nextBtn!)
+      await user.click(screen.getByTestId('onboarding-next-btn'))
       expect(screen.getByText('02 / 03')).toBeInTheDocument()
     })
 
     it('slide 2 shows feature grid (Multiplayer, Ranked, Groups, Tournament)', async () => {
       const user = await goToSlide1()
-      const nextBtn = screen.getAllByRole('button').find(b => b.textContent?.includes('arrow_forward'))
-      await user.click(nextBtn!)
+      await user.click(screen.getByTestId('onboarding-next-btn'))
       expect(screen.getByText('Multiplayer')).toBeInTheDocument()
       expect(screen.getByText('Ranked')).toBeInTheDocument()
       expect(screen.getByText('Groups')).toBeInTheDocument()
@@ -165,11 +162,9 @@ describe('Onboarding', () => {
     it('slide 3 shows scripture quote and start button', async () => {
       const user = await goToSlide1()
       // Navigate to slide 2
-      let nextBtn = screen.getAllByRole('button').find(b => b.textContent?.includes('arrow_forward'))
-      await user.click(nextBtn!)
+      await user.click(screen.getByTestId('onboarding-next-btn'))
       // Navigate to slide 3
-      nextBtn = screen.getAllByRole('button').find(b => b.textContent?.includes('arrow_forward'))
-      await user.click(nextBtn!)
+      await user.click(screen.getByTestId('onboarding-next-btn'))
       expect(screen.getByText('03 / 03')).toBeInTheDocument()
       expect(screen.getByText(/Thi Thiên 119:105/)).toBeInTheDocument()
     })
@@ -177,13 +172,10 @@ describe('Onboarding', () => {
     it('slide 3 finish navigates to /onboarding/try', async () => {
       const user = await goToSlide1()
       // Navigate to slide 3
-      let nextBtn = screen.getAllByRole('button').find(b => b.textContent?.includes('arrow_forward'))
-      await user.click(nextBtn!)
-      nextBtn = screen.getAllByRole('button').find(b => b.textContent?.includes('arrow_forward'))
-      await user.click(nextBtn!)
+      await user.click(screen.getByTestId('onboarding-next-btn'))
+      await user.click(screen.getByTestId('onboarding-next-btn'))
       // Now click the start/finish button on slide 3
-      nextBtn = screen.getAllByRole('button').find(b => b.textContent?.includes('arrow_forward'))
-      await user.click(nextBtn!)
+      await user.click(screen.getByTestId('onboarding-start-btn'))
       expect(mockSetHasSeenOnboarding).toHaveBeenCalledWith(true)
       expect(mockNavigate).toHaveBeenCalledWith('/onboarding/try')
     })
@@ -199,8 +191,8 @@ describe('Onboarding', () => {
       await goToSlide1()
       // 3 dot indicators should exist
       const dots = document.querySelectorAll('.rounded-full.transition-all')
-      // At least the active dot with the bq action gradient
-      const activeDot = document.querySelector('.bg-bq-action.rounded-full')
+      // the active stone is the wide gold one
+      const activeDot = document.querySelector('.bg-bq-amber.w-12.rounded-full')
       expect(activeDot).toBeInTheDocument()
     })
   })

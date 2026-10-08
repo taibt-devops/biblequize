@@ -79,7 +79,7 @@ function TimerCircle({ seconds, maxSeconds = 15, size = 80 }: { seconds: number;
         />
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <span className="font-mono font-semibold leading-none" style={{ color, fontSize: size * 0.28 }}>{seconds}</span>
+        <span className="font-display font-extrabold tabular-nums leading-none" style={{ color, fontSize: size * 0.28 }}>{seconds}</span>
       </div>
     </div>
   );
