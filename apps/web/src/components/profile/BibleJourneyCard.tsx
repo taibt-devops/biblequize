@@ -48,7 +48,7 @@ export function BibleJourneyCard() {
     <section data-testid="profile-journey" className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-5 md:p-6">
       <div className="flex items-center justify-between mb-4 gap-3 flex-wrap">
         <div>
-          <h2 className="text-sm font-bold uppercase tracking-wider text-bq-ink inline-flex items-center gap-2">
+          <h2 className="font-display text-[19px] font-extrabold text-bq-ink inline-flex items-center gap-2">
             <span className="material-symbols-outlined text-[18px] text-bq-amberd">menu_book</span>
             {t('profile.journeyTitle')}
           </h2>
@@ -67,19 +67,19 @@ export function BibleJourneyCard() {
       <div className="grid grid-cols-3 gap-2 mb-5 text-center">
         <div className="bg-bq-emerald/10 border border-bq-emerald/20 rounded-xl py-2">
           <p className="text-base font-extrabold text-bq-emerald">{summary.completed}</p>
-          <p className="text-[10px] uppercase tracking-wider text-bq-ink2 mt-0.5">
+          <p className="text-[12px] font-bold text-bq-ink2 mt-0.5">
             {t('profile.journeyCompleted')}
           </p>
         </div>
         <div className="bg-bq-amber/10 border border-bq-amber/20 rounded-xl py-2">
           <p className="text-base font-extrabold text-bq-amberd">{summary.inProgress}</p>
-          <p className="text-[10px] uppercase tracking-wider text-bq-ink2 mt-0.5">
+          <p className="text-[12px] font-bold text-bq-ink2 mt-0.5">
             {t('profile.journeyInProgress')}
           </p>
         </div>
         <div className="bg-bq-inset border border-bq-hair rounded-xl py-2">
           <p className="text-base font-extrabold text-bq-ink3">{summary.locked}</p>
-          <p className="text-[10px] uppercase tracking-wider text-bq-ink2 mt-0.5">
+          <p className="text-[12px] font-bold text-bq-ink2 mt-0.5">
             {t('profile.journeyLocked')}
           </p>
         </div>
@@ -111,7 +111,7 @@ function JourneyTestamentSection({ title, books, completedCount, onClick }: {
   return (
     <div className="mb-4 last:mb-0">
       <div className="flex items-center justify-between mb-2">
-        <h3 className="text-[11px] font-bold uppercase tracking-wider text-bq-ink2">{title}</h3>
+        <h3 className="text-[13.5px] font-extrabold text-bq-ink2">{title}</h3>
         <span className="text-[10px] text-bq-ink2">{completedCount}/{books.length}</span>
       </div>
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">

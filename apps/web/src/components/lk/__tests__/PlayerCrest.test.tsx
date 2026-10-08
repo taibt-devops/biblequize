@@ -29,3 +29,13 @@ describe('TierRibbon', () => {
     expect(screen.getByText('Môn Đồ')).toBeInTheDocument()
   })
 })
+
+describe('PlayerCrest frame', () => {
+  it('colours the rim with the equipped frame instead of the tier material', () => {
+    const { container: a } = render(<PlayerCrest name="A" tierId={1} size={60} />)
+    const { container: b } = render(<PlayerCrest name="A" tierId={1} frame={3} size={60} />)
+    const rimA = (a.querySelector('span > span') as HTMLElement).style.background
+    const rimB = (b.querySelector('span > span') as HTMLElement).style.background
+    expect(rimA).not.toBe(rimB)
+  })
+})

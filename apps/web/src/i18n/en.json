@@ -2394,6 +2394,15 @@
     "wrong3": "📖 {{name}} needs to study more"
   },
   "achievements": {
+    "catAll": "All",
+    "catLearning": "Learning",
+    "catStreak": "Streak",
+    "catSocial": "Social",
+    "catCompetition": "Competition",
+    "catQuiz": "Quiz",
+    "catPoints": "Points",
+    "catBooks": "Books",
+    "catAccuracy": "Accuracy",
     "title": "Achievements",
     "loading": "Loading...",
     "accuracy": "Accuracy",

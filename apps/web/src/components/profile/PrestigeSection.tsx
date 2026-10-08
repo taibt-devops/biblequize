@@ -21,7 +21,7 @@ export function PrestigeSection() {
   const progress = Math.min(100, (daysAtTier6 / daysRequired) * 100)
 
   return (
-    <section data-testid="profile-prestige-section" className="rounded-2xl p-5 md:p-6 bg-gradient-to-br from-bq-amber/[0.08] to-bq-sapphire/[0.05] border border-bq-amber/20 flex flex-col sm:flex-row items-start sm:items-center gap-5">
+    <section data-testid="profile-prestige-section" className="rounded-bq p-5 md:p-6 bg-bq-cream border-[3px] border-bq-ink shadow-bq-card flex flex-col sm:flex-row items-start sm:items-center gap-5">
       <div className="relative w-20 h-20 rounded-2xl bg-gradient-to-br from-bq-amber/15 to-bq-sapphire/10 border border-bq-amber/30 flex items-center justify-center shrink-0">
         <span className="text-[32px]">👑</span>
         {!canPrestige && (

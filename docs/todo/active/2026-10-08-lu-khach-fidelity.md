@@ -46,7 +46,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-9 | Đấu Hạng, Bài kiểm tra cơ bản ✅ | `/ranked`, `/basic-quiz` | sân đấu |
 | LKF-10 | Thử thách hôm nay ✅ | `/daily` | lá thư bồ câu mang tới |
 | LKF-11 | Xếp hạng ✅ | `/leaderboard` | đỉnh đồi, bục vinh danh |
-| LKF-12 | Cá nhân, Thành tích, Ngoại hình | `/profile`, `/achievements`, `/cosmetics` | lều trại |
+| LKF-12 | Cá nhân, Thành tích, Ngoại hình ✅ | `/profile`, `/achievements`, `/cosmetics` | lều trại |
 | LKF-13 | Phòng chơi, Danh sách phòng, Tạo phòng, Vào phòng | `/multiplayer`, `/rooms`, `/room/create`, `/room/join` | quảng trường làng |
 | LKF-14 | Phòng chờ, Chơi phòng, Màn chủ phòng, Phân tích phòng | `/room/:id/*` | quảng trường |
 | LKF-15 | Nhóm + chi tiết + trang con | `/groups*` | gốc sồi nhà nguyện |
@@ -86,4 +86,15 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
   - Biển gỗ có cúp, công tắc Tất cả / Hàng tuần đưa lên đầu (bục đổi theo bảng); bục gỗ vàng / bạc / đồng có vân ván, vương miện + hào quang cho hạng 1; hàng danh sách viền mực, số hạng trong huy chương; "Khu vực của bạn"; trạng thái ít dữ liệu = lữ khách + nút vàng; bậc mùa = 6 khiên hạng
   - Góp ý giữa chừng (user 08/10: "huy hiệu của người chơi đang không đẹp… tạo gì đó đẹp đẹp để xịn hơn"): làm `components/lk/PlayerCrest` — ảnh đại diện trong vành đinh tán làm bằng chất liệu của bậc (gỗ sáng, gỗ sẫm, đồng, bạc, vàng, vàng rực có hào quang), vàng có vệt sáng chạy chậm (tắt khi giảm chuyển động), khiên bậc gắn góc dưới phải như huy hiệu game; người chưa có ảnh = chân dung màu pastel theo tên + chữ cái đầu; `TierRibbon` = dải tên bậc màu riêng từng bậc. Dùng cho bục + mọi hàng; sẽ dùng tiếp ở Cá nhân / Nhóm / Phòng
   - Ảnh chụp dùng bảng giả lập (DB local < 10 người → trạng thái ít dữ liệu)
+  - **Spec impact**: [x] None · **Spec strategy**: [x] (c)
+- LKF-12 Cá nhân · Thành tích · Ngoại hình — lều trại
+  - Status: [x] DONE
+  - Cá nhân: biển gỗ có lữ khách; thẻ chính = huy hiệu người chơi cỡ lớn (`PlayerCrest` 116px), tên, dải bậc, chip email / ngày tham gia, nút Chia sẻ + Chỉnh sửa; 4 huy chương số liệu (cúp, đèn lồng, cuộn giấy, ✓); thẻ bậc = khiên hiện tại → khiên kế (xám), 5 sao viền mực, thanh gỗ mốc 50/90%; tiêu đề các thẻ còn lại bỏ chữ IN HOA; huy hiệu sưu tập = huy chương viền gỗ (khóa = nét đứt); Prestige nền kem; Vùng nguy hiểm = viền đỏ nét đứt
+  - Ngoại hình: mỗi khung avatar xem trước ngay trên huy hiệu của chính người chơi; khung chưa mở vẫn thấy màu (mờ 70%) để biết mình sắp nhận gì; giao diện quiz = huy chương
+  - Thành tích: biển gỗ có cúp, thanh tiến trình tổng bằng gỗ, thẻ thành tích = huy chương (đã mở viền mực, khóa nét đứt), cột phải: mới đạt, thống kê mùa (dải bậc), đường bậc với khiên
+  - Quyết định:
+    - Khung avatar đã đeo tô màu đúng tên khung (Viền Xám, Xanh Nhạt, Xanh Dương, Tím Lửa, Vàng Sao, Vàng Đỏ Hoàng Gia) — `PlayerCrest` có thêm `frame`; không đeo khung thì vành = chất liệu bậc như Bảng xếp hạng
+    - Sửa lỗi có sẵn: Thành tích tự giữ bảng bậc riêng với ngưỡng sai (500/1500/4000…) → dùng `data/tiers` (1.000/5.000/15.000…); thiếu chữ các mục lọc (`achievements.catAll`… hiện nguyên khóa) → thêm 9 khóa vi/en; tên icon huy hiệu viết hoa (`FLAME`, `ZAP`) hiện thành chữ → `utils/achievementIcon`
+    - Bỏ banner "Sự kiện đặc biệt" (không dẫn đi đâu, không có sự kiện) và nút "Xem tất cả lịch sử" (không làm gì)
+  - Ghi nhận (dữ liệu, không sửa): `/api/achievements/my-achievements` trả rỗng trong khi `/api/achievements/me` (Cá nhân) trả 7 huy hiệu; tên huy hiệu ở DB local không dấu; Phân tích chi tiết hiện 6320%
   - **Spec impact**: [x] None · **Spec strategy**: [x] (c)

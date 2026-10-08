@@ -18,6 +18,7 @@ import { PrestigeSection } from '../components/profile/PrestigeSection'
 import { SoundHapticsSettings } from '../components/profile/SoundHapticsSettings'
 import { PrivacySettings } from '../components/profile/PrivacySettings'
 import { DeleteAccountSection } from '../components/profile/DeleteAccountSection'
+import { PlaceBackdrop, Plaque } from '../components/lk/Place'
 
 function ProfileSkeleton() {
   return (
@@ -87,10 +88,12 @@ const Profile: React.FC = () => {
 
   if (!isAuthenticated || !authUser) {
     return (
-      <div className="flex items-center justify-center py-24">
-        <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4 text-bq-amberd">{t('profile.loginRequired')}</h2>
-          <Link to="/login" className="px-6 py-3 rounded-lg font-bold bg-bq-action text-bq-ink shadow-bq-action inline-block">
+      <div className="relative flex items-center justify-center py-20 px-4">
+        <PlaceBackdrop place="camp" veil="strong" />
+        <div className="max-w-sm w-full p-7 text-center bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card">
+          <img src="/images/lk/hero-rest.webp" alt="" aria-hidden className="mx-auto h-28 mb-2" />
+          <h2 className="m-0 mb-4 font-display text-[22px] font-extrabold text-bq-ink">{t('profile.loginRequired')}</h2>
+          <Link to="/login" className="lk-btn text-bq-ink text-[16px] no-underline">
             {t('auth.login')}
           </Link>
         </div>
@@ -137,10 +140,14 @@ const Profile: React.FC = () => {
   const activeDays = heatmapLevels.filter(l => l > 0).length
 
   return (
-    <div data-testid="profile-page" className="space-y-4">
-      <div>
-        <h1 className="font-display text-2xl font-extrabold text-bq-ink tracking-tight">{t('profile.title')}</h1>
-        <p className="text-sm text-bq-ink2 mt-0.5">{t('profile.subtitle')}</p>
+    <div data-testid="profile-page" className="relative max-w-5xl mx-auto space-y-5">
+      <PlaceBackdrop place="camp" veil="strong" />
+      <div className="space-y-3">
+        <Plaque className="text-[28px] md:text-[36px]">
+          <img src="/images/lk/hero.webp" alt="" aria-hidden className="h-[1.2em] -my-1" />
+          {t('profile.title')}
+        </Plaque>
+        <p className="m-0 w-fit max-w-full px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-2xl font-read text-[14px] md:text-[15px] text-bq-ink2">{t('profile.subtitle')}</p>
       </div>
 
       <HeroCompact

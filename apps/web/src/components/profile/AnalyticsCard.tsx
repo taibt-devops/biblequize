@@ -23,14 +23,14 @@ export function AnalyticsCard() {
 
   return (
     <section data-testid="profile-weakness-widget" className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-5 md:p-6">
-      <h2 className="text-sm font-bold uppercase tracking-wider text-bq-ink inline-flex items-center gap-2 mb-4">
+      <h2 className="font-display text-[19px] font-extrabold text-bq-ink inline-flex items-center gap-2 mb-4">
         <span className="material-symbols-outlined text-[18px] text-bq-amberd">analytics</span>
         {t('profile.analyticsTitle')}
       </h2>
 
       {data.strongBooks.length > 0 && (
         <>
-          <h3 className="text-[11px] font-bold uppercase tracking-wider text-bq-emerald inline-flex items-center gap-1.5 mb-2">
+          <h3 className="text-[13.5px] font-extrabold text-bq-emerald inline-flex items-center gap-1.5 mb-2">
             <span className="material-symbols-outlined text-[16px]">trending_up</span>
             {t('profile.strongBooks')}
           </h3>
@@ -44,7 +44,7 @@ export function AnalyticsCard() {
 
       {data.weakBooks.length > 0 && (
         <>
-          <h3 className="text-[11px] font-bold uppercase tracking-wider text-bq-ruby inline-flex items-center gap-1.5 mb-2">
+          <h3 className="text-[13.5px] font-extrabold text-bq-ruby inline-flex items-center gap-1.5 mb-2">
             <span className="material-symbols-outlined text-[16px]">trending_down</span>
             {t('profile.weakBooks')}
           </h3>

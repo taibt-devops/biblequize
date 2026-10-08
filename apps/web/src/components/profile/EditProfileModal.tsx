@@ -144,7 +144,7 @@ export function EditProfileModal({ open, onClose, profile }: {
               className="w-full rounded-2xl bg-bq-inset p-3 mt-1"
               style={{ border: `1px solid ${GOLD}26` }}
             >
-              <p className="text-[10px] font-semibold uppercase tracking-wider text-bq-ink2 mb-2">
+              <p className="text-[12.5px] font-bold text-bq-ink2 mb-2">
                 {t('profile.editAvatarPresetsHeading')}
               </p>
               <div className="grid grid-cols-6 gap-2">
@@ -195,7 +195,7 @@ export function EditProfileModal({ open, onClose, profile }: {
 
         {/* Name field */}
         <label className="block">
-          <span className="text-xs font-semibold uppercase tracking-wider text-bq-ink2">
+          <span className="text-[13px] font-bold text-bq-ink2">
             {t('profile.editFieldName')}
           </span>
           <div

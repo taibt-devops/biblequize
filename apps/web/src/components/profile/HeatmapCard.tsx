@@ -44,7 +44,7 @@ export function HeatmapCard({ cells, activeDays }: { cells: HeatmapLevel[]; acti
     <section data-testid="profile-heatmap" className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-5 md:p-6">
       <div className="flex items-center justify-between mb-4 gap-4 flex-wrap">
         <div>
-          <h2 className="text-sm font-bold uppercase tracking-wider text-bq-ink inline-flex items-center gap-2">
+          <h2 className="font-display text-[19px] font-extrabold text-bq-ink inline-flex items-center gap-2">
             <span className="material-symbols-outlined text-[18px] text-bq-amberd">grid_view</span>
             {t('profile.learningLog')}
           </h2>

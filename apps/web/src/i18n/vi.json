@@ -2394,6 +2394,15 @@
     "wrong3": "📖 {{name}} cần ôn thêm"
   },
   "achievements": {
+    "catAll": "Tất cả",
+    "catLearning": "Học tập",
+    "catStreak": "Chuỗi ngày",
+    "catSocial": "Cộng đồng",
+    "catCompetition": "Thi đấu",
+    "catQuiz": "Câu đố",
+    "catPoints": "Điểm",
+    "catBooks": "Sách",
+    "catAccuracy": "Chính xác",
     "title": "Thành Tích",
     "loading": "Đang tải...",
     "accuracy": "Độ chính xác",

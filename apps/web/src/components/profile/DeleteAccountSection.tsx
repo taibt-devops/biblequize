@@ -30,7 +30,7 @@ export function DeleteAccountSection() {
   }
 
   return (
-    <section className="rounded-2xl p-5 bg-error/[0.04] border border-error/20 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+    <section className="rounded-2xl p-5 bg-bq-white/90 border-[3px] border-dashed border-bq-ruby flex flex-col sm:flex-row items-start sm:items-center gap-4">
       <div className="w-10 h-10 rounded-xl bg-error/15 text-error flex items-center justify-center shrink-0">
         <span className="material-symbols-outlined">warning</span>
       </div>

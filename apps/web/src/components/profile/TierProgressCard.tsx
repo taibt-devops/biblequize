@@ -1,7 +1,12 @@
-import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { TIERS } from '../../data/tiers'
 
+const tierImg = (id: number) => `/images/lk/tier-${Math.min(6, Math.max(1, id))}.webp`
+
+/**
+ * Tier road on the profile (LKF-12): current shield → next shield (greyed), five sub-stars, the
+ * wooden XP rail with 50 % / 90 % marks, and the unlock note.
+ */
 export function TierProgressCard({ currentTier, nextTier, tierProgress, currentStreak }: {
   currentTier: typeof TIERS[number]
   nextTier: typeof TIERS[number] | null
@@ -17,11 +22,6 @@ export function TierProgressCard({ currentTier, nextTier, tierProgress, currentS
 }) {
   const { t } = useTranslation()
   const starsFilled = Math.min(5, Math.floor(tierProgress.progressPercent / 20))
-  const stars = [0, 1, 2, 3, 4].map(i => {
-    if (i < starsFilled) return 'filled'
-    if (i === starsFilled && tierProgress.progressPercent < 100) return 'current'
-    return 'empty'
-  })
 
   // ETA: rough heuristic — assume avg 50 EXP/day at current streak (no real data)
   const etaDays = nextTier && currentStreak > 0
@@ -29,109 +29,87 @@ export function TierProgressCard({ currentTier, nextTier, tierProgress, currentS
     : null
 
   return (
-    <section data-testid="profile-tier-progress" className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-5 md:p-6">
-      <div className="flex items-center justify-between gap-4">
+    <section data-testid="profile-tier-progress" className="bg-bq-white border-[3px] border-bq-ink shadow-bq-card rounded-bq p-5 md:p-6">
+      <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3 min-w-0">
-          <div className="w-12 h-12 rounded-xl bg-bq-inset flex items-center justify-center text-[22px] border border-bq-hair shrink-0">
-            {currentTier.iconEmoji}
-          </div>
+          <img src={tierImg(currentTier.id)} alt="" aria-hidden className="w-14 md:w-16 shrink-0 drop-shadow-[0_3px_0_rgba(29,43,34,.35)]" />
           <div className="min-w-0">
-            <p data-testid="profile-tier-current-name" className="text-base font-bold text-bq-ink truncate">
+            <p data-testid="profile-tier-current-name" className="m-0 font-display text-[20px] md:text-[22px] font-extrabold text-bq-ink">
               {t(currentTier.nameKey)}
             </p>
-            <p className="text-xs text-bq-ink2 mt-0.5">
+            <p className="m-0 text-[13px] font-bold text-bq-ink2">
               {t('profile.tierCurrentSub', { n: currentTier.id })}
             </p>
           </div>
         </div>
-        <span className="material-symbols-outlined text-2xl text-bq-ink3 hidden sm:block">arrow_forward</span>
+        <span aria-hidden className="hidden sm:block flex-1 max-w-[160px] border-t-[3px] border-dashed border-bq-ink/30" />
         <div className="flex items-center gap-3 shrink-0">
           {nextTier ? (
             <>
               <div className="text-right">
-                <p data-testid="profile-tier-next-name" className="text-[13px] font-semibold text-bq-amberd">
+                <p data-testid="profile-tier-next-name" className="m-0 font-display text-[16px] font-extrabold text-bq-amberd">
                   {t(nextTier.nameKey)}
                 </p>
-                <p className="text-[11px] text-bq-ink2 mt-0.5">
+                <p className="m-0 text-[12.5px] font-bold text-bq-ink2">
                   {t('profile.tierNextSub', { n: nextTier.id, exp: tierProgress.expRemaining.toLocaleString() })}
                 </p>
               </div>
-              <div className="w-12 h-12 rounded-xl bg-bq-amber/10 border border-dashed border-bq-amber/40 flex items-center justify-center text-[22px] opacity-70">
-                {nextTier.iconEmoji}
-              </div>
+              <img src={tierImg(nextTier.id)} alt="" aria-hidden className="w-11 md:w-12 grayscale-[.6] opacity-75" />
             </>
           ) : (
-            <span className="text-xs font-bold text-bq-amberd uppercase">{t('profile.tierMaxLabel')}</span>
+            <span className="px-3 py-1 bg-bq-amber border-2 border-bq-ink rounded-full text-[13px] font-extrabold">{t('profile.tierMaxLabel')}</span>
           )}
         </div>
       </div>
 
-      <div className="mt-5">
-        <p className="text-[10px] font-semibold uppercase tracking-wider text-bq-ink2 mb-1.5">
-          {t('profile.subStarsLabel', { n: starsFilled })}
-        </p>
-        <div className="flex items-center justify-between px-1">
-          {stars.map((state, i) => (
-            <div
+      <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1">
+        <div className="flex items-center gap-1">
+          {[0, 1, 2, 3, 4].map(i => (
+            <span
               key={i}
-              className={
-                state === 'filled'
-                  ? 'w-6 h-6 rounded-full bg-bq-action text-bq-ink shadow-bq-action flex items-center justify-center text-[13px]'
-                  : state === 'current'
-                  ? 'w-6 h-6 rounded-full bg-bq-amber/15 border border-bq-amber text-bq-amberd flex items-center justify-center text-[13px] animate-pulse'
-                  : 'w-6 h-6 rounded-full bg-bq-inset border border-bq-hair text-bq-ink3 flex items-center justify-center text-[13px]'
-              }
+              aria-hidden
+              className={`text-[24px] leading-none ${i === starsFilled && tierProgress.progressPercent < 100 ? 'motion-safe:animate-pulse' : ''}`}
+              style={{ color: i < starsFilled ? '#FFC93C' : '#F0DFB8', WebkitTextStroke: '1.5px #1D2B22' }}
             >
               ★
-            </div>
+            </span>
           ))}
         </div>
+        <span className="text-[13px] font-bold text-bq-ink2">{t('profile.subStarsLabel', { n: starsFilled })}</span>
       </div>
 
-      <div className="relative mt-5 mb-7">
-        <div className="h-2.5 bg-bq-inset rounded-full overflow-hidden">
-          <div
-            className="h-full bg-bq-action rounded-full shadow-bq-action relative"
-            style={{ width: `${tierProgress.progressPercent}%` }}
-          >
-            {tierProgress.progressPercent > 0 && tierProgress.progressPercent < 100 && (
-              <div className="absolute -right-0.5 -top-0.5 w-3.5 h-3.5 rounded-full bg-bq-amber border-2 border-bq-white shadow-bq-amb" />
-            )}
-          </div>
+      <div className="relative mt-4 mb-7">
+        <div className="h-4 bg-bq-track border-2 border-bq-ink rounded-full overflow-hidden">
+          <div className="h-full bg-bq-amber border-r-2 border-bq-ink/40" style={{ width: `${tierProgress.progressPercent}%` }} />
         </div>
         {[50, 90].map(p => (
-          <React.Fragment key={p}>
-            <div className="absolute -top-0.5 w-0.5 h-3.5 bg-bq-hair rounded" style={{ left: `${p}%` }} />
-            <div
-              className="absolute top-4 text-[9px] font-semibold uppercase tracking-wider text-bq-ink3 -translate-x-1/2"
-              style={{ left: `${p}%` }}
-            >
-              {p}%
-            </div>
-          </React.Fragment>
+          <div key={p} className="absolute top-5 -translate-x-1/2 flex flex-col items-center" style={{ left: `${p}%` }}>
+            <span aria-hidden className="w-0.5 h-1.5 bg-bq-ink/40" />
+            <span className="text-[11px] font-extrabold text-bq-ink3">{p}%</span>
+          </div>
         ))}
       </div>
 
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-4 border-t border-bq-hair">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-4 border-t-2 border-dashed border-bq-hair">
         <div className="flex flex-wrap items-center gap-3">
-          <div data-testid="profile-tier-exp" className="text-xs text-bq-ink2">
-            <span className="text-lg font-extrabold text-bq-amberd tracking-tight align-baseline">
+          <div data-testid="profile-tier-exp" className="text-[13px] font-bold text-bq-ink2">
+            <span className="font-display text-[20px] font-extrabold text-bq-ink align-baseline tabular-nums">
               {`${tierProgress.currentExp.toLocaleString()} / ${tierProgress.nextTierExp.toLocaleString()}`}
             </span>
             <span className="ml-1">EXP</span>
           </div>
           {nextTier && (
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-bq-inset border border-bq-hair text-[11px] text-bq-ink2">
-              <span className="material-symbols-outlined text-[14px]">schedule</span>
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-bq-cream border-2 border-bq-ink text-[12.5px] font-bold">
+              <span className="material-symbols-outlined text-[15px]">schedule</span>
               {etaDays != null ? t('profile.tierEta', { days: etaDays }) : t('profile.tierEtaUnknown')}
-            </div>
+            </span>
           )}
         </div>
         {nextTier && (
-          <div className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-bq-amber/10 border border-bq-amber/20 text-xs font-semibold text-bq-amberd self-start sm:self-auto">
+          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-bq-leaf border-2 border-bq-ink text-[13px] font-extrabold self-start sm:self-auto">
             <span className="material-symbols-outlined text-[16px]">lock_open</span>
             {t('profile.tierUnlockNext')}: {t(nextTier.nameKey)}
-          </div>
+          </span>
         )}
       </div>
     </section>

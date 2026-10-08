@@ -30,7 +30,7 @@ export function PrivacySettings({ initialVisible }: { initialVisible: boolean })
 
   return (
     <section className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-5 md:p-6">
-      <h2 className="text-sm font-bold uppercase tracking-wider text-bq-ink inline-flex items-center gap-2 mb-4">
+      <h2 className="font-display text-[19px] font-extrabold text-bq-ink inline-flex items-center gap-2 mb-4">
         <span className="material-symbols-outlined text-[18px] text-bq-amberd" style={FILL_STYLE}>shield_person</span>
         {t('profile.privacyTitle')}
       </h2>

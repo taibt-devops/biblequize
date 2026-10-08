@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { api } from '../api/client'
 import { useAuth } from '../store/authStore'
+import { getTierByPoints, getNextTier } from '../data/tiers'
+import { PlaceBackdrop, Plaque, lkClass } from '../components/lk/Place'
+import { TierRibbon } from '../components/lk/PlayerCrest'
+import { achievementIcon } from '../utils/achievementIcon'
 
 // --- Types ---
 
@@ -15,43 +19,6 @@ interface Achievement {
   points: number
   unlockedAt?: string
   isNotified?: boolean
-}
-
-// --- Tier System ---
-
-interface TierInfo {
-  name: string
-  icon: string
-  color: string
-  bgColor: string
-  textColor: string
-  borderColor: string
-  minPoints: number
-}
-
-const TIERS: TierInfo[] = [
-  { name: 'newBeliever', icon: 'person', color: '#6B5530', bgColor: 'bg-bq-inset', textColor: 'text-bq-ink3', borderColor: 'border-bq-hair', minPoints: 0 },
-  { name: 'seeker', icon: 'search', color: '#2E7D4F', bgColor: 'bg-bq-emerald/10', textColor: 'text-bq-emerald', borderColor: 'border-bq-emerald/30', minPoints: 500 },
-  { name: 'disciple', icon: 'school', color: '#2F6FB0', bgColor: 'bg-bq-sapphire/10', textColor: 'text-bq-sapphire', borderColor: 'border-bq-sapphire/30', minPoints: 1500 },
-  { name: 'sage', icon: 'psychology', color: '#2F6FB0', bgColor: 'bg-bq-sapphire/10', textColor: 'text-bq-sapphire', borderColor: 'border-bq-sapphire/30', minPoints: 4000 },
-  { name: 'prophet', icon: 'auto_awesome', color: '#F59E0B', bgColor: 'bg-bq-amber/10', textColor: 'text-bq-amberd', borderColor: 'border-bq-amber/30', minPoints: 8000 },
-  { name: 'apostle', icon: 'local_fire_department', color: '#B3452F', bgColor: 'bg-bq-ruby/10', textColor: 'text-bq-ruby', borderColor: 'border-bq-ruby/30', minPoints: 15000 },
-]
-
-function getCurrentTier(points: number): { current: TierInfo; next: TierInfo | null; progress: number } {
-  let currentIdx = 0
-  for (let i = TIERS.length - 1; i >= 0; i--) {
-    if (points >= TIERS[i].minPoints) {
-      currentIdx = i
-      break
-    }
-  }
-  const current = TIERS[currentIdx]
-  const next = currentIdx < TIERS.length - 1 ? TIERS[currentIdx + 1] : null
-  const progress = next
-    ? ((points - current.minPoints) / (next.minPoints - current.minPoints)) * 100
-    : 100
-  return { current, next, progress: Math.min(progress, 100) }
 }
 
 // --- Category Helpers ---
@@ -119,7 +86,10 @@ const Achievements: React.FC = () => {
     .filter(a => a.unlockedAt)
     .reduce((sum, a) => sum + (a.points || 0), 0)
 
-  const tierData = getCurrentTier(stats.totalPoints || totalPoints)
+  const xp = stats.totalPoints || totalPoints
+  const tier = getTierByPoints(xp)
+  const nextTier = getNextTier(xp)
+  const tierPct = nextTier ? Math.min(100, ((xp - tier.minPoints) / (nextTier.minPoints - tier.minPoints)) * 100) : 100
 
   // Deduce visible category keys from actual data
   const visibleCategoryKeys = new Set(achievements.map(a => a.category))
@@ -145,23 +115,13 @@ const Achievements: React.FC = () => {
 
   if (!user) {
     return (
-      <div className="flex items-center justify-center py-24">
-        <div className="text-center">
-          <span className="material-symbols-outlined text-6xl text-bq-ink2 mb-4 block" style={FILL_STYLE}>
-            lock
-          </span>
-          <h2 className="text-2xl font-bold mb-4 text-bq-ink">
-            {t('achievements.loginRequired')}
-          </h2>
-          <p className="text-bq-ink2 mb-8">
-            {t('achievements.loginDescription')}
-          </p>
-          <Link
-            to="/login"
-            className="px-6 py-3 rounded-xl font-bold bg-bq-action text-bq-ink shadow-bq-action inline-block"
-          >
-            {t('auth.login')}
-          </Link>
+      <div className="relative flex items-center justify-center py-20 px-4">
+        <PlaceBackdrop place="camp" veil="strong" />
+        <div className="max-w-sm w-full p-7 text-center bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card">
+          <img src="/images/lk/hero-rest.webp" alt="" aria-hidden className="mx-auto h-28 mb-2" />
+          <h2 className="m-0 mb-2 font-display text-[22px] font-extrabold text-bq-ink">{t('achievements.loginRequired')}</h2>
+          <p className="m-0 mb-5 font-read text-[15px] text-bq-ink2">{t('achievements.loginDescription')}</p>
+          <Link to="/login" className="lk-btn text-bq-ink text-[16px] no-underline">{t('auth.login')}</Link>
         </div>
       </div>
     )
@@ -171,63 +131,52 @@ const Achievements: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="flex flex-col items-center justify-center py-24 gap-4">
-        <div className="w-12 h-12 border-4 border-bq-hair border-t-bq-amberd rounded-full animate-spin" />
-        <p className="text-bq-ink2 font-medium">{t('achievements.loading')}</p>
+      <div className="relative flex flex-col items-center justify-center py-24 gap-4">
+        <PlaceBackdrop place="camp" veil="strong" />
+        <img src="/images/lk/lantern-on.webp" alt="" aria-hidden className={`h-16 ${lkClass.bob}`} />
+        <p className="m-0 font-bold text-bq-ink2">{t('achievements.loading')}</p>
       </div>
     )
   }
 
   return (
-    <>
-      {/* -- Header -------------------------------------------------- */}
-      <header className="mb-12">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-          <div>
-            <h1 className="font-display text-4xl font-black tracking-tight text-bq-ink mb-2">
-              {t('achievements.title')}
-            </h1>
-            <p className="text-bq-ink2 flex items-center gap-2">
-              <span
-                className="material-symbols-outlined text-bq-amberd text-sm"
-                style={FILL_STYLE}
-              >
-                stars
-              </span>
-              {earnedCount}/{achievements.length} {t('achievements.unlocked')}
-            </p>
+    <div className="relative max-w-6xl mx-auto">
+      <PlaceBackdrop place="camp" veil="strong" />
+      {/* title + overall progress */}
+      <header className="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-5">
+        <div className="space-y-3">
+          <Plaque className="text-[30px] md:text-[38px]">
+            <img src="/images/lk/icon-trophy.webp" alt="" aria-hidden className="h-[1em]" />
+            {t('achievements.title')}
+          </Plaque>
+          <p className="m-0 w-fit px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-full text-[15px] font-extrabold">
+            ★ {earnedCount}/{achievements.length} {t('achievements.unlocked')}
+          </p>
+        </div>
+        <div className="w-full md:w-80 px-4 py-3 bg-bq-white border-[3px] border-bq-ink rounded-2xl shadow-[0_4px_0_#1D2B22]">
+          <div className="flex justify-between text-[14px] font-extrabold mb-2">
+            <span>{t('achievements.overallProgress')}</span>
+            <span className="tabular-nums">{overallProgress}%</span>
           </div>
-          <div className="w-full md:w-72">
-            <div className="flex justify-between text-xs font-bold uppercase tracking-wider mb-2 text-bq-ink2">
-              <span>{t('achievements.overallProgress')}</span>
-              <span className="text-bq-amberd">{overallProgress}%</span>
-            </div>
-            <div className="h-3 w-full bg-bq-inset rounded-full overflow-hidden">
-              <div
-                className="h-full bg-bq-action rounded-full transition-all duration-700"
-                style={{ width: `${overallProgress}%` }}
-              />
-            </div>
+          <div className="h-4 w-full bg-bq-track border-2 border-bq-ink rounded-full overflow-hidden">
+            <div className="h-full bg-bq-amber transition-all duration-700" style={{ width: `${overallProgress}%` }} />
           </div>
         </div>
       </header>
 
-      {/* -- Main Grid Layout ---------------------------------------- */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-        {/* Left Column: Content */}
-        <div className="md:col-span-8 lg:col-span-9 space-y-10">
-          {/* Filter Tabs */}
-          <div className="flex flex-wrap gap-2 pb-2 border-b border-bq-hair">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-7">
+        <div className="md:col-span-8 lg:col-span-9 space-y-6">
+          {/* category filter */}
+          <div className="flex flex-wrap gap-2">
             {visibleCategories.map((cat) => {
               const isActive = activeTab === cat.key
               return (
                 <button
                   key={cat.key}
                   onClick={() => setActiveTab(cat.key)}
-                  className={`px-5 py-2 rounded-full text-sm whitespace-nowrap transition-colors ${
-                    isActive
-                      ? 'font-bold bg-bq-amber text-bq-ink'
-                      : 'font-medium text-bq-ink2 hover:bg-bq-inset'
+                  aria-pressed={isActive}
+                  className={`px-4 py-1.5 rounded-full border-2 text-[14px] font-extrabold whitespace-nowrap transition-colors ${
+                    isActive ? 'bg-bq-amber border-bq-ink text-bq-ink' : 'bg-bq-white/90 border-bq-ink/25 text-bq-ink2 hover:border-bq-ink'
                   }`}
                 >
                   {t(cat.labelKey)}
@@ -236,102 +185,47 @@ const Achievements: React.FC = () => {
             })}
           </div>
 
-          {/* Achievement Cards Grid */}
           {filteredAchievements.length === 0 ? (
-            <div className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-3xl p-16 text-center">
-              <span className="material-symbols-outlined text-6xl text-bq-ink3 mb-4 block">
-                emoji_events
-              </span>
-              <h3 className="text-xl font-bold text-bq-ink mb-2">{t('achievements.noAchievements')}</h3>
-              <p className="text-bq-ink2">
-                {t('achievements.playToUnlock')}
-              </p>
+            <div className="bg-bq-white border-[3px] border-bq-ink shadow-bq-card rounded-bq p-10 text-center">
+              <img src="/images/lk/hero.webp" alt="" aria-hidden className="mx-auto h-28 mb-3" />
+              <h3 className="m-0 mb-1 font-display text-[22px] font-extrabold text-bq-ink">{t('achievements.noAchievements')}</h3>
+              <p className="m-0 font-read text-[15px] text-bq-ink2">{t('achievements.playToUnlock')}</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {filteredAchievements.map((achievement) => {
                 const isUnlocked = !!achievement.unlockedAt
-                const catMeta = getCategoryMeta(achievement.category)
-
-                if (isUnlocked) {
-                  return (
-                    <div
-                      key={achievement.id}
-                      className="bg-bq-white p-6 rounded-xl border border-bq-amber/30 shadow-bq-amb relative overflow-hidden group"
-                    >
-                      {/* Glow orb */}
-                      <div className="absolute -right-4 -top-4 w-24 h-24 bg-bq-amber/10 rounded-full blur-2xl group-hover:bg-bq-amber/20 transition-colors" />
-
-                      {/* Top row: icon + status */}
-                      <div className="flex items-start justify-between mb-4">
-                        <div className="w-14 h-14 rounded-full bg-bq-action flex items-center justify-center shadow-bq-action">
-                          <span
-                            className="material-symbols-outlined text-white text-3xl"
-                            style={FILL_STYLE}
-                          >
-                            {achievement.icon || catMeta.icon}
-                          </span>
-                        </div>
-                        <span className="text-[10px] font-bold uppercase tracking-widest text-bq-amberd bg-bq-amber/10 px-2 py-1 rounded">
-                          {t('achievements.unlocked')}
-                        </span>
-                      </div>
-
-                      {/* Name & description */}
-                      <h3 className="text-lg font-bold text-bq-ink mb-1">
-                        {achievement.name}
-                      </h3>
-                      <p className="text-sm text-bq-ink2 leading-relaxed mb-4">
-                        {achievement.description}
-                      </p>
-
-                      {/* Footer: date */}
-                      <div className="pt-4 border-t border-bq-hair flex items-center gap-2">
-                        <span className="material-symbols-outlined text-xs text-bq-ink2">
-                          calendar_today
-                        </span>
-                        <span className="text-[11px] text-bq-ink2 font-medium">
-                          {t('achievements.earnedOn', { date: new Date(achievement.unlockedAt!).toLocaleDateString('vi-VN') })}
-                        </span>
-                      </div>
-                    </div>
-                  )
-                }
-
-                // Locked card
+                const icon = achievementIcon(achievement.icon, getCategoryMeta(achievement.category).icon)
                 return (
                   <div
                     key={achievement.id}
-                    className="bg-bq-inset p-6 rounded-xl border border-bq-hair opacity-80 grayscale relative overflow-hidden"
+                    className={`relative p-5 rounded-2xl border-[3px] ${
+                      isUnlocked ? 'bg-bq-cream border-bq-ink shadow-[0_5px_0_#1D2B22]' : 'bg-bq-paper/95 border-dashed border-bq-ink/30'
+                    }`}
                   >
-                    {/* Top row: icon + lock */}
-                    <div className="flex items-start justify-between mb-4">
-                      <div className="w-14 h-14 rounded-full bg-bq-white border border-bq-hair flex items-center justify-center">
-                        <span className="material-symbols-outlined text-bq-ink3 text-3xl">
-                          {achievement.icon || catMeta.icon}
+                    <div className="flex items-start justify-between mb-3">
+                      <span
+                        className={isUnlocked ? lkClass.medal : 'grid place-items-center rounded-full border-[3px] border-bq-ink/25 bg-bq-inset'}
+                        style={{ width: 58, height: 58 }}
+                      >
+                        <span className={`material-symbols-outlined text-[30px] ${isUnlocked ? 'text-bq-amberd' : 'text-bq-ink3'}`} style={isUnlocked ? FILL_STYLE : undefined}>
+                          {icon}
                         </span>
-                      </div>
-                      <span className="material-symbols-outlined text-bq-ink3 text-sm">
-                        lock
                       </span>
+                      {isUnlocked ? (
+                        <span className="px-2.5 py-0.5 rounded-full bg-bq-leaf border-2 border-bq-ink text-[12px] font-extrabold">✓ {t('achievements.unlocked')}</span>
+                      ) : (
+                        <span className="w-7 h-7 grid place-items-center rounded-full bg-bq-white border-2 border-bq-ink/30">
+                          <span className="material-symbols-outlined text-[15px] text-bq-ink3">lock</span>
+                        </span>
+                      )}
                     </div>
-
-                    {/* Name & description */}
-                    <h3 className="text-lg font-bold text-bq-ink2 mb-1">
-                      {achievement.name}
-                    </h3>
-                    <p className="text-sm text-bq-ink3 leading-relaxed mb-4">
-                      {achievement.description}
-                    </p>
-
-                    {/* Footer: progress bar */}
-                    <div className="pt-4 border-t border-bq-hair">
-                      <div className="h-1.5 w-full bg-bq-white rounded-full overflow-hidden">
-                        <div className="h-full bg-bq-ink3 rounded-full" style={{ width: '0%' }} />
-                      </div>
-                      <p className="text-[10px] text-bq-ink3 font-medium mt-2">
-                        {t('achievements.locked')}
-                      </p>
+                    <h3 className={`m-0 mb-1 font-display text-[18px] font-extrabold ${isUnlocked ? 'text-bq-ink' : 'text-bq-ink2'}`}>{achievement.name}</h3>
+                    <p className={`m-0 font-read text-[14px] leading-relaxed ${isUnlocked ? 'text-bq-ink2' : 'text-bq-ink3'}`}>{achievement.description}</p>
+                    <div className="mt-3 pt-3 border-t-2 border-dashed border-bq-hair text-[12.5px] font-bold text-bq-ink2">
+                      {isUnlocked
+                        ? t('achievements.earnedOn', { date: new Date(achievement.unlockedAt!).toLocaleDateString('vi-VN') })
+                        : t('achievements.locked')}
                     </div>
                   </div>
                 )
@@ -340,140 +234,76 @@ const Achievements: React.FC = () => {
           )}
         </div>
 
-        {/* Right Column: Sidebar Stats */}
-        <aside className="md:col-span-4 lg:col-span-3 space-y-8">
-          {/* Recently Unlocked */}
-          <section className="bg-bq-white border border-bq-hair shadow-bq-soft p-6 rounded-2xl">
-            <h2 className="text-lg font-bold text-bq-ink mb-6 flex items-center gap-2">
-              {t('achievements.recentlyEarned')}
-            </h2>
-            <div className="space-y-6">
+        <aside className="md:col-span-4 lg:col-span-3 space-y-5">
+          {/* recently earned */}
+          <section className="bg-bq-white border-[3px] border-bq-ink shadow-bq-card p-5 rounded-2xl">
+            <h2 className="m-0 mb-4 font-display text-[19px] font-extrabold text-bq-ink">{t('achievements.recentlyEarned')}</h2>
+            <div className="space-y-4">
               {recentUnlocked.length === 0 ? (
-                <p className="text-sm text-bq-ink2">{t('achievements.noAchievements')}</p>
+                <p className="m-0 font-read text-[14px] text-bq-ink2">{t('achievements.noAchievements')}</p>
               ) : (
-                recentUnlocked.map((a) => {
-                  const catMeta = getCategoryMeta(a.category)
-                  return (
-                    <div key={a.id} className="flex items-center gap-4 group">
-                      <div className="w-12 h-12 rounded-xl bg-bq-action flex-shrink-0 flex items-center justify-center shadow-bq-action">
-                        <span
-                          className="material-symbols-outlined text-white text-2xl"
-                          style={FILL_STYLE}
-                        >
-                          {a.icon || catMeta.icon}
-                        </span>
-                      </div>
-                      <div>
-                        <p className="text-sm font-bold text-bq-ink group-hover:text-bq-amberd transition-colors">
-                          {a.name}
-                        </p>
-                        <p className="text-[11px] text-bq-ink2">
-                          {a.description}
-                        </p>
-                      </div>
+                recentUnlocked.map((a) => (
+                  <div key={a.id} className="flex items-center gap-3">
+                    <span className={lkClass.medal} style={{ width: 44, height: 44 }}>
+                      <span className="material-symbols-outlined text-[22px] text-bq-amberd" style={FILL_STYLE}>
+                        {achievementIcon(a.icon, getCategoryMeta(a.category).icon)}
+                      </span>
+                    </span>
+                    <div className="min-w-0 pl-1">
+                      <p className="m-0 text-[14px] font-extrabold text-bq-ink">{a.name}</p>
+                      <p className="m-0 text-[12px] font-bold text-bq-ink2 truncate">{a.description}</p>
                     </div>
-                  )
-                })
+                  </div>
+                ))
               )}
             </div>
-            <button className="w-full mt-8 py-3 rounded-xl border border-bq-hair text-xs font-bold text-bq-ink2 hover:bg-bq-inset hover:text-bq-ink transition-all">
-              {t('achievements.viewAllHistory')}
-            </button>
           </section>
 
-          {/* Gamification Summary / Season Stats */}
-          <section className="bg-bq-white border border-bq-hair shadow-bq-soft p-6 rounded-2xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 p-2 opacity-5">
-              <span className="material-symbols-outlined text-8xl">trophy</span>
-            </div>
-            <h3 className="text-xs font-black uppercase tracking-widest text-bq-amberd mb-4">
-              {t('achievements.seasonStats')}
-            </h3>
-            <div className="space-y-4">
-              <div className="flex justify-between items-center">
-                <span className="text-sm text-bq-ink2">{t('achievements.currentRank')}</span>
-                <span className="text-sm font-bold text-bq-ink">
-                  {t(`tiers.${tierData.current.name}`)}
-                </span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-sm text-bq-ink2">{t('achievements.experiencePoints')}</span>
-                <span className="text-sm font-bold text-bq-ink">
-                  {((stats.totalPoints ?? totalPoints) ?? 0).toLocaleString()} XP
-                </span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-sm text-bq-ink2">{t('achievements.accuracy')}</span>
-                <span className="text-sm font-bold text-bq-ink">
-                  {stats.accuracy || 0}%
-                </span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-sm text-bq-ink2">{t('achievements.longestStreak')}</span>
-                <span className="text-sm font-bold text-bq-ink">
-                  {stats.longestStreak || 0} {t('common.days')}
-                </span>
-              </div>
+          {/* season numbers */}
+          <section className="bg-bq-white border-[3px] border-bq-ink shadow-bq-card p-5 rounded-2xl">
+            <h3 className="m-0 mb-3 font-display text-[19px] font-extrabold text-bq-ink">{t('achievements.seasonStats')}</h3>
+            <div className="divide-y-2 divide-dashed divide-bq-hair">
+              {[
+                [t('achievements.currentRank'), <TierRibbon key="r" tierId={tier.id} />],
+                [t('achievements.experiencePoints'), `${xp.toLocaleString()} XP`],
+                [t('achievements.accuracy'), `${stats.accuracy || 0}%`],
+                [t('achievements.longestStreak'), `${stats.longestStreak || 0} ${t('common.days')}`],
+              ].map(([label, value], i) => (
+                <div key={i} className="flex justify-between items-center gap-2 py-2">
+                  <span className="text-[13.5px] font-bold text-bq-ink2">{label}</span>
+                  <span className="text-[14px] font-extrabold text-bq-ink">{value}</span>
+                </div>
+              ))}
             </div>
           </section>
 
-          {/* Tier Progress (compact sidebar version) */}
-          <section className={`bg-bq-white shadow-bq-soft p-6 rounded-2xl border ${tierData.current.borderColor}`}>
-            <div className="flex items-center gap-4 mb-4">
-              <div className={`w-14 h-14 rounded-xl ${tierData.current.bgColor} flex items-center justify-center`}>
-                <span
-                  className={`material-symbols-outlined text-3xl ${tierData.current.textColor}`}
-                  style={FILL_STYLE}
-                >
-                  {tierData.current.icon}
-                </span>
-              </div>
+          {/* tier road */}
+          <section className="bg-bq-cream border-[3px] border-bq-ink shadow-bq-card p-5 rounded-2xl">
+            <div className="flex items-center gap-3 mb-3">
+              <img src={`/images/lk/tier-${tier.id}.webp`} alt="" aria-hidden className="w-14 shrink-0" />
               <div>
-                <p className="text-sm font-black text-bq-ink">{t(`tiers.${tierData.current.name}`)}</p>
-                {tierData.next && (
-                  <p className="text-[11px] text-bq-ink2">
-                    {t('achievements.nextTier')}: {t(`tiers.${tierData.next.name}`)}
-                  </p>
+                <p className="m-0 font-display text-[18px] font-extrabold text-bq-ink">{t(tier.nameKey)}</p>
+                {nextTier && (
+                  <p className="m-0 text-[12.5px] font-bold text-bq-ink2">{t('achievements.nextTier')}: {t(nextTier.nameKey)}</p>
                 )}
               </div>
             </div>
-            {tierData.next ? (
+            {nextTier ? (
               <>
-                <div className="h-2 w-full bg-bq-inset rounded-full overflow-hidden mb-2">
-                  <div
-                    className="h-full rounded-full transition-all duration-700 ease-out"
-                    style={{
-                      width: `${tierData.progress}%`,
-                      background: `linear-gradient(135deg, ${tierData.current.color} 0%, ${tierData.next.color} 100%)`,
-                    }}
-                  />
+                <div className="h-3.5 w-full bg-bq-track border-2 border-bq-ink rounded-full overflow-hidden mb-1.5">
+                  <div className="h-full bg-bq-amber transition-all duration-700 ease-out" style={{ width: `${tierPct}%` }} />
                 </div>
-                <p className="text-[10px] text-bq-ink2 font-medium">
-                  {stats.totalPoints || totalPoints} / {tierData.next.minPoints} {t('achievements.pointsUnit')}
+                <p className="m-0 text-[12.5px] font-bold text-bq-ink2 tabular-nums">
+                  {xp.toLocaleString()} / {nextTier.minPoints.toLocaleString()} {t('achievements.pointsUnit')}
                 </p>
               </>
             ) : (
-              <p className="text-[11px] text-bq-ink2 italic">
-                {t('achievements.maxTier')}
-              </p>
+              <p className="m-0 text-[13px] font-bold text-bq-ink2">{t('achievements.maxTier')}</p>
             )}
           </section>
-
-          {/* Promotional Event Banner */}
-          <div className="rounded-2xl overflow-hidden h-48 relative group cursor-pointer shadow-bq-soft">
-            <div className="w-full h-full bg-bq-flame" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-5">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-bq-amber mb-1">
-                {t('achievements.specialEvent')}
-              </p>
-              <h4 className="text-sm font-bold text-white leading-tight">
-                {t('achievements.unlockLimitedBadge')}
-              </h4>
-            </div>
-          </div>
         </aside>
       </div>
-    </>
+    </div>
   )
 }
 

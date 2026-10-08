@@ -18,6 +18,15 @@ const RIM: Record<number, string> = {
   5: 'linear-gradient(150deg,#FFF1B0 0%,#FFC93C 35%,#C98A12 70%,#FFE27A 100%)',
   6: 'conic-gradient(from 210deg,#FFE27A,#FFC93C,#E07A3C,#FFC93C,#FFF4C2,#FFC93C,#FFE27A)',
 }
+// Equipped cosmetic frames (frame_tier1..6) keep the colours their names promise.
+const FRAME_RIM: Record<number, string> = {
+  1: 'linear-gradient(150deg,#F1F3F5 0%,#AEB5BB 45%,#7D858C 100%)',
+  2: 'linear-gradient(150deg,#E6F7DA 0%,#A5DB92 45%,#5E9E57 100%)',
+  3: 'linear-gradient(150deg,#CDE6FF 0%,#5B9BD8 45%,#2F5F98 100%)',
+  4: 'linear-gradient(150deg,#E2CCF5 0%,#9B6AC8 45%,#E07A3C 100%)',
+  5: 'conic-gradient(from 200deg,#FFF4C2,#FFC93C,#C98A12,#FFE27A,#FFF4C2,#FFC93C,#FFF4C2)',
+  6: 'linear-gradient(150deg,#FFE27A 0%,#E0A42A 40%,#B3452F 100%)',
+}
 const RIVET: Record<number, string> = { 1: '#5A3618', 2: '#3A230E', 3: '#5A3618', 4: '#5E676D', 5: '#8F5A0A', 6: '#B3452F' }
 const RIBBON: Record<number, string> = { 1: '#EBDDBE', 2: '#D9F0C8', 3: '#CFE6F7', 4: '#E8DBF5', 5: '#FFE08A', 6: '#FFD2B8' }
 const PORTRAIT = ['#D9F0C8', '#CFE6F7', '#FFE0A3', '#F9D2C5', '#E6D9F2', '#F3E3C0', '#CDEBE3']
@@ -36,10 +45,12 @@ interface PlayerCrestProps {
   size?: number
   /** pin the tier medallion (off for tiny avatars) */
   showTier?: boolean
+  /** equipped cosmetic frame 1..6: its colour replaces the tier material */
+  frame?: number | null
   className?: string
 }
 
-export function PlayerCrest({ name, avatarUrl, tierId, size = 44, showTier = true, className = '' }: PlayerCrestProps) {
+export function PlayerCrest({ name, avatarUrl, tierId, size = 44, showTier = true, frame = null, className = '' }: PlayerCrestProps) {
   const { t } = useTranslation()
   const tier = Math.min(6, Math.max(1, tierId))
   const rim = Math.max(4, Math.round(size * 0.13))
@@ -52,8 +63,8 @@ export function PlayerCrest({ name, avatarUrl, tierId, size = 44, showTier = tru
   return (
     <span className={`relative inline-block shrink-0 ${className}`} style={{ width: size, height: size }}>
       <span
-        className={`${k.crest} ${tier >= 5 ? k.crestShine : ''} ${tier === 6 ? k.crestRadiant : ''}`}
-        style={{ background: RIM[tier], padding: rim, borderWidth: border }}
+        className={`${k.crest} ${(frame ?? tier) >= 5 ? k.crestShine : ''} ${(frame ?? tier) === 6 ? k.crestRadiant : ''}`}
+        style={{ background: frame ? FRAME_RIM[Math.min(6, Math.max(1, frame))] : RIM[tier], padding: rim, borderWidth: border }}
       >
         <span className="block w-full h-full rounded-full overflow-hidden border-2 border-bq-ink/80">
           {resolved.kind === 'img' ? (
