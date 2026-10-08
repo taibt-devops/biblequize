@@ -3,12 +3,13 @@
 > Task tracker. Active TODOs ở dưới. DONE/SUPERSEDED đã chuyển sang [`docs/todo/archive/`](docs/todo/archive/).
 > Format mỗi task file theo template CLAUDE.md §Quy trình quản lý Task.
 
-## Active (28)
+## Active (29)
 
 > Dọn 2026-06-22: 23 task ghi "TODO/DONE" nhưng đã verify hoàn thành → archive (xem git log + Archive bên dưới). Bảng này giờ chỉ còn việc THỰC SỰ đang mở.
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
+| 2026-10-08 | Đấu Hạng: rút câu cả Kinh Thánh theo vòng sách quen thuộc theo bậc, tối đa 3 câu/sách, Hành trình thành sưu tầm (RFR-1..4) | IN PROGRESS | [detail](docs/todo/active/2026-10-08-ranked-familiarity-rings.md) |
 | 2026-10-08 | Đổi giao diện toàn app sang phong cách Lữ Khách — token, font, component, Quiz, Home, Hành trình 8 vùng, admin (LKD-0..21) | DONE (merge vào main) | [detail](docs/todo/active/2026-10-08-lu-khach-redesign.md) |
 | 2026-10-08 | Lữ Khách: mọi màn là một địa điểm — khung app, Trang chủ cảnh game, Quiz, Kết quả, Hành trình, toàn bộ màn người dùng, huy hiệu người chơi (LKF-1..20) | DONE (merge vào main; giao diện cũ giữ ở nhánh `ui-v1`) | [detail](docs/todo/active/2026-10-08-lu-khach-fidelity.md) |
 | 2026-09-15 | Học Thuộc: nạp Bản Truyền Thống 1926 (public domain, eBible vie1934) + bật tính năng trên prod (BT-1..5) | DONE | [detail](docs/todo/active/2026-09-15-memorize-btt1926.md) |

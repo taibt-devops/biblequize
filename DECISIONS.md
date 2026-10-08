@@ -2,6 +2,23 @@
 
 ---
 
+## 2026-10-08 — Đấu Hạng: rút câu từ cả Kinh Thánh theo độ quen thuộc của sách (bỏ hành trình tuần tự)
+
+- **Bối cảnh:** Option C (2026-06-24) lấy ~70% câu mỗi trận từ "sách hành trình" đi lần lượt Sáng Thế Ký → Khải Huyền. Người mới gặp Lê-vi Ký, Dân Số Ký ngay sách thứ 3–4, và hai người cùng bậc gặp độ khó rất khác nhau tuỳ đang đứng ở sách nào. Cùng ngày đo prod thấy nhãn Dễ sai (câu Dễ 50% đúng, câu Trung bình 66%); phần này xử lý riêng bằng bộ "Dễ cốt lõi" (`content/easy-core/`).
+- **Quyết định (user chốt 08/10):**
+  - Bỏ thứ tự sách. Mỗi trận rút câu từ cả Kinh Thánh, theo 3 vòng sách mở dần theo bậc (`RankedBookPool`):
+    - bậc 1–2: 18 sách quen thuộc;
+    - bậc 3–4: thêm 22 sách hay nghe giảng;
+    - bậc 5–6: cả 66 sách.
+  - Vòng hẹp không đủ câu thì nới sang vòng kế.
+  - Mỗi trận tối đa **3 câu cùng một sách**.
+  - "Hành trình 66 sách" thành **sưu tầm**: không còn sách hiện tại tự chuyển. Huy hiệu Học Giả (`scholar_10`) đếm số sách đã trả lời đủ ~25% số câu, theo thứ tự nào cũng được (giữ công thức `rankedBookSampleTarget`).
+  - Giữ tỷ lệ Dễ/Trung bình/Khó theo bậc (SPEC_USER §3.2). Hiệu chỉnh lại sau khi có bộ Dễ mới; đích ~80% đúng ở bậc 1, ~60% ở bậc 6.
+- **Thay:** Option C ngày 2026-06-24. **Giữ nguyên:** loại 80 câu vừa gặp (RWP-2), nhánh Liturgical Coverage (cờ đang tắt trên prod), cách chấm điểm.
+- **Implementation:** task `docs/todo/active/2026-10-08-ranked-familiarity-rings.md` (RFR-1..4).
+
+---
+
 ## 2026-10-08 — Đổi design system "Khung Sáng" → "Lữ Khách" cho toàn bộ app
 
 - **Bối cảnh:** user làm game **Lữ Khách** (học thuộc câu gốc theo Thiên Lộ Lịch Trình, repo `taibt-devops/lu-khach`) và muốn BibleQuiz chung một thế giới hình ảnh với game. Mockup đã duyệt 2026-10-08: canvas "BibleQuiz × Lữ Khách" (https://claude.ai/artifact/PGPt4eys2jWJiKPjNRu4dQ) — Trang chủ, Quiz, Hành trình 66 sách, bộ giao diện, 2 màn điện thoại.
