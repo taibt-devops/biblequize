@@ -9,6 +9,7 @@ import GroupCodeModal from '../components/group/GroupCodeModal';
 import QuizSetCard from '../components/group/QuizSetCard';
 import QuizSetListCard from '../components/group/QuizSetListCard';
 import type { QuizSet as ApiQuizSet, PublishStatus, QuizSetDifficulty } from '../api/quizSets';
+import { PlaceBackdrop } from '../components/lk/Place';
 import { resolveAvatar } from '../utils/avatar';
 
 interface Member {
@@ -645,7 +646,8 @@ const GroupDetail: React.FC = () => {
   };
 
   return (
-    <div className="relative pb-12 max-w-5xl mx-auto px-4 lg:px-6 pt-4 sm:pt-6 bg-bq-paper" data-testid="group-detail-page">
+    <div className="relative pb-12 max-w-5xl mx-auto px-4 lg:px-6 pt-4 sm:pt-6" data-testid="group-detail-page">
+      <PlaceBackdrop place="chapel" veil="strong" />
 
       {/* ── App bar: back + 3-dot menu (mockup 2026-05-20) ── */}
       <div className="flex items-center justify-between mb-3" data-testid="group-detail-appbar">
@@ -796,16 +798,16 @@ const GroupDetail: React.FC = () => {
         {/* Invite code row — full-width on mobile, embedded in header card */}
         <div
           data-testid="group-code-pill"
-          className="mt-3 inline-flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-bq-inset border border-bq-hair hover:border-bq-ink3/40 transition-colors w-full sm:w-auto"
+          className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-bq-cream border-2 border-bq-ink w-full sm:w-auto"
         >
-          <span className="text-[12px] text-bq-ink3 font-semibold whitespace-nowrap">
+          <span className="text-[13px] text-bq-ink2 font-bold whitespace-nowrap">
             {t('groups.groupCodeLabel')}
           </span>
           <button
             data-testid="group-join-code"
             onClick={handleCopyCode}
             title={t('groups.copyCodeTooltip', { defaultValue: 'Click to copy invite code' })}
-            className="font-mono italic text-bq-amberd text-[13px] flex-1 sm:flex-none text-left hover:opacity-80 transition-opacity"
+            className="font-display font-extrabold tracking-[0.12em] text-bq-ink text-[17px] flex-1 sm:flex-none text-left hover:opacity-80 transition-opacity"
           >
             {copied ? t('groups.copied') : group.code}
           </button>
@@ -855,7 +857,7 @@ const GroupDetail: React.FC = () => {
           ...(isLeaderOrMod ? [{ key: 'quizsets' as TabKey, label: t('groups.quizSetsTab'), count: quizSetsCount, leaderOnly: true }] : []),
         ];
         return (
-          <nav className="flex flex-nowrap items-center justify-between gap-x-2 sm:gap-x-6 sm:justify-start border-b border-bq-hair mb-4 whitespace-nowrap overflow-x-auto">
+          <nav className="flex flex-nowrap items-center gap-1.5 sm:gap-2 mb-4 whitespace-nowrap overflow-x-auto p-1.5 bg-bq-white/90 border-[3px] border-bq-ink rounded-full w-fit max-w-full">
             {TABS.map(tab => {
               const active = activeTab === tab.key;
               return (
@@ -863,20 +865,21 @@ const GroupDetail: React.FC = () => {
                   key={tab.key}
                   onClick={() => handleTabChange(tab.key)}
                   data-testid={`group-tab-${tab.key}`}
-                  className={`pb-2.5 px-0.5 sm:px-1 text-[11px] sm:text-[12px] font-medium sm:tracking-wide transition-colors inline-flex items-center gap-1 sm:gap-1.5 ${
+                  aria-pressed={active}
+                  className={`px-3 sm:px-4 py-1.5 rounded-full border-2 text-[13px] sm:text-[14px] font-extrabold transition-colors inline-flex items-center gap-1.5 ${
                     active
-                      ? 'text-bq-amberd border-b-2 border-bq-amberd'
-                      : 'text-bq-ink2 hover:text-bq-ink'
+                      ? 'bg-bq-amber border-bq-ink text-bq-ink'
+                      : 'border-transparent text-bq-ink2 hover:bg-bq-cream'
                   }`}
                 >
                   <span>{tab.label}</span>
                   {tab.count !== undefined && tab.count > 0 && (
                     <span
                       data-testid={`group-tab-${tab.key}-count`}
-                      className={`text-[10px] px-1.5 py-0.5 rounded-full leading-none ${
+                      className={`text-[11.5px] px-1.5 py-0.5 rounded-full leading-none border ${
                         active
-                          ? 'bg-bq-amber/20 text-bq-amberd'
-                          : 'bg-bq-inset text-bq-ink2'
+                          ? 'bg-bq-white border-bq-ink text-bq-ink'
+                          : 'bg-bq-paper border-bq-ink/25 text-bq-ink2'
                       }`}
                     >
                       {tab.count}

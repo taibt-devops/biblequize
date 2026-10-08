@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { PlaceBackdrop } from '../components/lk/Place'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useQuery } from '@tanstack/react-query'
@@ -73,7 +74,8 @@ const CreateJourney: React.FC<{ groupId: string; navigate: ReturnType<typeof use
   }
 
   return (
-    <div className="min-h-screen bg-bq-paper text-bq-ink px-4 py-6 max-w-3xl mx-auto" data-testid="journey-builder-create">
+    <div className="relative min-h-screen text-bq-ink px-4 py-6 max-w-3xl mx-auto" data-testid="journey-builder-create">
+      <PlaceBackdrop place="chapel" veil="strong" />
       <Header groupId={groupId} navigate={navigate} title={t('groupJourney.createTitle')} subtitle={t('groupJourney.createSubtitle')} />
       <form onSubmit={submit} className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-5 space-y-4">
         <div>
@@ -158,7 +160,8 @@ const BuildWeeks: React.FC<{ groupId: string; journeyId: string; navigate: Retur
   }
 
   return (
-    <div className="min-h-screen bg-bq-paper text-bq-ink px-4 py-6 max-w-3xl mx-auto" data-testid="journey-builder-weeks">
+    <div className="relative min-h-screen text-bq-ink px-4 py-6 max-w-3xl mx-auto" data-testid="journey-builder-weeks">
+      <PlaceBackdrop place="chapel" veil="strong" />
       <Header groupId={groupId} navigate={navigate} title={journey.title} subtitle={t('groupJourney.buildSubtitle')} />
 
       {/* Weeks list */}

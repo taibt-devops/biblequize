@@ -49,7 +49,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-12 | Cá nhân, Thành tích, Ngoại hình ✅ | `/profile`, `/achievements`, `/cosmetics` | lều trại |
 | LKF-13 | Phòng chơi, Danh sách phòng, Tạo phòng, Vào phòng ✅ | `/multiplayer`, `/rooms`, `/room/create`, `/room/join` | quảng trường làng |
 | LKF-14 | Phòng chờ, Chơi phòng, Màn chủ phòng, Phân tích phòng ✅ | `/room/:id/*` | quảng trường |
-| LKF-15 | Nhóm + chi tiết + trang con | `/groups*` | gốc sồi nhà nguyện |
+| LKF-15 | Nhóm + chi tiết + trang con ✅ | `/groups*` | gốc sồi nhà nguyện |
 | LKF-16 | Giải đấu, chi tiết, trận | `/tournaments*` | sân đấu |
 | LKF-17 | Đăng nhập, Đăng ký, Onboarding, Thử quiz, Landing, Câu đố Kinh Thánh | `/login`, `/register`, `/onboarding*`, `/landing`, `/cau-do-kinh-thanh` | cổng làng |
 | LKF-18 | Chủ đề tuần, Bí ẩn, Tốc độ, Bộ đề của tôi, Trợ giúp, Chính sách, Điều khoản | … | |
@@ -117,3 +117,10 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
   - `PlayerCrest` tự quay về chân dung chữ cái khi ảnh đại diện lỗi 404
   - Không chụp được màn chơi / quản trò / phân tích ở máy local (cần ≥ 2 người chơi thật) — chỉ đổi khung + màu, giữ nguyên bố cục; dựa vào test (86 test phòng pass)
   - **Spec impact**: [x] None · **Spec strategy**: [x] (b) test RoomOverlays theo chữ có dấu
+- LKF-15 Nhóm · chi tiết nhóm · trang con — gốc sồi cạnh nhà nguyện
+  - Status: [x] DONE
+  - Nhóm: tranh nhà nguyện, biển gỗ "Nhóm Hội Thánh", thanh nhập mã nền kem (ô nhập chữ đậm giãn), "Nhóm của bạn" / "Khám phá nhóm công khai" là biển gỗ nhỏ, thẻ nhóm viền mực + nút lá "Tham gia", trống = lữ khách + nút vàng/lá, nút nổi tạo nhóm tròn vàng
+  - Chi tiết nhóm: tranh nhà nguyện, mã mời dạng viên thuốc kem chữ đậm (bỏ font Orbitron nghiêng), tab dạng nút tròn trong khung mực (`aria-pressed`)
+  - Trang con (bộ câu hỏi, chi tiết bộ, lịch quiz tạo/xem/chơi, hành trình nhóm tạo/xem, phân tích nhóm): công cụ của trưởng nhóm → giữ bố cục, chỉ thêm tranh nhà nguyện (bỏ nền giấy che tranh); trình soạn bộ câu hỏi giữ nền riêng
+  - Quyết định: bỏ dòng "Sprint 6" (tên mốc nội bộ hiện cho người dùng ở "Hoạt động nhóm — sắp ra mắt"); bỏ nút "Xem tất cả" nhóm công khai (không có hành động)
+  - **Spec impact**: [x] None · **Spec strategy**: [x] (c)

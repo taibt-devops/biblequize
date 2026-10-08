@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { api } from '../api/client'
+import { PlaceBackdrop } from '../components/lk/Place'
 import { createScheduledQuiz, listScheduledQuizzes } from '../api/scheduledQuiz'
 
 interface QuizSetItem {
@@ -110,7 +111,8 @@ const ScheduledQuizCreate: React.FC = () => {
   if (!groupId) return null
 
   return (
-    <div className="min-h-screen bg-bq-paper text-bq-ink px-4 py-6 max-w-3xl mx-auto" data-testid="scheduled-quiz-create">
+    <div className="relative min-h-screen text-bq-ink px-4 py-6 max-w-3xl mx-auto" data-testid="scheduled-quiz-create">
+      <PlaceBackdrop place="chapel" veil="strong" />
       <div className="mb-5 flex items-center gap-3">
         <button onClick={() => navigate(`/groups/${groupId}`)} className="text-bq-ink2 hover:text-bq-ink" aria-label="Back">
           <span className="material-symbols-outlined">arrow_back</span>

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../store/authStore';
+import { PlaceBackdrop, Plaque } from '../components/lk/Place';
 import { api } from '../api/client';
 
 /* ─── Types ─── */
@@ -243,7 +244,7 @@ function PublicCard({
   const { t } = useTranslation();
   const hue = group.avatarHue ?? pickHue(group.id);
   return (
-    <div className="w-full h-full bg-bq-white shadow-bq-soft border border-bq-hair hover:border-bq-amber/30 rounded-2xl p-3.5 sm:p-4.5 transition-all flex flex-col">
+    <div className="w-full h-full bg-bq-white border-[3px] border-bq-ink shadow-[0_4px_0_#1D2B22] rounded-2xl p-3.5 sm:p-4 flex flex-col">
       <div className="flex gap-2.5 items-center mb-3">
         <div className={`w-9 h-9 sm:w-11 sm:h-11 rounded-lg flex items-center justify-center text-[18px] sm:text-[22px] flex-shrink-0 overflow-hidden ${HUE_BG[hue]}`}>
           {group.avatarUrl ? (
@@ -271,7 +272,7 @@ function PublicCard({
       <button
         onClick={() => onJoin(group.code)}
         disabled={joining}
-        className="w-full bg-bq-amber/10 text-bq-amberd border border-bq-amber/30 hover:bg-bq-amber/20 rounded-lg px-3 py-2 text-[11px] sm:text-[12px] font-bold transition-colors disabled:opacity-50 disabled:cursor-not-allowed mt-auto"
+        className="lk-btn lk-btn-2 w-full !py-1.5 text-bq-ink text-[14px] mt-auto"
       >
         + {t('groups.joinBtn')}
       </button>
@@ -443,14 +444,16 @@ const Groups: React.FC = () => {
   const hasGroups = myGroups.length > 0;
 
   return (
-    <div className="bg-bq-paper max-w-6xl mx-auto px-4 sm:px-6 py-5 sm:py-7 pb-24 lg:pb-12 space-y-6 sm:space-y-7" data-testid="groups-page">
+    <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-5 sm:py-7 pb-24 lg:pb-12 space-y-6 sm:space-y-7" data-testid="groups-page">
+      <PlaceBackdrop place="chapel" veil="strong" />
       {/* ── Page Header ── */}
       <header className="flex items-end justify-between gap-4 flex-wrap">
-        <div>
-          <h2 className="font-display text-bq-ink text-[22px] sm:text-[28px] lg:text-[32px] font-extrabold tracking-tight leading-tight">
+        <div className="space-y-3">
+          <Plaque as="h2" className="text-[26px] sm:text-[32px] lg:text-[36px]">
+            <span className="material-symbols-outlined text-[0.95em]">church</span>
             {t('groups.pageTitle')}
-          </h2>
-          <p className="text-bq-ink2 text-[12px] sm:text-[14px] mt-1">
+          </Plaque>
+          <p className="m-0 w-fit max-w-full px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-2xl font-read text-[14px] sm:text-[15px] text-bq-ink2">
             {t('groups.pageSubtitle')}
           </p>
         </div>
@@ -458,7 +461,7 @@ const Groups: React.FC = () => {
         <button
           onClick={() => setShowCreateModal(true)}
           data-testid="groups-create-btn"
-          className="hidden lg:inline-flex items-center gap-2 bg-bq-action text-bq-ink shadow-bq-action font-bold text-[14px] px-5 py-3 rounded-xl hover:-translate-y-0.5 transition-all"
+          className="hidden lg:inline-flex lk-btn text-bq-ink text-[16px]"
         >
           <span className="material-symbols-outlined">add</span>
           {t('groups.createGroupCta')}
@@ -469,14 +472,14 @@ const Groups: React.FC = () => {
       <form
         onSubmit={handleQuickJoin}
         data-testid="groups-quick-join"
-        className="bg-bq-white shadow-bq-soft border border-bq-hair rounded-2xl p-4 sm:p-5 flex items-center gap-3 sm:gap-5 flex-wrap"
+        className="bg-bq-cream border-[3px] border-bq-ink shadow-[0_4px_0_#1D2B22] rounded-2xl p-4 sm:p-5 flex items-center gap-3 sm:gap-5 flex-wrap"
       >
-        <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-bq-amber/20 to-bq-amberd/10 border border-bq-amber/30 flex items-center justify-center text-bq-amberd text-[20px] flex-shrink-0">
+        <span className="w-11 h-11 rounded-full bg-bq-amber border-2 border-bq-ink flex items-center justify-center text-bq-ink flex-shrink-0">
           <span className="material-symbols-outlined">key</span>
-        </div>
+        </span>
         <div className="flex-shrink-0">
-          <div className="text-bq-ink text-[13px] font-bold">{t('groups.joinByCodeCta')}</div>
-          <div className="text-bq-ink2 text-[11px] mt-0.5">{t('groups.joinByCodeHint')}</div>
+          <div className="text-bq-ink text-[15px] font-extrabold">{t('groups.joinByCodeCta')}</div>
+          <div className="text-bq-ink2 text-[12.5px] font-bold mt-0.5">{t('groups.joinByCodeHint')}</div>
         </div>
         <div className="flex-1 min-w-[220px] flex gap-2">
           <input
@@ -486,19 +489,19 @@ const Groups: React.FC = () => {
             data-testid="groups-quick-join-input"
             placeholder={t('groups.inviteCodePlaceholder')}
             maxLength={20}
-            className="flex-1 bg-bq-inset border border-bq-hair focus:border-bq-amberd focus:outline-none rounded-lg px-3 py-2.5 text-bq-ink text-[13px] tracking-[2px] uppercase placeholder:tracking-normal placeholder:text-bq-ink3 placeholder:normal-case"
+            className="flex-1 bg-bq-white border-[3px] border-bq-ink/40 focus:border-bq-ink focus:ring-2 focus:ring-bq-amber focus:outline-none rounded-xl px-3 py-2.5 text-bq-ink text-[16px] font-extrabold tracking-[3px] uppercase placeholder:tracking-normal placeholder:font-bold placeholder:text-[14px] placeholder:text-bq-ink3 placeholder:normal-case"
           />
           <button
             type="submit"
             disabled={!quickCode.trim() || quickJoining}
             data-testid="groups-quick-join-submit"
-            className="bg-bq-amber/12 text-bq-amberd border border-bq-amber/30 hover:bg-bq-amber/20 hover:border-bq-amberd rounded-lg px-4 sm:px-5 py-2.5 text-[12px] sm:text-[13px] font-bold transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex-shrink-0"
+            className="lk-btn !py-2 text-bq-ink text-[15px] flex-shrink-0"
           >
             {quickJoining ? '…' : t('groups.joinBtn')}
           </button>
         </div>
         {quickError && (
-          <div className="w-full text-error text-[11px] mt-1">{quickError}</div>
+          <div className="w-full text-bq-ruby text-[13px] font-bold mt-1">{quickError}</div>
         )}
       </form>
 
@@ -506,10 +509,9 @@ const Groups: React.FC = () => {
       {hasGroups && (
         <section className="space-y-3" data-testid="my-groups-section">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 text-bq-ink text-[15px] sm:text-[17px] font-bold">
-              <span className="material-symbols-outlined text-bq-amberd">church</span>
-              {t('groups.myGroupsSection')}
-              <span className="bg-bq-amber/12 text-bq-amberd text-[12px] font-bold px-2.5 py-0.5 rounded-lg">
+            <div className="flex items-center gap-2">
+              <Plaque as="h3" className="text-[18px] sm:text-[20px]">{t('groups.myGroupsSection')}</Plaque>
+              <span className="bg-bq-white border-2 border-bq-ink text-[13px] font-extrabold px-2.5 py-0.5 rounded-full">
                 {myGroups.length}
               </span>
             </div>
@@ -525,21 +527,19 @@ const Groups: React.FC = () => {
       {/* ── Empty hero ── */}
       {!hasGroups && (
         <section data-testid="no-group">
-          <div className="bg-bq-white shadow-bq-soft border border-dashed border-bq-amber/35 rounded-2xl px-6 py-9 sm:py-12 text-center">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-bq-amber/10 flex items-center justify-center mx-auto mb-5 text-bq-amberd">
-              <span className="material-symbols-outlined text-[36px] sm:text-[48px]">church</span>
-            </div>
-            <h3 className="text-bq-ink text-[18px] sm:text-[22px] font-bold mb-2.5">
+          <div className="bg-bq-white border-[3px] border-bq-ink shadow-bq-card rounded-bq px-6 py-9 sm:py-12 text-center">
+            <img src="/images/lk/hero.webp" alt="" aria-hidden className="mx-auto h-28 mb-4" />
+            <h3 className="m-0 font-display text-bq-ink text-[22px] sm:text-[26px] font-extrabold mb-2.5">
               {t('groups.noGroupTitle')}
             </h3>
-            <p className="text-bq-ink2 text-[13px] sm:text-[14px] leading-relaxed max-w-md mx-auto mb-6">
+            <p className="m-0 font-read text-bq-ink2 text-[15px] leading-relaxed max-w-md mx-auto mb-6">
               {t('groups.noGroupDesc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3 justify-center max-w-sm sm:max-w-none mx-auto">
               <button
                 onClick={() => setShowCreateModal(true)}
                 data-testid="groups-empty-create-btn"
-                className="inline-flex items-center justify-center gap-2 bg-bq-action text-bq-ink shadow-bq-action font-bold text-[14px] px-6 py-3 rounded-xl"
+                className="lk-btn text-bq-ink text-[16px]"
               >
                 <span className="material-symbols-outlined">add</span>
                 {t('groups.createGroupCta')}
@@ -547,7 +547,7 @@ const Groups: React.FC = () => {
               <button
                 onClick={() => setShowJoinModal(true)}
                 data-testid="groups-empty-join-btn"
-                className="inline-flex items-center justify-center gap-2 bg-bq-amber/10 text-bq-amberd border border-bq-amber/30 font-bold text-[13px] px-6 py-3 rounded-xl"
+                className="lk-btn lk-btn-2 text-bq-ink text-[16px]"
               >
                 <span className="material-symbols-outlined">key</span>
                 {t('groups.joinByCodeCta')}
@@ -561,14 +561,9 @@ const Groups: React.FC = () => {
       {(publicLoading || publicGroups.length > 0) && (
         <section className="space-y-3" data-testid="public-groups-section">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 text-bq-ink text-[15px] sm:text-[17px] font-bold">
-              <span className="material-symbols-outlined text-bq-sapphire">explore</span>
+            <Plaque as="h3" className="text-[18px] sm:text-[20px]">
               {hasGroups ? t('groups.discoverPublic') : t('groups.discoverPublicAlt')}
-            </div>
-            <button className="text-bq-ink2 text-[12px] sm:text-[13px] font-semibold hover:text-bq-amberd inline-flex items-center gap-1 transition-colors">
-              {t('groups.viewAll')}
-              <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
-            </button>
+            </Plaque>
           </div>
 
           {/* Mobile: horizontal scroll-snap; desktop: grid */}
@@ -577,7 +572,7 @@ const Groups: React.FC = () => {
               ? [0, 1, 2].map((i) => (
                   <div
                     key={i}
-                    className="snap-start sm:snap-align-none h-36 bg-bq-inset rounded-2xl animate-pulse"
+                    className="snap-start sm:snap-align-none h-36 bg-bq-inset/80 border-[3px] border-bq-ink/20 rounded-2xl animate-pulse"
                   />
                 ))
               : publicGroups.map((g) => (
@@ -594,7 +589,7 @@ const Groups: React.FC = () => {
         onClick={() => setShowCreateModal(true)}
         aria-label={t('groups.createGroupCta')}
         data-testid="groups-fab-create"
-        className="lg:hidden fixed bottom-24 right-4 w-14 h-14 rounded-2xl bg-bq-action text-bq-ink flex items-center justify-center shadow-bq-action active:scale-95 transition-transform z-30"
+        className="lg:hidden fixed bottom-24 right-4 w-14 h-14 rounded-full bg-bq-amber border-[3px] border-bq-ink text-bq-ink flex items-center justify-center shadow-[0_4px_0_#1D2B22] active:translate-y-1 active:shadow-none z-30"
       >
         <span className="material-symbols-outlined text-[28px]">add</span>
       </button>

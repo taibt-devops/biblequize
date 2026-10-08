@@ -52,9 +52,6 @@ export default function ActivityFeedPlaceholder() {
         <p className="text-[12px] text-bq-ink2 max-w-md mx-auto">
           {t('groups.activity.placeholder.desc')}
         </p>
-        <div className="mt-3 text-[12px] text-bq-ink3">
-          {t('groups.activity.placeholder.sprint')}
-        </div>
       </div>
     </div>
   );

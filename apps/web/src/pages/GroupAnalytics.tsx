@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../store/authStore';
+import { PlaceBackdrop } from '../components/lk/Place'
 import { api } from '../api/client';
 
 interface TopContributor {
@@ -244,7 +245,8 @@ const GroupAnalytics: React.FC = () => {
     inactiveCount / Math.max(1, memberCountSafe) < 0.3;
 
   return (
-    <div className="bg-bq-paper max-w-5xl mx-auto px-4 py-6 space-y-3">
+    <div className="relative max-w-5xl mx-auto px-4 py-6 space-y-3">
+      <PlaceBackdrop place="chapel" veil="strong" />
       {/* ── Back link ── */}
       <button
         onClick={() => navigate(`/groups/${id}`)}

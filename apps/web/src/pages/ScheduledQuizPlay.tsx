@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { PlaceBackdrop } from '../components/lk/Place'
 import {
   startScheduledQuizAttempt, submitScheduledQuizAttempt,
   AttemptQuestion,
@@ -78,7 +79,8 @@ const ScheduledQuizPlay: React.FC = () => {
   const allAnswered = questions.every(qq => answers[qq.id] !== undefined)
 
   return (
-    <div className="min-h-screen bg-bq-paper text-bq-ink p-4 max-w-2xl mx-auto" data-testid="scheduled-quiz-play">
+    <div className="relative min-h-screen text-bq-ink p-4 max-w-2xl mx-auto" data-testid="scheduled-quiz-play">
+      <PlaceBackdrop place="chapel" veil="strong" />
       <div className="flex items-center justify-between mb-4">
         <button onClick={() => { if (confirm('Thoát? Tiến độ sẽ mất.')) navigate(`/groups/${groupId}/scheduled-quizzes/${quizId}`) }}
           className="text-bq-ink2" aria-label="Close">

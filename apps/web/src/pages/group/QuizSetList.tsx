@@ -9,6 +9,7 @@ import {
   type RoomMode,
 } from '../../api/quizSets'
 import ModePickerModal from '../../components/group/ModePickerModal'
+import { PlaceBackdrop } from '../../components/lk/Place'
 import QuizSetListCard from '../../components/group/QuizSetListCard'
 
 type GroupRole = 'LEADER' | 'MOD' | 'MEMBER' | null
@@ -190,7 +191,8 @@ export default function QuizSetList() {
   }, [nonDrafts, activeFolder])
 
   return (
-    <div className="bg-bq-paper min-h-screen md:flex">
+    <div className="relative min-h-screen md:flex">
+      <PlaceBackdrop place="chapel" veil="strong" />
       {/* Mobile header (md:hidden) */}
       <div className="md:hidden">
         <MobileHeader

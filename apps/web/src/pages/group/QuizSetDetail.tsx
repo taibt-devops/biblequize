@@ -7,6 +7,7 @@ import {
   publishQuizSet, type QuizSet, type QuizSetMastery,
   type RoomMode, unarchiveQuizSet,
 } from '../../api/quizSets'
+import { PlaceBackdrop } from '../../components/lk/Place'
 import ModePickerModal from '../../components/group/ModePickerModal'
 
 const STATUS_BADGE: Record<string, { vi: string; cls: string }> = {
@@ -87,7 +88,8 @@ export default function QuizSetDetail() {
   }
 
   return (
-    <div className="bg-bq-paper min-h-screen md:flex">
+    <div className="relative min-h-screen md:flex">
+      <PlaceBackdrop place="chapel" veil="strong" />
       {/* Main column (mobile + desktop LEFT) */}
       <div className="flex-1 md:overflow-y-auto qs-scroll-thin qs-fade-in">
         {/* Desktop breadcrumb */}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { PlaceBackdrop } from '../components/lk/Place'
 import {
   getScheduledQuizDetail, getScheduledQuizLeaderboard,
   ScheduledQuizDetail as Detail, LeaderboardRow,
@@ -84,7 +85,8 @@ const ScheduledQuizDetailPage: React.FC = () => {
   void tick
 
   return (
-    <div className="min-h-screen bg-bq-paper text-bq-ink px-4 py-5 max-w-3xl mx-auto" data-testid="scheduled-quiz-detail">
+    <div className="relative min-h-screen text-bq-ink px-4 py-5 max-w-3xl mx-auto" data-testid="scheduled-quiz-detail">
+      <PlaceBackdrop place="chapel" veil="strong" />
       <div className="mb-4 flex items-center gap-2">
         <button onClick={() => navigate(`/groups/${groupId}`)} className="text-bq-ink2 hover:text-bq-ink" aria-label="Back">
           <span className="material-symbols-outlined">arrow_back</span>
