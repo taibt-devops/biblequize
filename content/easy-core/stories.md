@@ -71,17 +71,17 @@
 
 | # | Câu chuyện | Đoạn Kinh Thánh |
 | --- | --- | --- |
-| 61 | Thiên sứ báo tin cho Ma-ri | Lu-ca 1 |
+| 61 | Thiên sứ báo tin cho Ma-ri ✓ | Lu-ca 1 |
 | 62 | Chúa Jêsus giáng sinh ✓ | Lu-ca 2, Ma-thi-ơ 2 |
-| 63 | Cậu bé Jêsus trong đền thờ | Lu-ca 2 |
-| 64 | Giăng Báp-tít và lễ báp-têm của Chúa | Ma-thi-ơ 3 |
-| 65 | Chúa bị cám dỗ trong hoang mạc | Ma-thi-ơ 4 |
-| 66 | Gọi những người đánh cá | Lu-ca 5 |
-| 67 | Tiệc cưới ở Ca-na | Giăng 2 |
-| 68 | Ni-cô-đem và Giăng 3:16 | Giăng 3 |
-| 69 | Người phụ nữ bên giếng | Giăng 4 |
-| 70 | Các phước lành | Ma-thi-ơ 5 |
-| 71 | Bài cầu nguyện Chúa dạy | Ma-thi-ơ 6 |
+| 63 | Cậu bé Jêsus trong đền thờ ✓ | Lu-ca 2 |
+| 64 | Giăng Báp-tít và lễ báp-têm của Chúa ✓ | Ma-thi-ơ 3 |
+| 65 | Chúa bị cám dỗ trong hoang mạc ✓ | Ma-thi-ơ 4 |
+| 66 | Gọi những người đánh cá ✓ | Lu-ca 5 |
+| 67 | Tiệc cưới ở Ca-na ✓ | Giăng 2 |
+| 68 | Ni-cô-đem và Giăng 3:16 ✓ | Giăng 3 |
+| 69 | Người phụ nữ bên giếng ✓ | Giăng 4 |
+| 70 | Các phước lành ✓ | Ma-thi-ơ 5 |
+| 71 | Bài cầu nguyện Chúa dạy ✓ | Ma-thi-ơ 6 |
 | 72 | Nhà xây trên đá | Ma-thi-ơ 7 |
 | 73 | Dẹp yên bão biển | Mác 4 |
 | 74 | Năm chiếc bánh và hai con cá ✓ | Giăng 6 |
