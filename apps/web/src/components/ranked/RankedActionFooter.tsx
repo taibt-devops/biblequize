@@ -1,7 +1,5 @@
 import { useTranslation } from 'react-i18next'
 
-const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
-
 interface RankedActionFooterProps {
   /** True when the user has both energy and questions remaining today. */
   canPlay: boolean
@@ -63,27 +61,15 @@ export default function RankedActionFooter({
     <button
       data-testid="ranked-start-btn"
       onClick={onStart}
-      className="w-full bg-bq-action text-bq-ink shadow-bq-action font-bold rounded-xl active:scale-[0.98] transition-all py-3.5 px-6 flex items-center justify-center gap-2"
+      className="lk-btn w-full text-bq-ink text-[17px]"
     >
-      <span className="material-symbols-outlined text-[20px]" style={FILL_1}>
-        play_arrow
-      </span>
-      <span className="text-[15px] tracking-tight">
-        {t('ranked.ctaPlayMain')}
-      </span>
+      <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-6" />
+      {t('ranked.ctaPlayMain')}
     </button>
-  ) : capReached ? (
-    <div className="w-full bg-bq-inset border border-bq-hair text-bq-ink2 rounded-xl py-3.5 px-6 flex items-center justify-center opacity-70 cursor-not-allowed">
-      <span className="text-[15px] font-medium tracking-tight">
-        {t('ranked.ctaCapMain')}
-      </span>
-    </div>
   ) : (
-    <div className="w-full bg-bq-inset border border-bq-hair text-bq-ink2 rounded-xl py-3.5 px-6 flex items-center justify-center opacity-70 cursor-not-allowed">
-      <span className="text-[15px] font-medium tracking-tight">
-        {t('ranked.ctaNoEnergyMain')}
-      </span>
-    </div>
+    <button disabled className="lk-btn w-full !bg-bq-inset text-bq-ink2 text-[16px]">
+      {capReached ? t('ranked.ctaCapMain') : t('ranked.ctaNoEnergyMain')}
+    </button>
   )
 
   // Caption rendered OUTSIDE the button. testids on the disabled-state
@@ -109,20 +95,12 @@ export default function RankedActionFooter({
     >
       {/* Gradient fade — softens the page → sticky CTA seam so the
           last visible row of content doesn't get cut by a hard edge. */}
-      <div
-        aria-hidden
-        className="h-6 pointer-events-none"
-        style={{
-          background:
-            'linear-gradient(180deg, rgba(251,250,245,0) 0%, rgba(251,250,245,0.95) 100%)',
-        }}
-      />
-      <div className="bg-bq-paper/95 backdrop-blur-md border-t border-bq-hair px-4 md:px-10 lg:px-14 pt-3 pb-2 pointer-events-auto">
+      <div className="bg-bq-paper/95 backdrop-blur-md border-t-[3px] border-bq-ink px-4 md:px-10 lg:px-14 pt-3 pb-2 pointer-events-auto">
         <div className="max-w-5xl mx-auto">
           {button}
           <p
             data-testid={captionTestId}
-            className="text-center text-bq-ink3 text-[11px] mt-1.5"
+            className="text-center text-bq-ink2 text-[13px] font-bold mt-2"
           >
             {caption}
           </p>

@@ -10,20 +10,11 @@ interface TierProgressCardProps {
   starIndex?: number
 }
 
-const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
+const tierImg = (id: number) => `/images/lk/tier-${Math.min(6, Math.max(1, id))}.webp`
 
 /**
- * Hero tier banner — desktop v2 (mockup_ranked_desktop_v2.html .hero
- * 2026-05-20). Combined card with two columns on top row:
- *   LEFT  : tier badge (icon + tier name pill) + 5-star sub-tier indicator
- *           + "?" help affordance for the star system.
- *   RIGHT : eyebrow "Đích tiếp theo" + next tier name in Cormorant italic
- *           gold + "Còn N XP" gap caption.
- * Bottom : full-width gold gradient progress bar; foot shows
- *          "{current} XP" (bold, gold) and "/ {target} XP" (muted).
- *
- * Mobile (< sm) gracefully collapses: top row wraps into two stacked
- * blocks so the long "Đích tiếp theo" copy doesn't crowd the badge.
+ * Tier banner on /ranked (LKF-9): the traveller's tier shield and name with the 5 sub-tier stars
+ * on the left, the next shield greyed out as the goal on the right, and the wooden XP rail below.
  */
 export default function TierProgressCard({
   currentTier,
@@ -41,123 +32,80 @@ export default function TierProgressCard({
   return (
     <section
       data-testid="ranked-tier-card"
-      className="relative overflow-hidden rounded-[22px] border border-bq-hair bg-bq-white shadow-bq-rub p-5 md:p-7"
+      className="relative rounded-bq border-[3px] border-bq-ink bg-bq-white shadow-bq-card p-5 md:p-7"
     >
-      {/* Soft ruby radial accents — only on md+ so mobile stays calm. */}
-      <div
-        className="hidden md:block absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            'radial-gradient(60% 80% at 8% 0%, rgba(179,69,47,0.08), transparent 60%),'
-            + 'radial-gradient(50% 70% at 95% 100%, rgba(179,69,47,0.05), transparent 60%)',
-        }}
-        aria-hidden
-      />
-
-      <div className="relative z-10 flex flex-wrap items-center justify-between gap-4 md:gap-7">
-        {/* LEFT — current tier badge + stars */}
-        <div className="flex items-center gap-3 md:gap-4 flex-wrap">
-          <div
-            data-testid="ranked-tier-badge"
-            className="inline-flex items-center gap-2.5 rounded-[14px] border border-bq-hair bg-bq-inset px-3 py-2 md:px-4 md:py-2.5"
-          >
-            <span
-              className="grid place-items-center w-6 h-6 md:w-[26px] md:h-[26px] rounded-lg flex-shrink-0"
-              style={{
-                background: hexToRgba(currentTier.colorHex, 0.15),
-                color: currentTier.colorHex,
-              }}
-            >
-              <span className="material-symbols-outlined text-[16px] md:text-[17px]" style={FILL_1}>
-                workspace_premium
-              </span>
-            </span>
-            <span className="text-bq-ink text-[13px] md:text-[14px] font-bold tracking-tight">
+      <div className="flex flex-wrap items-center justify-between gap-4 md:gap-7">
+        {/* current tier: shield, name, stars */}
+        <div className="flex items-center gap-3 md:gap-4 min-w-0">
+          <img src={tierImg(currentTier.id)} alt="" aria-hidden className="w-[68px] md:w-[88px] shrink-0 drop-shadow-[0_4px_0_rgba(29,43,34,.35)]" />
+          <div className="min-w-0">
+            <div data-testid="ranked-tier-badge" className="font-display text-[24px] md:text-[30px] font-extrabold leading-tight">
               {tierName}
-            </span>
-          </div>
-
-          {!isMaxTier && starIndex != null && (
-            <div className="flex items-center gap-1" data-testid="ranked-sub-tier-stars">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <span
-                  key={i}
-                  className="material-symbols-outlined text-[18px] md:text-[20px]"
-                  style={{
-                    color: i < starIndex ? '#F59E0B' : '#C9B58C',
-                    ...(i < starIndex ? FILL_1 : undefined),
-                  }}
-                >
-                  star
-                </span>
-              ))}
-              <span
-                className="ml-1 w-[18px] h-[18px] rounded-full grid place-items-center text-[10px] font-bold border border-bq-hair bg-bq-inset text-bq-ink3 cursor-help"
-                title={t('ranked.starsHelpHint', 'Mỗi tier có 5 sao — đạt đủ XP mới lên tier kế tiếp')}
-              >
-                ?
-              </span>
             </div>
-          )}
+            {!isMaxTier && starIndex != null && (
+              <div className="flex items-center gap-1 mt-1" data-testid="ranked-sub-tier-stars">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <span
+                    key={i}
+                    aria-hidden
+                    className="text-[22px] md:text-[24px] leading-none"
+                    style={{ color: i < starIndex ? '#FFC93C' : '#F0DFB8', WebkitTextStroke: '1.5px #1D2B22' }}
+                  >
+                    ★
+                  </span>
+                ))}
+                <span
+                  className="ml-1.5 w-6 h-6 rounded-full grid place-items-center text-[12px] font-extrabold border-2 border-bq-ink bg-bq-cream cursor-help"
+                  title={t('ranked.starsHelpHint')}
+                  aria-label={t('ranked.starsHelpHint')}
+                >
+                  ?
+                </span>
+              </div>
+            )}
+          </div>
         </div>
 
-        {/* RIGHT — next tier target */}
+        {/* next tier: the goal, greyed until reached */}
         {!isMaxTier ? (
-          <div className="text-left md:text-right">
-            <div className="text-[10px] font-bold uppercase tracking-[1.5px] text-bq-ink3 mb-1">
-              {t('ranked.nextTierEyebrow')}
-            </div>
-            <div
-              className="font-headline italic font-semibold text-bq-amberd text-[20px] md:text-[22px] leading-none tracking-tight"
-              data-testid="ranked-next-tier-name"
-            >
-              {nextTierName}
-            </div>
-            <div className="text-[12px] text-bq-ink2 mt-1.5">
-              {t('ranked.pointsToNextShort', {
-                points: pointsToNext.toLocaleString('vi-VN'),
-              })}
+          <div className="flex items-center gap-3 md:flex-row-reverse md:text-right">
+            <img src={tierImg(nextTier.id)} alt="" aria-hidden className="w-11 md:w-14 shrink-0 grayscale-[.6] opacity-80" />
+            <div>
+              <div className="text-[13px] font-bold text-bq-ink3">{t('ranked.nextTierEyebrow')}</div>
+              <div className="font-display text-[20px] md:text-[22px] font-extrabold leading-tight text-bq-amberd" data-testid="ranked-next-tier-name">
+                {nextTierName}
+              </div>
+              <span className="inline-block mt-1 px-2.5 py-0.5 bg-bq-cream border-2 border-bq-ink rounded-full text-[12.5px] font-extrabold">
+                {t('ranked.pointsToNextShort', { points: pointsToNext.toLocaleString('vi-VN') })}
+              </span>
             </div>
           </div>
         ) : (
-          <div className="text-bq-amberd text-[14px] font-semibold" data-testid="ranked-tier-progress-text">
+          <div className="px-3 py-1 bg-bq-amber border-2 border-bq-ink rounded-full text-[15px] font-extrabold" data-testid="ranked-tier-progress-text">
             {t('ranked.maxTier')}
           </div>
         )}
       </div>
 
-      {/* Progress bar + foot */}
-      <div className="relative z-10 mt-5 md:mt-6">
-        <div className="bg-bq-track border-2 border-bq-ink rounded-full h-[14px] overflow-hidden">
+      {/* XP rail */}
+      <div className="mt-5 md:mt-6">
+        <div className="bg-bq-track border-2 border-bq-ink rounded-full h-4 overflow-hidden">
           <div
             data-testid="ranked-tier-progress-bar"
-            className="h-full rounded-full transition-[width] duration-700 ease-out"
-            style={{
-              width: `${tierProgressPct}%`,
-              background: '#FFC93C',
-            }}
+            className="h-full bg-bq-amber border-r-2 border-bq-ink/40 transition-[width] duration-700 ease-out"
+            style={{ width: `${tierProgressPct}%` }}
           />
         </div>
-        <div className="flex items-center justify-between mt-2 text-[12px]">
-          <span data-testid="ranked-tier-progress-xp" className="text-bq-ink2 font-semibold">
-            <span className="text-bq-amberd font-extrabold text-[14px]">
-              {totalPoints.toLocaleString('vi-VN')}
-            </span>{' '}
+        <div className="flex items-center justify-between mt-2 text-[13px] font-bold">
+          <span data-testid="ranked-tier-progress-xp" className="text-bq-ink2">
+            <span className="text-bq-ink font-extrabold text-[16px]">{totalPoints.toLocaleString('vi-VN')}</span>{' '}
             XP
           </span>
-          <span className="text-bq-ink3">
+          <span className="text-bq-ink3 tabular-nums">
             / {(nextTier ? nextTier.minPoints : totalPoints).toLocaleString('vi-VN')} XP
           </span>
         </div>
       </div>
     </section>
   )
-}
-
-function hexToRgba(hex: string, alpha: number): string {
-  if (!/^#[0-9a-fA-F]{6}$/.test(hex)) return `rgba(255,255,255,${alpha})`
-  const r = parseInt(hex.slice(1, 3), 16)
-  const g = parseInt(hex.slice(3, 5), 16)
-  const b = parseInt(hex.slice(5, 7), 16)
-  return `rgba(${r},${g},${b},${alpha})`
 }

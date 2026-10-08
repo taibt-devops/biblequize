@@ -43,7 +43,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-6 | Hành trình 66 sách | `/journey` | theo artboard Journey đã duyệt (trạm sách trên bản đồ, bảng chi tiết, 8 vùng, huy hiệu) |
 | LKF-7 | Bộ "địa điểm" dùng chung ✅ | — | `components/lk/Place.tsx`: `PlaceBackdrop`, `Plaque` (biển gỗ), `ScrollPanel`, `Medal`, `TrackBar` + 8 tranh địa điểm `place-*.webp` |
 | LKF-8 | Luyện Tập, Học Thuộc (3 màn), Ôn tập ✅ | `/practice`, `/practice/memorize*`, `/review` | phòng đọc |
-| LKF-9 | Đấu Hạng, Bài kiểm tra cơ bản | `/ranked`, `/basic-quiz` | sân đấu |
+| LKF-9 | Đấu Hạng, Bài kiểm tra cơ bản ✅ | `/ranked`, `/basic-quiz` | sân đấu |
 | LKF-10 | Thử thách hôm nay | `/daily` | lá thư bồ câu mang tới |
 | LKF-11 | Xếp hạng | `/leaderboard` | đỉnh đồi, bục vinh danh |
 | LKF-12 | Cá nhân, Thành tích, Ngoại hình | `/profile`, `/achievements`, `/cosmetics` | lều trại |
@@ -64,4 +64,11 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
   - Học Thuộc (danh sách / thêm câu / phiên ôn): cùng tranh với lớp kem đậm (`veil="strong"`) vì trang nhiều chữ; thẻ câu viền mực, chấm thuộc vàng; nút vàng / nút lá
   - Ôn tập: biển gỗ + chip điểm & thời gian, thanh lọc dính dưới app bar, mỗi câu là tờ giấy có dải trạng thái (lá = đúng, đỏ = sai), đáp án viền mực có chữ A–D / ✓ / ✗, giải thích dạng ghi chú nét đứt; đánh dấu là ngôi sao vàng (`aria-pressed`, nhãn "Đánh dấu câu này")
   - Quyết định: bỏ chữ in hoa — `review.questionNumber` "CÂU 01" → "Câu 01"; độ khó hiện tiếng Việt qua `practice.easy|medium|hard` (trước là "Easy/Medium/Hard" gõ cứng); test chọn độ khó đọc `aria-pressed` thay vì class `ring-bq-sapphire`
+  - **Spec impact**: [x] None · **Spec strategy**: [x] (c)
+- LKF-9 Đấu Hạng · Bài Giáo Lý Căn Bản — sân đấu
+  - Status: [x] DONE
+  - Đấu Hạng: biển gỗ có thanh kiếm; thẻ hạng = khiên hạng hiện tại + 5 sao + khiên hạng kế (xám) làm đích, thanh XP gỗ; thẻ hôm nay = năng lượng tim (thanh đỏ) + 3 huy chương (đèn lồng = chuỗi ngày, cuộn giấy = câu hôm nay, cúp = điểm hôm nay); thẻ "Sẵn sàng leo hạng?" có lữ khách (hết lượt thì lữ khách ngồi nghỉ); nút dính đáy điện thoại = nút vàng có kiếm; thẻ tuần (coverage) sách đã phủ = nền lá
+  - Bài Giáo Lý: là "bài thi vào sân đấu" — câu hỏi trên cuộn giấy, đáp án dùng màu biển gỗ như Quiz (A san hô, B trời, C vàng, D lá), chọn = biển ấn xuống + vòng mực + ✓; 10 viên đá tiến độ; đậu = lữ khách nhảy mừng + huy chương kiếm "Đã mở khóa: Đấu Hạng"; trượt = lữ khách ngồi nghỉ + đèn lồng đếm giờ thử lại; ôn bài = tờ giấy có dải trạng thái
+  - Quyết định: bỏ xoay ảnh kiếm (ảnh gốc đã chéo, xoay thêm thành cây nến) — cả màn kết quả Đấu Hạng; sửa chữ "Đủ chơi −N câu" → "~N", "Cap N/ngày" → "Tối đa N câu/ngày", "Bắt đầu Ranked ngay" → "Vào Đấu Hạng ngay"
+  - Chưa chụp được: kết quả Đấu Hạng trên điện thoại ở máy local — kho câu Đấu Hạng của tài khoản test đã hết (`questions/select` trả rỗng); Bài Giáo Lý chụp bằng API giả lập (DB local không có bộ bible_basics → 404)
   - **Spec impact**: [x] None · **Spec strategy**: [x] (c)

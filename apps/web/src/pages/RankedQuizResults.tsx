@@ -198,7 +198,7 @@ export default function RankedQuizResults({
 
         <div className="flex items-center justify-between pb-4">
           <span className="inline-flex items-center gap-2 px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-full text-[13px] font-extrabold">
-            <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-5 -rotate-[30deg]" />
+            <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-5" />
             {t('ranked.result.topContext', 'Kết quả Đấu Hạng')}
           </span>
           <button

@@ -830,7 +830,7 @@ const Quiz: React.FC = () => {
 
       {showCombo && (
         <div className="combo-banner-anim fixed top-24 left-1/2 z-[60] flex items-center gap-2 pl-2 pr-5 py-1.5 rounded-full bg-bq-amber border-[3px] border-bq-ink shadow-[0_5px_0_#1D2B22] font-extrabold text-[20px] whitespace-nowrap">
-          <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-9 -rotate-[30deg]" />
+          <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-9" />
           {t('quiz.lk.comboBanner', { count: combo })}
         </div>
       )}
@@ -860,7 +860,7 @@ const Quiz: React.FC = () => {
                 data-testid="quiz-combo"
                 className={`shrink-0 flex items-center gap-0.5 md:gap-1.5 pl-0.5 md:pl-1.5 pr-2.5 md:pr-4 py-0.5 bg-bq-cream border-2 md:border-[3px] border-bq-ink rounded-full font-extrabold text-[14px] md:text-[19px] ${combo > 0 ? '' : 'opacity-60'} ${scorePopping ? 'score-pop-anim' : ''}`}
               >
-                <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-6 md:h-[34px] -rotate-[30deg]" />
+                <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-6 md:h-[34px]" />
                 <span className="md:hidden">×{combo}</span>
                 <span className="hidden md:inline">{t('quiz.lk.combo', { count: combo })}</span>
               </span>

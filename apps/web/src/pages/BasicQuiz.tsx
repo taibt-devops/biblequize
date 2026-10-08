@@ -6,9 +6,11 @@ import { api } from '../api/client'
 import { getQuizLanguage } from '../utils/quizLanguage'
 import { soundManager } from '../services/soundManager'
 import { haptic } from '../utils/haptics'
+import { Medal, PlaceBackdrop, Plaque, ScrollPanel, lkClass } from '../components/lk/Place'
 
-const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
 const LETTERS = ['A', 'B', 'C', 'D']
+// same colours as the quiz answer boards (C5): A coral, B sky, C gold, D sage
+const BOARD = ['bg-answer-a', 'bg-answer-b', 'bg-answer-c', 'bg-answer-d']
 
 /* ── Server contracts (mirror api/dto/basicquiz/*Response.java) ── */
 interface BasicQuizQuestion {
@@ -47,11 +49,12 @@ function formatMmSs(totalSeconds: number): string {
 /* ── Skeleton ── */
 function QuizSkeleton() {
   return (
-    <div data-testid="basic-quiz-skeleton" className="max-w-4xl mx-auto py-12 space-y-6 animate-pulse">
-      <div className="h-3 w-full rounded-full bg-bq-inset" />
-      <div className="h-32 rounded-2xl bg-bq-inset" />
-      <div className="space-y-3">
-        {[0, 1, 2, 3].map(i => <div key={i} className="h-16 rounded-xl bg-bq-inset" />)}
+    <div data-testid="basic-quiz-skeleton" className="relative max-w-4xl mx-auto py-8 space-y-6 animate-pulse">
+      <PlaceBackdrop place="arena" veil="strong" />
+      <div className="h-12 w-72 rounded-xl bg-bq-inset/80 border-[3px] border-bq-ink/20" />
+      <div className="h-36 rounded-bq bg-bq-inset/80 border-[3px] border-bq-ink/20" />
+      <div className="grid md:grid-cols-2 gap-3">
+        {[0, 1, 2, 3].map(i => <div key={i} className="h-16 rounded-[18px] bg-bq-inset/80 border-[3px] border-bq-ink/20" />)}
       </div>
     </div>
   )
@@ -164,23 +167,20 @@ export default function BasicQuiz() {
 
   if (isError || !questions || questions.length === 0) {
     return (
-      <div data-testid="basic-quiz-error" className="max-w-2xl mx-auto py-16 text-center space-y-4">
-        <span className="material-symbols-outlined text-5xl text-bq-ruby" style={FILL_1}>error</span>
-        <h2 className="text-xl font-bold text-bq-ink">{t('basicQuiz.page.errorTitle')}</h2>
-        <p className="text-sm text-bq-ink2">{t('basicQuiz.page.errorMessage')}</p>
-        <div className="flex gap-3 justify-center">
-          <button
-            onClick={() => refetch()}
-            className="bg-bq-action text-bq-ink shadow-bq-action px-5 py-2.5 rounded-xl font-bold"
-          >
-            {t('basicQuiz.page.retryLoad')}
-          </button>
-          <button
-            onClick={() => navigate('/')}
-            className="bg-bq-white border border-bq-hair text-bq-ink px-5 py-2.5 rounded-xl font-bold"
-          >
-            {t('basicQuiz.page.backHome')}
-          </button>
+      <div data-testid="basic-quiz-error" className="relative max-w-md mx-auto py-14 px-4">
+        <PlaceBackdrop place="arena" veil="strong" />
+        <div className="p-7 text-center bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card space-y-3">
+          <img src="/images/lk/hero-lost.webp" alt="" aria-hidden className="mx-auto h-32" />
+          <h2 className="m-0 font-display text-[22px] font-extrabold text-bq-ink">{t('basicQuiz.page.errorTitle')}</h2>
+          <p className="m-0 font-read text-[15px] text-bq-ink2">{t('basicQuiz.page.errorMessage')}</p>
+          <div className="flex flex-wrap gap-3 justify-center pt-2">
+            <button onClick={() => refetch()} className="lk-btn text-bq-ink text-[16px]">
+              {t('basicQuiz.page.retryLoad')}
+            </button>
+            <button onClick={() => navigate('/')} className="lk-btn !bg-bq-white text-bq-ink text-[16px]">
+              {t('basicQuiz.page.backHome')}
+            </button>
+          </div>
         </div>
       </div>
     )
@@ -201,15 +201,16 @@ export default function BasicQuiz() {
 
   // ── Playing phase ──
   return (
-    <div data-testid="basic-quiz-page" className="max-w-4xl mx-auto py-8 space-y-6">
-      {/* Header + progress */}
-      <header className="space-y-3">
-        <div className="flex items-center justify-between">
-          <h1 className="font-display text-xl sm:text-2xl font-black text-bq-ink flex items-center gap-2">
-            <span className="material-symbols-outlined text-bq-amberd" style={FILL_1}>menu_book</span>
+    <div data-testid="basic-quiz-page" className="relative max-w-4xl mx-auto py-2 md:py-6 space-y-5">
+      <PlaceBackdrop place="arena" veil="strong" />
+      {/* title + counter, then one stone per question */}
+      <header className="space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <Plaque className="text-[24px] md:text-[32px]">
+            <img src="/images/lk/scroll.webp" alt="" aria-hidden className="h-[1em]" />
             {t('basicQuiz.page.title')}
-          </h1>
-          <span data-testid="basic-quiz-counter" className="text-sm font-bold text-bq-ink2">
+          </Plaque>
+          <span data-testid="basic-quiz-counter" className="px-3.5 py-1 bg-bq-white border-[3px] border-bq-ink rounded-full text-[16px] font-extrabold tabular-nums shadow-[0_3px_0_#1D2B22]">
             {t('basicQuiz.page.counter', { current: currentIndex + 1, total: totalQuestions })}
           </span>
         </div>
@@ -218,23 +219,31 @@ export default function BasicQuiz() {
           aria-valuenow={currentIndex + 1}
           aria-valuemax={totalQuestions}
           role="progressbar"
-          className="h-2 rounded-full bg-bq-inset overflow-hidden"
+          className="flex items-center gap-1.5 md:gap-2"
         >
-          <div
-            className="h-full bg-bq-action transition-all"
-            style={{ width: `${((currentIndex + 1) / totalQuestions) * 100}%` }}
-          />
+          {questions.map((q, i) => (
+            <span
+              key={q.id}
+              aria-hidden
+              className={
+                'flex-1 h-3.5 md:h-4 rounded-full border-2 border-bq-ink transition-colors ' +
+                (i === currentIndex ? 'bg-bq-amber ring-2 ring-bq-ink ring-offset-2 ring-offset-bq-paper' : answers[i] != null ? 'bg-bq-amber' : 'bg-bq-track')
+              }
+            />
+          ))}
         </div>
       </header>
 
-      {/* Question */}
+      {/* question on the scroll, answers as the quiz signboards */}
       {currentQuestion && (
-        <section className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-6 sm:p-8 space-y-6">
-          <h2 data-testid="basic-quiz-question" className="text-xl sm:text-2xl font-bold text-bq-ink">
-            {currentQuestion.content}
-          </h2>
+        <>
+          <ScrollPanel bodyClassName="px-6 md:px-10 py-6 md:py-8 text-center">
+            <h2 data-testid="basic-quiz-question" className="m-0 font-read text-[21px] md:text-[26px] font-bold leading-snug text-bq-ink">
+              {currentQuestion.content}
+            </h2>
+          </ScrollPanel>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
             {currentQuestion.options.map((option, idx) => {
               const isSelected = answers[currentIndex] === idx
               return (
@@ -242,63 +251,60 @@ export default function BasicQuiz() {
                   key={idx}
                   data-testid={`basic-quiz-option-${idx}`}
                   data-selected={isSelected ? 'true' : 'false'}
+                  aria-pressed={isSelected}
                   onClick={() => pickOption(idx)}
                   className={
-                    'w-full flex items-start gap-4 p-4 rounded-xl border-2 transition-all text-left active:scale-[0.99] ' +
+                    'w-full flex items-center gap-3 md:gap-4 px-3.5 py-2.5 md:px-5 md:py-4 min-h-[58px] md:min-h-[78px] rounded-[18px] md:rounded-[20px] border-[3px] border-bq-ink text-left transition-all ' +
+                    BOARD[idx % 4] + ' ' +
                     (isSelected
-                      ? 'border-bq-amberd bg-bq-amber/10 shadow-bq-amb'
-                      : 'border-bq-hair bg-bq-inset hover:bg-bq-white hover:border-bq-amberd/40')
+                      ? 'translate-y-1 shadow-bq-btn-down ring-[3px] ring-bq-ink ring-offset-2 ring-offset-bq-paper'
+                      : 'shadow-bq-btn hover:brightness-105 active:translate-y-1 active:shadow-bq-btn-down')
                   }
                 >
-                  <span
-                    className={
-                      'shrink-0 w-9 h-9 rounded-lg flex items-center justify-center font-black ' +
-                      (isSelected ? 'bg-bq-action text-bq-ink' : 'bg-bq-white text-bq-amberd')
-                    }
-                  >
-                    {LETTERS[idx]}
+                  <span className={'shrink-0 w-9 h-9 md:w-11 md:h-11 grid place-items-center rounded-full border-[3px] border-bq-ink font-extrabold text-[17px] md:text-[20px] ' + (isSelected ? 'bg-bq-ink text-bq-amber' : 'bg-bq-white text-bq-ink')}>
+                    {isSelected ? '✓' : LETTERS[idx]}
                   </span>
-                  <span className={'pt-1.5 text-base ' + (isSelected ? 'text-bq-amberd font-semibold' : 'text-bq-ink')}>
+                  <span className="flex-1 text-[18px] md:text-[21px] font-bold leading-snug text-bq-ink">
                     {option}
                   </span>
                 </button>
               )
             })}
           </div>
-        </section>
+        </>
       )}
 
       {submitError && (
-        <div data-testid="basic-quiz-submit-error" className="rounded-xl border border-bq-ruby/30 bg-bq-ruby/10 p-4 text-sm text-bq-ruby">
+        <div data-testid="basic-quiz-submit-error" className="rounded-2xl border-[3px] border-bq-ruby bg-bq-white p-4 text-[15px] font-bold text-bq-ruby">
           {submitError}
         </div>
       )}
 
-      {/* Footer controls */}
-      <footer className="flex items-center justify-between gap-3">
+      {/* back / next / submit */}
+      <footer className="flex items-center justify-between gap-3 pt-1">
         <button
           data-testid="basic-quiz-prev"
           onClick={goPrev}
           disabled={currentIndex === 0}
-          className="px-5 py-2.5 rounded-xl font-bold bg-bq-white border border-bq-hair text-bq-ink disabled:opacity-40 disabled:cursor-not-allowed"
+          className="lk-btn !bg-bq-white text-bq-ink text-[16px]"
         >
-          {t('basicQuiz.page.prev')}
+          ← {t('basicQuiz.page.prev')}
         </button>
         {currentIndex < totalQuestions - 1 ? (
           <button
             data-testid="basic-quiz-next"
             onClick={goNext}
             disabled={answers[currentIndex] == null}
-            className="bg-bq-action text-bq-ink shadow-bq-action px-6 py-2.5 rounded-xl font-bold disabled:opacity-40 disabled:cursor-not-allowed"
+            className="lk-btn text-bq-ink text-[16px]"
           >
-            {t('basicQuiz.page.next')}
+            {t('basicQuiz.page.next')} →
           </button>
         ) : (
           <button
             data-testid="basic-quiz-submit"
             onClick={submit}
             disabled={!allAnswered || phase === 'submitting'}
-            className="bg-bq-action text-bq-ink shadow-bq-action px-6 py-2.5 rounded-xl font-bold disabled:opacity-40 disabled:cursor-not-allowed"
+            className="lk-btn lk-btn-2 text-bq-ink text-[17px]"
           >
             {phase === 'submitting' ? t('basicQuiz.page.submitting') : t('basicQuiz.page.submit')}
           </button>
@@ -312,7 +318,7 @@ export default function BasicQuiz() {
 function ReviewList({ reviews }: { reviews: Review[] }) {
   const { t } = useTranslation()
   return (
-    <ul className="space-y-3">
+    <ul className="m-0 p-0 list-none space-y-3">
       {reviews.map((r, idx) => {
         const correctIdx = r.correctOptions[0] ?? -1
         const selectedIdx = r.selectedOptions[0]
@@ -321,70 +327,47 @@ function ReviewList({ reviews }: { reviews: Review[] }) {
             key={r.questionId}
             data-testid={`basic-quiz-review-${idx}`}
             data-correct={r.correct ? 'true' : 'false'}
-            className={
-              'rounded-2xl border p-5 space-y-3 ' +
-              (r.correct
-                ? 'border-bq-emerald/20 bg-bq-emerald/5'
-                : 'border-bq-ruby/20 bg-bq-inset')
-            }
+            className="relative bg-bq-white border-[3px] border-bq-ink rounded-2xl shadow-bq-card overflow-hidden"
           >
-            <div className="flex items-start justify-between gap-3">
-              <p className="font-semibold text-bq-ink flex-1">{r.content}</p>
-              <span
-                className={
-                  'shrink-0 inline-flex items-center gap-1 text-[10px] uppercase tracking-widest font-bold px-2 py-1 rounded-full ' +
-                  (r.correct
-                    ? 'bg-bq-emerald/15 text-bq-emerald'
-                    : 'bg-bq-ruby/15 text-bq-ruby')
-                }
-              >
-                <span className="material-symbols-outlined text-sm" style={FILL_1}>
-                  {r.correct ? 'check_circle' : 'cancel'}
+            <span aria-hidden className={`absolute left-0 top-0 bottom-0 w-2.5 border-r-[3px] border-bq-ink ${r.correct ? 'bg-bq-leaf' : 'bg-bq-ruby'}`} />
+            <div className="pl-6 pr-4 py-4 md:pl-8 md:pr-5 space-y-3">
+              <div className="flex items-start justify-between gap-3">
+                <p className="m-0 flex-1 font-read text-[16px] font-bold text-bq-ink">{idx + 1}. {r.content}</p>
+                <span
+                  className={
+                    'shrink-0 inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full border-2 border-bq-ink text-[13px] font-extrabold ' +
+                    (r.correct ? 'bg-bq-leaf text-bq-ink' : 'bg-bq-ruby text-bq-white')
+                  }
+                >
+                  {r.correct ? '✓' : '✗'} {r.correct ? t('basicQuiz.page.reviewCorrectBadge') : t('basicQuiz.page.reviewWrongBadge')}
                 </span>
-                {r.correct ? t('basicQuiz.page.reviewCorrectBadge') : t('basicQuiz.page.reviewWrongBadge')}
-              </span>
+              </div>
+
+              <div className={`grid gap-2 text-[15px] ${r.correct ? '' : 'sm:grid-cols-2'}`}>
+                {!r.correct && (
+                  <div className="rounded-xl border-2 border-bq-ruby bg-bq-ruby/10 px-3 py-2">
+                    <div className="text-[12.5px] font-extrabold text-bq-ruby">{t('basicQuiz.page.failYourAnswer')}</div>
+                    <div className="font-bold text-bq-ink">
+                      {selectedIdx != null && r.options[selectedIdx]
+                        ? `${LETTERS[selectedIdx] ?? ''}. ${r.options[selectedIdx]}`
+                        : t('basicQuiz.page.failSkipped')}
+                    </div>
+                  </div>
+                )}
+                {correctIdx >= 0 && (
+                  <div className="rounded-xl border-2 border-bq-ink bg-bq-leaf/60 px-3 py-2">
+                    <div className="text-[12.5px] font-extrabold text-bq-ink2">{t('basicQuiz.page.failCorrectAnswer')}</div>
+                    <div className="font-bold text-bq-ink">{`${LETTERS[correctIdx] ?? ''}. ${r.options[correctIdx]}`}</div>
+                  </div>
+                )}
+              </div>
+
+              {r.explanation && (
+                <p className="m-0 px-3 py-2 bg-bq-cream border-2 border-dashed border-bq-ink/40 rounded-xl font-read text-[14.5px] leading-relaxed text-bq-ink2">
+                  {r.explanation}
+                </p>
+              )}
             </div>
-
-            {!r.correct && (
-              <div className="grid sm:grid-cols-2 gap-2 text-sm">
-                <div className="rounded-lg border border-bq-ruby/30 bg-bq-ruby/5 p-3">
-                  <div className="text-[10px] uppercase tracking-widest text-bq-ruby font-bold mb-1">
-                    {t('basicQuiz.page.failYourAnswer')}
-                  </div>
-                  <div className="text-bq-ink">
-                    {selectedIdx != null && r.options[selectedIdx]
-                      ? `${LETTERS[selectedIdx] ?? ''}. ${r.options[selectedIdx]}`
-                      : t('basicQuiz.page.failSkipped')}
-                  </div>
-                </div>
-                <div className="rounded-lg border border-bq-emerald/30 bg-bq-emerald/5 p-3">
-                  <div className="text-[10px] uppercase tracking-widest text-bq-emerald font-bold mb-1">
-                    {t('basicQuiz.page.failCorrectAnswer')}
-                  </div>
-                  <div className="text-bq-ink">
-                    {correctIdx >= 0 ? `${LETTERS[correctIdx] ?? ''}. ${r.options[correctIdx]}` : '—'}
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {r.correct && correctIdx >= 0 && (
-              <div className="text-sm rounded-lg border border-bq-emerald/30 bg-bq-emerald/5 p-3">
-                <div className="text-[10px] uppercase tracking-widest text-bq-emerald font-bold mb-1">
-                  {t('basicQuiz.page.failCorrectAnswer')}
-                </div>
-                <div className="text-bq-ink">
-                  {`${LETTERS[correctIdx] ?? ''}. ${r.options[correctIdx]}`}
-                </div>
-              </div>
-            )}
-
-            {r.explanation && (
-              <p className="text-sm text-bq-ink2 flex gap-2">
-                <span className="text-bq-amberd shrink-0">💡</span>
-                <span>{r.explanation}</span>
-              </p>
-            )}
           </li>
         )
       })}
@@ -392,7 +375,7 @@ function ReviewList({ reviews }: { reviews: Review[] }) {
   )
 }
 
-/* ── Result screen — Pass ── */
+/* ── Result screen — Pass: the arena gate opens ── */
 function PassScreen({
   result,
   onPlayRanked,
@@ -404,51 +387,40 @@ function PassScreen({
 }) {
   const { t } = useTranslation()
   return (
-    <div data-testid="basic-quiz-result-pass" className="max-w-4xl mx-auto py-10 space-y-6">
-      <header className="text-center space-y-4">
-        <div className="text-7xl">🎉</div>
-        <div className="space-y-2">
-          <h2 className="font-display text-2xl sm:text-3xl font-black text-bq-ink">
-            {t('basicQuiz.page.passTitle')}
-          </h2>
-          <p className="text-bq-ink2">
-            {t('basicQuiz.page.passSubtitle', { correct: result.correctCount, total: result.totalQuestions })}
-          </p>
+    <div data-testid="basic-quiz-result-pass" className="relative max-w-3xl mx-auto py-4 md:py-8 space-y-7">
+      <PlaceBackdrop place="arena" veil="mid" />
+      <ScrollPanel bodyClassName="px-6 md:px-10 py-6 text-center">
+        <img src="/images/lk/hero-cheer.webp" alt="" aria-hidden className={`mx-auto h-[110px] ${lkClass.bob}`} />
+        <h2 className="m-0 mt-2 font-display text-[30px] md:text-[36px] font-extrabold text-bq-amberd">
+          {t('basicQuiz.page.passTitle')}
+        </h2>
+        <p className="m-0 mt-1 font-read text-[15px] md:text-[16px] text-bq-ink2">
+          {t('basicQuiz.page.passSubtitle', { correct: result.correctCount, total: result.totalQuestions })}
+        </p>
+        <div className="mt-5 inline-flex items-center gap-3 pl-2 pr-4 py-2 bg-bq-amber border-[3px] border-bq-ink rounded-full shadow-[0_4px_0_#1D2B22]">
+          <Medal size={44}><img src="/images/lk/sword.webp" alt="" aria-hidden className="h-7" /></Medal>
+          <span className="text-[16px] font-extrabold text-bq-ink">{t('basicQuiz.page.passUnlock')}</span>
         </div>
-        <div className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-4 inline-flex items-center gap-3 mx-auto">
-          <span className="material-symbols-outlined text-bq-amberd text-3xl" style={FILL_1}>verified</span>
-          <span className="text-base font-bold text-bq-amberd">{t('basicQuiz.page.passUnlock')}</span>
-        </div>
-        <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
-          <button
-            data-testid="basic-quiz-pass-cta"
-            onClick={onPlayRanked}
-            className="bg-bq-action text-bq-ink shadow-bq-action px-6 py-3 rounded-xl font-bold"
-          >
-            <span className="material-symbols-outlined align-middle text-base mr-1" style={FILL_1}>play_arrow</span>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center pt-6">
+          <button data-testid="basic-quiz-pass-cta" onClick={onPlayRanked} className="lk-btn text-bq-ink text-[17px]">
+            <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-6" />
             {t('basicQuiz.page.passCta')}
           </button>
-          <button
-            onClick={onHome}
-            className="bg-bq-white border border-bq-hair text-bq-ink px-6 py-3 rounded-xl font-bold"
-          >
+          <button onClick={onHome} className="lk-btn !bg-bq-white text-bq-ink text-[16px]">
             {t('basicQuiz.page.backHome')}
           </button>
         </div>
-      </header>
+      </ScrollPanel>
 
       <section className="space-y-3">
-        <h3 className="text-base font-bold text-bq-ink flex items-center gap-2">
-          <span className="material-symbols-outlined text-bq-amberd" style={FILL_1}>menu_book</span>
-          {t('basicQuiz.page.reviewAll')}
-        </h3>
+        <Plaque as="h3" className="text-[20px] md:text-[22px]">{t('basicQuiz.page.reviewAll')}</Plaque>
         <ReviewList reviews={result.reviews} />
       </section>
     </div>
   )
 }
 
-/* ── Result screen — Fail with review ── */
+/* ── Result screen — Fail: rest, read the notes, come back after the cooldown ── */
 function FailScreen({
   result,
   cooldownLeft,
@@ -460,37 +432,31 @@ function FailScreen({
 }) {
   const { t } = useTranslation()
   return (
-    <div data-testid="basic-quiz-result-fail" className="max-w-4xl mx-auto py-10 space-y-6">
-      <header className="text-center space-y-3">
-        <div className="text-6xl">😅</div>
-        <h2 className="font-display text-2xl font-black text-bq-ink">
+    <div data-testid="basic-quiz-result-fail" className="relative max-w-3xl mx-auto py-4 md:py-8 space-y-7">
+      <PlaceBackdrop place="arena" veil="strong" />
+      <ScrollPanel bodyClassName="px-6 md:px-10 py-6 text-center">
+        <img src="/images/lk/hero-rest.webp" alt="" aria-hidden className="mx-auto h-[104px]" />
+        <h2 className="m-0 mt-2 font-display text-[26px] md:text-[30px] font-extrabold text-bq-ink">
           {t('basicQuiz.page.failTitle', { correct: result.correctCount, total: result.totalQuestions })}
         </h2>
-        <p className="text-bq-ink2">
+        <p className="m-0 mt-1 font-read text-[15px] md:text-[16px] text-bq-ink2">
           {t('basicQuiz.page.failSubtitle', { threshold: result.threshold })}
         </p>
-      </header>
+        <div className="mt-5 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <span data-testid="basic-quiz-fail-cooldown" className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-bq-cream border-2 border-bq-ink rounded-full text-[14px] font-extrabold tabular-nums">
+            <img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="h-5" />
+            {t('basicQuiz.page.cooldownMessage', { time: formatMmSs(cooldownLeft) })}
+          </span>
+          <button onClick={onHome} className="lk-btn !bg-bq-white text-bq-ink text-[15px]">
+            {t('basicQuiz.page.backHome')}
+          </button>
+        </div>
+      </ScrollPanel>
 
       <section className="space-y-3">
-        <h3 className="text-base font-bold text-bq-ink flex items-center gap-2">
-          <span className="material-symbols-outlined text-bq-amberd" style={FILL_1}>menu_book</span>
-          {t('basicQuiz.page.reviewAll')}
-        </h3>
+        <Plaque as="h3" className="text-[20px] md:text-[22px]">{t('basicQuiz.page.reviewAll')}</Plaque>
         <ReviewList reviews={result.reviews} />
       </section>
-
-      <footer className="rounded-2xl bg-bq-inset border border-bq-hair p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <span data-testid="basic-quiz-fail-cooldown" className="text-sm text-bq-ink2 flex items-center gap-2">
-          <span className="material-symbols-outlined text-bq-amberd">timer</span>
-          {t('basicQuiz.page.cooldownMessage', { time: formatMmSs(cooldownLeft) })}
-        </span>
-        <button
-          onClick={onHome}
-          className="bg-bq-white border border-bq-hair text-bq-ink px-6 py-2.5 rounded-xl font-bold w-full sm:w-auto"
-        >
-          {t('basicQuiz.page.backHome')}
-        </button>
-      </footer>
     </div>
   )
 }

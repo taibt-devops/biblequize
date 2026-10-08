@@ -317,7 +317,7 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
                 {breakdown.combo > 0 && (
                   <div className="flex justify-between py-1.5 border-b-2 border-dashed border-bq-hair">
                     <span className="text-bq-ink2 inline-flex items-center gap-1.5">
-                      <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-5 -rotate-[30deg]" />
+                      <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-5" />
                       {t('results.breakdown.combo', { multiplier: breakdown.multiplier })}
                     </span>
                     <span className="font-bold tabular-nums text-bq-emerald">+{breakdown.combo}</span>

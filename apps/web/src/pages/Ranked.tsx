@@ -17,8 +17,7 @@ import CoverageCard from '../components/ranked/CoverageCard'
 import PoolExhaustedModal from '../components/ranked/PoolExhaustedModal'
 import BadgeAwardModal from '../components/ranked/BadgeAwardModal'
 import RankedActionFooter from '../components/ranked/RankedActionFooter'
-
-const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
+import { Medal, PlaceBackdrop, TrackBar } from '../components/lk/Place'
 
 export default function Ranked() {
   const { t } = useTranslation()
@@ -148,12 +147,13 @@ export default function Ranked() {
 
   if (!rankedStatus) {
     return (
-      <div className="flex items-center justify-center py-32">
-        <div className="bg-bq-white border border-bq-hair shadow-bq-soft p-10 rounded-2xl text-center max-w-md">
-          <span className="material-symbols-outlined text-bq-ruby text-5xl mb-4 block">error</span>
-          <p className="text-bq-ink font-bold text-lg mb-2">{t('ranked.loadError')}</p>
-          <p className="text-bq-ink2 text-sm mb-6">{t('ranked.tryAgainLater')}</p>
-          <button onClick={refetch} className="bg-bq-action text-bq-ink shadow-bq-action font-black px-8 py-3 rounded-xl text-sm uppercase tracking-widest active:scale-95">
+      <div className="relative flex items-center justify-center py-24 px-4">
+        <PlaceBackdrop place="arena" veil="strong" />
+        <div className="max-w-md w-full p-8 text-center bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card">
+          <img src="/images/lk/hero-lost.webp" alt="" aria-hidden className="mx-auto h-32 mb-3" />
+          <p className="m-0 mb-2 font-display text-[22px] font-extrabold">{t('ranked.loadError')}</p>
+          <p className="m-0 mb-6 font-read text-[15px] text-bq-ink2">{t('ranked.tryAgainLater')}</p>
+          <button onClick={refetch} className="lk-btn text-bq-ink text-[16px]">
             {t('common.retry')}
           </button>
         </div>
@@ -186,10 +186,11 @@ export default function Ranked() {
   const resetTimeLeft = timeLeft || '--:--:--'
 
   return (
-    <main data-testid="ranked-page" className="max-w-5xl mx-auto pb-[120px] md:pb-10 text-bq-ink">
+    <main data-testid="ranked-page" className="relative max-w-5xl mx-auto pb-[150px] md:pb-10 text-bq-ink">
+      <PlaceBackdrop place="arena" veil="mid" />
       <RankedHeader />
 
-      <div className="space-y-4 md:space-y-[18px]">
+      <div className="space-y-5">
         <TierProgressCard
           currentTier={currentTier}
           nextTier={nextTier}
@@ -203,28 +204,24 @@ export default function Ranked() {
           <CoverageCard coverage={coverage} onUnlockNext={handleUnlockNextWeek} />
         )}
 
-        {/* Stats + Action — 1-col stack on mobile, 2-col 1.55fr/1fr on md+. */}
-        <div className="grid grid-cols-1 md:grid-cols-[1.55fr_1fr] gap-[18px]">
+        {/* today: energy + three medals | the gate into a match (md+) */}
+        <div className="grid grid-cols-1 md:grid-cols-[1.55fr_1fr] gap-5">
 
-          {/* ─── Stats composite card ──────────────────────────────── */}
           <section
             data-testid="ranked-stats-card"
-            className="rounded-[22px] border border-bq-hair bg-bq-white shadow-bq-soft overflow-hidden"
+            className="rounded-bq border-[3px] border-bq-ink bg-bq-white shadow-bq-card overflow-hidden"
           >
-            {/* Energy section */}
-            <div className="px-5 md:px-7 pt-5 md:pt-6 pb-5 md:pb-[22px] border-b border-bq-hair">
-              <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
-                <div className="flex items-center gap-2 text-bq-ink2">
-                  <span className="material-symbols-outlined text-[17px] text-bq-amberd">bolt</span>
-                  <span className="text-[11px] font-bold uppercase tracking-[1.3px]">
-                    {t('ranked.energy')}
-                  </span>
+            {/* energy */}
+            <div className="px-5 md:px-7 pt-5 pb-5 border-b-2 border-dashed border-bq-hair">
+              <div className="flex items-center justify-between flex-wrap gap-2 mb-2">
+                <div className="flex items-center gap-2">
+                  <img src="/images/lk/heart.webp" alt="" aria-hidden className="h-7" />
+                  <span className="font-display text-[19px] font-extrabold">{t('ranked.energy')}</span>
                 </div>
                 <div
                   data-testid="ranked-reset-timer"
-                  className="text-bq-ink3 text-[12px] inline-flex items-center gap-1"
+                  className="px-2.5 py-0.5 bg-bq-cream border-2 border-bq-ink rounded-full text-[12.5px] font-bold tabular-nums"
                 >
-                  <span className="material-symbols-outlined text-[13px]">schedule</span>
                   {t('ranked.energyRecoverIn', { time: resetTimeLeft })}
                 </div>
               </div>
@@ -232,172 +229,101 @@ export default function Ranked() {
               <div className="flex items-baseline gap-2 mb-3 flex-wrap">
                 <span
                   data-testid="ranked-energy-display"
-                  className="text-bq-amberd text-[36px] md:text-[40px] font-extrabold leading-none tracking-tight"
+                  className="font-display text-[44px] md:text-[50px] font-extrabold leading-none tabular-nums [text-shadow:0_.06em_0_#FFC93C]"
                 >
                   {energy}
                 </span>
-                <span className="text-bq-ink3 text-[14px] md:text-[15px] font-semibold">
-                  / {energyMax}
-                </span>
+                <span className="text-bq-ink3 text-[16px] font-extrabold">/ {energyMax}</span>
                 {!isOutOfEnergy && (
                   <span
                     data-testid="ranked-energy-status"
-                    className="ml-auto inline-flex items-center gap-1.5 text-[11px] font-semibold rounded-full px-3 py-1 bg-bq-emerald/10 text-bq-emerald"
+                    className="ml-auto px-3 py-1 bg-bq-leaf border-2 border-bq-ink rounded-full text-[13px] font-extrabold"
                   >
-                    <span className="material-symbols-outlined text-[14px]" style={FILL_1}>check_circle</span>
-                    {t('ranked.energyEnoughForNQuestions', { count: questionsLeftFromEnergy })}
+                    ✓ {t('ranked.energyEnoughForNQuestions', { count: questionsLeftFromEnergy })}
                   </span>
                 )}
                 {isOutOfEnergy && (
-                  <span className="ml-auto text-[11px] text-bq-ink3 font-semibold">
+                  <span className="ml-auto px-3 py-1 bg-bq-inset border-2 border-bq-ink/40 rounded-full text-[13px] font-extrabold text-bq-ink2">
                     {t('ranked.outOfEnergy')}
                   </span>
                 )}
               </div>
 
-              <div className="bg-bq-track border-2 border-bq-ink rounded-full h-3 overflow-hidden">
-                <div
-                  className="h-full rounded-full transition-[width] duration-500"
-                  style={{
-                    width: `${energyPct}%`,
-                    background: '#FFC93C',
-                  }}
-                />
-              </div>
+              <TrackBar pct={energyPct} fill="bg-bq-ruby" className="h-4" />
             </div>
 
-            {/* 3-mini stats row — internal grid w/ desktop dividers. */}
-            <div className="grid grid-cols-3" data-testid="ranked-today-progress">
-              {/* Streak */}
-              <div
-                data-testid="ranked-streak-card"
-                className="px-3 md:px-4 py-4 md:py-[18px] text-center border-r border-bq-hair"
-              >
-                <div className="text-[10px] font-bold uppercase tracking-[1.2px] text-bq-ink3 mb-2">
-                  {t('ranked.streakHeader')}
-                </div>
-                <div className="mb-1">
-                  <span
-                    className="material-symbols-outlined text-[17px] text-bq-ember"
-                    style={FILL_1}
-                  >
-                    local_fire_department
-                  </span>
-                </div>
-                <div className="text-[22px] md:text-[24px] font-extrabold leading-none tracking-tight text-bq-ember">
+            {/* streak, questions today, points today */}
+            <div className="grid grid-cols-3 px-2 py-5" data-testid="ranked-today-progress">
+              <div data-testid="ranked-streak-card" className="flex flex-col items-center text-center px-1">
+                <Medal size={58}><img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="h-9" /></Medal>
+                <div className="mt-3 font-display text-[24px] font-extrabold leading-none">
                   <span data-testid="ranked-streak-count">{streak}</span>
-                  <span className="text-bq-ink3 text-[13px] font-semibold ml-1">
-                    {t('ranked.streakDaysShort', 'ngày')}
-                  </span>
+                  <span className="text-bq-ink3 text-[13px] font-extrabold ml-1">{t('ranked.streakDaysShort', 'ngày')}</span>
                 </div>
-                <div className="hidden md:block text-[11px] text-bq-ink3 mt-1.5">
+                <div className="mt-2 text-[13px] font-extrabold text-bq-ink2 leading-tight">{t('ranked.streakHeader')}</div>
+                <div className="hidden md:block mt-1 font-read text-[12.5px] text-bq-ink3">
                   {streak > 0 ? t('ranked.streakKeepGoing') : t('ranked.streakBadgeHint')}
                 </div>
               </div>
 
-              {/* Câu hôm nay */}
-              <div
-                data-testid="ranked-questions-card"
-                className="px-3 md:px-4 py-4 md:py-[18px] text-center border-r border-bq-hair"
-              >
-                <div className="text-[10px] font-bold uppercase tracking-[1.2px] text-bq-ink3 mb-2">
-                  {t('ranked.questionsTodayShort')}
-                </div>
-                <div className="mb-1">
-                  <span className="material-symbols-outlined text-[17px] text-bq-ink2">quiz</span>
-                </div>
-                <div className="text-[22px] md:text-[24px] font-extrabold leading-none tracking-tight text-bq-ink">
+              <div data-testid="ranked-questions-card" className="flex flex-col items-center text-center px-1">
+                <Medal size={58}><img src="/images/lk/scroll.webp" alt="" aria-hidden className="h-9" /></Medal>
+                <div className="mt-3 font-display text-[24px] font-extrabold leading-none">
                   <span data-testid="ranked-questions-counted">{questionsAnswered}</span>
-                  <span className="text-bq-ink3 text-[13px] font-semibold ml-1">
-                    / {questionsCap}
-                  </span>
+                  <span className="text-bq-ink3 text-[13px] font-extrabold ml-1">/ {questionsCap}</span>
                 </div>
-                <div className="hidden md:block text-[11px] text-bq-ink3 mt-1.5">
+                <div className="mt-2 text-[13px] font-extrabold text-bq-ink2 leading-tight">{t('ranked.questionsTodayShort')}</div>
+                <div className="hidden md:block mt-1 font-read text-[12.5px] text-bq-ink3">
                   {t('ranked.capPerDay', { count: questionsCap })}
                 </div>
               </div>
 
-              {/* Điểm hôm nay */}
-              <div
-                data-testid="ranked-points-card"
-                className="px-3 md:px-4 py-4 md:py-[18px] text-center"
-              >
-                <div className="text-[10px] font-bold uppercase tracking-[1.2px] text-bq-ink3 mb-2">
-                  {t('ranked.pointsTodayShort')}
-                </div>
-                <div className="mb-1">
-                  <span className="material-symbols-outlined text-[17px] text-bq-ink2">military_tech</span>
-                </div>
-                <div
-                  data-testid="ranked-points-today"
-                  className="text-[22px] md:text-[24px] font-extrabold leading-none tracking-tight text-bq-ink"
-                >
+              <div data-testid="ranked-points-card" className="flex flex-col items-center text-center px-1">
+                <Medal size={58}><img src="/images/lk/icon-trophy.webp" alt="" aria-hidden className="h-9" /></Medal>
+                <div data-testid="ranked-points-today" className="mt-3 font-display text-[24px] font-extrabold leading-none">
                   {pointsToday}
                 </div>
-                <div className="hidden md:block text-[11px] text-bq-ink3 mt-1.5">
+                <div className="mt-2 text-[13px] font-extrabold text-bq-ink2 leading-tight">{t('ranked.pointsTodayShort')}</div>
+                <div className="hidden md:block mt-1 font-read text-[12.5px] text-bq-ink3">
                   {t('ranked.pointsCountsToSeason', 'Cộng vào điểm mùa')}
                 </div>
               </div>
             </div>
           </section>
 
-          {/* ─── Action card (md+) ─────────────────────────────────── */}
+          {/* the gate into a match (md+); phones use the sticky footer */}
           <section
             data-testid="ranked-action-card"
-            className="hidden md:flex flex-col relative overflow-hidden rounded-[22px] border border-bq-hair bg-bq-white shadow-bq-rub p-6 md:p-7"
+            className="hidden md:flex flex-col items-center text-center rounded-bq border-[3px] border-bq-ink bg-bq-cream shadow-bq-card p-6"
           >
-            <div
-              aria-hidden
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background:
-                  'radial-gradient(50% 70% at 80% 10%, rgba(179,69,47,0.12), transparent 60%)',
-              }}
-            />
-            <div className="relative z-10 flex flex-col h-full">
-              <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[1.8px] text-bq-ruby">
-                <span className="w-4 h-px bg-bq-ruby" />
-                {t('ranked.actionEyebrow', 'Bắt đầu trận đấu')}
-              </div>
-              <h2 className="font-display text-[20px] font-extrabold mt-2.5 leading-snug tracking-tight text-bq-ink">
-                {t('ranked.actionTitleLeading', 'Sẵn sàng')}{' '}
-                <span className="font-headline italic font-semibold text-bq-ruby">
-                  {t('ranked.actionTitleAccent', 'leo hạng')}
-                </span>
-                ?
-              </h2>
-              <p className="text-[12px] text-bq-ink2 mt-2 leading-relaxed">
-                {t('ranked.energyExplainer')}
-              </p>
-
+            <img src={canPlay ? '/images/lk/hero.webp' : '/images/lk/hero-rest.webp'} alt="" aria-hidden className="h-[110px]" />
+            <h2 className="m-0 mt-2 font-display text-[24px] font-extrabold leading-snug">
+              {t('ranked.actionTitleLeading', 'Sẵn sàng')} {t('ranked.actionTitleAccent', 'leo hạng')}?
+            </h2>
+            <p className="m-0 mt-1.5 font-read text-[14px] text-bq-ink2 leading-relaxed">
+              {t('ranked.energyExplainer')}
+            </p>
+            <div className="mt-auto pt-5 w-full">
               <button
                 data-testid="ranked-start-btn-desktop"
                 onClick={canPlay ? startRankedQuiz : undefined}
                 disabled={!canPlay}
-                className="mt-auto pt-4 group"
+                className={`lk-btn w-full text-[17px] ${canPlay ? 'text-bq-ink' : '!bg-bq-inset text-bq-ink2'}`}
               >
-                <div
-                  className={`flex items-center justify-center gap-2 rounded-[13px] py-4 px-6 font-bold text-[15px] transition-transform ${
-                    canPlay
-                      ? 'bg-bq-action text-bq-ink shadow-bq-action hover:-translate-y-0.5 active:translate-y-0'
-                      : 'bg-bq-inset border border-bq-hair text-bq-ink3 cursor-not-allowed opacity-70'
-                  }`}
-                >
-                  <span className="material-symbols-outlined text-[22px]" style={FILL_1}>play_arrow</span>
-                  {canPlay
-                    ? t('ranked.ctaPlayMain')
-                    : capReached
-                      ? t('ranked.ctaCapMain')
-                      : t('ranked.ctaNoEnergyMain')}
-                </div>
-                <div className="text-center text-[11px] text-bq-ink3 mt-2.5">
-                  {canPlay
-                    ? t('ranked.ctaPlaySub', { count: questionsLeftFromEnergy })
-                    : capReached
-                      ? t('ranked.ctaCapSub', { time: resetTimeLeft })
-                      : t('ranked.ctaNoEnergySub', { time: resetTimeLeft })}
-                </div>
+                {canPlay && <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-6" />}
+                {canPlay
+                  ? t('ranked.ctaPlayMain')
+                  : capReached
+                    ? t('ranked.ctaCapMain')
+                    : t('ranked.ctaNoEnergyMain')}
               </button>
+              <p className="m-0 mt-2.5 text-[13px] font-bold text-bq-ink2">
+                {canPlay
+                  ? t('ranked.ctaPlaySub', { count: questionsLeftFromEnergy })
+                  : capReached
+                    ? t('ranked.ctaCapSub', { time: resetTimeLeft })
+                    : t('ranked.ctaNoEnergySub', { time: resetTimeLeft })}
+              </p>
             </div>
           </section>
         </div>
