@@ -44,14 +44,17 @@ Câu hỏi và đoạn trích theo **Kinh Thánh Bản Truyền Thống Hiệu �
 
 | Tệp | Nội dung |
 | --- | --- |
-| `pilot.src.json` | Nguồn do người viết và sửa. Mỗi câu gồm: `story`, `ref` (mã sách theo trang HTTLVN, ví dụ `sa 1:1`), `q`, `a`, `wrong` (3 phương án nhiễu), `why`, `quote` |
-| `build.py` | Đối chiếu trích dẫn với RVV11, kiểm tra luật, xáo đáp án, rồi xuất định dạng câu hỏi gốc |
-| `pilot_quiz.json` | Kết quả dựng (đừng sửa tay) |
-| `stories.md` | Danh sách 120 câu chuyện cốt lõi |
+| `pilot.src.json`, `b02.src.json`, … | Nguồn do người viết và sửa, mỗi đợt khoảng 10 câu chuyện. Mỗi câu gồm: `story`, `ref` (mã sách theo trang HTTLVN, ví dụ `sa 1:1`), `q`, `a`, `wrong` (3 phương án nhiễu), `why`, `quote` |
+| `build.py` | Đối chiếu trích dẫn với RVV11, kiểm tra luật, xếp đáp án đúng rải đều A–D, rồi xuất định dạng câu hỏi gốc |
+| `pilot_quiz.json`, `b02_quiz.json`, … | Kết quả dựng (đừng sửa tay) |
+| `stories.md` | Danh sách 120 câu chuyện cốt lõi, dấu ✓ là chuyện đã viết |
 
 ```
-python content/easy-core/build.py pilot
+python content/easy-core/build.py pilot b02        # dựng và kiểm tra từng đợt
+python content/easy-core/build.py show "sa 3:1-7"  # in đoạn Kinh Thánh RVV11 để viết câu hỏi
 ```
+
+Bản thử giữ cách xáo đáp án cũ vì kết quả chơi thử đã ghi theo thứ tự đó; các đợt sau rải đáp án đúng đều qua A–D.
 
 `pilot_quiz.json` cố ý nằm **ngoài** `apps/api/src/main/resources/seed/questions/`, nên QuestionSeeder không nạp nó. Khi bộ câu được duyệt, chép file vào thư mục đó với tên khớp mẫu `*_quiz.json` rồi nạp theo quy trình seed một lần (xem `docs/dev/seeding.md`).
 

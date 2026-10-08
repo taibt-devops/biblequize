@@ -1,23 +1,23 @@
 # 120 câu chuyện cốt lõi
 
-Đây là những câu chuyện, nhân vật và câu gốc mà người đi nhóm hay đi Trường Chúa nhật đều từng nghe. Mỗi chuyện có khoảng 10 câu Dễ. Dấu ✓ là chuyện đã có trong bản thử.
+Đây là những câu chuyện, nhân vật và câu gốc mà người đi nhóm hay đi Trường Chúa nhật đều từng nghe. Mỗi chuyện có khoảng 10 câu Dễ (chuyện ngắn có thể ít hơn). Dấu ✓ là chuyện đã viết xong câu hỏi.
 
 ## Cựu Ước (60)
 
 | # | Câu chuyện | Đoạn Kinh Thánh |
 | --- | --- | --- |
 | 1 | Sáng tạo ✓ | Sáng Thế Ký 1–2 |
-| 2 | Vườn Ê-đen và tội lỗi đầu tiên | Sáng Thế Ký 3 |
-| 3 | Ca-in và A-bên | Sáng Thế Ký 4 |
+| 2 | Vườn Ê-đen và tội lỗi đầu tiên ✓ | Sáng Thế Ký 3 |
+| 3 | Ca-in và A-bên ✓ | Sáng Thế Ký 4 |
 | 4 | Nô-ê và trận lụt ✓ | Sáng Thế Ký 6–9 |
-| 5 | Tháp Ba-bên | Sáng Thế Ký 11 |
-| 6 | Đức Chúa Trời gọi Áp-ram | Sáng Thế Ký 12 |
-| 7 | Lời hứa: dòng dõi như sao trời | Sáng Thế Ký 15 |
-| 8 | Sô-đôm và vợ Lót | Sáng Thế Ký 19 |
-| 9 | Y-sác ra đời | Sáng Thế Ký 21 |
-| 10 | Áp-ra-ham dâng Y-sác | Sáng Thế Ký 22 |
-| 11 | Rê-bê-ca bên giếng nước | Sáng Thế Ký 24 |
-| 12 | Ê-sau bán quyền trưởng nam | Sáng Thế Ký 25 |
+| 5 | Tháp Ba-bên ✓ | Sáng Thế Ký 11 |
+| 6 | Đức Chúa Trời gọi Áp-ram ✓ | Sáng Thế Ký 12 |
+| 7 | Lời hứa: dòng dõi như sao trời ✓ | Sáng Thế Ký 15 |
+| 8 | Sô-đôm và vợ Lót ✓ | Sáng Thế Ký 19 |
+| 9 | Y-sác ra đời ✓ | Sáng Thế Ký 21 |
+| 10 | Áp-ra-ham dâng Y-sác ✓ | Sáng Thế Ký 22 |
+| 11 | Rê-bê-ca bên giếng nước ✓ | Sáng Thế Ký 24 |
+| 12 | Ê-sau bán quyền trưởng nam ✓ | Sáng Thế Ký 25 |
 | 13 | Gia-cốp và chiếc thang | Sáng Thế Ký 28 |
 | 14 | Gia-cốp được đổi tên là Y-sơ-ra-ên | Sáng Thế Ký 32 |
 | 15 | Giô-sép và chiếc áo nhiều màu | Sáng Thế Ký 37 |

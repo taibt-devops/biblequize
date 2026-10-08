@@ -25,17 +25,35 @@ from pathlib import Path
 HERE = Path(__file__).parent
 CACHE = HERE / ".cache" / "rvv11"
 
-# site code -> (seed book name, RVV11 book name, testament)
-BOOKS = {
-    "sa": ("Genesis", "Sáng Thế Ký", "Cựu Ước"),
-    "xu": ("Exodus", "Xuất Ai Cập Ký", "Cựu Ước"),
-    "1sa": ("1 Samuel", "1 Sa-mu-ên", "Cựu Ước"),
-    "da": ("Daniel", "Đa-ni-ên", "Cựu Ước"),
-    "gion": ("Jonah", "Giô-na", "Cựu Ước"),
-    "mat": ("Matthew", "Ma-thi-ơ", "Tân Ước"),
-    "lu": ("Luke", "Lu-ca", "Tân Ước"),
-    "gi": ("John", "Giăng", "Tân Ước"),
-}
+# kinhthanh.httlvn.org book codes in canonical order, with the seed book name (Question.book)
+# and the Vietnamese name used in references. Exodus follows RVV11 ("Ai Cập"); the rest use
+# the names churchgoers already know.
+_CODES = ("sa xu le dan phu gios cac ru 1sa 2sa 1vua 2vua 1su 2su exo ne et giop thi ch tr nha es "
+          "gie ca exe da os gio am ap gion mi na ha so ag xa ma "
+          "mat mac lu gi cong ro 1co 2co ga eph phi co 1te 2te 1ti 2ti tit phil he gia 1phi 2phi "
+          "1gi 2gi 3gi giu kh").split()
+_SEED = ["Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy", "Joshua", "Judges", "Ruth",
+         "1 Samuel", "2 Samuel", "1 Kings", "2 Kings", "1 Chronicles", "2 Chronicles", "Ezra",
+         "Nehemiah", "Esther", "Job", "Psalms", "Proverbs", "Ecclesiastes", "Song of Songs", "Isaiah",
+         "Jeremiah", "Lamentations", "Ezekiel", "Daniel", "Hosea", "Joel", "Amos", "Obadiah", "Jonah",
+         "Micah", "Nahum", "Habakkuk", "Zephaniah", "Haggai", "Zechariah", "Malachi",
+         "Matthew", "Mark", "Luke", "John", "Acts", "Romans", "1 Corinthians", "2 Corinthians",
+         "Galatians", "Ephesians", "Philippians", "Colossians", "1 Thessalonians", "2 Thessalonians",
+         "1 Timothy", "2 Timothy", "Titus", "Philemon", "Hebrews", "James", "1 Peter", "2 Peter",
+         "1 John", "2 John", "3 John", "Jude", "Revelation"]
+_VN = ["Sáng Thế Ký", "Xuất Ai Cập Ký", "Lê-vi Ký", "Dân Số Ký", "Phục Truyền Luật Lệ Ký", "Giô-suê",
+       "Các Quan Xét", "Ru-tơ", "1 Sa-mu-ên", "2 Sa-mu-ên", "1 Các Vua", "2 Các Vua", "1 Sử Ký",
+       "2 Sử Ký", "E-xơ-ra", "Nê-hê-mi", "Ê-xơ-tê", "Gióp", "Thi Thiên", "Châm Ngôn", "Truyền Đạo",
+       "Nhã Ca", "Ê-sai", "Giê-rê-mi", "Ca Thương", "Ê-xê-chi-ên", "Đa-ni-ên", "Ô-sê", "Giô-ên",
+       "A-mốt", "Áp-đia", "Giô-na", "Mi-chê", "Na-hum", "Ha-ba-cúc", "Sô-phô-ni", "A-ghê",
+       "Xa-cha-ri", "Ma-la-chi",
+       "Ma-thi-ơ", "Mác", "Lu-ca", "Giăng", "Công Vụ Các Sứ Đồ", "Rô-ma", "1 Cô-rinh-tô",
+       "2 Cô-rinh-tô", "Ga-la-ti", "Ê-phê-sô", "Phi-líp", "Cô-lô-se", "1 Tê-sa-lô-ni-ca",
+       "2 Tê-sa-lô-ni-ca", "1 Ti-mô-thê", "2 Ti-mô-thê", "Tít", "Phi-lê-môn", "Hê-bơ-rơ", "Gia-cơ",
+       "1 Phi-e-rơ", "2 Phi-e-rơ", "1 Giăng", "2 Giăng", "3 Giăng", "Giu-đe", "Khải Huyền"]
+assert len(_CODES) == len(_SEED) == len(_VN) == 66
+# site code -> (seed book name, Vietnamese book name, testament)
+BOOKS = {c: (s, v, "Cựu Ước" if i < 39 else "Tân Ước") for i, (c, s, v) in enumerate(zip(_CODES, _SEED, _VN))}
 REF = re.compile(r"^([a-z0-9]+) (\d+):(\d+)(?:-(\d+))?$")
 SPAN = re.compile(r'<span class="verse ([a-z0-9]+)_(\d+)_(\d+)">(.*?)</span>', re.S)
 MAX_QUESTION_WORDS = 20
@@ -75,6 +93,9 @@ def build(name: str) -> int:
     src = json.loads((HERE / f"{name}.src.json").read_text(encoding="utf-8"))
     out, problems = [], []
     rng = random.Random(f"easy-core-{name}")
+    # Spread the correct answer evenly over A-D: each run of 4 questions uses every slot once.
+    # The pilot keeps its original plain shuffle because play-test results refer to that order.
+    balanced, slots = name != "pilot", []
     for i, q in enumerate(src, 1):
         tag = f"#{i} [{q['ref']}] {q['q'][:40]}"
         m = REF.match(q["ref"])
@@ -96,7 +117,16 @@ def build(name: str) -> int:
                 problems.append(f"{tag}: option '{o}' too long")
         if re.search(r"\b\d+:\d+\b|\bchương \d+", q["q"]):
             problems.append(f"{tag}: easy questions must not cite chapter/verse")
-        rng.shuffle(options)
+        if balanced:
+            if not slots:
+                slots = [0, 1, 2, 3]
+                rng.shuffle(slots)
+            wrong = list(q["wrong"])
+            rng.shuffle(wrong)
+            pos = slots.pop()
+            options = wrong[:pos] + [q["a"]] + wrong[pos:]
+        else:
+            rng.shuffle(options)
         seed_book, vn_book, testament = BOOKS[code]
         ref_vn = f"{vn_book} {chap}:{v1}" + (f"-{v2}" if v2 != v1 else "")
         item = {
@@ -122,5 +152,24 @@ def build(name: str) -> int:
     return 0
 
 
+def show(spec: str) -> None:
+    """Print verses for writing: `python build.py show sa 3` or `show sa 3:1-7`."""
+    code, _, rest = spec.partition(" ")
+    chap, _, span = rest.partition(":")
+    verses = chapter(code, int(chap))
+    lo, _, hi = span.partition("-")
+    lo = int(lo) if lo else 1
+    hi = int(hi) if hi else (int(lo) if span and not hi else max(map(int, verses)))
+    for v in range(lo, hi + 1):
+        if str(v) in verses:
+            print(f"{v} {verses[str(v)]}")
+
+
 if __name__ == "__main__":
-    sys.exit(build(sys.argv[1] if len(sys.argv) > 1 else "pilot"))
+    if len(sys.argv) > 1 and sys.argv[1] == "show":
+        for spec in sys.argv[2:]:
+            print(f"== {spec}")
+            show(spec)
+        sys.exit(0)
+    names = sys.argv[1:] or ["pilot"]
+    sys.exit(max(build(n) for n in names))
