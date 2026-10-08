@@ -4,6 +4,7 @@ import { SkeletonCard } from '../../components/Skeleton'
 import MemoryVerseItem from '../../components/memorize/MemoryVerseItem'
 import { useBookName } from '../../hooks/useBookName'
 import { useAddMemoryVerse, useDeleteMemoryVerse, useMemoryVerses } from '../../hooks/useMemoryVerses'
+import { PlaceBackdrop, Plaque } from '../../components/lk/Place'
 import { formatReference, SUGGESTED_VERSES } from '../../utils/memorize/schedule'
 
 /** /practice/memorize — the user's memory verses (SPEC_USER §5.1.1). */
@@ -18,13 +19,11 @@ export default function MemorizeList() {
   const dueCount = data?.dueCount ?? 0
 
   return (
-    <div data-testid="memorize-list-page" className="space-y-6">
-      <section>
-        <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-bq-amberd/90">
-          {t('memorize.list.eyebrow')}
-        </p>
-        <h1 className="mb-1 font-display text-2xl font-bold leading-tight text-bq-ink">{t('memorize.list.title')}</h1>
-        <p className="text-sm text-bq-ink2">{t('memorize.list.desc')}</p>
+    <div data-testid="memorize-list-page" className="relative mx-auto max-w-3xl space-y-6">
+      <PlaceBackdrop place="study" veil="strong" focus="30% 40%" />
+      <section className="space-y-3">
+        <Plaque className="text-[28px] md:text-[34px]">{t('memorize.list.title')}</Plaque>
+        <p className="m-0 font-read text-[15px] text-bq-ink2">{t('memorize.list.desc')}</p>
       </section>
 
       <div className="flex flex-wrap gap-3">
@@ -33,7 +32,7 @@ export default function MemorizeList() {
           data-testid="memorize-start-review-btn"
           disabled={dueCount === 0}
           onClick={() => navigate('/practice/memorize/session')}
-          className="rounded-xl bg-bq-action px-5 py-2.5 text-sm font-semibold text-bq-ink shadow-bq-action transition hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-none"
+          className="lk-btn text-bq-ink text-[16px]"
         >
           {dueCount > 0 ? t('memorize.list.reviewDue', { count: dueCount }) : t('memorize.list.noneDue')}
         </button>
@@ -41,7 +40,7 @@ export default function MemorizeList() {
           type="button"
           data-testid="memorize-add-btn"
           onClick={() => navigate('/practice/memorize/add')}
-          className="rounded-xl border border-bq-hair bg-bq-white px-5 py-2.5 text-sm font-semibold text-bq-ink shadow-bq-soft transition hover:border-bq-sapphire/40"
+          className="lk-btn lk-btn-2 text-bq-ink text-[16px]"
         >
           + {t('memorize.list.add')}
         </button>
@@ -68,7 +67,8 @@ export default function MemorizeList() {
       )}
 
       {data && data.items.length === 0 && (
-        <section data-testid="memorize-empty" className="rounded-2xl border border-bq-hair bg-bq-white p-6 text-center shadow-bq-soft">
+        <section data-testid="memorize-empty" className="rounded-bq border-[3px] border-bq-ink bg-bq-white p-6 text-center shadow-bq-card">
+          <img src="/images/lk/scroll.webp" alt="" aria-hidden className="mx-auto mb-2 h-14" />
           <h2 className="font-display text-lg font-semibold text-bq-ink">{t('memorize.list.emptyTitle')}</h2>
           <p className="mt-1 text-sm text-bq-ink2">{t('memorize.list.emptyDesc')}</p>
           <div className="mt-4 flex flex-wrap justify-center gap-2">
@@ -79,7 +79,7 @@ export default function MemorizeList() {
                 data-testid="memorize-suggestion"
                 disabled={addVerse.isPending}
                 onClick={() => addVerse.mutate(ref)}
-                className="rounded-full border border-bq-hair bg-bq-inset px-3 py-1.5 text-xs font-semibold text-bq-ink hover:border-bq-sapphire/40 disabled:opacity-50"
+                className="rounded-full border-2 border-bq-ink bg-bq-cream px-3 py-1.5 text-[14px] font-bold text-bq-ink hover:bg-bq-amber disabled:opacity-50"
               >
                 {formatReference(bookName(ref.book, lang), ref.chapter, ref.verseStart, ref.verseEnd)}
               </button>

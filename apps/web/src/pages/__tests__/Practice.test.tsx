@@ -148,7 +148,7 @@ describe('Practice Mode', () => {
     await user.click(screen.getByText('Khó'))
     // The "Khó" button should now be active (has check_circle icon)
     const hardBtn = screen.getByText('Khó').closest('button')
-    expect(hardBtn?.className).toContain('ring-bq-sapphire')
+    expect(hardBtn).toHaveAttribute('aria-pressed', 'true')
   })
 
   it('clicking start calls API and navigates', async () => {

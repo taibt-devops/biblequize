@@ -42,7 +42,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-5 | Kết quả Quiz, Kết quả Đấu Hạng | (cuối `/quiz`) | lữ khách ăn mừng, sao, huy chương số liệu |
 | LKF-6 | Hành trình 66 sách | `/journey` | theo artboard Journey đã duyệt (trạm sách trên bản đồ, bảng chi tiết, 8 vùng, huy hiệu) |
 | LKF-7 | Bộ "địa điểm" dùng chung ✅ | — | `components/lk/Place.tsx`: `PlaceBackdrop`, `Plaque` (biển gỗ), `ScrollPanel`, `Medal`, `TrackBar` + 8 tranh địa điểm `place-*.webp` |
-| LKF-8 | Luyện Tập, Học Thuộc (3 màn), Ôn tập | `/practice`, `/practice/memorize*`, `/review` | phòng đọc |
+| LKF-8 | Luyện Tập, Học Thuộc (3 màn), Ôn tập ✅ | `/practice`, `/practice/memorize*`, `/review` | phòng đọc |
 | LKF-9 | Đấu Hạng, Bài kiểm tra cơ bản | `/ranked`, `/basic-quiz` | sân đấu |
 | LKF-10 | Thử thách hôm nay | `/daily` | lá thư bồ câu mang tới |
 | LKF-11 | Xếp hạng | `/leaderboard` | đỉnh đồi, bục vinh danh |
@@ -55,3 +55,13 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-18 | Chủ đề tuần, Bí ẩn, Tốc độ, Bộ đề của tôi, Trợ giúp, Chính sách, Điều khoản | … | |
 | LKF-19 | Admin | `/admin/*` | **giữ dạng công cụ** (đã sang màu Lữ Khách ở LKD-18) — màn làm việc cần gọn, không đưa cảnh game vào |
 | LKF-20 | Hồi quy + trang nghiệm thu trước/sau + báo cáo | — | |
+
+### Nhật ký từng màn
+
+- LKF-8 Luyện Tập · Học Thuộc · Ôn tập — phòng đọc
+  - Status: [x] DONE
+  - Luyện Tập: tranh phòng đọc, biển gỗ "Luyện Tập" (sửa lỗi dính chữ "LuyệnTập"), form trên cuộn giấy; số câu là huy chương bấm chọn, độ khó là chip (`aria-pressed`), thanh trượt gỗ (`lkClass.range`), công tắc giải thích có đèn lồng; thẻ "làm lại câu sai", lượt gần đây có huy chương %
+  - Học Thuộc (danh sách / thêm câu / phiên ôn): cùng tranh với lớp kem đậm (`veil="strong"`) vì trang nhiều chữ; thẻ câu viền mực, chấm thuộc vàng; nút vàng / nút lá
+  - Ôn tập: biển gỗ + chip điểm & thời gian, thanh lọc dính dưới app bar, mỗi câu là tờ giấy có dải trạng thái (lá = đúng, đỏ = sai), đáp án viền mực có chữ A–D / ✓ / ✗, giải thích dạng ghi chú nét đứt; đánh dấu là ngôi sao vàng (`aria-pressed`, nhãn "Đánh dấu câu này")
+  - Quyết định: bỏ chữ in hoa — `review.questionNumber` "CÂU 01" → "Câu 01"; độ khó hiện tiếng Việt qua `practice.easy|medium|hard` (trước là "Easy/Medium/Hard" gõ cứng); test chọn độ khó đọc `aria-pressed` thay vì class `ring-bq-sapphire`
+  - **Spec impact**: [x] None · **Spec strategy**: [x] (c)

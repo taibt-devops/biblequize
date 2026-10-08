@@ -1385,6 +1385,7 @@
     "wrong": "Wrong ({{count}})",
     "correct": "Correct ({{count}})",
     "questionNumber": "Q {{number}}",
+    "bookmark": "Bookmark this question",
     "chapter": "Chapter {{chapter}}",
     "yourAnswer": "Your answer",
     "correctAnswer": "Correct answer",

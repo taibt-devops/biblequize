@@ -53,9 +53,9 @@ describe('Review Page', () => {
 
   it('renders all question cards', () => {
     renderReview()
-    expect(screen.getByText('CÂU 01')).toBeInTheDocument()
-    expect(screen.getByText('CÂU 02')).toBeInTheDocument()
-    expect(screen.getByText('CÂU 03')).toBeInTheDocument()
+    expect(screen.getByText('Câu 01')).toBeInTheDocument()
+    expect(screen.getByText('Câu 02')).toBeInTheDocument()
+    expect(screen.getByText('Câu 03')).toBeInTheDocument()
   })
 
   it('shows correct answer with green indicator', () => {
@@ -91,21 +91,22 @@ describe('Review Page', () => {
   it('filter "Câu sai" shows only wrong', async () => {
     renderReview()
     await userEvent.setup().click(screen.getByText('Câu sai (1)'))
-    expect(screen.getByText('CÂU 02')).toBeInTheDocument()
-    expect(screen.queryByText('CÂU 01')).not.toBeInTheDocument()
+    expect(screen.getByText('Câu 02')).toBeInTheDocument()
+    expect(screen.queryByText('Câu 01')).not.toBeInTheDocument()
   })
 
   it('filter "Câu đúng" shows only correct', async () => {
     renderReview()
     await userEvent.setup().click(screen.getByText('Câu đúng (2)'))
-    expect(screen.getByText('CÂU 01')).toBeInTheDocument()
-    expect(screen.queryByText('CÂU 02')).not.toBeInTheDocument()
+    expect(screen.getByText('Câu 01')).toBeInTheDocument()
+    expect(screen.queryByText('Câu 02')).not.toBeInTheDocument()
   })
 
   it('bookmark toggle calls API', async () => {
     renderReview()
-    const stars = screen.getAllByText('star')
+    const stars = screen.getAllByRole('button', { name: 'Đánh dấu câu này' })
     await userEvent.setup().click(stars[0])
+    expect(stars[0]).toHaveAttribute('aria-pressed', 'true')
     expect(mockApiPost).toHaveBeenCalledWith('/api/me/bookmarks', { questionId: 'q1' })
   })
 
@@ -128,8 +129,8 @@ describe('Review Page', () => {
 
   it('shows difficulty badges', () => {
     renderReview()
-    expect(screen.getByText('Easy')).toBeInTheDocument()
-    expect(screen.getByText('Medium')).toBeInTheDocument()
-    expect(screen.getByText('Hard')).toBeInTheDocument()
+    expect(screen.getByText('Dễ')).toBeInTheDocument()
+    expect(screen.getByText('Trung bình')).toBeInTheDocument()
+    expect(screen.getByText('Khó')).toBeInTheDocument()
   })
 })

@@ -8,6 +8,7 @@ import SessionSummary from '../../components/memorize/SessionSummary'
 import { useBookName } from '../../hooks/useBookName'
 import { useMemorizeSession } from '../../hooks/useMemorizeSession'
 import { usePassage } from '../../hooks/useMemoryVerses'
+import { PlaceBackdrop, Plaque } from '../../components/lk/Place'
 import { formatReference } from '../../utils/memorize/schedule'
 
 const CONTEXT_VERSES = 2
@@ -29,11 +30,12 @@ export default function MemorizeSession() {
   const isLast = position.index === position.total
 
   return (
-    <div data-testid="memorize-session-page" className="mx-auto max-w-2xl space-y-6">
-      <header className="flex items-center justify-between">
-        <h1 className="font-display text-2xl font-bold text-bq-ink">{t('memorize.session.title')}</h1>
+    <div data-testid="memorize-session-page" className="relative mx-auto max-w-2xl space-y-6">
+      <PlaceBackdrop place="study" veil="strong" focus="30% 40%" />
+      <header className="flex flex-wrap items-center justify-between gap-3">
+        <Plaque className="text-[26px] md:text-[30px]">{t('memorize.session.title')}</Plaque>
         {session.status === 'active' && (
-          <span className="text-xs font-semibold text-bq-ink3">
+          <span className="px-3 py-1 bg-bq-white border-2 border-bq-ink rounded-full text-[14px] font-extrabold">
             {t('memorize.session.progress', { index: position.index, total: position.total })}
           </span>
         )}
@@ -108,7 +110,7 @@ export default function MemorizeSession() {
                 data-testid="memorize-next-btn"
                 disabled={!session.canContinue}
                 onClick={session.next}
-                className="w-full rounded-xl bg-bq-action px-5 py-3 text-sm font-semibold text-bq-ink shadow-bq-action transition hover:brightness-105 disabled:opacity-50 disabled:shadow-none md:w-auto"
+                className="lk-btn w-full md:w-auto text-bq-ink text-[17px]"
               >
                 {session.saving ? t('memorize.session.saving') : isLast ? t('memorize.session.finish') : t('memorize.session.next')}
               </button>

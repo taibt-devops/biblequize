@@ -20,16 +20,16 @@ export default function MemoryVerseItem({ verse, bookName, onDelete, deleting = 
     : days === 0 ? t('memorize.list.reviewSoon') : t('memorize.list.reviewIn', { count: days })
 
   return (
-    <li data-testid="memorize-item" className="rounded-2xl border border-bq-hair bg-bq-white p-4 shadow-bq-soft">
+    <li data-testid="memorize-item" className="rounded-bq border-[3px] border-bq-ink bg-bq-white p-4 shadow-bq-card">
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0 flex-1">
-          <p className="font-display text-base font-bold text-bq-ink">
+          <p className="font-display text-[17px] font-extrabold text-bq-ink">
             {formatReference(bookName, verse.chapter, verse.verseStart, verse.verseEnd)}
           </p>
           <p className="mt-1 line-clamp-2 font-literata text-sm text-bq-ink2">{verse.text}</p>
         </div>
         {verse.due && (
-          <span className="shrink-0 rounded-full bg-bq-amber/15 px-2 py-0.5 text-[10px] font-bold text-bq-amberd">
+          <span className="shrink-0 rounded-full border-2 border-bq-ink bg-bq-amber px-2 text-[12px] font-extrabold text-bq-ink">
             {t('memorize.list.due')}
           </span>
         )}
@@ -41,7 +41,7 @@ export default function MemoryVerseItem({ verse, bookName, onDelete, deleting = 
             {Array.from({ length: MAX_MASTERY_LEVEL }).map((_, i) => (
               <span
                 key={i}
-                className={`h-2 w-2 rounded-full ${i < verse.masteryLevel ? 'bg-bq-emerald' : 'bg-bq-hair'}`}
+                className={`h-3 w-3 rounded-full border-2 border-bq-ink ${i < verse.masteryLevel ? 'bg-bq-amber' : 'bg-bq-track'}`}
               />
             ))}
           </div>

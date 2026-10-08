@@ -5,6 +5,7 @@ import { Skeleton } from '../../components/Skeleton'
 import { getChapterCount, getVerseCount } from '../../data/bibleData'
 import { useBooks } from '../../hooks/useBookName'
 import { useAddMemoryVerse, usePassage } from '../../hooks/useMemoryVerses'
+import { PlaceBackdrop, Plaque } from '../../components/lk/Place'
 import { verseEndOptions } from '../../utils/memorize/schedule'
 
 const range = (n: number) => Array.from({ length: n }, (_, i) => i + 1)
@@ -36,13 +37,14 @@ export default function MemorizeAdd() {
     )
 
   return (
-    <div data-testid="memorize-add-page" className="space-y-6">
-      <section>
-        <button type="button" onClick={() => navigate('/practice/memorize')} className="mb-3 text-xs font-semibold text-bq-sapphire">
+    <div data-testid="memorize-add-page" className="relative mx-auto max-w-3xl space-y-6">
+      <PlaceBackdrop place="study" veil="strong" focus="30% 40%" />
+      <section className="space-y-3">
+        <button type="button" onClick={() => navigate('/practice/memorize')} className="block px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-full text-[14px] font-bold hover:bg-bq-cream">
           ← {t('memorize.add.back')}
         </button>
-        <h1 className="font-display text-2xl font-bold text-bq-ink">{t('memorize.add.title')}</h1>
-        <p className="text-sm text-bq-ink2">{t('memorize.add.maxHint')}</p>
+        <Plaque className="text-[26px] md:text-[32px]">{t('memorize.add.title')}</Plaque>
+        <p className="m-0 font-read text-[15px] text-bq-ink2">{t('memorize.add.maxHint')}</p>
       </section>
 
       <div className="grid grid-cols-2 gap-3 rounded-2xl border border-bq-hair bg-bq-white p-5 shadow-bq-soft md:grid-cols-4">

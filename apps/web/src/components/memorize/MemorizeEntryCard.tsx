@@ -20,21 +20,19 @@ export default function MemorizeEntryCard({ isAuthenticated }: MemorizeEntryCard
   return (
     <div
       data-testid="memorize-entry-card"
-      className="flex items-center gap-3 rounded-xl border border-bq-sapphire/25 bg-gradient-to-r from-bq-sapphire/10 to-bq-white px-4 py-3"
+      className="flex flex-wrap items-center gap-3 rounded-bq border-[3px] border-bq-ink bg-bq-white px-4 py-3.5 shadow-bq-card"
     >
-      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-bq-sapphire/15">
-        <span className="material-symbols-outlined text-lg text-bq-sapphire">auto_stories</span>
-      </div>
+      <img src="/images/lk/scroll.webp" alt="" aria-hidden className="h-11 shrink-0" />
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-2">
-          <p className="text-sm font-semibold text-bq-ink">{t('memorize.entry.title')}</p>
+          <p className="text-[16px] font-extrabold text-bq-ink">{t('memorize.entry.title')}</p>
           {isAuthenticated && dueCount > 0 && (
-            <span className="rounded-full bg-bq-amber/20 px-2 py-0.5 text-[10px] font-bold text-bq-amberd">
+            <span className="rounded-full border-2 border-bq-ink bg-bq-ruby px-2 text-[12px] font-extrabold text-bq-white">
               {t('memorize.entry.due', { count: dueCount })}
             </span>
           )}
         </div>
-        <p className="text-xs text-bq-ink2">
+        <p className="font-read text-[13.5px] text-bq-ink2">
           {isAuthenticated ? t('memorize.entry.desc') : t('memorize.entry.loginHint')}
         </p>
       </div>
@@ -42,9 +40,9 @@ export default function MemorizeEntryCard({ isAuthenticated }: MemorizeEntryCard
         type="button"
         data-testid="memorize-entry-btn"
         onClick={() => navigate(isAuthenticated ? '/practice/memorize' : '/login')}
-        className="rounded-lg border border-bq-sapphire/35 bg-bq-sapphire/15 px-4 py-2 text-xs font-semibold text-bq-sapphire transition-all hover:bg-bq-sapphire/20 active:scale-95"
+        className="lk-btn lk-btn-2 text-bq-ink text-[15px]"
       >
-        {isAuthenticated ? t('memorize.entry.open') : t('memorize.entry.login')} →
+        {isAuthenticated ? t('memorize.entry.open') : t('memorize.entry.login')}
       </button>
     </div>
   )
