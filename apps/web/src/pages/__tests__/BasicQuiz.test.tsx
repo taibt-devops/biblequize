@@ -35,6 +35,10 @@ vi.mock('../../utils/quizLanguage', () => ({
 
 import BasicQuiz from '../BasicQuiz'
 
+// these tests click through all 10 questions with userEvent; on a loaded full-suite run that can
+// pass the 5 s default
+vi.setConfig({ testTimeout: 20_000 })
+
 function renderPage() {
   const qc = new QueryClient({ defaultOptions: { queries: { retry: false } } })
   return render(
