@@ -16,7 +16,8 @@
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RFR-4 Deploy prod (cura-dev) + kiểm tra
-  - Status: [ ] TODO
+  - Status: [x] DONE 08/10 · commit `5a550820`, image BE `sha256:471bfd55…`, FE `sha256:643967c9…`; rollback BE `sha256:1b42f406…`, FE `sha256:4d441d77…` · API khởi động 5 s, `/actuator/health` 200, forbible.org 200, chữ mới có trong `vi-*.js`
+  - Số câu `vi` đang bật trên prod: vòng 1 = 2.261 câu / 18 sách (747 Dễ), vòng 2 = 1.621 / 22, vòng 3 = 1.247; 46 câu mang tên sách lạ (`Song of Solomon` 25, `Gióp` 16, `Sáng Thế Ký` 5) chỉ vào được vòng cả Kinh Thánh
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 
