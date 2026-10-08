@@ -29,7 +29,9 @@ Nguyên tắc: render artboard ra PNG, đặt cạnh ảnh app cùng khổ (1280
   - Status: [x] DONE · Quiz: đồng cỏ, 3 sao bật lần lượt, lữ khách mừng/đứng, kết quả trên cuộn giấy, số liệu dạng huy chương viền gỗ, biên lai điểm, thanh độ khó gỗ · Đấu Hạng: sân đấu, 3 trạng thái (thường / lên hạng = khiên hạng mới tỏa sáng / hết năng lượng = lữ khách nghỉ), +XP chữ sticker, thanh hạng, 3 huy chương (câu đúng, điểm mùa, năng lượng = tim)
   - Quyết định: không làm mockup riêng (user uỷ quyền tự quyết) — dùng ngôn ngữ của Quiz/Trang chủ; tên sách trên kết quả đổi sang tiếng Việt qua `useBookName`
 - LKF-6 Hành trình theo artboard Journey (trạm sách trên bản đồ, panel chi tiết, 8 vùng, huy hiệu)
-  - Status: [ ] TODO
+  - Status: [x] DONE · `data/journeyRegions.ts` (lối mòn từng vùng, `trailPoints`, huy hiệu §6.5), `JourneyMap` (trạm sách, lữ khách ở sách hiện tại), `JourneyAside` (thẻ sách có vạch 80%, 8 vùng, huy hiệu), trang ghép + "Sổ sách theo vùng" (giữ testid E2E)
+  - Lệch artboard: sách chưa học hiện số thứ tự thay vì ổ khóa (API trả NOT_STARTED và app vẫn cho luyện mọi sách — không khóa); thêm "Sổ sách theo vùng" dưới bản đồ (E2E cần thẻ sách + đủ 66 sách để chọn nhanh); mức thuộc hiển thị tối đa 100% (API có sách 150%)
+  - **Spec impact**: [x] SPEC_USER §6.3 · **Spec strategy**: [x] (a) update inline
 
 ### Giai đoạn tự làm toàn bộ màn hình (user 08/10: "list các màn hình ra… design lại và code theo đến khi xong… điều gì cần tôi quyết định bạn cứ tự quyết định")
 

@@ -65,4 +65,26 @@ describe('Journey page (8 lands)', () => {
     fireEvent.click(screen.getByTestId('journey-book-card-John'))
     expect(navigateMock).toHaveBeenCalledWith('/practice?book=John')
   })
+
+  it("opens the current book's card; its CTA practices the book", () => {
+    render_()
+    expect(screen.getByTestId('journey-book-detail')).toHaveTextContent('Psalms')
+    fireEvent.click(screen.getByTestId('journey-book-detail-cta'))
+    expect(navigateMock).toHaveBeenCalledWith('/practice?book=Psalms')
+  })
+
+  it('opening another land puts its books on the map and opens its first book', () => {
+    render_()
+    expect(screen.getByTestId('journey-station-Psalms')).toBeInTheDocument()
+    fireEvent.click(screen.getByTestId('journey-region-gospels'))
+    expect(screen.getByTestId('journey-station-John')).toBeInTheDocument()
+    expect(screen.queryByTestId('journey-station-Psalms')).not.toBeInTheDocument()
+    expect(screen.getByTestId('journey-book-detail')).toHaveTextContent('John')
+  })
+
+  it('earns the first milestone badge after one conquered book', () => {
+    render_()
+    expect(screen.getByTestId('journey-badge-start')).toHaveAttribute('data-earned', 'true')
+    expect(screen.getByTestId('journey-badge-ten')).not.toHaveAttribute('data-earned')
+  })
 })

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { JOURNEY_REGIONS, regionOfOrder } from '../journeyRegions'
+import { JOURNEY_MILESTONES, JOURNEY_REGIONS, milestoneCount, regionOfOrder, trailPoints } from '../journeyRegions'
 
 describe('journeyRegions', () => {
   it('covers all 66 books exactly once, in order', () => {
@@ -36,5 +36,30 @@ describe('journeyRegions', () => {
       expect(r.y).toBeGreaterThanOrEqual(0)
       expect(r.y).toBeLessThanOrEqual(100)
     }
+  })
+
+  it("spreads every land's books along its trail, inside the map, start and end on the trail ends", () => {
+    for (const r of JOURNEY_REGIONS) {
+      const n = r.to - r.from + 1
+      const pts = trailPoints(r, n)
+      expect(pts).toHaveLength(n)
+      expect(pts[0]).toEqual(r.trail[0])
+      if (n > 1 && r.trail.length > 1) expect(pts[n - 1]).toEqual(r.trail[r.trail.length - 1])
+      for (const [x, y] of pts) {
+        expect(x).toBeGreaterThan(0); expect(x).toBeLessThan(100)
+        expect(y).toBeGreaterThan(0); expect(y).toBeLessThan(100)
+      }
+    }
+  })
+
+  it('counts milestone progress per scope (SPEC_USER §6.5)', () => {
+    const m = Object.fromEntries(JOURNEY_MILESTONES.map(x => [x.id, x]))
+    const done = [1, 2, 3, 4, 5, 40, 41]
+    expect(milestoneCount(m.start, done)).toBe(7)
+    expect(milestoneCount(m.pentateuch, done)).toBe(5)
+    expect(milestoneCount(m.ot, done)).toBe(5)
+    expect(milestoneCount(m.nt, done)).toBe(2)
+    expect(milestoneCount(m.gospels, done)).toBe(2)
+    expect(milestoneCount(m.epistles, done)).toBe(0)
   })
 })

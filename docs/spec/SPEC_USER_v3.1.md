@@ -455,7 +455,8 @@ Status:
   | 7 | Thư Tín | 45–65 | Các thành có hội thánh |
   | 8 | Khải Huyền | 66 | Thành Vàng |
 
-- Mỗi vùng có 1 bảng gỗ trên bản đồ: số thứ tự + tên + `đã COMPLETED / tổng sách`. Vùng chứa `summary.currentBook` (hoặc sách chưa COMPLETED đầu tiên) tô vàng, nhân vật đứng dưới bảng. Điện thoại (< 640px): bảng thu thành chấm số 1–8. Bấm bảng → cuộn tới danh sách sách của vùng.
+- Mỗi vùng có 1 bảng gỗ trên bản đồ: số thứ tự + tên + `đã COMPLETED / tổng sách`. Vùng đang mở (mặc định vùng của sách hiện tại, bấm bảng/danh sách để đổi) hiện các sách của nó thành **trạm** dọc lối mòn trên tranh: ★ = đã chinh phục, số = thứ tự sách trong 66; lữ khách đứng ở sách hiện tại (2026-10-08, LKF-6).
+- Cột bên: thẻ sách đang chọn (thứ tự trong 66 · vùng, thanh mức thuộc có vạch mốc 80%, lời nhắc, nút Luyện tập / Ôn lại) · danh sách 8 vùng · huy hiệu hành trình §6.5 (đạt = vàng ✓, chưa = viền đứt + mốc). Vùng chứa `summary.currentBook` (hoặc sách chưa COMPLETED đầu tiên) tô vàng, nhân vật đứng dưới bảng. Điện thoại (< 640px): bảng thu thành chấm số 1–8. Bấm bảng → cuộn tới danh sách sách của vùng.
 - Dưới bản đồ vẫn chia 2 nhóm Cựu Ước (vùng 1–4, 39 sách) / Tân Ước (vùng 5–8, 27 sách); trong mỗi nhóm, sách xếp theo vùng.
 - Mỗi sách: name VN, số câu đã thuộc / tổng, mastery% + thanh tiến độ; COMPLETED = nền lá + ★ vàng, còn lại hiện số thứ tự sách.
 - Click sách → Practice mode pre-filtered.
