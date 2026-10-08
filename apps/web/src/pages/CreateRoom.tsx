@@ -13,6 +13,7 @@ import { useAuth } from '../store/authStore'
 import { api } from '../api/client'
 import PreviewPanel from './create-room/PreviewPanel'
 import BookScopeOptions, { useBookScopeLabel } from './create-room/BookScopeOptions'
+import { PlaceBackdrop, Plaque } from '../components/lk/Place'
 import { MODE_DEFAULTS, MODE_LIST, MODE_META, type RoomModeId } from './create-room/modeMeta'
 
 const QUESTION_COUNTS = [10, 15, 20, 30]
@@ -100,30 +101,24 @@ export default function CreateRoom() {
   const canSubmit = !(formData.questionSource === 'CUSTOM' && !formData.questionSetId)
 
   return (
-    <div data-testid="create-room-page" className="flex justify-center">
+    <div data-testid="create-room-page" className="relative flex justify-center">
+      <PlaceBackdrop place="square" veil="strong" />
       <div className="w-full max-w-[1280px] space-y-6">
 
         {/* ── Top row: back + Quản trò chip ── */}
         <div className="flex justify-between items-center gap-4 flex-wrap">
           <Link
             to="/multiplayer"
-            className="inline-flex items-center gap-2 px-3.5 py-2 rounded-[10px] text-sm text-bq-ink2 hover:text-bq-ink transition-colors border border-bq-hair"
+            className="inline-flex items-center gap-1.5 px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-full text-[14px] font-bold text-bq-ink no-underline hover:bg-bq-cream"
           >
             <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_back</span>
             Quay lại
           </Link>
           <div
             data-testid="create-room-organizer-hint"
-            className={`inline-flex items-center gap-2.5 px-3.5 py-2 rounded-full text-[13px] font-medium ${formData.hostPlaysGame ? 'text-bq-sapphire' : 'text-bq-amberd'}`}
-            style={formData.hostPlaysGame ? {
-              background: 'linear-gradient(135deg, rgba(37,99,235,0.16), rgba(37,99,235,0.05))',
-              border: '1px solid rgba(37,99,235,0.30)',
-            } : {
-              background: 'linear-gradient(135deg, rgba(245,158,11,0.18), rgba(245,158,11,0.06))',
-              border: '1px solid rgba(245,158,11,0.32)',
-            }}
+            className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border-2 border-bq-ink text-[13.5px] font-extrabold text-bq-ink ${formData.hostPlaysGame ? 'bg-bq-leaf' : 'bg-bq-amber'}`}
           >
-            <span className={`material-symbols-outlined ${formData.hostPlaysGame ? 'text-bq-sapphire' : 'text-bq-amber'}`} style={{ fontSize: 16 }}>
+            <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
               {formData.hostPlaysGame ? 'sports_esports' : 'workspace_premium'}
             </span>
             <span>{formData.hostPlaysGame ? t('createRoom.hostPlaysHint') : t('createRoom.organizerHint')}</span>
@@ -131,22 +126,12 @@ export default function CreateRoom() {
         </div>
 
         {/* ── Title ── */}
-        <div>
-          <h1 className="text-[30px] font-display font-extrabold text-bq-ink tracking-tight flex items-center gap-3.5 m-0">
-            <span
-              className="inline-flex items-center justify-center text-bq-amber"
-              style={{
-                width: 44, height: 44,
-                background: 'linear-gradient(135deg, rgba(245,158,11,0.22), rgba(245,158,11,0.06))',
-                borderRadius: 12,
-                border: '1px solid rgba(245,158,11,0.3)',
-              }}
-            >
-              <span className="material-symbols-outlined" style={{ fontSize: 24, fontVariationSettings: "'FILL' 1" }}>videogame_asset</span>
-            </span>
+        <div className="space-y-3">
+          <Plaque className="text-[28px] md:text-[36px]">
+            <img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="h-[1.1em]" />
             {t('createRoom.title')}
-          </h1>
-          <p className="text-[14.5px] text-bq-ink2 pl-[58px] mt-1.5">
+          </Plaque>
+          <p className="m-0 w-fit px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-2xl font-read text-[15px] text-bq-ink2">
             Mời bạn bè và điều phối trận đấu Kinh Thánh
           </p>
         </div>
@@ -167,7 +152,7 @@ export default function CreateRoom() {
                 placeholder={t('createRoom.roomNamePlaceholder')}
                 data-testid="create-room-name-input"
                 maxLength={60}
-                className="w-full px-3.5 py-3 rounded-[10px] text-[15px] bg-bq-white border border-bq-hair text-bq-ink placeholder:text-bq-ink3 outline-none transition-all focus:ring-2 focus:ring-bq-sapphire"
+                className="w-full px-3.5 py-3 rounded-[10px] text-[15px] bg-bq-white border border-bq-hair text-bq-ink placeholder:text-bq-ink3 outline-none transition-all focus:ring-2 focus:ring-bq-amber focus:border-bq-ink"
               />
               <p className="text-xs text-bq-ink3 mt-1.5">
                 {formData.roomName.length === 0 ? 'Để trống để dùng tên mặc định' : `${formData.roomName.length}/60`}
@@ -369,14 +354,14 @@ export default function CreateRoom() {
                   onChange={v => setFormData(p => ({ ...p, timePerQuestion: v }))}
                 />
                 <div>
-                  <div className="text-[11.5px] font-bold tracking-[0.08em] uppercase text-bq-ink2 mb-2">
+                  <div className="text-[12.5px] font-bold text-bq-ink2 mb-2">
                     {t('createRoom.bookScope', 'Sách Kinh Thánh')}
                   </div>
                   <div className="relative">
                     <select
                       value={formData.bookScope}
                       onChange={e => setFormData(prev => ({ ...prev, bookScope: e.target.value }))}
-                      className="w-full px-3.5 py-2.5 rounded-[10px] text-sm bg-bq-white border border-bq-hair text-bq-ink appearance-none outline-none cursor-pointer pr-9 focus:ring-2 focus:ring-bq-sapphire"
+                      className="w-full px-3.5 py-2.5 rounded-[10px] text-sm bg-bq-white border border-bq-hair text-bq-ink appearance-none outline-none cursor-pointer pr-9 focus:ring-2 focus:ring-bq-amber focus:border-bq-ink"
                     >
                       <BookScopeOptions />
                     </select>
@@ -405,7 +390,7 @@ export default function CreateRoom() {
               {/* Số người chơi tối đa — luôn bật, không phụ thuộc nguồn câu hỏi */}
               <div className="mt-[18px] pt-[18px] border-t border-bq-hair">
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-[11.5px] font-bold tracking-[0.08em] uppercase text-bq-ink2">
+                  <span className="text-[12.5px] font-bold text-bq-ink2">
                     {t('createRoom.maxPlayers')}
                   </span>
                   <span className="px-3 py-1 rounded-full text-xs font-bold text-bq-amberd" style={{ background: 'rgba(245,158,11,0.15)' }}>
@@ -528,7 +513,7 @@ export default function CreateRoom() {
 
 function CardLabel({ children }: { children: React.ReactNode }) {
   return (
-    <div className="text-[12.5px] font-bold text-bq-ink2 mb-2.5 flex items-center gap-2">
+    <div className="text-[14px] font-extrabold text-bq-ink mb-2.5 flex items-center gap-2">
       {children}
     </div>
   )
@@ -544,7 +529,7 @@ function ChipGroup<T extends string | number>({
 }) {
   return (
     <div>
-      <div className="text-[11.5px] font-bold tracking-[0.08em] uppercase text-bq-ink2 mb-2">{label}</div>
+      <div className="text-[12.5px] font-bold text-bq-ink2 mb-2">{label}</div>
       <div className="flex gap-1 p-1 rounded-[10px] bg-bq-inset border border-bq-hair">
         {options.map(opt => {
           const active = opt.value === value

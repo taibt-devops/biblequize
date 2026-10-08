@@ -152,7 +152,7 @@ function StatBox({ value, unit, label, textOnly }: { value: string; unit?: strin
         {value}
         {unit && !textOnly && <span className="text-[13px] font-medium text-bq-ink2 ml-0.5">{unit}</span>}
       </div>
-      <div className="text-[10.5px] font-semibold tracking-[0.08em] uppercase text-bq-ink2 mt-1">{label}</div>
+      <div className="text-[12px] font-semibold text-bq-ink2 mt-1">{label}</div>
     </div>
   )
 }

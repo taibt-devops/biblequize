@@ -236,7 +236,7 @@ export default function QuickMatchConfigModal({ open, onClose, userTier = 1 }: P
 function Section({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div>
-      <div className="text-[10.5px] font-bold tracking-[0.08em] uppercase text-bq-ink2 mb-1.5">{label}</div>
+      <div className="text-[12px] font-bold text-bq-ink2 mb-1.5">{label}</div>
       {children}
     </div>
   )

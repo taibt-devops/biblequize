@@ -47,7 +47,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-10 | Thử thách hôm nay ✅ | `/daily` | lá thư bồ câu mang tới |
 | LKF-11 | Xếp hạng ✅ | `/leaderboard` | đỉnh đồi, bục vinh danh |
 | LKF-12 | Cá nhân, Thành tích, Ngoại hình ✅ | `/profile`, `/achievements`, `/cosmetics` | lều trại |
-| LKF-13 | Phòng chơi, Danh sách phòng, Tạo phòng, Vào phòng | `/multiplayer`, `/rooms`, `/room/create`, `/room/join` | quảng trường làng |
+| LKF-13 | Phòng chơi, Danh sách phòng, Tạo phòng, Vào phòng ✅ | `/multiplayer`, `/rooms`, `/room/create`, `/room/join` | quảng trường làng |
 | LKF-14 | Phòng chờ, Chơi phòng, Màn chủ phòng, Phân tích phòng | `/room/:id/*` | quảng trường |
 | LKF-15 | Nhóm + chi tiết + trang con | `/groups*` | gốc sồi nhà nguyện |
 | LKF-16 | Giải đấu, chi tiết, trận | `/tournaments*` | sân đấu |
@@ -102,3 +102,10 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
   - Status: [x] DONE · script một lần (198 chuỗi class / 81 file): chỉ đổi chuỗi class có `uppercase` + cỡ chữ nhỏ (text-[8–11px] / text-xs) → bỏ `uppercase` + `tracking-*`, tăng cỡ một bậc (10px→12px, 11px/xs→12.5px); chữ in hoa cỡ lớn (mã phòng, ô nhập) giữ nguyên; bỏ qua Admin (LKF-19)
   - Test SectionHeader / VerseFooter đổi kỳ vọng từ "có uppercase" sang "không uppercase" (hướng thiết kế mới, strategy b)
   - **Spec impact**: [x] None · **Spec strategy**: [x] (b) cập nhật test theo thiết kế
+- LKF-13 Phòng chơi · Tạo phòng · Vào phòng — quảng trường làng
+  - Status: [x] DONE (`/rooms` chỉ chuyển hướng về `/multiplayer`)
+  - Phòng chơi: biển gỗ có cờ đuôi nheo, chip "N phòng đang sống" + mô tả; thanh nhập mã = 6 viên đá khắc trên nền kem; thẻ Tạo phòng (đèn lồng, nút vàng) + thẻ Đấu Nhanh (thanh kiếm, nút lá — bỏ màu xanh dương riêng); "Phòng đang chờ" là biển gỗ nhỏ, chip lọc viền mực; thẻ phòng viền mực, gần đầy thì có viền màu chế độ; trống = lữ khách ngồi nghỉ + 2 nút
+  - Tạo phòng: tranh quảng trường, biển gỗ có đèn lồng, chip vai trò (vàng = Quản trò, lá = cùng chơi), nhãn mục đậm không in hoa, ô nhập focus vàng; ô chế độ giữ màu riêng từng chế độ (để phân biệt)
+  - Vào phòng (quét QR): thẻ giữa màn, đèn lồng nhún + mã dạng đá khắc khi đang vào; lỗi = lữ khách lạc đường + nút vàng
+  - Quyết định: Đấu Nhanh đổi xanh dương → nút lá (giữ 2 màu chính vàng/lá của bộ nút)
+  - **Spec impact**: [x] None · **Spec strategy**: [x] (c)

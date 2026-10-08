@@ -14,7 +14,6 @@ import { MODE_META, type RoomModeId } from '../create-room/modeMeta'
 
 const INDIGO = '#2F6FB0'
 const INDIGO_LIGHT = '#2F6FB0'
-const INDIGO_GRADIENT = 'linear-gradient(135deg, #2F6FB0 0%, #2F6FB0 100%)'
 
 function modeShortLabel(id: string): string {
   switch (id) {
@@ -54,11 +53,8 @@ export default function QuickMatchRoomCard({ room }: { room: PublicRoom }) {
   return (
     <article
       data-testid="room-card"
-      className="rounded-xl p-5 flex flex-col gap-3 relative overflow-hidden transition-transform hover:-translate-y-0.5 bg-bq-white shadow-bq-soft"
-      style={{
-        border: `1px solid ${isFull ? '#C9B58C' : 'rgba(47,111,176,0.30)'}`,
-        cursor: isFull ? 'default' : 'pointer',
-      }}
+      className="rounded-2xl p-5 flex flex-col gap-3 relative overflow-hidden transition-transform hover:-translate-y-0.5 bg-bq-white border-[3px] border-bq-ink shadow-[0_4px_0_#1D2B22]"
+      style={{ cursor: isFull ? 'default' : 'pointer' }}
       onClick={() => { if (!isFull) handleJoin() }}
     >
       {/* "Đấu Nhanh" pill (top-right) */}
@@ -118,8 +114,7 @@ export default function QuickMatchRoomCard({ room }: { room: PublicRoom }) {
         type="button"
         onClick={(e) => { e.stopPropagation(); handleJoin() }}
         disabled={joining || isFull}
-        className="w-full h-9 rounded-lg text-white text-[12px] font-bold transition-opacity hover:opacity-90 disabled:opacity-60"
-        style={{ background: isFull ? '#EFE3C3' : INDIGO_GRADIENT, color: isFull ? '#6B5530' : '#fff' }}
+        className={`lk-btn w-full !py-2 text-[15px] ${isFull ? '!bg-bq-inset text-bq-ink2' : 'lk-btn-2 text-bq-ink'}`}
       >
         {joining ? t('multiplayer.quickMatch.ctaJoining') : isFull ? t('multiplayer.quickMatch.ctaFull') : t('multiplayer.quickMatch.ctaEnterNow')}
       </button>

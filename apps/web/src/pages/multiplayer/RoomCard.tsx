@@ -71,10 +71,9 @@ export default function RoomCard({ room }: { room: PublicRoom }) {
   return (
     <article
       data-testid="room-card"
-      className="rounded-xl p-4 flex flex-col gap-3 transition-all bg-bq-white shadow-bq-soft"
+      className={`rounded-2xl p-4 flex flex-col gap-3 transition-transform bg-bq-white border-[3px] border-bq-ink ${ctaEnabled ? 'hover:-translate-y-0.5' : ''}`}
       style={{
-        border: `1px solid ${almostFull ? hexToRgba(mode.color, 0.4) : '#C9B58C'}`,
-        boxShadow: almostFull ? `0 0 16px ${hexToRgba(mode.color, 0.12)}` : undefined,
+        boxShadow: almostFull ? `0 4px 0 #1D2B22, 0 0 0 4px ${hexToRgba(mode.color, 0.35)}` : '0 4px 0 #1D2B22',
         cursor: ctaEnabled ? 'pointer' : 'default',
       }}
       onClick={() => { if (ctaEnabled) handleJoin() }}
@@ -141,11 +140,7 @@ export default function RoomCard({ room }: { room: PublicRoom }) {
       <button
         onClick={(e) => { e.stopPropagation(); if (ctaEnabled) handleJoin() }}
         disabled={!ctaEnabled}
-        className="w-full h-9 rounded-lg text-[12px] font-bold transition-colors disabled:cursor-not-allowed"
-        style={{
-          background: ctaEnabled ? 'var(--bq-action)' : '#EFE3C3',
-          color: ctaEnabled ? 'var(--bq-action-fg)' : '#6B5530',
-        }}
+        className={`lk-btn w-full !py-2 text-[15px] ${ctaEnabled ? 'text-bq-ink' : '!bg-bq-inset text-bq-ink2'}`}
       >
         {cta.label}
       </button>

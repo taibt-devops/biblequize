@@ -19,8 +19,7 @@ import QuickMatchRoomCard from './multiplayer/QuickMatchRoomCard'
 import EmptyState from './multiplayer/EmptyState'
 import QuickMatchEntryCard from './multiplayer/QuickMatchEntryCard'
 import type { PublicRoom, RoomMode, SortOption } from './multiplayer/types'
-
-const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
+import { PlaceBackdrop, Plaque } from '../components/lk/Place'
 
 const MODE_DISPLAY_LABEL: Record<RoomModeId, string> = {
   SPEED_RACE: 'Speed Race',
@@ -95,13 +94,13 @@ export default function Multiplayer() {
   const liveCount = allRooms.filter(r => r.status === 'LOBBY' || r.status === 'IN_PROGRESS').length
 
   return (
-    <div data-testid="multiplayer-page" className="max-w-[1180px] mx-auto space-y-6 bg-bq-paper">
+    <div data-testid="multiplayer-page" className="relative max-w-[1180px] mx-auto space-y-6">
+      <PlaceBackdrop place="square" veil="strong" />
 
       {roomEndedBanner && (
         <div
           data-testid="multiplayer-room-ended-banner"
-          className="rounded-xl px-4 py-3 flex items-center gap-3"
-          style={{ background: 'rgba(245,158,11,0.10)', border: '1px solid rgba(245,158,11,0.30)', color: '#D97F06' }}
+          className="rounded-2xl px-4 py-3 flex items-center gap-3 bg-bq-cream border-[3px] border-bq-ink text-bq-ink"
         >
           <span className="material-symbols-outlined text-lg">info</span>
           <span className="text-sm font-medium">
@@ -112,31 +111,27 @@ export default function Multiplayer() {
 
       {/* ── Top header ── */}
       <header className="flex items-start justify-between gap-6 flex-wrap">
-        <div>
-          <div className="flex items-center gap-2 mb-1 flex-wrap">
-            <span className="text-[12.5px] font-bold" style={{ color: '#D97F06' }}>
-              {t('multiplayer.subtitle', 'Chế độ Đa người chơi')}
-            </span>
-            <span className="w-1 h-1 rounded-full bg-bq-hair" />
-            <span className="flex items-center gap-1.5 text-[11px] text-bq-ink2">
+        <div className="space-y-3">
+          <Plaque className="text-[28px] md:text-[38px]">
+            <img src="/images/lk/pennant.webp" alt="" aria-hidden className="h-[1.05em]" />
+            {t('multiplayer.title', 'Phòng Chơi')}
+          </Plaque>
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-full text-[13px] font-bold">
               <LiveDot />
-              <span><span className="font-bold text-bq-ink">{liveCount}</span> {t('multiplayer.liveRoomsSuffix')}</span>
+              <span><span className="font-extrabold">{liveCount}</span> {t('multiplayer.liveRoomsSuffix')}</span>
+            </span>
+            <span className="px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-full font-read text-[14px] text-bq-ink2">
+              {t('multiplayer.desc', 'Realtime · 4 chế độ · Mời bạn bè cùng học Kinh Thánh qua game')}
             </span>
           </div>
-          <h1 className="font-display text-[28px] md:text-[34px] font-extrabold tracking-tight leading-tight text-bq-ink">
-            {t('multiplayer.title', 'Phòng Chơi')}
-          </h1>
-          <p className="text-[13px] text-bq-ink2 mt-1">
-            {t('multiplayer.desc', 'Realtime · 4 chế độ · Mời bạn bè cùng học Kinh Thánh qua game')}
-          </p>
         </div>
 
         <button
           onClick={() => navigate('/my-sets')}
-          className="hidden md:flex items-center gap-2 px-4 h-10 rounded-lg text-[13px] font-semibold transition-colors bg-bq-white"
-          style={{ border: '1px solid #C9B58C', color: '#1D2B22' }}
+          className="hidden md:flex items-center gap-2 px-4 h-10 rounded-full text-[14px] font-extrabold bg-bq-white border-2 border-bq-ink text-bq-ink shadow-[0_3px_0_#1D2B22] hover:bg-bq-cream active:translate-y-[3px] active:shadow-none"
         >
-          <span className="material-symbols-outlined text-sm" style={FILL_1}>menu_book</span>
+          <img src="/images/lk/scroll.webp" alt="" aria-hidden className="h-5" />
           {t('multiplayer.quizSetsBtn')}
         </button>
       </header>
@@ -146,30 +141,16 @@ export default function Multiplayer() {
 
       {/* ── Hero row 50/50: Tạo phòng (gold) + Solo Arena (indigo) ── */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div
-          className="rounded-2xl p-6 relative overflow-hidden bg-bq-white shadow-bq-soft"
-          style={{
-            border: '1px solid rgba(245,158,11,0.30)',
-          }}
-        >
-          <div className="absolute -right-12 -top-12 w-48 h-48 rounded-full pointer-events-none"
-            style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.10) 0%, transparent 70%)' }} />
+        <div className="rounded-bq p-6 relative bg-bq-white border-[3px] border-bq-ink shadow-bq-card">
           <div className="relative">
-            <div className="flex items-center gap-2 mb-3">
-              <div
-                className="w-9 h-9 rounded-lg flex items-center justify-center"
-                style={{ background: 'linear-gradient(135deg, #F59E0B, #FFE08A)' }}
-              >
-                <span className="material-symbols-outlined" style={{ fontSize: 20, color: '#FFFFFF', fontVariationSettings: "'FILL' 1" }}>
-                  workspace_premium
-                </span>
-              </div>
-              <div className="text-[12px] font-bold" style={{ color: '#D97F06' }}>
+            <div className="flex items-center gap-2.5 mb-3">
+              <img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="h-10" />
+              <span className="px-2.5 py-0.5 rounded-full bg-bq-amber border-2 border-bq-ink text-[12.5px] font-extrabold">
                 {t('multiplayer.create.kicker')}
-              </div>
+              </span>
             </div>
-            <h2 className="font-display text-[20px] font-extrabold mb-1.5 leading-tight text-bq-ink">{t('multiplayer.create.title')}</h2>
-            <p className="text-[12.5px] text-bq-ink2 mb-4 leading-relaxed">
+            <h2 className="m-0 font-display text-[24px] font-extrabold mb-1.5 leading-tight text-bq-ink">{t('multiplayer.create.title')}</h2>
+            <p className="m-0 font-read text-[15px] text-bq-ink2 mb-4 leading-relaxed">
               {t('multiplayer.create.desc')}
             </p>
             <div className="flex items-center gap-2 mb-5 flex-wrap">
@@ -180,10 +161,9 @@ export default function Multiplayer() {
             <button
               data-testid="multiplayer-create-btn"
               onClick={() => navigate('/room/create')}
-              className="w-full md:w-auto inline-flex items-center justify-center gap-2 h-11 px-5 rounded-lg text-[14px] font-bold transition-opacity hover:opacity-90 shadow-bq-action"
-              style={{ background: 'var(--bq-action)', color: 'var(--bq-action-fg)' }}
+              className="lk-btn w-full md:w-auto text-bq-ink text-[16px]"
             >
-              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>add</span>
+              <span className="material-symbols-outlined" style={{ fontSize: 20 }}>add</span>
               {t('multiplayer.createRoom', 'Tạo Phòng')}
             </button>
           </div>
@@ -199,15 +179,12 @@ export default function Multiplayer() {
       <section className="space-y-4">
         <div className="flex items-center justify-between flex-wrap gap-3">
           <div className="flex items-center gap-3">
-            <h3 className="font-display text-[18px] font-bold tracking-tight text-bq-ink">
+            <Plaque as="h3" className="text-[20px] md:text-[22px]">
               {t('multiplayer.waitingRooms', 'Phòng đang chờ')}
-            </h3>
-            <span
-              className="flex items-center gap-1.5 px-2.5 py-1 rounded-full"
-              style={{ background: 'rgba(46,125,79,0.10)', border: '1px solid rgba(46,125,79,0.22)' }}
-            >
+            </Plaque>
+            <span className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-bq-leaf border-2 border-bq-ink">
               <LiveDot />
-              <span className="text-[12px] font-bold" style={{ color: '#2E7D4F' }}>Live · {liveCount}</span>
+              <span className="text-[12.5px] font-extrabold">Live · {liveCount}</span>
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -215,9 +192,9 @@ export default function Multiplayer() {
               onClick={() => refetch()}
               disabled={isFetching}
               title={t('multiplayer.refresh', 'Làm mới')}
-              className="w-8 h-8 rounded-lg flex items-center justify-center transition-colors bg-bq-inset"
+              className="w-10 h-10 rounded-full flex items-center justify-center bg-bq-white border-2 border-bq-ink shadow-[0_3px_0_#1D2B22] active:translate-y-[3px] active:shadow-none"
             >
-              <span className={`material-symbols-outlined text-bq-ink2 ${isFetching ? 'animate-spin' : ''}`} style={{ fontSize: 14 }}>refresh</span>
+              <span className={`material-symbols-outlined text-bq-ink ${isFetching ? 'animate-spin' : ''}`} style={{ fontSize: 18 }}>refresh</span>
             </button>
           </div>
         </div>
@@ -244,7 +221,7 @@ export default function Multiplayer() {
               {MODE_DISPLAY_LABEL[m.id]}
             </FilterChip>
           ))}
-          <div className="w-px h-5 bg-bq-hair mx-1" />
+          <div className="w-0.5 h-6 bg-bq-ink/25 mx-1" />
           <FilterChip active={sort === 'newest'} onClick={() => setSort('newest')}>{t('multiplayer.sortNewest')}</FilterChip>
           <FilterChip active={sort === 'filling'} onClick={() => setSort('filling')}>{t('multiplayer.sortFilling')}</FilterChip>
         </div>
@@ -253,7 +230,7 @@ export default function Multiplayer() {
         {isLoading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {[1, 2, 3, 4].map(i => (
-              <div key={i} className="h-44 rounded-xl animate-pulse bg-bq-inset" />
+              <div key={i} className="h-44 rounded-2xl animate-pulse bg-bq-inset/80 border-[3px] border-bq-ink/20" />
             ))}
           </div>
         ) : isError ? (
@@ -287,11 +264,8 @@ function LiveDot() {
 
 function FeatureTag({ icon, label }: { icon: string; label: string }) {
   return (
-    <span
-      className="px-2 py-1 rounded-md text-[10px] font-semibold flex items-center gap-1"
-      style={{ background: '#EFE3C3', color: '#4D3A1F' }}
-    >
-      <span className="material-symbols-outlined" style={{ fontSize: 12 }}>{icon}</span>
+    <span className="px-2.5 py-0.5 rounded-full text-[12.5px] font-bold flex items-center gap-1 bg-bq-paper border-2 border-bq-ink/30 text-bq-ink">
+      <span className="material-symbols-outlined" style={{ fontSize: 15 }}>{icon}</span>
       {label}
     </span>
   )
@@ -310,15 +284,13 @@ function FilterChip({
     <button
       type="button"
       onClick={onClick}
-      className="inline-flex items-center gap-1.5 px-3 h-8 rounded-full text-[12px] font-semibold transition-colors"
-      style={{
-        background: active ? 'rgba(245,158,11,0.14)' : '#FFFFFF',
-        border: `1px solid ${active ? 'rgba(245,158,11,0.40)' : '#C9B58C'}`,
-        color: active ? '#D97F06' : '#4D3A1F',
-      }}
+      aria-pressed={active}
+      className={`inline-flex items-center gap-1.5 px-3.5 h-9 rounded-full border-2 text-[13.5px] font-extrabold transition-colors ${
+        active ? 'bg-bq-amber border-bq-ink text-bq-ink' : 'bg-bq-white/90 border-bq-ink/25 text-bq-ink2 hover:border-bq-ink'
+      }`}
     >
       {icon && (
-        <span className="material-symbols-outlined" style={{ fontSize: 12, color: iconColor }}>{icon}</span>
+        <span className="material-symbols-outlined" style={{ fontSize: 16, color: iconColor }}>{icon}</span>
       )}
       {children}
     </button>
@@ -330,19 +302,15 @@ function ErrorState({ onRetry, retrying }: { onRetry: () => void; retrying: bool
   return (
     <div
       data-testid="multiplayer-error-state"
-      className="flex flex-col items-center justify-center py-20 rounded-2xl"
-      style={{ background: 'rgba(179,69,47,0.06)', border: '1px solid rgba(179,69,47,0.20)' }}
+      className="flex flex-col items-center justify-center py-12 px-6 rounded-bq bg-bq-white border-[3px] border-bq-ink shadow-bq-card"
     >
-      <div className="w-20 h-20 rounded-full flex items-center justify-center mb-5" style={{ background: 'rgba(179,69,47,0.12)' }}>
-        <span className="material-symbols-outlined" style={{ fontSize: 32, color: '#B3452F' }}>error</span>
-      </div>
+      <img src="/images/lk/hero-lost.webp" alt="" aria-hidden className="h-28 mb-3" />
       <h5 className="font-display text-lg font-bold text-bq-ink mb-2">{t('multiplayer.loadErrorTitle')}</h5>
       <p className="text-sm text-bq-ink2 text-center max-w-xs mb-6">{t('multiplayer.loadErrorDesc')}</p>
       <button
         onClick={onRetry}
         disabled={retrying}
-        className="py-3 px-8 rounded-xl font-bold text-sm disabled:opacity-60 shadow-bq-action"
-        style={{ background: 'var(--bq-action)', color: 'var(--bq-action-fg)' }}
+        className="lk-btn text-bq-ink text-[16px]"
       >
         {retrying ? t('multiplayer.loadErrorLoading') : t('multiplayer.loadErrorRetry')}
       </button>

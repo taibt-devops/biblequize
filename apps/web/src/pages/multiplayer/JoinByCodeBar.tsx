@@ -41,21 +41,15 @@ export default function JoinByCodeBar({ onJoin, disabled, error }: Props) {
 
   return (
     <div
-      className="rounded-xl px-4 py-3 flex items-center gap-4 flex-wrap bg-bq-white shadow-bq-soft"
-      style={{
-        border: '1px solid #C9B58C',
-      }}
+      className="rounded-2xl px-4 py-3 flex items-center gap-4 flex-wrap bg-bq-cream border-[3px] border-bq-ink shadow-[0_4px_0_#1D2B22]"
     >
-      <div className="flex items-center gap-2 shrink-0">
-        <div
-          className="w-7 h-7 rounded-lg flex items-center justify-center"
-          style={{ background: 'rgba(245,158,11,0.14)' }}
-        >
-          <span className="material-symbols-outlined" style={{ fontSize: 14, color: '#D97F06' }}>key</span>
-        </div>
+      <div className="flex items-center gap-2.5 shrink-0">
+        <span className="w-10 h-10 rounded-full grid place-items-center bg-bq-amber border-2 border-bq-ink">
+          <span className="material-symbols-outlined" style={{ fontSize: 20 }}>key</span>
+        </span>
         <div>
-          <div className="text-[12px] font-bold leading-tight text-bq-ink">{t('multiplayer.join.kicker')}</div>
-          <div className="text-[10px] leading-tight" style={{ color: error ? '#B3452F' : '#4D3A1F' }}>
+          <div className="text-[15px] font-extrabold leading-tight text-bq-ink">{t('multiplayer.join.kicker')}</div>
+          <div className={`text-[12.5px] font-bold leading-tight ${error ? 'text-bq-ruby' : 'text-bq-ink2'}`}>
             {error ?? t('multiplayer.join.hint')}
           </div>
         </div>
@@ -74,15 +68,9 @@ export default function JoinByCodeBar({ onJoin, disabled, error }: Props) {
             onKeyDown={(e) => handleKeyDown(i, e)}
             onPaste={handlePaste}
             data-testid={`code-digit-${i}`}
-            className="text-center text-base font-semibold text-bq-ink outline-none transition-colors"
-            style={{
-              width: 36, height: 36,
-              background: '#EFE3C3',
-              border: `1px solid ${c ? '#D97F06' : '#C9B58C'}`,
-              borderRadius: 8,
-            }}
-            onFocus={(e) => { e.currentTarget.style.borderColor = '#D97F06' }}
-            onBlur={(e) => { e.currentTarget.style.borderColor = c ? '#D97F06' : '#C9B58C' }}
+            className={`w-10 h-11 text-center text-[18px] font-extrabold text-bq-ink rounded-xl border-[3px] outline-none focus:border-bq-ink focus:ring-2 focus:ring-bq-amber ${
+              c ? 'bg-bq-white border-bq-ink' : 'bg-bq-paper border-bq-ink/30'
+            }`}
           />
         ))}
       </div>
@@ -90,12 +78,7 @@ export default function JoinByCodeBar({ onJoin, disabled, error }: Props) {
       <button
         onClick={() => { if (ready) onJoin(code) }}
         disabled={!ready}
-        className="ml-auto h-9 px-4 rounded-lg text-[12px] font-semibold transition-opacity disabled:cursor-not-allowed"
-        style={{
-          background: ready ? 'var(--bq-action)' : '#EFE3C3',
-          color: ready ? 'var(--bq-action-fg)' : '#6B5530',
-          border: ready ? 'none' : '1px solid #C9B58C',
-        }}
+        className="lk-btn ml-auto !py-2 text-bq-ink text-[15px]"
       >
         {disabled ? t('multiplayer.join.joining') : t('multiplayer.join.submit')}
       </button>

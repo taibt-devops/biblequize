@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Navigate, useNavigate, useSearchParams } from 'react-router-dom'
 import { api } from '../api/client'
+import { PlaceBackdrop, lkClass } from '../components/lk/Place'
 
 /**
  * QR landing page — quét QR mã `/room/join?code=ABC123` → auto-join phòng.
@@ -58,28 +59,35 @@ export default function JoinRoom() {
   if (!code) return <Navigate to="/multiplayer" replace />
 
   return (
-    <div className="min-h-[60vh] flex items-center justify-center px-6">
-      <div className="max-w-sm w-full text-center space-y-4">
+    <div className="relative min-h-[60vh] flex items-center justify-center px-6">
+      <PlaceBackdrop place="square" veil="strong" />
+      <div className="max-w-sm w-full text-center space-y-4 p-7 bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card">
         {joining ? (
           <>
-            <div className="text-[12.5px] text-bq-ink2">
+            <img src="/images/lk/lantern-on.webp" alt="" aria-hidden className={`mx-auto h-16 ${lkClass.bob}`} />
+            <div className="text-[14px] font-bold text-bq-ink2">
               Đang vào phòng
             </div>
-            <div className="text-2xl font-extrabold text-bq-ink">{code}</div>
-            <div className="text-sm text-bq-ink2">
+            <div className="flex justify-center gap-1.5" aria-label={code}>
+              {code.split('').map((c, i) => (
+                <span key={i} aria-hidden className="w-10 h-11 grid place-items-center rounded-xl bg-bq-paper border-[3px] border-bq-ink text-[20px] font-extrabold">{c}</span>
+              ))}
+            </div>
+            <div className="font-read text-[15px] text-bq-ink2">
               Vui lòng chờ trong giây lát…
             </div>
           </>
         ) : (
           <>
-            <div className="text-[12.5px] text-bq-ruby">
+            <img src="/images/lk/hero-lost.webp" alt="" aria-hidden className="mx-auto h-28" />
+            <div className="text-[14px] font-extrabold text-bq-ruby">
               Không vào được phòng
             </div>
-            <div className="text-base font-semibold text-bq-ink">{error}</div>
+            <div className="font-read text-[16px] font-bold text-bq-ink">{error}</div>
             <button
               type="button"
               onClick={() => navigate('/multiplayer', { replace: true })}
-              className="mt-2 inline-flex items-center justify-center h-10 px-5 rounded-lg bg-bq-action text-bq-ink shadow-bq-action text-sm font-bold"
+              className="lk-btn mt-2 text-bq-ink text-[16px]"
             >
               Về Multiplayer
             </button>
