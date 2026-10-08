@@ -13,11 +13,15 @@ interface Props {
   onChange: (value: string) => void
   placeholder?: string
   allLabel?: string
+  /** Placeholder of the search box; defaults to `placeholder`. */
+  searchPlaceholder?: string
+  /** Drop the "all" row: a choice is required and the button shows `placeholder` until one is made. */
+  hideAll?: boolean
 }
 
 // Khung Sáng (light): white surface + ink text + hairline border + amber accent.
 // Migrated off the old dark `--hp-*` vars (cream text on light paper = invisible).
-const SearchableSelect: React.FC<Props> = ({ options, value, onChange, placeholder, allLabel }) => {
+const SearchableSelect: React.FC<Props> = ({ options, value, onChange, placeholder, allLabel, searchPlaceholder, hideAll = false }) => {
   const { t } = useTranslation()
   const effectivePlaceholder = placeholder ?? t('components.searchableSelect.chooseDefault')
   const effectiveAllLabel = allLabel ?? t('common.all')
@@ -25,7 +29,10 @@ const SearchableSelect: React.FC<Props> = ({ options, value, onChange, placehold
   const [query, setQuery] = useState('')
   const containerRef = useRef<HTMLDivElement | null>(null)
 
-  const selected = useMemo(() => options.find(o => o.value === value)?.label ?? effectiveAllLabel, [options, value, effectiveAllLabel])
+  const selected = useMemo(
+    () => options.find(o => o.value === value)?.label ?? (hideAll ? '' : effectiveAllLabel),
+    [options, value, effectiveAllLabel, hideAll],
+  )
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
     if (!q) return options
@@ -82,18 +89,20 @@ const SearchableSelect: React.FC<Props> = ({ options, value, onChange, placehold
               autoFocus
               value={query}
               onChange={e => setQuery(e.target.value)}
-              placeholder={effectivePlaceholder || t('common.search')}
+              placeholder={searchPlaceholder ?? (effectivePlaceholder || t('common.search'))}
               className="w-full px-2.5 py-2 rounded-lg bg-bq-inset border border-bq-hair text-bq-ink text-sm placeholder:text-bq-ink3 focus:outline-none focus:ring-1 focus:ring-bq-sapphire"
             />
           </div>
           <ul role="listbox" className="max-h-56 overflow-y-auto p-1">
-            <li>
-              <button
-                type="button"
-                onClick={() => { onChange(''); setOpen(false) }}
-                className={optionClass(value === '')}
-              >{effectiveAllLabel}</button>
-            </li>
+            {!hideAll && (
+              <li>
+                <button
+                  type="button"
+                  onClick={() => { onChange(''); setOpen(false) }}
+                  className={optionClass(value === '')}
+                >{effectiveAllLabel}</button>
+              </li>
+            )}
             {filtered.map(opt => (
               <li key={opt.value}>
                 <button

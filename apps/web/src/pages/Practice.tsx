@@ -31,6 +31,30 @@ const MIN_TIME = 5
 const MAX_TIME = 120
 const DEFAULT_TIME = 30
 
+// A "Dễ cốt lõi" story from /api/public/stories. Titles and refs are Vietnamese; a story with
+// no questions in the chosen quiz language comes back with questionCount 0.
+interface Story {
+  id: string
+  order: number
+  title: string
+  ref: string
+  testament: 'OT' | 'NT'
+  questionCount: number
+}
+
+type PracticeScope = 'book' | 'story'
+
+const SCOPES: { key: PracticeScope; labelKey: string; icon: string }[] = [
+  { key: 'book',  labelKey: 'practice.byBook',  icon: '/images/lk/scroll.webp' },
+  { key: 'story', labelKey: 'practice.byStory', icon: '/images/lk/icon-map.webp' },
+]
+
+// Familiar stories offered as one-tap picks beside the story picker.
+const SUGGESTED_STORIES = [
+  'sang-tao', 'no-e-va-tran-lut', 'da-vit-va-go-li-at',
+  'gio-na-va-con-ca-lon', 'chua-jesus-giang-sinh', 'nguoi-con-hoang-dang',
+]
+
 interface RecentSession {
   sessionId: string
   createdAt: string | null
@@ -39,6 +63,7 @@ interface RecentSession {
   correctAnswers: number
   accuracy: number
   book: string | null
+  story?: string | null
 }
 
 function relativeDate(iso: string | null): string {
@@ -70,6 +95,8 @@ export default function Practice() {
   const navigate = useNavigate()
   const isAuthenticated = useAuthStore(s => s.isAuthenticated)
   const [books, setBooks] = useState<Book[]>([])
+  const [scope, setScope] = useState<PracticeScope>('book')
+  const [selectedStory, setSelectedStory] = useState('')
   const [selectedBook, setSelectedBook] = useState('')
   const [selectedDifficulty, setSelectedDifficulty] = useState('all')
   const [questionCount, setQuestionCount] = useState(10)
@@ -111,6 +138,28 @@ export default function Practice() {
     },
     enabled: isAuthenticated,
   })
+
+  // Always loaded (guests too): the story picker needs it, and so do the titles of
+  // recent story sessions.
+  const { data: stories } = useQuery({
+    queryKey: ['practice-stories', quizLang],
+    queryFn: async () => {
+      const res = await api.get('/api/public/stories', { params: { language: quizLang } })
+      return res.data as Story[]
+    },
+  })
+  const playableStories = useMemo(() => (stories ?? []).filter(s => s.questionCount > 0), [stories])
+  const story = playableStories.find(s => s.id === selectedStory)
+  const storyTitles = useMemo(() => new Map((stories ?? []).map(s => [s.id, s.title])), [stories])
+  const suggestions = useMemo(
+    () => SUGGESTED_STORIES.map(id => playableStories.find(s => s.id === id)).filter((s): s is Story => !!s),
+    [playableStories],
+  )
+
+  // A story the new quiz language has no questions for can't be played.
+  useEffect(() => {
+    if (selectedStory && stories && !story) setSelectedStory('')
+  }, [stories, story, selectedStory])
 
   useEffect(() => {
     if (booksData) setBooks(booksData)
@@ -165,6 +214,37 @@ export default function Practice() {
     try {
       setIsLoading(true)
       setErrorMsg('')
+
+      // "Theo câu chuyện": every question of one story, shuffled by the server. Count,
+      // difficulty and chapter/verse range don't apply; time and explanations do.
+      if (scope === 'story') {
+        if (!story) return
+        if (!isAuthenticated) {
+          const res = await api.get('/api/questions', { params: { language: quizLang, story: story.id, limit: 50 } })
+          const questions = res.data
+          if (!Array.isArray(questions) || questions.length === 0) {
+            setErrorMsg(t('practice.errorCreate'))
+            return
+          }
+          navigate('/quiz', {
+            state: { questions, mode: 'practice', questionCount: questions.length, showExplanation, timePerQuestion },
+          })
+          return
+        }
+        const res = await api.post('/api/sessions', {
+          mode: 'practice',
+          story: story.id,
+          questionCount: Math.min(story.questionCount, 50),
+          showExplanation,
+          language: quizLang,
+          timePerQuestion,
+        })
+        const { sessionId, questions } = res.data
+        navigate('/quiz', {
+          state: { sessionId, questions, questionCount: questions.length, showExplanation, timePerQuestion },
+        })
+        return
+      }
 
       // Guest (not logged in): SPEC_USER §5.1 — Luyện Tập is "mixed (guest có
       // thể chơi, không lưu tier)". Run a local, no-session quiz: pull questions
@@ -240,15 +320,113 @@ export default function Practice() {
     }
   }
 
-  const estimatedMins = Math.max(1, Math.round((questionCount * timePerQuestion) / 60))
+  const plannedCount = scope === 'story' ? story?.questionCount ?? 0 : questionCount
+  const estimatedMins = Math.max(1, Math.round((plannedCount * timePerQuestion) / 60))
   const bookCount = selectedBook ? 1 : books.length || 66
-  const isDisabled = isLoading || isBooksLoading || rangeError != null
+  const isDisabled = isLoading || (scope === 'story' ? !story : isBooksLoading || rangeError != null)
   const tipOfTheDay = t(TIP_KEYS[new Date().getDate() % TIP_KEYS.length])
 
   const label = 'block text-[15px] font-extrabold text-bq-ink mb-2'
   const hint = 'font-read text-[12.5px] text-bq-ink3 mt-1.5'
   const field = 'w-full px-3 py-2.5 rounded-xl bg-bq-white border-2 border-bq-ink text-bq-ink text-[15px] font-bold disabled:opacity-40 placeholder:text-bq-ink3 placeholder:font-semibold focus:outline-none focus:ring-[3px] focus:ring-bq-amber'
   const DOT: Record<string, string> = { all: 'bg-bq-ink', easy: 'bg-bq-emerald', medium: 'bg-bq-sapphire', hard: 'bg-bq-ruby' }
+
+  // Shared by both scopes.
+  const languageField = (
+    <div>
+      <span className={label}>{t('practice.quizLanguage')}</span>
+      <QuizLanguageSelect onChange={setQuizLang} />
+    </div>
+  )
+  const timeField = (
+    <div>
+      <div className="flex items-baseline justify-between mb-2">
+        <span className="text-[15px] font-extrabold">{t('practice.timePerQuestion')}</span>
+        <span className="text-[15px] font-extrabold text-bq-amberd tabular-nums">{t('practice.timePerQuestionValue', { seconds: timePerQuestion })}</span>
+      </div>
+      <input
+        data-testid="practice-time-slider"
+        type="range"
+        min={MIN_TIME}
+        max={MAX_TIME}
+        step={5}
+        value={timePerQuestion}
+        onChange={e => setTimePerQuestion(Number(e.target.value))}
+        className={lkClass.range}
+        aria-label={t('practice.timePerQuestion')}
+      />
+      <p className={hint}>{t('practice.timePerQuestionHint')}</p>
+    </div>
+  )
+
+  // "Theo câu chuyện": pick one story; the right column previews it, or offers familiar ones.
+  const storyFields = (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6">
+      <div className="space-y-6">
+        {languageField}
+
+        <div data-testid="practice-story-select">
+          <div className="flex items-baseline justify-between mb-2">
+            <span className="text-[15px] font-extrabold">{t('practice.selectStory')}</span>
+            {playableStories.length > 0 && (
+              <span className="text-[13px] font-bold text-bq-ink3">{t('practice.storyCount', { count: playableStories.length })}</span>
+            )}
+          </div>
+          {stories && playableStories.length === 0 ? (
+            <p data-testid="practice-story-unavailable" className="m-0 px-3 py-2.5 bg-bq-white border-2 border-bq-ink rounded-xl font-read text-[14px] text-bq-ink2">
+              {t('practice.storyOnlyVi')}
+            </p>
+          ) : (
+            <SearchableSelect
+              options={playableStories.map(s => ({ value: s.id, label: `${s.title} (${s.ref})` }))}
+              value={selectedStory}
+              onChange={setSelectedStory}
+              placeholder={t('practice.chooseStory')}
+              searchPlaceholder={t('practice.searchStory')}
+              hideAll
+            />
+          )}
+          <p className={hint}>{t('practice.storyHint')}</p>
+        </div>
+
+        {timeField}
+      </div>
+
+      <div className="space-y-6">
+        {story && (
+          <div data-testid="practice-story-card" className="px-5 py-4 bg-bq-cream border-[3px] border-bq-ink rounded-2xl shadow-[0_4px_0_#1D2B22]">
+            <h3 className="m-0 font-display text-[24px] leading-tight font-extrabold">{story.title}</h3>
+            <p className="m-0 mt-1 font-read text-[15px] text-bq-ink2">
+              {story.ref} · {t(story.testament === 'OT' ? 'practice.oldTestament' : 'practice.newTestament')}
+            </p>
+            <p className="m-0 mt-3 text-[16px] font-extrabold">{t('practice.storyQuestions', { count: story.questionCount })}</p>
+            <p className={hint}>{t('practice.storySource')}</p>
+          </div>
+        )}
+        {suggestions.length > 0 && (
+          <div>
+            <span className={label}>{t('practice.storySuggest')}</span>
+            <div className="flex flex-wrap gap-2">
+              {suggestions.map(s => (
+                <button
+                  key={s.id}
+                  data-testid={`practice-story-suggest-${s.id}`}
+                  type="button"
+                  aria-pressed={selectedStory === s.id}
+                  onClick={() => setSelectedStory(s.id)}
+                  className={`px-3.5 py-1.5 border-2 border-bq-ink rounded-full text-[14px] font-bold shadow-[0_3px_0_#1D2B22] transition-transform hover:-translate-y-0.5 ${
+                    selectedStory === s.id ? 'bg-bq-amber' : 'bg-bq-white'
+                  }`}
+                >
+                  {s.title}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  )
 
   // The study nook (LKF-8): set up a practice run on a parchment scroll at the reading desk.
   return (
@@ -271,12 +449,28 @@ export default function Practice() {
 
       <form onSubmit={e => { e.preventDefault(); if (!isDisabled) startQuiz() }}>
         <ScrollPanel bodyClassName="px-5 md:px-9 pt-6 pb-5">
+          <div role="group" aria-label={t('practice.scopeLabel')} className="grid grid-cols-2 gap-2.5 mb-6 max-w-[560px]">
+            {SCOPES.map(s => (
+              <button
+                key={s.key}
+                data-testid={`practice-scope-${s.key}`}
+                type="button"
+                aria-pressed={scope === s.key}
+                onClick={() => setScope(s.key)}
+                className={`flex items-center justify-center gap-2.5 py-2.5 px-2 rounded-2xl border-[3px] border-bq-ink text-[15px] sm:text-[16px] font-extrabold shadow-[0_4px_0_#1D2B22] transition-transform hover:-translate-y-0.5 ${
+                  scope === s.key ? 'bg-bq-amber' : 'bg-bq-white'
+                }`}
+              >
+                <img src={s.icon} alt="" aria-hidden className="hidden sm:block h-7" />
+                <span className="whitespace-nowrap">{t(s.labelKey)}</span>
+              </button>
+            ))}
+          </div>
+
+          {scope === 'story' ? storyFields : (<>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6">
             <div className="space-y-6">
-              <div>
-                <span className={label}>{t('practice.quizLanguage')}</span>
-                <QuizLanguageSelect onChange={setQuizLang} />
-              </div>
+              {languageField}
 
               <div data-testid="practice-book-select">
                 <div className="flex items-baseline justify-between mb-2">
@@ -313,24 +507,7 @@ export default function Practice() {
                 </div>
               </div>
 
-              <div>
-                <div className="flex items-baseline justify-between mb-2">
-                  <span className="text-[15px] font-extrabold">{t('practice.timePerQuestion')}</span>
-                  <span className="text-[15px] font-extrabold text-bq-amberd tabular-nums">{t('practice.timePerQuestionValue', { seconds: timePerQuestion })}</span>
-                </div>
-                <input
-                  data-testid="practice-time-slider"
-                  type="range"
-                  min={MIN_TIME}
-                  max={MAX_TIME}
-                  step={5}
-                  value={timePerQuestion}
-                  onChange={e => setTimePerQuestion(Number(e.target.value))}
-                  className={lkClass.range}
-                  aria-label={t('practice.timePerQuestion')}
-                />
-                <p className={hint}>{t('practice.timePerQuestionHint')}</p>
-              </div>
+              {timeField}
             </div>
 
             <div className="space-y-6">
@@ -435,6 +612,7 @@ export default function Practice() {
               {rangeError}
             </div>
           )}
+          </>)}
 
           <div className="mt-6 pt-5 border-t-2 border-dashed border-bq-hair flex flex-col sm:flex-row items-center justify-between gap-4">
             <button
@@ -458,10 +636,12 @@ export default function Practice() {
                 disabled={isDisabled}
                 className="lk-btn w-full sm:w-auto sm:min-w-[260px] text-bq-ink text-[19px]"
               >
-                {isLoading || isBooksLoading ? t('practice.starting') : t('practice.start')}
+                {isLoading || (scope === 'book' && isBooksLoading) ? t('practice.starting') : t('practice.start')}
               </button>
               <span className="text-[13px] font-bold text-bq-ink3">
-                {questionCount} · ~{estimatedMins} {t('practice.stats.minutes').toLowerCase()} · {bookCount} {t('practice.stats.books').toLowerCase()}
+                {scope === 'story'
+                  ? (story ? `${story.questionCount} · ~${estimatedMins} ${t('practice.stats.minutes').toLowerCase()}` : t('practice.chooseStory'))
+                  : <>{questionCount} · ~{estimatedMins} {t('practice.stats.minutes').toLowerCase()} · {bookCount} {t('practice.stats.books').toLowerCase()}</>}
               </span>
             </div>
           </div>
@@ -504,7 +684,11 @@ export default function Practice() {
                   {session.accuracy}%
                 </span>
                 <div className="min-w-0">
-                  <p className="m-0 text-[15px] font-extrabold truncate">{session.book || t('practice.allBooks')}</p>
+                  <p className="m-0 text-[15px] font-extrabold truncate">
+                    {session.story
+                      ? storyTitles.get(session.story) ?? t('practice.storyFallback')
+                      : session.book || t('practice.allBooks')}
+                  </p>
                   <p className="m-0 text-[13px] font-bold text-bq-ink3">
                     {session.correctAnswers}/{session.totalQuestions}{relativeDate(session.createdAt) ? ` · ${relativeDate(session.createdAt)}` : ''}
                   </p>

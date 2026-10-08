@@ -2,7 +2,7 @@
 
 Đây là bộ câu Dễ viết mới cho Bible Quiz. Nó dùng cho:
 
-- Luyện tập ở độ khó Dễ;
+- Luyện tập **theo câu chuyện** (mỗi phiên chơi hết một chuyện) và Luyện tập ở độ khó Dễ;
 - Đấu Hạng bậc 1–2;
 - Vòng Tốc độ;
 - những lần chơi đầu tiên của người mới.
@@ -48,19 +48,27 @@ Câu hỏi và đoạn trích theo **Kinh Thánh Bản Truyền Thống Hiệu �
 | `build.py` | Đối chiếu trích dẫn với RVV11, kiểm tra luật, xếp đáp án đúng rải đều A–D, rồi xuất định dạng câu hỏi gốc |
 | `pilot_quiz.json`, `b02_quiz.json`, … | Kết quả dựng (đừng sửa tay) |
 | `stories.md` | Danh sách 120 câu chuyện cốt lõi, dấu ✓ là chuyện đã viết |
+| `apps/api/src/main/resources/seed/questions/easy_core_quiz.json` | Bộ câu app nạp: mọi đợt gộp lại, mỗi câu thêm `story` (id chuyện). Do `export` sinh ra |
+| `apps/api/src/main/resources/seed/stories/stories.json` | Danh mục 120 chuyện (`id`, `order`, `title`, `ref`, `testament`) cho màn Luyện Tập. Do `export` sinh ra |
 
 ```
 python content/easy-core/build.py pilot b02        # dựng và kiểm tra từng đợt
 python content/easy-core/build.py show "sa 3:1-7"  # in đoạn Kinh Thánh RVV11 để viết câu hỏi
+python content/easy-core/build.py mark             # đánh dấu ✓ các chuyện đã viết trong stories.md
+python content/easy-core/build.py export           # đưa cả bộ vào app (2 file seed ở trên)
 ```
+
+`export` từ chối xuất nếu: hai chuyện trùng id, câu nào không thuộc chuyện nào, chuyện nào không có câu, hai câu trùng nhau trong bộ, hoặc câu trùng `content_hash` với file seed khác (seeder sẽ bỏ qua câu đó nên nó không có chuyện).
+
+Id chuyện là tên chuyện bỏ dấu (`Nô-ê và trận lụt` → `no-e-va-tran-lut`). Đổi tên chuyện thì id đổi theo: chạy lại `export`, seeder cập nhật cột `story` tại chỗ (id câu hỏi không phụ thuộc chuyện).
 
 Bản thử giữ cách xáo đáp án cũ vì kết quả chơi thử đã ghi theo thứ tự đó; các đợt sau rải đáp án đúng đều qua A–D.
 
-`pilot_quiz.json` cố ý nằm **ngoài** `apps/api/src/main/resources/seed/questions/`, nên QuestionSeeder không nạp nó. Khi bộ câu được duyệt, chép file vào thư mục đó với tên khớp mẫu `*_quiz.json` rồi nạp theo quy trình seed một lần (xem `docs/dev/seeding.md`).
+Các file `*_quiz.json` của từng đợt cố ý nằm **ngoài** `apps/api/src/main/resources/seed/questions/`: app chỉ nạp file `export` sinh ra, khi QuestionSeeder chạy lúc khởi động.
 
 ## Quy trình
 
-1. **Bản thử** (đang ở bước này): 100 câu cho 10 câu chuyện. Chủ dự án và vài anh chị em trong nhóm chơi thử, góp ý về giọng văn và độ dễ.
-2. Chốt luật viết, rồi viết đủ khoảng 1.200 câu cho 120 câu chuyện.
+1. **Bản thử** (xong 08/10): 100 câu cho 10 câu chuyện. Chủ dự án chơi thử, thấy ổn.
+2. Viết đủ 120 câu chuyện (xong 09/10: 1.095 câu) và đưa vào Luyện Tập theo câu chuyện.
 3. Chấm lại nhãn của các câu Dễ cũ theo cùng thước đo. Câu nào dễ thật thì giữ, còn lại chuyển sang Trung bình hoặc Khó.
 4. Nạp lên prod. Mục tiêu: câu Dễ đúng từ 80% trở lên. Đo lại sau 2–4 tuần.

@@ -63,6 +63,7 @@ public class SessionController {
         if (request.getChapterTo() != null)   config.put("chapterTo",   request.getChapterTo());
         if (request.getVerseFrom() != null)   config.put("verseFrom",   request.getVerseFrom());
         if (request.getVerseTo() != null)     config.put("verseTo",     request.getVerseTo());
+        if (request.getStory() != null && !request.getStory().isBlank()) config.put("story", request.getStory());
 
         return ResponseEntity.ok(sessionService.createSession(userId, mode, config));
     }

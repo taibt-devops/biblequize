@@ -48,4 +48,10 @@ public class CreateSessionRequest {
 
     @Pattern(regexp = "^(vi|en)$", message = "Language must be vi or en")
     private String language = "vi";
+
+    // Practice "Theo câu chuyện": play every question of this story (an id from
+    // /api/public/stories). Overrides book, difficulty and the chapter/verse range.
+    @Size(max = 64, message = "Story id cannot exceed 64 characters")
+    @Pattern(regexp = "^[a-z0-9-]+$", message = "Invalid story id")
+    private String story;
 }

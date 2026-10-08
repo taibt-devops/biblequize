@@ -287,6 +287,13 @@ Auto-regen theo bảng 3.3.
 
 Cấu hình trong UI: chọn book / quiz set / difficulty / count / language / bật/tắt explanation.
 
+**Luyện theo câu chuyện** (2026-10-09). Màn Luyện Tập có hai cách: **Theo sách** (như trên) và **Theo câu chuyện**.
+- Danh sách: 120 câu chuyện cốt lõi (`content/easy-core/stories.md`), lấy qua `GET /api/public/stories?language=` (khách xem được). Mỗi chuyện có `id`, `title`, `ref`, `testament`, `questionCount`. Chuyện không có câu ở ngôn ngữ đang chọn trả `questionCount = 0`; màn hình ẩn nó khỏi danh sách nhưng vẫn dùng tên để hiện ở Phiên gần đây.
+- Một phiên chơi **hết các câu của chuyện** (5–10 câu Dễ), xáo thứ tự mỗi lần. Không chọn số câu, độ khó, chương/câu. Vẫn chỉnh được thời gian mỗi câu và bật/tắt giải thích.
+- Đã đăng nhập: `POST /api/sessions` với `story` (bỏ Smart Selection). Khách: `GET /api/questions?story=` rồi chấm ở máy như luyện tập khách.
+- Chỉ có tiếng Việt. Câu hỏi trích nguyên văn bản Truyền Thống Hiệu Đính 2010 (RVV11).
+- Dữ liệu: cột `questions.story` (V73), do `QuestionSeeder` nạp từ `seed/questions/easy_core_quiz.json`. Các câu này là câu Dễ bình thường nên cũng vào kho Đấu Hạng.
+
 ### 5.2 Đấu Hạng (Ranked)
 
 > **Source:** `apps/web/src/pages/Ranked.tsx`; `RankedSessionService.java`; controller `/api/ranked`.

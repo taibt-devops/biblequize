@@ -3,12 +3,13 @@
 > Task tracker. Active TODOs ở dưới. DONE/SUPERSEDED đã chuyển sang [`docs/todo/archive/`](docs/todo/archive/).
 > Format mỗi task file theo template CLAUDE.md §Quy trình quản lý Task.
 
-## Active (30)
+## Active (31)
 
 > Dọn 2026-06-22: 23 task ghi "TODO/DONE" nhưng đã verify hoàn thành → archive (xem git log + Archive bên dưới). Bảng này giờ chỉ còn việc THỰC SỰ đang mở.
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
+| 2026-10-09 | Luyện Tập theo câu chuyện (120 chuyện, 1.095 câu Dễ cốt lõi RVV11): cột `questions.story`, `GET /api/public/stories`, nút Theo sách / Theo câu chuyện (PBS-1..5) | IN PROGRESS (code + test xong, chờ deploy) | [detail](docs/todo/active/2026-10-09-practice-by-story.md) |
 | 2026-10-09 | Câu của Nhóm lọt vào kho chung Đấu Hạng/Luyện Tập + 71 câu tên sách sai (Song of Solomon trùng, Gióp/Sáng Thế Ký của Nhóm) (GQL-1..3) | DONE (deploy prod 09/10) | [detail](docs/todo/active/2026-10-09-group-questions-shared-pool-leak.md) |
 | 2026-10-08 | Đấu Hạng: rút câu cả Kinh Thánh theo vòng sách quen thuộc theo bậc, tối đa 3 câu/sách, Hành trình thành sưu tầm (RFR-1..4) | DONE (deploy prod 08/10; đo lại tỷ lệ đúng sau 2–4 tuần) | [detail](docs/todo/active/2026-10-08-ranked-familiarity-rings.md) |
 | 2026-10-08 | Đổi giao diện toàn app sang phong cách Lữ Khách — token, font, component, Quiz, Home, Hành trình 8 vùng, admin (LKD-0..21) | DONE (merge vào main) | [detail](docs/todo/active/2026-10-08-lu-khach-redesign.md) |

@@ -59,6 +59,48 @@ class SessionControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.error").value(org.hamcrest.Matchers.containsString("Invalid mode")));
     }
 
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void createSession_withStory_passesStoryInConfig() throws Exception {
+        when(sessionService.createSession(eq("test@example.com"), any(), anyMap()))
+                .thenReturn(Map.of("sessionId", "session-1"));
+
+        mockMvc.perform(post("/api/sessions")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"mode\":\"practice\",\"questionCount\":10,\"story\":\"no-e-va-tran-lut\"}"))
+                .andExpect(status().isOk());
+
+        verify(sessionService).createSession(eq("test@example.com"),
+                eq(com.biblequiz.modules.quiz.entity.QuizSession.Mode.practice),
+                argThat((Map<String, Object> cfg) -> "no-e-va-tran-lut".equals(cfg.get("story"))));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void createSession_withoutStory_leavesStoryOutOfConfig() throws Exception {
+        when(sessionService.createSession(eq("test@example.com"), any(), anyMap()))
+                .thenReturn(Map.of("sessionId", "session-1"));
+
+        mockMvc.perform(post("/api/sessions")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"mode\":\"practice\",\"questionCount\":10}"))
+                .andExpect(status().isOk());
+
+        verify(sessionService).createSession(eq("test@example.com"), any(),
+                argThat((Map<String, Object> cfg) -> !cfg.containsKey("story")));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void createSession_withMalformedStory_shouldReturn400() throws Exception {
+        mockMvc.perform(post("/api/sessions")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"mode\":\"practice\",\"story\":\"Nô-ê và trận lụt\"}"))
+                .andExpect(status().isBadRequest());
+
+        verifyNoInteractions(sessionService);
+    }
+
     // ── POST /api/sessions/{id}/answer ───────────────────────────────────────
 
     @Test

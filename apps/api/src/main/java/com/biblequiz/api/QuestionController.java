@@ -42,7 +42,11 @@ public class QuestionController {
                         @Parameter(description = "Verse range start (inclusive); only meaningful when chapterFrom == chapterTo") @RequestParam(required = false) Integer verseFrom,
                         @Parameter(description = "Verse range end (inclusive)") @RequestParam(required = false) Integer verseTo,
                         @Parameter(description = "Number of questions to return (default: 10, max: 50)") @RequestParam(required = false, defaultValue = "10") int limit,
-                        @Parameter(description = "List of question IDs to exclude from results") @RequestParam(required = false, name = "excludeIds[]") List<String> excludeIds) {
+                        @Parameter(description = "List of question IDs to exclude from results") @RequestParam(required = false, name = "excludeIds[]") List<String> excludeIds,
+                        @Parameter(description = "Story id from /api/public/stories: every question of that story, ignoring the other filters") @RequestParam(required = false) String story) {
+                if (story != null && !story.isBlank()) {
+                        return questionService.getStoryQuestions(story, language, Math.min(limit, 50));
+                }
                 return questionService.getRandomQuestions(book, difficulty, language,
                                 chapterFrom, chapterTo, verseFrom, verseTo, limit, excludeIds);
         }

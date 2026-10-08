@@ -11,8 +11,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
@@ -197,6 +199,33 @@ public class QuestionService {
             result = new ArrayList<>(result.subList(0, limit));
         }
         return result;
+    }
+
+    /**
+     * Every active question of one story (V73), shuffled. Practice "Theo câu chuyện"
+     * plays the whole story, so {@code limit} only caps the size of the response.
+     */
+    public List<Question> getStoryQuestions(String story, String language, int limit) {
+        if (story == null || story.isBlank() || limit <= 0) {
+            return Collections.emptyList();
+        }
+        String lang = (language != null && !language.isBlank()) ? language : "vi";
+        List<Question> result = new ArrayList<>(
+                questionRepository.findByStoryAndLanguageAndIsActiveTrue(story, lang));
+        Collections.shuffle(result, random);
+        return result.size() > limit ? new ArrayList<>(result.subList(0, limit)) : result;
+    }
+
+    /** Active question count per story for one language; stories without questions are absent. */
+    public Map<String, Long> countQuestionsByStory(String language) {
+        String lang = (language != null && !language.isBlank()) ? language : "vi";
+        Map<String, Long> counts = new HashMap<>();
+        for (Object[] row : questionRepository.countActiveByStory(lang)) {
+            if (row != null && row.length >= 2 && row[0] != null && row[1] instanceof Number n) {
+                counts.put(row[0].toString(), n.longValue());
+            }
+        }
+        return counts;
     }
 
     private Question.Difficulty parseDifficulty(String difficultyStr) {

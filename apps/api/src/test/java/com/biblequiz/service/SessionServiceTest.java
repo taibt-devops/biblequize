@@ -219,6 +219,85 @@ class SessionServiceTest {
         }
 
         @Test
+        void createSession_WithStory_PlaysTheWholeStoryWithoutSmartSelection() throws Exception {
+                String ownerId = "user1";
+                Map<String, Object> config = new HashMap<>();
+                config.put("questionCount", 10);
+                config.put("story", "no-e-va-tran-lut");
+                config.put("book", "");
+                config.put("chapterFrom", 99); // ignored: the story decides the questions
+                config.put("language", "vi");
+
+                when(userRepository.findById(ownerId)).thenReturn(Optional.of(sampleUser));
+                when(objectMapper.writeValueAsString(config)).thenReturn("{}");
+                when(questionService.getStoryQuestions("no-e-va-tran-lut", "vi", 50))
+                                .thenReturn(Arrays.asList(sampleQuestion));
+                when(quizSessionRepository.save(any(QuizSession.class))).thenReturn(sampleSession);
+
+                Map<String, Object> result = sessionService.createSession(ownerId, QuizSession.Mode.practice, config);
+
+                assertNotNull(result.get("sessionId"));
+                assertEquals(1, ((List<?>) result.get("questions")).size());
+                verify(questionService).getStoryQuestions("no-e-va-tran-lut", "vi", 50);
+                verify(questionService, never()).getRandomQuestions(any(), any(), any(), any(), any(), any(), any(), anyInt(), any());
+                verifyNoInteractions(smartQuestionSelector);
+        }
+
+        @Test
+        void createSession_WithStoryThatHasNoQuestions_ShouldThrow() throws Exception {
+                String ownerId = "user1";
+                Map<String, Object> config = new HashMap<>();
+                config.put("story", "khong-co");
+                config.put("language", "en");
+
+                when(userRepository.findById(ownerId)).thenReturn(Optional.of(sampleUser));
+                when(questionService.getStoryQuestions("khong-co", "en", 50)).thenReturn(List.of());
+
+                IllegalArgumentException ex = assertThrows(IllegalArgumentException.class, () ->
+                                sessionService.createSession(ownerId, QuizSession.Mode.practice, config));
+                assertTrue(ex.getMessage().contains("khong-co"));
+                verifyNoInteractions(smartQuestionSelector);
+        }
+
+        @Test
+        void createSession_StoryOutsidePractice_IsIgnored() throws Exception {
+                // A story only scopes Practice; Ranked keeps its own selection.
+                String ownerId = "user1";
+                sampleUser.setBasicQuizPassed(true);
+                Map<String, Object> config = new HashMap<>();
+                config.put("questionCount", 1);
+                config.put("story", "no-e-va-tran-lut");
+
+                when(userRepository.findById(ownerId)).thenReturn(Optional.of(sampleUser));
+                when(smartQuestionSelector.selectQuestions(eq(ownerId), eq(1), any()))
+                                .thenReturn(Arrays.asList(sampleQuestion));
+
+                sessionService.createSession(ownerId, QuizSession.Mode.ranked, config);
+
+                verify(smartQuestionSelector).selectQuestions(eq(ownerId), eq(1), any());
+                verify(questionService, never()).getStoryQuestions(any(), any(), anyInt());
+        }
+
+        @Test
+        @SuppressWarnings("unchecked")
+        void getRecentPracticeSessions_returnsStoryIdFromConfig() throws Exception {
+                sampleSession.setConfig("{\"story\":\"no-e-va-tran-lut\",\"book\":\"\"}");
+                when(userRepository.findById("user1")).thenReturn(Optional.of(sampleUser));
+                when(quizSessionRepository.findByOwnerIdAndModeOrderByCreatedAtDesc(
+                                eq("user1"), eq(QuizSession.Mode.practice), any(PageRequest.class)))
+                                .thenReturn(new PageImpl<>(List.of(sampleSession)));
+                when(objectMapper.readValue(eq(sampleSession.getConfig()),
+                                any(com.fasterxml.jackson.core.type.TypeReference.class)))
+                                .thenReturn(Map.of("story", "no-e-va-tran-lut", "book", ""));
+
+                List<Map<String, Object>> out = sessionService.getRecentPracticeSessions("user1", 3);
+
+                assertEquals(1, out.size());
+                assertEquals("no-e-va-tran-lut", out.get(0).get("story"));
+                assertNull(out.get(0).get("book"));
+        }
+
+        @Test
         void createSession_WithInvalidChapterRange_ShouldThrow() throws Exception {
                 // Mark only has 16 chapters; chapterTo=50 must be rejected by BibleStructure.
                 String ownerId = "user1";
@@ -519,7 +598,9 @@ class SessionServiceTest {
 
                 sessionService.submitAnswer("session1", "user1", "q1", 0, 5000);
 
-                verify(userDailyProgressRepository).findByUserIdAndDate("user1", java.time.LocalDate.now(java.time.ZoneOffset.UTC));
+                // The service keys daily progress by GameClock (Vietnam) day; a UTC date
+                // made this fail every night between 00:00 and 07:00 ICT.
+                verify(userDailyProgressRepository).findByUserIdAndDate("user1", com.biblequiz.infrastructure.time.GameClock.today());
                 verify(userDailyProgressRepository).save(argThat(udp ->
                         udp.getQuestionsCounted() != null && udp.getQuestionsCounted() == 1
                                 && udp.getPointsCounted() != null && udp.getPointsCounted() == 0));

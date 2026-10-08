@@ -1,6 +1,7 @@
 """Build the "Dễ cốt lõi" question set from its human-edited source.
 
     python content/easy-core/build.py pilot          # pilot.src.json -> pilot_quiz.json
+    python content/easy-core/build.py export         # every *_quiz.json -> the app's seed files
 
 For every question it:
   * checks the quote is a verbatim substring of the cited verses in Kinh Thánh Bản Truyền Thống
@@ -10,14 +11,18 @@ For every question it:
   * shuffles the options deterministically so the correct answer is spread over A-D;
   * writes the seed format read by QuestionSeeder (book, chapter, verseStart/verseEnd, difficulty,
     type, content, options, correctAnswer, explanation, language, tags).
-The output is NOT under seed/questions on purpose: nothing is loaded until the set is approved.
+A batch's *_quiz.json stays here; `export` is what puts the approved set into the app: it merges
+every batch into seed/questions/easy_core_quiz.json, adding each question's story id, and writes
+the story catalog the Practice screen lists (seed/stories/stories.json).
 """
+import hashlib
 import html as htmlmod
 import json
 import random
 import re
 import sys
 import time
+import unicodedata
 import urllib.request
 from collections import Counter
 from pathlib import Path
@@ -181,10 +186,89 @@ def mark() -> None:
     print(f"{len(done)} stories written")
 
 
+API_RES = HERE.parent.parent / "apps" / "api" / "src" / "main" / "resources" / "seed"
+STORY_ROW = re.compile(r"^\| (\d+) \| (.+?) \| (.+?) \|$")
+
+
+def slug(title: str) -> str:
+    """Story id: the title without diacritics, e.g. "Nô-ê và trận lụt" -> "no-e-va-tran-lut"."""
+    s = unicodedata.normalize("NFD", title.replace("Đ", "D").replace("đ", "d"))
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+
+
+def content_hash(q: dict) -> str:
+    """Mirror of QuestionSeeder.computeContentHash (the V68 unique key on questions)."""
+    norm = q["content"].lower()
+    for c in "?!.,;:\"'()[]{}":
+        norm = norm.replace(c, "")
+    norm = re.sub(r"\s+", " ", norm).strip()
+    key = "|".join(str(x) for x in (q["book"], q["chapter"], q["verseStart"], q.get("verseEnd", ""),
+                                     q.get("language", "vi"), norm))
+    return hashlib.sha256(key.encode("utf-8")).hexdigest()
+
+
+def export() -> int:
+    """Write the merged seed file and the story catalog the API serves."""
+    catalog, testament = [], None
+    for line in (HERE / "stories.md").read_text(encoding="utf-8").splitlines():
+        if line.startswith("## "):
+            testament = "OT" if "Cựu Ước" in line else "NT"
+        m = STORY_ROW.match(line)
+        if m:
+            title = m.group(2).replace(" ✓", "").strip()
+            catalog.append({"id": slug(title), "order": int(m.group(1)), "title": title,
+                            "ref": m.group(3).strip(), "testament": testament})
+    ids = {s["id"]: s for s in catalog}
+    by_title = {s["title"]: s["id"] for s in catalog}
+    problems = []
+    if len(ids) != len(catalog):
+        problems.append("two stories share an id")
+    problems += [f"story id too long: {i}" for i in ids if len(i) > 64]
+
+    merged = []
+    for f in sorted(HERE.glob("*_quiz.json")):
+        for q in json.loads(f.read_text(encoding="utf-8")):
+            story = by_title.get(q["tags"][1])
+            if story is None:
+                problems.append(f"{f.name}: story '{q['tags'][1]}' is not in stories.md")
+                continue
+            merged.append({**q, "story": story})
+    hashes = Counter(content_hash(q) for q in merged)
+    problems += [f"duplicate question inside the set ({n}x): {h[:12]}" for h, n in hashes.items() if n > 1]
+    per_story = Counter(q["story"] for q in merged)
+    problems += [f"story without questions: {s['title']}" for s in catalog if s["id"] not in per_story]
+
+    # A question whose content_hash already exists is skipped by the seeder, so it would never get
+    # its story. Report those against the other seed files (DB-only rows are checked after deploy).
+    other = set()
+    for f in (API_RES / "questions").glob("*_quiz*.json"):
+        if f.name != "easy_core_quiz.json":
+            other.update(content_hash(q) for q in json.loads(f.read_text(encoding="utf-8")))
+    clash = [q for q in merged if content_hash(q) in other]
+    problems += [f"already in another seed file: [{q['book']} {q['chapter']}:{q['verseStart']}] {q['content']}"
+                 for q in clash]
+    if problems:
+        print(f"{len(problems)} problem(s):")
+        for p in problems:
+            print("  -", p)
+        return 1
+    (API_RES / "questions" / "easy_core_quiz.json").write_text(
+        json.dumps(merged, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    (API_RES / "stories").mkdir(exist_ok=True)
+    (API_RES / "stories" / "stories.json").write_text(
+        json.dumps(catalog, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"exported {len(merged)} questions in {len(per_story)} stories "
+          f"({min(per_story.values())}-{max(per_story.values())} per story)")
+    return 0
+
+
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "mark":
         mark()
         sys.exit(0)
+    if len(sys.argv) > 1 and sys.argv[1] == "export":
+        sys.exit(export())
     if len(sys.argv) > 1 and sys.argv[1] == "show":
         for spec in sys.argv[2:]:
             print(f"== {spec}")

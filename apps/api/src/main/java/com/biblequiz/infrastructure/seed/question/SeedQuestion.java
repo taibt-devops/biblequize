@@ -56,4 +56,10 @@ public class SeedQuestion {
      * Null/absent ⇒ regular question.
      */
     public String category;
+    /**
+     * Story id persisted as Question.story (e.g. "no-e-va-tran-lut"), set on the
+     * "Dễ cốt lõi" questions so Practice can play one story. Must exist in
+     * seed/stories/stories.json. Null/absent ⇒ not part of a story.
+     */
+    public String story;
 }

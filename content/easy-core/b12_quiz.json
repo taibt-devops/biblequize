@@ -755,12 +755,12 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Bởi đức tin, Nô-ê đóng gì để cứu cả nhà?",
+  "content": "Bởi đức tin, Nô-ê đóng tàu để làm gì?",
   "options": [
-   "Một ngôi nhà đá",
-   "Một chiếc tàu",
-   "Một bức tường",
-   "Một tháp cao"
+   "Chở vàng bạc",
+   "Cứu cả nhà mình",
+   "Đi buôn bán xa",
+   "Đánh cá ngoài biển"
   ],
   "correctAnswer": [
    1

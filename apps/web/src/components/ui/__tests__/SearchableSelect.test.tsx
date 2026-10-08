@@ -97,4 +97,16 @@ describe('SearchableSelect', () => {
     fireEvent.click(button)
     expect(button).toHaveAttribute('aria-expanded', 'true')
   })
+
+  it('hideAll: shows the placeholder until a choice is made and offers no "all" row', () => {
+    render(
+      <SearchableSelect options={options} value="" onChange={vi.fn()}
+        placeholder="Chọn một câu chuyện" searchPlaceholder="Tìm câu chuyện..." hideAll />,
+    )
+    fireEvent.click(screen.getByRole('button', { name: 'Chọn một câu chuyện' }))
+
+    expect(screen.getByPlaceholderText('Tìm câu chuyện...')).toBeInTheDocument()
+    expect(screen.queryByText('Tất cả')).not.toBeInTheDocument()
+    expect(screen.getAllByRole('listitem')).toHaveLength(options.length)
+  })
 })

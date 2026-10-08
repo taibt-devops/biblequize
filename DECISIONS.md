@@ -2,6 +2,18 @@
 
 ---
 
+## 2026-10-09 — Luyện Tập có thêm "Theo câu chuyện"; nạp bộ "Dễ cốt lõi"
+
+- **Bối cảnh:** bộ "Dễ cốt lõi" (`content/easy-core/`) viết xong 120 câu chuyện quen thuộc, 1.095 câu Dễ, trích nguyên văn RVV11. User chơi thử 100 câu đầu thấy ổn và muốn đưa vào Luyện Tập, chọn được theo sách hoặc theo câu chuyện.
+- **Quyết định:**
+  - Luyện Tập có 2 cách: Theo sách (giữ nguyên) và Theo câu chuyện. Một phiên theo chuyện chơi hết các câu của chuyện (5–10 câu), xáo thứ tự; không chọn số câu, độ khó, chương/câu; giữ thời gian mỗi câu và giải thích. Khách chơi được.
+  - Câu gắn chuyện qua cột `questions.story` (V73), không dùng `tags` (JSON, khó lọc) hay `category` (đang dùng cho Bible Basics). Danh mục chuyện là file `seed/stories/stories.json`, không có bảng riêng.
+  - Câu Dễ cốt lõi là câu Dễ bình thường: vào cả kho Đấu Hạng (vòng sách quen thuộc bậc 1–2) như kế hoạch ngày 08/10.
+  - Chỉ tiếng Việt cho tới khi có bản dịch.
+- **Implementation:** task `docs/todo/active/2026-10-09-practice-by-story.md` (PBS-1..5).
+
+---
+
 ## 2026-10-08 — Đấu Hạng: rút câu từ cả Kinh Thánh theo độ quen thuộc của sách (bỏ hành trình tuần tự)
 
 - **Bối cảnh:** Option C (2026-06-24) lấy ~70% câu mỗi trận từ "sách hành trình" đi lần lượt Sáng Thế Ký → Khải Huyền. Người mới gặp Lê-vi Ký, Dân Số Ký ngay sách thứ 3–4, và hai người cùng bậc gặp độ khó rất khác nhau tuỳ đang đứng ở sách nào. Cùng ngày đo prod thấy nhãn Dễ sai (câu Dễ 50% đúng, câu Trung bình 66%); phần này xử lý riêng bằng bộ "Dễ cốt lõi" (`content/easy-core/`).

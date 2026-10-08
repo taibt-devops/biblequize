@@ -236,6 +236,7 @@ public class QuestionSeeder {
                 existing.setLanguage(fresh.getLanguage());
                 existing.setTags(fresh.getTags());
                 existing.setCategory(fresh.getCategory());
+                existing.setStory(fresh.getStory());
                 questionRepository.save(existing);
                 fileUpdated++;
                 stats.updated++;
@@ -298,7 +299,8 @@ public class QuestionSeeder {
                 || !java.util.Objects.equals(existing.getType(), fresh.getType())
                 || !java.util.Objects.equals(existing.getVerseEnd(), fresh.getVerseEnd())
                 || !java.util.Objects.equals(existing.getTags(), fresh.getTags())
-                || !java.util.Objects.equals(existing.getCategory(), fresh.getCategory());
+                || !java.util.Objects.equals(existing.getCategory(), fresh.getCategory())
+                || !java.util.Objects.equals(existing.getStory(), fresh.getStory());
     }
 
     /**
@@ -405,6 +407,7 @@ public class QuestionSeeder {
         // vs manual admin import vs AI generation.
         q.setSource(sq.source != null ? sq.source : SEED_SOURCE);
         q.setCategory(sq.category);
+        q.setStory(sq.story);
         return q;
     }
 

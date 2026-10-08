@@ -117,6 +117,21 @@ class QuestionControllerTest extends BaseControllerTest {
     }
 
     @Test
+    void getQuestions_withStory_returnsThatStoryAndIgnoresOtherFilters() throws Exception {
+        when(questionService.getStoryQuestions("no-e-va-tran-lut", "vi", 50)).thenReturn(List.of(sampleQuestion));
+
+        mockMvc.perform(get("/api/questions")
+                        .param("story", "no-e-va-tran-lut")
+                        .param("book", "Exodus")
+                        .param("limit", "200"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(1)));
+
+        verify(questionService).getStoryQuestions("no-e-va-tran-lut", "vi", 50);
+        verify(questionService, never()).getRandomQuestions(any(), any(), any(), any(), any(), any(), any(), anyInt(), any());
+    }
+
+    @Test
     void getQuestions_isPublicEndpoint_shouldNotRequireAuth() throws Exception {
         when(questionService.getRandomQuestions(any(), any(), any(), any(), any(), any(), any(), anyInt(), any()))
                 .thenReturn(List.of());

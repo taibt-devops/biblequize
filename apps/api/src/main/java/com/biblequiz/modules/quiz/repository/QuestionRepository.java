@@ -62,6 +62,12 @@ public interface QuestionRepository extends JpaRepository<Question, String> {
     @Query("SELECT q.book, COUNT(q) FROM Question q WHERE q.isActive = true AND q.language = :language GROUP BY q.book")
     List<Object[]> countActiveByBook(@Param("language") String language);
 
+    /** Active question count per story (V73): rows of {@code [story, count]}. */
+    @Query("SELECT q.story, COUNT(q) FROM Question q WHERE q.isActive = true AND q.language = :language AND q.story IS NOT NULL GROUP BY q.story")
+    List<Object[]> countActiveByStory(@Param("language") String language);
+
+    List<Question> findByStoryAndLanguageAndIsActiveTrue(String story, String language);
+
     long countByDifficultyAndLanguageAndIsActiveTrue(Question.Difficulty difficulty, String language);
 
     long countByBookAndDifficultyAndLanguageAndIsActiveTrue(String book, Question.Difficulty difficulty, String language);

@@ -138,8 +138,12 @@ public class SessionService {
         Integer chapterTo   = readNullableInt(config.get("chapterTo"));
         Integer verseFrom   = readNullableInt(config.get("verseFrom"));
         Integer verseTo     = readNullableInt(config.get("verseTo"));
+        // Practice "Theo câu chuyện" (V73): the whole story, overriding book/difficulty/range.
+        String story = mode == QuizSession.Mode.practice
+                && config.get("story") instanceof String st && !st.isBlank() ? st : null;
 
-        boolean hasRangeFilter = chapterFrom != null || chapterTo != null || verseFrom != null || verseTo != null;
+        boolean hasRangeFilter = story == null
+                && (chapterFrom != null || chapterTo != null || verseFrom != null || verseTo != null);
         if (hasRangeFilter) {
             String validationError = com.biblequiz.infrastructure.bible.BibleStructure.validateRange(
                     book, chapterFrom, chapterTo, verseFrom, verseTo);
@@ -155,12 +159,18 @@ public class SessionService {
         List<String> customQids = config.get("customQuestionIds") instanceof List<?>
                 ? (List<String>) config.get("customQuestionIds") : null;
         boolean useSmartSelection = (mode == QuizSession.Mode.practice || mode == QuizSession.Mode.ranked)
-                && !hasRangeFilter && (customQids == null || customQids.isEmpty());
+                && !hasRangeFilter && story == null && (customQids == null || customQids.isEmpty());
         if (customQids != null && !customQids.isEmpty()) {
             // Preserve order from quiz set's question_ids JSON.
             var byId = questionRepository.findAllById(customQids).stream()
                     .collect(java.util.stream.Collectors.toMap(Question::getId, q -> q));
             questions = customQids.stream().map(byId::get).filter(java.util.Objects::nonNull).toList();
+        } else if (story != null) {
+            // A story holds 5-10 questions; 50 is the session maximum (CreateSessionRequest).
+            questions = questionService.getStoryQuestions(story, language, 50);
+            if (questions.isEmpty()) {
+                throw new IllegalArgumentException("No questions for story: " + story);
+            }
         } else if (useSmartSelection) {
             // Smart selection: prioritize unseen + review questions for practice/ranked
             var filter = new SmartQuestionSelector.QuestionFilter(book, difficultyStr, language);
@@ -259,17 +269,21 @@ public class SessionService {
             int total = Optional.ofNullable(s.getTotalQuestions()).orElse(0);
             int correct = Optional.ofNullable(s.getCorrectAnswers()).orElse(0);
             dto.put("accuracy", total > 0 ? Math.round((correct * 100.0) / total) : 0);
-            // Pluck book from config JSON
+            // Pluck book and story from config JSON; the client turns the story id into its title.
             String book = null;
+            String story = null;
             if (s.getConfig() != null) {
                 try {
                     Map<String, Object> cfg = objectMapper.readValue(s.getConfig(),
                             new com.fasterxml.jackson.core.type.TypeReference<>() {});
                     Object b = cfg.get("book");
                     if (b instanceof String bs && !bs.isEmpty()) book = bs;
+                    Object st = cfg.get("story");
+                    if (st instanceof String sts && !sts.isEmpty()) story = sts;
                 } catch (Exception ignored) {}
             }
             dto.put("book", book);
+            dto.put("story", story);
             out.add(dto);
         }
         return out;

@@ -272,6 +272,120 @@ describe('Practice Mode', () => {
     expect(mockApiGet).not.toHaveBeenCalledWith('/api/sessions/practice/wrong-questions/count')
   })
 
+  // ── "Theo câu chuyện" ──
+  const STORIES = [
+    { id: 'sang-tao', order: 1, title: 'Sáng tạo', ref: 'Sáng Thế Ký 1–2', testament: 'OT', questionCount: 10 },
+    { id: 'no-e-va-tran-lut', order: 4, title: 'Nô-ê và trận lụt', ref: 'Sáng Thế Ký 6–9', testament: 'OT', questionCount: 9 },
+    { id: 'an-khong-co-cau', order: 7, title: 'Chuyện chưa có câu', ref: 'Sáng Thế Ký 12', testament: 'OT', questionCount: 0 },
+  ]
+
+  function mockStoryApi(opts: { stories?: any[]; questions?: any[]; recent?: any[] } = {}) {
+    mockApiGet.mockImplementation((url: string) => {
+      if (url === '/api/books' || url.endsWith('/books'))
+        return Promise.resolve({ data: [{ id: '1', name: 'Genesis', nameVi: 'Sáng Thế Ký', testament: 'OT', orderIndex: 1 }] })
+      if (url === '/api/public/stories') return Promise.resolve({ data: opts.stories ?? STORIES })
+      if (url === '/api/questions') return Promise.resolve({ data: opts.questions ?? [SAMPLE_Q] })
+      if (url.includes('/practice/recent')) return Promise.resolve({ data: opts.recent ?? [] })
+      if (url.includes('/wrong-questions/count')) return Promise.resolve({ data: { count: 0 } })
+      return Promise.reject(new Error('Not found'))
+    })
+  }
+
+  it('starts in "Theo sách"; switching to "Theo câu chuyện" swaps the book filters for a story picker', async () => {
+    mockStoryApi()
+    renderPractice()
+    const user = userEvent.setup()
+    expect(screen.getByTestId('practice-scope-book')).toHaveAttribute('aria-pressed', 'true')
+    expect(screen.getByTestId('practice-book-select')).toBeInTheDocument()
+
+    await user.click(screen.getByTestId('practice-scope-story'))
+
+    expect(screen.getByTestId('practice-scope-story')).toHaveAttribute('aria-pressed', 'true')
+    expect(screen.getByTestId('practice-story-select')).toBeInTheDocument()
+    expect(screen.queryByTestId('practice-book-select')).not.toBeInTheDocument()
+    expect(screen.queryByTestId('practice-count-10')).not.toBeInTheDocument()
+    expect(screen.queryByTestId('practice-difficulty-hard')).not.toBeInTheDocument()
+    expect(screen.queryByTestId('practice-chapter-from')).not.toBeInTheDocument()
+    // Time per question and the explanation toggle still apply to a story
+    expect(screen.getByTestId('practice-time-slider')).toBeInTheDocument()
+    expect(screen.getByTestId('practice-show-explanation-toggle')).toBeInTheDocument()
+    // Only stories with questions are offered
+    expect(await screen.findByText('2 chuyện')).toBeInTheDocument()
+  })
+
+  it('story mode keeps Start disabled until a story is chosen', async () => {
+    mockStoryApi()
+    renderPractice()
+    const user = userEvent.setup()
+    await user.click(screen.getByTestId('practice-scope-story'))
+    expect(screen.getByTestId('practice-start-btn')).toBeDisabled()
+    expect(screen.queryByTestId('practice-story-card')).not.toBeInTheDocument()
+
+    await user.click(await screen.findByTestId('practice-story-suggest-no-e-va-tran-lut'))
+
+    expect(screen.getByTestId('practice-story-suggest-no-e-va-tran-lut')).toHaveAttribute('aria-pressed', 'true')
+    expect(screen.getByTestId('practice-story-card')).toHaveTextContent('Nô-ê và trận lụt')
+    expect(screen.getByTestId('practice-story-card')).toHaveTextContent('Sáng Thế Ký 6–9 · Cựu Ước')
+    expect(screen.getByTestId('practice-story-card')).toHaveTextContent('9 câu hỏi Dễ')
+    expect(screen.getByTestId('practice-start-btn')).toBeEnabled()
+  })
+
+  it('signed-in story start creates a session for that story with its question count', async () => {
+    mockStoryApi()
+    renderPractice()
+    const user = userEvent.setup()
+    await user.click(screen.getByTestId('practice-scope-story'))
+    await user.click(await screen.findByTestId('practice-story-suggest-no-e-va-tran-lut'))
+    await user.click(screen.getByTestId('practice-start-btn'))
+
+    await waitFor(() => expect(mockApiPost).toHaveBeenCalledWith('/api/sessions', expect.objectContaining({
+      mode: 'practice', story: 'no-e-va-tran-lut', questionCount: 9, timePerQuestion: 30, showExplanation: true,
+    })))
+    const payload = mockApiPost.mock.calls[0][1]
+    expect(payload.book).toBeUndefined()
+    expect(payload.chapterFrom).toBeUndefined()
+    await waitFor(() => expect(mockNavigate).toHaveBeenCalledWith('/quiz', expect.objectContaining({
+      state: expect.objectContaining({ sessionId: 'sess-1' }),
+    })))
+  })
+
+  it('guest story start loads the whole story from /api/questions and plays it locally', async () => {
+    mockIsAuthenticated = false
+    mockStoryApi({ questions: [SAMPLE_Q, { ...SAMPLE_Q, id: 'q2' }] })
+    renderPractice()
+    const user = userEvent.setup()
+    await user.click(screen.getByTestId('practice-scope-story'))
+    await user.click(await screen.findByTestId('practice-story-suggest-sang-tao'))
+    await user.click(screen.getByTestId('practice-start-btn'))
+
+    await waitFor(() => expect(mockApiGet).toHaveBeenCalledWith('/api/questions', {
+      params: { language: 'vi', story: 'sang-tao', limit: 50 },
+    }))
+    expect(mockApiPost).not.toHaveBeenCalled()
+    const navCall = mockNavigate.mock.calls.find((c: any[]) => c[0] === '/quiz')
+    expect(navCall![1].state.questions).toHaveLength(2)
+    expect(navCall![1].state.questionCount).toBe(2)
+    expect(navCall![1].state.sessionId).toBeUndefined()
+  })
+
+  it('story mode explains when the quiz language has no stories', async () => {
+    mockStoryApi({ stories: STORIES.map(s => ({ ...s, questionCount: 0 })) })
+    renderPractice()
+    const user = userEvent.setup()
+    await user.click(screen.getByTestId('practice-scope-story'))
+    expect(await screen.findByTestId('practice-story-unavailable')).toBeInTheDocument()
+    expect(screen.getByTestId('practice-start-btn')).toBeDisabled()
+  })
+
+  it('a recent story session shows the story title', async () => {
+    mockStoryApi({ recent: [
+      { sessionId: 's1', createdAt: new Date().toISOString(), status: 'completed',
+        totalQuestions: 9, correctAnswers: 9, accuracy: 100, book: null, story: 'no-e-va-tran-lut' },
+    ] })
+    renderPractice()
+    expect(await screen.findByText('Nô-ê và trận lụt')).toBeInTheDocument()
+  })
+
   it('guest shows error when no questions match the filters', async () => {
     mockIsAuthenticated = false
     mockGuestApi([])

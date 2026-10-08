@@ -133,6 +133,22 @@ class QuestionSeederTest {
         assertEquals("vi", e.getLanguage());
         assertTrue(e.getIsActive());
         assertEquals(Question.ReviewStatus.ACTIVE, e.getReviewStatus());
+        assertNull(e.getStory());
+    }
+
+    @Test
+    void toEntity_copiesStory() {
+        SeedQuestion q = build();
+        q.story = "sang-tao";
+        assertEquals("sang-tao", QuestionSeeder.toEntity(q, "id-1").getStory());
+    }
+
+    @Test
+    void computeDeterministicId_ignoresStory() {
+        // Tagging an existing question with a story must update it in place, not re-insert it.
+        SeedQuestion tagged = build();
+        tagged.story = "sang-tao";
+        assertEquals(QuestionSeeder.computeDeterministicId(build()), QuestionSeeder.computeDeterministicId(tagged));
     }
 
     @Test

@@ -68,6 +68,11 @@ public class Question {
     @Column(length = 50)
     private String category;
 
+    // Story id ('no-e-va-tran-lut') of the "Dễ cốt lõi" set, which Practice can play one
+    // story at a time; see seed/stories/stories.json. NULL = not part of a story (V73).
+    @Column(length = 64)
+    private String story;
+
     @Column(nullable = false, length = 10)
     private String language = "vi";
 
@@ -292,5 +297,13 @@ public class Question {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public String getStory() {
+        return story;
+    }
+
+    public void setStory(String story) {
+        this.story = story;
     }
 }
