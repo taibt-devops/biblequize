@@ -58,6 +58,10 @@ public interface QuestionRepository extends JpaRepository<Question, String> {
 
     long countByBookAndLanguageAndIsActiveTrue(String book, String language);
 
+    /** Active question count per book: rows of {@code [book, count]}. */
+    @Query("SELECT q.book, COUNT(q) FROM Question q WHERE q.isActive = true AND q.language = :language GROUP BY q.book")
+    List<Object[]> countActiveByBook(@Param("language") String language);
+
     long countByDifficultyAndLanguageAndIsActiveTrue(Question.Difficulty difficulty, String language);
 
     long countByBookAndDifficultyAndLanguageAndIsActiveTrue(String book, Question.Difficulty difficulty, String language);

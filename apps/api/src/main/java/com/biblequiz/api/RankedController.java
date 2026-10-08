@@ -20,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 
+import com.biblequiz.modules.ranked.service.RankedBookPool;
 import com.biblequiz.modules.ranked.service.RankedSessionService;
 import com.biblequiz.modules.ranked.service.RankedSessionService.Progress;
 
@@ -140,26 +141,41 @@ public class RankedController {
     // RWP-2: how many recently-seen questions to exclude from the whole-pool draw
     // (cross-day repeat avoidance). 80 << pool size (~3.3k) so never starves.
     private static final int RANKED_RECENT_EXCLUDE = 80;
-    // Option C: hybrid journey — fraction of each match drawn from the current
-    // book (rest from the whole pool for variety). 0.7 → ~7/10 questions.
-    private static final double RANKED_CURRENT_BOOK_RATIO = 0.7;
-    // Advance to the next journey book once the user has answered ~25% of the
-    // current book's DISTINCT questions — proportional so rich/central books
-    // (Psalms, the Gospels, which the seed authored most heavily) get more time
-    // than short epistles. Clamped to [12, 40] so no book is a glance or a slog,
-    // and never more than the book actually has (small books advance when seen
-    // in full). See rankedBookSampleTarget().
+    // A book counts as "sampled" (journey collection + scholar achievement) once
+    // the user has answered ~25% of its DISTINCT questions — proportional so
+    // rich/central books (Psalms, the Gospels) take longer than short epistles.
+    // Clamped to [12, 40] so no book is a glance or a slog, and never more than
+    // the book actually has. See rankedBookSampleTarget().
     private static final double RANKED_BOOK_SAMPLE_RATIO = 0.25;
     private static final int RANKED_BOOK_SAMPLE_FLOOR = 12;
     private static final int RANKED_BOOK_SAMPLE_CAP = 40;
 
-    /** Option C journey gate: # of DISTINCT current-book answers before advancing.
+    /** # of DISTINCT answers in a book before it counts as sampled.
      *  {@code clamp(round(bookTotal × 0.25), 12, 40)}, never exceeding bookTotal. */
     static int rankedBookSampleTarget(long bookTotal) {
         if (bookTotal <= 0) return RANKED_BOOK_SAMPLE_FLOOR;
         int proportional = (int) Math.round(bookTotal * RANKED_BOOK_SAMPLE_RATIO);
         int clamped = Math.max(RANKED_BOOK_SAMPLE_FLOOR, Math.min(RANKED_BOOK_SAMPLE_CAP, proportional));
         return (int) Math.min(clamped, bookTotal);
+    }
+
+    /** Books the user has sampled in Ranked, in any order (scholar achievement). */
+    private int countBooksSampled(String userId, String language) {
+        List<UserBookProgress> rows = userBookProgressRepository.findAllByUserId(userId);
+        if (rows == null || rows.isEmpty()) return 0;
+        Map<String, Long> totals = new HashMap<>();
+        for (Object[] row : questionRepository.countActiveByBook(language)) {
+            if (row != null && row.length >= 2 && row[0] != null && row[1] instanceof Number n)
+                totals.put(row[0].toString(), n.longValue());
+        }
+        int sampled = 0;
+        for (UserBookProgress ubp : rows) {
+            Long total = totals.get(ubp.getBook());
+            Integer answered = ubp.getAnsweredCount();
+            if (total != null && answered != null && answered >= rankedBookSampleTarget(total))
+                sampled++;
+        }
+        return sampled;
     }
 
     /**
@@ -256,14 +272,17 @@ public class RankedController {
      * tier-based difficulty distribution (70/25/5 for T1 down to 5/35/60
      * for T6) was never applied to Ranked.
      *
-     * <p>Body: {@code { limit:10, excludeIds:[], book?, difficulty?, language? }}.
-     * Resolves the caller's tier from {@code userTierService}, hands the
-     * filter to {@code smartQuestionSelector.selectQuestions(userId, ..)}
-     * which already does tier-distributed Easy/Medium/Hard + UserQuestion
-     * History-aware ordering (unseen → review → long-ago → recent).
-     * Post-filters by {@code excludeIds} (today's already-asked set in
-     * UserDailyProgress.askedQuestionIds) — overfetches by
-     * {@code excludeIds.size() + 5} so the final batch still hits limit.
+     * <p>Body: {@code { limit:10, excludeIds:[], difficulty?, language? }}. A
+     * {@code book} field from older clients is ignored (2026-10-08: no more
+     * sequential journey book). Resolves the caller's tier from
+     * {@code userTierService}; the tier opens the book rings of
+     * {@link RankedBookPool} (familiar books first, the whole Bible from tier 5),
+     * and {@code smartQuestionSelector.selectQuestions(userId, ..)} applies the
+     * tier Easy/Medium/Hard mix + history-aware ordering (unseen → review →
+     * long-ago → recent) inside the ring. At most {@link RankedBookPool#MAX_PER_BOOK}
+     * questions per book; a short ring widens to the next one. Post-filters by
+     * {@code excludeIds} (today's already-asked set in
+     * UserDailyProgress.askedQuestionIds) plus the recently-seen ids.
      *
      * <p>Guest fallback: when there's no authenticated user, falls back to
      * the legacy uniform random pool via {@code QuestionRepository} so
@@ -276,7 +295,6 @@ public class RankedController {
         Map<String, Object> req = body != null ? body : new HashMap<>();
         int limit = req.get("limit") instanceof Number n ? n.intValue() : 10;
         if (limit <= 0 || limit > 50) limit = 10;
-        String book = stringOrNull(req.get("book"));
         String difficulty = stringOrNull(req.get("difficulty"));
         String language = stringOrNull(req.get("language"));
         if (language == null || language.isBlank()) language = "vi";
@@ -348,33 +366,28 @@ public class RankedController {
                 poolExhausted = true;
             }
         } else if (userId != null) {
-            // Option C (2026-06-24): HYBRID journey draw — ~70% from the current
-            // book (sequential "đi xuyên Kinh Thánh" feel) + ~30% from the whole
-            // pool (variety / review). Both portions are history-aware (unseen
-            // first) and honour excludeSet (today's asked + RWP-2 recent-seen),
-            // so the journey progresses without the old Genesis lock or repeats.
-            // If the current book is starved of unseen questions, the whole-pool
-            // portion fills the remainder up to `limit`.
+            // 2026-10-08: whole-Bible draw by familiarity ring (RankedBookPool)
+            // instead of the sequential journey book. The tier opens the ring
+            // (T1-2 familiar books, T3-4 + known books, T5-6 whole Bible); the
+            // selector applies the tier Easy/Medium/Hard mix and history pools
+            // inside it; at most MAX_PER_BOOK questions per book keep a match
+            // varied. A ring too small to fill `limit` widens to the next one.
             String diffFilter = (difficulty != null && !difficulty.isBlank()
                     && !"all".equalsIgnoreCase(difficulty)) ? difficulty : null;
-            int curCount = (int) Math.round(limit * RANKED_CURRENT_BOOK_RATIO);
+            int ring = RankedBookPool.ringForTier(userTierService.getTierLevel(userId));
             java.util.LinkedHashMap<String, Question> merged = new java.util.LinkedHashMap<>();
-            if (book != null && !book.isBlank() && curCount > 0) {
-                QuestionFilter curFilter = new QuestionFilter(book, diffFilter, language);
-                for (Question q : pickFromSelector(userId, curCount + excludeSet.size() + 5,
-                        curCount, curFilter, excludeSet)) {
-                    if (q != null && q.getId() != null) merged.putIfAbsent(q.getId(), q);
-                }
-            }
-            int remaining = limit - merged.size();
-            if (remaining > 0) {
-                Set<String> exclude2 = new HashSet<>(excludeSet);
-                exclude2.addAll(merged.keySet());
-                QuestionFilter poolFilter = new QuestionFilter((String) null, diffFilter, language);
-                for (Question q : pickFromSelector(userId, remaining + exclude2.size() + 5,
-                        remaining, poolFilter, exclude2)) {
-                    if (merged.size() >= limit) break;
-                    if (q != null && q.getId() != null) merged.putIfAbsent(q.getId(), q);
+            Map<String, Integer> perBook = new HashMap<>();
+            for (int r = ring; r <= RankedBookPool.WHOLE_BIBLE && merged.size() < limit; r++) {
+                Set<String> exclude = new HashSet<>(excludeSet);
+                exclude.addAll(merged.keySet());
+                int wanted = limit - merged.size();
+                QuestionFilter filter = new QuestionFilter(RankedBookPool.booksForRing(r), diffFilter, language);
+                // Overfetch 4× so the per-book cap still leaves enough candidates.
+                List<Question> candidates = smartQuestionSelector.selectQuestions(
+                        userId, wanted * 4 + exclude.size() + 5, filter);
+                for (Question q : RankedBookPool.varied(candidates, exclude, perBook, wanted,
+                        RankedBookPool.MAX_PER_BOOK)) {
+                    merged.putIfAbsent(q.getId(), q);
                 }
             }
             picked = new java.util.ArrayList<>(merged.values());
@@ -620,9 +633,8 @@ public class RankedController {
             log.debug("Points: earned={} total={} streak={}", earned, p.pointsToday, p.currentStreak);
 
             // §7.1.4 Liturgical Coverage tick (gated by feature flag).
-            // Dual-write: increments UserSeasonCoverage AND keeps legacy
-            // currentBook advancement below for backward compat. Removal
-            // of legacy path scheduled for Phase 4 (post 30-day stability).
+            // Increments UserSeasonCoverage; the per-book collection below is
+            // written either way.
             com.biblequiz.modules.coverage.service.LiturgicalCoverageService.WeekCompletionResult
                     weekResult = null;
             try {
@@ -646,11 +658,9 @@ public class RankedController {
                 log.warn("Coverage tick failed (non-fatal): {}", coverageErr.getMessage());
             }
 
-            // Option C (2026-06-24): currentBook is the STABLE journey book (≈70%
-            // of each match comes from it). It advances via the sample-target gate
-            // in the per-book stats block below — NOT per answered question. The
-            // dead legacy ≥50/session gate and the never-reached 100-unique gate
-            // are both gone.
+            // 2026-10-08: currentBook no longer drives question selection and no
+            // longer advances; it stays in the progress/status payloads only for
+            // older clients. Books are collected per answered question below.
 
             // Persist to DB per user/day if authenticated
             try {
@@ -751,6 +761,41 @@ public class RankedController {
                         // NOTE: leaderboard "Mùa" tab reads window-sum UDP, NOT this
                         // table — so hiding it loses no board data.
 
+                        // Per-book stats (journey collection + Profile). RWP-3: key
+                        // by the ANSWERED question's actual book. Since 2026-10-08
+                        // Ranked has no sequential journey book to advance: books are
+                        // collected in any order (see RankedBookPool). Runs before the
+                        // achievement check so this answer counts toward "scholar".
+                        String answerLang = (currentQ != null && currentQ.getLanguage() != null)
+                                ? currentQ.getLanguage() : "vi";
+                        if (questionId != null) {
+                            String answeredBook = (currentQ != null && currentQ.getBook() != null)
+                                    ? currentQ.getBook() : p.currentBook;
+                            try {
+                                UserBookProgress ubp = userBookProgressRepository
+                                        .findByUserIdAndBook(user.getId(), answeredBook)
+                                        .orElse(new UserBookProgress(java.util.UUID.randomUUID().toString(), user,
+                                                answeredBook));
+                                java.util.List<String> uniques = ubp.getUniqueQuestionIds();
+                                if (uniques == null)
+                                    uniques = new java.util.ArrayList<>();
+                                boolean isNew = false;
+                                if (!uniques.contains(questionId)) {
+                                    uniques.add(questionId);
+                                    isNew = true;
+                                }
+                                ubp.setUniqueQuestionIds(uniques);
+                                if (isNew)
+                                    ubp.setAnsweredCount((ubp.getAnsweredCount() == null ? 0 : ubp.getAnsweredCount()) + 1);
+                                if (isCorrect)
+                                    ubp.setCorrectCount((ubp.getCorrectCount() == null ? 0 : ubp.getCorrectCount()) + 1);
+                                userBookProgressRepository.save(ubp);
+                            } catch (RuntimeException ubpErr) {
+                                log.warn("Book progress write failed for user={} book={} ({}). Ranked submit unaffected.",
+                                        user.getId(), answeredBook, ubpErr.getMessage());
+                            }
+                        }
+
                         // Check achievements
                         try {
                             int allTimePoints = udpRepository.findByUserIdOrderByDateDesc(user.getId())
@@ -758,7 +803,7 @@ public class RankedController {
                             int allTimeQuestions = udpRepository.findByUserIdOrderByDateDesc(user.getId())
                                     .stream().mapToInt(u -> u.getQuestionsCounted() != null ? u.getQuestionsCounted() : 0).sum();
                             achievementService.checkAndAward(user, allTimePoints, allTimeQuestions,
-                                    p.currentStreak, p.currentBookIndex);
+                                    p.currentStreak, countBooksSampled(user.getId(), answerLang));
 
                             // Check tier-up notification
                             try {
@@ -776,59 +821,6 @@ public class RankedController {
                             }
                         } catch (Exception ex) {
                             log.debug("Achievement check failed: {}", ex.getMessage());
-                        }
-
-                        // Per-book stats tracking (Profile + history). RWP-3:
-                        // key by the ANSWERED question's actual book, not the
-                        // session's currentBook — questions now span the whole
-                        // pool, so crediting p.currentBook would mis-attribute.
-                        if (questionId != null) {
-                            String answeredBook = (currentQ != null && currentQ.getBook() != null)
-                                    ? currentQ.getBook() : p.currentBook;
-                            UserBookProgress ubp = userBookProgressRepository
-                                    .findByUserIdAndBook(user.getId(), answeredBook)
-                                    .orElse(new UserBookProgress(java.util.UUID.randomUUID().toString(), user,
-                                            answeredBook));
-                            java.util.List<String> uniques = ubp.getUniqueQuestionIds();
-                            if (uniques == null)
-                                uniques = new java.util.ArrayList<>();
-                            boolean isNew = false;
-                            if (!uniques.contains(questionId)) {
-                                uniques.add(questionId);
-                                isNew = true;
-                            }
-                            ubp.setUniqueQuestionIds(uniques);
-                            if (isNew)
-                                ubp.setAnsweredCount((ubp.getAnsweredCount() == null ? 0 : ubp.getAnsweredCount()) + 1);
-                            if (isCorrect)
-                                ubp.setCorrectCount((ubp.getCorrectCount() == null ? 0 : ubp.getCorrectCount()) + 1);
-                            userBookProgressRepository.save(ubp);
-
-                            // Option C journey advance: when the user has sampled
-                            // enough DISTINCT questions of the CURRENT journey book
-                            // (RANKED_BOOK_SAMPLE_TARGET, or the whole book for small
-                            // books), move to the next canonical book. Only the
-                            // current book's own answers count — the ~30% whole-pool
-                            // questions (other books) don't push the journey forward.
-                            if (answeredBook.equals(p.currentBook)
-                                    && ubp.getAnsweredCount() != null) {
-                                String lang = (currentQ != null && currentQ.getLanguage() != null)
-                                        ? currentQ.getLanguage() : "vi";
-                                long bookTotal = questionRepository
-                                        .countByBookAndLanguageAndIsActiveTrue(p.currentBook, lang);
-                                int target = rankedBookSampleTarget(bookTotal);
-                                if (ubp.getAnsweredCount() >= target) {
-                                    String nextBook = bookProgressionService.getNextBook(p.currentBook);
-                                    if (nextBook != null) {
-                                        p.currentBook = nextBook;
-                                        p.currentBookIndex = bookProgressionService
-                                                .getBookProgress(nextBook).currentIndex - 1;
-                                        udp.setCurrentBook(nextBook);
-                                        udp.setCurrentBookIndex(p.currentBookIndex);
-                                        udpRepository.save(udp);
-                                    }
-                                }
-                            }
                         }
                     }
                 }

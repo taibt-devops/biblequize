@@ -956,11 +956,11 @@ class RankedControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.currentBook").value("Genesis"));
     }
 
-    // ── Option C (2026-06-24): journey book advances at the sample-target gate ──
+    // ── 2026-10-08: books are collected in any order; no journey advance ────
 
-    @Test
-    @WithMockUser(username = "test@example.com")
-    void submitRankedAnswer_advancesJourneyBook_whenSampleTargetReached() throws Exception {
+    /** A correct ranked answer to Genesis question {@code qId}, with the user's
+     *  Genesis progress at {@code answeredBefore} distinct answers (150 in the book). */
+    private UserBookProgress primeGenesisAnswer(String qId, int answeredBefore) {
         RankedSessionService.Progress progress = new RankedSessionService.Progress();
         progress.livesRemaining = 100;
         progress.questionsCounted = 20;
@@ -969,73 +969,62 @@ class RankedControllerTest extends BaseControllerTest {
         when(rankedSessionService.getOrCreate(anyString())).thenReturn(progress);
 
         com.biblequiz.modules.quiz.entity.Question question = new com.biblequiz.modules.quiz.entity.Question();
-        question.setId("q-g20");
+        question.setId(qId);
         question.setBook("Genesis");
         question.setLanguage("vi");
         question.setType(com.biblequiz.modules.quiz.entity.Question.Type.multiple_choice_single);
         question.setCorrectAnswer(List.of(0));
-        when(questionRepository.findById("q-g20")).thenReturn(Optional.of(question));
+        when(questionRepository.findById(qId)).thenReturn(Optional.of(question));
         when(scoringService.validateMultipleChoiceSingle(any(), any())).thenReturn(true);
         when(scoringService.calculateRanked(any(), anyInt(), anyInt(), anyInt(), anyBoolean(), anyInt(), anyBoolean(), anyBoolean(), anyBoolean()))
                 .thenReturn(new ScoringService.ScoreResult(10, 8, 2, 100, false));
 
-        // Genesis has 150 questions → target = clamp(round(150×0.25),12,40) = 38.
-        // UBP already at 37 distinct; this new question makes 38 == target → advance.
         UserBookProgress ubp = new UserBookProgress("ubp-g", testUser, "Genesis");
-        ubp.setAnsweredCount(37);
-        ubp.setCorrectCount(37);
+        ubp.setAnsweredCount(answeredBefore);
+        ubp.setCorrectCount(answeredBefore);
         ubp.setUniqueQuestionIds(new java.util.ArrayList<>());
         when(userBookProgressRepository.findByUserIdAndBook("user-1", "Genesis"))
                 .thenReturn(Optional.of(ubp));
-        when(questionRepository.countByBookAndLanguageAndIsActiveTrue("Genesis", "vi")).thenReturn(150L);
-        when(bookProgressionService.getNextBook("Genesis")).thenReturn("Exodus");
-        when(bookProgressionService.getBookProgress("Exodus")).thenReturn(
-                new BookProgressionService.BookProgress(2, 66, "Exodus", "Leviticus", false, 3.0));
+        when(userBookProgressRepository.findAllByUserId("user-1")).thenReturn(List.of(ubp));
+        List<Object[]> totals = new java.util.ArrayList<>();
+        totals.add(new Object[]{"Genesis", 150L});
+        when(questionRepository.countActiveByBook("vi")).thenReturn(totals);
+        return ubp;
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void submitRankedAnswer_reachingSampleTarget_countsBookForScholar_withoutAdvancing() throws Exception {
+        // Genesis has 150 questions → target = clamp(round(150×0.25),12,40) = 38.
+        // UBP at 37 distinct; this new question makes 38 == target → sampled.
+        UserBookProgress ubp = primeGenesisAnswer("q-g20", 37);
 
         mockMvc.perform(post("/api/ranked/sessions/ranked-j1/answer")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content("{\"questionId\":\"q-g20\",\"answer\":0,\"clientElapsedMs\":5000}"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.currentBook").value("Exodus")); // advanced
+                .andExpect(jsonPath("$.currentBook").value("Genesis")); // no sequential advance
+
+        org.junit.jupiter.api.Assertions.assertEquals(38, ubp.getAnsweredCount());
+        verify(achievementService).checkAndAward(any(), anyInt(), anyInt(), anyInt(), eq(1));
+        verify(bookProgressionService, never()).getNextBook(anyString());
     }
 
     @Test
     @WithMockUser(username = "test@example.com")
-    void submitRankedAnswer_journeyBookStays_belowSampleTarget() throws Exception {
-        RankedSessionService.Progress progress = new RankedSessionService.Progress();
-        progress.livesRemaining = 100;
-        progress.questionsCounted = 5;
-        progress.pointsToday = 50;
-        progress.currentBook = "Genesis";
-        when(rankedSessionService.getOrCreate(anyString())).thenReturn(progress);
-
-        com.biblequiz.modules.quiz.entity.Question question = new com.biblequiz.modules.quiz.entity.Question();
-        question.setId("q-g6");
-        question.setBook("Genesis");
-        question.setLanguage("vi");
-        question.setType(com.biblequiz.modules.quiz.entity.Question.Type.multiple_choice_single);
-        question.setCorrectAnswer(List.of(0));
-        when(questionRepository.findById("q-g6")).thenReturn(Optional.of(question));
-        when(scoringService.validateMultipleChoiceSingle(any(), any())).thenReturn(true);
-        when(scoringService.calculateRanked(any(), anyInt(), anyInt(), anyInt(), anyBoolean(), anyInt(), anyBoolean(), anyBoolean(), anyBoolean()))
-                .thenReturn(new ScoringService.ScoreResult(10, 8, 2, 100, false));
-
-        UserBookProgress ubp = new UserBookProgress("ubp-g", testUser, "Genesis");
-        ubp.setAnsweredCount(5);
-        ubp.setCorrectCount(5);
-        ubp.setUniqueQuestionIds(new java.util.ArrayList<>());
-        when(userBookProgressRepository.findByUserIdAndBook("user-1", "Genesis"))
-                .thenReturn(Optional.of(ubp));
-        when(questionRepository.countByBookAndLanguageAndIsActiveTrue("Genesis", "vi")).thenReturn(150L);
+    void submitRankedAnswer_belowSampleTarget_bookNotYetCounted() throws Exception {
+        primeGenesisAnswer("q-g6", 5);
 
         mockMvc.perform(post("/api/ranked/sessions/ranked-j2/answer")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content("{\"questionId\":\"q-g6\",\"answer\":0,\"clientElapsedMs\":5000}"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.currentBook").value("Genesis")); // stays — only 6/38
+                .andExpect(jsonPath("$.currentBook").value("Genesis"));
+
+        verify(achievementService).checkAndAward(any(), anyInt(), anyInt(), anyInt(), eq(0)); // 6/38
     }
 
-    // ── Option C: proportional sample-target formula (25%, clamp 12..40) ──────
+    // ── Proportional sample-target formula (25%, clamp 12..40) ────────────────
 
     @Test
     void rankedBookSampleTarget_proportionalWithFloorAndCap() {
@@ -1159,48 +1148,110 @@ class RankedControllerTest extends BaseControllerTest {
         org.junit.jupiter.api.Assertions.assertFalse(body.contains("hibernateLazyInitializer"));
     }
 
-    // ── Option C + RWP-2 (2026-06-24): hybrid select + cross-day exclude ─────
+    // ── 2026-10-08: whole-Bible select by familiarity ring + RWP-2 exclude ───
 
-    @Test
-    @WithMockUser(username = "test@example.com")
-    void selectRankedQuestions_hybridCurrentBookPlusWholePool_andExcludesRecentlySeen() throws Exception {
+    private static Question selectable(String id, String book) {
+        Question q = new Question();
+        q.setId(id);
+        q.setBook(book);
+        q.setType(Question.Type.multiple_choice_single);
+        q.setCorrectAnswer(java.util.List.of(0));
+        return q;
+    }
+
+    private org.mockito.ArgumentCaptor<com.biblequiz.modules.quiz.service.SmartQuestionSelector.QuestionFilter>
+            stubSelector(int tier, java.util.List<Question> candidates) {
         when(featureFlagService.isLiturgicalCoverageEnabled(anyString())).thenReturn(false);
-        // RWP-2: recently-seen ids come from history and must be excluded.
-        when(userQuestionHistoryRepository.findRecentSeenQuestionIds(eq("user-1"), any()))
-                .thenReturn(java.util.List.of("q-recent"));
-
-        Question keep = new Question();
-        keep.setId("q-keep");
-        keep.setBook("Genesis");
-        keep.setType(Question.Type.multiple_choice_single);
-        keep.setCorrectAnswer(java.util.List.of(0));
-        Question recent = new Question();
-        recent.setId("q-recent");
-        recent.setBook("Genesis");
-        recent.setType(Question.Type.multiple_choice_single);
-        recent.setCorrectAnswer(java.util.List.of(0));
-
+        when(userTierService.getTierLevel("user-1")).thenReturn(tier);
         org.mockito.ArgumentCaptor<com.biblequiz.modules.quiz.service.SmartQuestionSelector.QuestionFilter> filterCap =
                 org.mockito.ArgumentCaptor.forClass(
                         com.biblequiz.modules.quiz.service.SmartQuestionSelector.QuestionFilter.class);
         when(smartQuestionSelector.selectQuestions(eq("user-1"), anyInt(), filterCap.capture()))
-                .thenReturn(java.util.List.of(keep, recent));
+                .thenReturn(candidates);
+        return filterCap;
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void selectRankedQuestions_tier1_drawsFamiliarBooksFirst_ignoresBook_andExcludesRecentlySeen() throws Exception {
+        // RWP-2: recently-seen ids come from history and must be excluded.
+        when(userQuestionHistoryRepository.findRecentSeenQuestionIds(eq("user-1"), any()))
+                .thenReturn(java.util.List.of("q-recent"));
+        var filterCap = stubSelector(1, java.util.List.of(
+                selectable("q-keep", "Genesis"), selectable("q-recent", "Genesis")));
 
         mockMvc.perform(post("/api/ranked/questions/select")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content("{\"limit\":10,\"excludeIds\":[],\"book\":\"Genesis\",\"language\":\"vi\"}"))
+                        // `book` from an older client must be ignored.
+                        .content("{\"limit\":10,\"excludeIds\":[],\"book\":\"Leviticus\",\"language\":\"vi\"}"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.questions[0].id").value("q-keep"))
                 .andExpect(jsonPath("$.questions[1]").doesNotExist()); // q-recent excluded (RWP-2)
 
-        // Option C: the selector is called twice — once with the current book
-        // (the ~70% portion) and once with NO book (the ~30% whole-pool portion).
-        java.util.List<com.biblequiz.modules.quiz.service.SmartQuestionSelector.QuestionFilter> filters =
-                filterCap.getAllValues();
-        boolean hasCurrentBook = filters.stream().anyMatch(f -> f.books().contains("Genesis"));
-        boolean hasWholePool = filters.stream().anyMatch(f -> f.books().isEmpty());
-        org.junit.jupiter.api.Assertions.assertTrue(hasCurrentBook, "expected a current-book draw");
-        org.junit.jupiter.api.Assertions.assertTrue(hasWholePool, "expected a whole-pool draw");
+        // Ring 1 is too short to fill 10, so the draw widens ring by ring.
+        var filters = filterCap.getAllValues();
+        org.junit.jupiter.api.Assertions.assertEquals(3, filters.size());
+        org.junit.jupiter.api.Assertions.assertEquals(
+                com.biblequiz.modules.ranked.service.RankedBookPool.FAMILIAR, filters.get(0).books());
+        org.junit.jupiter.api.Assertions.assertEquals(
+                com.biblequiz.modules.ranked.service.RankedBookPool.booksForRing(2), filters.get(1).books());
+        org.junit.jupiter.api.Assertions.assertTrue(filters.get(2).books().isEmpty());
+        org.junit.jupiter.api.Assertions.assertTrue(
+                filters.stream().noneMatch(f -> f.books().contains("Leviticus") && f.books().size() == 1));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void selectRankedQuestions_tier5_drawsTheWholeBible() throws Exception {
+        var filterCap = stubSelector(5, java.util.List.of(selectable("q-lev", "Leviticus")));
+
+        mockMvc.perform(post("/api/ranked/questions/select")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"limit\":10,\"excludeIds\":[],\"language\":\"vi\"}"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.questions[0].id").value("q-lev"));
+
+        org.junit.jupiter.api.Assertions.assertEquals(1, filterCap.getAllValues().size());
+        org.junit.jupiter.api.Assertions.assertTrue(filterCap.getValue().books().isEmpty());
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void selectRankedQuestions_takesAtMostThreeQuestionsPerBook() throws Exception {
+        java.util.List<Question> candidates = new java.util.ArrayList<>();
+        for (int i = 0; i < 6; i++) candidates.add(selectable("g" + i, "Genesis"));
+        for (int i = 0; i < 6; i++) candidates.add(selectable("x" + i, "Exodus"));
+        for (int i = 0; i < 2; i++) candidates.add(selectable("m" + i, "Matthew"));
+        stubSelector(6, candidates);
+
+        mockMvc.perform(post("/api/ranked/questions/select")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"limit\":10,\"excludeIds\":[],\"language\":\"vi\"}"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.questions", org.hamcrest.Matchers.hasSize(8)))
+                .andExpect(jsonPath("$.questions[?(@.book == 'Genesis')]", org.hamcrest.Matchers.hasSize(3)))
+                .andExpect(jsonPath("$.questions[?(@.book == 'Exodus')]", org.hamcrest.Matchers.hasSize(3)))
+                .andExpect(jsonPath("$.questions[?(@.book == 'Matthew')]", org.hamcrest.Matchers.hasSize(2)));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void selectRankedQuestions_fullRing_doesNotWiden() throws Exception {
+        java.util.List<Question> candidates = new java.util.ArrayList<>();
+        for (String book : java.util.List.of("Genesis", "John", "Psalms", "Acts")) {
+            for (int i = 0; i < 3; i++) candidates.add(selectable(book + i, book));
+        }
+        var filterCap = stubSelector(2, candidates);
+
+        mockMvc.perform(post("/api/ranked/questions/select")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"limit\":10,\"excludeIds\":[],\"language\":\"vi\"}"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.questions", org.hamcrest.Matchers.hasSize(10)));
+
+        org.junit.jupiter.api.Assertions.assertEquals(1, filterCap.getAllValues().size());
+        org.junit.jupiter.api.Assertions.assertEquals(
+                com.biblequiz.modules.ranked.service.RankedBookPool.FAMILIAR, filterCap.getValue().books());
     }
 
     // ── LCT-1..3: Liturgical Coverage pool-exhaustion fallback chain ────────
