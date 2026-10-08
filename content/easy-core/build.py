@@ -61,7 +61,7 @@ MAX_ANSWER_WORDS = 9
 
 
 def clean(fragment: str) -> str:
-    s = re.sub(r"<sup>\d+</sup>", "", fragment)
+    s = re.sub(r"<sup>[^<]*</sup>", "", fragment)  # verse numbers and "+" note markers
     s = re.sub(r"<a [^>]*>.*?</a>", "", s, flags=re.S)
     s = re.sub(r"<br\s*/?>", " ", s)
     s = re.sub(r"<[^>]+>", "", s)

@@ -51,21 +51,21 @@
 | 43 | Na-a-man được chữa lành ✓ | 2 Các Vua 5 |
 | 44 | Vua Giô-si-a tìm lại sách luật ✓ | 2 Các Vua 22 |
 | 45 | Nê-hê-mi xây lại tường thành ✓ | Nê-hê-mi 2–6 |
-| 46 | Hoàng hậu Ê-xơ-tê | Ê-xơ-tê 4–7 |
-| 47 | Gióp kiên nhẫn | Gióp 1–2, 42 |
-| 48 | Đức Giê-hô-va là Đấng chăn giữ tôi | Thi Thiên 23 |
-| 49 | Phước cho người suy gẫm luật pháp Chúa | Thi Thiên 1 |
-| 50 | Lời Chúa là ngọn đèn cho chân tôi | Thi Thiên 119 |
-| 51 | Hãy hết lòng tin cậy Đức Giê-hô-va | Châm Ngôn 3 |
-| 52 | Mọi việc đều có thì | Truyền Đạo 3 |
-| 53 | Ê-sai thấy Chúa trên ngai | Ê-sai 6 |
-| 54 | Một con trẻ sinh ra cho chúng ta | Ê-sai 7, 9 |
-| 55 | Người tôi tớ chịu khổ | Ê-sai 53 |
-| 56 | Người thợ gốm | Giê-rê-mi 18 |
-| 57 | Ba người trong lò lửa | Đa-ni-ên 3 |
+| 46 | Hoàng hậu Ê-xơ-tê ✓ | Ê-xơ-tê 4–7 |
+| 47 | Gióp kiên nhẫn ✓ | Gióp 1–2, 42 |
+| 48 | Đức Giê-hô-va là Đấng chăn giữ tôi ✓ | Thi Thiên 23 |
+| 49 | Phước cho người suy ngẫm luật pháp Chúa ✓ | Thi Thiên 1 |
+| 50 | Lời Chúa là ngọn đèn cho chân con ✓ | Thi Thiên 119 |
+| 51 | Hãy hết lòng tin cậy Đức Giê-hô-va ✓ | Châm Ngôn 3 |
+| 52 | Mọi việc đều có thời điểm ✓ | Truyền Đạo 3 |
+| 53 | Ê-sai thấy Chúa trên ngai ✓ | Ê-sai 6 |
+| 54 | Một con trẻ sinh ra cho chúng ta ✓ | Ê-sai 7, 9 |
+| 55 | Người tôi tớ chịu khổ ✓ | Ê-sai 53 |
+| 56 | Người thợ gốm ✓ | Giê-rê-mi 18 |
+| 57 | Ba người trong lò lửa ✓ | Đa-ni-ên 3 |
 | 58 | Đa-ni-ên trong hầm sư tử ✓ | Đa-ni-ên 6 |
 | 59 | Giô-na và con cá lớn ✓ | Giô-na 1–3 |
-| 60 | Giô-na và cây dưa | Giô-na 4 |
+| 60 | Giô-na và cây dưa ✓ | Giô-na 4 |
 
 ## Tân Ước (60)
 
