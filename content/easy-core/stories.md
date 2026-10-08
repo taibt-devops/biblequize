@@ -114,20 +114,20 @@
 | 101 | Phi-e-rơ chữa người què ✓ | Công Vụ 3 |
 | 102 | Ê-tiên ✓ | Công Vụ 7 |
 | 103 | Phi-líp và hoạn quan Ê-thi-ô-pi ✓ | Công Vụ 8 |
-| 104 | Sau-lơ trên đường Đa-mách | Công Vụ 9 |
-| 105 | Phi-e-rơ được giải thoát khỏi ngục | Công Vụ 12 |
-| 106 | Phao-lô và Si-la trong ngục | Công Vụ 16 |
-| 107 | Phao-lô bị đắm tàu | Công Vụ 27 |
-| 108 | Tình yêu thương | 1 Cô-rinh-tô 13 |
-| 109 | Trái của Thánh Linh | Ga-la-ti 5 |
-| 110 | Được cứu bởi ân điển | Ê-phê-sô 2 |
-| 111 | Khí giới của Đức Chúa Trời | Ê-phê-sô 6 |
-| 112 | Mọi sự hiệp lại làm ích | Rô-ma 8 |
-| 113 | Tôi làm được mọi sự | Phi-líp 4 |
-| 114 | Đức tin là gì | Hê-bơ-rơ 11 |
-| 115 | Đức tin và việc làm | Gia-cơ 2 |
-| 116 | Lời Chúa được Đức Chúa Trời soi dẫn | 2 Ti-mô-thê 3 |
-| 117 | Đức Chúa Trời là tình yêu thương | 1 Giăng 4 |
-| 118 | Chúa đứng ngoài cửa mà gõ | Khải Huyền 3 |
-| 119 | Trời mới đất mới | Khải Huyền 21 |
-| 120 | Ta là An-pha và Ô-mê-ga | Khải Huyền 22 |
+| 104 | Sau-lơ trên đường Đa-mách ✓ | Công Vụ 9 |
+| 105 | Phi-e-rơ được giải thoát khỏi ngục ✓ | Công Vụ 12 |
+| 106 | Phao-lô và Si-la trong ngục ✓ | Công Vụ 16 |
+| 107 | Phao-lô bị đắm tàu ✓ | Công Vụ 27–28 |
+| 108 | Tình yêu thương ✓ | 1 Cô-rinh-tô 13 |
+| 109 | Trái của Thánh Linh ✓ | Ga-la-ti 5 |
+| 110 | Được cứu bởi ân điển ✓ | Ê-phê-sô 2 |
+| 111 | Khí giới của Đức Chúa Trời ✓ | Ê-phê-sô 6 |
+| 112 | Mọi sự hiệp lại làm ích ✓ | Rô-ma 8 |
+| 113 | Tôi làm được mọi sự ✓ | Phi-líp 4 |
+| 114 | Đức tin là gì ✓ | Hê-bơ-rơ 11 |
+| 115 | Đức tin và việc làm ✓ | Gia-cơ 2 |
+| 116 | Lời Chúa được Đức Chúa Trời soi dẫn ✓ | 2 Ti-mô-thê 3 |
+| 117 | Đức Chúa Trời là tình yêu thương ✓ | 1 Giăng 4 |
+| 118 | Chúa đứng ngoài cửa mà gõ ✓ | Khải Huyền 3 |
+| 119 | Trời mới đất mới ✓ | Khải Huyền 21 |
+| 120 | Ta là An-pha và Ô-mê-ga ✓ | Khải Huyền 22 |
