@@ -17,6 +17,6 @@ Nguyên nhân 46 câu `vi` (và 25 câu `en`) mang tên sách lạ:
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - GQL-3 Deploy BE prod
-  - Status: [ ] TODO
+  - Status: [x] DONE 09/10 · commit `67b6176b`, BE `sha256:80a8662b…` (rollback `sha256:471bfd55…`), API khởi động 5 s, health 200
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]

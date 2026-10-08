@@ -9,7 +9,7 @@
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
-| 2026-10-09 | Câu của Nhóm lọt vào kho chung Đấu Hạng/Luyện Tập + 71 câu tên sách sai (Song of Solomon trùng, Gióp/Sáng Thế Ký của Nhóm) (GQL-1..3) | IN PROGRESS | [detail](docs/todo/active/2026-10-09-group-questions-shared-pool-leak.md) |
+| 2026-10-09 | Câu của Nhóm lọt vào kho chung Đấu Hạng/Luyện Tập + 71 câu tên sách sai (Song of Solomon trùng, Gióp/Sáng Thế Ký của Nhóm) (GQL-1..3) | DONE (deploy prod 09/10) | [detail](docs/todo/active/2026-10-09-group-questions-shared-pool-leak.md) |
 | 2026-10-08 | Đấu Hạng: rút câu cả Kinh Thánh theo vòng sách quen thuộc theo bậc, tối đa 3 câu/sách, Hành trình thành sưu tầm (RFR-1..4) | DONE (deploy prod 08/10; đo lại tỷ lệ đúng sau 2–4 tuần) | [detail](docs/todo/active/2026-10-08-ranked-familiarity-rings.md) |
 | 2026-10-08 | Đổi giao diện toàn app sang phong cách Lữ Khách — token, font, component, Quiz, Home, Hành trình 8 vùng, admin (LKD-0..21) | DONE (merge vào main) | [detail](docs/todo/active/2026-10-08-lu-khach-redesign.md) |
 | 2026-10-08 | Lữ Khách: mọi màn là một địa điểm — khung app, Trang chủ cảnh game, Quiz, Kết quả, Hành trình, toàn bộ màn người dùng, huy hiệu người chơi (LKF-1..20) | DONE (merge vào main; giao diện cũ giữ ở nhánh `ui-v1`) | [detail](docs/todo/active/2026-10-08-lu-khach-fidelity.md) |
