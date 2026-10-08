@@ -1,5 +1,10 @@
 import '@testing-library/jest-dom'
+import { configure } from '@testing-library/react'
 import { vi } from 'vitest'
+
+// findBy*/waitFor default to 1 s; on a loaded full-suite run (171 files in parallel) pages that
+// wait on a mocked query plus i18n can need longer, which showed up as random red tests.
+configure({ asyncUtilTimeout: 3000 })
 
 // Mock react-helmet-async globally so PageMeta works without HelmetProvider in tests
 vi.mock('react-helmet-async', () => ({

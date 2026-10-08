@@ -53,7 +53,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-16 | Giải đấu, chi tiết, trận ✅ | `/tournaments*` | sân đấu |
 | LKF-17 | Đăng nhập, Đăng ký, Onboarding, Thử quiz, Landing, Câu đố Kinh Thánh ✅ | `/login`, `/register`, `/onboarding*`, `/landing`, `/cau-do-kinh-thanh` | cổng làng |
 | LKF-18 | Chủ đề tuần, Bí ẩn, Tốc độ, Bộ đề của tôi, Trợ giúp, Chính sách, Điều khoản ✅ | … | |
-| LKF-19 | Admin | `/admin/*` | **giữ dạng công cụ** (đã sang màu Lữ Khách ở LKD-18) — màn làm việc cần gọn, không đưa cảnh game vào |
+| LKF-19 | Admin ✅ (giữ) | `/admin/*` | **giữ dạng công cụ** (đã sang màu Lữ Khách ở LKD-18) — màn làm việc cần gọn, không đưa cảnh game vào |
 | LKF-20 | Hồi quy + trang nghiệm thu trước/sau + báo cáo | — | |
 
 ### Nhật ký từng màn
