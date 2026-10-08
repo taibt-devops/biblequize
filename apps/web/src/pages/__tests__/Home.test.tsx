@@ -122,9 +122,11 @@ describe('Home Dashboard (Khung Sáng IA)', () => {
       expect(document.querySelector('.animate-pulse')).toBeInTheDocument()
     })
 
-    it('has a centered max-width container', async () => {
+    it('renders the game scene full width, with the panorama painting on wide screens (LKF-3)', async () => {
       renderHome()
-      await waitFor(() => expect(document.querySelector('.max-w-\\[1180px\\]')).toBeInTheDocument())
+      await waitFor(() => expect(screen.getByTestId('home-scene')).toBeInTheDocument())
+      const wide = document.querySelector('source[media="(min-width: 768px)"]')
+      expect(wide?.getAttribute('srcset')).toContain('bq-home-wide')
     })
 
     it('renders the verse lightwell', async () => {
@@ -164,11 +166,12 @@ describe('Home Dashboard (Khung Sáng IA)', () => {
   })
 
   describe('Daily card', () => {
-    it('State A (not done): renders daily card with "Chơi ngay" CTA', async () => {
+    it('State A (not done): the dove brings a letter, the bubble offers "Mở thư hôm nay"', async () => {
       setupApi({ dailyDone: false, totalPoints: 8200 })
       renderHome()
       await waitFor(() => expect(screen.getByTestId('home-daily')).toBeInTheDocument())
-      expect(screen.getByTestId('featured-daily-cta')).toHaveTextContent('Chơi ngay')
+      expect(screen.getByTestId('featured-daily-cta')).toHaveTextContent('Mở thư hôm nay')
+      expect(screen.getByTestId('featured-daily-cta')).toHaveAttribute('href', '/daily')
     })
 
     it('State B (done): CTA switches to "Xem lại"', async () => {
@@ -194,12 +197,10 @@ describe('Home Dashboard (Khung Sáng IA)', () => {
       expect(screen.getByTestId('home-mode-rooms')).toBeInTheDocument()
     })
 
-    it('renders the weekly leaderboard card next to the quests', async () => {
+    it('shows the weekly rank on the Xếp hạng medal and links to the full board', async () => {
       renderHome()
-      await waitFor(() => expect(screen.getByTestId('home-weekly-leaderboard')).toBeInTheDocument())
-      const lb = screen.getByTestId('home-weekly-leaderboard')
-      expect(lb).toHaveTextContent('Minh Anh')
-      expect(lb).toHaveTextContent('Tai Thanh')
+      await waitFor(() => expect(screen.getByTestId('home-weekly-leaderboard')).toHaveTextContent('#4'))
+      expect(screen.getByTestId('home-weekly-leaderboard')).toHaveAttribute('href', '/leaderboard')
     })
 
     it('LBF-11: hides the sparse board + weak #rank when < 10 weekly players', async () => {
@@ -207,7 +208,8 @@ describe('Home Dashboard (Khung Sáng IA)', () => {
       renderHome()
       await waitFor(() => expect(screen.getByTestId('home-weekly-leaderboard')).toBeInTheDocument())
       const lb = screen.getByTestId('home-weekly-leaderboard')
-      // Sparse rows replaced by the encouraging low-data message
+      // No rank badge on the medal (and no names on Home at all)
+      expect(lb).not.toHaveTextContent('#4')
       expect(lb).not.toHaveTextContent('Minh Anh')
       // The weak "Hạng tuần #4" / ranked "#4" numbers must not surface
       expect(screen.queryByText(/Hạng tuần/)).not.toBeInTheDocument()

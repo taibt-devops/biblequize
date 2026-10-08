@@ -299,7 +299,7 @@ Người dùng tự chọn câu/đoạn Kinh Thánh bất kỳ (hiện dùng BTT
 | Energy / XP / Leaderboard / Streak | **KHÔNG** — không tốn năng lượng, không cộng điểm, không xếp hạng |
 | Bản dịch | **Tạm thời `BTT1926`** (Bản Truyền Thống 1926, nguồn eBible.org `vie1934` — Public Domain; DECISIONS 2026-09-15). Đích C4 vẫn là BTTHĐ 2011 → BL-1. Toàn văn lưu bảng `bible_verses` (import gated `BIBLE_IMPORT_ENABLED`) |
 | Đơn vị học | 1 câu hoặc 1 đoạn liền nhau **tối đa 5 câu** (`verseEnd - verseStart ≤ 4`); trùng đoạn → 409 |
-| Lối vào | Thẻ "Học Thuộc câu gốc" trên `/practice` · thẻ "Câu gốc cần ôn hôm nay" trên Home, **chỉ hiện khi `dueCount > 0`** |
+| Lối vào | Thẻ "Học Thuộc câu gốc" trên `/practice` · Home: icon "Câu gốc" ở góc cảnh mang huy hiệu "N cần ôn" + nút "Ôn N câu đến hạn" trong cuộn câu gốc, **chỉ hiện khi `dueCount > 0`** (2026-10-08, Home dạng cảnh game — LKF-3) |
 | Cổng hiển thị | Thẻ trên `/practice` **chỉ hiện khi đã import chữ** (`GET /api/public/bible/status` → `available: true`) — deploy trước dữ liệu thì người dùng không thấy tính năng rỗng; import xong tự hiện, không cần deploy lại |
 
 **Mức thuộc & lịch ôn** (`mastery_level` 0–5; câu mới thêm đến hạn ngay):

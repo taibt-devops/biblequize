@@ -53,7 +53,7 @@ export default function AppLayout() {
 
       <header
         data-testid="app-topnav"
-        className="sticky top-0 z-30 bg-bq-white border-b-[3px] border-bq-ink"
+        className="sticky top-0 z-30 py-0 bg-bq-white border-b-[3px] border-bq-ink"
       >
         <div className="max-w-[1280px] mx-auto px-3.5 md:px-6 min-h-[58px] md:min-h-[66px] py-2 flex items-center gap-2 md:gap-[22px]">
           {/* Logo */}
@@ -113,7 +113,8 @@ export default function AppLayout() {
         </div>
       </header>
 
-      <main className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-6 md:py-10">
+      {/* Home is one full-bleed game scene (LKF-3); other pages keep the padded column. */}
+      <main className={location.pathname === '/' ? 'relative z-10' : 'relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-6 md:py-10'}>
         <Suspense fallback={<PageLoader />}>
           <Outlet />
         </Suspense>
