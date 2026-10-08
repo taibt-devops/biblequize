@@ -20,10 +20,13 @@
   - **Spec impact**: [x] SPEC_USER §5.1
   - **Spec strategy**: [x] (a) update inline
 - PBS-5 Deploy prod (cura-dev) + nạp câu
-  - Status: [ ] TODO
+  - Status: [x] DONE 09/10 · commit `4159d791`, BE `sha256:88207c60…`, FE `sha256:50e5d9ec…`; rollback BE `sha256:80a8662b…`, FE `sha256:643967c9…` · V73 áp 0,5 s · sao lưu `backups/questions_20261009_pre_v73.sql.gz` (cura-dev, thư mục compose)
+  - Prod để `QUESTION_SEEDING_ENABLED=false`, nên seed một lần: `docker compose -f compose.yml -f /tmp/seed-once.yml up -d --force-recreate api` với `QUESTION_SEEDING_ENABLED=true` + `QUESTION_SEEDING_PATTERN=classpath*:seed/questions/easy_core_quiz.json` (`SYNC_STALE` vẫn `false`) → `inserted=1095, dupHash=0, staleDeleted=0`; rồi recreate lại bằng compose gốc (seeding tắt)
+  - Kiểm: 1.095 câu có `story`, 120 chuyện, đều bật · câu Dễ `vi` đang bật 1.879 → 2.974 · `GET https://be.forbible.org/api/public/stories` 120 chuyện, không chuyện nào 0 câu · khách chơi "Nô-ê và trận lụt" trên forbible.org: 10 câu
+  - Hoàn tác dữ liệu: `DELETE FROM questions WHERE story IS NOT NULL;` (chỉ bộ này có `story`; xoá kéo theo lịch sử trả lời các câu đó)
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 
 ### Theo dõi sau deploy
-- Đếm câu có `story` trên prod = 1.095 (câu nào thiếu = trùng `content_hash` với câu admin/AI chỉ có trong DB).
+- Đo tỷ lệ đúng của bộ mới sau 2–4 tuần (đích ≥ 80%), tách theo chuyện để sửa chuyện khó bất thường.
 - Bộ Dễ cũ vẫn mang nhãn Dễ sai (đo 08/10: Dễ 50% đúng); dán nhãn lại riêng.
