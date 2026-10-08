@@ -78,3 +78,33 @@
 .range::-moz-range-progress { height: 12px; background: #ffc93c; border-radius: 999px; }
 .range::-webkit-slider-thumb { -webkit-appearance: none; width: 24px; height: 24px; margin-top: -8px; background: #ffc93c; border: 3px solid #1d2b22; border-radius: 50%; box-shadow: 0 3px 0 #1d2b22; }
 .range::-moz-range-thumb { width: 20px; height: 20px; background: #ffc93c; border: 3px solid #1d2b22; border-radius: 50%; box-shadow: 0 3px 0 #1d2b22; }
+
+/* Player crest (PlayerCrest): tier-material rim with an ink outline; gold tiers get a slow shine */
+.crest {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-color: #1d2b22;
+  border-radius: 50%;
+  box-shadow: 0 3px 0 rgba(29, 43, 34, 0.55), inset 0 2px 0 rgba(255, 255, 255, 0.35), inset 0 -2px 0 rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+.crestShine::after {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: linear-gradient(115deg, transparent 42%, rgba(255, 255, 255, 0.75) 50%, transparent 58%);
+  animation: crestShine 3.8s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes crestShine {
+  0%, 55% { transform: translateX(-60%); }
+  100% { transform: translateX(60%); }
+}
+.crestRadiant { box-shadow: 0 3px 0 rgba(29, 43, 34, 0.55), 0 0 0 3px rgba(255, 214, 90, 0.55), 0 0 14px 4px rgba(255, 201, 60, 0.55); }
+@media (prefers-reduced-motion: reduce) {
+  .crestShine::after { animation: none; display: none; }
+}
+

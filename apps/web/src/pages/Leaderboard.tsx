@@ -5,19 +5,22 @@ import { useTranslation } from 'react-i18next'
 import { api } from '../api/client'
 import { useAuthStore } from '../store/authStore'
 import { TIERS, getTierByPoints } from '../data/tiers'
-import { resolveAvatar } from '../utils/avatar'
 import PageMeta from '../components/PageMeta'
+import { PlaceBackdrop, Plaque } from '../components/lk/Place'
+import { PlayerCrest, TierRibbon } from '../components/lk/PlayerCrest'
 
 type Tab = 'weekly' | 'season' | 'all_time'
 
 // Podium hierarchy per mockup (LB-P1-1, LB-P1-2, LB-P1-3):
 // idx in podiumOrder: 0 = rank 2 (left), 1 = rank 1 (center, tallest), 2 = rank 3 (right).
-// Avatar size + bục height encode rank visual hierarchy without numerals.
+// Avatar size + stage height encode rank without numerals; LKF-11: gold / silver / bronze stages.
 const PODIUM_LAYOUT = [
-  { rank: 2, avatar: 'w-11 h-11 md:w-16 md:h-16', bucket: 'h-[60px] md:h-[90px]' },
-  { rank: 1, avatar: 'w-14 h-14 md:w-20 md:h-20', bucket: 'h-[88px] md:h-[130px]' },
-  { rank: 3, avatar: 'w-10 h-10 md:w-14 md:h-14', bucket: 'h-[42px] md:h-[65px]' },
+  { rank: 2, crest: 72, bucket: 'h-[70px] md:h-[104px]', stage: 'bg-bq-silver' },
+  { rank: 1, crest: 92, bucket: 'h-[100px] md:h-[148px]', stage: 'bg-bq-amber' },
+  { rank: 3, crest: 64, bucket: 'h-[50px] md:h-[76px]', stage: 'bg-bq-bronze' },
 ]
+
+const tierImg = (id: number) => `/images/lk/tier-${Math.min(6, Math.max(1, id))}.webp`
 
 const TAB_TO_API_PATH: Record<Tab, string> = {
   weekly: 'weekly',
@@ -129,94 +132,84 @@ export default function Leaderboard() {
     : []
 
   return (
-    <div className="max-w-5xl mx-auto py-6">
+    <div className="relative max-w-5xl mx-auto py-2 md:py-6">
+      <PlaceBackdrop place="summit" veil="mid" focus="center 30%" />
       <PageMeta
         title="Bảng Xếp Hạng – Trắc Nghiệm Kinh Thánh"
         description="Bảng xếp hạng người chơi trắc nghiệm Kinh Thánh trên BibleQuiz — thi đua điểm số cùng cộng đồng Tin Lành Việt Nam."
         canonicalPath="/leaderboard"
       />
-      {/* Header */}
-      <header className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
-        <div>
-          <h1 className="text-3xl font-display font-black tracking-tight text-bq-ink mb-2">{t('leaderboard.title')}</h1>
-          <p className="text-bq-ink2 text-sm">{t('leaderboard.description')}</p>
+      {/* title + which board */}
+      <header className="flex flex-wrap items-end justify-between gap-4 mb-8">
+        <div className="space-y-3 min-w-0">
+          <Plaque className="text-[28px] md:text-[38px]">
+            <img src="/images/lk/icon-trophy.webp" alt="" aria-hidden className="h-[1.05em]" />
+            {t('leaderboard.title')}
+          </Plaque>
+          <p className="m-0 w-fit max-w-full px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-2xl font-read text-[14px] md:text-[15px] text-bq-ink2">
+            {t('leaderboard.description')}
+          </p>
         </div>
+        <nav className="flex gap-1 p-1 bg-bq-white border-[3px] border-bq-ink rounded-full shadow-[0_4px_0_#1D2B22]">
+          {tabs.map((tab) => (
+            <button key={tab.key} onClick={() => setActiveTab(tab.key)} aria-pressed={activeTab === tab.key}
+              className={`px-4 md:px-5 py-1.5 rounded-full text-[15px] font-extrabold transition-colors ${
+                activeTab === tab.key ? 'bg-bq-amber text-bq-ink' : 'text-bq-ink2 hover:bg-bq-cream'
+              }`}>
+              {tab.label}
+            </button>
+          ))}
+        </nav>
       </header>
 
-      {/* Top 3 Podium */}
+      {/* Top 3 on the summit podium */}
       {isLoading ? (
-        <div className="grid grid-cols-3 gap-4 md:gap-10 items-end mb-16 px-2 animate-pulse">
+        <div className="grid grid-cols-3 gap-4 md:gap-10 items-end mb-12 px-2 animate-pulse">
           {[0, 1, 2].map(i => (
             <div key={i} className="flex flex-col items-center">
-              <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-bq-inset mb-6" />
-              <div className="h-3 w-16 bg-bq-inset rounded mb-2" />
-              <div className="h-3 w-12 bg-bq-inset rounded" />
+              <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-bq-inset/80 border-[3px] border-bq-ink/20 mb-4" />
+              <div className="w-full h-24 rounded-t-2xl bg-bq-inset/80 border-[3px] border-bq-ink/20" />
             </div>
           ))}
         </div>
       ) : !lowData && top3.length >= 3 ? (
-        <section data-testid="leaderboard-podium" className="grid grid-cols-3 gap-2 md:gap-6 items-end mb-16">
+        <section data-testid="leaderboard-podium" className="grid grid-cols-3 gap-2 md:gap-5 items-end mb-12 max-w-3xl mx-auto">
           {podiumOrder.map((player, idx) => {
             const layout = PODIUM_LAYOUT[idx]
             const isFirst = layout.rank === 1
             const tier = getTierByPoints(player.points ?? 0)
-            const tierColor = tier.colorHex
             const points = (player.points ?? 0).toLocaleString()
             const questions = player.questions
             return (
-              <div key={player.userId || idx} data-testid={`podium-rank-${layout.rank}`} className="flex flex-col items-center">
-                {/* Avatar + crown (#1 only) + rank badge */}
+              <div key={player.userId || idx} data-testid={`podium-rank-${layout.rank}`} className="flex flex-col items-center min-w-0">
+                {/* the player's crest + crown on #1 + rank number */}
                 <div className="relative mb-2 md:mb-3">
                   {isFirst && (
-                    <div className="absolute -top-4 md:-top-6 left-1/2 -translate-x-1/2 text-2xl md:text-3xl drop-shadow-[0_0_8px_rgba(232,168,50,0.6)]">
+                    <div className="absolute -top-7 md:-top-9 left-1/2 -translate-x-1/2 z-10 text-[28px] md:text-[38px] leading-none">
                       👑
                     </div>
                   )}
-                  <div
-                    className={`${layout.avatar} rounded-full overflow-hidden border-[3px] border-bq-ink bg-bq-white`}
-                  >
-                    {(() => {
-                      const r = resolveAvatar(player.avatarUrl, player.name)
-                      if (r.kind === 'img') return <img alt={`Rank ${layout.rank}`} className="w-full h-full object-cover" src={r.src} />
-                      if (r.kind === 'preset') return (
-                        <div className="w-full h-full flex items-center justify-center text-2xl md:text-4xl leading-none" style={{ background: r.preset.bg }} aria-hidden>{r.preset.emoji}</div>
-                      )
-                      return (
-                        <div
-                          className="w-full h-full flex items-center justify-center text-sm md:text-xl font-extrabold text-bq-ink"
-                          style={{ background: `${tierColor}26` }}
-                        >
-                          {r.initial}
-                        </div>
-                      )
-                    })()}
-                  </div>
-                  {/* Arabic-numeral rank badge — replaces La Mã (LB-P1-2) */}
-                  <div
-                    className={`absolute -bottom-1 md:-bottom-1.5 left-1/2 -translate-x-1/2 w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center font-extrabold text-[10px] md:text-xs text-bq-ink border-2 border-bq-ink ${isFirst ? 'bg-bq-amber' : 'bg-bq-white'}`}
-                  >
+                  {isFirst && <span aria-hidden className="absolute -inset-6 rounded-full bg-[radial-gradient(circle_closest-side,rgba(255,214,90,.95)_60%,rgba(255,214,90,.45)_78%,rgba(255,214,90,0)_100%)] motion-safe:animate-pulse" />}
+                  <PlayerCrest name={player.name} avatarUrl={player.avatarUrl} tierId={tier.id} size={layout.crest} />
+                  <div className={`absolute -top-1 -left-1 w-6 h-6 md:w-7 md:h-7 rounded-full grid place-items-center font-extrabold text-[12px] md:text-[14px] text-bq-ink border-2 border-bq-ink shadow-[0_2px_0_#1D2B22] ${layout.stage}`}>
                     {layout.rank}
                   </div>
                 </div>
 
-                {/* Name + tier name */}
-                <p className="font-medium text-[11px] md:text-sm text-center truncate w-full text-bq-ink">{player.name}</p>
-                <p className="text-[10px] md:text-xs font-bold mb-1.5 md:mb-2 truncate w-full text-center" style={{ color: tierColor }}>
-                  {t(tier.nameKey)}
-                </p>
+                {/* name + tier ribbon */}
+                <p className="m-0 mt-1 font-extrabold text-[13px] md:text-[16px] text-center truncate w-full text-bq-ink">{player.name}</p>
+                <div className="mb-2 mt-1 max-w-full overflow-hidden flex justify-center">
+                  <TierRibbon tierId={tier.id} />
+                </div>
 
-                {/* Bục — tier-tinted bg, height varies by rank */}
+                {/* wooden stage, height by rank */}
                 <div
-                  className={`w-full ${layout.bucket} rounded-t-2xl border-[3px] border-b-0 border-bq-ink flex flex-col items-center justify-center px-1 md:px-2 ${
-                    isFirst ? 'bg-bq-amber' : layout.rank === 2 ? 'bg-bq-parch' : 'bg-bq-track'
-                  }`}
+                  className={`w-full ${layout.bucket} ${layout.stage} rounded-t-2xl border-[3px] border-b-0 border-bq-ink flex flex-col items-center justify-start pt-2 md:pt-3 px-1 md:px-2 bg-[repeating-linear-gradient(180deg,rgba(29,43,34,.07)_0_2px,transparent_2px_14px)]`}
                 >
-                  <div
-                    className={`${isFirst ? 'text-base md:text-2xl' : 'text-xs md:text-lg'} font-extrabold text-bq-ink`}
-                  >
+                  <div className={`${isFirst ? 'text-[18px] md:text-[28px]' : 'text-[15px] md:text-[21px]'} font-display font-extrabold text-bq-ink leading-none tabular-nums`}>
                     {points}
                   </div>
-                  <div className="text-[10px] text-bq-ink2 mt-0.5 truncate w-full text-center">
+                  <div className="text-[11px] md:text-[12.5px] font-bold text-bq-ink2 mt-1 truncate w-full text-center">
                     {t('leaderboard.points').toLowerCase()}{questions ? ` · ${questions} câu` : ''}
                   </div>
                 </div>
@@ -225,36 +218,25 @@ export default function Leaderboard() {
           })}
         </section>
       ) : null}
+      {!isLoading && !lowData && top3.length >= 3 && (
+        <div aria-hidden className="-mt-12 mb-8 h-3 max-w-3xl mx-auto rounded-full border-[3px] border-bq-ink bg-[#8A5A2B]" />
+      )}
 
-      {/* Tabs */}
-      <nav className="flex p-1 bg-bq-inset rounded-2xl mb-10">
-        {tabs.map((tab) => (
-          <button key={tab.key} onClick={() => setActiveTab(tab.key)}
-            className={`flex-1 py-3 text-xs md:text-sm font-bold uppercase tracking-widest transition-all ${
-              activeTab === tab.key ? 'text-bq-ink bg-bq-white rounded-xl shadow-bq-soft' : 'text-bq-ink2 hover:text-bq-ink'
-            }`}>
-            {tab.label}
-          </button>
-        ))}
-      </nav>
-
-      {/* Table List (or low-data seed-state — LBF-11) */}
-      <div className={`space-y-4 mb-16 transition-opacity ${isFetching ? 'opacity-50' : ''}`}>
+      {/* the rest of the board (or low-data seed-state — LBF-11) */}
+      <div className={`space-y-3 mb-12 transition-opacity ${isFetching ? 'opacity-50' : ''}`}>
         {isLoading ? (
-          [1, 2, 3, 4].map(i => <div key={i} className="h-16 bg-bq-inset rounded-2xl animate-pulse" />)
+          [1, 2, 3, 4].map(i => <div key={i} className="h-16 bg-bq-inset/80 border-[3px] border-bq-ink/20 rounded-2xl animate-pulse" />)
         ) : lowData ? (
-          <div data-testid="leaderboard-seed-state" className="flex flex-col items-center text-center gap-3 py-14">
-            <div className="w-14 h-14 rounded-full bg-bq-amber/10 flex items-center justify-center">
-              <span className="material-symbols-outlined text-bq-amberd text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>rocket_launch</span>
-            </div>
-            <p className="text-base font-bold text-bq-ink">{t('leaderboard.seedTitle')}</p>
-            <p className="text-sm text-bq-ink2 max-w-sm leading-relaxed">{t('leaderboard.seedBody')}</p>
+          <div data-testid="leaderboard-seed-state" className="max-w-md mx-auto flex flex-col items-center text-center gap-2 px-6 py-8 bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card">
+            <img src="/images/lk/hero.webp" alt="" aria-hidden className="h-28" />
+            <p className="m-0 font-display text-[22px] font-extrabold text-bq-ink">{t('leaderboard.seedTitle')}</p>
+            <p className="m-0 font-read text-[15px] text-bq-ink2 leading-relaxed">{t('leaderboard.seedBody')}</p>
             <Link
               to="/practice"
               data-testid="leaderboard-seed-cta"
-              className="inline-flex items-center gap-2 mt-2 px-5 py-2 rounded-xl bg-bq-amber text-white text-xs font-black uppercase tracking-widest active:scale-95 transition-transform"
+              className="lk-btn mt-2 text-bq-ink text-[16px] no-underline"
             >
-              {t('leaderboard.seedCta')} →
+              {t('leaderboard.seedCta')}
             </Link>
           </div>
         ) : (
@@ -278,8 +260,8 @@ export default function Leaderboard() {
                 neighbourhood window (LBF-4) or, as a fallback, a single sticky row. */}
             {showMyRankSticky && (
               aroundRows.length > 0 ? (
-                <div data-testid="leaderboard-around-me" className="space-y-4 mt-2 pt-5 border-t border-dashed border-bq-hair">
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-bq-ink2 mb-1">{t('leaderboard.aroundMe')}</p>
+                <div data-testid="leaderboard-around-me" className="space-y-3 mt-2 pt-5 border-t-2 border-dashed border-bq-ink/30">
+                  <p className="m-0 mb-1 text-[14px] font-extrabold text-bq-ink2">{t('leaderboard.aroundMe')}</p>
                   {aroundRows.map((r: any) => {
                     const me = myUserId != null && r.userId === myUserId
                     return (
@@ -313,28 +295,25 @@ export default function Leaderboard() {
         )}
       </div>
 
-      {/* Season Tier Ranking — 6 religious tiers (decision A 2026-05-01) */}
-      <section className="bg-bq-white p-6 md:p-8 rounded-3xl mb-24 border border-bq-hair shadow-bq-soft" data-testid="leaderboard-tier-section">
-        <header className="mb-6">
-          <h4 className="text-lg font-display font-black flex items-center gap-2 mb-1 text-bq-ink">
-            <span>🏆</span>
-            {t('leaderboard.seasonRanking')}
-          </h4>
-          <p className="text-xs text-bq-ink2 leading-relaxed">
+      {/* Season tier ladder — 6 religious tiers (decision A 2026-05-01), as shields */}
+      <section className="bg-bq-white p-5 md:p-7 rounded-bq mb-16 border-[3px] border-bq-ink shadow-bq-card" data-testid="leaderboard-tier-section">
+        <header className="mb-5 space-y-2">
+          <Plaque as="h2" className="text-[20px] md:text-[24px]">{t('leaderboard.seasonRanking')}</Plaque>
+          <p className="m-0 font-read text-[14.5px] text-bq-ink2 leading-relaxed">
             {season?.active && season.name
               ? t('leaderboard.tierSeasonSubtitle', { seasonName: season.name })
               : t('leaderboard.tierSeasonSubtitleFallback')}
           </p>
           {!isAuthenticated && (
-            <p className="text-xs text-bq-ink2 mt-2" data-testid="leaderboard-guest-rank-cta">
-              <Link to="/login" className="text-bq-amberd font-semibold hover:underline">
+            <p className="m-0 text-[14px] text-bq-ink2" data-testid="leaderboard-guest-rank-cta">
+              <Link to="/login" className="font-extrabold text-bq-ink underline decoration-bq-amber decoration-[3px] underline-offset-2">
                 {t('auth.login')}
               </Link>{' '}
               {t('leaderboard.loginForRank')}
             </p>
           )}
         </header>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
           {TIERS.map((tier) => {
             const isCurrent = tier.id === userTierId
             const thresholdLabel = Number.isFinite(tier.maxPoints)
@@ -344,28 +323,22 @@ export default function Leaderboard() {
               <div
                 key={tier.id}
                 data-testid={`leaderboard-tier-card-${tier.id}`}
-                className={`relative p-4 rounded-2xl border-t-2 transition-colors ${
+                className={`relative flex items-center gap-3 p-3 md:p-4 rounded-2xl border-[3px] ${
                   isCurrent
-                    ? 'bg-bq-amber/10 border-bq-amber'
-                    : 'bg-bq-inset border-bq-hair'
+                    ? 'bg-bq-cream border-bq-amber shadow-[0_0_0_3px_#1D2B22]'
+                    : 'bg-bq-paper border-bq-ink/20'
                 }`}
-                style={!isCurrent ? { borderTopColor: tier.colorHex + '66' } : undefined}
               >
                 {isCurrent && (
-                  <span className="absolute top-2 right-2 bg-bq-amber text-white text-[8px] font-black px-1.5 py-0.5 rounded-full uppercase tracking-tight">
+                  <span className="absolute -top-3 right-3 px-2 py-0.5 rounded-full bg-bq-amber border-2 border-bq-ink text-[12px] font-extrabold">
                     {t('leaderboard.me')}
                   </span>
                 )}
-                <span
-                  className="material-symbols-outlined mb-2 text-2xl"
-                  style={{ color: tier.colorHex, fontVariationSettings: "'FILL' 1" }}
-                >
-                  {tier.iconMaterial}
-                </span>
-                <p className={`font-bold text-sm mb-1 ${isCurrent ? 'text-bq-ink' : ''}`} style={{ color: isCurrent ? undefined : tier.colorHex }}>
-                  {t(tier.nameKey)}
-                </p>
-                <p className="text-[10px] text-bq-ink2 leading-relaxed">{thresholdLabel}</p>
+                <img src={tierImg(tier.id)} alt="" aria-hidden className={`w-11 md:w-12 shrink-0 ${isCurrent ? '' : 'opacity-85'}`} />
+                <div className="min-w-0">
+                  <p className="m-0 font-extrabold text-[15px] text-bq-ink">{t(tier.nameKey)}</p>
+                  <p className="m-0 text-[12.5px] font-bold text-bq-ink2 leading-snug">{thresholdLabel}</p>
+                </div>
               </div>
             )
           })}
@@ -390,63 +363,28 @@ interface LeaderboardListRowProps {
 function LeaderboardListRow({ rank, name, points, avatarUrl, isMe, testId }: LeaderboardListRowProps) {
   const { t } = useTranslation()
   const tier = getTierByPoints(points)
-  const tierColor = tier.colorHex
-  const tierName = t(tier.nameKey)
-  const resolved = resolveAvatar(avatarUrl, name)
-
-  const renderAvatarBody = () => {
-    if (resolved.kind === 'img') return <img alt={name} className="w-full h-full object-cover" src={resolved.src} />
-    if (resolved.kind === 'preset') return (
-      <div className="w-full h-full flex items-center justify-center text-xl md:text-2xl leading-none" style={{ background: resolved.preset.bg }} aria-hidden>{resolved.preset.emoji}</div>
-    )
-    return resolved.initial
-  }
-
-  if (isMe) {
-    return (
-      <div
-        data-testid={testId}
-        className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-bq-amber/10 rounded-2xl outline outline-bq-amber/40 shadow-bq-soft"
-      >
-        <div className="w-7 md:w-8 text-center font-black text-bq-amberd">{rank}</div>
-        <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-bq-amber shadow-bq-soft overflow-hidden flex items-center justify-center text-bq-ink font-bold" style={{ background: `${tierColor}26` }}>
-          {renderAvatarBody()}
-        </div>
-        <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 flex-wrap">
-            <h3 className="font-black text-xs md:text-sm text-bq-ink truncate">{name}</h3>
-            <span className="bg-bq-amber/20 text-bq-amberd text-[8px] font-black px-1.5 py-0.5 rounded uppercase tracking-tighter">{t('leaderboard.me')}</span>
-          </div>
-          <div className="flex items-center gap-2 mt-0.5 text-[10px] md:text-[11px] text-bq-ink2">
-            <span>{tierName}</span>
-          </div>
-        </div>
-        <div className="text-right">
-          <p className="text-bq-ink font-black text-base md:text-lg">{points.toLocaleString()}</p>
-          <p className="text-[9px] md:text-[10px] uppercase text-bq-ink2 font-bold">{t('leaderboard.points')}</p>
-        </div>
-      </div>
-    )
-  }
 
   return (
     <div
       data-testid={testId}
-      className="flex items-center gap-3 md:gap-4 p-3 md:p-5 bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl hover:bg-bq-inset transition-all group"
+      className={`flex items-center gap-3 md:gap-4 px-3 py-2.5 md:px-5 md:py-3 rounded-2xl border-[3px] border-bq-ink ${
+        isMe ? 'bg-bq-amber/30 shadow-[0_4px_0_#1D2B22]' : 'bg-bq-white shadow-[0_3px_0_rgba(29,43,34,.35)]'
+      }`}
     >
-      <div className="w-7 md:w-8 text-center font-black text-bq-ink2 group-hover:text-bq-ink transition-colors text-sm">{rank}</div>
-      <div className="w-9 h-9 md:w-10 md:h-10 rounded-full overflow-hidden flex items-center justify-center text-sm font-bold text-bq-ink border-2 border-bq-ink" style={{ background: `${tierColor}26` }}>
-        {renderAvatarBody()}
-      </div>
+      <div className={`w-8 h-8 md:w-9 md:h-9 shrink-0 grid place-items-center rounded-full border-2 border-bq-ink font-extrabold text-[13px] md:text-[14px] ${isMe ? 'bg-bq-amber' : 'bg-bq-cream'}`}>{rank}</div>
+      <PlayerCrest name={name} avatarUrl={avatarUrl} tierId={tier.id} size={50} />
       <div className="flex-1 min-w-0">
-        <h3 className="font-bold text-xs md:text-sm text-bq-ink truncate">{name}</h3>
-        <div className="flex items-center gap-2 mt-0.5 text-[10px] md:text-[11px]">
-          <span className="font-bold" style={{ color: tierColor }}>{tierName}</span>
+        <div className="flex items-center gap-2 flex-wrap">
+          <h3 className="m-0 font-extrabold text-[15px] md:text-[16px] text-bq-ink truncate">{name}</h3>
+          {isMe && (
+            <span className="px-2 py-0.5 rounded-full bg-bq-amber border-2 border-bq-ink text-[11.5px] font-extrabold">{t('leaderboard.me')}</span>
+          )}
         </div>
+        <TierRibbon tierId={tier.id} className="mt-1" />
       </div>
       <div className="text-right">
-        <p className="text-bq-ink font-black text-sm">{points.toLocaleString()}</p>
-        <p className="text-[9px] md:text-[10px] uppercase text-bq-ink2">{t('leaderboard.points')}</p>
+        <p className="m-0 font-display text-bq-ink font-extrabold text-[17px] md:text-[19px] leading-none tabular-nums">{points.toLocaleString()}</p>
+        <p className="m-0 mt-0.5 text-[12px] font-bold text-bq-ink2">{t('leaderboard.points')}</p>
       </div>
     </div>
   )

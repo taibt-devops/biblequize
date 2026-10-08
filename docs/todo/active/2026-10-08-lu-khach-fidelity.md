@@ -45,7 +45,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-8 | Luyện Tập, Học Thuộc (3 màn), Ôn tập ✅ | `/practice`, `/practice/memorize*`, `/review` | phòng đọc |
 | LKF-9 | Đấu Hạng, Bài kiểm tra cơ bản ✅ | `/ranked`, `/basic-quiz` | sân đấu |
 | LKF-10 | Thử thách hôm nay ✅ | `/daily` | lá thư bồ câu mang tới |
-| LKF-11 | Xếp hạng | `/leaderboard` | đỉnh đồi, bục vinh danh |
+| LKF-11 | Xếp hạng ✅ | `/leaderboard` | đỉnh đồi, bục vinh danh |
 | LKF-12 | Cá nhân, Thành tích, Ngoại hình | `/profile`, `/achievements`, `/cosmetics` | lều trại |
 | LKF-13 | Phòng chơi, Danh sách phòng, Tạo phòng, Vào phòng | `/multiplayer`, `/rooms`, `/room/create`, `/room/join` | quảng trường làng |
 | LKF-14 | Phòng chờ, Chơi phòng, Màn chủ phòng, Phân tích phòng | `/room/:id/*` | quảng trường |
@@ -80,4 +80,10 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
   - Khi chơi: tranh bưu điện, biển gỗ, 5 viên đá tiến độ, câu hỏi trên cuộn giấy, tham chiếu tên sách tiếng Việt (`useBookName`, bỏ chữ IN HOA tiếng Anh), thanh phản hồi nền lá / hồng, giải thích trên giấy
   - Quyết định: CTA `daily.ready.cta` "Bắt đầu thử thách" → "Mở thư hôm nay" (EN "Open today's letter"); "· perfect" → "★"; ô "đáp án đúng là" dùng `quiz.lk.correctIs` (có chữ cái đáp án)
   - Ghi nhận (không sửa, ngoài phạm vi giao diện): DB local chỉ có 3 câu/ngày nhưng kết quả ghi "trên 5 câu" và chữ thưởng "+150 XP nếu đúng cả 5" — số 5 đến từ BE/i18n
+  - **Spec impact**: [x] None · **Spec strategy**: [x] (c)
+- LKF-11 Xếp hạng — đỉnh đồi, bục vinh danh
+  - Status: [x] DONE
+  - Biển gỗ có cúp, công tắc Tất cả / Hàng tuần đưa lên đầu (bục đổi theo bảng); bục gỗ vàng / bạc / đồng có vân ván, vương miện + hào quang cho hạng 1; hàng danh sách viền mực, số hạng trong huy chương; "Khu vực của bạn"; trạng thái ít dữ liệu = lữ khách + nút vàng; bậc mùa = 6 khiên hạng
+  - Góp ý giữa chừng (user 08/10: "huy hiệu của người chơi đang không đẹp… tạo gì đó đẹp đẹp để xịn hơn"): làm `components/lk/PlayerCrest` — ảnh đại diện trong vành đinh tán làm bằng chất liệu của bậc (gỗ sáng, gỗ sẫm, đồng, bạc, vàng, vàng rực có hào quang), vàng có vệt sáng chạy chậm (tắt khi giảm chuyển động), khiên bậc gắn góc dưới phải như huy hiệu game; người chưa có ảnh = chân dung màu pastel theo tên + chữ cái đầu; `TierRibbon` = dải tên bậc màu riêng từng bậc. Dùng cho bục + mọi hàng; sẽ dùng tiếp ở Cá nhân / Nhóm / Phòng
+  - Ảnh chụp dùng bảng giả lập (DB local < 10 người → trạng thái ít dữ liệu)
   - **Spec impact**: [x] None · **Spec strategy**: [x] (c)
