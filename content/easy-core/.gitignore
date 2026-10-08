@@ -1,1 +1,3 @@
 .cache/
+# repo .gitignore ignores *.py; this one is the build tool for the set
+!build.py
