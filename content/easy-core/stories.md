@@ -30,17 +30,17 @@
 | 22 | Ma-na và chim cút ✓ | Xuất Ai Cập Ký 16 |
 | 23 | Mười Điều Răn ✓ | Xuất Ai Cập Ký 20 |
 | 24 | Con bò con bằng vàng ✓ | Xuất Ai Cập Ký 32 |
-| 25 | Mười hai thám tử | Dân Số Ký 13–14 |
-| 26 | Con lừa của Ba-la-am | Dân Số Ký 22 |
-| 27 | Ra-háp và hai thám tử | Giô-suê 2 |
-| 28 | Tường thành Giê-ri-cô | Giô-suê 6 |
-| 29 | Ghê-đê-ôn và 300 người | Các Quan Xét 7 |
-| 30 | Sam-sôn | Các Quan Xét 16 |
-| 31 | Ru-tơ và Na-ô-mi | Ru-tơ 1–4 |
-| 32 | Cậu bé Sa-mu-ên nghe tiếng Chúa | 1 Sa-mu-ên 3 |
-| 33 | Sa-mu-ên xức dầu cho Đa-vít | 1 Sa-mu-ên 16 |
+| 25 | Mười hai thám tử ✓ | Dân Số Ký 13–14 |
+| 26 | Con lừa của Ba-la-am ✓ | Dân Số Ký 22 |
+| 27 | Ra-háp và hai thám tử ✓ | Giô-suê 2 |
+| 28 | Tường thành Giê-ri-cô ✓ | Giô-suê 6 |
+| 29 | Ghi-đê-ôn và 300 người ✓ | Các Quan Xét 7 |
+| 30 | Sam-sôn ✓ | Các Quan Xét 16 |
+| 31 | Ru-tơ và Na-ô-mi ✓ | Ru-tơ 1–4 |
+| 32 | Cậu bé Sa-mu-ên nghe tiếng Chúa ✓ | 1 Sa-mu-ên 3 |
+| 33 | Sa-mu-ên xức dầu cho Đa-vít ✓ | 1 Sa-mu-ên 16 |
 | 34 | Đa-vít và Gô-li-át ✓ | 1 Sa-mu-ên 17 |
-| 35 | Đa-vít và Giô-na-than | 1 Sa-mu-ên 18–20 |
+| 35 | Đa-vít và Giô-na-than ✓ | 1 Sa-mu-ên 18–20 |
 | 36 | Đa-vít tha mạng vua Sau-lơ | 1 Sa-mu-ên 24 |
 | 37 | Sa-lô-môn xin sự khôn ngoan | 1 Các Vua 3 |
 | 38 | Sa-lô-môn xây đền thờ | 1 Các Vua 6–8 |
