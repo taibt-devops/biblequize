@@ -41,16 +41,16 @@
 | 33 | Sa-mu-ên xức dầu cho Đa-vít ✓ | 1 Sa-mu-ên 16 |
 | 34 | Đa-vít và Gô-li-át ✓ | 1 Sa-mu-ên 17 |
 | 35 | Đa-vít và Giô-na-than ✓ | 1 Sa-mu-ên 18–20 |
-| 36 | Đa-vít tha mạng vua Sau-lơ | 1 Sa-mu-ên 24 |
-| 37 | Sa-lô-môn xin sự khôn ngoan | 1 Các Vua 3 |
-| 38 | Sa-lô-môn xây đền thờ | 1 Các Vua 6–8 |
-| 39 | Ê-li được quạ nuôi | 1 Các Vua 17 |
-| 40 | Ê-li trên núi Cạt-mên | 1 Các Vua 18 |
-| 41 | Ê-li được cất lên trời | 2 Các Vua 2 |
-| 42 | Ê-li-sê và người đàn bà Su-nem | 2 Các Vua 4 |
-| 43 | Na-a-man được chữa lành | 2 Các Vua 5 |
-| 44 | Vua Giô-si-a tìm lại sách luật | 2 Các Vua 22 |
-| 45 | Nê-hê-mi xây lại tường thành | Nê-hê-mi 2–6 |
+| 36 | Đa-vít tha mạng vua Sau-lơ ✓ | 1 Sa-mu-ên 24 |
+| 37 | Sa-lô-môn xin sự khôn ngoan ✓ | 1 Các Vua 3 |
+| 38 | Sa-lô-môn xây đền thờ ✓ | 1 Các Vua 6–8 |
+| 39 | Ê-li được quạ nuôi ✓ | 1 Các Vua 17 |
+| 40 | Ê-li trên núi Cạt-mên ✓ | 1 Các Vua 18 |
+| 41 | Ê-li được cất lên trời ✓ | 2 Các Vua 2 |
+| 42 | Ê-li-sê và người đàn bà Su-nem ✓ | 2 Các Vua 4 |
+| 43 | Na-a-man được chữa lành ✓ | 2 Các Vua 5 |
+| 44 | Vua Giô-si-a tìm lại sách luật ✓ | 2 Các Vua 22 |
+| 45 | Nê-hê-mi xây lại tường thành ✓ | Nê-hê-mi 2–6 |
 | 46 | Hoàng hậu Ê-xơ-tê | Ê-xơ-tê 4–7 |
 | 47 | Gióp kiên nhẫn | Gióp 1–2, 42 |
 | 48 | Đức Giê-hô-va là Đấng chăn giữ tôi | Thi Thiên 23 |
