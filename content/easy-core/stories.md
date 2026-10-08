@@ -93,16 +93,16 @@
 | 80 | La-xa-rơ sống lại ✓ | Giăng 11 |
 | 81 | Ma-ri và Ma-thê ✓ | Lu-ca 10 |
 | 82 | Chúa ban phước cho trẻ em ✓ | Mác 10 |
-| 83 | Người Sa-ma-ri nhân lành | Lu-ca 10 |
-| 84 | Con chiên lạc | Lu-ca 15 |
-| 85 | Người con hoang đàng | Lu-ca 15 |
-| 86 | Người gieo giống | Ma-thi-ơ 13 |
-| 87 | Hạt cải | Ma-thi-ơ 13 |
-| 88 | Mười trinh nữ | Ma-thi-ơ 25 |
-| 89 | Các ta-lâng | Ma-thi-ơ 25 |
-| 90 | Chúa vào thành Giê-ru-sa-lem | Ma-thi-ơ 21 |
-| 91 | Chúa rửa chân cho môn đồ | Giăng 13 |
-| 92 | Tiệc Thánh đầu tiên | Lu-ca 22 |
+| 83 | Người Sa-ma-ri nhân lành ✓ | Lu-ca 10 |
+| 84 | Con chiên lạc ✓ | Lu-ca 15 |
+| 85 | Người con hoang đàng ✓ | Lu-ca 15 |
+| 86 | Người gieo giống ✓ | Ma-thi-ơ 13 |
+| 87 | Hạt cải ✓ | Ma-thi-ơ 13 |
+| 88 | Mười trinh nữ ✓ | Ma-thi-ơ 25 |
+| 89 | Các ta-lâng ✓ | Ma-thi-ơ 25 |
+| 90 | Chúa vào thành Giê-ru-sa-lem ✓ | Ma-thi-ơ 21 |
+| 91 | Chúa rửa chân cho môn đồ ✓ | Giăng 13 |
+| 92 | Tiệc Thánh đầu tiên ✓ | Lu-ca 22 |
 | 93 | Vườn Ghết-sê-ma-nê | Ma-thi-ơ 26 |
 | 94 | Phi-e-rơ chối Chúa | Lu-ca 22 |
 | 95 | Thập tự và phục sinh ✓ | Lu-ca 23–24, Giăng 20 |

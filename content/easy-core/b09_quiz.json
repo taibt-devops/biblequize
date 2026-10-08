@@ -1,0 +1,2077 @@
+[
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Luật gia hỏi Chúa Jêsus phải làm gì để được hưởng điều gì?",
+  "options": [
+   "Sự sống đời đời",
+   "Nhiều của cải",
+   "Một chức quan",
+   "Sống lâu trên đất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Câu hỏi này dẫn đến ẩn dụ người Sa-ma-ri nhân lành. “Thưa Thầy, tôi phải làm gì để được hưởng sự sống đời đời?” (Lu-ca 10:25)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người Sa-ma-ri nhân lành",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 27,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Luật pháp dạy phải yêu thương người lân cận thế nào?",
+  "options": [
+   "Chỉ khi họ tốt với mình",
+   "Ít hơn chính mình",
+   "Chỉ người cùng làng",
+   "Như chính mình"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Yêu Chúa và yêu người là hai điều răn lớn nhất. “và yêu thương người lân cận như chính mình.” (Lu-ca 10:27)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người Sa-ma-ri nhân lành",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 29,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Luật gia hỏi tiếp Chúa Jêsus câu gì?",
+  "options": [
+   "Ai là thầy tôi?",
+   "Ai là kẻ thù tôi?",
+   "Ai là người lân cận tôi?",
+   "Ai là vua tôi?"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Luật gia muốn tỏ ra mình công chính. “Ai là người lân cận tôi?” (Lu-ca 10:29)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người Sa-ma-ri nhân lành",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 30,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người đi từ Giê-ru-sa-lem xuống Giê-ri-cô gặp chuyện gì?",
+  "options": [
+   "Gặp bão lớn",
+   "Rơi vào tay bọn cướp",
+   "Bị sư tử tấn công",
+   "Bị lạc đường"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người ấy bị đánh đập và bỏ lại dở sống dở chết. “Có một người từ thành Giê-ru-sa-lem xuống thành Giê-ri-cô rơi vào tay bọn cướp.” (Lu-ca 10:30)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người Sa-ma-ri nhân lành",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thầy tế lễ thấy nạn nhân thì làm gì?",
+  "options": [
+   "Đuổi theo bọn cướp",
+   "Tránh qua bên kia đường",
+   "Gọi lính đến giúp",
+   "Cầu nguyện cho anh ta"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người có chức vụ tôn giáo lại bỏ mặc nạn nhân. “thấy nạn nhân thì đi tránh qua bên kia đường.” (Lu-ca 10:31)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người Sa-ma-ri nhân lành",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 33,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ai đã động lòng thương xót và giúp nạn nhân?",
+  "options": [
+   "Một người Pha-ri-si",
+   "Một nhà buôn Ai Cập",
+   "Một người Sa-ma-ri",
+   "Một người lính La Mã"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người bị xem thường lại là người tỏ lòng thương xót. “Nhưng có một người Sa-ma-ri đi đường, đến gần thấy nạn nhân thì động lòng thương xót” (Lu-ca 10:33)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người Sa-ma-ri nhân lành",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 34,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người Sa-ma-ri lấy gì xức vào vết thương?",
+  "options": [
+   "Bùn đất",
+   "Mật ong",
+   "Nước muối",
+   "Dầu và rượu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông chăm sóc vết thương rồi băng bó cẩn thận. “lấy dầu và rượu xức vào vết thương, băng bó lại” (Lu-ca 10:34)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người Sa-ma-ri nhân lành",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 34,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người Sa-ma-ri đưa nạn nhân đến đâu để săn sóc?",
+  "options": [
+   "Quán trọ",
+   "Cung vua",
+   "Nhà thầy tế lễ",
+   "Đền thờ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông còn trả tiền để người ta chăm sóc nạn nhân. “rồi đỡ nạn nhân lên con vật của mình và đưa đến quán trọ để săn sóc.” (Lu-ca 10:34)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người Sa-ma-ri nhân lành",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 37,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo luật gia, ai là người lân cận với kẻ bị cướp?",
+  "options": [
+   "Người đã bày tỏ lòng thương xót",
+   "Người có chức vụ cao nhất",
+   "Người giàu nhất",
+   "Người đi qua trước nhất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người lân cận là người biết thương giúp người hoạn nạn. “Ấy là người đã bày tỏ lòng thương xót đối với nạn nhân.” (Lu-ca 10:37)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người Sa-ma-ri nhân lành",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 37,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Cuối cùng, Chúa Jêsus bảo luật gia làm gì?",
+  "options": [
+   "Hãy về đọc thêm sách",
+   "Hãy tránh xa người lạ",
+   "Hãy dâng thêm lễ vật",
+   "Hãy đi, làm theo như vậy"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Yêu thương phải được thể hiện bằng việc làm. “Hãy đi, làm theo như vậy.” (Lu-ca 10:37)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người Sa-ma-ri nhân lành",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ai phàn nàn vì Chúa Jêsus tiếp những kẻ tội lỗi?",
+  "options": [
+   "Người thu thuế",
+   "Trẻ em",
+   "Người Pha-ri-si và thầy thông giáo",
+   "Các môn đồ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ khó chịu vì Chúa ăn uống với người tội lỗi. “Những người Pha-ri-si và các thầy thông giáo phàn nàn rằng” (Lu-ca 15:2)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con chiên lạc",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người ta phàn nàn Chúa Jêsus vì Ngài làm gì?",
+  "options": [
+   "Chữa bệnh ban đêm",
+   "Tiếp và ăn uống với người tội lỗi",
+   "Không nộp thuế",
+   "Không giữ ngày Sa-bát"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa Jêsus kể ẩn dụ để đáp lại lời phàn nàn ấy. “Người nầy tiếp những kẻ tội lỗi và ăn uống với chúng!” (Lu-ca 15:2)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con chiên lạc",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người chăn trong ẩn dụ có bao nhiêu con chiên?",
+  "options": [
+   "Mười hai con",
+   "Một trăm con",
+   "Một nghìn con",
+   "Mười con"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dù có nhiều chiên, người chăn vẫn quý từng con. “Có ai trong các ngươi có một trăm con chiên” (Lu-ca 15:4)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con chiên lạc",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi mất một con chiên, người chăn làm gì?",
+  "options": [
+   "Chờ nó tự về",
+   "Không quan tâm đến nó",
+   "Để chín mươi chín con lại, đi tìm",
+   "Mua một con khác"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người chăn tìm cho kỳ được con chiên bị mất. “nếu mất một con mà không để chín mươi chín con kia nơi đồng hoang để đi tìm cho kỳ được con chiên bị mất chăng?” (Lu-ca 15:4)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con chiên lạc",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Tìm được con chiên, người chăn làm gì?",
+  "options": [
+   "Vui mừng vác nó lên vai",
+   "Đánh nó một trận",
+   "Bán nó đi",
+   "Nhốt nó lại"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người chăn vui mừng chứ không trách mắng. “Khi đã tìm được thì vui mừng vác nó lên vai.” (Lu-ca 15:5)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con chiên lạc",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Về đến nhà, người chăn mời bạn hữu làm gì?",
+  "options": [
+   "Đi tìm chiên khác",
+   "Mua chiên của mình",
+   "Canh chiên ban đêm",
+   "Chung vui với mình"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Niềm vui tìm lại được chiên cần được chia sẻ. “Hãy chung vui với tôi, vì tôi đã tìm được con chiên bị mất.” (Lu-ca 15:6)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con chiên lạc",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thiên đàng vui mừng về điều gì?",
+  "options": [
+   "Một người giàu thêm",
+   "Một tội nhân ăn năn",
+   "Một đền thờ mới",
+   "Một chiến thắng lớn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đức Chúa Trời vui mừng khi người lạc lối trở về. “thiên đàng sẽ vui mừng về một tội nhân ăn năn hơn là chín mươi chín người công chính không cần phải ăn năn.” (Lu-ca 15:7)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con chiên lạc",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người con út xin cha điều gì?",
+  "options": [
+   "Chia phần tài sản cho mình",
+   "Cho đi học xa",
+   "Cho cưới vợ",
+   "Cho làm chủ nhà"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người con muốn lấy phần của mình rồi bỏ đi. “Thưa cha, xin chia cho con phần tài sản thuộc về con.” (Lu-ca 15:12)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người con hoang đàng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ở nơi xa, người con út làm gì với tài sản?",
+  "options": [
+   "Mua thêm đất",
+   "Làm ăn giàu có",
+   "Gửi về cho cha",
+   "Ăn chơi phung phí hết"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Người con sống buông thả và tiêu sạch tài sản. “ở đó, nó ăn chơi phóng đãng, phung phí tài sản mình.” (Lu-ca 15:13)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người con hoang đàng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hết tiền giữa nạn đói, người con phải làm việc gì?",
+  "options": [
+   "Làm thợ mộc",
+   "Đánh cá",
+   "Chăn heo",
+   "Bán hàng ngoài chợ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người con rơi vào cảnh khốn cùng. “Nó phải đi làm mướn cho một người dân bản xứ và bị sai ra đồng chăn heo.” (Lu-ca 15:15)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người con hoang đàng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đói khổ, người con ước được ăn gì?",
+  "options": [
+   "Cá nướng",
+   "Trái nho chín",
+   "Vỏ đậu của heo",
+   "Bánh mì nóng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người con đói đến mức thèm cả thức ăn của heo. “Nó ước ao lấy vỏ đậu của heo ăn mà ăn cho no nhưng chẳng ai cho.” (Lu-ca 15:16)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người con hoang đàng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi tỉnh ngộ, người con quyết định làm gì?",
+  "options": [
+   "Xin việc khác",
+   "Trở về cùng cha",
+   "Ở lại chăn heo",
+   "Đi xa hơn nữa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người con nhận ra mình đã phạm tội và muốn trở về. “Ta sẽ đứng dậy trở về cùng cha” (Lu-ca 15:18)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người con hoang đàng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thấy con từ đàng xa, người cha làm gì?",
+  "options": [
+   "Chạy ra ôm cổ và hôn",
+   "Đóng cửa không tiếp",
+   "Đuổi con đi",
+   "Mắng con thậm tệ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người cha vẫn luôn chờ con trở về. “người cha thấy nó thì động lòng thương xót, chạy ra ôm lấy cổ nó mà hôn.” (Lu-ca 15:20)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người con hoang đàng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người cha bảo đầy tớ mang gì cho con?",
+  "options": [
+   "Rơm và cỏ khô",
+   "Vải thô và tro",
+   "Roi và xiềng xích",
+   "Áo tốt nhất, nhẫn và giày"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Người cha phục hồi địa vị làm con cho người con. “Hãy mau lấy áo tốt nhất mặc cho nó, đeo nhẫn vào tay, mang giày vào chân.” (Lu-ca 15:22)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người con hoang đàng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người cha bảo làm thịt con vật gì để ăn mừng?",
+  "options": [
+   "Con cá lớn",
+   "Con gà trống",
+   "Con bê mập",
+   "Con chim bồ câu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cả nhà mở tiệc mừng người con trở về. “Hãy bắt con bê mập làm thịt. Chúng ta hãy ăn mừng!” (Lu-ca 15:23)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người con hoang đàng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người cha nói gì về đứa con trở về?",
+  "options": [
+   "Đã mất mà nay tìm lại được",
+   "Đã xa mà nay vẫn xa",
+   "Đã lớn mà nay còn nhỏ",
+   "Đã giàu mà nay nghèo"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đức Chúa Trời vui mừng khi tội nhân trở về như người cha này. “Vì con ta đây đã chết mà bây giờ lại sống, đã mất mà bây giờ tìm lại được.” (Lu-ca 15:24)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người con hoang đàng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nghe tiếng ăn mừng, người con cả phản ứng thế nào?",
+  "options": [
+   "Hát cùng mọi người",
+   "Vui mừng chạy vào",
+   "Ôm lấy em mình",
+   "Nổi giận, không chịu vào nhà"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Người anh không vui khi em mình được tha thứ. “Người con cả liền nổi giận và không chịu vào nhà.” (Lu-ca 15:28)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người con hoang đàng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Jêsus ngồi đâu để giảng ẩn dụ người gieo giống?",
+  "options": [
+   "Trong đền thờ",
+   "Trên thuyền",
+   "Trong nhà hội",
+   "Dưới cây vả"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dân chúng quá đông nên Chúa xuống thuyền, dân đứng trên bờ. “đến nỗi Ngài phải xuống thuyền mà ngồi, còn tất cả dân chúng thì đứng trên bờ.” (Ma-thi-ơ 13:2)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người gieo giống",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hạt giống rơi dọc đường thì sao?",
+  "options": [
+   "Chim đến ăn hết",
+   "Mọc thành cây lớn",
+   "Biến thành vàng",
+   "Được người nhặt về"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Hạt trên đường không kịp vào đất. “một số hạt rơi dọc đường, chim đến ăn hết.” (Ma-thi-ơ 13:4)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người gieo giống",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hạt rơi trên đất đá chết khô vì sao?",
+  "options": [
+   "Vì bị người giẫm",
+   "Vì bị ngập nước",
+   "Vì không có rễ",
+   "Vì trời quá lạnh"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đất mỏng nên cây không bén rễ sâu. “bị nắng thiêu đốt thì chúng chết khô vì không có rễ.” (Ma-thi-ơ 13:6)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người gieo giống",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hạt rơi giữa bụi gai thì sao?",
+  "options": [
+   "Mọc lên rất tốt",
+   "Bị gai làm nghẹt ngòi",
+   "Bị ngập nước",
+   "Bị gió thổi bay"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Gai mọc lên lấn át cây non. “Một số khác rơi giữa bụi gai, gai mọc lên làm cho chúng nghẹt ngòi.” (Ma-thi-ơ 13:7)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người gieo giống",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hạt rơi trên đất tốt thì thế nào?",
+  "options": [
+   "Biến thành đá",
+   "Mọc thành cỏ dại",
+   "Bị người lấy trộm",
+   "Kết quả gấp nhiều lần"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đất tốt cho mùa gặt dồi dào. “Một số khác nữa rơi trên chỗ đất tốt nên kết quả: hạt được một trăm, hạt được sáu chục, hạt ba chục.” (Ma-thi-ơ 13:8)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người gieo giống",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus kết thúc ẩn dụ bằng lời nào?",
+  "options": [
+   "Hãy mua đất tốt!",
+   "Hãy đi gieo giống!",
+   "Ai có tai, hãy lắng nghe!",
+   "Hãy về nhà ngay!"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus mời mọi người suy nghĩ về ẩn dụ. “Ai có tai, hãy lắng nghe!” (Ma-thi-ơ 13:9)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người gieo giống",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hạt giống trong ẩn dụ tượng trưng cho gì?",
+  "options": [
+   "Lúa gạo",
+   "Đạo của vương quốc thiên đàng",
+   "Con cái",
+   "Tiền bạc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa Jêsus giải thích hạt giống là lời của Đức Chúa Trời. “Ai nghe đạo của vương quốc thiên đàng mà không hiểu thì quỷ dữ đến cướp đi điều đã gieo trong lòng mình” (Ma-thi-ơ 13:19)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người gieo giống",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Điều gì làm đạo bị nghẹt ngòi như hạt giữa bụi gai?",
+  "options": [
+   "Đi nhóm đều đặn",
+   "Cầu nguyện mỗi ngày",
+   "Đọc Kinh Thánh nhiều",
+   "Lo lắng đời này và giàu sang"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lo toan và của cải có thể lấn át lời Chúa. “nhưng sự lo lắng về đời nầy, sự quyến rũ của giàu sang làm cho đạo bị nghẹt ngòi nên không kết quả.” (Ma-thi-ơ 13:22)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người gieo giống",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đất tốt chỉ về người thế nào?",
+  "options": [
+   "Người nghe, hiểu đạo và có kết quả",
+   "Người trồng trọt giỏi",
+   "Người có ruộng lớn",
+   "Người giàu có"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người tiếp nhận lời Chúa sẽ sinh ra kết quả. “Còn hạt giống gieo trên đất tốt là người nghe, hiểu đạo và có kết quả” (Ma-thi-ơ 13:23)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người gieo giống",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus ví vương quốc thiên đàng như hạt gì?",
+  "options": [
+   "Hạt cải",
+   "Hạt lúa mì",
+   "Hạt nho",
+   "Hạt ô-liu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Một hạt rất nhỏ được gieo ngoài đồng. “Vương quốc thiên đàng giống như một hạt cải người kia đem gieo ngoài đồng.” (Ma-thi-ơ 13:31)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Hạt cải",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "So với các hạt giống khác, hạt cải thế nào?",
+  "options": [
+   "Nặng nhất",
+   "Lớn nhất",
+   "Nhỏ nhất",
+   "Cứng nhất"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hạt cải nhỏ bé nhưng có sức sống lớn. “Hạt ấy nhỏ nhất trong tất cả các hạt giống” (Ma-thi-ơ 13:32)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Hạt cải",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi mọc lên, cây cải trở nên thế nào?",
+  "options": [
+   "Nhỏ bé và yếu ớt",
+   "Lớn nhất trong các loại rau",
+   "Khô héo ngay",
+   "Không ra lá"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Từ hạt nhỏ nhất mọc thành cây lớn. “nhưng khi mọc lên thì lại lớn nhất trong các loại rau” (Ma-thi-ơ 13:32)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Hạt cải",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ai đến làm tổ trên cành cây cải?",
+  "options": [
+   "Đàn kiến",
+   "Con sóc",
+   "Bầy ong",
+   "Chim trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cây lớn đến nỗi chim trời trú ngụ được. “và trở thành cây đến nỗi chim trời đến làm tổ trên cành nó.” (Ma-thi-ơ 13:32)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Hạt cải",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ẩn dụ hạt cải dạy điều gì về vương quốc thiên đàng?",
+  "options": [
+   "Không bao giờ thay đổi",
+   "Sẽ sớm biến mất",
+   "Chỉ dành cho người giàu",
+   "Bắt đầu nhỏ nhưng lớn lên rất nhiều"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vương quốc Đức Chúa Trời khởi đầu khiêm tốn nhưng lan rộng khắp nơi. “Hạt ấy nhỏ nhất trong tất cả các hạt giống, nhưng khi mọc lên thì lại lớn nhất trong các loại rau” (Ma-thi-ơ 13:32)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Hạt cải",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Mười trinh nữ cầm đèn đi đón ai?",
+  "options": [
+   "Nhà vua",
+   "Thầy tế lễ",
+   "Chàng rể",
+   "Cô dâu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Các trinh nữ chờ chàng rể để vào tiệc cưới. “vương quốc thiên đàng sẽ ví như mười trinh nữ cầm đèn đi đón chàng rể.” (Ma-thi-ơ 25:1)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Mười trinh nữ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong mười trinh nữ, có bao nhiêu cô khôn?",
+  "options": [
+   "Một cô",
+   "Năm cô",
+   "Mười cô",
+   "Ba cô"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Có năm cô dại và năm cô khôn. “Trong số đó, có năm cô dại và năm cô khôn.” (Ma-thi-ơ 25:2)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Mười trinh nữ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Các cô dại thiếu thứ gì?",
+  "options": [
+   "Dầu cho đèn",
+   "Áo cưới",
+   "Giày dép",
+   "Quà tặng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Các cô dại không chuẩn bị đủ dầu. “Những cô dại đem đèn nhưng không đem dầu theo” (Ma-thi-ơ 25:3)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Mười trinh nữ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vì chàng rể đến trễ, các cô làm gì?",
+  "options": [
+   "Bỏ về nhà",
+   "Ca hát suốt đêm",
+   "Buồn ngủ và ngủ thiếp đi",
+   "Đi chợ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tất cả đều ngủ trong lúc chờ đợi. “Vì chàng rể đến trễ nên tất cả các cô đều buồn ngủ và ngủ thiếp đi.” (Ma-thi-ơ 25:5)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Mười trinh nữ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chàng rể đến vào lúc nào?",
+  "options": [
+   "Giữa trưa",
+   "Nửa đêm",
+   "Chiều tối",
+   "Sáng sớm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chàng rể đến vào lúc không ai ngờ. “Nhưng đến nửa đêm, có tiếng gọi” (Ma-thi-ơ 25:6)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Mười trinh nữ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Các cô dại xin các cô khôn điều gì?",
+  "options": [
+   "Cho mượn áo",
+   "Chỉ đường đi",
+   "Cho đi cùng xe",
+   "Sớt cho ít dầu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đèn của các cô dại sắp tắt. “Xin các chị sớt cho chúng tôi ít dầu vì đèn chúng tôi sắp tắt.” (Ma-thi-ơ 25:8)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Mười trinh nữ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong lúc các cô dại đi mua dầu, điều gì xảy ra?",
+  "options": [
+   "Chàng rể đến và cửa đóng lại",
+   "Chàng rể chờ họ về",
+   "Trời đổ mưa",
+   "Tiệc bị hủy"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ai sẵn sàng thì được vào tiệc cưới. “Nhưng trong lúc họ đi mua, thì chàng rể đến. Những người đã sẵn sàng thì đi với chàng rể vào tiệc cưới, và cửa đóng lại.” (Ma-thi-ơ 25:10)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Mười trinh nữ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ẩn dụ mười trinh nữ dạy chúng ta điều gì?",
+  "options": [
+   "Hãy đến tiệc thật sớm",
+   "Hãy mua thật nhiều dầu",
+   "Hãy tỉnh thức, luôn sẵn sàng",
+   "Hãy ngủ nhiều hơn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Không ai biết ngày giờ Chúa trở lại. “Vậy, hãy tỉnh thức, vì các con không biết ngày, cũng không biết giờ.” (Ma-thi-ơ 25:13)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Mười trinh nữ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trước khi đi xa, ông chủ giao gì cho các đầy tớ?",
+  "options": [
+   "Bầy chiên",
+   "Chìa khóa nhà",
+   "Ruộng nho",
+   "Tài sản của mình"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông chủ tin tưởng giao tài sản cho các đầy tớ quản lý. “gọi các đầy tớ lại và giao tài sản mình cho họ.” (Ma-thi-ơ 25:14)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Các ta-lâng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ông chủ giao ta-lâng cho mỗi người dựa vào đâu?",
+  "options": [
+   "Khả năng của từng người",
+   "Sức khỏe từng người",
+   "Bốc thăm ngẫu nhiên",
+   "Tuổi của từng người"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Mỗi người được giao phần vừa sức mình. “tùy theo khả năng của từng người.” (Ma-thi-ơ 25:15)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Các ta-lâng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người nhận năm ta-lâng đã làm gì?",
+  "options": [
+   "Đánh mất hết",
+   "Làm lợi thêm năm ta-lâng",
+   "Cho người khác mượn hết",
+   "Đem đi ăn chơi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người đầy tớ siêng năng dùng tài sản chủ giao. “Người đã nhận năm ta-lâng liền đi làm lợi ra, và được thêm năm ta-lâng nữa.” (Ma-thi-ơ 25:16)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Các ta-lâng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người nhận một ta-lâng đã làm gì?",
+  "options": [
+   "Đào đất giấu bạc của chủ",
+   "Mua một con lừa",
+   "Chia cho người nghèo",
+   "Đem đi ăn chơi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người này không dùng điều chủ giao cho mình. “Nhưng, người đã nhận một ta-lâng thì đi đào đất và giấu bạc của chủ.” (Ma-thi-ơ 25:18)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Các ta-lâng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chủ khen hai đầy tớ làm lợi là đầy tớ thế nào?",
+  "options": [
+   "Mạnh khỏe và nhanh nhẹn",
+   "Vui tính và dễ thương",
+   "Giàu có và khôn lanh",
+   "Ngay lành và trung tín"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chủ quý sự trung tín của đầy tớ. “Hỡi đầy tớ ngay lành và trung tín kia, được lắm!” (Ma-thi-ơ 25:21)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Các ta-lâng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vì trung tín trong việc nhỏ, đầy tớ được chủ hứa gì?",
+  "options": [
+   "Được tự do ra đi",
+   "Được cai quản nhiều",
+   "Được nghỉ làm",
+   "Được về quê"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người trung tín được giao trách nhiệm lớn hơn. “Ngươi đã trung tín trong việc nhỏ, ta sẽ đặt ngươi cai quản nhiều.” (Ma-thi-ơ 25:21)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Các ta-lâng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vì sao người nhận một ta-lâng đem giấu bạc?",
+  "options": [
+   "Vì quên mất",
+   "Vì bị mất trộm",
+   "Vì sợ chủ",
+   "Vì muốn để dành"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nỗi sợ khiến người đầy tớ không làm gì cả. “nên tôi sợ và đi giấu ta-lâng của chủ ở dưới đất.” (Ma-thi-ơ 25:25)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Các ta-lâng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chủ gọi đầy tớ giấu ta-lâng là đầy tớ thế nào?",
+  "options": [
+   "Thật thà và chăm chỉ",
+   "Gian ác và lười biếng",
+   "Can đảm và giỏi giang",
+   "Khôn ngoan và cẩn thận"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Không dùng điều Chúa giao là lười biếng. “Hỡi đầy tớ gian ác và lười biếng kia!” (Ma-thi-ơ 25:26)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Các ta-lâng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ta-lâng của đầy tớ lười biếng được giao cho ai?",
+  "options": [
+   "Một người nghèo",
+   "Một người lạ",
+   "Ông chủ giữ lại",
+   "Người có mười ta-lâng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ai trung tín sẽ được giao thêm. “Vậy, hãy lấy ta-lâng khỏi tên nầy và cho người có mười ta-lâng.” (Ma-thi-ơ 25:28)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Các ta-lâng",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Gần đến Giê-ru-sa-lem, Chúa Jêsus ở bên núi nào?",
+  "options": [
+   "Núi Ô-liu",
+   "Núi Cạt-mên",
+   "Núi Si-na-i",
+   "Núi A-ra-rát"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Từ núi Ô-liu, Chúa Jêsus chuẩn bị vào thành. “lúc vào làng Bết-pha-giê, bên núi Ô-liu” (Ma-thi-ơ 21:1)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa vào thành Giê-ru-sa-lem",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus sai hai môn đồ đi dắt con vật gì về?",
+  "options": [
+   "Một con bò",
+   "Một con lạc đà",
+   "Một lừa cái và lừa con",
+   "Một con ngựa trắng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus sẽ cưỡi lừa vào thành. “các con sẽ gặp ngay một con lừa cái bị buộc, bên cạnh có một lừa con.” (Ma-thi-ơ 21:2)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa vào thành Giê-ru-sa-lem",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nếu có ai hỏi, các môn đồ phải trả lời thế nào?",
+  "options": [
+   "Chúng tôi mượn một ngày",
+   "Chúa cần đến chúng",
+   "Vua ra lệnh",
+   "Chúng tôi mua rồi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chủ lừa sẵn lòng cho mượn khi nghe Chúa cần. “Chúa cần đến chúng” (Ma-thi-ơ 21:3)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa vào thành Giê-ru-sa-lem",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Lời tiên tri nói vị vua đến thế nào?",
+  "options": [
+   "Kiêu hãnh, cưỡi ngựa",
+   "Giận dữ, cầm gươm",
+   "Giàu sang, ngồi kiệu",
+   "Nhu mì, cưỡi lừa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vua đến với dân cách hiền lành, khiêm nhường. “Kìa, vua ngươi đến với ngươi, Nhu mì, cưỡi lừa” (Ma-thi-ơ 21:5)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa vào thành Giê-ru-sa-lem",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus vào thành Giê-ru-sa-lem bằng cách nào?",
+  "options": [
+   "Cưỡi ngựa chiến",
+   "Đi thuyền",
+   "Cưỡi lừa",
+   "Ngồi xe vàng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Các môn đồ trải áo trên lưng lừa cho Ngài cưỡi. “Họ dắt lừa cái và lừa con về, trải áo mình trên lưng chúng, rồi Ngài cưỡi lên.” (Ma-thi-ơ 21:7)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa vào thành Giê-ru-sa-lem",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Dân chúng trải gì trên đường đón Chúa?",
+  "options": [
+   "Áo và cành cây",
+   "Lúa mì",
+   "Thảm vàng",
+   "Hoa hồng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dân chúng đón Chúa như đón một vị vua. “Rất nhiều người trong dân chúng trải áo mình trên đường, một số khác chặt cành cây và rải trên đường.” (Ma-thi-ơ 21:8)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa vào thành Giê-ru-sa-lem",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đoàn người hô vang lời gì?",
+  "options": [
+   "Bình an cho Hê-rốt!",
+   "Hãy về Ga-li-lê!",
+   "Hô-sa-na Con của Đa-vít!",
+   "Vua Sê-sa muôn năm!"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Dân chúng tung hô Chúa Jêsus là Con của Đa-vít. “Hô-sa-na Con của Đa-vít! Chúc tụng Đấng nhân danh Chúa mà đến!” (Ma-thi-ơ 21:9)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa vào thành Giê-ru-sa-lem",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa vào Giê-ru-sa-lem, cả thành thế nào?",
+  "options": [
+   "Xôn xao hỏi Ngài là ai",
+   "Im lặng như tờ",
+   "Bỏ chạy hết",
+   "Đóng cửa ngủ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Việc Chúa vào thành làm cả thành chú ý. “Khi Ngài vào Giê-ru-sa-lem, cả thành đều xôn xao” (Ma-thi-ơ 21:10)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa vào thành Giê-ru-sa-lem",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đoàn người giới thiệu Chúa Jêsus là ai?",
+  "options": [
+   "Một người lính",
+   "Đấng tiên tri Jêsus ở Na-xa-rét",
+   "Vua của La Mã",
+   "Thầy tế lễ thượng phẩm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dân chúng biết Chúa Jêsus đến từ Ga-li-lê. “Ấy là Đấng tiên tri Jêsus ở Na-xa-rét, thuộc miền Ga-li-lê.” (Ma-thi-ơ 21:11)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa vào thành Giê-ru-sa-lem",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong bữa ăn tối, ai bị ma quỷ gieo ý định phản Chúa?",
+  "options": [
+   "Gia-cơ",
+   "Giăng",
+   "Anh-rê",
+   "Giu-đa Ích-ca-ri-ốt"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa Jêsus biết trước ai sẽ phản Ngài. “ma quỷ gieo ý định phản Ngài vào lòng Giu-đa Ích-ca-ri-ốt, con của Si-môn.” (Giăng 13:2)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa rửa chân cho môn đồ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus đứng dậy khỏi bàn và lấy gì quấn ngang lưng?",
+  "options": [
+   "Một cái khăn",
+   "Một dải lụa vàng",
+   "Một tấm áo choàng",
+   "Một sợi dây"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa Jêsus làm công việc của một đầy tớ. “nên đứng dậy khỏi bàn ăn, cởi áo ngoài ra, lấy khăn quấn ngang lưng” (Giăng 13:4)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa rửa chân cho môn đồ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Jêsus đã làm gì cho các môn đồ?",
+  "options": [
+   "Gội đầu cho họ",
+   "Rửa chân cho họ",
+   "Nấu ăn cho họ",
+   "May áo cho họ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa Jêsus hạ mình phục vụ các môn đồ. “rồi Ngài đổ nước vào chậu, và bắt đầu rửa chân cho các môn đồ.” (Giăng 13:5)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa rửa chân cho môn đồ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Môn đồ nào không muốn để Chúa rửa chân cho mình?",
+  "options": [
+   "Giu-đa",
+   "Giăng",
+   "Thô-ma",
+   "Phi-e-rơ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phi-e-rơ thấy Thầy không nên làm việc hèn mọn ấy. “Con sẽ không bao giờ để Chúa rửa chân cho con đâu!” (Giăng 13:8)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa rửa chân cho môn đồ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nói gì khi Phi-e-rơ từ chối?",
+  "options": [
+   "Con không cần rửa",
+   "Vậy con tự rửa đi",
+   "Không rửa thì con không có phần nơi Ta",
+   "Ta sẽ rửa người khác"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus dạy về việc được Ngài làm cho sạch. “Nếu Ta không rửa chân cho con thì con không có phần gì nơi Ta cả.” (Giăng 13:8)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa rửa chân cho môn đồ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nghe vậy, Phi-e-rơ xin Chúa rửa gì nữa?",
+  "options": [
+   "Cả tay và đầu",
+   "Chỉ một chân",
+   "Chỉ rửa áo",
+   "Không rửa gì cả"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Phi-e-rơ muốn được thuộc trọn về Chúa. “Thưa Chúa, không phải chỉ rửa chân thôi, mà luôn cả tay và đầu con nữa!” (Giăng 13:9)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa rửa chân cho môn đồ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus dạy các môn đồ phải làm gì cho nhau?",
+  "options": [
+   "Tranh giành chỗ ngồi",
+   "Rửa chân cho nhau",
+   "Ra lệnh cho nhau",
+   "Tránh xa nhau"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Môn đồ của Chúa phải khiêm nhường phục vụ nhau. “thì các con cũng phải rửa chân cho nhau.” (Giăng 13:14)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa rửa chân cho môn đồ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vì sao Chúa Jêsus rửa chân cho môn đồ?",
+  "options": [
+   "Vì đó là luật lệ",
+   "Vì không có đầy tớ",
+   "Vì chân họ quá bẩn",
+   "Để làm gương cho các môn đồ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa Jêsus muốn môn đồ làm theo gương Ngài. “Vì Ta đã làm gương cho các con, để các con cũng làm như Ta đã làm cho các con.” (Giăng 13:15)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa rửa chân cho môn đồ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Biết những điều này và làm theo thì được gì?",
+  "options": [
+   "Được làm thầy",
+   "Được giàu",
+   "Được phước",
+   "Được nổi tiếng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phước đến khi làm theo điều mình biết. “Nếu các con biết những điều nầy và làm theo thì được phước.” (Giăng 13:17)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa rửa chân cho môn đồ",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Bữa ăn cuối cùng của Chúa với môn đồ là bữa lễ gì?",
+  "options": [
+   "Lễ Cưới",
+   "Lễ Giáng Sinh",
+   "Lễ Tạ Ơn",
+   "Lễ Vượt Qua"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa Jêsus ăn lễ Vượt Qua với môn đồ trước khi chịu khổ. “Ta rất muốn ăn lễ Vượt Qua nầy với các con trước khi Ta chịu đau đớn.” (Lu-ca 22:15)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Tiệc Thánh đầu tiên",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa muốn ăn lễ này với môn đồ trước khi điều gì xảy ra?",
+  "options": [
+   "Trước khi Ngài đi xa",
+   "Trước khi lên núi",
+   "Trước khi Ngài chịu đau đớn",
+   "Trước khi trời tối"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đây là bữa ăn cuối cùng trước thập tự giá. “Ta rất muốn ăn lễ Vượt Qua nầy với các con trước khi Ta chịu đau đớn.” (Lu-ca 22:15)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Tiệc Thánh đầu tiên",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi cầm chén, Chúa bảo các môn đồ làm gì?",
+  "options": [
+   "Đem bán đi",
+   "Phân phát cho nhau",
+   "Cất vào tủ",
+   "Đổ xuống đất"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Các môn đồ cùng chia sẻ chén Chúa trao. “Hãy lấy và phân phát cho nhau.” (Lu-ca 22:17)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Tiệc Thánh đầu tiên",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi lấy bánh, Chúa Jêsus làm gì trước khi phân phát?",
+  "options": [
+   "Tạ ơn rồi bẻ ra",
+   "Cất đi để dành",
+   "Nướng lại cho nóng",
+   "Chia làm hai nửa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa Jêsus tạ ơn Cha trước khi trao bánh. “Rồi Ngài lấy bánh, tạ ơn, bẻ ra, phân phát cho các môn đồ” (Lu-ca 22:19)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Tiệc Thánh đầu tiên",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nói bánh là gì?",
+  "options": [
+   "Thân thể Ngài",
+   "Bánh lễ năm xưa",
+   "Bánh của vua",
+   "Ma-na từ trời"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bánh tượng trưng cho thân thể Chúa phó cho chúng ta. “Nầy là thân thể Ta vì các con mà phó cho.” (Lu-ca 22:19)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Tiệc Thánh đầu tiên",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus dặn các môn đồ làm điều này để làm gì?",
+  "options": [
+   "Để có sức khỏe",
+   "Để nhớ đến Ngài",
+   "Để mừng năm mới",
+   "Để no bụng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tiệc Thánh giúp hội thánh luôn nhớ đến Chúa. “Hãy làm điều nầy để nhớ đến Ta.” (Lu-ca 22:19)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Tiệc Thánh đầu tiên",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nói chén là gì?",
+  "options": [
+   "Rượu mừng tiệc cưới",
+   "Nước từ giếng Gia-cốp",
+   "Chén của vua Đa-vít",
+   "Giao ước mới trong huyết Ngài"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Huyết Chúa đổ ra lập giao ước mới. “Chén nầy là giao ước mới trong huyết Ta vì các con mà đổ ra.” (Lu-ca 22:20)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Tiệc Thánh đầu tiên",
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]
