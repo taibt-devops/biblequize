@@ -5,6 +5,8 @@ import confetti from 'canvas-confetti'
 import { soundManager } from '../services/soundManager'
 import { haptic } from '../utils/haptics'
 import MobileBottomTabs from '../layouts/components/MobileBottomTabs'
+import { Medal, PlaceBackdrop, ScrollPanel, TrackBar, lkClass } from '../components/lk/Place'
+import { useBookName } from '../hooks/useBookName'
 
 interface Question {
   id: string
@@ -61,6 +63,7 @@ function pickTone(accuracy: number): { tone: Tone; emoji: string; state: 'high' 
 const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToHome, isRanked = false }) => {
   const navigate = useNavigate()
   const { t } = useTranslation()
+  const getBookName = useBookName()
   const [scoreDisplay, setScoreDisplay] = useState(0)
 
   // Sounds, haptics & confetti on mount (must be before any early-return to satisfy hooks rules)
@@ -159,7 +162,7 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
       }
     })
     const bookList = Object.entries(bookMap).map(([book, v]) => ({
-      book,
+      book: getBookName(book),
       correct: v.correct,
       total: v.total,
       acc: v.total ? v.correct / v.total : 0
@@ -194,241 +197,213 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
       tone: t.tone,
       emoji: t.emoji
     }
-  }, [stats])
+  }, [stats, getBookName])
 
   if (!stats) {
     return (
-      <div className="min-h-screen bg-bq-paper flex items-center justify-center p-4">
-        <div className="bg-bq-white p-8 rounded-2xl text-center max-w-md w-full border border-bq-hair shadow-bq-soft">
-          <span className="material-symbols-outlined text-bq-ruby text-5xl mb-4 block">error</span>
-          <h2 className="text-2xl font-display font-black text-bq-ink mb-2">{t('results.noData')}</h2>
-          <p className="text-bq-ink2 text-sm mb-6">{t('results.errorLoading')}</p>
-          <button onClick={onBackToHome} className="bg-bq-action text-bq-ink shadow-bq-action hover:brightness-105 font-black px-8 py-3 rounded-xl transition">
-            {t('errors.goHome')}
-          </button>
+      <div className="relative min-h-screen flex items-center justify-center p-4">
+        <PlaceBackdrop place="meadow" veil="mid" />
+        <div className="bg-bq-white p-8 rounded-bq text-center max-w-md w-full border-[3px] border-bq-ink shadow-bq-card">
+          <img src="/images/lk/hero-rest.webp" alt="" aria-hidden className="h-28 mx-auto mb-3" />
+          <h2 className="text-2xl font-display font-extrabold text-bq-ink mb-2">{t('results.noData')}</h2>
+          <p className="font-read text-bq-ink2 text-sm mb-6">{t('results.errorLoading')}</p>
+          <button onClick={onBackToHome} className="lk-btn text-bq-ink">{t('errors.goHome')}</button>
         </div>
       </div>
     )
   }
 
-  // Hero variant tokens — high = emerald (success), low = sapphire (info).
-  // Hero is a white card + spectrum strip + amber shadow; accent only tints
-  // the radial glow, the tone message and the accuracy figure.
-  // Storybook (LK) stars, like the game's level result (LKD-14): 3 ≥ 90%, 2 ≥ 70%, 1 ≥ 40%.
+  // Storybook stars, like the game's level result (LKD-14): 3 >= 90 %, 2 >= 70 %, 1 >= 40 %.
   const stars = accuracy >= 90 ? 3 : accuracy >= 70 ? 2 : accuracy >= 40 ? 1 : 0
-  const heroMessageClass = isHigh ? 'text-bq-emerald' : 'text-bq-sapphire'
-  const accuracyColor = isHigh ? 'text-bq-emerald' : 'text-bq-sapphire'
-
-  // Insight card (only show if we have a clear book context)
-  const showInsight = books.length === 1
-  const insightTone = isHigh
-    ? { bg: 'bg-bq-inset', border: 'border-bq-hair', iconBg: 'bg-bq-emerald/10', iconBorder: 'border-bq-emerald/25', iconColor: 'text-bq-emerald' }
-    : { bg: 'bg-bq-inset', border: 'border-bq-hair', iconBg: 'bg-bq-sapphire/10', iconBorder: 'border-bq-sapphire/25', iconColor: 'text-bq-sapphire' }
+  const toneColor = isHigh ? 'text-bq-emerald' : 'text-bq-sapphire'
 
   // Multi-book breakdown
   const sorted = [...books].sort((a, b) => b.acc - a.acc)
   const strongest = sorted[0]
   const weakest = sorted.length > 1 ? sorted[sorted.length - 1] : null
+  const showInsight = books.length === 1
 
   const diffMeta = {
-    easy: { label: t('results.difficulty.easy'), labelShort: t('results.difficulty.easy'), labelColor: 'text-bq-emerald', barClass: 'bg-bq-emerald' },
-    medium: { label: t('results.difficulty.medium'), labelShort: t('results.difficulty.mediumShort'), labelColor: 'text-bq-sapphire', barClass: 'bg-bq-sapphire' },
-    hard: { label: t('results.difficulty.hard'), labelShort: t('results.difficulty.hard'), labelColor: 'text-bq-ruby', barClass: 'bg-bq-ruby' }
+    easy: { label: t('results.difficulty.easy'), labelShort: t('results.difficulty.easy'), fill: 'bg-bq-emerald' },
+    medium: { label: t('results.difficulty.medium'), labelShort: t('results.difficulty.mediumShort'), fill: 'bg-bq-sapphire' },
+    hard: { label: t('results.difficulty.hard'), labelShort: t('results.difficulty.hard'), fill: 'bg-bq-ruby' }
   } as const
 
-  return (
-    <div data-testid="quiz-results-page" className="min-h-screen bg-bq-paper p-4 py-8 md:py-12 pb-28 md:pb-12">
-      <main className="max-w-2xl mx-auto w-full flex flex-col">
+  const medalValue = 'font-display font-extrabold leading-none tabular-nums text-[19px] md:text-[23px]'
+  const medalLabel = 'mt-3 text-[13px] md:text-[14px] font-extrabold text-bq-ink2'
 
-        {/* HERO BLOCK — Storybook (LK) sticker card: the traveller + stars */}
-        <section
-          className="relative overflow-hidden rounded-bq border-[3px] border-bq-ink bg-bq-white shadow-bq-card px-6 py-7 md:px-8 md:py-8 mb-4 text-center"
-          data-testid="quiz-results-hero"
-        >
-          <div className="relative z-10">
+  // "Stage complete" screen (LKF-5): the meadow of the quiz, the traveller, three stars popping,
+  // the result written on a parchment scroll, stats as wooden-bezel medals.
+  return (
+    <div data-testid="quiz-results-page" className="relative min-h-screen px-4 pt-6 md:pt-10 pb-28 md:pb-12">
+      <PlaceBackdrop place="meadow" veil="soft" />
+      <main className="relative max-w-[640px] mx-auto w-full flex flex-col">
+
+        <section data-testid="quiz-results-hero" className="relative text-center">
+          {/* stars */}
+          <div
+            data-testid="quiz-results-stars"
+            aria-label={t('results.starsLabel', { count: stars, defaultValue: '{{count}}/3 sao' })}
+            className="relative z-10 flex justify-center items-end gap-1 md:gap-2 mb-1 text-[52px] md:text-[64px] leading-none font-extrabold [-webkit-text-stroke:3px_#1D2B22] [text-shadow:0_5px_0_#1D2B22]"
+          >
+            {[0, 1, 2].map(i => (
+              <span
+                key={i}
+                aria-hidden
+                className={`${lkClass.star} ${i < stars ? 'text-bq-amber' : 'text-bq-track'} ${i === 1 ? 'text-[64px] md:text-[80px] -translate-y-2' : ''}`}
+                style={{ animationDelay: `${0.25 + i * 0.22}s` }}
+              >
+                ★
+              </span>
+            ))}
+          </div>
+
+          <ScrollPanel bodyClassName="relative px-5 md:px-10 pt-5 pb-6 md:pb-7">
             <img
               src={isHigh ? '/images/lk/hero-cheer.webp' : '/images/lk/hero.webp'}
               alt=""
               aria-hidden
-              className="h-28 md:h-32 w-auto mx-auto mb-1"
+              className={`absolute ${isHigh ? 'h-[120px] md:h-[190px]' : 'h-[110px] md:h-[170px]'} -left-2 md:-left-[150px] -top-[96px] md:top-auto md:bottom-0 ${lkClass.bob}`}
             />
-            <div
-              data-testid="quiz-results-stars"
-              aria-label={t('results.starsLabel', { count: stars, defaultValue: '{{count}}/3 sao' })}
-              className="text-4xl md:text-5xl font-extrabold tracking-[0.12em] text-bq-amber [-webkit-text-stroke:2px_#1D2B22] mb-1"
-            >
-              <span>{'★'.repeat(stars)}</span>
-              <span className="text-bq-track">{'★'.repeat(3 - stars)}</span>
-            </div>
-            <h1
-              data-testid="quiz-results-grade"
-              className={`font-display text-2xl md:text-[28px] font-extrabold leading-tight mb-1.5 ${heroMessageClass}`}
-            >
+            <h1 data-testid="quiz-results-grade" className={`font-display text-[30px] md:text-[38px] font-extrabold leading-tight ${toneColor}`}>
               {t(`results.tones.${tone}`)}
             </h1>
-            <p className="text-xs md:text-sm text-bq-ink2 max-w-md mx-auto mb-5 leading-relaxed">
+            <p className="font-read text-[14px] md:text-[15px] text-bq-ink2 max-w-md mx-auto mt-1 mb-6 leading-relaxed">
               {t(`results.tonesSub.${tone}`, { book: primaryBook || '' })}
             </p>
 
-            {/* 3 stat row */}
-            <div className="grid grid-cols-3 gap-2 max-w-md mx-auto">
-              <div className="bg-bq-inset border-2 border-bq-ink rounded-2xl py-3 px-2">
-                <div data-testid="quiz-results-score" className="font-display text-lg md:text-xl font-extrabold leading-none mb-1 tabular-nums text-bq-ink">
-                  {stats.correctAnswers}
-                  <span className="text-bq-ink3 font-semibold text-[0.7em]">/{stats.totalQuestions}</span>
-                </div>
-                <div className="text-[10px] uppercase tracking-wider font-bold text-bq-ink2">
+            <div className="flex justify-center gap-6 md:gap-10">
+              <div className="flex flex-col items-center">
+                <Medal size={78}>
+                  <span data-testid="quiz-results-score" className={`${medalValue} text-bq-ink`}>
+                    {stats.correctAnswers}<span className="text-bq-ink3 text-[0.68em]">/{stats.totalQuestions}</span>
+                  </span>
+                </Medal>
+                <span className={medalLabel}>
                   <span className="md:hidden">{t('results.stats.correctShort')}</span>
                   <span className="hidden md:inline">{t('results.stats.correct')}</span>
-                </div>
+                </span>
               </div>
-              <div className="bg-bq-inset border-2 border-bq-ink rounded-2xl py-3 px-2">
-                <div data-testid="quiz-results-accuracy" className={`font-display text-lg md:text-xl font-extrabold leading-none mb-1 tabular-nums ${accuracyColor}`}>
-                  {accuracy}%
-                </div>
-                <div className="text-[10px] uppercase tracking-wider font-bold text-bq-ink2">{t('results.stats.accuracyShort')}</div>
+              <div className="flex flex-col items-center">
+                <Medal size={78}>
+                  <span data-testid="quiz-results-accuracy" className={`${medalValue} ${toneColor}`}>{accuracy}%</span>
+                </Medal>
+                <span className={medalLabel}>{t('results.stats.accuracyShort')}</span>
               </div>
-              <div className="bg-bq-inset border-2 border-bq-ink rounded-2xl py-3 px-2">
-                <div data-testid="quiz-results-total-score" className="font-display text-lg md:text-xl font-extrabold leading-none mb-1 tabular-nums text-bq-amberd">
-                  {scoreDisplay}
-                </div>
-                <div className="text-[10px] uppercase tracking-wider font-bold text-bq-ink2">
+              <div className="flex flex-col items-center">
+                <Medal size={78} className="!bg-bq-cream">
+                  <span data-testid="quiz-results-total-score" className={`${medalValue} text-bq-amberd`}>{scoreDisplay}</span>
+                </Medal>
+                <span className={medalLabel}>
                   <span className="md:hidden">{t('results.stats.scoreShort')}</span>
                   <span className="hidden md:inline">{t('results.stats.score')}</span>
+                </span>
+              </div>
+            </div>
+
+            {/* score receipt — only when there are real bonuses */}
+            {breakdown && (
+              <div data-testid="quiz-results-breakdown" className="mt-6 text-left max-w-sm mx-auto font-read text-[14px]">
+                <div className="flex justify-between py-1.5 border-b-2 border-dashed border-bq-hair">
+                  <span className="text-bq-ink2">{t('results.breakdown.base')}</span>
+                  <span className="font-bold tabular-nums">{breakdown.base}</span>
+                </div>
+                {breakdown.speed > 0 && (
+                  <div className="flex justify-between py-1.5 border-b-2 border-dashed border-bq-hair">
+                    <span className="text-bq-ink2">{t('results.breakdown.speedBonus')}</span>
+                    <span className="font-bold tabular-nums text-bq-emerald">+{breakdown.speed}</span>
+                  </div>
+                )}
+                {breakdown.combo > 0 && (
+                  <div className="flex justify-between py-1.5 border-b-2 border-dashed border-bq-hair">
+                    <span className="text-bq-ink2 inline-flex items-center gap-1.5">
+                      <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-5 -rotate-[30deg]" />
+                      {t('results.breakdown.combo', { multiplier: breakdown.multiplier })}
+                    </span>
+                    <span className="font-bold tabular-nums text-bq-emerald">+{breakdown.combo}</span>
+                  </div>
+                )}
+                <div className="flex justify-between items-baseline pt-2">
+                  <span className="font-display font-extrabold text-bq-ink text-[16px]">{t('results.breakdown.total')}</span>
+                  <span className="font-display text-[24px] font-extrabold text-bq-amberd tabular-nums">{scoreDisplay}</span>
                 </div>
               </div>
-            </div>
-          </div>
+            )}
+          </ScrollPanel>
         </section>
 
-        {/* SCORE BREAKDOWN — only when there are real bonuses */}
-        {breakdown && (
-          <section className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl px-5 py-4 md:px-6 md:py-5 mb-3.5" data-testid="quiz-results-breakdown">
-            <div className="flex items-center justify-between py-2 text-sm">
-              <span className="text-bq-ink2 inline-flex items-center gap-2">
-                <span className="material-symbols-outlined text-base text-bq-amberd">check_circle</span>
-                {t('results.breakdown.base')}
-              </span>
-              <span className="font-bold text-bq-ink tabular-nums">{breakdown.base}</span>
-            </div>
-            {breakdown.speed > 0 && (
-              <div className="flex items-center justify-between py-2 text-sm border-t border-bq-hair">
-                <span className="text-bq-ink2 inline-flex items-center gap-2">
-                  <span className="material-symbols-outlined text-base text-bq-amberd">timer</span>
-                  {t('results.breakdown.speedBonus')}
+        {/* insight + analysis on one parchment card */}
+        {(showInsight || (books.length === 1 && diffRows.length > 0) || (books.length > 1 && strongest)) && (
+          <section className="mt-5 bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card px-5 py-4 md:px-6 md:py-5">
+            {showInsight && (
+              <p data-testid="quiz-results-insight" className="flex items-center gap-3 text-[14px] text-bq-ink2 leading-relaxed">
+                <img src={isHigh ? '/images/lk/lantern-on.webp' : '/images/lk/scroll.webp'} alt="" aria-hidden className="h-9 shrink-0" />
+                <span>
+                  {primaryBook && <><strong className={`font-extrabold ${toneColor}`}>{primaryBook}</strong>{' · '}</>}
+                  {t('results.stats.correct')}: <strong className="text-bq-ink font-extrabold">{stats.correctAnswers}/{stats.totalQuestions}</strong>
+                  {isHigh && <> · <strong className="text-bq-emerald font-extrabold">+1 streak</strong></>}
                 </span>
-                <span className="font-bold text-bq-emerald tabular-nums">+{breakdown.speed}</span>
+              </p>
+            )}
+
+            {books.length === 1 && diffRows.length > 0 && (
+              <div className={showInsight ? 'mt-4 pt-4 border-t-2 border-dashed border-bq-hair' : ''}>
+                <h3 className="font-display text-[16px] font-extrabold text-bq-ink mb-2.5">{t('results.difficulty.title')}</h3>
+                <div className="space-y-2">
+                  {diffRows.map(row => {
+                    const meta = diffMeta[row.key]
+                    return (
+                      <div key={row.key} className="grid grid-cols-[58px_1fr_72px] md:grid-cols-[96px_1fr_80px] gap-3 items-center">
+                        <span className="text-[13px] font-extrabold text-bq-ink">
+                          <span className="md:hidden">{meta.labelShort}</span>
+                          <span className="hidden md:inline">{meta.label}</span>
+                        </span>
+                        <TrackBar pct={row.pct} fill={meta.fill} className="h-3" />
+                        <span className="text-[13px] font-extrabold text-right tabular-nums">
+                          {row.correct}/{row.total} <span className="text-bq-ink3 text-[11px]">{row.pct}%</span>
+                        </span>
+                      </div>
+                    )
+                  })}
+                </div>
               </div>
             )}
-            {breakdown.combo > 0 && (
-              <div className="flex items-center justify-between py-2 text-sm border-t border-bq-hair">
-                <span className="text-bq-ink2 inline-flex items-center gap-2">
-                  <span className="material-symbols-outlined text-base text-bq-amberd">local_fire_department</span>
-                  {t('results.breakdown.combo', { multiplier: breakdown.multiplier })}
-                </span>
-                <span className="font-bold text-bq-emerald tabular-nums">+{breakdown.combo}</span>
-              </div>
-            )}
-            <div className="flex items-center justify-between pt-3.5 mt-1.5 border-t-2 border-bq-hair">
-              <span className="font-bold text-bq-ink text-[15px]">{t('results.breakdown.total')}</span>
-              <span className="font-display text-[22px] font-extrabold text-bq-amberd tabular-nums">
-                {scoreDisplay}
-              </span>
-            </div>
-          </section>
-        )}
 
-        {/* INSIGHT CARD — only single-book context (placeholder text, no percentile API yet) */}
-        {showInsight && (
-          <section className={`flex items-center gap-3.5 rounded-2xl border ${insightTone.border} ${insightTone.bg} px-4 py-3.5 mb-3.5`} data-testid="quiz-results-insight">
-            <div className={`w-10 h-10 rounded-[10px] grid place-items-center flex-shrink-0 border ${insightTone.iconBorder} ${insightTone.iconBg} ${insightTone.iconColor}`}>
-              <span className="material-symbols-outlined text-[22px]">{isHigh ? 'trophy' : 'insights'}</span>
-            </div>
-            <p className="text-xs md:text-[13px] text-bq-ink2 leading-relaxed">
-              {primaryBook && (
-                <>
-                  <strong className={isHigh ? 'text-bq-emerald font-bold' : 'text-bq-sapphire font-bold'}>
-                    {primaryBook}
-                  </strong>
-                  {' · '}
-                </>
-              )}
-              {t('results.stats.correct')}: <strong className="text-bq-ink font-bold">{stats.correctAnswers}/{stats.totalQuestions}</strong>
-              {isHigh && <> · <strong className="text-bq-emerald font-bold">+1 streak</strong> 🔥</>}
-            </p>
-          </section>
-        )}
-
-        {/* ANALYSIS — diff rows for single-book; strongest/weakest for multi-book */}
-        {books.length === 1 && diffRows.length > 0 && (
-          <section className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl px-5 py-4 md:px-6 md:py-5 mb-4">
-            <h3 className="text-[13px] font-bold mb-3.5 flex items-center gap-2 text-bq-ink">
-              <span className="material-symbols-outlined text-base text-bq-amberd">analytics</span>
-              {t('results.difficulty.title')}
-            </h3>
-            <div className="space-y-1">
-              {diffRows.map(row => {
-                const meta = diffMeta[row.key]
-                return (
-                  <div key={row.key} className="grid grid-cols-[58px_1fr_60px] md:grid-cols-[80px_1fr_70px] gap-2.5 items-center py-1.5">
-                    <div className={`text-xs font-bold ${meta.labelColor}`}>
-                      <span className="md:hidden">{meta.labelShort}</span>
-                      <span className="hidden md:inline">{meta.label}</span>
-                    </div>
-                    <div className="h-2 bg-bq-inset rounded overflow-hidden">
-                      <div
-                        className={`h-full rounded ${meta.barClass} transition-[width] duration-500`}
-                        style={{ width: `${row.pct}%` }}
-                      />
-                    </div>
-                    <div className="text-xs font-bold text-bq-ink text-right tabular-nums">
-                      {row.correct}/{row.total} <span className="text-bq-ink3 text-[10px] font-medium">{row.pct}%</span>
-                    </div>
+            {books.length > 1 && strongest && (
+              <div className={showInsight ? 'mt-4 pt-4 border-t-2 border-dashed border-bq-hair' : ''}>
+                <h3 className="font-display text-[16px] font-extrabold text-bq-ink mb-2.5">{t('results.analysis')}</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-bq-leaf border-2 border-bq-ink rounded-2xl p-3">
+                    <p className="text-bq-emerald font-extrabold text-[13px] mb-0.5">{t('results.strongest')}</p>
+                    <p className="text-bq-ink font-bold text-[14px]">{strongest.book} ({Math.round(strongest.acc * 100)}%)</p>
                   </div>
-                )
-              })}
-            </div>
+                  <div className="bg-bq-cream border-2 border-bq-ink rounded-2xl p-3">
+                    <p className="text-bq-ruby font-extrabold text-[13px] mb-0.5">{t('results.needsImprovement')}</p>
+                    <p className="text-bq-ink font-bold text-[14px]">
+                      {weakest && weakest.acc < 1 ? `${weakest.book} (${Math.round(weakest.acc * 100)}%)` : t('results.allExcellent')}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
           </section>
         )}
 
-        {books.length > 1 && strongest && (
-          <section className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl px-5 py-4 md:px-6 md:py-5 mb-4">
-            <h3 className="text-[13px] font-bold mb-3.5 flex items-center gap-2 text-bq-ink">
-              <span className="material-symbols-outlined text-base text-bq-amberd">analytics</span>
-              {t('results.analysis')}
-            </h3>
-            <div className="grid grid-cols-2 gap-3">
-              <div className="bg-bq-emerald/5 border border-bq-emerald/20 rounded-xl p-3.5">
-                <p className="text-bq-emerald font-bold text-xs mb-1">{t('results.strongest')}</p>
-                <p className="text-bq-ink font-bold text-sm">{strongest.book} ({Math.round(strongest.acc * 100)}%)</p>
-              </div>
-              <div className="bg-bq-ruby/5 border border-bq-ruby/20 rounded-xl p-3.5">
-                <p className="text-bq-ruby font-bold text-xs mb-1">{t('results.needsImprovement')}</p>
-                <p className="text-bq-ink font-bold text-sm">
-                  {weakest && weakest.acc < 1 ? `${weakest.book} (${Math.round(weakest.acc * 100)}%)` : t('results.allExcellent')}
-                </p>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* ACTIONS */}
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-2">
+        {/* actions */}
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-[1fr_1.6fr] gap-3">
           <button
             data-testid="quiz-results-review-btn"
             onClick={() => navigate('/review', { state: { stats } })}
-            className="w-full py-3.5 rounded-xl border border-bq-hair bg-bq-white text-bq-ink2 hover:text-bq-ink hover:bg-bq-inset font-bold text-sm flex items-center justify-center gap-2 transition-colors"
+            className="lk-btn lk-btn-2 w-full text-bq-ink text-[16px]"
           >
-            <span className="material-symbols-outlined text-base">visibility</span>
             <span className="md:hidden">{t('results.review')}</span>
             <span className="hidden md:inline">{t('results.actions.reviewLong')}</span>
           </button>
           <button
             data-testid="quiz-results-play-btn"
             onClick={onPlayAgain}
-            className="w-full py-3.5 rounded-xl bg-bq-action text-bq-ink shadow-bq-action font-extrabold text-sm flex items-center justify-center gap-2 transition-transform hover:-translate-y-0.5 hover:brightness-105 active:translate-y-0"
+            className="lk-btn w-full text-bq-ink text-[18px]"
           >
-            <span className="material-symbols-outlined text-base">refresh</span>
             <span className="md:hidden">{t('results.playAgain')}</span>
             <span className="hidden md:inline">{t('results.actions.playAgainBook')}</span>
           </button>
@@ -436,19 +411,13 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
         <button
           data-testid="quiz-results-home-btn"
           onClick={onBackToHome}
-          className="mt-2 w-full py-2.5 text-xs text-bq-ink3 hover:text-bq-ink2 underline underline-offset-[3px]"
+          className="mt-3 mx-auto px-4 py-1.5 rounded-full bg-bq-white/85 border-2 border-bq-ink text-[14px] font-bold text-bq-ink hover:bg-bq-cream"
         >
           {t('results.actions.backHome')}
         </button>
-
       </main>
 
-      {/* /quiz route lives OUTSIDE AppLayout for immersive gameplay
-          (main.tsx line 181-186) so MobileBottomTabs would normally be
-          hidden here. Surface them on the Results screen — gameplay is
-          over, the user wants nav back. The pb-28 above on the wrapper
-          adds the 80px clearance so the "Về trang chủ" link doesn't
-          sit under the fixed bar. */}
+      {/* /quiz lives outside AppLayout (immersive play); results bring the bottom tabs back on phones. */}
       <MobileBottomTabs />
     </div>
   )

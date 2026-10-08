@@ -5,8 +5,9 @@ import { useQuery } from '@tanstack/react-query'
 import { api } from '../api/client'
 import MobileBottomTabs from '../layouts/components/MobileBottomTabs'
 import WeekCompleteModal from '../components/ranked/WeekCompleteModal'
+import { Medal, PlaceBackdrop, ScrollPanel, TrackBar, lkClass } from '../components/lk/Place'
+import { useBookName } from '../hooks/useBookName'
 
-const FILL_1: React.CSSProperties = { fontVariationSettings: "'FILL' 1" }
 const LETTERS = ['A', 'B', 'C', 'D']
 
 interface Question {
@@ -98,6 +99,7 @@ export default function RankedQuizResults({
 }: Props) {
   const { t } = useTranslation()
   const navigate = useNavigate()
+  const getBookName = useBookName()
   const [showReviewModal, setShowReviewModal] = useState(false)
 
   // §7.1.5 — surface WeekCompleteModal ~800ms after results mount so the
@@ -180,413 +182,262 @@ export default function RankedQuizResults({
   }, [stats.questions, stats.userAnswers])
   const wrongCount = wrongList.length
 
-  return (
-    <div data-testid="ranked-result-page" className="relative min-h-screen bg-bq-paper text-bq-ink">
-      <div className="max-w-md md:max-w-xl mx-auto px-4 pt-5 pb-[180px]">
+  const ref = (q: Question) =>
+    `${getBookName(q.book)} ${q.chapter}${q.verseStart ? `:${q.verseStart}${q.verseEnd && q.verseEnd !== q.verseStart ? `–${q.verseEnd}` : ''}` : ''}`
+  const tierImg = `/images/lk/tier-${Math.min(6, Math.max(1, newLevel))}.webp`
+  const btnGold = 'lk-btn w-full text-bq-ink text-[17px]'
+  const btnLeaf = 'lk-btn lk-btn-2 flex-1 text-bq-ink text-[15px]'
+  const btnPaper = 'lk-btn flex-1 !bg-bq-white text-bq-ink text-[15px]'
+  const medalLabel = 'mt-3 text-[12.5px] md:text-[13px] font-extrabold text-bq-ink2 text-center leading-tight'
 
-        {/* Top context bar */}
-        <div className="flex items-center justify-between text-[11px] text-bq-ink3 pb-3.5 px-1">
-          <div className="inline-flex items-center gap-1.5">
-            <span className="material-symbols-outlined text-[14px]">military_tech</span>
+  // Ranked result on the tournament field (LKF-5b). A = normal, B = tier up, C = out of energy.
+  return (
+    <div data-testid="ranked-result-page" className="relative min-h-screen text-bq-ink">
+      <PlaceBackdrop place="arena" veil="mid" />
+      <div className="relative max-w-[600px] mx-auto px-4 pt-5 pb-[210px]">
+
+        <div className="flex items-center justify-between pb-4">
+          <span className="inline-flex items-center gap-2 px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-full text-[13px] font-extrabold">
+            <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-5 -rotate-[30deg]" />
             {t('ranked.result.topContext', 'Kết quả Đấu Hạng')}
-          </div>
+          </span>
           <button
             type="button"
             onClick={onBackToHome}
             aria-label={t('common.close')}
-            className="w-[30px] h-[30px] rounded-full bg-bq-inset text-bq-ink2 grid place-items-center"
+            className="w-11 h-11 grid place-items-center bg-bq-white border-[3px] border-bq-ink rounded-[14px] shadow-[0_4px_0_#1D2B22] active:translate-y-1 active:shadow-none"
           >
-            <span className="material-symbols-outlined text-[18px]">close</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden><path d="M6 6l12 12M18 6L6 18" stroke="#1D2B22" strokeWidth="3.2" strokeLinecap="round" /></svg>
           </button>
         </div>
 
-        {/* Header — A / B / C variants */}
-        {variant === 'A' && (
-          <div className="text-center mb-5 px-3">
-            <div className="text-[10px] font-bold tracking-[2px] uppercase text-bq-ink3">
-              {t('ranked.result.eyebrowDone', 'Trận đã xong')}
-            </div>
-            <div className="font-display font-semibold text-bq-amberd text-[28px] md:text-[34px] leading-tight mt-2">
-              {accuracyPct >= 80
-                ? t('ranked.result.titleHigh', 'Vững vàng!')
-                : accuracyPct >= 50
-                  ? t('ranked.result.titleMid', 'Đang tiến bộ')
-                  : t('ranked.result.titleLow', 'Tiếp tục bền bỉ')}
-            </div>
-            <p className="text-[13px] text-bq-ink2 mt-2 leading-relaxed">
-              {t('ranked.result.subA', {
-                correct: correctCount,
-                total: totalQ,
-                mm,
-                ss: String(ss).padStart(2, '0'),
-                defaultValue: 'Bạn đúng {{correct}}/{{total}} câu trong {{mm}}\'{{ss}}\'\'. Mỗi lần học là một bước.',
-              })}
-            </p>
-          </div>
-        )}
-
-        {variant === 'B' && (
-          <div
-            className="relative overflow-hidden text-center mb-5 px-4 py-6 rounded-[22px] border border-bq-hair bg-bq-white shadow-bq-amb"
-          >
-            <div
-              aria-hidden
-              className="absolute inset-0 pointer-events-none"
-              style={{ background: 'radial-gradient(50% 70% at 50% 0%, rgba(245,158,11,0.16), transparent 70%)' }}
-            />
-            <div className="relative z-10">
-              <div className="text-[10px] font-extrabold uppercase tracking-[2.5px] text-bq-amberd">
-                {t('ranked.result.eyebrowTierUp', 'Lên hạng')}
+        <ScrollPanel bodyClassName="relative px-5 md:px-8 pt-5 pb-6 text-center">
+          {variant === 'A' && (
+            <>
+              <img src={accuracyPct >= 50 ? '/images/lk/hero-cheer.webp' : '/images/lk/hero.webp'} alt="" aria-hidden className={`h-[96px] mx-auto ${lkClass.bob}`} />
+              <h1 className="font-display font-extrabold text-bq-amberd text-[30px] md:text-[36px] leading-tight mt-1">
+                {accuracyPct >= 80
+                  ? t('ranked.result.titleHigh', 'Vững vàng!')
+                  : accuracyPct >= 50
+                    ? t('ranked.result.titleMid', 'Đang tiến bộ')
+                    : t('ranked.result.titleLow', 'Tiếp tục bền bỉ')}
+              </h1>
+              <p className="font-read text-[14px] text-bq-ink2 mt-1 leading-relaxed">
+                {t('ranked.result.subA', {
+                  correct: correctCount,
+                  total: totalQ,
+                  mm,
+                  ss: String(ss).padStart(2, '0'),
+                  defaultValue: 'Bạn đúng {{correct}}/{{total}} câu trong {{mm}}\'{{ss}}\'\'. Mỗi lần học là một bước.',
+                })}
+              </p>
+            </>
+          )}
+          {variant === 'B' && (
+            <>
+              <span className="block text-[14px] font-extrabold text-bq-amberd">{t('ranked.result.eyebrowTierUp', 'Lên hạng')}</span>
+              <div className="relative mx-auto mt-1 w-[120px] h-[120px] grid place-items-center">
+                <span aria-hidden className="absolute inset-0 rounded-full bg-[radial-gradient(circle,rgba(255,214,90,.9)_0,rgba(255,214,90,0)_70%)] motion-safe:animate-pulse" />
+                <img src={tierImg} alt="" aria-hidden className={`relative w-[104px] ${lkClass.star}`} />
               </div>
-              <div
-                className="mx-auto mt-3.5 w-[60px] h-[60px] rounded-full grid place-items-center text-bq-amberd"
-                style={{ background: 'rgba(245,158,11,0.14)', border: '1px solid rgba(245,158,11,0.36)' }}
-              >
-                <span className="material-symbols-outlined text-[34px]" style={FILL_1}>workspace_premium</span>
-              </div>
-              <div className="font-display font-bold text-bq-amberd text-[28px] md:text-[30px] leading-tight mt-2.5">
-                {currentTierName}
-              </div>
-              <p className="text-[13px] text-bq-ink2 mt-2 leading-relaxed">
+              <h1 className="font-display font-extrabold text-bq-amberd text-[30px] md:text-[34px] leading-tight">{currentTierName}</h1>
+              <p className="font-read text-[14px] text-bq-ink2 mt-1 leading-relaxed">
                 {t('ranked.result.subB', { from: previousTier?.name ?? '', defaultValue: 'Bạn vừa lên hạng từ {{from}} — tiếp tục mở khoá đặc quyền mới.' })}
               </p>
-            </div>
-          </div>
-        )}
-
-        {variant === 'C' && (
-          <div className="text-center mb-5 px-4 py-5 rounded-[22px] border border-bq-hair bg-bq-white shadow-bq-soft">
-            <div className="mx-auto mb-3 w-[54px] h-[54px] rounded-full bg-bq-inset border border-bq-hair grid place-items-center text-bq-ink3">
-              <span className="material-symbols-outlined text-[30px]">bolt</span>
-            </div>
-            <div className="text-[18px] md:text-[19px] font-bold tracking-tight text-bq-ink">
-              {t('ranked.result.titleOOE', 'Hết năng lượng hôm nay')}
-            </div>
-            <p className="text-[13px] text-bq-ink2 mt-2 leading-relaxed">
-              {t('ranked.result.subC', 'Bạn đã dùng hết 100 năng lượng. Quay lại sau khi phục hồi để tiếp tục leo hạng.')}
-            </p>
-            <div
-              className="inline-flex items-center gap-1.5 mt-3.5 px-3.5 py-2 rounded-full text-[13px] font-bold text-bq-amberd tabular-nums border border-bq-hair bg-bq-inset"
-            >
-              <span className="material-symbols-outlined text-[15px]">schedule</span>
-              {t('ranked.energyRecoverIn', { time: resetTimeLeft })}
-            </div>
-          </div>
-        )}
-
-        {/* Result card */}
-        <section
-          className="relative rounded-[22px] border border-bq-hair bg-bq-white shadow-bq-rub overflow-hidden mb-3.5"
-        >
-          {/* Signature spectrum top strip */}
-          <div aria-hidden className="absolute inset-x-0 top-0 h-1 bg-bq-spectrum" />
-
-          {/* XP hero */}
-          <div className="relative text-center px-5 pt-5 pb-5 border-b border-bq-hair">
-            <div
-              aria-hidden
-              className="absolute inset-0 pointer-events-none"
-              style={{ background: 'radial-gradient(80% 100% at 50% 0%, rgba(245,158,11,0.08), transparent 65%)' }}
-            />
-            <div className="relative z-10">
-              <div className="text-[10px] font-bold uppercase tracking-[1.8px] text-bq-ink3">
-                {t('ranked.result.xpLabel', 'Bạn nhận được')}
-              </div>
-              <div className="inline-flex items-baseline gap-1 mt-2.5">
-                <span className="text-bq-amberd text-[28px] md:text-[30px] font-bold leading-none">+</span>
-                <span
-                  data-testid="ranked-result-xp"
-                  className="font-display text-bq-ink text-[56px] md:text-[64px] font-extrabold leading-[0.9] tracking-tight tabular-nums"
-                >
-                  {earnedXp}
-                </span>
-                <span className="text-bq-ink3 text-[18px] font-semibold ml-1">XP</span>
-              </div>
-              <p className="text-[12px] text-bq-ink2 mt-2">
-                {variant === 'B'
-                  ? t('ranked.result.xpDetailTierUp', 'Vượt ngưỡng — chính thức lên hạng!')
-                  : t('ranked.result.xpDetailDefault', 'Tính theo thời gian & độ khó mỗi câu đúng')}
+            </>
+          )}
+          {variant === 'C' && (
+            <>
+              <img src="/images/lk/hero-rest.webp" alt="" aria-hidden className="h-[100px] mx-auto" />
+              <h1 className="font-display font-extrabold text-[24px] md:text-[28px] leading-tight mt-1">{t('ranked.result.titleOOE', 'Hết năng lượng hôm nay')}</h1>
+              <p className="font-read text-[14px] text-bq-ink2 mt-1 leading-relaxed">
+                {t('ranked.result.subC', 'Bạn đã dùng hết 100 năng lượng. Quay lại sau khi phục hồi để tiếp tục leo hạng.')}
               </p>
-              {matchBonus && matchBonus.bonusPoints > 0 && (
-                <div
-                  data-testid="ranked-result-accuracy-bonus"
-                  className="inline-flex items-center gap-1.5 mt-3 px-3 py-1.5 rounded-full text-[12px] font-bold text-bq-amberd"
-                  style={{ background: 'rgba(245,158,11,0.12)' }}
-                >
-                  <span className="material-symbols-outlined text-[16px]" aria-hidden>target</span>
-                  {t('ranked.result.accuracyBonus', {
-                    defaultValue: 'Thưởng chính xác {{pct}}%: +{{pts}} XP',
-                    pct: matchBonus.bonusPercent,
-                    pts: matchBonus.bonusPoints,
-                  })}
-                </div>
-              )}
-            </div>
+              <span className="inline-flex items-center gap-1.5 mt-3 px-3.5 py-1 rounded-full bg-bq-cream border-2 border-bq-ink text-[14px] font-extrabold tabular-nums">
+                <img src="/images/lk/heart.webp" alt="" aria-hidden className="h-5" />
+                {t('ranked.energyRecoverIn', { time: resetTimeLeft })}
+              </span>
+            </>
+          )}
+
+          {/* XP earned */}
+          <div className="mt-5 pt-4 border-t-2 border-dashed border-bq-hair">
+            <span className="block text-[13px] font-bold text-bq-ink3">{t('ranked.result.xpLabel', 'Bạn nhận được')}</span>
+            <span className="inline-flex items-baseline gap-1 mt-1">
+              <span className="text-bq-amberd text-[30px] font-extrabold leading-none">+</span>
+              <span data-testid="ranked-result-xp" className="font-display text-[60px] md:text-[68px] font-extrabold leading-[0.9] tabular-nums text-bq-ink [text-shadow:0_.06em_0_#FFC93C]">
+                {earnedXp}
+              </span>
+              <span className="text-bq-ink3 text-[18px] font-extrabold ml-1">XP</span>
+            </span>
+            <p className="font-read text-[13px] text-bq-ink2 mt-1.5">
+              {variant === 'B'
+                ? t('ranked.result.xpDetailTierUp', 'Vượt ngưỡng — chính thức lên hạng!')
+                : t('ranked.result.xpDetailDefault', 'Tính theo thời gian & độ khó mỗi câu đúng')}
+            </p>
+            {matchBonus && matchBonus.bonusPoints > 0 && (
+              <span data-testid="ranked-result-accuracy-bonus" className="inline-flex items-center gap-1.5 mt-2.5 px-3 py-1 rounded-full bg-bq-amber border-2 border-bq-ink text-[13px] font-extrabold">
+                {t('ranked.result.accuracyBonus', {
+                  defaultValue: 'Thưởng chính xác {{pct}}%: +{{pts}} XP',
+                  pct: matchBonus.bonusPercent,
+                  pts: matchBonus.bonusPoints,
+                })}
+              </span>
+            )}
           </div>
 
-          {/* Tier progress row */}
-          <div className="flex items-center gap-3.5 px-5 py-4 border-b border-bq-hair">
-            <div
-              className="w-[38px] h-[38px] rounded-[11px] grid place-items-center text-bq-amberd shrink-0"
-              style={{ background: 'rgba(245,158,11,0.12)' }}
-            >
-              <span className="material-symbols-outlined text-[20px]" style={FILL_1}>workspace_premium</span>
-            </div>
+          {/* tier progress */}
+          <div className="mt-4 flex items-center gap-3 text-left">
+            <img src={tierImg} alt="" aria-hidden className="w-12 shrink-0" />
             <div className="flex-1 min-w-0">
-              <div className="flex items-baseline justify-between mb-1.5">
-                <div className={`text-[13px] font-bold tracking-tight ${variant === 'B' ? 'text-bq-amberd' : 'text-bq-ink'}`}>
-                  {currentTierName}
-                </div>
-                <div className="text-[11px] text-bq-ink3 tabular-nums">
+              <div className="flex items-baseline justify-between gap-2 mb-1">
+                <span className={`text-[15px] font-extrabold truncate ${variant === 'B' ? 'text-bq-amberd' : ''}`}>{currentTierName}</span>
+                <span className="text-[12px] font-bold text-bq-ink3 tabular-nums whitespace-nowrap">
                   {currentTotalPoints.toLocaleString('vi-VN')} / {tierTarget.toLocaleString('vi-VN')} XP
-                  <span className="text-bq-ink font-semibold"> · {t('ranked.result.stillNeed', { count: ptsToNext.toLocaleString('vi-VN'), defaultValue: 'còn {{count}}' })}</span>
-                </div>
+                </span>
               </div>
-              <div className="h-1.5 bg-bq-inset rounded-full overflow-hidden">
-                <div
-                  className="h-full rounded-full bg-bq-flame transition-[width] duration-700"
-                  style={{ width: `${Math.min(100, tierProgressPct)}%` }}
-                />
-              </div>
+              <TrackBar pct={tierProgressPct} className="h-3.5" />
+              <span className="block mt-1 text-[12px] font-bold text-bq-ink2">
+                {t('ranked.result.stillNeed', { count: ptsToNext.toLocaleString('vi-VN'), defaultValue: 'còn {{count}}' })}
+              </span>
             </div>
           </div>
 
-          {/* 3-stat grid */}
-          <div className="grid grid-cols-3">
-            <div className="text-center px-2 py-4 border-r border-bq-hair">
-              <div className="text-[9px] font-bold uppercase tracking-[1.2px] text-bq-ink3 mb-2">
-                {t('ranked.result.statCorrect', 'Câu đúng')}
-              </div>
-              <div className="text-[20px] font-extrabold leading-none tabular-nums text-bq-ink">
-                {correctCount}<span className="text-bq-ink3 text-[13px] font-semibold ml-0.5">/{totalQ}</span>
-              </div>
-              <div className="text-[10px] text-bq-ink3 mt-1 font-semibold">
-                {t('ranked.result.statAccuracy', { percent: accuracyPct, defaultValue: '{{percent}}% chính xác' })}
-              </div>
+          {/* three medals */}
+          <div className="mt-5 flex justify-center gap-6 md:gap-9">
+            <div className="flex flex-col items-center">
+              <Medal size={74}>
+                <span className="font-display text-[21px] font-extrabold tabular-nums leading-none">
+                  {correctCount}<span className="text-bq-ink3 text-[0.68em]">/{totalQ}</span>
+                </span>
+              </Medal>
+              <span className={medalLabel}>
+                {t('ranked.result.statCorrect', 'Câu đúng')}<br />
+                <span className="font-bold text-bq-ink3">{t('ranked.result.statAccuracy', { percent: accuracyPct, defaultValue: '{{percent}}% chính xác' })}</span>
+              </span>
             </div>
-            <div className="text-center px-2 py-4 border-r border-bq-hair">
-              <div className="text-[9px] font-bold uppercase tracking-[1.2px] text-bq-ink3 mb-2">
-                {t('ranked.result.statSeasonPts', 'Điểm mùa')}
-              </div>
-              <div className="text-[20px] font-extrabold leading-none text-bq-amberd tabular-nums">
-                +{earnedXp}
-              </div>
-              <div className="text-[10px] text-bq-emerald mt-1 font-semibold">
-                {t('ranked.result.statSeasonTotal', { total: (myRank?.points ?? 0).toLocaleString('vi-VN'), defaultValue: 'Tổng: {{total}}' })}
-              </div>
+            <div className="flex flex-col items-center">
+              <Medal size={74} className="!bg-bq-cream">
+                <span className="font-display text-[20px] font-extrabold tabular-nums leading-none text-bq-amberd">+{earnedXp}</span>
+              </Medal>
+              <span className={medalLabel}>
+                {t('ranked.result.statSeasonPts', 'Điểm mùa')}<br />
+                <span className="font-bold text-bq-emerald">{t('ranked.result.statSeasonTotal', { total: (myRank?.points ?? 0).toLocaleString('vi-VN'), defaultValue: 'Tổng: {{total}}' })}</span>
+              </span>
             </div>
-            <div className="text-center px-2 py-4">
-              <div className="text-[9px] font-bold uppercase tracking-[1.2px] text-bq-ink3 mb-2">
-                {t('ranked.result.statEnergy', 'Năng lượng')}
-              </div>
-              <div className="text-[20px] font-extrabold leading-none tabular-nums text-bq-ink">
-                {livesRemaining}
-              </div>
-              <div className="text-[10px] text-bq-ink3 mt-1 font-semibold">
-                {t('ranked.result.statEnergyRemain', { count: livesRemaining, defaultValue: 'Còn {{count}}/100' })}
-              </div>
+            <div className="flex flex-col items-center">
+              <Medal size={74}>
+                <span className="flex flex-col items-center leading-none">
+                  <img src="/images/lk/heart.webp" alt="" aria-hidden className="h-5 mb-0.5" />
+                  <span className="font-display text-[18px] font-extrabold tabular-nums">{livesRemaining}</span>
+                </span>
+              </Medal>
+              <span className={medalLabel}>
+                {t('ranked.result.statEnergy', 'Năng lượng')}<br />
+                <span className="font-bold text-bq-ink3">{t('ranked.result.statEnergyRemain', { count: livesRemaining, defaultValue: 'Còn {{count}}/100' })}</span>
+              </span>
             </div>
           </div>
-        </section>
 
-        {/* Season rank card */}
+          {variant === 'B' && (
+            <p className="mt-5 pt-4 border-t-2 border-dashed border-bq-hair font-read italic text-[15px] leading-relaxed text-bq-amberd">
+              "{t('ranked.result.verseQuote', 'Hãy vui mừng trong sự trông cậy, nhịn nhục trong cơn hoạn nạn, bền lòng mà cầu nguyện.')}"
+              <span className="block not-italic text-[12px] font-bold text-bq-ink3 mt-1">— {t('ranked.result.verseRef', 'Rô-ma 12:12')}</span>
+            </p>
+          )}
+        </ScrollPanel>
+
+        {/* season rank */}
         {activeSeason?.active && (
-          <div
-            className="flex items-center justify-between gap-3 rounded-[18px] border border-bq-hair bg-bq-white shadow-bq-soft px-4 py-3.5 mb-3.5"
-          >
+          <div className="mt-5 flex items-center justify-between gap-3 bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card px-4 py-3">
             <div className="flex items-center gap-3 min-w-0">
-              <div
-                className="w-[34px] h-[34px] rounded-[10px] grid place-items-center text-bq-amberd shrink-0"
-                style={{ background: 'rgba(245,158,11,0.10)' }}
-              >
-                <span className="material-symbols-outlined text-[20px]" style={FILL_1}>emoji_events</span>
-              </div>
+              <img src="/images/lk/icon-trophy.webp" alt="" aria-hidden className="h-10 shrink-0" />
               <div className="min-w-0">
-                <div className="text-[13px] font-semibold truncate text-bq-ink">{activeSeason.name}</div>
-                <div className="text-[11px] text-bq-ink3 mt-0.5">
-                  {t('ranked.result.seasonRankUnchanged', 'Hạng mùa không đổi')}
-                </div>
+                <div className="text-[15px] font-extrabold truncate">{activeSeason.name}</div>
+                <div className="text-[12px] font-bold text-bq-ink3">{t('ranked.result.seasonRankUnchanged', 'Hạng mùa không đổi')}</div>
               </div>
             </div>
             <div className="text-right shrink-0">
-              <div className="text-bq-amberd text-[22px] font-extrabold leading-none tabular-nums">
-                {myRank?.rank != null ? `#${myRank.rank}` : '—'}
-              </div>
-              <div className="text-[11px] text-bq-ink3 mt-0.5">
-                {(myRank?.points ?? 0).toLocaleString('vi-VN')} {t('ranked.points')}
-              </div>
+              <div className="font-display text-[24px] font-extrabold leading-none tabular-nums text-bq-amberd">{myRank?.rank != null ? `#${myRank.rank}` : '—'}</div>
+              <div className="text-[12px] font-bold text-bq-ink3">{(myRank?.points ?? 0).toLocaleString('vi-VN')} {t('ranked.points')}</div>
             </div>
           </div>
         )}
 
-        {/* Review wrong list — top 2 + link. Hidden in State B (verse takes its slot). */}
+        {/* wrong answers to review (hidden on tier-up) */}
         {variant !== 'B' && wrongCount > 0 && (
-          <div
-            className="rounded-[18px] border border-bq-hair bg-bq-white shadow-bq-soft px-4 py-4 mb-3.5"
-          >
-            <div className="flex items-center justify-between mb-3">
-              <div className="text-[13px] font-bold inline-flex items-center gap-1.5 text-bq-ink">
-                <span className="material-symbols-outlined text-[18px] text-bq-amberd">school</span>
-                {variant === 'C'
-                  ? t('ranked.result.reviewTitleOOE', 'Trong khi chờ')
-                  : t('ranked.result.reviewTitle', 'Câu bạn đã sai')}
-              </div>
-              <div className="text-[11px] text-bq-ink3">
-                {t('ranked.result.reviewCount', { count: wrongCount, defaultValue: '{{count}} câu' })}
-              </div>
+          <div className="mt-4 bg-bq-white border-[3px] border-bq-ink rounded-bq shadow-bq-card px-4 py-4">
+            <div className="flex items-center justify-between mb-2.5">
+              <span className="inline-flex items-center gap-2 text-[16px] font-extrabold">
+                <img src="/images/lk/scroll.webp" alt="" aria-hidden className="h-6" />
+                {variant === 'C' ? t('ranked.result.reviewTitleOOE', 'Trong khi chờ') : t('ranked.result.reviewTitle', 'Câu bạn đã sai')}
+              </span>
+              <span className="text-[13px] font-bold text-bq-ink3">{t('ranked.result.reviewCount', { count: wrongCount, defaultValue: '{{count}} câu' })}</span>
             </div>
-            <ul className="space-y-2.5">
+            <ul>
               {wrongList.slice(0, 2).map(({ q, orderNum }) => (
-                <li key={q.id} className="flex items-start gap-2.5 pt-2.5 first:pt-0 border-t border-bq-hair first:border-t-0">
-                  <span
-                    className="w-[22px] h-[22px] rounded-[7px] grid place-items-center text-[11px] font-bold shrink-0 mt-0.5 text-bq-ruby"
-                    style={{ background: 'rgba(179,69,47,0.10)' }}
-                  >
-                    {orderNum}
+                <li key={q.id} className="flex items-start gap-2.5 py-2.5 border-t-2 border-dashed border-bq-hair first:border-t-0 first:pt-0">
+                  <span className="w-7 h-7 rounded-full grid place-items-center text-[13px] font-extrabold shrink-0 bg-bq-cream border-2 border-bq-ink text-bq-ruby">{orderNum}</span>
+                  <span className="min-w-0 font-read text-[14px] leading-snug">
+                    <span className="line-clamp-2">{q.content}</span>
+                    <span className="block text-[12px] font-bold text-bq-ink3 mt-0.5">{ref(q)}</span>
                   </span>
-                  <div className="text-[12px] text-bq-ink leading-snug line-clamp-2 min-w-0">
-                    {q.content}
-                    <span className="block text-[10px] text-bq-ink3 mt-0.5">
-                      {q.book} {q.chapter}{q.verseStart ? `:${q.verseStart}${q.verseEnd && q.verseEnd !== q.verseStart ? `–${q.verseEnd}` : ''}` : ''}
-                    </span>
-                  </div>
                 </li>
               ))}
             </ul>
             <button
               type="button"
               onClick={() => setShowReviewModal(true)}
-              className="mt-3 pt-3 w-full border-t border-bq-hair text-bq-amberd text-[13px] font-semibold inline-flex items-center justify-center gap-1.5"
+              className="mt-2 w-full lk-btn lk-btn-2 text-bq-ink text-[15px]"
             >
               {variant === 'C'
                 ? t('ranked.result.reviewCTALearn', { count: wrongCount, defaultValue: 'Xem chi tiết & học lại {{count}} câu sai' })
                 : t('ranked.result.reviewCTA', { count: wrongCount, defaultValue: 'Xem chi tiết {{count}} câu' })}
-              <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
             </button>
-          </div>
-        )}
-
-        {/* Inline verse (State B only) */}
-        {variant === 'B' && (
-          <div className="text-center px-6 py-4 mb-4">
-            <p
-              className="font-literata italic font-medium text-[15px] leading-relaxed text-bq-amberd"
-            >
-              "{t('ranked.result.verseQuote', 'Hãy vui mừng trong sự trông cậy, nhịn nhục trong cơn hoạn nạn, bền lòng mà cầu nguyện.')}"
-            </p>
-            <p className="text-[11px] text-bq-ink3 mt-2">
-              — {t('ranked.result.verseRef', 'Rô-ma 12:12')}
-            </p>
           </div>
         )}
       </div>
 
-      {/* Sticky CTAs — gradient fade absolute bottom */}
-      <div
-        className="fixed left-0 right-0 bottom-0 z-30 px-4 pt-6 pb-[88px] md:pb-6 pointer-events-none"
-        style={{ background: 'linear-gradient(180deg, rgba(251,250,245,0) 0%, var(--bq-paper) 35%)' }}
-      >
-        <div className="max-w-md md:max-w-xl mx-auto pointer-events-auto">
+      {/* sticky actions over a fade to the field */}
+      <div className="fixed left-0 right-0 bottom-0 z-30 px-4 pt-8 pb-[92px] md:pb-6 pointer-events-none bg-[linear-gradient(180deg,rgba(239,227,195,0)_0%,rgba(239,227,195,.92)_38%)]">
+        <div className="max-w-[600px] mx-auto pointer-events-auto">
           {variant === 'A' && (
             <>
-              <button
-                type="button"
-                data-testid="ranked-result-play-again"
-                onClick={onPlayAgain}
-                className="w-full inline-flex items-center justify-center gap-2 rounded-[14px] py-4 px-4 font-bold text-[15px] text-bq-ink bg-bq-action shadow-bq-action hover:-translate-y-0.5 active:translate-y-0 transition-transform"
-              >
-                <span className="material-symbols-outlined text-[20px]" style={FILL_1}>replay</span>
+              <button type="button" data-testid="ranked-result-play-again" onClick={onPlayAgain} className={btnGold}>
                 {t('ranked.result.ctaPlayAgain', 'Chơi trận khác')}
               </button>
-              <div className="flex gap-2.5 mt-2.5">
-                <button
-                  type="button"
-                  onClick={onBackToHome}
-                  className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-[13px] py-3.5 px-3 text-[13px] font-semibold border border-bq-hair text-bq-ink bg-bq-white shadow-bq-soft"
-                >
-                  <span className="material-symbols-outlined text-[17px]">home</span>
-                  {t('ranked.result.ctaHome', 'Trang chủ')}
-                </button>
-                <Link
-                  to="/leaderboard?period=season"
-                  className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-[13px] py-3.5 px-3 text-[13px] font-semibold border border-bq-hair text-bq-ink bg-bq-white shadow-bq-soft"
-                >
-                  <span className="material-symbols-outlined text-[17px]">leaderboard</span>
-                  {t('ranked.result.ctaLeaderboard', 'Bảng xếp hạng')}
-                </Link>
+              <div className="flex gap-3 mt-3">
+                <button type="button" onClick={onBackToHome} className={btnPaper}>{t('ranked.result.ctaHome', 'Trang chủ')}</button>
+                <Link to="/leaderboard?period=season" className={btnLeaf}>{t('ranked.result.ctaLeaderboard', 'Bảng xếp hạng')}</Link>
               </div>
             </>
           )}
-
           {variant === 'B' && (
             <>
-              <button
-                type="button"
-                onClick={() => navigate('/help#tiers')}
-                className="w-full inline-flex items-center justify-center gap-2 rounded-[14px] py-4 px-4 font-bold text-[15px] text-bq-ink bg-bq-action shadow-bq-action hover:-translate-y-0.5 active:translate-y-0 transition-transform"
-              >
-                <span className="material-symbols-outlined text-[20px]" style={FILL_1}>military_tech</span>
+              <button type="button" onClick={() => navigate('/help#tiers')} className={btnGold}>
                 {t('ranked.result.ctaTierPerks', 'Xem đặc quyền hạng mới')}
               </button>
-              <div className="flex gap-2.5 mt-2.5">
-                <button
-                  type="button"
-                  data-testid="ranked-result-play-again"
-                  onClick={onPlayAgain}
-                  className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-[13px] py-3.5 px-3 text-[13px] font-semibold border border-bq-hair text-bq-ink bg-bq-white shadow-bq-soft"
-                >
-                  <span className="material-symbols-outlined text-[17px]">replay</span>
-                  {t('ranked.result.ctaPlayMore', 'Chơi tiếp')}
-                </button>
-                <button
-                  type="button"
-                  onClick={onBackToHome}
-                  className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-[13px] py-3.5 px-3 text-[13px] font-semibold border border-bq-hair text-bq-ink bg-bq-white shadow-bq-soft"
-                >
-                  <span className="material-symbols-outlined text-[17px]">home</span>
-                  {t('ranked.result.ctaHome', 'Trang chủ')}
-                </button>
+              <div className="flex gap-3 mt-3">
+                <button type="button" data-testid="ranked-result-play-again" onClick={onPlayAgain} className={btnLeaf}>{t('ranked.result.ctaPlayMore', 'Chơi tiếp')}</button>
+                <button type="button" onClick={onBackToHome} className={btnPaper}>{t('ranked.result.ctaHome', 'Trang chủ')}</button>
               </div>
             </>
           )}
-
           {variant === 'C' && (
             <>
-              <button
-                type="button"
-                disabled
-                aria-disabled
-                className="w-full inline-flex items-center justify-center gap-2 rounded-[14px] py-4 px-4 font-bold text-[15px] text-bq-ink3 bg-bq-inset border border-bq-hair cursor-not-allowed"
-              >
-                <span className="material-symbols-outlined text-[20px]">bolt</span>
+              <button type="button" disabled aria-disabled className="lk-btn w-full !bg-bq-track text-bq-ink3 text-[16px]">
                 {t('ranked.result.ctaOOE', { time: resetTimeLeft, defaultValue: 'Hết năng lượng — chờ {{time}}' })}
               </button>
-              <div className="flex gap-2.5 mt-2.5">
-                <Link
-                  to="/practice"
-                  className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-[13px] py-3.5 px-3 text-[13px] font-semibold border border-bq-hair text-bq-ink bg-bq-white shadow-bq-soft"
-                >
-                  <span className="material-symbols-outlined text-[17px]">school</span>
-                  {t('ranked.result.ctaPractice', 'Luyện tập (miễn phí)')}
-                </Link>
-                <button
-                  type="button"
-                  onClick={onBackToHome}
-                  className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-[13px] py-3.5 px-3 text-[13px] font-semibold border border-bq-hair text-bq-ink bg-bq-white shadow-bq-soft"
-                >
-                  <span className="material-symbols-outlined text-[17px]">home</span>
-                  {t('ranked.result.ctaHome', 'Trang chủ')}
-                </button>
+              <div className="flex gap-3 mt-3">
+                <Link to="/practice" className={btnLeaf}>{t('ranked.result.ctaPractice', 'Luyện tập (miễn phí)')}</Link>
+                <button type="button" onClick={onBackToHome} className={btnPaper}>{t('ranked.result.ctaHome', 'Trang chủ')}</button>
               </div>
             </>
           )}
         </div>
       </div>
 
-      {/* /quiz route lives outside AppLayout — render MobileBottomTabs
-          here so the bottom nav stays available after a quiz ends.
-          The sticky CTA wrap above uses `pb-[88px]` on mobile to leave
-          room for both the tabs (~56px) and a small gap. */}
+      {/* /quiz lives outside AppLayout — bring the bottom tabs back on phones after the match. */}
       <MobileBottomTabs />
 
       {/* Review modal — shows wrong questions only with the correct
@@ -598,7 +449,7 @@ export default function RankedQuizResults({
       {showReviewModal && wrongList.length > 0 && (
         <div
           data-testid="ranked-result-review-modal"
-          className="fixed inset-0 z-50 bg-bq-ink/40 backdrop-blur-sm flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-bq-ink/45 flex items-center justify-center p-4"
           onClick={() => setShowReviewModal(false)}
         >
           {/* Modal becomes the scroll container itself (flex-col with
@@ -609,12 +460,12 @@ export default function RankedQuizResults({
               card's overflow-hidden box, so the header still scrolled
               away with the card (2026-05-20 user report). */}
           <div
-            className="max-w-2xl w-full max-h-[calc(100vh-2rem)] bg-bq-white rounded-2xl border border-bq-hair shadow-bq-soft overflow-hidden flex flex-col"
+            className="max-w-2xl w-full max-h-[calc(100vh-2rem)] bg-bq-white rounded-bq border-[3px] border-bq-ink shadow-bq-card overflow-hidden flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex-shrink-0 flex items-center justify-between px-6 py-4 border-b border-bq-hair">
+            <div className="flex-shrink-0 flex items-center justify-between px-6 py-4 border-b-[3px] border-bq-ink bg-bq-cream">
               <h3 className="text-lg md:text-xl font-extrabold text-bq-ink flex items-center gap-2 min-w-0">
-                <span className="material-symbols-outlined text-bq-amberd flex-shrink-0">school</span>
+                <img src="/images/lk/scroll.webp" alt="" aria-hidden className="h-7 flex-shrink-0" />
                 <span className="truncate">
                   {t('ranked.result.reviewModalTitle', { count: wrongList.length, defaultValue: '{{count}} câu bạn đã sai' })}
                 </span>
@@ -623,7 +474,7 @@ export default function RankedQuizResults({
                 type="button"
                 onClick={() => setShowReviewModal(false)}
                 aria-label={t('common.close')}
-                className="w-9 h-9 rounded-lg bg-bq-inset hover:bg-bq-hair grid place-items-center text-bq-ink2 flex-shrink-0 ml-3"
+                className="w-10 h-10 rounded-full bg-bq-white border-2 border-bq-ink hover:bg-bq-cream grid place-items-center text-bq-ink flex-shrink-0 ml-3"
               >
                 <span className="material-symbols-outlined">close</span>
               </button>
@@ -632,16 +483,16 @@ export default function RankedQuizResults({
               {wrongList.map(({ q, picked, orderNum }) => {
                 const correctIdx = q.correctAnswer?.[0] ?? -1
                 return (
-                  <div key={q.id} className="bg-bq-inset border border-bq-hair rounded-xl p-4">
+                  <div key={q.id} className="bg-bq-parch border-2 border-bq-ink rounded-2xl p-4">
                     <div className="flex items-start justify-between gap-3 mb-3">
                       <div className="flex items-start gap-2 flex-1 min-w-0">
-                        <span className="flex-shrink-0 w-6 h-6 rounded-full grid place-items-center text-xs font-bold bg-error/20 text-error">
+                        <span className="flex-shrink-0 w-7 h-7 rounded-full grid place-items-center text-xs font-extrabold bg-bq-white border-2 border-bq-ink text-bq-ruby">
                           {orderNum}
                         </span>
                         <span className="text-sm font-bold text-bq-ink leading-relaxed">{q.content}</span>
                       </div>
                       <span className="text-[10px] text-bq-ink2 flex-shrink-0 px-2 py-0.5 rounded bg-bq-white border border-bq-hair whitespace-nowrap">
-                        {q.book} {q.chapter}{q.verseStart ? `:${q.verseStart}${q.verseEnd && q.verseEnd !== q.verseStart ? `–${q.verseEnd}` : ''}` : ''}
+                        {ref(q)}
                       </span>
                     </div>
                     <div className="grid grid-cols-1 gap-1.5 mb-3">
@@ -651,27 +502,26 @@ export default function RankedQuizResults({
                         return (
                           <div
                             key={i}
-                            className={`px-3 py-2 rounded-lg text-xs flex items-start gap-2 border ${
+                            className={`px-3 py-2 rounded-xl text-[13px] flex items-start gap-2 border-2 ${
                               isCorrect
-                                ? 'bg-bq-emerald/10 border-bq-emerald/30 text-bq-emerald'
+                                ? 'bg-bq-leaf border-bq-emerald text-bq-ink font-bold'
                                 : isPicked
-                                  ? 'bg-error/10 border-error/30 text-error'
+                                  ? 'bg-bq-white border-bq-ruby text-bq-ruby'
                                   : 'bg-bq-white border-bq-hair text-bq-ink2'
                             }`}
                           >
                             <span className="font-bold">{LETTERS[i] ?? String.fromCharCode(65 + i)}.</span>
                             <span className="flex-1">{opt}</span>
-                            {isCorrect && <span className="material-symbols-outlined text-sm">check_circle</span>}
-                            {!isCorrect && isPicked && <span className="material-symbols-outlined text-sm">cancel</span>}
+                            {isCorrect && <span aria-hidden className="font-extrabold text-bq-emerald">✓</span>}
+                            {!isCorrect && isPicked && <span aria-hidden className="font-extrabold">✗</span>}
                           </div>
                         )
                       })}
                     </div>
                     {q.explanation && (
-                      <div className="text-xs text-bq-ink2 leading-relaxed bg-bq-amber/5 border-l-2 border-bq-amber/40 px-3 py-2 rounded">
-                        <span className="material-symbols-outlined text-sm align-middle mr-1 text-bq-amberd">lightbulb</span>
+                      <p className="font-read text-[13px] text-bq-ink2 leading-relaxed bg-bq-white border-2 border-bq-hair px-3 py-2 rounded-xl">
                         {q.explanation}
-                      </div>
+                      </p>
                     )}
                   </div>
                 )

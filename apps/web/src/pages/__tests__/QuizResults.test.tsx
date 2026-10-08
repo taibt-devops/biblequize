@@ -10,6 +10,8 @@ vi.mock('react-router-dom', async () => {
 })
 
 vi.mock('canvas-confetti', () => ({ default: vi.fn() }))
+// Book names are localized through /api/books (react-query); keep the English keys here.
+vi.mock('../../hooks/useBookName', () => ({ useBookName: () => (k: string) => k }))
 
 import QuizResults from '../QuizResults'
 

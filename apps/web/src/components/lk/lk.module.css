@@ -1,0 +1,71 @@
+/* Lu Khach "place" kit (LKF-7): pieces shared by every screen that is a place in the traveller's world. */
+
+/* Wooden-bezel medal (HUD medals, result badges, stat rings) */
+.medal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff8e7;
+  border: 3px solid #1d2b22;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #c68a4e, 0 0 0 7px #1d2b22, 0 11px 0 rgba(29, 43, 34, 0.45);
+}
+
+/* Wooden plaque for page / section titles: planks, ink outline, two nails */
+.plaque {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.28em 1.15em 0.34em;
+  color: #3a230e;
+  background:
+    repeating-linear-gradient(176deg, rgba(90, 52, 20, 0.16) 0 2px, transparent 2px 9px),
+    linear-gradient(180deg, #d79a5a 0%, #c68a4e 48%, #b0763d 52%, #c68a4e 100%);
+  border: 3px solid #1d2b22;
+  border-radius: 12px;
+  box-shadow: 0 5px 0 #1d2b22;
+  text-shadow: 0 1px 0 rgba(255, 228, 172, 0.7), 0 -1px 0 rgba(43, 26, 8, 0.3);
+}
+.plaque::before,
+.plaque::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  margin-top: -3.5px;
+  border-radius: 50%;
+  background: #3a2a1c;
+  box-shadow: inset -1px -1px 0 rgba(255, 255, 255, 0.25);
+}
+.plaque::before { left: 7px; }
+.plaque::after { right: 7px; }
+
+/* Parchment scroll between two wooden rods */
+.rod {
+  height: 18px;
+  background: #8a5a2b;
+  border: 3px solid #1d2b22;
+  border-radius: 999px;
+}
+.scrollBody {
+  margin: -4px 12px;
+  background: #f9ecc8;
+  border-left: 3px solid #1d2b22;
+  border-right: 3px solid #1d2b22;
+}
+
+/* Result stars pop in one after another */
+.star { display: inline-block; animation: starPop 0.42s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+@keyframes starPop {
+  0% { transform: scale(0) rotate(-40deg); opacity: 0; }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+
+@keyframes bob { 50% { transform: translateY(-6px); } }
+.bob { animation: bob 1.7s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .star, .bob { animation: none; }
+}

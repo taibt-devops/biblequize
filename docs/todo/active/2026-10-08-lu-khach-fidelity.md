@@ -25,7 +25,31 @@ Nguyên tắc: render artboard ra PNG, đặt cạnh ảnh app cùng khổ (1280
   - Status: [x] DONE · Lệch mockup: giữ badge "✓ ĐÚNG · BẠN CHỌN" (test khoá, giúp người mù màu) + nhãn độ khó cạnh tham chiếu; quiz > 20 câu dùng thanh thay chấm
   - Sửa kèm: `.group:hover { box-shadow:none !important }` (tắt quầng đáp án + bóng nút khi rê chuột), `:root`/`select` color-scheme dark → light, `quiz.correctAnswerIs` thiếu đáp án (thay bằng `quiz.lk.correctIs`)
   - **Spec impact**: [x] None · **Spec strategy**: [x] (c)
-- LKF-5 Mockup màn Kết quả → user duyệt → code
-  - Status: [ ] TODO
+- LKF-5 Màn Kết quả (Quiz + Đấu Hạng)
+  - Status: [x] DONE · Quiz: đồng cỏ, 3 sao bật lần lượt, lữ khách mừng/đứng, kết quả trên cuộn giấy, số liệu dạng huy chương viền gỗ, biên lai điểm, thanh độ khó gỗ · Đấu Hạng: sân đấu, 3 trạng thái (thường / lên hạng = khiên hạng mới tỏa sáng / hết năng lượng = lữ khách nghỉ), +XP chữ sticker, thanh hạng, 3 huy chương (câu đúng, điểm mùa, năng lượng = tim)
+  - Quyết định: không làm mockup riêng (user uỷ quyền tự quyết) — dùng ngôn ngữ của Quiz/Trang chủ; tên sách trên kết quả đổi sang tiếng Việt qua `useBookName`
 - LKF-6 Hành trình theo artboard Journey (trạm sách trên bản đồ, panel chi tiết, 8 vùng, huy hiệu)
   - Status: [ ] TODO
+
+### Giai đoạn tự làm toàn bộ màn hình (user 08/10: "list các màn hình ra… design lại và code theo đến khi xong… điều gì cần tôi quyết định bạn cứ tự quyết định")
+
+Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điểm trong thế giới Lữ Khách** — tranh nền vẽ cùng nét (cố định sau nội dung, phủ lớp kem nhẹ để dễ đọc), tiêu đề trên tấm biển gỗ, nội dung trên tấm giấy da viền mực, số liệu dạng huy chương / chip như HUD Trang chủ, nút vàng ấn được. Tranh địa điểm: phòng đọc (Luyện Tập, Học Thuộc, Ôn tập), sân đấu (Đấu Hạng, Giải đấu), nhà bưu điện + chuồng bồ câu (Thử thách hôm nay), quảng trường làng buổi tối (Phòng chơi), gốc sồi cạnh nhà nguyện (Nhóm), đỉnh đồi có bục (Xếp hạng), lều trại lữ khách (Cá nhân, Thành tích, Ngoại hình), cổng làng lúc bình minh (Đăng nhập, Đăng ký, Onboarding), đồng cỏ (Quiz, Kết quả), bản đồ (Hành trình).
+
+| # | Màn hình | Route | Ghi chú |
+|---|---|---|---|
+| LKF-5 | Kết quả Quiz, Kết quả Đấu Hạng | (cuối `/quiz`) | lữ khách ăn mừng, sao, huy chương số liệu |
+| LKF-6 | Hành trình 66 sách | `/journey` | theo artboard Journey đã duyệt (trạm sách trên bản đồ, bảng chi tiết, 8 vùng, huy hiệu) |
+| LKF-7 | Bộ "địa điểm" dùng chung ✅ | — | `components/lk/Place.tsx`: `PlaceBackdrop`, `Plaque` (biển gỗ), `ScrollPanel`, `Medal`, `TrackBar` + 8 tranh địa điểm `place-*.webp` |
+| LKF-8 | Luyện Tập, Học Thuộc (3 màn), Ôn tập | `/practice`, `/practice/memorize*`, `/review` | phòng đọc |
+| LKF-9 | Đấu Hạng, Bài kiểm tra cơ bản | `/ranked`, `/basic-quiz` | sân đấu |
+| LKF-10 | Thử thách hôm nay | `/daily` | lá thư bồ câu mang tới |
+| LKF-11 | Xếp hạng | `/leaderboard` | đỉnh đồi, bục vinh danh |
+| LKF-12 | Cá nhân, Thành tích, Ngoại hình | `/profile`, `/achievements`, `/cosmetics` | lều trại |
+| LKF-13 | Phòng chơi, Danh sách phòng, Tạo phòng, Vào phòng | `/multiplayer`, `/rooms`, `/room/create`, `/room/join` | quảng trường làng |
+| LKF-14 | Phòng chờ, Chơi phòng, Màn chủ phòng, Phân tích phòng | `/room/:id/*` | quảng trường |
+| LKF-15 | Nhóm + chi tiết + trang con | `/groups*` | gốc sồi nhà nguyện |
+| LKF-16 | Giải đấu, chi tiết, trận | `/tournaments*` | sân đấu |
+| LKF-17 | Đăng nhập, Đăng ký, Onboarding, Thử quiz, Landing, Câu đố Kinh Thánh | `/login`, `/register`, `/onboarding*`, `/landing`, `/cau-do-kinh-thanh` | cổng làng |
+| LKF-18 | Chủ đề tuần, Bí ẩn, Tốc độ, Bộ đề của tôi, Trợ giúp, Chính sách, Điều khoản | … | |
+| LKF-19 | Admin | `/admin/*` | **giữ dạng công cụ** (đã sang màu Lữ Khách ở LKD-18) — màn làm việc cần gọn, không đưa cảnh game vào |
+| LKF-20 | Hồi quy + trang nghiệm thu trước/sau + báo cáo | — | |
