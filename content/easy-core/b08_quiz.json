@@ -1,0 +1,2127 @@
+[
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người khôn ngoan xây nhà mình trên gì?",
+  "options": [
+   "Đống rơm",
+   "Cành cây",
+   "Vầng đá",
+   "Mặt nước"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nền đá vững chắc giữ ngôi nhà đứng vững. “giống như một người khôn ngoan, xây nhà mình trên vầng đá.” (Ma-thi-ơ 7:24)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Nhà xây trên đá",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người dại dột xây nhà trên gì?",
+  "options": [
+   "Nước",
+   "Cát",
+   "Băng tuyết",
+   "Mây"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nền cát không giữ được ngôi nhà khi gặp giông bão. “thì giống như người dại dột, xây nhà trên cát.” (Ma-thi-ơ 7:26)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Nhà xây trên đá",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo Chúa Jêsus, người khôn ngoan là người thế nào?",
+  "options": [
+   "Nghe lời Chúa và làm theo",
+   "Nói hay nhất",
+   "Giàu có nhất làng",
+   "Học nhiều sách nhất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nghe và làm theo lời Chúa là xây đời sống trên nền vững chắc. “Vậy, ai nghe lời Ta và làm theo thì giống như một người khôn ngoan” (Ma-thi-ơ 7:24)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Nhà xây trên đá",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo Chúa Jêsus, người dại dột là người thế nào?",
+  "options": [
+   "Không có nhà",
+   "Không biết đọc chữ",
+   "Không có tiền",
+   "Nghe lời Chúa nhưng không làm theo"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nghe mà không làm thì như xây nhà trên cát. “Còn ai nghe lời Ta, nhưng không làm theo, thì giống như người dại dột, xây nhà trên cát.” (Ma-thi-ơ 7:26)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Nhà xây trên đá",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Những gì đã ập đến hai ngôi nhà?",
+  "options": [
+   "Châu chấu và ruồi",
+   "Mưa, lũ lụt và gió",
+   "Lửa và khói",
+   "Động đất và sét"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Cả hai ngôi nhà đều gặp cùng một cơn bão. “Dù có mưa tuôn xuống, lũ lụt tràn đến, gió xô mạnh, nhà ấy vẫn đứng vững” (Ma-thi-ơ 7:25)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Nhà xây trên đá",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi bão đến, nhà xây trên đá thế nào?",
+  "options": [
+   "Vẫn đứng vững",
+   "Bị cháy rụi",
+   "Chìm xuống đất",
+   "Bay lên trời"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngôi nhà có nền vững chắc không bị sụp đổ. “nhà ấy vẫn đứng vững, vì đã được xây trên vầng đá.” (Ma-thi-ơ 7:25)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Nhà xây trên đá",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 27,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi bão đến, nhà xây trên cát thế nào?",
+  "options": [
+   "Trở nên đẹp hơn",
+   "Cao thêm một tầng",
+   "Sập, thiệt hại nặng nề",
+   "Được sửa lại ngay"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nền không vững thì nhà không chịu nổi bão. “Khi mưa tuôn xuống, lũ lụt tràn đến, gió xô mạnh thì nhà ấy sẽ sập, thiệt hại nặng nề.” (Ma-thi-ơ 7:27)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Nhà xây trên đá",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 4,
+  "verseStart": 37,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi cơn bão lớn nổi lên, sóng ập vào thuyền thế nào?",
+  "options": [
+   "Không có sóng nào",
+   "Chỉ ướt mũi thuyền",
+   "Sóng rất nhỏ",
+   "Đến nỗi thuyền đầy nước"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Các môn đồ gặp nguy hiểm giữa biển. “Một cơn bão lớn nổi lên, sóng ập vào thuyền đến nỗi thuyền đầy nước” (Mác 4:37)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Dẹp yên bão biển",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 4,
+  "verseStart": 38,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giữa cơn bão, Đức Chúa Jêsus đang làm gì?",
+  "options": [
+   "Đang giảng dạy",
+   "Đang chèo thuyền",
+   "Đang đánh cá",
+   "Ngủ ở đằng sau lái"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa Jêsus bình an ngủ giữa sóng gió. “nhưng Ngài đang ở đằng sau lái, tựa trên chiếc gối mà ngủ.” (Mác 4:38)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Dẹp yên bão biển",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 4,
+  "verseStart": 38,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Các môn đồ đánh thức Chúa và nói gì?",
+  "options": [
+   "Thầy không lo chúng ta chết sao?",
+   "Trời sáng rồi, Thầy ơi",
+   "Thầy có lạnh không?",
+   "Thầy dậy ăn cơm đi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Các môn đồ sợ hãi trước cơn bão. “Thầy ơi, Thầy không lo chúng ta chết sao?” (Mác 4:38)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Dẹp yên bão biển",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 4,
+  "verseStart": 39,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Jêsus truyền cho biển điều gì?",
+  "options": [
+   "Hãy khô cạn đi!",
+   "Hãy rẽ ra hai bên!",
+   "Hãy yên đi, lặng đi!",
+   "Hãy nổi sóng lên!"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus có quyền trên gió và biển. “Hãy yên đi, lặng đi!” (Mác 4:39)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Dẹp yên bão biển",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 4,
+  "verseStart": 39,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa quở gió, điều gì xảy ra?",
+  "options": [
+   "Bão lớn hơn",
+   "Gió ngưng, biển lặng như tờ",
+   "Trời đổ mưa đá",
+   "Thuyền bị chìm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Thiên nhiên vâng lời Chúa Jêsus ngay lập tức. “Gió liền ngưng bặt và biển lặng như tờ.” (Mác 4:39)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Dẹp yên bão biển",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 4,
+  "verseStart": 40,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Jêsus hỏi các môn đồ điều gì?",
+  "options": [
+   "Sao các con không ngủ?",
+   "Sao các con chèo chậm thế?",
+   "Sao các con không mang đồ ăn?",
+   "Sao các con sợ hãi đến thế?"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa Jêsus muốn các môn đồ có đức tin. “Sao các con sợ hãi đến thế? Không có đức tin sao?” (Mác 4:40)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Dẹp yên bão biển",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 4,
+  "verseStart": 41,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Các môn đồ kinh ngạc nói gì với nhau?",
+  "options": [
+   "Bao giờ mới tới bờ?",
+   "Ai mà cả gió và biển vâng lệnh?",
+   "Mai chúng ta đi đâu?",
+   "Ai đã làm thủng thuyền?"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Các môn đồ bắt đầu nhận ra Chúa Jêsus là ai. “Người nầy là ai mà ngay cả gió và biển cũng phải vâng lệnh người?” (Mác 4:41)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Dẹp yên bão biển",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sau khi cho dân chúng về, Đức Chúa Jêsus đi đâu?",
+  "options": [
+   "Về nhà Phi-e-rơ ngủ",
+   "Vào thành mua bánh",
+   "Lên núi cầu nguyện một mình",
+   "Đi thăm người bệnh"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus dành thời gian riêng để cầu nguyện. “Ngài đi riêng lên núi để cầu nguyện.” (Ma-thi-ơ 14:23)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa đi trên mặt nước",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Jêsus đến với các môn đồ bằng cách nào?",
+  "options": [
+   "Bước đi trên mặt biển",
+   "Chèo một chiếc thuyền nhỏ",
+   "Bay trên không",
+   "Bơi qua biển"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa Jêsus làm điều không ai làm được. “Đức Chúa Jêsus bước đi trên mặt biển, đến với các môn đồ.” (Ma-thi-ơ 14:25)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa đi trên mặt nước",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thấy Chúa đi trên mặt biển, các môn đồ tưởng là gì?",
+  "options": [
+   "Thiên sứ",
+   "Ma",
+   "Một chiếc thuyền",
+   "Một con cá lớn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Các môn đồ kinh hoảng vì chưa từng thấy điều ấy. “Ấy là ma!” (Ma-thi-ơ 14:26)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa đi trên mặt nước",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 27,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Jêsus trấn an các môn đồ thế nào?",
+  "options": [
+   "Hãy nhảy xuống nước!",
+   "Hãy chèo nhanh lên!",
+   "Hãy yên lòng, Ta đây, đừng sợ!",
+   "Hãy quay về bờ!"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus cho họ biết chính Ngài đang đến. “Hãy yên lòng, Ta đây, đừng sợ!” (Ma-thi-ơ 14:27)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa đi trên mặt nước",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Môn đồ nào xin được đi trên mặt nước đến với Chúa?",
+  "options": [
+   "Phi-e-rơ",
+   "Thô-ma",
+   "Giăng",
+   "Giu-đa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Phi-e-rơ muốn bước ra với Chúa. “Lạy Chúa, nếu phải là Chúa, xin khiến con đi trên mặt nước đến với Chúa.” (Ma-thi-ơ 14:28)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa đi trên mặt nước",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 30,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vì sao Phi-e-rơ suýt chìm xuống nước?",
+  "options": [
+   "Vì Chúa đẩy ông",
+   "Vì ông mang quá nặng",
+   "Vì bị cá cắn",
+   "Vì thấy gió thổi nên hoảng sợ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phi-e-rơ nhìn sóng gió thay vì nhìn Chúa. “Nhưng khi thấy gió thổi, Phi-e-rơ hoảng sợ, suýt chìm xuống nước” (Ma-thi-ơ 14:30)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa đi trên mặt nước",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 30,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi sắp chìm, Phi-e-rơ la lên điều gì?",
+  "options": [
+   "Chúa ơi, xin cứu con!",
+   "Tôi biết bơi mà!",
+   "Ai ném dây xuống!",
+   "Thuyền ở đâu rồi?"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Phi-e-rơ kêu cầu Chúa giữa lúc nguy cấp. “Chúa ơi, xin cứu con!” (Ma-thi-ơ 14:30)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa đi trên mặt nước",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Phi-e-rơ kêu cứu, Đức Chúa Jêsus đã làm gì?",
+  "options": [
+   "Gọi thuyền đến",
+   "Bảo ông tự bơi",
+   "Bỏ đi chỗ khác",
+   "Đưa tay nắm lấy ông"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa Jêsus cứu Phi-e-rơ ngay lập tức. “Tức thì, Đức Chúa Jêsus đưa tay nắm lấy Phi-e-rơ” (Ma-thi-ơ 14:31)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa đi trên mặt nước",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus hỏi Phi-e-rơ điều gì?",
+  "options": [
+   "Sao con không gọi Giăng?",
+   "Sao con lại nghi ngờ?",
+   "Sao con không biết bơi?",
+   "Sao con ra khỏi thuyền?"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa Jêsus muốn Phi-e-rơ vững đức tin. “Con thật ít đức tin, sao con lại nghi ngờ?” (Ma-thi-ơ 14:31)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa đi trên mặt nước",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 33,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Những người trên thuyền quỳ lạy và nói Ngài là ai?",
+  "options": [
+   "Một thầy dạy giỏi",
+   "Một nhà tiên tri",
+   "Con Đức Chúa Trời",
+   "Vua dân Do Thái"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Các môn đồ thờ phượng Chúa Jêsus. “Thầy thật là Con Đức Chúa Trời!” (Ma-thi-ơ 14:33)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa đi trên mặt nước",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Việc này xảy ra ở thành nào?",
+  "options": [
+   "Bết-lê-hem",
+   "Ni-ni-ve",
+   "Ca-bê-na-um",
+   "Giê-ru-sa-lem"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus đang giảng trong một ngôi nhà ở Ca-bê-na-um. “Vài ngày sau, Đức Chúa Jêsus trở lại thành Ca-bê-na-um” (Mác 2:1)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người bại được thòng xuống qua mái nhà",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 2,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Có bao nhiêu người khiêng người bại đến với Chúa?",
+  "options": [
+   "Bốn người",
+   "Mười hai người",
+   "Một người",
+   "Hai người"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bốn người bạn cùng khiêng người bại đến gặp Chúa. “Bấy giờ có bốn người khiêng đến Ngài một người bại liệt.” (Mác 2:3)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người bại được thòng xuống qua mái nhà",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vì sao họ không đem người bại vào cửa được?",
+  "options": [
+   "Vì cửa bị khóa",
+   "Vì Chúa không cho",
+   "Vì trời đã tối",
+   "Vì dân chúng quá đông"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nhà chật kín người đến nghe Chúa giảng. “Vì đám đông, họ không thể đem người ấy đến gần Ngài được” (Mác 2:4)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người bại được thòng xuống qua mái nhà",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Họ đã làm gì để đưa người bại đến gần Chúa?",
+  "options": [
+   "Phá cửa sổ",
+   "Dỡ mái nhà, dòng giường xuống",
+   "Chờ đến hôm sau",
+   "Đào đường hầm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Những người bạn không bỏ cuộc trước khó khăn. “đã dỡ mái nhà ngay trên chỗ Ngài đang ngồi; rồi từ lỗ trống đó họ dòng giường người bại xuống.” (Mác 2:4)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người bại được thòng xuống qua mái nhà",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 2,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thấy đức tin của họ, Chúa Jêsus nói gì với người bại?",
+  "options": [
+   "Con chờ ta một chút",
+   "Tội lỗi con đã được tha",
+   "Con phải dâng lễ vật",
+   "Con hãy về nhà đi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa Jêsus tha tội trước khi chữa lành thân thể. “Hỡi con, tội lỗi con đã được tha.” (Mác 2:5)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người bại được thòng xuống qua mái nhà",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Các thầy thông giáo thắc mắc điều gì?",
+  "options": [
+   "Ngoài Đức Chúa Trời, ai tha tội được?",
+   "Ai trả tiền sửa mái?",
+   "Sao người bại đến muộn?",
+   "Vì sao nhà bị dỡ mái?"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Họ không tin Chúa Jêsus có quyền tha tội. “Ngoài Đức Chúa Trời, còn ai có thể tha tội được?” (Mác 2:7)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người bại được thòng xuống qua mái nhà",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Jêsus bảo người bại làm gì?",
+  "options": [
+   "Đi vào đền thờ",
+   "Đi tìm thầy thuốc",
+   "Đứng dậy, vác giường đi về nhà",
+   "Nằm yên chờ đợi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus chứng tỏ Ngài có quyền tha tội. “Ta bảo con, hãy đứng dậy, vác giường và đi về nhà!” (Mác 2:11)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người bại được thòng xuống qua mái nhà",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 2,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thấy người bại đứng dậy đi, mọi người phản ứng thế nào?",
+  "options": [
+   "Giận dữ la mắng",
+   "Bỏ đi không nói gì",
+   "Cười nhạo người bại",
+   "Kinh ngạc và tôn vinh Đức Chúa Trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chưa ai từng thấy việc như vậy. “đến nỗi ai nấy đều kinh ngạc và tôn vinh Đức Chúa Trời” (Mác 2:12)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người bại được thòng xuống qua mái nhà",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 5,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giai-ru là ai?",
+  "options": [
+   "Một thầy tế lễ thượng phẩm",
+   "Một người thu thuế",
+   "Một viên quản lý nhà hội",
+   "Một người đánh cá"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Giai-ru là người có địa vị trong nhà hội. “Bấy giờ, một trong những viên quản lý nhà hội tên là Giai-ru đến.” (Mác 5:22)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con gái Giai-ru",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 5,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giai-ru nài xin Chúa Jêsus điều gì?",
+  "options": [
+   "Giúp ông có tiền",
+   "Đến chữa lành con gái nhỏ sắp chết",
+   "Cho ông làm môn đồ",
+   "Đến dự tiệc ở nhà ông"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Giai-ru tin Chúa Jêsus có thể cứu con gái mình. “Con gái nhỏ của tôi sắp chết. Xin Thầy đến và đặt tay trên cháu, để cháu được chữa lành và sống.” (Mác 5:23)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con gái Giai-ru",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 5,
+  "verseStart": 27,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trên đường đi, người phụ nữ bị bệnh đã chạm vào đâu?",
+  "options": [
+   "Túi của Phi-e-rơ",
+   "Thuyền của Chúa Jêsus",
+   "Gậy của Chúa Jêsus",
+   "Áo của Chúa Jêsus"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bà tin chỉ cần chạm vào áo Ngài là được lành. “tiến đến phía sau Ngài và chạm vào áo Ngài.” (Mác 5:27)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con gái Giai-ru",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 5,
+  "verseStart": 29,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chạm vào áo Chúa, người phụ nữ được gì?",
+  "options": [
+   "Được lành bệnh ngay",
+   "Bị Chúa quở trách",
+   "Không có gì xảy ra",
+   "Được nhiều tiền"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Căn bệnh nhiều năm của bà lành ngay lập tức. “Lập tức, máu cầm lại. Bà cảm nhận ngay rằng mình đã được chữa lành.” (Mác 5:29)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con gái Giai-ru",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 5,
+  "verseStart": 34,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nói điều gì đã cứu người phụ nữ?",
+  "options": [
+   "Các thầy thuốc",
+   "Đức tin của bà",
+   "Tiền của bà",
+   "Chiếc áo choàng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đức tin đưa bà đến với Chúa. “Hỡi con gái Ta, đức tin của con đã cứu con” (Mác 5:34)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con gái Giai-ru",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 5,
+  "verseStart": 36,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nghe tin con gái Giai-ru đã chết, Chúa Jêsus nói gì?",
+  "options": [
+   "Ta không đến nữa",
+   "Đã quá muộn rồi",
+   "Đừng sợ, chỉ tin mà thôi",
+   "Hãy chôn cất cháu đi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus khích lệ Giai-ru tiếp tục tin. “Đừng sợ, chỉ tin mà thôi.” (Mác 5:36)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con gái Giai-ru",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 5,
+  "verseStart": 39,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nói cháu bé đang thế nào?",
+  "options": [
+   "Không chết, nhưng đang ngủ",
+   "Đang ở đền thờ",
+   "Đang bị bệnh nặng",
+   "Đang đi chơi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Với Chúa, sự chết như một giấc ngủ. “Không phải cháu bé chết đâu, nhưng nó đang ngủ.” (Mác 5:39)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con gái Giai-ru",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 5,
+  "verseStart": 40,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nghe Chúa nói cháu bé đang ngủ, mọi người làm gì?",
+  "options": [
+   "Quỳ xuống thờ lạy",
+   "Im lặng tin tưởng",
+   "Vui mừng reo hò",
+   "Nhạo cười Ngài"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ không tin Chúa có thể làm người chết sống lại. “Họ nhạo cười Ngài.” (Mác 5:40)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con gái Giai-ru",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 5,
+  "verseStart": 41,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nắm tay cháu bé và nói gì?",
+  "options": [
+   "Bé gái, hãy ngủ tiếp",
+   "Bé gái, hãy trỗi dậy",
+   "Bé gái, đừng khóc nữa",
+   "Bé gái, hãy về nhà"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lời của Chúa làm cho cháu bé sống lại. “Nầy bé gái, Ta truyền cho con hãy trỗi dậy.” (Mác 5:41)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con gái Giai-ru",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 5,
+  "verseStart": 43,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sau khi cháu bé sống lại, Chúa bảo người nhà làm gì?",
+  "options": [
+   "Mở tiệc lớn",
+   "Đưa cháu đến đền thờ",
+   "Cho cháu ăn",
+   "Cho cháu ngủ tiếp"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus quan tâm cả nhu cầu nhỏ của cháu bé. “và bảo họ cho đứa trẻ ăn.” (Mác 5:43)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Con gái Giai-ru",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 46,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người mù ngồi ăn xin bên đường tên là gì?",
+  "options": [
+   "Ba-ti-mê",
+   "Ni-cô-đem",
+   "La-xa-rơ",
+   "Xa-chê"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ba-ti-mê là con trai của Ti-mê. “có một người mù tên là Ba-ti-mê, con trai của Ti-mê, ngồi ăn xin bên đường.” (Mác 10:46)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người mù Ba-ti-mê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 46,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ba-ti-mê ngồi ăn xin gần thành nào?",
+  "options": [
+   "Bết-lê-hem",
+   "Ca-na",
+   "Na-xa-rét",
+   "Giê-ri-cô"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa Jêsus vừa rời khỏi thành Giê-ri-cô. “Đức Chúa Jêsus và các môn đồ đến Giê-ri-cô.” (Mác 10:46)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người mù Ba-ti-mê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 47,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ba-ti-mê kêu lên với Chúa Jêsus thế nào?",
+  "options": [
+   "Xin cho con đi theo!",
+   "Xin cho con tiền!",
+   "Xin cho con bánh!",
+   "Con vua Đa-vít, xin đoái thương con!"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ba-ti-mê tin Chúa Jêsus là Đấng Cứu Thế. “Lạy Đức Chúa Jêsus, Con vua Đa-vít, xin đoái thương con!” (Mác 10:47)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người mù Ba-ti-mê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 48,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi nhiều người bảo im lặng, Ba-ti-mê làm gì?",
+  "options": [
+   "Im lặng ngay",
+   "Càng kêu lớn hơn",
+   "Bỏ đi chỗ khác",
+   "Khóc thầm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ba-ti-mê không bỏ lỡ cơ hội gặp Chúa. “nhưng anh càng kêu lớn hơn” (Mác 10:48)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người mù Ba-ti-mê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 50,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Được Chúa gọi, Ba-ti-mê đã làm gì?",
+  "options": [
+   "Vứt áo choàng, đứng phắt dậy",
+   "Từ chối không đi",
+   "Ngồi yên chờ Chúa đến",
+   "Bảo người khác đi thay"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ba-ti-mê vội vàng đến với Chúa. “Người mù vứt bỏ áo choàng, đứng phắt dậy và đến với Đức Chúa Jêsus.” (Mác 10:50)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người mù Ba-ti-mê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 51,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus hỏi Ba-ti-mê câu gì?",
+  "options": [
+   "Con ở đâu đến?",
+   "Con bị mù bao lâu?",
+   "Con muốn Ta làm gì cho con?",
+   "Con tên là gì?"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus mời Ba-ti-mê nói ra điều mình cần. “Con muốn Ta làm gì cho con?” (Mác 10:51)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người mù Ba-ti-mê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 51,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ba-ti-mê xin Chúa điều gì?",
+  "options": [
+   "Được sáng mắt",
+   "Được một ngôi nhà",
+   "Được giàu có",
+   "Được ăn no"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ba-ti-mê xin điều mình cần nhất. “Lạy Thầy, xin cho con được sáng mắt.” (Mác 10:51)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người mù Ba-ti-mê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 52,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa nói điều gì đã chữa lành Ba-ti-mê?",
+  "options": [
+   "Tiền bạc",
+   "Nước giếng thánh",
+   "Đức tin của anh",
+   "Thầy thuốc giỏi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đức tin của Ba-ti-mê được Chúa khen. “Hãy đi, đức tin con đã chữa lành con.” (Mác 10:52)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người mù Ba-ti-mê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 52,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sáng mắt rồi, Ba-ti-mê làm gì?",
+  "options": [
+   "Tiếp tục ăn xin",
+   "Đi theo Chúa Jêsus",
+   "Về nhà ngủ",
+   "Đi buôn bán"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ba-ti-mê trở thành người theo Chúa. “Lập tức người mù được sáng mắt lại và đi theo Ngài.” (Mác 10:52)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Người mù Ba-ti-mê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Xa-chê làm nghề gì?",
+  "options": [
+   "Người đánh cá",
+   "Người chăn chiên",
+   "Thợ mộc",
+   "Trưởng ngành thuế vụ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Xa-chê là người thu thuế giàu có. “Tại đó, có một người tên Xa-chê, làm trưởng ngành thuế vụ và giàu có.” (Lu-ca 19:2)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Xa-chê trên cây sung",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vì sao Xa-chê không thấy được Chúa Jêsus?",
+  "options": [
+   "Vì ông bị mù",
+   "Vì ông thấp mà dân đông",
+   "Vì ông ở nhà",
+   "Vì trời tối"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đám đông che khuất người thấp như Xa-chê. “vì đoàn dân thì đông mà ông lại thấp.” (Lu-ca 19:3)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Xa-chê trên cây sung",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Xa-chê trèo lên cây gì để nhìn Chúa?",
+  "options": [
+   "Cây chà là",
+   "Cây ô-liu",
+   "Cây sung",
+   "Cây nho"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Xa-chê tìm mọi cách để thấy Chúa Jêsus. “Vậy, Xa-chê chạy trước và trèo lên cây sung để nhìn Ngài” (Lu-ca 19:4)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Xa-chê trên cây sung",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Jêsus nói gì với Xa-chê?",
+  "options": [
+   "Hãy xuống mau, Ta ở nhà ngươi hôm nay",
+   "Hãy đưa tiền cho Ta",
+   "Hãy đi về nhà đi",
+   "Hãy ở yên trên cây"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa Jêsus biết tên Xa-chê và muốn đến nhà ông. “Hỡi Xa-chê, hãy xuống mau, vì hôm nay Ta phải ở lại nhà của ngươi.” (Lu-ca 19:5)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Xa-chê trên cây sung",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Xa-chê tiếp rước Chúa thế nào?",
+  "options": [
+   "Lạnh nhạt",
+   "Miễn cưỡng",
+   "Sợ hãi trốn đi",
+   "Vội vàng và mừng rỡ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Xa-chê vui mừng vì được Chúa đến thăm. “Xa-chê vội vàng trèo xuống và mừng rỡ tiếp rước Ngài.” (Lu-ca 19:6)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Xa-chê trên cây sung",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Mọi người phàn nàn điều gì?",
+  "options": [
+   "Chúa không chữa bệnh",
+   "Chúa đi quá nhanh",
+   "Chúa vào nhà kẻ tội lỗi mà trọ",
+   "Chúa không giảng dạy"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người ta coi Xa-chê là kẻ tội lỗi. “Người nầy vào nhà kẻ tội lỗi mà trọ!” (Lu-ca 19:7)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Xa-chê trên cây sung",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Xa-chê hứa lấy bao nhiêu tài sản cho người nghèo?",
+  "options": [
+   "Toàn bộ tài sản",
+   "Phân nửa tài sản",
+   "Một đồng bạc",
+   "Một phần mười"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Gặp Chúa, Xa-chê thay đổi cách sống. “tôi lấy phân nửa tài sản của tôi mà cho người nghèo” (Lu-ca 19:8)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Xa-chê trên cây sung",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nếu đã làm thiệt hại ai, Xa-chê hứa đền bao nhiêu?",
+  "options": [
+   "Bằng một nửa",
+   "Gấp đôi",
+   "Không đền gì",
+   "Gấp tư"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Xa-chê muốn sửa lại những sai trái của mình. “nếu có làm thiệt hại ai bất kỳ việc gì, tôi sẽ đền gấp tư.” (Lu-ca 19:8)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Xa-chê trên cây sung",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nói điều gì đã đến nhà Xa-chê hôm ấy?",
+  "options": [
+   "Sự cứu rỗi",
+   "Một vị khách lạ",
+   "Tai họa",
+   "Sự giàu có"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Xa-chê được cứu khi ăn năn và tin Chúa. “Hôm nay sự cứu rỗi đã vào nhà nầy” (Lu-ca 19:9)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Xa-chê trên cây sung",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Con Người đến thế gian để làm gì?",
+  "options": [
+   "Xây đền thờ mới",
+   "Tìm và cứu kẻ bị hư mất",
+   "Thu thuế dân chúng",
+   "Làm vua thế gian"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa Jêsus đến vì những người lạc lối như Xa-chê. “Bởi Con Người đã đến để tìm và cứu kẻ bị hư mất.” (Lu-ca 19:10)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Xa-chê trên cây sung",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "La-xa-rơ là anh của hai chị em nào?",
+  "options": [
+   "Ma-thê và Ma-ri",
+   "Ra-chên và Lê-a",
+   "Sa-ra và Rê-bê-ca",
+   "Ru-tơ và Ọt-ba"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ba anh em sống ở làng Bê-tha-ni. “Có một người bệnh tên là La-xa-rơ, quê ở Bê-tha-ni, làng của Ma-ri và chị là Ma-thê.” (Giăng 11:1)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "La-xa-rơ sống lại",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hai chị em sai người báo tin gì cho Chúa?",
+  "options": [
+   "Mùa gặt đã đến",
+   "Nhà bị cháy rồi",
+   "Người Chúa yêu thương đang bệnh",
+   "Có khách đến chơi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus rất yêu thương gia đình La-xa-rơ. “Thưa Chúa, người Chúa yêu thương đang bệnh.” (Giăng 11:3)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "La-xa-rơ sống lại",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa Jêsus đến, La-xa-rơ đã được chôn bao lâu?",
+  "options": [
+   "Một tháng",
+   "Bảy năm",
+   "Một giờ",
+   "Bốn ngày"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "La-xa-rơ đã chết thật, không chỉ ngất đi. “Khi đến nơi, Đức Chúa Jêsus thấy La-xa-rơ đã được chôn trong mộ bốn ngày rồi.” (Giăng 11:17)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "La-xa-rơ sống lại",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nói với Ma-thê: Ta là sự sống lại và là gì?",
+  "options": [
+   "Sự khôn ngoan",
+   "Sự sống",
+   "Sự yên nghỉ",
+   "Sự giàu có"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ai tin Chúa Jêsus thì sẽ sống. “Ta là sự sống lại và sự sống. Người nào tin Ta thì sẽ sống, mặc dù đã chết rồi.” (Giăng 11:25)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "La-xa-rơ sống lại",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 27,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ma-thê tin Chúa Jêsus là ai?",
+  "options": [
+   "Một nhà tiên tri thường",
+   "Một vị vua trần gian",
+   "Một thầy thuốc giỏi",
+   "Đấng Christ, Con Đức Chúa Trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ma-thê tuyên xưng đức tin trước khi thấy phép lạ. “con tin rằng Chúa là Đấng Christ, Con Đức Chúa Trời, Đấng phải đến thế gian.” (Giăng 11:27)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "La-xa-rơ sống lại",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 35,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Câu ngắn nào cho thấy Chúa Jêsus đau buồn với gia đình La-xa-rơ?",
+  "options": [
+   "Đức Chúa Jêsus cười",
+   "Đức Chúa Jêsus ngủ",
+   "Đức Chúa Jêsus khóc",
+   "Đức Chúa Jêsus bỏ đi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus đồng cảm với nỗi đau của con người. “Đức Chúa Jêsus khóc.” (Giăng 11:35)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "La-xa-rơ sống lại",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 38,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Mộ của La-xa-rơ được chận bằng gì?",
+  "options": [
+   "Một tảng đá",
+   "Một cánh cửa gỗ",
+   "Một hàng rào",
+   "Một tấm vải"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Mộ là một cái hang có tảng đá lớn chận lại. “Đó là một cái hang có một tảng đá chận lại.” (Giăng 11:38)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "La-xa-rơ sống lại",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 43,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Jêsus kêu lớn điều gì trước mộ?",
+  "options": [
+   "Hỡi môn đồ, hãy về!",
+   "Hỡi La-xa-rơ, hãy ngủ!",
+   "Hỡi Ma-thê, hãy đi!",
+   "Hỡi La-xa-rơ, hãy ra!"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lời của Chúa Jêsus gọi người chết sống lại. “Hỡi La-xa-rơ, hãy ra!” (Giăng 11:43)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "La-xa-rơ sống lại",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 44,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi La-xa-rơ đi ra, ông trông thế nào?",
+  "options": [
+   "Đội mão vàng",
+   "Chân tay buộc vải liệm",
+   "Mặc áo vua",
+   "Cầm một cây đèn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "La-xa-rơ bước ra trong vải liệm, sống lại thật. “Người chết đi ra, chân tay buộc vải liệm, mặt phủ một tấm khăn.” (Giăng 11:44)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "La-xa-rơ sống lại",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 45,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thấy phép lạ, nhiều người Do Thái đã làm gì?",
+  "options": [
+   "Cười nhạo",
+   "Sợ hãi trốn chạy",
+   "Tin Chúa Jêsus",
+   "Bỏ đi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phép lạ dẫn nhiều người đến với Chúa. “thấy điều Đức Chúa Jêsus làm thì tin Ngài.” (Giăng 11:45)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "La-xa-rơ sống lại",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 38,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ai tiếp đón Đức Chúa Jêsus vào nhà mình?",
+  "options": [
+   "Ma-thê",
+   "Đô-ca",
+   "Ru-tơ",
+   "Ê-li-sa-bét"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ma-thê mời Chúa Jêsus vào nhà. “Có một phụ nữ tên Ma-thê tiếp đón Ngài vào nhà mình.” (Lu-ca 10:38)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Ma-ri và Ma-thê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 39,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ma-ri, em gái Ma-thê, làm gì khi Chúa đến?",
+  "options": [
+   "Ra đồng làm việc",
+   "Đi chợ mua đồ",
+   "Ngủ trong phòng",
+   "Ngồi dưới chân Chúa nghe lời Ngài"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ma-ri chọn lắng nghe lời Chúa. “Cô có người em gái tên Ma-ri ngồi dưới chân Chúa để lắng nghe lời Ngài.” (Lu-ca 10:39)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Ma-ri và Ma-thê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 40,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ma-thê bận rộn với việc gì?",
+  "options": [
+   "Việc phục vụ khách",
+   "Việc đánh cá",
+   "Việc dạy học",
+   "Việc buôn bán"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ma-thê lo chuẩn bị mọi thứ cho khách. “Còn Ma-thê mải bận rộn với việc phục vụ” (Lu-ca 10:40)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Ma-ri và Ma-thê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 40,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ma-thê xin Chúa điều gì?",
+  "options": [
+   "Chữa bệnh cho em",
+   "Bảo Ma-ri xuống giúp mình",
+   "Ở lại thêm vài ngày",
+   "Kể thêm một chuyện"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ma-thê thấy mình phải làm việc một mình. “Xin Chúa bảo nó giúp con!” (Lu-ca 10:40)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Ma-ri và Ma-thê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 41,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa nói Ma-thê đang thế nào?",
+  "options": [
+   "Rất vui vẻ",
+   "Rất lười biếng",
+   "Lo lắng và bối rối về nhiều việc",
+   "Rất bình an"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus nhẹ nhàng chỉ ra nỗi lo của Ma-thê. “Hỡi Ma-thê, Ma-thê, con lo lắng và bối rối về nhiều việc” (Lu-ca 10:41)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Ma-ri và Ma-thê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 42,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nói có bao nhiêu việc thật sự cần?",
+  "options": [
+   "Hai việc",
+   "Chỉ một việc",
+   "Không việc nào",
+   "Rất nhiều việc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Điều cần nhất là ở gần Chúa và nghe lời Ngài. “nhưng chỉ có một việc cần mà thôi.” (Lu-ca 10:42)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Ma-ri và Ma-thê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 42,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa nói Ma-ri đã chọn điều gì?",
+  "options": [
+   "Phần tốt, không ai đoạt được",
+   "Phần ngồi gần cửa",
+   "Phần ăn ngon nhất",
+   "Phần việc nhẹ nhàng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lắng nghe Chúa là phần quý giá nhất. “Ma-ri đã chọn phần tốt, là phần sẽ không ai đoạt lấy của nàng được.” (Lu-ca 10:42)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Ma-ri và Ma-thê",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người ta đem ai đến với Chúa Jêsus để Ngài đặt tay?",
+  "options": [
+   "Người già",
+   "Các thầy tế lễ",
+   "Người bệnh",
+   "Con trẻ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cha mẹ muốn con mình được Chúa ban phước. “Người ta đem con trẻ đến với Đức Chúa Jêsus để được Ngài đặt tay trên chúng” (Mác 10:13)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa ban phước cho trẻ em",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Các môn đồ đã làm gì?",
+  "options": [
+   "Dạy các em hát",
+   "Cho các em bánh",
+   "Trách những người đem trẻ đến",
+   "Ẵm các em lên"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Các môn đồ nghĩ trẻ em làm phiền Thầy. “nhưng các môn đồ trách họ.” (Mác 10:13)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa ban phước cho trẻ em",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thấy các môn đồ ngăn cản, Chúa Jêsus cảm thấy thế nào?",
+  "options": [
+   "Sợ hãi",
+   "Giận",
+   "Vui mừng",
+   "Buồn ngủ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa Jêsus không muốn ai ngăn trẻ em đến với Ngài. “Thấy vậy, Ngài giận” (Mác 10:14)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa ban phước cho trẻ em",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus bảo các môn đồ điều gì?",
+  "options": [
+   "Hãy đuổi bọn trẻ về",
+   "Hãy để trẻ chơi ngoài sân",
+   "Hãy để con trẻ đến cùng Ta",
+   "Hãy dạy trẻ đọc sách"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus yêu thương và chào đón trẻ em. “Hãy để con trẻ đến cùng Ta, đừng ngăn cấm chúng” (Mác 10:14)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa ban phước cho trẻ em",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vương quốc Đức Chúa Trời thuộc về những ai?",
+  "options": [
+   "Những ai giống như con trẻ",
+   "Những người học cao",
+   "Những người lớn tuổi",
+   "Những người giàu có"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lòng đơn sơ tin cậy như trẻ nhỏ đẹp lòng Chúa. “vì vương quốc Đức Chúa Trời thuộc về những ai giống như các con trẻ ấy.” (Mác 10:14)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa ban phước cho trẻ em",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phải tiếp nhận vương quốc Đức Chúa Trời như thế nào?",
+  "options": [
+   "Như một thầy giáo",
+   "Như một vị vua",
+   "Như một người lính",
+   "Như một đứa trẻ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phải đến với Chúa bằng lòng khiêm nhường, tin cậy. “ai không tiếp nhận vương quốc Đức Chúa Trời như một đứa trẻ thì sẽ không vào đó được.” (Mác 10:15)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa ban phước cho trẻ em",
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Mark",
+  "chapter": 10,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus đã làm gì với các em nhỏ?",
+  "options": [
+   "Ẵm, đặt tay và ban phước",
+   "Giao các em cho môn đồ",
+   "Bắt các em ngồi yên",
+   "Đuổi các em về nhà"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa Jêsus dành thời gian ban phước cho từng em. “Rồi Ngài ẵm những đứa trẻ ấy, đặt tay trên chúng và ban phước cho.” (Mác 10:16)",
+  "language": "vi",
+  "tags": [
+   "Dễ cốt lõi",
+   "Chúa ban phước cho trẻ em",
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]

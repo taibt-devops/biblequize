@@ -82,17 +82,17 @@
 | 69 | Người phụ nữ bên giếng ✓ | Giăng 4 |
 | 70 | Các phước lành ✓ | Ma-thi-ơ 5 |
 | 71 | Bài cầu nguyện Chúa dạy ✓ | Ma-thi-ơ 6 |
-| 72 | Nhà xây trên đá | Ma-thi-ơ 7 |
-| 73 | Dẹp yên bão biển | Mác 4 |
+| 72 | Nhà xây trên đá ✓ | Ma-thi-ơ 7 |
+| 73 | Dẹp yên bão biển ✓ | Mác 4 |
 | 74 | Năm chiếc bánh và hai con cá ✓ | Giăng 6 |
-| 75 | Chúa đi trên mặt nước | Ma-thi-ơ 14 |
-| 76 | Người bại được thòng xuống qua mái nhà | Mác 2 |
-| 77 | Con gái Giai-ru | Mác 5 |
-| 78 | Người mù Ba-ti-mê | Mác 10 |
-| 79 | Xa-chê trên cây sung | Lu-ca 19 |
-| 80 | La-xa-rơ sống lại | Giăng 11 |
-| 81 | Ma-ri và Ma-thê | Lu-ca 10 |
-| 82 | Chúa ban phước cho trẻ em | Mác 10 |
+| 75 | Chúa đi trên mặt nước ✓ | Ma-thi-ơ 14 |
+| 76 | Người bại được thòng xuống qua mái nhà ✓ | Mác 2 |
+| 77 | Con gái Giai-ru ✓ | Mác 5 |
+| 78 | Người mù Ba-ti-mê ✓ | Mác 10 |
+| 79 | Xa-chê trên cây sung ✓ | Lu-ca 19 |
+| 80 | La-xa-rơ sống lại ✓ | Giăng 11 |
+| 81 | Ma-ri và Ma-thê ✓ | Lu-ca 10 |
+| 82 | Chúa ban phước cho trẻ em ✓ | Mác 10 |
 | 83 | Người Sa-ma-ri nhân lành | Lu-ca 10 |
 | 84 | Con chiên lạc | Lu-ca 15 |
 | 85 | Người con hoang đàng | Lu-ca 15 |
