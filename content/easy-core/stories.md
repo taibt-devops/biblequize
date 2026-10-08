@@ -103,17 +103,17 @@
 | 90 | Chúa vào thành Giê-ru-sa-lem ✓ | Ma-thi-ơ 21 |
 | 91 | Chúa rửa chân cho môn đồ ✓ | Giăng 13 |
 | 92 | Tiệc Thánh đầu tiên ✓ | Lu-ca 22 |
-| 93 | Vườn Ghết-sê-ma-nê | Ma-thi-ơ 26 |
-| 94 | Phi-e-rơ chối Chúa | Lu-ca 22 |
+| 93 | Vườn Ghết-sê-ma-nê ✓ | Ma-thi-ơ 26 |
+| 94 | Phi-e-rơ chối Chúa ✓ | Lu-ca 22 |
 | 95 | Thập tự và phục sinh ✓ | Lu-ca 23–24, Giăng 20 |
-| 96 | Trên đường Em-ma-út | Lu-ca 24 |
-| 97 | Đại Mạng Lệnh | Ma-thi-ơ 28 |
-| 98 | Chúa thăng thiên | Công Vụ 1 |
-| 99 | Lễ Ngũ Tuần | Công Vụ 2 |
-| 100 | Hội thánh đầu tiên | Công Vụ 2 |
-| 101 | Phi-e-rơ chữa người què | Công Vụ 3 |
-| 102 | Ê-tiên | Công Vụ 7 |
-| 103 | Phi-líp và hoạn quan Ê-thi-ô-pi | Công Vụ 8 |
+| 96 | Trên đường Em-ma-út ✓ | Lu-ca 24 |
+| 97 | Đại Mạng Lệnh ✓ | Ma-thi-ơ 28 |
+| 98 | Chúa thăng thiên ✓ | Công Vụ 1 |
+| 99 | Lễ Ngũ Tuần ✓ | Công Vụ 2 |
+| 100 | Hội thánh đầu tiên ✓ | Công Vụ 2 |
+| 101 | Phi-e-rơ chữa người què ✓ | Công Vụ 3 |
+| 102 | Ê-tiên ✓ | Công Vụ 7 |
+| 103 | Phi-líp và hoạn quan Ê-thi-ô-pi ✓ | Công Vụ 8 |
 | 104 | Sau-lơ trên đường Đa-mách | Công Vụ 9 |
 | 105 | Phi-e-rơ được giải thoát khỏi ngục | Công Vụ 12 |
 | 106 | Phao-lô và Si-la trong ngục | Công Vụ 16 |
