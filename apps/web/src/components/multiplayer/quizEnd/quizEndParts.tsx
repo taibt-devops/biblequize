@@ -10,7 +10,7 @@ export const Stat: React.FC<{
   border?: boolean;
 }> = ({ label, value, color = '#fff', border }) => (
   <div className={border ? 'border-x' : ''} style={{ borderColor: 'rgba(255,255,255,0.05)' }}>
-    <div className="text-[10px] uppercase tracking-wider" style={{ color: '#9ca3af' }}>
+    <div className="text-[12px]" style={{ color: '#9ca3af' }}>
       {label}
     </div>
     <div className="font-bold text-base lg:text-lg mt-0.5" style={{ color }}>

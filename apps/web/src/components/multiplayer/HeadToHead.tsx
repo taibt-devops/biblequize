@@ -112,7 +112,7 @@ export function HeadToHead({ results, compact = false, light = false, metric }: 
           </div>
         )}
         <div
-          className="mt-2 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider"
+          className="mt-2 px-3 py-1 rounded-full text-[12.5px] font-bold"
           style={{
             background: isWinner ? 'rgba(232,168,50,0.16)' : 'rgba(156,163,175,0.14)',
             color: ring, border: `1px solid ${isWinner ? 'rgba(232,168,50,0.4)' : 'rgba(156,163,175,0.35)'}`,

@@ -40,7 +40,7 @@ export default function LeaderboardSeasonWidget() {
       className="rounded-[10px] px-3.5 py-3 bg-bq-white border border-bq-amber/20 shadow-bq-soft"
     >
       <div
-        className="text-[10px] uppercase font-bold mb-1.5 text-bq-amberd"
+        className="text-[12px] font-bold mb-1.5 text-bq-amberd"
         style={{ letterSpacing: '0.12em' }}
       >
         {t('leaderboard.sidebar.seasonLabel')}

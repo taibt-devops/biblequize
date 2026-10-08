@@ -67,21 +67,21 @@ const Tournaments: React.FC = () => {
     switch (status) {
       case 'REGISTRATION':
         return (
-          <span data-testid="tournament-status-badge" className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-bq-amber/20 text-bq-amberd">
+          <span data-testid="tournament-status-badge" className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-black bg-bq-amber/20 text-bq-amberd">
             <span className="w-1.5 h-1.5 rounded-full bg-bq-amber animate-pulse" />
             {t('tournaments.statusRegistration')}
           </span>
         );
       case 'IN_PROGRESS':
         return (
-          <span data-testid="tournament-status-badge" className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-bq-emerald/20 text-bq-emerald">
+          <span data-testid="tournament-status-badge" className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-black bg-bq-emerald/20 text-bq-emerald">
             <span className="w-1.5 h-1.5 rounded-full bg-bq-emerald animate-pulse" />
             {t('tournaments.statusInProgress')}
           </span>
         );
       case 'COMPLETED':
         return (
-          <span data-testid="tournament-status-badge" className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-bq-ink2/20 text-bq-ink2">
+          <span data-testid="tournament-status-badge" className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-black bg-bq-ink2/20 text-bq-ink2">
             {t('tournaments.statusCompleted')}
           </span>
         );
@@ -94,7 +94,7 @@ const Tournaments: React.FC = () => {
     <div className="max-w-4xl mx-auto bg-bq-paper" data-testid="tournaments-page">
       {/* Header */}
       <section className="mb-10">
-        <span className="text-bq-amberd font-bold tracking-[0.2em] uppercase text-xs mb-2 block">
+        <span className="text-bq-amberd font-bold text-[12.5px] mb-2 block">
           {t('tournaments.specialEvent')}
         </span>
         <h1 className="font-display text-4xl md:text-5xl font-black text-bq-ink tracking-tighter mb-4">
@@ -124,7 +124,7 @@ const Tournaments: React.FC = () => {
           </p>
           <button
             onClick={() => refetch()}
-            className="px-6 py-3 bg-bq-action text-bq-ink shadow-bq-action rounded-xl font-black text-xs uppercase tracking-widest hover:opacity-90 transition-all active:scale-95"
+            className="px-6 py-3 bg-bq-action text-bq-ink shadow-bq-action rounded-xl font-black text-[12.5px] hover:opacity-90 transition-all active:scale-95"
           >
             {t('common.retry')}
           </button>

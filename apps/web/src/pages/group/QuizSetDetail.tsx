@@ -157,7 +157,7 @@ export default function QuizSetDetail() {
           {/* Description */}
           {quizSet.description && (
             <div>
-              <div className="hidden md:block text-xs font-semibold text-bq-ink2 uppercase tracking-wider mb-2">Mô tả</div>
+              <div className="hidden md:block text-[12.5px] font-semibold text-bq-ink2 mb-2">Mô tả</div>
               <p className="text-xs lg:text-sm text-bq-ink2 leading-relaxed">{quizSet.description}</p>
             </div>
           )}
@@ -165,7 +165,7 @@ export default function QuizSetDetail() {
           {/* Author note */}
           {quizSet.authorNote && (
             <div className="bg-bq-inset rounded-xl p-3 lg:p-4 border-l-4 border-bq-amber">
-              <div className="text-[10px] font-semibold text-bq-amberd uppercase tracking-wider mb-1 lg:mb-1.5">{t('quizSet.detail.authorNote')}</div>
+              <div className="text-[12px] font-semibold text-bq-amberd mb-1 lg:mb-1.5">{t('quizSet.detail.authorNote')}</div>
               <div className="text-xs lg:text-sm text-bq-ink2 whitespace-pre-wrap">{quizSet.authorNote}</div>
             </div>
           )}
@@ -186,7 +186,7 @@ export default function QuizSetDetail() {
             {hasMastery && <MasteryCard t={t} mastery={mastery!} totalQuestions={quizSet.totalQuestions} masteryPct={masteryPct} />}
 
             {quizSet.suggestedMode && (
-              <div className="text-[10px] font-semibold text-bq-ink2 uppercase tracking-wider">
+              <div className="text-[12px] font-semibold text-bq-ink2">
                 {t('quizSet.detail.suggestedMode', { mode: MODE_LABELS[quizSet.suggestedMode].vi })}
               </div>
             )}
@@ -258,7 +258,7 @@ export default function QuizSetDetail() {
 
           {quizSet.suggestedMode && (
             <div>
-              <div className="text-[10px] font-semibold text-bq-ink2 uppercase tracking-wider mb-2">💡 Mode đề xuất</div>
+              <div className="text-[12px] font-semibold text-bq-ink2 mb-2">💡 Mode đề xuất</div>
               <div className="bg-bq-white border border-bq-emerald/30 shadow-bq-soft rounded-xl p-3">
                 <div className="flex items-center gap-3">
                   <div className={`w-10 h-10 rounded-lg ${MODE_LABELS[quizSet.suggestedMode].cssClass} flex items-center justify-center text-xl shrink-0`}>
@@ -275,7 +275,7 @@ export default function QuizSetDetail() {
 
           {/* Leader actions stacked */}
           <div className="rounded-xl p-3 border border-bq-hair bg-bq-white shadow-bq-soft">
-            <div className="text-[10px] font-semibold text-bq-amberd uppercase tracking-wider mb-2 flex items-center gap-1.5">
+            <div className="text-[12px] font-semibold text-bq-amberd mb-2 flex items-center gap-1.5">
               <span>👑</span><span>{t('quizSet.detail.leaderActions')}</span>
             </div>
             <div className="space-y-1.5">
@@ -382,7 +382,7 @@ function MasteryCard({
 }) {
   return (
     <div className="rounded-xl p-3 lg:p-4 border border-bq-emerald/30 bg-bq-emerald/[0.06]">
-      <div className="text-[10px] font-bold text-bq-emerald uppercase tracking-wider mb-2 flex items-center gap-1.5">
+      <div className="text-[12px] font-bold text-bq-emerald mb-2 flex items-center gap-1.5">
         <span>🎯</span><span>{t('quizSet.detail.masteryHeader').replace('🎯 ', '')}</span>
       </div>
       <div className="flex items-center justify-between mb-2">
@@ -422,7 +422,7 @@ function MasteryCard({
 function Stat({ label, value, suffix, valueClass }: { label: string; value: string; suffix?: string; valueClass?: string }) {
   return (
     <div className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-xl p-2 text-center">
-      <div className="text-[9px] text-bq-ink2 uppercase font-semibold">{label}</div>
+      <div className="text-[11.5px] text-bq-ink2 font-semibold">{label}</div>
       <div className={`font-display font-bold text-base ${valueClass || 'text-bq-ink'}`}>
         {value}{suffix && <span className="text-[10px] text-bq-ink3">{suffix}</span>}
       </div>
@@ -433,7 +433,7 @@ function Stat({ label, value, suffix, valueClass }: { label: string; value: stri
 function StatDifficulty({ label, diff }: { label: string; diff: { vi: string; short: string; cls: string; emoji: string } | null }) {
   return (
     <div className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-xl p-2 text-center">
-      <div className="text-[9px] text-bq-ink2 uppercase font-semibold">{label}</div>
+      <div className="text-[11.5px] text-bq-ink2 font-semibold">{label}</div>
       <div className={`text-xs font-bold mt-0.5 ${diff?.cls ?? 'text-bq-ink3'}`}>
         {diff ? `${diff.emoji} ${diff.short}` : '—'}
       </div>
@@ -448,7 +448,7 @@ function DesktopStat({
 }) {
   return (
     <div className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-xl p-3">
-      <div className="text-[10px] text-bq-ink2 uppercase font-semibold">{label}</div>
+      <div className="text-[12px] text-bq-ink2 font-semibold">{label}</div>
       <div className={`font-extrabold mt-0.5 ${small ? 'text-sm' : 'text-xl'} ${valueClass || 'text-bq-ink'}`}>
         {value}{suffix && <span className="text-xs text-bq-ink3 ml-1">{suffix}</span>}
       </div>
@@ -459,7 +459,7 @@ function DesktopStat({
 function MiniStat({ label, value, valueClass }: { label: string; value: string; valueClass?: string }) {
   return (
     <div>
-      <div className="text-[9px] lg:text-[10px] text-bq-ink2 uppercase">{label}</div>
+      <div className="text-[11.5px] lg:text-[10px] text-bq-ink2">{label}</div>
       <div className={`text-sm font-bold ${valueClass ?? 'text-bq-ink'}`}>{value}</div>
     </div>
   )

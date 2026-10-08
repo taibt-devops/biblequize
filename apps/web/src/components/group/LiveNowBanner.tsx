@@ -93,7 +93,7 @@ export default function LiveNowBanner({ groupId }: { groupId: string }) {
         <div className="w-9 h-9 rounded-lg bg-bq-emerald flex items-center justify-center text-base shrink-0">🎮</div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="text-[9px] font-bold text-bq-emerald uppercase animate-pulse">● {t('groups.liveNow.label')}</span>
+            <span className="text-[11.5px] font-bold text-bq-emerald animate-pulse">● {t('groups.liveNow.label')}</span>
             <span className="text-[10px] text-bq-ink2">{formatRelative(room.createdAt, t)}</span>
             {rooms.length > 1 && (
               <span className="text-[10px] text-bq-emerald font-semibold ml-auto whitespace-nowrap">

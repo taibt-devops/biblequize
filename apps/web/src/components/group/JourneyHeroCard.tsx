@@ -60,7 +60,7 @@ export default function JourneyHeroCard({ groupId, isLeaderOrMod }: { groupId: s
           <span className="material-symbols-outlined text-bq-sapphire">hiking</span>
         </div>
         <div className="min-w-0 flex-1">
-          <div className="text-[10px] font-bold uppercase tracking-wider text-bq-sapphire">{t('groupJourney.heroEyebrow')}</div>
+          <div className="text-[12px] font-bold text-bq-sapphire">{t('groupJourney.heroEyebrow')}</div>
           <div className="text-sm font-bold text-bq-ink truncate">{primary.title}</div>
         </div>
         {isDraft ? (

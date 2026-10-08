@@ -65,7 +65,7 @@ export default function QuizSetsPreviewCard({ quizSets, onPlay, onViewAll, playi
       className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-xl p-4"
     >
       <div className="flex items-center justify-between mb-3">
-        <h2 className="text-[11px] font-bold text-bq-amberd uppercase tracking-wider">
+        <h2 className="text-[12.5px] font-bold text-bq-amberd">
           📚 {t('groups.quizSetsSection')} ({quizSets.length})
         </h2>
         {quizSets.length > 3 && (

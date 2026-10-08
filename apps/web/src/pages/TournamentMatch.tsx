@@ -402,7 +402,7 @@ const TournamentMatch: React.FC = () => {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ background: 'var(--bq-emerald)' }} />
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5" style={{ background: 'var(--bq-emerald)' }} />
                 </span>
-                <span className="text-xs font-bold uppercase tracking-widest" style={{ color: 'var(--bq-emerald)' }}>LIVE</span>
+                <span className="text-[12.5px] font-bold" style={{ color: 'var(--bq-emerald)' }}>LIVE</span>
               </div>
             )}
 

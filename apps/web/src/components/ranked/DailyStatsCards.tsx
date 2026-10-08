@@ -75,7 +75,7 @@ export default function DailyStatsCards({
           </span>
           <span className="text-bq-ink2/45 text-[11px]">/{questionsCap}</span>
         </div>
-        <span className="text-bq-ink2/55 text-[9px] md:text-[10px] tracking-wider uppercase mt-1.5">
+        <span className="text-bq-ink2/55 text-[11.5px] md:text-[10px] mt-1.5">
           {t('ranked.questionsTodayShort')}
         </span>
       </section>
@@ -99,7 +99,7 @@ export default function DailyStatsCards({
         {deltaText ? (
           <span
             data-testid="ranked-points-delta"
-            className="text-[9px] md:text-[10px] tracking-wider uppercase mt-1.5"
+            className="text-[11.5px] md:text-[10px] mt-1.5"
             style={{
               color:
                 dailyDelta != null && dailyDelta > 0
@@ -112,7 +112,7 @@ export default function DailyStatsCards({
             {t('ranked.pointsTodayShort')}
           </span>
         ) : (
-          <span className="text-bq-ink2/55 text-[9px] md:text-[10px] tracking-wider uppercase mt-1.5">
+          <span className="text-bq-ink2/55 text-[11.5px] md:text-[10px] mt-1.5">
             {t('ranked.pointsTodayShort')}
           </span>
         )}

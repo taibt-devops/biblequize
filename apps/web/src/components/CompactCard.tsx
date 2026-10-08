@@ -95,7 +95,7 @@ export default function CompactCard({
         {isLocked ? (
           <span
             data-testid={`compact-card-${id}-lock-chip`}
-            className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-[rgba(107,114,128,0.2)] border border-[rgba(107,114,128,0.3)] text-[9px] font-bold uppercase tracking-wide text-on-surface-variant"
+            className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-[rgba(107,114,128,0.2)] border border-[rgba(107,114,128,0.3)] text-[11.5px] font-bold text-on-surface-variant"
           >
             <span className="material-symbols-outlined text-[10px]">lock</span>
             Khóa

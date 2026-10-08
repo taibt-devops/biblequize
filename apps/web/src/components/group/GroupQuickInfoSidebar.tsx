@@ -90,7 +90,7 @@ export default function GroupQuickInfoSidebar({ groupId }: { groupId: string }) 
       className="rounded-xl p-3 border border-bq-emerald/20"
       style={{ background: 'rgba(46,125,79,0.06)' }}
     >
-      <div className="text-[10px] font-bold text-bq-emerald uppercase tracking-wider mb-2 flex items-center gap-1.5">
+      <div className="text-[12px] font-bold text-bq-emerald mb-2 flex items-center gap-1.5">
         <span className="text-base animate-pulse">🟢</span>
         <span>{t('groups.sidebarInfo.activeNow')}</span>
       </div>
@@ -104,7 +104,7 @@ export default function GroupQuickInfoSidebar({ groupId }: { groupId: string }) 
 
       {rooms.length > 0 && (
         <div className="mt-3 pt-3 border-t border-bq-emerald/15">
-          <div className="text-[9px] text-bq-ink2 uppercase font-semibold mb-1.5 flex items-center gap-1">
+          <div className="text-[11.5px] text-bq-ink2 font-semibold mb-1.5 flex items-center gap-1">
             🎮 <span>{t('groups.sidebarInfo.openRooms')}</span>
             <span className="ml-auto text-bq-emerald font-bold">{rooms.length}</span>
           </div>

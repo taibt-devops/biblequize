@@ -62,7 +62,7 @@ export function ExplanationPanel({ questionId, scriptureRef, explanation, onCont
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-2 flex-wrap">
-            <span className="text-xs font-bold uppercase tracking-wider" style={{ color: '#e8a832' }}>
+            <span className="text-[12.5px] font-bold" style={{ color: '#e8a832' }}>
               Giải thích{scriptureRef ? ` · ${scriptureRef}` : ''}
             </span>
             <div className="h-px flex-1" style={{ background: 'rgba(255,255,255,0.05)' }} />

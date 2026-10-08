@@ -22,7 +22,7 @@ export default function SectionHeader({ title, meta, className = '' }: SectionHe
       />
       <h2
         data-testid="section-header-title"
-        className="font-display text-[11px] font-bold text-bq-ink uppercase tracking-[0.16em]"
+        className="font-display text-[12.5px] font-bold text-bq-ink"
       >
         {title}
       </h2>

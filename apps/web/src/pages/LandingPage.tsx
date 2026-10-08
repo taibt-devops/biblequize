@@ -162,7 +162,7 @@ function HeroSection() {
                 </span>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-widest text-bq-amberd font-bold">{t('landing.dailyStreak')}</p>
+                <p className="text-[12.5px] text-bq-amberd font-bold">{t('landing.dailyStreak')}</p>
                 <p className="text-xl font-bold text-bq-ink">{t('landing.daysStreak', { count: 15 })}</p>
               </div>
             </div>
@@ -348,7 +348,7 @@ function LeaderboardPreview() {
 
         <div className="bg-bq-white rounded-2xl sm:rounded-[2rem] overflow-hidden border border-bq-hair shadow-bq-soft">
           {/* Header row */}
-          <div className="grid grid-cols-12 px-4 sm:px-8 py-3 sm:py-4 bg-bq-inset text-[10px] sm:text-xs font-bold text-bq-ink2 uppercase tracking-widest">
+          <div className="grid grid-cols-12 px-4 sm:px-8 py-3 sm:py-4 bg-bq-inset text-[12px] sm:text-xs font-bold text-bq-ink2">
             <div className="col-span-2">{t('landing.rank')}</div>
             <div className="col-span-7 sm:col-span-6">{t('landing.warrior')}</div>
             <div className="col-span-3 sm:col-span-2">XP</div>

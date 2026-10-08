@@ -137,7 +137,7 @@ export default function FeaturedDailyChallenge() {
       <div data-testid="featured-daily-error" className="rounded-2xl bg-bq-white p-5 border border-bq-hair shadow-bq-soft">
         <div className="flex items-center gap-3 mb-3">
           <span className="material-symbols-outlined text-bq-amberd text-2xl" style={FILL_1}>calendar_today</span>
-          <h2 className="text-xs font-bold text-bq-ink2 uppercase tracking-widest">
+          <h2 className="text-[12.5px] font-bold text-bq-ink2">
             {t('home.featuredDaily.title')}
           </h2>
         </div>
@@ -145,7 +145,7 @@ export default function FeaturedDailyChallenge() {
         <button
           data-testid="featured-daily-retry"
           onClick={() => refetch()}
-          className="text-xs font-bold text-bq-amberd uppercase tracking-widest hover:underline"
+          className="text-[12.5px] font-bold text-bq-amberd hover:underline"
         >
           {t('home.featuredDaily.retry')} →
         </button>
@@ -172,7 +172,7 @@ export default function FeaturedDailyChallenge() {
         className="relative overflow-hidden rounded-2xl border border-bq-hair bg-bq-white shadow-bq-soft p-5 md:p-6"
       >
         <div className="flex items-center justify-between mb-2">
-          <h2 className="text-[10px] md:text-[11px] font-bold text-bq-ink2 uppercase tracking-[0.6px] md:tracking-[0.8px]">
+          <h2 className="text-[12px] md:text-[11px] font-bold text-bq-ink2 md:tracking-[0.8px]">
             {t('home.featuredDaily.completedState.title')}
           </h2>
           <span className="bg-bq-emerald/10 text-bq-emerald px-2 py-0.5 rounded-full text-[9px] md:text-[10px] font-medium">
@@ -194,7 +194,7 @@ export default function FeaturedDailyChallenge() {
           {t('home.featuredDaily.completedState.themeLabel', { theme: tagline })}
         </p>
 
-        <p className="text-[10px] md:text-[11px] font-medium text-bq-amberd uppercase tracking-widest mb-3">
+        <p className="text-[12px] md:text-[11px] font-medium text-bq-amberd mb-3">
           {t('home.featuredDaily.completedState.xpEarned', { xp: xpEarned })}
         </p>
 
@@ -247,7 +247,7 @@ export default function FeaturedDailyChallenge() {
           <div className="min-w-0">
             <div
               data-testid="featured-daily-label"
-              className="text-[10px] md:text-[11px] font-bold text-bq-amberd uppercase tracking-[0.8px] md:tracking-[1px] mb-0.5 md:mb-1"
+              className="text-[12px] md:text-[11px] font-bold text-bq-amberd md:tracking-[1px] mb-0.5 md:mb-1"
             >
               {t('home.featuredDaily.title')}
             </div>

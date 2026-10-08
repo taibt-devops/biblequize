@@ -62,7 +62,7 @@ export default function JoinRoom() {
       <div className="max-w-sm w-full text-center space-y-4">
         {joining ? (
           <>
-            <div className="text-xs uppercase tracking-widest text-bq-ink2">
+            <div className="text-[12.5px] text-bq-ink2">
               Đang vào phòng
             </div>
             <div className="text-2xl font-extrabold text-bq-ink">{code}</div>
@@ -72,7 +72,7 @@ export default function JoinRoom() {
           </>
         ) : (
           <>
-            <div className="text-xs uppercase tracking-widest text-bq-ruby">
+            <div className="text-[12.5px] text-bq-ruby">
               Không vào được phòng
             </div>
             <div className="text-base font-semibold text-bq-ink">{error}</div>

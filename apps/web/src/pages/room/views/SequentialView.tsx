@@ -24,7 +24,7 @@ const SequentialView: React.FC<{
     <>
       <div className="flex items-center gap-3 mb-4">
         <div className="flex-1">
-          <div className="text-[10px] font-bold uppercase tracking-[1px]" style={{ color: 'var(--bq-emerald)' }}>
+          <div className="text-[12px] font-bold" style={{ color: 'var(--bq-emerald)' }}>
             CÂU {questionIndex + 1} / {totalQuestions || '?'}
           </div>
           <div className="text-[12px] text-bq-ink2 font-semibold mt-0.5">

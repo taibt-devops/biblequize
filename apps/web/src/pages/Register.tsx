@@ -125,7 +125,7 @@ export default function Register() {
 
           <form onSubmit={handleSubmit} className="space-y-4 mt-8">
             <div className="space-y-1.5">
-              <label className="text-xs font-bold uppercase tracking-wider text-bq-ink2 ml-1">
+              <label className="text-[12.5px] font-bold text-bq-ink2 ml-1">
                 {t('auth.name', { defaultValue: 'Full Name' })}
               </label>
               <div className="relative group">
@@ -145,7 +145,7 @@ export default function Register() {
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-xs font-bold uppercase tracking-wider text-bq-ink2 ml-1">
+              <label className="text-[12.5px] font-bold text-bq-ink2 ml-1">
                 {t('auth.email')}
               </label>
               <div className="relative group">
@@ -165,7 +165,7 @@ export default function Register() {
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-xs font-bold uppercase tracking-wider text-bq-ink2 ml-1">
+              <label className="text-[12.5px] font-bold text-bq-ink2 ml-1">
                 {t('auth.password')}
               </label>
               <div className="relative group">
@@ -186,7 +186,7 @@ export default function Register() {
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-xs font-bold uppercase tracking-wider text-bq-ink2 ml-1">
+              <label className="text-[12.5px] font-bold text-bq-ink2 ml-1">
                 {t('auth.confirmPassword', { defaultValue: 'Confirm password' })}
               </label>
               <div className="relative group">
@@ -229,7 +229,7 @@ export default function Register() {
           <div className="pt-6 flex flex-col items-center gap-3 border-t border-bq-hair">
             <Link
               to="/"
-              className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-bq-ink3 hover:text-bq-ink transition-colors py-2 px-4 rounded-full bg-bq-inset"
+              className="flex items-center gap-2 text-[12.5px] font-bold text-bq-ink3 hover:text-bq-ink transition-colors py-2 px-4 rounded-full bg-bq-inset"
             >
               <span className="material-symbols-outlined text-sm">stadium</span>
               {t('auth.guestPlay')}

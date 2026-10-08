@@ -120,7 +120,7 @@ export const ChatPanel: React.FC<ChatPanelProps> = ({ messages, input, setInput,
     <div className="flex items-center justify-between px-4 py-3 border-b border-bq-hair">
       <div className="inline-flex items-center gap-1.5 text-[13px] font-bold">
         <span className="text-sm">💬</span>
-        <span className="uppercase tracking-wider text-xs text-bq-ink2">Trò chuyện</span>
+        <span className="text-[12.5px] text-bq-ink2">Trò chuyện</span>
       </div>
       {typeof onlineCount === 'number' && (
         <span className="text-[10px] text-bq-ink3">{onlineCount} online</span>

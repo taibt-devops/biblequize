@@ -15,7 +15,7 @@ export default function ActivityFeedPlaceholder() {
   return (
     <div data-testid="group-activity-feed-placeholder">
       <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
-        <h2 className="text-[11px] font-bold text-bq-amberd uppercase tracking-wider flex items-center gap-1.5">
+        <h2 className="text-[12.5px] font-bold text-bq-amberd flex items-center gap-1.5">
           <span>📜</span>
           <span>{t('groups.activity.feedTitle')}</span>
         </h2>
@@ -52,7 +52,7 @@ export default function ActivityFeedPlaceholder() {
         <p className="text-[12px] text-bq-ink2 max-w-md mx-auto">
           {t('groups.activity.placeholder.desc')}
         </p>
-        <div className="mt-3 text-[10px] text-bq-ink3 uppercase tracking-wider">
+        <div className="mt-3 text-[12px] text-bq-ink3">
           {t('groups.activity.placeholder.sprint')}
         </div>
       </div>

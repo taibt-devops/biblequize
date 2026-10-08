@@ -94,7 +94,7 @@ export function QuizEndScreen({
       >
         <div className="flex items-center gap-3">
           <span
-            className="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider"
+            className="px-2 py-0.5 rounded text-[12px] font-bold"
             style={{
               background: isHost ? 'rgba(232,168,50,0.2)' : 'rgba(255,255,255,0.06)',
               color: isHost ? '#e8a832' : '#d1d5db',
@@ -128,7 +128,7 @@ export function QuizEndScreen({
           {/* Title */}
           <div className="text-center pb-2" style={{ animation: 'fadeIn 0.5s ease-out' }}>
             <div
-              className="text-xs font-bold uppercase mb-2"
+              className="text-[12.5px] font-bold mb-2"
               style={{ color: '#e8a832', letterSpacing: '0.4em' }}
             >
               {isHost ? 'Trận đấu kết thúc' : 'Cảm ơn bạn đã chơi!'}
@@ -204,7 +204,7 @@ export function QuizEndScreen({
               }}
             >
               <div
-                className="text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-2"
+                className="text-[12.5px] font-bold mb-4 flex items-center gap-2"
                 style={{ color: '#e8a832' }}
               >
                 <span>👑</span><span>Lựa chọn của Host</span>
@@ -220,7 +220,7 @@ export function QuizEndScreen({
           ) : (
             <>
               <div
-                className="text-xs font-bold uppercase tracking-wider mb-3"
+                className="text-[12.5px] font-bold mb-3"
                 style={{ color: '#9ca3af' }}
               >
                 Tiếp theo?

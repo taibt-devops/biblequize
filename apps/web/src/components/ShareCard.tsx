@@ -93,7 +93,7 @@ export default function ShareCard({
             <div className="text-center space-y-4 py-4">
               <span className="material-symbols-outlined text-5xl text-bq-amberd" style={FILL_1}>celebration</span>
               <div>
-                <p className="text-xs font-bold text-bq-ink2 uppercase tracking-widest mb-1">{t('components.shareCard.tierUpLabel')}</p>
+                <p className="text-[12.5px] font-bold text-bq-ink2 mb-1">{t('components.shareCard.tierUpLabel')}</p>
                 <p className="text-2xl font-black text-bq-ink">{oldTierName}</p>
                 <span className="material-symbols-outlined text-bq-amberd text-2xl my-2">arrow_downward</span>
                 <p className="text-3xl font-black text-bq-amberd">{tierName}</p>
@@ -102,7 +102,7 @@ export default function ShareCard({
           ) : type === 'daily' ? (
             /* ── Daily Challenge Variant ── */
             <div className="text-center space-y-4 py-2">
-              <p className="text-xs font-bold text-bq-ink2 uppercase tracking-widest">
+              <p className="text-[12.5px] font-bold text-bq-ink2">
                 {t('components.shareCard.dailyLabelPrefix', { date: date || new Date().toLocaleDateString(localeTag()) })}
               </p>
               {/* Stars */}
@@ -144,7 +144,7 @@ export default function ShareCard({
                   <span className="text-2xl font-black text-bq-ink">{correct}/{total}</span>
                 </div>
               </div>
-              <p className="text-xs font-bold text-bq-ink2 uppercase tracking-widest">
+              <p className="text-[12.5px] font-bold text-bq-ink2">
                 {pct >= 90
                   ? t('components.shareCard.ratingExcellent')
                   : pct >= 70
@@ -165,7 +165,7 @@ export default function ShareCard({
             <div className="flex-1">
               <p className="text-sm font-bold text-bq-ink">{userName}</p>
               {tierName && type !== 'tier_up' && (
-                <p className="text-[10px] text-bq-amberd font-bold uppercase tracking-wider">{tierName}</p>
+                <p className="text-[12px] text-bq-amberd font-bold">{tierName}</p>
               )}
             </div>
           </div>

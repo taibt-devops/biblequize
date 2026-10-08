@@ -64,7 +64,7 @@ export default function EmptyState({ userTier = 1 }: Props) {
             {/* Divider */}
             <div className="flex items-center gap-3 my-1">
               <div className="flex-1 h-px bg-bq-hair" />
-              <div className="text-[10px] tracking-widest uppercase text-bq-ink3 font-bold">{t('multiplayer.empty.or')}</div>
+              <div className="text-[12px] text-bq-ink3 font-bold">{t('multiplayer.empty.or')}</div>
               <div className="flex-1 h-px bg-bq-hair" />
             </div>
 

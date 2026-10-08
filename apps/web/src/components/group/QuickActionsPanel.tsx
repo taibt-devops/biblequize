@@ -62,7 +62,7 @@ export default function QuickActionsPanel(props: QuickActionsPanelProps) {
   const navigate = useNavigate();
 
   const heading = (
-    <h2 className="text-[11px] font-bold text-bq-amberd uppercase tracking-wider mb-3">
+    <h2 className="text-[12.5px] font-bold text-bq-amberd mb-3">
       ⚡ {t('groups.quickActions.title')}
     </h2>
   );

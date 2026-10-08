@@ -798,7 +798,7 @@ const GroupDetail: React.FC = () => {
           data-testid="group-code-pill"
           className="mt-3 inline-flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-bq-inset border border-bq-hair hover:border-bq-ink3/40 transition-colors w-full sm:w-auto"
         >
-          <span className="text-[10px] uppercase tracking-wider text-bq-ink3 font-semibold whitespace-nowrap">
+          <span className="text-[12px] text-bq-ink3 font-semibold whitespace-nowrap">
             {t('groups.groupCodeLabel')}
           </span>
           <button
@@ -1303,7 +1303,7 @@ const GroupDetail: React.FC = () => {
                       <span className="material-symbols-outlined text-[24px]">groups</span>
                     </div>
                     <div className="min-w-0 relative z-[1]">
-                      <div className="flex items-center gap-1.5 text-[10px] font-extrabold uppercase tracking-wide sm:tracking-wider mb-1"
+                      <div className="flex items-center gap-1.5 text-[12px] font-extrabold sm:tracking-wider mb-1"
                         style={{ color: '#2F6FB0' }}>
                         <span className="w-[7px] h-[7px] rounded-full inline-block flex-shrink-0 animate-pulse"
                           style={{ background: '#2F6FB0', boxShadow: '0 0 0 0 rgba(47,111,176,0.5)' }} />
@@ -1374,7 +1374,7 @@ const GroupDetail: React.FC = () => {
                           <span className="material-symbols-outlined text-[18px]">groups</span>
                         </div>
                         <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider mb-0.5"
+                          <div className="flex items-center gap-1.5 text-[12px] font-bold mb-0.5"
                             style={{ color: '#2F6FB0' }}>
                             <span className="w-1.5 h-1.5 rounded-full inline-block animate-pulse"
                               style={{ background: '#2F6FB0' }} />
@@ -1428,7 +1428,7 @@ const GroupDetail: React.FC = () => {
                           <span className="material-symbols-outlined text-[18px]">schedule</span>
                         </div>
                         <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider mb-0.5"
+                          <div className="flex items-center gap-1.5 text-[12px] font-bold mb-0.5"
                             style={{ color: '#2E7D4F' }}>
                             <span className="w-1.5 h-1.5 rounded-full inline-block animate-pulse"
                               style={{ background: '#2E7D4F' }} />
@@ -1608,7 +1608,7 @@ const GroupDetail: React.FC = () => {
                 </p>
 
                 <div className="space-y-2 mb-4">
-                  <label className="block text-[11px] font-bold uppercase tracking-wide text-bq-ink2 mb-2">
+                  <label className="block text-[12.5px] font-bold text-bq-ink2 mb-2">
                     {t('groups.reportReasonLabel')}
                   </label>
                   {(['SPAM', 'INAPPROPRIATE', 'HARASSMENT', 'OTHER'] as ReportReason[]).map(r => (
@@ -1634,7 +1634,7 @@ const GroupDetail: React.FC = () => {
                 </div>
 
                 <div className="mb-5">
-                  <label className="block text-[11px] font-bold uppercase tracking-wide text-bq-ink2 mb-2">
+                  <label className="block text-[12.5px] font-bold text-bq-ink2 mb-2">
                     {t('groups.reportNoteLabel')} <span className="text-bq-ink3 font-normal normal-case">({t('common.optional')})</span>
                   </label>
                   <textarea
@@ -1697,7 +1697,7 @@ const GroupDetail: React.FC = () => {
 
             <form onSubmit={handleEdit} className="space-y-5">
               <div>
-                <label className="block text-[10px] font-black uppercase tracking-widest text-bq-ink2 mb-2">{t('groups.groupNameLabel')}</label>
+                <label className="block text-[12px] font-black text-bq-ink2 mb-2">{t('groups.groupNameLabel')}</label>
                 <input
                   className="w-full px-5 py-3.5 bg-bq-inset rounded-xl border border-bq-hair text-bq-ink font-medium text-sm outline-none focus:border-bq-amberd/30 transition-all"
                   value={editName}
@@ -1706,7 +1706,7 @@ const GroupDetail: React.FC = () => {
                 />
               </div>
               <div>
-                <label className="block text-[10px] font-black uppercase tracking-widest text-bq-ink2 mb-2">{t('groups.descriptionLabel')}</label>
+                <label className="block text-[12px] font-black text-bq-ink2 mb-2">{t('groups.descriptionLabel')}</label>
                 <textarea
                   className="w-full px-5 py-3.5 bg-bq-inset rounded-xl border border-bq-hair text-bq-ink font-medium text-sm outline-none focus:border-bq-amberd/30 transition-all resize-vertical min-h-[80px]"
                   value={editDesc}
@@ -1725,7 +1725,7 @@ const GroupDetail: React.FC = () => {
                 <label htmlFor="editPublic" className="text-sm text-bq-ink2 font-bold">{t('groups.publicGroup')}</label>
               </div>
               <div>
-                <label className="block text-[10px] font-black uppercase tracking-widest text-bq-ink2 mb-2">{t('groups.maxMembers')}</label>
+                <label className="block text-[12px] font-black text-bq-ink2 mb-2">{t('groups.maxMembers')}</label>
                 <input
                   className="w-full px-5 py-3.5 bg-bq-inset rounded-xl border border-bq-hair text-bq-ink font-medium text-sm outline-none focus:border-bq-amberd/30 transition-all"
                   type="number"
@@ -1741,7 +1741,7 @@ const GroupDetail: React.FC = () => {
               <button
                 type="submit"
                 disabled={editLoading || !editName.trim()}
-                className="w-full py-4 bg-bq-action text-bq-ink shadow-bq-action rounded-xl font-black text-xs uppercase tracking-widest hover:brightness-110 transition-all active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed"
+                className="w-full py-4 bg-bq-action text-bq-ink shadow-bq-action rounded-xl font-black text-[12.5px] hover:brightness-110 transition-all active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 {editLoading ? t('groups.saving') : t('groups.saveChanges')}
               </button>

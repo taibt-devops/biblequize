@@ -87,7 +87,7 @@ export const PodiumScreen: React.FC<{ results: PlayerScore[]; onClose: () => voi
         })}
       </div>
       <div className="w-full max-w-sm bg-bq-white rounded-2xl border border-bq-hair shadow-bq-soft p-5 mb-8">
-        <div className="text-[10px] font-bold uppercase tracking-[0.1em] text-bq-ink2 mb-4">Tat ca nguoi choi</div>
+        <div className="text-[12px] font-bold text-bq-ink2 mb-4">Tat ca nguoi choi</div>
         <div className="space-y-2 max-h-44 overflow-auto">
           {results.map((r, idx) => (
             <div key={r.playerId} className="flex items-center justify-between p-2.5 rounded-xl bg-bq-inset border border-bq-hair">
@@ -124,7 +124,7 @@ export const EliminationScreen: React.FC<{
     </p>
     {correctIndex !== null && question && (
       <div className="mt-4 mb-8 bg-bq-white rounded-2xl border border-bq-hair shadow-bq-soft px-5 py-4 max-w-xs text-center">
-        <span className="text-[10px] font-bold uppercase tracking-[0.1em] text-bq-ink2 block mb-2">Dap an dung</span>
+        <span className="text-[12px] font-bold text-bq-ink2 block mb-2">Dap an dung</span>
         <span className="text-bq-emerald font-bold text-sm">
           {String.fromCharCode(65 + correctIndex)}. {question.options[correctIndex]}
         </span>
@@ -146,11 +146,11 @@ export const TeamScoreBar: React.FC<{ scoreA: number; scoreB: number; perfectA?:
       <div className="flex items-center justify-between mb-2.5 text-sm font-bold">
         <span className="text-bq-sapphire flex items-center gap-1.5">
           <span className="w-3 h-3 rounded-full bg-bq-sapphire" /> Team A
-          {perfectA && <span className="text-bq-amberd text-[10px] uppercase tracking-wider font-black ml-1">Perfect!</span>}
+          {perfectA && <span className="text-bq-amberd text-[12px] font-black ml-1">Perfect!</span>}
         </span>
-        <span className="text-bq-ink2 text-xs font-black uppercase tracking-widest">VS</span>
+        <span className="text-bq-ink2 text-[12.5px] font-black">VS</span>
         <span className="text-bq-ruby flex items-center gap-1.5">
-          {perfectB && <span className="text-bq-amberd text-[10px] uppercase tracking-wider font-black mr-1">Perfect!</span>}
+          {perfectB && <span className="text-bq-amberd text-[12px] font-black mr-1">Perfect!</span>}
           Team B <span className="w-3 h-3 rounded-full bg-bq-ruby" />
         </span>
       </div>
@@ -187,7 +187,7 @@ export const TeamWinScreen: React.FC<{
       <span className="text-bq-ruby flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-bq-ruby" /> {scoreB}</span>
     </div>
     <div className="w-full max-w-sm bg-bq-white rounded-2xl border border-bq-hair shadow-bq-soft p-5 mb-8">
-      <div className="text-[10px] font-bold uppercase tracking-[0.1em] text-bq-ink2 mb-4">Diem ca nhan</div>
+      <div className="text-[12px] font-bold text-bq-ink2 mb-4">Diem ca nhan</div>
       <div className="space-y-2 max-h-48 overflow-auto">
         {leaderboard.map((r) => (
           <div key={r.playerId} className="flex items-center justify-between p-2.5 rounded-xl bg-bq-inset border border-bq-hair">
@@ -241,7 +241,7 @@ export const SdArenaHeader: React.FC<{
         </div>
         <div className="flex items-center justify-center gap-1 mt-1">
           <span className="material-symbols-outlined text-bq-amberd text-sm" style={FILL_STYLE}>military_tech</span>
-          <span className="text-[10px] font-bold uppercase tracking-wider text-bq-amberd">Champion</span>
+          <span className="text-[12px] font-bold text-bq-amberd">Champion</span>
         </div>
         {championStreak > 0 && (
           <div className="text-bq-ember text-xs font-bold mt-0.5 flex items-center justify-center gap-1">
@@ -259,7 +259,7 @@ export const SdArenaHeader: React.FC<{
         </div>
         <div className="flex items-center justify-center gap-1 mt-1">
           <span className="material-symbols-outlined text-bq-sapphire text-sm" style={FILL_STYLE}>swords</span>
-          <span className="text-[10px] font-bold uppercase tracking-wider text-bq-sapphire">Challenger</span>
+          <span className="text-[12px] font-bold text-bq-sapphire">Challenger</span>
         </div>
       </div>
     </div>
@@ -277,7 +277,7 @@ export const RoundScoreboard: React.FC<{ scores: PlayerScore[]; myUsername: stri
   if (scores.length === 0) return null
   return (
     <div className="mt-5 bg-bq-white rounded-2xl border border-bq-hair shadow-bq-soft p-4 animate-in fade-in">
-      <div className="text-[10px] font-bold uppercase tracking-[0.1em] text-bq-ink2 mb-3 flex items-center gap-1.5">
+      <div className="text-[12px] font-bold text-bq-ink2 mb-3 flex items-center gap-1.5">
         <span className="material-symbols-outlined text-sm text-bq-amberd">leaderboard</span>
         Ket qua vong nay
       </div>

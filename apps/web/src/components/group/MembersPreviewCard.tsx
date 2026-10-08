@@ -67,7 +67,7 @@ export default function MembersPreviewCard({ members, total, onViewAll }: Props)
       className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-xl p-4"
     >
       <div className="flex items-center justify-between mb-3">
-        <h2 className="text-[11px] font-bold text-bq-amberd uppercase tracking-wider">
+        <h2 className="text-[12.5px] font-bold text-bq-amberd">
           👥 {t('groups.membersTitle')} ({total})
         </h2>
         <button
@@ -85,7 +85,7 @@ export default function MembersPreviewCard({ members, total, onViewAll }: Props)
         <>
           {onlineMembers.length > 0 && (
             <div className="mb-3">
-              <div className="text-[9px] font-bold text-bq-emerald uppercase tracking-wider mb-2 flex items-center gap-1.5">
+              <div className="text-[11.5px] font-bold text-bq-emerald mb-2 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-bq-emerald animate-pulse" />
                 {t('groups.membersPreview.onlineHeader', { count: onlineMembers.length })}
               </div>
@@ -107,7 +107,7 @@ export default function MembersPreviewCard({ members, total, onViewAll }: Props)
                   ("Thành viên (total)") already labels the row, and a second
                   "Thành viên (N)" sub-header duplicates the count. */}
               {onlineMembers.length > 0 && (
-                <div className="text-[9px] font-bold text-bq-ink2 uppercase tracking-wider mb-2">
+                <div className="text-[11.5px] font-bold text-bq-ink2 mb-2">
                   {t('groups.membersPreview.othersHeader', { count: offlineMembers.length })}
                 </div>
               )}

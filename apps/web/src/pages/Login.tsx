@@ -220,7 +220,7 @@ export default function Login() {
             {/* Divider */}
             <div className="flex items-center gap-4">
               <div className="h-[1px] flex-1 bg-bq-hair" />
-              <span className="text-xs uppercase tracking-widest text-bq-ink3 font-bold">
+              <span className="text-[12.5px] text-bq-ink3 font-bold">
                 {t('auth.orLoginWith')}
               </span>
               <div className="h-[1px] flex-1 bg-bq-hair" />
@@ -229,7 +229,7 @@ export default function Login() {
             {/* Traditional Login Form */}
             <form onSubmit={handleEmailSubmit} className="space-y-4">
               <div className="space-y-1.5">
-                <label className="text-xs font-bold uppercase tracking-wider text-bq-ink2 ml-1">
+                <label className="text-[12.5px] font-bold text-bq-ink2 ml-1">
                   {t('auth.email')}
                 </label>
                 <div className="relative group">
@@ -250,7 +250,7 @@ export default function Login() {
 
               <div className="space-y-1.5">
                 <div className="flex justify-between items-end ml-1">
-                  <label className="text-xs font-bold uppercase tracking-wider text-bq-ink2">
+                  <label className="text-[12.5px] font-bold text-bq-ink2">
                     {t('auth.password')}
                   </label>
                   <a
@@ -311,7 +311,7 @@ export default function Login() {
             <Link
               data-testid="login-guest-link"
               to="/"
-              className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-bq-ink3 hover:text-bq-ink transition-colors py-2 px-4 rounded-full bg-bq-inset"
+              className="flex items-center gap-2 text-[12.5px] font-bold text-bq-ink3 hover:text-bq-ink transition-colors py-2 px-4 rounded-full bg-bq-inset"
             >
               <span className="material-symbols-outlined text-sm">stadium</span>
               {t('auth.guestPlay')}
@@ -323,17 +323,17 @@ export default function Login() {
         <footer className="lg:fixed lg:bottom-4 lg:right-4 mt-10 lg:mt-0 flex flex-wrap gap-x-4 gap-y-2 items-center justify-center">
           <a
             href="/privacy"
-            className="text-[10px] sm:text-xs tracking-widest uppercase text-bq-ink3 hover:text-bq-amberd transition-opacity opacity-100 hover:opacity-80 whitespace-nowrap"
+            className="text-[12px] sm:text-xs text-bq-ink3 hover:text-bq-amberd transition-opacity opacity-100 hover:opacity-80 whitespace-nowrap"
           >
             {t('landing.privacy')}
           </a>
           <a
             href="/terms"
-            className="text-[10px] sm:text-xs tracking-widest uppercase text-bq-ink3 hover:text-bq-amberd transition-opacity opacity-100 hover:opacity-80 whitespace-nowrap"
+            className="text-[12px] sm:text-xs text-bq-ink3 hover:text-bq-amberd transition-opacity opacity-100 hover:opacity-80 whitespace-nowrap"
           >
             {t('landing.terms')}
           </a>
-          <span className="text-[10px] sm:text-xs tracking-widest uppercase text-bq-ink3 opacity-60 whitespace-nowrap">
+          <span className="text-[12px] sm:text-xs text-bq-ink3 opacity-60 whitespace-nowrap">
             &copy; 2024 Bible Quiz
           </span>
         </footer>

@@ -73,7 +73,7 @@ export default function CollectiveGrowthCard({ groupId }: Props) {
     >
       <div className="flex items-center gap-2 mb-3">
         <span className="text-[18px]">🌱</span>
-        <span className="text-bq-emerald text-[11px] font-bold uppercase tracking-wider">
+        <span className="text-bq-emerald text-[12.5px] font-bold">
           {t('groups.growth.title')}
         </span>
       </div>

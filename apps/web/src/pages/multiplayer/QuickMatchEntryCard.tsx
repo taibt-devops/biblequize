@@ -65,7 +65,7 @@ export default function QuickMatchEntryCard({ userTier = 1 }: Props) {
           >
             auto_awesome
           </span>
-          <span className="text-[10px] font-bold tracking-wider uppercase" style={{ color: QM.primaryLighter }}>
+          <span className="text-[12px] font-bold" style={{ color: QM.primaryLighter }}>
             {t('multiplayer.quickMatch.badgeNew')}
           </span>
         </div>
@@ -80,7 +80,7 @@ export default function QuickMatchEntryCard({ userTier = 1 }: Props) {
                 rocket_launch
               </span>
             </div>
-            <div className="text-[10px] tracking-widest uppercase font-bold" style={{ color: QM.primaryLighter }}>
+            <div className="text-[12px] font-bold" style={{ color: QM.primaryLighter }}>
               {t('multiplayer.quickMatch.kicker')}
             </div>
           </div>

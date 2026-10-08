@@ -185,7 +185,7 @@ export default function OnboardingTryQuiz() {
                 </div>
 
                 {/* Trust badge */}
-                <div className="flex items-center justify-center gap-2 text-xs text-bq-ink3 uppercase tracking-widest font-bold">
+                <div className="flex items-center justify-center gap-2 text-[12.5px] text-bq-ink3 font-bold">
                   <span className="material-symbols-outlined text-[14px]">verified_user</span>
                   {t('onboarding.trySecurityNote')}
                 </div>
@@ -249,7 +249,7 @@ export default function OnboardingTryQuiz() {
             <div className="relative z-10">
               <div className="flex items-center gap-3 mb-6 text-bq-amberd">
                 <span className="material-symbols-outlined">menu_book</span>
-                <span className="text-xs font-bold tracking-widest uppercase">{question.book || t('onboarding.tryBookFallback')}</span>
+                <span className="text-[12.5px] font-bold">{question.book || t('onboarding.tryBookFallback')}</span>
               </div>
               <p data-testid="try-quiz-question" className="text-2xl md:text-3xl font-semibold leading-snug text-bq-ink">{question.content}</p>
             </div>

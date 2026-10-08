@@ -43,7 +43,7 @@ export default function WeaknessWidget() {
         {/* Strong books */}
         {data.strongBooks.length > 0 && (
           <div>
-            <p className="text-xs font-bold text-bq-ink2 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+            <p className="text-[12.5px] font-bold text-bq-ink2 mb-2 flex items-center gap-1.5">
               <span className="material-symbols-outlined text-sm text-bq-emerald">trending_up</span>
               {t('components.weakness.strongLabel')}
             </p>
@@ -61,7 +61,7 @@ export default function WeaknessWidget() {
         {/* Weak books */}
         {data.weakBooks.length > 0 && (
           <div>
-            <p className="text-xs font-bold text-bq-ink2 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+            <p className="text-[12.5px] font-bold text-bq-ink2 mb-2 flex items-center gap-1.5">
               <span className="material-symbols-outlined text-sm text-bq-amberd">menu_book</span>
               {t('components.weakness.weakLabel')}
             </p>

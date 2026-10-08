@@ -117,7 +117,7 @@ export default function Help() {
             if (items.length === 0) return null
             return (
               <section key={cat} data-testid={`faq-category-${cat}`}>
-                <h2 className="text-xs font-black uppercase tracking-[0.2em] text-bq-amberd mb-3">
+                <h2 className="text-[12.5px] font-black text-bq-amberd mb-3">
                   {t(`help.categories.${cat}`)}
                 </h2>
                 <div className="space-y-2">

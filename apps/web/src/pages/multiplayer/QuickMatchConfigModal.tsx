@@ -91,7 +91,7 @@ export default function QuickMatchConfigModal({ open, onClose, userTier = 1 }: P
         {/* Header */}
         <div className="px-6 pt-5 pb-3 flex items-start justify-between">
           <div>
-            <div className="text-[10px] tracking-widest uppercase font-bold mb-1" style={{ color: '#2F6FB0' }}>
+            <div className="text-[12px] font-bold mb-1" style={{ color: '#2F6FB0' }}>
               {t('multiplayer.config.kicker')}
             </div>
             <h2 className="font-display text-[20px] font-extrabold text-bq-ink">{t('multiplayer.config.title')}</h2>

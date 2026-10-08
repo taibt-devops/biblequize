@@ -40,7 +40,7 @@ export default function EmptyLeaderboardCTA() {
       <Link
         to="/practice"
         data-testid="empty-leaderboard-cta-button"
-        className="inline-flex items-center gap-2 mt-2 px-5 py-2 rounded-xl gold-gradient text-on-secondary text-xs font-black uppercase tracking-widest active:scale-95 transition-transform"
+        className="inline-flex items-center gap-2 mt-2 px-5 py-2 rounded-xl gold-gradient text-on-secondary text-[12.5px] font-black active:scale-95 transition-transform"
       >
         {t('home.emptyLeaderboard.cta')} →
       </Link>

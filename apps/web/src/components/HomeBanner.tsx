@@ -137,7 +137,7 @@ export default function HomeBanner() {
         <div className="min-w-0">
           <div
             data-testid="home-greeting-meta"
-            className="text-[11px] font-semibold uppercase tracking-[0.18em] text-bq-amberd mb-1 md:mb-1.5"
+            className="text-[12.5px] font-semibold text-bq-amberd mb-1 md:mb-1.5"
           >
             {greeting}
           </div>
@@ -334,7 +334,7 @@ function Stat({ icon, testId, value, label }: StatProps) {
       </div>
       {/* HO-2: relaxed tracking + normal leading + wrap so a long season
           label ("Mùa ... 2026") no longer clips. */}
-      <div className="text-[9px] font-semibold uppercase tracking-[0.06em] leading-[1.2] text-bq-ink3 mt-1 break-words">
+      <div className="text-[11.5px] font-semibold leading-[1.2] text-bq-ink3 mt-1 break-words">
         {label}
       </div>
     </div>

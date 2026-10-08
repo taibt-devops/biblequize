@@ -36,7 +36,7 @@ export default function LeaderboardRankWidget() {
       className="rounded-[10px] px-3.5 py-3 bg-bq-white border border-bq-sapphire/20 shadow-bq-soft"
     >
       <div
-        className="text-[10px] uppercase font-bold mb-1.5 text-bq-sapphire"
+        className="text-[12px] font-bold mb-1.5 text-bq-sapphire"
         style={{ letterSpacing: '0.12em' }}
       >
         {t('leaderboard.sidebar.rankLabel')}

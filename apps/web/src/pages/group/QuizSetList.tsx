@@ -201,7 +201,7 @@ export default function QuizSetList() {
       {/* Desktop folder sidebar (hidden:lg:flex) */}
       <aside className="hidden md:flex w-[240px] shrink-0 border-r border-bq-hair flex-col bg-bq-inset">
         <div className="px-4 py-3 border-b border-bq-hair">
-          <div className="text-[10px] font-semibold text-bq-ink3 uppercase tracking-wider mb-2">Danh mục</div>
+          <div className="text-[12px] font-semibold text-bq-ink3 mb-2">Danh mục</div>
           <button
             onClick={handleCreateFolder}
             className="w-full bg-bq-white border border-bq-hair rounded-lg px-3 py-2 flex items-center gap-2 text-xs hover:bg-bq-inset"
@@ -270,7 +270,7 @@ export default function QuizSetList() {
         <div className="hidden md:block px-6 py-4 border-b border-bq-hair bg-bq-white">
           <div className="flex items-center justify-between mb-3">
             <div>
-              <div className="text-[10px] text-bq-ink3 uppercase font-semibold tracking-wider">
+              <div className="text-[12px] text-bq-ink3 font-semibold">
                 <Link to={`/groups/${groupId}`} className="hover:text-bq-ink">{(groupName || 'Nhóm').toUpperCase()}</Link>
                 {' / '}<span>BỘ CÂU HỎI</span>
               </div>
@@ -535,7 +535,7 @@ function SidebarSection({ label, children }: { label: string; children: React.Re
   return (
     <>
       <div className="px-4 py-1 mt-3">
-        <div className="text-[9px] font-semibold text-bq-ink3 uppercase tracking-wider">{label}</div>
+        <div className="text-[11.5px] font-semibold text-bq-ink3">{label}</div>
       </div>
       {children}
     </>

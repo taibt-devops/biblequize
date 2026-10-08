@@ -280,7 +280,7 @@ export default function CreateRoom() {
               {formData.questionSource === 'CUSTOM' ? (
                 <>
                   <div className="flex items-center justify-between mt-3.5 mb-2">
-                    <span className="text-[11px] font-bold tracking-[0.08em] uppercase text-bq-ink2">Bộ câu hỏi</span>
+                    <span className="text-[12.5px] font-bold text-bq-ink2">Bộ câu hỏi</span>
                     <Link to="/my-sets/new" className="inline-flex items-center gap-1 text-[13px] font-semibold text-bq-amberd hover:text-bq-amber">
                       <span className="material-symbols-outlined" style={{ fontSize: 14 }}>add</span>
                       Tạo bộ mới
@@ -528,7 +528,7 @@ export default function CreateRoom() {
 
 function CardLabel({ children }: { children: React.ReactNode }) {
   return (
-    <div className="text-[11px] font-bold tracking-[0.1em] uppercase text-bq-ink2 mb-2.5 flex items-center gap-2">
+    <div className="text-[12.5px] font-bold text-bq-ink2 mb-2.5 flex items-center gap-2">
       {children}
     </div>
   )

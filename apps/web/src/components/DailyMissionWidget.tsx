@@ -85,7 +85,7 @@ export default function DailyMissionWidget() {
       className="rounded-[10px] px-3.5 py-3 w-full text-left bg-bq-white border border-bq-hair shadow-bq-soft hover:bg-bq-paper transition-colors cursor-pointer"
     >
       <div
-        className="text-[10px] uppercase font-bold mb-1.5 text-bq-ink3"
+        className="text-[12px] font-bold mb-1.5 text-bq-ink3"
         style={{ letterSpacing: '0.12em' }}
       >
         🎯 Nhiệm vụ ngày

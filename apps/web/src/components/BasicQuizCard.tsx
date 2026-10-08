@@ -99,7 +99,7 @@ export default function BasicQuizCard() {
       >
         <div className="flex items-center gap-2 mb-4">
           <span className="material-symbols-outlined text-bq-amberd text-base" style={FILL_1}>verified</span>
-          <span className="text-xs font-bold text-bq-amberd uppercase tracking-widest">
+          <span className="text-[12.5px] font-bold text-bq-amberd">
             {t('basicQuiz.card.passedBadge')}
           </span>
         </div>

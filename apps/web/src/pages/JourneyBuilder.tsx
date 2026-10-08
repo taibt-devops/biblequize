@@ -188,7 +188,7 @@ const BuildWeeks: React.FC<{ groupId: string; journeyId: string; navigate: Retur
 
       {/* Add week */}
       <form onSubmit={onAdd} className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-4 space-y-3 mb-4" data-testid="journey-add-week">
-        <div className="text-xs font-bold text-bq-amberd uppercase tracking-wider">{t('groupJourney.addWeekTitle')}</div>
+        <div className="text-[12.5px] font-bold text-bq-amberd">{t('groupJourney.addWeekTitle')}</div>
         <input
           value={weekTitle} onChange={e => setWeekTitle(e.target.value)} data-testid="journey-week-title-input"
           className="w-full bg-bq-white border border-bq-hair text-bq-ink placeholder:text-bq-ink3 rounded-lg px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-bq-sapphire outline-none"

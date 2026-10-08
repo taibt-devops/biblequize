@@ -134,7 +134,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
           >
             <span className="text-base flex-shrink-0">👑</span>
             <div className="min-w-0">
-              <div className="text-[10px] font-bold uppercase" style={{ color: 'var(--bq-amber-deep)' }}>
+              <div className="text-[12px] font-bold" style={{ color: 'var(--bq-amber-deep)' }}>
                 {hostBroadcast.hostName}
               </div>
               <div className="text-sm text-bq-ink">{hostBroadcast.message}</div>
@@ -276,7 +276,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
           <div className="flex items-center gap-3 min-w-0">
             <div className={`w-2 h-2 rounded-full flex-shrink-0 ${connected ? 'bg-bq-emerald shadow-[0_0_6px_rgba(46,125,79,0.4)]' : 'bg-bq-ruby shadow-[0_0_6px_rgba(179,69,47,0.4)]'}`} />
             <span
-              className="text-[10px] font-bold uppercase tracking-[0.1em] flex-shrink-0"
+              className="text-[12px] font-bold flex-shrink-0"
               style={{ color: 'var(--bq-emerald)' }}
             >
               {gameMode.replace(/_/g, ' ')}
@@ -400,7 +400,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
             className="hidden md:block self-start md:sticky md:top-20 bg-bq-white rounded-2xl border border-bq-hair shadow-bq-soft p-4"
             data-testid="quiz-scoreboard-left"
           >
-            <div className="text-[10px] font-bold uppercase tracking-[0.1em] text-bq-ink2 mb-4 flex items-center gap-1.5">
+            <div className="text-[12px] font-bold text-bq-ink2 mb-4 flex items-center gap-1.5">
               <span className="material-symbols-outlined text-bq-emerald text-sm" style={FILL_STYLE}>
                 {isBattleRoyale ? 'swords' :
                  isTeamVsTeam ? 'groups' :
@@ -525,7 +525,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
                 <div className="flex items-center justify-between md:hidden">
                   <div className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-bq-amberd text-sm" style={FILL_STYLE}>quiz</span>
-                    <span className="text-[10px] font-black uppercase tracking-wider text-bq-amberd">
+                    <span className="text-[12px] font-black text-bq-amberd">
                       {t('room.quiz.questionProgress', { current: questionIndex + 1, total: totalQuestions || '?' })}
                     </span>
                   </div>
@@ -655,7 +655,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
           >
             <div className="px-4 py-3 border-b border-bq-hair flex items-center gap-2">
               <span className="text-sm" aria-hidden="true">📢</span>
-              <span className="text-[10px] font-bold uppercase tracking-wider text-bq-ink2">
+              <span className="text-[12px] font-bold text-bq-ink2">
                 Live feed
               </span>
             </div>
@@ -686,7 +686,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
 
           {/* ── Leaderboard / Side Panel (mobile only — desktop uses LEFT) ── */}
           <div className="md:hidden bg-bq-white rounded-2xl border border-bq-hair shadow-bq-soft p-4 self-start">
-            <div className="text-[10px] font-bold uppercase tracking-[0.1em] text-bq-ink2 mb-4 flex items-center gap-1.5">
+            <div className="text-[12px] font-bold text-bq-ink2 mb-4 flex items-center gap-1.5">
               <span className="material-symbols-outlined text-bq-emerald text-sm" style={FILL_STYLE}>
                 {isBattleRoyale ? 'swords' :
                  isTeamVsTeam ? 'groups' :

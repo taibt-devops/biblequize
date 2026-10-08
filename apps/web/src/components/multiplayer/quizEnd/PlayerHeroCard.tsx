@@ -61,7 +61,7 @@ export function PlayerHeroCard({ me, myUsername, myRank, totalQuestions }: Props
           </div>
           <div className="min-w-0">
             <div
-              className="text-xs font-bold uppercase tracking-wider mb-1"
+              className="text-[12.5px] font-bold mb-1"
               style={{ color: '#9ca3af' }}
             >
               Bạn về thứ

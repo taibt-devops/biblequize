@@ -68,7 +68,7 @@ export default function EnergyCard({
       <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
         <div className="flex items-center gap-2 text-bq-amberd/80">
           <span className="text-sm">⚡</span>
-          <span className="text-[11px] font-medium tracking-wider uppercase">
+          <span className="text-[12.5px] font-medium">
             {t('ranked.energy')}
           </span>
         </div>

@@ -34,7 +34,7 @@ export default function RankedStreakCard({ streak }: RankedStreakCardProps) {
         {streak}
       </span>
       <span
-        className="text-[9px] md:text-[10px] tracking-wider uppercase mt-1.5"
+        className="text-[11.5px] md:text-[10px] mt-1.5"
         style={{ color: 'rgba(255,140,66,0.8)' }}
       >
         {t('ranked.streakHeader')}

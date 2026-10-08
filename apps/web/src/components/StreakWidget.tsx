@@ -29,7 +29,7 @@ export default function StreakWidget() {
       className="rounded-[10px] px-3.5 py-3 bg-bq-white border border-bq-hair shadow-bq-soft"
     >
       <div
-        className="text-[10px] uppercase font-bold mb-1.5 text-bq-ink2"
+        className="text-[12px] font-bold mb-1.5 text-bq-ink2"
         style={{ letterSpacing: '0.12em' }}
       >
         🔥 Streak

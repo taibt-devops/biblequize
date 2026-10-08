@@ -55,7 +55,7 @@ export default function WeeklyQuiz() {
       {/* Theme card */}
       {theme && (
         <div className="bg-bq-white rounded-2xl p-8 border border-bq-hair shadow-bq-soft text-center space-y-4" data-testid="weekly-quiz-theme-card">
-          <p className="text-xs font-bold text-bq-sapphire uppercase tracking-wider">{t('gameModes.weeklyPage.themeLabel')}</p>
+          <p className="text-[12.5px] font-bold text-bq-sapphire">{t('gameModes.weeklyPage.themeLabel')}</p>
           <h2 className="text-2xl font-black text-bq-ink" data-testid="weekly-theme-title">{theme.themeName}</h2>
           <p className="text-sm text-bq-ink2" data-testid="weekly-theme-description">{theme.themeNameEn}</p>
 

@@ -156,16 +156,16 @@ function GroupCard({ group, onOpen }: { group: MyGroupSummary; onOpen: (id: stri
               {group.name}
             </div>
             {isLeader ? (
-              <span className="bg-bq-amberd text-white text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md flex items-center gap-1 flex-shrink-0">
+              <span className="bg-bq-amberd text-white text-[11.5px] font-bold px-2 py-0.5 rounded-md flex items-center gap-1 flex-shrink-0">
                 <span className="material-symbols-outlined text-[11px]">workspace_premium</span>
                 {t('groups.roleLeaderShort')}
               </span>
             ) : isMod ? (
-              <span className="bg-bq-sapphire/15 text-bq-sapphire border border-bq-sapphire/30 text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md flex-shrink-0">
+              <span className="bg-bq-sapphire/15 text-bq-sapphire border border-bq-sapphire/30 text-[11.5px] font-bold px-2 py-0.5 rounded-md flex-shrink-0">
                 {t('groups.roleModShort')}
               </span>
             ) : (
-              <span className="bg-bq-inset text-bq-ink2 border border-bq-hair text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md flex-shrink-0">
+              <span className="bg-bq-inset text-bq-ink2 border border-bq-hair text-[11.5px] font-bold px-2 py-0.5 rounded-md flex-shrink-0">
                 {t('groups.roleMemberShort')}
               </span>
             )}
@@ -184,7 +184,7 @@ function GroupCard({ group, onOpen }: { group: MyGroupSummary; onOpen: (id: stri
           <div className="text-bq-amberd text-[15px] sm:text-[17px] font-bold leading-tight">
             {group.memberCount}
           </div>
-          <div className="text-bq-ink2 text-[9px] sm:text-[10px] uppercase tracking-wider mt-0.5">
+          <div className="text-bq-ink2 text-[11.5px] sm:text-[10px] mt-0.5">
             {t('groups.statMembersShort')}
           </div>
         </div>
@@ -192,7 +192,7 @@ function GroupCard({ group, onOpen }: { group: MyGroupSummary; onOpen: (id: stri
           <div className="text-bq-amberd text-[15px] sm:text-[17px] font-bold leading-tight">
             {group.avgScore}
           </div>
-          <div className="text-bq-ink2 text-[9px] sm:text-[10px] uppercase tracking-wider mt-0.5">
+          <div className="text-bq-ink2 text-[11.5px] sm:text-[10px] mt-0.5">
             {t('groups.statAvgScore')}
           </div>
         </div>
@@ -200,7 +200,7 @@ function GroupCard({ group, onOpen }: { group: MyGroupSummary; onOpen: (id: stri
           <div className="text-bq-amberd text-[15px] sm:text-[17px] font-bold leading-tight">
             {group.accuracy}%
           </div>
-          <div className="text-bq-ink2 text-[9px] sm:text-[10px] uppercase tracking-wider mt-0.5">
+          <div className="text-bq-ink2 text-[11.5px] sm:text-[10px] mt-0.5">
             {t('groups.statAccuracy')}
           </div>
         </div>
@@ -620,7 +620,7 @@ const Groups: React.FC = () => {
             </h3>
             <form onSubmit={handleCreate} className="space-y-4" data-testid="groups-create-form">
               <div>
-                <label className="block text-[11px] font-medium uppercase tracking-wider text-bq-ink2 mb-1.5">
+                <label className="block text-[12.5px] font-medium text-bq-ink2 mb-1.5">
                   {t('groups.groupName')} *
                 </label>
                 <input
@@ -634,7 +634,7 @@ const Groups: React.FC = () => {
                 />
               </div>
               <div>
-                <label className="block text-[11px] font-medium uppercase tracking-wider text-bq-ink2 mb-1.5">
+                <label className="block text-[12.5px] font-medium text-bq-ink2 mb-1.5">
                   {t('groups.description')}
                 </label>
                 <textarea
@@ -649,7 +649,7 @@ const Groups: React.FC = () => {
 
               {/* Privacy toggle */}
               <div>
-                <label className="block text-[11px] font-medium uppercase tracking-wider text-bq-ink2 mb-1.5">
+                <label className="block text-[12.5px] font-medium text-bq-ink2 mb-1.5">
                   {t('groups.privacyLabel')}
                 </label>
                 <div className="grid grid-cols-2 gap-2" role="radiogroup">
@@ -731,7 +731,7 @@ const Groups: React.FC = () => {
             </h3>
             <form onSubmit={handleModalJoin} className="space-y-4">
               <div>
-                <label className="block text-[11px] font-medium uppercase tracking-wider text-bq-ink2 mb-1.5">
+                <label className="block text-[12.5px] font-medium text-bq-ink2 mb-1.5">
                   {t('groups.inviteCode')}
                 </label>
                 <input

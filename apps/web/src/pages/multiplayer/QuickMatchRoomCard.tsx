@@ -66,7 +66,7 @@ export default function QuickMatchRoomCard({ room }: { room: PublicRoom }) {
         className="absolute top-3 right-3 px-2 py-0.5 rounded-md"
         style={{ background: 'rgba(47,111,176,0.12)', border: '1px solid rgba(47,111,176,0.30)' }}
       >
-        <span className="text-[9px] font-bold uppercase tracking-wider" style={{ color: INDIGO_LIGHT }}>
+        <span className="text-[11.5px] font-bold" style={{ color: INDIGO_LIGHT }}>
           {t('multiplayer.filterQuickMatch')}
         </span>
       </div>
@@ -80,7 +80,7 @@ export default function QuickMatchRoomCard({ room }: { room: PublicRoom }) {
           <span className="material-symbols-outlined" style={{ fontSize: 18, color: INDIGO }}>rocket_launch</span>
         </div>
         <div className="min-w-0">
-          <div className="text-[10px] font-bold tracking-wider uppercase" style={{ color: INDIGO_LIGHT }}>
+          <div className="text-[12px] font-bold" style={{ color: INDIGO_LIGHT }}>
             {t('multiplayer.quickMatch.noHost', { mode: modeShortLabel(room.mode) })}
           </div>
           <div className="text-sm font-bold text-bq-ink truncate">{t('multiplayer.quickMatch.roomCode', { code: room.roomCode })}</div>

@@ -316,7 +316,7 @@ const RoomQuizHost: React.FC = () => {
         <div className="mx-auto w-full max-w-3xl px-4 lg:px-6 pb-10">
           <header className="pt-4 flex items-center">
             <span
-              className="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider"
+              className="px-2 py-0.5 rounded text-[12px] font-bold"
               style={{ background: 'rgba(245,158,11,0.18)', color: '#D97F06' }}
             >
               👑 Quản trò
@@ -325,7 +325,7 @@ const RoomQuizHost: React.FC = () => {
 
           {/* Celebration header */}
           <div className="text-center pt-8 pb-6">
-            <div className="text-[10px] font-bold uppercase tracking-[0.4em] mb-2" style={{ color: '#D97F06' }}>
+            <div className="text-[12px] font-bold mb-2" style={{ color: '#D97F06' }}>
               Trận đấu kết thúc
             </div>
             {/* Audience-facing headline (this screen is cast to a TV) —
@@ -357,7 +357,7 @@ const RoomQuizHost: React.FC = () => {
 
           {/* Stat tiles — one row on ≥sm, 2×2 on mobile */}
           <div className="mb-6">
-            <div className="text-[10px] uppercase tracking-wider font-bold mb-2" style={{ color: '#4D3A1F' }}>
+            <div className="text-[12px] font-bold mb-2" style={{ color: '#4D3A1F' }}>
               📊 Thống kê trận đấu
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3" data-testid="end-host-stats">
@@ -371,7 +371,7 @@ const RoomQuizHost: React.FC = () => {
           {/* Final rankings — hidden for ≤2 (head-to-head already shows both). */}
           {finalRanks.length > 2 && (
           <div className="mb-8">
-            <div className="text-[10px] uppercase tracking-wider font-bold mb-2" style={{ color: '#4D3A1F' }}>
+            <div className="text-[12px] font-bold mb-2" style={{ color: '#4D3A1F' }}>
               🏆 Xếp hạng cuối cùng
             </div>
             <ul className="space-y-2" data-testid="end-host-rankings">
@@ -509,7 +509,7 @@ const RoomQuizHost: React.FC = () => {
         <header className="flex items-center justify-between gap-3 mb-2 lg:mb-3" data-testid="host-header">
           <div className="flex items-center gap-2 lg:gap-3 min-w-0">
             <span
-              className="px-2 py-0.5 lg:px-2.5 lg:py-1 rounded text-[10px] lg:text-xs font-bold uppercase tracking-wider flex-shrink-0"
+              className="px-2 py-0.5 lg:px-2.5 lg:py-1 rounded text-[12px] lg:text-xs font-bold flex-shrink-0"
               style={{ background: 'rgba(245,158,11,0.18)', color: '#D97F06' }}
             >
               👑 Quản trò
@@ -687,7 +687,7 @@ const RoomQuizHost: React.FC = () => {
                 that pop in as ANSWER_SUBMITTED events land. (Per-option
                 counts stay impossible — payload carries no option index.) */}
             <section className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-4 lg:p-5">
-              <span className="text-[10px] uppercase tracking-wider font-bold" style={{ color: '#4D3A1F' }}>
+              <span className="text-[12px] font-bold" style={{ color: '#4D3A1F' }}>
                 Tình trạng trả lời
               </span>
               <div className="flex items-baseline gap-2 mt-1 mb-3">
@@ -732,7 +732,7 @@ const RoomQuizHost: React.FC = () => {
 
             {/* Live scoreboard — top 5 with rank accents */}
             <section className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-4">
-              <div className="text-[10px] uppercase tracking-wider font-bold mb-3" style={{ color: '#4D3A1F' }}>
+              <div className="text-[12px] font-bold mb-3" style={{ color: '#4D3A1F' }}>
                 🏆 Bảng xếp hạng tạm thời
               </div>
               {scores.length === 0 ? (
@@ -891,7 +891,7 @@ const StatCard: React.FC<{ label: string; value: string; accent?: string; icon?:
       </span>
     )}
     <div className="font-display font-black text-lg lg:text-xl tabular-nums" style={{ color: accent ?? '#1D2B22' }}>{value}</div>
-    <div className="text-[10px] uppercase tracking-wide mt-0.5" style={{ color: '#4D3A1F' }}>{label}</div>
+    <div className="text-[12px] mt-0.5" style={{ color: '#4D3A1F' }}>{label}</div>
   </div>
 );
 

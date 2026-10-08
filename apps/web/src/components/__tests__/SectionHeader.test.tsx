@@ -4,12 +4,11 @@ import { render, screen } from '@testing-library/react'
 import SectionHeader from '../SectionHeader'
 
 describe('SectionHeader (HR-6)', () => {
-  it('renders uppercase tracked title with gold accent bar', () => {
+  it('renders the title in sentence case (LK: no tracked caps)', () => {
     render(<SectionHeader title="Chế độ chơi chính" />)
     const title = screen.getByTestId('section-header-title')
     expect(title).toHaveTextContent('Chế độ chơi chính')
-    expect(title.className).toContain('uppercase')
-    expect(title.className).toContain('tracking-[0.16em]')
+    expect(title.className).not.toContain('uppercase')
   })
 
   it('omits meta when prop is undefined', () => {

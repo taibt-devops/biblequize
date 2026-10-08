@@ -24,7 +24,7 @@ export function EndRankingList({ ranked, myUsername, myUserId }: Props) {
       }}
     >
       <div
-        className="text-[10px] font-bold uppercase tracking-wider mb-3"
+        className="text-[12px] font-bold mb-3"
         style={{ color: '#9ca3af' }}
       >
         Bảng xếp hạng

@@ -138,7 +138,7 @@ export default function HeroRankedCard({
         <div>
           <div
             data-testid="hero-ranked-card-label"
-            className="text-[10px] font-bold tracking-[0.22em] uppercase mb-2 text-bq-ink2"
+            className="text-[12px] font-bold mb-2 text-bq-ink2"
           >
             {labelText}
           </div>

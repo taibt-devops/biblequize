@@ -16,13 +16,13 @@ export default function CellGroupPulseCard() {
         <div className="text-3xl opacity-40 select-none">💚</div>
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-0.5 flex-wrap">
-            <span className="text-[10px] font-bold text-bq-emerald uppercase tracking-wider">
+            <span className="text-[12px] font-bold text-bq-emerald">
               {t('groups.pulse.title')}
             </span>
-            <span className="text-[9px] text-bq-ink2 px-1.5 py-0.5 rounded bg-bq-inset uppercase">
+            <span className="text-[11.5px] text-bq-ink2 px-1.5 py-0.5 rounded bg-bq-inset">
               {t('groups.pulse.comingSoon')}
             </span>
-            <span className="text-[9px] px-1.5 py-0.5 rounded bg-bq-amber/10 text-bq-amberd uppercase ml-auto">
+            <span className="text-[11.5px] px-1.5 py-0.5 rounded bg-bq-amber/10 text-bq-amberd ml-auto">
               👑 {t('groups.pulse.leaderOnly')}
             </span>
           </div>

@@ -146,7 +146,7 @@ export default function RoomAnalytics() {
         </button>
         <div className="flex items-center gap-2">
           <span
-            className="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider"
+            className="px-2 py-0.5 rounded text-[12px] font-bold"
             style={{ background: 'rgba(245,158,11,0.18)', color: '#D97F06' }}
           >
             📊 Phân tích chi tiết
@@ -157,7 +157,7 @@ export default function RoomAnalytics() {
       <div className="max-w-5xl mx-auto space-y-5">
         {/* Title */}
         <div>
-          <div className="text-xs font-bold uppercase tracking-[0.3em] mb-1" style={{ color: '#4D3A1F' }}>
+          <div className="text-[12.5px] font-bold mb-1" style={{ color: '#4D3A1F' }}>
             {room.mode.replace(/_/g, ' ')} · {room.roomCode}
           </div>
           <h1 className="font-display text-2xl lg:text-3xl font-extrabold text-bq-ink tracking-tight">
@@ -203,7 +203,7 @@ export default function RoomAnalytics() {
           ) : (
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
-                <thead className="text-xs uppercase tracking-wider" style={{ color: '#4D3A1F' }}>
+                <thead className="text-[12.5px]" style={{ color: '#4D3A1F' }}>
                   <tr className="border-b" style={{ borderColor: '#C9B58C' }}>
                     <Th>Hạng</Th>
                     <Th>Người chơi</Th>
@@ -258,7 +258,7 @@ export default function RoomAnalytics() {
                         </Td>
                         <Td className="hidden sm:table-cell">
                           <span
-                            className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded"
+                            className="text-[12px] font-bold px-2 py-0.5 rounded"
                             style={{
                               background: p.playerStatus === 'ELIMINATED' ? 'rgba(179,69,47,0.12)' : 'rgba(46,125,79,0.12)',
                               color: p.playerStatus === 'ELIMINATED' ? '#B3452F' : '#2E7D4F',
@@ -315,7 +315,7 @@ const RoundRow: React.FC<{ round: RoundAnalytics }> = ({ round: r }) => {
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-1.5">
             <span
-              className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded"
+              className="text-[12px] font-bold px-2 py-0.5 rounded"
               style={{ background: 'rgba(245,158,11,0.15)', color: '#D97F06' }}
             >
               Câu {r.roundNo + 1}
@@ -327,7 +327,7 @@ const RoundRow: React.FC<{ round: RoundAnalytics }> = ({ round: r }) => {
           <p className="text-sm text-bq-ink leading-relaxed">{r.questionContent}</p>
         </div>
         <div className="text-right flex-shrink-0">
-          <div className="text-xs uppercase tracking-wider mb-0.5" style={{ color: '#4D3A1F' }}>
+          <div className="text-[12.5px] mb-0.5" style={{ color: '#4D3A1F' }}>
             Đúng
           </div>
           <div
@@ -405,7 +405,7 @@ const SummaryCell: React.FC<{ label: string; value: string; divider?: boolean }>
     className={`text-center px-3 ${divider ? 'lg:border-l' : ''}`}
     style={{ borderColor: '#C9B58C' }}
   >
-    <div className="text-[10px] uppercase tracking-wider" style={{ color: '#4D3A1F' }}>{label}</div>
+    <div className="text-[12px]" style={{ color: '#4D3A1F' }}>{label}</div>
     <div className="font-bold text-bq-ink text-base lg:text-lg mt-0.5">{value}</div>
   </div>
 );

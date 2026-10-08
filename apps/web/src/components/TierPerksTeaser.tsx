@@ -50,7 +50,7 @@ export default function TierPerksTeaser({ userTier, totalPoints }: TierPerksTeas
         <span className="material-symbols-outlined text-bq-amberd text-base" style={FILL_1}>
           auto_awesome
         </span>
-        <h3 className="text-xs font-bold text-bq-ink2 uppercase tracking-widest">
+        <h3 className="text-[12.5px] font-bold text-bq-ink2">
           {t('home.tierPerks.title')}
         </h3>
       </div>
@@ -98,7 +98,7 @@ export default function TierPerksTeaser({ userTier, totalPoints }: TierPerksTeas
       </div>
 
       {/* Link */}
-      <p className="text-xs font-bold text-bq-amberd uppercase tracking-widest group-hover:underline group-active:underline">
+      <p className="text-[12.5px] font-bold text-bq-amberd group-hover:underline group-active:underline">
         {t('home.tierPerks.linkText')}
       </p>
     </Link>

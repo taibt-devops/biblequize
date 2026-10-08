@@ -80,7 +80,7 @@ export default function VerseFooter({ verse, source = 'BTTHĐ 2011' }: VerseFoot
 
       <div
         data-testid="verse-footer-cite"
-        className="text-center mt-4 text-[11px] font-semibold tracking-[0.22em] text-ivory-dim uppercase"
+        className="text-center mt-4 text-[12.5px] font-semibold text-ivory-dim"
       >
         <span className="text-ivory-faint mr-2">—</span>
         {v.ref} · {source}

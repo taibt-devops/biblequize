@@ -96,7 +96,7 @@ const ScheduledQuizDetailPage: React.FC = () => {
       {!isEnded ? (
         <div data-testid="active-banner" className="rounded-2xl p-4 mb-4 grid grid-cols-[1fr_auto] gap-3 items-center bg-bq-white border border-bq-sapphire/25 shadow-bq-soft">
           <div>
-            <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-bq-emerald/10 border border-bq-emerald/25 text-bq-emerald text-[10px] font-bold uppercase tracking-wide mb-1.5">
+            <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-bq-emerald/10 border border-bq-emerald/25 text-bq-emerald text-[12px] font-bold mb-1.5">
               <span className="w-1.5 h-1.5 bg-bq-emerald rounded-full animate-pulse" />
               {t('scheduledQuiz.statusActive')}
             </div>
@@ -107,7 +107,7 @@ const ScheduledQuizDetailPage: React.FC = () => {
             </div>
           </div>
           <div className="text-center bg-bq-inset border border-bq-amber/25 rounded-lg px-3.5 py-2.5">
-            <div className="text-[9px] uppercase tracking-wider text-bq-ink2 font-bold">{t('scheduledQuiz.remaining')}</div>
+            <div className="text-[11.5px] text-bq-ink2 font-bold">{t('scheduledQuiz.remaining')}</div>
             <div className="text-base font-bold text-bq-amberd tabular-nums mt-0.5">{fmtCountdown(detail.deadline)}</div>
           </div>
         </div>
@@ -132,7 +132,7 @@ const ScheduledQuizDetailPage: React.FC = () => {
             {winner.name[0]?.toUpperCase()}
           </div>
           <div className="min-w-0">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-bq-amberd mb-0.5">🏆 {t('scheduledQuiz.winner')}</div>
+            <div className="text-[12px] font-bold text-bq-amberd mb-0.5">🏆 {t('scheduledQuiz.winner')}</div>
             <div className="text-base font-bold truncate">{winner.name}</div>
             <div className="text-bq-ink2 text-[11px]">
               {winner.correctCount}/{winner.totalQuestions} đúng · {fmtTime(winner.timeSeconds)} phút · {winner.attemptsUsed} lần thử
@@ -142,7 +142,7 @@ const ScheduledQuizDetailPage: React.FC = () => {
             <div className="text-2xl font-bold tabular-nums text-bq-amberd">
               {winner.score}
             </div>
-            <div className="text-[10px] uppercase tracking-wide text-bq-ink2 mt-1">điểm</div>
+            <div className="text-[12px] text-bq-ink2 mt-1">điểm</div>
           </div>
         </div>
       )}
@@ -150,7 +150,7 @@ const ScheduledQuizDetailPage: React.FC = () => {
       {/* My status (active) */}
       {!isEnded && (
         <div className="rounded-2xl p-4 mb-4 bg-bq-white border border-bq-hair shadow-bq-soft" data-testid="my-status">
-          <div className="text-[10px] uppercase tracking-wider text-bq-ink2 font-bold mb-3">{t('scheduledQuiz.myStatus')}</div>
+          <div className="text-[12px] text-bq-ink2 font-bold mb-3">{t('scheduledQuiz.myStatus')}</div>
           <div className="flex items-center gap-2.5 mb-3">
             {Array.from({ length: detail.maxAttempts }).map((_, i) => {
               const used = i < detail.myStatus.attemptsUsed

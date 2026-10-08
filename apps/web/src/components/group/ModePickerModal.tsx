@@ -176,7 +176,7 @@ export default function ModePickerModal({
 
 function SectionHeader({ emoji, label, colorCls }: { emoji: string; label: string; colorCls: string }) {
   return (
-    <div className={`text-[10px] lg:text-xs font-bold uppercase tracking-wider mb-2 lg:mb-3 flex items-center gap-2 ${colorCls}`}>
+    <div className={`text-[12px] lg:text-xs font-bold mb-2 lg:mb-3 flex items-center gap-2 ${colorCls}`}>
       <span>{emoji} {label}</span>
       <div className="h-px flex-1 bg-current opacity-20" />
     </div>

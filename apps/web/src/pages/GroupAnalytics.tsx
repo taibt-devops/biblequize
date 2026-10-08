@@ -248,7 +248,7 @@ const GroupAnalytics: React.FC = () => {
       {/* ── Back link ── */}
       <button
         onClick={() => navigate(`/groups/${id}`)}
-        className="flex items-center gap-1 text-bq-ink2 text-[11px] font-medium tracking-wider uppercase hover:text-bq-amberd transition-colors"
+        className="flex items-center gap-1 text-bq-ink2 text-[12.5px] font-medium hover:text-bq-amberd transition-colors"
       >
         <span className="material-symbols-outlined text-[14px]">arrow_back</span>
         {t('groupAnalytics.backToGroup')}

@@ -167,7 +167,7 @@ export default function SeasonCard() {
       <div className="relative z-10">
         <div className="grid grid-cols-2 gap-3">
           <div className="rounded-[13px] border border-bq-hair bg-bq-inset px-4 py-3.5 md:px-[18px] md:py-4">
-            <div className="text-bq-ink3 text-[10px] tracking-[1.3px] font-bold uppercase">
+            <div className="text-bq-ink3 text-[12px] font-bold">
               {t('ranked.seasonRankLabel')}
             </div>
             {rank != null ? (
@@ -195,7 +195,7 @@ export default function SeasonCard() {
           </div>
 
           <div className="rounded-[13px] border border-bq-hair bg-bq-inset px-4 py-3.5 md:px-[18px] md:py-4">
-            <div className="text-bq-ink3 text-[10px] tracking-[1.3px] font-bold uppercase">
+            <div className="text-bq-ink3 text-[12px] font-bold">
               {t('ranked.seasonPointsBigLabel')}
             </div>
             <div

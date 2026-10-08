@@ -69,7 +69,7 @@ export default function NewGroupOnboarding(props: Props) {
     >
       <div className="flex items-start justify-between gap-3 mb-3">
         <div>
-          <div className="text-[11px] font-bold text-bq-amberd uppercase tracking-wider mb-1">
+          <div className="text-[12.5px] font-bold text-bq-amberd mb-1">
             👋 {t('groups.onboarding.title')}
           </div>
           <div className="text-[13px] text-bq-ink">

@@ -449,7 +449,7 @@ const RoomLobby: React.FC = () => {
             owns the screen). */}
         {!isGo && (
           <div
-            className="text-xs lg:text-sm font-bold uppercase mb-6 lg:mb-8 fade-in"
+            className="text-[12.5px] lg:text-sm font-bold mb-6 lg:mb-8 fade-in"
             style={{ color: 'var(--bq-amber-deep)', letterSpacing: '0.4em' }}
           >
             BẮT ĐẦU TRONG
@@ -642,7 +642,7 @@ const RoomLobby: React.FC = () => {
           </button>
           <div className="hidden sm:block h-5 w-px bg-bq-hair" />
           <span
-            className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider flex-shrink-0"
+            className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[12px] font-extrabold flex-shrink-0"
             style={{ color: modeInfo.chipColor, background: modeInfo.chipBg, border: `1px solid ${modeInfo.chipBorder}` }}
             data-testid="lobby-topbar-mode"
           >
@@ -735,7 +735,7 @@ const RoomLobby: React.FC = () => {
                 {room.hostName[0]?.toUpperCase() ?? '?'}
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-[10px] uppercase tracking-wider font-bold text-bq-ink2">
+                <div className="text-[12px] font-bold text-bq-ink2">
                   👑 Quản trò
                 </div>
                 <div className="text-sm font-bold text-bq-ink truncate">{room.hostName}</div>
@@ -764,7 +764,7 @@ const RoomLobby: React.FC = () => {
                     </span>
                   )}
                   <span
-                    className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider"
+                    className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[11.5px] font-bold"
                     style={{
                       color: room.isPublic ? 'var(--bq-emerald)' : 'var(--bq-ember)',
                       background: room.isPublic ? 'color-mix(in srgb, var(--bq-emerald) 10%, transparent)' : 'color-mix(in srgb, var(--bq-ember) 10%, transparent)',
@@ -775,7 +775,7 @@ const RoomLobby: React.FC = () => {
                     {room.isPublic ? 'Công khai' : 'Riêng tư'}
                   </span>
                 </div>
-                <div className="text-[10px] uppercase tracking-wider mb-1 text-bq-ink2">Mã phòng</div>
+                <div className="text-[12px] mb-1 text-bq-ink2">Mã phòng</div>
                 <div
                   className="font-display font-black leading-none mb-3"
                   style={{
@@ -919,7 +919,7 @@ const RoomLobby: React.FC = () => {
                 <span className="material-symbols-outlined text-[18px]">lightbulb</span>
               </div>
               <div className="flex-1 min-w-0 text-xs text-bq-ink2" style={{ lineHeight: 1.5 }}>
-                <div className="text-[10px] uppercase tracking-wider font-bold mb-0.5 text-bq-sapphire">
+                <div className="text-[12px] font-bold mb-0.5 text-bq-sapphire">
                   {modeInfo.ruleTitle}
                 </div>
                 {modeInfo.ruleText}
@@ -1131,7 +1131,7 @@ const LobbyCTA: React.FC<{
 
 const HeroStat: React.FC<{ label: string; value: string }> = ({ label, value }) => (
   <div>
-    <div className="text-[10px] uppercase tracking-wider text-bq-ink3">{label}</div>
+    <div className="text-[12px] text-bq-ink3">{label}</div>
     <div className="font-extrabold text-bq-ink text-base lg:text-lg leading-tight mt-0.5">{value}</div>
   </div>
 );
@@ -1142,7 +1142,7 @@ const ActivityLogPanel: React.FC<{ entries: ActivityEntry[]; statusHint: string 
     data-testid="lobby-activity-log"
   >
     <div className="flex items-center gap-2 mb-3">
-      <span className="text-[10px] font-bold uppercase tracking-wider text-bq-ink2">
+      <span className="text-[12px] font-bold text-bq-ink2">
         📜 Hoạt động phòng
       </span>
       <div className="h-px flex-1 bg-bq-hair" />
@@ -1271,7 +1271,7 @@ const PlayerSlot: React.FC<{
         {player.tier ?? 'Tân Tín Hữu'}
       </div>
       <div
-        className="inline-block px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider"
+        className="inline-block px-2 py-0.5 rounded-md text-[12px] font-bold"
         style={{ background: colors.statusBg, color: colors.statusText }}
       >
         {suddenDeathOrder !== undefined && suddenDeathOrder >= 2
@@ -1356,7 +1356,7 @@ const TeamSplit: React.FC<{
 }> = ({ teamAPlayers, teamBPlayers, hostId, myUserId, isHost, myTeam, kickMenuFor, setKickMenuFor, onKick, onSwitchTeam, switchingTeam, onInvite }) => {
   const renderTeam = (label: string, color: string, players: Player[]) => (
     <div>
-      <div className="text-xs font-extrabold uppercase tracking-wider mb-2 inline-flex items-center gap-2" style={{ color }}>
+      <div className="text-[12.5px] font-extrabold mb-2 inline-flex items-center gap-2" style={{ color }}>
         <span className="material-symbols-outlined text-[15px]">shield</span>
         {label}
         {myTeam && players.some(p => p.userId === myUserId) && (

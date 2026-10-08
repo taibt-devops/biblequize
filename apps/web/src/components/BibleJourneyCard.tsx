@@ -137,7 +137,7 @@ export default function BibleJourneyCard() {
               data-testid="bible-journey-overflow"
               className="shrink-0 min-w-[138px] rounded-xl px-3.5 py-3 bg-bq-inset border border-bq-hair opacity-70 cursor-not-allowed"
             >
-              <div className="text-[9px] uppercase tracking-[0.14em] text-bq-ink3 font-bold">
+              <div className="text-[11.5px] text-bq-ink3 font-bold">
                 …
               </div>
               <div className="text-[13px] font-bold text-bq-ink2 mt-1 leading-tight tracking-[-0.01em]">

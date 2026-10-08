@@ -84,7 +84,7 @@ const ScheduledQuizPlay: React.FC = () => {
           className="text-bq-ink2" aria-label="Close">
           <span className="material-symbols-outlined">close</span>
         </button>
-        <div className="text-xs font-bold text-bq-amberd uppercase tracking-wider">CÂU {idx + 1} / {questions.length}</div>
+        <div className="text-[12.5px] font-bold text-bq-amberd">CÂU {idx + 1} / {questions.length}</div>
         <div className="w-6" />
       </div>
 

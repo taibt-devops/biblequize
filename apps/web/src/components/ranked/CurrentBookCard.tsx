@@ -79,7 +79,7 @@ export default function CurrentBookCard({
               {t(positionKey, { n: positionInTestament })}
             </span>
             <span
-              className="px-2 py-0.5 rounded-full text-[9px] font-medium uppercase tracking-wider bg-bq-amber/15 text-bq-amberd"
+              className="px-2 py-0.5 rounded-full text-[11.5px] font-medium bg-bq-amber/15 text-bq-amberd"
             >
               {difficultyLabel}
             </span>

@@ -95,7 +95,7 @@ const SequentialLobbyView: React.FC<Props> = ({
         <div className="rounded-xl px-4 py-3.5 mb-4 flex items-center justify-between"
           style={{ background: '#EFE3C3', border: '1px solid rgba(245,158,11,0.25)' }}>
           <div className="flex-1 min-w-0">
-            <div className="text-[10px] uppercase tracking-[1px] text-bq-ink2 mb-0.5">Mã tham gia · Chia sẻ với anh chị em</div>
+            <div className="text-[12px] text-bq-ink2 mb-0.5">Mã tham gia · Chia sẻ với anh chị em</div>
             <div className="text-[22px] font-extrabold tabular-nums" style={{ color: '#D97F06', letterSpacing: 4 }}>{roomCode}</div>
           </div>
           <button onClick={handleCopy}
@@ -117,7 +117,7 @@ const SequentialLobbyView: React.FC<Props> = ({
               style={{ background: '#EFE3C3', border: '1px solid #C9B58C' }}>
               <span className="material-symbols-outlined text-[16px] block mb-1" style={{ color: '#2F6FB0' }}>{c.icon}</span>
               <div className="text-[14px] font-extrabold">{c.value}</div>
-              <div className="text-[9px] uppercase tracking-wide text-bq-ink2 mt-0.5">{c.label}</div>
+              <div className="text-[11.5px] text-bq-ink2 mt-0.5">{c.label}</div>
             </div>
           ))}
         </div>

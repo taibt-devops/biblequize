@@ -34,14 +34,13 @@ describe('VerseFooter (HR-8)', () => {
     const cite = screen.getByTestId('verse-footer-cite')
     expect(cite).toHaveTextContent('Hê-bơ-rơ 13:5')
     expect(cite).toHaveTextContent('BTTHĐ 2011')
-    expect(cite.className).toContain('uppercase')
+    expect(cite.className).not.toContain('uppercase')
   })
 
-  it('cite uses tracked uppercase styling and contains em-dashes', () => {
+  it('cite contains em-dashes', () => {
     render(<VerseFooter verse={{ text: 'x', ref: 'Test 1:1' }} />)
     const cite = screen.getByTestId('verse-footer-cite')
     expect(cite.textContent).toMatch(/—/)
-    expect(cite.className).toContain('tracking-[0.22em]')
   })
 
   it('falls back to getDailyVerse() when no verse prop is provided', () => {

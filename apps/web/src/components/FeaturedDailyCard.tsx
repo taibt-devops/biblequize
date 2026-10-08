@@ -62,7 +62,7 @@ export default function FeaturedDailyCard({
       {/* Label row: dot + label + date */}
       <div
         data-testid="featured-daily-card-label"
-        className="text-[10px] font-bold tracking-[0.22em] uppercase text-bq-amberd mb-2 flex items-center gap-2"
+        className="text-[12px] font-bold text-bq-amberd mb-2 flex items-center gap-2"
       >
         <span
           aria-hidden
@@ -119,7 +119,7 @@ export default function FeaturedDailyCard({
         <div className="min-w-0">
           <div
             data-testid="featured-daily-card-countdown-label"
-            className="text-[10px] font-semibold tracking-[0.12em] uppercase text-bq-ink3 whitespace-nowrap"
+            className="text-[12px] font-semibold text-bq-ink3 whitespace-nowrap"
           >
             Còn lại trong ngày
           </div>

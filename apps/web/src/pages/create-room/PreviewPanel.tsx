@@ -43,7 +43,7 @@ export default function PreviewPanel({
       <div className="rounded-[20px] overflow-hidden bg-bq-white border border-bq-hair shadow-bq-soft">
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 bg-bq-inset border-b border-bq-hair">
-          <span className="text-[11px] font-bold tracking-[0.1em] uppercase text-bq-ink2">Tổng quan</span>
+          <span className="text-[12.5px] font-bold text-bq-ink2">Tổng quan</span>
           <span
             className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold"
             style={{ background: mode.badge.bg, color: mode.badge.fg, border: `1px solid ${mode.badge.border}` }}

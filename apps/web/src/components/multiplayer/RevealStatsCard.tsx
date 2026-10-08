@@ -49,7 +49,7 @@ const Cell: React.FC<{ label: string; value: string; color: string; divider?: bo
     className={divider ? 'lg:border-x' : ''}
     style={{ borderColor: 'rgba(255,255,255,0.05)' }}
   >
-    <div className="text-[10px] uppercase tracking-wider" style={{ color: '#9ca3af' }}>
+    <div className="text-[12px]" style={{ color: '#9ca3af' }}>
       {label}
     </div>
     <div className="font-bold text-lg mt-0.5" style={{ color }}>

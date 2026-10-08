@@ -114,7 +114,7 @@ export default function Multiplayer() {
       <header className="flex items-start justify-between gap-6 flex-wrap">
         <div>
           <div className="flex items-center gap-2 mb-1 flex-wrap">
-            <span className="text-[11px] tracking-[0.2em] uppercase font-bold" style={{ color: '#D97F06' }}>
+            <span className="text-[12.5px] font-bold" style={{ color: '#D97F06' }}>
               {t('multiplayer.subtitle', 'Chế độ Đa người chơi')}
             </span>
             <span className="w-1 h-1 rounded-full bg-bq-hair" />
@@ -164,7 +164,7 @@ export default function Multiplayer() {
                   workspace_premium
                 </span>
               </div>
-              <div className="text-[10px] tracking-widest uppercase font-bold" style={{ color: '#D97F06' }}>
+              <div className="text-[12px] font-bold" style={{ color: '#D97F06' }}>
                 {t('multiplayer.create.kicker')}
               </div>
             </div>
@@ -207,7 +207,7 @@ export default function Multiplayer() {
               style={{ background: 'rgba(46,125,79,0.10)', border: '1px solid rgba(46,125,79,0.22)' }}
             >
               <LiveDot />
-              <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#2E7D4F' }}>Live · {liveCount}</span>
+              <span className="text-[12px] font-bold" style={{ color: '#2E7D4F' }}>Live · {liveCount}</span>
             </span>
           </div>
           <div className="flex items-center gap-2">

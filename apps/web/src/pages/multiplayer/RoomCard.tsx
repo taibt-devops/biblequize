@@ -91,7 +91,7 @@ export default function RoomCard({ room }: { room: PublicRoom }) {
             </span>
           </div>
           <div className="min-w-0">
-            <div className="text-[10px] font-bold tracking-wider uppercase truncate" style={{ color: mode.color }}>
+            <div className="text-[12px] font-bold truncate" style={{ color: mode.color }}>
               {modeLabel(room.mode)}
             </div>
             <div className="text-sm font-bold text-bq-ink truncate">{room.roomName}</div>

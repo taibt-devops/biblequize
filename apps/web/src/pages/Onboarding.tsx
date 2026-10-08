@@ -72,7 +72,7 @@ export default function Onboarding() {
                 </div>
                 <div className="space-y-2">
                   <p className="text-2xl font-bold text-bq-ink">{t('onboarding.langViName')}</p>
-                  <p className="text-xs uppercase tracking-[0.2em] text-bq-sapphire/70 font-semibold">{t('onboarding.langViLocal')}</p>
+                  <p className="text-[12.5px] text-bq-sapphire/70 font-semibold">{t('onboarding.langViLocal')}</p>
                 </div>
                 <div className="w-8 h-8 rounded-full border border-bq-sapphire/30 flex items-center justify-center group-hover:bg-bq-sapphire group-hover:text-white transition-all">
                   <span className="material-symbols-outlined text-sm" style={FILL_1}>chevron_right</span>
@@ -111,7 +111,7 @@ export default function Onboarding() {
                 </div>
                 <div className="space-y-2">
                   <p className="text-2xl font-bold text-bq-ink">{t('onboarding.langEnName')}</p>
-                  <p className="text-xs uppercase tracking-[0.2em] text-bq-emerald/70 font-semibold">{t('onboarding.langEnLocal')}</p>
+                  <p className="text-[12.5px] text-bq-emerald/70 font-semibold">{t('onboarding.langEnLocal')}</p>
                 </div>
                 <div className="w-8 h-8 rounded-full border border-bq-emerald/30 flex items-center justify-center group-hover:bg-bq-emerald group-hover:text-white transition-all">
                   <span className="material-symbols-outlined text-sm" style={FILL_1}>chevron_right</span>
@@ -222,7 +222,7 @@ export default function Onboarding() {
                 {['Multiplayer', 'Ranked', 'Groups', 'Tournament'].map(f => (
                   <div key={f} className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-sm text-bq-emerald">check_circle</span>
-                    <span className="text-xs uppercase tracking-widest text-bq-ink2">{f}</span>
+                    <span className="text-[12.5px] text-bq-ink2">{f}</span>
                   </div>
                 ))}
               </div>

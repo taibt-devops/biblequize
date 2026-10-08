@@ -710,7 +710,7 @@ const TournamentDetail: React.FC = () => {
             <div className="absolute -inset-1 rounded-2xl blur opacity-30" style={{ background: 'linear-gradient(to right, var(--bq-amber), var(--bq-amber-lt))' }} />
             <div className="relative rounded-2xl p-8 text-center bg-bq-white shadow-bq-soft" style={{ border: '1px solid rgba(245,158,11,0.3)' }}>
               <span className="material-symbols-outlined text-5xl mb-2 block" style={{ color: 'var(--bq-amber-deep)', fontVariationSettings: "'FILL' 1" }}>workspace_premium</span>
-              <p className="text-[10px] uppercase tracking-widest mb-1" style={{ color: 'var(--bq-ink-soft)' }}>{t('tournaments.champion')}</p>
+              <p className="text-[12px] mb-1" style={{ color: 'var(--bq-ink-soft)' }}>{t('tournaments.champion')}</p>
               <p className="text-2xl font-black" style={{ color: 'var(--bq-amber-deep)' }}>{champion}</p>
             </div>
           </div>

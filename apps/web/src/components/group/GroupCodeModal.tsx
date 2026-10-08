@@ -74,7 +74,7 @@ export default function GroupCodeModal({ groupName, groupCode, open, onClose }: 
         </div>
 
         <div className="text-center mb-4">
-          <div className="text-[10px] uppercase tracking-wider text-bq-ink3 mb-1">
+          <div className="text-[12px] text-bq-ink3 mb-1">
             {t('groups.qrModal.codeLabel')}
           </div>
           <div className="text-[28px] font-mono font-extrabold text-bq-amberd tracking-[0.2em] mb-1.5">
@@ -94,7 +94,7 @@ export default function GroupCodeModal({ groupName, groupCode, open, onClose }: 
         </div>
 
         <div className="border-t border-bq-hair pt-3">
-          <div className="text-[10px] uppercase tracking-wider text-bq-ink3 mb-1.5">
+          <div className="text-[12px] text-bq-ink3 mb-1.5">
             {t('groups.qrModal.linkLabel')}
           </div>
           <div className="flex items-center gap-2">

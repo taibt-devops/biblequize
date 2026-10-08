@@ -98,3 +98,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
     - Bỏ banner "Sự kiện đặc biệt" (không dẫn đi đâu, không có sự kiện) và nút "Xem tất cả lịch sử" (không làm gì)
   - Ghi nhận (dữ liệu, không sửa): `/api/achievements/my-achievements` trả rỗng trong khi `/api/achievements/me` (Cá nhân) trả 7 huy hiệu; tên huy hiệu ở DB local không dấu; Phân tích chi tiết hiện 6320%
   - **Spec impact**: [x] None · **Spec strategy**: [x] (c)
+- LKF-7b Bỏ nhãn chữ IN HOA giãn chữ trên mọi màn người dùng (trước khi làm LKF-13..18)
+  - Status: [x] DONE · script một lần (198 chuỗi class / 81 file): chỉ đổi chuỗi class có `uppercase` + cỡ chữ nhỏ (text-[8–11px] / text-xs) → bỏ `uppercase` + `tracking-*`, tăng cỡ một bậc (10px→12px, 11px/xs→12.5px); chữ in hoa cỡ lớn (mã phòng, ô nhập) giữ nguyên; bỏ qua Admin (LKF-19)
+  - Test SectionHeader / VerseFooter đổi kỳ vọng từ "có uppercase" sang "không uppercase" (hướng thiết kế mới, strategy b)
+  - **Spec impact**: [x] None · **Spec strategy**: [x] (b) cập nhật test theo thiết kế
