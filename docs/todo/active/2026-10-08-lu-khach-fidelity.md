@@ -54,7 +54,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-17 | Đăng nhập, Đăng ký, Onboarding, Thử quiz, Landing, Câu đố Kinh Thánh ✅ | `/login`, `/register`, `/onboarding*`, `/landing`, `/cau-do-kinh-thanh` | cổng làng |
 | LKF-18 | Chủ đề tuần, Bí ẩn, Tốc độ, Bộ đề của tôi, Trợ giúp, Chính sách, Điều khoản ✅ | … | |
 | LKF-19 | Admin ✅ (giữ) | `/admin/*` | **giữ dạng công cụ** (đã sang màu Lữ Khách ở LKD-18) — màn làm việc cần gọn, không đưa cảnh game vào |
-| LKF-20 | Hồi quy + trang nghiệm thu trước/sau + báo cáo | — | |
+| LKF-20 | Hồi quy + trang nghiệm thu trước/sau + báo cáo ✅ | — | |
 
 ### Nhật ký từng màn
 
@@ -148,3 +148,9 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
   - Bộ câu hỏi của tôi, Trợ giúp, Chính sách, Điều khoản: tranh phòng đọc, biển gỗ tiêu đề; nhóm câu hỏi Trợ giúp = chip vàng; nút quay lại + ngày cập nhật dạng viên thuốc nền trắng (đọc được trên tranh)
   - Quyết định: tiêu đề "Mystery Mode" / "Speed Round" (tiếng Anh gõ cứng) → `gameModes.mystery` / `gameModes.speed` ("Chế Độ Bí Ẩn" / "Vòng Tốc Độ"); test cập nhật theo; test chờ tải của Chủ đề tuần tìm theo test id thay vì vòng quay
   - **Spec impact**: [x] None · **Spec strategy**: [x] (b)
+- LKF-20 Hồi quy + bàn giao
+  - Status: [x] DONE
+  - Vitest 1519/1519 (2 lần liền), validate:i18n 1100 (≤ 1137), tsc 29 lỗi cũ (trước đợt là 32), `vite build` OK; test chập chờn đã ổn định (`asyncUtilTimeout` 3 s, đếm ngược, import lớn, BasicQuiz)
+  - E2E smoke local (4 luồng, Vite dev): 62 pass / 88 đỏ / 16 bỏ qua — phần lớn là spec cũ tìm testid đã không còn trên `main` từ trước (`join-room-code-input`, `home-tier-badge`, `mystery-bonus-xp`, `speed-round-bonus-stat`, `group-overview`, `admin-activity-log`…), i18n admin khi lang=en (admin vẫn tiếng Việt), và chờ quá 10 s do máy tải nặng; chạy cùng bộ trên bản LKD-21 để so (kết quả trong báo cáo cuối)
+  - design-system.md: mục "Mỗi màn là một địa điểm", bộ `Place`, `PlayerCrest`, quy tắc chữ
+  - User 08/10: "Merge feature này vào main, nhưng tạo branch ui-v1 để lưu giao diện hiện tại" → `ui-v1` = `main` trước merge (87372d7f, giao diện cũ); `main` tua nhanh lên `feat/lu-khach-ui`

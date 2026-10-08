@@ -9,8 +9,8 @@
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
-| 2026-10-08 | Đổi giao diện toàn app sang phong cách Lữ Khách — token, font, component, Quiz, Home, Hành trình 8 vùng, admin (LKD-0..21) | DONE (chờ merge `feat/lu-khach-ui`) | [detail](docs/todo/active/2026-10-08-lu-khach-redesign.md) |
-| 2026-10-08 | Lữ Khách: code bám đúng mockup đã duyệt — khung app, Trang chủ "mọi thứ trong tranh", Quiz, Kết quả, Hành trình (LKF-1..6) | IN PROGRESS | [detail](docs/todo/active/2026-10-08-lu-khach-fidelity.md) |
+| 2026-10-08 | Đổi giao diện toàn app sang phong cách Lữ Khách — token, font, component, Quiz, Home, Hành trình 8 vùng, admin (LKD-0..21) | DONE (merge vào main) | [detail](docs/todo/active/2026-10-08-lu-khach-redesign.md) |
+| 2026-10-08 | Lữ Khách: mọi màn là một địa điểm — khung app, Trang chủ cảnh game, Quiz, Kết quả, Hành trình, toàn bộ màn người dùng, huy hiệu người chơi (LKF-1..20) | DONE (merge vào main; giao diện cũ giữ ở nhánh `ui-v1`) | [detail](docs/todo/active/2026-10-08-lu-khach-fidelity.md) |
 | 2026-09-15 | Học Thuộc: nạp Bản Truyền Thống 1926 (public domain, eBible vie1934) + bật tính năng trên prod (BT-1..5) | DONE | [detail](docs/todo/active/2026-09-15-memorize-btt1926.md) |
 | 2026-09-15 | Học Thuộc câu gốc — mode trong Luyện Tập, Đợt 1: toàn văn BTTHĐ 2011 + danh sách + ôn giãn cách + sắp xếp/điền khuyết + thẻ Home (HT-0..23; LIVE trên prod với BTT 1926 — Đợt 2/3 chưa làm) | DONE (Đợt 1) | [detail](docs/todo/active/2026-09-15-hoc-thuoc-cau-goc.md) |
 | 2026-09-15 | Favicon cache-busting: vite plugin gắn `?v=<hash>` vào favicon/manifest href (FCB-1) | DONE | [detail](docs/todo/active/2026-09-15-favicon-cache-busting.md) |
