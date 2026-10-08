@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { PlaceBackdrop, Plaque } from '../components/lk/Place'
 import PageMeta from '../components/PageMeta'
 
 export default function PrivacyPolicy() {
@@ -7,7 +8,8 @@ export default function PrivacyPolicy() {
   const isVi = i18n.language === 'vi'
 
   return (
-    <div className="min-h-screen bg-bq-paper text-bq-ink">
+    <div className="relative min-h-screen text-bq-ink">
+      <PlaceBackdrop place="study" veil="strong" />
       <PageMeta
         title={isVi ? 'Chính sách Bảo mật' : 'Privacy Policy'}
         description={
@@ -18,20 +20,20 @@ export default function PrivacyPolicy() {
         canonicalPath="/privacy"
       />
       <div className="max-w-3xl mx-auto px-6 py-12">
-        <Link to="/" className="text-bq-sapphire text-sm hover:underline mb-6 inline-block">
+        <Link to="/" className="mb-5 inline-block px-3 py-1 rounded-full bg-bq-white border-2 border-bq-ink text-[14px] font-bold text-bq-ink no-underline hover:bg-bq-cream">
           &larr; {t('common.back')}
         </Link>
 
-        <h1 className="text-2xl font-bold font-display text-bq-ink mb-2">
+        <Plaque className="text-[26px] md:text-[32px] mb-3">
           {isVi ? 'Chính sách Bảo mật' : 'Privacy Policy'}
-        </h1>
-        <p className="text-sm text-bq-ink2 mb-8">
+        </Plaque>
+        <p className="w-fit px-3 py-0.5 rounded-full bg-bq-white/90 border-2 border-bq-ink/40 text-[13px] font-bold text-bq-ink2 mb-6">
           {isVi ? 'Cập nhật lần cuối: 07/04/2026' : 'Last updated: April 7, 2026'}
         </p>
 
         <div className="space-y-8 text-bq-ink2 leading-relaxed bg-bq-white border border-bq-hair shadow-bq-soft rounded-bq p-6 sm:p-8">
           <section>
-            <h2 className="text-lg font-semibold font-display text-bq-ink mb-2">
+            <h2 className="text-[20px] font-extrabold font-display text-bq-ink mb-2">
               {isVi ? '1. Thông tin chúng tôi thu thập' : '1. Information We Collect'}
             </h2>
             <p>{isVi ? 'Khi bạn sử dụng BibleQuiz, chúng tôi thu thập:' : 'When you use BibleQuiz, we collect:'}</p>
@@ -44,7 +46,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold font-display text-bq-ink mb-2">
+            <h2 className="text-[20px] font-extrabold font-display text-bq-ink mb-2">
               {isVi ? '2. Cách chúng tôi sử dụng thông tin' : '2. How We Use Information'}
             </h2>
             <ul className="list-disc pl-6 space-y-1">
@@ -56,7 +58,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold font-display text-bq-ink mb-2">
+            <h2 className="text-[20px] font-extrabold font-display text-bq-ink mb-2">
               {isVi ? '3. Chia sẻ thông tin' : '3. Information Sharing'}
             </h2>
             <p>{isVi ? 'Chúng tôi KHÔNG bán hoặc chia sẻ thông tin cá nhân với bên thứ ba, ngoại trừ:' : 'We do NOT sell or share personal information with third parties, except:'}</p>
@@ -68,7 +70,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold font-display text-bq-ink mb-2">
+            <h2 className="text-[20px] font-extrabold font-display text-bq-ink mb-2">
               {isVi ? '4. Lưu trữ dữ liệu' : '4. Data Storage'}
             </h2>
             <p>{isVi
@@ -78,7 +80,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold font-display text-bq-ink mb-2">
+            <h2 className="text-[20px] font-extrabold font-display text-bq-ink mb-2">
               {isVi ? '5. Quyền của bạn' : '5. Your Rights'}
             </h2>
             <ul className="list-disc pl-6 space-y-1">
@@ -90,7 +92,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold font-display text-bq-ink mb-2">
+            <h2 className="text-[20px] font-extrabold font-display text-bq-ink mb-2">
               {isVi ? '6. Trẻ em' : '6. Children'}
             </h2>
             <p>{isVi
@@ -100,7 +102,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold font-display text-bq-ink mb-2">
+            <h2 className="text-[20px] font-extrabold font-display text-bq-ink mb-2">
               {isVi ? '7. Liên hệ' : '7. Contact'}
             </h2>
             <p>{isVi

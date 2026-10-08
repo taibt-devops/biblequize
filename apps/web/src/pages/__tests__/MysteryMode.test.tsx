@@ -46,7 +46,7 @@ describe('MysteryMode', () => {
 
     it('renders Mystery Mode title', () => {
       renderMystery()
-      expect(screen.getByText('Mystery Mode')).toBeInTheDocument()
+      expect(screen.getByText('Chế Độ Bí Ẩn')).toBeInTheDocument()
     })
 
     it('renders mystery description', () => {

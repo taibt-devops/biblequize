@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { Medal, PlaceBackdrop, Plaque } from '../components/lk/Place'
 import { api } from '../api/client'
 
 export default function SpeedRound() {
@@ -29,32 +30,31 @@ export default function SpeedRound() {
   }
 
   return (
-    <div className="max-w-2xl lg:max-w-3xl mx-auto space-y-8" data-testid="speed-round-page">
+    <div className="relative max-w-2xl lg:max-w-3xl mx-auto space-y-8" data-testid="speed-round-page">
       {/* Header */}
-      <div className="text-center space-y-4">
-        <div className="w-20 h-20 mx-auto rounded-2xl bg-bq-ember/10 border border-bq-ember/20 flex items-center justify-center">
-          <span className="material-symbols-outlined text-4xl text-bq-ember" style={{ fontVariationSettings: "'FILL' 1" }}>speed</span>
-        </div>
-        <h1 className="text-3xl font-black font-display text-bq-ink">Speed Round</h1>
-        <p className="text-bq-ink2 text-sm">{t('gameModes.speedPage.subtitle')}</p>
+      <PlaceBackdrop place="arena" veil="strong" />
+      <div className="text-center space-y-3">
+        <img src="/images/lk/sword.webp" alt="" aria-hidden className="mx-auto h-20" />
+        <div><Plaque className="text-[30px] md:text-[38px]">{t('gameModes.speed')}</Plaque></div>
+        <p className="m-0 mx-auto w-fit max-w-full px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-2xl font-read text-[15px] text-bq-ink2">{t('gameModes.speedPage.subtitle')}</p>
       </div>
 
       {/* Info card */}
-      <div className="bg-bq-white rounded-2xl p-8 border border-bq-hair shadow-bq-soft text-center space-y-6" data-testid="speed-round-stats-card">
+      <div className="bg-bq-white rounded-bq p-7 md:p-8 border-[3px] border-bq-ink shadow-bq-card text-center space-y-5" data-testid="speed-round-stats-card">
         <div className="flex justify-center gap-6">
-          <div className="bg-bq-ember/10 border border-bq-ember/20 rounded-xl px-5 py-3 text-center">
-            <p className="text-3xl font-black text-bq-ember">10</p>
-            <p className="text-xs text-bq-ink2 mt-1">{t('gameModes.speedPage.questionsSuffix')}</p>
+          <div className="flex flex-col items-center">
+            <Medal size={70}><span className="font-display text-[24px] font-extrabold">10</span></Medal>
+            <p className="m-0 mt-2.5 text-[13px] font-bold text-bq-ink2">{t('gameModes.speedPage.questionsSuffix')}</p>
           </div>
-          <div className="bg-bq-ember/10 border border-bq-ember/20 rounded-xl px-5 py-3 text-center" data-testid="speed-round-timer-stat">
-            <p className="text-3xl font-black text-bq-ember">10s</p>
-            <p className="text-xs text-bq-ink2 mt-1">{t('gameModes.speedPage.perQuestionSuffix')}</p>
+          <div className="flex flex-col items-center" data-testid="speed-round-timer-stat">
+            <Medal size={70}><span className="font-display text-[24px] font-extrabold">10s</span></Medal>
+            <p className="m-0 mt-2.5 text-[13px] font-bold text-bq-ink2">{t('gameModes.speedPage.perQuestionSuffix')}</p>
           </div>
           {/* "2x XP bonus" stat removed per Bui decision 2026-05-02: variety
               modes are "for fun, no XP" — see MysteryMode.tsx + audit. */}
         </div>
 
-        <div className="space-y-2 text-sm text-bq-ink2">
+        <div className="space-y-1.5 font-read text-[15px] text-bq-ink2">
           <p>{t('gameModes.speedPage.onlyEasyNote')} <span className="text-bq-emerald font-bold">{t('gameModes.speedPage.easyWord')}</span> {t('gameModes.speedPage.easyReason')}</p>
           <p>{t('gameModes.speedPage.autoAdvanceNote')}</p>
         </div>
@@ -63,7 +63,7 @@ export default function SpeedRound() {
           onClick={startQuiz}
           disabled={starting}
           data-testid="speed-round-start-btn"
-          className="px-8 py-3 bg-bq-action text-bq-ink font-black rounded-xl shadow-bq-action transition-colors disabled:opacity-50"
+          className="lk-btn text-bq-ink text-[17px]"
         >
           {starting ? '...' : t('gameModes.speedBtn')}
         </button>

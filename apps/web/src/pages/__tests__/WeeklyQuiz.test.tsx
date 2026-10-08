@@ -114,7 +114,7 @@ describe('WeeklyQuiz', () => {
     it('shows loading spinner while fetching theme', () => {
       mockApiGet.mockImplementation(() => new Promise(() => {}))
       renderWeekly()
-      const spinner = document.querySelector('.animate-spin')
+      const spinner = screen.getByTestId('weekly-loading')
       expect(spinner).toBeInTheDocument()
     })
   })

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
+import { PlaceBackdrop, Plaque } from '../components/lk/Place'
 import { api } from '../api/client';
 
 type QuestionSet = {
@@ -38,24 +39,25 @@ export default function MySets() {
   });
 
   return (
-    <div className="min-h-screen bg-bq-paper">
+    <div className="relative min-h-screen">
+      <PlaceBackdrop place="study" veil="strong" />
       <div className="max-w-5xl mx-auto px-4 py-6">
 
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-3">
-            <Link to="/multiplayer" className="text-bq-ink2 hover:text-bq-ink transition-colors">
+            <Link to="/multiplayer" aria-label="Multiplayer" className="w-10 h-10 grid place-items-center rounded-full bg-bq-white border-2 border-bq-ink text-bq-ink hover:bg-bq-cream">
               <span className="material-symbols-outlined">arrow_back</span>
             </Link>
-            <div>
-              <h1 className="text-xl font-bold text-bq-ink font-display">Bộ câu hỏi của tôi</h1>
-              <p className="text-xs text-bq-ink2 mt-0.5">{sets.length}/{MAX_SETS} bộ</p>
+            <div className="flex flex-wrap items-center gap-2">
+              <Plaque className="text-[22px] md:text-[28px]">Bộ câu hỏi của tôi</Plaque>
+              <span className="px-2.5 py-0.5 rounded-full bg-bq-white border-2 border-bq-ink text-[13px] font-extrabold">{sets.length}/{MAX_SETS} bộ</span>
             </div>
           </div>
           <button
             onClick={() => navigate('/my-sets/new')}
             disabled={sets.length >= MAX_SETS}
-            className="bg-bq-action shadow-bq-action px-4 py-2 rounded-xl text-bq-ink font-bold text-sm flex items-center gap-1.5 disabled:opacity-40 disabled:cursor-not-allowed"
+            className="lk-btn !py-2 text-bq-ink text-[15px]"
           >
             <span className="material-symbols-outlined text-lg">add</span>
             Tạo bộ mới

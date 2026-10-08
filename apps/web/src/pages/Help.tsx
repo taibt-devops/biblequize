@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
 import { FAQ_CATEGORIES, FAQ_ITEMS, type FaqCategory } from '../data/faqData'
+import { PlaceBackdrop, Plaque } from '../components/lk/Place'
 import PageMeta from '../components/PageMeta'
 
 /**
@@ -73,7 +74,8 @@ export default function Help() {
   )
 
   return (
-    <div data-testid="help-page" className="space-y-8">
+    <div data-testid="help-page" className="relative max-w-4xl mx-auto space-y-8">
+      <PlaceBackdrop place="study" veil="strong" />
       <PageMeta
         title={i18n.language === 'vi' ? 'Trợ giúp & Câu hỏi thường gặp' : 'Help & FAQ'}
         description={
@@ -85,11 +87,12 @@ export default function Help() {
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqSchema }} />
       {/* ── Hero ── */}
-      <section>
-        <h1 className="font-display text-3xl md:text-4xl font-black tracking-tight text-bq-ink mb-2">
+      <section className="space-y-3">
+        <Plaque className="text-[28px] md:text-[36px]">
+          <img src="/images/lk/scroll.webp" alt="" aria-hidden className="h-[1em]" />
           {t('help.title')}
-        </h1>
-        <p className="text-bq-ink2">{t('help.subtitle')}</p>
+        </Plaque>
+        <p className="m-0 w-fit max-w-full px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-2xl font-read text-[15px] text-bq-ink2">{t('help.subtitle')}</p>
       </section>
 
       {/* ── Category pills ── */}
@@ -117,7 +120,7 @@ export default function Help() {
             if (items.length === 0) return null
             return (
               <section key={cat} data-testid={`faq-category-${cat}`}>
-                <h2 className="text-[12.5px] font-black text-bq-amberd mb-3">
+                <h2 className="w-fit px-3 py-0.5 rounded-full bg-bq-amber border-2 border-bq-ink text-[14px] font-extrabold text-bq-ink mb-3">
                   {t(`help.categories.${cat}`)}
                 </h2>
                 <div className="space-y-2">

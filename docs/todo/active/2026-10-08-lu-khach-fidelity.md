@@ -52,7 +52,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-15 | Nhóm + chi tiết + trang con ✅ | `/groups*` | gốc sồi nhà nguyện |
 | LKF-16 | Giải đấu, chi tiết, trận ✅ | `/tournaments*` | sân đấu |
 | LKF-17 | Đăng nhập, Đăng ký, Onboarding, Thử quiz, Landing, Câu đố Kinh Thánh ✅ | `/login`, `/register`, `/onboarding*`, `/landing`, `/cau-do-kinh-thanh` | cổng làng |
-| LKF-18 | Chủ đề tuần, Bí ẩn, Tốc độ, Bộ đề của tôi, Trợ giúp, Chính sách, Điều khoản | … | |
+| LKF-18 | Chủ đề tuần, Bí ẩn, Tốc độ, Bộ đề của tôi, Trợ giúp, Chính sách, Điều khoản ✅ | … | |
 | LKF-19 | Admin | `/admin/*` | **giữ dạng công cụ** (đã sang màu Lữ Khách ở LKD-18) — màn làm việc cần gọn, không đưa cảnh game vào |
 | LKF-20 | Hồi quy + trang nghiệm thu trước/sau + báo cáo | — | |
 
@@ -142,3 +142,9 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
   - Font: bỏ Orbitron (font khoa học viễn tưởng của giao diện cũ) — 6 chỗ người dùng thấy (mã nhóm, mã phòng, điểm Landing, đồng hồ trận) đổi sang Baloo số thẳng hàng; `font-mono` = monospace hệ thống (Admin giữ cho ID); gỡ Orbitron khỏi link Google Fonts
   - Test: Landing kiểm "tranh cổng làng + không tải ảnh ngoài" thay cho ảnh minh họa cũ (đã xóa `HeroIllustration`); Onboarding tìm nút bằng test id (bỏ mũi tên); chân trang 2026
   - **Spec impact**: [x] None · **Spec strategy**: [x] (b) cập nhật test theo thiết kế
+- LKF-18 Chủ đề tuần · Bí ẩn · Tốc độ · Bộ đề của tôi · Trợ giúp · Chính sách · Điều khoản
+  - Status: [x] DONE
+  - Chủ đề tuần (phòng đọc, cuộn giấy), Chế độ Bí ẩn (quảng trường buổi tối, đèn lồng), Vòng Tốc độ (sân đấu, thanh kiếm): biển gỗ + dải phụ đề, thẻ viền mực, số liệu = huy chương, nút vàng; "???" của Bí ẩn trên dải giấy nét đứt; sách trong chủ đề tuần hiện tên tiếng Việt (`useBookName`); chờ tải = đèn lồng
+  - Bộ câu hỏi của tôi, Trợ giúp, Chính sách, Điều khoản: tranh phòng đọc, biển gỗ tiêu đề; nhóm câu hỏi Trợ giúp = chip vàng; nút quay lại + ngày cập nhật dạng viên thuốc nền trắng (đọc được trên tranh)
+  - Quyết định: tiêu đề "Mystery Mode" / "Speed Round" (tiếng Anh gõ cứng) → `gameModes.mystery` / `gameModes.speed` ("Chế Độ Bí Ẩn" / "Vòng Tốc Độ"); test cập nhật theo; test chờ tải của Chủ đề tuần tìm theo test id thay vì vòng quay
+  - **Spec impact**: [x] None · **Spec strategy**: [x] (b)

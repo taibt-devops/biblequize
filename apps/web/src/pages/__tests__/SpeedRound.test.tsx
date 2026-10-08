@@ -46,7 +46,7 @@ describe('SpeedRound', () => {
 
     it('renders Speed Round title', () => {
       renderSpeed()
-      expect(screen.getByText('Speed Round')).toBeInTheDocument()
+      expect(screen.getByText('Vòng Tốc Độ')).toBeInTheDocument()
     })
 
     it('renders speed description', () => {

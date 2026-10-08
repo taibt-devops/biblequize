@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { Medal, PlaceBackdrop, Plaque } from '../components/lk/Place'
 import { api } from '../api/client'
 
 export default function MysteryMode() {
@@ -31,30 +32,29 @@ export default function MysteryMode() {
   }
 
   return (
-    <div className="max-w-2xl lg:max-w-3xl mx-auto space-y-8" data-testid="mystery-page">
+    <div className="relative max-w-2xl lg:max-w-3xl mx-auto space-y-8" data-testid="mystery-page">
       {/* Header */}
-      <div className="text-center space-y-4">
-        <div className="w-20 h-20 mx-auto rounded-2xl bg-bq-sapphire/10 border border-bq-sapphire/20 flex items-center justify-center">
-          <span className="material-symbols-outlined text-4xl text-bq-sapphire" style={{ fontVariationSettings: "'FILL' 1" }}>casino</span>
-        </div>
-        <h1 className="text-3xl font-black font-display text-bq-ink">Mystery Mode</h1>
-        <p className="text-bq-ink2 text-sm">{t('gameModes.mysteryPage.subtitle')}</p>
+      <PlaceBackdrop place="square" veil="strong" />
+      <div className="text-center space-y-3">
+        <img src="/images/lk/lantern-on.webp" alt="" aria-hidden className="mx-auto h-20" />
+        <div><Plaque className="text-[30px] md:text-[38px]">{t('gameModes.mystery')}</Plaque></div>
+        <p className="m-0 mx-auto w-fit max-w-full px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-2xl font-read text-[15px] text-bq-ink2">{t('gameModes.mysteryPage.subtitle')}</p>
       </div>
 
       {/* Info card */}
-      <div className="bg-bq-white rounded-2xl p-8 border border-bq-hair shadow-bq-soft text-center space-y-6" data-testid="mystery-info-card">
-        <div className="space-y-3">
-          <div className="flex items-center justify-center gap-4 text-lg">
-            <span className="text-bq-ink2">{t('gameModes.mysteryPage.bookLabel')}</span>
-            <span className="font-black text-bq-sapphire">???</span>
+      <div className="bg-bq-white rounded-bq p-7 md:p-8 border-[3px] border-bq-ink shadow-bq-card text-center space-y-5" data-testid="mystery-info-card">
+        <div className="space-y-2.5 max-w-xs mx-auto">
+          <div className="flex items-center justify-between gap-4 px-4 py-2 rounded-2xl bg-bq-paper border-2 border-dashed border-bq-ink/30 text-[17px]">
+            <span className="font-bold text-bq-ink2">{t('gameModes.mysteryPage.bookLabel')}</span>
+            <span className="font-display text-[22px] font-extrabold text-bq-ink">???</span>
           </div>
-          <div className="flex items-center justify-center gap-4 text-lg">
-            <span className="text-bq-ink2">{t('gameModes.mysteryPage.difficultyLabel')}</span>
-            <span className="font-black text-bq-sapphire">???</span>
+          <div className="flex items-center justify-between gap-4 px-4 py-2 rounded-2xl bg-bq-paper border-2 border-dashed border-bq-ink/30 text-[17px]">
+            <span className="font-bold text-bq-ink2">{t('gameModes.mysteryPage.difficultyLabel')}</span>
+            <span className="font-display text-[22px] font-extrabold text-bq-ink">???</span>
           </div>
-          <div className="flex items-center justify-center gap-4 text-lg">
-            <span className="text-bq-ink2">{t('gameModes.mysteryPage.topicLabel')}</span>
-            <span className="font-black text-bq-sapphire">???</span>
+          <div className="flex items-center justify-between gap-4 px-4 py-2 rounded-2xl bg-bq-paper border-2 border-dashed border-bq-ink/30 text-[17px]">
+            <span className="font-bold text-bq-ink2">{t('gameModes.mysteryPage.topicLabel')}</span>
+            <span className="font-display text-[22px] font-extrabold text-bq-ink">???</span>
           </div>
         </div>
 
@@ -64,13 +64,13 @@ export default function MysteryMode() {
             apps/api/AUDIT_VARIETY_MODES_LEADERBOARD.md + VarietyQuizController
             JavaDoc for context. */}
         <div className="flex justify-center gap-6">
-          <div className="bg-bq-sapphire/10 border border-bq-sapphire/20 rounded-xl px-4 py-2 text-center">
-            <p className="text-xs text-bq-ink2">{t('gameModes.mysteryPage.timeLabel')}</p>
-            <p className="text-lg font-black text-bq-sapphire">25s</p>
+          <div className="flex flex-col items-center">
+            <Medal size={62}><span className="font-display text-[20px] font-extrabold">25s</span></Medal>
+            <p className="m-0 mt-2.5 text-[13px] font-bold text-bq-ink2">{t('gameModes.mysteryPage.timeLabel')}</p>
           </div>
-          <div className="bg-bq-sapphire/10 border border-bq-sapphire/20 rounded-xl px-4 py-2 text-center">
-            <p className="text-xs text-bq-ink2">{t('gameModes.mysteryPage.questionsLabel')}</p>
-            <p className="text-lg font-black text-bq-sapphire">10</p>
+          <div className="flex flex-col items-center">
+            <Medal size={62}><span className="font-display text-[20px] font-extrabold">10</span></Medal>
+            <p className="m-0 mt-2.5 text-[13px] font-bold text-bq-ink2">{t('gameModes.mysteryPage.questionsLabel')}</p>
           </div>
         </div>
 
@@ -78,7 +78,7 @@ export default function MysteryMode() {
           onClick={startQuiz}
           disabled={starting}
           data-testid="mystery-start-btn"
-          className="px-8 py-3 bg-bq-action text-bq-ink font-black rounded-xl shadow-bq-action transition-colors disabled:opacity-50"
+          className="lk-btn text-bq-ink text-[17px]"
         >
           {starting ? '...' : t('gameModes.mysteryBtn')}
         </button>
