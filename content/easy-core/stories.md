@@ -18,18 +18,18 @@
 | 10 | Áp-ra-ham dâng Y-sác ✓ | Sáng Thế Ký 22 |
 | 11 | Rê-bê-ca bên giếng nước ✓ | Sáng Thế Ký 24 |
 | 12 | Ê-sau bán quyền trưởng nam ✓ | Sáng Thế Ký 25 |
-| 13 | Gia-cốp và chiếc thang | Sáng Thế Ký 28 |
-| 14 | Gia-cốp được đổi tên là Y-sơ-ra-ên | Sáng Thế Ký 32 |
-| 15 | Giô-sép và chiếc áo nhiều màu | Sáng Thế Ký 37 |
-| 16 | Giô-sép giải chiêm bao cho Pha-ra-ôn | Sáng Thế Ký 41 |
-| 17 | Giô-sép nhận lại anh em | Sáng Thế Ký 45 |
+| 13 | Gia-cốp và chiếc thang ✓ | Sáng Thế Ký 28 |
+| 14 | Gia-cốp được đổi tên là Y-sơ-ra-ên ✓ | Sáng Thế Ký 32 |
+| 15 | Giô-sép và chiếc áo nhiều màu ✓ | Sáng Thế Ký 37 |
+| 16 | Giô-sép giải chiêm bao cho Pha-ra-ôn ✓ | Sáng Thế Ký 41 |
+| 17 | Giô-sép nhận lại anh em ✓ | Sáng Thế Ký 45 |
 | 18 | Môi-se: thúng cói và bụi gai ✓ | Xuất Ai Cập Ký 2–3 |
-| 19 | Mười tai vạ | Xuất Ai Cập Ký 7–11 |
-| 20 | Lễ Vượt Qua | Xuất Ai Cập Ký 12 |
+| 19 | Mười tai vạ ✓ | Xuất Ai Cập Ký 7–11 |
+| 20 | Lễ Vượt Qua ✓ | Xuất Ai Cập Ký 12 |
 | 21 | Vượt qua biển ✓ | Xuất Ai Cập Ký 14 |
-| 22 | Ma-na và chim cút | Xuất Ai Cập Ký 16 |
-| 23 | Mười Điều Răn | Xuất Ai Cập Ký 20 |
-| 24 | Con bò con bằng vàng | Xuất Ai Cập Ký 32 |
+| 22 | Ma-na và chim cút ✓ | Xuất Ai Cập Ký 16 |
+| 23 | Mười Điều Răn ✓ | Xuất Ai Cập Ký 20 |
+| 24 | Con bò con bằng vàng ✓ | Xuất Ai Cập Ký 32 |
 | 25 | Mười hai thám tử | Dân Số Ký 13–14 |
 | 26 | Con lừa của Ba-la-am | Dân Số Ký 22 |
 | 27 | Ra-háp và hai thám tử | Giô-suê 2 |

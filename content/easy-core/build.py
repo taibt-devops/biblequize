@@ -165,7 +165,26 @@ def show(spec: str) -> None:
             print(f"{v} {verses[str(v)]}")
 
 
+def mark() -> None:
+    """Tick (✓) every story in stories.md that has questions in a built *_quiz.json."""
+    done = {q["tags"][1] for f in HERE.glob("*_quiz.json")
+            for q in json.loads(f.read_text(encoding="utf-8"))}
+    path = HERE / "stories.md"
+    lines = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        m = re.match(r"^(\| \d+ \| )(.+?)( \| .+? \|)$", line)
+        if m:
+            name = m.group(2).replace(" ✓", "").strip()
+            line = m.group(1) + name + (" ✓" if name in done else "") + m.group(3)
+        lines.append(line)
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"{len(done)} stories written")
+
+
 if __name__ == "__main__":
+    if len(sys.argv) > 1 and sys.argv[1] == "mark":
+        mark()
+        sys.exit(0)
     if len(sys.argv) > 1 and sys.argv[1] == "show":
         for spec in sys.argv[2:]:
             print(f"== {spec}")
