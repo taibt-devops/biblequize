@@ -50,7 +50,7 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
 | LKF-13 | Phòng chơi, Danh sách phòng, Tạo phòng, Vào phòng ✅ | `/multiplayer`, `/rooms`, `/room/create`, `/room/join` | quảng trường làng |
 | LKF-14 | Phòng chờ, Chơi phòng, Màn chủ phòng, Phân tích phòng ✅ | `/room/:id/*` | quảng trường |
 | LKF-15 | Nhóm + chi tiết + trang con ✅ | `/groups*` | gốc sồi nhà nguyện |
-| LKF-16 | Giải đấu, chi tiết, trận | `/tournaments*` | sân đấu |
+| LKF-16 | Giải đấu, chi tiết, trận ✅ | `/tournaments*` | sân đấu |
 | LKF-17 | Đăng nhập, Đăng ký, Onboarding, Thử quiz, Landing, Câu đố Kinh Thánh | `/login`, `/register`, `/onboarding*`, `/landing`, `/cau-do-kinh-thanh` | cổng làng |
 | LKF-18 | Chủ đề tuần, Bí ẩn, Tốc độ, Bộ đề của tôi, Trợ giúp, Chính sách, Điều khoản | … | |
 | LKF-19 | Admin | `/admin/*` | **giữ dạng công cụ** (đã sang màu Lữ Khách ở LKD-18) — màn làm việc cần gọn, không đưa cảnh game vào |
@@ -123,4 +123,11 @@ Hướng thiết kế chung (tự quyết): **mỗi màn là một địa điể
   - Chi tiết nhóm: tranh nhà nguyện, mã mời dạng viên thuốc kem chữ đậm (bỏ font Orbitron nghiêng), tab dạng nút tròn trong khung mực (`aria-pressed`)
   - Trang con (bộ câu hỏi, chi tiết bộ, lịch quiz tạo/xem/chơi, hành trình nhóm tạo/xem, phân tích nhóm): công cụ của trưởng nhóm → giữ bố cục, chỉ thêm tranh nhà nguyện (bỏ nền giấy che tranh); trình soạn bộ câu hỏi giữ nền riêng
   - Quyết định: bỏ dòng "Sprint 6" (tên mốc nội bộ hiện cho người dùng ở "Hoạt động nhóm — sắp ra mắt"); bỏ nút "Xem tất cả" nhóm công khai (không có hành động)
+  - **Spec impact**: [x] None · **Spec strategy**: [x] (c)
+- LKF-16 Giải đấu · chi tiết · trận — sân đấu
+  - Status: [x] DONE
+  - Danh sách: tranh sân đấu, chip "Sự kiện đặc biệt", biển gỗ có cờ đuôi nheo, mô tả trên dải kem; thẻ giải viền mực nổi lên khi rê; chip trạng thái vàng (đăng ký) / lá (đang đấu) / giấy (đã xong); trống = lữ khách nghỉ, lỗi = lữ khách lạc + nút vàng
+  - Chi tiết giải / trận: thêm tranh sân đấu (bỏ nền gradient che tranh), bố cục giữ nguyên
+  - Không chụp được: `/api/tournaments` trả 500 ở máy local
+  - Phát hiện: 17 file `pages/*.module.css` (gồm bảng màu neon của giao diện cũ) không còn được import ở đâu → xóa ở commit dọn dẹp riêng
   - **Spec impact**: [x] None · **Spec strategy**: [x] (c)

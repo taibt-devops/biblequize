@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../store/authStore';
+import { PlaceBackdrop } from '../components/lk/Place'
 import { api } from '../api/client';
 
 /* ── Types ── */
@@ -309,7 +310,8 @@ const TournamentMatch: React.FC = () => {
   const meParticipant = match.participants.find(p => p.userId === currentUserId);
 
   return (
-    <div className="min-h-screen relative overflow-hidden" style={{ background: 'linear-gradient(135deg, rgba(245,158,11,0.05), rgba(47,111,176,0.04), var(--bq-paper))' }}>
+    <div className="min-h-screen relative overflow-hidden">
+      <PlaceBackdrop place="arena" veil="strong" />
       {/* Background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 rounded-full pointer-events-none" style={{ width: 600, height: 400, background: 'rgba(245,158,11,0.10)', filter: 'blur(120px)' }} />
 

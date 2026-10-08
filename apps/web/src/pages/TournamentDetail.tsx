@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../store/authStore';
+import { PlaceBackdrop } from '../components/lk/Place'
 import { api } from '../api/client';
 
 /* ── Types ── */
@@ -457,6 +458,7 @@ const TournamentDetail: React.FC = () => {
 
   return (
     <div data-testid="tournament-detail-page" className="space-y-4">
+      <PlaceBackdrop place="arena" veil="strong" />
 
       {/* ── Breadcrumb ── */}
       <nav className="flex items-center gap-2 text-xs" style={{ color: 'var(--bq-ink-soft)' }}>

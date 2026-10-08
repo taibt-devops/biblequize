@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
 import { api } from '../api/client';
+import { PlaceBackdrop, Plaque } from '../components/lk/Place';
 import { Link } from 'react-router-dom';
 
 interface Tournament {
@@ -33,7 +34,7 @@ function formatDate(iso: string | null): string {
 
 function TournamentCardSkeleton() {
   return (
-    <div className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-6 animate-pulse">
+    <div className="bg-bq-white/80 border-[3px] border-bq-ink/20 rounded-2xl p-6 animate-pulse">
       <div className="flex items-center justify-between mb-4">
         <div className="h-6 w-48 bg-bq-inset rounded-lg" />
         <div className="h-5 w-20 bg-bq-inset rounded-full" />
@@ -67,21 +68,21 @@ const Tournaments: React.FC = () => {
     switch (status) {
       case 'REGISTRATION':
         return (
-          <span data-testid="tournament-status-badge" className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-black bg-bq-amber/20 text-bq-amberd">
-            <span className="w-1.5 h-1.5 rounded-full bg-bq-amber animate-pulse" />
+          <span data-testid="tournament-status-badge" className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full border-2 border-bq-ink text-[12.5px] font-extrabold bg-bq-amber text-bq-ink">
+            <span className="w-2 h-2 rounded-full bg-bq-ink animate-pulse" />
             {t('tournaments.statusRegistration')}
           </span>
         );
       case 'IN_PROGRESS':
         return (
-          <span data-testid="tournament-status-badge" className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-black bg-bq-emerald/20 text-bq-emerald">
-            <span className="w-1.5 h-1.5 rounded-full bg-bq-emerald animate-pulse" />
+          <span data-testid="tournament-status-badge" className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full border-2 border-bq-ink text-[12.5px] font-extrabold bg-bq-leaf text-bq-ink">
+            <span className="w-2 h-2 rounded-full bg-bq-emerald animate-pulse" />
             {t('tournaments.statusInProgress')}
           </span>
         );
       case 'COMPLETED':
         return (
-          <span data-testid="tournament-status-badge" className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-black bg-bq-ink2/20 text-bq-ink2">
+          <span data-testid="tournament-status-badge" className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full border-2 border-bq-ink/40 text-[12.5px] font-extrabold bg-bq-paper text-bq-ink2">
             {t('tournaments.statusCompleted')}
           </span>
         );
@@ -91,16 +92,20 @@ const Tournaments: React.FC = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto bg-bq-paper" data-testid="tournaments-page">
+    <div className="relative max-w-4xl mx-auto" data-testid="tournaments-page">
+      <PlaceBackdrop place="arena" veil="strong" />
       {/* Header */}
-      <section className="mb-10">
-        <span className="text-bq-amberd font-bold text-[12.5px] mb-2 block">
+      <section className="mb-8 space-y-3">
+        <span className="inline-block px-3 py-0.5 rounded-full bg-bq-amber border-2 border-bq-ink text-[13px] font-extrabold">
           {t('tournaments.specialEvent')}
         </span>
-        <h1 className="font-display text-4xl md:text-5xl font-black text-bq-ink tracking-tighter mb-4">
-          {t('tournaments.title')}
-        </h1>
-        <p className="text-bq-ink2 text-lg leading-relaxed max-w-2xl">
+        <div>
+          <Plaque className="text-[30px] md:text-[40px]">
+            <img src="/images/lk/pennant.webp" alt="" aria-hidden className="h-[1em]" />
+            {t('tournaments.title')}
+          </Plaque>
+        </div>
+        <p className="m-0 w-fit max-w-full px-3 py-1 bg-bq-white/90 border-2 border-bq-ink rounded-2xl font-read text-[15px] md:text-[16px] text-bq-ink2">
           {t('tournaments.description')}
         </p>
       </section>
@@ -116,15 +121,15 @@ const Tournaments: React.FC = () => {
 
       {/* Error */}
       {isError && (
-        <div className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-10 text-center" data-testid="tournaments-error">
-          <span className="material-symbols-outlined text-5xl text-bq-ruby mb-4 block">error</span>
+        <div className="bg-bq-white border-[3px] border-bq-ink shadow-bq-card rounded-bq p-10 text-center" data-testid="tournaments-error">
+          <img src="/images/lk/hero-lost.webp" alt="" aria-hidden className="mx-auto h-28 mb-3" />
           <p className="text-bq-ink font-bold text-lg mb-2">{t('tournaments.errorLoadList')}</p>
           <p className="text-bq-ink2 text-sm mb-6">
             {(error as Error)?.message || t('tournaments.errorGeneric')}
           </p>
           <button
             onClick={() => refetch()}
-            className="px-6 py-3 bg-bq-action text-bq-ink shadow-bq-action rounded-xl font-black text-[12.5px] hover:opacity-90 transition-all active:scale-95"
+            className="lk-btn text-bq-ink text-[16px]"
           >
             {t('common.retry')}
           </button>
@@ -133,15 +138,10 @@ const Tournaments: React.FC = () => {
 
       {/* Empty */}
       {!isLoading && !isError && tournaments && tournaments.length === 0 && (
-        <div className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-10 text-center" data-testid="tournaments-empty">
-          <span
-            className="material-symbols-outlined text-5xl text-bq-ink2 mb-4 block"
-            style={{ fontVariationSettings: "'FILL' 1" }}
-          >
-            emoji_events
-          </span>
-          <p className="text-bq-ink font-bold text-lg mb-2">{t('tournaments.noTournaments')}</p>
-          <p className="text-bq-ink2 text-sm">
+        <div className="bg-bq-white border-[3px] border-bq-ink shadow-bq-card rounded-bq p-10 text-center" data-testid="tournaments-empty">
+          <img src="/images/lk/hero-rest.webp" alt="" aria-hidden className="mx-auto h-28 mb-3" />
+          <p className="m-0 font-display text-[22px] font-extrabold text-bq-ink mb-2">{t('tournaments.noTournaments')}</p>
+          <p className="m-0 font-read text-[15px] text-bq-ink2">
             {t('tournaments.noTournamentsDesc')}
           </p>
         </div>
@@ -155,19 +155,19 @@ const Tournaments: React.FC = () => {
               key={tItem.id}
               to={`/tournaments/${tItem.id}`}
               data-testid="tournament-card"
-              className="block bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-6 hover:ring-1 hover:ring-bq-amber/30 transition-all group"
+              className="block bg-bq-white border-[3px] border-bq-ink shadow-[0_5px_0_#1D2B22] rounded-2xl p-6 transition-transform hover:-translate-y-0.5 no-underline group"
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-                <h2 className="text-xl font-black tracking-tight text-bq-ink group-hover:text-bq-amberd transition-colors">
+                <h2 className="m-0 font-display text-[22px] font-extrabold text-bq-ink">
                   {tItem.name}
                 </h2>
                 {statusBadge(tItem.status)}
               </div>
 
-              <div className="flex flex-wrap items-center gap-6 text-sm text-bq-ink2">
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[14px] font-bold text-bq-ink2">
                 {/* Participants */}
                 <div className="flex items-center gap-2" data-testid="tournament-participants-count">
-                  <span className="material-symbols-outlined text-base text-bq-amberd">groups</span>
+                  <span className="material-symbols-outlined text-[18px] text-bq-ink">groups</span>
                   <span>
                     {tItem.participantCount}/{tItem.maxParticipants} {t('tournaments.participants')}
                   </span>
@@ -176,7 +176,7 @@ const Tournaments: React.FC = () => {
                 {/* Current round */}
                 {tItem.currentRound != null && (
                   <div className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-base text-bq-amberd">
+                    <span className="material-symbols-outlined text-[18px] text-bq-ink">
                       format_list_numbered
                     </span>
                     <span>{t('tournaments.round', { number: tItem.currentRound })}</span>
@@ -185,7 +185,7 @@ const Tournaments: React.FC = () => {
 
                 {/* Dates */}
                 <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-base text-bq-amberd">
+                  <span className="material-symbols-outlined text-[18px] text-bq-ink">
                     calendar_month
                   </span>
                   <span>
