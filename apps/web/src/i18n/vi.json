@@ -3425,5 +3425,60 @@
       "title": "Hôm nay có {{count}} câu gốc cần ôn",
       "cta": "Ôn ngay"
     }
+  },
+  "guest": {
+    "title": "Trắc nghiệm Kinh Thánh, chơi như một chuyến phiêu lưu",
+    "intro": "Mỗi ngày chim bồ câu mang tới 5 câu hỏi. Luyện theo sách hoặc theo câu chuyện, đấu hạng toàn quốc và học cùng nhóm hội thánh.",
+    "google": "Tiếp tục với Google",
+    "try": "Chơi thử, không cần đăng nhập",
+    "bubble": "Chào bạn! Có thư cho bạn kìa.",
+    "letterCount_one": "{{count}} câu",
+    "letterCount_other": "{{count}} câu",
+    "doveAria_one": "Thử thách hôm nay: {{count}} câu, chơi được khi chưa đăng nhập",
+    "doveAria_other": "Thử thách hôm nay: {{count}} câu, chơi được khi chưa đăng nhập",
+    "lanternHint": "Nhiệm vụ mỗi ngày: đăng nhập để thắp đèn",
+    "lockedAria": "{{mode}} (cần đăng nhập)",
+    "goLocked": {
+      "ranked": "Đấu Hạng cần đăng nhập nhé!",
+      "rooms": "Phòng Chơi cần đăng nhập nhé!",
+      "journey": "Hành Trình cần đăng nhập nhé!"
+    },
+    "gate": {
+      "ranked": {
+        "title": "Đấu Hạng",
+        "body": "Đăng nhập để lưu điểm, lên bậc và có tên trên bảng xếp hạng toàn quốc."
+      },
+      "rooms": {
+        "title": "Phòng Chơi",
+        "body": "Đăng nhập để mở phòng và thi cùng bạn bè hay nhóm hội thánh."
+      },
+      "journey": {
+        "title": "Hành Trình",
+        "body": "Đăng nhập để sưu tầm đủ 66 sách Kinh Thánh trên bản đồ của bạn."
+      },
+      "quests": {
+        "title": "Nhiệm vụ mỗi ngày",
+        "body": "Đăng nhập để nhận 3 nhiệm vụ mỗi ngày và thắp đèn khi hoàn thành."
+      },
+      "email": "Đăng nhập bằng email"
+    },
+    "hudNav": "Tìm hiểu BibleQuiz",
+    "hud": {
+      "about": "Giới thiệu",
+      "aboutTip": "BibleQuiz là gì?",
+      "ranking": "Xếp hạng",
+      "rankingTip": "Bảng xếp hạng toàn quốc"
+    },
+    "linksNav": "Thông tin",
+    "links": {
+      "riddles": "Câu đố Kinh Thánh",
+      "help": "Trợ giúp",
+      "privacy": "Bảo mật",
+      "terms": "Điều khoản"
+    },
+    "results": {
+      "title": "Muốn giữ chuỗi ngày?",
+      "body": "Đăng nhập để những lần chơi sau được tính XP, giữ chuỗi ngày và có tên trên bảng xếp hạng."
+    }
   }
 }

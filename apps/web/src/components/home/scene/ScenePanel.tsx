@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { lanternState } from './sceneData'
 import type { Quest } from './QuestLanterns'
+import GoogleSignInButton from '../../auth/GoogleSignInButton'
 
 interface ScenePanelProps {
   onClose: () => void
   labelledBy: string
-  /** Desktop placement: the verse scroll rises above the HUD, the quest card sits by the lanterns. */
-  place: 'verse' | 'quests'
+  /** Desktop placement: the verse scroll rises above the HUD, the quest card sits by the lanterns,
+   *  the guest's sign-in card in the middle of the sky. */
+  place: 'verse' | 'quests' | 'gate'
   children: ReactNode
 }
 
@@ -52,7 +54,9 @@ function ScenePanel({ onClose, labelledBy, place, children }: ScenePanelProps) {
 
   const scroll = place === 'verse'
   // verse rises above the HUD (screen bottom-left); quests sit right of the lanterns (core 22 %)
-  const where = scroll ? 'left-[calc(2.4%_+_6cqh)] bottom-[17%]' : 'left-[calc(50%_-_42cqh)] top-[28%]'
+  const where = scroll ? 'left-[calc(2.4%_+_6cqh)] bottom-[17%]'
+    : place === 'gate' ? 'left-1/2 -translate-x-1/2 top-[20%]'
+    : 'left-[calc(50%_-_42cqh)] top-[28%]'
   const rod = 'hidden md:block h-[max(14px,2.25cqh)] bg-bq-wood border-[3px] border-bq-ink rounded-full'
   const panel = (
     <>
@@ -175,6 +179,40 @@ export function QuestPanel({ quests, onClose }: QuestPanelProps) {
         )
       })}
       <Link to="/practice" onClick={onClose} className={`${btn} mt-2 w-full justify-center bg-bq-amber text-[19px]`}>{t('home.lk.questsGo')}</Link>
+    </ScenePanel>
+  )
+}
+
+export type GateReason = 'ranked' | 'rooms' | 'journey' | 'quests'
+
+const GATE_ICON: Record<GateReason, string> = {
+  ranked: '/images/lk/sword.webp',
+  rooms: '/images/lk/heart.webp',
+  journey: '/images/lk/icon-map.webp',
+  quests: '/images/lk/lantern-off.webp',
+}
+
+interface GatePanelProps {
+  reason: GateReason
+  onClose: () => void
+}
+
+/** Guest home: what a locked board or lantern needs, and the way in (Google, or email on /login). */
+export function GatePanel({ reason, onClose }: GatePanelProps) {
+  const { t } = useTranslation()
+  return (
+    <ScenePanel onClose={onClose} labelledBy="guest-gate-title" place="gate">
+      <div data-testid="guest-gate" data-reason={reason} className="flex items-start gap-3 pr-10">
+        <img src={GATE_ICON[reason]} alt="" className="w-12 h-12 object-contain shrink-0" />
+        <div className="min-w-0">
+          <h2 id="guest-gate-title" className="m-0 text-[22px] font-extrabold leading-tight">{t(`guest.gate.${reason}.title`)}</h2>
+          <p className="mt-1 mb-0 font-read text-[15px] leading-snug text-bq-ink2">{t(`guest.gate.${reason}.body`)}</p>
+        </div>
+      </div>
+      <GoogleSignInButton testId="guest-gate-google" className="mt-4 w-full" />
+      <Link to="/login" onClick={onClose} data-testid="guest-gate-email" className="block mt-3 text-center text-[14px] font-bold text-bq-ink2 underline underline-offset-4 hover:text-bq-ink">
+        {t('guest.gate.email')}
+      </Link>
     </ScenePanel>
   )
 }

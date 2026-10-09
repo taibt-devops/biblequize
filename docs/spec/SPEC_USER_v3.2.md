@@ -80,6 +80,14 @@ SPEC_USER v3.1 mô tả **các tính năng đã ship** đang phục vụ user th
 
 > Premium / Friend → SPEC_ROADMAP.md.
 
+**Trang chủ của khách (2026-10-09).** Khách vào `/` thấy **một màn**: cùng cảnh ngã ba như trang chủ của người chơi, trong AppLayout (header có nút Đăng nhập).
+- Thẻ chào (góc trên trái; trên điện thoại nằm dưới ảnh): tiêu đề H1 duy nhất của trang, 2 câu giới thiệu, nút **Tiếp tục với Google** (web vào thẳng OAuth2; app điện thoại sang `/login` để đăng nhập native), link "Chơi thử, không cần đăng nhập" → `/daily`.
+- Mở cho khách: biển Luyện Tập, thư bồ câu (thử thách hôm nay, 5 câu, không XP).
+- Cần đăng nhập: biển Đấu Hạng, Phòng Chơi, Hành Trình (có ổ khóa, vẫn là link thật) và 3 đèn lồng nhiệm vụ (tắt). Bấm vào mở thẻ "Đăng nhập để …" với nút Google và link đăng nhập bằng email.
+- Lối tắt: Giới thiệu → `/gioi-thieu`, Xếp hạng → `/leaderboard`; hàng link nhỏ: Câu đố Kinh Thánh, Trợ giúp, Bảo mật, Điều khoản, VI/EN.
+- Sau mỗi lượt chơi khách (Luyện Tập, Thử thách ngày), màn kết quả mời đăng nhập; lời mời chỉ hứa thay đổi cho các lần chơi sau (lượt khách không được lưu).
+- SEO: `/` vẫn prerender (`home.html`), giữ title/description cũ. Nội dung dài trước đây của landing chuyển sang `/gioi-thieu` (prerender, có trong sitemap). `/landing` chuyển về `/`.
+
 ---
 
 ## 3. Tier System (6 tiers)

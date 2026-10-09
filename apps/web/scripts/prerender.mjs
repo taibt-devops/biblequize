@@ -29,13 +29,14 @@ const distDir = resolve(__dirname, '..', 'dist')
 const ORIGIN = 'https://forbible.org'
 
 // Deterministic, static-content public pages + their canonical path. `/` renders
-// the guest LandingPage (checkAuth short-circuits without a session) and is
-// written to home.html, served by nginx for exactly `/` so the SPA shell stays
+// the guest crossroads (GuestHome; checkAuth short-circuits without a session) and
+// is written to home.html, served by nginx for exactly `/` so the SPA shell stays
 // clean for fallback. Excluded: `/daily` (data-gated — without a backend it
-// prerenders to a "no questions" empty state). LandingPage canonicalises /landing to /.
+// prerenders to a "no questions" empty state). /landing now just redirects to /;
+// the long-form introduction it used to show lives at /gioi-thieu.
 const ROUTES = [
   { path: '/', canonical: '/', out: 'home.html' },
-  { path: '/landing', canonical: '/' },
+  { path: '/gioi-thieu', canonical: '/gioi-thieu' },
   { path: '/privacy', canonical: '/privacy' },
   { path: '/terms', canonical: '/terms' },
   { path: '/help', canonical: '/help' },

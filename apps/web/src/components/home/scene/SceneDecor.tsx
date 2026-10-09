@@ -83,10 +83,12 @@ export function StartHereHand() {
 }
 
 interface BubbleProps {
-  mode: 'letter' | 'ask' | 'first'
+  /** guest = the letter for a visitor: a greeting, and the badge counts questions (no XP). */
+  mode: 'letter' | 'ask' | 'first' | 'guest'
   hovered: SignMode | null
   goKey?: string
   xp: number
+  questionCount?: number
 }
 
 /**
@@ -94,10 +96,12 @@ interface BubbleProps {
  * a hint to tap a sign; otherwise the usual question. Hovering a sign says where it leads.
  * Desktop: to the right of his head (tail left). Phone: above him (tail down).
  */
-export function SpeechBubble({ mode, hovered, goKey, xp }: BubbleProps) {
+export function SpeechBubble({ mode, hovered, goKey, xp, questionCount = 5 }: BubbleProps) {
   const { t } = useTranslation()
+  const letter = mode === 'letter' || mode === 'guest'
   const line = hovered && goKey ? t(goKey)
     : mode === 'letter' ? t('home.lk.bubbleLetter')
+    : mode === 'guest' ? t('guest.bubble')
     : mode === 'first' ? <><span className="md:hidden">{t('home.lk.bubbleFirstShort')}</span><span className="hidden md:inline">{t('home.lk.bubbleFirst')}</span></>
     : t('home.signpost.ask')
   return (
@@ -110,8 +114,8 @@ export function SpeechBubble({ mode, hovered, goKey, xp }: BubbleProps) {
         <path d="M33 3 L2 22 L33 18" fill="#FFF8E7" stroke="#1D2B22" strokeWidth="3" strokeLinejoin="round" />
         <path d="M30 6 L31 16" stroke="#FFF8E7" strokeWidth="5" />
       </svg>
-      <p className={`m-0 text-[15px] md:[font-size:max(15px,1.45cqw)] font-bold ${mode === 'letter' && !hovered ? 'hidden md:block' : ''} ${mode === 'first' && !hovered ? 'max-w-[190px] md:max-w-[21cqw]' : 'whitespace-nowrap'}`}>{line}</p>
-      {mode === 'letter' && (
+      <p className={`m-0 text-[15px] md:[font-size:max(15px,1.45cqw)] font-bold ${letter && !hovered ? 'hidden md:block' : ''} ${mode === 'first' && !hovered ? 'max-w-[190px] md:max-w-[21cqw]' : 'whitespace-nowrap'}`}>{line}</p>
+      {letter && (
         <Link
           to="/daily"
           data-testid="featured-daily-cta"
@@ -119,7 +123,9 @@ export function SpeechBubble({ mode, hovered, goKey, xp }: BubbleProps) {
         >
           <span className="md:hidden">{t('home.lk.letterCtaShort')}</span>
           <span className="hidden md:inline">{t('home.lk.letterCta')}</span>
-          <span className="px-1.5 md:px-[.55cqw] bg-bq-white border-2 border-bq-ink rounded-full text-[11px] md:[font-size:max(11px,1cqw)]">{t('home.lk.letterXp', { xp })}</span>
+          <span className="px-1.5 md:px-[.55cqw] bg-bq-white border-2 border-bq-ink rounded-full text-[11px] md:[font-size:max(11px,1cqw)]">
+            {mode === 'guest' ? t('guest.letterCount', { count: questionCount }) : t('home.lk.letterXp', { xp })}
+          </span>
         </Link>
       )}
     </div>

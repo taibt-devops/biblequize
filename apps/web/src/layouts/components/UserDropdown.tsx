@@ -89,7 +89,8 @@ export default function UserDropdown({
     setLoggingOut(true)
     try {
       await logout()
-      navigate('/landing')
+      // "/" shows the guest crossroads once signed out.
+      navigate('/')
     } catch {
       // logout already clears state
     } finally {

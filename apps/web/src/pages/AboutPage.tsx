@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useQuery } from '@tanstack/react-query'
-import { useAuthStore } from '../store/authStore'
 import { api } from '../api/client'
 import { getTierByPoints } from '../data/tiers'
 import PageMeta from '../components/PageMeta'
@@ -13,10 +12,10 @@ import QuizLanguageSelect from '../components/QuizLanguageSelect'
 
 function GuestHeader() {
   const { t } = useTranslation()
-  // Scroll-spy: highlight the nav item for whichever section holds the
-  // viewport's vertical center. "Trang chủ" wins at the top (hero), "Giới
-  // thiệu" over the features grid, "Xếp hạng" over the leaderboard preview.
-  const [active, setActive] = useState<'home' | 'features' | 'leaderboard'>('home')
+  // Scroll-spy: this page is the introduction, so "Giới thiệu" is active except
+  // over the leaderboard preview ("Xếp hạng"). "Trang chủ" leads back to the
+  // one-screen crossroads at "/".
+  const [active, setActive] = useState<'features' | 'leaderboard'>('features')
   useEffect(() => {
     if (typeof IntersectionObserver === 'undefined') return
     const els = ['features', 'leaderboard']
@@ -27,7 +26,7 @@ function GuestHeader() {
     const obs = new IntersectionObserver(
       (entries) => {
         for (const e of entries) visible[e.target.id] = e.isIntersecting
-        setActive(visible.leaderboard ? 'leaderboard' : visible.features ? 'features' : 'home')
+        setActive(visible.leaderboard ? 'leaderboard' : 'features')
       },
       // A thin band around the viewport's vertical center. (A zero-height
       // "-50%/-50%" line makes isIntersecting flaky — zero-area intersection.)
@@ -52,15 +51,11 @@ function GuestHeader() {
   return (
     <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-4 sm:px-6 py-3 sm:py-4 bg-bq-white/90 backdrop-blur border-b border-bq-hair shadow-bq-soft">
       <div className="flex items-center gap-4 sm:gap-8 max-w-7xl mx-auto w-full">
-        <div className="text-xl sm:text-2xl font-bold tracking-tighter text-bq-amberd font-display">BibleQuiz</div>
+        <Link to="/" className="text-xl sm:text-2xl font-bold tracking-tighter text-bq-amberd font-display no-underline">BibleQuiz</Link>
         <div className="hidden md:flex gap-6 items-center flex-1">
-          <a
-            href="#"
-            onClick={scrollTo()}
-            className={`${navBase} ${active === 'home' ? navActive : navIdle}`}
-          >
+          <Link to="/" className={`${navBase} ${navIdle}`}>
             {t('nav.home')}
-          </a>
+          </Link>
           <a
             href="#leaderboard"
             onClick={scrollTo('leaderboard')}
@@ -554,27 +549,20 @@ function Footer() {
   )
 }
 
-/* ────────────────────────────── Landing Page ─────────────────────────────── */
+/* ────────────────────────────── About Page ──────────────────────────────── */
 
-export default function LandingPage() {
-  const navigate = useNavigate()
-  const isAuthenticated = useAuthStore((s) => s.isAuthenticated)
-  const isLoading = useAuthStore((s) => s.isLoading)
-
-  useEffect(() => {
-    if (!isLoading && isAuthenticated) {
-      navigate('/', { replace: true })
-    }
-  }, [isLoading, isAuthenticated, navigate])
-
-  if (isLoading) return null
-
+/**
+ * /gioi-thieu (2026-10-09): the long-form introduction that used to be the guest home. "/" is now
+ * the one-screen crossroads (GuestHome); this page keeps the features, leaderboard preview and
+ * church-group story for readers and search engines, and anyone can open it.
+ */
+export default function AboutPage() {
   return (
-    <div data-testid="landing-page" className="bg-bq-paper font-body text-bq-ink selection:bg-bq-amber selection:text-white min-h-dvh">
+    <div data-testid="about-page" className="bg-bq-paper font-body text-bq-ink selection:bg-bq-amber selection:text-white min-h-dvh">
       <PageMeta
-        title="Trắc Nghiệm Kinh Thánh – Câu Đố Kinh Thánh Online"
-        description="Trắc nghiệm Kinh Thánh & câu đố Kinh Thánh Tin Lành online miễn phí — học Lời Chúa qua quiz tương tác, thi đấu cùng cộng đồng và nhóm hội thánh Việt Nam."
-        canonicalPath="/"
+        title="Giới thiệu BibleQuiz – Trắc Nghiệm Kinh Thánh Online"
+        description="BibleQuiz là trò chơi trắc nghiệm Kinh Thánh miễn phí: 5 câu thử thách mỗi ngày, luyện theo sách hoặc theo câu chuyện, đấu hạng toàn quốc và học cùng nhóm hội thánh."
+        canonicalPath="/gioi-thieu"
       />
       <GuestHeader />
       <main>

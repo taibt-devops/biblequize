@@ -13,6 +13,8 @@ interface QuestLanternsProps {
   quests: Quest[]
   tod: TimeOfDay
   onOpen: () => void
+  /** Guest home: no quests yet; each dark lantern says this instead of a quest and its status. */
+  hint?: string
 }
 
 /**
@@ -20,7 +22,7 @@ interface QuestLanternsProps {
  * dark = not started. No words in the scene; hover / focus names the quest, a tap opens the list.
  * Desktop: on the left stone wall. Phone: in front of the wall by the signpost.
  */
-export default function QuestLanterns({ quests, tod, onOpen }: QuestLanternsProps) {
+export default function QuestLanterns({ quests, tod, onOpen, hint }: QuestLanternsProps) {
   const { t } = useTranslation()
   const tone = tod === 'night' ? s.night : ''
   const rows: Quest[] = quests.length > 0
@@ -42,7 +44,7 @@ export default function QuestLanterns({ quests, tod, onOpen }: QuestLanternsProp
             key={i}
             type="button"
             onClick={onOpen}
-            aria-label={`${q.description ?? ''}: ${status}`}
+            aria-label={hint ?? `${q.description ?? ''}: ${status}`}
             className="group relative w-[3.6cqw] md:w-[3.9cqw] transition-transform hover:-translate-y-1 focus-visible:-translate-y-1 focus-visible:outline-none"
           >
             {state !== 'dark' && <span aria-hidden className={`${s.glow} ${state === 'lit' ? s.glowLit : s.glowBurning}`} />}
@@ -52,7 +54,7 @@ export default function QuestLanterns({ quests, tod, onOpen }: QuestLanternsProp
               className={`relative mx-auto h-[6.4cqw] md:h-[6.6cqw] ${state === 'lit' ? s.lampLit : state === 'burning' ? s.lampBurning : s.lampDark}`}
             />
             <span className="hidden md:block pointer-events-none absolute left-0 bottom-[104%] z-20 px-3 py-1.5 bg-bq-white border-[3px] border-bq-ink rounded-2xl shadow-[0_5px_0_#1D2B22] text-[15px] font-bold text-bq-ink whitespace-nowrap opacity-0 translate-y-1.5 transition group-hover:opacity-100 group-hover:translate-y-0 group-focus-visible:opacity-100 group-focus-visible:translate-y-0">
-              <span>{q.description}</span> · <span>{status}</span>
+              {hint ?? <><span>{q.description}</span> · <span>{status}</span></>}
             </span>
           </button>
         )

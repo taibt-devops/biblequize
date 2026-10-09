@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Only genuinely public, indexable pages. /landing is intentionally absent: it
-  renders the same content as / and canonicalises to /, so listing it would
-  advertise a duplicate. App/auth routes are excluded (see robots.txt).
+  only redirects to /. App/auth routes are excluded (see robots.txt).
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://forbible.org/</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://forbible.org/gioi-thieu</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://forbible.org/cau-do-kinh-thanh</loc>

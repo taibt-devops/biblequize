@@ -30,13 +30,15 @@ interface FlyingDoveProps {
   questionCount: number
   xp: number
   tod: TimeOfDay
+  /** Overrides the "N questions, up to X XP" label (guests earn no XP). */
+  ariaLabel?: string
 }
 
 /**
  * Today's challenge, not done yet (LKF-3): a dove glides down toward the traveller with a sealed
  * letter; a dotted flight line on desktop. The traveller's bubble carries the "open" button.
  */
-export function FlyingDove({ questionCount, xp, tod }: FlyingDoveProps) {
+export function FlyingDove({ questionCount, xp, tod, ariaLabel }: FlyingDoveProps) {
   const { t } = useTranslation()
   const countdown = useUtcCountdown()
   return (
@@ -47,7 +49,7 @@ export function FlyingDove({ questionCount, xp, tod }: FlyingDoveProps) {
       <Link
         to="/daily"
         data-testid="home-daily"
-        aria-label={t('home.lk.doveAria', { count: questionCount, xp })}
+        aria-label={ariaLabel ?? t('home.lk.doveAria', { count: questionCount, xp })}
         className={`group absolute z-[5] left-[55%] top-[26%] w-[10.5cqw] md:w-[9.5cqw] ${s.dove}`}
       >
         <img src="/images/lk/dove-letter.webp" alt="" className={`block w-full -scale-x-100 ${TINT[tod]}`} />

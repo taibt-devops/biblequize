@@ -88,14 +88,14 @@ describe('AppLayout — Logout', () => {
     })
   })
 
-  it('calls logout and navigates to /landing when logout clicked', async () => {
+  it('calls logout and navigates to / (the guest crossroads) when logout clicked', async () => {
     renderAppLayout()
     fireEvent.click(screen.getByTestId('user-dropdown-toggle'))
     const logoutBtn = await screen.findByTestId('user-dropdown-logout-btn')
     fireEvent.click(logoutBtn)
     await waitFor(() => {
       expect(mockLogout).toHaveBeenCalledTimes(1)
-      expect(mockNavigate).toHaveBeenCalledWith('/landing')
+      expect(mockNavigate).toHaveBeenCalledWith('/')
     })
   })
 

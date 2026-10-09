@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './styles/global.css'
 import './styles/tokens.css'
 import { useAuthStore } from './store/authStore'
@@ -18,11 +18,10 @@ import CapacitorBackButton from './platform/CapacitorBackButton'
 import { initNative } from './platform/initNative'
 
 // EAGER — critical / first-paint path. These render on initial load (the "/"
-// dashboard or guest landing) so they belong in the entry chunk; lazy-loading
-// them would add a round-trip to FCP/LCP.
+// dashboard or the guest crossroads) so they belong in the entry chunk;
+// lazy-loading them would add a round-trip to FCP/LCP.
 import AppLayout from './layouts/AppLayout'
-import Home from './pages/Home'
-import LandingPage from './pages/LandingPage'
+import { HomeShell, HomeIndex } from './pages/HomeEntry'
 import Onboarding from './pages/Onboarding'
 
 // LAZY — every other route is split into its own chunk (loaded on navigation).
@@ -77,6 +76,7 @@ const NotFound = lazy(() => import('./pages/NotFound'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
 const TermsOfService = lazy(() => import('./pages/TermsOfService'))
 const CauDoKinhThanh = lazy(() => import('./pages/CauDoKinhThanh'))
+const AboutPage = lazy(() => import('./pages/AboutPage'))
 const OnboardingTryQuiz = lazy(() => import('./pages/OnboardingTryQuiz'))
 const Journey = lazy(() => import('./pages/Journey'))
 const Help = lazy(() => import('./pages/Help'))
@@ -109,17 +109,6 @@ installSessionExpiryHandler()
 // Initialize auth state on app startup (replaces AuthProvider useEffect)
 useAuthStore.getState().checkAuth()
 
-/** Show the content-rich LandingPage for guests (good for SEO + first paint),
- *  Home (inside AppLayout) for authenticated users. Onboarding is no longer a
- *  blocking gate at "/": UI language is auto-detected (i18n) and switchable on
- *  the landing header; the guided flow stays reachable at /onboarding. */
-function HomeOrLanding() {
-  const { isAuthenticated, isLoading } = useAuthStore()
-  if (isLoading) return null // wait for auth check
-  if (!isAuthenticated) return <LandingPage />
-  return <AppLayout />
-}
-
 // Native shell setup (status bar, splash, keyboard) — no-op on web.
 initNative()
 
@@ -140,9 +129,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                 {/* PREVIEW-ONLY: coded mockup of the game-vibe Home redesign (v2).
                     Standalone (own chrome), no auth, no AppLayout. Remove after approval. */}
                 <Route path="/home-khung-sang-preview" element={<HomeKhungSangMock />} />
-                {/* "/" = LandingPage for guest, Home (with AppLayout) for authenticated */}
-                <Route element={<HomeOrLanding />}>
-                  <Route path="/" element={<Home />} />
+                {/* "/" = one-screen crossroads: Home for players, the guest scene for
+                    visitors (GuestHome, prerendered to home.html), both in AppLayout */}
+                <Route element={<HomeShell />}>
+                  <Route path="/" element={<HomeIndex />} />
                 </Route>
 
                 {/* Pages with AppLayout (sidebar + nav) — requires auth check already done */}
@@ -195,11 +185,13 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                 <Route path="/privacy" element={<PrivacyPolicy />} />
                 <Route path="/terms" element={<TermsOfService />} />
                 <Route path="/cau-do-kinh-thanh" element={<CauDoKinhThanh />} />
+                {/* The long-form introduction the guest home used to be (2026-10-09) */}
+                <Route path="/gioi-thieu" element={<AboutPage />} />
                 <Route path="/onboarding" element={<Onboarding />} />
                 <Route path="/onboarding/try" element={<OnboardingTryQuiz />} />
 
                 {/* Full-screen pages (no AppLayout) — immersive gameplay / auth / marketing */}
-                <Route path="/landing" element={<LandingPage />} />
+                <Route path="/landing" element={<Navigate to="/" replace />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/auth/callback" element={<AuthCallback />} />

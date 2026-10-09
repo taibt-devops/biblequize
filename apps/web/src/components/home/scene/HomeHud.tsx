@@ -26,7 +26,7 @@ interface MedalProps {
   onClick?: () => void
 }
 
-function Medal({ icon, label, badge, tip, testId, phoneOnly, to, onClick }: MedalProps) {
+export function Medal({ icon, label, badge, tip, testId, phoneOnly, to, onClick }: MedalProps) {
   const body = (
     <>
       <span className={`${s.medal} w-[50px] h-[50px] md:w-[max(46px,8.1cqh)] md:h-[max(46px,8.1cqh)]`}>

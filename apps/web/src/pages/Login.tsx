@@ -5,6 +5,7 @@ import { useAuth } from '../store/authStore'
 import PageMeta from '../components/PageMeta'
 import { PlaceBackdrop, lkClass } from '../components/lk/Place'
 import { isCapacitor } from '../platform/capacitor'
+import { googleAuthUrl } from '../utils/googleLogin'
 
 export default function Login() {
   const { t } = useTranslation()
@@ -73,7 +74,7 @@ export default function Login() {
     }
 
     // Web: redirect to the backend's OAuth2 authorization endpoint.
-    window.location.href = `${import.meta.env.VITE_API_BASE_URL || ''}/oauth2/authorization/google`
+    window.location.href = googleAuthUrl()
   }
 
   const handleEmailSubmit = async (e: FormEvent) => {

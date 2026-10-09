@@ -2,6 +2,20 @@
 
 ---
 
+## 2026-10-09 — Trang chủ khách thành một màn "ngã ba cho khách"; landing dài sang /gioi-thieu
+
+- **Bối cảnh:** landing cũ là trang cuộn dài (hero, tính năng, bảng xếp hạng, nhóm hội thánh, câu gốc, CTA), khác hẳn trang chủ người chơi (một cảnh ngã ba). User muốn khách thấy một màn như trang chủ, vài câu giới thiệu, được dẫn tới đăng nhập, ít ảnh hưởng SEO.
+- **Quyết định (user chốt 09/10: "ý tưởng quá hay, triển khai thôi"):**
+  - `/` cho khách = cùng cảnh ngã ba, trong AppLayout. Thẻ chào thay bảng tên người chơi: H1, 2 câu, nút Tiếp tục với Google, link Chơi thử.
+  - Mở cho khách: Luyện Tập, thư bồ câu (thử thách hôm nay). Khóa: Đấu Hạng, Phòng Chơi, Hành Trình, đèn lồng nhiệm vụ → thẻ "Đăng nhập để …". Biển khóa vẫn là link thật (crawler, mở tab mới).
+  - "Chơi trước, đăng nhập sau": màn kết quả của khách mời đăng nhập, chỉ hứa cho lần chơi sau (chưa giữ lượt chơi khách).
+  - SEO: giữ prerender `/` và title/description; nội dung dài chuyển sang `/gioi-thieu` (trang riêng, prerender, sitemap) thay vì giấu chữ trên trang chủ. `/landing` chuyển về `/`.
+  - Để sau: Google One Tap, cộng XP cho lượt chơi khách sau khi đăng nhập.
+- **Thay:** guest LandingPage tại `/` (main.tsx `HomeOrLanding`).
+- **Implementation:** task `docs/todo/active/2026-10-09-guest-crossroads-home.md` (GCH-1..4).
+
+---
+
 ## 2026-10-09 — Luyện Tập có thêm "Theo câu chuyện"; nạp bộ "Dễ cốt lõi"
 
 - **Bối cảnh:** bộ "Dễ cốt lõi" (`content/easy-core/`) viết xong 120 câu chuyện quen thuộc, 1.095 câu Dễ, trích nguyên văn RVV11. User chơi thử 100 câu đầu thấy ổn và muốn đưa vào Luyện Tập, chọn được theo sách hoặc theo câu chuyện.

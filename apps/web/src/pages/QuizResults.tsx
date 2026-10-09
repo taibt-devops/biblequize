@@ -7,6 +7,8 @@ import { haptic } from '../utils/haptics'
 import MobileBottomTabs from '../layouts/components/MobileBottomTabs'
 import { Medal, PlaceBackdrop, ScrollPanel, TrackBar, lkClass } from '../components/lk/Place'
 import { useBookName } from '../hooks/useBookName'
+import { useAuthStore } from '../store/authStore'
+import GoogleSignInButton from '../components/auth/GoogleSignInButton'
 
 interface Question {
   id: string
@@ -64,6 +66,7 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
   const navigate = useNavigate()
   const { t } = useTranslation()
   const getBookName = useBookName()
+  const isAuthenticated = useAuthStore(s => s.isAuthenticated)
   const [scoreDisplay, setScoreDisplay] = useState(0)
 
   // Sounds, haptics & confetti on mount (must be before any early-return to satisfy hooks rules)
@@ -386,6 +389,22 @@ const QuizResults: React.FC<QuizResultsProps> = ({ stats, onPlayAgain, onBackToH
                 </div>
               </div>
             )}
+          </section>
+        )}
+
+        {/* Visitors played without an account: invite them in. This game is not kept, so the
+            card promises only what signing in changes for the next ones. */}
+        {!isAuthenticated && (
+          <section
+            data-testid="quiz-results-guest-signin"
+            className="mt-5 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 bg-bq-cream border-[3px] border-bq-ink rounded-bq shadow-bq-card px-5 py-4 text-center sm:text-left"
+          >
+            <img src="/images/lk/dove-letter.webp" alt="" aria-hidden className="h-14 shrink-0" />
+            <div className="flex-1 min-w-0">
+              <h2 className="m-0 font-display text-[18px] font-extrabold text-bq-ink">{t('guest.results.title')}</h2>
+              <p className="m-0 mt-1 font-read text-[14px] leading-snug text-bq-ink2">{t('guest.results.body')}</p>
+            </div>
+            <GoogleSignInButton testId="quiz-results-guest-google" className="w-full sm:w-auto" />
           </section>
         )}
 

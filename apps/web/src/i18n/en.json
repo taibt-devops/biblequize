@@ -3425,5 +3425,60 @@
       "title": "{{count}} memory verses to review today",
       "cta": "Review now"
     }
+  },
+  "guest": {
+    "title": "Bible quiz, played like an adventure",
+    "intro": "Every day a dove brings you 5 questions. Practise by book or by story, climb the national ranking and learn with your church group.",
+    "google": "Continue with Google",
+    "try": "Try it without signing in",
+    "bubble": "Hello! There's a letter for you.",
+    "letterCount_one": "{{count}} question",
+    "letterCount_other": "{{count}} questions",
+    "doveAria_one": "Today's challenge: {{count}} question, playable without signing in",
+    "doveAria_other": "Today's challenge: {{count}} questions, playable without signing in",
+    "lanternHint": "Daily quests: sign in to light the lanterns",
+    "lockedAria": "{{mode}} (sign-in needed)",
+    "goLocked": {
+      "ranked": "Ranked needs an account!",
+      "rooms": "Game Rooms need an account!",
+      "journey": "The Journey needs an account!"
+    },
+    "gate": {
+      "ranked": {
+        "title": "Ranked",
+        "body": "Sign in to keep your points, rise through the tiers and appear on the national ranking."
+      },
+      "rooms": {
+        "title": "Game Rooms",
+        "body": "Sign in to open a room and play with friends or your church group."
+      },
+      "journey": {
+        "title": "Journey",
+        "body": "Sign in to collect all 66 books of the Bible on your own map."
+      },
+      "quests": {
+        "title": "Daily quests",
+        "body": "Sign in to get 3 quests a day and light a lantern for each one you finish."
+      },
+      "email": "Sign in with email"
+    },
+    "hudNav": "Learn about BibleQuiz",
+    "hud": {
+      "about": "About",
+      "aboutTip": "What is BibleQuiz?",
+      "ranking": "Ranking",
+      "rankingTip": "The national ranking"
+    },
+    "linksNav": "Information",
+    "links": {
+      "riddles": "Bible riddles",
+      "help": "Help",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "results": {
+      "title": "Want to keep your streak?",
+      "body": "Sign in so your next games earn XP, keep your daily streak and put your name on the ranking."
+    }
   }
 }

@@ -17,20 +17,21 @@ vi.mock('../../store/authStore', () => ({
 const mockApiGet = vi.fn()
 vi.mock('../../api/client', () => ({ api: { get: (...a: any[]) => mockApiGet(...a) } }))
 
-import LandingPage from '../LandingPage'
+import AboutPage from '../AboutPage'
 
 function renderLanding() {
   const qc = new QueryClient({ defaultOptions: { queries: { retry: false } } })
   return render(
     <QueryClientProvider client={qc}>
       <MemoryRouter>
-        <LandingPage />
+        <AboutPage />
       </MemoryRouter>
     </QueryClientProvider>
   )
 }
 
-describe('LandingPage', () => {
+// /gioi-thieu: the long-form introduction that used to be the guest home "/".
+describe('AboutPage', () => {
   beforeEach(() => {
     vi.clearAllMocks()
     authState = { isAuthenticated: false, isLoading: false, user: null }
@@ -73,12 +74,13 @@ describe('LandingPage', () => {
     expect(document.getElementById('leaderboard')).not.toBeNull()
   })
 
-  it('nav highlights "Trang chủ" by default (top of page), not "Xếp hạng"', () => {
+  it('nav highlights "Giới thiệu" at the top of the page, and "Trang chủ" leads back to the crossroads "/"', () => {
     renderLanding()
-    const home = document.querySelector('a[href="#"]')
+    const about = document.querySelector('a[href="#features"]')
     const board = document.querySelector('a[href="#leaderboard"]')
-    expect(home?.className).toContain('border-bq-amber')
+    expect(about?.className).toContain('border-bq-amber')
     expect(board?.className).not.toContain('border-bq-amber')
+    expect(screen.getByRole('link', { name: /Trang chủ|Home/ })).toHaveAttribute('href', '/')
   })
 
   it('nav "Giới thiệu" scrolls in-page to the features section (#features)', () => {
@@ -122,19 +124,21 @@ describe('LandingPage', () => {
     expect(screen.getAllByText(/Đăng ký|Register/i).length).toBeGreaterThanOrEqual(1)
   })
 
-  it('redirects to / when user is already authenticated', () => {
+  it('stays open for signed-in players (no redirect to /)', () => {
     authState = {
       isAuthenticated: true,
       isLoading: false,
       user: { name: 'Test', email: 'test@test.com' },
     }
     renderLanding()
-    expect(mockNavigate).toHaveBeenCalledWith('/', expect.anything())
+    expect(screen.getByTestId('about-page')).toBeInTheDocument()
+    expect(mockNavigate).not.toHaveBeenCalled()
   })
 
-  it('does NOT redirect when user is not authenticated', () => {
+  it('opens for visitors too', () => {
     authState = { isAuthenticated: false, isLoading: false, user: null }
     renderLanding()
+    expect(screen.getByTestId('about-page')).toBeInTheDocument()
     expect(mockNavigate).not.toHaveBeenCalled()
   })
 })

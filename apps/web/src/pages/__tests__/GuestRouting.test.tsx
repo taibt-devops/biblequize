@@ -1,101 +1,67 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, waitFor } from '@testing-library/react'
 import { MemoryRouter, Routes, Route, Outlet } from 'react-router-dom'
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 /**
- * Tests that "/" shows LandingPage for guests and Home for authenticated users.
- *
- * Bug: Previously "/" always showed the authenticated Home dashboard even for
- * guests who were not logged in. Now HomeOrLanding wrapper checks auth state.
+ * "/" is one screen for everyone, inside AppLayout (2026-10-09): Home for signed-in players,
+ * the guest crossroads (GuestHome) for visitors. Nothing renders until the auth check is done,
+ * so a player never sees the guest home flash.
  */
 
-// Track auth state
 let authState = { isAuthenticated: false, isLoading: false, user: null as any }
-
 vi.mock('../../store/authStore', () => ({
-  useAuthStore: (selector?: (state: any) => any) => {
-    return selector ? selector(authState) : authState
-  },
+  useAuthStore: (selector?: (state: any) => any) => (selector ? selector(authState) : authState),
 }))
 
-// Mock heavy page components
-vi.mock('../LandingPage', () => ({
-  default: () => <div data-testid="landing-page">LandingPage</div>,
+vi.mock('../../layouts/AppLayout', () => ({
+  default: () => <div data-testid="app-layout"><Outlet /></div>,
 }))
 vi.mock('../Home', () => ({
   default: () => <div data-testid="home-page">Home Dashboard</div>,
 }))
+vi.mock('../GuestHome', () => ({
+  default: () => <div data-testid="guest-home">Guest crossroads</div>,
+}))
 
-// Import after mocks
-import { useAuthStore } from '../../store/authStore'
-import LandingPageMock from '../LandingPage'
-import HomeMock from '../Home'
-
-// Replicate HomeOrLanding logic from main.tsx
-function HomeOrLanding() {
-  const { isAuthenticated, isLoading } = useAuthStore()
-  if (isLoading) return <div data-testid="loading">Loading...</div>
-  if (!isAuthenticated) return <LandingPageMock />
-  return (
-    <div data-testid="app-layout">
-      <Outlet />
-    </div>
-  )
-}
+import { HomeShell, HomeIndex } from '../HomeEntry'
 
 function renderApp(route = '/') {
-  const queryClient = new QueryClient({ defaultOptions: { queries: { retry: false } } })
   return render(
-    <QueryClientProvider client={queryClient}>
-      <MemoryRouter initialEntries={[route]}>
-        <Routes>
-          <Route element={<HomeOrLanding />}>
-            <Route path="/" element={<HomeMock />} />
-          </Route>
-        </Routes>
-      </MemoryRouter>
-    </QueryClientProvider>
+    <MemoryRouter initialEntries={[route]}>
+      <Routes>
+        <Route element={<HomeShell />}>
+          <Route path="/" element={<HomeIndex />} />
+        </Route>
+      </Routes>
+    </MemoryRouter>,
   )
 }
 
-describe('Guest vs Authenticated Routing', () => {
+describe('"/" routing for visitors and players', () => {
   beforeEach(() => {
     authState = { isAuthenticated: false, isLoading: false, user: null }
   })
 
-  it('shows LandingPage when user is NOT authenticated', async () => {
-    authState = { isAuthenticated: false, isLoading: false, user: null }
+  it('shows the guest crossroads inside AppLayout when NOT signed in', async () => {
     renderApp('/')
-
-    await waitFor(() => {
-      expect(screen.getByTestId('landing-page')).toBeInTheDocument()
-    })
+    await waitFor(() => expect(screen.getByTestId('guest-home')).toBeInTheDocument())
+    expect(screen.getByTestId('app-layout')).toBeInTheDocument()
     expect(screen.queryByTestId('home-page')).not.toBeInTheDocument()
-    expect(screen.queryByTestId('app-layout')).not.toBeInTheDocument()
   })
 
-  it('shows Home dashboard inside AppLayout when user IS authenticated', async () => {
-    authState = {
-      isAuthenticated: true,
-      isLoading: false,
-      user: { name: 'Test', email: 'test@test.com' },
-    }
+  it('shows Home inside AppLayout when signed in', async () => {
+    authState = { isAuthenticated: true, isLoading: false, user: { name: 'Test', email: 'test@test.com' } }
     renderApp('/')
-
-    await waitFor(() => {
-      expect(screen.getByTestId('app-layout')).toBeInTheDocument()
-      expect(screen.getByTestId('home-page')).toBeInTheDocument()
-    })
-    expect(screen.queryByTestId('landing-page')).not.toBeInTheDocument()
+    await waitFor(() => expect(screen.getByTestId('home-page')).toBeInTheDocument())
+    expect(screen.getByTestId('app-layout')).toBeInTheDocument()
+    expect(screen.queryByTestId('guest-home')).not.toBeInTheDocument()
   })
 
-  it('shows loading state while auth is being checked', () => {
+  it('renders nothing while the auth check is running', () => {
     authState = { isAuthenticated: false, isLoading: true, user: null }
     renderApp('/')
-
-    expect(screen.getByTestId('loading')).toBeInTheDocument()
-    expect(screen.queryByTestId('landing-page')).not.toBeInTheDocument()
+    expect(screen.queryByTestId('app-layout')).not.toBeInTheDocument()
+    expect(screen.queryByTestId('guest-home')).not.toBeInTheDocument()
     expect(screen.queryByTestId('home-page')).not.toBeInTheDocument()
   })
 })

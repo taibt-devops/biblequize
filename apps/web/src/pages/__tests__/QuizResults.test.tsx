@@ -14,6 +14,7 @@ vi.mock('canvas-confetti', () => ({ default: vi.fn() }))
 vi.mock('../../hooks/useBookName', () => ({ useBookName: () => (k: string) => k }))
 
 import QuizResults from '../QuizResults'
+import { useAuthStore } from '../../store/authStore'
 
 const baseStats = {
   totalScore: 150,
@@ -167,5 +168,21 @@ describe('QuizResults', () => {
   it('shows error state when stats is null', () => {
     render(<MemoryRouter><QuizResults stats={null as any} onPlayAgain={mockPlayAgain} onBackToHome={mockBackToHome} /></MemoryRouter>)
     expect(screen.getByText('Không có dữ liệu kết quả')).toBeInTheDocument()
+  })
+
+  it('invites a visitor to sign in, promising only what changes for the next games', () => {
+    useAuthStore.setState({ isAuthenticated: false })
+    renderResults()
+    const card = screen.getByTestId('quiz-results-guest-signin')
+    expect(card).toHaveTextContent('Muốn giữ chuỗi ngày?')
+    expect(card).toHaveTextContent('những lần chơi sau được tính XP')
+    expect(screen.getByTestId('quiz-results-guest-google')).toHaveTextContent('Tiếp tục với Google')
+  })
+
+  it('shows no sign-in card to a signed-in player', () => {
+    useAuthStore.setState({ isAuthenticated: true })
+    renderResults()
+    expect(screen.queryByTestId('quiz-results-guest-signin')).not.toBeInTheDocument()
+    useAuthStore.setState({ isAuthenticated: false })
   })
 })

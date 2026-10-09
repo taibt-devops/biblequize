@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { getDailyVerse } from '../../../data/verses'
-import { SCENE_IMAGE, SCENE_WIDE, SIGN_BOARDS, lanternState, timeOfDay, type SignMode } from './sceneData'
+import { SIGN_BOARDS, lanternState, timeOfDay, type SignMode } from './sceneData'
+import SceneStage from './SceneStage'
 import SignBoards from './SignBoards'
 import PlayerPlate from './PlayerPlate'
 import QuestLanterns, { type Quest } from './QuestLanterns'
 import HomeHud from './HomeHud'
 import { FlyingDove, PerchedDove } from './SceneDove'
-import { Footprints, SceneAmbient, SceneGlow, SpeechBubble, StartHereHand, Traveller } from './SceneDecor'
+import { Footprints, SceneGlow, SpeechBubble, StartHereHand, Traveller } from './SceneDecor'
 import { QuestPanel, VersePanel } from './ScenePanel'
 
 /** Max XP of the daily challenge (DailyChallengeService.DAILY_XP_BY_CORRECT, 5/5 correct). */
@@ -54,44 +55,25 @@ export default function HomeScene(p: HomeSceneProps) {
   const goKey = SIGN_BOARDS.find(b => b.mode === hovered)?.goKey
   const questsDone = p.quests.filter(q => lanternState(q.progress ?? 0, q.target ?? 1, q.completed) === 'lit').length
   const bubble = p.isNewUser ? 'first' : p.daily.done ? 'ask' : 'letter'
-  // phone: right-anchored window on the core; desktop: centred
-  const coreBox = 'absolute top-0 right-0 h-full aspect-[3/2] translate-x-[1.8%] md:right-auto md:left-1/2 md:-translate-x-1/2'
 
   return (
-    <div
-      data-testid="home-scene"
-      className="relative w-full md:[--sh:min(calc(100dvh_-_70px),calc(100vw_/_1.5))] md:h-[var(--sh)] md:[container-type:size]"
-    >
-      <section
-        aria-label={t('home.signpost.nav')}
-        className="relative overflow-hidden bg-bq-track border-b-[3px] border-bq-ink h-[clamp(400px,calc(100dvh_-_58px_-_132px_-_var(--mobile-nav-h)),547px)] md:absolute md:inset-0 md:h-auto md:border-b-4"
-      >
-        {/* the painting: phone = the 3:2 core, desktop = the 3:1 panorama around it */}
-        <picture className={`${coreBox} md:aspect-[3/1]`}>
-          <source media="(min-width: 768px)" srcSet={SCENE_WIDE[tod]} />
-          <img
-            src={SCENE_IMAGE[tod]}
-            alt={t('home.signpost.sceneAlt')}
-            fetchPriority="high"
-            draggable={false}
-            className="absolute inset-0 w-full h-full select-none"
-          />
-        </picture>
-        <SceneAmbient tod={tod} />
-
-        <div className={`${coreBox} [container-type:inline-size]`}>
-          <SceneGlow tod={tod} />
-          <QuestLanterns quests={p.quests} tod={tod} onOpen={() => setPanel('quests')} />
-          <Footprints />
-          <Traveller tod={tod} />
-          <SignBoards tod={tod} onHover={setHovered} />
-          {p.daily.done
-            ? <PerchedDove correct={p.daily.correct} total={p.daily.total} tod={tod} />
-            : <FlyingDove questionCount={p.daily.questionCount} xp={DAILY_MAX_XP} tod={tod} />}
-          <SpeechBubble mode={bubble} hovered={hovered} goKey={goKey} xp={DAILY_MAX_XP} />
-          {p.isNewUser && <StartHereHand />}
-        </div>
-
+    <SceneStage
+      tod={tod}
+      testId="home-scene"
+      label={t('home.signpost.nav')}
+      core={<>
+        <SceneGlow tod={tod} />
+        <QuestLanterns quests={p.quests} tod={tod} onOpen={() => setPanel('quests')} />
+        <Footprints />
+        <Traveller tod={tod} />
+        <SignBoards tod={tod} onHover={setHovered} />
+        {p.daily.done
+          ? <PerchedDove correct={p.daily.correct} total={p.daily.total} tod={tod} />
+          : <FlyingDove questionCount={p.daily.questionCount} xp={DAILY_MAX_XP} tod={tod} />}
+        <SpeechBubble mode={bubble} hovered={hovered} goKey={goKey} xp={DAILY_MAX_XP} />
+        {p.isNewUser && <StartHereHand />}
+      </>}
+      overlay={
         <PlayerPlate
           greeting={p.greeting}
           userName={p.userName}
@@ -103,8 +85,8 @@ export default function HomeScene(p: HomeSceneProps) {
           nextMinPoints={p.nextMinPoints}
           pointsToNext={p.pointsToNext}
         />
-      </section>
-
+      }
+    >
       <HomeHud
         journey={p.journey}
         rank={p.rank}
@@ -118,6 +100,6 @@ export default function HomeScene(p: HomeSceneProps) {
 
       {panel === 'verse' && <VersePanel text={verse.text} verseRef={verse.ref} due={p.verseDue} onClose={() => setPanel(null)} />}
       {panel === 'quests' && <QuestPanel quests={p.quests} onClose={() => setPanel(null)} />}
-    </div>
+    </SceneStage>
   )
 }

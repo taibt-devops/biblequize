@@ -8,6 +8,22 @@ interface SignBoardsProps {
   tod: TimeOfDay
   /** The board under the pointer / keyboard focus (the traveller says where it leads). */
   onHover: (mode: SignMode | null) => void
+  /** Guest home: boards that need an account. They keep their link (crawlers, new tab) and a
+   *  small padlock, but a tap calls onLocked instead of leaving the page. */
+  locked?: readonly SignMode[]
+  onLocked?: (mode: SignMode) => void
+}
+
+/** Brass padlock tucked on a locked board's emblem. */
+function LockBadge() {
+  return (
+    <svg aria-hidden data-testid="sign-lock" viewBox="0 0 20 22" className="absolute -right-[46%] -bottom-[34%] w-[88%] drop-shadow-[0_1px_0_rgba(29,43,34,.6)]">
+      <path d="M5 10V7a5 5 0 0 1 10 0v3" fill="none" stroke="#2B1A08" strokeWidth="4" />
+      <path d="M5 10V7a5 5 0 0 1 10 0v3" fill="none" stroke="#DDAE4E" strokeWidth="1.6" />
+      <rect x="2" y="9.5" width="16" height="11.5" rx="3" fill="#F0CF7A" stroke="#2B1A08" strokeWidth="2.2" />
+      <circle cx="10" cy="15" r="1.9" fill="#2B1A08" />
+    </svg>
+  )
 }
 
 /**
@@ -15,7 +31,7 @@ interface SignBoardsProps {
  * each carries its mode emblem, sways on its nail, rattles in a gust every few seconds and lifts
  * toward where it points on hover / focus, so it reads as something to press.
  */
-export default function SignBoards({ tod, onHover }: SignBoardsProps) {
+export default function SignBoards({ tod, onHover, locked = [], onLocked }: SignBoardsProps) {
   const { t } = useTranslation()
   const tone = tod === 'night' ? s.night : tod === 'sunset' ? s.sunset : ''
 
@@ -34,12 +50,15 @@ export default function SignBoards({ tod, onHover }: SignBoardsProps) {
           '--lift': right ? '-3deg' : '3deg', '--bz': right ? '1.4deg' : '-1.4deg',
           '--d': `${i * 0.7}s`, '--gd': `${i * 0.18}s`,
         } as CSSProperties
+        const isLocked = locked.includes(b.mode)
         return (
           <Link
             key={b.mode}
             to={b.to}
             data-testid={`home-mode-${b.mode}`}
-            aria-label={t(b.labelKey)}
+            data-locked={isLocked || undefined}
+            aria-label={isLocked ? t('guest.lockedAria', { mode: t(b.labelKey) }) : t(b.labelKey)}
+            onClick={isLocked ? e => { e.preventDefault(); onLocked?.(b.mode) } : undefined}
             onMouseEnter={() => onHover(b.mode)}
             onMouseLeave={() => onHover(null)}
             onFocus={() => onHover(b.mode)}
@@ -50,7 +69,7 @@ export default function SignBoards({ tod, onHover }: SignBoardsProps) {
             <span className={s.sway}>
               <span className={s.wig}>
                 <img className={s.plank} src={right ? BOARD_IMAGE.right : BOARD_IMAGE.left} alt="" draggable={false} />
-                <span className={s.emblem}><img src={b.emblem} alt="" /></span>
+                <span className={s.emblem}><img src={b.emblem} alt="" />{isLocked && <LockBadge />}</span>
                 <span className={s.label}>{t(b.labelKey)}</span>
               </span>
             </span>
