@@ -1,8 +1,9 @@
 // Regenerate the favicon/app-icon set from public/favicon.svg.
-// The source SVG is the header logo mark (spectrum arch + flame) on transparent.
+// The source SVG is the header logo's brass lantern (Lữ Khách) on transparent.
 // Tab icons (16/32) render it as-is; PWA / home-screen icons (180/192/512) place
-// it at ~70% onto a solid paper (#FBFAF5) square so the OS mask never clips the
-// arch and there is no transparent-corner artifact on iOS.
+// it at ~74% onto an opaque parchment square (--bq-paper #EFE3C3, the manifest
+// background) with a warm glow behind the lantern, so the OS mask never clips it
+// and iOS gets no transparent corners.
 // favicon.ico bundles the 16+32 PNGs (PNG-in-ICO). Run: node scripts/gen-favicons.mjs
 import sharp from 'sharp'
 import { readFileSync, writeFileSync } from 'fs'
@@ -11,17 +12,22 @@ import { dirname, join } from 'path'
 
 const PUB = join(dirname(fileURLToPath(import.meta.url)), '..', 'public')
 const svg = readFileSync(join(PUB, 'favicon.svg'))
-const BASE = { r: 0xfb, g: 0xfa, b: 0xf5, alpha: 1 } // #FBFAF5 — --bq-paper
+const BACKDROP = Buffer.from(`<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs><radialGradient id="g" cx="0.5" cy="0.54" r="0.6">
+    <stop offset="0" stop-color="#FFF4CF"/><stop offset="1" stop-color="#EFE3C3"/>
+  </radialGradient></defs>
+  <rect width="512" height="512" fill="url(#g)"/>
+</svg>`)
 const DENSITY = 384 // oversample the 512-unit viewBox (~2730px) so icons stay crisp
 
 const tab = (size) =>
   sharp(svg, { density: DENSITY }).resize(size, size).png().toBuffer()
 
 async function appIcon(size) {
-  const inner = Math.round(size * 0.7)
+  const inner = Math.round(size * 0.74)
   const mark = await sharp(svg, { density: DENSITY }).resize(inner, inner).png().toBuffer()
-  return sharp({ create: { width: size, height: size, channels: 4, background: BASE } })
-    .composite([{ input: mark, gravity: 'center' }]).png().toBuffer()
+  return sharp(BACKDROP, { density: DENSITY }).resize(size, size)
+    .composite([{ input: mark, gravity: 'center' }]).flatten().png().toBuffer()
 }
 
 function buildIco(images) {

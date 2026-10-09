@@ -6,7 +6,7 @@ import { resolve } from 'node:path'
  * Guards the social-share image referenced by index.html (og:image / twitter:image)
  * and manifest icons. Social crawlers (Facebook/Zalo/Twitter/LinkedIn) do NOT render
  * SVG, so a raster og-image.png MUST exist at the canonical 1200×630 dimensions.
- * Regenerate via `node scripts/generate-favicons.mjs`.
+ * Regenerate the icons via `node scripts/gen-favicons.mjs`.
  */
 // vitest runs with cwd = apps/web
 const publicPath = (name: string) => resolve(process.cwd(), 'public', name)

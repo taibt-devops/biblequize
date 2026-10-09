@@ -1,23 +1,39 @@
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <!-- Mirrors the header logo mark (AppLayout.tsx): spectrum arch frame,
-       paper interior, flame. 30x34 CSS px scaled x13, centered. -->
+  <!-- The header logo's brass lantern (images/lk/lantern-on.webp), redrawn as a
+       bold mark that still reads at 16px: wood-ink outlines (#2B1A08), brass
+       frame, lit window with two bars and a flame. Regenerate the PNG/ICO set
+       with `node apps/web/scripts/gen-favicons.mjs`. -->
   <defs>
-    <linearGradient id="spectrum" gradientUnits="userSpaceOnUse" x1="61" y1="0" x2="451" y2="0">
-      <stop offset="0" stop-color="#2D46C8"/>
-      <stop offset="0.34" stop-color="#0E8A6B"/>
-      <stop offset="0.64" stop-color="#F59E0B"/>
-      <stop offset="1" stop-color="#E0354B"/>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9A6A1E"/>
+      <stop offset="0.3" stop-color="#DDAE4E"/>
+      <stop offset="0.6" stop-color="#F0CF7A"/>
+      <stop offset="1" stop-color="#A8752A"/>
     </linearGradient>
-    <linearGradient id="flame" gradientUnits="userSpaceOnUse" x1="0" y1="152" x2="0" y2="321">
-      <stop offset="0" stop-color="#FFE08A"/>
-      <stop offset="0.52" stop-color="#F59E0B"/>
-      <stop offset="1" stop-color="#FF6F3D"/>
-    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.6" r="0.7">
+      <stop offset="0" stop-color="#FFFBE0"/>
+      <stop offset="0.4" stop-color="#FFE07A"/>
+      <stop offset="0.8" stop-color="#FFC93C"/>
+      <stop offset="1" stop-color="#F29A1E"/>
+    </radialGradient>
   </defs>
-  <path fill="url(#spectrum)" d="M61,269 A195,234 0 0 1 256,35 A195,234 0 0 1 451,269
-      L451,386 A91,91 0 0 1 360,477 L152,477 A91,91 0 0 1 61,386 Z"/>
-  <path fill="#FBFAF5" d="M100,266 A156,192 0 0 1 256,74 A156,192 0 0 1 412,266
-      L412,378 A60,60 0 0 1 352,438 L160,438 A60,60 0 0 1 100,378 Z"/>
-  <path fill="url(#flame)" d="M210.5,256.8 A45.5,104.8 0 0 1 301.5,256.8
-      A45.5,64.2 0 0 1 256,321 A45.5,64.2 0 0 1 210.5,256.8 Z"/>
+  <g stroke="#2B1A08" stroke-width="20" stroke-linejoin="round">
+    <!-- hanging ring -->
+    <circle cx="256" cy="58" r="28" fill="none" stroke-width="40"/>
+    <circle cx="256" cy="58" r="28" fill="none" stroke="#DDAE4E" stroke-width="12"/>
+    <!-- dome and top rim -->
+    <path fill="url(#brass)" d="M130 184 C130 126 190 92 256 92 C322 92 382 126 382 184 Z"/>
+    <rect x="86" y="170" width="340" height="46" rx="18" fill="url(#brass)"/>
+    <!-- frame, lit window, bars -->
+    <rect x="118" y="214" width="276" height="196" rx="10" fill="url(#brass)"/>
+    <rect x="146" y="234" width="220" height="156" rx="8" fill="url(#glow)" stroke-width="10"/>
+    <rect x="203" y="234" width="14" height="156" fill="#C08E36" stroke-width="5"/>
+    <rect x="295" y="234" width="14" height="156" fill="#C08E36" stroke-width="5"/>
+    <!-- bottom rim and foot -->
+    <rect x="86" y="404" width="340" height="46" rx="18" fill="url(#brass)"/>
+    <rect x="150" y="444" width="212" height="40" rx="14" fill="url(#brass)"/>
+  </g>
+  <!-- flame, drawn last so it sits over the bars -->
+  <path fill="#FFFDF0" stroke="#F29A1E" stroke-width="8"
+        d="M256 262 C280 294 296 318 288 344 C282 364 230 364 224 344 C216 318 232 294 256 262 Z"/>
 </svg>
