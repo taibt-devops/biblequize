@@ -2,6 +2,19 @@
 
 ---
 
+## 2026-10-09 — Viết lại bộ câu tiếng Việt theo bản RVV11 từng sách, tắt (không xóa) câu cũ
+
+- **Bối cảnh:** kho câu tiếng Việt có hai thế hệ: bộ cũ (viết bằng AI, tên riêng lẫn giữa bản 1925 và bản mới, nhãn độ khó không đáng tin) và bộ "Dễ cốt lõi" trích nguyên văn RVV11. User đề nghị xóa bộ cũ và làm lại.
+- **Quyết định (user đồng ý 09/10):**
+  - Không xóa một lần. Viết lại câu Trung bình/Khó theo từng sách bằng RVV11 (`content/books/`, script kiểm từng trích dẫn); xong sách nào thì **tắt** câu cũ của sách đó trên prod (`is_active=0`, có bảng sao lưu), giữ lịch sử trả lời.
+  - Thứ tự theo vòng quen thuộc của Đấu Hạng: vòng 1 (18 sách) → vòng 2 → vòng 3. Đợt 1: Sáng Thế Ký + 4 sách Phúc Âm.
+  - Câu Dễ của mỗi sách lấy từ bộ Dễ cốt lõi; câu Dễ cũ tắt cùng lúc.
+  - Học Thuộc vẫn dùng Bản Truyền Thống 1926 (quyết định 2026-09-15) cho tới khi có giấy phép toàn văn RVV11. Bộ tiếng Anh giữ nguyên.
+  - Hash các câu đã tắt lưu trong `content/books/retired_hashes.txt`: hàng cũ còn trong DB nên câu mới trùng hash sẽ bị seeder bỏ qua.
+- **Implementation:** task `docs/todo/active/2026-10-09-rvv11-books-wave1.md` (RVB-1..5).
+
+---
+
 ## 2026-10-09 — Trang chủ khách thành một màn "ngã ba cho khách"; landing dài sang /gioi-thieu
 
 - **Bối cảnh:** landing cũ là trang cuộn dài (hero, tính năng, bảng xếp hạng, nhóm hội thánh, câu gốc, CTA), khác hẳn trang chủ người chơi (một cảnh ngã ba). User muốn khách thấy một màn như trang chủ, vài câu giới thiệu, được dẫn tới đăng nhập, ít ảnh hưởng SEO.

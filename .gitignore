@@ -68,3 +68,6 @@ scripts/seed/prod_backup_labels.jsonl
 scripts/seed/en_label_pairs.json
 scripts/seed/prod_label_strip_en.sql
 scripts/seed/prod_backup_en_labels.jsonl
+
+# Python bytecode from content/ build scripts
+__pycache__/

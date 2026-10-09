@@ -1,0 +1,27 @@
+# 2026-10-09 — Viết lại câu Trung bình/Khó theo bản RVV11, đợt 1: Sáng Thế Ký + 4 sách Phúc Âm (RVB)
+
+> **Source**: user 09/10/2026: "Giờ bộ câu hỏi chúng ta có hai version kinh thánh luôn, tôi nghĩ nên xóa bộ câu hỏi 1925 đi và làm lại" → đề xuất không xóa mà viết lại từng sách bằng RVV11, xong sách nào thì tắt câu cũ của sách đó; bắt đầu từ Sáng Thế Ký + 4 sách Phúc Âm. User: "tôi đồng ý". · **Scope**: `content/books/` (nguồn từng sách + `build.py`), `seed/questions/rvv11_books_quiz.json`, xóa `genesis/matthew/mark/luke/john_quiz.json` (giữ bản `_en`), `Rvv11BooksSeedTest`. KHÔNG đổi seeder, Đấu Hạng, Luyện Tập, Học Thuộc (vẫn BTT1926), bộ tiếng Anh.
+
+### Tasks
+- RVB-1 Quy trình viết và kiểm
+  - Status: [x] DONE · `content/books/build.py`: dùng chung bộ đọc RVV11 với `content/easy-core/build.py`; kiểm từng trích dẫn trùng nguyên văn, mã sách đúng, 4 phương án khác nhau, câu hỏi ≤ 26 chữ, đáp án ≤ 10 chữ, không hỏi số chương/câu; xếp đáp án đúng đều A–D · `export` chặn trùng trong bộ, trùng `content_hash` với file seed khác hoặc với câu đã nghỉ hưu (`retired_hashes.txt`), và trùng ý với câu Dễ cốt lõi (cùng câu Kinh Thánh, cùng đáp án) · `retire <file>` ghi hash câu cũ trước khi xóa file · sửa `content_hash` của script khi `verseEnd` là `null` (khớp `IFNULL` trong cột SQL) · luật viết trong `content/books/README.md`
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-2 Viết 5 sách
+  - Status: [x] DONE · 466 câu: Sáng Thế Ký 107 (66 TB / 41 Khó), Ma-thi-ơ 109 (76/33), Mác 74 (45/29), Lu-ca 84 (52/32), Giăng 92 (59/33) · thay 848 câu cũ của 5 sách (cả Dễ, Trung bình, Khó; câu Dễ của 5 sách giờ là 483 câu Dễ cốt lõi) · tránh lặp ý bộ Dễ; ưu tiên chi tiết riêng của từng sách Phúc Âm (vd Mác: Bô-a-nẹt, Ta-li-tha-cum, gà gáy hai lượt; Lu-ca: Si-lô-ê, Cơ-lê-ô-pa; Giăng: Man-chu, 153 con cá) · phương án nhiễu cho phép gần đúng (nhân vật/nơi chốn khác trong sách) nhưng chỉ một đáp án đúng theo RVV11
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-3 Gỡ bộ cũ khỏi repo + test
+  - Status: [x] DONE · `git rm` 5 file seed tiếng Việt cũ (848 câu, hash lưu ở `content/books/retired_hashes.txt`) · `Rvv11BooksSeedTest` (2): mọi câu là vi, medium/hard, 4 phương án, có tag RVV11, không hỏi số câu; không trùng `content_hash` với file seed khác · chạy kèm `StoryCatalogTest`, `QuestionSeeder*Test`: 42 test xanh
+  - Lưu ý: môi trường bật `sync-stale` (mặc định của seeder, vd máy dev) sẽ **xóa cứng** 848 hàng cũ (kèm lịch sử trả lời) ở lần khởi động có seed đủ file. Prod tắt `sync-stale` và tắt seed → làm tay ở RVB-4.
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-4 Lên prod
+  - Status: [ ] TODO · deploy BE (file seed mới nằm trong jar) → seed một lần chỉ `rvv11_books_quiz.json` (`QUESTION_SEEDING_PATTERN`, giữ `APP_SEEDING_QUESTIONS_SYNC_STALE=false`) → sao lưu rồi **tắt** (`is_active=0`) các hàng có `content_hash` trong `retired_hashes.txt` → kiểm số câu đang bật theo sách/độ khó
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-5 Các đợt sau
+  - Status: [ ] TODO · đợt 2: 13 sách còn lại của vòng quen thuộc (Xuất Ai Cập Ký, Ru-tơ, 1 Sa-mu-ên, Ê-xơ-tê, Thi Thiên, Châm Ngôn, Đa-ni-ên, Giô-na, Công Vụ, Rô-ma, Ê-phê-sô, Phi-líp, Gia-cơ) → vòng 2 (22 sách) → vòng 3 (26 sách)
+  - Chờ user: (a) Học Thuộc giữ BTT1926 có ghi rõ, hay xin phép dùng toàn văn RVV11; (b) đổi tên sách trên giao diện (`bibleData.ts` đang dùng tên 1925: "Xuất Ê-díp-tô Ký", "Dân-số Ký"…) sang RVV11; (c) bộ tiếng Anh làm lại sau
+  - **Spec impact**: [ ] None
+  - **Spec strategy**: [ ] (c) [no-spec-impact]

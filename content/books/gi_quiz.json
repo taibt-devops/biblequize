@@ -1,0 +1,2126 @@
+[
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Giăng mở đầu bằng lời nào?",
+  "options": [
+   "Ban đầu Đức Chúa Trời sáng tạo trời đất",
+   "Khởi đầu Tin Lành của Đức Chúa Jêsus Christ",
+   "Ban đầu có Ngôi Lời",
+   "Gia phả của Đức Chúa Jêsus Christ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Giăng bắt đầu từ trước sự sáng tạo, giới thiệu Chúa là Ngôi Lời. “Ban đầu có Ngôi Lời, Ngôi Lời ở với Đức Chúa Trời, và Ngôi Lời là Đức Chúa Trời.” (Giăng 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng viết Ngôi Lời đã trở nên gì và sống giữa chúng ta?",
+  "options": [
+   "Ánh sáng",
+   "Chiên Con",
+   "Thần linh",
+   "Xác thể"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đức Chúa Trời trở nên người thật, sống giữa loài người. “Ngôi Lời đã trở nên xác thể, sống giữa chúng ta” (Giăng 1:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi được hỏi ông là ai, Giăng Báp-tít trả lời thế nào?",
+  "options": [
+   "Nhà tiên tri ấy",
+   "Tiếng người kêu lên trong hoang mạc",
+   "Ê-li trở lại",
+   "Đấng Christ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Giăng chỉ nhận mình là tiếng kêu dọn đường, như lời tiên tri Ê-sai. “Tôi là tiếng của người kêu lên trong hoang mạc” (Giăng 1:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thấy Đức Chúa Jêsus đến, Giăng Báp-tít giới thiệu Ngài là ai?",
+  "options": [
+   "Chiên Con của Đức Chúa Trời",
+   "Con vua Đa-vít",
+   "Người chăn nhân lành",
+   "Sư tử của Giu-đa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa là Chiên Con cất tội lỗi của thế gian đi. “Kìa Chiên Con của Đức Chúa Trời, là Đấng cất tội lỗi của thế gian đi!” (Giăng 1:29)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 38,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hai môn đồ hỏi Chúa đang trọ ở đâu, Ngài đáp thế nào?",
+  "options": [
+   "Hãy đến xem",
+   "Ở nhà Si-môn",
+   "Hãy theo Ta",
+   "Con Người không có chỗ gối đầu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lời mời đơn giản ấy mở đầu cho cả đời môn đồ. “Hãy đến xem.” (Giăng 1:38-39)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 39
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 39,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hai môn đồ đầu tiên đến chỗ Chúa trọ vào khoảng mấy giờ?",
+  "options": [
+   "Nửa đêm",
+   "Sáu giờ sáng",
+   "Bốn giờ chiều",
+   "Giữa trưa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người kể còn nhớ cả giờ phút gặp Chúa lần đầu. “Lúc ấy vào khoảng bốn giờ chiều.” (Giăng 1:39)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 40,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi gặp Chúa, Anh-rê trước tiên đi tìm ai?",
+  "options": [
+   "Phi-líp",
+   "Na-tha-na-ên",
+   "Cha mình",
+   "Anh mình là Si-môn Phi-e-rơ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Anh-rê báo tin: chúng tôi đã gặp Đấng Mê-si-a. “Trước tiên, ông tìm anh mình là Si-môn Phi-e-rơ” (Giăng 1:40-41)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 41
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 42,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chúa nói Si-môn sẽ được gọi là Sê-pha, nghĩa là gì?",
+  "options": [
+   "Bô-a-nẹt",
+   "Phi-e-rơ",
+   "Đi-đim",
+   "Ra-bu-ni"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Sê-pha và Phi-e-rơ đều có nghĩa là đá. “Ngươi là Si-môn, con của Giăng, ngươi sẽ được gọi là Sê-pha” (Giăng 1:42)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 44,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phi-líp, Anh-rê và Phi-e-rơ cùng quê ở thành nào?",
+  "options": [
+   "Na-xa-rét",
+   "Ca-bê-na-um",
+   "Ca-na",
+   "Bết-sai-đa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ba môn đồ đầu tiên là người cùng một thành bên biển Ga-li-lê. “Phi-líp là người Bết-sai-đa, cùng thành phố với Anh-rê và Phi-e-rơ.” (Giăng 1:44)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 46,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nghe Đấng Mê-si-a đến từ Na-xa-rét, Na-tha-na-ên nói gì?",
+  "options": [
+   "Làm thế nào Thầy biết tôi?",
+   "Có điều gì tốt ra từ Na-xa-rét được sao?",
+   "Chúng tôi đã gặp Đấng Mê-si-a",
+   "Thầy đang trọ ở đâu?"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phi-líp không tranh luận mà chỉ mời: Hãy đến xem! “Có điều gì tốt ra từ Na-xa-rét được sao?” (Giăng 1:46)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 48,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa nói Ngài đã thấy Na-tha-na-ên ở đâu trước khi Phi-líp gọi?",
+  "options": [
+   "Trên thuyền",
+   "Trong nhà hội",
+   "Dưới cây vả",
+   "Bên giếng nước"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Điều ấy khiến Na-tha-na-ên tin Chúa là Con Đức Chúa Trời. “Ta đã thấy ngươi ở dưới cây vả.” (Giăng 1:48)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 2,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ở tiệc cưới Ca-na, có bao nhiêu chum đá dùng cho việc tẩy sạch?",
+  "options": [
+   "Sáu cái",
+   "Bảy cái",
+   "Ba cái",
+   "Mười hai cái"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Mỗi chum chứa được hai ba thùng nước, tất cả hóa thành rượu ngon. “Tại đó có sáu cái chum bằng đá dùng vào việc tẩy sạch theo lễ nghi Do Thái” (Giăng 2:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi đuổi người buôn bán khỏi đền thờ, Chúa Jêsus đã bện gì?",
+  "options": [
+   "Một cái roi bằng dây",
+   "Một cái lưới",
+   "Một sợi thừng dài",
+   "Một vòng gai"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa đuổi cả chiên, bò ra ngoài và lật bàn của người đổi tiền. “Ngài bện một cái roi bằng dây, đuổi tất cả ra khỏi đền thờ” (Giăng 2:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 2,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nói nếu phá đền thờ nầy, trong bao lâu Ngài sẽ dựng lại?",
+  "options": [
+   "Bảy ngày",
+   "Ba ngày",
+   "Bốn mươi ngày",
+   "Bốn mươi sáu năm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa nói về đền thờ là chính thân thể Ngài sẽ sống lại. “Hãy phá đền thờ nầy đi, trong ba ngày Ta sẽ dựng lại.” (Giăng 2:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 2,
+  "verseStart": 20,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người Do Thái nói đền thờ ấy đã được xây dựng trong bao lâu?",
+  "options": [
+   "Một trăm năm",
+   "Bảy năm",
+   "Bốn mươi sáu năm",
+   "Bốn mươi năm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ không hiểu Chúa nói về thân thể Ngài. “Người ta xây dựng đền thờ nầy mất bốn mươi sáu năm” (Giăng 2:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 3,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giăng Báp-tít làm báp-têm tại Ạt-nôn, gần đâu, vì nơi đó có nhiều nước?",
+  "options": [
+   "Sa-ma-ri",
+   "Si-chem",
+   "Sa-lem",
+   "Sa-lim"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Giăng chọn nơi có nhiều nước để làm báp-têm. “Giăng cũng làm báp-têm tại Ạt-nôn, gần Sa-lim, vì ở nơi nầy có nhiều nước” (Giăng 3:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 3,
+  "verseStart": 30,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng Báp-tít nói gì về mình so với Đấng Christ?",
+  "options": [
+   "Ngài phải được tôn cao, tôi phải hạ xuống",
+   "Tôi lớn hơn vì đến trước",
+   "Ngài là môn đồ của tôi",
+   "Tôi và Ngài cùng làm báp-têm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Giăng vui lòng lùi lại để mọi người hướng về Chúa. “Ngài phải được tôn cao, còn tôi phải hạ xuống.” (Giăng 3:30)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 35,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa bảo các môn đồ ngước mắt lên xem những cánh đồng thế nào?",
+  "options": [
+   "Còn bốn tháng nữa mới gặt",
+   "Đầy cỏ dại",
+   "Khô hạn vì thiếu mưa",
+   "Đã vàng, sẵn sàng cho mùa gặt"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa nói về những người Sa-ma-ri đang đến với Ngài. “Hãy ngước mắt lên và xem những cánh đồng đã vàng sẵn sàng cho mùa gặt.” (Giăng 4:35)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 46,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Viên quan có con trai bệnh ở Ca-bê-na-um đến xin Chúa khi Ngài đang ở thành nào?",
+  "options": [
+   "Na-xa-rét",
+   "Giê-ru-sa-lem",
+   "Ca-na",
+   "Bết-sai-đa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa chữa con viên quan từ xa, tại nơi Ngài từng hóa nước thành rượu. “Vậy, Ngài trở lại Ca-na trong miền Ga-li-lê, nơi Ngài đã hóa nước thành rượu.” (Giăng 4:46)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 52,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Con trai viên quan hết sốt vào khoảng mấy giờ, đúng lúc Chúa phán?",
+  "options": [
+   "Nửa đêm",
+   "Một giờ chiều",
+   "Chín giờ sáng",
+   "Bốn giờ chiều"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Viên quan biết đó đúng là giờ Chúa phán con ông sống, và cả nhà tin Chúa. “Hôm qua, vào khoảng một giờ chiều, cậu hết sốt.” (Giăng 4:52)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hồ nước gần cửa Chiên ở Giê-ru-sa-lem, có năm vòm cửa, tên là gì?",
+  "options": [
+   "Bê-tết-đa",
+   "Ghi-hôn",
+   "Bết-sai-đa",
+   "Si-lô-ê"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nhiều người bệnh nằm chờ bên hồ Bê-tết-đa. “có một hồ nước, tiếng Hê-bơ-rơ gọi là Bê-tết-đa. Hồ có năm vòm cửa.” (Giăng 5:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 5,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người bệnh nằm bên hồ Bê-tết-đa đã mắc bệnh bao lâu?",
+  "options": [
+   "Mười hai năm",
+   "Bốn mươi năm",
+   "Ba mươi tám năm",
+   "Mười tám năm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa bảo anh: Hãy đứng dậy, vác giường mà đi. “Có một người mắc bệnh đã ba mươi tám năm.” (Giăng 5:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người bệnh ở hồ Bê-tết-đa than vì sao mình chưa được lành?",
+  "options": [
+   "Không có tiền trả thầy thuốc",
+   "Không có ai giúp ném xuống hồ",
+   "Bị cấm vào đền thờ",
+   "Nước hồ không còn động"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Anh chờ người giúp, nhưng chính Chúa chữa lành anh. “không có ai giúp ném tôi xuống hồ lúc nước động” (Giăng 5:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phi-líp nói bao nhiêu đơ-ni-ê bánh cũng không đủ cho đoàn dân mỗi người một ít?",
+  "options": [
+   "Ba mươi đơ-ni-ê",
+   "Ba trăm đơ-ni-ê",
+   "Một nghìn đơ-ni-ê",
+   "Hai trăm đơ-ni-ê"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phi-líp tính bằng tiền, còn Chúa đã biết điều Ngài sắp làm. “Hai trăm đơ-ni-ê bánh cũng không đủ cho mỗi người một ít.” (Giăng 6:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Môn đồ nào cho Chúa biết có một cậu bé mang theo bánh và cá?",
+  "options": [
+   "Giu-đa",
+   "Anh-rê",
+   "Phi-líp",
+   "Phi-e-rơ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Anh-rê lại là người dẫn người khác đến với Chúa. “Có một cậu bé có năm chiếc bánh lúa mạch và hai con cá” (Giăng 6:8-9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 9
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Năm chiếc bánh của cậu bé được làm bằng gì?",
+  "options": [
+   "Hạt kê",
+   "Bột mì trắng",
+   "Lúa mì",
+   "Lúa mạch"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bánh lúa mạch là bánh rẻ tiền của người nghèo. “Có một cậu bé có năm chiếc bánh lúa mạch và hai con cá” (Giăng 6:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau phép lạ hóa bánh, vì sao Chúa lánh lên núi một mình?",
+  "options": [
+   "Các môn đồ cãi nhau",
+   "Ngài muốn nghỉ ngơi",
+   "Dân muốn bắt ép Ngài làm vua",
+   "Người Pha-ri-si tìm bắt Ngài"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa không đến để làm vua theo ý muốn của đám đông. “họ sắp đến bắt ép Ngài làm vua nên lánh lên núi một mình.” (Giăng 6:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 35,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus phán “Ta là …” gì, để ai đến với Ngài chẳng hề đói?",
+  "options": [
+   "Bánh của sự sống",
+   "Ánh sáng của thế gian",
+   "Nước hằng sống",
+   "Cây nho thật"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sau phép lạ hóa bánh, Chúa nói chính Ngài là bánh nuôi linh hồn. “Ta là bánh của sự sống. Ai đến với Ta chẳng hề đói” (Giăng 6:35)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 68,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi nhiều người bỏ đi, Phi-e-rơ thưa: chúng con sẽ theo ai, vì Chúa có gì?",
+  "options": [
+   "Quyền làm phép lạ",
+   "Lời của sự sống đời đời",
+   "Bánh từ trời",
+   "Chìa khóa thiên đàng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Mười hai sứ đồ ở lại dù lời dạy khó nghe. “Thưa Chúa, chúng con sẽ theo ai? Chúa có lời của sự sống đời đời.” (Giăng 6:68)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 7,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus lên Giê-ru-sa-lem và kêu gọi “Ai khát hãy đến cùng Ta” trong kỳ lễ nào?",
+  "options": [
+   "Lễ Lều Tạm",
+   "Lễ Cung Hiến Đền Thờ",
+   "Lễ Vượt Qua",
+   "Lễ Ngũ Tuần"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Trong ngày cuối của lễ Lều Tạm, Chúa đứng lên kêu gọi người khát. “Lễ Lều Tạm của dân Do Thái đã đến gần.” (Giăng 7:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 7,
+  "verseStart": 38,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chúa nói người nào tin Ngài thì điều gì sẽ tuôn tràn từ lòng mình?",
+  "options": [
+   "Lời tiên tri",
+   "Ánh sáng chân lý",
+   "Dầu xức thánh",
+   "Những dòng sông sự sống"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Giăng giải thích Chúa nói về Thánh Linh mà người tin sẽ nhận. “Người nào tin Ta thì những dòng sông sự sống sẽ tuôn tràn từ lòng mình” (Giăng 7:38)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 7,
+  "verseStart": 50,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi người Pha-ri-si muốn kết tội Chúa, ai nhắc họ phải nghe lời khai trước?",
+  "options": [
+   "Giô-sép người A-ri-ma-thê",
+   "Cai-phe",
+   "Ni-cô-đem",
+   "Ga-ma-li-ên"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người từng đến gặp Chúa ban đêm nay lên tiếng bênh vực Ngài. “Luật của chúng ta có kết tội một người mà trước đó chưa nghe lời khai và chưa biết người ấy làm gì không?” (Giăng 7:50-51)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 51
+ },
+ {
+  "book": "John",
+  "chapter": 8,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi người ta tố cáo một phụ nữ để thử Ngài, Chúa Jêsus cúi xuống làm gì?",
+  "options": [
+   "Dùng ngón tay viết trên đất",
+   "Cầu nguyện thầm",
+   "Nhặt một hòn đá",
+   "Đọc sách luật pháp"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa không vội trả lời theo ý những kẻ muốn bẫy Ngài. “Đức Chúa Jêsus cúi xuống, dùng ngón tay viết trên đất.” (Giăng 8:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 8,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus bảo những người muốn ném đá người phụ nữ điều gì?",
+  "options": [
+   "Hãy đưa bà đến thầy tế lễ",
+   "Hãy tha cho bà bảy lần",
+   "Ai không có tội hãy ném đá trước",
+   "Luật pháp cấm ném đá"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Từng người một bỏ đi, từ người lớn tuổi nhất. “Ai trong các ngươi là người không có tội, hãy lấy đá ném vào chị ấy trước đi.” (Giăng 8:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 8,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nói người theo Ngài sẽ không đi trong bóng tối, vì Ngài là gì?",
+  "options": [
+   "Mặt trời công chính",
+   "Ngôi sao mai",
+   "Đèn trên chân đèn",
+   "Ánh sáng của thế gian"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ai theo Chúa sẽ có ánh sáng của sự sống. “Ta là ánh sáng của thế gian, người nào theo Ta sẽ không đi trong bóng tối” (Giăng 8:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 8,
+  "verseStart": 32,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nói điều gì sẽ giải phóng những người theo Ngài?",
+  "options": [
+   "Dòng dõi Áp-ra-ham",
+   "Chân lý",
+   "Luật pháp",
+   "Của lễ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người Do Thái cãi rằng họ là dòng dõi Áp-ra-ham, chưa hề làm nô lệ ai. “Các ngươi sẽ biết chân lý, và chân lý sẽ giải phóng các ngươi.” (Giăng 8:32)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 8,
+  "verseStart": 58,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus phán gì về chính Ngài và Áp-ra-ham?",
+  "options": [
+   "Ta là dòng dõi Áp-ra-ham",
+   "Trước khi Áp-ra-ham hiện hữu, Ta hằng hữu",
+   "Ta lớn hơn Môi-se",
+   "Áp-ra-ham là cha Ta"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nghe vậy, người ta lượm đá định ném Ngài. “trước khi Áp-ra-ham hiện hữu, Ta hằng hữu.” (Giăng 8:58)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 9,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Môn đồ hỏi ai phạm tội khiến người kia mù từ lúc sinh ra; Chúa đáp thế nào?",
+  "options": [
+   "Để công việc Đức Chúa Trời được tỏ ra",
+   "Chính anh đã phạm tội",
+   "Cha mẹ anh đã phạm tội",
+   "Tổ tiên anh đã phạm tội"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa không đổ lỗi, mà chỉ ra mục đích của Đức Chúa Trời. “Không phải vì anh nầy, hay cha mẹ anh đã phạm tội; nhưng để công việc của Đức Chúa Trời được tỏ ra trong anh ta.” (Giăng 9:2-3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 3
+ },
+ {
+  "book": "John",
+  "chapter": 9,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trước khi bảo người mù đi rửa, Chúa bôi gì vào mắt anh?",
+  "options": [
+   "Nước giếng",
+   "Mật ong",
+   "Dầu ô-liu",
+   "Bùn hòa với nước bọt"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa nhổ xuống đất, hòa thành bùn rồi bôi vào mắt anh. “lấy nước bọt hòa thành bùn và bôi vào mắt người mù” (Giăng 9:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 9,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa bảo người mù từ lúc sinh ra đi rửa ở hồ nào?",
+  "options": [
+   "Sông Giô-đanh",
+   "Hồ Bê-tết-đa",
+   "Hồ Si-lô-ê",
+   "Giếng Gia-cốp"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Anh đi rửa, rồi trở lại thì thấy được. “Hãy đi và rửa nơi hồ Si-lô-ê” (Giăng 9:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 9,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Tên hồ Si-lô-ê có nghĩa là gì?",
+  "options": [
+   "Nước sống",
+   "Nơi rửa sạch",
+   "Được sai đi",
+   "Nhà thương xót"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Giăng giải nghĩa tên hồ, gợi đến Đấng được Cha sai đến. “từ nầy có nghĩa là “được sai đi”” (Giăng 9:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 9,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bị chất vấn về Chúa Jêsus, người được sáng mắt nói điều mình chắc chắn biết là gì?",
+  "options": [
+   "Ngài là con của Giô-sép",
+   "Ngài không giữ ngày sa-bát",
+   "Ngài là kẻ có tội",
+   "Trước tôi mù, bây giờ thấy được"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lời làm chứng đơn giản mà không ai bác bỏ được. “trước tôi đã mù mà bây giờ thấy được.” (Giăng 9:25)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 10,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong lời dạy về chuồng chiên, Chúa nói Ngài là gì để ai vào sẽ được cứu?",
+  "options": [
+   "Cái cửa",
+   "Hàng rào",
+   "Người canh cửa",
+   "Đồng cỏ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ai vào qua Chúa sẽ được cứu, vào ra và gặp đồng cỏ. “Ta là cái cửa, nếu ai do Ta mà vào thì sẽ được cứu rỗi.” (Giăng 10:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 10,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa nói người chăn nhân lành làm gì vì bầy chiên?",
+  "options": [
+   "Đếm chiên mỗi tối",
+   "Hi sinh mạng sống mình",
+   "Bỏ chạy khi sói đến",
+   "Bán chiên lấy tiền"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người chăn thuê thì bỏ chạy khi sói đến; người chăn nhân lành thì hi sinh vì chiên. “Ta là người chăn nhân lành, người chăn nhân lành vì bầy chiên hi sinh mạng sống mình.” (Giăng 10:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 10,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus đi dưới hành lang Sa-lô-môn vào mùa đông, nhân kỳ lễ nào?",
+  "options": [
+   "Lễ Cung Hiến Đền Thờ",
+   "Lễ Ngũ Tuần",
+   "Lễ Vượt Qua",
+   "Lễ Lều Tạm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lễ nầy kỷ niệm việc dâng hiến lại đền thờ, diễn ra vào mùa đông. “Khi ấy tại thành Giê-ru-sa-lem có lễ kỷ niệm Cung Hiến Đền Thờ. Bấy giờ là mùa đông,” (Giăng 10:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa quyết định trở lại Giu-đê, môn đồ nào nói “Chúng ta hãy đi đến đó cùng chết với Ngài”?",
+  "options": [
+   "Phi-e-rơ",
+   "Giăng",
+   "Thô-ma",
+   "Anh-rê"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Thô-ma, còn gọi là Đi-đim, can đảm sẵn sàng chết với Thầy. “Do đó, Thô-ma gọi là Đi-đim nói với các môn đồ khác rằng: “Chúng ta hãy đi đến đó cùng chết với Ngài.”” (Giăng 11:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Làng Bê-tha-ni, quê của La-xa-rơ, cách thành Giê-ru-sa-lem khoảng bao xa?",
+  "options": [
+   "Một ngày đường",
+   "Mười ki-lô-mét",
+   "Ba mươi ki-lô-mét",
+   "Ba ki-lô-mét"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vì ở gần, nhiều người Do Thái từ Giê-ru-sa-lem đến chia buồn. “Làng Bê-tha-ni cách thành Giê-ru-sa-lem khoảng ba ki-lô-mét” (Giăng 11:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 39,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa bảo dời tảng đá khỏi mộ La-xa-rơ, Ma-thê lo ngại điều gì?",
+  "options": [
+   "Người ta sẽ chê cười",
+   "Đã có mùi vì đã bốn ngày",
+   "Tảng đá quá nặng",
+   "Lính canh sẽ bắt"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa nhắc bà: nếu tin, bà sẽ thấy vinh quang Đức Chúa Trời. “Thưa Chúa, đã có mùi, vì anh ấy nằm ở đây đã bốn ngày rồi.” (Giăng 11:39)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 49,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thầy tế lễ thượng phẩm nào nói thà để một người chết thay cho dân?",
+  "options": [
+   "Ga-ma-li-ên",
+   "Ni-cô-đem",
+   "An-ne",
+   "Cai-phe"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cai-phe vô tình nói tiên tri về sự chết thay của Chúa. “thà để một người chết thay cho dân, còn hơn cả dân tộc phải bị hủy diệt.” (Giăng 11:49-50)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 50
+ },
+ {
+  "book": "John",
+  "chapter": 12,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ở Bê-tha-ni, Ma-ri xức dầu cam tùng lên đâu của Chúa rồi lau bằng tóc mình?",
+  "options": [
+   "Tay Ngài",
+   "Áo Ngài",
+   "Chân Ngài",
+   "Đầu Ngài"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Mùi dầu thơm tỏa khắp nhà. “Ma-ri lấy một cân dầu cam tùng nguyên chất rất quý giá xức chân Đức Chúa Jêsus, rồi dùng tóc mình lau chân Ngài.” (Giăng 12:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 12,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng cho biết Giu-đa phản đối việc xức dầu thật ra vì lý do gì?",
+  "options": [
+   "Hắn là kẻ trộm, giữ túi tiền",
+   "Hắn thương người nghèo",
+   "Hắn tiếc dầu của nhà mình",
+   "Hắn ghen với Ma-ri"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Giu-đa thường lấy trộm tiền trong túi chung. “vì vốn là một tên trộm cắp, lại giữ túi tiền” (Giăng 12:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 12,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Giăng, dân chúng cầm gì ra đón Chúa vào Giê-ru-sa-lem?",
+  "options": [
+   "Bông huệ",
+   "Cành cọ",
+   "Cành nho",
+   "Cành ô-liu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ tung hô Ngài là Vua của Y-sơ-ra-ên. “thì họ lấy cành cọ, đi ra đón Ngài” (Giăng 12:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 12,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Những người Hi Lạp muốn gặp Chúa Jêsus đã đến nhờ môn đồ nào?",
+  "options": [
+   "Giăng",
+   "Anh-rê",
+   "Phi-e-rơ",
+   "Phi-líp"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phi-líp, người Bết-sai-đa, cùng Anh-rê đưa họ đến với Chúa. “Thưa ông, chúng tôi muốn gặp Đức Chúa Jêsus.” (Giăng 12:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 12,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa nói hạt lúa mì phải thế nào mới kết quả nhiều?",
+  "options": [
+   "Rơi xuống đất và chết đi",
+   "Được gieo nơi đất tốt",
+   "Được giữ trong kho",
+   "Được tưới nước mỗi ngày"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa nói về sự chết của Ngài sẽ đem lại sự sống cho nhiều người. “Nếu hạt lúa mì không rơi xuống đất và chết đi, nó vẫn chỉ là một hạt thôi; nhưng nếu chết đi, nó được kết quả nhiều.” (Giăng 12:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong bữa ăn cuối cùng, ai đang tựa vào lòng Đức Chúa Jêsus?",
+  "options": [
+   "Thô-ma",
+   "Môn đồ được Chúa yêu thương",
+   "Phi-e-rơ",
+   "Giu-đa Ích-ca-ri-ốt"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phi-e-rơ ra hiệu cho môn đồ nầy hỏi Chúa ai là kẻ phản Ngài. “là người được Đức Chúa Jêsus yêu thương, đang tựa vào lòng Đức Chúa Jêsus.” (Giăng 13:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 26,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong bữa ăn cuối cùng, Chúa cho biết kẻ phản Ngài bằng dấu hiệu nào?",
+  "options": [
+   "Một nụ hôn",
+   "Rửa chân người ấy trước",
+   "Trao miếng bánh đã nhúng",
+   "Chỉ tay vào người ấy"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa trao miếng bánh cho Giu-đa Ích-ca-ri-ốt; nụ hôn là dấu hiệu Giu-đa dùng sau đó. “Đó là người mà Ta sẽ trao miếng bánh Ta sắp nhúng đây.” (Giăng 13:26)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 34,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Điều răn mới Chúa Jêsus ban cho các môn đồ là gì?",
+  "options": [
+   "Tha thứ bảy mươi lần bảy",
+   "Giữ ngày sa-bát",
+   "Rửa chân cho nhau",
+   "Yêu thương nhau như Ngài đã yêu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nhờ tình yêu ấy mà người ta nhận biết họ là môn đồ của Chúa. “Ta ban cho các con một điều răn mới, ấy là các con phải yêu thương nhau.” (Giăng 13:34)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 14,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nói trong nhà Cha Ngài có gì?",
+  "options": [
+   "Nhiều kho báu",
+   "Nhiều chỗ ở",
+   "Mười hai cửa",
+   "Một bàn tiệc lớn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa đi để chuẩn bị chỗ cho các môn đồ. “Trong nhà Cha Ta có nhiều chỗ ở” (Giăng 14:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 14,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Môn đồ nào hỏi “Chúng con không biết Chúa đi đâu, làm sao biết đường được?”",
+  "options": [
+   "Thô-ma",
+   "Phi-líp",
+   "Phi-e-rơ",
+   "Anh-rê"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Câu hỏi của Thô-ma dẫn đến lời phán: Ta là đường đi, chân lý và sự sống. “Thô-ma nói: “Thưa Chúa, chúng con không biết Chúa đi đâu, làm sao biết đường được?”” (Giăng 14:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 14,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus phán: Ta là đường đi, chân lý và gì?",
+  "options": [
+   "Bánh từ trời",
+   "Sự sáng",
+   "Sự sống",
+   "Sự bình an"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chẳng bởi Chúa thì không ai được đến với Cha. “Ta là đường đi, chân lý và sự sống.” (Giăng 14:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 14,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Môn đồ nào xin “Thưa Chúa, xin chỉ Cha cho chúng con thì đủ rồi”?",
+  "options": [
+   "Na-tha-na-ên",
+   "Thô-ma",
+   "Phi-líp",
+   "Anh-rê"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa đáp: ai đã thấy Ta tức là đã thấy Cha. “Phi-líp thưa rằng: “Thưa Chúa, xin chỉ Cha cho chúng con thì đủ rồi.”” (Giăng 14:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 14,
+  "verseStart": 26,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chúa gọi Đức Thánh Linh, Đấng Cha sẽ nhân danh Ngài sai đến, là gì?",
+  "options": [
+   "Đấng Xức Dầu",
+   "Đấng An Ủi",
+   "Đấng Phán Xét",
+   "Đấng Tiên Tri"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đấng An Ủi sẽ dạy dỗ và nhắc các môn đồ nhớ lời Chúa. “Nhưng Đấng An Ủi, tức là Đức Thánh Linh mà Cha sẽ nhân danh Ta sai đến” (Giăng 14:26)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 15,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa nói Ngài là cây nho thật, còn Cha Ngài là ai?",
+  "options": [
+   "Người trồng nho",
+   "Rễ cây",
+   "Cành nho",
+   "Chủ vườn ô-liu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cha chăm sóc và tỉa sửa để cành sinh nhiều quả. “Ta là cây nho thật, Cha Ta là người trồng nho.” (Giăng 15:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 15,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong hình ảnh cây nho, Chúa nói các môn đồ là gì?",
+  "options": [
+   "Rễ",
+   "Trái",
+   "Lá",
+   "Cành"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngoài Chúa, các môn đồ không làm gì được. “Ta là cây nho, các con là cành.” (Giăng 15:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 15,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa nói không có tình yêu nào lớn hơn việc hi sinh mạng sống vì ai?",
+  "options": [
+   "Vì cha mẹ",
+   "Vì đất nước",
+   "Vì luật pháp",
+   "Vì bạn hữu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa gọi các môn đồ là bạn hữu của Ngài. “Không có tình yêu thương nào lớn hơn tình yêu thương vì bạn hữu mà hi sinh mạng sống mình.” (Giăng 15:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 18,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sau khi cầu nguyện, Chúa cùng môn đồ băng qua suối nào để vào một khu vườn?",
+  "options": [
+   "Suối Gia-bốc",
+   "Hồ Si-lô-ê",
+   "Suối Kết-rôn",
+   "Sông Giô-đanh"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Khu vườn bên kia suối Kết-rôn là nơi Chúa bị bắt. “sang bên kia suối Kết-rôn; tại đó có một khu vườn” (Giăng 18:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 18,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Giăng, môn đồ nào rút gươm chém đứt tai đầy tớ của thầy tế lễ thượng phẩm?",
+  "options": [
+   "Gia-cơ",
+   "Si-môn Phi-e-rơ",
+   "Thô-ma",
+   "Giăng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chỉ Giăng nêu tên cả người chém lẫn người bị chém. “Si-môn Phi-e-rơ có một thanh gươm, liền rút ra, đánh đầy tớ của thầy tế lễ thượng phẩm” (Giăng 18:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 18,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đầy tớ của thầy tế lễ thượng phẩm bị Phi-e-rơ chém đứt tai tên là gì?",
+  "options": [
+   "Man-chu",
+   "Ma-na-hem",
+   "Ma-thia",
+   "Mác"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Giăng ghi tên người đầy tớ bị chém đứt tai phải. “chém đứt tai phải của người nầy. Đầy tớ đó tên là Man-chu.” (Giăng 18:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 18,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Bị bắt rồi, Chúa Jêsus bị giải đến ai trước tiên?",
+  "options": [
+   "An-ne, nhạc gia của Cai-phe",
+   "Tổng đốc Phi-lát",
+   "Vua Hê-rốt",
+   "Ga-ma-li-ên"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "An-ne là cựu thầy tế lễ thượng phẩm, cha vợ của Cai-phe. “Trước hết, họ giải Ngài đến An-ne, vì ông là nhạc gia của Cai-phe” (Giăng 18:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 18,
+  "verseStart": 38,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa nói Ngài đến để làm chứng cho chân lý, Phi-lát hỏi lại gì?",
+  "options": [
+   "Ngươi từ đâu đến?",
+   "Chân lý là gì?",
+   "Ngươi đã làm gì?",
+   "Ngươi là vua sao?"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phi-lát hỏi xong liền đi ra, không đợi câu trả lời. “Chân lý là gì?” (Giăng 18:38)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 19,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phi-lát ngồi xử án tại Chỗ Lát Đá, tiếng Hê-bơ-rơ gọi là gì?",
+  "options": [
+   "Gô-gô-tha",
+   "Bê-tết-đa",
+   "Ga-ba-tha",
+   "Ghết-sê-ma-nê"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tại Ga-ba-tha, Phi-lát giao Chúa cho người ta đóng đinh. “tại nơi gọi là Chỗ Lát Đá, tiếng Hê-bơ-rơ gọi là Ga-ba-tha.” (Giăng 19:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 19,
+  "verseStart": 20,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Tấm bảng trên thập tự được ghi bằng những thứ tiếng nào?",
+  "options": [
+   "La-tinh, Hi Lạp và Ba Tư",
+   "Chỉ tiếng Hê-bơ-rơ",
+   "Hê-bơ-rơ, A-ram và Ai Cập",
+   "Hê-bơ-rơ, La-tinh và Hi Lạp"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ba thứ tiếng để mọi người qua lại đều đọc được. “tấm bảng được ghi bằng tiếng Hê-bơ-rơ, La-tinh và Hi Lạp” (Giăng 19:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 19,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì áo dài của Chúa dệt liền không có đường may, những người lính đã làm gì?",
+  "options": [
+   "Bắt thăm xem ai được",
+   "Xé làm bốn phần",
+   "Trả lại cho mẹ Ngài",
+   "Đốt đi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Việc ấy làm ứng nghiệm lời Kinh Thánh: họ bắt thăm lấy áo dài Ta. “Đừng xé nó ra, nhưng hãy bắt thăm xem ai được.” (Giăng 19:23-24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 24
+ },
+ {
+  "book": "John",
+  "chapter": 19,
+  "verseStart": 26,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trên thập tự, Chúa Jêsus giao mẹ mình cho ai chăm sóc?",
+  "options": [
+   "Ma-ri Ma-đơ-len",
+   "Môn đồ Ngài yêu thương",
+   "Gia-cơ, em Ngài",
+   "Phi-e-rơ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngay trong giờ chịu khổ, Chúa vẫn lo cho mẹ mình. “Từ giờ đó, môn đồ nầy đem bà về nhà mình.” (Giăng 19:26-27)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 27
+ },
+ {
+  "book": "John",
+  "chapter": 19,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Để lời Kinh Thánh được ứng nghiệm, Chúa nói gì trên thập tự trước khi nhận giấm?",
+  "options": [
+   "Ta mệt",
+   "Ta đau",
+   "Ta khát",
+   "Ta đói"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người ta đưa giấm thấm miếng bọt biển lên miệng Ngài. “Sau đó, Đức Chúa Jêsus biết mọi việc đã hoàn tất, và để cho lời Kinh Thánh được ứng nghiệm thì nói: “Ta khát.”” (Giăng 19:28)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 19,
+  "verseStart": 30,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Giăng, nhận giấm xong, Chúa nói gì rồi trút linh hồn?",
+  "options": [
+   "Sao Ngài lìa bỏ con?",
+   "Lạy Cha, xin tha cho họ",
+   "Con xin giao linh hồn trong tay Cha",
+   "Mọi việc đã hoàn tất!"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Công việc cứu chuộc Cha giao đã được làm trọn. “Đức Chúa Jêsus nói: “Mọi việc đã hoàn tất!” Rồi Ngài gục đầu xuống, trút linh hồn.” (Giăng 19:30)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 19,
+  "verseStart": 34,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi tên lính lấy giáo đâm vào sườn Chúa, điều gì chảy ra?",
+  "options": [
+   "Không có gì",
+   "Chỉ có nước",
+   "Máu và nước",
+   "Chỉ có máu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Giăng nhấn mạnh Chúa đã chết thật, có người tận mắt làm chứng. “có một tên lính lấy giáo đâm vào sườn Ngài, lập tức máu và nước chảy ra.” (Giăng 19:34)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 19,
+  "verseStart": 39,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ni-cô-đem đem theo bao nhiêu cân mộc dược trộn lô hội để an táng Chúa?",
+  "options": [
+   "Một trăm cân",
+   "Một cân",
+   "Mười cân",
+   "Ba mươi cân"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Số hương liệu lớn như dành cho bậc vua chúa. “đem theo một trăm cân mộc dược trộn với lô hội.” (Giăng 19:39)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Phi-e-rơ và môn đồ kia cùng chạy ra mộ, ai đến trước?",
+  "options": [
+   "Cả hai cùng lúc",
+   "Môn đồ kia",
+   "Phi-e-rơ",
+   "Ma-ri Ma-đơ-len"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Môn đồ kia đến trước nhưng Phi-e-rơ vào mộ trước. “môn đồ kia chạy nhanh hơn Phi-e-rơ và đến mộ trước.” (Giăng 20:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong mộ trống, khăn che đầu Đức Chúa Jêsus nằm thế nào?",
+  "options": [
+   "Đã biến mất",
+   "Bị xé rách",
+   "Nằm chung với vải liệm",
+   "Cuốn lại để riêng một chỗ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Mộ trống gọn gàng, không giống cảnh bị trộm xác. “còn khăn che đầu Đức Chúa Jêsus thì không nằm chung với vải, nhưng cuốn lại để riêng ra một chỗ.” (Giăng 20:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa gọi tên mình, Ma-ri Ma-đơ-len thưa bằng tiếng Hê-bơ-rơ thế nào?",
+  "options": [
+   "Hô-sa-na",
+   "Ma-ra-na-tha",
+   "Ra-bu-ni",
+   "A-ba"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ra-bu-ni nghĩa là Thầy; Ma-ri nhận ra Chúa khi Ngài gọi tên bà. “Bà quay lại dùng tiếng Hê-bơ-rơ thưa rằng: “Ra-bu-ni” (nghĩa là Thầy)!” (Giăng 20:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa phục sinh đến đứng giữa các môn đồ đang đóng cửa và nói gì?",
+  "options": [
+   "Bình an cho các con!",
+   "Hãy sờ tay Ta",
+   "Các con có gì ăn không?",
+   "Đừng sợ, Ta đây!"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Các môn đồ đóng cửa vì sợ, và Chúa đem bình an đến. “Bình an cho các con!” (Giăng 20:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chúa phục sinh hà hơi trên các môn đồ và nói gì?",
+  "options": [
+   "Hãy đi khắp thế gian",
+   "Bình an cho các con",
+   "Hãy chăm sóc chiên Ta",
+   "Hãy nhận lãnh Đức Thánh Linh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Hành động hà hơi gợi lại lúc Đức Chúa Trời ban sinh khí cho con người. “Nói xong, Ngài hà hơi trên họ và nói: “Hãy nhận lãnh Đức Thánh Linh.” (Giăng 20:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi thấy Chúa phục sinh, Thô-ma thưa thế nào?",
+  "options": [
+   "Chúa ơi, xin cứu con!",
+   "Lạy Chúa của con và Đức Chúa Trời con!",
+   "Thầy là Đấng Christ",
+   "Ra-bu-ni"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người từng nghi ngờ đã xưng nhận rõ ràng nhất về Chúa. “Lạy Chúa của con và Đức Chúa Trời con!” (Giăng 20:28)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi Thô-ma tin, Chúa nói phước cho những người nào?",
+  "options": [
+   "Không thấy mà tin",
+   "Theo Ngài từ đầu",
+   "Được sờ dấu đinh",
+   "Thấy rồi mới tin"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lời phước nầy dành cho mọi thế hệ tin Chúa về sau. “Phước cho những người không thấy mà tin!” (Giăng 20:29)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 21,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Na-tha-na-ên, người có mặt khi Chúa hiện ra bên biển, quê ở thành nào?",
+  "options": [
+   "Ca-bê-na-um",
+   "Ca-na",
+   "Bết-sai-đa",
+   "Na-in"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ca-na cũng là nơi Chúa làm dấu lạ đầu tiên. “Na-tha-na-ên, người thành Ca-na trong miền Ga-li-lê” (Giăng 21:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 21,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa phục sinh bảo các môn đồ thả lưới ở đâu?",
+  "options": [
+   "Bên trái thuyền",
+   "Sát bờ",
+   "Chỗ nước sâu",
+   "Bên phải thuyền"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đánh suốt đêm không được gì, nay họ kéo lưới không xuể. “Hãy thả lưới bên phải thuyền thì các con sẽ được.” (Giăng 21:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 21,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nghe “Ấy là Chúa!”, Phi-e-rơ đã làm gì?",
+  "options": [
+   "Kéo lưới lên",
+   "Chèo thuyền vào bờ",
+   "Mặc áo vào rồi nhảy xuống biển",
+   "Quỳ xuống trong thuyền"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phi-e-rơ nóng lòng đến với Chúa trước các bạn. “thì mặc áo vào (vì đang ở trần), rồi nhảy xuống biển.” (Giăng 21:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 21,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Lên bờ, các môn đồ thấy Chúa đã chuẩn bị gì cho họ?",
+  "options": [
+   "Một bàn tiệc trong nhà",
+   "Bánh và rượu",
+   "Lửa than với cá nướng và bánh",
+   "Bánh lúa mạch và mật ong"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa phục sinh tự tay dọn bữa sáng cho các môn đồ. “họ thấy tại đó có lửa than với cá đang nướng ở trên, và có bánh nữa.” (Giăng 21:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 21,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ kéo vào bờ tấm lưới đầy bao nhiêu con cá lớn?",
+  "options": [
+   "Một trăm năm mươi ba con",
+   "Năm mươi ba con",
+   "Hai trăm con",
+   "Một trăm con"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dù nhiều cá như vậy, lưới vẫn không rách. “kéo tay lưới đầy một trăm năm mươi ba con cá lớn vào bờ.” (Giăng 21:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 21,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lần đầu Phi-e-rơ thưa yêu Chúa bên bờ biển, Ngài bảo ông làm gì?",
+  "options": [
+   "Theo Ta lên Giê-ru-sa-lem",
+   "Rửa chân cho anh em",
+   "Thả lưới bên phải thuyền",
+   "Chăm sóc những chiên con của Ta"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Người từng chối Chúa được giao việc chăn bầy chiên của Ngài. “Hãy chăm sóc những chiên con của Ta.” (Giăng 21:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 21,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì sao Phi-e-rơ buồn khi Chúa hỏi “Con yêu Ta chăng?”",
+  "options": [
+   "Chúa sắp ra đi",
+   "Chúa hỏi đến ba lần",
+   "Chúa không tin ông",
+   "Các môn đồ cười ông"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ba lần hỏi, như ba lần Phi-e-rơ đã chối Chúa. “Phi-e-rơ buồn vì Ngài hỏi mình đến ba lần” (Giăng 21:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]

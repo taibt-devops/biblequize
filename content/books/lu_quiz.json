@@ -1,0 +1,1943 @@
+[
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Xa-cha-ri, cha của Giăng Báp-tít, là thầy tế lễ thuộc ban nào?",
+  "options": [
+   "Ban A-bi-gia",
+   "Ban Lê-vi",
+   "Ban A-rôn",
+   "Ban Xa-đốc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Xa-cha-ri thuộc ban A-bi-gia; còn vợ ông là Ê-li-sa-bét thuộc dòng dõi A-rôn. “có một thầy tế lễ thuộc ban A-bi-gia, tên là Xa-cha-ri; vợ là Ê-li-sa-bét, thuộc dòng dõi A-rôn.” (Lu-ca 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thiên sứ báo trước Giăng sẽ được đầy dẫy Đức Thánh Linh từ khi nào?",
+  "options": [
+   "Từ khi vào hoang mạc",
+   "Từ khi còn trong lòng mẹ",
+   "Từ khi lên mười hai tuổi",
+   "Từ khi chịu báp-têm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Giăng được biệt riêng cho Chúa từ trước khi sinh ra. “sẽ được đầy dẫy Đức Thánh Linh từ khi còn trong lòng mẹ.” (Lu-ca 1:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì không tin lời thiên sứ, Xa-cha-ri bị gì?",
+  "options": [
+   "Bị liệt tay",
+   "Bị phong hủi",
+   "Bị câm",
+   "Bị mù"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Xa-cha-ri không nói được cho đến khi con trẻ ra đời và được đặt tên. “Nầy, ngươi sẽ bị câm, không thể nói được, cho đến ngày các điều ấy xảy ra” (Lu-ca 1:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 41,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Ê-li-sa-bét nghe tiếng Ma-ri chào, điều gì xảy ra?",
+  "options": [
+   "Bà bật khóc",
+   "Bà ngất đi",
+   "Có tiếng phán từ trời",
+   "Thai nhi trong bụng nhảy nhót"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ê-li-sa-bét được đầy dẫy Đức Thánh Linh và chúc phước cho Ma-ri. “Ê-li-sa-bét vừa nghe tiếng Ma-ri chào thì thai nhi trong bụng liền nhảy nhót.” (Lu-ca 1:41)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 46,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bài ca của Ma-ri khi đến thăm Ê-li-sa-bét mở đầu bằng lời nào?",
+  "options": [
+   "Linh hồn tôi tôn ngợi Chúa",
+   "Xin cho đầy tớ Chúa qua đời bình an",
+   "Vinh danh Thiên Chúa trên trời",
+   "Chúc tụng Chúa, Đức Chúa Trời Y-sơ-ra-ên"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ma-ri tôn ngợi Đức Chúa Trời là Cứu Chúa của mình. “Ma-ri nói: “Linh hồn tôi tôn ngợi Chúa,” (Lu-ca 1:46)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 56,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ma-ri ở với Ê-li-sa-bét bao lâu rồi mới trở về nhà?",
+  "options": [
+   "Một năm",
+   "Sáu tháng",
+   "Bốn mươi ngày",
+   "Khoảng ba tháng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ma-ri ở lại khoảng ba tháng, gần đến lúc Ê-li-sa-bét sinh Giăng. “Ma-ri ở với Ê-li-sa-bét khoảng ba tháng, rồi trở về nhà mình.” (Lu-ca 1:56)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 63,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi mọi người hỏi đặt tên con, Xa-cha-ri viết gì trên bảng nhỏ?",
+  "options": [
+   "Hãy hỏi Ê-li-sa-bét",
+   "Tên nó là Xa-cha-ri",
+   "Tên nó là Giăng",
+   "Đức Chúa Trời ban ơn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ hàng muốn đặt tên theo cha, nhưng Xa-cha-ri vâng theo lời thiên sứ. “Xa-cha-ri bảo lấy bảng nhỏ và viết: “Tên nó là Giăng.”” (Lu-ca 1:63)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hoàng đế nào ra chiếu chỉ kiểm tra dân số khiến Giô-sép phải về Bết-lê-hem?",
+  "options": [
+   "Sê-sa Ti-be-rơ",
+   "Sê-sa Au-gút-tơ",
+   "Qui-ri-ni-u",
+   "Vua Hê-rốt"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chiếu chỉ của hoàng đế La Mã đưa gia đình Giô-sép về đúng nơi lời tiên tri đã nói. “Lúc ấy, Sê-sa Au-gút-tơ ra chiếu chỉ kiểm tra dân số trong khắp thiên hạ.” (Lu-ca 2:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cuộc kiểm tra dân số đầu tiên diễn ra khi ai làm tổng đốc xứ Sy-ri?",
+  "options": [
+   "Phê-lít",
+   "Phi-lát",
+   "Sê-sa Au-gút-tơ",
+   "Qui-ri-ni-u"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lu-ca ghi rõ thời điểm lịch sử của sự giáng sinh. “Đây là cuộc kiểm tra đầu tiên được thực hiện trong thời Qui-ri-ni-u làm tổng đốc xứ Sy-ri.” (Lu-ca 2:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì sao Giô-sép phải lên Bết-lê-hem để đăng ký?",
+  "options": [
+   "Ông thuộc dòng dõi nhà Đa-vít",
+   "Ma-ri sinh ra ở đó",
+   "Thiên sứ bảo ông đi",
+   "Ông có nhà ở đó"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bết-lê-hem là thành Đa-vít, quê của dòng họ Giô-sép. “Vì Giô-sép là dòng dõi nhà Đa-vít nên cũng từ thành Na-xa-rét, miền Ga-li-lê, lên thành Đa-vít, gọi là Bết-lê-hem” (Lu-ca 2:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đạo thiên binh ca ngợi “Vinh danh Thiên Chúa trên trời”, còn dưới đất thì sao?",
+  "options": [
+   "Vui mừng cho muôn dân",
+   "Phước hạnh cho người nghèo",
+   "Bình an, ân ban cho người",
+   "Công chính cho mọi người"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Bài ca của thiên binh trong đêm Chúa giáng sinh. “Vinh danh Thiên Chúa trên trời, Bình an dưới đất, ân ban cho người!” (Lu-ca 2:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Con trẻ được cắt bì và đặt tên Jêsus vào ngày thứ mấy sau khi sinh?",
+  "options": [
+   "Ngày thứ bảy",
+   "Ngày thứ tám",
+   "Ngày thứ ba",
+   "Ngày thứ bốn mươi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Theo luật pháp, con trai được cắt bì khi trọn tám ngày. “Khi được trọn tám ngày, lúc phải cắt bì cho con trẻ, thì họ đặt tên là Jêsus” (Lu-ca 2:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giô-sép và Ma-ri dâng lễ vật gì khi đem con trẻ lên đền thờ?",
+  "options": [
+   "Một cặp chim gáy hoặc bồ câu con",
+   "Một con chiên con",
+   "Một phần mười hoa lợi",
+   "Một con bò tơ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là lễ vật luật pháp dành cho gia đình không đủ sức dâng chiên con. “và dâng một cặp chim gáy, hoặc chim bồ câu con, như luật pháp của Chúa đã truyền.” (Lu-ca 2:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Thánh Linh cho Si-mê-ôn biết trước điều gì?",
+  "options": [
+   "Ông sẽ làm thầy tế lễ thượng phẩm",
+   "Ông sẽ có con trai",
+   "Đền thờ sẽ bị phá hủy",
+   "Ông sẽ thấy Đấng Christ trước khi chết"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Si-mê-ôn ẵm con trẻ Jêsus trong đền thờ và ngợi khen Đức Chúa Trời. “ông sẽ không chết trước khi thấy Đấng Christ của Chúa.” (Lu-ca 2:25-26)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 26
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 36,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nữ tiên tri An-ne, người gặp con trẻ Jêsus trong đền thờ, thuộc bộ tộc nào?",
+  "options": [
+   "Bên-gia-min",
+   "Giu-đa",
+   "A-se",
+   "Lê-vi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "An-ne, con gái Pha-nu-ên, bộ tộc A-se, đêm ngày phục vụ Chúa trong đền thờ. “Cũng có nữ tiên tri An-ne, con gái của Pha-nu-ên, về bộ tộc A-se, tuổi đã cao.” (Lu-ca 2:36)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Lời Đức Chúa Trời đến với Giăng vào năm thứ mười lăm triều hoàng đế nào?",
+  "options": [
+   "Sê-sa Cơ-lốt",
+   "Sê-sa Ti-be-rơ",
+   "Sê-sa Nê-rô",
+   "Sê-sa Au-gút-tơ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lu-ca đặt chức vụ của Giăng vào mốc lịch sử rõ ràng. “Năm thứ mười lăm dưới triều Sê-sa Ti-be-rơ” (Lu-ca 3:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng Báp-tít dạy người có hai áo phải làm gì?",
+  "options": [
+   "Bán bớt một áo",
+   "Giữ lại cho mùa đông",
+   "Dâng vào đền thờ",
+   "Chia cho người không có"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ăn năn thật phải thể hiện bằng việc chia sẻ với người thiếu thốn. “Ai có hai áo hãy chia cho người không có” (Lu-ca 3:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Những người thu thuế hỏi phải làm gì, Giăng Báp-tít bảo họ điều gì?",
+  "options": [
+   "Đừng thu quá mức quy định",
+   "Hãy nộp hết cho đền thờ",
+   "Hãy theo ta vào hoang mạc",
+   "Hãy bỏ nghề thu thuế"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Giăng không bảo họ bỏ nghề, mà bảo họ làm ăn ngay thẳng. “Ông bảo họ: “Đừng thu quá mức quy định.”” (Lu-ca 3:12-13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 13
+ },
+ {
+  "book": "Luke",
+  "chapter": 3,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Jêsus bắt đầu chức vụ khi khoảng bao nhiêu tuổi?",
+  "options": [
+   "Mười hai tuổi",
+   "Hai mươi lăm tuổi",
+   "Độ ba mươi tuổi",
+   "Bốn mươi tuổi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lu-ca ghi tuổi của Chúa khi Ngài bắt đầu chức vụ công khai. “Đức Chúa Jêsus bắt đầu chức vụ khi Ngài độ ba mươi tuổi.” (Lu-ca 3:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 4,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tại nhà hội Na-xa-rét, người ta trao cho Chúa Jêsus cuộn sách tiên tri nào?",
+  "options": [
+   "Đa-ni-ên",
+   "Ê-sai",
+   "Ma-la-chi",
+   "Giê-rê-mi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa đọc lời tiên tri “Thánh Linh của Chúa ngự trên Ta” và nói lời ấy đã ứng nghiệm. “Có người trao cho Ngài cuộn sách tiên tri Ê-sai” (Lu-ca 4:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 4,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nói không nhà tiên tri nào được chấp nhận ở đâu?",
+  "options": [
+   "Giữa dân ngoại",
+   "Tại quê hương mình",
+   "Tại Giê-ru-sa-lem",
+   "Trong đền thờ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người Na-xa-rét quen biết Chúa từ nhỏ nên không chịu tin Ngài. “không một nhà tiên tri nào được chấp nhận tại quê hương mình.” (Lu-ca 4:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 4,
+  "verseStart": 26,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus nhắc tiên tri Ê-li đã được sai đến với bà góa ở đâu?",
+  "options": [
+   "Na-in, miền Ga-li-lê",
+   "Thành Giê-ri-cô",
+   "Su-nem, xứ Y-sa-ca",
+   "Sa-rép-ta, xứ Si-đôn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa nhắc ơn của Đức Chúa Trời từng đến với người ngoại bang. “ngoại trừ một bà góa ở Sa-rép-ta, xứ Si-đôn.” (Lu-ca 4:26)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 4,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thời Ê-li-sê, người phong hủi nào được sạch mà Chúa Jêsus nhắc đến?",
+  "options": [
+   "Vua U-xia",
+   "Ghê-ha-xi",
+   "Na-a-man, người Sy-ri",
+   "Mi-ri-am"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nhiều người Y-sơ-ra-ên bị phong hủi, nhưng chỉ một người ngoại được sạch. “ngoại trừ Na-a-man, người Sy-ri.” (Lu-ca 4:27)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 4,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nghe Chúa giảng ở nhà hội Na-xa-rét, dân chúng tức giận làm gì?",
+  "options": [
+   "Đưa Ngài lên đỉnh núi để ném xuống",
+   "Ném đá Ngài",
+   "Đuổi Ngài xuống biển",
+   "Giải Ngài đến thầy tế lễ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nhưng Chúa đi qua giữa họ mà đi. “đưa Ngài lên đỉnh núi, nơi người ta xây thành, để ném Ngài xuống.” (Lu-ca 4:29)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 6,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trước khi chọn mười hai sứ đồ, Chúa Jêsus đã làm gì?",
+  "options": [
+   "Kiêng ăn bốn mươi ngày",
+   "Thức thâu đêm cầu nguyện trên núi",
+   "Bắt thăm giữa các môn đồ",
+   "Hỏi ý Giăng Báp-tít"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Quyết định quan trọng được bắt đầu bằng một đêm cầu nguyện. “Ngài thức thâu đêm cầu nguyện với Đức Chúa Trời.” (Lu-ca 6:12-13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 13
+ },
+ {
+  "book": "Luke",
+  "chapter": 6,
+  "verseStart": 20,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong Lu-ca, phước lành đầu tiên Chúa phán là cho những ai?",
+  "options": [
+   "Những người có lòng trong sạch",
+   "Những người than khóc",
+   "Những người nhu mì",
+   "Những người nghèo khó"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lu-ca ghi: phước cho người nghèo khó, vì vương quốc Đức Chúa Trời thuộc về họ. “Phước cho các con là những người nghèo khó, Vì vương quốc Đức Chúa Trời thuộc về các con.” (Lu-ca 6:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 6,
+  "verseStart": 38,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa dạy “Hãy cho, các con sẽ được cho lại” theo cách nào?",
+  "options": [
+   "Đấu lớn, đong đầy, lắc cho tràn",
+   "Gấp trăm lần",
+   "Gấp tư",
+   "Một phần mười"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đức Chúa Trời đáp lại sự rộng rãi bằng sự rộng rãi hơn. “người ta sẽ lấy đấu lớn đong đầy, nhận xuống, lắc cho đến khi đầy tràn, rồi đổ vào vạt áo các con” (Lu-ca 6:38)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 7,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Các trưởng lão Do Thái nài xin Chúa giúp viên đội trưởng vì ông đã làm gì?",
+  "options": [
+   "Bảo vệ đền thờ",
+   "Nuôi người nghèo",
+   "Xây nhà hội cho họ",
+   "Tha thuế cho họ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Một sĩ quan ngoại bang thương dân Do Thái và xây nhà hội cho họ. “vì ông thương dân ta, và đã xây nhà hội cho chúng ta.” (Lu-ca 7:4-5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 5
+ },
+ {
+  "book": "Luke",
+  "chapter": 7,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ở cửa thành Na-in, Chúa Jêsus gặp đám tang của ai?",
+  "options": [
+   "Đầy tớ viên đội trưởng",
+   "Con gái Giai-ru",
+   "Con trai một của bà góa",
+   "La-xa-rơ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa thương xót bà mẹ góa và khiến con bà sống lại. “người ta vừa khiêng ra một người chết, là con trai một của bà mẹ góa.” (Lu-ca 7:11-12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 12
+ },
+ {
+  "book": "Luke",
+  "chapter": 7,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trước khi khiến chàng trai ở Na-in sống lại, Chúa Jêsus chạm vào đâu?",
+  "options": [
+   "Tay chàng trai",
+   "Mắt chàng trai",
+   "Vai bà mẹ",
+   "Quan tài"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Những người khiêng dừng lại, và Chúa truyền chàng trai trỗi dậy. “Ngài lại gần, chạm vào quan tài, và những người khiêng dừng lại.” (Lu-ca 7:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 7,
+  "verseStart": 38,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người đàn bà tội lỗi lấy gì lau chân Chúa sau khi nước mắt nàng thấm ướt?",
+  "options": [
+   "Khăn vải gai",
+   "Tóc của mình",
+   "Áo choàng",
+   "Vạt áo của Chúa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nàng lau chân Chúa bằng tóc, hôn chân và xức dầu thơm. “rồi nàng lấy tóc mình lau, hôn chân Ngài, và xức dầu thơm lên.” (Lu-ca 7:38)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 7,
+  "verseStart": 41,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong ẩn dụ hai con nợ kể ở nhà Si-môn, người nợ nhiều hơn nợ bao nhiêu?",
+  "options": [
+   "Năm trăm đơ-ni-ê",
+   "Năm chục đơ-ni-ê",
+   "Một trăm đơ-ni-ê",
+   "Mười nghìn ta-lâng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ai được tha nhiều thì yêu nhiều. “Một người nợ năm trăm đơ-ni-ê, người kia nợ năm chục.” (Lu-ca 7:41)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 8,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ma-ri Ma-đơ-len đã được Chúa giải cứu khỏi điều gì?",
+  "options": [
+   "Bảy quỷ dữ",
+   "Bệnh mù mắt",
+   "Bệnh phong hủi",
+   "Cơn sốt nặng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ma-ri Ma-đơ-len đi theo và giúp đỡ Chúa cùng các môn đồ. “Ma-ri gọi là Ma-đơ-len, là người được Chúa giải cứu khỏi bảy quỷ dữ” (Lu-ca 8:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 8,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Gian-nơ, một phụ nữ dùng của cải giúp đỡ Chúa, là vợ của ai?",
+  "options": [
+   "Xa-chê, trưởng thu thuế",
+   "Giai-ru, quản lý nhà hội",
+   "Chu-xa, quản gia vua Hê-rốt",
+   "Si-môn, người Pha-ri-si"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngay trong triều Hê-rốt cũng có người theo Chúa. “Gian-nơ vợ Chu-xa, quản gia của vua Hê-rốt” (Lu-ca 8:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 9,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi các sứ đồ trở về, Chúa đem họ đi riêng đến thành nào, nơi Ngài hóa bánh?",
+  "options": [
+   "Bê-tha-ni",
+   "Bết-sai-đa",
+   "Na-in",
+   "Ca-bê-na-um"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lu-ca đặt phép lạ hóa bánh cho năm nghìn người gần Bết-sai-đa. “Ngài đem các sứ đồ đi riêng ra, đến một thành gọi là Bết-sai-đa.” (Lu-ca 9:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 9,
+  "verseStart": 31,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa hóa hình, Môi-se và Ê-li nói với Ngài về điều gì?",
+  "options": [
+   "Ngày Ngài trở lại",
+   "Luật pháp và lời tiên tri",
+   "Việc chọn mười hai sứ đồ",
+   "Sự chết của Ngài tại Giê-ru-sa-lem"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chỉ Lu-ca ghi nội dung cuộc trò chuyện trên núi hóa hình. “nói về sự chết của Ngài, là việc Ngài sắp làm ứng nghiệm tại thành Giê-ru-sa-lem.” (Lu-ca 9:31)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 9,
+  "verseStart": 51,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Gần đến ngày được tiếp lên trời, Chúa Jêsus quyết định đi đâu?",
+  "options": [
+   "Xứ Ga-li-lê",
+   "Xứ Ai Cập",
+   "Thành Na-xa-rét",
+   "Thành Giê-ru-sa-lem"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Từ đây, Lu-ca kể hành trình dài của Chúa hướng về Giê-ru-sa-lem. “Ngài quyết định đi đến thành Giê-ru-sa-lem.” (Lu-ca 9:51)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 9,
+  "verseStart": 54,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi một làng Sa-ma-ri không tiếp Chúa, Gia-cơ và Giăng muốn làm gì?",
+  "options": [
+   "Báo cho thầy tế lễ",
+   "Khiến lửa từ trời thiêu hủy họ",
+   "Đi đường vòng",
+   "Rũ bụi chân mà đi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa quở trách hai môn đồ nóng nảy ấy. “Chúa có muốn chúng con khiến lửa từ trời xuống thiêu hủy họ chăng?” (Lu-ca 9:54)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 9,
+  "verseStart": 62,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa nói người đã cầm cày mà còn nhìn lại đằng sau thì thế nào?",
+  "options": [
+   "Sẽ thành tượng muối",
+   "Phải làm lại từ đầu",
+   "Không xứng hợp với vương quốc Đức Chúa Trời",
+   "Sẽ cày lệch đường"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Theo Chúa thì không ngoảnh lại tiếc nuối. “Ai đã cầm cày mà còn nhìn lại đằng sau thì không xứng hợp với vương quốc Đức Chúa Trời.” (Lu-ca 9:62)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ngoài mười hai sứ đồ, Chúa còn chỉ định thêm bao nhiêu môn đồ và sai đi từng đôi?",
+  "options": [
+   "Bảy mươi",
+   "Mười hai",
+   "Một trăm hai mươi",
+   "Năm trăm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bảy mươi môn đồ được sai đi trước đến các thành Chúa sắp đến. “Chúa chỉ định bảy mươi môn đồ khác và sai từng đôi một đi trước Ngài” (Lu-ca 10:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi bảy mươi môn đồ vui mừng trở về, Chúa nói Ngài đã thấy gì?",
+  "options": [
+   "Chim bồ câu ngự xuống",
+   "Sa-tan từ trời sa xuống như chớp",
+   "Các tầng trời mở ra",
+   "Các thiên sứ ca hát"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Quyền của Sa-tan bị đánh bại khi Tin Lành được rao giảng. “Ta đã thấy quỷ Sa-tan từ trời sa xuống như chớp.” (Lu-ca 10:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 11,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thấy Chúa cầu nguyện xong, một môn đồ xin Ngài điều gì?",
+  "options": [
+   "Xin dạy chúng con kiêng ăn",
+   "Xin thêm đức tin cho chúng con",
+   "Xin dạy chúng con cầu nguyện",
+   "Xin chỉ cho chúng con thấy Cha"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa đáp lại bằng bài cầu nguyện mẫu. “Lạy Chúa, xin dạy chúng con cầu nguyện, như Giăng đã dạy các môn đồ mình vậy.” (Lu-ca 11:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 11,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong ẩn dụ người bạn đến lúc nửa đêm, người ấy xin mượn gì?",
+  "options": [
+   "Ba cái bánh",
+   "Một cây đèn",
+   "Hai con cá",
+   "Một bình dầu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ẩn dụ dạy kiên trì cầu xin. “Bạn ơi, cho tôi mượn ba cái bánh” (Lu-ca 11:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 11,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa hỏi: có người cha nào khi con xin cá lại cho nó vật gì?",
+  "options": [
+   "Hòn đá",
+   "Con lươn",
+   "Con bò cạp",
+   "Con rắn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Xin bánh mà cho đá, xin cá mà cho rắn, xin trứng mà cho bò cạp: không người cha nào làm vậy. “Hay là xin cá mà cho rắn thay vì cá chăng?” (Lu-ca 11:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 12,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong Lu-ca, năm con chim sẻ được bán với giá bao nhiêu?",
+  "options": [
+   "Một đơ-ni-ê",
+   "Một đồng tiền",
+   "Hai đồng tiền",
+   "Năm đồng tiền"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Dù rẻ như vậy, Đức Chúa Trời không quên một con nào. “Chẳng phải năm con chim sẻ được bán với giá hai đồng tiền sao?” (Lu-ca 12:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 12,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong ẩn dụ người giàu ngu dại, khi được mùa lớn anh ta định làm gì?",
+  "options": [
+   "Phá kho cũ, xây kho lớn hơn",
+   "Mua thêm ruộng",
+   "Dâng một phần mười",
+   "Chia cho người nghèo"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Anh ta chỉ lo tích trữ cho mình mà không giàu có nơi Đức Chúa Trời. “Ta sẽ phá những kho nầy và xây những cái khác lớn hơn” (Lu-ca 12:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 12,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời gọi người giàu chỉ lo tích trữ cho mình là gì?",
+  "options": [
+   "Kẻ trộm cướp",
+   "Đầy tớ gian ác",
+   "Kẻ đạo đức giả",
+   "Kẻ dại"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chính đêm ấy linh hồn anh ta bị đòi lại. “Hỡi kẻ dại! Chính đêm nay linh hồn ngươi sẽ bị đòi lại” (Lu-ca 12:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 13,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chúa nhắc đến mười tám người bị đè chết khi tháp nào ngã xuống?",
+  "options": [
+   "Tháp Đa-vít",
+   "Tháp Si-lô-ê",
+   "Tháp Ba-bên",
+   "Tháp canh vườn nho"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa dạy tai nạn không chứng tỏ họ tội lỗi hơn người khác; ai cũng cần ăn năn. “mười tám người kia bị tháp Si-lô-ê ngã xuống đè chết” (Lu-ca 13:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 13,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Cây vả ba năm không trái, người trồng nho xin chủ điều gì?",
+  "options": [
+   "Bán cho người khác",
+   "Để lại thêm một năm nữa",
+   "Đốn ngay đi",
+   "Bứng sang chỗ khác"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người trồng nho hứa vun xới và bón phân, hình ảnh của sự nhịn nhục chờ đợi. “Thưa chủ, xin để nó lại năm nầy nữa, chờ tôi đào đất chung quanh nó rồi đổ phân vào.” (Lu-ca 13:7-8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 8
+ },
+ {
+  "book": "Luke",
+  "chapter": 13,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người phụ nữ còng lưng được Chúa chữa trong ngày sa-bát đã bệnh bao lâu?",
+  "options": [
+   "Bảy năm",
+   "Ba mươi tám năm",
+   "Mười hai năm",
+   "Mười tám năm"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa chữa bà ngay trong nhà hội vào ngày sa-bát. “có người đàn bà bị tà linh ám làm cho bệnh tật suốt mười tám năm” (Lu-ca 13:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 13,
+  "verseStart": 32,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi được báo vua Hê-rốt muốn giết Ngài, Chúa Jêsus gọi vua là gì?",
+  "options": [
+   "Con rắn",
+   "Con sói",
+   "Con cáo",
+   "Kẻ đạo đức giả"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa không sợ Hê-rốt và tiếp tục công việc của mình. “Hãy đi nói với con cáo ấy rằng” (Lu-ca 13:32)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 14,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa dạy khi được mời dự tiệc nên ngồi chỗ nào?",
+  "options": [
+   "Chỗ cuối",
+   "Cạnh chủ tiệc",
+   "Chỗ nào cũng được",
+   "Chỗ cao nhất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ai tự hạ mình sẽ được tôn cao. “Nhưng khi ngươi được mời, hãy ngồi chỗ cuối” (Lu-ca 14:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 14,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa dạy khi đãi tiệc nên mời những ai?",
+  "options": [
+   "Người nghèo, tàn tật, què, mù",
+   "Láng giềng giàu có",
+   "Bà con và bạn hữu",
+   "Các thầy tế lễ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Những người không có gì trả lại, để được Đức Chúa Trời ban thưởng. “hãy mời những người nghèo khó, tàn tật, què quặt, đui mù” (Lu-ca 14:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 14,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong ẩn dụ tiệc lớn, một người khách xin cáo lỗi vì vừa mua gì?",
+  "options": [
+   "Một vườn nho",
+   "Năm đôi bò",
+   "Một ngôi nhà",
+   "Một con lừa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ai cũng có cớ bận việc riêng để từ chối lời mời. “Tôi có mua năm đôi bò cần phải đi xem.” (Lu-ca 14:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 14,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa nói người muốn xây tháp trước hết phải làm gì?",
+  "options": [
+   "Mời thợ giỏi",
+   "Xin phép quan",
+   "Ngồi tính phí tổn",
+   "Đào móng thật sâu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Theo Chúa cần cân nhắc cái giá phải trả. “Ai trong các ngươi muốn xây một cái tháp mà trước hết không ngồi tính phí tổn” (Lu-ca 14:28)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người phụ nữ trong ẩn dụ có bao nhiêu đồng bạc trước khi đánh mất một đồng?",
+  "options": [
+   "Ba mươi đồng",
+   "Hai đồng",
+   "Một trăm đồng",
+   "Mười đồng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bà thắp đèn, quét nhà và tìm cho kỳ được. “có người phụ nữ nào có mười đồng bạc, nếu mất một đồng” (Lu-ca 15:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 16,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người nghèo nằm ngoài cửa người giàu trong ẩn dụ tên là gì?",
+  "options": [
+   "Ba-ti-mê",
+   "Giai-ru",
+   "La-xa-rơ",
+   "Xa-chê"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đây là nhân vật duy nhất trong các ẩn dụ của Chúa có tên riêng. “Lại có một người nghèo tên La-xa-rơ nằm ngoài cửa người giàu đó” (Lu-ca 16:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 16,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi người nghèo La-xa-rơ chết, thiên sứ đem ông đặt vào đâu?",
+  "options": [
+   "Vườn Ê-đen",
+   "Lòng Áp-ra-ham",
+   "Đền thờ trên trời",
+   "Ngai Đa-vít"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người nghèo được an ủi, còn người giàu chịu khốn khổ. “Người nghèo chết, được thiên sứ đem đặt vào lòng Áp-ra-ham.” (Lu-ca 16:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 16,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người giàu trong lửa xin Áp-ra-ham sai La-xa-rơ làm gì?",
+  "options": [
+   "Mở cửa cho ông ra",
+   "Cầu nguyện cho ông",
+   "Mang bánh cho ông",
+   "Nhúng đầu ngón tay vào nước"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Áp-ra-ham đáp có vực sâu ngăn cách, không ai qua lại được. “sai La-xa-rơ nhúng đầu ngón tay vào nước làm cho mát lưỡi con” (Lu-ca 16:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 17,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa vào một làng, có bao nhiêu người phong hủi đứng đằng xa kêu xin?",
+  "options": [
+   "Mười người",
+   "Bảy người",
+   "Hai người",
+   "Mười hai người"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cả mười được sạch, nhưng chỉ một người trở lại tạ ơn. “có mười người phong hủi đến đón Ngài. Họ đứng đằng xa” (Lu-ca 17:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 17,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người phong hủi duy nhất trở lại tạ ơn Chúa là người gì?",
+  "options": [
+   "Người Ai Cập",
+   "Người Sa-ma-ri",
+   "Người Pha-ri-si",
+   "Người Ga-li-lê"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Một người ngoại bang lại là người biết ơn. “Người đó là người Sa-ma-ri.” (Lu-ca 17:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 17,
+  "verseStart": 32,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nói về ngày Con Người hiện ra, Chúa nhắc hãy nhớ lại ai?",
+  "options": [
+   "Vợ của Lót",
+   "Ra-chên",
+   "A-ga",
+   "Vợ của Gióp"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vợ Lót ngoảnh lại vì lòng còn tiếc những gì phía sau. “Hãy nhớ lại vợ của Lót.” (Lu-ca 17:32)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 18,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong ẩn dụ dạy cầu nguyện bền đỗ, bà góa cứ đến xin ai xét xử công minh?",
+  "options": [
+   "Vua Hê-rốt",
+   "Thầy tế lễ thượng phẩm",
+   "Trưởng lão trong thành",
+   "Quan tòa không kính sợ Chúa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nếu quan tòa bất chính còn chịu xử cho bà, huống chi Đức Chúa Trời. “có một quan tòa không kính sợ Đức Chúa Trời, cũng không vị nể ai cả.” (Lu-ca 18:2-3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 3
+ },
+ {
+  "book": "Luke",
+  "chapter": 18,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người Pha-ri-si cầu nguyện khoe mình kiêng ăn mỗi tuần mấy lần?",
+  "options": [
+   "Một lần",
+   "Bảy lần",
+   "Hai lần",
+   "Ba lần"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Anh ta cậy công đức mình, còn người thu thuế chỉ xin thương xót. “Con kiêng ăn mỗi tuần hai lần, và nộp một phần mười về mọi lợi tức của con.” (Lu-ca 18:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 18,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người thu thuế đứng xa xa, đấm ngực cầu nguyện thế nào?",
+  "options": [
+   "Cảm tạ Chúa vì con không như người khác",
+   "Con dâng một phần mười",
+   "Xin cho con được giàu có",
+   "Xin thương xót con là tội nhân"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa nói người thu thuế về nhà được xưng công chính. “Lạy Đức Chúa Trời, xin thương xót con, vì con là một tội nhân!” (Lu-ca 18:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong ẩn dụ người quý tộc đi xa, ông giao cho mười đầy tớ bao nhiêu nén bạc?",
+  "options": [
+   "Một trăm nén",
+   "Mười nén",
+   "Năm ta-lâng",
+   "Ba nén"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Mỗi đầy tớ nhận một nén và được dặn làm lợi cho đến khi chủ về. “giao cho họ mười nén bạc và bảo: ‘Hãy làm lợi ra cho đến khi ta trở về.’” (Lu-ca 19:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 41,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đến gần và nhìn thấy thành Giê-ru-sa-lem, Chúa Jêsus đã làm gì?",
+  "options": [
+   "Hát mừng",
+   "Rủa sả thành",
+   "Khóc về thành",
+   "Quỳ xuống thờ lạy"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa khóc vì thành không nhận biết thời điểm được thăm viếng. “nhìn thấy thành phố, Đức Chúa Jêsus khóc về nó” (Lu-ca 19:41)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lu-ca ghi điều gì xảy ra với Giu-đa Ích-ca-ri-ốt trước khi hắn đi gặp các thầy tế lễ?",
+  "options": [
+   "Sa-tan nhập vào hắn",
+   "Hắn cãi nhau với Phi-e-rơ",
+   "Hắn nằm mộng",
+   "Hắn bị bệnh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sau đó Giu-đa bàn với các thầy tế lễ cách nộp Chúa. “Lúc ấy, quỷ Sa-tan nhập vào Giu-đa, gọi là Ích-ca-ri-ốt” (Lu-ca 22:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus sai hai môn đồ nào đi sửa soạn lễ Vượt Qua?",
+  "options": [
+   "Gia-cơ và Giăng",
+   "Phi-líp và Anh-rê",
+   "Phi-e-rơ và Giăng",
+   "Phi-e-rơ và Gia-cơ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lu-ca nêu tên hai môn đồ được sai đi dọn bữa ăn cuối cùng. “Đức Chúa Jêsus sai Phi-e-rơ và Giăng đi” (Lu-ca 22:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 43,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa cầu nguyện trong đau thương trên núi Ô-liu, ai đến thêm sức cho Ngài?",
+  "options": [
+   "Môi-se và Ê-li",
+   "Một thiên sứ từ trời",
+   "Phi-e-rơ",
+   "Ba môn đồ thân cận"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Các môn đồ ngủ, còn thiên sứ đến thêm sức cho Chúa. “Có một thiên sứ từ trời hiện đến và thêm sức cho Ngài.” (Lu-ca 22:43)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 44,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lu-ca tả mồ hôi của Chúa khi cầu nguyện khẩn thiết như gì?",
+  "options": [
+   "Dòng nước mắt",
+   "Sương đêm",
+   "Những giọt mưa",
+   "Những giọt máu rơi xuống đất"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Hình ảnh cho thấy nỗi đau thương tột cùng của Chúa trước giờ chịu khổ. “mồ hôi trở nên như những giọt máu rơi xuống đất.” (Lu-ca 22:44)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 50,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo Lu-ca, đầy tớ của thầy tế lễ thượng phẩm bị chém đứt tai bên nào?",
+  "options": [
+   "Tai bên phải",
+   "Cả hai tai",
+   "Không bị đứt",
+   "Tai bên trái"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lu-ca, một thầy thuốc, ghi rõ chi tiết và cả việc Chúa chữa lành. “Một người trong số họ đánh đầy tớ của thầy tế lễ thượng phẩm và chém đứt tai bên phải.” (Lu-ca 22:50)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 51,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi tai đầy tớ của thầy tế lễ thượng phẩm bị chém đứt, Chúa Jêsus đã làm gì?",
+  "options": [
+   "Quở trách anh ta",
+   "Chạm vào tai và chữa lành",
+   "Không nói lời nào",
+   "Bảo anh ta về nhà"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngay lúc bị bắt, Chúa vẫn chữa lành cho người đến bắt mình. “Rồi Ngài chạm vào tai đầy tớ ấy mà chữa lành cho anh.” (Lu-ca 22:51)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 23,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Biết Chúa Jêsus thuộc thẩm quyền của ai, Phi-lát cho giải Ngài đến người ấy?",
+  "options": [
+   "Sê-sa",
+   "An-ne",
+   "Cai-phe",
+   "Hê-rốt"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa là người Ga-li-lê, thuộc quyền vua Hê-rốt, lúc ấy đang ở Giê-ru-sa-lem. “Phi-lát cho giải Ngài đến Hê-rốt, lúc ấy đang có mặt tại thành Giê-ru-sa-lem.” (Lu-ca 23:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 23,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sau ngày xử Chúa Jêsus, quan hệ giữa Phi-lát và Hê-rốt thay đổi thế nào?",
+  "options": [
+   "Từ bạn hữu thành thù hiềm",
+   "Cùng tin theo Chúa",
+   "Từ thù hiềm trở nên bạn hữu",
+   "Cùng bị Sê-sa cách chức"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chỉ Lu-ca ghi chi tiết nầy. “Trước kia, Phi-lát và Hê-rốt thù hiềm nhau, nhưng trong ngày ấy họ trở nên bạn hữu.” (Lu-ca 23:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 23,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trên đường lên thập tự, Chúa bảo các con gái Giê-ru-sa-lem điều gì?",
+  "options": [
+   "Đừng khóc về Ta",
+   "Hãy theo Ta",
+   "Hãy về nhà đi",
+   "Hãy nhớ đến Ta"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa bảo họ hãy khóc về chính mình và con cái mình. “Hỡi con gái Giê-ru-sa-lem, đừng khóc về Ta, mà hãy khóc về chính các ngươi và con cái các ngươi.” (Lu-ca 23:28)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 23,
+  "verseStart": 46,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Lu-ca, lời cuối cùng của Chúa Jêsus trên thập tự là gì?",
+  "options": [
+   "Con xin giao linh hồn trong tay Cha",
+   "Sao Ngài lìa bỏ con?",
+   "Lạy Cha, xin tha cho họ",
+   "Mọi việc đã hoàn tất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa kêu lớn lời ấy rồi trút hơi thở cuối cùng. “Lạy Cha, Con xin giao linh hồn lại trong tay Cha!” (Lu-ca 23:46)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 23,
+  "verseStart": 47,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo Lu-ca, viên đội trưởng tôn vinh Đức Chúa Trời và nói gì về Chúa Jêsus?",
+  "options": [
+   "Người nầy là Con Đức Chúa Trời",
+   "Thật người nầy là người công chính",
+   "Người nầy là vua dân Do Thái",
+   "Người nầy là một tiên tri"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ma-thi-ơ và Mác ghi “Con Đức Chúa Trời”; Lu-ca ghi “người công chính”. “Thật người nầy là người công chính!” (Lu-ca 23:47)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ngoài hai bà Ma-ri, phụ nữ nào được Lu-ca nêu tên trong những người báo tin mộ trống?",
+  "options": [
+   "Ma-thê",
+   "Su-xan-nơ",
+   "Sa-lô-mê",
+   "Gian-nơ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lu-ca nêu Ma-ri Ma-đơ-len, Gian-nơ và Ma-ri mẹ Gia-cơ; Mác nhắc Sa-lô-mê. “là Ma-ri Ma-đơ-len, Gian-nơ, Ma-ri mẹ của Gia-cơ” (Lu-ca 24:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nghe các phụ nữ báo tin mộ trống, các sứ đồ phản ứng thế nào?",
+  "options": [
+   "Vui mừng tin ngay",
+   "Sợ hãi trốn đi",
+   "Không tin, cho là viển vông",
+   "Chạy đi báo cho cả thành"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ban đầu các sứ đồ cũng khó tin Chúa đã sống lại. “Nhưng các sứ đồ không tin, cho những lời ấy là viển vông.” (Lu-ca 24:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nghe tin, Phi-e-rơ chạy đến mộ, cúi xuống nhìn và thấy gì?",
+  "options": [
+   "Thấy hai thiên sứ",
+   "Thấy Chúa Jêsus",
+   "Chỉ thấy vải liệm",
+   "Thấy lính canh ngủ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phi-e-rơ trở về nhà, kinh ngạc về việc đã xảy ra. “cúi xuống nhìn nhưng chỉ thấy vải liệm mà thôi.” (Lu-ca 24:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Một trong hai môn đồ trên đường Em-ma-út tên là gì?",
+  "options": [
+   "Na-tha-na-ên",
+   "Ma-thia",
+   "A-ga-bút",
+   "Cơ-lê-ô-pa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cơ-lê-ô-pa ngạc nhiên vì người khách lạ dường như không biết chuyện gì. “Một trong hai người tên Cơ-lê-ô-pa” (Lu-ca 24:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 42,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hiện ra với các môn đồ, Chúa phục sinh đã ăn gì trước mặt họ?",
+  "options": [
+   "Một miếng cá nướng",
+   "Bánh và rượu",
+   "Trái vả khô",
+   "Một tổ mật ong"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa ăn để các môn đồ biết Ngài sống lại thật, không phải là ma. “Các môn đồ dâng cho Ngài một miếng cá nướng. Ngài nhận lấy và ăn trước mặt họ.” (Lu-ca 24:42-43)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 43
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 50,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chúa dẫn các môn đồ đến gần làng nào rồi được đem lên trời trong khi ban phước?",
+  "options": [
+   "Em-ma-út",
+   "Bê-tha-ni",
+   "Bết-lê-hem",
+   "Ca-bê-na-um"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Sách Lu-ca kết thúc bằng hình ảnh Chúa giơ tay ban phước khi được đem lên trời. “Ngài dẫn các môn đồ đến gần làng Bê-tha-ni và giơ tay lên ban phước cho họ.” (Lu-ca 24:50-51)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 51
+ }
+]

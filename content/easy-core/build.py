@@ -203,8 +203,9 @@ def content_hash(q: dict) -> str:
     for c in "?!.,;:\"'()[]{}":
         norm = norm.replace(c, "")
     norm = re.sub(r"\s+", " ", norm).strip()
-    key = "|".join(str(x) for x in (q["book"], q["chapter"], q["verseStart"], q.get("verseEnd", ""),
-                                     q.get("language", "vi"), norm))
+    # A JSON null counts as empty, like IFNULL(verse_end, '') in the SQL column.
+    key = "|".join("" if x is None else str(x) for x in (q["book"], q["chapter"], q["verseStart"],
+                                                          q.get("verseEnd"), q.get("language") or "vi", norm))
     return hashlib.sha256(key.encode("utf-8")).hexdigest()
 
 
