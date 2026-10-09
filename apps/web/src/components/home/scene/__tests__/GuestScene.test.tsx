@@ -37,19 +37,22 @@ describe('GuestScene: the crossroads for visitors', () => {
     expect(screen.getAllByRole('heading', { level: 1 })).toHaveLength(1)
   })
 
-  it('Google goes straight to the OAuth2 flow on the web', () => {
+  it('Google is a real link to the OAuth2 flow, so it works before the app script loads', () => {
     renderScene()
-    fireEvent.click(screen.getByTestId('guest-google'))
-    expect(window.location.href).toBe('/oauth2/authorization/google')
+    const google = screen.getByTestId('guest-google')
+    expect(google.tagName).toBe('A')
+    expect(google).toHaveAttribute('href', '/oauth2/authorization/google')
+    expect(google).toHaveAttribute('rel', 'nofollow')
+    // On the web the browser follows the link; no client-side navigation.
+    expect(fireEvent.click(google)).toBe(true)
     expect(mockNavigate).not.toHaveBeenCalled()
   })
 
-  it('the mobile app signs in natively on /login instead', () => {
+  it('the mobile app keeps the link from loading and signs in natively on /login', () => {
     nativeApp = true
     renderScene()
-    fireEvent.click(screen.getByTestId('guest-google'))
+    expect(fireEvent.click(screen.getByTestId('guest-google'))).toBe(false) // default prevented
     expect(mockNavigate).toHaveBeenCalledWith('/login')
-    expect(window.location.href).toBe('https://forbible.org/')
   })
 
   it('Practice stays open; Ranked, Rooms and Journey carry a padlock', () => {

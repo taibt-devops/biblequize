@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { startGoogleLogin } from '../../utils/googleLogin'
+import { googleAuthUrl, startGoogleLogin } from '../../utils/googleLogin'
+import { isCapacitor } from '../../platform/capacitor'
 
 /** Google's "G" mark in its brand colours. */
 export function GoogleMark({ className = 'w-5 h-5' }: { className?: string }) {
@@ -21,21 +22,27 @@ interface GoogleSignInButtonProps {
 
 /**
  * "Continue with Google" in the Lu Khach button language: white face (Google's own buttons are
- * light), ink border, hard drop shadow. Web goes straight to the OAuth2 flow; the mobile app
- * signs in natively on /login.
+ * light), ink border, hard drop shadow. A real link to the OAuth2 flow, so it works even in the
+ * prerendered HTML before the app script has loaded; the mobile app signs in natively on /login.
  */
 export default function GoogleSignInButton({ className = '', testId = 'google-signin-btn' }: GoogleSignInButtonProps) {
   const { t } = useTranslation()
   const navigate = useNavigate()
   return (
-    <button
-      type="button"
+    <a
+      href={googleAuthUrl()}
+      rel="nofollow"
       data-testid={testId}
-      onClick={() => startGoogleLogin(navigate)}
-      className={`inline-flex items-center justify-center gap-2.5 px-5 py-2.5 bg-bq-white border-[3px] border-bq-ink rounded-[14px] shadow-[0_5px_0_#1D2B22] font-extrabold text-[16px] text-bq-ink whitespace-nowrap transition-transform hover:-translate-y-0.5 active:translate-y-1 active:shadow-[0_1px_0_#1D2B22] ${className}`}
+      onClick={e => {
+        if (isCapacitor()) {
+          e.preventDefault()
+          startGoogleLogin(navigate)
+        }
+      }}
+      className={`inline-flex items-center justify-center gap-2.5 px-5 py-2.5 bg-bq-white border-[3px] border-bq-ink rounded-[14px] shadow-[0_5px_0_#1D2B22] font-extrabold text-[16px] text-bq-ink no-underline whitespace-nowrap transition-transform hover:-translate-y-0.5 active:translate-y-1 active:shadow-[0_1px_0_#1D2B22] ${className}`}
     >
       <GoogleMark />
       <span>{t('guest.google')}</span>
-    </button>
+    </a>
   )
 }
