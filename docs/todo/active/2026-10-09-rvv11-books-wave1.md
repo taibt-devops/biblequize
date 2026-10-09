@@ -55,6 +55,9 @@
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-10 Đợt 3 lên prod
-  - Status: [ ] TODO · seed một lần `rvv11_books_quiz.json` (`sync-stale=false`; kỳ vọng chèn 436 câu) → đối chiếu 1.079 hash + rà hàng mồ côi của 11 sách → sao lưu `questions_bak_20261010_rvv11_w3` → `is_active=0`
+  - Status: [x] DONE 10/10 · commit `2c9aca83`, BE `sha256:f7310dc0…` (rollback `840b3be8…`) · seed một lần: inserted=436, dupHash=0, staleDeleted=0 · 1.079/1.079 hash khớp (toàn `seed:json` tiếng Việt đang bật; 1 hàng là câu Lu-ca), không có hàng mồ côi ở 11 sách và không còn câu cũ `seed:json` nào sót ở 18 sách vòng 1 · sao lưu `questions_bak_20261010_rvv11_w3` rồi `is_active=0` cho 1.079 hàng · câu đang bật = Dễ cốt lõi + bộ RVV11 ở cả 11 sách · `GET /api/questions` Phục Truyền/Ê-sai/Gióp × 3 mức trả câu RVV11
+  - Bật lại nếu cần: `UPDATE questions q JOIN questions_bak_20261010_rvv11_w3 b ON b.id = q.id SET q.is_active = b.is_active;`
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
