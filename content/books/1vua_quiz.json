@@ -1,0 +1,853 @@
+[
+ {
+  "book": "1 Kings",
+  "chapter": 1,
+  "verseStart": 33,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít truyền đỡ Sa-lô-môn lên cưỡi con vật nào của vua?",
+  "options": [
+   "Con lạc đà",
+   "Con ngựa chiến",
+   "Con lừa con",
+   "Con la của vua"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dấu hiệu Sa-lô-môn là người kế vị chính thức. “lên cưỡi con la của trẫm” (1 Các Vua 1:33)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 1,
+  "verseStart": 34,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai được Đa-vít giao xức dầu cho Sa-lô-môn làm vua?",
+  "options": [
+   "Xa-đốc và Na-than",
+   "Sa-mu-ên và Gát",
+   "Hê-li và Sa-mu-ên",
+   "A-bia-tha và Giô-áp"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Một thầy tế lễ và một nhà tiên tri. “thầy tế lễ Xa-đốc và nhà tiên tri Na-than xức dầu cho thái tử” (1 Các Vua 1:34)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 1,
+  "verseStart": 39,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Sa-lô-môn được xức dầu, toàn dân tung hô thế nào?",
+  "options": [
+   "Đa-vít vạn tuế!",
+   "Hô-sa-na!",
+   "Vua Sa-lô-môn vạn tuế!",
+   "Ha-lê-lu-gia!"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ thổi tù và báo tin vua mới. “Vua Sa-lô-môn vạn tuế!” (1 Các Vua 1:39)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít được an táng ở đâu?",
+  "options": [
+   "Tại Hếp-rôn",
+   "Trong thành Đa-vít",
+   "Tại Bết-lê-hem",
+   "Trên núi Ô-liu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông an giấc cùng các tổ phụ. “được an táng trong thành Đa-vít” (1 Các Vua 2:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 4,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Kinh Thánh ví sự hiểu biết của Sa-lô-môn sâu rộng như gì?",
+  "options": [
+   "Cát trên bãi biển",
+   "Lá trên rừng",
+   "Sao trên trời",
+   "Nước trong biển"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đức Chúa Trời ban cho vua sự khôn ngoan vượt trội. “sự hiểu biết sâu rộng như cát trên bãi biển” (1 Các Vua 4:29)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 4,
+  "verseStart": 32,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sa-lô-môn đã nói ra bao nhiêu câu châm ngôn?",
+  "options": [
+   "Một nghìn câu",
+   "Mười nghìn câu",
+   "Ba nghìn câu",
+   "Năm trăm câu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Một phần được ghi lại trong sách Châm Ngôn. “Vua nói ra ba nghìn câu châm ngôn” (1 Các Vua 4:32)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 7,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sa-lô-môn xây cung điện cho mình trong bao lâu?",
+  "options": [
+   "Ba năm",
+   "Bốn mươi năm",
+   "Bảy năm",
+   "Mười ba năm"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Còn đền thờ thì xây trong bảy năm. “hoàn thành toàn bộ công trình trong mười ba năm” (1 Các Vua 7:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 7,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hai trụ đồng nơi tiền sảnh đền thờ được đặt tên là gì?",
+  "options": [
+   "Si-ôn và Mô-ri-a",
+   "Gia-kin và Bô-ách",
+   "Ê-bên và Ê-xe",
+   "Hu-rơ và A-rôn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Trụ bên phải là Gia-kin, bên trái là Bô-ách. “Ông dựng trụ bên phải và đặt tên là Gia-kin; rồi dựng trụ bên trái và đặt tên là Bô-ách.” (1 Các Vua 7:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 10,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai đến thử tài Sa-lô-môn bằng những câu hỏi hóc búa?",
+  "options": [
+   "Nữ hoàng nước Sê-ba",
+   "Nữ hoàng Can-đác",
+   "Vua Hi-ram",
+   "Hoàng hậu Ai Cập"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bà nghe danh tiếng của Sa-lô-môn. “Nữ hoàng nước Sê-ba” (1 Các Vua 10:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 10,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thấy tận mắt, nữ hoàng Sê-ba nói người ta kể chưa được bao nhiêu?",
+  "options": [
+   "Một phần mười",
+   "Một phần ba",
+   "Gấp đôi",
+   "Một nửa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sự khôn ngoan và giàu có của vua vượt hơn lời đồn. “người ta nói chưa đến được một nửa!” (1 Các Vua 10:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 11,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Sa-lô-môn về già, điều gì khiến lòng vua lìa xa Chúa?",
+  "options": [
+   "Vua quá giàu có",
+   "Các bà vợ dụ theo thần khác",
+   "Vua bị bệnh nặng",
+   "Chiến tranh liên miên"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lòng vua không còn trung thành như Đa-vít. “các bà vợ của vua đã quyến rũ vua theo các thần khác” (1 Các Vua 11:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 11,
+  "verseStart": 30,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tiên tri A-hi-gia xé chiếc áo mới của mình ra làm mấy mảnh?",
+  "options": [
+   "Bảy mảnh",
+   "Mười mảnh",
+   "Mười hai mảnh",
+   "Hai mảnh"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hình ảnh vương quốc sắp bị xé ra. “xé ra làm mười hai mảnh” (1 Các Vua 11:30)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 12,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Dân Y-sơ-ra-ên xin vua Rô-bô-am điều gì?",
+  "options": [
+   "Giảm nhẹ ách nặng nề",
+   "Đánh nước Ai Cập",
+   "Tăng thêm quân lính",
+   "Xây thêm đền thờ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Thân phụ vua đã đặt ách quá nặng trên họ. “xin bệ hạ giảm nhẹ khổ dịch và ách nặng nề” (1 Các Vua 12:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 12,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Rô-bô-am trả lời dân theo ý kiến của ai?",
+  "options": [
+   "Tiên tri A-hi-gia",
+   "Những người trẻ",
+   "Mẹ của vua",
+   "Các trưởng lão"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vua bỏ lời khuyên của các trưởng lão. “vua trả lời họ theo ý kiến của những người trẻ” (1 Các Vua 12:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 12,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Rô-bô-am nói sẽ trừng phạt dân bằng gì?",
+  "options": [
+   "Lửa",
+   "Gậy sắt",
+   "Roi da",
+   "Roi bọ cạp"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cha vua trừng phạt bằng roi da. “trẫm sẽ trừng phạt các ngươi bằng roi bọ cạp” (1 Các Vua 12:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 12,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giê-rô-bô-am làm gì để dân khỏi lên Giê-ru-sa-lem thờ phượng?",
+  "options": [
+   "Dời Hòm Giao Ước",
+   "Xây đền thờ bằng đá",
+   "Làm hai bò con bằng vàng",
+   "Cấm dân đi lại"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông lặp lại tội của dân dưới chân núi Si-na-i. “vua truyền làm hai con bò con bằng vàng” (1 Các Vua 12:28)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 12,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giê-rô-bô-am đặt hai tượng bò con ở đâu?",
+  "options": [
+   "Bê-tên và Đan",
+   "Si-lô và Si-chem",
+   "Hếp-rôn và Bết-lê-hem",
+   "Giê-ri-cô và Ghinh-ganh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ở cực nam và cực bắc vương quốc phía bắc. “Vua đặt một tượng bò con ở Bê-tên, còn tượng kia đặt ở Đan.” (1 Các Vua 12:29)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 16,
+  "verseStart": 31,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua A-háp cưới ai làm vợ?",
+  "options": [
+   "Mi-canh",
+   "Giê-sa-bên",
+   "A-tha-li",
+   "Ma-a-ca"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Từ đó vua phục vụ và thờ lạy Ba-anh. “là Giê-sa-bên làm vợ” (1 Các Vua 16:31)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 19,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ê-li ngồi dưới cây gì và cầu xin được chết?",
+  "options": [
+   "Cây chà là",
+   "Cây sồi",
+   "Cây vả",
+   "Cây giếng giêng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông chạy trốn sau khi Giê-sa-bên đe dọa. “Ông đến ngồi dưới một cây giếng giêng” (1 Các Vua 19:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 19,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhờ lương thực thiên sứ ban, Ê-li đi bao lâu đến núi Hô-rếp?",
+  "options": [
+   "Ba ngày ba đêm",
+   "Mười hai ngày",
+   "Bốn mươi ngày bốn mươi đêm",
+   "Bảy ngày"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hô-rếp là núi của Đức Chúa Trời. “ông có sức để đi bốn mươi ngày và bốn mươi đêm đến Hô-rếp” (1 Các Vua 19:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 19,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau gió lớn, động đất và lửa, Ê-li nghe thấy gì?",
+  "options": [
+   "Một tiếng êm dịu nhỏ nhẹ",
+   "Tiếng sấm lớn",
+   "Tiếng kèn vang",
+   "Tiếng thiên sứ ca hát"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đức Giê-hô-va không ở trong gió, động đất hay lửa. “có một tiếng êm dịu nhỏ nhẹ” (1 Các Vua 19:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 19,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va bảo Ê-li xức dầu cho ai làm tiên tri thay mình?",
+  "options": [
+   "Giê-hu",
+   "A-hi-gia",
+   "Mi-chê",
+   "Ê-li-sê"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ê-li-sê là con trai Sa-phát. “con sẽ xức dầu cho Ê-li-sê, con trai Sa-phát” (1 Các Vua 19:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 19,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Ê-li tìm gặp, Ê-li-sê đang làm gì?",
+  "options": [
+   "Đánh cá",
+   "Cày ruộng",
+   "Chăn chiên",
+   "Hái nho"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Có mười hai đôi bò đang kéo cày. “đang cày ruộng” (1 Các Vua 19:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 19,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đi ngang qua, Ê-li ném vật gì trên Ê-li-sê?",
+  "options": [
+   "Dầu xức",
+   "Một chén nước",
+   "Áo choàng của mình",
+   "Cây gậy"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Dấu hiệu kêu gọi Ê-li-sê theo ông. “ném áo choàng mình trên Ê-li-sê” (1 Các Vua 19:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 21,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì sao Na-bốt không chịu nhượng vườn nho cho vua A-háp?",
+  "options": [
+   "Là di sản của tổ phụ",
+   "Vì vườn đã bán",
+   "Vì giá quá thấp",
+   "Vì ông ghét vua"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đất đai là sản nghiệp Chúa ban cho mỗi gia đình. “Đức Giê-hô-va không cho phép tôi nhượng cho bệ hạ di sản của tổ phụ tôi!” (1 Các Vua 21:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 1,
+  "verseStart": 33,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sa-lô-môn được đưa xuống suối nào để xức dầu làm vua?",
+  "options": [
+   "Suối Ki-sôn",
+   "Suối Ghi-hôn",
+   "Suối Kê-rít",
+   "Suối Ha-rốt"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Cùng lúc A-đô-ni-gia đang mở tiệc tự xưng vua. “đưa thái tử xuống suối Ghi-hôn” (1 Các Vua 1:33)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 4,
+  "verseStart": 32,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sa-lô-môn đã sáng tác bao nhiêu bài ca?",
+  "options": [
+   "Ba nghìn bài",
+   "Một trăm năm mươi bài",
+   "Năm trăm bài",
+   "Một nghìn lẻ năm bài"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cùng với ba nghìn câu châm ngôn. “sáng tác một nghìn lẻ năm bài ca” (1 Các Vua 4:32)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 4,
+  "verseStart": 33,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sa-lô-môn luận về cây cối, từ cây bá hương ở Li-ban cho đến cây gì?",
+  "options": [
+   "Cây ô-liu",
+   "Cây chà là",
+   "Cây bài hương trên tường",
+   "Cây vả"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Từ cây lớn nhất đến cây nhỏ nhất. “cho đến cây bài hương mọc trên tường” (1 Các Vua 4:33)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 6,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đền thờ được khởi công vào năm thứ mấy kể từ khi ra khỏi Ai Cập?",
+  "options": [
+   "Năm ba trăm",
+   "Năm bốn trăm ba mươi",
+   "Năm bốn trăm tám mươi",
+   "Năm bốn mươi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tức năm thứ tư triều Sa-lô-môn. “Vào năm bốn trăm tám mươi” (1 Các Vua 6:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 6,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Tháng Xíp, tháng khởi công đền thờ, là tháng thứ mấy?",
+  "options": [
+   "Tháng thứ bảy",
+   "Tháng thứ nhất",
+   "Tháng thứ mười hai",
+   "Tháng thứ hai"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Năm thứ tư Sa-lô-môn trị vì. “nhằm tháng Xíp, nghĩa là tháng thứ hai” (1 Các Vua 6:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 11,
+  "verseStart": 31,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "A-hi-gia bảo Giê-rô-bô-am lấy bao nhiêu mảnh áo về phần mình?",
+  "options": [
+   "Hai mảnh",
+   "Mười mảnh",
+   "Một mảnh",
+   "Mười hai mảnh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tượng trưng cho mười bộ tộc. “Hãy lấy mười mảnh về phần ông” (1 Các Vua 11:31)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 11,
+  "verseStart": 29,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "A-hi-gia, người xé áo trước mặt Giê-rô-bô-am, là tiên tri ở đâu?",
+  "options": [
+   "Si-lô",
+   "Bê-tên",
+   "Ra-ma",
+   "Ghinh-ganh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Hai người gặp nhau ngoài đồng. “A-hi-gia, nhà tiên tri ở Si-lô” (1 Các Vua 11:29)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 16,
+  "verseStart": 31,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giê-sa-bên là con gái của vua nào?",
+  "options": [
+   "Hi-ram, vua Ty-rơ",
+   "Ết-ba-anh, vua Si-đôn",
+   "Ôm-ri, vua Y-sơ-ra-ên",
+   "Bên Ha-đát, vua A-ram"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bà đem việc thờ Ba-anh vào Y-sơ-ra-ên. “con gái Ết-ba-anh, vua dân Si-đôn” (1 Các Vua 16:31)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 19,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ê-li-sê cầm đôi bò thứ mấy khi Ê-li đến?",
+  "options": [
+   "Đôi thứ mười hai",
+   "Đôi thứ nhất",
+   "Đôi thứ mười",
+   "Đôi thứ bảy"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông đi sau cùng trong mười hai đôi bò. “chính ông cầm đôi thứ mười hai” (1 Các Vua 19:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 21,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "A-háp muốn lấy vườn nho của Na-bốt để làm gì?",
+  "options": [
+   "Làm chuồng ngựa",
+   "Làm kho lúa",
+   "Xây đền Ba-anh",
+   "Làm vườn rau"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vì vườn ở gần cung điện vua. “để trẫm làm vườn rau” (1 Các Vua 21:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 22,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Tiên tri nào bị vua Y-sơ-ra-ên ghét vì chỉ nói điều dữ về vua?",
+  "options": [
+   "Ê-li",
+   "A-hi-gia",
+   "Mi-chê, con Giêm-la",
+   "Giê-hu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Giô-sa-phát vẫn muốn nghe ông. “tên là Mi-chê, con của Giêm-la” (1 Các Vua 22:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Kings",
+  "chapter": 19,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ê-li-sê lấy gì làm củi để nấu thịt bò đãi mọi người?",
+  "options": [
+   "Cây gậy",
+   "Cái cày",
+   "Cánh cửa nhà",
+   "Hàng rào"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông dứt khoát bỏ nghề cũ để theo Ê-li. “lấy cày làm củi nấu thịt đãi mọi người” (1 Các Vua 19:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

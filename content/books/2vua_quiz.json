@@ -1,0 +1,853 @@
+[
+ {
+  "book": "2 Kings",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bị bệnh, vua A-cha-xia sai người đi cầu vấn thần nào?",
+  "options": [
+   "Mo-lóc, thần Am-môn",
+   "Kê-mốt, thần Mô-áp",
+   "Đa-gôn, thần Ách-đốt",
+   "Ba-anh Xê-bụt, thần Éc-rôn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ê-li hỏi: Trong Y-sơ-ra-ên không có Đức Chúa Trời sao? “Hãy đi cầu vấn Ba-anh Xê-bụt, thần của Éc-rôn” (2 Các Vua 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua nhận ra Ê-li qua cách ăn mặc nào?",
+  "options": [
+   "Áo lông, thắt lưng da",
+   "Áo choàng đỏ",
+   "Áo vải gai trắng",
+   "Áo giáp đồng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Giăng Báp-tít về sau cũng ăn mặc như vậy. “Người ấy mặc áo lông và thắt lưng bằng dây da.” (2 Các Vua 1:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 2,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ê-li-sê đổ gì xuống nguồn nước Giê-ri-cô để chữa lành nó?",
+  "options": [
+   "Dầu",
+   "Mật ong",
+   "Muối",
+   "Bột"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Từ đó nước không còn gây chết chóc. “đổ muối xuống” (2 Các Vua 2:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bà góa mắc nợ thưa với Ê-li-sê rằng trong nhà chỉ còn gì?",
+  "options": [
+   "Một túi bạc",
+   "Một bình dầu nhỏ",
+   "Một nắm bột",
+   "Một con dê"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ê-li-sê bảo bà đi mượn thật nhiều bình không. “trừ một bình dầu nhỏ” (2 Các Vua 4:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Dầu của bà góa ngừng chảy khi nào?",
+  "options": [
+   "Khi bà cầu nguyện",
+   "Khi chủ nợ đến",
+   "Khi không còn bình nào",
+   "Khi trời tối"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phước lành tràn đến mức các bình có thể chứa. “Không còn bình nào nữa cả” (2 Các Vua 4:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chủ nợ đòi bắt gì của người vợ góa môn đồ tiên tri?",
+  "options": [
+   "Căn nhà của bà",
+   "Hai đứa con làm nô lệ",
+   "Bình dầu của bà",
+   "Ruộng đất của bà"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bà kêu cứu với Ê-li-sê. “chủ nợ đến đòi bắt hai đứa con tôi làm nô lệ” (2 Các Vua 4:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 4,
+  "verseStart": 41,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ê-li-sê bỏ gì vào nồi canh có độc để mọi người ăn được?",
+  "options": [
+   "Mật ong",
+   "Dầu",
+   "Muối",
+   "Bột"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nồi canh không còn độc nữa. “Ông bỏ bột vào nồi canh” (2 Các Vua 4:41)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 4,
+  "verseStart": 43,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ít bánh được Ê-li-sê phát cho bao nhiêu người mà còn thừa?",
+  "options": [
+   "Một trăm người",
+   "Bốn nghìn người",
+   "Năm nghìn người",
+   "Mười hai người"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đúng như lời Đức Giê-hô-va đã phán. “làm sao con có thể phát cho một trăm người ăn?” (2 Các Vua 4:43)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 5,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đầy tớ nào của Ê-li-sê chạy theo để nhận quà của Na-a-man?",
+  "options": [
+   "Giê-hu",
+   "Ghê-đa-lia",
+   "Ghê-ha-xi",
+   "Ô-bết"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông tham của mà thầy mình đã từ chối. “là Ghê-ha-xi nghĩ thầm” (2 Các Vua 5:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 5,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì tham lam và nói dối, Ghê-ha-xi bị gì?",
+  "options": [
+   "Mù mắt",
+   "Bệnh phong hủi",
+   "Bị câm",
+   "Bại liệt"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bệnh của Na-a-man dính vào ông. “bị bệnh phong hủi trắng như tuyết” (2 Các Vua 5:27)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 6,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ê-li-sê làm gì để lưỡi rìu rơi xuống nước nổi lên?",
+  "options": [
+   "Đập gậy xuống nước",
+   "Đổ muối xuống",
+   "Lặn xuống tìm",
+   "Ném khúc cây xuống nước"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa quan tâm cả nỗi lo nhỏ của môn đồ. “Ê-li-sê chặt một khúc cây ném xuống chỗ đó, làm cho lưỡi rìu nổi lên.” (2 Các Vua 6:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 6,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì sao người làm rơi lưỡi rìu kêu lên lo lắng?",
+  "options": [
+   "Cái rìu là đồ đi mượn",
+   "Rìu là cái duy nhất",
+   "Rìu là của vua",
+   "Rìu làm bằng vàng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ê-li-sê giúp anh lấy lại lưỡi rìu. “Cái rìu nầy con mượn của người ta.” (2 Các Vua 6:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 6,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bị quân A-ram vây, Ê-li-sê trấn an đầy tớ thế nào?",
+  "options": [
+   "Hãy ra đầu hàng",
+   "Hãy chuẩn bị gươm",
+   "Phe ta đông hơn phe chúng",
+   "Hãy chạy trốn ngay"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đầy tớ chưa thấy đạo quân của Chúa. “những người ở với chúng ta đông hơn những người ở với chúng nó” (2 Các Vua 6:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 6,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Được Chúa mở mắt, đầy tớ của Ê-li-sê thấy gì?",
+  "options": [
+   "Ngựa và chiến xa bằng lửa",
+   "Quân Y-sơ-ra-ên đến",
+   "Thiên sứ ca hát",
+   "Một cầu vồng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúng bao quanh Ê-li-sê trên núi. “núi đầy những ngựa và chiến xa bằng lửa” (2 Các Vua 6:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 7,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Có bao nhiêu người phong hủi ngồi ở lối vào cổng thành Sa-ma-ri?",
+  "options": [
+   "Bảy người",
+   "Bốn người",
+   "Mười người",
+   "Hai người"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ phát hiện trại quân A-ram đã bỏ trống. “có bốn người phong hủi” (2 Các Vua 7:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 9,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lính canh nhận ra Giê-hu từ xa nhờ điều gì?",
+  "options": [
+   "Bắn cung rất giỏi",
+   "Hát rất to",
+   "Mặc áo đỏ",
+   "Đánh xe hung hăng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cách đánh xe của Giê-hu ai cũng biết. “ông ấy đánh xe một cách hung hăng” (2 Các Vua 9:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 11,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Cậu bé Giô-ách ẩn trốn trong đền thờ bao lâu?",
+  "options": [
+   "Mười năm",
+   "Sáu năm",
+   "Ba năm",
+   "Bảy năm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Để thoát khỏi tay A-tha-li. “trong đền thờ Đức Giê-hô-va sáu năm” (2 Các Vua 11:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 11,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giô-ách lên ngôi vua khi mấy tuổi?",
+  "options": [
+   "Tám tuổi",
+   "Năm tuổi",
+   "Mười hai tuổi",
+   "Bảy tuổi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Thầy tế lễ Giê-hô-gia-đa giúp cậu lên ngôi. “Giô-ách lên ngai vua khi mới bảy tuổi.” (2 Các Vua 11:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 12,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Để nhận bạc sửa đền thờ, thầy tế lễ đặt gì gần bàn thờ?",
+  "options": [
+   "Một cái rương khoét lỗ",
+   "Một cái bình đất",
+   "Một bàn đá",
+   "Một túi da"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Các thầy tế lễ canh cửa bỏ bạc vào đó. “lấy một cái rương, khoét lỗ trên nắp” (2 Các Vua 12:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 13,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Một người chết sống lại khi chạm vào điều gì?",
+  "options": [
+   "Áo choàng của Ê-li",
+   "Hòm Giao Ước",
+   "Hài cốt của Ê-li-sê",
+   "Gậy của Ê-li-sê"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người ta vội ném xác vào mộ khi thấy quân cướp. “Vừa khi chạm đến hài cốt của Ê-li-sê thì người chết sống lại” (2 Các Vua 13:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 17,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua nước nào chiếm Sa-ma-ri và đày dân Y-sơ-ra-ên đi?",
+  "options": [
+   "Ba-by-lôn",
+   "Ai Cập",
+   "Ba Tư",
+   "A-si-ri"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vương quốc phía bắc chấm dứt từ đó. “vua A-si-ri chiếm được thành Sa-ma-ri” (2 Các Vua 17:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 18,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua Ê-xê-chia đập nát vật nào Môi-se đã làm?",
+  "options": [
+   "Con rắn bằng đồng",
+   "Bò con bằng vàng",
+   "Hai bảng đá",
+   "Gậy của A-rôn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vì dân vẫn xông hương cho nó. “đập nát con rắn bằng đồng mà Môi-se đã làm” (2 Các Vua 18:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 20,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va cho vua Ê-xê-chia sống thêm bao lâu?",
+  "options": [
+   "Bảy năm",
+   "Mười lăm năm",
+   "Mười năm",
+   "Bốn mươi năm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa nghe lời cầu nguyện và thấy nước mắt của vua. “Ta sẽ cho con sống thêm mười lăm năm nữa.” (2 Các Vua 20:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 20,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Dấu lạ ban cho Ê-xê-chia: bóng mặt trời đã làm gì?",
+  "options": [
+   "Biến mất hẳn",
+   "Tiến tới mười bậc",
+   "Lui lại mười bậc",
+   "Đứng yên một ngày"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ê-sai cầu khẩn và Chúa làm dấu lạ. “lui lại mười bậc” (2 Các Vua 20:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 25,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Quân Ba-by-lôn đã làm gì với đền thờ Đức Giê-hô-va?",
+  "options": [
+   "Đóng cửa",
+   "Sửa lại",
+   "Thiêu hủy",
+   "Dời đi nơi khác"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cả cung vua và nhà cửa trong thành cũng bị đốt. “Ông thiêu hủy đền thờ Đức Giê-hô-va” (2 Các Vua 25:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 11,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ai đã giấu cậu bé Giô-ách khỏi tay A-tha-li?",
+  "options": [
+   "Giô-sê-ba",
+   "Giê-sa-bên",
+   "Mi-canh",
+   "Hun-đa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bà là chị của vua A-cha-xia. “Nhưng Giô-sê-ba, con gái của vua Giô-ram” (2 Các Vua 11:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vua A-cha-xia ngã bệnh vì chuyện gì?",
+  "options": [
+   "Bị trúng tên",
+   "Ăn phải độc",
+   "Bị ngựa đá",
+   "Té qua lan can trên lầu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vua ở tại Sa-ma-ri. “Vua A-cha-xia té ngang qua lan can trên lầu của mình” (2 Các Vua 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Tiên tri Ê-li là người ở đâu?",
+  "options": [
+   "A-bên Mê-hô-la",
+   "Thi-sê-be",
+   "Si-lô",
+   "Sa-rép-ta"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông thường được gọi là Ê-li người Thi-sê-be. “Ê-li, người Thi-sê-be” (2 Các Vua 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 11,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong sáu năm Giô-ách ẩn trốn, ai cai trị xứ Giu-đa?",
+  "options": [
+   "Giô-sê-ba",
+   "Giê-sa-bên",
+   "Ma-a-ca",
+   "A-tha-li"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bà đã tìm giết các hoàng tử. “trong khi A-tha-li cai trị xứ sở” (2 Các Vua 11:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 12,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thầy tế lễ nào đặt rương nhận bạc để sửa đền thờ?",
+  "options": [
+   "Hinh-kia",
+   "Giê-hô-gia-đa",
+   "A-bia-tha",
+   "Xa-đốc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông cũng là người giúp Giô-ách lên ngôi. “Thầy tế lễ Giê-hô-gia-đa lấy một cái rương” (2 Các Vua 12:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 17,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sa-ma-ri thất thủ vào năm thứ mấy đời vua Ô-sê?",
+  "options": [
+   "Năm thứ chín",
+   "Năm thứ hai mươi",
+   "Năm thứ nhất",
+   "Năm thứ mười hai"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dân bị đày sang A-si-ri và Mê-đi. “Vào năm thứ chín đời trị vì của Ô-sê” (2 Các Vua 17:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 18,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người ta gọi con rắn bằng đồng bị Ê-xê-chia đập nát là gì?",
+  "options": [
+   "Đa-gôn",
+   "A-sê-ra",
+   "Nê-hu-tan",
+   "Ba-anh"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vật Chúa từng dùng để chữa lành đã thành thần tượng. “người ta gọi nó là Nê-hu-tan” (2 Các Vua 18:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 19,
+  "verseStart": 35,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong một đêm, thiên sứ đánh giết bao nhiêu người trong trại quân A-si-ri?",
+  "options": [
+   "Mười tám nghìn",
+   "Hai trăm nghìn",
+   "Một trăm nghìn",
+   "Một trăm tám mươi lăm nghìn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa giải cứu Giê-ru-sa-lem như đã hứa. “một trăm tám mươi lăm nghìn người trong trại quân A-si-ri” (2 Các Vua 19:35)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 20,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Bóng mặt trời lui lại mười bậc trên đồng hồ mặt trời của ai?",
+  "options": [
+   "Sa-lô-môn",
+   "Ê-xê-chia",
+   "A-cha",
+   "Đa-vít"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "A-cha là cha của Ê-xê-chia. “đồng hồ mặt trời của A-cha” (2 Các Vua 20:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 20,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chúa hứa Ê-xê-chia sẽ đi lên đền thờ vào ngày thứ mấy?",
+  "options": [
+   "Ngày thứ ba",
+   "Ngày thứ nhất",
+   "Ngày thứ bảy",
+   "Ngày thứ mười"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dấu hiệu vua đã được chữa lành. “đến ngày thứ ba, con sẽ đi lên đền thờ Đức Giê-hô-va” (2 Các Vua 20:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 25,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Quan chỉ huy vệ binh Ba-by-lôn đến thiêu hủy Giê-ru-sa-lem là ai?",
+  "options": [
+   "Nê-bu-cát-nết-sa",
+   "Nê-bu-xa-ra-đan",
+   "Ê-vinh Mê-rô-đác",
+   "Bên-sát-xa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Năm thứ mười chín triều Nê-bu-cát-nết-sa. “quan chỉ huy vệ binh Nê-bu-xa-ra-đan” (2 Các Vua 25:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Kings",
+  "chapter": 25,
+  "verseStart": 27,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vua Ba-by-lôn nào ân xá cho Giê-hô-gia-kin ra khỏi ngục?",
+  "options": [
+   "Bên-sát-xa",
+   "Si-ru",
+   "Ê-vinh Mê-rô-đác",
+   "Nê-bu-cát-nết-sa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sách Các Vua kết thúc với tia hi vọng nầy. “Ê-vinh Mê-rô-đác, vua Ba-by-lôn” (2 Các Vua 25:27)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

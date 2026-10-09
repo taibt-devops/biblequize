@@ -47,3 +47,14 @@
   - Bật lại nếu cần: `UPDATE questions q JOIN questions_bak_20261010_rvv11_w2 b ON b.id = q.id SET q.is_active = b.is_active;`
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-9 Đợt 3: vòng 2, phần Cựu Ước (11 sách)
+  - Source: user 10/10: "Tiếp vòng 2" · vòng 2 (22 sách, 1.618 câu cũ) chia hai đợt để lên prod từng phần: đợt 3 Cựu Ước, đợt 4 Tân Ước
+  - Status: [x] DONE · 436 câu thay 1.079 câu cũ · cũ Dễ/TB/Khó → mới Dễ (cốt lõi + bộ sách) / TB / Khó: Phục Truyền Luật Lệ Ký 61/72/37 → 0+15 / 30 / 15 · Giô-suê 51/48/21 → 18+5 / 25 / 12 · Các Quan Xét 52/46/22 → 20+5 / 25 / 12 · 2 Sa-mu-ên 50/48/22 → 0+15 / 25 / 12 · 1 Các Vua 52/46/22 → 40+0 / 25 / 12 · 2 Các Vua 52/46/22 → 37+0 / 25 / 12 · Nê-hê-mi 52/47/21 → 10+10 / 20 / 10 · Gióp 10/8/2 → 10+5 / 10 / 5 · Truyền Đạo 12/6/2 → 7+8 / 10 / 5 · Ê-sai 30/43/25 → 22+5 / 25 / 15 · Giê-rê-mi 15/23/12 → 6+10 / 18 / 10
+  - Nội dung: bỏ qua chi tiết bạo lực/nhạy cảm (Các Quan Xét 19–21, Am-nôn, cái chết của Áp-sa-lôm chỉ hỏi cây/con la, Gióp không hỏi Bê-hê-mốt vì RVV11 đánh số chương 40–41 kiểu Hê-bơ-rơ), không hỏi chỗ Kinh Thánh tự lệch nhau (2 Sa-mu-ên 21:19 Gô-li-át; giá sân đạp lúa ở 1 Sử Ký)
+  - `isaiah_quiz.json` có 1 câu Lu-ca thế hệ cũ (Lu-ca 4:18, đã viết lại ở đợt 1) → rút cùng file · `retired_hashes.txt` 3.327 hash · `git rm` 11 file tiếng Việt, giữ `_en` · 47 test xanh
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-10 Đợt 3 lên prod
+  - Status: [ ] TODO · seed một lần `rvv11_books_quiz.json` (`sync-stale=false`; kỳ vọng chèn 436 câu) → đối chiếu 1.079 hash + rà hàng mồ côi của 11 sách → sao lưu `questions_bak_20261010_rvv11_w3` → `is_active=0`
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]

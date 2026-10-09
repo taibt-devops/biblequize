@@ -26,7 +26,7 @@
   - Học Thuộc vẫn dùng Bản Truyền Thống 1926 (quyết định 2026-09-15) cho tới khi có giấy phép toàn văn RVV11 (đã thay: Học Thuộc dùng RVV11 từ 09/10, xem quyết định phía trên). Bộ tiếng Anh giữ nguyên.
   - Tên sách trên giao diện cũng theo RVV11 (user 09/10: "đổi sang tên RVV11 cho thống nhất"): Xuất Ai Cập Ký, Dân Số Ký, Phục Truyền Luật Lệ Ký, Thi Thiên, E-xơ-ra, Công Vụ Các Sứ Đồ (V74 + `bibleData.ts`).
   - Hash các câu đã tắt lưu trong `content/books/retired_hashes.txt`: hàng cũ còn trong DB nên câu mới trùng hash sẽ bị seeder bỏ qua.
-- **Implementation:** task `docs/todo/active/2026-10-09-rvv11-books-wave1.md` (RVB-1..8; đợt 2 ở RVB-7/8).
+- **Implementation:** task `docs/todo/active/2026-10-09-rvv11-books-wave1.md` (RVB-1..10; đợt 2 ở RVB-7/8, đợt 3 ở RVB-9/10).
 
 ---
 

@@ -1,0 +1,876 @@
+[
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va nói Ngài đã biết Giê-rê-mi từ khi nào?",
+  "options": [
+   "Khi ông lên mười hai tuổi",
+   "Trước khi ông thành hình trong lòng mẹ",
+   "Khi ông làm thầy tế lễ",
+   "Khi ông vào đền thờ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngài đã biệt riêng ông làm tiên tri cho các nước. “Trước khi tạo nên con trong lòng mẹ, Ta đã biết con” (Giê-rê-mi 1:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi được kêu gọi, Giê-rê-mi viện cớ gì?",
+  "options": [
+   "Ông đang bị bệnh",
+   "Ông đang bận việc",
+   "Ông còn non trẻ",
+   "Ông đã quá già"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông nói mình không biết ăn nói. “vì con còn non trẻ” (Giê-rê-mi 1:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va đưa tay chạm vào đâu của Giê-rê-mi?",
+  "options": [
+   "Miệng",
+   "Tay",
+   "Tai",
+   "Mắt"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài đặt lời Ngài trong miệng ông. “Đức Giê-hô-va đưa tay chạm vào miệng tôi” (Giê-rê-mi 1:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 29,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chương trình Chúa hoạch định cho dân lưu đày là chương trình gì?",
+  "options": [
+   "Giàu có và quyền lực",
+   "Chiến thắng kẻ thù",
+   "Rời Ba-by-lôn ngay",
+   "Bình an, không phải tai họa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để ban cho họ một tương lai và một hi vọng. “đó là chương trình bình an chứ không phải tai họa” (Giê-rê-mi 29:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 29,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo Giê-rê-mi, khi nào dân sẽ tìm gặp Chúa?",
+  "options": [
+   "Khi về đến Giê-ru-sa-lem",
+   "Khi tìm kiếm Ngài hết lòng",
+   "Khi dâng nhiều lễ vật",
+   "Khi có tiên tri dẫn đường"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lời hứa cho dân đang bị lưu đày. “khi các con tìm kiếm Ta hết lòng” (Giê-rê-mi 29:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 31,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va nói Ngài yêu thương dân bằng tình yêu thế nào?",
+  "options": [
+   "Tình yêu nghiêm khắc",
+   "Tình yêu có điều kiện",
+   "Tình yêu ngắn ngủi",
+   "Tình yêu vĩnh cửu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nên Ngài lấy lòng nhân từ kéo họ đến. “Ta đã yêu thương con bằng tình yêu vĩnh cửu” (Giê-rê-mi 31:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 33,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va hứa gì khi dân kêu cầu Ngài?",
+  "options": [
+   "Ngài sẽ im lặng",
+   "Ngài sẽ trách phạt",
+   "Ngài sẽ trả lời",
+   "Ngài sẽ đi xa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngài sẽ tỏ những việc lớn và khó. “Hãy kêu cầu Ta, Ta sẽ trả lời con” (Giê-rê-mi 33:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 17,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giê-rê-mi nói phước cho người nào?",
+  "options": [
+   "Người nhờ cậy Đức Giê-hô-va",
+   "Người có nhiều bạn",
+   "Người khôn ngoan",
+   "Người giàu có"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lấy Đức Giê-hô-va làm nơi nương tựa. “Phước cho người nhờ cậy Đức Giê-hô-va” (Giê-rê-mi 17:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 17,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giê-rê-mi nói lòng người ta thế nào?",
+  "options": [
+   "Dối trá hơn muôn vật",
+   "Trong sạch",
+   "Ngay thẳng",
+   "Mạnh mẽ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Và rất là xấu xa, ai biết được. “Lòng người ta là dối trá hơn muôn vật” (Giê-rê-mi 17:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 31,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va hứa sẽ lập điều gì với nhà Y-sơ-ra-ên và Giu-đa?",
+  "options": [
+   "Một luật mới cho vua",
+   "Một đền thờ mới",
+   "Một giao ước mới",
+   "Một vương quốc mới"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus nói về giao ước mới trong huyết Ngài. “Ta sẽ lập một giao ước mới” (Giê-rê-mi 31:31)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tiên tri Giê-rê-mi là con trai của ai?",
+  "options": [
+   "Giô-si-a",
+   "A-mốt",
+   "Ba-rúc",
+   "Hinh-kia"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông thuộc dòng thầy tế lễ. “Giê-rê-mi, con trai Hinh-kia” (Giê-rê-mi 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng đầu tiên, Giê-rê-mi thấy nhánh cây gì?",
+  "options": [
+   "Cây ô-liu",
+   "Cây hạnh",
+   "Cây vả",
+   "Cây nho"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa đang thức để làm trọn lời Ngài. “Con thấy một nhánh cây hạnh.” (Giê-rê-mi 1:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nồi nước sôi trong khải tượng của Giê-rê-mi nghiêng xuống từ phương nào?",
+  "options": [
+   "Phương nam",
+   "Phương tây",
+   "Phương bắc",
+   "Phương đông"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tai họa sẽ đến từ phương bắc. “miệng nồi nghiêng xuống từ phương bắc” (Giê-rê-mi 1:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va nói dân đã lìa bỏ Ngài là nguồn gì?",
+  "options": [
+   "Nguồn ánh sáng",
+   "Nguồn bánh sống",
+   "Nguồn khôn ngoan",
+   "Nguồn nước sống"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đó là điều ác thứ nhất của dân. “Là nguồn nước sống” (Giê-rê-mi 2:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lìa bỏ Chúa, dân tự đào thứ gì không giữ được nước?",
+  "options": [
+   "Bể chứa nước rạn nứt",
+   "Kênh dẫn nước",
+   "Ao cá",
+   "Giếng thật sâu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là điều ác thứ hai. “Tự đào bể chứa nước, Bể bị rạn nứt” (Giê-rê-mi 2:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 13,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va bảo Giê-rê-mi mua vật gì thắt vào lưng?",
+  "options": [
+   "Bao gai",
+   "Đai bằng vải gai",
+   "Dây thắt lưng da",
+   "Áo choàng mới"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hình ảnh dân sự từng gắn bó với Chúa. “mua cho mình một cái đai bằng vải gai” (Giê-rê-mi 13:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 17,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người nhờ cậy Đức Giê-hô-va được ví như cây trồng ở đâu?",
+  "options": [
+   "Trong vườn vua",
+   "Bên bờ suối",
+   "Trên núi đá",
+   "Giữa sa mạc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Gặp hạn hán vẫn ra trái không dứt. “Người ấy như cây trồng bên bờ suối” (Giê-rê-mi 17:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 19,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va bảo Giê-rê-mi đến chỗ thợ gốm mua gì?",
+  "options": [
+   "Một bình bằng đất nung",
+   "Một khối đất sét",
+   "Một bàn xoay",
+   "Một chén vàng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông sẽ đập vỡ nó làm dấu hiệu. “mua một cái bình bằng đất nung” (Giê-rê-mi 19:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 20,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giê-rê-mi nói khi ông nín lặng, lời Chúa trong lòng ông như gì?",
+  "options": [
+   "Gió nhẹ",
+   "Nước mát",
+   "Mật ngọt",
+   "Ngọn lửa thiêu đốt"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Âm ỉ trong xương, không sao chịu được. “lời Ngài như ngọn lửa thiêu đốt lòng con” (Giê-rê-mi 20:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 29,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va bảo dân lưu đày cầu nguyện cho điều gì?",
+  "options": [
+   "Chỉ Giê-ru-sa-lem",
+   "Vua Ai Cập",
+   "Thành nơi họ bị đày đến",
+   "Kẻ thù Ba-by-lôn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sự thịnh vượng của thành ấy là của họ. “Hãy tìm cầu sự thịnh vượng cho thành mà Ta đày các con đến.” (Giê-rê-mi 29:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 29,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thời hạn cho Ba-by-lôn trước khi dân được trở về là bao lâu?",
+  "options": [
+   "Bảy mươi năm",
+   "Bốn mươi năm",
+   "Bốn trăm năm",
+   "Mười hai năm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đa-ni-ên đọc thấy lời nầy và cầu nguyện. “Khi thời hạn bảy mươi năm cho Ba-by-lôn kết thúc” (Giê-rê-mi 29:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 31,
+  "verseStart": 33,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong giao ước mới, Chúa đặt luật pháp Ngài ở đâu?",
+  "options": [
+   "Trên khung cửa",
+   "Trong đền thờ",
+   "Trên bảng đá",
+   "Vào lòng dạ dân Ngài"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Khắc ghi lên tâm khảm họ. “Ta sẽ đặt luật pháp Ta vào lòng dạ chúng” (Giê-rê-mi 31:33)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 36,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai ghi chép vào cuộn sách những lời Giê-rê-mi đọc?",
+  "options": [
+   "Ha-na-mê-ên",
+   "Giê-hu-đi",
+   "Ba-rúc",
+   "Ê-bết Mê-lết"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ba-rúc là người thư ký trung thành của Giê-rê-mi. “Giê-rê-mi đọc cho Ba-rúc ghi chép vào cuộn sách” (Giê-rê-mi 36:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 36,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nghe đọc cuộn sách, nhà vua đã làm gì với nó?",
+  "options": [
+   "Đọc cho dân nghe",
+   "Cắt ra và ném vào lửa",
+   "Trả lại Giê-rê-mi",
+   "Cất vào kho"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Cho đến khi cả cuộn sách cháy rụi. “vua lấy dao rọc giấy cắt đi và ném vào lửa” (Giê-rê-mi 36:23)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 38,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giê-rê-mi bị thả xuống một cái hố có gì?",
+  "options": [
+   "Rắn độc",
+   "Sư tử",
+   "Nước sâu",
+   "Chỉ có bùn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông bị lún trong bùn. “Hố không có nước, chỉ có bùn” (Giê-rê-mi 38:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 38,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai đã ra tay cứu Giê-rê-mi khỏi hố bùn?",
+  "options": [
+   "Ghê-đa-lia",
+   "Ê-bết Mê-lết",
+   "Ba-rúc",
+   "Hinh-kia"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Một thái giám trong cung vua. “Thái giám Ê-bết Mê-lết, người Ê-thi-ô-pi” (Giê-rê-mi 38:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 38,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi kéo lên, Giê-rê-mi được bảo lót gì giữa nách và dây thừng?",
+  "options": [
+   "Giẻ và quần áo cũ",
+   "Lá cây",
+   "Rơm khô",
+   "Da chiên"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Để dây không làm ông bị thương. “lót mấy miếng giẻ và quần áo cũ ấy giữa nách và dây thừng” (Giê-rê-mi 38:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 9,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va nói ai tự hào thì hãy tự hào về điều gì?",
+  "options": [
+   "Sức mạnh mình",
+   "Sự khôn ngoan mình",
+   "Hiểu biết và nhận biết Ngài",
+   "Sự giàu có mình"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngài ưa thích nhân ái, liêm khiết và công chính. “Sự thấu hiểu và nhận biết Ta là Đức Giê-hô-va” (Giê-rê-mi 9:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giê-rê-mi thuộc các thầy tế lễ ở thành nào?",
+  "options": [
+   "Si-lô",
+   "A-na-tốt",
+   "Bết-ên",
+   "Ra-ma"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Thuộc xứ Bên-gia-min. “một trong những thầy tế lễ ở A-na-tốt” (Giê-rê-mi 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Qua nhánh cây hạnh, Đức Giê-hô-va cho biết Ngài đang làm gì?",
+  "options": [
+   "Thức để thực hiện lời Ngài",
+   "Sắp rời bỏ dân",
+   "Ngủ yên chờ đợi",
+   "Chờ dân ăn năn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài không để lời Ngài trôi qua. “Ta đang thức để thực hiện lời Ta đã phán” (Giê-rê-mi 1:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 13,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va dặn Giê-rê-mi không được làm gì với cái đai mới?",
+  "options": [
+   "Mang đi xa",
+   "Cất vào rương",
+   "Thắt vào lưng",
+   "Ngâm trong nước"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Về sau cái đai bị mục nát làm dấu hiệu. “nhưng chớ ngâm trong nước” (Giê-rê-mi 13:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 32,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giê-rê-mi mua ruộng ở A-na-tốt của ai?",
+  "options": [
+   "Sa-lum",
+   "Ba-rúc",
+   "Ha-na-mê-ên",
+   "Hinh-kia"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Anh họ của ông, con trai chú ông. “Vậy tôi mua ruộng ở A-na-tốt của Ha-na-mê-ên” (Giê-rê-mi 32:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 32,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giê-rê-mi đã cân bao nhiêu bạc để mua ruộng?",
+  "options": [
+   "Năm mươi siếc-lơ",
+   "Gần hai trăm gam bạc",
+   "Một ký bạc",
+   "Ba mươi miếng bạc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dấu hiệu dân sẽ còn mua bán ruộng đất trong xứ. “gần hai trăm gam bạc” (Giê-rê-mi 32:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 36,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ba-rúc, người chép lời Giê-rê-mi, là con trai của ai?",
+  "options": [
+   "Giê-hu-đi",
+   "Hinh-kia",
+   "Nê-ri-gia",
+   "Sa-phan"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông nhiều lần chép và đọc lời tiên tri. “Ba-rúc, con trai Nê-ri-gia” (Giê-rê-mi 36:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 36,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ai đọc cuộn sách trước mặt vua để vua cắt từng phần?",
+  "options": [
+   "Ba-rúc",
+   "Sa-phan",
+   "Giê-rê-mi",
+   "Giê-hu-đi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Mỗi lần đọc ba bốn cột, vua cắt đi. “Mỗi lần Giê-hu-đi đọc được ba bốn cột trong sách” (Giê-rê-mi 36:23)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 38,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giê-rê-mi bị thả xuống hố của ai trong sân vệ binh?",
+  "options": [
+   "Hoàng tử Manh-ki-gia",
+   "Vua Sê-đê-kia",
+   "Thầy tế lễ Pha-su-rơ",
+   "Ê-bết Mê-lết"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Họ dùng dây thả ông xuống. “thả xuống hố của hoàng tử Manh-ki-gia” (Giê-rê-mi 38:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 38,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ê-bết Mê-lết, người cứu Giê-rê-mi, là người nước nào?",
+  "options": [
+   "Ai Cập",
+   "Mô-áp",
+   "Ba-by-lôn",
+   "Ê-thi-ô-pi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Một người ngoại bang can đảm. “người Ê-thi-ô-pi” (Giê-rê-mi 38:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 38,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi Ê-bết Mê-lết nghe tin, nhà vua đang ngồi tại cổng nào?",
+  "options": [
+   "Cổng Bên-gia-min",
+   "Cổng Chiên",
+   "Cổng Thung Lũng",
+   "Cổng Nước"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông đến đó xin vua cho cứu Giê-rê-mi. “vua đang ngồi tại cổng Bên-gia-min” (Giê-rê-mi 38:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

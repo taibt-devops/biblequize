@@ -1,0 +1,1198 @@
+[
+ {
+  "book": "2 Samuel",
+  "chapter": 5,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít bắt đầu làm vua lúc bao nhiêu tuổi?",
+  "options": [
+   "Hai mươi tuổi",
+   "Ba mươi tuổi",
+   "Mười tám tuổi",
+   "Bốn mươi tuổi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông làm vua tổng cộng bốn mươi năm. “Đa-vít bắt đầu trị vì lúc ba mươi tuổi” (2 Sa-mu-ên 5:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 5,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít làm vua tất cả bao nhiêu năm?",
+  "options": [
+   "Năm mươi năm",
+   "Ba mươi năm",
+   "Hai mươi năm",
+   "Bốn mươi năm"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bảy năm rưỡi ở Hếp-rôn và ba mươi ba năm ở Giê-ru-sa-lem. “và làm vua được bốn mươi năm” (2 Sa-mu-ên 5:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đồn lũy Si-ôn mà Đa-vít chiếm được còn gọi là gì?",
+  "options": [
+   "Thành Đa-vít",
+   "Thành Giu-đa",
+   "Thành Bình An",
+   "Thành Sa-lô-môn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Từ đó Giê-ru-sa-lem thành kinh đô. “đồn lũy Si-ôn, đó là thành Đa-vít” (2 Sa-mu-ên 5:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 6,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi rước Hòm Giao Ước, Đa-vít làm gì trước mặt Đức Giê-hô-va?",
+  "options": [
+   "Khóc lóc",
+   "Quỳ im lặng",
+   "Nhảy múa hết sức",
+   "Ngồi đọc luật"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông vui mừng vì Hòm Giao Ước được rước về. “nhảy múa hết sức trước mặt Đức Giê-hô-va” (2 Sa-mu-ên 6:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 7,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít ở cung điện gỗ bá hương, còn Hòm Giao Ước lúc ấy ở đâu?",
+  "options": [
+   "Trong hang đá",
+   "Trong đền Đa-gôn",
+   "Trong lều vải",
+   "Ngoài đồng trống"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì thế Đa-vít muốn xây nhà cho Chúa. “còn Hòm Giao Ước của Đức Chúa Trời vẫn ở trong lều vải” (2 Sa-mu-ên 7:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 7,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va hứa dòng dõi kế vị Đa-vít sẽ xây gì?",
+  "options": [
+   "Một đền thờ cho danh Ngài",
+   "Một kho lúa",
+   "Một cung điện lớn",
+   "Một bức tường thành"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sa-lô-môn, con Đa-vít, đã xây đền thờ. “Nó sẽ xây cất một đền thờ cho danh Ta” (2 Sa-mu-ên 7:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 9,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít muốn làm ơn cho Mê-phi-bô-sết vì ai?",
+  "options": [
+   "Vua Sau-lơ",
+   "Giô-na-than, cha ông",
+   "Mi-canh",
+   "Sa-mu-ên"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đa-vít giữ lời hứa với người bạn thân. “ta muốn làm ơn cho con vì Giô-na-than, cha của con” (2 Sa-mu-ên 9:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 9,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Mê-phi-bô-sết luôn được dùng bữa ở đâu?",
+  "options": [
+   "Trong lều quân",
+   "Nhà thầy tế lễ",
+   "Ngoài cổng thành",
+   "Tại bàn của vua"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dù ông bị què cả hai chân. “ông luôn được ăn tại bàn của vua” (2 Sa-mu-ên 9:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ai được Đức Giê-hô-va sai đến quở trách Đa-vít?",
+  "options": [
+   "Gát",
+   "Na-than",
+   "Ê-li",
+   "Sa-mu-ên"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Na-than kể một ngụ ngôn cho vua nghe. “Đức Giê-hô-va sai Na-than đến với Đa-vít.” (2 Sa-mu-ên 12:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong ngụ ngôn của Na-than, người nghèo chỉ có gì?",
+  "options": [
+   "Một mảnh ruộng",
+   "Một con lừa",
+   "Một con bò",
+   "Một con chiên cái nhỏ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nó được nuôi như con gái trong nhà. “chẳng có gì ngoài một con chiên cái nhỏ” (2 Sa-mu-ên 12:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nghe Đa-vít nổi giận với người giàu, Na-than nói gì?",
+  "options": [
+   "Bệ hạ chính là người đó!",
+   "Người giàu đã chết rồi",
+   "Xin bệ hạ tha cho hắn",
+   "Bệ hạ xử đúng lắm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngụ ngôn nói về tội của chính Đa-vít. “Bệ hạ chính là người đó!” (2 Sa-mu-ên 12:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Bị Na-than quở trách, Đa-vít đáp thế nào?",
+  "options": [
+   "Đổ lỗi cho Giô-áp",
+   "Đuổi Na-than đi",
+   "Nhận mình đã phạm tội",
+   "Chối không làm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Na-than nói Chúa đã xóa tội cho vua. “Ta đã phạm tội với Đức Giê-hô-va.” (2 Sa-mu-ên 12:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Con trai Bát Sê-ba sinh cho Đa-vít được đặt tên là gì?",
+  "options": [
+   "A-đô-ni-gia",
+   "Sa-lô-môn",
+   "Am-nôn",
+   "Áp-sa-lôm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đức Giê-hô-va yêu thương đứa trẻ. “Bà sinh một con trai, vua đặt tên là Sa-lô-môn.” (2 Sa-mu-ên 12:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 18,
+  "verseStart": 33,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nghe tin Áp-sa-lôm chết, Đa-vít đã phản ứng thế nào?",
+  "options": [
+   "Khóc than gọi con",
+   "Mở tiệc mừng",
+   "Lên ngôi lại",
+   "Thưởng cho Giô-áp"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dù con trai đã nổi loạn, ông vẫn thương con. “Áp-sa-lôm, con ơi, con ta ơi!” (2 Sa-mu-ên 18:33)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 22,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong bài ca của mình, Đa-vít gọi Đức Giê-hô-va là gì?",
+  "options": [
+   "Ngọn đèn trong nhà",
+   "Người cha nghiêm khắc",
+   "Vua của các thần",
+   "Tảng đá và đồn lũy của tôi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài cũng là Đấng giải cứu ông. “Đức Giê-hô-va là tảng đá, là đồn lũy của tôi” (2 Sa-mu-ên 22:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 1,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít làm bài ai ca để khóc thương ai?",
+  "options": [
+   "Áp-ne và Giô-áp",
+   "Am-nôn và Áp-sa-lôm",
+   "Sau-lơ và Giô-na-than",
+   "Sa-mu-ên và Hê-li"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hai cha con tử trận trên núi Ghinh-bô-a. “Đa-vít làm bài ai ca để khóc Sau-lơ và Giô-na-than” (2 Sa-mu-ên 1:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 1,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bài ai ca của Đa-vít than: Ôi sao các ai lại gục ngã?",
+  "options": [
+   "Các tiên tri",
+   "Các thầy tế lễ",
+   "Các anh hùng",
+   "Các con trẻ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông thương tiếc vua và bạn mình. “Ôi sao các anh hùng nầy lại gục ngã!” (2 Sa-mu-ên 1:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi Sau-lơ chết, Đa-vít được xức dầu làm vua nhà nào trước tiên?",
+  "options": [
+   "Nhà Ép-ra-im",
+   "Toàn Y-sơ-ra-ên",
+   "Nhà Bên-gia-min",
+   "Nhà Giu-đa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Các bộ tộc khác theo nhà Sau-lơ một thời gian. “xức dầu tấn phong Đa-vít làm vua nhà Giu-đa” (2 Sa-mu-ên 2:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 5,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Các trưởng lão xức dầu Đa-vít làm vua toàn Y-sơ-ra-ên tại đâu?",
+  "options": [
+   "Hếp-rôn",
+   "Si-lô",
+   "Bết-lê-hem",
+   "Giê-ru-sa-lem"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đa-vít lập giao ước với họ trước mặt Chúa. “đã đến gặp vua tại Hếp-rôn” (2 Sa-mu-ên 5:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong cuộc chiến giữa nhà Sau-lơ và nhà Đa-vít, nhà Đa-vít thế nào?",
+  "options": [
+   "Bị tiêu diệt",
+   "Ngày càng vững mạnh",
+   "Phải bỏ chạy",
+   "Ngày càng suy yếu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Còn nhà Sau-lơ ngày càng suy yếu. “Đa-vít ngày càng vững mạnh” (2 Sa-mu-ên 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 5,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua nào gửi gỗ bá hương và thợ để xây cung điện cho Đa-vít?",
+  "options": [
+   "Na-hách, vua Am-môn",
+   "Pha-ra-ôn",
+   "Hi-ram, vua Ty-rơ",
+   "A-kích, vua Gát"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hi-ram cũng giúp Sa-lô-môn xây đền thờ. “Hi-ram, vua thành Ty-rơ” (2 Sa-mu-ên 5:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 6,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai nhìn qua cửa sổ, thấy Đa-vít nhảy múa thì khinh rẻ vua?",
+  "options": [
+   "Ma-a-ca",
+   "Bát Sê-ba",
+   "A-bi-ga-in",
+   "Mi-canh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Mi-canh là con gái của Sau-lơ. “Mi-canh, con gái của Sau-lơ, nhìn qua cửa sổ” (2 Sa-mu-ên 6:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 6,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi nhảy múa trước Hòm Giao Ước, Đa-vít mặc gì?",
+  "options": [
+   "Ê-phót vải gai",
+   "Áo giáp đồng",
+   "Bao gai",
+   "Áo choàng vua"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông mặc như một người phục vụ trước Chúa. “Đa-vít mặc ê-phót vải gai” (2 Sa-mu-ên 6:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 7,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va hứa ngôi của Đa-vít sẽ thế nào?",
+  "options": [
+   "Về tay nhà Sau-lơ",
+   "Vững lập mãi mãi",
+   "Kéo dài bảy đời",
+   "Dừng ở Sa-lô-môn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lời hứa ứng nghiệm nơi Đấng Mê-si dòng Đa-vít. “ngôi con sẽ được vững lập mãi mãi” (2 Sa-mu-ên 7:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 9,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người con trai còn sống của Giô-na-than bị tật gì?",
+  "options": [
+   "Bị câm",
+   "Mù hai mắt",
+   "Bị phong hủi",
+   "Què cả hai chân"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đa-vít vẫn tiếp đãi ông như hoàng tử. “bị què cả hai chân” (2 Sa-mu-ên 9:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 9,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Con trai của Giô-na-than được Đa-vít làm ơn tên là gì?",
+  "options": [
+   "Mê-phi-bô-sết",
+   "Xíp-ba",
+   "Ích-bô-sết",
+   "Mi-chê"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông là cháu nội của vua Sau-lơ. “Khi Mê-phi-bô-sết, con của Giô-na-than” (2 Sa-mu-ên 9:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 11,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vào mùa các vua ra quân, Đa-vít đã ở đâu?",
+  "options": [
+   "Dẫn quân ra trận",
+   "Ở lại Giê-ru-sa-lem",
+   "Về Hếp-rôn",
+   "Về Bết-lê-hem"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông sai Giô-áp đi đánh người Am-môn. “Nhưng Đa-vít ở lại Giê-ru-sa-lem.” (2 Sa-mu-ên 11:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong ngụ ngôn của Na-than, người giàu đã làm gì?",
+  "options": [
+   "Cho người nghèo vay",
+   "Thả hết đàn chiên",
+   "Bắt chiên của người nghèo đãi khách",
+   "Mua thêm chiên bò"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông tiếc của mình mà lấy của người nghèo. “lại bắt con chiên con của người nghèo và dọn cho người khách” (2 Sa-mu-ên 12:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít phán người giàu phải bồi thường bao nhiêu lần giá chiên con?",
+  "options": [
+   "Hai lần",
+   "Bảy lần",
+   "Mười lần",
+   "Bốn lần"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vì đã không có lòng thương xót. “Hắn phải bồi thường bốn lần giá chiên con” (2 Sa-mu-ên 12:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Na-than đặt cho Sa-lô-môn một tên khác là gì?",
+  "options": [
+   "Em-ma-nu-ên",
+   "Giê-ru-ba-anh",
+   "Giê-đi-đia",
+   "Y-ca-bốt"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì Đức Giê-hô-va yêu thương đứa trẻ. “đặt tên cho nó là Giê-đi-đia” (2 Sa-mu-ên 12:25)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 15,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Áp-sa-lôm đã chiếm được gì của người Y-sơ-ra-ên?",
+  "options": [
+   "Đền thờ",
+   "Lòng người",
+   "Đất đai",
+   "Kho báu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông đón người đi kiện ngay ở cổng thành. “Áp-sa-lôm đã chiếm được lòng người Y-sơ-ra-ên” (2 Sa-mu-ên 15:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 15,
+  "verseStart": 30,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chạy trốn Áp-sa-lôm, Đa-vít lên núi nào, vừa đi vừa khóc?",
+  "options": [
+   "Núi Ô-liu",
+   "Núi Mô-ri-a",
+   "Núi Si-ôn",
+   "Núi Cạt-mên"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vua trùm đầu và đi chân đất. “Đa-vít đi lên núi Ô-liu, vừa đi vừa khóc” (2 Sa-mu-ên 15:30)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 18,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đầu Áp-sa-lôm bị vướng vào cây gì?",
+  "options": [
+   "Cây vả",
+   "Cây sồi",
+   "Cây chà là",
+   "Cây thông lớn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông bị treo lơ lửng khi con la chạy mất. “Đầu Áp-sa-lôm bị vướng vào cây thông” (2 Sa-mu-ên 18:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 18,
+  "verseStart": 33,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khóc thương Áp-sa-lôm, Đa-vít ước điều gì?",
+  "options": [
+   "Nhường ngôi cho ai khác",
+   "Được chết thay con",
+   "Được gặp con lần nữa",
+   "Trừng phạt Giô-áp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nỗi đau của người cha trước đứa con nổi loạn. “Ước gì ta được chết thay con!” (2 Sa-mu-ên 18:33)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 23,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít ước được uống nước giếng ở đâu?",
+  "options": [
+   "Giếng Gia-cốp",
+   "Suối Ghi-hôn",
+   "Bên cổng thành Bết-lê-hem",
+   "Sông Giô-đanh"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Bết-lê-hem là quê nhà của Đa-vít. “Ước gì có ai cho ta uống nước giếng bên cổng thành Bết-lê-hem!” (2 Sa-mu-ên 23:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 23,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít làm gì với nước các dũng sĩ liều mình đem về?",
+  "options": [
+   "Đổ ra dâng lên Chúa",
+   "Uống cạn",
+   "Tưới cho đàn chiên",
+   "Chia cho quân lính"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông không muốn uống máu người liều mạng vì mình. “đổ nước đó ra dâng lên Đức Giê-hô-va” (2 Sa-mu-ên 23:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 23,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Những lời cuối của Đa-vít gọi ông là tác giả của gì?",
+  "options": [
+   "Những sách luật",
+   "Những châm ngôn",
+   "Những bài thánh thi",
+   "Những lời tiên tri"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nhiều bài Thi Thiên do Đa-vít sáng tác. “tác giả những bài thánh thi của Y-sơ-ra-ên” (2 Sa-mu-ên 23:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 24,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít truyền Giô-áp làm việc gì gây họa cho dân?",
+  "options": [
+   "Kiểm tra dân số",
+   "Xây đền thờ",
+   "Đánh người Am-môn",
+   "Thu thêm thuế"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đức Giê-hô-va đang nổi giận với dân Y-sơ-ra-ên. “kiểm tra dân số để ta biết dân số Y-sơ-ra-ên là bao nhiêu” (2 Sa-mu-ên 24:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 24,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì sao Đa-vít không nhận sân đạp lúa được biếu không?",
+  "options": [
+   "Vì chủ là người ngoại",
+   "Vì sân ấy quá nhỏ",
+   "Vì muốn xây cung điện",
+   "Không dâng tế lễ không tốn tiền"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Của dâng cho Chúa phải có giá của nó. “Ta không muốn dâng cho Giê-hô-va Đức Chúa Trời của ta những tế lễ thiêu mà không mất tiền mua.” (2 Sa-mu-ên 24:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 8,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít trị vì toàn cõi Y-sơ-ra-ên như thế nào?",
+  "options": [
+   "Với thuế thật nặng",
+   "Thực thi công lý và bình đẳng",
+   "Bỏ mặc dân chúng",
+   "Bằng sự sợ hãi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông cai trị cho toàn dân. “thực thi công lý và bình đẳng cho toàn dân” (2 Sa-mu-ên 8:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 15,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Áp-sa-lôm dặn khi nghe tiếng kèn thì nói ông làm vua tại đâu?",
+  "options": [
+   "Hếp-rôn",
+   "Bết-ên",
+   "Ga-ba-ôn",
+   "Giê-ru-sa-lem"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nơi Đa-vít từng được xức dầu làm vua. “Áp-sa-lôm làm vua tại Hếp-rôn!” (2 Sa-mu-ên 15:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 18,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi bị vướng đầu vào cây, Áp-sa-lôm đang cưỡi con gì?",
+  "options": [
+   "Con lừa",
+   "Con la",
+   "Con ngựa",
+   "Con lạc đà"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Con la cứ tiếp tục chạy. “đang cưỡi một con la” (2 Sa-mu-ên 18:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 5,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Tại Hếp-rôn, Đa-vít trị vì trên Giu-đa bao lâu?",
+  "options": [
+   "Mười năm",
+   "Ba năm",
+   "Bảy năm sáu tháng",
+   "Bốn mươi năm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Trước khi dời về Giê-ru-sa-lem. “Tại Hếp-rôn, Đa-vít trị vì trên Giu-đa bảy năm sáu tháng” (2 Sa-mu-ên 5:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 5,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Tại Giê-ru-sa-lem, Đa-vít trị vì cả Y-sơ-ra-ên và Giu-đa bao nhiêu năm?",
+  "options": [
+   "Ba mươi năm",
+   "Bốn mươi năm",
+   "Hai mươi năm",
+   "Ba mươi ba năm"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cộng với bảy năm rưỡi ở Hếp-rôn. “ông trị vì trên cả Y-sơ-ra-ên và Giu-đa ba mươi ba năm” (2 Sa-mu-ên 5:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 6,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít đến nơi nào thuộc Giu-đa để rước Hòm Giao Ước về?",
+  "options": [
+   "Si-lô",
+   "Bết Sê-mết",
+   "Ách-đốt",
+   "Ba-lê"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Hòm mang danh Đức Giê-hô-va vạn quân. “đến Ba-lê thuộc Giu-đa” (2 Sa-mu-ên 6:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 9,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đầy tớ nhà Sau-lơ cho Đa-vít biết về Mê-phi-bô-sết tên là gì?",
+  "options": [
+   "Áp-ne",
+   "Ma-ki",
+   "Xíp-ba",
+   "Giô-áp"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Về sau Xíp-ba lo đất đai cho Mê-phi-bô-sết. “Xíp-ba thưa với vua” (2 Sa-mu-ên 9:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 11,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Quân của Đa-vít bao vây thành nào của người Am-môn?",
+  "options": [
+   "Ráp-ba",
+   "Mích-ma",
+   "Ga-ba-ôn",
+   "Hếp-rôn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Giô-áp dẫn quân đi, còn vua ở lại. “bao vây thành Ráp-ba” (2 Sa-mu-ên 11:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 23,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Bao nhiêu dũng sĩ băng qua trại Phi-li-tin múc nước cho Đa-vít?",
+  "options": [
+   "Bảy người",
+   "Ba người",
+   "Hai người",
+   "Ba mươi người"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ liều mạng vì một lời ước của vua. “có ba dũng sĩ đi băng qua trại quân Phi-li-tin” (2 Sa-mu-ên 23:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 24,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít mua sân đập lúa và bò với giá bao nhiêu?",
+  "options": [
+   "Một trăm siếc-lơ bạc",
+   "Năm mươi siếc-lơ bạc",
+   "Bốn trăm siếc-lơ bạc",
+   "Ba mươi miếng bạc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông xây một bàn thờ tại đó và tai họa chấm dứt. “với giá năm mươi siếc-lơ bạc” (2 Sa-mu-ên 24:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 24,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít mua sân đập lúa để xây bàn thờ từ ai?",
+  "options": [
+   "A-rau-na",
+   "Ô-bết Ê-đôm",
+   "Xíp-ba",
+   "Mê-phi-bô-sết"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "A-rau-na muốn biếu không nhưng vua không nhận. “Nhưng vua nói với A-rau-na” (2 Sa-mu-ên 24:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 24,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít truyền kiểm tra dân số từ Đan cho đến đâu?",
+  "options": [
+   "Hếp-rôn",
+   "Giê-ri-cô",
+   "Bê-e Sê-ba",
+   "Ga-xa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Từ cực bắc đến cực nam của xứ. “từ Đan cho đến Bê-e Sê-ba” (2 Sa-mu-ên 24:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ai đã chôn cất vua Sau-lơ?",
+  "options": [
+   "Đa-vít",
+   "Người Phi-li-tin",
+   "Giô-áp",
+   "Dân ở Gia-be Ga-la-át"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đa-vít cảm ơn họ vì việc nghĩa ấy. “Dân ở Gia-be Ga-la-át đã chôn cất Sau-lơ.” (2 Sa-mu-ên 2:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

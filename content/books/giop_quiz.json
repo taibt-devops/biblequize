@@ -1,0 +1,462 @@
+[
+ {
+  "book": "Job",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Có bao nhiêu người bạn đến chia buồn và an ủi Gióp?",
+  "options": [
+   "Hai người",
+   "Bảy người",
+   "Mười người",
+   "Ba người"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ hẹn nhau từ xứ mình mà đến. “Khi ba người bạn của Gióp” (Gióp 2:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Các bạn ngồi với Gióp bao lâu mà không nói một lời?",
+  "options": [
+   "Bảy ngày đêm",
+   "Bốn mươi ngày",
+   "Ba ngày",
+   "Một ngày"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Họ thấy nỗi đau của ông quá lớn. “Ba người bạn ngồi xuống đất với Gióp suốt bảy ngày đêm” (Gióp 2:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 19,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giữa đau khổ, Gióp nói ông biết Đấng nào vẫn sống?",
+  "options": [
+   "Người bạn trung tín",
+   "Đấng Cứu Chuộc",
+   "Vị vua công chính",
+   "Thầy tế lễ thượng phẩm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đến cuối cùng Ngài sẽ đứng trên đất. “tôi biết rằng Đấng Cứu Chuộc tôi vẫn sống” (Gióp 19:25)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 23,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Gióp nói khi được Chúa rèn luyện, ông sẽ ra như gì?",
+  "options": [
+   "Như đá quý",
+   "Như bạc",
+   "Như vàng",
+   "Như sắt"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa biết con đường ông đi. “tôi sẽ ra như vàng” (Gióp 23:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 38,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời đáp lời Gióp từ giữa điều gì?",
+  "options": [
+   "Đám mây",
+   "Cơn lốc",
+   "Bụi gai cháy",
+   "Giấc mơ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngài hỏi Gióp về công cuộc sáng tạo. “từ giữa cơn lốc Đức Chúa Trời đáp lời Gióp” (Gióp 38:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Gióp sống ở xứ nào?",
+  "options": [
+   "Ai Cập",
+   "Ca-na-an",
+   "Ba-by-lôn",
+   "Út-xơ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông là người trọn vẹn và ngay thẳng. “Tại xứ Út-xơ có một người tên là Gióp.” (Gióp 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lúc đầu Gióp có bao nhiêu con trai và con gái?",
+  "options": [
+   "Ba trai và bảy gái",
+   "Năm trai và năm gái",
+   "Bảy trai và ba gái",
+   "Mười hai con trai"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông thường dâng tế lễ thay cho các con. “Ông có bảy con trai và ba con gái.” (Gióp 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sa-tan hỏi: Lẽ nào Gióp kính sợ Đức Chúa Trời thế nào?",
+  "options": [
+   "Vô cớ",
+   "Giả dối",
+   "Vì sợ hãi",
+   "Một cách vội vàng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sa-tan cho rằng Gióp kính sợ Chúa vì được ban phước. “Lẽ nào Gióp kính sợ Đức Chúa Trời vô cớ sao?” (Gióp 1:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 2,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bị ung nhọt khắp người, Gióp lấy gì để gãi?",
+  "options": [
+   "Mảnh sành",
+   "Hòn đá",
+   "Mảnh vải",
+   "Cành cây"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông ngồi giữa đống tro. “lấy mảnh sành mà gãi” (Gióp 2:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 2,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong cơn bệnh, Gióp ngồi ở đâu?",
+  "options": [
+   "Trước cổng thành",
+   "Trong lều vải",
+   "Bên bờ sông",
+   "Giữa đống tro"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dấu hiệu của tang chế và đau khổ. “Gióp ngồi giữa đống tro” (Gióp 2:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau bảy ngày im lặng, Gióp mở miệng nguyền rủa điều gì?",
+  "options": [
+   "Ba người bạn",
+   "Ngày sinh của mình",
+   "Các kẻ cướp",
+   "Người vợ của mình"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông không nguyền rủa Đức Chúa Trời. “Gióp mở miệng nguyền rủa ngày sinh của mình” (Gióp 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 38,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời hỏi Gióp: Khi Ta đặt nền gì thì con ở đâu?",
+  "options": [
+   "Nền biển cả",
+   "Nền đền thờ",
+   "Nền trái đất",
+   "Nền tường thành"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Con người không thể hiểu hết công việc của Chúa. “Khi Ta đặt nền trái đất thì con ở đâu?” (Gióp 38:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 42,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Gióp nói trước kia chỉ nghe đồn về Chúa, còn bây giờ thì sao?",
+  "options": [
+   "Không còn tin nữa",
+   "Đã quên Ngài",
+   "Mắt đã thấy Ngài",
+   "Vẫn chưa hiểu Ngài"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Gióp ăn năn sau khi gặp Đức Chúa Trời. “Nhưng bây giờ mắt con đã thấy Ngài” (Gióp 42:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 42,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi được phục hồi, Gióp còn sống bao lâu?",
+  "options": [
+   "Một trăm hai mươi năm",
+   "Một trăm bốn mươi năm",
+   "Bốn mươi năm",
+   "Bảy mươi năm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông thấy con cháu đến đời thứ tư. “Gióp còn sống một trăm bốn mươi năm” (Gióp 42:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 42,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ba con gái của Gióp được cha cho điều gì cùng với anh em trai?",
+  "options": [
+   "Làm thầy tế lễ",
+   "Gả cho vua",
+   "Đi buôn xứ xa",
+   "Chia gia tài"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Điều hiếm thấy thời bấy giờ. “Cha của các cô chia gia tài cho các cô cùng với các anh em trai.” (Gióp 42:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ba người bạn đến an ủi Gióp tên là gì?",
+  "options": [
+   "Ê-li-pha, Binh-đát, Sô-pha",
+   "Ê-li-hu, Binh-đát, Sô-pha",
+   "San-ba-lát, Tô-bi-gia, Ghê-sem",
+   "Ê-li-pha, Ê-li-hu, Ê-li-sê"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người Thê-man, người Su-a và người Na-a-ma. “Ê-li-pha người Thê-man, Binh-đát người Su-a và Sô-pha người Na-a-ma” (Gióp 2:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 32,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sau ba người bạn, người nào nổi giận vì Gióp tự cho mình công chính?",
+  "options": [
+   "Ê-li-hu",
+   "Ê-li-pha",
+   "Sô-pha",
+   "Binh-đát"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông là con của Ba-ra-kê-ên người Bu-xi. “Ê-li-hu, con trai của Ba-ra-kê-ên người Bu-xi” (Gióp 32:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 42,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Con gái lớn của Gióp sau khi được phục hồi tên là gì?",
+  "options": [
+   "Ta-bi-tha",
+   "Kê-xia",
+   "Giê-mi-ma",
+   "Kê-ren Ha-búc"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cô thứ nhì là Kê-xia, cô thứ ba là Kê-ren Ha-búc. “cô con gái lớn là Giê-mi-ma” (Gióp 42:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Lúc đầu Gióp có bao nhiêu con lạc đà?",
+  "options": [
+   "Năm trăm con",
+   "Ba nghìn con",
+   "Sáu nghìn con",
+   "Bảy nghìn con"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Cùng bảy nghìn chiên, năm trăm đôi bò. “ba nghìn lạc đà” (Gióp 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 42,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Về cuối đời, Gióp có bao nhiêu con chiên?",
+  "options": [
+   "Mười nghìn con",
+   "Bảy nghìn con",
+   "Hai mươi nghìn con",
+   "Mười bốn nghìn con"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Gấp đôi số chiên lúc ban đầu. “Ông có mười bốn nghìn chiên” (Gióp 42:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

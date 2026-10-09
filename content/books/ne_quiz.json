@@ -1,0 +1,922 @@
+[
+ {
+  "book": "Nehemiah",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nê-hê-mi giữ chức vụ gì trong cung vua?",
+  "options": [
+   "Đầu bếp",
+   "Dâng rượu cho vua",
+   "Coi kho bạc",
+   "Lính canh cổng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chức vụ gần gũi, được vua tin cậy. “Lúc bấy giờ tôi làm chức dâng rượu cho vua.” (Nê-hê-mi 1:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vua hỏi Nê-hê-mi vì sao vẻ mặt ông thế nào?",
+  "options": [
+   "Mệt mỏi",
+   "Giận dữ",
+   "Vui vẻ",
+   "Buồn rầu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông buồn vì tin Giê-ru-sa-lem đổ nát. “Sao vẻ mặt ngươi buồn rầu mặc dù ngươi không bị bệnh?” (Nê-hê-mi 2:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 6,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Tường thành Giê-ru-sa-lem được xây xong sau bao nhiêu ngày?",
+  "options": [
+   "Năm mươi hai ngày",
+   "Bảy ngày",
+   "Bốn mươi ngày",
+   "Một năm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Kẻ thù nhận biết công việc nhờ Chúa giúp đỡ. “tường thành hoàn tất sau năm mươi hai ngày” (Nê-hê-mi 6:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 8,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nê-hê-mi nói sự vui vẻ về Đức Giê-hô-va là gì của dân?",
+  "options": [
+   "Phần thưởng",
+   "Bài ca",
+   "Sức mạnh",
+   "Gánh nặng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông bảo dân đừng buồn thảm trong ngày thánh. “sự vui vẻ về Đức Giê-hô-va là sức mạnh của anh em” (Nê-hê-mi 8:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 8,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Dân chúng xin thầy thông giáo E-xơ-ra đem gì ra đọc?",
+  "options": [
+   "Thư của vua Ba Tư",
+   "Gia phả các họ",
+   "Bài ca của Đa-vít",
+   "Sách luật pháp của Môi-se"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ muốn nghe lời Chúa sau khi xây xong tường thành. “Họ xin thầy thông giáo E-xơ-ra đem cuộn sách luật pháp của Môi-se ra” (Nê-hê-mi 8:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 8,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi E-xơ-ra chúc tụng Đức Chúa Trời, dân chúng giơ tay đáp lời gì?",
+  "options": [
+   "A-men, A-men",
+   "Ha-lê-lu-gia",
+   "Hô-sa-na",
+   "Vua vạn tuế"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Rồi họ cúi đầu thờ phượng. “A-men, A-men” (Nê-hê-mi 8:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 4,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi bị kẻ thù đe dọa, Nê-hê-mi nói gì với dân?",
+  "options": [
+   "Hãy bỏ trốn khỏi thành",
+   "Hãy ngưng xây tường",
+   "Đừng sợ, hãy nhớ đến Chúa",
+   "Hãy nộp cống cho chúng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa vĩ đại và đáng kính sợ. “Đừng sợ chúng. Hãy nhớ rằng Chúa là Đấng vĩ đại và đáng kính sợ” (Nê-hê-mi 4:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 6,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Kẻ thù mời Nê-hê-mi xuống gặp, ông trả lời thế nào?",
+  "options": [
+   "Gửi quà thay mình",
+   "Đang bận công trình lớn",
+   "Sẽ đến ngay",
+   "Xin hẹn hôm khác"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông biết chúng âm mưu hại mình. “Tôi bận làm công trình lớn, không thể xuống được.” (Nê-hê-mi 6:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 8,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi đọc sách luật pháp, họ còn làm gì cho dân hiểu?",
+  "options": [
+   "Hát lên",
+   "Viết lên tường",
+   "Dịch sang tiếng Ai Cập",
+   "Giải nghĩa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đọc rõ ràng rồi giải nghĩa. “rồi giải nghĩa cho người ta hiểu lời họ đọc” (Nê-hê-mi 8:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 13,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trước ngày sa-bát, Nê-hê-mi ra lệnh làm gì với các cổng thành?",
+  "options": [
+   "Mở chợ",
+   "Đóng cổng lại",
+   "Thổi kèn",
+   "Treo cờ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Để không ai chở hàng vào thành trong ngày sa-bát. “tôi ra lệnh đóng cổng lại” (Nê-hê-mi 13:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi nghe tin về Giê-ru-sa-lem, Nê-hê-mi đang ở kinh thành nào?",
+  "options": [
+   "Su-sơ",
+   "Ni-ni-ve",
+   "Ba-by-lôn",
+   "Giê-ru-sa-lem"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Kinh thành của vua Ba Tư. “khi tôi đang ở tại kinh thành Su-sơ” (Nê-hê-mi 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nê-hê-mi phục vụ trong triều vua nào?",
+  "options": [
+   "Đa-ri-út",
+   "Si-ru",
+   "Ạt-ta-xét-xe",
+   "Nê-bu-cát-nết-sa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Năm thứ hai mươi đời vua ấy. “năm thứ hai mươi đời vua Ạt-ta-xét-xe” (Nê-hê-mi 2:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi vua hỏi về vẻ mặt buồn rầu, Nê-hê-mi cảm thấy thế nào?",
+  "options": [
+   "Vui mừng",
+   "Giận dữ",
+   "Bình thản",
+   "Rất sợ hãi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Buồn rầu trước mặt vua là điều nguy hiểm. “Lúc ấy tôi rất sợ hãi.” (Nê-hê-mi 2:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hai người nào bất bình khi có người đến giúp dân Y-sơ-ra-ên?",
+  "options": [
+   "Đa-than và A-bi-ram",
+   "Giê-hu và A-háp",
+   "San-ba-lát và Tô-bi-gia",
+   "Ha-man và Xê-rết"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ chống đối suốt thời gian xây tường. “San-ba-lát, người Hô-rôn, và Tô-bi-gia” (Nê-hê-mi 2:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 2,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nê-hê-mi đi xem xét tường thành Giê-ru-sa-lem vào lúc nào?",
+  "options": [
+   "Sáng sớm",
+   "Ban đêm",
+   "Giữa trưa",
+   "Ngày sa-bát"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông chưa cho ai biết điều Chúa đặt trong lòng. “trỗi dậy lúc ban đêm” (Nê-hê-mi 2:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 2,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi đi xem xét tường thành, Nê-hê-mi cưỡi con gì?",
+  "options": [
+   "Con lừa",
+   "Con ngựa",
+   "Con la",
+   "Con lạc đà"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Không có con vật nào khác đi theo. “Ngoài con lừa tôi cưỡi” (Nê-hê-mi 2:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Các thầy tế lễ khởi công xây cổng nào đầu tiên?",
+  "options": [
+   "Cổng Nước",
+   "Cổng Phân",
+   "Cổng Chiên",
+   "Cổng Cá"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ biệt ra thánh rồi tra hai cánh cửa. “khởi công xây cất cổng Chiên” (Nê-hê-mi 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tô-bi-gia chế nhạo tường thành đang xây thế nào?",
+  "options": [
+   "Chồn leo lên cũng sập",
+   "Mưa xuống cũng tan",
+   "Trẻ con đẩy cũng ngã",
+   "Gió thổi cũng đổ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Kẻ thù cười nhạo để làm dân nản lòng. “nếu có một con chồn leo lên đó cũng đủ sập xuống rồi!” (Nê-hê-mi 4:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tô-bi-gia, kẻ chế nhạo tường thành, là người gì?",
+  "options": [
+   "Người Mô-áp",
+   "Người Hô-rôn",
+   "Người Ả-rập",
+   "Người Am-môn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông đứng bên cạnh San-ba-lát. “Tô-bi-gia, người Am-môn” (Nê-hê-mi 4:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 4,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi nghe tiếng gì thì dân phải tập hợp lại để chống giặc?",
+  "options": [
+   "Tiếng hô",
+   "Tiếng kèn",
+   "Tiếng trống",
+   "Tiếng chuông"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đức Chúa Trời sẽ chiến đấu cho họ. “mỗi khi anh em nghe tiếng kèn nơi nào thì hãy tập hợp lại” (Nê-hê-mi 4:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 5,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nê-hê-mi kêu gọi những người cho vay làm gì cho người nghèo?",
+  "options": [
+   "Lấy ruộng đất",
+   "Xóa món nợ",
+   "Tăng tiền lời",
+   "Bắt làm nô lệ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chính ông và anh em mình cũng đã cho mượn. “Vậy chúng ta hãy xóa món nợ nầy đi!” (Nê-hê-mi 5:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 6,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Kẻ thù mời Nê-hê-mi đến gặp ở đâu để hại ông?",
+  "options": [
+   "Đồng bằng Ô-nô",
+   "Thành Sa-ma-ri",
+   "Thành Bết-ên",
+   "Kinh thành Su-sơ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Họ muốn kéo ông ra xa công trình. “trong đồng bằng Ô-nô” (Nê-hê-mi 6:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 8,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Dân chúng họp lại tại quảng trường trước cổng nào để nghe luật pháp?",
+  "options": [
+   "Cổng Chiên",
+   "Cổng Ngựa",
+   "Cổng Nước",
+   "Cổng Cá"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tất cả họp lại như một người. “tại quảng trường trước cổng Nước” (Nê-hê-mi 8:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 8,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "E-xơ-ra đọc sách luật pháp cho dân nghe trong bao lâu?",
+  "options": [
+   "Chỉ một giờ",
+   "Từ trưa đến tối",
+   "Suốt ba ngày",
+   "Từ rạng đông đến trưa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tất cả dân chúng lắng tai nghe. “từ rạng đông cho đến trưa” (Nê-hê-mi 8:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 8,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thầy thông giáo E-xơ-ra đứng trên gì để đọc luật pháp?",
+  "options": [
+   "Bậc thềm đền thờ",
+   "Bục gỗ",
+   "Tường thành",
+   "Tảng đá lớn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bục được làm riêng cho dịp ấy. “đứng trên bục gỗ mà người ta làm nhân dịp ấy” (Nê-hê-mi 8:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 8,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Luật pháp dạy dân phải ở trong gì suốt kỳ lễ tháng bảy?",
+  "options": [
+   "Nhà mới",
+   "Đền thờ",
+   "Hang đá",
+   "Lều tạm"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để nhớ thời Chúa dẫn dắt trong hoang mạc. “phải ở trong các lều tạm suốt kỳ lễ vào tháng bảy” (Nê-hê-mi 8:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 8,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong ngày thánh, Nê-hê-mi bảo dân gửi phần ăn cho ai?",
+  "options": [
+   "Các thầy tế lễ",
+   "Vua Ba Tư",
+   "Người không sắm sửa gì",
+   "Kẻ thù cũ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Niềm vui trong Chúa phải được chia sẻ. “hãy gửi phần ăn cho ai không sắm sửa gì hết” (Nê-hê-mi 8:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 9,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong lời cầu nguyện, dân nhắc Chúa đã nuôi tổ phụ trong hoang mạc bao lâu?",
+  "options": [
+   "Bốn mươi năm",
+   "Bốn trăm năm",
+   "Bảy mươi năm",
+   "Mười năm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Họ chẳng thiếu thốn gì cả. “Chúa nuôi dưỡng họ bốn mươi năm trong hoang mạc” (Nê-hê-mi 9:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 13,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nê-hê-mi cảnh cáo dân không được làm gì trong ngày sa-bát?",
+  "options": [
+   "Thăm người bệnh",
+   "Lên đền thờ",
+   "Buôn bán thực phẩm",
+   "Đọc luật pháp"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ ép nho và chở hàng vào thành ngày sa-bát. “không được bán các thực phẩm ấy trong ngày sa-bát” (Nê-hê-mi 13:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 8,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi đáp A-men, dân chúng làm gì?",
+  "options": [
+   "Sấp mặt xuống đất thờ phượng",
+   "Nhảy múa ca hát",
+   "Ra về nhà mình",
+   "Dâng của lễ thiêu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Họ cúi đầu trước Đức Giê-hô-va. “sấp mặt xuống đất mà thờ phượng Đức Giê-hô-va” (Nê-hê-mi 8:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nê-hê-mi là con trai của ai?",
+  "options": [
+   "Hinh-kia",
+   "Xa-cha-ri",
+   "Giê-hô-gia-đa",
+   "Ha-ca-lia"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sách mở đầu bằng lời của Nê-hê-mi. “Nê-hê-mi, con trai Ha-ca-lia” (Nê-hê-mi 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nê-hê-mi nghe tin về Giê-ru-sa-lem vào tháng nào?",
+  "options": [
+   "Tháng Ni-san",
+   "Tháng Kít-lêu",
+   "Tháng A-đa",
+   "Tháng Ê-lun"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Năm thứ hai mươi, khi ông ở Su-sơ. “Vào tháng Kít-lêu, năm thứ hai mươi” (Nê-hê-mi 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nê-hê-mi dâng rượu và trình bày với vua vào tháng nào?",
+  "options": [
+   "Tháng Xíp",
+   "Tháng Kít-lêu",
+   "Tháng Ê-lun",
+   "Tháng Ni-san"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Khoảng bốn tháng sau khi nghe tin dữ. “Vào tháng Ni-san, năm thứ hai mươi” (Nê-hê-mi 2:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ban đêm, Nê-hê-mi rời thành qua cổng nào để xem xét tường?",
+  "options": [
+   "Cổng Chiên",
+   "Cổng Thung Lũng",
+   "Cổng Nước",
+   "Cổng Cá"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hướng về Suối Rồng và cổng Phân. “Ban đêm tôi rời thành qua cổng Thung Lũng” (Nê-hê-mi 2:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "San-ba-lát, kẻ chống đối Nê-hê-mi, là người gì?",
+  "options": [
+   "Người Am-môn",
+   "Người Ả-rập",
+   "Người Hô-rôn",
+   "Người Ê-đôm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tô-bi-gia mới là người Am-môn. “San-ba-lát, người Hô-rôn” (Nê-hê-mi 2:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 6,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ai cùng San-ba-lát sai người mời Nê-hê-mi xuống đồng bằng Ô-nô?",
+  "options": [
+   "Ghê-sem",
+   "Ha-man",
+   "A-ga",
+   "Xê-rết"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Họ âm mưu hại Nê-hê-mi. “thì San-ba-lát và Ghê-sem sai người đến nói với tôi” (Nê-hê-mi 6:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 6,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Tường thành Giê-ru-sa-lem hoàn tất vào ngày nào?",
+  "options": [
+   "Hai mươi lăm tháng Kít-lêu",
+   "Mồng một tháng bảy",
+   "Mười bốn tháng Ni-san",
+   "Hai mươi lăm tháng Ê-lun"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sau năm mươi hai ngày xây dựng. “ngày hai mươi lăm tháng Ê-lun” (Nê-hê-mi 6:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 8,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "E-xơ-ra đem sách luật pháp ra đọc trước hội chúng vào ngày nào?",
+  "options": [
+   "Hai mươi lăm tháng Ê-lun",
+   "Mồng một tháng bảy",
+   "Mười bốn tháng giêng",
+   "Mồng mười tháng bảy"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngày đầu của tháng có lễ Lều Tạm. “vào ngày mồng một tháng bảy” (Nê-hê-mi 8:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thầy tế lễ thượng phẩm nào khởi công xây cổng Chiên?",
+  "options": [
+   "Ê-li-a-síp",
+   "Nê-hê-mi",
+   "E-xơ-ra",
+   "Giê-hô-gia-đa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cùng các anh em thầy tế lễ của ông. “Thầy tế lễ thượng phẩm Ê-li-a-síp” (Nê-hê-mi 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nehemiah",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Từ cổng Chiên, các thầy tế lễ xây tiếp trước hết đến tháp nào?",
+  "options": [
+   "Tháp Đa-vít",
+   "Tháp Ba-bên",
+   "Tháp Mê-a",
+   "Tháp Si-lô-ê"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Rồi tiếp đến tháp Ha-na-nê-ên. “Họ tiếp tục xây đến tháp Mê-a” (Nê-hê-mi 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

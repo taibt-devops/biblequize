@@ -1,0 +1,531 @@
+[
+ {
+  "book": "Ecclesiastes",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Người truyền đạo nói tất cả đều thế nào?",
+  "options": [
+   "Tốt đẹp",
+   "Mới mẻ",
+   "Bền vững",
+   "Hư không"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Mọi sự dưới mặt trời đều chóng qua. “Tất cả đều hư không.” (Truyền Đạo 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo nói chẳng có điều gì mới ở đâu?",
+  "options": [
+   "Dưới mặt trời",
+   "Trong đền thờ",
+   "Trên các tầng trời",
+   "Giữa biển cả"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Điều gì đã có chính là điều sẽ có. “Chẳng có điều gì mới ở dưới mặt trời.” (Truyền Đạo 1:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 4,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo nói hai người so với một người thế nào?",
+  "options": [
+   "Bằng nhau",
+   "Hai người hơn một",
+   "Một người hơn hai",
+   "Hai người dễ cãi nhau"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ sẽ được công giá tốt về công lao mình. “Hai người hơn một” (Truyền Đạo 4:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 4,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo nói sợi dây bện mấy tao thì thật khó đứt?",
+  "options": [
+   "Mười hai tao",
+   "Bảy tao",
+   "Ba tao",
+   "Hai tao"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hình ảnh sức mạnh của sự gắn bó. “Một sợi dây bện ba tao thật khó đứt.” (Truyền Đạo 4:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 12,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo khuyên trong tuổi thanh xuân hãy tưởng nhớ ai?",
+  "options": [
+   "Tổ tiên",
+   "Cha mẹ",
+   "Đấng Tạo Hóa",
+   "Vua chúa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Trước khi những ngày gian truân ập đến. “Trong tuổi thanh xuân, Hãy tưởng nhớ Đấng Tạo Hóa của con” (Truyền Đạo 12:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 12,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Lời kết luận của Truyền Đạo: hãy kính sợ Đức Chúa Trời và làm gì?",
+  "options": [
+   "Đi khắp thế gian",
+   "Viết thật nhiều sách",
+   "Tìm kiếm của cải",
+   "Tuân giữ điều răn của Ngài"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đó là phận sự của con người. “Hãy kính sợ Đức Chúa Trời và tuân giữ các điều răn của Ngài” (Truyền Đạo 12:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 9,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo dạy mọi việc tay mình làm được, hãy làm thế nào?",
+  "options": [
+   "Một nửa thôi",
+   "Hết sức mình",
+   "Từ từ thôi",
+   "Khi có người xem"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đời người có hạn. “Mọi việc tay con làm được, hãy làm hết sức mình” (Truyền Đạo 9:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trước mặt Đức Chúa Trời, Truyền Đạo khuyên nói năng thế nào?",
+  "options": [
+   "Ít lời",
+   "Nói thật to",
+   "Nói thật nhanh",
+   "Nói thật nhiều"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vì Đức Chúa Trời ở trên trời, còn con ở dưới đất. “Vậy, hãy ít lời.” (Truyền Đạo 5:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người truyền đạo là con trai của ai?",
+  "options": [
+   "Ê-xê-chia",
+   "Gie-sê",
+   "Đa-vít",
+   "Sau-lơ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông là vua tại Giê-ru-sa-lem. “Lời của người truyền đạo, con trai của Đa-vít” (Truyền Đạo 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo nói càng nhiều khôn ngoan thì càng thêm gì?",
+  "options": [
+   "Danh tiếng",
+   "Phiền não",
+   "Giàu có",
+   "Bạn bè"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ai thêm tri thức là thêm khổ đau. “càng nhiều khôn ngoan, càng thêm phiền não” (Truyền Đạo 1:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Truyền Đạo, khi một trong hai người bị ngã thì sao?",
+  "options": [
+   "Người kia đỡ bạn lên",
+   "Người kia cười nhạo",
+   "Cả hai cùng ngã",
+   "Người kia bỏ đi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Khốn cho người sống một mình mà bị ngã. “Nếu người này ngã Thì người kia sẽ đỡ bạn mình lên.” (Truyền Đạo 4:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 5,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thà đừng hứa nguyện còn hơn làm điều gì?",
+  "options": [
+   "Hứa với bạn bè",
+   "Hứa quá nhiều",
+   "Hứa trước mặt vua",
+   "Hứa mà không giữ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lời hứa với Chúa phải được hoàn thành. “Thà đừng hứa nguyện hơn là hứa nguyện mà không hoàn nguyện.” (Truyền Đạo 5:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 5,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo nói kẻ ham tiền bạc thì thế nào?",
+  "options": [
+   "Sẽ được bình an",
+   "Luôn vui vẻ",
+   "Chẳng bao giờ thỏa mãn",
+   "Sớm thỏa lòng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Điều nầy cũng là hư không. “Kẻ ham tiền bạc chẳng bao giờ thỏa mãn về tiền bạc” (Truyền Đạo 5:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 7,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo nói danh thơm tiếng tốt hơn điều gì?",
+  "options": [
+   "Dầu quý giá",
+   "Vàng ròng",
+   "Nhà cửa",
+   "Ngọc trai"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Danh tiếng tốt lưu lại lâu hơn hương thơm. “Danh thơm tiếng tốt hơn dầu quý giá” (Truyền Đạo 7:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 11,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo khuyên hãy rải bánh của mình ở đâu?",
+  "options": [
+   "Ngoài đồng ruộng",
+   "Trên mặt nước",
+   "Trên đỉnh núi",
+   "Giữa chợ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hãy rộng rãi, dù chưa thấy kết quả ngay. “Hãy rải bánh của con trên mặt nước” (Truyền Đạo 11:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 3,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo nói mọi loài do gì mà ra và trở về đó?",
+  "options": [
+   "Nước",
+   "Gió",
+   "Lửa",
+   "Bụi đất"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tất cả đều quy vào một chỗ. “tất cả do bụi đất mà ra, tất cả đều sẽ trở về bụi đất” (Truyền Đạo 3:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 2,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo nói không gì tốt hơn cho con người là điều gì?",
+  "options": [
+   "Ăn uống, hưởng công lao mình",
+   "Làm giàu thật nhanh",
+   "Đi khắp thế gian",
+   "Học thật nhiều sách"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Điều đó cũng đến từ bàn tay Đức Chúa Trời. “Không gì tốt hơn cho con người là ăn, uống, và hưởng phước của công lao mình.” (Truyền Đạo 2:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 12,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời sẽ đem ra xét xử những việc nào?",
+  "options": [
+   "Chỉ việc ác lớn",
+   "Chỉ việc của vua",
+   "Chỉ việc công khai",
+   "Mọi việc, cả việc kín giấu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dù thiện hay ác. “Vì Đức Chúa Trời sẽ đem ra xét xử mọi việc, Kể cả những việc kín giấu” (Truyền Đạo 12:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người truyền đạo làm vua tại đâu?",
+  "options": [
+   "Ty-rơ",
+   "Hếp-rôn",
+   "Giê-ru-sa-lem",
+   "Sa-ma-ri"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông là con trai của Đa-vít. “vua tại Giê-ru-sa-lem” (Truyền Đạo 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 7,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo nói ngày chết hơn ngày gì?",
+  "options": [
+   "Ngày cưới",
+   "Ngày sinh",
+   "Ngày lên ngôi",
+   "Ngày lễ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Một lời suy ngẫm về đời người. “Ngày chết hơn ngày sinh.” (Truyền Đạo 7:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 11,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Rải bánh trên mặt nước, sau nhiều ngày sẽ thế nào?",
+  "options": [
+   "Sẽ bị cá ăn",
+   "Sẽ mất hẳn",
+   "Sẽ mọc thành lúa",
+   "Sẽ tìm lại được"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Việc tốt hôm nay sẽ đem lại kết quả về sau. “Vì sau nhiều ngày, con sẽ tìm lại được.” (Truyền Đạo 11:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 12,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo nói học hỏi nhiều khiến điều gì?",
+  "options": [
+   "Giàu có hơn",
+   "Sống lâu hơn",
+   "Thân xác mệt nhọc",
+   "Được vua trọng dụng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sách vở viết ra nhiều vô cùng. “học hỏi nhiều khiến cho thân xác mệt nhọc” (Truyền Đạo 12:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Truyền Đạo nói nếu hai người ngủ chung thì sao?",
+  "options": [
+   "Thì lạnh hơn",
+   "Thì ấm",
+   "Thì mất ngủ",
+   "Thì chật chội"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Còn một mình thì làm sao ấm được. “nếu hai người ngủ chung thì ấm” (Truyền Đạo 4:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

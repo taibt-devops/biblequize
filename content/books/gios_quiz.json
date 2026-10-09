@@ -1,0 +1,968 @@
+[
+ {
+  "book": "Joshua",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va bảo Giô-suê hãy mạnh dạn, can đảm vì lý do gì?",
+  "options": [
+   "Chúa ở cùng ông mọi nơi",
+   "Kẻ thù đã yếu",
+   "Môi-se cầu thay",
+   "Quân ông đông hơn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lời hứa Chúa ban khi Giô-suê nhận trách nhiệm dẫn dân. “Vì Giê-hô-va Đức Chúa Trời của con vẫn ở cùng con trong mọi nơi con đi.” (Giô-suê 1:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa dặn Giô-suê suy ngẫm sách luật pháp khi nào?",
+  "options": [
+   "Trước khi ra trận",
+   "Ngày và đêm",
+   "Mỗi ngày sa-bát",
+   "Khi gặp khó khăn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Để cẩn thận làm theo và được thành công. “hãy suy ngẫm ngày và đêm” (Giô-suê 1:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 24,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giô-suê tuyên bố ông và gia đình mình sẽ làm gì?",
+  "options": [
+   "Trở về Ai Cập",
+   "Thờ thần tổ phụ",
+   "Ở lại bên kia sông",
+   "Phụng sự Đức Giê-hô-va"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông kêu gọi dân hãy chọn ai mà mình muốn phụng sự. “Nhưng tôi và gia đình tôi sẽ phụng sự Đức Giê-hô-va.” (Giô-suê 24:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Dân Y-sơ-ra-ên đã đi qua sông Giô-đanh trên gì?",
+  "options": [
+   "Thuyền bè",
+   "Lưng lạc đà",
+   "Đất khô",
+   "Cầu gỗ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nước sông dừng lại khi Hòm Giao Ước đến. “toàn dân Y-sơ-ra-ên đi qua trên đất khô” (Giô-suê 3:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sau khi Môi-se qua đời, Đức Giê-hô-va phán với ai để dẫn dân?",
+  "options": [
+   "Ca-lép",
+   "A-rôn",
+   "Ê-lê-a-sa",
+   "Giô-suê"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Giô-suê là phụ tá của Môi-se. “Đức Giê-hô-va phán với Giô-suê, con trai của Nun, phụ tá của Môi-se” (Giô-suê 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va hứa ban cho dân những nơi nào?",
+  "options": [
+   "Chỉ bờ sông Giô-đanh",
+   "Nơi bàn chân họ đạp đến",
+   "Chỉ thành Giê-ri-cô",
+   "Nơi Môi-se đã đến"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Như Ngài đã phán với Môi-se. “Bất cứ nơi nào bàn chân các con đạp đến thì Ta ban cho các con” (Giô-suê 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa dặn Giô-suê làm theo luật pháp, đừng xây qua đâu?",
+  "options": [
+   "Phía biển",
+   "Phía Ai Cập",
+   "Bên phải hoặc bên trái",
+   "Phía hoang mạc"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để đi đâu cũng được thịnh vượng. “đừng xây qua bên phải hoặc bên trái” (Giô-suê 1:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 3,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lúc các thầy tế lễ khiêng Hòm Giao Ước đến, sông Giô-đanh đang thế nào?",
+  "options": [
+   "Dâng lên tràn bờ",
+   "Cạn gần khô",
+   "Đóng băng",
+   "Chảy rất yếu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là mùa gặt, nước dâng cao nhất. “nước sông Giô-đanh dâng lên tràn bờ trong suốt mùa gặt” (Giô-suê 3:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 3,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi chân thầy tế lễ chạm nước, dòng nước từ thượng nguồn ra sao?",
+  "options": [
+   "Dừng lại, dồn thành một khối",
+   "Bốc hơi hết",
+   "Rẽ ra hai bên như tường",
+   "Chảy ngược ra biển"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dân qua sông chỗ đối diện Giê-ri-cô. “nước từ thượng nguồn chảy xuống dừng lại, dồn thành một khối” (Giô-suê 3:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Các thầy tế lễ khiêng Hòm Giao Ước đứng ở đâu khi dân qua sông?",
+  "options": [
+   "Đi sau cùng đoàn dân",
+   "Trên núi gần đó",
+   "Bên bờ phía đông",
+   "Giữa sông, trên đất khô"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ đứng đó cho đến khi tất cả đã qua sông. “đứng lại trên đất khô giữa sông Giô-đanh” (Giô-suê 3:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Những người đại diện các bộ tộc lấy gì giữa sông Giô-đanh?",
+  "options": [
+   "Mười hai bình nước",
+   "Mười hai tảng đá",
+   "Mười hai cây sậy",
+   "Mười hai nắm cát"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lấy ngay nơi chân thầy tế lễ đã đứng. “Hãy lấy mười hai tảng đá giữa sông Giô-đanh” (Giô-suê 4:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 4,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giô-suê dựng mười hai hòn đá lấy dưới sông tại đâu?",
+  "options": [
+   "Si-lô",
+   "Giê-ri-cô",
+   "Ghinh-ganh",
+   "Bết-ên"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để con cháu hỏi thì kể lại việc Chúa làm. “Giô-suê dựng tại Ghinh-ganh mười hai hòn đá” (Giô-suê 4:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 5,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi dân bắt đầu ăn thổ sản xứ Ca-na-an, điều gì dứt?",
+  "options": [
+   "Ma-na",
+   "Nước từ vầng đá",
+   "Trụ mây",
+   "Chim cút"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Từ đó họ ăn hoa màu của đất Ca-na-an. “ma-na cũng dứt” (Giô-suê 5:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 5,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đóng trại tại Ghinh-ganh, dân Y-sơ-ra-ên giữ lễ gì?",
+  "options": [
+   "Lễ Lều Tạm",
+   "Lễ Vượt Qua",
+   "Lễ Ngũ Tuần",
+   "Lễ Phu-rim"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngày mười bốn tháng ấy, vào lúc chiều tối. “giữ lễ Vượt Qua nhằm ngày mười bốn tháng ấy” (Giô-suê 5:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 5,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người cầm gươm trần gặp Giô-suê gần Giê-ri-cô tự xưng là ai?",
+  "options": [
+   "Vua thành Giê-ri-cô",
+   "Thám tử người A-mô-rít",
+   "Sứ giả của Ra-háp",
+   "Tướng chỉ huy đạo quân của Đức Giê-hô-va"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Giô-suê liền sấp mặt xuống đất thờ lạy. “ta đến để làm tướng chỉ huy đạo quân của Đức Giê-hô-va” (Giô-suê 5:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 5,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tướng chỉ huy đạo quân của Đức Giê-hô-va bảo Giô-suê làm gì?",
+  "options": [
+   "Rút gươm ra",
+   "Dựng bàn thờ",
+   "Cởi giày khỏi chân",
+   "Thổi kèn lên"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì nơi ông đứng là đất thánh. “Hãy cởi giày khỏi chân vì nơi con đứng là đất thánh.” (Giô-suê 5:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 7,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai đã lấy các vật đáng bị diệt ở Giê-ri-cô?",
+  "options": [
+   "A-can",
+   "Ca-lép",
+   "Ra-háp",
+   "Phi-nê-a"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cơn giận của Đức Giê-hô-va nổi lên với dân. “vì A-can, con trai của Cạt-mi” (Giô-suê 7:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 7,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lần đầu đánh thành A-hi, quân Y-sơ-ra-ên ra sao?",
+  "options": [
+   "Không gặp ai",
+   "Chạy trốn người A-hi",
+   "Đầu hàng ngay",
+   "Chiếm được thành"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì trong dân có người phạm tội. “nhưng họ đã chạy trốn người A-hi” (Giô-suê 7:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 7,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "A-can giấu những vật đã lấy ở đâu?",
+  "options": [
+   "Dưới gốc cây sồi",
+   "Trong một hang đá",
+   "Gần Hòm Giao Ước",
+   "Dưới đất trong trại mình"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông thú nhận vì đã tham muốn. “chúng được giấu dưới đất trong trại của con” (Giô-suê 7:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 9,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Dân Ga-ba-ôn dùng mưu gì để được lập hòa ước?",
+  "options": [
+   "Gả con gái cho Giô-suê",
+   "Xin đầu hàng ngay",
+   "Giả làm sứ từ xứ xa",
+   "Dâng nhiều vàng bạc"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ sợ bị diệt như Giê-ri-cô và A-hi. “Chúng giả vờ đi sứ” (Giô-suê 9:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 9,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bánh dự trữ của sứ giả Ga-ba-ôn trông thế nào?",
+  "options": [
+   "Mới nướng sáng nay",
+   "Thơm mùi mật",
+   "Còn nóng hổi",
+   "Khô và nát vụn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để làm như họ đã đi đường rất xa. “Tất cả bánh dự trữ của chúng đều khô và nát vụn.” (Giô-suê 9:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 9,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi mưu bị lộ, dân Ga-ba-ôn phải làm gì cho hội chúng?",
+  "options": [
+   "Đốn củi, xách nước",
+   "Nộp thuế vàng",
+   "Canh cổng thành",
+   "Đánh trận thay"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Các nhà lãnh đạo vẫn giữ lời thề để họ sống. “chúng phải đốn củi, xách nước cho cả hội chúng” (Giô-suê 9:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 10,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giô-suê truyền mặt trời đứng yên trên nơi nào?",
+  "options": [
+   "Ghinh-ganh",
+   "A-hi",
+   "Ga-ba-ôn",
+   "Giê-ri-cô"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Trong ngày Chúa phó dân A-mô-rít vào tay Y-sơ-ra-ên. “Hỡi mặt trời, hãy đứng yên lại trên Ga-ba-ôn!” (Giô-suê 10:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 10,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Mặt trời dừng lại giữa trời khoảng bao lâu?",
+  "options": [
+   "Bảy ngày",
+   "Một ngày trọn",
+   "Ba ngày",
+   "Một giờ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chẳng có ngày nào như ngày ấy. “không vội lặn khoảng một ngày trọn” (Giô-suê 10:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 14,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi xin vùng đồi núi Chúa đã hứa, Ca-lép bao nhiêu tuổi?",
+  "options": [
+   "Một trăm tuổi",
+   "Bốn mươi tuổi",
+   "Tám mươi tuổi",
+   "Tám mươi lăm tuổi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông vẫn mạnh khỏe như ngày đi do thám. “nay tôi được tám mươi lăm tuổi” (Giô-suê 14:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 14,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giô-suê cấp thành nào cho Ca-lép làm sản nghiệp?",
+  "options": [
+   "Giê-ri-cô",
+   "Bết-lê-hem",
+   "Hếp-rôn",
+   "Si-chem"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phần thưởng cho lòng trung tín của Ca-lép. “cấp Hếp-rôn cho Ca-lép” (Giô-suê 14:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 18,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hội chúng Y-sơ-ra-ên dựng Lều Hội Kiến ở đâu?",
+  "options": [
+   "Si-lô",
+   "Ghinh-ganh",
+   "Giê-ru-sa-lem",
+   "Si-chem"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Khi toàn xứ đã ở dưới quyền kiểm soát của họ. “Cả hội chúng dân Y-sơ-ra-ên nhóm họp tại Si-lô và dựng Lều Hội Kiến tại đó.” (Giô-suê 18:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 23,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trước khi qua đời, Giô-suê nói gì về các lời lành Chúa đã hứa?",
+  "options": [
+   "Mới ứng nghiệm phân nửa",
+   "Không một lời nào sai",
+   "Dân đã quên hết",
+   "Một số còn phải chờ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tất cả đều ứng nghiệm cho dân. “chẳng có một lời nào sai, nhưng tất cả đều ứng nghiệm cho anh em” (Giô-suê 23:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 24,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giô-suê qua đời lúc bao nhiêu tuổi?",
+  "options": [
+   "Một trăm hai mươi tuổi",
+   "Tám mươi lăm tuổi",
+   "Chín mươi tuổi",
+   "Một trăm mười tuổi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông được gọi là đầy tớ của Đức Giê-hô-va. “thọ một trăm mười tuổi” (Giô-suê 24:29)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 24,
+  "verseStart": 32,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hài cốt Giô-sép mang từ Ai Cập được chôn ở đâu?",
+  "options": [
+   "Si-lô",
+   "Si-chem",
+   "Bết-ên",
+   "Hếp-rôn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Trong đồng ruộng Gia-cốp đã mua. “được chôn ở Si-chem” (Giô-suê 24:32)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 7,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong số vật A-can tham muốn có chiếc áo choàng đến từ đâu?",
+  "options": [
+   "Đa-mách",
+   "Ty-rơ",
+   "Si-nê-a",
+   "Ai Cập"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cùng với bạc và một nén vàng. “một áo choàng Si-nê-a, rất đẹp” (Giô-suê 7:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 7,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong trận thua đầu tiên ở A-hi, người A-hi giết khoảng bao nhiêu người Y-sơ-ra-ên?",
+  "options": [
+   "Ba mươi sáu người",
+   "Ba nghìn người",
+   "Ba trăm người",
+   "Mười hai người"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lòng dân chúng tan ra như nước. “Người A-hi giết khoảng ba mươi sáu người” (Giô-suê 7:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 7,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "A-can, người lấy vật đáng bị diệt, thuộc bộ tộc nào?",
+  "options": [
+   "Đan",
+   "Bên-gia-min",
+   "Lê-vi",
+   "Giu-đa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông là con của Cạt-mi, cháu Xáp-đi. “thuộc bộ tộc Giu-đa” (Giô-suê 7:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 3,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nước sông Giô-đanh dồn thành một khối xa đến thành nào?",
+  "options": [
+   "A-đam",
+   "Si-chem",
+   "Ghinh-ganh",
+   "Giê-ri-cô"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Thành ở cạnh Xát-than. “cách một khoảng đến thành A-đam” (Giô-suê 3:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 4,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Dân Y-sơ-ra-ên lên khỏi sông Giô-đanh vào ngày nào?",
+  "options": [
+   "Mồng một tháng giêng",
+   "Mồng mười tháng giêng",
+   "Mười bốn tháng giêng",
+   "Mồng mười tháng bảy"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ đóng trại tại Ghinh-ganh, phía đông Giê-ri-cô. “Ngày mồng mười tháng giêng, dân chúng lên khỏi sông Giô-đanh” (Giô-suê 4:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 5,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Tại Ghinh-ganh, Đức Giê-hô-va nói Ngài đã cất khỏi dân điều gì?",
+  "options": [
+   "Nỗi sợ người A-na-kim",
+   "Bệnh tật trong hoang mạc",
+   "Nỗi ô nhục của Ai Cập",
+   "Tội thờ bò vàng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì thế chỗ ấy gọi là Ghinh-ganh. “Hôm nay Ta đã cất khỏi các con nỗi ô nhục của Ai Cập.” (Giô-suê 5:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 10,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giô-suê truyền mặt trăng dừng lại trên thung lũng nào?",
+  "options": [
+   "Gít-rê-ên",
+   "A-gia-lôn",
+   "Hi-nôm",
+   "Ê-la"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Cùng lúc mặt trời đứng yên trên Ga-ba-ôn. “hãy dừng lại trên thung lũng A-gia-lôn!” (Giô-suê 10:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 10,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Việc mặt trời đứng yên cũng được chép trong sách nào?",
+  "options": [
+   "Sách Gia-sa",
+   "Sách luật pháp",
+   "Sách các Vua",
+   "Sách Biên Niên"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Một sách xưa không còn lưu truyền. “Chẳng phải điều nầy được chép trong sách Gia-sa sao?” (Giô-suê 10:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 14,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi Môi-se sai đi do thám xứ, Ca-lép bao nhiêu tuổi?",
+  "options": [
+   "Năm mươi tuổi",
+   "Ba mươi tuổi",
+   "Hai mươi tuổi",
+   "Bốn mươi tuổi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông đã tường trình cách trung thực. “thì tôi đã được bốn mươi tuổi” (Giô-suê 14:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 24,
+  "verseStart": 26,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giô-suê dựng một hòn đá lớn làm chứng dưới cây gì?",
+  "options": [
+   "Cây bá hương",
+   "Cây ô-liu",
+   "Cây sồi",
+   "Cây chà là"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Gần nơi thánh của Đức Giê-hô-va ở Si-chem. “dưới cây sồi gần nơi thánh” (Giô-suê 24:26)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 24,
+  "verseStart": 30,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giô-suê được an táng tại đâu?",
+  "options": [
+   "Hếp-rôn",
+   "Si-lô",
+   "Thim-nát Sê-rách",
+   "Si-chem"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Trên vùng đồi núi Ép-ra-im. “tại Thim-nát Sê-rách” (Giô-suê 24:30)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joshua",
+  "chapter": 24,
+  "verseStart": 32,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Gia-cốp đã mua đồng ruộng nơi chôn Giô-sép với giá bao nhiêu?",
+  "options": [
+   "Một trăm miếng bạc",
+   "Ba mươi miếng bạc",
+   "Hai mươi miếng bạc",
+   "Bốn trăm nén bạc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Mua của con cháu Hê-mô, cha Si-chem. “với giá một trăm miếng bạc” (Giô-suê 24:32)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]
