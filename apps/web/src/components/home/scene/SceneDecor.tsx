@@ -99,11 +99,18 @@ interface BubbleProps {
 export function SpeechBubble({ mode, hovered, goKey, xp, questionCount = 5 }: BubbleProps) {
   const { t } = useTranslation()
   const letter = mode === 'letter' || mode === 'guest'
-  const line = hovered && goKey ? t(goKey)
-    : mode === 'letter' ? t('home.lk.bubbleLetter')
+  const resting = mode === 'letter' ? t('home.lk.bubbleLetter')
     : mode === 'guest' ? t('guest.bubble')
     : mode === 'first' ? <><span className="md:hidden">{t('home.lk.bubbleFirstShort')}</span><span className="hidden md:inline">{t('home.lk.bubbleFirst')}</span></>
     : t('home.signpost.ask')
+  // Only desktop follows the hovered board. On a phone a tap fires the hover first, and the longer
+  // line grew the bubble over the boards next to it, so the click landed on the bubble instead.
+  const hoverLine = hovered && goKey ? t(goKey) : null
+  const line = hoverLine
+    ? <><span className="md:hidden">{resting}</span><span className="hidden md:inline">{hoverLine}</span></>
+    : resting
+  const wrap = mode !== 'first' ? 'whitespace-nowrap'
+    : hoverLine ? 'max-w-[190px] md:max-w-none md:whitespace-nowrap' : 'max-w-[190px] md:max-w-[21cqw]'
   return (
     <div className="absolute z-[5] left-[55%] bottom-[37%] md:left-[55.2%] md:top-[49.5%] md:bottom-auto px-3 md:px-[1.3cqw] pt-2 md:pt-[.75cqw] pb-2.5 md:pb-[1cqw] bg-bq-white border-[3px] border-bq-ink rounded-2xl md:rounded-[18px] shadow-[0_4px_0_rgba(29,43,34,.35)]">
       <svg aria-hidden width="26" height="24" viewBox="0 0 26 24" className="md:hidden absolute left-[22px] -bottom-[21px]">
@@ -114,7 +121,7 @@ export function SpeechBubble({ mode, hovered, goKey, xp, questionCount = 5 }: Bu
         <path d="M33 3 L2 22 L33 18" fill="#FFF8E7" stroke="#1D2B22" strokeWidth="3" strokeLinejoin="round" />
         <path d="M30 6 L31 16" stroke="#FFF8E7" strokeWidth="5" />
       </svg>
-      <p className={`m-0 text-[15px] md:[font-size:max(15px,1.45cqw)] font-bold ${letter && !hovered ? 'hidden md:block' : ''} ${mode === 'first' && !hovered ? 'max-w-[190px] md:max-w-[21cqw]' : 'whitespace-nowrap'}`}>{line}</p>
+      <p className={`m-0 text-[15px] md:[font-size:max(15px,1.45cqw)] font-bold ${letter ? 'hidden md:block' : ''} ${wrap}`}>{line}</p>
       {letter && (
         <Link
           to="/daily"

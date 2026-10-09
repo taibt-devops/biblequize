@@ -120,6 +120,15 @@ describe('GuestScene: the crossroads for visitors', () => {
     expect(screen.getByText('Đi Luyện Tập nhé?')).toBeInTheDocument()
   })
 
+  it('on phones the bubble keeps its size while a board is touched, so the tap reaches the board', () => {
+    // A tap fires the hover first; a longer line used to grow the bubble over the next board.
+    renderScene()
+    fireEvent.mouseEnter(screen.getByTestId('home-mode-rooms'))
+    expect(screen.getByText('Phòng Chơi cần đăng nhập nhé!')).toHaveClass('hidden', 'md:inline')
+    // The letter bubble shows only its button on phones, hovered or not.
+    expect(screen.getByText('Phòng Chơi cần đăng nhập nhé!').closest('p')).toHaveClass('hidden', 'md:block')
+  })
+
   it('links to the introduction, the ranking and the small print', () => {
     renderScene()
     expect(screen.getByTestId('guest-about')).toHaveAttribute('href', '/gioi-thieu')
