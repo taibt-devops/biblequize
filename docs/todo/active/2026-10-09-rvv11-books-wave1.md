@@ -17,7 +17,9 @@
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-4 Lên prod
-  - Status: [ ] TODO · deploy BE (file seed mới nằm trong jar) → seed một lần chỉ `rvv11_books_quiz.json` (`QUESTION_SEEDING_PATTERN`, giữ `APP_SEEDING_QUESTIONS_SYNC_STALE=false`) → sao lưu rồi **tắt** (`is_active=0`) các hàng có `content_hash` trong `retired_hashes.txt` → kiểm số câu đang bật theo sách/độ khó
+  - Status: [x] DONE 09/10 · commit `1e940782`, BE `sha256:0be255f8…` (rollback `sha256:88207c60…`) · seed một lần chỉ `rvv11_books_quiz.json`, `sync-stale=false`: inserted=466, dupHash=0, staleDeleted=0 · 848/848 hash khớp (toàn `seed:json`, đang bật, không lẫn sách/ngôn ngữ khác) → sao lưu `questions_bak_20261009_rvv11_w1` (id, is_active) rồi `is_active=0` cho 848 hàng
+  - Sau khi tắt (đang bật / Dễ cốt lõi / RVV11): Sáng Thế Ký Dễ 156/153, TB 67/66, Khó 41/41 · Ma-thi-ơ 119/119, 79/76, 33/33 · Mác 42/41, 45/45, 29/29 · Lu-ca 111/111, 53/52, 32/32 · Giăng 59/59, 59/59, 33/33. Phần lẻ còn lại: Giáo lý căn bản (`bible_basics`), 3 câu nguồn "Kinh Thánh" của Sáng Thế Ký, 1 câu Lu-ca trong `isaiah_quiz.json` — để nguyên
+  - Bật lại nếu cần: `UPDATE questions q JOIN questions_bak_20261009_rvv11_w1 b ON b.id = q.id SET q.is_active = b.is_active;`
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-5 Các đợt sau

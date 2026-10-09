@@ -9,7 +9,7 @@
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
-| 2026-10-09 | Viết lại câu Trung bình/Khó bằng RVV11, đợt 1: Sáng Thế Ký + 4 sách Phúc Âm (466 câu thay 848 câu cũ), tắt câu cũ trên prod (RVB-1..5) | IN PROGRESS (RVB-1..3 xong; RVB-4 lên prod; RVB-5 các đợt sau) | [detail](docs/todo/active/2026-10-09-rvv11-books-wave1.md) |
+| 2026-10-09 | Viết lại câu Trung bình/Khó bằng RVV11, đợt 1: Sáng Thế Ký + 4 sách Phúc Âm (466 câu thay 848 câu cũ), tắt câu cũ trên prod (RVB-1..5) | IN PROGRESS (RVB-1..4 xong, lên prod 09/10; RVB-5 các đợt sau) | [detail](docs/todo/active/2026-10-09-rvv11-books-wave1.md) |
 | 2026-10-09 | Trang chủ khách một màn "ngã ba cho khách": thẻ chào + Google, biển khóa mở thẻ đăng nhập, landing dài → /gioi-thieu, giữ prerender SEO (GCH-1..4) | DONE (deploy prod 09/10; theo dõi Search Console 2–4 tuần) | [detail](docs/todo/active/2026-10-09-guest-crossroads-home.md) |
 | 2026-10-09 | Luyện Tập theo câu chuyện (120 chuyện, 1.095 câu Dễ cốt lõi RVV11): cột `questions.story`, `GET /api/public/stories`, nút Theo sách / Theo câu chuyện (PBS-1..5) | DONE (deploy prod 09/10, nạp 1.095 câu; đo tỷ lệ đúng sau 2–4 tuần) | [detail](docs/todo/active/2026-10-09-practice-by-story.md) |
 | 2026-10-09 | Câu của Nhóm lọt vào kho chung Đấu Hạng/Luyện Tập + 71 câu tên sách sai (Song of Solomon trùng, Gióp/Sáng Thế Ký của Nhóm) (GQL-1..3) | DONE (deploy prod 09/10) | [detail](docs/todo/active/2026-10-09-group-questions-shared-pool-leak.md) |
