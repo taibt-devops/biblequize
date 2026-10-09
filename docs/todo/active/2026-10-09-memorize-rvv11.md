@@ -4,7 +4,7 @@
 
 ### Tasks
 - MRV-1 Toàn văn RVV11 làm seed
-  - Status: [ ] IN PROGRESS · tải 1.189 chương từ kinhthanh.httlvn.org (`?v=RVV11`, 1,5 giây/trang, cache `content/easy-core/.cache/rvv11/`) · sửa bộ đọc: khối gộp `class="verse phu_13_17 phu_13_18"` trước đây bị bỏ cả khối (mất chữ), nay lưu ở câu đầu + `merged` · `rvv11_to_seed.py check|write` → 66 file `NN-Book.json` + `DIFFERENCES.md`; chặn khi chữ rỗng, sót markup, chương không có câu · `BibleSeedContentTest` kiểm theo RVV11: chương ngoài danh sách khác biệt phải khớp `BibleStructure`
+  - Status: [x] DONE · 1.189/1.189 chương, 0 lỗi tải · 66 file, **31.086 dòng**, 4 khối gộp, 41 khác biệt (`DIFFERENCES.md`: 15 câu Tân Ước RVV11 lược, đánh số kiểu Hê-bơ-rơ ở Dân Số Ký 29–30, 1 Sa-mu-ên 20/23–24, 1 Các Vua 22, Gióp 38–41, Ê-sai 8–9, Ê-xê-chi-ên 20–21, Ô-sê 11–12, Giô-na 1–2, Mi-chê 4–5, 2 Cô-rinh-tô 13, 3 Giăng, Khải Huyền 12), 0 lỗi chữ · bỏ `seed/bible/btt1926/` · tải từ kinhthanh.httlvn.org (`?v=RVV11`, 1,5 giây/trang, cache `content/easy-core/.cache/rvv11/`) · sửa bộ đọc: khối gộp `class="verse phu_13_17 phu_13_18"` trước đây bị bỏ cả khối (mất chữ), nay lưu ở câu đầu + `merged` · `rvv11_to_seed.py check|write` → 66 file `NN-Book.json` + `DIFFERENCES.md`; chặn khi chữ rỗng, sót markup, chương không có câu · `BibleSeedContentTest` kiểm theo RVV11: chương ngoài danh sách khác biệt phải khớp `BibleStructure`
   - **Spec impact**: [x] SPEC_USER §5.1.1
   - **Spec strategy**: [x] (a) update inline
 - MRV-2 Backend theo cách đánh số của RVV11
@@ -16,7 +16,8 @@
   - **Spec impact**: [x] SPEC_USER §5.1.1
   - **Spec strategy**: [x] (a) update inline
 - MRV-4 Lên prod
-  - Status: [ ] TODO · deploy BE + FE (V75 chạy lúc khởi động) → nạp một lần (`BIBLE_IMPORT_ENABLED=true` qua file override, rồi về `false`) → `GET /api/public/bible/status` = `available:true` → Học Thuộc hiện lại cho người dùng → kiểm Giăng 3:16, khối gộp Phục Truyền Luật Lệ Ký 13:17-18, Giô-na 2:11
+  - Status: [x] DONE 09/10 · commit `210f23dc`, BE `sha256:34fb410c…` (rollback `6985a2b6…`), FE `sha256:c51aa951…` (rollback `9f45ee0b…`) · V75 áp 07:55 · nạp một lần qua `/tmp/bible-once.yml` → `[bible-import] done, 31086 verses written` (~7 phút), rồi về `BIBLE_IMPORT_ENABLED=false` · `/api/public/bible/status` = `{"version":"RVV11","available":true}` → **Học Thuộc hiện lại trên prod** · DB: 31.086 dòng / 66 sách / 4 khối gộp; `user_memory_verses` 2 dòng → RVV11 · gọi thật (token ký tạm trong máy chủ, chỉ đọc): `/api/bible/verses` Phục Truyền Luật Lệ Ký 13 có khối 17-18; passage 13:18 → trả trọn 17-18; Giô-na 2:10-11 có câu 11; Ma-thi-ơ 17:20-22 trả 20, 22 (không có 21); danh sách câu gốc hiện chữ RVV11
+  - User xác nhận được đăng toàn văn RVV11 vào repo công khai (DECISIONS 2026-10-09)
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 
