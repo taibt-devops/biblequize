@@ -92,7 +92,7 @@ const Quiz: React.FC = () => {
   const { showToast } = useToast()
   const queryClient = useQueryClient()
   // Localize Bible book names (English keys → Vietnamese display, e.g.
-  // "Exodus" → "Xuất Ê-díp-tô Ký"). Falls back to the English key.
+  // "Exodus" → "Xuất Ai Cập Ký"). Falls back to the English key.
   const getBookName = useBookName()
   const bookLang = getQuizLanguage()
   const settings = location.state as QuizPageSettings | null

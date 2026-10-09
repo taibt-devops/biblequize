@@ -21,7 +21,7 @@ const base: HomeSceneProps = {
     { description: 'Trả lời đúng 5 câu khó', progress: 1, target: 5 },
     { description: 'Đạt 60+ điểm Đấu Hạng', progress: 0, target: 1 },
   ],
-  journey: { book: 'Xuất Ê-díp-tô Ký', pct: 42 },
+  journey: { book: 'Xuất Ai Cập Ký', pct: 42 },
   rank: { rank: 14, points: 1020 },
   season: { name: 'Mùa Cảm Tạ', daysLeft: 24 },
   verseDue: 0,

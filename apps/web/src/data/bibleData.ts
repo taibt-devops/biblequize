@@ -80,16 +80,17 @@ export function getVerseCount(book: string, chapter: number): number {
 // Protestant 66 books in canonical order, VN ↔ EN parallel arrays.
 // Stored value across the app is the VN form (legacy); the EN form is only for
 // display when locale === 'en'. Indices align between both arrays.
+// VN names follow the RVV11 Bible (Truyền Thống Hiệu Đính 2010), like the books table.
 export const BIBLE_BOOKS_VI: readonly string[] = [
-  'Sáng Thế Ký', 'Xuất Ê-díp-tô Ký', 'Lê-vi Ký', 'Dân-số Ký', 'Phục Truyền',
+  'Sáng Thế Ký', 'Xuất Ai Cập Ký', 'Lê-vi Ký', 'Dân Số Ký', 'Phục Truyền Luật Lệ Ký',
   'Giô-suê', 'Các Quan Xét', 'Ru-tơ', '1 Sa-mu-ên', '2 Sa-mu-ên',
   '1 Các Vua', '2 Các Vua', '1 Sử Ký', '2 Sử Ký', 'E-xơ-ra',
-  'Nê-hê-mi', 'Ê-xơ-tê', 'Gióp', 'Thi-thiên', 'Châm Ngôn',
+  'Nê-hê-mi', 'Ê-xơ-tê', 'Gióp', 'Thi Thiên', 'Châm Ngôn',
   'Truyền Đạo', 'Nhã Ca', 'Ê-sai', 'Giê-rê-mi', 'Ca Thương',
   'Ê-xê-chi-ên', 'Đa-ni-ên', 'Ô-sê', 'Giô-ên', 'A-mốt',
   'Áp-đia', 'Giô-na', 'Mi-chê', 'Na-hum', 'Ha-ba-cúc',
   'Sô-phô-ni', 'A-ghê', 'Xa-cha-ri', 'Ma-la-chi',
-  'Ma-thi-ơ', 'Mác', 'Lu-ca', 'Giăng', 'Công Vụ',
+  'Ma-thi-ơ', 'Mác', 'Lu-ca', 'Giăng', 'Công Vụ Các Sứ Đồ',
   'Rô-ma', '1 Cô-rinh-tô', '2 Cô-rinh-tô', 'Ga-la-ti', 'Ê-phê-sô',
   'Phi-líp', 'Cô-lô-se', '1 Tê-sa-lô-ni-ca', '2 Tê-sa-lô-ni-ca',
   '1 Ti-mô-thê', '2 Ti-mô-thê', 'Tít', 'Phi-lê-môn', 'Hê-bơ-rơ',
@@ -114,12 +115,28 @@ export const BIBLE_BOOKS_EN: readonly string[] = [
   '3 John', 'Jude', 'Revelation',
 ] as const
 
+/** Names this list used before RVV11; group questions and quiz sets saved them as their book. */
+const LEGACY_VI: Record<string, string> = {
+  'Xuất Ê-díp-tô Ký': 'Xuất Ai Cập Ký',
+  'Dân-số Ký': 'Dân Số Ký',
+  'Phục Truyền': 'Phục Truyền Luật Lệ Ký',
+  'Ê-xơ-ra': 'E-xơ-ra',
+  'Thi-thiên': 'Thi Thiên',
+  'Công Vụ': 'Công Vụ Các Sứ Đồ',
+}
+
+/** The current (RVV11) form of a stored VN book name; other values pass through. */
+export function normalizeBibleBookVi(bookVi: string): string {
+  return LEGACY_VI[bookVi] ?? bookVi
+}
+
 const VI_TO_EN: Record<string, string> = Object.fromEntries(
   BIBLE_BOOKS_VI.map((vi, i) => [vi, BIBLE_BOOKS_EN[i]]),
 )
 
 /** Display a book name in the requested locale; falls back to input. */
 export function localizeBibleBook(bookVi: string, lang: 'vi' | 'en'): string {
-  if (lang === 'vi') return bookVi
-  return VI_TO_EN[bookVi] ?? bookVi
+  const current = normalizeBibleBookVi(bookVi)
+  if (lang === 'vi') return current
+  return VI_TO_EN[current] ?? bookVi
 }

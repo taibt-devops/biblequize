@@ -14,7 +14,7 @@ vi.mock('../../hooks/useBookName', () => ({
     if (lang === 'en') return key
     const map: Record<string, string> = {
       Genesis: 'Sáng Thế Ký',
-      Exodus: 'Xuất Ê-díp-tô Ký',
+      Exodus: 'Xuất Ai Cập Ký',
       Psalms: 'Thi Thiên',
       John: 'Giăng',
       Revelation: 'Khải Huyền',

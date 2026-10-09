@@ -24,6 +24,11 @@
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-5 Các đợt sau
   - Status: [ ] TODO · đợt 2: 13 sách còn lại của vòng quen thuộc (Xuất Ai Cập Ký, Ru-tơ, 1 Sa-mu-ên, Ê-xơ-tê, Thi Thiên, Châm Ngôn, Đa-ni-ên, Giô-na, Công Vụ, Rô-ma, Ê-phê-sô, Phi-líp, Gia-cơ) → vòng 2 (22 sách) → vòng 3 (26 sách)
-  - Chờ user: (a) Học Thuộc giữ BTT1926 có ghi rõ, hay xin phép dùng toàn văn RVV11; (b) đổi tên sách trên giao diện (`bibleData.ts` đang dùng tên 1925: "Xuất Ê-díp-tô Ký", "Dân-số Ký"…) sang RVV11; (c) bộ tiếng Anh làm lại sau
+  - Chờ user: (a) Học Thuộc giữ BTT1926 có ghi rõ, hay xin phép dùng toàn văn RVV11; (c) bộ tiếng Anh làm lại sau. (b) tên sách giao diện → RVB-6
   - **Spec impact**: [ ] None
   - **Spec strategy**: [ ] (c) [no-spec-impact]
+- RVB-6 Tên sách trên giao diện theo RVV11
+  - Status: [x] DONE · user 09/10: "đổi sang tên RVV11 cho thống nhất" · nguồn tên: VIE2010 trên bible.com (cùng nguyên văn RVV11; trang HTTLVN dùng tên kiểu 1925 cho mọi bản nên không dùng được) · `V74__books_rvv11_names.sql`: `books.name_vi` Exodus → Xuất Ai Cập Ký, Ezra → E-xơ-ra, Acts → Công Vụ Các Sứ Đồ (cập nhật theo `name`, không sửa `R__data.sql` vì file repeatable đổi checksum sẽ chạy lại trên prod) · web `BIBLE_BOOKS_VI` (trình soạn bộ câu Nhóm): Xuất Ai Cập Ký, Dân Số Ký, Phục Truyền Luật Lệ Ký, Thi Thiên, Công Vụ Các Sứ Đồ; `normalizeBibleBookVi` đổi tên cũ đã lưu sang tên mới (editor, `localizeBibleBook`, `useBookName`) · màn chơi thử: "Xuất Hành" → "Xuất Ai Cập Ký" · Test: `bibleData.test` +2, sửa dữ liệu mẫu 6 file test, `Utf8EncodingTest`
+  - Không đổi: lời giải thích/phương án của câu cũ (khoảng 350 chỗ ghi "Xuất Ê-díp-tô Ký", "Thi-thiên"…, kèm tên nước "Ê-díp-tô") — thay hẳn khi viết lại từng sách; bản đồ hành trình giữ nhãn vùng ngắn "Công Vụ"
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]

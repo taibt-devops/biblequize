@@ -51,7 +51,7 @@ interface VerseRef {
  * design); callers don't need to upper-case ahead of time.
  */
 export function formatVerseRef(ref: VerseRef, bookName?: string): string {
-  // bookName lets callers pass a localized label (e.g. "Xuất Ê-díp-tô Ký");
+  // bookName lets callers pass a localized label (e.g. "Xuất Ai Cập Ký");
   // falls back to the English key in ref.book.
   const book = (bookName ?? ref.book).toUpperCase()
   if (!ref.chapter) return book

@@ -42,7 +42,7 @@ describe('JourneyMap', () => {
     const onBook = vi.fn()
     const books = [
       { key: 'Genesis', name: 'Sáng Thế Ký', order: 1, status: 'COMPLETED' as const, pct: 90 },
-      { key: 'Exodus', name: 'Xuất Ê-díp-tô Ký', order: 2, status: 'IN_PROGRESS' as const, pct: 42 },
+      { key: 'Exodus', name: 'Xuất Ai Cập Ký', order: 2, status: 'IN_PROGRESS' as const, pct: 42 },
     ]
     render(<JourneyMap progress={progress} currentRegion="pentateuch" onSelectRegion={() => {}} books={books} selectedBook="Exodus" currentBook="Exodus" onSelectBook={onBook} />)
     expect(screen.getByTestId('journey-station-Genesis')).toHaveTextContent('★')

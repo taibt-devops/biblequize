@@ -16,7 +16,7 @@ interface SampleQuestion {
 }
 
 const FALLBACK_VI: SampleQuestion[] = [
-  { id: 'f1', content: 'Sách đầu tiên trong Kinh Thánh là gì?', options: ['Sáng Thế Ký', 'Xuất Hành', 'Ma-thi-ơ', 'Thi Thiên'], correctAnswer: [0], book: 'Genesis' },
+  { id: 'f1', content: 'Sách đầu tiên trong Kinh Thánh là gì?', options: ['Sáng Thế Ký', 'Xuất Ai Cập Ký', 'Ma-thi-ơ', 'Thi Thiên'], correctAnswer: [0], book: 'Genesis' },
   { id: 'f2', content: 'Ai đã dẫn dân Y-sơ-ra-ên ra khỏi Ai Cập?', options: ['Áp-ra-ham', 'Đa-vít', 'Môi-se', 'Giô-suê'], correctAnswer: [2], book: 'Exodus' },
   { id: 'f3', content: 'Chúa Giê-su được sinh ra ở đâu?', options: ['Na-xa-rét', 'Giê-ru-sa-lem', 'Bết-lê-hem', 'Ca-bê-na-um'], correctAnswer: [2], book: 'Matthew' },
 ]

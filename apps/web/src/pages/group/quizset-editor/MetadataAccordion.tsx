@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import type { QuizSetFull } from '../../../api/quizSets'
-import { BIBLE_BOOKS_VI, localizeBibleBook } from '../../../data/bibleData'
+import { BIBLE_BOOKS_VI, localizeBibleBook, normalizeBibleBookVi } from '../../../data/bibleData'
 import { COLOR, DARK_INPUT_STYLE, INSET_BG } from './styles'
 
 interface Props {
@@ -21,7 +21,7 @@ export default function MetadataAccordion({
 }: Props) {
   const { t, i18n } = useTranslation()
   const [open, setOpen] = useState(defaultOpen)
-  const [book, setBook] = useState(defaultBook)
+  const [book, setBook] = useState(() => normalizeBibleBookVi(defaultBook))
   const [chapterFrom, setChapterFrom] = useState(defaultChapterFrom)
   const [chapterTo, setChapterTo] = useState(defaultChapterTo)
 

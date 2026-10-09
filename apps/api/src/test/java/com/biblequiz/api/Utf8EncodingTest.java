@@ -51,7 +51,7 @@ class Utf8EncodingTest extends BaseControllerTest {
     @DisplayName("GET /api/books — Vietnamese nameVi with diacritics should not be mojibake")
     void getBooks_shouldReturnVietnameseTextCorrectly() throws Exception {
         Book genesis = new Book("book-001", "Genesis", "Sáng Thế Ký", Book.Testament.OLD, 1);
-        Book exodus = new Book("book-002", "Exodus", "Xuất Ê-díp-tô Ký", Book.Testament.OLD, 2);
+        Book exodus = new Book("book-002", "Exodus", "Xuất Ai Cập Ký", Book.Testament.OLD, 2);
         Book psalms = new Book("book-003", "Psalms", "Thi Thiên", Book.Testament.OLD, 19);
 
         when(bookRepository.findAll()).thenReturn(List.of(genesis, exodus, psalms));
@@ -59,7 +59,7 @@ class Utf8EncodingTest extends BaseControllerTest {
         mockMvc.perform(get("/api/books"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$[0].nameVi").value("Sáng Thế Ký"))
-                .andExpect(jsonPath("$[1].nameVi").value("Xuất Ê-díp-tô Ký"))
+                .andExpect(jsonPath("$[1].nameVi").value("Xuất Ai Cập Ký"))
                 .andExpect(jsonPath("$[2].nameVi").value("Thi Thiên"));
     }
 

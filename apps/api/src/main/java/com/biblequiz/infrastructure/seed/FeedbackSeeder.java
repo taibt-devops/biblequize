@@ -36,7 +36,7 @@ public class FeedbackSeeder {
         String[][] items = {
                 {"report", "pending", "Câu hỏi về Sáng Thế Ký 1:1 có đáp án sai"},
                 {"report", "pending", "Phần giải thích thiếu trích dẫn Kinh Thánh"},
-                {"report", "pending", "Typo trong câu hỏi về sách Xuất Ê-díp-tô"},
+                {"report", "pending", "Typo trong câu hỏi về sách Xuất Ai Cập Ký"},
                 {"question", "in_progress", "Tại sao không có sách Khải Huyền trong quiz?"},
                 {"question", "in_progress", "Cách tính điểm ranked mode như thế nào?"},
                 {"general", "resolved", "App rất hay! Mong có thêm câu hỏi về Tân Ước"},

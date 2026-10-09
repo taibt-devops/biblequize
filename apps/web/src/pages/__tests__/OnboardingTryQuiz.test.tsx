@@ -69,7 +69,7 @@ describe('OnboardingTryQuiz', () => {
       await waitFor(() => {
         // Fallback VI question 1 options
         expect(screen.getByText('Sáng Thế Ký')).toBeInTheDocument()
-        expect(screen.getByText('Xuất Hành')).toBeInTheDocument()
+        expect(screen.getByText('Xuất Ai Cập Ký')).toBeInTheDocument()
         expect(screen.getByText('Ma-thi-ơ')).toBeInTheDocument()
         expect(screen.getByText('Thi Thiên')).toBeInTheDocument()
       })
@@ -115,11 +115,11 @@ describe('OnboardingTryQuiz', () => {
       renderTryQuiz()
       const user = userEvent.setup()
       await waitFor(() => {
-        expect(screen.getByText('Xuất Hành')).toBeInTheDocument()
+        expect(screen.getByText('Xuất Ai Cập Ký')).toBeInTheDocument()
       })
-      // Wrong answer for Q1 is index 1 = "Xuất Hành"
-      await user.click(screen.getByText('Xuất Hành').closest('button')!)
-      const wrongBtn = screen.getByText('Xuất Hành').closest('button')!
+      // Wrong answer for Q1 is index 1 = "Xuất Ai Cập Ký"
+      await user.click(screen.getByText('Xuất Ai Cập Ký').closest('button')!)
+      const wrongBtn = screen.getByText('Xuất Ai Cập Ký').closest('button')!
       expect(wrongBtn.className).toContain('ruby')
       // Correct answer should be emerald (success)
       const correctBtn = screen.getByText('Sáng Thế Ký').closest('button')!

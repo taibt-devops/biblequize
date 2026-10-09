@@ -10,6 +10,7 @@
   - Thứ tự theo vòng quen thuộc của Đấu Hạng: vòng 1 (18 sách) → vòng 2 → vòng 3. Đợt 1: Sáng Thế Ký + 4 sách Phúc Âm.
   - Câu Dễ của mỗi sách lấy từ bộ Dễ cốt lõi; câu Dễ cũ tắt cùng lúc.
   - Học Thuộc vẫn dùng Bản Truyền Thống 1926 (quyết định 2026-09-15) cho tới khi có giấy phép toàn văn RVV11. Bộ tiếng Anh giữ nguyên.
+  - Tên sách trên giao diện cũng theo RVV11 (user 09/10: "đổi sang tên RVV11 cho thống nhất"): Xuất Ai Cập Ký, Dân Số Ký, Phục Truyền Luật Lệ Ký, Thi Thiên, E-xơ-ra, Công Vụ Các Sứ Đồ (V74 + `bibleData.ts`).
   - Hash các câu đã tắt lưu trong `content/books/retired_hashes.txt`: hàng cũ còn trong DB nên câu mới trùng hash sẽ bị seeder bỏ qua.
 - **Implementation:** task `docs/todo/active/2026-10-09-rvv11-books-wave1.md` (RVB-1..5).
 

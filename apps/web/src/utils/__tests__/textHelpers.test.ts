@@ -132,8 +132,8 @@ describe('formatVerseRef', () => {
   })
 
   it('bookName override localizes the label (English key → VN display)', () => {
-    expect(formatVerseRef({ book: 'Exodus', chapter: 34, verseStart: 1 }, 'Xuất Ê-díp-tô Ký'))
-      .toBe('XUẤT Ê-DÍP-TÔ KÝ 34:1')
+    expect(formatVerseRef({ book: 'Exodus', chapter: 34, verseStart: 1 }, 'Xuất Ai Cập Ký'))
+      .toBe('XUẤT AI CẬP KÝ 34:1')
     // falls back to the English key when no override is given
     expect(formatVerseRef({ book: 'Exodus', chapter: 34, verseStart: 1 }))
       .toBe('EXODUS 34:1')

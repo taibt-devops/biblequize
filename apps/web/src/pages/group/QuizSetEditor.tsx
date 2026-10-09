@@ -10,7 +10,7 @@ import type {
   AIGenerateForSetBody, AIGenerateForSetResponse, AIRewriteResponse,
   AddQuestionBody, CreateQuizSetBody, EditorQuestion, QuizSet, QuizSetFull,
 } from '../../api/quizSets'
-import { BIBLE_BOOKS_VI } from '../../data/bibleData'
+import { BIBLE_BOOKS_VI, normalizeBibleBookVi } from '../../data/bibleData'
 import EditorTopBar from './quizset-editor/EditorTopBar'
 import MetadataAccordion from './quizset-editor/MetadataAccordion'
 import QuestionSidebar from './quizset-editor/QuestionSidebar'
@@ -118,7 +118,7 @@ export default function QuizSetEditor({
         setActiveId(full.questions?.[0]?.id ?? null)
         const first = full.questions?.[0]
         if (first?.book) {
-          setScope({ book: first.book, chapterFrom: first.chapter ?? 1, chapterTo: first.chapter ?? 1 })
+          setScope({ book: normalizeBibleBookVi(first.book), chapterFrom: first.chapter ?? 1, chapterTo: first.chapter ?? 1 })
         }
         if (aiEnabled) {
           try { setAiQuota(await api.getAIQuota()) } catch { /* ignore */ }

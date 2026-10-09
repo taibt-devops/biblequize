@@ -144,7 +144,7 @@ describe('BibleJourneyCard (Modern Spiritual)', () => {
       makeBook(2, 'Xuất Hành', 'LOCKED'),
       makeBook(3, 'Lê-vi Ký', 'LOCKED'),
       makeBook(4, 'Dân Số Ký', 'LOCKED'),
-      makeBook(5, 'Phục Truyền', 'LOCKED'),
+      makeBook(5, 'Phục Truyền Luật Lệ Ký', 'LOCKED'),
       makeBook(6, 'Giô-suê', 'LOCKED'),
       makeBook(7, 'Các Quan Xét', 'LOCKED'),
       makeBook(8, 'Ru-tơ', 'LOCKED'),

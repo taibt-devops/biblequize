@@ -1,6 +1,7 @@
 import { useCallback, useMemo } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { api } from '../api/client'
+import { normalizeBibleBookVi } from '../data/bibleData'
 
 export interface Book {
   id: string
@@ -33,7 +34,8 @@ export function useBooks() {
  * Falls back to the English key when:
  *   - books haven't loaded yet (first render),
  *   - the requested language is "en",
- *   - the key is unknown (defensive — keeps UI readable).
+ *   - the key is unknown (defensive — keeps UI readable). A Vietnamese name saved
+ *     by a group question is shown in its current (RVV11) form.
  */
 export function useBookName() {
   const { data: books = [] } = useBooks()
@@ -47,7 +49,7 @@ export function useBookName() {
 
   return useCallback(
     (bookKey: string, lang: 'vi' | 'en' = 'vi'): string =>
-      lang === 'vi' ? map.get(bookKey) ?? bookKey : bookKey,
+      lang === 'vi' ? map.get(bookKey) ?? normalizeBibleBookVi(bookKey) : bookKey,
     [map],
   )
 }
