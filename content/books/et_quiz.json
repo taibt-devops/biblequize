@@ -1,0 +1,1083 @@
+[
+ {
+  "book": "Esther",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vua A-suê-ru ngự tại kinh đô nào?",
+  "options": [
+   "Ni-ni-ve",
+   "Su-sơ",
+   "Giê-ru-sa-lem",
+   "Ba-by-lôn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Câu chuyện Ê-xơ-tê diễn ra tại kinh đô Su-sơ của Ba Tư. “vua đang ngự trên ngôi của vương quốc tại kinh đô Su-sơ.” (Ê-xơ-tê 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trước Ê-xơ-tê, hoàng hậu của vua A-suê-ru tên là gì?",
+  "options": [
+   "Mi-canh",
+   "Xê-rết",
+   "Vả-thi",
+   "Tha-ma"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vả-thi bị truất ngôi, mở đường cho Ê-xơ-tê. “hoàng hậu Vả-thi cũng đãi tiệc cho giới nữ tại cung vua A-suê-ru.” (Ê-xơ-tê 1:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hoàng hậu Vả-thi bị truất ngôi vì đã làm gì?",
+  "options": [
+   "Không chịu đến theo lệnh vua",
+   "Bỏ trốn khỏi cung",
+   "Lấy trộm vương miện",
+   "Âm mưu hại vua"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vua nổi giận và các cận thần khuyên vua truất ngôi bà. “Nhưng hoàng hậu Vả-thi không chịu theo lệnh của vua truyền qua các hoạn quan.” (Ê-xơ-tê 1:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 2,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Mạc-đô-chê là người dân tộc nào?",
+  "options": [
+   "Người A-gát",
+   "Người Ba Tư",
+   "Người Mê-đi",
+   "Người Do Thái"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Mạc-đô-chê là người Do Thái thuộc chi phái Bên-gia-min, sống ở Su-sơ. “Tại kinh đô Su-sơ có một người Do Thái tên là Mạc-đô-chê” (Ê-xơ-tê 2:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo lời Mạc-đô-chê dặn, Ê-xơ-tê giữ kín điều gì?",
+  "options": [
+   "Nơi mình sinh ra",
+   "Tên thật của mình",
+   "Tuổi của mình",
+   "Dân tộc và họ hàng mình"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ê-xơ-tê vâng lời Mạc-đô-chê như khi còn được ông nuôi dưỡng. “Ê-xơ-tê không tiết lộ dân tộc và họ hàng mình vì Mạc-đô-chê có dặn cô đừng tỏ cho ai biết cả.” (Ê-xơ-tê 2:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 2,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Mạc-đô-chê đã cứu mạng vua bằng cách nào?",
+  "options": [
+   "Dâng nhiều vàng bạc",
+   "Báo âm mưu ám hại vua",
+   "Chữa bệnh cho vua",
+   "Đánh đuổi quân thù"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông báo cho Ê-xơ-tê, và bà nhân danh Mạc-đô-chê tâu lại với vua. “Mạc-đô-chê biết được việc ấy nên ông báo cho hoàng hậu Ê-xơ-tê biết” (Ê-xơ-tê 2:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vua A-suê-ru thăng chức cho ai cao hơn mọi quan chức trong cung?",
+  "options": [
+   "Ha-man",
+   "Mạc-đô-chê",
+   "Mê-mu-can",
+   "Hê-gai"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ha-man được thăng chức rồi đòi mọi người cúi lạy mình. “vua A-suê-ru thăng chức cho Ha-man, con trai của Ham-mê-đa-tha, người A-gát” (Ê-xơ-tê 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vua trao vật gì cho Ha-man để ông ban chiếu chỉ?",
+  "options": [
+   "Áo triều của vua",
+   "Vương trượng vàng",
+   "Chiếc nhẫn của vua",
+   "Thanh gươm của vua"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chiếu chỉ đóng ấn bằng nhẫn vua là lệnh của chính vua. “Vua liền tháo chiếc nhẫn khỏi tay mình trao cho Ha-man” (Ê-xơ-tê 3:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nghe chiếu chỉ tiêu diệt dân Do Thái, Mạc-đô-chê đã làm gì?",
+  "options": [
+   "Viết thư cho vua",
+   "Đến đánh Ha-man",
+   "Xé áo, mặc vải sô, phủ tro",
+   "Trốn khỏi thành"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là cách người xưa bày tỏ nỗi đau đớn, than khóc. “thì xé áo, mặc quần áo vải sô và phủ tro lên đầu” (Ê-xơ-tê 4:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Ê-xơ-tê đứng chầu không được mời, vua đưa vật gì về phía bà?",
+  "options": [
+   "Vương trượng vàng",
+   "Một ly rượu",
+   "Chiếc nhẫn",
+   "Vương miện"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vua đưa vương trượng ra nghĩa là tha mạng và tiếp kiến. “Vua đưa vương trượng vàng trong tay về phía Ê-xơ-tê.” (Ê-xơ-tê 5:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 5,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ê-xơ-tê mời vua cùng ai đến dự yến tiệc của bà?",
+  "options": [
+   "Các thủ lĩnh",
+   "Ha-man",
+   "Mạc-đô-chê",
+   "Các hoạn quan"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ê-xơ-tê khéo léo chờ đúng lúc để tố cáo Ha-man. “xin bệ hạ và Ha-man hôm nay đến dự yến tiệc mà thiếp dọn cho bệ hạ.” (Ê-xơ-tê 5:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 6,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đêm vua không ngủ được, vua đã làm gì?",
+  "options": [
+   "Mở tiệc rượu",
+   "Đi dạo ngoài vườn",
+   "Gọi Ha-man vào",
+   "Cho đọc sách sử biên niên"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nhờ vậy vua nhớ ra Mạc-đô-chê chưa được thưởng. “Đêm đó, vua không ngủ được. Vua truyền đem sách sử biên niên đọc cho vua nghe.” (Ê-xơ-tê 6:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 6,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ai phải dẫn Mạc-đô-chê cưỡi ngựa dạo quanh quảng trường?",
+  "options": [
+   "Ê-xơ-tê",
+   "Ha-man",
+   "Hê-gai",
+   "Vua A-suê-ru"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Kẻ muốn treo cổ Mạc-đô-chê lại phải tôn vinh ông. “Ha-man dẫn ngựa ra và lấy áo triều mặc cho Mạc-đô-chê” (Ê-xơ-tê 6:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 8,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sau khi Ha-man chết, vua trao chiếc nhẫn của vua cho ai?",
+  "options": [
+   "Hê-gai",
+   "Hạt-bô-na",
+   "Ê-xơ-tê",
+   "Mạc-đô-chê"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Mạc-đô-chê được trao quyền thay Ha-man. “Vua cởi chiếc nhẫn mà vua đã lấy nơi Ha-man và trao cho Mạc-đô-chê.” (Ê-xơ-tê 8:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 9,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Lễ kỷ niệm việc người Do Thái được giải cứu có tên là gì?",
+  "options": [
+   "Lều Tạm",
+   "Ngũ Tuần",
+   "Phu-rim",
+   "Vượt Qua"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tên lễ lấy từ chữ Phu-rơ, nghĩa là thăm mà Ha-man đã gieo. “người ta theo từ Phu-rơ mà gọi các ngày đó là Phu-rim.” (Ê-xơ-tê 9:26)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua A-suê-ru cai trị bao nhiêu tỉnh?",
+  "options": [
+   "Một trăm hai mươi bảy tỉnh",
+   "Mười hai tỉnh",
+   "Một trăm tỉnh",
+   "Bảy mươi tỉnh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đế quốc trải dài từ Ấn Độ đến Ê-thi-ô-pi. “vua A-suê-ru đang cai trị trên một trăm hai mươi bảy tỉnh từ Ấn Độ đến Ê-thi-ô-pi.” (Ê-xơ-tê 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tên khác của Ê-xơ-tê là gì?",
+  "options": [
+   "Ha-đa-sa",
+   "Xê-rết",
+   "Vả-thi",
+   "Ha-thác"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ha-đa-sa là tên Hê-bơ-rơ của Ê-xơ-tê. “cô gái ấy tên là Ha-đa-sa tức Ê-xơ-tê” (Ê-xơ-tê 2:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ê-xơ-tê là gì đối với Mạc-đô-chê?",
+  "options": [
+   "Em gái ruột",
+   "Con gái của cậu ông",
+   "Cháu nội",
+   "Con gái ruột"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ê-xơ-tê mồ côi nên Mạc-đô-chê nhận nuôi như con gái. “Ông nuôi dưỡng con gái của cậu mình” (Ê-xơ-tê 2:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 2,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hoạn quan nào trông coi các cung phi và chăm sóc Ê-xơ-tê?",
+  "options": [
+   "Ha-thác",
+   "Hạt-bô-na",
+   "Bích-than",
+   "Hê-gai"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ê-xơ-tê được Hê-gai quý mến và dành phòng tốt nhất. “Hãy giao cho Hê-gai, hoạn quan của vua, chịu trách nhiệm về các cung phi” (Ê-xơ-tê 2:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 2,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Mỗi thiếu nữ phải trau dồi sắc đẹp bao lâu trước khi vào chầu vua?",
+  "options": [
+   "Bảy ngày",
+   "Hai năm",
+   "Mười hai tháng",
+   "Ba tháng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sáu tháng dùng dầu mộc dược, sáu tháng dùng thuốc thơm. “Mỗi thiếu nữ theo quy định phải trau dồi sắc đẹp trong mười hai tháng” (Ê-xơ-tê 2:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 2,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Việc Mạc-đô-chê phát hiện âm mưu hại vua được ghi vào đâu?",
+  "options": [
+   "Luật Mê-đi và Ba Tư",
+   "Thư gửi các tỉnh",
+   "Bia đá cổng thành",
+   "Sử biên niên trước mặt vua"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ghi chép ấy về sau khiến vua tôn vinh Mạc-đô-chê. “Việc nầy được chép vào sử biên niên trước mặt vua.” (Ê-xơ-tê 2:23)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo chiếu chỉ của Ha-man, người Do Thái bị tiêu diệt vào ngày nào?",
+  "options": [
+   "Ngày đầu tháng Ni-san",
+   "Ngày rằm tháng Tê-bết",
+   "Ngày mười ba tháng A-đa",
+   "Ngày mười bốn tháng Si-van"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngày ấy về sau lại thành ngày người Do Thái được giải cứu. “trong một ngày, tức ngày mười ba tháng mười hai là tháng A-đa” (Ê-xơ-tê 3:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 3,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi chiếu chỉ được ban ra, vua và Ha-man làm gì?",
+  "options": [
+   "Ngồi lại uống rượu",
+   "Lên đường thị sát",
+   "Đọc sách sử",
+   "Đi săn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Trong khi cả thành Su-sơ hoang mang lo lắng. “vua và Ha-man ngồi lại uống rượu trong khi cả thành Su-sơ đều hoang mang lo lắng.” (Ê-xơ-tê 3:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ê-xơ-tê nói bà đã không được vời vào chầu vua bao lâu?",
+  "options": [
+   "Bảy ngày",
+   "Ba mươi ngày",
+   "Ba ngày",
+   "Một năm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vào chầu mà không được mời là liều mạng. “Nhưng đã ba mươi ngày nay con không được vời vào hoàng cung.” (Ê-xơ-tê 4:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo luật, người vào nội cung không được mời chỉ được sống khi nào?",
+  "options": [
+   "Mang theo lễ vật",
+   "Có hoàng hậu xin giùm",
+   "Vào ban đêm",
+   "Vua đưa vương trượng vàng ra"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vì vậy Ê-xơ-tê nói: nếu phải chết thì con chết. “trừ phi nhà vua đưa vương trượng vàng ra thì mới sống.” (Ê-xơ-tê 4:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 5,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua hứa cho Ê-xơ-tê điều bà xin, dù đến bao nhiêu?",
+  "options": [
+   "Cả vương quốc",
+   "Nửa vương quốc",
+   "Mười tỉnh",
+   "Một nghìn ta-lâng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vua nói như vậy đến ba lần trong câu chuyện. “Dù xin đến nửa vương quốc trẫm cũng cho.” (Ê-xơ-tê 5:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 5,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vui mừng rời yến tiệc, vì sao Ha-man lại tức giận?",
+  "options": [
+   "Mạc-đô-chê không đứng dậy chào",
+   "Mất chiếc nhẫn vua",
+   "Ê-xơ-tê không mời lại",
+   "Vua quở trách ông"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Một mình Mạc-đô-chê đủ làm Ha-man mất hết niềm vui. “khi thấy Mạc-đô-chê nơi cổng hoàng cung không đứng dậy cũng không tỏ ra sợ hãi gì thì Ha-man tức giận Mạc-đô-chê.” (Ê-xơ-tê 5:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 5,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vợ của Ha-man tên là gì?",
+  "options": [
+   "Ha-đa-sa",
+   "Na-a-ma",
+   "Xê-rết",
+   "Vả-thi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Xê-rết cùng các bạn bày cho Ha-man dựng giá treo cổ. “Ông sai người mời các bạn và Xê-rết là vợ mình đến.” (Ê-xơ-tê 5:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 5,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vợ và bạn bè bày cho Ha-man làm gì để hại Mạc-đô-chê?",
+  "options": [
+   "Đuổi ông khỏi thành",
+   "Dựng một giá treo cổ",
+   "Đào một cái hố",
+   "Tố cáo với vua"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chính Ha-man về sau bị treo trên giá ấy. “Lời đề nghị nầy vừa ý Ha-man và ông sai người dựng giá treo cổ.” (Ê-xơ-tê 5:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 6,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi vua hỏi phải làm gì cho người vua muốn tôn trọng, Ha-man nghĩ người đó là ai?",
+  "options": [
+   "Mạc-đô-chê",
+   "Một vị tướng",
+   "Chính ông",
+   "Hoàng hậu Ê-xơ-tê"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lòng kiêu ngạo khiến Ha-man tự sắp đặt vinh dự cho kẻ thù mình. “Ngoài ta ra còn ai là người đáng được vua tôn trọng chứ?” (Ê-xơ-tê 6:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 6,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ha-man đề nghị người được vua tôn trọng phải được đối đãi thế nào?",
+  "options": [
+   "Mặc áo triều, cưỡi ngựa của vua",
+   "Được ban nửa vương quốc",
+   "Được ngồi trên ngai",
+   "Được cưới công chúa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó đúng là vinh dự Ha-man phải dành cho Mạc-đô-chê. “thì phải cho mặc áo triều mà vua thường mặc, cưỡi ngựa có vương miện trên đầu mà vua thường cưỡi.” (Ê-xơ-tê 6:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 8,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi Ha-man chết, vua ban cho Ê-xơ-tê vật gì của hắn?",
+  "options": [
+   "Chiếc nhẫn của Ha-man",
+   "Áo triều của Ha-man",
+   "Ngựa của Ha-man",
+   "Ngôi nhà của Ha-man"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ê-xơ-tê giao cho Mạc-đô-chê trông coi nhà ấy. “vua A-suê-ru ban cho hoàng hậu Ê-xơ-tê ngôi nhà của Ha-man” (Ê-xơ-tê 8:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 8,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Mạc-đô-chê đội gì khi từ hoàng cung đi ra, giữa tiếng reo mừng của dân Su-sơ?",
+  "options": [
+   "Khăn vải sô",
+   "Vòng hoa ô-liu",
+   "Vương miện lớn bằng vàng",
+   "Mũ thầy tế lễ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người từng mặc vải sô nay mặc áo triều và đội vương miện. “đội vương miện lớn bằng vàng” (Ê-xơ-tê 8:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 9,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong những ngày lễ Phu-rim, người Do Thái gửi gì cho nhau?",
+  "options": [
+   "Phần ăn, và quà cho người nghèo",
+   "Thư cầu nguyện",
+   "Cành cây xanh",
+   "Bánh không men"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngày buồn thảm đã hóa thành ngày yến tiệc vui mừng. “mỗi người gửi phần ăn cho nhau và quà tặng cho người nghèo khó.” (Ê-xơ-tê 9:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 10,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Cuối sách, Mạc-đô-chê giữ chức vụ gì?",
+  "options": [
+   "Người giữ cổng hoàng cung",
+   "Tể tướng của vua",
+   "Thầy tế lễ thượng phẩm",
+   "Tổng đốc Giu-đa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông được người Do Thái quý mến vì mưu cầu an ninh cho dân tộc. “Mạc-đô-chê, người Do Thái, làm tể tướng của vua A-suê-ru” (Ê-xơ-tê 10:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vua A-suê-ru phô trương sự giàu có của vương quốc trong bao lâu?",
+  "options": [
+   "Một năm",
+   "Bảy ngày",
+   "Bốn mươi ngày",
+   "Một trăm tám mươi ngày"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sau đó vua còn đãi tiệc dân kinh đô thêm bảy ngày. “Trong suốt một trăm tám mươi ngày, vua phô trương sự giàu có sang trọng của vương quốc” (Ê-xơ-tê 1:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 1,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vua truất ngôi Vả-thi theo lời tâu của cận thần nào?",
+  "options": [
+   "Mê-mu-can",
+   "Ha-man",
+   "Hê-gai",
+   "Mạc-đô-chê"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Mê-mu-can sợ các phụ nữ khắp vương quốc sẽ bắt chước Vả-thi. “vua làm theo lời của Mê-mu-can đã tâu.” (Ê-xơ-tê 1:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 2,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ê-xơ-tê được đưa vào chầu vua vào năm thứ mấy triều đại A-suê-ru?",
+  "options": [
+   "Năm thứ nhất",
+   "Năm thứ mười hai",
+   "Năm thứ bảy",
+   "Năm thứ ba"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vào tháng Tê-bết, năm thứ bảy, bốn năm sau bữa tiệc của Vả-thi. “vào tháng mười (là tháng Tê-bết), năm thứ bảy triều đại vua.” (Ê-xơ-tê 2:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 2,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hai hoạn quan mưu toan ám hại vua A-suê-ru tên là gì?",
+  "options": [
+   "Ha-thác và Hê-gai",
+   "Bích-than và Thê-rết",
+   "Hạt-bô-na và Bít-tha",
+   "Mê-hu-man và Xê-thạt"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Âm mưu bị Mạc-đô-chê phát hiện và cả hai bị xử. “Có hai hoạn quan giữ cửa cho vua là Bích-than và Thê-rết” (Ê-xơ-tê 2:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ha-man, con trai Ham-mê-đa-tha, là người gì?",
+  "options": [
+   "Người Ê-đôm",
+   "Người Mê-đi",
+   "Người Ba Tư",
+   "Người A-gát"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sách Ê-xơ-tê nhiều lần gọi Ha-man là người A-gát, kẻ thù của dân Do Thái. “Ha-man, con trai của Ham-mê-đa-tha, người A-gát” (Ê-xơ-tê 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 3,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phu-rơ mà người ta gieo trước mặt Ha-man nghĩa là gì?",
+  "options": [
+   "Gieo thăm theo ngày tháng",
+   "Ấn của nhà vua",
+   "Một loại thuế",
+   "Lời thề của vua"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Từ Phu-rơ mà có tên lễ Phu-rim. “người ta gieo Phu-rơ nghĩa là gieo thăm theo từng ngày từng tháng.” (Ê-xơ-tê 3:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 3,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ha-man hứa nộp bao nhiêu bạc vào kho vua để được tiêu diệt dân Do Thái?",
+  "options": [
+   "Ba mươi miếng bạc",
+   "Ba trăm năm mươi tấn bạc",
+   "Mười tấn bạc",
+   "Một nghìn ta-lâng vàng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ha-man sẵn sàng bỏ một gia tài khổng lồ vì lòng thù hận. “hạ thần sẽ nộp ba trăm năm mươi tấn bạc vào tay các viên chức hoàng cung” (Ê-xơ-tê 3:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ê-xơ-tê sai hoạn quan nào đi hỏi Mạc-đô-chê việc gì đã xảy ra?",
+  "options": [
+   "Hê-gai",
+   "Hạt-bô-na",
+   "Ha-thác",
+   "Sa-ách-ga"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ha-thác là người đưa tin qua lại giữa Ê-xơ-tê và Mạc-đô-chê. “bà Ê-xơ-tê gọi Ha-thác, một hoạn quan của vua được chỉ định hầu hạ bà” (Ê-xơ-tê 4:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 5,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giá treo cổ Ha-man dựng cho Mạc-đô-chê cao bao nhiêu?",
+  "options": [
+   "Ba mét",
+   "Mười mét",
+   "Năm mươi mét",
+   "Hai mươi lăm mét"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ha-man muốn cả thành thấy Mạc-đô-chê bị treo. “Hãy sai dựng một giá treo cổ cao hai mươi lăm mét” (Ê-xơ-tê 5:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 7,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hoạn quan nào cho vua biết về giá treo cổ Ha-man dựng cho Mạc-đô-chê?",
+  "options": [
+   "Ha-thác",
+   "Bích-than",
+   "Hê-gai",
+   "Hạt-bô-na"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vua liền truyền treo Ha-man lên chính giá ấy. “Hạt-bô-na, một hoạn quan thân cận vua nói” (Ê-xơ-tê 7:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 8,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vì sao vua không hủy chiếu chỉ của Ha-man mà phải ban chiếu chỉ mới?",
+  "options": [
+   "Chiếu chỉ đóng ấn vua không thể bãi bỏ",
+   "Vua quên nội dung chiếu chỉ",
+   "Ha-man đã giấu chiếu chỉ",
+   "Các tỉnh đã thi hành xong"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chiếu chỉ mới cho người Do Thái quyền tự vệ. “Vì chiếu chỉ nào nhân danh trẫm viết ra và đóng ấn bằng chiếc nhẫn của trẫm thì không thể bãi bỏ được.” (Ê-xơ-tê 8:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Esther",
+  "chapter": 9,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Mạc-đô-chê dặn người Do Thái giữ lễ vào những ngày nào của tháng A-đa?",
+  "options": [
+   "Ngày mười ba",
+   "Ngày hai mươi ba",
+   "Ngày mười bốn và mười lăm",
+   "Ngày đầu tháng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là những ngày họ nghỉ ngơi sau khi được giải cứu. “để dặn họ phải giữ ngày mười bốn và mười lăm của tháng A-đa hằng năm.” (Ê-xơ-tê 9:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

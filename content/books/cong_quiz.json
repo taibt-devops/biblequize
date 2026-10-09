@@ -1,0 +1,1612 @@
+[
+ {
+  "book": "Acts",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi Chúa Jêsus được cất lên, các môn đồ từ núi nào trở về Giê-ru-sa-lem?",
+  "options": [
+   "Núi Cạt-mên",
+   "Núi Si-na-i",
+   "Núi Ô-liu",
+   "Núi Tha-bô"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Núi ấy gần Giê-ru-sa-lem, cách một quãng đường ngày sa-bát. “từ núi gọi là Ô-liu trở về thành Giê-ru-sa-lem” (Công Vụ Các Sứ Đồ 1:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 1,
+  "verseStart": 26,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai được bắt thăm bổ sung vào mười một sứ đồ thay chỗ Giu-đa?",
+  "options": [
+   "Giô-sép Ba-sa-ba",
+   "Ba-na-ba",
+   "Si-la",
+   "Ma-thia"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Các môn đồ cầu nguyện rồi bắt thăm. “Họ bắt thăm trúng nhằm Ma-thia” (Công Vụ Các Sứ Đồ 1:26)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 2,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ngày Lễ Ngũ Tuần, Phi-e-rơ nói điều xảy ra là lời Chúa phán qua tiên tri nào?",
+  "options": [
+   "Giô-ên",
+   "Đa-ni-ên",
+   "Ê-sai",
+   "Giê-rê-mi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Giô-ên báo trước Thánh Linh đổ xuống trên mọi xác thịt. “điều Chúa đã phán qua nhà tiên tri Giô-ên” (Công Vụ Các Sứ Đồ 2:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi người què được chữa lành, dân chúng đổ xô đến Phi-e-rơ và Giăng ở đâu?",
+  "options": [
+   "Ao Bết-tê-đa",
+   "Hành lang Sa-lô-môn",
+   "Sân dân ngoại",
+   "Cửa Đẹp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người được chữa lành vẫn níu lấy hai sứ đồ. “tại nơi gọi là hành lang Sa-lô-môn” (Công Vụ Các Sứ Đồ 3:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau bài giảng ở đền thờ, số nam tín hữu lên đến bao nhiêu?",
+  "options": [
+   "Ba nghìn",
+   "Một nghìn",
+   "Mười nghìn",
+   "Năm nghìn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dù hai sứ đồ bị bắt giam, nhiều người vẫn tin. “số nam tín hữu lên đến năm nghìn” (Công Vụ Các Sứ Đồ 4:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 4,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ nói chẳng có sự cứu rỗi trong đấng nào khác, vì sao?",
+  "options": [
+   "Vì các tiên tri đã qua đời",
+   "Vì luật pháp đã đủ",
+   "Không có danh nào khác để được cứu",
+   "Vì đền thờ sắp bị phá"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông nói điều nầy trước Hội đồng. “ở dưới trời chẳng có danh nào khác ban cho loài người, để chúng ta nhờ đó mà được cứu” (Công Vụ Các Sứ Đồ 4:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 4,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hội đồng kinh ngạc vì Phi-e-rơ và Giăng dạn dĩ dù là người thế nào?",
+  "options": [
+   "Tầm thường, ít học",
+   "Dòng thầy tế lễ",
+   "Người giàu có",
+   "Thầy dạy luật"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sự dạn dĩ ấy đến từ Chúa, không từ học thức. “biết rõ hai ông là những người tầm thường, ít học” (Công Vụ Các Sứ Đồ 4:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 4,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hội đồng nhận ra Phi-e-rơ và Giăng đã từng ở với ai?",
+  "options": [
+   "Các thầy thông giáo",
+   "Đức Chúa Jêsus",
+   "Ga-ma-li-ên",
+   "Giăng Báp-tít"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đời sống của họ phản chiếu Thầy mình. “hai ông đã từng ở với Đức Chúa Jêsus” (Công Vụ Các Sứ Đồ 4:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 4,
+  "verseStart": 36,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tên Ba-na-ba mà các sứ đồ đặt cho Giô-sép có nghĩa là gì?",
+  "options": [
+   "Con trai của sấm sét",
+   "Người được chọn",
+   "Con trai của lời hứa",
+   "Con trai của sự an ủi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông nổi tiếng là người khích lệ anh em. “Ba-na-ba, nghĩa là con trai của sự an ủi” (Công Vụ Các Sứ Đồ 4:36)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 5,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "A-na-nia giữ lại điều gì mà nói dối Đức Thánh Linh?",
+  "options": [
+   "Một phần tiền bán ruộng",
+   "Một phần lúa mì",
+   "Đồ vàng bạc trong nhà",
+   "Một nửa bầy chiên"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông đồng ý với vợ làm như vậy. “giữ lại một phần tiền bán ruộng đó” (Công Vụ Các Sứ Đồ 5:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 5,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người ta đặt người bệnh ngoài đường để điều gì của Phi-e-rơ ngả trên họ?",
+  "options": [
+   "Áo choàng của ông",
+   "Bóng của ông",
+   "Cây gậy của ông",
+   "Bàn tay của ông"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nhiều phép lạ được làm qua tay các sứ đồ. “bóng của ông ít ra cũng ngả trên một vài bệnh nhân” (Công Vụ Các Sứ Đồ 5:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 5,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bị cấm giảng đạo, các sứ đồ nói thà phải vâng lời ai còn hơn vâng lời người ta?",
+  "options": [
+   "Hoàng đế Sê-sa",
+   "Hội đồng",
+   "Đức Chúa Trời",
+   "Thầy tế lễ thượng phẩm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phi-e-rơ trả lời thay cho các sứ đồ. “Thà phải vâng lời Đức Chúa Trời còn hơn vâng lời người ta.” (Công Vụ Các Sứ Đồ 5:29)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 5,
+  "verseStart": 34,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giáo sư luật được dân kính trọng đứng lên khuyên Hội đồng là ai?",
+  "options": [
+   "Ni-cô-đem",
+   "An-ne",
+   "Ga-ma-li-ên",
+   "Cai-phe"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông khuyên Hội đồng đừng chống lại Đức Chúa Trời. “một người Pha-ri-si tên là Ga-ma-li-ên” (Công Vụ Các Sứ Đồ 5:34)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 5,
+  "verseStart": 41,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bị đánh đòn rồi được thả, các sứ đồ rời Hội đồng với lòng thế nào?",
+  "options": [
+   "Vui mừng",
+   "Giận dữ",
+   "Sợ hãi",
+   "Chán nản"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Họ được kể là xứng đáng chịu nhục vì danh Chúa. “vui mừng vì họ đã được kể là xứng đáng chịu nhục vì danh Chúa” (Công Vụ Các Sứ Đồ 5:41)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 6,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Các sứ đồ bảo Hội Thánh chọn bao nhiêu người lo việc phân phát?",
+  "options": [
+   "Ba người",
+   "Bảy người",
+   "Bảy mươi người",
+   "Mười hai người"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Để các sứ đồ chuyên lo cầu nguyện và giảng đạo. “chọn trong số mình bảy người được tiếng tốt” (Công Vụ Các Sứ Đồ 6:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 6,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Những người được chọn lo việc phân phát phải là người thế nào?",
+  "options": [
+   "Lớn tuổi nhất",
+   "Thuộc dòng Lê-vi",
+   "Giàu có và có học",
+   "Đầy dẫy Thánh Linh và khôn ngoan"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phục vụ bàn ăn cũng cần người thuộc linh. “đầy dẫy Thánh Linh và khôn ngoan” (Công Vụ Các Sứ Đồ 6:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 8,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Hội Thánh bị tản lạc, Phi-líp đi xuống thành nào rao giảng Đấng Christ?",
+  "options": [
+   "Đa-mách",
+   "Sa-ma-ri",
+   "Giốp-bê",
+   "Ga-xa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dân thành ấy rất vui mừng. “Phi-líp đi xuống thành Sa-ma-ri” (Công Vụ Các Sứ Đồ 8:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 8,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Si-môn thuật sĩ muốn dùng gì để mua quyền ban Đức Thánh Linh?",
+  "options": [
+   "Ma thuật",
+   "Lời thề",
+   "Tiền bạc",
+   "Đất ruộng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phi-e-rơ quở ông vì tưởng mua được sự ban tặng của Chúa. “Si-môn liền lấy tiền bạc dâng cho hai sứ đồ” (Công Vụ Các Sứ Đồ 8:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 9,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa sai A-na-nia đến nhà Giu-đa ở con đường tên là gì?",
+  "options": [
+   "Ngay Thẳng",
+   "Đền Thờ",
+   "Hoàng Gia",
+   "Cửa Đẹp"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sau-lơ đang cầu nguyện ở đó. “ở đường gọi là Ngay Thẳng” (Công Vụ Các Sứ Đồ 9:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 9,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau-lơ, người A-na-nia được sai đến gặp, quê ở đâu?",
+  "options": [
+   "An-ti-ốt",
+   "Đa-mách",
+   "Giê-ru-sa-lem",
+   "Tạt-sơ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Một thành thuộc xứ Si-li-si. “tìm một người tên Sau-lơ quê ở Tạt-sơ” (Công Vụ Các Sứ Đồ 9:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 9,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa chọn Sau-lơ làm công cụ để đem danh Ngài đến cho ai?",
+  "options": [
+   "Chỉ các thầy tế lễ",
+   "Chỉ người Rô-ma",
+   "Dân ngoại, các vua và Y-sơ-ra-ên",
+   "Chỉ người Do Thái"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "A-na-nia sợ vì Sau-lơ từng bắt bớ Hội Thánh. “để đem danh Ta đến cho các dân ngoại, các vua, và con dân Y-sơ-ra-ên” (Công Vụ Các Sứ Đồ 9:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 9,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Các môn đồ giúp Sau-lơ thoát khỏi Đa-mách bằng cách nào?",
+  "options": [
+   "Đi qua đường hầm",
+   "Trốn trên xe hàng",
+   "Cải trang thành lính",
+   "Dòng thúng xuống ngoài vách thành"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Người Do Thái canh giữ cổng thành để giết ông. “các môn đồ lấy thúng dòng ông xuống ngoài vách thành” (Công Vụ Các Sứ Đồ 9:25)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 9,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai đem Sau-lơ đến giới thiệu với các sứ đồ ở Giê-ru-sa-lem?",
+  "options": [
+   "Phi-e-rơ",
+   "Ba-na-ba",
+   "A-na-nia",
+   "Phi-líp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Các môn đồ còn sợ Sau-lơ. “Ba-na-ba giúp đem ông đến với các sứ đồ” (Công Vụ Các Sứ Đồ 9:27)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 9,
+  "verseStart": 36,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nữ môn đồ ở Giốp-bê hay làm việc thiện và bố thí tên là gì?",
+  "options": [
+   "Ta-bi-tha",
+   "Rô-đơ",
+   "Pê-rít-sin",
+   "Ly-đi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bà còn được gọi là Đô-ca. “có một nữ môn đồ tên là Ta-bi-tha, còn gọi là Đô-ca” (Công Vụ Các Sứ Đồ 9:36)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 9,
+  "verseStart": 40,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi quỳ gối cầu nguyện, Phi-e-rơ làm gì cho Ta-bi-tha?",
+  "options": [
+   "Gọi bà trỗi dậy",
+   "Xức dầu cho bà",
+   "Lo an táng bà",
+   "Đọc lời chúc phước"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bà mở mắt, thấy Phi-e-rơ liền ngồi dậy. “Hỡi Ta-bi-tha, hãy trỗi dậy!” (Công Vụ Các Sứ Đồ 9:40)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 9,
+  "verseStart": 43,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ở Giốp-bê, Phi-e-rơ ở nhà một người tên Si-môn làm nghề gì?",
+  "options": [
+   "Thợ mộc",
+   "Thợ đánh cá",
+   "Thợ thuộc da",
+   "Thợ may trại"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nhà ấy ở gần biển. “một người thợ thuộc da tên là Si-môn” (Công Vụ Các Sứ Đồ 9:43)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 10,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đội trưởng Cọt-nây là người thế nào?",
+  "options": [
+   "Ghét người Do Thái",
+   "Thu thuế bất chính",
+   "Thờ nữ thần Đi-anh",
+   "Kính sợ Chúa, hay bố thí"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông cũng thường xuyên cầu nguyện. “cả gia đình đều kính sợ Đức Chúa Trời; ông hay bố thí cho dân chúng” (Công Vụ Các Sứ Đồ 10:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 10,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng, Phi-e-rơ thấy vật gì sa xuống từ trời?",
+  "options": [
+   "Một chiếc thang",
+   "Tấm khăn lớn đầy loài vật",
+   "Một cuộn sách",
+   "Một cỗ xe lửa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Có đủ loài vật bốn chân, bò sát và chim trời. “có vật gì giống như tấm khăn lớn buộc bốn góc sa xuống đất” (Công Vụ Các Sứ Đồ 10:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 10,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tiếng từ trời bảo Phi-e-rơ đừng xem điều gì là ô uế?",
+  "options": [
+   "Đền thờ ngoại",
+   "Vật Chúa đã làm cho tinh sạch",
+   "Người Sa-ma-ri",
+   "Ngày sa-bát"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Khải tượng chuẩn bị ông đến nhà dân ngoại. “Vật gì Đức Chúa Trời đã làm cho tinh sạch thì đừng xem là ô uế.” (Công Vụ Các Sứ Đồ 10:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 10,
+  "verseStart": 34,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ở nhà Cọt-nây, Phi-e-rơ nhận biết điều gì về Đức Chúa Trời?",
+  "options": [
+   "Ngài chẳng thiên vị ai",
+   "Ngài quên dân ngoại",
+   "Ngài chỉ yêu dân Do Thái",
+   "Ngài chỉ nghe thầy tế lễ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ai kính sợ Chúa và làm điều công chính đều được chấp nhận. “Đức Chúa Trời chẳng thiên vị ai” (Công Vụ Các Sứ Đồ 10:34)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 10,
+  "verseStart": 44,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Phi-e-rơ còn đang nói ở nhà Cọt-nây, điều gì xảy ra?",
+  "options": [
+   "Một trận động đất",
+   "Lính đến bắt ông",
+   "Mọi người bỏ về",
+   "Đức Thánh Linh giáng trên người nghe"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dân ngoại cũng nhận lãnh Thánh Linh. “Đức Thánh Linh giáng trên mọi người nghe đạo” (Công Vụ Các Sứ Đồ 10:44)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 11,
+  "verseStart": 26,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Các môn đồ được gọi là Cơ Đốc nhân lần đầu tiên tại thành nào?",
+  "options": [
+   "Giê-ru-sa-lem",
+   "Ê-phê-sô",
+   "An-ti-ốt",
+   "Rô-ma"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ba-na-ba và Sau-lơ dạy dỗ ở đó suốt một năm. “Chính tại An-ti-ốt, người ta bắt đầu gọi các môn đồ là Cơ Đốc nhân.” (Công Vụ Các Sứ Đồ 11:26)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 12,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Được thiên sứ đưa ra khỏi ngục, Phi-e-rơ đến nhà ai?",
+  "options": [
+   "Ma-ri Ma-đơ-len",
+   "Ma-ri, mẹ của Giăng Mác",
+   "Ly-đi",
+   "Ta-bi-tha"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nhiều người đang nhóm lại cầu nguyện ở đó. “ông đến nhà Ma-ri, mẹ của Giăng, cũng gọi là Mác” (Công Vụ Các Sứ Đồ 12:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 13,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ở An-ti-ốt, Đức Thánh Linh bảo biệt riêng ai cho công tác Ngài kêu gọi?",
+  "options": [
+   "Si-la và Ti-mô-thê",
+   "Phi-e-rơ và Giăng",
+   "Phi-líp và Ê-tiên",
+   "Ba-na-ba và Sau-lơ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Khởi đầu hành trình truyền giáo thứ nhất. “Hãy biệt riêng Ba-na-ba và Sau-lơ” (Công Vụ Các Sứ Đồ 13:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 13,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau-lơ còn được gọi bằng tên nào?",
+  "options": [
+   "Phao-lô",
+   "Si-la",
+   "Ba-na-ba",
+   "Ma-thia"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Từ đây sách Công Vụ dùng tên Phao-lô. “Sau-lơ cũng gọi là Phao-lô” (Công Vụ Các Sứ Đồ 13:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 15,
+  "verseStart": 39,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì tranh luận gay gắt về Mác, Phao-lô và Ba-na-ba đã làm gì?",
+  "options": [
+   "Về Giê-ru-sa-lem hỏi",
+   "Cùng nhau đi Síp",
+   "Phân rẽ nhau",
+   "Ngừng truyền giáo"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ba-na-ba đem Mác đến đảo Síp. “hai người phân rẽ nhau” (Công Vụ Các Sứ Đồ 15:39)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 15,
+  "verseStart": 40,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi chia tay Ba-na-ba, Phao-lô chọn ai cùng đi?",
+  "options": [
+   "Si-la",
+   "Lu-ca",
+   "Ti-mô-thê",
+   "Mác"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Anh em giao phó hai người cho ân điển Chúa. “sau khi đã chọn Si-la” (Công Vụ Các Sứ Đồ 15:40)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 16,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng ban đêm, một người xứ nào nài xin Phao-lô qua cứu giúp?",
+  "options": [
+   "Ga-la-ti",
+   "A-si-a",
+   "Bi-thi-ni",
+   "Ma-xê-đô-ni-a"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tin Lành từ đó vào châu Âu. “Có một người Ma-xê-đô-ni-a đứng trước mặt mình nài xin” (Công Vụ Các Sứ Đồ 16:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 16,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ly-đi, người được Chúa mở lòng ở thành Phi-líp, chuyên bán gì?",
+  "options": [
+   "Dầu thơm",
+   "Vải sắc tía",
+   "Đồ bạc",
+   "Đồ gốm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bà là người thờ kính Đức Chúa Trời. “chuyên bán vải sắc tía” (Công Vụ Các Sứ Đồ 16:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 17,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người Do Thái ở Bê-rê ngày nào cũng làm gì?",
+  "options": [
+   "Dâng của lễ",
+   "Tranh luận với Phao-lô",
+   "Nghiên cứu Kinh Thánh",
+   "Kiêng ăn cầu nguyện"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để xét xem lời giảng có đúng không. “ngày nào cũng nghiên cứu Kinh Thánh để xét xem lời giảng có đúng không” (Công Vụ Các Sứ Đồ 17:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 17,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ở A-thên, Phao-lô thấy một bàn thờ khắc dòng chữ gì?",
+  "options": [
+   "Thờ thần không biết",
+   "Thờ nữ thần Đi-anh",
+   "Thờ hoàng đế",
+   "Thờ thần biển"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông dùng bàn thờ ấy để giới thiệu Đức Chúa Trời thật. “THỜ THẦN KHÔNG BIẾT” (Công Vụ Các Sứ Đồ 17:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 18,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô cùng làm nghề gì với A-qui-la và Pê-rít-sin?",
+  "options": [
+   "Thuộc da",
+   "Đánh cá",
+   "May trại",
+   "Làm đồ bạc"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông ở nhà hai người để làm việc với nhau. “vì cùng làm nghề may trại” (Công Vụ Các Sứ Đồ 18:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 20,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thanh niên nào ngủ gục trên cửa sổ rồi té xuống khi Phao-lô giảng?",
+  "options": [
+   "Tẹt-tiu",
+   "Ơ-tích",
+   "Gai-út",
+   "Ê-nê"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phao-lô ôm lấy anh và anh vẫn còn sống. “Một thanh niên tên Ơ-tích đang ngồi trên cửa sổ ngủ gục” (Công Vụ Các Sứ Đồ 20:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 20,
+  "verseStart": 35,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nhắc lời Chúa Jêsus: Ban cho có phước hơn điều gì?",
+  "options": [
+   "Để dành",
+   "Mua bán",
+   "Cầu xin",
+   "Nhận lãnh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phải cần cù làm việc để giúp đỡ người đau yếu. “Ban cho có phước hơn nhận lãnh.” (Công Vụ Các Sứ Đồ 20:35)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 25,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trước tòa Phê-tu, Phao-lô kêu nài đến ai?",
+  "options": [
+   "Phê-lít",
+   "Sê-sa",
+   "Hội đồng Do Thái",
+   "Vua Ạc-ríp-pa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nhờ vậy ông được giải đến Rô-ma. “Tôi kêu nài đến Sê-sa.” (Công Vụ Các Sứ Đồ 25:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 1,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ngoài Ma-thia, ứng viên còn lại để thay chỗ Giu-đa là ai?",
+  "options": [
+   "Ba-na-ba",
+   "Si-la",
+   "Giô-sép Ba-sa-ba",
+   "Ni-ca-no"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông cũng được gọi là Giúc-tu. “Giô-sép tức là Ba-sa-ba, cũng gọi là Giúc-tu” (Công Vụ Các Sứ Đồ 1:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 4,
+  "verseStart": 36,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ba-na-ba, người thuộc dòng Lê-vi, quê ở đâu?",
+  "options": [
+   "Cô-rinh-tô",
+   "Tạt-sơ",
+   "An-ti-ốt",
+   "Đảo Síp"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông bán ruộng đem tiền đặt dưới chân các sứ đồ. “thuộc dòng Lê-vi, quê ở Síp” (Công Vụ Các Sứ Đồ 4:36)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 5,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vợ của A-na-nia, người cùng giữ lại tiền bán tài sản, tên là gì?",
+  "options": [
+   "Sa-phi-ra",
+   "Bê-rê-nít",
+   "Đơ-ru-si",
+   "Ta-bi-tha"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Hai vợ chồng cùng đồng ý nói dối. “cùng với vợ là Sa-phi-ra” (Công Vụ Các Sứ Đồ 5:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 8,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người từng hành nghề ma thuật làm dân Sa-ma-ri kinh ngạc tên là gì?",
+  "options": [
+   "Ba-giê-xu",
+   "Đê-mê-triu",
+   "Ê-ly-ma",
+   "Si-môn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông tự cho mình là người vĩ đại. “có một người tên Si-môn, trước kia hành nghề ma thuật” (Công Vụ Các Sứ Đồ 8:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 9,
+  "verseStart": 33,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người bại liệt Ê-nê đã nằm trên giường bao lâu trước khi được chữa lành?",
+  "options": [
+   "Mười hai năm",
+   "Tám năm",
+   "Bốn mươi năm",
+   "Ba mươi tám năm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phi-e-rơ nói: Đức Chúa Jêsus Christ chữa lành cho anh. “nằm trên giường đã tám năm rồi” (Công Vụ Các Sứ Đồ 9:33)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 10,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cọt-nây là đội trưởng của binh đoàn nào?",
+  "options": [
+   "Binh đoàn Sy-ri",
+   "Binh đoàn Ai Cập",
+   "Binh đoàn I-ta-li-a",
+   "Binh đoàn Au-gút-tơ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông là người dân ngoại đầu tiên được ghi lại nhận Thánh Linh. “đội trưởng của binh đoàn I-ta-li-a” (Công Vụ Các Sứ Đồ 10:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 10,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đội trưởng Cọt-nây sống tại thành nào?",
+  "options": [
+   "Sê-sa-rê",
+   "Giốp-bê",
+   "Ly-đa",
+   "An-ti-ốt"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông sai người đến Giốp-bê mời Phi-e-rơ. “Tại thành Sê-sa-rê, có một người tên Cọt-nây” (Công Vụ Các Sứ Đồ 10:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 11,
+  "verseStart": 28,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ai bởi Thánh Linh báo trước nạn đói lớn dưới triều Cơ-lốt?",
+  "options": [
+   "Phi-líp",
+   "A-ga-bút",
+   "Si-la",
+   "Ba-na-ba"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Các môn đồ quyên góp gửi giúp anh em ở Giu-đê. “Một người trong số họ tên A-ga-bút” (Công Vụ Các Sứ Đồ 11:28)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 13,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thuật sĩ chống đối Ba-na-ba và Sau-lơ ở Pa-phô có tên Hi Lạp là gì?",
+  "options": [
+   "Ê-ly-ma",
+   "Đê-mê-triu",
+   "Si-môn",
+   "Ơ-tích"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Tên Do Thái của hắn là Ba-giê-xu. “tên Hi Lạp là Ê-ly-ma” (Công Vụ Các Sứ Đồ 13:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 13,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Tại Pẹt-giê, ai lìa đoàn truyền giáo trở về Giê-ru-sa-lem?",
+  "options": [
+   "Ba-na-ba",
+   "Ti-mô-thê",
+   "Giăng Mác",
+   "Si-la"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Về sau việc nầy gây tranh luận giữa Phao-lô và Ba-na-ba. “Nhưng Giăng lìa họ, trở về Giê-ru-sa-lem.” (Công Vụ Các Sứ Đồ 13:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 14,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Dân Lít-trơ gọi Ba-na-ba là thần nào?",
+  "options": [
+   "Đa-gôn",
+   "Đi-anh",
+   "Mẹt-cu-rơ",
+   "Giu-bi-tê"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Còn Phao-lô được gọi là Mẹt-cu-rơ vì giảng chính. “Họ gọi Ba-na-ba là thần Giu-bi-tê” (Công Vụ Các Sứ Đồ 14:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 16,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ly-đi, người bán vải sắc tía, quê ở thành nào?",
+  "options": [
+   "Phi-líp",
+   "Sạt-đe",
+   "Cô-lô-se",
+   "Thi-a-ti-rơ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bà gặp Phao-lô bên bờ sông ở Phi-líp. “quê ở thành Thi-a-ti-rơ” (Công Vụ Các Sứ Đồ 16:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 16,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cha của Ti-mô-thê là người gì?",
+  "options": [
+   "Người Sy-ri",
+   "Người Hi Lạp",
+   "Người Do Thái",
+   "Người Rô-ma"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Mẹ ông là một nữ tín hữu người Do Thái. “và cha là người Hi Lạp” (Công Vụ Các Sứ Đồ 16:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 18,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vua nào ra lệnh mọi người Do Thái phải rời khỏi Rô-ma?",
+  "options": [
+   "Ti-be-rơ",
+   "Au-gút-tơ",
+   "Cơ-lốt",
+   "Nê-rô"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì vậy A-qui-la và Pê-rít-sin đến Cô-rinh-tô. “vua Cơ-lốt đã ra lệnh cho tất cả người Do Thái phải rời khỏi Rô-ma” (Công Vụ Các Sứ Đồ 18:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 18,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô ở lại Cô-rinh-tô dạy lời Đức Chúa Trời bao lâu?",
+  "options": [
+   "Một năm sáu tháng",
+   "Ba năm",
+   "Hai năm",
+   "Ba tháng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa phán với ông trong khải tượng đừng sợ. “Phao-lô ở lại đó một năm sáu tháng” (Công Vụ Các Sứ Đồ 18:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 19,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách phù thủy bị đốt ở Ê-phê-sô trị giá bao nhiêu?",
+  "options": [
+   "Năm nghìn miếng bạc",
+   "Năm mươi nghìn miếng bạc",
+   "Một nghìn miếng vàng",
+   "Ba mươi miếng bạc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đạo Chúa được truyền ra mạnh mẽ. “năm mươi nghìn miếng bạc” (Công Vụ Các Sứ Đồ 19:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 19,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người thợ bạc làm khám thờ nữ thần Đi-anh, gây náo loạn ở Ê-phê-sô, tên là gì?",
+  "options": [
+   "Đê-mê-triu",
+   "Ê-ly-ma",
+   "A-léc-xan-đơ",
+   "Gai-út"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông sợ mất mối lợi khi người ta tin Chúa. “Một người thợ bạc tên Đê-mê-triu” (Công Vụ Các Sứ Đồ 19:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 21,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phi-líp, nhà truyền giảng ở Sê-sa-rê, có bao nhiêu con gái nói tiên tri?",
+  "options": [
+   "Bảy người",
+   "Hai người",
+   "Ba người",
+   "Bốn người"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phi-líp là một trong bảy chấp sự. “Ông có bốn người con gái đồng trinh, có ơn nói tiên tri.” (Công Vụ Các Sứ Đồ 21:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 21,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "A-ga-bút lấy vật gì của Phao-lô trói chân tay mình để báo trước?",
+  "options": [
+   "Áo choàng",
+   "Khăn tay",
+   "Dây thắt lưng",
+   "Đôi dép"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phao-lô sẽ bị trói tại Giê-ru-sa-lem. “lấy dây thắt lưng của Phao-lô trói chân tay mình” (Công Vụ Các Sứ Đồ 21:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 23,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ai báo cho Phao-lô biết âm mưu phục kích giết ông?",
+  "options": [
+   "Lu-ca",
+   "Viên chỉ huy",
+   "Một thiên sứ",
+   "Con trai của chị Phao-lô"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nhờ vậy Phao-lô được giải đến Sê-sa-rê. “con trai của chị Phao-lô biết được âm mưu ấy” (Công Vụ Các Sứ Đồ 23:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 27,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Viên đội trưởng giải Phao-lô đi I-ta-li-a tên là gì?",
+  "options": [
+   "Ly-sia",
+   "Giu-lơ",
+   "Cọt-nây",
+   "Phê-tu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông thuộc binh đoàn hoàng gia Au-gút-tơ. “một viên đội trưởng tên Giu-lơ” (Công Vụ Các Sứ Đồ 27:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 27,
+  "verseStart": 37,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trên con tàu chở Phao-lô có tất cả bao nhiêu người?",
+  "options": [
+   "Năm trăm",
+   "Một trăm năm mươi ba",
+   "Hai trăm bảy mươi sáu",
+   "Bảy mươi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tất cả đều lên bờ an toàn. “hai trăm bảy mươi sáu người” (Công Vụ Các Sứ Đồ 27:37)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 22,
+  "verseStart": 28,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô có quyền công dân Rô-ma bằng cách nào?",
+  "options": [
+   "Mới sinh ra đã có",
+   "Mua với giá rất cao",
+   "Được vua ban thưởng",
+   "Nhờ đi lính"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Viên chỉ huy thì phải mua quyền ấy. “Còn tôi thì mới sinh ra đã có quyền công dân ấy rồi.” (Công Vụ Các Sứ Đồ 22:28)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 26,
+  "verseStart": 28,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ai nói Phao-lô không thể chỉ trong thời gian ngắn thuyết phục mình thành Cơ Đốc nhân?",
+  "options": [
+   "Phê-lít",
+   "Vua Ạc-ríp-pa",
+   "Phê-tu",
+   "Sê-sa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phao-lô làm chứng trước vua tại Sê-sa-rê. “Vua Ạc-ríp-pa nói với Phao-lô” (Công Vụ Các Sứ Đồ 26:28)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Acts",
+  "chapter": 28,
+  "verseStart": 30,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ở Rô-ma, Phao-lô ở tại một nhà thuê bao lâu?",
+  "options": [
+   "Sáu tháng",
+   "Ba năm",
+   "Mười năm",
+   "Trọn hai năm"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông giảng về vương quốc Đức Chúa Trời không bị ai ngăn cấm. “Phao-lô ở trọn hai năm tại một nhà thuê.” (Công Vụ Các Sứ Đồ 28:30)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]

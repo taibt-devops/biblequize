@@ -5,7 +5,7 @@
     python content/books/build.py retire genesis_quiz.json   # before deleting an old seed file
 
 Shares the RVV11 reader, cache and checks with content/easy-core/build.py. A source entry:
-    {"ref": "sa 14:18", "d": "medium" | "hard", "q": ..., "a": ..., "wrong": [3 options],
+    {"ref": "sa 14:18", "d": "easy" | "medium" | "hard", "q": ..., "a": ..., "wrong": [3 options],
      "why": one sentence, "quote": verbatim RVV11 text from the cited verses}
 `export` merges every built book into apps/api/src/main/resources/seed/questions/rvv11_books_quiz.json
 and prints the books whose old (1925-era) Vietnamese questions can now be retired.
@@ -23,7 +23,9 @@ _spec = importlib.util.spec_from_file_location("easy_core_build", HERE.parent / 
 core = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(core)
 
-LEVELS = ("medium", "hard")
+# "easy" only for books the Dễ cốt lõi set barely covers (Ru-tơ, Rô-ma…), so retiring the old file
+# does not empty their Easy pool.
+LEVELS = ("easy", "medium", "hard")
 MAX_QUESTION_WORDS = 26
 MAX_ANSWER_WORDS = 10
 SEED_FILE = core.API_RES / "questions" / "rvv11_books_quiz.json"
@@ -125,7 +127,7 @@ def export() -> int:
     books = Counter((q["book"], q["difficulty"]) for q in merged)
     print(f"exported {len(merged)} questions to {SEED_FILE.name}")
     for book in sorted({b for b, _ in books}):
-        print(f"  {book}: medium {books[(book, 'medium')]}, hard {books[(book, 'hard')]}")
+        print(f"  {book}: easy {books[(book, 'easy')]}, medium {books[(book, 'medium')]}, hard {books[(book, 'hard')]}")
     print("old vi questions of these books can be retired:", ", ".join(sorted({b for b, _ in books})))
     return 0
 

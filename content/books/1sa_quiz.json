@@ -1,0 +1,1612 @@
+[
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ên-ca-na có hai vợ: một người là An-ne, người kia tên là gì?",
+  "options": [
+   "Ru-tơ",
+   "Phê-ni-na",
+   "A-bi-ga-in",
+   "Mi-canh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phê-ni-na có con, còn An-ne thì không. “một người tên là Phê-ni-na” (1 Sa-mu-ên 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hằng năm, Ên-ca-na đi lên đâu để thờ phượng và dâng sinh tế?",
+  "options": [
+   "Bết-lê-hem",
+   "Giê-ru-sa-lem",
+   "Hếp-rôn",
+   "Si-lô"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đền tạm khi ấy đặt tại Si-lô. “cho Đức Giê-hô-va vạn quân tại Si-lô” (1 Sa-mu-ên 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "An-ne cầu khẩn Đức Giê-hô-va xin con trong tâm trạng thế nào?",
+  "options": [
+   "Sầu khổ, tuôn tràn nước mắt",
+   "Bình thản im lặng",
+   "Vui mừng ca hát",
+   "Giận dữ trách móc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bà dốc đổ nỗi lòng mình trước mặt Chúa. “Tâm hồn An-ne sầu khổ, bà vừa cầu khẩn Đức Giê-hô-va, vừa tuôn tràn nước mắt.” (1 Sa-mu-ên 1:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "An-ne khấn nguyện nếu được con trai, bà sẽ làm gì?",
+  "options": [
+   "Dạy nó làm ruộng",
+   "Cho nó làm vua",
+   "Hiến dâng nó cho Đức Giê-hô-va",
+   "Đặt tên theo cha"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Dao cạo sẽ không chạm đến đầu đứa trẻ. “thì con sẽ hiến dâng nó cho Đức Giê-hô-va trọn đời” (1 Sa-mu-ên 1:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thấy An-ne cầu nguyện thầm, chỉ mấp máy môi, Hê-li nghĩ bà thế nào?",
+  "options": [
+   "Say rượu",
+   "Bị bệnh",
+   "Đang ngủ gật",
+   "Bị câm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bà giải thích mình đang dốc đổ nỗi lòng trước Chúa. “nên ông nghĩ rằng bà say rượu” (1 Sa-mu-ên 1:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "An-ne đặt tên đứa con trai mình đã cầu xin là gì?",
+  "options": [
+   "Ên-ca-na",
+   "Sau-lơ",
+   "Đa-vít",
+   "Sa-mu-ên"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vì bà đã cầu xin được nó từ nơi Đức Giê-hô-va. “bà đặt tên là Sa-mu-ên” (1 Sa-mu-ên 1:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "An-ne dẫn Sa-mu-ên lên đền thờ ở Si-lô vào lúc nào?",
+  "options": [
+   "Khi lên mười hai tuổi",
+   "Khi biết đọc luật",
+   "Khi đứa trẻ thôi bú",
+   "Ngay khi mới sinh"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sa-mu-ên hãy còn nhỏ lắm. “Vừa khi đứa trẻ thôi bú” (1 Sa-mu-ên 1:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 2,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Mỗi năm, mẹ Sa-mu-ên may cho cậu vật gì?",
+  "options": [
+   "Một đôi dép",
+   "Một cái áo choàng nhỏ",
+   "Một túi đeo",
+   "Một cái mũ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bà mang lên khi cùng chồng dâng sinh tế hằng năm. “mẹ cậu may một cái áo choàng nhỏ đem cho cậu” (1 Sa-mu-ên 2:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 2,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hai con trai của thầy tế lễ Hê-li là người thế nào?",
+  "options": [
+   "Khôn ngoan",
+   "Đồi bại",
+   "Can đảm",
+   "Trung tín"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ không biết gì đến Đức Giê-hô-va. “hai con trai của Hê-li thật là đồi bại” (1 Sa-mu-ên 2:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 2,
+  "verseStart": 26,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Cậu bé Sa-mu-ên càng lớn lên càng được đẹp lòng ai?",
+  "options": [
+   "Đức Giê-hô-va và mọi người",
+   "Chỉ cha mẹ cậu",
+   "Chỉ các thầy tế lễ",
+   "Vua Phi-li-tin"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Trái ngược với hai con trai của Hê-li. “càng được đẹp lòng Đức Giê-hô-va và mọi người” (1 Sa-mu-ên 2:26)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì sao nhà Hê-li bị Đức Giê-hô-va trừng phạt?",
+  "options": [
+   "Ông thờ hình tượng",
+   "Ông bỏ đền thờ",
+   "Ông không dâng lễ",
+   "Không ngăn cấm tội của các con"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Hê-li biết tội của các con trai mình mà không ngăn. “người đã biết tội lỗi đáng nguyền rủa của các con trai mình mà không ngăn cấm” (1 Sa-mu-ên 3:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bị Phi-li-tin đánh bại, các trưởng lão Y-sơ-ra-ên đi thỉnh gì từ Si-lô?",
+  "options": [
+   "Cây gậy Môi-se",
+   "Hai bảng đá",
+   "Hòm Giao Ước",
+   "Bàn thờ đồng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ tưởng có Hòm Giao Ước thì sẽ thắng. “Chúng ta hãy đi thỉnh Hòm Giao Ước của Đức Giê-hô-va từ Si-lô đến đây” (1 Sa-mu-ên 4:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong trận ấy, điều gì xảy ra với Hòm Giao Ước của Đức Chúa Trời?",
+  "options": [
+   "Được đem về Si-lô",
+   "Bị đốt cháy",
+   "Bị chôn giấu",
+   "Bị chiếm đoạt"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Hai con trai Hê-li cũng chết trong trận nầy. “Hòm Giao Ước của Đức Chúa Trời bị chiếm đoạt” (1 Sa-mu-ên 4:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 4,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nghe tin Hòm Giao Ước bị chiếm, ông Hê-li già yếu ra sao?",
+  "options": [
+   "Ngã ngửa, gãy cổ và chết",
+   "Đi tìm Hòm Giao Ước",
+   "Bỏ trốn khỏi thành",
+   "Xé áo khóc lóc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông đã già yếu mà lại nặng nề. “ngã ngửa xuống, gãy cổ và chết” (1 Sa-mu-ên 4:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người Phi-li-tin đặt Hòm Giao Ước trong đền của thần nào?",
+  "options": [
+   "Ba-anh",
+   "Đa-gôn",
+   "Át-tạt-tê",
+   "Mo-lóc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ để Hòm bên cạnh tượng thần của mình. “đặt trong đền của thần Đa-gôn” (1 Sa-mu-ên 5:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 5,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sáng hôm sau, dân Ách-đốt thấy tượng Đa-gôn ra sao?",
+  "options": [
+   "Quay mặt vào tường",
+   "Biến mất",
+   "Ngã sấp mặt xuống đất",
+   "Bị cháy đen"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tượng ngã trước mặt Hòm Giao Ước của Đức Giê-hô-va. “thấy Đa-gôn ngã sấp mặt xuống đất” (1 Sa-mu-ên 5:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 6,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người Phi-li-tin dùng con vật gì kéo xe trả Hòm Giao Ước về?",
+  "options": [
+   "Hai con ngựa",
+   "Hai con bò cái",
+   "Hai con lạc đà",
+   "Hai con lừa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bò cái còn cho con bú, chưa từng mang ách. “bắt hai con bò cái còn cho con bú” (1 Sa-mu-ên 6:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 7,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sa-mu-ên đặt tên tảng đá kỷ niệm giữa Mích-pa và Sen là gì?",
+  "options": [
+   "Mích-pa",
+   "Ghinh-ganh",
+   "Bết-ên",
+   "Ê-bên Ê-xe"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vì Đức Giê-hô-va đã cứu giúp chúng ta cho đến bây giờ. “đặt tên là Ê-bên Ê-xe” (1 Sa-mu-ên 7:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 8,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Các trưởng lão Y-sơ-ra-ên xin Sa-mu-ên lập điều gì?",
+  "options": [
+   "Một vua cai trị họ",
+   "Một thầy tế lễ mới",
+   "Một đền thờ lớn",
+   "Một đạo quân"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Họ muốn giống như tất cả các nước khác. “xin hãy lập một vua để cai trị chúng tôi như tất cả các nước khác” (1 Sa-mu-ên 8:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 8,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Các con trai Sa-mu-ên làm quan xét thế nào?",
+  "options": [
+   "Xét xử rất công minh",
+   "Không bao giờ ra tòa",
+   "Nhận hối lộ, làm sai công lý",
+   "Chỉ lo việc đền thờ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ không đi theo đường lối của cha. “họ chạy theo lợi lộc, nhận hối lộ, và làm sai lệch công lý” (1 Sa-mu-ên 8:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 8,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi dân đòi có vua, Đức Giê-hô-va nói thật ra họ từ khước ai?",
+  "options": [
+   "Sa-mu-ên",
+   "Các thầy tế lễ",
+   "Chính Đức Giê-hô-va",
+   "Các con Sa-mu-ên"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ không muốn Ngài làm Vua của họ nữa. “không phải họ từ khước con đâu, mà từ khước Ta” (1 Sa-mu-ên 8:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 9,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau-lơ, con của Kích, có vóc dáng thế nào?",
+  "options": [
+   "Hồng hào, mắt đẹp",
+   "Cao hơn mọi người từ vai trở lên",
+   "Râu dài tóc bạc",
+   "Thấp bé nhất nhà"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Trong dân Y-sơ-ra-ên không ai đẹp trai bằng chàng. “Sau-lơ cao hơn mọi người từ vai trở lên.” (1 Sa-mu-ên 9:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 9,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau-lơ lên đường đi tìm gì cho cha mình?",
+  "options": [
+   "Mấy con lừa cái bị lạc",
+   "Đàn dê của nhà",
+   "Một con ngựa quý",
+   "Bầy chiên bị lạc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chuyến đi ấy dẫn ông đến gặp Sa-mu-ên. “mấy con lừa cái của Kích bị lạc” (1 Sa-mu-ên 9:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 9,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Cha của Sau-lơ, một người Bên-gia-min giàu có, tên là gì?",
+  "options": [
+   "Gie-sê",
+   "Na-banh",
+   "Ên-ca-na",
+   "Kích"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Một người có thế lực trong bộ tộc Bên-gia-min. “tên là Kích” (1 Sa-mu-ên 9:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 10,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sa-mu-ên xức dầu cho Sau-lơ bằng vật gì?",
+  "options": [
+   "Một lọ dầu nhỏ",
+   "Một chén rượu",
+   "Một sừng đầy dầu",
+   "Một bình nước"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Để lập ông làm người lãnh đạo cơ nghiệp của Chúa. “Sa-mu-ên lấy một lọ dầu nhỏ, đổ trên đầu Sau-lơ” (1 Sa-mu-ên 10:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 10,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi trúng thăm làm vua, Sau-lơ đang ở đâu?",
+  "options": [
+   "Trên mái nhà",
+   "Ẩn trong đống đồ đạc",
+   "Ngoài đồng chăn lừa",
+   "Trong đền thờ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đức Giê-hô-va chỉ cho dân biết chỗ ông trốn. “người ấy đang ẩn trong đống đồ đạc kia” (1 Sa-mu-ên 10:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 10,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thấy Sau-lơ, toàn dân tung hô thế nào?",
+  "options": [
+   "Ha-lê-lu-gia!",
+   "A-men!",
+   "Hô-sa-na!",
+   "Vua vạn tuế!"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sau-lơ trở thành vua đầu tiên của Y-sơ-ra-ên. “Toàn dân đều tung hô: “Vua vạn tuế!”” (1 Sa-mu-ên 10:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 13,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chờ mãi chưa thấy Sa-mu-ên, Sau-lơ tự ý làm gì?",
+  "options": [
+   "Rút quân về nhà",
+   "Đầu hàng Phi-li-tin",
+   "Dâng tế lễ thiêu",
+   "Đi tìm Sa-mu-ên"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông không vâng giữ mệnh lệnh của Đức Giê-hô-va. “Rồi vua dâng tế lễ thiêu.” (1 Sa-mu-ên 13:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 13,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sa-mu-ên nói Đức Giê-hô-va đã chọn cho mình một người thế nào?",
+  "options": [
+   "Một chiến binh giỏi",
+   "Một người đẹp lòng Ngài",
+   "Một người giàu có",
+   "Một người cao lớn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vương quốc của Sau-lơ sẽ không bền lâu. “Đức Giê-hô-va đã chọn cho mình một người đẹp lòng Ngài” (1 Sa-mu-ên 13:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 14,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trước khi đánh đồn Phi-li-tin, Giô-na-than tin điều gì?",
+  "options": [
+   "Phải có gươm giáo tốt",
+   "Phải có thật nhiều quân",
+   "Phải chờ lệnh của vua",
+   "Ít hay nhiều người, Chúa vẫn cho thắng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông chỉ đi cùng người vác khí giới. “Dù ít người hay nhiều người, không có gì cản trở Đức Giê-hô-va cho chúng ta chiến thắng.” (1 Sa-mu-ên 14:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 14,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Không biết lời thề của cha, Giô-na-than đã nếm gì?",
+  "options": [
+   "Bánh mì",
+   "Rượu nho",
+   "Mật ong",
+   "Trái vả"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Mắt ông liền sáng ra. “chấm vào tàng mật ong” (1 Sa-mu-ên 14:27)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 15,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sa-mu-ên nói với Sau-lơ: sự vâng lời tốt hơn điều gì?",
+  "options": [
+   "Sinh tế",
+   "Vàng bạc",
+   "Chiến thắng",
+   "Lời cầu nguyện"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa vui thích sự vâng lời hơn lễ vật. “sự vâng lời tốt hơn sinh tế” (1 Sa-mu-ên 15:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 15,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau-lơ đã tha chết cho vua A-ma-léc tên là gì?",
+  "options": [
+   "Gô-li-át",
+   "A-kích",
+   "Đa-gôn",
+   "A-ga"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông cũng giữ lại những con vật tốt nhất. “tha chết cho A-ga” (1 Sa-mu-ên 15:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 15,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sa-mu-ên nghe tiếng gì cho thấy Sau-lơ không vâng lời?",
+  "options": [
+   "Tiếng chiên kêu, bò rống",
+   "Tiếng dân ca hát",
+   "Tiếng kèn chiến thắng",
+   "Tiếng trống trận"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sau-lơ đã giữ lại bò chiên tốt nhất. “tiếng chiên kêu vang đến tai tôi, cùng tiếng bò rống” (1 Sa-mu-ên 15:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 16,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thấy con trai nào của Gie-sê, Sa-mu-ên thầm nghĩ đó là người được xức dầu?",
+  "options": [
+   "Sa-ma",
+   "Ê-li-áp",
+   "Giô-na-than",
+   "A-bi-na-đáp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nhưng Đức Giê-hô-va đã loại bỏ người ấy. “Sa-mu-ên thấy Ê-li-áp” (1 Sa-mu-ên 16:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 16,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Gie-sê cho bao nhiêu con trai đi qua trước Sa-mu-ên mà không ai được chọn?",
+  "options": [
+   "Ba người",
+   "Năm người",
+   "Bảy người",
+   "Mười người"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người con út còn đang chăn chiên. “Gie-sê bảo bảy con trai mình đi qua trước mặt Sa-mu-ên” (1 Sa-mu-ên 16:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Gie-sê sai Đa-vít mang gì đến trại quân cho các anh?",
+  "options": [
+   "Dầu và mật",
+   "Áo giáp và gươm",
+   "Hột rang và bánh",
+   "Thịt chiên và rượu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nhờ chuyến đi ấy Đa-vít nghe Gô-li-át thách thức. “Con hãy lấy mười ký hột rang và mười ổ bánh nầy” (1 Sa-mu-ên 17:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 47,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít nói với Gô-li-át: Đức Giê-hô-va không giải cứu bằng gì?",
+  "options": [
+   "Lời cầu nguyện",
+   "Gươm hoặc giáo",
+   "Thiên sứ",
+   "Đức tin"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì Đức Giê-hô-va là Chúa của chiến trận. “Đức Giê-hô-va không giải cứu bằng gươm, hoặc bằng giáo” (1 Sa-mu-ên 17:47)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 18,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đang khi Đa-vít đánh đàn, vua Sau-lơ đã làm gì?",
+  "options": [
+   "Đuổi Đa-vít ra",
+   "Ngủ thiếp đi",
+   "Hát theo tiếng đàn",
+   "Phóng giáo vào Đa-vít"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đa-vít tránh khỏi mũi giáo hai lần. “phóng giáo vào Đa-vít” (1 Sa-mu-ên 18:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 18,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Con gái nào của Sau-lơ yêu Đa-vít?",
+  "options": [
+   "Mi-canh",
+   "A-bi-ga-in",
+   "Ta-ma",
+   "Mê-ráp"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Về sau nàng trở thành vợ Đa-vít. “Mi-canh, con gái của Sau-lơ, yêu Đa-vít” (1 Sa-mu-ên 18:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 19,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Mi-canh giúp Đa-vít trốn khỏi người của Sau-lơ bằng cách nào?",
+  "options": [
+   "Đi đường hầm",
+   "Mở cổng thành",
+   "Trèo qua mái nhà",
+   "Thòng xuống qua cửa sổ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nàng còn đặt tượng trên giường để đánh lừa lính canh. “Mi-canh thòng Đa-vít xuống qua cửa sổ” (1 Sa-mu-ên 19:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 21,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thầy tế lễ ở Nóp trao cho Đa-vít thanh gươm của ai?",
+  "options": [
+   "Gô-li-át",
+   "Áp-ne",
+   "Sau-lơ",
+   "Giô-na-than"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đa-vít nói: Chẳng có gươm nào bằng! “Đây có thanh gươm của Gô-li-át” (1 Sa-mu-ên 21:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 25,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người vợ khôn ngoan xinh đẹp của Na-banh tên là gì?",
+  "options": [
+   "Bát-sê-ba",
+   "Mi-canh",
+   "A-bi-ga-in",
+   "Phê-ni-na"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Còn chồng bà thì cứng cỏi và hung ác. “vợ ông là A-bi-ga-in” (1 Sa-mu-ên 25:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 26,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lần tha cho Sau-lơ thứ hai, Đa-vít lấy gì nơi đầu giường vua?",
+  "options": [
+   "Vương miện và gươm",
+   "Cây giáo và bình nước",
+   "Áo choàng và khiên",
+   "Cung và tên"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Không ai thức giấc vì Chúa khiến họ ngủ say. “Đa-vít lấy cây giáo và bình nước nơi đầu giường của Sau-lơ” (1 Sa-mu-ên 26:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 31,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Quân Y-sơ-ra-ên thời Sau-lơ ngã chết trên núi nào trong trận cuối?",
+  "options": [
+   "Cạt-mên",
+   "Ô-liu",
+   "Ghinh-bô-a",
+   "Si-na-i"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sau-lơ và các con trai ông tử trận tại đây. “ngã chết trên núi Ghinh-bô-a” (1 Sa-mu-ên 31:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cha của Sa-mu-ên tên là gì?",
+  "options": [
+   "Kích",
+   "Ên-ca-na",
+   "Hê-li",
+   "Gie-sê"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông là người vùng đồi núi Ép-ra-im. “tên là Ên-ca-na” (1 Sa-mu-ên 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hai con trai làm thầy tế lễ của Hê-li tên là gì?",
+  "options": [
+   "Hóp-ni và Phi-nê-a",
+   "Ê-li-áp và Sa-ma",
+   "Na-đáp và A-bi-hu",
+   "Giô-ên và A-bi-gia"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cả hai đều chết trong ngày Hòm Giao Ước bị chiếm. “hai con trai của Hê-li, là Hóp-ni và Phi-nê-a” (1 Sa-mu-ên 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi đem Sa-mu-ên lên Si-lô, An-ne mang theo bao nhiêu con bò tơ đực?",
+  "options": [
+   "Một con",
+   "Bảy con",
+   "Hai con",
+   "Ba con"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cùng với bột mì và một bầu rượu. “ba con bò tơ đực” (1 Sa-mu-ên 1:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 2,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cậu bé Sa-mu-ên thắt cái ê-phót làm bằng gì?",
+  "options": [
+   "Vải gai",
+   "Da chiên",
+   "Vải tím",
+   "Lông dê"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cậu phụng sự trước mặt Đức Giê-hô-va từ thuở nhỏ. “Cậu bé thắt một cái ê-phót bằng vải gai.” (1 Sa-mu-ên 2:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong trận Hòm Giao Ước bị chiếm, bao nhiêu bộ binh Y-sơ-ra-ên ngã chết?",
+  "options": [
+   "Bốn nghìn",
+   "Ba mươi nghìn",
+   "Ba nghìn",
+   "Mười nghìn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Trận trước đó đã có khoảng bốn nghìn người chết. “có ba mươi nghìn bộ binh Y-sơ-ra-ên bị ngã chết” (1 Sa-mu-ên 4:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 4,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hê-li đã làm quan xét cho Y-sơ-ra-ên bao nhiêu năm?",
+  "options": [
+   "Bảy năm",
+   "Hai mươi năm",
+   "Tám mươi năm",
+   "Bốn mươi năm"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông qua đời khi nghe tin Hòm Giao Ước bị chiếm. “Ông đã làm quan xét cho Y-sơ-ra-ên trong bốn mươi năm.” (1 Sa-mu-ên 4:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 4,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cháu nội của Hê-li được đặt tên gì, vì vinh quang đã lìa khỏi Y-sơ-ra-ên?",
+  "options": [
+   "Y-sa-ca",
+   "Ê-bên Ê-xe",
+   "Y-ca-bốt",
+   "A-hi-túp"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Mẹ đứa trẻ đặt tên khi nghe tin dữ. “Nàng đặt tên cho đứa trẻ là Y-ca-bốt” (1 Sa-mu-ên 4:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 5,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người Phi-li-tin đem Hòm Giao Ước đến thành nào trước tiên?",
+  "options": [
+   "Ách-đốt",
+   "Ga-xa",
+   "Éc-rôn",
+   "Gát"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nơi có đền thờ thần Đa-gôn. “đem Hòm Giao Ước từ Ê-bên Ê-xe đến Ách-đốt” (1 Sa-mu-ên 5:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 6,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hai con bò kéo xe chở Hòm Giao Ước đi thẳng về hướng nào?",
+  "options": [
+   "Ra-ma",
+   "Giê-ru-sa-lem",
+   "Si-lô",
+   "Bết Sê-mết"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúng không quay qua bên phải hay bên trái. “Hai con bò cái đi thẳng theo hướng về Bết Sê-mết.” (1 Sa-mu-ên 6:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 8,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hai con trai Sa-mu-ên được lập làm quan xét tên là gì?",
+  "options": [
+   "Hóp-ni và Phi-nê-a",
+   "Áp-ne và A-bi-sai",
+   "Giô-ên và A-bi-gia",
+   "Ê-li-áp và Sa-ma"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ xét xử tại Bê-e Sê-ba. “Tên người con trưởng là Giô-ên, người con thứ là A-bi-gia” (1 Sa-mu-ên 8:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 13,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sau-lơ đã đợi Sa-mu-ên ở Ghinh-ganh bao nhiêu ngày?",
+  "options": [
+   "Mười ngày",
+   "Bảy ngày",
+   "Bốn mươi ngày",
+   "Ba ngày"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đó là thời gian Sa-mu-ên đã định. “Sau-lơ đợi bảy ngày” (1 Sa-mu-ên 13:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 15,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sa-mu-ên nói sự phản nghịch đáng tội như điều gì?",
+  "options": [
+   "Nói dối",
+   "Giết người",
+   "Trộm cắp",
+   "Tà thuật"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sự ương ngạnh đáng tội như thờ lạy hình tượng. “Sự phản nghịch đáng tội như tà thuật” (1 Sa-mu-ên 15:23)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 15,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sa-mu-ên nói sự nghe theo tốt hơn điều gì?",
+  "options": [
+   "Dầu ô-liu",
+   "Bánh thánh",
+   "Mỡ chiên đực",
+   "Huyết bò đực"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Câu đi đôi với lời sự vâng lời tốt hơn sinh tế. “Sự nghe theo tốt hơn mỡ chiên đực.” (1 Sa-mu-ên 15:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Tay vô địch Gô-li-át quê ở thành nào?",
+  "options": [
+   "Éc-rôn",
+   "Gát",
+   "Ách-đốt",
+   "Ga-xa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Một trong năm thành lớn của người Phi-li-tin. “tên là Gô-li-át, quê ở Gát” (1 Sa-mu-ên 17:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Áo giáp đồng vảy cá của Gô-li-át nặng khoảng bao nhiêu?",
+  "options": [
+   "Năm mươi bảy ki-lô-gam",
+   "Một trăm ki-lô-gam",
+   "Hai mươi ki-lô-gam",
+   "Bảy ki-lô-gam"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Riêng mũi giáo đã nặng khoảng bảy ki-lô-gam. “nặng năm mươi bảy ki-lô-gam” (1 Sa-mu-ên 17:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Gie-sê, cha của Đa-vít, có bao nhiêu con trai?",
+  "options": [
+   "Bảy người",
+   "Mười người",
+   "Mười hai người",
+   "Tám người"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bảy người con đi qua trước Sa-mu-ên, Đa-vít là con út. “Gie-sê có tám con trai” (1 Sa-mu-ên 17:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 21,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trốn khỏi Sau-lơ, Đa-vít đến thành Nóp gặp thầy tế lễ nào?",
+  "options": [
+   "A-bia-tha",
+   "A-hi-mê-léc",
+   "Xa-đốc",
+   "Hê-li"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Thầy tế lễ run sợ vì Đa-vít đi một mình. “gặp thầy tế lễ A-hi-mê-léc” (1 Sa-mu-ên 21:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 21,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ở thành Nóp, thầy tế lễ cho Đa-vít loại bánh nào?",
+  "options": [
+   "Bánh thánh",
+   "Ma-na",
+   "Bánh không men",
+   "Bánh lúa mạch"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ở đó không có bánh nào khác ngoài bánh cung hiến. “thầy tế lễ trao bánh thánh cho ông” (1 Sa-mu-ên 21:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 22,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Rời đất Gát, Đa-vít trốn trong hang đá nào?",
+  "options": [
+   "Mặc-bê-la",
+   "Ên-ghê-đi",
+   "A-đu-lam",
+   "Ma-ôn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Gia đình ông cũng xuống đó với ông. “trốn trong hang đá A-đu-lam” (1 Sa-mu-ên 22:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 22,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khoảng bao nhiêu người cùng khốn quy tụ theo Đa-vít ở hang đá ấy?",
+  "options": [
+   "Một nghìn người",
+   "Bốn trăm người",
+   "Sáu trăm người",
+   "Ba trăm người"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Về sau số người theo ông lên đến sáu trăm. “Có khoảng bốn trăm người theo ông.” (1 Sa-mu-ên 22:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 25,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "A-bi-ga-in vội vàng mang bao nhiêu ổ bánh đến đón Đa-vít?",
+  "options": [
+   "Hai trăm ổ",
+   "Một trăm ổ",
+   "Năm trăm ổ",
+   "Năm mươi ổ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cùng với rượu, thịt chiên, nho khô và bánh trái vả. “A-bi-ga-in vội vàng lấy hai trăm ổ bánh” (1 Sa-mu-ên 25:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 27,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vua A-kích của Gát ban cho Đa-vít thành nào?",
+  "options": [
+   "Gát",
+   "Ma-ôn",
+   "Xiếc-lác",
+   "Hếp-rôn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Thành ấy về sau thuộc về các vua Giu-đa. “A-kích ban thành Xiếc-lác cho ông” (1 Sa-mu-ên 27:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 30,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít phân xử phần chiến lợi phẩm của người ở lại giữ đồ đạc thế nào?",
+  "options": [
+   "Chỉ được một nửa",
+   "Gấp đôi người ra trận",
+   "Không có phần",
+   "Bằng phần người ra trận"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ phải được chia phần như nhau. “Phần của người ra trận và phần của người giữ đồ đạc phải bằng nhau” (1 Sa-mu-ên 30:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 26,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ai cùng Đa-vít lẻn vào trại quân Sau-lơ ban đêm?",
+  "options": [
+   "Áp-ne",
+   "Giô-áp",
+   "A-bi-sai",
+   "Giô-na-than"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "A-bi-sai muốn giết Sau-lơ nhưng Đa-vít ngăn lại. “Đa-vít và A-bi-sai đến chỗ quân lính” (1 Sa-mu-ên 26:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 23,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giô-na-than nói khi Đa-vít làm vua, ông sẽ giữ chức gì?",
+  "options": [
+   "Tể tướng",
+   "Người vác khí giới",
+   "Tổng binh",
+   "Thầy tế lễ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông giúp Đa-vít vững lòng tin cậy Đức Chúa Trời. “còn tôi sẽ làm tể tướng của anh” (1 Sa-mu-ên 23:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

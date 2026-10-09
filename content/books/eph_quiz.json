@@ -1,0 +1,761 @@
+[
+ {
+  "book": "Ephesians",
+  "chapter": 6,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên con cái phải đối xử thế nào với cha mẹ?",
+  "options": [
+   "Ở riêng khi lớn",
+   "Vâng lời cha mẹ trong Chúa",
+   "Nuôi cha mẹ khi giàu",
+   "Chỉ nghe khi đồng ý"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì đây là điều phải lẽ. “Hỡi những người làm con, hãy vâng lời cha mẹ mình trong Chúa, vì đây là điều phải lẽ.” (Ê-phê-sô 6:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 4,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên đừng để cơn giận kéo dài đến khi nào?",
+  "options": [
+   "Cuối tuần",
+   "Khi được xin lỗi",
+   "Ngày hôm sau",
+   "Lúc mặt trời lặn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Khi nóng giận thì đừng phạm tội, đừng tạo cơ hội cho ma quỷ. “đừng căm giận cho đến lúc mặt trời lặn” (Ê-phê-sô 4:26)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 4,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên tha thứ cho nhau như ai đã tha thứ chúng ta?",
+  "options": [
+   "Đức Chúa Trời",
+   "Các sứ đồ",
+   "Bạn bè",
+   "Cha mẹ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Hãy cư xử với nhau cách nhân từ và dịu dàng. “tha thứ nhau như Đức Chúa Trời đã tha thứ anh em trong Đấng Christ vậy.” (Ê-phê-sô 4:32)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 5,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trước kia là bóng tối, bây giờ trong Chúa tín hữu là gì?",
+  "options": [
+   "Muối",
+   "Dòng sông",
+   "Ánh sáng",
+   "Ngọn núi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hãy bước đi như các con của ánh sáng. “Trước kia anh em là bóng tối, nhưng bây giờ trong Chúa, anh em là ánh sáng.” (Ê-phê-sô 5:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 5,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên người chồng yêu vợ như ai đã yêu Hội Thánh?",
+  "options": [
+   "Vua Đa-vít",
+   "Áp-ra-ham",
+   "Các sứ đồ",
+   "Đấng Christ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đấng Christ đã xả thân vì Hội Thánh. “Hỡi người làm chồng, hãy yêu vợ mình như Đấng Christ đã yêu Hội Thánh” (Ê-phê-sô 5:25)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời đã chọn chúng ta trong Đấng Christ từ khi nào?",
+  "options": [
+   "Khi chúng ta chịu báp-têm",
+   "Khi chúng ta ra đời",
+   "Trước khi sáng thế",
+   "Từ thời Môi-se"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để chúng ta được thánh hóa và không chỗ chê trách trước mặt Ngài. “Ngay cả trước khi sáng thế, Ngài đã chọn chúng ta trong Đấng Christ” (Ê-phê-sô 1:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong tình yêu thương, Đức Chúa Trời định sẵn cho chúng ta địa vị gì?",
+  "options": [
+   "Làm con nuôi của Ngài",
+   "Làm đầy tớ của Ngài",
+   "Làm thiên sứ",
+   "Làm vua trên đất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nhờ Đức Chúa Jêsus Christ, chúng ta được vào gia đình Ngài. “Ngài đã định sẵn cho chúng ta địa vị làm con nuôi của Ngài bởi Đức Chúa Jêsus Christ” (Ê-phê-sô 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Đấng Christ, chúng ta được cứu chuộc bởi điều gì?",
+  "options": [
+   "Lễ vật đền thờ",
+   "Huyết Ngài",
+   "Luật pháp Môi-se",
+   "Việc lành của mình"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Và được tha tội theo sự phong phú của ân điển Ngài. “chúng ta được cứu chuộc bởi huyết Ngài, được tha tội theo sự phong phú của ân điển Ngài” (Ê-phê-sô 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 1,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi tin, tín hữu được đóng ấn bằng ai?",
+  "options": [
+   "Huyết chiên con",
+   "Các sứ đồ",
+   "Nhẫn của vua",
+   "Đức Thánh Linh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đức Thánh Linh như con dấu xác nhận chúng ta thuộc về Chúa. “anh em đã tin và được đóng ấn bằng Đức Thánh Linh như lời hứa.” (Ê-phê-sô 1:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 1,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời lập Đấng Christ làm gì vì Hội Thánh?",
+  "options": [
+   "Làm đầu mọi sự",
+   "Làm thầy tế lễ",
+   "Làm người giữ sổ",
+   "Làm người canh cửa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài đặt vạn vật dưới chân Đấng Christ. “và lập Đấng Christ làm đầu mọi sự vì Hội Thánh.” (Ê-phê-sô 1:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 1,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Hội Thánh là gì của Đấng Christ?",
+  "options": [
+   "Ngôi nhà Ngài",
+   "Thân thể Ngài",
+   "Cánh đồng Ngài",
+   "Đạo binh Ngài"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đấng Christ là đầu, Hội Thánh là thân thể. “Hội Thánh là thân thể Ngài” (Ê-phê-sô 1:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 2,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đấng Christ đã phá đổ điều gì giữa người Do Thái và dân ngoại?",
+  "options": [
+   "Ngai vua",
+   "Đường biên giới",
+   "Bức tường ngăn cách",
+   "Cổng đền thờ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngài kết hợp cả hai nhóm thành một. “phá đổ bức tường ngăn cách vốn gây thù địch.” (Ê-phê-sô 2:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 2,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong ngôi nhà của Đức Chúa Trời, Đấng Christ Jêsus là gì?",
+  "options": [
+   "Cột chống",
+   "Mái nhà",
+   "Đá góc nhà",
+   "Cánh cửa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nhà được xây trên nền các sứ đồ và tiên tri. “mà chính Đấng Christ Jêsus là đá góc nhà.” (Ê-phê-sô 2:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi viết thư Ê-phê-sô, Phao-lô tự gọi mình là gì?",
+  "options": [
+   "Sứ đồ của người Do Thái",
+   "Tù nhân của Đấng Christ",
+   "Vua của các thánh",
+   "Thầy của dân ngoại"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông viết thư khi đang bị giam vì cớ dân ngoại. “tôi, Phao-lô, làm tù nhân của Đấng Christ Jêsus” (Ê-phê-sô 3:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 3,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Phao-lô, nhờ Tin Lành, ai cũng trở nên những người thừa kế?",
+  "options": [
+   "Dòng dõi Lê-vi",
+   "Người Pha-ri-si",
+   "Các thầy tế lễ",
+   "Dân ngoại"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đó là sự mầu nhiệm trước kia chưa được tiết lộ. “Nhờ Tin Lành, dân ngoại được trở nên những người thừa kế” (Ê-phê-sô 3:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô tự nhận mình là ai trong tất cả các thánh đồ?",
+  "options": [
+   "Người hèn mọn nhất",
+   "Người lớn nhất",
+   "Người đầu tiên",
+   "Người khôn ngoan nhất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông biết mình được chức vụ chỉ vì ân điển. “Dù tôi là người hèn mọn nhất trong tất cả các thánh đồ” (Ê-phê-sô 3:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 3,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời có thể làm thế nào so với mọi điều chúng ta cầu xin?",
+  "options": [
+   "Khi nào ta xứng đáng",
+   "Trổi hơn bội phần",
+   "Đúng như lời xin",
+   "Một phần nhỏ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngài hành động trong chúng ta bằng quyền năng Ngài. “có thể làm trổi hơn bội phần mọi điều chúng ta cầu xin hoặc suy tưởng.” (Ê-phê-sô 3:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sự hiệp nhất của Thánh Linh được duy trì bằng sợi dây gì?",
+  "options": [
+   "Tiền bạc",
+   "Lời thề",
+   "Hòa bình",
+   "Luật pháp"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phải khiêm nhu, mềm mại và chịu đựng lẫn nhau. “Cố gắng duy trì sự hiệp nhất của Thánh Linh bằng sợi dây hòa bình.” (Ê-phê-sô 4:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chỉ có một Chúa, một đức tin, và một gì nữa?",
+  "options": [
+   "Một báp-têm",
+   "Một ngôn ngữ",
+   "Một đền thờ",
+   "Một vị vua"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Phao-lô liệt kê những điều hiệp nhất Hội Thánh. “chỉ có một Chúa, một đức tin, một báp-têm” (Ê-phê-sô 4:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 4,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lột bỏ người cũ rồi, tín hữu phải làm gì?",
+  "options": [
+   "Trở lại đời trước",
+   "Giữ người cũ cẩn thận",
+   "Sống một mình",
+   "Mặc lấy người mới"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Người mới được tạo dựng theo hình ảnh Đức Chúa Trời. “và mặc lấy người mới, là người đã được tạo dựng theo hình ảnh của Đức Chúa Trời” (Ê-phê-sô 4:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 4,
+  "verseStart": 30,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn chớ làm buồn ai?",
+  "options": [
+   "Các thầy giáo",
+   "Các trưởng lão",
+   "Đức Thánh Linh",
+   "Người lân cận"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Trong Ngài, tín hữu được ấn chứng cho đến ngày cứu chuộc. “Anh em chớ làm buồn Đức Thánh Linh của Đức Chúa Trời” (Ê-phê-sô 4:30)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 5,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên hãy tận dụng thì giờ vì sao?",
+  "options": [
+   "Vì đời người ngắn ngủi",
+   "Vì sắp có nạn đói",
+   "Vì Chúa sắp đến",
+   "Vì những ngày là xấu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Hãy sống như người khôn ngoan, không như người dại dột. “Hãy tận dụng thì giờ, vì những ngày là xấu.” (Ê-phê-sô 5:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 5,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên đừng say rượu nhưng phải thế nào?",
+  "options": [
+   "Đầy dẫy Thánh Linh",
+   "Ở nhà một mình",
+   "Kiêng ăn",
+   "Uống nước lã"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Rượu dẫn đến buông tuồng. “Đừng say rượu, vì rượu dẫn đến buông tuồng, nhưng phải đầy dẫy Thánh Linh.” (Ê-phê-sô 5:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Đức Thánh Linh là gì của cơ nghiệp chúng ta?",
+  "options": [
+   "Phần thưởng cuối",
+   "Bảo chứng",
+   "Người canh giữ",
+   "Giấy chứng nhận"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Như tiền đặt cọc bảo đảm phần còn lại sẽ đến. “Đấng ấy là bảo chứng của cơ nghiệp chúng ta” (Ê-phê-sô 1:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 2,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Tín hữu dân ngoại không còn là người xa lạ mà là gì?",
+  "options": [
+   "Khách được mời",
+   "Đầy tớ trong nhà",
+   "Người đồng hương với các thánh đồ",
+   "Người tạm trú"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ là thành viên trong gia đình của Đức Chúa Trời. “nhưng là người đồng hương với các thánh đồ và là thành viên trong gia đình của Đức Chúa Trời” (Ê-phê-sô 2:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 3,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô cầu xin tín hữu thấu hiểu tình yêu của Đấng Christ theo những chiều nào?",
+  "options": [
+   "Rộng, dài, cao và sâu",
+   "Trước, sau, trái và phải",
+   "Quá khứ và tương lai",
+   "Trên trời và dưới đất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là tình yêu vượt quá mọi sự hiểu biết. “anh em có thể thấu hiểu chiều rộng, chiều dài, chiều cao, chiều sâu của tình yêu ấy” (Ê-phê-sô 3:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đấng Christ ban cho Hội Thánh sứ đồ, nhà tiên tri, nhà truyền giảng, và ai nữa?",
+  "options": [
+   "Thầy tế lễ và người Lê-vi",
+   "Ca viên và nhạc công",
+   "Vua và quan án",
+   "Mục sư và giáo sư"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để các thánh đồ được trang bị cho công tác phục vụ. “một số người khác nữa làm mục sư và giáo sư” (Ê-phê-sô 4:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 4,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói người còn non nớt như trẻ con dễ bị cuốn theo điều gì?",
+  "options": [
+   "Tiền bạc thế gian",
+   "Luồng gió học thuyết",
+   "Sóng biển dữ dội",
+   "Đám đông ồn ào"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì sự xảo quyệt và mánh khóe lừa dối của con người. “bị dồi dập và cuốn theo luồng gió học thuyết” (Ê-phê-sô 4:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 4,
+  "verseStart": 28,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên kẻ quen trộm cắp làm việc lương thiện để làm gì?",
+  "options": [
+   "Giúp đỡ người thiếu thốn",
+   "Dâng vào đền thờ",
+   "Được người khác khen",
+   "Trả lại đồ đã lấy"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Từ người lấy của người khác thành người cho đi. “tự tay mình làm việc lương thiện để có thể giúp đỡ người thiếu thốn thì hơn.” (Ê-phê-sô 4:28)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 5,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói tham lam là gì?",
+  "options": [
+   "Tính cần kiệm",
+   "Sự khôn ngoan",
+   "Lỗi nhỏ",
+   "Thờ thần tượng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Kẻ tham lam không được thừa hưởng vương quốc của Đấng Christ. “tham lam là thờ thần tượng” (Ê-phê-sô 5:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 5,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Lời kêu gọi “Hỡi người đang ngủ, hãy thức dậy” hứa Đấng Christ sẽ làm gì?",
+  "options": [
+   "Gọi tên ngươi",
+   "Chiếu sáng ngươi",
+   "Dẫn ngươi về nhà",
+   "Ban cho ngươi giấc mơ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ánh sáng của Đấng Christ phơi bày và đánh thức. “Thì Đấng Christ sẽ chiếu sáng ngươi.” (Ê-phê-sô 5:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 6,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói điều răn “Hãy hiếu kính cha mẹ” có gì đặc biệt?",
+  "options": [
+   "Chỉ dành cho người Do Thái",
+   "Là điều răn lớn nhất",
+   "Là điều răn thứ nhất có lời hứa",
+   "Là điều răn cuối cùng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lời hứa là được phước và sống lâu trên đất. “ấy là điều răn thứ nhất, có kèm theo lời hứa” (Ê-phê-sô 6:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ephesians",
+  "chapter": 6,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ai được Phao-lô sai đến thuật tin tức của ông cho tín hữu Ê-phê-sô?",
+  "options": [
+   "Ti-mô-thê",
+   "Tít",
+   "Ty-chi-cơ",
+   "Ép-pa-phô-đích"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ty-chi-cơ là người anh em yêu dấu, người phục vụ trung thành. “Ty-chi-cơ, người anh em yêu dấu và người phục vụ trung thành trong Chúa, sẽ thuật mọi sự cho anh em.” (Ê-phê-sô 6:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]

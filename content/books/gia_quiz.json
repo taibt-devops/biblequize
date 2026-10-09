@@ -1,0 +1,716 @@
+[
+ {
+  "book": "James",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ khuyên ai thiếu sự khôn ngoan thì làm gì?",
+  "options": [
+   "Đọc thêm sách vở",
+   "Hỏi người lớn tuổi",
+   "Tự cố gắng hơn",
+   "Cầu xin Đức Chúa Trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đức Chúa Trời ban cho mọi người cách rộng rãi, không lời phiền trách. “Nếu người nào trong anh em thiếu sự khôn ngoan, hãy cầu xin Đức Chúa Trời thì Ngài sẽ ban cho” (Gia-cơ 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 1,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ khuyên mọi người phải mau nghe, chậm nói và gì nữa?",
+  "options": [
+   "Mau tha",
+   "Chậm giận",
+   "Chậm ăn",
+   "Mau làm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Cơn giận của loài người không thực hiện sự công chính của Đức Chúa Trời. “Mọi người đều phải mau nghe, chậm nói, chậm giận” (Gia-cơ 1:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 1,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ khuyên đừng chỉ nghe lời Chúa mà phải làm gì?",
+  "options": [
+   "Chép lời ra giấy",
+   "Học thuộc lời",
+   "Làm theo lời",
+   "Giảng lại cho người khác"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chỉ nghe mà không làm là tự lừa dối mình. “Hãy làm theo lời, chớ lấy nghe làm đủ mà lừa dối mình.” (Gia-cơ 1:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ nói bộ phận nhỏ nào của thân thể khoe khoang những việc lớn?",
+  "options": [
+   "Cái lưỡi",
+   "Con mắt",
+   "Lỗ tai",
+   "Bàn tay"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Như một tia lửa nhỏ làm bùng cháy cả cánh rừng. “cái lưỡi là một bộ phận nhỏ nhưng khoe khoang những việc lớn.” (Gia-cơ 3:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ nói hãy kháng cự ma quỷ thì nó sẽ làm gì?",
+  "options": [
+   "Biến thành thiên sứ",
+   "Tấn công mạnh hơn",
+   "Chạy trốn anh em",
+   "Đầu hàng ngay"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Trước hết phải thuận phục Đức Chúa Trời. “Hãy kháng cự ma quỷ thì nó sẽ chạy trốn anh em.” (Gia-cơ 4:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 4,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hãy đến gần Đức Chúa Trời thì Ngài sẽ làm gì?",
+  "options": [
+   "Ban giàu có cho anh em",
+   "Đến gần anh em",
+   "Thử thách anh em",
+   "Đứng xa quan sát"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lời mời đến gần Chúa với tấm lòng được thanh tẩy. “Hãy đến gần Đức Chúa Trời thì Ngài sẽ đến gần anh em.” (Gia-cơ 4:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 5,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Có ai đang vui mừng, Gia-cơ khuyên người ấy làm gì?",
+  "options": [
+   "Hãy mở tiệc",
+   "Hãy im lặng",
+   "Hãy kiêng ăn",
+   "Hãy ca ngợi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Người đau khổ thì cầu nguyện, người vui mừng thì ca ngợi. “Có ai vui mừng chăng? Hãy ca ngợi.” (Gia-cơ 5:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 5,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ nói lời cầu nguyện của người công chính thế nào?",
+  "options": [
+   "Có quyền năng và rất linh nghiệm",
+   "Chỉ dành cho người già",
+   "Phải thật dài",
+   "Không cần đức tin"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông khuyên hãy xưng tội và cầu nguyện cho nhau. “Lời cầu nguyện của người công chính có quyền năng và rất linh nghiệm.” (Gia-cơ 5:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Gia-cơ được gửi cho ai?",
+  "options": [
+   "Các trưởng lão Ê-phê-sô",
+   "Người Hi Lạp ở A-thên",
+   "Hội Thánh ở Rô-ma",
+   "Mười hai bộ tộc tản lạc"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Thư gửi cho tín hữu Do Thái sống rải rác khắp nơi. “kính gửi mười hai bộ tộc đang sống tản lạc khắp nơi.” (Gia-cơ 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ nói sự thử thách đức tin sinh ra điều gì?",
+  "options": [
+   "Sợ hãi",
+   "Kiên nhẫn",
+   "Kiêu ngạo",
+   "Giàu có"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì vậy hãy xem thử thách là điều vui mừng trọn vẹn. “vì biết rằng sự thử thách đức tin anh em sinh ra kiên nhẫn.” (Gia-cơ 1:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ ví người cầu xin mà hay nghi ngờ như gì?",
+  "options": [
+   "Lúa chín ngoài đồng",
+   "Nhà xây trên cát",
+   "Sóng biển bị gió dập dồi",
+   "Cây mọc bên dòng nước"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người phân tâm như thế đừng tưởng sẽ nhận được gì từ Chúa. “vì kẻ hay nghi ngờ giống như sóng biển, bị gió dập dồi và cuốn đi đây đó.” (Gia-cơ 1:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người chịu nổi sự thử thách sẽ nhận được gì?",
+  "options": [
+   "Mão triều thiên của sự sống",
+   "Ruộng đất và nhà cửa",
+   "Danh tiếng lớn",
+   "Một tên mới"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đức Chúa Trời đã hứa điều đó cho những người yêu mến Ngài. “họ sẽ nhận mão triều thiên của sự sống mà Đức Chúa Trời đã hứa cho những người yêu mến Ngài.” (Gia-cơ 1:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 1,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Gia-cơ, mọi ơn lành tốt đẹp được ban xuống từ ai?",
+  "options": [
+   "Các thiên sứ",
+   "Công sức của mình",
+   "Cha của sự sáng",
+   "Các nhà tiên tri"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Trong Ngài không có sự thay đổi, cũng chẳng có bóng của sự chuyển dịch. “Mọi ơn lành tốt đẹp và tặng phẩm toàn hảo đều đến từ thiên thượng, được ban xuống từ Cha của sự sáng” (Gia-cơ 1:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 1,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ ví người nghe lời mà không làm theo giống như ai?",
+  "options": [
+   "Người soi gương rồi quên mặt mình",
+   "Người ngủ quên lúc canh",
+   "Người đi đường lạc lối",
+   "Người gieo giống trên đá"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nghe mà không làm thì chẳng thay đổi được gì. “giống như người kia soi mặt mình trong gương, ngắm rồi bỏ đi và quên ngay mặt mình như thể nào.” (Gia-cơ 1:23-24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ],
+  "verseEnd": 24
+ },
+ {
+  "book": "James",
+  "chapter": 1,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Gia-cơ, sự tin đạo thuần khiết trước mặt Đức Chúa Trời là gì?",
+  "options": [
+   "Học thuộc luật pháp",
+   "Dâng nhiều lễ vật",
+   "Kiêng ăn thường xuyên",
+   "Thăm viếng trẻ mồ côi, người góa bụa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Và giữ mình khỏi sự ô uế của thế gian. “là thăm viếng trẻ mồ côi, người góa bụa trong cơn hoạn nạn của họ” (Gia-cơ 1:27)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ nói người ta tra gì vào miệng ngựa để điều khiển toàn thân nó?",
+  "options": [
+   "Dây cương vàng",
+   "Hàm thiếc",
+   "Một nắm cỏ",
+   "Chuông nhỏ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hình ảnh cho thấy ai kiềm chế được lời nói thì kiềm chế được cả thân thể. “Nếu chúng ta tra hàm thiếc vào miệng ngựa để bắt chúng vâng lời” (Gia-cơ 3:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 3,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Gia-cơ, chiếc tàu lớn được điều khiển nhờ vật gì nhỏ?",
+  "options": [
+   "Một mái chèo",
+   "Một cánh buồm",
+   "Một sợi dây neo",
+   "Một bánh lái"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cái lưỡi nhỏ cũng điều khiển cả cuộc đời như vậy. “chỉ một bánh lái rất nhỏ cũng đủ điều khiển chúng theo ý người cầm lái.” (Gia-cơ 3:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Để nói về chúc tụng và nguyền rủa từ cùng một miệng, Gia-cơ dùng hình ảnh nào?",
+  "options": [
+   "Một ngọn đèn hai bấc",
+   "Một mạch suối ra nước ngọt lẫn đắng",
+   "Một con đường hai lối",
+   "Hai cây mọc chung gốc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Điều ấy trái tự nhiên, cũng như lời nói của tín hữu không nên vậy. “Dòng suối xuất phát từ một mạch lại có thể chảy ra cả nước ngọt lẫn nước đắng được sao?” (Gia-cơ 3:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sự khôn ngoan từ thiên thượng trước hết là gì?",
+  "options": [
+   "Nổi tiếng",
+   "Mạnh mẽ",
+   "Thanh sạch",
+   "Giàu có"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Rồi hiếu hòa, dịu dàng, nhường nhịn, đầy lòng thương xót. “Nhưng sự khôn ngoan từ thiên thượng thì trước hết là thanh sạch” (Gia-cơ 3:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời chống cự kẻ kiêu ngạo nhưng ban ân điển cho ai?",
+  "options": [
+   "Người khiêm nhường",
+   "Người giàu có",
+   "Người học thức",
+   "Người mạnh mẽ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Gia-cơ trích lời Kinh Thánh để nói về ân điển lớn hơn của Chúa. “Đức Chúa Trời chống cự kẻ kiêu ngạo, nhưng ban ân điển cho người khiêm nhường.” (Gia-cơ 4:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 4,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ ví sự sống con người như gì?",
+  "options": [
+   "Cây cổ thụ",
+   "Hòn đá",
+   "Hơi nước",
+   "Ngọn núi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Xuất hiện trong giây lát rồi tan ngay, nên đừng khoe khoang về ngày mai. “Vì anh em chỉ như hơi nước, xuất hiện trong giây lát rồi lại tan ngay.” (Gia-cơ 4:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 4,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Gia-cơ, ai biết điều tốt cần làm mà không làm thì sao?",
+  "options": [
+   "Phạm tội",
+   "Được tha ngay",
+   "Chỉ là thiếu sót nhỏ",
+   "Không có lỗi gì"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bỏ không làm điều lành cũng là tội. “Vậy, ai biết điều tốt cần phải làm mà không làm, thì phạm tội.” (Gia-cơ 4:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ lấy ai làm gương kiên nhẫn chờ mưa đầu mùa và cuối mùa?",
+  "options": [
+   "Người lái buôn",
+   "Người chăn chiên",
+   "Người đánh cá",
+   "Người nông dân"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Hãy kiên nhẫn như vậy cho đến ngày Chúa quang lâm. “Hãy xem người nông dân chờ đợi sản vật quý báu của đất, kiên nhẫn cho đến khi nhận được mưa đầu mùa và cuối mùa.” (Gia-cơ 5:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ nói người giàu sẽ qua đi như gì?",
+  "options": [
+   "Mây trời",
+   "Hoa cỏ",
+   "Bóng chiều",
+   "Dòng nước"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nắng nóng làm cỏ khô, hoa rụng, sắc đẹp phai tàn. “vì người sẽ qua đi như hoa cỏ.” (Gia-cơ 1:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo Gia-cơ, dục vọng sinh ra tội lỗi, còn tội lỗi trưởng thành sinh ra gì?",
+  "options": [
+   "Bệnh tật",
+   "Nghèo khó",
+   "Sự chết",
+   "Sự xấu hổ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Mỗi người bị cám dỗ bởi chính dục vọng mình, không phải bởi Đức Chúa Trời. “tội lỗi đã trưởng thành thì sinh ra sự chết.” (Gia-cơ 1:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời dùng lời chân lý sinh chúng ta để trở thành gì trong các tạo vật?",
+  "options": [
+   "Hòn đá góc nhà",
+   "Muối của đất",
+   "Ngọn đèn",
+   "Trái đầu mùa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Trái đầu mùa là phần đầu tiên, dâng riêng cho Chúa. “để chúng ta trở thành một loại trái đầu mùa trong các tạo vật của Ngài.” (Gia-cơ 1:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ nói vì sao không nên có nhiều người tự lập làm thầy?",
+  "options": [
+   "Thầy dễ bị ghét",
+   "Thầy chịu phán xét nghiêm khắc hơn",
+   "Thầy phải nghèo khó",
+   "Thầy không được nghỉ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ai cũng vấp phạm trong lời nói, mà thầy là người nói nhiều nhất. “hễ là thầy, chúng ta sẽ phải chịu phán xét nghiêm khắc hơn.” (Gia-cơ 3:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 5,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Gia-cơ nhắc gương kiên định của ai để thấy Chúa đầy lòng thương xót?",
+  "options": [
+   "Gióp",
+   "Áp-ra-ham",
+   "Giô-sép",
+   "Đa-vít"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Câu chuyện Gióp cho thấy mục đích nhân từ của Chúa. “Anh em đã nghe nói về sự kiên định của Gióp” (Gia-cơ 5:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 5,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thay vì thề thốt, Gia-cơ dạy phải nói thế nào?",
+  "options": [
+   "Thề có trời đất chứng giám",
+   "Chỉ thề trong đền thờ",
+   "Phải thì nói phải, không thì nói không",
+   "Viết lời thề ra giấy"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để khỏi bị phán xét. “nhưng phải thì nói phải, không thì nói không” (Gia-cơ 5:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 5,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người đau ốm nên mời ai đến cầu nguyện và xức dầu cho mình?",
+  "options": [
+   "Các trưởng lão Hội Thánh",
+   "Các sứ đồ",
+   "Người nhà",
+   "Thầy thuốc giỏi nhất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sự cầu nguyện bởi đức tin sẽ cứu người bệnh. “Người ấy hãy mời các trưởng lão Hội Thánh đến” (Gia-cơ 5:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "James",
+  "chapter": 5,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi Ê-li cầu xin, trời không mưa xuống đất trong bao lâu?",
+  "options": [
+   "Bảy năm",
+   "Một năm",
+   "Bốn mươi ngày",
+   "Ba năm rưỡi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ê-li cũng là người có cùng bản chất như chúng ta. “thì không có mưa rơi xuống đất trong ba năm rưỡi.” (Gia-cơ 5:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]

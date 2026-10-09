@@ -3,13 +3,14 @@
 Bộ này thay dần bộ câu tiếng Việt cũ (viết năm 2026 bằng AI, tên riêng lẫn lộn giữa bản 1925 và bản mới, nhãn độ khó không đúng). Quyết định ngày 09/10/2026: viết lại theo từng sách, xong sách nào thì **tắt** (không xóa) câu cũ của sách đó.
 
 - Câu **Dễ** lấy từ bộ "Dễ cốt lõi" (`content/easy-core/`, 120 câu chuyện).
-- Câu **Trung bình** và **Khó** viết ở đây, mỗi sách một file nguồn.
+- Câu **Trung bình** và **Khó** viết ở đây, mỗi sách một file nguồn. Sách nào bộ Dễ cốt lõi có ít câu (Ru-tơ, Ê-xơ-tê, Châm Ngôn, Rô-ma, Phi-líp, Gia-cơ…) thì viết thêm câu **Dễ** ở đây, để tắt bộ cũ không làm cạn câu Dễ của sách đó.
 - Bản Kinh Thánh: **Truyền Thống Hiệu Đính 2010 (RVV11)**, giống bộ Dễ. Tên riêng viết đúng như bản này; đoạn trích trùng từng chữ (script kiểm).
 
 ## Độ khó
 
 | Mức | Ai trả lời được | Đích tỷ lệ đúng | Ví dụ |
 | --- | --- | --- | --- |
+| Dễ | người mới đọc Kinh Thánh, đã nghe chuyện | 80–90% | nhân vật chính, sự kiện chính của chuyện quen, câu gốc nổi tiếng |
 | Trung bình | người đọc Kinh Thánh đều đặn | 60–70% | chi tiết phụ của chuyện quen (Gia-cốp làm công 7 năm để cưới ai), nhân vật phụ, nơi chốn, ai nói câu nổi tiếng |
 | Khó | người đã đọc kỹ cả sách | 40–55% | sự kiện ít được giảng, nhân vật chỉ xuất hiện một lần, lời hứa và lời tiên tri cụ thể, liên hệ giữa các phần của sách |
 

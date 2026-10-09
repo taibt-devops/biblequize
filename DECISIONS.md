@@ -22,11 +22,11 @@
 - **Quyết định (user đồng ý 09/10):**
   - Không xóa một lần. Viết lại câu Trung bình/Khó theo từng sách bằng RVV11 (`content/books/`, script kiểm từng trích dẫn); xong sách nào thì **tắt** câu cũ của sách đó trên prod (`is_active=0`, có bảng sao lưu), giữ lịch sử trả lời.
   - Thứ tự theo vòng quen thuộc của Đấu Hạng: vòng 1 (18 sách) → vòng 2 → vòng 3. Đợt 1: Sáng Thế Ký + 4 sách Phúc Âm.
-  - Câu Dễ của mỗi sách lấy từ bộ Dễ cốt lõi; câu Dễ cũ tắt cùng lúc.
-  - Học Thuộc vẫn dùng Bản Truyền Thống 1926 (quyết định 2026-09-15) cho tới khi có giấy phép toàn văn RVV11. Bộ tiếng Anh giữ nguyên.
+  - Câu Dễ của mỗi sách lấy từ bộ Dễ cốt lõi; câu Dễ cũ tắt cùng lúc. Từ đợt 2 (10/10): sách mà bộ Dễ cốt lõi phủ mỏng (Ru-tơ, Ê-xơ-tê, Thi Thiên, Châm Ngôn, Rô-ma, Ê-phê-sô, Phi-líp, Gia-cơ) được viết thêm câu Dễ trong `content/books/` để khi tắt câu cũ, Luyện Tập/Đấu Hạng không hụt câu Dễ của sách đó.
+  - Học Thuộc vẫn dùng Bản Truyền Thống 1926 (quyết định 2026-09-15) cho tới khi có giấy phép toàn văn RVV11 (đã thay: Học Thuộc dùng RVV11 từ 09/10, xem quyết định phía trên). Bộ tiếng Anh giữ nguyên.
   - Tên sách trên giao diện cũng theo RVV11 (user 09/10: "đổi sang tên RVV11 cho thống nhất"): Xuất Ai Cập Ký, Dân Số Ký, Phục Truyền Luật Lệ Ký, Thi Thiên, E-xơ-ra, Công Vụ Các Sứ Đồ (V74 + `bibleData.ts`).
   - Hash các câu đã tắt lưu trong `content/books/retired_hashes.txt`: hàng cũ còn trong DB nên câu mới trùng hash sẽ bị seeder bỏ qua.
-- **Implementation:** task `docs/todo/active/2026-10-09-rvv11-books-wave1.md` (RVB-1..5).
+- **Implementation:** task `docs/todo/active/2026-10-09-rvv11-books-wave1.md` (RVB-1..8; đợt 2 ở RVB-7/8).
 
 ---
 

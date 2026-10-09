@@ -1,0 +1,1038 @@
+[
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vì sao gia đình Ê-li-mê-léc rời Bết-lê-hem sang xứ Mô-áp?",
+  "options": [
+   "Vì bị đuổi đi",
+   "Vì có nạn đói",
+   "Vì đi buôn bán",
+   "Vì có chiến tranh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Gia đình Na-ô-mi đến Mô-áp tạm trú trong thời đói kém. “một nạn đói xảy ra trong xứ.” (Ru-tơ 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chồng của Na-ô-mi tên là gì?",
+  "options": [
+   "Mạc-lôn",
+   "Ô-bết",
+   "Ê-li-mê-léc",
+   "Bô-ô"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ê-li-mê-léc đưa vợ con từ Bết-lê-hem sang Mô-áp. “Người nầy tên là Ê-li-mê-léc, vợ tên là Na-ô-mi” (Ru-tơ 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sau khi chồng mất, Na-ô-mi còn mất những ai nữa?",
+  "options": [
+   "Cả hai con trai",
+   "Cha mẹ bà",
+   "Hai con dâu",
+   "Người em trai"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Na-ô-mi còn lại một mình, không chồng, không con. “Sau đó, Mạc-lôn và Ki-li-ôn cũng qua đời, để lại Na-ô-mi một mình, không chồng, không con.” (Ru-tơ 1:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ru-tơ nói: Dân tộc của mẹ là dân tộc của con, còn Đức Chúa Trời của mẹ thì sao?",
+  "options": [
+   "Con sẽ tìm hiểu sau",
+   "Là thần của Mô-áp",
+   "Con không biết Ngài",
+   "Là Đức Chúa Trời của con"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ru-tơ chọn theo Đức Chúa Trời của Y-sơ-ra-ên. “Dân tộc của mẹ là dân tộc của con; Đức Chúa Trời của mẹ là Đức Chúa Trời của con.” (Ru-tơ 1:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Na-ô-mi và Ru-tơ về đến Bết-lê-hem vào mùa nào?",
+  "options": [
+   "Mùa mưa",
+   "Đầu mùa gặt lúa mạch",
+   "Mùa hái nho",
+   "Giữa mùa đông"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ về đúng mùa gặt, nên Ru-tơ có thể ra đồng mót lúa. “Hai người đến Bết-lê-hem vào đầu mùa gặt lúa mạch.” (Ru-tơ 1:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Bô-ô, người bà con bên chồng của Na-ô-mi, là người như thế nào?",
+  "options": [
+   "Có quyền thế và giàu có",
+   "Một người chăn chiên",
+   "Một thầy tế lễ",
+   "Nghèo khó"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bô-ô thuộc gia tộc Ê-li-mê-léc. “một người có quyền thế và giàu có, thuộc gia tộc của Ê-li-mê-léc.” (Ru-tơ 2:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi được Bô-ô đối xử tử tế, Ru-tơ đã làm gì?",
+  "options": [
+   "Bỏ chạy về nhà",
+   "Xin thêm tiền công",
+   "Hát mừng cảm tạ",
+   "Quỳ sấp mặt xuống đất"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ru-tơ ngạc nhiên vì một người ngoại quốc như mình được quan tâm. “Ru-tơ quỳ sấp mặt xuống đất mà thưa” (Ru-tơ 2:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đến bữa ăn, Bô-ô mời Ru-tơ làm gì?",
+  "options": [
+   "Phục vụ các thợ gặt",
+   "Về nhà ăn với mẹ",
+   "Lại gần lấy bánh mà ăn",
+   "Ngồi riêng một mình"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Bô-ô cho Ru-tơ ngồi ăn cùng các thợ gặt. “Hãy lại gần đây, lấy bánh chấm nước giấm mà ăn!” (Ru-tơ 2:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chiều tối, Ru-tơ mang những gì về cho mẹ chồng?",
+  "options": [
+   "Tiền công cả ngày",
+   "Một bó hoa",
+   "Một tấm áo mới",
+   "Lúa đã mót và phần ăn để dành"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ru-tơ chia cho Na-ô-mi cả phần ăn mình để dành. “Ru-tơ cũng lấy phần ăn dư để dành mà trao cho bà.” (Ru-tơ 2:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nghe mẹ chồng dặn dò, Ru-tơ trả lời thế nào?",
+  "options": [
+   "Con muốn về Mô-áp",
+   "Con sẽ làm theo mọi điều mẹ dặn",
+   "Con không dám đâu",
+   "Con phải suy nghĩ thêm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ru-tơ tin cậy và vâng lời Na-ô-mi. “Con sẽ làm theo mọi điều mẹ dặn.” (Ru-tơ 3:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Bô-ô nói cả dân trong thành đều biết Ru-tơ là người thế nào?",
+  "options": [
+   "Người phụ nữ đức hạnh",
+   "Người khôn ngoan nhất",
+   "Người giàu có",
+   "Người ngoại quốc lạ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lòng hiếu thảo của Ru-tơ được cả thành biết đến. “cả dân chúng trong thành ta đều biết con là một người phụ nữ đức hạnh.” (Ru-tơ 3:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Bô-ô đến đâu để giải quyết việc chuộc sản nghiệp?",
+  "options": [
+   "Đền thờ",
+   "Sân đập lúa",
+   "Cổng thành",
+   "Nhà Na-ô-mi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cổng thành là nơi các trưởng lão xét xử và làm chứng. “Bô-ô đi đến cổng thành và ngồi tại đó.” (Ru-tơ 4:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Bô-ô mua sản nghiệp và cưới Ru-tơ trước sự chứng kiến của ai?",
+  "options": [
+   "Một mình Na-ô-mi",
+   "Các trưởng lão và dân chúng",
+   "Thầy tế lễ thượng phẩm",
+   "Vua Y-sơ-ra-ên"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Việc được làm công khai tại cổng thành. “Bấy giờ, Bô-ô nói với các trưởng lão và cả dân chúng” (Ru-tơ 4:9-10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ],
+  "verseEnd": 10
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Na-ô-mi làm gì với đứa cháu mới sinh?",
+  "options": [
+   "Gửi về Mô-áp",
+   "Đem dâng ở đền thờ",
+   "Bồng vào lòng và chăm sóc",
+   "Giao cho người khác nuôi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người đàn bà từng cay đắng nay được an ủi. “Na-ô-mi bồng đứa trẻ để vào lòng mình và chăm sóc nó.” (Ru-tơ 4:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đứa con trai Ru-tơ sinh cho Bô-ô được đặt tên là gì?",
+  "options": [
+   "Ô-bết",
+   "Mạc-lôn",
+   "Pha-rết",
+   "Gie-sê"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ô-bết là ông nội của vua Đa-vít. “Các phụ nữ láng giềng đặt tên cho nó là Ô-bết” (Ru-tơ 4:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ngoài Ru-tơ, người con dâu kia của Na-ô-mi tên là gì?",
+  "options": [
+   "Tha-ma",
+   "Lê-a",
+   "Ma-ra",
+   "Ọt-ba"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ọt-ba hôn từ biệt mẹ chồng rồi trở về quê. “Một người tên là Ọt-ba và người kia tên là Ru-tơ.” (Ru-tơ 1:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Gia đình Na-ô-mi sống ở xứ Mô-áp khoảng bao lâu?",
+  "options": [
+   "Ba năm",
+   "Khoảng mười năm",
+   "Bảy năm",
+   "Bốn mươi năm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Sau khoảng mười năm, Na-ô-mi mất cả chồng lẫn con. “Họ ở tại đó khoảng mười năm.” (Ru-tơ 1:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hai con trai của Na-ô-mi tên là gì?",
+  "options": [
+   "Pha-rết và Hết-rôn",
+   "Ô-bết và Gie-sê",
+   "Mạc-lôn và Ki-li-ôn",
+   "Ê-li-mê-léc và Bô-ô"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hai người con trai cưới vợ người Mô-áp rồi qua đời. “hai con trai tên là Mạc-lôn và Ki-li-ôn” (Ru-tơ 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Na-ô-mi bảo người Bết-lê-hem đừng gọi bà là Na-ô-mi mà gọi là gì?",
+  "options": [
+   "Ọt-ba",
+   "Ru-tơ",
+   "Ê-phơ-rát",
+   "Ma-ra"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ma-ra nghĩa là cay đắng, vì bà đã mất hết. “Đừng gọi tôi là Na-ô-mi Mà hãy gọi tôi là Ma-ra” (Ru-tơ 1:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Na-ô-mi nói bà ra đi với của cải dư đầy, nhưng Đức Giê-hô-va dắt bà về thế nào?",
+  "options": [
+   "Về tay không",
+   "Về trong vinh dự",
+   "Về với nhiều con cháu",
+   "Về với chồng mới"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bà về quê sau khi mất chồng và hai con trai. “Tôi ra đi với của cải dư đầy, Nhưng Đức Giê-hô-va dắt tôi về tay không.” (Ru-tơ 1:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bô-ô chào các thợ gặt bằng câu nào?",
+  "options": [
+   "Chúc mùa gặt bội thu!",
+   "Hãy làm việc chăm chỉ!",
+   "Bình an cho các anh!",
+   "Nguyện Đức Giê-hô-va ở cùng anh em!"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Thợ gặt đáp: Nguyện Đức Giê-hô-va ban phước cho ông! “Nguyện Đức Giê-hô-va ở cùng anh em!” (Ru-tơ 2:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người trông coi thợ gặt kể Ru-tơ đã mót lúa thế nào?",
+  "options": [
+   "Từ sáng tới giờ, chỉ nghỉ một lát",
+   "Chỉ mót ở bờ ruộng",
+   "Mới đến lúc trưa",
+   "Ngồi nghỉ suốt buổi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ru-tơ chăm chỉ làm việc để nuôi mẹ chồng. “Cô ta đến từ sáng và đứng mót cho đến bây giờ, chỉ nghỉ dưới chòi một lát.” (Ru-tơ 2:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bô-ô dặn Ru-tơ khi khát thì uống nước ở đâu?",
+  "options": [
+   "Ở giếng cổng thành",
+   "Ở nhà Na-ô-mi",
+   "Trong các chum đầy tớ chứa sẵn",
+   "Ở suối gần ruộng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Bô-ô cho Ru-tơ được đối xử như các tớ gái của ông. “Nếu có khát, hãy đến uống nước mà các đầy tớ ta đã chứa sẵn trong các chum.” (Ru-tơ 2:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bô-ô nói Ru-tơ đã đến núp dưới cánh của ai?",
+  "options": [
+   "Na-ô-mi, mẹ chồng nàng",
+   "Giê-hô-va Đức Chúa Trời của Y-sơ-ra-ên",
+   "Bô-ô, người bà con",
+   "Các thần của Mô-áp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bô-ô chúc phước cho Ru-tơ vì nàng tìm nơi nương náu nơi Chúa. “vì con đã đến núp dưới cánh Giê-hô-va Đức Chúa Trời của Y-sơ-ra-ên.” (Ru-tơ 2:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong bữa ăn ngoài đồng, Bô-ô đưa cho Ru-tơ món gì?",
+  "options": [
+   "Bắp rang",
+   "Trái nho",
+   "Thịt chiên",
+   "Bánh nướng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ru-tơ ăn no nê và để dành phần dư cho mẹ chồng. “ông đưa bắp rang cho nàng.” (Ru-tơ 2:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bô-ô dặn các đầy tớ làm gì để Ru-tơ mót được nhiều hơn?",
+  "options": [
+   "Cho nàng gặt trước",
+   "Gặt giùm nàng một bó",
+   "Rút vài gié lúa bỏ rớt cho nàng",
+   "Trả nàng tiền công"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Bô-ô kín đáo giúp Ru-tơ mà không làm nàng hổ thẹn. “Cũng hãy rút vài gié trong bó lúa bỏ rớt cho nàng mót” (Ru-tơ 2:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau một ngày mót, Ru-tơ đong được khoảng bao nhiêu lúa mạch?",
+  "options": [
+   "Khoảng một trăm ký",
+   "Khoảng mười ký",
+   "Khoảng hai ký",
+   "Khoảng năm mươi ký"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đó là một ngày mót rất được mùa nhờ lòng tốt của Bô-ô. “Nàng đập lúa mình đã mót và đong được khoảng mười ký lúa mạch.” (Ru-tơ 2:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Na-ô-mi cho Ru-tơ biết Bô-ô là ai đối với gia đình bà?",
+  "options": [
+   "Một người lạ",
+   "Em trai của Ê-li-mê-léc",
+   "Người chủ nợ",
+   "Người có quyền chuộc sản nghiệp"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Người bà con gần có quyền chuộc lại đất đai và lưu danh người đã khuất. “là một trong những người có quyền chuộc lại sản nghiệp của chúng ta.” (Ru-tơ 2:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ru-tơ mót lúa với các tớ gái của Bô-ô cho đến khi nào?",
+  "options": [
+   "Hết một tuần",
+   "Đến khi Na-ô-mi qua đời",
+   "Hết mùa gặt lúa mạch và lúa mì",
+   "Đến ngày sa-bát"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Suốt hai mùa gặt, Ru-tơ làm việc và sống với mẹ chồng. “để mót lúa cho đến hết mùa gặt lúa mạch và lúa mì.” (Ru-tơ 2:23)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Na-ô-mi nói tối hôm ấy Bô-ô sẽ làm gì ở sân đập lúa?",
+  "options": [
+   "Đếm tiền bán lúa",
+   "Mở tiệc cưới",
+   "Dâng tế lễ",
+   "Sảy lúa mạch"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Na-ô-mi bày cho Ru-tơ cách xin Bô-ô chuộc sản nghiệp. “Tối nay ông ấy sẽ đi sảy lúa mạch ở sân đập lúa.” (Ru-tơ 3:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bô-ô nói vì sao ông chưa thể chuộc sản nghiệp ngay?",
+  "options": [
+   "Na-ô-mi không đồng ý",
+   "Có người bà con gần hơn ông",
+   "Ru-tơ là người Mô-áp",
+   "Ông không đủ tiền"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Theo luật, người bà con gần nhất có quyền chuộc trước. “Thật ta có quyền chuộc sản nghiệp con lại, nhưng có một người bà con khác gần hơn ta.” (Ru-tơ 3:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bô-ô mời bao nhiêu trưởng lão ngồi làm chứng ở cổng thành?",
+  "options": [
+   "Mười người",
+   "Hai người",
+   "Bảy người",
+   "Mười hai người"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Các trưởng lão làm chứng cho việc chuộc sản nghiệp. “Bô-ô chọn mười người trong các trưởng lão của thành” (Ru-tơ 4:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì sao người bà con gần hơn từ chối chuộc sản nghiệp?",
+  "options": [
+   "Sợ làm hại sản nghiệp của mình",
+   "Đã quá già",
+   "Không thích Na-ô-mi",
+   "Đang đi xa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chuộc ruộng thì phải cưới Ru-tơ để lưu danh người quá cố. “Nếu vậy thì tôi không thể chuộc được, sợ làm hại đến sản nghiệp của tôi.” (Ru-tơ 4:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Người bà con gần hơn làm gì để nhường quyền chuộc cho Bô-ô?",
+  "options": [
+   "Ký vào cuộn sách",
+   "Bẻ một cành cây",
+   "Trao một chiếc nhẫn",
+   "Cởi giày mình ra"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Theo tục xưa, cởi giày trao cho nhau là cách xác chứng giao dịch. “Rồi người ấy cởi giày mình ra.” (Ru-tơ 4:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Các phụ nữ nói với Na-ô-mi rằng con dâu bà quý hơn bao nhiêu con trai?",
+  "options": [
+   "Mười con trai",
+   "Bảy con trai",
+   "Mười hai con trai",
+   "Hai con trai"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tình thương của Ru-tơ được người cả thành ca ngợi. “Con dâu bà còn quý hơn bảy con trai.” (Ru-tơ 4:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Gia đình Ê-li-mê-léc là người gì, thuộc Bết-lê-hem xứ Giu-đa?",
+  "options": [
+   "Người Lê-vi",
+   "Người Mô-áp",
+   "Người Ê-phơ-rát",
+   "Người Bên-gia-min"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ê-phơ-rát là tên cổ của vùng Bết-lê-hem. “tất cả là người Ê-phơ-rát thuộc Bết-lê-hem trong xứ Giu-đa.” (Ru-tơ 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Na-ô-mi quyết định trở về xứ Giu-đa khi nghe tin gì?",
+  "options": [
+   "Vua mới lên ngôi",
+   "Chúa đã ban lương thực cho dân",
+   "Bà con gọi bà về",
+   "Chiến tranh đã chấm dứt"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nạn đói qua đi, nên Na-ô-mi lên đường về quê. “Na-ô-mi nghe nói rằng Đức Giê-hô-va đã đoái thương dân Ngài và ban lương thực cho họ” (Ru-tơ 1:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 3,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trước khi Ru-tơ rời sân đập lúa, Bô-ô đong vào vạt áo nàng bao nhiêu lúa mạch?",
+  "options": [
+   "Mười đấu",
+   "Bảy đấu",
+   "Sáu đấu",
+   "Ba đấu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Bô-ô không để Ru-tơ về tay không. “ông đong và trút cho nàng sáu đấu lúa mạch.” (Ru-tơ 3:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi cho Ru-tơ lúa mạch, Bô-ô dặn nàng chớ trở về cùng mẹ chồng thế nào?",
+  "options": [
+   "Một mình",
+   "Khi chưa rửa mặt",
+   "Trong đêm tối",
+   "Với hai tay không"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Món quà cho thấy Bô-ô quan tâm đến cả Na-ô-mi. “Con chớ trở về cùng mẹ chồng với hai tay không” (Ru-tơ 3:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo Bô-ô, người mua ruộng của Na-ô-mi cũng phải làm gì?",
+  "options": [
+   "Lấy Ru-tơ để lưu danh người quá cố",
+   "Trả gấp đôi giá đất",
+   "Nuôi Na-ô-mi suốt đời",
+   "Dọn về ở Mô-áp"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là lý do người bà con gần hơn rút lui. “mà mua ruộng ấy để lưu danh người quá cố trên sản nghiệp người ấy.” (Ru-tơ 4:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Dân chúng chúc người phụ nữ vào nhà Bô-ô giống như hai người nào đã xây dựng nhà Y-sơ-ra-ên?",
+  "options": [
+   "Ê-va và Sa-ra",
+   "Mi-ri-am và Đê-bô-ra",
+   "Sa-ra và Rê-bê-ca",
+   "Ra-chên và Lê-a"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ra-chên và Lê-a là mẹ của các chi phái Y-sơ-ra-ên. “giống như Ra-chên và Lê-a là hai người đã xây dựng nhà Y-sơ-ra-ên!” (Ru-tơ 4:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Dân chúng chúc nhà Bô-ô giống nhà của ai, người con Tha-ma sinh cho Giu-đa?",
+  "options": [
+   "Pha-rết",
+   "Hết-rôn",
+   "Ô-bết",
+   "Sanh-ma"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bô-ô thuộc dòng dõi Pha-rết, như gia phả cuối sách cho thấy. “sẽ làm cho nhà anh giống như nhà của Pha-rết mà Tha-ma đã sinh cho Giu-đa vậy!” (Ru-tơ 4:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ai đã đặt tên cho con trai của Ru-tơ?",
+  "options": [
+   "Các trưởng lão",
+   "Các phụ nữ láng giềng",
+   "Bô-ô",
+   "Na-ô-mi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ nói: Một bé trai đã sinh cho Na-ô-mi. “Các phụ nữ láng giềng đặt tên cho nó là Ô-bết” (Ru-tơ 4:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ô-bết, con trai của Ru-tơ, là cha của ai?",
+  "options": [
+   "Na-ha-sôn",
+   "Sanh-ma",
+   "Gie-sê",
+   "Sa-mu-ên"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Gie-sê là cha của vua Đa-vít. “Ô-bết là cha của Gie-sê, ông nội của Đa-vít.” (Ru-tơ 4:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo gia phả cuối sách Ru-tơ, cha của Bô-ô là ai?",
+  "options": [
+   "Sanh-ma",
+   "Ê-li-mê-léc",
+   "Na-ha-sôn",
+   "Ram"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Gia phả từ Pha-rết dẫn đến Bô-ô rồi đến Đa-vít. “Sanh-ma sinh Bô-ô; Bô-ô sinh Ô-bết” (Ru-tơ 4:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

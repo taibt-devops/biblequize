@@ -1,0 +1,1198 @@
+[
+ {
+  "book": "Proverbs",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Châm Ngôn mở đầu bằng châm ngôn của ai?",
+  "options": [
+   "Môi-se",
+   "Ê-xê-chia",
+   "Sa-lô-môn",
+   "Đa-vít"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sa-lô-môn, con trai Đa-vít, vua Y-sơ-ra-ên. “Châm ngôn của Sa-lô-môn, con trai Đa-vít, vua Y-sơ-ra-ên” (Châm Ngôn 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 9,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sự kính sợ Đức Giê-hô-va là khởi đầu của điều gì?",
+  "options": [
+   "Sự giàu có",
+   "Sự khôn ngoan",
+   "Sự bình an",
+   "Sự sống lâu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nhận biết Đấng Thánh là sự thông sáng. “Sự kính sợ Đức Giê-hô-va, ấy là khởi đầu sự khôn ngoan” (Châm Ngôn 9:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 4,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn khuyên phải cẩn thận giữ điều gì hơn hết?",
+  "options": [
+   "Danh tiếng",
+   "Sức khỏe",
+   "Tiền bạc",
+   "Tấm lòng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vì các nguồn sự sống do nơi nó mà ra. “Hãy cẩn thận giữ tấm lòng của con hơn hết, Vì các nguồn sự sống do nơi nó mà ra.” (Châm Ngôn 4:23)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 6,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn khuyên kẻ lười biếng hãy học khôn từ loài nào?",
+  "options": [
+   "Loài kiến",
+   "Loài sư tử",
+   "Loài chim",
+   "Loài ong"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Kiến chăm chỉ dự trữ thức ăn mà không cần ai sai khiến. “Hỡi kẻ lười biếng, hãy đến với loài kiến, Xem xét cách nó sống để học khôn!” (Châm Ngôn 6:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 15,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo Châm Ngôn, lời đáp êm dịu có tác dụng gì?",
+  "options": [
+   "Làm mất thì giờ",
+   "Làm thêm tranh cãi",
+   "Làm nguôi cơn giận",
+   "Làm người ta khinh mình"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Còn lời xẳng xớm trêu cơn thịnh nộ. “Lời đáp êm dịu làm nguôi cơn giận” (Châm Ngôn 15:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 16,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói sự kiêu ngạo đi trước điều gì?",
+  "options": [
+   "Sự giàu có",
+   "Sự thành công",
+   "Sự khen ngợi",
+   "Sự hủy diệt"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Và tính tự cao đi trước sự sa ngã. “Sự kiêu ngạo đi trước sự hủy diệt” (Châm Ngôn 16:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 17,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói bạn bè thương mến nhau thế nào?",
+  "options": [
+   "Lúc vui vẻ",
+   "Luôn luôn",
+   "Khi giàu có",
+   "Khi được lợi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Còn anh em sinh ra để giúp đỡ nhau lúc hoạn nạn. “Bạn bè thương mến nhau luôn luôn” (Châm Ngôn 17:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 17,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn ví lòng vui mừng như gì?",
+  "options": [
+   "Một phương thuốc hay",
+   "Một kho báu",
+   "Một bức tường",
+   "Một ngọn đèn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Niềm vui trong lòng làm khỏe cả thân thể. “Lòng vui mừng vốn là một phương thuốc hay” (Châm Ngôn 17:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 18,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn ví danh Đức Giê-hô-va như gì?",
+  "options": [
+   "Một pháo đài kiên cố",
+   "Một cánh đồng",
+   "Một ngọn núi lửa",
+   "Một con sông lớn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người công chính chạy đến đó và được an toàn. “Danh Đức Giê-hô-va là một pháo đài kiên cố” (Châm Ngôn 18:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 22,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói điều gì quý hơn tiền của nhiều?",
+  "options": [
+   "Quyền thế cao",
+   "Nhà cửa lớn",
+   "Danh tiếng tốt",
+   "Ruộng đất rộng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Còn ân huệ quý hơn bạc vàng. “Danh tiếng tốt quý hơn tiền của nhiều” (Châm Ngôn 22:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 22,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn khuyên dạy trẻ thơ điều gì để khi già nó không lìa bỏ?",
+  "options": [
+   "Nghề của cha",
+   "Con đường nó phải theo",
+   "Cách làm giàu",
+   "Nhiều thứ tiếng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Điều học từ nhỏ theo con người đến lúc già. “Hãy dạy cho trẻ thơ con đường nó phải theo, Để khi trở về già, nó cũng không lìa khỏi đó.” (Châm Ngôn 22:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 27,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn khuyên đừng khoe khoang về điều gì?",
+  "options": [
+   "Lời cầu nguyện",
+   "Ngày hôm qua",
+   "Cha mẹ mình",
+   "Ngày mai"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vì không ai biết ngày mai sẽ xảy ra điều gì. “Đừng khoe khoang về ngày mai, Vì con chẳng biết ngày mai sẽ xảy ra điều gì.” (Châm Ngôn 27:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 31,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói giá trị của người nữ tài đức trổi hơn gì?",
+  "options": [
+   "Vương miện",
+   "Châu ngọc",
+   "Bầy chiên",
+   "Ruộng nho"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người nữ tài đức thật hiếm và quý. “Ai có thể tìm được một người nữ tài đức? Giá trị nàng trổi hơn châu ngọc.” (Châm Ngôn 31:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 31,
+  "verseStart": 30,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo Châm Ngôn, người nữ nào sẽ được khen ngợi?",
+  "options": [
+   "Người ăn nói khéo",
+   "Người có sắc đẹp",
+   "Người giàu có",
+   "Người kính sợ Đức Giê-hô-va"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Duyên là giả dối, sắc lại hư không. “Nhưng người nữ nào kính sợ Đức Giê-hô-va sẽ được khen ngợi.” (Châm Ngôn 31:30)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 16,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi phó thác công việc cho Đức Giê-hô-va thì sao?",
+  "options": [
+   "Sẽ không gặp khó khăn",
+   "Sẽ được giàu ngay",
+   "Lo toan sẽ được thành tựu",
+   "Không cần làm gì nữa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Châm Ngôn dạy giao công việc mình cho Chúa. “Hãy phó thác công việc của con cho Đức Giê-hô-va, Thì những lo toan của con sẽ được thành tựu.” (Châm Ngôn 16:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 10,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Con khôn ngoan làm cha vui vẻ, còn con ngu dại thì sao?",
+  "options": [
+   "Khiến mẹ buồn phiền",
+   "Khiến cha giận dữ",
+   "Khiến nhà nghèo khó",
+   "Khiến anh em xấu hổ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Câu mở đầu phần châm ngôn của Sa-lô-môn. “Con khôn ngoan làm cho cha vui vẻ, Nhưng con ngu dại khiến mẹ buồn phiền.” (Châm Ngôn 10:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 10,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Châm Ngôn, ai là người khôn ngoan về lời nói?",
+  "options": [
+   "Người cầm giữ môi miệng",
+   "Người nói lớn tiếng",
+   "Người nói nhiều",
+   "Người nói trước"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Hễ lắm lời thì vi phạm nào có thiếu. “Nhưng ai cầm giữ môi miệng là người khôn ngoan.” (Châm Ngôn 10:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 11,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói nhờ có điều gì mà dân tộc được an toàn?",
+  "options": [
+   "Nhiều binh lính",
+   "Nhiều cố vấn",
+   "Nhiều vàng bạc",
+   "Tường thành cao"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Không có lãnh đạo, dân tộc sẽ sụp đổ. “Nhưng nhờ có nhiều cố vấn mà được an toàn.” (Châm Ngôn 11:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 13,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói người kiêng roi vọt là thế nào với con mình?",
+  "options": [
+   "Thương con nhất",
+   "Khôn ngoan nhất",
+   "Ghét con cái mình",
+   "Hiền lành nhất"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ai thương con sẽ sớm lo sửa dạy nó. “Người nào kiêng roi vọt là ghét con cái mình” (Châm Ngôn 13:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 14,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Con đường dường như chính đáng cho loài người cuối cùng thành ra gì?",
+  "options": [
+   "Đường bình an",
+   "Đường giàu sang",
+   "Đường về nhà",
+   "Nẻo sự chết"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Điều có vẻ đúng trong mắt người chưa chắc đúng trước mặt Chúa. “Nhưng cuối cùng nó thành ra nẻo sự chết.” (Châm Ngôn 14:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 15,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói lòng vui mừng làm cho điều gì hân hoan?",
+  "options": [
+   "Bước chân",
+   "Giọng nói",
+   "Vẻ mặt",
+   "Đôi tay"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Còn lòng buồn bã khiến tâm trí nao sờn. “Lòng vui mừng làm cho vẻ mặt hân hoan” (Châm Ngôn 15:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 16,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Con người hoạch định đường lối mình, nhưng ai chỉ dẫn các bước?",
+  "options": [
+   "Đức Giê-hô-va",
+   "Bạn hữu",
+   "Vua chúa",
+   "Cha mẹ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa tể trị trên mọi kế hoạch của con người. “Con người hoạch định đường lối mình, Nhưng Đức Giê-hô-va chỉ dẫn các bước của người.” (Châm Ngôn 16:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 16,
+  "verseStart": 32,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói người chậm giận thắng hơn ai?",
+  "options": [
+   "Người giàu",
+   "Vua chúa",
+   "Nhà thông thái",
+   "Dũng sĩ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tự chủ là sức mạnh lớn hơn sức mạnh thể xác. “Người chậm giận thắng hơn dũng sĩ” (Châm Ngôn 16:32)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 18,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói sống chết do nơi quyền của gì?",
+  "options": [
+   "Số mạng",
+   "Cái lưỡi",
+   "Vua chúa",
+   "Thanh gươm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lời nói có sức mạnh xây dựng hoặc hủy hoại. “Sống chết do nơi quyền của lưỡi” (Châm Ngôn 18:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 18,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói một bạn thân thiết còn hơn ai?",
+  "options": [
+   "Thầy dạy",
+   "Cha mẹ",
+   "Vợ con",
+   "Anh em ruột thịt"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Có nhiều bạn bè chưa chắc đã tốt, nhưng một bạn thân thì quý. “Nhưng có một bạn thân thiết còn hơn anh em ruột thịt.” (Châm Ngôn 18:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 19,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói ai thương xót người nghèo là làm gì?",
+  "options": [
+   "Cho Đức Giê-hô-va vay mượn",
+   "Phí tiền vô ích",
+   "Mua danh tiếng",
+   "Làm người nghèo ỷ lại"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài sẽ đáp lại việc lành ấy cho người. “Ai thương xót người nghèo là cho Đức Giê-hô-va vay mượn” (Châm Ngôn 19:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 20,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói rượu khiến người ta làm gì?",
+  "options": [
+   "Ngủ ngon",
+   "Khôn ngoan hơn",
+   "Nhạo báng",
+   "Hát hay"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ai dùng nó quá độ chẳng phải là khôn ngoan. “Rượu khiến người ta nhạo báng” (Châm Ngôn 20:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 21,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn ví lòng của vua trong tay Đức Giê-hô-va như gì?",
+  "options": [
+   "Ngọn lửa cháy",
+   "Dòng nước chảy",
+   "Hòn đá cứng",
+   "Đám mây bay"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngài làm nghiêng lệch nó bên nào tùy ý Ngài. “Lòng của vua trong tay Đức Giê-hô-va khác nào dòng nước chảy” (Châm Ngôn 21:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 21,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thà ở một góc trên mái nhà còn hơn ở chung nhà với ai?",
+  "options": [
+   "Người lạ mặt",
+   "Kẻ lười biếng",
+   "Kẻ say rượu",
+   "Người đàn bà hay tranh cạnh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Một mái nhà yên tĩnh quý hơn ngôi nhà đầy tranh cãi. “Thà ở một góc trên mái nhà Còn hơn là ở chung nhà với người đàn bà hay tranh cạnh.” (Châm Ngôn 21:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 22,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói người vay mượn là gì của kẻ cho vay?",
+  "options": [
+   "Đầy tớ",
+   "Chủ nhân",
+   "Bạn hữu",
+   "Anh em"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Còn người giàu cai trị kẻ nghèo. “Ai vay mượn là đầy tớ của kẻ cho vay mượn.” (Châm Ngôn 22:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 25,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn ví lời nói đúng lúc như gì?",
+  "options": [
+   "Nước mát mùa hè",
+   "Quả táo vàng cẩn bạc",
+   "Mật ong ngọt ngào",
+   "Ngọn đèn ban đêm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lời đúng chỗ, đúng lúc thật quý giá. “Lời nói đúng lúc Khác nào quả táo bằng vàng có cẩn bạc.” (Châm Ngôn 25:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 25,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn dạy nếu kẻ thù của con đói thì làm gì?",
+  "options": [
+   "Mặc kệ nó",
+   "Tránh xa nó",
+   "Cho nó ăn",
+   "Báo thù nó"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phao-lô trích lời nầy trong thư Rô-ma. “Nếu kẻ thù của con có đói, hãy cho nó ăn” (Châm Ngôn 25:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 27,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bạn bè gây thương tích vì yêu thương thật còn hơn điều gì?",
+  "options": [
+   "Vua chúa ban thưởng",
+   "Anh em im lặng",
+   "Người lạ khen ngợi",
+   "Kẻ thù hôn hít giả tạo"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lời thật mất lòng của bạn tốt hơn sự giả dối dễ nghe. “Còn hơn kẻ thù hôn hít cách giả tạo.” (Châm Ngôn 27:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 27,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn ví việc con người mài giũa bạn mình như gì?",
+  "options": [
+   "Sắt mài nhọn sắt",
+   "Nước chảy đá mòn",
+   "Lửa thử vàng",
+   "Gió đẩy thuyền"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bạn bè tốt làm cho nhau sắc bén hơn. “Giống như sắt mài nhọn sắt, Cũng vậy, con người mài giũa diện mạo bạn mình.” (Châm Ngôn 27:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 28,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Kẻ ác chạy trốn dù không ai đuổi, còn người công chính dũng mãnh như gì?",
+  "options": [
+   "Đại bàng",
+   "Con ngựa chiến",
+   "Sư tử",
+   "Cây bá hương"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lương tâm trong sạch cho người công chính lòng can đảm. “Nhưng người công chính dũng mãnh như sư tử.” (Châm Ngôn 28:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 6,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói có sáu điều Đức Giê-hô-va ghét và bao nhiêu điều Ngài ghê tởm?",
+  "options": [
+   "Mười điều",
+   "Bảy điều",
+   "Ba điều",
+   "Mười hai điều"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Trong đó có con mắt kiêu ngạo, lưỡi dối trá, tay làm đổ máu vô tội. “Có sáu điều Đức Giê-hô-va ghét Và bảy điều Ngài ghê tởm” (Châm Ngôn 6:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 30,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói có bao nhiêu loài vật nhỏ trên đất mà rất mực khôn ngoan?",
+  "options": [
+   "Hai loài",
+   "Mười loài",
+   "Bảy loài",
+   "Bốn loài"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Kiến, thỏ rừng, cào cào và thằn lằn. “Có bốn loài vật nhỏ trên đất, Nhưng rất mực khôn ngoan” (Châm Ngôn 30:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 30,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Con kiến yếu ớt mà khôn ngoan vì biết làm gì?",
+  "options": [
+   "Dự trữ thức ăn mùa hạ",
+   "Xây nhà trên đá",
+   "Sống trong cung vua",
+   "Bay thành đội ngũ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Kiến biết lo xa, chuẩn bị trước cho mùa thiếu thốn. “Nhưng biết lo dự trữ thức ăn trong mùa hạ” (Châm Ngôn 30:25)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 31,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Những lời khuyên dạy vua Lê-mu-ên đến từ ai?",
+  "options": [
+   "Vua Sa-lô-môn",
+   "Một tiên tri",
+   "Mẹ của vua",
+   "Cha của vua"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chương cuối Châm Ngôn ghi lời người mẹ dạy con làm vua. “các châm ngôn mà mẹ vua dạy cho người” (Châm Ngôn 31:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn khuyên nghe lời khuyên dạy của cha và đừng từ bỏ điều gì của mẹ?",
+  "options": [
+   "Căn nhà của mẹ",
+   "Khuôn phép của mẹ",
+   "Bài hát của mẹ",
+   "Gia tài của mẹ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lời dạy của cha mẹ như vòng hoa và chuỗi ngọc cho con. “Đừng từ bỏ khuôn phép của mẹ con” (Châm Ngôn 1:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 9,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sự khôn ngoan xây cất nhà mình và đẽo bao nhiêu cây cột?",
+  "options": [
+   "Bốn cây cột",
+   "Bảy cây cột",
+   "Hai cây cột",
+   "Mười hai cây cột"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Sự khôn ngoan được nhân cách hóa như người nữ dọn tiệc mời khách. “Đẽo cho mình bảy cây cột” (Châm Ngôn 9:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 25,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người của vua Giu-đa nào đã sao chép thêm các châm ngôn của Sa-lô-môn?",
+  "options": [
+   "Giô-si-a",
+   "Giô-sa-phát",
+   "Rô-bô-am",
+   "Ê-xê-chia"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phần nầy được biên tập khoảng hai trăm năm sau Sa-lô-môn. “do người của Ê-xê-chia, vua Giu-đa, sao chép” (Châm Ngôn 25:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 30,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ngoài Sa-lô-môn, người con trai Gia-kê có lời được ghi trong Châm Ngôn tên là gì?",
+  "options": [
+   "A-gu-rơ",
+   "Lê-mu-ên",
+   "Y-thi-ên",
+   "Ê-than"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Y-thi-ên và U-canh là những người nghe lời ấy. “Lời của A-gu-rơ con trai Gia-kê” (Châm Ngôn 30:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 31,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vị vua nào được mẹ mình dạy những châm ngôn ở cuối sách?",
+  "options": [
+   "Ê-xê-chia",
+   "Sa-lô-môn",
+   "Lê-mu-ên",
+   "A-gu-rơ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chỉ có tên vua Lê-mu-ên ở đầu chương cuối Châm Ngôn. “Lời của vua Lê-mu-ên” (Châm Ngôn 31:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 30,
+  "verseStart": 26,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Con vật yếu sức nào biết làm chỗ ở trong hốc đá?",
+  "options": [
+   "Con kiến",
+   "Con thằn lằn",
+   "Con cào cào",
+   "Con thỏ rừng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Một trong bốn loài vật nhỏ mà khôn ngoan. “Con thỏ rừng dù là loài không có sức lực, Nhưng biết làm chỗ ở trong hốc đá” (Châm Ngôn 30:26)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 30,
+  "verseStart": 27,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Loài nào không có vua chúa nhưng bay ra thành đội ngũ?",
+  "options": [
+   "Cào cào",
+   "Con kiến",
+   "Con ong",
+   "Chim sẻ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Một trong bốn loài vật nhỏ mà khôn ngoan. “Loài cào cào dù không có vua chúa, Nhưng bay ra thành đội ngũ” (Châm Ngôn 30:27)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 30,
+  "verseStart": 28,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Con vật nào người ta lấy tay bắt được mà vẫn ở trong cung vua?",
+  "options": [
+   "Con thỏ rừng",
+   "Con thằn lằn",
+   "Con chuột",
+   "Con kiến"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nhỏ bé mà vẫn sống được giữa nơi sang trọng nhất. “Con thằn lằn mà người ta lấy tay bắt được, Vẫn ở trong cung vua.” (Châm Ngôn 30:28)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 25,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói cho kẻ thù ăn uống là như chất gì trên đầu nó?",
+  "options": [
+   "Vòng hoa",
+   "Dầu thơm",
+   "Than lửa hồng",
+   "Tro bụi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Và Đức Giê-hô-va sẽ thưởng cho con. “con chất than lửa hồng trên đầu nó” (Châm Ngôn 25:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 29,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói ở đâu không có điều gì thì dân chúng phóng túng?",
+  "options": [
+   "Đền thờ",
+   "Quân đội",
+   "Khải tượng",
+   "Lương thực"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phước cho người biết tuân giữ luật pháp. “Ở đâu không có khải tượng, dân chúng phóng túng” (Châm Ngôn 29:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 16,
+  "verseStart": 32,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói ai cai trị lòng mình thắng hơn ai?",
+  "options": [
+   "Kẻ giàu nhất",
+   "Kẻ chiếm lấy thành",
+   "Người thắng trận",
+   "Người cai trị nước"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tự chủ được bản thân khó hơn đánh chiếm một thành. “ai cai trị lòng mình thắng hơn kẻ chiếm lấy thành.” (Châm Ngôn 16:32)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo Châm Ngôn, kẻ ngu muội xem thường điều gì?",
+  "options": [
+   "Sự khôn ngoan và lời khuyên dạy",
+   "Ruộng đất và nhà cửa",
+   "Bạn bè và anh em",
+   "Tiền bạc và của cải"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Kính sợ Đức Giê-hô-va là khởi đầu tri thức. “Còn kẻ ngu muội xem thường sự khôn ngoan và lời khuyên dạy.” (Châm Ngôn 1:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Proverbs",
+  "chapter": 17,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Châm Ngôn nói trí nao sờn làm cho điều gì khô héo?",
+  "options": [
+   "Đôi mắt",
+   "Mạch nước",
+   "Cỏ đồng",
+   "Xương cốt"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngược với lòng vui mừng là phương thuốc hay. “Còn trí nao sờn làm cho xương cốt khô héo.” (Châm Ngôn 17:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

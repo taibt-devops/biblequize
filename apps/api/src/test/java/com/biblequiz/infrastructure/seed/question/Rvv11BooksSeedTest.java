@@ -45,12 +45,12 @@ class Rvv11BooksSeedTest {
     }
 
     @Test
-    void everyQuestionIsAVietnameseMediumOrHardSingleChoiceWithFourOptions() throws IOException {
+    void everyQuestionIsAVietnameseSingleChoiceWithFourOptions() throws IOException {
         List<SeedQuestion> questions = rvv11();
         assertFalse(questions.isEmpty());
         for (SeedQuestion q : questions) {
             assertEquals("vi", q.language, q.content);
-            assertTrue(Set.of("medium", "hard").contains(q.difficulty), q.content);
+            assertTrue(Set.of("easy", "medium", "hard").contains(q.difficulty), q.content);
             assertEquals("multiple_choice_single", q.type, q.content);
             assertEquals(4, new HashSet<>(q.options).size(), q.content);
             assertEquals(1, q.correctAnswer.size(), q.content);

@@ -1,0 +1,923 @@
+[
+ {
+  "book": "Daniel",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ở Ba-by-lôn, Đa-ni-ên được đặt tên mới là gì?",
+  "options": [
+   "Sa-đơ-rắc",
+   "Bên-xát-sa",
+   "Bên-tơ-xát-sa",
+   "A-bết-nê-gô"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Bên-tơ-xát-sa là tên của Đa-ni-ên; Bên-xát-sa là tên một vua Ba-by-lôn. “Đa-ni-ên là Bên-tơ-xát-sa” (Đa-ni-ên 1:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-ni-ên quyết định trong lòng không để mình ô uế bởi điều gì?",
+  "options": [
+   "Tên gọi mới",
+   "Thức ngon và rượu của vua",
+   "Ngôn ngữ người Canh-đê",
+   "Thần tượng của Ba-by-lôn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đa-ni-ên giữ mình trung tín ngay từ những việc nhỏ. “Đa-ni-ên quyết định trong lòng không để cho mình ô uế bởi thức ngon vua ăn và rượu vua uống” (Đa-ni-ên 1:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-ni-ên xin được thử ăn uống gì trong mười ngày?",
+  "options": [
+   "Rau và nước",
+   "Thịt và sữa",
+   "Trái cây và mật ong",
+   "Bánh và rượu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đa-ni-ên tin Chúa sẽ giữ sức khỏe cho họ. “Xin ông thử các đầy tớ ông trong mười ngày; chỉ cho chúng tôi ăn rau uống nước thôi.” (Đa-ni-ên 1:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau mười ngày ăn rau, sắc diện bốn thanh niên thế nào?",
+  "options": [
+   "Xanh xao, gầy yếu",
+   "Mệt mỏi, buồn bã",
+   "Không khác gì người khác",
+   "Hồng hào, đầy đặn hơn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ham-mên-xa cho họ tiếp tục ăn rau thay thức ăn của vua. “Sau mười ngày, sắc diện họ trông hồng hào, đầy đặn hơn tất cả các thanh niên dùng thức ăn của vua.” (Đa-ni-ên 1:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 1,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua thấy bốn thanh niên khôn ngoan hơn các thuật sĩ và pháp sư bao nhiêu lần?",
+  "options": [
+   "Gấp đôi",
+   "Gấp mười lần",
+   "Gấp ba lần",
+   "Gấp bảy lần"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đức Chúa Trời ban cho họ tri thức và sự hiểu biết. “thì thấy họ giỏi gấp mười lần những thuật sĩ và pháp sư trong toàn vương quốc mình.” (Đa-ni-ên 1:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 2,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua Nê-bu-cát-nết-sa đòi các nhà thông thái làm điều gì khó?",
+  "options": [
+   "Nói ra cả giấc mơ lẫn lời giải",
+   "Vẽ lại giấc mơ",
+   "Giải nghĩa giấc mơ đã kể",
+   "Tìm người đã mơ giống vua"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vua không kể giấc mơ, nên chỉ Đức Chúa Trời mới bày tỏ được. “Nếu các ngươi không nói cho trẫm biết nội dung và lời giải thích giấc chiêm bao đó” (Đa-ni-ên 2:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 2,
+  "verseStart": 32,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đầu của pho tượng trong giấc mơ vua Nê-bu-cát-nết-sa làm bằng gì?",
+  "options": [
+   "Đồng",
+   "Sắt",
+   "Vàng ròng",
+   "Bạc"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngực và tay bằng bạc, bụng và đùi bằng đồng, ống chân bằng sắt. “Đầu pho tượng nầy bằng vàng ròng” (Đa-ni-ên 2:32)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 2,
+  "verseStart": 33,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bàn chân của pho tượng trong giấc mơ làm bằng gì?",
+  "options": [
+   "Đá cẩm thạch",
+   "Đồng",
+   "Vàng ròng",
+   "Sắt pha đất sét"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đó là chỗ yếu của pho tượng, nơi hòn đá đập vào. “bàn chân thì một phần bằng sắt một phần bằng đất sét.” (Đa-ni-ên 2:33)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 2,
+  "verseStart": 34,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong giấc mơ, vật gì đã đập vỡ pho tượng?",
+  "options": [
+   "Một trận động đất",
+   "Hòn đá không do tay người đục",
+   "Một tia sét",
+   "Một đạo quân"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hòn đá chỉ về vương quốc Đức Chúa Trời lập nên. “có một hòn đá chẳng phải bởi bàn tay loài người đục ra, đập vào bàn chân bằng sắt và đất sét của pho tượng” (Đa-ni-ên 2:34)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 2,
+  "verseStart": 35,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hòn đá đập vỡ pho tượng sau đó trở thành gì?",
+  "options": [
+   "Một thành lớn",
+   "Một cái tháp",
+   "Một bàn thờ",
+   "Một hòn núi lớn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vương quốc của Đức Chúa Trời sẽ đầy dẫy khắp đất và tồn tại đời đời. “trở thành một hòn núi lớn, chiếm cả mặt đất.” (Đa-ni-ên 2:35)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 2,
+  "verseStart": 38,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-ni-ên nói vua Nê-bu-cát-nết-sa là phần nào của pho tượng?",
+  "options": [
+   "Hòn đá đập vỡ tượng",
+   "Ngực bằng bạc",
+   "Cái đầu bằng vàng",
+   "Ống chân bằng sắt"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Các vương quốc sau Ba-by-lôn được ví với bạc, đồng, sắt. “Vậy, vua là cái đầu bằng vàng.” (Đa-ni-ên 2:38)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 2,
+  "verseStart": 48,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi giải mộng, Đa-ni-ên được vua lập làm gì?",
+  "options": [
+   "Cai trị toàn tỉnh Ba-by-lôn",
+   "Thầy tế lễ thượng phẩm",
+   "Vua chư hầu Giu-đa",
+   "Tướng chỉ huy quân đội"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông còn đứng đầu các nhà thông thái của Ba-by-lôn. “Vua lập ông cai trị toàn tỉnh Ba-by-lôn” (Đa-ni-ên 2:48)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong giấc mơ khác, vua Nê-bu-cát-nết-sa thấy gì mọc giữa mặt đất?",
+  "options": [
+   "Một pho tượng vàng",
+   "Một dòng sông lớn",
+   "Một hòn núi lửa",
+   "Một cây cao lớn lạ thường"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cây ấy chỉ về chính nhà vua và quyền lực của ông. “ta thấy một cây mọc giữa mặt đất; Một cây cao lớn lạ thường.” (Đa-ni-ên 4:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 4,
+  "verseStart": 30,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua Nê-bu-cát-nết-sa bị phạt ngay khi đang nói lời kiêu ngạo nào?",
+  "options": [
+   "Ta sẽ sống đời đời",
+   "Không thần nào bằng ta",
+   "Đây là Ba-by-lôn vĩ đại ta đã xây",
+   "Ta là vua của các vua"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lời chưa dứt khỏi miệng thì có tiếng từ trời phán. “Đây chẳng phải là Ba-by-lôn vĩ đại mà ta đã xây dựng làm đế đô bằng uy quyền cao cả của ta” (Đa-ni-ên 4:30)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 4,
+  "verseStart": 33,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bị đuổi khỏi loài người, vua Nê-bu-cát-nết-sa phải ăn gì?",
+  "options": [
+   "Ăn bánh của kẻ nghèo",
+   "Ăn cỏ như bò",
+   "Ăn châu chấu",
+   "Ăn rau như Đa-ni-ên"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lời tiên tri trong giấc mơ ứng nghiệm ngay lúc đó. “Vua bị đuổi khỏi loài người, ăn cỏ như bò” (Đa-ni-ên 4:33)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 5,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua Bên-xát-sa mở tiệc thết đãi bao nhiêu đại thần?",
+  "options": [
+   "Một nghìn",
+   "Một trăm",
+   "Mười hai",
+   "Bảy mươi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là đêm cuối cùng của triều đại Bên-xát-sa. “Vua Bên-xát-sa mở tiệc linh đình thết đãi một nghìn đại thần.” (Đa-ni-ên 5:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong bữa tiệc, vua Bên-xát-sa đem gì ra để uống rượu?",
+  "options": [
+   "Chén ngọc của hoàng hậu",
+   "Bình đồng của Ai Cập",
+   "Ly tách vàng bạc của đền thờ",
+   "Sừng thú quý"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vua xúc phạm các vật thánh lấy từ đền thờ Giê-ru-sa-lem. “truyền đem ly tách bằng vàng và bạc mà phụ vương Nê-bu-cát-nết-sa đã lấy trong đền thờ tại Giê-ru-sa-lem” (Đa-ni-ên 5:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 5,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đang tiệc, điều gì xuất hiện viết lên tường hoàng cung?",
+  "options": [
+   "Một luồng lửa từ trời",
+   "Một thiên sứ cầm gươm",
+   "Bóng của một con thú",
+   "Những ngón tay của bàn tay người"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vua thấy phần bàn tay đang viết và run sợ. “những ngón tay của bàn tay người xuất hiện, viết lên tường vôi của hoàng cung” (Đa-ni-ên 5:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 5,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hàng chữ hiện ra trên tường cung vua Bên-xát-sa là gì?",
+  "options": [
+   "Hô-sa-na, Hô-sa-na",
+   "Mê-nê, Mê-nê, Tê-ken, U-phác-sin",
+   "Ta-li-tha-cum",
+   "A-ba, A-ba, Ra-bi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chỉ Đa-ni-ên đọc và giải nghĩa được hàng chữ ấy. “MÊ-NÊ, MÊ-NÊ, TÊ-KEN, U-PHÁC-SIN.” (Đa-ni-ên 5:25)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 5,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Đa-ni-ên, chữ Tê-ken nghĩa là gì?",
+  "options": [
+   "Vua bị cân và thấy kém thiếu",
+   "Vương quốc bị phân chia",
+   "Vua sẽ sống lâu",
+   "Số ngày của vua đã hết"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Mê-nê là số ngày đã hết; Phê-rết là vương quốc bị chia. “Tê-ken là: Vua đã bị đặt trên bàn cân và thấy kém thiếu.” (Đa-ni-ên 5:27)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 5,
+  "verseStart": 31,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi Bên-xát-sa bị giết, ai tiếp quản vương quốc?",
+  "options": [
+   "A-suê-ru",
+   "Nê-bu-cát-nết-sa",
+   "Si-ru, người Ba Tư",
+   "Đa-ri-út, người Mê-đi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lời giải hàng chữ trên tường ứng nghiệm ngay đêm đó. “Đa-ri-út, người Mê-đi, tiếp quản vương quốc” (Đa-ni-ên 5:31)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 7,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng của Đa-ni-ên, bao nhiêu con thú lớn từ biển đi lên?",
+  "options": [
+   "Bảy con",
+   "Hai con",
+   "Bốn con",
+   "Mười con"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Bốn con thú khác nhau, giống bốn phần của pho tượng ở chương 2. “Bốn con thú lớn từ biển đi lên; mỗi con một khác.” (Đa-ni-ên 7:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 8,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thiên sứ nào được sai đến giải thích khải tượng cho Đa-ni-ên?",
+  "options": [
+   "Gáp-ri-ên",
+   "Ra-pha-ên",
+   "Mi-ca-ên",
+   "U-ri-ên"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Gáp-ri-ên về sau cũng báo tin cho Xa-cha-ri và Ma-ri. “Gáp-ri-ên, hãy giải thích cho người nầy hiểu khải tượng đi.” (Đa-ni-ên 8:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 9,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đọc sách tiên tri Giê-rê-mi, Đa-ni-ên biết Giê-ru-sa-lem điêu tàn bao lâu?",
+  "options": [
+   "Bảy năm",
+   "Bảy mươi năm",
+   "Bốn trăm năm",
+   "Bốn mươi năm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Biết vậy, Đa-ni-ên kiêng ăn và cầu nguyện cho dân mình. “mà lời Đức Giê-hô-va đã phán với nhà tiên tri Giê-rê-mi, là bảy mươi năm.” (Đa-ni-ên 9:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 12,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Những người dắt đưa nhiều người đến sự công chính sẽ chiếu sáng như gì?",
+  "options": [
+   "Mặt trời giữa trưa",
+   "Lửa trên bàn thờ",
+   "Ngọn đèn trong nhà",
+   "Các ngôi sao đời đời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lời hứa ở chương cuối sách Đa-ni-ên. “những người dắt đưa nhiều người đến sự công chính sẽ chiếu sáng như các ngôi sao đời đời mãi mãi.” (Đa-ni-ên 12:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sa-đơ-rắc, bạn của Đa-ni-ên, có tên Hê-bơ-rơ là gì?",
+  "options": [
+   "Ha-na-nia",
+   "A-ri-ốc",
+   "Mi-sa-ên",
+   "A-xa-ria"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ha-na-nia là Sa-đơ-rắc, Mi-sa-ên là Mê-sác, A-xa-ria là A-bết-nê-gô. “Ha-na-nia là Sa-đơ-rắc” (Đa-ni-ên 1:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người Canh-đê tâu với vua Nê-bu-cát-nết-sa bằng tiếng gì?",
+  "options": [
+   "Tiếng Hi Lạp",
+   "Tiếng A-ram",
+   "Tiếng Hê-bơ-rơ",
+   "Tiếng Ai Cập"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Từ chỗ nầy, một phần sách Đa-ni-ên được viết bằng tiếng A-ram. “Những người Canh-đê tâu với vua bằng tiếng A-ram” (Đa-ni-ên 2:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 2,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Quan chỉ huy vệ quân được sai đi giết các nhà thông thái Ba-by-lôn tên là gì?",
+  "options": [
+   "Bên-xát-sa",
+   "Ham-mên-xa",
+   "A-ri-ốc",
+   "Át-bê-na"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đa-ni-ên dùng lời khôn khéo hỏi A-ri-ốc, rồi xin vua cho thêm thời gian. “A-ri-ốc, quan chỉ huy vệ quân của vua” (Đa-ni-ên 2:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong giấc mơ, đấng canh giữ phán cây ấy phải mang tâm trí thú vật bao lâu?",
+  "options": [
+   "Ba ngày",
+   "Mười hai tháng",
+   "Bốn mươi ngày",
+   "Suốt bảy kỳ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bảy kỳ trải qua cho đến khi vua nhận biết Đấng Chí Cao cai trị. “Và cứ để nó như vậy suốt bảy kỳ.” (Đa-ni-ên 4:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 4,
+  "verseStart": 33,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi sống ngoài đồng, tóc vua Nê-bu-cát-nết-sa mọc như gì?",
+  "options": [
+   "Bờm sư tử",
+   "Cỏ dại",
+   "Lông đại bàng",
+   "Lông chiên"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Móng tay móng chân của vua cũng giống như móng chim. “cho đến khi tóc vua cũng mọc như lông đại bàng” (Đa-ni-ên 4:33)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vua Bên-xát-sa hứa người giải được chữ trên tường sẽ làm nhân vật thứ mấy trong vương quốc?",
+  "options": [
+   "Thứ ba",
+   "Thứ nhất",
+   "Thứ bảy",
+   "Thứ hai"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đa-ni-ên từ chối quà nhưng vẫn giải nghĩa cho vua. “và sẽ là nhân vật thứ ba trong việc cai trị vương quốc.” (Đa-ni-ên 5:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 5,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ai đã nhắc vua Bên-xát-sa sai gọi Đa-ni-ên đến giải nghĩa?",
+  "options": [
+   "Một hoạn quan",
+   "Hoàng thái hậu",
+   "Các pháp sư",
+   "Quan chỉ huy vệ quân"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bà nhớ Đa-ni-ên từ thời Nê-bu-cát-nết-sa. “hoàng thái hậu bước vào phòng tiệc.” (Đa-ni-ên 5:10-12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ],
+  "verseEnd": 12
+ },
+ {
+  "book": "Daniel",
+  "chapter": 5,
+  "verseStart": 31,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đa-ri-út người Mê-đi tiếp quản vương quốc lúc bao nhiêu tuổi?",
+  "options": [
+   "Bốn mươi tuổi",
+   "Sáu mươi hai tuổi",
+   "Bảy mươi tuổi",
+   "Năm mươi lăm tuổi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông lên ngôi ngay đêm Bên-xát-sa bị giết. “tiếp quản vương quốc ở độ tuổi sáu mươi hai.” (Đa-ni-ên 5:31)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 6,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vua Đa-ri-út đặt bao nhiêu vị tể tướng trên các thống đốc?",
+  "options": [
+   "Mười hai vị",
+   "Bảy vị",
+   "Một vị",
+   "Ba vị"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đa-ni-ên là một trong ba vị và vượt hẳn những người khác. “và trên họ có ba vị tể tướng, một trong ba vị đó là Đa-ni-ên.” (Đa-ni-ên 6:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 7,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Con thú thứ nhất trong khải tượng của Đa-ni-ên giống sư tử nhưng mang gì?",
+  "options": [
+   "Mười cái sừng",
+   "Răng bằng sắt",
+   "Cánh đại bàng",
+   "Bốn cái đầu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Con thứ hai giống gấu, thứ ba giống beo, thứ tư có răng sắt và mười sừng. “Con thứ nhất giống như sư tử nhưng mang cánh đại bàng.” (Đa-ni-ên 7:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 7,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng, áo của Đấng Thượng Cổ thế nào?",
+  "options": [
+   "Trắng như tuyết",
+   "Đỏ như lửa",
+   "Sáng như vàng",
+   "Tím như vua chúa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Tóc Ngài như lông chiên tinh sạch, ngai Ngài là những ngọn lửa. “Áo Ngài trắng như tuyết” (Đa-ni-ên 7:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 7,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng, vị giống như con người đến với gì?",
+  "options": [
+   "Một đạo binh thiên sứ",
+   "Tiếng kèn lớn",
+   "Xe ngựa bằng lửa",
+   "Những đám mây trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa Jêsus về sau dùng danh xưng Con Người cho chính Ngài. “Tôi lại nhìn thấy một vị giống như con người Đến với những đám mây trời.” (Đa-ni-ên 7:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 8,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng thứ hai, con dê đực chỉ về vua nước nào?",
+  "options": [
+   "Mê-đi",
+   "Hi Lạp",
+   "Ai Cập",
+   "Ba Tư"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Con chiên đực hai sừng là các vua Mê-đi và Ba Tư. “Con dê đực là vua nước Hi Lạp” (Đa-ni-ên 8:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 10,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đa-ni-ên thấy khải tượng người mặc vải gai khi đứng bên bờ sông nào?",
+  "options": [
+   "Sông Ti-gơ-rít",
+   "Sông Giô-đanh",
+   "Sông U-lai",
+   "Sông Ơ-phơ-rát"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là sau ba tuần lễ Đa-ni-ên buồn rầu và kiêng ăn. “tôi đang đứng bên bờ sông lớn, tức là sông Ti-gơ-rít.” (Đa-ni-ên 10:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Daniel",
+  "chapter": 10,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thiên sứ trưởng nào đến giúp khi thủ lĩnh Ba Tư ngăn trở sứ giả của Chúa?",
+  "options": [
+   "A-ba-đôn",
+   "Sê-ra-phim",
+   "Mi-ca-ên",
+   "Gáp-ri-ên"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Mi-ca-ên được gọi là đấng bảo vệ dân Đa-ni-ên. “Nhưng Mi-ca-ên, một trong các thiên sứ trưởng, đã đến giúp đỡ ta” (Đa-ni-ên 10:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

@@ -1,0 +1,715 @@
+[
+ {
+  "book": "Philippians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô viết thư Phi-líp cùng với ai?",
+  "options": [
+   "Ba-na-ba",
+   "Si-la",
+   "Lu-ca",
+   "Ti-mô-thê"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Thư mở đầu bằng tên hai người: Phao-lô và Ti-mô-thê. “Phao-lô và Ti-mô-thê, đầy tớ của Đấng Christ Jêsus” (Phi-líp 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 1,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói đối với ông, sống là Đấng Christ, còn chết là gì?",
+  "options": [
+   "Ích lợi",
+   "Kết thúc",
+   "Mất mát",
+   "Đáng sợ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chết là được về ở với Đấng Christ. “Vì đối với tôi, sống là Đấng Christ, còn chết là ích lợi.” (Phi-líp 1:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 2,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên hãy khiêm nhường, xem người khác thế nào?",
+  "options": [
+   "Thấp hơn mình",
+   "Đáng tôn trọng hơn mình",
+   "Ngang hàng với mình",
+   "Không cần để ý"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đừng làm điều gì vì ích kỷ hay hư vinh. “nhưng hãy khiêm nhường, xem người khác đáng tôn trọng hơn mình.” (Phi-líp 2:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi nghe danh Đức Chúa Jêsus, mọi đầu gối phải làm gì?",
+  "options": [
+   "Run rẩy",
+   "Đứng dậy",
+   "Quỳ xuống",
+   "Nhảy múa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đức Chúa Trời ban cho Chúa Jêsus danh trên hết mọi danh. “Mọi đầu gối trên trời, dưới đất, bên dưới đất Đều phải quỳ xuống” (Phi-líp 2:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 2,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên làm mọi việc mà không có điều gì?",
+  "options": [
+   "Lời cầu nguyện",
+   "Sự giúp đỡ",
+   "Tiếng cằn nhằn hay lưỡng lự",
+   "Tiếng hát"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để con cái Đức Chúa Trời không chỗ trách được. “Hãy làm mọi việc không một tiếng cằn nhằn hay lưỡng lự” (Phi-líp 2:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giữa thế hệ xảo quyệt, con cái Đức Chúa Trời phải chiếu rạng như gì?",
+  "options": [
+   "Ngọn lửa trên núi",
+   "Ngọc quý trong kho",
+   "Mặt trăng ban đêm",
+   "Ánh sáng trong thế gian"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đời sống tín hữu là ánh sáng giữa thế hệ sa đọa. “anh em hãy chiếu rạng như ánh sáng trong thế gian” (Phi-líp 2:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 3,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói chúng ta là công dân của nơi nào?",
+  "options": [
+   "Trên trời",
+   "Thành La Mã",
+   "Thành Giê-ru-sa-lem",
+   "Thành Phi-líp"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Từ trời chúng ta trông đợi Cứu Chúa là Đức Chúa Jêsus Christ. “Nhưng chúng ta là công dân trên trời” (Phi-líp 3:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 4,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Đức Chúa Trời sẽ cung ứng điều gì cho tín hữu?",
+  "options": [
+   "Nhiều vàng bạc",
+   "Mọi nhu cầu của họ",
+   "Mọi điều họ ao ước",
+   "Sức khỏe trọn vẹn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Theo sự giàu có vinh quang của Ngài trong Đấng Christ Jêsus. “Đức Chúa Trời tôi sẽ cung ứng mọi nhu cầu của anh em theo sự giàu có vinh quang của Ngài trong Đấng Christ Jêsus.” (Phi-líp 4:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô tin chắc Đấng đã bắt đầu làm việc lành trong tín hữu sẽ làm gì?",
+  "options": [
+   "Bỏ dở giữa chừng",
+   "Giao lại cho họ",
+   "Làm trọn việc ấy",
+   "Bắt đầu lại từ đầu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đức Chúa Trời làm trọn việc Ngài cho đến ngày của Đấng Christ. “Tôi tin chắc rằng Đấng đã bắt đầu làm việc lành trong anh em sẽ làm trọn việc ấy cho đến ngày của Đấng Christ Jêsus.” (Phi-líp 1:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 1,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói những ai trong dinh tổng đốc đều biết ông bị xiềng vì Đấng Christ?",
+  "options": [
+   "Các môn đồ của ông",
+   "Tất cả lính canh",
+   "Chỉ tổng đốc",
+   "Các thầy tế lễ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Cảnh tù đày lại giúp Tin Lành lan rộng. “tất cả lính canh trong dinh tổng đốc và mọi người khác đều biết tôi vì Đấng Christ mà bị xiềng xích” (Phi-líp 1:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Dù có người rao giảng vì ganh tị, Phao-lô vẫn vui vì điều gì?",
+  "options": [
+   "Đấng Christ vẫn được rao giảng",
+   "Họ sẽ bị phạt",
+   "Ông được nổi tiếng",
+   "Ông sắp được thả"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Phao-lô chỉ quan tâm Tin Lành được truyền ra. “thì Đấng Christ vẫn được rao giảng. Đó là điều tôi vui mừng” (Phi-líp 1:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 1,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói điều gì là tốt hơn rất nhiều cho ông?",
+  "options": [
+   "Sống lâu trên đất",
+   "Được thả khỏi tù",
+   "Trở về Giê-ru-sa-lem",
+   "Ra đi và về ở với Đấng Christ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nhưng ông ở lại thì cần thiết hơn cho tín hữu. “Tôi muốn ra đi và về ở với Đấng Christ là điều tốt hơn rất nhiều.” (Phi-líp 1:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đấng Christ đã từ bỏ chính mình và mang lấy hình gì?",
+  "options": [
+   "Hình thiên sứ",
+   "Hình đầy tớ",
+   "Hình vua chúa",
+   "Hình thầy tế lễ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngài vốn có hình của Đức Chúa Trời mà tự hạ mình. “Ngài đã từ bỏ chính mình, Mang lấy hình đầy tớ” (Phi-líp 2:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 2,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đấng Christ tự hạ mình, vâng phục cho đến mức nào?",
+  "options": [
+   "Chết trên cây thập tự",
+   "Rửa chân môn đồ",
+   "Sống nghèo khó",
+   "Chịu báp-têm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là sự hạ mình sâu nhất của Đấng Christ. “vâng phục cho đến chết, Thậm chí chết trên cây thập tự.” (Phi-líp 2:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời tôn Đấng Christ lên và ban cho Ngài danh như thế nào?",
+  "options": [
+   "Danh mới mỗi ngày",
+   "Danh của Môi-se",
+   "Danh trên hết mọi danh",
+   "Danh vua Đa-vít"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Mọi lưỡi phải xưng nhận Đức Chúa Jêsus Christ là Chúa. “Và ban cho Ngài danh trên hết mọi danh” (Phi-líp 2:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 2,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Ti-mô-thê đã cùng ông phục vụ Tin Lành như thế nào?",
+  "options": [
+   "Như học trò với thầy",
+   "Như lính với tướng",
+   "Như đầy tớ với chủ",
+   "Như con với cha"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Không ai đồng tâm tình với Phao-lô như Ti-mô-thê. “anh ấy đã cùng tôi phục vụ Tin Lành như con với cha vậy.” (Phi-líp 2:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 2,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tín hữu Phi-líp đã gửi ai đến lo cho nhu cầu của Phao-lô?",
+  "options": [
+   "Si-la",
+   "Ti-mô-thê",
+   "Ty-chi-cơ",
+   "Ép-pa-phô-đích"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phao-lô gửi anh về lại Phi-líp sau khi anh khỏi bệnh. “cũng là sứ giả và người phục vụ mà anh em gửi đến để lo cho nhu cầu của tôi.” (Phi-líp 2:25)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 2,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ép-pa-phô-đích đã gặp chuyện gì khi ở với Phao-lô?",
+  "options": [
+   "Bị đắm tàu",
+   "Bị lạc đường",
+   "Mắc bệnh gần chết",
+   "Bị bắt giam"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đức Chúa Trời đã đoái thương anh, và cả Phao-lô nữa. “Thật, anh ấy đã mắc bệnh gần chết” (Phi-líp 2:27)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô thuộc bộ tộc nào của Y-sơ-ra-ên?",
+  "options": [
+   "Ép-ra-im",
+   "Bên-gia-min",
+   "Lê-vi",
+   "Giu-đa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phao-lô kể gốc gác mình để nói rằng ông không cậy vào đó. “thuộc dòng dõi Y-sơ-ra-ên, bộ tộc Bên-gia-min” (Phi-líp 3:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Về luật pháp, Phao-lô trước kia là người gì?",
+  "options": [
+   "Người Pha-ri-si",
+   "Người Sa-đu-sê",
+   "Người thu thuế",
+   "Thầy tế lễ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông từng sốt sắng đến mức bắt bớ Hội Thánh. “về luật pháp, tôi là một người Pha-ri-si” (Phi-líp 3:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì sự nhận biết Đấng Christ, Phao-lô xem những lợi lộc mình có như gì?",
+  "options": [
+   "Như rác rưởi",
+   "Như phần thưởng",
+   "Như kho báu",
+   "Như ngọc quý"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Được Đấng Christ là quý hơn hết. “và xem những điều đó như rác rưởi, để được Đấng Christ” (Phi-líp 3:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 3,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông quên những gì ở đằng sau và làm gì?",
+  "options": [
+   "Chờ người khác dẫn",
+   "Ngồi nghỉ ngơi",
+   "Quay về quá khứ",
+   "Vươn tới những gì ở đằng trước"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông nhắm mục đích để đoạt giải về sự kêu gọi trên cao. “quên đi những gì ở đằng sau, vươn tới những gì ở đằng trước” (Phi-líp 3:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên tín hữu cho mọi người biết điều gì của mình?",
+  "options": [
+   "Sự can đảm",
+   "Tính nhu mì",
+   "Học thức",
+   "Sự giàu có"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phao-lô nhắc: Chúa đã gần rồi! “Hãy cho mọi người biết tính nhu mì của anh em.” (Phi-líp 4:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ngoài toàn thể thánh đồ, thư Phi-líp còn gửi riêng cho những ai?",
+  "options": [
+   "Các tiên tri",
+   "Các sứ đồ",
+   "Các giám mục và chấp sự",
+   "Các trưởng lão Giê-ru-sa-lem"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hội Thánh Phi-líp đã có người lãnh đạo và phục vụ. “cùng quý giám mục và chấp sự.” (Phi-líp 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 2,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói dù ông có bị đổ ra như gì, ông vẫn thỏa lòng và vui?",
+  "options": [
+   "Nước lã",
+   "Dầu xức",
+   "Mực viết",
+   "Lễ quán"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phao-lô sẵn lòng hiến dâng cả mạng sống vì đức tin của tín hữu. “Cho dù tôi có phải bị đổ ra như làm lễ quán rưới trên sinh tế” (Phi-líp 2:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn coi chừng những kẻ làm công gian ác, kẻ cắt bì giả, và gì nữa?",
+  "options": [
+   "Loài sói",
+   "Loài cáo",
+   "Loài chó",
+   "Loài rắn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phao-lô cảnh báo những kẻ dạy phải giữ cắt bì để được cứu. “Hãy coi chừng loài chó” (Phi-líp 3:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô được cắt bì vào ngày thứ mấy sau khi sinh?",
+  "options": [
+   "Ngày thứ tám",
+   "Ngày thứ bốn mươi",
+   "Ngày thứ bảy",
+   "Ngày thứ ba"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông được cắt bì đúng theo luật pháp. “Tôi được cắt bì ngày thứ tám” (Phi-líp 3:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 3,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói những kẻ thù của thập tự giá lấy gì làm chúa mình?",
+  "options": [
+   "Luật pháp",
+   "Bụng mình",
+   "Vua chúa",
+   "Tiền bạc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ chỉ nghĩ đến những việc thế gian. “Họ lấy bụng mình làm chúa mình” (Phi-líp 3:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên hai phụ nữ nào nên hiệp ý trong Chúa?",
+  "options": [
+   "Bê-rít-sin và Ly-đi",
+   "Ê-vô-đi và Sin-ty-cơ",
+   "Phê-bê và Đô-ca",
+   "Ma-thê và Ma-ri"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hai người từng sát cánh với Phao-lô vì Tin Lành. “Tôi khuyên Ê-vô-đi và khuyên Sin-ty-cơ nên hiệp ý trong Chúa.” (Phi-líp 4:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nhắc tín hữu Phi-líp đã gửi đồ cần dùng cho ông khi ông ở thành nào?",
+  "options": [
+   "A-thên",
+   "Ê-phê-sô",
+   "Cô-rinh-tô",
+   "Tê-sa-lô-ni-ca"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Hội Thánh Phi-líp nhiều lần chu cấp cho Phao-lô. “Vì ngay tại Tê-sa-lô-ni-ca, anh em đã một hai lần gửi cho tôi những thứ cần dùng.” (Phi-líp 4:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philippians",
+  "chapter": 4,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô gửi lời chào đặc biệt từ những người thuộc nhà ai?",
+  "options": [
+   "Nhà Hê-rốt",
+   "Nhà Cọt-nây",
+   "Nhà Sê-sa",
+   "Nhà Phi-lát"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tin Lành đã đến cả những người trong nhà hoàng đế. “đặc biệt là những người thuộc nhà Sê-sa.” (Phi-líp 4:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]

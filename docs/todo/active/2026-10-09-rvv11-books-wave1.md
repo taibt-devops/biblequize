@@ -23,12 +23,24 @@
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-5 Các đợt sau
-  - Status: [ ] TODO · đợt 2: 13 sách còn lại của vòng quen thuộc (Xuất Ai Cập Ký, Ru-tơ, 1 Sa-mu-ên, Ê-xơ-tê, Thi Thiên, Châm Ngôn, Đa-ni-ên, Giô-na, Công Vụ, Rô-ma, Ê-phê-sô, Phi-líp, Gia-cơ) → vòng 2 (22 sách) → vòng 3 (26 sách)
-  - Chờ user: (a) Học Thuộc giữ BTT1926 có ghi rõ, hay xin phép dùng toàn văn RVV11; (c) bộ tiếng Anh làm lại sau. (b) tên sách giao diện → RVB-6
+  - Status: [ ] TODO · đợt 2 (13 sách còn lại của vòng quen thuộc) → RVB-7/RVB-8 · còn: vòng 2 (22 sách) → vòng 3 (26 sách)
+  - (a) Học Thuộc → đã dùng toàn văn RVV11 (`2026-10-09-memorize-rvv11.md`); (b) tên sách giao diện → RVB-6; (c) bộ tiếng Anh: chờ user chọn bản dịch (ESV có bản quyền; BSB/WEB là public domain)
   - **Spec impact**: [ ] None
   - **Spec strategy**: [ ] (c) [no-spec-impact]
 - RVB-6 Tên sách trên giao diện theo RVV11
   - Status: [x] DONE 09/10 (prod: commit `c019ec35`, BE `sha256:6985a2b6…` rollback `0be255f8…`, FE `sha256:9f45ee0b…` rollback `11eb6048…`; V74 áp lúc 06:51, `/api/books` trên forbible.org trả tên mới) · user 09/10: "đổi sang tên RVV11 cho thống nhất" · nguồn tên: VIE2010 trên bible.com (cùng nguyên văn RVV11; trang HTTLVN dùng tên kiểu 1925 cho mọi bản nên không dùng được) · `V74__books_rvv11_names.sql`: `books.name_vi` Exodus → Xuất Ai Cập Ký, Ezra → E-xơ-ra, Acts → Công Vụ Các Sứ Đồ (cập nhật theo `name`, không sửa `R__data.sql` vì file repeatable đổi checksum sẽ chạy lại trên prod) · web `BIBLE_BOOKS_VI` (trình soạn bộ câu Nhóm): Xuất Ai Cập Ký, Dân Số Ký, Phục Truyền Luật Lệ Ký, Thi Thiên, Công Vụ Các Sứ Đồ; `normalizeBibleBookVi` đổi tên cũ đã lưu sang tên mới (editor, `localizeBibleBook`, `useBookName`) · màn chơi thử: "Xuất Hành" → "Xuất Ai Cập Ký" · Test: `bibleData.test` +2, sửa dữ liệu mẫu 6 file test, `Utf8EncodingTest`
   - Không đổi: lời giải thích/phương án của câu cũ (khoảng 350 chỗ ghi "Xuất Ê-díp-tô Ký", "Thi-thiên"…, kèm tên nước "Ê-díp-tô") — thay hẳn khi viết lại từng sách; bản đồ hành trình giữ nhãn vùng ngắn "Công Vụ"
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-7 Đợt 2: 13 sách còn lại của vòng quen thuộc
+  - Source: user 10/10: "ok làm đợt 2 trước" (trước bộ tiếng Anh)
+  - Status: [x] DONE · 662 câu thay 1.370 câu cũ · bộ sách nay nhận cả câu **Dễ** (`LEVELS = easy, medium, hard`): sách mà bộ Dễ cốt lõi phủ mỏng sẽ hụt câu Dễ khi tắt file cũ (vd Ru-tơ 50 → 10, Rô-ma 39 → 7), nên viết thêm câu Dễ, tránh trùng câu Dễ cốt lõi (cùng câu Kinh Thánh, cùng đáp án)
+  - Từng sách — cũ Dễ/TB/Khó → mới Dễ (cốt lõi + bộ sách) / TB / Khó: Xuất Ai Cập Ký 75/114/62 → 68+0 / 50 / 30 · Ru-tơ 50/48/22 → 10+15 / 20 / 10 · 1 Sa-mu-ên 50/47/22 → 47+0 / 45 / 25 · Ê-xơ-tê 51/47/22 → 10+15 / 20 / 12 · Thi Thiên 58/77/44 → 28+15 / 40 / 20 · Châm Ngôn 24/36/20 → 8+15 / 25 / 12 · Đa-ni-ên 18/27/15 → 20+0 / 25 / 15 · Giô-na 13/6/1 → 19+0 / 12 / 6 · Công Vụ 39/58/33 → 94+0 / 45 / 25 · Rô-ma 39/59/32 → 7+15 / 35 / 20 · Ê-phê-sô 18/27/15 → 19+5 / 18 / 10 · Phi-líp 15/23/12 → 9+8 / 15 / 8 · Gia-cơ 15/24/12 → 9+8 / 15 / 8
+  - Nội dung: Thi Thiên tránh 3 thiên bộ Dễ đã phủ (1, 23, 119), không hỏi theo tiêu đề thiên (RVV11 không đánh số tiêu đề thành câu); Rô-ma tránh 8:28–39; bỏ qua chi tiết bạo lực/nhạy cảm (Ê-xơ-tê 9, cái chết của Sau-lơ, bà cốt Ên-đô-rơ, sính lễ của Đa-vít)
+  - Repo: `retire` 13 file (`exodus, ruth, 1samuel, esther, psalms, proverbs, daniel, jonah, acts, romans, ephesians, philippians, james_quiz.json`, toàn tiếng Việt) → `retired_hashes.txt` 2.218 hash · `git rm` 13 file, giữ bản `_en` · `Rvv11BooksSeedTest` nhận Dễ · 47 test xanh (`Rvv11BooksSeedTest`, `StoryCatalogTest`, `QuestionSeeder*Test`, `BibleSeedContentTest`)
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-8 Đợt 2 lên prod
+  - Status: [ ] TODO · seed một lần `rvv11_books_quiz.json` (`sync-stale=false`; kỳ vọng chỉ chèn 662 câu mới) → đối chiếu 1.370 hash → sao lưu `questions_bak_20261010_rvv11_w2` → `is_active=0`
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
