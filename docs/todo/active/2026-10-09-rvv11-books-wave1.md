@@ -65,6 +65,9 @@
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-12 Đợt 4 lên prod
-  - Status: [ ] TODO · seed một lần (kỳ vọng chèn 359 câu) → đối chiếu 540 hash + rà hàng mồ côi → sao lưu `questions_bak_20261010_rvv11_w4` → `is_active=0`
+  - Status: [x] DONE 10/10 · commit `fe1a956c`, BE `sha256:98a79571…` (rollback `f7310dc0…`) · seed một lần: inserted=359, dupHash=0, staleDeleted=0 · 540/540 hash khớp, không có hàng mồ côi (còn 3 câu Giáo lý căn bản: 1 Cô-rinh-tô Dễ, 2 Ti-mô-thê TB, Cô-lô-se TB — để nguyên) · sao lưu `questions_bak_20261010_rvv11_w4` rồi `is_active=0` cho 540 hàng · câu đang bật = Dễ cốt lõi + bộ RVV11 (+ 3 câu Giáo lý căn bản)
+  - Bật lại nếu cần: `UPDATE questions q JOIN questions_bak_20261010_rvv11_w4 b ON b.id = q.id SET q.is_active = b.is_active;`
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
