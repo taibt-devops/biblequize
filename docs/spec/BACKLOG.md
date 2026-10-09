@@ -17,8 +17,9 @@
   - Re-seed `apps/api/src/main/resources/seed/questions/*_quiz*.json` với verse text BTTHĐ 2011
   - Update `scripts/sql_to_json.py` reference table nếu cần
   - Audit: ~664 câu hỏi cần check (xem CLAUDE.md Question Seeding)
-- **Học Thuộc (2026-09-15):** toàn văn `bible_verses` đang là BTT 1926 (`BibleVerse.ACTIVE_VERSION`, nguồn eBible `vie1934` public domain — DECISIONS 2026-09-15). Khi có BTTHĐ 2011: nạp seed `seed/bible/btthd2011/`, đổi `ACTIVE_VERSION`, và quyết cách chuyển `user_memory_verses` đang lưu `version = 'BTT1926'`.
-- **Status:** ⬜ TODO
+- **Học Thuộc:** ✅ 2026-10-09 — toàn văn RVV11 (Bản Truyền Thống Hiệu Đính 2010) thay BTT 1926: seed `seed/bible/rvv11/`, `ACTIVE_VERSION = "RVV11"`, V75 chuyển `user_memory_verses` sang RVV11 (giữ địa chỉ + lịch ôn). Task `docs/todo/active/2026-10-09-memorize-rvv11.md`.
+- **Câu hỏi:** 🔄 đang viết lại từng sách bằng RVV11 (`content/books/`, task `docs/todo/active/2026-10-09-rvv11-books-wave1.md`); đợt 1 xong 5 sách.
+- **Status:** 🔄 IN PROGRESS
 - **Ref:** AUDIT_SUMMARY Q1, AUDIT_CONSTRAINTS C4
 
 ### BL-2 — Q-A scoring: filter group leaderboard by source

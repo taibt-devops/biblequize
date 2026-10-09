@@ -60,5 +60,6 @@ export const queryKeys = {
     bibleStatus: () => ['bible-status'] as const,
     passage: (book: string, chapter: number, from: number, to: number) =>
       ['bible-passage', book, chapter, from, to] as const,
+    chapterVerses: (book: string, chapter: number) => ['bible-verses', book, chapter] as const,
   },
 } as const

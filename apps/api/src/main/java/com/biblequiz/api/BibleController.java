@@ -32,4 +32,14 @@ public class BibleController {
             return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
         }
     }
+
+    /** Câu (và khối gộp "17-18") có chữ trong chương, theo cách đánh số của bản dịch — bộ chọn câu Học Thuộc. */
+    @GetMapping("/verses")
+    public ResponseEntity<?> verses(@RequestParam String book, @RequestParam int chapter) {
+        try {
+            return ResponseEntity.ok(passageService.chapterVerses(book, chapter));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
+        }
+    }
 }

@@ -2,6 +2,20 @@
 
 ---
 
+## 2026-10-09 — Học Thuộc dùng toàn văn RVV11 (thay BTT 1926 tạm dùng)
+
+- **Bối cảnh:** Học Thuộc dùng tạm Bản Truyền Thống 1926 (public domain) từ 15/09 vì chưa có file bản Hiệu Đính; câu hỏi mới nay đều trích RVV11 (Bản Truyền Thống Hiệu Đính 2010). Quyền dùng nguyên văn bản Hiệu Đính user đã xác nhận ở D2 (2026-09-15). Trên máy prod hiện tại `bible_verses` còn trống nên Học Thuộc đang ẩn với người dùng.
+- **Quyết định (user 09/10: "Học Thuộc dùng toàn văn RVV11"):**
+  - `BibleVerse.ACTIVE_VERSION = "RVV11"`; toàn văn lấy từ kinhthanh.httlvn.org (`?v=RVV11`, 1,5 giây/trang) → `scripts/bible/rvv11_to_seed.py` → `seed/bible/rvv11/`. Bỏ seed 1926 khỏi repo (còn trong git, nguồn eBible `vie1934`).
+  - Số câu **theo đúng RVV11**, không ép về bảng số câu chuẩn (`BibleStructure`, kiểu tiếng Anh): khối gộp in "17-18" lưu ở câu đầu (`bible_verses.verse_end`), câu RVV11 lược (Ma-thi-ơ 17:21…) không có dòng, vài chương Cựu Ước đánh số kiểu Hê-bơ-rơ (Giô-na 2:1–11). Người học tra cuốn RVV11 của mình sẽ thấy khớp. Bộ chọn câu lấy danh sách câu từ dữ liệu (`GET /api/bible/verses`); chọn câu trong khối gộp thì lưu trọn khối; đoạn không bắc qua câu bị lược.
+  - Đoạn trong ngoặc vuông của RVV11 (Mác 16:9–20, Giăng 7:53–8:11, lời chúc tụng Ma-thi-ơ 6:13) giữ nguyên ngoặc — đó là chữ của bản dịch.
+  - Danh sách câu gốc đã thêm (V75) đổi sang RVV11, giữ địa chỉ và lịch ôn.
+  - Toàn văn (66 file seed) commit vào repo công khai `taibt-devops/biblequize`: user xác nhận 09/10 quyền dùng RVV11 cho phép đăng công khai toàn bộ văn bản (đã được hỏi rõ, chọn "Cứ commit vào repo công khai" thay vì để ngoài repo hoặc chuyển repo sang private).
+- **Thay:** 2026-09-15 "Học Thuộc tạm dùng Bản Truyền Thống 1926".
+- **Implementation:** task `docs/todo/active/2026-10-09-memorize-rvv11.md` (MRV-1..4).
+
+---
+
 ## 2026-10-09 — Viết lại bộ câu tiếng Việt theo bản RVV11 từng sách, tắt (không xóa) câu cũ
 
 - **Bối cảnh:** kho câu tiếng Việt có hai thế hệ: bộ cũ (viết bằng AI, tên riêng lẫn giữa bản 1925 và bản mới, nhãn độ khó không đáng tin) và bộ "Dễ cốt lõi" trích nguyên văn RVV11. User đề nghị xóa bộ cũ và làm lại.

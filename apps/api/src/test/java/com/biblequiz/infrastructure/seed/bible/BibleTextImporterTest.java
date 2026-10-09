@@ -56,7 +56,21 @@ class BibleTextImporterTest {
         assertEquals(BibleVerse.idFor(BibleVerse.ACTIVE_VERSION, "Jude", 1, 1), first[0]);
         assertEquals("Jude", first[2]);
         assertEquals(65, first[3]);
+        assertNull(first[6]);
         assertEquals(25, captor.getValue().size());
+    }
+
+    @Test
+    void mergedBlock_isWrittenWithItsLastVerse() {
+        when(repository.countByVersionAndBook(any(), any())).thenReturn(0L);
+        importer.importFile("05-Deuteronomy.json", List.of(new VerseRow(13, 17, 18, "fixture block")));
+
+        ArgumentCaptor<List<Object[]>> captor = ArgumentCaptor.captor();
+        verify(jdbc).batchUpdate(eq(BibleTextImporter.UPSERT_SQL), captor.capture());
+        Object[] row = captor.getValue().get(0);
+        assertEquals(17, row[5]);
+        assertEquals(18, row[6]);
+        assertEquals("fixture block", row[7]);
     }
 
     @Test

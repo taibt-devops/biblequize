@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import {
-  addMemoryVerse, deleteMemoryVerse, getBibleStatus, getMemoryDueCount, getPassage, listDueMemoryVerses,
+  addMemoryVerse, deleteMemoryVerse, getBibleStatus, getChapterVerses, getMemoryDueCount, getPassage, listDueMemoryVerses,
   listMemoryVerses, reviewMemoryVerse, type ExerciseType, type MemoryVerseRef,
 } from '../api/memorize'
 import { queryKeys } from '../api/queryKeys'
@@ -59,6 +59,17 @@ export function usePassage(book: string | undefined, chapter: number | undefined
     queryKey: queryKeys.memorize.passage(book ?? '', chapter ?? 0, from ?? 0, to ?? 0),
     queryFn: () => getPassage(book!, chapter!, from!, to!),
     enabled: ready,
+    staleTime: Infinity, // Bible text never changes
+    retry: false,
+  })
+}
+
+/** The verse picker's choices: what the active translation has in this chapter. */
+export function useChapterVerses(book: string | undefined, chapter: number | undefined) {
+  return useQuery({
+    queryKey: queryKeys.memorize.chapterVerses(book ?? '', chapter ?? 0),
+    queryFn: () => getChapterVerses(book!, chapter!),
+    enabled: !!book && !!chapter,
     staleTime: Infinity, // Bible text never changes
     retry: false,
   })

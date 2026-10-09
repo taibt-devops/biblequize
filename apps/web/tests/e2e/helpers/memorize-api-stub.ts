@@ -52,7 +52,7 @@ export class MemorizeApiStub {
   }
 
   async install(page: Page): Promise<void> {
-    await page.route(/\/api\/(me\/memory-verses|bible\/passage)/, route => this.handle(route))
+    await page.route(/\/api\/(me\/memory-verses|bible\/passage|bible\/verses)/, route => this.handle(route))
   }
 
   private json(route: Route, status: number, body?: unknown) {
@@ -65,6 +65,11 @@ export class MemorizeApiStub {
     const path = url.pathname.replace(/^.*\/api\//, '/api/')
     const method = req.method()
 
+    if (path === '/api/bible/verses') {
+      // Plain chapter: 36 single verses (enough for John 3).
+      return this.json(route, 200, Array.from({ length: 36 }, (_, i) => ({ verse: i + 1, verseEnd: null })))
+    }
+
     if (path === '/api/bible/passage') {
       if (this.passageStatus !== 200) return this.json(route, this.passageStatus, { success: false, message: 'stub' })
       const from = Number(url.searchParams.get('from'))
@@ -72,7 +77,7 @@ export class MemorizeApiStub {
       const verses = []
       for (let v = Math.max(1, from); v <= to; v++) verses.push({ verse: v, text: fakeVerseText(v) })
       return this.json(route, 200, {
-        version: 'BTT1926', book: url.searchParams.get('book'), chapter: Number(url.searchParams.get('chapter')), verses,
+        version: 'RVV11', book: url.searchParams.get('book'), chapter: Number(url.searchParams.get('chapter')), verses,
       })
     }
 

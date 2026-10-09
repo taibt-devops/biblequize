@@ -1098,7 +1098,7 @@
       },
       "bibleTranslation": {
         "q": "Which Bible translation does the app use?",
-        "a": "English questions use the English Standard Version (ESV). Vietnamese uses the Revised Vietnamese Version 2011 (RVV11). Both are widely adopted Protestant translations — faithful to the original languages and accessible to modern readers."
+        "a": "English questions use the English Standard Version (ESV). Vietnamese uses the Traditional Revised Version 2010 (RVV11) for new questions and Memorize; older questions are being rewritten in it. Both are widely adopted Protestant translations — faithful to the original languages and accessible to modern readers."
       },
       "changeLanguage": {
         "q": "How do I switch question language between Vietnamese and English?",

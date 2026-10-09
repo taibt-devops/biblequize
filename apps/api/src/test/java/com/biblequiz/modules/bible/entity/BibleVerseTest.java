@@ -9,10 +9,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BibleVerseTest {
 
-    /** DECISIONS 2026-09-15: Học Thuộc tạm dùng BTT 1926 cho tới khi có BTTHĐ 2011 (BL-1). */
+    /** DECISIONS 2026-10-09: Học Thuộc dùng toàn văn RVV11 (thay BTT 1926 tạm dùng từ 15/09). */
     @Test
-    void activeVersion_isTraditional1926UntilBl1() {
-        assertEquals("BTT1926", BibleVerse.ACTIVE_VERSION);
+    void activeVersion_isRvv11() {
+        assertEquals("RVV11", BibleVerse.ACTIVE_VERSION);
     }
 
     @Test
@@ -25,17 +25,17 @@ class BibleVerseTest {
 
     @Test
     void idFor_differsByVersionBookChapterVerse() {
-        String base = BibleVerse.idFor("BTT1926", "John", 3, 16);
-        assertNotEquals(base, BibleVerse.idFor("BTTHD2011", "John", 3, 16));
-        assertNotEquals(base, BibleVerse.idFor("BTT1926", "Genesis", 3, 16));
-        assertNotEquals(base, BibleVerse.idFor("BTT1926", "John", 4, 16));
-        assertNotEquals(base, BibleVerse.idFor("BTT1926", "John", 3, 17));
+        String base = BibleVerse.idFor("RVV11", "John", 3, 16);
+        assertNotEquals(base, BibleVerse.idFor("BTT1926", "John", 3, 16));
+        assertNotEquals(base, BibleVerse.idFor("RVV11", "Genesis", 3, 16));
+        assertNotEquals(base, BibleVerse.idFor("RVV11", "John", 4, 16));
+        assertNotEquals(base, BibleVerse.idFor("RVV11", "John", 3, 17));
     }
 
     @Test
     void constructor_assignsDeterministicId() {
-        BibleVerse v = new BibleVerse("BTT1926", "John", 43, 3, 16, "fixture text");
-        assertEquals(BibleVerse.idFor("BTT1926", "John", 3, 16), v.getId());
+        BibleVerse v = new BibleVerse("RVV11", "John", 43, 3, 16, "fixture text");
+        assertEquals(BibleVerse.idFor("RVV11", "John", 3, 16), v.getId());
         assertEquals(43, v.getBookOrder());
         assertEquals("fixture text", v.getText());
     }

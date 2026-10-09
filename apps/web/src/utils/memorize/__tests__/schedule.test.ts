@@ -1,5 +1,25 @@
 import { describe, it, expect } from 'vitest'
-import { daysUntilReview, formatReference, SUGGESTED_VERSES, verseEndOptions } from '../schedule'
+import { daysUntilReview, formatReference, rangeEndOptions, SUGGESTED_VERSES, verseEndOptions } from '../schedule'
+
+describe('rangeEndOptions', () => {
+  const plain = (from: number, to: number) => Array.from({ length: to - from + 1 }, (_, i) => ({ verse: from + i }))
+
+  it('allows up to 5 consecutive verses, clamped to the chapter end', () => {
+    expect(rangeEndOptions(plain(1, 36), 16).map(o => o.value)).toEqual([16, 17, 18, 19, 20])
+    expect(rangeEndOptions(plain(1, 25), 24).map(o => o.value)).toEqual([24, 25])
+  })
+
+  it('treats a merged block as one choice and counts all its verses', () => {
+    const verses = [{ verse: 15 }, { verse: 16 }, { verse: 17, verseEnd: 18 }, { verse: 19 }, { verse: 20 }]
+    expect(rangeEndOptions(verses, 16)).toEqual([
+      { value: 16, label: '16' }, { value: 18, label: '17-18' }, { value: 19, label: '19' }, { value: 20, label: '20' }])
+    expect(rangeEndOptions(verses, 17)[0]).toEqual({ value: 18, label: '17-18' })
+  })
+
+  it('stops at a verse the translation leaves out', () => {
+    expect(rangeEndOptions([{ verse: 20 }, { verse: 22 }, { verse: 23 }], 20)).toEqual([{ value: 20, label: '20' }])
+  })
+})
 
 describe('verseEndOptions', () => {
   it('allows up to 5 consecutive verses, clamped to the chapter end', () => {

@@ -2,16 +2,20 @@ import { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import { Skeleton } from '../../components/Skeleton'
-import { getChapterCount, getVerseCount } from '../../data/bibleData'
+import { getChapterCount } from '../../data/bibleData'
 import { useBooks } from '../../hooks/useBookName'
-import { useAddMemoryVerse, usePassage } from '../../hooks/useMemoryVerses'
+import { lastVerse, verseLabel } from '../../api/memorize'
+import { useAddMemoryVerse, useChapterVerses, usePassage } from '../../hooks/useMemoryVerses'
 import { PlaceBackdrop, Plaque } from '../../components/lk/Place'
-import { verseEndOptions } from '../../utils/memorize/schedule'
+import { rangeEndOptions } from '../../utils/memorize/schedule'
 
 const range = (n: number) => Array.from({ length: n }, (_, i) => i + 1)
 const SELECT = 'w-full rounded-xl border border-bq-hair bg-bq-white px-3 py-2.5 text-sm text-bq-ink disabled:opacity-50'
 
-/** /practice/memorize/add — pick book → chapter → verse range (≤ 5), preview, add (SPEC_USER §5.1.1). */
+/**
+ * /practice/memorize/add — pick book → chapter → verse range (≤ 5), preview, add (SPEC_USER §5.1.1).
+ * Verse choices come from the translation itself (RVV11 merges a few verses, "17-18", and leaves a few out).
+ */
 export default function MemorizeAdd() {
   const { t, i18n } = useTranslation()
   const navigate = useNavigate()
@@ -21,13 +25,15 @@ export default function MemorizeAdd() {
   const [from, setFrom] = useState(0)
   const [to, setTo] = useState(0)
   const passage = usePassage(book || undefined, chapter || undefined, from || undefined, to || undefined)
+  const chapterVerses = useChapterVerses(book || undefined, chapter || undefined)
   const addVerse = useAddMemoryVerse()
 
   const sortedBooks = useMemo(
     () => (Array.isArray(books) ? [...books] : []).sort((a, b) => a.orderIndex - b.orderIndex),
     [books],
   )
-  const verseCount = book && chapter ? getVerseCount(book, chapter) : 0
+  const verses = chapterVerses.data ?? []
+  const noVerses = !!chapter && chapterVerses.isSuccess && verses.length === 0
   const status = (addVerse.error as { response?: { status?: number } } | null)?.response?.status
 
   const submit = () =>
@@ -69,9 +75,13 @@ export default function MemorizeAdd() {
         <label className="space-y-1 text-xs font-semibold text-bq-ink2">
           {t('memorize.add.verseFrom')}
           <select data-testid="memorize-add-verse-from" className={SELECT} value={from || ''} disabled={!chapter}
-            onChange={e => { const v = Number(e.target.value); setFrom(v); setTo(v) }}>
+            onChange={e => {
+              const v = Number(e.target.value)
+              const row = verses.find(r => r.verse === v)
+              setFrom(v); setTo(row ? lastVerse(row) : v)
+            }}>
             <option value="">{t('memorize.add.choose')}</option>
-            {range(verseCount).map(v => <option key={v} value={v}>{v}</option>)}
+            {verses.map(v => <option key={v.verse} value={v.verse}>{verseLabel(v)}</option>)}
           </select>
         </label>
         <label className="space-y-1 text-xs font-semibold text-bq-ink2">
@@ -79,13 +89,13 @@ export default function MemorizeAdd() {
           <select data-testid="memorize-add-verse-to" className={SELECT} value={to || ''} disabled={!from}
             onChange={e => setTo(Number(e.target.value))}>
             <option value="">{t('memorize.add.choose')}</option>
-            {verseEndOptions(from, verseCount).map(v => <option key={v} value={v}>{v}</option>)}
+            {rangeEndOptions(verses, from).map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
           </select>
         </label>
       </div>
 
       {passage.isFetching && <Skeleton className="h-24 w-full rounded-2xl" />}
-      {passage.isError && !passage.isFetching && (
+      {((passage.isError && !passage.isFetching) || noVerses) && (
         <p data-testid="memorize-add-no-text" className="rounded-xl border border-bq-amber/30 bg-bq-amber/10 p-4 text-sm text-bq-amberd">
           {t('memorize.add.noText')}
         </p>
@@ -93,7 +103,7 @@ export default function MemorizeAdd() {
       {passage.data && !passage.isFetching && (
         <div data-testid="memorize-add-preview" className="rounded-2xl border border-bq-hair bg-bq-inset p-5 font-literata text-lg leading-relaxed text-bq-ink">
           {passage.data.verses.map(v => (
-            <span key={v.verse}><sup className="mr-1 text-xs text-bq-ink3">{v.verse}</sup>{v.text} </span>
+            <span key={v.verse}><sup className="mr-1 text-xs text-bq-ink3">{verseLabel(v)}</sup>{v.text} </span>
           ))}
         </div>
       )}

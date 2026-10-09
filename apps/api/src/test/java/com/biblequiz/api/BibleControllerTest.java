@@ -24,12 +24,12 @@ class BibleControllerTest extends BaseControllerTest {
     @WithMockUser(username = "test@example.com")
     void passage_returns200WithVerses() throws Exception {
         when(passageService.getPassage("John", 3, 16, 17)).thenReturn(Optional.of(
-                new Passage("BTT1926", "John", 3, List.of(new VerseText(16, "fixture"), new VerseText(17, "fixture 2")))));
+                new Passage("RVV11", "John", 3, List.of(new VerseText(16, "fixture"), new VerseText(17, "fixture 2")))));
 
         mockMvc.perform(get("/api/bible/passage").param("book", "John").param("chapter", "3")
                         .param("from", "16").param("to", "17"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.version").value("BTT1926"))
+                .andExpect(jsonPath("$.version").value("RVV11"))
                 .andExpect(jsonPath("$.verses[0].verse").value(16))
                 .andExpect(jsonPath("$.verses[1].text").value("fixture 2"));
     }
@@ -54,6 +54,29 @@ class BibleControllerTest extends BaseControllerTest {
                         .param("from", "1").param("to", "1"))
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.message").value("Sách không hợp lệ"));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void verses_listsVersesAndMergedBlocks() throws Exception {
+        when(passageService.chapterVerses("Deuteronomy", 13)).thenReturn(List.of(
+                new BiblePassageService.VerseNumber(16, null), new BiblePassageService.VerseNumber(17, 18)));
+
+        mockMvc.perform(get("/api/bible/verses").param("book", "Deuteronomy").param("chapter", "13"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].verse").value(16))
+                .andExpect(jsonPath("$[1].verse").value(17))
+                .andExpect(jsonPath("$[1].verseEnd").value(18));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void verses_invalidChapter_returns400() throws Exception {
+        when(passageService.chapterVerses("Jude", 2)).thenThrow(new IllegalArgumentException("Chương không hợp lệ: 2"));
+
+        mockMvc.perform(get("/api/bible/verses").param("book", "Jude").param("chapter", "2"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.message").value("Chương không hợp lệ: 2"));
     }
 
     @Test

@@ -289,7 +289,7 @@ Cấu hình trong UI: chọn book / quiz set / difficulty / count / language / b
 
 > **Status:** Đợt 1 đang triển khai trên nhánh `feat/hoc-thuoc-cau-goc` — spec này merge cùng code. **Decision:** [DECISIONS.md](../../DECISIONS.md) 2026-09-15. **Task:** `docs/todo/active/2026-09-15-hoc-thuoc-cau-goc.md`.
 
-Người dùng tự chọn câu/đoạn Kinh Thánh bất kỳ (hiện dùng BTT 1926, đích BTTHĐ 2011 — C4/BL-1) vào **danh sách của tôi**, rồi ôn theo **lịch giãn cách**; mỗi lần ôn là một bài tập nhỏ có độ khó tăng theo mức thuộc.
+Người dùng tự chọn câu/đoạn Kinh Thánh bất kỳ (Bản Truyền Thống Hiệu Đính 2010 — RVV11, từ 2026-10-09) vào **danh sách của tôi**, rồi ôn theo **lịch giãn cách**; mỗi lần ôn là một bài tập nhỏ có độ khó tăng theo mức thuộc.
 
 | Field | Value |
 |---|---|
@@ -297,8 +297,8 @@ Người dùng tự chọn câu/đoạn Kinh Thánh bất kỳ (hiện dùng BTT
 | Routes | `/practice/memorize` (danh sách) · `/practice/memorize/add` (chọn câu) · `/practice/memorize/session` (phiên ôn) |
 | Auth | **bắt buộc** (guest thấy thẻ lối vào kèm nhắc đăng nhập) |
 | Energy / XP / Leaderboard / Streak | **KHÔNG** — không tốn năng lượng, không cộng điểm, không xếp hạng |
-| Bản dịch | **Tạm thời `BTT1926`** (Bản Truyền Thống 1926, nguồn eBible.org `vie1934` — Public Domain; DECISIONS 2026-09-15). Đích C4 vẫn là BTTHĐ 2011 → BL-1. Toàn văn lưu bảng `bible_verses` (import gated `BIBLE_IMPORT_ENABLED`) |
-| Đơn vị học | 1 câu hoặc 1 đoạn liền nhau **tối đa 5 câu** (`verseEnd - verseStart ≤ 4`); trùng đoạn → 409 |
+| Bản dịch | **`RVV11`** — Bản Truyền Thống Hiệu Đính 2010, toàn văn (DECISIONS 2026-10-09; quyền dùng nguyên văn: DECISIONS 2026-09-15 D2). Nguồn kinhthanh.httlvn.org → `scripts/bible/rvv11_to_seed.py` → `seed/bible/rvv11/`. Toàn văn lưu bảng `bible_verses` (import gated `BIBLE_IMPORT_ENABLED`). Số câu **theo RVV11**, không theo `BibleStructure`: khối gộp in "17-18" lưu ở câu đầu (`verse_end`), câu RVV11 lược (Ma-thi-ơ 17:21…) không có, vài chương Cựu Ước đánh số kiểu Hê-bơ-rơ (Giô-na 2:1–11) — danh sách ở `seed/bible/rvv11/DIFFERENCES.md`. Thay BTT 1926 dùng tạm 15/09–09/10 |
+| Đơn vị học | 1 câu hoặc 1 đoạn liền nhau **tối đa 5 câu** (`verseEnd - verseStart ≤ 4`); trùng đoạn → 409. Bộ chọn câu lấy danh sách câu của chương từ `GET /api/bible/verses` (khối gộp là một lựa chọn "17-18"; đoạn không bắc qua câu RVV11 lược); chọn câu nằm trong khối gộp thì lưu trọn khối |
 | Lối vào | Thẻ "Học Thuộc câu gốc" trên `/practice` · Home: icon "Câu gốc" ở góc cảnh mang huy hiệu "N cần ôn" + nút "Ôn N câu đến hạn" trong cuộn câu gốc, **chỉ hiện khi `dueCount > 0`** (2026-10-08, Home dạng cảnh game — LKF-3) |
 | Cổng hiển thị | Thẻ trên `/practice` **chỉ hiện khi đã import chữ** (`GET /api/public/bible/status` → `available: true`) — deploy trước dữ liệu thì người dùng không thấy tính năng rỗng; import xong tự hiện, không cần deploy lại |
 

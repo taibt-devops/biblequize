@@ -17,17 +17,17 @@ import java.util.UUID;
 @Table(name = "bible_verses")
 public class BibleVerse {
 
-    /** Bản dịch canonical (C4) — đích, chưa có dữ liệu (BL-1). */
-    public static final String BTTHD_2011 = "BTTHD2011";
-
-    /** Bản Truyền Thống 1926 (Cadman, eBible {@code vie1934}) — Public Domain. */
+    /** Bản Truyền Thống 1926 (Cadman, eBible {@code vie1934}) — Public Domain. Học Thuộc dùng tạm 15/09–09/10/2026. */
     public static final String BTT_1926 = "BTT1926";
 
+    /** Bản Truyền Thống Hiệu Đính 2010 (RVV11) — bản canonical của app (C4), cùng bản với bộ câu hỏi mới. */
+    public static final String RVV11 = "RVV11";
+
     /**
-     * Bản dịch Học Thuộc đang dùng thật. Tạm là BTT 1926 cho tới khi có file BTTHĐ 2011
-     * (DECISIONS 2026-09-15, BL-1): đổi hằng này + nạp seed tương ứng.
+     * Bản dịch Học Thuộc đang dùng (DECISIONS 2026-10-09). Đổi bản = đổi hằng này + nạp seed tương ứng
+     * ({@code app.seeding.bible.pattern}) + chuyển {@code user_memory_verses.version} bằng migration.
      */
-    public static final String ACTIVE_VERSION = BTT_1926;
+    public static final String ACTIVE_VERSION = RVV11;
 
     @Id
     @Column(length = 36)
@@ -47,6 +47,10 @@ public class BibleVerse {
 
     @Column(nullable = false)
     private int verse;
+
+    /** Câu cuối của một khối gộp (RVV11 in "17-18" thành một khối, lưu ở câu 17); null = một câu. */
+    @Column(name = "verse_end")
+    private Integer verseEnd;
 
     @Column(nullable = false, columnDefinition = "TEXT")
     private String text;
@@ -83,6 +87,10 @@ public class BibleVerse {
     public int getBookOrder() { return bookOrder; }
     public int getChapter() { return chapter; }
     public int getVerse() { return verse; }
+    public Integer getVerseEnd() { return verseEnd; }
+    public void setVerseEnd(Integer verseEnd) { this.verseEnd = verseEnd; }
+    /** Câu cuối mà dòng này phủ: {@code verseEnd} của khối gộp, hoặc chính {@code verse}. */
+    public int getLastVerse() { return verseEnd != null ? verseEnd : verse; }
     public String getText() { return text; }
     public void setText(String text) { this.text = text; }
     public LocalDateTime getCreatedAt() { return createdAt; }

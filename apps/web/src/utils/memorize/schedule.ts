@@ -1,5 +1,7 @@
 // Memorize mode — display helpers for the review schedule (SPEC_USER §5.1.1).
 
+import { lastVerse, verseLabel, type VerseNumber } from '../../api/memorize'
+
 export const MAX_MASTERY_LEVEL = 5
 
 /** Whole days until the next review (0 when due or due later today). */
@@ -21,6 +23,23 @@ export function verseEndOptions(verseStart: number, verseCount: number): number[
   if (verseStart < 1 || verseStart > verseCount) return []
   const last = Math.min(verseStart + MAX_PASSAGE_VERSES - 1, verseCount)
   return Array.from({ length: last - verseStart + 1 }, (_, i) => verseStart + i)
+}
+
+/**
+ * "To" choices for a start verse, from the verses the translation has: each verse or merged block from
+ * the start on, while the passage stays contiguous (a verse the translation leaves out ends it) and
+ * within MAX_PASSAGE_VERSES. Value = the last verse covered; label = "18" or "17-18".
+ */
+export function rangeEndOptions(verses: VerseNumber[], verseStart: number): { value: number; label: string }[] {
+  const out: { value: number; label: string }[] = []
+  let next = verseStart
+  for (const v of verses) {
+    if (v.verse < verseStart) continue
+    if (v.verse !== next || lastVerse(v) - verseStart + 1 > MAX_PASSAGE_VERSES) break
+    out.push({ value: lastVerse(v), label: verseLabel(v) })
+    next = lastVerse(v) + 1
+  }
+  return out
 }
 
 /** Starter suggestions shown on an empty list — references only, text comes from the API. */

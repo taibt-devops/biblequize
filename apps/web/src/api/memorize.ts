@@ -14,10 +14,22 @@ export interface MemoryVerse {
   due: boolean
 }
 
-export interface PassageVerse {
+/** One verse, or a block the translation prints as one ("17-18": verse 17, verseEnd 18). */
+export interface VerseNumber {
   verse: number
+  verseEnd?: number | null
+}
+
+export interface PassageVerse extends VerseNumber {
   text: string
 }
+
+/** Last verse a row covers. */
+export const lastVerse = (v: VerseNumber): number => v.verseEnd ?? v.verse
+
+/** "17" or "17-18". */
+export const verseLabel = (v: VerseNumber): string =>
+  v.verseEnd && v.verseEnd !== v.verse ? `${v.verse}-${v.verseEnd}` : String(v.verse)
 
 export interface Passage {
   version: string
@@ -70,6 +82,12 @@ export async function reviewMemoryVerse(
 
 export async function getPassage(book: string, chapter: number, from: number, to: number): Promise<Passage> {
   const res = await api.get('/api/bible/passage', { params: { book, chapter, from, to } })
+  return res.data
+}
+
+/** Verses (and merged blocks) of a chapter, numbered as the active translation prints them. */
+export async function getChapterVerses(book: string, chapter: number): Promise<VerseNumber[]> {
+  const res = await api.get('/api/bible/verses', { params: { book, chapter } })
   return res.data
 }
 

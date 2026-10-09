@@ -25,7 +25,7 @@ import java.util.regex.Pattern;
 /**
  * Nạp toàn văn Kinh Thánh cho mode Học Thuộc (SPEC_USER §5.1.1).
  *
- * <p>Mỗi file {@code seed/bible/btt1926/NN-Book.json} (vd {@code 43-John.json},
+ * <p>Mỗi file {@code seed/bible/rvv11/NN-Book.json} (vd {@code 43-John.json},
  * {@code 09-1_Samuel.json} — {@code _} thay khoảng trắng) là mảng
  * {@code {chapter, verse, text}}.
  *
@@ -41,17 +41,26 @@ public class BibleTextImporter {
     private static final Logger log = LoggerFactory.getLogger(BibleTextImporter.class);
     private static final Pattern FILE_NAME = Pattern.compile("^(\\d{1,2})-(.+)\\.json$");
     static final int BATCH_SIZE = 500;
-    static final String UPSERT_SQL = "INSERT INTO bible_verses (id, version, book, book_order, chapter, verse, text) "
-            + "VALUES (?, ?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE text = VALUES(text)";
+    static final String UPSERT_SQL = "INSERT INTO bible_verses (id, version, book, book_order, chapter, verse, verse_end, text) "
+            + "VALUES (?, ?, ?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE text = VALUES(text), verse_end = VALUES(verse_end)";
 
-    record VerseRow(int chapter, int verse, String text) {}
+    /** {@code verseEnd}: câu cuối của một khối gộp (RVV11 "17-18" lưu ở câu 17); vắng = một câu. */
+    record VerseRow(int chapter, int verse, Integer verseEnd, String text) {
+        VerseRow(int chapter, int verse, String text) {
+            this(chapter, verse, null, text);
+        }
+
+        int lastVerse() {
+            return verseEnd != null ? verseEnd : verse;
+        }
+    }
 
     private final BibleVerseRepository repository;
     private final JdbcTemplate jdbc;
     private final ObjectMapper objectMapper;
     private final ResourcePatternResolver resolver;
 
-    @Value("${app.seeding.bible.pattern:classpath*:seed/bible/btt1926/*.json}")
+    @Value("${app.seeding.bible.pattern:classpath*:seed/bible/rvv11/*.json}")
     private String pattern;
 
     public BibleTextImporter(BibleVerseRepository repository, JdbcTemplate jdbc,
@@ -94,7 +103,7 @@ public class BibleTextImporter {
         }
         List<String> mismatches = structureMismatches(book, rows);
         if (!mismatches.isEmpty()) {
-            // Versification bản VN có thể lệch nhẹ BibleStructure — cảnh báo, không chặn.
+            // RVV11 lệch BibleStructure ở vài chương (đánh số kiểu Hê-bơ-rơ) — cảnh báo, không chặn.
             log.warn("[bible-import] {} lệch cấu trúc ở {} chỗ, vd {}", book, mismatches.size(),
                     mismatches.subList(0, Math.min(5, mismatches.size())));
         }
@@ -102,7 +111,7 @@ public class BibleTextImporter {
         List<Object[]> args = new ArrayList<>(rows.size());
         for (VerseRow r : rows) {
             args.add(new Object[]{BibleVerse.idFor(BibleVerse.ACTIVE_VERSION, book, r.chapter(), r.verse()),
-                    BibleVerse.ACTIVE_VERSION, book, order, r.chapter(), r.verse(), r.text()});
+                    BibleVerse.ACTIVE_VERSION, book, order, r.chapter(), r.verse(), r.verseEnd(), r.text()});
         }
         for (int i = 0; i < args.size(); i += BATCH_SIZE) {
             jdbc.batchUpdate(UPSERT_SQL, args.subList(i, Math.min(i + BATCH_SIZE, args.size())));
@@ -117,7 +126,7 @@ public class BibleTextImporter {
         int maxChapter = BibleStructure.getMaxChapter(book);
         for (VerseRow r : rows) {
             boolean badRef = r.chapter() < 1 || r.chapter() > maxChapter
-                    || r.verse() < 1 || r.verse() > BibleStructure.getVerseCount(book, r.chapter());
+                    || r.verse() < 1 || r.lastVerse() > BibleStructure.getVerseCount(book, r.chapter());
             if (badRef || r.text() == null || r.text().isBlank()) out.add(r.chapter() + ":" + r.verse());
         }
         return out;

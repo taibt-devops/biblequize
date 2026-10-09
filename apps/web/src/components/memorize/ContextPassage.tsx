@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import type { Passage } from '../../api/memorize'
+import { lastVerse, verseLabel, type Passage } from '../../api/memorize'
 import { Skeleton } from '../Skeleton'
 
 interface ContextPassageProps {
@@ -32,10 +32,10 @@ export default function ContextPassage({
         <div className="rounded-2xl border border-bq-hair bg-bq-inset p-5 font-literata text-lg leading-relaxed">
           {passage && passage.verses.length > 0
             ? passage.verses.map(v => {
-                const target = v.verse >= verseStart && v.verse <= verseEnd
+                const target = lastVerse(v) >= verseStart && v.verse <= verseEnd
                 return (
                   <span key={v.verse} className={target ? 'font-semibold text-bq-ink' : 'text-bq-ink3'}>
-                    <sup className="mr-1 text-xs text-bq-ink3">{v.verse}</sup>{v.text}{' '}
+                    <sup className="mr-1 text-xs text-bq-ink3">{verseLabel(v)}</sup>{v.text}{' '}
                   </span>
                 )
               })

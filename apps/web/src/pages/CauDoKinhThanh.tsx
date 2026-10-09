@@ -17,7 +17,7 @@ const FAQ = [
   },
   {
     q: 'Trắc nghiệm dùng bản dịch Kinh Thánh nào?',
-    a: 'Nội dung bám theo Kinh Thánh Tin Lành 66 sách. Câu hỏi và câu gốc dùng Bản Truyền Thống Hiệu Đính (BTTHĐ 2011), một số câu cũ dùng Bản Truyền Thống 1926.',
+    a: 'Nội dung bám theo Kinh Thánh Tin Lành 66 sách. Câu hỏi mới và phần Học Thuộc câu gốc dùng Bản Truyền Thống Hiệu Đính 2010 (RVV11); câu hỏi cũ đang được viết lại dần theo bản nầy.',
   },
   {
     q: 'Tôi có thể chơi theo nhóm hội thánh không?',
@@ -168,7 +168,7 @@ export default function CauDoKinhThanh() {
           <Section title="Dành riêng cho người Tin Lành Việt Nam">
             <p>
               BibleQuiz xây dựng theo trọn bộ <strong>66 sách Kinh Thánh Tin Lành</strong> (Protestant), bám
-              sát bản dịch <strong>Truyền Thống Hiệu Đính (BTTHĐ 2011)</strong>. Giao diện song ngữ Việt – Anh,
+              sát bản dịch <strong>Truyền Thống Hiệu Đính 2010 (RVV11)</strong>. Giao diện song ngữ Việt – Anh,
               hoàn toàn miễn phí và không quảng cáo, phù hợp cho mọi lứa tuổi trong cộng đồng Tin Lành Việt Nam.
             </p>
           </Section>

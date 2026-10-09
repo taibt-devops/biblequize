@@ -69,7 +69,14 @@ public class MemoryVerseService {
         if (verseEnd - verseStart + 1 > MAX_VERSES) {
             throw new MemoryVerseException(INVALID, "Tối đa " + MAX_VERSES + " câu liền nhau");
         }
-        String text = passageText(book, chapter, verseStart, verseEnd);
+        // Chạm vào khối gộp (RVV11 "17-18") thì lưu trọn khối.
+        Resolved passage = resolve(book, chapter, verseStart, verseEnd);
+        verseStart = passage.verseStart();
+        verseEnd = passage.verseEnd();
+        if (verseEnd - verseStart + 1 > MAX_VERSES) {
+            throw new MemoryVerseException(INVALID, "Tối đa " + MAX_VERSES + " câu liền nhau");
+        }
+        String text = passage.text();
         if (repository.existsRef(user.getId(), BibleVerse.ACTIVE_VERSION, book, chapter, verseStart, verseEnd)) {
             throw new MemoryVerseException(DUPLICATE, "Đoạn này đã có trong danh sách");
         }
@@ -107,7 +114,7 @@ public class MemoryVerseService {
     private Item toItem(UserMemoryVerse v, LocalDateTime now) {
         String text;
         try {
-            text = passageText(v.getBook(), v.getChapter(), v.getVerseStart(), v.getVerseEnd());
+            text = resolve(v.getBook(), v.getChapter(), v.getVerseStart(), v.getVerseEnd()).text();
         } catch (MemoryVerseException e) {
             text = ""; // chữ bị gỡ/chưa import lại: vẫn hiện item để user xoá được
         }
@@ -115,7 +122,14 @@ public class MemoryVerseService {
                 v.getMasteryLevel(), v.getNextReviewAt(), v.isDue(now));
     }
 
-    private String passageText(String book, int chapter, int verseStart, int verseEnd) {
+    /** Đoạn đã nới ra trọn các khối gộp nó chạm vào, kèm chữ. */
+    record Resolved(int verseStart, int verseEnd, String text) {}
+
+    /**
+     * Chữ của {@code verseStart..verseEnd}. Mọi câu trong đoạn phải có chữ, liền nhau: câu RVV11 lược
+     * (Ma-thi-ơ 17:21…) hay câu ngoài chương thì đoạn không hợp lệ.
+     */
+    private Resolved resolve(String book, int chapter, int verseStart, int verseEnd) {
         List<VerseText> verses;
         try {
             verses = passageService.getPassage(book, chapter, verseStart, verseEnd)
@@ -123,9 +137,15 @@ public class MemoryVerseService {
         } catch (IllegalArgumentException e) {
             throw new MemoryVerseException(INVALID, e.getMessage());
         }
-        if (verses.size() != verseEnd - verseStart + 1) {
-            throw new MemoryVerseException(INVALID, "Chưa có nội dung cho đoạn này");
+        if (verses.isEmpty()) throw new MemoryVerseException(INVALID, "Chưa có nội dung cho đoạn này");
+        int start = Math.min(verseStart, verses.get(0).verse());
+        int end = Math.max(verseEnd, verses.get(verses.size() - 1).lastVerse());
+        int next = start;
+        for (VerseText v : verses) {
+            if (v.verse() != next) throw new MemoryVerseException(INVALID, "Chưa có nội dung cho đoạn này");
+            next = v.lastVerse() + 1;
         }
-        return verses.stream().map(VerseText::text).collect(Collectors.joining(" "));
+        if (next != end + 1) throw new MemoryVerseException(INVALID, "Chưa có nội dung cho đoạn này");
+        return new Resolved(start, end, verses.stream().map(VerseText::text).collect(Collectors.joining(" ")));
     }
 }

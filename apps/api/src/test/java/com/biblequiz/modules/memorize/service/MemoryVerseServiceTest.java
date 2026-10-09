@@ -43,7 +43,7 @@ class MemoryVerseServiceTest {
     private void passage(String book, int chapter, int from, int to) {
         List<VerseText> verses = IntStream.rangeClosed(from, to).mapToObj(v -> new VerseText(v, "f" + v)).toList();
         when(passageService.getPassage(book, chapter, from, to))
-                .thenReturn(Optional.of(new Passage("BTT1926", book, chapter, verses)));
+                .thenReturn(Optional.of(new Passage("RVV11", book, chapter, verses)));
     }
 
     private static Kind kindOf(Runnable call) {
@@ -78,7 +78,7 @@ class MemoryVerseServiceTest {
 
     @Test
     void review_schedulesFromWholeSeconds() {
-        UserMemoryVerse v = new UserMemoryVerse("v-1", user, "BTT1926", "John", 3, 16, 16, NOW.minusDays(1));
+        UserMemoryVerse v = new UserMemoryVerse("v-1", user, "RVV11", "John", 3, 16, 16, NOW.minusDays(1));
         when(repository.findOwned("v-1", "user-1")).thenReturn(Optional.of(v));
         passage("John", 3, 16, 16);
 
@@ -106,16 +106,39 @@ class MemoryVerseServiceTest {
         assertEquals(Kind.INVALID, kindOf(() -> service.add(user, "John", 3, 16, 16, NOW)));
 
         passage("Jude", 1, 24, 25);
-        when(passageService.getPassage("Jude", 1, 24, 26)).thenReturn(Optional.of(new Passage("BTT1926", "Jude", 1,
+        when(passageService.getPassage("Jude", 1, 24, 26)).thenReturn(Optional.of(new Passage("RVV11", "Jude", 1,
                 List.of(new VerseText(24, "a"), new VerseText(25, "b")))));
         assertEquals(Kind.INVALID, kindOf(() -> service.add(user, "Jude", 1, 24, 26, NOW)));
         verify(repository, never()).saveAndFlush(any());
     }
 
     @Test
+    void add_coversTheWholeMergedBlock_itTouches() {
+        // RVV11 prints Deuteronomy 13:17-18 as one block; picking 18 saves 17-18.
+        when(passageService.getPassage("Deuteronomy", 13, 18, 18)).thenReturn(Optional.of(new Passage("RVV11",
+                "Deuteronomy", 13, List.of(new VerseText(17, 18, "block")))));
+
+        MemoryVerseService.Item item = service.add(user, "Deuteronomy", 13, 18, 18, NOW);
+
+        assertEquals(17, item.verseStart());
+        assertEquals(18, item.verseEnd());
+        assertEquals("block", item.text());
+        verify(repository).existsRef("user-1", "RVV11", "Deuteronomy", 13, 17, 18);
+    }
+
+    @Test
+    void add_rejectsAPassageAcrossAVerseTheTranslationLeavesOut() {
+        // RVV11 has no Matthew 17:21.
+        when(passageService.getPassage("Matthew", 17, 20, 22)).thenReturn(Optional.of(new Passage("RVV11",
+                "Matthew", 17, List.of(new VerseText(20, "a"), new VerseText(22, "b")))));
+        assertEquals(Kind.INVALID, kindOf(() -> service.add(user, "Matthew", 17, 20, 22, NOW)));
+        verify(repository, never()).saveAndFlush(any());
+    }
+
+    @Test
     void add_duplicate_isRejected_evenOnRace() {
         passage("John", 3, 16, 16);
-        when(repository.existsRef("user-1", "BTT1926", "John", 3, 16, 16)).thenReturn(true);
+        when(repository.existsRef("user-1", "RVV11", "John", 3, 16, 16)).thenReturn(true);
         assertEquals(Kind.DUPLICATE, kindOf(() -> service.add(user, "John", 3, 16, 16, NOW)));
 
         when(repository.existsRef(any(), any(), any(), anyInt(), anyInt(), anyInt())).thenReturn(false);
@@ -132,7 +155,7 @@ class MemoryVerseServiceTest {
 
     @Test
     void review_appliesScheduleAndSaves() {
-        UserMemoryVerse v = new UserMemoryVerse("v-1", user, "BTT1926", "John", 3, 16, 16, NOW.minusDays(1));
+        UserMemoryVerse v = new UserMemoryVerse("v-1", user, "RVV11", "John", 3, 16, 16, NOW.minusDays(1));
         v.setMasteryLevel(2);
         when(repository.findOwned("v-1", "user-1")).thenReturn(Optional.of(v));
         passage("John", 3, 16, 16);
@@ -147,7 +170,7 @@ class MemoryVerseServiceTest {
 
     @Test
     void due_limitsToSessionSize_andListKeepsItemsWhoseTextIsGone() {
-        UserMemoryVerse v = new UserMemoryVerse("v-1", user, "BTT1926", "John", 3, 16, 16, NOW.minusHours(1));
+        UserMemoryVerse v = new UserMemoryVerse("v-1", user, "RVV11", "John", 3, 16, 16, NOW.minusHours(1));
         when(repository.findDue(eq("user-1"), eq(NOW), any(Pageable.class))).thenReturn(List.of(v));
         when(passageService.getPassage("John", 3, 16, 16)).thenReturn(Optional.empty());
 

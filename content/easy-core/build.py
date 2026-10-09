@@ -60,7 +60,9 @@ assert len(_CODES) == len(_SEED) == len(_VN) == 66
 # site code -> (seed book name, Vietnamese book name, testament)
 BOOKS = {c: (s, v, "Cựu Ước" if i < 39 else "Tân Ước") for i, (c, s, v) in enumerate(zip(_CODES, _SEED, _VN))}
 REF = re.compile(r"^([a-z0-9]+) (\d+):(\d+)(?:-(\d+))?$")
-SPAN = re.compile(r'<span class="verse ([a-z0-9]+)_(\d+)_(\d+)">(.*?)</span>', re.S)
+# One verse, or several merged into one block: class="verse phu_13_17 phu_13_18" with <sup>17-18</sup>.
+SPAN = re.compile(r'<span class="verse ([a-z0-9_ ]+)">(.*?)</span>', re.S)
+VERSE_REF = re.compile(r"^([a-z0-9]+)_(\d+)_(\d+)$")
 MAX_QUESTION_WORDS = 20
 MAX_ANSWER_WORDS = 9
 
@@ -81,10 +83,18 @@ def chapter(code: str, chap: int) -> dict:
         url = f"https://kinhthanh.httlvn.org/doc-kinh-thanh/{code}/{chap}?v=RVV11"
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (forbible content build)"})
         page = urllib.request.urlopen(req, timeout=30).read().decode("utf-8")
-        verses = {}
-        for c, ch, v, frag in SPAN.findall(page):
-            if c == code and int(ch) == chap:
-                verses[v] = (verses.get(v, "") + " " + clean(frag)).strip()
+        verses, merged = {}, {}
+        for classes, frag in SPAN.findall(page):
+            refs = [VERSE_REF.match(c) for c in classes.split()]
+            nums = [int(m.group(3)) for m in refs if m and m.group(1) == code and int(m.group(2)) == chap]
+            if not nums:
+                continue
+            v = str(nums[0])  # a merged block is stored under its first verse
+            verses[v] = (verses.get(v, "") + " " + clean(frag)).strip()
+            if len(nums) > 1:
+                merged[v] = nums[-1]
+        if merged:
+            verses["merged"] = merged  # {"17": 18}: verse 17 holds the text of 17-18
         path.write_text(json.dumps(verses, ensure_ascii=False), encoding="utf-8")
         time.sleep(1.5)
     return json.loads(path.read_text(encoding="utf-8"))
@@ -164,10 +174,11 @@ def show(spec: str) -> None:
     verses = chapter(code, int(chap))
     lo, _, hi = span.partition("-")
     lo = int(lo) if lo else 1
-    hi = int(hi) if hi else (int(lo) if span and not hi else max(map(int, verses)))
+    hi = int(hi) if hi else (int(lo) if span and not hi else max(int(v) for v in verses if v.isdigit()))
     for v in range(lo, hi + 1):
         if str(v) in verses:
-            print(f"{v} {verses[str(v)]}")
+            last = verses.get("merged", {}).get(str(v))
+            print(f"{v}{f'-{last}' if last else ''} {verses[str(v)]}")
 
 
 def mark() -> None:
