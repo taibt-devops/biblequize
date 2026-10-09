@@ -1,0 +1,577 @@
+[
+ {
+  "book": "1 Thessalonians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư 1 Tê-sa-lô-ni-ca được gửi đến Hội Thánh ở thành nào?",
+  "options": [
+   "Phi-líp",
+   "Tê-sa-lô-ni-ca",
+   "Bê-rê",
+   "Cô-rinh-tô"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hội Thánh Phao-lô lập ở xứ Ma-xê-đô-ni-a. “gửi đến Hội Thánh tại Tê-sa-lô-ni-ca” (1 Tê-sa-lô-ni-ca 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên hãy vui mừng khi nào?",
+  "options": [
+   "Khi thành công",
+   "Vào ngày lễ",
+   "Mỗi buổi sáng",
+   "Mãi mãi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Niềm vui không tùy hoàn cảnh. “Hãy vui mừng mãi mãi” (1 Tê-sa-lô-ni-ca 5:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên hãy cầu nguyện như thế nào?",
+  "options": [
+   "Không thôi",
+   "Khi gặp khó khăn",
+   "Mỗi tuần một lần",
+   "Chỉ trước bữa ăn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Luôn giữ mối thông công với Chúa. “cầu nguyện không thôi” (1 Tê-sa-lô-ni-ca 5:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dạy hãy cảm tạ Chúa vào lúc nào?",
+  "options": [
+   "Vào ngày sa-bát",
+   "Khi khỏe mạnh",
+   "Trong mọi hoàn cảnh",
+   "Khi được ơn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là ý muốn của Đức Chúa Trời. “hãy cảm tạ Chúa trong mọi hoàn cảnh” (1 Tê-sa-lô-ni-ca 5:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ngày của Chúa sẽ đến như gì?",
+  "options": [
+   "Như cơn mưa rào",
+   "Như kẻ trộm ban đêm",
+   "Như mùa gặt",
+   "Như bình minh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Không ai biết trước giờ ấy. “ngày của Chúa sẽ đến như kẻ trộm trong ban đêm” (1 Tê-sa-lô-ni-ca 5:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa đến, người còn sống sẽ được cất lên gặp Chúa ở đâu?",
+  "options": [
+   "Bên bờ biển",
+   "Trong đền thờ",
+   "Trên núi Ô-liu",
+   "Tại không trung"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Và sẽ ở với Chúa mãi mãi. “để gặp Chúa tại không trung” (1 Tê-sa-lô-ni-ca 4:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa giáng lâm, ai sẽ sống lại trước tiên?",
+  "options": [
+   "Các vua chúa",
+   "Người đang sống",
+   "Người chết trong Đấng Christ",
+   "Các thiên sứ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Kế đến người đang sống được cất lên. “những người chết trong Đấng Christ sẽ sống lại trước tiên” (1 Tê-sa-lô-ni-ca 4:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn chớ dập tắt điều gì?",
+  "options": [
+   "Thánh Linh",
+   "Lửa bàn thờ",
+   "Ngọn đèn",
+   "Bếp lửa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Hãy để Thánh Linh hành động. “Chớ dập tắt Thánh Linh” (1 Tê-sa-lô-ni-ca 5:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sau khi xem xét mọi việc, điều gì tốt đẹp thì làm gì?",
+  "options": [
+   "Bỏ đi",
+   "Bán đi",
+   "Giữ lấy",
+   "Giấu đi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Còn mọi hình thức gian ác thì tránh xa. “Điều gì tốt đẹp thì giữ lấy” (1 Tê-sa-lô-ni-ca 5:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông cư xử dịu dàng với tín hữu như ai?",
+  "options": [
+   "Người vú săn sóc con",
+   "Người cha nghiêm khắc",
+   "Một vị vua",
+   "Một người lính"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông thương họ như con mình. “như một người vú săn sóc các con mình” (1 Tê-sa-lô-ni-ca 2:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nhớ sự kiên nhẫn của tín hữu Tê-sa-lô-ni-ca trong điều gì?",
+  "options": [
+   "Luật pháp",
+   "Đau khổ",
+   "Thử thách",
+   "Hi vọng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cùng công việc của đức tin và công lao của yêu thương. “sự kiên nhẫn trong hi vọng” (1 Tê-sa-lô-ni-ca 1:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tín hữu Tê-sa-lô-ni-ca đã từ bỏ gì để phục vụ Đức Chúa Trời?",
+  "options": [
+   "Ruộng đất",
+   "Thần tượng",
+   "Gia đình",
+   "Luật pháp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ quay về với Đức Chúa Trời hằng sống và chân thật. “từ bỏ thần tượng để phục vụ Đức Chúa Trời hằng sống và chân thật” (1 Tê-sa-lô-ni-ca 1:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô làm việc ngày đêm khi rao giảng để làm gì?",
+  "options": [
+   "Để xây nhà hội",
+   "Không thành gánh nặng cho ai",
+   "Để làm giàu",
+   "Để mua đất"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông tự nuôi mình trong khi giảng Tin Lành. “để không trở thành gánh nặng cho một ai trong anh em” (1 Tê-sa-lô-ni-ca 2:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô sẵn lòng ở lại một mình tại thành nào?",
+  "options": [
+   "Cô-rinh-tô",
+   "Phi-líp",
+   "Bê-rê",
+   "A-thên"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để gửi Ti-mô-thê đến thăm tín hữu. “ở lại một mình tại A-thên” (1 Tê-sa-lô-ni-ca 3:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô gửi ai đến để xây dựng và khích lệ tín hữu Tê-sa-lô-ni-ca?",
+  "options": [
+   "Ti-mô-thê",
+   "Sin-vanh",
+   "Tít",
+   "Lu-ca"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người phục vụ Đức Chúa Trời trong Tin Lành. “và gửi Ti-mô-thê, anh em chúng tôi” (1 Tê-sa-lô-ni-ca 3:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên tín hữu tập sống như thế nào?",
+  "options": [
+   "Ồn ào để được biết đến",
+   "Bỏ việc chờ Chúa đến",
+   "Trầm lặng, lao động bằng tay mình",
+   "Nhờ người khác nuôi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Và chăm lo công việc riêng của mình. “Hãy tập sống trầm lặng, chăm lo công việc riêng của mình và lao động bằng chính tay mình” (1 Tê-sa-lô-ni-ca 4:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô không muốn tín hữu đau buồn như ai?",
+  "options": [
+   "Người Hi Lạp",
+   "Người không có hi vọng",
+   "Người giàu có",
+   "Người già cả"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì những người đã ngủ sẽ sống lại. “để anh em không đau buồn như người khác không có hi vọng” (1 Tê-sa-lô-ni-ca 4:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa giáng lâm, có tiếng gọi của ai?",
+  "options": [
+   "Sứ đồ Phao-lô",
+   "Các trưởng lão",
+   "Các tiên tri",
+   "Thiên sứ trưởng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cùng tiếng kèn của Đức Chúa Trời. “với tiếng gọi của thiên sứ trưởng” (1 Tê-sa-lô-ni-ca 4:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô bảo lấy điều gì làm mũ trận?",
+  "options": [
+   "Lời Đức Chúa Trời",
+   "Sự công chính",
+   "Hi vọng về sự cứu rỗi",
+   "Sự bình an"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì chúng ta thuộc về ban ngày. “lấy hi vọng về sự cứu rỗi làm mũ trận” (1 Tê-sa-lô-ni-ca 5:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ý muốn của Đức Chúa Trời là tín hữu phải được gì?",
+  "options": [
+   "Thánh hóa",
+   "Khôn ngoan",
+   "Nổi danh",
+   "Giàu có"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sống trong sự thánh sạch. “Vì ý muốn của Đức Chúa Trời là anh em phải được thánh hóa” (1 Tê-sa-lô-ni-ca 4:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ngoài Phao-lô và Ti-mô-thê, ai cùng đứng tên gửi thư 1 Tê-sa-lô-ni-ca?",
+  "options": [
+   "Sốt-then",
+   "Ba-na-ba",
+   "Tít",
+   "Sin-vanh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sin-vanh từng cùng Phao-lô lập Hội Thánh ở đó. “Phao-lô, Sin-vanh và Ti-mô-thê” (1 Tê-sa-lô-ni-ca 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô bảo hãy mặc áo giáp bằng những gì?",
+  "options": [
+   "Lẽ thật và công chính",
+   "Đức tin và tình yêu thương",
+   "Hi vọng và bình an",
+   "Vàng và đồng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Còn hi vọng cứu rỗi làm mũ trận. “mặc áo giáp bằng đức tin và tình yêu thương” (1 Tê-sa-lô-ni-ca 5:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 3,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ti-mô-thê thuật lại tín hữu Tê-sa-lô-ni-ca ao ước điều gì?",
+  "options": [
+   "Có nhà hội mới",
+   "Được rời thành phố",
+   "Được gặp lại Phao-lô",
+   "Được giàu có"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phao-lô cũng ao ước gặp họ. “ao ước gặp chúng tôi” (1 Tê-sa-lô-ni-ca 3:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 27,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhân danh Chúa, Phao-lô yêu cầu làm gì với lá thư nầy?",
+  "options": [
+   "Đọc cho tất cả anh em nghe",
+   "Gửi về Giê-ru-sa-lem",
+   "Đốt sau khi đọc",
+   "Giữ bí mật"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Để cả Hội Thánh cùng nghe. “hãy đọc thư nầy cho tất cả anh em được nghe” (1 Tê-sa-lô-ni-ca 5:27)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa giáng lâm, cùng với tiếng gọi thiên sứ trưởng là tiếng kèn của ai?",
+  "options": [
+   "Của các vua",
+   "Của thầy tế lễ",
+   "Của Đức Chúa Trời",
+   "Của các tiên tri"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hiệu lệnh ban ra từ trời. “cùng tiếng kèn của Đức Chúa Trời” (1 Tê-sa-lô-ni-ca 4:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]

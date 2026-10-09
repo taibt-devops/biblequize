@@ -59,5 +59,12 @@
   - Bật lại nếu cần: `UPDATE questions q JOIN questions_bak_20261010_rvv11_w3 b ON b.id = q.id SET q.is_active = b.is_active;`
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-11 Đợt 4: vòng 2, phần Tân Ước (11 sách) — xong vòng 2
+  - Status: [x] DONE · 359 câu thay 540 câu cũ · cũ Dễ/TB/Khó → mới Dễ (cốt lõi + bộ sách) / TB / Khó: 1 Cô-rinh-tô 24/36/20 → 10+10 / 25 / 12 · 2 Cô-rinh-tô 14/12/4 → 0+10 / 12 / 6 · Ga-la-ti 15/23/12 → 9+8 / 15 / 8 · Cô-lô-se 10/11/4 → 0+10 / 10 / 5 · 1 Tê-sa-lô-ni-ca 10/11/4 → 0+10 / 10 / 5 · 1 Ti-mô-thê 10/11/4 → 0+10 / 10 / 5 · 2 Ti-mô-thê 10/11/4 → 7+5 / 10 / 5 · Hê-bơ-rơ 24/36/20 → 10+10 / 25 / 12 · 1 Phi-e-rơ 15/23/12 → 0+12 / 15 / 8 · 1 Giăng 15/23/12 → 9+8 / 15 / 8 · Khải Huyền 30/45/25 → 29+5 / 25 / 15
+  - Tránh trùng bộ Dễ cốt lõi (1 Cô-rinh-tô 13, Ga-la-ti 5, 2 Ti-mô-thê 3, Hê-bơ-rơ 11, 1 Giăng 4, Khải Huyền 3 và 21–22) · `retired_hashes.txt` 3.867 hash · `git rm` 11 file tiếng Việt, giữ `_en` · 47 test xanh
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-12 Đợt 4 lên prod
+  - Status: [ ] TODO · seed một lần (kỳ vọng chèn 359 câu) → đối chiếu 540 hash + rà hàng mồ côi → sao lưu `questions_bak_20261010_rvv11_w4` → `is_active=0`
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]

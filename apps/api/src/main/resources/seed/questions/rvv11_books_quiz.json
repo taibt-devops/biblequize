@@ -1,5 +1,2604 @@
 [
  {
+  "book": "1 Corinthians",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư 1 Cô-rinh-tô được gửi đến Hội Thánh ở thành nào?",
+  "options": [
+   "Rô-ma",
+   "Ê-phê-sô",
+   "Phi-líp",
+   "Cô-rinh-tô"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Một thành lớn của xứ A-chai. “kính gửi Hội Thánh Đức Chúa Trời tại Cô-rinh-tô” (1 Cô-rinh-tô 1:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 3,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô trồng, A-pô-lô tưới, nhưng ai làm cho lớn lên?",
+  "options": [
+   "Phi-e-rơ",
+   "Hội Thánh",
+   "Đức Chúa Trời",
+   "Người trồng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người làm việc không đáng khoe, Chúa mới đáng tôn. “nhưng Đức Chúa Trời đã làm cho lớn lên” (1 Cô-rinh-tô 3:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói nền móng duy nhất đã được đặt là ai?",
+  "options": [
+   "Phao-lô",
+   "Đức Chúa Jêsus Christ",
+   "Môi-se",
+   "Phi-e-rơ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chẳng ai có thể đặt một nền móng khác. “ngoài nền đã được đặt là Đức Chúa Jêsus Christ” (1 Cô-rinh-tô 3:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 6,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói thân thể của tín hữu là đền thờ của ai?",
+  "options": [
+   "Đức Thánh Linh",
+   "Vua chúa",
+   "Các sứ đồ",
+   "Các thiên sứ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vì vậy phải dùng thân thể mà tôn vinh Chúa. “thân thể anh em là đền thờ của Đức Thánh Linh” (1 Cô-rinh-tô 6:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 10,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Dù ăn, uống hay làm bất cứ việc gì, Phao-lô dạy hãy làm vì điều gì?",
+  "options": [
+   "Lời khen của người",
+   "Vinh quang của Đức Chúa Trời",
+   "Sức khỏe bản thân",
+   "Lợi ích riêng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Mọi việc nhỏ cũng có thể tôn vinh Chúa. “hãy làm tất cả vì vinh quang của Đức Chúa Trời” (1 Cô-rinh-tô 10:31)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 12,
+  "verseStart": 27,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Hội Thánh là gì của Đấng Christ?",
+  "options": [
+   "Thân của Đấng Christ",
+   "Bạn của thiên sứ",
+   "Đầy tớ của Phao-lô",
+   "Môn đồ của A-pô-lô"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Mỗi người là một chi thể. “Anh em là thân của Đấng Christ” (1 Cô-rinh-tô 12:27)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 15,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo Kinh Thánh, Đấng Christ sống lại vào ngày thứ mấy?",
+  "options": [
+   "Ngày thứ bảy",
+   "Ngày thứ bốn mươi",
+   "Ngày thứ nhất",
+   "Ngày thứ ba"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đây là điều cốt lõi của Tin Lành. “đến ngày thứ ba, Ngài đã sống lại theo lời Kinh Thánh” (1 Cô-rinh-tô 15:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 16,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dạy mọi điều tín hữu làm phải làm trong điều gì?",
+  "options": [
+   "Sự sợ hãi",
+   "Sự vội vàng",
+   "Tình yêu thương",
+   "Sự bí mật"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lời khuyên gần cuối thư. “Mọi điều anh em làm, hãy làm trong tình yêu thương.” (1 Cô-rinh-tô 16:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 9,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói trong cuộc chạy đua, có bao nhiêu người đoạt giải?",
+  "options": [
+   "Ba người",
+   "Mười người",
+   "Một người",
+   "Mọi người"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vậy hãy chạy thế nào để đoạt giải. “tất cả đều chạy nhưng chỉ có một người đoạt giải” (1 Cô-rinh-tô 9:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 11,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi bẻ bánh, Chúa Jêsus bảo hãy làm điều nầy để làm gì?",
+  "options": [
+   "Để được khen",
+   "Để nhớ đến Ngài",
+   "Để được giàu có",
+   "Để được no bụng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đó là ý nghĩa của Tiệc Thánh. “hãy làm điều nầy để nhớ đến Ta” (1 Cô-rinh-tô 11:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai cùng Phao-lô đứng tên trong thư 1 Cô-rinh-tô?",
+  "options": [
+   "Tít",
+   "Si-la",
+   "Ti-mô-thê",
+   "Sốt-then"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phao-lô gọi ông là anh em chúng ta. “cùng với Sốt-then, anh em chúng ta” (1 Cô-rinh-tô 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai báo cho Phao-lô biết Hội Thánh Cô-rinh-tô đang bất hòa?",
+  "options": [
+   "Người nhà Cơ-lô-ê",
+   "A-pô-lô",
+   "Sê-pha",
+   "Pê-rít-sin"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Phao-lô viết thư để giải quyết sự chia rẽ. “người nhà Cơ-lô-ê có tin cho tôi biết” (1 Cô-rinh-tô 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tín hữu Cô-rinh-tô chia phe nói mình thuộc về những ai?",
+  "options": [
+   "Phao-lô, A-pô-lô, Sê-pha",
+   "Ba-na-ba, Si-la, Tít",
+   "Phi-e-rơ, Giăng, Gia-cơ",
+   "Môi-se, Ê-li, Đa-vít"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Có người còn nói: Tôi thuộc về Đấng Christ. “Tôi thuộc về A-pô-lô” (1 Cô-rinh-tô 1:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Với chúng ta là người được cứu, sứ điệp thập tự giá là gì?",
+  "options": [
+   "Sự điên rồ",
+   "Một chuyện xưa",
+   "Một luật lệ mới",
+   "Quyền năng của Đức Chúa Trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Với người hư mất thì đó là điên rồ. “thì đó là quyền năng của Đức Chúa Trời” (1 Cô-rinh-tô 1:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 1,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời chọn những điều dại dột ở thế gian để làm gì?",
+  "options": [
+   "Dạy trẻ con",
+   "Làm hổ thẹn người khôn ngoan",
+   "Thử thách người nghèo",
+   "Làm vui lòng vua"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Để không ai khoe khoang trước mặt Ngài. “Đức Chúa Trời đã chọn những điều dại dột ở thế gian để làm hổ thẹn những người khôn ngoan” (1 Cô-rinh-tô 1:27)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Những gì mắt chưa thấy, tai chưa nghe, Đức Chúa Trời dành sẵn cho ai?",
+  "options": [
+   "Các vua chúa",
+   "Các thiên sứ",
+   "Những người yêu mến Ngài",
+   "Người giàu có"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là điều lòng người chưa nghĩ đến. “Đức Chúa Trời đã dành sẵn cho những người yêu mến Ngài” (1 Cô-rinh-tô 2:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 3,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông đã trồng, còn ai đã tưới?",
+  "options": [
+   "Ti-mô-thê",
+   "A-pô-lô",
+   "Ba-na-ba",
+   "Phi-e-rơ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Mỗi người làm phần việc Chúa giao. “Tôi đã trồng, A-pô-lô đã tưới” (1 Cô-rinh-tô 3:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 3,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô hỏi: anh em không biết mình là gì của Đức Chúa Trời sao?",
+  "options": [
+   "Đền thờ",
+   "Vườn nho",
+   "Đạo quân",
+   "Bầy chiên"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Thánh Linh của Đức Chúa Trời ngự trong anh em. “anh em là đền thờ của Đức Chúa Trời” (1 Cô-rinh-tô 3:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô gọi Đấng Christ là gì của chúng ta?",
+  "options": [
+   "Vua Đa-vít mới",
+   "Đá góc nhà",
+   "Thầy tế lễ dòng Lê-vi",
+   "Chiên Con lễ Vượt Qua"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài đã được dâng làm sinh tế. “Đấng Christ, Chiên Con lễ Vượt Qua của chúng ta” (1 Cô-rinh-tô 5:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô bảo Hội Thánh hãy làm sạch thứ gì đi?",
+  "options": [
+   "Nhà cũ",
+   "Áo cũ",
+   "Men cũ",
+   "Bình cũ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để trở thành đống bột mới không men. “Hãy làm sạch men cũ đi” (1 Cô-rinh-tô 5:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 6,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói tín hữu đã được mua bằng gì?",
+  "options": [
+   "Giá rất cao",
+   "Một lời hứa",
+   "Vàng bạc",
+   "Của lễ thiêu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vì vậy họ không còn thuộc về chính mình. “anh em đã được mua bằng giá rất cao” (1 Cô-rinh-tô 6:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 9,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô trở nên mọi cách cho mọi người để làm gì?",
+  "options": [
+   "Được trả công",
+   "Cứu được vài người",
+   "Tránh bị bắt bớ",
+   "Được nổi tiếng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Không cứ cách nào, miễn đem người đến với Chúa. “Tôi đã trở nên mọi cách cho mọi người để có thể cứu được vài người” (1 Cô-rinh-tô 9:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 10,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thử thách, Đức Chúa Trời thành tín sẽ làm gì?",
+  "options": [
+   "Cất hết thử thách",
+   "Để mặc chúng ta",
+   "Phạt kẻ gây ra",
+   "Mở đường cho ra khỏi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để chúng ta có thể chịu được. “Ngài sẽ mở đường cho ra khỏi” (1 Cô-rinh-tô 10:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 10,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời không để tín hữu bị thử thách như thế nào?",
+  "options": [
+   "Một mình",
+   "Ban đêm",
+   "Quá sức mình",
+   "Lần nào nữa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngài là Đấng thành tín. “Ngài không để anh em bị thử thách quá sức mình đâu” (1 Cô-rinh-tô 10:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 11,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Tiệc Thánh, Chúa Jêsus nói chén là gì?",
+  "options": [
+   "Chén rượu cưới",
+   "Chén chúc phước",
+   "Giao ước mới trong huyết Ngài",
+   "Chén của Môi-se"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hễ khi nào uống, hãy làm để nhớ Ngài. “Chén nầy là giao ước mới trong huyết Ta” (1 Cô-rinh-tô 11:25)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 12,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Có nhiều ân tứ khác nhau, nhưng chỉ có một điều gì?",
+  "options": [
+   "Một sứ đồ",
+   "Một Hội Thánh",
+   "Một luật pháp",
+   "Một Thánh Linh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Mọi ân tứ đến từ cùng một Thánh Linh. “Có nhiều ân tứ khác nhau, nhưng chỉ có một Thánh Linh.” (1 Cô-rinh-tô 12:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 12,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô ví Hội Thánh như một thân có nhiều gì?",
+  "options": [
+   "Tên gọi",
+   "Chi thể",
+   "Cái đầu",
+   "Linh hồn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Các chi thể tuy nhiều nhưng vẫn là một thân. “chỉ có một thân nhưng có nhiều chi thể” (1 Cô-rinh-tô 12:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 14,
+  "verseStart": 33,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Đức Chúa Trời không phải là Đức Chúa Trời của điều gì?",
+  "options": [
+   "Sự hỗn loạn",
+   "Sự bình an",
+   "Sự trật tự",
+   "Sự yêu thương"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài là Đức Chúa Trời của sự bình an. “Đức Chúa Trời không phải là Đức Chúa Trời của sự hỗn loạn” (1 Cô-rinh-tô 14:33)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 14,
+  "verseStart": 40,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dạy mọi sự trong buổi nhóm phải được làm thế nào?",
+  "options": [
+   "Thật nhanh",
+   "Thật bí mật",
+   "Thật to tiếng",
+   "Thích hợp và trật tự"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lời kết cho phần nói về ân tứ. “hãy thực hiện mọi sự một cách thích hợp và trật tự” (1 Cô-rinh-tô 14:40)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 15,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi sống lại, cùng một lúc Chúa hiện ra cho bao nhiêu anh em?",
+  "options": [
+   "Bảy mươi",
+   "Năm nghìn",
+   "Hơn năm trăm",
+   "Mười hai"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phần lớn họ vẫn còn sống khi Phao-lô viết thư. “Ngài hiện ra cho hơn năm trăm anh em” (1 Cô-rinh-tô 15:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 15,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô gọi Đấng Christ sống lại là gì của những kẻ ngủ?",
+  "options": [
+   "Trái đầu mùa",
+   "Ngọn đèn",
+   "Người canh gác",
+   "Bài ca"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài sống lại trước, rồi đến những người thuộc về Ngài. “Ngài là trái đầu mùa của những kẻ ngủ” (1 Cô-rinh-tô 15:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 15,
+  "verseStart": 52,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói người chết sẽ sống lại vào lúc nào?",
+  "options": [
+   "Lúc mặt trời mọc",
+   "Lúc tiếng kèn cuối cùng",
+   "Lúc gà gáy",
+   "Ngày sa-bát"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Và chúng ta sẽ được biến hóa. “vào lúc tiếng kèn cuối cùng” (1 Cô-rinh-tô 15:52)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 15,
+  "verseStart": 55,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô hỏi sự chết: cái gì của mầy ở đâu?",
+  "options": [
+   "Cái nọc",
+   "Thanh gươm",
+   "Vương miện",
+   "Cánh cửa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sự chết đã bị nuốt mất trong sự đắc thắng. “Hỡi sự chết, cái nọc của mầy ở đâu?” (1 Cô-rinh-tô 15:55)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 15,
+  "verseStart": 58,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói công khó của tín hữu trong Chúa thì thế nào?",
+  "options": [
+   "Không ai thấy",
+   "Chẳng phải vô ích",
+   "Chỉ là tạm thời",
+   "Sẽ bị quên"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì vậy hãy vững vàng, chớ rúng động. “công khó của anh em trong Chúa chẳng phải là vô ích đâu” (1 Cô-rinh-tô 15:58)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 16,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên tín hữu hãy đứng vững trong điều gì?",
+  "options": [
+   "Học thức",
+   "Của cải",
+   "Đức tin",
+   "Truyền thống"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hãy tỉnh thức, can đảm và mạnh mẽ. “hãy đứng vững trong đức tin” (1 Cô-rinh-tô 16:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 15,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong danh sách của Phao-lô, Chúa sống lại hiện ra trước hết cho ai?",
+  "options": [
+   "Phao-lô",
+   "Giăng",
+   "Gia-cơ",
+   "Sê-pha"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Rồi cho nhóm mười hai sứ đồ. “Ngài đã hiện ra cho Sê-pha” (1 Cô-rinh-tô 15:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 15,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sau năm trăm anh em, Chúa sống lại hiện ra cho ai?",
+  "options": [
+   "Gia-cơ",
+   "Phi-e-rơ",
+   "Thô-ma",
+   "Giăng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sau đó cho tất cả các sứ đồ. “Ngài cũng hiện ra cho Gia-cơ” (1 Cô-rinh-tô 15:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 15,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô ví mình được Chúa hiện ra như cho ai?",
+  "options": [
+   "Một người mù",
+   "Một thai sinh non",
+   "Một con chiên lạc",
+   "Một tôi tớ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông là người sau hết được thấy Chúa sống lại. “như cho một thai sinh non vậy” (1 Cô-rinh-tô 15:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 16,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn mỗi người dành ra phần quyên góp vào ngày nào?",
+  "options": [
+   "Ngày sa-bát",
+   "Cuối mỗi tháng",
+   "Ngày đầu tuần",
+   "Ngày lễ Vượt Qua"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đừng đợi khi ông đến mới quyên góp. “Vào mỗi ngày đầu tuần” (1 Cô-rinh-tô 16:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 16,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vợ chồng nào có Hội Thánh nhóm trong nhà gửi lời chào tín hữu Cô-rinh-tô?",
+  "options": [
+   "Cơ-lô-ê và Sốt-then",
+   "Gai-út và Ê-rát",
+   "An-trô-ni-cơ và Giu-ni-a",
+   "A-qui-la và Pê-rít-sin"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ từng ở Cô-rinh-tô với Phao-lô. “A-qui-la, Pê-rít-sin và Hội Thánh nhóm lại trong nhà họ” (1 Cô-rinh-tô 16:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 16,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô chuyển lời chào của các Hội Thánh ở vùng nào?",
+  "options": [
+   "Giu-đê",
+   "Ma-xê-đô-ni-a",
+   "Ga-la-ti",
+   "A-si-a"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phao-lô viết thư từ Ê-phê-sô. “Các Hội Thánh tại vùng A-si-a chào thăm anh em” (1 Cô-rinh-tô 16:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Với những người hư mất, sứ điệp thập tự giá là gì?",
+  "options": [
+   "Quyền năng",
+   "Điên rồ",
+   "Khôn ngoan",
+   "Đáng sợ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Còn với người được cứu thì đó là quyền năng Chúa. “đối với những người hư mất là điên rồ” (1 Cô-rinh-tô 1:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 1,
+  "verseStart": 27,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời chọn những gì yếu đuối để làm hổ thẹn ai?",
+  "options": [
+   "Những người mạnh mẽ",
+   "Những người khôn ngoan",
+   "Những người già cả",
+   "Những người giàu có"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Điều dại dột thì làm hổ thẹn người khôn ngoan. “để làm hổ thẹn những người mạnh mẽ” (1 Cô-rinh-tô 1:27)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 9,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Với những người yếu đuối, Phao-lô trở nên thế nào?",
+  "options": [
+   "Như người giàu",
+   "Như quan tòa",
+   "Như người yếu đuối",
+   "Như thầy dạy"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để chinh phục những người yếu đuối. “tôi trở nên như một người yếu đuối” (1 Cô-rinh-tô 9:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 11,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Chúa Jêsus lấy bánh lập Tiệc Thánh trong đêm nào?",
+  "options": [
+   "Đêm lễ Lều Tạm",
+   "Đêm Ngài sống lại",
+   "Đêm Ngài bị phản nộp",
+   "Đêm Ngài giáng sinh"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phao-lô truyền lại điều ông đã nhận nơi Chúa. “trong đêm Chúa là Đức Chúa Jêsus bị phản nộp” (1 Cô-rinh-tô 11:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 15,
+  "verseStart": 52,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói sự biến hóa của chúng ta xảy ra nhanh thế nào?",
+  "options": [
+   "Trong nháy mắt",
+   "Trong một giờ",
+   "Trong ba ngày",
+   "Trong bốn mươi ngày"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Trong khoảnh khắc, lúc tiếng kèn cuối cùng. “trong khoảnh khắc, trong nháy mắt” (1 Cô-rinh-tô 15:52)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Corinthians",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói tín hữu thật sự là bánh gì?",
+  "options": [
+   "Bánh lúa mạch",
+   "Bánh có men",
+   "Bánh thánh",
+   "Bánh không men"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vì Chiên Con lễ Vượt Qua đã được dâng. “như anh em thật sự là bánh không men vậy” (1 Cô-rinh-tô 5:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sứ đồ Giăng công bố Đức Chúa Trời là gì?",
+  "options": [
+   "Nước",
+   "Ánh sáng",
+   "Lửa",
+   "Gió"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Trong Ngài không có bóng tối nào. “Đức Chúa Trời là ánh sáng” (1 Giăng 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nếu chúng ta xưng tội mình, Đức Chúa Trời sẽ làm gì?",
+  "options": [
+   "Phạt nặng hơn",
+   "Quên chúng ta",
+   "Tha tội và tẩy sạch chúng ta",
+   "Bắt dâng của lễ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì Ngài thành tín và công chính. “sẽ tha tội cho chúng ta và tẩy sạch chúng ta khỏi mọi điều bất chính” (1 Giăng 1:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói huyết của Đức Chúa Jêsus làm gì cho chúng ta?",
+  "options": [
+   "Chữa mọi bệnh",
+   "Mở mắt người mù",
+   "Làm cho giàu có",
+   "Tẩy sạch mọi tội"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Khi chúng ta bước đi trong ánh sáng. “huyết của Đức Chúa Jêsus, Con Ngài, tẩy sạch mọi tội của chúng ta” (1 Giăng 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giăng khuyên chớ yêu điều gì?",
+  "options": [
+   "Thế gian",
+   "Anh em mình",
+   "Kẻ thù",
+   "Hội Thánh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ai yêu thế gian thì không kính yêu Đức Chúa Cha. “Chớ yêu thế gian cùng những gì trong thế gian.” (1 Giăng 2:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vì tình yêu lớn lao của Đức Chúa Cha, chúng ta được gọi là gì?",
+  "options": [
+   "Khách lạ",
+   "Đầy tớ của Chúa",
+   "Lính chiến",
+   "Con cái Đức Chúa Trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Và chúng ta thật là con cái Ngài. “chúng ta được gọi là con cái của Đức Chúa Trời” (1 Giăng 3:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 3,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giăng khuyên chớ yêu bằng lời nói, mà phải yêu bằng gì?",
+  "options": [
+   "Thư từ",
+   "Việc làm và sự chân thật",
+   "Quà tặng",
+   "Lời hứa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tình yêu thật được bày tỏ qua hành động. “phải yêu bằng việc làm và sự chân thật” (1 Giăng 3:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 5,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Câu cuối thư 1 Giăng khuyên hãy giữ mình khỏi điều gì?",
+  "options": [
+   "Người ngoại",
+   "Sự nghèo khó",
+   "Hình tượng",
+   "Bệnh tật"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lời dặn dò sau cùng của sứ đồ. “hãy giữ mình khỏi hình tượng!” (1 Giăng 5:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 2,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói người làm theo ý muốn Đức Chúa Trời thì sao?",
+  "options": [
+   "Còn lại đời đời",
+   "Trở nên giàu có",
+   "Không bao giờ khổ",
+   "Được nổi tiếng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Còn thế gian thì qua đi. “ai làm theo ý muốn của Đức Chúa Trời thì còn lại đời đời” (1 Giăng 2:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói về lời sự sống mà tay các sứ đồ đã làm gì?",
+  "options": [
+   "Đã chạm đến",
+   "Đã che giấu",
+   "Đã viết ra",
+   "Đã đánh mất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Họ đã nghe, thấy và chiêm ngưỡng Ngài. “tay chúng tôi đã chạm đến” (1 Giăng 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói trong Đức Chúa Trời không có điều gì?",
+  "options": [
+   "Tình yêu",
+   "Sự sống",
+   "Bóng tối",
+   "Ánh sáng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì Ngài là ánh sáng. “trong Ngài không có bất cứ bóng tối nào” (1 Giăng 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nếu có ai phạm tội, chúng ta có ai biện hộ với Đức Chúa Cha?",
+  "options": [
+   "Các thiên sứ",
+   "Môi-se",
+   "Thầy tế lễ thượng phẩm",
+   "Đức Chúa Jêsus Christ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài là Đấng công chính. “chúng ta có Đấng biện hộ với Đức Chúa Cha là Đức Chúa Jêsus Christ” (1 Giăng 2:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 2,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai nói mình ở trong Ngài thì phải sống thế nào?",
+  "options": [
+   "Dâng nhiều của lễ",
+   "Bước đi như Ngài đã bước",
+   "Lên đền thờ thường xuyên",
+   "Học thuộc luật pháp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lời nói phải đi đôi với đời sống. “phải bước đi như chính Ngài đã bước đi” (1 Giăng 2:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 2,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Điều nào được Giăng kể là thuộc về thế gian?",
+  "options": [
+   "Ham muốn của mắt",
+   "Yêu thương anh em",
+   "Cầu nguyện",
+   "Vâng lời Chúa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cùng với dục vọng xác thịt và kiêu ngạo. “dục vọng của xác thịt, ham muốn của mắt, và sự kiêu ngạo về cuộc sống” (1 Giăng 2:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 2,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói thế gian với những dục vọng của nó thì sao?",
+  "options": [
+   "Mạnh thêm",
+   "Sẽ trở lại",
+   "Đều qua đi",
+   "Còn mãi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chỉ người làm theo ý Chúa còn lại đời đời. “Thế gian với những dục vọng của nó đều qua đi” (1 Giăng 2:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói Con Đức Chúa Trời hiện ra để làm gì?",
+  "options": [
+   "Phán xét dân ngoại",
+   "Xây đền thờ mới",
+   "Lập vương quốc trần gian",
+   "Hủy phá công việc ma quỷ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ma quỷ đã phạm tội từ ban đầu. “để hủy phá công việc của ma quỷ” (1 Giăng 3:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 3,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói chúng ta biết tình yêu thương qua điều gì?",
+  "options": [
+   "Ngài cho chúng ta giàu",
+   "Ngài hi sinh mạng sống vì ta",
+   "Ngài làm nhiều phép lạ",
+   "Ngài ban luật pháp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vậy chúng ta cũng phải hi sinh vì anh em. “Ngài đã hi sinh mạng sống vì chúng ta” (1 Giăng 3:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng khuyên phải làm gì với các thần linh?",
+  "options": [
+   "Thử xem có từ Đức Chúa Trời không",
+   "Tin tất cả",
+   "Bỏ qua họ",
+   "Thờ lạy họ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vì có nhiều tiên tri giả. “hãy thử xem các thần linh đó có phải đến từ Đức Chúa Trời không” (1 Giăng 4:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói Đấng ở trong tín hữu thế nào so với kẻ ở trong thế gian?",
+  "options": [
+   "Ngang bằng",
+   "Vĩ đại hơn",
+   "Yếu hơn",
+   "Ở xa hơn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì vậy tín hữu đã chiến thắng. “Đấng ở trong các con vĩ đại hơn kẻ ở trong thế gian” (1 Giăng 4:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói ai ở trong tình yêu thương thì ở trong ai?",
+  "options": [
+   "Trong thế gian",
+   "Trong Hội Thánh",
+   "Trong chính mình",
+   "Trong Đức Chúa Trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Và Đức Chúa Trời ở trong người ấy. “ai ở trong tình yêu thương thì ở trong Đức Chúa Trời” (1 Giăng 4:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 5,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói yêu Đức Chúa Trời tức là gì?",
+  "options": [
+   "Đi hành hương",
+   "Kiêng ăn mỗi tuần",
+   "Vâng giữ các điều răn Ngài",
+   "Dâng thật nhiều tiền"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tình yêu được bày tỏ qua sự vâng lời. “Yêu Đức Chúa Trời tức là chúng ta vâng giữ các điều răn của Ngài” (1 Giăng 5:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 5,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói điều làm cho chúng ta chiến thắng thế gian là gì?",
+  "options": [
+   "Của cải",
+   "Sức mạnh",
+   "Trí khôn",
+   "Đức tin"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ai sinh bởi Đức Chúa Trời thì chiến thắng thế gian. “điều làm cho chúng ta chiến thắng thế gian chính là đức tin của chúng ta” (1 Giăng 5:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 5,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói sự sống đời đời Đức Chúa Trời ban ở trong ai?",
+  "options": [
+   "Trong Con Ngài",
+   "Trong luật pháp",
+   "Trong đền thờ",
+   "Trong các thiên sứ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là lời chứng của Đức Chúa Trời. “sự sống nầy ở trong Con Ngài” (1 Giăng 5:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 5,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Giăng, ai có Đức Chúa Con thì có điều gì?",
+  "options": [
+   "Sự giàu có",
+   "Quyền lực",
+   "Sự sống",
+   "Danh tiếng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ai không có Con thì không có sự sống. “Ai có Đức Chúa Con thì có sự sống” (1 Giăng 5:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 5,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói các điều răn của Đức Chúa Trời thế nào?",
+  "options": [
+   "Chỉ cho thầy tế lễ",
+   "Không nặng nề",
+   "Thay đổi mỗi năm",
+   "Rất khó giữ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì ai sinh bởi Đức Chúa Trời thì chiến thắng thế gian. “điều răn của Ngài không phải là nặng nề” (1 Giăng 5:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 5,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giăng viết thư để tín hữu biết chắc điều gì?",
+  "options": [
+   "Ngày tận thế",
+   "Mình có sự sống đời đời",
+   "Một luật mới",
+   "Tên các sứ đồ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Viết cho những người đã tin danh Con Đức Chúa Trời. “để anh em biết mình có sự sống đời đời” (1 Giăng 5:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giăng viết cho các bạn trẻ vì họ đã làm được điều gì?",
+  "options": [
+   "Chiến thắng ma quỷ",
+   "Được tha tội",
+   "Biết Đấng từ ban đầu",
+   "Dâng nhiều của lễ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lời Đức Chúa Trời ở trong họ. “Hỡi các bạn trẻ, tôi viết cho các bạn vì các bạn đã chiến thắng ma quỷ.” (1 Giăng 2:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giăng viết cho các phụ lão vì họ đã biết ai?",
+  "options": [
+   "Vua Đa-vít",
+   "Môi-se",
+   "Các tiên tri xưa",
+   "Đấng hiện hữu từ ban đầu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Mỗi lứa tuổi được nhắc một điều riêng. “các ông đã biết Đấng hiện hữu từ ban đầu” (1 Giăng 2:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói ma quỷ đã phạm tội từ khi nào?",
+  "options": [
+   "Từ thời Nô-ê",
+   "Từ khi Chúa giáng sinh",
+   "Từ lúc ban đầu",
+   "Từ thời Môi-se"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ai phạm tội thì thuộc về ma quỷ. “ma quỷ đã phạm tội từ lúc ban đầu” (1 Giăng 3:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 3,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vì Chúa đã hi sinh mạng sống, Giăng nói chúng ta cũng phải làm gì?",
+  "options": [
+   "Dâng thêm của lễ",
+   "Rời bỏ gia đình",
+   "Hi sinh mạng sống vì anh em",
+   "Lập đền thờ mới"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tình yêu thật đòi hỏi hi sinh. “chúng ta cũng phải hi sinh mạng sống vì anh em mình” (1 Giăng 3:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói vì sao phải thử các thần linh?",
+  "options": [
+   "Vì có nhiều thiên sứ",
+   "Vì có nhiều tiên tri giả",
+   "Vì có nhiều vua",
+   "Vì có nhiều thầy tế lễ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ đã xuất hiện trong thế gian. “vì có nhiều kẻ tiên tri giả đã xuất hiện trong thế gian” (1 Giăng 4:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 John",
+  "chapter": 2,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Giăng nói sự kiêu ngạo về điều gì không đến từ Đức Chúa Cha?",
+  "options": [
+   "Về cuộc sống",
+   "Về đức tin",
+   "Về lời Chúa",
+   "Về Hội Thánh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nó đến từ thế gian. “sự kiêu ngạo về cuộc sống” (1 Giăng 2:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ai là tác giả thư 1 Phi-e-rơ?",
+  "options": [
+   "Phao-lô",
+   "Gia-cơ",
+   "Phi-e-rơ",
+   "Giăng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sứ đồ của Đức Chúa Jêsus Christ. “Phi-e-rơ, sứ đồ của Đức Chúa Jêsus Christ” (1 Phi-e-rơ 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo lời chép, vì sao dân Chúa phải thánh?",
+  "options": [
+   "Vì sứ đồ bảo",
+   "Vì Chúa là thánh",
+   "Vì sẽ được thưởng",
+   "Vì luật dạy vậy"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phi-e-rơ trích sách Lê-vi Ký. “Các con phải thánh, vì Ta là thánh.” (1 Phi-e-rơ 1:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 1,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ nói chúng ta được chuộc bởi điều gì?",
+  "options": [
+   "Huyết báu của Đấng Christ",
+   "Của lễ thiêu",
+   "Bạc và vàng",
+   "Việc lành của mình"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Như huyết của chiên con không tì vết. “nhưng bởi huyết báu của Đấng Christ” (1 Phi-e-rơ 1:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 1,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ nói lời Chúa tồn tại bao lâu?",
+  "options": [
+   "Một nghìn năm",
+   "Đến khi hoa rụng",
+   "Một thời gian",
+   "Đời đời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lời ấy là Tin Lành đã được công bố. “Nhưng lời Chúa tồn tại đời đời.” (1 Phi-e-rơ 1:25)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ khuyên khao khát sữa thiêng liêng như ai?",
+  "options": [
+   "Như người già",
+   "Như người đói",
+   "Như trẻ sơ sinh",
+   "Như chiên con"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để được lớn lên trong sự cứu rỗi. “như trẻ sơ sinh” (1 Phi-e-rơ 2:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 2,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nhờ những vết thương của Đấng Christ, chúng ta được gì?",
+  "options": [
+   "Được ra khỏi tù",
+   "Được giàu có",
+   "Được nổi tiếng",
+   "Được chữa lành"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài mang tội lỗi chúng ta trên cây gỗ. “nhờ những vết thương của Ngài mà anh em được chữa lành” (1 Phi-e-rơ 2:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 2,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ nói trước kia lạc lối, nay tín hữu đã trở về với ai?",
+  "options": [
+   "Đấng Chăn Chiên của linh hồn",
+   "Đền thờ Giê-ru-sa-lem",
+   "Nhà cha mẹ",
+   "Các sứ đồ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Trước kia họ như chiên đi lạc. “đã trở về với Đấng Chăn Chiên và Giám Mục của linh hồn mình” (1 Phi-e-rơ 2:25)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 4,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ nói tình yêu thương che lấp điều gì?",
+  "options": [
+   "Mọi sợ hãi",
+   "Vô số tội lỗi",
+   "Mọi bệnh tật",
+   "Mọi nghèo khó"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì vậy hãy yêu thương nhau tha thiết. “tình yêu thương che lấp vô số tội lỗi” (1 Phi-e-rơ 4:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ khuyên hãy trao điều gì cho Chúa?",
+  "options": [
+   "Mọi của cải",
+   "Mọi điều lo lắng",
+   "Mọi lời hứa",
+   "Mọi việc làm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì Ngài luôn chăm sóc chúng ta. “Hãy trao mọi điều lo lắng mình cho Ngài” (1 Phi-e-rơ 5:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 5,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ ví ma quỷ như con gì đang rình rập?",
+  "options": [
+   "Sư tử gầm thét",
+   "Gấu dữ",
+   "Sói đói",
+   "Rắn độc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Hãy tiết độ và tỉnh thức. “như sư tử gầm thét” (1 Phi-e-rơ 5:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 3,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ khuyên luôn sẵn sàng trả lời người hỏi về điều gì?",
+  "options": [
+   "Học thức của mình",
+   "Dòng dõi của mình",
+   "Của cải của mình",
+   "Niềm hi vọng của mình"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nhưng phải ôn tồn và trân trọng. “Luôn sẵn sàng để trả lời những kẻ chất vấn về niềm hi vọng trong anh em” (1 Phi-e-rơ 3:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ nói đức tin sau khi được thử nghiệm sẽ quý hơn gì?",
+  "options": [
+   "Bạc",
+   "Dầu thơm",
+   "Vàng",
+   "Ngọc trai"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vàng dù thử lửa vẫn có thể hư hoại. “sẽ quý hơn vàng” (1 Phi-e-rơ 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhờ Đức Chúa Jêsus sống lại, chúng ta được tái sinh để có gì?",
+  "options": [
+   "Một danh tiếng lớn",
+   "Một hi vọng sống",
+   "Một gia tài đất đai",
+   "Một chức vụ cao"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bởi lòng thương xót dư dật của Đức Chúa Trời. “chúng ta được tái sinh để có một hi vọng sống” (1 Phi-e-rơ 1:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ nói tín hữu không được chuộc bằng những vật dễ hư hoại nào?",
+  "options": [
+   "Lúa mì và dầu",
+   "Chiên và bò",
+   "Đất và nhà",
+   "Bạc hoặc vàng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ được chuộc khỏi lối sống phù phiếm của tổ tiên. “những vật dễ hư hoại như bạc hoặc vàng” (1 Phi-e-rơ 1:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 1,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ ví huyết báu của Đấng Christ như huyết của gì?",
+  "options": [
+   "Chiên con không tì vết",
+   "Chim bồ câu",
+   "Dê đực",
+   "Bò đực tơ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Không khuyết tật, không tì vết. “như huyết của chiên con không khuyết tật, không tì vết” (1 Phi-e-rơ 1:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 1,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ trích lời chép: mọi xác thịt giống như gì?",
+  "options": [
+   "Cây bá hương",
+   "Núi",
+   "Cỏ",
+   "Đá"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cỏ khô, hoa rụng. “Mọi xác thịt giống như cỏ” (1 Phi-e-rơ 1:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 2,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ ví tín hữu như gì để xây nên ngôi nhà thiêng liêng?",
+  "options": [
+   "Những viên gạch",
+   "Những cây gỗ",
+   "Những hòn đá sống",
+   "Những cột đồng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để làm chức tế lễ thánh. “như những hòn đá sống mà xây nên ngôi nhà thiêng liêng” (1 Phi-e-rơ 2:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ gọi tín hữu là chức tế lễ gì?",
+  "options": [
+   "Dòng Lê-vi",
+   "Dòng A-rôn",
+   "Ban Mên-chi-xê-đéc",
+   "Hoàng gia"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cũng là dân tộc thánh, dân thuộc riêng về Chúa. “là chức tế lễ hoàng gia” (1 Phi-e-rơ 2:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ nói Chúa đã gọi tín hữu ra khỏi đâu?",
+  "options": [
+   "Đất Ai Cập",
+   "Nơi tối tăm",
+   "Nhà tù",
+   "Thành Ba-by-lôn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đưa vào ánh sáng diệu kỳ của Ngài. “Đấng đã gọi anh em ra khỏi nơi tối tăm” (1 Phi-e-rơ 2:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 2,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đấng Christ mang tội lỗi chúng ta trong thân thể Ngài trên đâu?",
+  "options": [
+   "Cây gỗ",
+   "Tảng đá",
+   "Bàn thờ",
+   "Núi Si-ôn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Để chúng ta sống cho sự công chính. “trong thân thể Ngài trên cây gỗ” (1 Phi-e-rơ 2:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 3,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ nói vẻ đẹp quý giá trước mặt Đức Chúa Trời là gì?",
+  "options": [
+   "Áo quần lộng lẫy",
+   "Đeo nhiều vàng",
+   "Làm tóc cầu kỳ",
+   "Tinh thần dịu dàng, yên lặng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vẻ đẹp bề trong không phai tàn. “tinh thần dịu dàng, yên lặng” (1 Phi-e-rơ 3:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 3,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ nói trong tàu thời Nô-ê có bao nhiêu người được cứu?",
+  "options": [
+   "Hai người",
+   "Mười hai người",
+   "Tám người",
+   "Bảy người"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chỉ một số ít được cứu khỏi nước. “tổng số là tám người, được cứu khỏi nước” (1 Phi-e-rơ 3:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ dạy mỗi người hãy dùng ân tứ mình để làm gì?",
+  "options": [
+   "Phục vụ nhau",
+   "Khoe khoang",
+   "Làm giàu",
+   "Giữ riêng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Như người quản lý trung tín ân điển Chúa. “Mỗi người hãy dùng ân tứ mình đã nhận mà phục vụ nhau” (1 Phi-e-rơ 4:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ khuyên các trưởng lão hãy làm gì?",
+  "options": [
+   "Thu thuế đền thờ",
+   "Chăn bầy của Đức Chúa Trời",
+   "Xây nhà hội",
+   "Đi buôn xa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Do tự nguyện, không vì lợi lộc. “Hãy chăn bầy của Đức Chúa Trời” (1 Phi-e-rơ 5:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 5,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Đấng Chăn Chiên tối cao xuất hiện, trưởng lão trung tín sẽ nhận gì?",
+  "options": [
+   "Ngai vàng",
+   "Gậy chăn chiên",
+   "Mão triều thiên vinh quang",
+   "Áo choàng đỏ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Mão ấy không phai tàn. “mão triều thiên vinh quang không phai tàn” (1 Phi-e-rơ 5:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ nói vì sao hãy trao mọi lo lắng cho Chúa?",
+  "options": [
+   "Vì Ngài muốn thử",
+   "Vì Ngài sẽ phạt",
+   "Vì Ngài ra lệnh",
+   "Vì Ngài luôn chăm sóc"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài quan tâm từng người. “vì Ngài luôn chăm sóc anh em” (1 Phi-e-rơ 5:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 2,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ nói nơi miệng Đấng Christ không thấy điều gì?",
+  "options": [
+   "Điều dối trá",
+   "Lời dạy dỗ",
+   "Lời cầu nguyện",
+   "Lời chúc phước"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài không hề phạm tội. “Nơi miệng Ngài không thấy điều dối trá.” (1 Phi-e-rơ 2:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Xứ nào có trong danh sách nơi những người nhận thư 1 Phi-e-rơ kiều ngụ?",
+  "options": [
+   "Ma-xê-đô-ni-a",
+   "Cáp-pa-đốc",
+   "A-chai",
+   "Sy-ri"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Cùng với Pông, Ga-la-ti, A-si-a và Bi-thi-ni. “Pông, Ga-la-ti, Cáp-pa-đốc, A-si-a và Bi-thi-ni” (1 Phi-e-rơ 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 5,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ nhờ ai viết đôi dòng gửi tín hữu?",
+  "options": [
+   "Sin-vanh",
+   "Mác",
+   "Lu-ca",
+   "Ti-mô-thê"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Một anh em tín cẩn. “Tôi nhờ Sin-vanh” (1 Phi-e-rơ 5:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 5,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong thư, Phi-e-rơ gọi ai là con mình?",
+  "options": [
+   "Sin-vanh",
+   "Giăng",
+   "Mác",
+   "Ti-mô-thê"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Con thuộc linh của Phi-e-rơ. “con tôi là Mác cũng vậy” (1 Phi-e-rơ 5:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 5,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hội Thánh ở đâu gửi lời chào trong thư 1 Phi-e-rơ?",
+  "options": [
+   "An-ti-ốt",
+   "Ba-by-lôn",
+   "Giê-ru-sa-lem",
+   "Rô-ma"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Những người cùng được chọn như tín hữu. “Hội Thánh tại Ba-by-lôn” (1 Phi-e-rơ 5:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 2,
+  "verseStart": 25,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ gọi Chúa là Đấng Chăn Chiên và là gì của linh hồn?",
+  "options": [
+   "Vị vua",
+   "Người cha",
+   "Thầy dạy",
+   "Giám Mục"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài coi sóc linh hồn chúng ta. “Đấng Chăn Chiên và Giám Mục của linh hồn mình” (1 Phi-e-rơ 2:25)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người chồng chưa vâng giữ đạo có thể được cảm hóa qua điều gì?",
+  "options": [
+   "Cách cư xử của vợ",
+   "Lời giảng của vợ",
+   "Một phép lạ",
+   "Sách vở"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Không phải dùng đến lời nói. “qua cách cư xử của vợ, họ được cảm hóa mà không phải dùng đến lời nói” (1 Phi-e-rơ 3:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 3,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi trả lời về niềm hi vọng, Phi-e-rơ dặn phải có thái độ nào?",
+  "options": [
+   "Thật nghiêm khắc",
+   "Thật ngắn gọn",
+   "Ôn tồn và trân trọng",
+   "Thật mạnh mẽ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hãy tôn cao Đấng Christ trong lòng. “nhưng phải ôn tồn và trân trọng” (1 Phi-e-rơ 3:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Peter",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khao khát sữa thiêng liêng thuần khiết là để làm gì?",
+  "options": [
+   "Được sống lâu",
+   "Được thông minh",
+   "Được no đủ",
+   "Lớn lên trong sự cứu rỗi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Như trẻ sơ sinh lớn lên nhờ sữa. “để nhờ đó anh em được lớn lên trong sự cứu rỗi” (1 Phi-e-rơ 2:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "1 Samuel",
   "chapter": 1,
   "verseStart": 2,
@@ -1610,6 +4209,1156 @@
   ]
  },
  {
+  "book": "1 Thessalonians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư 1 Tê-sa-lô-ni-ca được gửi đến Hội Thánh ở thành nào?",
+  "options": [
+   "Phi-líp",
+   "Tê-sa-lô-ni-ca",
+   "Bê-rê",
+   "Cô-rinh-tô"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hội Thánh Phao-lô lập ở xứ Ma-xê-đô-ni-a. “gửi đến Hội Thánh tại Tê-sa-lô-ni-ca” (1 Tê-sa-lô-ni-ca 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên hãy vui mừng khi nào?",
+  "options": [
+   "Khi thành công",
+   "Vào ngày lễ",
+   "Mỗi buổi sáng",
+   "Mãi mãi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Niềm vui không tùy hoàn cảnh. “Hãy vui mừng mãi mãi” (1 Tê-sa-lô-ni-ca 5:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên hãy cầu nguyện như thế nào?",
+  "options": [
+   "Không thôi",
+   "Khi gặp khó khăn",
+   "Mỗi tuần một lần",
+   "Chỉ trước bữa ăn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Luôn giữ mối thông công với Chúa. “cầu nguyện không thôi” (1 Tê-sa-lô-ni-ca 5:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dạy hãy cảm tạ Chúa vào lúc nào?",
+  "options": [
+   "Vào ngày sa-bát",
+   "Khi khỏe mạnh",
+   "Trong mọi hoàn cảnh",
+   "Khi được ơn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là ý muốn của Đức Chúa Trời. “hãy cảm tạ Chúa trong mọi hoàn cảnh” (1 Tê-sa-lô-ni-ca 5:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ngày của Chúa sẽ đến như gì?",
+  "options": [
+   "Như cơn mưa rào",
+   "Như kẻ trộm ban đêm",
+   "Như mùa gặt",
+   "Như bình minh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Không ai biết trước giờ ấy. “ngày của Chúa sẽ đến như kẻ trộm trong ban đêm” (1 Tê-sa-lô-ni-ca 5:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa đến, người còn sống sẽ được cất lên gặp Chúa ở đâu?",
+  "options": [
+   "Bên bờ biển",
+   "Trong đền thờ",
+   "Trên núi Ô-liu",
+   "Tại không trung"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Và sẽ ở với Chúa mãi mãi. “để gặp Chúa tại không trung” (1 Tê-sa-lô-ni-ca 4:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa giáng lâm, ai sẽ sống lại trước tiên?",
+  "options": [
+   "Các vua chúa",
+   "Người đang sống",
+   "Người chết trong Đấng Christ",
+   "Các thiên sứ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Kế đến người đang sống được cất lên. “những người chết trong Đấng Christ sẽ sống lại trước tiên” (1 Tê-sa-lô-ni-ca 4:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn chớ dập tắt điều gì?",
+  "options": [
+   "Thánh Linh",
+   "Lửa bàn thờ",
+   "Ngọn đèn",
+   "Bếp lửa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Hãy để Thánh Linh hành động. “Chớ dập tắt Thánh Linh” (1 Tê-sa-lô-ni-ca 5:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sau khi xem xét mọi việc, điều gì tốt đẹp thì làm gì?",
+  "options": [
+   "Bỏ đi",
+   "Bán đi",
+   "Giữ lấy",
+   "Giấu đi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Còn mọi hình thức gian ác thì tránh xa. “Điều gì tốt đẹp thì giữ lấy” (1 Tê-sa-lô-ni-ca 5:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông cư xử dịu dàng với tín hữu như ai?",
+  "options": [
+   "Người vú săn sóc con",
+   "Người cha nghiêm khắc",
+   "Một vị vua",
+   "Một người lính"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông thương họ như con mình. “như một người vú săn sóc các con mình” (1 Tê-sa-lô-ni-ca 2:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nhớ sự kiên nhẫn của tín hữu Tê-sa-lô-ni-ca trong điều gì?",
+  "options": [
+   "Luật pháp",
+   "Đau khổ",
+   "Thử thách",
+   "Hi vọng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cùng công việc của đức tin và công lao của yêu thương. “sự kiên nhẫn trong hi vọng” (1 Tê-sa-lô-ni-ca 1:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tín hữu Tê-sa-lô-ni-ca đã từ bỏ gì để phục vụ Đức Chúa Trời?",
+  "options": [
+   "Ruộng đất",
+   "Thần tượng",
+   "Gia đình",
+   "Luật pháp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ quay về với Đức Chúa Trời hằng sống và chân thật. “từ bỏ thần tượng để phục vụ Đức Chúa Trời hằng sống và chân thật” (1 Tê-sa-lô-ni-ca 1:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô làm việc ngày đêm khi rao giảng để làm gì?",
+  "options": [
+   "Để xây nhà hội",
+   "Không thành gánh nặng cho ai",
+   "Để làm giàu",
+   "Để mua đất"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông tự nuôi mình trong khi giảng Tin Lành. “để không trở thành gánh nặng cho một ai trong anh em” (1 Tê-sa-lô-ni-ca 2:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô sẵn lòng ở lại một mình tại thành nào?",
+  "options": [
+   "Cô-rinh-tô",
+   "Phi-líp",
+   "Bê-rê",
+   "A-thên"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để gửi Ti-mô-thê đến thăm tín hữu. “ở lại một mình tại A-thên” (1 Tê-sa-lô-ni-ca 3:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô gửi ai đến để xây dựng và khích lệ tín hữu Tê-sa-lô-ni-ca?",
+  "options": [
+   "Ti-mô-thê",
+   "Sin-vanh",
+   "Tít",
+   "Lu-ca"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người phục vụ Đức Chúa Trời trong Tin Lành. “và gửi Ti-mô-thê, anh em chúng tôi” (1 Tê-sa-lô-ni-ca 3:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên tín hữu tập sống như thế nào?",
+  "options": [
+   "Ồn ào để được biết đến",
+   "Bỏ việc chờ Chúa đến",
+   "Trầm lặng, lao động bằng tay mình",
+   "Nhờ người khác nuôi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Và chăm lo công việc riêng của mình. “Hãy tập sống trầm lặng, chăm lo công việc riêng của mình và lao động bằng chính tay mình” (1 Tê-sa-lô-ni-ca 4:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô không muốn tín hữu đau buồn như ai?",
+  "options": [
+   "Người Hi Lạp",
+   "Người không có hi vọng",
+   "Người giàu có",
+   "Người già cả"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì những người đã ngủ sẽ sống lại. “để anh em không đau buồn như người khác không có hi vọng” (1 Tê-sa-lô-ni-ca 4:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa giáng lâm, có tiếng gọi của ai?",
+  "options": [
+   "Sứ đồ Phao-lô",
+   "Các trưởng lão",
+   "Các tiên tri",
+   "Thiên sứ trưởng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cùng tiếng kèn của Đức Chúa Trời. “với tiếng gọi của thiên sứ trưởng” (1 Tê-sa-lô-ni-ca 4:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô bảo lấy điều gì làm mũ trận?",
+  "options": [
+   "Lời Đức Chúa Trời",
+   "Sự công chính",
+   "Hi vọng về sự cứu rỗi",
+   "Sự bình an"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì chúng ta thuộc về ban ngày. “lấy hi vọng về sự cứu rỗi làm mũ trận” (1 Tê-sa-lô-ni-ca 5:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ý muốn của Đức Chúa Trời là tín hữu phải được gì?",
+  "options": [
+   "Thánh hóa",
+   "Khôn ngoan",
+   "Nổi danh",
+   "Giàu có"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sống trong sự thánh sạch. “Vì ý muốn của Đức Chúa Trời là anh em phải được thánh hóa” (1 Tê-sa-lô-ni-ca 4:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ngoài Phao-lô và Ti-mô-thê, ai cùng đứng tên gửi thư 1 Tê-sa-lô-ni-ca?",
+  "options": [
+   "Sốt-then",
+   "Ba-na-ba",
+   "Tít",
+   "Sin-vanh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sin-vanh từng cùng Phao-lô lập Hội Thánh ở đó. “Phao-lô, Sin-vanh và Ti-mô-thê” (1 Tê-sa-lô-ni-ca 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô bảo hãy mặc áo giáp bằng những gì?",
+  "options": [
+   "Lẽ thật và công chính",
+   "Đức tin và tình yêu thương",
+   "Hi vọng và bình an",
+   "Vàng và đồng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Còn hi vọng cứu rỗi làm mũ trận. “mặc áo giáp bằng đức tin và tình yêu thương” (1 Tê-sa-lô-ni-ca 5:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 3,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ti-mô-thê thuật lại tín hữu Tê-sa-lô-ni-ca ao ước điều gì?",
+  "options": [
+   "Có nhà hội mới",
+   "Được rời thành phố",
+   "Được gặp lại Phao-lô",
+   "Được giàu có"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phao-lô cũng ao ước gặp họ. “ao ước gặp chúng tôi” (1 Tê-sa-lô-ni-ca 3:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 5,
+  "verseStart": 27,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhân danh Chúa, Phao-lô yêu cầu làm gì với lá thư nầy?",
+  "options": [
+   "Đọc cho tất cả anh em nghe",
+   "Gửi về Giê-ru-sa-lem",
+   "Đốt sau khi đọc",
+   "Giữ bí mật"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Để cả Hội Thánh cùng nghe. “hãy đọc thư nầy cho tất cả anh em được nghe” (1 Tê-sa-lô-ni-ca 5:27)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Thessalonians",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa giáng lâm, cùng với tiếng gọi thiên sứ trưởng là tiếng kèn của ai?",
+  "options": [
+   "Của các vua",
+   "Của thầy tế lễ",
+   "Của Đức Chúa Trời",
+   "Của các tiên tri"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hiệu lệnh ban ra từ trời. “cùng tiếng kèn của Đức Chúa Trời” (1 Tê-sa-lô-ni-ca 4:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô viết thư 1 Ti-mô-thê gửi cho ai?",
+  "options": [
+   "Tít",
+   "Lu-ca",
+   "Phi-lê-môn",
+   "Ti-mô-thê"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phao-lô gọi ông là con thật trong đức tin. “thân gửi Ti-mô-thê, con thật của ta trong đức tin” (1 Ti-mô-thê 1:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Đấng Christ Jêsus đến trong thế gian để làm gì?",
+  "options": [
+   "Cứu vớt tội nhân",
+   "Lập luật mới",
+   "Làm vua Y-sơ-ra-ên",
+   "Phán xét dân ngoại"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đây là lời chắc chắn và đáng tiếp nhận. “Đấng Christ Jêsus đã đến trong thế gian để cứu vớt tội nhân” (1 Ti-mô-thê 1:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 4,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn Ti-mô-thê đừng để người ta khinh mình vì điều gì?",
+  "options": [
+   "Nghèo khó",
+   "Trẻ tuổi",
+   "Đau yếu",
+   "Ít học"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hãy làm gương cho các tín hữu. “Đừng để người ta khinh con vì trẻ tuổi” (1 Ti-mô-thê 4:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 6,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói lòng tham tiền bạc là gì?",
+  "options": [
+   "Một điều nhỏ nhặt",
+   "Một phước lành",
+   "Cội rễ của mọi điều ác",
+   "Động lực để làm việc"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Có người vì nó mà lìa bỏ đức tin. “lòng tham tiền bạc là cội rễ của mọi điều ác” (1 Ti-mô-thê 6:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 6,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói sự tin kính cùng sự thỏa lòng là gì?",
+  "options": [
+   "Một gánh nặng",
+   "Sự nghèo khó",
+   "Một điều khó",
+   "Nguồn lợi lớn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Biết đủ thì giàu có thật. “Sự tin kính cùng sự thỏa lòng chính là nguồn lợi lớn.” (1 Ti-mô-thê 6:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 6,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói khi lìa đời chúng ta mang theo được gì?",
+  "options": [
+   "Nhà cửa",
+   "Không mang gì được",
+   "Danh tiếng",
+   "Của cải"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Khi chào đời chúng ta cũng chẳng đem gì theo. “lúc lìa đời cũng không thể mang gì đi được” (1 Ti-mô-thê 6:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên Ti-mô-thê cầu thay cho những ai?",
+  "options": [
+   "Mọi người",
+   "Chỉ người nghèo",
+   "Chỉ Hội Thánh",
+   "Chỉ gia đình"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Kể cả các vua và người lãnh đạo. “cầu thay cho mọi người” (1 Ti-mô-thê 2:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 2,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ai là Đấng Trung Gian duy nhất giữa Đức Chúa Trời và loài người?",
+  "options": [
+   "Thiên sứ Gáp-ri-ên",
+   "Môi-se",
+   "Đấng Christ Jêsus",
+   "Thầy tế lễ thượng phẩm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngài cũng là người. “chỉ có một Đấng Trung Gian giữa Đức Chúa Trời và loài người, là Đấng Christ Jêsus” (1 Ti-mô-thê 2:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 6,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên Ti-mô-thê hãy vì đức tin mà làm gì?",
+  "options": [
+   "Chiến đấu dũng cảm",
+   "Ở yên một chỗ",
+   "Rút lui",
+   "Tranh cãi với người"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Để giành lấy sự sống đời đời. “Hãy vì đức tin mà chiến đấu dũng cảm” (1 Ti-mô-thê 6:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói mọi vật Đức Chúa Trời tạo dựng thế nào?",
+  "options": [
+   "Đều ô uế",
+   "Đều tốt đẹp",
+   "Một nửa tốt",
+   "Đều phải kiêng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Miễn là được tiếp nhận với lòng biết ơn. “mọi vật do Đức Chúa Trời tạo dựng đều tốt đẹp” (1 Ti-mô-thê 4:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói trong các tội nhân, ông là người thế nào?",
+  "options": [
+   "Người ít tội nhất",
+   "Người ở giữa",
+   "Người nhỏ nhất",
+   "Người đứng đầu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông từng bắt bớ Hội Thánh. “trong những tội nhân đó, ta là người đứng đầu” (1 Ti-mô-thê 1:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Cầu thay cho các vua và người lãnh đạo là để làm gì?",
+  "options": [
+   "Được thắng trận",
+   "Được giàu có",
+   "Được sống yên ổn, bình an",
+   "Được có quyền"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Với lòng tin kính và đạo đức. “để chúng ta được sống yên ổn, bình an” (1 Ti-mô-thê 2:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói người mong làm giám mục là ước ao điều gì?",
+  "options": [
+   "Quyền lực lớn",
+   "Một điều cao đẹp",
+   "Danh tiếng",
+   "Của cải nhiều"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nhưng phải có phẩm chất xứng đáng. “người đó đã ước ao một điều cao đẹp” (1 Ti-mô-thê 3:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo 1 Ti-mô-thê, điều nào giám mục không được có?",
+  "options": [
+   "Hiếu khách",
+   "Tiết chế",
+   "Tài dạy dỗ",
+   "Tham tiền"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Giám mục cũng không nghiện rượu, không gây gổ. “không gây gổ, và không tham tiền” (1 Ti-mô-thê 3:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 3,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô gọi Hội Thánh của Đức Chúa Trời hằng sống là gì của chân lý?",
+  "options": [
+   "Cửa và khóa",
+   "Ngọn đèn",
+   "Rường và cột",
+   "Bức tường"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hội Thánh nâng đỡ và giữ vững chân lý. “rường và cột của chân lý” (1 Ti-mô-thê 3:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 4,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ti-mô-thê phải làm gương cho tín hữu bằng những gì?",
+  "options": [
+   "Lời nói, cách cư xử, đức tin",
+   "Học thức và tuổi tác",
+   "Áo quần và nhà cửa",
+   "Tiền bạc và quyền lực"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cùng với lòng yêu thương và sự trong sạch. “phải lấy lời nói, cách cư xử, lòng yêu thương, đức tin và sự trong sạch mà làm gương” (1 Ti-mô-thê 4:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 4,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn Ti-mô-thê chú trọng đọc gì trong các buổi nhóm?",
+  "options": [
+   "Kinh Thánh",
+   "Gia phả các họ",
+   "Thư của Phao-lô",
+   "Luật Rô-ma"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cùng việc khuyên bảo và dạy dỗ. “Con hãy chú trọng đến việc đọc Kinh Thánh trong các buổi nhóm” (1 Ti-mô-thê 4:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 6,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn người giàu đừng đặt hi vọng vào điều gì?",
+  "options": [
+   "Hội Thánh",
+   "Bạn bè",
+   "Của cải không chắc chắn",
+   "Đức Chúa Trời"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hãy đặt hi vọng nơi Đức Chúa Trời. “đừng đặt hi vọng vào của cải không chắc chắn” (1 Ti-mô-thê 6:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên Ti-mô-thê ở lại thành nào?",
+  "options": [
+   "Lít-trơ",
+   "Ê-phê-sô",
+   "Cô-rinh-tô",
+   "Rô-ma"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Để ngăn người ta dạy giáo lý khác. “con hãy ở lại Ê-phê-sô” (1 Ti-mô-thê 1:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 6,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ti-mô-thê được kêu gọi để giành lấy điều gì?",
+  "options": [
+   "Chức giám mục",
+   "Vương miện vàng",
+   "Đất đai",
+   "Sự sống đời đời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông đã tuyên xưng đức tin trước nhiều nhân chứng. “giành lấy sự sống đời đời” (1 Ti-mô-thê 6:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 5,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vì dạ dày hay đau yếu, Phao-lô khuyên Ti-mô-thê dùng thêm gì?",
+  "options": [
+   "Dầu ô-liu",
+   "Sữa dê",
+   "Một ít rượu",
+   "Mật ong"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Không chỉ uống nước mà thôi. “hãy dùng một ít rượu” (1 Ti-mô-thê 5:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 1,
+  "verseStart": 20,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hai người nào bị Phao-lô phó mặc cho Sa-tan để họ thôi phạm thượng?",
+  "options": [
+   "Đê-ma và Phi-lết",
+   "Hy-mê-nê và A-léc-xan-đơ",
+   "Anh-ti-pa và Ê-ra-tốt",
+   "Đi-ô-trép và Đê-mê-triu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ đã lìa bỏ đức tin. “trong số họ có Hy-mê-nê và A-léc-xan-đơ” (1 Ti-mô-thê 1:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi khuyên Ti-mô-thê ở lại Ê-phê-sô, Phao-lô đang đi đâu?",
+  "options": [
+   "A-chai",
+   "Sy-ri",
+   "Ga-la-ti",
+   "Ma-xê-đô-ni-a"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ti-mô-thê thay ông coi sóc Hội Thánh. “lúc ta đi Ma-xê-đô-ni-a” (1 Ti-mô-thê 1:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ngoài hiếu khách, giám mục cần có tài gì?",
+  "options": [
+   "Dạy dỗ",
+   "Đánh trận",
+   "Buôn bán",
+   "Ca hát"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Một trong các phẩm chất của người coi sóc Hội Thánh. “hiếu khách, có tài dạy dỗ” (1 Ti-mô-thê 3:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Mở đầu thư, Phao-lô gọi Đấng Christ Jêsus là gì của chúng ta?",
+  "options": [
+   "Vị vua",
+   "Người thầy",
+   "Người bạn",
+   "Niềm hi vọng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đức Chúa Trời được gọi là Cứu Chúa. “Đấng Christ Jêsus, niềm hi vọng của chúng ta” (1 Ti-mô-thê 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "1 Kings",
   "chapter": 1,
   "verseStart": 33,
@@ -2457,6 +6206,650 @@
   "language": "vi",
   "tags": [
    "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 5,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ai ở trong Đấng Christ thì là gì?",
+  "options": [
+   "Thầy tế lễ",
+   "Người không lỗi lầm",
+   "Tạo vật mới",
+   "Người giàu có"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Những gì cũ đã qua đi. “người ấy là tạo vật mới” (2 Cô-rinh-tô 5:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói chúng ta bước đi bằng gì, chứ không bởi mắt thấy?",
+  "options": [
+   "Luật pháp",
+   "Kinh nghiệm",
+   "Sức mình",
+   "Đức tin"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tin cậy những điều chưa thấy. “chúng ta bước đi bằng đức tin, chứ không bởi mắt thấy” (2 Cô-rinh-tô 5:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 9,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời yêu mến người dâng hiến như thế nào?",
+  "options": [
+   "Thật nhiều",
+   "Một cách vui lòng",
+   "Thật bí mật",
+   "Thật đúng hạn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Không miễn cưỡng hoặc do ép buộc. “Đức Chúa Trời yêu mến người dâng hiến một cách vui lòng” (2 Cô-rinh-tô 9:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 12,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa phán với Phao-lô: ân điển Ta thế nào cho con?",
+  "options": [
+   "Đầy đủ",
+   "Phải trả giá",
+   "Có giới hạn",
+   "Chỉ tạm thời"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sức mạnh Chúa trọn vẹn trong sự yếu đuối. “Ân điển Ta đầy đủ cho con” (2 Cô-rinh-tô 12:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 9,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ai gieo ít thì sẽ thế nào?",
+  "options": [
+   "Gặt nhiều",
+   "Gặt gấp đôi",
+   "Không gặt gì",
+   "Gặt ít"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Còn ai gieo nhiều thì gặt nhiều. “Ai gieo ít thì gặt ít” (2 Cô-rinh-tô 9:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô gọi Đức Chúa Trời là Đức Chúa Trời của điều gì?",
+  "options": [
+   "Mọi niềm an ủi",
+   "Mọi luật lệ",
+   "Mọi cuộc chiến",
+   "Mọi sự giàu có"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài cũng là Cha nhân từ. “Đức Chúa Trời của mọi niềm an ủi” (2 Cô-rinh-tô 1:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 5,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói các sứ đồ là gì của Đấng Christ?",
+  "options": [
+   "Lính canh",
+   "Quan tòa",
+   "Đại sứ",
+   "Thầy dạy luật"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đức Chúa Trời dùng họ để khuyên mời. “chúng tôi là đại sứ của Đấng Christ” (2 Cô-rinh-tô 5:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 6,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói hiện nay là ngày gì?",
+  "options": [
+   "Ngày phán xét",
+   "Ngày cứu rỗi",
+   "Ngày nghỉ",
+   "Ngày lễ lớn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hiện nay là thì thuận tiện. “hiện nay là ngày cứu rỗi!” (2 Cô-rinh-tô 6:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói nơi nào có Thánh Linh của Chúa thì có điều gì?",
+  "options": [
+   "Im lặng",
+   "Tự do",
+   "Sợ hãi",
+   "Luật lệ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa là Thánh Linh. “nơi nào có Thánh Linh của Chúa, nơi đó có tự do” (2 Cô-rinh-tô 3:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 8,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus vốn giàu mà trở nên nghèo để làm gì?",
+  "options": [
+   "Để được khen ngợi",
+   "Để thử thách ta",
+   "Để chúng ta trở nên giàu",
+   "Để tránh vua chúa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là ân điển của Chúa. “để bởi sự nghèo khó của Ngài, anh em trở nên giàu có” (2 Cô-rinh-tô 8:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai cùng Phao-lô đứng tên trong thư 2 Cô-rinh-tô?",
+  "options": [
+   "Tít",
+   "Si-la",
+   "Sốt-then",
+   "Ti-mô-thê"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phao-lô gọi ông là anh em chúng ta. “và Ti-mô-thê anh em chúng ta” (2 Cô-rinh-tô 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Chúa an ủi chúng ta trong hoạn nạn để làm gì?",
+  "options": [
+   "Để an ủi người khác",
+   "Để được khen ngợi",
+   "Để được giàu có",
+   "Để khỏi hoạn nạn mãi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dùng chính sự an ủi đã nhận. “để an ủi những người khác trong bất cứ hoạn nạn nào họ gặp” (2 Cô-rinh-tô 1:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tín hữu là bức thư của Đấng Christ được viết trên gì?",
+  "options": [
+   "Bảng lòng con người",
+   "Da thú",
+   "Giấy cói",
+   "Bảng đá"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Viết bằng Thánh Linh, không bằng mực. “trên những bảng lòng của con người” (2 Cô-rinh-tô 3:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói báu vật Tin Lành được đựng trong gì?",
+  "options": [
+   "Túi da",
+   "Bình đất",
+   "Rương vàng",
+   "Hộp bạc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Để thấy quyền năng đến từ Đức Chúa Trời. “chúng tôi đựng báu vật nầy trong những bình đất” (2 Cô-rinh-tô 4:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Dù con người bên ngoài suy mòn, con người bên trong thì sao?",
+  "options": [
+   "Mệt mỏi",
+   "Cũng suy mòn",
+   "Đứng yên",
+   "Ngày càng đổi mới"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vì vậy chúng ta không nản lòng. “con người bên trong ngày càng đổi mới hơn” (2 Cô-rinh-tô 4:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 4,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói những điều không thấy được là thế nào?",
+  "options": [
+   "Tạm thời",
+   "Ảo tưởng",
+   "Vĩnh cửu",
+   "Đáng sợ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Còn những điều thấy được chỉ là tạm thời. “còn những điều không thấy được là vĩnh cửu” (2 Cô-rinh-tô 4:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 6,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên chớ mang ách chung với ai?",
+  "options": [
+   "Người nghèo",
+   "Người ngoại quốc",
+   "Người già cả",
+   "Kẻ chẳng tin"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ánh sáng và bóng tối không dung hòa được. “Chớ mang ách chung với những kẻ chẳng tin.” (2 Cô-rinh-tô 6:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 5,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Với người ở trong Đấng Christ, những gì cũ thì sao?",
+  "options": [
+   "Đã qua đi",
+   "Sẽ trở lại",
+   "Bị trừng phạt",
+   "Vẫn còn đó"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Mọi sự đều trở nên mới. “những gì cũ đã qua đi” (2 Cô-rinh-tô 5:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 5,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhân danh Đấng Christ, Phao-lô nài xin anh em làm gì?",
+  "options": [
+   "Dâng thêm tiền",
+   "Kiêng ăn cầu nguyện",
+   "Làm hòa với Đức Chúa Trời",
+   "Đi truyền giáo"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là chức vụ hòa giải. “hãy làm hòa với Đức Chúa Trời” (2 Cô-rinh-tô 5:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 9,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dạy mỗi người nên quyên góp thế nào?",
+  "options": [
+   "Ai cũng bằng nhau",
+   "Tùy lòng mình đã định",
+   "Đúng một phần mười",
+   "Theo lệnh sứ đồ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Không miễn cưỡng hoặc do ép buộc. “Mỗi người nên quyên góp tùy theo lòng mình đã định” (2 Cô-rinh-tô 9:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 12,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Để giữ Phao-lô khỏi kiêu ngạo, điều gì đâm vào xác thịt ông?",
+  "options": [
+   "Một cái dằm",
+   "Một bụi gai",
+   "Một mũi tên",
+   "Một con rắn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông gọi đó là sứ giả của Sa-tan. “một cái dằm đã đâm vào xác thịt tôi” (2 Cô-rinh-tô 12:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 12,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa phán sức mạnh của Ngài trở nên trọn vẹn trong điều gì?",
+  "options": [
+   "Sự giàu có",
+   "Sự thành công",
+   "Sự khôn ngoan",
+   "Sự yếu đuối"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vì vậy Phao-lô vui mừng về những yếu đuối mình. “sức mạnh của Ta trở nên trọn vẹn trong sự yếu đuối” (2 Cô-rinh-tô 12:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 11,
+  "verseStart": 25,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô kể ông đã bị chìm tàu mấy lần?",
+  "options": [
+   "Năm lần",
+   "Ba lần",
+   "Bảy lần",
+   "Một lần"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Có lần trôi giạt trên biển một đêm một ngày. “ba lần bị chìm tàu” (2 Cô-rinh-tô 11:25)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 11,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Năm lần bị đánh roi, mỗi lần Phao-lô bị đánh thiếu một roi đầy bao nhiêu?",
+  "options": [
+   "Mười hai roi",
+   "Năm mươi roi",
+   "Bốn mươi roi",
+   "Ba mươi roi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tức là ba mươi chín roi mỗi lần. “mỗi lần thiếu một roi đầy bốn chục” (2 Cô-rinh-tô 11:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 11,
+  "verseStart": 32,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Viên tổng đốc canh giữ Đa-mách để bắt Phao-lô thuộc quyền vua nào?",
+  "options": [
+   "A-rê-ta",
+   "Hê-rốt",
+   "Ạc-ríp-pa",
+   "Sê-sa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Phao-lô được dòng xuống trong một cái thúng. “viên tổng đốc thuộc quyền vua A-rê-ta” (2 Cô-rinh-tô 11:32)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 12,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô kể về một người được cất lên đến tầng trời thứ mấy?",
+  "options": [
+   "Tầng trời thứ nhất",
+   "Tầng trời thứ ba",
+   "Tầng trời thứ bảy",
+   "Tầng trời thứ mười hai"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Việc xảy ra mười bốn năm trước đó. “được cất lên đến tầng trời thứ ba” (2 Cô-rinh-tô 12:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 12,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô đã mấy lần cầu xin Chúa cất cái dằm khỏi mình?",
+  "options": [
+   "Bảy lần",
+   "Một lần",
+   "Mười lần",
+   "Ba lần"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa trả lời: Ân điển Ta đầy đủ cho con. “Đã ba lần tôi cầu nguyện xin Chúa cho nó lìa xa tôi.” (2 Cô-rinh-tô 12:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Corinthians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ngoài Hội Thánh Cô-rinh-tô, thư nầy còn gửi cho thánh đồ khắp vùng nào?",
+  "options": [
+   "A-si-a",
+   "Ma-xê-đô-ni-a",
+   "A-chai",
+   "Ga-la-ti"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cô-rinh-tô là thành chính của vùng A-chai. “cùng với tất cả thánh đồ ở khắp vùng A-chai” (2 Cô-rinh-tô 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
    "RVV11"
   ]
  },
@@ -3653,6 +8046,466 @@
   "language": "vi",
   "tags": [
    "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 2,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên Ti-mô-thê cùng chịu khổ như ai?",
+  "options": [
+   "Người nông dân",
+   "Người buôn bán",
+   "Người lính dũng cảm",
+   "Người khách lạ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người lính của Đấng Christ Jêsus. “như một người lính dũng cảm của Đấng Christ Jêsus” (2 Ti-mô-thê 2:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Gần cuối đời, Phao-lô nói ông đã giữ được điều gì?",
+  "options": [
+   "Đức tin",
+   "Danh tiếng",
+   "Sức khỏe",
+   "Của cải"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông đã chiến đấu anh dũng đến cùng. “đã giữ được đức tin” (2 Ti-mô-thê 4:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô truyền cho Ti-mô-thê hãy truyền giảng điều gì?",
+  "options": [
+   "Luật Môi-se",
+   "Lời Chúa",
+   "Chuyện xưa",
+   "Triết lý Hi Lạp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Với lòng nhẫn nhục và tinh thần dạy dỗ. “Hãy truyền giảng lời Chúa” (2 Ti-mô-thê 4:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời không ban cho chúng ta tinh thần gì?",
+  "options": [
+   "Tinh thần mạnh mẽ",
+   "Tinh thần tự chủ",
+   "Tinh thần yêu thương",
+   "Tinh thần nhút nhát"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài ban tinh thần mạnh mẽ, yêu thương và tự chủ. “Đức Chúa Trời không ban cho chúng ta tinh thần nhút nhát” (2 Ti-mô-thê 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói điều gì đã được dành sẵn cho ông?",
+  "options": [
+   "Mão triều thiên công chính",
+   "Cung điện vàng",
+   "Ngai vua",
+   "Đất đai rộng lớn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cũng dành cho mọi người yêu mến sự hiện đến của Chúa. “mão triều thiên công chính đã dành sẵn cho ta” (2 Ti-mô-thê 4:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bà ngoại của Ti-mô-thê, người có đức tin chân thành, tên là gì?",
+  "options": [
+   "Ơ-nít",
+   "Pê-rít-sin",
+   "Lô-ít",
+   "Ly-đi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đức tin truyền qua ba thế hệ. “trong Lô-ít, bà ngoại con” (2 Ti-mô-thê 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Mẹ của Ti-mô-thê tên là gì?",
+  "options": [
+   "Ma-ri",
+   "Lô-ít",
+   "Đô-ca",
+   "Ơ-nít"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bà có đức tin chân thành. “trong Ơ-nít, mẹ con” (2 Ti-mô-thê 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nhắc Ti-mô-thê hãy nhen lại điều gì?",
+  "options": [
+   "Lửa trên bàn thờ",
+   "Ân tứ của Đức Chúa Trời",
+   "Ký ức tuổi thơ",
+   "Ngọn đèn nhà hội"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ân tứ ông nhận qua sự đặt tay của Phao-lô. “hãy nhen lại ân tứ của Đức Chúa Trời” (2 Ti-mô-thê 1:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên Ti-mô-thê làm người làm công như thế nào?",
+  "options": [
+   "Không có gì đáng thẹn",
+   "Làm ít nghỉ nhiều",
+   "Được trả công cao",
+   "Nổi tiếng nhất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Thẳng thắn giảng dạy lời chân lý. “như người làm công không có gì đáng thẹn” (2 Ti-mô-thê 2:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 2,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên Ti-mô-thê hãy tránh xa điều gì?",
+  "options": [
+   "Hội Thánh",
+   "Dục vọng của tuổi trẻ",
+   "Sách vở",
+   "Người già cả"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Và theo đuổi sự công chính, đức tin, yêu thương. “Hãy tránh xa những dục vọng của tuổi trẻ” (2 Ti-mô-thê 2:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn hãy kiên trì giảng lời Chúa trong hoàn cảnh nào?",
+  "options": [
+   "Chỉ ngày sa-bát",
+   "Chỉ khi thuận lợi",
+   "Khi có người nghe",
+   "Thuận cảnh hay nghịch cảnh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Thuyết phục, khiển trách, khích lệ. “hãy kiên trì dù trong thuận cảnh hay nghịch cảnh” (2 Ti-mô-thê 4:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông đã hoàn tất điều gì?",
+  "options": [
+   "Bộ sách luật",
+   "Chuyến đi biển",
+   "Cuộc chạy đua",
+   "Ngôi đền thờ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông đã chiến đấu trong trận chiến anh dũng. “đã hoàn tất cuộc chạy đua” (2 Ti-mô-thê 4:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai vì ham mê đời nầy đã lìa bỏ Phao-lô?",
+  "options": [
+   "Lu-ca",
+   "Tít",
+   "Đê-ma",
+   "Mác"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông đi qua Tê-sa-lô-ni-ca. “Đê-ma, do ham mê đời nầy, đã lìa bỏ ta” (2 Ti-mô-thê 4:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói lúc ấy chỉ còn ai ở với ông?",
+  "options": [
+   "Lu-ca",
+   "Cơ-rết-xen",
+   "Đê-ma",
+   "Tít"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Những người khác đã đi nơi khác. “Chỉ còn một mình Lu-ca ở với ta.” (2 Ti-mô-thê 4:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô bảo Ti-mô-thê đem ai đi theo vì rất hữu ích cho chức vụ?",
+  "options": [
+   "Phi-lết",
+   "Mác",
+   "Đê-ma",
+   "A-léc-xan-đơ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người từng bị Phao-lô không cho đi cùng. “Hãy đem Mác đi theo với con” (2 Ti-mô-thê 4:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn đem chiếc áo choàng ông để lại tại nhà ai ở Trô-ách?",
+  "options": [
+   "Giă-sôn",
+   "Ô-nê-si-phô-rơ",
+   "Gai-út",
+   "Ca-bút"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cùng với sách vở, nhất là cuộn giấy da. “tại nhà Ca-bút, thành Trô-ách” (2 Ti-mô-thê 4:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người thợ đúc đồng đã làm hại Phao-lô nhiều là ai?",
+  "options": [
+   "Đê-mê-triu",
+   "Phi-lết",
+   "Hy-mê-nê",
+   "A-léc-xan-đơ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa sẽ báo trả tùy theo việc hắn làm. “A-léc-xan-đơ, thợ đúc đồng” (2 Ti-mô-thê 4:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô bảo Ti-mô-thê cố gắng đến trước mùa nào?",
+  "options": [
+   "Mùa hè",
+   "Mùa đông",
+   "Mùa gặt",
+   "Lễ Vượt Qua"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông cần áo choàng và muốn gặp con mình. “Con hãy cố gắng đến trước mùa đông.” (2 Ti-mô-thê 4:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Gia đình nào được Phao-lô cầu phước vì không hổ thẹn khi ông bị xiềng?",
+  "options": [
+   "Phi-lê-môn",
+   "Ê-pháp-ra",
+   "Ô-nê-si-phô-rơ",
+   "Ca-bút"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông ấy nhiều lần nâng đỡ Phao-lô. “Cầu xin Chúa thương xót gia đình Ô-nê-si-phô-rơ” (2 Ti-mô-thê 1:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông đang bị đổ ra như làm lễ gì?",
+  "options": [
+   "Lễ quán",
+   "Lễ Vượt Qua",
+   "Lễ chuộc tội",
+   "Lễ thiêu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Giờ qua đời của ông đã gần. “ta đang bị đổ ra như làm lễ quán” (2 Ti-mô-thê 4:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
    "RVV11"
   ]
  },
@@ -6666,6 +11519,581 @@
   "language": "vi",
   "tags": [
    "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Cô-lô-se được gửi đến các thánh đồ tại thành nào?",
+  "options": [
+   "Lao-đi-xê",
+   "Cô-rinh-tô",
+   "Cô-lô-se",
+   "Phi-líp"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Một thành nhỏ ở vùng A-si-a. “trong Đấng Christ tại Cô-lô-se” (Cô-lô-se 1:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên hãy chú tâm vào những điều ở đâu?",
+  "options": [
+   "Ngoài chợ",
+   "Ở dưới đất",
+   "Trong cung vua",
+   "Ở trên trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nơi Đấng Christ ngồi bên phải Đức Chúa Trời. “Hãy chú tâm vào những điều ở trên trời” (Cô-lô-se 3:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dạy phải tha thứ cho nhau như thế nào?",
+  "options": [
+   "Chỉ bảy lần thôi",
+   "Như Chúa đã tha thứ mình",
+   "Khi mình đã quên",
+   "Khi người kia xin lỗi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hãy nhường nhịn nhau và tha thứ nhau. “như Chúa đã tha thứ anh em thể nào thì anh em cũng phải tha thứ thể ấy” (Cô-lô-se 3:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 3,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trên hết mọi đức tính, Phao-lô bảo phải mặc lấy điều gì?",
+  "options": [
+   "Tình yêu thương",
+   "Áo giáp",
+   "Sự khôn ngoan",
+   "Áo trắng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vì là dây liên kết của sự toàn hảo. “phải mặc lấy tình yêu thương” (Cô-lô-se 3:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 3,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dạy người làm con phải đối với cha mẹ thế nào?",
+  "options": [
+   "Vâng phục trong mọi sự",
+   "Tranh luận với cha mẹ",
+   "Rời xa cha mẹ",
+   "Dạy dỗ cha mẹ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vì điều nầy đẹp lòng Chúa. “hãy vâng phục cha mẹ trong mọi sự” (Cô-lô-se 3:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 3,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi làm bất cứ việc gì, Phao-lô khuyên hãy làm thế nào?",
+  "options": [
+   "Khi có người xem",
+   "Hết lòng như làm cho Chúa",
+   "Vừa đủ thôi",
+   "Nhanh cho xong"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chứ không phải làm cho người ta. “hãy hết lòng mà làm, như làm cho Chúa” (Cô-lô-se 3:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên phải tỉnh thức trong lúc làm gì?",
+  "options": [
+   "Ngủ nghỉ",
+   "Đi đường",
+   "Cầu nguyện và tạ ơn",
+   "Ăn uống"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hãy thành tâm cầu nguyện. “phải tỉnh thức trong lúc cầu nguyện và tạ ơn” (Cô-lô-se 4:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói lời nói phải luôn có ân hậu và nêm thêm gì?",
+  "options": [
+   "Dầu",
+   "Mật ong",
+   "Đường",
+   "Muối"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để biết đối đáp thế nào với mỗi người. “Lời nói của anh em phải luôn có ân hậu và nêm thêm muối” (Cô-lô-se 4:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 4,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ai được Phao-lô gọi là vị bác sĩ yêu quý?",
+  "options": [
+   "Lu-ca",
+   "Mác",
+   "Ti-mô-thê",
+   "Đê-ma"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lu-ca cũng là tác giả sách Lu-ca và Công Vụ. “Lu-ca, là vị bác sĩ yêu quý” (Cô-lô-se 4:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Đấng Christ là hình ảnh của ai?",
+  "options": [
+   "Môi-se",
+   "Vua Đa-vít",
+   "Một thiên sứ",
+   "Đức Chúa Trời vô hình"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài là Đấng sinh ra trước mọi loài thọ tạo. “Chính Ngài là hình ảnh của Đức Chúa Trời vô hình” (Cô-lô-se 1:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tín hữu Cô-lô-se đã học Tin Lành nơi ai?",
+  "options": [
+   "Phi-lê-môn",
+   "Ty-chi-cơ",
+   "Ê-pháp-ra",
+   "Ti-mô-thê"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người bạn đồng lao quý mến của Phao-lô. “Anh em đã học điều đó nơi Ê-pháp-ra” (Cô-lô-se 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 1,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói muôn vật được giữ vững trong ai?",
+  "options": [
+   "Trong luật pháp",
+   "Trong Đấng Christ",
+   "Trong tay vua",
+   "Trong các thiên sứ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngài có trước muôn vật. “muôn vật được giữ vững trong Ngài” (Cô-lô-se 1:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đâm rễ, lập nền trong Đấng Christ, tín hữu càng gia tăng trong điều gì?",
+  "options": [
+   "Danh tiếng",
+   "Tri thức",
+   "Của cải",
+   "Sự cảm tạ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Và mạnh mẽ trong đức tin như đã được dạy. “càng gia tăng trong sự cảm tạ” (Cô-lô-se 2:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô bảo những người được Chúa tuyển chọn hãy mặc lấy những gì?",
+  "options": [
+   "Nghiêm khắc, cứng rắn",
+   "Thương xót, nhân từ, khiêm nhường",
+   "Khôn khéo, mạnh mẽ",
+   "Giàu có, quyền lực"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Cùng với mềm mại và nhịn nhục. “hãy mặc lấy lòng thương xót, nhân từ, khiêm nhường, mềm mại, nhịn nhục” (Cô-lô-se 3:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 3,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói tình yêu thương là dây liên kết của điều gì?",
+  "options": [
+   "Hội Thánh",
+   "Luật pháp",
+   "Sự toàn hảo",
+   "Gia đình"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì vậy phải mặc lấy trên hết mọi điều. “vì là dây liên kết của sự toàn hảo” (Cô-lô-se 3:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 3,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên dùng gì để hát cho Đức Chúa Trời với lòng biết ơn?",
+  "options": [
+   "Thi thiên, thánh ca, linh khúc",
+   "Bài ca chiến thắng",
+   "Kèn, trống, chập chõa",
+   "Câu đố và ngụ ngôn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Để lời của Đấng Christ sống sung mãn trong lòng. “dùng thi thiên, thánh ca, linh khúc để hát cho Đức Chúa Trời” (Cô-lô-se 3:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Mọi điều nói hay làm, Phao-lô dạy hãy làm trong danh ai?",
+  "options": [
+   "Phao-lô",
+   "Môi-se",
+   "Hội Thánh",
+   "Chúa Jêsus"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nhờ Ngài mà tạ ơn Đức Chúa Cha. “hãy thực hiện mọi sự trong danh Chúa là Đức Chúa Jêsus” (Cô-lô-se 3:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Đấng Christ hiện đang ngồi ở đâu?",
+  "options": [
+   "Bên phải Đức Chúa Trời",
+   "Trên núi Si-ôn",
+   "Trong đền thờ",
+   "Bên trái ngai"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vì vậy hãy tìm kiếm những điều ở trên trời. “nơi Đấng Christ ngồi bên phải Đức Chúa Trời” (Cô-lô-se 3:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai được Phao-lô sai đến báo tin về mọi việc của ông?",
+  "options": [
+   "Lu-ca",
+   "Ty-chi-cơ",
+   "A-ri-tạc",
+   "Ê-pháp-ra"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Một người phục vụ trung thành và đồng lao trong Chúa. “Ty-chi-cơ sẽ nói cho anh em về mọi việc của tôi” (Cô-lô-se 4:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đọc xong, thư Cô-lô-se phải được chuyển cho Hội Thánh nào?",
+  "options": [
+   "Ê-phê-sô",
+   "Hi-ê-ra-bô-li",
+   "Lao-đi-xê",
+   "Phi-líp"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hai Hội Thánh đọc thư của nhau. “hãy chuyển cho Hội Thánh Lao-đi-xê cùng đọc” (Cô-lô-se 4:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ai cùng Phao-lô đứng tên trong thư Cô-lô-se?",
+  "options": [
+   "Tít",
+   "Si-la",
+   "Ti-mô-thê",
+   "Sốt-then"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phao-lô gọi ông là anh em. “cùng Ti-mô-thê là anh em” (Cô-lô-se 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ai là bạn tù của Phao-lô gửi lời chào tín hữu Cô-lô-se?",
+  "options": [
+   "A-ri-tạc",
+   "Đê-ma",
+   "Ty-chi-cơ",
+   "Ê-pháp-ra"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "A-ri-tạc từng đi cùng Phao-lô đến Rô-ma. “A-ri-tạc, người bạn tù của tôi” (Cô-lô-se 4:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Mác là anh em họ của ai?",
+  "options": [
+   "Si-la",
+   "Ba-na-ba",
+   "Lu-ca",
+   "Phi-e-rơ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tín hữu được dặn hãy tiếp đón Mác. “Mác, anh em họ của Ba-na-ba” (Cô-lô-se 4:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 4,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ê-pháp-ra chiến đấu cho tín hữu Cô-lô-se bằng điều gì?",
+  "options": [
+   "Thư từ khuyên bảo",
+   "Dâng của lễ",
+   "Tranh luận ở tòa",
+   "Sự cầu nguyện"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để họ trở nên trọn vẹn trong ý muốn Đức Chúa Trời. “anh ấy còn vì anh em chiến đấu trong sự cầu nguyện” (Cô-lô-se 4:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Colossians",
+  "chapter": 4,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cùng với Lu-ca, ai cũng gửi lời chào thăm tín hữu Cô-lô-se?",
+  "options": [
+   "Đê-ma",
+   "Tít",
+   "Si-la",
+   "Phi-lê-môn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Về sau Đê-ma lìa bỏ Phao-lô. “Lu-ca, là vị bác sĩ yêu quý, chào thăm anh em; Đê-ma cũng vậy.” (Cô-lô-se 4:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
    "RVV11"
   ]
  },
@@ -12072,6 +17500,719 @@
   "language": "vi",
   "tags": [
    "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Ga-la-ti được gửi đến các Hội Thánh miền nào?",
+  "options": [
+   "Cô-rinh-tô",
+   "A-chai",
+   "Ga-la-ti",
+   "Ma-xê-đô-ni-a"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Các Hội Thánh Phao-lô lập trong chuyến truyền giáo đầu. “kính gửi các Hội Thánh miền Ga-la-ti” (Ga-la-ti 1:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 2,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói không phải ông sống nữa, mà ai sống trong ông?",
+  "options": [
+   "Đấng Christ",
+   "Môi-se",
+   "Luật pháp",
+   "Một thiên sứ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông đã bị đóng đinh với Đấng Christ. “nhưng Đấng Christ sống trong tôi” (Ga-la-ti 2:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 3,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong Đấng Christ Jêsus, người Do Thái, Hi Lạp, nô lệ, tự do đều thế nào?",
+  "options": [
+   "Phải tách riêng",
+   "Ở dưới luật pháp",
+   "Vẫn khác nhau",
+   "Đều là một"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Không còn phân biệt trong Đấng Christ. “tất cả anh em đều là một trong Đấng Christ Jêsus” (Ga-la-ti 3:28)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 5,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đấng Christ đã giải phóng để chúng ta được gì?",
+  "options": [
+   "Được làm vua",
+   "Được tự do",
+   "Được giàu có",
+   "Được nổi tiếng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đừng đặt mình dưới ách nô lệ nữa. “Đấng Christ đã giải phóng để chúng ta được tự do.” (Ga-la-ti 5:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên hãy mang gì cho nhau?",
+  "options": [
+   "Quà tặng",
+   "Thư từ",
+   "Bánh mì",
+   "Gánh nặng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Như vậy là làm trọn luật pháp của Đấng Christ. “Hãy mang gánh nặng cho nhau” (Ga-la-ti 6:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ai gieo giống gì thì sẽ gặt gì?",
+  "options": [
+   "Gặt gấp mười",
+   "Gặt giống ấy",
+   "Không gặt gì",
+   "Gặt giống khác"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đức Chúa Trời không chịu khinh dể. “ai gieo giống gì, sẽ gặt giống ấy” (Ga-la-ti 6:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên chớ mệt mỏi khi làm điều gì?",
+  "options": [
+   "Học luật pháp",
+   "Đi đường xa",
+   "Làm việc thiện",
+   "Làm ruộng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đến mùa chúng ta sẽ gặt. “Chớ mệt mỏi trong khi làm việc thiện” (Ga-la-ti 6:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 5,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo Ga-la-ti, cả luật pháp được tóm tắt trong lời nào?",
+  "options": [
+   "Yêu người lân cận như mình",
+   "Chớ trộm cướp",
+   "Dâng một phần mười",
+   "Giữ ngày sa-bát"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Hãy lấy lòng yêu thương mà phục vụ nhau. “Ngươi hãy yêu người lân cận như mình.” (Ga-la-ti 5:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói chức sứ đồ của ông đến từ đâu?",
+  "options": [
+   "Từ Hội đồng Giê-ru-sa-lem",
+   "Từ Đấng Christ và Đức Chúa Cha",
+   "Từ thầy Ga-ma-li-ên",
+   "Từ sứ đồ Phi-e-rơ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Không đến từ loài người hay bởi người nào. “nhưng từ chính Đức Chúa Jêsus Christ và Đức Chúa Trời là Cha” (Ga-la-ti 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô ngạc nhiên vì tín hữu Ga-la-ti vội bỏ Chúa để theo gì?",
+  "options": [
+   "Một tin lành khác",
+   "Một sứ đồ khác",
+   "Một xứ khác",
+   "Một vua khác"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Thật ra không có tin lành nào khác. “để theo một tin lành khác” (Ga-la-ti 1:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Những ai được tôn là cột trụ của Hội Thánh Giê-ru-sa-lem?",
+  "options": [
+   "Ba-na-ba, Tít và Si-la",
+   "Phi-líp, Ê-tiên và Ma-thia",
+   "Gia-cơ, Sê-pha và Giăng",
+   "A-pô-lô, Sốt-then và Ti-mô-thê"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ nhận biết ân điển đã ban cho Phao-lô. “Gia-cơ, Sê-pha và Giăng, những người được tôn là cột trụ” (Ga-la-ti 2:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô và Ba-na-ba được giao đi đến với ai?",
+  "options": [
+   "Người Sa-ma-ri",
+   "Các thầy tế lễ",
+   "Người được cắt bì",
+   "Các dân ngoại"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Còn các cột trụ thì đến với người cắt bì. “để chúng tôi đi đến với các dân ngoại” (Ga-la-ti 2:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tại An-ti-ốt, Phao-lô đã công khai phản đối ai?",
+  "options": [
+   "Sê-pha",
+   "Ba-na-ba",
+   "Giăng",
+   "Gia-cơ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vì Sê-pha tránh ăn chung với dân ngoại. “khi Sê-pha đến An-ti-ốt, tôi đã công khai phản đối ông” (Ga-la-ti 2:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 2,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói một người được xưng công chính nhờ điều gì?",
+  "options": [
+   "Dòng dõi Áp-ra-ham",
+   "Công việc luật pháp",
+   "Đức tin trong Đấng Christ",
+   "Phép cắt bì"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chẳng ai được xưng công chính bởi luật pháp. “mà bởi đức tin trong Đức Chúa Jêsus Christ” (Ga-la-ti 2:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ga-la-ti trích lời chép: người công chính sẽ sống bởi gì?",
+  "options": [
+   "Luật pháp",
+   "Đức tin",
+   "Việc làm",
+   "Của lễ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Không ai nhờ luật pháp mà được xưng công chính. “người công chính sẽ sống bởi đức tin.” (Ga-la-ti 3:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đấng Christ đã chuộc chúng ta khỏi điều gì?",
+  "options": [
+   "Nạn đói",
+   "Bệnh tật",
+   "Ách đô hộ Rô-ma",
+   "Sự rủa sả của luật pháp"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài chịu rủa sả thế cho chúng ta. “Đấng Christ đã chuộc chúng ta khỏi sự rủa sả của luật pháp” (Ga-la-ti 3:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 3,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói luật pháp là gì dẫn chúng ta đến Đấng Christ?",
+  "options": [
+   "Cây gậy",
+   "Bức tường",
+   "Người hướng dẫn",
+   "Người phán xét"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để bởi đức tin chúng ta được xưng công chính. “luật pháp là người hướng dẫn chúng ta đến Đấng Christ” (Ga-la-ti 3:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi kỳ hạn đã được trọn, Đức Chúa Trời đã làm gì?",
+  "options": [
+   "Ban luật pháp mới",
+   "Gọi Áp-ra-ham",
+   "Phá đền thờ",
+   "Sai Con Ngài đến"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Do một người nữ sinh ra. “Đức Chúa Trời sai Con Ngài đến” (Ga-la-ti 4:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhờ Con Đức Chúa Trời, chúng ta được nhận làm gì?",
+  "options": [
+   "Con nuôi của Ngài",
+   "Đầy tớ của Ngài",
+   "Thầy tế lễ",
+   "Khách lạ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài chuộc những người ở dưới luật pháp. “chúng ta được nhận làm con nuôi của Ngài” (Ga-la-ti 4:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 5,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói một ít men thì làm gì?",
+  "options": [
+   "Làm bánh cứng lại",
+   "Làm dậy cả đống bột",
+   "Không ảnh hưởng gì",
+   "Làm hư một ổ bánh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Một chút sai lạc ảnh hưởng cả Hội Thánh. “Một ít men làm dậy cả đống bột.” (Ga-la-ti 5:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 5,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên đừng dùng tự do làm cơ hội cho điều gì?",
+  "options": [
+   "Phục vụ nhau",
+   "Làm việc thiện",
+   "Sống cho xác thịt",
+   "Cầu nguyện"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hãy lấy lòng yêu thương mà phục vụ nhau. “đừng dùng tự do ấy như một cơ hội để sống cho xác thịt” (Ga-la-ti 5:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông chẳng khoe về điều gì ngoài gì?",
+  "options": [
+   "Học thức của mình",
+   "Thập tự giá của Chúa",
+   "Phép cắt bì",
+   "Dòng dõi của mình"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nhờ đó thế gian đối với ông đã bị đóng đinh. “tôi chẳng khoe về điều gì ngoài thập tự giá” (Ga-la-ti 6:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói những dòng chữ chính tay ông viết trông thế nào?",
+  "options": [
+   "Màu đỏ",
+   "Viết trên da",
+   "Thật nhỏ",
+   "Thật lớn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông tự tay viết đoạn kết thư. “những dòng chữ thật lớn mà chính tay tôi đã viết” (Ga-la-ti 6:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 1,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sau khi tin Chúa, Phao-lô đã đi qua miền nào trước khi trở lại Đa-mách?",
+  "options": [
+   "Ả-rập",
+   "Sy-ri",
+   "Ma-xê-đô-ni-a",
+   "Ai Cập"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông không lên Giê-ru-sa-lem ngay. “tôi đi qua miền Ả-rập” (Ga-la-ti 1:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi lên Giê-ru-sa-lem làm quen với Sê-pha, Phao-lô ở lại bao lâu?",
+  "options": [
+   "Mười lăm ngày",
+   "Ba ngày",
+   "Ba năm",
+   "Bốn mươi ngày"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ba năm sau khi trở lại Đa-mách. “ở lại với ông mười lăm ngày” (Ga-la-ti 1:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Bao lâu sau Phao-lô mới lên Giê-ru-sa-lem gặp Sê-pha?",
+  "options": [
+   "Ba ngày sau",
+   "Một năm sau",
+   "Ba năm sau",
+   "Mười bốn năm sau"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông muốn cho thấy Tin Lành không do người dạy. “Ba năm sau, tôi lên Giê-ru-sa-lem” (Ga-la-ti 1:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Các cột trụ đã trao gì cho Phao-lô và Ba-na-ba?",
+  "options": [
+   "Áo choàng",
+   "Thư giới thiệu",
+   "Tiền lộ phí",
+   "Tay phải giao kết"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dấu hiệu đồng lòng trong chức vụ. “đã trao tay phải giao kết với Ba-na-ba và tôi” (Ga-la-ti 2:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Lời chép được trích: Đáng rủa thay cho kẻ bị treo trên đâu?",
+  "options": [
+   "Cổng thành",
+   "Cây gỗ",
+   "Tường thành",
+   "Cột đền thờ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đấng Christ chịu rủa sả thế cho chúng ta. “Đáng rủa thay cho kẻ bị treo trên cây gỗ” (Ga-la-ti 3:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông mang gì trên thân thể mình?",
+  "options": [
+   "Dấu vết của Đức Chúa Jêsus",
+   "Vết thương chiến trận",
+   "Dấu ấn của vua",
+   "Dấu cắt bì"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Những vết thương vì cớ Tin Lành. “tôi mang những dấu vết của Đức Chúa Jêsus trên thân thể tôi” (Ga-la-ti 6:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Con Đức Chúa Trời được sinh ra dưới điều gì?",
+  "options": [
+   "Dưới ách Rô-ma",
+   "Dưới luật pháp",
+   "Dưới ngôi sao lạ",
+   "Dưới ngôi vua"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Để chuộc những người ở dưới luật pháp. “sinh ra dưới luật pháp” (Ga-la-ti 4:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nếu không nản lòng làm việc thiện, đến mùa chúng ta sẽ làm gì?",
+  "options": [
+   "Sẽ gieo",
+   "Sẽ nghỉ",
+   "Sẽ gặt",
+   "Sẽ cày"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phần thưởng đến đúng thời điểm của Chúa. “nếu chúng ta không nản lòng thì đến mùa chúng ta sẽ gặt” (Ga-la-ti 6:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
    "RVV11"
   ]
  },
@@ -17624,6 +23765,2122 @@
   "language": "vi",
   "tags": [
    "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 13,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói Đức Chúa Jêsus Christ hôm qua, ngày nay và đời đời thế nào?",
+  "options": [
+   "Ngày càng mạnh hơn",
+   "Không hề thay đổi",
+   "Chỉ là tạm thời",
+   "Luôn đổi mới"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Một lời bảo đảm cho đức tin. “không hề thay đổi” (Hê-bơ-rơ 13:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 4,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói lời của Đức Chúa Trời sắc hơn gì?",
+  "options": [
+   "Mũi tên",
+   "Dao cạo",
+   "Gươm hai lưỡi",
+   "Lưỡi rìu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lời ấy sống động và linh nghiệm. “sắc hơn gươm hai lưỡi” (Hê-bơ-rơ 4:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 12,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ bảo hãy nhìn xem ai, Đấng khởi nguyên và hoàn tất của đức tin?",
+  "options": [
+   "Đức Chúa Jêsus",
+   "Phao-lô",
+   "Áp-ra-ham",
+   "Môi-se"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài đang ngồi bên phải ngai Đức Chúa Trời. “Hãy nhìn xem Đức Chúa Jêsus, Đấng khởi nguyên và hoàn tất của đức tin” (Hê-bơ-rơ 12:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 13,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời đã phán gì để người tin khỏi tham tiền?",
+  "options": [
+   "Ta sẽ không nghe con",
+   "Ta sẽ thử con mãi",
+   "Ta sẽ cho con giàu",
+   "Ta chẳng lìa, chẳng bỏ con"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Hãy hài lòng với những gì mình có. “Ta sẽ chẳng lìa con, chẳng bỏ con đâu.” (Hê-bơ-rơ 13:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 10,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ khuyên chớ bỏ điều gì như mấy kẻ quen làm?",
+  "options": [
+   "Sự nhóm lại",
+   "Nhà cửa",
+   "Bữa ăn chung",
+   "Việc làm ăn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Càng gần ngày của Chúa càng phải khuyên bảo nhau. “Chớ bỏ sự nhóm lại như mấy kẻ quen làm” (Hê-bơ-rơ 10:25)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 13,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói chớ quên tỏ lòng gì, vì có người đã tiếp đãi thiên sứ?",
+  "options": [
+   "Biết ơn",
+   "Khiêm nhường",
+   "Hiếu khách",
+   "Can đảm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Như Áp-ra-ham tiếp ba vị khách. “Chớ quên tỏ lòng hiếu khách” (Hê-bơ-rơ 13:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ khuyên hãy vững lòng đến gần điều gì?",
+  "options": [
+   "Núi Si-na-i",
+   "Bàn thờ đồng",
+   "Cổng đền thờ",
+   "Ngôi ân điển"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để nhận sự thương xót và ân điển giúp đỡ. “chúng ta hãy vững lòng đến gần ngôi ân điển” (Hê-bơ-rơ 4:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 11,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Bởi đức tin, Áp-ra-ham đã dâng ai khi bị thử nghiệm?",
+  "options": [
+   "Ích-ma-ên",
+   "Y-sác",
+   "Gia-cốp",
+   "Lót"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đứa con một nhận được theo lời hứa. “Áp-ra-ham dâng Y-sác trong khi bị thử nghiệm” (Hê-bơ-rơ 11:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 12,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói chúng ta được nhiều người chứng kiến vây quanh như gì?",
+  "options": [
+   "Như biển cả",
+   "Như một đạo quân",
+   "Như đám mây rất lớn",
+   "Như bức tường thành"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Những anh hùng đức tin ở chương trước. “như đám mây rất lớn” (Hê-bơ-rơ 12:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 6,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ ví niềm hi vọng như gì của linh hồn?",
+  "options": [
+   "Ngọn đèn",
+   "Cái neo",
+   "Cánh buồm",
+   "Tấm khiên"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vững vàng và chắc chắn. “như cái neo của linh hồn” (Hê-bơ-rơ 6:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đời xưa, Đức Chúa Trời đã dùng ai phán dạy tổ phụ nhiều lần, nhiều cách?",
+  "options": [
+   "Các thiên sứ",
+   "Các thầy tế lễ",
+   "Các vua",
+   "Các nhà tiên tri"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Câu mở đầu thư Hê-bơ-rơ. “Đức Chúa Trời đã dùng các nhà tiên tri phán dạy tổ phụ chúng ta” (Hê-bơ-rơ 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong những ngày cuối cùng, Đức Chúa Trời phán dạy chúng ta bởi ai?",
+  "options": [
+   "Bởi Con Ngài",
+   "Bởi các thiên sứ",
+   "Bởi Môi-se",
+   "Bởi Ê-li"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Qua Con ấy, Ngài đã sáng tạo vũ trụ. “Ngài phán dạy chúng ta bởi Con Ngài” (Hê-bơ-rơ 1:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói các thiên sứ được sai xuống để làm gì?",
+  "options": [
+   "Phán xét thế gian",
+   "Thay thế loài người",
+   "Phục vụ người được cứu rỗi",
+   "Cai trị các nước"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Thiên sứ là các thần phục vụ. “được sai xuống để phục vụ những người thừa hưởng sự cứu rỗi” (Hê-bơ-rơ 1:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Jêsus từng bị đặt thấp hơn ai trong một thời gian ngắn?",
+  "options": [
+   "Các tiên tri",
+   "Các vua",
+   "Môi-se",
+   "Các thiên sứ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nay Ngài được đội mão triều vinh quang. “Đấng bị đặt thấp hơn các thiên sứ trong một thời gian ngắn” (Hê-bơ-rơ 2:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói Đức Chúa Jêsus đáng được vinh quang hơn ai bội phần?",
+  "options": [
+   "A-rôn",
+   "Môi-se",
+   "Áp-ra-ham",
+   "Đa-vít"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Như người xây nhà hơn ngôi nhà. “Đức Chúa Jêsus đáng được vinh quang hơn Môi-se bội phần” (Hê-bơ-rơ 3:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 4,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ gọi Đức Chúa Jêsus là gì của chúng ta?",
+  "options": [
+   "Thầy tế lễ thượng phẩm vĩ đại",
+   "Vua của Si-ôn",
+   "Tiên tri cuối cùng",
+   "Quan xét công bình"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài đã vượt qua các tầng trời. “chúng ta có một thầy tế lễ thượng phẩm vĩ đại” (Hê-bơ-rơ 4:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 4,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thầy tế lễ thượng phẩm của chúng ta đã bị cám dỗ thế nào?",
+  "options": [
+   "Chỉ bị cám dỗ một lần",
+   "Chưa từng bị cám dỗ",
+   "Bị cám dỗ và vấp ngã",
+   "Đủ mọi cách nhưng không phạm tội"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nên Ngài cảm thông sự yếu đuối chúng ta. “bị cám dỗ đủ mọi cách như chúng ta, song chẳng phạm tội” (Hê-bơ-rơ 4:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 5,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ trích lời: Con làm thầy tế lễ đời đời theo ban nào?",
+  "options": [
+   "A-rôn",
+   "Lê-vi",
+   "Mên-chi-xê-đéc",
+   "Xa-đốc"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Một chức tế lễ cao hơn dòng Lê-vi. “Theo ban Mên-chi-xê-đéc” (Hê-bơ-rơ 5:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 7,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Mên-chi-xê-đéc là vua của thành nào?",
+  "options": [
+   "Sa-lem",
+   "Ê-đôm",
+   "Sô-đôm",
+   "Hếp-rôn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông chúc phước cho Áp-ra-ham. “Mên-chi-xê-đéc nầy là vua của Sa-lem” (Hê-bơ-rơ 7:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 7,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Áp-ra-ham dâng cho Mên-chi-xê-đéc bao nhiêu của cải mình?",
+  "options": [
+   "Một phần ba",
+   "Một phần mười",
+   "Toàn bộ",
+   "Một nửa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Khi ông chiến thắng các vua trở về. “Áp-ra-ham đã lấy một phần mười về mọi của cải mình có mà dâng cho vua” (Hê-bơ-rơ 7:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 9,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đấng Christ bước vào nơi Chí Thánh bằng huyết nào?",
+  "options": [
+   "Huyết chiên con",
+   "Huyết bò con",
+   "Huyết dê đực",
+   "Chính huyết mình"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Một lần đủ cả, đem sự cứu chuộc đời đời. “nhưng dùng chính huyết mình” (Hê-bơ-rơ 9:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 9,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói không đổ huyết thì không có điều gì?",
+  "options": [
+   "Sự tha thứ",
+   "Đền thờ",
+   "Luật pháp",
+   "Sự sống"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Theo luật pháp, mọi vật nhờ huyết mà tinh sạch. “không đổ huyết thì không có sự tha thứ” (Hê-bơ-rơ 9:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 9,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói loài người phải chết một lần, rồi sao?",
+  "options": [
+   "Sống lại ngay",
+   "Chịu phán xét",
+   "Trở thành thiên sứ",
+   "Biến mất"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đấng Christ cũng chỉ dâng mình một lần. “phải chết một lần, rồi chịu phán xét” (Hê-bơ-rơ 9:27)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 10,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ khuyên hãy khích lệ nhau về điều gì?",
+  "options": [
+   "Sức khỏe và tuổi thọ",
+   "Học thức và tài năng",
+   "Lòng yêu thương và việc lành",
+   "Của cải và danh tiếng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Quan tâm đến nhau trong Hội Thánh. “khích lệ nhau về lòng yêu thương và các việc lành” (Hê-bơ-rơ 10:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 11,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bởi đức tin, ai đã dâng sinh tế tốt hơn Ca-in?",
+  "options": [
+   "Nô-ê",
+   "Hê-nóc",
+   "A-bên",
+   "Sết"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông được chứng nhận là công chính. “A-bên đã dâng cho Đức Chúa Trời một sinh tế tốt hơn của Ca-in” (Hê-bơ-rơ 11:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 11,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bởi đức tin, ai được cất lên mà không trải qua sự chết?",
+  "options": [
+   "Hê-nóc",
+   "A-bên",
+   "Nô-ê",
+   "Mê-tu-sê-la"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông sống hài lòng Đức Chúa Trời. “Hê-nóc được cất lên và không trải qua sự chết” (Hê-bơ-rơ 11:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 11,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lúc gần qua đời, Gia-cốp chúc phước cho ai?",
+  "options": [
+   "Mười hai con trai",
+   "Hai con của Giô-sép",
+   "Ê-sau",
+   "Bên-gia-min"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ép-ra-im và Ma-na-se. “đã chúc phước cho hai con của Giô-sép” (Hê-bơ-rơ 11:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 11,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bởi đức tin, cha mẹ Môi-se giấu ông bao lâu?",
+  "options": [
+   "Ba tuần",
+   "Ba năm",
+   "Một năm",
+   "Ba tháng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ không sợ chiếu chỉ của vua. “cha mẹ ông đem đi giấu trong ba tháng” (Hê-bơ-rơ 11:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 11,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi khôn lớn, Môi-se đã từ bỏ danh hiệu nào?",
+  "options": [
+   "Thầy tế lễ Ai Cập",
+   "Hoàng tử Ma-đi-an",
+   "Tướng quân Ai Cập",
+   "Con trai của công chúa Pha-ra-ôn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông chọn chịu khổ với dân Đức Chúa Trời. “từ bỏ danh hiệu mình là con trai của công chúa Pha-ra-ôn” (Hê-bơ-rơ 11:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 11,
+  "verseStart": 31,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bởi đức tin, người phụ nữ nào không chết với kẻ chẳng tin ở Giê-ri-cô?",
+  "options": [
+   "Ru-tơ",
+   "Ra-háp",
+   "Ma-ri",
+   "Đê-bô-ra"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nàng đã tiếp rước các thám tử. “kỹ nữ Ra-háp không chết với kẻ chẳng tin” (Hê-bơ-rơ 11:31)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 12,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì niềm vui đặt trước mặt, Đức Chúa Jêsus đã vui chịu điều gì?",
+  "options": [
+   "Thập tự giá",
+   "Phép báp-têm",
+   "Sự cám dỗ",
+   "Ngôi vua"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài khinh điều sỉ nhục. “vui chịu thập tự giá” (Hê-bơ-rơ 12:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 12,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói Chúa sửa phạt những ai?",
+  "options": [
+   "Kẻ thù Ngài",
+   "Người giàu có",
+   "Người Ngài yêu thương",
+   "Người ngoại bang"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Như cha sửa dạy con. “Chúa sửa phạt người Ngài yêu thương” (Hê-bơ-rơ 12:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 12,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai chỉ vì một món ăn mà bán quyền con trưởng?",
+  "options": [
+   "Ru-bên",
+   "Gia-cốp",
+   "Ê-sau",
+   "Ca-in"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hê-bơ-rơ gọi đó là phàm tục. “phàm tục như Ê-sau, chỉ vì một món ăn mà bán quyền con trưởng” (Hê-bơ-rơ 12:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 13,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ khuyên tín hữu hãy hài lòng với điều gì?",
+  "options": [
+   "Những gì mình có",
+   "Của cải người khác",
+   "Địa vị cao",
+   "Lời khen của người"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chớ tham tiền. “hãy hài lòng với những gì mình có” (Hê-bơ-rơ 13:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói Con là gì của vinh quang Đức Chúa Trời?",
+  "options": [
+   "Tiếng vang",
+   "Người canh giữ",
+   "Cái bóng",
+   "Ánh sáng rực rỡ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Và là hình ảnh trung thực của bản thể Ngài. “Con là ánh sáng rực rỡ của vinh quang Đức Chúa Trời” (Hê-bơ-rơ 1:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 7,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Tên Mên-chi-xê-đéc trước hết có nghĩa là gì?",
+  "options": [
+   "Vua các vua",
+   "Vua công chính",
+   "Vua hòa bình",
+   "Vua thánh khiết"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Còn vua Sa-lem nghĩa là vua hòa bình. “vua công chính” (Hê-bơ-rơ 7:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 7,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Danh hiệu vua của Sa-lem có nghĩa là gì?",
+  "options": [
+   "Vua Si-ôn",
+   "Vua muôn dân",
+   "Vua công chính",
+   "Vua hòa bình"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sa-lem gần với chữ bình an. “vua hòa bình” (Hê-bơ-rơ 7:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 4,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Lời Đức Chúa Trời xuyên thấu đến nỗi phân chia hồn với gì?",
+  "options": [
+   "Máu",
+   "Thân",
+   "Linh",
+   "Trí"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cũng như khớp với tủy. “phân chia hồn với linh” (Hê-bơ-rơ 4:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 6,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cái neo của linh hồn vững vàng và thấu vào đâu?",
+  "options": [
+   "Phía trong màn",
+   "Lòng đất",
+   "Đáy biển",
+   "Cổng thành"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nơi Đức Chúa Jêsus đã vào trước vì chúng ta. “thấu vào phía trong màn” (Hê-bơ-rơ 6:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 11,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi chúc phước, Gia-cốp nương trên vật gì mà thờ lạy?",
+  "options": [
+   "Vai Giô-sép",
+   "Đầu gậy mình",
+   "Gối đầu giường",
+   "Bàn thờ đá"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lúc ông gần qua đời. “nương trên đầu gậy mình mà thờ lạy” (Hê-bơ-rơ 11:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 11,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói vì sao cha mẹ Môi-se giấu ông?",
+  "options": [
+   "Vì công chúa nhờ",
+   "Vì vua cho phép",
+   "Vì thấy đứa con khôi ngô",
+   "Vì sợ người Ê-thi-ô-pi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ không sợ chiếu chỉ của vua. “vì thấy đứa con khôi ngô” (Hê-bơ-rơ 11:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 13,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cuối thư Hê-bơ-rơ báo tin ai đã được trả tự do?",
+  "options": [
+   "Ti-mô-thê",
+   "Si-la",
+   "Phao-lô",
+   "Phi-e-rơ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người viết hi vọng cùng ông đi thăm tín hữu. “Ti-mô-thê đã được trả tự do” (Hê-bơ-rơ 13:23)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 9,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói Đấng Christ không dùng máu của những con vật nào?",
+  "options": [
+   "Nai và hoẵng",
+   "Chiên và bồ câu",
+   "Ngựa và lừa",
+   "Dê đực và bò con"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài dùng chính huyết mình. “không dùng máu dê đực và bò con” (Hê-bơ-rơ 9:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 11,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói dù đã chết, A-bên vẫn còn làm gì?",
+  "options": [
+   "Vẫn dâng lễ",
+   "Vẫn còn nói",
+   "Vẫn còn sống",
+   "Vẫn được thờ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đức tin của ông vẫn làm chứng. “mặc dù chết rồi, ông vẫn còn nói” (Hê-bơ-rơ 11:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ ví: người xây nhà được tôn trọng hơn điều gì?",
+  "options": [
+   "Chủ miếng đất",
+   "Người thợ phụ",
+   "Khách đến ở",
+   "Chính ngôi nhà"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để nói Đức Chúa Jêsus trổi hơn Môi-se. “người xây nhà được tôn trọng hơn chính ngôi nhà” (Hê-bơ-rơ 3:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 7,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Mên-chi-xê-đéc là thầy tế lễ của ai?",
+  "options": [
+   "Đức Chúa Trời chí cao",
+   "Các thần Ai Cập",
+   "Vua Sô-đôm",
+   "Thần Ba-anh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông chúc phước cho Áp-ra-ham. “thầy tế lễ của Đức Chúa Trời chí cao” (Hê-bơ-rơ 7:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hebrews",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hê-bơ-rơ nói Con được lập lên làm gì của muôn vật?",
+  "options": [
+   "Người thợ",
+   "Đấng thừa kế",
+   "Người giữ kho",
+   "Người làm chứng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Qua Con ấy, Ngài đã sáng tạo vũ trụ. “Đấng thừa kế muôn vật” (Hê-bơ-rơ 1:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giăng đang ở trên đảo nào khi nhận sự mặc khải?",
+  "options": [
+   "Pát-mô",
+   "Síp",
+   "Man-tơ",
+   "Cơ-rết"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông bị đày vì lời Đức Chúa Trời. “tại đảo gọi là Pát-mô” (Khải Huyền 1:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đấng Toàn Năng phán: Ta là An-pha và gì?",
+  "options": [
+   "Si-ôn",
+   "Bê-ta",
+   "A-men",
+   "Ô-mê-ga"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Hai chữ cái đầu và cuối của tiếng Hi Lạp. “Ta là An-pha và Ô-mê-ga.” (Khải Huyền 1:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 19,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trên áo và trên đùi của Đấng cưỡi ngựa trắng có ghi danh gì?",
+  "options": [
+   "Thầy tế lễ đời đời",
+   "Vua của các vua, Chúa của các chúa",
+   "Nhà tiên tri lớn",
+   "Con vua Đa-vít"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngài đến để chiến thắng. “VUA CỦA CÁC VUA, CHÚA CỦA CÁC CHÚA” (Khải Huyền 19:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa hứa ban gì cho người trung tín cho đến chết?",
+  "options": [
+   "Ngai vàng",
+   "Một thành mới",
+   "Mão triều thiên của sự sống",
+   "Áo choàng trắng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lời hứa cho Hội Thánh Si-miệc-nơ. “Hãy trung tín cho đến chết, rồi Ta sẽ ban cho con mão triều thiên của sự sống” (Khải Huyền 2:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 19,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khải Huyền nói phước cho những người được dự gì?",
+  "options": [
+   "Lễ Lều Tạm",
+   "Lễ Vượt Qua",
+   "Tiệc cưới Chiên Con",
+   "Tiệc của vua"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đây là những lời chân thật của Đức Chúa Trời. “Phước cho những người dự tiệc cưới Chiên Con!” (Khải Huyền 19:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng được bảo gửi điều mình thấy cho bao nhiêu Hội Thánh?",
+  "options": [
+   "Ba Hội Thánh",
+   "Bảy Hội Thánh",
+   "Mười Hội Thánh",
+   "Mười hai Hội Thánh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Các Hội Thánh ở vùng A-si-a. “gửi cho bảy Hội Thánh” (Khải Huyền 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng được Thánh Linh cảm hóa vào ngày nào?",
+  "options": [
+   "Ngày của Chúa",
+   "Lễ Ngũ Tuần",
+   "Ngày sa-bát",
+   "Lễ Vượt Qua"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông nghe phía sau có tiếng lớn như tiếng kèn. “Vào ngày của Chúa, tôi được Thánh Linh cảm hóa” (Khải Huyền 1:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng, tay phải của Chúa cầm gì?",
+  "options": [
+   "Một cây gậy",
+   "Một cuộn sách",
+   "Bảy chân đèn",
+   "Bảy ngôi sao"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Mặt Ngài như mặt trời chiếu sáng. “Tay phải Ngài cầm bảy ngôi sao” (Khải Huyền 1:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng, từ miệng Chúa lộ ra gì?",
+  "options": [
+   "Ngọn lửa",
+   "Luồng gió",
+   "Thanh gươm hai lưỡi",
+   "Dòng nước"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hình ảnh lời phán xét của Ngài. “từ miệng Ngài lộ ra một thanh gươm hai lưỡi thật sắc” (Khải Huyền 1:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 1,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bảy chân đèn bằng vàng tượng trưng cho gì?",
+  "options": [
+   "Bảy linh",
+   "Bảy Hội Thánh",
+   "Bảy thiên sứ",
+   "Bảy vua"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa giải thích sự mầu nhiệm ấy cho Giăng. “bảy chân đèn là bảy Hội Thánh” (Khải Huyền 1:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa trách Hội Thánh Ê-phê-sô điều gì?",
+  "options": [
+   "Không nóng không lạnh",
+   "Không làm việc gì",
+   "Thờ hình tượng",
+   "Bỏ lòng kính mến ban đầu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dù họ nhẫn nhục và chịu khó. “con đã bỏ lòng kính mến ban đầu” (Khải Huyền 2:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa báo trước Hội Thánh Si-miệc-nơ sẽ bị hoạn nạn trong bao lâu?",
+  "options": [
+   "Mười ngày",
+   "Ba ngày",
+   "Bốn mươi ngày",
+   "Bảy ngày"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ma quỷ sẽ ném vài người vào ngục. “các con sẽ bị hoạn nạn trong mười ngày” (Khải Huyền 2:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hội Thánh Sạt-đe có tiếng là sống, nhưng thật ra thế nào?",
+  "options": [
+   "Lại là chết",
+   "Đang chịu khổ",
+   "Rất giàu có",
+   "Rất đông người"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa biết rõ công việc của họ. “con có tiếng là sống, nhưng lại là chết” (Khải Huyền 3:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa mở trước Hội Thánh Phi-la-đen-phi-a điều gì không ai đóng được?",
+  "options": [
+   "Một kho báu",
+   "Một cái cửa",
+   "Một cuộn sách",
+   "Một con đường"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì họ có ít năng lực mà vẫn giữ lời Chúa. “Ta đã mở trước mặt con một cái cửa không ai có thể đóng được” (Khải Huyền 3:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Quanh ngai trên trời có bao nhiêu trưởng lão ngồi?",
+  "options": [
+   "Mười hai",
+   "Bảy mươi",
+   "Hai mươi bốn",
+   "Bảy"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ mặc áo trắng, đội mão vàng. “hai mươi bốn trưởng lão” (Khải Huyền 4:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trước ngai dường như có gì trong như pha lê?",
+  "options": [
+   "Một cửa ngọc",
+   "Một dòng sông",
+   "Một tấm gương",
+   "Biển thủy tinh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Một phần của khải tượng về ngai trời. “Trước ngai dường như có biển thủy tinh trong như pha lê” (Khải Huyền 4:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 4,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bốn sinh vật quanh ngai ngày đêm nói không dứt lời nào?",
+  "options": [
+   "Hô-sa-na",
+   "A-men, A-men",
+   "Thánh thay, thánh thay, thánh thay",
+   "Ha-lê-lu-gia"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ca ngợi Đức Chúa Trời Toàn Năng. “Thánh thay, thánh thay, thánh thay” (Khải Huyền 4:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 5,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trưởng lão nói ai đã đắc thắng để mở quyển sách và bảy ấn?",
+  "options": [
+   "Sứ đồ Giăng",
+   "Sư tử của bộ tộc Giu-đa",
+   "Hai mươi bốn trưởng lão",
+   "Thiên sứ Mi-ca-ên"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hậu tự của Đa-vít. “Sư tử của bộ tộc Giu-đa” (Khải Huyền 5:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 5,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giăng thấy ai như đã bị giết đứng giữa ngai?",
+  "options": [
+   "Bò đực",
+   "Đại bàng",
+   "Sư tử",
+   "Chiên Con"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sư tử Giu-đa cũng chính là Chiên Con. “Tôi thấy Chiên Con như đã bị giết đang đứng giữa ngai” (Khải Huyền 5:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 6,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi ấn thứ nhất được mở, Giăng thấy con ngựa màu gì?",
+  "options": [
+   "Màu trắng",
+   "Màu đen",
+   "Màu đỏ",
+   "Màu xám"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người cưỡi đi ra như người chinh phục. “kìa là một con ngựa trắng” (Khải Huyền 6:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 7,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Số người được đóng ấn từ các bộ tộc Y-sơ-ra-ên là bao nhiêu?",
+  "options": [
+   "Một trăm bốn mươi bốn nghìn",
+   "Bảy nghìn",
+   "Mười hai nghìn",
+   "Một triệu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Mười hai nghìn người cho mỗi bộ tộc. “Một trăm bốn mươi bốn nghìn” (Khải Huyền 7:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 7,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đoàn người rất đông đứng trước ngai tay cầm gì?",
+  "options": [
+   "Ngọn đèn",
+   "Lá kè",
+   "Thanh gươm",
+   "Cuộn sách"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ mặc áo dài trắng. “mặc áo dài trắng, tay cầm lá kè” (Khải Huyền 7:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 8,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bảy thiên sứ đứng trước mặt Đức Chúa Trời được trao gì?",
+  "options": [
+   "Bảy cái ấn",
+   "Bảy cái chén",
+   "Bảy ngôi sao",
+   "Bảy chiếc kèn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Mỗi tiếng kèn mở ra một tai họa. “được trao cho bảy chiếc kèn” (Khải Huyền 8:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 12,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thiên sứ nào cùng các thiên sứ của mình giao chiến với con rồng?",
+  "options": [
+   "Ra-pha-ên",
+   "U-ri-ên",
+   "Mi-ca-ên",
+   "Gáp-ri-ên"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Trận chiến xảy ra ở trên trời. “Mi-ca-ên và các thiên sứ của mình giao chiến với con rồng” (Khải Huyền 12:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 12,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Con rồng lớn bị ném xuống còn được gọi là gì?",
+  "options": [
+   "Ba-by-lôn lớn",
+   "Tiên tri giả",
+   "Ma quỷ hay Sa-tan",
+   "Con thú từ biển"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nó là con rắn xưa, kẻ lừa dối nhân loại. “được gọi là ma quỷ hay Sa-tan” (Khải Huyền 12:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 16,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Các vua tụ họp tại chỗ mà tiếng Hê-bơ-rơ gọi là gì?",
+  "options": [
+   "Ha-ma-ghê-đôn",
+   "Gô-gơ",
+   "Ga-ba-ôn",
+   "Ghinh-bô-a"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nơi cho trận chiến ngày lớn của Đức Chúa Trời. “tiếng Hê-bơ-rơ gọi là Ha-ma-ghê-đôn” (Khải Huyền 16:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 20,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Con rồng, tức Sa-tan, bị xiềng lại trong bao lâu?",
+  "options": [
+   "Một trăm năm",
+   "Một nghìn năm",
+   "Bốn mươi năm",
+   "Bảy năm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Một thiên sứ từ trời bắt nó. “xiềng nó lại một nghìn năm” (Khải Huyền 20:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 21,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thành thánh có tường lớn và cao với bao nhiêu cửa?",
+  "options": [
+   "Hai mươi bốn cửa",
+   "Bốn cửa",
+   "Bảy cửa",
+   "Mười hai cửa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Trên các cửa ghi tên mười hai bộ tộc. “với mười hai cửa” (Khải Huyền 21:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 21,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trên mười hai nền tường thành thánh có ghi tên ai?",
+  "options": [
+   "Mười hai bộ tộc",
+   "Mười hai thiên sứ",
+   "Mười hai trưởng lão",
+   "Mười hai sứ đồ của Chiên Con"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tên các bộ tộc ghi trên các cửa thành. “tên mười hai sứ đồ của Chiên Con” (Khải Huyền 21:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 14,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tiếng từ trời nói phước cho những người chết như thế nào?",
+  "options": [
+   "Chết lúc già",
+   "Chết trong Chúa",
+   "Chết giàu có",
+   "Chết nơi chiến trận"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ được nghỉ ngơi khỏi khổ nhọc. “phước cho những người chết là chết trong Chúa!” (Khải Huyền 14:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hội Thánh nào sau đây nằm trong bảy Hội Thánh nhận thư?",
+  "options": [
+   "Si-miệc-nơ",
+   "An-ti-ốt",
+   "Cô-lô-se",
+   "Cô-rinh-tô"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cùng với Ê-phê-sô, Pẹt-găm và các Hội Thánh khác. “Ê-phê-sô, Si-miệc-nơ, Pẹt-găm” (Khải Huyền 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 1,
+  "verseStart": 20,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Bảy ngôi sao trong tay phải Chúa tượng trưng cho gì?",
+  "options": [
+   "Bảy vị vua",
+   "Bảy Hội Thánh",
+   "Các thiên sứ của bảy Hội Thánh",
+   "Bảy linh của Chúa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Còn bảy chân đèn là bảy Hội Thánh. “Bảy ngôi sao là các thiên sứ của bảy Hội Thánh” (Khải Huyền 1:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chứng nhân trung thành bị giết tại Pẹt-găm tên là gì?",
+  "options": [
+   "An-ti-pa",
+   "Ê-tiên",
+   "Ti-mô-thê",
+   "Gia-cơ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Hội Thánh vẫn giữ vững danh Chúa. “An-ti-pa, chứng nhân trung thành của Ta” (Khải Huyền 2:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chúa nói nơi Hội Thánh Pẹt-găm ở là chỗ gì?",
+  "options": [
+   "Nơi bình an",
+   "Thành thánh",
+   "Ngai của Sa-tan",
+   "Đền thờ của Chúa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ vẫn không chối bỏ đức tin. “chỗ đó là ngai của Sa-tan” (Khải Huyền 2:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 2,
+  "verseStart": 20,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hội Thánh Thi-a-ti-rơ bị trách vì dung túng người nữ tự xưng tiên tri tên gì?",
+  "options": [
+   "Đa-li-la",
+   "Giê-sa-bên",
+   "Ly-đi",
+   "A-tha-li"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bà quyến dụ các đầy tớ Chúa phạm tội. “con dung túng cho Giê-sa-bên” (Khải Huyền 2:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sinh vật thứ nhất quanh ngai giống con gì?",
+  "options": [
+   "Đại bàng",
+   "Bò đực",
+   "Chiên con",
+   "Sư tử"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sinh vật thứ nhì giống bò đực. “Sinh vật thứ nhất giống như sư tử” (Khải Huyền 4:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sinh vật thứ tư quanh ngai giống con gì?",
+  "options": [
+   "Bò đực",
+   "Đại bàng đang bay",
+   "Sư tử",
+   "Ngựa trắng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Sinh vật thứ ba có mặt giống mặt người. “sinh vật thứ tư giống như đại bàng đang bay” (Khải Huyền 4:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 4,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Mỗi sinh vật trong bốn sinh vật có mấy cánh?",
+  "options": [
+   "Sáu cánh",
+   "Hai cánh",
+   "Bảy cánh",
+   "Bốn cánh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chung quanh và bên trong đầy những mắt. “mỗi con có sáu cánh” (Khải Huyền 4:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 5,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chiên Con đứng giữa ngai có bao nhiêu sừng và mắt?",
+  "options": [
+   "Bốn sừng và bốn mắt",
+   "Hai sừng và hai mắt",
+   "Bảy sừng và bảy mắt",
+   "Mười sừng và bảy đầu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tức là bảy linh của Đức Chúa Trời. “Chiên Con có bảy sừng và bảy mắt” (Khải Huyền 5:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 6,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người cưỡi con ngựa trắng cầm vật gì?",
+  "options": [
+   "Một cây giáo",
+   "Một cái cân",
+   "Một thanh gươm",
+   "Một cây cung"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Người ấy được ban một mão triều thiên. “Người cưỡi ngựa có một cây cung” (Khải Huyền 6:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 13,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khải Huyền nói số của con thú là bao nhiêu?",
+  "options": [
+   "Sáu trăm sáu mươi",
+   "Một trăm bốn mươi bốn",
+   "Sáu trăm sáu mươi sáu",
+   "Bảy trăm bảy mươi bảy"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Con số tiêu biểu cho tên một người. “số của nó là sáu trăm sáu mươi sáu” (Khải Huyền 13:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 21,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Mỗi phía của thành thánh có bao nhiêu cửa?",
+  "options": [
+   "Ba cửa",
+   "Một cửa",
+   "Bốn cửa",
+   "Bảy cửa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Tổng cộng mười hai cửa cho bốn phía. “Phía đông của thành có ba cửa” (Khải Huyền 21:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 21,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thành thánh Giê-ru-sa-lem mới có hình dạng thế nào?",
+  "options": [
+   "Hình tam giác",
+   "Hình vuông",
+   "Hình chữ nhật",
+   "Hình tròn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dài, rộng và cao đều bằng nhau. “Thành hình vuông” (Khải Huyền 21:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 21,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thiên sứ đo chiều dài thành thánh được bao nhiêu?",
+  "options": [
+   "Mười hai cây số",
+   "Một trăm bốn mươi bốn cây số",
+   "Một nghìn hai trăm cây số",
+   "Hai nghìn bốn trăm cây số"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chiều dài, rộng, cao đều bằng nhau. “đo được hai nghìn bốn trăm cây số” (Khải Huyền 21:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Revelation",
+  "chapter": 22,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chúa Jêsus tự xưng là Cội Rễ và Hậu Tự của ai?",
+  "options": [
+   "Môi-se",
+   "Áp-ra-ham",
+   "Gia-cốp",
+   "Đa-vít"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài cũng là Sao Mai sáng chói. “Ta là Cội Rễ và Hậu Tự của Đa-vít” (Khải Huyền 22:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
    "RVV11"
   ]
  },

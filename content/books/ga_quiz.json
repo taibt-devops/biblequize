@@ -1,0 +1,715 @@
+[
+ {
+  "book": "Galatians",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Ga-la-ti được gửi đến các Hội Thánh miền nào?",
+  "options": [
+   "Cô-rinh-tô",
+   "A-chai",
+   "Ga-la-ti",
+   "Ma-xê-đô-ni-a"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Các Hội Thánh Phao-lô lập trong chuyến truyền giáo đầu. “kính gửi các Hội Thánh miền Ga-la-ti” (Ga-la-ti 1:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 2,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói không phải ông sống nữa, mà ai sống trong ông?",
+  "options": [
+   "Đấng Christ",
+   "Môi-se",
+   "Luật pháp",
+   "Một thiên sứ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông đã bị đóng đinh với Đấng Christ. “nhưng Đấng Christ sống trong tôi” (Ga-la-ti 2:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 3,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong Đấng Christ Jêsus, người Do Thái, Hi Lạp, nô lệ, tự do đều thế nào?",
+  "options": [
+   "Phải tách riêng",
+   "Ở dưới luật pháp",
+   "Vẫn khác nhau",
+   "Đều là một"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Không còn phân biệt trong Đấng Christ. “tất cả anh em đều là một trong Đấng Christ Jêsus” (Ga-la-ti 3:28)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 5,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đấng Christ đã giải phóng để chúng ta được gì?",
+  "options": [
+   "Được làm vua",
+   "Được tự do",
+   "Được giàu có",
+   "Được nổi tiếng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đừng đặt mình dưới ách nô lệ nữa. “Đấng Christ đã giải phóng để chúng ta được tự do.” (Ga-la-ti 5:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên hãy mang gì cho nhau?",
+  "options": [
+   "Quà tặng",
+   "Thư từ",
+   "Bánh mì",
+   "Gánh nặng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Như vậy là làm trọn luật pháp của Đấng Christ. “Hãy mang gánh nặng cho nhau” (Ga-la-ti 6:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ai gieo giống gì thì sẽ gặt gì?",
+  "options": [
+   "Gặt gấp mười",
+   "Gặt giống ấy",
+   "Không gặt gì",
+   "Gặt giống khác"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đức Chúa Trời không chịu khinh dể. “ai gieo giống gì, sẽ gặt giống ấy” (Ga-la-ti 6:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên chớ mệt mỏi khi làm điều gì?",
+  "options": [
+   "Học luật pháp",
+   "Đi đường xa",
+   "Làm việc thiện",
+   "Làm ruộng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đến mùa chúng ta sẽ gặt. “Chớ mệt mỏi trong khi làm việc thiện” (Ga-la-ti 6:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 5,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo Ga-la-ti, cả luật pháp được tóm tắt trong lời nào?",
+  "options": [
+   "Yêu người lân cận như mình",
+   "Chớ trộm cướp",
+   "Dâng một phần mười",
+   "Giữ ngày sa-bát"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Hãy lấy lòng yêu thương mà phục vụ nhau. “Ngươi hãy yêu người lân cận như mình.” (Ga-la-ti 5:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói chức sứ đồ của ông đến từ đâu?",
+  "options": [
+   "Từ Hội đồng Giê-ru-sa-lem",
+   "Từ Đấng Christ và Đức Chúa Cha",
+   "Từ thầy Ga-ma-li-ên",
+   "Từ sứ đồ Phi-e-rơ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Không đến từ loài người hay bởi người nào. “nhưng từ chính Đức Chúa Jêsus Christ và Đức Chúa Trời là Cha” (Ga-la-ti 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô ngạc nhiên vì tín hữu Ga-la-ti vội bỏ Chúa để theo gì?",
+  "options": [
+   "Một tin lành khác",
+   "Một sứ đồ khác",
+   "Một xứ khác",
+   "Một vua khác"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Thật ra không có tin lành nào khác. “để theo một tin lành khác” (Ga-la-ti 1:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Những ai được tôn là cột trụ của Hội Thánh Giê-ru-sa-lem?",
+  "options": [
+   "Ba-na-ba, Tít và Si-la",
+   "Phi-líp, Ê-tiên và Ma-thia",
+   "Gia-cơ, Sê-pha và Giăng",
+   "A-pô-lô, Sốt-then và Ti-mô-thê"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ nhận biết ân điển đã ban cho Phao-lô. “Gia-cơ, Sê-pha và Giăng, những người được tôn là cột trụ” (Ga-la-ti 2:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô và Ba-na-ba được giao đi đến với ai?",
+  "options": [
+   "Người Sa-ma-ri",
+   "Các thầy tế lễ",
+   "Người được cắt bì",
+   "Các dân ngoại"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Còn các cột trụ thì đến với người cắt bì. “để chúng tôi đi đến với các dân ngoại” (Ga-la-ti 2:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Tại An-ti-ốt, Phao-lô đã công khai phản đối ai?",
+  "options": [
+   "Sê-pha",
+   "Ba-na-ba",
+   "Giăng",
+   "Gia-cơ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vì Sê-pha tránh ăn chung với dân ngoại. “khi Sê-pha đến An-ti-ốt, tôi đã công khai phản đối ông” (Ga-la-ti 2:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 2,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói một người được xưng công chính nhờ điều gì?",
+  "options": [
+   "Dòng dõi Áp-ra-ham",
+   "Công việc luật pháp",
+   "Đức tin trong Đấng Christ",
+   "Phép cắt bì"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chẳng ai được xưng công chính bởi luật pháp. “mà bởi đức tin trong Đức Chúa Jêsus Christ” (Ga-la-ti 2:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ga-la-ti trích lời chép: người công chính sẽ sống bởi gì?",
+  "options": [
+   "Luật pháp",
+   "Đức tin",
+   "Việc làm",
+   "Của lễ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Không ai nhờ luật pháp mà được xưng công chính. “người công chính sẽ sống bởi đức tin.” (Ga-la-ti 3:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đấng Christ đã chuộc chúng ta khỏi điều gì?",
+  "options": [
+   "Nạn đói",
+   "Bệnh tật",
+   "Ách đô hộ Rô-ma",
+   "Sự rủa sả của luật pháp"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài chịu rủa sả thế cho chúng ta. “Đấng Christ đã chuộc chúng ta khỏi sự rủa sả của luật pháp” (Ga-la-ti 3:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 3,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói luật pháp là gì dẫn chúng ta đến Đấng Christ?",
+  "options": [
+   "Cây gậy",
+   "Bức tường",
+   "Người hướng dẫn",
+   "Người phán xét"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để bởi đức tin chúng ta được xưng công chính. “luật pháp là người hướng dẫn chúng ta đến Đấng Christ” (Ga-la-ti 3:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi kỳ hạn đã được trọn, Đức Chúa Trời đã làm gì?",
+  "options": [
+   "Ban luật pháp mới",
+   "Gọi Áp-ra-ham",
+   "Phá đền thờ",
+   "Sai Con Ngài đến"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Do một người nữ sinh ra. “Đức Chúa Trời sai Con Ngài đến” (Ga-la-ti 4:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhờ Con Đức Chúa Trời, chúng ta được nhận làm gì?",
+  "options": [
+   "Con nuôi của Ngài",
+   "Đầy tớ của Ngài",
+   "Thầy tế lễ",
+   "Khách lạ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài chuộc những người ở dưới luật pháp. “chúng ta được nhận làm con nuôi của Ngài” (Ga-la-ti 4:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 5,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói một ít men thì làm gì?",
+  "options": [
+   "Làm bánh cứng lại",
+   "Làm dậy cả đống bột",
+   "Không ảnh hưởng gì",
+   "Làm hư một ổ bánh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Một chút sai lạc ảnh hưởng cả Hội Thánh. “Một ít men làm dậy cả đống bột.” (Ga-la-ti 5:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 5,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên đừng dùng tự do làm cơ hội cho điều gì?",
+  "options": [
+   "Phục vụ nhau",
+   "Làm việc thiện",
+   "Sống cho xác thịt",
+   "Cầu nguyện"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hãy lấy lòng yêu thương mà phục vụ nhau. “đừng dùng tự do ấy như một cơ hội để sống cho xác thịt” (Ga-la-ti 5:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông chẳng khoe về điều gì ngoài gì?",
+  "options": [
+   "Học thức của mình",
+   "Thập tự giá của Chúa",
+   "Phép cắt bì",
+   "Dòng dõi của mình"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nhờ đó thế gian đối với ông đã bị đóng đinh. “tôi chẳng khoe về điều gì ngoài thập tự giá” (Ga-la-ti 6:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói những dòng chữ chính tay ông viết trông thế nào?",
+  "options": [
+   "Màu đỏ",
+   "Viết trên da",
+   "Thật nhỏ",
+   "Thật lớn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông tự tay viết đoạn kết thư. “những dòng chữ thật lớn mà chính tay tôi đã viết” (Ga-la-ti 6:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 1,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sau khi tin Chúa, Phao-lô đã đi qua miền nào trước khi trở lại Đa-mách?",
+  "options": [
+   "Ả-rập",
+   "Sy-ri",
+   "Ma-xê-đô-ni-a",
+   "Ai Cập"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông không lên Giê-ru-sa-lem ngay. “tôi đi qua miền Ả-rập” (Ga-la-ti 1:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi lên Giê-ru-sa-lem làm quen với Sê-pha, Phao-lô ở lại bao lâu?",
+  "options": [
+   "Mười lăm ngày",
+   "Ba ngày",
+   "Ba năm",
+   "Bốn mươi ngày"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ba năm sau khi trở lại Đa-mách. “ở lại với ông mười lăm ngày” (Ga-la-ti 1:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Bao lâu sau Phao-lô mới lên Giê-ru-sa-lem gặp Sê-pha?",
+  "options": [
+   "Ba ngày sau",
+   "Một năm sau",
+   "Ba năm sau",
+   "Mười bốn năm sau"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông muốn cho thấy Tin Lành không do người dạy. “Ba năm sau, tôi lên Giê-ru-sa-lem” (Ga-la-ti 1:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Các cột trụ đã trao gì cho Phao-lô và Ba-na-ba?",
+  "options": [
+   "Áo choàng",
+   "Thư giới thiệu",
+   "Tiền lộ phí",
+   "Tay phải giao kết"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dấu hiệu đồng lòng trong chức vụ. “đã trao tay phải giao kết với Ba-na-ba và tôi” (Ga-la-ti 2:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Lời chép được trích: Đáng rủa thay cho kẻ bị treo trên đâu?",
+  "options": [
+   "Cổng thành",
+   "Cây gỗ",
+   "Tường thành",
+   "Cột đền thờ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đấng Christ chịu rủa sả thế cho chúng ta. “Đáng rủa thay cho kẻ bị treo trên cây gỗ” (Ga-la-ti 3:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông mang gì trên thân thể mình?",
+  "options": [
+   "Dấu vết của Đức Chúa Jêsus",
+   "Vết thương chiến trận",
+   "Dấu ấn của vua",
+   "Dấu cắt bì"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Những vết thương vì cớ Tin Lành. “tôi mang những dấu vết của Đức Chúa Jêsus trên thân thể tôi” (Ga-la-ti 6:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói Con Đức Chúa Trời được sinh ra dưới điều gì?",
+  "options": [
+   "Dưới ách Rô-ma",
+   "Dưới luật pháp",
+   "Dưới ngôi sao lạ",
+   "Dưới ngôi vua"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Để chuộc những người ở dưới luật pháp. “sinh ra dưới luật pháp” (Ga-la-ti 4:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Galatians",
+  "chapter": 6,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nếu không nản lòng làm việc thiện, đến mùa chúng ta sẽ làm gì?",
+  "options": [
+   "Sẽ gieo",
+   "Sẽ nghỉ",
+   "Sẽ gặt",
+   "Sẽ cày"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phần thưởng đến đúng thời điểm của Chúa. “nếu chúng ta không nản lòng thì đến mùa chúng ta sẽ gặt” (Ga-la-ti 6:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]

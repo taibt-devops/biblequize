@@ -1,0 +1,462 @@
+[
+ {
+  "book": "2 Timothy",
+  "chapter": 2,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên Ti-mô-thê cùng chịu khổ như ai?",
+  "options": [
+   "Người nông dân",
+   "Người buôn bán",
+   "Người lính dũng cảm",
+   "Người khách lạ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người lính của Đấng Christ Jêsus. “như một người lính dũng cảm của Đấng Christ Jêsus” (2 Ti-mô-thê 2:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Gần cuối đời, Phao-lô nói ông đã giữ được điều gì?",
+  "options": [
+   "Đức tin",
+   "Danh tiếng",
+   "Sức khỏe",
+   "Của cải"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông đã chiến đấu anh dũng đến cùng. “đã giữ được đức tin” (2 Ti-mô-thê 4:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô truyền cho Ti-mô-thê hãy truyền giảng điều gì?",
+  "options": [
+   "Luật Môi-se",
+   "Lời Chúa",
+   "Chuyện xưa",
+   "Triết lý Hi Lạp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Với lòng nhẫn nhục và tinh thần dạy dỗ. “Hãy truyền giảng lời Chúa” (2 Ti-mô-thê 4:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời không ban cho chúng ta tinh thần gì?",
+  "options": [
+   "Tinh thần mạnh mẽ",
+   "Tinh thần tự chủ",
+   "Tinh thần yêu thương",
+   "Tinh thần nhút nhát"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài ban tinh thần mạnh mẽ, yêu thương và tự chủ. “Đức Chúa Trời không ban cho chúng ta tinh thần nhút nhát” (2 Ti-mô-thê 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói điều gì đã được dành sẵn cho ông?",
+  "options": [
+   "Mão triều thiên công chính",
+   "Cung điện vàng",
+   "Ngai vua",
+   "Đất đai rộng lớn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cũng dành cho mọi người yêu mến sự hiện đến của Chúa. “mão triều thiên công chính đã dành sẵn cho ta” (2 Ti-mô-thê 4:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bà ngoại của Ti-mô-thê, người có đức tin chân thành, tên là gì?",
+  "options": [
+   "Ơ-nít",
+   "Pê-rít-sin",
+   "Lô-ít",
+   "Ly-đi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đức tin truyền qua ba thế hệ. “trong Lô-ít, bà ngoại con” (2 Ti-mô-thê 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Mẹ của Ti-mô-thê tên là gì?",
+  "options": [
+   "Ma-ri",
+   "Lô-ít",
+   "Đô-ca",
+   "Ơ-nít"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bà có đức tin chân thành. “trong Ơ-nít, mẹ con” (2 Ti-mô-thê 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nhắc Ti-mô-thê hãy nhen lại điều gì?",
+  "options": [
+   "Lửa trên bàn thờ",
+   "Ân tứ của Đức Chúa Trời",
+   "Ký ức tuổi thơ",
+   "Ngọn đèn nhà hội"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ân tứ ông nhận qua sự đặt tay của Phao-lô. “hãy nhen lại ân tứ của Đức Chúa Trời” (2 Ti-mô-thê 1:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên Ti-mô-thê làm người làm công như thế nào?",
+  "options": [
+   "Không có gì đáng thẹn",
+   "Làm ít nghỉ nhiều",
+   "Được trả công cao",
+   "Nổi tiếng nhất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Thẳng thắn giảng dạy lời chân lý. “như người làm công không có gì đáng thẹn” (2 Ti-mô-thê 2:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 2,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô khuyên Ti-mô-thê hãy tránh xa điều gì?",
+  "options": [
+   "Hội Thánh",
+   "Dục vọng của tuổi trẻ",
+   "Sách vở",
+   "Người già cả"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Và theo đuổi sự công chính, đức tin, yêu thương. “Hãy tránh xa những dục vọng của tuổi trẻ” (2 Ti-mô-thê 2:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn hãy kiên trì giảng lời Chúa trong hoàn cảnh nào?",
+  "options": [
+   "Chỉ ngày sa-bát",
+   "Chỉ khi thuận lợi",
+   "Khi có người nghe",
+   "Thuận cảnh hay nghịch cảnh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Thuyết phục, khiển trách, khích lệ. “hãy kiên trì dù trong thuận cảnh hay nghịch cảnh” (2 Ti-mô-thê 4:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông đã hoàn tất điều gì?",
+  "options": [
+   "Bộ sách luật",
+   "Chuyến đi biển",
+   "Cuộc chạy đua",
+   "Ngôi đền thờ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông đã chiến đấu trong trận chiến anh dũng. “đã hoàn tất cuộc chạy đua” (2 Ti-mô-thê 4:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ai vì ham mê đời nầy đã lìa bỏ Phao-lô?",
+  "options": [
+   "Lu-ca",
+   "Tít",
+   "Đê-ma",
+   "Mác"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông đi qua Tê-sa-lô-ni-ca. “Đê-ma, do ham mê đời nầy, đã lìa bỏ ta” (2 Ti-mô-thê 4:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói lúc ấy chỉ còn ai ở với ông?",
+  "options": [
+   "Lu-ca",
+   "Cơ-rết-xen",
+   "Đê-ma",
+   "Tít"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Những người khác đã đi nơi khác. “Chỉ còn một mình Lu-ca ở với ta.” (2 Ti-mô-thê 4:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô bảo Ti-mô-thê đem ai đi theo vì rất hữu ích cho chức vụ?",
+  "options": [
+   "Phi-lết",
+   "Mác",
+   "Đê-ma",
+   "A-léc-xan-đơ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người từng bị Phao-lô không cho đi cùng. “Hãy đem Mác đi theo với con” (2 Ti-mô-thê 4:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn đem chiếc áo choàng ông để lại tại nhà ai ở Trô-ách?",
+  "options": [
+   "Giă-sôn",
+   "Ô-nê-si-phô-rơ",
+   "Gai-út",
+   "Ca-bút"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cùng với sách vở, nhất là cuộn giấy da. “tại nhà Ca-bút, thành Trô-ách” (2 Ti-mô-thê 4:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Người thợ đúc đồng đã làm hại Phao-lô nhiều là ai?",
+  "options": [
+   "Đê-mê-triu",
+   "Phi-lết",
+   "Hy-mê-nê",
+   "A-léc-xan-đơ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa sẽ báo trả tùy theo việc hắn làm. “A-léc-xan-đơ, thợ đúc đồng” (2 Ti-mô-thê 4:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô bảo Ti-mô-thê cố gắng đến trước mùa nào?",
+  "options": [
+   "Mùa hè",
+   "Mùa đông",
+   "Mùa gặt",
+   "Lễ Vượt Qua"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông cần áo choàng và muốn gặp con mình. “Con hãy cố gắng đến trước mùa đông.” (2 Ti-mô-thê 4:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Gia đình nào được Phao-lô cầu phước vì không hổ thẹn khi ông bị xiềng?",
+  "options": [
+   "Phi-lê-môn",
+   "Ê-pháp-ra",
+   "Ô-nê-si-phô-rơ",
+   "Ca-bút"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông ấy nhiều lần nâng đỡ Phao-lô. “Cầu xin Chúa thương xót gia đình Ô-nê-si-phô-rơ” (2 Ti-mô-thê 1:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Timothy",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông đang bị đổ ra như làm lễ gì?",
+  "options": [
+   "Lễ quán",
+   "Lễ Vượt Qua",
+   "Lễ chuộc tội",
+   "Lễ thiêu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Giờ qua đời của ông đã gần. “ta đang bị đổ ra như làm lễ quán” (2 Ti-mô-thê 4:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]
