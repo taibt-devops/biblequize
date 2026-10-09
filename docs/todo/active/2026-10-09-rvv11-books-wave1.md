@@ -41,6 +41,9 @@
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-8 Đợt 2 lên prod
-  - Status: [ ] TODO · seed một lần `rvv11_books_quiz.json` (`sync-stale=false`; kỳ vọng chỉ chèn 662 câu mới) → đối chiếu 1.370 hash → sao lưu `questions_bak_20261010_rvv11_w2` → `is_active=0`
+  - Status: [x] DONE 10/10 · commit `e72acd65`, BE `sha256:840b3be8…` (rollback `34fb410c…`) · seed một lần chỉ `rvv11_books_quiz.json`, `sync-stale=false`: inserted=662, updated=466 (câu đợt 1, nội dung không đổi), dupHash=0, staleDeleted=0 · 1.370/1.370 hash khớp (toàn `seed:json`, đang bật, không lẫn sách/ngôn ngữ khác)
+  - Thêm 30 câu Gia-cơ cũ (Dễ/TB/Khó 10/10/10, tạo 29/04–07/06, kiểu "Gia-cơ 1:1: …") không thuộc file seed nào còn trong repo — mồ côi từ bản `james_quiz.json` trước đó, prod tắt `sync-stale` nên còn sót → tắt cùng đợt; hash thêm vào `retired_hashes.txt` (2.248)
+  - Sao lưu `questions_bak_20261010_rvv11_w2` (id, is_active) rồi `is_active=0` cho 1.400 hàng · câu đang bật nay đúng bằng Dễ cốt lõi + bộ RVV11 của từng sách (số ở RVB-7), cộng 4 câu Giáo lý căn bản (Ê-phê-sô TB 1, Thi Thiên TB 2, Rô-ma Dễ 1) để nguyên · `GET /api/questions` Ru-tơ/Rô-ma/Thi Thiên/Xuất Ai Cập Ký × 3 mức đều trả câu RVV11
+  - Bật lại nếu cần: `UPDATE questions q JOIN questions_bak_20261010_rvv11_w2 b ON b.id = q.id SET q.is_active = b.is_active;`
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
