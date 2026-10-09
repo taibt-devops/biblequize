@@ -16,7 +16,8 @@
   - **Spec impact**: [x] SPEC_USER §2.2
   - **Spec strategy**: [x] (a) update inline
 - GCH-4 Deploy FE + kiểm `home.html` thật
-  - Status: [ ] TODO
+  - Status: [x] DONE 09/10 · commits `05b9fe38` (trang khách), `a7ed41b4` (nút Google thành link thật: trước khi JS tải xong — khoảng 2 s qua bastion — `<button>` không làm gì), `10c740b6` (chạm biển trên điện thoại: chạm kích hoạt hover trước, bong bóng giãn ra che biển Phòng Chơi và ăn mất cú chạm; trang chủ người chơi cũng dính) · FE `sha256:11eb6048…`, rollback `sha256:d1a04274…` (bản favicon)
+  - Kiểm prod: `home.html` có H1 mới + canonical `/`; `/gioi-thieu` title + canonical riêng, có trong sitemap; Playwright trên forbible.org: tương tác sau ~2 s, chạm Đấu Hạng/Phòng Chơi/Hành Trình/đèn lồng mở đúng thẻ, không lỗi JS
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 
