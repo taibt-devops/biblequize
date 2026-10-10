@@ -38,3 +38,7 @@
   - Status: [x] DONE · 439 câu thay 1.079 câu dịch máy: Phục Truyền 40 (14/16/10), Giô-suê 48 (Dễ 19, 14 trên 2 câu chuyện / 18 / 11), Các Quan Xét 45 (18, 15 trên 2 câu chuyện / 16 / 11), 2 Sa-mu-ên 40 (15/16/9), 1 Các Vua 55 (28 trên 4 câu chuyện / 16 / 11), 2 Các Vua 55 (28 trên 4 câu chuyện / 16 / 11), Nê-hê-mi 28 (10/10/8), Gióp 29 (9/12/8), Truyền Đạo 22 (7/10/5), Ê-sai 44 (21 trên 3 câu chuyện / 14 / 9), Giê-rê-mi 33 (11/14/8) · bỏ chi tiết bạo lực (Gia-ên, Bát-sê-ba chỉ hỏi tên chồng, Áp-sa-lôm chỉ hỏi cây) · `retired_hashes.txt` 3.297 hash; 2 câu trùng chữ câu cũ → đổi lời · `bsb_en_quiz.json` 1.700 câu, 110 câu chuyện có câu tiếng Anh · test seed xanh
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- BSB-9 Đợt E4 lên prod
+  - Status: [x] DONE 10/10 · commit `91309b67`, BE `sha256:d245f780…` (rollback `4a3172fe…`) · seed: inserted=439, dupHash=0 · 1.080 hàng cũ (1.079 khớp hash + 1 hàng mồ côi Phục Truyền thế hệ cũ, câu hỏi ghi sẵn "Deuteronomy 11:13-14"), không bộ câu/phòng nào tham chiếu · dump `backups/questions-old-en-e4-deleted-20261010.sql.gz` rồi xóa (CASCADE: 61 answers, 6.374 quiz_session_questions) · hàng tiếng Anh: 1.700 BSB + 1.777 cũ; tổng 7.040 câu · cache sạch (`cache_left=0`) · API Phục Truyền/Giô-suê/Các Quan Xét/2 Sa-mu-ên × 3 mức trả câu BSB · 110 câu chuyện chơi được bằng tiếng Anh
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
