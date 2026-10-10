@@ -82,6 +82,11 @@
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-15 Đợt 5: vòng 3, 8 sách (Lê-vi Ký, Dân Số Ký, 1–2 Sử Ký, E-xơ-ra, Ê-xê-chi-ên, Nhã Ca, Ca Thương)
   - Status: [x] DONE · 269 câu thay 820 câu cũ, viết theo luật 8 (câu hỏi tự đứng được) · cũ Dễ/TB/Khó → mới Dễ (cốt lõi + bộ sách) / TB / Khó: Lê-vi Ký 75/65/35 → 0+12 / 25 / 12 · Dân Số Ký 75/65/35 → 20+5 / 25 / 12 · 1 Sử Ký 49/52/24 → 0+8 / 18 / 10 · 2 Sử Ký 51/50/24 → 0+10 / 20 / 10 · E-xơ-ra 50/51/24 → 0+8 / 16 / 8 · Ê-xê-chi-ên 15/23/12 → 0+8 / 18 / 10 · Nhã Ca 10/11/4 → 0+5 / 8 / 4 · Ca Thương 12/6/2 → 0+5 / 8 / 4
-  - Dân Số Ký tránh trùng bộ Dễ cốt lõi (chương 13–14 do thám, 22 Ba-la-am) · Nhã Ca chỉ hỏi hình ảnh hợp trò chơi gia đình · `retired_hashes.txt` 4.687 hash (+820) · `git rm` 8 file tiếng Việt, giữ `_en` · `rvv11_books_quiz.json` 2.192 câu · 47 test xanh
+  - Dân Số Ký tránh trùng bộ Dễ cốt lõi (chương 13–14 do thám, 22 Ba-la-am) · Nhã Ca chỉ hỏi hình ảnh hợp trò chơi gia đình · `retired_hashes.txt` 4.687 hash (+820) · `git rm` 8 file tiếng Việt, giữ `_en` · `rvv11_books_quiz.json` 2.192 câu · 47 test xanh · sau khi lên prod rà thêm: 10 câu (9 Lê-vi Ký, 1 Dân Số Ký) chỉ có tên Đức Giê-hô-va làm ngữ cảnh → thêm "Theo luật Môi-se…", "Trong ngày lễ chuộc tội…", "Trong hoang mạc…"
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-16 Đợt 5 lên prod
+  - Status: [x] DONE 10/10 · commit `2867e760`, BE `sha256:ebcff71a…` (rollback `e196929e…`) · seed một lần `rvv11_books_quiz.json`, `sync-stale=false`: inserted=269, dupHash=0 · 820/820 hàng cũ khớp 820 hash vừa retire, không có hàng mồ côi · dump `backups/questions-old-vi-w5-deleted-20261010.sql.gz` (1,5 MB) rồi xóa 820 hàng (CASCADE: 50 answers, 6 user_question_history, 25.211 quiz_session_questions; không bộ câu/phòng nào tham chiếu) · `questions` 8.780 · xóa cache Redis `questions:*` · `GET /api/questions` Lê-vi Ký/Dân Số Ký/Ê-xê-chi-ên/Ca Thương × 3 mức trả câu RVV11
+  - Sửa ngữ cảnh 10 câu (RVB-15) lên sau: seed lại + dump/xóa 10 biến thể cũ
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
