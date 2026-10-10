@@ -1,0 +1,186 @@
+[
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, what lay in ruins while the people lived in fine houses?",
+  "options": [
+   "The market",
+   "The LORD's house",
+   "The king's palace",
+   "The city wall"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They neglected God's temple. “Is it a time for you yourselves to live in your paneled houses, while this house lies in ruins?” (Haggai 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, what does the LORD tell the people to consider carefully?",
+  "options": [
+   "Their enemies",
+   "Their neighbors",
+   "Their ways",
+   "Their money"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Their work was not blessed. “Consider carefully your ways.” (Haggai 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, to whom does the silver and gold belong?",
+  "options": [
+   "The king",
+   "The rich",
+   "The priests",
+   "The LORD"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God owns everything. “The silver is Mine, and the gold is Mine, declares the LORD of Hosts.” (Haggai 2:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, the people earned wages to put into what kind of bag?",
+  "options": [
+   "A bag with holes",
+   "A golden bag",
+   "A locked bag",
+   "A new bag"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nothing stayed with them. “You earn wages to put into a bag pierced through.” (Haggai 1:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, how will the latter glory of God's house compare to the former?",
+  "options": [
+   "Smaller",
+   "Forgotten",
+   "Greater",
+   "The same"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God promised peace there. “The latter glory of this house will be greater than the former” (Haggai 2:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, to which governor of Judah did God's word come?",
+  "options": [
+   "Ezra",
+   "Nehemiah",
+   "Sheshbazzar",
+   "Zerubbabel"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Also to Joshua the high priest. “to Zerubbabel son of Shealtiel, governor of Judah” (Haggai 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, what did God say He would make Zerubbabel like?",
+  "options": [
+   "His signet ring",
+   "His crown",
+   "His shield",
+   "His sword"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God had chosen him. “and I will make you like My signet ring, for I have chosen you” (Haggai 2:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In which king's second year did Haggai's prophecy begin?",
+  "options": [
+   "Nebuchadnezzar",
+   "Darius",
+   "Artaxerxes",
+   "Cyrus"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "On the first day of the sixth month. “In the second year of the reign of Darius” (Haggai 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

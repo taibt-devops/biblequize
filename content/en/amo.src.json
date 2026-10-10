@@ -1,0 +1,13 @@
+[
+ {"ref": "amo 5:24", "d": "easy", "q": "In Amos, what should roll on like a river?", "a": "Justice", "wrong": ["Gold", "Wine", "Armies"], "why": "And righteousness like a stream.", "quote": "But let justice roll on like a river, and righteousness like an ever-flowing stream."},
+ {"ref": "amo 7:8", "d": "easy", "q": "In Amos's vision, what was in the Lord's hand by the wall?", "a": "A plumb line", "wrong": ["A sword", "A scroll", "A lamp"], "why": "It measured Israel's straightness.", "quote": "“A plumb line,” I replied."},
+ {"ref": "amo 7:15", "d": "easy", "q": "In Amos, what was Amos doing when the LORD called him?", "a": "Following the flock", "wrong": ["Serving the king", "Teaching in the temple", "Fishing"], "why": "He was a herdsman.", "quote": "But the LORD took me from following the flock and said to me, ‘Go, prophesy to My people Israel.’"},
+ {"ref": "amo 8:11", "d": "easy", "q": "In Amos, what kind of famine will God send?", "a": "Of hearing God's words", "wrong": ["Of bread", "Of water", "Of meat"], "why": "People will search for God's word.", "quote": "but a famine of hearing the words of the LORD."},
+
+ {"ref": "amo 1:1", "d": "medium", "q": "In Amos, from which town was the shepherd-prophet Amos?", "a": "Tekoa", "wrong": ["Anathoth", "Bethlehem", "Shiloh"], "why": "He was among its sheepherders.", "quote": "These are the words of Amos, who was among the sheepherders of Tekoa"},
+ {"ref": "amo 7:14", "d": "medium", "q": "In Amos, what did Amos say he was before God called him?", "a": "A herdsman and fig tender", "wrong": ["A prophet's son", "A priest", "A soldier"], "why": "He was not a professional prophet.", "quote": "rather, I was a herdsman and a tender of sycamore-fig trees."},
+ {"ref": "amo 5:24", "d": "medium", "q": "In Amos, righteousness should flow like what?", "a": "An ever-flowing stream", "wrong": ["A rushing wind", "A burning fire", "A falling star"], "why": "Justice rolls on like a river.", "quote": "and righteousness like an ever-flowing stream."},
+
+ {"ref": "amo 1:1", "d": "hard", "q": "In Amos, Amos's words came two years before what event?", "a": "The earthquake", "wrong": ["The flood", "The exile", "The famine"], "why": "In the days of King Uzziah.", "quote": "what he saw concerning Israel two years before the earthquake"},
+ {"ref": "amo 7:14", "d": "hard", "q": "In Amos, which kind of trees did Amos tend?", "a": "Sycamore-fig trees", "wrong": ["Olive trees", "Cedar trees", "Palm trees"], "why": "He was a farmer, not a prophet.", "quote": "I was a herdsman and a tender of sycamore-fig trees."}
+]

@@ -1,0 +1,9 @@
+[
+ {"ref": "2jo 1:1", "d": "easy", "q": "In 2 John, how does the writer call himself?", "a": "The elder", "wrong": ["The apostle", "The king", "The prophet"], "why": "He wrote to the chosen lady.", "quote": "The elder, To the chosen lady and her children"},
+ {"ref": "2jo 1:5", "d": "easy", "q": "In 2 John, what old command does the elder urge?", "a": "Love one another", "wrong": ["Keep the feasts", "Build a church", "Fast often"], "why": "It was from the beginning.", "quote": "that we love one another."},
+
+ {"ref": "2jo 1:4", "d": "medium", "q": "In 2 John, why was the elder overjoyed?", "a": "Her children walked in truth", "wrong": ["He was set free", "He got a gift", "The church grew rich"], "why": "As the Father commanded.", "quote": "I was overjoyed to find some of your children walking in the truth"},
+ {"ref": "2jo 1:6", "d": "medium", "q": "In 2 John, how does the elder define love?", "a": "Walking in His commandments", "wrong": ["A warm feeling", "Giving gold", "Speaking kindly"], "why": "Love obeys God.", "quote": "And this is love, that we walk according to His commandments."},
+
+ {"ref": "2jo 1:12", "d": "hard", "q": "In 2 John, why did the elder not write more with paper and ink?", "a": "He hoped to visit face to face", "wrong": ["He ran out of ink", "He was ill", "It was forbidden"], "why": "So their joy would be complete.", "quote": "Instead, I hope to come and speak with you face to face, so that our joy may be complete."}
+]

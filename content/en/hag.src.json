@@ -1,0 +1,12 @@
+[
+ {"ref": "hag 1:4", "d": "easy", "q": "In Haggai, what lay in ruins while the people lived in fine houses?", "a": "The LORD's house", "wrong": ["The city wall", "The king's palace", "The market"], "why": "They neglected God's temple.", "quote": "Is it a time for you yourselves to live in your paneled houses, while this house lies in ruins?"},
+ {"ref": "hag 1:5", "d": "easy", "q": "In Haggai, what does the LORD tell the people to consider carefully?", "a": "Their ways", "wrong": ["Their enemies", "Their money", "Their neighbors"], "why": "Their work was not blessed.", "quote": "Consider carefully your ways."},
+ {"ref": "hag 2:8", "d": "easy", "q": "In Haggai, to whom does the silver and gold belong?", "a": "The LORD", "wrong": ["The king", "The priests", "The rich"], "why": "God owns everything.", "quote": "The silver is Mine, and the gold is Mine, declares the LORD of Hosts."},
+
+ {"ref": "hag 1:6", "d": "medium", "q": "In Haggai, the people earned wages to put into what kind of bag?", "a": "A bag with holes", "wrong": ["A golden bag", "A locked bag", "A new bag"], "why": "Nothing stayed with them.", "quote": "You earn wages to put into a bag pierced through."},
+ {"ref": "hag 2:9", "d": "medium", "q": "In Haggai, how will the latter glory of God's house compare to the former?", "a": "Greater", "wrong": ["Smaller", "The same", "Forgotten"], "why": "God promised peace there.", "quote": "The latter glory of this house will be greater than the former"},
+ {"ref": "hag 1:1", "d": "medium", "q": "In Haggai, to which governor of Judah did God's word come?", "a": "Zerubbabel", "wrong": ["Nehemiah", "Ezra", "Sheshbazzar"], "why": "Also to Joshua the high priest.", "quote": "to Zerubbabel son of Shealtiel, governor of Judah"},
+
+ {"ref": "hag 2:23", "d": "hard", "q": "In Haggai, what did God say He would make Zerubbabel like?", "a": "His signet ring", "wrong": ["His sword", "His crown", "His shield"], "why": "God had chosen him.", "quote": "and I will make you like My signet ring, for I have chosen you"},
+ {"ref": "hag 1:1", "d": "hard", "q": "In which king's second year did Haggai's prophecy begin?", "a": "Darius", "wrong": ["Cyrus", "Artaxerxes", "Nebuchadnezzar"], "why": "On the first day of the sixth month.", "quote": "In the second year of the reign of Darius"}
+]

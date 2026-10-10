@@ -1,0 +1,11 @@
+[
+ {"ref": "hab 1:2", "d": "easy", "q": "How does Habakkuk begin his prayer to the LORD?", "a": "How long, O LORD?", "wrong": ["Praise the LORD!", "Thank You, LORD!", "Here am I!"], "why": "He cried out for help.", "quote": "How long, O LORD, must I call for help but You do not hear"},
+ {"ref": "hab 2:4", "d": "easy", "q": "In Habakkuk, by what will the righteous live?", "a": "Faith", "wrong": ["Strength", "Riches", "The sword"], "why": "Paul quoted this verse.", "quote": "but the righteous will live by faith"},
+ {"ref": "hab 3:18", "d": "easy", "q": "In Habakkuk, though the crops fail, what will the prophet still do?", "a": "Rejoice in the LORD", "wrong": ["Leave the land", "Blame God", "Give up hope"], "why": "His joy was in God, not crops.", "quote": "yet I will exult in the LORD; I will rejoice in the God of my salvation!"},
+
+ {"ref": "hab 2:2", "d": "medium", "q": "In Habakkuk, what did the LORD tell Habakkuk to do with the vision?", "a": "Write it on tablets", "wrong": ["Keep it secret", "Sing it", "Burn it"], "why": "So a herald could run with it.", "quote": "Write down this vision and clearly inscribe it on tablets"},
+ {"ref": "hab 2:14", "d": "medium", "q": "In Habakkuk, the earth will be filled with the knowledge of God's glory as waters cover what?", "a": "The sea", "wrong": ["The land", "The sky", "The mountains"], "why": "God's glory will be everywhere.", "quote": "as the waters cover the sea."},
+ {"ref": "hab 3:19", "d": "medium", "q": "In Habakkuk, the Lord makes the prophet's feet like those of what?", "a": "A deer", "wrong": ["An eagle", "A lion", "A horse"], "why": "He walks on the heights.", "quote": "He makes my feet like those of a deer"},
+
+ {"ref": "hab 3:17", "d": "hard", "q": "In Habakkuk's prayer, which tree does not bud?", "a": "The fig tree", "wrong": ["The cedar", "The palm", "The almond"], "why": "Yet he still rejoices.", "quote": "Though the fig tree does not bud and no fruit is on the vines"}
+]

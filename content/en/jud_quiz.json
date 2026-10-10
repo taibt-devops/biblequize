@@ -1,0 +1,140 @@
+[
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the letter of Jude, whose brother is Jude?",
+  "options": [
+   "James",
+   "John",
+   "Peter",
+   "Paul"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He calls himself a servant of Jesus. “Jude, a servant of Jesus Christ and a brother of James” (Jude 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jude, what does Jude urge believers to contend for?",
+  "options": [
+   "Their land",
+   "The faith",
+   "Their leaders",
+   "Their rights"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It was entrusted once for all. “urge you to contend earnestly for the faith entrusted once for all to the saints.” (Jude 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jude's closing praise, God is able to keep you from what?",
+  "options": [
+   "Working",
+   "Growing",
+   "Stumbling",
+   "Traveling"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He presents you with great joy. “Now to Him who is able to keep you from stumbling” (Jude 1:24, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Jude, which archangel disputed with the devil over Moses' body?",
+  "options": [
+   "Uriel",
+   "Raphael",
+   "Gabriel",
+   "Michael"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He said, “The Lord rebuke you!” “But even the archangel Michael, when he disputed with the devil over the body of Moses” (Jude 1:9, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Jude, what did Michael say to the devil?",
+  "options": [
+   "The Lord rebuke you!",
+   "I defeat you!",
+   "You lose!",
+   "Be gone!"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He left judgment to God. “but said, “The Lord rebuke you!”” (Jude 1:9, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Jude, who is called the seventh from Adam?",
+  "options": [
+   "Seth",
+   "Noah",
+   "Enoch",
+   "Methuselah"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He prophesied the Lord's coming. “Enoch, the seventh from Adam, also prophesied about them” (Jude 1:14, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ }
+]

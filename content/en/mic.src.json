@@ -1,0 +1,14 @@
+[
+ {"ref": "mic 5:2", "d": "easy", "q": "In Micah, from which small town would Israel's ruler come?", "a": "Bethlehem", "wrong": ["Nazareth", "Jerusalem", "Hebron"], "why": "Jesus was born there.", "quote": "But you, Bethlehem Ephrathah, who are small among the clans of Judah, out of you will come forth for Me One to be ruler over Israel"},
+ {"ref": "mic 6:8", "d": "easy", "q": "In Micah, what does the LORD require: act justly, love mercy, and what?", "a": "Walk humbly with God", "wrong": ["Build great temples", "Offer many lambs", "Fast every week"], "why": "God has shown what is good.", "quote": "to act justly, to love mercy, and to walk humbly with your God?"},
+ {"ref": "mic 7:19", "d": "easy", "q": "In Micah, where will God cast all our sins?", "a": "Into the depths of the sea", "wrong": ["Into the fire", "Into the desert", "Behind the mountains"], "why": "He has compassion on us.", "quote": "You will cast out all our sins into the depths of the sea."},
+ {"ref": "mic 4:3", "d": "easy", "q": "In Micah's vision of peace, what will nations beat their swords into?", "a": "Plowshares", "wrong": ["Coins", "Crowns", "Bells"], "why": "They will train for war no more.", "quote": "Then they will beat their swords into plowshares"},
+
+ {"ref": "mic 5:2", "d": "medium", "q": "In Micah, how old are the origins of the ruler from Bethlehem?", "a": "From the days of eternity", "wrong": ["From David's time", "From the exile", "From last year"], "why": "He is eternal.", "quote": "One whose origins are of old, from the days of eternity."},
+ {"ref": "mic 7:18", "d": "medium", "q": "In Micah, what does God delight in?", "a": "Loving devotion", "wrong": ["Punishment", "Sacrifices", "Silence"], "why": "He does not stay angry forever.", "quote": "who does not retain His anger forever, because He delights in loving devotion?"},
+ {"ref": "mic 7:18", "d": "medium", "q": "In Micah, the prophet asks, “Who is a God like You, who pardons…”", "a": "Iniquity", "wrong": ["Kings", "Armies", "Debts"], "why": "God forgives His people.", "quote": "Who is a God like You, who pardons iniquity"},
+ {"ref": "mic 4:3", "d": "medium", "q": "In Micah's vision, what will nations turn their spears into?", "a": "Pruning hooks", "wrong": ["Shepherd's staffs", "Walking sticks", "Plow handles"], "why": "Nation will not fight nation.", "quote": "and their spears into pruning hooks."},
+
+ {"ref": "mic 1:1", "d": "hard", "q": "In Micah, what town was the prophet Micah from?", "a": "Moresheth", "wrong": ["Tekoa", "Anathoth", "Elkosh"], "why": "He is called the Moreshite.", "quote": "This is the word of the LORD that came to Micah the Moreshite"},
+ {"ref": "mic 5:2", "d": "hard", "q": "In Micah, what other name is given to Bethlehem?", "a": "Ephrathah", "wrong": ["Ephraim", "Ramah", "Zion"], "why": "It was small among Judah's clans.", "quote": "But you, Bethlehem Ephrathah"}
+]

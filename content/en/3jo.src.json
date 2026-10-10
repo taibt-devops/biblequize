@@ -1,0 +1,10 @@
+[
+ {"ref": "3jo 1:1", "d": "easy", "q": "To whom did the elder write 3 John?", "a": "Gaius", "wrong": ["Titus", "Timothy", "Philemon"], "why": "He loved him in the truth.", "quote": "The elder, To the beloved Gaius, whom I love in the truth"},
+ {"ref": "3jo 1:4", "d": "easy", "q": "In 3 John, what is the elder's greatest joy?", "a": "His children walking in truth", "wrong": ["A big church", "Many letters", "A long life"], "why": "Faithfulness brings joy.", "quote": "I have no greater joy than to hear that my children are walking in the truth."},
+ {"ref": "3jo 1:11", "d": "easy", "q": "In 3 John, the elder says do not imitate evil, but imitate what?", "a": "What is good", "wrong": ["What is popular", "What is easy", "What is new"], "why": "The one who does good is of God.", "quote": "Beloved, do not imitate what is evil, but what is good."},
+
+ {"ref": "3jo 1:2", "d": "medium", "q": "In 3 John, what does the elder pray Gaius will enjoy?", "a": "Good health", "wrong": ["Great riches", "A long journey", "A new house"], "why": "As his soul prospers.", "quote": "I pray that in every way you may prosper and enjoy good health, as your soul also prospers."},
+
+ {"ref": "3jo 1:9", "d": "hard", "q": "In 3 John, who loved to be first and would not accept the elder?", "a": "Diotrephes", "wrong": ["Demetrius", "Gaius", "Demas"], "why": "He rejected the elder's instruction.", "quote": "but Diotrephes, who loves to be first, will not accept our instruction."},
+ {"ref": "3jo 1:12", "d": "hard", "q": "In 3 John, who received a good testimony from everyone?", "a": "Demetrius", "wrong": ["Diotrephes", "Gaius", "Tychicus"], "why": "Even the truth spoke for him.", "quote": "Demetrius has received a good testimony from everyone, and from the truth itself."}
+]

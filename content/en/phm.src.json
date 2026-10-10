@@ -1,0 +1,12 @@
+[
+ {"ref": "phm 1:1", "d": "easy", "q": "To whom did Paul write his short letter named Philemon?", "a": "Philemon, his fellow worker", "wrong": ["Timothy, his son", "Titus in Crete", "The church in Rome"], "why": "Paul wrote as a prisoner.", "quote": "To Philemon our beloved fellow worker"},
+ {"ref": "phm 1:10", "d": "easy", "q": "In Philemon, for whom does Paul make his appeal?", "a": "Onesimus", "wrong": ["Mark", "Demas", "Archippus"], "why": "Paul called him his child.", "quote": "I appeal to you for my child Onesimus"},
+ {"ref": "phm 1:16", "d": "easy", "q": "In Philemon, Paul asks Philemon to receive Onesimus as a beloved what?", "a": "Brother", "wrong": ["Servant", "Guest", "Teacher"], "why": "No longer as a slave.", "quote": "no longer as a slave, but better than a slave, as a beloved brother."},
+
+ {"ref": "phm 1:11", "d": "medium", "q": "In Philemon, Onesimus was once useless but has now become what?", "a": "Useful", "wrong": ["Rich", "Famous", "Free"], "why": "His name means useful.", "quote": "Formerly he was useless to you, but now he has become useful both to you and to me."},
+ {"ref": "phm 1:18", "d": "medium", "q": "In Philemon, what did Paul say to do with anything Onesimus owed?", "a": "Charge it to Paul", "wrong": ["Forget it", "Make him pay", "Ask the church"], "why": "Paul took on his debt.", "quote": "But if he has wronged you in any way or owes you anything, charge it to my account."},
+ {"ref": "phm 1:1", "d": "medium", "q": "In Philemon, how does Paul describe himself?", "a": "A prisoner of Christ Jesus", "wrong": ["An apostle to Rome", "A tentmaker", "A free man"], "why": "He wrote from chains.", "quote": "Paul, a prisoner of Christ Jesus"},
+
+ {"ref": "phm 1:22", "d": "hard", "q": "In Philemon, what did Paul ask Philemon to prepare for him?", "a": "A guest room", "wrong": ["A feast", "A ship", "A letter"], "why": "He hoped to be released.", "quote": "In the meantime, prepare a guest room for me"},
+ {"ref": "phm 1:2", "d": "hard", "q": "In Philemon, whom does Paul call our fellow soldier?", "a": "Archippus", "wrong": ["Apphia", "Onesimus", "Epaphras"], "why": "He was part of the house church.", "quote": "to Archippus our fellow soldier"}
+]

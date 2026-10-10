@@ -1,6 +1,6 @@
 # EN Translation Workflow — Question Seed Files
 
-> **Status**: Implemented (GA-5 task complete). 66/66 books have VI + EN files.
+> **Status**: ĐÃ THAY THẾ 10/10/2026. Bộ tiếng Anh dịch máy (`{book}_quiz_en.json`) đã gỡ hết; câu tiếng Anh nay viết mới theo Berean Standard Bible ở `content/en/` (xem `content/en/README.md`, xuất ra `seed/questions/bsb_en_quiz.json`). Tài liệu dưới đây chỉ còn giá trị lịch sử.
 > **Last updated**: 2026-04-27
 
 ## Mục đích

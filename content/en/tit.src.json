@@ -1,0 +1,12 @@
+[
+ {"ref": "tit 1:4", "d": "easy", "q": "In the letter to Titus, what does Paul call Titus?", "a": "My true child", "wrong": ["My servant", "My master", "My enemy"], "why": "They shared a common faith.", "quote": "To Titus, my true child in our common faith"},
+ {"ref": "tit 2:11", "d": "easy", "q": "In Titus, what has appeared, bringing salvation to everyone?", "a": "The grace of God", "wrong": ["A great king", "A new law", "A bright star"], "why": "Salvation is for all.", "quote": "For the grace of God has appeared, bringing salvation to everyone."},
+ {"ref": "tit 2:7", "d": "easy", "q": "In Titus, Paul tells Titus to show himself an example by doing what?", "a": "Good works", "wrong": ["Hard fasts", "Long trips", "Loud prayers"], "why": "Teach with integrity.", "quote": "In everything, show yourself to be an example by doing good works."},
+
+ {"ref": "tit 1:5", "d": "medium", "q": "In Titus, on which island did Paul leave Titus?", "a": "Crete", "wrong": ["Cyprus", "Malta", "Patmos"], "why": "To appoint elders in every town.", "quote": "The reason I left you in Crete was that you would set in order what was unfinished"},
+ {"ref": "tit 3:5", "d": "medium", "q": "In Titus, God saved us not by our deeds but according to His what?", "a": "Mercy", "wrong": ["Law", "Anger", "Wealth"], "why": "Through new birth by the Spirit.", "quote": "He saved us, not by the righteous deeds we had done, but according to His mercy"},
+ {"ref": "tit 1:5", "d": "medium", "q": "In Titus, whom was Titus to appoint in every town of Crete?", "a": "Elders", "wrong": ["Kings", "Soldiers", "Judges"], "why": "To set the churches in order.", "quote": "and appoint elders in every town, as I directed you."},
+
+ {"ref": "tit 3:12", "d": "hard", "q": "In Titus, where did Paul plan to spend the winter?", "a": "Nicopolis", "wrong": ["Rome", "Ephesus", "Corinth"], "why": "He asked Titus to come there.", "quote": "make every effort to come to me at Nicopolis, because I have decided to winter there."},
+ {"ref": "tit 3:12", "d": "hard", "q": "In Titus, whom did Paul plan to send, Artemas or whom?", "a": "Tychicus", "wrong": ["Timothy", "Silas", "Luke"], "why": "Then Titus could come to Paul.", "quote": "As soon as I send Artemas or Tychicus to you"}
+]

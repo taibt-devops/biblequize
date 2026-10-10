@@ -1,0 +1,10 @@
+[
+ {"ref": "oba 1:1", "d": "easy", "q": "In Obadiah, which nation is the vision about?", "a": "Edom", "wrong": ["Egypt", "Assyria", "Moab"], "why": "God spoke against its pride.", "quote": "This is what the Lord GOD says about Edom"},
+ {"ref": "oba 1:3", "d": "easy", "q": "In Obadiah, what had deceived Edom?", "a": "The pride of its heart", "wrong": ["False prophets", "Its king", "Its gold"], "why": "They thought no one could bring them down.", "quote": "The pride of your heart has deceived you"},
+ {"ref": "oba 1:4", "d": "easy", "q": "In Obadiah, Edom soared like which bird?", "a": "The eagle", "wrong": ["The dove", "The raven", "The sparrow"], "why": "God would still bring it down.", "quote": "Though you soar like the eagle and make your nest among the stars"},
+
+ {"ref": "oba 1:3", "d": "medium", "q": "In Obadiah, where did Edom's people live?", "a": "In the clefts of the rocks", "wrong": ["By the sea", "In the desert sand", "In tents"], "why": "Their home was in the heights.", "quote": "O dwellers in the clefts of the rocks whose habitation is the heights"},
+ {"ref": "oba 1:15", "d": "medium", "q": "In Obadiah, what will happen to Edom as it has done to others?", "a": "It will be done to it", "wrong": ["It will be forgotten", "It will be rewarded", "It will be ignored"], "why": "The Day of the LORD is near.", "quote": "As you have done, it will be done to you"},
+
+ {"ref": "oba 1:4", "d": "hard", "q": "In Obadiah, among what did proud Edom make its nest?", "a": "The stars", "wrong": ["The clouds", "The trees", "The mountains"], "why": "Even from there God would bring it down.", "quote": "and make your nest among the stars, even from there I will bring you down"}
+]

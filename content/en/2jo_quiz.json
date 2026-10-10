@@ -1,0 +1,117 @@
+[
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 John, how does the writer call himself?",
+  "options": [
+   "The prophet",
+   "The king",
+   "The apostle",
+   "The elder"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He wrote to the chosen lady. “The elder, To the chosen lady and her children” (2 John 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 John, what old command does the elder urge?",
+  "options": [
+   "Love one another",
+   "Fast often",
+   "Keep the feasts",
+   "Build a church"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was from the beginning. “that we love one another.” (2 John 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 John, why was the elder overjoyed?",
+  "options": [
+   "He got a gift",
+   "Her children walked in truth",
+   "The church grew rich",
+   "He was set free"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "As the Father commanded. “I was overjoyed to find some of your children walking in the truth” (2 John 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 John, how does the elder define love?",
+  "options": [
+   "Giving gold",
+   "A warm feeling",
+   "Walking in His commandments",
+   "Speaking kindly"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Love obeys God. “And this is love, that we walk according to His commandments.” (2 John 1:6, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 2 John, why did the elder not write more with paper and ink?",
+  "options": [
+   "He hoped to visit face to face",
+   "He ran out of ink",
+   "He was ill",
+   "It was forbidden"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "So their joy would be complete. “Instead, I hope to come and speak with you face to face, so that our joy may be complete.” (2 John 1:12, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ }
+]

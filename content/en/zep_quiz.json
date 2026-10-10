@@ -1,0 +1,140 @@
+[
+ {
+  "book": "Zephaniah",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Zephaniah, how does the LORD rejoice over His people?",
+  "options": [
+   "With trumpets of war",
+   "With anger",
+   "With silence",
+   "With singing"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He quiets them with His love. “He will rejoice over you with singing.” (Zephaniah 3:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Zephaniah, where is the LORD your God?",
+  "options": [
+   "Among you",
+   "Far away",
+   "Only in the temple",
+   "Only in heaven"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He is mighty to save. “The LORD your God is among you; He is mighty to save.” (Zephaniah 3:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Zephaniah, what great day is near and coming quickly?",
+  "options": [
+   "The harvest feast",
+   "The new moon",
+   "The Day of the LORD",
+   "The king's birthday"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Zephaniah warned of judgment. “The great Day of the LORD is near— near and coming quickly.” (Zephaniah 1:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Zephaniah, with what will the LORD quiet His people?",
+  "options": [
+   "His sword",
+   "His love",
+   "His fire",
+   "His law"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He rejoices over them. “He will quiet you with His love” (Zephaniah 3:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In whose days as king did Zephaniah prophesy?",
+  "options": [
+   "David's",
+   "Josiah's",
+   "Ahab's",
+   "Hezekiah's"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Josiah was son of Amon. “in the days of Josiah son of Amon king of Judah” (Zephaniah 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was the prophet Zephaniah's father?",
+  "options": [
+   "Cushi",
+   "Amoz",
+   "Beeri",
+   "Iddo"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Zephaniah was a descendant of Hezekiah. “the word of the LORD that came to Zephaniah son of Cushi” (Zephaniah 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

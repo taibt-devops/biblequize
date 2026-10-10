@@ -1,0 +1,140 @@
+[
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Obadiah, which nation is the vision about?",
+  "options": [
+   "Assyria",
+   "Egypt",
+   "Moab",
+   "Edom"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God spoke against its pride. “This is what the Lord GOD says about Edom” (Obadiah 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Obadiah, what had deceived Edom?",
+  "options": [
+   "The pride of its heart",
+   "Its king",
+   "False prophets",
+   "Its gold"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They thought no one could bring them down. “The pride of your heart has deceived you” (Obadiah 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Obadiah, Edom soared like which bird?",
+  "options": [
+   "The sparrow",
+   "The eagle",
+   "The dove",
+   "The raven"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God would still bring it down. “Though you soar like the eagle and make your nest among the stars” (Obadiah 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Obadiah, where did Edom's people live?",
+  "options": [
+   "In tents",
+   "In the desert sand",
+   "In the clefts of the rocks",
+   "By the sea"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Their home was in the heights. “O dwellers in the clefts of the rocks whose habitation is the heights” (Obadiah 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Obadiah, what will happen to Edom as it has done to others?",
+  "options": [
+   "It will be forgotten",
+   "It will be ignored",
+   "It will be done to it",
+   "It will be rewarded"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The Day of the LORD is near. “As you have done, it will be done to you” (Obadiah 1:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Obadiah, among what did proud Edom make its nest?",
+  "options": [
+   "The mountains",
+   "The trees",
+   "The clouds",
+   "The stars"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Even from there God would bring it down. “and make your nest among the stars, even from there I will bring you down” (Obadiah 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

@@ -1,0 +1,10 @@
+[
+ {"ref": "2th 3:3", "d": "easy", "q": "In 2 Thessalonians, Paul says the Lord is faithful and will guard you from whom?", "a": "The evil one", "wrong": ["Your friends", "The Romans", "Your family"], "why": "He will strengthen you.", "quote": "But the Lord is faithful, and He will strengthen you and guard you from the evil one."},
+ {"ref": "2th 3:10", "d": "easy", "q": "In 2 Thessalonians, what did Paul say about anyone unwilling to work?", "a": "He shall not eat", "wrong": ["He shall be king", "He shall rest", "He shall be paid"], "why": "Everyone should do their part.", "quote": "If anyone is unwilling to work, he shall not eat."},
+ {"ref": "2th 3:13", "d": "easy", "q": "In 2 Thessalonians, Paul tells the brothers not to grow weary in what?", "a": "Well-doing", "wrong": ["Sleeping", "Traveling", "Eating"], "why": "Keep doing good.", "quote": "But as for you, brothers, do not grow weary in well-doing."},
+
+ {"ref": "2th 2:2", "d": "medium", "q": "In 2 Thessalonians, what false claim alarmed the believers?", "a": "The Day of the Lord had come", "wrong": ["Paul had died", "Rome had fallen", "The temple was rebuilt"], "why": "Paul told them not to be shaken.", "quote": "alleging that the Day of the Lord has already come."},
+ {"ref": "2th 3:17", "d": "medium", "q": "In 2 Thessalonians, how did Paul mark his letters as truly his?", "a": "A greeting in his own hand", "wrong": ["A royal seal", "A gold stamp", "A secret word"], "why": "It was his mark in every letter.", "quote": "This greeting is in my own hand—Paul. This is my mark in every letter"},
+
+ {"ref": "2th 1:1", "d": "hard", "q": "Who sent 2 Thessalonians together with Paul and Timothy?", "a": "Silvanus", "wrong": ["Titus", "Luke", "Barnabas"], "why": "The same three wrote 1 Thessalonians.", "quote": "Paul, Silvanus, and Timothy, To the church of the Thessalonians"}
+]

@@ -1,0 +1,140 @@
+[
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Thessalonians, Paul says the Lord is faithful and will guard you from whom?",
+  "options": [
+   "The Romans",
+   "Your family",
+   "The evil one",
+   "Your friends"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He will strengthen you. “But the Lord is faithful, and He will strengthen you and guard you from the evil one.” (2 Thessalonians 3:3, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Thessalonians, what did Paul say about anyone unwilling to work?",
+  "options": [
+   "He shall be king",
+   "He shall not eat",
+   "He shall be paid",
+   "He shall rest"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Everyone should do their part. “If anyone is unwilling to work, he shall not eat.” (2 Thessalonians 3:10, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Thessalonians, Paul tells the brothers not to grow weary in what?",
+  "options": [
+   "Well-doing",
+   "Eating",
+   "Traveling",
+   "Sleeping"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Keep doing good. “But as for you, brothers, do not grow weary in well-doing.” (2 Thessalonians 3:13, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Thessalonians, what false claim alarmed the believers?",
+  "options": [
+   "Paul had died",
+   "The temple was rebuilt",
+   "Rome had fallen",
+   "The Day of the Lord had come"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Paul told them not to be shaken. “alleging that the Day of the Lord has already come.” (2 Thessalonians 2:2, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Thessalonians, how did Paul mark his letters as truly his?",
+  "options": [
+   "A gold stamp",
+   "A greeting in his own hand",
+   "A secret word",
+   "A royal seal"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It was his mark in every letter. “This greeting is in my own hand—Paul. This is my mark in every letter” (2 Thessalonians 3:17, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who sent 2 Thessalonians together with Paul and Timothy?",
+  "options": [
+   "Barnabas",
+   "Titus",
+   "Silvanus",
+   "Luke"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The same three wrote 1 Thessalonians. “Paul, Silvanus, and Timothy, To the church of the Thessalonians” (2 Thessalonians 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ }
+]

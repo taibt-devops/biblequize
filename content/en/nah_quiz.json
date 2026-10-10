@@ -1,0 +1,163 @@
+[
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, against which city is the burden of the prophet?",
+  "options": [
+   "Jerusalem",
+   "Babylon",
+   "Nineveh",
+   "Tyre"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jonah had once preached there too. “This is the burden against Nineveh” (Nahum 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, the LORD is good and a stronghold in the day of what?",
+  "options": [
+   "Distress",
+   "Feasting",
+   "Harvest",
+   "Rest"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He cares for those who trust Him. “The LORD is good, a stronghold in the day of distress” (Nahum 1:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, the LORD is slow to anger and great in what?",
+  "options": [
+   "Wealth",
+   "Numbers",
+   "Silence",
+   "Power"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He will punish the guilty. “The LORD is slow to anger and great in power” (Nahum 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, what are the clouds beneath the LORD's feet?",
+  "options": [
+   "Flowers",
+   "Dust",
+   "Stones",
+   "Waves"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "His path is in the storm. “and clouds are the dust beneath His feet.” (Nahum 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, for whom does the LORD care?",
+  "options": [
+   "The strongest",
+   "The proudest",
+   "Those who trust Him",
+   "The richest"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He is a stronghold. “He cares for those who trust in Him.” (Nahum 1:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, where was the prophet Nahum from?",
+  "options": [
+   "Tishbe",
+   "Elkosh",
+   "Moresheth",
+   "Tekoa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He is called the Elkoshite. “the book of the vision of Nahum the Elkoshite” (Nahum 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, what does the prophet call Nineveh?",
+  "options": [
+   "The city of blood",
+   "The city of peace",
+   "The city of God",
+   "The golden city"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was full of lies and plunder. “Woe to the city of blood, full of lies, full of plunder” (Nahum 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

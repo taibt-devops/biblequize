@@ -7002,6 +7002,121 @@
   ]
  },
  {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 John, how does the writer call himself?",
+  "options": [
+   "The prophet",
+   "The king",
+   "The apostle",
+   "The elder"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He wrote to the chosen lady. “The elder, To the chosen lady and her children” (2 John 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 John, what old command does the elder urge?",
+  "options": [
+   "Love one another",
+   "Fast often",
+   "Keep the feasts",
+   "Build a church"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was from the beginning. “that we love one another.” (2 John 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 John, why was the elder overjoyed?",
+  "options": [
+   "He got a gift",
+   "Her children walked in truth",
+   "The church grew rich",
+   "He was set free"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "As the Father commanded. “I was overjoyed to find some of your children walking in the truth” (2 John 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 John, how does the elder define love?",
+  "options": [
+   "Giving gold",
+   "A warm feeling",
+   "Walking in His commandments",
+   "Speaking kindly"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Love obeys God. “And this is love, that we walk according to His commandments.” (2 John 1:6, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 2 John, why did the elder not write more with paper and ink?",
+  "options": [
+   "He hoped to visit face to face",
+   "He ran out of ink",
+   "He was ill",
+   "It was forbidden"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "So their joy would be complete. “Instead, I hope to come and speak with you face to face, so that our joy may be complete.” (2 John 1:12, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
   "book": "2 Kings",
   "chapter": 2,
   "verseStart": 2,
@@ -8351,6 +8466,236 @@
   ]
  },
  {
+  "book": "2 Peter",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Peter, with the Lord a day is like how many years?",
+  "options": [
+   "One hundred",
+   "Seven",
+   "A thousand",
+   "Ten"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God is not bound by time. “With the Lord a day is like a thousand years, and a thousand years are like a day.” (2 Peter 3:8, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 3,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Peter, why is the Lord patient?",
+  "options": [
+   "He forgot",
+   "He is tired",
+   "He is far away",
+   "He wants all to repent"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He does not want anyone to perish. “not wanting anyone to perish but everyone to come to repentance.” (2 Peter 3:9, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Peter, how will the Day of the Lord come?",
+  "options": [
+   "Like the dawn",
+   "Like a thief",
+   "Like a slow river",
+   "Like a parade"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "No one knows the time. “But the Day of the Lord will come like a thief.” (2 Peter 3:10, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 3,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Peter, in what should believers grow?",
+  "options": [
+   "Grace and knowledge of Christ",
+   "Strength and size",
+   "Wealth and fame",
+   "Land and cattle"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "To Him be the glory. “But grow in the grace and knowledge of our Lord and Savior Jesus Christ.” (2 Peter 3:18, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 1,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Peter, how did the prophets speak from God?",
+  "options": [
+   "By reading stars",
+   "By dreams of kings",
+   "Carried along by the Spirit",
+   "By their own will"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Prophecy did not come from man. “but men spoke from God as they were carried along by the Holy Spirit.” (2 Peter 1:21, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Peter, Peter says he did not follow fables but was an eyewitness of what?",
+  "options": [
+   "The temple's fall",
+   "Moses' death",
+   "A great war",
+   "Christ's majesty"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He saw it on the holy mountain. “but we were eyewitnesses of His majesty.” (2 Peter 1:16, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 1,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Peter, what did the voice from the Majestic Glory say about Jesus?",
+  "options": [
+   "Behold the king",
+   "This is My beloved Son",
+   "Follow Moses",
+   "This is the prophet"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God was well pleased with Him. “This is My beloved Son, in whom I am well pleased.” (2 Peter 1:17, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 2,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Peter, whom does Peter call a preacher of righteousness?",
+  "options": [
+   "Noah",
+   "Enoch",
+   "Lot",
+   "Abraham"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God preserved him in the flood. “but preserved Noah, a preacher of righteousness, among the eight” (2 Peter 2:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 3,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 2 Peter, which brother does Peter mention as writing with God's wisdom?",
+  "options": [
+   "James",
+   "Jude",
+   "John",
+   "Paul"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Peter calls him beloved. “just as our beloved brother Paul also wrote you with the wisdom God gave him.” (2 Peter 3:15, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 2 Peter, where did Peter hear the voice from heaven?",
+  "options": [
+   "In the garden",
+   "On the holy mountain",
+   "By the sea",
+   "In the temple"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He was with Jesus there. “And we ourselves heard this voice from heaven when we were with Him on the holy mountain.” (2 Peter 1:18, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
   "book": "2 Samuel",
   "chapter": 1,
   "verseStart": 17,
@@ -9271,6 +9616,144 @@
   ]
  },
  {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Thessalonians, Paul says the Lord is faithful and will guard you from whom?",
+  "options": [
+   "The Romans",
+   "Your family",
+   "The evil one",
+   "Your friends"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He will strengthen you. “But the Lord is faithful, and He will strengthen you and guard you from the evil one.” (2 Thessalonians 3:3, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Thessalonians, what did Paul say about anyone unwilling to work?",
+  "options": [
+   "He shall be king",
+   "He shall not eat",
+   "He shall be paid",
+   "He shall rest"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Everyone should do their part. “If anyone is unwilling to work, he shall not eat.” (2 Thessalonians 3:10, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Thessalonians, Paul tells the brothers not to grow weary in what?",
+  "options": [
+   "Well-doing",
+   "Eating",
+   "Traveling",
+   "Sleeping"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Keep doing good. “But as for you, brothers, do not grow weary in well-doing.” (2 Thessalonians 3:13, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Thessalonians, what false claim alarmed the believers?",
+  "options": [
+   "Paul had died",
+   "The temple was rebuilt",
+   "Rome had fallen",
+   "The Day of the Lord had come"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Paul told them not to be shaken. “alleging that the Day of the Lord has already come.” (2 Thessalonians 2:2, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Thessalonians, how did Paul mark his letters as truly his?",
+  "options": [
+   "A gold stamp",
+   "A greeting in his own hand",
+   "A secret word",
+   "A royal seal"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It was his mark in every letter. “This greeting is in my own hand—Paul. This is my mark in every letter” (2 Thessalonians 3:17, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who sent 2 Thessalonians together with Paul and Timothy?",
+  "options": [
+   "Barnabas",
+   "Titus",
+   "Silvanus",
+   "Luke"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The same three wrote 1 Thessalonians. “Paul, Silvanus, and Timothy, To the church of the Thessalonians” (2 Thessalonians 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
   "book": "2 Timothy",
   "chapter": 3,
   "verseStart": 16,
@@ -9699,6 +10182,144 @@
    3
   ],
   "explanation": "He also wanted his scrolls. “bring the cloak that I left with Carpus at Troas, and my scrolls, especially the parchments.” (2 Timothy 4:13, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "To whom did the elder write 3 John?",
+  "options": [
+   "Timothy",
+   "Gaius",
+   "Philemon",
+   "Titus"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He loved him in the truth. “The elder, To the beloved Gaius, whom I love in the truth” (3 John 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 3 John, what is the elder's greatest joy?",
+  "options": [
+   "His children walking in truth",
+   "Many letters",
+   "A long life",
+   "A big church"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Faithfulness brings joy. “I have no greater joy than to hear that my children are walking in the truth.” (3 John 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 3 John, the elder says do not imitate evil, but imitate what?",
+  "options": [
+   "What is new",
+   "What is popular",
+   "What is easy",
+   "What is good"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The one who does good is of God. “Beloved, do not imitate what is evil, but what is good.” (3 John 1:11, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 3 John, what does the elder pray Gaius will enjoy?",
+  "options": [
+   "Great riches",
+   "A new house",
+   "Good health",
+   "A long journey"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "As his soul prospers. “I pray that in every way you may prosper and enjoy good health, as your soul also prospers.” (3 John 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 3 John, who loved to be first and would not accept the elder?",
+  "options": [
+   "Demas",
+   "Gaius",
+   "Demetrius",
+   "Diotrephes"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He rejected the elder's instruction. “but Diotrephes, who loves to be first, will not accept our instruction.” (3 John 1:9, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 3 John, who received a good testimony from everyone?",
+  "options": [
+   "Demetrius",
+   "Gaius",
+   "Tychicus",
+   "Diotrephes"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Even the truth spoke for him. “Demetrius has received a good testimony from everyone, and from the truth itself.” (3 John 1:12, BSB)",
   "language": "en",
   "tags": [
    "New Testament",
@@ -12465,6 +13086,213 @@
   "language": "en",
   "tags": [
    "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 5,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Amos, what should roll on like a river?",
+  "options": [
+   "Justice",
+   "Armies",
+   "Gold",
+   "Wine"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "And righteousness like a stream. “But let justice roll on like a river, and righteousness like an ever-flowing stream.” (Amos 5:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Amos's vision, what was in the Lord's hand by the wall?",
+  "options": [
+   "A lamp",
+   "A sword",
+   "A scroll",
+   "A plumb line"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It measured Israel's straightness. ““A plumb line,” I replied.” (Amos 7:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Amos, what was Amos doing when the LORD called him?",
+  "options": [
+   "Teaching in the temple",
+   "Serving the king",
+   "Following the flock",
+   "Fishing"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He was a herdsman. “But the LORD took me from following the flock and said to me, ‘Go, prophesy to My people Israel.’” (Amos 7:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 8,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Amos, what kind of famine will God send?",
+  "options": [
+   "Of water",
+   "Of hearing God's words",
+   "Of meat",
+   "Of bread"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "People will search for God's word. “but a famine of hearing the words of the LORD.” (Amos 8:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Amos, from which town was the shepherd-prophet Amos?",
+  "options": [
+   "Shiloh",
+   "Bethlehem",
+   "Anathoth",
+   "Tekoa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was among its sheepherders. “These are the words of Amos, who was among the sheepherders of Tekoa” (Amos 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Amos, what did Amos say he was before God called him?",
+  "options": [
+   "A herdsman and fig tender",
+   "A prophet's son",
+   "A soldier",
+   "A priest"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He was not a professional prophet. “rather, I was a herdsman and a tender of sycamore-fig trees.” (Amos 7:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 5,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Amos, righteousness should flow like what?",
+  "options": [
+   "A rushing wind",
+   "An ever-flowing stream",
+   "A falling star",
+   "A burning fire"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Justice rolls on like a river. “and righteousness like an ever-flowing stream.” (Amos 5:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Amos, Amos's words came two years before what event?",
+  "options": [
+   "The exile",
+   "The famine",
+   "The earthquake",
+   "The flood"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "In the days of King Uzziah. “what he saw concerning Israel two years before the earthquake” (Amos 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Amos, which kind of trees did Amos tend?",
+  "options": [
+   "Cedar trees",
+   "Sycamore-fig trees",
+   "Olive trees",
+   "Palm trees"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He was a farmer, not a prophet. “I was a herdsman and a tender of sycamore-fig trees.” (Amos 7:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
    "BSB"
   ]
  },
@@ -26450,6 +27278,351 @@
   ]
  },
  {
+  "book": "Habakkuk",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How does Habakkuk begin his prayer to the LORD?",
+  "options": [
+   "How long, O LORD?",
+   "Thank You, LORD!",
+   "Praise the LORD!",
+   "Here am I!"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He cried out for help. “How long, O LORD, must I call for help but You do not hear” (Habakkuk 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Habakkuk, by what will the righteous live?",
+  "options": [
+   "Riches",
+   "Faith",
+   "The sword",
+   "Strength"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Paul quoted this verse. “but the righteous will live by faith” (Habakkuk 2:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 3,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Habakkuk, though the crops fail, what will the prophet still do?",
+  "options": [
+   "Blame God",
+   "Give up hope",
+   "Rejoice in the LORD",
+   "Leave the land"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His joy was in God, not crops. “yet I will exult in the LORD; I will rejoice in the God of my salvation!” (Habakkuk 3:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Habakkuk, what did the LORD tell Habakkuk to do with the vision?",
+  "options": [
+   "Sing it",
+   "Keep it secret",
+   "Burn it",
+   "Write it on tablets"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "So a herald could run with it. “Write down this vision and clearly inscribe it on tablets” (Habakkuk 2:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 2,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Habakkuk, the earth will be filled with the knowledge of God's glory as waters cover what?",
+  "options": [
+   "The land",
+   "The mountains",
+   "The sea",
+   "The sky"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God's glory will be everywhere. “as the waters cover the sea.” (Habakkuk 2:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 3,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Habakkuk, the Lord makes the prophet's feet like those of what?",
+  "options": [
+   "An eagle",
+   "A lion",
+   "A horse",
+   "A deer"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He walks on the heights. “He makes my feet like those of a deer” (Habakkuk 3:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Habakkuk's prayer, which tree does not bud?",
+  "options": [
+   "The cedar",
+   "The fig tree",
+   "The palm",
+   "The almond"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Yet he still rejoices. “Though the fig tree does not bud and no fruit is on the vines” (Habakkuk 3:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, what lay in ruins while the people lived in fine houses?",
+  "options": [
+   "The market",
+   "The LORD's house",
+   "The king's palace",
+   "The city wall"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They neglected God's temple. “Is it a time for you yourselves to live in your paneled houses, while this house lies in ruins?” (Haggai 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, what does the LORD tell the people to consider carefully?",
+  "options": [
+   "Their enemies",
+   "Their neighbors",
+   "Their ways",
+   "Their money"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Their work was not blessed. “Consider carefully your ways.” (Haggai 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, to whom does the silver and gold belong?",
+  "options": [
+   "The king",
+   "The rich",
+   "The priests",
+   "The LORD"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God owns everything. “The silver is Mine, and the gold is Mine, declares the LORD of Hosts.” (Haggai 2:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, the people earned wages to put into what kind of bag?",
+  "options": [
+   "A bag with holes",
+   "A golden bag",
+   "A locked bag",
+   "A new bag"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nothing stayed with them. “You earn wages to put into a bag pierced through.” (Haggai 1:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, how will the latter glory of God's house compare to the former?",
+  "options": [
+   "Smaller",
+   "Forgotten",
+   "Greater",
+   "The same"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God promised peace there. “The latter glory of this house will be greater than the former” (Haggai 2:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, to which governor of Judah did God's word come?",
+  "options": [
+   "Ezra",
+   "Nehemiah",
+   "Sheshbazzar",
+   "Zerubbabel"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Also to Joshua the high priest. “to Zerubbabel son of Shealtiel, governor of Judah” (Haggai 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Haggai, what did God say He would make Zerubbabel like?",
+  "options": [
+   "His signet ring",
+   "His crown",
+   "His shield",
+   "His sword"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God had chosen him. “and I will make you like My signet ring, for I have chosen you” (Haggai 2:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In which king's second year did Haggai's prophecy begin?",
+  "options": [
+   "Nebuchadnezzar",
+   "Darius",
+   "Artaxerxes",
+   "Cyrus"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "On the first day of the sixth month. “In the second year of the reign of Darius” (Haggai 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
   "book": "Hebrews",
   "chapter": 11,
   "verseStart": 1,
@@ -27068,6 +28241,236 @@
   "language": "en",
   "tags": [
    "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 6,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Hosea, what does God desire rather than sacrifice?",
+  "options": [
+   "Mercy",
+   "Fasting",
+   "Gold",
+   "Songs"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus quoted this verse. “For I desire mercy, not sacrifice” (Hosea 6:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 11,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Hosea, out of which land did God call His son Israel?",
+  "options": [
+   "Assyria",
+   "Egypt",
+   "Babylon",
+   "Canaan"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God loved Israel as a child. “When Israel was a child, I loved him, and out of Egypt I called My son.” (Hosea 11:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 14,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Hosea, what does the prophet urge Israel to do?",
+  "options": [
+   "Build an army",
+   "Choose a king",
+   "Move to Egypt",
+   "Return to the LORD"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They had stumbled by sin. “Return, O Israel, to the LORD your God” (Hosea 14:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 11,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Hosea, God says He led Israel with ropes of what?",
+  "options": [
+   "Gold",
+   "Fear",
+   "Love",
+   "Iron"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "And cords of kindness. “I led them with cords of kindness, with ropes of love” (Hosea 11:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Whom did the prophet Hosea marry?",
+  "options": [
+   "Leah",
+   "Ruth",
+   "Gomer",
+   "Tamar"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His marriage pictured God and Israel. “So Hosea went and married Gomer daughter of Diblaim” (Hosea 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Hosea, God told Hosea to love his wife again as the LORD loves whom?",
+  "options": [
+   "The nations",
+   "The angels",
+   "The priests",
+   "The Israelites"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God's love is faithful. “Love her as the LORD loves the Israelites” (Hosea 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 6,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Hosea, God desires the knowledge of God rather than what?",
+  "options": [
+   "Long prayers",
+   "Burnt offerings",
+   "Feasts",
+   "Riches"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He wants hearts, not rituals. “and the knowledge of God rather than burnt offerings.” (Hosea 6:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 11,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Hosea, what did God lift from His people's necks?",
+  "options": [
+   "The yoke",
+   "A chain of gold",
+   "A crown",
+   "A scarf"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He bent down to feed them. “I lifted the yoke from their necks and bent down to feed them.” (Hosea 11:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was the prophet Hosea's father?",
+  "options": [
+   "Amoz",
+   "Beeri",
+   "Pethuel",
+   "Buzi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hosea prophesied in Uzziah's days. “the word of the LORD that came to Hosea son of Beeri” (Hosea 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Hosea, Gomer was the daughter of whom?",
+  "options": [
+   "Diblaim",
+   "Jesse",
+   "Beeri",
+   "Eliam"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "She bore Hosea a son. “So Hosea went and married Gomer daughter of Diblaim” (Hosea 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
    "BSB"
   ]
  },
@@ -31231,6 +32634,213 @@
   ]
  },
  {
+  "book": "Joel",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Joel, what kind of insects ate up the land?",
+  "options": [
+   "Flies",
+   "Bees",
+   "Ants",
+   "Locusts"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Swarm after swarm came. “What the devouring locust has left, the swarming locust has eaten” (Joel 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Joel, God promises to pour out His Spirit on whom?",
+  "options": [
+   "Only kings",
+   "Only prophets",
+   "All people",
+   "Only priests"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Peter quoted this at Pentecost. “And afterward, I will pour out My Spirit on all people.” (Joel 2:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Joel, who will be saved?",
+  "options": [
+   "Everyone who calls on the LORD",
+   "Only the rich",
+   "Only the strong",
+   "No one"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Paul quoted this in Romans. “And everyone who calls on the name of the LORD will be saved” (Joel 2:32, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Joel, what should you rend instead of your garments?",
+  "options": [
+   "Your tents",
+   "Your hearts",
+   "Your bread",
+   "Your scrolls"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God wants true repentance. “So rend your hearts and not your garments” (Joel 2:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Joel, how is God described when calling people to return?",
+  "options": [
+   "Tired and weary",
+   "Gracious and compassionate",
+   "Silent and still",
+   "Harsh and distant"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He is slow to anger. “For He is gracious and compassionate, slow to anger, abounding in loving devotion.” (Joel 2:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Joel, what does God promise to repay?",
+  "options": [
+   "Money lost in war",
+   "Time spent in exile",
+   "Gold taken by kings",
+   "Years eaten by locusts"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God restores what was lost. “I will repay you for the years eaten by locusts” (Joel 2:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Joel, when the Spirit is poured out, what will young men see?",
+  "options": [
+   "Armies",
+   "Angels",
+   "Visions",
+   "Gold"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Old men will dream dreams. “your young men will see visions.” (Joel 2:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was the prophet Joel's father?",
+  "options": [
+   "Pethuel",
+   "Amoz",
+   "Hilkiah",
+   "Beeri"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The word of the LORD came to Joel. “This is the word of the LORD that came to Joel son of Pethuel” (Joel 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 32,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Joel, where will there be deliverance?",
+  "options": [
+   "Egypt and Babylon",
+   "The wilderness",
+   "Mount Sinai",
+   "Mount Zion and Jerusalem"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Among the remnant called by the LORD. “for on Mount Zion and in Jerusalem there will be deliverance” (Joel 2:32, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
   "book": "John",
   "chapter": 2,
   "verseStart": 1,
@@ -35254,6 +36864,144 @@
   ]
  },
  {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the letter of Jude, whose brother is Jude?",
+  "options": [
+   "James",
+   "John",
+   "Peter",
+   "Paul"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He calls himself a servant of Jesus. “Jude, a servant of Jesus Christ and a brother of James” (Jude 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jude, what does Jude urge believers to contend for?",
+  "options": [
+   "Their land",
+   "The faith",
+   "Their leaders",
+   "Their rights"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It was entrusted once for all. “urge you to contend earnestly for the faith entrusted once for all to the saints.” (Jude 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jude's closing praise, God is able to keep you from what?",
+  "options": [
+   "Working",
+   "Growing",
+   "Stumbling",
+   "Traveling"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He presents you with great joy. “Now to Him who is able to keep you from stumbling” (Jude 1:24, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Jude, which archangel disputed with the devil over Moses' body?",
+  "options": [
+   "Uriel",
+   "Raphael",
+   "Gabriel",
+   "Michael"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He said, “The Lord rebuke you!” “But even the archangel Michael, when he disputed with the devil over the body of Moses” (Jude 1:9, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Jude, what did Michael say to the devil?",
+  "options": [
+   "The Lord rebuke you!",
+   "I defeat you!",
+   "You lose!",
+   "Be gone!"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He left judgment to God. “but said, “The Lord rebuke you!”” (Jude 1:9, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Jude, who is called the seventh from Adam?",
+  "options": [
+   "Seth",
+   "Noah",
+   "Enoch",
+   "Methuselah"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He prophesied the Lord's coming. “Enoch, the seventh from Adam, also prophesied about them” (Jude 1:14, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
   "book": "Lamentations",
   "chapter": 3,
   "verseStart": 23,
@@ -39162,6 +40910,236 @@
   "language": "en",
   "tags": [
    "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Malachi, what does the LORD say He does not do?",
+  "options": [
+   "Speak",
+   "Listen",
+   "Change",
+   "Forgive"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "So Jacob's descendants were not destroyed. “Because I, the LORD, do not change” (Malachi 3:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Malachi, what did God tell the people to bring into the storehouse?",
+  "options": [
+   "Their idols",
+   "Their tents",
+   "Their weapons",
+   "The full tithe"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God promised to pour out blessing. “Bring the full tithe into the storehouse, so that there may be food in My house.” (Malachi 3:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Malachi, what will God open to pour out blessing?",
+  "options": [
+   "The windows of heaven",
+   "The city gates",
+   "The temple doors",
+   "The deep springs"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Blessing without measure. “See if I will not open the windows of heaven and pour out for you blessing without measure.” (Malachi 3:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Malachi, which prophet will God send before the Day of the LORD?",
+  "options": [
+   "Isaiah",
+   "Elijah",
+   "Moses",
+   "Samuel"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jesus said John the Baptist came in this role. “Behold, I will send you Elijah the prophet before the coming of the great and awesome Day of the LORD.” (Malachi 4:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Malachi, how did God say the people were robbing Him?",
+  "options": [
+   "By stealing temple gold",
+   "By lying to priests",
+   "In tithes and offerings",
+   "By skipping feasts"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They held back what was His. “In tithes and offerings.” (Malachi 3:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Malachi, whom will God send to prepare the way before Him?",
+  "options": [
+   "His messenger",
+   "A flood",
+   "A king",
+   "An army"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Then the Lord would come to His temple. “Behold, I will send My messenger, who will prepare the way before Me.” (Malachi 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Malachi, Elijah will turn the hearts of fathers to whom?",
+  "options": [
+   "Their enemies",
+   "Their children",
+   "Their fields",
+   "Their kings"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "And children's hearts to fathers. “And he will turn the hearts of the fathers to their children” (Malachi 4:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Malachi, what will rise with healing in its wings?",
+  "options": [
+   "A great eagle",
+   "The new moon",
+   "The morning star",
+   "The sun of righteousness"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "For those who fear God's name. “the sun of righteousness will rise with healing in its wings” (Malachi 4:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Malachi, those who fear God's name will leap like what?",
+  "options": [
+   "Deer on the hills",
+   "Lambs in spring",
+   "Calves from the stall",
+   "Fish in the sea"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Joy follows healing. “and you will go out and leap like calves from the stall.” (Malachi 4:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Malachi, when God says “I have loved you,” whose brother does He mention?",
+  "options": [
+   "Esau, Jacob's brother",
+   "Ishmael, Isaac's brother",
+   "Cain, Abel's brother",
+   "Aaron, Moses' brother"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God chose to love Jacob. “Was not Esau Jacob’s brother?” (Malachi 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
    "BSB"
   ]
  },
@@ -44175,6 +46153,397 @@
   ]
  },
  {
+  "book": "Micah",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Micah, from which small town would Israel's ruler come?",
+  "options": [
+   "Bethlehem",
+   "Jerusalem",
+   "Nazareth",
+   "Hebron"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus was born there. “But you, Bethlehem Ephrathah, who are small among the clans of Judah, out of you will come forth for Me One to be ruler over Israel” (Micah 5:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 6,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Micah, what does the LORD require: act justly, love mercy, and what?",
+  "options": [
+   "Fast every week",
+   "Walk humbly with God",
+   "Build great temples",
+   "Offer many lambs"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God has shown what is good. “to act justly, to love mercy, and to walk humbly with your God?” (Micah 6:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 7,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Micah, where will God cast all our sins?",
+  "options": [
+   "Into the desert",
+   "Into the fire",
+   "Into the depths of the sea",
+   "Behind the mountains"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He has compassion on us. “You will cast out all our sins into the depths of the sea.” (Micah 7:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Micah's vision of peace, what will nations beat their swords into?",
+  "options": [
+   "Crowns",
+   "Coins",
+   "Bells",
+   "Plowshares"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They will train for war no more. “Then they will beat their swords into plowshares” (Micah 4:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Micah, how old are the origins of the ruler from Bethlehem?",
+  "options": [
+   "From the days of eternity",
+   "From David's time",
+   "From the exile",
+   "From last year"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He is eternal. “One whose origins are of old, from the days of eternity.” (Micah 5:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 7,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Micah, what does God delight in?",
+  "options": [
+   "Silence",
+   "Sacrifices",
+   "Punishment",
+   "Loving devotion"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He does not stay angry forever. “who does not retain His anger forever, because He delights in loving devotion?” (Micah 7:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 7,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Micah, the prophet asks, “Who is a God like You, who pardons…”",
+  "options": [
+   "Armies",
+   "Iniquity",
+   "Debts",
+   "Kings"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God forgives His people. “Who is a God like You, who pardons iniquity” (Micah 7:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Micah's vision, what will nations turn their spears into?",
+  "options": [
+   "Shepherd's staffs",
+   "Plow handles",
+   "Pruning hooks",
+   "Walking sticks"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nation will not fight nation. “and their spears into pruning hooks.” (Micah 4:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Micah, what town was the prophet Micah from?",
+  "options": [
+   "Elkosh",
+   "Moresheth",
+   "Anathoth",
+   "Tekoa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He is called the Moreshite. “This is the word of the LORD that came to Micah the Moreshite” (Micah 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Micah, what other name is given to Bethlehem?",
+  "options": [
+   "Ephrathah",
+   "Zion",
+   "Ramah",
+   "Ephraim"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was small among Judah's clans. “But you, Bethlehem Ephrathah” (Micah 5:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, against which city is the burden of the prophet?",
+  "options": [
+   "Jerusalem",
+   "Babylon",
+   "Nineveh",
+   "Tyre"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jonah had once preached there too. “This is the burden against Nineveh” (Nahum 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, the LORD is good and a stronghold in the day of what?",
+  "options": [
+   "Distress",
+   "Feasting",
+   "Harvest",
+   "Rest"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He cares for those who trust Him. “The LORD is good, a stronghold in the day of distress” (Nahum 1:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, the LORD is slow to anger and great in what?",
+  "options": [
+   "Wealth",
+   "Numbers",
+   "Silence",
+   "Power"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He will punish the guilty. “The LORD is slow to anger and great in power” (Nahum 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, what are the clouds beneath the LORD's feet?",
+  "options": [
+   "Flowers",
+   "Dust",
+   "Stones",
+   "Waves"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "His path is in the storm. “and clouds are the dust beneath His feet.” (Nahum 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, for whom does the LORD care?",
+  "options": [
+   "The strongest",
+   "The proudest",
+   "Those who trust Him",
+   "The richest"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He is a stronghold. “He cares for those who trust in Him.” (Nahum 1:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, where was the prophet Nahum from?",
+  "options": [
+   "Tishbe",
+   "Elkosh",
+   "Moresheth",
+   "Tekoa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He is called the Elkoshite. “the book of the vision of Nahum the Elkoshite” (Nahum 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Nahum, what does the prophet call Nineveh?",
+  "options": [
+   "The city of blood",
+   "The city of peace",
+   "The city of God",
+   "The golden city"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was full of lies and plunder. “Woe to the city of blood, full of lies, full of plunder” (Nahum 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
   "book": "Nehemiah",
   "chapter": 1,
   "verseStart": 3,
@@ -45699,6 +48068,144 @@
   ]
  },
  {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Obadiah, which nation is the vision about?",
+  "options": [
+   "Assyria",
+   "Egypt",
+   "Moab",
+   "Edom"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God spoke against its pride. “This is what the Lord GOD says about Edom” (Obadiah 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Obadiah, what had deceived Edom?",
+  "options": [
+   "The pride of its heart",
+   "Its king",
+   "False prophets",
+   "Its gold"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They thought no one could bring them down. “The pride of your heart has deceived you” (Obadiah 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Obadiah, Edom soared like which bird?",
+  "options": [
+   "The sparrow",
+   "The eagle",
+   "The dove",
+   "The raven"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God would still bring it down. “Though you soar like the eagle and make your nest among the stars” (Obadiah 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Obadiah, where did Edom's people live?",
+  "options": [
+   "In tents",
+   "In the desert sand",
+   "In the clefts of the rocks",
+   "By the sea"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Their home was in the heights. “O dwellers in the clefts of the rocks whose habitation is the heights” (Obadiah 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Obadiah, what will happen to Edom as it has done to others?",
+  "options": [
+   "It will be forgotten",
+   "It will be ignored",
+   "It will be done to it",
+   "It will be rewarded"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The Day of the LORD is near. “As you have done, it will be done to you” (Obadiah 1:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Obadiah, among what did proud Edom make its nest?",
+  "options": [
+   "The mountains",
+   "The trees",
+   "The clouds",
+   "The stars"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Even from there God would bring it down. “and make your nest among the stars, even from there I will bring you down” (Obadiah 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
   "book": "Philippians",
   "chapter": 4,
   "verseStart": 13,
@@ -46242,6 +48749,190 @@
    0
   ],
   "explanation": "His chains spread the gospel. “it has become clear throughout the whole palace guard and to everyone else that I am in chains for Christ.” (Philippians 1:13, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "To whom did Paul write his short letter named Philemon?",
+  "options": [
+   "Timothy, his son",
+   "Philemon, his fellow worker",
+   "The church in Rome",
+   "Titus in Crete"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Paul wrote as a prisoner. “To Philemon our beloved fellow worker” (Philemon 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, for whom does Paul make his appeal?",
+  "options": [
+   "Onesimus",
+   "Demas",
+   "Mark",
+   "Archippus"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Paul called him his child. “I appeal to you for my child Onesimus” (Philemon 1:10, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, Paul asks Philemon to receive Onesimus as a beloved what?",
+  "options": [
+   "Guest",
+   "Servant",
+   "Teacher",
+   "Brother"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "No longer as a slave. “no longer as a slave, but better than a slave, as a beloved brother.” (Philemon 1:16, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, Onesimus was once useless but has now become what?",
+  "options": [
+   "Free",
+   "Famous",
+   "Useful",
+   "Rich"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His name means useful. “Formerly he was useless to you, but now he has become useful both to you and to me.” (Philemon 1:11, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, what did Paul say to do with anything Onesimus owed?",
+  "options": [
+   "Ask the church",
+   "Charge it to Paul",
+   "Make him pay",
+   "Forget it"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Paul took on his debt. “But if he has wronged you in any way or owes you anything, charge it to my account.” (Philemon 1:18, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, how does Paul describe himself?",
+  "options": [
+   "An apostle to Rome",
+   "A tentmaker",
+   "A prisoner of Christ Jesus",
+   "A free man"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He wrote from chains. “Paul, a prisoner of Christ Jesus” (Philemon 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, what did Paul ask Philemon to prepare for him?",
+  "options": [
+   "A letter",
+   "A ship",
+   "A feast",
+   "A guest room"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He hoped to be released. “In the meantime, prepare a guest room for me” (Philemon 1:22, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, whom does Paul call our fellow soldier?",
+  "options": [
+   "Archippus",
+   "Onesimus",
+   "Epaphras",
+   "Apphia"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He was part of the house church. “to Archippus our fellow soldier” (Philemon 1:2, BSB)",
   "language": "en",
   "tags": [
    "New Testament",
@@ -51089,6 +53780,558 @@
    2
   ],
   "explanation": "It streams down the slope. “Your hair is like a flock of goats streaming down Mount Gilead.” (Song of Songs 4:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the letter to Titus, what does Paul call Titus?",
+  "options": [
+   "My master",
+   "My enemy",
+   "My servant",
+   "My true child"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They shared a common faith. “To Titus, my true child in our common faith” (Titus 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Titus, what has appeared, bringing salvation to everyone?",
+  "options": [
+   "A new law",
+   "A great king",
+   "The grace of God",
+   "A bright star"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Salvation is for all. “For the grace of God has appeared, bringing salvation to everyone.” (Titus 2:11, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Titus, Paul tells Titus to show himself an example by doing what?",
+  "options": [
+   "Loud prayers",
+   "Good works",
+   "Hard fasts",
+   "Long trips"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Teach with integrity. “In everything, show yourself to be an example by doing good works.” (Titus 2:7, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Titus, on which island did Paul leave Titus?",
+  "options": [
+   "Crete",
+   "Patmos",
+   "Malta",
+   "Cyprus"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "To appoint elders in every town. “The reason I left you in Crete was that you would set in order what was unfinished” (Titus 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Titus, God saved us not by our deeds but according to His what?",
+  "options": [
+   "Mercy",
+   "Wealth",
+   "Law",
+   "Anger"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Through new birth by the Spirit. “He saved us, not by the righteous deeds we had done, but according to His mercy” (Titus 3:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Titus, whom was Titus to appoint in every town of Crete?",
+  "options": [
+   "Soldiers",
+   "Kings",
+   "Elders",
+   "Judges"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "To set the churches in order. “and appoint elders in every town, as I directed you.” (Titus 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Titus, where did Paul plan to spend the winter?",
+  "options": [
+   "Ephesus",
+   "Rome",
+   "Corinth",
+   "Nicopolis"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He asked Titus to come there. “make every effort to come to me at Nicopolis, because I have decided to winter there.” (Titus 3:12, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Titus, whom did Paul plan to send, Artemas or whom?",
+  "options": [
+   "Silas",
+   "Tychicus",
+   "Timothy",
+   "Luke"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Then Titus could come to Paul. “As soon as I send Artemas or Tychicus to you” (Titus 3:12, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 9,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Zechariah, on what animal does the coming King ride?",
+  "options": [
+   "A horse",
+   "A camel",
+   "A donkey",
+   "A chariot"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jesus fulfilled this on Palm Sunday. “humble and riding on a donkey, on a colt, the foal of a donkey.” (Zechariah 9:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Zechariah, “Not by might nor by power, but by My…”",
+  "options": [
+   "Army",
+   "Gold",
+   "Law",
+   "Spirit"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God's work is done His way. “Not by might nor by power, but by My Spirit, says the LORD of Hosts.” (Zechariah 4:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 8,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Zechariah's vision of Jerusalem, who will fill the streets playing?",
+  "options": [
+   "Animals",
+   "Boys and girls",
+   "Soldiers",
+   "Priests"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Peace will return to the city. “And the streets of the city will be filled with boys and girls playing there.” (Zechariah 8:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 9,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Zechariah, how is the King coming to Zion described?",
+  "options": [
+   "Humble",
+   "Proud",
+   "Angry",
+   "Hidden"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He is also righteous and victorious. “See, your King comes to you, righteous and victorious, humble and riding on a donkey” (Zechariah 9:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Zechariah, God asks who has despised the day of what?",
+  "options": [
+   "Small things",
+   "Feasts",
+   "Great battles",
+   "Rest"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Small beginnings matter to God. “For who has despised the day of small things?” (Zechariah 4:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 8,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Zechariah's vision, who will sit along Jerusalem's streets again?",
+  "options": [
+   "Merchants",
+   "Foreign kings",
+   "Soldiers",
+   "Old men and women"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Each with a staff because of age. “Old men and old women will again sit along the streets of Jerusalem” (Zechariah 8:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 13,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Zechariah, what happens when the Shepherd is struck?",
+  "options": [
+   "Nothing changes",
+   "The sheep scatter",
+   "The sheep fight",
+   "The sheep follow"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jesus quoted this before His arrest. “Strike the Shepherd, and the sheep will be scattered” (Zechariah 13:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Zechariah, to whom was the word “Not by might nor by power” given?",
+  "options": [
+   "Joshua",
+   "Darius",
+   "Zerubbabel",
+   "Nehemiah"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He led the temple rebuilding. “This is the word of the LORD to Zerubbabel” (Zechariah 4:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was the prophet Zechariah's father?",
+  "options": [
+   "Amoz",
+   "Berechiah",
+   "Iddo",
+   "Buzi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "His grandfather was Iddo. “the word of the LORD came to the prophet Zechariah son of Berechiah, the son of Iddo” (Zechariah 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Zechariah, what will the seven eyes of the LORD rejoice to see in Zerubbabel's hand?",
+  "options": [
+   "A crown",
+   "A sword",
+   "A scroll",
+   "The plumb line"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The temple would be finished. “will rejoice when they see the plumb line in the hand of Zerubbabel.” (Zechariah 4:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Zephaniah, how does the LORD rejoice over His people?",
+  "options": [
+   "With trumpets of war",
+   "With anger",
+   "With silence",
+   "With singing"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He quiets them with His love. “He will rejoice over you with singing.” (Zephaniah 3:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Zephaniah, where is the LORD your God?",
+  "options": [
+   "Among you",
+   "Far away",
+   "Only in the temple",
+   "Only in heaven"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He is mighty to save. “The LORD your God is among you; He is mighty to save.” (Zephaniah 3:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Zephaniah, what great day is near and coming quickly?",
+  "options": [
+   "The harvest feast",
+   "The new moon",
+   "The Day of the LORD",
+   "The king's birthday"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Zephaniah warned of judgment. “The great Day of the LORD is near— near and coming quickly.” (Zephaniah 1:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Zephaniah, with what will the LORD quiet His people?",
+  "options": [
+   "His sword",
+   "His love",
+   "His fire",
+   "His law"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He rejoices over them. “He will quiet you with His love” (Zephaniah 3:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In whose days as king did Zephaniah prophesy?",
+  "options": [
+   "David's",
+   "Josiah's",
+   "Ahab's",
+   "Hezekiah's"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Josiah was son of Amon. “in the days of Josiah son of Amon king of Judah” (Zephaniah 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was the prophet Zephaniah's father?",
+  "options": [
+   "Cushi",
+   "Amoz",
+   "Beeri",
+   "Iddo"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Zephaniah was a descendant of Hezekiah. “the word of the LORD that came to Zephaniah son of Cushi” (Zephaniah 1:1, BSB)",
   "language": "en",
   "tags": [
    "Old Testament",

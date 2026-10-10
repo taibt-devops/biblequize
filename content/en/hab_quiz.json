@@ -1,0 +1,163 @@
+[
+ {
+  "book": "Habakkuk",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How does Habakkuk begin his prayer to the LORD?",
+  "options": [
+   "How long, O LORD?",
+   "Thank You, LORD!",
+   "Praise the LORD!",
+   "Here am I!"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He cried out for help. “How long, O LORD, must I call for help but You do not hear” (Habakkuk 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Habakkuk, by what will the righteous live?",
+  "options": [
+   "Riches",
+   "Faith",
+   "The sword",
+   "Strength"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Paul quoted this verse. “but the righteous will live by faith” (Habakkuk 2:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 3,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Habakkuk, though the crops fail, what will the prophet still do?",
+  "options": [
+   "Blame God",
+   "Give up hope",
+   "Rejoice in the LORD",
+   "Leave the land"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His joy was in God, not crops. “yet I will exult in the LORD; I will rejoice in the God of my salvation!” (Habakkuk 3:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Habakkuk, what did the LORD tell Habakkuk to do with the vision?",
+  "options": [
+   "Sing it",
+   "Keep it secret",
+   "Burn it",
+   "Write it on tablets"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "So a herald could run with it. “Write down this vision and clearly inscribe it on tablets” (Habakkuk 2:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 2,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Habakkuk, the earth will be filled with the knowledge of God's glory as waters cover what?",
+  "options": [
+   "The land",
+   "The mountains",
+   "The sea",
+   "The sky"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God's glory will be everywhere. “as the waters cover the sea.” (Habakkuk 2:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 3,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Habakkuk, the Lord makes the prophet's feet like those of what?",
+  "options": [
+   "An eagle",
+   "A lion",
+   "A horse",
+   "A deer"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He walks on the heights. “He makes my feet like those of a deer” (Habakkuk 3:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Habakkuk's prayer, which tree does not bud?",
+  "options": [
+   "The cedar",
+   "The fig tree",
+   "The palm",
+   "The almond"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Yet he still rejoices. “Though the fig tree does not bud and no fruit is on the vines” (Habakkuk 3:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

@@ -1,0 +1,13 @@
+[
+ {"ref": "joe 1:4", "d": "easy", "q": "In Joel, what kind of insects ate up the land?", "a": "Locusts", "wrong": ["Ants", "Bees", "Flies"], "why": "Swarm after swarm came.", "quote": "What the devouring locust has left, the swarming locust has eaten"},
+ {"ref": "joe 2:28", "d": "easy", "q": "In Joel, God promises to pour out His Spirit on whom?", "a": "All people", "wrong": ["Only kings", "Only priests", "Only prophets"], "why": "Peter quoted this at Pentecost.", "quote": "And afterward, I will pour out My Spirit on all people."},
+ {"ref": "joe 2:32", "d": "easy", "q": "In Joel, who will be saved?", "a": "Everyone who calls on the LORD", "wrong": ["Only the strong", "Only the rich", "No one"], "why": "Paul quoted this in Romans.", "quote": "And everyone who calls on the name of the LORD will be saved"},
+ {"ref": "joe 2:13", "d": "easy", "q": "In Joel, what should you rend instead of your garments?", "a": "Your hearts", "wrong": ["Your tents", "Your scrolls", "Your bread"], "why": "God wants true repentance.", "quote": "So rend your hearts and not your garments"},
+
+ {"ref": "joe 2:13", "d": "medium", "q": "In Joel, how is God described when calling people to return?", "a": "Gracious and compassionate", "wrong": ["Harsh and distant", "Silent and still", "Tired and weary"], "why": "He is slow to anger.", "quote": "For He is gracious and compassionate, slow to anger, abounding in loving devotion."},
+ {"ref": "joe 2:25", "d": "medium", "q": "In Joel, what does God promise to repay?", "a": "Years eaten by locusts", "wrong": ["Money lost in war", "Gold taken by kings", "Time spent in exile"], "why": "God restores what was lost.", "quote": "I will repay you for the years eaten by locusts"},
+ {"ref": "joe 2:28", "d": "medium", "q": "In Joel, when the Spirit is poured out, what will young men see?", "a": "Visions", "wrong": ["Angels", "Armies", "Gold"], "why": "Old men will dream dreams.", "quote": "your young men will see visions."},
+
+ {"ref": "joe 1:1", "d": "hard", "q": "Who was the prophet Joel's father?", "a": "Pethuel", "wrong": ["Beeri", "Amoz", "Hilkiah"], "why": "The word of the LORD came to Joel.", "quote": "This is the word of the LORD that came to Joel son of Pethuel"},
+ {"ref": "joe 2:32", "d": "hard", "q": "In Joel, where will there be deliverance?", "a": "Mount Zion and Jerusalem", "wrong": ["Egypt and Babylon", "Mount Sinai", "The wilderness"], "why": "Among the remnant called by the LORD.", "quote": "for on Mount Zion and in Jerusalem there will be deliverance"}
+]

@@ -1,0 +1,11 @@
+[
+ {"ref": "nah 1:1", "d": "easy", "q": "In Nahum, against which city is the burden of the prophet?", "a": "Nineveh", "wrong": ["Babylon", "Jerusalem", "Tyre"], "why": "Jonah had once preached there too.", "quote": "This is the burden against Nineveh"},
+ {"ref": "nah 1:7", "d": "easy", "q": "In Nahum, the LORD is good and a stronghold in the day of what?", "a": "Distress", "wrong": ["Feasting", "Harvest", "Rest"], "why": "He cares for those who trust Him.", "quote": "The LORD is good, a stronghold in the day of distress"},
+ {"ref": "nah 1:3", "d": "easy", "q": "In Nahum, the LORD is slow to anger and great in what?", "a": "Power", "wrong": ["Silence", "Wealth", "Numbers"], "why": "He will punish the guilty.", "quote": "The LORD is slow to anger and great in power"},
+
+ {"ref": "nah 1:3", "d": "medium", "q": "In Nahum, what are the clouds beneath the LORD's feet?", "a": "Dust", "wrong": ["Stones", "Waves", "Flowers"], "why": "His path is in the storm.", "quote": "and clouds are the dust beneath His feet."},
+ {"ref": "nah 1:7", "d": "medium", "q": "In Nahum, for whom does the LORD care?", "a": "Those who trust Him", "wrong": ["The strongest", "The proudest", "The richest"], "why": "He is a stronghold.", "quote": "He cares for those who trust in Him."},
+
+ {"ref": "nah 1:1", "d": "hard", "q": "In Nahum, where was the prophet Nahum from?", "a": "Elkosh", "wrong": ["Tekoa", "Moresheth", "Tishbe"], "why": "He is called the Elkoshite.", "quote": "the book of the vision of Nahum the Elkoshite"},
+ {"ref": "nah 3:1", "d": "hard", "q": "In Nahum, what does the prophet call Nineveh?", "a": "The city of blood", "wrong": ["The city of peace", "The city of God", "The golden city"], "why": "It was full of lies and plunder.", "quote": "Woe to the city of blood, full of lies, full of plunder"}
+]

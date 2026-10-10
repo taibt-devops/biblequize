@@ -58,3 +58,7 @@
   - Status: [x] DONE 10/10 · commit `f29739f6`, BE `sha256:6a0c04d4…` (rollback `83fa65d9…`) · seed: inserted=150, dupHash=0 · 821 hàng cũ (820 khớp hash + 1 hàng mồ côi Dân Số Ký thế hệ cũ, câu hỏi ghi sẵn "Numbers 7") · dump `backups/questions-old-en-e6-deleted-20261010.sql.gz` rồi xóa · hàng tiếng Anh: 2.109 BSB + 416 cũ; tổng 6.088 câu · cache sạch · đủ 120 câu chuyện chơi được bằng tiếng Anh
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- BSB-14 Đợt E7: vòng 3, 18 sách ngắn — xong 66 sách
+  - Status: [x] DONE · 141 câu thay 381 câu dịch máy: Ô-sê 10, Giô-ên 9, A-mốt 9, Áp-đia 6, Mi-chê 10, Na-hum 7, Ha-ba-cúc 7, Sô-phô-ni 6, A-ghê 8, Xa-cha-ri 10, Ma-la-chi 10, 2 Tê-sa-lô-ni-ca 6, Tít 8, Phi-lê-môn 8, 2 Phi-e-rơ 10, 2 Giăng 5, 3 Giăng 6, Giu-đe 6 · `retired_hashes.txt` 5.038 hash · `bsb_en_quiz.json` 2.250 câu, 66 sách (Dễ 1.068 / TB 749 / Khó 433), 120 câu chuyện · thư mục seed chỉ còn `bsb_en_quiz.json` + `bible_basics_quiz_en.json` (bộ Giáo lý căn bản, để nguyên) · `docs/EN_TRANSLATION_WORKFLOW.md` ghi "đã thay thế" · test seed xanh
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]

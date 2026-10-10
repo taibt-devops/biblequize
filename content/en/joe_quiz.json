@@ -1,0 +1,209 @@
+[
+ {
+  "book": "Joel",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Joel, what kind of insects ate up the land?",
+  "options": [
+   "Flies",
+   "Bees",
+   "Ants",
+   "Locusts"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Swarm after swarm came. “What the devouring locust has left, the swarming locust has eaten” (Joel 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Joel, God promises to pour out His Spirit on whom?",
+  "options": [
+   "Only kings",
+   "Only prophets",
+   "All people",
+   "Only priests"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Peter quoted this at Pentecost. “And afterward, I will pour out My Spirit on all people.” (Joel 2:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Joel, who will be saved?",
+  "options": [
+   "Everyone who calls on the LORD",
+   "Only the rich",
+   "Only the strong",
+   "No one"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Paul quoted this in Romans. “And everyone who calls on the name of the LORD will be saved” (Joel 2:32, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Joel, what should you rend instead of your garments?",
+  "options": [
+   "Your tents",
+   "Your hearts",
+   "Your bread",
+   "Your scrolls"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God wants true repentance. “So rend your hearts and not your garments” (Joel 2:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Joel, how is God described when calling people to return?",
+  "options": [
+   "Tired and weary",
+   "Gracious and compassionate",
+   "Silent and still",
+   "Harsh and distant"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He is slow to anger. “For He is gracious and compassionate, slow to anger, abounding in loving devotion.” (Joel 2:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Joel, what does God promise to repay?",
+  "options": [
+   "Money lost in war",
+   "Time spent in exile",
+   "Gold taken by kings",
+   "Years eaten by locusts"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God restores what was lost. “I will repay you for the years eaten by locusts” (Joel 2:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Joel, when the Spirit is poured out, what will young men see?",
+  "options": [
+   "Armies",
+   "Angels",
+   "Visions",
+   "Gold"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Old men will dream dreams. “your young men will see visions.” (Joel 2:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was the prophet Joel's father?",
+  "options": [
+   "Pethuel",
+   "Amoz",
+   "Hilkiah",
+   "Beeri"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The word of the LORD came to Joel. “This is the word of the LORD that came to Joel son of Pethuel” (Joel 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 32,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Joel, where will there be deliverance?",
+  "options": [
+   "Egypt and Babylon",
+   "The wilderness",
+   "Mount Sinai",
+   "Mount Zion and Jerusalem"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Among the remnant called by the LORD. “for on Mount Zion and in Jerusalem there will be deliverance” (Joel 2:32, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

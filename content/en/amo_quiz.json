@@ -1,0 +1,209 @@
+[
+ {
+  "book": "Amos",
+  "chapter": 5,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Amos, what should roll on like a river?",
+  "options": [
+   "Justice",
+   "Armies",
+   "Gold",
+   "Wine"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "And righteousness like a stream. “But let justice roll on like a river, and righteousness like an ever-flowing stream.” (Amos 5:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Amos's vision, what was in the Lord's hand by the wall?",
+  "options": [
+   "A lamp",
+   "A sword",
+   "A scroll",
+   "A plumb line"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It measured Israel's straightness. ““A plumb line,” I replied.” (Amos 7:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Amos, what was Amos doing when the LORD called him?",
+  "options": [
+   "Teaching in the temple",
+   "Serving the king",
+   "Following the flock",
+   "Fishing"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He was a herdsman. “But the LORD took me from following the flock and said to me, ‘Go, prophesy to My people Israel.’” (Amos 7:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 8,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Amos, what kind of famine will God send?",
+  "options": [
+   "Of water",
+   "Of hearing God's words",
+   "Of meat",
+   "Of bread"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "People will search for God's word. “but a famine of hearing the words of the LORD.” (Amos 8:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Amos, from which town was the shepherd-prophet Amos?",
+  "options": [
+   "Shiloh",
+   "Bethlehem",
+   "Anathoth",
+   "Tekoa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was among its sheepherders. “These are the words of Amos, who was among the sheepherders of Tekoa” (Amos 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Amos, what did Amos say he was before God called him?",
+  "options": [
+   "A herdsman and fig tender",
+   "A prophet's son",
+   "A soldier",
+   "A priest"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He was not a professional prophet. “rather, I was a herdsman and a tender of sycamore-fig trees.” (Amos 7:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 5,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Amos, righteousness should flow like what?",
+  "options": [
+   "A rushing wind",
+   "An ever-flowing stream",
+   "A falling star",
+   "A burning fire"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Justice rolls on like a river. “and righteousness like an ever-flowing stream.” (Amos 5:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Amos, Amos's words came two years before what event?",
+  "options": [
+   "The exile",
+   "The famine",
+   "The earthquake",
+   "The flood"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "In the days of King Uzziah. “what he saw concerning Israel two years before the earthquake” (Amos 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Amos, which kind of trees did Amos tend?",
+  "options": [
+   "Cedar trees",
+   "Sycamore-fig trees",
+   "Olive trees",
+   "Palm trees"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He was a farmer, not a prophet. “I was a herdsman and a tender of sycamore-fig trees.” (Amos 7:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

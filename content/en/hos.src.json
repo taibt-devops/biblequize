@@ -1,0 +1,14 @@
+[
+ {"ref": "hos 6:6", "d": "easy", "q": "In Hosea, what does God desire rather than sacrifice?", "a": "Mercy", "wrong": ["Gold", "Fasting", "Songs"], "why": "Jesus quoted this verse.", "quote": "For I desire mercy, not sacrifice"},
+ {"ref": "hos 11:1", "d": "easy", "q": "In Hosea, out of which land did God call His son Israel?", "a": "Egypt", "wrong": ["Babylon", "Assyria", "Canaan"], "why": "God loved Israel as a child.", "quote": "When Israel was a child, I loved him, and out of Egypt I called My son."},
+ {"ref": "hos 14:1", "d": "easy", "q": "In Hosea, what does the prophet urge Israel to do?", "a": "Return to the LORD", "wrong": ["Build an army", "Move to Egypt", "Choose a king"], "why": "They had stumbled by sin.", "quote": "Return, O Israel, to the LORD your God"},
+ {"ref": "hos 11:4", "d": "easy", "q": "In Hosea, God says He led Israel with ropes of what?", "a": "Love", "wrong": ["Iron", "Gold", "Fear"], "why": "And cords of kindness.", "quote": "I led them with cords of kindness, with ropes of love"},
+
+ {"ref": "hos 1:3", "d": "medium", "q": "Whom did the prophet Hosea marry?", "a": "Gomer", "wrong": ["Ruth", "Tamar", "Leah"], "why": "His marriage pictured God and Israel.", "quote": "So Hosea went and married Gomer daughter of Diblaim"},
+ {"ref": "hos 3:1", "d": "medium", "q": "In Hosea, God told Hosea to love his wife again as the LORD loves whom?", "a": "The Israelites", "wrong": ["The angels", "The priests", "The nations"], "why": "God's love is faithful.", "quote": "Love her as the LORD loves the Israelites"},
+ {"ref": "hos 6:6", "d": "medium", "q": "In Hosea, God desires the knowledge of God rather than what?", "a": "Burnt offerings", "wrong": ["Long prayers", "Feasts", "Riches"], "why": "He wants hearts, not rituals.", "quote": "and the knowledge of God rather than burnt offerings."},
+ {"ref": "hos 11:4", "d": "medium", "q": "In Hosea, what did God lift from His people's necks?", "a": "The yoke", "wrong": ["A crown", "A chain of gold", "A scarf"], "why": "He bent down to feed them.", "quote": "I lifted the yoke from their necks and bent down to feed them."},
+
+ {"ref": "hos 1:1", "d": "hard", "q": "Who was the prophet Hosea's father?", "a": "Beeri", "wrong": ["Amoz", "Pethuel", "Buzi"], "why": "Hosea prophesied in Uzziah's days.", "quote": "the word of the LORD that came to Hosea son of Beeri"},
+ {"ref": "hos 1:3", "d": "hard", "q": "In Hosea, Gomer was the daughter of whom?", "a": "Diblaim", "wrong": ["Beeri", "Eliam", "Jesse"], "why": "She bore Hosea a son.", "quote": "So Hosea went and married Gomer daughter of Diblaim"}
+]

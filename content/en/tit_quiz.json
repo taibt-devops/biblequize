@@ -1,0 +1,186 @@
+[
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the letter to Titus, what does Paul call Titus?",
+  "options": [
+   "My master",
+   "My enemy",
+   "My servant",
+   "My true child"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They shared a common faith. “To Titus, my true child in our common faith” (Titus 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Titus, what has appeared, bringing salvation to everyone?",
+  "options": [
+   "A new law",
+   "A great king",
+   "The grace of God",
+   "A bright star"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Salvation is for all. “For the grace of God has appeared, bringing salvation to everyone.” (Titus 2:11, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Titus, Paul tells Titus to show himself an example by doing what?",
+  "options": [
+   "Loud prayers",
+   "Good works",
+   "Hard fasts",
+   "Long trips"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Teach with integrity. “In everything, show yourself to be an example by doing good works.” (Titus 2:7, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Titus, on which island did Paul leave Titus?",
+  "options": [
+   "Crete",
+   "Patmos",
+   "Malta",
+   "Cyprus"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "To appoint elders in every town. “The reason I left you in Crete was that you would set in order what was unfinished” (Titus 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Titus, God saved us not by our deeds but according to His what?",
+  "options": [
+   "Mercy",
+   "Wealth",
+   "Law",
+   "Anger"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Through new birth by the Spirit. “He saved us, not by the righteous deeds we had done, but according to His mercy” (Titus 3:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Titus, whom was Titus to appoint in every town of Crete?",
+  "options": [
+   "Soldiers",
+   "Kings",
+   "Elders",
+   "Judges"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "To set the churches in order. “and appoint elders in every town, as I directed you.” (Titus 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Titus, where did Paul plan to spend the winter?",
+  "options": [
+   "Ephesus",
+   "Rome",
+   "Corinth",
+   "Nicopolis"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He asked Titus to come there. “make every effort to come to me at Nicopolis, because I have decided to winter there.” (Titus 3:12, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Titus, whom did Paul plan to send, Artemas or whom?",
+  "options": [
+   "Silas",
+   "Tychicus",
+   "Timothy",
+   "Luke"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Then Titus could come to Paul. “As soon as I send Artemas or Tychicus to you” (Titus 3:12, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ }
+]

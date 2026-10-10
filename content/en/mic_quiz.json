@@ -1,0 +1,232 @@
+[
+ {
+  "book": "Micah",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Micah, from which small town would Israel's ruler come?",
+  "options": [
+   "Bethlehem",
+   "Jerusalem",
+   "Nazareth",
+   "Hebron"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus was born there. “But you, Bethlehem Ephrathah, who are small among the clans of Judah, out of you will come forth for Me One to be ruler over Israel” (Micah 5:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 6,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Micah, what does the LORD require: act justly, love mercy, and what?",
+  "options": [
+   "Fast every week",
+   "Walk humbly with God",
+   "Build great temples",
+   "Offer many lambs"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God has shown what is good. “to act justly, to love mercy, and to walk humbly with your God?” (Micah 6:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 7,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Micah, where will God cast all our sins?",
+  "options": [
+   "Into the desert",
+   "Into the fire",
+   "Into the depths of the sea",
+   "Behind the mountains"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He has compassion on us. “You will cast out all our sins into the depths of the sea.” (Micah 7:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Micah's vision of peace, what will nations beat their swords into?",
+  "options": [
+   "Crowns",
+   "Coins",
+   "Bells",
+   "Plowshares"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They will train for war no more. “Then they will beat their swords into plowshares” (Micah 4:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Micah, how old are the origins of the ruler from Bethlehem?",
+  "options": [
+   "From the days of eternity",
+   "From David's time",
+   "From the exile",
+   "From last year"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He is eternal. “One whose origins are of old, from the days of eternity.” (Micah 5:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 7,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Micah, what does God delight in?",
+  "options": [
+   "Silence",
+   "Sacrifices",
+   "Punishment",
+   "Loving devotion"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He does not stay angry forever. “who does not retain His anger forever, because He delights in loving devotion?” (Micah 7:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 7,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Micah, the prophet asks, “Who is a God like You, who pardons…”",
+  "options": [
+   "Armies",
+   "Iniquity",
+   "Debts",
+   "Kings"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God forgives His people. “Who is a God like You, who pardons iniquity” (Micah 7:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Micah's vision, what will nations turn their spears into?",
+  "options": [
+   "Shepherd's staffs",
+   "Plow handles",
+   "Pruning hooks",
+   "Walking sticks"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nation will not fight nation. “and their spears into pruning hooks.” (Micah 4:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Micah, what town was the prophet Micah from?",
+  "options": [
+   "Elkosh",
+   "Moresheth",
+   "Anathoth",
+   "Tekoa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He is called the Moreshite. “This is the word of the LORD that came to Micah the Moreshite” (Micah 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Micah, what other name is given to Bethlehem?",
+  "options": [
+   "Ephrathah",
+   "Zion",
+   "Ramah",
+   "Ephraim"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was small among Judah's clans. “But you, Bethlehem Ephrathah” (Micah 5:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

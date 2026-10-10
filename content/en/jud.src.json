@@ -1,0 +1,10 @@
+[
+ {"ref": "jud 1:1", "d": "easy", "q": "In the letter of Jude, whose brother is Jude?", "a": "James", "wrong": ["Peter", "John", "Paul"], "why": "He calls himself a servant of Jesus.", "quote": "Jude, a servant of Jesus Christ and a brother of James"},
+ {"ref": "jud 1:3", "d": "easy", "q": "In Jude, what does Jude urge believers to contend for?", "a": "The faith", "wrong": ["Their land", "Their rights", "Their leaders"], "why": "It was entrusted once for all.", "quote": "urge you to contend earnestly for the faith entrusted once for all to the saints."},
+ {"ref": "jud 1:24", "d": "easy", "q": "In Jude's closing praise, God is able to keep you from what?", "a": "Stumbling", "wrong": ["Working", "Traveling", "Growing"], "why": "He presents you with great joy.", "quote": "Now to Him who is able to keep you from stumbling"},
+
+ {"ref": "jud 1:9", "d": "medium", "q": "In Jude, which archangel disputed with the devil over Moses' body?", "a": "Michael", "wrong": ["Gabriel", "Raphael", "Uriel"], "why": "He said, “The Lord rebuke you!”", "quote": "But even the archangel Michael, when he disputed with the devil over the body of Moses"},
+ {"ref": "jud 1:9", "d": "medium", "q": "In Jude, what did Michael say to the devil?", "a": "The Lord rebuke you!", "wrong": ["Be gone!", "I defeat you!", "You lose!"], "why": "He left judgment to God.", "quote": "but said, “The Lord rebuke you!”"},
+
+ {"ref": "jud 1:14", "d": "hard", "q": "In Jude, who is called the seventh from Adam?", "a": "Enoch", "wrong": ["Noah", "Seth", "Methuselah"], "why": "He prophesied the Lord's coming.", "quote": "Enoch, the seventh from Adam, also prophesied about them"}
+]

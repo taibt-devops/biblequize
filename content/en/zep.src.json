@@ -1,0 +1,10 @@
+[
+ {"ref": "zep 3:17", "d": "easy", "q": "In Zephaniah, how does the LORD rejoice over His people?", "a": "With singing", "wrong": ["With silence", "With anger", "With trumpets of war"], "why": "He quiets them with His love.", "quote": "He will rejoice over you with singing."},
+ {"ref": "zep 3:17", "d": "easy", "q": "In Zephaniah, where is the LORD your God?", "a": "Among you", "wrong": ["Far away", "Only in heaven", "Only in the temple"], "why": "He is mighty to save.", "quote": "The LORD your God is among you; He is mighty to save."},
+ {"ref": "zep 1:14", "d": "easy", "q": "In Zephaniah, what great day is near and coming quickly?", "a": "The Day of the LORD", "wrong": ["The king's birthday", "The harvest feast", "The new moon"], "why": "Zephaniah warned of judgment.", "quote": "The great Day of the LORD is near— near and coming quickly."},
+
+ {"ref": "zep 3:17", "d": "medium", "q": "In Zephaniah, with what will the LORD quiet His people?", "a": "His love", "wrong": ["His sword", "His law", "His fire"], "why": "He rejoices over them.", "quote": "He will quiet you with His love"},
+ {"ref": "zep 1:1", "d": "medium", "q": "In whose days as king did Zephaniah prophesy?", "a": "Josiah's", "wrong": ["David's", "Ahab's", "Hezekiah's"], "why": "Josiah was son of Amon.", "quote": "in the days of Josiah son of Amon king of Judah"},
+
+ {"ref": "zep 1:1", "d": "hard", "q": "Who was the prophet Zephaniah's father?", "a": "Cushi", "wrong": ["Amoz", "Beeri", "Iddo"], "why": "Zephaniah was a descendant of Hezekiah.", "quote": "the word of the LORD that came to Zephaniah son of Cushi"}
+]

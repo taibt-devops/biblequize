@@ -1,0 +1,186 @@
+[
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "To whom did Paul write his short letter named Philemon?",
+  "options": [
+   "Timothy, his son",
+   "Philemon, his fellow worker",
+   "The church in Rome",
+   "Titus in Crete"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Paul wrote as a prisoner. “To Philemon our beloved fellow worker” (Philemon 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, for whom does Paul make his appeal?",
+  "options": [
+   "Onesimus",
+   "Demas",
+   "Mark",
+   "Archippus"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Paul called him his child. “I appeal to you for my child Onesimus” (Philemon 1:10, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, Paul asks Philemon to receive Onesimus as a beloved what?",
+  "options": [
+   "Guest",
+   "Servant",
+   "Teacher",
+   "Brother"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "No longer as a slave. “no longer as a slave, but better than a slave, as a beloved brother.” (Philemon 1:16, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, Onesimus was once useless but has now become what?",
+  "options": [
+   "Free",
+   "Famous",
+   "Useful",
+   "Rich"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His name means useful. “Formerly he was useless to you, but now he has become useful both to you and to me.” (Philemon 1:11, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, what did Paul say to do with anything Onesimus owed?",
+  "options": [
+   "Ask the church",
+   "Charge it to Paul",
+   "Make him pay",
+   "Forget it"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Paul took on his debt. “But if he has wronged you in any way or owes you anything, charge it to my account.” (Philemon 1:18, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, how does Paul describe himself?",
+  "options": [
+   "An apostle to Rome",
+   "A tentmaker",
+   "A prisoner of Christ Jesus",
+   "A free man"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He wrote from chains. “Paul, a prisoner of Christ Jesus” (Philemon 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, what did Paul ask Philemon to prepare for him?",
+  "options": [
+   "A letter",
+   "A ship",
+   "A feast",
+   "A guest room"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He hoped to be released. “In the meantime, prepare a guest room for me” (Philemon 1:22, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Philemon, whom does Paul call our fellow soldier?",
+  "options": [
+   "Archippus",
+   "Onesimus",
+   "Epaphras",
+   "Apphia"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He was part of the house church. “to Archippus our fellow soldier” (Philemon 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ }
+]
