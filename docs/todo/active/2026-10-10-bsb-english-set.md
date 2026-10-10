@@ -12,3 +12,8 @@
   - Status: [x] DONE · 238 câu thay 250 câu dịch máy cũ: Dễ 119 (17 câu chuyện cốt lõi, 5–10 câu mỗi chuyện), TB 76, Khó 43 · `retired_hashes.txt` 250 hash · `git rm genesis_quiz_en.json` · 54 test xanh
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- BSB-3 Đợt thử lên prod
+  - Status: [x] DONE 10/10 · commit `9568ec8b`, BE `sha256:f8100869…` (rollback `a180d892…`) · seed một lần `bsb_en_quiz.json`, `sync-stale=false`: inserted=238, dupHash=0 · 250/250 hàng tiếng Anh cũ của Sáng Thế Ký khớp 250 hash retire, không bộ câu/phòng nào tham chiếu · dump `backups/questions-old-en-genesis-deleted-20261010.sql.gz` rồi xóa (CASCADE: 22 answers, 1 user_question_history, 2.495 quiz_session_questions) · xóa cache `questions:*` · `GET /api/questions?book=Genesis&language=en` × 3 mức trả câu BSB · `/api/public/stories?language=en`: 17 câu chuyện chơi được, tên tiếng Anh ("Creation", "Noah and the Flood"…)
+  - Chờ user chơi thử giọng văn trước khi viết tiếp các sách khác
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
