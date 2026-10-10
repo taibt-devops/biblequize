@@ -22,8 +22,9 @@ import java.util.Optional;
  * <p>Read once from {@code seed/stories/stories.json}, which
  * {@code content/easy-core/build.py export} writes from {@code stories.md} together with
  * the questions ({@code seed/questions/easy_core_quiz.json}, whose {@code story} field is
- * a story {@link Story#id()} here). Titles and references are Vietnamese: the set is
- * Vietnamese-only for now.
+ * a story {@link Story#id()} here). Each story also carries an English title and
+ * reference ({@code content/en/stories_en.json}) for the English questions, which use the
+ * same story ids.
  */
 @Component
 public class StoryCatalog {
@@ -32,8 +33,25 @@ public class StoryCatalog {
 
     static final String RESOURCE = "seed/stories/stories.json";
 
-    /** One story; {@code testament} is "OT" or "NT", {@code order} its number in stories.md. */
-    public record Story(String id, int order, String title, String ref, String testament) {
+    /**
+     * One story; {@code testament} is "OT" or "NT", {@code order} its number in stories.md.
+     * {@code title}/{@code ref} are Vietnamese, {@code titleEn}/{@code refEn} English.
+     */
+    public record Story(String id, int order, String title, String ref, String testament,
+                        String titleEn, String refEn) {
+
+        public Story(String id, int order, String title, String ref, String testament) {
+            this(id, order, title, ref, testament, null, null);
+        }
+
+        /** Title in the question language; English falls back to Vietnamese when missing. */
+        public String title(String language) {
+            return "en".equals(language) && titleEn != null ? titleEn : title;
+        }
+
+        public String ref(String language) {
+            return "en".equals(language) && refEn != null ? refEn : ref;
+        }
     }
 
     private final List<Story> stories;

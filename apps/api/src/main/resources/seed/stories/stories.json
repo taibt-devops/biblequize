@@ -4,839 +4,1079 @@
   "order": 1,
   "title": "Sáng tạo",
   "ref": "Sáng Thế Ký 1–2",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Creation",
+  "refEn": "Genesis 1–2"
  },
  {
   "id": "vuon-e-den-va-toi-loi-dau-tien",
   "order": 2,
   "title": "Vườn Ê-đen và tội lỗi đầu tiên",
   "ref": "Sáng Thế Ký 3",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "The Garden of Eden and the First Sin",
+  "refEn": "Genesis 3"
  },
  {
   "id": "ca-in-va-a-ben",
   "order": 3,
   "title": "Ca-in và A-bên",
   "ref": "Sáng Thế Ký 4",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Cain and Abel",
+  "refEn": "Genesis 4"
  },
  {
   "id": "no-e-va-tran-lut",
   "order": 4,
   "title": "Nô-ê và trận lụt",
   "ref": "Sáng Thế Ký 6–9",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Noah and the Flood",
+  "refEn": "Genesis 6–9"
  },
  {
   "id": "thap-ba-ben",
   "order": 5,
   "title": "Tháp Ba-bên",
   "ref": "Sáng Thế Ký 11",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "The Tower of Babel",
+  "refEn": "Genesis 11"
  },
  {
   "id": "duc-chua-troi-goi-ap-ram",
   "order": 6,
   "title": "Đức Chúa Trời gọi Áp-ram",
   "ref": "Sáng Thế Ký 12",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "God Calls Abram",
+  "refEn": "Genesis 12"
  },
  {
   "id": "loi-hua-dong-doi-nhu-sao-troi",
   "order": 7,
   "title": "Lời hứa: dòng dõi như sao trời",
   "ref": "Sáng Thế Ký 15",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "The Promise: Offspring Like the Stars",
+  "refEn": "Genesis 15"
  },
  {
   "id": "so-dom-va-vo-lot",
   "order": 8,
   "title": "Sô-đôm và vợ Lót",
   "ref": "Sáng Thế Ký 19",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Sodom and Lot's Wife",
+  "refEn": "Genesis 19"
  },
  {
   "id": "y-sac-ra-doi",
   "order": 9,
   "title": "Y-sác ra đời",
   "ref": "Sáng Thế Ký 21",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Isaac Is Born",
+  "refEn": "Genesis 21"
  },
  {
   "id": "ap-ra-ham-dang-y-sac",
   "order": 10,
   "title": "Áp-ra-ham dâng Y-sác",
   "ref": "Sáng Thế Ký 22",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Abraham Offers Isaac",
+  "refEn": "Genesis 22"
  },
  {
   "id": "re-be-ca-ben-gieng-nuoc",
   "order": 11,
   "title": "Rê-bê-ca bên giếng nước",
   "ref": "Sáng Thế Ký 24",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Rebekah at the Well",
+  "refEn": "Genesis 24"
  },
  {
   "id": "e-sau-ban-quyen-truong-nam",
   "order": 12,
   "title": "Ê-sau bán quyền trưởng nam",
   "ref": "Sáng Thế Ký 25",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Esau Sells His Birthright",
+  "refEn": "Genesis 25"
  },
  {
   "id": "gia-cop-va-chiec-thang",
   "order": 13,
   "title": "Gia-cốp và chiếc thang",
   "ref": "Sáng Thế Ký 28",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Jacob's Ladder",
+  "refEn": "Genesis 28"
  },
  {
   "id": "gia-cop-duoc-doi-ten-la-y-so-ra-en",
   "order": 14,
   "title": "Gia-cốp được đổi tên là Y-sơ-ra-ên",
   "ref": "Sáng Thế Ký 32",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Jacob Is Renamed Israel",
+  "refEn": "Genesis 32"
  },
  {
   "id": "gio-sep-va-chiec-ao-nhieu-mau",
   "order": 15,
   "title": "Giô-sép và chiếc áo nhiều màu",
   "ref": "Sáng Thế Ký 37",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Joseph and His Colorful Robe",
+  "refEn": "Genesis 37"
  },
  {
   "id": "gio-sep-giai-chiem-bao-cho-pha-ra-on",
   "order": 16,
   "title": "Giô-sép giải chiêm bao cho Pha-ra-ôn",
   "ref": "Sáng Thế Ký 41",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Joseph Explains Pharaoh's Dreams",
+  "refEn": "Genesis 41"
  },
  {
   "id": "gio-sep-nhan-lai-anh-em",
   "order": 17,
   "title": "Giô-sép nhận lại anh em",
   "ref": "Sáng Thế Ký 45",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Joseph Makes Himself Known to His Brothers",
+  "refEn": "Genesis 45"
  },
  {
   "id": "moi-se-thung-coi-va-bui-gai",
   "order": 18,
   "title": "Môi-se: thúng cói và bụi gai",
   "ref": "Xuất Ai Cập Ký 2–3",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Moses: The Basket and the Burning Bush",
+  "refEn": "Exodus 2–3"
  },
  {
   "id": "muoi-tai-va",
   "order": 19,
   "title": "Mười tai vạ",
   "ref": "Xuất Ai Cập Ký 7–11",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "The Ten Plagues",
+  "refEn": "Exodus 7–11"
  },
  {
   "id": "le-vuot-qua",
   "order": 20,
   "title": "Lễ Vượt Qua",
   "ref": "Xuất Ai Cập Ký 12",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "The Passover",
+  "refEn": "Exodus 12"
  },
  {
   "id": "vuot-qua-bien",
   "order": 21,
   "title": "Vượt qua biển",
   "ref": "Xuất Ai Cập Ký 14",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Crossing the Sea",
+  "refEn": "Exodus 14"
  },
  {
   "id": "ma-na-va-chim-cut",
   "order": 22,
   "title": "Ma-na và chim cút",
   "ref": "Xuất Ai Cập Ký 16",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Manna and Quail",
+  "refEn": "Exodus 16"
  },
  {
   "id": "muoi-dieu-ran",
   "order": 23,
   "title": "Mười Điều Răn",
   "ref": "Xuất Ai Cập Ký 20",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "The Ten Commandments",
+  "refEn": "Exodus 20"
  },
  {
   "id": "con-bo-con-bang-vang",
   "order": 24,
   "title": "Con bò con bằng vàng",
   "ref": "Xuất Ai Cập Ký 32",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "The Golden Calf",
+  "refEn": "Exodus 32"
  },
  {
   "id": "muoi-hai-tham-tu",
   "order": 25,
   "title": "Mười hai thám tử",
   "ref": "Dân Số Ký 13–14",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "The Twelve Spies",
+  "refEn": "Numbers 13–14"
  },
  {
   "id": "con-lua-cua-ba-la-am",
   "order": 26,
   "title": "Con lừa của Ba-la-am",
   "ref": "Dân Số Ký 22",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Balaam's Donkey",
+  "refEn": "Numbers 22"
  },
  {
   "id": "ra-hap-va-hai-tham-tu",
   "order": 27,
   "title": "Ra-háp và hai thám tử",
   "ref": "Giô-suê 2",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Rahab and the Two Spies",
+  "refEn": "Joshua 2"
  },
  {
   "id": "tuong-thanh-gie-ri-co",
   "order": 28,
   "title": "Tường thành Giê-ri-cô",
   "ref": "Giô-suê 6",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "The Walls of Jericho",
+  "refEn": "Joshua 6"
  },
  {
   "id": "ghi-de-on-va-300-nguoi",
   "order": 29,
   "title": "Ghi-đê-ôn và 300 người",
   "ref": "Các Quan Xét 7",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Gideon and the 300",
+  "refEn": "Judges 7"
  },
  {
   "id": "sam-son",
   "order": 30,
   "title": "Sam-sôn",
   "ref": "Các Quan Xét 16",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Samson",
+  "refEn": "Judges 16"
  },
  {
   "id": "ru-to-va-na-o-mi",
   "order": 31,
   "title": "Ru-tơ và Na-ô-mi",
   "ref": "Ru-tơ 1–4",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Ruth and Naomi",
+  "refEn": "Ruth 1–4"
  },
  {
   "id": "cau-be-sa-mu-en-nghe-tieng-chua",
   "order": 32,
   "title": "Cậu bé Sa-mu-ên nghe tiếng Chúa",
   "ref": "1 Sa-mu-ên 3",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Young Samuel Hears God",
+  "refEn": "1 Samuel 3"
  },
  {
   "id": "sa-mu-en-xuc-dau-cho-da-vit",
   "order": 33,
   "title": "Sa-mu-ên xức dầu cho Đa-vít",
   "ref": "1 Sa-mu-ên 16",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Samuel Anoints David",
+  "refEn": "1 Samuel 16"
  },
  {
   "id": "da-vit-va-go-li-at",
   "order": 34,
   "title": "Đa-vít và Gô-li-át",
   "ref": "1 Sa-mu-ên 17",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "David and Goliath",
+  "refEn": "1 Samuel 17"
  },
  {
   "id": "da-vit-va-gio-na-than",
   "order": 35,
   "title": "Đa-vít và Giô-na-than",
   "ref": "1 Sa-mu-ên 18–20",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "David and Jonathan",
+  "refEn": "1 Samuel 18–20"
  },
  {
   "id": "da-vit-tha-mang-vua-sau-lo",
   "order": 36,
   "title": "Đa-vít tha mạng vua Sau-lơ",
   "ref": "1 Sa-mu-ên 24",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "David Spares King Saul",
+  "refEn": "1 Samuel 24"
  },
  {
   "id": "sa-lo-mon-xin-su-khon-ngoan",
   "order": 37,
   "title": "Sa-lô-môn xin sự khôn ngoan",
   "ref": "1 Các Vua 3",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Solomon Asks for Wisdom",
+  "refEn": "1 Kings 3"
  },
  {
   "id": "sa-lo-mon-xay-den-tho",
   "order": 38,
   "title": "Sa-lô-môn xây đền thờ",
   "ref": "1 Các Vua 6–8",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Solomon Builds the Temple",
+  "refEn": "1 Kings 6–8"
  },
  {
   "id": "e-li-duoc-qua-nuoi",
   "order": 39,
   "title": "Ê-li được quạ nuôi",
   "ref": "1 Các Vua 17",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Ravens Feed Elijah",
+  "refEn": "1 Kings 17"
  },
  {
   "id": "e-li-tren-nui-cat-men",
   "order": 40,
   "title": "Ê-li trên núi Cạt-mên",
   "ref": "1 Các Vua 18",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Elijah on Mount Carmel",
+  "refEn": "1 Kings 18"
  },
  {
   "id": "e-li-duoc-cat-len-troi",
   "order": 41,
   "title": "Ê-li được cất lên trời",
   "ref": "2 Các Vua 2",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Elijah Taken Up to Heaven",
+  "refEn": "2 Kings 2"
  },
  {
   "id": "e-li-se-va-nguoi-dan-ba-su-nem",
   "order": 42,
   "title": "Ê-li-sê và người đàn bà Su-nem",
   "ref": "2 Các Vua 4",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Elisha and the Shunammite Woman",
+  "refEn": "2 Kings 4"
  },
  {
   "id": "na-a-man-duoc-chua-lanh",
   "order": 43,
   "title": "Na-a-man được chữa lành",
   "ref": "2 Các Vua 5",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Naaman Is Healed",
+  "refEn": "2 Kings 5"
  },
  {
   "id": "vua-gio-si-a-tim-lai-sach-luat",
   "order": 44,
   "title": "Vua Giô-si-a tìm lại sách luật",
   "ref": "2 Các Vua 22",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "King Josiah Finds the Book of the Law",
+  "refEn": "2 Kings 22"
  },
  {
   "id": "ne-he-mi-xay-lai-tuong-thanh",
   "order": 45,
   "title": "Nê-hê-mi xây lại tường thành",
   "ref": "Nê-hê-mi 2–6",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Nehemiah Rebuilds the Wall",
+  "refEn": "Nehemiah 2–6"
  },
  {
   "id": "hoang-hau-e-xo-te",
   "order": 46,
   "title": "Hoàng hậu Ê-xơ-tê",
   "ref": "Ê-xơ-tê 4–7",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Queen Esther",
+  "refEn": "Esther 4–7"
  },
  {
   "id": "giop-kien-nhan",
   "order": 47,
   "title": "Gióp kiên nhẫn",
   "ref": "Gióp 1–2, 42",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "The Patience of Job",
+  "refEn": "Job 1–2, 42"
  },
  {
   "id": "duc-gie-ho-va-la-dang-chan-giu-toi",
   "order": 48,
   "title": "Đức Giê-hô-va là Đấng chăn giữ tôi",
   "ref": "Thi Thiên 23",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "The Lord Is My Shepherd",
+  "refEn": "Psalm 23"
  },
  {
   "id": "phuoc-cho-nguoi-suy-ngam-luat-phap-chua",
   "order": 49,
   "title": "Phước cho người suy ngẫm luật pháp Chúa",
   "ref": "Thi Thiên 1",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Blessed Is the One Who Delights in God's Law",
+  "refEn": "Psalm 1"
  },
  {
   "id": "loi-chua-la-ngon-den-cho-chan-con",
   "order": 50,
   "title": "Lời Chúa là ngọn đèn cho chân con",
   "ref": "Thi Thiên 119",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Your Word Is a Lamp to My Feet",
+  "refEn": "Psalm 119"
  },
  {
   "id": "hay-het-long-tin-cay-duc-gie-ho-va",
   "order": 51,
   "title": "Hãy hết lòng tin cậy Đức Giê-hô-va",
   "ref": "Châm Ngôn 3",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Trust in the Lord with All Your Heart",
+  "refEn": "Proverbs 3"
  },
  {
   "id": "moi-viec-deu-co-thoi-diem",
   "order": 52,
   "title": "Mọi việc đều có thời điểm",
   "ref": "Truyền Đạo 3",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "A Time for Everything",
+  "refEn": "Ecclesiastes 3"
  },
  {
   "id": "e-sai-thay-chua-tren-ngai",
   "order": 53,
   "title": "Ê-sai thấy Chúa trên ngai",
   "ref": "Ê-sai 6",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Isaiah Sees the Lord on His Throne",
+  "refEn": "Isaiah 6"
  },
  {
   "id": "mot-con-tre-sinh-ra-cho-chung-ta",
   "order": 54,
   "title": "Một con trẻ sinh ra cho chúng ta",
   "ref": "Ê-sai 7, 9",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "A Child Is Born to Us",
+  "refEn": "Isaiah 7, 9"
  },
  {
   "id": "nguoi-toi-to-chiu-kho",
   "order": 55,
   "title": "Người tôi tớ chịu khổ",
   "ref": "Ê-sai 53",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "The Suffering Servant",
+  "refEn": "Isaiah 53"
  },
  {
   "id": "nguoi-tho-gom",
   "order": 56,
   "title": "Người thợ gốm",
   "ref": "Giê-rê-mi 18",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "The Potter's House",
+  "refEn": "Jeremiah 18"
  },
  {
   "id": "ba-nguoi-trong-lo-lua",
   "order": 57,
   "title": "Ba người trong lò lửa",
   "ref": "Đa-ni-ên 3",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Three Men in the Fiery Furnace",
+  "refEn": "Daniel 3"
  },
  {
   "id": "da-ni-en-trong-ham-su-tu",
   "order": 58,
   "title": "Đa-ni-ên trong hầm sư tử",
   "ref": "Đa-ni-ên 6",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Daniel in the Lions' Den",
+  "refEn": "Daniel 6"
  },
  {
   "id": "gio-na-va-con-ca-lon",
   "order": 59,
   "title": "Giô-na và con cá lớn",
   "ref": "Giô-na 1–3",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Jonah and the Great Fish",
+  "refEn": "Jonah 1–3"
  },
  {
   "id": "gio-na-va-cay-dua",
   "order": 60,
   "title": "Giô-na và cây dưa",
   "ref": "Giô-na 4",
-  "testament": "OT"
+  "testament": "OT",
+  "titleEn": "Jonah and the Plant",
+  "refEn": "Jonah 4"
  },
  {
   "id": "thien-su-bao-tin-cho-ma-ri",
   "order": 61,
   "title": "Thiên sứ báo tin cho Ma-ri",
   "ref": "Lu-ca 1",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Angel Visits Mary",
+  "refEn": "Luke 1"
  },
  {
   "id": "chua-jesus-giang-sinh",
   "order": 62,
   "title": "Chúa Jêsus giáng sinh",
   "ref": "Lu-ca 2, Ma-thi-ơ 2",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Birth of Jesus",
+  "refEn": "Luke 2, Matthew 2"
  },
  {
   "id": "cau-be-jesus-trong-den-tho",
   "order": 63,
   "title": "Cậu bé Jêsus trong đền thờ",
   "ref": "Lu-ca 2",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Boy Jesus at the Temple",
+  "refEn": "Luke 2"
  },
  {
   "id": "giang-bap-tit-va-le-bap-tem-cua-chua",
   "order": 64,
   "title": "Giăng Báp-tít và lễ báp-têm của Chúa",
   "ref": "Ma-thi-ơ 3",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "John the Baptist and the Baptism of Jesus",
+  "refEn": "Matthew 3"
  },
  {
   "id": "chua-bi-cam-do-trong-hoang-mac",
   "order": 65,
   "title": "Chúa bị cám dỗ trong hoang mạc",
   "ref": "Ma-thi-ơ 4",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Jesus Is Tempted in the Wilderness",
+  "refEn": "Matthew 4"
  },
  {
   "id": "goi-nhung-nguoi-danh-ca",
   "order": 66,
   "title": "Gọi những người đánh cá",
   "ref": "Lu-ca 5",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Jesus Calls the Fishermen",
+  "refEn": "Luke 5"
  },
  {
   "id": "tiec-cuoi-o-ca-na",
   "order": 67,
   "title": "Tiệc cưới ở Ca-na",
   "ref": "Giăng 2",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Wedding at Cana",
+  "refEn": "John 2"
  },
  {
   "id": "ni-co-dem-va-giang-3-16",
   "order": 68,
   "title": "Ni-cô-đem và Giăng 3:16",
   "ref": "Giăng 3",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Nicodemus and John 3:16",
+  "refEn": "John 3"
  },
  {
   "id": "nguoi-phu-nu-ben-gieng",
   "order": 69,
   "title": "Người phụ nữ bên giếng",
   "ref": "Giăng 4",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Woman at the Well",
+  "refEn": "John 4"
  },
  {
   "id": "cac-phuoc-lanh",
   "order": 70,
   "title": "Các phước lành",
   "ref": "Ma-thi-ơ 5",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Beatitudes",
+  "refEn": "Matthew 5"
  },
  {
   "id": "bai-cau-nguyen-chua-day",
   "order": 71,
   "title": "Bài cầu nguyện Chúa dạy",
   "ref": "Ma-thi-ơ 6",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Lord's Prayer",
+  "refEn": "Matthew 6"
  },
  {
   "id": "nha-xay-tren-da",
   "order": 72,
   "title": "Nhà xây trên đá",
   "ref": "Ma-thi-ơ 7",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The House on the Rock",
+  "refEn": "Matthew 7"
  },
  {
   "id": "dep-yen-bao-bien",
   "order": 73,
   "title": "Dẹp yên bão biển",
   "ref": "Mác 4",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Jesus Calms the Storm",
+  "refEn": "Mark 4"
  },
  {
   "id": "nam-chiec-banh-va-hai-con-ca",
   "order": 74,
   "title": "Năm chiếc bánh và hai con cá",
   "ref": "Giăng 6",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Five Loaves and Two Fish",
+  "refEn": "John 6"
  },
  {
   "id": "chua-di-tren-mat-nuoc",
   "order": 75,
   "title": "Chúa đi trên mặt nước",
   "ref": "Ma-thi-ơ 14",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Jesus Walks on the Water",
+  "refEn": "Matthew 14"
  },
  {
   "id": "nguoi-bai-duoc-thong-xuong-qua-mai-nha",
   "order": 76,
   "title": "Người bại được thòng xuống qua mái nhà",
   "ref": "Mác 2",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Lowered Through the Roof",
+  "refEn": "Mark 2"
  },
  {
   "id": "con-gai-giai-ru",
   "order": 77,
   "title": "Con gái Giai-ru",
   "ref": "Mác 5",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Jairus's Daughter",
+  "refEn": "Mark 5"
  },
  {
   "id": "nguoi-mu-ba-ti-me",
   "order": 78,
   "title": "Người mù Ba-ti-mê",
   "ref": "Mác 10",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Blind Bartimaeus",
+  "refEn": "Mark 10"
  },
  {
   "id": "xa-che-tren-cay-sung",
   "order": 79,
   "title": "Xa-chê trên cây sung",
   "ref": "Lu-ca 19",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Zacchaeus in the Sycamore Tree",
+  "refEn": "Luke 19"
  },
  {
   "id": "la-xa-ro-song-lai",
   "order": 80,
   "title": "La-xa-rơ sống lại",
   "ref": "Giăng 11",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Lazarus Is Raised",
+  "refEn": "John 11"
  },
  {
   "id": "ma-ri-va-ma-the",
   "order": 81,
   "title": "Ma-ri và Ma-thê",
   "ref": "Lu-ca 10",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Mary and Martha",
+  "refEn": "Luke 10"
  },
  {
   "id": "chua-ban-phuoc-cho-tre-em",
   "order": 82,
   "title": "Chúa ban phước cho trẻ em",
   "ref": "Mác 10",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Jesus Blesses the Children",
+  "refEn": "Mark 10"
  },
  {
   "id": "nguoi-sa-ma-ri-nhan-lanh",
   "order": 83,
   "title": "Người Sa-ma-ri nhân lành",
   "ref": "Lu-ca 10",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Good Samaritan",
+  "refEn": "Luke 10"
  },
  {
   "id": "con-chien-lac",
   "order": 84,
   "title": "Con chiên lạc",
   "ref": "Lu-ca 15",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Lost Sheep",
+  "refEn": "Luke 15"
  },
  {
   "id": "nguoi-con-hoang-dang",
   "order": 85,
   "title": "Người con hoang đàng",
   "ref": "Lu-ca 15",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Prodigal Son",
+  "refEn": "Luke 15"
  },
  {
   "id": "nguoi-gieo-giong",
   "order": 86,
   "title": "Người gieo giống",
   "ref": "Ma-thi-ơ 13",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Sower",
+  "refEn": "Matthew 13"
  },
  {
   "id": "hat-cai",
   "order": 87,
   "title": "Hạt cải",
   "ref": "Ma-thi-ơ 13",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Mustard Seed",
+  "refEn": "Matthew 13"
  },
  {
   "id": "muoi-trinh-nu",
   "order": 88,
   "title": "Mười trinh nữ",
   "ref": "Ma-thi-ơ 25",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Ten Virgins",
+  "refEn": "Matthew 25"
  },
  {
   "id": "cac-ta-lang",
   "order": 89,
   "title": "Các ta-lâng",
   "ref": "Ma-thi-ơ 25",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Talents",
+  "refEn": "Matthew 25"
  },
  {
   "id": "chua-vao-thanh-gie-ru-sa-lem",
   "order": 90,
   "title": "Chúa vào thành Giê-ru-sa-lem",
   "ref": "Ma-thi-ơ 21",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Jesus Enters Jerusalem",
+  "refEn": "Matthew 21"
  },
  {
   "id": "chua-rua-chan-cho-mon-do",
   "order": 91,
   "title": "Chúa rửa chân cho môn đồ",
   "ref": "Giăng 13",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Jesus Washes the Disciples' Feet",
+  "refEn": "John 13"
  },
  {
   "id": "tiec-thanh-dau-tien",
   "order": 92,
   "title": "Tiệc Thánh đầu tiên",
   "ref": "Lu-ca 22",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Last Supper",
+  "refEn": "Luke 22"
  },
  {
   "id": "vuon-ghet-se-ma-ne",
   "order": 93,
   "title": "Vườn Ghết-sê-ma-nê",
   "ref": "Ma-thi-ơ 26",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Garden of Gethsemane",
+  "refEn": "Matthew 26"
  },
  {
   "id": "phi-e-ro-choi-chua",
   "order": 94,
   "title": "Phi-e-rơ chối Chúa",
   "ref": "Lu-ca 22",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Peter Denies Jesus",
+  "refEn": "Luke 22"
  },
  {
   "id": "thap-tu-va-phuc-sinh",
   "order": 95,
   "title": "Thập tự và phục sinh",
   "ref": "Lu-ca 23–24, Giăng 20",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Cross and the Resurrection",
+  "refEn": "Luke 23–24, John 20"
  },
  {
   "id": "tren-duong-em-ma-ut",
   "order": 96,
   "title": "Trên đường Em-ma-út",
   "ref": "Lu-ca 24",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "On the Road to Emmaus",
+  "refEn": "Luke 24"
  },
  {
   "id": "dai-mang-lenh",
   "order": 97,
   "title": "Đại Mạng Lệnh",
   "ref": "Ma-thi-ơ 28",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Great Commission",
+  "refEn": "Matthew 28"
  },
  {
   "id": "chua-thang-thien",
   "order": 98,
   "title": "Chúa thăng thiên",
   "ref": "Công Vụ 1",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Jesus Ascends to Heaven",
+  "refEn": "Acts 1"
  },
  {
   "id": "le-ngu-tuan",
   "order": 99,
   "title": "Lễ Ngũ Tuần",
   "ref": "Công Vụ 2",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Pentecost",
+  "refEn": "Acts 2"
  },
  {
   "id": "hoi-thanh-dau-tien",
   "order": 100,
   "title": "Hội thánh đầu tiên",
   "ref": "Công Vụ 2",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The First Church",
+  "refEn": "Acts 2"
  },
  {
   "id": "phi-e-ro-chua-nguoi-que",
   "order": 101,
   "title": "Phi-e-rơ chữa người què",
   "ref": "Công Vụ 3",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Peter Heals a Lame Man",
+  "refEn": "Acts 3"
  },
  {
   "id": "e-tien",
   "order": 102,
   "title": "Ê-tiên",
   "ref": "Công Vụ 7",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Stephen",
+  "refEn": "Acts 7"
  },
  {
   "id": "phi-lip-va-hoan-quan-e-thi-o-pi",
   "order": 103,
   "title": "Phi-líp và hoạn quan Ê-thi-ô-pi",
   "ref": "Công Vụ 8",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Philip and the Ethiopian Official",
+  "refEn": "Acts 8"
  },
  {
   "id": "sau-lo-tren-duong-da-mach",
   "order": 104,
   "title": "Sau-lơ trên đường Đa-mách",
   "ref": "Công Vụ 9",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Saul on the Road to Damascus",
+  "refEn": "Acts 9"
  },
  {
   "id": "phi-e-ro-duoc-giai-thoat-khoi-nguc",
   "order": 105,
   "title": "Phi-e-rơ được giải thoát khỏi ngục",
   "ref": "Công Vụ 12",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Peter Escapes from Prison",
+  "refEn": "Acts 12"
  },
  {
   "id": "phao-lo-va-si-la-trong-nguc",
   "order": 106,
   "title": "Phao-lô và Si-la trong ngục",
   "ref": "Công Vụ 16",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Paul and Silas in Prison",
+  "refEn": "Acts 16"
  },
  {
   "id": "phao-lo-bi-dam-tau",
   "order": 107,
   "title": "Phao-lô bị đắm tàu",
   "ref": "Công Vụ 27–28",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Paul Is Shipwrecked",
+  "refEn": "Acts 27–28"
  },
  {
   "id": "tinh-yeu-thuong",
   "order": 108,
   "title": "Tình yêu thương",
   "ref": "1 Cô-rinh-tô 13",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Love",
+  "refEn": "1 Corinthians 13"
  },
  {
   "id": "trai-cua-thanh-linh",
   "order": 109,
   "title": "Trái của Thánh Linh",
   "ref": "Ga-la-ti 5",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Fruit of the Spirit",
+  "refEn": "Galatians 5"
  },
  {
   "id": "duoc-cuu-boi-an-dien",
   "order": 110,
   "title": "Được cứu bởi ân điển",
   "ref": "Ê-phê-sô 2",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Saved by Grace",
+  "refEn": "Ephesians 2"
  },
  {
   "id": "khi-gioi-cua-duc-chua-troi",
   "order": 111,
   "title": "Khí giới của Đức Chúa Trời",
   "ref": "Ê-phê-sô 6",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "The Armor of God",
+  "refEn": "Ephesians 6"
  },
  {
   "id": "moi-su-hiep-lai-lam-ich",
   "order": 112,
   "title": "Mọi sự hiệp lại làm ích",
   "ref": "Rô-ma 8",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "All Things Work Together for Good",
+  "refEn": "Romans 8"
  },
  {
   "id": "toi-lam-duoc-moi-su",
   "order": 113,
   "title": "Tôi làm được mọi sự",
   "ref": "Phi-líp 4",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "I Can Do All Things",
+  "refEn": "Philippians 4"
  },
  {
   "id": "duc-tin-la-gi",
   "order": 114,
   "title": "Đức tin là gì",
   "ref": "Hê-bơ-rơ 11",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "What Faith Is",
+  "refEn": "Hebrews 11"
  },
  {
   "id": "duc-tin-va-viec-lam",
   "order": 115,
   "title": "Đức tin và việc làm",
   "ref": "Gia-cơ 2",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Faith and Works",
+  "refEn": "James 2"
  },
  {
   "id": "loi-chua-duoc-duc-chua-troi-soi-dan",
   "order": 116,
   "title": "Lời Chúa được Đức Chúa Trời soi dẫn",
   "ref": "2 Ti-mô-thê 3",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Scripture Is God-Breathed",
+  "refEn": "2 Timothy 3"
  },
  {
   "id": "duc-chua-troi-la-tinh-yeu-thuong",
   "order": 117,
   "title": "Đức Chúa Trời là tình yêu thương",
   "ref": "1 Giăng 4",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "God Is Love",
+  "refEn": "1 John 4"
  },
  {
   "id": "chua-dung-ngoai-cua-ma-go",
   "order": 118,
   "title": "Chúa đứng ngoài cửa mà gõ",
   "ref": "Khải Huyền 3",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "Jesus Stands at the Door and Knocks",
+  "refEn": "Revelation 3"
  },
  {
   "id": "troi-moi-dat-moi",
   "order": 119,
   "title": "Trời mới đất mới",
   "ref": "Khải Huyền 21",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "A New Heaven and a New Earth",
+  "refEn": "Revelation 21"
  },
  {
   "id": "ta-la-an-pha-va-o-me-ga",
   "order": 120,
   "title": "Ta là An-pha và Ô-mê-ga",
   "ref": "Khải Huyền 22",
-  "testament": "NT"
+  "testament": "NT",
+  "titleEn": "I Am the Alpha and the Omega",
+  "refEn": "Revelation 22"
  }
 ]

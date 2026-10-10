@@ -19,7 +19,7 @@ import java.util.Map;
  * <p>Lists every story in canonical order with its active question count in the
  * requested language. A story with no questions in that language stays in the list
  * with {@code questionCount = 0}: the picker hides it, but past sessions still get
- * their story title.
+ * their story title. Titles and references follow the requested language.
  */
 @RestController
 @RequestMapping("/api/public/stories")
@@ -37,7 +37,7 @@ public class PublicStoryController {
     public List<StoryView> stories(@RequestParam(value = "language", defaultValue = "vi") String language) {
         Map<String, Long> counts = questionService.countQuestionsByStory(language);
         return storyCatalog.all().stream()
-                .map(s -> new StoryView(s.id(), s.order(), s.title(), s.ref(), s.testament(),
+                .map(s -> new StoryView(s.id(), s.order(), s.title(language), s.ref(language), s.testament(),
                         counts.getOrDefault(s.id(), 0L)))
                 .toList();
     }

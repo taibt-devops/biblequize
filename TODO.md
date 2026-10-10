@@ -3,12 +3,13 @@
 > Task tracker. Active TODOs ở dưới. DONE/SUPERSEDED đã chuyển sang [`docs/todo/archive/`](docs/todo/archive/).
 > Format mỗi task file theo template CLAUDE.md §Quy trình quản lý Task.
 
-## Active (34)
+## Active (35)
 
 > Dọn 2026-06-22: 23 task ghi "TODO/DONE" nhưng đã verify hoàn thành → archive (xem git log + Archive bên dưới). Bảng này giờ chỉ còn việc THỰC SỰ đang mở.
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
+| 2026-10-10 | Bộ câu tiếng Anh viết mới theo BSB (public domain, user chọn "bản gần gũi với giới trẻ" thay ESV): `content/en/` kiểm từng trích dẫn với toàn văn BSB, câu Dễ gắn 120 câu chuyện (tên tiếng Anh trong `stories.json`), xóa hẳn bộ dịch máy cũ theo từng sách (BSB-1..) | IN PROGRESS (đợt thử Sáng Thế Ký 238 câu) | [detail](docs/todo/active/2026-10-10-bsb-english-set.md) |
 | 2026-10-09 | Học Thuộc dùng toàn văn RVV11 thay BTT 1926: seed `seed/bible/rvv11/`, số câu theo RVV11 (khối gộp `verse_end`, câu lược, đánh số Hê-bơ-rơ), `GET /api/bible/verses`, V75 (MRV-1..4) | DONE (prod 09/10, Học Thuộc hiện lại; 31.086 câu RVV11) | [detail](docs/todo/active/2026-10-09-memorize-rvv11.md) |
 | 2026-10-09 | Viết lại câu tiếng Việt bằng RVV11 từng sách: đợt 1 Sáng Thế Ký + 4 sách Phúc Âm (466 câu thay 848 câu cũ), đợt 2 13 sách còn lại vòng quen thuộc (662 câu thay 1.370 câu cũ, có câu Dễ cho sách thiếu), đợt 3–4 vòng 2 (22 sách: 795 câu thay 1.619 câu cũ), đợt 5–6 vòng 3 (26 sách: 509 câu thay 1.201 câu cũ); câu cũ xóa hẳn có dump (RVB-1..18) | IN PROGRESS (đủ 66 sách 10/10; còn bộ tiếng Anh) | [detail](docs/todo/active/2026-10-09-rvv11-books-wave1.md) |
 | 2026-10-09 | Trang chủ khách một màn "ngã ba cho khách": thẻ chào + Google, biển khóa mở thẻ đăng nhập, landing dài → /gioi-thieu, giữ prerender SEO (GCH-1..4) | DONE (deploy prod 09/10; theo dõi Search Console 2–4 tuần) | [detail](docs/todo/active/2026-10-09-guest-crossroads-home.md) |

@@ -237,6 +237,14 @@ def export() -> int:
     if len(ids) != len(catalog):
         problems.append("two stories share an id")
     problems += [f"story id too long: {i}" for i in ids if len(i) > 64]
+    # English title and reference of each story, for the English questions (content/en/).
+    english = json.loads((HERE.parent / "en" / "stories_en.json").read_text(encoding="utf-8"))
+    problems += [f"stories_en.json has no story '{i}'" for i in english if i not in ids]
+    for s in catalog:
+        if s["id"] in english:
+            s["titleEn"], s["refEn"] = english[s["id"]]
+        else:
+            problems.append(f"no English title in content/en/stories_en.json: {s['id']}")
 
     merged = []
     for f in sorted(HERE.glob("*_quiz.json")):

@@ -2,6 +2,18 @@
 
 ---
 
+## 2026-10-10 — Bộ câu tiếng Anh: Berean Standard Bible, viết mới độc lập
+
+- **Bối cảnh:** bộ tiếng Anh (`*_quiz_en.json`, 5.048 câu) là bản dịch máy (Gemini) của bộ tiếng Việt cũ, chưa từng đối chiếu Kinh Thánh. Sau khi viết lại đủ 66 sách tiếng Việt bằng RVV11, user chọn ESV rồi đổi ý ngay trong cùng câu trả lời: "lấy bản tiếng Anh hay gần gũi với giới trẻ", "dùng bản khác", "viết độc lập theo bản tiếng Anh".
+- **Quyết định:**
+  - Dùng **Berean Standard Bible (BSB)**: tiếng Anh hiện đại, dễ đọc, và là public domain (2023), nên không cần xin phép và toàn văn được commit vào repo (`content/en/bsb_vpl.txt`, bản VPL của eBible.org). Các bản trẻ trung hơn như NLT, NIV, NIrV có bản quyền; dùng hàng nghìn câu trích sẽ cần giấy phép như ESV.
+  - Câu tiếng Anh viết mới từ BSB, không dịch từ bộ tiếng Việt. Vẫn dùng chung danh mục 120 câu chuyện cốt lõi: câu Dễ của câu chuyện mang cùng `story` id, và `stories.json` có thêm `titleEn`/`refEn` để Luyện Tập theo câu chuyện chạy được bằng tiếng Anh.
+  - Cùng luật như bộ tiếng Việt: trích nguyên văn có script kiểm, câu hỏi tự đứng được, không hỏi số chương/câu. Bộ cũ của sách nào viết xong thì xóa hẳn có dump, như bộ tiếng Việt.
+  - Đợt thử: Sáng Thế Ký (238 câu) để user xem giọng văn trước khi làm tiếp.
+- **Implementation:** `content/en/` (build.py, README), `StoryCatalog.Story.titleEn/refEn`, `PublicStoryController` trả tên theo ngôn ngữ; task `docs/todo/active/2026-10-10-bsb-english-set.md`.
+
+---
+
 ## 2026-10-10 — Xóa hẳn câu tiếng Việt cũ (có sao lưu); câu hỏi phải tự đứng được
 
 - **Bối cảnh:** từ 09/10 câu cũ của sách đã viết lại chỉ bị tắt (`is_active=0`). User 10/10: "các câu cũ xóa đi, vì nó vừa là sách cũ vừa nội dung câu hỏi không hay". Cùng ngày user gửi ảnh câu Dễ "Trở về thành, các môn đồ cùng nhau làm gì?" và nhận xét "đọc không hiểu nổi vì thiếu ngữ cảnh": người chơi thấy từng câu riêng lẻ, không thấy tên chuyện hay tên sách.

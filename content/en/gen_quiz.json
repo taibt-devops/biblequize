@@ -1,0 +1,5833 @@
+[
+ {
+  "book": "Genesis",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the very beginning, what did God create?",
+  "options": [
+   "The sun and the moon",
+   "The Garden of Eden",
+   "Adam and Eve",
+   "The heavens and the earth"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The Bible's first sentence tells us God made everything. “In the beginning God created the heavens and the earth.” (Genesis 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Creation",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sang-tao"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On the first day of creation, what did God make just by speaking?",
+  "options": [
+   "Light",
+   "People",
+   "Animals",
+   "Water"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God spoke, and light appeared. “And God said, “Let there be light,” and there was light.” (Genesis 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Creation",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sang-tao"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "During creation, what name did God give the light?",
+  "options": [
+   "Morning",
+   "Sun",
+   "Day",
+   "Glory"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God named the light and the darkness. “God called the light “day,” and the darkness He called “night.”” (Genesis 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Creation",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sang-tao"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On the fourth day of creation, what else did God make besides the two great lights?",
+  "options": [
+   "The birds",
+   "The stars",
+   "The clouds",
+   "The trees"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God filled the sky with lights to mark days and seasons. “And He made the stars as well.” (Genesis 1:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Creation",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sang-tao"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 1,
+  "verseStart": 27,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "During creation, in whose image did God create people?",
+  "options": [
+   "In His own image",
+   "In the animals' image",
+   "In the angels' image",
+   "In the stars' image"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "People are special because they reflect God. “So God created man in His own image” (Genesis 1:27, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Creation",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sang-tao"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 1,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the end of the sixth day, how did God describe everything He had made?",
+  "options": [
+   "Just okay",
+   "Too big",
+   "Very good",
+   "Almost finished"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God was pleased with all He had made. “and indeed, it was very good.” (Genesis 1:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Creation",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sang-tao"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After creating everything, what did God do on the seventh day?",
+  "options": [
+   "He made the stars",
+   "He rested",
+   "He made people",
+   "He made the sea"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God finished His work and rested. “so on that day He rested from all His work.” (Genesis 2:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Creation",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sang-tao"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the creation story, what did God form the first man from?",
+  "options": [
+   "A piece of wood",
+   "A rib",
+   "A rock",
+   "The dust of the ground"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Then God breathed the breath of life into him. “Then the LORD God formed man from the dust of the ground” (Genesis 2:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Creation",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sang-tao"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 2,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the creation story, what did God use to make the first woman?",
+  "options": [
+   "Water from a spring",
+   "A tree branch",
+   "One of the man's ribs",
+   "Dust of the ground"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God made a helper suitable for the man. “And from the rib that the LORD God had taken from the man, He made a woman” (Genesis 2:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Creation",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sang-tao"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Garden of Eden, which creature tricked the woman?",
+  "options": [
+   "The serpent",
+   "A lion",
+   "A raven",
+   "A wolf"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The serpent made her doubt what God had said. “Now the serpent was more crafty than any beast of the field” (Genesis 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Eden and the First Sin",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuon-e-den-va-toi-loi-dau-tien"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 3,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Eden, after the woman ate the forbidden fruit, who did she give some to?",
+  "options": [
+   "An angel",
+   "Her son",
+   "The serpent",
+   "Her husband"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Adam was with her, and he ate too. “She also gave some to her husband who was with her, and he ate it.” (Genesis 3:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Eden and the First Sin",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuon-e-den-va-toi-loi-dau-tien"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 3,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After eating the forbidden fruit, what did Adam and Eve sew together to cover themselves?",
+  "options": [
+   "Grape leaves",
+   "Fig leaves",
+   "Palm branches",
+   "Olive leaves"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Their eyes were opened and they felt ashamed. “so they sewed together fig leaves and made coverings for themselves.” (Genesis 3:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Eden and the First Sin",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuon-e-den-va-toi-loi-dau-tien"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Adam and Eve heard God walking in the garden, what did they do?",
+  "options": [
+   "They built an altar",
+   "They ran to meet Him",
+   "They hid among the trees",
+   "They sang a song"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sin made them afraid to face God. “they hid themselves from the presence of the LORD God among the trees of the garden.” (Genesis 3:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Eden and the First Sin",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuon-e-den-va-toi-loi-dau-tien"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 3,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Adam and Eve hid in the garden, what did God call out to Adam?",
+  "options": [
+   "Where are you?",
+   "What is your name?",
+   "Why are you sad?",
+   "Who are you?"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God came looking for them. “But the LORD God called out to the man, “Where are you?”” (Genesis 3:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Eden and the First Sin",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuon-e-den-va-toi-loi-dau-tien"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God asked Eve what she had done, whom did she blame?",
+  "options": [
+   "Adam",
+   "The tree",
+   "Herself",
+   "The serpent"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Adam blamed Eve, and Eve blamed the serpent. ““The serpent deceived me,” she replied, “and I ate.”” (Genesis 3:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Eden and the First Sin",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuon-e-den-va-toi-loi-dau-tien"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 3,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the first sin, what name did Adam give his wife?",
+  "options": [
+   "Sarah",
+   "Eve",
+   "Mary",
+   "Ruth"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "She would be the mother of all the living. “And Adam named his wife Eve” (Genesis 3:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Eden and the First Sin",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuon-e-den-va-toi-loi-dau-tien"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 3,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After sending Adam and Eve out of Eden, what did God place to guard the tree of life?",
+  "options": [
+   "A deep river",
+   "Cherubim and a flaming sword",
+   "A high stone wall",
+   "Two lions"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The way back to the tree of life was closed. “and stationed cherubim on the east side of the Garden of Eden, along with a whirling sword of flame” (Genesis 3:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Eden and the First Sin",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuon-e-den-va-toi-loi-dau-tien"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What job did Abel, Adam's son, have?",
+  "options": [
+   "He farmed the soil",
+   "He caught fish",
+   "He kept sheep",
+   "He built cities"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Abel was a shepherd; his brother Cain was a farmer. “Now Abel was a keeper of sheep” (Genesis 4:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Cain and Abel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ca-in-va-a-ben"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What job did Cain, Adam's son, have?",
+  "options": [
+   "He built boats",
+   "He hunted animals",
+   "He kept sheep",
+   "He worked the soil"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cain was a farmer; his brother Abel was a shepherd. “while Cain was a tiller of the soil.” (Genesis 4:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Cain and Abel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ca-in-va-a-ben"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Cain and Abel brought offerings, whose offering did God look on with favor?",
+  "options": [
+   "Abel's",
+   "Neither brother's",
+   "Cain's",
+   "Both brothers'"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Abel brought the best of his flock. “And the LORD looked with favor on Abel and his offering” (Genesis 4:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Cain and Abel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ca-in-va-a-ben"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How did Cain feel when God did not accept his offering?",
+  "options": [
+   "Happy",
+   "Sleepy",
+   "Very angry",
+   "Thankful"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His anger led him to sin. “So Cain became very angry, and his countenance fell.” (Genesis 4:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Cain and Abel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ca-in-va-a-ben"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 4,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Out in the field, what did Cain do to his brother Abel?",
+  "options": [
+   "He prayed with him",
+   "He hugged him",
+   "He gave him a gift",
+   "He killed him"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "This was the first murder in the Bible. “Cain rose up against his brother Abel and killed him.” (Genesis 4:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Cain and Abel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ca-in-va-a-ben"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 4,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God asked Cain where Abel was, what did Cain answer?",
+  "options": [
+   "Am I my brother's keeper?",
+   "He went home",
+   "He is in the field",
+   "He is sleeping"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cain tried to hide what he had done. ““Am I my brother’s keeper?”” (Genesis 4:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Cain and Abel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ca-in-va-a-ben"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 4,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Cain killed Abel, what did God put on Cain to protect him?",
+  "options": [
+   "A crown",
+   "A mark",
+   "A ring",
+   "A cloak"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The mark kept others from killing Cain. “And the LORD placed a mark on Cain” (Genesis 4:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Cain and Abel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ca-in-va-a-ben"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 6,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When the world was full of evil, who found favor in the eyes of the LORD?",
+  "options": [
+   "Abraham",
+   "Cain",
+   "Lamech",
+   "Noah"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Noah walked with God in a wicked world. “Noah, however, found favor in the eyes of the LORD.” (Genesis 6:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Noah and the Flood",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "no-e-va-tran-lut"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 6,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Before the flood, how many sons did Noah have?",
+  "options": [
+   "Five",
+   "Two",
+   "Three",
+   "Twelve"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His sons were Shem, Ham, and Japheth. “And Noah had three sons: Shem, Ham, and Japheth.” (Genesis 6:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Noah and the Flood",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "no-e-va-tran-lut"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 6,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Before the flood, what did God tell Noah to build?",
+  "options": [
+   "An ark",
+   "A temple",
+   "A city wall",
+   "A tower"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The ark would keep Noah's family and the animals alive. “Make for yourself an ark of gopher wood” (Genesis 6:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Noah and the Flood",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "no-e-va-tran-lut"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 6,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What kind of animal pairs did God tell Noah to bring into the ark?",
+  "options": [
+   "Only young ones",
+   "Male and female",
+   "Only birds",
+   "Only the biggest"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The animals would fill the earth again after the flood. “you are to bring two of every living creature into the ark—male and female” (Genesis 6:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Noah and the Flood",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "no-e-va-tran-lut"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 7,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Noah's flood, how long did the rain fall?",
+  "options": [
+   "Three days and nights",
+   "Seven days",
+   "One whole year",
+   "Forty days and forty nights"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The waters covered even the high mountains. “And the rain fell upon the earth for forty days and forty nights.” (Genesis 7:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Noah and the Flood",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "no-e-va-tran-lut"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 8,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When the floodwaters went down, where did Noah's ark come to rest?",
+  "options": [
+   "In the land of Egypt",
+   "On Mount Sinai",
+   "On the mountains of Ararat",
+   "On Mount Zion"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The ark settled as the waters slowly went down. “the ark came to rest on the mountains of Ararat.” (Genesis 8:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Noah and the Flood",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "no-e-va-tran-lut"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 8,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the flood, what was the first bird Noah sent out of the ark?",
+  "options": [
+   "An eagle",
+   "A raven",
+   "A sparrow",
+   "A dove"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Later Noah sent out a dove. “and sent out a raven.” (Genesis 8:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Noah and the Flood",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "no-e-va-tran-lut"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 8,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the flood, what did the dove bring back to Noah in her beak?",
+  "options": [
+   "An olive leaf",
+   "A cedar twig",
+   "A flower",
+   "A ripe fig"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Noah knew the waters had gone down. “the dove returned to him in the evening with a freshly plucked olive leaf in her beak.” (Genesis 8:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Noah and the Flood",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "no-e-va-tran-lut"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 8,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Noah came out of the ark, what did he build?",
+  "options": [
+   "A tall tower",
+   "An altar to the LORD",
+   "A stone wall",
+   "A new house"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Noah thanked God with burnt offerings. “Then Noah built an altar to the LORD.” (Genesis 8:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Noah and the Flood",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "no-e-va-tran-lut"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 9,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the flood, what sign of His promise did God set in the clouds?",
+  "options": [
+   "A pillar of cloud",
+   "A flash of lightning",
+   "A rainbow",
+   "A star"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God promised never again to destroy the earth by a flood. “I have set My rainbow in the clouds” (Genesis 9:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Noah and the Flood",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "no-e-va-tran-lut"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 11,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Before the Tower of Babel, how many languages did the whole world speak?",
+  "options": [
+   "Twelve languages",
+   "Two languages",
+   "Seventy languages",
+   "One language"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Everyone could understand everyone else. “Now the whole world had one language and a common form of speech.” (Genesis 11:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Tower of Babel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "thap-ba-ben"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 11,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When people built the Tower of Babel, what did they use instead of stone?",
+  "options": [
+   "Brick",
+   "Gold",
+   "Iron",
+   "Wood"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They baked bricks to build their city and tower. “So they used brick instead of stone” (Genesis 11:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Tower of Babel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "thap-ba-ben"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 11,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why did the people at Babel want a tower that reached to the heavens?",
+  "options": [
+   "To worship the sun",
+   "To escape a flood",
+   "To see the stars better",
+   "To make a name for themselves"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They wanted fame and to stay together in one place. “that we may make a name for ourselves” (Genesis 11:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Tower of Babel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "thap-ba-ben"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 11,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the Tower of Babel, what did God do to the people's language?",
+  "options": [
+   "He taught them a song",
+   "He confused it",
+   "He wrote it down",
+   "He made it louder"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They could no longer understand one another. “Come, let Us go down and confuse their language” (Genesis 11:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Tower of Babel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "thap-ba-ben"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 11,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After God confused their language, what did the builders at Babel stop doing?",
+  "options": [
+   "Talking at all",
+   "Eating bread",
+   "Building the city",
+   "Farming the land"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God scattered them over all the earth. “and they stopped building the city.” (Genesis 11:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Tower of Babel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "thap-ba-ben"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 11,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What was the city with the unfinished tower called?",
+  "options": [
+   "Babel",
+   "Jericho",
+   "Ur",
+   "Nineveh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "There the LORD confused the language of the whole world. “That is why it is called Babel” (Genesis 11:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Tower of Babel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "thap-ba-ben"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Garden of Eden, which two trees stood in the middle of the garden?",
+  "options": [
+   "A fig tree and a vine",
+   "Two olive trees",
+   "Two cedars of Lebanon",
+   "Tree of life, tree of knowledge"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God told Adam not to eat from the tree of knowledge. “And in the middle of the garden were the tree of life and the tree of the knowledge of good and evil.” (Genesis 2:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Why did God put the first man in the Garden of Eden?",
+  "options": [
+   "To build a city",
+   "To hunt animals",
+   "To cultivate and keep it",
+   "To guard the gate"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "From the start, God gave people good work to do. “and placed him in the Garden of Eden to cultivate and keep it.” (Genesis 2:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 2,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Garden of Eden, what did God say was not good?",
+  "options": [
+   "For the garden to be empty",
+   "For the man to be alone",
+   "For the man to sleep",
+   "For the animals to be wild"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "So God made a suitable helper for him. “It is not good for the man to be alone.” (Genesis 2:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 2,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Garden of Eden, who gave names to all the animals?",
+  "options": [
+   "Adam",
+   "God",
+   "Eve",
+   "The angels"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God brought the animals to the man to name them. “The man gave names to all the livestock” (Genesis 2:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 3,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After the first sin, God told the serpent the woman's offspring would crush what?",
+  "options": [
+   "The tree of life",
+   "The serpent's head",
+   "The garden gate",
+   "The serpent's tail"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "This is the first promise that evil would be defeated. “He will crush your head, and you will strike his heel.” (Genesis 3:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 3,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After the first sin, God told Adam he would one day return to what?",
+  "options": [
+   "Dust",
+   "Heaven",
+   "The sea",
+   "Eden"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Adam was made from the ground. “For dust you are, and to dust you shall return.” (Genesis 3:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 3,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After the first sin, what did God make to clothe Adam and Eve?",
+  "options": [
+   "Fig-leaf aprons",
+   "Robes of linen",
+   "Garments of skin",
+   "Coats of wool"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God cared for them even after they sinned. “And the LORD God made garments of skin for Adam and his wife, and He clothed them.” (Genesis 3:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Cain was angry, God warned him that something was crouching at his door. What?",
+  "options": [
+   "His brother",
+   "A serpent",
+   "A lion",
+   "Sin"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God told Cain he must master it. “sin is crouching at your door” (Genesis 4:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 4,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After killing Abel, where did Cain go to live?",
+  "options": [
+   "The land of Nod",
+   "The Garden of Eden",
+   "The land of Egypt",
+   "The land of Canaan"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nod was east of Eden. “and settled in the land of Nod, east of Eden.” (Genesis 4:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 4,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After Abel died, what did Adam and Eve name their next son?",
+  "options": [
+   "Noah",
+   "Seth",
+   "Enoch",
+   "Lamech"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Eve said God had given her another child in place of Abel. “she gave birth to a son and named him Seth” (Genesis 4:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 5,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the family line from Adam to Noah, who lived a total of 969 years?",
+  "options": [
+   "Enoch",
+   "Adam",
+   "Noah",
+   "Methuselah"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He is the oldest person named in the Bible. “So Methuselah lived a total of 969 years” (Genesis 5:27, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 5,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Before the flood, which man walked with God and then was taken away by God?",
+  "options": [
+   "Lamech",
+   "Methuselah",
+   "Enoch",
+   "Seth"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Enoch did not die like the others in his family line. “Enoch walked with God, and then he was no more, because God had taken him away.” (Genesis 5:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 6,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What kind of wood did God tell Noah to use for the ark?",
+  "options": [
+   "Cedar wood",
+   "Acacia wood",
+   "Gopher wood",
+   "Olive wood"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God gave Noah exact building instructions. “Make for yourself an ark of gopher wood” (Genesis 6:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 6,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How does Genesis describe Noah's character before the flood?",
+  "options": [
+   "Rich and powerful",
+   "Righteous and blameless",
+   "Wise and famous",
+   "Young and strong"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Noah walked with God. “Noah was a righteous man, blameless in his generation” (Genesis 6:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 8,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After the flood, God promised that as long as the earth lasts, what would never stop?",
+  "options": [
+   "The building of towers",
+   "Rain every single day",
+   "Wars between nations",
+   "Seedtime and harvest, day and night"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God promised a steady world after the flood. “seedtime and harvest, cold and heat, summer and winter, day and night shall never cease.” (Genesis 8:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 6,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How long did God tell Noah to make the ark?",
+  "options": [
+   "300 cubits",
+   "150 cubits",
+   "120 cubits",
+   "500 cubits"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was also 50 cubits wide and 30 cubits high. “The ark is to be 300 cubits long” (Genesis 6:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 7,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Noah's flood, how long did the waters prevail on the earth?",
+  "options": [
+   "365 days",
+   "40 days",
+   "150 days",
+   "100 days"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The rain lasted forty days, but the water stayed much longer. “And the waters prevailed upon the earth for 150 days.” (Genesis 7:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 7,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How many pairs of each kind of clean animal did Noah take into the ark?",
+  "options": [
+   "Two pairs",
+   "One pair",
+   "Twelve pairs",
+   "Seven pairs"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Unclean animals came in one pair each. “You are to take with you seven pairs of every kind of clean animal” (Genesis 7:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 7,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How old was Noah when the floodwaters burst forth?",
+  "options": [
+   "500 years old",
+   "600 years old",
+   "950 years old",
+   "120 years old"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It happened on the seventeenth day of the second month. “In the six hundredth year of Noah’s life” (Genesis 7:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 11,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Where did people settle before building the Tower of Babel?",
+  "options": [
+   "A plain in the land of Shinar",
+   "The banks of the Nile",
+   "The hills of Canaan",
+   "The land of Nod"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They journeyed eastward and settled there. “they found a plain in the land of Shinar and settled there.” (Genesis 11:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 4,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "After whom did Cain name the city he built?",
+  "options": [
+   "Himself",
+   "His father Adam",
+   "His son Enoch",
+   "His brother Abel"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "This Enoch is not the Enoch who walked with God. “Then Cain built a city and named it after his son Enoch.” (Genesis 4:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 11,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "When building at Babel, what did people use instead of mortar?",
+  "options": [
+   "Tar",
+   "Lime",
+   "Clay",
+   "Straw"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They also used brick instead of stone. “and tar instead of mortar.” (Genesis 11:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 5,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the family line from Adam to Noah, how many years did Enoch live in all?",
+  "options": [
+   "969 years",
+   "365 years",
+   "120 years",
+   "777 years"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Then God took him away. “So Enoch lived a total of 365 years.” (Genesis 5:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 12,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God called Abram, what did He tell him to leave behind?",
+  "options": [
+   "His sheep and goats",
+   "His wife Sarai",
+   "His tent and well",
+   "His country and his family"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God asked Abram to go to a land He would show him. “Leave your country, your kindred, and your father’s household” (Genesis 12:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "God Calls Abram",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "duc-chua-troi-goi-ap-ram"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 12,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God called Abram, what did He promise to make him into?",
+  "options": [
+   "A great nation",
+   "A rich king",
+   "A famous builder",
+   "A mighty warrior"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God also promised to bless him. “I will make you into a great nation” (Genesis 12:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "God Calls Abram",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "duc-chua-troi-goi-ap-ram"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 12,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Abram obeyed God's call and left Haran, which nephew went with him?",
+  "options": [
+   "Nahor",
+   "Lot",
+   "Laban",
+   "Isaac"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Abram took Sarai and Lot with him. “and Lot went with him.” (Genesis 12:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "God Calls Abram",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "duc-chua-troi-goi-ap-ram"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 12,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Abram obeyed God's call, which land did he set out for?",
+  "options": [
+   "The land of Babel",
+   "The land of Egypt",
+   "The land of Canaan",
+   "The land of Nod"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "This was the land God promised to his offspring. “and set out for the land of Canaan.” (Genesis 12:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "God Calls Abram",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "duc-chua-troi-goi-ap-ram"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 12,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God appeared to Abram in Canaan, what did Abram build there?",
+  "options": [
+   "A tower",
+   "A well",
+   "A city",
+   "An altar to the LORD"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Abram worshiped the God who had spoken to him. “So Abram built an altar there to the LORD” (Genesis 12:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "God Calls Abram",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "duc-chua-troi-goi-ap-ram"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 12,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God called Abram, who did He say would be blessed through him?",
+  "options": [
+   "Only his own family",
+   "Only the kings",
+   "Only the Egyptians",
+   "All the families of the earth"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God's plan for Abram reached the whole world. “and all the families of the earth will be blessed through you.” (Genesis 12:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "God Calls Abram",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "duc-chua-troi-goi-ap-ram"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 15,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God gave childless Abram a promise at night, what did He tell him to count?",
+  "options": [
+   "The stars",
+   "The trees",
+   "His servants",
+   "His sheep"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Abram's offspring would be as many as the stars. “Now look to the heavens and count the stars, if you are able.” (Genesis 15:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Promise: Offspring Like the Stars",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "loi-hua-dong-doi-nhu-sao-troi"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 15,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In a vision, God told Abram, “Do not be afraid. I am your…” what?",
+  "options": [
+   "King",
+   "Shield",
+   "Tent",
+   "Sword"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God promised to protect Abram and be his reward. “I am your shield, your very great reward.” (Genesis 15:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Promise: Offspring Like the Stars",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "loi-hua-dong-doi-nhu-sao-troi"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 15,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God promised Abram offspring like the stars, how did Abram respond?",
+  "options": [
+   "He laughed out loud",
+   "He ran away",
+   "He believed the LORD",
+   "He argued with God"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God counted Abram's faith as righteousness. “Abram believed the LORD, and it was credited to him as righteousness.” (Genesis 15:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Promise: Offspring Like the Stars",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "loi-hua-dong-doi-nhu-sao-troi"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 15,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Before God's promise of offspring like the stars, what was Abram worried about?",
+  "options": [
+   "He had no land",
+   "He had no children",
+   "He was very sick",
+   "He had no money"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "A servant was going to inherit everything. “since I remain childless” (Genesis 15:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Promise: Offspring Like the Stars",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "loi-hua-dong-doi-nhu-sao-troi"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 15,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "God promised childless Abram that his heir would be whom?",
+  "options": [
+   "His nephew Lot",
+   "A king of Egypt",
+   "His very own son",
+   "His servant Eliezer"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God promised Abram a child of his own. “but one who comes from your own body will be your heir.” (Genesis 15:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Promise: Offspring Like the Stars",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "loi-hua-dong-doi-nhu-sao-troi"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 19,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When two angels came to Sodom in the evening, who was sitting in the city gateway?",
+  "options": [
+   "Lot",
+   "Abraham",
+   "Isaac",
+   "Melchizedek"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lot got up to meet them and bowed down. “and Lot was sitting in the gateway of the city.” (Genesis 19:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Sodom and Lot's Wife",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "so-dom-va-vo-lot"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 19,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At daybreak in Sodom, what did the angels urge Lot to do?",
+  "options": [
+   "Pray all day",
+   "Build an altar",
+   "Fight the men of the city",
+   "Take his family and leave"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The city was about to be destroyed. “Take your wife and your two daughters who are here” (Genesis 19:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Sodom and Lot's Wife",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "so-dom-va-vo-lot"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 19,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "As Lot's family fled Sodom, what did the angels tell them not to do?",
+  "options": [
+   "Look back",
+   "Eat bread",
+   "Talk to strangers",
+   "Sing loudly"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They had to run for their lives to the mountains. “Do not look back” (Genesis 19:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Sodom and Lot's Wife",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "so-dom-va-vo-lot"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 19,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did the LORD rain down on Sodom and Gomorrah?",
+  "options": [
+   "Hail and ice",
+   "Heavy rain",
+   "Sulfur and fire",
+   "Frogs"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God judged the wicked cities. “Then the LORD rained down sulfur and fire on Sodom and Gomorrah” (Genesis 19:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Sodom and Lot's Wife",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "so-dom-va-vo-lot"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 19,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Lot's wife looked back at Sodom, what did she become?",
+  "options": [
+   "A tree",
+   "A pillar of salt",
+   "A pile of ash",
+   "A stone statue"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "She did not obey the angels' warning. “But Lot’s wife looked back, and she became a pillar of salt.” (Genesis 19:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Sodom and Lot's Wife",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "so-dom-va-vo-lot"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 19,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Lot hesitated to leave Sodom, what did the angels do?",
+  "options": [
+   "Left them behind",
+   "Waited until night",
+   "Called for soldiers",
+   "Took their hands and led them out"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The LORD had compassion on Lot's family. “the men grabbed his hand and the hands of his wife and his two daughters.” (Genesis 19:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Sodom and Lot's Wife",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "so-dom-va-vo-lot"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 21,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did Abraham name the son that Sarah bore him in their old age?",
+  "options": [
+   "Esau",
+   "Jacob",
+   "Isaac",
+   "Ishmael"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God kept His promise to Abraham and Sarah. “And Abraham gave the name Isaac to the son Sarah bore to him.” (Genesis 21:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Isaac Is Born",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "y-sac-ra-doi"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 21,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How old was Abraham when his son Isaac was born?",
+  "options": [
+   "75 years old",
+   "50 years old",
+   "175 years old",
+   "100 years old"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nothing is too hard for the LORD. “Abraham was a hundred years old when his son Isaac was born to him.” (Genesis 21:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Isaac Is Born",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "y-sac-ra-doi"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 21,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Isaac was born, what did Sarah say God had made her do?",
+  "options": [
+   "Dance",
+   "Laugh",
+   "Sing",
+   "Cry"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Her laugh of doubt became a laugh of joy. “God has made me laugh” (Genesis 21:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Isaac Is Born",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "y-sac-ra-doi"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 21,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did Abraham hold on the day his son Isaac was weaned?",
+  "options": [
+   "A great feast",
+   "A race",
+   "A sacrifice",
+   "A funeral"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The family celebrated the promised child. “and Abraham held a great feast on the day Isaac was weaned.” (Genesis 21:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Isaac Is Born",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "y-sac-ra-doi"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 21,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Hagar and her boy ran out of water in the wilderness, what did God show her?",
+  "options": [
+   "A city",
+   "A tent",
+   "A flock of sheep",
+   "A well of water"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God heard the boy's voice and cared for them. “Then God opened her eyes, and she saw a well of water.” (Genesis 21:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Isaac Is Born",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "y-sac-ra-doi"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 21,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When was Isaac born to Abraham and Sarah?",
+  "options": [
+   "After Abraham died",
+   "At the very time God promised",
+   "Before God called Abraham",
+   "Many years too late"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God did exactly what He had said. “at the very time God had promised.” (Genesis 21:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Isaac Is Born",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "y-sac-ra-doi"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 22,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God tested Abraham, whom did He tell him to offer?",
+  "options": [
+   "A lamb",
+   "His servant",
+   "His son Isaac",
+   "His nephew Lot"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God was testing Abraham's trust. “your only son Isaac, whom you love” (Genesis 22:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Abraham Offers Isaac",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ap-ra-ham-dang-y-sac"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 22,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God tested Abraham, which land did He send him to?",
+  "options": [
+   "The land of Moriah",
+   "Mount Sinai",
+   "The land of Egypt",
+   "Mount Ararat"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God would show him one of the mountains there. “and go to the land of Moriah.” (Genesis 22:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Abraham Offers Isaac",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ap-ra-ham-dang-y-sac"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 22,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "As Abraham and Isaac walked up the mountain, what did Isaac carry?",
+  "options": [
+   "The wood for the offering",
+   "A lamb",
+   "The knife",
+   "The fire"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Abraham carried the fire and the knife. “Abraham took the wood for the burnt offering and placed it on his son Isaac.” (Genesis 22:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Abraham Offers Isaac",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ap-ra-ham-dang-y-sac"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 22,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On the way up the mountain, what did Isaac ask his father Abraham?",
+  "options": [
+   "When will we eat?",
+   "Where are the servants?",
+   "Where is the lamb?",
+   "Where is the water?"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Isaac saw the fire and wood but no lamb. “but where is the lamb for the burnt offering?” (Genesis 22:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Abraham Offers Isaac",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ap-ra-ham-dang-y-sac"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 22,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Isaac asked where the lamb was, what did Abraham answer?",
+  "options": [
+   "We will buy one",
+   "We forgot it at home",
+   "The servants will bring it",
+   "God Himself will provide it"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Abraham trusted God to provide. “God Himself will provide the lamb for the burnt offering, my son.” (Genesis 22:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Abraham Offers Isaac",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ap-ra-ham-dang-y-sac"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 22,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Just as Abraham took the knife on the mountain, who called out to stop him?",
+  "options": [
+   "Isaac",
+   "The angel of the LORD",
+   "Sarah",
+   "A servant"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Abraham had shown that he feared God. “Just then the angel of the LORD called out to him from heaven” (Genesis 22:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Abraham Offers Isaac",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ap-ra-ham-dang-y-sac"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 22,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On the mountain, what did Abraham offer in place of his son Isaac?",
+  "options": [
+   "A goat",
+   "A ram caught in a thicket",
+   "A young bull",
+   "A dove"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God provided a ram, caught by its horns. “and saw behind him a ram in a thicket, caught by its horns.” (Genesis 22:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Abraham Offers Isaac",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ap-ra-ham-dang-y-sac"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 24,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In his old age, Abraham sent his servant to find a wife for whom?",
+  "options": [
+   "Himself",
+   "His nephew Lot",
+   "His son Ishmael",
+   "His son Isaac"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The wife was to come from Abraham's own relatives. “to take a wife for my son Isaac.” (Genesis 24:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Rebekah at the Well",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "re-be-ca-ben-gieng-nuoc"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 24,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What animals did Abraham's servant take on his trip to find a wife for Isaac?",
+  "options": [
+   "Twelve oxen",
+   "Five horses",
+   "Ten camels",
+   "Two donkeys"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He also took many good gifts from his master. “Then the servant took ten of his master’s camels” (Genesis 24:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Rebekah at the Well",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "re-be-ca-ben-gieng-nuoc"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 24,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Looking for a wife for Isaac, where did Abraham's servant stop his camels to pray?",
+  "options": [
+   "By a well outside the town",
+   "At the city gate",
+   "At a temple",
+   "In the marketplace"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was the time women came to draw water. “he made the camels kneel down near the well outside the town” (Genesis 24:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Rebekah at the Well",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "re-be-ca-ben-gieng-nuoc"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 24,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "While Abraham's servant was still praying at the well, who came out with her jar?",
+  "options": [
+   "Sarah",
+   "Rachel",
+   "Rebekah",
+   "Leah"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God answered before he finished praying. “Before the servant had finished praying, Rebekah came out with her jar on her shoulder.” (Genesis 24:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Rebekah at the Well",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "re-be-ca-ben-gieng-nuoc"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 24,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the well, what did Rebekah offer to do for the camels of Abraham's servant?",
+  "options": [
+   "Draw water for them",
+   "Feed them grain",
+   "Wash them",
+   "Tie them up"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "This was the sign the servant had prayed for. “I will also draw water for your camels, until they have had enough to drink.” (Genesis 24:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Rebekah at the Well",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "re-be-ca-ben-gieng-nuoc"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 24,
+  "verseStart": 58,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When her family asked Rebekah if she would go with Abraham's servant to marry Isaac, what did she say?",
+  "options": [
+   "Ask my father",
+   "Let me think",
+   "Not yet",
+   "I will go"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Rebekah chose to go to Isaac. ““I will go,” she replied.” (Genesis 24:58, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Rebekah at the Well",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "re-be-ca-ben-gieng-nuoc"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 24,
+  "verseStart": 67,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How did Isaac feel about Rebekah after he married her?",
+  "options": [
+   "He ignored her",
+   "He loved her",
+   "He sent her home",
+   "He was afraid of her"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "She comforted him after his mother's death. “And Isaac loved her and was comforted after his mother’s death.” (Genesis 24:67, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Rebekah at the Well",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "re-be-ca-ben-gieng-nuoc"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 25,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Rebekah, Isaac's wife, gave birth, what was special about her children?",
+  "options": [
+   "They were triplets",
+   "They were born years apart",
+   "They were both girls",
+   "They were twins"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The twins were Esau and Jacob. “there were indeed twins in her womb.” (Genesis 25:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Esau Sells His Birthright",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "e-sau-ban-quyen-truong-nam"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 25,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which of Isaac's twins was born first, red and hairy?",
+  "options": [
+   "Esau",
+   "Ishmael",
+   "Jacob",
+   "Laban"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He was covered with hair like a fur coat. “The first one came out red, covered with hair like a fur coat; so they named him Esau.” (Genesis 25:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Esau Sells His Birthright",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "e-sau-ban-quyen-truong-nam"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 25,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Jacob was born right after his twin, what was he holding on to?",
+  "options": [
+   "His mother's hair",
+   "Esau's hand",
+   "Esau's heel",
+   "A blanket"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "That is how he got the name Jacob. “his brother came out grasping Esau’s heel” (Genesis 25:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Esau Sells His Birthright",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "e-sau-ban-quyen-truong-nam"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 25,
+  "verseStart": 27,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Isaac's twins grew up, what kind of man was Esau?",
+  "options": [
+   "A quiet man at home",
+   "A skillful hunter",
+   "A priest",
+   "A shepherd boy"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jacob was the quiet one who stayed at home. “Esau became a skillful hunter” (Genesis 25:27, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Esau Sells His Birthright",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "e-sau-ban-quyen-truong-nam"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 25,
+  "verseStart": 29,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "One day Esau came in from the field very hungry. What was Jacob cooking?",
+  "options": [
+   "Fish",
+   "Bread",
+   "Roast lamb",
+   "Stew"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Esau begged for some of the red stew. “while Jacob was cooking some stew” (Genesis 25:29, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Esau Sells His Birthright",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "e-sau-ban-quyen-truong-nam"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 25,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did Jacob ask Esau to sell him for a bowl of stew?",
+  "options": [
+   "His camels",
+   "His coat",
+   "His birthright",
+   "His bow"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Esau traded something precious for one meal. ““First sell me your birthright,” Jacob replied.” (Genesis 25:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Esau Sells His Birthright",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "e-sau-ban-quyen-truong-nam"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 25,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which of the twin brothers did their mother Rebekah love?",
+  "options": [
+   "Laban",
+   "Jacob",
+   "Esau",
+   "Ishmael"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Isaac loved Esau, but Rebekah loved Jacob. “but Rebekah loved Jacob.” (Genesis 25:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Esau Sells His Birthright",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "e-sau-ban-quyen-truong-nam"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 12,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How old was Abram when he left Haran at God's call?",
+  "options": [
+   "Seventy-five",
+   "Forty",
+   "Ninety-nine",
+   "One hundred"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Abram obeyed God even in old age. “Abram was seventy-five years old when he left Haran.” (Genesis 12:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 12,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When a severe famine struck Canaan, where did Abram go to live for a while?",
+  "options": [
+   "Haran",
+   "Egypt",
+   "Moab",
+   "Babylon"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "There was not enough food in the land. “So Abram went down to Egypt to live there for a while because the famine was severe.” (Genesis 12:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 13,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Abram and Lot separated, which land did Lot choose for himself?",
+  "options": [
+   "The land of Egypt",
+   "The hills of Bethel",
+   "The Negev desert",
+   "The plain of the Jordan"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It looked well watered like the garden of the LORD. “So Lot chose the whole plain of the Jordan for himself” (Genesis 13:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 13,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After separating from Abram, Lot pitched his tent toward which city?",
+  "options": [
+   "Hebron",
+   "Bethel",
+   "Sodom",
+   "Jericho"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lot moved near the wicked city of Sodom. “and pitched his tent toward Sodom.” (Genesis 13:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 14,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which king of Salem brought bread and wine to Abram?",
+  "options": [
+   "Melchizedek",
+   "Nimrod",
+   "Abimelech",
+   "Pharaoh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He was priest of God Most High. “Then Melchizedek king of Salem brought out bread and wine” (Genesis 14:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 14,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After Melchizedek blessed him, what did Abram give Melchizedek?",
+  "options": [
+   "His best camel",
+   "A golden crown",
+   "Half his flocks",
+   "A tenth of everything"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Abram honored the priest of God Most High. “Then Abram gave Melchizedek a tenth of everything.” (Genesis 14:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 16,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What was the name of Sarai's Egyptian maidservant?",
+  "options": [
+   "Keturah",
+   "Hagar",
+   "Zilpah",
+   "Bilhah"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Sarai gave Hagar to Abram because she had no children. “but she had an Egyptian maidservant named Hagar.” (Genesis 16:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 16,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Abram name the son that Hagar bore him?",
+  "options": [
+   "Esau",
+   "Isaac",
+   "Ishmael",
+   "Midian"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ishmael was born before Isaac. “and Abram gave the name Ishmael to the son she had borne.” (Genesis 16:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 17,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When God made His covenant with Abram, what new name did He give him?",
+  "options": [
+   "Abraham",
+   "Abimelech",
+   "Israel",
+   "Isaac"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "His new name meant he would be a father of many nations. “but your name will be Abraham, for I have made you a father of many nations.” (Genesis 17:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 17,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When God renamed Abraham, what new name did He give Abraham's wife Sarai?",
+  "options": [
+   "Rachel",
+   "Rebekah",
+   "Miriam",
+   "Sarah"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God promised she would be the mother of nations. “for her name is to be Sarah.” (Genesis 17:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 17,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When God appeared to Abram at age ninety-nine, what name did He call Himself?",
+  "options": [
+   "The Ancient of Days",
+   "God Almighty",
+   "The Good Shepherd",
+   "The Holy One"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God told Abram to walk before Him and be blameless. “I am God Almighty.” (Genesis 17:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 18,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "By the Oaks of Mamre, how many men did Abraham see standing near his tent?",
+  "options": [
+   "Three",
+   "Five",
+   "Two",
+   "Seven"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Abraham ran to welcome his visitors. “And Abraham looked up and saw three men standing nearby.” (Genesis 18:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 18,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Sarah overheard that she would have a son in her old age, what did she do?",
+  "options": [
+   "She danced",
+   "She ran away",
+   "She laughed to herself",
+   "She wept"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "She thought she was too old. “So she laughed to herself” (Genesis 18:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 18,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Sarah laughed at the promise of a son, what did the LORD ask Abraham?",
+  "options": [
+   "Why are you afraid?",
+   "Is anything too difficult for the LORD?",
+   "Where is your faith?",
+   "Who told you this?"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God promised Sarah would have a son in about a year. “Is anything too difficult for the LORD?” (Genesis 18:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 18,
+  "verseStart": 32,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Abraham pleaded for Sodom, what was the smallest number of righteous people he asked about?",
+  "options": [
+   "Ten",
+   "Fifty",
+   "Twenty",
+   "One"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God said He would spare the city for ten. “Suppose ten are found there?” (Genesis 18:32, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 22,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Abraham name the mountain where God provided a ram in Isaac's place?",
+  "options": [
+   "The LORD Is There",
+   "The LORD Is Peace",
+   "The LORD Will Provide",
+   "The LORD Is My Banner"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God had provided the sacrifice. “And Abraham called that place The LORD Will Provide.” (Genesis 22:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 22,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After Abraham's test on the mountain, God promised to multiply his descendants like what?",
+  "options": [
+   "The leaves on the trees",
+   "The birds of the air",
+   "The fish of the sea",
+   "The stars and the sand"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Abraham had not held back his only son. “I will multiply your descendants like the stars in the sky and the sand on the seashore.” (Genesis 22:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 24,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What was the name of Rebekah's brother, who rushed out to meet Abraham's servant?",
+  "options": [
+   "Bethuel",
+   "Lot",
+   "Nahor",
+   "Laban"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bethuel was her father; Laban was her brother. “Now Rebekah had a brother named Laban” (Genesis 24:29, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 24,
+  "verseStart": 63,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What was Isaac doing in the field when Rebekah's camels came into view?",
+  "options": [
+   "Sleeping",
+   "Meditating",
+   "Hunting",
+   "Plowing"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He looked up and saw the camels approaching. “Isaac went out to the field to meditate” (Genesis 24:63, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 25,
+  "verseStart": 30,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Because he asked for the red stew, what other name was Esau given?",
+  "options": [
+   "Edom",
+   "Israel",
+   "Moab",
+   "Seir"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Edom sounds like the word for red. “(That is why he was also called Edom.)” (Genesis 25:30, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 25,
+  "verseStart": 34,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Jacob give Esau in exchange for his birthright?",
+  "options": [
+   "Silver coins",
+   "Bread and honey",
+   "Bread and lentil stew",
+   "A goat and wine"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Esau ate, drank, and went away. “Then Jacob gave some bread and lentil stew to Esau” (Genesis 25:34, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 25,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Before Rebekah's twins were born, what did God say about the older and the younger?",
+  "options": [
+   "The younger will serve the older",
+   "Both will be kings",
+   "They will live apart in peace",
+   "The older will serve the younger"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God told her two nations were in her womb. “and the older will serve the younger.” (Genesis 25:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 21,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Where did Hagar wander with her son after Abraham sent them away?",
+  "options": [
+   "The land of Egypt",
+   "The Wilderness of Beersheba",
+   "The Wilderness of Sinai",
+   "The Valley of Hebron"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Abraham gave her bread and a skin of water. “She left and wandered in the Wilderness of Beersheba.” (Genesis 21:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 12,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Canaan, Abram traveled as far as the Oak of Moreh at which place?",
+  "options": [
+   "Shechem",
+   "Hebron",
+   "Beersheba",
+   "Bethel"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "There the LORD appeared to him. “as far as the site of the Oak of Moreh at Shechem.” (Genesis 12:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 12,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Canaan, Abram pitched his tent with Bethel to the west and which town to the east?",
+  "options": [
+   "Jericho",
+   "Hebron",
+   "Ai",
+   "Shechem"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "There he built another altar to the LORD. “with Bethel to the west and Ai to the east.” (Genesis 12:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 15,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Before Isaac was born, who did Abram say would inherit his house?",
+  "options": [
+   "Eliezer of Damascus",
+   "Laban",
+   "His nephew Lot",
+   "His son Ishmael"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Abram had no child of his own yet. “and the heir of my house is Eliezer of Damascus?” (Genesis 15:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 16,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How long had Abram lived in Canaan when Sarai gave him Hagar as a wife?",
+  "options": [
+   "Two years",
+   "Seven years",
+   "Ten years",
+   "Twenty years"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sarai still had no children. “So after he had lived in Canaan for ten years” (Genesis 16:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 21,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "At what age did Abraham circumcise his son Isaac?",
+  "options": [
+   "Forty days old",
+   "Eight days old",
+   "Three days old",
+   "Seven days old"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Abraham did as God had commanded him. “When his son Isaac was eight days old, Abraham circumcised him” (Genesis 21:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 23,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How old was Abraham's wife Sarah when she died?",
+  "options": [
+   "175 years old",
+   "100 years old",
+   "90 years old",
+   "127 years old"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "She died in Hebron in the land of Canaan. “Now Sarah lived to be 127 years old.” (Genesis 23:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 23,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Where did Abraham bury his wife Sarah?",
+  "options": [
+   "The cave at Machpelah",
+   "At Beersheba",
+   "On Mount Moriah",
+   "Under the oak at Shechem"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The cave was near Mamre, that is, Hebron. “Abraham buried his wife Sarah in the cave of the field at Machpelah near Mamre” (Genesis 23:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 25,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How many years did Abraham live in all?",
+  "options": [
+   "127 years",
+   "969 years",
+   "100 years",
+   "175 years"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He died old and contented. “Abraham lived a total of 175 years.” (Genesis 25:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 25,
+  "verseStart": 20,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How old was Isaac when he married Rebekah?",
+  "options": [
+   "Thirty",
+   "Forty",
+   "Twenty",
+   "Sixty"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Rebekah was the sister of Laban the Aramean. “and Isaac was forty years old when he married Rebekah” (Genesis 25:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 25,
+  "verseStart": 26,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How old was Isaac when his twin sons Esau and Jacob were born?",
+  "options": [
+   "Eighty",
+   "Forty",
+   "Sixty",
+   "One hundred"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Isaac had prayed for his wife because she was barren. “And Isaac was sixty years old when the twins were born.” (Genesis 25:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 24,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Looking for a wife for Isaac, Abraham's servant set out for Nahor's hometown in which region?",
+  "options": [
+   "Ur of the Chaldeans",
+   "Canaan",
+   "Goshen",
+   "Aram-naharaim"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Abraham's relatives lived there. “And he set out for Nahor’s hometown in Aram-naharaim.” (Genesis 24:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 17,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "When God promised Abraham a son by Sarah, how old did Abraham say Sarah was?",
+  "options": [
+   "Seventy-five",
+   "Sixty",
+   "Ninety",
+   "One hundred"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Abraham himself was nearly a hundred. “Can Sarah give birth at the age of ninety?” (Genesis 17:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 28,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On his way to Haran, what did Jacob use as a pillow when he slept?",
+  "options": [
+   "A stone",
+   "A bundle of clothes",
+   "A saddle",
+   "A sheepskin"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He stopped for the night because the sun had set. “And taking one of the stones from that place, he put it under his head and lay down to sleep.” (Genesis 28:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jacob's Ladder",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gia-cop-va-chiec-thang"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 28,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sleeping on his way to Haran, what did Jacob dream about?",
+  "options": [
+   "Seven fat cows",
+   "A ladder reaching to heaven",
+   "A burning bush",
+   "A great flood"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The ladder rested on the earth and reached heaven. “And Jacob had a dream about a ladder that rested on the earth with its top reaching up to heaven” (Genesis 28:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jacob's Ladder",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gia-cop-va-chiec-thang"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 28,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jacob's dream on the way to Haran, who was going up and down the ladder?",
+  "options": [
+   "His brothers",
+   "God's angels",
+   "His sheep",
+   "Birds of the air"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "At the top stood the LORD Himself. “and God’s angels were going up and down the ladder.” (Genesis 28:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jacob's Ladder",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gia-cop-va-chiec-thang"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 28,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jacob's ladder dream, what did God promise to do wherever Jacob went?",
+  "options": [
+   "Send him home at once",
+   "Make him a king",
+   "Give him gold",
+   "Watch over him"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God promised to bring Jacob back to the land. “Look, I am with you, and I will watch over you wherever you go” (Genesis 28:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jacob's Ladder",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gia-cop-va-chiec-thang"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 28,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Jacob woke from his ladder dream, what did he say about that place?",
+  "options": [
+   "Surely the LORD is in this place",
+   "This place is empty",
+   "This place is scary",
+   "I must leave quickly"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jacob had not known God was there. “Surely the LORD is in this place, and I was unaware of it.” (Genesis 28:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jacob's Ladder",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gia-cop-va-chiec-thang"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 28,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After his ladder dream, what did Jacob do with the stone he had slept on?",
+  "options": [
+   "Gave it to Laban",
+   "Used it to build a house",
+   "Set it up as a pillar",
+   "Threw it away"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He poured oil on it to mark the place. “and he set it up as a pillar. He poured oil on top of it” (Genesis 28:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jacob's Ladder",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gia-cop-va-chiec-thang"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 28,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What name did Jacob give the place where he dreamed of the ladder?",
+  "options": [
+   "Bethel",
+   "Bethlehem",
+   "Babel",
+   "Beersheba"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bethel means house of God. “and he called that place Bethel” (Genesis 28:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jacob's Ladder",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gia-cop-va-chiec-thang"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 32,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "The night before Jacob met Esau again, what happened when Jacob was left alone?",
+  "options": [
+   "He dreamed of a ladder",
+   "An angel sang to him",
+   "A man wrestled with him",
+   "A lion attacked him"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They wrestled through the night. “So Jacob was left all alone, and there a man wrestled with him until daybreak.” (Genesis 32:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jacob Is Renamed Israel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gia-cop-duoc-doi-ten-la-y-so-ra-en"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 32,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On the night before meeting Esau, how long did the man wrestle with Jacob?",
+  "options": [
+   "For three days",
+   "Until daybreak",
+   "For one hour",
+   "Until noon"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jacob would not give up. “a man wrestled with him until daybreak.” (Genesis 32:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jacob Is Renamed Israel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gia-cop-duoc-doi-ten-la-y-so-ra-en"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 32,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When the man he wrestled said, “Let me go,” what did Jacob answer?",
+  "options": [
+   "Tell me your name first",
+   "I am too tired",
+   "Help me cross the river",
+   "Not unless you bless me"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jacob wanted God's blessing. “I will not let you go unless you bless me.” (Genesis 32:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jacob Is Renamed Israel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gia-cop-duoc-doi-ten-la-y-so-ra-en"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 32,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After wrestling all night, what new name was Jacob given?",
+  "options": [
+   "Joseph",
+   "Judah",
+   "Abraham",
+   "Israel"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He had struggled with God and with men and prevailed. “Your name will no longer be Jacob, but Israel” (Genesis 32:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jacob Is Renamed Israel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gia-cop-duoc-doi-ten-la-y-so-ra-en"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 32,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After wrestling with the man until daybreak, how did Jacob walk?",
+  "options": [
+   "He was dancing",
+   "He was running",
+   "He was limping",
+   "He was carried"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The man had struck his hip. “and he was limping because of his hip.” (Genesis 32:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jacob Is Renamed Israel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gia-cop-duoc-doi-ten-la-y-so-ra-en"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 32,
+  "verseStart": 30,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why did Jacob name the place where he wrestled Peniel?",
+  "options": [
+   "He had seen God face to face",
+   "He found water there",
+   "He won a battle there",
+   "He met Esau there"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jacob was amazed his life was spared. “Indeed, I have seen God face to face, and yet my life was spared.” (Genesis 32:30, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jacob Is Renamed Israel",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gia-cop-duoc-doi-ten-la-y-so-ra-en"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 27,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Isaac was old and ready to bless his son, what was wrong with his eyes?",
+  "options": [
+   "They were injured in battle",
+   "They were too weak to see",
+   "They hurt in the sun",
+   "They were red and sore"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Because he could not see, Jacob could trick him. “When Isaac was old and his eyes were so weak that he could no longer see” (Genesis 27:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 27,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When old Isaac planned to bless Esau, what did he first ask Esau to do?",
+  "options": [
+   "Fetch water",
+   "Build an altar",
+   "Bring his brother",
+   "Hunt some game for him"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Isaac wanted a tasty meal before giving the blessing. “go out into the field to hunt some game for me.” (Genesis 27:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 27,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "To trick blind Isaac, what did Rebekah put on Jacob's hands and neck?",
+  "options": [
+   "Esau's gloves",
+   "Sheep's wool",
+   "Young goat skins",
+   "Mud and dust"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Esau was hairy, and Jacob was smooth. “She also put the skins of the young goats on his hands and on the smooth part of his neck.” (Genesis 27:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 27,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When blind Isaac touched Jacob, what did he say about the voice and the hands?",
+  "options": [
+   "Jacob's voice, Esau's hands",
+   "Esau's voice, Jacob's hands",
+   "Both were Esau's",
+   "Both were Jacob's"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Isaac was unsure but blessed Jacob anyway. “The voice is the voice of Jacob, but the hands are the hands of Esau.” (Genesis 27:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 27,
+  "verseStart": 43,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Esau planned to kill Jacob over the stolen blessing, where did Rebekah tell Jacob to flee?",
+  "options": [
+   "To Abraham's tomb",
+   "To her brother Laban in Haran",
+   "To Egypt",
+   "To the land of Nod"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "She wanted Jacob safe until Esau calmed down. “flee at once to my brother Laban in Haran.” (Genesis 27:43, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 29,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Jacob reached Haran, who arrived at the well with her father's sheep?",
+  "options": [
+   "Leah",
+   "Dinah",
+   "Rachel",
+   "Rebekah"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Rachel was a shepherdess. “Rachel arrived with her father’s sheep, for she was a shepherdess.” (Genesis 29:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 29,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Jacob first saw Rachel at the well in Haran, what did he do for her?",
+  "options": [
+   "Sang her a song",
+   "Carried her water jar",
+   "Gave her a ring",
+   "Rolled the stone away, watered her sheep"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Rachel was the daughter of his uncle Laban. “he went up and rolled the stone away from the mouth of the well and watered his uncle’s sheep.” (Genesis 29:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 29,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How many years did Jacob offer to work for Laban to marry Rachel?",
+  "options": [
+   "Ten years",
+   "Seven years",
+   "Three years",
+   "Forty years"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jacob loved Rachel. “I will serve you seven years for your younger daughter Rachel.” (Genesis 29:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 29,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How did Jacob's seven years of work for Rachel feel to him?",
+  "options": [
+   "Like only a few days",
+   "Like a lifetime",
+   "Long and very hard",
+   "Boring and lonely"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "His love for her made the time fly. “yet it seemed but a few days because of his love for her.” (Genesis 29:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 29,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After working seven years for Rachel, whom did Jacob find he had married?",
+  "options": [
+   "Zilpah",
+   "Rachel",
+   "Dinah",
+   "Leah"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Laban had tricked Jacob. “When morning came, there was Leah!” (Genesis 29:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 29,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What were the names of Laban's two daughters?",
+  "options": [
+   "Bilhah and Zilpah",
+   "Rebekah and Dinah",
+   "Leah and Rachel",
+   "Sarah and Hagar"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Leah was older and Rachel was younger. “the older was named Leah, and the younger was named Rachel.” (Genesis 29:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 30,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Rachel name her first son?",
+  "options": [
+   "Benjamin",
+   "Joseph",
+   "Judah",
+   "Reuben"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God remembered Rachel and gave her a son. “She named him Joseph” (Genesis 30:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 32,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Jacob returned home, how many men were coming with Esau to meet him?",
+  "options": [
+   "Four hundred",
+   "Twelve",
+   "One thousand",
+   "Forty"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jacob was greatly afraid. “he and four hundred men with him.” (Genesis 32:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 33,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Esau finally met Jacob again after many years, what did Esau do?",
+  "options": [
+   "Attacked him",
+   "Took his flocks",
+   "Ran and embraced him",
+   "Ignored him"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The brothers wept together. “Esau, however, ran to him and embraced him” (Genesis 33:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 33,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "As Jacob approached Esau after many years apart, how many times did he bow to the ground?",
+  "options": [
+   "Once",
+   "Twelve times",
+   "Three times",
+   "Seven times"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jacob came humbly to his brother. “and bowed to the ground seven times as he approached his brother.” (Genesis 33:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 35,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "As Rachel was dying in childbirth, what name did Jacob give her newborn son?",
+  "options": [
+   "Benjamin",
+   "Ben-oni",
+   "Levi",
+   "Joseph"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Rachel had named him Ben-oni. “But his father called him Benjamin.” (Genesis 35:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 35,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How many sons did Jacob have in all?",
+  "options": [
+   "Eleven",
+   "Twelve",
+   "Ten",
+   "Seven"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They became the twelve tribes of Israel. “Jacob had twelve sons:” (Genesis 35:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 26,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What did Isaac name the well that no one quarreled over?",
+  "options": [
+   "Sitnah",
+   "Beersheba",
+   "Esek",
+   "Rehoboth"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Isaac said the LORD had made room for them. “He named it Rehoboth” (Genesis 26:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 28,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Before Jacob named it Bethel, what was that city called?",
+  "options": [
+   "Salem",
+   "Luz",
+   "Jebus",
+   "Shechem"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jacob renamed it after his ladder dream. “though previously the city had been named Luz.” (Genesis 28:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 28,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "At Bethel, how much of all God gave him did Jacob vow to give back?",
+  "options": [
+   "A tenth",
+   "Half",
+   "All of it",
+   "A third"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jacob made a vow after his dream. “and of all that You give me I will surely give You a tenth.” (Genesis 28:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 29,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Which servant girl did Laban give to his daughter Leah as her maidservant?",
+  "options": [
+   "Hagar",
+   "Bilhah",
+   "Zilpah",
+   "Deborah"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Bilhah was given to Rachel. “And Laban gave his servant girl Zilpah to his daughter Leah as her maidservant.” (Genesis 29:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 31,
+  "verseStart": 41,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How many years in all did Jacob serve in Laban's household?",
+  "options": [
+   "Forty years",
+   "Fourteen years",
+   "Seven years",
+   "Twenty years"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Fourteen years for his wives and six for his flocks. “Thus for twenty years I have served in your household” (Genesis 31:41, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 31,
+  "verseStart": 41,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Jacob complained that his uncle Laban had changed his wages how many times?",
+  "options": [
+   "Ten times",
+   "Twelve times",
+   "Seven times",
+   "Three times"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Laban kept cheating Jacob. “and you have changed my wages ten times!” (Genesis 31:41, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 32,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "When angels met Jacob on his way home, what did he name that place?",
+  "options": [
+   "Gilead",
+   "Mahanaim",
+   "Bethel",
+   "Peniel"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He called it the camp of God. “So he named that place Mahanaim.” (Genesis 32:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 32,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "The night before meeting Esau, which stream did Jacob's family cross?",
+  "options": [
+   "The Nile",
+   "The Euphrates",
+   "The Jabbok",
+   "The Jordan"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Then Jacob was left alone. “and crossed the ford of the Jabbok.” (Genesis 32:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 35,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Where was Jacob's wife Rachel buried?",
+  "options": [
+   "In Haran",
+   "In the cave of Machpelah",
+   "On the way to Ephrath",
+   "At Bethel"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ephrath is Bethlehem. “So Rachel died and was buried on the way to Ephrath (that is, Bethlehem).” (Genesis 35:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 35,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was Jacob's firstborn son?",
+  "options": [
+   "Reuben",
+   "Joseph",
+   "Simeon",
+   "Judah"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Reuben was Leah's first son. “The sons of Leah were Reuben the firstborn of Jacob” (Genesis 35:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What special gift did Jacob make for his son Joseph?",
+  "options": [
+   "A fine bow",
+   "A robe of many colors",
+   "A golden ring",
+   "A new tent"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jacob loved Joseph more than his other sons. “so he made him a robe of many colors.” (Genesis 37:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph and His Colorful Robe",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-va-chiec-ao-nhieu-mau"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why did Joseph's brothers hate him?",
+  "options": [
+   "He was rich",
+   "He was the oldest",
+   "He was lazy",
+   "Their father loved him more"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They could not even speak a kind word to him. “When Joseph’s brothers saw that their father loved him more than any of them, they hated him” (Genesis 37:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph and His Colorful Robe",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-va-chiec-ao-nhieu-mau"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In young Joseph's first dream, what bowed down to his sheaf of grain?",
+  "options": [
+   "His brothers' sheaves",
+   "The trees",
+   "Seven cows",
+   "The sun and moon"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "His brothers hated him even more after this dream. “while your sheaves gathered around and bowed down to mine.” (Genesis 37:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph and His Colorful Robe",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-va-chiec-ao-nhieu-mau"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In young Joseph's second dream, what was bowing down to him?",
+  "options": [
+   "Twelve sheaves of grain",
+   "Three baskets of bread",
+   "Seven fat cows",
+   "The sun, moon, and eleven stars"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Even his father wondered about this dream. “the sun and moon and eleven stars were bowing down to me.” (Genesis 37:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph and His Colorful Robe",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-va-chiec-ao-nhieu-mau"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Joseph's brothers saw him coming in the fields, what did they call him?",
+  "options": [
+   "That spy",
+   "That baby",
+   "That dreamer",
+   "That shepherd"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They were angry about his dreams. ““Here comes that dreamer!” they said to one another.” (Genesis 37:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph and His Colorful Robe",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-va-chiec-ao-nhieu-mau"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After taking his colorful robe, where did Joseph's brothers throw him?",
+  "options": [
+   "Into a prison",
+   "Into an empty pit",
+   "Into a lions' den",
+   "Into a river"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The pit had no water in it. “and they took him and threw him into the pit. Now the pit was empty, with no water in it.” (Genesis 37:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph and His Colorful Robe",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-va-chiec-ao-nhieu-mau"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Who did Joseph's jealous brothers sell him to?",
+  "options": [
+   "Philistine farmers",
+   "Egyptian soldiers",
+   "Ishmaelite traders",
+   "Their uncle Laban"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The traders took Joseph to Egypt. “and sold him for twenty shekels of silver to the Ishmaelites, who took him to Egypt.” (Genesis 37:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph and His Colorful Robe",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-va-chiec-ao-nhieu-mau"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After selling Joseph, what did his brothers dip his robe in to fool their father?",
+  "options": [
+   "Red paint",
+   "A goat's blood",
+   "Mud",
+   "Wine"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They wanted Jacob to think an animal had killed Joseph. “slaughtered a young goat, and dipped the robe in its blood.” (Genesis 37:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph and His Colorful Robe",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-va-chiec-ao-nhieu-mau"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Pharaoh's first dream, what came up out of the Nile?",
+  "options": [
+   "Seven well-fed cows",
+   "Seven frogs",
+   "Seven crocodiles",
+   "Seven big fish"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Then seven thin cows came up after them. “when seven cows, sleek and well-fed, came up from the river” (Genesis 41:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Explains Pharaoh's Dreams",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-giai-chiem-bao-cho-pha-ra-on"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Pharaoh's dream by the Nile, what did the thin cows do to the fat cows?",
+  "options": [
+   "Pushed them into the river",
+   "Ran away from them",
+   "Slept beside them",
+   "Ate them up"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Then Pharaoh woke up troubled. “And the cows that were sickly and thin devoured the seven sleek, well-fed cows.” (Genesis 41:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Explains Pharaoh's Dreams",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-giai-chiem-bao-cho-pha-ra-on"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Pharaoh asked Joseph to explain his dream, who did Joseph say would give the answer?",
+  "options": [
+   "Pharaoh's wise men",
+   "God",
+   "Joseph himself",
+   "The cupbearer"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Joseph gave God the credit. “but God will give Pharaoh a sound answer.” (Genesis 41:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Explains Pharaoh's Dreams",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-giai-chiem-bao-cho-pha-ra-on"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 30,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Joseph said Pharaoh's dreams meant seven years of plenty followed by what?",
+  "options": [
+   "Seven years of famine",
+   "Seven years of war",
+   "Seven years of plagues",
+   "Seven years of floods"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Egypt needed to store food during the good years. “but seven years of famine will follow them.” (Genesis 41:30, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Explains Pharaoh's Dreams",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-giai-chiem-bao-cho-pha-ra-on"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 41,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Joseph explained the dreams, what did Pharaoh put him in charge of?",
+  "options": [
+   "The royal kitchen",
+   "The prison",
+   "All the land of Egypt",
+   "Pharaoh's army"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Pharaoh saw that God's Spirit was in Joseph. “I hereby place you over all the land of Egypt.” (Genesis 41:41, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Explains Pharaoh's Dreams",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-giai-chiem-bao-cho-pha-ra-on"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 42,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Pharaoh put Joseph in charge of Egypt, what did he put on Joseph's finger?",
+  "options": [
+   "A wedding band",
+   "A golden key",
+   "A silver coin",
+   "His signet ring"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The ring showed Joseph had Pharaoh's authority. “Then Pharaoh removed the signet ring from his finger, put it on Joseph’s finger” (Genesis 41:42, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Explains Pharaoh's Dreams",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-giai-chiem-bao-cho-pha-ra-on"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 57,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "During the great famine, why did every nation come to Joseph in Egypt?",
+  "options": [
+   "To learn wisdom",
+   "To find work",
+   "To buy grain",
+   "To see Pharaoh"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Joseph had stored grain during the good years. “And every nation came to Joseph in Egypt to buy grain” (Genesis 41:57, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Explains Pharaoh's Dreams",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-giai-chiem-bao-cho-pha-ra-on"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 45,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Joseph finally told his brothers in Egypt who he was, what did he say?",
+  "options": [
+   "I am Pharaoh!",
+   "I am Joseph!",
+   "I am your servant!",
+   "I am Benjamin!"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He also asked if his father was still alive. “Joseph said to his brothers, “I am Joseph! Is my father still alive?”” (Genesis 45:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Makes Himself Known to His Brothers",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-nhan-lai-anh-em"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 45,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Joseph revealed who he was, how did his brothers feel?",
+  "options": [
+   "Terrified",
+   "Proud",
+   "Bored",
+   "Angry"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They could not even answer him. “because they were terrified in his presence.” (Genesis 45:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Makes Himself Known to His Brothers",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-nhan-lai-anh-em"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 45,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Joseph made himself known to his brothers, how loudly did he weep?",
+  "options": [
+   "Only a little",
+   "Silently in his room",
+   "Not at all",
+   "So loudly the Egyptians heard"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Even Pharaoh's household heard about it. “But he wept so loudly that the Egyptians heard him” (Genesis 45:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Makes Himself Known to His Brothers",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-nhan-lai-anh-em"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 45,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Joseph told his brothers that God sent him to Egypt ahead of them for what reason?",
+  "options": [
+   "To punish them",
+   "To save lives",
+   "To make him rich",
+   "To learn Egyptian"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Joseph saw God's plan in all that happened. “because it was to save lives that God sent me before you.” (Genesis 45:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Makes Himself Known to His Brothers",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-nhan-lai-anh-em"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 45,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Joseph told his brothers who had really sent him to Egypt. Who?",
+  "options": [
+   "The Ishmaelites",
+   "His brothers",
+   "God",
+   "Pharaoh"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God had made him ruler over Egypt. “Therefore it was not you who sent me here, but God” (Genesis 45:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Makes Himself Known to His Brothers",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-nhan-lai-anh-em"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 45,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In which region of Egypt did Joseph invite his family to settle?",
+  "options": [
+   "Cush",
+   "The Sinai desert",
+   "Memphis",
+   "Goshen"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "There they could be near Joseph. “You shall settle in the land of Goshen and be near me” (Genesis 45:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Makes Himself Known to His Brothers",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-nhan-lai-anh-em"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 45,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When old Jacob heard that Joseph was alive, what did he decide?",
+  "options": [
+   "To go see him before he died",
+   "To write him a letter",
+   "To stay in Canaan",
+   "To send Benjamin alone"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jacob had mourned Joseph for many years. “My son Joseph is still alive! I will go to see him before I die.” (Genesis 45:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Joseph Makes Himself Known to His Brothers",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-sep-nhan-lai-anh-em"
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How old was Joseph when he was tending the flock with his brothers?",
+  "options": [
+   "Twenty",
+   "Seventeen",
+   "Thirty",
+   "Twelve"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He brought his father a bad report about his brothers. “When Joseph was seventeen years old, he was tending the flock with his brothers” (Genesis 37:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which brother tried to save Joseph by telling the others to throw him in a pit instead of killing him?",
+  "options": [
+   "Judah",
+   "Levi",
+   "Reuben",
+   "Simeon"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Reuben planned to bring Joseph back to their father. “Reuben said this so that he could rescue Joseph from their hands and return him to his father.” (Genesis 37:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 26,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which brother suggested selling Joseph instead of killing him?",
+  "options": [
+   "Benjamin",
+   "Simeon",
+   "Reuben",
+   "Judah"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He said there was no profit in killing their brother. “Then Judah said to his brothers, “What profit will we gain if we kill our brother and cover up his blood?” (Genesis 37:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "For how much silver did Joseph's brothers sell him?",
+  "options": [
+   "Twenty shekels",
+   "Thirty shekels",
+   "Fifty shekels",
+   "Ten shekels"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The traders took Joseph down to Egypt. “and sold him for twenty shekels of silver” (Genesis 37:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 39,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Egypt, who bought Joseph from the Ishmaelites?",
+  "options": [
+   "Potiphar",
+   "Potiphera",
+   "The chief baker",
+   "Pharaoh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Potiphar was an officer of Pharaoh. “an Egyptian named Potiphar, an officer of Pharaoh and captain of the guard, bought him” (Genesis 39:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 39,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Why did Joseph succeed while serving in Potiphar's house?",
+  "options": [
+   "Potiphar was his relative",
+   "He knew Egyptian magic",
+   "The LORD was with him",
+   "He was very strong"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Potiphar put him in charge of everything he owned. “And the LORD was with Joseph, and he became a successful man” (Genesis 39:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 39,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Potiphar's wife grabbed Joseph by his cloak, what did Joseph do?",
+  "options": [
+   "Called for the guards",
+   "Hid in the storeroom",
+   "Asked Potiphar for help",
+   "Left the cloak and ran outside"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Joseph refused to sin against God. “But leaving his cloak in her hand, he escaped and ran outside.” (Genesis 39:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 39,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "While Joseph was in prison, what did the warden put him in charge of?",
+  "options": [
+   "The kitchen",
+   "All the prisoners",
+   "Only the keys",
+   "The prison garden"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The LORD gave Joseph success even in prison. “And the warden put all the prisoners under Joseph’s care” (Genesis 39:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 40,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which two officers of Pharaoh ended up in prison with Joseph?",
+  "options": [
+   "The captain and the jailer",
+   "The chief cupbearer and chief baker",
+   "The chief priest and a scribe",
+   "Two of Pharaoh's sons"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Pharaoh was angry with them. “the chief cupbearer and the chief baker” (Genesis 40:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 40,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In prison, Joseph said the three branches in the cupbearer's dream meant what?",
+  "options": [
+   "Three days",
+   "Three kings",
+   "Three years",
+   "Three sons"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "In three days the cupbearer got his job back. “The three branches are three days.” (Genesis 40:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 40,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After the cupbearer was set free from prison, what did he do about Joseph?",
+  "options": [
+   "He told Pharaoh at once",
+   "He sent him food",
+   "He forgot all about him",
+   "He visited him daily"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Joseph stayed in prison two more years. “The chief cupbearer, however, did not remember Joseph; he forgot all about him.” (Genesis 40:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Pharaoh's second dream, what had scorched the thin heads of grain?",
+  "options": [
+   "The hot sun",
+   "Locusts",
+   "A fire",
+   "The east wind"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The thin heads swallowed the plump ones. “thin and scorched by the east wind.” (Genesis 41:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 46,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How old was Joseph when he entered Pharaoh's service?",
+  "options": [
+   "Forty",
+   "Thirty",
+   "Twenty",
+   "Seventeen"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Thirteen years had passed since he was sold. “Now Joseph was thirty years old when he entered the service of Pharaoh king of Egypt.” (Genesis 41:46, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 51,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Joseph name his firstborn son in Egypt?",
+  "options": [
+   "Manasseh",
+   "Ephraim",
+   "Gershom",
+   "Benjamin"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Joseph said God had made him forget his hardship. “Joseph named the firstborn Manasseh” (Genesis 41:51, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 42,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "During the famine, how many of Joseph's brothers first went to Egypt to buy grain?",
+  "options": [
+   "Twelve",
+   "Eleven",
+   "Two",
+   "Ten"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Benjamin stayed home with Jacob. “So ten of Joseph’s brothers went down to buy grain from Egypt.” (Genesis 42:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 42,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which brother did Jacob keep at home when the others first went to Egypt for grain?",
+  "options": [
+   "Levi",
+   "Judah",
+   "Benjamin",
+   "Reuben"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jacob was afraid harm might come to him. “But Jacob did not send Joseph’s brother Benjamin with his brothers” (Genesis 42:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 42,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Joseph's brothers came to Egypt to buy grain, did they recognize him?",
+  "options": [
+   "No, they did not",
+   "Only Reuben did",
+   "Only Judah did",
+   "Yes, right away"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Joseph recognized them, but he looked like an Egyptian ruler. “Although Joseph recognized his brothers, they did not recognize him.” (Genesis 42:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 42,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which of his brothers did Joseph keep bound in Egypt?",
+  "options": [
+   "Reuben",
+   "Simeon",
+   "Judah",
+   "Benjamin"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The others had to go home and bring Benjamin. “he took Simeon from them and had him bound before their eyes.” (Genesis 42:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 44,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Whose grain sack did Joseph order his silver cup to be hidden in?",
+  "options": [
+   "Simeon's",
+   "The oldest brother's",
+   "The youngest brother's",
+   "Judah's"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The youngest brother was Benjamin. “Put my cup, the silver one, in the mouth of the youngest one’s sack” (Genesis 44:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 50,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "At the end of Genesis, what did Joseph tell his brothers about the evil they had planned against him?",
+  "options": [
+   "He had forgotten it",
+   "He would punish them",
+   "Pharaoh had planned it",
+   "God intended it for good"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God used it to save many lives. “As for you, what you intended against me for evil, God intended for good” (Genesis 50:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 46,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Jacob came down to Egypt, what did Joseph do when he met his father?",
+  "options": [
+   "Embraced him and wept",
+   "Sent him to Pharaoh",
+   "Gave him a chariot",
+   "Bowed and left"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Father and son were together again after many years. “Joseph presented himself to him, embraced him, and wept profusely.” (Genesis 46:29, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 25,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "When Joseph was sold, what were the traders' camels carrying down to Egypt?",
+  "options": [
+   "Gold and silver",
+   "Spices, balm, and myrrh",
+   "Wheat and barley",
+   "Wool and linen"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The caravan was coming from Gilead. “Their camels were carrying spices, balm, and myrrh on their way down to Egypt.” (Genesis 37:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 37,
+  "verseStart": 36,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What was Potiphar's position in Egypt?",
+  "options": [
+   "High priest of On",
+   "Chief baker",
+   "Captain of the guard",
+   "Governor of Goshen"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He was an officer of Pharaoh. “an officer of Pharaoh and captain of the guard.” (Genesis 37:36, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 40,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the chief baker's dream in prison, how many baskets were on his head?",
+  "options": [
+   "Seven",
+   "Twelve",
+   "Two",
+   "Three"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Joseph said the three baskets were three days. “There were three baskets of white bread on my head.” (Genesis 40:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 40,
+  "verseStart": 20,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "On what occasion were Pharaoh's cupbearer and baker brought out of prison?",
+  "options": [
+   "Pharaoh's wedding",
+   "The Nile flood",
+   "Pharaoh's birthday",
+   "A new moon feast"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Pharaoh held a feast for all his officials. “On the third day, which was Pharaoh’s birthday” (Genesis 40:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How long after the cupbearer's release did Pharaoh have his troubling dream?",
+  "options": [
+   "Two full years",
+   "Three days",
+   "Seven years",
+   "One month"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Then the cupbearer finally remembered Joseph. “After two full years had passed, Pharaoh had a dream” (Genesis 41:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 45,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What Egyptian name did Pharaoh give Joseph?",
+  "options": [
+   "Potiphera",
+   "Zaphenath-paneah",
+   "Belteshazzar",
+   "Asenath"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Joseph took charge of all the land of Egypt. “Pharaoh gave Joseph the name Zaphenath-paneah” (Genesis 41:45, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 45,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Whom did Pharaoh give Joseph as his wife?",
+  "options": [
+   "Dinah daughter of Jacob",
+   "Tamar daughter of Judah",
+   "Zipporah daughter of Jethro",
+   "Asenath daughter of Potiphera"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Her father was priest of On. “and he gave him Asenath daughter of Potiphera, priest of On, to be his wife.” (Genesis 41:45, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 52,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What did Joseph name his second son in Egypt?",
+  "options": [
+   "Perez",
+   "Ephraim",
+   "Gershom",
+   "Manasseh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Joseph said God had made him fruitful. “And the second son he named Ephraim” (Genesis 41:52, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 47,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "When Jacob met Pharaoh in Egypt, how old did he say he was?",
+  "options": [
+   "175 years",
+   "147 years",
+   "110 years",
+   "130 years"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jacob said his years had been few and hard. ““My travels have lasted 130 years,” Jacob replied.” (Genesis 47:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 47,
+  "verseStart": 28,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How old was Jacob when his life ended in Egypt?",
+  "options": [
+   "120 years",
+   "130 years",
+   "147 years",
+   "175 years"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He lived seventeen years in Egypt. “and the length of his life was 147 years.” (Genesis 47:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 50,
+  "verseStart": 26,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How old was Joseph when he died in Egypt?",
+  "options": [
+   "110 years",
+   "100 years",
+   "147 years",
+   "120 years"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "His body was placed in a coffin in Egypt. “So Joseph died at the age of 110.” (Genesis 50:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 49,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Jacob's blessing of his sons, from which son would the scepter not depart?",
+  "options": [
+   "Judah",
+   "Reuben",
+   "Joseph",
+   "Levi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Kings would come from Judah's line. “The scepter will not depart from Judah” (Genesis 49:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Genesis",
+  "chapter": 41,
+  "verseStart": 43,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "When Joseph rode in Pharaoh's second chariot, what did men call out before him?",
+  "options": [
+   "Make way for the king!",
+   "Bow the knee!",
+   "Hail, wise one!",
+   "Long live Pharaoh!"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Joseph was placed over all Egypt. “with men calling out before him, “Bow the knee!”” (Genesis 41:43, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

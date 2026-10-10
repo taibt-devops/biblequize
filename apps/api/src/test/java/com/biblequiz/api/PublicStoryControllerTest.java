@@ -29,7 +29,7 @@ class PublicStoryControllerTest extends BaseControllerTest {
     private QuestionService questionService;
 
     private static final List<StoryCatalog.Story> TWO_STORIES = List.of(
-            new StoryCatalog.Story("sang-tao", 1, "Sáng tạo", "Sáng Thế Ký 1–2", "OT"),
+            new StoryCatalog.Story("sang-tao", 1, "Sáng tạo", "Sáng Thế Ký 1–2", "OT", "Creation", "Genesis 1–2"),
             new StoryCatalog.Story("no-e-va-tran-lut", 4, "Nô-ê và trận lụt", "Sáng Thế Ký 6–9", "OT"));
 
     @Test
@@ -61,5 +61,19 @@ class PublicStoryControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$[0].questionCount").value(0))
                 .andExpect(jsonPath("$[1].questionCount").value(0));
         verify(questionService).countQuestionsByStory("en");
+    }
+
+    @Test
+    void stories_inEnglish_useEnglishTitles_andFallBackToVietnamese() throws Exception {
+        when(storyCatalog.all()).thenReturn(TWO_STORIES);
+        when(questionService.countQuestionsByStory("en")).thenReturn(Map.of("sang-tao", 8L));
+
+        mockMvc.perform(get("/api/public/stories").param("language", "en"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].title").value("Creation"))
+                .andExpect(jsonPath("$[0].ref").value("Genesis 1–2"))
+                .andExpect(jsonPath("$[0].questionCount").value(8))
+                .andExpect(jsonPath("$[1].title").value("Nô-ê và trận lụt"))
+                .andExpect(jsonPath("$[1].ref").value("Sáng Thế Ký 6–9"));
     }
 }

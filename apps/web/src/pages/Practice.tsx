@@ -31,8 +31,8 @@ const MIN_TIME = 5
 const MAX_TIME = 120
 const DEFAULT_TIME = 30
 
-// A "Dễ cốt lõi" story from /api/public/stories. Titles and refs are Vietnamese; a story with
-// no questions in the chosen quiz language comes back with questionCount 0.
+// A core story from /api/public/stories. Titles and refs come in the chosen quiz language; a story
+// with no questions in that language comes back with questionCount 0.
 interface Story {
   id: string
   order: number

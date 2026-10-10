@@ -63,6 +63,17 @@ class StoryCatalogTest {
     }
 
     @Test
+    void everyStoryHasAnEnglishTitleAndRef() {
+        for (StoryCatalog.Story s : catalog.all()) {
+            assertNotNull(s.titleEn(), s.id());
+            assertFalse(s.titleEn().isBlank(), s.id());
+            assertNotNull(s.refEn(), s.id());
+            assertEquals(s.titleEn(), s.title("en"));
+            assertEquals(s.title(), s.title("vi"));
+        }
+    }
+
+    @Test
     void everyEasyCoreQuestionBelongsToAStory_andEveryStoryHasQuestions() throws IOException {
         List<SeedQuestion> questions = easyCoreQuestions();
         assertFalse(questions.isEmpty());
