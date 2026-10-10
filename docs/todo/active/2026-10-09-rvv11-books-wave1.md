@@ -87,6 +87,6 @@
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-16 Đợt 5 lên prod
   - Status: [x] DONE 10/10 · commit `2867e760`, BE `sha256:ebcff71a…` (rollback `e196929e…`) · seed một lần `rvv11_books_quiz.json`, `sync-stale=false`: inserted=269, dupHash=0 · 820/820 hàng cũ khớp 820 hash vừa retire, không có hàng mồ côi · dump `backups/questions-old-vi-w5-deleted-20261010.sql.gz` (1,5 MB) rồi xóa 820 hàng (CASCADE: 50 answers, 6 user_question_history, 25.211 quiz_session_questions; không bộ câu/phòng nào tham chiếu) · `questions` 8.780 · xóa cache Redis `questions:*` · `GET /api/questions` Lê-vi Ký/Dân Số Ký/Ê-xê-chi-ên/Ca Thương × 3 mức trả câu RVV11
-  - Sửa ngữ cảnh 10 câu (RVB-15) lên sau: seed lại + dump/xóa 10 biến thể cũ
+  - Sửa ngữ cảnh 10 câu (RVB-15): commit `a19f383c`, BE `sha256:86292cdc…` · seed lại inserted=10 · dump `backups/questions-ctx-variants-w5-deleted-20261010.sql.gz` rồi xóa đúng 10 biến thể cũ (không bảng nào tham chiếu) · RVV11 2.192 + Dễ cốt lõi 1.095 đúng bằng file seed · xóa cache `questions:*`
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
