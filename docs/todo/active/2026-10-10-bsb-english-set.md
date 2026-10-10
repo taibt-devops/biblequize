@@ -29,3 +29,8 @@
   - Status: [x] DONE · 636 câu thay 1.019 câu dịch máy: Ma-thi-ơ 133 (Dễ 86 trên 14 câu chuyện / TB 31 / Khó 16), Mác 69 (35/22/12), Lu-ca 126 (85 trên 13 câu chuyện / 26 / 15), Giăng 87 (47 trên 7 câu chuyện / 27 / 13), Công Vụ 111 (70 trên 10 câu chuyện / 25 / 16), Rô-ma 36 (8/19/9), Ê-phê-sô 29 (15/9/5), Phi-líp 23 (7/10/6), Gia-cơ 22 (8/9/5) · câu thư tín luôn nêu tên thư ("In Romans, Paul says…") · `retired_hashes.txt` 2.218 hash; 2 câu trùng chữ câu cũ → đổi lời · `bsb_en_quiz.json` 1.261 câu, 91 câu chuyện có câu tiếng Anh · test seed xanh
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- BSB-7 Đợt E3 lên prod
+  - Status: [x] DONE 10/10 · commit `4924b78f`, BE `sha256:4a3172fe…` (rollback `94ebf7b0…`) · seed `bsb_en_quiz.json`: inserted=636, dupHash=0 · 1.019/1.019 hàng cũ khớp hash, không bộ câu/phòng nào tham chiếu · dump `backups/questions-old-en-e3-deleted-20261010.sql.gz` rồi xóa (CASCADE: 143 answers, 10 user_question_history, 5.354 quiz_session_questions) · hàng tiếng Anh: 1.261 BSB + 2.857 cũ; tổng 7.681 câu · API Ma-thi-ơ/Mác/Lu-ca/Giăng × 3 mức trả câu BSB · 91 câu chuyện chơi được bằng tiếng Anh
+  - Gotcha: key cache có dấu cách (`questions:1 Samuel:easy`) — `xargs redis-cli del` tách đôi nên không xóa; script đợt sau dùng `while IFS= read -r k`
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
