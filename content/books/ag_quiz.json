@@ -1,0 +1,301 @@
+[
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa trách dân ở nhà có trần ván trong khi điều gì còn đổ nát?",
+  "options": [
+   "Tường thành",
+   "Cung vua",
+   "Đền thờ",
+   "Cổng thành"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Dân lo nhà mình mà bỏ dở nhà Chúa. “trong khi đền thờ nầy còn đổ nát không?” (A-ghê 1:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa bảo dân lên núi đem gỗ về để làm gì?",
+  "options": [
+   "Xây nhà mình",
+   "Đốt lửa sưởi",
+   "Đóng thuyền",
+   "Xây dựng đền thờ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa sẽ hài lòng và được tôn vinh. “Hãy lên núi đem gỗ về và hãy xây dựng đền thờ” (A-ghê 1:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa bảo Xô-rô-ba-bên và toàn dân hãy can đảm làm việc vì sao?",
+  "options": [
+   "Vì đã có đủ vàng",
+   "Vì Chúa ở với họ",
+   "Vì kẻ thù đã rút đi",
+   "Vì vua cho phép"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa khích lệ dân xây tiếp đền thờ. “Hãy làm việc, vì Ta ở với các con” (A-ghê 2:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa phán bạc và vàng là của ai?",
+  "options": [
+   "Của Chúa",
+   "Của vua Ba Tư",
+   "Của các thầy tế lễ",
+   "Của dân chúng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dân đừng lo đền thờ mới nghèo nàn. “Bạc là của Ta, vàng là của Ta.” (A-ghê 2:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa nói vì bỏ dở đền thờ, dân gieo nhiều mà gặt thế nào?",
+  "options": [
+   "Gặt ít",
+   "Không gieo được",
+   "Gặt gấp đôi",
+   "Gặt rất sớm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ăn không no, uống không đã khát. “Các ngươi gieo nhiều mà gặt ít” (A-ghê 1:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa nói kẻ làm thuê đựng tiền công mình trong gì?",
+  "options": [
+   "Hũ đất",
+   "Bao vải",
+   "Rương sắt",
+   "Túi lủng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Làm bao nhiêu cũng như mất hết. “kẻ làm thuê thì đựng tiền công mình trong túi lủng.” (A-ghê 1:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lời Chúa qua nhà tiên tri A-ghê được gửi cho tổng đốc xứ Giu-đê nào?",
+  "options": [
+   "E-xơ-ra",
+   "Nê-hê-mi",
+   "Xô-rô-ba-bên",
+   "Sết-ba-xa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông là con trai Sa-anh-thi-ên. “cho Xô-rô-ba-bên con trai Sa-anh-thi-ên, tổng đốc xứ Giu-đê” (A-ghê 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau lời nhà tiên tri A-ghê, Đức Giê-hô-va giục giã lòng ai đến làm việc tại đền thờ?",
+  "options": [
+   "Các tướng Ba Tư",
+   "Xô-rô-ba-bên, Giê-hô-sua và dân sót",
+   "Dân Sa-ma-ri",
+   "Vua Đa-ri-út"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ đều đến xây nhà của Đức Chúa Trời mình. “Rồi Đức Giê-hô-va giục giã lòng của tổng đốc Giu-đa là Xô-rô-ba-bên” (A-ghê 1:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa hứa vinh quang sau nầy của đền thờ sẽ thế nào?",
+  "options": [
+   "Lớn hơn vinh quang trước kia",
+   "Bằng như trước",
+   "Sẽ mất hết",
+   "Kém hơn trước"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa sẽ ban bình an cho nơi ấy. “Vinh quang sau nầy của đền thờ sẽ lớn hơn vinh quang trước kia.” (A-ghê 2:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Đức Giê-hô-va vạn quân bảo dân hãy để tâm suy xét điều gì?",
+  "options": [
+   "Kẻ thù mình",
+   "Kho lúa mình",
+   "Lời vua Ba Tư",
+   "Đường lối mình"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dân cần thấy vì sao làm lụng mà không được gì. “Hãy để tâm suy xét đường lối các ngươi.” (A-ghê 1:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Lời Chúa đến với nhà tiên tri A-ghê vào năm thứ mấy đời vua Đa-ri-út?",
+  "options": [
+   "Năm thứ sáu",
+   "Năm thứ bảy",
+   "Năm thứ hai",
+   "Năm thứ nhất"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là ngày mồng một tháng sáu năm ấy. “năm thứ hai, triều vua Đa-ri-út” (A-ghê 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cuối sách A-ghê, Chúa nói sẽ đặt Xô-rô-ba-bên như vật gì?",
+  "options": [
+   "Ngọn đèn",
+   "Ấn tín",
+   "Cây trụ",
+   "Mão miện"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa nói Ngài đã chọn Xô-rô-ba-bên. “Ta sẽ đặt con như ấn tín, vì Ta đã chọn con.” (A-ghê 2:23)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thầy tế lễ thượng phẩm thời nhà tiên tri A-ghê là ai?",
+  "options": [
+   "Ê-li-a-síp",
+   "A-xa-ria",
+   "Hinh-kia",
+   "Giê-hô-sua"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông là con trai Giô-xa-đác. “và cho Giê-hô-sua con trai Giô-xa-đác, thầy tế lễ thượng phẩm” (A-ghê 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

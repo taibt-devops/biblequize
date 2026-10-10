@@ -1,0 +1,14 @@
+[
+ {"ref": "so 3:17", "d": "easy", "q": "Sách Sô-phô-ni nói Đức Chúa Trời ngự giữa dân Ngài sẽ làm gì vì họ?", "a": "Ca hát mừng rỡ", "wrong": ["Than khóc", "Bỏ đi", "Nổi giận"], "why": "Chúa vui mừng hoan hỉ vì dân Ngài.", "quote": "Và vì ngươi, Ngài sẽ ca hát mừng rỡ."},
+ {"ref": "so 3:14", "d": "easy", "q": "Sách Sô-phô-ni kêu gọi con gái Si-ôn hãy làm gì?", "a": "Hát to lên", "wrong": ["Im lặng", "Than khóc", "Bỏ trốn"], "why": "Chúa đã cất bỏ sự phán xét khỏi dân Ngài.", "quote": "Hỡi con gái Si-ôn, hãy hát to lên!"},
+ {"ref": "so 2:3", "d": "easy", "q": "Sách Sô-phô-ni kêu gọi những người nhu mì trên đất hãy tìm kiếm ai?", "a": "Đức Giê-hô-va", "wrong": ["Vua Giu-đa", "Các thầy bói", "Vua A-si-ri"], "why": "Có lẽ họ sẽ được che chở trong ngày thịnh nộ.", "quote": "Hãy tìm kiếm Đức Giê-hô-va"},
+
+ {"ref": "so 1:1", "d": "medium", "q": "Nhà tiên tri Sô-phô-ni nói tiên tri vào thời vua Giu-đa nào?", "a": "Giô-si-a", "wrong": ["Ê-xê-chia", "Ma-na-se", "Ô-xia"], "why": "Giô-si-a là con trai A-môn.", "quote": "Vào thời của Giô-si-a, con trai A-môn, vua Giu-đa"},
+ {"ref": "so 1:14", "d": "medium", "q": "Sách Sô-phô-ni nói ngày trọng đại của Đức Giê-hô-va thế nào?", "a": "Đang đến gần, rất nhanh", "wrong": ["Còn rất xa", "Đã qua rồi", "Sẽ không đến"], "why": "Ngày ấy dũng sĩ cũng phải kêu khóc.", "quote": "Ngày trọng đại của Đức Giê-hô-va đang đến gần, Đến gần rồi, nó đến rất nhanh."},
+ {"ref": "so 1:12", "d": "medium", "q": "Qua nhà tiên tri Sô-phô-ni, Chúa nói sẽ dùng gì lục soát Giê-ru-sa-lem?", "a": "Đèn đuốc", "wrong": ["Gươm sắc", "Lưới", "Chó săn"], "why": "Chúa sẽ trừng phạt những kẻ tự mãn.", "quote": "Lúc ấy, Ta sẽ dùng đèn đuốc lục soát Giê-ru-sa-lem"},
+ {"ref": "so 2:13", "d": "medium", "q": "Sách Sô-phô-ni nói thành Ni-ni-ve sẽ trở nên thế nào?", "a": "Hoang vu, khô như sa mạc", "wrong": ["Lớn hơn trước", "Thủ đô của Giu-đa", "Đông dân hơn"], "why": "Chúa sẽ hủy diệt A-si-ri.", "quote": "Và làm cho Ni-ni-ve trở nên một nơi hoang vu, Một chỗ khô khan như sa mạc."},
+ {"ref": "so 3:9", "d": "medium", "q": "Qua nhà tiên tri Sô-phô-ni, Chúa hứa thanh tẩy môi miệng các dân để làm gì?", "a": "Kêu cầu danh Đức Giê-hô-va", "wrong": ["Nói chung một thứ tiếng", "Hát bài ca mới", "Thề trung thành với vua"], "why": "Các dân sẽ kề vai sát cánh phụng sự Ngài.", "quote": "Để tất cả đều kêu cầu danh Đức Giê-hô-va"},
+
+ {"ref": "so 1:1", "d": "hard", "q": "Theo câu mở đầu sách, nhà tiên tri Sô-phô-ni là chít của ai?", "a": "Ê-xê-chia", "wrong": ["Giô-si-a", "A-môn", "Ô-xia"], "why": "Cha ông là Cút-si, ông nội là Ghê-đa-lia.", "quote": "chít của Ê-xê-chia"},
+ {"ref": "so 3:12", "d": "hard", "q": "Qua nhà tiên tri Sô-phô-ni, Chúa nói sẽ để lại giữa Si-ôn một dân thế nào?", "a": "Nghèo nàn và thấp hèn", "wrong": ["Giàu có và mạnh mẽ", "Đông đúc", "Khôn ngoan"], "why": "Họ sẽ ẩn náu trong danh Đức Giê-hô-va.", "quote": "Một dân nghèo nàn và thấp hèn"}
+]

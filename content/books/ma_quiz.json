@@ -1,0 +1,393 @@
+[
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa bảo dân đem gì vào kho để có lương thực trong nhà Ngài?",
+  "options": [
+   "Tất cả phần mười",
+   "Con đầu lòng",
+   "Bánh không men",
+   "Tất cả vàng bạc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa bảo dân hãy lấy điều nầy mà thử Ngài. “Hãy đem tất cả phần mười vào kho” (Ma-la-chi 3:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Đức Giê-hô-va phán Ngài là Đấng thế nào?",
+  "options": [
+   "Ở rất xa",
+   "Không hề thay đổi",
+   "Chỉ ở đền thờ",
+   "Hay đổi ý"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nhờ vậy con cháu Gia-cốp chẳng bị diệt vong. “Vì Ta là Đức Giê-hô-va không hề thay đổi” (Ma-la-chi 3:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa hứa sẽ sai nhà tiên tri nào đến trước ngày lớn của Ngài?",
+  "options": [
+   "Giê-rê-mi",
+   "Ê-sai",
+   "Ê-li",
+   "Môi-se"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus nói Giăng Báp-tít là Ê-li phải đến. “Nầy, Ta sẽ sai nhà tiên tri Ê-li đến với các con” (Ma-la-chi 4:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa hứa sai sứ giả của Ngài đến để làm gì?",
+  "options": [
+   "Đánh quân thù",
+   "Xây lại đền thờ",
+   "Thu phần mười",
+   "Dọn đường trước mặt Chúa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Các sách Phúc Âm thấy lời nầy ứng nghiệm nơi Giăng Báp-tít. “Nầy, Ta sai sứ giả của Ta đến để dọn đường trước mặt Ta” (Ma-la-chi 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Mở đầu sách Ma-la-chi, Đức Giê-hô-va phán điều gì với dân Ngài?",
+  "options": [
+   "Ta không biết các con",
+   "Ta giận các con",
+   "Ta yêu các con",
+   "Ta bỏ các con"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Dân lại hỏi Chúa yêu họ ở đâu. “Ta yêu các con” (Ma-la-chi 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa nói dân đã ăn trộm Ngài trong điều gì?",
+  "options": [
+   "Ngày sa-bát",
+   "Vàng trong đền thờ",
+   "Đất của người Lê-vi",
+   "Phần mười và tế lễ phải dâng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dân hỏi lại: chúng con có ăn trộm Chúa đâu? “Các con đã ăn trộm một phần mười và tế lễ phải dâng.” (Ma-la-chi 3:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa hứa nếu dân đem phần mười vào kho, Ngài sẽ mở gì trên trời?",
+  "options": [
+   "Kho báu",
+   "Các cửa sổ",
+   "Các cổng thành",
+   "Sách sự sống"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa sẽ đổ phước xuống đến nỗi không chỗ chứa. “xem Ta có mở các cửa sổ trên trời cho các con” (Ma-la-chi 3:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa trách dân dâng những con vật thế nào làm sinh tế?",
+  "options": [
+   "Đui, què hoặc bệnh tật",
+   "Còn quá non",
+   "Bò đực không tì vết",
+   "Béo tốt nhất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đem dâng cho quan tổng đốc thì ông cũng chẳng nhận. “Khi các ngươi dâng một con vật đui mù làm sinh tế” (Ma-la-chi 1:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa trách các thầy tế lễ điều gì?",
+  "options": [
+   "Không biết đọc luật",
+   "Lấy vợ ngoại bang",
+   "Bỏ đền thờ đi xa",
+   "Khinh dể danh Chúa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Con tôn kính cha, nhưng họ không tôn kính Chúa. “Hỡi các thầy tế lễ khinh dể danh Ta!” (Ma-la-chi 1:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ma-la-chi nói một sách ghi nhớ được chép trước mặt Chúa cho những ai?",
+  "options": [
+   "Người dâng nhiều nhất",
+   "Các vua Giu-đa",
+   "Người kính sợ Đức Giê-hô-va",
+   "Các thầy tế lễ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa lắng nghe khi họ nói chuyện với nhau. “Một sách ghi nhớ được chép trước mặt Ngài cho những người kính sợ Đức Giê-hô-va” (Ma-la-chi 3:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ma-la-chi nói cho người kính sợ danh Chúa, mặt trời gì sẽ mọc lên?",
+  "options": [
+   "Mặt trời công chính",
+   "Mặt trời ân điển",
+   "Mặt trời bình an",
+   "Mặt trời vinh hiển"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Trong cánh nó có sự chữa lành. “thì mặt trời công chính sẽ mọc lên cho các con, trong cánh nó có sự chữa lành.” (Ma-la-chi 4:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ma-la-chi nói nhà tiên tri Ê-li sẽ làm cho lòng cha ông thế nào?",
+  "options": [
+   "Trở nên cứng cỏi",
+   "Trở lại cùng con cháu",
+   "Rời xa Chúa",
+   "Quên con cháu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lòng con cháu cũng trở lại cùng cha ông. “Người sẽ làm cho lòng cha ông trở lại cùng con cháu” (Ma-la-chi 4:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 2,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Đức Giê-hô-va phán Ngài ghét việc gì?",
+  "options": [
+   "Dâng phần mười",
+   "Kiêng ăn",
+   "Ca hát",
+   "Ly dị"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa dặn dân đừng phản bội người phối ngẫu. “Ta ghét việc ly dị” (Ma-la-chi 2:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi dân hỏi Chúa yêu họ ở đâu, Chúa qua Ma-la-chi nhắc đến hai anh em nào?",
+  "options": [
+   "Ca-in và A-bên",
+   "Giô-sép và Bên-gia-min",
+   "Ê-sau và Gia-cốp",
+   "Ích-ma-ên và Y-sác"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa nhắc việc Ngài đã chọn Gia-cốp. “Chẳng phải Ê-sau là anh Gia-cốp sao?” (Ma-la-chi 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Ma-la-chi nói người kính sợ danh Chúa sẽ đi ra nhảy nhót như gì?",
+  "options": [
+   "Bò tơ được thả khỏi chuồng",
+   "Chiên con trên đồi",
+   "Ngựa trên đồng",
+   "Nai trên núi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là niềm vui của người được chữa lành. “Các con sẽ đi ra và nhảy nhót như bò tơ được thả ra khỏi chuồng.” (Ma-la-chi 4:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa nói danh Ngài vĩ đại giữa các nước từ đâu đến đâu?",
+  "options": [
+   "Từ biển nầy đến biển kia",
+   "Từ nơi mặt trời mọc đến nơi lặn",
+   "Từ Đan đến Bê-e Sê-ba",
+   "Từ Ai Cập đến A-si-ri"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Khắp nơi người ta sẽ dâng tế lễ tinh sạch cho danh Ngài. “Vì từ nơi mặt trời mọc cho đến nơi mặt trời lặn, danh Ta là vĩ đại giữa các nước.” (Ma-la-chi 1:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Ma-la-chi nói ngày ấy đến sẽ cháy như gì, còn kẻ làm ác như rơm rạ?",
+  "options": [
+   "Mặt trời giữa trưa",
+   "Đám cháy rừng",
+   "Lò lửa",
+   "Núi lửa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Kẻ kiêu ngạo sẽ không còn rễ hay cành. “Kìa, ngày ấy đang đến, sẽ cháy như lò lửa.” (Ma-la-chi 4:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

@@ -1,0 +1,232 @@
+[
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia chép lời Chúa phán về dân nào?",
+  "options": [
+   "Ê-đôm",
+   "Ni-ni-ve",
+   "Ai Cập",
+   "Mô-áp"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ê-đôm là dòng dõi Ê-sau, anh của Gia-cốp. “Chúa Giê-hô-va phán về Ê-đôm” (Áp-đia 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói điều gì đã lừa dối dân Ê-đôm?",
+  "options": [
+   "Vua A-si-ri",
+   "Sự kiêu ngạo của lòng họ",
+   "Các thần tượng",
+   "Các thầy bói"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ê-đôm tưởng không ai xô mình xuống được. “Sự kiêu ngạo của lòng ngươi đã lừa dối ngươi.” (Áp-đia 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Câu cuối sách Áp-đia nói vương quốc sẽ thuộc về ai?",
+  "options": [
+   "Dân Ê-đôm",
+   "Vua Đa-vít",
+   "Vua Ba-by-lôn",
+   "Đức Giê-hô-va"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sách kết thúc bằng sự trị vì của Chúa. “Còn vương quốc thì sẽ thuộc về Đức Giê-hô-va.” (Áp-đia 1:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói dù Ê-đôm bay cao như chim ưng và lót ổ ở đâu, Chúa vẫn xô xuống?",
+  "options": [
+   "Trên mây trời",
+   "Trong đền thờ",
+   "Giữa các ngôi sao",
+   "Trên núi Si-ôn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Không nơi nào cao đủ để tránh khỏi Chúa. “Dù ngươi lót ổ giữa các ngôi sao” (Áp-đia 1:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói Ê-đôm bị hổ thẹn vì tàn bạo với anh em mình là ai?",
+  "options": [
+   "Lót",
+   "Ích-ma-ên",
+   "Ê-sau",
+   "Gia-cốp"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ê-đôm là dòng dõi Ê-sau, anh em của Gia-cốp. “Vì sự tàn bạo ngươi đối với anh em ngươi là Gia-cốp” (Áp-đia 1:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói dân Ê-đôm sống ở đâu nên tự hào không ai xô xuống được?",
+  "options": [
+   "Giữa sa mạc",
+   "Bên bờ biển",
+   "Giữa những vầng đá trên cao",
+   "Trong thung lũng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ê-đôm cậy địa thế hiểm trở của mình. “Ngươi là kẻ ở giữa những vầng đá, Sống ở trên cao” (Áp-đia 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói trong ngày của Đức Giê-hô-va, việc làm của Ê-đôm sẽ thế nào?",
+  "options": [
+   "Đổ lại trên đầu họ",
+   "Được tha hết",
+   "Bị quên đi",
+   "Được ban thưởng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người ta sẽ làm cho Ê-đôm như điều Ê-đôm đã làm. “Những việc làm của ngươi sẽ đổ lại trên đầu ngươi.” (Áp-đia 1:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia trách Ê-đôm đã làm gì trong ngày Giu-đa gặp tai họa?",
+  "options": [
+   "Than khóc cùng Giu-đa",
+   "Hả hê nhìn anh em mình",
+   "Đưa lương thực đến",
+   "Gửi quân cứu giúp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ê-đôm vui mừng khi Giu-đa bị hủy diệt. “Lẽ ra, ngươi chẳng nên hả hê nhìn anh em ngươi Trong ngày tai họa của nó” (Áp-đia 1:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói những người được giải cứu sẽ lên núi Si-ôn để phán xét núi nào?",
+  "options": [
+   "Núi Hẹt-môn",
+   "Núi Si-na-i",
+   "Núi Ê-sau",
+   "Núi Cạt-mên"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Núi Ê-sau chỉ về xứ Ê-đôm. “Những người được giải cứu sẽ lên núi Si-ôn để phán xét núi Ê-sau” (Áp-đia 1:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói những người trốn thoát sẽ còn lại trên núi nào?",
+  "options": [
+   "Núi Si-ôn",
+   "Núi Ô-liu",
+   "Núi Ê-sau",
+   "Núi Tha-bô"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nhà Gia-cốp sẽ được lại sản nghiệp mình. “Nhưng trên núi Si-ôn sẽ còn lại những người trốn thoát” (Áp-đia 1:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

@@ -1,0 +1,232 @@
+[
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong thư gửi Phi-lê-môn, Phao-lô nài xin giúp ai?",
+  "options": [
+   "Ti-mô-thê",
+   "Ô-nê-sim",
+   "Lu-ca",
+   "A-chíp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ô-nê-sim là nô lệ của Phi-lê-môn đã bỏ đi. “nài xin anh giúp Ô-nê-sim” (Phi-lê-môn 1:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô xin Phi-lê-môn nhận lại Ô-nê-sim không như nô lệ nữa, mà như ai?",
+  "options": [
+   "Một tù nhân",
+   "Một vị khách lạ",
+   "Một anh em quý mến",
+   "Một người làm thuê"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ô-nê-sim đã tin Chúa khi ở với Phao-lô. “không phải như một nô lệ nữa, nhưng hơn hẳn một nô lệ, là một anh em quý mến.” (Phi-lê-môn 1:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi viết thư cho Phi-lê-môn, Phao-lô tự gọi mình là gì?",
+  "options": [
+   "Sứ đồ của dân ngoại",
+   "Người chăn chiên",
+   "Thầy của Phi-lê-môn",
+   "Người tù của Đấng Christ Jêsus"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phao-lô viết thư nầy khi đang bị giam. “Phao-lô, người tù của Đấng Christ Jêsus” (Phi-lê-môn 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói nếu Ô-nê-sim làm thiệt hại hay mắc nợ Phi-lê-môn thì sao?",
+  "options": [
+   "Cứ tính cho Phao-lô",
+   "Đưa ra tòa",
+   "Bắt Ô-nê-sim trả",
+   "Bỏ qua hết"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Phao-lô tự tay hứa sẽ hoàn trả. “Nếu người nầy có làm thiệt hại anh, hoặc mắc nợ điều gì thì anh cứ tính cho tôi.” (Phi-lê-môn 1:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói trước kia Ô-nê-sim không ích lợi gì cho Phi-lê-môn, còn bây giờ thì sao?",
+  "options": [
+   "Vẫn vô ích",
+   "Chỉ ích lợi cho Phao-lô",
+   "Đã bỏ đi xa",
+   "Ích lợi cho cả hai người"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tên Ô-nê-sim có nghĩa là có ích. “nhưng bây giờ thì ích lợi cho cả anh và tôi.” (Phi-lê-môn 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư gửi Phi-lê-môn, Phao-lô nhờ chuẩn bị điều gì cho ông?",
+  "options": [
+   "Một con lừa",
+   "Một chỗ trọ",
+   "Một chiếc thuyền",
+   "Một bữa tiệc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phao-lô hi vọng được trả tự do và đến thăm. “hãy chuẩn bị cho tôi một chỗ trọ” (Phi-lê-môn 1:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói nhờ Phi-lê-môn mà lòng của ai được tươi mới?",
+  "options": [
+   "Các quan La Mã",
+   "Các nô lệ",
+   "Các thánh đồ",
+   "Các thầy tế lễ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tình yêu của Phi-lê-môn an ủi Phao-lô. “vì nhờ anh mà lòng của các thánh đồ được tươi mới.” (Phi-lê-môn 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông đã sinh ra Ô-nê-sim trong đức tin vào lúc nào?",
+  "options": [
+   "Trong vòng xiềng xích",
+   "Trên một chuyến tàu",
+   "Tại nhà Phi-lê-môn",
+   "Khi ở Giê-ru-sa-lem"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ô-nê-sim tin Chúa khi gặp Phao-lô trong tù. “người con mà tôi đã sinh ra trong vòng xiềng xích.” (Phi-lê-môn 1:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ngoài Phi-lê-môn, Áp-bi và Hội Thánh tại nhà, thư của Phao-lô còn gửi cho ai?",
+  "options": [
+   "Ô-nê-sim",
+   "Ê-pháp-ra",
+   "Ty-chi-cơ",
+   "A-chíp"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phao-lô gọi ông là bạn cùng chiến đấu. “A-chíp, người bạn cùng chiến đấu” (Phi-lê-môn 1:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cuối thư gửi Phi-lê-môn, những bạn đồng lao nào cùng Phao-lô gửi lời chào?",
+  "options": [
+   "Phi-e-rơ, Gia-cơ và Giăng",
+   "Mác, A-ri-tạc, Đê-ma và Lu-ca",
+   "Ba-na-ba, Si-la và Tít",
+   "A-bô-lô, Sốt-then và Crít-pu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ê-pháp-ra cũng gửi lời chào. “Mác, A-ri-tạc, Đê-ma và Lu-ca, những bạn đồng lao của tôi cũng vậy.” (Phi-lê-môn 1:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]

@@ -1,0 +1,393 @@
+[
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo lệnh của Đức Giê-hô-va, nhà tiên tri Ô-sê cưới ai làm vợ?",
+  "options": [
+   "Đê-bô-ra",
+   "Ra-háp",
+   "Gô-me",
+   "Ru-tơ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cuộc hôn nhân ấy là hình ảnh về dân Y-sơ-ra-ên bất trung với Chúa. “Vậy, Ô-sê cưới Gô-me, con gái của Đíp-la-im.” (Ô-sê 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 6,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ô-sê, Chúa phán Ngài muốn lòng thương xót chứ không phải gì?",
+  "options": [
+   "Ca hát",
+   "Sinh tế",
+   "Đền thờ",
+   "Kiêng ăn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa thích sự nhận biết Ngài hơn tế lễ thiêu. “Vì Ta muốn lòng thương xót chứ không phải sinh tế” (Ô-sê 6:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 8,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Ô-sê nói những kẻ đã gieo gió thì phải gặt gì?",
+  "options": [
+   "Lúa",
+   "Mưa",
+   "Sương",
+   "Bão"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dân bỏ Chúa sẽ gặt hậu quả nặng nề hơn. “Vì chúng đã gieo gió thì phải gặt bão.” (Ô-sê 8:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 11,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ô-sê, Chúa phán Ngài đã gọi con trai Ngài ra khỏi xứ nào?",
+  "options": [
+   "Ai Cập",
+   "Mô-áp",
+   "Ba-by-lôn",
+   "A-si-ri"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa yêu Y-sơ-ra-ên từ khi dân còn thơ ấu. “Ta gọi con trai Ta ra khỏi Ai Cập.” (Ô-sê 11:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ô-sê, Chúa phán dân Ngài bị tiêu diệt vì thiếu điều gì?",
+  "options": [
+   "Vàng bạc",
+   "Đất đai",
+   "Quân lính",
+   "Hiểu biết"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dân đã quên luật pháp của Đức Chúa Trời. “Dân Ta bị tiêu diệt vì thiếu hiểu biết” (Ô-sê 4:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đứa con trai đầu của nhà tiên tri Ô-sê và Gô-me được Chúa đặt tên là gì?",
+  "options": [
+   "Gít-rê-ên",
+   "Ma-he-sa-la",
+   "Sê-a-gia-súp",
+   "Lô Am-mi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Tên ấy báo trước sự trừng phạt nhà Giê-hu. “Hãy đặt tên nó là Gít-rê-ên” (Ô-sê 1:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Con gái của nhà tiên tri Ô-sê được đặt tên Lô Ru-ha-ma để nói điều gì?",
+  "options": [
+   "Y-sơ-ra-ên sẽ có vua mới",
+   "Dân sẽ trở về Ai Cập",
+   "Chúa không còn thương xót Y-sơ-ra-ên",
+   "Chúa sẽ ban phước thêm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tên các con của Ô-sê là lời cảnh cáo cho dân. “vì Ta không còn thương xót nhà Y-sơ-ra-ên” (Ô-sê 1:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Con trai út của nhà tiên tri Ô-sê được đặt tên Lô Am-mi để nói điều gì?",
+  "options": [
+   "Dân được thương xót",
+   "Không còn là dân của Ta",
+   "Đức Chúa Trời đã nghe",
+   "Ta ở cùng các ngươi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dân đã lìa bỏ giao ước với Chúa. “vì các ngươi không còn là dân của Ta nữa” (Ô-sê 1:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 6,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ô-sê, Chúa nói tình yêu Ép-ra-im và Giu-đa dành cho Ngài giống như gì?",
+  "options": [
+   "Dòng sông lớn",
+   "Cây cổ thụ",
+   "Tảng đá vững",
+   "Mây buổi sáng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tình yêu ấy chóng tan như sương mai. “Tình yêu các ngươi dành cho Ta giống như mây buổi sáng, Như sương mai chóng tan.” (Ô-sê 6:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 7,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ô-sê ví Ép-ra-im pha trộn với các dân khác như chiếc bánh thế nào?",
+  "options": [
+   "Bánh không trở",
+   "Bánh cháy đen",
+   "Bánh không men",
+   "Bánh bị mốc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bánh chỉ chín một mặt, mặt kia còn sống. “Ép-ra-im khác nào chiếc bánh không trở.” (Ô-sê 7:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 7,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ô-sê ví Ép-ra-im chạy đến Ai Cập rồi A-si-ri như loài chim khờ khạo nào?",
+  "options": [
+   "Con quạ",
+   "Bồ câu",
+   "Chim sẻ",
+   "Chim ưng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dân tìm cậy các nước thay vì cậy Chúa. “Ép-ra-im giống như chim bồ câu Khờ khạo, thiếu khôn ngoan” (Ô-sê 7:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 11,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ô-sê, Chúa nói Ngài đã kéo dân đến với mình bằng gì?",
+  "options": [
+   "Tiếng kèn",
+   "Gươm và giáo",
+   "Dây nhân từ, xích yêu thương",
+   "Roi sắt"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa chăm sóc dân như người cúi xuống cho ăn. “Ta đã dùng dây nhân từ, Dùng xích yêu thương mà kéo chúng đến.” (Ô-sê 11:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 6,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ô-sê kêu gọi trở về cùng Đức Giê-hô-va, vì Ngài đã xé nhưng sẽ làm gì?",
+  "options": [
+   "Phạt thêm",
+   "Quên lãng",
+   "Chữa lành",
+   "Bỏ đi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngài đánh nhưng sẽ băng bó vết thương. “Vì Ngài đã xé chúng ta, nhưng Ngài sẽ chữa lành” (Ô-sê 6:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Gô-me, vợ của nhà tiên tri Ô-sê, là con gái của ai?",
+  "options": [
+   "Bê-ê-ri",
+   "Đíp-la-im",
+   "A-mốt",
+   "Giô-ách"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bà sinh cho Ô-sê con trai đầu là Gít-rê-ên. “Vậy, Ô-sê cưới Gô-me, con gái của Đíp-la-im.” (Ô-sê 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ô-sê, Chúa hứa biến thung lũng nào thành cánh cửa hi vọng?",
+  "options": [
+   "Thung lũng Gít-rê-ên",
+   "Thung lũng Hin-nôm",
+   "Thung lũng Ê-la",
+   "Thung lũng A-cô"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nơi từng nhắc tội lỗi trở thành nơi hi vọng. “Biến thung lũng A-cô thành cánh cửa hi vọng.” (Ô-sê 2:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 14,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Ô-sê kêu gọi dân dâng tế lễ ngợi ca bằng đôi môi thay vì dâng gì?",
+  "options": [
+   "Bò tơ đực",
+   "Lúa mạch",
+   "Chiên con",
+   "Bồ câu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dân trở lại với Chúa bằng lời xưng tội. “Để chúng con dâng tế lễ ngợi ca bằng đôi môi Thay vì bò tơ đực.” (Ô-sê 14:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ô-sê, nhà tiên tri thời các vua Ô-xia đến Ê-xê-chia, là con trai của ai?",
+  "options": [
+   "Bê-ê-ri",
+   "Phê-thu-ên",
+   "Đíp-la-im",
+   "A-mốt"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông nói tiên tri cùng thời vua Giê-rô-bô-am của Y-sơ-ra-ên. “Đây là lời Đức Giê-hô-va phán với Ô-sê, con trai Bê-ê-ri” (Ô-sê 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

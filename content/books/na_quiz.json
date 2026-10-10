@@ -1,0 +1,232 @@
+[
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum là lời tiên tri về thành nào?",
+  "options": [
+   "Đa-mách",
+   "Ty-rơ",
+   "Ni-ni-ve",
+   "Ba-by-lôn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ni-ni-ve là kinh đô của đế quốc A-si-ri. “Lời tiên tri về Ni-ni-ve.” (Na-hum 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum nói Đức Giê-hô-va tốt lành, là gì trong ngày hoạn nạn?",
+  "options": [
+   "Ngọn đèn",
+   "Dòng suối",
+   "Bóng mát",
+   "Thành lũy"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài là nơi ẩn náu vững chắc cho dân Ngài. “Đức Giê-hô-va thật tốt lành, Là thành lũy trong ngày hoạn nạn” (Na-hum 1:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum nói Đức Giê-hô-va chậm giận nhưng đối xử thế nào với kẻ có tội?",
+  "options": [
+   "Quên ngay",
+   "Chẳng coi là vô tội",
+   "Luôn bỏ qua",
+   "Không để ý"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngài có quyền năng rất lớn. “Nhưng Ngài chẳng coi kẻ có tội là vô tội.” (Na-hum 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum nói Đức Giê-hô-va biết những ai?",
+  "options": [
+   "Những ai ẩn náu nơi Ngài",
+   "Những người giàu có",
+   "Những vua chúa",
+   "Những người nổi tiếng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài là thành lũy trong ngày hoạn nạn. “Ngài biết những ai ẩn náu nơi Ngài.” (Na-hum 1:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum nói đám mây là gì dưới chân Đức Giê-hô-va?",
+  "options": [
+   "Bụi",
+   "Cái ngai",
+   "Tấm thảm",
+   "Bậc thang"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài bước đi trong gió lốc và bão tố. “Đám mây là bụi dưới chân Ngài.” (Na-hum 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum nói trên các núi đồi có bàn chân của ai đến với Giu-đa?",
+  "options": [
+   "Các thầy tế lễ",
+   "Đoàn lữ hành",
+   "Quân A-si-ri",
+   "Sứ giả báo tin lành"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sứ giả công bố bình an vì kẻ thù đã bị tận diệt. “Có bàn chân của sứ giả báo tin lành” (Na-hum 1:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum gọi Ni-ni-ve là thành gì?",
+  "options": [
+   "Thành vàng",
+   "Thành vấy máu",
+   "Thành bình an",
+   "Thành thánh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Thành đầy dối trá, cường bạo và cướp bóc. “Khốn cho thành vấy máu!” (Na-hum 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 2,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum nói từ lâu Ni-ni-ve giống như gì trước khi dân trong thành chạy trốn?",
+  "options": [
+   "Vườn đầy hoa",
+   "Tháp cao ngất",
+   "Hồ đầy nước",
+   "Kho đầy lúa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Giờ đây không ai quay lại dù có tiếng gọi. “Từ lâu, Ni-ni-ve như hồ đầy nước.” (Na-hum 2:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Na-hum là người ở đâu?",
+  "options": [
+   "Mô-rê-sết",
+   "Thê-cô-a",
+   "A-na-tốt",
+   "Ên-cốt"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sách của ông là khải tượng về Ni-ni-ve. “Sách khải tượng của Na-hum, người Ên-cốt.” (Na-hum 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 3,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Câu cuối sách Na-hum nói những ai nghe tin Ni-ni-ve sụp đổ đều làm gì?",
+  "options": [
+   "Xé áo",
+   "Im lặng",
+   "Vỗ tay",
+   "Than khóc"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ai cũng từng chịu sự thống trị tàn ác của nó. “Tất cả những ai nghe nói về ngươi đều vỗ tay” (Na-hum 3:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

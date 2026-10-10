@@ -1,0 +1,393 @@
+[
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trước khi được Chúa sai đi nói tiên tri, A-mốt làm nghề gì?",
+  "options": [
+   "Chăn bầy và chăm sóc cây vả",
+   "Làm thầy tế lễ",
+   "Đánh cá",
+   "Làm thợ mộc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "A-mốt nói mình không phải con của nhà tiên tri. “nhưng tôi chỉ là một người chăn bầy và người chăm sóc những cây vả.” (A-mốt 7:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 5,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt kêu gọi hãy làm cho công lý chảy xuống như gì?",
+  "options": [
+   "Như mật",
+   "Như dầu",
+   "Như sữa",
+   "Như nước"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa muốn công lý hơn là lễ hội. “Nhưng hãy làm cho công lý chảy xuống như nước” (A-mốt 5:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 5,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-mốt, Chúa phán nhà Y-sơ-ra-ên hãy tìm kiếm Ngài thì sẽ thế nào?",
+  "options": [
+   "Sẽ thắng trận",
+   "Sẽ sống",
+   "Sẽ có vua mới",
+   "Sẽ giàu có"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa kêu gọi dân trở về với Ngài. “Hãy tìm kiếm Ta thì các ngươi sẽ sống!” (A-mốt 5:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 8,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-mốt, Chúa báo trước một cơn đói khát về điều gì?",
+  "options": [
+   "Bánh và nước",
+   "Đất đai",
+   "Được nghe lời Đức Giê-hô-va",
+   "Vàng và bạc"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó không phải đói bánh hay khát nước. “Nhưng đói khát được nghe lời của Đức Giê-hô-va.” (A-mốt 8:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt hỏi: nếu hai người không đồng ý với nhau thì có làm được gì không?",
+  "options": [
+   "Ăn chung bàn",
+   "Đi chung đường",
+   "Ở chung nhà",
+   "Làm chung ruộng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "A-mốt dùng câu hỏi quen thuộc để nói về Chúa và dân Ngài. “Nếu hai người không đồng ý với nhau Thì có đi chung đường được sao?” (A-mốt 3:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt là một chủ trại nuôi chiên ở đâu?",
+  "options": [
+   "Bết-lê-hem",
+   "Hếp-rôn",
+   "Si-lô",
+   "Thê-cô-a"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông nói tiên tri về dân Y-sơ-ra-ên thời vua Giê-rô-bô-am. “một trong những chủ trại nuôi chiên ở Thê-cô-a” (A-mốt 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 3,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt nói Chúa không làm việc gì mà không tỏ sự kín nhiệm cho ai?",
+  "options": [
+   "Các thầy tế lễ",
+   "Các vua",
+   "Các nhà tiên tri",
+   "Các trưởng lão"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Các nhà tiên tri là đầy tớ của Chúa. “Cho các đầy tớ Ngài là các nhà tiên tri.” (A-mốt 3:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt gọi những kẻ áp bức người nghèo trên núi Sa-ma-ri là gì?",
+  "options": [
+   "Bò cái của Ba-san",
+   "Chó sói ban đêm",
+   "Sư tử của Giu-đa",
+   "Chiên đi lạc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Họ sống xa hoa và hà hiếp người thiếu thốn. “Hỡi những bò cái của Ba-san, ở trên núi Sa-ma-ri” (A-mốt 4:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 5,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-mốt, Chúa nói Ngài chán ghét, khinh thường điều gì của dân?",
+  "options": [
+   "Những kỳ lễ của họ",
+   "Nhà cửa của họ",
+   "Ruộng nho của họ",
+   "Gia súc của họ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lễ hội không có công lý thì Chúa không ưa thích. “Ta chán ghét, khinh thường những kỳ lễ của các ngươi” (A-mốt 5:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 5,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt kêu gọi sự công chính chảy như gì?",
+  "options": [
+   "Như sương mai",
+   "Như mưa đầu mùa",
+   "Như sông lớn chảy cuồn cuộn",
+   "Như suối nhỏ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Công lý và công chính phải tràn khắp như nước. “Và sự công chính như sông lớn chảy cuồn cuộn.” (A-mốt 5:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng của A-mốt, Chúa cầm vật gì để làm chuẩn đo dân Y-sơ-ra-ên?",
+  "options": [
+   "Cái cân",
+   "Dây dọi",
+   "Cây gậy",
+   "Cây sào"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa đứng trên một bức tường thẳng đứng. “Nầy, Ta sẽ đặt dây dọi làm chuẩn đo dân Y-sơ-ra-ên Ta” (A-mốt 7:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 8,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng, Chúa Giê-hô-va cho nhà tiên tri A-mốt thấy giỏ gì?",
+  "options": [
+   "Giỏ lúa mạch",
+   "Giỏ bánh",
+   "Giỏ cá",
+   "Giỏ trái cây mùa hạ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Giỏ trái cây báo hiệu sự cuối cùng của Y-sơ-ra-ên. “Một giỏ trái cây mùa hạ.” (A-mốt 8:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt nói Đức Giê-hô-va đã bắt lấy ông từ đâu để sai đi nói tiên tri?",
+  "options": [
+   "Từ đền thờ",
+   "Từ cung vua",
+   "Từ trường tiên tri",
+   "Từ sau bầy chiên"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa sai ông nói tiên tri cho dân Y-sơ-ra-ên. “Đức Giê-hô-va đã bắt lấy tôi từ sau bầy chiên” (A-mốt 7:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt thấy những điều về Y-sơ-ra-ên bao lâu trước trận động đất?",
+  "options": [
+   "Một năm",
+   "Bảy năm",
+   "Hai năm",
+   "Mười năm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là thời vua Ô-xia và vua Giê-rô-bô-am. “hai năm trước trận động đất.” (A-mốt 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "A-mốt nói “Tôi không phải là nhà tiên tri” khi trả lời ai?",
+  "options": [
+   "Giê-rô-bô-am",
+   "A-ma-xia",
+   "A-cha",
+   "Ô-xia"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "A-ma-xia muốn đuổi A-mốt về xứ Giu-đa. “A-mốt trả lời với A-ma-xia rằng” (A-mốt 7:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 8,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thấy giỏ trái cây mùa hạ, A-mốt nghe Chúa phán điều gì đã đến trên Y-sơ-ra-ên?",
+  "options": [
+   "Sự cuối cùng",
+   "Năm hân hỉ",
+   "Mùa gặt lớn",
+   "Ngày phước hạnh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa sẽ không bỏ qua cho dân nữa. “Sự cuối cùng đã đến trên dân Y-sơ-ra-ên Ta” (A-mốt 8:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 9,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cuối sách A-mốt, Chúa hứa dân trở về từ lưu đày sẽ làm gì?",
+  "options": [
+   "Xây một tháp cao",
+   "Lập vua mới",
+   "Đi đánh A-si-ri",
+   "Lập lại các thành, trồng vườn nho"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sách kết thúc bằng lời hứa phục hồi. “Họ sẽ lập lại các thành bị tàn phá và sống ở đó. Họ sẽ trồng vườn nho” (A-mốt 9:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

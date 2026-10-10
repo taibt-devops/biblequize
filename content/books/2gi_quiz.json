@@ -1,0 +1,232 @@
+[
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai nhắc điều răn đã nhận từ ban đầu là gì?",
+  "options": [
+   "Hãy yêu thương lẫn nhau",
+   "Hãy dâng phần mười",
+   "Hãy kiêng ăn",
+   "Hãy giữ ngày sa-bát"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó không phải điều răn mới mà là điều răn từ ban đầu. “ấy là chúng ta hãy yêu thương lẫn nhau.” (2 Giăng 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai, người viết tự xưng là trưởng lão, được gửi cho ai?",
+  "options": [
+   "Gai-út",
+   "Ti-mô-thê",
+   "Bà được chọn và các con",
+   "Hội Thánh Rô-ma"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người viết quý mến họ trong chân lý. “Trưởng lão kính gửi bà, người được chọn, cùng các con của bà” (2 Giăng 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ hai, trưởng lão rất mừng khi thấy các con của bà làm gì?",
+  "options": [
+   "Học nghề thợ",
+   "Xây nhà mới",
+   "Đi buôn bán xa",
+   "Đi theo chân lý"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ sống đúng điều răn đã nhận từ Đức Chúa Cha. “Tôi rất mừng khi thấy một số các con của bà đi theo chân lý” (2 Giăng 1:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai nói tình yêu thương là gì?",
+  "options": [
+   "Tặng quà cho nhau",
+   "Bước theo các điều răn của Ngài",
+   "Một cảm xúc vui vẻ",
+   "Không bao giờ quở trách"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Yêu thương được bày tỏ bằng sự vâng lời. “Tình yêu thương đó là chúng ta bước theo các điều răn của Ngài.” (2 Giăng 1:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai nói kẻ lừa dối không thừa nhận điều gì về Đức Chúa Jêsus Christ?",
+  "options": [
+   "Ngài đã làm phép lạ",
+   "Ngài đã lên trời",
+   "Ngài là con cháu Đa-vít",
+   "Ngài đã đến trong thân xác"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nhiều kẻ lừa dối đã đến trong thế gian. “những kẻ không thừa nhận rằng Đức Chúa Jêsus Christ đã đến trong thân xác” (2 Giăng 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai gọi người không nhận Chúa Jêsus đến trong thân xác là gì?",
+  "options": [
+   "Người yếu đức tin",
+   "Kẻ lừa dối và kẻ chống Đấng Christ",
+   "Một tiên tri thật",
+   "Người ngoại bang"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tín hữu phải cẩn thận giữ mình. “Đó là kẻ lừa dối và kẻ chống Đấng Christ.” (2 Giăng 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai dặn gì về người đến mà không đem theo sự dạy dỗ của Đấng Christ?",
+  "options": [
+   "Chớ tiếp vào nhà, đừng chào hỏi",
+   "Mời ở lại lâu",
+   "Cho tiền đi đường",
+   "Nhờ giảng dạy"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chào hỏi là dự phần vào việc ác của người ấy. “thì chớ tiếp đón người ấy vào nhà và đừng chào hỏi.” (2 Giăng 1:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Cuối thư Giăng thứ hai, vì sao trưởng lão không viết thêm bằng giấy mực?",
+  "options": [
+   "Vì đang bệnh nặng",
+   "Vì hết giấy mực",
+   "Mong đến thăm và trò chuyện trực tiếp",
+   "Vì bị cấm viết"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông còn nhiều điều muốn nói. “Tôi mong đến thăm và đối diện trò chuyện với anh em” (2 Giăng 1:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai nói gặp mặt trò chuyện để niềm vui thế nào?",
+  "options": [
+   "Được nhân đôi",
+   "Được nhớ mãi",
+   "Được trọn vẹn",
+   "Được loan báo"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Trưởng lão mong sớm đến thăm họ. “để sự vui mừng của chúng ta được trọn vẹn.” (2 Giăng 1:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ hai, trưởng lão nói điều răn yêu thương lẫn nhau không phải là gì?",
+  "options": [
+   "Một điều răn mới",
+   "Một điều răn bí mật",
+   "Một điều răn khó",
+   "Một điều răn tạm thời"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là điều răn đã nhận từ ban đầu. “không phải tôi viết cho bà một điều răn mới” (2 Giăng 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]

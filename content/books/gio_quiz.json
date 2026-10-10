@@ -1,0 +1,301 @@
+[
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Giô-ên, Chúa bảo dân hãy xé gì thay vì xé áo?",
+  "options": [
+   "Xé sách",
+   "Xé màn",
+   "Xé lều",
+   "Xé lòng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa muốn dân ăn năn thật lòng chứ không chỉ bề ngoài. “Hãy xé lòng các con và đừng xé áo.” (Giô-ên 2:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Giô-ên, Chúa hứa sẽ đổ Thần Ngài trên ai?",
+  "options": [
+   "Chỉ các vua",
+   "Mọi xác thịt",
+   "Chỉ các thầy tế lễ",
+   "Chỉ người Lê-vi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phi-e-rơ nhắc lời nầy trong ngày lễ Ngũ Tuần. “Ta sẽ đổ Thần Ta trên mọi xác thịt.” (Giô-ên 2:28)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên nói ai kêu cầu danh Đức Giê-hô-va thì sẽ thế nào?",
+  "options": [
+   "Đều sẽ được cứu",
+   "Được sống lâu",
+   "Được làm vua",
+   "Được giàu có"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lời hứa nầy dành cho mọi người kêu cầu Chúa. “ai kêu cầu danh Đức Giê-hô-va đều sẽ được cứu” (Giô-ên 2:32)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên tả mùa màng của Giu-đa bị phá hại bởi đạo quân nào?",
+  "options": [
+   "Quân A-si-ri",
+   "Lũ lụt",
+   "Sâu bọ và cào cào",
+   "Lửa từ trời"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hết loài nầy đến loài khác ăn sạch mùa màng. “Cái gì sâu keo còn để lại thì cào cào ăn” (Giô-ên 1:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Giô-ên, Chúa hứa khi Ngài đổ Thần, những người già sẽ thế nào?",
+  "options": [
+   "Thấy thiên sứ",
+   "Nói tiếng lạ",
+   "Được trẻ lại",
+   "Được báo mộng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Con trai, con gái cũng sẽ nói tiên tri. “Những người già được báo mộng” (Giô-ên 2:28)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Giô-ên, Chúa hứa khi Ngài đổ Thần, các thanh niên sẽ thấy gì?",
+  "options": [
+   "Khải tượng",
+   "Ngôi sao lạ",
+   "Lửa từ trời",
+   "Thiên sứ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Thần Chúa được đổ trên mọi người, già lẫn trẻ. “Các thanh niên sẽ thấy khải tượng.” (Giô-ên 2:28)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Giô-ên, Chúa hứa sẽ đền bù cho dân điều gì?",
+  "options": [
+   "Đền thờ bị đốt",
+   "Vàng bạc bị cướp",
+   "Những năm mùa màng bị cắn phá",
+   "Thành bị phá đổ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cào cào và sâu bọ là đạo quân Chúa đã sai đến. “Ta sẽ đền bù cho các con Về những năm mùa màng bị cắn phá” (Giô-ên 2:25)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên kêu gọi dân trở về với Đức Chúa Trời vì Ngài thế nào?",
+  "options": [
+   "Xa cách loài người",
+   "Nhân từ, thương xót, chậm giận",
+   "Nghiêm khắc, khó tính",
+   "Chỉ thương người giàu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngài giàu tình thương và đổi ý không giáng tai họa. “Vì Ngài nhân từ, thương xót, chậm giận và giàu tình thương” (Giô-ên 2:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 31,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên nói trước ngày lớn của Đức Giê-hô-va, mặt trăng sẽ thế nào?",
+  "options": [
+   "Biến mất",
+   "Rơi xuống đất",
+   "Đỏ như máu",
+   "Sáng như mặt trời"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Mặt trời cũng sẽ trở nên tối tăm. “Mặt trăng đỏ như máu” (Giô-ên 2:31)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên kêu gọi các nước lấy lưỡi cày rèn thành gì?",
+  "options": [
+   "Gươm",
+   "Lưỡi liềm",
+   "Đinh",
+   "Cuốc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Các nước được gọi ra trận trước ngày phán xét. “Hãy lấy lưỡi cày rèn gươm” (Giô-ên 3:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Giô-ên là con trai của ai?",
+  "options": [
+   "A-mốt",
+   "Y-đô",
+   "Bê-ê-ri",
+   "Phê-thu-ên"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đó là câu mở đầu sách Giô-ên. “Lời Đức Giê-hô-va phán với Giô-ên, con trai của Phê-thu-ên:” (Giô-ên 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 3,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên nói đoàn người đông đảo tụ tại thung lũng nào khi ngày Đức Giê-hô-va gần kề?",
+  "options": [
+   "Thung lũng Hin-nôm",
+   "Thung lũng Chung Thẩm",
+   "Thung lũng Si-tim",
+   "Thung lũng A-cô"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đó là nơi các nước bị xét xử. “Tại thung lũng Chung Thẩm!” (Giô-ên 3:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 3,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên nói dòng suối chảy ra từ nhà Đức Giê-hô-va sẽ tưới thung lũng nào?",
+  "options": [
+   "Thung lũng A-cô",
+   "Thung lũng Chung Thẩm",
+   "Thung lũng Gít-rê-ên",
+   "Thung lũng Si-tim"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Trong ngày ấy núi đồi tuôn rượu ngọt và sữa. “Và nhuần tưới thung lũng Si-tim.” (Giô-ên 3:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

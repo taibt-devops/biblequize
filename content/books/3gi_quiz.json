@@ -1,0 +1,232 @@
+[
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ ba được trưởng lão gửi cho ai?",
+  "options": [
+   "Gai-út",
+   "Phi-lê-môn",
+   "Đi-ô-trép",
+   "Đê-mê-triu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Trưởng lão quý mến Gai-út trong chân lý. “Trưởng lão gửi đến Gai-út thân mến” (3 Giăng 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ ba, trưởng lão nói không gì vui hơn là nghe các con mình làm gì?",
+  "options": [
+   "Được nổi tiếng",
+   "Xây Hội Thánh lớn",
+   "Bước theo chân lý",
+   "Trở nên giàu có"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Niềm vui của trưởng lão là thấy họ sống đúng. “Không gì làm cho tôi vui mừng hơn là nghe các con tôi bước theo chân lý.” (3 Giăng 1:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ ba khuyên đừng bắt chước điều dữ mà hãy bắt chước điều gì?",
+  "options": [
+   "Người nổi tiếng",
+   "Người giàu có",
+   "Phong tục xưa",
+   "Điều lành"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ai làm điều lành thì thuộc về Đức Chúa Trời. “đừng bắt chước điều dữ, nhưng hãy bắt chước điều lành.” (3 Giăng 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ ba, trưởng lão cầu cho Gai-út thịnh vượng, khỏe mạnh, cũng như điều gì?",
+  "options": [
+   "Được làm trưởng lão",
+   "Thịnh vượng về phần hồn",
+   "Có nhiều ruộng đất",
+   "Có nhiều con cháu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Linh hồn Gai-út vốn đã thịnh vượng. “cũng như được thịnh vượng về phần hồn.” (3 Giăng 1:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ ba, ai là người thích đứng đầu và không chấp nhận trưởng lão?",
+  "options": [
+   "Ty-chi-cơ",
+   "Đê-mê-triu",
+   "Gai-út",
+   "Đi-ô-trép"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông còn không tiếp đón anh em đi truyền giáo. “nhưng Đi-ô-trép, người thích đứng đầu, không chấp nhận chúng tôi.” (3 Giăng 1:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ ba, mọi người đều làm chứng tốt về ai?",
+  "options": [
+   "Đi-ô-trép",
+   "Đê-mê-triu",
+   "A-chíp",
+   "Gai-út"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chính chân lý cũng làm chứng về ông. “Mọi người đều làm chứng tốt về Đê-mê-triu” (3 Giăng 1:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ ba nói ai làm điều lành thì thuộc về ai?",
+  "options": [
+   "Đức Chúa Trời",
+   "Chính mình",
+   "Trưởng lão",
+   "Hội Thánh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Việc lành cho thấy người ấy thuộc về Chúa. “Ai làm điều lành thì thuộc về Đức Chúa Trời” (3 Giăng 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Cuối thư Giăng thứ ba, trưởng lão hi vọng điều gì?",
+  "options": [
+   "Được ra khỏi tù",
+   "Được đi Rô-ma",
+   "Sớm gặp mặt trò chuyện",
+   "Nhận được thư hồi âm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông còn nhiều điều muốn nói với Gai-út. “Tôi hi vọng sớm gặp anh, và chúng ta sẽ đối mặt trò chuyện với nhau.” (3 Giăng 1:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ ba nói ai làm điều dữ thì sao?",
+  "options": [
+   "Sẽ mắc bệnh",
+   "Sẽ bị đuổi đi",
+   "Sẽ nghèo khó",
+   "Không hề thấy Đức Chúa Trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngược lại, người làm lành thuộc về Đức Chúa Trời. “còn ai làm điều dữ thì không hề thấy Đức Chúa Trời.” (3 Giăng 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ ba, trưởng lão nói không muốn viết thêm bằng gì?",
+  "options": [
+   "Bảng sáp",
+   "Bút và mực",
+   "Bảng đá",
+   "Giấy da"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông muốn gặp mặt để nói chuyện. “nhưng tôi không muốn viết bằng bút và mực.” (3 Giăng 1:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]

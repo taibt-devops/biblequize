@@ -1,0 +1,301 @@
+[
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giu-đe, người viết thư Giu-đe, tự giới thiệu mình là em của ai?",
+  "options": [
+   "Phi-e-rơ",
+   "Phao-lô",
+   "Giăng",
+   "Gia-cơ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông cũng gọi mình là đầy tớ của Đức Chúa Jêsus Christ. “Giu-đe, đầy tớ của Đức Chúa Jêsus Christ và là em của Gia-cơ” (Giu-đe 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe khích lệ tín hữu chiến đấu vì điều gì?",
+  "options": [
+   "Đức tin đã truyền cho các thánh đồ",
+   "Đất nước Y-sơ-ra-ên",
+   "Quyền lợi của mình",
+   "Đền thờ Giê-ru-sa-lem"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đức tin ấy đã được truyền một lần đủ cả. “khích lệ anh em chiến đấu vì đức tin” (Giu-đe 1:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Cuối thư Giu-đe, tác giả cầu xin Đấng có quyền năng giữ tín hữu khỏi điều gì?",
+  "options": [
+   "Bắt bớ",
+   "Bệnh tật",
+   "Vấp ngã",
+   "Nghèo khó"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa khiến họ đứng trước vinh quang Ngài không tì vết. “Cầu xin Đấng có quyền năng giữ anh em khỏi vấp ngã” (Giu-đe 1:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe khuyên tín hữu hãy cầu nguyện trong ai?",
+  "options": [
+   "Tổ phụ Áp-ra-ham",
+   "Đức Thánh Linh",
+   "Các trưởng lão",
+   "Các thiên sứ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tín hữu cũng phải xây dựng mình trên đức tin rất thánh. “Hãy cầu nguyện trong Đức Thánh Linh.” (Giu-đe 1:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe kể thiên sứ trưởng nào tranh luận với ma quỷ về xác của Môi-se?",
+  "options": [
+   "Gáp-ri-ên",
+   "Sê-ra-phim",
+   "Mi-ca-ên",
+   "Chê-ru-bim"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngay cả thiên sứ trưởng cũng không dám nói lời phạm thượng. “Ngay cả khi thiên sứ trưởng Mi-ca-ên tranh luận với ma quỷ lúc tranh chấp xác của Môi-se” (Giu-đe 1:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi tranh chấp xác Môi-se, thiên sứ trưởng Mi-ca-ên chỉ nói gì với ma quỷ?",
+  "options": [
+   "Ngươi đã thua rồi",
+   "Hãy lui ra sau ta",
+   "Ta sẽ trói ngươi",
+   "Cầu Chúa quở trách ngươi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông để Chúa phán xét thay vì tự phán xét. “Cầu Chúa quở trách ngươi.” (Giu-đe 1:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe nói những kẻ không tin kính đã theo con đường của ai?",
+  "options": [
+   "Ca-in",
+   "Sết",
+   "A-bên",
+   "Nô-ê"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ca-in là người đã giết em mình. “Khốn thay cho họ vì đã theo con đường của Ca-in” (Giu-đe 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe trích lời tiên tri của ai, người là cháu bảy đời của A-đam?",
+  "options": [
+   "Nô-ê",
+   "Hê-nóc",
+   "Mê-tu-sê-la",
+   "Lê-méc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hê-nóc nói Chúa đến với muôn vàn đấng thánh. “Hê-nóc là cháu bảy đời của A-đam đã nói tiên tri” (Giu-đe 1:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe khuyên tín hữu hãy giữ mình trong điều gì?",
+  "options": [
+   "Truyền thống tổ phụ",
+   "Nhà của mình",
+   "Luật pháp Môi-se",
+   "Tình yêu thương của Đức Chúa Trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ chờ đợi sự thương xót của Chúa để được sự sống đời đời. “Hãy giữ mình trong tình yêu thương của Đức Chúa Trời.” (Giu-đe 1:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe ví những kẻ chè chén trong bữa tiệc yêu thương như những đám mây thế nào?",
+  "options": [
+   "Mây che mặt trời",
+   "Mây trắng trên núi",
+   "Mây không nước bị gió đùa",
+   "Mây đen sắp mưa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ hứa hẹn nhiều mà chẳng đem lại gì. “Họ là những đám mây không nước bị gió đùa đi” (Giu-đe 1:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe nói vì lợi lộc, những kẻ không tin kính sa vào lỗi lầm của ai?",
+  "options": [
+   "Ba-la-am",
+   "A-can",
+   "Cô-ra",
+   "Ca-in"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ba-la-am ham tiền công khi được thuê nguyền rủa Y-sơ-ra-ên. “vì lợi lộc đã sa vào lỗi lầm của Ba-la-am” (Giu-đe 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe nói những kẻ không tin kính bị hủy diệt vì sự phản loạn như ai?",
+  "options": [
+   "Áp-sa-lôm",
+   "Cô-ra",
+   "Ba-la-am",
+   "Ca-in"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Cô-ra nổi loạn chống Môi-se trong hoang mạc. “và bị hủy diệt vì sự phản loạn như Cô-ra.” (Giu-đe 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe ví những kẻ không tin kính như sóng cuồng của biển và như gì?",
+  "options": [
+   "Lửa trong rừng",
+   "Cây khô ngoài đồng",
+   "Bụi trên đường",
+   "Những vì sao lạc"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bóng tối mù mịt đã dành sẵn cho họ. “họ như những vì sao lạc mà bóng tối mù mịt đã dành cho họ đời đời.” (Giu-đe 1:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]

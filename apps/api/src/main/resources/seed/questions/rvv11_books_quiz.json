@@ -7682,6 +7682,627 @@
   ]
  },
  {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai nhắc điều răn đã nhận từ ban đầu là gì?",
+  "options": [
+   "Hãy yêu thương lẫn nhau",
+   "Hãy dâng phần mười",
+   "Hãy kiêng ăn",
+   "Hãy giữ ngày sa-bát"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó không phải điều răn mới mà là điều răn từ ban đầu. “ấy là chúng ta hãy yêu thương lẫn nhau.” (2 Giăng 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai, người viết tự xưng là trưởng lão, được gửi cho ai?",
+  "options": [
+   "Gai-út",
+   "Ti-mô-thê",
+   "Bà được chọn và các con",
+   "Hội Thánh Rô-ma"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người viết quý mến họ trong chân lý. “Trưởng lão kính gửi bà, người được chọn, cùng các con của bà” (2 Giăng 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ hai, trưởng lão rất mừng khi thấy các con của bà làm gì?",
+  "options": [
+   "Học nghề thợ",
+   "Xây nhà mới",
+   "Đi buôn bán xa",
+   "Đi theo chân lý"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ sống đúng điều răn đã nhận từ Đức Chúa Cha. “Tôi rất mừng khi thấy một số các con của bà đi theo chân lý” (2 Giăng 1:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai nói tình yêu thương là gì?",
+  "options": [
+   "Tặng quà cho nhau",
+   "Bước theo các điều răn của Ngài",
+   "Một cảm xúc vui vẻ",
+   "Không bao giờ quở trách"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Yêu thương được bày tỏ bằng sự vâng lời. “Tình yêu thương đó là chúng ta bước theo các điều răn của Ngài.” (2 Giăng 1:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai nói kẻ lừa dối không thừa nhận điều gì về Đức Chúa Jêsus Christ?",
+  "options": [
+   "Ngài đã làm phép lạ",
+   "Ngài đã lên trời",
+   "Ngài là con cháu Đa-vít",
+   "Ngài đã đến trong thân xác"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nhiều kẻ lừa dối đã đến trong thế gian. “những kẻ không thừa nhận rằng Đức Chúa Jêsus Christ đã đến trong thân xác” (2 Giăng 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai gọi người không nhận Chúa Jêsus đến trong thân xác là gì?",
+  "options": [
+   "Người yếu đức tin",
+   "Kẻ lừa dối và kẻ chống Đấng Christ",
+   "Một tiên tri thật",
+   "Người ngoại bang"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tín hữu phải cẩn thận giữ mình. “Đó là kẻ lừa dối và kẻ chống Đấng Christ.” (2 Giăng 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai dặn gì về người đến mà không đem theo sự dạy dỗ của Đấng Christ?",
+  "options": [
+   "Chớ tiếp vào nhà, đừng chào hỏi",
+   "Mời ở lại lâu",
+   "Cho tiền đi đường",
+   "Nhờ giảng dạy"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chào hỏi là dự phần vào việc ác của người ấy. “thì chớ tiếp đón người ấy vào nhà và đừng chào hỏi.” (2 Giăng 1:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Cuối thư Giăng thứ hai, vì sao trưởng lão không viết thêm bằng giấy mực?",
+  "options": [
+   "Vì đang bệnh nặng",
+   "Vì hết giấy mực",
+   "Mong đến thăm và trò chuyện trực tiếp",
+   "Vì bị cấm viết"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông còn nhiều điều muốn nói. “Tôi mong đến thăm và đối diện trò chuyện với anh em” (2 Giăng 1:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ hai nói gặp mặt trò chuyện để niềm vui thế nào?",
+  "options": [
+   "Được nhân đôi",
+   "Được nhớ mãi",
+   "Được trọn vẹn",
+   "Được loan báo"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Trưởng lão mong sớm đến thăm họ. “để sự vui mừng của chúng ta được trọn vẹn.” (2 Giăng 1:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 John",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ hai, trưởng lão nói điều răn yêu thương lẫn nhau không phải là gì?",
+  "options": [
+   "Một điều răn mới",
+   "Một điều răn bí mật",
+   "Một điều răn khó",
+   "Một điều răn tạm thời"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là điều răn đã nhận từ ban đầu. “không phải tôi viết cho bà một điều răn mới” (2 Giăng 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai của Phi-e-rơ nói trước mặt Chúa một ngày như bao nhiêu năm?",
+  "options": [
+   "Nghìn năm",
+   "Bảy năm",
+   "Trăm năm",
+   "Mười năm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Thời gian của Chúa khác với loài người. “trước mặt Chúa một ngày như nghìn năm, nghìn năm như một ngày.” (2 Phi-e-rơ 3:8)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 3,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai của Phi-e-rơ nói Chúa kiên nhẫn vì Ngài muốn mọi người làm gì?",
+  "options": [
+   "Đều về Giê-ru-sa-lem",
+   "Đều ăn năn",
+   "Đều đi truyền giảng",
+   "Đều giàu có"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa không chậm trễ về lời hứa của Ngài. “không muốn một người nào chết mất mà muốn mọi người đều ăn năn.” (2 Phi-e-rơ 3:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai của Phi-e-rơ nói ngày của Chúa sẽ đến như ai?",
+  "options": [
+   "Như người khách",
+   "Như vua chúa",
+   "Như cơn mưa",
+   "Như kẻ trộm"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngày ấy đến bất ngờ. “ngày của Chúa sẽ đến như kẻ trộm” (2 Phi-e-rơ 3:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 2,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai của Phi-e-rơ nói khi trận lụt lớn tiêu diệt thế giới vô đạo, Chúa giữ lại ai?",
+  "options": [
+   "Hê-nóc",
+   "Áp-ra-ham",
+   "Nô-ê và bảy người khác",
+   "Lót và hai con gái"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nô-ê là người truyền giảng về sự công chính. “chỉ giữ lại Nô-ê, người truyền giảng về sự công chính, và bảy người khác” (2 Phi-e-rơ 2:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai của Phi-e-rơ nói tín hữu trông đợi gì, nơi sự công chính ngự trị?",
+  "options": [
+   "Trời mới đất mới",
+   "Một đền thờ mới",
+   "Vương quốc Y-sơ-ra-ên",
+   "Thành Ba-by-lôn mới"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là lời hứa của Chúa. “chúng ta trông đợi trời mới đất mới là nơi sự công chính ngự trị.” (2 Phi-e-rơ 3:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai của Phi-e-rơ khuyên tín hữu thêm cho đức tin mình điều gì trước tiên?",
+  "options": [
+   "Tình yêu thương",
+   "Lòng tin kính",
+   "Lòng nhân đức",
+   "Sự tri thức"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Rồi lần lượt thêm tri thức, tiết chế, kiên nhẫn… “để thêm cho đức tin mình lòng nhân đức” (2 Phi-e-rơ 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong chuỗi điều thêm cho đức tin ở thư thứ hai của Phi-e-rơ, điều sau cùng là gì?",
+  "options": [
+   "Tính kiên nhẫn",
+   "Tình yêu thương",
+   "Tính tiết chế",
+   "Sự tri thức"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tình yêu thương được thêm vào tình huynh đệ. “thêm cho tình huynh đệ tình yêu thương.” (2 Phi-e-rơ 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 1,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai của Phi-e-rơ nói lời tiên tri không đến bởi ý người, nhưng người ta được ai cảm thúc?",
+  "options": [
+   "Các trưởng lão",
+   "Các vua",
+   "Các thiên sứ",
+   "Đức Thánh Linh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ nói ra từ Đức Chúa Trời. “nhưng người ta được Đức Thánh Linh cảm thúc nói ra từ Đức Chúa Trời.” (2 Phi-e-rơ 1:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ viết rằng ông đã nghe tiếng từ trời phán về Chúa Jêsus khi ở với Ngài ở đâu?",
+  "options": [
+   "Trong vườn Ghết-sê-ma-nê",
+   "Trên biển Ga-li-lê",
+   "Trong đền thờ",
+   "Trên núi thánh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tiếng ấy phán: Đây là Con yêu dấu của Ta. “Chính chúng tôi đã nghe tiếng ấy phán từ trời khi chúng tôi ở với Ngài trên núi thánh.” (2 Phi-e-rơ 1:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 1,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai của Phi-e-rơ ví lời tiên tri như vật gì soi sáng nơi tối tăm?",
+  "options": [
+   "Mặt trời",
+   "Ngọn đèn",
+   "Ngôi sao",
+   "Ánh chớp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hãy chú ý đến lời ấy cho đến khi sao mai mọc trong lòng. “Anh em nên chú ý vào lời nầy như ngọn đèn soi sáng nơi tối tăm” (2 Phi-e-rơ 1:19)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai của Phi-e-rơ nói Chúa đã giải cứu người công chính nào khỏi những kẻ vô luân?",
+  "options": [
+   "Nô-ê",
+   "Áp-ra-ham",
+   "Lót",
+   "Gióp"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lót đau buồn về lối sống phóng túng quanh mình. “và nếu Ngài đã giải cứu Lót, là người công chính” (2 Phi-e-rơ 2:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 2,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai của Phi-e-rơ trích tục ngữ nói heo tắm sạch rồi lại làm gì?",
+  "options": [
+   "Lăn lóc trong vũng bùn",
+   "Ăn cỏ xanh",
+   "Ngủ trong chuồng",
+   "Chạy ra đồng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Tục ngữ nói về người quay lại đường cũ. “Heo tắm sạch, lại lăn lóc trong vũng bùn.” (2 Phi-e-rơ 2:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 3,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Cuối thư thứ hai, Phi-e-rơ khuyên tín hữu hãy tăng trưởng trong điều gì?",
+  "options": [
+   "Của cải và danh tiếng",
+   "Luật pháp và lễ nghi",
+   "Ân điển và sự hiểu biết Chúa",
+   "Sức mạnh và quyền lực"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vinh quang thuộc về Chúa đến đời đời. “Nhưng hãy tăng trưởng trong ân điển và sự hiểu biết Chúa” (2 Phi-e-rơ 3:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai của Phi-e-rơ nói các giáo sư giả đi theo con đường của ai, kẻ ham tiền công tội ác?",
+  "options": [
+   "Cô-ra",
+   "Ca-in",
+   "A-can",
+   "Ba-la-am, con trai Bô-sô"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ đã bỏ con đường ngay thẳng. “đi theo con đường của Ba-la-am, con trai Bô-sô” (2 Phi-e-rơ 2:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 3,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ viết rằng các thư của Phao-lô có một vài điều thế nào?",
+  "options": [
+   "Khó hiểu",
+   "Quá dài",
+   "Sai lầm",
+   "Đã thất lạc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Những kẻ không vững vàng đã xuyên tạc các điều ấy. “Các thư của ông có một vài điều khó hiểu” (2 Phi-e-rơ 3:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong thư thứ hai, Phi-e-rơ nói ông biết mình sắp phải lìa gì?",
+  "options": [
+   "Thành Rô-ma",
+   "Nhà tạm nầy",
+   "Hội Thánh",
+   "Quê hương"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa Jêsus đã bày tỏ điều ấy cho ông. “đã đến lúc tôi sớm phải lìa nhà tạm nầy” (2 Phi-e-rơ 1:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Peter",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phi-e-rơ viết rằng khi rao giảng về Chúa Jêsus, các sứ đồ không dựa vào điều gì?",
+  "options": [
+   "Lời chứng tận mắt",
+   "Huyền thoại khéo bịa đặt",
+   "Lời tiên tri",
+   "Kinh Thánh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ đã tận mắt thấy vẻ uy nghi của Ngài. “chúng tôi không dựa vào những huyền thoại khéo bịa đặt” (2 Phi-e-rơ 1:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "2 Samuel",
   "chapter": 5,
   "verseStart": 4,
@@ -9798,6 +10419,305 @@
   ]
  },
  {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong thư thứ hai gửi tín hữu Tê-sa-lô-ni-ca, Phao-lô nói nếu ai không muốn làm việc thì sao?",
+  "options": [
+   "Phải kiêng ăn",
+   "Cũng đừng ăn",
+   "Được Hội Thánh nuôi",
+   "Phải đi nơi khác"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phao-lô đã khuyên điều nầy từ khi còn ở với họ. “Nếu ai không muốn làm việc, thì cũng đừng ăn.” (2 Tê-sa-lô-ni-ca 3:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong thư thứ hai gửi tín hữu Tê-sa-lô-ni-ca, Phao-lô khuyên chớ nản lòng khi làm gì?",
+  "options": [
+   "Làm việc thiện",
+   "Đi xa",
+   "Kiêng ăn",
+   "Cầu nguyện"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Phao-lô khích lệ họ tiếp tục làm điều lành. “Thưa anh em, chớ nản lòng khi làm việc thiện.” (2 Tê-sa-lô-ni-ca 3:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai gửi tín hữu Tê-sa-lô-ni-ca nói Chúa thành tín sẽ bảo vệ họ khỏi ai?",
+  "options": [
+   "Bệnh tật",
+   "Vua La Mã",
+   "Kẻ gian ác",
+   "Đói kém"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa sẽ làm cho tín hữu mạnh mẽ. “Chúa là thành tín, Ngài sẽ làm cho anh em mạnh mẽ và bảo vệ anh em khỏi kẻ gian ác.” (2 Tê-sa-lô-ni-ca 3:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Cuối thư thứ hai gửi tín hữu Tê-sa-lô-ni-ca, Phao-lô cầu xin Chúa ban gì cho họ trong mọi lúc?",
+  "options": [
+   "Khôn ngoan",
+   "Sức khỏe",
+   "Giàu có",
+   "Bình an"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phao-lô xin Chúa bình an ở với tất cả họ. “Cầu xin chính Chúa bình an ban bình an cho anh em trong mọi lúc và bằng mọi cách!” (2 Tê-sa-lô-ni-ca 3:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ngoài Phao-lô, ai cùng gửi thư thứ hai cho Hội Thánh Tê-sa-lô-ni-ca?",
+  "options": [
+   "A-bô-lô và Sốt-then",
+   "Lu-ca và Tít",
+   "Ba-na-ba và Mác",
+   "Sin-vanh và Ti-mô-thê"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ba người cùng chào Hội Thánh ở trong Đức Chúa Trời. “Phao-lô, Sin-vanh và Ti-mô-thê gửi cho Hội Thánh tại Tê-sa-lô-ni-ca” (2 Tê-sa-lô-ni-ca 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư thứ hai gửi tín hữu Tê-sa-lô-ni-ca, Phao-lô xin họ cầu nguyện để làm gì?",
+  "options": [
+   "Đạo Chúa được truyền bá nhanh chóng",
+   "Ông được giàu có",
+   "Ông được ra khỏi tù",
+   "Ông sớm trở lại"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Phao-lô mong đạo Chúa được tôn trọng khắp nơi. “hãy cầu nguyện cho chúng tôi, để đạo Chúa được truyền bá nhanh chóng” (2 Tê-sa-lô-ni-ca 3:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư thứ hai gửi tín hữu Tê-sa-lô-ni-ca, Phao-lô khuyên họ đứng vững và vâng giữ điều gì?",
+  "options": [
+   "Phong tục tổ tiên",
+   "Những điều dạy dỗ đã nhận",
+   "Lời các tiên tri giả",
+   "Luật của La Mã"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ nhận điều dạy dỗ qua lời nói hoặc thư từ. “hãy đứng vững và vâng giữ những điều dạy dỗ mà chúng tôi đã truyền cho anh em” (2 Tê-sa-lô-ni-ca 2:15)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 2,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai gửi tín hữu Tê-sa-lô-ni-ca nói trước ngày Chúa đến, điều gì phải đến trước?",
+  "options": [
+   "Trận động đất",
+   "Ngôi sao lạ",
+   "Sự bội đạo",
+   "Nạn đói lớn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phao-lô dặn họ đừng để ai lừa dối. “Vì sự bội đạo phải đến trước” (2 Tê-sa-lô-ni-ca 2:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư thứ hai gửi tín hữu Tê-sa-lô-ni-ca, Phao-lô khuyên xa lánh người anh em nào?",
+  "options": [
+   "Người nghèo",
+   "Người sống bê tha",
+   "Người ngoại quốc",
+   "Người mới tin"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đó là người không theo điều dạy dỗ đã nhận. “phải xa lánh bất cứ người anh em nào sống bê tha” (2 Tê-sa-lô-ni-ca 3:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Cuối thư thứ hai gửi tín hữu Tê-sa-lô-ni-ca, ai viết lời chào thăm?",
+  "options": [
+   "Ti-mô-thê viết thay",
+   "Lu-ca viết thay",
+   "Sin-vanh viết thay",
+   "Chính Phao-lô tự tay viết"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đó là chữ ký Phao-lô dùng trong mọi bức thư. “Chính tôi, Phao-lô, tự tay viết lời chào thăm nầy.” (2 Tê-sa-lô-ni-ca 3:17)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 2,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai gửi tín hữu Tê-sa-lô-ni-ca gọi con người gian ác là đứa con của gì?",
+  "options": [
+   "Sự hủy diệt",
+   "Bóng tối",
+   "Sự giận dữ",
+   "Ba-by-lôn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Kẻ ấy sẽ xuất hiện trước ngày Chúa đến. “đứa con của sự hủy diệt” (2 Tê-sa-lô-ni-ca 2:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thư thứ hai gửi tín hữu Tê-sa-lô-ni-ca nói Chúa Jêsus từ trời hiện đến giữa gì?",
+  "options": [
+   "Cơn gió lốc",
+   "Đám mây trắng",
+   "Ngọn lửa hừng",
+   "Tiếng kèn lớn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngài đến với các thiên sứ đầy uy lực. “từ trời hiện đến giữa ngọn lửa hừng” (2 Tê-sa-lô-ni-ca 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Thessalonians",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nghe tín hữu Tê-sa-lô-ni-ca có người sống lười biếng lại hay làm gì?",
+  "options": [
+   "Xen vào chuyện người khác",
+   "Ngủ trong buổi nhóm",
+   "Đi buôn bán xa",
+   "Than phiền về Phao-lô"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Phao-lô khuyên họ yên lặng làm việc mà ăn. “không chịu làm việc mà lại hay xen vào chuyện người khác.” (2 Tê-sa-lô-ni-ca 3:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "2 Timothy",
   "chapter": 2,
   "verseStart": 3,
@@ -11102,6 +12022,1156 @@
    2
   ],
   "explanation": "Sách Các Vua kết thúc với tia hi vọng nầy. “Ê-vinh Mê-rô-đác, vua Ba-by-lôn” (2 Các Vua 25:27)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ ba được trưởng lão gửi cho ai?",
+  "options": [
+   "Gai-út",
+   "Phi-lê-môn",
+   "Đi-ô-trép",
+   "Đê-mê-triu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Trưởng lão quý mến Gai-út trong chân lý. “Trưởng lão gửi đến Gai-út thân mến” (3 Giăng 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ ba, trưởng lão nói không gì vui hơn là nghe các con mình làm gì?",
+  "options": [
+   "Được nổi tiếng",
+   "Xây Hội Thánh lớn",
+   "Bước theo chân lý",
+   "Trở nên giàu có"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Niềm vui của trưởng lão là thấy họ sống đúng. “Không gì làm cho tôi vui mừng hơn là nghe các con tôi bước theo chân lý.” (3 Giăng 1:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ ba khuyên đừng bắt chước điều dữ mà hãy bắt chước điều gì?",
+  "options": [
+   "Người nổi tiếng",
+   "Người giàu có",
+   "Phong tục xưa",
+   "Điều lành"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ai làm điều lành thì thuộc về Đức Chúa Trời. “đừng bắt chước điều dữ, nhưng hãy bắt chước điều lành.” (3 Giăng 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ ba, trưởng lão cầu cho Gai-út thịnh vượng, khỏe mạnh, cũng như điều gì?",
+  "options": [
+   "Được làm trưởng lão",
+   "Thịnh vượng về phần hồn",
+   "Có nhiều ruộng đất",
+   "Có nhiều con cháu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Linh hồn Gai-út vốn đã thịnh vượng. “cũng như được thịnh vượng về phần hồn.” (3 Giăng 1:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ ba, ai là người thích đứng đầu và không chấp nhận trưởng lão?",
+  "options": [
+   "Ty-chi-cơ",
+   "Đê-mê-triu",
+   "Gai-út",
+   "Đi-ô-trép"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông còn không tiếp đón anh em đi truyền giáo. “nhưng Đi-ô-trép, người thích đứng đầu, không chấp nhận chúng tôi.” (3 Giăng 1:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ ba, mọi người đều làm chứng tốt về ai?",
+  "options": [
+   "Đi-ô-trép",
+   "Đê-mê-triu",
+   "A-chíp",
+   "Gai-út"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chính chân lý cũng làm chứng về ông. “Mọi người đều làm chứng tốt về Đê-mê-triu” (3 Giăng 1:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ ba nói ai làm điều lành thì thuộc về ai?",
+  "options": [
+   "Đức Chúa Trời",
+   "Chính mình",
+   "Trưởng lão",
+   "Hội Thánh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Việc lành cho thấy người ấy thuộc về Chúa. “Ai làm điều lành thì thuộc về Đức Chúa Trời” (3 Giăng 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Cuối thư Giăng thứ ba, trưởng lão hi vọng điều gì?",
+  "options": [
+   "Được ra khỏi tù",
+   "Được đi Rô-ma",
+   "Sớm gặp mặt trò chuyện",
+   "Nhận được thư hồi âm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông còn nhiều điều muốn nói với Gai-út. “Tôi hi vọng sớm gặp anh, và chúng ta sẽ đối mặt trò chuyện với nhau.” (3 Giăng 1:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thư Giăng thứ ba nói ai làm điều dữ thì sao?",
+  "options": [
+   "Sẽ mắc bệnh",
+   "Sẽ bị đuổi đi",
+   "Sẽ nghèo khó",
+   "Không hề thấy Đức Chúa Trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngược lại, người làm lành thuộc về Đức Chúa Trời. “còn ai làm điều dữ thì không hề thấy Đức Chúa Trời.” (3 Giăng 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "3 John",
+  "chapter": 1,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong thư Giăng thứ ba, trưởng lão nói không muốn viết thêm bằng gì?",
+  "options": [
+   "Bảng sáp",
+   "Bút và mực",
+   "Bảng đá",
+   "Giấy da"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông muốn gặp mặt để nói chuyện. “nhưng tôi không muốn viết bằng bút và mực.” (3 Giăng 1:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa trách dân ở nhà có trần ván trong khi điều gì còn đổ nát?",
+  "options": [
+   "Tường thành",
+   "Cung vua",
+   "Đền thờ",
+   "Cổng thành"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Dân lo nhà mình mà bỏ dở nhà Chúa. “trong khi đền thờ nầy còn đổ nát không?” (A-ghê 1:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa bảo dân lên núi đem gỗ về để làm gì?",
+  "options": [
+   "Xây nhà mình",
+   "Đốt lửa sưởi",
+   "Đóng thuyền",
+   "Xây dựng đền thờ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa sẽ hài lòng và được tôn vinh. “Hãy lên núi đem gỗ về và hãy xây dựng đền thờ” (A-ghê 1:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa bảo Xô-rô-ba-bên và toàn dân hãy can đảm làm việc vì sao?",
+  "options": [
+   "Vì đã có đủ vàng",
+   "Vì Chúa ở với họ",
+   "Vì kẻ thù đã rút đi",
+   "Vì vua cho phép"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa khích lệ dân xây tiếp đền thờ. “Hãy làm việc, vì Ta ở với các con” (A-ghê 2:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa phán bạc và vàng là của ai?",
+  "options": [
+   "Của Chúa",
+   "Của vua Ba Tư",
+   "Của các thầy tế lễ",
+   "Của dân chúng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dân đừng lo đền thờ mới nghèo nàn. “Bạc là của Ta, vàng là của Ta.” (A-ghê 2:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa nói vì bỏ dở đền thờ, dân gieo nhiều mà gặt thế nào?",
+  "options": [
+   "Gặt ít",
+   "Không gieo được",
+   "Gặt gấp đôi",
+   "Gặt rất sớm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ăn không no, uống không đã khát. “Các ngươi gieo nhiều mà gặt ít” (A-ghê 1:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa nói kẻ làm thuê đựng tiền công mình trong gì?",
+  "options": [
+   "Hũ đất",
+   "Bao vải",
+   "Rương sắt",
+   "Túi lủng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Làm bao nhiêu cũng như mất hết. “kẻ làm thuê thì đựng tiền công mình trong túi lủng.” (A-ghê 1:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lời Chúa qua nhà tiên tri A-ghê được gửi cho tổng đốc xứ Giu-đê nào?",
+  "options": [
+   "E-xơ-ra",
+   "Nê-hê-mi",
+   "Xô-rô-ba-bên",
+   "Sết-ba-xa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông là con trai Sa-anh-thi-ên. “cho Xô-rô-ba-bên con trai Sa-anh-thi-ên, tổng đốc xứ Giu-đê” (A-ghê 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau lời nhà tiên tri A-ghê, Đức Giê-hô-va giục giã lòng ai đến làm việc tại đền thờ?",
+  "options": [
+   "Các tướng Ba Tư",
+   "Xô-rô-ba-bên, Giê-hô-sua và dân sót",
+   "Dân Sa-ma-ri",
+   "Vua Đa-ri-út"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ đều đến xây nhà của Đức Chúa Trời mình. “Rồi Đức Giê-hô-va giục giã lòng của tổng đốc Giu-đa là Xô-rô-ba-bên” (A-ghê 1:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Chúa hứa vinh quang sau nầy của đền thờ sẽ thế nào?",
+  "options": [
+   "Lớn hơn vinh quang trước kia",
+   "Bằng như trước",
+   "Sẽ mất hết",
+   "Kém hơn trước"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa sẽ ban bình an cho nơi ấy. “Vinh quang sau nầy của đền thờ sẽ lớn hơn vinh quang trước kia.” (A-ghê 2:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-ghê, Đức Giê-hô-va vạn quân bảo dân hãy để tâm suy xét điều gì?",
+  "options": [
+   "Kẻ thù mình",
+   "Kho lúa mình",
+   "Lời vua Ba Tư",
+   "Đường lối mình"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dân cần thấy vì sao làm lụng mà không được gì. “Hãy để tâm suy xét đường lối các ngươi.” (A-ghê 1:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Lời Chúa đến với nhà tiên tri A-ghê vào năm thứ mấy đời vua Đa-ri-út?",
+  "options": [
+   "Năm thứ sáu",
+   "Năm thứ bảy",
+   "Năm thứ hai",
+   "Năm thứ nhất"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là ngày mồng một tháng sáu năm ấy. “năm thứ hai, triều vua Đa-ri-út” (A-ghê 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 2,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cuối sách A-ghê, Chúa nói sẽ đặt Xô-rô-ba-bên như vật gì?",
+  "options": [
+   "Ngọn đèn",
+   "Ấn tín",
+   "Cây trụ",
+   "Mão miện"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa nói Ngài đã chọn Xô-rô-ba-bên. “Ta sẽ đặt con như ấn tín, vì Ta đã chọn con.” (A-ghê 2:23)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Haggai",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thầy tế lễ thượng phẩm thời nhà tiên tri A-ghê là ai?",
+  "options": [
+   "Ê-li-a-síp",
+   "A-xa-ria",
+   "Hinh-kia",
+   "Giê-hô-sua"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông là con trai Giô-xa-đác. “và cho Giê-hô-sua con trai Giô-xa-đác, thầy tế lễ thượng phẩm” (A-ghê 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trước khi được Chúa sai đi nói tiên tri, A-mốt làm nghề gì?",
+  "options": [
+   "Chăn bầy và chăm sóc cây vả",
+   "Làm thầy tế lễ",
+   "Đánh cá",
+   "Làm thợ mộc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "A-mốt nói mình không phải con của nhà tiên tri. “nhưng tôi chỉ là một người chăn bầy và người chăm sóc những cây vả.” (A-mốt 7:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 5,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt kêu gọi hãy làm cho công lý chảy xuống như gì?",
+  "options": [
+   "Như mật",
+   "Như dầu",
+   "Như sữa",
+   "Như nước"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa muốn công lý hơn là lễ hội. “Nhưng hãy làm cho công lý chảy xuống như nước” (A-mốt 5:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 5,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-mốt, Chúa phán nhà Y-sơ-ra-ên hãy tìm kiếm Ngài thì sẽ thế nào?",
+  "options": [
+   "Sẽ thắng trận",
+   "Sẽ sống",
+   "Sẽ có vua mới",
+   "Sẽ giàu có"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa kêu gọi dân trở về với Ngài. “Hãy tìm kiếm Ta thì các ngươi sẽ sống!” (A-mốt 5:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 8,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-mốt, Chúa báo trước một cơn đói khát về điều gì?",
+  "options": [
+   "Bánh và nước",
+   "Đất đai",
+   "Được nghe lời Đức Giê-hô-va",
+   "Vàng và bạc"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó không phải đói bánh hay khát nước. “Nhưng đói khát được nghe lời của Đức Giê-hô-va.” (A-mốt 8:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt hỏi: nếu hai người không đồng ý với nhau thì có làm được gì không?",
+  "options": [
+   "Ăn chung bàn",
+   "Đi chung đường",
+   "Ở chung nhà",
+   "Làm chung ruộng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "A-mốt dùng câu hỏi quen thuộc để nói về Chúa và dân Ngài. “Nếu hai người không đồng ý với nhau Thì có đi chung đường được sao?” (A-mốt 3:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt là một chủ trại nuôi chiên ở đâu?",
+  "options": [
+   "Bết-lê-hem",
+   "Hếp-rôn",
+   "Si-lô",
+   "Thê-cô-a"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông nói tiên tri về dân Y-sơ-ra-ên thời vua Giê-rô-bô-am. “một trong những chủ trại nuôi chiên ở Thê-cô-a” (A-mốt 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 3,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt nói Chúa không làm việc gì mà không tỏ sự kín nhiệm cho ai?",
+  "options": [
+   "Các thầy tế lễ",
+   "Các vua",
+   "Các nhà tiên tri",
+   "Các trưởng lão"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Các nhà tiên tri là đầy tớ của Chúa. “Cho các đầy tớ Ngài là các nhà tiên tri.” (A-mốt 3:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt gọi những kẻ áp bức người nghèo trên núi Sa-ma-ri là gì?",
+  "options": [
+   "Bò cái của Ba-san",
+   "Chó sói ban đêm",
+   "Sư tử của Giu-đa",
+   "Chiên đi lạc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Họ sống xa hoa và hà hiếp người thiếu thốn. “Hỡi những bò cái của Ba-san, ở trên núi Sa-ma-ri” (A-mốt 4:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 5,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri A-mốt, Chúa nói Ngài chán ghét, khinh thường điều gì của dân?",
+  "options": [
+   "Những kỳ lễ của họ",
+   "Nhà cửa của họ",
+   "Ruộng nho của họ",
+   "Gia súc của họ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lễ hội không có công lý thì Chúa không ưa thích. “Ta chán ghét, khinh thường những kỳ lễ của các ngươi” (A-mốt 5:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 5,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt kêu gọi sự công chính chảy như gì?",
+  "options": [
+   "Như sương mai",
+   "Như mưa đầu mùa",
+   "Như sông lớn chảy cuồn cuộn",
+   "Như suối nhỏ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Công lý và công chính phải tràn khắp như nước. “Và sự công chính như sông lớn chảy cuồn cuộn.” (A-mốt 5:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng của A-mốt, Chúa cầm vật gì để làm chuẩn đo dân Y-sơ-ra-ên?",
+  "options": [
+   "Cái cân",
+   "Dây dọi",
+   "Cây gậy",
+   "Cây sào"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa đứng trên một bức tường thẳng đứng. “Nầy, Ta sẽ đặt dây dọi làm chuẩn đo dân Y-sơ-ra-ên Ta” (A-mốt 7:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 8,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng, Chúa Giê-hô-va cho nhà tiên tri A-mốt thấy giỏ gì?",
+  "options": [
+   "Giỏ lúa mạch",
+   "Giỏ bánh",
+   "Giỏ cá",
+   "Giỏ trái cây mùa hạ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Giỏ trái cây báo hiệu sự cuối cùng của Y-sơ-ra-ên. “Một giỏ trái cây mùa hạ.” (A-mốt 8:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt nói Đức Giê-hô-va đã bắt lấy ông từ đâu để sai đi nói tiên tri?",
+  "options": [
+   "Từ đền thờ",
+   "Từ cung vua",
+   "Từ trường tiên tri",
+   "Từ sau bầy chiên"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa sai ông nói tiên tri cho dân Y-sơ-ra-ên. “Đức Giê-hô-va đã bắt lấy tôi từ sau bầy chiên” (A-mốt 7:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri A-mốt thấy những điều về Y-sơ-ra-ên bao lâu trước trận động đất?",
+  "options": [
+   "Một năm",
+   "Bảy năm",
+   "Hai năm",
+   "Mười năm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là thời vua Ô-xia và vua Giê-rô-bô-am. “hai năm trước trận động đất.” (A-mốt 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 7,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "A-mốt nói “Tôi không phải là nhà tiên tri” khi trả lời ai?",
+  "options": [
+   "Giê-rô-bô-am",
+   "A-ma-xia",
+   "A-cha",
+   "Ô-xia"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "A-ma-xia muốn đuổi A-mốt về xứ Giu-đa. “A-mốt trả lời với A-ma-xia rằng” (A-mốt 7:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 8,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thấy giỏ trái cây mùa hạ, A-mốt nghe Chúa phán điều gì đã đến trên Y-sơ-ra-ên?",
+  "options": [
+   "Sự cuối cùng",
+   "Năm hân hỉ",
+   "Mùa gặt lớn",
+   "Ngày phước hạnh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa sẽ không bỏ qua cho dân nữa. “Sự cuối cùng đã đến trên dân Y-sơ-ra-ên Ta” (A-mốt 8:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Amos",
+  "chapter": 9,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cuối sách A-mốt, Chúa hứa dân trở về từ lưu đày sẽ làm gì?",
+  "options": [
+   "Xây một tháp cao",
+   "Lập vua mới",
+   "Đi đánh A-si-ri",
+   "Lập lại các thành, trồng vườn nho"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sách kết thúc bằng lời hứa phục hồi. “Họ sẽ lập lại các thành bị tàn phá và sống ở đó. Họ sẽ trồng vườn nho” (A-mốt 9:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia chép lời Chúa phán về dân nào?",
+  "options": [
+   "Ê-đôm",
+   "Ni-ni-ve",
+   "Ai Cập",
+   "Mô-áp"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ê-đôm là dòng dõi Ê-sau, anh của Gia-cốp. “Chúa Giê-hô-va phán về Ê-đôm” (Áp-đia 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói điều gì đã lừa dối dân Ê-đôm?",
+  "options": [
+   "Vua A-si-ri",
+   "Sự kiêu ngạo của lòng họ",
+   "Các thần tượng",
+   "Các thầy bói"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ê-đôm tưởng không ai xô mình xuống được. “Sự kiêu ngạo của lòng ngươi đã lừa dối ngươi.” (Áp-đia 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Câu cuối sách Áp-đia nói vương quốc sẽ thuộc về ai?",
+  "options": [
+   "Dân Ê-đôm",
+   "Vua Đa-vít",
+   "Vua Ba-by-lôn",
+   "Đức Giê-hô-va"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sách kết thúc bằng sự trị vì của Chúa. “Còn vương quốc thì sẽ thuộc về Đức Giê-hô-va.” (Áp-đia 1:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói dù Ê-đôm bay cao như chim ưng và lót ổ ở đâu, Chúa vẫn xô xuống?",
+  "options": [
+   "Trên mây trời",
+   "Trong đền thờ",
+   "Giữa các ngôi sao",
+   "Trên núi Si-ôn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Không nơi nào cao đủ để tránh khỏi Chúa. “Dù ngươi lót ổ giữa các ngôi sao” (Áp-đia 1:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói Ê-đôm bị hổ thẹn vì tàn bạo với anh em mình là ai?",
+  "options": [
+   "Lót",
+   "Ích-ma-ên",
+   "Ê-sau",
+   "Gia-cốp"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ê-đôm là dòng dõi Ê-sau, anh em của Gia-cốp. “Vì sự tàn bạo ngươi đối với anh em ngươi là Gia-cốp” (Áp-đia 1:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói dân Ê-đôm sống ở đâu nên tự hào không ai xô xuống được?",
+  "options": [
+   "Giữa sa mạc",
+   "Bên bờ biển",
+   "Giữa những vầng đá trên cao",
+   "Trong thung lũng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ê-đôm cậy địa thế hiểm trở của mình. “Ngươi là kẻ ở giữa những vầng đá, Sống ở trên cao” (Áp-đia 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói trong ngày của Đức Giê-hô-va, việc làm của Ê-đôm sẽ thế nào?",
+  "options": [
+   "Đổ lại trên đầu họ",
+   "Được tha hết",
+   "Bị quên đi",
+   "Được ban thưởng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người ta sẽ làm cho Ê-đôm như điều Ê-đôm đã làm. “Những việc làm của ngươi sẽ đổ lại trên đầu ngươi.” (Áp-đia 1:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia trách Ê-đôm đã làm gì trong ngày Giu-đa gặp tai họa?",
+  "options": [
+   "Than khóc cùng Giu-đa",
+   "Hả hê nhìn anh em mình",
+   "Đưa lương thực đến",
+   "Gửi quân cứu giúp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ê-đôm vui mừng khi Giu-đa bị hủy diệt. “Lẽ ra, ngươi chẳng nên hả hê nhìn anh em ngươi Trong ngày tai họa của nó” (Áp-đia 1:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói những người được giải cứu sẽ lên núi Si-ôn để phán xét núi nào?",
+  "options": [
+   "Núi Hẹt-môn",
+   "Núi Si-na-i",
+   "Núi Ê-sau",
+   "Núi Cạt-mên"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Núi Ê-sau chỉ về xứ Ê-đôm. “Những người được giải cứu sẽ lên núi Si-ôn để phán xét núi Ê-sau” (Áp-đia 1:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Obadiah",
+  "chapter": 1,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Áp-đia nói những người trốn thoát sẽ còn lại trên núi nào?",
+  "options": [
+   "Núi Si-ôn",
+   "Núi Ô-liu",
+   "Núi Ê-sau",
+   "Núi Tha-bô"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nhà Gia-cốp sẽ được lại sản nghiệp mình. “Nhưng trên núi Si-ôn sẽ còn lại những người trốn thoát” (Áp-đia 1:17)",
   "language": "vi",
   "tags": [
    "Cựu Ước",
@@ -26598,6 +28668,305 @@
   ]
  },
  {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Giô-ên, Chúa bảo dân hãy xé gì thay vì xé áo?",
+  "options": [
+   "Xé sách",
+   "Xé màn",
+   "Xé lều",
+   "Xé lòng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa muốn dân ăn năn thật lòng chứ không chỉ bề ngoài. “Hãy xé lòng các con và đừng xé áo.” (Giô-ên 2:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Giô-ên, Chúa hứa sẽ đổ Thần Ngài trên ai?",
+  "options": [
+   "Chỉ các vua",
+   "Mọi xác thịt",
+   "Chỉ các thầy tế lễ",
+   "Chỉ người Lê-vi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phi-e-rơ nhắc lời nầy trong ngày lễ Ngũ Tuần. “Ta sẽ đổ Thần Ta trên mọi xác thịt.” (Giô-ên 2:28)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên nói ai kêu cầu danh Đức Giê-hô-va thì sẽ thế nào?",
+  "options": [
+   "Đều sẽ được cứu",
+   "Được sống lâu",
+   "Được làm vua",
+   "Được giàu có"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lời hứa nầy dành cho mọi người kêu cầu Chúa. “ai kêu cầu danh Đức Giê-hô-va đều sẽ được cứu” (Giô-ên 2:32)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên tả mùa màng của Giu-đa bị phá hại bởi đạo quân nào?",
+  "options": [
+   "Quân A-si-ri",
+   "Lũ lụt",
+   "Sâu bọ và cào cào",
+   "Lửa từ trời"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hết loài nầy đến loài khác ăn sạch mùa màng. “Cái gì sâu keo còn để lại thì cào cào ăn” (Giô-ên 1:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Giô-ên, Chúa hứa khi Ngài đổ Thần, những người già sẽ thế nào?",
+  "options": [
+   "Thấy thiên sứ",
+   "Nói tiếng lạ",
+   "Được trẻ lại",
+   "Được báo mộng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Con trai, con gái cũng sẽ nói tiên tri. “Những người già được báo mộng” (Giô-ên 2:28)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Giô-ên, Chúa hứa khi Ngài đổ Thần, các thanh niên sẽ thấy gì?",
+  "options": [
+   "Khải tượng",
+   "Ngôi sao lạ",
+   "Lửa từ trời",
+   "Thiên sứ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Thần Chúa được đổ trên mọi người, già lẫn trẻ. “Các thanh niên sẽ thấy khải tượng.” (Giô-ên 2:28)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Giô-ên, Chúa hứa sẽ đền bù cho dân điều gì?",
+  "options": [
+   "Đền thờ bị đốt",
+   "Vàng bạc bị cướp",
+   "Những năm mùa màng bị cắn phá",
+   "Thành bị phá đổ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cào cào và sâu bọ là đạo quân Chúa đã sai đến. “Ta sẽ đền bù cho các con Về những năm mùa màng bị cắn phá” (Giô-ên 2:25)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên kêu gọi dân trở về với Đức Chúa Trời vì Ngài thế nào?",
+  "options": [
+   "Xa cách loài người",
+   "Nhân từ, thương xót, chậm giận",
+   "Nghiêm khắc, khó tính",
+   "Chỉ thương người giàu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngài giàu tình thương và đổi ý không giáng tai họa. “Vì Ngài nhân từ, thương xót, chậm giận và giàu tình thương” (Giô-ên 2:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 2,
+  "verseStart": 31,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên nói trước ngày lớn của Đức Giê-hô-va, mặt trăng sẽ thế nào?",
+  "options": [
+   "Biến mất",
+   "Rơi xuống đất",
+   "Đỏ như máu",
+   "Sáng như mặt trời"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Mặt trời cũng sẽ trở nên tối tăm. “Mặt trăng đỏ như máu” (Giô-ên 2:31)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên kêu gọi các nước lấy lưỡi cày rèn thành gì?",
+  "options": [
+   "Gươm",
+   "Lưỡi liềm",
+   "Đinh",
+   "Cuốc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Các nước được gọi ra trận trước ngày phán xét. “Hãy lấy lưỡi cày rèn gươm” (Giô-ên 3:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Giô-ên là con trai của ai?",
+  "options": [
+   "A-mốt",
+   "Y-đô",
+   "Bê-ê-ri",
+   "Phê-thu-ên"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đó là câu mở đầu sách Giô-ên. “Lời Đức Giê-hô-va phán với Giô-ên, con trai của Phê-thu-ên:” (Giô-ên 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 3,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên nói đoàn người đông đảo tụ tại thung lũng nào khi ngày Đức Giê-hô-va gần kề?",
+  "options": [
+   "Thung lũng Hin-nôm",
+   "Thung lũng Chung Thẩm",
+   "Thung lũng Si-tim",
+   "Thung lũng A-cô"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đó là nơi các nước bị xét xử. “Tại thung lũng Chung Thẩm!” (Giô-ên 3:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Joel",
+  "chapter": 3,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Giô-ên nói dòng suối chảy ra từ nhà Đức Giê-hô-va sẽ tưới thung lũng nào?",
+  "options": [
+   "Thung lũng A-cô",
+   "Thung lũng Chung Thẩm",
+   "Thung lũng Gít-rê-ên",
+   "Thung lũng Si-tim"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Trong ngày ấy núi đồi tuôn rượu ngọt và sữa. “Và nhuần tưới thung lũng Si-tim.” (Giô-ên 3:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "Jonah",
   "chapter": 1,
   "verseStart": 3,
@@ -28431,6 +30800,604 @@
    0
   ],
   "explanation": "Mua của con cháu Hê-mô, cha Si-chem. “với giá một trăm miếng bạc” (Giô-suê 24:32)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Giu-đe, người viết thư Giu-đe, tự giới thiệu mình là em của ai?",
+  "options": [
+   "Phi-e-rơ",
+   "Phao-lô",
+   "Giăng",
+   "Gia-cơ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông cũng gọi mình là đầy tớ của Đức Chúa Jêsus Christ. “Giu-đe, đầy tớ của Đức Chúa Jêsus Christ và là em của Gia-cơ” (Giu-đe 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe khích lệ tín hữu chiến đấu vì điều gì?",
+  "options": [
+   "Đức tin đã truyền cho các thánh đồ",
+   "Đất nước Y-sơ-ra-ên",
+   "Quyền lợi của mình",
+   "Đền thờ Giê-ru-sa-lem"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đức tin ấy đã được truyền một lần đủ cả. “khích lệ anh em chiến đấu vì đức tin” (Giu-đe 1:3)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Cuối thư Giu-đe, tác giả cầu xin Đấng có quyền năng giữ tín hữu khỏi điều gì?",
+  "options": [
+   "Bắt bớ",
+   "Bệnh tật",
+   "Vấp ngã",
+   "Nghèo khó"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa khiến họ đứng trước vinh quang Ngài không tì vết. “Cầu xin Đấng có quyền năng giữ anh em khỏi vấp ngã” (Giu-đe 1:24)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe khuyên tín hữu hãy cầu nguyện trong ai?",
+  "options": [
+   "Tổ phụ Áp-ra-ham",
+   "Đức Thánh Linh",
+   "Các trưởng lão",
+   "Các thiên sứ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tín hữu cũng phải xây dựng mình trên đức tin rất thánh. “Hãy cầu nguyện trong Đức Thánh Linh.” (Giu-đe 1:20)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe kể thiên sứ trưởng nào tranh luận với ma quỷ về xác của Môi-se?",
+  "options": [
+   "Gáp-ri-ên",
+   "Sê-ra-phim",
+   "Mi-ca-ên",
+   "Chê-ru-bim"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngay cả thiên sứ trưởng cũng không dám nói lời phạm thượng. “Ngay cả khi thiên sứ trưởng Mi-ca-ên tranh luận với ma quỷ lúc tranh chấp xác của Môi-se” (Giu-đe 1:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi tranh chấp xác Môi-se, thiên sứ trưởng Mi-ca-ên chỉ nói gì với ma quỷ?",
+  "options": [
+   "Ngươi đã thua rồi",
+   "Hãy lui ra sau ta",
+   "Ta sẽ trói ngươi",
+   "Cầu Chúa quở trách ngươi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông để Chúa phán xét thay vì tự phán xét. “Cầu Chúa quở trách ngươi.” (Giu-đe 1:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe nói những kẻ không tin kính đã theo con đường của ai?",
+  "options": [
+   "Ca-in",
+   "Sết",
+   "A-bên",
+   "Nô-ê"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ca-in là người đã giết em mình. “Khốn thay cho họ vì đã theo con đường của Ca-in” (Giu-đe 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe trích lời tiên tri của ai, người là cháu bảy đời của A-đam?",
+  "options": [
+   "Nô-ê",
+   "Hê-nóc",
+   "Mê-tu-sê-la",
+   "Lê-méc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hê-nóc nói Chúa đến với muôn vàn đấng thánh. “Hê-nóc là cháu bảy đời của A-đam đã nói tiên tri” (Giu-đe 1:14)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe khuyên tín hữu hãy giữ mình trong điều gì?",
+  "options": [
+   "Truyền thống tổ phụ",
+   "Nhà của mình",
+   "Luật pháp Môi-se",
+   "Tình yêu thương của Đức Chúa Trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ chờ đợi sự thương xót của Chúa để được sự sống đời đời. “Hãy giữ mình trong tình yêu thương của Đức Chúa Trời.” (Giu-đe 1:21)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe ví những kẻ chè chén trong bữa tiệc yêu thương như những đám mây thế nào?",
+  "options": [
+   "Mây che mặt trời",
+   "Mây trắng trên núi",
+   "Mây không nước bị gió đùa",
+   "Mây đen sắp mưa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ hứa hẹn nhiều mà chẳng đem lại gì. “Họ là những đám mây không nước bị gió đùa đi” (Giu-đe 1:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe nói vì lợi lộc, những kẻ không tin kính sa vào lỗi lầm của ai?",
+  "options": [
+   "Ba-la-am",
+   "A-can",
+   "Cô-ra",
+   "Ca-in"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ba-la-am ham tiền công khi được thuê nguyền rủa Y-sơ-ra-ên. “vì lợi lộc đã sa vào lỗi lầm của Ba-la-am” (Giu-đe 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe nói những kẻ không tin kính bị hủy diệt vì sự phản loạn như ai?",
+  "options": [
+   "Áp-sa-lôm",
+   "Cô-ra",
+   "Ba-la-am",
+   "Ca-in"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Cô-ra nổi loạn chống Môi-se trong hoang mạc. “và bị hủy diệt vì sự phản loạn như Cô-ra.” (Giu-đe 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Jude",
+  "chapter": 1,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thư Giu-đe ví những kẻ không tin kính như sóng cuồng của biển và như gì?",
+  "options": [
+   "Lửa trong rừng",
+   "Cây khô ngoài đồng",
+   "Bụi trên đường",
+   "Những vì sao lạc"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bóng tối mù mịt đã dành sẵn cho họ. “họ như những vì sao lạc mà bóng tối mù mịt đã dành cho họ đời đời.” (Giu-đe 1:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ha-ba-cúc, Chúa phán người công chính sẽ sống bởi điều gì?",
+  "options": [
+   "Sức mạnh mình",
+   "Việc làm mình",
+   "Đức tin mình",
+   "Của cải mình"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phao-lô trích lời nầy trong thư Rô-ma và Ga-la-ti. “Nhưng người công chính sẽ sống bởi đức tin mình.” (Ha-ba-cúc 2:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 3,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Dù mùa màng thất bát, nhà tiên tri Ha-ba-cúc nói mình vẫn làm gì?",
+  "options": [
+   "Trách móc Chúa",
+   "Vui mừng trong Đức Giê-hô-va",
+   "Than khóc mãi",
+   "Bỏ xứ ra đi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Niềm vui của ông đặt nơi Chúa, không nơi mùa màng. “Con vẫn vui mừng trong Đức Giê-hô-va” (Ha-ba-cúc 3:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 2,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Ha-ba-cúc nói sự nhận biết vinh quang Đức Giê-hô-va sẽ đầy khắp đất như gì?",
+  "options": [
+   "Như nước phủ đầy biển",
+   "Như cát bờ biển",
+   "Như mưa đầu mùa",
+   "Như sao trên trời"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Một ngày kia cả đất sẽ biết vinh quang Chúa. “Sẽ đầy dẫy khắp đất Như nước phủ đầy biển.” (Ha-ba-cúc 2:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 2,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Ha-ba-cúc nói vì Đức Giê-hô-va ngự trong đền thánh, mọi người trên đất hãy làm gì?",
+  "options": [
+   "Dâng tế lễ",
+   "Chạy trốn",
+   "Ca hát lớn tiếng",
+   "Lặng thinh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Khác với hình tượng câm, Chúa thật đang ngự trị. “Trước mặt Ngài, mọi người trên đất hãy lặng thinh!” (Ha-ba-cúc 2:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa bảo nhà tiên tri Ha-ba-cúc chép khải tượng rõ ràng trên tấm bảng để làm gì?",
+  "options": [
+   "Để đọc vào ngày lễ",
+   "Để cất trong đền thờ",
+   "Để gửi cho vua",
+   "Để người đang chạy đọc được"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Khải tượng phải rõ ràng cho mọi người. “Để người đang chạy có thể đọc được.” (Ha-ba-cúc 2:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 3,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Ha-ba-cúc nói Chúa làm cho chân ông giống như chân con gì?",
+  "options": [
+   "Hươu",
+   "Sư tử",
+   "Lạc đà",
+   "Ngựa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa giúp ông vững vàng trên chỗ cao. “Ngài làm cho chân con giống như chân hươu” (Ha-ba-cúc 3:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Mở đầu sách, nhà tiên tri Ha-ba-cúc than với Chúa điều gì?",
+  "options": [
+   "Ông bị bỏ tù",
+   "Kêu cứu mà Chúa không lắng nghe",
+   "Ông không có con",
+   "Dân không chịu nghe ông"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông hỏi Chúa sẽ để sự bạo ngược đến bao giờ. “Lạy Đức Giê-hô-va! Con kêu cứu Mà Ngài không lắng nghe” (Ha-ba-cúc 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Ha-ba-cúc nói dù cây gì không nứt lộc, ông vẫn vui mừng trong Chúa?",
+  "options": [
+   "Cây chà là",
+   "Cây sồi",
+   "Cây vả",
+   "Cây bá hương"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Dù vườn nho, ô-liu và bầy chiên cũng mất. “Cho dù cây vả sẽ không nứt lộc nữa” (Ha-ba-cúc 3:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 3,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Ha-ba-cúc nói Chúa Giê-hô-va là gì của ông?",
+  "options": [
+   "Bóng che",
+   "Bạn đồng hành",
+   "Sức mạnh",
+   "Thầy dạy"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là lời kết bài cầu nguyện của ông. “Chúa Giê-hô-va là sức mạnh của con” (Ha-ba-cúc 3:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ha-ba-cúc nói kẻ kiêu căng không có điều gì?",
+  "options": [
+   "Bạn bè",
+   "Tâm hồn ngay thẳng",
+   "Nhà cửa",
+   "Của cải"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngược lại, người công chính sống bởi đức tin. “kẻ kiêu căng Không có tâm hồn ngay thẳng” (Ha-ba-cúc 2:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Ha-ba-cúc kêu van với Chúa vì điều gì?",
+  "options": [
+   "Bệnh dịch",
+   "Nạn đói",
+   "Hạn hán",
+   "Sự bạo ngược"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông thấy gian ác mà chưa thấy Chúa giải cứu. “Con kêu van với Ngài vì sự bạo ngược” (Ha-ba-cúc 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 3,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Bài cầu nguyện cuối sách Ha-ba-cúc được ghi là viết cho ai?",
+  "options": [
+   "Người điều khiển giàn nhạc đàn dây",
+   "Vua Giô-si-a",
+   "Dân lưu đày",
+   "Các thầy tế lễ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bài cầu nguyện ấy được dùng để hát. “(Viết cho người điều khiển giàn nhạc đàn dây)” (Ha-ba-cúc 3:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Habakkuk",
+  "chapter": 3,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Ha-ba-cúc nói Chúa giúp ông bước đi ở đâu?",
+  "options": [
+   "Trên các đỉnh cao",
+   "Trong thung lũng tối",
+   "Giữa sa mạc",
+   "Trên mặt biển"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa ban sức để ông vững bước nơi hiểm trở. “Giúp con bước đi trên các đỉnh cao.” (Ha-ba-cúc 3:19)",
   "language": "vi",
   "tags": [
    "Cựu Ước",
@@ -33622,6 +36589,397 @@
   "verseEnd": 51
  },
  {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa bảo dân đem gì vào kho để có lương thực trong nhà Ngài?",
+  "options": [
+   "Tất cả phần mười",
+   "Con đầu lòng",
+   "Bánh không men",
+   "Tất cả vàng bạc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa bảo dân hãy lấy điều nầy mà thử Ngài. “Hãy đem tất cả phần mười vào kho” (Ma-la-chi 3:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Đức Giê-hô-va phán Ngài là Đấng thế nào?",
+  "options": [
+   "Ở rất xa",
+   "Không hề thay đổi",
+   "Chỉ ở đền thờ",
+   "Hay đổi ý"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nhờ vậy con cháu Gia-cốp chẳng bị diệt vong. “Vì Ta là Đức Giê-hô-va không hề thay đổi” (Ma-la-chi 3:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa hứa sẽ sai nhà tiên tri nào đến trước ngày lớn của Ngài?",
+  "options": [
+   "Giê-rê-mi",
+   "Ê-sai",
+   "Ê-li",
+   "Môi-se"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus nói Giăng Báp-tít là Ê-li phải đến. “Nầy, Ta sẽ sai nhà tiên tri Ê-li đến với các con” (Ma-la-chi 4:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa hứa sai sứ giả của Ngài đến để làm gì?",
+  "options": [
+   "Đánh quân thù",
+   "Xây lại đền thờ",
+   "Thu phần mười",
+   "Dọn đường trước mặt Chúa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Các sách Phúc Âm thấy lời nầy ứng nghiệm nơi Giăng Báp-tít. “Nầy, Ta sai sứ giả của Ta đến để dọn đường trước mặt Ta” (Ma-la-chi 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Mở đầu sách Ma-la-chi, Đức Giê-hô-va phán điều gì với dân Ngài?",
+  "options": [
+   "Ta không biết các con",
+   "Ta giận các con",
+   "Ta yêu các con",
+   "Ta bỏ các con"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Dân lại hỏi Chúa yêu họ ở đâu. “Ta yêu các con” (Ma-la-chi 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa nói dân đã ăn trộm Ngài trong điều gì?",
+  "options": [
+   "Ngày sa-bát",
+   "Vàng trong đền thờ",
+   "Đất của người Lê-vi",
+   "Phần mười và tế lễ phải dâng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dân hỏi lại: chúng con có ăn trộm Chúa đâu? “Các con đã ăn trộm một phần mười và tế lễ phải dâng.” (Ma-la-chi 3:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa hứa nếu dân đem phần mười vào kho, Ngài sẽ mở gì trên trời?",
+  "options": [
+   "Kho báu",
+   "Các cửa sổ",
+   "Các cổng thành",
+   "Sách sự sống"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa sẽ đổ phước xuống đến nỗi không chỗ chứa. “xem Ta có mở các cửa sổ trên trời cho các con” (Ma-la-chi 3:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa trách dân dâng những con vật thế nào làm sinh tế?",
+  "options": [
+   "Đui, què hoặc bệnh tật",
+   "Còn quá non",
+   "Bò đực không tì vết",
+   "Béo tốt nhất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đem dâng cho quan tổng đốc thì ông cũng chẳng nhận. “Khi các ngươi dâng một con vật đui mù làm sinh tế” (Ma-la-chi 1:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa trách các thầy tế lễ điều gì?",
+  "options": [
+   "Không biết đọc luật",
+   "Lấy vợ ngoại bang",
+   "Bỏ đền thờ đi xa",
+   "Khinh dể danh Chúa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Con tôn kính cha, nhưng họ không tôn kính Chúa. “Hỡi các thầy tế lễ khinh dể danh Ta!” (Ma-la-chi 1:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 3,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ma-la-chi nói một sách ghi nhớ được chép trước mặt Chúa cho những ai?",
+  "options": [
+   "Người dâng nhiều nhất",
+   "Các vua Giu-đa",
+   "Người kính sợ Đức Giê-hô-va",
+   "Các thầy tế lễ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa lắng nghe khi họ nói chuyện với nhau. “Một sách ghi nhớ được chép trước mặt Ngài cho những người kính sợ Đức Giê-hô-va” (Ma-la-chi 3:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ma-la-chi nói cho người kính sợ danh Chúa, mặt trời gì sẽ mọc lên?",
+  "options": [
+   "Mặt trời công chính",
+   "Mặt trời ân điển",
+   "Mặt trời bình an",
+   "Mặt trời vinh hiển"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Trong cánh nó có sự chữa lành. “thì mặt trời công chính sẽ mọc lên cho các con, trong cánh nó có sự chữa lành.” (Ma-la-chi 4:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ma-la-chi nói nhà tiên tri Ê-li sẽ làm cho lòng cha ông thế nào?",
+  "options": [
+   "Trở nên cứng cỏi",
+   "Trở lại cùng con cháu",
+   "Rời xa Chúa",
+   "Quên con cháu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lòng con cháu cũng trở lại cùng cha ông. “Người sẽ làm cho lòng cha ông trở lại cùng con cháu” (Ma-la-chi 4:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 2,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Đức Giê-hô-va phán Ngài ghét việc gì?",
+  "options": [
+   "Dâng phần mười",
+   "Kiêng ăn",
+   "Ca hát",
+   "Ly dị"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa dặn dân đừng phản bội người phối ngẫu. “Ta ghét việc ly dị” (Ma-la-chi 2:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi dân hỏi Chúa yêu họ ở đâu, Chúa qua Ma-la-chi nhắc đến hai anh em nào?",
+  "options": [
+   "Ca-in và A-bên",
+   "Giô-sép và Bên-gia-min",
+   "Ê-sau và Gia-cốp",
+   "Ích-ma-ên và Y-sác"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa nhắc việc Ngài đã chọn Gia-cốp. “Chẳng phải Ê-sau là anh Gia-cốp sao?” (Ma-la-chi 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Ma-la-chi nói người kính sợ danh Chúa sẽ đi ra nhảy nhót như gì?",
+  "options": [
+   "Bò tơ được thả khỏi chuồng",
+   "Chiên con trên đồi",
+   "Ngựa trên đồng",
+   "Nai trên núi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là niềm vui của người được chữa lành. “Các con sẽ đi ra và nhảy nhót như bò tơ được thả ra khỏi chuồng.” (Ma-la-chi 4:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ma-la-chi, Chúa nói danh Ngài vĩ đại giữa các nước từ đâu đến đâu?",
+  "options": [
+   "Từ biển nầy đến biển kia",
+   "Từ nơi mặt trời mọc đến nơi lặn",
+   "Từ Đan đến Bê-e Sê-ba",
+   "Từ Ai Cập đến A-si-ri"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Khắp nơi người ta sẽ dâng tế lễ tinh sạch cho danh Ngài. “Vì từ nơi mặt trời mọc cho đến nơi mặt trời lặn, danh Ta là vĩ đại giữa các nước.” (Ma-la-chi 1:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Malachi",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Ma-la-chi nói ngày ấy đến sẽ cháy như gì, còn kẻ làm ác như rơm rạ?",
+  "options": [
+   "Mặt trời giữa trưa",
+   "Đám cháy rừng",
+   "Lò lửa",
+   "Núi lửa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Kẻ kiêu ngạo sẽ không còn rễ hay cành. “Kìa, ngày ấy đang đến, sẽ cháy như lò lửa.” (Ma-la-chi 4:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "Mark",
   "chapter": 1,
   "verseStart": 1,
@@ -37841,6 +41199,627 @@
   "verseEnd": 13
  },
  {
+  "book": "Micah",
+  "chapter": 5,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê báo trước Đấng cai trị Y-sơ-ra-ên sẽ được sinh ra từ đâu?",
+  "options": [
+   "Bết-lê-hem Ép-ra-ta",
+   "Hếp-rôn",
+   "Giê-ru-sa-lem",
+   "Na-xa-rét"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lời tiên tri ứng nghiệm khi Chúa Jêsus giáng sinh. “Hỡi Bết-lê-hem Ép-ra-ta” (Mi-chê 5:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 6,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê nói Chúa đòi hỏi làm điều công chính, ưa sự nhân từ và làm gì?",
+  "options": [
+   "Kiêng ăn mỗi tuần",
+   "Bước đi khiêm nhường với Đức Chúa Trời",
+   "Dâng hàng nghìn chiên đực",
+   "Xây thêm bàn thờ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa muốn tấm lòng hơn là lễ vật. “Và bước đi cách khiêm nhường với Đức Chúa Trời ngươi sao?” (Mi-chê 6:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 7,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê nói Chúa sẽ ném tất cả tội lỗi của dân xuống đâu?",
+  "options": [
+   "Hoang mạc",
+   "Lửa đời đời",
+   "Đáy biển",
+   "Hố sâu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa sẽ còn thương xót dân Ngài. “Và ném tất cả tội lỗi chúng tôi Xuống đáy biển.” (Mi-chê 7:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê nói trong thời bình an, người ta sẽ lấy gươm rèn thành gì?",
+  "options": [
+   "Cái khiên",
+   "Mũi giáo",
+   "Mũi tên",
+   "Lưỡi cày"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Các nước sẽ không còn tập trận nữa. “Họ sẽ lấy gươm rèn lưỡi cày” (Mi-chê 4:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê nói trong thời bình an, ai nấy sẽ ngồi dưới những cây nào của mình?",
+  "options": [
+   "Cây chà là",
+   "Cây sồi và cây hạnh",
+   "Cây nho và cây vả",
+   "Cây bá hương"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Không ai làm cho họ sợ hãi nữa. “Ai nấy sẽ ngồi dưới cây nho mình Và dưới cây vả mình” (Mi-chê 4:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê là người ở đâu?",
+  "options": [
+   "A-na-tốt",
+   "Ên-cốt",
+   "Thê-cô-a",
+   "Mô-rê-sết"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông nói tiên tri về Sa-ma-ri và Giê-ru-sa-lem. “Lời của Đức Giê-hô-va phán với Mi-chê, người Mô-rê-sết” (Mi-chê 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 5,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê nói Bết-lê-hem Ép-ra-ta ở giữa hàng nghìn Giu-đa thế nào?",
+  "options": [
+   "Lớn nhất",
+   "Nhỏ lắm",
+   "Mạnh nhất",
+   "Giàu nhất"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dù nhỏ, từ đó sẽ ra Đấng cai trị Y-sơ-ra-ên. “Ngươi ở trong hàng nghìn Giu-đa là nhỏ lắm” (Mi-chê 5:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 5,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê nói Đấng cai trị sinh ra ở Bết-lê-hem có nguồn gốc từ khi nào?",
+  "options": [
+   "Từ đời xưa, từ trước vô cùng",
+   "Từ thời Môi-se",
+   "Từ thời Đa-vít",
+   "Từ năm Ngài sinh ra"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đấng ấy đã có từ trước mọi thời đại. “Nguồn gốc của Ngài từ đời xưa, Từ trước vô cùng.” (Mi-chê 5:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 6,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê hỏi: Đức Giê-hô-va có thích hàng nghìn chiên đực và hàng vạn sông gì không?",
+  "options": [
+   "Sông mật",
+   "Sông dầu",
+   "Sông rượu",
+   "Sông sữa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lễ vật nhiều đến đâu cũng không thay được tấm lòng. “Với hàng vạn sông dầu sao?” (Mi-chê 6:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 7,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê nói Chúa không giữ lòng giận đời đời vì Ngài vui thích điều gì?",
+  "options": [
+   "Sự nhân từ",
+   "Sự trừng phạt",
+   "Lời ca ngợi",
+   "Tế lễ thiêu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài tha thứ sự gian ác của dân sót lại. “Ngài không giữ lòng giận đời đời, Vì Ngài vui thích sự nhân từ.” (Mi-chê 7:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 7,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giữa thời gian ác, nhà tiên tri Mi-chê nói về phần mình sẽ làm gì?",
+  "options": [
+   "Cầu cứu vua A-si-ri",
+   "Chạy trốn sang Ai Cập",
+   "Im lặng ngồi chờ",
+   "Nhìn xem và trông đợi Chúa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông tin Đức Chúa Trời sẽ nghe tiếng mình. “Nhưng về phần tôi, tôi sẽ nhìn xem Đức Giê-hô-va” (Mi-chê 7:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê báo trước rằng vì tội của các lãnh đạo, Si-ôn sẽ bị cày như gì?",
+  "options": [
+   "Như sân đập lúa",
+   "Như vườn nho",
+   "Như ruộng",
+   "Như đường cái"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Giê-ru-sa-lem sẽ trở thành đống đổ nát. “Si-ôn sẽ bị cày như ruộng” (Mi-chê 3:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê nói trong thời bình an, người ta sẽ lấy giáo rèn thành gì?",
+  "options": [
+   "Lưỡi liềm",
+   "Cái rìu",
+   "Cái cuốc",
+   "Lưỡi cày"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Gươm cũng được rèn thành lưỡi cày. “Lấy giáo rèn lưỡi liềm” (Mi-chê 4:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê nói tiên tri dưới thời những vua Giu-đa nào?",
+  "options": [
+   "Giô-si-a, Sê-đê-kia, Giê-hô-gia-kim",
+   "Đa-vít, Sa-lô-môn, Rô-bô-am",
+   "Giô-tham, A-cha, Ê-xê-chia",
+   "A-sa, Giô-sa-phát, Giô-ram"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông cùng thời với nhà tiên tri Ê-sai. “trong thời các vua của Giu-đa là Giô-tham, A-cha và Ê-xê-chia” (Mi-chê 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 7,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê than rằng thời ấy kẻ thù của người ta chính là ai?",
+  "options": [
+   "Các thầy tế lễ",
+   "Vua A-si-ri",
+   "Dân ngoại",
+   "Người nhà mình"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Con trai sỉ nhục cha, con gái nghịch với mẹ. “Và kẻ thù của người ta chính là người nhà mình.” (Mi-chê 7:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê nói khi dân được giải cứu, ai sẽ đi lên trước họ?",
+  "options": [
+   "Thầy tế lễ thượng phẩm",
+   "Người mở đường",
+   "Hòm Giao Ước",
+   "Đạo quân thiên sứ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vua của họ đi trước và Đức Giê-hô-va dẫn đầu. “Người mở đường sẽ lên trước họ” (Mi-chê 2:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Micah",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Mi-chê nói núi của đền thờ sẽ trở nên như gì?",
+  "options": [
+   "Đồi cây rậm rạp",
+   "Sa mạc khô cằn",
+   "Một hồ nước",
+   "Đống tro tàn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là hình phạt vì tội lỗi của các lãnh đạo. “Và núi của đền thờ sẽ trở nên như đồi cây rậm rạp!” (Mi-chê 3:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum là lời tiên tri về thành nào?",
+  "options": [
+   "Đa-mách",
+   "Ty-rơ",
+   "Ni-ni-ve",
+   "Ba-by-lôn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ni-ni-ve là kinh đô của đế quốc A-si-ri. “Lời tiên tri về Ni-ni-ve.” (Na-hum 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum nói Đức Giê-hô-va tốt lành, là gì trong ngày hoạn nạn?",
+  "options": [
+   "Ngọn đèn",
+   "Dòng suối",
+   "Bóng mát",
+   "Thành lũy"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ngài là nơi ẩn náu vững chắc cho dân Ngài. “Đức Giê-hô-va thật tốt lành, Là thành lũy trong ngày hoạn nạn” (Na-hum 1:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum nói Đức Giê-hô-va chậm giận nhưng đối xử thế nào với kẻ có tội?",
+  "options": [
+   "Quên ngay",
+   "Chẳng coi là vô tội",
+   "Luôn bỏ qua",
+   "Không để ý"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ngài có quyền năng rất lớn. “Nhưng Ngài chẳng coi kẻ có tội là vô tội.” (Na-hum 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum nói Đức Giê-hô-va biết những ai?",
+  "options": [
+   "Những ai ẩn náu nơi Ngài",
+   "Những người giàu có",
+   "Những vua chúa",
+   "Những người nổi tiếng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài là thành lũy trong ngày hoạn nạn. “Ngài biết những ai ẩn náu nơi Ngài.” (Na-hum 1:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum nói đám mây là gì dưới chân Đức Giê-hô-va?",
+  "options": [
+   "Bụi",
+   "Cái ngai",
+   "Tấm thảm",
+   "Bậc thang"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ngài bước đi trong gió lốc và bão tố. “Đám mây là bụi dưới chân Ngài.” (Na-hum 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum nói trên các núi đồi có bàn chân của ai đến với Giu-đa?",
+  "options": [
+   "Các thầy tế lễ",
+   "Đoàn lữ hành",
+   "Quân A-si-ri",
+   "Sứ giả báo tin lành"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sứ giả công bố bình an vì kẻ thù đã bị tận diệt. “Có bàn chân của sứ giả báo tin lành” (Na-hum 1:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum gọi Ni-ni-ve là thành gì?",
+  "options": [
+   "Thành vàng",
+   "Thành vấy máu",
+   "Thành bình an",
+   "Thành thánh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Thành đầy dối trá, cường bạo và cướp bóc. “Khốn cho thành vấy máu!” (Na-hum 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 2,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Na-hum nói từ lâu Ni-ni-ve giống như gì trước khi dân trong thành chạy trốn?",
+  "options": [
+   "Vườn đầy hoa",
+   "Tháp cao ngất",
+   "Hồ đầy nước",
+   "Kho đầy lúa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Giờ đây không ai quay lại dù có tiếng gọi. “Từ lâu, Ni-ni-ve như hồ đầy nước.” (Na-hum 2:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Na-hum là người ở đâu?",
+  "options": [
+   "Mô-rê-sết",
+   "Thê-cô-a",
+   "A-na-tốt",
+   "Ên-cốt"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sách của ông là khải tượng về Ni-ni-ve. “Sách khải tượng của Na-hum, người Ên-cốt.” (Na-hum 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Nahum",
+  "chapter": 3,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Câu cuối sách Na-hum nói những ai nghe tin Ni-ni-ve sụp đổ đều làm gì?",
+  "options": [
+   "Xé áo",
+   "Im lặng",
+   "Vỗ tay",
+   "Than khóc"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ai cũng từng chịu sự thống trị tàn ác của nó. “Tất cả những ai nghe nói về ngươi đều vỗ tay” (Na-hum 3:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "Nehemiah",
   "chapter": 1,
   "verseStart": 11,
@@ -39152,6 +43131,397 @@
   ]
  },
  {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo lệnh của Đức Giê-hô-va, nhà tiên tri Ô-sê cưới ai làm vợ?",
+  "options": [
+   "Đê-bô-ra",
+   "Ra-háp",
+   "Gô-me",
+   "Ru-tơ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cuộc hôn nhân ấy là hình ảnh về dân Y-sơ-ra-ên bất trung với Chúa. “Vậy, Ô-sê cưới Gô-me, con gái của Đíp-la-im.” (Ô-sê 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 6,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ô-sê, Chúa phán Ngài muốn lòng thương xót chứ không phải gì?",
+  "options": [
+   "Ca hát",
+   "Sinh tế",
+   "Đền thờ",
+   "Kiêng ăn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa thích sự nhận biết Ngài hơn tế lễ thiêu. “Vì Ta muốn lòng thương xót chứ không phải sinh tế” (Ô-sê 6:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 8,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Ô-sê nói những kẻ đã gieo gió thì phải gặt gì?",
+  "options": [
+   "Lúa",
+   "Mưa",
+   "Sương",
+   "Bão"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dân bỏ Chúa sẽ gặt hậu quả nặng nề hơn. “Vì chúng đã gieo gió thì phải gặt bão.” (Ô-sê 8:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 11,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ô-sê, Chúa phán Ngài đã gọi con trai Ngài ra khỏi xứ nào?",
+  "options": [
+   "Ai Cập",
+   "Mô-áp",
+   "Ba-by-lôn",
+   "A-si-ri"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa yêu Y-sơ-ra-ên từ khi dân còn thơ ấu. “Ta gọi con trai Ta ra khỏi Ai Cập.” (Ô-sê 11:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ô-sê, Chúa phán dân Ngài bị tiêu diệt vì thiếu điều gì?",
+  "options": [
+   "Vàng bạc",
+   "Đất đai",
+   "Quân lính",
+   "Hiểu biết"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dân đã quên luật pháp của Đức Chúa Trời. “Dân Ta bị tiêu diệt vì thiếu hiểu biết” (Ô-sê 4:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đứa con trai đầu của nhà tiên tri Ô-sê và Gô-me được Chúa đặt tên là gì?",
+  "options": [
+   "Gít-rê-ên",
+   "Ma-he-sa-la",
+   "Sê-a-gia-súp",
+   "Lô Am-mi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Tên ấy báo trước sự trừng phạt nhà Giê-hu. “Hãy đặt tên nó là Gít-rê-ên” (Ô-sê 1:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Con gái của nhà tiên tri Ô-sê được đặt tên Lô Ru-ha-ma để nói điều gì?",
+  "options": [
+   "Y-sơ-ra-ên sẽ có vua mới",
+   "Dân sẽ trở về Ai Cập",
+   "Chúa không còn thương xót Y-sơ-ra-ên",
+   "Chúa sẽ ban phước thêm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tên các con của Ô-sê là lời cảnh cáo cho dân. “vì Ta không còn thương xót nhà Y-sơ-ra-ên” (Ô-sê 1:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Con trai út của nhà tiên tri Ô-sê được đặt tên Lô Am-mi để nói điều gì?",
+  "options": [
+   "Dân được thương xót",
+   "Không còn là dân của Ta",
+   "Đức Chúa Trời đã nghe",
+   "Ta ở cùng các ngươi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dân đã lìa bỏ giao ước với Chúa. “vì các ngươi không còn là dân của Ta nữa” (Ô-sê 1:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 6,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ô-sê, Chúa nói tình yêu Ép-ra-im và Giu-đa dành cho Ngài giống như gì?",
+  "options": [
+   "Dòng sông lớn",
+   "Cây cổ thụ",
+   "Tảng đá vững",
+   "Mây buổi sáng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tình yêu ấy chóng tan như sương mai. “Tình yêu các ngươi dành cho Ta giống như mây buổi sáng, Như sương mai chóng tan.” (Ô-sê 6:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 7,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ô-sê ví Ép-ra-im pha trộn với các dân khác như chiếc bánh thế nào?",
+  "options": [
+   "Bánh không trở",
+   "Bánh cháy đen",
+   "Bánh không men",
+   "Bánh bị mốc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bánh chỉ chín một mặt, mặt kia còn sống. “Ép-ra-im khác nào chiếc bánh không trở.” (Ô-sê 7:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 7,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ô-sê ví Ép-ra-im chạy đến Ai Cập rồi A-si-ri như loài chim khờ khạo nào?",
+  "options": [
+   "Con quạ",
+   "Bồ câu",
+   "Chim sẻ",
+   "Chim ưng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dân tìm cậy các nước thay vì cậy Chúa. “Ép-ra-im giống như chim bồ câu Khờ khạo, thiếu khôn ngoan” (Ô-sê 7:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 11,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ô-sê, Chúa nói Ngài đã kéo dân đến với mình bằng gì?",
+  "options": [
+   "Tiếng kèn",
+   "Gươm và giáo",
+   "Dây nhân từ, xích yêu thương",
+   "Roi sắt"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa chăm sóc dân như người cúi xuống cho ăn. “Ta đã dùng dây nhân từ, Dùng xích yêu thương mà kéo chúng đến.” (Ô-sê 11:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 6,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ô-sê kêu gọi trở về cùng Đức Giê-hô-va, vì Ngài đã xé nhưng sẽ làm gì?",
+  "options": [
+   "Phạt thêm",
+   "Quên lãng",
+   "Chữa lành",
+   "Bỏ đi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngài đánh nhưng sẽ băng bó vết thương. “Vì Ngài đã xé chúng ta, nhưng Ngài sẽ chữa lành” (Ô-sê 6:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Gô-me, vợ của nhà tiên tri Ô-sê, là con gái của ai?",
+  "options": [
+   "Bê-ê-ri",
+   "Đíp-la-im",
+   "A-mốt",
+   "Giô-ách"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bà sinh cho Ô-sê con trai đầu là Gít-rê-ên. “Vậy, Ô-sê cưới Gô-me, con gái của Đíp-la-im.” (Ô-sê 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Ô-sê, Chúa hứa biến thung lũng nào thành cánh cửa hi vọng?",
+  "options": [
+   "Thung lũng Gít-rê-ên",
+   "Thung lũng Hin-nôm",
+   "Thung lũng Ê-la",
+   "Thung lũng A-cô"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nơi từng nhắc tội lỗi trở thành nơi hi vọng. “Biến thung lũng A-cô thành cánh cửa hi vọng.” (Ô-sê 2:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 14,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Ô-sê kêu gọi dân dâng tế lễ ngợi ca bằng đôi môi thay vì dâng gì?",
+  "options": [
+   "Bò tơ đực",
+   "Lúa mạch",
+   "Chiên con",
+   "Bồ câu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dân trở lại với Chúa bằng lời xưng tội. “Để chúng con dâng tế lễ ngợi ca bằng đôi môi Thay vì bò tơ đực.” (Ô-sê 14:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Hosea",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ô-sê, nhà tiên tri thời các vua Ô-xia đến Ê-xê-chia, là con trai của ai?",
+  "options": [
+   "Bê-ê-ri",
+   "Phê-thu-ên",
+   "Đíp-la-im",
+   "A-mốt"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông nói tiên tri cùng thời vua Giê-rô-bô-am của Y-sơ-ra-ên. “Đây là lời Đức Giê-hô-va phán với Ô-sê, con trai Bê-ê-ri” (Ô-sê 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "Philippians",
   "chapter": 1,
   "verseStart": 1,
@@ -39858,6 +44228,236 @@
    2
   ],
   "explanation": "Tin Lành đã đến cả những người trong nhà hoàng đế. “đặc biệt là những người thuộc nhà Sê-sa.” (Phi-líp 4:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong thư gửi Phi-lê-môn, Phao-lô nài xin giúp ai?",
+  "options": [
+   "Ti-mô-thê",
+   "Ô-nê-sim",
+   "Lu-ca",
+   "A-chíp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ô-nê-sim là nô lệ của Phi-lê-môn đã bỏ đi. “nài xin anh giúp Ô-nê-sim” (Phi-lê-môn 1:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô xin Phi-lê-môn nhận lại Ô-nê-sim không như nô lệ nữa, mà như ai?",
+  "options": [
+   "Một tù nhân",
+   "Một vị khách lạ",
+   "Một anh em quý mến",
+   "Một người làm thuê"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ô-nê-sim đã tin Chúa khi ở với Phao-lô. “không phải như một nô lệ nữa, nhưng hơn hẳn một nô lệ, là một anh em quý mến.” (Phi-lê-môn 1:16)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi viết thư cho Phi-lê-môn, Phao-lô tự gọi mình là gì?",
+  "options": [
+   "Sứ đồ của dân ngoại",
+   "Người chăn chiên",
+   "Thầy của Phi-lê-môn",
+   "Người tù của Đấng Christ Jêsus"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phao-lô viết thư nầy khi đang bị giam. “Phao-lô, người tù của Đấng Christ Jêsus” (Phi-lê-môn 1:1)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói nếu Ô-nê-sim làm thiệt hại hay mắc nợ Phi-lê-môn thì sao?",
+  "options": [
+   "Cứ tính cho Phao-lô",
+   "Đưa ra tòa",
+   "Bắt Ô-nê-sim trả",
+   "Bỏ qua hết"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Phao-lô tự tay hứa sẽ hoàn trả. “Nếu người nầy có làm thiệt hại anh, hoặc mắc nợ điều gì thì anh cứ tính cho tôi.” (Phi-lê-môn 1:18)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói trước kia Ô-nê-sim không ích lợi gì cho Phi-lê-môn, còn bây giờ thì sao?",
+  "options": [
+   "Vẫn vô ích",
+   "Chỉ ích lợi cho Phao-lô",
+   "Đã bỏ đi xa",
+   "Ích lợi cho cả hai người"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tên Ô-nê-sim có nghĩa là có ích. “nhưng bây giờ thì ích lợi cho cả anh và tôi.” (Phi-lê-môn 1:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư gửi Phi-lê-môn, Phao-lô nhờ chuẩn bị điều gì cho ông?",
+  "options": [
+   "Một con lừa",
+   "Một chỗ trọ",
+   "Một chiếc thuyền",
+   "Một bữa tiệc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Phao-lô hi vọng được trả tự do và đến thăm. “hãy chuẩn bị cho tôi một chỗ trọ” (Phi-lê-môn 1:22)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói nhờ Phi-lê-môn mà lòng của ai được tươi mới?",
+  "options": [
+   "Các quan La Mã",
+   "Các nô lệ",
+   "Các thánh đồ",
+   "Các thầy tế lễ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tình yêu của Phi-lê-môn an ủi Phao-lô. “vì nhờ anh mà lòng của các thánh đồ được tươi mới.” (Phi-lê-môn 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói ông đã sinh ra Ô-nê-sim trong đức tin vào lúc nào?",
+  "options": [
+   "Trong vòng xiềng xích",
+   "Trên một chuyến tàu",
+   "Tại nhà Phi-lê-môn",
+   "Khi ở Giê-ru-sa-lem"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ô-nê-sim tin Chúa khi gặp Phao-lô trong tù. “người con mà tôi đã sinh ra trong vòng xiềng xích.” (Phi-lê-môn 1:10)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ngoài Phi-lê-môn, Áp-bi và Hội Thánh tại nhà, thư của Phao-lô còn gửi cho ai?",
+  "options": [
+   "Ô-nê-sim",
+   "Ê-pháp-ra",
+   "Ty-chi-cơ",
+   "A-chíp"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phao-lô gọi ông là bạn cùng chiến đấu. “A-chíp, người bạn cùng chiến đấu” (Phi-lê-môn 1:2)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Philemon",
+  "chapter": 1,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cuối thư gửi Phi-lê-môn, những bạn đồng lao nào cùng Phao-lô gửi lời chào?",
+  "options": [
+   "Phi-e-rơ, Gia-cơ và Giăng",
+   "Mác, A-ri-tạc, Đê-ma và Lu-ca",
+   "Ba-na-ba, Si-la và Tít",
+   "A-bô-lô, Sốt-then và Crít-pu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ê-pháp-ra cũng gửi lời chào. “Mác, A-ri-tạc, Đê-ma và Lu-ca, những bạn đồng lao của tôi cũng vậy.” (Phi-lê-môn 1:24)",
   "language": "vi",
   "tags": [
    "Tân Ước",
@@ -46358,6 +50958,236 @@
   ]
  },
  {
+  "book": "Zephaniah",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Sô-phô-ni nói Đức Chúa Trời ngự giữa dân Ngài sẽ làm gì vì họ?",
+  "options": [
+   "Bỏ đi",
+   "Nổi giận",
+   "Than khóc",
+   "Ca hát mừng rỡ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa vui mừng hoan hỉ vì dân Ngài. “Và vì ngươi, Ngài sẽ ca hát mừng rỡ.” (Sô-phô-ni 3:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 3,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Sô-phô-ni kêu gọi con gái Si-ôn hãy làm gì?",
+  "options": [
+   "Bỏ trốn",
+   "Than khóc",
+   "Hát to lên",
+   "Im lặng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa đã cất bỏ sự phán xét khỏi dân Ngài. “Hỡi con gái Si-ôn, hãy hát to lên!” (Sô-phô-ni 3:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 2,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Sô-phô-ni kêu gọi những người nhu mì trên đất hãy tìm kiếm ai?",
+  "options": [
+   "Vua Giu-đa",
+   "Đức Giê-hô-va",
+   "Vua A-si-ri",
+   "Các thầy bói"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Có lẽ họ sẽ được che chở trong ngày thịnh nộ. “Hãy tìm kiếm Đức Giê-hô-va” (Sô-phô-ni 2:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Sô-phô-ni nói tiên tri vào thời vua Giu-đa nào?",
+  "options": [
+   "Giô-si-a",
+   "Ma-na-se",
+   "Ê-xê-chia",
+   "Ô-xia"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Giô-si-a là con trai A-môn. “Vào thời của Giô-si-a, con trai A-môn, vua Giu-đa” (Sô-phô-ni 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Sô-phô-ni nói ngày trọng đại của Đức Giê-hô-va thế nào?",
+  "options": [
+   "Sẽ không đến",
+   "Còn rất xa",
+   "Đang đến gần, rất nhanh",
+   "Đã qua rồi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngày ấy dũng sĩ cũng phải kêu khóc. “Ngày trọng đại của Đức Giê-hô-va đang đến gần, Đến gần rồi, nó đến rất nhanh.” (Sô-phô-ni 1:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Sô-phô-ni, Chúa nói sẽ dùng gì lục soát Giê-ru-sa-lem?",
+  "options": [
+   "Chó săn",
+   "Đèn đuốc",
+   "Gươm sắc",
+   "Lưới"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa sẽ trừng phạt những kẻ tự mãn. “Lúc ấy, Ta sẽ dùng đèn đuốc lục soát Giê-ru-sa-lem” (Sô-phô-ni 1:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Sô-phô-ni nói thành Ni-ni-ve sẽ trở nên thế nào?",
+  "options": [
+   "Hoang vu, khô như sa mạc",
+   "Thủ đô của Giu-đa",
+   "Đông dân hơn",
+   "Lớn hơn trước"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa sẽ hủy diệt A-si-ri. “Và làm cho Ni-ni-ve trở nên một nơi hoang vu, Một chỗ khô khan như sa mạc.” (Sô-phô-ni 2:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 3,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Sô-phô-ni, Chúa hứa thanh tẩy môi miệng các dân để làm gì?",
+  "options": [
+   "Thề trung thành với vua",
+   "Hát bài ca mới",
+   "Nói chung một thứ tiếng",
+   "Kêu cầu danh Đức Giê-hô-va"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Các dân sẽ kề vai sát cánh phụng sự Ngài. “Để tất cả đều kêu cầu danh Đức Giê-hô-va” (Sô-phô-ni 3:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo câu mở đầu sách, nhà tiên tri Sô-phô-ni là chít của ai?",
+  "options": [
+   "Giô-si-a",
+   "Ê-xê-chia",
+   "A-môn",
+   "Ô-xia"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Cha ông là Cút-si, ông nội là Ghê-đa-lia. “chít của Ê-xê-chia” (Sô-phô-ni 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zephaniah",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Sô-phô-ni, Chúa nói sẽ để lại giữa Si-ôn một dân thế nào?",
+  "options": [
+   "Nghèo nàn và thấp hèn",
+   "Khôn ngoan",
+   "Đông đúc",
+   "Giàu có và mạnh mẽ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Họ sẽ ẩn náu trong danh Đức Giê-hô-va. “Một dân nghèo nàn và thấp hèn” (Sô-phô-ni 3:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "Psalms",
   "chapter": 46,
   "verseStart": 1,
@@ -48083,6 +52913,305 @@
   ]
  },
  {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô để Tít ở lại đảo nào để chỉnh đốn công việc và lập trưởng lão?",
+  "options": [
+   "Síp",
+   "Rô-đơ",
+   "Cơ-rết",
+   "Man-tơ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tít phải bổ nhiệm trưởng lão trong mỗi thành. “Ta đã để con ở lại Cơ-rết” (Tít 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Tít nói Đức Chúa Trời cứu chúng ta không phải bởi việc công chính mình làm, nhưng bởi gì?",
+  "options": [
+   "Của lễ chúng ta dâng",
+   "Lòng thương xót của Ngài",
+   "Dòng dõi Áp-ra-ham",
+   "Luật pháp Môi-se"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Sự cứu rỗi đến qua sự tái sinh bởi Đức Thánh Linh. “nhưng bởi lòng thương xót của Ngài” (Tít 3:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Tít nói ân điển cứu chuộc của Đức Chúa Trời được bày tỏ cho ai?",
+  "options": [
+   "Mọi người",
+   "Chỉ người Do Thái",
+   "Chỉ người Cơ-rết",
+   "Chỉ các trưởng lão"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ân điển dạy chúng ta sống tiết độ, công chính. “Vì ân điển cứu chuộc của Đức Chúa Trời dành cho mọi người đã được bày tỏ.” (Tít 2:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong thư gửi Tít, Phao-lô gọi Tít là gì?",
+  "options": [
+   "Em ruột của ta",
+   "Thầy của ta",
+   "Vị khách quý",
+   "Con thật trong đức tin chung"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phao-lô xem Tít như con thiêng liêng của mình. “Mến gửi Tít, con thật của ta trong đức tin chung” (Tít 1:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô trích lời một nhà tiên tri người Cơ-rết rằng người Cơ-rết luôn là những kẻ gì?",
+  "options": [
+   "Những kẻ nói dối",
+   "Những người hiếu khách",
+   "Những người chăm chỉ",
+   "Những thủy thủ giỏi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vì vậy Tít phải nghiêm khắc quở trách họ. “Người Cơ-rết luôn là những kẻ nói dối” (Tít 1:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư gửi Tít, Phao-lô nói trưởng lão phải là người thế nào?",
+  "options": [
+   "Học thức cao nhất",
+   "Giàu có nhất thành",
+   "Lớn tuổi nhất",
+   "Không có gì đáng trách"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Con cái trưởng lão cũng phải tin Chúa. “Trưởng lão phải là người không có gì đáng trách” (Tít 1:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư gửi Tít, Phao-lô nói giám mục là gì của nhà Đức Chúa Trời?",
+  "options": [
+   "Người khách",
+   "Người canh cửa",
+   "Người quản lý",
+   "Người thợ xây"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì thế giám mục phải không chê trách được. “Vì là người quản lý nhà Đức Chúa Trời” (Tít 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn Tít trong mọi việc phải làm gương qua điều gì?",
+  "options": [
+   "Áo quần đẹp",
+   "Các việc lành",
+   "Của cải",
+   "Lời nói hay"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tít cũng phải trung thực, nghiêm trang khi dạy dỗ. “chính con phải gương mẫu qua các việc lành” (Tít 2:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Tít nói tín hữu đang chờ đợi sự xuất hiện vinh quang của ai?",
+  "options": [
+   "Cứu Chúa Jêsus Christ",
+   "Vua Đa-vít",
+   "Thiên sứ Gáp-ri-ên",
+   "Nhà tiên tri Ê-li"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là niềm hi vọng phước hạnh của tín hữu. “cũng là Cứu Chúa chúng ta là Đức Chúa Jêsus Christ” (Tít 2:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn Tít tránh những tranh cãi dại dột về điều gì?",
+  "options": [
+   "Cầu nguyện",
+   "Gia phả và luật pháp",
+   "Việc lành",
+   "Ân điển"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Những điều ấy vô ích và chẳng có giá trị. “những vấn đề gia phả, những sự bất hòa và những tranh luận về luật pháp” (Tít 3:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô bảo Tít đến gặp ông tại đâu, nơi ông định ở qua mùa đông?",
+  "options": [
+   "Cô-rinh-tô",
+   "Rô-ma",
+   "Ê-phê-sô",
+   "Ni-cô-pô-li"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tít sẽ đến khi có người thay ông ở Cơ-rết. “hãy cố gắng đến ngay với ta tại Ni-cô-pô-li, vì ta định ở đó qua mùa đông.” (Tít 3:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn Tít lo liệu cho luật sư nào cùng với A-pô-lô khi họ ra đi?",
+  "options": [
+   "A-tê-ma",
+   "Lu-ca",
+   "Xê-na",
+   "Ty-chi-cơ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phao-lô muốn họ không thiếu thứ gì. “Hãy cố lo liệu cho luật sư Xê-na và cho A-pô-lô” (Tít 3:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói sẽ sai ai đến cùng Tít ở Cơ-rết?",
+  "options": [
+   "Ti-mô-thê hoặc Lu-ca",
+   "Xê-na hoặc A-pô-lô",
+   "A-tê-ma hoặc Ty-chi-cơ",
+   "Mác hoặc Si-la"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Khi người ấy đến, Tít sẽ đi gặp Phao-lô. “Khi ta sai A-tê-ma hoặc Ty-chi-cơ đến cùng con” (Tít 3:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "Ecclesiastes",
   "chapter": 1,
   "verseStart": 2,
@@ -48605,6 +53734,397 @@
    1
   ],
   "explanation": "Còn một mình thì làm sao ấm được. “nếu hai người ngủ chung thì ấm” (Truyền Đạo 4:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 9,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Xa-cha-ri báo trước Vua của Si-ôn sẽ đến, khiêm tốn và cưỡi con gì?",
+  "options": [
+   "Lạc đà",
+   "Xe ngựa",
+   "Lừa con",
+   "Ngựa trắng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lời nầy ứng nghiệm khi Chúa Jêsus vào Giê-ru-sa-lem. “Khiêm tốn và cưỡi lừa, Một con lừa con” (Xa-cha-ri 9:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Xa-cha-ri, Chúa phán với Xô-rô-ba-bên: chẳng phải bởi quyền thế hay năng lực, nhưng bởi gì?",
+  "options": [
+   "Bởi vàng bạc",
+   "Bởi Thần của Chúa",
+   "Bởi quân đội",
+   "Bởi vua Ba Tư"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đền thờ sẽ được xây xong nhờ Thần Chúa. “nhưng bởi Thần Ta.” (Xa-cha-ri 4:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 2,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Xa-cha-ri nói ai đụng đến dân Chúa tức là đụng đến gì của Ngài?",
+  "options": [
+   "Tay phải Ngài",
+   "Đền thờ Ngài",
+   "Ngai Ngài",
+   "Con ngươi của mắt Ngài"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa gìn giữ dân Ngài như con ngươi mắt mình. “ai đụng đến anh em tức là đụng đến con ngươi của mắt Ngài.” (Xa-cha-ri 2:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 14,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Xa-cha-ri nói trong ngày ấy Đức Giê-hô-va sẽ làm vua ở đâu?",
+  "options": [
+   "Khắp đất",
+   "Chỉ ở Giê-ru-sa-lem",
+   "Chỉ trên trời",
+   "Chỉ ở Giu-đa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Danh Ngài sẽ là danh duy nhất. “Đức Giê-hô-va sẽ làm vua khắp đất.” (Xa-cha-ri 14:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 8,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua nhà tiên tri Xa-cha-ri, Chúa dặn ai nấy hãy làm gì với người lân cận mình?",
+  "options": [
+   "Tránh xa",
+   "Nói thật",
+   "Tặng quà",
+   "Cho vay lấy lãi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa cũng dặn xét xử chân thật và công minh. “Ai nấy hãy nói thật với người lân cận mình” (Xa-cha-ri 8:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Xa-cha-ri là con trai của ai?",
+  "options": [
+   "Ba-ra-chi",
+   "Giô-xa-đác",
+   "Bê-ê-ri",
+   "Phê-thu-ên"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông là cháu của Y-đô. “nhà tiên tri Xa-cha-ri, con trai Ba-ra-chi, cháu Y-đô” (Xa-cha-ri 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng của Xa-cha-ri, ai đứng bên phải thầy tế lễ thượng phẩm Giê-hô-sua để tố cáo ông?",
+  "options": [
+   "Một tiên tri giả",
+   "Thiên sứ Mi-ca-ên",
+   "Xô-rô-ba-bên",
+   "Sa-tan"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đức Giê-hô-va quở trách Sa-tan. “Sa-tan đứng bên phải ông để tố cáo ông.” (Xa-cha-ri 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng của Xa-cha-ri, Giê-hô-sua được ví như vật gì được kéo ra khỏi lửa?",
+  "options": [
+   "Thỏi vàng",
+   "Lưỡi gươm",
+   "Que củi đang cháy",
+   "Hòn đá"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa đã cứu ông khỏi sự hủy diệt. “Chẳng phải người nầy là que củi đang cháy được kéo ra khỏi lửa sao?” (Xa-cha-ri 3:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 8,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri Xa-cha-ri nói các quảng trường Giê-ru-sa-lem sẽ đầy những ai vui chơi?",
+  "options": [
+   "Con trai và con gái",
+   "Binh lính",
+   "Thương gia",
+   "Thầy tế lễ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Thành sẽ lại bình an, có cả người già lẫn trẻ nhỏ. “Các quảng trường của thành phố sẽ đầy những con trai và con gái vui chơi tại đó.” (Xa-cha-ri 8:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 11,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong sách Xa-cha-ri, người chăn được trả công bao nhiêu miếng bạc?",
+  "options": [
+   "Một trăm miếng bạc",
+   "Mười miếng bạc",
+   "Năm mươi miếng bạc",
+   "Ba chục miếng bạc"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ma-thi-ơ thấy lời nầy ứng nghiệm khi Giu-đa phản Chúa. “Họ cân và trả công cho Ta ba chục miếng bạc” (Xa-cha-ri 11:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 11,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong sách Xa-cha-ri, ba chục miếng bạc bị ném cho ai trong nhà Đức Giê-hô-va?",
+  "options": [
+   "Thợ rèn",
+   "Thợ gốm",
+   "Thầy tế lễ",
+   "Người nghèo"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Số bạc ấy là cái giá người ta định cho Chúa. “Ta lấy ba chục miếng bạc mà ném cho thợ gốm trong nhà Đức Giê-hô-va.” (Xa-cha-ri 11:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 14,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Xa-cha-ri nói trong ngày ấy chân Chúa sẽ đứng trên núi nào?",
+  "options": [
+   "Núi Si-ôn",
+   "Núi Cạt-mên",
+   "Núi Ô-liu",
+   "Núi Si-na-i"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Núi ấy sẽ bị chẻ làm đôi. “Trong ngày ấy, chân Ngài sẽ đứng trên núi Ô-liu” (Xa-cha-ri 14:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 13,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Xa-cha-ri nói khi kẻ chăn bị đánh thì bầy chiên sẽ thế nào?",
+  "options": [
+   "Tản lạc",
+   "Theo người khác",
+   "Đứng yên",
+   "Được cứu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa Jêsus trích lời nầy trước khi bị bắt. “Hãy đánh kẻ chăn để bầy chiên tản lạc” (Xa-cha-ri 13:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 12,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Xa-cha-ri nói dân sẽ nhìn xem Đấng họ đã làm gì rồi than khóc Ngài?",
+  "options": [
+   "Đã quên",
+   "Đã chối bỏ",
+   "Đã đâm",
+   "Đã bán đi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ khóc như khóc đứa con một. “Chúng sẽ nhìn xem Ta là Đấng chúng đã đâm” (Xa-cha-ri 12:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng của Xa-cha-ri, bảy ngọn đèn là gì?",
+  "options": [
+   "Bảy thiên sứ",
+   "Mắt Đức Giê-hô-va soi xét khắp đất",
+   "Bảy bộ tộc",
+   "Bảy Hội Thánh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đừng coi thường việc nhỏ trong ngày đầu. “Bảy ngọn đèn là mắt Đức Giê-hô-va soi xét khắp đất.” (Xa-cha-ri 4:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 14,
+  "verseStart": 20,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Xa-cha-ri nói trong ngày ấy, trên lục lạc ngựa sẽ ghi hàng chữ gì?",
+  "options": [
+   "Vua của các vua",
+   "Đức Giê-hô-va ngự tại đó",
+   "Bình an cho Si-ôn",
+   "Thánh cho Đức Giê-hô-va"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Mọi vật thường ngày cũng sẽ thuộc về Chúa. “trên các lục lạc ngựa sẽ có ghi hàng chữ” (Xa-cha-ri 14:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Zechariah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Lời Chúa đến với nhà tiên tri Xa-cha-ri vào năm thứ hai triều vua nào?",
+  "options": [
+   "Si-ru",
+   "Đa-ri-út",
+   "Ạt-ta-xét-xe",
+   "A-suê-ru"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đó là tháng tám năm ấy, cùng thời A-ghê. “Vào tháng tám, năm thứ hai của triều Đa-ri-út” (Xa-cha-ri 1:1)",
   "language": "vi",
   "tags": [
    "Cựu Ước",

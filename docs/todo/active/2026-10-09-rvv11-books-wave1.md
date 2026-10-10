@@ -90,3 +90,8 @@
   - Sửa ngữ cảnh 10 câu (RVB-15): commit `a19f383c`, BE `sha256:86292cdc…` · seed lại inserted=10 · dump `backups/questions-ctx-variants-w5-deleted-20261010.sql.gz` rồi xóa đúng 10 biến thể cũ (không bảng nào tham chiếu) · RVV11 2.192 + Dễ cốt lõi 1.095 đúng bằng file seed · xóa cache `questions:*`
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-17 Đợt 6: vòng 3, 18 sách còn lại — xong 66 sách
+  - Status: [x] DONE · 240 câu thay 381 câu cũ · Dễ/TB/Khó mới: Ô-sê, A-mốt, Mi-chê, Xa-cha-ri, Ma-la-chi, 2 Phi-e-rơ 5/8/4 · Giô-ên, Ha-ba-cúc, A-ghê, 2 Tê-sa-lô-ni-ca, Tít, Giu-đe 4/6/3 · Áp-đia, Na-hum, Sô-phô-ni, Phi-lê-môn, 2 Giăng, 3 Giăng 3/5/2 (sách cũ mỗi sách 20–25 câu)
+  - Mỗi câu nêu nguồn ("Qua nhà tiên tri A-ghê…", "Thư Giăng thứ ba…"); 2–3 Giăng gọi người viết là "trưởng lão" đúng như thư · Ma-la-chi theo số chương RVV11 (có chương 4) · `retired_hashes.txt` 5.068 hash (+381) · `git rm` 18 file tiếng Việt, giữ `_en`; seed tiếng Việt chỉ còn `bible_basics_quiz.json`, `easy_core_quiz.json`, `rvv11_books_quiz.json` (2.432 câu) · 47 test xanh
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]

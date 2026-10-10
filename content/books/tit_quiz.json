@@ -1,0 +1,301 @@
+[
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô để Tít ở lại đảo nào để chỉnh đốn công việc và lập trưởng lão?",
+  "options": [
+   "Síp",
+   "Rô-đơ",
+   "Cơ-rết",
+   "Man-tơ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tít phải bổ nhiệm trưởng lão trong mỗi thành. “Ta đã để con ở lại Cơ-rết” (Tít 1:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Tít nói Đức Chúa Trời cứu chúng ta không phải bởi việc công chính mình làm, nhưng bởi gì?",
+  "options": [
+   "Của lễ chúng ta dâng",
+   "Lòng thương xót của Ngài",
+   "Dòng dõi Áp-ra-ham",
+   "Luật pháp Môi-se"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Sự cứu rỗi đến qua sự tái sinh bởi Đức Thánh Linh. “nhưng bởi lòng thương xót của Ngài” (Tít 3:5)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thư Tít nói ân điển cứu chuộc của Đức Chúa Trời được bày tỏ cho ai?",
+  "options": [
+   "Mọi người",
+   "Chỉ người Do Thái",
+   "Chỉ người Cơ-rết",
+   "Chỉ các trưởng lão"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ân điển dạy chúng ta sống tiết độ, công chính. “Vì ân điển cứu chuộc của Đức Chúa Trời dành cho mọi người đã được bày tỏ.” (Tít 2:11)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong thư gửi Tít, Phao-lô gọi Tít là gì?",
+  "options": [
+   "Em ruột của ta",
+   "Thầy của ta",
+   "Vị khách quý",
+   "Con thật trong đức tin chung"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Phao-lô xem Tít như con thiêng liêng của mình. “Mến gửi Tít, con thật của ta trong đức tin chung” (Tít 1:4)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô trích lời một nhà tiên tri người Cơ-rết rằng người Cơ-rết luôn là những kẻ gì?",
+  "options": [
+   "Những kẻ nói dối",
+   "Những người hiếu khách",
+   "Những người chăm chỉ",
+   "Những thủy thủ giỏi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vì vậy Tít phải nghiêm khắc quở trách họ. “Người Cơ-rết luôn là những kẻ nói dối” (Tít 1:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư gửi Tít, Phao-lô nói trưởng lão phải là người thế nào?",
+  "options": [
+   "Học thức cao nhất",
+   "Giàu có nhất thành",
+   "Lớn tuổi nhất",
+   "Không có gì đáng trách"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Con cái trưởng lão cũng phải tin Chúa. “Trưởng lão phải là người không có gì đáng trách” (Tít 1:6)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong thư gửi Tít, Phao-lô nói giám mục là gì của nhà Đức Chúa Trời?",
+  "options": [
+   "Người khách",
+   "Người canh cửa",
+   "Người quản lý",
+   "Người thợ xây"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì thế giám mục phải không chê trách được. “Vì là người quản lý nhà Đức Chúa Trời” (Tít 1:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn Tít trong mọi việc phải làm gương qua điều gì?",
+  "options": [
+   "Áo quần đẹp",
+   "Các việc lành",
+   "Của cải",
+   "Lời nói hay"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tít cũng phải trung thực, nghiêm trang khi dạy dỗ. “chính con phải gương mẫu qua các việc lành” (Tít 2:7)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thư Tít nói tín hữu đang chờ đợi sự xuất hiện vinh quang của ai?",
+  "options": [
+   "Cứu Chúa Jêsus Christ",
+   "Vua Đa-vít",
+   "Thiên sứ Gáp-ri-ên",
+   "Nhà tiên tri Ê-li"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là niềm hi vọng phước hạnh của tín hữu. “cũng là Cứu Chúa chúng ta là Đức Chúa Jêsus Christ” (Tít 2:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn Tít tránh những tranh cãi dại dột về điều gì?",
+  "options": [
+   "Cầu nguyện",
+   "Gia phả và luật pháp",
+   "Việc lành",
+   "Ân điển"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Những điều ấy vô ích và chẳng có giá trị. “những vấn đề gia phả, những sự bất hòa và những tranh luận về luật pháp” (Tít 3:9)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô bảo Tít đến gặp ông tại đâu, nơi ông định ở qua mùa đông?",
+  "options": [
+   "Cô-rinh-tô",
+   "Rô-ma",
+   "Ê-phê-sô",
+   "Ni-cô-pô-li"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tít sẽ đến khi có người thay ông ở Cơ-rết. “hãy cố gắng đến ngay với ta tại Ni-cô-pô-li, vì ta định ở đó qua mùa đông.” (Tít 3:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô dặn Tít lo liệu cho luật sư nào cùng với A-pô-lô khi họ ra đi?",
+  "options": [
+   "A-tê-ma",
+   "Lu-ca",
+   "Xê-na",
+   "Ty-chi-cơ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Phao-lô muốn họ không thiếu thứ gì. “Hãy cố lo liệu cho luật sư Xê-na và cho A-pô-lô” (Tít 3:13)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Titus",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Phao-lô nói sẽ sai ai đến cùng Tít ở Cơ-rết?",
+  "options": [
+   "Ti-mô-thê hoặc Lu-ca",
+   "Xê-na hoặc A-pô-lô",
+   "A-tê-ma hoặc Ty-chi-cơ",
+   "Mác hoặc Si-la"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Khi người ấy đến, Tít sẽ đi gặp Phao-lô. “Khi ta sai A-tê-ma hoặc Ty-chi-cơ đến cùng con” (Tít 3:12)",
+  "language": "vi",
+  "tags": [
+   "Tân Ước",
+   "RVV11"
+  ]
+ }
+]

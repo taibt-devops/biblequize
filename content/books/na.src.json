@@ -1,0 +1,14 @@
+[
+ {"ref": "na 1:1", "d": "easy", "q": "Sách Na-hum là lời tiên tri về thành nào?", "a": "Ni-ni-ve", "wrong": ["Ba-by-lôn", "Ty-rơ", "Đa-mách"], "why": "Ni-ni-ve là kinh đô của đế quốc A-si-ri.", "quote": "Lời tiên tri về Ni-ni-ve."},
+ {"ref": "na 1:7", "d": "easy", "q": "Sách Na-hum nói Đức Giê-hô-va tốt lành, là gì trong ngày hoạn nạn?", "a": "Thành lũy", "wrong": ["Ngọn đèn", "Dòng suối", "Bóng mát"], "why": "Ngài là nơi ẩn náu vững chắc cho dân Ngài.", "quote": "Đức Giê-hô-va thật tốt lành, Là thành lũy trong ngày hoạn nạn"},
+ {"ref": "na 1:3", "d": "easy", "q": "Sách Na-hum nói Đức Giê-hô-va chậm giận nhưng đối xử thế nào với kẻ có tội?", "a": "Chẳng coi là vô tội", "wrong": ["Luôn bỏ qua", "Quên ngay", "Không để ý"], "why": "Ngài có quyền năng rất lớn.", "quote": "Nhưng Ngài chẳng coi kẻ có tội là vô tội."},
+
+ {"ref": "na 1:7", "d": "medium", "q": "Sách Na-hum nói Đức Giê-hô-va biết những ai?", "a": "Những ai ẩn náu nơi Ngài", "wrong": ["Những người giàu có", "Những vua chúa", "Những người nổi tiếng"], "why": "Ngài là thành lũy trong ngày hoạn nạn.", "quote": "Ngài biết những ai ẩn náu nơi Ngài."},
+ {"ref": "na 1:3", "d": "medium", "q": "Sách Na-hum nói đám mây là gì dưới chân Đức Giê-hô-va?", "a": "Bụi", "wrong": ["Tấm thảm", "Bậc thang", "Cái ngai"], "why": "Ngài bước đi trong gió lốc và bão tố.", "quote": "Đám mây là bụi dưới chân Ngài."},
+ {"ref": "na 1:15", "d": "medium", "q": "Sách Na-hum nói trên các núi đồi có bàn chân của ai đến với Giu-đa?", "a": "Sứ giả báo tin lành", "wrong": ["Quân A-si-ri", "Các thầy tế lễ", "Đoàn lữ hành"], "why": "Sứ giả công bố bình an vì kẻ thù đã bị tận diệt.", "quote": "Có bàn chân của sứ giả báo tin lành"},
+ {"ref": "na 3:1", "d": "medium", "q": "Sách Na-hum gọi Ni-ni-ve là thành gì?", "a": "Thành vấy máu", "wrong": ["Thành bình an", "Thành thánh", "Thành vàng"], "why": "Thành đầy dối trá, cường bạo và cướp bóc.", "quote": "Khốn cho thành vấy máu!"},
+ {"ref": "na 2:8", "d": "medium", "q": "Sách Na-hum nói từ lâu Ni-ni-ve giống như gì trước khi dân trong thành chạy trốn?", "a": "Hồ đầy nước", "wrong": ["Vườn đầy hoa", "Kho đầy lúa", "Tháp cao ngất"], "why": "Giờ đây không ai quay lại dù có tiếng gọi.", "quote": "Từ lâu, Ni-ni-ve như hồ đầy nước."},
+
+ {"ref": "na 1:1", "d": "hard", "q": "Nhà tiên tri Na-hum là người ở đâu?", "a": "Ên-cốt", "wrong": ["Mô-rê-sết", "Thê-cô-a", "A-na-tốt"], "why": "Sách của ông là khải tượng về Ni-ni-ve.", "quote": "Sách khải tượng của Na-hum, người Ên-cốt."},
+ {"ref": "na 3:19", "d": "hard", "q": "Câu cuối sách Na-hum nói những ai nghe tin Ni-ni-ve sụp đổ đều làm gì?", "a": "Vỗ tay", "wrong": ["Than khóc", "Xé áo", "Im lặng"], "why": "Ai cũng từng chịu sự thống trị tàn ác của nó.", "quote": "Tất cả những ai nghe nói về ngươi đều vỗ tay"}
+]
