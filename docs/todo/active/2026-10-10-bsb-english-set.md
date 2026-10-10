@@ -62,3 +62,7 @@
   - Status: [x] DONE · 141 câu thay 381 câu dịch máy: Ô-sê 10, Giô-ên 9, A-mốt 9, Áp-đia 6, Mi-chê 10, Na-hum 7, Ha-ba-cúc 7, Sô-phô-ni 6, A-ghê 8, Xa-cha-ri 10, Ma-la-chi 10, 2 Tê-sa-lô-ni-ca 6, Tít 8, Phi-lê-môn 8, 2 Phi-e-rơ 10, 2 Giăng 5, 3 Giăng 6, Giu-đe 6 · `retired_hashes.txt` 5.038 hash · `bsb_en_quiz.json` 2.250 câu, 66 sách (Dễ 1.068 / TB 749 / Khó 433), 120 câu chuyện · thư mục seed chỉ còn `bsb_en_quiz.json` + `bible_basics_quiz_en.json` (bộ Giáo lý căn bản, để nguyên) · `docs/EN_TRANSLATION_WORKFLOW.md` ghi "đã thay thế" · test seed xanh
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- BSB-15 Đợt E7 lên prod + dọn sót — xong bộ tiếng Anh
+  - Status: [x] DONE 10/10 · commit `668ec84b`, BE `sha256:4cda2bc5…` (rollback `6a0c04d4…`) · seed: inserted=141, dupHash=0 · 381/381 hàng cũ khớp hash, dump `backups/questions-old-en-e7-deleted-20261010.sql.gz` rồi xóa · dọn sót: 25 câu Nhã Ca dịch máy thế hệ cũ mang tên sách cũ "Song of Solomon", đã tắt từ 08/10 (lọc E6 theo "Song of Songs" nên không bắt), không gì tham chiếu → dump `backups/questions-old-en-e8-songofsolomon-deleted-20261010.sql.gz` rồi xóa · trạng thái cuối: tiếng Anh 2.250 câu BSB (66 sách, 863 câu Dễ trên 120 câu chuyện) + 10 câu Giáo lý căn bản; tiếng Việt 2.432 RVV11 + 1.095 Dễ cốt lõi; tổng 5.823 câu · cache sạch
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
