@@ -1,0 +1,324 @@
+[
+ {
+  "book": "1 Timothy",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, what does Paul call Timothy?",
+  "options": [
+   "My servant",
+   "My true child in the faith",
+   "My brother by blood",
+   "My teacher"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Paul was like a spiritual father. “To Timothy, my true child in the faith” (1 Timothy 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 4,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, Paul tells Timothy not to let anyone despise his what?",
+  "options": [
+   "Clothes",
+   "Voice",
+   "Youth",
+   "Hometown"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Young people can set an example. “Let no one despise your youth, but set an example for the believers” (1 Timothy 4:12, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, why does Paul say Christ Jesus came into the world?",
+  "options": [
+   "To save sinners",
+   "To rule Rome",
+   "To judge the angels",
+   "To build a temple"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Paul called himself the worst. “Christ Jesus came into the world to save sinners, of whom I am the worst.” (1 Timothy 1:15, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 6,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, what is called a root of all kinds of evil?",
+  "options": [
+   "Money itself",
+   "Poverty",
+   "Hard work",
+   "The love of money"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Craving it leads people astray. “For the love of money is the root of all kinds of evil.” (1 Timothy 6:10, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 6,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, godliness with contentment is what?",
+  "options": [
+   "Rare",
+   "Hard work",
+   "Boring",
+   "Great gain"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "We brought nothing into the world. “Of course, godliness with contentment is great gain.” (1 Timothy 6:6, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 6,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, Paul tells Timothy to fight the good fight of what?",
+  "options": [
+   "The nations",
+   "The faith",
+   "The flesh",
+   "The law"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Take hold of eternal life. “Fight the good fight of the faith.” (1 Timothy 6:12, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 2,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, who is the one mediator between God and men?",
+  "options": [
+   "Paul",
+   "The high priest",
+   "Christ Jesus",
+   "Moses"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "There is one God and one mediator. “and there is one mediator between God and men, the man Christ Jesus” (1 Timothy 2:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 4,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, physical exercise has some value, but what is valuable in every way?",
+  "options": [
+   "Godliness",
+   "Wealth",
+   "Strength",
+   "Fame"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It holds promise for this life and the next. “but godliness is valuable in every way” (1 Timothy 4:8, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 6,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, what did we bring into the world?",
+  "options": [
+   "Our families",
+   "Gold",
+   "Our names",
+   "Nothing"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "We cannot carry anything out. “For we brought nothing into the world, so we cannot carry anything out of it.” (1 Timothy 6:7, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 6,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, with what two things should we be content?",
+  "options": [
+   "Food and clothing",
+   "Gold and silver",
+   "Fame and honor",
+   "Houses and land"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Contentment is great gain. “But if we have food and clothing, we will be content with these.” (1 Timothy 6:8, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, a person who wants to be an overseer desires what?",
+  "options": [
+   "Rest",
+   "A high throne",
+   "A noble task",
+   "Easy money"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Church leadership is good work. “If anyone aspires to be an overseer, he desires a noble task.” (1 Timothy 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, in which city did Paul urge Timothy to stay?",
+  "options": [
+   "Lystra",
+   "Ephesus",
+   "Corinth",
+   "Philippi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "To stop false teaching. “you should stay on at Ephesus to instruct certain men not to teach false doctrines” (1 Timothy 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 5,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, what did Paul advise Timothy to use because of his stomach?",
+  "options": [
+   "Honey",
+   "Fresh milk",
+   "A little wine",
+   "Bitter herbs"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He had frequent ailments. “Stop drinking only water and use a little wine instead, because of your stomach” (1 Timothy 5:23, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Timothy",
+  "chapter": 4,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 1 Timothy, in which areas should young Timothy set an example?",
+  "options": [
+   "Wealth and fame",
+   "Speech, conduct, love, faith, purity",
+   "Debate and law",
+   "Sports and music"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Youth is no excuse. “set an example for the believers in speech, in conduct, in love, in faith, in purity.” (1 Timothy 4:12, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ }
+]
