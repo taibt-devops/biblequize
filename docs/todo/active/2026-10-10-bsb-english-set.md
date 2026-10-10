@@ -54,3 +54,7 @@
   - Status: [x] DONE · 150 câu thay 820 câu dịch máy: Lê-vi Ký 24 (7/10/7), Dân Số Ký 35 (Dễ 18, 15 trên 2 câu chuyện / 10 / 7), 1 Sử Ký 18 (6/8/4), 2 Sử Ký 18 (6/8/4), E-xơ-ra 16 (6/6/4), Nhã Ca 11 (4/4/3), Ca Thương 9 (4/3/2), Ê-xê-chi-ên 19 (7/7/5) · `retired_hashes.txt` 4.657 hash · `bsb_en_quiz.json` 2.109 câu, đủ 120/120 câu chuyện có câu tiếng Anh · test seed xanh
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- BSB-13 Đợt E6 lên prod
+  - Status: [x] DONE 10/10 · commit `f29739f6`, BE `sha256:6a0c04d4…` (rollback `83fa65d9…`) · seed: inserted=150, dupHash=0 · 821 hàng cũ (820 khớp hash + 1 hàng mồ côi Dân Số Ký thế hệ cũ, câu hỏi ghi sẵn "Numbers 7") · dump `backups/questions-old-en-e6-deleted-20261010.sql.gz` rồi xóa · hàng tiếng Anh: 2.109 BSB + 416 cũ; tổng 6.088 câu · cache sạch · đủ 120 câu chuyện chơi được bằng tiếng Anh
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
