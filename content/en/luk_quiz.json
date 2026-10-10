@@ -1,0 +1,3155 @@
+[
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which angel did God send to Mary with news of Jesus' birth?",
+  "options": [
+   "Michael",
+   "Raphael",
+   "Uriel",
+   "Gabriel"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Gabriel had also visited Zechariah. “God sent the angel Gabriel to a town in Galilee called Nazareth” (Luke 1:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Angel Visits Mary",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thien-su-bao-tin-cho-ma-ri"
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In which town did Mary live when the angel Gabriel visited her?",
+  "options": [
+   "Nazareth",
+   "Bethlehem",
+   "Capernaum",
+   "Jerusalem"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nazareth was a town in Galilee. “to a town in Galilee called Nazareth” (Luke 1:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Angel Visits Mary",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thien-su-bao-tin-cho-ma-ri"
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 27,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When the angel came to Mary, to whom was she engaged?",
+  "options": [
+   "Simeon",
+   "John",
+   "Joseph",
+   "Zechariah"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Joseph was of the house of David. “pledged in marriage to a man named Joseph” (Luke 1:27, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Angel Visits Mary",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thien-su-bao-tin-cho-ma-ri"
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What name did the angel Gabriel tell Mary to give her son?",
+  "options": [
+   "Joseph",
+   "Jesus",
+   "David",
+   "John"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He would be called the Son of the Most High. “and you are to give Him the name Jesus.” (Luke 1:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Angel Visits Mary",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thien-su-bao-tin-cho-ma-ri"
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 33,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "The angel told Mary that her son's kingdom would do what?",
+  "options": [
+   "Rule from Rome",
+   "Stay very small",
+   "Last forty years",
+   "Never end"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He would reign forever. “His kingdom will never end!” (Luke 1:33, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Angel Visits Mary",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thien-su-bao-tin-cho-ma-ri"
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 37,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Mary asked how this could happen, the angel said no word from God will ever do what?",
+  "options": [
+   "Change",
+   "Fail",
+   "Be late",
+   "Be heard"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nothing is impossible for God. “For no word from God will ever fail.” (Luke 1:37, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Angel Visits Mary",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thien-su-bao-tin-cho-ma-ri"
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 38,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How did Mary answer the angel Gabriel's message?",
+  "options": [
+   "Ask Joseph first",
+   "Come back later",
+   "I am the Lord's servant",
+   "I am too young"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "She trusted God's plan. ““I am the Lord’s servant,” Mary answered.” (Luke 1:38, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Angel Visits Mary",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thien-su-bao-tin-cho-ma-ri"
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why did Joseph and Mary travel to Bethlehem before Jesus was born?",
+  "options": [
+   "To register in the census",
+   "To buy a donkey",
+   "To visit family",
+   "To hide from Herod"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Caesar Augustus had ordered a census. “He went there to register with Mary” (Luke 2:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Birth of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-jesus-giang-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Where did Mary lay baby Jesus after He was born?",
+  "options": [
+   "In a manger",
+   "In a basket",
+   "In a crib",
+   "In a bed at the inn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "A manger is a feeding trough for animals. “and laid Him in a manger, because there was no room for them in the inn.” (Luke 2:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Birth of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-jesus-giang-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why was baby Jesus laid in a manger?",
+  "options": [
+   "The shepherds asked",
+   "Mary wanted it",
+   "There was no room in the inn",
+   "It was warmer"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The King of kings was born in a humble place. “because there was no room for them in the inn.” (Luke 2:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Birth of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-jesus-giang-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On the night Jesus was born, who were watching their flocks in the nearby fields?",
+  "options": [
+   "Soldiers",
+   "Shepherds",
+   "Magi",
+   "Priests"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They were the first to hear the news. “And there were shepherds residing in the fields nearby, keeping watch over their flocks by night.” (Luke 2:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Birth of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-jesus-giang-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On the night Jesus was born, what did the angel say he brought the shepherds?",
+  "options": [
+   "A gift of gold",
+   "A message for the king",
+   "A warning of war",
+   "Good news of great joy"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The news was for all the people. “For behold, I bring you good news of great joy that will be for all the people” (Luke 2:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Birth of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-jesus-giang-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On the night Jesus was born, what did the heavenly host say as they praised God?",
+  "options": [
+   "Holy, holy, holy",
+   "Hosanna to the King",
+   "Blessed is the Lamb",
+   "Glory to God in the highest"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They also sang of peace on earth. “Glory to God in the highest, and on earth peace to men on whom His favor rests!” (Luke 2:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Birth of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-jesus-giang-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the angels left, what did the shepherds find when they hurried to Bethlehem?",
+  "options": [
+   "A king in a palace",
+   "The Baby lying in the manger",
+   "An empty stable",
+   "A star over a hill"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It was just as the angel had said. “So they hurried off and found Mary and Joseph and the Baby, who was lying in the manger.” (Luke 2:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Birth of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-jesus-giang-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 42,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How old was Jesus when He stayed behind in Jerusalem after the Passover?",
+  "options": [
+   "Twelve",
+   "Eight",
+   "Ten",
+   "Fifteen"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "His family went up for the feast every year. “And when He was twelve years old” (Luke 2:42, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Boy Jesus at the Temple",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cau-be-jesus-trong-den-tho"
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 43,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the Passover feast, who stayed behind in Jerusalem without His parents knowing?",
+  "options": [
+   "James",
+   "John",
+   "The boy Jesus",
+   "Joseph"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His parents thought He was with the group. “the boy Jesus remained behind in Jerusalem, but His parents were unaware He had stayed.” (Luke 2:43, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Boy Jesus at the Temple",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cau-be-jesus-trong-den-tho"
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 46,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After how many days did Mary and Joseph find the twelve-year-old Jesus?",
+  "options": [
+   "Forty days",
+   "One day",
+   "Seven days",
+   "Three days"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They searched anxiously. “Finally, after three days they found Him in the temple courts” (Luke 2:46, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Boy Jesus at the Temple",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cau-be-jesus-trong-den-tho"
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 46,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Where did Mary and Joseph find the twelve-year-old Jesus?",
+  "options": [
+   "On the road home",
+   "In the marketplace",
+   "In the temple with the teachers",
+   "At a friend's house"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He was listening and asking questions. “they found Him in the temple courts, sitting among the teachers” (Luke 2:46, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Boy Jesus at the Temple",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cau-be-jesus-trong-den-tho"
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 47,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How did people in the temple react to the twelve-year-old Jesus?",
+  "options": [
+   "Angry at His questions",
+   "Amazed at His understanding",
+   "Bored by Him",
+   "Afraid of Him"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "His answers astonished them. “And all who heard Him were astounded at His understanding and His answers.” (Luke 2:47, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Boy Jesus at the Temple",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cau-be-jesus-trong-den-tho"
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 52,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "As young Jesus grew up, He grew in wisdom and stature and in favor with whom?",
+  "options": [
+   "God and man",
+   "The king",
+   "The priests only",
+   "The Romans"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He grew up in Nazareth. “And Jesus grew in wisdom and stature, and in favor with God and man.” (Luke 2:52, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Boy Jesus at the Temple",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cau-be-jesus-trong-den-tho"
+ },
+ {
+  "book": "Luke",
+  "chapter": 5,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "By the Lake of Gennesaret, whose boat did Jesus sit in to teach the crowd?",
+  "options": [
+   "James's boat",
+   "Simon's boat",
+   "A tax collector's boat",
+   "A Roman ship"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He asked Simon to push out a little from shore. “Jesus got into the boat belonging to Simon” (Luke 5:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Calls the Fishermen",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "goi-nhung-nguoi-danh-ca"
+ },
+ {
+  "book": "Luke",
+  "chapter": 5,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After teaching from Simon's boat, what did Jesus tell Simon to do?",
+  "options": [
+   "Let down nets in deep water",
+   "Sell his fish",
+   "Go home and rest",
+   "Row back to shore"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Simon obeyed even though he was tired. “Put out into deep water and let down your nets for a catch.” (Luke 5:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Calls the Fishermen",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "goi-nhung-nguoi-danh-ca"
+ },
+ {
+  "book": "Luke",
+  "chapter": 5,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Before Jesus told him to fish again, how had Simon's night of fishing gone?",
+  "options": [
+   "They slept all night",
+   "They caught a huge amount",
+   "They caught nothing",
+   "Their boat sank"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They had worked hard all night. “we have worked hard all night without catching anything.” (Luke 5:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Calls the Fishermen",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "goi-nhung-nguoi-danh-ca"
+ },
+ {
+  "book": "Luke",
+  "chapter": 5,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Simon let down his nets as Jesus said, what happened?",
+  "options": [
+   "Only one fish",
+   "The boat floated away",
+   "Nothing at all",
+   "So many fish the nets tore"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Both boats were filled. “they caught such a large number of fish that their nets began to tear.” (Luke 5:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Calls the Fishermen",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "goi-nhung-nguoi-danh-ca"
+ },
+ {
+  "book": "Luke",
+  "chapter": 5,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the huge catch of fish, what did Simon Peter say about himself?",
+  "options": [
+   "I am a great fisherman",
+   "I am a sinful man",
+   "I am very rich",
+   "I am too tired"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He fell at Jesus' knees. “for I am a sinful man.” (Luke 5:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Calls the Fishermen",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "goi-nhung-nguoi-danh-ca"
+ },
+ {
+  "book": "Luke",
+  "chapter": 5,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the huge catch, Jesus told Simon that from now on he would catch what?",
+  "options": [
+   "More fish",
+   "Nothing",
+   "Birds",
+   "Men"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Simon would bring people to God. “From now on you will catch men.” (Luke 5:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Calls the Fishermen",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "goi-nhung-nguoi-danh-ca"
+ },
+ {
+  "book": "Luke",
+  "chapter": 5,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the miraculous catch, what did the fishermen leave to follow Jesus?",
+  "options": [
+   "Everything",
+   "Nothing",
+   "Only their nets",
+   "Only their boats"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Following Jesus mattered most. “they left everything and followed Him.” (Luke 5:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Calls the Fishermen",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "goi-nhung-nguoi-danh-ca"
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 29,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which question led Jesus to tell the story of the Good Samaritan?",
+  "options": [
+   "Who is the greatest?",
+   "Where is heaven?",
+   "Who is my neighbor?",
+   "When will You return?"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "An expert in the law asked it. “And who is my neighbor?” (Luke 10:29, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Good Samaritan",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-sa-ma-ri-nhan-lanh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 30,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Good Samaritan story, what happened to the man going down to Jericho?",
+  "options": [
+   "Robbers beat him and left him",
+   "He got lost",
+   "He lost his donkey",
+   "He fell into a river"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He was left half dead. “when he fell into the hands of robbers. They stripped him, beat him, and went away, leaving him half dead.” (Luke 10:30, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Good Samaritan",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-sa-ma-ri-nhan-lanh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Good Samaritan story, what did the priest do when he saw the hurt man?",
+  "options": [
+   "Helped him up",
+   "Called for help",
+   "Passed by on the other side",
+   "Prayed over him"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He did not stop to help. “but when he saw him, he passed by on the other side.” (Luke 10:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Good Samaritan",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-sa-ma-ri-nhan-lanh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 33,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' story, who stopped and had compassion on the hurt man by the road?",
+  "options": [
+   "A soldier",
+   "A Samaritan",
+   "A priest",
+   "A Levite"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The one people least expected showed love. “But when a Samaritan on a journey came upon him, he looked at him and had compassion.” (Luke 10:33, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Good Samaritan",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-sa-ma-ri-nhan-lanh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 34,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Good Samaritan story, what did the Samaritan pour on the man's wounds?",
+  "options": [
+   "Water and salt",
+   "Honey and milk",
+   "Vinegar",
+   "Oil and wine"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He bandaged the wounds himself. “and bandaged his wounds, pouring on oil and wine.” (Luke 10:34, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Good Samaritan",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-sa-ma-ri-nhan-lanh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 34,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Where did the Good Samaritan take the hurt man?",
+  "options": [
+   "To the temple",
+   "To his own home",
+   "To Jerusalem",
+   "To an inn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He put him on his own animal. “brought him to an inn, and took care of him.” (Luke 10:34, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Good Samaritan",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-sa-ma-ri-nhan-lanh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 37,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the end of the Good Samaritan story, what did Jesus tell the expert in the law?",
+  "options": [
+   "Go and do likewise",
+   "Go and pray",
+   "Go and give money",
+   "Go and tell others"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Being a neighbor means showing mercy. “Go and do likewise.” (Luke 10:37, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Good Samaritan",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-sa-ma-ri-nhan-lanh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 38,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which woman welcomed Jesus into her home in a village?",
+  "options": [
+   "Elizabeth",
+   "Martha",
+   "Joanna",
+   "Mary Magdalene"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Her sister Mary lived there too. “a woman named Martha welcomed Him into her home.” (Luke 10:38, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Mary and Martha",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "ma-ri-va-ma-the"
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 39,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "While Jesus visited Martha's home, what did her sister Mary do?",
+  "options": [
+   "Cooked dinner",
+   "Went to the market",
+   "Sat at His feet listening",
+   "Cleaned the house"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "She wanted to hear His message. “who sat at the Lord’s feet listening to His message.” (Luke 10:39, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Mary and Martha",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "ma-ri-va-ma-the"
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 40,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why was Martha upset when Jesus visited her home?",
+  "options": [
+   "Jesus came late",
+   "There was no food",
+   "The house was too small",
+   "Mary left her to serve alone"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "She was busy with all the preparations. “do You not care that my sister has left me to serve alone?” (Luke 10:40, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Mary and Martha",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "ma-ri-va-ma-the"
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 41,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Jesus told Martha she was worried and upset about what?",
+  "options": [
+   "Money",
+   "Nothing at all",
+   "Many things",
+   "Her brother"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Only one thing was really needed. “you are worried and upset about many things.” (Luke 10:41, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Mary and Martha",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "ma-ri-va-ma-the"
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 42,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Martha complained, Jesus said Mary had chosen what?",
+  "options": [
+   "The good portion",
+   "The last place",
+   "The easy way",
+   "The best seat"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Listening to Jesus would not be taken from her. “Mary has chosen the good portion” (Luke 10:42, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Mary and Martha",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "ma-ri-va-ma-the"
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 39,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What was the name of Martha's sister who sat listening to Jesus?",
+  "options": [
+   "Salome",
+   "Mary",
+   "Susanna",
+   "Joanna"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "She chose to listen. “She had a sister named Mary” (Luke 10:39, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Mary and Martha",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "ma-ri-va-ma-the"
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' parable of the lost sheep, how many sheep did the man have?",
+  "options": [
+   "Twelve",
+   "Ten",
+   "Fifty",
+   "A hundred"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He lost just one. “if he has a hundred sheep and loses one of them” (Luke 15:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Lost Sheep",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "con-chien-lac"
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the lost sheep, what does the shepherd leave to look for the lost one?",
+  "options": [
+   "The ninety-nine",
+   "His sheepdog",
+   "His house",
+   "His family"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Every single sheep matters to him. “does not leave the ninety-nine in the pasture and go after the one that is lost” (Luke 15:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Lost Sheep",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "con-chien-lac"
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the lost sheep, how does the shepherd carry the sheep home?",
+  "options": [
+   "In a basket",
+   "On a rope",
+   "On his shoulders",
+   "On a donkey"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He carries it joyfully. “he joyfully puts it on his shoulders” (Luke 15:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Lost Sheep",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "con-chien-lac"
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the lost sheep, what does the shepherd tell his friends when he gets home?",
+  "options": [
+   "Help me build a fence",
+   "Rejoice with me",
+   "Count my sheep",
+   "Be quiet"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He found what was lost. “Rejoice with me, for I have found my lost sheep!” (Luke 15:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Lost Sheep",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "con-chien-lac"
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the lost sheep, heaven rejoices over one sinner who does what?",
+  "options": [
+   "Repents",
+   "Goes to the temple",
+   "Becomes famous",
+   "Gives money"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God loves to find the lost. “there will be more joy in heaven over one sinner who repents” (Luke 15:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Lost Sheep",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "con-chien-lac"
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' parable of the prodigal son, what did the younger son ask his father for?",
+  "options": [
+   "A new robe",
+   "A wife",
+   "A job",
+   "His share of the estate"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He wanted his inheritance early. “Father, give me my share of the estate.” (Luke 15:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Prodigal Son",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-con-hoang-dang"
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the prodigal son, how did the younger son waste his money?",
+  "options": [
+   "Building a house",
+   "In wild living",
+   "Buying land",
+   "Helping the poor"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He went to a distant country. “where he squandered his wealth in wild living.” (Luke 15:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Prodigal Son",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-con-hoang-dang"
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After spending all his money, what job did the prodigal son have to take?",
+  "options": [
+   "Selling bread",
+   "Fishing",
+   "Feeding pigs",
+   "Building houses"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "A severe famine came. “who sent him into his fields to feed the pigs.” (Luke 15:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Prodigal Son",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-con-hoang-dang"
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When the father saw his lost son coming home, what did he do?",
+  "options": [
+   "Locked the door",
+   "Ran to him and kissed him",
+   "Waited inside",
+   "Sent a servant away"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He was filled with compassion. “He ran to his son, embraced him, and kissed him.” (Luke 15:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Prodigal Son",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-con-hoang-dang"
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did the father put on his son who came home?",
+  "options": [
+   "The best robe, a ring, sandals",
+   "Chains",
+   "Old rags",
+   "A gold crown"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He welcomed him back as a son. “Bring the best robe and put it on him. Put a ring on his finger and sandals on his feet.” (Luke 15:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Prodigal Son",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-con-hoang-dang"
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "To celebrate his son's return, what did the father have killed for the feast?",
+  "options": [
+   "A young goat",
+   "A dove",
+   "The fattened calf",
+   "A lamb"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It was time to celebrate. “Bring the fattened calf and kill it.” (Luke 15:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Prodigal Son",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-con-hoang-dang"
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How did the older brother react to the party for his returning brother?",
+  "options": [
+   "He left home",
+   "He joined the party",
+   "He ran to hug him",
+   "He became angry"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He refused to go in. “The older son became angry and refused to go in.” (Luke 15:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Prodigal Son",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-con-hoang-dang"
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What was Zacchaeus's job?",
+  "options": [
+   "Fisherman",
+   "Priest",
+   "Chief tax collector",
+   "Shepherd"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He was very wealthy. “a chief tax collector, who was very wealthy.” (Luke 19:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Zacchaeus in the Sycamore Tree",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "xa-che-tren-cay-sung"
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why couldn't Zacchaeus see Jesus over the crowd?",
+  "options": [
+   "It was dark",
+   "He was far away",
+   "He was blind",
+   "He was short"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was small in stature. “because he was small in stature.” (Luke 19:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Zacchaeus in the Sycamore Tree",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "xa-che-tren-cay-sung"
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did Zacchaeus climb so he could see Jesus?",
+  "options": [
+   "A roof",
+   "A sycamore tree",
+   "A hill",
+   "A wall"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jesus was about to pass that way. “So he ran on ahead and climbed a sycamore tree to see Him” (Luke 19:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Zacchaeus in the Sycamore Tree",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "xa-che-tren-cay-sung"
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did Jesus say when He saw Zacchaeus up in the tree?",
+  "options": [
+   "Hurry down, I'll stay at your house",
+   "Go home now",
+   "Stay up there",
+   "Who are you?"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus wanted to be his guest. “Zacchaeus, hurry down, for I must stay at your house today.” (Luke 19:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Zacchaeus in the Sycamore Tree",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "xa-che-tren-cay-sung"
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why did people grumble when Jesus went to Zacchaeus's house?",
+  "options": [
+   "It was the Sabbath",
+   "The house was too small",
+   "Zacchaeus was a sinful man",
+   "Jesus was tired"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jesus came for sinners. “He has gone to be the guest of a sinful man!” (Luke 19:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Zacchaeus in the Sycamore Tree",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "xa-che-tren-cay-sung"
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After meeting Jesus, how much of his possessions did Zacchaeus give to the poor?",
+  "options": [
+   "Half",
+   "None",
+   "A tenth",
+   "All"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Meeting Jesus changed him. “half of my possessions I give to the poor” (Luke 19:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Zacchaeus in the Sycamore Tree",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "xa-che-tren-cay-sung"
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After meeting Zacchaeus, Jesus said He came to seek and save whom?",
+  "options": [
+   "The priests",
+   "The rich",
+   "The strong",
+   "The lost"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "That is why He came. “For the Son of Man came to seek and to save the lost.” (Luke 19:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Zacchaeus in the Sycamore Tree",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "xa-che-tren-cay-sung"
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which two disciples did Jesus send to prepare the Passover meal?",
+  "options": [
+   "Philip and Matthew",
+   "Peter and John",
+   "James and Andrew",
+   "Judas and Thomas"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It would be His last supper with them. “Jesus sent Peter and John” (Luke 22:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Last Supper",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tiec-thanh-dau-tien"
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the Last Supper, what did Jesus say He had eagerly desired?",
+  "options": [
+   "To rest",
+   "To go home",
+   "To eat this Passover with them",
+   "To see the temple"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His suffering was near. “I have eagerly desired to eat this Passover with you before My suffering.” (Luke 22:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Last Supper",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tiec-thanh-dau-tien"
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the Last Supper, what did Jesus say about the bread He broke?",
+  "options": [
+   "This is My body, given for you",
+   "This is bread from Egypt",
+   "This is manna from heaven",
+   "This is for the poor"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He would give His body on the cross. “This is My body, given for you” (Luke 22:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Last Supper",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tiec-thanh-dau-tien"
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the Last Supper, Jesus told His disciples to do this in remembrance of whom?",
+  "options": [
+   "Abraham",
+   "Jesus Himself",
+   "Moses",
+   "David"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The Lord's Supper remembers Him. “do this in remembrance of Me.” (Luke 22:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Last Supper",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tiec-thanh-dau-tien"
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the Last Supper, what did Jesus call the cup?",
+  "options": [
+   "The cup of Moses",
+   "The cup of joy",
+   "The cup of the king",
+   "The new covenant in My blood"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "His blood was poured out for them. “This cup is the new covenant in My blood” (Luke 22:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Last Supper",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tiec-thanh-dau-tien"
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 34,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Jesus told Peter he would deny Him how many times before the rooster crowed?",
+  "options": [
+   "Three times",
+   "Twice",
+   "Seven times",
+   "Once"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It happened just as Jesus said. “the rooster will not crow today until you have denied three times that you know Me.” (Luke 22:34, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Peter Denies Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "phi-e-ro-choi-chua"
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 55,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Jesus was taken to the high priest's house, where did Peter sit?",
+  "options": [
+   "Inside the house",
+   "On the roof",
+   "By a fire in the courtyard",
+   "At the city gate"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He followed at a distance. “When those present had kindled a fire in the middle of the courtyard and sat down together, Peter sat down among them.” (Luke 22:55, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Peter Denies Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "phi-e-ro-choi-chua"
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 56,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the high priest's courtyard, who first said Peter had been with Jesus?",
+  "options": [
+   "Judas",
+   "The high priest",
+   "A soldier",
+   "A servant girl"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "She saw him in the firelight. “A servant girl saw him seated in the firelight” (Luke 22:56, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Peter Denies Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "phi-e-ro-choi-chua"
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 57,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When the servant girl said Peter was with Jesus, what did Peter say?",
+  "options": [
+   "I am only a fisherman",
+   "Woman, I do not know Him",
+   "Leave me alone",
+   "Yes, I am His friend"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Peter was afraid. ““Woman, I do not know Him,” he said.” (Luke 22:57, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Peter Denies Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "phi-e-ro-choi-chua"
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 60,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What happened while Peter was still denying Jesus the third time?",
+  "options": [
+   "The fire went out",
+   "The rooster crowed",
+   "A soldier arrested him",
+   "Jesus spoke to him"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jesus' words came true. “While he was still speaking, the rooster crowed.” (Luke 22:60, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Peter Denies Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "phi-e-ro-choi-chua"
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 61,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When the rooster crowed after Peter's denial, what did Jesus do?",
+  "options": [
+   "Turned and looked at Peter",
+   "Walked away",
+   "Called his name",
+   "Said nothing at all"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Peter remembered Jesus' words. “And the Lord turned and looked at Peter.” (Luke 22:61, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Peter Denies Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "phi-e-ro-choi-chua"
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 62,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After denying Jesus three times, what did Peter do?",
+  "options": [
+   "Ran to the temple",
+   "Hid in the city",
+   "Went out and wept bitterly",
+   "Went fishing"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He was heartbroken. “And he went outside and wept bitterly.” (Luke 22:62, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Peter Denies Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "phi-e-ro-choi-chua"
+ },
+ {
+  "book": "Luke",
+  "chapter": 23,
+  "verseStart": 33,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What was the place called where Jesus was crucified?",
+  "options": [
+   "The Garden",
+   "The Rock",
+   "The Mount of Olives",
+   "The Skull"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Criminals were crucified beside Him. “When they came to the place called The Skull” (Luke 23:33, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Cross and the Resurrection",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thap-tu-va-phuc-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 23,
+  "verseStart": 34,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On the cross, what did Jesus pray for the people crucifying Him?",
+  "options": [
+   "Father, punish them",
+   "Father, save Me",
+   "Father, why?",
+   "Father, forgive them"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They did not know what they were doing. “Father, forgive them, for they do not know what they are doing.” (Luke 23:34, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Cross and the Resurrection",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thap-tu-va-phuc-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 23,
+  "verseStart": 43,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On the cross, what did Jesus promise the criminal who asked to be remembered?",
+  "options": [
+   "You will be set free",
+   "You will see Me in Galilee",
+   "Today with Me in Paradise",
+   "You will be forgiven tomorrow"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jesus forgave him. “Truly I tell you, today you will be with Me in Paradise.” (Luke 23:43, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Cross and the Resurrection",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thap-tu-va-phuc-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 23,
+  "verseStart": 46,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Luke, what did Jesus call out just before He breathed His last?",
+  "options": [
+   "Save Yourself",
+   "Into Your hands I commit My Spirit",
+   "Where are My friends?",
+   "Remember Me"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He gave His life to the Father. “Father, into Your hands I commit My Spirit.” (Luke 23:46, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Cross and the Resurrection",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thap-tu-va-phuc-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When the women came to Jesus' tomb early Sunday morning, what did they find?",
+  "options": [
+   "The stone rolled away",
+   "Guards asleep",
+   "The tomb sealed",
+   "Jesus' body inside"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus was not there. “They found the stone rolled away from the tomb” (Luke 24:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Cross and the Resurrection",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thap-tu-va-phuc-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the empty tomb, what did the two men in shining clothes ask the women?",
+  "options": [
+   "Who are you looking for?",
+   "Why look for the living among the dead?",
+   "Where is Peter?",
+   "Why are you crying?"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jesus was alive. “Why do you look for the living among the dead?” (Luke 24:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Cross and the Resurrection",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thap-tu-va-phuc-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Peter ran to Jesus' tomb, what did he see inside?",
+  "options": [
+   "Roman soldiers",
+   "Two angels",
+   "Only the linen cloths",
+   "Jesus Himself"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He went away wondering. “And after bending down and seeing only the linen cloths” (Luke 24:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Cross and the Resurrection",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thap-tu-va-phuc-sinh"
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On the day Jesus rose, which village were two of His followers walking to?",
+  "options": [
+   "Emmaus",
+   "Jericho",
+   "Nazareth",
+   "Bethany"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They talked about all that had happened. “That same day two of them were going to a village called Emmaus” (Luke 24:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "On the Road to Emmaus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tren-duong-em-ma-ut"
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On the road to Emmaus, who came up and walked with the two disciples?",
+  "options": [
+   "An angel",
+   "Peter",
+   "A Roman soldier",
+   "Jesus Himself"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They did not know it was Him. “Jesus Himself came up and walked along with them.” (Luke 24:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "On the Road to Emmaus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tren-duong-em-ma-ut"
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why didn't the two disciples on the road to Emmaus recognize Jesus?",
+  "options": [
+   "Their eyes were kept from it",
+   "He wore a disguise",
+   "It was too dark",
+   "They were looking down"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God kept them from knowing Him yet. “But their eyes were kept from recognizing Him.” (Luke 24:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "On the Road to Emmaus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tren-duong-em-ma-ut"
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What was the name of one of the two disciples on the road to Emmaus?",
+  "options": [
+   "Nathanael",
+   "Philip",
+   "Cleopas",
+   "Thomas"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He thought the stranger had not heard the news. “One of them, named Cleopas” (Luke 24:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "On the Road to Emmaus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tren-duong-em-ma-ut"
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 35,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At Emmaus, when did the two disciples recognize Jesus?",
+  "options": [
+   "When He sang",
+   "When He said their names",
+   "When He showed His hands",
+   "When He broke the bread"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Then He disappeared from their sight. “and how they had recognized Jesus in the breaking of the bread.” (Luke 24:35, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "On the Road to Emmaus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tren-duong-em-ma-ut"
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Remembering their walk to Emmaus, how did the two disciples say their hearts had felt?",
+  "options": [
+   "Cold with fear",
+   "Burning within them",
+   "Heavy and sad",
+   "Very tired"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jesus had opened the Scriptures to them. “Were not our hearts burning within us as He spoke with us on the road” (Luke 24:32, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "On the Road to Emmaus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tren-duong-em-ma-ut"
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 33,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After recognizing Jesus at Emmaus, where did the two disciples go right away?",
+  "options": [
+   "To bed",
+   "To Galilee",
+   "Back to Jerusalem",
+   "To the sea"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They had to tell the others. “And they got up that very hour and returned to Jerusalem.” (Luke 24:33, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "On the Road to Emmaus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tren-duong-em-ma-ut"
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Luke, who was the priest whose wife Elizabeth had no children?",
+  "options": [
+   "Eli",
+   "Zechariah",
+   "Simeon",
+   "Joseph"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They were both old and righteous. “there was a priest named Zechariah” (Luke 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What name did the angel tell Zechariah to give his son?",
+  "options": [
+   "Jesus",
+   "Elijah",
+   "Zechariah",
+   "John"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He would become John the Baptist. “and you are to give him the name John.” (Luke 1:13, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Because Zechariah did not believe the angel's message, what happened to him?",
+  "options": [
+   "He could not speak",
+   "He went blind",
+   "He became sick",
+   "He lost his job"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He stayed silent until the promise came true. “And now you will be silent and unable to speak until the day this comes to pass” (Luke 1:20, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 36,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "The angel told Mary which relative of hers was also expecting a son in her old age?",
+  "options": [
+   "Martha",
+   "Elizabeth",
+   "Anna",
+   "Salome"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "She was in her sixth month. “Look, even Elizabeth your relative has conceived a son in her old age” (Luke 1:36, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 46,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How does Mary's song of praise in Luke begin?",
+  "options": [
+   "Holy, holy, holy",
+   "The Lord is my shepherd",
+   "Glory to God in the highest",
+   "My soul magnifies the Lord"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "She rejoiced in God her Savior. “My soul magnifies the Lord” (Luke 1:46, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which Roman ruler ordered the census that brought Joseph to Bethlehem?",
+  "options": [
+   "King Herod",
+   "Tiberius",
+   "Caesar Augustus",
+   "Pontius Pilate"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Everyone had to register in his own town. “a decree went out from Caesar Augustus” (Luke 2:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did the angel tell the shepherds was born in the city of David?",
+  "options": [
+   "A Savior, Christ the Lord",
+   "A Roman king",
+   "A new prophet",
+   "A great teacher"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was news for all people. “Today in the city of David a Savior has been born to you. He is Christ the Lord!” (Luke 2:11, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After the shepherds' visit, what did Mary do with all these things?",
+  "options": [
+   "Forgot them",
+   "Told everyone",
+   "Wrote them down",
+   "Treasured them in her heart"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "She thought deeply about them. “But Mary treasured up all these things and pondered them in her heart.” (Luke 2:19, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 41,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "For which feast did Jesus' parents go to Jerusalem every year?",
+  "options": [
+   "Pentecost",
+   "Passover",
+   "Tabernacles",
+   "Purim"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They went when Jesus was twelve too. “Every year His parents went to Jerusalem for the Feast of the Passover.” (Luke 2:41, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 5,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "By which lake was Jesus standing when He called Simon to follow Him?",
+  "options": [
+   "The Red Sea",
+   "The Dead Sea",
+   "The Lake of Gennesaret",
+   "The Lake of Merom"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It is another name for the Sea of Galilee. “while Jesus was standing by the Lake of Gennesaret” (Luke 5:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 5,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Who were Simon's fishing partners, the sons of Zebedee?",
+  "options": [
+   "James and John",
+   "Thomas and Matthew",
+   "Jude and Simon",
+   "Andrew and Philip"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They were amazed at the catch too. “and so were his partners James and John, the sons of Zebedee.” (Luke 5:10, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did the expert in the law ask Jesus just before the Good Samaritan story?",
+  "options": [
+   "Who will be king",
+   "Why He healed on the Sabbath",
+   "Where the temple is",
+   "How to inherit eternal life"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He wanted to test Jesus. “what must I do to inherit eternal life?” (Luke 10:25, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 32,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Good Samaritan story, who was the second man to pass by the hurt traveler?",
+  "options": [
+   "A Levite",
+   "A priest",
+   "A merchant",
+   "A soldier"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He also passed by on the other side. “So too, when a Levite came to that spot and saw him, he passed by on the other side.” (Luke 10:32, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 37,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After the Good Samaritan story, who did the expert say had been a neighbor to the hurt man?",
+  "options": [
+   "The innkeeper",
+   "The one who showed mercy",
+   "The Levite",
+   "The priest"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "A neighbor is anyone who shows mercy. “The one who showed him mercy” (Luke 10:37, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the prodigal son, what did the hungry son long to eat?",
+  "options": [
+   "His father's bread",
+   "Fruit from the trees",
+   "The pods the pigs ate",
+   "Fish from the sea"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "No one gave him anything. “He longed to fill his belly with the pods the pigs were eating” (Luke 15:16, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the prodigal son, why did the father say they should celebrate?",
+  "options": [
+   "He was now rich",
+   "It was his birthday",
+   "He brought money home",
+   "He was lost and is found"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "His son was dead and is alive again. “He was lost and is found!” (Luke 15:24, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Zacchaeus promised to repay anyone he had cheated how many times over?",
+  "options": [
+   "Sevenfold",
+   "Fourfold",
+   "Tenfold",
+   "Double"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "His life was changed by Jesus. “and if I have cheated anyone, I will repay it fourfold.” (Luke 19:8, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After Zacchaeus changed his ways, what did Jesus say had come to his house?",
+  "options": [
+   "A feast",
+   "Trouble",
+   "Salvation",
+   "Riches"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Zacchaeus was a son of Abraham too. “Today salvation has come to this house” (Luke 19:9, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 59,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the high priest's courtyard, why did a man insist Peter must have been with Jesus?",
+  "options": [
+   "He too was a Galilean",
+   "He was crying",
+   "He had a sword",
+   "He wore a robe like Jesus"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Peter denied it a third time. “for he too is a Galilean.” (Luke 22:59, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 23,
+  "verseStart": 42,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did the criminal on the cross ask of Jesus?",
+  "options": [
+   "Save Yourself and us",
+   "Forgive the soldiers",
+   "Give me water",
+   "Remember me in Your kingdom"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jesus promised him Paradise. “Jesus, remember me when You come into Your kingdom!” (Luke 23:42, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 23,
+  "verseStart": 45,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Luke, what happened to the sun and the temple veil when Jesus was dying?",
+  "options": [
+   "Sun darkened, veil torn",
+   "Sun brighter, veil burned",
+   "Nothing changed",
+   "Sun set early, veil fell"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Creation itself responded. “The sun was darkened, and the veil of the temple was torn down the middle.” (Luke 23:45, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Luke, what did the two men at the empty tomb tell the women about Jesus?",
+  "options": [
+   "He is in Galilee",
+   "He is asleep",
+   "He is not here; He has risen!",
+   "He was taken away"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jesus had told them He would rise. “He is not here; He has risen!” (Luke 24:6, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When the women told the apostles Jesus had risen, how did the apostles respond?",
+  "options": [
+   "They ran to Galilee",
+   "They did not believe them",
+   "They worshiped right away",
+   "They told the priests"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It sounded like nonsense to them. “and they did not believe the women.” (Luke 24:11, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "At Emmaus, what did the two disciples urge the stranger to do?",
+  "options": [
+   "Go on ahead",
+   "Stay with them",
+   "Teach in the town",
+   "Find an inn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It was nearly evening. “Stay with us, for it is nearly evening” (Luke 24:29, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "On the road to Emmaus, where did Jesus begin explaining the Scriptures about Himself?",
+  "options": [
+   "With Moses and all the Prophets",
+   "With the book of Job",
+   "With the words of Peter",
+   "With the Psalms only"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The whole Old Testament points to Him. “And beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself.” (Luke 24:27, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 51,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "At the end of Luke, what happened while Jesus was blessing His disciples?",
+  "options": [
+   "He sailed away",
+   "He fell asleep",
+   "He went to Jerusalem",
+   "He was carried up into heaven"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "This was His ascension. “While He was blessing them, He left them and was carried up into heaven.” (Luke 24:51, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "To which priestly division did Zechariah, John the Baptist's father, belong?",
+  "options": [
+   "The division of Levi",
+   "The division of Aaron",
+   "The division of Abijah",
+   "The division of Zadok"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His wife Elizabeth was a daughter of Aaron. “who belonged to the priestly division of Abijah” (Luke 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 26,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In which month of Elizabeth's pregnancy was the angel Gabriel sent to Mary?",
+  "options": [
+   "The ninth month",
+   "The first month",
+   "The third month",
+   "The sixth month"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "John was about six months older than Jesus. “In the sixth month, God sent the angel Gabriel” (Luke 1:26, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was governor of Syria during the census when Jesus was born?",
+  "options": [
+   "Quirinius",
+   "Festus",
+   "Felix",
+   "Pilate"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was the first census under him. “while Quirinius was governor of Syria.” (Luke 2:2, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 1,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "The angel Gabriel told Zechariah that he stands in the presence of whom?",
+  "options": [
+   "The king",
+   "God",
+   "Michael",
+   "The high priest"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He was sent with good news. “I stand in the presence of God” (Luke 1:19, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 44,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How far had Jesus' parents traveled before they noticed the boy was missing?",
+  "options": [
+   "Three days",
+   "A week",
+   "A day",
+   "An hour"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They thought He was with relatives. “they traveled on for a day before they began to look for Him” (Luke 2:44, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 2,
+  "verseStart": 51,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "After His parents found Him in the temple, to which town did the boy Jesus return?",
+  "options": [
+   "Jerusalem",
+   "Capernaum",
+   "Bethlehem",
+   "Nazareth"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was obedient to His parents. “Then He went down to Nazareth with them and was obedient to them.” (Luke 2:51, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 35,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How much money did the Good Samaritan give the innkeeper?",
+  "options": [
+   "One gold coin",
+   "Two denarii",
+   "Ten denarii",
+   "Thirty silver pieces"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He promised to pay any extra costs. “The next day he took out two denarii and gave them to the innkeeper.” (Luke 10:35, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 10,
+  "verseStart": 30,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the Good Samaritan story, the traveler was going from Jerusalem to which city?",
+  "options": [
+   "Jericho",
+   "Joppa",
+   "Bethlehem",
+   "Samaria"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was a dangerous road. “A man was going down from Jerusalem to Jericho” (Luke 10:30, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 15,
+  "verseStart": 29,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the prodigal son parable, what did the older brother say his father never gave him?",
+  "options": [
+   "A fattened calf",
+   "A ring",
+   "A young goat",
+   "A robe"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He felt his loyalty was ignored. “Yet you never gave me even a young goat so I could celebrate with my friends.” (Luke 15:29, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 19,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In which city did Jesus meet Zacchaeus?",
+  "options": [
+   "Nain",
+   "Capernaum",
+   "Bethany",
+   "Jericho"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jesus was passing through. “Then Jesus entered Jericho and was passing through.” (Luke 19:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 22,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Luke, on which day was the Passover lamb to be sacrificed?",
+  "options": [
+   "The day of Unleavened Bread",
+   "The day of Pentecost",
+   "The Day of Atonement",
+   "The first Sabbath"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus then sent Peter and John to prepare. “Then came the day of Unleavened Bread on which the Passover lamb was to be sacrificed.” (Luke 22:7, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 23,
+  "verseStart": 44,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Luke, about which hour did darkness come over the land at the crucifixion?",
+  "options": [
+   "The first hour",
+   "The twelfth hour",
+   "The sixth hour",
+   "The third hour"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It lasted until the ninth hour. “It was now about the sixth hour, and darkness came over all the land until the ninth hour.” (Luke 23:44, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Which women named in Luke told the apostles about the empty tomb?",
+  "options": [
+   "Martha, Mary, and Salome",
+   "Mary Magdalene, Joanna, and Mary",
+   "Elizabeth, Anna, and Mary",
+   "Susanna, Lydia, and Dorcas"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Other women were with them too. “It was Mary Magdalene, Joanna, Mary the mother of James” (Luke 24:10, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "About how far was the village of Emmaus from Jerusalem?",
+  "options": [
+   "About fifty miles",
+   "About two miles",
+   "About twenty miles",
+   "About seven miles"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The two disciples walked it on Easter day. “about seven miles from Jerusalem.” (Luke 24:13, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Luke",
+  "chapter": 24,
+  "verseStart": 50,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "At the end of Luke, as far as which village did Jesus lead His disciples before He was taken up?",
+  "options": [
+   "Bethlehem",
+   "Bethany",
+   "Emmaus",
+   "Nazareth"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "There He lifted up His hands and blessed them. “When Jesus had led them out as far as Bethany” (Luke 24:50, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ }
+]

@@ -1,0 +1,2144 @@
+[
+ {
+  "book": "John",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In which town was the wedding where Jesus did His first sign?",
+  "options": [
+   "Cana in Galilee",
+   "Bethlehem",
+   "Jerusalem",
+   "Capernaum"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus' mother was there too. “On the third day a wedding took place at Cana in Galilee.” (John 2:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Wedding at Cana",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tiec-cuoi-o-ca-na"
+ },
+ {
+  "book": "John",
+  "chapter": 2,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the wedding in Cana, what ran out?",
+  "options": [
+   "The water",
+   "The bread",
+   "The oil",
+   "The wine"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jesus' mother told Him about it. “When the wine ran out” (John 2:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Wedding at Cana",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tiec-cuoi-o-ca-na"
+ },
+ {
+  "book": "John",
+  "chapter": 2,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the wedding in Cana, what did Jesus' mother tell the servants?",
+  "options": [
+   "Ask the bridegroom",
+   "Do whatever He tells you",
+   "Close the doors",
+   "Go buy more wine"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "She trusted Jesus to help. “Do whatever He tells you.” (John 2:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Wedding at Cana",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tiec-cuoi-o-ca-na"
+ },
+ {
+  "book": "John",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the wedding in Cana, what did Jesus tell the servants to fill the jars with?",
+  "options": [
+   "Oil",
+   "Milk",
+   "Water",
+   "Wine"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They filled them to the brim. “Fill the jars with water.” (John 2:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Wedding at Cana",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tiec-cuoi-o-ca-na"
+ },
+ {
+  "book": "John",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the wedding in Cana, what did the water in the jars become?",
+  "options": [
+   "Honey",
+   "Milk",
+   "Oil",
+   "Wine"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It was Jesus' first sign. “the water that had been turned into wine.” (John 2:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Wedding at Cana",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tiec-cuoi-o-ca-na"
+ },
+ {
+  "book": "John",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At Cana, what did the master of the banquet say about the wine Jesus made?",
+  "options": [
+   "There was not enough",
+   "It tasted like water",
+   "The best was saved until now",
+   "It was too sour"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jesus' wine was the finest. “But you have saved the fine wine until now!” (John 2:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Wedding at Cana",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tiec-cuoi-o-ca-na"
+ },
+ {
+  "book": "John",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which of Jesus' signs was turning water into wine at Cana?",
+  "options": [
+   "The third",
+   "The first",
+   "The last",
+   "The seventh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "His disciples believed in Him. “Jesus performed this, the first of His signs, at Cana in Galilee.” (John 2:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Wedding at Cana",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "tiec-cuoi-o-ca-na"
+ },
+ {
+  "book": "John",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Who was Nicodemus, the man who came to talk with Jesus?",
+  "options": [
+   "A Pharisee and Jewish leader",
+   "A tax collector",
+   "A fisherman",
+   "A Roman officer"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He wanted to learn from Jesus. “Now there was a man of the Pharisees named Nicodemus, a leader of the Jews.” (John 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Nicodemus and John 3:16",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "ni-co-dem-va-giang-3-16"
+ },
+ {
+  "book": "John",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At what time of day did Nicodemus come to see Jesus?",
+  "options": [
+   "At night",
+   "At noon",
+   "At dawn",
+   "On the Sabbath"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He came quietly. “He came to Jesus at night” (John 3:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Nicodemus and John 3:16",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "ni-co-dem-va-giang-3-16"
+ },
+ {
+  "book": "John",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Jesus told Nicodemus no one can see the kingdom of God unless he is what?",
+  "options": [
+   "A priest",
+   "Baptized twice",
+   "Rich",
+   "Born again"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Everyone needs a new start from God. “no one can see the kingdom of God unless he is born again.” (John 3:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Nicodemus and John 3:16",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "ni-co-dem-va-giang-3-16"
+ },
+ {
+  "book": "John",
+  "chapter": 3,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Jesus said he must be born again, what did Nicodemus ask?",
+  "options": [
+   "When will it happen?",
+   "How can an old man be born?",
+   "Who are You?",
+   "Where is the kingdom?"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He did not understand yet. “How can a man be born when he is old?” (John 3:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Nicodemus and John 3:16",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "ni-co-dem-va-giang-3-16"
+ },
+ {
+  "book": "John",
+  "chapter": 3,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In His talk with Nicodemus, why did Jesus say God gave His one and only Son?",
+  "options": [
+   "Moses asked Him",
+   "The world was perfect",
+   "God so loved the world",
+   "The angels were tired"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It is the most famous verse in the Bible. “For God so loved the world that He gave His one and only Son” (John 3:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Nicodemus and John 3:16",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "ni-co-dem-va-giang-3-16"
+ },
+ {
+  "book": "John",
+  "chapter": 3,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Jesus told Nicodemus that everyone who believes in God's Son will have what?",
+  "options": [
+   "A big family",
+   "Great riches",
+   "Eternal life",
+   "A long life on earth"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They will not perish. “that everyone who believes in Him shall not perish but have eternal life.” (John 3:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Nicodemus and John 3:16",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "ni-co-dem-va-giang-3-16"
+ },
+ {
+  "book": "John",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Jesus told Nicodemus God sent His Son into the world not to condemn it, but to do what?",
+  "options": [
+   "Leave the world",
+   "Judge the world",
+   "Rule the world",
+   "Save the world"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God's purpose was rescue. “but to save the world through Him.” (John 3:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Nicodemus and John 3:16",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "ni-co-dem-va-giang-3-16"
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Tired from His journey through Samaria, where did Jesus sit down?",
+  "options": [
+   "By Jacob's well",
+   "On a hilltop",
+   "In the synagogue",
+   "Under a fig tree"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was about noon. “Since Jacob’s well was there, Jesus, weary from His journey, sat down by the well.” (John 4:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Woman at the Well",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-phu-nu-ben-gieng"
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At Jacob's well, what did Jesus ask the Samaritan woman?",
+  "options": [
+   "Is this the way to town?",
+   "Give Me a drink",
+   "Do you have food?",
+   "Where is your husband?"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "She had come to draw water. “Give Me a drink.” (John 4:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Woman at the Well",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-phu-nu-ben-gieng"
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why was the Samaritan woman surprised that Jesus asked her for a drink?",
+  "options": [
+   "He was a stranger",
+   "It was night",
+   "Jews avoided Samaritans",
+   "She had no bucket"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jesus broke the barrier. “(For Jews do not associate with Samaritans.)” (John 4:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Woman at the Well",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-phu-nu-ben-gieng"
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the well, what did Jesus say He could give the Samaritan woman?",
+  "options": [
+   "Fresh bread",
+   "Living water",
+   "A new jar",
+   "Gold coins"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He meant the gift of eternal life. “and He would have given you living water.” (John 4:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Woman at the Well",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-phu-nu-ben-gieng"
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Jesus told the woman at the well that whoever drinks the water He gives will never what?",
+  "options": [
+   "Thirst",
+   "Grow old",
+   "Hunger",
+   "Sleep"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "His water springs up to eternal life. “But whoever drinks the water I give him will never thirst.” (John 4:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Woman at the Well",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-phu-nu-ben-gieng"
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When the woman at the well spoke of the coming Messiah, what did Jesus answer?",
+  "options": [
+   "He will come soon",
+   "Look for Him in Jerusalem",
+   "I am His prophet",
+   "I who speak to you am He"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jesus told her plainly who He was. “I who speak to you am He.” (John 4:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Woman at the Well",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-phu-nu-ben-gieng"
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After talking with Jesus, what did the Samaritan woman leave behind at the well?",
+  "options": [
+   "Her water jar",
+   "Her sandals",
+   "Her money",
+   "Her cloak"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "She hurried to tell her town. “Then the woman left her water jar” (John 4:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Woman at the Well",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-phu-nu-ben-gieng"
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 39,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why did many Samaritans from the town believe in Jesus?",
+  "options": [
+   "Their priests told them",
+   "The woman's testimony",
+   "A great miracle",
+   "A dream"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "She told everyone what He said. “Many of the Samaritans from that town believed in Jesus because of the woman’s testimony” (John 4:39, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Woman at the Well",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-phu-nu-ben-gieng"
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When a huge crowd came to Jesus, which disciple did He ask where to buy bread?",
+  "options": [
+   "Judas",
+   "Thomas",
+   "Peter",
+   "Philip"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jesus was testing him. “He said to Philip, “Where can we buy bread for these people to eat?”” (John 6:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Five Loaves and Two Fish",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nam-chiec-banh-va-hai-con-ca"
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Jesus fed the five thousand, who had the five loaves and two small fish?",
+  "options": [
+   "Andrew",
+   "A baker",
+   "A boy",
+   "An old woman"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jesus used a small gift to feed many. “Here is a boy with five barley loaves and two small fish.” (John 6:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Five Loaves and Two Fish",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nam-chiec-banh-va-hai-con-ca"
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What kind of loaves did the boy have when Jesus fed the five thousand?",
+  "options": [
+   "Sweet cakes",
+   "Wheat loaves",
+   "Unleavened bread",
+   "Barley loaves"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Barley bread was simple food. “five barley loaves” (John 6:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Five Loaves and Two Fish",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nam-chiec-banh-va-hai-con-ca"
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which disciple told Jesus about the boy with the loaves and fish?",
+  "options": [
+   "John",
+   "Andrew",
+   "Peter",
+   "Philip"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He was Simon Peter's brother. “One of His disciples, Andrew, Simon Peter’s brother, said to Him” (John 6:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Five Loaves and Two Fish",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nam-chiec-banh-va-hai-con-ca"
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Before handing out the loaves and fish to the crowd, what did Jesus do?",
+  "options": [
+   "Sold them",
+   "Counted them",
+   "Gave thanks",
+   "Hid them"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Everyone got as much as they wanted. “Then Jesus took the loaves and the fish, gave thanks” (John 6:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Five Loaves and Two Fish",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nam-chiec-banh-va-hai-con-ca"
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the crowd was full, why did Jesus have the leftovers gathered?",
+  "options": [
+   "So nothing would be wasted",
+   "To feed the birds",
+   "To sell them",
+   "For a feast tomorrow"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God's gifts are precious. “Gather the pieces that are left over, so that nothing will be wasted.” (John 6:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Five Loaves and Two Fish",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nam-chiec-banh-va-hai-con-ca"
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How many baskets were filled with leftovers after Jesus fed the five thousand?",
+  "options": [
+   "Two",
+   "Five",
+   "Twelve",
+   "Seven"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "There was more left than at the start. “and filled twelve baskets with the pieces of the five barley loaves” (John 6:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Five Loaves and Two Fish",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nam-chiec-banh-va-hai-con-ca"
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In which village did Lazarus and his sisters Mary and Martha live?",
+  "options": [
+   "Bethlehem",
+   "Bethany",
+   "Nazareth",
+   "Bethsaida"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jesus loved this family. “He lived in Bethany, the village of Mary and her sister Martha.” (John 11:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Lazarus Is Raised",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "la-xa-ro-song-lai"
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What message did Mary and Martha send Jesus about their brother Lazarus?",
+  "options": [
+   "Lazarus has gone away",
+   "Come quickly to the feast",
+   "We need money",
+   "The one You love is sick"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They knew Jesus could help. “Lord, the one You love is sick.” (John 11:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Lazarus Is Raised",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "la-xa-ro-song-lai"
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Jesus arrived in Bethany, how long had Lazarus been in the tomb?",
+  "options": [
+   "Four days",
+   "One day",
+   "Three days",
+   "Seven days"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Everyone thought it was too late. “When Jesus arrived, He found that Lazarus had already spent four days in the tomb.” (John 11:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Lazarus Is Raised",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "la-xa-ro-song-lai"
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Before raising Lazarus, what did Jesus say to Martha about Himself?",
+  "options": [
+   "I am the good shepherd",
+   "I am the resurrection and the life",
+   "I am the light of the world",
+   "I am the bread of life"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Whoever believes in Him will live. “I am the resurrection and the life.” (John 11:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Lazarus Is Raised",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "la-xa-ro-song-lai"
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 35,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Seeing the people mourning for Lazarus, what did Jesus do?",
+  "options": [
+   "Left",
+   "Laughed",
+   "Shouted",
+   "Wept"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jesus cares when we are sad. “Jesus wept.” (John 11:35, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Lazarus Is Raised",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "la-xa-ro-song-lai"
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 39,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At Lazarus's tomb, what did Jesus tell them to take away?",
+  "options": [
+   "The stone",
+   "The guards",
+   "The grave clothes",
+   "The flowers"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He was about to call Lazarus out. ““Take away the stone,” Jesus said.” (John 11:39, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Lazarus Is Raised",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "la-xa-ro-song-lai"
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 43,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did Jesus call out in a loud voice at Lazarus's tomb?",
+  "options": [
+   "Lazarus, wake up!",
+   "Open the grave!",
+   "Lazarus, come out!",
+   "Rise and walk!"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "And the dead man came out. “Lazarus, come out!” (John 11:43, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Lazarus Is Raised",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "la-xa-ro-song-lai"
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 44,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Lazarus came out of the tomb, how were his hands and feet?",
+  "options": [
+   "Covered in gold",
+   "Bound in strips of linen",
+   "Free and clean",
+   "Tied with rope"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jesus told them to unwrap him. “The man who had been dead came out with his hands and feet bound in strips of linen” (John 11:44, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Lazarus Is Raised",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "la-xa-ro-song-lai"
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At supper with His disciples, what did Jesus wrap around His waist?",
+  "options": [
+   "A rope",
+   "A golden sash",
+   "A belt",
+   "A towel"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He took the place of a servant. “and wrapped a towel around His waist.” (John 13:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Washes the Disciples' Feet",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-rua-chan-cho-mon-do"
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the supper before He died, what did Jesus begin to do for His disciples?",
+  "options": [
+   "Give them gifts",
+   "Teach them a song",
+   "Wash their feet",
+   "Cut their hair"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It was a servant's job. “began to wash the disciples’ feet and dry them with the towel” (John 13:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Washes the Disciples' Feet",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-rua-chan-cho-mon-do"
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Jesus came to wash his feet, what did Peter first say?",
+  "options": [
+   "Never shall You wash my feet!",
+   "Wash my hands too",
+   "Thank You, Lord!",
+   "I will wash Yours"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Peter felt Jesus was too great to do this. ““Never shall You wash my feet!” Peter told Him.” (John 13:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Washes the Disciples' Feet",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-rua-chan-cho-mon-do"
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Jesus explained the foot washing, what did Peter ask Him to wash too?",
+  "options": [
+   "Nothing at all",
+   "His clothes",
+   "His hands and head",
+   "Only his feet"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Peter wanted to belong to Jesus fully. “not only my feet, but my hands and my head as well!” (John 13:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Washes the Disciples' Feet",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-rua-chan-cho-mon-do"
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After washing their feet, what did Jesus say His disciples should do?",
+  "options": [
+   "Wash one another's feet",
+   "Thank the servants",
+   "Wash only their own feet",
+   "Leave the room"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They should serve each other. “you also should wash one another’s feet.” (John 13:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Washes the Disciples' Feet",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-rua-chan-cho-mon-do"
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why did Jesus say He washed His disciples' feet?",
+  "options": [
+   "It was a law",
+   "Their feet were dirty",
+   "Peter asked Him",
+   "To set them an example"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They should do as He did. “I have set you an example so that you should do as I have done for you.” (John 13:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Washes the Disciples' Feet",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-rua-chan-cho-mon-do"
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 34,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After washing His disciples' feet, what new commandment did Jesus give?",
+  "options": [
+   "Keep the Sabbath",
+   "Love one another",
+   "Pray three times daily",
+   "Give to the temple"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "As He loved them, they must love each other. “A new commandment I give you: Love one another.” (John 13:34, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Washes the Disciples' Feet",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-rua-chan-cho-mon-do"
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In John's Gospel, who went to Jesus' tomb early while it was still dark?",
+  "options": [
+   "Mary the mother of Jesus",
+   "Martha",
+   "Peter",
+   "Mary Magdalene"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "She found the stone removed. “Mary Magdalene went to the tomb and saw that the stone had been removed from the entrance.” (John 20:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Cross and the Resurrection",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thap-tu-va-phuc-sinh"
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Mary Magdalene first saw the risen Jesus, who did she think He was?",
+  "options": [
+   "The gardener",
+   "A soldier",
+   "Peter",
+   "An angel"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "She did not recognize Him at first. “Thinking He was the gardener” (John 20:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Cross and the Resurrection",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thap-tu-va-phuc-sinh"
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How did Mary Magdalene recognize the risen Jesus?",
+  "options": [
+   "He broke bread",
+   "He said her name",
+   "He showed His hands",
+   "He sang a psalm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The Good Shepherd knows His sheep by name. “Jesus said to her, “Mary.”” (John 20:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Cross and the Resurrection",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "thap-tu-va-phuc-sinh"
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How does the Gospel of John begin?",
+  "options": [
+   "The beginning of the gospel",
+   "In the days of Caesar",
+   "In the beginning was the Word",
+   "This is the family record"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The Word is Jesus. “In the beginning was the Word, and the Word was with God, and the Word was God.” (John 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "John's Gospel says the Word became flesh and did what?",
+  "options": [
+   "Built a temple",
+   "Stayed in heaven",
+   "Wrote the law",
+   "Made His dwelling among us"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God came to live with us. “The Word became flesh and made His dwelling among us.” (John 1:14, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When John the Baptist saw Jesus coming, what did he call Him?",
+  "options": [
+   "The Son of David",
+   "The Lion of Judah",
+   "The Lamb of God",
+   "The Great Prophet"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He takes away the sin of the world. “Look, the Lamb of God, who takes away the sin of the world!” (John 1:29, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 41,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Andrew tell his brother Simon after meeting Jesus?",
+  "options": [
+   "We have found the Messiah",
+   "Come fishing with us",
+   "We have found a teacher",
+   "John is in prison"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Then he brought Simon to Jesus. “We have found the Messiah” (John 1:41, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 42,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Jesus first met Simon, what new name did He give him?",
+  "options": [
+   "Boanerges",
+   "Cephas, or Peter",
+   "Didymus",
+   "Andrew"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Both names mean rock. “You will be called Cephas” (which is translated as Peter).” (John 1:42, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 3,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Jesus told Nicodemus the Son of Man must be lifted up, just as Moses lifted up what?",
+  "options": [
+   "His staff at the sea",
+   "The stone tablets",
+   "The ark",
+   "The snake in the wilderness"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Looking to Jesus brings life. “Just as Moses lifted up the snake in the wilderness, so the Son of Man must be lifted up” (John 3:14, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Jesus told Nicodemus no one can enter God's kingdom unless born of what?",
+  "options": [
+   "Abraham's family",
+   "Water and the Spirit",
+   "Gold and silver",
+   "Fire and wind"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God gives new life. “unless he is born of water and the Spirit.” (John 3:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "At the well, how many husbands did Jesus say the Samaritan woman had had?",
+  "options": [
+   "Five",
+   "Two",
+   "Three",
+   "Seven"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus knew her whole story. “In fact, you have had five husbands” (John 4:18, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Jesus told the woman at the well that God's worshipers must worship Him in what?",
+  "options": [
+   "Silence",
+   "Gold robes",
+   "Spirit and truth",
+   "Jerusalem only"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God is Spirit. “His worshipers must worship Him in spirit and in truth.” (John 4:24, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did the Samaritan woman tell her town about Jesus?",
+  "options": [
+   "He is very tired",
+   "He is a Roman",
+   "He told me everything I did",
+   "He gave me water"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "She wondered if He was the Christ. “Come, see a man who told me everything I ever did.” (John 4:29, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Jesus asked about buying bread for the crowd, what did Philip say?",
+  "options": [
+   "The market is closed",
+   "Two hundred denarii wouldn't be enough",
+   "We have plenty of bread",
+   "Send them home"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Philip saw only the problem. “Two hundred denarii would not buy enough bread for each of them to have a small piece.” (John 6:7, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 6,
+  "verseStart": 35,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Jesus said, “I am the bread of life.” Whoever comes to Him will never do what?",
+  "options": [
+   "Hunger",
+   "Work",
+   "Sleep",
+   "Fear"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus satisfies the soul. “I am the bread of life. Whoever comes to Me will never hunger” (John 6:35, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 8,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Jesus said, “I am the light of the world.” Whoever follows Him will never walk in what?",
+  "options": [
+   "Rain",
+   "Sadness",
+   "Fear",
+   "Darkness"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They will have the light of life. “Whoever follows Me will never walk in the darkness” (John 8:12, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 10,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Jesus said He is the good shepherd. What does the good shepherd do for the sheep?",
+  "options": [
+   "Lays down His life",
+   "Sells the wool",
+   "Builds a fence",
+   "Counts them daily"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus gave His life for us. “The good shepherd lays down His life for the sheep.” (John 10:11, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Jesus heard Lazarus was sick, what did He say the sickness was for?",
+  "options": [
+   "Punishment for sin",
+   "Nothing at all",
+   "Teaching patience",
+   "The glory of God"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The Son of God would be glorified. “No, it is for the glory of God” (John 11:4, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After hearing Lazarus was sick, how long did Jesus stay where He was?",
+  "options": [
+   "Four days",
+   "A week",
+   "Two days",
+   "One hour"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God's timing was perfect. “He stayed where He was for two days” (John 11:6, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 39,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Jesus said to take away the stone, what did Martha warn Him?",
+  "options": [
+   "The stone is too heavy",
+   "By now he stinks",
+   "He is only asleep",
+   "The guards will come"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Lazarus had been dead four days. “Lord, by now he stinks” (John 11:39, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Peter questioned the foot washing, what did Jesus tell him?",
+  "options": [
+   "Be quiet, Peter",
+   "Go and pray",
+   "You are not worthy",
+   "Later you will understand"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Peter did not yet see its meaning. “You do not realize now what I am doing, but later you will understand.” (John 13:7, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 35,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Jesus said everyone will know you are His disciples by what?",
+  "options": [
+   "Your robes",
+   "Your love for one another",
+   "Your fasting",
+   "Your long prayers"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Love is the mark of a Christian. “By this everyone will know that you are My disciples, if you love one another.” (John 13:35, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 14,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Complete Jesus' words: “I am the way and the truth and the…”",
+  "options": [
+   "Life",
+   "Light",
+   "Vine",
+   "Door"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "No one comes to the Father except through Him. “I am the way and the truth and the life.” (John 14:6, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 15,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Complete Jesus' words: “I am the vine and you are the…”",
+  "options": [
+   "Grapes",
+   "Roots",
+   "Branches",
+   "Leaves"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Apart from Him we can do nothing. “I am the vine and you are the branches.” (John 15:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 19,
+  "verseStart": 30,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In John's Gospel, what did Jesus say just before He gave up His spirit?",
+  "options": [
+   "It is finished",
+   "Father, forgive them",
+   "Remember Me",
+   "Into Your hands"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "His work of salvation was complete. “He said, “It is finished.”” (John 19:30, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Thomas say he had to see before he would believe Jesus had risen?",
+  "options": [
+   "An angel",
+   "A sign in the sky",
+   "The empty tomb",
+   "The nail marks in His hands"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He wanted proof. “Unless I see the nail marks in His hands” (John 20:25, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Thomas saw the risen Jesus, what did he say?",
+  "options": [
+   "Is it really You?",
+   "I still doubt",
+   "My Lord and my God!",
+   "Where were You?"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His doubt turned to worship. “Thomas replied, “My Lord and my God!”” (John 20:28, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After Thomas believed, whom did Jesus call blessed?",
+  "options": [
+   "Those who saw Him",
+   "Those who believe without seeing",
+   "Those who touched Him",
+   "Those in Jerusalem"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "That includes believers today. “blessed are those who have not seen and yet have believed.” (John 20:29, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 21,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After breakfast by the sea, what did the risen Jesus ask Peter three times?",
+  "options": [
+   "Where is John?",
+   "Will you fish again?",
+   "Do you love Me?",
+   "Are you afraid?"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Peter had denied Him three times. “Simon son of John, do you love Me more than these?” (John 21:15, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 21,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Peter first said he loved Jesus by the sea, what did Jesus tell him?",
+  "options": [
+   "Build a church",
+   "Catch more fish",
+   "Go to Rome",
+   "Feed My lambs"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jesus gave Peter a job to do. “Jesus replied, “Feed My lambs.”” (John 21:15, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 2,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "At the wedding in Cana, how many stone water jars were there?",
+  "options": [
+   "Six",
+   "Seven",
+   "Twelve",
+   "Three"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They were for Jewish purification rites. “Now six stone water jars had been set there” (John 2:6, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 2,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How much could each stone jar at the wedding in Cana hold?",
+  "options": [
+   "Five gallons",
+   "Twenty to thirty gallons",
+   "Two gallons",
+   "One hundred gallons"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jesus made a huge amount of wine. “Each could hold from twenty to thirty gallons.” (John 2:6, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In which Samaritan town was the well where Jesus met the woman?",
+  "options": [
+   "Bethel",
+   "Gaza",
+   "Sychar",
+   "Sidon"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It was near land Jacob gave to Joseph. “So He came to a town of Samaria called Sychar” (John 4:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "About what hour was it when Jesus sat down by Jacob's well?",
+  "options": [
+   "The sixth hour",
+   "The third hour",
+   "The first hour",
+   "The ninth hour"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was about noon, the hottest time. “It was about the sixth hour.” (John 4:6, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 40,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was one of the two disciples of John the Baptist who first followed Jesus?",
+  "options": [
+   "Peter",
+   "Nathanael",
+   "Philip",
+   "Andrew"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He then brought his brother Simon. “Andrew, Simon Peter’s brother, was one of the two who heard John’s testimony and followed Jesus.” (John 1:40, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 1,
+  "verseStart": 42,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "When Jesus first met Simon, whose son did He say Simon was?",
+  "options": [
+   "Son of Joseph",
+   "Son of John",
+   "Son of Alphaeus",
+   "Son of Zebedee"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Then He renamed him Cephas. “You are Simon son of John.” (John 1:42, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Which of Lazarus's sisters would anoint the Lord with perfume and wipe His feet with her hair?",
+  "options": [
+   "Martha",
+   "Mary",
+   "Salome",
+   "Joanna"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "John mentions it to identify her. “(Mary, whose brother Lazarus was sick, was to anoint the Lord with perfume and wipe His feet with her hair.)” (John 11:2, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 11,
+  "verseStart": 44,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "When Lazarus came out of the tomb, what was his face wrapped in?",
+  "options": [
+   "Strips of linen",
+   "Spices",
+   "A gold veil",
+   "A cloth"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "His hands and feet were bound with linen. “and his face wrapped in a cloth.” (John 11:44, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "By what other name was the apostle Thomas called?",
+  "options": [
+   "Didymus",
+   "Bartholomew",
+   "Cephas",
+   "Boanerges"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Didymus means twin. “Now Thomas called Didymus, one of the Twelve” (John 20:24, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 26,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How many days later did the risen Jesus appear again, this time with Thomas present?",
+  "options": [
+   "Seven days",
+   "Three days",
+   "Eight days",
+   "Forty days"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The doors were locked, but Jesus stood among them. “Eight days later, His disciples were once again inside with the doors locked, and Thomas was with them.” (John 20:26, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 20,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What Hebrew word did Mary Magdalene say when she recognized the risen Jesus?",
+  "options": [
+   "Abba",
+   "Hosanna",
+   "Rabboni",
+   "Maranatha"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It means Teacher. ““Rabboni!” (which means “Teacher”).” (John 20:16, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 21,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "The second time Peter said he loved Jesus, what did Jesus tell him?",
+  "options": [
+   "Go fishing",
+   "Feed My lambs",
+   "Follow Me",
+   "Shepherd My sheep"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jesus restored Peter as a leader. “Jesus told him, “Shepherd My sheep.”” (John 21:16, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "John",
+  "chapter": 13,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Before washing the disciples' feet, what did Jesus pour water into?",
+  "options": [
+   "A basin",
+   "A jar",
+   "A cup",
+   "A well"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He dried their feet with His towel. “He poured water into a basin” (John 13:5, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ }
+]

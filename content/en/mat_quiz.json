@@ -1,0 +1,3319 @@
+[
+ {
+  "book": "Matthew",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Jesus was born in Bethlehem, who came from the east to find Him?",
+  "options": [
+   "Magi",
+   "Temple priests",
+   "Roman soldiers",
+   "Fishermen"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They came looking for the newborn King of the Jews. “Magi from the east arrived in Jerusalem” (Matthew 2:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Birth of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-jesus-giang-sinh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did the Magi see in the east that led them to look for the newborn King?",
+  "options": [
+   "A rainbow",
+   "A dream",
+   "His star",
+   "An angel"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They came to worship Him. “We saw His star in the east and have come to worship Him.” (Matthew 2:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Birth of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-jesus-giang-sinh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What gifts did the Magi give the Child Jesus?",
+  "options": [
+   "Jewels, robes, and spices",
+   "Lambs, doves, and oil",
+   "Silver, wine, and bread",
+   "Gold, frankincense, and myrrh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They fell down and worshiped Him. “gifts of gold and frankincense and myrrh.” (Matthew 2:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Birth of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-jesus-giang-sinh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the Magi left, where did an angel tell Joseph to flee with baby Jesus?",
+  "options": [
+   "Rome",
+   "Egypt",
+   "Babylon",
+   "Nazareth"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "King Herod wanted to kill the Child. “Take the Child and His mother and flee to Egypt.” (Matthew 2:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Birth of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-jesus-giang-sinh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did John the Baptist preach in the wilderness of Judea?",
+  "options": [
+   "Repent, the kingdom is near",
+   "Leave Jerusalem",
+   "Build a new temple",
+   "Fight the Romans"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He prepared the way for Jesus. “Repent, for the kingdom of heaven is near.” (Matthew 3:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "John the Baptist and the Baptism of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "giang-bap-tit-va-le-bap-tem-cua-chua"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 3,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did John the Baptist eat in the wilderness?",
+  "options": [
+   "Figs and dates",
+   "Locusts and wild honey",
+   "Bread and fish",
+   "Manna and quail"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He lived a simple life in the desert. “His food was locusts and wild honey.” (Matthew 3:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "John the Baptist and the Baptism of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "giang-bap-tit-va-le-bap-tem-cua-chua"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 3,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What were John the Baptist's clothes made of?",
+  "options": [
+   "Sheep's wool",
+   "Goat skins",
+   "Camel's hair",
+   "Fine linen"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He wore a leather belt too. “John wore a garment of camel’s hair” (Matthew 3:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "John the Baptist and the Baptism of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "giang-bap-tit-va-le-bap-tem-cua-chua"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 3,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In which river did John the Baptist baptize the people?",
+  "options": [
+   "The Sea of Galilee",
+   "The Nile",
+   "The Euphrates",
+   "The Jordan River"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "People came confessing their sins. “they were baptized by him in the Jordan River.” (Matthew 3:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "John the Baptist and the Baptism of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "giang-bap-tit-va-le-bap-tem-cua-chua"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 3,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Jesus was baptized, what came down on Him like a dove?",
+  "options": [
+   "An angel",
+   "A cloud of fire",
+   "A crown",
+   "The Spirit of God"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The heavens opened as He came out of the water. “He saw the Spirit of God descending like a dove and resting on Him.” (Matthew 3:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "John the Baptist and the Baptism of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "giang-bap-tit-va-le-bap-tem-cua-chua"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After John baptized Jesus in the Jordan, what did God's voice from heaven say?",
+  "options": [
+   "This is My beloved Son",
+   "Behold the King",
+   "Follow this prophet",
+   "He is a great teacher"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God the Father was well pleased with Jesus. “This is My beloved Son, in whom I am well pleased!” (Matthew 3:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "John the Baptist and the Baptism of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "giang-bap-tit-va-le-bap-tem-cua-chua"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 3,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Jesus came to be baptized, what did John the Baptist first say?",
+  "options": [
+   "Bring me a lamb",
+   "I need to be baptized by You",
+   "Go away from me",
+   "You are too young"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "John knew Jesus was greater than he. “I need to be baptized by You, and do You come to me?” (Matthew 3:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "John the Baptist and the Baptism of Jesus",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "giang-bap-tit-va-le-bap-tem-cua-chua"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Where was Jesus led by the Spirit to be tempted by the devil?",
+  "options": [
+   "Onto a boat",
+   "Into a market",
+   "Into the wilderness",
+   "Into the temple"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "This happened right after His baptism. “Then Jesus was led by the Spirit into the wilderness to be tempted by the devil.” (Matthew 4:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Is Tempted in the Wilderness",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-bi-cam-do-trong-hoang-mac"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How long did Jesus fast in the wilderness before He was tempted?",
+  "options": [
+   "Twelve days",
+   "Three days",
+   "Seven days",
+   "Forty days and forty nights"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Afterward He was hungry. “After fasting forty days and forty nights, He was hungry.” (Matthew 4:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Is Tempted in the Wilderness",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-bi-cam-do-trong-hoang-mac"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the wilderness, what did the devil tell hungry Jesus to turn stones into?",
+  "options": [
+   "Gold",
+   "Fish",
+   "Bread",
+   "Water"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jesus answered with God's word. “tell these stones to become bread.” (Matthew 4:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Is Tempted in the Wilderness",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-bi-cam-do-trong-hoang-mac"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Tempted in the wilderness, Jesus said man shall not live on bread alone, but on what?",
+  "options": [
+   "Good friends",
+   "Every word from God's mouth",
+   "Water and fish",
+   "Hard work"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God's word is real food for the soul. “but on every word that comes from the mouth of God.” (Matthew 4:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Is Tempted in the Wilderness",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-bi-cam-do-trong-hoang-mac"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When tempting Jesus, where did the devil set Him and tell Him to jump?",
+  "options": [
+   "The pinnacle of the temple",
+   "The roof of a palace",
+   "A cliff by the sea",
+   "A city wall"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus would not test God. “and set Him on the pinnacle of the temple.” (Matthew 4:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Is Tempted in the Wilderness",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-bi-cam-do-trong-hoang-mac"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 4,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "From a very high mountain, what did the devil show Jesus to tempt Him?",
+  "options": [
+   "All the kingdoms of the world",
+   "A golden crown",
+   "A new temple",
+   "Twelve legions of angels"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He offered them if Jesus would worship him. “showed Him all the kingdoms of the world and their glory.” (Matthew 4:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Is Tempted in the Wilderness",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-bi-cam-do-trong-hoang-mac"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the devil left Jesus in the wilderness, who came and served Him?",
+  "options": [
+   "John the Baptist",
+   "His disciples",
+   "His mother",
+   "Angels"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jesus had defeated every temptation. “Then the devil left Him, and angels came and ministered to Him.” (Matthew 4:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Is Tempted in the Wilderness",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-bi-cam-do-trong-hoang-mac"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 5,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Beatitudes, who will see God?",
+  "options": [
+   "The famous",
+   "The strong",
+   "The pure in heart",
+   "The rich"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jesus taught this in the Sermon on the Mount. “Blessed are the pure in heart, for they will see God.” (Matthew 5:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Beatitudes",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-phuoc-lanh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 5,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Beatitudes, who will be called sons of God?",
+  "options": [
+   "The warriors",
+   "The peacemakers",
+   "The priests",
+   "The kings"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God's children make peace. “Blessed are the peacemakers, for they will be called sons of God.” (Matthew 5:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Beatitudes",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-phuoc-lanh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 5,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Beatitudes, what will the meek inherit?",
+  "options": [
+   "A palace",
+   "Great wealth",
+   "The temple",
+   "The earth"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Gentle people are blessed. “Blessed are the meek, for they will inherit the earth.” (Matthew 5:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Beatitudes",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-phuoc-lanh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 5,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Beatitudes, what does Jesus promise to those who mourn?",
+  "options": [
+   "They will be rich",
+   "They will be forgotten",
+   "They will be comforted",
+   "They will be kings"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God comforts the sad. “Blessed are those who mourn, for they will be comforted.” (Matthew 5:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Beatitudes",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-phuoc-lanh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Beatitudes, who will be shown mercy?",
+  "options": [
+   "The proud",
+   "The merciful",
+   "The lazy",
+   "The angry"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Those who show mercy receive mercy. “Blessed are the merciful, for they will be shown mercy.” (Matthew 5:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Beatitudes",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-phuoc-lanh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 5,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Sermon on the Mount, Jesus calls His followers the salt of what?",
+  "options": [
+   "The earth",
+   "The temple",
+   "The sea",
+   "The table"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Salt gives flavor and keeps food from spoiling. “You are the salt of the earth.” (Matthew 5:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Beatitudes",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-phuoc-lanh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 5,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Sermon on the Mount, Jesus calls His followers the light of what?",
+  "options": [
+   "The night",
+   "The sky",
+   "The temple",
+   "The world"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "A city on a hill cannot be hidden. “You are the light of the world.” (Matthew 5:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Beatitudes",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-phuoc-lanh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 5,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Sermon on the Mount, Jesus said people do not put a lamp under what?",
+  "options": [
+   "A bed",
+   "A basket",
+   "A tree",
+   "A table"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "A lamp is meant to give light to everyone. “Neither do people light a lamp and put it under a basket.” (Matthew 5:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Beatitudes",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-phuoc-lanh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 6,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How does the Lord's Prayer begin?",
+  "options": [
+   "Our Father in heaven",
+   "O King of kings",
+   "Lord of all the earth",
+   "Holy God of Israel"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus taught us to pray to God as Father. “Our Father in heaven, hallowed be Your name.” (Matthew 6:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Lord's Prayer",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "bai-cau-nguyen-chua-day"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 6,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Lord's Prayer, where do we ask for God's will to be done as it is in heaven?",
+  "options": [
+   "In the wilderness",
+   "In the temple",
+   "On earth",
+   "In Rome"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "We pray for God's kingdom to come. “Your will be done, on earth as it is in heaven.” (Matthew 6:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Lord's Prayer",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "bai-cau-nguyen-chua-day"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 6,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Lord's Prayer, what do we ask God to give us this day?",
+  "options": [
+   "Our daily bread",
+   "Great riches",
+   "A new house",
+   "A long life"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "We trust God for what we need each day. “Give us this day our daily bread.” (Matthew 6:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Lord's Prayer",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "bai-cau-nguyen-chua-day"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 6,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Lord's Prayer, we ask God to forgive our debts as we have done what?",
+  "options": [
+   "Paid our taxes",
+   "Kept the law",
+   "Forgiven our debtors",
+   "Fasted and prayed"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Forgiven people forgive others. “And forgive us our debts, as we also have forgiven our debtors.” (Matthew 6:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Lord's Prayer",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "bai-cau-nguyen-chua-day"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 6,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Lord's Prayer, from whom do we ask God to deliver us?",
+  "options": [
+   "The Romans",
+   "Our neighbors",
+   "The tax collectors",
+   "The evil one"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "We also ask not to be led into temptation. “but deliver us from the evil one.” (Matthew 6:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Lord's Prayer",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "bai-cau-nguyen-chua-day"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 6,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Lord's Prayer, what do we say about God's name?",
+  "options": [
+   "We bless Your name daily",
+   "Hallowed be Your name",
+   "Your name is secret",
+   "Great is Your name"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hallowed means honored as holy. “hallowed be Your name.” (Matthew 6:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Lord's Prayer",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "bai-cau-nguyen-chua-day"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' story of two builders, where did the wise man build his house?",
+  "options": [
+   "On the rock",
+   "On the sand",
+   "On a grassy hill",
+   "By the river"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "A strong foundation keeps the house standing. “is like a wise man who built his house on the rock.” (Matthew 7:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The House on the Rock",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nha-xay-tren-da"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' story of two builders, where did the foolish man build his house?",
+  "options": [
+   "On a mountain",
+   "On the rock",
+   "On sand",
+   "In a cave"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sand cannot hold a house in a storm. “is like a foolish man who built his house on sand.” (Matthew 7:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The House on the Rock",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nha-xay-tren-da"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' story of two builders, why did the wise man's house stand through the storm?",
+  "options": [
+   "It had thick walls",
+   "Its foundation was on the rock",
+   "The storm missed it",
+   "It was very small"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Obeying Jesus is like building on rock. “yet it did not fall, because its foundation was on the rock.” (Matthew 7:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The House on the Rock",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nha-xay-tren-da"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 27,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' story of two builders, what happened to the house on sand?",
+  "options": [
+   "It was rebuilt",
+   "It stood firm",
+   "It floated away safely",
+   "It fell with a great crash"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Hearing without doing leads to ruin. “and it fell—and great was its collapse!” (Matthew 7:27, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The House on the Rock",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nha-xay-tren-da"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' story of two builders, the wise man is like someone who hears Jesus' words and does what?",
+  "options": [
+   "Writes them down",
+   "Forgets them",
+   "Argues with them",
+   "Acts on them"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Doing what Jesus says is wise. “everyone who hears these words of Mine and acts on them is like a wise man” (Matthew 7:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The House on the Rock",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nha-xay-tren-da"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' story of two builders, what beat against the house on the rock?",
+  "options": [
+   "Enemies with swords",
+   "Locusts",
+   "Rain, floods, and wind",
+   "Fire and smoke"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Storms come to everyone. “The rain fell, the torrents raged, and the winds blew and beat against that house” (Matthew 7:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The House on the Rock",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nha-xay-tren-da"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How did Jesus come to His disciples' boat in the middle of the night?",
+  "options": [
+   "On a bridge",
+   "Walking on the sea",
+   "In another boat",
+   "Swimming"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He has power over the sea. “Jesus went out to them, walking on the sea.” (Matthew 14:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Walks on the Water",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-di-tren-mat-nuoc"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When the disciples saw Jesus walking on the sea, what did they think He was?",
+  "options": [
+   "A ghost",
+   "A fisherman",
+   "An angel",
+   "Elijah"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They cried out in fear. ““It’s a ghost!” they said” (Matthew 14:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Walks on the Water",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-di-tren-mat-nuoc"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 27,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Walking on the water, what did Jesus tell His frightened disciples?",
+  "options": [
+   "Go back to shore!",
+   "Row faster!",
+   "Take courage! It is I",
+   "Jump into the sea!"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He told them not to be afraid. “Take courage! It is I. Do not be afraid.” (Matthew 14:27, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Walks on the Water",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-di-tren-mat-nuoc"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 29,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which disciple got out of the boat and walked on the water toward Jesus?",
+  "options": [
+   "Peter",
+   "Thomas",
+   "John",
+   "Andrew"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus told him, “Come.” “Then Peter got down out of the boat, walked on the water, and came toward Jesus.” (Matthew 14:29, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Walks on the Water",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-di-tren-mat-nuoc"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 30,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why did Peter begin to sink while walking on the water?",
+  "options": [
+   "The boat moved away",
+   "He saw the wind and was afraid",
+   "His robe was too heavy",
+   "He looked at the moon"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He took his eyes off Jesus. “But when he saw the strength of the wind, he was afraid” (Matthew 14:30, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Walks on the Water",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-di-tren-mat-nuoc"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 30,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "As Peter began to sink in the sea, what did he cry out?",
+  "options": [
+   "Bring the boat!",
+   "Help me, John!",
+   "I can swim!",
+   "Lord, save me!"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jesus reached out and caught him. “cried out, “Lord, save me!”” (Matthew 14:30, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Walks on the Water",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-di-tren-mat-nuoc"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 33,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Jesus walked on the water and the wind stopped, what did the disciples say?",
+  "options": [
+   "Who is this man?",
+   "We are safe now",
+   "Let us go home",
+   "Truly You are the Son of God"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They worshiped Him in the boat. “Truly You are the Son of God!” (Matthew 14:33, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Walks on the Water",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-di-tren-mat-nuoc"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' parable of the sower, what ate the seed that fell on the path?",
+  "options": [
+   "Mice",
+   "Rabbits",
+   "Birds",
+   "Goats"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The seed never had a chance to grow. “some seed fell along the path, and the birds came and devoured it.” (Matthew 13:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Sower",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-gieo-giong"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the sower, why did the seedlings on rocky ground wither?",
+  "options": [
+   "They got too much water",
+   "They had no root",
+   "The farmer pulled them",
+   "Birds ate them"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The soil was too shallow. “and they withered because they had no root.” (Matthew 13:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Sower",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-gieo-giong"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the sower, what happened to the seed that fell among thorns?",
+  "options": [
+   "The thorns choked it",
+   "Birds ate it",
+   "It was washed away",
+   "It grew tall"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The thorns grew up around it. “Other seed fell among thorns, which grew up and choked the seedlings.” (Matthew 13:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Sower",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-gieo-giong"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the sower, what did the seed on good soil do?",
+  "options": [
+   "Was choked by weeds",
+   "Died quickly",
+   "Produced a big crop",
+   "Was eaten by birds"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Good soil is like a heart that receives God's word. “Still other seed fell on good soil and produced a crop” (Matthew 13:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Sower",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-gieo-giong"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Explaining the sower, Jesus said the good soil is someone who hears the word and does what?",
+  "options": [
+   "Understands it and bears fruit",
+   "Forgets it",
+   "Keeps it secret",
+   "Argues about it"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God's word grows in a ready heart. “But the seed sown on good soil is the one who hears the word and understands it. He indeed bears fruit” (Matthew 13:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Sower",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-gieo-giong"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Explaining the sower, what did Jesus say the thorns stand for?",
+  "options": [
+   "Hard work",
+   "Worries of life and wealth",
+   "Sickness",
+   "Too much rest"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They choke God's word in our hearts. “but the worries of this life and the deceitfulness of wealth choke the word” (Matthew 13:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Sower",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "nguoi-gieo-giong"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Jesus said the kingdom of heaven is like which tiny seed?",
+  "options": [
+   "A wheat seed",
+   "A grape seed",
+   "An olive pit",
+   "A mustard seed"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Small beginnings can grow very large. “The kingdom of heaven is like a mustard seed that a man planted in his field.” (Matthew 13:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Mustard Seed",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "hat-cai"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' parable, what does the tiny mustard seed grow into?",
+  "options": [
+   "A thorn bush",
+   "A flower",
+   "A tree",
+   "A vine"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It becomes the largest of garden plants. “and becomes a tree” (Matthew 13:32, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Mustard Seed",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "hat-cai"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' parable of the mustard seed, who comes to nest in its branches?",
+  "options": [
+   "Bees",
+   "The birds of the air",
+   "Squirrels",
+   "The farmer's sheep"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The kingdom grows big enough to shelter many. “so that the birds of the air come and nest in its branches.” (Matthew 13:32, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Mustard Seed",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "hat-cai"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' parable, how does the mustard seed compare with other seeds?",
+  "options": [
+   "It is the smallest",
+   "It is the largest",
+   "It is the sweetest",
+   "It is the oldest"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Yet it grows into something great. “Although it is the smallest of all seeds” (Matthew 13:32, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Mustard Seed",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "hat-cai"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' parable of the ten virgins, whom did they go out to meet?",
+  "options": [
+   "The bride",
+   "The priest",
+   "The king",
+   "The bridegroom"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They took their lamps to meet him. “took their lamps and went out to meet the bridegroom.” (Matthew 25:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Virgins",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "muoi-trinh-nu"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the ten virgins, how many of them were wise?",
+  "options": [
+   "Five",
+   "Seven",
+   "Three",
+   "Ten"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The other five were foolish. “Five of them were foolish, and five were wise.” (Matthew 25:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Virgins",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "muoi-trinh-nu"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the ten virgins, what did the wise ones bring with their lamps?",
+  "options": [
+   "Extra bread",
+   "Brand-new lamps",
+   "Gifts for the bride",
+   "Extra oil in flasks"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They were ready for a long wait. “But the wise ones took oil in flasks along with their lamps.” (Matthew 25:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Virgins",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "muoi-trinh-nu"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the ten virgins, what happened when the bridegroom was late?",
+  "options": [
+   "They all went home",
+   "They ate the feast",
+   "They all fell asleep",
+   "They sang songs"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "All ten became drowsy. “they all became drowsy and fell asleep.” (Matthew 25:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Virgins",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "muoi-trinh-nu"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the ten virgins, when did the cry ring out that the bridegroom was coming?",
+  "options": [
+   "At noon",
+   "At midnight",
+   "At sunset",
+   "At dawn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He came when they did not expect. “At midnight the cry rang out” (Matthew 25:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Virgins",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "muoi-trinh-nu"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the ten virgins, what happened after the ready ones went in to the feast?",
+  "options": [
+   "The door was shut",
+   "The bride left",
+   "The lamps went out",
+   "The feast ended"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The foolish ones were too late. “and the door was shut.” (Matthew 25:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Virgins",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "muoi-trinh-nu"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What lesson did Jesus give at the end of the parable of the ten virgins?",
+  "options": [
+   "Invite friends",
+   "Keep watch",
+   "Sleep early",
+   "Buy more oil"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "No one knows the day or the hour. “Therefore keep watch, because you do not know the day or the hour.” (Matthew 25:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Virgins",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "muoi-trinh-nu"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' parable of the talents, how many talents did the first servant receive?",
+  "options": [
+   "Two",
+   "One",
+   "Five",
+   "Ten"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Each got an amount based on his ability. “To one he gave five talents” (Matthew 25:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Talents",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-ta-lang"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the talents, what did the servant with one talent do with it?",
+  "options": [
+   "Spent it on food",
+   "Gave it to the poor",
+   "Doubled it",
+   "Hid it in the ground"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He did nothing with what he was given. “dug a hole in the ground, and hid his master’s money.” (Matthew 25:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Talents",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-ta-lang"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the talents, what did the master say to the servants who gained more?",
+  "options": [
+   "Pay me back now",
+   "Well done, good and faithful servant",
+   "Go away from me",
+   "You should have done more"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Faithfulness with a little brings more. “Well done, good and faithful servant!” (Matthew 25:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Talents",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-ta-lang"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the talents, how many more talents did the five-talent servant gain?",
+  "options": [
+   "Ten more",
+   "None",
+   "Five more",
+   "Two more"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He put the money to work at once. “went at once and put them to work and gained five more.” (Matthew 25:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Talents",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-ta-lang"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the talents, why did the one-talent servant say he hid the money?",
+  "options": [
+   "Thieves were near",
+   "He forgot about it",
+   "He was busy",
+   "He was afraid"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Fear kept him from using what he had. “So I was afraid and went out and hid your talent in the ground.” (Matthew 25:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Talents",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-ta-lang"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the talents, who received the talent taken from the fearful servant?",
+  "options": [
+   "The one with ten talents",
+   "The one with two",
+   "The master's son",
+   "The poor"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Those who use what they have are given more. “Therefore take the talent from him and give it to the one who has ten talents.” (Matthew 25:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Talents",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "cac-ta-lang"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Before entering Jerusalem, what animals did Jesus send two disciples to bring?",
+  "options": [
+   "A white horse",
+   "A camel",
+   "A young ox",
+   "A donkey and her colt"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The King came humbly on a donkey. “you will find a donkey tied there, with her colt beside her.” (Matthew 21:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Enters Jerusalem",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-vao-thanh-gie-ru-sa-lem"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "As Jesus rode into Jerusalem, what did the crowd spread on the road?",
+  "options": [
+   "Gold coins",
+   "Red carpets",
+   "Cloaks and branches",
+   "Only flowers"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They welcomed Him like a king. “A massive crowd spread their cloaks on the road, while others cut branches from the trees” (Matthew 21:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Enters Jerusalem",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-vao-thanh-gie-ru-sa-lem"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "As Jesus rode into Jerusalem, what did the crowds shout?",
+  "options": [
+   "Make way for the priest!",
+   "Hosanna to the Son of David!",
+   "Long live Caesar!",
+   "Crucify Him!"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They praised Him as the promised King. “Hosanna to the Son of David!” (Matthew 21:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Enters Jerusalem",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-vao-thanh-gie-ru-sa-lem"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After entering Jerusalem, whose tables did Jesus overturn in the temple courts?",
+  "options": [
+   "The money changers'",
+   "The Pharisees'",
+   "The soldiers'",
+   "The priests'"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They had turned God's house into a market. “He overturned the tables of the money changers” (Matthew 21:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Enters Jerusalem",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-vao-thanh-gie-ru-sa-lem"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Jesus cleared the temple, He said His house should be called a house of what?",
+  "options": [
+   "Trade",
+   "Gold",
+   "Learning",
+   "Prayer"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They had made it a den of robbers. “My house will be called a house of prayer.” (Matthew 21:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Enters Jerusalem",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-vao-thanh-gie-ru-sa-lem"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "On which mount was Bethphage, where Jesus stopped before entering Jerusalem?",
+  "options": [
+   "Mount Carmel",
+   "The Mount of Olives",
+   "Mount Sinai",
+   "Mount Ararat"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "From there He sent two disciples ahead. “came to Bethphage on the Mount of Olives” (Matthew 21:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jesus Enters Jerusalem",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "chua-vao-thanh-gie-ru-sa-lem"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 26,
+  "verseStart": 36,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Where did Jesus go to pray with His disciples on the night He was arrested?",
+  "options": [
+   "Gethsemane",
+   "The temple courts",
+   "Bethany",
+   "Golgotha"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He prayed there before the cross. “Jesus went with His disciples to a place called Gethsemane” (Matthew 26:36, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Gethsemane",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "vuon-ghet-se-ma-ne"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 26,
+  "verseStart": 39,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Gethsemane, Jesus prayed, “Yet not as I will, but…” what?",
+  "options": [
+   "As they will",
+   "As Peter wills",
+   "As You will",
+   "As the law says"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jesus obeyed His Father completely. “Yet not as I will, but as You will.” (Matthew 26:39, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Gethsemane",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "vuon-ghet-se-ma-ne"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 26,
+  "verseStart": 40,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Jesus came back from praying in Gethsemane, what were His disciples doing?",
+  "options": [
+   "Fighting",
+   "Sleeping",
+   "Praying",
+   "Eating"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They could not keep watch for one hour. “Then Jesus returned to the disciples and found them sleeping.” (Matthew 26:40, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Gethsemane",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "vuon-ghet-se-ma-ne"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 26,
+  "verseStart": 41,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Gethsemane, Jesus said the spirit is willing, but what is weak?",
+  "options": [
+   "The will",
+   "The mind",
+   "The body",
+   "The heart"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He told them to watch and pray. “For the spirit is willing, but the body is weak.” (Matthew 26:41, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Gethsemane",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "vuon-ghet-se-ma-ne"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 26,
+  "verseStart": 49,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Gethsemane, how did Judas show the crowd which one was Jesus?",
+  "options": [
+   "He kissed Him",
+   "He called His name",
+   "He pointed at Him",
+   "He raised a torch"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was the signal he had arranged. “Going directly to Jesus, he said, “Greetings, Rabbi!” and kissed Him.” (Matthew 26:49, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Gethsemane",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "vuon-ghet-se-ma-ne"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 26,
+  "verseStart": 47,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Gethsemane, what was the crowd that came with Judas carrying?",
+  "options": [
+   "Only torches",
+   "Bows and arrows",
+   "Palm branches",
+   "Swords and clubs"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The chief priests had sent them. “accompanied by a large crowd armed with swords and clubs” (Matthew 26:47, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Gethsemane",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "vuon-ghet-se-ma-ne"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 26,
+  "verseStart": 37,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Gethsemane, which disciples did Jesus take farther with Him?",
+  "options": [
+   "Judas and Thomas",
+   "Matthew and Simon",
+   "Andrew and Philip",
+   "Peter and Zebedee's two sons"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was deeply sorrowful. “He took with Him Peter and the two sons of Zebedee” (Matthew 26:37, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Garden of Gethsemane",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "vuon-ghet-se-ma-ne"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 28,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Great Commission, Jesus told His followers to make disciples of whom?",
+  "options": [
+   "All nations",
+   "Only the poor",
+   "Only Israel",
+   "Only their families"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The good news is for the whole world. “Therefore go and make disciples of all nations” (Matthew 28:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Great Commission",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "dai-mang-lenh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 28,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Great Commission, in whose name are new disciples baptized?",
+  "options": [
+   "Peter and Paul",
+   "Father, Son, and Holy Spirit",
+   "Moses and Elijah",
+   "Abraham, Isaac, and Jacob"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "One God in three persons. “baptizing them in the name of the Father, and of the Son, and of the Holy Spirit” (Matthew 28:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Great Commission",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "dai-mang-lenh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 28,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Great Commission, how long did Jesus promise to be with His disciples?",
+  "options": [
+   "For three years",
+   "Until Pentecost",
+   "To the end of the age",
+   "For forty days"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jesus is always with His people. “And surely I am with you always, even to the end of the age.” (Matthew 28:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Great Commission",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "dai-mang-lenh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 28,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Before giving the Great Commission, what did Jesus say had been given to Him?",
+  "options": [
+   "A new temple",
+   "All authority in heaven and earth",
+   "A golden crown",
+   "The keys of Rome"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "His command comes with full authority. “All authority in heaven and on earth has been given to Me.” (Matthew 28:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Great Commission",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "dai-mang-lenh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 28,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Great Commission, what were the disciples to teach new believers?",
+  "options": [
+   "To build big churches",
+   "To fast every week",
+   "To obey all Jesus commanded",
+   "To keep every Jewish feast"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Disciples learn to live Jesus' way. “and teaching them to obey all that I have commanded you.” (Matthew 28:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Great Commission",
+   "New Testament",
+   "BSB"
+  ],
+  "story": "dai-mang-lenh"
+ },
+ {
+  "book": "Matthew",
+  "chapter": 1,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Matthew says the virgin's son would be called Immanuel. What does Immanuel mean?",
+  "options": [
+   "Son of David",
+   "Prince of peace",
+   "God saves",
+   "God with us"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jesus is God come to be with His people. “(which means, “God with us”).” (Matthew 1:23, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 4,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Jesus called Peter and Andrew by the Sea of Galilee, what did He say He would make them?",
+  "options": [
+   "Fishers of men",
+   "Temple priests",
+   "Kings of Israel",
+   "Rich fishermen"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They would bring people to Jesus. “and I will make you fishers of men.” (Matthew 4:19, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 4,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Jesus called Peter and Andrew, what did they leave behind right away?",
+  "options": [
+   "Their father",
+   "Their boat full of fish",
+   "Their nets",
+   "Their house"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They followed Him at once. “And at once they left their nets and followed Him.” (Matthew 4:20, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 5,
+  "verseStart": 44,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Sermon on the Mount, what did Jesus tell us to do for our enemies?",
+  "options": [
+   "Love them and pray for them",
+   "Fight them",
+   "Ignore them",
+   "Avoid them"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God's love reaches even enemies. “love your enemies and pray for those who persecute you” (Matthew 5:44, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 6,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Sermon on the Mount, Jesus said where your treasure is, there your what will be also?",
+  "options": [
+   "Family",
+   "Heart",
+   "Home",
+   "Mind"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "What we value shows what we love. “For where your treasure is, there your heart will be also.” (Matthew 6:21, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 6,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Sermon on the Mount, Jesus said you cannot serve both God and what?",
+  "options": [
+   "The king",
+   "Your family",
+   "The law",
+   "Money"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "No one can serve two masters. “You cannot serve both God and money.” (Matthew 6:24, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 6,
+  "verseStart": 26,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Teaching about worry, which creatures did Jesus point to as fed by God without sowing or reaping?",
+  "options": [
+   "The cattle",
+   "The birds of the air",
+   "The fish of the sea",
+   "The ants"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "We are worth much more to God than birds. “Look at the birds of the air” (Matthew 6:26, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 6,
+  "verseStart": 33,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Sermon on the Mount, what did Jesus say to seek first?",
+  "options": [
+   "God's kingdom and righteousness",
+   "Food and clothes",
+   "Money and success",
+   "Friends and family"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Then all these things will be added. “But seek first the kingdom of God and His righteousness” (Matthew 6:33, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 6,
+  "verseStart": 34,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Sermon on the Mount, Jesus said not to worry about what?",
+  "options": [
+   "Your neighbor",
+   "The Sabbath",
+   "The temple",
+   "Tomorrow"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Each day has enough trouble of its own. “Therefore do not worry about tomorrow” (Matthew 6:34, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Jesus said ask and it will be given, seek and you will find, and knock and what?",
+  "options": [
+   "Go away",
+   "Wait outside",
+   "The door will be opened",
+   "Someone will come later"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God answers those who seek Him. “knock, and the door will be opened to you.” (Matthew 7:7, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 7,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Jesus say is the essence of the Law and the Prophets?",
+  "options": [
+   "Treat others as you want",
+   "Fast twice a week",
+   "Pay your taxes",
+   "Keep the Sabbath"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "This is often called the Golden Rule. “In everything, then, do to others as you would have them do to you.” (Matthew 7:12, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 9,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Where was Matthew sitting when Jesus called him to follow?",
+  "options": [
+   "In a fishing boat",
+   "At the city gate",
+   "At the tax booth",
+   "In the synagogue"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Matthew got up and followed Jesus. “He saw a man named Matthew sitting at the tax booth.” (Matthew 9:9, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 44,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' parable, the kingdom of heaven is like what hidden in a field?",
+  "options": [
+   "A seed",
+   "Treasure",
+   "A lamp",
+   "A sword"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The man sold everything to buy the field. “The kingdom of heaven is like treasure hidden in a field.” (Matthew 13:44, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 46,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Jesus' parable, what did the merchant sell everything he had to buy?",
+  "options": [
+   "A big field",
+   "A ship",
+   "A fine house",
+   "One very precious pearl"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God's kingdom is worth everything. “When he found one very precious pearl, he went away and sold all he had and bought it.” (Matthew 13:46, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Before Jesus fed the five thousand, what food did the disciples have?",
+  "options": [
+   "Five loaves and two fish",
+   "Two loaves and five fish",
+   "Seven loaves",
+   "Twelve baskets of bread"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was not nearly enough for the crowd. “We have here only five loaves of bread and two fish” (Matthew 14:17, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After Jesus fed the five thousand, how many baskets of leftovers were picked up?",
+  "options": [
+   "Seven",
+   "Five",
+   "Twelve",
+   "Two"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Everyone ate and was satisfied. “the disciples picked up twelve basketfuls of broken pieces that were left over.” (Matthew 14:20, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 16,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Jesus asked, “Who do you say I am?”, what did Peter answer?",
+  "options": [
+   "John the Baptist",
+   "The Christ, Son of the living God",
+   "Elijah come back",
+   "A great teacher"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God the Father had shown this to Peter. “You are the Christ, the Son of the living God.” (Matthew 16:16, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 17,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Jesus was transfigured on the mountain, what did His face shine like?",
+  "options": [
+   "Fire",
+   "A lamp",
+   "The moon",
+   "The sun"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "His clothes became white as light. “His face shone like the sun” (Matthew 17:2, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 18,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Peter asked if he should forgive his brother seven times, what did Jesus answer?",
+  "options": [
+   "Seven times",
+   "Seventy-seven times",
+   "Twelve times",
+   "Three times"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Forgiveness should have no limit. “not just seven times, but seventy-seven times!” (Matthew 18:22, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 19,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Jesus said it is easier for a camel to go through what than for a rich man to enter God's kingdom?",
+  "options": [
+   "A tiny window",
+   "A narrow door",
+   "The eye of a needle",
+   "A city gate"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Riches can keep people from God. “it is easier for a camel to pass through the eye of a needle” (Matthew 19:24, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 22,
+  "verseStart": 37,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Jesus call the first and greatest commandment?",
+  "options": [
+   "Keep the Sabbath",
+   "Do not steal",
+   "Honor your parents",
+   "Love God with all your heart"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Love God with all your heart, soul, and mind. “Love the Lord your God with all your heart and with all your soul and with all your mind.” (Matthew 22:37, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 22,
+  "verseStart": 39,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Jesus say is the second commandment, like the first?",
+  "options": [
+   "Love your neighbor as yourself",
+   "Do not lie",
+   "Pray every day",
+   "Give to the poor"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Love for God shows in love for people. “Love your neighbor as yourself.” (Matthew 22:39, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 26,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How much did the chief priests pay Judas to hand Jesus over?",
+  "options": [
+   "Fifty shekels",
+   "Twenty pieces of silver",
+   "Ten gold coins",
+   "Thirty pieces of silver"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Judas betrayed Jesus for money. “And they set out for him thirty pieces of silver.” (Matthew 26:15, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 26,
+  "verseStart": 26,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "At the Last Supper, what did Jesus say as He gave the disciples the broken bread?",
+  "options": [
+   "Remember the Passover",
+   "This is bread from heaven",
+   "Take and eat; this is My body",
+   "Share this with the poor"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His body would be given for them. “Take and eat; this is My body.” (Matthew 26:26, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 26,
+  "verseStart": 75,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After denying Jesus three times, what did Peter do when the rooster crowed?",
+  "options": [
+   "Went outside and wept bitterly",
+   "Laughed it off",
+   "Fought the soldiers",
+   "Ran to the temple"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He remembered what Jesus had said. “And he went outside and wept bitterly.” (Matthew 26:75, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 27,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Before handing Jesus over to be crucified, what did Pilate do in front of the crowd?",
+  "options": [
+   "Tore his robe",
+   "Washed his hands",
+   "Rang a bell",
+   "Broke a staff"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He said he was innocent of this man's blood. “he took water and washed his hands before the crowd.” (Matthew 27:24, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 27,
+  "verseStart": 51,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Jesus died on the cross, what happened to the veil of the temple?",
+  "options": [
+   "It caught fire",
+   "It fell down",
+   "It was torn in two",
+   "It turned white"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It tore from top to bottom. “At that moment the veil of the temple was torn in two from top to bottom.” (Matthew 27:51, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 27,
+  "verseStart": 54,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After the earthquake at the cross, what did the centurion guarding Jesus say?",
+  "options": [
+   "He saved others",
+   "Truly this was the Son of God",
+   "He deserved to die",
+   "He was a good man"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Even a Roman soldier saw who Jesus was. “Truly this was the Son of God.” (Matthew 27:54, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 27,
+  "verseStart": 60,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Where did Joseph of Arimathea place the body of Jesus?",
+  "options": [
+   "In a field",
+   "In the temple",
+   "In a family cave",
+   "In his own new tomb"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He rolled a great stone across the entrance. “and placed it in his own new tomb that he had cut into the rock.” (Matthew 27:60, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 28,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "At the empty tomb, what did the angel tell the women about Jesus?",
+  "options": [
+   "He is not here; He has risen",
+   "He was stolen",
+   "He went to Rome",
+   "He is sleeping"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus rose just as He said. “He is not here; He has risen, just as He said!” (Matthew 28:6, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 28,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "On the morning Jesus rose, who rolled away the stone from the tomb?",
+  "options": [
+   "The women",
+   "The guards",
+   "An angel of the Lord",
+   "The disciples"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "There was a great earthquake. “for an angel of the Lord descended from heaven, rolled away the stone, and sat on it.” (Matthew 28:2, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "John the Baptist said he was not worthy to carry what of the One coming after him?",
+  "options": [
+   "His staff",
+   "His cloak",
+   "His water jar",
+   "His sandals"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "John knew Jesus was far greater. “whose sandals I am not worthy to carry.” (Matthew 3:11, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "John the Baptist said the One after him would baptize with the Holy Spirit and with what?",
+  "options": [
+   "Wind",
+   "Fire",
+   "Oil",
+   "Water"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "John baptized only with water. “He will baptize you with the Holy Spirit and with fire.” (Matthew 3:11, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "When the devil told Jesus to jump from the temple, what Scripture did Jesus answer with?",
+  "options": [
+   "Do not put God to the test",
+   "Man shall not live on bread",
+   "Love your neighbor",
+   "Worship the Lord only"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus would not force God to prove Himself. “Do not put the Lord your God to the test.” (Matthew 4:7, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 10,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Matthew's list of the twelve apostles, what is Matthew called?",
+  "options": [
+   "The physician",
+   "The fisherman",
+   "The Zealot",
+   "The tax collector"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He had worked at a tax booth. “Thomas and Matthew the tax collector” (Matthew 10:3, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 10,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Matthew's list of the twelve apostles, which other Simon is named besides Peter?",
+  "options": [
+   "Simon the tanner",
+   "Simon the Zealot",
+   "Simon the leper",
+   "Simon of Cyrene"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He is listed near Judas Iscariot. “Simon the Zealot, and Judas Iscariot” (Matthew 10:4, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 13,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the sower, what yields did the seed on good soil produce?",
+  "options": [
+   "Twelve, seven, or fivefold",
+   "Only tenfold",
+   "Hundred, sixty, or thirtyfold",
+   "Double the seed"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Good soil bears a rich harvest. “a hundredfold, sixtyfold, or thirtyfold.” (Matthew 13:8, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 25,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "During which watch of the night did Jesus walk on the sea to His disciples?",
+  "options": [
+   "The fourth watch",
+   "The third watch",
+   "The first watch",
+   "The second watch"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was in the early morning darkness. “During the fourth watch of the night” (Matthew 14:25, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 14,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "About how many men were fed with five loaves and two fish, besides women and children?",
+  "options": [
+   "Five thousand",
+   "Three thousand",
+   "Twelve thousand",
+   "Four thousand"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Women and children ate too. “About five thousand men were fed” (Matthew 14:21, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 16,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "When Peter confessed Jesus as the Christ, what full name did Jesus call him?",
+  "options": [
+   "Simon the Zealot",
+   "Simon son of Jonah",
+   "Simon son of Zebedee",
+   "Simon of Bethsaida"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jesus said the Father had revealed this to him. “Blessed are you, Simon son of Jonah!” (Matthew 16:17, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 17,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Which three disciples went up the high mountain where Jesus was transfigured?",
+  "options": [
+   "Matthew, Peter, and Judas",
+   "Peter, Andrew, and Philip",
+   "James, John, and Thomas",
+   "Peter, James, and John"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They saw Jesus' glory. “Jesus took with Him Peter, James, and John the brother of James” (Matthew 17:1, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 21,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Clearing the temple, besides the money changers' tables, whose seats did Jesus overturn?",
+  "options": [
+   "The scribes'",
+   "The priests'",
+   "Those selling doves",
+   "Those selling lambs"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He drove out all who were buying and selling. “and the seats of those selling doves.” (Matthew 21:12, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 25,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the parable of the talents, how many talents did the second servant receive?",
+  "options": [
+   "Five",
+   "One",
+   "Three",
+   "Two"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He gained two more. “to another two talents” (Matthew 25:15, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 27,
+  "verseStart": 45,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "At the crucifixion, darkness covered the land from which hour to which hour?",
+  "options": [
+   "Third to sixth hour",
+   "Ninth to twelfth hour",
+   "Sixth to ninth hour",
+   "First to third hour"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Then Jesus cried out with a loud voice. “From the sixth hour until the ninth hour darkness came over all the land.” (Matthew 27:45, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 27,
+  "verseStart": 46,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Matthew, what did Jesus cry out in a loud voice about the ninth hour on the cross?",
+  "options": [
+   "Eli, Eli, lema sabachthani?",
+   "Maranatha!",
+   "Hosanna in the highest!",
+   "Abba, Father!"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It means, My God, My God, why have You forsaken Me? ““Eli, Eli, lema sabachthani?”” (Matthew 27:46, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 27,
+  "verseStart": 57,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Joseph, the rich disciple who buried Jesus, came from which town?",
+  "options": [
+   "Bethany",
+   "Arimathea",
+   "Emmaus",
+   "Nazareth"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He asked Pilate for Jesus' body. “there came a rich man from Arimathea named Joseph” (Matthew 27:57, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Matthew",
+  "chapter": 28,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "At Jesus' tomb, what did the angel's clothes look like?",
+  "options": [
+   "Red as fire",
+   "Gold like the sun",
+   "White as snow",
+   "Purple like a king's"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His appearance was like lightning. “and his clothes were white as snow.” (Matthew 28:3, BSB)",
+  "language": "en",
+  "tags": [
+   "New Testament",
+   "BSB"
+  ]
+ }
+]

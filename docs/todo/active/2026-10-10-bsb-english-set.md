@@ -21,3 +21,11 @@
   - Status: [x] DONE · 387 câu thay 949 câu dịch máy: Xuất Ai Cập Ký 94 (Dễ 54 trên 7 câu chuyện / TB 27 / Khó 13), Ru-tơ 32 (10/15/7), 1 Sa-mu-ên 73 (36 trên 5 câu chuyện / 24 / 13), Ê-xơ-tê 31 (10/14/7), Thi Thiên 50 (21+0 / 20 / 9), Châm Ngôn 35 (7+5 / 15 / 8), Đa-ni-ên 42 (16+3 / 15 / 8), Giô-na 30 (15/10/5) · Thi Thiên gọi tên bài bằng nội dung ("David's shepherd psalm", "the very first psalm") thay vì số · `retired_hashes.txt` 1.199 hash; 1 câu Xuất Ai Cập Ký trùng chữ câu cũ → đổi lời · `bsb_en_quiz.json` 625 câu, 39 câu chuyện có câu tiếng Anh · 55 test xanh
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- BSB-5 Đợt E2 lên prod
+  - Status: [x] DONE 10/10 · commit `0bfaf0d7`, BE `sha256:94ebf7b0…` (rollback `f8100869…`) · seed `bsb_en_quiz.json`: inserted=387, dupHash=0 · 950 hàng cũ (949 khớp hash + 1 hàng mồ côi Xuất Ai Cập Ký từ bản file cũ, cùng loại dịch máy) · dump `backups/questions-old-en-e2-deleted-20261010.sql.gz` rồi xóa (CASCADE: 68 answers, 6.164 quiz_session_questions) · xóa cache · API Xuất Ai Cập Ký/Ru-tơ/1 Sa-mu-ên/Ê-xơ-tê × 3 mức trả câu BSB · 39 câu chuyện chơi được bằng tiếng Anh
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
+- BSB-6 Đợt E3: vòng 1, phần Tân Ước (9 sách)
+  - Status: [x] DONE · 636 câu thay 1.019 câu dịch máy: Ma-thi-ơ 133 (Dễ 86 trên 14 câu chuyện / TB 31 / Khó 16), Mác 69 (35/22/12), Lu-ca 126 (85 trên 13 câu chuyện / 26 / 15), Giăng 87 (47 trên 7 câu chuyện / 27 / 13), Công Vụ 111 (70 trên 10 câu chuyện / 25 / 16), Rô-ma 36 (8/19/9), Ê-phê-sô 29 (15/9/5), Phi-líp 23 (7/10/6), Gia-cơ 22 (8/9/5) · câu thư tín luôn nêu tên thư ("In Romans, Paul says…") · `retired_hashes.txt` 2.218 hash; 2 câu trùng chữ câu cũ → đổi lời · `bsb_en_quiz.json` 1.261 câu, 91 câu chuyện có câu tiếng Anh · test seed xanh
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
