@@ -1,0 +1,696 @@
+[
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In which land did Job, the blameless and upright man, live?",
+  "options": [
+   "Canaan",
+   "Egypt",
+   "Uz",
+   "Babylon"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He feared God and shunned evil. “There was a man in the land of Uz whose name was Job.” (Job 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Patience of Job",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "giop-kien-nhan"
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How does the Bible describe Job before his troubles began?",
+  "options": [
+   "Blameless and upright",
+   "Angry and harsh",
+   "Lazy and poor",
+   "Proud and rich"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He feared God. “And this man was blameless and upright, fearing God and shunning evil.” (Job 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Patience of Job",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "giop-kien-nhan"
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Before his troubles, how many sons and daughters did Job have?",
+  "options": [
+   "Twelve sons",
+   "Ten daughters",
+   "Two sons, one daughter",
+   "Seven sons, three daughters"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was greatly blessed. “He had seven sons and three daughters” (Job 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Patience of Job",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "giop-kien-nhan"
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After losing everything, what did Job say about the LORD?",
+  "options": [
+   "I will curse God",
+   "The LORD gave and has taken",
+   "The LORD has forgotten me",
+   "This is unfair"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He still blessed God's name. “The LORD gave, and the LORD has taken away. Blessed be the name of the LORD.” (Job 1:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Patience of Job",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "giop-kien-nhan"
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In all his early losses, what did Job not do?",
+  "options": [
+   "Worship",
+   "Weep",
+   "Sin or blame God",
+   "Pray"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He stayed faithful. “In all this, Job did not sin or charge God with wrongdoing.” (Job 1:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Patience of Job",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "giop-kien-nhan"
+ },
+ {
+  "book": "Job",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After losing his family and wealth, what covered Job's body?",
+  "options": [
+   "Mud",
+   "Bandages",
+   "Gold dust",
+   "Terrible boils"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "From his feet to his head. “and infected Job with terrible boils from the soles of his feet to the crown of his head.” (Job 2:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Patience of Job",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "giop-kien-nhan"
+ },
+ {
+  "book": "Job",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Job's three friends first came, how long did they sit with him silently?",
+  "options": [
+   "Forty days",
+   "Seven days and nights",
+   "Three days",
+   "One hour"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They saw his great suffering. “Then they sat on the ground with him for seven days and seven nights, but no one spoke a word to him” (Job 2:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Patience of Job",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "giop-kien-nhan"
+ },
+ {
+  "book": "Job",
+  "chapter": 38,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How did the LORD finally answer Job?",
+  "options": [
+   "Out of the whirlwind",
+   "By a letter",
+   "Through Job's wife",
+   "In a dream"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God spoke to Job directly. “Then the LORD answered Job out of the whirlwind” (Job 38:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Patience of Job",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "giop-kien-nhan"
+ },
+ {
+  "book": "Job",
+  "chapter": 42,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the end of Job's story, how much did the LORD give him?",
+  "options": [
+   "Double what he had",
+   "Exactly the same",
+   "Nothing",
+   "Half of it"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "This came after he prayed for his friends. “the LORD restored his prosperity and doubled his former possessions.” (Job 42:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Patience of Job",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "giop-kien-nhan"
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did the LORD say about Job to Satan?",
+  "options": [
+   "He is lazy",
+   "He is too rich",
+   "He will fail soon",
+   "No one on earth is like him"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Job was blameless and upright. “For there is no one on earth like him” (Job 1:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When God let Satan test Job, what could Satan not touch at first?",
+  "options": [
+   "His sheep",
+   "His house",
+   "Job himself",
+   "His camels"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God set limits. “but you must not lay a hand on the man himself.” (Job 1:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After hearing all his losses, what did Job do after tearing his robe?",
+  "options": [
+   "Ran away",
+   "Fell down and worshiped",
+   "Cursed his servants",
+   "Built a tower"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He still honored God. “He fell to the ground and worshiped” (Job 1:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What struck the house where Job's children were eating?",
+  "options": [
+   "A flood",
+   "An army",
+   "A mighty wind",
+   "Lightning"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It came from the desert. “when suddenly a mighty wind swept in from the desert and struck the four corners of the house.” (Job 1:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Who told suffering Job, “Curse God and die!”?",
+  "options": [
+   "His servant",
+   "His wife",
+   "Satan",
+   "Eliphaz"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Job refused. “Then Job’s wife said to him, “Do you still retain your integrity? Curse God and die!”” (Job 2:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Job ask his wife about accepting from God?",
+  "options": [
+   "Only good, not trouble?",
+   "Who sent the boils?",
+   "Where is our wealth?",
+   "Why did God leave?"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He did not sin in what he said. “Should we accept from God only good and not adversity?” (Job 2:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 2,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sitting among the ashes, what did Job use to scrape his sores?",
+  "options": [
+   "A stone",
+   "A knife",
+   "A branch",
+   "Broken pottery"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was in great pain. “And Job took a piece of broken pottery to scrape himself as he sat among the ashes.” (Job 2:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 19,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In his suffering, what did Job say he knows?",
+  "options": [
+   "My wealth will return",
+   "My friends are right",
+   "My life is over",
+   "My Redeemer lives"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "His hope was in God. “But I know that my Redeemer lives” (Job 19:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 38,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did God ask Job about the earth's foundations?",
+  "options": [
+   "Are they strong?",
+   "Did you see them fall?",
+   "Where were you then?",
+   "Who helped Me?"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God showed His greatness. “Where were you when I laid the foundations of the earth?” (Job 38:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 42,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After God spoke to him, what did Job say had changed?",
+  "options": [
+   "Now my eyes have seen You",
+   "Now I am rich again",
+   "Now my friends are gone",
+   "Now I am well"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He had only heard of God before. “My ears had heard of You, but now my eyes have seen You.” (Job 42:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 28,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the book of Job, what is called wisdom?",
+  "options": [
+   "Long life",
+   "The fear of the Lord",
+   "Many friends",
+   "Great riches"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Turning from evil is understanding. “Behold, the fear of the Lord, that is wisdom” (Job 28:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 42,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Why was the LORD angry with Job's friends?",
+  "options": [
+   "They left Job alone",
+   "They laughed at God",
+   "They spoke wrongly about God",
+   "They stole from Job"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Job had spoken accurately. “For you have not spoken about Me accurately, as My servant Job has.” (Job 42:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Which of these was one of Job's three friends?",
+  "options": [
+   "Bildad the Shuhite",
+   "Ziba the servant",
+   "Elihu the Buzite",
+   "Hushai the Archite"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The others were Eliphaz and Zophar. “Eliphaz the Temanite, Bildad the Shuhite, and Zophar the Naamathite” (Job 2:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Before his troubles, how many camels did Job own?",
+  "options": [
+   "7,000",
+   "3,000",
+   "1,000",
+   "500"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He also had 7,000 sheep. “and he owned 7,000 sheep, 3,000 camels” (Job 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 32,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Which younger man grew angry at Job for justifying himself rather than God?",
+  "options": [
+   "Zophar",
+   "Bildad",
+   "Eliphaz",
+   "Elihu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was the son of Barachel. “This kindled the anger of Elihu son of Barachel the Buzite” (Job 32:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 42,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What was the name of Job's first daughter after his restoration?",
+  "options": [
+   "Tamar",
+   "Dinah",
+   "Jemimah",
+   "Keziah"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The others were Keziah and Keren-happuch. “He named his first daughter Jemimah” (Job 42:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 42,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How many more years did Job live after his restoration?",
+  "options": [
+   "120",
+   "40",
+   "70",
+   "140"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He saw four generations. “After this, Job lived 140 years” (Job 42:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 38,
+  "verseStart": 31,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "God asked Job if he could loosen the belt of which constellation?",
+  "options": [
+   "The Lion",
+   "Orion",
+   "The Bear",
+   "The Swan"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Only God rules the stars. “Can you bind the chains of the Pleiades or loosen the belt of Orion?” (Job 38:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Which raiders took Job's oxen and donkeys?",
+  "options": [
+   "The Sabeans",
+   "The Amorites",
+   "The Chaldeans",
+   "The Philistines"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Only one servant escaped. “the Sabeans swooped down and took them away.” (Job 1:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Job",
+  "chapter": 42,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "When Job's family came to comfort him, what did each give him?",
+  "options": [
+   "Silver and a gold ring",
+   "A sheep",
+   "A new robe",
+   "Bread and wine"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They ate with him in his house. “And each one gave him a piece of silver and a gold ring.” (Job 42:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

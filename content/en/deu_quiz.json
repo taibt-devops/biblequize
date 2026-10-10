@@ -1,0 +1,922 @@
+[
+ {
+  "book": "Deuteronomy",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Who spoke the words of Deuteronomy to all Israel in the wilderness?",
+  "options": [
+   "Aaron",
+   "Samuel",
+   "Moses",
+   "Joshua"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He spoke east of the Jordan. “These are the words that Moses spoke to all Israel in the wilderness east of the Jordan” (Deuteronomy 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 6,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, Moses says, “Hear, O Israel: The LORD our God, the LORD is…”",
+  "options": [
+   "One",
+   "King",
+   "Near",
+   "Great"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "There is only one true God. “Hear, O Israel: The LORD our God, the LORD is One.” (Deuteronomy 6:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 6,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, Moses says to love the LORD with all your heart, soul, and what?",
+  "options": [
+   "Money",
+   "Time",
+   "Family",
+   "Strength"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jesus called this the greatest commandment. “And you shall love the LORD your God with all your heart and with all your soul and with all your strength.” (Deuteronomy 6:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 6,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, to whom did Moses tell parents to teach God's words diligently?",
+  "options": [
+   "The priests",
+   "Their children",
+   "Foreign kings",
+   "Their servants"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Talk about them at home and on the road. “And you shall teach them diligently to your children” (Deuteronomy 6:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 6,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, where did Moses tell Israel to write God's words?",
+  "options": [
+   "On the clouds",
+   "On their swords",
+   "On the sand",
+   "On their doorposts and gates"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They should see them every day. “Write them on the doorposts of your houses and on your gates.” (Deuteronomy 6:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 8,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, Moses says man does not live on bread alone, but on what?",
+  "options": [
+   "Meat and wine",
+   "Gold and silver",
+   "Every word from the LORD",
+   "Water and fruit"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jesus quoted this when tempted. “man does not live on bread alone, but on every word that comes from the mouth of the LORD.” (Deuteronomy 8:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 8,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, what food did Moses remind Israel God gave them when hungry?",
+  "options": [
+   "Manna",
+   "Fish",
+   "Lentils",
+   "Figs"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Their fathers had never known it. “and in your hunger He gave you manna to eat” (Deuteronomy 8:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 8,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, what did Moses say did not wear out during forty years in the wilderness?",
+  "options": [
+   "Their tents",
+   "Their clothing",
+   "Their weapons",
+   "Their cattle"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God cared for every need. “Your clothing did not wear out and your feet did not swell during these forty years.” (Deuteronomy 8:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 31,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, Moses tells Israel to be strong and courageous, for God will never do what?",
+  "options": [
+   "Speak to them",
+   "Rest",
+   "Test them",
+   "Leave or forsake them"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God goes with His people. “He will never leave you nor forsake you.” (Deuteronomy 31:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 31,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, whom did Moses call before Israel and tell, “Be strong and courageous”?",
+  "options": [
+   "Joshua",
+   "Eleazar",
+   "Aaron",
+   "Caleb"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Joshua would lead them into the land. “Then Moses called for Joshua and said to him in the presence of all Israel, “Be strong and courageous” (Deuteronomy 31:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 34,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the end of Deuteronomy, which mountain did Moses climb to see the promised land?",
+  "options": [
+   "Mount Zion",
+   "Mount Sinai",
+   "Mount Nebo",
+   "Mount Carmel"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God showed him the whole land. “Then Moses went up from the plains of Moab to Mount Nebo” (Deuteronomy 34:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 34,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the end of Deuteronomy, God let Moses see the promised land, but what could he not do?",
+  "options": [
+   "Pray for it",
+   "Cross into it",
+   "Name it",
+   "Bless it"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Moses died in Moab. “I have let you see it with your own eyes, but you will not cross into it.” (Deuteronomy 34:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 34,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How old was Moses when he died, as told at the end of Deuteronomy?",
+  "options": [
+   "One hundred twenty",
+   "Eighty",
+   "Two hundred",
+   "Ninety-nine"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "His eyes were still not weak. “Moses was a hundred and twenty years old when he died” (Deuteronomy 34:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 5,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy's Ten Commandments, whom are we told to honor?",
+  "options": [
+   "Older brothers",
+   "Rich neighbors",
+   "Kings and rulers",
+   "Father and mother"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "So that your days may be long. “Honor your father and your mother” (Deuteronomy 5:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, after reminding Israel He brought them out of Egypt, what does God command first?",
+  "options": [
+   "Do not steal",
+   "No other gods before Me",
+   "Keep the Sabbath",
+   "Honor your parents"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God alone deserves worship. “You shall have no other gods before Me.” (Deuteronomy 5:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 5,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, which day did God tell Israel to keep holy?",
+  "options": [
+   "New Year's Day",
+   "The first day",
+   "The Sabbath",
+   "Every feast day"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It was a day of rest. “Observe the Sabbath day by keeping it holy” (Deuteronomy 5:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 6,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, where did Moses say Israel had tested the LORD?",
+  "options": [
+   "Gilgal",
+   "Bethel",
+   "Hebron",
+   "Massah"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jesus quoted this verse when tempted. “Do not test the LORD your God as you tested Him at Massah.” (Deuteronomy 6:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 2,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, what did Moses say Israel had lacked during forty years in the wilderness?",
+  "options": [
+   "Water",
+   "Shelter",
+   "Nothing",
+   "Bread"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God was with them. “The LORD your God has been with you these forty years, and you have lacked nothing.” (Deuteronomy 2:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 7,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, why did God say He did not choose Israel?",
+  "options": [
+   "Because they were many",
+   "Because they were poor",
+   "Because they were young",
+   "Because they were far"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They were the fewest of peoples. “The LORD did not set His affection on you and choose you because you were more numerous than the other peoples” (Deuteronomy 7:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 4,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, Moses promises Israel will find God if they seek Him with all their what?",
+  "options": [
+   "Gold and silver",
+   "Heart and soul",
+   "Feasts and songs",
+   "Armies and horses"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God is found by those who seek Him. “you will find Him if you seek Him with all your heart and with all your soul.” (Deuteronomy 4:29, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 9,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, how long did Moses say he stayed on the mountain to receive the stone tablets?",
+  "options": [
+   "Seven days",
+   "Three days",
+   "One year",
+   "Forty days and nights"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He ate no bread and drank no water. “I stayed on the mountain forty days and forty nights.” (Deuteronomy 9:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 10,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, what happened to the first stone tablets of the law?",
+  "options": [
+   "They were burned",
+   "Moses broke them",
+   "They were stolen",
+   "They were lost at sea"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God wrote the words again. “the words that were on the first tablets, which you broke” (Deuteronomy 10:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 10,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, what wood did Moses use to make the ark for the new tablets?",
+  "options": [
+   "Acacia wood",
+   "Olive wood",
+   "Oak wood",
+   "Cedar wood"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The tablets were placed inside. “So I made an ark of acacia wood” (Deuteronomy 10:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 15,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, how were Israelites told to treat the poor and needy?",
+  "options": [
+   "Ignore them",
+   "Send them away",
+   "Open wide your hand",
+   "Make them slaves"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "There would always be poor in the land. “that is why I am commanding you to open wide your hand to your brother and to the poor and needy in your land.” (Deuteronomy 15:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 24,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy's law, who should get a sheaf of grain forgotten in the field?",
+  "options": [
+   "The king",
+   "The priests",
+   "Foreigners, orphans, and widows",
+   "The landowner"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God blesses the generous. “It is to be left for the foreigner, the fatherless, and the widow” (Deuteronomy 24:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 30,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, after setting life and death before Israel, what did Moses urge them to choose?",
+  "options": [
+   "Silence",
+   "A king",
+   "Riches",
+   "Life"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "So they and their children may live. “Therefore choose life, so that you and your descendants may live” (Deuteronomy 30:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 32,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Moses in Deuteronomy, what does Moses call God, whose work is perfect?",
+  "options": [
+   "The Rock",
+   "The Lamp",
+   "The Shield",
+   "The River"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God is solid and faithful. “He is the Rock, His work is perfect; all His ways are just.” (Deuteronomy 32:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 33,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, Moses says the eternal God is your dwelling place, and underneath are what?",
+  "options": [
+   "Strong walls",
+   "The everlasting arms",
+   "Deep waters",
+   "Golden pillars"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God holds His people up. “The eternal God is your dwelling place, and underneath are the everlasting arms.” (Deuteronomy 33:27, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 34,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Moses died, why was Joshua filled with the spirit of wisdom?",
+  "options": [
+   "He ate manna",
+   "He fasted forty days",
+   "Moses had laid hands on him",
+   "He found the law"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Israel then obeyed him. “Now Joshua son of Nun was filled with the spirit of wisdom because Moses had laid his hands on him.” (Deuteronomy 34:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 34,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After Moses died, how long did the Israelites grieve for him?",
+  "options": [
+   "Forty days",
+   "Thirty days",
+   "One year",
+   "Seven days"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They mourned in the plains of Moab. “The Israelites grieved for Moses in the plains of Moab thirty days” (Deuteronomy 34:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, how many days' journey is it from Horeb to Kadesh-barnea?",
+  "options": [
+   "Eleven days",
+   "Forty days",
+   "Seven days",
+   "Three days"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Israel took forty years instead. “It is an eleven-day journey from Horeb to Kadesh-barnea by way of Mount Seir.” (Deuteronomy 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In which year of the wilderness journey did Moses proclaim the words of Deuteronomy?",
+  "options": [
+   "The tenth year",
+   "The twentieth year",
+   "The first year",
+   "The fortieth year"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It was the eleventh month. “In the fortieth year, on the first day of the eleventh month” (Deuteronomy 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 34,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "From Mount Nebo, Moses stood on the top of which peak facing Jericho?",
+  "options": [
+   "Pisgah",
+   "Tabor",
+   "Hermon",
+   "Gilboa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God showed him the whole land. “to the top of Pisgah, which faces Jericho.” (Deuteronomy 34:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 34,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "According to Deuteronomy, what does no one know about Moses?",
+  "options": [
+   "His father's name",
+   "His wife's name",
+   "His age",
+   "Where his grave is"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God Himself buried him in Moab. “and no one to this day knows the location of his grave.” (Deuteronomy 34:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 34,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, how did the LORD know Moses, unlike any later prophet?",
+  "options": [
+   "Through angels",
+   "Face to face",
+   "In dreams only",
+   "By the Urim"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "No prophet rose like Moses. “whom the LORD knew face to face” (Deuteronomy 34:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 16,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, how many times a year were Israel's men to appear before the LORD?",
+  "options": [
+   "Twelve times",
+   "Seven times",
+   "Three times",
+   "Once"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "At three great feasts. “Three times a year all your men are to appear before the LORD your God” (Deuteronomy 16:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 22,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy's law, what must you build around the roof of a new house?",
+  "options": [
+   "A garden",
+   "A railing",
+   "A tower",
+   "An altar"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "So no one falls from it. “you are to construct a railing around your roof” (Deuteronomy 22:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 18,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, Moses says God will raise up for Israel a prophet like whom?",
+  "options": [
+   "Aaron",
+   "Abraham",
+   "Elijah",
+   "Moses himself"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Israel must listen to him. “The LORD your God will raise up for you a prophet like me from among your brothers.” (Deuteronomy 18:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 32,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Moses, God caring for Israel is compared to what bird stirring its nest?",
+  "options": [
+   "An eagle",
+   "A sparrow",
+   "A raven",
+   "A dove"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God carried them on His wings. “As an eagle stirs up its nest and hovers over its young” (Deuteronomy 32:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Deuteronomy",
+  "chapter": 31,
+  "verseStart": 26,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Deuteronomy, where did Moses tell the Levites to place the Book of the Law?",
+  "options": [
+   "Under the altar",
+   "In a cave",
+   "Beside the ark",
+   "In the king's house"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It would stand as a witness. “Take this Book of the Law and place it beside the ark of the covenant of the LORD your God” (Deuteronomy 31:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

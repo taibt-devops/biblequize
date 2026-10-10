@@ -1,0 +1,922 @@
+[
+ {
+  "book": "2 Samuel",
+  "chapter": 1,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Saul and Jonathan died, what did David take up for them?",
+  "options": [
+   "A lament",
+   "A crown",
+   "A feast",
+   "A battle"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "David mourned his king and his friend. “Then David took up this lament for Saul and his son Jonathan” (2 Samuel 1:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Saul's death, the men of Judah anointed David king in which town?",
+  "options": [
+   "Shiloh",
+   "Bethlehem",
+   "Hebron",
+   "Jerusalem"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He first ruled only Judah. “Then the men of Judah came to Hebron, and there they anointed David king over the house of Judah.” (2 Samuel 2:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 5,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How old was David when he became king?",
+  "options": [
+   "Forty",
+   "Thirty",
+   "Twelve",
+   "Twenty"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He reigned forty years. “David was thirty years old when he became king, and he reigned forty years.” (2 Samuel 5:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What fortress did King David capture, later called the City of David?",
+  "options": [
+   "Hebron",
+   "Jericho",
+   "Gath",
+   "Zion"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It became his capital, Jerusalem. “Nevertheless, David captured the fortress of Zion (that is, the City of David).” (2 Samuel 5:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 6,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "As the ark was brought to Jerusalem, what did King David do before the LORD?",
+  "options": [
+   "Sat on his throne",
+   "Wrote a letter",
+   "Danced with all his might",
+   "Hid in his palace"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He rejoiced in God. “And David, wearing a linen ephod, danced with all his might before the LORD” (2 Samuel 6:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 7,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why was King David troubled about his cedar house?",
+  "options": [
+   "Enemies wanted it",
+   "It was too small",
+   "It was leaking",
+   "God's ark was in a tent"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He wanted to build a house for God. “Here I am, living in a house of cedar, while the ark of God remains in a tent.” (2 Samuel 7:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 7,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did God promise about King David's throne?",
+  "options": [
+   "It will last forever",
+   "It will be shared",
+   "It will soon fall",
+   "It will move to Egypt"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus came from David's line. “Your house and kingdom will endure forever before Me, and your throne will be established forever.” (2 Samuel 7:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 9,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "For whose sake did King David want to show kindness to Saul's family?",
+  "options": [
+   "Samuel's",
+   "Jonathan's",
+   "Michal's",
+   "Goliath's"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jonathan had been his loyal friend. “Is there anyone left from the house of Saul to whom I can show kindness for the sake of Jonathan?” (2 Samuel 9:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 9,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did King David promise Jonathan's lame son Mephibosheth?",
+  "options": [
+   "A place in the army",
+   "A ship",
+   "A sword",
+   "To always eat at his table"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "David kept his promise to Jonathan. “and you will always eat at my table.” (2 Samuel 9:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which prophet did the LORD send to King David after his sin with Bathsheba?",
+  "options": [
+   "Nathan",
+   "Gad",
+   "Elijah",
+   "Samuel"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He told a story to show David his sin. “Then the LORD sent Nathan to David” (2 Samuel 12:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Nathan's story to David, what did the poor man own?",
+  "options": [
+   "A great herd",
+   "A vineyard",
+   "One small ewe lamb",
+   "A golden cup"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The rich man took it. “but the poor man had nothing except one small ewe lamb that he had bought.” (2 Samuel 12:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After his story about the stolen lamb, what did Nathan tell David?",
+  "options": [
+   "The lamb is safe",
+   "You are that man!",
+   "You are a good king",
+   "Go and find him"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "David saw his own sin. “You are that man!” (2 Samuel 12:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When confronted by Nathan, what did King David confess?",
+  "options": [
+   "Uriah is to blame",
+   "Leave my house",
+   "I did nothing wrong",
+   "I have sinned against the LORD"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God took away his sin. “I have sinned against the LORD.” (2 Samuel 12:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did David and Bathsheba name the son the LORD loved?",
+  "options": [
+   "Amnon",
+   "Solomon",
+   "Nathan",
+   "Absalom"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He later became king. “So she gave birth to a son, and they named him Solomon. Now the LORD loved the child” (2 Samuel 12:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 22,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In his song of praise, what did King David call the LORD?",
+  "options": [
+   "My crown",
+   "My army",
+   "My rock and fortress",
+   "My servant"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God was his safe place. “The LORD is my rock, my fortress, and my deliverer.” (2 Samuel 22:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 1,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In David's lament, Saul and Jonathan were swifter than what?",
+  "options": [
+   "Eagles",
+   "Arrows",
+   "Horses",
+   "Deer"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They were also stronger than lions. “They were swifter than eagles, they were stronger than lions.” (2 Samuel 1:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "During the long war between Saul's house and David's house, who grew stronger?",
+  "options": [
+   "Neither side",
+   "The Philistines",
+   "David",
+   "Saul's house"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Saul's house grew weaker. “And David grew stronger and stronger, while the house of Saul grew weaker and weaker.” (2 Samuel 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 5,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which people held Jerusalem before King David captured it?",
+  "options": [
+   "The Jebusites",
+   "The Amalekites",
+   "The Philistines",
+   "The Hittites"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They said David could never get in. “Now the king and his men marched to Jerusalem against the Jebusites who inhabited the land.” (2 Samuel 5:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 5,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which king sent cedar logs and builders to build King David's palace?",
+  "options": [
+   "Achish of Gath",
+   "Nahash of Ammon",
+   "Pharaoh of Egypt",
+   "Hiram king of Tyre"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tyre was famous for cedar. “Now Hiram king of Tyre sent envoys to David, along with cedar logs, carpenters, and stonemasons” (2 Samuel 5:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 6,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Whose house was blessed while God's ark stayed there before going to Jerusalem?",
+  "options": [
+   "Joab's",
+   "Obed-edom's",
+   "Abinadab's",
+   "Nathan's"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Then David brought the ark up with joy. “The LORD has blessed the house of Obed-edom and all that belongs to him, because of the ark of God.” (2 Samuel 6:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 6,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Who looked from a window and despised King David for dancing before the ark?",
+  "options": [
+   "Abigail",
+   "Tamar",
+   "Bathsheba",
+   "Michal, Saul's daughter"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "David was worshiping with all his heart. “Saul’s daughter Michal looked down from a window and saw King David leaping and dancing before the LORD” (2 Samuel 6:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 7,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "God told David that his descendant, not David, would build what?",
+  "options": [
+   "A house for God's Name",
+   "A new palace",
+   "A fleet of ships",
+   "A wall for Jerusalem"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Solomon built the temple. “He will build a house for My Name, and I will establish the throne of his kingdom forever.” (2 Samuel 7:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 9,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Ziba tell King David about Jonathan's surviving son?",
+  "options": [
+   "He lived in Egypt",
+   "He was lame in both feet",
+   "He was blind",
+   "He was a soldier"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "David still welcomed him. “There is still Jonathan’s son, who is lame in both feet.” (2 Samuel 9:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 9,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What was the name of Jonathan's son whom King David welcomed?",
+  "options": [
+   "Ziba",
+   "Ish-bosheth",
+   "Mephibosheth",
+   "Abner"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He fell facedown before David. “And when Mephibosheth son of Jonathan, the son of Saul, came to David, he fell facedown in reverence.” (2 Samuel 9:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 11,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bathsheba was the wife of which soldier in King David's army?",
+  "options": [
+   "Benaiah",
+   "Uriah the Hittite",
+   "Joab",
+   "Abner"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "David sinned against him. “This is Bathsheba, the daughter of Eliam and the wife of Uriah the Hittite.” (2 Samuel 11:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 12,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Nathan's story, how many times over did David say the rich man must pay for the lamb?",
+  "options": [
+   "Two times",
+   "Ten times",
+   "Four times",
+   "Seven times"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "David was angry before he saw his own sin. “he must pay for the lamb four times over.” (2 Samuel 12:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 15,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which of David's sons stole the hearts of the men of Israel?",
+  "options": [
+   "Amnon",
+   "Solomon",
+   "Adonijah",
+   "Absalom"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He turned people against the king. “In this way he stole the hearts of the men of Israel.” (2 Samuel 15:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 18,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Absalom rode under a large oak, what got caught in the tree?",
+  "options": [
+   "His head",
+   "His sword",
+   "His mule",
+   "His cloak"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He was left hanging in midair. “Absalom’s head was caught fast in the tree.” (2 Samuel 18:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 18,
+  "verseStart": 33,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did King David cry out when he heard Absalom had died?",
+  "options": [
+   "Victory is ours!",
+   "Praise the LORD!",
+   "My son, my son Absalom!",
+   "Bring me his crown!"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He wished he had died instead. “O my son Absalom! My son, my son Absalom!” (2 Samuel 18:33, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 23,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When his mighty men brought water from Bethlehem's well, what did David do?",
+  "options": [
+   "Saved it for later",
+   "Poured it out to the LORD",
+   "Gave it to his son",
+   "Drank it all"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They had risked their lives for it. “But he refused to drink it; instead, he poured it out to the LORD” (2 Samuel 23:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 24,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Why did King David insist on paying for the threshing floor?",
+  "options": [
+   "No offerings that cost nothing",
+   "The owner was poor",
+   "He wanted a receipt",
+   "It was the law"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "True worship costs something. “for I will not offer to the LORD my God burnt offerings that cost me nothing.” (2 Samuel 24:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 5,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How long did David reign over Judah in Hebron?",
+  "options": [
+   "Forty years",
+   "Thirty-three years",
+   "Three years",
+   "Seven years six months"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Then he reigned in Jerusalem. “In Hebron he reigned over Judah seven years and six months” (2 Samuel 5:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 5,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How many years did David reign in Jerusalem over all Israel and Judah?",
+  "options": [
+   "Seven",
+   "Forty",
+   "Thirty-three",
+   "Twenty"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His total reign was forty years. “and in Jerusalem he reigned thirty-three years over all Israel and Judah.” (2 Samuel 5:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How old was Mephibosheth when his nurse dropped him and he became lame?",
+  "options": [
+   "One",
+   "Five",
+   "Ten",
+   "Twelve"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "She was fleeing after Saul's death. “He was five years old when the report about Saul and Jonathan came from Jezreel.” (2 Samuel 4:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 9,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In which town was Mephibosheth living when David asked for him?",
+  "options": [
+   "Lo-debar",
+   "Mahanaim",
+   "Bethlehem",
+   "Gibeah"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He was at the house of Machir. “he is in Lo-debar at the house of Machir son of Ammiel.” (2 Samuel 9:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 9,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was the servant of Saul's family who told David about Mephibosheth?",
+  "options": [
+   "Machir",
+   "Shimei",
+   "Abner",
+   "Ziba"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was summoned to the king. “And there was a servant of Saul’s family named Ziba.” (2 Samuel 9:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 6,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How long did the ark stay at Obed-edom's house?",
+  "options": [
+   "Seven years",
+   "One year",
+   "Three months",
+   "Three days"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The LORD blessed his household. “Thus the ark of the LORD remained in the house of Obed-edom the Gittite for three months” (2 Samuel 6:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 23,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In his last words, what does David call himself?",
+  "options": [
+   "The great warrior",
+   "The shepherd king",
+   "The friend of God",
+   "The sweet psalmist of Israel"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He wrote many psalms. “and the sweet psalmist of Israel” (2 Samuel 23:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 24,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How much did David pay for the threshing floor and oxen?",
+  "options": [
+   "Fifty shekels of silver",
+   "Six hundred shekels of gold",
+   "Thirty pieces of silver",
+   "Ten talents"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He refused it as a gift. “So David bought the threshing floor and the oxen for fifty shekels of silver.” (2 Samuel 24:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Samuel",
+  "chapter": 6,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What was David wearing when he danced before the ark?",
+  "options": [
+   "Armor",
+   "A linen ephod",
+   "Sackcloth",
+   "His royal robe"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He worshiped humbly. “And David, wearing a linen ephod, danced with all his might before the LORD” (2 Samuel 6:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

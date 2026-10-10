@@ -1,0 +1,529 @@
+[
+ {
+  "book": "Ecclesiastes",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, the Teacher says to everything there is a what?",
+  "options": [
+   "Ending",
+   "Season",
+   "Reason",
+   "Price"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "A time for every purpose under heaven. “To everything there is a season, and a time for every purpose under heaven” (Ecclesiastes 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "A Time for Everything",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-viec-deu-co-thoi-diem"
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, there is a time to plant and a time to do what?",
+  "options": [
+   "Sell",
+   "Rest",
+   "Water",
+   "Uproot"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Life has its seasons. “a time to plant and a time to uproot” (Ecclesiastes 3:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "A Time for Everything",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-viec-deu-co-thoi-diem"
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 3,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, there is a time to weep and a time to do what?",
+  "options": [
+   "Laugh",
+   "Sleep",
+   "Work",
+   "Eat"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Both sorrow and joy have their time. “a time to weep and a time to laugh” (Ecclesiastes 3:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "A Time for Everything",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-viec-deu-co-thoi-diem"
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 3,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, there is a time to mourn and a time to do what?",
+  "options": [
+   "Build",
+   "Travel",
+   "Dance",
+   "Fight"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sadness does not last forever. “a time to mourn and a time to dance” (Ecclesiastes 3:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "A Time for Everything",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-viec-deu-co-thoi-diem"
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 3,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, there is a time to be silent and a time to do what?",
+  "options": [
+   "Hide",
+   "Sing",
+   "Speak",
+   "Run"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Wisdom knows when to talk. “a time to be silent and a time to speak” (Ecclesiastes 3:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "A Time for Everything",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-viec-deu-co-thoi-diem"
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, there is a time for war and a time for what?",
+  "options": [
+   "Harvest",
+   "Rest",
+   "Travel",
+   "Peace"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Everything has its time. “a time for war and a time for peace.” (Ecclesiastes 3:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "A Time for Everything",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-viec-deu-co-thoi-diem"
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, what has God made beautiful in its time?",
+  "options": [
+   "Only the temple",
+   "Everything",
+   "Only flowers",
+   "Nothing"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He set eternity in our hearts. “He has made everything beautiful in its time.” (Ecclesiastes 3:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "A Time for Everything",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-viec-deu-co-thoi-diem"
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Who is the Teacher whose words fill Ecclesiastes?",
+  "options": [
+   "The son of David",
+   "A Persian king",
+   "The son of Moses",
+   "A priest of Egypt"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He was king in Jerusalem. “These are the words of the Teacher, the son of David, king in Jerusalem” (Ecclesiastes 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What does the Teacher in Ecclesiastes say everything is?",
+  "options": [
+   "Perfect",
+   "Futile",
+   "New",
+   "Holy"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Life without God has no lasting meaning. “Everything is futile!” (Ecclesiastes 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "According to the Teacher in Ecclesiastes, there is nothing new where?",
+  "options": [
+   "In heaven",
+   "In Jerusalem",
+   "In the sea",
+   "Under the sun"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "What has been will be again. “there is nothing new under the sun.” (Ecclesiastes 1:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, why are two better than one?",
+  "options": [
+   "They eat less",
+   "They talk more",
+   "Each can help the other",
+   "They sleep longer"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "If one falls, the other lifts him up. “For if one falls down, his companion can lift him up” (Ecclesiastes 4:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 4,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, what kind of cord is not quickly broken?",
+  "options": [
+   "A cord of three strands",
+   "A long cord",
+   "A new cord",
+   "A golden cord"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Together we are stronger. “Moreover, a cord of three strands is not quickly broken.” (Ecclesiastes 4:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, since God is in heaven and you are on earth, how should your words be?",
+  "options": [
+   "Few",
+   "Loud",
+   "Clever",
+   "Many"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Do not be quick to speak. “So let your words be few.” (Ecclesiastes 5:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 5,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, what is never satisfied by money?",
+  "options": [
+   "A poor man",
+   "A wise king",
+   "A hard worker",
+   "One who loves money"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Loving wealth brings no rest. “He who loves money is never satisfied by money” (Ecclesiastes 5:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 12,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, when should you remember your Creator?",
+  "options": [
+   "Only on feast days",
+   "In the days of your youth",
+   "Only in old age",
+   "When you are rich"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Before hard days come. “Remember your Creator in the days of your youth” (Ecclesiastes 12:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 12,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How does the Teacher sum up everything at the end of Ecclesiastes?",
+  "options": [
+   "Eat, drink, be merry",
+   "Build great houses",
+   "Fear God, keep His commands",
+   "Gather great riches"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It is the whole duty of man. “Fear God and keep His commandments, because this is the whole duty of man.” (Ecclesiastes 12:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 9,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, how should you do whatever your hands find to do?",
+  "options": [
+   "With all your might",
+   "Only when paid",
+   "With a heavy heart",
+   "Slowly and lazily"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Life's time is limited. “Whatever you find to do with your hands, do it with all your might” (Ecclesiastes 9:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Over what was the Teacher of Ecclesiastes king?",
+  "options": [
+   "Persia in Susa",
+   "Israel in Jerusalem",
+   "Egypt in Memphis",
+   "Judah in Hebron"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He was David's son. “I, the Teacher, was king over Israel in Jerusalem.” (Ecclesiastes 1:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, what has God set in the hearts of men?",
+  "options": [
+   "Gold",
+   "Pride",
+   "Eternity",
+   "Fear"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Yet we cannot fathom all God's work. “He has also set eternity in the hearts of men” (Ecclesiastes 3:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 7,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, a patient spirit is better than what?",
+  "options": [
+   "A loud one",
+   "A quick one",
+   "A rich one",
+   "A proud one"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The end is better than the beginning. “and a patient spirit is better than a proud one.” (Ecclesiastes 7:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 11,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, what are we told to cast upon the waters?",
+  "options": [
+   "Your stones",
+   "Your bread",
+   "Your nets",
+   "Your gold"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "After many days you will find it again. “Cast your bread upon the waters, for after many days you will find it again.” (Ecclesiastes 11:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ecclesiastes",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ecclesiastes, there is a time to cast away stones and a time to do what?",
+  "options": [
+   "Throw them further",
+   "Build an altar",
+   "Break them",
+   "Gather stones together"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Everything has its time. “a time to cast away stones and a time to gather stones together” (Ecclesiastes 3:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

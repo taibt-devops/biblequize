@@ -1,0 +1,782 @@
+[
+ {
+  "book": "Jeremiah",
+  "chapter": 18,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Where did the LORD send Jeremiah to receive His message?",
+  "options": [
+   "The king's palace",
+   "The potter's house",
+   "The temple",
+   "The city gate"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God taught him with clay. “Go down at once to the potter’s house, and there I will reveal My message to you.” (Jeremiah 18:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Potter's House",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "nguoi-tho-gom"
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 18,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the potter's house, what did Jeremiah see the potter working at?",
+  "options": [
+   "The loom",
+   "The oven",
+   "The well",
+   "The wheel"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was shaping clay. “So I went down to the potter’s house and saw him working at the wheel.” (Jeremiah 18:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Potter's House",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "nguoi-tho-gom"
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 18,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the potter's house, what was the potter shaping the vessel from?",
+  "options": [
+   "Clay",
+   "Wood",
+   "Gold",
+   "Stone"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God is like the potter. “But the vessel that he was shaping from the clay became flawed in his hand” (Jeremiah 18:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Potter's House",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "nguoi-tho-gom"
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 18,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Jeremiah watched a potter. When the vessel became flawed, what did the potter do?",
+  "options": [
+   "Painted over it",
+   "Threw it away",
+   "Formed it into another",
+   "Sold it cheaply"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He reshaped it as seemed best. “so he formed it into another vessel, as it seemed best for him to do.” (Jeremiah 18:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Potter's House",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "nguoi-tho-gom"
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 18,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Jeremiah saw the potter, who did God say is like clay in His hand?",
+  "options": [
+   "The Babylonians",
+   "The animals",
+   "The house of Israel",
+   "The angels"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God can reshape His people. “Just like clay in the potter’s hand, so are you in My hand, O house of Israel.” (Jeremiah 18:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Potter's House",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "nguoi-tho-gom"
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 18,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the potter's house, what did God ask Israel through Jeremiah?",
+  "options": [
+   "Can I not treat you as clay?",
+   "Where is the potter?",
+   "Who made the wheel?",
+   "Why did you break it?"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God has the right to reshape us. “can I not treat you as this potter treats his clay?” (Jeremiah 18:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Potter's House",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "nguoi-tho-gom"
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 19,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Later, what did the LORD tell Jeremiah to buy from a potter?",
+  "options": [
+   "A brick",
+   "A clay jar",
+   "A cup",
+   "A lamp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It became another lesson for the elders. “Go and buy a clay jar from a potter.” (Jeremiah 19:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Potter's House",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "nguoi-tho-gom"
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "God told Jeremiah He knew him before when?",
+  "options": [
+   "Before the flood",
+   "Before he was king",
+   "Before he married",
+   "Before He formed him"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God set him apart as a prophet. “Before I formed you in the womb I knew you” (Jeremiah 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God called Jeremiah, what excuse did he give?",
+  "options": [
+   "I am too busy",
+   "I am too old",
+   "I am sick",
+   "I am only a child"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God told him not to say that. “I surely do not know how to speak, for I am only a child!” (Jeremiah 1:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God touched Jeremiah's mouth, what did He say He had put there?",
+  "options": [
+   "His words",
+   "A song",
+   "Honey",
+   "A coal"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jeremiah would speak for God. “Behold, I have put My words in your mouth.” (Jeremiah 1:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 29,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Jeremiah, God says His plans for His people give them a future and what?",
+  "options": [
+   "A fortune",
+   "A rest",
+   "A hope",
+   "A kingdom"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God's plans are good. “plans to prosper you and not to harm you, to give you a future and a hope.” (Jeremiah 29:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Why did God tell young Jeremiah not to be afraid?",
+  "options": [
+   "No one will listen",
+   "I am with you",
+   "You are strong",
+   "You will be king"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God would deliver him. “Do not be afraid of them, for I am with you to deliver you” (Jeremiah 1:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When God asked Jeremiah what he saw, what did he answer?",
+  "options": [
+   "A boiling pot",
+   "A golden lamp",
+   "An almond branch",
+   "A burning bush"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God watches over His word. “I see a branch of an almond tree” (Jeremiah 1:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 29,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Jeremiah, God says you will find Him when you search with all your what?",
+  "options": [
+   "Friends",
+   "Heart",
+   "Money",
+   "Strength"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God is found by seekers. “You will seek Me and find Me when you search for Me with all your heart.” (Jeremiah 29:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 31,
+  "verseStart": 31,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Jeremiah, what does God promise to make with Israel and Judah?",
+  "options": [
+   "A new covenant",
+   "A new temple",
+   "A new king",
+   "A new war"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "His law will be on their hearts. “when I will make a new covenant with the house of Israel and with the house of Judah.” (Jeremiah 31:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 31,
+  "verseStart": 33,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Jeremiah's new covenant, where will God write His law?",
+  "options": [
+   "On stone",
+   "On scrolls",
+   "On the walls",
+   "On their hearts"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God's people will know Him. “I will put My law in their minds and inscribe it on their hearts.” (Jeremiah 31:33, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 33,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Jeremiah, what does God promise if you call to Him?",
+  "options": [
+   "I will answer",
+   "I will wait",
+   "I will hide",
+   "I will test you"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He shows great things. “Call to Me, and I will answer and show you great and unsearchable things you do not know.” (Jeremiah 33:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 17,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Jeremiah, the one who trusts the LORD is like what planted by the waters?",
+  "options": [
+   "A flower",
+   "A house",
+   "A tower",
+   "A tree"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It does not fear heat or drought. “He is like a tree planted by the waters” (Jeremiah 17:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 32,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Jeremiah's prayer, what is too difficult for God?",
+  "options": [
+   "Healing the sick",
+   "Changing hearts",
+   "Nothing",
+   "Stopping wars"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He made heaven and earth. “Nothing is too difficult for You!” (Jeremiah 32:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 36,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Who wrote down Jeremiah's words on a scroll?",
+  "options": [
+   "Ezra",
+   "Baruch",
+   "Shaphan",
+   "Jehudi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jeremiah dictated to him. “So Jeremiah called Baruch son of Neriah” (Jeremiah 36:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 36,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "As Jeremiah's scroll was read to him, what did King Jehoiakim do with it?",
+  "options": [
+   "Burned it in the fire",
+   "Sent it to Babylon",
+   "Hid it away",
+   "Read it carefully"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He cut it piece by piece. “Jehoiakim would cut them off with a scribe’s knife and throw them into the firepot” (Jeremiah 36:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 38,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What was at the bottom of the cistern Jeremiah was dropped into?",
+  "options": [
+   "Gold",
+   "Water",
+   "Mud",
+   "Snakes"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jeremiah sank down in it. “which had no water but only mud, and Jeremiah sank down into the mud.” (Jeremiah 38:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 38,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which court official rescued Jeremiah from the cistern?",
+  "options": [
+   "Pashhur",
+   "Baruch",
+   "Gedaliah",
+   "Ebed-melech"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was a Cushite. “Now Ebed-melech the Cushite, a court official in the royal palace, heard that Jeremiah had been put into the cistern.” (Jeremiah 38:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 38,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "To pull Jeremiah from the cistern, what did Ebed-melech tell him to put under his arms?",
+  "options": [
+   "A pillow",
+   "Old rags and clothes",
+   "Straw",
+   "A leather belt"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They padded the ropes. “Put these worn-out rags and clothes under your arms to pad the ropes.” (Jeremiah 38:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 25,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Jeremiah, how long would the nations serve the king of Babylon?",
+  "options": [
+   "Forty years",
+   "Four hundred years",
+   "Seventy years",
+   "Seven years"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Daniel later read this prophecy. “and these nations will serve the king of Babylon for seventy years.” (Jeremiah 25:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Jeremiah came from a family of priests in which town?",
+  "options": [
+   "Anathoth",
+   "Bethel",
+   "Tekoa",
+   "Shiloh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was in Benjamin's territory. “one of the priests in Anathoth in the territory of Benjamin.” (Jeremiah 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was Jeremiah's father?",
+  "options": [
+   "Amoz",
+   "Buzi",
+   "Neriah",
+   "Hilkiah"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was one of the priests. “These are the words of Jeremiah son of Hilkiah” (Jeremiah 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 36,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who read Jeremiah's scroll aloud to King Jehoiakim?",
+  "options": [
+   "Micaiah",
+   "Jehudi",
+   "Shaphan",
+   "Baruch"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The king burned each section. “And as soon as Jehudi had read three or four columns” (Jeremiah 36:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 38,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How many men did the king send with Ebed-melech to rescue Jeremiah?",
+  "options": [
+   "Ten",
+   "Three",
+   "Thirty",
+   "One hundred"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They pulled him out with ropes. “Take thirty men from here with you and pull Jeremiah the prophet out of the cistern before he dies.” (Jeremiah 38:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 13,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Jeremiah, which animal cannot change its spots?",
+  "options": [
+   "The leopard",
+   "The deer",
+   "The goat",
+   "The lion"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Habitual evil is hard to change. “Can the Ethiopian change his skin, or the leopard his spots?” (Jeremiah 13:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 20,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "When Jeremiah tried not to speak God's message, what was it like in his heart?",
+  "options": [
+   "A cold wind",
+   "A heavy stone",
+   "A deep well",
+   "A burning fire"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He could not hold it in. “His message becomes a fire burning in my heart, shut up in my bones” (Jeremiah 20:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 35,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Jeremiah, which family refused to drink wine because of their forefather's command?",
+  "options": [
+   "The Levites",
+   "The Rechabites",
+   "The Kenites",
+   "The Nazirites"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jonadab son of Rechab commanded it. “for our forefather Jonadab son of Rechab commanded us” (Jeremiah 35:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jeremiah",
+  "chapter": 9,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Jeremiah, what should a person boast about?",
+  "options": [
+   "Riches",
+   "Strength",
+   "Knowing the LORD",
+   "Wisdom"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God delights in loving devotion. “But let him who boasts boast in this, that he understands and knows Me” (Jeremiah 9:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

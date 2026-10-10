@@ -34,3 +34,7 @@
   - Gotcha: key cache có dấu cách (`questions:1 Samuel:easy`) — `xargs redis-cli del` tách đôi nên không xóa; script đợt sau dùng `while IFS= read -r k`
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- BSB-8 Đợt E4: vòng 2, phần Cựu Ước (11 sách)
+  - Status: [x] DONE · 439 câu thay 1.079 câu dịch máy: Phục Truyền 40 (14/16/10), Giô-suê 48 (Dễ 19, 14 trên 2 câu chuyện / 18 / 11), Các Quan Xét 45 (18, 15 trên 2 câu chuyện / 16 / 11), 2 Sa-mu-ên 40 (15/16/9), 1 Các Vua 55 (28 trên 4 câu chuyện / 16 / 11), 2 Các Vua 55 (28 trên 4 câu chuyện / 16 / 11), Nê-hê-mi 28 (10/10/8), Gióp 29 (9/12/8), Truyền Đạo 22 (7/10/5), Ê-sai 44 (21 trên 3 câu chuyện / 14 / 9), Giê-rê-mi 33 (11/14/8) · bỏ chi tiết bạo lực (Gia-ên, Bát-sê-ba chỉ hỏi tên chồng, Áp-sa-lôm chỉ hỏi cây) · `retired_hashes.txt` 3.297 hash; 2 câu trùng chữ câu cũ → đổi lời · `bsb_en_quiz.json` 1.700 câu, 110 câu chuyện có câu tiếng Anh · test seed xanh
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
