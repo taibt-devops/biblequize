@@ -1,0 +1,416 @@
+[
+ {
+  "book": "1 Chronicles",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Whose name opens the long family lists of 1 Chronicles?",
+  "options": [
+   "Abraham",
+   "Noah",
+   "David",
+   "Adam"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The lists start at the very beginning. “Adam, Seth, Enosh” (1 Chronicles 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, what did Jabez ask God to enlarge?",
+  "options": [
+   "His army",
+   "His name",
+   "His territory",
+   "His house"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God granted his request. “If only You would bless me and enlarge my territory!” (1 Chronicles 4:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, how did God answer the prayer of Jabez?",
+  "options": [
+   "He waited years",
+   "He granted it",
+   "He refused it",
+   "He was silent"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jabez called on the God of Israel. “And God granted the request of Jabez.” (1 Chronicles 4:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 16,
+  "verseStart": 34,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, why should we give thanks to the LORD?",
+  "options": [
+   "He is good",
+   "He is angry",
+   "He is silent",
+   "He is far"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "His love endures forever. “Give thanks to the LORD, for He is good; His loving devotion endures forever.” (1 Chronicles 16:34, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 28,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, what did King David tell Solomon before building the temple?",
+  "options": [
+   "Be strong and courageous",
+   "Build a palace first",
+   "Rest and wait",
+   "Ask Egypt for help"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God would not fail him. “Be strong and courageous, and do it.” (1 Chronicles 28:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 15,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, whom did David have the Levites appoint to praise with joy?",
+  "options": [
+   "Farmers",
+   "Soldiers",
+   "Singers",
+   "Builders"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "With harps, lyres, and cymbals. “David also told the leaders of the Levites to appoint their relatives as singers” (1 Chronicles 15:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 4,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, why did Jabez's mother give him his name?",
+  "options": [
+   "He was a twin",
+   "She bore him in pain",
+   "He was born rich",
+   "He was very small"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Yet he was honorable. “His mother had named him Jabez, saying, “Because I bore him in pain.”” (1 Chronicles 4:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 11,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, what was Jerusalem's earlier name?",
+  "options": [
+   "Bethel",
+   "Salem",
+   "Hebron",
+   "Jebus"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The Jebusites lived there. “Then David and all the Israelites marched to Jerusalem (that is, Jebus)” (1 Chronicles 11:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 22,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, why did God not let David build the temple?",
+  "options": [
+   "He had shed much blood",
+   "He was too old",
+   "He was too poor",
+   "He lived far away"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He had waged great wars. “You are not to build a house for My Name because you have shed so much blood on the ground before Me.” (1 Chronicles 22:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 22,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, what kind of man would Solomon be, according to God?",
+  "options": [
+   "A man of the field",
+   "A man of the sea",
+   "A man of war",
+   "A man of rest"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Israel would have peace in his reign. “But a son will be born to you who will be a man of rest.” (1 Chronicles 22:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 22,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, why did David make lavish preparations for the temple?",
+  "options": [
+   "Egypt demanded it",
+   "The priests asked",
+   "Solomon was young",
+   "He wanted fame"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The temple had to be magnificent. “My son Solomon is young and inexperienced, and the house to be built for the LORD must be exceedingly magnificent” (1 Chronicles 22:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 29,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In David's prayer in 1 Chronicles, to whom does everything in heaven and earth belong?",
+  "options": [
+   "The priests",
+   "The LORD",
+   "The king",
+   "The people"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "His is the kingdom. “for everything in heaven and on earth belongs to You.” (1 Chronicles 29:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 29,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, where did David say the people's generous gifts came from?",
+  "options": [
+   "From God's own hand",
+   "From taxes",
+   "From the spoils of war",
+   "From Egypt"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Everything comes from God. “For everything comes from You, and from Your own hand we have given to You.” (1 Chronicles 29:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 10,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, why did Saul die?",
+  "options": [
+   "He fell ill",
+   "He was very old",
+   "He was unfaithful to the LORD",
+   "He was poisoned"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He even consulted a medium. “So Saul died for his unfaithfulness to the LORD” (1 Chronicles 10:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 29,
+  "verseStart": 28,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, how is King David described at his death?",
+  "options": [
+   "Alone in exile",
+   "Poor and forgotten",
+   "Young and strong",
+   "Full of years, riches, and honor"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Solomon reigned after him. “He died at a ripe old age, full of years, riches, and honor” (1 Chronicles 29:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 21,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, what did Satan incite David to do?",
+  "options": [
+   "Build an idol",
+   "Take a census of Israel",
+   "Attack Egypt",
+   "Leave Jerusalem"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It displeased God. “Then Satan rose up against Israel and incited David to take a census of Israel.” (1 Chronicles 21:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 17,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, to which prophet did David say the ark was under a tent?",
+  "options": [
+   "Nathan",
+   "Asaph",
+   "Samuel",
+   "Gad"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "David lived in a cedar house. “he said to Nathan the prophet, “Here I am, living in a house of cedar, while the ark of the covenant of the LORD is under a tent.”” (1 Chronicles 17:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, who is listed right after Adam?",
+  "options": [
+   "Cain",
+   "Abel",
+   "Enoch",
+   "Seth"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The list continues with Enosh. “Adam, Seth, Enosh” (1 Chronicles 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

@@ -1,0 +1,255 @@
+[
+ {
+  "book": "Song of Songs",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Whose Song of Songs is named in the book's first line?",
+  "options": [
+   "David's",
+   "Asaph's",
+   "Moses'",
+   "Solomon's"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It is a song about love. “This is Solomon’s Song of Songs.” (Song of Songs 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, what is the banner over the beloved?",
+  "options": [
+   "Peace",
+   "Love",
+   "Gold",
+   "War"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It is a song of love. “and his banner over me is love.” (Song of Songs 2:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, which season is past?",
+  "options": [
+   "Winter",
+   "Harvest",
+   "Spring",
+   "Summer"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The rain is over and gone. “For now the winter is past; the rain is over and gone.” (Song of Songs 2:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, what has appeared in the countryside now that winter is past?",
+  "options": [
+   "Snow",
+   "Soldiers",
+   "Flowers",
+   "Locusts"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The season of singing has come. “The flowers have appeared in the countryside” (Song of Songs 2:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, which animals ruin the vineyards?",
+  "options": [
+   "Birds",
+   "Wild boars",
+   "Lions",
+   "Little foxes"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Catch them while the vines bloom. “the little foxes that ruin the vineyards” (Song of Songs 2:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 8,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, what can mighty waters not quench?",
+  "options": [
+   "The sun",
+   "Thirst",
+   "Love",
+   "Fire"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Rivers cannot sweep it away. “Mighty waters cannot quench love; rivers cannot sweep it away.” (Song of Songs 8:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 8,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, love is as strong as what?",
+  "options": [
+   "Iron",
+   "Death",
+   "A lion",
+   "The sea"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Its sparks are fiery flames. “For love is as strong as death” (Song of Songs 8:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, which bird's cooing is heard in the land?",
+  "options": [
+   "Turtledoves",
+   "Sparrows",
+   "Eagles",
+   "Ravens"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The season of singing has come. “and the cooing of turtledoves is heard in our land.” (Song of Songs 2:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 8,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, what does the beloved ask to be set as over the heart?",
+  "options": [
+   "A crown",
+   "A shield",
+   "A ring",
+   "A seal"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Also as a seal upon the arm. “Set me as a seal over your heart, as a seal upon your arm.” (Song of Songs 8:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, the beloved's eyes are like what behind her veil?",
+  "options": [
+   "Doves",
+   "Stars",
+   "Jewels",
+   "Pools"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He praises her beauty. “Your eyes are like doves behind your veil.” (Song of Songs 4:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, the beloved's hair is like a flock of goats on which mountain?",
+  "options": [
+   "Mount Carmel",
+   "Mount Zion",
+   "Mount Gilead",
+   "Mount Hermon"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It streams down the slope. “Your hair is like a flock of goats streaming down Mount Gilead.” (Song of Songs 4:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

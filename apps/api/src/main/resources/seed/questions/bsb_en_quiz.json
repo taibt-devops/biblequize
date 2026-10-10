@@ -1,5 +1,419 @@
 [
  {
+  "book": "1 Chronicles",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Whose name opens the long family lists of 1 Chronicles?",
+  "options": [
+   "Abraham",
+   "Noah",
+   "David",
+   "Adam"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The lists start at the very beginning. “Adam, Seth, Enosh” (1 Chronicles 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, what did Jabez ask God to enlarge?",
+  "options": [
+   "His army",
+   "His name",
+   "His territory",
+   "His house"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God granted his request. “If only You would bless me and enlarge my territory!” (1 Chronicles 4:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, how did God answer the prayer of Jabez?",
+  "options": [
+   "He waited years",
+   "He granted it",
+   "He refused it",
+   "He was silent"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jabez called on the God of Israel. “And God granted the request of Jabez.” (1 Chronicles 4:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 16,
+  "verseStart": 34,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, why should we give thanks to the LORD?",
+  "options": [
+   "He is good",
+   "He is angry",
+   "He is silent",
+   "He is far"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "His love endures forever. “Give thanks to the LORD, for He is good; His loving devotion endures forever.” (1 Chronicles 16:34, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 28,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, what did King David tell Solomon before building the temple?",
+  "options": [
+   "Be strong and courageous",
+   "Build a palace first",
+   "Rest and wait",
+   "Ask Egypt for help"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God would not fail him. “Be strong and courageous, and do it.” (1 Chronicles 28:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 15,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, whom did David have the Levites appoint to praise with joy?",
+  "options": [
+   "Farmers",
+   "Soldiers",
+   "Singers",
+   "Builders"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "With harps, lyres, and cymbals. “David also told the leaders of the Levites to appoint their relatives as singers” (1 Chronicles 15:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 4,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, why did Jabez's mother give him his name?",
+  "options": [
+   "He was a twin",
+   "She bore him in pain",
+   "He was born rich",
+   "He was very small"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Yet he was honorable. “His mother had named him Jabez, saying, “Because I bore him in pain.”” (1 Chronicles 4:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 11,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, what was Jerusalem's earlier name?",
+  "options": [
+   "Bethel",
+   "Salem",
+   "Hebron",
+   "Jebus"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The Jebusites lived there. “Then David and all the Israelites marched to Jerusalem (that is, Jebus)” (1 Chronicles 11:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 22,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, why did God not let David build the temple?",
+  "options": [
+   "He had shed much blood",
+   "He was too old",
+   "He was too poor",
+   "He lived far away"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He had waged great wars. “You are not to build a house for My Name because you have shed so much blood on the ground before Me.” (1 Chronicles 22:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 22,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, what kind of man would Solomon be, according to God?",
+  "options": [
+   "A man of the field",
+   "A man of the sea",
+   "A man of war",
+   "A man of rest"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Israel would have peace in his reign. “But a son will be born to you who will be a man of rest.” (1 Chronicles 22:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 22,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, why did David make lavish preparations for the temple?",
+  "options": [
+   "Egypt demanded it",
+   "The priests asked",
+   "Solomon was young",
+   "He wanted fame"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The temple had to be magnificent. “My son Solomon is young and inexperienced, and the house to be built for the LORD must be exceedingly magnificent” (1 Chronicles 22:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 29,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In David's prayer in 1 Chronicles, to whom does everything in heaven and earth belong?",
+  "options": [
+   "The priests",
+   "The LORD",
+   "The king",
+   "The people"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "His is the kingdom. “for everything in heaven and on earth belongs to You.” (1 Chronicles 29:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 29,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, where did David say the people's generous gifts came from?",
+  "options": [
+   "From God's own hand",
+   "From taxes",
+   "From the spoils of war",
+   "From Egypt"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Everything comes from God. “For everything comes from You, and from Your own hand we have given to You.” (1 Chronicles 29:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 10,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, why did Saul die?",
+  "options": [
+   "He fell ill",
+   "He was very old",
+   "He was unfaithful to the LORD",
+   "He was poisoned"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He even consulted a medium. “So Saul died for his unfaithfulness to the LORD” (1 Chronicles 10:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 29,
+  "verseStart": 28,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, how is King David described at his death?",
+  "options": [
+   "Alone in exile",
+   "Poor and forgotten",
+   "Young and strong",
+   "Full of years, riches, and honor"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Solomon reigned after him. “He died at a ripe old age, full of years, riches, and honor” (1 Chronicles 29:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 21,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, what did Satan incite David to do?",
+  "options": [
+   "Build an idol",
+   "Take a census of Israel",
+   "Attack Egypt",
+   "Leave Jerusalem"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It displeased God. “Then Satan rose up against Israel and incited David to take a census of Israel.” (1 Chronicles 21:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 17,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, to which prophet did David say the ark was under a tent?",
+  "options": [
+   "Nathan",
+   "Asaph",
+   "Samuel",
+   "Gad"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "David lived in a cedar house. “he said to Nathan the prophet, “Here I am, living in a house of cedar, while the ark of the covenant of the LORD is under a tent.”” (1 Chronicles 17:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 1 Chronicles, who is listed right after Adam?",
+  "options": [
+   "Cain",
+   "Abel",
+   "Enoch",
+   "Seth"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The list continues with Enosh. “Adam, Seth, Enosh” (1 Chronicles 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
   "book": "1 Corinthians",
   "chapter": 13,
   "verseStart": 1,
@@ -5549,6 +5963,420 @@
   "language": "en",
   "tags": [
    "New Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 7,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, if God's people humble themselves and pray, what will He heal?",
+  "options": [
+   "Their land",
+   "Their animals",
+   "Their houses",
+   "Their enemies"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He will hear and forgive. “then I will hear from heaven, forgive their sin, and heal their land.” (2 Chronicles 7:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 7,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, when Solomon finished praying, what came down from heaven?",
+  "options": [
+   "Manna",
+   "Rain",
+   "Fire",
+   "Hail"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It consumed the offerings. “When Solomon had finished praying, fire came down from heaven and consumed the burnt offering” (2 Chronicles 7:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, what did Solomon ask God for to lead the people?",
+  "options": [
+   "Gold and silver",
+   "A long life",
+   "A great army",
+   "Wisdom and knowledge"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God gave him riches too. “Now grant me wisdom and knowledge, so that I may lead this people.” (2 Chronicles 1:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 20,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, when a vast army came against Judah, to whom did the battle belong?",
+  "options": [
+   "The soldiers",
+   "God",
+   "The enemy",
+   "The king"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Do not be afraid. “for the battle does not belong to you, but to God.” (2 Chronicles 20:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 20,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, who went out in front of King Jehoshaphat's army?",
+  "options": [
+   "Chariots",
+   "Singers praising God",
+   "Spies",
+   "Archers"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God set ambushes for the enemy. “and appointed those who would sing to the LORD and praise the splendor of His holiness.” (2 Chronicles 20:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 9,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, which queen came to test Solomon with hard questions?",
+  "options": [
+   "Queen Jezebel",
+   "Queen Vashti",
+   "Queen Esther",
+   "The queen of Sheba"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "She brought camels with spices and gold. “Now when the queen of Sheba heard about the fame of Solomon, she came to test him with difficult questions.” (2 Chronicles 9:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 5,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, why could the priests not minister in the new temple?",
+  "options": [
+   "A cloud filled it",
+   "Enemies attacked",
+   "It was unfinished",
+   "The doors were shut"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God's glory filled the house. “so that the priests could not stand there to minister because of the cloud” (2 Chronicles 5:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 5,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, what did the singers proclaim when the temple filled with a cloud?",
+  "options": [
+   "He is angry",
+   "He is silent",
+   "He is good",
+   "He is far away"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His love endures forever. “For He is good; His loving devotion endures forever.” (2 Chronicles 5:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 16,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, where do the eyes of the LORD roam?",
+  "options": [
+   "Only over Israel",
+   "Only in heaven",
+   "Only in the temple",
+   "Over all the earth"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He strengthens the fully devoted. “For the eyes of the LORD roam to and fro over all the earth” (2 Chronicles 16:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 26,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, what broke out on King Uzziah when he burned incense in the temple?",
+  "options": [
+   "A fever",
+   "Blindness",
+   "Leprosy",
+   "A fire"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Only priests could burn incense. “leprosy broke out on his forehead.” (2 Chronicles 26:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 32,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, King Hezekiah said Assyria had only what on its side?",
+  "options": [
+   "The arm of flesh",
+   "Many gods",
+   "A great river",
+   "A strong wall"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God was with Judah. “With him is only the arm of flesh, but with us is the LORD our God to help us” (2 Chronicles 32:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 33,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, after God answered his prayer, what did King Manasseh know?",
+  "options": [
+   "He was the greatest",
+   "The LORD is God",
+   "Idols were real",
+   "Egypt would save him"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He humbled himself in distress. “Then Manasseh knew that the LORD is God.” (2 Chronicles 33:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 36,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, which Persian king did God stir to send a proclamation?",
+  "options": [
+   "Darius",
+   "Xerxes",
+   "Artaxerxes",
+   "Cyrus"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It fulfilled Jeremiah's word. “the LORD stirred the spirit of Cyrus king of Persia to send a proclamation” (2 Chronicles 36:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 36,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, what did Cyrus say God appointed him to build?",
+  "options": [
+   "A wall in Babylon",
+   "A house at Jerusalem",
+   "A palace in Persia",
+   "A fleet"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God's people could go home. “has appointed me to build a house for Him at Jerusalem in Judah.” (2 Chronicles 36:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 24,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, how many years did King Joash reign in Jerusalem?",
+  "options": [
+   "Forty",
+   "Seven",
+   "Twenty",
+   "Fifty-five"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He began at seven years old. “and he reigned in Jerusalem forty years.” (2 Chronicles 24:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 26,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, which priest went in after King Uzziah to stop him?",
+  "options": [
+   "Jehoiada",
+   "Hilkiah",
+   "Azariah",
+   "Zadok"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Eighty brave priests went with him. “Then Azariah the priest, along with eighty brave priests of the LORD, went in after him.” (2 Chronicles 26:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 34,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, in which year of his reign did young Josiah begin to seek God?",
+  "options": [
+   "The eighth year",
+   "The twelfth year",
+   "The first year",
+   "The eighteenth year"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He later cleansed Judah of idols. “In the eighth year of his reign, while he was still young, Josiah began to seek the God of his father David” (2 Chronicles 34:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 20,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In 2 Chronicles, when did the LORD set ambushes against Judah's enemies?",
+  "options": [
+   "At midnight",
+   "When the singing began",
+   "When the walls fell",
+   "After a long siege"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Praise came before victory. “The moment they began their shouts and praises, the LORD set ambushes” (2 Chronicles 20:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
    "BSB"
   ]
  },
@@ -18380,6 +19208,811 @@
    1
   ],
   "explanation": "His love lasts far longer than punishment. “but showing loving devotion to a thousand generations of those who love Me” (Exodus 20:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 37,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel, what was the valley the Spirit set Ezekiel down in full of?",
+  "options": [
+   "Water",
+   "Soldiers",
+   "Flowers",
+   "Bones"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They were very dry. “and set me down in the middle of the valley, and it was full of bones.” (Ezekiel 37:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 37,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel's valley of dry bones, what did God ask him?",
+  "options": [
+   "Who killed them?",
+   "Can these bones live?",
+   "How many are there?",
+   "Should we bury them?"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ezekiel said only God knows. “Son of man, can these bones come to life?” (Ezekiel 37:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 37,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "As Ezekiel prophesied to the dry bones, what did they do?",
+  "options": [
+   "Turned to dust",
+   "Sank into the ground",
+   "Came together, bone to bone",
+   "Caught fire"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "There was a rattling noise. “there was suddenly a noise, a rattling, and the bones came together, bone to bone.” (Ezekiel 37:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 37,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When breath entered the dry bones Ezekiel saw, what did they become?",
+  "options": [
+   "A vast army",
+   "A city",
+   "A river",
+   "A forest"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They stood on their feet. “and they came to life and stood on their feet—a vast army.” (Ezekiel 37:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 36,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel, God promises to replace a heart of stone with a heart of what?",
+  "options": [
+   "Gold",
+   "Iron",
+   "Glass",
+   "Flesh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He gives a new spirit. “I will remove your heart of stone and give you a heart of flesh.” (Ezekiel 36:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel, how did the scroll God gave Ezekiel to eat taste?",
+  "options": [
+   "Bitter",
+   "Salty",
+   "Sweet as honey",
+   "Like nothing"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God's word was sweet. “So I ate, and it was as sweet as honey in my mouth.” (Ezekiel 3:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 34,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel, what does God say He Himself will search for?",
+  "options": [
+   "His flock",
+   "His temple",
+   "Lost gold",
+   "A new king"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Like a shepherd seeks sheep. “Behold, I Myself will search for My flock and seek them out.” (Ezekiel 34:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel's vision, which face did each living creature NOT have?",
+  "options": [
+   "An eagle",
+   "A horse",
+   "A man",
+   "A lion"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They also had an ox's face. “The form of their faces was that of a man, and each of the four had the face of a lion on the right side, the face of an ox on the left side, and also the face of an eagle.” (Ezekiel 1:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel, what did God tell Ezekiel to eat before speaking to Israel?",
+  "options": [
+   "Bread",
+   "Honey",
+   "Locusts",
+   "A scroll"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God's words filled him. “Eat this scroll, then go and speak to the house of Israel.” (Ezekiel 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel, what did God make Ezekiel for the house of Israel?",
+  "options": [
+   "A watchman",
+   "A king",
+   "A judge",
+   "A builder"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He warned them for God. “Son of man, I have made you a watchman for the house of Israel.” (Ezekiel 3:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 37,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel's valley vision, from where was the breath to come?",
+  "options": [
+   "Under the ground",
+   "The four winds",
+   "The temple",
+   "The sea"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "So the slain might live. “Come from the four winds, O breath, and breathe into these slain, so that they may live!” (Ezekiel 37:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 18,
+  "verseStart": 32,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel, God takes no pleasure in anyone's death, so what does He urge?",
+  "options": [
+   "Run and hide",
+   "Fight and win",
+   "Repent and live",
+   "Wait and see"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God desires life. “So repent and live!” (Ezekiel 18:32, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 47,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel's vision, what happens wherever the river from the temple flows?",
+  "options": [
+   "It turns to blood",
+   "Everything flourishes",
+   "Everything dies",
+   "Fire breaks out"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Even the waters become fresh. “so wherever the river flows, everything will flourish.” (Ezekiel 47:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 22,
+  "verseStart": 30,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel, God searched for a man to stand where for the land?",
+  "options": [
+   "On the mountain",
+   "At the altar",
+   "On the throne",
+   "In the gap"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "But He found no one. “I searched for a man among them to repair the wall and stand in the gap before Me” (Ezekiel 22:30, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was Ezekiel's father?",
+  "options": [
+   "Buzi",
+   "Amoz",
+   "Hilkiah",
+   "Berechiah"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ezekiel was a priest. “the word of the LORD came directly to Ezekiel the priest, the son of Buzi” (Ezekiel 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "By which river was Ezekiel among the exiles when he saw visions of God?",
+  "options": [
+   "The Tigris",
+   "The Nile",
+   "The Kebar",
+   "The Jordan"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It was in the land of the Chaldeans. “while I was among the exiles by the River Kebar, the heavens opened and I saw visions of God.” (Ezekiel 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 48,
+  "verseStart": 35,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "At the end of Ezekiel, what will the city's new name be?",
+  "options": [
+   "The LORD Is There",
+   "New Zion",
+   "City of Peace",
+   "House of Bread"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God dwells with His people. “and from that day on the name of the city will be: THE LORD IS THERE.” (Ezekiel 48:35, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel, for how many days did Ezekiel lie on his left side for Israel?",
+  "options": [
+   "40",
+   "120",
+   "390",
+   "70"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "A day for each year of iniquity. “For I have assigned to you 390 days, according to the number of years of their iniquity.” (Ezekiel 4:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ezekiel, what words were written on both sides of the scroll?",
+  "options": [
+   "Laws of Moses",
+   "Names of kings",
+   "Praise and joy",
+   "Lamentation, mourning, and woe"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It was a hard message. “And written on the front and back of it were words of lamentation, mourning, and woe.” (Ezekiel 2:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, which Persian king let the Jews go home to build God's house?",
+  "options": [
+   "Herod",
+   "Cyrus",
+   "Nebuchadnezzar",
+   "Pharaoh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God stirred his spirit. “the LORD stirred the spirit of Cyrus king of Persia to send a proclamation” (Ezra 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, King Cyrus told God's people to go to Jerusalem and do what?",
+  "options": [
+   "Crown a king",
+   "Fight its enemies",
+   "Sell their land",
+   "Build the LORD's house"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The temple had been destroyed. “and build the house of the LORD, the God of Israel” (Ezra 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, why did the people give a great shout of praise?",
+  "options": [
+   "The temple foundation was laid",
+   "The war was won",
+   "Rain fell",
+   "The king arrived"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God's house was rising again. “because the foundation of the house of the LORD had been laid.” (Ezra 3:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, what did older people who had seen the first temple do at the new foundation?",
+  "options": [
+   "Danced",
+   "Left angrily",
+   "Wept loudly",
+   "Fell asleep"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Others shouted for joy. “wept loudly when they saw the foundation of this temple.” (Ezra 3:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, what was Ezra skilled in?",
+  "options": [
+   "Building walls",
+   "Fighting wars",
+   "Trading goods",
+   "The Law of Moses"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was a scribe. “He was a scribe skilled in the Law of Moses” (Ezra 7:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, what had Ezra set his heart to do with the Law?",
+  "options": [
+   "Change it",
+   "Study, practice, and teach it",
+   "Hide it",
+   "Sell it"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He lived what he taught. “For Ezra had set his heart to study the Law of the LORD, to practice it, and to teach its statutes” (Ezra 7:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, what did King Cyrus return that Nebuchadnezzar had taken?",
+  "options": [
+   "The king's crown",
+   "Captured soldiers",
+   "The temple articles",
+   "The ark"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They went back to Jerusalem. “King Cyrus also brought out the articles belonging to the house of the LORD that Nebuchadnezzar had carried away” (Ezra 1:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, why could no one tell joyful shouts from weeping?",
+  "options": [
+   "The noise was so great",
+   "A storm was blowing",
+   "The temple was far",
+   "Everyone was silent"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was heard from afar. “The people could not distinguish the shouts of joy from the sound of weeping” (Ezra 3:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, what did the people of the land try to do to Judah's builders?",
+  "options": [
+   "Teach them",
+   "Help them",
+   "Pay them",
+   "Discourage and frighten them"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They opposed the rebuilding. “Then the people of the land set out to discourage the people of Judah and make them afraid to build.” (Ezra 4:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, from which city did Ezra come up to Jerusalem?",
+  "options": [
+   "Nineveh",
+   "Babylon",
+   "Susa",
+   "Damascus"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God's hand was on him. “this Ezra came up from Babylon.” (Ezra 7:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 8,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, what did Ezra proclaim to ask God for a safe journey?",
+  "options": [
+   "A fast",
+   "A feast",
+   "A war",
+   "A census"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He would not ask the king for soldiers. “And there by the Ahava Canal I proclaimed a fast” (Ezra 8:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 8,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, why was Ezra ashamed to ask the king for soldiers?",
+  "options": [
+   "The king was angry",
+   "They had no money",
+   "He had said God protects",
+   "He was afraid"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He trusted God's hand. “For I was ashamed to ask the king for an escort of soldiers and horsemen” (Ezra 8:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, in which king's reign was the second temple completed?",
+  "options": [
+   "Cyrus",
+   "Darius",
+   "Xerxes",
+   "Artaxerxes"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It was his sixth year. “in the sixth year of the reign of King Darius.” (Ezra 6:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, in which month was the second temple completed?",
+  "options": [
+   "Tishri",
+   "Elul",
+   "Nisan",
+   "Adar"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "On the third day. “And this temple was completed on the third day of the month of Adar” (Ezra 6:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, which leader built the altar with Jeshua the priest?",
+  "options": [
+   "Ezra",
+   "Nehemiah",
+   "Zerubbabel",
+   "Haggai"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He was the son of Shealtiel. “along with Zerubbabel son of Shealtiel and his associates, began to build the altar” (Ezra 3:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 8,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, by which canal did Ezra proclaim a fast?",
+  "options": [
+   "The Ahava Canal",
+   "The Chebar Canal",
+   "The Jordan Canal",
+   "The Euphrates Canal"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They prayed for safe travel. “And there by the Ahava Canal I proclaimed a fast” (Ezra 8:21, BSB)",
   "language": "en",
   "tags": [
    "Old Testament",
@@ -33621,6 +35254,765 @@
   ]
  },
  {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, what is new every morning?",
+  "options": [
+   "The temple",
+   "Our troubles",
+   "The city walls",
+   "God's mercies"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Great is His faithfulness. “They are new every morning; great is Your faithfulness!” (Lamentations 3:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, what does the writer call great in the LORD?",
+  "options": [
+   "His army",
+   "His anger",
+   "His faithfulness",
+   "His temple"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His mercies never fail. “great is Your faithfulness!” (Lamentations 3:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, to whom is the LORD good?",
+  "options": [
+   "Those who wait for Him",
+   "Only kings",
+   "The proud",
+   "Only priests"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "And to the soul who seeks Him. “The LORD is good to those who wait for Him, to the soul who seeks Him.” (Lamentations 3:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, why are we not consumed?",
+  "options": [
+   "Our strength",
+   "The LORD's loving devotion",
+   "Our good deeds",
+   "Our walls"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "His mercies never fail. “Because of the loving devotion of the LORD we are not consumed, for His mercies never fail.” (Lamentations 3:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, the ruined city once full of people has become like what?",
+  "options": [
+   "A fortress",
+   "A bride",
+   "A queen",
+   "A widow"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jerusalem had fallen. “She who was great among the nations has become a widow.” (Lamentations 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 26,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, how is it good to wait for the LORD's salvation?",
+  "options": [
+   "Loudly",
+   "Angrily",
+   "Quietly",
+   "Impatiently"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Trust God in hard times. “It is good to wait quietly for the salvation of the LORD.” (Lamentations 3:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 40,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, after examining our ways, what should we do?",
+  "options": [
+   "Give up",
+   "Turn back to the LORD",
+   "Leave the city",
+   "Blame others"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Repentance brings hope. “Let us examine and test our ways, and turn back to the LORD.” (Lamentations 3:40, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 5,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, what does the people's prayer ask God to renew?",
+  "options": [
+   "Their days as of old",
+   "Their king's crown",
+   "Their gold",
+   "Their armies"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Restore us to Yourself. “renew our days as of old” (Lamentations 5:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, the princess of the provinces has become what?",
+  "options": [
+   "A widow's friend",
+   "A slave",
+   "A queen",
+   "A prophet"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The city's glory was gone. “The princess of the provinces has become a slave.” (Lamentations 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 19,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, why does God tell Israel to be holy?",
+  "options": [
+   "Because of the war",
+   "Because Moses said so",
+   "Because He is holy",
+   "Because they are strong"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God's people should be like Him. “Be holy because I, the LORD your God, am holy.” (Leviticus 19:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 19,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, God commands, “Love your neighbor as…”",
+  "options": [
+   "Yourself",
+   "Your king",
+   "Your tribe",
+   "Your family"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus quoted this command. “but love your neighbor as yourself. I am the LORD.” (Leviticus 19:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 19,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, for whom should farmers leave grapes and the edges of the harvest?",
+  "options": [
+   "The king",
+   "The poor and foreigners",
+   "The priests",
+   "The birds"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God cares for the needy. “Leave them for the poor and the foreigner. I am the LORD your God.” (Leviticus 19:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 19,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, what should you do in the presence of the elderly?",
+  "options": [
+   "Ask for gifts",
+   "Ignore them",
+   "Leave the room",
+   "Rise and honor them"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Respect the aged and fear God. “You are to rise in the presence of the elderly, honor the aged, and fear your God.” (Leviticus 19:32, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 19,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, God says you must not steal and must not do what?",
+  "options": [
+   "Sing",
+   "Lie",
+   "Fast",
+   "Rest"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Do not deceive one another. “You must not steal. You must not lie or deceive one another.” (Leviticus 19:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 6,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, what was to be kept burning on the altar continually?",
+  "options": [
+   "The fire",
+   "Incense",
+   "A lamp",
+   "A torch"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It must never go out. “The fire shall be kept burning on the altar continually; it must not be extinguished.” (Leviticus 6:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 26,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, what does God promise if Israel obeys?",
+  "options": [
+   "I will end all work",
+   "I will make you kings",
+   "I will give you gold",
+   "I will walk among you"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "You will be My people. “I will walk among you and be your God, and you will be My people.” (Leviticus 26:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, from where did the LORD call to Moses?",
+  "options": [
+   "The Red Sea",
+   "A burning bush",
+   "The Tent of Meeting",
+   "Mount Nebo"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God gave laws for worship. “Then the LORD called to Moses and spoke to him from the Tent of Meeting” (Leviticus 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 8,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, on whose head did Moses pour the anointing oil?",
+  "options": [
+   "Aaron's",
+   "Joshua's",
+   "Miriam's",
+   "Caleb's"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "To set him apart as priest. “He also poured some of the anointing oil on Aaron’s head and anointed him to consecrate him.” (Leviticus 8:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 10,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, which of Aaron's sons offered unauthorized fire?",
+  "options": [
+   "Korah and Dathan",
+   "Moses and Aaron",
+   "Eleazar and Ithamar",
+   "Nadab and Abihu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It was against God's command. “Now Aaron’s sons Nadab and Abihu took their censers” (Leviticus 10:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 16,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, on the Day of Atonement, onto what were Israel's sins confessed?",
+  "options": [
+   "A bull",
+   "A lamb",
+   "A live goat",
+   "A dove"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It was sent into the wilderness. “Then he is to lay both hands on the head of the live goat and confess over it all the iniquities” (Leviticus 16:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 16,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, where was the goat carrying Israel's sins sent?",
+  "options": [
+   "Into the temple",
+   "Into the wilderness",
+   "Into the sea",
+   "To Egypt"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It carried their sins far away. “The goat will carry on itself all their iniquities into a solitary place” (Leviticus 16:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 23,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, what is the seventh day called?",
+  "options": [
+   "A Sabbath of rest",
+   "A day of war",
+   "A market day",
+   "A feast of harvest"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "No work is done. “but the seventh day is a Sabbath of complete rest” (Leviticus 23:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 25,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, what was the fiftieth year called?",
+  "options": [
+   "Passover",
+   "Jubilee",
+   "Sabbath",
+   "Pentecost"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Liberty was proclaimed in the land. “It shall be your Jubilee” (Leviticus 25:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 27,
+  "verseStart": 30,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, to whom does the tithe of the land belong?",
+  "options": [
+   "The farmer",
+   "The king",
+   "The poor",
+   "The LORD"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It is holy to the LORD. “Thus any tithe from the land, whether from the seed of the land or the fruit of the trees, belongs to the LORD” (Leviticus 27:30, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 11,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus' food laws, which animals could Israel eat?",
+  "options": [
+   "Any that crawls",
+   "Any from the sea",
+   "Split hoof and chews cud",
+   "Any with wings"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God set His people apart. “You may eat any animal that has a split hoof completely divided and that chews the cud.” (Leviticus 11:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, what had to be added to every grain offering?",
+  "options": [
+   "Yeast",
+   "Wine",
+   "Salt",
+   "Honey"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It is the salt of the covenant. “And you shall season each of your grain offerings with salt.” (Leviticus 2:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 16,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, what was the second goat of the Day of Atonement called?",
+  "options": [
+   "The scapegoat",
+   "The firstborn",
+   "The peace goat",
+   "The wave goat"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lots were cast for the two goats. “one for the LORD and the other for the scapegoat” (Leviticus 16:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 16,
+  "verseStart": 29,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, on which day of the seventh month was the Day of Atonement?",
+  "options": [
+   "The fifteenth",
+   "The tenth",
+   "The fourteenth",
+   "The first"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "No work was done. “On the tenth day of the seventh month, you shall humble yourselves and not do any work” (Leviticus 16:29, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 23,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, on which day of the first month does Passover begin?",
+  "options": [
+   "The tenth",
+   "The first",
+   "The twentieth",
+   "The fourteenth"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It begins at twilight. “The Passover to the LORD begins at twilight on the fourteenth day of the first month.” (Leviticus 23:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 23,
+  "verseStart": 34,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, how many days does the Feast of Tabernacles last?",
+  "options": [
+   "Fourteen",
+   "Ten",
+   "Seven",
+   "Three"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It begins on the fifteenth of the seventh month. “the Feast of Tabernacles to the LORD begins, and it continues for seven days.” (Leviticus 23:34, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 23,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, how many days were counted to the offering of new grain?",
+  "options": [
+   "Seven",
+   "Fifty",
+   "Forty",
+   "Seventy"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "This became Pentecost. “You shall count off fifty days until the day after the seventh Sabbath” (Leviticus 23:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 17,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, where does God say the life of the flesh is?",
+  "options": [
+   "In the breath",
+   "In the heart",
+   "In the bones",
+   "In the blood"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The blood makes atonement. “For the life of the flesh is in the blood” (Leviticus 17:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 16,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Leviticus, where did God appear above the ark?",
+  "options": [
+   "In the cloud over the mercy seat",
+   "In fire on the altar",
+   "In the lampstand",
+   "At the tent door"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Aaron could not enter freely. “because I appear in the cloud above the mercy seat.” (Leviticus 16:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
   "book": "Luke",
   "chapter": 1,
   "verseStart": 26,
@@ -42457,6 +44849,856 @@
   ]
  },
  {
+  "book": "Numbers",
+  "chapter": 13,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How many men did Moses send to spy out Canaan, one from each tribe?",
+  "options": [
+   "Two",
+   "Twelve",
+   "Seven",
+   "Forty"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Each was a tribal leader. “From each of their fathers’ tribes send one man who is a leader among them.” (Numbers 13:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Twelve Spies",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-hai-tham-tu"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 13,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did the twelve spies carry on a pole between two men?",
+  "options": [
+   "A bag of gold",
+   "A huge fish",
+   "A cluster of grapes",
+   "A stone tablet"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The land was very fruitful. “they cut down a branch with a single cluster of grapes, which they carried on a pole between two men.” (Numbers 13:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Twelve Spies",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-hai-tham-tu"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 13,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How many days did the twelve spies explore Canaan?",
+  "options": [
+   "Three",
+   "Twelve",
+   "Seven",
+   "Forty"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Then they returned to Moses. “After forty days the men returned from spying out the land” (Numbers 13:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Twelve Spies",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-hai-tham-tu"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 13,
+  "verseStart": 27,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "The twelve spies said Canaan was flowing with what?",
+  "options": [
+   "Milk and honey",
+   "Gold and silver",
+   "Water and fish",
+   "Oil and wine"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was a good land. “and indeed, it is flowing with milk and honey.” (Numbers 13:27, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Twelve Spies",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-hai-tham-tu"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 13,
+  "verseStart": 30,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which spy said, “We can certainly conquer it!”?",
+  "options": [
+   "Caleb",
+   "Aaron",
+   "Moses",
+   "Korah"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He trusted God. “Then Caleb quieted the people before Moses and said, “We must go up and take possession of the land, for we can certainly conquer it!”” (Numbers 13:30, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Twelve Spies",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-hai-tham-tu"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 13,
+  "verseStart": 33,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Beside Canaan's giants, the fearful spies said they seemed like what?",
+  "options": [
+   "Lions",
+   "Eagles",
+   "Mountains",
+   "Grasshoppers"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Fear made them feel small. “We seemed like grasshoppers in our own sight” (Numbers 13:33, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Twelve Spies",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-hai-tham-tu"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 14,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which two spies tore their clothes and urged Israel to trust God?",
+  "options": [
+   "Dathan and Abiram",
+   "Joshua and Caleb",
+   "Moses and Aaron",
+   "Nadab and Abihu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They said the land was very good. “Joshua son of Nun and Caleb son of Jephunneh, who were among those who had spied out the land, tore their clothes” (Numbers 14:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Twelve Spies",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-hai-tham-tu"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 14,
+  "verseStart": 30,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the spies' bad report, who alone of that generation would enter Canaan?",
+  "options": [
+   "Moses and Aaron",
+   "No one",
+   "Caleb and Joshua",
+   "All the Levites"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They had trusted God. “except Caleb son of Jephunneh and Joshua son of Nun.” (Numbers 14:30, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Twelve Spies",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-hai-tham-tu"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 22,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What animal did Balaam ride when going with the princes of Moab?",
+  "options": [
+   "A mule",
+   "A donkey",
+   "A camel",
+   "A horse"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God had a lesson for him. “So in the morning Balaam got up, saddled his donkey, and went with the princes of Moab.” (Numbers 22:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Balaam's Donkey",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-lua-cua-ba-la-am"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 22,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did Balaam's donkey see standing in the road?",
+  "options": [
+   "The angel of the LORD",
+   "A lion",
+   "A robber",
+   "A wall"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He held a drawn sword. “When the donkey saw the angel of the LORD standing in the road with a drawn sword in his hand” (Numbers 22:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Balaam's Donkey",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-lua-cua-ba-la-am"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 22,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What amazing thing did the LORD let Balaam's donkey do?",
+  "options": [
+   "Vanish",
+   "Sing",
+   "Fly",
+   "Speak"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "She asked why he beat her. “Then the LORD opened the donkey’s mouth, and she said to Balaam” (Numbers 22:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Balaam's Donkey",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-lua-cua-ba-la-am"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 22,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How many times had Balaam beaten his donkey when she spoke?",
+  "options": [
+   "Twelve times",
+   "Seven times",
+   "Three times",
+   "Once"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "She had turned from the angel. “What have I done to you that you have beaten me these three times?” (Numbers 22:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Balaam's Donkey",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-lua-cua-ba-la-am"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 22,
+  "verseStart": 27,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Balaam's donkey saw the angel in a narrow place, what did she do?",
+  "options": [
+   "Kicked the angel",
+   "Ran away",
+   "Lay down under him",
+   "Jumped a wall"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "There was no room to turn. “When the donkey saw the angel of the LORD, she lay down under Balaam” (Numbers 22:27, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Balaam's Donkey",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-lua-cua-ba-la-am"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 22,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When the LORD opened Balaam's eyes, what did Balaam do?",
+  "options": [
+   "Bowed facedown",
+   "Ran away",
+   "Laughed",
+   "Fought"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He saw the angel with a sword. “And Balaam bowed low and fell facedown.” (Numbers 22:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Balaam's Donkey",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-lua-cua-ba-la-am"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 22,
+  "verseStart": 35,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After meeting the angel, what was Balaam allowed to speak?",
+  "options": [
+   "Nothing at all",
+   "Anything he liked",
+   "Only curses",
+   "Only what God told him"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God controlled his words. “but you are to speak only what I tell you.” (Numbers 22:35, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Balaam's Donkey",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-lua-cua-ba-la-am"
+ },
+ {
+  "book": "Numbers",
+  "chapter": 6,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How does the priestly blessing in Numbers begin?",
+  "options": [
+   "Hear, O Israel",
+   "May the LORD bless you",
+   "Holy is the LORD",
+   "Give thanks to God"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Aaron's sons blessed Israel. “May the LORD bless you and keep you” (Numbers 6:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 12,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, how is Moses described, more than any man on earth?",
+  "options": [
+   "Very tall",
+   "Very strong",
+   "Very rich",
+   "Very humble"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He did not seek glory. “Now Moses was a very humble man, more so than any man on the face of the earth.” (Numbers 12:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 21,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, what did Moses put on a pole to heal bitten Israelites?",
+  "options": [
+   "A bronze snake",
+   "A golden calf",
+   "A wooden cross",
+   "A silver lamp"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Whoever looked at it lived. “So Moses made a bronze snake and mounted it on a pole.” (Numbers 21:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 6,
+  "verseStart": 26,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "The priestly blessing in Numbers ends asking the LORD to give you what?",
+  "options": [
+   "Land",
+   "Peace",
+   "Riches",
+   "Victory"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "May He lift His face toward you. “may the LORD lift up His countenance toward you and give you peace.” (Numbers 6:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 9,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, how did the cloud over the tabernacle look at night?",
+  "options": [
+   "Like stars",
+   "Like snow",
+   "Like fire",
+   "Like smoke"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God's presence led Israel. “the cloud would cover the tabernacle by day, and at night it would appear like fire.” (Numbers 9:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 11,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, what food did complaining Israelites say they were tired of?",
+  "options": [
+   "Quail",
+   "Manna",
+   "Bread",
+   "Fish"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They wanted meat instead. “there is nothing to see but this manna!” (Numbers 11:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 14,
+  "verseStart": 34,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, how many years did Israel wander, a year for each spying day?",
+  "options": [
+   "Forty",
+   "Seventy",
+   "Seven",
+   "Twelve"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They refused to trust God. “In keeping with the forty days you spied out the land, you shall bear your guilt forty years—a year for each day” (Numbers 14:34, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 17,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, whose staff sprouted, blossomed, and produced almonds?",
+  "options": [
+   "Korah's",
+   "Joshua's",
+   "Aaron's",
+   "Moses'"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God chose Levi's house. “and saw that Aaron’s staff, representing the house of Levi, had sprouted, put forth buds, blossomed, and produced almonds.” (Numbers 17:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 20,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, what did Moses do to the rock instead of speaking to it?",
+  "options": [
+   "Broke it",
+   "Climbed it",
+   "Prayed over it",
+   "Struck it twice"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Water still gushed out. “Then Moses raised his hand and struck the rock twice with his staff” (Numbers 20:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 20,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, why could Moses and Aaron not lead Israel into the land?",
+  "options": [
+   "They stayed in Egypt",
+   "They were too old",
+   "They did not trust God",
+   "They were sick"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They struck the rock. “Because you did not trust Me to show My holiness in the sight of the Israelites” (Numbers 20:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 23,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, Balaam says God is not a man, that He should do what?",
+  "options": [
+   "Lie",
+   "Sleep",
+   "Eat",
+   "Rest"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God keeps His promises. “God is not a man, that He should lie” (Numbers 23:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 27,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, whom did God tell Moses to lay hands on as the next leader?",
+  "options": [
+   "Phinehas",
+   "Joshua",
+   "Caleb",
+   "Eleazar"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He had the Spirit in him. “Take Joshua son of Nun, a man with the Spirit in him, and lay your hands on him.” (Numbers 27:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 13,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, which giant people did the spies see in Canaan?",
+  "options": [
+   "The Egyptians",
+   "The Philistines",
+   "The Hittites",
+   "The descendants of Anak"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Their size frightened the spies. “We even saw the descendants of Anak there.” (Numbers 13:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 13,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In which valley did the spies cut the great cluster of grapes?",
+  "options": [
+   "Kidron",
+   "Hinnom",
+   "Eshcol",
+   "Elah"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Eshcol means cluster. “When they came to the Valley of Eshcol” (Numbers 13:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 13,
+  "verseStart": 26,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Where was Israel camped when the twelve spies returned?",
+  "options": [
+   "Kadesh in Paran",
+   "Gilgal",
+   "Mount Sinai",
+   "Jericho"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "In the Wilderness of Paran. “in the Wilderness of Paran at Kadesh.” (Numbers 13:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 11,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, which vegetables did Israel miss from Egypt?",
+  "options": [
+   "Corn and potatoes",
+   "Leeks, onions, and garlic",
+   "Lettuce and peas",
+   "Carrots and beans"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They also missed fish and melons. “along with the cucumbers, melons, leeks, onions, and garlic.” (Numbers 11:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, in which wilderness did the LORD speak to Moses at the start of the book?",
+  "options": [
+   "Zin",
+   "Shur",
+   "Paran",
+   "Sinai"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It was the second year after Egypt. “the LORD spoke to Moses in the Tent of Meeting in the Wilderness of Sinai.” (Numbers 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 22,
+  "verseStart": 35,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Which king's princes did Balaam travel with?",
+  "options": [
+   "Eglon",
+   "Sihon",
+   "Balak",
+   "Og"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Balak was king of Moab. “So Balaam went with the princes of Balak.” (Numbers 22:35, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 22,
+  "verseStart": 25,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What did Balaam's donkey crush against a vineyard wall?",
+  "options": [
+   "A gate",
+   "His staff",
+   "A basket",
+   "Balaam's foot"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "She was avoiding the angel. “crushing Balaam’s foot against it.” (Numbers 22:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 21,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Numbers, what was a bitten Israelite to do to live?",
+  "options": [
+   "Look at the snake",
+   "Offer a lamb",
+   "Drink water",
+   "Pray at dawn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus compared Himself to this. “When anyone who is bitten looks at it, he will live.” (Numbers 21:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
   "book": "Philippians",
   "chapter": 4,
   "verseStart": 13,
@@ -47594,6 +50836,259 @@
    3
   ],
   "explanation": "They said a son had been born to Naomi. “The neighbor women said, “A son has been born to Naomi,” and they named him Obed.” (Ruth 4:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Whose Song of Songs is named in the book's first line?",
+  "options": [
+   "David's",
+   "Asaph's",
+   "Moses'",
+   "Solomon's"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It is a song about love. “This is Solomon’s Song of Songs.” (Song of Songs 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, what is the banner over the beloved?",
+  "options": [
+   "Peace",
+   "Love",
+   "Gold",
+   "War"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It is a song of love. “and his banner over me is love.” (Song of Songs 2:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, which season is past?",
+  "options": [
+   "Winter",
+   "Harvest",
+   "Spring",
+   "Summer"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The rain is over and gone. “For now the winter is past; the rain is over and gone.” (Song of Songs 2:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, what has appeared in the countryside now that winter is past?",
+  "options": [
+   "Snow",
+   "Soldiers",
+   "Flowers",
+   "Locusts"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The season of singing has come. “The flowers have appeared in the countryside” (Song of Songs 2:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, which animals ruin the vineyards?",
+  "options": [
+   "Birds",
+   "Wild boars",
+   "Lions",
+   "Little foxes"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Catch them while the vines bloom. “the little foxes that ruin the vineyards” (Song of Songs 2:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 8,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, what can mighty waters not quench?",
+  "options": [
+   "The sun",
+   "Thirst",
+   "Love",
+   "Fire"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Rivers cannot sweep it away. “Mighty waters cannot quench love; rivers cannot sweep it away.” (Song of Songs 8:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 8,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, love is as strong as what?",
+  "options": [
+   "Iron",
+   "Death",
+   "A lion",
+   "The sea"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Its sparks are fiery flames. “For love is as strong as death” (Song of Songs 8:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, which bird's cooing is heard in the land?",
+  "options": [
+   "Turtledoves",
+   "Sparrows",
+   "Eagles",
+   "Ravens"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The season of singing has come. “and the cooing of turtledoves is heard in our land.” (Song of Songs 2:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 8,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, what does the beloved ask to be set as over the heart?",
+  "options": [
+   "A crown",
+   "A shield",
+   "A ring",
+   "A seal"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Also as a seal upon the arm. “Set me as a seal over your heart, as a seal upon your arm.” (Song of Songs 8:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, the beloved's eyes are like what behind her veil?",
+  "options": [
+   "Doves",
+   "Stars",
+   "Jewels",
+   "Pools"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He praises her beauty. “Your eyes are like doves behind your veil.” (Song of Songs 4:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the Song of Songs, the beloved's hair is like a flock of goats on which mountain?",
+  "options": [
+   "Mount Carmel",
+   "Mount Zion",
+   "Mount Gilead",
+   "Mount Hermon"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It streams down the slope. “Your hair is like a flock of goats streaming down Mount Gilead.” (Song of Songs 4:1, BSB)",
   "language": "en",
   "tags": [
    "Old Testament",

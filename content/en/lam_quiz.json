@@ -1,0 +1,209 @@
+[
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, what is new every morning?",
+  "options": [
+   "The temple",
+   "Our troubles",
+   "The city walls",
+   "God's mercies"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Great is His faithfulness. “They are new every morning; great is Your faithfulness!” (Lamentations 3:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, what does the writer call great in the LORD?",
+  "options": [
+   "His army",
+   "His anger",
+   "His faithfulness",
+   "His temple"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His mercies never fail. “great is Your faithfulness!” (Lamentations 3:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 25,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, to whom is the LORD good?",
+  "options": [
+   "Those who wait for Him",
+   "Only kings",
+   "The proud",
+   "Only priests"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "And to the soul who seeks Him. “The LORD is good to those who wait for Him, to the soul who seeks Him.” (Lamentations 3:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, why are we not consumed?",
+  "options": [
+   "Our strength",
+   "The LORD's loving devotion",
+   "Our good deeds",
+   "Our walls"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "His mercies never fail. “Because of the loving devotion of the LORD we are not consumed, for His mercies never fail.” (Lamentations 3:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, the ruined city once full of people has become like what?",
+  "options": [
+   "A fortress",
+   "A bride",
+   "A queen",
+   "A widow"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jerusalem had fallen. “She who was great among the nations has become a widow.” (Lamentations 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 26,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, how is it good to wait for the LORD's salvation?",
+  "options": [
+   "Loudly",
+   "Angrily",
+   "Quietly",
+   "Impatiently"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Trust God in hard times. “It is good to wait quietly for the salvation of the LORD.” (Lamentations 3:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 40,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, after examining our ways, what should we do?",
+  "options": [
+   "Give up",
+   "Turn back to the LORD",
+   "Leave the city",
+   "Blame others"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Repentance brings hope. “Let us examine and test our ways, and turn back to the LORD.” (Lamentations 3:40, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 5,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, what does the people's prayer ask God to renew?",
+  "options": [
+   "Their days as of old",
+   "Their king's crown",
+   "Their gold",
+   "Their armies"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Restore us to Yourself. “renew our days as of old” (Lamentations 5:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Lamentations, the princess of the provinces has become what?",
+  "options": [
+   "A widow's friend",
+   "A slave",
+   "A queen",
+   "A prophet"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The city's glory was gone. “The princess of the provinces has become a slave.” (Lamentations 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

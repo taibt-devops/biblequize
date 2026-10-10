@@ -50,3 +50,7 @@
   - Status: [x] DONE 10/10 · commit `988ff794`, BE `sha256:83fa65d9…` (rollback `d245f780…`) · seed: inserted=259, dupHash=0 · 540/540 hàng cũ khớp hash, không hàng mồ côi, không bộ câu/phòng nào tham chiếu · dump `backups/questions-old-en-e5-deleted-20261010.sql.gz` rồi xóa (CASCADE: 68 answers, 1.080 quiz_session_questions) · hàng tiếng Anh: 1.959 BSB + 1.237 cũ (vòng 3 + Giáo lý căn bản tiếng Anh); tổng 6.759 câu · cache sạch · 118 câu chuyện chơi được bằng tiếng Anh · API vẫn trả vài câu `bible_basics_quiz_en.json` (vd Cô-lô-se "Who is Jesus Christ?") — bộ riêng, để nguyên như bên tiếng Việt
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- BSB-12 Đợt E6: vòng 3, 8 sách Cựu Ước dài
+  - Status: [x] DONE · 150 câu thay 820 câu dịch máy: Lê-vi Ký 24 (7/10/7), Dân Số Ký 35 (Dễ 18, 15 trên 2 câu chuyện / 10 / 7), 1 Sử Ký 18 (6/8/4), 2 Sử Ký 18 (6/8/4), E-xơ-ra 16 (6/6/4), Nhã Ca 11 (4/4/3), Ca Thương 9 (4/3/2), Ê-xê-chi-ên 19 (7/7/5) · `retired_hashes.txt` 4.657 hash · `bsb_en_quiz.json` 2.109 câu, đủ 120/120 câu chuyện có câu tiếng Anh · test seed xanh
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]

@@ -1,0 +1,370 @@
+[
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, which Persian king let the Jews go home to build God's house?",
+  "options": [
+   "Herod",
+   "Cyrus",
+   "Nebuchadnezzar",
+   "Pharaoh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God stirred his spirit. “the LORD stirred the spirit of Cyrus king of Persia to send a proclamation” (Ezra 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, King Cyrus told God's people to go to Jerusalem and do what?",
+  "options": [
+   "Crown a king",
+   "Fight its enemies",
+   "Sell their land",
+   "Build the LORD's house"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The temple had been destroyed. “and build the house of the LORD, the God of Israel” (Ezra 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, why did the people give a great shout of praise?",
+  "options": [
+   "The temple foundation was laid",
+   "The war was won",
+   "Rain fell",
+   "The king arrived"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God's house was rising again. “because the foundation of the house of the LORD had been laid.” (Ezra 3:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, what did older people who had seen the first temple do at the new foundation?",
+  "options": [
+   "Danced",
+   "Left angrily",
+   "Wept loudly",
+   "Fell asleep"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Others shouted for joy. “wept loudly when they saw the foundation of this temple.” (Ezra 3:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, what was Ezra skilled in?",
+  "options": [
+   "Building walls",
+   "Fighting wars",
+   "Trading goods",
+   "The Law of Moses"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was a scribe. “He was a scribe skilled in the Law of Moses” (Ezra 7:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, what had Ezra set his heart to do with the Law?",
+  "options": [
+   "Change it",
+   "Study, practice, and teach it",
+   "Hide it",
+   "Sell it"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He lived what he taught. “For Ezra had set his heart to study the Law of the LORD, to practice it, and to teach its statutes” (Ezra 7:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, what did King Cyrus return that Nebuchadnezzar had taken?",
+  "options": [
+   "The king's crown",
+   "Captured soldiers",
+   "The temple articles",
+   "The ark"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They went back to Jerusalem. “King Cyrus also brought out the articles belonging to the house of the LORD that Nebuchadnezzar had carried away” (Ezra 1:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, why could no one tell joyful shouts from weeping?",
+  "options": [
+   "The noise was so great",
+   "A storm was blowing",
+   "The temple was far",
+   "Everyone was silent"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was heard from afar. “The people could not distinguish the shouts of joy from the sound of weeping” (Ezra 3:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, what did the people of the land try to do to Judah's builders?",
+  "options": [
+   "Teach them",
+   "Help them",
+   "Pay them",
+   "Discourage and frighten them"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They opposed the rebuilding. “Then the people of the land set out to discourage the people of Judah and make them afraid to build.” (Ezra 4:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, from which city did Ezra come up to Jerusalem?",
+  "options": [
+   "Nineveh",
+   "Babylon",
+   "Susa",
+   "Damascus"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God's hand was on him. “this Ezra came up from Babylon.” (Ezra 7:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 8,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, what did Ezra proclaim to ask God for a safe journey?",
+  "options": [
+   "A fast",
+   "A feast",
+   "A war",
+   "A census"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He would not ask the king for soldiers. “And there by the Ahava Canal I proclaimed a fast” (Ezra 8:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 8,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, why was Ezra ashamed to ask the king for soldiers?",
+  "options": [
+   "The king was angry",
+   "They had no money",
+   "He had said God protects",
+   "He was afraid"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He trusted God's hand. “For I was ashamed to ask the king for an escort of soldiers and horsemen” (Ezra 8:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, in which king's reign was the second temple completed?",
+  "options": [
+   "Cyrus",
+   "Darius",
+   "Xerxes",
+   "Artaxerxes"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It was his sixth year. “in the sixth year of the reign of King Darius.” (Ezra 6:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, in which month was the second temple completed?",
+  "options": [
+   "Tishri",
+   "Elul",
+   "Nisan",
+   "Adar"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "On the third day. “And this temple was completed on the third day of the month of Adar” (Ezra 6:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, which leader built the altar with Jeshua the priest?",
+  "options": [
+   "Ezra",
+   "Nehemiah",
+   "Zerubbabel",
+   "Haggai"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He was the son of Shealtiel. “along with Zerubbabel son of Shealtiel and his associates, began to build the altar” (Ezra 3:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 8,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Ezra, by which canal did Ezra proclaim a fast?",
+  "options": [
+   "The Ahava Canal",
+   "The Chebar Canal",
+   "The Jordan Canal",
+   "The Euphrates Canal"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They prayed for safe travel. “And there by the Ahava Canal I proclaimed a fast” (Ezra 8:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

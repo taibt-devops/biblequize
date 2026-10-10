@@ -1,0 +1,13 @@
+[
+ {"ref": "lam 3:23", "d": "easy", "q": "In Lamentations, what is new every morning?", "a": "God's mercies", "wrong": ["The city walls", "The temple", "Our troubles"], "why": "Great is His faithfulness.", "quote": "They are new every morning; great is Your faithfulness!"},
+ {"ref": "lam 3:23", "d": "easy", "q": "In Lamentations, what does the writer call great in the LORD?", "a": "His faithfulness", "wrong": ["His anger", "His army", "His temple"], "why": "His mercies never fail.", "quote": "great is Your faithfulness!"},
+ {"ref": "lam 3:25", "d": "easy", "q": "In Lamentations, to whom is the LORD good?", "a": "Those who wait for Him", "wrong": ["Only kings", "Only priests", "The proud"], "why": "And to the soul who seeks Him.", "quote": "The LORD is good to those who wait for Him, to the soul who seeks Him."},
+ {"ref": "lam 3:22", "d": "easy", "q": "In Lamentations, why are we not consumed?", "a": "The LORD's loving devotion", "wrong": ["Our strength", "Our walls", "Our good deeds"], "why": "His mercies never fail.", "quote": "Because of the loving devotion of the LORD we are not consumed, for His mercies never fail."},
+
+ {"ref": "lam 1:1", "d": "medium", "q": "In Lamentations, the ruined city once full of people has become like what?", "a": "A widow", "wrong": ["A queen", "A bride", "A fortress"], "why": "Jerusalem had fallen.", "quote": "She who was great among the nations has become a widow."},
+ {"ref": "lam 3:26", "d": "medium", "q": "In Lamentations, how is it good to wait for the LORD's salvation?", "a": "Quietly", "wrong": ["Loudly", "Angrily", "Impatiently"], "why": "Trust God in hard times.", "quote": "It is good to wait quietly for the salvation of the LORD."},
+ {"ref": "lam 3:40", "d": "medium", "q": "In Lamentations, after examining our ways, what should we do?", "a": "Turn back to the LORD", "wrong": ["Blame others", "Give up", "Leave the city"], "why": "Repentance brings hope.", "quote": "Let us examine and test our ways, and turn back to the LORD."},
+
+ {"ref": "lam 5:21", "d": "hard", "q": "In Lamentations, what does the people's prayer ask God to renew?", "a": "Their days as of old", "wrong": ["Their armies", "Their gold", "Their king's crown"], "why": "Restore us to Yourself.", "quote": "renew our days as of old"},
+ {"ref": "lam 1:1", "d": "hard", "q": "In Lamentations, the princess of the provinces has become what?", "a": "A slave", "wrong": ["A queen", "A widow's friend", "A prophet"], "why": "The city's glory was gone.", "quote": "The princess of the provinces has become a slave."}
+]

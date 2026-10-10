@@ -1,0 +1,15 @@
+[
+ {"ref": "sol 1:1", "d": "easy", "q": "Whose Song of Songs is named in the book's first line?", "a": "Solomon's", "wrong": ["David's", "Moses'", "Asaph's"], "why": "It is a song about love.", "quote": "This is Solomon’s Song of Songs."},
+ {"ref": "sol 2:4", "d": "easy", "q": "In the Song of Songs, what is the banner over the beloved?", "a": "Love", "wrong": ["Gold", "War", "Peace"], "why": "It is a song of love.", "quote": "and his banner over me is love."},
+ {"ref": "sol 2:11", "d": "easy", "q": "In the Song of Songs, which season is past?", "a": "Winter", "wrong": ["Summer", "Harvest", "Spring"], "why": "The rain is over and gone.", "quote": "For now the winter is past; the rain is over and gone."},
+ {"ref": "sol 2:12", "d": "easy", "q": "In the Song of Songs, what has appeared in the countryside now that winter is past?", "a": "Flowers", "wrong": ["Snow", "Soldiers", "Locusts"], "why": "The season of singing has come.", "quote": "The flowers have appeared in the countryside"},
+
+ {"ref": "sol 2:15", "d": "medium", "q": "In the Song of Songs, which animals ruin the vineyards?", "a": "Little foxes", "wrong": ["Wild boars", "Lions", "Birds"], "why": "Catch them while the vines bloom.", "quote": "the little foxes that ruin the vineyards"},
+ {"ref": "sol 8:7", "d": "medium", "q": "In the Song of Songs, what can mighty waters not quench?", "a": "Love", "wrong": ["Fire", "Thirst", "The sun"], "why": "Rivers cannot sweep it away.", "quote": "Mighty waters cannot quench love; rivers cannot sweep it away."},
+ {"ref": "sol 8:6", "d": "medium", "q": "In the Song of Songs, love is as strong as what?", "a": "Death", "wrong": ["Iron", "A lion", "The sea"], "why": "Its sparks are fiery flames.", "quote": "For love is as strong as death"},
+ {"ref": "sol 2:12", "d": "medium", "q": "In the Song of Songs, which bird's cooing is heard in the land?", "a": "Turtledoves", "wrong": ["Sparrows", "Eagles", "Ravens"], "why": "The season of singing has come.", "quote": "and the cooing of turtledoves is heard in our land."},
+
+ {"ref": "sol 8:6", "d": "hard", "q": "In the Song of Songs, what does the beloved ask to be set as over the heart?", "a": "A seal", "wrong": ["A crown", "A shield", "A ring"], "why": "Also as a seal upon the arm.", "quote": "Set me as a seal over your heart, as a seal upon your arm."},
+ {"ref": "sol 4:1", "d": "hard", "q": "In the Song of Songs, the beloved's eyes are like what behind her veil?", "a": "Doves", "wrong": ["Stars", "Jewels", "Pools"], "why": "He praises her beauty.", "quote": "Your eyes are like doves behind your veil."},
+ {"ref": "sol 4:1", "d": "hard", "q": "In the Song of Songs, the beloved's hair is like a flock of goats on which mountain?", "a": "Mount Gilead", "wrong": ["Mount Carmel", "Mount Hermon", "Mount Zion"], "why": "It streams down the slope.", "quote": "Your hair is like a flock of goats streaming down Mount Gilead."}
+]
