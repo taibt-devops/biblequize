@@ -95,3 +95,8 @@
   - Mỗi câu nêu nguồn ("Qua nhà tiên tri A-ghê…", "Thư Giăng thứ ba…"); 2–3 Giăng gọi người viết là "trưởng lão" đúng như thư · Ma-la-chi theo số chương RVV11 (có chương 4) · `retired_hashes.txt` 5.068 hash (+381) · `git rm` 18 file tiếng Việt, giữ `_en`; seed tiếng Việt chỉ còn `bible_basics_quiz.json`, `easy_core_quiz.json`, `rvv11_books_quiz.json` (2.432 câu) · 47 test xanh
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-18 Đợt 6 lên prod
+  - Status: [x] DONE 10/10 · commit `337b2eff`, BE `sha256:a180d892…` (rollback `86292cdc…`) · seed một lần `rvv11_books_quiz.json`, `sync-stale=false`: inserted=240, dupHash=0 · 381/381 hàng cũ khớp 381 hash vừa retire, không bộ câu/phòng nào tham chiếu · dump `backups/questions-old-vi-w6-deleted-20261010.sql.gz` rồi xóa 381 hàng (CASCADE: 45 answers, 3 user_question_history, 766 quiz_session_questions) · `questions` 8.639 · xóa cache `questions:*` · `GET /api/questions` Ô-sê/Ma-la-chi/Giu-đe/Phi-lê-môn × 3 mức trả câu RVV11
+  - Tiếng Việt trên prod giờ: Dễ cốt lõi 1.095 + RVV11 theo sách 2.432 + Giáo lý căn bản 12 (+ 24 câu do Nhóm/quản trị tạo); không còn câu seed cũ. 66/66 sách có câu ở cả 3 mức; 6 sách ngắn nhất 10 câu (3/5/2) — Đấu Hạng vòng 3 lấy cả Kinh Thánh, giới hạn số câu mỗi sách nên không hụt
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
