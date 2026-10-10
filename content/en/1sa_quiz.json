@@ -1,0 +1,1789 @@
+[
+ {
+  "book": "1 Samuel",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "As a boy, Samuel served the LORD under which priest?",
+  "options": [
+   "Saul",
+   "Elkanah",
+   "Eli",
+   "Nathan"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Samuel grew up in the house of the LORD. “And the boy Samuel ministered to the LORD before Eli.” (1 Samuel 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Young Samuel Hears God",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "cau-be-sa-mu-en-nghe-tieng-chua"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 3,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When the LORD first called young Samuel at night, what did Samuel answer?",
+  "options": [
+   "I'm asleep",
+   "Who is it?",
+   "Leave me alone",
+   "Here I am"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Samuel was ready to listen. “Then the LORD called to Samuel, and he answered, “Here I am.”” (1 Samuel 3:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Young Samuel Hears God",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "cau-be-sa-mu-en-nghe-tieng-chua"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When young Samuel heard his name called at night, who did he think was calling?",
+  "options": [
+   "Eli",
+   "His mother",
+   "A soldier",
+   "An angel"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He did not yet know the LORD's voice. “He ran to Eli and said, “Here I am, for you have called me.”” (1 Samuel 3:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Young Samuel Hears God",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "cau-be-sa-mu-en-nghe-tieng-chua"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How many times did the LORD call young Samuel before Eli realized it was God?",
+  "options": [
+   "Once",
+   "Three times",
+   "Ten times",
+   "Seven times"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Then Eli knew the LORD was calling the boy. “Once again, for the third time, the LORD called to Samuel.” (1 Samuel 3:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Young Samuel Hears God",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "cau-be-sa-mu-en-nghe-tieng-chua"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 3,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did Eli tell young Samuel to say if God called him again?",
+  "options": [
+   "Come back tomorrow",
+   "Who are You?",
+   "Speak, LORD, Your servant is listening",
+   "Go away, I am asleep"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Samuel learned to listen to God. “Speak, LORD, for Your servant is listening.” (1 Samuel 3:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Young Samuel Hears God",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "cau-be-sa-mu-en-nghe-tieng-chua"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Where was young Samuel lying down when God called him?",
+  "options": [
+   "In the temple of the LORD",
+   "In his father's house",
+   "In a cave",
+   "In a field"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The ark of God was there. “Samuel was lying down in the temple of the LORD, where the ark of God was located.” (1 Samuel 3:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Young Samuel Hears God",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "cau-be-sa-mu-en-nghe-tieng-chua"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 3,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "As Samuel grew up, what did all Israel come to know about him?",
+  "options": [
+   "He was a great warrior",
+   "He would be king",
+   "He was very rich",
+   "He was the LORD's prophet"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The LORD was with Samuel. “knew that Samuel was confirmed as a prophet of the LORD.” (1 Samuel 3:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Young Samuel Hears God",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "cau-be-sa-mu-en-nghe-tieng-chua"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 16,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After God rejected King Saul, to whose family did He send Samuel to find a new king?",
+  "options": [
+   "Nabal of Carmel",
+   "Jesse of Bethlehem",
+   "Eli of Shiloh",
+   "Kish of Benjamin"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God had chosen a king from Jesse's sons. “I am sending you to Jesse of Bethlehem” (1 Samuel 16:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Samuel Anoints David",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sa-mu-en-xuc-dau-cho-da-vit"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 16,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Samuel was impressed by Jesse's tall son, what did God say He looks at?",
+  "options": [
+   "The heart",
+   "The clothes",
+   "The face",
+   "The height"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "People judge by looks, but God sees inside. “For man sees the outward appearance, but the LORD sees the heart.” (1 Samuel 16:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Samuel Anoints David",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sa-mu-en-xuc-dau-cho-da-vit"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 16,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How many of Jesse's sons passed before Samuel without being chosen?",
+  "options": [
+   "Three",
+   "Seven",
+   "Twelve",
+   "Five"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The LORD had not chosen any of them. “Thus Jesse made seven of his sons pass before Samuel” (1 Samuel 16:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Samuel Anoints David",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sa-mu-en-xuc-dau-cho-da-vit"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 16,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Samuel came to anoint a new king, where was Jesse's youngest son?",
+  "options": [
+   "At school",
+   "In the army",
+   "Asleep at home",
+   "Tending the sheep"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "No one thought the youngest would be chosen. ““There is still the youngest,” Jesse replied, “but he is tending the sheep.”” (1 Samuel 16:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Samuel Anoints David",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sa-mu-en-xuc-dau-cho-da-vit"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 16,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did Samuel use to anoint young David?",
+  "options": [
+   "A bowl of water",
+   "A cup of wine",
+   "A horn of oil",
+   "A gold crown"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He anointed David in front of his brothers. “So Samuel took the horn of oil and anointed him in the presence of his brothers” (1 Samuel 16:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Samuel Anoints David",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sa-mu-en-xuc-dau-cho-da-vit"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 16,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Samuel anointed David, what came upon him?",
+  "options": [
+   "The Spirit of the LORD",
+   "Great riches",
+   "A deep sleep",
+   "A royal crown"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "From that day God's Spirit was with David. “and the Spirit of the LORD rushed upon David from that day forward.” (1 Samuel 16:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Samuel Anoints David",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sa-mu-en-xuc-dau-cho-da-vit"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 16,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When King Saul was troubled, what instrument did young David play for him?",
+  "options": [
+   "A trumpet",
+   "A flute",
+   "A drum",
+   "The harp"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Saul felt better when David played. “David would pick up his harp and play” (1 Samuel 16:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Samuel Anoints David",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "sa-mu-en-xuc-dau-cho-da-vit"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which Philistine champion challenged the army of Israel?",
+  "options": [
+   "Nabal",
+   "Goliath",
+   "Abner",
+   "Achish"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He was a giant warrior from Gath. “Then a champion named Goliath, who was from Gath, came out from the Philistine camp.” (1 Samuel 17:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Goliath",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-go-li-at"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Goliath shouted his challenge, how did Saul and the Israelites feel?",
+  "options": [
+   "Angry",
+   "Bored",
+   "Greatly afraid",
+   "Excited"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "No one wanted to fight the giant. “Saul and all the Israelites were dismayed and greatly afraid.” (1 Samuel 17:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Goliath",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-go-li-at"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 34,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Before facing Goliath, which wild animals did David say he had fought while keeping sheep?",
+  "options": [
+   "A snake and a scorpion",
+   "A wolf and a fox",
+   "A lion and a bear",
+   "A boar and a leopard"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God had already helped David against them. “and whenever a lion or a bear came and carried off a lamb from the flock” (1 Samuel 17:34, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Goliath",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-go-li-at"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 39,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why did David take off King Saul's armor before facing Goliath?",
+  "options": [
+   "It was broken",
+   "He was not used to it",
+   "Goliath laughed at it",
+   "It was too small"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "David trusted God, not armor. “I am not accustomed to them.” (1 Samuel 17:39, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Goliath",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-go-li-at"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 40,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How many smooth stones did David choose from the brook before facing Goliath?",
+  "options": [
+   "Twelve",
+   "One",
+   "Three",
+   "Five"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He put them in his shepherd's bag. “selected five smooth stones from the brook” (1 Samuel 17:40, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Goliath",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-go-li-at"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 45,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Facing Goliath, in whose name did David say he came?",
+  "options": [
+   "The LORD of Hosts",
+   "King Saul",
+   "His father Jesse",
+   "The army of Israel"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Goliath had defied the living God. “but I come against you in the name of the LORD of Hosts” (1 Samuel 17:45, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Goliath",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-go-li-at"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 49,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Where did David's stone hit Goliath?",
+  "options": [
+   "On the chest",
+   "On the knee",
+   "On the shield",
+   "On the forehead"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The giant fell facedown. “striking the Philistine on the forehead.” (1 Samuel 17:49, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Goliath",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-go-li-at"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 50,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "With what did young David defeat Goliath?",
+  "options": [
+   "A bow and arrow",
+   "A sling and a stone",
+   "His bare hands",
+   "A sword and spear"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God gave the victory without a sword in David's hand. “Thus David prevailed over the Philistine with a sling and a stone” (1 Samuel 17:50, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Goliath",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-go-li-at"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 18,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After David defeated Goliath, whose soul became knit together with David's?",
+  "options": [
+   "Saul's",
+   "Samuel's",
+   "Jonathan's",
+   "Michal's"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Jonathan, Saul's son, loved David as himself. “the souls of Jonathan and David were knit together” (1 Samuel 18:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Jonathan",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-gio-na-than"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 18,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why did Jonathan make a covenant with David?",
+  "options": [
+   "He loved him as himself",
+   "Saul ordered it",
+   "David paid him",
+   "They were brothers"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They became best friends. “Then Jonathan made a covenant with David because he loved him as himself.” (1 Samuel 18:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Jonathan",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-gio-na-than"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 18,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did Jonathan give David as a sign of their friendship?",
+  "options": [
+   "His robe, sword, and bow",
+   "Gold and silver",
+   "A horse and chariot",
+   "A crown and ring"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He also gave David his tunic and belt. “And Jonathan removed the robe he was wearing and gave it to David, along with his tunic, his sword, his bow, and his belt.” (1 Samuel 18:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Jonathan",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-gio-na-than"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 18,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What song of the women made King Saul jealous of David?",
+  "options": [
+   "Long live King Saul",
+   "Jonathan is mighty",
+   "Saul his thousands, David tens of thousands",
+   "David is our king"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Saul was angry that David got more praise. “Saul has slain his thousands, and David his tens of thousands.” (1 Samuel 18:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Jonathan",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-gio-na-than"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 19,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In his jealousy, what did King Saul throw at David?",
+  "options": [
+   "His crown",
+   "A stone",
+   "A cup",
+   "His spear"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "David escaped that night. “Saul tried to pin him to the wall with his spear.” (1 Samuel 19:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Jonathan",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-gio-na-than"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 20,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "To send David a secret warning, what did Jonathan plan to shoot?",
+  "options": [
+   "A flaming arrow",
+   "Three arrows",
+   "A spear",
+   "Three stones"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Where the arrows landed would tell David what to do. “I will shoot three arrows to the side of it” (1 Samuel 20:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Jonathan",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-gio-na-than"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 20,
+  "verseStart": 41,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When David and Jonathan said goodbye, what did they do?",
+  "options": [
+   "Kissed each other and wept",
+   "Fought each other",
+   "Shook hands and laughed",
+   "Held a feast"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "David had to flee from Saul. “Then he and Jonathan kissed each other and wept together” (1 Samuel 20:41, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David and Jonathan",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-va-gio-na-than"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 24,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When King Saul hunted David with three thousand men, where was David?",
+  "options": [
+   "The hills of Bethlehem",
+   "The wilderness of En-gedi",
+   "The Jordan valley",
+   "The city of Gath"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Saul was told where David was hiding. “David is in the wilderness of En-gedi.” (1 Samuel 24:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David Spares King Saul",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-tha-mang-vua-sau-lo"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 24,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Saul stepped into a cave at En-gedi, who was hiding deep inside?",
+  "options": [
+   "Jonathan alone",
+   "Philistine soldiers",
+   "David and his men",
+   "A lion"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Saul did not know they were there. “And David and his men were hiding in the recesses of the cave.” (1 Samuel 24:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David Spares King Saul",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-tha-mang-vua-sau-lo"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 24,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the cave at En-gedi, what did David secretly cut off?",
+  "options": [
+   "Saul's sandal strap",
+   "Saul's belt",
+   "Saul's hair",
+   "A corner of Saul's robe"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "David could have killed Saul, but he did not. “Then David crept up secretly and cut off a corner of Saul’s robe.” (1 Samuel 24:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David Spares King Saul",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-tha-mang-vua-sau-lo"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 24,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why would David not harm King Saul in the cave?",
+  "options": [
+   "Saul was too strong",
+   "He was the LORD's anointed",
+   "Jonathan was there",
+   "David was afraid"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "David left Saul's fate to God. “May I never lift my hand against him, since he is the LORD’s anointed.” (1 Samuel 24:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David Spares King Saul",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-tha-mang-vua-sau-lo"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 24,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How did David feel after cutting the corner of Saul's robe?",
+  "options": [
+   "Angry at his men",
+   "Proud and happy",
+   "Hungry",
+   "His conscience bothered him"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Even that small act felt wrong to him. “Afterward, David’s conscience was stricken” (1 Samuel 24:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David Spares King Saul",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-tha-mang-vua-sau-lo"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 24,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After David spared his life, what did King Saul say to him?",
+  "options": [
+   "You are a fool",
+   "You will die",
+   "You are more righteous than I",
+   "You are a traitor"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "David had repaid evil with good. “You are more righteous than I” (1 Samuel 24:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David Spares King Saul",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-tha-mang-vua-sau-lo"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 24,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Saul heard David calling to him outside the cave, what did Saul do?",
+  "options": [
+   "Wept aloud",
+   "Laughed",
+   "Ran away",
+   "Attacked him"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Saul was moved by David's mercy. “Then Saul wept aloud” (1 Samuel 24:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "David Spares King Saul",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "da-vit-tha-mang-vua-sau-lo"
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Who were the two wives of Elkanah, Samuel's father?",
+  "options": [
+   "Hannah and Peninnah",
+   "Ruth and Orpah",
+   "Leah and Rachel",
+   "Michal and Abigail"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Peninnah had children, but Hannah had none. “He had two wives, one named Hannah and the other Peninnah.” (1 Samuel 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Hannah promise God if He gave her a son?",
+  "options": [
+   "To name him after Eli",
+   "To give a lamb every year",
+   "To dedicate him to the LORD",
+   "To move to Shiloh"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "She kept her promise. “then I will dedicate him to the LORD all the days of his life” (1 Samuel 1:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Why did Hannah name her son Samuel?",
+  "options": [
+   "He was born in the temple",
+   "Eli chose the name",
+   "He was her firstborn",
+   "She asked the LORD for him"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God answered her prayer. “Because I have asked for him from the LORD.” (1 Samuel 1:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Samuel was a boy, how often did the word of the LORD come?",
+  "options": [
+   "Every day",
+   "Rarely",
+   "Every Sabbath",
+   "Only at feasts"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Visions were scarce in those days. “Now in those days the word of the LORD was rare and visions were scarce.” (1 Samuel 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When the Philistines captured the ark of God, which of Eli's sons died?",
+  "options": [
+   "Joel and Abijah",
+   "Nadab and Abihu",
+   "Mahlon and Chilion",
+   "Hophni and Phinehas"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It was a dark day for Israel. “The ark of God was captured, and Eli’s two sons, Hophni and Phinehas, died.” (1 Samuel 4:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 8,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Samuel was old, what did the people of Israel ask him to give them?",
+  "options": [
+   "A king",
+   "A bigger army",
+   "A temple",
+   "A new judge"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They wanted to be like other nations. “Now appoint a king to judge us like all the other nations.” (1 Samuel 8:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 8,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Israel asked Samuel for a king, whom did God say they had really rejected?",
+  "options": [
+   "Eli",
+   "Moses",
+   "God Himself",
+   "Samuel"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God was meant to be their king. “For it is not you they have rejected, but they have rejected Me as their king.” (1 Samuel 8:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 9,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How is Saul described before he became Israel's first king?",
+  "options": [
+   "Short and quick",
+   "A head taller than anyone",
+   "Old and wise",
+   "Rich and proud"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He was choice and handsome. “a head taller than any of the people.” (1 Samuel 9:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 10,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Samuel presented Saul to Israel as king, what did the people shout?",
+  "options": [
+   "Hail Samuel!",
+   "Praise the LORD!",
+   "Save us now!",
+   "Long live the king!"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Saul became Israel's first king. “And all the people shouted, “Long live the king!”” (1 Samuel 10:24, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 13,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Saul disobeyed, Samuel said the LORD had found a man after what?",
+  "options": [
+   "His own name",
+   "His own strength",
+   "His own heart",
+   "His own glory"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "That man would be David. “the LORD has sought a man after His own heart” (1 Samuel 13:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 15,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Samuel told disobedient King Saul that what is better than sacrifice?",
+  "options": [
+   "Fasting",
+   "Obedience",
+   "Gold",
+   "Singing"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God wants His people to listen and obey. “Behold, obedience is better than sacrifice” (1 Samuel 15:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 16,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which of Jesse's sons did Samuel first think was God's chosen king?",
+  "options": [
+   "Eliab",
+   "Abinadab",
+   "Shammah",
+   "David"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Samuel judged by appearance at first. “When they arrived, Samuel saw Eliab” (1 Samuel 16:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 16,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How is young David described when he was brought in from the sheep?",
+  "options": [
+   "Ruddy, with beautiful eyes",
+   "Old and wise",
+   "Pale and thin",
+   "Tall and strong"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The LORD said, “He is the one.” “He was ruddy, with beautiful eyes and a handsome appearance.” (1 Samuel 16:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Goliath the giant came from which Philistine city?",
+  "options": [
+   "Ashdod",
+   "Ekron",
+   "Gaza",
+   "Gath"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He was the Philistines' champion. “Then a champion named Goliath, who was from Gath” (1 Samuel 17:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Before the battle with Goliath, what did David go back and forth to do?",
+  "options": [
+   "Train with soldiers",
+   "Tend his father's sheep",
+   "Study with Samuel",
+   "Sell grain"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He was still a shepherd in Bethlehem. “but David went back and forth from Saul to tend his father’s sheep in Bethlehem.” (1 Samuel 17:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 33,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Why did Saul first say David could not fight Goliath?",
+  "options": [
+   "He had no sword",
+   "He was sick",
+   "He was just a boy",
+   "He was Saul's servant"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Goliath had been a warrior from his youth. “You are just a boy, and he has been a warrior from his youth.” (1 Samuel 17:33, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 47,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "David told Goliath that God does not save by sword or spear, because the battle belongs to whom?",
+  "options": [
+   "Israel's army",
+   "King Saul",
+   "David himself",
+   "The LORD"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "David trusted God to win. “for the battle is the LORD’s” (1 Samuel 17:47, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 51,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After Goliath fell, what did the Philistine army do?",
+  "options": [
+   "They turned and ran",
+   "They made peace",
+   "They surrendered",
+   "They attacked"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Their hero was dead. “When the Philistines saw that their hero was dead, they turned and ran.” (1 Samuel 17:51, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 18,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which of King Saul's daughters did David marry?",
+  "options": [
+   "Ahinoam",
+   "Michal",
+   "Bathsheba",
+   "Abigail"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Saul gave her to David as his wife. “Then Saul gave his daughter Michal to David in marriage.” (1 Samuel 18:27, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 18,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After the women's song about David, how did King Saul treat him?",
+  "options": [
+   "Ignored him",
+   "Sent him gifts",
+   "Kept a jealous eye on him",
+   "Made him his heir"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Saul feared David would take the kingdom. “And from that day forward Saul kept a jealous eye on David.” (1 Samuel 18:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 22,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "While running from Saul, where did David take refuge after leaving Gath?",
+  "options": [
+   "The cave of Adullam",
+   "The city of Ramah",
+   "The wilderness of Sinai",
+   "The cave of Machpelah"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "His family came to him there. “So David left Gath and took refuge in the cave of Adullam.” (1 Samuel 22:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 25,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Who was the wise wife of harsh Nabal?",
+  "options": [
+   "Bathsheba",
+   "Hannah",
+   "Michal",
+   "Abigail"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "She was intelligent and beautiful. “His name was Nabal, and his wife’s name was Abigail.” (1 Samuel 25:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 28,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Before his last battle, whom did King Saul seek out at Endor?",
+  "options": [
+   "A priest",
+   "A medium",
+   "Samuel's widow",
+   "A prophet of God"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Saul had turned away from the LORD. “There is a medium at Endor” (1 Samuel 28:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 31,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How did King Saul die in battle with the Philistines?",
+  "options": [
+   "David killed him",
+   "He drowned",
+   "He fell on his own sword",
+   "An arrow struck his heart"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "His armor-bearer was too afraid to kill him. “So Saul took his own sword and fell on it.” (1 Samuel 31:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Elkanah, Samuel's father, came from which town?",
+  "options": [
+   "Bethlehem",
+   "Ramathaim-zophim",
+   "Gibeah",
+   "Shiloh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It was in the hill country of Ephraim. “Now there was a man named Elkanah who was from Ramathaim-zophim” (1 Samuel 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Hannah promised that her son would never have what come over his head?",
+  "options": [
+   "Oil",
+   "A crown",
+   "A razor",
+   "A helmet"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He would be set apart for God all his life. “and no razor shall ever come over his head.” (1 Samuel 1:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "When God called young Samuel, what was wrong with old Eli?",
+  "options": [
+   "His eyesight had grown dim",
+   "He was deaf",
+   "He was lame",
+   "He was away"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Eli could not see. “Eli, whose eyesight had grown so dim that he could not see” (1 Samuel 3:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 3,
+  "verseStart": 20,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Samuel was known as a true prophet across Israel from where to where?",
+  "options": [
+   "From Egypt to Babylon",
+   "From Gath to Gaza",
+   "From Jericho to Jerusalem",
+   "From Dan to Beersheba"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "This meant the whole land. “So all Israel from Dan to Beersheba knew” (1 Samuel 3:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 16,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Which son of Jesse was presented to Samuel right after Abinadab?",
+  "options": [
+   "Eliab",
+   "David",
+   "Shammah",
+   "Jonathan"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The LORD had not chosen him either. “Next Jesse presented Shammah” (1 Samuel 16:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How tall was Goliath?",
+  "options": [
+   "Four cubits",
+   "Six cubits and a span",
+   "Three cubits and a span",
+   "Ten cubits"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "That is about nine and a half feet. “He was six cubits and a span in height” (1 Samuel 17:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How much did the iron point of Goliath's spear weigh?",
+  "options": [
+   "Six hundred shekels",
+   "One hundred shekels",
+   "Fifty shekels",
+   "Five thousand shekels"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "His spear shaft was like a weaver's beam. “and its iron point weighed six hundred shekels.” (1 Samuel 17:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 17,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What was Goliath's coat of mail made of?",
+  "options": [
+   "Leather",
+   "Iron",
+   "Gold",
+   "Bronze"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It weighed five thousand shekels. “He wore a bronze coat of mail weighing five thousand shekels” (1 Samuel 17:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 18,
+  "verseStart": 27,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How many Philistines did David and his men kill to become Saul's son-in-law?",
+  "options": [
+   "Two hundred",
+   "One hundred",
+   "Ten thousand",
+   "Fifty"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Then Saul gave him Michal. “David and his men went out and killed two hundred Philistines.” (1 Samuel 18:27, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 20,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In Jonathan's arrow signal, which words meant David had to flee?",
+  "options": [
+   "The arrows are lost",
+   "The arrows are on this side",
+   "The arrows are beyond you",
+   "Bring the arrows here"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It meant the LORD was sending David away. “Look, the arrows are beyond you” (1 Samuel 20:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 24,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How many chosen men did Saul take to hunt David near En-gedi?",
+  "options": [
+   "Ten thousand",
+   "Three thousand",
+   "Four hundred",
+   "Six hundred"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They searched the rocky hills. “So Saul took three thousand chosen men from all Israel” (1 Samuel 24:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 24,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In which rocky region did Saul look for David near En-gedi?",
+  "options": [
+   "The Hill of Moreh",
+   "The Field of Blood",
+   "The Valley of Elah",
+   "The Rocks of the Wild Goats"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "David was hiding in the caves there. “in the region of the Rocks of the Wild Goats.” (1 Samuel 24:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "1 Samuel",
+  "chapter": 25,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nabal, Abigail's harsh husband, belonged to which clan?",
+  "options": [
+   "The Edomites",
+   "The Levites",
+   "The Calebites",
+   "The Benjamites"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He was evil in his dealings. “but her husband, a Calebite, was harsh and evil in his dealings.” (1 Samuel 25:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

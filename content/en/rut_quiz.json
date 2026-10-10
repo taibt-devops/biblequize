@@ -1,0 +1,768 @@
+[
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the days of the judges, why did Naomi's family leave Bethlehem?",
+  "options": [
+   "They were exiled",
+   "They wanted riches",
+   "There was a famine",
+   "There was a war"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "There was not enough food in the land. “there was a famine in the land.” (Ruth 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Ruth and Naomi",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ru-to-va-na-o-mi"
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "During the famine, where did Naomi's family go to live?",
+  "options": [
+   "The land of Moab",
+   "Babylon",
+   "Edom",
+   "Egypt"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "There her sons married Moabite women. “went to reside in the land of Moab.” (Ruth 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Ruth and Naomi",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ru-to-va-na-o-mi"
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Naomi told her to go home, what did Ruth promise her?",
+  "options": [
+   "I will go back to Moab",
+   "Let me think about it",
+   "I will follow Orpah",
+   "Wherever you go, I will go"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ruth would not leave her mother-in-law. “For wherever you go, I will go” (Ruth 1:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Ruth and Naomi",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ru-to-va-na-o-mi"
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ruth told Naomi, “Your people will be my people, and your God will be…” what?",
+  "options": [
+   "Far from me",
+   "My God",
+   "My master",
+   "Strange to me"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ruth chose to follow the God of Israel. “your people will be my people, and your God will be my God.” (Ruth 1:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Ruth and Naomi",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ru-to-va-na-o-mi"
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Naomi urged her daughters-in-law to go home, what did Orpah do?",
+  "options": [
+   "Went with Naomi",
+   "Married Boaz",
+   "Kissed Naomi goodbye",
+   "Moved to Bethlehem"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "But Ruth clung to Naomi. “and Orpah kissed her mother-in-law goodbye, but Ruth clung to her.” (Ruth 1:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Ruth and Naomi",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ru-to-va-na-o-mi"
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Bethlehem, what did Ruth go into the fields to do?",
+  "options": [
+   "Sell bread",
+   "Glean heads of grain",
+   "Plant seeds",
+   "Tend sheep"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Poor people gathered leftover grain after the harvesters. “Please let me go into the fields and glean heads of grain” (Ruth 2:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Ruth and Naomi",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ru-to-va-na-o-mi"
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In Bethlehem, whose field did Ruth happen to glean in?",
+  "options": [
+   "Boaz's field",
+   "Orpah's field",
+   "The king's field",
+   "Naomi's field"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Boaz was from the clan of Naomi's husband. “And she happened to come to the part of the field belonging to Boaz” (Ruth 2:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Ruth and Naomi",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ru-to-va-na-o-mi"
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why was Boaz so kind to Ruth in his field?",
+  "options": [
+   "She was rich",
+   "She was born in Bethlehem",
+   "She worked for the king",
+   "She had been kind to Naomi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He had heard how she left her own land for Naomi. “I have been made fully aware of all you have done for your mother-in-law” (Ruth 2:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Ruth and Naomi",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ru-to-va-na-o-mi"
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the end of the book of Ruth, whom did Ruth marry?",
+  "options": [
+   "Obed",
+   "Elimelech",
+   "Boaz",
+   "Mahlon"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The LORD gave them a son. “So Boaz took Ruth, and she became his wife.” (Ruth 4:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Ruth and Naomi",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ru-to-va-na-o-mi"
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ruth's son Obed became the grandfather of which famous king?",
+  "options": [
+   "Josiah",
+   "David",
+   "Solomon",
+   "Saul"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "A Moabite woman became part of King David's family. “He became the father of Jesse, the father of David.” (Ruth 4:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Ruth and Naomi",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ru-to-va-na-o-mi"
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the book of Ruth, what was the name of Naomi's husband?",
+  "options": [
+   "Boaz",
+   "Jesse",
+   "Obed",
+   "Elimelech"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He died in Moab. “The man’s name was Elimelech, his wife’s name was Naomi” (Ruth 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What were the names of Naomi's two Moabite daughters-in-law?",
+  "options": [
+   "Orpah and Ruth",
+   "Peninnah and Hannah",
+   "Leah and Rachel",
+   "Mahlah and Noa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Both were women of Moab. “one named Orpah and the other named Ruth.” (Ruth 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Naomi came back to Bethlehem, what did she ask the women to call her instead?",
+  "options": [
+   "Tamar",
+   "Hannah",
+   "Jemima",
+   "Mara"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "She felt the Almighty had dealt bitterly with her. “Call me Mara, because the Almighty has dealt quite bitterly with me.” (Ruth 1:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Naomi said she went away full, but the LORD brought her back how?",
+  "options": [
+   "Rich",
+   "Married",
+   "Empty",
+   "Happy"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "She had lost her husband and both sons. “I went away full, but the LORD has brought me back empty.” (Ruth 1:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "At what time of year did Naomi and Ruth arrive in Bethlehem?",
+  "options": [
+   "Start of the barley harvest",
+   "The grape harvest",
+   "Midwinter",
+   "The olive harvest"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was the right time for Ruth to glean. “And they arrived in Bethlehem at the beginning of the barley harvest.” (Ruth 1:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How was Boaz related to Naomi?",
+  "options": [
+   "Her father",
+   "A relative on her husband's side",
+   "Her brother",
+   "Her neighbor from Moab"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He was from the clan of Elimelech. “Now Naomi had a relative on her husband’s side” (Ruth 2:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In his field, what did Boaz tell Ruth to do when she was thirsty?",
+  "options": [
+   "Buy water in town",
+   "Drink from the river",
+   "Go home to Naomi",
+   "Drink from the young men's jars"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Boaz made sure she was cared for. “And when you are thirsty, go and drink from the jars the young men have filled.” (Ruth 2:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Boaz showed her kindness, what did Ruth say she was?",
+  "options": [
+   "A foreigner",
+   "A widow of Bethlehem",
+   "A cousin of Boaz",
+   "A servant of the king"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "She was amazed he noticed her. “even though I am a foreigner?” (Ruth 2:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Boaz told Ruth she had taken refuge under whose wings?",
+  "options": [
+   "Naomi's",
+   "The king's",
+   "The LORD's, the God of Israel",
+   "Boaz's"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ruth had come to trust Israel's God. “under whose wings you have taken refuge.” (Ruth 2:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did Naomi tell Ruth that Boaz was to their family?",
+  "options": [
+   "A Moabite",
+   "One of our kinsman-redeemers",
+   "A king's officer",
+   "A stranger"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "A kinsman-redeemer could buy back family land. “He is one of our kinsman-redeemers.” (Ruth 2:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Where was Boaz winnowing barley the night Ruth went to see him?",
+  "options": [
+   "On the threshing floor",
+   "At the city gate",
+   "In his house",
+   "At the well"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Naomi told Ruth where to find him. “tonight he is winnowing barley on the threshing floor.” (Ruth 3:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 3,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "On the threshing floor, what did Ruth ask Boaz to spread over her?",
+  "options": [
+   "A wool blanket",
+   "The corner of his garment",
+   "His cloak and sandals",
+   "A tent"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "She was asking him to redeem her as a kinsman. “Spread the corner of your garment over me, for you are a kinsman-redeemer.” (Ruth 3:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Where did Boaz sit down to settle the matter of redeeming Naomi's land?",
+  "options": [
+   "In the field",
+   "In the temple",
+   "At the city gate",
+   "At the threshing floor"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Legal matters were settled at the gate. “Meanwhile, Boaz went to the gate and sat down there.” (Ruth 4:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In old Israel, how did a man make a land deal legally binding?",
+  "options": [
+   "Shook hands",
+   "Broke a jar",
+   "Signed a scroll",
+   "Removed his sandal and gave it"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "This was a confirmation in Israel. “a man would remove his sandal and give it to the other party” (Ruth 4:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What was the name of the son born to Ruth and Boaz?",
+  "options": [
+   "Obed",
+   "Mahlon",
+   "Perez",
+   "Jesse"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He became King David's grandfather. “and they named him Obed.” (Ruth 4:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What were the names of Naomi's two sons?",
+  "options": [
+   "Perez and Zerah",
+   "Mahlon and Chilion",
+   "Nadab and Abihu",
+   "Hophni and Phinehas"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Both sons died in Moab. “and the names of his two sons were Mahlon and Chilion.” (Ruth 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "About how long had Naomi's family lived in Moab when her sons died?",
+  "options": [
+   "About forty years",
+   "About two years",
+   "About ten years",
+   "About seven years"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Naomi was left without husband or sons. “And after they had lived in Moab about ten years” (Ruth 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 2,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How much barley did Ruth gather on her first day in Boaz's field?",
+  "options": [
+   "About an omer",
+   "About a handful",
+   "About ten ephahs",
+   "About an ephah"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "She worked in the field until evening. “it was about an ephah of barley.” (Ruth 2:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Why did the closer kinsman-redeemer refuse to redeem Naomi's land?",
+  "options": [
+   "He disliked Moabites",
+   "It would jeopardize his own inheritance",
+   "He was too poor",
+   "He lived far away"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "So Boaz became the redeemer. “or I would jeopardize my own inheritance.” (Ruth 4:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "At the city gate, Boaz said Ruth was the widow of which man?",
+  "options": [
+   "Elimelech",
+   "Obed",
+   "Mahlon",
+   "Chilion"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Boaz kept the dead man's name alive in Israel. “I have acquired Ruth the Moabitess, Mahlon’s widow, as my wife” (Ruth 4:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Naomi's family were Ephrathites from which town?",
+  "options": [
+   "Bethlehem in Judah",
+   "Hebron",
+   "Jericho",
+   "Shiloh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They returned there after the famine. “They were Ephrathites from Bethlehem in Judah” (Ruth 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Ruth",
+  "chapter": 4,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who gave Ruth's baby the name Obed?",
+  "options": [
+   "Naomi",
+   "Boaz",
+   "Ruth",
+   "The neighbor women"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They said a son had been born to Naomi. “The neighbor women said, “A son has been born to Naomi,” and they named him Obed.” (Ruth 4:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

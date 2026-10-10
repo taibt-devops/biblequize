@@ -1,0 +1,737 @@
+[
+ {
+  "book": "Jonah",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which great city did God send the prophet Jonah to preach against?",
+  "options": [
+   "Nineveh",
+   "Jerusalem",
+   "Tarshish",
+   "Babylon"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Its wickedness had come up before God. “Go to the great city of Nineveh and preach against it” (Jonah 1:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Great Fish",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-con-ca-lon"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Instead of obeying God's call to Nineveh, where did Jonah try to run?",
+  "options": [
+   "Babylon",
+   "Damascus",
+   "Tarshish",
+   "Egypt"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He tried to get away from the LORD. “Jonah, however, got up to flee to Tarshish” (Jonah 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Great Fish",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-con-ca-lon"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did the LORD send on the sea while Jonah was running away?",
+  "options": [
+   "A long calm",
+   "A violent storm",
+   "Pirates",
+   "A thick fog"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The ship was about to break apart. “such a violent storm arose that the ship was in danger of breaking apart.” (Jonah 1:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Great Fish",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-con-ca-lon"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "During the storm at sea, what was Jonah doing below deck?",
+  "options": [
+   "Praying",
+   "Rowing",
+   "Hiding the cargo",
+   "Sleeping deeply"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The captain had to wake him up. “where he lay down and fell into a deep sleep.” (Jonah 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Great Fish",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-con-ca-lon"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How did the sailors find out Jonah was the cause of the storm?",
+  "options": [
+   "They had a dream",
+   "They read a scroll",
+   "They asked the captain",
+   "They cast lots"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The lot fell on Jonah. “So they cast lots, and the lot fell on Jonah.” (Jonah 1:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Great Fish",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-con-ca-lon"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "During the storm, what did Jonah tell the sailors to do to calm the sea?",
+  "options": [
+   "Pray to their gods",
+   "Throw him into the sea",
+   "Turn back to Joppa",
+   "Row harder"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jonah knew the storm was his fault. “and cast me into the sea, so it may quiet down for you.” (Jonah 1:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Great Fish",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-con-ca-lon"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 1,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did the LORD appoint to swallow Jonah in the sea?",
+  "options": [
+   "A sea serpent",
+   "A shark",
+   "A great fish",
+   "A huge wave"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God saved Jonah's life this way. “Now the LORD had appointed a great fish to swallow Jonah” (Jonah 1:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Great Fish",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-con-ca-lon"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 1,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "How long was Jonah inside the belly of the great fish?",
+  "options": [
+   "Three days and three nights",
+   "Seven days",
+   "One day",
+   "Forty days"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jesus later spoke of this sign. “and Jonah spent three days and three nights in the belly of the fish.” (Jonah 1:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Great Fish",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-con-ca-lon"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Jonah finally preached in Nineveh, how did the people respond?",
+  "options": [
+   "They laughed at him",
+   "They threw him out",
+   "They believed God and fasted",
+   "They attacked him"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Everyone put on sackcloth. “And the Ninevites believed God. They proclaimed a fast and dressed in sackcloth” (Jonah 3:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Great Fish",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-con-ca-lon"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God spared the city of Nineveh, how did Jonah feel?",
+  "options": [
+   "Happy",
+   "Relieved",
+   "Proud",
+   "Angry"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Jonah did not want God to show them mercy. “Jonah, however, was greatly displeased, and he became angry.” (Jonah 4:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Plant",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-cay-dua"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After preaching to Nineveh, where did Jonah sit to watch what would happen?",
+  "options": [
+   "On the city wall",
+   "In a shelter east of the city",
+   "In the king's palace",
+   "On a ship"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He waited to see if the city would be destroyed. “Then Jonah left the city and sat down east of it, where he made himself a shelter” (Jonah 4:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Plant",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-cay-dua"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Outside Nineveh, what did God make grow to give Jonah shade?",
+  "options": [
+   "A vine",
+   "A palm tree",
+   "A tent",
+   "A fig tree"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jonah was very pleased with it. “So the LORD God appointed a vine, and it grew up to provide shade over Jonah’s head” (Jonah 4:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Plant",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-cay-dua"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 4,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did God send to make Jonah's shade plant wither?",
+  "options": [
+   "A goat",
+   "A storm",
+   "A worm",
+   "A locust"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The plant died the next day. “God appointed a worm that attacked the plant so that it withered.” (Jonah 4:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Plant",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-cay-dua"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 4,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Jonah's shade plant withered, what beat down on his head?",
+  "options": [
+   "The sun",
+   "Hail",
+   "Sand",
+   "Rain"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jonah grew faint. “and the sun beat down on Jonah’s head so that he grew faint” (Jonah 4:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Plant",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-cay-dua"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the end of Jonah's story, what did God say He cared about?",
+  "options": [
+   "Only the vine",
+   "Only Israel",
+   "Jonah's ship",
+   "The great city of Nineveh"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God cares even for Israel's enemies. “So should I not care about the great city of Nineveh” (Jonah 4:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Jonah and the Plant",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "gio-na-va-cay-dua"
+ },
+ {
+  "book": "Jonah",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "From which port did Jonah board a ship to run from God?",
+  "options": [
+   "Gaza",
+   "Joppa",
+   "Tyre",
+   "Sidon"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He paid the fare to sail for Tarshish. “He went down to Joppa and found a ship bound for Tarshish.” (Jonah 1:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the storm on Jonah's ship, what did the frightened sailors throw overboard first?",
+  "options": [
+   "The ship's cargo",
+   "The anchor",
+   "Jonah",
+   "Their idols"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They tried to lighten the load. “And they threw the ship’s cargo into the sea to lighten the load.” (Jonah 1:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 1,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When the sailors asked who he was, what did Jonah say he was?",
+  "options": [
+   "A sailor",
+   "A Hebrew",
+   "A Ninevite",
+   "An Egyptian"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He worshiped the God who made sea and land. ““I am a Hebrew,” replied Jonah.” (Jonah 1:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What happened when the sailors threw Jonah into the sea?",
+  "options": [
+   "A wave struck them",
+   "The wind grew stronger",
+   "The sea grew calm",
+   "The ship sank"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The sailors then feared the LORD. “and the raging sea grew calm.” (Jonah 1:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Where was Jonah when he prayed to the LORD his God?",
+  "options": [
+   "On the shore",
+   "On the ship",
+   "In Nineveh",
+   "Inside the fish"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He cried out to God from the deep. “From inside the fish, Jonah prayed to the LORD his God” (Jonah 2:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What did the great fish do when the LORD commanded it?",
+  "options": [
+   "Swam to Tarshish",
+   "Spit Jonah onto dry land",
+   "Swallowed him again",
+   "Dived to the bottom"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jonah got a second chance. “and it vomited Jonah onto dry land.” (Jonah 2:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 3,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What warning did Jonah proclaim in Nineveh?",
+  "options": [
+   "The king must leave",
+   "Build an altar to God",
+   "Repent or the sea will rise",
+   "Forty days and Nineveh will fall"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "He walked through the city calling it out. “Forty more days and Nineveh will be overturned!” (Jonah 3:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 3,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When the king of Nineveh heard Jonah's warning, what did he do?",
+  "options": [
+   "Raised an army",
+   "Arrested Jonah",
+   "Covered himself with sackcloth",
+   "Threw a feast"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Even the king humbled himself. “covered himself with sackcloth, and sat in ashes.” (Jonah 3:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When God saw Nineveh turn from its evil ways, what did He do?",
+  "options": [
+   "Relented from the disaster",
+   "Sent another prophet",
+   "Destroyed it anyway",
+   "Made it rich"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God shows mercy to those who repent. “He relented from the disaster He had threatened to bring upon them.” (Jonah 3:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 4,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Why did Jonah say he had fled toward Tarshish in the first place?",
+  "options": [
+   "He knew God was gracious",
+   "He wanted to get rich",
+   "He was afraid of the sea",
+   "He did not hear God"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He did not want Nineveh to be spared. “I knew that You are a gracious and compassionate God” (Jonah 4:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was the father of the prophet Jonah?",
+  "options": [
+   "Hilkiah",
+   "Berechiah",
+   "Amoz",
+   "Amittai"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The book opens with his name. “Now the word of the LORD came to Jonah son of Amittai” (Jonah 1:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How long a journey was it to cross the great city of Nineveh?",
+  "options": [
+   "Forty days",
+   "Seven days",
+   "Three days",
+   "One day"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It was an exceedingly great city. “requiring a three-day journey.” (Jonah 3:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 4,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How many people did God say lived in Nineveh who could not tell right hand from left?",
+  "options": [
+   "About 12,000",
+   "More than 120,000",
+   "About 40,000",
+   "About 600,000"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "There were many cattle as well. “which has more than 120,000 people” (Jonah 4:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 4,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What kind of wind did God send on Jonah after his shade plant withered?",
+  "options": [
+   "A gentle west wind",
+   "A scorching east wind",
+   "A cold north wind",
+   "A rainy south wind"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Jonah wished to die. “God appointed a scorching east wind” (Jonah 4:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Jonah",
+  "chapter": 3,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "In the king of Nineveh's decree, who had to go without food or water?",
+  "options": [
+   "Only the king",
+   "Only the children",
+   "Both people and animals",
+   "Only the soldiers"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The whole city fasted. “Let no man or beast, herd or flock, taste anything at all.” (Jonah 3:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

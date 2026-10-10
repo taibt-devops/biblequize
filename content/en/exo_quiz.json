@@ -1,0 +1,2326 @@
+[
+ {
+  "book": "Exodus",
+  "chapter": 2,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "To save her baby boy from Pharaoh, what did Moses' mother put him in?",
+  "options": [
+   "A wooden boat",
+   "A woven blanket",
+   "A clay pot",
+   "A papyrus basket"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "She coated it with tar and pitch so it would float. “she got him a papyrus basket and coated it with tar and pitch.” (Exodus 2:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Moses: The Basket and the Burning Bush",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-se-thung-coi-va-bui-gai"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 2,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Where did Moses' mother place the basket with her baby inside?",
+  "options": [
+   "In a cave",
+   "Under a tree",
+   "Among the reeds by the Nile",
+   "At the palace gate"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "She hid him along the riverbank. “set it among the reeds along the bank of the Nile.” (Exodus 2:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Moses: The Basket and the Burning Bush",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-se-thung-coi-va-bui-gai"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Who stood at a distance to watch what would happen to baby Moses in the basket?",
+  "options": [
+   "His sister",
+   "A neighbor",
+   "His father",
+   "His brother Aaron"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "She kept watch over her little brother. “And his sister stood at a distance to see what would happen to him.” (Exodus 2:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Moses: The Basket and the Burning Bush",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-se-thung-coi-va-bui-gai"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 2,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Who found baby Moses in his basket by the Nile?",
+  "options": [
+   "Pharaoh's wife",
+   "Pharaoh's daughter",
+   "A fisherman",
+   "A Hebrew slave"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "She came down to the river to bathe. “Soon the daughter of Pharaoh went down to bathe in the Nile” (Exodus 2:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Moses: The Basket and the Burning Bush",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-se-thung-coi-va-bui-gai"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why did Pharaoh's daughter name the baby from the basket Moses?",
+  "options": [
+   "He was very strong",
+   "He was born on the Nile",
+   "She drew him out of the water",
+   "He cried a lot"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Moses became her son. “She named him Moses and explained, “I drew him out of the water.”” (Exodus 2:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Moses: The Basket and the Burning Bush",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-se-thung-coi-va-bui-gai"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "While Moses was tending sheep at Horeb, what amazing sight did he see?",
+  "options": [
+   "A talking donkey",
+   "A ladder to heaven",
+   "A pillar of salt",
+   "A burning bush not burning up"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The angel of the LORD appeared in the fire. “Moses saw the bush ablaze with fire, but it was not consumed.” (Exodus 3:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Moses: The Basket and the Burning Bush",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-se-thung-coi-va-bui-gai"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 3,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the burning bush, what did God tell Moses to take off?",
+  "options": [
+   "His hat",
+   "His sandals",
+   "His belt",
+   "His cloak"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Moses was standing on holy ground. “Take off your sandals, for the place where you are standing is holy ground.” (Exodus 3:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Moses: The Basket and the Burning Bush",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-se-thung-coi-va-bui-gai"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 3,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the burning bush, to whom did God send Moses?",
+  "options": [
+   "To Pharaoh",
+   "To Babylon",
+   "To the king of Midian",
+   "To the Canaanites"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Moses was to bring God's people out of Egypt. “I am sending you to Pharaoh to bring My people the Israelites out of Egypt.” (Exodus 3:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Moses: The Basket and the Burning Bush",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-se-thung-coi-va-bui-gai"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 3,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Moses asked God's name at the burning bush, what did God answer?",
+  "options": [
+   "The God of Egypt",
+   "I AM WHO I AM",
+   "The Most High",
+   "The Mighty One"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Moses was to tell Israel that I AM had sent him. “God said to Moses, “I AM WHO I AM.” (Exodus 3:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Moses: The Basket and the Burning Bush",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "moi-se-thung-coi-va-bui-gai"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 7,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the first plague on Egypt, what did the water of the Nile turn into?",
+  "options": [
+   "Blood",
+   "Wine",
+   "Mud",
+   "Ice"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Aaron struck the river with his staff. “and all the water was turned to blood.” (Exodus 7:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Plagues",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-tai-va"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 8,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "During the plagues on Egypt, God warned Pharaoh He would fill the country with which animal?",
+  "options": [
+   "Mice",
+   "Lizards",
+   "Snakes",
+   "Frogs"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Pharaoh still refused to let the people go. “I will plague your whole country with frogs.” (Exodus 8:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Plagues",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-tai-va"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 9,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "During the plagues on Egypt, what fell from the sky with thunder and lightning?",
+  "options": [
+   "Ashes",
+   "Stones",
+   "Hail",
+   "Snow"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Moses stretched his staff toward heaven. “So the LORD rained down hail upon the land of Egypt.” (Exodus 9:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Plagues",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-tai-va"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 10,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "During the plagues on Egypt, which insects did God bring after the hail?",
+  "options": [
+   "Ants",
+   "Locusts",
+   "Bees",
+   "Butterflies"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They covered the land and ate what was left. “I will bring locusts into your territory tomorrow.” (Exodus 10:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Plagues",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-tai-va"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 10,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "During the plagues on Egypt, how long did total darkness cover the land?",
+  "options": [
+   "Seven days",
+   "One hour",
+   "Three days",
+   "Forty days"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "No one in Egypt could see anyone else. “and total darkness covered all the land of Egypt for three days.” (Exodus 10:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Plagues",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-tai-va"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 5,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Before the plagues began, what message from the LORD did Moses and Aaron bring Pharaoh?",
+  "options": [
+   "Give Me your gold",
+   "Leave Egypt yourself",
+   "Build Me a temple",
+   "Let My people go"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God wanted His people to worship Him in the wilderness. “Let My people go” (Exodus 5:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Plagues",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-tai-va"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 5,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Moses first asked Pharaoh to free Israel, how did Pharaoh answer?",
+  "options": [
+   "I will not let Israel go",
+   "Only the men may go",
+   "Go at once",
+   "Wait one week"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Pharaoh said he did not know the LORD. “and I will not let Israel go.” (Exodus 5:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Plagues",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-tai-va"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 7,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In front of Pharaoh, what did Aaron's staff do to the magicians' staffs?",
+  "options": [
+   "Turned them to gold",
+   "Swallowed them up",
+   "Broke them",
+   "Burned them"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God showed He was greater than Egypt's magic. “But Aaron’s staff swallowed up the other staffs.” (Exodus 7:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Plagues",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-tai-va"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 12,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "For the first Passover, what animal was each family to choose?",
+  "options": [
+   "A lamb",
+   "A rooster",
+   "A calf",
+   "A dove"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "One lamb was chosen for each household. “each man must select a lamb for his family, one per household.” (Exodus 12:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Passover",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "le-vuot-qua"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 12,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "For the first Passover, what kind of lamb was needed?",
+  "options": [
+   "Any lamb at all",
+   "The smallest in the flock",
+   "An unblemished year-old male",
+   "A newborn female"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The lamb had to be perfect. “Your lamb must be an unblemished year-old male” (Exodus 12:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Passover",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "le-vuot-qua"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 12,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the first Passover, where did the Israelites put the lamb's blood?",
+  "options": [
+   "On the altar",
+   "On their foreheads",
+   "On their roofs",
+   "On their doorframes"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The blood marked the houses of God's people. “They are to take some of the blood and put it on the sides and tops of the doorframes” (Exodus 12:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Passover",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "le-vuot-qua"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 12,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the first Passover, what did the Israelites eat with the roasted lamb?",
+  "options": [
+   "Unleavened bread and bitter herbs",
+   "Fish and olives",
+   "Lentil stew",
+   "Honey cakes and figs"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They ate the meal that same night. “along with unleavened bread and bitter herbs.” (Exodus 12:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Passover",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "le-vuot-qua"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 12,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the first Passover, what did God do when He saw the blood on a house?",
+  "options": [
+   "Knocked on the door",
+   "Filled it with gold",
+   "Passed over it",
+   "Burned it"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "That is why the feast is called the Passover. “when I see the blood, I will pass over you.” (Exodus 12:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Passover",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "le-vuot-qua"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 12,
+  "verseStart": 29,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At midnight on the first Passover, what happened in Egypt?",
+  "options": [
+   "The Nile dried up",
+   "Every firstborn was struck down",
+   "An earthquake shook the land",
+   "A great fire broke out"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It was the last of the ten plagues. “Now at midnight the LORD struck down every firstborn male in the land of Egypt” (Exodus 12:29, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Passover",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "le-vuot-qua"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 12,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the tenth plague, what did Pharaoh tell Moses and the Israelites?",
+  "options": [
+   "Stay and serve me",
+   "Build more cities",
+   "Wait until morning",
+   "Get up and leave"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Pharaoh finally let God's people go. “Get up, leave my people, both you and the Israelites!” (Exodus 12:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Passover",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "le-vuot-qua"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 13,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "As the Israelites left Egypt, what went before them to guide them by day?",
+  "options": [
+   "A flock of birds",
+   "A bright star",
+   "An angel on a horse",
+   "A pillar of cloud"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "By night a pillar of fire gave them light. “And the LORD went before them in a pillar of cloud to guide their way by day” (Exodus 13:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Crossing the Sea",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuot-qua-bien"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 14,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Pharaoh's army chased Israel to the edge of the sea, how did the Israelites feel?",
+  "options": [
+   "Excited",
+   "Terrified",
+   "Calm",
+   "Bored"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They cried out to the LORD. “and they were terrified and cried out to the LORD.” (Exodus 14:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Crossing the Sea",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuot-qua-bien"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 14,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the sea, Moses said the LORD would fight for Israel. What did the people need to do?",
+  "options": [
+   "Fight hard",
+   "Pray all night",
+   "Be still",
+   "Run fast"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God Himself would save them. “The LORD will fight for you; you need only to be still.” (Exodus 14:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Crossing the Sea",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuot-qua-bien"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 14,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At the sea, what did God tell Moses to lift up and stretch out over the water?",
+  "options": [
+   "His staff",
+   "A torch",
+   "The ark",
+   "A banner"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God would divide the sea. “lift up your staff and stretch out your hand over the sea and divide it” (Exodus 14:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Crossing the Sea",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuot-qua-bien"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 14,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Israel was trapped by the sea, what did the LORD use to drive back the water all night?",
+  "options": [
+   "A great fire",
+   "A strong east wind",
+   "An earthquake",
+   "Thunder"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The wind turned the sea into dry land. “the LORD drove back the sea with a strong east wind that turned it into dry land.” (Exodus 14:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Crossing the Sea",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuot-qua-bien"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 14,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God divided the sea, how did the Israelites cross?",
+  "options": [
+   "On dry ground",
+   "In boats",
+   "On a bridge",
+   "By swimming"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Walls of water stood on both sides. “and the Israelites went through the sea on dry ground” (Exodus 14:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Crossing the Sea",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuot-qua-bien"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 14,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What happened to Pharaoh's army when it followed Israel into the sea?",
+  "options": [
+   "They became slaves",
+   "They crossed safely",
+   "They turned back home",
+   "The waters covered them"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Not one of them survived. “The waters flowed back and covered the chariots and horsemen” (Exodus 14:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Crossing the Sea",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuot-qua-bien"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 15,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After Israel crossed the sea, who led the women with tambourines and dancing?",
+  "options": [
+   "Zipporah",
+   "Rebekah",
+   "Miriam",
+   "Deborah"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Miriam was Aaron's sister and a prophetess. “Then Miriam the prophetess, Aaron’s sister, took a tambourine in her hand” (Exodus 15:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Crossing the Sea",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "vuot-qua-bien"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 16,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the wilderness after leaving Egypt, what did the hungry Israelites complain about?",
+  "options": [
+   "They had too much water",
+   "They missed their tents",
+   "They were too cold",
+   "They would starve"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They remembered the food of Egypt. “but you have brought us into this desert to starve this whole assembly to death!” (Exodus 16:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Manna and Quail",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ma-na-va-chim-cut"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 16,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Israel was hungry in the wilderness, what did God promise to rain down from heaven?",
+  "options": [
+   "Fire",
+   "Gold",
+   "Bread",
+   "Water"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The people were to gather enough each day. “Behold, I will rain down bread from heaven for you.” (Exodus 16:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Manna and Quail",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ma-na-va-chim-cut"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 16,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "That evening in the wilderness, what birds came and covered Israel's camp?",
+  "options": [
+   "Quail",
+   "Ravens",
+   "Sparrows",
+   "Doves"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God gave them meat in the evening. “That evening quail came and covered the camp” (Exodus 16:13, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Manna and Quail",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ma-na-va-chim-cut"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 16,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When the Israelites first saw thin flakes on the desert floor, what did they ask?",
+  "options": [
+   "Can we sell it?",
+   "What is it?",
+   "Who sent it?",
+   "Is it snow?"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Moses told them it was bread from the LORD. “they asked one another, “What is it?”” (Exodus 16:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Manna and Quail",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ma-na-va-chim-cut"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 16,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did the Israelites call the bread God gave them in the wilderness?",
+  "options": [
+   "Matzah",
+   "Showbread",
+   "Manna",
+   "Honeycake"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They ate it every day in the wilderness. “Now the house of Israel called the bread manna.” (Exodus 16:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Manna and Quail",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ma-na-va-chim-cut"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 16,
+  "verseStart": 31,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did the manna in the wilderness taste like?",
+  "options": [
+   "Sour grapes",
+   "Bitter herbs",
+   "Salty fish",
+   "Wafers made with honey"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God's bread was sweet. “and tasted like wafers made with honey.” (Exodus 16:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Manna and Quail",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ma-na-va-chim-cut"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 16,
+  "verseStart": 35,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "For how many years did the Israelites eat manna?",
+  "options": [
+   "Forty years",
+   "One year",
+   "Ten years",
+   "Seven years"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They ate it until they reached Canaan. “The Israelites ate manna forty years” (Exodus 16:35, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "Manna and Quail",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "ma-na-va-chim-cut"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 20,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which commandment comes first in the Ten Commandments?",
+  "options": [
+   "Do not steal",
+   "No other gods before Me",
+   "Keep the Sabbath",
+   "Honor your parents"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God comes first. “You shall have no other gods before Me.” (Exodus 20:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Commandments",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-dieu-ran"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 20,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Ten Commandments, which day were God's people told to keep holy?",
+  "options": [
+   "The Sabbath day",
+   "Passover day",
+   "The first day",
+   "Their birthday"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "It was a day of rest for the LORD. “Remember the Sabbath day by keeping it holy.” (Exodus 20:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Commandments",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-dieu-ran"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 20,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which of the Ten Commandments comes with a promise of long life in the land?",
+  "options": [
+   "Do not steal",
+   "Honor your father and mother",
+   "Do not murder",
+   "Keep the Sabbath"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God promised long days to those who honor their parents. “Honor your father and mother, so that your days may be long in the land” (Exodus 20:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Commandments",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-dieu-ran"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 20,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Which of the Ten Commandments says not to take what belongs to others?",
+  "options": [
+   "Keep the Sabbath",
+   "Honor your parents",
+   "You shall not steal",
+   "You shall not murder"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God's people respect what belongs to others. “You shall not steal.” (Exodus 20:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Commandments",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-dieu-ran"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 20,
+  "verseStart": 16,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "In the Ten Commandments, what must you not bear against your neighbor?",
+  "options": [
+   "Heavy loads",
+   "A grudge",
+   "A sword",
+   "False witness"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God's people must not lie about others. “You shall not bear false witness against your neighbor.” (Exodus 20:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Commandments",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-dieu-ran"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 19,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When God came down to give His law, what covered Mount Sinai?",
+  "options": [
+   "Rain",
+   "Flowers",
+   "Smoke",
+   "Snow"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "The LORD came down on the mountain in fire. “Mount Sinai was completely enveloped in smoke” (Exodus 19:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Commandments",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-dieu-ran"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 31,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What were the tablets God gave Moses on Mount Sinai made of?",
+  "options": [
+   "Clay",
+   "Stone",
+   "Gold",
+   "Wood"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "They held the words of God's covenant. “tablets of stone inscribed by the finger of God.” (Exodus 31:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Commandments",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-dieu-ran"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 31,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Who wrote on the stone tablets God gave Moses?",
+  "options": [
+   "The finger of God",
+   "Joshua",
+   "Moses",
+   "Aaron"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God Himself wrote His law. “inscribed by the finger of God.” (Exodus 31:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Ten Commandments",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "muoi-dieu-ran"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 32,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "While Moses stayed long on Mount Sinai, what did the people ask Aaron to make?",
+  "options": [
+   "A big stone altar",
+   "A road back to Egypt",
+   "A new tent",
+   "Gods to go before them"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They grew tired of waiting for Moses. “Come, make us gods who will go before us.” (Exodus 32:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Golden Calf",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-bo-con-bang-vang"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 32,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "At Mount Sinai, what did Aaron tell the people to bring him to make an idol?",
+  "options": [
+   "Their wooden staffs",
+   "Their silver coins",
+   "Their gold earrings",
+   "Their bronze pots"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He melted the gold to make the idol. “Take off the gold earrings” (Exodus 32:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Golden Calf",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-bo-con-bang-vang"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 32,
+  "verseStart": 4,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did Aaron make from the people's gold at Mount Sinai?",
+  "options": [
+   "A lion",
+   "A calf",
+   "A crown",
+   "A serpent"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The people said the calf had brought them out of Egypt. “he fashioned it into a molten calf.” (Exodus 32:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Golden Calf",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-bo-con-bang-vang"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 32,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "When Moses came down and saw the golden calf, what did he do with the stone tablets?",
+  "options": [
+   "Hid them in a cave",
+   "Gave them to Aaron",
+   "Read them aloud",
+   "Threw and shattered them"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Moses burned with anger at the people's sin. “he burned with anger and threw the tablets out of his hands, shattering them” (Exodus 32:19, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Golden Calf",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-bo-con-bang-vang"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 32,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "What did Moses do to the golden calf?",
+  "options": [
+   "Burned it and ground it to powder",
+   "Sold it in Egypt",
+   "Put it in the tabernacle",
+   "Buried it in the sand"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He destroyed the idol completely. “burned it in the fire, ground it to powder” (Exodus 32:20, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Golden Calf",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-bo-con-bang-vang"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 32,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "After the golden calf, Moses said, “Whoever is for the LORD, come to me.” Who came?",
+  "options": [
+   "The Egyptians",
+   "The elders",
+   "The women",
+   "The Levites"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "The Levites stood with the LORD. “And all the Levites gathered around him.” (Exodus 32:26, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Golden Calf",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-bo-con-bang-vang"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 32,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Why did the people at Mount Sinai ask Aaron to make them gods?",
+  "options": [
+   "Aaron told them to",
+   "They were under attack",
+   "Moses was delayed on the mountain",
+   "The manna had stopped"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "They did not know what had happened to Moses. “Now when the people saw that Moses was delayed in coming down from the mountain” (Exodus 32:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Core story",
+   "The Golden Calf",
+   "Old Testament",
+   "BSB"
+  ],
+  "story": "con-bo-con-bang-vang"
+ },
+ {
+  "book": "Exodus",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "At the start of Exodus, what was different about the new king who came to power in Egypt?",
+  "options": [
+   "He did not know Joseph",
+   "He was Joseph's son",
+   "He loved the Israelites",
+   "He was a Hebrew"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "He feared the Israelites and made them slaves. “Then a new king, who did not know Joseph, came to power in Egypt.” (Exodus 1:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 1,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Which store cities did the enslaved Israelites build for Pharaoh?",
+  "options": [
+   "Ur and Haran",
+   "Pithom and Rameses",
+   "Goshen and On",
+   "Sodom and Gomorrah"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Taskmasters forced them into hard labor. “they built Pithom and Rameses as store cities for Pharaoh.” (Exodus 1:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 1,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Why did the Hebrew midwives refuse Pharaoh's order to kill the baby boys?",
+  "options": [
+   "They forgot the order",
+   "Moses asked them",
+   "They were paid not to",
+   "They feared God"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They let the boys live. “The midwives, however, feared God” (Exodus 1:17, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 2,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Whom did Pharaoh's daughter pay to nurse baby Moses?",
+  "options": [
+   "An Egyptian servant",
+   "Moses' own mother",
+   "A Midianite woman",
+   "Moses' sister"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Moses' sister cleverly brought their mother. “Take this child and nurse him for me, and I will pay your wages.” (Exodus 2:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After Moses killed an Egyptian, where did he flee to escape Pharaoh?",
+  "options": [
+   "The land of Goshen",
+   "The land of Canaan",
+   "The land of Midian",
+   "The city of Ur"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "There he sat down beside a well. “But Moses fled from Pharaoh and settled in the land of Midian” (Exodus 2:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 2,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Midian, whom did Moses marry?",
+  "options": [
+   "Zipporah",
+   "Rebekah",
+   "Miriam",
+   "Asenath"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "She was the daughter of the priest of Midian. “and he gave his daughter Zipporah to Moses in marriage.” (Exodus 2:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Whose flock was Moses tending when he saw the burning bush?",
+  "options": [
+   "His father-in-law Jethro's",
+   "Aaron's",
+   "His own father's",
+   "Pharaoh's"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Jethro was the priest of Midian. “Moses was shepherding the flock of his father-in-law Jethro” (Exodus 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "At the burning bush, how did God describe the land He would give Israel?",
+  "options": [
+   "Covered with tall cedars",
+   "Full of gold and silver",
+   "Flowing with milk and honey",
+   "Rich in fish and salt"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It was a good and spacious land. “a land flowing with milk and honey” (Exodus 3:8, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 4,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "At the burning bush, what did Moses' staff become when he threw it down?",
+  "options": [
+   "A tree",
+   "A snake",
+   "A sword",
+   "A bird"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "It was a sign so the people would believe Moses. “and it became a snake, and he ran from it.” (Exodus 4:3, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "At the burning bush, why did Moses say he could not speak to Pharaoh?",
+  "options": [
+   "He was sick",
+   "He was too young",
+   "He did not know Egyptian",
+   "He was slow of speech"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "God promised to teach him what to say. “for I am slow of speech and tongue.” (Exodus 4:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 4,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Moses asked God to send someone else, whom did God send to speak for him?",
+  "options": [
+   "Joshua",
+   "Jethro",
+   "His sister Miriam",
+   "His brother Aaron"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Aaron could speak well. “Is not Aaron the Levite your brother? I know that he can speak well” (Exodus 4:14, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 5,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After Moses first spoke to Pharaoh, what did Pharaoh stop giving the Hebrew slaves?",
+  "options": [
+   "Straw for making bricks",
+   "Days of rest",
+   "Water to drink",
+   "Bread to eat"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Pharaoh made their work even harder. “You shall no longer supply the people with straw for making bricks.” (Exodus 5:7, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 8,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "During the plagues on Egypt, what did the dust turn into when Aaron struck it?",
+  "options": [
+   "Locusts",
+   "Frogs",
+   "Gnats",
+   "Flies"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Swarms of gnats covered the land. “that it may turn into swarms of gnats throughout the land of Egypt.” (Exodus 8:16, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 9,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "During the plagues on Egypt, what broke out on people and animals from fine dust?",
+  "options": [
+   "Hair loss",
+   "Festering boils",
+   "Bad coughs",
+   "Red spots"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Even the magicians were struck with boils. “and festering boils will break out on man and beast” (Exodus 9:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 11,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What was the tenth and final plague on Egypt?",
+  "options": [
+   "Three days of darkness",
+   "Hail and fire",
+   "Death of every firstborn son",
+   "Swarms of locusts"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "After it, Pharaoh let Israel go. “and every firstborn son in the land of Egypt will die” (Exodus 11:5, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 15,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "After crossing the sea, why could the Israelites not drink the water at Marah?",
+  "options": [
+   "It was bitter",
+   "It was too hot",
+   "It was frozen",
+   "It was poisoned"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Marah means bitter. “they could not drink the water there because it was bitter.” (Exodus 15:23, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 15,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "At Marah, what did Moses throw into the bitter water to make it sweet?",
+  "options": [
+   "His staff",
+   "A log",
+   "A stone",
+   "Salt"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The LORD showed him the log. “And when he cast it into the waters, they were sweetened.” (Exodus 15:25, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 17,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Israel had no water at Horeb, what did God tell Moses to strike?",
+  "options": [
+   "The ground",
+   "The altar",
+   "The river",
+   "The rock"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Water came out for the people to drink. “And when you strike the rock, water will come out of it for the people to drink.” (Exodus 17:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 17,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In Israel's battle with Amalek, when did Israel win?",
+  "options": [
+   "When Joshua blew a trumpet",
+   "When the sun stood still",
+   "When Moses held up his hands",
+   "When Aaron offered a sacrifice"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "When Moses lowered his hands, Amalek won. “As long as Moses held up his hands, Israel prevailed” (Exodus 17:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 17,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "In the battle with Amalek, who held up Moses' tired hands?",
+  "options": [
+   "Miriam and Aaron",
+   "Joshua and Caleb",
+   "Two angels",
+   "Aaron and Hur"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "They held his hands steady until sunset. “Then Aaron and Hur held his hands up, one on each side” (Exodus 17:12, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 18,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Moses was worn out judging the people, what did Jethro advise him to do?",
+  "options": [
+   "Appoint capable leaders to help",
+   "Move back to Midian",
+   "Judge only on Sabbaths",
+   "Ask Pharaoh for help"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "The work was too heavy for one man. “Appoint them over the people as leaders of thousands, of hundreds, of fifties, and of tens.” (Exodus 18:21, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 20,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "The Ten Commandments forbid making an idol in the form of what?",
+  "options": [
+   "Only the sun",
+   "Anything in heaven, earth, or water",
+   "Only kings",
+   "Only animals"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nothing created should be worshiped. “You shall not make for yourself an idol in the form of anything in the heavens above, on the earth below, or in the waters beneath.” (Exodus 20:4, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 20,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "What reason do the Ten Commandments give for resting on the Sabbath?",
+  "options": [
+   "God rested on the seventh day",
+   "The Egyptians rested then",
+   "The manna stopped",
+   "Moses was tired"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "God made everything in six days. “but on the seventh day He rested.” (Exodus 20:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 24,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How long did Moses stay on Mount Sinai inside the cloud?",
+  "options": [
+   "Three days",
+   "One year",
+   "Forty days and forty nights",
+   "Seven days"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "God gave him instructions there. “and he remained on the mountain forty days and forty nights.” (Exodus 24:18, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 33,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "How did the LORD speak with Moses at the tent of meeting?",
+  "options": [
+   "Through angels",
+   "By writing on walls",
+   "Only in dreams",
+   "Face to face, like a friend"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Moses had a close friendship with God. “Thus the LORD would speak to Moses face to face, as a man speaks to his friend.” (Exodus 33:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 34,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When Moses came down from Mount Sinai with the new tablets, what was different about him?",
+  "options": [
+   "He was limping",
+   "His face was radiant",
+   "He could not speak",
+   "His hair was white"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "He had been speaking with the LORD. “he was unaware that his face had become radiant from speaking with the LORD.” (Exodus 34:29, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 40,
+  "verseStart": 34,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "When the tabernacle was finished, what filled it?",
+  "options": [
+   "Smoke from incense",
+   "The glory of the LORD",
+   "A crowd of people",
+   "Gold treasures"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "The cloud covered the Tent of Meeting. “and the glory of the LORD filled the tabernacle.” (Exodus 40:34, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What were the names of the Hebrew midwives who disobeyed Pharaoh?",
+  "options": [
+   "Shiphrah and Puah",
+   "Miriam and Zipporah",
+   "Leah and Rachel",
+   "Bilhah and Zilpah"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "They feared God more than the king. “whose names were Shiphrah and Puah” (Exodus 1:15, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How long did Moses' mother hide him before putting him in a basket?",
+  "options": [
+   "Seven months",
+   "Three days",
+   "Three months",
+   "One year"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "She saw he was a beautiful child. “she hid him for three months.” (Exodus 2:2, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 2,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What did Moses name the son Zipporah bore him in Midian?",
+  "options": [
+   "Korah",
+   "Nadab",
+   "Hur",
+   "Gershom"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Moses felt like a foreigner in a foreign land. “and Moses named him Gershom” (Exodus 2:22, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "At which mountain did Moses see the burning bush?",
+  "options": [
+   "Mount Ararat",
+   "Mount Nebo",
+   "Horeb, the mountain of God",
+   "Mount Carmel"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He had led the flock to the far side of the wilderness. “and came to Horeb, the mountain of God.” (Exodus 3:1, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 12,
+  "verseStart": 37,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "About how many men on foot left Egypt with Moses?",
+  "options": [
+   "About 600,000",
+   "About 12,000",
+   "About 70,000",
+   "About 1,000,000"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Women and children came too. “with about 600,000 men on foot, besides women and children.” (Exodus 12:37, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 12,
+  "verseStart": 40,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "How long had the Israelites lived in Egypt before the exodus?",
+  "options": [
+   "400 years",
+   "430 years",
+   "40 years",
+   "215 years"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Then they left on the very same day. “Now the duration of the Israelites’ stay in Egypt was 430 years.” (Exodus 12:40, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 12,
+  "verseStart": 37,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "From which city did the Israelites set out when they left Egypt?",
+  "options": [
+   "On",
+   "Pithom",
+   "Memphis",
+   "Rameses"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Their first stop was Succoth. “The Israelites journeyed from Rameses to Succoth” (Exodus 12:37, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 14,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Near which place did Pharaoh's army catch up with Israel camped by the sea?",
+  "options": [
+   "Elim",
+   "Marah",
+   "Rephidim",
+   "Pi-hahiroth"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "It was opposite Baal-zephon. “as they camped by the sea near Pi-hahiroth, opposite Baal-zephon.” (Exodus 14:9, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 16,
+  "verseStart": 31,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What did the manna in the wilderness look like?",
+  "options": [
+   "Brown like dates",
+   "Red like lentils",
+   "White like coriander seed",
+   "Yellow like corn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "It tasted like honey wafers. “It was white like coriander seed” (Exodus 16:31, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 25,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "What kind of wood was the ark of the covenant made of?",
+  "options": [
+   "Cedar wood",
+   "Acacia wood",
+   "Olive wood",
+   "Gopher wood"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "God gave exact measurements for the ark. “And they are to construct an ark of acacia wood” (Exodus 25:10, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 33,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Who was Moses' young assistant who would not leave the tent of meeting?",
+  "options": [
+   "Joshua son of Nun",
+   "Hur",
+   "Eleazar",
+   "Caleb son of Jephunneh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Joshua later led Israel into Canaan. “but his young assistant Joshua son of Nun would not leave the tent.” (Exodus 33:11, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 34,
+  "verseStart": 28,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "During Moses' second forty days on Mount Sinai, what did he go without?",
+  "options": [
+   "Clothes and sandals",
+   "Light and fire",
+   "Bread and water",
+   "Sleep and rest"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "He wrote the Ten Commandments on the tablets. “without eating bread or drinking water.” (Exodus 34:28, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ },
+ {
+  "book": "Exodus",
+  "chapter": 20,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "The Ten Commandments say God shows loving devotion to how many generations of those who love Him?",
+  "options": [
+   "Four generations",
+   "A thousand generations",
+   "Seven generations",
+   "Three generations"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "His love lasts far longer than punishment. “but showing loving devotion to a thousand generations of those who love Me” (Exodus 20:6, BSB)",
+  "language": "en",
+  "tags": [
+   "Old Testament",
+   "BSB"
+  ]
+ }
+]

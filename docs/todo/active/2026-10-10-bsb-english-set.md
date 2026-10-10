@@ -14,6 +14,10 @@
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - BSB-3 Đợt thử lên prod
   - Status: [x] DONE 10/10 · commit `9568ec8b`, BE `sha256:f8100869…` (rollback `a180d892…`) · seed một lần `bsb_en_quiz.json`, `sync-stale=false`: inserted=238, dupHash=0 · 250/250 hàng tiếng Anh cũ của Sáng Thế Ký khớp 250 hash retire, không bộ câu/phòng nào tham chiếu · dump `backups/questions-old-en-genesis-deleted-20261010.sql.gz` rồi xóa (CASCADE: 22 answers, 1 user_question_history, 2.495 quiz_session_questions) · xóa cache `questions:*` · `GET /api/questions?book=Genesis&language=en` × 3 mức trả câu BSB · `/api/public/stories?language=en`: 17 câu chuyện chơi được, tên tiếng Anh ("Creation", "Noah and the Flood"…)
-  - Chờ user chơi thử giọng văn trước khi viết tiếp các sách khác
+  - User chơi thử, duyệt giọng văn 10/10: "ok rồi viết tiếp đến khi xong luôn đi"
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
+- BSB-4 Đợt E2: vòng 1, phần Cựu Ước (8 sách)
+  - Status: [x] DONE · 387 câu thay 949 câu dịch máy: Xuất Ai Cập Ký 94 (Dễ 54 trên 7 câu chuyện / TB 27 / Khó 13), Ru-tơ 32 (10/15/7), 1 Sa-mu-ên 73 (36 trên 5 câu chuyện / 24 / 13), Ê-xơ-tê 31 (10/14/7), Thi Thiên 50 (21+0 / 20 / 9), Châm Ngôn 35 (7+5 / 15 / 8), Đa-ni-ên 42 (16+3 / 15 / 8), Giô-na 30 (15/10/5) · Thi Thiên gọi tên bài bằng nội dung ("David's shepherd psalm", "the very first psalm") thay vì số · `retired_hashes.txt` 1.199 hash; 1 câu Xuất Ai Cập Ký trùng chữ câu cũ → đổi lời · `bsb_en_quiz.json` 625 câu, 39 câu chuyện có câu tiếng Anh · 55 test xanh
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
