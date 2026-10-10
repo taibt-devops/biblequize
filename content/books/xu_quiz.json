@@ -28,7 +28,7 @@
   "verseStart": 17,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Vì sao các cô đỡ không làm theo lệnh của vua Ai Cập?",
+  "content": "Vì sao các cô đỡ không làm theo lệnh vua Ai Cập giết các bé trai Hê-bơ-rơ?",
   "options": [
    "Không nghe lệnh vua",
    "Được trả nhiều tiền",
@@ -74,7 +74,7 @@
   "verseStart": 6,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Khi mở thúng ra, công chúa thấy em bé đang làm gì?",
+  "content": "Khi mở thúng đựng bé Môi-se, công chúa Pha-ra-ôn thấy em bé đang làm gì?",
   "options": [
    "Đang khóc",
    "Đang ngủ",
@@ -396,7 +396,7 @@
   "verseStart": 9,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Tro rải ra thành bụi khắp Ai Cập sinh ra điều gì?",
+  "content": "Trong mười tai vạ ở Ai Cập, tro rải ra thành bụi sinh ra điều gì?",
   "options": [
    "Châu chấu",
    "Ruồi nhặng",
@@ -419,7 +419,7 @@
   "verseStart": 3,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Tai vạ ôn dịch nặng nề giáng trên điều gì của Ai Cập?",
+  "content": "Trong mười tai vạ, ôn dịch nặng nề giáng trên điều gì của Ai Cập?",
   "options": [
    "Các nguồn nước",
    "Súc vật ngoài đồng",
@@ -1086,7 +1086,7 @@
   "verseStart": 6,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Dân dâng lễ vật xây Đền Thánh nhiều đến mức nào?",
+  "content": "Khi xây Đền Tạm thời Môi-se, dân dâng lễ vật nhiều đến mức nào?",
   "options": [
    "Phải đi xin nước khác",
    "Vừa đủ dùng",
@@ -1109,7 +1109,7 @@
   "verseStart": 34,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Khi Đền Tạm hoàn tất, điều gì đầy dẫy Đền Tạm?",
+  "content": "Khi Môi-se hoàn tất Đền Tạm, điều gì đầy dẫy Đền Tạm?",
   "options": [
    "Nước thánh",
    "Khói hương",
@@ -1362,7 +1362,7 @@
   "verseStart": 2,
   "difficulty": "hard",
   "type": "multiple_choice_single",
-  "content": "Tháng có lễ Vượt Qua được định làm tháng nào trong năm?",
+  "content": "Khi lập lễ Vượt Qua ở Ai Cập, tháng ấy được định làm tháng nào trong năm?",
   "options": [
    "Tháng thứ nhất",
    "Tháng thứ ba",

@@ -5,7 +5,7 @@
   "verseStart": 10,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Phao-lô khuyên chúng ta phải mạnh mẽ trong ai?",
+  "content": "Khi nói về khí giới của Đức Chúa Trời, Phao-lô khuyên phải mạnh mẽ trong ai?",
   "options": [
    "Trong chính mình",
    "Trong Chúa",
@@ -130,7 +130,7 @@
   "verseStart": 15,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chân mang giày bằng điều gì?",
+  "content": "Trong bộ khí giới của Đức Chúa Trời, chân mang giày bằng điều gì?",
   "options": [
    "Da bò thượng hạng",
    "Sự sẵn sàng của Tin Lành bình an",
@@ -205,7 +205,7 @@
   "verseStart": 17,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Gươm của Thánh Linh là gì?",
+  "content": "Trong bộ khí giới của Đức Chúa Trời, gươm của Thánh Linh là gì?",
   "options": [
    "Cây giáo dài",
    "Gươm bằng thép",
@@ -255,7 +255,7 @@
   "verseStart": 28,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Mọi sự hiệp lại làm ích cho ai?",
+  "content": "Thư Rô-ma nói mọi sự hiệp lại làm ích cho ai?",
   "options": [
    "Người giàu có",
    "Người may mắn",
@@ -280,7 +280,7 @@
   "verseStart": 29,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Trời định cho chúng ta trở nên giống ai?",
+  "content": "Thư Rô-ma nói Đức Chúa Trời định cho chúng ta trở nên giống ai?",
   "options": [
    "Vua chúa trần gian",
    "Hình ảnh Con Ngài",
@@ -305,7 +305,7 @@
   "verseStart": 31,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nếu Đức Chúa Trời đứng về phía chúng ta thì sao?",
+  "content": "Phao-lô hỏi: nếu Đức Chúa Trời đứng về phía chúng ta thì sao?",
   "options": [
    "Còn ai nghịch với chúng ta?",
    "Chúng ta sẽ giàu ngay",
@@ -330,7 +330,7 @@
   "verseStart": 32,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì chúng ta, Đức Chúa Trời đã không tiếc ai?",
+  "content": "Thư Rô-ma nói vì chúng ta, Đức Chúa Trời đã không tiếc ai?",
   "options": [
    "Các thiên sứ",
    "Chính Con mình",
@@ -380,7 +380,7 @@
   "verseStart": 37,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Trong mọi hoạn nạn, nhờ Đấng yêu thương mình, chúng ta thế nào?",
+  "content": "Thư Rô-ma nói trong mọi hoạn nạn, nhờ Đấng yêu thương mình, chúng ta thế nào?",
   "options": [
    "Bỏ cuộc",
    "Thua cuộc",
@@ -405,7 +405,7 @@
   "verseStart": 39,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Có điều gì phân rẽ được chúng ta khỏi tình yêu thương của Đức Chúa Trời không?",
+  "content": "Thư Rô-ma nói có điều gì phân rẽ được chúng ta khỏi tình yêu Đức Chúa Trời không?",
   "options": [
    "Có, khi ta gặp hoạn nạn",
    "Có, khi ta qua đời",
@@ -505,7 +505,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Sự bình an của Đức Chúa Trời vượt trên điều gì?",
+  "content": "Phao-lô viết sự bình an của Đức Chúa Trời vượt trên điều gì?",
   "options": [
    "Mọi đại dương",
    "Mọi vì sao",
@@ -530,7 +530,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Sự bình an của Đức Chúa Trời gìn giữ điều gì?",
+  "content": "Phao-lô viết sự bình an của Đức Chúa Trời gìn giữ điều gì?",
   "options": [
    "Lòng và trí chúng ta",
    "Ruộng đất",
@@ -905,7 +905,7 @@
   "verseStart": 14,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Có đức tin mà không có điều gì thì chẳng ích gì?",
+  "content": "Gia-cơ nói có đức tin mà không có điều gì thì chẳng ích gì?",
   "options": [
    "Hành động",
    "Bằng cấp",
@@ -930,7 +930,7 @@
   "verseStart": 16,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Thấy anh em thiếu áo, thiếu ăn mà chỉ chúc suông thì sao?",
+  "content": "Gia-cơ nói thấy anh em thiếu ăn mặc mà chỉ chúc suông thì sao?",
   "options": [
    "Họ sẽ no ngay",
    "Đủ để giúp họ",
@@ -955,7 +955,7 @@
   "verseStart": 17,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức tin không có hành động thì thế nào?",
+  "content": "Gia-cơ nói đức tin không có hành động thì thế nào?",
   "options": [
    "Càng mạnh hơn",
    "Tự nó chết",
@@ -1030,7 +1030,7 @@
   "verseStart": 22,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nhờ hành động, đức tin trở nên thế nào?",
+  "content": "Gia-cơ nói nhờ hành động, đức tin của Áp-ra-ham trở nên thế nào?",
   "options": [
    "Trọn vẹn",
    "Biến mất",
@@ -1180,7 +1180,7 @@
   "verseStart": 15,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Kinh Thánh khiến người ta khôn ngoan để làm gì?",
+  "content": "Phao-lô viết cho Ti-mô-thê: Kinh Thánh khiến người ta khôn ngoan để làm gì?",
   "options": [
    "Được cứu bởi đức tin",
    "Được giàu có",
@@ -1330,7 +1330,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Tình yêu thương đến từ đâu?",
+  "content": "Sứ đồ Giăng nói tình yêu thương đến từ đâu?",
   "options": [
    "Từ Đức Chúa Trời",
    "Từ chính mình",
@@ -1380,7 +1380,7 @@
   "verseStart": 9,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Trời bày tỏ tình yêu của Ngài bằng cách nào?",
+  "content": "Sứ đồ Giăng nói Đức Chúa Trời bày tỏ tình yêu của Ngài bằng cách nào?",
   "options": [
    "Cho mọi người giàu có",
    "Xây nhiều đền thờ",
@@ -1405,7 +1405,7 @@
   "verseStart": 14,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Cha sai Con Ngài đến làm gì?",
+  "content": "Sứ đồ Giăng nói Đức Chúa Cha sai Con Ngài đến làm gì?",
   "options": [
    "Vua của La Mã",
    "Cứu Chúa của thế gian",
@@ -1430,7 +1430,7 @@
   "verseStart": 18,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Tình yêu thương trọn vẹn loại bỏ điều gì?",
+  "content": "Sứ đồ Giăng nói tình yêu thương trọn vẹn loại bỏ điều gì?",
   "options": [
    "Sự sợ hãi",
    "Sự vui mừng",
@@ -1455,7 +1455,7 @@
   "verseStart": 19,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì sao chúng ta yêu thương?",
+  "content": "Sứ đồ Giăng nói vì sao chúng ta yêu thương?",
   "options": [
    "Vì sợ bị phạt",
    "Vì bị bắt buộc",
@@ -1480,7 +1480,7 @@
   "verseStart": 20,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nói yêu Đức Chúa Trời mà ghét anh em mình thì là người thế nào?",
+  "content": "Sứ đồ Giăng nói người nói yêu Đức Chúa Trời mà ghét anh em mình là người thế nào?",
   "options": [
    "Người can đảm",
    "Người khôn ngoan",
@@ -1505,7 +1505,7 @@
   "verseStart": 21,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ai yêu Đức Chúa Trời thì cũng phải yêu ai?",
+  "content": "Sứ đồ Giăng nói ai yêu Đức Chúa Trời thì cũng phải yêu ai?",
   "options": [
    "Chỉ người tốt với mình",
    "Chỉ người giàu",
@@ -1605,7 +1605,7 @@
   "verseStart": 19,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Những người Chúa yêu thì Chúa làm gì?",
+  "content": "Trong thư gửi Lao-đi-xê, Chúa nói những người Ngài yêu thì Ngài làm gì?",
   "options": [
    "Không bao giờ nhắc nhở",
    "Quở trách, sửa phạt",
@@ -1655,7 +1655,7 @@
   "verseStart": 20,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ai phải mở cửa khi Chúa gõ?",
+  "content": "Khi Chúa đứng ngoài cửa mà gõ, ai phải mở cửa?",
   "options": [
    "Một thiên sứ",
    "Chúa tự mở",
@@ -1705,7 +1705,7 @@
   "verseStart": 21,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người nào thắng, Chúa sẽ cho ngồi ở đâu?",
+  "content": "Trong thư gửi Lao-đi-xê, người nào thắng sẽ được ngồi ở đâu?",
   "options": [
    "Dưới chân núi",
    "Ngoài cổng thành",
@@ -1830,7 +1830,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Trời sẽ lau ráo gì trên mắt họ?",
+  "content": "Trong trời mới đất mới, Đức Chúa Trời sẽ lau ráo gì trên mắt dân Ngài?",
   "options": [
    "Nước mắt",
    "Bụi đất",
@@ -1855,7 +1855,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Trời hứa sẽ không còn những gì nữa?",
+  "content": "Trong trời mới đất mới, Đức Chúa Trời hứa không còn những gì nữa?",
   "options": [
    "Bạn bè, gia đình",
    "Ánh sáng, sự sống",
@@ -1905,7 +1905,7 @@
   "verseStart": 6,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người nào khát sẽ được uống miễn phí nước gì?",
+  "content": "Khải Huyền hứa người nào khát sẽ được uống miễn phí nước gì?",
   "options": [
    "Nước sự sống",
    "Rượu ngon",
@@ -2105,7 +2105,7 @@
   "verseStart": 12,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chúa Jêsus hứa Ngài sẽ đến thế nào?",
+  "content": "Cuối sách Khải Huyền, Chúa Jêsus hứa Ngài sẽ đến thế nào?",
   "options": [
    "Không bao giờ",
    "Chỉ khi được mời",
@@ -2130,7 +2130,7 @@
   "verseStart": 12,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chúa sẽ thưởng cho mỗi người tùy theo điều gì?",
+  "content": "Khải Huyền nói khi Chúa đến, Ngài thưởng mỗi người tùy theo điều gì?",
   "options": [
    "Quê quán của họ",
    "Việc họ đã làm",

@@ -5,7 +5,7 @@
   "verseStart": 6,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ăn trái cấm xong, người nữ trao trái cho ai?",
+  "content": "Ăn trái cấm trong vườn Ê-đen xong, người nữ trao trái cho ai?",
   "options": [
    "Một thiên sứ",
    "Một người lạ",
@@ -205,7 +205,7 @@
   "verseStart": 14,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Con rắn bị phạt phải sống thế nào?",
+  "content": "Sau khi lừa người nữ trong vườn Ê-đen, con rắn bị phạt phải sống thế nào?",
   "options": [
    "Sống dưới biển",
    "Bò bằng bụng",
@@ -330,7 +330,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Giê-hô-va đoái đến lễ vật của ai?",
+  "content": "Giữa Ca-in và A-bên, Đức Giê-hô-va đoái đến lễ vật của ai?",
   "options": [
    "Ca-in",
    "A-bên",
@@ -505,7 +505,7 @@
   "verseStart": 1,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Thuở ấy, cả thế giới nói bao nhiêu ngôn ngữ?",
+  "content": "Trước khi xây tháp Ba-bên, cả thế giới nói bao nhiêu ngôn ngữ?",
   "options": [
    "Hai ngôn ngữ",
    "Chỉ một ngôn ngữ",
@@ -530,7 +530,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Loài người muốn xây gì có đỉnh cao đến tận trời?",
+  "content": "Thuở cả thế giới còn một ngôn ngữ, loài người muốn xây gì cao đến tận trời?",
   "options": [
    "Một chiếc tàu",
    "Một đền thờ",
@@ -555,7 +555,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì sao họ muốn xây tháp cao đến tận trời?",
+  "content": "Vì sao loài người muốn xây tháp Ba-bên cao đến tận trời?",
   "options": [
    "Để thờ phượng Đức Chúa Trời",
    "Để làm nhà cho vua",
@@ -580,7 +580,7 @@
   "verseStart": 5,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Giê-hô-va ngự xuống để làm gì?",
+  "content": "Khi loài người xây tháp Ba-bên, Đức Giê-hô-va ngự xuống để làm gì?",
   "options": [
    "Để xem thành và tháp họ xây",
    "Để giúp họ xây nhanh hơn",
@@ -605,7 +605,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Giê-hô-va làm gì khiến họ không hiểu nhau?",
+  "content": "Đức Giê-hô-va làm gì khiến những người xây tháp Ba-bên không hiểu nhau?",
   "options": [
    "Sai lửa từ trời",
    "Làm lộn xộn tiếng nói của họ",
@@ -630,7 +630,7 @@
   "verseStart": 8,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi không còn hiểu nhau, loài người ra sao?",
+  "content": "Khi tiếng nói bị làm lộn xộn ở Ba-bên, loài người ra sao?",
   "options": [
    "Tản ra khắp mặt đất",
    "Ở lại xây xong tháp",
@@ -655,7 +655,7 @@
   "verseStart": 9,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nơi họ xây tháp được gọi là gì?",
+  "content": "Nơi loài người xây tháp cao đến tận trời được gọi là gì?",
   "options": [
    "Sô-đôm",
    "Giê-ri-cô",
@@ -905,7 +905,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Tại nơi Đức Giê-hô-va hiện ra, Áp-ram đã làm gì?",
+  "content": "Khi Đức Giê-hô-va hiện ra ở xứ Ca-na-an, Áp-ram đã làm gì?",
   "options": [
    "Lập một bàn thờ",
    "Xây một thành",
@@ -1530,7 +1530,7 @@
   "verseStart": 1,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Trong câu chuyện này, Đức Chúa Trời làm gì với Áp-ra-ham?",
+  "content": "Khi bảo Áp-ra-ham dâng con mình, Đức Chúa Trời muốn làm gì với ông?",
   "options": [
    "Thử nghiệm ông",
    "Phạt tội ông",
@@ -1580,7 +1580,7 @@
   "verseStart": 6,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ai vác củi cho tế lễ thiêu khi lên núi?",
+  "content": "Khi Áp-ra-ham lên núi dâng tế lễ thiêu, ai vác củi?",
   "options": [
    "Lót",
    "Y-sác",
@@ -1630,7 +1630,7 @@
   "verseStart": 8,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Áp-ra-ham trả lời con thế nào?",
+  "content": "Khi Y-sác hỏi chiên con ở đâu, Áp-ra-ham trả lời thế nào?",
   "options": [
    "Mình sẽ mua chiên dưới núi",
    "Chiên con đang ở nhà",
@@ -1655,7 +1655,7 @@
   "verseStart": 11,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi Áp-ra-ham cầm dao, ai từ trời gọi ông?",
+  "content": "Khi Áp-ra-ham cầm dao định dâng Y-sác, ai từ trời gọi ông?",
   "options": [
    "Thiên sứ của Đức Giê-hô-va",
    "Hai người đầy tớ",
@@ -1680,7 +1680,7 @@
   "verseStart": 12,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Thiên sứ bảo Áp-ra-ham điều gì?",
+  "content": "Khi Áp-ra-ham sắp dâng Y-sác, thiên sứ bảo ông điều gì?",
   "options": [
    "Hãy dâng con nhanh lên",
    "Hãy về nhà ngay",
@@ -1780,7 +1780,7 @@
   "verseStart": 10,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người đầy tớ dẫn theo đàn vật gì khi lên đường?",
+  "content": "Đi tìm vợ cho Y-sác, người đầy tớ của Áp-ra-ham dẫn theo đàn vật gì?",
   "options": [
    "Ngựa chiến",
    "Bò kéo xe",
@@ -1805,7 +1805,7 @@
   "verseStart": 11,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đến nơi, người đầy tớ dừng chân ở đâu?",
+  "content": "Đi tìm vợ cho Y-sác, đến nơi người đầy tớ dừng chân ở đâu?",
   "options": [
    "Cạnh một giếng nước",
    "Trước cổng đền thờ",
@@ -1830,7 +1830,7 @@
   "verseStart": 12,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Trước khi gặp cô gái, người đầy tớ đã làm gì?",
+  "content": "Bên giếng nước, trước khi gặp Rê-bê-ca, người đầy tớ của Áp-ra-ham làm gì?",
   "options": [
    "Hỏi đường người trong thành",
    "Ngủ một giấc dài",
@@ -1855,7 +1855,7 @@
   "verseStart": 14,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người đầy tớ xin dấu hiệu gì để nhận ra cô gái Chúa chọn?",
+  "content": "Đầy tớ Áp-ra-ham xin dấu hiệu gì để nhận ra người vợ Chúa chọn cho Y-sác?",
   "options": [
    "Cô ấy hát một bài ca",
    "Cô ấy cho cả lạc đà uống nước",
@@ -1880,7 +1880,7 @@
   "verseStart": 15,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Cô gái vác vò ra giếng múc nước là ai?",
+  "content": "Cô gái vác vò ra giếng, gặp người đầy tớ của Áp-ra-ham, là ai?",
   "options": [
    "Ru-tơ",
    "Đê-bô-ra",
@@ -1930,7 +1930,7 @@
   "verseStart": 26,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi biết Chúa đã nhậm lời, người đầy tớ làm gì?",
+  "content": "Khi gặp được Rê-bê-ca, người đầy tớ của Áp-ra-ham làm gì?",
   "options": [
    "Hỏi giá vò nước",
    "Lập tức quay về nhà",
@@ -2130,7 +2130,7 @@
   "verseStart": 29,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Hôm ấy, Ê-sau từ ngoài đồng về trong tình trạng nào?",
+  "content": "Hôm Ê-sau bán quyền trưởng nam, ông từ ngoài đồng về trong tình trạng nào?",
   "options": [
    "Bị thương nặng",
    "Mang về nhiều thịt",

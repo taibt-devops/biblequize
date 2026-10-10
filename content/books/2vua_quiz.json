@@ -28,7 +28,7 @@
   "verseStart": 8,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Vua nhận ra Ê-li qua cách ăn mặc nào?",
+  "content": "Vua A-cha-xia nhận ra Ê-li qua cách ăn mặc nào?",
   "options": [
    "Áo lông, thắt lưng da",
    "Áo choàng đỏ",
@@ -97,7 +97,7 @@
   "verseStart": 6,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Dầu của bà góa ngừng chảy khi nào?",
+  "content": "Trong phép lạ Ê-li-sê làm cho người vợ góa, dầu ngừng chảy khi nào?",
   "options": [
    "Khi bà cầu nguyện",
    "Khi chủ nợ đến",
@@ -120,7 +120,7 @@
   "verseStart": 1,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Chủ nợ đòi bắt gì của người vợ góa môn đồ tiên tri?",
+  "content": "Người vợ góa của một môn đồ tiên tri kêu với Ê-li-sê: chủ nợ đòi bắt gì?",
   "options": [
    "Căn nhà của bà",
    "Hai đứa con làm nô lệ",
@@ -258,7 +258,7 @@
   "verseStart": 5,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Vì sao người làm rơi lưỡi rìu kêu lên lo lắng?",
+  "content": "Thời Ê-li-sê, vì sao người làm rơi lưỡi rìu xuống sông kêu lên lo lắng?",
   "options": [
    "Cái rìu là đồ đi mượn",
    "Rìu là cái duy nhất",
@@ -419,7 +419,7 @@
   "verseStart": 9,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Để nhận bạc sửa đền thờ, thầy tế lễ đặt gì gần bàn thờ?",
+  "content": "Thời vua Giô-ách, để nhận bạc sửa đền thờ, thầy tế lễ đặt gì gần bàn thờ?",
   "options": [
    "Một cái rương khoét lỗ",
    "Một cái bình đất",
@@ -442,7 +442,7 @@
   "verseStart": 21,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Một người chết sống lại khi chạm vào điều gì?",
+  "content": "Thấy toán quân cướp phá, người ta vội ném xác chết vào một ngôi mộ; người chết sống lại khi chạm vào gì?",
   "options": [
    "Áo choàng của Ê-li",
    "Hòm Giao Ước",
@@ -672,7 +672,7 @@
   "verseStart": 9,
   "difficulty": "hard",
   "type": "multiple_choice_single",
-  "content": "Thầy tế lễ nào đặt rương nhận bạc để sửa đền thờ?",
+  "content": "Thời vua Giô-ách, thầy tế lễ nào đặt rương nhận bạc để sửa đền thờ?",
   "options": [
    "Hinh-kia",
    "Giê-hô-gia-đa",
@@ -764,7 +764,7 @@
   "verseStart": 11,
   "difficulty": "hard",
   "type": "multiple_choice_single",
-  "content": "Bóng mặt trời lui lại mười bậc trên đồng hồ mặt trời của ai?",
+  "content": "Khi Ê-sai cầu khẩn cho vua Ê-xê-chia, bóng mặt trời lui lại mười bậc trên đồng hồ mặt trời của ai?",
   "options": [
    "Sa-lô-môn",
    "Ê-xê-chia",

@@ -130,7 +130,7 @@
   "verseStart": 32,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Con trai của Ma-ri sẽ được gọi là gì?",
+  "content": "Thiên sứ báo con trai của Ma-ri sẽ được gọi là gì?",
   "options": [
    "Con của Đấng Chí Cao",
    "Con của vua Hê-rốt",
@@ -155,7 +155,7 @@
   "verseStart": 33,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vương quốc của Con trai ấy sẽ thế nào?",
+  "content": "Thiên sứ báo vương quốc của con trai Ma-ri sẽ thế nào?",
   "options": [
    "Sẽ sớm sụp đổ",
    "Chỉ ba năm",
@@ -205,7 +205,7 @@
   "verseStart": 37,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Thiên sứ nói gì về quyền năng của Đức Chúa Trời?",
+  "content": "Khi báo tin cho Ma-ri, thiên sứ nói gì về quyền năng Đức Chúa Trời?",
   "options": [
    "Ngài đã mệt mỏi",
    "Ngài chỉ làm việc nhỏ",
@@ -280,7 +280,7 @@
   "verseStart": 42,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Năm ấy, cậu bé Jêsus bao nhiêu tuổi?",
+  "content": "Năm cậu bé Jêsus ở lại đền thờ, cậu bao nhiêu tuổi?",
   "options": [
    "Mười hai tuổi",
    "Năm tuổi",
@@ -305,7 +305,7 @@
   "verseStart": 43,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi các ngày lễ qua, cậu bé Jêsus ở đâu?",
+  "content": "Khi lễ Vượt Qua đã qua, cậu bé Jêsus ở đâu?",
   "options": [
    "Đi sang Ai Cập",
    "Ở lại Giê-ru-sa-lem",
@@ -405,7 +405,7 @@
   "verseStart": 49,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Cậu bé Jêsus đáp lời cha mẹ thế nào?",
+  "content": "Khi cha mẹ tìm thấy trong đền thờ, cậu bé Jêsus đáp thế nào?",
   "options": [
    "Con quên giờ về",
    "Con muốn ở đây chơi",
@@ -580,7 +580,7 @@
   "verseStart": 11,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Giăng nói mình không đáng làm gì cho Đấng đến sau?",
+  "content": "Giăng Báp-tít nói mình không đáng làm gì cho Đấng đến sau?",
   "options": [
    "Hát cho Ngài nghe",
    "Xách dép cho Ngài",
@@ -680,7 +680,7 @@
   "verseStart": 17,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Tiếng từ trời phán gì về Chúa Jêsus?",
+  "content": "Khi Chúa Jêsus chịu báp-têm, tiếng từ trời phán gì?",
   "options": [
    "Đây là nhà tiên tri lớn",
    "Đây là Con yêu dấu của Ta",
@@ -880,7 +880,7 @@
   "verseStart": 10,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Mỗi lần bị cám dỗ, Chúa Jêsus đáp lại bằng gì?",
+  "content": "Mỗi lần bị ma quỷ cám dỗ trong hoang mạc, Chúa Jêsus đáp lại bằng gì?",
   "options": [
    "Gươm giáo",
    "Một phép lạ lớn",
@@ -980,7 +980,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Jêsus bảo Si-môn làm gì?",
+  "content": "Sau khi giảng trên thuyền, Đức Chúa Jêsus bảo Si-môn làm gì?",
   "options": [
    "Đi mua cá ở chợ",
    "Chèo ra chỗ nước sâu thả lưới",
@@ -1005,7 +1005,7 @@
   "verseStart": 5,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Si-môn đáp lời Chúa thế nào?",
+  "content": "Được bảo thả lưới chỗ nước sâu, Si-môn đáp lời Chúa thế nào?",
   "options": [
    "Con mệt rồi, không đi",
    "Thầy không biết đánh cá",
@@ -1030,7 +1030,7 @@
   "verseStart": 6,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi thả lưới theo lời Chúa, điều gì xảy ra?",
+  "content": "Khi Si-môn thả lưới theo lời Chúa, điều gì xảy ra?",
   "options": [
    "Không bắt được con nào",
    "Bắt được nhiều cá đến đứt lưới",
@@ -1055,7 +1055,7 @@
   "verseStart": 8,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Thấy phép lạ, Si-môn Phi-e-rơ đã làm gì?",
+  "content": "Thấy mẻ cá lạ, Si-môn Phi-e-rơ đã làm gì?",
   "options": [
    "Đem cá ra chợ bán",
    "Chạy về nhà khoe",
@@ -1080,7 +1080,7 @@
   "verseStart": 9,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Hai người bạn nào của Si-môn cũng có mặt ở đó?",
+  "content": "Hai người bạn nào của Si-môn cũng chứng kiến mẻ cá lạ?",
   "options": [
    "Gia-cơ và Giăng",
    "Ma-thi-ơ và Thô-ma",
@@ -1130,7 +1130,7 @@
   "verseStart": 11,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Sau đó, những người đánh cá đã làm gì?",
+  "content": "Sau mẻ cá lạ, Si-môn và các bạn đánh cá đã làm gì?",
   "options": [
    "Bán cá làm giàu",
    "Về quê nghỉ ngơi",
@@ -1155,7 +1155,7 @@
   "verseStart": 1,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Tiệc cưới diễn ra tại thành nào?",
+  "content": "Tiệc cưới nơi Chúa Jêsus hóa nước thành rượu diễn ra ở thành nào?",
   "options": [
    "Giê-ri-cô",
    "Ca-na",
@@ -1180,7 +1180,7 @@
   "verseStart": 3,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đang giữa tiệc cưới, thứ gì đã hết?",
+  "content": "Đang giữa tiệc cưới ở Ca-na, thứ gì đã hết?",
   "options": [
    "Rượu",
    "Bánh",
@@ -1205,7 +1205,7 @@
   "verseStart": 3,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ai báo cho Đức Chúa Jêsus biết tiệc đã hết rượu?",
+  "content": "Ai báo cho Đức Chúa Jêsus biết tiệc cưới ở Ca-na đã hết rượu?",
   "options": [
    "Phi-e-rơ",
    "Chàng rể",
@@ -1255,7 +1255,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Jêsus bảo đổ đầy gì vào các chum đá?",
+  "content": "Tại tiệc cưới ở Ca-na, Chúa Jêsus bảo đổ đầy gì vào các chum đá?",
   "options": [
    "Sữa",
    "Mật ong",
@@ -1280,7 +1280,7 @@
   "verseStart": 9,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nước trong chum đã biến thành gì?",
+  "content": "Tại tiệc cưới ở Ca-na, nước trong chum đã biến thành gì?",
   "options": [
    "Sữa",
    "Rượu",
@@ -1305,7 +1305,7 @@
   "verseStart": 10,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người quản tiệc khen rượu mới thế nào?",
+  "content": "Ở tiệc cưới Ca-na, người quản tiệc khen rượu mới thế nào?",
   "options": [
    "Rượu ngon được giữ đến bây giờ",
    "Rượu không có mùi",
@@ -1355,7 +1355,7 @@
   "verseStart": 11,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Sau phép lạ ấy, các môn đồ đã làm gì?",
+  "content": "Sau phép lạ ở Ca-na, các môn đồ đã làm gì?",
   "options": [
    "Đi bán rượu",
    "Bỏ đi",
@@ -1455,7 +1455,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ni-cô-đem thắc mắc điều gì?",
+  "content": "Nghe nói phải được sinh lại, Ni-cô-đem thắc mắc điều gì?",
   "options": [
    "Người già sinh lại làm sao được?",
    "Ai là thầy giỏi nhất?",
@@ -1630,7 +1630,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người phụ nữ đến múc nước là người vùng nào?",
+  "content": "Người phụ nữ đến múc nước ở giếng Gia-cốp là người vùng nào?",
   "options": [
    "Sa-ma-ri",
    "Ga-li-lê",
@@ -1655,7 +1655,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Jêsus xin người phụ nữ điều gì?",
+  "content": "Bên giếng Gia-cốp, Đức Chúa Jêsus xin người phụ nữ điều gì?",
   "options": [
    "Bánh ăn",
    "Chỗ ngủ",
@@ -1680,7 +1680,7 @@
   "verseStart": 9,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì sao người phụ nữ ngạc nhiên khi Chúa xin nước?",
+  "content": "Vì sao người phụ nữ Sa-ma-ri ngạc nhiên khi Chúa xin nước?",
   "options": [
    "Vì giếng đã cạn",
    "Vì Ngài là vua",
@@ -1705,7 +1705,7 @@
   "verseStart": 10,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Jêsus nói Ngài có thể ban cho người phụ nữ loại nước gì?",
+  "content": "Đức Chúa Jêsus nói Ngài có thể ban cho người phụ nữ Sa-ma-ri loại nước gì?",
   "options": [
    "Nước biển",
    "Nước mưa",
@@ -1730,7 +1730,7 @@
   "verseStart": 14,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ai uống nước Chúa ban sẽ thế nào?",
+  "content": "Chúa Jêsus nói ai uống nước sống Ngài ban sẽ thế nào?",
   "options": [
    "Không bao giờ khát nữa",
    "Phải uống mỗi ngày",
@@ -1755,7 +1755,7 @@
   "verseStart": 19,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi Chúa nói đúng về đời mình, người phụ nữ nhận biết Ngài là ai?",
+  "content": "Khi Chúa nói đúng về đời mình, người phụ nữ Sa-ma-ri nhận biết Ngài là ai?",
   "options": [
    "Một thầy thuốc",
    "Một người lính",
@@ -1780,7 +1780,7 @@
   "verseStart": 26,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Jêsus cho người phụ nữ biết Ngài là ai?",
+  "content": "Đức Chúa Jêsus cho người phụ nữ Sa-ma-ri biết Ngài là ai?",
   "options": [
    "Giăng Báp-tít",
    "Đấng Christ mà bà đang chờ",
@@ -1805,7 +1805,7 @@
   "verseStart": 28,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người phụ nữ bỏ vò nước lại rồi làm gì?",
+  "content": "Người phụ nữ Sa-ma-ri bỏ vò nước lại rồi làm gì?",
   "options": [
    "Đi múc nước giếng khác",
    "Về nhà ngủ",
@@ -1930,7 +1930,7 @@
   "verseStart": 6,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Những người đói khát sự công chính sẽ được gì?",
+  "content": "Chúa Jêsus phán những người đói khát sự công chính sẽ được gì?",
   "options": [
    "Được no đủ",
    "Được làm quan",
@@ -2005,7 +2005,7 @@
   "verseStart": 9,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Những người hòa giải sẽ được gọi là gì?",
+  "content": "Chúa Jêsus phán những người hòa giải sẽ được gọi là gì?",
   "options": [
    "Vua của đất",
    "Con Đức Chúa Trời",
@@ -2130,7 +2130,7 @@
   "verseStart": 9,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Bài cầu nguyện xin Danh Cha được thế nào?",
+  "content": "Bài cầu nguyện Chúa dạy xin Danh Cha được thế nào?",
   "options": [
    "Được quên đi",
    "Được thay đổi",
@@ -2155,7 +2155,7 @@
   "verseStart": 10,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Bài cầu nguyện xin ý Cha được nên ở đâu?",
+  "content": "Bài cầu nguyện Chúa dạy xin ý Cha được nên ở đâu?",
   "options": [
    "Ở đất như ở trời",
    "Chỉ ở trên trời",
@@ -2180,7 +2180,7 @@
   "verseStart": 11,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Bài cầu nguyện xin thức ăn thế nào?",
+  "content": "Bài cầu nguyện Chúa dạy xin thức ăn thế nào?",
   "options": [
    "Tiệc lớn mỗi ngày",
    "Hôm nay thức ăn đủ ngày",
@@ -2205,7 +2205,7 @@
   "verseStart": 12,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Bài cầu nguyện xin Chúa tha tội cho chúng con như thế nào?",
+  "content": "Bài cầu nguyện Chúa dạy xin tha tội cho chúng con như thế nào?",
   "options": [
    "Vì chúng con giỏi giang",
    "Mà không cần tha ai",
@@ -2230,7 +2230,7 @@
   "verseStart": 13,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Bài cầu nguyện xin Chúa đừng để chúng con bị gì?",
+  "content": "Bài cầu nguyện Chúa dạy xin đừng để chúng con bị gì?",
   "options": [
    "Bị cám dỗ",
    "Bị đói",
@@ -2255,7 +2255,7 @@
   "verseStart": 13,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Bài cầu nguyện xin cứu chúng con khỏi điều gì?",
+  "content": "Bài cầu nguyện Chúa dạy xin cứu chúng con khỏi điều gì?",
   "options": [
    "Công việc",
    "Bạn bè",
@@ -2305,7 +2305,7 @@
   "verseStart": 8,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì sao không cần dùng nhiều lời sáo rỗng khi cầu nguyện?",
+  "content": "Chúa Jêsus dạy vì sao không cần dùng nhiều lời sáo rỗng khi cầu nguyện?",
   "options": [
    "Vì Cha biết chúng ta cần gì",
    "Vì phải nói thật nhanh",
@@ -2330,7 +2330,7 @@
   "verseStart": 14,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nếu chúng ta tha lỗi cho người khác, Cha trên trời sẽ làm gì?",
+  "content": "Chúa Jêsus dạy nếu chúng ta tha lỗi người khác, Cha trên trời sẽ làm gì?",
   "options": [
    "Quên chúng ta",
    "Không quan tâm",

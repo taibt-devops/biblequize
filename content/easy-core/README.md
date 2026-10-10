@@ -39,6 +39,10 @@ Câu hỏi và đoạn trích theo **Kinh Thánh Bản Truyền Thống Hiệu �
 6. Lời giải thích gồm hai phần: một câu kể lại chuyện, rồi một đoạn trích nguyên văn kèm tham chiếu. Script tự ghép, ví dụ:
    `Kinh Thánh mở đầu bằng việc Đức Chúa Trời sáng tạo muôn vật. “Ban đầu, Đức Chúa Trời sáng tạo trời và đất.” (Sáng Thế Ký 1:1)`
 7. Mỗi câu chuyện có khoảng 10 câu, trải đều các chi tiết chính của chuyện.
+8. **Câu hỏi phải tự đứng được.** Người chơi thấy từng câu riêng lẻ, không thấy tên chuyện và không có câu trước đó. Câu hỏi phải nói đủ ai, ở đâu, lúc nào để người biết chuyện nhận ra ngay:
+   - sai: "Trở về thành, các môn đồ cùng nhau làm gì?";
+   - đúng: "Sau khi Chúa Jêsus thăng thiên, các môn đồ về Giê-ru-sa-lem cùng nhau làm gì?".
+   Không mở đầu bằng "ông", "họ", "vua", "dân" khi chưa nói là ai.
 
 ## Tệp và lệnh
 

@@ -105,7 +105,7 @@
   "verseStart": 8,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi đứng dậy, Sau-lơ bị làm sao?",
+  "content": "Sau khi gặp ánh sáng trên đường Đa-mách, Sau-lơ đứng dậy thì bị làm sao?",
   "options": [
    "Không nói được",
    "Mắt mở nhưng không thấy gì",
@@ -405,7 +405,7 @@
   "verseStart": 10,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Cổng sắt dẫn vào thành phố đã ra sao?",
+  "content": "Khi thiên sứ dẫn Phi-e-rơ ra khỏi ngục, cổng sắt dẫn vào thành ra sao?",
   "options": [
    "Có lính mở giùm",
    "Tự động mở ra",
@@ -480,7 +480,7 @@
   "verseStart": 15,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nghe Rô-đơ báo tin, những người trong nhà nói gì?",
+  "content": "Nghe Rô-đơ báo Phi-e-rơ đang ở ngoài cổng, những người trong nhà nói gì?",
   "options": [
    "Tạ ơn Chúa!",
    "Hãy đi ngủ đi!",
@@ -605,7 +605,7 @@
   "verseStart": 26,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Điều gì bất ngờ xảy ra làm các cửa ngục mở tung?",
+  "content": "Khi Phao-lô và Si-la bị giam, điều gì làm các cửa ngục mở tung?",
   "options": [
    "Một cơn động đất rất lớn",
    "Một đám cháy",
@@ -630,7 +630,7 @@
   "verseStart": 27,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Tưởng tù nhân đã trốn hết, viên cai ngục định làm gì?",
+  "content": "Tưởng tù nhân đã trốn hết, viên cai ngục giữ Phao-lô và Si-la định làm gì?",
   "options": [
    "Khóa cửa lại",
    "Đi báo quan tòa",
@@ -680,7 +680,7 @@
   "verseStart": 30,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Viên cai ngục run rẩy hỏi hai ông điều gì?",
+  "content": "Viên cai ngục run rẩy hỏi Phao-lô và Si-la điều gì?",
   "options": [
    "Ai mở cửa ngục?",
    "Các ông muốn tiền không?",
@@ -730,7 +730,7 @@
   "verseStart": 33,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ngay trong đêm ấy, ai đã nhận báp-têm?",
+  "content": "Đêm động đất làm mở cửa ngục giam Phao-lô, ai đã nhận báp-têm?",
   "options": [
    "Viên cai ngục và cả gia đình",
    "Toàn bộ lính canh",
@@ -780,7 +780,7 @@
   "verseStart": 18,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì bão thổi mạnh, người trên tàu ném gì xuống biển?",
+  "content": "Vì bão thổi mạnh, người trên tàu chở Phao-lô ném gì xuống biển?",
   "options": [
    "Những cuốn sách",
    "Hàng hóa",
@@ -880,7 +880,7 @@
   "verseStart": 35,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Trước khi ăn, Phao-lô cầm bánh làm gì?",
+  "content": "Trên tàu giữa cơn bão, trước khi ăn, Phao-lô cầm bánh làm gì?",
   "options": [
    "Tạ ơn Đức Chúa Trời",
    "Đổi lấy nước",
@@ -905,7 +905,7 @@
   "verseStart": 44,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi tàu vỡ, những người trên tàu ra sao?",
+  "content": "Khi tàu chở Phao-lô bị vỡ, những người trên tàu ra sao?",
   "options": [
    "Chỉ Phao-lô sống sót",
    "Mọi người đều lên bờ an toàn",
@@ -1080,7 +1080,7 @@
   "verseStart": 6,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Tình yêu thương vui trong điều gì?",
+  "content": "Phao-lô viết tình yêu thương vui trong điều gì?",
   "options": [
    "Của cải",
    "Sự thật",
@@ -1105,7 +1105,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Tình yêu thương hay dung thứ điều gì?",
+  "content": "Phao-lô viết tình yêu thương hay dung thứ điều gì?",
   "options": [
    "Chỉ lần đầu",
    "Chỉ chuyện nhỏ",
@@ -1130,7 +1130,7 @@
   "verseStart": 8,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Tình yêu thương có bao giờ suy tàn không?",
+  "content": "Phao-lô viết tình yêu thương có bao giờ suy tàn không?",
   "options": [
    "Không bao giờ suy tàn",
    "Sẽ hết khi gặp khó khăn",
@@ -1180,7 +1180,7 @@
   "verseStart": 12,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Hiện nay chúng ta thấy mập mờ như nhìn qua cái gì?",
+  "content": "Phao-lô viết hiện nay chúng ta thấy mập mờ như nhìn qua cái gì?",
   "options": [
    "Cửa sổ",
    "Gương",
@@ -1205,7 +1205,7 @@
   "verseStart": 13,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ba điều còn lại mãi là gì?",
+  "content": "Phao-lô viết ba điều còn lại mãi là gì?",
   "options": [
    "Vàng, bạc, châu báu",
    "Ăn, uống, ngủ",
@@ -1430,7 +1430,7 @@
   "verseStart": 20,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Điều nào là việc làm của xác thịt?",
+  "content": "Thư Ga-la-ti kể điều nào là việc làm của xác thịt?",
   "options": [
    "Nhân từ, hiền lành",
    "Ghen ghét, giận dữ",
@@ -1480,7 +1480,7 @@
   "verseStart": 1,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Trước khi tin Chúa, chúng ta ở tình trạng nào?",
+  "content": "Thư Ê-phê-sô nói trước khi tin Chúa, chúng ta ở tình trạng nào?",
   "options": [
    "Hoàn toàn vô tội",
    "Đủ công đức",
@@ -1505,7 +1505,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Trời là Đấng giàu điều gì?",
+  "content": "Thư Ê-phê-sô nói Đức Chúa Trời là Đấng giàu điều gì?",
   "options": [
    "Đất đai",
    "Vàng bạc",
@@ -1530,7 +1530,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì sao Đức Chúa Trời cứu chúng ta?",
+  "content": "Thư Ê-phê-sô nói vì sao Đức Chúa Trời cứu chúng ta?",
   "options": [
    "Vì Ngài yêu chúng ta",
    "Vì chúng ta giàu có",
@@ -1555,7 +1555,7 @@
   "verseStart": 5,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Trời khiến chúng ta cùng sống với ai?",
+  "content": "Thư Ê-phê-sô nói Đức Chúa Trời khiến chúng ta cùng sống với ai?",
   "options": [
    "Môi-se",
    "Đấng Christ",
@@ -1580,7 +1580,7 @@
   "verseStart": 8,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chúng ta được cứu nhờ điều gì?",
+  "content": "Thư Ê-phê-sô nói chúng ta được cứu nhờ điều gì?",
   "options": [
    "Tiền dâng hiến",
    "Giữ đủ luật lệ",
@@ -1605,7 +1605,7 @@
   "verseStart": 8,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Sự cứu rỗi là gì của Đức Chúa Trời?",
+  "content": "Thư Ê-phê-sô nói sự cứu rỗi là gì của Đức Chúa Trời?",
   "options": [
    "Tiền công",
    "Giải thưởng thi đua",
@@ -1630,7 +1630,7 @@
   "verseStart": 9,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Sự cứu rỗi không do việc làm để làm gì?",
+  "content": "Thư Ê-phê-sô nói sự cứu rỗi không do việc làm để làm gì?",
   "options": [
    "Để mọi người lười biếng",
    "Để người giàu được trước",
@@ -1655,7 +1655,7 @@
   "verseStart": 10,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chúng ta là gì của tay Đức Chúa Trời?",
+  "content": "Thư Ê-phê-sô nói chúng ta là gì của tay Đức Chúa Trời?",
   "options": [
    "Đồ chơi",
    "Công trình",
@@ -1680,7 +1680,7 @@
   "verseStart": 10,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Trời tạo dựng chúng ta trong Đấng Christ để làm gì?",
+  "content": "Thư Ê-phê-sô nói Đức Chúa Trời tạo dựng chúng ta trong Đấng Christ để làm gì?",
   "options": [
    "Thực hiện những việc lành",
    "Tranh giành với nhau",

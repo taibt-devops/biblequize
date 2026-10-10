@@ -30,7 +30,7 @@
   "verseStart": 23,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chùm nho các thám tử mang về lớn đến mức nào?",
+  "content": "Chùm nho các thám tử mang về từ xứ Ca-na-an lớn đến mức nào?",
   "options": [
    "Bỏ vừa túi áo",
    "Nhỏ như hạt đậu",
@@ -55,7 +55,7 @@
   "verseStart": 27,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Các thám tử mô tả xứ ấy thế nào?",
+  "content": "Các thám tử Môi-se sai đi mô tả xứ Ca-na-an thế nào?",
   "options": [
    "Đất lạnh giá quanh năm",
    "Đất ngập nước",
@@ -80,7 +80,7 @@
   "verseStart": 33,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Các thám tử sợ hãi vì thấy gì trong xứ?",
+  "content": "Các thám tử do thám xứ Ca-na-an sợ hãi vì thấy gì?",
   "options": [
    "Những con rồng lửa",
    "Những người cao lớn như khổng lồ",
@@ -105,7 +105,7 @@
   "verseStart": 30,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ca-lép nói gì với dân chúng?",
+  "content": "Sau khi do thám xứ Ca-na-an, Ca-lép nói gì với dân chúng?",
   "options": [
    "Hãy xây thành ở đây",
    "Chúng ta có thể thắng được",
@@ -130,7 +130,7 @@
   "verseStart": 6,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Hai thám tử nào tin rằng dân có thể chiếm xứ?",
+  "content": "Hai thám tử nào tin rằng dân có thể chiếm xứ Ca-na-an?",
   "options": [
    "Đa-vít và Giô-na-than",
    "Môi-se và A-rôn",
@@ -155,7 +155,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nghe lời báo cáo xấu, dân chúng muốn làm gì?",
+  "content": "Nghe các thám tử báo cáo xấu về Ca-na-an, dân Y-sơ-ra-ên muốn làm gì?",
   "options": [
    "Ăn mừng suốt đêm",
    "Xây đền thờ mới",
@@ -205,7 +205,7 @@
   "verseStart": 33,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì không tin, dân Y-sơ-ra-ên phải ở trong hoang mạc bao lâu?",
+  "content": "Vì không tin sau chuyến do thám Ca-na-an, dân Y-sơ-ra-ên ở hoang mạc bao lâu?",
   "options": [
    "Bảy ngày",
    "Ba tháng",
@@ -230,7 +230,7 @@
   "verseStart": 30,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Trong thế hệ ấy, ai được vào xứ Đức Chúa Trời đã hứa?",
+  "content": "Trong thế hệ ra khỏi Ai Cập, ai được vào xứ Đức Chúa Trời đã hứa?",
   "options": [
    "Chỉ Môi-se và A-rôn",
    "Không một ai",
@@ -305,7 +305,7 @@
   "verseStart": 21,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ba-la-am cưỡi con vật gì lên đường?",
+  "content": "Lên đường đến gặp vua Mô-áp, Ba-la-am cưỡi con vật gì?",
   "options": [
    "Một con lừa",
    "Một con ngựa",
@@ -330,7 +330,7 @@
   "verseStart": 23,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Con lừa thấy ai đứng chắn đường?",
+  "content": "Con lừa của Ba-la-am thấy ai đứng chắn đường?",
   "options": [
    "Một con sư tử",
    "Thiên sứ của Đức Giê-hô-va",
@@ -380,7 +380,7 @@
   "verseStart": 28,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Điều kỳ lạ nào xảy ra với con lừa?",
+  "content": "Điều kỳ lạ nào xảy ra với con lừa của Ba-la-am?",
   "options": [
    "Con lừa biến thành ngựa",
    "Con lừa hóa thành đá",
@@ -530,7 +530,7 @@
   "verseStart": 1,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Hai thám tử trọ trong nhà của ai?",
+  "content": "Hai thám tử Giô-suê sai đến Giê-ri-cô trọ trong nhà ai?",
   "options": [
    "Ru-tơ",
    "Ê-xơ-tê",
@@ -555,7 +555,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi người của vua đến tìm, Ra-háp đã làm gì?",
+  "content": "Khi người của vua Giê-ri-cô đến tìm thám tử, Ra-háp đã làm gì?",
   "options": [
    "Kêu lính đến bắt",
    "Giao nộp họ cho vua",
@@ -780,7 +780,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ai cầm kèn bằng sừng đi trước Hòm Giao Ước?",
+  "content": "Khi đi vòng quanh Giê-ri-cô, ai cầm kèn bằng sừng đi trước Hòm Giao Ước?",
   "options": [
    "Hai thám tử",
    "Ba vị vua",
@@ -805,7 +805,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Dân Y-sơ-ra-ên khiêng vật thánh nào đi vòng quanh thành?",
+  "content": "Dân Y-sơ-ra-ên khiêng vật thánh nào đi vòng quanh thành Giê-ri-cô?",
   "options": [
    "Đền thờ nhỏ",
    "Cây đèn vàng",
@@ -830,7 +830,7 @@
   "verseStart": 15,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vào ngày thứ bảy, dân chúng đi vòng quanh thành mấy lần?",
+  "content": "Vào ngày thứ bảy, dân Y-sơ-ra-ên đi vòng quanh Giê-ri-cô mấy lần?",
   "options": [
    "Mười hai lần",
    "Bốn mươi lần",
@@ -855,7 +855,7 @@
   "verseStart": 5,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi nghe tiếng kèn thổi dài, dân chúng phải làm gì?",
+  "content": "Tại Giê-ri-cô, khi nghe tiếng kèn thổi dài, dân chúng phải làm gì?",
   "options": [
    "Quỳ xuống ngủ",
    "La lớn lên",
@@ -1080,7 +1080,7 @@
   "verseStart": 5,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Giê-hô-va chọn quân lính bên mé nước bằng cách nào?",
+  "content": "Đức Giê-hô-va chọn quân cho Ghi-đê-ôn bên mé nước bằng cách nào?",
   "options": [
    "Xem ai mang nhiều nước",
    "Xem ai lội qua sông nhanh",
@@ -1105,7 +1105,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Giê-hô-va dùng bao nhiêu người để giải cứu Y-sơ-ra-ên?",
+  "content": "Đức Giê-hô-va dùng bao nhiêu người của Ghi-đê-ôn để giải cứu Y-sơ-ra-ên?",
   "options": [
    "Ba trăm người",
    "Năm nghìn người",
@@ -1205,7 +1205,7 @@
   "verseStart": 5,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Thiên sứ dặn điều gì về tóc của đứa trẻ sắp sinh?",
+  "content": "Thiên sứ dặn điều gì về tóc của Sam-sôn, đứa trẻ sắp sinh?",
   "options": [
    "Dao cạo không được đưa qua đầu",
    "Phải nhuộm tóc màu đỏ",
@@ -1855,7 +1855,7 @@
   "verseStart": 15,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Sáng hôm sau, Sa-mu-ên sợ điều gì?",
+  "content": "Sáng sau đêm nghe Chúa gọi, cậu bé Sa-mu-ên sợ điều gì?",
   "options": [
    "Gặp vua Sau-lơ",
    "Thuật lại khải tượng cho ông Hê-li",
@@ -1955,7 +1955,7 @@
   "verseStart": 1,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Sa-mu-ên mang theo gì để xức cho vua mới?",
+  "content": "Sa-mu-ên mang theo gì để xức dầu cho vua mới thay Sau-lơ?",
   "options": [
    "Một sừng đầy dầu",
    "Một bình nước giếng",
@@ -1980,7 +1980,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Giê-hô-va nhìn con người theo cách nào?",
+  "content": "Khi Sa-mu-ên chọn vua trong nhà Gie-sê, Chúa nói Ngài nhìn con người thế nào?",
   "options": [
    "Nhìn chiều cao",
    "Nhìn học vấn",
@@ -2230,7 +2230,7 @@
   "verseStart": 9,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Từ đó, Sau-lơ nhìn Đa-vít với cặp mắt thế nào?",
+  "content": "Sau khi nghe các phụ nữ hát khen Đa-vít, Sau-lơ nhìn ông thế nào?",
   "options": [
    "Ganh tị",
    "Biết ơn",

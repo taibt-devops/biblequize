@@ -166,7 +166,7 @@
   "verseStart": 10,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vua trao vật gì cho Ha-man để ông ban chiếu chỉ?",
+  "content": "Vua A-suê-ru trao vật gì cho Ha-man để ông ban chiếu chỉ?",
   "options": [
    "Áo triều của vua",
    "Vương trượng vàng",
@@ -258,7 +258,7 @@
   "verseStart": 1,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đêm vua không ngủ được, vua đã làm gì?",
+  "content": "Đêm vua A-suê-ru không ngủ được, vua đã làm gì?",
   "options": [
    "Mở tiệc rượu",
    "Đi dạo ngoài vườn",
@@ -327,7 +327,7 @@
   "verseStart": 26,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Lễ kỷ niệm việc người Do Thái được giải cứu có tên là gì?",
+  "content": "Lễ kỷ niệm việc người Do Thái được giải cứu thời hoàng hậu Ê-xơ-tê có tên là gì?",
   "options": [
    "Lều Tạm",
    "Ngũ Tuần",
@@ -442,7 +442,7 @@
   "verseStart": 12,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Mỗi thiếu nữ phải trau dồi sắc đẹp bao lâu trước khi vào chầu vua?",
+  "content": "Dưới triều vua A-suê-ru, mỗi thiếu nữ phải trau dồi sắc đẹp bao lâu trước khi vào chầu vua?",
   "options": [
    "Bảy ngày",
    "Hai năm",
@@ -557,7 +557,7 @@
   "verseStart": 11,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Theo luật, người vào nội cung không được mời chỉ được sống khi nào?",
+  "content": "Theo luật Ba Tư, người vào nội cung không được mời chỉ được sống khi nào?",
   "options": [
    "Mang theo lễ vật",
    "Có hoàng hậu xin giùm",

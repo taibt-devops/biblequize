@@ -55,7 +55,7 @@
   "verseStart": 29,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Luật gia hỏi tiếp Chúa Jêsus câu gì?",
+  "content": "Trước khi nghe ẩn dụ người Sa-ma-ri nhân lành, luật gia hỏi Chúa câu gì?",
   "options": [
    "Ai là thầy tôi?",
    "Ai là kẻ thù tôi?",
@@ -80,7 +80,7 @@
   "verseStart": 30,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người đi từ Giê-ru-sa-lem xuống Giê-ri-cô gặp chuyện gì?",
+  "content": "Trong ẩn dụ người Sa-ma-ri nhân lành, người đi xuống Giê-ri-cô gặp chuyện gì?",
   "options": [
    "Gặp bão lớn",
    "Rơi vào tay bọn cướp",
@@ -105,7 +105,7 @@
   "verseStart": 31,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Thầy tế lễ thấy nạn nhân thì làm gì?",
+  "content": "Trong ẩn dụ người Sa-ma-ri nhân lành, thầy tế lễ thấy nạn nhân thì làm gì?",
   "options": [
    "Đuổi theo bọn cướp",
    "Tránh qua bên kia đường",
@@ -130,7 +130,7 @@
   "verseStart": 33,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ai đã động lòng thương xót và giúp nạn nhân?",
+  "content": "Trong ẩn dụ của Chúa Jêsus, ai đã động lòng thương xót người bị cướp?",
   "options": [
    "Một người Pha-ri-si",
    "Một nhà buôn Ai Cập",
@@ -230,7 +230,7 @@
   "verseStart": 37,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Cuối cùng, Chúa Jêsus bảo luật gia làm gì?",
+  "content": "Kể xong ẩn dụ người Sa-ma-ri nhân lành, Chúa Jêsus bảo luật gia làm gì?",
   "options": [
    "Hãy về đọc thêm sách",
    "Hãy tránh xa người lạ",
@@ -305,7 +305,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người chăn trong ẩn dụ có bao nhiêu con chiên?",
+  "content": "Trong ẩn dụ con chiên lạc, người chăn có bao nhiêu con chiên?",
   "options": [
    "Mười hai con",
    "Một trăm con",
@@ -330,7 +330,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi mất một con chiên, người chăn làm gì?",
+  "content": "Trong ẩn dụ con chiên lạc, khi mất một con, người chăn làm gì?",
   "options": [
    "Chờ nó tự về",
    "Không quan tâm đến nó",
@@ -355,7 +355,7 @@
   "verseStart": 5,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Tìm được con chiên, người chăn làm gì?",
+  "content": "Trong ẩn dụ con chiên lạc, tìm được con chiên, người chăn làm gì?",
   "options": [
    "Vui mừng vác nó lên vai",
    "Đánh nó một trận",
@@ -380,7 +380,7 @@
   "verseStart": 6,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Về đến nhà, người chăn mời bạn hữu làm gì?",
+  "content": "Tìm lại được con chiên lạc, người chăn mời bạn hữu làm gì?",
   "options": [
    "Đi tìm chiên khác",
    "Mua chiên của mình",
@@ -405,7 +405,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Thiên đàng vui mừng về điều gì?",
+  "content": "Qua ẩn dụ con chiên lạc, Chúa nói thiên đàng vui mừng về điều gì?",
   "options": [
    "Một người giàu thêm",
    "Một tội nhân ăn năn",
@@ -430,7 +430,7 @@
   "verseStart": 12,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người con út xin cha điều gì?",
+  "content": "Trong ẩn dụ người con hoang đàng, người con út xin cha điều gì?",
   "options": [
    "Chia phần tài sản cho mình",
    "Cho đi học xa",
@@ -455,7 +455,7 @@
   "verseStart": 13,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ở nơi xa, người con út làm gì với tài sản?",
+  "content": "Ở xứ xa, người con hoang đàng làm gì với tài sản?",
   "options": [
    "Mua thêm đất",
    "Làm ăn giàu có",
@@ -480,7 +480,7 @@
   "verseStart": 15,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Hết tiền giữa nạn đói, người con phải làm việc gì?",
+  "content": "Hết tiền giữa nạn đói, người con hoang đàng phải làm việc gì?",
   "options": [
    "Làm thợ mộc",
    "Đánh cá",
@@ -505,7 +505,7 @@
   "verseStart": 16,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đói khổ, người con ước được ăn gì?",
+  "content": "Đói khổ, người con hoang đàng ước được ăn gì?",
   "options": [
    "Cá nướng",
    "Trái nho chín",
@@ -530,7 +530,7 @@
   "verseStart": 18,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi tỉnh ngộ, người con quyết định làm gì?",
+  "content": "Khi tỉnh ngộ, người con hoang đàng quyết định làm gì?",
   "options": [
    "Xin việc khác",
    "Trở về cùng cha",
@@ -555,7 +555,7 @@
   "verseStart": 20,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Thấy con từ đàng xa, người cha làm gì?",
+  "content": "Thấy người con hoang đàng từ đàng xa, người cha làm gì?",
   "options": [
    "Chạy ra ôm cổ và hôn",
    "Đóng cửa không tiếp",
@@ -580,7 +580,7 @@
   "verseStart": 22,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người cha bảo đầy tớ mang gì cho con?",
+  "content": "Người cha bảo đầy tớ mang gì cho đứa con hoang đàng trở về?",
   "options": [
    "Rơm và cỏ khô",
    "Vải thô và tro",
@@ -605,7 +605,7 @@
   "verseStart": 23,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người cha bảo làm thịt con vật gì để ăn mừng?",
+  "content": "Mừng con hoang đàng trở về, người cha bảo làm thịt con vật gì?",
   "options": [
    "Con cá lớn",
    "Con gà trống",
@@ -630,7 +630,7 @@
   "verseStart": 24,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người cha nói gì về đứa con trở về?",
+  "content": "Người cha nói gì về đứa con hoang đàng trở về?",
   "options": [
    "Đã mất mà nay tìm lại được",
    "Đã xa mà nay vẫn xa",
@@ -655,7 +655,7 @@
   "verseStart": 28,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nghe tiếng ăn mừng, người con cả phản ứng thế nào?",
+  "content": "Nghe tiếng mừng em hoang đàng trở về, người con cả phản ứng thế nào?",
   "options": [
    "Hát cùng mọi người",
    "Vui mừng chạy vào",
@@ -705,7 +705,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Hạt giống rơi dọc đường thì sao?",
+  "content": "Trong ẩn dụ người gieo giống, hạt rơi dọc đường thì sao?",
   "options": [
    "Chim đến ăn hết",
    "Mọc thành cây lớn",
@@ -730,7 +730,7 @@
   "verseStart": 6,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Hạt rơi trên đất đá chết khô vì sao?",
+  "content": "Trong ẩn dụ người gieo giống, hạt rơi trên đất đá chết khô vì sao?",
   "options": [
    "Vì bị người giẫm",
    "Vì bị ngập nước",
@@ -755,7 +755,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Hạt rơi giữa bụi gai thì sao?",
+  "content": "Trong ẩn dụ người gieo giống, hạt rơi giữa bụi gai thì sao?",
   "options": [
    "Mọc lên rất tốt",
    "Bị gai làm nghẹt ngòi",
@@ -780,7 +780,7 @@
   "verseStart": 8,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Hạt rơi trên đất tốt thì thế nào?",
+  "content": "Trong ẩn dụ người gieo giống, hạt rơi trên đất tốt thì thế nào?",
   "options": [
    "Biến thành đá",
    "Mọc thành cỏ dại",
@@ -805,7 +805,7 @@
   "verseStart": 9,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chúa Jêsus kết thúc ẩn dụ bằng lời nào?",
+  "content": "Chúa Jêsus kết thúc ẩn dụ người gieo giống bằng lời nào?",
   "options": [
    "Hãy mua đất tốt!",
    "Hãy đi gieo giống!",
@@ -830,7 +830,7 @@
   "verseStart": 19,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Hạt giống trong ẩn dụ tượng trưng cho gì?",
+  "content": "Hạt giống trong ẩn dụ người gieo giống tượng trưng cho gì?",
   "options": [
    "Lúa gạo",
    "Đạo của vương quốc thiên đàng",
@@ -855,7 +855,7 @@
   "verseStart": 22,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Điều gì làm đạo bị nghẹt ngòi như hạt giữa bụi gai?",
+  "content": "Trong ẩn dụ người gieo giống, điều gì làm đạo bị nghẹt ngòi như hạt giữa gai?",
   "options": [
    "Đi nhóm đều đặn",
    "Cầu nguyện mỗi ngày",
@@ -880,7 +880,7 @@
   "verseStart": 23,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đất tốt chỉ về người thế nào?",
+  "content": "Trong ẩn dụ người gieo giống, đất tốt chỉ về người thế nào?",
   "options": [
    "Người nghe, hiểu đạo và có kết quả",
    "Người trồng trọt giỏi",
@@ -930,7 +930,7 @@
   "verseStart": 32,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "So với các hạt giống khác, hạt cải thế nào?",
+  "content": "Trong ẩn dụ của Chúa Jêsus, hạt cải so với các hạt giống khác thế nào?",
   "options": [
    "Nặng nhất",
    "Lớn nhất",
@@ -955,7 +955,7 @@
   "verseStart": 32,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi mọc lên, cây cải trở nên thế nào?",
+  "content": "Trong ẩn dụ hạt cải, khi mọc lên cây cải trở nên thế nào?",
   "options": [
    "Nhỏ bé và yếu ớt",
    "Lớn nhất trong các loại rau",
@@ -980,7 +980,7 @@
   "verseStart": 32,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ai đến làm tổ trên cành cây cải?",
+  "content": "Trong ẩn dụ hạt cải, ai đến làm tổ trên cành cây?",
   "options": [
    "Đàn kiến",
    "Con sóc",
@@ -1080,7 +1080,7 @@
   "verseStart": 3,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Các cô dại thiếu thứ gì?",
+  "content": "Trong ẩn dụ mười trinh nữ, các cô dại thiếu thứ gì?",
   "options": [
    "Dầu cho đèn",
    "Áo cưới",
@@ -1105,7 +1105,7 @@
   "verseStart": 5,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì chàng rể đến trễ, các cô làm gì?",
+  "content": "Trong ẩn dụ mười trinh nữ, vì chàng rể đến trễ, các cô làm gì?",
   "options": [
    "Bỏ về nhà",
    "Ca hát suốt đêm",
@@ -1130,7 +1130,7 @@
   "verseStart": 6,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chàng rể đến vào lúc nào?",
+  "content": "Trong ẩn dụ mười trinh nữ, chàng rể đến vào lúc nào?",
   "options": [
    "Giữa trưa",
    "Nửa đêm",
@@ -1155,7 +1155,7 @@
   "verseStart": 8,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Các cô dại xin các cô khôn điều gì?",
+  "content": "Trong ẩn dụ mười trinh nữ, các cô dại xin các cô khôn điều gì?",
   "options": [
    "Cho mượn áo",
    "Chỉ đường đi",
@@ -1180,7 +1180,7 @@
   "verseStart": 10,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Trong lúc các cô dại đi mua dầu, điều gì xảy ra?",
+  "content": "Trong ẩn dụ mười trinh nữ, lúc các cô dại đi mua dầu thì điều gì xảy ra?",
   "options": [
    "Chàng rể đến và cửa đóng lại",
    "Chàng rể chờ họ về",
@@ -1230,7 +1230,7 @@
   "verseStart": 14,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Trước khi đi xa, ông chủ giao gì cho các đầy tớ?",
+  "content": "Trong ẩn dụ các ta-lâng, trước khi đi xa ông chủ giao gì cho đầy tớ?",
   "options": [
    "Bầy chiên",
    "Chìa khóa nhà",
@@ -1330,7 +1330,7 @@
   "verseStart": 21,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chủ khen hai đầy tớ làm lợi là đầy tớ thế nào?",
+  "content": "Trong ẩn dụ ta-lâng, chủ khen hai đầy tớ làm lợi là đầy tớ thế nào?",
   "options": [
    "Mạnh khỏe và nhanh nhẹn",
    "Vui tính và dễ thương",
@@ -1355,7 +1355,7 @@
   "verseStart": 21,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì trung tín trong việc nhỏ, đầy tớ được chủ hứa gì?",
+  "content": "Trong ẩn dụ ta-lâng, vì trung tín trong việc nhỏ, đầy tớ được chủ hứa gì?",
   "options": [
    "Được tự do ra đi",
    "Được cai quản nhiều",
@@ -1480,7 +1480,7 @@
   "verseStart": 2,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chúa Jêsus sai hai môn đồ đi dắt con vật gì về?",
+  "content": "Trước khi vào Giê-ru-sa-lem, Chúa Jêsus sai hai môn đồ dắt con vật gì về?",
   "options": [
    "Một con bò",
    "Một con lạc đà",
@@ -1505,7 +1505,7 @@
   "verseStart": 3,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nếu có ai hỏi, các môn đồ phải trả lời thế nào?",
+  "content": "Khi dắt lừa về cho Chúa, nếu ai hỏi, các môn đồ phải trả lời thế nào?",
   "options": [
    "Chúng tôi mượn một ngày",
    "Chúa cần đến chúng",
@@ -1530,7 +1530,7 @@
   "verseStart": 5,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Lời tiên tri nói vị vua đến thế nào?",
+  "content": "Khi Chúa vào Giê-ru-sa-lem, lời tiên tri nói vị vua đến thế nào?",
   "options": [
    "Kiêu hãnh, cưỡi ngựa",
    "Giận dữ, cầm gươm",
@@ -1580,7 +1580,7 @@
   "verseStart": 8,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Dân chúng trải gì trên đường đón Chúa?",
+  "content": "Khi Chúa Jêsus vào Giê-ru-sa-lem, dân chúng trải gì trên đường?",
   "options": [
    "Áo và cành cây",
    "Lúa mì",
@@ -1605,7 +1605,7 @@
   "verseStart": 9,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đoàn người hô vang lời gì?",
+  "content": "Khi Chúa Jêsus cưỡi lừa vào Giê-ru-sa-lem, đoàn người hô vang lời gì?",
   "options": [
    "Bình an cho Hê-rốt!",
    "Hãy về Ga-li-lê!",
@@ -1655,7 +1655,7 @@
   "verseStart": 11,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đoàn người giới thiệu Chúa Jêsus là ai?",
+  "content": "Khi Chúa vào Giê-ru-sa-lem, đoàn người giới thiệu Ngài là ai?",
   "options": [
    "Một người lính",
    "Đấng tiên tri Jêsus ở Na-xa-rét",
@@ -1705,7 +1705,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chúa Jêsus đứng dậy khỏi bàn và lấy gì quấn ngang lưng?",
+  "content": "Trước khi rửa chân môn đồ, Chúa Jêsus lấy gì quấn ngang lưng?",
   "options": [
    "Một cái khăn",
    "Một dải lụa vàng",
@@ -1730,7 +1730,7 @@
   "verseStart": 5,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Jêsus đã làm gì cho các môn đồ?",
+  "content": "Trong bữa ăn tối cuối cùng, Đức Chúa Jêsus đã làm gì cho các môn đồ?",
   "options": [
    "Gội đầu cho họ",
    "Rửa chân cho họ",
@@ -1805,7 +1805,7 @@
   "verseStart": 9,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nghe vậy, Phi-e-rơ xin Chúa rửa gì nữa?",
+  "content": "Khi Chúa rửa chân, Phi-e-rơ xin Ngài rửa thêm gì?",
   "options": [
    "Cả tay và đầu",
    "Chỉ một chân",
@@ -1880,7 +1880,7 @@
   "verseStart": 17,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Biết những điều này và làm theo thì được gì?",
+  "content": "Sau khi rửa chân môn đồ, Chúa nói biết và làm theo thì được gì?",
   "options": [
    "Được làm thầy",
    "Được giàu",
@@ -1930,7 +1930,7 @@
   "verseStart": 15,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chúa muốn ăn lễ này với môn đồ trước khi điều gì xảy ra?",
+  "content": "Chúa Jêsus muốn ăn lễ Vượt Qua với môn đồ trước khi điều gì xảy ra?",
   "options": [
    "Trước khi Ngài đi xa",
    "Trước khi lên núi",
@@ -1955,7 +1955,7 @@
   "verseStart": 17,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi cầm chén, Chúa bảo các môn đồ làm gì?",
+  "content": "Trong Tiệc Thánh đầu tiên, khi cầm chén, Chúa bảo môn đồ làm gì?",
   "options": [
    "Đem bán đi",
    "Phân phát cho nhau",
@@ -1980,7 +1980,7 @@
   "verseStart": 19,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi lấy bánh, Chúa Jêsus làm gì trước khi phân phát?",
+  "content": "Trong Tiệc Thánh đầu tiên, khi lấy bánh, Chúa Jêsus làm gì trước khi phân phát?",
   "options": [
    "Tạ ơn rồi bẻ ra",
    "Cất đi để dành",
@@ -2005,7 +2005,7 @@
   "verseStart": 19,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chúa Jêsus nói bánh là gì?",
+  "content": "Trong Tiệc Thánh đầu tiên, Chúa Jêsus nói bánh là gì?",
   "options": [
    "Thân thể Ngài",
    "Bánh lễ năm xưa",
@@ -2030,7 +2030,7 @@
   "verseStart": 19,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chúa Jêsus dặn các môn đồ làm điều này để làm gì?",
+  "content": "Khi lập Tiệc Thánh, Chúa Jêsus dặn các môn đồ làm điều này để làm gì?",
   "options": [
    "Để có sức khỏe",
    "Để nhớ đến Ngài",
@@ -2055,7 +2055,7 @@
   "verseStart": 20,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Chúa Jêsus nói chén là gì?",
+  "content": "Trong Tiệc Thánh đầu tiên, Chúa Jêsus nói chén là gì?",
   "options": [
    "Rượu mừng tiệc cưới",
    "Nước từ giếng Gia-cốp",

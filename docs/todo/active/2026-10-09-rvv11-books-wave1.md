@@ -19,7 +19,7 @@
 - RVB-4 Lên prod
   - Status: [x] DONE 09/10 · commit `1e940782`, BE `sha256:0be255f8…` (rollback `sha256:88207c60…`) · seed một lần chỉ `rvv11_books_quiz.json`, `sync-stale=false`: inserted=466, dupHash=0, staleDeleted=0 · 848/848 hash khớp (toàn `seed:json`, đang bật, không lẫn sách/ngôn ngữ khác) → sao lưu `questions_bak_20261009_rvv11_w1` (id, is_active) rồi `is_active=0` cho 848 hàng
   - Sau khi tắt (đang bật / Dễ cốt lõi / RVV11): Sáng Thế Ký Dễ 156/153, TB 67/66, Khó 41/41 · Ma-thi-ơ 119/119, 79/76, 33/33 · Mác 42/41, 45/45, 29/29 · Lu-ca 111/111, 53/52, 32/32 · Giăng 59/59, 59/59, 33/33. Phần lẻ còn lại: Giáo lý căn bản (`bible_basics`), 3 câu nguồn "Kinh Thánh" của Sáng Thế Ký, 1 câu Lu-ca trong `isaiah_quiz.json` — để nguyên
-  - Bật lại nếu cần: `UPDATE questions q JOIN questions_bak_20261009_rvv11_w1 b ON b.id = q.id SET q.is_active = b.is_active;`
+  - Câu cũ đã xóa hẳn 10/10 (RVB-13); bảng sao lưu nầy đã bỏ, khôi phục từ dump `backups/questions-old-vi-deleted-20261010.sql.gz`
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-5 Các đợt sau
@@ -44,7 +44,7 @@
   - Status: [x] DONE 10/10 · commit `e72acd65`, BE `sha256:840b3be8…` (rollback `34fb410c…`) · seed một lần chỉ `rvv11_books_quiz.json`, `sync-stale=false`: inserted=662, updated=466 (câu đợt 1, nội dung không đổi), dupHash=0, staleDeleted=0 · 1.370/1.370 hash khớp (toàn `seed:json`, đang bật, không lẫn sách/ngôn ngữ khác)
   - Thêm 30 câu Gia-cơ cũ (Dễ/TB/Khó 10/10/10, tạo 29/04–07/06, kiểu "Gia-cơ 1:1: …") không thuộc file seed nào còn trong repo — mồ côi từ bản `james_quiz.json` trước đó, prod tắt `sync-stale` nên còn sót → tắt cùng đợt; hash thêm vào `retired_hashes.txt` (2.248)
   - Sao lưu `questions_bak_20261010_rvv11_w2` (id, is_active) rồi `is_active=0` cho 1.400 hàng · câu đang bật nay đúng bằng Dễ cốt lõi + bộ RVV11 của từng sách (số ở RVB-7), cộng 4 câu Giáo lý căn bản (Ê-phê-sô TB 1, Thi Thiên TB 2, Rô-ma Dễ 1) để nguyên · `GET /api/questions` Ru-tơ/Rô-ma/Thi Thiên/Xuất Ai Cập Ký × 3 mức đều trả câu RVV11
-  - Bật lại nếu cần: `UPDATE questions q JOIN questions_bak_20261010_rvv11_w2 b ON b.id = q.id SET q.is_active = b.is_active;`
+  - Câu cũ đã xóa hẳn 10/10 (RVB-13); bảng sao lưu nầy đã bỏ, khôi phục từ dump `backups/questions-old-vi-deleted-20261010.sql.gz`
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-9 Đợt 3: vòng 2, phần Cựu Ước (11 sách)
@@ -56,7 +56,7 @@
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-10 Đợt 3 lên prod
   - Status: [x] DONE 10/10 · commit `2c9aca83`, BE `sha256:f7310dc0…` (rollback `840b3be8…`) · seed một lần: inserted=436, dupHash=0, staleDeleted=0 · 1.079/1.079 hash khớp (toàn `seed:json` tiếng Việt đang bật; 1 hàng là câu Lu-ca), không có hàng mồ côi ở 11 sách và không còn câu cũ `seed:json` nào sót ở 18 sách vòng 1 · sao lưu `questions_bak_20261010_rvv11_w3` rồi `is_active=0` cho 1.079 hàng · câu đang bật = Dễ cốt lõi + bộ RVV11 ở cả 11 sách · `GET /api/questions` Phục Truyền/Ê-sai/Gióp × 3 mức trả câu RVV11
-  - Bật lại nếu cần: `UPDATE questions q JOIN questions_bak_20261010_rvv11_w3 b ON b.id = q.id SET q.is_active = b.is_active;`
+  - Câu cũ đã xóa hẳn 10/10 (RVB-13); bảng sao lưu nầy đã bỏ, khôi phục từ dump `backups/questions-old-vi-deleted-20261010.sql.gz`
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-11 Đợt 4: vòng 2, phần Tân Ước (11 sách) — xong vòng 2
@@ -66,8 +66,16 @@
   - **Spec strategy**: [x] (c) [no-spec-impact]
 - RVB-12 Đợt 4 lên prod
   - Status: [x] DONE 10/10 · commit `fe1a956c`, BE `sha256:98a79571…` (rollback `f7310dc0…`) · seed một lần: inserted=359, dupHash=0, staleDeleted=0 · 540/540 hash khớp, không có hàng mồ côi (còn 3 câu Giáo lý căn bản: 1 Cô-rinh-tô Dễ, 2 Ti-mô-thê TB, Cô-lô-se TB — để nguyên) · sao lưu `questions_bak_20261010_rvv11_w4` rồi `is_active=0` cho 540 hàng · câu đang bật = Dễ cốt lõi + bộ RVV11 (+ 3 câu Giáo lý căn bản)
-  - Bật lại nếu cần: `UPDATE questions q JOIN questions_bak_20261010_rvv11_w4 b ON b.id = q.id SET q.is_active = b.is_active;`
+  - Câu cũ đã xóa hẳn 10/10 (RVB-13); bảng sao lưu nầy đã bỏ, khôi phục từ dump `backups/questions-old-vi-deleted-20261010.sql.gz`
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-13 Xóa hẳn câu tiếng Việt cũ đã tắt (vòng 1–2)
+  - Status: [x] DONE 10/10 · user: "các câu cũ xóa đi, vì nó vừa là sách cũ vừa nội dung câu hỏi không hay", chọn "Xóa hẳn, có sao lưu" · xóa mọi hàng `seed:json` tiếng Việt đang tắt, không phải RVV11, không thuộc chuyện Dễ cốt lõi: 3.892 câu (gồm 3.857 câu của 4 đợt và các câu cũ tắt từ trước) · dump `backups/questions-old-vi-deleted-20261010.sql.gz` (6,4 MB: id, questions, answers, user_question_history, quiz_session_questions) · `questions` 13.223 → 9.331, `answers` 916 → 559, `user_question_history` 415 → 41, `quiz_session_questions` 146.232 → 55.319 (CASCADE) · các tham chiếu không khóa ngoại (bộ câu Nhóm, phòng chơi, tiến độ sách) đã kiểm: không dùng id nào bị xóa · bỏ 4 bảng `questions_bak_*_rvv11_w*` · để nguyên 25 câu tiếng Anh đang tắt và câu do Nhóm tạo
+  - Khôi phục nếu cần: nạp dump vào DB (tạo các bảng `del20261010_*`), rồi `INSERT INTO questions SELECT * FROM del20261010_questions` và tương tự cho 3 bảng con
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-14 Câu hỏi phải tự đứng được (thêm ngữ cảnh)
+  - Status: [ ] TODO lên prod · user 10/10 gửi ảnh câu "Trở về thành, các môn đồ cùng nhau làm gì?": "đọc không hiểu nổi vì thiếu ngữ cảnh" · sửa 427 câu Dễ cốt lõi và 233 câu bộ theo sách (cả Lê-vi Ký chưa xuất): nêu ai/ở đâu/lúc nào, câu lời dạy nêu nguồn ("Thư Rô-ma nói…", "Theo luật Môi-se…") · luật mới ở README `content/easy-core/` (luật 8) và `content/books/` (luật 8) · chỉ đổi chữ câu hỏi, giữ đáp án/phương án/trích dẫn · 47 test xanh
+  - Lên prod: seed một lần cả `easy_core_quiz.json` và `rvv11_books_quiz.json` (`sync-stale=false`) → id mới cho câu đã sửa; dump rồi xóa các hàng cũ của hai bộ mà nội dung không còn trong seed
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]

@@ -2,6 +2,16 @@
 
 ---
 
+## 2026-10-10 — Xóa hẳn câu tiếng Việt cũ (có sao lưu); câu hỏi phải tự đứng được
+
+- **Bối cảnh:** từ 09/10 câu cũ của sách đã viết lại chỉ bị tắt (`is_active=0`). User 10/10: "các câu cũ xóa đi, vì nó vừa là sách cũ vừa nội dung câu hỏi không hay". Cùng ngày user gửi ảnh câu Dễ "Trở về thành, các môn đồ cùng nhau làm gì?" và nhận xét "đọc không hiểu nổi vì thiếu ngữ cảnh": người chơi thấy từng câu riêng lẻ, không thấy tên chuyện hay tên sách.
+- **Quyết định:**
+  - Câu cũ **xóa hẳn**, kèm dump sao lưu trong `backups/` trên máy prod (user chọn "Xóa hẳn, có sao lưu" thay vì giữ tắt). Lịch sử trả lời của các câu đó xóa theo (khóa ngoại CASCADE). Đã làm cho 40 sách vòng 1–2 ngày 10/10; từ vòng 3 mỗi đợt xóa luôn sau khi seed. Thay cho ý "tắt, không xóa" của quyết định 2026-10-09 phía dưới.
+  - Mỗi câu hỏi phải nói đủ ai, ở đâu, lúc nào; câu trích lời dạy phải nêu nguồn ("Thư Rô-ma nói…", "Theo luật Môi-se…"). Đã sửa 427 câu Dễ cốt lõi và 233 câu bộ theo sách. Luật ghi ở README của `content/easy-core/` và `content/books/`.
+  - Sửa chữ câu hỏi làm đổi id (id tính từ nội dung) nên hàng cũ còn lại sau khi seed; các biến thể cũ đó cũng dump rồi xóa.
+
+---
+
 ## 2026-10-09 — Học Thuộc dùng toàn văn RVV11 (thay BTT 1926 tạm dùng)
 
 - **Bối cảnh:** Học Thuộc dùng tạm Bản Truyền Thống 1926 (public domain) từ 15/09 vì chưa có file bản Hiệu Đính; câu hỏi mới nay đều trích RVV11 (Bản Truyền Thống Hiệu Đính 2010). Quyền dùng nguyên văn bản Hiệu Đính user đã xác nhận ở D2 (2026-09-15). Trên máy prod hiện tại `bible_verses` còn trống nên Học Thuộc đang ẩn với người dùng.

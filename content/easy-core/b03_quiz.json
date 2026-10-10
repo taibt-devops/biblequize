@@ -5,7 +5,7 @@
   "verseStart": 11,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đêm ấy, Gia-cốp lấy gì gối đầu để ngủ?",
+  "content": "Đêm Gia-cốp mơ thấy chiếc thang, ông lấy gì gối đầu để ngủ?",
   "options": [
    "Một chiếc áo choàng",
    "Một bó lúa",
@@ -55,7 +55,7 @@
   "verseStart": 12,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ai đi lên đi xuống trên chiếc thang trong giấc mơ?",
+  "content": "Trong giấc mơ của Gia-cốp, ai đi lên đi xuống trên chiếc thang?",
   "options": [
    "Các vua chúa",
    "Các thiên sứ của Đức Chúa Trời",
@@ -105,7 +105,7 @@
   "verseStart": 16,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Thức dậy, Gia-cốp nói gì về nơi mình vừa ngủ?",
+  "content": "Thức dậy sau giấc mơ chiếc thang, Gia-cốp nói gì về nơi ấy?",
   "options": [
    "Nơi này là quê nhà",
    "Nơi này thật lạnh lẽo",
@@ -130,7 +130,7 @@
   "verseStart": 18,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Sáng hôm sau, Gia-cốp làm gì với hòn đá gối đầu?",
+  "content": "Sau giấc mơ chiếc thang, Gia-cốp làm gì với hòn đá gối đầu?",
   "options": [
    "Dựng làm trụ và đổ dầu lên",
    "Mang về làm quà",
@@ -155,7 +155,7 @@
   "verseStart": 19,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Gia-cốp đặt tên nơi ấy là gì?",
+  "content": "Gia-cốp đặt tên nơi ông mơ thấy chiếc thang là gì?",
   "options": [
    "Bết-lê-hem",
    "Bê-tên",
@@ -205,7 +205,7 @@
   "verseStart": 24,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đêm ấy, khi Gia-cốp ở lại một mình, điều gì xảy ra?",
+  "content": "Trước khi gặp lại Ê-sau, đêm Gia-cốp ở lại một mình, điều gì xảy ra?",
   "options": [
    "Một con sư tử tấn công ông",
    "Có một người vật lộn với ông",
@@ -230,7 +230,7 @@
   "verseStart": 25,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người ấy đánh vào đâu khiến Gia-cốp bị thương?",
+  "content": "Người vật lộn với Gia-cốp đánh vào đâu khiến ông bị thương?",
   "options": [
    "Cái đầu",
    "Cánh tay",
@@ -255,7 +255,7 @@
   "verseStart": 26,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Gia-cốp không để người ấy đi nếu chưa được gì?",
+  "content": "Gia-cốp không để người vật lộn với mình đi nếu chưa được gì?",
   "options": [
    "Được ban phước",
    "Được tặng đất",
@@ -630,7 +630,7 @@
   "verseStart": 14,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Trước khi được gọi đến gặp vua, Giô-sép đang ở đâu?",
+  "content": "Trước khi được gọi đến giải mộng cho Pha-ra-ôn, Giô-sép đang ở đâu?",
   "options": [
    "Ở nhà cha mình",
    "Trong ngục",
@@ -730,7 +730,7 @@
   "verseStart": 29,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Bảy con bò béo và bảy bông lúa chắc chỉ về điều gì?",
+  "content": "Trong giấc mộng của Pha-ra-ôn, bảy con bò béo và bảy bông lúa chắc chỉ về gì?",
   "options": [
    "Bảy năm được mùa dư dật",
    "Bảy trận chiến thắng",
@@ -755,7 +755,7 @@
   "verseStart": 27,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Bảy con bò gầy và bảy bông lúa lép chỉ về điều gì?",
+  "content": "Trong giấc mộng của Pha-ra-ôn, bảy con bò gầy và bảy bông lúa lép chỉ về gì?",
   "options": [
    "Bảy năm chiến tranh",
    "Bảy năm bệnh dịch",
@@ -830,7 +830,7 @@
   "verseStart": 57,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi nạn đói đến, các nước khác kéo đến Ai Cập để làm gì?",
+  "content": "Khi nạn đói đến thời Giô-sép, các nước khác kéo đến Ai Cập làm gì?",
   "options": [
    "Đánh chiếm Ai Cập",
    "Xin làm lính",
@@ -1080,7 +1080,7 @@
   "verseStart": 28,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Cuối cùng, Gia-cốp quyết định điều gì?",
+  "content": "Biết Giô-sép còn sống, cuối cùng Gia-cốp quyết định điều gì?",
   "options": [
    "Sai người khác đi thay",
    "Đi thăm Giô-sép trước khi qua đời",
@@ -1155,7 +1155,7 @@
   "verseStart": 13,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì sao Pha-ra-ôn nhiều lần không cho dân đi?",
+  "content": "Vì sao Pha-ra-ôn nhiều lần không cho dân Y-sơ-ra-ên đi?",
   "options": [
    "Vì vua đi vắng",
    "Vì vua bị bệnh",
@@ -1330,7 +1330,7 @@
   "verseStart": 5,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Tai vạ cuối cùng là gì?",
+  "content": "Tai vạ cuối cùng giáng trên xứ Ai Cập là gì?",
   "options": [
    "Các con trưởng nam phải chết",
    "Mặt trời không mọc",
@@ -1405,7 +1405,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Họ lấy máu chiên con bôi ở đâu?",
+  "content": "Trong đêm Vượt Qua, dân Y-sơ-ra-ên bôi máu chiên con ở đâu?",
   "options": [
    "Trên trán mỗi người",
    "Trên khung cửa ra vào",
@@ -1455,7 +1455,7 @@
   "verseStart": 8,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đêm Vượt Qua, họ ăn thịt chiên với gì?",
+  "content": "Đêm Vượt Qua, dân Y-sơ-ra-ên ăn thịt chiên với gì?",
   "options": [
    "Trái vả và nho",
    "Cá nướng và rượu",
@@ -1480,7 +1480,7 @@
   "verseStart": 11,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Họ phải ăn bữa Vượt Qua như thế nào?",
+  "content": "Dân Y-sơ-ra-ên phải ăn bữa Vượt Qua đầu tiên như thế nào?",
   "options": [
    "Ngồi chờ đến sáng",
    "Nằm nghỉ thong thả",
@@ -1505,7 +1505,7 @@
   "verseStart": 14,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Trời bảo họ giữ ngày Vượt Qua để làm gì?",
+  "content": "Đức Chúa Trời bảo dân Y-sơ-ra-ên giữ ngày Vượt Qua để làm gì?",
   "options": [
    "Mừng vua lên ngôi",
    "Mừng xây xong thành",
@@ -1530,7 +1530,7 @@
   "verseStart": 39,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì sao bánh họ mang theo không có men?",
+  "content": "Khi ra khỏi Ai Cập, vì sao bánh dân Y-sơ-ra-ên mang theo không có men?",
   "options": [
    "Vì phải rời Ai Cập gấp rút",
    "Vì men quá đắt",
@@ -1580,7 +1580,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Giê-hô-va hứa ban gì từ trời cho dân?",
+  "content": "Trong hoang mạc, Đức Giê-hô-va hứa ban gì từ trời cho dân Y-sơ-ra-ên?",
   "options": [
    "Mưa đá",
    "Mưa bánh",
@@ -1605,7 +1605,7 @@
   "verseStart": 13,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Buổi chiều, loài chim nào bay đến phủ khắp trại quân?",
+  "content": "Trong hoang mạc, buổi chiều loài chim nào bay đến phủ khắp trại Y-sơ-ra-ên?",
   "options": [
    "Chim cút",
    "Chim đại bàng",
@@ -2080,7 +2080,7 @@
   "verseStart": 2,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "A-rôn bảo dân đem gì đến để đúc tượng?",
+  "content": "A-rôn bảo dân đem gì đến để đúc tượng bò con?",
   "options": [
    "Những thanh gươm sắt",
    "Những tấm đồng",
@@ -2105,7 +2105,7 @@
   "verseStart": 4,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ai đã đúc tượng theo lời dân chúng?",
+  "content": "Khi Môi-se ở trên núi lâu chưa xuống, ai đã đúc tượng theo lời dân?",
   "options": [
    "Ca-lép",
    "A-rôn",

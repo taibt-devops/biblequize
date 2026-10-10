@@ -28,7 +28,7 @@
   "verseStart": 5,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Khi bão nổi lên, các thủy thủ làm gì để tàu nhẹ hơn?",
+  "content": "Khi bão nổi lên, các thủy thủ trên tàu chở Giô-na làm gì để tàu nhẹ hơn?",
   "options": [
    "Ném đồ đạc xuống biển",
    "Hạ buồm xuống",
@@ -74,7 +74,7 @@
   "verseStart": 7,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Các thủy thủ tìm ra người gây ra tai họa bằng cách nào?",
+  "content": "Các thủy thủ trên tàu chở Giô-na tìm ra người gây ra tai họa bằng cách nào?",
   "options": [
    "Cầu hỏi thần",
    "Bắt thăm",
@@ -143,7 +143,7 @@
   "verseStart": 16,
   "difficulty": "medium",
   "type": "multiple_choice_single",
-  "content": "Khi biển đã yên, các thủy thủ làm gì?",
+  "content": "Khi biển đã yên sau khi Giô-na bị ném xuống, các thủy thủ làm gì?",
   "options": [
    "Quay về nhà",
    "Dâng tế lễ và hứa nguyện với Chúa",

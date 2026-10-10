@@ -55,7 +55,7 @@
   "verseStart": 5,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Những người theo Đa-vít khuyên ông làm gì?",
+  "content": "Trong hang đá, những người theo Đa-vít khuyên ông làm gì với Sau-lơ?",
   "options": [
    "Mời vua ăn tiệc",
    "Chạy trốn ngay",
@@ -180,7 +180,7 @@
   "verseStart": 17,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nghe Đa-vít nói, Sau-lơ đã làm gì?",
+  "content": "Biết Đa-vít đã tha mạng mình trong hang, Sau-lơ đã làm gì?",
   "options": [
    "Bỏ đi không nói gì",
    "Cười nhạo Đa-vít",
@@ -205,7 +205,7 @@
   "verseStart": 18,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Sau-lơ nhận xét Đa-vít thế nào?",
+  "content": "Khi được Đa-vít tha mạng, Sau-lơ nhận xét Đa-vít thế nào?",
   "options": [
    "Con thật yếu đuối",
    "Con là kẻ thù của cha",
@@ -280,7 +280,7 @@
   "verseStart": 5,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Chúa Trời bảo Sa-lô-môn điều gì?",
+  "content": "Hiện ra trong giấc chiêm bao, Đức Chúa Trời bảo Sa-lô-môn điều gì?",
   "options": [
    "Hãy xây đền thờ ngay",
    "Hãy xin điều con muốn Ta ban",
@@ -380,7 +380,7 @@
   "verseStart": 22,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Hai người phụ nữ đến trước vua tranh nhau điều gì?",
+  "content": "Hai người phụ nữ đến trước vua Sa-lô-môn tranh nhau điều gì?",
   "options": [
    "Một mảnh đất",
    "Một đứa bé còn sống",
@@ -405,7 +405,7 @@
   "verseStart": 24,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Để tìm ra người mẹ thật, vua truyền đem đến vật gì?",
+  "content": "Để tìm ra người mẹ thật, vua Sa-lô-môn truyền đem đến vật gì?",
   "options": [
    "Một cuốn sách",
    "Một cái cân",
@@ -430,7 +430,7 @@
   "verseStart": 25,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vua ra lệnh làm gì với đứa bé?",
+  "content": "Khi hai người phụ nữ tranh một đứa bé, vua Sa-lô-môn ra lệnh làm gì?",
   "options": [
    "Chặt ra làm hai",
    "Giao cho thầy tế lễ",
@@ -455,7 +455,7 @@
   "verseStart": 26,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Người mẹ thật đã phản ứng thế nào?",
+  "content": "Khi vua Sa-lô-môn truyền chặt đứa bé làm hai, người mẹ thật làm gì?",
   "options": [
    "Im lặng không nói",
    "Xin vua đừng giết đứa bé",
@@ -480,7 +480,7 @@
   "verseStart": 28,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nghe vua xử án, dân Y-sơ-ra-ên nghĩ gì?",
+  "content": "Nghe vua Sa-lô-môn xử án hai người mẹ, dân Y-sơ-ra-ên nghĩ gì?",
   "options": [
    "Chê vua quá độc ác",
    "Sợ vua sẽ giết trẻ con",
@@ -555,7 +555,7 @@
   "verseStart": 7,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Trong lúc xây đền thờ, có điều gì đặc biệt?",
+  "content": "Trong lúc Sa-lô-môn xây đền thờ, có điều gì đặc biệt?",
   "options": [
    "Thợ chỉ làm ban đêm",
    "Không dùng chút gỗ nào",
@@ -580,7 +580,7 @@
   "verseStart": 22,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Bên trong đền thờ được bọc bằng gì?",
+  "content": "Bên trong đền thờ Sa-lô-môn xây được bọc bằng gì?",
   "options": [
    "Bạc trắng",
    "Đá cẩm thạch",
@@ -630,7 +630,7 @@
   "verseStart": 6,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Các thầy tế lễ đặt Hòm Giao Ước ở đâu trong đền thờ?",
+  "content": "Các thầy tế lễ đặt Hòm Giao Ước ở đâu trong đền thờ Sa-lô-môn?",
   "options": [
    "Trên mái",
    "Nơi Chí Thánh",
@@ -655,7 +655,7 @@
   "verseStart": 10,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi các thầy tế lễ ra khỏi Nơi Thánh, điều gì tràn đầy đền thờ?",
+  "content": "Trong ngày khánh thành đền thờ Sa-lô-môn, điều gì tràn đầy đền thờ?",
   "options": [
    "Một đàn chim",
    "Nước ngập",
@@ -855,7 +855,7 @@
   "verseStart": 12,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Bà góa chỉ còn lại những gì để ăn?",
+  "content": "Bà góa ở Sa-rép-ta chỉ còn lại những gì để ăn?",
   "options": [
    "Một bầy chiên",
    "Một nắm bột và chút dầu",
@@ -905,7 +905,7 @@
   "verseStart": 14,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đức Giê-hô-va hứa gì với bà góa?",
+  "content": "Qua Ê-li, Đức Giê-hô-va hứa gì với bà góa ở Sa-rép-ta?",
   "options": [
    "Bà sẽ có nhà mới",
    "Bà sẽ giàu có",
@@ -930,7 +930,7 @@
   "verseStart": 16,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Lời hứa với bà góa có thành sự thật không?",
+  "content": "Lời hứa bột và dầu cho bà góa Sa-rép-ta có thành sự thật không?",
   "options": [
    "Có, bột và dầu không hết",
    "Không, bà phải đi xin ăn",
@@ -1030,7 +1030,7 @@
   "verseStart": 20,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Cuộc thách đấu diễn ra trên núi nào?",
+  "content": "Cuộc thách đấu giữa Ê-li và các tiên tri Ba-anh diễn ra trên núi nào?",
   "options": [
    "Núi Cạt-mên",
    "Núi A-ra-rát",
@@ -1180,7 +1180,7 @@
   "verseStart": 39,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Thấy lửa giáng xuống, dân chúng tung hô điều gì?",
+  "content": "Thấy lửa giáng xuống trên núi Cạt-mên, dân chúng tung hô điều gì?",
   "options": [
    "Giê-hô-va là Đức Chúa Trời!",
    "Ê-li là thần!",
@@ -1205,7 +1205,7 @@
   "verseStart": 44,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Đến lần thứ bảy, người đầy tớ thấy gì từ phía biển?",
+  "content": "Khi Ê-li cầu mưa, đến lần thứ bảy người đầy tớ thấy gì từ phía biển?",
   "options": [
    "Một con tàu lớn",
    "Một ngọn lửa",
@@ -1230,7 +1230,7 @@
   "verseStart": 45,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Điều gì chấm dứt cơn hạn hán?",
+  "content": "Sau khi Ê-li cầu nguyện, điều gì chấm dứt cơn hạn hán?",
   "options": [
    "Nước sông dâng lên",
    "Một cơn mưa rất to",
@@ -1405,7 +1405,7 @@
   "verseStart": 12,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Thấy thầy được đem đi, Ê-li-sê kêu lên thế nào?",
+  "content": "Thấy Ê-li được đem lên trời, Ê-li-sê kêu lên thế nào?",
   "options": [
    "Lạy vua!",
    "Thầy ơi, đợi con!",
@@ -1530,7 +1530,7 @@
   "verseStart": 10,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vợ chồng bà xây gì cho Ê-li-sê nghỉ lại?",
+  "content": "Vợ chồng người phụ nữ Su-nem xây gì cho Ê-li-sê nghỉ lại?",
   "options": [
    "Một bàn thờ lớn",
    "Một phòng nhỏ trên sân thượng",
@@ -1555,7 +1555,7 @@
   "verseStart": 16,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ê-li-sê hứa với bà điều gì?",
+  "content": "Ê-li-sê hứa với người phụ nữ Su-nem điều gì?",
   "options": [
    "Bà sẽ có nhà mới",
    "Chồng bà sẽ làm quan",
@@ -1605,7 +1605,7 @@
   "verseStart": 22,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi đứa con chết, người mẹ đã làm gì?",
+  "content": "Khi con trai chết, người phụ nữ Su-nem đã làm gì?",
   "options": [
    "Mời thầy thuốc",
    "Chôn con ngay",
@@ -1630,7 +1630,7 @@
   "verseStart": 29,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ê-li-sê sai đầy tớ đặt vật gì trên mặt đứa trẻ?",
+  "content": "Ê-li-sê sai đầy tớ đặt vật gì trên mặt con trai bà Su-nem?",
   "options": [
    "Một bình dầu",
    "Cây gậy của ông",
@@ -1655,7 +1655,7 @@
   "verseStart": 33,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vào phòng có đứa trẻ, Ê-li-sê làm gì trước tiên?",
+  "content": "Vào phòng có con trai bà Su-nem đã chết, Ê-li-sê làm gì trước tiên?",
   "options": [
    "Đóng cửa và cầu nguyện với Đức Giê-hô-va",
    "Gọi mọi người vào xem",
@@ -1680,7 +1680,7 @@
   "verseStart": 35,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Dấu hiệu nào cho thấy đứa trẻ đã sống lại?",
+  "content": "Dấu hiệu nào cho thấy con trai bà Su-nem đã sống lại?",
   "options": [
    "Chạy ra đồng",
    "Đứng dậy hát ca",
@@ -1705,7 +1705,7 @@
   "verseStart": 36,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ê-li-sê nói gì khi gọi người mẹ vào?",
+  "content": "Khi đứa trẻ sống lại, Ê-li-sê nói gì với người mẹ Su-nem?",
   "options": [
    "Hãy chôn con bà đi!",
    "Con bà đã đi rồi!",
@@ -1855,7 +1855,7 @@
   "verseStart": 11,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Lúc đầu, Na-a-man phản ứng thế nào với lời dặn ấy?",
+  "content": "Lúc đầu, Na-a-man phản ứng thế nào khi được bảo tắm sông Giô-đanh?",
   "options": [
    "Trả tiền cho nhà tiên tri",
    "Khóc vì cảm động",
@@ -2055,7 +2055,7 @@
   "verseStart": 8,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Thầy tế lễ thượng phẩm tìm được gì trong đền thờ?",
+  "content": "Thời vua Giô-si-a, thầy tế lễ thượng phẩm tìm được gì trong đền thờ?",
   "options": [
    "Một vương miện",
    "Một rương vàng",
@@ -2105,7 +2105,7 @@
   "verseStart": 13,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì sao vua lo sợ khi nghe sách luật pháp?",
+  "content": "Vì sao vua Giô-si-a lo sợ khi nghe đọc sách luật pháp?",
   "options": [
    "Vì sách bị rách",
    "Vì sách bị đánh cắp",
@@ -2155,7 +2155,7 @@
   "verseStart": 3,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vua và toàn dân đã cam kết điều gì?",
+  "content": "Vua Giô-si-a và toàn dân đã cam kết điều gì?",
   "options": [
    "Bầu một vua khác",
    "Hết lòng tuân giữ giao ước của Chúa",
@@ -2330,7 +2330,7 @@
   "verseStart": 6,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Vì sao tường thành nhanh chóng xây được phân nửa?",
+  "content": "Thời Nê-hê-mi, vì sao tường thành Giê-ru-sa-lem nhanh chóng xây được phân nửa?",
   "options": [
    "Vì dân chúng hết lòng làm việc",
    "Vì thuê thợ ngoại quốc",
@@ -2355,7 +2355,7 @@
   "verseStart": 9,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Ngoài cầu nguyện, họ làm gì để chống lại kẻ thù?",
+  "content": "Ngoài cầu nguyện, dân của Nê-hê-mi làm gì để chống lại kẻ thù?",
   "options": [
    "Xây hầm trú ẩn",
    "Ngừng xây tường",
@@ -2380,7 +2380,7 @@
   "verseStart": 17,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Khi bị đe dọa, những người khuân vác vật liệu làm gì?",
+  "content": "Khi xây tường thành bị đe dọa, những người khuân vác thời Nê-hê-mi làm gì?",
   "options": [
    "Bỏ dở công việc",
    "Một tay làm việc, một tay cầm vũ khí",
@@ -2405,7 +2405,7 @@
   "verseStart": 16,
   "difficulty": "easy",
   "type": "multiple_choice_single",
-  "content": "Nghe tin tường thành xây xong, kẻ thù nhận biết điều gì?",
+  "content": "Nghe tin tường thành Giê-ru-sa-lem xây xong, kẻ thù của Nê-hê-mi nhận biết gì?",
   "options": [
    "Nê-hê-mi là thần",
    "Công việc nhờ Đức Chúa Trời giúp đỡ",
