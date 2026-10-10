@@ -1,0 +1,738 @@
+[
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo sách E-xơ-ra, Đức Giê-hô-va thúc giục lòng vua Ba Tư nào ra sắc chỉ xây lại đền thờ?",
+  "options": [
+   "Đa-ri-út",
+   "Si-ru",
+   "A-suê-ru",
+   "Nê-bu-cát-nết-sa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Việc nầy ứng nghiệm lời Chúa phán qua Giê-rê-mi. “nên Ngài thúc giục lòng Si-ru, vua Ba Tư, ra sắc chỉ” (E-xơ-ra 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vua Si-ru trả lại cho dân Do Thái những gì mà Nê-bu-cát-nết-sa đã đem đi?",
+  "options": [
+   "Vương miện của vua Đa-vít",
+   "Các cuộn sách luật pháp",
+   "Hòm Giao Ước",
+   "Vật dụng của đền thờ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Các vật dụng ấy đã nằm trong miếu thờ thần của vua Ba-by-lôn. “Vua Si-ru cũng trả lại những vật dụng của đền thờ Đức Giê-hô-va mà Nê-bu-cát-nết-sa đã đem đi khỏi Giê-ru-sa-lem” (E-xơ-ra 1:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trở về từ lưu đày, Giê-sua và Xô-rô-ba-bên xây lại gì trước tiên để dâng tế lễ thiêu?",
+  "options": [
+   "Cổng Chiên",
+   "Tường thành",
+   "Bàn thờ",
+   "Cung vua"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ dâng tế lễ như đã chép trong luật pháp Môi-se. “đều trỗi dậy xây cất bàn thờ Đức Chúa Trời của Y-sơ-ra-ên để dâng tế lễ thiêu trên đó” (E-xơ-ra 3:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thấy nền đền thờ mới được xây sau lưu đày, những người già từng thấy đền thờ trước kia làm gì?",
+  "options": [
+   "Khóc lớn tiếng",
+   "Im lặng ra về",
+   "Nhảy múa",
+   "Thổi kèn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Trong khi đó nhiều người khác reo hò vui mừng. “khóc lớn tiếng khi thấy nền của đền thờ mới được xây dựng” (E-xơ-ra 3:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 5,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sau khi dân trở về từ lưu đày, hai nhà tiên tri nào khích lệ họ xây tiếp đền thờ?",
+  "options": [
+   "Ê-li và Ê-li-sê",
+   "Ê-sai và Giê-rê-mi",
+   "Đa-ni-ên và Ê-xê-chi-ên",
+   "A-ghê và Xa-cha-ri"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nghe lời Chúa, Xô-rô-ba-bên và Giê-sua khởi sự xây lại. “Bấy giờ, nhà tiên tri A-ghê và nhà tiên tri Xa-cha-ri, con của Y-đô” (E-xơ-ra 5:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thầy thông giáo E-xơ-ra chuyên tâm làm gì với luật pháp của Đức Giê-hô-va?",
+  "options": [
+   "Nghiên cứu, tuân giữ và dạy lại",
+   "Dịch sang tiếng Ba Tư",
+   "Chép lại để bán",
+   "Cất giấu trong đền thờ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "E-xơ-ra dạy luật pháp cho dân Y-sơ-ra-ên. “Vì E-xơ-ra chuyên tâm nghiên cứu luật pháp của Đức Giê-hô-va, tuân giữ và dạy cho dân Y-sơ-ra-ên” (E-xơ-ra 7:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 9,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nghe tin dân lấy vợ ngoại bang theo tập tục ghê tởm, E-xơ-ra đã làm gì?",
+  "options": [
+   "Mở tiệc ăn mừng",
+   "Xé áo, bứt râu, nhổ tóc",
+   "Viết thư cho vua",
+   "Trở về Ba-by-lôn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "E-xơ-ra ngồi buồn bã vì tội của dân. “tôi xé áo trong và áo tơi mình, bứt râu, nhổ tóc trên đầu rồi ngồi buồn bã.” (E-xơ-ra 9:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 8,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Bên bờ kênh A-ha-va, trước khi lên đường về Giê-ru-sa-lem, E-xơ-ra kêu gọi dân làm gì?",
+  "options": [
+   "Mua thêm vũ khí",
+   "Mở tiệc chia tay",
+   "Kiêng ăn cầu xin Chúa",
+   "Xin vua cho quân hộ tống"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ xin Chúa chỉ cho con đường chính đáng, và Ngài nhậm lời. “tôi kêu gọi kiêng ăn để hạ mình xuống trước mặt Đức Chúa Trời chúng tôi” (E-xơ-ra 8:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo sắc chỉ của vua Si-ru, dân Chúa được lên Giê-ru-sa-lem để làm gì?",
+  "options": [
+   "Xây lại tường thành",
+   "Xây cất đền thờ Đức Giê-hô-va",
+   "Giữ lễ Vượt Qua",
+   "Lập một vua mới"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Si-ru nói chính Đức Chúa Trời bảo vua xây đền thờ. “hãy lên Giê-ru-sa-lem trong xứ Giu-đa để xây cất đền thờ của Đức Giê-hô-va” (E-xơ-ra 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua Si-ru giao lại các vật dụng đền thờ cho Sết-ba-xa, người giữ chức gì?",
+  "options": [
+   "Thủ quỹ của vua",
+   "Thầy tế lễ thượng phẩm",
+   "Tướng Ba Tư",
+   "Tổng đốc của Giu-đa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sết-ba-xa đem các vật dụng ấy về Giê-ru-sa-lem. “giao cho Sết-ba-xa, tổng đốc của Giu-đa.” (E-xơ-ra 1:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo sách E-xơ-ra, đoàn người lưu đày trở về Giu-đa đầu tiên đi cùng Giê-sua và ai?",
+  "options": [
+   "Xô-rô-ba-bên",
+   "E-xơ-ra",
+   "Ê-xê-chi-ên",
+   "Đa-ni-ên"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Xô-rô-ba-bên đứng đầu danh sách những người trở về. “Họ trở về cùng với Xô-rô-ba-bên, Giê-sua” (E-xơ-ra 2:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Dù sợ các dân trong xứ, những người trở về từ lưu đày vẫn dâng tế lễ thiêu vào lúc nào?",
+  "options": [
+   "Chỉ ngày sa-bát",
+   "Mỗi đầu tháng",
+   "Buổi sáng và buổi chiều",
+   "Lúc nửa đêm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ lập bàn thờ trên nền cũ. “tức là tế lễ thiêu buổi sáng và buổi chiều.” (E-xơ-ra 3:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi đặt nền đền thờ mới sau lưu đày, dân ca hát rằng lòng thương xót của Chúa đối với Y-sơ-ra-ên thế nào?",
+  "options": [
+   "Sẽ trở lại sau",
+   "Chỉ dành cho vua",
+   "Còn đến đời đời",
+   "Đã cạn rồi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Toàn dân đồng thanh hô lớn, ca ngợi Đức Giê-hô-va. “Lòng thương xót của Ngài đối với Y-sơ-ra-ên còn đến đời đời!” (E-xơ-ra 3:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi dân Giu-đa trở về xây lại đền thờ, dân trong xứ đã làm gì?",
+  "options": [
+   "Bỏ đi nơi khác",
+   "Làm họ nản lòng, sợ hãi",
+   "Dâng vàng bạc",
+   "Đến giúp họ xây"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúng còn thuê cố vấn để phá hỏng kế hoạch của dân Giu-đa. “Bấy giờ dân trong xứ làm cho dân Giu-đa nản lòng, sợ hãi trong khi xây cất.” (E-xơ-ra 4:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi việc xây đền thờ bị tố cáo, vua Ba Tư nào cho tra cứu văn khố để tìm chiếu chỉ của Si-ru?",
+  "options": [
+   "A-suê-ru",
+   "Nê-bu-cát-nết-sa",
+   "Ạt-ta-xét-xe",
+   "Đa-ri-út"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chiếu chỉ tìm thấy cho phép dân tiếp tục xây. “Vua Đa-ri-út ra lệnh tra cứu các hồ sơ lưu trữ trong văn khố tại Ba-by-lôn.” (E-xơ-ra 6:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đền thờ xây lại sau lưu đày hoàn thành vào năm thứ mấy đời vua Đa-ri-út?",
+  "options": [
+   "Năm thứ sáu",
+   "Năm thứ nhất",
+   "Năm thứ mười",
+   "Năm thứ hai"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Công việc được may mắn như lời A-ghê và Xa-cha-ri. “trong năm thứ sáu đời vua Đa-ri-út.” (E-xơ-ra 6:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi đền thờ xây lại hoàn thành, dân từ chốn lưu đày trở về đã làm gì?",
+  "options": [
+   "Than khóc thảm thiết",
+   "Trở về Ba-by-lôn",
+   "Xây thêm cung vua",
+   "Làm lễ khánh thành cách vui mừng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Các thầy tế lễ và người Lê-vi cùng dự lễ. “làm lễ khánh thành đền thờ của Đức Chúa Trời cách vui mừng.” (E-xơ-ra 6:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi khánh thành đền thờ xây lại, dân trở về từ lưu đày giữ lễ gì vào ngày mười bốn tháng giêng?",
+  "options": [
+   "Lễ Vượt Qua",
+   "Lễ Phu-rim",
+   "Lễ Chuộc Tội",
+   "Lễ Lều Tạm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lễ Vượt Qua nhắc việc Chúa đem dân ra khỏi Ai Cập. “Vào ngày mười bốn tháng giêng, những người bị lưu đày trở về giữ lễ Vượt Qua.” (E-xơ-ra 6:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "E-xơ-ra, người từ Ba-by-lôn trở về Giê-ru-sa-lem, là học giả am hiểu điều gì?",
+  "options": [
+   "Nghề xây cất",
+   "Thuật chiêm tinh",
+   "Luật pháp Môi-se",
+   "Binh pháp Ba Tư"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nhờ tay Chúa giúp, vua chấp thuận mọi điều ông xin. “Ông là một học giả am hiểu luật pháp Môi-se” (E-xơ-ra 7:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thầy thông giáo E-xơ-ra về Giê-ru-sa-lem dưới triều vua Ba Tư nào?",
+  "options": [
+   "Nê-bu-cát-nết-sa",
+   "Ạt-ta-xét-xe",
+   "Si-ru",
+   "Đa-ri-út"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "E-xơ-ra về sau khi đền thờ đã được xây lại. “dưới triều Ạt-ta-xét-xe, vua Ba Tư, có ông E-xơ-ra là con trai Sê-ra-gia,” (E-xơ-ra 7:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 8,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì sao E-xơ-ra hổ thẹn, không dám xin vua quân lính hộ tống trên đường về Giê-ru-sa-lem?",
+  "options": [
+   "Vì đường về rất ngắn",
+   "Đã nói tay Chúa giúp người tìm Ngài",
+   "Vì vua đang giận ông",
+   "Vì quân lính đều bận"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "E-xơ-ra muốn giữ lời đã làm chứng với vua. “Tay của Đức Chúa Trời chúng tôi giúp đỡ mọi người tìm kiếm Ngài” (E-xơ-ra 8:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 9,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Những người lãnh đạo báo với E-xơ-ra rằng dân Y-sơ-ra-ên trở về đã phạm tội gì?",
+  "options": [
+   "Bỏ dở việc xây đền thờ",
+   "Không giữ ngày sa-bát",
+   "Lấy con gái dân trong xứ làm vợ",
+   "Không nộp thuế đền thờ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chính các viên chức là những kẻ phạm tội nặng nhất. “Họ và con trai họ đã lấy con gái chúng làm vợ” (E-xơ-ra 9:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 10,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi E-xơ-ra khóc và xưng tội trước đền thờ, đoàn dân nhóm chung quanh ông làm gì?",
+  "options": [
+   "Cũng khóc nức nở",
+   "Ca hát ngợi khen",
+   "Bỏ về nhà",
+   "Chế giễu ông"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cả nam nữ và trẻ em đều đau buồn vì tội lỗi. “gồm cả nam nữ và trẻ em nhóm họp chung quanh ông, cũng khóc nức nở.” (E-xơ-ra 10:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 10,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thời E-xơ-ra, khi nhóm tại quảng trường trước đền thờ, dân run sợ vì tội lỗi và vì điều gì?",
+  "options": [
+   "Quân thù kéo đến",
+   "Lửa cháy đền thờ",
+   "Trận động đất",
+   "Cơn mưa rất lớn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ nhóm lại để giải quyết việc lấy vợ ngoại bang. “run sợ về việc ấy và về cơn mưa rất lớn.” (E-xơ-ra 10:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 2,
+  "verseStart": 64,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo sách E-xơ-ra, cả hội chúng trở về từ lưu đày lần đầu đếm được bao nhiêu người?",
+  "options": [
+   "Mười hai nghìn",
+   "Bảy nghìn ba trăm ba mươi bảy",
+   "Sáu trăm lẻ ba nghìn",
+   "Bốn mươi hai nghìn ba trăm sáu mươi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Con số ấy chưa kể tôi trai tớ gái và ca sĩ. “Cả hội chúng đếm được bốn mươi hai nghìn ba trăm sáu mươi người,” (E-xơ-ra 2:64)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chiếu chỉ của vua Si-ru về việc xây lại đền thờ được tìm thấy ở đâu?",
+  "options": [
+   "Éc-ba-tan, tỉnh Mê-đi",
+   "Su-sơ",
+   "Ni-ni-ve",
+   "Đa-mách"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là một cuộn da ghi lệnh xây đền thờ trên nền cũ. “Người ta tìm được tại Éc-ba-tan, thủ phủ tỉnh Mê-đi, một cuộn da” (E-xơ-ra 6:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đền thờ xây lại sau lưu đày hoàn thành vào tháng nào?",
+  "options": [
+   "Tháng Ni-san",
+   "Tháng Xíp",
+   "Tháng A-đa",
+   "Tháng Ê-tha-nim"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là năm thứ sáu đời vua Đa-ri-út. “Đền thờ nầy hoàn thành vào ngày thứ ba, tháng A-đa” (E-xơ-ra 6:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thủ quỹ nào của vua Si-ru đếm và giao lại các vật dụng đền thờ?",
+  "options": [
+   "Sết-ba-xa",
+   "Mít-rê-đát",
+   "Mạc-đô-chê",
+   "Sa-phan"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông giao các vật dụng cho tổng đốc Giu-đa. “Si-ru, vua Ba Tư, truyền thủ quỹ Mít-rê-đát, lấy các vật dụng ấy ra” (E-xơ-ra 1:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi khởi công xây đền thờ sau lưu đày, người Lê-vi từ bao nhiêu tuổi được trông coi việc xây cất?",
+  "options": [
+   "Hai mươi tuổi trở lên",
+   "Hai mươi lăm tuổi trở lên",
+   "Năm mươi tuổi trở lên",
+   "Ba mươi tuổi trở lên"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Việc khởi công là năm thứ hai sau khi về Giê-ru-sa-lem. “Họ chỉ định người Lê-vi từ hai mươi tuổi trở lên, trông coi việc xây cất đền thờ của Đức Giê-hô-va.” (E-xơ-ra 3:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "E-xơ-ra đến Giê-ru-sa-lem vào năm thứ mấy đời vua Ạt-ta-xét-xe?",
+  "options": [
+   "Năm thứ ba",
+   "Năm thứ nhất",
+   "Năm thứ bảy",
+   "Năm thứ hai mươi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông đến vào tháng năm năm ấy. “Tháng năm, năm thứ bảy đời vua ấy, E-xơ-ra đến thành Giê-ru-sa-lem.” (E-xơ-ra 7:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 10,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thời E-xơ-ra, dân Giu-đa và Bên-gia-min nhóm tại Giê-ru-sa-lem để giải quyết việc lấy vợ ngoại bang vào ngày nào?",
+  "options": [
+   "Ngày mồng một tháng bảy",
+   "Ngày mười tháng bảy",
+   "Ngày mười bốn tháng giêng",
+   "Ngày hai mươi tháng chín"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ phải đến trong ba ngày sau lời kêu gọi. “vào ngày hai mươi tháng chín” (E-xơ-ra 10:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 9,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi xưng tội thay cho dân, E-xơ-ra cầu nguyện rằng tội lỗi của họ cao đến đâu?",
+  "options": [
+   "Như núi Si-ôn",
+   "Đến tận trời",
+   "Ngập đến cổ",
+   "Như tường thành"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "E-xơ-ra xấu hổ không dám ngước mặt lên Chúa. “tội lỗi của chúng con cao đến tận trời.” (E-xơ-ra 9:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

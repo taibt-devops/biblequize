@@ -80,3 +80,8 @@
   - Ghi chú: cache `questions:<sách>:<mức>` không tính `limit` và ngôn ngữ, nên trong 1 giờ mọi lần gọi trả cùng số câu như lần gọi đầu (có từ trước, chưa sửa)
   - **Spec impact**: [x] None
   - **Spec strategy**: [x] (c) [no-spec-impact]
+- RVB-15 Đợt 5: vòng 3, 8 sách (Lê-vi Ký, Dân Số Ký, 1–2 Sử Ký, E-xơ-ra, Ê-xê-chi-ên, Nhã Ca, Ca Thương)
+  - Status: [x] DONE · 269 câu thay 820 câu cũ, viết theo luật 8 (câu hỏi tự đứng được) · cũ Dễ/TB/Khó → mới Dễ (cốt lõi + bộ sách) / TB / Khó: Lê-vi Ký 75/65/35 → 0+12 / 25 / 12 · Dân Số Ký 75/65/35 → 20+5 / 25 / 12 · 1 Sử Ký 49/52/24 → 0+8 / 18 / 10 · 2 Sử Ký 51/50/24 → 0+10 / 20 / 10 · E-xơ-ra 50/51/24 → 0+8 / 16 / 8 · Ê-xê-chi-ên 15/23/12 → 0+8 / 18 / 10 · Nhã Ca 10/11/4 → 0+5 / 8 / 4 · Ca Thương 12/6/2 → 0+5 / 8 / 4
+  - Dân Số Ký tránh trùng bộ Dễ cốt lõi (chương 13–14 do thám, 22 Ba-la-am) · Nhã Ca chỉ hỏi hình ảnh hợp trò chơi gia đình · `retired_hashes.txt` 4.687 hash (+820) · `git rm` 8 file tiếng Việt, giữ `_en` · `rvv11_books_quiz.json` 2.192 câu · 47 test xanh
+  - **Spec impact**: [x] None
+  - **Spec strategy**: [x] (c) [no-spec-impact]

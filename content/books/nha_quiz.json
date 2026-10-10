@@ -1,0 +1,393 @@
+[
+ {
+  "book": "Song of Songs",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Nhã Ca là bài ca tuyệt diệu về ai?",
+  "options": [
+   "Môi-se",
+   "Đa-vít",
+   "Ê-xơ-tê",
+   "Sa-lô-môn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Câu đầu sách gọi tên vua Sa-lô-môn. “Nhã ca, bài ca tuyệt diệu về Sa-lô-môn” (Nhã Ca 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, những con vật nhỏ nào phá hoại vườn nho đang trổ hoa?",
+  "options": [
+   "Những con châu chấu",
+   "Những con chồn nhỏ",
+   "Những con chuột đồng",
+   "Những con chim sẻ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người ta xin bắt chúng để giữ vườn nho. “Những con chồn nhỏ Phá hoại vườn nho” (Nhã Ca 2:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 8,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Nhã Ca nói điều gì không dập tắt được tình yêu?",
+  "options": [
+   "Nước lũ",
+   "Thời gian",
+   "Gió bão",
+   "Bóng tối"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Các sông cũng không nhận chìm được tình yêu. “Nước lũ không dập tắt được tình yêu” (Nhã Ca 8:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, chàng gọi người yêu ra đồng vì mùa nào đã qua?",
+  "options": [
+   "Mùa hái nho",
+   "Mùa gặt",
+   "Mùa đông",
+   "Mùa hè"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Mưa đã dứt và muôn hoa nở trên đất. “Vì mùa đông đã qua, Mưa không còn rơi nữa;” (Nhã Ca 2:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, người nữ tự ví mình là đóa hoa gì trong cánh đồng Sa-rôn?",
+  "options": [
+   "Hoa cúc",
+   "Hoa lựu",
+   "Tường vi",
+   "Hoa sen"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nàng cũng ví mình là cành huệ trong thung lũng. “Em là đóa tường vi trong cánh đồng Sa-rôn” (Nhã Ca 2:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, chàng nói người yêu giữa các thiếu nữ giống như cành huệ giữa gì?",
+  "options": [
+   "Đám gai gốc",
+   "Đồng lúa",
+   "Cỏ xanh",
+   "Vườn nho"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chàng khen nàng nổi bật giữa mọi người. “Như cành huệ giữa đám gai gốc.” (Nhã Ca 2:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, khi chàng đưa nàng vào phòng yến tiệc, điều gì phất phới trên nàng?",
+  "options": [
+   "Áo choàng vua",
+   "Ngọn cờ tình yêu",
+   "Tấm màn tím",
+   "Cành ô-liu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hình ảnh ngọn cờ nói về tình yêu che chở. “Ngọn cờ tình yêu phất phới trên tôi.” (Nhã Ca 2:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, chàng nói đôi mắt người yêu giống đôi mắt con gì?",
+  "options": [
+   "Sư tử",
+   "Chim ưng",
+   "Nai tơ",
+   "Bồ câu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chàng khen nàng xinh đẹp và duyên dáng. “Đôi mắt em như đôi mắt bồ câu.” (Nhã Ca 1:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, người nữ nói mình đen như các trại nào?",
+  "options": [
+   "Các trại Ê-đôm",
+   "Các trại Ga-la-át",
+   "Các trại Si-ôn",
+   "Các trại Kê-đa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nàng nói mình đen nhưng xinh đẹp. “Đen như các trại Kê-đa” (Nhã Ca 1:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 6,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, người nữ nói người yêu dấu cho bầy ăn cỏ ở đâu?",
+  "options": [
+   "Trên núi Ga-la-át",
+   "Bên suối nước",
+   "Giữa đám hoa huệ",
+   "Trong vườn nho"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nàng nói: tôi thuộc về người yêu dấu. “Chàng cho bầy ăn cỏ giữa đám hoa huệ.” (Nhã Ca 6:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, vua Sa-lô-môn đội vương miện do ai đặt trên đầu trong ngày cưới?",
+  "options": [
+   "Nhà tiên tri Na-than",
+   "Mẹ của vua",
+   "Thầy tế lễ",
+   "Cha của vua"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đó là ngày lòng vua vui thỏa. “Vua đội chiếc vương miện mà mẹ vua đã đặt trên đầu vua” (Nhã Ca 3:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 8,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Nhã Ca nói tình yêu say đắm mạnh như gì?",
+  "options": [
+   "Sự chết",
+   "Sư tử",
+   "Sóng biển",
+   "Gió bão"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nàng xin được đặt như chiếc ấn nơi tim chàng. “Vì tình yêu say đắm mạnh như sự chết” (Nhã Ca 8:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, khi mùa đông đã qua thì mùa gì đến?",
+  "options": [
+   "Mùa hát xướng",
+   "Mùa gặt lúa",
+   "Mùa hái ô-liu",
+   "Mùa mưa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Tiếng chim hót vang khắp quê nhà. “Mùa hát xướng đã đến” (Nhã Ca 2:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, người nữ ví người yêu như bó hoa phụng tiên trong vườn nho nào?",
+  "options": [
+   "Hếp-rôn",
+   "Sa-rôn",
+   "Ba-anh Ha-môn",
+   "Ên Ghê-đi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ên Ghê-đi là ốc đảo bên Biển Chết. “Trong vườn nho Ên Ghê-đi.” (Nhã Ca 1:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 6,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, người nữ được gọi bằng tên nào khi người ta bảo cô hãy trở về?",
+  "options": [
+   "Bát-sê-ba",
+   "Mi-canh",
+   "Su-la-mít",
+   "A-bi-ga-in"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người ta muốn được ngắm nhìn cô. “Su-la-mít ơi, hãy trở về, hãy trở về!” (Nhã Ca 6:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 8,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, Sa-lô-môn có một vườn nho ở đâu?",
+  "options": [
+   "Sa-rôn",
+   "Ba-anh Ha-môn",
+   "Gít-rê-ên",
+   "Ên Ghê-đi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Mỗi tá điền phải nộp một nghìn miếng bạc. “Sa-lô-môn có một vườn nho tại Ba-anh Ha-môn” (Nhã Ca 8:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, tóc người yêu được ví như bầy dê trên triền núi nào?",
+  "options": [
+   "Li-ban",
+   "Ga-la-át",
+   "Hẹt-môn",
+   "Cạt-mên"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chàng khen nàng xinh đẹp vô cùng. “Tóc em như bầy dê Nhảy tung tăng trên triền Ga-la-át.” (Nhã Ca 4:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ }
+]

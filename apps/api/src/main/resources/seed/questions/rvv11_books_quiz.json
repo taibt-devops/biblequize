@@ -4209,6 +4209,834 @@
   ]
  },
  {
+  "book": "1 Chronicles",
+  "chapter": 4,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong gia phả dòng Giu-đa, Gia-bê khấn nguyện xin Đức Chúa Trời điều gì?",
+  "options": [
+   "Cho ông sống thật lâu",
+   "Cho ông được làm vua",
+   "Cho ông giàu hơn anh em",
+   "Ban phước dồi dào, mở rộng bờ cõi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đức Chúa Trời ban cho đúng như điều Gia-bê cầu xin. “Ôi, xin Chúa ban phước dồi dào cho con, mở rộng bờ cõi con.” (1 Sử Ký 4:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 16,
+  "verseStart": 34,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Bài ca cảm tạ khi Đa-vít rước Hòm Giao Ước nói sự nhân từ của Chúa còn đến bao giờ?",
+  "options": [
+   "Đến đời đời",
+   "Đến ngày mai",
+   "Đến hết đời vua",
+   "Đến bảy đời"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đa-vít giao cho người Lê-vi hát bài cảm tạ nầy. “Hãy cảm tạ Đức Giê-hô-va, vì Ngài là thiện; Sự nhân từ Ngài còn đến đời đời.” (1 Sử Ký 16:34)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 17,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Đa-vít muốn xây đền thờ, Đức Chúa Trời phán ai sẽ là người xây?",
+  "options": [
+   "Chính Đa-vít",
+   "Một thầy tế lễ",
+   "Một con trai của Đa-vít",
+   "Nhà tiên tri Na-than"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa hứa lập một con trai Đa-vít kế vị và xây nhà cho Ngài. “Chính nó sẽ xây cất cho Ta một đền thờ” (1 Sử Ký 17:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 29,
+  "verseStart": 28,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sau khi vua Đa-vít băng hà, ai lên ngôi kế vị?",
+  "options": [
+   "Rô-bô-am",
+   "Sa-lô-môn",
+   "A-đô-ni-gia",
+   "Áp-sa-lôm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đa-vít qua đời tuổi cao, thỏa nguyện về đời mình. “Sa-lô-môn, con trai vua, lên ngôi kế vị.” (1 Sử Ký 29:28)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 13,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Đa-vít rước Hòm Giao Ước bằng xe bò, U-xa bị phạt chết vì làm gì?",
+  "options": [
+   "Mở nắp Hòm ra xem",
+   "Đưa tay chạm đến Hòm Giao Ước",
+   "Đánh con bò",
+   "Bỏ chạy giữa đường"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "U-xa giữ Hòm khi bò trượt chân, và ông chết ngay tại đó. “vì ông đã đưa tay chạm đến Hòm Giao Ước. Vì vậy, ông chết ngay tại đó trước mặt Đức Chúa Trời.” (1 Sử Ký 13:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 11,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi đánh Giê-ru-sa-lem, Đa-vít chiếm được đồn lũy nào, về sau gọi là thành Đa-vít?",
+  "options": [
+   "Si-ôn",
+   "Giê-ri-cô",
+   "Bê-tên",
+   "Hếp-rôn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dân Giê-bu nói Đa-vít không vào được, nhưng ông đã chiếm thành. “Nhưng Đa-vít đã chiếm được đồn lũy Si-ôn, tức là thành Đa-vít.” (1 Sử Ký 11:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 15,
+  "verseStart": 29,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thấy vua Đa-vít nhảy múa khi rước Hòm Giao Ước, hoàng hậu Mi-canh cảm thấy thế nào?",
+  "options": [
+   "Tự hào về vua",
+   "Sợ hãi run rẩy",
+   "Khinh bỉ vua trong lòng",
+   "Vui mừng cùng vua"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Mi-canh là con gái Sau-lơ, nhìn vua qua cửa sổ. “nhìn qua cửa sổ thấy vua Đa-vít nhảy múa vui mừng thì trong lòng khinh bỉ vua.” (1 Sử Ký 15:29)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 28,
+  "verseStart": 20,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi giao việc xây đền thờ, Đa-vít khuyên con mình là Sa-lô-môn điều gì?",
+  "options": [
+   "Hãy hỏi ý dân chúng trước",
+   "Hãy đi đánh giặc trước",
+   "Hãy chờ thêm vài năm",
+   "Hãy mạnh mẽ và can đảm mà làm"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đa-vít nhắc Sa-lô-môn rằng Đức Chúa Trời ở với con. “Hãy mạnh mẽ và can đảm mà làm! Đừng sợ hãi, đừng nản lòng” (1 Sử Ký 28:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 11,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Các trưởng lão Y-sơ-ra-ên xức dầu tôn Đa-vít làm vua trên cả Y-sơ-ra-ên tại đâu?",
+  "options": [
+   "Giê-ri-cô",
+   "Hếp-rôn",
+   "Bết-lê-hem",
+   "Si-lô"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Điều nầy đúng như lời Đức Giê-hô-va phán qua Sa-mu-ên. “rồi họ xức dầu tôn Đa-vít làm vua trên Y-sơ-ra-ên, đúng như lời Đức Giê-hô-va đã phán qua Sa-mu-ên.” (1 Sử Ký 11:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 10,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong trận thua dân Phi-li-tin, vua Sau-lơ chết thế nào?",
+  "options": [
+   "Tự ngã sấp vào mũi gươm",
+   "Bị Đa-vít giết",
+   "Bị trúng tên mà chết",
+   "Bị đá lăn đè"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Người mang khí giới không dám giết vua vì quá sợ hãi. “Vì vậy, Sau-lơ lấy gươm ra rồi ngã sấp vào mũi gươm.” (1 Sử Ký 10:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 10,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Sử Ký nói ngoài tội bất trung, vua Sau-lơ còn đi cầu hỏi ai?",
+  "options": [
+   "Các thầy tế lễ",
+   "Nhà tiên tri Sa-mu-ên",
+   "Đồng bóng",
+   "Vua Phi-li-tin"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì không cầu hỏi Đức Giê-hô-va, vương quyền chuyển sang Đa-vít. “Ngoài ra, vua còn đi cầu hỏi đồng bóng,” (1 Sử Ký 10:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 11,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Đa-vít đánh dân Giê-bu-sít ở Giê-ru-sa-lem, ai lên trước nhất và được làm chỉ huy trưởng?",
+  "options": [
+   "Bê-na-gia",
+   "Áp-ne",
+   "A-bi-sai",
+   "Giô-áp"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đa-vít hứa người đánh trước nhất sẽ được làm chỉ huy trưởng. “Giô-áp, con của Xê-ru-gia, đi lên đánh trước nhất nên được làm chỉ huy trưởng.” (1 Sử Ký 11:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 11,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trước khi Đa-vít chiếm, thành Giê-ru-sa-lem được gọi là gì?",
+  "options": [
+   "Hếp-rôn",
+   "Si-lô",
+   "Giê-bu",
+   "Sa-lem"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người Giê-bu-sít đang ở trong thành lúc ấy. “kéo đến thành Giê-ru-sa-lem, lúc ấy gọi là Giê-bu.” (1 Sử Ký 11:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 11,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi quân Phi-li-tin đóng ở Bết-lê-hem, Đa-vít ước được uống nước giếng ở đâu?",
+  "options": [
+   "Ở suối Ên-ghê-đi",
+   "Bên cổng thành Bết-lê-hem",
+   "Ở thành Hếp-rôn",
+   "Bên sông Giô-đanh"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bết-lê-hem là quê của Đa-vít. “Ước gì có ai cho ta uống nước giếng bên cổng thành Bết-lê-hem!” (1 Sử Ký 11:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 11,
+  "verseStart": 18,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ba dũng sĩ liều mạng múc nước giếng Bết-lê-hem đem về, Đa-vít đã làm gì?",
+  "options": [
+   "Đổ nước ra trước mặt Chúa",
+   "Chia cho quân lính",
+   "Uống cạn một hơi",
+   "Giữ lại làm kỷ niệm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đa-vít coi nước ấy như máu của những người liều mạng. “Nhưng Đa-vít không chịu uống mà đổ nước ấy ra trước mặt Đức Giê-hô-va” (1 Sử Ký 11:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 13,
+  "verseStart": 7,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lần đầu Đa-vít rước Hòm Giao Ước từ nhà A-bi-na-đáp, Hòm được chở bằng gì?",
+  "options": [
+   "Lưng lạc đà",
+   "Một chiếc thuyền",
+   "Đòn khiêng trên vai",
+   "Một cỗ xe mới"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "U-xa và A-hi-ô dẫn xe. “họ chở Hòm Giao Ước của Đức Chúa Trời trên một cỗ xe mới” (1 Sử Ký 13:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 13,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau cái chết của U-xa, Hòm Giao Ước ở lại nhà ai trong ba tháng?",
+  "options": [
+   "Na-than",
+   "Ô-bết Ê-đôm",
+   "A-bi-na-đáp",
+   "Ọt-nan"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đức Giê-hô-va ban phước cho gia đình ông. “Hòm Giao Ước của Đức Chúa Trời ở lại trong nhà Ô-bết Ê-đôm và gia đình ông trong ba tháng” (1 Sử Ký 13:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 15,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau lần rước Hòm thất bại, Đa-vít nói chỉ ai mới được khiêng Hòm Giao Ước?",
+  "options": [
+   "Các dũng sĩ",
+   "Người Bết-lê-hem",
+   "Người Lê-vi",
+   "Các trưởng lão"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đức Giê-hô-va đã chọn người Lê-vi khiêng Hòm. “Ngoại trừ người Lê-vi, không ai được khiêng Hòm Giao Ước của Đức Chúa Trời” (1 Sử Ký 15:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 15,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lần rước Hòm Giao Ước thứ hai thời Đa-vít, người Lê-vi khiêng Hòm bằng cách nào?",
+  "options": [
+   "Chở trên xe mới",
+   "Đặt trên lưng lừa",
+   "Kéo bằng dây thừng",
+   "Dùng đòn khiêng trên vai"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lần nầy họ làm đúng lời Chúa dạy qua Môi-se. “Các người Lê-vi dùng đòn khiêng Hòm Giao Ước của Đức Chúa Trời trên vai mình” (1 Sử Ký 15:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 17,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi đã ở yên trong cung điện, Đa-vít nói Hòm Giao Ước còn ở đâu?",
+  "options": [
+   "Dưới những bức màn trại",
+   "Ở Si-lô",
+   "Trong nhà Ô-bết Ê-đôm",
+   "Trong tay dân Phi-li-tin"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vua ở nhà bằng gỗ bá hương mà Hòm của Chúa chỉ ở trong trại. “còn Hòm Giao Ước của Đức Giê-hô-va lại ở dưới những bức màn trại” (1 Sử Ký 17:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 17,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít bày tỏ ý muốn xây nhà cho Hòm Giao Ước với nhà tiên tri nào?",
+  "options": [
+   "Sa-mu-ên",
+   "Gát",
+   "Na-than",
+   "Ê-li"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ngay đêm ấy Chúa phán với Na-than về Đa-vít. “Đa-vít nói với nhà tiên tri Na-than” (1 Sử Ký 17:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 22,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít kể Đức Giê-hô-va không cho ông xây đền thờ vì lý do gì?",
+  "options": [
+   "Vì dân không muốn",
+   "Vì không đủ vàng bạc",
+   "Vì ông đã quá già",
+   "Đã làm đổ máu quá nhiều"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đa-vít đã đánh nhiều trận chiến lớn. “Con đã làm đổ máu quá nhiều, đã đánh nhiều trận chiến lớn” (1 Sử Ký 22:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 22,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời hứa con trai Đa-vít sẽ là người thế nào, nên được đặt tên Sa-lô-môn?",
+  "options": [
+   "Người của hòa bình",
+   "Người của sức mạnh",
+   "Người của lời tiên tri",
+   "Người của chiến trận"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Trong đời Sa-lô-môn, Y-sơ-ra-ên được hòa bình an ổn. “nó sẽ là người của hòa bình” (1 Sử Ký 22:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 21,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo sách Sử Ký, ai xúi giục Đa-vít kiểm tra dân số Y-sơ-ra-ên?",
+  "options": [
+   "Nhà tiên tri Gát",
+   "Sa-tan",
+   "Giô-áp",
+   "Sa-lô-môn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Việc kiểm tra dân số làm Đức Chúa Trời không vui. “Sa-tan nổi lên chống lại Y-sơ-ra-ên nên xúi giục Đa-vít kiểm tra dân số.” (1 Sử Ký 21:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 21,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Phải chọn hình phạt vì tội kiểm tra dân số, Đa-vít thà sa vào tay ai?",
+  "options": [
+   "Tay dân Phi-li-tin",
+   "Tay quân thù",
+   "Tay Đức Giê-hô-va",
+   "Tay các trưởng lão"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đa-vít tin sự thương xót của Chúa rất lớn. “Thà ta sa vào tay Đức Giê-hô-va thì hơn, vì sự thương xót của Ngài rất lớn” (1 Sử Ký 21:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 29,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua Đa-vít cai trị Y-sơ-ra-ên tổng cộng bao nhiêu năm?",
+  "options": [
+   "Ba mươi năm",
+   "Bốn mươi năm",
+   "Bảy năm",
+   "Năm mươi năm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vua trị vì ở Hếp-rôn rồi ở Giê-ru-sa-lem. “Vua cai trị trên Y-sơ-ra-ên bốn mươi năm” (1 Sử Ký 29:27)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 4,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Mẹ của Gia-bê đặt tên cho ông như vậy vì lý do gì?",
+  "options": [
+   "Sinh ông trong sự đau đớn",
+   "Ông là con đầu lòng",
+   "Ông sinh vào ngày lễ",
+   "Ông giống hệt cha"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Gia-bê được tôn trọng hơn anh em mình. “Ta sinh nó trong sự đau đớn.” (1 Sử Ký 4:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 11,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Bê-na-gia, một dũng sĩ của Đa-vít, đánh chết một con sư tử ở đâu?",
+  "options": [
+   "Trên núi Ghinh-bô-a",
+   "Bên bờ sông Giô-đanh",
+   "Trong rừng gần Bết-lê-hem",
+   "Dưới hố vào ngày tuyết rơi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông còn giết hai dũng sĩ người Mô-áp. “Ông cũng đã đi xuống và đánh chết một con sư tử ở dưới hố vào một ngày có tuyết rơi.” (1 Sử Ký 11:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 12,
+  "verseStart": 32,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong những người theo Đa-vít, con cháu bộ tộc nào có các nhà lãnh đạo am hiểu thời cơ?",
+  "options": [
+   "Xê-bu-lôn",
+   "Y-sa-ca",
+   "Nép-ta-li",
+   "Bên-gia-min"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ biết điều gì dân Y-sơ-ra-ên phải làm. “Trong con cháu Y-sa-ca, có hai trăm nhà lãnh đạo am hiểu thời cơ” (1 Sử Ký 12:32)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 13,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "U-xa đưa tay giữ Hòm Giao Ước tại sân đập lúa của ai?",
+  "options": [
+   "Bô-ô",
+   "Ô-bết Ê-đôm",
+   "Ki-đôn",
+   "Ọt-nan"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông giữ Hòm vì bò bị trượt chân. “Khi họ đến sân đập lúa của Ki-đôn, U-xa đưa tay ra nắm giữ Hòm Giao Ước vì bò bị trượt chân.” (1 Sử Ký 13:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 15,
+  "verseStart": 27,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi rước Hòm Giao Ước về thành Đa-vít, vua mặc thêm loại áo nào bằng vải gai?",
+  "options": [
+   "Một áo giáp",
+   "Một áo choàng tím",
+   "Một áo lông",
+   "Một ê-phót"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Mọi người khiêng Hòm và ca hát đều mặc áo vải gai mịn. “Đa-vít còn mặc thêm một ê-phót bằng vải gai.” (1 Sử Ký 15:27)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 21,
+  "verseStart": 18,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sau tai vạ vì kiểm tra dân số, thiên sứ bảo Đa-vít dựng bàn thờ tại sân đập lúa của ai?",
+  "options": [
+   "Ọt-nan, người Giê-bu-sít",
+   "Ki-đôn",
+   "A-bi-na-đáp",
+   "Ô-bết Ê-đôm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Thiên sứ dừng tay hủy diệt tại sân đập lúa ấy. “tại sân đập lúa của Ọt-nan, người Giê-bu-sít” (1 Sử Ký 21:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 21,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vì sao Đa-vít nhất định trả tiền mua sân đập lúa của Ọt-nan?",
+  "options": [
+   "Vì luật cấm nhận quà",
+   "Không dâng tế lễ chẳng tốn gì",
+   "Vì Ọt-nan đòi giá cao",
+   "Vì sợ dân chê cười"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ọt-nan muốn dâng không, nhưng vua muốn mua đúng giá. “cũng không muốn dâng tế lễ thiêu chẳng tốn gì cả” (1 Sử Ký 21:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 21,
+  "verseStart": 26,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi Đa-vít dâng tế lễ trên sân đập lúa của Ọt-nan, Đức Giê-hô-va đáp lời bằng gì?",
+  "options": [
+   "Một chiếc cầu vồng",
+   "Một tiếng sấm lớn",
+   "Một đám mây che phủ",
+   "Lửa từ trời giáng trên bàn thờ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nơi ấy về sau là chỗ xây đền thờ. “Ngài đáp lời người bằng lửa từ trời giáng trên bàn thờ dâng tế lễ thiêu” (1 Sử Ký 21:26)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 29,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cầu nguyện khi dân dâng hiến để xây đền thờ, Đa-vít nói mọi vật đều từ đâu mà đến?",
+  "options": [
+   "Từ chiến lợi phẩm",
+   "Do dân chúng làm ra",
+   "Do nơi Chúa mà đến",
+   "Từ kho của vua"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Điều dân dâng lên vốn đã thuộc về Chúa. “Vì mọi vật đều do nơi Chúa mà đến” (1 Sử Ký 29:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "1 Chronicles",
+  "chapter": 29,
+  "verseStart": 27,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đa-vít trị vì tại Hếp-rôn bao nhiêu năm trước khi trị vì ở Giê-ru-sa-lem?",
+  "options": [
+   "Bảy năm",
+   "Ba mươi ba năm",
+   "Mười năm",
+   "Ba năm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Sau đó vua trị vì ở Giê-ru-sa-lem ba mươi ba năm. “Tại Hếp-rôn bảy năm, và tại Giê-ru-sa-lem ba mươi ba năm.” (1 Sử Ký 29:27)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "1 Thessalonians",
   "chapter": 1,
   "verseStart": 1,
@@ -8050,6 +8878,926 @@
   ]
  },
  {
+  "book": "2 Chronicles",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Đức Chúa Trời bảo Sa-lô-môn xin điều mình muốn, vua đã xin gì?",
+  "options": [
+   "Sự giàu có",
+   "Được sống thật lâu",
+   "Thắng mọi kẻ thù",
+   "Sự khôn ngoan và tri thức"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sa-lô-môn xin để biết cách lãnh đạo dân của Chúa. “Vậy, xin Chúa ban cho con sự khôn ngoan và tri thức” (2 Sử Ký 1:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 7,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Sa-lô-môn cầu nguyện xong lúc khánh thành đền thờ, điều gì từ trời đổ xuống?",
+  "options": [
+   "Mưa đá",
+   "Ma-na",
+   "Lửa",
+   "Mưa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lửa đốt tế lễ và vinh quang Chúa đầy dẫy đền thờ. “Khi Sa-lô-môn cầu nguyện xong, lửa từ trời đổ xuống đốt tế lễ thiêu và các sinh tế.” (2 Sử Ký 7:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 7,
+  "verseStart": 14,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa hứa với Sa-lô-môn: nếu dân Ngài hạ mình, cầu nguyện, từ bỏ đường ác, Ngài sẽ làm gì cho đất nước họ?",
+  "options": [
+   "Chữa lành đất nước họ",
+   "Ban cho họ vua mới",
+   "Mở rộng bờ cõi họ",
+   "Làm cho họ giàu có"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa phán lời nầy sau khi đền thờ được khánh thành. “thì từ trên trời Ta sẽ lắng nghe, tha thứ tội lỗi họ và chữa lành đất nước họ.” (2 Sử Ký 7:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 9,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nghe danh tiếng Sa-lô-môn, nữ hoàng nào đến Giê-ru-sa-lem thử vua bằng nhiều câu đố?",
+  "options": [
+   "Hoàng hậu Ê-xơ-tê",
+   "Nữ hoàng Sê-ba",
+   "Hoàng hậu Giê-sa-bên",
+   "Nữ hoàng Ai Cập"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Bà đến với đoàn lạc đà chở hương liệu, vàng và đá quý. “Khi nữ hoàng Sê-ba nghe về danh tiếng của Sa-lô-môn thì đến Giê-ru-sa-lem, đặt nhiều câu đố để thử vua Sa-lô-môn.” (2 Sử Ký 9:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 20,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi quân thù đông đảo kéo đến đánh vua Giô-sa-phát, Chúa phán trận chiến nầy là của ai?",
+  "options": [
+   "Của các thầy tế lễ",
+   "Của vua Giô-sa-phát",
+   "Của quân Giu-đa",
+   "Của Đức Chúa Trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa bảo dân đừng sợ trước đám quân đông đảo. “vì trận chiến nầy chẳng phải của các con đâu nhưng là của Đức Chúa Trời.” (2 Sử Ký 20:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 20,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi ra trận với quân Am-môn và Mô-áp, vua Giô-sa-phát cho ai đi trước đoàn quân?",
+  "options": [
+   "Các xe ngựa",
+   "Các dũng sĩ cầm giáo",
+   "Những người ca hát ngợi khen Chúa",
+   "Các cung thủ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ vừa đi vừa hát: sự nhân từ Ngài còn đến đời đời. “Vua hội ý với dân chúng và lập những người ca hát để tôn ngợi Đức Giê-hô-va.” (2 Sử Ký 20:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 26,
+  "verseStart": 19,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vì tự ý vào đền thờ xông hương, vua Ô-xia bị mắc bệnh gì?",
+  "options": [
+   "Phong hủi",
+   "Câm",
+   "Mù mắt",
+   "Đau chân"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bệnh nổi lên nơi trán vua ngay trong đền thờ. “thì phong hủi nổi lên nơi trán vua trước mặt các thầy tế lễ” (2 Sử Ký 26:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 34,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thời vua Giô-si-a, thầy tế lễ Hinh-kia tìm được gì trong đền thờ?",
+  "options": [
+   "Cây gậy của A-rôn",
+   "Cuốn sách luật pháp",
+   "Một kho vàng giấu kín",
+   "Hòm Giao Ước"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Sách được tìm thấy khi người ta lấy bạc dâng trong đền thờ ra. “Tôi đã tìm được cuốn sách luật pháp trong đền thờ Đức Giê-hô-va.” (2 Sử Ký 34:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 36,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vị vua Ba Tư nào ra chiếu chỉ cho dân Chúa trở lên Giê-ru-sa-lem xây đền thờ?",
+  "options": [
+   "Si-ru",
+   "Đa-ri-út",
+   "A-suê-ru",
+   "Nê-bu-cát-nết-sa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chiếu chỉ ứng nghiệm lời Chúa phán qua Giê-rê-mi. “Si-ru, vua Ba Tư tuyên bố như sau” (2 Sử Ký 36:23)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 32,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi vua A-si-ri kéo quân đến, vua Ê-xê-chia khích lệ dân rằng Đấng ở cùng chúng ta thế nào?",
+  "options": [
+   "Sẽ đến vào ngày mai",
+   "Chỉ ở trong đền thờ",
+   "Đang ở rất xa",
+   "Mạnh hơn kẻ ở với vua ấy"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vua A-si-ri chỉ có cánh tay phàm nhân. “vì Đấng ở cùng chúng ta mạnh hơn kẻ ở với vua ấy” (2 Sử Ký 32:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sa-lô-môn xây đền thờ Đức Giê-hô-va tại Giê-ru-sa-lem trên núi nào?",
+  "options": [
+   "Núi Ô-liu",
+   "Núi Mô-ri-a",
+   "Núi Si-na-i",
+   "Núi Cạt-mên"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đó là nơi Đức Giê-hô-va đã hiện ra với Đa-vít. “Sa-lô-môn khởi công xây cất đền thờ Đức Giê-hô-va tại Giê-ru-sa-lem trên núi Mô-ri-a” (2 Sử Ký 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì Sa-lô-môn xin sự khôn ngoan, Đức Chúa Trời còn hứa ban thêm cho vua điều gì?",
+  "options": [
+   "Sống đến trăm tuổi",
+   "Nhiều con trai",
+   "Giàu có, của cải và vinh quang",
+   "Một vương quốc lớn hơn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Không vua nào trước và sau Sa-lô-môn được như thế. “Ta cũng sẽ ban cho con sự giàu có, của cải, và vinh quang” (2 Sử Ký 1:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 5,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Hòm Giao Ước được đưa vào đền thờ Sa-lô-môn, vì sao các thầy tế lễ không thể đứng phục vụ?",
+  "options": [
+   "Vì lửa cháy lớn",
+   "Vì có động đất",
+   "Vinh quang Chúa đầy dẫy đền thờ",
+   "Vì đền thờ quá chật"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đền thờ đầy mây khi người ta ca ngợi Chúa. “vì vinh quang của Đức Giê-hô-va đầy dẫy đền thờ của Đức Chúa Trời.” (2 Sử Ký 5:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 9,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thấy tận mắt sự khôn ngoan của Sa-lô-môn, nữ hoàng Sê-ba nói người ta mới kể cho bà bao nhiêu?",
+  "options": [
+   "Chưa đến một nửa",
+   "Gấp đôi sự thật",
+   "Đúng như sự thật",
+   "Chỉ một phần mười"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vua vượt xa tiếng đồn bà đã nghe. “người ta cho tôi biết chưa đến một nửa sự khôn ngoan lớn lao của ngài” (2 Sử Ký 9:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 10,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bỏ lời khuyên của các trưởng lão, vua Rô-bô-am nói sẽ trừng phạt dân bằng gì?",
+  "options": [
+   "Gươm sắc",
+   "Roi bò cạp",
+   "Gông cùm",
+   "Roi da"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vua muốn làm ách của dân nặng hơn thời cha mình. “còn ta, ta sẽ trừng phạt các ngươi bằng roi bò cạp.” (2 Sử Ký 10:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 10,
+  "verseStart": 14,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi dân xin giảm ách nặng, vua Rô-bô-am theo ý kiến của ai để trả lời?",
+  "options": [
+   "Một nhà tiên tri",
+   "Mẹ của vua",
+   "Các trưởng lão",
+   "Những người trẻ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Vua bỏ lời khuyên của các trưởng lão từng phục vụ Sa-lô-môn. “Vua theo ý kiến của những người trẻ mà trả lời với dân chúng” (2 Sử Ký 10:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 14,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trước đoàn quân đông đảo, vua A-sa cầu nguyện rằng ngoài Chúa, chẳng ai giúp được điều gì?",
+  "options": [
+   "Người bệnh được lành",
+   "Người yếu thắng người mạnh",
+   "Người nghèo thành giàu",
+   "Người già sống lâu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "A-sa nương cậy Chúa khi đương đầu với quân thù. “Ngoài Chúa, chẳng ai giúp người yếu thắng được người mạnh.” (2 Sử Ký 14:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 16,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi bị đau chân rất nặng, vua A-sa không tìm kiếm Chúa mà tìm đến ai?",
+  "options": [
+   "Một nhà tiên tri",
+   "Vua A-ram",
+   "Các thầy thuốc",
+   "Các thầy bói"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cuối đời, A-sa không còn nương cậy Đức Giê-hô-va. “vua không tìm kiếm Đức Giê-hô-va mà tìm kiếm các thầy thuốc.” (2 Sử Ký 16:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 16,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Nhà tiên tri trách vua A-sa: mắt Đức Giê-hô-va soi xét khắp thế gian để làm gì?",
+  "options": [
+   "Phạt hết kẻ gian ác",
+   "Đếm dân các nước",
+   "Tìm một vua mới",
+   "Giúp sức người trọn lòng với Ngài"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "A-sa đã cậy vua A-ram thay vì cậy Chúa. “Vì mắt của Đức Giê-hô-va soi xét khắp thế gian để giúp sức cho người nào trọn lòng đối với Ngài.” (2 Sử Ký 16:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 20,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trước đoàn quân đông đảo, vua Giô-sa-phát cầu nguyện: chúng con không biết làm sao, nhưng mắt chúng con làm gì?",
+  "options": [
+   "Ngưỡng trông Chúa",
+   "Đẫm nước mắt",
+   "Nhìn về Ai Cập",
+   "Canh chừng quân thù"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cả Giu-đa nhóm lại tìm cầu Đức Giê-hô-va. “Chúng con không biết phải làm sao, nhưng mắt chúng con ngưỡng trông Chúa!” (2 Sử Ký 20:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 20,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi đoàn ca hát của vua Giô-sa-phát bắt đầu ngợi khen Chúa, điều gì xảy ra với quân thù?",
+  "options": [
+   "Xin đầu hàng",
+   "Bỏ chạy về nước",
+   "Bị quân mai phục đánh bại",
+   "Bị mưa đá giết"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa chiến đấu thay cho Giu-đa. “Khi họ bắt đầu hát vang ca ngợi thì Đức Giê-hô-va cho quân mai phục tấn công đám quân đang tiến đánh Giu-đa” (2 Sử Ký 20:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 24,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giô-ách được mấy tuổi khi lên ngôi vua Giu-đa?",
+  "options": [
+   "Tám tuổi",
+   "Bảy tuổi",
+   "Mười hai tuổi",
+   "Mười sáu tuổi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vua cai trị bốn mươi năm tại Giê-ru-sa-lem. “Khi lên ngôi vua, Giô-ách được bảy tuổi” (2 Sử Ký 24:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 24,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Để dân dâng tiền thuế sửa đền thờ, vua Giô-ách cho đặt gì phía ngoài cửa đền thờ?",
+  "options": [
+   "Một cái rương",
+   "Một cái lu đồng",
+   "Một cái chum",
+   "Một bàn đá"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dân vui mừng bỏ tiền vào cho đến khi đầy rương. “Vua truyền người ta đóng một cái rương đặt phía ngoài cửa đền thờ Đức Giê-hô-va.” (2 Sử Ký 24:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 26,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi trở nên cường thịnh, vua Ô-xia kiêu ngạo vào đền thờ để làm việc gì?",
+  "options": [
+   "Lấy vàng trong đền thờ",
+   "Dâng bò làm tế lễ",
+   "Đọc sách luật pháp",
+   "Xông hương trên bàn thờ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chỉ thầy tế lễ mới được xông hương. “vì đã vào trong đền thờ Đức Giê-hô-va xông hương trên bàn thờ xông hương.” (2 Sử Ký 26:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 30,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua Ê-xê-chia sai sứ giả mời cả Y-sơ-ra-ên và Giu-đa về Giê-ru-sa-lem để giữ lễ nào?",
+  "options": [
+   "Lễ Lều Tạm",
+   "Lễ Vượt Qua",
+   "Lễ Ngũ Tuần",
+   "Lễ Phu-rim"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vua viết thư mời cả người Ép-ra-im và Ma-na-se. “để giữ lễ Vượt Qua cho Giê-hô-va Đức Chúa Trời của Y-sơ-ra-ên” (2 Sử Ký 30:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 33,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bị quân A-si-ri bắt giải về Ba-by-lôn, vua Ma-na-se đã làm gì?",
+  "options": [
+   "Trốn khỏi ngục",
+   "Xin vua A-si-ri tha",
+   "Thờ thần Ba-by-lôn",
+   "Hạ mình cầu khẩn Đức Chúa Trời"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Trong hoạn nạn, vua ăn năn trước mặt Chúa. “vua cầu khẩn Giê-hô-va Đức Chúa Trời và hết sức hạ mình xuống” (2 Sử Ký 33:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 33,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Được Chúa cho trở về Giê-ru-sa-lem, vua Ma-na-se nhận biết điều gì?",
+  "options": [
+   "Mình là vua lớn nhất",
+   "Ba-by-lôn rất mạnh",
+   "Giê-hô-va là Đức Chúa Trời",
+   "A-si-ri sẽ sụp đổ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa động lòng và nhậm lời nài xin của vua. “Lúc ấy, Ma-na-se nhận biết rằng Giê-hô-va là Đức Chúa Trời.” (2 Sử Ký 33:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 34,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi nghe đọc các lời trong sách luật pháp tìm được, vua Giô-si-a làm gì?",
+  "options": [
+   "Xé áo mình",
+   "Giấu sách đi",
+   "Mở tiệc ăn mừng",
+   "Đốt sách ấy"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vua đau buồn vì dân đã không vâng giữ lời Chúa. “Khi nghe các lời trong sách luật pháp, vua liền xé áo mình.” (2 Sử Ký 34:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 34,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Giô-si-a lên ngôi vua Giu-đa lúc mấy tuổi?",
+  "options": [
+   "Mười hai tuổi",
+   "Bảy tuổi",
+   "Tám tuổi",
+   "Mười sáu tuổi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vua cai trị ba mươi mốt năm tại Giê-ru-sa-lem. “Giô-si-a lên ngôi vua khi được tám tuổi” (2 Sử Ký 34:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 36,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo lời tiên tri Giê-rê-mi, đất Giu-đa bị bỏ hoang để nghỉ ngơi bao nhiêu năm?",
+  "options": [
+   "Một trăm năm",
+   "Năm mươi năm",
+   "Bốn mươi năm",
+   "Bảy mươi năm"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đất được hưởng bù các năm sa-bát của nó. “đất được nghỉ ngơi cho đến khi trọn bảy mươi năm.” (2 Sử Ký 36:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 3,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nơi Sa-lô-môn xây đền thờ trước đó là sân đập lúa của ai?",
+  "options": [
+   "Ki-đôn",
+   "Ọt-nan, người Giê-bu-sít",
+   "Bô-ô",
+   "Ô-bết Ê-đôm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đa-vít đã chỉ định nơi nầy để xây đền thờ. “Đó là nơi Đa-vít đã chỉ định để xây cất trong sân đập lúa của Ọt-nan, người Giê-bu-sít.” (2 Sử Ký 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 20,
+  "verseStart": 25,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sau chiến thắng nhờ ca ngợi, quân của vua Giô-sa-phát thu chiến lợi phẩm trong bao lâu?",
+  "options": [
+   "Ba ngày",
+   "Bảy ngày",
+   "Mười ngày",
+   "Một ngày"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chiến lợi phẩm nhiều đến nỗi họ không mang nổi. “Họ thu lượm chiến lợi phẩm trong ba ngày, vì rất nhiều.” (2 Sử Ký 20:25)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 20,
+  "verseStart": 20,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ở hoang mạc Thê-cô-a, vua Giô-sa-phát khuyên dân hãy tin các nhà tiên tri thì sẽ được gì?",
+  "options": [
+   "Được kính trọng",
+   "Sống lâu",
+   "Thành công",
+   "Giàu có"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vua cũng khuyên dân tin cậy Đức Giê-hô-va để được vững vàng. “hãy tin các nhà tiên tri của Ngài thì các ngươi sẽ được thành công.” (2 Sử Ký 20:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 24,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo lệnh vua Giô-ách, Xa-cha-ri, con thầy tế lễ Giê-hô-gia-đa, bị giết thế nào?",
+  "options": [
+   "Bị ném đá trong hành lang đền thờ",
+   "Bị đày sang Ai Cập",
+   "Bị treo cổ",
+   "Bị chém đầu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Xa-cha-ri trách dân lìa bỏ Đức Giê-hô-va. “họ ném đá ông trong hành lang của đền thờ Đức Giê-hô-va.” (2 Sử Ký 24:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 24,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vua Giô-ách làm điều ngay thẳng trong suốt thời gian ai còn sống?",
+  "options": [
+   "Vua Giô-sa-phát",
+   "Mẹ vua là Xi-bia",
+   "Nhà tiên tri Ê-li-sê",
+   "Thầy tế lễ Giê-hô-gia-đa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sau khi thầy tế lễ qua đời, Giô-ách lìa bỏ Chúa. “Giô-ách làm điều ngay thẳng dưới mắt Đức Giê-hô-va suốt thời gian thầy tế lễ Giê-hô-gia-đa còn sống.” (2 Sử Ký 24:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 26,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ô-xia lên ngôi vua Giu-đa lúc mười sáu tuổi và cai trị bao nhiêu năm?",
+  "options": [
+   "Hai mươi chín năm",
+   "Năm mươi hai năm",
+   "Năm mươi lăm năm",
+   "Bốn mươi năm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ô-xia tìm kiếm Chúa bao lâu thì được may mắn bấy lâu. “cai trị năm mươi hai năm tại Giê-ru-sa-lem.” (2 Sử Ký 26:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 26,
+  "verseStart": 21,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi vua Ô-xia bị phong hủi đến ngày băng hà, ai lo việc triều chính thay vua?",
+  "options": [
+   "Thầy tế lễ A-xa-ria",
+   "Thái tử Giô-tham",
+   "Tướng Giô-áp",
+   "Thái tử A-cha"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vua phải ở nhà riêng, không được vào đền thờ nữa. “Vì thế, thái tử Giô-tham phải lo việc triều chính và cai trị dân trong xứ.” (2 Sử Ký 26:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 33,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ma-na-se lên làm vua Giu-đa lúc mười hai tuổi và cai trị bao lâu?",
+  "options": [
+   "Năm mươi hai năm",
+   "Bốn mươi năm",
+   "Năm mươi lăm năm",
+   "Ba mươi mốt năm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là triều đại dài nhất trong các vua Giu-đa. “và cai trị năm mươi lăm năm tại Giê-ru-sa-lem.” (2 Sử Ký 33:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 34,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Vua Giô-si-a bắt đầu tìm kiếm Đức Chúa Trời của Đa-vít vào năm thứ mấy đời trị vì?",
+  "options": [
+   "Năm thứ tám",
+   "Năm thứ mười tám",
+   "Năm thứ mười hai",
+   "Năm thứ nhất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đến năm thứ mười hai, vua dọn sạch các thần tượng. “Vào năm thứ tám đời trị vì, khi còn trẻ tuổi, vua bắt đầu tìm kiếm Đức Chúa Trời của Đa-vít” (2 Sử Ký 34:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "2 Chronicles",
+  "chapter": 34,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thầy tế lễ Hinh-kia trao cuốn sách luật pháp tìm được trong đền thờ cho ai?",
+  "options": [
+   "Vua Giô-si-a",
+   "Thầy tế lễ A-xa-ria",
+   "Nữ tiên tri Hun-đa",
+   "Thư ký Sa-phan"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sa-phan đem sách đến đọc cho vua nghe. “Rồi Hinh-kia trao sách ấy cho Sa-phan.” (2 Sử Ký 34:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "2 Timothy",
   "chapter": 2,
   "verseStart": 3,
@@ -9354,6 +11102,397 @@
    2
   ],
   "explanation": "Sách Các Vua kết thúc với tia hi vọng nầy. “Ê-vinh Mê-rô-đác, vua Ba-by-lôn” (2 Các Vua 25:27)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 23,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Ca Thương nói mỗi buổi sáng lòng thương xót của Chúa thế nào?",
+  "options": [
+   "Tươi mới luôn",
+   "Cạn dần",
+   "Ẩn đi",
+   "Chỉ đến ngày sa-bát"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Giữa cảnh đổ nát, người viết vẫn trông cậy Chúa. “Mỗi buổi sáng, lòng thương xót của Chúa tươi mới luôn” (Ca Thương 3:23)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 22,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Ca Thương nói nhờ đâu mà chúng ta không bị tiêu diệt?",
+  "options": [
+   "Tường thành vững chắc",
+   "Sự khôn ngoan của vua",
+   "Lòng nhân từ của Đức Giê-hô-va",
+   "Sức mạnh quân đội"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lòng thương xót của Chúa không bao giờ dứt. “Nhờ lòng nhân từ của Đức Giê-hô-va mà chúng ta không bị tiêu diệt” (Ca Thương 3:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Ca Thương than rằng thành Giê-ru-sa-lem xưa đông đúc, nay giống như ai?",
+  "options": [
+   "Một cô dâu",
+   "Một góa phụ",
+   "Một người mẹ đông con",
+   "Một nữ hoàng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Thành ngồi quạnh quẽ một mình sau khi bị tàn phá. “Nay như một góa phụ!” (Ca Thương 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 40,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Ca Thương kêu gọi xem xét lại đường lối mình rồi làm gì?",
+  "options": [
+   "Đi sang Ai Cập",
+   "Xây lại tường thành",
+   "Báo thù kẻ thù",
+   "Trở về với Đức Giê-hô-va"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Người viết kêu gọi dân ăn năn. “Chúng ta hãy xem đi xét lại đường lối mình, Và trở về với Đức Giê-hô-va.” (Ca Thương 3:40)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 5,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Lời cầu nguyện cuối sách Ca Thương xin Đức Giê-hô-va làm gì cho dân?",
+  "options": [
+   "Cho giàu có trở lại",
+   "Phục hồi họ",
+   "Tiêu diệt kẻ thù",
+   "Ban cho vua mới"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dân xin Chúa làm mới lại ngày tháng như thuở xưa. “Lạy Đức Giê-hô-va, xin phục hồi chúng con để chúng con được hồi phục!” (Ca Thương 5:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong sách Ca Thương, người viết tự nhủ Đức Giê-hô-va là gì của mình?",
+  "options": [
+   "Sản nghiệp",
+   "Đồn lũy",
+   "Bạn hữu",
+   "Vua"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Vì thế ông hi vọng nơi Ngài. “Đức Giê-hô-va là sản nghiệp tôi” (Ca Thương 3:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 26,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ca Thương nói thật tốt cho người yên lặng làm gì?",
+  "options": [
+   "Ngủ yên",
+   "Nhịn ăn",
+   "Ngồi một mình",
+   "Trông chờ ơn cứu rỗi của Chúa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa nhân từ với người trông đợi Ngài. “Thật tốt cho người yên lặng trông chờ Ơn cứu rỗi của Đức Giê-hô-va.” (Ca Thương 3:26)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 27,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ca Thương nói thật tốt cho người mang ách vào lúc nào?",
+  "options": [
+   "Lúc bị lưu đày",
+   "Lúc về già",
+   "Lúc còn trẻ",
+   "Lúc giàu có"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Học chịu đựng từ sớm là điều tốt. “Thật tốt cho người nào Mang ách lúc còn trẻ,” (Ca Thương 3:27)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 3,
+  "verseStart": 31,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ca Thương nói Chúa có từ bỏ ai mãi mãi không?",
+  "options": [
+   "Chỉ giữ người Lê-vi",
+   "Không từ bỏ ai mãi mãi",
+   "Từ bỏ dân ngoại",
+   "Từ bỏ mọi kẻ có tội"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dù làm cho đau buồn, Ngài vẫn thương xót. “Vì Chúa không từ bỏ ai mãi mãi.” (Ca Thương 3:31)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 2,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ca Thương kêu gọi ban đêm hãy trút đổ lòng ra như gì trước mặt Chúa?",
+  "options": [
+   "Như rượu",
+   "Như sữa",
+   "Như nước",
+   "Như dầu"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Dân được kêu gọi cầu xin cho con cái đang đói. “Hãy trút đổ lòng ra như nước Trước mặt Chúa.” (Ca Thương 2:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 1,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong sách Ca Thương, thành Giê-ru-sa-lem hỏi những người đi qua đường điều gì?",
+  "options": [
+   "Các người không quan tâm gì sao?",
+   "Các người từ đâu đến?",
+   "Ai sẽ xây lại tường thành?",
+   "Vua của các người là ai?"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Thành than rằng không nỗi buồn nào sánh bằng. “Các người không quan tâm gì sao?” (Ca Thương 1:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong sách Ca Thương, người qua đường nhạo Giê-ru-sa-lem, nhắc rằng thành từng được gọi là gì?",
+  "options": [
+   "Nhà của muôn dân",
+   "Ngọc của phương đông",
+   "Thành của các vua",
+   "Vẻ đẹp toàn hảo"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ vỗ tay, huýt sáo, lắc đầu trước cảnh đổ nát. “Vẻ đẹp toàn hảo, Niềm vui của cả địa cầu” (Ca Thương 2:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 5,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Ca Thương than rằng cuộc nhảy múa của dân đã đổi thành gì?",
+  "options": [
+   "Tang chế",
+   "Im lặng",
+   "Lao dịch",
+   "Chiến trận"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lòng dân mất hết niềm vui. “Cuộc nhảy múa đã đổi thành tang chế.” (Ca Thương 5:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Ca Thương than rằng những hòn đá thánh nằm rải rác ở đâu?",
+  "options": [
+   "Trong sân đền thờ",
+   "Trên núi Si-ôn",
+   "Khắp đầu đường góc phố",
+   "Dưới đáy sông"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vàng đã phai mờ, đền thờ bị phá đổ. “Những hòn đá thánh nằm rải rác Khắp mọi đầu đường góc phố!” (Ca Thương 4:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Ca Thương tả trẻ con trong thành bị vây xin bánh, kết quả thế nào?",
+  "options": [
+   "Được cho ma-na",
+   "Được vua phát gạo",
+   "Được cho bánh mì",
+   "Chẳng ai cho"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Trẻ thơ khát đến nỗi lưỡi dính vào vòm họng. “Trẻ con xin bánh Nhưng chẳng ai cho.” (Ca Thương 4:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 5,
+  "verseStart": 16,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sách Ca Thương than: điều gì đã rơi khỏi đầu dân vì họ phạm tội?",
+  "options": [
+   "Khăn đội đầu",
+   "Mão triều thiên",
+   "Mái tóc",
+   "Dầu xức"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dân thừa nhận tai họa đến vì tội lỗi mình. “Mão triều thiên rơi khỏi đầu chúng con” (Ca Thương 5:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Lamentations",
+  "chapter": 5,
+  "verseStart": 19,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cuối sách Ca Thương, dân thưa với Chúa rằng ngôi Ngài thế nào?",
+  "options": [
+   "Chỉ ở Giê-ru-sa-lem",
+   "Đã bị lật đổ",
+   "Ở tại Ba-by-lôn",
+   "Tồn tại từ thế hệ nầy sang thế hệ kia"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Dù thành đổ nát, Đức Giê-hô-va vẫn trị vì đời đời. “Ngôi Ngài tồn tại từ thế hệ nầy sang thế hệ kia.” (Ca Thương 5:19)",
   "language": "vi",
   "tags": [
    "Cựu Ước",
@@ -14629,6 +16768,972 @@
   ]
  },
  {
+  "book": "Numbers",
+  "chapter": 6,
+  "verseStart": 24,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Lời chúc phước Chúa dạy A-rôn đọc cho dân Y-sơ-ra-ên mở đầu thế nào?",
+  "options": [
+   "Bình an cho các ngươi",
+   "Hãy ca ngợi Đức Giê-hô-va",
+   "Hỡi Y-sơ-ra-ên, hãy nghe",
+   "Cầu xin Đức Giê-hô-va ban phước cho ngươi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đây là lời chúc phước các thầy tế lễ dùng để chúc cho dân. “Cầu xin Đức Giê-hô-va ban phước cho ngươi Và phù hộ ngươi!” (Dân Số Ký 6:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 21,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong hoang mạc, người bị rắn lửa cắn được sống khi làm gì?",
+  "options": [
+   "Nhìn con rắn bằng đồng",
+   "Dâng một con chiên con",
+   "Uống nước từ tảng đá",
+   "Rửa mình ở sông Giô-đanh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Môi-se treo con rắn bằng đồng trên cây sào theo lệnh Chúa. “Người nào bị rắn cắn mà nhìn con rắn bằng đồng thì được sống.” (Dân Số Ký 21:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 20,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ở Ca-đe, khi dân không có nước uống, Môi-se làm gì với tảng đá?",
+  "options": [
+   "Lăn tảng đá ra chỗ khác",
+   "Đập tảng đá hai lần",
+   "Đổ dầu lên tảng đá",
+   "Quỳ cầu nguyện bên tảng đá"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa bảo Môi-se truyền cho tảng đá, nhưng ông lại đập nó. “Tay Môi-se cầm gậy giơ lên đập tảng đá hai lần. Nước liền phun trào ra” (Dân Số Ký 20:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 17,
+  "verseStart": 8,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Cây gậy của ai đâm chồi, trổ hoa và ra trái hạnh nhân trong Lều Chứng Ước?",
+  "options": [
+   "Cô-ra",
+   "Giô-suê",
+   "A-rôn",
+   "Môi-se"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa dùng cây gậy trổ hoa để cho thấy Ngài chọn A-rôn. “thấy cây gậy A-rôn thuộc nhà Lê-vi đã đâm chồi; không những đâm chồi mà còn trổ hoa và ra trái hạnh nhân chín” (Dân Số Ký 17:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 9,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong hoang mạc, dấu hiệu nào cho dân Y-sơ-ra-ên biết lúc phải lên đường?",
+  "options": [
+   "Đám mây cất lên khỏi Đền Tạm",
+   "Một ngôi sao xuất hiện",
+   "Tiếng sấm trên núi",
+   "Gió thổi từ biển"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dân đi hay dừng theo đám mây của Chúa trên Đền Tạm. “Mỗi khi đám mây cất lên khỏi Lều thì dân Y-sơ-ra-ên ra đi” (Dân Số Ký 9:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Môi-se kiểm tra dân số ở hoang mạc Si-na-i, nam đinh được đếm từ bao nhiêu tuổi?",
+  "options": [
+   "Mười hai tuổi trở lên",
+   "Ba mươi tuổi trở lên",
+   "Hai mươi tuổi trở lên",
+   "Mười tám tuổi trở lên"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Cuộc kiểm tra đếm những người có thể ra trận. “từ hai mươi tuổi trở lên, tức là tất cả người Y-sơ-ra-ên có thể ra trận được” (Dân Số Ký 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 1,
+  "verseStart": 47,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong cuộc kiểm tra dân số ở hoang mạc Si-na-i, bộ tộc nào không được tính chung?",
+  "options": [
+   "Giu-đa",
+   "Lê-vi",
+   "Đan",
+   "Ru-bên"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người Lê-vi được biệt riêng để phục vụ Đền Tạm. “Nhưng người Lê-vi theo bộ tộc của ông cha mình không được tính chung với những bộ tộc khác.” (Dân Số Ký 1:47)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va chọn người Lê-vi để thay thế cho ai trong dân Y-sơ-ra-ên?",
+  "options": [
+   "Các con út",
+   "Các thầy tế lễ già",
+   "Các trưởng lão",
+   "Tất cả con đầu lòng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Con đầu lòng thuộc về Chúa, và người Lê-vi thay cho họ. “Ta đã chọn người Lê-vi từ trong dân Y-sơ-ra-ên để thay thế cho tất cả con đầu lòng trong dân Y-sơ-ra-ên.” (Dân Số Ký 3:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 6,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, trong thời gian hứa nguyện, người Na-xi-rê không được làm gì với tóc mình?",
+  "options": [
+   "Cạo tóc",
+   "Xức dầu lên tóc",
+   "Gội tóc",
+   "Che tóc lại"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Tóc dài là dấu người ấy được biệt riêng cho Chúa. “người ấy không được cạo tóc trên đầu” (Dân Số Ký 6:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 6,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, người hứa nguyện Na-xi-rê phải kiêng thức uống nào?",
+  "options": [
+   "Nước giếng",
+   "Nước ép lựu",
+   "Sữa và mật",
+   "Rượu và thức uống có men"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Người Na-xi-rê kiêng cả mọi thứ làm từ nho. “thì phải kiêng rượu và thức uống có men” (Dân Số Ký 6:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 9,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong hoang mạc, ban đêm đám mây trên Đền Tạm trông giống gì?",
+  "options": [
+   "Ngôi sao sáng",
+   "Vầng lửa",
+   "Cầu vồng",
+   "Cột khói đen"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ban ngày là đám mây, ban đêm như lửa, ngày nào cũng vậy. “Ban ngày, đám mây bao phủ Đền Tạm và ban đêm nó giống như vầng lửa” (Dân Số Ký 9:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 10,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong hoang mạc, Môi-se được dặn làm hai cây kèn bằng gì để triệu tập hội chúng?",
+  "options": [
+   "Đồng đỏ",
+   "Sừng chiên đực",
+   "Bạc dát mỏng",
+   "Vàng ròng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Tiếng kèn dùng để gọi hội chúng và báo các trại quân ra đi. “Con hãy làm hai cây kèn bằng bạc dát mỏng” (Dân Số Ký 10:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 11,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chán ăn ma-na trong hoang mạc, dân Y-sơ-ra-ên nhớ món gì từng ăn không trả tiền ở Ai Cập?",
+  "options": [
+   "Bánh lúa mì",
+   "Cá",
+   "Chim cút",
+   "Thịt bò"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dân than khóc, nhớ đồ ăn ở Ai Cập. “Chúng tôi nhớ cá mà chúng tôi ăn không phải trả tiền tại Ai Cập” (Dân Số Ký 11:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 11,
+  "verseStart": 31,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi dân đòi ăn thịt trong hoang mạc, Đức Giê-hô-va khiến gió đùa loài chim nào đến?",
+  "options": [
+   "Chim cút",
+   "Chim sẻ",
+   "Chim đa đa",
+   "Bồ câu"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chim cút phủ khắp quanh trại quân. “Đức Giê-hô-va khiến một trận gió đùa chim cút từ biển về hướng trại quân” (Dân Số Ký 11:31)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 11,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Để chia gánh nặng lãnh đạo với Môi-se, Đức Giê-hô-va bảo họp bao nhiêu trưởng lão?",
+  "options": [
+   "Bốn mươi người",
+   "Một trăm người",
+   "Bảy mươi người",
+   "Mười hai người"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa ban Thần Ngài cho họ để cùng Môi-se gánh vác dân. “Hãy họp bảy mươi người trong số trưởng lão Y-sơ-ra-ên” (Dân Số Ký 11:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 12,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Mi-ri-am và A-rôn nói hành Môi-se, Kinh Thánh nói Môi-se là người thế nào?",
+  "options": [
+   "Rất hùng biện",
+   "Rất nóng giận",
+   "Rất giàu có",
+   "Rất khiêm hòa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Môi-se không tự bênh vực mình; Đức Giê-hô-va bênh vực ông. “Môi-se là người rất khiêm hòa, khiêm hòa hơn hết mọi người trên thế gian.” (Dân Số Ký 12:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 12,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì nói hành Môi-se, Mi-ri-am bị mắc bệnh gì?",
+  "options": [
+   "Mù mắt",
+   "Sốt nặng",
+   "Câm",
+   "Phong hủi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đức Giê-hô-va nổi giận với Mi-ri-am và A-rôn. “thì Mi-ri-am bị phong hủi trắng như tuyết” (Dân Số Ký 12:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 12,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bị phong hủi vì nói hành Môi-se, Mi-ri-am phải ở ngoài trại quân bao lâu?",
+  "options": [
+   "Ba ngày",
+   "Bốn mươi ngày",
+   "Bảy ngày",
+   "Một tháng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Môi-se cầu xin, Chúa chữa lành nhưng bà phải ở ngoài trại bảy ngày. “Như vậy, Mi-ri-am bị giữ ngoài trại quân trong bảy ngày.” (Dân Số Ký 12:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 13,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trước khi sai đi do thám Ca-na-an, Môi-se đổi tên Hô-sê, con trai Nun, thành gì?",
+  "options": [
+   "Phi-nê-a",
+   "Giô-suê",
+   "Ca-lép",
+   "Ê-lê-a-sa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Giô-suê về sau dẫn dân vào xứ hứa. “Môi-se đặt tên cho Hô-sê, con trai Nun, là Giô-suê.” (Dân Số Ký 13:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 13,
+  "verseStart": 25,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Các thám tử Môi-se sai đi do thám xứ Ca-na-an trong bao lâu?",
+  "options": [
+   "Bốn mươi ngày",
+   "Một năm",
+   "Ba tháng",
+   "Bảy ngày"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Về sau dân phải lang thang một năm cho mỗi ngày do thám. “Họ đi do thám xứ trong bốn mươi ngày và trở về.” (Dân Số Ký 13:25)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 16,
+  "verseStart": 32,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Cô-ra nổi loạn chống Môi-se, điều gì xảy ra với phe Cô-ra?",
+  "options": [
+   "Bị rắn lửa cắn",
+   "Đất nứt ra nuốt họ",
+   "Bị đuổi khỏi trại quân",
+   "Lửa từ trời thiêu họ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đất nứt ra ngay khi Môi-se vừa dứt lời. “hả miệng nuốt họ, gia quyến và tất cả những người theo Cô-ra cùng tài sản của họ.” (Dân Số Ký 16:32)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 16,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo Cô-ra nổi lên chống Môi-se có bao nhiêu thủ lĩnh của hội chúng?",
+  "options": [
+   "Mười hai người",
+   "Một nghìn người",
+   "Hai trăm năm mươi người",
+   "Bảy mươi người"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ là những người có danh tiếng trong hội chúng. “Cùng với họ có hai trăm năm mươi người trong dân Y-sơ-ra-ên vốn là những thủ lĩnh của hội chúng” (Dân Số Ký 16:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 17,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi trổ hoa, cây gậy A-rôn được đặt ở đâu để làm dấu hiệu cảnh cáo?",
+  "options": [
+   "Trên bàn thờ",
+   "Trên núi Hô-rơ",
+   "Ở cửa trại quân",
+   "Trước Hòm Chứng Ước"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cây gậy nhắc dân đừng cằn nhằn chống lại Chúa. “Hãy đem cây gậy của A-rôn đặt lại trước Hòm Chứng Ước để giữ làm một dấu hiệu cảnh cáo về sự nổi loạn.” (Dân Số Ký 17:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 20,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Mi-ri-am, chị của Môi-se, qua đời và được chôn ở đâu?",
+  "options": [
+   "Ca-đe",
+   "Núi Hô-rơ",
+   "Ai Cập",
+   "Giê-ri-cô"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bà mất khi dân dừng lại ở hoang mạc Xin. “cả hội chúng Y-sơ-ra-ên đến hoang mạc Xin và dừng lại tại Ca-đe. Mi-ri-am qua đời và được chôn tại đó.” (Dân Số Ký 20:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 20,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau chuyện nước từ tảng đá, vì sao Môi-se và A-rôn không được dẫn dân vào xứ hứa?",
+  "options": [
+   "Vì dân không muốn theo",
+   "Vì đã quá già",
+   "Không tin để tôn thánh Chúa",
+   "Vì sợ người khổng lồ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hai ông không làm theo lời Chúa trước mặt dân. “Vì các con không tin Ta để tôn thánh Ta trước mặt dân Y-sơ-ra-ên” (Dân Số Ký 20:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 33,
+  "verseStart": 38,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thầy tế lễ A-rôn qua đời trên núi nào?",
+  "options": [
+   "Núi Hô-rơ",
+   "Núi Cạt-mên",
+   "Núi Si-na-i",
+   "Núi Nê-bô"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "A-rôn lên núi theo lệnh Chúa và qua đời ở đó. “Thầy tế lễ A-rôn lên núi Hô-rơ theo lệnh của Đức Giê-hô-va và qua đời tại đó” (Dân Số Ký 33:38)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 20,
+  "verseStart": 28,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trước khi A-rôn qua đời, Môi-se lấy y phục của A-rôn mặc cho ai?",
+  "options": [
+   "Phi-nê-a",
+   "Ê-lê-a-sa",
+   "Giô-suê",
+   "Na-đáp"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ê-lê-a-sa, con A-rôn, nối chức thầy tế lễ thượng phẩm. “Môi-se cởi y phục của A-rôn và mặc cho Ê-lê-a-sa, con trai người.” (Dân Số Ký 20:28)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 20,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi A-rôn qua đời, dân Y-sơ-ra-ên khóc thương ông trong bao lâu?",
+  "options": [
+   "Một năm",
+   "Bốn mươi ngày",
+   "Bảy ngày",
+   "Ba mươi ngày"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Cả hội chúng để tang A-rôn. “toàn thể hội chúng Y-sơ-ra-ên khóc thương người trong ba mươi ngày.” (Dân Số Ký 20:29)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 21,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì dân than phiền trên đường vòng qua xứ Ê-đôm, Đức Giê-hô-va sai gì đến?",
+  "options": [
+   "Sư tử",
+   "Rắn lửa",
+   "Châu chấu",
+   "Bọ chét"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Nhiều người bị cắn chết, dân ăn năn và Môi-se cầu thay. “Đức Giê-hô-va sai rắn lửa đến trong dân chúng” (Dân Số Ký 21:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 23,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ba-la-am nói tiên tri: Đức Chúa Trời không phải là người để làm gì?",
+  "options": [
+   "Nói dối",
+   "Mỏi mệt",
+   "Ngủ quên",
+   "Than khóc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lời Chúa đã hứa thì Ngài làm trọn. “Đức Chúa Trời không phải là người mà nói dối” (Dân Số Ký 23:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 1,
+  "verseStart": 46,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cuộc kiểm tra dân số đầu tiên ở hoang mạc Si-na-i đếm được bao nhiêu nam đinh?",
+  "options": [
+   "Sáu trăm lẻ một nghìn bảy trăm ba mươi",
+   "Năm trăm bảy mươi nghìn",
+   "Sáu trăm lẻ ba nghìn năm trăm năm mươi",
+   "Bảy trăm hai mươi nghìn"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là số người có thể ra trận, chưa kể người Lê-vi. “tổng số là sáu trăm lẻ ba nghìn năm trăm năm mươi người.” (Dân Số Ký 1:46)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 11,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nơi lửa của Đức Giê-hô-va thiêu phần đầu trại quân vì dân phàn nàn được đặt tên gì?",
+  "options": [
+   "Mê-ri-ba",
+   "Kíp-rốt Ha-tha-va",
+   "Ma-ra",
+   "Tha-bê-ra"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Môi-se cầu nguyện thì lửa dừng lại. “Người ta đặt tên chỗ nầy là Tha-bê-ra” (Dân Số Ký 11:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 11,
+  "verseStart": 34,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nơi chôn đám dân tham ăn sau trận chim cút trong hoang mạc được gọi là gì?",
+  "options": [
+   "Rê-phi-đim",
+   "Kíp-rốt Ha-tha-va",
+   "Mê-ri-ba",
+   "Tha-bê-ra"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tai họa đến khi thịt chim cút còn trong miệng dân. “Nơi nầy được đặt tên là Kíp-rốt Ha-tha-va vì tại đó người ta chôn một đám dân tham ăn.” (Dân Số Ký 11:34)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 11,
+  "verseStart": 29,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi Giô-suê xin Môi-se ngăn hai người nói tiên tri trong trại quân, Môi-se ước điều gì?",
+  "options": [
+   "Họ im lặng ngay",
+   "Chỉ mình ông được nói tiên tri",
+   "Mọi con dân Chúa đều là tiên tri",
+   "Họ bị đuổi khỏi trại"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Môi-se không ganh tị khi người khác được Thần Chúa ban cho. “Ước gì tất cả con dân của Đức Giê-hô-va đều là những nhà tiên tri” (Dân Số Ký 11:29)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 12,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Mi-ri-am và A-rôn nói hành Môi-se vì ông cưới một người nữ gốc ở đâu?",
+  "options": [
+   "Ê-thi-ô-pi",
+   "Ma-đi-an",
+   "Ai Cập",
+   "Mô-áp"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Hai người còn ganh tị vì Chúa phán qua Môi-se. “Mi-ri-am và A-rôn nói hành Môi-se về người nữ Ê-thi-ô-pi mà ông đã cưới” (Dân Số Ký 12:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 13,
+  "verseStart": 22,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi do thám xứ Ca-na-an, các thám tử thấy con cháu A-nác ở thành nào?",
+  "options": [
+   "Bê-tên",
+   "A-hi",
+   "Giê-ri-cô",
+   "Hếp-rôn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Con cháu A-nác là những người cao lớn khiến thám tử sợ hãi. “đến thành Hếp-rôn là nơi có A-hi-man, Sê-sai và Thanh-mai, con cháu A-nác” (Dân Số Ký 13:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 16,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cô-ra, người cầm đầu cuộc nổi loạn chống Môi-se, là dòng dõi của ai?",
+  "options": [
+   "Ru-bên",
+   "Lê-vi",
+   "Giu-đa",
+   "Gát"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đa-than và A-bi-ram, cùng phe với ông, thuộc dòng Ru-bên. “Cô-ra, con trai của Dít-sê-ha, cháu của Kê-hát, chít của Lê-vi” (Dân Số Ký 16:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 20,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Nước phun ra từ tảng đá ở Ca-đe được gọi là nước gì?",
+  "options": [
+   "Nước Ga-ba-ôn",
+   "Nước Ê-lim",
+   "Nước Ma-ra",
+   "Nước Mê-ri-ba"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tên ấy nhắc lại việc dân gây chuyện với Đức Giê-hô-va. “Nước uống đó được gọi là nước uống Mê-ri-ba” (Dân Số Ký 20:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 33,
+  "verseStart": 39,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "A-rôn qua đời trên núi Hô-rơ khi bao nhiêu tuổi?",
+  "options": [
+   "Một trăm hai mươi ba tuổi",
+   "Một trăm hai mươi tuổi",
+   "Một trăm ba mươi tuổi",
+   "Tám mươi ba tuổi"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ông mất vào năm thứ bốn mươi sau khi ra khỏi Ai Cập. “A-rôn qua đời trên núi Hô-rơ, hưởng thọ một trăm hai mươi ba tuổi.” (Dân Số Ký 33:39)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 24,
+  "verseStart": 17,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ba-la-am nói tiên tri: một ngôi sao sẽ hiện ra từ đâu?",
+  "options": [
+   "Mô-áp",
+   "Ê-đôm",
+   "Gia-cốp",
+   "Ai Cập"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Lời tiên tri về vị vua sẽ trỗi dậy từ Y-sơ-ra-ên. “Một ngôi sao hiện ra từ Gia-cốp” (Dân Số Ký 24:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 27,
+  "verseStart": 7,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Những người con gái nào xin Môi-se phần sản nghiệp vì cha họ chết mà không có con trai?",
+  "options": [
+   "Các con gái Lót",
+   "Các con gái Xê-lô-phát",
+   "Các con gái Gióp",
+   "Các con gái Giê-thơ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúa phán họ nói có lý và được nhận sản nghiệp của cha. “Các người con gái Xê-lô-phát nói có lý.” (Dân Số Ký 27:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Numbers",
+  "chapter": 35,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, trong các thành cấp cho người Lê-vi có bao nhiêu thành ẩn náu?",
+  "options": [
+   "Sáu thành",
+   "Bốn mươi hai thành",
+   "Bốn thành",
+   "Mười hai thành"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Kẻ ngộ sát có thể trốn đến đó cho tới khi được xét xử. “Trong số thành các con cấp cho người Lê-vi sẽ có sáu thành ẩn náu” (Dân Số Ký 35:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "Ephesians",
   "chapter": 6,
   "verseStart": 1,
@@ -17497,6 +20602,1570 @@
    2
   ],
   "explanation": "Đó là những ngày họ nghỉ ngơi sau khi được giải cứu. “để dặn họ phải giữ ngày mười bốn và mười lăm của tháng A-đa hằng năm.” (Ê-xơ-tê 9:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 37,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng, Thần Đức Giê-hô-va đặt Ê-xê-chi-ên giữa một thung lũng đầy gì?",
+  "options": [
+   "Đá quý",
+   "Những hài cốt",
+   "Cây ô-liu",
+   "Chiên lạc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Các hài cốt trong thung lũng ấy rất khô. “đặt tôi giữa thung lũng; thung lũng ấy đầy những hài cốt.” (Ê-xê-chi-ên 37:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 37,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Ê-xê-chi-ên nói tiên tri cho hơi thở vào, các hài cốt trong thung lũng trở thành gì?",
+  "options": [
+   "Một rừng cây",
+   "Một bầy chiên",
+   "Một đạo quân rất lớn",
+   "Một thành phố"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa cho thấy Ngài có thể làm dân Ngài sống lại. “Chúng sống và đứng dậy trên chân mình, hợp thành một đạo quân rất lớn.” (Ê-xê-chi-ên 37:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Khi Ê-xê-chi-ên ăn cuộn sách Chúa đưa cho, ông thấy trong miệng thế nào?",
+  "options": [
+   "Đắng như ngải",
+   "Mặn như muối",
+   "Cay như ớt",
+   "Ngọt như mật"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ăn xong, ông phải đi nói lời Chúa cho nhà Y-sơ-ra-ên. “Vậy tôi ăn vào và thấy trong miệng ngọt như mật.” (Ê-xê-chi-ên 3:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 36,
+  "verseStart": 26,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua Ê-xê-chi-ên, Chúa hứa cất lòng bằng đá và ban cho dân lòng bằng gì?",
+  "options": [
+   "Lòng bằng thịt",
+   "Lòng bằng sắt",
+   "Lòng bằng ngọc",
+   "Lòng bằng vàng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa hứa ban lòng mới và Thần mới cho dân Ngài. “Ta sẽ cất lòng bằng đá khỏi xác thịt các ngươi và ban cho các ngươi lòng bằng thịt.” (Ê-xê-chi-ên 36:26)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 3,
+  "verseStart": 17,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Chúa Trời lập Ê-xê-chi-ên làm gì cho nhà Y-sơ-ra-ên?",
+  "options": [
+   "Tướng chỉ huy",
+   "Người canh giữ",
+   "Vua",
+   "Thầy tế lễ thượng phẩm"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông phải thay Chúa cảnh cáo dân. “Ta đã lập con làm người canh giữ nhà Y-sơ-ra-ên.” (Ê-xê-chi-ên 3:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 34,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua Ê-xê-chi-ên, Chúa phán khi những người chăn bỏ bầy, chính Ngài sẽ làm gì?",
+  "options": [
+   "Lập vua mới",
+   "Bán bầy chiên đi",
+   "Bỏ mặc bầy chiên",
+   "Tìm kiếm chiên của Ngài"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa tự làm người chăn cho dân Ngài. “Nầy chính Ta sẽ tìm chiên Ta, Ta sẽ tìm kiếm chúng.” (Ê-xê-chi-ên 34:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Ê-xê-chi-ên thấy khải tượng của Đức Chúa Trời khi đang ở bên bờ sông nào?",
+  "options": [
+   "Sông Giô-đanh",
+   "Sông Nin",
+   "Sông Kê-ba",
+   "Sông Ơ-phơ-rát"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông ở giữa những người bị lưu đày. “khi tôi đang ở giữa những người bị lưu đày bên bờ sông Kê-ba” (Ê-xê-chi-ên 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 33,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Qua Ê-xê-chi-ên, Chúa phán Ngài vui khi kẻ dữ làm gì?",
+  "options": [
+   "Từ bỏ đường lối mình và được sống",
+   "Bị trừng phạt nặng",
+   "Chạy trốn thật xa",
+   "Dâng nhiều tế lễ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa chẳng vui về sự chết của kẻ dữ. “nhưng vui vì nó từ bỏ đường lối mình và được sống.” (Ê-xê-chi-ên 33:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng của Ê-xê-chi-ên, mỗi sinh vật có mặt người, mặt sư tử, mặt bò và mặt gì?",
+  "options": [
+   "Mặt chiên con",
+   "Mặt ngựa",
+   "Mặt rồng",
+   "Mặt chim ưng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Bốn sinh vật đều có bốn mặt. “bốn con đều có mặt chim ưng.” (Ê-xê-chi-ên 1:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 2,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Cuộn sách Chúa mở ra trước mặt Ê-xê-chi-ên chép những lời gì?",
+  "options": [
+   "Đau thương, than khóc, khốn nạn",
+   "Ca ngợi và vui mừng",
+   "Gia phả các vua",
+   "Luật lệ về đền thờ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cuộn sách có chữ viết cả bên trong lẫn bên ngoài. “với những lời đầy đau thương, than khóc, và khốn nạn được chép vào đó.” (Ê-xê-chi-ên 2:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Để mang tội nhà Y-sơ-ra-ên, Ê-xê-chi-ên được bảo phải nằm thế nào?",
+  "options": [
+   "Nằm ngửa trên đất",
+   "Nằm trên giường gai",
+   "Nằm nghiêng bên trái",
+   "Nằm sấp trong bụi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là một hành động tượng trưng Chúa bảo ông làm. “Kế đó, con nằm nghiêng bên trái và đặt tội lỗi nhà Y-sơ-ra-ên trên con.” (Ê-xê-chi-ên 4:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Ê-xê-chi-ên nằm nghiêng mang tội của dân, mỗi ngày tượng trưng cho bao lâu?",
+  "options": [
+   "Một tuần",
+   "Một năm",
+   "Bảy năm",
+   "Một tháng"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Số ngày bằng số năm tội lỗi của dân. “một ngày thay cho một năm.” (Ê-xê-chi-ên 4:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 5,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa bảo Ê-xê-chi-ên dùng một thanh gươm bén làm dao cạo để cạo gì?",
+  "options": [
+   "Lông chiên",
+   "Da bò",
+   "Vỏ cây",
+   "Đầu và râu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ông phải cân và chia tóc ra làm dấu cho dân. “hãy lấy một thanh gươm bén dùng làm dao cạo râu mà đưa qua đầu và râu của con.” (Ê-xê-chi-ên 5:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 18,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua Ê-xê-chi-ên, Chúa phán linh hồn nào phạm tội thì sao?",
+  "options": [
+   "Được tha ngay",
+   "Sẽ chết",
+   "Phải đi lưu đày",
+   "Phải dâng tế lễ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Mọi linh hồn đều thuộc về Chúa. “linh hồn nào phạm tội thì sẽ chết.” (Ê-xê-chi-ên 18:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 18,
+  "verseStart": 20,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua Ê-xê-chi-ên, Chúa phán con có phải gánh chịu tội ác của cha không?",
+  "options": [
+   "Có, nếu là con trưởng",
+   "Chỉ khi cha là vua",
+   "Không, mỗi người chịu tội mình",
+   "Có, đến ba bốn đời"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Điều công chính hay điều dữ được kể cho chính người làm. “Con sẽ không gánh chịu tội ác của cha và cha cũng không gánh chịu tội ác của con.” (Ê-xê-chi-ên 18:20)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 18,
+  "verseStart": 31,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua Ê-xê-chi-ên, Chúa kêu gọi nhà Y-sơ-ra-ên làm cho mình điều gì mới?",
+  "options": [
+   "Tấm lòng mới và tâm linh mới",
+   "Một đền thờ mới",
+   "Một vị vua mới",
+   "Một bàn thờ mới"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chúa muốn dân ăn năn để được sống. “Hãy làm cho mình một tấm lòng mới và một tâm linh mới!” (Ê-xê-chi-ên 18:31)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 22,
+  "verseStart": 30,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua Ê-xê-chi-ên, Chúa nói Ngài tìm một người đứng chỗ sứt mẻ của tường thành; kết quả thế nào?",
+  "options": [
+   "Chẳng tìm được một ai",
+   "Tìm được Ê-xê-chi-ên",
+   "Tìm được rất nhiều người",
+   "Tìm được vua Giu-đa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Không ai đứng ra cầu thay cho xứ. “nhưng Ta chẳng tìm được một ai.” (Ê-xê-chi-ên 22:30)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 24,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Báo trước rằng vợ Ê-xê-chi-ên sẽ chết, Chúa dặn ông điều gì?",
+  "options": [
+   "Để tang bảy ngày",
+   "Không được khóc than",
+   "Cạo đầu để tang",
+   "Chôn bà ở Giê-ru-sa-lem"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Việc ấy là dấu hiệu cho dân về tai họa sắp đến. “nhưng con không được than thở, không được khóc lóc và không được đổ nước mắt.” (Ê-xê-chi-ên 24:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 34,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua Ê-xê-chi-ên, Chúa trách những người chăn của Y-sơ-ra-ên vì điều gì?",
+  "options": [
+   "Ngủ quá nhiều",
+   "Đánh mất cây gậy",
+   "Chỉ lo nuôi mình",
+   "Bán chiên cho ngoại bang"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người chăn phải nuôi bầy chiên. “Khốn cho những kẻ chăn của Y-sơ-ra-ên là những kẻ chỉ lo nuôi mình!” (Ê-xê-chi-ên 34:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 34,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Qua Ê-xê-chi-ên, Chúa hứa sẽ làm gì cho con chiên bị thương?",
+  "options": [
+   "Dâng làm tế lễ",
+   "Bán nó đi",
+   "Bỏ nó lại",
+   "Rịt lành nó"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa cũng tìm chiên lạc và làm chiên yếu được mạnh. “rịt lành con chiên bị thương” (Ê-xê-chi-ên 34:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 37,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi Chúa hỏi những hài cốt khô có thể sống chăng, Ê-xê-chi-ên thưa thế nào?",
+  "options": [
+   "Chính Chúa biết điều đó",
+   "Con không dám trả lời",
+   "Không thể nào sống được",
+   "Chắc chắn sẽ sống"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Ê-xê-chi-ên phó điều ấy cho Chúa. “Lạy Chúa Giê-hô-va, chính Chúa biết điều đó!” (Ê-xê-chi-ên 37:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 37,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau lần Ê-xê-chi-ên nói tiên tri đầu tiên, các hài cốt khô có gân, thịt, da nhưng còn thiếu gì?",
+  "options": [
+   "Mái tóc",
+   "Đôi mắt",
+   "Quần áo",
+   "Hơi thở"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chúa bảo Ê-xê-chi-ên nói tiên tri cùng gió. “có da bao bọc nhưng không có hơi thở ở trong.” (Ê-xê-chi-ên 37:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 37,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa giải thích với Ê-xê-chi-ên rằng những hài cốt khô trong thung lũng là ai?",
+  "options": [
+   "Các vua Giu-đa",
+   "Cả nhà Y-sơ-ra-ên",
+   "Dân Ba-by-lôn",
+   "Quân Ai Cập"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dân nói niềm hi vọng của họ đã mất. “những hài cốt nầy là cả nhà Y-sơ-ra-ên.” (Ê-xê-chi-ên 37:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 37,
+  "verseStart": 17,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa bảo Ê-xê-chi-ên làm gì với hai cây gậy ghi tên Giu-đa và Giô-sép?",
+  "options": [
+   "Chôn dưới đất",
+   "Bẻ gãy cả hai",
+   "Ghép lại thành một cây",
+   "Đốt trong lửa"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Hai nước sẽ hiệp lại làm một trong tay Chúa. “Hãy ghép hai cây gậy ấy lại với nhau thành một cây trong tay con.” (Ê-xê-chi-ên 37:17)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 47,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng về đền thờ mới, Ê-xê-chi-ên thấy dòng nước chảy ra từ đâu?",
+  "options": [
+   "Dưới ngưỡng cửa đền thờ",
+   "Từ giếng trong sân",
+   "Từ đỉnh núi",
+   "Từ một tảng đá"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Dòng nước chảy về phía đông và càng lúc càng sâu. “dòng nước chảy ra từ dưới ngưỡng cửa của đền thờ về phía đông” (Ê-xê-chi-ên 47:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 47,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng của Ê-xê-chi-ên, nước từ đền thờ chảy đến đâu thì nước biển thế nào?",
+  "options": [
+   "Đóng băng",
+   "Khô cạn",
+   "Trở nên ngọt",
+   "Trở nên đỏ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sông ấy chảy đến đâu thì mọi vật sống ở đó. “Nước ấy chảy đến đâu thì nước biển trở nên ngọt” (Ê-xê-chi-ên 47:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ê-xê-chi-ên thấy khải tượng đầu tiên bên sông Kê-ba vào năm thứ mấy?",
+  "options": [
+   "Năm thứ mười hai",
+   "Năm thứ bốn mươi",
+   "Năm thứ bảy",
+   "Năm thứ ba mươi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Đó là ngày mùng năm tháng tư năm ấy. “Vào năm thứ ba mươi, ngày mùng năm tháng tư” (Ê-xê-chi-ên 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 4,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ê-xê-chi-ên nằm nghiêng bên trái mang tội nhà Y-sơ-ra-ên bao nhiêu ngày?",
+  "options": [
+   "Ba trăm sáu mươi lăm ngày",
+   "Ba trăm chín mươi ngày",
+   "Bốn mươi ngày",
+   "Bảy mươi ngày"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Số ngày bằng số năm tội lỗi của họ. “tức là ba trăm chín mươi ngày.” (Ê-xê-chi-ên 4:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 4,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Ê-xê-chi-ên nằm nghiêng bên phải mang tội nhà Giu-đa bao nhiêu ngày?",
+  "options": [
+   "Bảy ngày",
+   "Bảy mươi ngày",
+   "Ba trăm chín mươi ngày",
+   "Bốn mươi ngày"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Mỗi ngày thay cho một năm. “mang lấy tội lỗi của nhà Giu-đa suốt bốn mươi ngày” (Ê-xê-chi-ên 4:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 4,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong những ngày nằm nghiêng mang tội dân, Ê-xê-chi-ên làm bánh từ những thứ gì?",
+  "options": [
+   "Bột mì và dầu ô-liu",
+   "Lúa mì, lúa mạch, đậu và kê",
+   "Chà là và nho khô",
+   "Bột mì và mật ong"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông ăn bánh ấy suốt ba trăm chín mươi ngày. “Con cũng hãy lấy lúa mì, lúa mạch, đậu, đậu lăng, kê và đại mạch” (Ê-xê-chi-ên 4:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 28,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Bài ai ca Ê-xê-chi-ên làm về vua Ty-rơ nói vua ấy vốn ở đâu?",
+  "options": [
+   "Núi Si-na-i",
+   "Thành Ba-by-lôn",
+   "Ê-đen, vườn của Đức Chúa Trời",
+   "Đảo Síp"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vua Ty-rơ được tả là có đủ mọi thứ ngọc báu. “Ngươi vốn ở trong Ê-đen, là vườn của Đức Chúa Trời.” (Ê-xê-chi-ên 28:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 47,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng của Ê-xê-chi-ên, đo thêm năm trăm mét nữa thì dòng nước từ đền thờ thành gì?",
+  "options": [
+   "Một con sông phải bơi qua",
+   "Một vũng lầy",
+   "Một cái hồ nhỏ",
+   "Một thác nước"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nước càng chảy càng sâu. “bấy giờ là một con sông mà tôi không thể đi qua được vì nước đã lên cao, mà phải bơi qua” (Ê-xê-chi-ên 47:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 47,
+  "verseStart": 12,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng của Ê-xê-chi-ên, lá cây bên bờ sông chảy ra từ đền thờ dùng để làm gì?",
+  "options": [
+   "Làm thuốc",
+   "Làm mão",
+   "Làm hương",
+   "Lót đường"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cây ra trái mới mỗi tháng nhờ nước từ nơi thánh. “Trái nó dùng để ăn, lá nó dùng để làm thuốc.” (Ê-xê-chi-ên 47:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 48,
+  "verseStart": 35,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Cuối sách Ê-xê-chi-ên, thành mới được đặt tên là gì?",
+  "options": [
+   "Thành của Đa-vít",
+   "Thành bình an",
+   "Si-ôn mới",
+   "Đức Giê-hô-va ngự tại đó"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Tên ấy nói Chúa ở giữa dân Ngài. “tên của thành sẽ là: “Đức Giê-hô-va ngự tại đó!”” (Ê-xê-chi-ên 48:35)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 37,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong thung lũng hài cốt, Ê-xê-chi-ên được bảo gọi hơi thở đến từ đâu?",
+  "options": [
+   "Biển lớn",
+   "Gió bốn phương",
+   "Núi Si-ôn",
+   "Đền thờ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hơi thở đến để những người bị giết được sống. “Hỡi hơi thở, hãy đến từ gió bốn phương” (Ê-xê-chi-ên 37:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezekiel",
+  "chapter": 1,
+  "verseStart": 10,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong khải tượng của Ê-xê-chi-ên, mặt sư tử của bốn sinh vật ở phía nào?",
+  "options": [
+   "Phía trên",
+   "Phía sau",
+   "Bên phải",
+   "Bên trái"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Mặt bò thì ở bên trái. “bốn con đều có mặt sư tử ở bên phải” (Ê-xê-chi-ên 1:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo sách E-xơ-ra, Đức Giê-hô-va thúc giục lòng vua Ba Tư nào ra sắc chỉ xây lại đền thờ?",
+  "options": [
+   "Đa-ri-út",
+   "Si-ru",
+   "A-suê-ru",
+   "Nê-bu-cát-nết-sa"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Việc nầy ứng nghiệm lời Chúa phán qua Giê-rê-mi. “nên Ngài thúc giục lòng Si-ru, vua Ba Tư, ra sắc chỉ” (E-xơ-ra 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Vua Si-ru trả lại cho dân Do Thái những gì mà Nê-bu-cát-nết-sa đã đem đi?",
+  "options": [
+   "Vương miện của vua Đa-vít",
+   "Các cuộn sách luật pháp",
+   "Hòm Giao Ước",
+   "Vật dụng của đền thờ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Các vật dụng ấy đã nằm trong miếu thờ thần của vua Ba-by-lôn. “Vua Si-ru cũng trả lại những vật dụng của đền thờ Đức Giê-hô-va mà Nê-bu-cát-nết-sa đã đem đi khỏi Giê-ru-sa-lem” (E-xơ-ra 1:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trở về từ lưu đày, Giê-sua và Xô-rô-ba-bên xây lại gì trước tiên để dâng tế lễ thiêu?",
+  "options": [
+   "Cổng Chiên",
+   "Tường thành",
+   "Bàn thờ",
+   "Cung vua"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ dâng tế lễ như đã chép trong luật pháp Môi-se. “đều trỗi dậy xây cất bàn thờ Đức Chúa Trời của Y-sơ-ra-ên để dâng tế lễ thiêu trên đó” (E-xơ-ra 3:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thấy nền đền thờ mới được xây sau lưu đày, những người già từng thấy đền thờ trước kia làm gì?",
+  "options": [
+   "Khóc lớn tiếng",
+   "Im lặng ra về",
+   "Nhảy múa",
+   "Thổi kèn"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Trong khi đó nhiều người khác reo hò vui mừng. “khóc lớn tiếng khi thấy nền của đền thờ mới được xây dựng” (E-xơ-ra 3:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 5,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sau khi dân trở về từ lưu đày, hai nhà tiên tri nào khích lệ họ xây tiếp đền thờ?",
+  "options": [
+   "Ê-li và Ê-li-sê",
+   "Ê-sai và Giê-rê-mi",
+   "Đa-ni-ên và Ê-xê-chi-ên",
+   "A-ghê và Xa-cha-ri"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nghe lời Chúa, Xô-rô-ba-bên và Giê-sua khởi sự xây lại. “Bấy giờ, nhà tiên tri A-ghê và nhà tiên tri Xa-cha-ri, con của Y-đô” (E-xơ-ra 5:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Thầy thông giáo E-xơ-ra chuyên tâm làm gì với luật pháp của Đức Giê-hô-va?",
+  "options": [
+   "Nghiên cứu, tuân giữ và dạy lại",
+   "Dịch sang tiếng Ba Tư",
+   "Chép lại để bán",
+   "Cất giấu trong đền thờ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "E-xơ-ra dạy luật pháp cho dân Y-sơ-ra-ên. “Vì E-xơ-ra chuyên tâm nghiên cứu luật pháp của Đức Giê-hô-va, tuân giữ và dạy cho dân Y-sơ-ra-ên” (E-xơ-ra 7:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 9,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Nghe tin dân lấy vợ ngoại bang theo tập tục ghê tởm, E-xơ-ra đã làm gì?",
+  "options": [
+   "Mở tiệc ăn mừng",
+   "Xé áo, bứt râu, nhổ tóc",
+   "Viết thư cho vua",
+   "Trở về Ba-by-lôn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "E-xơ-ra ngồi buồn bã vì tội của dân. “tôi xé áo trong và áo tơi mình, bứt râu, nhổ tóc trên đầu rồi ngồi buồn bã.” (E-xơ-ra 9:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 8,
+  "verseStart": 21,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Bên bờ kênh A-ha-va, trước khi lên đường về Giê-ru-sa-lem, E-xơ-ra kêu gọi dân làm gì?",
+  "options": [
+   "Mua thêm vũ khí",
+   "Mở tiệc chia tay",
+   "Kiêng ăn cầu xin Chúa",
+   "Xin vua cho quân hộ tống"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ xin Chúa chỉ cho con đường chính đáng, và Ngài nhậm lời. “tôi kêu gọi kiêng ăn để hạ mình xuống trước mặt Đức Chúa Trời chúng tôi” (E-xơ-ra 8:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo sắc chỉ của vua Si-ru, dân Chúa được lên Giê-ru-sa-lem để làm gì?",
+  "options": [
+   "Xây lại tường thành",
+   "Xây cất đền thờ Đức Giê-hô-va",
+   "Giữ lễ Vượt Qua",
+   "Lập một vua mới"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Si-ru nói chính Đức Chúa Trời bảo vua xây đền thờ. “hãy lên Giê-ru-sa-lem trong xứ Giu-đa để xây cất đền thờ của Đức Giê-hô-va” (E-xơ-ra 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vua Si-ru giao lại các vật dụng đền thờ cho Sết-ba-xa, người giữ chức gì?",
+  "options": [
+   "Thủ quỹ của vua",
+   "Thầy tế lễ thượng phẩm",
+   "Tướng Ba Tư",
+   "Tổng đốc của Giu-đa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Sết-ba-xa đem các vật dụng ấy về Giê-ru-sa-lem. “giao cho Sết-ba-xa, tổng đốc của Giu-đa.” (E-xơ-ra 1:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo sách E-xơ-ra, đoàn người lưu đày trở về Giu-đa đầu tiên đi cùng Giê-sua và ai?",
+  "options": [
+   "Xô-rô-ba-bên",
+   "E-xơ-ra",
+   "Ê-xê-chi-ên",
+   "Đa-ni-ên"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Xô-rô-ba-bên đứng đầu danh sách những người trở về. “Họ trở về cùng với Xô-rô-ba-bên, Giê-sua” (E-xơ-ra 2:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Dù sợ các dân trong xứ, những người trở về từ lưu đày vẫn dâng tế lễ thiêu vào lúc nào?",
+  "options": [
+   "Chỉ ngày sa-bát",
+   "Mỗi đầu tháng",
+   "Buổi sáng và buổi chiều",
+   "Lúc nửa đêm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Họ lập bàn thờ trên nền cũ. “tức là tế lễ thiêu buổi sáng và buổi chiều.” (E-xơ-ra 3:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi đặt nền đền thờ mới sau lưu đày, dân ca hát rằng lòng thương xót của Chúa đối với Y-sơ-ra-ên thế nào?",
+  "options": [
+   "Sẽ trở lại sau",
+   "Chỉ dành cho vua",
+   "Còn đến đời đời",
+   "Đã cạn rồi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Toàn dân đồng thanh hô lớn, ca ngợi Đức Giê-hô-va. “Lòng thương xót của Ngài đối với Y-sơ-ra-ên còn đến đời đời!” (E-xơ-ra 3:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 4,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi dân Giu-đa trở về xây lại đền thờ, dân trong xứ đã làm gì?",
+  "options": [
+   "Bỏ đi nơi khác",
+   "Làm họ nản lòng, sợ hãi",
+   "Dâng vàng bạc",
+   "Đến giúp họ xây"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chúng còn thuê cố vấn để phá hỏng kế hoạch của dân Giu-đa. “Bấy giờ dân trong xứ làm cho dân Giu-đa nản lòng, sợ hãi trong khi xây cất.” (E-xơ-ra 4:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi việc xây đền thờ bị tố cáo, vua Ba Tư nào cho tra cứu văn khố để tìm chiếu chỉ của Si-ru?",
+  "options": [
+   "A-suê-ru",
+   "Nê-bu-cát-nết-sa",
+   "Ạt-ta-xét-xe",
+   "Đa-ri-út"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chiếu chỉ tìm thấy cho phép dân tiếp tục xây. “Vua Đa-ri-út ra lệnh tra cứu các hồ sơ lưu trữ trong văn khố tại Ba-by-lôn.” (E-xơ-ra 6:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đền thờ xây lại sau lưu đày hoàn thành vào năm thứ mấy đời vua Đa-ri-út?",
+  "options": [
+   "Năm thứ sáu",
+   "Năm thứ nhất",
+   "Năm thứ mười",
+   "Năm thứ hai"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Công việc được may mắn như lời A-ghê và Xa-cha-ri. “trong năm thứ sáu đời vua Đa-ri-út.” (E-xơ-ra 6:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 16,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi đền thờ xây lại hoàn thành, dân từ chốn lưu đày trở về đã làm gì?",
+  "options": [
+   "Than khóc thảm thiết",
+   "Trở về Ba-by-lôn",
+   "Xây thêm cung vua",
+   "Làm lễ khánh thành cách vui mừng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Các thầy tế lễ và người Lê-vi cùng dự lễ. “làm lễ khánh thành đền thờ của Đức Chúa Trời cách vui mừng.” (E-xơ-ra 6:16)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 19,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sau khi khánh thành đền thờ xây lại, dân trở về từ lưu đày giữ lễ gì vào ngày mười bốn tháng giêng?",
+  "options": [
+   "Lễ Vượt Qua",
+   "Lễ Phu-rim",
+   "Lễ Chuộc Tội",
+   "Lễ Lều Tạm"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Lễ Vượt Qua nhắc việc Chúa đem dân ra khỏi Ai Cập. “Vào ngày mười bốn tháng giêng, những người bị lưu đày trở về giữ lễ Vượt Qua.” (E-xơ-ra 6:19)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "E-xơ-ra, người từ Ba-by-lôn trở về Giê-ru-sa-lem, là học giả am hiểu điều gì?",
+  "options": [
+   "Nghề xây cất",
+   "Thuật chiêm tinh",
+   "Luật pháp Môi-se",
+   "Binh pháp Ba Tư"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nhờ tay Chúa giúp, vua chấp thuận mọi điều ông xin. “Ông là một học giả am hiểu luật pháp Môi-se” (E-xơ-ra 7:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thầy thông giáo E-xơ-ra về Giê-ru-sa-lem dưới triều vua Ba Tư nào?",
+  "options": [
+   "Nê-bu-cát-nết-sa",
+   "Ạt-ta-xét-xe",
+   "Si-ru",
+   "Đa-ri-út"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "E-xơ-ra về sau khi đền thờ đã được xây lại. “dưới triều Ạt-ta-xét-xe, vua Ba Tư, có ông E-xơ-ra là con trai Sê-ra-gia,” (E-xơ-ra 7:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 8,
+  "verseStart": 22,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Vì sao E-xơ-ra hổ thẹn, không dám xin vua quân lính hộ tống trên đường về Giê-ru-sa-lem?",
+  "options": [
+   "Vì đường về rất ngắn",
+   "Đã nói tay Chúa giúp người tìm Ngài",
+   "Vì vua đang giận ông",
+   "Vì quân lính đều bận"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "E-xơ-ra muốn giữ lời đã làm chứng với vua. “Tay của Đức Chúa Trời chúng tôi giúp đỡ mọi người tìm kiếm Ngài” (E-xơ-ra 8:22)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 9,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Những người lãnh đạo báo với E-xơ-ra rằng dân Y-sơ-ra-ên trở về đã phạm tội gì?",
+  "options": [
+   "Bỏ dở việc xây đền thờ",
+   "Không giữ ngày sa-bát",
+   "Lấy con gái dân trong xứ làm vợ",
+   "Không nộp thuế đền thờ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chính các viên chức là những kẻ phạm tội nặng nhất. “Họ và con trai họ đã lấy con gái chúng làm vợ” (E-xơ-ra 9:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 10,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi E-xơ-ra khóc và xưng tội trước đền thờ, đoàn dân nhóm chung quanh ông làm gì?",
+  "options": [
+   "Cũng khóc nức nở",
+   "Ca hát ngợi khen",
+   "Bỏ về nhà",
+   "Chế giễu ông"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Cả nam nữ và trẻ em đều đau buồn vì tội lỗi. “gồm cả nam nữ và trẻ em nhóm họp chung quanh ông, cũng khóc nức nở.” (E-xơ-ra 10:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 10,
+  "verseStart": 9,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Thời E-xơ-ra, khi nhóm tại quảng trường trước đền thờ, dân run sợ vì tội lỗi và vì điều gì?",
+  "options": [
+   "Quân thù kéo đến",
+   "Lửa cháy đền thờ",
+   "Trận động đất",
+   "Cơn mưa rất lớn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ nhóm lại để giải quyết việc lấy vợ ngoại bang. “run sợ về việc ấy và về cơn mưa rất lớn.” (E-xơ-ra 10:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 2,
+  "verseStart": 64,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo sách E-xơ-ra, cả hội chúng trở về từ lưu đày lần đầu đếm được bao nhiêu người?",
+  "options": [
+   "Mười hai nghìn",
+   "Bảy nghìn ba trăm ba mươi bảy",
+   "Sáu trăm lẻ ba nghìn",
+   "Bốn mươi hai nghìn ba trăm sáu mươi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Con số ấy chưa kể tôi trai tớ gái và ca sĩ. “Cả hội chúng đếm được bốn mươi hai nghìn ba trăm sáu mươi người,” (E-xơ-ra 2:64)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Chiếu chỉ của vua Si-ru về việc xây lại đền thờ được tìm thấy ở đâu?",
+  "options": [
+   "Éc-ba-tan, tỉnh Mê-đi",
+   "Su-sơ",
+   "Ni-ni-ve",
+   "Đa-mách"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đó là một cuộn da ghi lệnh xây đền thờ trên nền cũ. “Người ta tìm được tại Éc-ba-tan, thủ phủ tỉnh Mê-đi, một cuộn da” (E-xơ-ra 6:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 6,
+  "verseStart": 15,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đền thờ xây lại sau lưu đày hoàn thành vào tháng nào?",
+  "options": [
+   "Tháng Ni-san",
+   "Tháng Xíp",
+   "Tháng A-đa",
+   "Tháng Ê-tha-nim"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là năm thứ sáu đời vua Đa-ri-út. “Đền thờ nầy hoàn thành vào ngày thứ ba, tháng A-đa” (E-xơ-ra 6:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 1,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thủ quỹ nào của vua Si-ru đếm và giao lại các vật dụng đền thờ?",
+  "options": [
+   "Sết-ba-xa",
+   "Mít-rê-đát",
+   "Mạc-đô-chê",
+   "Sa-phan"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Ông giao các vật dụng cho tổng đốc Giu-đa. “Si-ru, vua Ba Tư, truyền thủ quỹ Mít-rê-đát, lấy các vật dụng ấy ra” (E-xơ-ra 1:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 3,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi khởi công xây đền thờ sau lưu đày, người Lê-vi từ bao nhiêu tuổi được trông coi việc xây cất?",
+  "options": [
+   "Hai mươi tuổi trở lên",
+   "Hai mươi lăm tuổi trở lên",
+   "Năm mươi tuổi trở lên",
+   "Ba mươi tuổi trở lên"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Việc khởi công là năm thứ hai sau khi về Giê-ru-sa-lem. “Họ chỉ định người Lê-vi từ hai mươi tuổi trở lên, trông coi việc xây cất đền thờ của Đức Giê-hô-va.” (E-xơ-ra 3:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 7,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "E-xơ-ra đến Giê-ru-sa-lem vào năm thứ mấy đời vua Ạt-ta-xét-xe?",
+  "options": [
+   "Năm thứ ba",
+   "Năm thứ nhất",
+   "Năm thứ bảy",
+   "Năm thứ hai mươi"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Ông đến vào tháng năm năm ấy. “Tháng năm, năm thứ bảy đời vua ấy, E-xơ-ra đến thành Giê-ru-sa-lem.” (E-xơ-ra 7:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 10,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Thời E-xơ-ra, dân Giu-đa và Bên-gia-min nhóm tại Giê-ru-sa-lem để giải quyết việc lấy vợ ngoại bang vào ngày nào?",
+  "options": [
+   "Ngày mồng một tháng bảy",
+   "Ngày mười tháng bảy",
+   "Ngày mười bốn tháng giêng",
+   "Ngày hai mươi tháng chín"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Họ phải đến trong ba ngày sau lời kêu gọi. “vào ngày hai mươi tháng chín” (E-xơ-ra 10:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Ezra",
+  "chapter": 9,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi xưng tội thay cho dân, E-xơ-ra cầu nguyện rằng tội lỗi của họ cao đến đâu?",
+  "options": [
+   "Như núi Si-ôn",
+   "Đến tận trời",
+   "Ngập đến cổ",
+   "Như tường thành"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "E-xơ-ra xấu hổ không dám ngước mặt lên Chúa. “tội lỗi của chúng con cao đến tận trời.” (E-xơ-ra 9:6)",
   "language": "vi",
   "tags": [
    "Cựu Ước",
@@ -25885,6 +30554,1133 @@
   ]
  },
  {
+  "book": "Leviticus",
+  "chapter": 19,
+  "verseStart": 18,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Lê-vi Ký dạy hãy yêu thương ai như chính mình?",
+  "options": [
+   "Thầy tế lễ",
+   "Vua chúa",
+   "Người lân cận",
+   "Người giàu có"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa Jêsus gọi đây là điều răn lớn thứ hai. “hãy yêu thương người lân cận như chính mình” (Lê-vi Ký 19:18)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 19,
+  "verseStart": 2,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va phán dân Y-sơ-ra-ên phải thánh vì lý do gì?",
+  "options": [
+   "Vì sẽ được giàu",
+   "Vì Ngài là thánh",
+   "Vì Môi-se dạy vậy",
+   "Vì sợ bị phạt"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Dân thuộc về Đức Chúa Trời thánh. “Các con phải thánh vì Ta, Giê-hô-va Đức Chúa Trời của các con, là thánh.” (Lê-vi Ký 19:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 6,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Luật Môi-se dạy lửa trên bàn thờ phải được giữ thế nào?",
+  "options": [
+   "Chỉ thắp ngày lễ",
+   "Tắt vào ban đêm",
+   "Chỉ cháy ban ngày",
+   "Cháy liên tục, không bao giờ tắt"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Lửa bàn thờ luôn sẵn sàng cho của lễ. “Lửa phải cháy liên tục trên bàn thờ, không bao giờ tắt.” (Lê-vi Ký 6:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 19,
+  "verseStart": 9,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Luật Môi-se dặn khi gặt lúa, đừng gặt đến đâu?",
+  "options": [
+   "Cuối bờ ruộng",
+   "Giữa ruộng",
+   "Bên giếng",
+   "Gần nhà"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Để phần còn lại cho người nghèo. “đừng gặt đến cuối bờ ruộng” (Lê-vi Ký 19:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 19,
+  "verseStart": 10,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Luật Môi-se dặn trái nho rớt xuống đất phải để lại cho ai?",
+  "options": [
+   "Người nghèo và kẻ tha hương",
+   "Chủ vườn bên cạnh",
+   "Các thầy tế lễ",
+   "Chim trời"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Luật pháp chăm lo cho người yếu thế. “hãy để lại cho người nghèo khó và kẻ tha hương” (Lê-vi Ký 19:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 19,
+  "verseStart": 32,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Lê-vi Ký dạy phải đứng dậy trước mặt ai?",
+  "options": [
+   "Trẻ con",
+   "Người tóc bạc",
+   "Người lính",
+   "Người giàu có"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tôn kính người già cả. “Các con phải đứng dậy trước mặt người tóc bạc” (Lê-vi Ký 19:32)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 23,
+  "verseStart": 5,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, lễ Vượt Qua bắt đầu vào lúc nào?",
+  "options": [
+   "Ngày rằm tháng bảy",
+   "Mồng một tháng giêng",
+   "Mồng mười tháng bảy",
+   "Tối ngày mười bốn tháng giêng"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nhớ ngày Chúa đem dân ra khỏi Ai Cập. “Lễ Vượt Qua của Đức Giê-hô-va bắt đầu vào buổi tối ngày mười bốn tháng giêng.” (Lê-vi Ký 23:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 23,
+  "verseStart": 42,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, trong lễ Lều Tạm dân phải ở đâu suốt bảy ngày?",
+  "options": [
+   "Trên núi",
+   "Trong đền thờ",
+   "Trong lều",
+   "Ngoài đồng"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để nhớ thời tổ phụ ở lều trong hoang mạc. “Các con phải ở trong lều bảy ngày.” (Lê-vi Ký 23:42)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 27,
+  "verseStart": 30,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Luật Môi-se nói một phần mười thổ sản thuộc về ai?",
+  "options": [
+   "Nhà vua",
+   "Chủ ruộng",
+   "Đức Giê-hô-va",
+   "Người nghèo"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Đó là vật thánh dâng lên Chúa. “đều thuộc về Đức Giê-hô-va” (Lê-vi Ký 27:30)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 26,
+  "verseStart": 12,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Chúa hứa: Ta sẽ đi giữa các con và làm gì?",
+  "options": [
+   "Làm Đức Chúa Trời của các con",
+   "Làm vua trên đất",
+   "Đuổi hết kẻ thù",
+   "Ban vàng bạc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Và họ sẽ làm dân Ngài. “Ta sẽ đi giữa các con, làm Đức Chúa Trời của các con” (Lê-vi Ký 26:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Luật Môi-se dạy phải nêm gì vào các tế lễ chay?",
+  "options": [
+   "Mật ong",
+   "Muối",
+   "Men",
+   "Đường"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Không được dâng tế lễ chay thiếu muối. “Phải nêm muối vào các tế lễ chay.” (Lê-vi Ký 2:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 11,
+  "verseStart": 3,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Theo Lê-vi Ký, loài vật nào thì được ăn?",
+  "options": [
+   "Bò sát trên đất",
+   "Có cánh biết bay",
+   "Sống dưới nước không vảy",
+   "Móng chẻ và nhai lại"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Luật về thú tinh sạch và không tinh sạch. “Những loài vật nào có móng chẻ làm hai và nhai lại, thì các con được ăn.” (Lê-vi Ký 11:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va gọi Môi-se và phán từ đâu?",
+  "options": [
+   "Bụi gai cháy",
+   "Lều Hội Kiến",
+   "Đám mây",
+   "Núi Si-na-i"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Câu mở đầu sách Lê-vi Ký. “Đức Giê-hô-va từ trong Lều Hội Kiến gọi Môi-se” (Lê-vi Ký 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, tế lễ thiêu bằng bò phải là con bò thế nào?",
+  "options": [
+   "Bò cái tơ",
+   "Bò bị què",
+   "Bò đực không tì vết",
+   "Bò đã già"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Để được Đức Giê-hô-va vui nhậm. “phải chọn một con bò đực không tì vết” (Lê-vi Ký 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 1,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, người dâng tế lễ thiêu làm gì trên đầu con vật?",
+  "options": [
+   "Rắc tro",
+   "Đổ dầu",
+   "Đội mão",
+   "Đặt tay"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Con vật được chấp nhận chuộc tội thay người ấy. “Người dâng lễ vật sẽ đặt tay trên đầu con vật làm tế lễ thiêu” (Lê-vi Ký 1:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 2,
+  "verseStart": 13,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lê-vi Ký nói muối là gì của Đức Chúa Trời?",
+  "options": [
+   "Giao ước",
+   "Luật lệ",
+   "Phước lành",
+   "Lễ vật riêng"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Phải dâng muối chung với mọi lễ vật. “muối là giao ước của Đức Chúa Trời mình” (Lê-vi Ký 2:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 10,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hai con trai A-rôn đã dâng thứ lửa gì trước mặt Đức Giê-hô-va?",
+  "options": [
+   "Lửa lạ",
+   "Lửa từ trời",
+   "Lửa của Môi-se",
+   "Lửa thánh"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Điều Ngài không phán dạy họ. “dâng một thứ lửa lạ trước mặt Đức Giê-hô-va” (Lê-vi Ký 10:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 10,
+  "verseStart": 1,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Hai con trai A-rôn dâng lửa lạ tên là gì?",
+  "options": [
+   "Hóp-ni và Phi-nê-a",
+   "Na-đáp và A-bi-hu",
+   "Giô-ên và A-bi-gia",
+   "Ê-lê-a-sa và Y-tha-ma"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Họ đã không vâng lời Đức Giê-hô-va. “Hai con trai A-rôn là Na-đáp và A-bi-hu” (Lê-vi Ký 10:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 10,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Khi hai con trai A-rôn dâng lửa lạ trước mặt Chúa, điều gì xảy ra?",
+  "options": [
+   "Bị phong hủi",
+   "Bị đuổi khỏi trại",
+   "Lửa từ Chúa thiêu nuốt họ",
+   "Bị câm"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Sự thánh khiết của Chúa không thể xem thường. “Một ngọn lửa phát ra từ trước mặt Đức Giê-hô-va thiêu nuốt họ” (Lê-vi Ký 10:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 11,
+  "verseStart": 44,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Chúa dặn đừng vì loài nào bò trên mặt đất mà làm mình ô uế?",
+  "options": [
+   "Bò chiên",
+   "Cá biển",
+   "Chim trời",
+   "Sâu bọ"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Hãy biệt mình ra thánh. “Đừng vì bất cứ một loài sâu bọ bò trên mặt đất mà làm cho mình bị ô uế.” (Lê-vi Ký 11:44)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 16,
+  "verseStart": 8,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong ngày lễ chuộc tội, A-rôn bắt thăm giữa hai con vật nào?",
+  "options": [
+   "Hai con bò",
+   "Hai con dê",
+   "Hai con chiên",
+   "Hai con bồ câu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Một con dâng làm tế lễ, một con thả vào hoang mạc. “A-rôn sẽ bắt thăm chọn giữa hai con dê” (Lê-vi Ký 16:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 16,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong ngày lễ chuộc tội, con dê còn sống được dẫn đi đâu rồi thả?",
+  "options": [
+   "Lên núi cao",
+   "Xuống sông Giô-đanh",
+   "Vào đền thờ",
+   "Vào hoang mạc"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nó mang tội lỗi dân đi xa. “dẫn nó vào hoang mạc và thả đi” (Lê-vi Ký 16:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 16,
+  "verseStart": 21,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "A-rôn đặt tay và chất gì lên đầu con dê còn sống?",
+  "options": [
+   "Gian ác của dân",
+   "Hoa trái",
+   "Dầu thơm",
+   "Vàng bạc"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Hình ảnh tội lỗi được mang đi. “xưng tất cả gian ác của dân Y-sơ-ra-ên” (Lê-vi Ký 16:21)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 16,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, lễ chuộc tội được giữ vào ngày nào?",
+  "options": [
+   "Mười bốn tháng giêng",
+   "Mồng một tháng bảy",
+   "Mùng mười tháng bảy",
+   "Rằm tháng bảy"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Một quy định vĩnh viễn cho dân. “Vào ngày mùng mười tháng bảy” (Lê-vi Ký 16:29)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 16,
+  "verseStart": 29,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, trong ngày lễ chuộc tội, dân phải làm gì?",
+  "options": [
+   "Ở trong lều",
+   "Thổi kèn suốt ngày",
+   "Mở tiệc lớn",
+   "Kiêng ăn, không làm việc"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để mọi tội lỗi được thanh tẩy. “đều phải kiêng ăn, từ bỏ mình, không làm việc” (Lê-vi Ký 16:29)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 17,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Lê-vi Ký nói sinh mạng của xác thịt ở trong đâu?",
+  "options": [
+   "Trong xương",
+   "Trong tóc",
+   "Trong huyết",
+   "Trong hơi thở"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Vì vậy huyết dùng để chuộc tội. “sinh mạng của xác thịt ở trong huyết” (Lê-vi Ký 17:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 19,
+  "verseStart": 34,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Ngoại kiều sống giữa dân Y-sơ-ra-ên phải được xem như ai?",
+  "options": [
+   "Khách qua đường",
+   "Người bản địa",
+   "Nô lệ",
+   "Kẻ thù"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Vì dân đã từng là kiều dân ở Ai Cập. “Ngoại kiều cư ngụ giữa các con phải được xem như người bản địa” (Lê-vi Ký 19:34)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 23,
+  "verseStart": 24,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, ngày mồng một tháng bảy là ngày kỷ niệm với điều gì?",
+  "options": [
+   "Tiếng kèn thổi lên",
+   "Cành lá xanh",
+   "Bánh không men",
+   "Lửa trại"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Một kỳ hội họp thánh. “một ngày kỷ niệm với tiếng kèn thổi lên” (Lê-vi Ký 23:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 23,
+  "verseStart": 34,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, lễ Lều Tạm bắt đầu vào ngày nào?",
+  "options": [
+   "Mười bốn tháng giêng",
+   "Mồng mười tháng bảy",
+   "Mồng một tháng bảy",
+   "Ngày rằm tháng bảy"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để tôn kính Đức Giê-hô-va. “Ngày rằm tháng bảy nầy là lễ Lều Tạm” (Lê-vi Ký 23:34)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 23,
+  "verseStart": 43,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Luật Môi-se nói ở trong lều suốt kỳ lễ Lều Tạm là để các thế hệ nhớ điều gì?",
+  "options": [
+   "Thời xây đền thờ",
+   "Thời lưu đày Ba-by-lôn",
+   "Tổ phụ ở lều khi rời Ai Cập",
+   "Thời các quan xét"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa đã cho họ ở trong lều trại. “Ta đã cho họ ở trong các lều trại” (Lê-vi Ký 23:43)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 25,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, năm thứ bảy là năm gì đối với đất đai?",
+  "options": [
+   "Năm sa-bát cho đất nghỉ",
+   "Năm gặt gấp đôi",
+   "Năm chuộc tội",
+   "Năm hân hỉ"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Năm sa-bát cho Đức Giê-hô-va. “năm thứ bảy phải là năm sa-bát để cho đất nghỉ” (Lê-vi Ký 25:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 25,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, năm thứ năm mươi được gọi là năm gì?",
+  "options": [
+   "Năm sa-bát",
+   "Năm hân hỉ",
+   "Năm tha nợ",
+   "Năm chuộc tội"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Công bố tự do cho mọi người trong xứ. “Đó là năm hân hỉ cho các con” (Lê-vi Ký 25:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 25,
+  "verseStart": 10,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, trong năm hân hỉ, mỗi người nhận lại điều gì?",
+  "options": [
+   "Một con chiên",
+   "Tiền công gấp đôi",
+   "Chức tế lễ",
+   "Cơ nghiệp của mình"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Và trở về với gia tộc mình. “mỗi người nhận lại cơ nghiệp mình” (Lê-vi Ký 25:10)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 25,
+  "verseStart": 23,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Luật Môi-se nói vì sao đất trong xứ không được bán đứt?",
+  "options": [
+   "Vì đất quá xấu",
+   "Vì vua cấm",
+   "Vì đất thuộc về Chúa",
+   "Vì đất quá ít"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Dân chỉ là người tạm cư với Chúa. “vì đất đai thuộc về Ta” (Lê-vi Ký 25:23)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 24,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Luật Môi-se dặn dân phải đem gì để giữ đèn trong nơi thánh luôn cháy?",
+  "options": [
+   "Dầu ô-liu ép nguyên chất",
+   "Mỡ chiên",
+   "Dầu cá",
+   "Sáp ong"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đèn phải luôn cháy trước mặt Chúa. “đem dầu ô-liu ép nguyên chất đến thắp đèn” (Lê-vi Ký 24:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 24,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Bao nhiêu ổ bánh được bày trên bàn trước mặt Đức Giê-hô-va?",
+  "options": [
+   "Năm ổ",
+   "Mười hai ổ",
+   "Hai ổ",
+   "Bảy ổ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Tương ứng mười hai bộ tộc. “nướng mười hai ổ bánh” (Lê-vi Ký 24:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 27,
+  "verseStart": 30,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Luật Môi-se gọi phần mười thổ sản là gì?",
+  "options": [
+   "Vật thánh dâng lên Chúa",
+   "Thuế nộp cho vua",
+   "Quà cho hàng xóm",
+   "Lương của lính"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Từ ngũ cốc đến hoa quả. “đó là vật thánh dâng lên Đức Giê-hô-va” (Lê-vi Ký 27:30)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 8,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Khi lập A-rôn làm thầy tế lễ, Môi-se bôi máu lên những chỗ nào?",
+  "options": [
+   "Đầu và hai vai",
+   "Ngực và lưng",
+   "Tai, ngón cái tay và chân phải",
+   "Trán và hai tay"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nghe, làm và bước đi cho Chúa. “lấy máu bôi lên trái tai bên phải của A-rôn” (Lê-vi Ký 8:23)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 16,
+  "verseStart": 8,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Một thăm thuộc về Đức Giê-hô-va, còn thăm kia thuộc về ai?",
+  "options": [
+   "Mô-lóc",
+   "A-rôn",
+   "Môi-se",
+   "A-xa-sên"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Con dê ấy được thả vào hoang mạc. “một thăm thuộc về A-xa-sên” (Lê-vi Ký 16:8)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 16,
+  "verseStart": 9,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Con dê bắt thăm thuộc về Đức Giê-hô-va được dùng làm gì?",
+  "options": [
+   "Nuôi trong đền",
+   "Tế lễ chuộc tội",
+   "Tế lễ bình an",
+   "Thả vào hoang mạc"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Con kia mới được thả đi. “dâng làm tế lễ chuộc tội” (Lê-vi Ký 16:9)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 23,
+  "verseStart": 24,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, ngày kỷ niệm với tiếng kèn thổi lên là ngày nào?",
+  "options": [
+   "Rằm tháng bảy",
+   "Mồng mười tháng bảy",
+   "Mười bốn tháng giêng",
+   "Mồng một tháng bảy"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Một ngày nghỉ và hội họp thánh. “Ngày mồng một tháng bảy là ngày nghỉ cho các con” (Lê-vi Ký 23:24)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 23,
+  "verseStart": 34,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, lễ Lều Tạm kéo dài bao lâu?",
+  "options": [
+   "Bảy ngày",
+   "Ba ngày",
+   "Một ngày",
+   "Mười ngày"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Bắt đầu từ ngày rằm tháng bảy. “sẽ kéo dài bảy ngày” (Lê-vi Ký 23:34)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 24,
+  "verseStart": 5,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Mỗi ổ bánh bày trước mặt Đức Giê-hô-va cân nặng bao nhiêu?",
+  "options": [
+   "Nửa ký",
+   "Hai ký",
+   "Một ký",
+   "Năm ký"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Làm bằng bột lọc. “mỗi ổ cân nặng hai ký” (Lê-vi Ký 24:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 24,
+  "verseStart": 6,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, mười hai ổ bánh trong nơi thánh được xếp trên bàn thế nào?",
+  "options": [
+   "Một hàng mười hai ổ",
+   "Bốn hàng, mỗi hàng ba ổ",
+   "Hai hàng, mỗi hàng sáu ổ",
+   "Ba hàng, mỗi hàng bốn ổ"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Trên bàn bọc vàng ròng. “xếp thành hai hàng, mỗi hàng sáu ổ” (Lê-vi Ký 24:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 25,
+  "verseStart": 23,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Đức Giê-hô-va nói dân ở với Ngài chỉ như ai?",
+  "options": [
+   "Ngoại kiều và người tạm cư",
+   "Nô lệ",
+   "Vua chúa",
+   "Chủ đất"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Đất đai thuộc về Chúa. “các con ở với Ta chỉ như ngoại kiều và người tạm cư” (Lê-vi Ký 25:23)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 25,
+  "verseStart": 4,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, trong năm sa-bát cho đất, dân không được làm gì?",
+  "options": [
+   "Nuôi gia súc",
+   "Ăn hoa màu",
+   "Lên đền thờ",
+   "Gieo cấy và cắt tỉa nho"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Để đất được nghỉ. “các con không được gieo cấy đồng ruộng hay cắt tỉa vườn nho mình” (Lê-vi Ký 25:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 17,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Lê-vi Ký giải thích vì sao huyết chuộc tội được?",
+  "options": [
+   "Vì luật vua định",
+   "Vì huyết màu đỏ",
+   "Vì huyết là sinh mạng",
+   "Vì huyết hiếm có"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Chúa ban huyết để làm lễ chuộc tội. “Vì chính huyết là sinh mạng nên mới chuộc tội được.” (Lê-vi Ký 17:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 1,
+  "verseStart": 3,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Theo luật Môi-se, tế lễ thiêu bằng bò phải được dâng ở đâu?",
+  "options": [
+   "Trên đỉnh núi",
+   "Tại cửa Lều Hội Kiến",
+   "Bên bờ sông",
+   "Trong nhà mình"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Trước mặt Đức Giê-hô-va. “Người ấy phải dâng nó tại cửa Lều Hội Kiến” (Lê-vi Ký 1:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Leviticus",
+  "chapter": 1,
+  "verseStart": 2,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Sinh tế dâng lên Đức Giê-hô-va phải lấy từ những loài nào?",
+  "options": [
+   "Nai, hoẵng hay linh dương",
+   "Bò, chiên hay dê",
+   "Ngựa, lừa hay lạc đà",
+   "Thỏ, heo hay chồn"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Từ đàn gia súc của người dâng. “thì phải dâng bò, chiên hay dê từ đàn gia súc” (Lê-vi Ký 1:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
   "book": "Luke",
   "chapter": 1,
   "verseStart": 5,
@@ -32958,6 +38754,397 @@
    2
   ],
   "explanation": "Rồi tiếp đến tháp Ha-na-nê-ên. “Họ tiếp tục xây đến tháp Mê-a” (Nê-hê-mi 3:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 1,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Nhã Ca là bài ca tuyệt diệu về ai?",
+  "options": [
+   "Môi-se",
+   "Đa-vít",
+   "Ê-xơ-tê",
+   "Sa-lô-môn"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Câu đầu sách gọi tên vua Sa-lô-môn. “Nhã ca, bài ca tuyệt diệu về Sa-lô-môn” (Nhã Ca 1:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 15,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, những con vật nhỏ nào phá hoại vườn nho đang trổ hoa?",
+  "options": [
+   "Những con châu chấu",
+   "Những con chồn nhỏ",
+   "Những con chuột đồng",
+   "Những con chim sẻ"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Người ta xin bắt chúng để giữ vườn nho. “Những con chồn nhỏ Phá hoại vườn nho” (Nhã Ca 2:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 8,
+  "verseStart": 7,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Sách Nhã Ca nói điều gì không dập tắt được tình yêu?",
+  "options": [
+   "Nước lũ",
+   "Thời gian",
+   "Gió bão",
+   "Bóng tối"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Các sông cũng không nhận chìm được tình yêu. “Nước lũ không dập tắt được tình yêu” (Nhã Ca 8:7)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 11,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, chàng gọi người yêu ra đồng vì mùa nào đã qua?",
+  "options": [
+   "Mùa hái nho",
+   "Mùa gặt",
+   "Mùa đông",
+   "Mùa hè"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Mưa đã dứt và muôn hoa nở trên đất. “Vì mùa đông đã qua, Mưa không còn rơi nữa;” (Nhã Ca 2:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 1,
+  "difficulty": "easy",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, người nữ tự ví mình là đóa hoa gì trong cánh đồng Sa-rôn?",
+  "options": [
+   "Hoa cúc",
+   "Hoa lựu",
+   "Tường vi",
+   "Hoa sen"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nàng cũng ví mình là cành huệ trong thung lũng. “Em là đóa tường vi trong cánh đồng Sa-rôn” (Nhã Ca 2:1)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 2,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, chàng nói người yêu giữa các thiếu nữ giống như cành huệ giữa gì?",
+  "options": [
+   "Đám gai gốc",
+   "Đồng lúa",
+   "Cỏ xanh",
+   "Vườn nho"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Chàng khen nàng nổi bật giữa mọi người. “Như cành huệ giữa đám gai gốc.” (Nhã Ca 2:2)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 4,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, khi chàng đưa nàng vào phòng yến tiệc, điều gì phất phới trên nàng?",
+  "options": [
+   "Áo choàng vua",
+   "Ngọn cờ tình yêu",
+   "Tấm màn tím",
+   "Cành ô-liu"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Hình ảnh ngọn cờ nói về tình yêu che chở. “Ngọn cờ tình yêu phất phới trên tôi.” (Nhã Ca 2:4)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 1,
+  "verseStart": 15,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, chàng nói đôi mắt người yêu giống đôi mắt con gì?",
+  "options": [
+   "Sư tử",
+   "Chim ưng",
+   "Nai tơ",
+   "Bồ câu"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Chàng khen nàng xinh đẹp và duyên dáng. “Đôi mắt em như đôi mắt bồ câu.” (Nhã Ca 1:15)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 1,
+  "verseStart": 5,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, người nữ nói mình đen như các trại nào?",
+  "options": [
+   "Các trại Ê-đôm",
+   "Các trại Ga-la-át",
+   "Các trại Si-ôn",
+   "Các trại Kê-đa"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Nàng nói mình đen nhưng xinh đẹp. “Đen như các trại Kê-đa” (Nhã Ca 1:5)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 6,
+  "verseStart": 3,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, người nữ nói người yêu dấu cho bầy ăn cỏ ở đâu?",
+  "options": [
+   "Trên núi Ga-la-át",
+   "Bên suối nước",
+   "Giữa đám hoa huệ",
+   "Trong vườn nho"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Nàng nói: tôi thuộc về người yêu dấu. “Chàng cho bầy ăn cỏ giữa đám hoa huệ.” (Nhã Ca 6:3)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 3,
+  "verseStart": 11,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, vua Sa-lô-môn đội vương miện do ai đặt trên đầu trong ngày cưới?",
+  "options": [
+   "Nhà tiên tri Na-than",
+   "Mẹ của vua",
+   "Thầy tế lễ",
+   "Cha của vua"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Đó là ngày lòng vua vui thỏa. “Vua đội chiếc vương miện mà mẹ vua đã đặt trên đầu vua” (Nhã Ca 3:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 8,
+  "verseStart": 6,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Sách Nhã Ca nói tình yêu say đắm mạnh như gì?",
+  "options": [
+   "Sự chết",
+   "Sư tử",
+   "Sóng biển",
+   "Gió bão"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Nàng xin được đặt như chiếc ấn nơi tim chàng. “Vì tình yêu say đắm mạnh như sự chết” (Nhã Ca 8:6)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 2,
+  "verseStart": 12,
+  "difficulty": "medium",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, khi mùa đông đã qua thì mùa gì đến?",
+  "options": [
+   "Mùa hát xướng",
+   "Mùa gặt lúa",
+   "Mùa hái ô-liu",
+   "Mùa mưa"
+  ],
+  "correctAnswer": [
+   0
+  ],
+  "explanation": "Tiếng chim hót vang khắp quê nhà. “Mùa hát xướng đã đến” (Nhã Ca 2:12)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 1,
+  "verseStart": 14,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, người nữ ví người yêu như bó hoa phụng tiên trong vườn nho nào?",
+  "options": [
+   "Hếp-rôn",
+   "Sa-rôn",
+   "Ba-anh Ha-môn",
+   "Ên Ghê-đi"
+  ],
+  "correctAnswer": [
+   3
+  ],
+  "explanation": "Ên Ghê-đi là ốc đảo bên Biển Chết. “Trong vườn nho Ên Ghê-đi.” (Nhã Ca 1:14)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 6,
+  "verseStart": 13,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, người nữ được gọi bằng tên nào khi người ta bảo cô hãy trở về?",
+  "options": [
+   "Bát-sê-ba",
+   "Mi-canh",
+   "Su-la-mít",
+   "A-bi-ga-in"
+  ],
+  "correctAnswer": [
+   2
+  ],
+  "explanation": "Người ta muốn được ngắm nhìn cô. “Su-la-mít ơi, hãy trở về, hãy trở về!” (Nhã Ca 6:13)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 8,
+  "verseStart": 11,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, Sa-lô-môn có một vườn nho ở đâu?",
+  "options": [
+   "Sa-rôn",
+   "Ba-anh Ha-môn",
+   "Gít-rê-ên",
+   "Ên Ghê-đi"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Mỗi tá điền phải nộp một nghìn miếng bạc. “Sa-lô-môn có một vườn nho tại Ba-anh Ha-môn” (Nhã Ca 8:11)",
+  "language": "vi",
+  "tags": [
+   "Cựu Ước",
+   "RVV11"
+  ]
+ },
+ {
+  "book": "Song of Songs",
+  "chapter": 4,
+  "verseStart": 1,
+  "difficulty": "hard",
+  "type": "multiple_choice_single",
+  "content": "Trong Nhã Ca, tóc người yêu được ví như bầy dê trên triền núi nào?",
+  "options": [
+   "Li-ban",
+   "Ga-la-át",
+   "Hẹt-môn",
+   "Cạt-mên"
+  ],
+  "correctAnswer": [
+   1
+  ],
+  "explanation": "Chàng khen nàng xinh đẹp vô cùng. “Tóc em như bầy dê Nhảy tung tăng trên triền Ga-la-át.” (Nhã Ca 4:1)",
   "language": "vi",
   "tags": [
    "Cựu Ước",
