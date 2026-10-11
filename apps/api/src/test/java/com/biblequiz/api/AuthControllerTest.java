@@ -212,6 +212,57 @@ class AuthControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.accessToken").value("new-access-token"));
     }
 
+    @Test
+    void exchange_rememberMe_setsThirtyDayCookie() throws Exception {
+        Map<String, Object> payload = new HashMap<>();
+        payload.put("token", "a");
+        payload.put("refreshToken", "r");
+        when(authCodeService.consumeCode("c")).thenReturn(payload);
+
+        mockMvc.perform(post("/api/auth/exchange")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"code\":\"c\",\"rememberMe\":true}"))
+                .andExpect(status().isOk())
+                .andExpect(cookie().maxAge("refresh_token", 30 * 24 * 60 * 60));
+    }
+
+    @Test
+    void exchange_withoutRememberMe_keepsSessionCookie() throws Exception {
+        Map<String, Object> payload = new HashMap<>();
+        payload.put("token", "a");
+        payload.put("refreshToken", "r");
+        when(authCodeService.consumeCode("c")).thenReturn(payload);
+
+        mockMvc.perform(post("/api/auth/exchange")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"code\":\"c\"}"))
+                .andExpect(cookie().maxAge("refresh_token", -1));
+    }
+
+    @Test
+    void refresh_rememberMe_keepsThirtyDayCookie_withoutBodyStaysSession() throws Exception {
+        org.springframework.security.core.userdetails.UserDetails userDetails =
+                org.springframework.security.core.userdetails.User.withUsername("test@example.com")
+                        .password("").authorities("ROLE_USER").build();
+        when(jwtService.extractUsername("valid-refresh")).thenReturn("test@example.com");
+        when(userService.loadUserByUsername("test@example.com")).thenReturn(userDetails);
+        when(jwtService.isTokenValid("valid-refresh", userDetails)).thenReturn(true);
+        when(jwtService.generateToken(userDetails)).thenReturn("new-access-token");
+        when(jwtService.generateRefreshToken(userDetails)).thenReturn("new-refresh-token");
+
+        mockMvc.perform(post("/api/auth/refresh")
+                        .cookie(new jakarta.servlet.http.Cookie("refresh_token", "valid-refresh"))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"rememberMe\":true}"))
+                .andExpect(status().isOk())
+                .andExpect(cookie().maxAge("refresh_token", 30 * 24 * 60 * 60));
+
+        mockMvc.perform(post("/api/auth/refresh")
+                        .cookie(new jakarta.servlet.http.Cookie("refresh_token", "valid-refresh")))
+                .andExpect(status().isOk())
+                .andExpect(cookie().maxAge("refresh_token", -1));
+    }
+
     // ── POST /api/auth/logout ────────────────────────────────────────────────
 
     @Test

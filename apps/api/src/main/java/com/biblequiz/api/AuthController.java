@@ -69,6 +69,11 @@ public class AuthController {
     private void setRefreshTokenCookie(HttpServletResponse response, String refreshToken) {
         setRefreshTokenCookie(response, refreshToken, COOKIE_MAX_AGE_SESSION);
     }
+    /** {@code rememberMe} true (boolean hoặc chuỗi) → cookie 30 ngày; còn lại → cookie phiên. */
+    private static int cookieMaxAge(Object rememberMe) {
+        return Boolean.parseBoolean(String.valueOf(rememberMe)) ? COOKIE_MAX_AGE_REMEMBER : COOKIE_MAX_AGE_SESSION;
+    }
+
     private void clearRefreshTokenCookie(HttpServletResponse response) {
         Cookie cookie = new Cookie(REFRESH_TOKEN_COOKIE, "");
         cookie.setHttpOnly(true);
@@ -103,7 +108,8 @@ public class AuthController {
 
         String refreshToken = (String) payload.get("refreshToken");
         if (refreshToken != null) {
-            setRefreshTokenCookie(response, refreshToken);
+            // App Đọc hằng ngày gửi rememberMe để không phải đăng nhập lại mỗi lần mở trình duyệt.
+            setRefreshTokenCookie(response, refreshToken, cookieMaxAge(body.get("rememberMe")));
         }
 
         Map<String, Object> clientPayload = new HashMap<>(payload);
@@ -144,6 +150,7 @@ public class AuthController {
     @PostMapping("/refresh")
     public ResponseEntity<?> refreshToken(
             @CookieValue(name = REFRESH_TOKEN_COOKIE, required = false) String refreshToken,
+            @RequestBody(required = false) Map<String, Object> body,
             HttpServletResponse response) {
         if (refreshToken == null || refreshToken.isEmpty()) {
             return ResponseEntity.status(401).body(Map.of(
@@ -161,7 +168,7 @@ public class AuthController {
             }
             String newAccessToken = jwtService.generateToken(userDetails);
             String newRefreshToken = jwtService.generateRefreshToken(userDetails);
-            setRefreshTokenCookie(response, newRefreshToken);
+            setRefreshTokenCookie(response, newRefreshToken, cookieMaxAge(body == null ? null : body.get("rememberMe")));
             return ResponseEntity.ok(Map.of("accessToken", newAccessToken));
         } catch (JwtException | org.springframework.security.core.userdetails.UsernameNotFoundException e) {
             logger.warn("[AUTH] Refresh token validation failed: {}", e.getMessage());

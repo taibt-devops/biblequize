@@ -12,4 +12,7 @@
 - RDG-3 `GET/PUT /api/reading/me` cất tiến độ cả khối + V76 `reading_progress`, `reading_log`
   - Status: [x] DONE · module `modules/reading` (entity UTC, `ReadingProgressService` kiểm `1-nam`≤366/`2-nam`≤731, `lap` 0..1000, giờ trả dạng `.SSS'Z'`; ghi `reading_log` khi plan/next/lap đổi) + `ReadingController` · CORS dev thêm `http://localhost:5175` · Test: `ReadingProgressServiceTest` (5), `ReadingControllerTest` (5)
   - **Spec impact**: [x] None (Bible Quiz)
+- RDG-4 Sửa sau review: `/api/auth/exchange` và `/api/auth/refresh` nhận `rememberMe` → cookie refresh 30 ngày (không gửi thì vẫn cookie phiên); `OAuth2FailureHandler` đưa đăng nhập bắt đầu từ app đọc về `app.doc-url/auth/callback?error=oauth2`
+  - Status: [x] DONE · Test: `AuthControllerTest` +3, `OAuth2FailureHandlerTest` (3); full suite xanh
+  - **Spec impact**: [x] None (Bible Quiz)
 - Prod: `APP_DOC_URL=https://doc.forbible.org` + thêm `https://doc.forbible.org` vào `CORS_ORIGINS` (compose.yml + .env trên cura)
