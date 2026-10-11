@@ -5,7 +5,10 @@ import com.biblequiz.modules.bible.entity.BibleVerse;
 import com.biblequiz.modules.bible.repository.BibleVerseRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 /**
@@ -40,6 +43,13 @@ public class BiblePassageService {
 
     /** Một mục của bộ chọn câu: số câu, hoặc khối gộp. */
     public record VerseNumber(int verse, Integer verseEnd) {}
+
+    /** Số chương tối đa một lần đọc theo đoạn — đoạn dài nhất của lịch Đọc hằng ngày là Ê-xơ-tê 5–8. */
+    public static final int MAX_RANGE_CHAPTERS = 4;
+
+    public record ChapterText(int chapter, List<VerseText> verses) {}
+
+    public record RangeText(String version, String book, List<ChapterText> chapters) {}
 
     private final BibleVerseRepository repository;
 
@@ -86,6 +96,35 @@ public class BiblePassageService {
         return verses.isEmpty()
                 ? Optional.empty()
                 : Optional.of(new Passage(BibleVerse.ACTIVE_VERSION, book, chapter, verses));
+    }
+
+    /**
+     * Đoạn {@code fromChapter:fromVerse – toChapter:toVerse} của app Đọc hằng ngày, nhóm theo chương.
+     * Khối gộp bắt đầu trước {@code fromVerse} vẫn trả nguyên; chương chưa có chữ thì vắng mặt.
+     *
+     * @throws IllegalArgumentException sách lạ, chương ngoài phạm vi, đoạn ngược hoặc quá {@value #MAX_RANGE_CHAPTERS} chương
+     */
+    public RangeText getRange(String book, int fromChapter, int fromVerse, int toChapter, int toVerse) {
+        validateChapter(book, fromChapter);
+        validateChapter(book, toChapter);
+        if (fromVerse < 1 || toVerse < 1 || toChapter < fromChapter
+                || (toChapter == fromChapter && toVerse < fromVerse)) {
+            throw new IllegalArgumentException("Đoạn không hợp lệ");
+        }
+        if (toChapter - fromChapter + 1 > MAX_RANGE_CHAPTERS) {
+            throw new IllegalArgumentException("Đoạn quá dài (tối đa " + MAX_RANGE_CHAPTERS + " chương)");
+        }
+        Map<Integer, List<VerseText>> byChapter = new LinkedHashMap<>();
+        for (BibleVerse v : repository.findChapterRange(BibleVerse.ACTIVE_VERSION, book, fromChapter, toChapter)) {
+            if (v.getChapter() == fromChapter && v.getLastVerse() < fromVerse) continue;
+            if (v.getChapter() == toChapter && v.getVerse() > toVerse) continue;
+            byChapter.computeIfAbsent(v.getChapter(), c -> new ArrayList<>())
+                    .add(new VerseText(v.getVerse(), v.getVerseEnd(), v.getText()));
+        }
+        List<ChapterText> chapters = byChapter.entrySet().stream()
+                .map(e -> new ChapterText(e.getKey(), e.getValue()))
+                .toList();
+        return new RangeText(BibleVerse.ACTIVE_VERSION, book, chapters);
     }
 
     static void validateChapter(String book, int chapter) {

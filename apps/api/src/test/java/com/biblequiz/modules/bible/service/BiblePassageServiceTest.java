@@ -128,4 +128,47 @@ class BiblePassageServiceTest {
         assertFalse(service.isTextAvailable());
         assertTrue(service.isTextAvailable());
     }
+
+    @Test
+    void range_spansChapters_cutsAtBothEnds() {
+        when(repository.findChapterRange(BibleVerse.ACTIVE_VERSION, "Esther", 5, 6)).thenReturn(List.of(
+                row("Esther", 5, 1, null, "a"), row("Esther", 5, 2, null, "b"),
+                row("Esther", 6, 1, null, "c"), row("Esther", 6, 2, null, "d"), row("Esther", 6, 3, null, "e")));
+
+        BiblePassageService.RangeText r = service.getRange("Esther", 5, 2, 6, 2);
+
+        assertEquals("RVV11", r.version());
+        assertEquals(List.of(5, 6), r.chapters().stream().map(BiblePassageService.ChapterText::chapter).toList());
+        assertEquals(List.of("b"), r.chapters().get(0).verses().stream().map(BiblePassageService.VerseText::text).toList());
+        assertEquals(List.of("c", "d"), r.chapters().get(1).verses().stream().map(BiblePassageService.VerseText::text).toList());
+    }
+
+    @Test
+    void range_keepsMergedBlockStartingBeforeFrom() {
+        when(repository.findChapterRange(BibleVerse.ACTIVE_VERSION, "Deuteronomy", 13, 13)).thenReturn(List.of(
+                row("Deuteronomy", 13, 16, null, "x"), row("Deuteronomy", 13, 17, 18, "khối")));
+
+        BiblePassageService.RangeText r = service.getRange("Deuteronomy", 13, 18, 13, 18);
+
+        BiblePassageService.VerseText v = r.chapters().get(0).verses().get(0);
+        assertEquals(1, r.chapters().get(0).verses().size());
+        assertEquals(17, v.verse());
+        assertEquals(18, v.verseEnd());
+    }
+
+    @Test
+    void range_rejectsBadRefs() {
+        assertThrows(IllegalArgumentException.class, () -> service.getRange("Nope", 1, 1, 1, 2));
+        assertThrows(IllegalArgumentException.class, () -> service.getRange("Esther", 5, 1, 9, 1)); // 5 chương
+        assertThrows(IllegalArgumentException.class, () -> service.getRange("Esther", 6, 1, 5, 1)); // ngược
+        assertThrows(IllegalArgumentException.class, () -> service.getRange("Esther", 5, 3, 5, 2)); // câu ngược
+        assertThrows(IllegalArgumentException.class, () -> service.getRange("Esther", 5, 0, 5, 2));
+        assertThrows(IllegalArgumentException.class, () -> service.getRange("Esther", 11, 1, 11, 2)); // Ê-xơ-tê có 10 chương
+    }
+
+    @Test
+    void range_emptyWhenTextMissing() {
+        when(repository.findChapterRange(BibleVerse.ACTIVE_VERSION, "Esther", 5, 5)).thenReturn(List.of());
+        assertTrue(service.getRange("Esther", 5, 1, 5, 14).chapters().isEmpty());
+    }
 }

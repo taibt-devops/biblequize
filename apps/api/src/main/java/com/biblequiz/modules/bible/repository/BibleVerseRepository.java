@@ -25,6 +25,12 @@ public interface BibleVerseRepository extends JpaRepository<BibleVerse, String> 
     List<VerseNumberView> findNumbersByVersionAndBookAndChapterOrderByVerseAsc(
             @Param("version") String version, @Param("book") String book, @Param("chapter") int chapter);
 
+    /** Mọi câu (và khối gộp) của các chương liền nhau — màn Đọc của app Đọc hằng ngày. */
+    @Query("select v from BibleVerse v where v.version = :version and v.book = :book "
+            + "and v.chapter between :fromChapter and :toChapter order by v.chapter, v.verse")
+    List<BibleVerse> findChapterRange(@Param("version") String version, @Param("book") String book,
+            @Param("fromChapter") int fromChapter, @Param("toChapter") int toChapter);
+
     /** Câu cuối có chữ của chương (kể cả câu cuối của khối gộp); null nếu chưa import. */
     @Query("select max(coalesce(v.verseEnd, v.verse)) from BibleVerse v "
             + "where v.version = :version and v.book = :book and v.chapter = :chapter")
