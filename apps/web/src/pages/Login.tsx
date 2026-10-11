@@ -19,6 +19,8 @@ export default function Login() {
   // Form state
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  // Email/mật khẩu cất sau nút nhỏ: màn đăng nhập chỉ mời Google.
+  const [showOtherMethods, setShowOtherMethods] = useState(false)
 
   useEffect(() => {
     const errorParam = searchParams.get('error')
@@ -191,96 +193,101 @@ export default function Login() {
               {isGoogleLoading ? t('auth.loggingIn') : t('auth.continueWithGoogle')}
             </button>
 
-            {/* Divider */}
-            <div className="flex items-center gap-4">
-              <div className="flex-1 border-t-2 border-dashed border-bq-ink/25" />
-              <span className="text-[13px] text-bq-ink2 font-bold">
-                {t('auth.orLoginWith')}
-              </span>
-              <div className="flex-1 border-t-2 border-dashed border-bq-ink/25" />
-            </div>
+            {showOtherMethods ? (
+              <>
+                {/* Traditional Login Form */}
+                <form onSubmit={handleEmailSubmit} className="space-y-4">
+                  <div className="space-y-1.5">
+                    <label className="text-[14px] font-extrabold text-bq-ink ml-1">
+                      {t('auth.email')}
+                    </label>
+                    <div className="relative group">
+                      <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-ink transition-colors">
+                        mail
+                      </span>
+                      <input
+                        data-testid="login-email-input"
+                        autoFocus
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        className="w-full bg-bq-paper border-[3px] border-bq-ink/30 rounded-2xl py-3.5 pl-12 pr-4 text-[16px] text-bq-ink focus:outline-none focus:border-bq-ink focus:ring-2 focus:ring-bq-amber placeholder:text-bq-ink3 transition-colors"
+                        placeholder="email@example.com"
+                      />
+                    </div>
+                  </div>
 
-            {/* Traditional Login Form */}
-            <form onSubmit={handleEmailSubmit} className="space-y-4">
-              <div className="space-y-1.5">
-                <label className="text-[14px] font-extrabold text-bq-ink ml-1">
-                  {t('auth.email')}
-                </label>
-                <div className="relative group">
-                  <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-ink transition-colors">
-                    mail
-                  </span>
-                  <input
-                    data-testid="login-email-input"
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    className="w-full bg-bq-paper border-[3px] border-bq-ink/30 rounded-2xl py-3.5 pl-12 pr-4 text-[16px] text-bq-ink focus:outline-none focus:border-bq-ink focus:ring-2 focus:ring-bq-amber placeholder:text-bq-ink3 transition-colors"
-                    placeholder="email@example.com"
-                  />
-                </div>
-              </div>
+                  <div className="space-y-1.5">
+                    <div className="flex justify-between items-end ml-1">
+                      <label className="text-[14px] font-extrabold text-bq-ink">
+                        {t('auth.password')}
+                      </label>
+                      <a
+                        href="#"
+                        className="text-[13px] font-bold text-bq-ink2 underline decoration-bq-amber decoration-2 underline-offset-2 hover:text-bq-ink"
+                      >
+                        {t('auth.forgotPassword')}
+                      </a>
+                    </div>
+                    <div className="relative group">
+                      <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-ink transition-colors">
+                        lock
+                      </span>
+                      <input
+                        data-testid="login-password-input"
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                        className="w-full bg-bq-paper border-[3px] border-bq-ink/30 rounded-2xl py-3.5 pl-12 pr-4 text-[16px] text-bq-ink focus:outline-none focus:border-bq-ink focus:ring-2 focus:ring-bq-amber placeholder:text-bq-ink3 transition-colors"
+                        placeholder="••••••••"
+                      />
+                    </div>
+                  </div>
 
-              <div className="space-y-1.5">
-                <div className="flex justify-between items-end ml-1">
-                  <label className="text-[14px] font-extrabold text-bq-ink">
-                    {t('auth.password')}
-                  </label>
-                  <a
-                    href="#"
-                    className="text-[13px] font-bold text-bq-ink2 underline decoration-bq-amber decoration-2 underline-offset-2 hover:text-bq-ink"
+                  <button
+                    data-testid="login-submit-btn"
+                    type="submit"
+                    disabled={isLoading || isGoogleLoading}
+                    className="lk-btn w-full mt-3 text-bq-ink text-[17px]"
                   >
-                    {t('auth.forgotPassword')}
-                  </a>
-                </div>
-                <div className="relative group">
-                  <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-bq-ink3 group-focus-within:text-bq-ink transition-colors">
-                    lock
-                  </span>
-                  <input
-                    data-testid="login-password-input"
-                    type="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                    className="w-full bg-bq-paper border-[3px] border-bq-ink/30 rounded-2xl py-3.5 pl-12 pr-4 text-[16px] text-bq-ink focus:outline-none focus:border-bq-ink focus:ring-2 focus:ring-bq-amber placeholder:text-bq-ink3 transition-colors"
-                    placeholder="••••••••"
-                  />
-                </div>
-              </div>
-
+                    {isLoading ? (
+                      <>
+                        <span className="material-symbols-outlined animate-spin text-sm">progress_activity</span>
+                        {t('auth.loggingIn')}
+                      </>
+                    ) : (
+                      <>
+                        {t('auth.login')}
+                      </>
+                    )}
+                  </button>
+                </form>
+                <p className="m-0 text-center text-[15px] text-bq-ink2">
+                  {t('auth.noAccount')}{' '}
+                  <Link
+                    to="/register"
+                    className="text-bq-ink font-extrabold underline decoration-bq-amber decoration-[3px] underline-offset-2 ml-1"
+                  >
+                    {t('auth.registerNow')}
+                  </Link>
+                </p>
+              </>
+            ) : (
               <button
-                data-testid="login-submit-btn"
-                type="submit"
-                disabled={isLoading || isGoogleLoading}
-                className="lk-btn w-full mt-3 text-bq-ink text-[17px]"
+                type="button"
+                data-testid="login-other-methods-btn"
+                onClick={() => setShowOtherMethods(true)}
+                className="block mx-auto bg-transparent border-0 p-1 text-[14px] font-bold text-bq-ink2 underline decoration-bq-amber decoration-2 underline-offset-2 hover:text-bq-ink cursor-pointer"
               >
-                {isLoading ? (
-                  <>
-                    <span className="material-symbols-outlined animate-spin text-sm">progress_activity</span>
-                    {t('auth.loggingIn')}
-                  </>
-                ) : (
-                  <>
-                    {t('auth.login')}
-                  </>
-                )}
+                {t('auth.otherLoginMethods')}
               </button>
-            </form>
+            )}
           </div>
 
           {/* Footer Links */}
           <div className="pt-5 flex flex-col items-center gap-3 border-t-2 border-dashed border-bq-hair">
-            <p className="m-0 text-[15px] text-bq-ink2">
-              {t('auth.noAccount')}{' '}
-              <Link
-                to="/register"
-                className="text-bq-ink font-extrabold underline decoration-bq-amber decoration-[3px] underline-offset-2 ml-1"
-              >
-                {t('auth.registerNow')}
-              </Link>
-            </p>
             <Link
               data-testid="login-guest-link"
               to="/"

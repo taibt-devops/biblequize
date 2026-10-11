@@ -20,6 +20,9 @@ test.describe('W-M01 Auth & Onboarding — L1 Smoke', () => {
   }) => {
     // ── Actions ──
     await page.goto('/login')
+    // Mặc định chỉ có nút Google; email/mật khẩu nằm sau "Đăng nhập bằng cách khác".
+    await expect(page.getByTestId('login-email-input')).toHaveCount(0)
+    await page.getByTestId('login-other-methods-btn').click()
     await page.waitForSelector('[data-testid="login-email-input"]')
 
     // ── UI Assertions ──
@@ -76,6 +79,7 @@ test.describe('W-M01 Auth & Onboarding — L1 Smoke', () => {
   }) => {
     // ── Actions ──
     await page.goto('/login')
+    await page.getByTestId('login-other-methods-btn').click()
     await page.getByTestId('login-password-input').fill('SomePassword1')
     await page.getByTestId('login-submit-btn').click()
 

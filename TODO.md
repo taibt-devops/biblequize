@@ -9,6 +9,7 @@
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
+| 2026-10-11 | Màn đăng nhập chỉ mời Google; email/mật khẩu + đăng ký cất sau nút nhỏ "Đăng nhập bằng cách khác" (LGF-1) | DONE | [detail](docs/todo/active/2026-10-11-login-google-first.md) |
 | 2026-10-10 | Bộ câu tiếng Anh viết mới theo BSB (public domain, user chọn "bản gần gũi với giới trẻ" thay ESV): `content/en/` kiểm từng trích dẫn với toàn văn BSB, câu Dễ gắn 120 câu chuyện (tên tiếng Anh trong `stories.json`), xóa hẳn bộ dịch máy cũ theo từng sách (BSB-1..) | DONE (prod 10/10: 66 sách, 2.250 câu, 120 câu chuyện; bộ dịch máy cũ đã xóa hẳn có dump) | [detail](docs/todo/active/2026-10-10-bsb-english-set.md) |
 | 2026-10-09 | Học Thuộc dùng toàn văn RVV11 thay BTT 1926: seed `seed/bible/rvv11/`, số câu theo RVV11 (khối gộp `verse_end`, câu lược, đánh số Hê-bơ-rơ), `GET /api/bible/verses`, V75 (MRV-1..4) | DONE (prod 09/10, Học Thuộc hiện lại; 31.086 câu RVV11) | [detail](docs/todo/active/2026-10-09-memorize-rvv11.md) |
 | 2026-10-09 | Viết lại câu tiếng Việt bằng RVV11 từng sách: đợt 1 Sáng Thế Ký + 4 sách Phúc Âm (466 câu thay 848 câu cũ), đợt 2 13 sách còn lại vòng quen thuộc (662 câu thay 1.370 câu cũ, có câu Dễ cho sách thiếu), đợt 3–4 vòng 2 (22 sách: 795 câu thay 1.619 câu cũ), đợt 5–6 vòng 3 (26 sách: 509 câu thay 1.201 câu cũ); câu cũ xóa hẳn có dump (RVB-1..18) | DONE (đủ 66 sách 10/10; bộ tiếng Anh xong ở dòng BSB) | [detail](docs/todo/active/2026-10-09-rvv11-books-wave1.md) |

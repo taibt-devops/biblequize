@@ -65,6 +65,7 @@ authTest.describe('W-M02 Home & Profile — L1 Smoke', () => {
     async ({ page }) => {
       // ── Setup — fresh login ──
       await page.goto('/login')
+      await page.getByTestId('login-other-methods-btn').click()
       await page.getByTestId('login-email-input').fill('test3@dev.local')
       await page.getByTestId('login-password-input').fill('Test@123456')
       await page.getByTestId('login-submit-btn').click()

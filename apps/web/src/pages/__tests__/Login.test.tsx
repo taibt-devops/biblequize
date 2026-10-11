@@ -46,16 +46,21 @@ describe('Login Page', () => {
       expect(screen.getByText(/Google/i)).toBeInTheDocument()
     })
 
-    it('renders email input field', () => {
+    it('hides the email/password form by default — only Google is offered', () => {
       renderLogin()
-      const emailInput = document.querySelector('input[type="email"], input[placeholder*="email" i]')
-      expect(emailInput).toBeInTheDocument()
+      expect(document.querySelector('input[type="email"]')).not.toBeInTheDocument()
+      expect(document.querySelector('input[type="password"]')).not.toBeInTheDocument()
+      expect(screen.queryByText(/Đăng ký ngay/i)).not.toBeInTheDocument()
+      expect(screen.getByTestId('login-other-methods-btn')).toHaveTextContent('Đăng nhập bằng cách khác')
     })
 
-    it('renders password input field', () => {
+    it('shows the email/password form and the register link after "Đăng nhập bằng cách khác"', () => {
       renderLogin()
-      const passInput = document.querySelector('input[type="password"]')
-      expect(passInput).toBeInTheDocument()
+      fireEvent.click(screen.getByTestId('login-other-methods-btn'))
+      expect(document.querySelector('input[type="email"]')).toBeInTheDocument()
+      expect(document.querySelector('input[type="password"]')).toBeInTheDocument()
+      expect(screen.getByText(/Đăng ký ngay/i)).toBeInTheDocument()
+      expect(screen.queryByTestId('login-other-methods-btn')).not.toBeInTheDocument()
     })
 
     it('renders BibleQuiz branding', () => {

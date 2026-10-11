@@ -24,6 +24,8 @@ export class LoginPage extends BasePage {
 
   async goto(): Promise<void> {
     await this.page.goto('/login')
+    // Email/mật khẩu cất sau nút "Đăng nhập bằng cách khác".
+    await this.page.getByTestId('login-other-methods-btn').click()
     await this.submitBtn.waitFor({ state: 'visible' })
   }
 
