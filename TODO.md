@@ -3,12 +3,13 @@
 > Task tracker. Active TODOs ở dưới. DONE/SUPERSEDED đã chuyển sang [`docs/todo/archive/`](docs/todo/archive/).
 > Format mỗi task file theo template CLAUDE.md §Quy trình quản lý Task.
 
-## Active (35)
+## Active (36)
 
 > Dọn 2026-06-22: 23 task ghi "TODO/DONE" nhưng đã verify hoàn thành → archive (xem git log + Archive bên dưới). Bảng này giờ chỉ còn việc THỰC SỰ đang mở.
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
+| 2026-10-11 | App Đọc hằng ngày bản 2: quay về doc.forbible.org sau OAuth (`?app=doc`), `/api/public/bible/range`, `GET/PUT /api/reading/me` + V76 (RDG-1..3) | DONE | [detail](docs/todo/active/2026-10-11-doc-hang-ngay-ban-2.md) |
 | 2026-10-11 | Màn đăng nhập chỉ mời Google; email/mật khẩu + đăng ký cất sau nút nhỏ "Đăng nhập bằng cách khác" (LGF-1) | DONE | [detail](docs/todo/active/2026-10-11-login-google-first.md) |
 | 2026-10-10 | Bộ câu tiếng Anh viết mới theo BSB (public domain, user chọn "bản gần gũi với giới trẻ" thay ESV): `content/en/` kiểm từng trích dẫn với toàn văn BSB, câu Dễ gắn 120 câu chuyện (tên tiếng Anh trong `stories.json`), xóa hẳn bộ dịch máy cũ theo từng sách (BSB-1..) | DONE (prod 10/10: 66 sách, 2.250 câu, 120 câu chuyện; bộ dịch máy cũ đã xóa hẳn có dump) | [detail](docs/todo/active/2026-10-10-bsb-english-set.md) |
 | 2026-10-09 | Học Thuộc dùng toàn văn RVV11 thay BTT 1926: seed `seed/bible/rvv11/`, số câu theo RVV11 (khối gộp `verse_end`, câu lược, đánh số Hê-bơ-rơ), `GET /api/bible/verses`, V75 (MRV-1..4) | DONE (prod 09/10, Học Thuộc hiện lại; 31.086 câu RVV11) | [detail](docs/todo/active/2026-10-09-memorize-rvv11.md) |

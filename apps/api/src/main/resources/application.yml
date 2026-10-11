@@ -97,7 +97,7 @@ biblequiz:
     reconnect-grace-seconds: ${ROOM_RECONNECT_GRACE_SECONDS:60}
 
 cors:
-  allowed-origins: ${CORS_ORIGINS:http://localhost:3000,http://localhost:5173,http://localhost:5174}
+  allowed-origins: ${CORS_ORIGINS:http://localhost:3000,http://localhost:5173,http://localhost:5174,http://localhost:5175}
   allowed-methods: GET,POST,PUT,DELETE,OPTIONS
   allowed-headers: "*"
   allow-credentials: true
