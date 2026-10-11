@@ -19,6 +19,7 @@ import org.springframework.stereotype.Component;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Map;
 import java.util.UUID;
@@ -39,6 +40,10 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
 
     @Value("${app.frontend-url:http://localhost:5173}")
     private String frontendBaseUrl;
+
+    /** Trang của app Đọc hằng ngày; trống thì mọi đăng nhập quay về Bible Quiz. */
+    @Value("${app.doc-url:}")
+    private String docUrl;
 
     @Autowired
     private UserRepository userRepository;
@@ -113,7 +118,7 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
                     "avatar", avatarUrl != null ? avatarUrl : "",
                     "role", user.getRole()));
 
-            String frontendUrl = frontendBaseUrl;
+            String frontendUrl = OAuthReturnApp.resolve(takeReturnApp(request), frontendBaseUrl, docUrl);
 
             // Only the one-time code is in the URL — tokens stay off the wire
             String redirectUrl = frontendUrl + "/auth/callback?code=" + code;
@@ -127,6 +132,15 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
     }
 
     // ---------- helpers ----------
+
+    /** App đã chọn lúc bắt đầu đăng nhập (OAuthReturnAppFilter); đọc một lần rồi xóa. */
+    private Object takeReturnApp(HttpServletRequest request) {
+        HttpSession session = request.getSession(false);
+        if (session == null) return null;
+        Object app = session.getAttribute(OAuthReturnApp.SESSION_ATTR);
+        session.removeAttribute(OAuthReturnApp.SESSION_ATTR);
+        return app;
+    }
 
     private String detectProvider(String uri) {
         if (uri != null && uri.contains("facebook"))
