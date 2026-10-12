@@ -282,6 +282,8 @@ describe('CreateRoom — Ôn phần đọc hôm nay (PCV-24)', () => {
     fireEvent.click(document.querySelector('button[type="submit"]')!)
     await waitFor(() => expect(mockApiPost).toHaveBeenCalledWith('/api/rooms', expect.objectContaining({
       roomName: 'Ôn phần đọc hôm nay',
+      // Một phần đọc chỉ vài chương: 10 câu để câu trong đoạn chiếm phần lớn trận.
+      questionCount: 10,
       passageScope: [
         { book: 'Genesis', fromChapter: 27, toChapter: 28 },
         { book: 'Psalms', fromChapter: 7, toChapter: 7 },

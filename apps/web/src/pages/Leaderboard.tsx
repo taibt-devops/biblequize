@@ -448,7 +448,7 @@ function LeaderboardListRow({ rank, name, points, avatarUrl, isMe, testId, onCha
       {onChallenge && challengeKey && (
         <ChallengeButton name={name} onClick={onChallenge} testId={`lb-challenge-${challengeKey}`} />
       )}
-      <div className="text-right">
+      <div className="text-right min-w-[4.25rem] md:min-w-[5rem]">
         <p className="m-0 font-display text-bq-ink font-extrabold text-[17px] md:text-[19px] leading-none tabular-nums">{points.toLocaleString()}</p>
         <p className="m-0 mt-0.5 text-[12px] font-bold text-bq-ink2">{t('leaderboard.points')}</p>
       </div>

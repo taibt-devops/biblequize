@@ -44,7 +44,8 @@ export default function CreateRoom() {
   const [formData, setFormData] = useState(() => ({
     roomName: passage.length > 0 ? t('createRoom.passage.roomName') : '',
     mode: 'SPEED_RACE' as RoomModeId,
-    questionCount: MODE_DEFAULTS.SPEED_RACE.questionCount,
+    // Ôn theo đoạn: một phần đọc chỉ vài chương — 10 câu để câu trong đoạn chiếm phần lớn trận.
+    questionCount: passage.length > 0 ? 10 : MODE_DEFAULTS.SPEED_RACE.questionCount,
     timePerQuestion: MODE_DEFAULTS.SPEED_RACE.timePerQuestion,
     difficulty: 'MIXED',
     maxPlayers: MODE_DEFAULTS.SPEED_RACE.maxPlayers,
