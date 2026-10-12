@@ -193,6 +193,37 @@ class RoomControllerTest extends BaseControllerTest {
         verify(roomService).revertStart("room-1");
     }
 
+    @Test
+    @Order(7)
+    @WithMockUser(username = "test@example.com")
+    void quickMatch_aiSource_isDisabled() throws Exception {
+        // PCV-8: câu AI chưa duyệt + luồng vào trận chưa từng dùng chúng ⇒ tắt hẳn.
+        mockMvc.perform(post("/api/rooms/quick-match")
+                        .contentType(org.springframework.http.MediaType.APPLICATION_JSON)
+                        .content("{\"mode\":\"SPEED_RACE\",\"source\":\"AI_GENERATED\"}"))
+                .andExpect(status().isUnprocessableEntity())
+                .andExpect(jsonPath("$.error").value("AI_SOURCE_DISABLED"));
+        verify(quickMatchQuestionSource, never()).generateAiPayload(any(), anyInt(), anyInt(), anyInt(), anyInt(), anyInt(), any());
+    }
+
+    @Test
+    @Order(7)
+    @WithMockUser(username = "test@example.com")
+    void quickMatch_database_isNotDailyCapped() throws Exception {
+        // PCV-8: giới hạn 3 trận/ngày chỉ dành cho nguồn AI (tốn tiền); kho câu hỏi không giới hạn.
+        when(dailyQuickMatchCounter.hasReachedCap("user-1")).thenReturn(true);
+        when(quickMatchQuestionSource.pickDatabaseIds(any(), anyInt(), any())).thenReturn(java.util.List.of("q1"));
+        when(roomService.createQuickMatchRoom(any(), any(), any(), anyInt(), anyInt(), anyInt(), any(), any(), any()))
+                .thenReturn(testRoom);
+        when(roomService.getRoomDetails(any())).thenReturn(testRoomDetails);
+
+        mockMvc.perform(post("/api/rooms/quick-match")
+                        .contentType(org.springframework.http.MediaType.APPLICATION_JSON)
+                        .content("{\"mode\":\"SPEED_RACE\",\"source\":\"DATABASE\"}"))
+                .andExpect(status().isOk());
+        verify(dailyQuickMatchCounter, never()).increment(any());
+    }
+
     // ── POST /api/rooms/{id}/leave ───────────────────────────────────────────
 
     @Test

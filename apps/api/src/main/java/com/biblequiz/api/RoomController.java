@@ -132,25 +132,15 @@ public class RoomController {
      * Always-create Đấu Nhanh room with the creator's chosen config
      * (mode / bookScope / questionCount / timePerQuestion / source).
      * Soft-host: creator plays like a regular player (hostPlaysGame=true)
-     * but Quản trò controls reject (QP-5). Daily cap 3/user/day (QP-4).
-     * AI source requires Tier 4+ (Hiền Triết).
+     * but Quản trò controls reject (QP-5). PCV-8: chỉ dùng kho câu hỏi đã biên tập,
+     * không còn giới hạn theo ngày.
      *
-     * Error codes (422): DAILY_CAP_REACHED · AI_TIER_LOCKED ·
-     *                    AI_GENERATION_INSUFFICIENT
+     * Error codes (422): AI_SOURCE_DISABLED
      */
     @PostMapping("/quick-match")
     public ResponseEntity<?> createQuickMatch(@RequestBody Map<String, Object> body, Principal principal) {
         try {
             User user = getUser(principal);
-
-            // Daily cap check (QP-4)
-            if (dailyQuickMatchCounter.hasReachedCap(user.getId())) {
-                return ResponseEntity.unprocessableEntity().body(Map.of(
-                        "success", false,
-                        "error", "DAILY_CAP_REACHED",
-                        "message", "Đã hết lượt Đấu Nhanh hôm nay. Quay lại sau 0h UTC.",
-                        "remaining", 0));
-            }
 
             // Parse config
             String modeStr = body.get("mode") instanceof String s ? s : "SPEED_RACE";
@@ -172,49 +162,21 @@ public class RoomController {
             try { source = Room.QuestionSource.valueOf(sourceStr.toUpperCase()); }
             catch (IllegalArgumentException e) { source = Room.QuestionSource.DATABASE; }
 
-            // AI tier-lock (Tier 4+)
+            // PCV-8 (Phòng chơi v2): tắt nguồn câu AI cho trận trực tiếp — câu AI chưa được duyệt
+            // (đi ngược bộ câu RVV11 đã biên tập) và luồng vào trận chưa từng dùng chúng (mỗi lần
+            // chọn AI là tốn tiền gọi AI vô ích). Giới hạn 3 trận/ngày cũng chỉ dành cho AI nên bỏ.
             if (source == Room.QuestionSource.AI_GENERATED) {
-                int tier = userTierService.getTierLevel(user.getId());
-                if (tier < 4) {
-                    return ResponseEntity.unprocessableEntity().body(Map.of(
-                            "success", false,
-                            "error", "AI_TIER_LOCKED",
-                            "message", "Mở khóa AI sinh câu hỏi từ Tier 4 (Hiền Triết)",
-                            "currentTier", tier));
-                }
+                return ResponseEntity.unprocessableEntity().body(Map.of(
+                        "success", false,
+                        "error", "AI_SOURCE_DISABLED",
+                        "message", "Câu hỏi do AI tạo đang tạm tắt cho Đấu nhanh — trận dùng kho câu hỏi đã biên tập"));
             }
 
-            // Generate / pick questions inline
-            String language = body.get("language") instanceof String s ? s : "vi";
-            List<String> preselectedIds = null;
-            String aiPayload = null;
-            if (source == Room.QuestionSource.AI_GENERATED) {
-                int chapterFrom = body.get("chapterFrom") instanceof Number n ? n.intValue() : 1;
-                int chapterTo   = body.get("chapterTo")   instanceof Number n ? n.intValue() : Math.max(chapterFrom, 50);
-                int verseFrom   = body.get("verseFrom")   instanceof Number n ? n.intValue() : 1;
-                int verseTo     = body.get("verseTo")     instanceof Number n ? n.intValue() : 50;
-                // AI generation targets ONE book; resolve a group sentinel (e.g.
-                // PENTATEUCH) or ALL to a concrete representative book so the prompt
-                // never receives a non-book scope literal. null → generateAiPayload
-                // defaults to Genesis.
-                String aiBook = com.biblequiz.infrastructure.bible.BookScopes.firstBook(bookScope);
-                try {
-                    aiPayload = quickMatchQuestionSource.generateAiPayload(
-                            aiBook, chapterFrom, chapterTo, verseFrom, verseTo, questionCount, language);
-                } catch (Exception e) {
-                    return ResponseEntity.unprocessableEntity().body(Map.of(
-                            "success", false,
-                            "error", "AI_GENERATION_INSUFFICIENT",
-                            "message", e.getMessage() != null ? e.getMessage() : "Không sinh đủ câu hỏi"));
-                }
-            } else {
-                preselectedIds = quickMatchQuestionSource.pickDatabaseIds(bookScope, questionCount, language);
-            }
+            String language = body.get("language") instanceof String s && !s.isBlank() ? s : "vi";
+            List<String> preselectedIds = quickMatchQuestionSource.pickDatabaseIds(bookScope, questionCount, language);
 
-            // Create room + increment counter (atomic-ish; on save failure counter stays unincremented)
             Room room = roomService.createQuickMatchRoom(user, mode, bookScope, questionCount, timePerQuestion,
-                    maxPlayers, source, preselectedIds, aiPayload);
-            dailyQuickMatchCounter.increment(user.getId());
+                    maxPlayers, Room.QuestionSource.DATABASE, preselectedIds, null);
 
             RoomService.RoomDetailsDTO details = roomService.getRoomDetails(room.getId());
             return ResponseEntity.ok(Map.of(
@@ -222,7 +184,8 @@ public class RoomController {
                     "room", details,
                     "viewerUserId", user.getId(),
                     "quickMatch", true,
-                    "remainingToday", dailyQuickMatchCounter.getRemainingToday(user.getId())));
+                    // Giữ trường cho client cũ; không còn giới hạn theo ngày.
+                    "remainingToday", com.biblequiz.modules.room.service.DailyQuickMatchCounter.DAILY_CAP));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
         }

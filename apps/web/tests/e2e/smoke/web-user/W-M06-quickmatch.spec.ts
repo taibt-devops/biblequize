@@ -22,12 +22,9 @@ test.describe('W-M06-QM Đấu Nhanh Lobby — L1 Smoke @smoke @multiplayer @qui
 
     await expect(page.getByTestId('qm-entry-card')).toBeVisible()
     await expect(page.getByTestId('qm-entry-cta')).toBeVisible()
-    await expect(page.getByTestId('qm-entry-counter')).toBeVisible()
-    // Counter starts at 0 used (assuming fresh tier3 user has full quota).
-    // Allow either fresh (data-used=0) or already-played state — just assert shape.
-    const used = await page.getByTestId('qm-entry-counter').getAttribute('data-used')
-    expect(Number(used)).toBeGreaterThanOrEqual(0)
-    expect(Number(used)).toBeLessThanOrEqual(3)
+    // PCV-8: không còn giới hạn lượt theo ngày → không còn bộ đếm, nút luôn bấm được.
+    await expect(page.getByTestId('qm-entry-counter')).toHaveCount(0)
+    await expect(page.getByTestId('qm-entry-cta')).toBeEnabled()
   })
 
   test('W-M06-QM-L1-003: Modal hiện đủ 4 mode chips, mặc định SPEED_RACE active @smoke @quickmatch', async ({
@@ -66,7 +63,7 @@ test.describe('W-M06-QM Đấu Nhanh Lobby — L1 Smoke @smoke @multiplayer @qui
     await expect(page.getByTestId('qm-mode-BATTLE_ROYALE')).toHaveAttribute('data-active', 'false')
   })
 
-  test('W-M06-QM-L1-005: Source defaults DATABASE, AI Tier-gated (tier3 < 4 → AI disabled) @smoke @quickmatch', async ({
+  test('W-M06-QM-L1-005: Không còn chọn nguồn câu hỏi — luôn dùng kho đã biên tập (PCV-8) @smoke @quickmatch', async ({
     tier3Page,
   }) => {
     const page = tier3Page
@@ -74,9 +71,8 @@ test.describe('W-M06-QM Đấu Nhanh Lobby — L1 Smoke @smoke @multiplayer @qui
     await page.getByTestId('qm-entry-cta').click()
     await page.waitForSelector('[data-testid="qm-modal"]')
 
-    await expect(page.getByTestId('qm-source-database')).toHaveAttribute('data-active', 'true')
-    // Tier 3 user → AI locked (need Tier 4+).
-    await expect(page.getByTestId('qm-source-ai')).toHaveAttribute('data-disabled', 'true')
+    await expect(page.getByTestId('qm-source-database')).toHaveCount(0)
+    await expect(page.getByTestId('qm-source-ai')).toHaveCount(0)
   })
 
 })

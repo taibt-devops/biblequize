@@ -12,7 +12,7 @@ import { MODE_LIST, MODE_META, type RoomModeId } from '../create-room/modeMeta'
 import BookScopeOptions from '../create-room/BookScopeOptions'
 import {
   describeQuickMatchError, triggerQuickMatch,
-  type QuickMatchConfig, type QuickMatchSource,
+  type QuickMatchConfig,
 } from '../../api/quickMatch'
 
 const COUNT_OPTIONS = [5, 10, 15, 20]
@@ -25,11 +25,11 @@ const INDIGO = '#2F6FB0'
 interface Props {
   open: boolean
   onClose: () => void
-  /** Required to gate AI source. Pass tier level from auth store. */
+  /** Không còn dùng (PCV-8 bỏ nguồn AI) — giữ để không đổi chỗ gọi. */
   userTier?: number
 }
 
-export default function QuickMatchConfigModal({ open, onClose, userTier = 1 }: Props) {
+export default function QuickMatchConfigModal({ open, onClose }: Props) {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const [mode, setMode] = useState<RoomModeId>('SPEED_RACE')
@@ -38,11 +38,9 @@ export default function QuickMatchConfigModal({ open, onClose, userTier = 1 }: P
   const [time, setTime] = useState(30)
   const [maxPlayers, setMaxPlayers] = useState(10)
   const [language, setLanguage] = useState<'vi' | 'en'>('vi')
-  const [source, setSource] = useState<QuickMatchSource>('DATABASE')
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  const aiUnlocked = userTier >= 4
 
   useEffect(() => {
     if (!open) return
@@ -61,7 +59,7 @@ export default function QuickMatchConfigModal({ open, onClose, userTier = 1 }: P
         questionCount: count,
         timePerQuestion: time,
         maxPlayers,
-        source: aiUnlocked ? source : 'DATABASE',
+        source: 'DATABASE',
         language,
       }
       const res = await triggerQuickMatch(config)
@@ -184,28 +182,8 @@ export default function QuickMatchConfigModal({ open, onClose, userTier = 1 }: P
               value={maxPlayers} onChange={setMaxPlayers} />
           </Section>
 
-          {/* Source */}
-          <Section label={t('multiplayer.config.sectionSource')}>
-            <div className="grid grid-cols-2 gap-2">
-              <SourceButton
-                testId="qm-source-database"
-                active={source === 'DATABASE'}
-                onClick={() => setSource('DATABASE')}
-                icon="storage"
-                title={t('multiplayer.config.sourceDatabase')}
-                desc={t('multiplayer.config.sourceDatabaseDesc')}
-              />
-              <SourceButton
-                testId="qm-source-ai"
-                active={source === 'AI_GENERATED'}
-                onClick={() => aiUnlocked && setSource('AI_GENERATED')}
-                disabled={!aiUnlocked}
-                icon="auto_awesome"
-                title={t('multiplayer.config.sourceAi')}
-                desc={aiUnlocked ? t('multiplayer.config.sourceAiUnlocked') : t('multiplayer.config.sourceAiLocked')}
-              />
-            </div>
-          </Section>
+          {/* PCV-8: không còn chọn nguồn — Đấu nhanh luôn dùng kho câu hỏi đã biên tập
+              (câu AI chưa duyệt đã tắt; máy chủ trả AI_SOURCE_DISABLED nếu vẫn gửi). */}
 
           {error && (
             <div
@@ -278,41 +256,6 @@ function ChipGroup<T extends string | number>({
         )
       })}
     </div>
-  )
-}
-
-function SourceButton({
-  active, onClick, disabled, icon, title, desc, testId,
-}: {
-  active: boolean; onClick: () => void; disabled?: boolean;
-  icon: string; title: string; desc: string; testId?: string
-}) {
-  return (
-    <button
-      type="button"
-      data-testid={testId}
-      data-active={active}
-      data-disabled={disabled ? 'true' : undefined}
-      onClick={onClick}
-      disabled={disabled}
-      className="flex items-start gap-2 p-3 rounded-lg text-left transition-colors disabled:cursor-not-allowed"
-      style={{
-        background: active ? hexAlpha(INDIGO, 0.12) : '#EFE3C3',
-        border: `1px solid ${active ? INDIGO : '#C9B58C'}`,
-        opacity: disabled ? 0.5 : 1,
-      }}
-    >
-      <span
-        className="material-symbols-outlined flex-shrink-0"
-        style={{ fontSize: 18, color: active ? INDIGO : '#2F6FB0', fontVariationSettings: "'FILL' 1" }}
-      >
-        {icon}
-      </span>
-      <div className="min-w-0">
-        <div className={`text-[12px] font-bold ${active ? 'text-bq-ink' : 'text-bq-ink2'}`}>{title}</div>
-        <div className="text-[10px] text-bq-ink3 mt-0.5">{desc}</div>
-      </div>
-    </button>
   )
 }
 

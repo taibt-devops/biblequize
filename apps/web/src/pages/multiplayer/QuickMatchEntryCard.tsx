@@ -26,9 +26,8 @@ export default function QuickMatchEntryCard({ userTier = 1 }: Props) {
     staleTime: 30_000,
     retry: 1,
   })
-  const remaining = data?.quickMatchRemainingToday ?? 3
-  const used = Math.max(0, 3 - remaining)
-  const exhausted = remaining <= 0
+  // PCV-8: Đấu nhanh không còn giới hạn lượt theo ngày (giới hạn chỉ dành cho nguồn AI, đã tắt).
+  void data
 
   return (
     <>
@@ -61,23 +60,13 @@ export default function QuickMatchEntryCard({ userTier = 1 }: Props) {
             type="button"
             data-testid="qm-entry-cta"
             onClick={() => setModalOpen(true)}
-            disabled={exhausted}
             className="lk-btn lk-btn-2 w-full text-bq-ink text-[16px]"
           >
             <img src="/images/lk/sword.webp" alt="" aria-hidden className="h-6" />
-            {exhausted ? t('multiplayer.quickMatch.ctaExhausted') : t('multiplayer.quickMatch.cta')}
+            {t('multiplayer.quickMatch.cta')}
           </button>
 
-          <div className="flex items-center justify-between mt-2.5 text-[12.5px] font-bold">
-            <span
-              data-testid="qm-entry-counter"
-              data-used={used}
-              data-remaining={remaining}
-              className="text-bq-ink2"
-              dangerouslySetInnerHTML={{
-                __html: t('multiplayer.quickMatch.today', { used }),
-              }}
-            />
+          <div className="flex items-center justify-end mt-2.5 text-[12.5px] font-bold">
             <span className="text-bq-ink3">{t('multiplayer.quickMatch.noXp')}</span>
           </div>
         </div>

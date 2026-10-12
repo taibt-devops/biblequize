@@ -37,9 +37,8 @@ test.describe('W-M06-QM Đấu Nhanh — L2 Happy Path @happy-path @multiplayer 
     expect(body.room.mode).toBe('SPEED_RACE')
     expect(body.room.status).toBe('WAITING')
     expect(body.viewerUserId).toBeTruthy()
+    // PCV-8: trường giữ cho client cũ, không còn ý nghĩa giới hạn.
     expect(typeof body.remainingToday).toBe('number')
-    expect(body.remainingToday).toBeGreaterThanOrEqual(0)
-    expect(body.remainingToday).toBeLessThan(3)
 
     // Cleanup
     await page.request.delete(`/api/rooms/${body.room.id}`)
@@ -70,7 +69,7 @@ test.describe('W-M06-QM Đấu Nhanh — L2 Happy Path @happy-path @multiplayer 
     await page.request.delete(`/api/rooms/${body.room.id}`)
   })
 
-  test('W-M06-QM-L2-003: AI source Tier <4 → AI_TIER_LOCKED via API @quickmatch', async ({
+  test('W-M06-QM-L2-003: AI source → AI_SOURCE_DISABLED (PCV-8) @quickmatch', async ({
     tier3Page,
   }) => {
     const page = tier3Page
@@ -86,93 +85,35 @@ test.describe('W-M06-QM Đấu Nhanh — L2 Happy Path @happy-path @multiplayer 
     expect(res.status()).toBe(422)
     const body = await res.json()
     expect(body.success).toBe(false)
-    expect(body.error).toBe('AI_TIER_LOCKED')
-    expect(body.currentTier).toBeLessThan(4)
+    expect(body.error).toBe('AI_SOURCE_DISABLED')
   })
 
-  test('W-M06-QM-L2-004: AI source Tier 4+ — API accepts AI_GENERATED (returns 200 hoặc AI_GENERATION_INSUFFICIENT, KHÔNG AI_TIER_LOCKED) @quickmatch @write', async ({
+  test('W-M06-QM-L2-004: AI source cũng tắt với Tier 4+ (PCV-8) @quickmatch', async ({
     tier4Page,
   }) => {
     const page = tier4Page
     const res = await page.request.post(QM_ENDPOINT, {
-      data: {
-        mode: 'SPEED_RACE',
-        source: 'AI_GENERATED',
-        bookScope: 'Sáng thế ký',
-        questionCount: 5,
-        timePerQuestion: 30,
-        chapterFrom: 1, chapterTo: 3,
-        verseFrom: 1, verseTo: 30,
-      },
+      data: { mode: 'SPEED_RACE', source: 'AI_GENERATED', bookScope: 'ALL', questionCount: 5, timePerQuestion: 30 },
     })
-    // Either 200 (AI service produced enough) or 422 with AI_GENERATION_INSUFFICIENT.
-    // Test env may not have working AI provider — both are acceptable, just NOT TIER_LOCKED.
-    if (res.status() === 200) {
-      const body = await res.json()
-      expect(body.success).toBe(true)
-      await page.request.delete(`/api/rooms/${body.room.id}`)
-    } else {
-      expect(res.status()).toBe(422)
-      const body = await res.json()
-      expect(body.error).not.toBe('AI_TIER_LOCKED')
-    }
+    expect(res.status()).toBe(422)
+    const body = await res.json()
+    expect(body.error).toBe('AI_SOURCE_DISABLED')
   })
 
-  test('W-M06-QM-L2-005: Daily cap — 4th call within day → DAILY_CAP_REACHED @quickmatch @write @serial', async ({
+  test('W-M06-QM-L2-005: Không còn giới hạn 3 trận/ngày (PCV-8) @quickmatch @write @serial', async ({
     tier3Page,
   }) => {
     const page = tier3Page
     const created: string[] = []
-    // Burn through 3 calls (max cap). If user already used some today, the
-    // 4th + check is still authoritative because counter is shared per-day.
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
       const res = await page.request.post(QM_ENDPOINT, {
         data: { mode: 'SPEED_RACE', bookScope: 'ALL', questionCount: 5, timePerQuestion: 30, source: 'DATABASE' },
       })
-      if (res.status() === 200) {
-        const body = await res.json()
-        created.push(body.room.id)
-      } else if (res.status() === 422) {
-        const body = await res.json()
-        if (body.error === 'DAILY_CAP_REACHED') break // already capped
-      }
+      expect(res.status()).toBe(200)
+      const body = await res.json()
+      created.push(body.room.id)
     }
-    // Final POST must be capped.
-    const capRes = await page.request.post(QM_ENDPOINT, {
-      data: { mode: 'SPEED_RACE', bookScope: 'ALL', questionCount: 5, timePerQuestion: 30, source: 'DATABASE' },
-    })
-    expect(capRes.status()).toBe(422)
-    const capBody = await capRes.json()
-    expect(capBody.error).toBe('DAILY_CAP_REACHED')
-    expect(capBody.remaining).toBe(0)
-
-    // Cleanup
     for (const id of created) await page.request.delete(`/api/rooms/${id}`)
-  })
-
-  test('W-M06-QM-L2-006: Counter card cập nhật sau khi tạo trận (data-used tăng) @quickmatch @write', async ({
-    tier3Page,
-  }) => {
-    const page = tier3Page
-    await page.goto('/multiplayer')
-    await page.waitForSelector('[data-testid="qm-entry-counter"]')
-    const before = Number(await page.getByTestId('qm-entry-counter').getAttribute('data-used'))
-
-    // Skip if user already capped — can't assert increase.
-    test.skip(before >= 3, 'User already at daily cap')
-
-    const res = await page.request.post(QM_ENDPOINT, {
-      data: { mode: 'SPEED_RACE', bookScope: 'ALL', questionCount: 5, timePerQuestion: 30, source: 'DATABASE' },
-    })
-    if (res.status() !== 200) return
-    const body = await res.json()
-
-    await page.reload()
-    await page.waitForSelector('[data-testid="qm-entry-counter"]')
-    const after = Number(await page.getByTestId('qm-entry-counter').getAttribute('data-used'))
-    expect(after).toBe(before + 1)
-
-    await page.request.delete(`/api/rooms/${body.room.id}`)
   })
 
   test('W-M06-QM-L2-008: Soft-host — 2 players in quick-match lobby (Player B join → room.players.length=2) @quickmatch @write @softhost', async ({
