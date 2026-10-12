@@ -1896,6 +1896,18 @@
       "joinRematch": "Join the next game",
       "playerRematch": "Play again with this group",
       "rematchFailed": "Couldn't open the next game, try again"
+    },
+    "settings": {
+      "open": "Change game",
+      "title": "Change the game",
+      "mode": "Game mode",
+      "questions": "Questions",
+      "seconds": "Seconds per question",
+      "note": "Everyone will need to get ready again.",
+      "cancel": "Cancel",
+      "save": "Save",
+      "failed": "Couldn't change the game, try again",
+      "tooMany": "Up to {{max}} players"
     }
   },
   "groups": {

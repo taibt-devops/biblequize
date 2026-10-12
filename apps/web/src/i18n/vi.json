@@ -1896,6 +1896,18 @@
       "joinRematch": "Vào ván mới",
       "playerRematch": "Chơi lại cùng nhóm này",
       "rematchFailed": "Chưa mở được ván mới, thử lại"
+    },
+    "settings": {
+      "open": "Đổi cách chơi",
+      "title": "Đổi cách chơi",
+      "mode": "Chế độ chơi",
+      "questions": "Số câu",
+      "seconds": "Giây mỗi câu",
+      "note": "Mọi người sẽ cần bấm sẵn sàng lại.",
+      "cancel": "Thôi",
+      "save": "Lưu cách chơi",
+      "failed": "Chưa đổi được cách chơi, thử lại",
+      "tooMany": "Tối đa {{max}} người"
     }
   },
   "groups": {

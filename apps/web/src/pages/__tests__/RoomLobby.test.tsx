@@ -23,11 +23,13 @@ vi.mock('../../hooks/useStomp', () => ({
 const mockApiGet = vi.fn()
 const mockApiPost = vi.fn()
 const mockApiDelete = vi.fn()
+const mockApiPatch = vi.fn()
 vi.mock('../../api/client', () => ({
   api: {
     get: (...args: any[]) => mockApiGet(...args),
     post: (...args: any[]) => mockApiPost(...args),
     delete: (...args: any[]) => mockApiDelete(...args),
+    patch: (...args: any[]) => mockApiPatch(...args),
   },
 }))
 
@@ -429,5 +431,23 @@ describe('RoomLobby — Đội đấu đội (PCV-14)', () => {
     await renderLobby(teamRoom, 'u2')
     await screen.findByTestId('lobby-room-code')
     expect(screen.queryByTestId('lobby-shuffle-teams')).toBeNull()
+  })
+})
+
+describe('RoomLobby — đổi cách chơi (PCV-18)', () => {
+  it('chủ phòng mở hộp "Đổi cách chơi", lưu thì gọi PATCH settings', async () => {
+    mockApiPatch.mockResolvedValue({ data: { success: true, room: { ...baseRoom, mode: 'BATTLE_ROYALE' }, viewerUserId: 'host-1' } })
+    await renderLobby(withPlayers([{}, {}]))
+    fireEvent.click(await screen.findByTestId('lobby-change-settings'))
+    fireEvent.click(screen.getByTestId('settings-mode-BATTLE_ROYALE'))
+    fireEvent.click(screen.getByTestId('settings-save'))
+    await waitFor(() => expect(mockApiPatch).toHaveBeenCalledWith('/api/rooms/room-1/settings',
+      expect.objectContaining({ mode: 'BATTLE_ROYALE' })))
+  })
+
+  it('người chơi thường không thấy nút', async () => {
+    await renderLobby(withPlayers([{}]), 'u2')
+    await screen.findByTestId('lobby-room-code')
+    expect(screen.queryByTestId('lobby-change-settings')).toBeNull()
   })
 })

@@ -315,6 +315,29 @@ public class RoomController {
     }
 
     /**
+     * PCV-18: PATCH /api/rooms/{id}/settings — chủ phòng đổi cách chơi ở sảnh:
+     * {@code { mode?, questionCount?, timePerQuestion?, difficulty? }}.
+     */
+    @PatchMapping("/{id}/settings")
+    public ResponseEntity<?> updateSettings(@PathVariable String id, @RequestBody Map<String, Object> body, Principal principal) {
+        try {
+            User user = getUser(principal);
+            Room.RoomMode mode = body.get("mode") != null ? Room.RoomMode.valueOf(body.get("mode").toString()) : null;
+            Integer count = body.get("questionCount") instanceof Number n ? n.intValue() : null;
+            Integer seconds = body.get("timePerQuestion") instanceof Number n ? n.intValue() : null;
+            Room.RoomDifficulty difficulty = body.get("difficulty") != null
+                    ? Room.RoomDifficulty.valueOf(body.get("difficulty").toString()) : null;
+            roomService.updateSettings(id, user.getId(), new RoomService.SettingsUpdate(mode, count, seconds, difficulty));
+            RoomService.RoomDetailsDTO details = roomService.getRoomDetails(id);
+            return ResponseEntity.ok(Map.of("success", true, "room", details, "viewerUserId", user.getId()));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Cách chơi không hợp lệ"));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", String.valueOf(e.getMessage())));
+        }
+    }
+
+    /**
      * PCV-17: POST /api/rooms/{id}/rematch — "Chơi lại với nhóm này": mở (hoặc lấy) phòng mới cùng cài đặt.
      */
     @PostMapping("/{id}/rematch")

@@ -21,7 +21,7 @@
 - PCV-14 Đội đấu đội: điểm trung bình, thưởng cả đội, xáo đội, tên đội — Status: [x] DONE
 - PCV-15 Đấu vương: xoay vòng, xếp hạng theo trận thắng, kết thúc theo ngai — Status: [x] DONE
 - PCV-16 Đấu vương: khán giả đoán — Status: [x] DONE
-- PCV-17 Chơi lại với nhóm này — Status: [ ] TODO
+- PCV-17 Chơi lại với nhóm này — Status: [x] DONE
 - PCV-18 Đổi cách chơi trong sảnh chờ — Status: [ ] TODO
 - PCV-19 Spec + DECISIONS + deploy đợt 2 — Status: [ ] TODO
 

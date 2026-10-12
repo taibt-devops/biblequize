@@ -154,6 +154,59 @@ public class RoomService {
      *       to {@code questions} table).
      * </ul>
      */
+    /** PCV-18: các cài đặt đổi được ở sảnh chờ; null = giữ nguyên. */
+    public record SettingsUpdate(Room.RoomMode mode, Integer questionCount, Integer timePerQuestion,
+                                 Room.RoomDifficulty difficulty) {}
+
+    /**
+     * PCV-18 — "Đổi cách chơi" ngay trong sảnh (design §2.6): chủ phòng, khi đang ở sảnh. Số câu/thời gian
+     * kẹp theo {@link RoomModeRules}; Đấu vương tối đa 12 người; sang Đội đấu đội thì chia đội cân, rời Đội
+     * đấu đội thì bỏ đội. Cách chơi đổi nên mọi người bấm sẵn sàng lại; cả phòng thấy một dòng thông báo.
+     */
+    @Transactional
+    public Room updateSettings(String roomId, String userId, SettingsUpdate update) throws Exception {
+        Room room = roomRepository.findById(roomId).orElseThrow(() -> new Exception("Phòng không tồn tại"));
+        if (room.getHost() == null || !room.getHost().getId().equals(userId)) {
+            throw new Exception("Chỉ chủ phòng mới đổi cách chơi được");
+        }
+        if (room.getStatus() != Room.RoomStatus.LOBBY) throw new Exception("Chỉ đổi được khi đang ở sảnh chờ");
+        // Người vào phòng Đấu nhanh chọn theo cách chơi của nó — không đổi giữa chừng.
+        if (room.isQuickMatch()) throw new Exception("Phòng Đấu nhanh giữ nguyên cách chơi đã chọn");
+        if (room.getMode() == Room.RoomMode.GROUP_LIVE_SEQUENTIAL || update.mode() == Room.RoomMode.GROUP_LIVE_SEQUENTIAL) {
+            throw new Exception("Phòng Chơi cùng nhau của nhóm không đổi cách chơi được");
+        }
+        List<RoomPlayer> players = roomPlayerRepository.findByRoomId(roomId);
+        Room.RoomMode mode = update.mode() != null ? update.mode() : room.getMode();
+        if (players.size() > RoomModeRules.maxPlayers(mode)) {
+            throw new Exception(RoomModeRules.label(mode) + " tối đa " + RoomModeRules.maxPlayers(mode)
+                    + " người — phòng đang có " + players.size());
+        }
+        Room.RoomMode previous = room.getMode();
+        room.setMode(mode);
+        room.setMaxPlayers(RoomModeRules.clampMaxPlayers(mode, room.getMaxPlayers()));
+        if (update.questionCount() != null) room.setQuestionCount(RoomModeRules.clampQuestionCount(update.questionCount()));
+        if (update.timePerQuestion() != null) room.setTimePerQuestion(RoomModeRules.clampTimePerQuestion(update.timePerQuestion()));
+        if (update.difficulty() != null) room.setDifficulty(update.difficulty());
+        roomRepository.save(room);
+
+        boolean toTeams = mode == Room.RoomMode.TEAM_VS_TEAM && previous != Room.RoomMode.TEAM_VS_TEAM;
+        List<RoomPlayer> ordered = new java.util.ArrayList<>(players);
+        ordered.sort(java.util.Comparator.comparing(RoomPlayer::getJoinedAt,
+                java.util.Comparator.nullsLast(java.util.Comparator.naturalOrder())));
+        for (int i = 0; i < ordered.size(); i++) {
+            RoomPlayer p = ordered.get(i);
+            if (toTeams) p.setTeam(i % 2 == 0 ? RoomPlayer.Team.A : RoomPlayer.Team.B);
+            else if (mode != Room.RoomMode.TEAM_VS_TEAM) p.setTeam(null);
+            p.setIsReady(false);
+        }
+        roomPlayerRepository.saveAll(ordered);
+
+        webSocketController.broadcastRoomState(roomId);
+        webSocketController.broadcastSystemChat(roomId, "Chủ phòng đổi sang " + RoomModeRules.label(mode)
+                + " · " + room.getQuestionCount() + " câu · " + room.getTimePerQuestion() + " giây");
+        return room;
+    }
+
     /** PCV-17: phòng của ván mới; {@code created} = false khi người khác đã tạo trước. */
     public static class RematchResult {
         public final Room room;

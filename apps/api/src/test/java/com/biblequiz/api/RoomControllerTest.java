@@ -163,6 +163,34 @@ class RoomControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.success").value(false));
     }
 
+    // ── PATCH /api/rooms/{id}/settings (PCV-18) ──────────────────────────────
+
+    @Test
+    @Order(7)
+    @WithMockUser(username = "test@example.com")
+    void updateSettings_asHost_returnsRoom() throws Exception {
+        when(roomService.getRoomDetails("room-1")).thenReturn(testRoomDetails);
+
+        mockMvc.perform(org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch("/api/rooms/room-1/settings")
+                        .contentType(org.springframework.http.MediaType.APPLICATION_JSON)
+                        .content("{\"mode\":\"BATTLE_ROYALE\",\"questionCount\":15,\"timePerQuestion\":20,\"difficulty\":\"HARD\"}"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.success").value(true));
+        verify(roomService).updateSettings(eq("room-1"), eq("user-1"), eq(new RoomService.SettingsUpdate(
+                com.biblequiz.modules.room.entity.Room.RoomMode.BATTLE_ROYALE, 15, 20,
+                com.biblequiz.modules.room.entity.Room.RoomDifficulty.HARD)));
+    }
+
+    @Test
+    @Order(7)
+    @WithMockUser(username = "test@example.com")
+    void updateSettings_unknownMode_returns400() throws Exception {
+        mockMvc.perform(org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch("/api/rooms/room-1/settings")
+                        .contentType(org.springframework.http.MediaType.APPLICATION_JSON)
+                        .content("{\"mode\":\"NOPE\"}"))
+                .andExpect(status().isBadRequest());
+    }
+
     // ── POST /api/rooms/{id}/rematch (PCV-17) ────────────────────────────────
 
     @Test

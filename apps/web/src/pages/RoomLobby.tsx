@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { lobbyStartCheck } from './room/lobbyRules';
 import { MODE_META, modeMetaOf, modeRulesSlug } from './create-room/modeMeta';
 import { useTeamNames } from './room/teamNames';
+import ChangeSettingsModal, { type RoomSettings } from './room/ChangeSettingsModal';
 import { useRoomChannel } from '../hooks/useRoomChannel';
 import { api } from '../api/client';
 import { QRCodeSVG } from 'qrcode.react';
@@ -74,6 +75,9 @@ const RoomLobby: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [countdown, setCountdown] = useState<number | null>(null);
   const [switchingTeam, setSwitchingTeam] = useState(false);
+  // PCV-18: hộp "Đổi cách chơi" của chủ phòng.
+  const [showSettings, setShowSettings] = useState(false);
+  const [savingSettings, setSavingSettings] = useState(false);
   // MPC-7: chat history lives in the shared store (survives reload via the
   // server replay below + Lobby→Quiz→Results navigation).
   const chatMessages = useRoomChatStore(selectRoomMessages(roomId));
@@ -315,6 +319,21 @@ const RoomLobby: React.FC = () => {
       }
     } catch { setError(t('room.errorSwitchTeam')); }
     finally { setSwitchingTeam(false); }
+  };
+  // PCV-18: chủ phòng đổi cách chơi ngay trong sảnh; máy chủ kẹp giá trị và báo cả phòng.
+  const handleSaveSettings = async (settings: RoomSettings) => {
+    if (!roomId) return;
+    setSavingSettings(true);
+    try {
+      const res = await api.patch(`/api/rooms/${roomId}/settings`, settings);
+      if (res.data.success) {
+        setRoom(res.data.room);
+        if (res.data.viewerUserId) setViewerUserId(res.data.viewerUserId);
+        setShowSettings(false);
+      }
+    } catch (err: any) {
+      setError(err?.response?.data?.message || t('room.settings.failed'));
+    } finally { setSavingSettings(false); }
   };
   // PCV-14: chia lại hai đội cân (chủ phòng; Đấu nhanh: ai trong phòng cũng được).
   const handleShuffleTeams = async () => {
@@ -902,6 +921,17 @@ const RoomLobby: React.FC = () => {
                 </div>
                 {modeInfo.ruleText}
               </div>
+              {isHost && !isQuickMatch && room.status === 'LOBBY' && !isGroupLive && (
+                <button
+                  type="button"
+                  onClick={() => setShowSettings(true)}
+                  className="px-3 py-1 rounded-full border-2 border-bq-ink bg-bq-amber text-[13px] font-extrabold inline-flex items-center gap-1 flex-shrink-0"
+                  data-testid="lobby-change-settings"
+                >
+                  <span className="material-symbols-outlined text-[14px]">tune</span>
+                  {t('room.settings.open')}
+                </button>
+              )}
               {modeInfo.ruleDetail && (
                 <button
                   type="button"
@@ -999,6 +1029,22 @@ const RoomLobby: React.FC = () => {
         roomCode={room.roomCode}
         onClose={() => setShowInvite(false)}
       />
+
+      {/* ─── PCV-18: ĐỔI CÁCH CHƠI ─── */}
+      {showSettings && room && (
+        <ChangeSettingsModal
+          current={{
+            mode: room.mode,
+            questionCount: room.questionCount,
+            timePerQuestion: room.timePerQuestion,
+            difficulty: room.difficulty ?? 'MIXED',
+          }}
+          playerCount={room.players?.length ?? 0}
+          saving={savingSettings}
+          onClose={() => setShowSettings(false)}
+          onSave={handleSaveSettings}
+        />
+      )}
 
       {/* ─── RULES DETAIL MODAL ─── */}
       {showRulesDetail && modeInfo.ruleDetail && (
