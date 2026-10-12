@@ -310,7 +310,7 @@ public class RoomQuizService {
         List<String> books = BookScopes.expand(scope);
 
         if (diff != Room.RoomDifficulty.MIXED) {
-            Question.Difficulty qDiff = Question.Difficulty.valueOf(diff.name());
+            Question.Difficulty qDiff = toQuestionDifficulty(diff);
             if (!books.isEmpty()) {
                 List<Question> scoped = questionRepository
                         .findRandomQuestionsByLanguageAndBooksAndDifficultyExcludingIds(lang, books, qDiff, empty, page);
@@ -324,6 +324,21 @@ public class RoomQuizService {
             if (!scoped.isEmpty()) return scoped;
         }
         return questionRepository.findRandomQuestionsByLanguageExcludingIds(lang, empty, page);
+    }
+
+    /**
+     * RoomDifficulty (EASY…) → Question.Difficulty (easy…); MIXED → null. Trước đây dùng
+     * {@code Question.Difficulty.valueOf(diff.name())} — ném lỗi vì khác hoa/thường, làm mọi
+     * phòng chọn độ khó cố định kết thúc ngay khi bắt đầu.
+     */
+    static Question.Difficulty toQuestionDifficulty(Room.RoomDifficulty diff) {
+        if (diff == null) return null;
+        return switch (diff) {
+            case EASY -> Question.Difficulty.easy;
+            case MEDIUM -> Question.Difficulty.medium;
+            case HARD -> Question.Difficulty.hard;
+            default -> null;
+        };
     }
 
     /** Chuyển UserQuestion thành Question transient (không lưu DB) để dùng trong quiz flow. */
