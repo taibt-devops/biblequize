@@ -71,3 +71,6 @@ scripts/seed/prod_backup_en_labels.jsonl
 
 # Python bytecode from content/ build scripts
 __pycache__/
+
+# Ledger của superpowers (không commit)
+.superpowers/
