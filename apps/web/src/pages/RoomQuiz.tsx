@@ -13,7 +13,7 @@ import { useRoomChatHistory } from '../hooks/useRoomChatHistory';
 import { EliminationScreen, TeamWinScreen } from './room/RoomOverlays';
 import SequentialFinalView from './room/SequentialFinalView';
 import RoomQuizShell, { type FeedEntry } from './room/RoomQuizShell';
-import { coreGameReducer, initialCoreGameState } from './room/roomQuizCore';
+import { anchorQuestionStart, coreGameReducer, initialCoreGameState } from './room/roomQuizCore';
 import { useBattleRoyale } from './room/hooks/useBattleRoyale';
 import { useTeamVsTeam } from './room/hooks/useTeamVsTeam';
 import { useSuddenDeath } from './room/hooks/useSuddenDeath';
@@ -89,11 +89,8 @@ const RoomQuiz: React.FC = () => {
   const [reactions, setReactions] = useState<ReactionData[]>([]);
   // latestAnswer / LiveFeed retired — see comment near ReactionBar (shell).
 
-  // Sprint 2 S2-7: streak detection. consecutiveCorrect resets to 0 on
-  // any wrong answer; we surface a banner at 5 and 10 with the matching
-  // multiplier (FE-only — server scoring stays authoritative for points).
-  const [consecutiveCorrect, setConsecutiveCorrect] = useState(0);
-  const [comboBanner, setComboBanner] = useState<{ count: number; multiplier: number } | null>(null);
+  // PCV-3: banner combo ×1,2/×1,5 cũ chỉ có ở giao diện (máy chủ không nhân điểm) nên đã bỏ;
+  // chuỗi đúng thật do máy chủ tính (Đua tốc độ, đợt 2) hiện qua ROUND_END.results.
 
   // Sprint 2 Q3 — reveal-stats card. Captures the player's reaction
   // time when they submit, then on ROUND_END computes the score delta
@@ -139,7 +136,8 @@ const RoomQuiz: React.FC = () => {
     // Sprint 2 S2-5: anchor the timer to the server's broadcast moment.
     // Falls back to local clock if BE didn't include startedAtMs (older
     // server / dev fixture).
-    questionStartedAt.current = data.startedAtMs ?? Date.now();
+    // PCV-3: đồng hồ máy người chơi lệch thì neo theo giờ máy (xem anchorQuestionStart).
+    questionStartedAt.current = anchorQuestionStart(data, Date.now(), true);
     if (data.questionIndex === 0 && matchStartedAtRef.current === null) {
       matchStartedAtRef.current = questionStartedAt.current;
     }
@@ -194,17 +192,26 @@ const RoomQuiz: React.FC = () => {
       case 'ROUND_END': {
         const d = msg.data;
         const sortedNew = d.leaderboard.slice().sort((a, b) => b.score - a.score);
-        dispatchCore({ type: 'ROUND_END', correctIndex: d.correctIndex, scores: sortedNew });
-        // Q1: feed marker so the sidebar shows "Câu 5 kết thúc · đáp án C"
+        dispatchCore({
+          type: 'ROUND_END',
+          correctIndex: d.correctIndex,
+          scores: sortedNew,
+          reveal: { explanation: d.explanation, reference: d.reference, answerCounts: d.answerCounts, results: d.results },
+        });
+        // Q1 + PCV-3: feed — đáp án và ai đúng (chỉ công bố khi vòng đã đóng).
         const letter = String.fromCharCode(65 + d.correctIndex);
-        appendFeed('round_end', `Câu ${core.questionIndex + 1} kết thúc · đáp án ${letter}`, 'neutral');
-        // Q3: reveal-stats card (only when the player submitted).
+        appendFeed('round_end', t('room.quiz.feedRoundEnd', { n: core.questionIndex + 1, letter }), 'neutral');
+        const nameOf = (id: string) => d.leaderboard.find(p => p.playerId === id)?.username ?? '?';
+        const right = (d.results ?? []).filter(r => r.isCorrect).map(r => nameOf(r.playerId));
+        if (right.length > 0) appendFeed('answer', t('room.quiz.feedCorrect', { names: right.join(', ') }), 'ok');
+        // Q3: reveal-stats card (only when the player submitted). PCV-3: điểm câu lấy từ máy chủ.
         if (lastSubmitMs.current !== null) {
           // Identity by playerId (=User.id server-side) — see PLAYER_ELIMINATED fix d504299b.
           const myNew = sortedNew.find(s => s.playerId === myUserId);
           const newRank = myNew ? sortedNew.findIndex(s => s.playerId === myUserId) + 1 : 0;
           const newScore = myNew?.score ?? prevScoreRef.current;
-          const pointsEarned = Math.max(0, newScore - prevScoreRef.current);
+          const mine = d.results?.find(r => r.playerId === myUserId);
+          const pointsEarned = mine ? mine.pointsEarned : Math.max(0, newScore - prevScoreRef.current);
           const rankDelta = prevRankRef.current ? prevRankRef.current - newRank : 0;
           setRevealStats({
             reactionMs: lastSubmitMs.current,
@@ -213,36 +220,11 @@ const RoomQuiz: React.FC = () => {
             rankDelta,
           });
         }
-        // Sprint 2 S2-6: reveal feedback. Compare against the player's
-        // submitted answer (selected) to play the right sound + haptic.
-        // We deliberately key off `selected` rather than backend
-        // per-player data since the lightweight ROUND_END payload
-        // doesn't carry it for Speed Race.
+        // Sprint 2 S2-6: reveal feedback — sound + haptic for the player's own pick.
         if (core.selected !== null) {
           const wasCorrect = core.selected === d.correctIndex;
           soundManager.play(wasCorrect ? 'correctAnswer' : 'wrongAnswer');
           wasCorrect ? haptic.correct() : haptic.wrong();
-          // Sprint 2 S2-7: streak detection. Bumps fire the combo
-          // banner at 5 and 10 with their respective multipliers.
-          // Order: compute next then act so the banner sees the
-          // post-increment count.
-          if (wasCorrect) {
-            setConsecutiveCorrect(prev => {
-              const next = prev + 1;
-              if (next === 5) {
-                setComboBanner({ count: 5, multiplier: 1.2 });
-                soundManager.play('combo5');
-                haptic.combo();
-              } else if (next === 10) {
-                setComboBanner({ count: 10, multiplier: 1.5 });
-                soundManager.play('combo10');
-                haptic.combo();
-              }
-              return next;
-            });
-          } else {
-            setConsecutiveCorrect(0);
-          }
         }
         break;
       }
@@ -263,23 +245,14 @@ const RoomQuiz: React.FC = () => {
       }
       case 'ANSWER_SUBMITTED': {
         const d = msg.data;
-        // C3: mark this player as having answered this round.
-        // Key Set by playerId (server-stable userId) — consistent with
-        // identity fix d504299b. Username keys collide / can drift.
+        // C3: mark this player as having answered this round (keyed by playerId — d504299b).
         setRoundAnswered(prev => {
           const next = new Set(prev);
           next.add(d.playerId);
           return next;
         });
-        // Q1: persistent feed history for the RIGHT column
-        const secs = (d.reactionTimeMs / 1000).toFixed(1);
-        appendFeed(
-          'answer',
-          d.isCorrect
-            ? `${d.username} trả lời đúng (${secs}s)`
-            : `${d.username} trả lời sai 😅`,
-          d.isCorrect ? 'ok' : 'fail'
-        );
+        // PCV-3 (chống lộ đáp án): chỉ biết "đã trả lời"; đúng/sai công bố ở ROUND_END.
+        appendFeed('answer', t('room.quiz.feedAnswered', { name: d.username }), 'neutral');
         break;
       }
 
@@ -370,7 +343,7 @@ const RoomQuiz: React.FC = () => {
         handleRoomEvent({ type: 'QUESTION_START', data });
       } else {
         // Same question still running — just re-anchor the countdown.
-        questionStartedAt.current = data.startedAtMs ?? Date.now();
+        questionStartedAt.current = anchorQuestionStart(data, Date.now(), false);
         dispatchCore({ type: 'SEED_QUESTION', data });
         const elapsedSec = (Date.now() - questionStartedAt.current) / 1000;
         setTimeLeft(Math.max(0, data.timeLimit - elapsedSec));
@@ -460,7 +433,7 @@ const RoomQuiz: React.FC = () => {
         // Sprint 2 S2-5: prefer the cached server timestamp so the
         // remaining-seconds figure reflects how much of this question is
         // actually left, not a fresh full window.
-        questionStartedAt.current = data.startedAtMs ?? Date.now();
+        questionStartedAt.current = anchorQuestionStart(data, Date.now(), false);
         dispatchCore({ type: 'SEED_QUESTION', data });
         const elapsedSec = (Date.now() - questionStartedAt.current) / 1000;
         setTimeLeft(Math.max(0, data.timeLimit - elapsedSec));
@@ -600,8 +573,8 @@ const RoomQuiz: React.FC = () => {
       reactions={reactions}
       feedHistory={feedHistory}
       roundAnswered={roundAnswered}
-      comboBanner={comboBanner}
-      onDismissCombo={() => setComboBanner(null)}
+      comboBanner={null}
+      onDismissCombo={() => {}}
       revealStats={revealStats}
       br={br.state}
       team={team.state}

@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { fetchCurrentQuestion, useRoomChannel } from '../../hooks/useRoomChannel';
 import { api } from '../../api/client';
@@ -23,12 +24,14 @@ import type { QuestionStartData, RoomEvent, RoomQuestion } from '../../types/roo
  */
 
 type Question = RoomQuestion;
-type AnswerStatus = 'pending' | 'correct' | 'wrong';
+// PCV-3: 'answered' khi đang chơi (chống lộ đáp án — màn Quản trò thường chiếu lên tường);
+// 'correct' / 'wrong' chỉ sau ROUND_END.
+type AnswerStatus = 'pending' | 'answered' | 'correct' | 'wrong';
 type LiveAnswer = {
   userId: string;
   username: string;
   status: AnswerStatus;
-  reactionTimeMs?: number;
+  pointsEarned?: number;
 };
 type ScoreRow = { userId: string; username: string; score: number };
 
@@ -76,6 +79,7 @@ const RoomQuizHost: React.FC = () => {
   const [correctIndex, setCorrectIndex] = useState<number | null>(null);
 
   const [liveAnswers, setLiveAnswers] = useState<Record<string, LiveAnswer>>({});
+  const { t } = useTranslation();
   const [scores, setScores] = useState<ScoreRow[]>([]);
 
   const [isPaused, setIsPaused] = useState(false);
@@ -108,6 +112,22 @@ const RoomQuizHost: React.FC = () => {
       case 'ROUND_END': {
         const d = msg.data;
         if (typeof d.correctIndex === 'number') setCorrectIndex(d.correctIndex);
+        // PCV-3: đúng/sai + điểm của từng người chỉ có khi vòng đã đóng.
+        if (Array.isArray(d.results)) {
+          setLiveAnswers(prev => {
+            const next = { ...prev };
+            for (const r of d.results ?? []) {
+              if (!r.answered || !next[r.playerId]) continue;
+              next[r.playerId] = { ...next[r.playerId], status: r.isCorrect ? 'correct' : 'wrong', pointsEarned: r.pointsEarned };
+            }
+            return next;
+          });
+        }
+        if (Array.isArray(d.leaderboard) && d.leaderboard.length > 0) {
+          setScores(d.leaderboard
+            .map(p => ({ userId: p.playerId, username: p.username, score: p.score }))
+            .sort((a, b) => b.score - a.score));
+        }
         break;
       }
       case 'QUESTION_REVEALED': {
@@ -120,12 +140,7 @@ const RoomQuizHost: React.FC = () => {
         const d = msg.data;
         setLiveAnswers(prev => ({
           ...prev,
-          [d.playerId]: {
-            userId: d.playerId,
-            username: d.username,
-            status: d.isCorrect ? 'correct' : 'wrong',
-            reactionTimeMs: d.reactionTimeMs,
-          },
+          [d.playerId]: { userId: d.playerId, username: d.username, status: 'answered' },
         }));
         break;
       }
@@ -712,14 +727,19 @@ const RoomQuizHost: React.FC = () => {
                         {a.username[0]?.toUpperCase() ?? '?'}
                       </div>
                       <span className="flex-1 truncate font-medium text-bq-ink">{a.username}</span>
+                      {a.status === 'answered' && (
+                        <span className="text-xs font-bold whitespace-nowrap text-bq-ink2">
+                          {t('room.host.answered')}
+                        </span>
+                      )}
                       {a.status === 'correct' && (
                         <span className="text-xs font-bold whitespace-nowrap" style={{ color: '#2E7D4F' }}>
-                          ✓ ĐÚNG{a.reactionTimeMs ? ` · ${(a.reactionTimeMs/1000).toFixed(1)}s` : ''}
+                          ✓ ĐÚNG{a.pointsEarned ? ` · +${a.pointsEarned}` : ''}
                         </span>
                       )}
                       {a.status === 'wrong' && (
                         <span className="text-xs font-bold whitespace-nowrap" style={{ color: '#B3452F' }}>
-                          ✗ SAI{a.reactionTimeMs ? ` · ${(a.reactionTimeMs/1000).toFixed(1)}s` : ''}
+                          ✗ SAI
                         </span>
                       )}
                     </li>

@@ -1,4 +1,4 @@
-import type { PlayerScore, QuestionStartData, RoomQuestion, ScoreUpdateData } from '../../types/room';
+import type { PlayerScore, QuestionStartData, RoomQuestion, RoundPlayerResult, RoundReference, ScoreUpdateData } from '../../types/room';
 
 // Shared render constants for the quiz shell + mode views.
 export const ANSWER_LETTERS = ['A', 'B', 'C', 'D'];
@@ -13,6 +13,33 @@ export const FILL_STYLE = { fontVariationSettings: "'FILL' 1" } as const;
  *   - anti-spoiler: `correctIndex` only set by ROUND_END / QUESTION_REVEALED;
  *   - score is server-authoritative: `scores` only ever mirrors payloads.
  */
+/** PCV-3: phần công bố sau mỗi câu (ROUND_END). */
+export interface RoundRevealData {
+  explanation?: string | null;
+  reference?: RoundReference | null;
+  answerCounts?: number[];
+  results?: RoundPlayerResult[];
+}
+
+/** Câu vừa phát mà mốc máy chủ lệch giờ máy quá ngưỡng này ⇒ coi như đồng hồ máy lệch. */
+const LIVE_SKEW_MS = 2_000;
+
+/**
+ * PCV-3 — mốc tính giờ cho câu hỏi. Dùng `startedAtMs` của máy chủ khi hợp lý; nếu đồng hồ
+ * của máy người chơi lệch (mốc ở tương lai, hoặc cũ quá mức có thể) thì dùng giờ máy, để
+ * bộ đếm không về 0 ngay hay vượt quá thời gian câu.
+ *  - `live` = vừa nhận QUESTION_START: mốc phải cách giờ máy ≤ 2 s.
+ *  - vào lại giữa câu: mốc không ở tương lai > 2 s và không cũ hơn thời gian câu + 5 s.
+ */
+export function anchorQuestionStart(data: QuestionStartData, nowMs: number, live: boolean): number {
+  const started = data.startedAtMs;
+  if (!started) return nowMs;
+  const elapsed = nowMs - started;
+  if (live) return Math.abs(elapsed) <= LIVE_SKEW_MS ? started : nowMs;
+  if (elapsed < -LIVE_SKEW_MS || elapsed > data.timeLimit * 1000 + 5_000) return nowMs;
+  return started;
+}
+
 export interface CoreGameState {
   questionIndex: number;
   totalQuestions: number;
@@ -24,6 +51,8 @@ export interface CoreGameState {
   submitting: boolean;
   showPodium: boolean;
   finalResults: PlayerScore[];
+  /** PCV-3: giải thích / câu gốc / số người chọn / kết quả — có sau ROUND_END. */
+  reveal: RoundRevealData | null;
 }
 
 export const initialCoreGameState: CoreGameState = {
@@ -37,13 +66,14 @@ export const initialCoreGameState: CoreGameState = {
   submitting: false,
   showPodium: false,
   finalResults: [],
+  reveal: null,
 };
 
 export type CoreGameAction =
   /** New round broadcast — replaces the question and clears round-local state. */
   | { type: 'QUESTION_START'; data: QuestionStartData }
   /** Round resolved — reveal + scoreboard (already sorted by the dispatcher). */
-  | { type: 'ROUND_END'; correctIndex: number; scores: PlayerScore[] }
+  | { type: 'ROUND_END'; correctIndex: number; scores: PlayerScore[]; reveal?: RoundRevealData | null }
   /** Sequential reveal — same correctIndex contract; leaderboard optional. */
   | { type: 'QUESTION_REVEALED'; correctIndex: number; leaderboard?: PlayerScore[] }
   | { type: 'SCORE_UPDATE'; data: ScoreUpdateData }
@@ -76,10 +106,11 @@ export function coreGameReducer(state: CoreGameState, action: CoreGameAction): C
         selected: null,
         correctIndex: null,
         submitting: false,
+        reveal: null,
       };
     }
     case 'ROUND_END':
-      return { ...state, correctIndex: action.correctIndex, scores: action.scores };
+      return { ...state, correctIndex: action.correctIndex, scores: action.scores, reveal: action.reveal ?? null };
     case 'QUESTION_REVEALED':
       return {
         ...state,

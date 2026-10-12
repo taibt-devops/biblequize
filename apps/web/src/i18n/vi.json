@@ -1799,7 +1799,24 @@
       "leaderboardSuddenDeath": "Winning Streaks",
       "leaderboardDefault": "Bảng điểm",
       "noScoresYet": "Chưa có điểm nào",
-      "youSuffix": " (bạn)"
+      "youSuffix": " (bạn)",
+      "feedAnswered": "{{name}} đã trả lời",
+      "feedRoundEnd": "Câu {{n}} kết thúc · đáp án {{letter}}",
+      "feedCorrect": "Đúng: {{names}}",
+      "networkUnstable": "Mất kết nối, đang kết nối lại — thử lại sau giây lát"
+    },
+    "reveal": {
+      "reference": "Câu gốc",
+      "explanation": "Giải thích",
+      "showExplanation": "Xem giải thích",
+      "hideExplanation": "Ẩn giải thích",
+      "distribution": "Mọi người đã chọn",
+      "people": "{{count}} người",
+      "save": "Lưu câu này để ôn",
+      "saved": "Đã lưu để ôn"
+    },
+    "host": {
+      "answered": "Đã trả lời"
     }
   },
   "groups": {
@@ -1908,7 +1925,9 @@
     "inactiveAlertDesc": "Gửi thông báo nhắc nhở hoặc liên hệ trực tiếp để giữ kết nối.",
     "viewInactiveList": "Xem danh sách",
     "viewFullAnalytics": "Xem phân tích đầy đủ",
-    "quickActions": "Hành động nhanh",
+    "quickActions": {
+      "title": "Hành động nhanh"
+    },
     "quickActionCreateQuiz": "Tạo quiz set",
     "quickActionPostAnnouncement": "Đăng thông báo",
     "quickActionTournament": "Tổ chức giải đấu",
@@ -2003,9 +2022,6 @@
     "tabs": {
       "activity": "Hoạt động",
       "analytics": "Phân tích"
-    },
-    "quickActions": {
-      "title": "Hành động nhanh"
     },
     "action": {
       "createQuizSet": "Tạo bộ câu hỏi",

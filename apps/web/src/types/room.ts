@@ -123,9 +123,32 @@ export interface QuestionRevealedData {
   leaderboard: PlayerScore[]
 }
 
+/** PCV-2: câu gốc của câu hỏi — công bố cùng đáp án. `book` là khoá sách tiếng Anh ("Genesis"). */
+export interface RoundReference {
+  book: string
+  chapter?: number | null
+  verseStart?: number | null
+  verseEnd?: number | null
+}
+
+/** PCV-2: kết quả một người trong vòng — chỉ có sau khi vòng đóng. */
+export interface RoundPlayerResult {
+  playerId: string
+  answered: boolean
+  isCorrect: boolean
+  pointsEarned: number
+  /** Chuỗi đúng liên tiếp sau câu này (Đua tốc độ); 0 nếu mode không dùng. */
+  streak: number
+}
+
 export interface RoundEndData {
   correctIndex: number
   leaderboard: PlayerScore[]
+  explanation?: string | null
+  reference?: RoundReference | null
+  /** Số người chọn từng phương án (index = phương án). */
+  answerCounts?: number[]
+  results?: RoundPlayerResult[]
 }
 
 /** SCORE_UPDATE carries a full scoreboard row (player view merges it into
@@ -181,11 +204,12 @@ export interface ReactionData {
   reaction: string
 }
 
+/** PCV-2 (chống lộ đáp án): chỉ báo "đã trả lời" — đúng/sai và điểm chỉ có ở ROUND_END. */
 export interface AnswerSubmittedData {
   playerId: string
   username: string
-  isCorrect: boolean
-  reactionTimeMs: number
+  questionIndex?: number
+  answered?: boolean
 }
 
 /** QUIZ_END payload varies per mode:

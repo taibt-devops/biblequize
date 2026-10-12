@@ -152,19 +152,27 @@ describe('RoomQuizHost', () => {
     expect(screen.getByTestId('end-host-replay')).toBeInTheDocument()
   })
 
-  it('live-answer list updates on ANSWER_SUBMITTED', async () => {
+  it('live-answer list: chỉ "đã trả lời" khi đang chơi, đúng/sai + điểm khi công bố (PCV-3)', async () => {
     await renderHost()
-    lastOnMessage!({
-      type: 'ANSWER_SUBMITTED',
-      data: { playerId: 'u1', username: 'An', isCorrect: true, reactionTimeMs: 2400 },
-    })
-    lastOnMessage!({
-      type: 'ANSWER_SUBMITTED',
-      data: { playerId: 'u2', username: 'Chi', isCorrect: false, reactionTimeMs: 3100 },
-    })
+    lastOnMessage!({ type: 'ANSWER_SUBMITTED', data: { playerId: 'u1', username: 'An', answered: true } })
+    lastOnMessage!({ type: 'ANSWER_SUBMITTED', data: { playerId: 'u2', username: 'Chi', answered: true } })
     expect(await screen.findByText(/An/)).toBeInTheDocument()
     expect(screen.getByText(/Chi/)).toBeInTheDocument()
-    expect(screen.getByText(/✓ ĐÚNG · 2.4s/)).toBeInTheDocument()
-    expect(screen.getByText(/✗ SAI · 3.1s/)).toBeInTheDocument()
+    expect(screen.getAllByText(/Đã trả lời/).length).toBeGreaterThanOrEqual(2)
+    expect(screen.queryByText(/ĐÚNG/)).toBeNull()
+
+    lastOnMessage!({
+      type: 'ROUND_END',
+      data: {
+        correctIndex: 1,
+        leaderboard: [],
+        results: [
+          { playerId: 'u1', answered: true, isCorrect: true, pointsEarned: 140, streak: 0 },
+          { playerId: 'u2', answered: true, isCorrect: false, pointsEarned: 0, streak: 0 },
+        ],
+      },
+    })
+    expect(await screen.findByText(/✓ ĐÚNG · \+140/)).toBeInTheDocument()
+    expect(screen.getByText(/✗ SAI/)).toBeInTheDocument()
   })
 })

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import ExplanationPanel from '../../components/multiplayer/ExplanationPanel';
+import RoundReveal from '../../components/multiplayer/RoundReveal';
+import { useBookName } from '../../hooks/useBookName';
 import ComboBanner from '../../components/multiplayer/ComboBanner';
 import RevealStatsCard from '../../components/multiplayer/RevealStatsCard';
 import ReactionBar from '../../components/ReactionBar';
@@ -88,8 +89,15 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
   br, team, sd, seq, onDismissSdResult,
   onSubmitAnswer, onAdvance, onSendReaction,
 }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { questionIndex, totalQuestions, timeLimit, question, scores, selected, correctIndex } = core;
+  const bookName = useBookName();
+  // PCV-3: câu gốc của câu vừa công bố, vd "Sáng Thế Ký 27:5–8".
+  const ref = core.reveal?.reference;
+  const referenceLabel = ref?.book
+    ? `${bookName(ref.book, i18n.language?.startsWith('en') ? 'en' : 'vi')}${ref.chapter ? ` ${ref.chapter}` : ''}`
+      + (ref.chapter && ref.verseStart ? `:${ref.verseStart}${ref.verseEnd && ref.verseEnd > ref.verseStart ? `–${ref.verseEnd}` : ''}` : '')
+    : null;
 
   const timerPercent = timeLimit > 0 ? (timeLeft / timeLimit) * 100 : 0;
 
@@ -594,12 +602,16 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
                 (b) the player picked an answer different from the correct
                 one, and (c) the question carries an explanation. The panel
                 doesn't gate the next question — server timing does. */}
-            {correctIndex !== null && selected !== null && selected !== correctIndex
-              && question?.explanation && question?.id && !isSequential && (
-              <ExplanationPanel
+            {/* PCV-3: công bố sau mỗi câu — câu gốc, giải thích, số người chọn (dữ liệu ROUND_END). */}
+            {correctIndex !== null && core.reveal && question?.id && !isSequential && (
+              <RoundReveal
+                key={question.id}
                 questionId={question.id}
-                explanation={question.explanation}
-                onContinue={() => { /* next QUESTION_START will replace */ }}
+                correctIndex={correctIndex}
+                selected={selected}
+                referenceLabel={referenceLabel}
+                explanation={core.reveal.explanation}
+                answerCounts={core.reveal.answerCounts}
               />
             )}
 
@@ -623,8 +635,8 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
                   "✓ ĐÁP ÁN") right on the option.
                 - RevealStatsCard (Q3) covers reaction time, speed,
                   points, rank delta.
-                - ExplanationPanel (S2-6) covers the wrong-answer
-                  explanation.
+                - RoundReveal (PCV-3) covers the scripture reference,
+                  the explanation and the answer distribution.
                 The earlier full-screen popup overlay was redundant with
                 the inline reveal and was the "old design" the user
                 wanted retired. */}

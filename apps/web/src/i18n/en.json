@@ -1799,7 +1799,24 @@
       "leaderboardSuddenDeath": "Winning Streaks",
       "leaderboardDefault": "Leaderboard",
       "noScoresYet": "No scores yet",
-      "youSuffix": " (you)"
+      "youSuffix": " (you)",
+      "feedAnswered": "{{name}} answered",
+      "feedRoundEnd": "Question {{n}} over · answer {{letter}}",
+      "feedCorrect": "Correct: {{names}}",
+      "networkUnstable": "Connection lost, reconnecting — try again in a moment"
+    },
+    "reveal": {
+      "reference": "Scripture",
+      "explanation": "Explanation",
+      "showExplanation": "Show explanation",
+      "hideExplanation": "Hide explanation",
+      "distribution": "What everyone picked",
+      "people": "{{count}}",
+      "save": "Save to review",
+      "saved": "Saved to review"
+    },
+    "host": {
+      "answered": "Answered"
     }
   },
   "groups": {
@@ -1908,7 +1925,9 @@
     "inactiveAlertDesc": "Send a reminder or reach out to keep them connected.",
     "viewInactiveList": "View list",
     "viewFullAnalytics": "View full analytics",
-    "quickActions": "Quick actions",
+    "quickActions": {
+      "title": "Quick actions"
+    },
     "quickActionCreateQuiz": "Create quiz set",
     "quickActionPostAnnouncement": "Post announcement",
     "quickActionTournament": "Host tournament",
@@ -2003,9 +2022,6 @@
     "tabs": {
       "activity": "Activity",
       "analytics": "Analytics"
-    },
-    "quickActions": {
-      "title": "Quick actions"
     },
     "action": {
       "createQuizSet": "Create quiz set",
