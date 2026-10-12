@@ -2079,6 +2079,13 @@ Grid layout, locked = grayscale + lock icon. Click → modal hiện điều ki�
 - Bảng xếp hạng + `/my-rank` dùng CÙNG thứ tự 3 tầng: **points DESC → questions DESC → created_at ASC** (user hoạt động nhiều hơn xếp trên khi bằng điểm; created_at là tie-break tất định cuối).
 - `/my-rank` = `countUsersAhead(points, questions, createdAt) + 1` — đếm đúng số người đứng trước theo cả 3 tầng, nên số hạng khớp vị trí thật trong bảng (trước đây chỉ đếm `points >` → lệch khi trùng điểm).
 
+### 22.7 Thách đấu (PCV-23, 2026-10-13)
+- **Nút "Thách đấu"** ở mỗi người khác trên bảng (cả bục vinh danh và khu vực quanh mình); không có ở dòng của mình, không có khi chưa đăng nhập. Không thách được người máy.
+- **Người thách:** hộp "Đang chờ X nhận lời" đếm ngược 5 phút (theo `secondsLeft` máy chủ trả), nút "Hủy lời thách"; đóng hộp cũng là hủy. Bị từ chối: "X hẹn lần sau."; hết giờ: "Hết 5 phút mà X chưa nhận lời." Thách lại cùng người khi lời cũ còn chờ thì dùng lại lời cũ.
+- **Người được thách:** thẻ mời ở góc màn hình trên mọi trang có thanh điều hướng: "X thách bạn đấu 10 câu" + [Nhận] [Để sau] (Để sau = từ chối). Không hiện khi đang chơi dở (Speed Round, Mystery, Weekly, Basic quiz, các màn `play`/`session`/`match`); lời mời vẫn chờ.
+- **Nhận lời:** máy chủ mở phòng Đua tốc độ riêng 10 câu × 20 giây (kho câu, độ khó hỗn hợp, cả Kinh Thánh); người thách làm chủ phòng và cùng chơi; cả hai vào sảnh của phòng đó. Đang ở phòng khác thì báo "Bạn đang ở một phòng khác — rời phòng đó rồi nhận lời".
+- API + trạng thái: SPEC_MULTIPLAYER §0.3 (PCV-23) và §8.
+
 ---
 
 ## 23. Tournaments

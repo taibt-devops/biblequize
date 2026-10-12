@@ -42,6 +42,18 @@ Phòng chơi **không cộng XP** (XP chỉ đến từ Đấu Hạng, Thử th�
 
 Migration V77 (chỉ thêm cột có mặc định): `room_room_players` + `answer_streak`, `lives`, `ghost_streak`, `revived`, `eliminated_round`, `matches_won`, `best_streak`, `matches_played`, `prediction_points`; `room_answers` + `ghost`.
 
+### §0.3 Phòng chơi v2 — đợt 3 (2026-10-13): người máy, Hội ý, Thách đấu, Ôn phần đọc hôm nay
+
+| # | Thay đổi | Chi tiết |
+|---|---|---|
+| PCV-20 | **Người máy — vào phòng.** | `users.is_bot` + 6 tài khoản `bot-01..06` ("Máy An", "Máy Bình", "Máy Châu", "Máy Dũng", "Máy Giang", "Máy Hà"; provider `bot`, email `*@bots.forbible.invalid`, không mật khẩu, ẩn khỏi bảng xếp hạng). `POST /api/rooms/{id}/bots {level: EASY\|MEDIUM\|HARD}` — chủ phòng (Đấu nhanh: người trong phòng), ở sảnh, tối đa 5 máy, còn chỗ; máy luôn sẵn sàng; Đội đấu đội vào đội ít người hơn. `room_room_players.bot_level`. Máy không bao giờ làm chủ phòng, không tính khi xét "phòng còn ai" và khi chuyển chủ phòng; phòng cần ≥ 1 người thật mới bắt đầu. Không nhiệm vụ, không thống kê; thắng phòng (nhiệm vụ + thống kê tuần) cần ≥ 2 người thật, MVP cần ≥ 3. Chơi lại thêm lại các máy cũ. `PlayerInfoDTO.isBot/botLevel`, leaderboard `isBot`; giao diện "(máy)". |
+| PCV-21 | **Người máy — trả lời.** | Sau mỗi `QUESTION_START`, `RoomBotService` hẹn giờ trên luồng `room-bot-*`; trả lời qua cùng `RoomAnswerProcessor` (thời gian máy chủ đo). Tỉ lệ đúng theo cấp máy × độ khó câu: Dễ .55/.40/.25, Vừa .80/.65/.45, Giỏi .95/.85/.70 (câu dễ/vừa/khó). Thời gian: Dễ 6–14 giây, Vừa 4–10, Giỏi 2,5–7; luôn trước hết giờ ≥ 1 giây. Câu đã đổi thì bỏ. Đấu vương: chỉ máy đang đấu mới trả lời; máy không đoán. |
+| PCV-22 | **Hội ý (Đội đấu đội).** | `rooms.team_consensus` (tạo phòng `teamConsensus: true`, hoặc `PATCH /settings`). Kênh riêng của đội `/user/queue/room/{id}/team`: `TEAM_VOTE {playerId, username, answerIndex}` khi đồng đội chọn (chỉ phòng Hội ý; không có đúng/sai), `TEAM_CHAT {senderId, sender, text}` (mọi phòng Đội đấu đội; `/app/room/{id}/team-chat {text}`, cắt 300 ký tự; chỉ gửi người thật còn trong đội). Đáp án đội = phương án nhiều thành viên ACTIVE chọn nhất, bằng nhau thì phương án được chọn trước; đúng 100, cả đội (mọi thành viên ACTIVE) cùng chọn đúng +50. `ROUND_END.teamAnswers {A, B}`. Hạng: tổng điểm câu → số lần cả đội cùng đúng → đội nhanh hơn → hòa thật. |
+| PCV-23 | **Thách đấu.** | Nút ở Bảng xếp hạng (người khác, cả bục vinh danh). `POST /api/challenges {challengedUserId}` (không thách máy; đang có lời thách chờ cùng người thì trả lại lời đó) → `{challengeId, status, expiresAt, secondsLeft}`. Người thách hỏi `GET /api/challenges/{id}` mỗi 3 giây; `POST /{id}/cancel`. Người được thách: thẻ mời toàn app hỏi `GET /api/challenges/pending` mỗi 20 giây; `POST /{id}/accept` mở phòng Đua tốc độ riêng 10 câu × 20 giây (người thách làm chủ phòng và chơi), cho người được thách vào phòng, lưu `roomId` → cả hai vào sảnh; `POST /{id}/decline` ("Để sau"). Trạng thái: PENDING, ACCEPTED, DECLINED, EXPIRED, CANCELLED; lời thách sống 5 phút. `secondsLeft` tính theo đồng hồ máy chủ. |
+| PCV-24 | **Ôn phần đọc hôm nay.** | `rooms.passage_scope` = JSON `[{book, fromChapter, toChapter}]` (`PassageScope`: sách trong 66 sách, kẹp chương, đảo khoảng ngược, bỏ trùng, tối đa 10 đoạn). Tạo phòng `passageScope` (chỉ nguồn kho câu). Chọn câu: trong đoạn trước (các đoạn lần lượt), thiếu thì cùng sách, rồi bất kỳ; độ khó cố định giữ ở mọi bước; Sinh tồn hỏi đoạn ở từng mức. `/room/create?passage=Genesis:27-28,Psalms:7` điền tên "Ôn phần đọc hôm nay" và hiện phạm vi ("Chọn sách khác" để bỏ). App Đọc hằng ngày (doc.forbible.org) có liên kết "Ôn phần này cùng nhóm". Khách: đăng nhập rồi quay về đúng trang. `RoomDetailsDTO.passageScope`. |
+
+Migration V78 (chỉ thêm): `users.is_bot`, `room_room_players.bot_level`, `rooms.team_consensus`, `rooms.passage_scope`; 6 tài khoản người máy (`INSERT IGNORE`).
+
 ## 1. Mục đích
 
 Tài liệu này tách toàn bộ phần **multiplayer realtime** (rooms, WebSocket events, lifecycle, 5 game modes, host-organizer separation) khỏi `SPEC_USER_v3.md` §5.4 — vốn đang lẫn cả gameplay solo + multiplayer trong cùng 1 chương dài. Mục tiêu:
@@ -70,7 +82,7 @@ Multiplayer state sống trên **4 JPA entity** trong package `com.biblequiz.mod
 | `RoomRound` | `room_rounds` | 1 row / câu hỏi đã phát ra. Soft FK tới `questions` HOẶC `user_questions` (xem note dưới). |
 | `RoomAnswer` | `room_answers` | 1 row / player / round. answerIndex, isCorrect, responseMs, pointsEarned. |
 
-Bonus entity (cùng package, ngoài scope spec này): `Challenge` (peer-challenge stub, không liên quan room realtime).
+Bonus entity (cùng package): `Challenge` — Thách đấu (PCV-23, §0.3): nhận lời thì mở một phòng Đua tốc độ riêng (`challenges.room_id`).
 
 #### `Room` (`Room.java:13-197`)
 
@@ -546,6 +558,7 @@ Tất cả route qua `RoomWebSocketController` với prefix `/app/`:
 | `/app/room/{roomId}/ready` | `handlePlayerReady` | `{}` | Toggle isReady. Broadcast `PLAYER_READY` HOẶC `PLAYER_UNREADY`. **Quản trò mode**: host không gọi handler này (host UI không có ready toggle). |
 | `/app/room/{roomId}/start` | `handleStartQuiz` | `{}` | Chỉ broadcast `ROOM_STARTING` (countdown UI). Actual start qua REST `POST /api/rooms/{id}/start`. |
 | `/app/room/{roomId}/answer` | `handleAnswerSubmission` | `{ questionIndex, answerIndex, reactionTimeMs }` | Submit đáp án. Server validate, chấm theo giờ máy chủ (§0 PCV-1) + khóa đáp án của vòng (§0.2 PCV-11a), lưu `RoomAnswer`, broadcast `ANSWER_SUBMITTED` (chỉ "đã trả lời"; bóng Sinh tồn không phát). **Quản trò mode**: server reject với `BadRequestException("Quản trò không trả lời câu hỏi")` nếu sender = host. |
+| `/app/room/{roomId}/team-chat` | `handleTeamChat` | `{ text }` | **Đội đấu đội (PCV-22)** — chat riêng của đội; cắt 300 ký tự; gửi `TEAM_CHAT` tới đồng đội là người thật còn trong đội qua `/user/queue/room/{roomId}/team`. |
 | `/app/room/{roomId}/predict` | `handlePredict` | `{ matchNo, pickUserId }` | **Đấu vương (PCV-16)** — khán giả đoán người thắng trận `matchNo`; nhận tới khi câu đầu của trận bắt đầu, chỉ khán giả, chỉ chọn một trong hai người đang đấu; phiếu sai bỏ qua im lặng. |
 | `/app/room/{roomId}/advance` | `handleSequentialAdvance` | `{}` | **Chỉ GROUP_LIVE_SEQUENTIAL** + chỉ host. Release latch để chuyển câu. |
 | `/app/room/{roomId}/reaction` | `handleReaction` | `ReactionData { reaction: string }` | Emoji reaction. Rate limited 3/10s. |
@@ -603,6 +616,8 @@ Topic: `/topic/room/{roomId}`. Mọi message wrap bởi `WebSocketMessage.Messag
 | Team vs Team | `TEAM_ASSIGNMENT` | `{ players: [{userId, username, team}] }` |
 | Team vs Team | `TEAM_SCORE_UPDATE` | `{ scoreA, scoreB }` |
 | Team vs Team | `PERFECT_ROUND` | `{ teamAPerfect, teamBPerfect }` |
+| Team vs Team (kênh đội) | `TEAM_VOTE` | `{ playerId, username, answerIndex }` — `/user/queue/room/{id}/team`, chỉ phòng Hội ý, khi đồng đội chọn (PCV-22). |
+| Team vs Team (kênh đội) | `TEAM_CHAT` | `{ senderId, sender, text }` — `/user/queue/room/{id}/team` (PCV-22). |
 | Sudden Death | `MATCH_START` | `{ championId, championName, championStreak, challengerId, challengerName, queueRemaining, matchNo }` |
 | Sudden Death | `MATCH_END` | `{ winnerId, winnerName, winnerNewStreak, loserId, loserName }` |
 | Sudden Death | `SD_QUEUE_UPDATE` | (defined, payload TBD) |
@@ -617,7 +632,7 @@ Topic: `/topic/room/{roomId}`. Mọi message wrap bởi `WebSocketMessage.Messag
 | `SCORE_UPDATE` | `{ playerId, username, newScore, correctAnswers, totalAnswered }` — **không gửi theo từng câu trả lời nữa** (2026-10-12, PCV-2); điểm cập nhật qua `ROUND_END.leaderboard`. |
 | `LEADERBOARD_UPDATE` | List<LeaderboardEntryDTO> |
 | `REACTION` | `{ senderId, senderName, reaction }` |
-| `CHALLENGE_RECEIVED` | (peer-challenge stub) |
+| `CHALLENGE_RECEIVED` | `{ challengeId, challengerName, challengerId, expiresAt, secondsLeft }` gửi `/user/queue/challenges` (PCV-23; giao diện hiện dùng `GET /api/challenges/pending` mỗi 20 giây). |
 | `CHAT_MESSAGE` | `{ sender, senderId, text }` |
 | `ERROR` | `{ error, message }` |
 
@@ -823,7 +838,7 @@ QUIZ_END → navigate `/room/:id/results-host` (different end screen — xem 7.6
 
 | Method | Endpoint | Auth | Mô tả |
 |---|---|---|---|
-| POST | `/api/rooms` | Bearer | Create room. Body: `{ roomName, mode, maxPlayers, questionCount, timePerQuestion, difficulty, bookScope, isPublic, questionSource, questionSetId }`. Returns `{ success, room: RoomDetailsDTO, viewerUserId }`. |
+| POST | `/api/rooms` | Bearer | Create room. Body: `{ roomName, mode, maxPlayers, questionCount, timePerQuestion, difficulty, bookScope, isPublic, questionSource, questionSetId, teamConsensus?, passageScope? }` (`teamConsensus` PCV-22, chỉ Đội đấu đội; `passageScope: [{book, fromChapter, toChapter}]` PCV-24, chỉ kho câu). Returns `{ success, room: RoomDetailsDTO, viewerUserId }`. |
 | POST | `/api/rooms/quick-match` | Bearer | **Đấu Nhanh** — server-orchestrated quick match (no Quản trò). Body: `{ mode, bookScope, questionCount (5-20), timePerQuestion (10-60), maxPlayers? (2-100, default 10; clamp), source (DATABASE\|AI_GENERATED), language, chapterFrom?, chapterTo?, verseFrom?, verseTo? }`. Out-of-range count/time coerced to defaults (10/30). All 4 modes supported (SPEED_RACE / BATTLE_ROYALE / TEAM_VS_TEAM / SUDDEN_DEATH). Returns `{ success, room, viewerUserId, quickMatch: true, remainingToday }` (200) hoặc `{ success: false, error, message, ... }` (422) với `error = AI_SOURCE_DISABLED` khi `source = AI_GENERATED`. Soft-host: `hostPlaysGame=true`, Quản trò controls reject. **Từ 2026-10-12 (PCV-8):** chỉ dùng kho câu đã biên tập (`DATABASE`), không còn giới hạn 3 trận/ngày; `remainingToday` giữ cho client cũ. Số người tối thiểu/tối đa theo §2.5. |
 | GET | `/api/rooms/public` | Optional | List public LOBBY+IN_PROGRESS rooms. Viewer-aware `joinable` field. Returns `{ success, rooms: PublicRoomDTO[] }`. |
 | GET | `/api/rooms/{id}` | Optional | Room details. Returns `{ success, room: RoomDetailsDTO, viewerUserId }`. `viewerUserId` is the caller's id (null if unauthenticated) and lives **outside** the room DTO so the same DTO can be safely multicast as a `ROOM_STATE` WS event. The DTO itself carries `groupId` (nullable) but no per-viewer field. |
@@ -834,6 +849,13 @@ QUIZ_END → navigate `/room/:id/results-host` (different end screen — xem 7.6
 | POST | `/api/rooms/{id}/shuffle-teams` | Bearer | **PCV-14** — TEAM_VS_TEAM, LOBBY; chủ phòng (Đấu nhanh: người trong phòng). Chia lại hai đội cân theo thứ tự ngẫu nhiên, mọi người bỏ sẵn sàng. Returns `{ success, room, viewerUserId }`; 400 + `message` nếu không được phép. |
 | PATCH | `/api/rooms/{id}/settings` | Bearer | **PCV-18** — `{ mode?, questionCount?, timePerQuestion?, difficulty? }`, chủ phòng, LOBBY, không áp cho Đấu nhanh/Chơi cùng nhau. Returns `{ success, room, viewerUserId }`; 400 + `message` khi không hợp lệ. |
 | POST | `/api/rooms/{id}/rematch` | Bearer | **PCV-17** — phòng ENDED; chủ phòng (Đấu nhanh: người đã chơi). Returns `{ success, room, viewerUserId, created }` (`created=false` khi phòng đã có người mở). |
+| POST | `/api/rooms/{id}/bots` | Bearer | **PCV-20** — `{ level: EASY\|MEDIUM\|HARD }`; chủ phòng (Đấu nhanh: người trong phòng), LOBBY, tối đa 5 máy, còn chỗ. Returns `{ success, room, viewerUserId }`; 400 + `message` khi không được. |
+| POST | `/api/challenges` | Bearer | **PCV-23** — `{ challengedUserId }` → `{ challengeId, status, expiresAt, secondsLeft }`; 400 khi tự thách, thách máy, người không tồn tại. |
+| GET | `/api/challenges/{id}` | Bearer | **PCV-23** — chỉ hai người trong cuộc: `{ challengeId, status, roomId, challengerName, challengedName, expiresAt, secondsLeft }`; người khác 404. |
+| POST | `/api/challenges/{id}/accept` | Bearer | **PCV-23** — người được thách; lời thách còn chờ và chưa hết hạn → `{ challengeId, challengerId, challengedId, status: ACCEPTED, roomId, roomCode }`; 400 + `error` khi hết hạn/đã hủy/đang ở phòng khác. |
+| POST | `/api/challenges/{id}/decline` | Bearer | **PCV-23** — người được thách từ chối ("Để sau"). |
+| POST | `/api/challenges/{id}/cancel` | Bearer | **PCV-23** — người thách hủy khi còn chờ → `{ status: CANCELLED }`. |
+| GET | `/api/challenges/pending` | Bearer | **PCV-23** — lời thách đang chờ mình: `[{ challengeId, challengerName, challengerId, expiresAt, secondsLeft }]`. |
 | POST | `/api/rooms/{id}/kick` | Bearer (host) | Kick player. Body: `{ userId }`. LOBBY only. |
 | GET | `/api/rooms/{id}/current-question` | Optional | Rehydrate câu hiện tại (từ Redis cache). 204 nếu không có. |
 | GET | `/api/rooms/{id}/leaderboard` | Optional | Final/live leaderboard. **Quản trò mode**: response loại bỏ host khỏi rankings. |

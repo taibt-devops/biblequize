@@ -2,6 +2,20 @@
 
 ---
 
+## 2026-10-13 — Phòng chơi v2 (đợt 3): người máy, Hội ý, Thách đấu, Ôn phần đọc hôm nay
+
+- **Bối cảnh:** thiết kế `docs/MULTIPLAYER/2026-10-12-phong-choi-v2-design.md` §3 (user 12/10: "làm hết luôn đi … cứ làm theo ý bạn").
+- **Quyết định:**
+  - **Người máy là tài khoản thật** (`users.is_bot`, 6 tài khoản "Máy An … Máy Hà", không đăng nhập được) nên đi đúng đường chơi của người. Ba cấp Dễ/Vừa/Giỏi: tỉ lệ đúng theo cấp × độ khó câu, trả lời sau vài giây ngẫu nhiên. Người máy không có nhiệm vụ, XP, thống kê; không làm chủ phòng; phòng phải có ít nhất 1 người thật; tối đa 5 máy mỗi phòng.
+  - **Thắng phòng chỉ tính khi có ≥ 2 người thật, MVP tuần khi ≥ 3 người thật** — chặn cày nhiệm vụ "Thắng 1 trận" và MVP bằng cách chơi một mình với máy.
+  - **Hội ý** (Đội đấu đội, tùy chọn khi tạo phòng): đồng đội thấy nhau chọn gì qua kênh riêng của đội; đáp án của đội là phương án nhiều người chọn nhất (bằng nhau thì phương án được chọn trước); đúng 100, cả đội cùng chọn đúng +50. Chat đội có ở mọi phòng Đội đấu đội. Không lộ đúng/sai giữa vòng.
+  - **Thách đấu** từ Bảng xếp hạng: lời thách sống 5 phút; nhận lời ⇒ phòng Đua tốc độ riêng 10 câu × 20 giây, người thách làm chủ phòng và cùng chơi. "Để sau" là từ chối. Đóng hộp chờ là hủy lời thách.
+  - **Ôn phần đọc hôm nay:** phòng có phạm vi theo đoạn (sách + khoảng chương). Câu trong đoạn trước, thiếu thì cùng sách, rồi bất kỳ; độ khó cố định giữ ở mọi bước. App Đọc hằng ngày có liên kết "Ôn phần này cùng nhóm". Đăng nhập xong quay về đúng trang (nhớ ở trình duyệt, chỉ đường dẫn trong app).
+- **Các quyết định nhỏ khi làm** (ghi ở ledger, đưa vào báo cáo cuối): `secondsLeft` theo đồng hồ máy chủ cho lời thách (`expiresAt` không kèm múi giờ); thẻ mời thách đấu không chặn màn và ẩn khi đang chơi; nhiều đoạn thì lấy lần lượt mỗi đoạn một câu.
+- **Implementation:** PCV-20..24, migration V78; SPEC_MULTIPLAYER §0.3, SPEC_USER §22.7.
+
+---
+
 ## 2026-10-13 — Phòng chơi v2 (đợt 2): luật mới cho 4 mode
 
 - **Bối cảnh:** thiết kế `docs/MULTIPLAYER/2026-10-12-phong-choi-v2-design.md` §2 (user 12/10: "làm hết luôn đi … cứ làm theo ý bạn").

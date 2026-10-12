@@ -81,7 +81,15 @@ class SocialFunTest {
     }
 
     @Test
-    void acceptChallenge_updatesStatus() {
+    void acceptChallenge_updatesStatus() throws Exception {
+        // PCV-23: nhận lời mở phòng thách đấu — chi tiết ở ChallengeServiceTest.
+        com.biblequiz.modules.room.service.RoomService roomService = mock(com.biblequiz.modules.room.service.RoomService.class);
+        org.springframework.test.util.ReflectionTestUtils.setField(challengeService, "roomService", roomService);
+        com.biblequiz.modules.room.entity.Room room = new com.biblequiz.modules.room.entity.Room();
+        room.setId("room-1");
+        room.setRoomCode("DUEL01");
+        when(roomService.createRoom(anyString(), eq(userA), anyInt(), anyInt(), anyInt(), any(), anyBoolean(), any(), anyString(), any(), any(), anyBoolean(), anyString()))
+                .thenReturn(room);
         Challenge challenge = new Challenge("c-1", userA, userB, LocalDateTime.now().plusMinutes(5));
         when(challengeRepository.findById("c-1")).thenReturn(Optional.of(challenge));
         when(challengeRepository.save(any())).thenAnswer(i -> i.getArgument(0));
@@ -89,6 +97,7 @@ class SocialFunTest {
         challengeService.acceptChallenge("c-1", "user-b");
 
         assertThat(challenge.getStatus()).isEqualTo(Challenge.Status.ACCEPTED);
+        assertThat(challenge.getRoomId()).isEqualTo("room-1");
     }
 
     @Test
