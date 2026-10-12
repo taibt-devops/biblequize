@@ -204,6 +204,8 @@ public class RoomQuizService {
             Question q = questions.get(i);
             RoomRound round = saveRound(roomId, new RoomRound(UUID.randomUUID().toString(), null, i, q.getId(), LocalDateTime.now()));
             roomStateService.setCurrentRoundId(roomId, round.getId());
+            // PCV-11a: đáp án của vòng giữ ở máy chủ trước khi phát câu hỏi.
+            roomStateService.setAnswerKey(roomId, RoomStateService.AnswerKey.of(q));
 
             wsController.broadcastQuestionStart(roomId, i, questions.size(), buildQuestionDto(q), ctx.timePerQuestion);
             // End the round as soon as every expected player has answered;

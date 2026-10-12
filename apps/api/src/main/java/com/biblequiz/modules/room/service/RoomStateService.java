@@ -1,6 +1,7 @@
 package com.biblequiz.modules.room.service;
 
 import com.biblequiz.api.websocket.WebSocketMessage;
+import com.biblequiz.modules.quiz.entity.Question;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +24,8 @@ public class RoomStateService {
     private static final String KEY_SD_CHAMPION_PREFIX = "room:state:sd_champion:";
     private static final String KEY_SD_CHALLENGER_PREFIX = "room:state:sd_challenger:";
     private static final String KEY_CHAT_PREFIX = "room:chat:";
+    /** PCV-11a: đáp án của câu đang chạy — chỉ ở máy chủ. */
+    private static final String KEY_ANSWER_PREFIX = "room:state:answer_key:";
     private static final Duration STATE_TTL = Duration.ofHours(2);
     // MPC-7: chat history outlives the in-game state (clearRoomState on QUIZ_END
     // must NOT wipe it) so the results screen + a page reload still show the
@@ -148,8 +151,55 @@ public class RoomStateService {
     // ── Clear all room state ──
 
     @SuppressWarnings("null")
+    /**
+     * PCV-11a — đáp án của câu đang chạy, giữ ở máy chủ (không bao giờ đi qua WebSocket), kèm id
+     * câu để chấm được cả câu trong "bộ câu của tôi" — các câu này không nằm trong bảng
+     * {@code questions} nên trước đây mọi câu trả lời đều bị chấm sai. Lớp không final để Redis
+     * giữ kiểu ({@code @class}) như {@link WebSocketMessage.QuestionStartData}.
+     */
+    public static class AnswerKey {
+        public String questionId;
+        public int correctIndex;
+        /** Tên enum {@link Question.Difficulty} (easy/medium/hard) hoặc null. */
+        public String difficulty;
+        public String book;
+
+        public AnswerKey() {}
+
+        public AnswerKey(String questionId, int correctIndex, String difficulty, String book) {
+            this.questionId = questionId;
+            this.correctIndex = correctIndex;
+            this.difficulty = difficulty;
+            this.book = book;
+        }
+
+        public static AnswerKey of(Question q) {
+            int idx = q.getCorrectAnswer() != null && !q.getCorrectAnswer().isEmpty() ? q.getCorrectAnswer().get(0) : -1;
+            return new AnswerKey(q.getId(), idx, q.getDifficulty() != null ? q.getDifficulty().name() : null, q.getBook());
+        }
+
+        public Question.Difficulty difficultyEnum() {
+            if (difficulty == null) return null;
+            try {
+                return Question.Difficulty.valueOf(difficulty);
+            } catch (IllegalArgumentException e) {
+                return null;
+            }
+        }
+    }
+
+    public void setAnswerKey(String roomId, AnswerKey key) {
+        redisTemplate.opsForValue().set(KEY_ANSWER_PREFIX + roomId, key, STATE_TTL);
+    }
+
+    public Optional<AnswerKey> getAnswerKey(String roomId) {
+        Object value = redisTemplate.opsForValue().get(KEY_ANSWER_PREFIX + roomId);
+        return value instanceof AnswerKey key ? Optional.of(key) : Optional.empty();
+    }
+
     public void clearRoomState(String roomId) {
         redisTemplate.delete(getQuestionKey(roomId));
+        redisTemplate.delete(KEY_ANSWER_PREFIX + roomId);
         redisTemplate.delete(KEY_ROUND_PREFIX + roomId);
         redisTemplate.delete(KEY_CLOSED_ROUND_PREFIX + roomId);
         redisTemplate.delete(KEY_SD_QUEUE_PREFIX + roomId);

@@ -80,6 +80,9 @@ public class SequentialStrategy implements RoomModeStrategy {
             RoomRound round = ctx.roundSaver.save(roomId,
                     new RoomRound(UUID.randomUUID().toString(), null, i, q.getId(), LocalDateTime.now()));
             ctx.roomStateService.setCurrentRoundId(roomId, round.getId());
+            // PCV-11a: đáp án của vòng giữ ở máy chủ (chấm được câu trong bộ câu tự soạn).
+            ctx.roomStateService.setAnswerKey(roomId,
+                    com.biblequiz.modules.room.service.RoomStateService.AnswerKey.of(q));
 
             int activePlayers = (int) ctx.roomPlayerRepository
                     .countByRoomIdAndPlayerStatus(roomId, RoomPlayer.PlayerStatus.ACTIVE);

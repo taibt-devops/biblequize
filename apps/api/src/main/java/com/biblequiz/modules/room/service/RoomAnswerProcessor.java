@@ -144,12 +144,22 @@ public class RoomAnswerProcessor {
             scoredMs = effective;
             String questionId = extractQuestionId(state.question);
             if (questionId != null) {
-                Question question = questionRepository.findById(questionId).orElse(null);
-                if (question != null && question.getCorrectAnswer() != null
-                        && !question.getCorrectAnswer().isEmpty()) {
-                    isCorrect = (answerIndex == question.getCorrectAnswer().get(0));
+                // PCV-11a: đáp án lấy từ khóa của vòng (máy chủ giữ) — chấm được cả câu tự soạn,
+                // vốn không có trong bảng questions. Không có khóa (vòng cũ) thì tra bảng như trước.
+                Optional<RoomStateService.AnswerKey> key = roomStateService.getAnswerKey(roomId)
+                        .filter(k -> questionId.equals(k.questionId));
+                if (key.isPresent() && key.get().correctIndex >= 0) {
+                    isCorrect = answerIndex == key.get().correctIndex;
                     pointsEarned = strategy.calculateScore(isCorrect, timeLimit, scoredMs);
-                    trackMission(user, question, isCorrect, scoredMs);
+                    trackMission(user, key.get().difficultyEnum(), key.get().book, isCorrect, scoredMs);
+                } else {
+                    Question question = questionRepository.findById(questionId).orElse(null);
+                    if (question != null && question.getCorrectAnswer() != null
+                            && !question.getCorrectAnswer().isEmpty()) {
+                        isCorrect = (answerIndex == question.getCorrectAnswer().get(0));
+                        pointsEarned = strategy.calculateScore(isCorrect, timeLimit, scoredMs);
+                        trackMission(user, question.getDifficulty(), question.getBook(), isCorrect, scoredMs);
+                    }
                 }
             }
         }
@@ -205,11 +215,11 @@ public class RoomAnswerProcessor {
         return AnswerResult.accepted(displayName, broadcastIsCorrect, broadcastPoints, defer, snapshot[0]);
     }
 
-    private void trackMission(User user, Question question, boolean isCorrect, int ms) {
+    private void trackMission(User user, Question.Difficulty difficulty, String book, boolean isCorrect, int ms) {
         if (dailyMissionService == null) return;
         try {
             dailyMissionService.onAnswer(user.getId(), new com.biblequiz.modules.quiz.service.DailyMissionService.AnswerEvent(
-                    isCorrect, question.getDifficulty(), question.getBook(), ms));
+                    isCorrect, difficulty, book, ms));
         } catch (RuntimeException ignored) {
             // nhiệm vụ không được làm hỏng luồng trả lời
         }
