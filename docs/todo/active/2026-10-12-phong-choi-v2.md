@@ -22,8 +22,8 @@
 - PCV-15 Đấu vương: xoay vòng, xếp hạng theo trận thắng, kết thúc theo ngai — Status: [x] DONE
 - PCV-16 Đấu vương: khán giả đoán — Status: [x] DONE
 - PCV-17 Chơi lại với nhóm này — Status: [x] DONE
-- PCV-18 Đổi cách chơi trong sảnh chờ — Status: [ ] TODO
-- PCV-19 Spec + DECISIONS + deploy đợt 2 — Status: [ ] TODO
+- PCV-18 Đổi cách chơi trong sảnh chờ — Status: [x] DONE
+- PCV-19 Spec + DECISIONS + deploy đợt 2 — Status: [~] IN PROGRESS (docs + smoke xong, chờ deploy)
 
 ### Tasks — Đợt 3 (tính năng mới)
 - PCV-20 Người máy (dữ liệu + thêm/bớt trong sảnh) — Status: [ ] TODO

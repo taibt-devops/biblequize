@@ -1,6 +1,6 @@
 # SPEC_MULTIPLAYER — Multiplayer & Room Lifecycle
 
-> Last updated **2026-10-12** (Phòng chơi v2 đợt 1 — PCV-1..10, xem §0) · trước đó 2026-05-09 (Sprint 4 — Host-Organizer separation) · Replaces SPEC_USER_v3 §5.4 + `docs/MULTIPLAYER/SPEC_USER_v3_PATCH_5.4.0.md`.
+> Last updated **2026-10-13** (Phòng chơi v2 đợt 1 + 2 — PCV-1..19, xem §0) · trước đó 2026-05-09 (Sprint 4 — Host-Organizer separation) · Replaces SPEC_USER_v3 §5.4 + `docs/MULTIPLAYER/SPEC_USER_v3_PATCH_5.4.0.md`.
 > Audience: backend + frontend engineers. Verified against `main` HEAD (Sprint 1 + 2.5 + 3 + 4 merged).
 > Related: SPEC_USER_v3.1 (gameplay), SPEC_GROUP_v1.2 (group quiz sets, Q-A…Q-O), BACKLOG.md (open code gaps).
 > Mockup reference: `docs/MULTIPLAYER/MOCKUP_HOST_ORGANIZER_FLOW.html` (Sprint 4 approved).
@@ -24,6 +24,23 @@
 | PCV-9 | **Tên + biểu tượng.** | Một tên tiếng Việt cho mỗi mode ở mọi màn: Đua tốc độ (bolt ⚡), Sinh tồn (favorite ❤️), Đội đấu đội (groups 👥), Đấu vương (swords ⚔️), Chơi cùng nhau (group 📚). Tạo phòng có hai ô "Tôi dẫn chương trình" / "Tôi chơi cùng mọi người" (mặc định dẫn chương trình). |
 
 Phòng chơi **không cộng XP** (XP chỉ đến từ Đấu Hạng, Thử thách ngày và thưởng nhiệm vụ — DECISIONS 2026-10-12).
+
+### §0.2 Phòng chơi v2 — đợt 2 (2026-10-13): thiết kế lại 4 mode
+
+| # | Thay đổi | Chi tiết |
+|---|---|---|
+| PCV-11a | **Đáp án theo vòng giữ ở máy chủ.** | Đầu mỗi câu, vòng lặp ghi `room:state:answer_key:{roomId}` = `{questionId, correctIndex, difficulty, book}` (Redis, không gửi qua WebSocket). `RoomAnswerProcessor` chấm theo khóa này khi khớp câu đang chạy, thiếu thì tra bảng `questions`. Sửa lỗi phòng dùng **bộ câu của tôi** (`user_questions`) luôn bị chấm sai. |
+| PCV-11 | **Đua tốc độ.** | Đúng liên tiếp lần 2 +10, lần 3 +20, từ lần 4 +30 (`room_room_players.answer_streak`; sai hoặc không trả lời về 0). Câu cuối là câu chốt: `QUESTION_START.multiplier = 2`, nhân cả điểm gốc, tốc độ và chuỗi. `ROUND_END.results[].streak`. Giao diện: "Câu chốt · ×2", "Chuỗi n · +x", bảng 5 người dẫn đầu sau câu 3, 6, 9… |
+| PCV-12 | **Sinh tồn — mạng.** | Mỗi người 2 mạng (`lives`); trượt mất 1, hết mạng thì `ELIMINATED` (`eliminated_round` = chỉ số câu). Cả nhóm cùng trượt thì ân xá. Kho câu + "Hỗn hợp": 30/40/30 Dễ → TB → Khó + 5 câu Khó dự phòng (`BattleRoyaleQuestionPlan`); độ khó cố định: 5 câu dự phòng cùng độ khó; bộ câu tự soạn: không có câu dự phòng. Từ câu 10: `max(10, gốc − 2×(câu − 9))` giây, `QUESTION_START.dangerZone`. Hết câu chính còn > 1 người: tối đa 5 câu quyết định (`showdown`), trượt là bị loại ngay (vẫn ân xá). Hạng: người còn lại theo mạng → câu đúng → tốc độ; người bị loại theo lượt bị loại (muộn hơn xếp trên, cùng lượt đồng hạng); người bỏ trận cuối. Người chơi phòng đang chạy lúc nâng cấp có `lives = 0` ⇒ luật cũ. |
+| PCV-13 | **Sinh tồn — bóng + hồi sinh.** | Người bị loại vẫn trả lời (`room_answers.ghost = true`): 0 điểm, không tính câu đúng, không làm vòng kết thúc sớm (`countByRoundIdAndGhostFalse`), không phát `ANSWER_SUBMITTED`, không vào `answerCounts`/`results`. Đúng 3 câu liên tiếp ở câu 1–9 (`ghost_streak`) và chưa hồi sinh (`revived`) ⇒ `ACTIVE`, 1 mạng, `PLAYER_REVIVED`. |
+| PCV-14 | **Đội đấu đội.** | Điểm đội = round(trung bình điểm thành viên còn trong trận; cả đội đã rời thì trung bình tất cả) + 50 × số lần cả đội đúng — thưởng **không** cộng vào điểm cá nhân. Cả đội đúng = mọi thành viên ACTIVE đúng (≥ 1). Hòa: số lần cả đội đúng → trung bình thời gian của thành viên đã trả lời → hòa thật. `POST /api/rooms/{id}/shuffle-teams`. Tên đội (giao diện) theo phòng: Giô-suê/Ca-lép, Phi-e-rơ/Giăng, Đa-vít/Giô-na-than, Ru-tơ/Na-ô-mi, Ê-li/Ê-li-sê, Mô-se/A-rôn. |
+| PCV-15 | **Đấu vương — xoay vòng.** | Hàng chờ xáo ngẫu nhiên; người thua về cuối hàng; bỏ qua người đã rời. Kết thúc khi mọi người đã đấu ≥ 1 trận **và** vua thắng liền ≥ 3 (≤ 5 người) hoặc ≥ 4, hoặc hết số câu. Thống kê `matches_won`, `best_streak`, `matches_played`. Hạng: trận thắng → chuỗi dài nhất → câu đúng → tốc độ. |
+| PCV-16 | **Đấu vương — khán giả đoán.** | `MATCH_START.matchNo`; khán giả gửi `/app/room/{id}/predict {matchNo, pickUserId}` tới khi câu đầu của trận bắt đầu (Redis `room:state:sd_predict_open`, `room:state:sd_predict:{roomId}:{matchNo}`). Đoán đúng +1 `prediction_points`; `PREDICTION_RESULT {matchNo, winnerId, correctUserIds}`. Trận đầu có 4 giây giới thiệu. Màn kết quả: "Khán giả tinh mắt". |
+| PCV-17 | **Chơi lại với nhóm này.** | `POST /api/rooms/{id}/rematch` (phòng ENDED; chủ phòng, Đấu nhanh: người đã chơi). Redis SETNX `rematch:{oldId}` 1 giờ ⇒ bấm lại trả phòng đã có. Chép mọi cài đặt; nguồn AI ⇒ kho câu. `REMATCH_READY {roomId, roomCode}` lên topic phòng cũ; giao diện "Vào ván mới". |
+| PCV-18 | **Đổi cách chơi trong sảnh.** | `PATCH /api/rooms/{id}/settings {mode?, questionCount?, timePerQuestion?, difficulty?}` — chủ phòng, ở sảnh, không áp cho Đấu nhanh và Chơi cùng nhau; kẹp theo `RoomModeRules`; Đấu vương quá 12 người bị từ chối; sang Đội đấu đội chia đội cân, rời thì bỏ đội; mọi người bấm sẵn sàng lại; `ROOM_STATE` + chat hệ thống. |
+| PCV-19 | **QUIZ_END.** | Máy chủ luôn gửi `{roomId, timestamp, finalResults}`; Đội đấu đội đặt `{teamWinner, scoreA, scoreB, leaderboard}` trong `finalResults`. Giao diện đọc mọi dạng qua `normalizeQuizEnd` (trước đó màn đội thắng không hiện). Leaderboard mang thêm `lives`, `answerStreak`, `revived`, `ghostStreak`, `matchesWon`, `bestStreak`, `matchesPlayed`, `predictionPoints`. |
+
+Migration V77 (chỉ thêm cột có mặc định): `room_room_players` + `answer_streak`, `lives`, `ghost_streak`, `revived`, `eliminated_round`, `matches_won`, `best_streak`, `matches_played`, `prediction_points`; `room_answers` + `ghost`.
 
 ## 1. Mục đích
 
@@ -528,7 +545,8 @@ Tất cả route qua `RoomWebSocketController` với prefix `/app/`:
 | `/app/room/{roomId}/leave` | `handlePlayerLeave` | `{}` | Notify rời. Server gọi `roomService.leaveRoom` rồi broadcast `PLAYER_LEFT`. |
 | `/app/room/{roomId}/ready` | `handlePlayerReady` | `{}` | Toggle isReady. Broadcast `PLAYER_READY` HOẶC `PLAYER_UNREADY`. **Quản trò mode**: host không gọi handler này (host UI không có ready toggle). |
 | `/app/room/{roomId}/start` | `handleStartQuiz` | `{}` | Chỉ broadcast `ROOM_STARTING` (countdown UI). Actual start qua REST `POST /api/rooms/{id}/start`. |
-| `/app/room/{roomId}/answer` | `handleAnswerSubmission` | `{ questionIndex, answerIndex, reactionTimeMs }` | Submit đáp án. Server validate, score, lưu `RoomAnswer`, broadcast `ANSWER_SUBMITTED` + `SCORE_UPDATE`. **Quản trò mode**: server reject với `BadRequestException("Quản trò không trả lời câu hỏi")` nếu sender = host. |
+| `/app/room/{roomId}/answer` | `handleAnswerSubmission` | `{ questionIndex, answerIndex, reactionTimeMs }` | Submit đáp án. Server validate, chấm theo giờ máy chủ (§0 PCV-1) + khóa đáp án của vòng (§0.2 PCV-11a), lưu `RoomAnswer`, broadcast `ANSWER_SUBMITTED` (chỉ "đã trả lời"; bóng Sinh tồn không phát). **Quản trò mode**: server reject với `BadRequestException("Quản trò không trả lời câu hỏi")` nếu sender = host. |
+| `/app/room/{roomId}/predict` | `handlePredict` | `{ matchNo, pickUserId }` | **Đấu vương (PCV-16)** — khán giả đoán người thắng trận `matchNo`; nhận tới khi câu đầu của trận bắt đầu, chỉ khán giả, chỉ chọn một trong hai người đang đấu; phiếu sai bỏ qua im lặng. |
 | `/app/room/{roomId}/advance` | `handleSequentialAdvance` | `{}` | **Chỉ GROUP_LIVE_SEQUENTIAL** + chỉ host. Release latch để chuyển câu. |
 | `/app/room/{roomId}/reaction` | `handleReaction` | `ReactionData { reaction: string }` | Emoji reaction. Rate limited 3/10s. |
 | `/app/room/{roomId}/chat` | `handleChat` | `{ text: string }` | Free-form chat trong room. Trim 500 chars; empty drop. **MPC (2026-06-24)**: FE giữ lịch sử chat trong `roomChatStore` (Zustand keyed theo roomId) sống xuyên Lobby→Quiz→Results; màn kết quả (QuizEndScreen / SequentialFinalView) có chat drawer (ResultsChat) để tiếp tục thảo luận với nguyên cuộc trò chuyện trước đó. Chat KHÔNG khả dụng trong lúc đang chơi (chỉ Lobby + Results). **Persist (Redis)**: `handleChat` + `broadcastSystemChat` ghi vào Redis list `room:chat:{id}` (cap 200, TTL 12h, KHÔNG bị clearRoomState xóa); `GET /api/rooms/{id}/chat` replay history. FE hydrate store qua `useRoomChatHistory` khi mount → reload / late-join KHÔNG mất chat. |
@@ -579,10 +597,13 @@ Topic: `/topic/room/{roomId}`. Mọi message wrap bởi `WebSocketMessage.Messag
 |---|---|---|
 | Battle Royale | `PLAYER_ELIMINATED` | `{ userId, username, rank, activeRemaining }` |
 | Battle Royale | `BATTLE_ROYALE_UPDATE` | `{ activeCount, totalCount }` |
+| Battle Royale | `PLAYER_REVIVED` | `{ userId, username, activeRemaining }` — bóng hồi sinh (PCV-13). |
+| Sudden Death | `PREDICTION_RESULT` | `{ matchNo, winnerId, correctUserIds }` — sau mỗi trận (PCV-16). |
+| Mọi mode | `REMATCH_READY` | `{ roomId, roomCode }` — ván mới đã mở, gửi lên topic phòng cũ (PCV-17). |
 | Team vs Team | `TEAM_ASSIGNMENT` | `{ players: [{userId, username, team}] }` |
 | Team vs Team | `TEAM_SCORE_UPDATE` | `{ scoreA, scoreB }` |
 | Team vs Team | `PERFECT_ROUND` | `{ teamAPerfect, teamBPerfect }` |
-| Sudden Death | `MATCH_START` | `{ championId, championName, championStreak, challengerId, challengerName, queueRemaining }` |
+| Sudden Death | `MATCH_START` | `{ championId, championName, championStreak, challengerId, challengerName, queueRemaining, matchNo }` |
 | Sudden Death | `MATCH_END` | `{ winnerId, winnerName, winnerNewStreak, loserId, loserName }` |
 | Sudden Death | `SD_QUEUE_UPDATE` | (defined, payload TBD) |
 | Group Live Seq | `SEQUENTIAL_PROGRESS` | `{ answered, total }` — mỗi answer. |
@@ -810,6 +831,9 @@ QUIZ_END → navigate `/room/:id/results-host` (different end screen — xem 7.6
 | POST | `/api/rooms/{id}/start` | Bearer (host) | Flip → IN_PROGRESS. Validate ≥2 players + (non-Sequential) all non-host ready. |
 | POST | `/api/rooms/{id}/leave` | Bearer | Rời room. Mid-game → mark LEFT. LOBBY → delete row. |
 | POST | `/api/rooms/{id}/switch-team` | Bearer | TEAM_VS_TEAM, LOBBY only. Toggle A↔B. |
+| POST | `/api/rooms/{id}/shuffle-teams` | Bearer | **PCV-14** — TEAM_VS_TEAM, LOBBY; chủ phòng (Đấu nhanh: người trong phòng). Chia lại hai đội cân theo thứ tự ngẫu nhiên, mọi người bỏ sẵn sàng. Returns `{ success, room, viewerUserId }`; 400 + `message` nếu không được phép. |
+| PATCH | `/api/rooms/{id}/settings` | Bearer | **PCV-18** — `{ mode?, questionCount?, timePerQuestion?, difficulty? }`, chủ phòng, LOBBY, không áp cho Đấu nhanh/Chơi cùng nhau. Returns `{ success, room, viewerUserId }`; 400 + `message` khi không hợp lệ. |
+| POST | `/api/rooms/{id}/rematch` | Bearer | **PCV-17** — phòng ENDED; chủ phòng (Đấu nhanh: người đã chơi). Returns `{ success, room, viewerUserId, created }` (`created=false` khi phòng đã có người mở). |
 | POST | `/api/rooms/{id}/kick` | Bearer (host) | Kick player. Body: `{ userId }`. LOBBY only. |
 | GET | `/api/rooms/{id}/current-question` | Optional | Rehydrate câu hiện tại (từ Redis cache). 204 nếu không có. |
 | GET | `/api/rooms/{id}/leaderboard` | Optional | Final/live leaderboard. **Quản trò mode**: response loại bỏ host khỏi rankings. |

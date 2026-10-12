@@ -2,6 +2,20 @@
 
 ---
 
+## 2026-10-13 — Phòng chơi v2 (đợt 2): luật mới cho 4 mode
+
+- **Bối cảnh:** thiết kế `docs/MULTIPLAYER/2026-10-12-phong-choi-v2-design.md` §2 (user 12/10: "làm hết luôn đi … cứ làm theo ý bạn").
+- **Quyết định:**
+  - **Đua tốc độ:** thưởng chuỗi +10/+20/+30, câu cuối nhân đôi toàn bộ điểm câu đó.
+  - **Sinh tồn:** 2 mạng; câu Dễ → TB → Khó; vùng nguy hiểm từ câu 10; người bị loại chơi tiếp dưới dạng "bóng", đúng 3 câu liên tiếp trước câu 10 thì hồi sinh một lần; còn nhiều người sau câu chính thì tối đa 5 câu quyết định. Xếp hạng không theo điểm (giữ DECISIONS 2026-06-12).
+  - **Đội đấu đội:** điểm đội là **trung bình** điểm thành viên (không phải tổng) + 50 mỗi lần cả đội đúng — đội đông người không còn tự nhiên thắng; thưởng không cộng vào điểm cá nhân.
+  - **Đấu vương:** người thua về cuối hàng (xoay vòng) thay vì ngồi xem đến hết; kết thúc khi ai cũng đã đấu và vua thắng liền 3 (phòng > 5 người: 4); xếp theo số trận thắng. Khán giả đoán người thắng mỗi trận.
+  - **Chơi lại** một chạm và **đổi cách chơi ngay trong sảnh** (trừ Đấu nhanh).
+- **Các quyết định nhỏ khi làm** (ghi ở ledger, đưa vào báo cáo cuối): câu quyết định dùng tiếp công thức vùng nguy hiểm; câu của bóng không phát "đã trả lời"; trận Đấu vương đầu có 4 giây giới thiệu để khán giả kịp đoán; tên đội băm theo id phòng.
+- **Implementation:** PCV-11a..19, migration V77; SPEC_MULTIPLAYER §0.2.
+
+---
+
 ## 2026-10-12 — Phòng chơi v2 (đợt 1): Đấu vương tối đa 12, thưởng nhiệm vụ 50 XP thật, Đấu nhanh không dùng AI, Phòng chơi không cộng XP
 
 - **Bối cảnh:** review game design Phòng chơi 12/10 (user: "review kĩ … dưới mắt nhìn của 1 senior game design", rồi "làm hết luôn đi … cứ làm theo ý bạn"). Thiết kế: `docs/MULTIPLAYER/2026-10-12-phong-choi-v2-design.md`.
