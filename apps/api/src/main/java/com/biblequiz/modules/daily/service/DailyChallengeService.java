@@ -283,6 +283,7 @@ public class DailyChallengeService {
         // Mark "complete_daily_challenge" mission as done.
         try {
             dailyMissionService.trackProgress(user.getId(), "complete_daily_challenge", 1);
+            dailyMissionService.onEvent(user.getId(), "play_any_mode");
         } catch (RuntimeException ex) {
             log.warn("Daily completion: mission tracking failed for user {} ({}). " +
                     "Cache + XP already credited; mission skipped.", user.getId(), ex.getMessage());
@@ -422,10 +423,9 @@ public class DailyChallengeService {
         if (userIdOrEmail != null) {
             resolveUserId(userIdOrEmail).ifPresent(uid -> {
                 try {
-                    if (isCorrect) {
-                        dailyMissionService.trackProgress(uid, "answer_correct", 1);
-                    }
-                    dailyMissionService.trackComboProgress(uid, "answer_combo", isCorrect);
+                    // PCV-7: Thử thách ngày không đo thời gian → câu khó nhanh không tính ở đây.
+                    dailyMissionService.onAnswer(uid, new DailyMissionService.AnswerEvent(
+                            isCorrect, question.getDifficulty(), question.getBook(), 0));
                 } catch (RuntimeException ex) {
                     log.warn("Daily mission tracking failed for user {} ({}). Answer flow unaffected.",
                             uid, ex.getMessage());

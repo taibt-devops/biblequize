@@ -674,10 +674,13 @@ public class RankedController {
                         // failures from breaking the ranked answer response.
                         if (dailyMissionService != null) {
                             try {
-                                if (isCorrect) {
-                                    dailyMissionService.trackProgress(user.getId(), "answer_correct", 1);
-                                }
-                                dailyMissionService.trackComboProgress(user.getId(), "answer_combo", isCorrect);
+                                // PCV-7: nhiệm vụ theo câu + "đạt N điểm Đấu Hạng trong ngày".
+                                dailyMissionService.onAnswer(user.getId(), new com.biblequiz.modules.quiz.service.DailyMissionService.AnswerEvent(
+                                        isCorrect,
+                                        currentQ != null ? currentQ.getDifficulty() : null,
+                                        currentQ != null ? currentQ.getBook() : null,
+                                        clientElapsedMs));
+                                dailyMissionService.onRankedPoints(user.getId(), p.pointsToday);
                             } catch (RuntimeException missionErr) {
                                 log.warn("Daily mission tracking failed for user {} ({}). Ranked flow unaffected.",
                                         user.getId(), missionErr.getMessage());

@@ -33,6 +33,9 @@ public class MemoryVerseService {
     private final UserMemoryVerseRepository repository;
     private final BiblePassageService passageService;
 
+    @org.springframework.beans.factory.annotation.Autowired(required = false)
+    private com.biblequiz.modules.quiz.service.DailyMissionService dailyMissionService;
+
     public MemoryVerseService(UserMemoryVerseRepository repository, BiblePassageService passageService) {
         this.repository = repository;
         this.passageService = passageService;
@@ -103,6 +106,14 @@ public class MemoryVerseService {
         UserMemoryVerse verse = owned(userId, id);
         MemorySchedule.applyReview(verse, passed, now);
         repository.save(verse);
+        // PCV-7: nhiệm vụ "Ôn N câu Học Thuộc" — lỗi nhiệm vụ không làm hỏng lượt ôn.
+        if (dailyMissionService != null) {
+            try {
+                dailyMissionService.onEvent(userId, "memorize_review");
+            } catch (RuntimeException ignored) {
+                // không chặn lượt ôn
+            }
+        }
         return toItem(verse, now);
     }
 

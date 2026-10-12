@@ -32,6 +32,7 @@ public class RoomMatchOutcomeService {
             String userId = p.getUser().getId();
             try {
                 missionService.trackProgress(userId, "play_multiplayer_room", 1);
+                missionService.trackProgress(userId, "play_any_mode", 1);
                 if (p.getFinalRank() != null && p.getFinalRank() == 1) {
                     missionService.trackProgress(userId, "win_multiplayer_room", 1);
                 }

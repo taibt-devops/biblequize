@@ -466,7 +466,7 @@ public class SessionService {
         recordQuestionHistory(user, question, isCorrect);
         updateEarlyRankedUnlockProgress(user, session.getMode(), isCorrect);
         creditNonRankedProgress(user, session.getMode(), isCorrect, scoreDelta);
-        trackDailyMissionAnswer(user.getId(), isCorrect);
+        trackDailyMissionAnswer(user.getId(), question, isCorrect, safedElapsedMs);
 
         return toAnswerResult(answer, question);
     }
@@ -477,13 +477,12 @@ public class SessionService {
      * the streak (reset on wrong). Wrapped in try/catch so mission failures
      * never break the user's answer submission.
      */
-    private void trackDailyMissionAnswer(String userId, boolean isCorrect) {
+    private void trackDailyMissionAnswer(String userId, Question question, boolean isCorrect, int elapsedMs) {
         if (dailyMissionService == null) return;
         try {
-            if (isCorrect) {
-                dailyMissionService.trackProgress(userId, "answer_correct", 1);
-            }
-            dailyMissionService.trackComboProgress(userId, "answer_combo", isCorrect);
+            // PCV-7: một sự kiện đẩy đủ các nhiệm vụ theo câu (đúng, chuỗi, độ khó, câu khó nhanh, cùng sách).
+            dailyMissionService.onAnswer(userId, new DailyMissionService.AnswerEvent(
+                    isCorrect, question.getDifficulty(), question.getBook(), elapsedMs));
         } catch (RuntimeException ex) {
             log.warn("Daily mission tracking failed for user {} ({}). Answer flow unaffected.",
                     userId, ex.getMessage());
@@ -963,6 +962,14 @@ public class SessionService {
         LocalDateTime now = LocalDateTime.now();
         session.setStatus(QuizSession.Status.completed);
         session.setEndedAt(now);
+        // PCV-7: "Chơi 1 lượt ở bất kỳ chế độ nào".
+        if (dailyMissionService != null) {
+            try {
+                dailyMissionService.onEvent(resolvedUserId, "play_any_mode");
+            } catch (RuntimeException ex) {
+                log.warn("Daily mission play_any_mode failed for user {} ({})", resolvedUserId, ex.getMessage());
+            }
+        }
         if (session.getStartedAt() == null) {
             session.setStartedAt(session.getCreatedAt() != null ? session.getCreatedAt() : now);
         }

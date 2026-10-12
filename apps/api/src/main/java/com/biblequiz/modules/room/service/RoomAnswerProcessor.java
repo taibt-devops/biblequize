@@ -47,6 +47,10 @@ public class RoomAnswerProcessor {
     /** Đồng hồ máy chủ (ms) — tách ra để test giả lập được. */
     private final LongSupplier nowMs;
 
+    /** PCV-7: nhiệm vụ theo câu cho câu trả lời trong phòng (field injection để giữ constructor cũ). */
+    @org.springframework.beans.factory.annotation.Autowired(required = false)
+    private com.biblequiz.modules.quiz.service.DailyMissionService dailyMissionService;
+
     /** PCV-1: số của máy người chơi được tin trong khoảng 1,5 s dưới thời gian máy chủ đo. */
     static final long LATENCY_ALLOWANCE_MS = 1_500;
     /** PCV-1: ân hạn sau khi hết giờ cho câu trả lời đi đường mạng chậm. */
@@ -143,6 +147,7 @@ public class RoomAnswerProcessor {
                         && !question.getCorrectAnswer().isEmpty()) {
                     isCorrect = (answerIndex == question.getCorrectAnswer().get(0));
                     pointsEarned = strategy.calculateScore(isCorrect, timeLimit, scoredMs);
+                    trackMission(user, question, isCorrect, scoredMs);
                 }
             }
         }
@@ -196,6 +201,16 @@ public class RoomAnswerProcessor {
                 : playerOpt.map(RoomPlayer::getUsername).orElse("Unknown");
 
         return AnswerResult.accepted(displayName, broadcastIsCorrect, broadcastPoints, defer, snapshot[0]);
+    }
+
+    private void trackMission(User user, Question question, boolean isCorrect, int ms) {
+        if (dailyMissionService == null) return;
+        try {
+            dailyMissionService.onAnswer(user.getId(), new com.biblequiz.modules.quiz.service.DailyMissionService.AnswerEvent(
+                    isCorrect, question.getDifficulty(), question.getBook(), ms));
+        } catch (RuntimeException ignored) {
+            // nhiệm vụ không được làm hỏng luồng trả lời
+        }
     }
 
     /**
