@@ -47,8 +47,9 @@ public class MultiplayerStatsService {
                 .count();
         double winRate = totalMatches == 0 ? 0.0 : (double) wins / totalMatches;
 
-        long mvpCount = userAchievementRepository
-                .countByUserIdAndCategoryAndEarnedAtBetween(userId, MVP_CATEGORY, weekStart, now);
+        // PCV-6: MVP = trận người chơi có điểm cao nhất trong phòng ≥ 3 người. Trước đây đếm
+        // thành tích category MULTIPLAYER_MVP — category này chưa từng được trao nên luôn 0.
+        long mvpCount = matches.stream().filter(this::isMvp).count();
 
         return new WeeklyMultiplayerStatsDTO(
                 "weekly",
@@ -58,6 +59,14 @@ public class MultiplayerStatsService {
                 winRate,
                 mvpCount,
                 dailyQuickMatchCounter.getRemainingToday(userId));
+    }
+
+    private boolean isMvp(RoomPlayer me) {
+        if (me.getScore() == null || me.getScore() <= 0) return false;
+        List<RoomPlayer> roster = roomPlayerRepository.findByRoomId(me.getRoom().getId());
+        if (roster.size() < 3) return false;
+        int top = roster.stream().mapToInt(p -> p.getScore() != null ? p.getScore() : 0).max().orElse(0);
+        return me.getScore() == top;
     }
 
     /** Monday 00:00 of the current calendar week, system zone. */

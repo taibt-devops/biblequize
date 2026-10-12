@@ -57,6 +57,7 @@ public class RoomQuizService {
     @Autowired private RoomModeRegistry roomModeRegistry;
     @Autowired private HostControlService hostControlService;
     @Autowired private RoundResultBuilder roundResultBuilder;
+    @Autowired private RoomMatchOutcomeService matchOutcomeService;
 
     /** PCV-2: nghỉ sau khi công bố đủ lâu để đọc câu gốc (5 s; có giải thích thì 7 s — xem
      *  {@link RoundResultBuilder#revealPauseMs}). Đấu vương dùng giá trị gốc này. */
@@ -157,10 +158,16 @@ public class RoomQuizService {
                     roomPlayerRepository, roomRoundRepository,
                     this::saveRound, this::buildQuestionDto);
 
+            boolean finished;
             if (strategy.hasCustomGameLoop()) {
                 strategy.runGameLoop(ctx);
+                finished = true;
             } else {
-                runStandardLoop(ctx, strategy);
+                finished = runStandardLoop(ctx, strategy);
+            }
+            // PCV-6: nhiệm vụ "chơi/thắng phòng" chỉ khi trận kết thúc bình thường.
+            if (finished && matchOutcomeService != null) {
+                matchOutcomeService.recordOutcome(roomId);
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
@@ -181,11 +188,12 @@ public class RoomQuizService {
      * Mode differences (stop conditions, expected answers, post-round
      * processing, final results) live in {@link RoomModeStrategy} hooks.
      */
-    private void runStandardLoop(GameLoopContext ctx, RoomModeStrategy strategy) throws InterruptedException {
+    /** @return true nếu trận kết thúc bình thường (finishGame đã chạy), false nếu bị ngắt sớm. */
+    private boolean runStandardLoop(GameLoopContext ctx, RoomModeStrategy strategy) throws InterruptedException {
         String roomId = ctx.roomId;
         List<Question> questions = ctx.questions;
 
-        if (!strategy.beforeLoop(ctx)) return;
+        if (!strategy.beforeLoop(ctx)) return false;
 
         for (int i = 0; i < questions.size(); i++) {
             awaitIfPaused(roomId);
@@ -217,9 +225,10 @@ public class RoomQuizService {
 
         if (isRoomEnded(roomId)) {
             log.info("{} ngắt sớm cho phòng {} (host end-early)", strategy.displayName(), roomId);
-            return;
+            return false;
         }
         strategy.finishGame(ctx);
+        return true;
     }
 
     // ────────────────────────────── HELPERS ──────────────────────────────

@@ -2,6 +2,7 @@ package com.biblequiz.modules.room.service.mode;
 
 import com.biblequiz.modules.room.entity.Room;
 import com.biblequiz.modules.room.entity.RoomPlayer;
+import com.biblequiz.modules.room.service.RankAssigner;
 import com.biblequiz.modules.room.service.RoomService;
 import com.biblequiz.modules.room.service.SpeedRaceScoringService;
 
@@ -44,11 +45,15 @@ public class SpeedRaceStrategy implements RoomModeStrategy {
 
     @Override
     public Comparator<RoomPlayer> leaderboardComparator() {
-        return RoomService.ORDER_BY_SCORE_DESC;
+        return RoomService.ORDER_BY_FINAL_RANK_ASC;
     }
 
     @Override
     public void finishGame(GameLoopContext ctx) {
+        // PCV-6: chốt hạng (điểm → câu đúng → tốc độ; bằng hệt thì đồng hạng) trước khi công bố.
+        List<RoomPlayer> players = ctx.roomPlayerRepository.findByRoomId(ctx.roomId);
+        RankAssigner.assign(players, RankAssigner.BY_SCORE_ACCURACY_SPEED);
+        ctx.roomPlayerRepository.saveAll(players);
         List<RoomService.LeaderboardEntryDTO> finalResults =
                 ctx.roomService.buildLeaderboard(ctx.roomId, leaderboardComparator());
         ctx.roomService.endRoom(ctx.roomId);

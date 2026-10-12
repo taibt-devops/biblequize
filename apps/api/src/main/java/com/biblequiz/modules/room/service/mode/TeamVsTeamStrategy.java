@@ -105,6 +105,14 @@ public class TeamVsTeamStrategy implements RoomModeStrategy {
         int perfectB = perfectCounts != null ? perfectCounts[1] : 0;
         TeamScoringService.TeamResult result =
                 teamScoringService.determineWinnerWithTieBreak(ctx.roomId, perfectA, perfectB);
+        // PCV-6: hạng theo kết quả đội — đội thắng hạng 1, đội thua hạng 2; hòa thật thì cả hai hạng 1.
+        List<RoomPlayer> players = ctx.roomPlayerRepository.findByRoomId(ctx.roomId);
+        for (RoomPlayer p : players) {
+            boolean won = "TIE".equals(result.winningTeam)
+                    || (p.getTeam() != null && p.getTeam().name().equals(result.winningTeam));
+            p.setFinalRank(won ? 1 : 2);
+        }
+        ctx.roomPlayerRepository.saveAll(players);
 
         List<RoomService.LeaderboardEntryDTO> finalResults =
                 ctx.roomService.buildLeaderboard(ctx.roomId, leaderboardComparator());
