@@ -56,6 +56,8 @@ public class RoomAnswerProcessor {
     /** PCV-1: ân hạn sau khi hết giờ cho câu trả lời đi đường mạng chậm. */
     public static final long ROUND_GRACE_MS = 1_000;
 
+    /** Constructor cho Spring (có hai constructor nên phải chỉ rõ — thiếu thì app không khởi động). */
+    @org.springframework.beans.factory.annotation.Autowired
     public RoomAnswerProcessor(RoomStateService roomStateService,
                                RoomAnswerRepository roomAnswerRepository,
                                RoomRoundRepository roomRoundRepository,
