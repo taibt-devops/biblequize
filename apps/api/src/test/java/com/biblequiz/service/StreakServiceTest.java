@@ -3,7 +3,9 @@ package com.biblequiz.service;
 import com.biblequiz.modules.user.entity.User;
 import com.biblequiz.modules.user.repository.UserRepository;
 import com.biblequiz.modules.user.service.StreakService;
+import com.biblequiz.infrastructure.time.GameClock;
 
+import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
@@ -25,6 +27,17 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class StreakServiceTest {
+
+    /**
+     * "Đã dùng băng giá tuần này" chỉ còn hiệu lực khi lần chơi trước cùng tuần (giờ VN) với hôm nay.
+     * Thứ Hai/thứ Ba thì "hôm kia" thuộc tuần trước nên băng giá được làm mới (F-api-8) — các test
+     * giả định băng giá đã dùng sẽ bỏ qua những ngày đó thay vì đỏ theo thứ trong tuần.
+     */
+    private static void assumeTwoDaysAgoIsSameWeek() {
+        LocalDate twoDaysAgo = LocalDateTime.now(ZoneOffset.UTC).minusDays(2).toLocalDate();
+        Assumptions.assumeTrue(GameClock.weekStart(twoDaysAgo).equals(GameClock.weekStart(GameClock.today())),
+                "hôm kia thuộc tuần trước — băng giá đã được làm mới");
+    }
 
     @Mock
     private UserRepository userRepository;
@@ -97,6 +110,7 @@ class StreakServiceTest {
 
     @Test
     void recordActivity_missedOneDay_freezeAlreadyUsed_shouldResetStreak() {
+        assumeTwoDaysAgoIsSameWeek();
         testUser.setCurrentStreak(10);
         testUser.setLongestStreak(10);
         testUser.setStreakFreezeUsedThisWeek(true);
@@ -190,6 +204,7 @@ class StreakServiceTest {
 
         // Day 3: skip (no play) — simulated by advancing 2 days with freeze already used
         // Day 4: play after 2-day gap (freeze used) → streak resets to 1
+        assumeTwoDaysAgoIsSameWeek();
         testUser.setLastPlayedAt(LocalDateTime.now(ZoneOffset.UTC).minusDays(2));
         testUser.setCurrentStreak(2);
         testUser.setLongestStreak(2);
@@ -220,6 +235,7 @@ class StreakServiceTest {
     @Order(12)
     @Test
     void TC_STREAK_004_streakFreeze_notAvailable_shouldResetStreak() {
+        assumeTwoDaysAgoIsSameWeek();
         testUser.setCurrentStreak(5);
         testUser.setLongestStreak(5);
         testUser.setStreakFreezeUsedThisWeek(true); // Already used this week
