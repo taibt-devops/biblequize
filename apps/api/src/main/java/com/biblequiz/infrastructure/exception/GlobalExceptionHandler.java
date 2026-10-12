@@ -230,6 +230,26 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
     }
 
+    /**
+     * Gọi sai method (vd app cũ POST vào đường đã gỡ, khớp mẫu /{id} chỉ có PUT/DELETE) là lỗi của người gọi:
+     * 405, ghi WARN — không rơi xuống handler chung (500 + ERROR).
+     */
+    @ExceptionHandler(org.springframework.web.HttpRequestMethodNotSupportedException.class)
+    public ResponseEntity<ErrorResponse> handleMethodNotSupported(
+            org.springframework.web.HttpRequestMethodNotSupportedException ex, WebRequest request) {
+        logger.warn("Method {} not supported for {}", ex.getMethod(), getPath(request));
+
+        ErrorResponse error = ErrorResponse.builder()
+                .timestamp(LocalDateTime.now())
+                .status(HttpStatus.METHOD_NOT_ALLOWED.value())
+                .error("Method Not Allowed")
+                .message("Method not allowed")
+                .path(getPath(request))
+                .build();
+
+        return ResponseEntity.status(HttpStatus.METHOD_NOT_ALLOWED).body(error);
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleGenericException(Exception ex, WebRequest request) {
         logger.error("Unexpected error occurred", ex);
