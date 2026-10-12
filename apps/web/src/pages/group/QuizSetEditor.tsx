@@ -3,11 +3,11 @@
 // the same editor renders for /groups/:id/quiz-sets/:setId/edit (group) and
 // /my-sets/:setId/edit (personal). Group route mounts via GroupQuizSetEditor
 // wrapper; personal route mounts via PersonalQuizSetEditor (PQS-6).
+// AIR-2/3 (13/10/2026): không còn AI tạo nháp / AI viết lại — chỉ soạn tay.
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import type {
-  AIGenerateForSetBody, AIGenerateForSetResponse, AIRewriteResponse,
   AddQuestionBody, CreateQuizSetBody, EditorQuestion, QuizSet, QuizSetFull,
 } from '../../api/quizSets'
 import { BIBLE_BOOKS_VI, normalizeBibleBookVi } from '../../data/bibleData'
@@ -15,8 +15,6 @@ import EditorTopBar from './quizset-editor/EditorTopBar'
 import MetadataAccordion from './quizset-editor/MetadataAccordion'
 import QuestionSidebar from './quizset-editor/QuestionSidebar'
 import QuestionEditor from './quizset-editor/QuestionEditor'
-import AIGeneratePanel from './quizset-editor/AIGeneratePanel'
-import AIRewriteModal from './quizset-editor/AIRewriteModal'
 import PublishConfirmModal from './quizset-editor/PublishConfirmModal'
 import { COLOR } from './quizset-editor/styles'
 import { useAutoSave } from './quizset-editor/useAutoSave'
@@ -32,9 +30,6 @@ export interface QuizSetEditorApi {
   addQuestion: (setId: string, body: AddQuestionBody) => Promise<{ question: EditorQuestion; totalQuestions: number }>
   updateQuestion: (setId: string, qid: string, body: Partial<AddQuestionBody>) => Promise<EditorQuestion>
   deleteQuestion: (setId: string, qid: string) => Promise<number>
-  aiGenerateForSet: (setId: string, body: AIGenerateForSetBody) => Promise<AIGenerateForSetResponse>
-  aiRewriteQuestion: (setId: string, qid: string, hint?: string) => Promise<AIRewriteResponse>
-  getAIQuota: () => Promise<{ used: number; limit: number; remaining: number }>
 }
 
 interface Props {
@@ -48,18 +43,15 @@ interface Props {
   /** Where to navigate after publish (will append `${setId}`). Trailing slash required. */
   detailPathBase: string
   api: QuizSetEditorApi
-  /** Toggle AI Generate + AI Rewrite UI. Defaults to true for group, false for personal. */
-  aiEnabled?: boolean
 }
 
 export default function QuizSetEditor({
   mode: forcedMode, setIdFromRoute, ownership, ownerName, backHref,
-  editPathBase, detailPathBase, api, aiEnabled: aiEnabledProp,
+  editPathBase, detailPathBase, api,
 }: Props) {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const mode: Mode = forcedMode ?? (setIdFromRoute ? 'edit' : 'create')
-  const aiEnabled = aiEnabledProp ?? (ownership === 'group')
 
   const [quizSet, setQuizSet] = useState<QuizSetFull | null>(null)
   const [activeId, setActiveId] = useState<string | null>(null)
@@ -68,14 +60,6 @@ export default function QuizSetEditor({
   const [saving, setSaving] = useState(false)
   const [lastSavedAt, setLastSavedAt] = useState<number | null>(null)
   const [, forceTick] = useState(0)
-
-  const [aiPanelOpen, setAiPanelOpen] = useState(false)
-  const [aiBusy, setAiBusy] = useState(false)
-  const [aiError, setAiError] = useState<string | null>(null)
-  const [aiQuota, setAiQuota] = useState({ used: 0, limit: 200, remaining: 200 })
-
-  const [rewriteOpen, setRewriteOpen] = useState(false)
-  const [rewriteBusy, setRewriteBusy] = useState(false)
 
   const [publishOpen, setPublishOpen] = useState(false)
   const [publishBusy, setPublishBusy] = useState(false)
@@ -91,7 +75,6 @@ export default function QuizSetEditor({
   }, [])
 
   const [scope, setScope] = useState({ book: BIBLE_BOOKS_VI[0], chapterFrom: 1, chapterTo: 1 })
-  const [topic, setTopic] = useState('')
   const dirtyMetaRef = useRef(false)
 
   useEffect(() => {
@@ -119,9 +102,6 @@ export default function QuizSetEditor({
         const first = full.questions?.[0]
         if (first?.book) {
           setScope({ book: normalizeBibleBookVi(first.book), chapterFrom: first.chapter ?? 1, chapterTo: first.chapter ?? 1 })
-        }
-        if (aiEnabled) {
-          try { setAiQuota(await api.getAIQuota()) } catch { /* ignore */ }
         }
       } catch (e: any) {
         if (!cancelled) setLoadError(e?.response?.data?.message || e?.message || t('quizSet.editor.parent.loadError'))
@@ -216,70 +196,6 @@ export default function QuizSetEditor({
     } catch (e) { console.error(e) }
   }
 
-  const handleAIGenerate = async (req: {
-    countEasy: number; countMedium: number; countHard: number;
-    chapterFrom: number; chapterTo: number;
-    verseFrom: number | null; verseTo: number | null; topic?: string;
-  }) => {
-    if (!quizSet) return
-    setAiBusy(true); setAiError(null)
-    try {
-      await flushQuestionSave()
-      const res = await api.aiGenerateForSet(quizSet.id, {
-        countEasy: req.countEasy, countMedium: req.countMedium, countHard: req.countHard,
-        book: scope.book, chapterFrom: req.chapterFrom, chapterTo: req.chapterTo,
-        verseFrom: req.verseFrom ?? undefined, verseTo: req.verseTo ?? undefined,
-        topic: req.topic || topic || undefined,
-        language: ((quizSet.language || 'vi').toLowerCase() === 'en' ? 'en' : 'vi'),
-      })
-      // AEU-5: BE sends quality flags as `_quality`; normalise to `quality` for the editor.
-      const generated = res.questions.map(q => {
-        const raw = q as EditorQuestion & { _quality?: EditorQuestion['quality'] }
-        return raw._quality && !raw.quality ? { ...raw, quality: raw._quality } : raw
-      })
-      setQuizSet(prev => prev ? {
-        ...prev,
-        questions: [...prev.questions, ...generated],
-        questionIds: [...prev.questionIds, ...generated.map(q => q.id)],
-        totalQuestions: res.totalQuestions,
-      } : prev)
-      setAiQuota({ used: res.used, limit: res.limit, remaining: res.remaining })
-      if (res.questions.length > 0) setActiveId(res.questions[0].id)
-      setAiPanelOpen(false)
-    } catch (e: any) {
-      if (e?.response?.status === 429) {
-        setAiError(t('quizSet.editor.parent.aiQuotaExhausted'))
-        const u = e.response.data
-        if (u?.used != null) setAiQuota({ used: u.used, limit: u.limit, remaining: u.remaining })
-      } else {
-        setAiError(e?.response?.data?.message || e?.message || t('quizSet.editor.parent.aiErrorGeneric'))
-      }
-    } finally { setAiBusy(false) }
-  }
-
-  const handleAIRewrite = async (hint: string) => {
-    if (!quizSet || !activeQuestion) return null
-    setRewriteBusy(true)
-    try {
-      const res = await api.aiRewriteQuestion(quizSet.id, activeQuestion.id, hint)
-      setAiQuota({ used: res.used, limit: res.limit, remaining: res.remaining })
-      return res.draft
-    } finally { setRewriteBusy(false) }
-  }
-
-  const handleAcceptRewrite = (draft: { content?: string; options?: string[]; correctAnswer?: number[] | number; explanation?: string }) => {
-    if (!activeQuestion) return
-    const correct = Array.isArray(draft.correctAnswer)
-      ? draft.correctAnswer
-      : (typeof draft.correctAnswer === 'number' ? [draft.correctAnswer] : activeQuestion.correctAnswer)
-    handleQuestionChange(activeQuestion.id, {
-      content: draft.content ?? activeQuestion.content,
-      options: draft.options ?? activeQuestion.options,
-      correctAnswer: correct,
-      explanation: draft.explanation ?? activeQuestion.explanation,
-    })
-  }
-
   const handlePublishClick = async () => {
     await flushQuestionSave()
     await flushMetaSave()
@@ -338,8 +254,6 @@ export default function QuizSetEditor({
         lastSavedAgoSec={lastSavedAgoSec}
         saving={saving}
         questionCount={questions.length}
-        aiUsed={aiEnabled ? aiQuota.used : undefined}
-        aiLimit={aiEnabled ? aiQuota.limit : undefined}
         onPublish={handlePublishClick}
         onSaveDraft={handleSaveDraftClick}
         canPublish={canPublish}
@@ -359,9 +273,7 @@ export default function QuizSetEditor({
           questions={questions}
           activeId={activeId}
           onActivate={handleActivate}
-          onAIGenerate={aiEnabled ? () => setAiPanelOpen(true) : undefined}
           onAddManual={handleAddManual}
-          aiBusy={aiBusy}
         />
 
         {activeQuestion ? (
@@ -370,46 +282,16 @@ export default function QuizSetEditor({
             question={activeQuestion}
             onChange={patch => handleQuestionChange(activeQuestion.id, patch)}
             onDelete={() => handleDelete(activeQuestion.id)}
-            onAIRewrite={aiEnabled ? () => setRewriteOpen(true) : undefined}
-            rewriting={rewriteBusy}
           />
         ) : (
           <div style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             background: COLOR.bgSection, color: COLOR.textMuted, fontSize: 14, padding: 32, textAlign: 'center',
           }}>
-            {aiEnabled
-              ? t('quizSet.editor.parent.emptyPanelWithAI')
-              : t('quizSet.editor.parent.emptyPanelManual')}
+            {t('quizSet.editor.parent.emptyPanelManual')}
           </div>
         )}
       </div>
-
-      {aiEnabled && (
-        <AIGeneratePanel
-          open={aiPanelOpen}
-          scope={scope}
-          remaining={aiQuota.remaining}
-          limit={aiQuota.limit}
-          topic={topic}
-          onClose={() => setAiPanelOpen(false)}
-          onGenerate={async req => { setTopic(req.topic || ''); await handleAIGenerate(req) }}
-          busy={aiBusy}
-          error={aiError}
-        />
-      )}
-
-      {aiEnabled && rewriteOpen && activeQuestion && (
-        <AIRewriteModal
-          open
-          current={activeQuestion}
-          remaining={aiQuota.remaining}
-          limit={aiQuota.limit}
-          onClose={() => setRewriteOpen(false)}
-          onGenerate={handleAIRewrite}
-          onAccept={handleAcceptRewrite}
-        />
-      )}
 
       <PublishConfirmModal
         open={publishOpen}

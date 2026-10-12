@@ -135,52 +135,6 @@ public class QuestionSetService {
         return setRepo.save(set);
     }
 
-    /**
-     * PQS2-1: persist a batch of AI drafts as UserQuestion(source=AI) belonging
-     * to the set's owner, attach to set in order. Caller (controller) has already
-     * checked quota + ownership. Returns the saved questions in insertion order.
-     */
-    public List<UserQuestion> attachAIQuestions(
-            String setId, String userId, List<Map<String, Object>> drafts,
-            String book, int chapter, int verseStart, int verseEnd, String language) {
-        QuestionSet set = requireOwnerNotLocked(setId, userId);
-        User owner = set.getUser();
-        List<UserQuestion> saved = new ArrayList<>();
-        for (Map<String, Object> draft : drafts) {
-            UserQuestion q = new UserQuestion();
-            q.setId(UUID.randomUUID().toString());
-            q.setUser(owner);
-            q.setContent(draft.get("content") instanceof String s ? s : "");
-            @SuppressWarnings("unchecked")
-            List<String> opts = draft.get("options") instanceof List<?> l
-                    ? (List<String>) (List<?>) l : List.of("", "", "", "");
-            q.setOptions(opts);
-            q.setCorrectAnswer(draft.get("correctAnswer") instanceof Number n ? n.intValue() : 0);
-            String diff = draft.get("difficulty") instanceof String s ? s.toUpperCase() : "MEDIUM";
-            try { q.setDifficulty(UserQuestion.Difficulty.valueOf(diff)); }
-            catch (IllegalArgumentException ignored) { q.setDifficulty(UserQuestion.Difficulty.MEDIUM); }
-            q.setExplanation(draft.get("explanation") instanceof String s ? s : "");
-            q.setBook(book);
-            q.setChapterStart(chapter);
-            q.setChapterEnd(chapter);
-            q.setVerseStart(verseStart);
-            q.setVerseEnd(verseEnd);
-            q.setSource(UserQuestion.Source.AI);
-            q.setLanguage(language != null ? language : "vi");
-            questionRepo.save(q);
-            saved.add(q);
-        }
-        List<QuestionSetItem> existing = itemRepo.findByQuestionSetIdOrderByOrderIndexAsc(setId);
-        int nextOrder = existing.isEmpty() ? 0 : existing.get(existing.size() - 1).getOrderIndex() + 1;
-        for (UserQuestion q : saved) {
-            itemRepo.save(new QuestionSetItem(UUID.randomUUID().toString(), set, q, nextOrder++));
-        }
-        set.setQuestionCount(existing.size() + saved.size());
-        setRepo.save(set);
-        log.info("[QuestionSet] AI attached {} questions to set {}", saved.size(), setId);
-        return saved;
-    }
-
     /** DRAFT → PUBLISHED transition. Validates name length + question count. */
     public QuestionSet publish(String setId, String userId) {
         QuestionSet set = requireOwner(setId, userId);

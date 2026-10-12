@@ -3,8 +3,8 @@
 import { useMemo } from 'react'
 import { useParams } from 'react-router-dom'
 import {
-  addQuestion, aiGenerateForSet, aiRewriteQuestion, createQuizSet, deleteQuestion,
-  getAIQuota, getQuizSetFull, publishQuizSet, updateQuestion, updateQuizSet,
+  addQuestion, createQuizSet, deleteQuestion,
+  getQuizSetFull, publishQuizSet, updateQuestion, updateQuizSet,
 } from '../api/personalQuizSets'
 import QuizSetEditor, { type QuizSetEditorApi } from './group/QuizSetEditor'
 
@@ -21,9 +21,6 @@ export default function PersonalQuizSetEditor({ mode }: Props) {
     addQuestion,
     updateQuestion,
     deleteQuestion,
-    aiGenerateForSet,
-    aiRewriteQuestion,
-    getAIQuota,
   }), [])
 
   return (
@@ -36,7 +33,6 @@ export default function PersonalQuizSetEditor({ mode }: Props) {
       editPathBase="/my-sets/"
       detailPathBase="/my-sets/"
       api={adapter}
-      aiEnabled
     />
   )
 }

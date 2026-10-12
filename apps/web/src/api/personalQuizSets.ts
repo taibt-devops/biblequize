@@ -5,13 +5,11 @@
 // Internally calls /api/question-sets/* (set CRUD + items + publish + /full) and
 // /api/user-questions/* (per-question content CRUD).
 //
-// Phase 2 deferred: aiGenerateForSet, aiRewriteQuestion, getAIQuota → stubbed
-// so the shared QuizSetEditor TypeScript surface stays the same.
+// AIR-2 (13/10/2026): không còn AI tạo nháp / AI viết lại.
 
-import { api, aiApi } from './client'
+import { api } from './client'
 import type {
   CreateQuizSetBody, EditorQuestion, QuizSet, QuizSetFull, AddQuestionBody,
-  AIGenerateForSetBody, AIGenerateForSetResponse, AIRewriteResponse,
 } from './quizSets'
 
 const SET_BASE = '/api/question-sets'
@@ -87,23 +85,6 @@ export async function deleteQuestion(setId: string, qid: string): Promise<number
 export async function reorderQuestions(setId: string, questionIds: string[]): Promise<string[]> {
   const res = await api.put(`${SET_BASE}/${setId}/items`, { questionIds })
   return (res.data.items ?? []).map((i: { questionId: string }) => i.questionId)
-}
-
-// ── PQS2-3: AI wired (shares 200/day quota with group via AIQuotaService) ────
-
-export async function aiGenerateForSet(setId: string, body: AIGenerateForSetBody): Promise<AIGenerateForSetResponse> {
-  const res = await aiApi.post(`${SET_BASE}/${setId}/ai-generate`, body)
-  return res.data
-}
-
-export async function aiRewriteQuestion(setId: string, qid: string, hint?: string): Promise<AIRewriteResponse> {
-  const res = await aiApi.post(`${SET_BASE}/${setId}/questions/${qid}/ai-rewrite`, { hint: hint ?? '' })
-  return res.data
-}
-
-export async function getAIQuota(): Promise<{ used: number; limit: number; remaining: number }> {
-  const res = await api.get(`${SET_BASE}/ai-quota`)
-  return { used: res.data.used, limit: res.data.limit, remaining: res.data.remaining }
 }
 
 // ── Helpers ──────────────────────────────────────────────────────────────────

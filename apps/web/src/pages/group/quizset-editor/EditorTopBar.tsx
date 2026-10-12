@@ -12,9 +12,6 @@ interface Props {
   lastSavedAgoSec: number | null
   saving: boolean
   questionCount: number
-  /** Omit to hide the AI quota badge (personal scope in Phase 1). */
-  aiUsed?: number
-  aiLimit?: number
   onPublish: () => void
   onSaveDraft: () => void
   canPublish: boolean
@@ -41,12 +38,11 @@ function formatAgo(t: TFunction, sec: number): string {
 
 export default function EditorTopBar({
   backHref, ownerName, quizSetName, status, lastSavedAgoSec, saving,
-  questionCount, aiUsed, aiLimit, onPublish, onSaveDraft, canPublish,
+  questionCount, onPublish, onSaveDraft, canPublish,
 }: Props) {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const badge = statusBadge(t, status, lastSavedAgoSec, saving)
-  const showAi = typeof aiUsed === 'number' && typeof aiLimit === 'number' && aiLimit > 0
 
   return (
     <div style={{
@@ -85,17 +81,6 @@ export default function EditorTopBar({
           fontWeight: 500, letterSpacing: 0.5, marginLeft: 4, whiteSpace: 'nowrap',
         }}>{badge.label}</span>
       </div>
-
-      {showAi && (
-        <div style={{
-          display: 'inline-flex', alignItems: 'center', gap: 5,
-          background: COLOR.goldBg, border: `1px solid rgba(245,158,11,0.30)`,
-          padding: '4px 9px', borderRadius: 999, fontSize: 11, color: COLOR.gold,
-        }}>
-          <span className="material-symbols-outlined" style={{ fontSize: 12 }} aria-hidden>auto_awesome</span>
-          <span>AI: {aiUsed}/{aiLimit}</span>
-        </div>
-      )}
 
       <button onClick={onSaveDraft} disabled={saving} style={{
         background: INSET_BG, color: COLOR.textSecondary,

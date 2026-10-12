@@ -4,7 +4,6 @@ import com.biblequiz.modules.user.entity.User;
 import com.biblequiz.modules.user.repository.UserRepository;
 import com.biblequiz.modules.userquiz.entity.RoomQuestionSelection;
 import com.biblequiz.modules.userquiz.entity.UserQuestion;
-import com.biblequiz.modules.userquiz.service.QuizGeneratorPort;
 import com.biblequiz.modules.userquiz.service.UserQuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -31,36 +30,6 @@ public class UserQuestionController {
             List<UserQuestion> questions = service.listByUser(user.getId());
             return ResponseEntity.ok(Map.of("success", true, "questions", questions.stream()
                     .map(this::toDTO).toList()));
-        } catch (Exception e) {
-            return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
-        }
-    }
-
-    /** POST /api/user-questions/generate — AI tạo câu hỏi + lưu vào ngân hàng */
-    @PostMapping("/generate")
-    public ResponseEntity<?> generate(@RequestBody Map<String, Object> body, Principal principal) {
-        try {
-            User user = getUser(principal);
-
-            String book         = body.get("book") instanceof String s ? s : null;
-            Integer chapterStart = body.get("chapterStart") instanceof Number n ? n.intValue() : null;
-            Integer chapterEnd   = body.get("chapterEnd")   instanceof Number n ? n.intValue() : chapterStart;
-            Integer verseStart   = body.get("verseStart")   instanceof Number n ? n.intValue() : null;
-            Integer verseEnd     = body.get("verseEnd")     instanceof Number n ? n.intValue() : verseStart;
-            String theme        = body.get("theme") instanceof String s ? s : null;
-            String difficulty   = body.get("difficulty") instanceof String s ? s : "MEDIUM";
-            String language     = body.get("language") instanceof String s ? s : "vi";
-            int count           = body.get("count") instanceof Number n ? Math.min(n.intValue(), 10) : 5;
-
-            QuizGeneratorPort.QuizGenerationParams params = new QuizGeneratorPort.QuizGenerationParams(
-                    book, chapterStart, chapterEnd, verseStart, verseEnd,
-                    theme, difficulty, language, count);
-
-            List<UserQuestion> saved = service.generateAndSave(user, params);
-            return ResponseEntity.ok(Map.of(
-                    "success", true,
-                    "generated", saved.size(),
-                    "questions", saved.stream().map(this::toDTO).toList()));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
         }

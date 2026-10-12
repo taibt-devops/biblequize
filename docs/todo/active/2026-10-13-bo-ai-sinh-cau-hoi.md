@@ -6,8 +6,8 @@
 
 ### Tasks
 - AIR-1 Phòng chơi / Đấu nhanh: bỏ nguồn câu AI (BE + web) — Status: [x] DONE
-- AIR-2 Bộ câu của tôi: bỏ AI tạo câu, AI viết lại, hạn mức AI, API sinh câu cũ (BE + web) — Status: [ ] TODO
-- AIR-3 Bộ câu nhóm: bỏ AI tạo câu, AI viết lại, hạn mức AI (BE + web) — Status: [ ] TODO
+- AIR-2 Bộ câu của tôi: bỏ AI tạo câu, AI viết lại, hạn mức AI, API sinh câu cũ (BE + web) — Status: [x] DONE
+- AIR-3 Bộ câu nhóm: bỏ AI tạo câu, AI viết lại, hạn mức AI (BE + web) — Status: [x] DONE
 - AIR-4 Quản trị: bỏ trang "AI tạo câu hỏi", gợi ý AI khi sửa câu, KPI AI ở dashboard, kiểm tra nhà cung cấp AI ở health (BE + web) — Status: [ ] TODO
 - AIR-5 Gỡ module `adminai` + cấu hình khóa AI + `aiApi`; spec + DECISIONS; cả bộ test + boot jar + smoke — Status: [ ] TODO
 

@@ -26,44 +26,8 @@ public class UserQuestionService {
     @Autowired private UserQuestionRepository questionRepo;
     @Autowired private RoomQuestionSelectionRepository selectionRepo;
     @Autowired private RoomRepository roomRepository;
-    @Autowired private QuizGeneratorPort quizGenerator;
 
     // ── AI generation ─────────────────────────────────────────────────────────
-
-    public List<UserQuestion> generateAndSave(User user, QuizGeneratorPort.QuizGenerationParams params)
-            throws Exception {
-
-        enforceQuotaOrThrow(user);
-
-        List<QuizGeneratorPort.GeneratedQuestionDTO> generated = quizGenerator.generate(params);
-        if (generated.isEmpty()) {
-            throw new IllegalStateException("AI không tạo được câu hỏi nào. Thử lại hoặc thay đổi tham số.");
-        }
-
-        List<UserQuestion> saved = generated.stream().map(dto -> {
-            UserQuestion q = new UserQuestion();
-            q.setId(UUID.randomUUID().toString());
-            q.setUser(user);
-            q.setContent(dto.content());
-            q.setOptions(dto.options());
-            q.setCorrectAnswer(dto.correctAnswer());
-            q.setDifficulty(parseDifficulty(dto.difficulty()));
-            q.setExplanation(dto.explanation());
-            q.setBook(dto.book());
-            q.setChapterStart(dto.chapter());
-            q.setChapterEnd(dto.chapter());
-            q.setVerseStart(dto.verseStart());
-            q.setVerseEnd(dto.verseEnd());
-            q.setTheme(params.theme());
-            q.setSource(UserQuestion.Source.AI);
-            q.setLanguage(params.language() != null ? params.language() : "vi");
-            return questionRepo.save(q);
-        }).toList();
-
-        log.info("[UserQuestionService] User {} AI-generated {} questions (provider: {})",
-                user.getId(), saved.size(), quizGenerator.providerName());
-        return saved;
-    }
 
     // ── Manual creation ───────────────────────────────────────────────────────
 

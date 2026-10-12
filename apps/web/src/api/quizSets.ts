@@ -1,4 +1,4 @@
-import { api, aiApi } from './client'
+import { api } from './client'
 
 export type PublishStatus = 'DRAFT' | 'PUBLISHED' | 'ARCHIVED' | 'SOFT_DELETED'
 export type QuizSetDifficulty = 'EASY' | 'MEDIUM' | 'HARD' | 'MIXED'
@@ -255,24 +255,6 @@ export function getModeAvailability(mode: RoomMode, total: number): { available:
 export type QuestionDifficulty = 'easy' | 'medium' | 'hard'
 export type QuestionSource = 'admin' | 'ai-generated' | 'ai-group' | 'group-custom' | string
 
-// AEU: distractor error-type metadata declared by the AI (one per wrong option),
-// plus server-computed quality flags. Transient — only present on freshly AI-generated
-// questions (parity with the admin draft review); absent on saved/reloaded questions.
-export type DistractorErrorType =
-  'nearby_passage' | 'wrong_detail' | 'wrong_scope' | 'common_misconception' | 'true_but_off'
-export interface DistractorMeta {
-  index: number
-  errorType: DistractorErrorType | string
-  almostRight: boolean
-}
-export interface QualityFlags {
-  valid: boolean
-  duplicateErrorType: boolean
-  almostRightCount: number
-  requiredAlmostRight: number
-  reasons: string[]
-}
-
 export interface EditorQuestion {
   id: string
   book: string
@@ -287,8 +269,6 @@ export interface EditorQuestion {
   explanation: string | null
   source: QuestionSource
   language: string
-  distractors?: DistractorMeta[]
-  quality?: QualityFlags
 }
 
 export interface QuizSetFull extends QuizSet {
@@ -334,51 +314,4 @@ export async function deleteQuestion(groupId: string, setId: string, qid: string
 export async function reorderQuestions(groupId: string, setId: string, questionIds: string[]): Promise<string[]> {
   const res = await api.post(`/api/groups/${groupId}/quiz-sets/${setId}/questions/reorder`, { questionIds })
   return res.data.questionIds
-}
-
-export interface AIGenerateForSetBody {
-  countEasy: number
-  countMedium: number
-  countHard: number
-  book: string
-  chapterFrom: number
-  chapterTo?: number
-  verseFrom?: number
-  verseTo?: number
-  topic?: string
-  language?: 'vi' | 'en'
-}
-
-export interface AIGenerateForSetResponse {
-  questions: EditorQuestion[]
-  totalQuestions: number
-  provider: string
-  used: number
-  limit: number
-  remaining: number
-}
-
-export async function aiGenerateForSet(groupId: string, setId: string, body: AIGenerateForSetBody): Promise<AIGenerateForSetResponse> {
-  const res = await aiApi.post(`/api/groups/${groupId}/quiz-sets/${setId}/ai-generate`, body)
-  return res.data
-}
-
-export interface AIRewriteResponse {
-  draft: Partial<EditorQuestion> & { content?: string; options?: string[]; correctAnswer?: number[] | number; explanation?: string }
-  provider: string
-  used: number
-  limit: number
-  remaining: number
-}
-
-export async function aiRewriteQuestion(
-  groupId: string, setId: string, qid: string, hint?: string
-): Promise<AIRewriteResponse> {
-  const res = await aiApi.post(`/api/groups/${groupId}/quiz-sets/${setId}/questions/${qid}/ai-rewrite`, { hint: hint ?? '' })
-  return res.data
-}
-
-export async function getAIQuota(groupId: string): Promise<{ used: number; limit: number; remaining: number }> {
-  const res = await api.get(`/api/groups/${groupId}/ai-quota`)
-  return res.data
 }

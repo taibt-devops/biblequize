@@ -1,11 +1,5 @@
 package com.biblequiz.api;
 
-import com.biblequiz.modules.adminai.provider.AIGenerationContext;
-import com.biblequiz.modules.adminai.provider.AIGenerationResult;
-import com.biblequiz.modules.adminai.provider.AIProviderException;
-import com.biblequiz.modules.adminai.AIGenerationService;
-import com.biblequiz.modules.adminai.provider.AIProviderRouter;
-import com.biblequiz.modules.adminai.quota.AIQuotaService;
 import com.biblequiz.modules.user.entity.User;
 import com.biblequiz.modules.user.repository.UserRepository;
 import com.biblequiz.modules.userquiz.entity.QuestionSet;
@@ -46,9 +40,6 @@ public class QuestionSetController {
 
     @Autowired private QuestionSetService service;
     @Autowired private UserRepository userRepository;
-    @Autowired private AIProviderRouter aiProviderRouter;
-    @Autowired private AIGenerationService aiGenerationService;
-    @Autowired private AIQuotaService aiQuotaService;
 
     // ── Create ────────────────────────────────────────────────────────────────
 
@@ -320,168 +311,8 @@ public class QuestionSetController {
 
     // ── PQS2-1: Set-scoped AI generation ──────────────────────────────────────
 
-    /**
-     * POST /api/question-sets/{id}/ai-generate
-     * Body: { countEasy, countMedium, countHard, book, chapterFrom, chapterTo?,
-     *         verseFrom?, verseTo?, topic?, language? }
-     * Shares the 200/day quota with group AI generate via AIQuotaService.
-     */
-    @PostMapping("/{id}/ai-generate")
-    @SuppressWarnings("unchecked")
-    public ResponseEntity<?> aiGenerateForSet(@PathVariable String id,
-                                               @RequestBody Map<String, Object> body,
-                                               Principal principal) {
-        try {
-            User user = getUser(principal);
-            int cE = intVal(body.get("countEasy"), 0);
-            int cM = intVal(body.get("countMedium"), 0);
-            int cH = intVal(body.get("countHard"), 0);
-            int total = cE + cM + cH;
-            if (total <= 0 || total > 15) {
-                return ResponseEntity.badRequest().body(Map.of("success", false,
-                        "message", "Tổng số câu phải trong khoảng 1-15"));
-            }
-            if (!aiQuotaService.tryAcquire(total)) {
-                AIQuotaService.Usage u = aiQuotaService.snapshot();
-                return ResponseEntity.status(429).body(Map.of("success", false,
-                        "error", "QUOTA_EXCEEDED",
-                        "message", "Đã đạt giới hạn AI hôm nay",
-                        "used", u.used(), "limit", u.limit(), "remaining", u.remaining()));
-            }
-
-            String book = (String) body.getOrDefault("book", "John");
-            int chapter = intVal(body.get("chapterFrom"), 1);
-            int verseStart = intVal(body.get("verseFrom"), 1);
-            int verseEnd = intVal(body.get("verseTo"), 50);
-            String topic = (String) body.getOrDefault("topic", "");
-            String language = (String) body.getOrDefault("language", "vi");
-            String customPrompt = topic.isBlank() ? null :
-                    "Tất cả câu hỏi PHẢI tập trung vào chủ đề: \"" + topic.trim() + "\".";
-
-            List<Map<String, Object>> drafts = new ArrayList<>();
-            String providerUsed = null;
-            for (Object[] tier : new Object[][]{{"easy", cE}, {"medium", cM}, {"hard", cH}}) {
-                int count = (int) tier[1];
-                if (count <= 0) continue;
-                AIGenerationContext ctx = AIGenerationContext.of(
-                        book, chapter, verseStart, verseEnd,
-                        ((String) tier[0]).toUpperCase(), "MULTIPLE_CHOICE", language,
-                        count, null, customPrompt);
-                AIGenerationResult res = aiProviderRouter.generate(ctx, null);
-                providerUsed = res.providerUsed();
-                for (Map<String, Object> draft : res.questions()) {
-                    Map<String, Object> withDifficulty = new LinkedHashMap<>(draft);
-                    withDifficulty.putIfAbsent("difficulty", (String) tier[0]);
-                    drafts.add(withDifficulty);
-                }
-            }
-
-            // AEU-1: annotate MCQ drafts with distractor-quality flags (parity with
-            // the admin path). `_quality`/`distractors` are transient — not persisted —
-            // so we zip them onto the editor response by saved-question id below.
-            aiGenerationService.annotateQuality(drafts);
-
-            List<UserQuestion> saved = service.attachAIQuestions(
-                    id, user.getId(), drafts, book, chapter, verseStart, verseEnd, language);
-            // saved is returned in draft order → pair saved[i] with drafts[i] for quality.
-            Map<String, Map<String, Object>> qualityById = new LinkedHashMap<>();
-            for (int i = 0; i < saved.size() && i < drafts.size(); i++) {
-                qualityById.put(saved.get(i).getId(), drafts.get(i));
-            }
-            List<QuestionSetItem> items = service.getItems(id);
-            List<Map<String, Object>> editorQuestions = items.stream()
-                    .filter(it -> saved.stream().anyMatch(s -> s.getId().equals(it.getUserQuestion().getId())))
-                    .map(it -> toEditorQuestion(it, qualityById.get(it.getUserQuestion().getId())))
-                    .toList();
-
-            AIQuotaService.Usage u = aiQuotaService.snapshot();
-            return ResponseEntity.ok(Map.of("success", true,
-                    "questions", editorQuestions,
-                    "totalQuestions", items.size(),
-                    "provider", providerUsed != null ? providerUsed : "auto",
-                    "used", u.used(), "limit", u.limit(), "remaining", u.remaining()));
-        } catch (SecurityException e) {
-            return ResponseEntity.status(403).body(err(e));
-        } catch (AIProviderException e) {
-            return ResponseEntity.internalServerError().body(err(e));
-        } catch (Exception e) {
-            return ResponseEntity.badRequest().body(err(e));
-        }
-    }
-
     private static int intVal(Object o, int fallback) {
         return o instanceof Number n ? n.intValue() : fallback;
-    }
-
-    /**
-     * POST /api/question-sets/{id}/questions/{qid}/ai-rewrite
-     * Returns 1 fresh draft WITHOUT saving — FE accept/discards via PUT
-     * /api/user-questions/{qid}. Body: { hint?: string }
-     */
-    @PostMapping("/{id}/questions/{qid}/ai-rewrite")
-    public ResponseEntity<?> aiRewriteQuestion(@PathVariable String id,
-                                                @PathVariable String qid,
-                                                @RequestBody(required = false) Map<String, Object> body,
-                                                Principal principal) {
-        try {
-            User user = getUser(principal);
-            QuestionSet set = service.getById(id);
-            if (!set.getUser().getId().equals(user.getId())) {
-                return ResponseEntity.status(403).body(Map.of("success", false, "message", "Không có quyền"));
-            }
-            UserQuestion existing = service.getItems(id).stream()
-                    .map(QuestionSetItem::getUserQuestion)
-                    .filter(q -> q.getId().equals(qid))
-                    .findFirst()
-                    .orElse(null);
-            if (existing == null) {
-                return ResponseEntity.status(404).body(Map.of("success", false, "message", "Câu hỏi không thuộc bộ này"));
-            }
-
-            if (!aiQuotaService.tryAcquire(1)) {
-                AIQuotaService.Usage u = aiQuotaService.snapshot();
-                return ResponseEntity.status(429).body(Map.of("success", false,
-                        "error", "QUOTA_EXCEEDED",
-                        "message", "Đã đạt giới hạn AI hôm nay",
-                        "used", u.used(), "limit", u.limit(), "remaining", u.remaining()));
-            }
-
-            String hint = body != null && body.get("hint") instanceof String s ? s.trim() : "";
-            String customPrompt = "Viết lại câu hỏi này theo hướng khác. Câu gốc: \"" + existing.getContent() + "\"."
-                    + (hint.isEmpty() ? "" : " Gợi ý: " + hint);
-
-            AIGenerationContext ctx = AIGenerationContext.of(
-                    existing.getBook() != null ? existing.getBook() : "John",
-                    existing.getChapterStart() != null ? existing.getChapterStart() : 1,
-                    existing.getVerseStart() != null ? existing.getVerseStart() : 1,
-                    existing.getVerseEnd() != null ? existing.getVerseEnd() : 50,
-                    existing.getDifficulty() != null ? existing.getDifficulty().name() : "MEDIUM",
-                    "MULTIPLE_CHOICE",
-                    existing.getLanguage() != null ? existing.getLanguage() : "vi",
-                    1, null, customPrompt);
-            AIGenerationResult res = aiProviderRouter.generate(ctx, null);
-            Map<String, Object> draft = res.questions().isEmpty() ? Map.of() : res.questions().get(0);
-
-            AIQuotaService.Usage u = aiQuotaService.snapshot();
-            return ResponseEntity.ok(Map.of("success", true,
-                    "draft", draft,
-                    "provider", res.providerUsed(),
-                    "used", u.used(), "limit", u.limit(), "remaining", u.remaining()));
-        } catch (SecurityException e) {
-            return ResponseEntity.status(403).body(err(e));
-        } catch (AIProviderException e) {
-            return ResponseEntity.internalServerError().body(err(e));
-        } catch (Exception e) {
-            return ResponseEntity.badRequest().body(err(e));
-        }
-    }
-
-    /** PQS2-5: GET /api/question-sets/ai-quota — snapshot global daily quota. */
-    @GetMapping("/ai-quota")
-    public ResponseEntity<?> getAiQuota() {
-        AIQuotaService.Usage u = aiQuotaService.snapshot();
-        return ResponseEntity.ok(Map.of(
-                "used", u.used(), "limit", u.limit(), "remaining", u.remaining()));
     }
 
     // ── DTO helpers ───────────────────────────────────────────────────────────
@@ -512,17 +343,8 @@ public class QuestionSetController {
         return dto;
     }
 
-    /** Map a set item → EditorQuestion shape used by the shared QuizSetEditor (FE). */
+    /** Câu trong bộ cho trình soạn (cùng hình dạng với bộ câu nhóm). */
     private Map<String, Object> toEditorQuestion(QuestionSetItem item) {
-        return toEditorQuestion(item, null);
-    }
-
-    /**
-     * AEU-1: same mapping, but when an AI draft is supplied, carry its transient
-     * {@code _quality}/{@code distractors} metadata onto the response so the FE can
-     * surface distractor-quality warnings (parity with the admin draft review).
-     */
-    private Map<String, Object> toEditorQuestion(QuestionSetItem item, Map<String, Object> aiDraft) {
         UserQuestion q = item.getUserQuestion();
         var dto = new java.util.HashMap<String, Object>();
         dto.put("id",            q.getId());
@@ -539,10 +361,6 @@ public class QuestionSetController {
         dto.put("explanation",   q.getExplanation() != null ? q.getExplanation() : "");
         dto.put("source",        q.getSource() != null ? q.getSource().name().toLowerCase() : "manual");
         dto.put("language",      q.getLanguage() != null ? q.getLanguage() : "vi");
-        if (aiDraft != null) {
-            if (aiDraft.get("distractors") != null) dto.put("distractors", aiDraft.get("distractors"));
-            if (aiDraft.get("_quality") != null)    dto.put("_quality", aiDraft.get("_quality"));
-        }
         return dto;
     }
 

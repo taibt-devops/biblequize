@@ -1,6 +1,5 @@
 package com.biblequiz.api;
 
-import com.biblequiz.modules.adminai.AIGenerationService;
 import com.biblequiz.modules.group.entity.ChurchGroup;
 import com.biblequiz.modules.group.entity.GroupMember;
 import com.biblequiz.modules.group.entity.GroupQuizSet;
@@ -53,15 +52,6 @@ class ChurchGroupControllerTest extends BaseControllerTest {
 
     @MockBean
     private QuestionRepository questionRepository;
-
-    @MockBean
-    private AIGenerationService aiGenerationService;
-
-    @MockBean
-    private com.biblequiz.modules.adminai.provider.AIProviderRouter aiProviderRouter;
-
-    @MockBean
-    private com.biblequiz.modules.adminai.quota.AIQuotaService aiQuotaService;
 
     @MockBean
     private RoomService roomService;
@@ -706,125 +696,22 @@ class ChurchGroupControllerTest extends BaseControllerTest {
 
     // ── POST /api/groups/{id}/ai-generate (Phase D approval split) ─────────────
 
-    @Test
-    @WithMockUser(username = "test@example.com")
-    void groupAiGenerate_leader_quotaOk_returnsDraftsWithProvider() throws Exception {
-        GroupMember leader = new GroupMember();
-        leader.setRole(GroupMember.GroupRole.LEADER);
-        when(groupMemberRepository.findByGroupIdAndUserId("group-1", "user-1"))
-                .thenReturn(Optional.of(leader));
-
-        when(aiQuotaService.tryAcquire(anyInt())).thenReturn(true);
-        when(aiProviderRouter.generate(any(), any())).thenReturn(
-                new com.biblequiz.modules.adminai.provider.AIGenerationResult(
-                        List.of(Map.of("content", "Q1", "options", List.of("A", "B", "C", "D"), "correctAnswer", 0)),
-                        100, 50, "deepseek"));
-
-        String body = "{\"book\":\"John\",\"chapter\":3,\"count\":1,\"difficulty\":\"MEDIUM\"}";
-        mockMvc.perform(post("/api/groups/group-1/ai-generate")
-                        .contentType(MediaType.APPLICATION_JSON).content(body))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.success").value(true))
-                .andExpect(jsonPath("$.provider").value("deepseek"))
-                .andExpect(jsonPath("$.questions.length()").value(1));
-    }
-
-    @Test
-    @WithMockUser(username = "test@example.com")
-    void groupAiGenerate_quotaExhausted_returns429() throws Exception {
-        GroupMember leader = new GroupMember();
-        leader.setRole(GroupMember.GroupRole.LEADER);
-        when(groupMemberRepository.findByGroupIdAndUserId("group-1", "user-1"))
-                .thenReturn(Optional.of(leader));
-
-        when(aiQuotaService.tryAcquire(anyInt())).thenReturn(false);
-        when(aiQuotaService.snapshot()).thenReturn(
-                new com.biblequiz.modules.adminai.quota.AIQuotaService.Usage(200, 200, 0));
-
-        String body = "{\"book\":\"John\",\"chapter\":3,\"count\":5,\"difficulty\":\"MEDIUM\"}";
-        mockMvc.perform(post("/api/groups/group-1/ai-generate")
-                        .contentType(MediaType.APPLICATION_JSON).content(body))
-                .andExpect(status().isTooManyRequests())
-                .andExpect(jsonPath("$.error").value("QUOTA_EXCEEDED"))
-                .andExpect(jsonPath("$.remaining").value(0));
-        // Router must NOT be called when quota is exhausted.
-        verify(aiProviderRouter, never()).generate(any(), any());
-    }
-
-    @Test
-    @WithMockUser(username = "test@example.com")
-    void groupAiGenerate_nonLeader_returns403() throws Exception {
-        // Not a member at all → requireLeaderOrMod throws IllegalArgumentException → 403.
-        when(groupMemberRepository.findByGroupIdAndUserId("group-1", "user-1"))
-                .thenReturn(Optional.empty());
-
-        String body = "{\"book\":\"John\",\"chapter\":3,\"count\":1}";
-        mockMvc.perform(post("/api/groups/group-1/ai-generate")
-                        .contentType(MediaType.APPLICATION_JSON).content(body))
-                .andExpect(status().isForbidden())
-                .andExpect(jsonPath("$.success").value(false));
-        verify(aiQuotaService, never()).tryAcquire(anyInt());
-    }
-
     // ── AEU-2: quiz-set AI generate carries distractor-quality to the response ──
 
+    // ── AIR-3 (13/10/2026): bộ câu nhóm không còn AI — các đường AI cũ đã gỡ ──
+
     @Test
     @WithMockUser(username = "test@example.com")
-    @SuppressWarnings("unchecked")
-    void quizSetAiGenerate_annotatesQuality_andPassesDistractorsThrough() throws Exception {
-        GroupMember leader = new GroupMember();
-        leader.setRole(GroupMember.GroupRole.LEADER);
-        when(groupMemberRepository.findByGroupIdAndUserId("group-1", "user-1"))
-                .thenReturn(Optional.of(leader));
-
-        ChurchGroup group = new ChurchGroup();
-        group.setId("group-1");
-        GroupQuizSet qs = new GroupQuizSet();
-        qs.setId("qs-1");
-        qs.setGroup(group);
-        qs.setQuestionIds(new java.util.ArrayList<>());
-        when(groupQuizSetRepository.findById("qs-1")).thenReturn(Optional.of(qs));
-
-        when(aiQuotaService.tryAcquire(anyInt())).thenReturn(true);
-        when(aiQuotaService.snapshot()).thenReturn(
-                new com.biblequiz.modules.adminai.quota.AIQuotaService.Usage(1, 200, 199));
-
-        // AI draft includes the declared distractors metadata.
-        Map<String, Object> draft = new LinkedHashMap<>();
-        draft.put("content", "Q1");
-        draft.put("options", List.of("A", "B", "C", "D"));
-        draft.put("correctAnswer", 2);
-        draft.put("distractors", List.of(
-                Map.of("index", 0, "errorType", "nearby_passage", "almostRight", false),
-                Map.of("index", 1, "errorType", "wrong_detail", "almostRight", true),
-                Map.of("index", 3, "errorType", "true_but_off", "almostRight", false)));
-        when(aiProviderRouter.generate(any(), any())).thenReturn(
-                new com.biblequiz.modules.adminai.provider.AIGenerationResult(
-                        List.of(draft), 100, 50, "deepseek"));
-
-        // Stub annotateQuality to mutate drafts in place like the real implementation.
-        doAnswer(inv -> {
-            List<Map<String, Object>> qList = inv.getArgument(0);
-            for (Map<String, Object> q : qList) {
-                q.put("_quality", Map.of("valid", true, "duplicateErrorType", false,
-                        "almostRightCount", 1, "requiredAlmostRight", 1, "reasons", List.of()));
-            }
-            return null;
-        }).when(aiGenerationService).annotateQuality(any());
-
-        String body = "{\"countMedium\":1,\"book\":\"John\",\"chapterFrom\":3}";
-        mockMvc.perform(post("/api/groups/group-1/quiz-sets/qs-1/ai-generate")
-                        .contentType(MediaType.APPLICATION_JSON).content(body))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.success").value(true))
-                .andExpect(jsonPath("$.questions[0].distractors.length()").value(3))
-                .andExpect(jsonPath("$.questions[0].distractors[1].errorType").value("wrong_detail"))
-                .andExpect(jsonPath("$.questions[0]._quality.valid").value(true));
-
-        verify(aiGenerationService).annotateQuality(any());
-        // Group-owned: saved outside the shared Ranked/Practice pool.
-        verify(questionRepository).save(argThat((com.biblequiz.modules.quiz.entity.Question q) -> "ai-group".equals(q.getSource())
-                && Boolean.FALSE.equals(q.getIsActive())));
+    void groupAiEndpoints_areGone() throws Exception {
+        String body = "{\"book\":\"Sáng Thế Ký\",\"chapterFrom\":1,\"countEasy\":1,\"countMedium\":0,\"countHard\":0}";
+        mockMvc.perform(post("/api/groups/group-1/ai-generate").contentType(MediaType.APPLICATION_JSON).content(body))
+                .andExpect(status().isNotFound());
+        mockMvc.perform(post("/api/groups/group-1/quiz-sets/qs-1/ai-generate").contentType(MediaType.APPLICATION_JSON).content(body))
+                .andExpect(status().isNotFound());
+        mockMvc.perform(post("/api/groups/group-1/quiz-sets/qs-1/questions/q-1/ai-rewrite").contentType(MediaType.APPLICATION_JSON).content("{}"))
+                .andExpect(status().isNotFound());
+        mockMvc.perform(get("/api/groups/group-1/ai-quota"))
+                .andExpect(status().isNotFound());
     }
 
     @Test

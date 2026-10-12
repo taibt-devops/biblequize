@@ -3,8 +3,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import {
-  addQuestion, aiGenerateForSet, aiRewriteQuestion, createQuizSet, deleteQuestion,
-  getAIQuota, getQuizSetFull, publishQuizSet, updateQuestion, updateQuizSet,
+  addQuestion, createQuizSet, deleteQuestion, getQuizSetFull, publishQuizSet, updateQuestion, updateQuizSet,
 } from '../../api/quizSets'
 import { api } from '../../api/client'
 import QuizSetEditor, { type QuizSetEditorApi } from './QuizSetEditor'
@@ -33,9 +32,6 @@ export default function GroupQuizSetEditor({ mode }: Props) {
     addQuestion:       (sid, body)          => addQuestion(groupId!, sid, body),
     updateQuestion:    (sid, qid, body)     => updateQuestion(groupId!, sid, qid, body),
     deleteQuestion:    (sid, qid)           => deleteQuestion(groupId!, sid, qid).then(total => total),
-    aiGenerateForSet:  (sid, body)          => aiGenerateForSet(groupId!, sid, body),
-    aiRewriteQuestion: (sid, qid, hint)     => aiRewriteQuestion(groupId!, sid, qid, hint),
-    getAIQuota:        ()                   => getAIQuota(groupId!),
   }), [groupId])
 
   if (!groupId) return null

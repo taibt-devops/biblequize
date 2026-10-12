@@ -11,10 +11,7 @@ interface Props {
   question: EditorQuestion
   onChange: (patch: Partial<EditorQuestion>) => void
   onDelete: () => void
-  /** Omit to hide the "AI viết lại" button (personal scope in Phase 1). */
-  onAIRewrite?: () => void
   onDuplicate?: () => void
-  rewriting?: boolean
 }
 
 function scriptureRefString(q: EditorQuestion): string {
@@ -30,7 +27,7 @@ function scriptureRefString(q: EditorQuestion): string {
 const SCRIPTURE_RE = /^[A-Za-zÀ-ỹĐđ0-9\s]+\s\d+(:\d+(-\d+)?)?$/
 
 export default function QuestionEditor({
-  index, question, onChange, onDelete, onAIRewrite, onDuplicate, rewriting,
+  index, question, onChange, onDelete, onDuplicate,
 }: Props) {
   const { t } = useTranslation()
   const issues = useMemo(() => validateQuestion(question), [question])
@@ -43,10 +40,6 @@ export default function QuestionEditor({
   const dk: Difficulty = (['easy', 'medium', 'hard'] as const).includes(question.difficulty as any)
     ? question.difficulty as Difficulty : 'medium'
   const correctIndex = question.correctAnswer?.[0] ?? -1
-
-  // AEU-5: distractor error-type metadata (transient, only on freshly AI-generated Qs).
-  const metaByIndex = new Map((question.distractors ?? []).map(d => [d.index, d] as const))
-  const quality = question.quality
 
   const onScriptureBlur = () => {
     const txt = scriptureInput.trim()
@@ -104,19 +97,6 @@ export default function QuestionEditor({
         </div>
 
         <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 6 }}>
-          {onAIRewrite && (
-            <button onClick={onAIRewrite} disabled={rewriting} style={{
-              background: COLOR.goldBg, color: COLOR.gold,
-              border: `1px solid rgba(245,158,11,0.30)`,
-              padding: '5px 10px', borderRadius: 6, fontSize: 11,
-              cursor: rewriting ? 'wait' : 'pointer',
-              display: 'inline-flex', alignItems: 'center', gap: 4,
-              opacity: rewriting ? 0.6 : 1,
-            }}>
-              <span className="material-symbols-outlined" style={{ fontSize: 12 }} aria-hidden>refresh</span>
-              {rewriting ? t('quizSet.editor.question.aiRewriting') : t('quizSet.editor.question.aiRewrite')}
-            </button>
-          )}
           {onDuplicate && (
             <button onClick={onDuplicate} title={t('quizSet.editor.question.duplicateTooltip')} style={{
               background: 'transparent', color: COLOR.textDisabled,
@@ -224,39 +204,12 @@ export default function QuestionEditor({
                     wordBreak: 'break-word',
                   }}
                 />
-                {!isCorrect && metaByIndex.get(i) && (
-                  <span style={{
-                    flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: 4,
-                    padding: '2px 7px', borderRadius: 5, fontSize: 10, fontWeight: 500,
-                    background: COLOR.inputBg, border: `1px solid ${COLOR.borderSubtle}`, color: COLOR.textMuted,
-                  }}>
-                    {t(`admin.aiGenerator.draftCard.errorType.${metaByIndex.get(i)!.errorType}`)}
-                    {metaByIndex.get(i)!.almostRight && (
-                      <span style={{ color: COLOR.gold }}>★ {t('admin.aiGenerator.draftCard.almostRightTag')}</span>
-                    )}
-                  </span>
-                )}
               </div>
             )
           })}
         </div>
         {issueByKind.has('no_correct') && (
           <div style={{ fontSize: 10, color: COLOR.warning, marginTop: 6 }}>{t('quizSet.editor.question.noCorrectHint')}</div>
-        )}
-        {quality && !quality.valid && (
-          <div role="alert" style={{
-            marginTop: 8, padding: '8px 11px', borderRadius: 8,
-            background: COLOR.goldBg, border: `1px solid rgba(245,158,11,0.30)`,
-          }}>
-            <div style={{ fontSize: 11, fontWeight: 600, color: COLOR.gold, marginBottom: 3 }}>
-              ⚠ {t('admin.aiGenerator.draftCard.qualityWarningTitle')}
-            </div>
-            <ul style={{ margin: 0, paddingLeft: 16, fontSize: 10.5, color: COLOR.textMuted, lineHeight: 1.6 }}>
-              {quality.reasons.map(r => (
-                <li key={r}>{t(`admin.aiGenerator.draftCard.reason.${r}`)}</li>
-              ))}
-            </ul>
-          </div>
         )}
       </div>
 
