@@ -31,6 +31,6 @@
 - PCV-22 Hội ý cho Đội đấu đội (phiếu đội + chat đội) — Status: [x] DONE
 - PCV-23 Thách đấu bạn bè hoàn chỉnh — Status: [x] DONE
 - PCV-24 Ôn phần đọc hôm nay (phạm vi theo đoạn + liên kết từ doc.forbible.org) — Status: [x] DONE
-- PCV-25 Spec + DECISIONS + deploy đợt 3 + review toàn nhánh — Status: [ ] TODO
+- PCV-25 Spec + DECISIONS + deploy đợt 3 + review toàn nhánh — Status: [~] IN PROGRESS (docs + review + sửa xong, chờ SSH để deploy)
 
 Mỗi task: **Spec impact** SPEC_MULTIPLAYER / SPEC_USER §13 theo design · **Spec strategy** (a) update inline · quyết định mới vào DECISIONS 2026-10-12.
