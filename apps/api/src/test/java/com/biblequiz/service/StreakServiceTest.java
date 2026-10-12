@@ -34,7 +34,7 @@ class StreakServiceTest {
      * giả định băng giá đã dùng sẽ bỏ qua những ngày đó thay vì đỏ theo thứ trong tuần.
      */
     private static void assumeTwoDaysAgoIsSameWeek() {
-        LocalDate twoDaysAgo = LocalDateTime.now(ZoneOffset.UTC).minusDays(2).toLocalDate();
+        LocalDate twoDaysAgo = GameClock.today().minusDays(2);
         Assumptions.assumeTrue(GameClock.weekStart(twoDaysAgo).equals(GameClock.weekStart(GameClock.today())),
                 "hôm kia thuộc tuần trước — băng giá đã được làm mới");
     }
@@ -85,9 +85,9 @@ class StreakServiceTest {
     @Test
     void recordActivity_sameDay_shouldNotChangeStreak() {
         testUser.setCurrentStreak(3);
-        // Use today's UTC date at noon to guarantee same day regardless of timezone
-        LocalDate todayUtc = LocalDate.now(ZoneOffset.UTC);
-        testUser.setLastPlayedAt(todayUtc.atTime(12, 0));
+        // Vừa chơi xong (giờ hiện tại, lưu UTC) — cùng một ngày chơi ở mọi giờ trong ngày.
+        // (Trước dùng 12:00 UTC hôm nay — sai từ 00:00 đến 07:00 giờ VN, khi đó là tối hôm qua.)
+        testUser.setLastPlayedAt(LocalDateTime.now(ZoneOffset.UTC));
 
         streakService.recordActivity(testUser);
 
@@ -245,5 +245,23 @@ class StreakServiceTest {
 
         assertEquals(1, testUser.getCurrentStreak()); // Reset
         assertEquals(5, testUser.getLongestStreak()); // Longest preserved
+    }
+
+    /**
+     * lastPlayedAt lưu giờ UTC, ngày chơi tính theo giờ Việt Nam: chơi lúc 00:01 sáng nay (giờ VN, tức 17:01
+     * UTC hôm qua) rồi chơi tiếp trong ngày không được tính là "ngày mới" lần nữa.
+     */
+    @Test
+    void playedEarlyThisMorningVietnamTime_isStillToday() {
+        java.time.ZonedDateTime earlyToday = GameClock.today().atTime(0, 1).atZone(GameClock.GAME_ZONE);
+        Assumptions.assumeTrue(java.time.ZonedDateTime.now(GameClock.GAME_ZONE).isAfter(earlyToday),
+                "đúng phút 00:00 giờ VN thì bỏ qua");
+        testUser.setCurrentStreak(4);
+        testUser.setLongestStreak(4);
+        testUser.setLastPlayedAt(earlyToday.withZoneSameInstant(ZoneOffset.UTC).toLocalDateTime());
+
+        streakService.recordActivity(testUser);
+
+        assertEquals(4, testUser.getCurrentStreak(), "cùng một ngày (giờ VN) ⇒ không tăng chuỗi");
     }
 }

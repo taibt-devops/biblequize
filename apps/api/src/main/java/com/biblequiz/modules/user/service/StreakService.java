@@ -45,7 +45,10 @@ public class StreakService {
         LocalDateTime lastPlayed = user.getLastPlayedAt();
 
         if (lastPlayed != null) {
-            LocalDate lastPlayedDate = lastPlayed.toLocalDate();
+            // lastPlayedAt lưu giờ UTC; ngày chơi phải tính theo giờ Việt Nam như GameClock.today(),
+            // nếu không thì chơi 00:00–07:00 sáng (VN) bị coi là "hôm qua" và chuỗi tăng hai lần một ngày.
+            LocalDate lastPlayedDate = lastPlayed.atOffset(ZoneOffset.UTC)
+                    .atZoneSameInstant(GameClock.GAME_ZONE).toLocalDate();
 
             if (lastPlayedDate.equals(today)) {
                 // Already played today, no streak change

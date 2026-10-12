@@ -428,7 +428,7 @@ class RankedControllerTest extends BaseControllerTest {
     @Test
     @WithMockUser(username = "test@example.com")
     void getRankedStatus_todayMoreThanYesterday_returnsPositiveDelta() throws Exception {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         LocalDate yesterday = today.minusDays(1);
         when(udpRepository.findByUserIdAndDate("user-1", today)).thenReturn(Optional.of(udpWithPoints(50)));
         when(udpRepository.findByUserIdAndDate("user-1", yesterday)).thenReturn(Optional.of(udpWithPoints(30)));
@@ -441,7 +441,7 @@ class RankedControllerTest extends BaseControllerTest {
     @Test
     @WithMockUser(username = "test@example.com")
     void getRankedStatus_todayLessThanYesterday_returnsNegativeDelta() throws Exception {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         LocalDate yesterday = today.minusDays(1);
         when(udpRepository.findByUserIdAndDate("user-1", today)).thenReturn(Optional.of(udpWithPoints(30)));
         when(udpRepository.findByUserIdAndDate("user-1", yesterday)).thenReturn(Optional.of(udpWithPoints(50)));
@@ -455,7 +455,7 @@ class RankedControllerTest extends BaseControllerTest {
     @WithMockUser(username = "test@example.com")
     void getRankedStatus_todayZeroYesterdayFifty_returnsLargeNegativeDelta() throws Exception {
         // User played hard yesterday, hasn't picked up the streak today
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         LocalDate yesterday = today.minusDays(1);
         when(udpRepository.findByUserIdAndDate("user-1", today)).thenReturn(Optional.of(udpWithPoints(0)));
         when(udpRepository.findByUserIdAndDate("user-1", yesterday)).thenReturn(Optional.of(udpWithPoints(50)));
@@ -470,7 +470,7 @@ class RankedControllerTest extends BaseControllerTest {
     void getRankedStatus_samePointsBothDays_returnsZeroDelta() throws Exception {
         // Boundary: 0 is a real value, NOT null. The FE hides "↑ +0" in
         // A4 — that's a render-time concern, not a server one.
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         LocalDate yesterday = today.minusDays(1);
         when(udpRepository.findByUserIdAndDate("user-1", today)).thenReturn(Optional.of(udpWithPoints(50)));
         when(udpRepository.findByUserIdAndDate("user-1", yesterday)).thenReturn(Optional.of(udpWithPoints(50)));
@@ -485,7 +485,7 @@ class RankedControllerTest extends BaseControllerTest {
     void getRankedStatus_noProgressToday_returnsNullDelta() throws Exception {
         // Returning user — yesterday has data, today doesn't yet (haven't
         // played yet this morning). Delta is null until today's row exists.
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         LocalDate yesterday = today.minusDays(1);
         when(udpRepository.findByUserIdAndDate("user-1", today)).thenReturn(Optional.empty());
         when(udpRepository.findByUserIdAndDate("user-1", yesterday)).thenReturn(Optional.of(udpWithPoints(50)));
@@ -500,7 +500,7 @@ class RankedControllerTest extends BaseControllerTest {
     void getRankedStatus_noProgressYesterday_returnsNullDelta() throws Exception {
         // Brand-new user — first day playing. No yesterday baseline →
         // delta meaningless, render null. Same for users who skipped a day.
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         LocalDate yesterday = today.minusDays(1);
         when(udpRepository.findByUserIdAndDate("user-1", today)).thenReturn(Optional.of(udpWithPoints(30)));
         when(udpRepository.findByUserIdAndDate("user-1", yesterday)).thenReturn(Optional.empty());
@@ -921,10 +921,10 @@ class RankedControllerTest extends BaseControllerTest {
         yesterdayUdp.setCurrentBookIndex(1);
         yesterdayUdp.setCurrentDifficulty(UserDailyProgress.Difficulty.all);
         yesterdayUdp.setIsPostCycle(false);
-        yesterdayUdp.setDate(LocalDate.now(ZoneOffset.UTC).minusDays(1));
+        yesterdayUdp.setDate(com.biblequiz.infrastructure.time.GameClock.today().minusDays(1));
 
         // No record for today
-        when(udpRepository.findByUserIdAndDate(eq("user-1"), eq(LocalDate.now(ZoneOffset.UTC))))
+        when(udpRepository.findByUserIdAndDate(eq("user-1"), eq(com.biblequiz.infrastructure.time.GameClock.today())))
                 .thenReturn(Optional.empty());
         when(udpRepository.findByUserIdOrderByDateDesc("user-1")).thenReturn(List.of(yesterdayUdp));
 

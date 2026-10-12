@@ -41,7 +41,7 @@ class DailyMissionServiceTest {
 
     @Test
     void getOrCreate_createsNewMissions_forTier1() {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         when(missionRepository.findByUserIdAndDateOrderByMissionSlot(USER_ID, today))
                 .thenReturn(List.of());
         when(userTierService.getTierLevel(USER_ID)).thenReturn(1);
@@ -59,7 +59,7 @@ class DailyMissionServiceTest {
 
     @Test
     void getOrCreate_returnsExisting_whenAlreadyCreated() {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         DailyMission m = new DailyMission("id", USER_ID, today, 1, "answer_correct", "{}", 3);
         when(missionRepository.findByUserIdAndDateOrderByMissionSlot(USER_ID, today))
                 .thenReturn(List.of(m));
@@ -72,7 +72,7 @@ class DailyMissionServiceTest {
 
     @Test
     void trackProgress_incrementsProgress() {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         DailyMission m = new DailyMission("id1", USER_ID, today, 1, "answer_correct", "{}", 3);
         m.setProgress(1);
         when(missionRepository.findByUserIdAndDateOrderByMissionSlot(USER_ID, today))
@@ -87,7 +87,7 @@ class DailyMissionServiceTest {
 
     @Test
     void trackProgress_completesMission_whenTargetReached() {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         DailyMission m = new DailyMission("id1", USER_ID, today, 1, "answer_correct", "{}", 3);
         m.setProgress(2);
         when(missionRepository.findByUserIdAndDateOrderByMissionSlot(USER_ID, today))
@@ -102,7 +102,7 @@ class DailyMissionServiceTest {
 
     @Test
     void trackProgress_doesNotExceedTarget() {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         DailyMission m = new DailyMission("id1", USER_ID, today, 1, "answer_correct", "{}", 3);
         m.setProgress(2);
         when(missionRepository.findByUserIdAndDateOrderByMissionSlot(USER_ID, today))
@@ -115,7 +115,7 @@ class DailyMissionServiceTest {
 
     @Test
     void trackProgress_ignoresCompletedMission() {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         DailyMission m = new DailyMission("id1", USER_ID, today, 1, "answer_correct", "{}", 3);
         m.setProgress(3);
         m.setCompleted(true);
@@ -129,7 +129,7 @@ class DailyMissionServiceTest {
 
     @Test
     void trackCombo_incrementsOnCorrect() {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         DailyMission m = new DailyMission("id1", USER_ID, today, 3, "answer_combo", "{}", 3);
         m.setProgress(1);
         when(missionRepository.findByUserIdAndDateOrderByMissionSlot(USER_ID, today))
@@ -144,7 +144,7 @@ class DailyMissionServiceTest {
 
     @Test
     void trackCombo_resetsOnWrong() {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         DailyMission m = new DailyMission("id1", USER_ID, today, 3, "answer_combo", "{}", 3);
         m.setProgress(2);
         when(missionRepository.findByUserIdAndDateOrderByMissionSlot(USER_ID, today))
@@ -159,7 +159,7 @@ class DailyMissionServiceTest {
 
     @Test
     void trackCombo_completesAtTarget() {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         DailyMission m = new DailyMission("id1", USER_ID, today, 3, "answer_combo", "{}", 3);
         m.setProgress(2);
         when(missionRepository.findByUserIdAndDateOrderByMissionSlot(USER_ID, today))
@@ -174,7 +174,7 @@ class DailyMissionServiceTest {
 
     @Test
     void trackCombo_idempotentAfterCompletion() {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         DailyMission m = new DailyMission("id1", USER_ID, today, 3, "answer_combo", "{}", 3);
         m.setProgress(3);
         m.setCompleted(true);
@@ -190,7 +190,7 @@ class DailyMissionServiceTest {
 
     @Test
     void trackCombo_skipSaveWhenProgressAlreadyZero() {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         DailyMission m = new DailyMission("id1", USER_ID, today, 3, "answer_combo", "{}", 3);
         m.setProgress(0);
         when(missionRepository.findByUserIdAndDateOrderByMissionSlot(USER_ID, today))
@@ -204,7 +204,7 @@ class DailyMissionServiceTest {
 
     @Test
     void getMissionsResponse_returnsCorrectShape() {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         when(missionRepository.findByUserIdAndDateOrderByMissionSlot(USER_ID, today))
                 .thenReturn(List.of());
         when(userTierService.getTierLevel(USER_ID)).thenReturn(2);
@@ -227,7 +227,7 @@ class DailyMissionServiceTest {
 
     @Test
     void tier3Missions_correctTypes() {
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         when(missionRepository.findByUserIdAndDateOrderByMissionSlot(USER_ID, today))
                 .thenReturn(List.of());
         when(userTierService.getTierLevel(USER_ID)).thenReturn(3);

@@ -361,7 +361,7 @@ class DailyChallengeServiceTest {
         user.setId(userId);
 
         DailyCompletion existing = new DailyCompletion(
-                "dc-1", user, LocalDate.now(ZoneOffset.UTC),
+                "dc-1", user, com.biblequiz.infrastructure.time.GameClock.today(),
                 80, 4, 5, null, LocalDateTime.now(ZoneOffset.UTC));
 
         when(userRepository.findById(userId)).thenReturn(Optional.of(user));
@@ -388,7 +388,7 @@ class DailyChallengeServiceTest {
         when(userRepository.findById(userId)).thenReturn(Optional.of(user));
 
         // Only 2 of the last 30 days have completions.
-        LocalDate today = LocalDate.now(ZoneOffset.UTC);
+        LocalDate today = com.biblequiz.infrastructure.time.GameClock.today();
         DailyCompletion dc1 = new DailyCompletion("dc-1", user, today.minusDays(5),
                 80, 4, 5, null, LocalDateTime.now(ZoneOffset.UTC));
         DailyCompletion dc2 = new DailyCompletion("dc-2", user, today.minusDays(2),
@@ -433,7 +433,7 @@ class DailyChallengeServiceTest {
         String userId = "user-yesterday-done";
         User user = new User();
         user.setId(userId);
-        LocalDate yesterday = LocalDate.now(ZoneOffset.UTC).minusDays(1);
+        LocalDate yesterday = com.biblequiz.infrastructure.time.GameClock.today().minusDays(1);
         DailyCompletion dc = new DailyCompletion(
                 "dc-y", user, yesterday, 88, 4, 5, 204, LocalDateTime.now(ZoneOffset.UTC));
 
